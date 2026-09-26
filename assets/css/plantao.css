@@ -3286,3 +3286,22 @@ body[data-page="plantao"] .plantao-phone-contact-avatar .plantao-phone-portrait{
   width:36px;
   height:36px;
 }
+
+
+/* LuriaZap · aparelho sem caixa/sombra retangular externa */
+body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station{
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station::before,
+body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station::after{
+  content:none!important;
+  display:none!important;
+}
+body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
+  box-shadow:none!important;
+  filter:none!important;
+}
