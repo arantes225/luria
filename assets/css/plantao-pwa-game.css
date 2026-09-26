@@ -1138,3 +1138,94 @@
     flex:0 0 auto!important;
   }
 }
+
+
+/* v8 — resumo do paciente no botão Paciente */
+@media (max-width:680px){
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
+    cursor:pointer!important;
+    pointer-events:auto!important;
+    appearance:none;
+    -webkit-appearance:none;
+    padding:8px 5px!important;
+    font:inherit;
+  }
+  .pwa-standalone .plantao-patient-sheet{
+    position:fixed;
+    inset:0;
+    z-index:13000;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    padding:0;
+    background:rgba(4,18,33,.52);
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+  }
+  .pwa-standalone .plantao-patient-sheet[hidden]{display:none!important}
+  .pwa-standalone .plantao-patient-sheet-card{
+    width:100%;
+    max-height:min(70dvh,640px);
+    overflow:auto;
+    padding:18px 18px calc(20px + env(safe-area-inset-bottom));
+    border:1px solid var(--border);
+    border-bottom:0;
+    border-radius:24px 24px 0 0;
+    background:var(--surface);
+    color:var(--text);
+    box-shadow:0 -18px 54px rgba(0,0,0,.34);
+  }
+  .pwa-standalone .plantao-patient-sheet-head{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:14px;
+    margin-bottom:16px;
+  }
+  .pwa-standalone .plantao-patient-sheet-head h2{
+    margin:3px 0 0;
+    font-size:20px;
+  }
+  .pwa-standalone #plantao-patient-sheet-close{
+    width:40px!important;
+    min-width:40px!important;
+    height:40px!important;
+    padding:0!important;
+    font-size:22px!important;
+  }
+  .pwa-standalone .plantao-patient-sheet-meta{
+    display:grid;
+    grid-template-columns:1.4fr .8fr .8fr;
+    gap:8px;
+  }
+  .pwa-standalone .plantao-patient-sheet-meta>div,
+  .pwa-standalone .plantao-patient-sheet-hda{
+    padding:12px;
+    border:1px solid var(--border);
+    border-radius:14px;
+    background:var(--surface-2);
+  }
+  .pwa-standalone .plantao-patient-sheet-meta span,
+  .pwa-standalone .plantao-patient-sheet-hda>span{
+    display:block;
+    margin-bottom:5px;
+    color:var(--muted);
+    font-size:9px;
+    font-weight:850;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  .pwa-standalone .plantao-patient-sheet-meta strong{
+    font-size:13px;
+    line-height:1.25;
+  }
+  .pwa-standalone .plantao-patient-sheet-hda{
+    margin-top:10px;
+  }
+  .pwa-standalone .plantao-patient-sheet-hda p{
+    margin:0;
+    font-size:13px;
+    line-height:1.55;
+    white-space:pre-wrap;
+  }
+}
