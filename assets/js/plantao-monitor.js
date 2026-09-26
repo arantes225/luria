@@ -197,7 +197,7 @@
   }
 
   function scheduleNextPatientBlink(){
-    if(!patientBlinkFrames || reduced.matches) return;
+    if(!patientBlinkFrames) return;
     patientBlinkTimer=setTimeout(()=>{
       patientBlinkTimer=null;
       const section=document.getElementById('plantao-simulator');
@@ -227,14 +227,14 @@
     const awake=caseContext.patient_image;
     const half=caseContext.blink_half_image;
     const closed=caseContext.blink_closed_image;
-    const key=[awake,half,closed,unconscious,reduced.matches].join('|');
+    const key=[awake,half,closed,unconscious].join('|');
     if(key===patientBlinkKey) return;
 
     clearPatientBlink();
     patientBlinkKey=key;
     patientBlinkFrames=null;
 
-    if(unconscious || reduced.matches || !awake || !half || !closed) return;
+    if(unconscious || !awake || !half || !closed) return;
 
     patientBlinkFrames={awake,half,closed};
     [half,closed].forEach(src=>{
