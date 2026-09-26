@@ -178,12 +178,40 @@
     patientBreathAnimation.play();
   }
 
-  function applyPatientFrame(src){
-    if(!src) return;
-    const img=document.getElementById('plantao-patient-image');
-    const motionImg=document.getElementById('plantao-patient-motion');
-    if(img && img.getAttribute('src')!==src) img.src=src;
-    if(motionImg && motionImg.getAttribute('src')!==src) motionImg.src=src;
+  function ensurePatientBlinkLayer(closedSrc){
+    const scene=document.querySelector('.plantao-scene');
+    const base=document.getElementById('plantao-patient-image');
+    if(!scene || !base || !closedSrc) return null;
+
+    let layer=document.getElementById('plantao-patient-blink-layer');
+    if(!layer){
+      layer=document.createElement('img');
+      layer.id='plantao-patient-blink-layer';
+      layer.alt='';
+      layer.setAttribute('aria-hidden','true');
+      scene.appendChild(layer);
+    }
+
+    const baseStyle=getComputedStyle(base);
+    Object.assign(layer.style,{
+      position:'absolute',
+      inset:'0',
+      width:'100%',
+      height:'100%',
+      maxWidth:'none',
+      maxHeight:'none',
+      objectFit:baseStyle.objectFit || 'cover',
+      objectPosition:baseStyle.objectPosition || '50% 50%',
+      pointerEvents:'none',
+      zIndex:'3',
+      opacity:'0',
+      transition:'none',
+      willChange:'opacity',
+      clipPath:'ellipse(13% 5.2% at 44% 41.8%)',
+      WebkitClipPath:'ellipse(13% 5.2% at 44% 41.8%)'
+    });
+    if(layer.getAttribute('src')!==closedSrc) layer.src=closedSrc;
+    return layer;
   }
 
   function clearPatientBlink(){
@@ -194,6 +222,8 @@
     patientBlinkStepTimers.forEach(clearTimeout);
     patientBlinkStepTimers=[];
     patientBlinking=false;
+    const layer=document.getElementById('plantao-patient-blink-layer');
+    if(layer) layer.style.opacity='0';
   }
 
   function scheduleNextPatientBlink(){
@@ -205,42 +235,41 @@
         scheduleNextPatientBlink();
         return;
       }
-      const {awake,half,closed}=patientBlinkFrames;
-      if(!awake || !half || !closed) return;
+
+      const layer=ensurePatientBlinkLayer(patientBlinkFrames.closed);
+      if(!layer) return;
 
       patientBlinking=true;
-      applyPatientFrame(half);
+      layer.style.opacity='.46';
       patientBlinkStepTimers=[
-        setTimeout(()=>applyPatientFrame(closed),70),
-        setTimeout(()=>applyPatientFrame(half),170),
+        setTimeout(()=>{layer.style.opacity='1';},65),
+        setTimeout(()=>{layer.style.opacity='.46';},145),
         setTimeout(()=>{
-          applyPatientFrame(awake);
+          layer.style.opacity='0';
           patientBlinking=false;
           patientBlinkStepTimers=[];
           scheduleNextPatientBlink();
-        },230)
+        },215)
       ];
-    },2500+Math.random()*3500);
+    },2800+Math.random()*3600);
   }
 
   function syncPatientBlink(caseContext,unconscious){
     const awake=caseContext.patient_image;
-    const half=caseContext.blink_half_image;
     const closed=caseContext.blink_closed_image;
-    const key=[awake,half,closed,unconscious].join('|');
+    const key=[awake,closed,unconscious].join('|');
     if(key===patientBlinkKey) return;
 
     clearPatientBlink();
     patientBlinkKey=key;
     patientBlinkFrames=null;
 
-    if(unconscious || !awake || !half || !closed) return;
+    if(unconscious || !awake || !closed) return;
 
-    patientBlinkFrames={awake,half,closed};
-    [half,closed].forEach(src=>{
-      const preload=new Image();
-      preload.src=src;
-    });
+    const preload=new Image();
+    preload.src=closed;
+    patientBlinkFrames={awake,closed};
+    ensurePatientBlinkLayer(closed);
     scheduleNextPatientBlink();
   }
 
@@ -251,10 +280,12 @@
     const mental = normalize(vitals.mental);
     const unconscious = /inconsciente|desacordad|nao responsiv|nao responde|arresponsiv|coma|irresponsiv/.test(mental);
     const img = document.getElementById('plantao-patient-image');
+    const motionImg = document.getElementById('plantao-patient-motion');
     const scene = document.querySelector('.plantao-scene');
     const src = unconscious ? caseContext.unconscious_image : caseContext.patient_image;
+    if (img && src && img.getAttribute('src') !== src) img.src = src;
+    if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
     syncPatientBlink(caseContext,unconscious);
-    if(!patientBlinking || unconscious) applyPatientFrame(src);
     if (img) img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
     syncPatientBreathing(vitals, unconscious);
     if(scene){
