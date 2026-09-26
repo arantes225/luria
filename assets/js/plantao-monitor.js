@@ -633,6 +633,24 @@
 
   setupMonitorExpansion();
 
+  function applyOverlayEdgeFeather(layer,amount){
+    const px=Math.max(0,Number(amount)||0);
+    if(px<=0){
+      layer.style.maskImage='none';
+      layer.style.WebkitMaskImage='none';
+      layer.style.maskComposite='';
+      layer.style.WebkitMaskComposite='';
+      return;
+    }
+    const edge=Math.round(px*10)/10+'px';
+    const horizontal='linear-gradient(to right, transparent 0, #000 '+edge+', #000 calc(100% - '+edge+'), transparent 100%)';
+    const vertical='linear-gradient(to bottom, transparent 0, #000 '+edge+', #000 calc(100% - '+edge+'), transparent 100%)';
+    layer.style.maskImage=horizontal+','+vertical;
+    layer.style.WebkitMaskImage=horizontal+','+vertical;
+    layer.style.maskComposite='intersect';
+    layer.style.WebkitMaskComposite='source-in';
+  }
+
   function setupPatientOverlayCalibration(){
     if(document.getElementById('plantao-overlay-calibration-toggle')) return;
 
@@ -670,8 +688,8 @@
       '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">'+
       '<button type="button" data-speed="-">− velocidade</button>'+
       '<button type="button" data-speed="+">+ velocidade</button>'+
-      '<button type="button" data-smooth="-">− smooth</button>'+
-      '<button type="button" data-smooth="+">+ smooth</button></div>'+
+      '<button type="button" data-smooth="-">− borda</button>'+
+      '<button type="button" data-smooth="+">+ borda</button></div>'+
       '<div style="display:flex;gap:6px;margin-top:8px">'+
       '<button type="button" data-copy-pos>Copiar ajuste</button>'+
       '<button type="button" data-reset-pos>Resetar</button></div>'+
@@ -703,7 +721,7 @@
       const p=offsets[selected];
       readout().textContent=(selected==='breath'?'Respiração':'Piscada')+
         ' — X: '+p.x+' px | Y: '+p.y+' px | '+Math.round(p.scale*100)+'% | '+p.rotate.toFixed(1)+'°'+
-        ' | vel '+p.speed.toFixed(1)+'× | smooth '+p.smooth+'px';
+        ' | vel '+p.speed.toFixed(1)+'× | borda '+p.smooth+'px';
     };
     const applyOffset=()=>{
       layersFor(selected).forEach(layer=>{
@@ -713,7 +731,8 @@
         layer.style.marginTop=offsets[selected].y+'px';
         layer.style.scale=String(offsets[selected].scale);
         layer.style.rotate=offsets[selected].rotate+'deg';
-        layer.style.filter=offsets[selected].smooth>0?'blur('+offsets[selected].smooth+'px)':'none';
+        layer.style.filter='none';
+        applyOverlayEdgeFeather(layer,offsets[selected].smooth);
         layer.getAnimations?.().forEach(a=>{ if(a.effect?.getTiming) a.playbackRate=offsets[selected].speed; });
         layer.style.transitionDuration=(55/offsets[selected].speed)+'ms';
         layer.style.outline=enabled?'1px dashed rgba(255,210,80,.9)':'none';
@@ -734,7 +753,8 @@
           layer.style.marginTop=offsets[kind].y+'px';
           layer.style.scale=String(offsets[kind].scale);
           layer.style.rotate=offsets[kind].rotate+'deg';
-          layer.style.filter=offsets[kind].smooth>0?'blur('+offsets[kind].smooth+'px)':'none';
+          layer.style.filter='none';
+          applyOverlayEdgeFeather(layer,offsets[kind].smooth);
           layer.getAnimations?.().forEach(a=>{ if(a.effect?.getTiming) a.playbackRate=offsets[kind].speed; });
           layer.style.transitionDuration=(55/offsets[kind].speed)+'ms';
         });
@@ -800,8 +820,8 @@
       applyOffset();
     }));
     panel.querySelectorAll('[data-smooth]').forEach(btn=>btn.addEventListener('click',()=>{
-      offsets[selected].smooth+=btn.dataset.smooth==='+'?.25:-.25;
-      offsets[selected].smooth=Math.max(0,Math.min(3,Math.round(offsets[selected].smooth*4)/4));
+      offsets[selected].smooth+=btn.dataset.smooth==='+'?1:-1;
+      offsets[selected].smooth=Math.max(0,Math.min(30,Math.round(offsets[selected].smooth)));
       applyOffset();
     }));
     panel.querySelector('[data-reset-pos]').addEventListener('click',()=>{
@@ -812,7 +832,7 @@
       const p=offsets[selected];
       const value=(selected==='breath'?'RESPIRACAO':'PISCADA')+
         ' X='+p.x+' Y='+p.y+' TAMANHO='+Math.round(p.scale*100)+'% ROTACAO='+p.rotate.toFixed(1)+'deg'+
-        ' VELOCIDADE='+p.speed.toFixed(1)+'x SMOOTH='+p.smooth+'px';
+        ' VELOCIDADE='+p.speed.toFixed(1)+'x BORDA='+p.smooth+'px';
       try{await navigator.clipboard.writeText(value);}catch(_){}
       readout().textContent=value+' — copiado';
     });
