@@ -2230,9 +2230,18 @@
   function patientImagesForCurrentCase(){
     const pwaPair=pwaPatientImagePair();
     if(pwaPair) return {patient_image:pwaPair.awake,unconscious_image:pwaPair.closed};
+
+    const patientImage=state.current?.presentation?.patient_image;
+    const unconsciousImage=state.current?.presentation?.unconscious_image;
+    const isElderlyWomanBlinkTest=/assets\/img\/plantao\/02-mulher-idosa-acordada\.webp(?:[?#].*)?$/.test(String(patientImage||""));
+
     return {
-      patient_image:state.current?.presentation?.patient_image,
-      unconscious_image:state.current?.presentation?.unconscious_image
+      patient_image:patientImage,
+      unconscious_image:unconsciousImage,
+      ...(isElderlyWomanBlinkTest ? {
+        blink_half_image:"assets/img/plantao/02-mulher-idosa-meio-fechados.webp",
+        blink_closed_image:"assets/img/plantao/02-mulher-idosa-piscar-fechado.webp"
+      } : {})
     };
   }
 
