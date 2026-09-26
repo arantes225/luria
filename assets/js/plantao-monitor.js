@@ -247,12 +247,12 @@
 
       if(!patientBreathOverlayAnimation || patientBreathOverlayAnimation.playState==='idle'){
         patientBreathOverlayAnimation=overlay.animate([
-          {transform:'translate(2px, 1px) scaleY(1)', offset:0},
-          {transform:'translate(2px, .4px) scaleY(1.004)', offset:.28},
-          {transform:'translate(2px, -0.8px) scaleY(1.009)', offset:.52},
-          {transform:'translate(2px, -1px) scaleY(1.010)', offset:.60},
-          {transform:'translate(2px, -.2px) scaleY(1.005)', offset:.78},
-          {transform:'translate(2px, 1px) scaleY(1)', offset:1}
+          {transform:'translate(8px, 1px) scaleY(1)', offset:0},
+          {transform:'translate(8px, .4px) scaleY(1.004)', offset:.28},
+          {transform:'translate(8px, -0.8px) scaleY(1.009)', offset:.52},
+          {transform:'translate(8px, -1px) scaleY(1.010)', offset:.60},
+          {transform:'translate(8px, -.2px) scaleY(1.005)', offset:.78},
+          {transform:'translate(8px, 1px) scaleY(1)', offset:1}
         ],{
           duration:3900,
           iterations:Infinity,
@@ -263,7 +263,7 @@
       patientBreathOverlayAnimation.effect?.updateTiming({duration});
       if(unconscious || (Number.isFinite(rr)&&rr<=0)){
         patientBreathOverlayAnimation.pause();
-        overlay.style.transform='translate(2px, 1px) scaleY(1)';
+        overlay.style.transform='translate(8px, 1px) scaleY(1)';
       }else{
         patientBreathOverlayAnimation.play();
       }
