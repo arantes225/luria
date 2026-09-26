@@ -301,7 +301,9 @@
       maxHeight:'none',
       objectFit:'contain',
       transition:'none',
-      willChange:'opacity'
+      willChange:'opacity',
+      clipPath:'polygon(4% 31%, 46% 25%, 49% 73%, 3% 76%, 51% 25%, 96% 31%, 97% 76%, 52% 73%)',
+      WebkitClipPath:'polygon(4% 31%, 46% 25%, 49% 73%, 3% 76%, 51% 25%, 96% 31%, 97% 76%, 52% 73%)'
     });
     positionOverlay(layer,box);
     ensureOverlayResizeObserver();
