@@ -3305,3 +3305,19 @@ body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
   box-shadow:none!important;
   filter:none!important;
 }
+
+
+/* LuriaZap — fotos históricas de perfil */
+body[data-page="plantao"] .plantao-phone-portrait-image{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  border-radius:50%;
+}
+body[data-page="plantao"] .plantao-phone-conversation-avatar,
+body[data-page="plantao"] .plantao-phone-contact-avatar{
+  overflow:hidden;
+  border-radius:50%;
+}
