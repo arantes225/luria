@@ -1089,3 +1089,52 @@
     }
   }
 }
+
+
+/* v7 — garante que as listas da Sala de Emergência abram sobre toda a tela no PWA */
+@media (max-width:680px){
+  .pwa-standalone body > #plantao-action-drawer.plantao-action-drawer-pwa-portal{
+    position:fixed!important;
+    left:0!important;
+    right:0!important;
+    top:auto!important;
+    bottom:0!important;
+    transform:none!important;
+    z-index:12000!important;
+    display:flex!important;
+    flex-direction:column!important;
+    width:100%!important;
+    max-width:none!important;
+    height:min(66dvh,620px)!important;
+    max-height:calc(100dvh - max(72px,env(safe-area-inset-top)))!important;
+    padding:14px 14px calc(14px + env(safe-area-inset-bottom))!important;
+    overflow:hidden!important;
+    border:1px solid var(--border)!important;
+    border-bottom:0!important;
+    border-radius:24px 24px 0 0!important;
+    background:var(--surface)!important;
+    color:var(--text)!important;
+    box-shadow:0 -18px 54px rgba(0,0,0,.38)!important;
+    visibility:visible!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+  }
+  .pwa-standalone body > #plantao-action-drawer.plantao-action-drawer-pwa-portal[hidden]{
+    display:none!important;
+  }
+  .pwa-standalone body > #plantao-action-drawer .plantao-actions{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    overflow-y:auto!important;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior:contain;
+    padding-bottom:max(12px,env(safe-area-inset-bottom))!important;
+  }
+  .pwa-standalone body > #plantao-action-drawer .plantao-drawer-head{
+    flex:0 0 auto!important;
+  }
+  .pwa-standalone body > #plantao-action-drawer .plantao-action-search,
+  .pwa-standalone body > #plantao-action-drawer .plantao-search-label{
+    flex:0 0 auto!important;
+  }
+}
