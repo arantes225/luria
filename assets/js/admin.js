@@ -2207,7 +2207,7 @@
         const flow = Array.isArray(state.qfBlockFlow)
           ? state.qfBlockFlow.find(x => Number(x.batch_number) === Number(batch.batch_number) && Number(x.block_number) === n)
           : null;
-        const independentChunkStage = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(
+        const independentChunkStage = ["perplexity_initial","perplexity_reaudit"].includes(
           String(blockAction?.next?.next_stage || "")
         );
 
@@ -2901,7 +2901,7 @@
       const styleScore = block.style_score == null
         ? "—"
         : `${Number(block.style_score).toLocaleString("pt-BR",{maximumFractionDigits:1})}/10`;
-      const provider = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
+      const provider = ["perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
         ? "chatgpt"
         : (block.next_provider || meta.provider);
 
@@ -2918,14 +2918,14 @@
           <div class="admin-qf-tracker-next">
             <span>Próximo prompt</span>
             <div class="admin-qf-tracker-prompt-actions">
-              ${["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
+              ${["perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
                 ? `<button class="button primary" type="button" data-qf-copy-block-stage="${Number(block.batch_number||0)}:${Number(block.block_number||0)}">Próxima parte · até 50</button>`
                 : (prompt ? `<button class="button primary admin-qf-copy-inline" type="button" data-inline-prompt="${esc(pid)}">Prompt</button>` : "")}
             </div>
-            ${prompt && !["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
+            ${prompt && !["perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
               ? `<pre id="${esc(pid)}" class="admin-qf-prompt admin-qf-tracker-hidden-prompt">${esc(prompt)}</pre>`
               : ""}
-            ${!prompt && !["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || "")) ? '<strong class="admin-qf-tracker-no-prompt">Sem prompt automático nesta fase</strong>' : ""}
+            ${!prompt && !["perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || "")) ? '<strong class="admin-qf-tracker-no-prompt">Sem prompt automático nesta fase</strong>' : ""}
           </div>
         </article>
       `;
@@ -3526,7 +3526,7 @@
   }
 
   function questionFactoryIndependentChunkStage(stage) {
-    return ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
+    return ["perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
   }
 
   function questionFactoryPendingForStage(question, stage) {
