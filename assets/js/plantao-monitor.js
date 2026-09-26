@@ -707,7 +707,7 @@
     let selected='breath';
     const offsets={
       breath:{x:0,y:0,scale:1,rotate:0,speed:1,smooth:0},
-      blink:{x:0,y:0,scale:1,rotate:0,speed:1,smooth:0}
+      blink:{x:18,y:3,scale:1,rotate:0,speed:1,smooth:0}
     };
     let drag=null;
 
@@ -839,7 +839,8 @@
       readout().textContent=value+' — copiado';
     });
 
-    new MutationObserver(()=>{if(enabled) requestAnimationFrame(decorateAll);})
+    decorateAll();
+    new MutationObserver(()=>{requestAnimationFrame(decorateAll);})
       .observe(document.getElementById('plantao-simulator'),{subtree:true,childList:true});
   }
 
