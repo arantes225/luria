@@ -3455,6 +3455,39 @@
     return patientSex()==="F" ? "Feminino" : "Masculino";
   }
 
+  function patientHdaText(){
+    return String(
+      state.current?.presentation?.hda
+      || state.current?.presentation?.history
+      || state.current?.presentation?.opening
+      || state.current?.summary
+      || state.current?.presentation?.chief_complaint
+      || "História da doença atual não informada."
+    ).trim();
+  }
+
+  function openPatientSheet(){
+    const sheet=$("plantao-patient-sheet");
+    if(!sheet || !state.current) return;
+    $("plantao-patient-sheet-name").textContent=patientReportName();
+    $("plantao-patient-sheet-age").textContent=reportAgeLabel();
+    $("plantao-patient-sheet-sex").textContent=reportSexLabel();
+    $("plantao-patient-sheet-hda").textContent=patientHdaText();
+    sheet.hidden=false;
+    sheet.setAttribute("aria-hidden","false");
+    $("plantao-pwa-patient-tab")?.setAttribute("aria-expanded","true");
+    requestAnimationFrame(()=>$("plantao-patient-sheet-close")?.focus());
+  }
+
+  function closePatientSheet(){
+    const sheet=$("plantao-patient-sheet");
+    if(!sheet) return;
+    sheet.hidden=true;
+    sheet.setAttribute("aria-hidden","true");
+    $("plantao-pwa-patient-tab")?.setAttribute("aria-expanded","false");
+    requestAnimationFrame(()=>$("plantao-pwa-patient-tab")?.focus());
+  }
+
   function closeExamReport(){
     const overlay=$("plantao-report-overlay");
     if(!overlay) return;
@@ -3833,7 +3866,14 @@
   $("plantao-conduta-finish")?.addEventListener("click",()=>{if(state.disposition)finishCase();else feed("Defina a conduta final antes de finalizar o atendimento.","warning");});
   $("plantao-action-close")?.addEventListener("click",closeActions);
   $("plantao-action-search")?.addEventListener("input",renderActions);
-  document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("plantao-action-drawer").hidden)closeActions();});
+  $("plantao-pwa-patient-tab")?.addEventListener("click",openPatientSheet);
+  $("plantao-patient-sheet-close")?.addEventListener("click",closePatientSheet);
+  $("plantao-patient-sheet")?.addEventListener("click",event=>{if(event.target?.id==="plantao-patient-sheet") closePatientSheet();});
+  document.addEventListener("keydown",e=>{
+    if(e.key!=="Escape") return;
+    if(!$("plantao-patient-sheet")?.hidden){closePatientSheet();return;}
+    if(!$("plantao-action-drawer").hidden)closeActions();
+  });
   $("plantao-back")?.addEventListener("click",async()=>{
     await backToLibrary();
   });
