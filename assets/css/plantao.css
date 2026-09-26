@@ -3147,3 +3147,21 @@ body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
     border-bottom:0;
   }
 }
+
+
+/* LuriaZap — cabeçalho da conversa e aulas longas */
+body[data-page="plantao"] .plantao-phone-contact-copy,
+body[data-page="plantao"] .plantao-phone-chat-head .plantao-phone-contact-copy{
+  text-align:left!important;
+  justify-self:stretch;
+}
+body[data-page="plantao"] .plantao-phone-contact-copy strong,
+body[data-page="plantao"] .plantao-phone-contact-copy small{
+  text-align:left!important;
+}
+body[data-page="plantao"] .plantao-phone-chat-head>strong{
+  text-align:left!important;
+}
+body[data-page="plantao"] .plantao-phone-bubble span{
+  white-space:pre-line;
+}
