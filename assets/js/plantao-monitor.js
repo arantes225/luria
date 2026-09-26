@@ -309,9 +309,9 @@
       objectFit:'contain',
       transition:'opacity 55ms cubic-bezier(.4,0,.2,1)',
       willChange:'opacity, transform',
-      transform:'translate(-1px, 1px)',
-      clipPath:'polygon(4% 31%, 46% 25%, 49% 73%, 3% 76%, 51% 25%, 96% 31%, 97% 76%, 52% 73%)',
-      WebkitClipPath:'polygon(4% 31%, 46% 25%, 49% 73%, 3% 76%, 51% 25%, 96% 31%, 97% 76%, 52% 73%)'
+      transform:'translate(0, 0)',
+      clipPath:'none',
+      WebkitClipPath:'none'
     });
     positionOverlay(layer,box);
     ensureOverlayResizeObserver();
@@ -665,6 +665,11 @@
       '<button type="button" data-scale="+">+ tamanho</button>'+
       '<button type="button" data-rotate="-">↺ 0,5°</button>'+
       '<button type="button" data-rotate="+">↻ 0,5°</button></div>'+
+      '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">'+
+      '<button type="button" data-speed="-">− velocidade</button>'+
+      '<button type="button" data-speed="+">+ velocidade</button>'+
+      '<button type="button" data-smooth="-">− smooth</button>'+
+      '<button type="button" data-smooth="+">+ smooth</button></div>'+
       '<div style="display:flex;gap:6px;margin-top:8px">'+
       '<button type="button" data-copy-pos>Copiar ajuste</button>'+
       '<button type="button" data-reset-pos>Resetar</button></div>'+
@@ -679,8 +684,8 @@
     let enabled=false;
     let selected='breath';
     const offsets={
-      breath:{x:0,y:0,scale:1,rotate:0},
-      blink:{x:0,y:0,scale:1,rotate:0}
+      breath:{x:0,y:0,scale:1,rotate:0,speed:1,smooth:0},
+      blink:{x:0,y:0,scale:1,rotate:0,speed:1,smooth:0}
     };
     let drag=null;
 
@@ -695,7 +700,8 @@
     const updateReadout=()=>{
       const p=offsets[selected];
       readout().textContent=(selected==='breath'?'Respiração':'Piscada')+
-        ' — X: '+p.x+' px | Y: '+p.y+' px | '+Math.round(p.scale*100)+'% | '+p.rotate.toFixed(1)+'°';
+        ' — X: '+p.x+' px | Y: '+p.y+' px | '+Math.round(p.scale*100)+'% | '+p.rotate.toFixed(1)+'°'+
+        ' | vel '+p.speed.toFixed(1)+'× | smooth '+p.smooth+'px';
     };
     const applyOffset=()=>{
       layersFor(selected).forEach(layer=>{
@@ -705,6 +711,9 @@
         layer.style.marginTop=offsets[selected].y+'px';
         layer.style.scale=String(offsets[selected].scale);
         layer.style.rotate=offsets[selected].rotate+'deg';
+        layer.style.filter=offsets[selected].smooth>0?'blur('+offsets[selected].smooth+'px)':'none';
+        layer.getAnimations?.().forEach(a=>{ if(a.effect?.getTiming) a.playbackRate=offsets[selected].speed; });
+        layer.style.transitionDuration=(55/offsets[selected].speed)+'ms';
         layer.style.outline=enabled?'1px dashed rgba(255,210,80,.9)':'none';
         layer.style.pointerEvents=enabled?'auto':'none';
         layer.style.cursor=enabled?'move':'default';
@@ -723,6 +732,9 @@
           layer.style.marginTop=offsets[kind].y+'px';
           layer.style.scale=String(offsets[kind].scale);
           layer.style.rotate=offsets[kind].rotate+'deg';
+          layer.style.filter=offsets[kind].smooth>0?'blur('+offsets[kind].smooth+'px)':'none';
+          layer.getAnimations?.().forEach(a=>{ if(a.effect?.getTiming) a.playbackRate=offsets[kind].speed; });
+          layer.style.transitionDuration=(55/offsets[kind].speed)+'ms';
         });
       });
       updateReadout();
@@ -780,14 +792,25 @@
       offsets[selected].rotate=Math.round(offsets[selected].rotate*2)/2;
       applyOffset();
     }));
+    panel.querySelectorAll('[data-speed]').forEach(btn=>btn.addEventListener('click',()=>{
+      offsets[selected].speed+=btn.dataset.speed==='+'?.1:-.1;
+      offsets[selected].speed=Math.max(.3,Math.min(2.5,Math.round(offsets[selected].speed*10)/10));
+      applyOffset();
+    }));
+    panel.querySelectorAll('[data-smooth]').forEach(btn=>btn.addEventListener('click',()=>{
+      offsets[selected].smooth+=btn.dataset.smooth==='+'?.25:-.25;
+      offsets[selected].smooth=Math.max(0,Math.min(3,Math.round(offsets[selected].smooth*4)/4));
+      applyOffset();
+    }));
     panel.querySelector('[data-reset-pos]').addEventListener('click',()=>{
-      offsets[selected]={x:0,y:0,scale:1,rotate:0};
+      offsets[selected]={x:0,y:0,scale:1,rotate:0,speed:1,smooth:0};
       applyOffset();
     });
     panel.querySelector('[data-copy-pos]').addEventListener('click',async()=>{
       const p=offsets[selected];
       const value=(selected==='breath'?'RESPIRACAO':'PISCADA')+
-        ' X='+p.x+' Y='+p.y+' TAMANHO='+Math.round(p.scale*100)+'% ROTACAO='+p.rotate.toFixed(1)+'deg';
+        ' X='+p.x+' Y='+p.y+' TAMANHO='+Math.round(p.scale*100)+'% ROTACAO='+p.rotate.toFixed(1)+'deg'+
+        ' VELOCIDADE='+p.speed.toFixed(1)+'x SMOOTH='+p.smooth+'px';
       try{await navigator.clipboard.writeText(value);}catch(_){}
       readout().textContent=value+' — copiado';
     });
