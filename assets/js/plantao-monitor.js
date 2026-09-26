@@ -386,9 +386,9 @@
     patientBlinkFrames={half,closed,box};
     const halfLayer=ensureBlinkLayer('plantao-patient-blink-half',half,box);
     const closedLayer=ensureBlinkLayer('plantao-patient-blink-closed',closed,box);
+    // Calibration mode: keep the closed-eye overlay fixed for precise positioning.
     if(halfLayer) halfLayer.style.opacity='0';
-    if(closedLayer) closedLayer.style.opacity='0';
-    scheduleNextPatientBlink();
+    if(closedLayer) closedLayer.style.opacity='1';
   }
 
   function update(next, caseContext={}) {
