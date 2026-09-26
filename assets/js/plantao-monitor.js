@@ -205,7 +205,7 @@
       pointerEvents:'none',
       zIndex:'3',
       opacity:'0',
-      transition:'none',
+      transition:'opacity 58ms cubic-bezier(.4,0,.2,1)',
       willChange:'opacity',
       clipPath:'ellipse(13% 5.2% at 44% 41.8%)',
       WebkitClipPath:'ellipse(13% 5.2% at 44% 41.8%)'
@@ -240,16 +240,20 @@
       if(!layer) return;
 
       patientBlinking=true;
-      layer.style.opacity='.46';
+      layer.style.opacity='0';
+      requestAnimationFrame(()=>{
+        layer.style.opacity='.42';
+        requestAnimationFrame(()=>{ layer.style.opacity='1'; });
+      });
       patientBlinkStepTimers=[
-        setTimeout(()=>{layer.style.opacity='1';},65),
-        setTimeout(()=>{layer.style.opacity='.46';},145),
+        setTimeout(()=>{layer.style.opacity='.58';},115),
+        setTimeout(()=>{layer.style.opacity='.22';},180),
         setTimeout(()=>{
           layer.style.opacity='0';
           patientBlinking=false;
           patientBlinkStepTimers=[];
           scheduleNextPatientBlink();
-        },215)
+        },245)
       ];
     },2800+Math.random()*3600);
   }
