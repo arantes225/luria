@@ -79,6 +79,11 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let patientBreathAnimation = null;
   let patientMotionResizeObserver = null;
+  let patientBlinkTimer = null;
+  let patientBlinkStepTimers = [];
+  let patientBlinkKey = "";
+  let patientBlinking = false;
+  let patientBlinkFrames = null;
 
   function ensurePatientMotionLayer(){
     const motionImg=document.getElementById('plantao-patient-motion');
@@ -173,6 +178,72 @@
     patientBreathAnimation.play();
   }
 
+  function applyPatientFrame(src){
+    if(!src) return;
+    const img=document.getElementById('plantao-patient-image');
+    const motionImg=document.getElementById('plantao-patient-motion');
+    if(img && img.getAttribute('src')!==src) img.src=src;
+    if(motionImg && motionImg.getAttribute('src')!==src) motionImg.src=src;
+  }
+
+  function clearPatientBlink(){
+    if(patientBlinkTimer){
+      clearTimeout(patientBlinkTimer);
+      patientBlinkTimer=null;
+    }
+    patientBlinkStepTimers.forEach(clearTimeout);
+    patientBlinkStepTimers=[];
+    patientBlinking=false;
+  }
+
+  function scheduleNextPatientBlink(){
+    if(!patientBlinkFrames || reduced.matches) return;
+    patientBlinkTimer=setTimeout(()=>{
+      patientBlinkTimer=null;
+      const section=document.getElementById('plantao-simulator');
+      if(document.hidden || !section || section.hidden){
+        scheduleNextPatientBlink();
+        return;
+      }
+      const {awake,half,closed}=patientBlinkFrames;
+      if(!awake || !half || !closed) return;
+
+      patientBlinking=true;
+      applyPatientFrame(half);
+      patientBlinkStepTimers=[
+        setTimeout(()=>applyPatientFrame(closed),70),
+        setTimeout(()=>applyPatientFrame(half),170),
+        setTimeout(()=>{
+          applyPatientFrame(awake);
+          patientBlinking=false;
+          patientBlinkStepTimers=[];
+          scheduleNextPatientBlink();
+        },230)
+      ];
+    },2500+Math.random()*3500);
+  }
+
+  function syncPatientBlink(caseContext,unconscious){
+    const awake=caseContext.patient_image;
+    const half=caseContext.blink_half_image;
+    const closed=caseContext.blink_closed_image;
+    const key=[awake,half,closed,unconscious,reduced.matches].join('|');
+    if(key===patientBlinkKey) return;
+
+    clearPatientBlink();
+    patientBlinkKey=key;
+    patientBlinkFrames=null;
+
+    if(unconscious || reduced.matches || !awake || !half || !closed) return;
+
+    patientBlinkFrames={awake,half,closed};
+    [half,closed].forEach(src=>{
+      const preload=new Image();
+      preload.src=src;
+    });
+    scheduleNextPatientBlink();
+  }
+
   function update(next, caseContext={}) {
     context=caseContext;
     enabled=caseContext.enabled===true;
@@ -180,11 +251,10 @@
     const mental = normalize(vitals.mental);
     const unconscious = /inconsciente|desacordad|nao responsiv|nao responde|arresponsiv|coma|irresponsiv/.test(mental);
     const img = document.getElementById('plantao-patient-image');
-    const motionImg = document.getElementById('plantao-patient-motion');
     const scene = document.querySelector('.plantao-scene');
     const src = unconscious ? caseContext.unconscious_image : caseContext.patient_image;
-    if (img && src && img.getAttribute('src') !== src) img.src = src;
-    if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
+    syncPatientBlink(caseContext,unconscious);
+    if(!patientBlinking || unconscious) applyPatientFrame(src);
     if (img) img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
     syncPatientBreathing(vitals, unconscious);
     if(scene){
@@ -425,6 +495,10 @@
 
   document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!frame)frame=requestAnimationFrame(draw);});
   new MutationObserver(()=>{if(!frame)frame=requestAnimationFrame(draw);}).observe(document.getElementById('plantao-simulator'),{attributes:true,attributeFilter:['hidden']});
-  reduced.addEventListener('change',()=>{if(!frame)frame=requestAnimationFrame(draw);});
+  reduced.addEventListener('change',()=>{
+    patientBlinkKey="";
+    syncPatientBlink(context,/inconsciente|desacordad|nao responsiv|nao responde|arresponsiv|coma|irresponsiv/.test(normalize(vitals.mental)));
+    if(!frame)frame=requestAnimationFrame(draw);
+  });
   window.PlantaoMonitor={update,react};
 })();
