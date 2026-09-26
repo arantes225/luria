@@ -3079,3 +3079,71 @@ html:not(.pwa-standalone) .plantao-pwa-live,
 html:not(.pwa-standalone) .plantao-pwa-patient-tab{
   display:none!important;
 }
+
+
+/* LuriaZap · viewport travado, sem rolagem da página */
+html:has(body.plantao-phone-mode),
+body.plantao-phone-mode{
+  height:100%;
+  overflow:hidden!important;
+  overscroll-behavior:none;
+}
+
+body.plantao-phone-mode .plantao-main{
+  height:100dvh;
+  max-height:100dvh;
+  overflow:hidden!important;
+}
+
+body.plantao-phone-mode #plantao-telefone.plantao-phone-preview{
+  position:fixed;
+  inset:0;
+  z-index:80;
+  display:grid!important;
+  place-items:stretch center;
+  width:100%;
+  height:100dvh;
+  min-height:100dvh;
+  max-height:100dvh;
+  margin:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+  background:var(--background);
+}
+
+body.plantao-phone-mode #plantao-telefone .plantao-phone-layout{
+  width:min(100%,455px);
+  height:100dvh;
+  min-height:0;
+  max-height:100dvh;
+  margin:0 auto;
+  overflow:hidden!important;
+}
+
+body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station{
+  width:100%;
+  height:100dvh;
+  min-height:0;
+  max-height:100dvh;
+  margin:0;
+}
+
+body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
+  width:100%;
+  height:100dvh;
+  max-height:100dvh;
+  aspect-ratio:auto;
+  margin:0;
+}
+
+@media(max-width:680px){
+  body.plantao-phone-mode #plantao-telefone{
+    padding:0!important;
+  }
+  body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
+    border-radius:0;
+    border-left:0;
+    border-right:0;
+    border-bottom:0;
+  }
+}
