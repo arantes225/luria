@@ -85,6 +85,7 @@
   let patientBlinkStepTimers = [];
   let patientBlinkKey = "";
   let patientBlinkFrames = null;
+  let patientBlinkTuning = {speed:1, transitionMs:55};
 
   function ensurePatientMotionLayer(){
     const motionImg=document.getElementById('plantao-patient-motion');
@@ -309,7 +310,7 @@
       maxWidth:'none',
       maxHeight:'none',
       objectFit:'contain',
-      transition:'opacity 55ms cubic-bezier(.4,0,.2,1)',
+      transition:'opacity '+patientBlinkTuning.transitionMs+'ms cubic-bezier(.4,0,.2,1)',
       willChange:'opacity, transform',
       transform:'translate(0, 0)',
       clipPath:'none',
@@ -347,17 +348,23 @@
       const closed=ensureBlinkLayer('plantao-patient-blink-closed',patientBlinkFrames.closed,patientBlinkFrames.box);
       if(!half || !closed) return;
 
+      const speed=Math.max(.3,Math.min(2.5,Number(patientBlinkTuning.speed)||1));
+      const t1=Math.round(95/speed);
+      const t2=Math.round(205/speed);
+      const t3=Math.round(320/speed);
+      half.style.transitionDuration=patientBlinkTuning.transitionMs+'ms';
+      closed.style.transitionDuration=patientBlinkTuning.transitionMs+'ms';
       half.style.opacity='1';
       closed.style.opacity='0';
       patientBlinkStepTimers=[
-        setTimeout(()=>{half.style.opacity='0';closed.style.opacity='1';},95),
-        setTimeout(()=>{closed.style.opacity='0';half.style.opacity='1';},205),
+        setTimeout(()=>{half.style.opacity='0';closed.style.opacity='1';},t1),
+        setTimeout(()=>{closed.style.opacity='0';half.style.opacity='1';},t2),
         setTimeout(()=>{
           half.style.opacity='0';
           closed.style.opacity='0';
           patientBlinkStepTimers=[];
           scheduleNextPatientBlink();
-        },320)
+        },t3)
       ];
     },3200+Math.random()*3300);
   }
@@ -379,9 +386,9 @@
     patientBlinkFrames={half,closed,box};
     const halfLayer=ensureBlinkLayer('plantao-patient-blink-half',half,box);
     const closedLayer=ensureBlinkLayer('plantao-patient-blink-closed',closed,box);
-    // Calibration phase: keep the closed-eye frame fixed for precise alignment.
     if(halfLayer) halfLayer.style.opacity='0';
-    if(closedLayer) closedLayer.style.opacity='1';
+    if(closedLayer) closedLayer.style.opacity='0';
+    scheduleNextPatientBlink();
   }
 
   function update(next, caseContext={}) {
@@ -692,6 +699,9 @@
       '<button type="button" data-speed="+">+ velocidade</button>'+
       '<button type="button" data-smooth="-">− borda</button>'+
       '<button type="button" data-smooth="+">+ borda</button></div>'+
+      '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">'+
+      '<button type="button" data-transition="-">− transição</button>'+
+      '<button type="button" data-transition="+">+ transição</button></div>'+
       '<div style="display:flex;gap:6px;margin-top:8px">'+
       '<button type="button" data-copy-pos>Copiar ajuste</button>'+
       '<button type="button" data-reset-pos>Resetar</button></div>'+
@@ -706,8 +716,8 @@
     let enabled=false;
     let selected='breath';
     const offsets={
-      breath:{x:0,y:0,scale:1,rotate:0,speed:1,smooth:0},
-      blink:{x:18,y:3,scale:1,rotate:0,speed:1,smooth:0}
+      breath:{x:0,y:0,scale:1,rotate:0,speed:1,smooth:0,transition:55},
+      blink:{x:18,y:3,scale:1,rotate:0,speed:1,smooth:0,transition:55}
     };
     let drag=null;
 
@@ -723,7 +733,7 @@
       const p=offsets[selected];
       readout().textContent=(selected==='breath'?'Respiração':'Piscada')+
         ' — X: '+p.x+' px | Y: '+p.y+' px | '+Math.round(p.scale*100)+'% | '+p.rotate.toFixed(1)+'°'+
-        ' | vel '+p.speed.toFixed(1)+'× | borda '+p.smooth+'px';
+        ' | vel '+p.speed.toFixed(1)+'× | borda '+p.smooth+'px | trans '+p.transition+'ms';
     };
     const applyOffset=()=>{
       layersFor(selected).forEach(layer=>{
@@ -736,7 +746,11 @@
         layer.style.filter='none';
         applyOverlayEdgeFeather(layer,offsets[selected].smooth);
         layer.getAnimations?.().forEach(a=>{ if(a.effect?.getTiming) a.playbackRate=offsets[selected].speed; });
-        layer.style.transitionDuration=(55/offsets[selected].speed)+'ms';
+        if(selected==='blink'){
+          patientBlinkTuning.speed=offsets[selected].speed;
+          patientBlinkTuning.transitionMs=offsets[selected].transition;
+          layer.style.transitionDuration=offsets[selected].transition+'ms';
+        }
         layer.style.outline=enabled?'1px dashed rgba(255,210,80,.9)':'none';
         layer.style.pointerEvents=enabled?'auto':'none';
         layer.style.cursor=enabled?'move':'default';
@@ -758,7 +772,11 @@
           layer.style.filter='none';
           applyOverlayEdgeFeather(layer,offsets[kind].smooth);
           layer.getAnimations?.().forEach(a=>{ if(a.effect?.getTiming) a.playbackRate=offsets[kind].speed; });
-          layer.style.transitionDuration=(55/offsets[kind].speed)+'ms';
+          if(kind==='blink'){
+            patientBlinkTuning.speed=offsets[kind].speed;
+            patientBlinkTuning.transitionMs=offsets[kind].transition;
+            layer.style.transitionDuration=offsets[kind].transition+'ms';
+          }
         });
       });
       updateReadout();
@@ -826,15 +844,20 @@
       offsets[selected].smooth=Math.max(0,Math.min(30,Math.round(offsets[selected].smooth)));
       applyOffset();
     }));
+    panel.querySelectorAll('[data-transition]').forEach(btn=>btn.addEventListener('click',()=>{
+      offsets[selected].transition+=btn.dataset.transition==='+'?10:-10;
+      offsets[selected].transition=Math.max(0,Math.min(220,Math.round(offsets[selected].transition/10)*10));
+      applyOffset();
+    }));
     panel.querySelector('[data-reset-pos]').addEventListener('click',()=>{
-      offsets[selected]={x:0,y:0,scale:1,rotate:0,speed:1,smooth:0};
+      offsets[selected]={x:0,y:0,scale:1,rotate:0,speed:1,smooth:0,transition:55};
       applyOffset();
     });
     panel.querySelector('[data-copy-pos]').addEventListener('click',async()=>{
       const p=offsets[selected];
       const value=(selected==='breath'?'RESPIRACAO':'PISCADA')+
         ' X='+p.x+' Y='+p.y+' TAMANHO='+Math.round(p.scale*100)+'% ROTACAO='+p.rotate.toFixed(1)+'deg'+
-        ' VELOCIDADE='+p.speed.toFixed(1)+'x BORDA='+p.smooth+'px';
+        ' VELOCIDADE='+p.speed.toFixed(1)+'x BORDA='+p.smooth+'px TRANSICAO='+p.transition+'ms';
       try{await navigator.clipboard.writeText(value);}catch(_){}
       readout().textContent=value+' — copiado';
     });
