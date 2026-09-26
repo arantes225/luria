@@ -5436,6 +5436,14 @@ async function deleteFlashcardFromLibrary(
     return;
   }
 
+  if (card.system) {
+    setLibraryStatus(
+      "Flashcards do Sistema são de livre acesso e não podem ser excluídos.",
+      "error"
+    );
+    return;
+  }
+
 
   if (card.shared) {
     const confirmed = await window.LuriaDialog.confirm(
@@ -5649,8 +5657,15 @@ function updateFlashBulkToolbar() {
 
 
   if (button) {
+    const selectedDeletable =
+      libraryCards.some(
+        card =>
+          selectedFlashcardIds.has(card.id)
+          && !card.system
+      );
+
     button.disabled =
-      selectedFlashcardIds.size === 0;
+      !selectedDeletable;
   }
 
   if (shareButton) {
@@ -5662,6 +5677,8 @@ function updateFlashBulkToolbar() {
           )
           &&
           !card.shared
+          &&
+          !card.system
       ).length;
 
     shareButton.disabled =
@@ -6113,6 +6130,7 @@ async function deleteSelectedFlashcards() {
     cards.filter(
       card =>
         !card.shared
+        && !card.system
     );
 
 
@@ -6120,6 +6138,7 @@ async function deleteSelectedFlashcards() {
     cards.filter(
       card =>
         card.shared
+        && !card.system
     );
 
 
@@ -6356,7 +6375,7 @@ function renderLibrary() {
               >
 
                 ${
-                  card.shared
+                  (card.shared || card.system)
                     ? ""
                     : `
                       <button
@@ -6368,13 +6387,15 @@ function renderLibrary() {
                     `
                 }
 
-                <button
-                  class="danger"
-                  type="button"
-                  data-flash-delete="${escapeFlashHtml(card.id)}"
-                >
-                  ${card.shared ? "Remover da biblioteca" : "Excluir"}
-                </button>
+                ${card.system ? "" : `
+                  <button
+                    class="danger"
+                    type="button"
+                    data-flash-delete="${escapeFlashHtml(card.id)}"
+                  >
+                    ${card.shared ? "Remover da biblioteca" : "Excluir"}
+                  </button>
+                `}
 
               </div>
 
@@ -6397,9 +6418,11 @@ function renderLibrary() {
                     : ""
                 }
 ${
-                  card.shared
-                    ? '<span class="flash-shared-badge">Compartilhado</span>'
-                    : ""
+                  card.system
+                    ? '<span class="flash-shared-badge">Sistema</span>'
+                    : card.shared
+                      ? '<span class="flash-shared-badge">Compartilhado</span>'
+                      : ""
                 }
 
               </div>
@@ -7305,7 +7328,7 @@ async function loadLibrary() {
   libraryCards = [
     ...systemCards.map(card => ({
       ...card,
-      shared: true,
+      shared: false,
       system: true,
       library_origin: "system",
       owner_user_id: card.user_id
@@ -7560,7 +7583,7 @@ function wireLibrary() {
       async () => {
         const cards =
           filteredLibraryCards()
-            .filter(card => !card.shared);
+            .filter(card => !card.shared && !card.system);
 
         const area = document.getElementById("library-area")?.value;
         const materia = document.getElementById("library-materia")?.value;
@@ -7626,6 +7649,8 @@ function wireLibrary() {
               )
               &&
               !card.shared
+              &&
+              !card.system
           );
 
         await openFlashShareDialog(
