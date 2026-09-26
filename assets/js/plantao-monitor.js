@@ -375,9 +375,11 @@
 
     [half,closed].forEach(src=>{const preload=new Image();preload.src=src;});
     patientBlinkFrames={half,closed,box};
-    ensureBlinkLayer('plantao-patient-blink-half',half,box);
-    ensureBlinkLayer('plantao-patient-blink-closed',closed,box);
-    scheduleNextPatientBlink();
+    const halfLayer=ensureBlinkLayer('plantao-patient-blink-half',half,box);
+    const closedLayer=ensureBlinkLayer('plantao-patient-blink-closed',closed,box);
+    // Calibration phase: keep the first eye frame fixed so it can be aligned precisely.
+    if(halfLayer) halfLayer.style.opacity='1';
+    if(closedLayer) closedLayer.style.opacity='0';
   }
 
   function update(next, caseContext={}) {
