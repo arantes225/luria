@@ -3165,3 +3165,124 @@ body[data-page="plantao"] .plantao-phone-chat-head>strong{
 body[data-page="plantao"] .plantao-phone-bubble span{
   white-space:pre-line;
 }
+
+
+/* LuriaZap — mini-retratos de contatos */
+body[data-page="plantao"] .plantao-phone-conversation-avatar,
+body[data-page="plantao"] .plantao-phone-contact-avatar{
+  overflow:hidden;
+  padding:0!important;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent-soft) 78%,#fff 22%),color-mix(in srgb,var(--surface) 82%,var(--accent-soft) 18%))!important;
+}
+
+.plantao-phone-portrait{
+  --skin:#d6a077;
+  --hair:#3b2b26;
+  --coat:#eef6fb;
+  --shirt:#3b78a5;
+  position:relative;
+  display:block;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 30%,rgba(255,255,255,.55),transparent 30%),
+    linear-gradient(160deg,#cfe8f8 0%,#8fc1df 100%);
+}
+
+.plantao-phone-portrait-head{
+  position:absolute;
+  left:50%;
+  top:20%;
+  width:36%;
+  height:38%;
+  transform:translateX(-50%);
+  border-radius:48% 48% 44% 44%;
+  background:var(--skin);
+  z-index:3;
+  box-shadow:inset 0 -2px 0 rgba(110,62,40,.08);
+}
+
+.plantao-phone-portrait-head::before,
+.plantao-phone-portrait-head::after{
+  content:"";
+  position:absolute;
+  top:42%;
+  width:8%;
+  height:8%;
+  border-radius:50%;
+  background:#243443;
+}
+.plantao-phone-portrait-head::before{left:24%}
+.plantao-phone-portrait-head::after{right:24%}
+
+.plantao-phone-portrait-hair{
+  position:absolute;
+  left:50%;
+  top:13%;
+  width:43%;
+  height:30%;
+  transform:translateX(-50%);
+  border-radius:50% 50% 40% 40%;
+  background:var(--hair);
+  z-index:4;
+  clip-path:polygon(0 0,100% 0,100% 63%,82% 50%,72% 67%,58% 48%,42% 64%,24% 49%,0 62%);
+}
+
+.plantao-phone-portrait-neck{
+  position:absolute;
+  left:50%;
+  top:52%;
+  width:15%;
+  height:14%;
+  transform:translateX(-50%);
+  background:var(--skin);
+  z-index:2;
+}
+
+.plantao-phone-portrait-body{
+  position:absolute;
+  left:50%;
+  bottom:-8%;
+  width:72%;
+  height:48%;
+  transform:translateX(-50%);
+  border-radius:48% 48% 0 0;
+  background:
+    linear-gradient(90deg,var(--coat) 0 37%,var(--shirt) 37% 63%,var(--coat) 63% 100%);
+  z-index:1;
+}
+
+.plantao-phone-portrait[data-avatar="1"]{--skin:#c78f67;--hair:#5b4438;--shirt:#275f88}
+.plantao-phone-portrait[data-avatar="2"]{--skin:#b87952;--hair:#1f2227;--shirt:#496781}
+.plantao-phone-portrait[data-avatar="3"]{--skin:#e0af87;--hair:#7b5a3e;--shirt:#477f9d}
+.plantao-phone-portrait[data-avatar="4"]{--skin:#d4a080;--hair:#68605d;--shirt:#7d5a8e}
+.plantao-phone-portrait[data-avatar="5"]{--skin:#c69370;--hair:#2c2d31;--shirt:#4d7188}
+.plantao-phone-portrait[data-avatar="6"]{--skin:#8f5d3f;--hair:#27211f;--shirt:#355f7b}
+.plantao-phone-portrait[data-avatar="7"]{--skin:#e1b18f;--hair:#a69a90;--shirt:#5b7895}
+
+.plantao-phone-portrait[data-avatar="3"] .plantao-phone-portrait-hair,
+.plantao-phone-portrait[data-avatar="4"] .plantao-phone-portrait-hair,
+.plantao-phone-portrait[data-avatar="7"] .plantao-phone-portrait-hair{
+  width:52%;
+  height:42%;
+  top:10%;
+  border-radius:55% 55% 45% 45%;
+  clip-path:polygon(0 0,100% 0,100% 86%,80% 68%,70% 82%,55% 68%,42% 84%,26% 69%,0 88%);
+}
+
+.plantao-phone-portrait-list{width:44px;height:44px}
+.plantao-phone-portrait-header{width:36px;height:36px}
+
+body[data-page="plantao"] .plantao-phone-conversation-avatar{
+  display:block;
+}
+body[data-page="plantao"] .plantao-phone-conversation-avatar .plantao-phone-portrait{
+  width:44px;
+  height:44px;
+}
+body[data-page="plantao"] .plantao-phone-contact-avatar .plantao-phone-portrait{
+  width:36px;
+  height:36px;
+}
