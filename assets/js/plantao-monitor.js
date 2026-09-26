@@ -218,12 +218,10 @@
       objectFit:'contain',
       transformOrigin:'52% 58%',
       willChange:'transform',
-      clipPath:'polygon(0 9%, 71% 9%, 78% 17%, 82% 30%, 86% 100%, 0 100%)',
-      WebkitClipPath:'polygon(0 9%, 71% 9%, 78% 17%, 82% 30%, 86% 100%, 0 100%)',
-      maskImage:'linear-gradient(90deg, #000 0%, #000 76%, rgba(0,0,0,.94) 80%, rgba(0,0,0,.55) 84%, transparent 88%), linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 5%, #000 11%, #000 100%)',
-      WebkitMaskImage:'linear-gradient(90deg, #000 0%, #000 76%, rgba(0,0,0,.94) 80%, rgba(0,0,0,.55) 84%, transparent 88%), linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 5%, #000 11%, #000 100%)',
-      maskComposite:'intersect',
-      WebkitMaskComposite:'source-in'
+      clipPath:'inset(3% 5% 2% 2% round 18%)',
+      WebkitClipPath:'inset(3% 5% 2% 2% round 18%)',
+      maskImage:'radial-gradient(ellipse 73% 72% at 45% 57%, #000 0%, #000 77%, rgba(0,0,0,.88) 85%, rgba(0,0,0,.35) 94%, transparent 100%)',
+      WebkitMaskImage:'radial-gradient(ellipse 73% 72% at 45% 57%, #000 0%, #000 77%, rgba(0,0,0,.88) 85%, rgba(0,0,0,.35) 94%, transparent 100%)'
     });
     positionOverlay(layer,caseContext.breath_box);
     ensureOverlayResizeObserver();
@@ -249,20 +247,23 @@
 
       if(!patientBreathOverlayAnimation || patientBreathOverlayAnimation.playState==='idle'){
         patientBreathOverlayAnimation=overlay.animate([
-          {transform:'translateY(0) scaleY(1)'},
-          {transform:'translateY(-1.5px) scaleY(1.012)'},
-          {transform:'translateY(0) scaleY(1)'}
+          {transform:'translate(2px, 1px) scaleY(1)', offset:0},
+          {transform:'translate(2px, .4px) scaleY(1.004)', offset:.28},
+          {transform:'translate(2px, -0.8px) scaleY(1.009)', offset:.52},
+          {transform:'translate(2px, -1px) scaleY(1.010)', offset:.60},
+          {transform:'translate(2px, -.2px) scaleY(1.005)', offset:.78},
+          {transform:'translate(2px, 1px) scaleY(1)', offset:1}
         ],{
-          duration:3300,
+          duration:3900,
           iterations:Infinity,
-          easing:'ease-in-out'
+          easing:'cubic-bezier(.45,0,.55,1)'
         });
       }
       const duration=Number.isFinite(rr)&&rr>0 ? Math.max(1500,Math.min(7000,60000/rr)) : 3300;
       patientBreathOverlayAnimation.effect?.updateTiming({duration});
       if(unconscious || (Number.isFinite(rr)&&rr<=0)){
         patientBreathOverlayAnimation.pause();
-        overlay.style.transform='translateY(0) scaleY(1)';
+        overlay.style.transform='translate(2px, 1px) scaleY(1)';
       }else{
         patientBreathOverlayAnimation.play();
       }
