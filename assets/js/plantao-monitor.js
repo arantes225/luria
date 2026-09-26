@@ -730,7 +730,7 @@
     let selected='breath';
     const offsets={
       breath:{x:0,y:0,scale:1,rotate:0,speed:1,smooth:0,transition:55},
-      blink:{x:18,y:3,scale:1,rotate:0,speed:1,smooth:0,transition:55}
+      blink:{x:19,y:2,scale:1,rotate:0,speed:1,smooth:0,transition:55}
     };
     let drag=null;
 
