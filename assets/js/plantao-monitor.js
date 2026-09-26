@@ -217,7 +217,13 @@
       maxHeight:'none',
       objectFit:'contain',
       transformOrigin:'52% 58%',
-      willChange:'transform'
+      willChange:'transform',
+      clipPath:'polygon(0 9%, 71% 9%, 78% 17%, 82% 30%, 86% 100%, 0 100%)',
+      WebkitClipPath:'polygon(0 9%, 71% 9%, 78% 17%, 82% 30%, 86% 100%, 0 100%)',
+      maskImage:'linear-gradient(90deg, #000 0%, #000 76%, rgba(0,0,0,.94) 80%, rgba(0,0,0,.55) 84%, transparent 88%), linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 5%, #000 11%, #000 100%)',
+      WebkitMaskImage:'linear-gradient(90deg, #000 0%, #000 76%, rgba(0,0,0,.94) 80%, rgba(0,0,0,.55) 84%, transparent 88%), linear-gradient(180deg, transparent 0%, rgba(0,0,0,.55) 5%, #000 11%, #000 100%)',
+      maskComposite:'intersect',
+      WebkitMaskComposite:'source-in'
     });
     positionOverlay(layer,caseContext.breath_box);
     ensureOverlayResizeObserver();
