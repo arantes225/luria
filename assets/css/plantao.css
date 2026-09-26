@@ -3415,3 +3415,163 @@ body[data-page="plantao"] .plantao-phone-battery::after{
   width:2.5px!important;
   height:5px!important;
 }
+
+
+/* v8.7 — cabeçalho clínico enxuto + botão Paciente antes de Anamnese */
+#plantao-simulator:not([hidden]) .plantao-patient-card{
+  grid-template-columns:1fr;
+  padding:14px 16px;
+}
+#plantao-simulator:not([hidden]) .plantao-patient-main{
+  display:grid;
+  gap:7px;
+}
+#plantao-simulator:not([hidden]) .plantao-patient-main #plantao-opening,
+#plantao-simulator:not([hidden]) .plantao-patient-main .plantao-patient-meta{
+  display:none!important;
+}
+#plantao-simulator:not([hidden]) .plantao-patient-main #plantao-setting{
+  justify-self:start;
+}
+#plantao-simulator:not([hidden]) .plantao-patient-main #plantao-case-title{
+  margin:0;
+}
+
+html:not(.pwa-standalone) #plantao-simulator:not([hidden]) .plantao-action-rail>.plantao-pwa-patient-tab{
+  display:flex!important;
+  width:100%;
+  min-height:66px;
+  align-items:center;
+  justify-content:flex-start;
+  gap:9px;
+  margin:0 0 8px;
+  padding:10px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  text-align:left;
+  cursor:pointer;
+}
+html:not(.pwa-standalone) #plantao-simulator:not([hidden]) .plantao-action-rail>.plantao-pwa-patient-tab span{
+  width:27px;
+  flex:none;
+  font-size:24px;
+  line-height:1;
+  text-align:center;
+}
+html:not(.pwa-standalone) #plantao-simulator:not([hidden]) .plantao-action-rail>.plantao-pwa-patient-tab strong{
+  font-size:14px;
+  line-height:1.3;
+}
+
+html:not(.pwa-standalone) .plantao-patient-sheet{
+  position:fixed;
+  inset:0;
+  z-index:13000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(4,18,33,.52);
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+}
+html:not(.pwa-standalone) .plantao-patient-sheet[hidden]{
+  display:none!important;
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-card{
+  width:min(100%,680px);
+  max-height:min(78vh,720px);
+  overflow:auto;
+  padding:20px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:var(--surface);
+  color:var(--text);
+  box-shadow:0 22px 70px rgba(0,0,0,.28);
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:16px;
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-head h2{
+  margin:3px 0 0;
+  font-size:22px;
+}
+html:not(.pwa-standalone) #plantao-patient-sheet-close{
+  width:40px;
+  min-width:40px;
+  height:40px;
+  padding:0;
+  font-size:22px;
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-meta{
+  display:grid;
+  grid-template-columns:1.4fr .8fr .8fr;
+  gap:10px;
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-meta>div,
+html:not(.pwa-standalone) .plantao-patient-sheet-hda{
+  padding:13px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:var(--surface-2);
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-meta span,
+html:not(.pwa-standalone) .plantao-patient-sheet-hda>span{
+  display:block;
+  margin-bottom:5px;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-meta strong{
+  font-size:13px;
+  line-height:1.25;
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-hda{
+  margin-top:10px;
+}
+html:not(.pwa-standalone) .plantao-patient-sheet-hda p{
+  margin:0;
+  font-size:13px;
+  line-height:1.55;
+  white-space:pre-wrap;
+}
+
+@media(max-width:680px){
+  html:not(.pwa-standalone) #plantao-simulator:not([hidden]) .plantao-action-rail>.plantao-pwa-patient-tab{
+    min-height:72px;
+    flex-direction:column;
+    justify-content:center;
+    gap:3px;
+    padding:6px 3px;
+    text-align:center;
+    border-radius:10px;
+  }
+  html:not(.pwa-standalone) #plantao-simulator:not([hidden]) .plantao-action-rail>.plantao-pwa-patient-tab span{
+    width:auto;
+    font-size:21px;
+  }
+  html:not(.pwa-standalone) #plantao-simulator:not([hidden]) .plantao-action-rail>.plantao-pwa-patient-tab strong{
+    font-size:11px;
+  }
+  html:not(.pwa-standalone) .plantao-patient-sheet{
+    align-items:flex-end;
+    padding:0;
+  }
+  html:not(.pwa-standalone) .plantao-patient-sheet-card{
+    width:100%;
+    max-height:72dvh;
+    border-radius:24px 24px 0 0;
+  }
+  html:not(.pwa-standalone) .plantao-patient-sheet-meta{
+    grid-template-columns:1fr;
+  }
+}
