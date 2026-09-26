@@ -165,6 +165,18 @@
     const sourceH=Number(box.sourceH||0);
     if(!rect.width || !rect.height || !sourceW || !sourceH) return;
 
+    if(box.fullFrame===true){
+      Object.assign(layer.style,{
+        left:'0px',
+        top:'0px',
+        width:'100%',
+        height:'100%',
+        objectFit:'cover',
+        objectPosition:getComputedStyle(document.getElementById('plantao-patient-image')).objectPosition || '50% 50%'
+      });
+      return;
+    }
+
     const scale=Math.max(rect.width/sourceW,rect.height/sourceH);
     const renderedW=sourceW*scale;
     const renderedH=sourceH*scale;
@@ -214,7 +226,7 @@
       opacity:'1',
       maxWidth:'none',
       maxHeight:'none',
-      objectFit:'fill',
+      objectFit:caseContext.breath_box?.fullFrame ? 'cover' : 'fill',
       transformOrigin:'52% 58%',
       willChange:'transform'
     });
@@ -298,7 +310,7 @@
       opacity:'0',
       maxWidth:'none',
       maxHeight:'none',
-      objectFit:'fill',
+      objectFit:box?.fullFrame ? 'cover' : 'fill',
       transition:'none',
       willChange:'opacity'
     });
