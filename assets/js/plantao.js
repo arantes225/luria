@@ -2123,14 +2123,23 @@
       return;
     }
     state.category=category;
+    const drawer=$("plantao-action-drawer");
     $("plantao-action-search").value="";
-    $("plantao-action-drawer").hidden=false;
+    // No PWA, o drawer sai do rail lateral e vai direto para o body.
+    // Isso evita que overflow/stacking context do cenário esconda a lista.
+    if(isStandalonePwa() && window.matchMedia?.("(max-width:680px)")?.matches && drawer?.parentElement!==document.body){
+      document.body.appendChild(drawer);
+      drawer.classList.add("plantao-action-drawer-pwa-portal");
+    }
+    drawer.hidden=false;
+    drawer.classList.add("is-open");
     renderActions();
     $("plantao-action-tabs").inert=true;
-    $("plantao-action-close").focus();
+    requestAnimationFrame(()=>$("plantao-action-close")?.focus());
   }
   function closeActions() {
     $("plantao-action-drawer").hidden=true;
+    $("plantao-action-drawer").classList.remove("is-open");
     $("plantao-action-tabs").inert=false;
     renderActions();
     $("plantao-action-tabs").querySelector(`[data-case-category="${state.category}"]`)?.focus();
