@@ -967,3 +967,125 @@
     }
   }
 }
+
+
+/* v6 — composição final 1:1 com a referência aprovada */
+@media (max-width:680px){
+  .pwa-standalone #plantao-simulator:not([hidden]){
+    --ref-tab-w:76px;
+    --ref-tab-h:100px;
+  }
+
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-sim-top{
+    min-height:88px!important;
+    height:88px!important;
+    padding:10px 14px!important;
+    grid-template-columns:48px minmax(0,1fr) 86px auto!important;
+    gap:8px!important;
+    border-radius:0 0 26px 26px!important;
+  }
+
+  .pwa-standalone #plantao-back{
+    width:48px!important;height:48px!important;min-height:48px!important;
+  }
+
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-bedside{
+    height:calc(100dvh - 88px)!important;
+    min-height:0!important;
+  }
+
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene>img{
+    width:100%!important;height:100%!important;
+    object-fit:cover!important;
+    object-position:50% 49%!important;
+  }
+
+  /* coluna esquerda */
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
+    left:0!important;top:34px!important;
+    width:var(--ref-tab-w)!important;height:var(--ref-tab-h)!important;
+    border-radius:0 16px 16px 0!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab{
+    width:var(--ref-tab-w)!important;min-width:var(--ref-tab-w)!important;
+    height:var(--ref-tab-h)!important;min-height:var(--ref-tab-h)!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="anamnese"]{
+    left:0!important;right:auto!important;top:142px!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="fisico"]{
+    display:none!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="iniciais"]{
+    display:flex!important;left:0!important;right:auto!important;top:250px!important;
+    border-left:0!important;border-right:1px solid rgba(169,204,232,.95)!important;
+    border-radius:0 16px 16px 0!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="hipoteses"]{
+    left:0!important;right:auto!important;top:358px!important;
+  }
+
+  /* coluna direita exatamente na metade inferior da referência */
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="exames"]{
+    display:flex!important;left:auto!important;right:0!important;top:250px!important;
+    border-right:0!important;border-radius:16px 0 0 16px!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="intervir"]{
+    display:flex!important;left:auto!important;right:0!important;top:358px!important;
+    border-right:0!important;border-radius:16px 0 0 16px!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="conduta"]{
+    display:none!important;
+  }
+
+  /* monitor funcional ocupando a mesma área da referência */
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-monitor-dock .plantao-monitor{
+    position:absolute!important;
+    top:20px!important;
+    left:auto!important;
+    right:8px!important;
+    transform:none!important;
+    width:56%!important;
+    min-width:218px!important;
+    max-width:258px!important;
+    aspect-ratio:1.08/1!important;
+    z-index:8!important;
+    border-radius:16px!important;
+  }
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-monitor-head{
+    display:none!important;
+  }
+
+  /* prontuário: mesma caixa inferior da referência */
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-feed{
+    position:absolute!important;
+    left:28px!important;
+    right:28px!important;
+    bottom:max(10px,env(safe-area-inset-bottom))!important;
+    width:auto!important;
+    height:148px!important;
+    min-height:148px!important;
+    max-height:148px!important;
+    padding:10px 12px!important;
+    border-radius:20px!important;
+    z-index:8!important;
+  }
+
+  @media(max-width:390px){
+    .pwa-standalone #plantao-simulator:not([hidden]){
+      --ref-tab-w:70px;
+      --ref-tab-h:96px;
+    }
+    .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="anamnese"]{top:138px!important}
+    .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="iniciais"],
+    .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="exames"]{top:242px!important}
+    .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="hipoteses"],
+    .pwa-standalone #plantao-simulator:not([hidden]) .plantao-action-tab[data-case-category="intervir"]{top:346px!important}
+    .pwa-standalone #plantao-simulator:not([hidden]) .plantao-monitor-dock .plantao-monitor{
+      right:6px!important;width:57%!important;min-width:205px!important;max-width:228px!important;
+    }
+    .pwa-standalone #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-feed{
+      left:22px!important;right:22px!important;
+    }
+  }
+}
