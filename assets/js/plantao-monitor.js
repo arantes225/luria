@@ -307,11 +307,11 @@
       maxWidth:'none',
       maxHeight:'none',
       objectFit:'contain',
-      transition:'opacity 38ms ease-out',
+      transition:'opacity 55ms cubic-bezier(.4,0,.2,1)',
       willChange:'opacity, transform',
-      transform:'translate(-3px, -2px)',
-      clipPath:'polygon(5% 30%, 46% 24%, 49% 74%, 4% 77%, 51% 24%, 95% 30%, 96% 77%, 52% 74%)',
-      WebkitClipPath:'polygon(5% 30%, 46% 24%, 49% 74%, 4% 77%, 51% 24%, 95% 30%, 96% 77%, 52% 74%)'
+      transform:'translate(-1px, 1px)',
+      clipPath:'polygon(4% 31%, 46% 25%, 49% 73%, 3% 76%, 51% 25%, 96% 31%, 97% 76%, 52% 73%)',
+      WebkitClipPath:'polygon(4% 31%, 46% 25%, 49% 73%, 3% 76%, 51% 25%, 96% 31%, 97% 76%, 52% 73%)'
     });
     positionOverlay(layer,box);
     ensureOverlayResizeObserver();
@@ -345,17 +345,17 @@
       const closed=ensureBlinkLayer('plantao-patient-blink-closed',patientBlinkFrames.closed,patientBlinkFrames.box);
       if(!half || !closed) return;
 
-      half.style.opacity='0.88';
+      half.style.opacity='1';
       closed.style.opacity='0';
       patientBlinkStepTimers=[
-        setTimeout(()=>{half.style.opacity='0.22';closed.style.opacity='0.96';},85),
-        setTimeout(()=>{closed.style.opacity='0.18';half.style.opacity='0.88';},185),
+        setTimeout(()=>{half.style.opacity='0';closed.style.opacity='1';},95),
+        setTimeout(()=>{closed.style.opacity='0';half.style.opacity='1';},205),
         setTimeout(()=>{
           half.style.opacity='0';
           closed.style.opacity='0';
           patientBlinkStepTimers=[];
           scheduleNextPatientBlink();
-        },285)
+        },320)
       ];
     },3200+Math.random()*3300);
   }
