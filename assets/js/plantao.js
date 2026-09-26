@@ -2231,23 +2231,22 @@
     const pwaPair=pwaPatientImagePair();
     if(pwaPair) return {
       patient_image:pwaPair.awake,
-      unconscious_image:pwaPair.closed,
-      ...(pwaPair.blinkHalf && pwaPair.blinkClosed ? {
-        blink_half_image:pwaPair.blinkHalf,
-        blink_closed_image:pwaPair.blinkClosed
-      } : {})
+      unconscious_image:pwaPair.closed
     };
 
     const patientImage=state.current?.presentation?.patient_image;
     const unconsciousImage=state.current?.presentation?.unconscious_image;
-    const isElderlyWomanBlinkTest=/assets\/img\/plantao\/02-mulher-idosa-acordada\.webp(?:[?#].*)?$/.test(String(patientImage||""));
+    const isElderlyWomanAnimation=/assets\/img\/plantao\/02-mulher-idosa-acordada\.webp(?:[?#].*)?$/.test(String(patientImage||""));
 
     return {
       patient_image:patientImage,
       unconscious_image:unconsciousImage,
-      ...(isElderlyWomanBlinkTest ? {
-        blink_half_image:"assets/img/plantao/02-mulher-idosa-meio-fechados.webp",
-        blink_closed_image:"assets/img/plantao/02-mulher-idosa-piscar-fechado.webp"
+      ...(isElderlyWomanAnimation ? {
+        blink_half_image:"assets/img/plantao/idosa-blink-half-overlay.webp",
+        blink_closed_image:"assets/img/plantao/idosa-blink-closed-overlay.webp",
+        blink_box:{x:517,y:305,w:228,h:149,sourceW:1672,sourceH:941},
+        breath_overlay_image:"assets/img/plantao/idosa-breath-overlay.webp",
+        breath_box:{x:535,y:500,w:590,h:245,sourceW:1672,sourceH:941}
       } : {})
     };
   }
