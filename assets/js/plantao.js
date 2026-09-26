@@ -56,25 +56,20 @@
 
   const PHONE_DRAFT_TTL_MS = 6 * 60 * 60 * 1000;
   const PHONE_PERSONAS = [
-    {name:"Hipócrates",avatar:0},
-    {name:"Galeno",avatar:1},
-    {name:"Avicena",avatar:2},
-    {name:"Florence Nightingale",avatar:3},
-    {name:"Nise da Silveira",avatar:4},
-    {name:"Oswaldo Cruz",avatar:5},
-    {name:"Carlos Chagas",avatar:6},
-    {name:"Rita Lobato",avatar:7},
-    {name:"Anna Nery",avatar:3},
-    {name:"William Osler",avatar:1},
-    {name:"Elizabeth Blackwell",avatar:4},
-    {name:"Ignaz Semmelweis",avatar:5},
-    {name:"Adib Jatene",avatar:6},
-    {name:"Zilda Arns",avatar:7},
-    {name:"Vital Brazil",avatar:0},
-    {name:"Virginia Apgar",avatar:3}
+    {name:"Dr. Hipócrates",avatar:"/assets/img/luriazap/hipocrates.webp"},
+    {name:"Dr. Galeno",avatar:"/assets/img/luriazap/galeno.webp"},
+    {name:"Dr. Avicena",avatar:"/assets/img/luriazap/avicena.webp"},
+    {name:"Dr. Louis Pasteur",avatar:"/assets/img/luriazap/louis-pasteur.webp"},
+    {name:"Dra. Florence Nightingale",avatar:"/assets/img/luriazap/florence-nightingale.webp"},
+    {name:"Dra. Hildegarda de Bingen",avatar:"/assets/img/luriazap/hildegard-von-bingen.webp"},
+    {name:"Dra. Ada Lovelace",avatar:"/assets/img/luriazap/ada-lovelace.webp"},
+    {name:"Dra. Mary Anning",avatar:"/assets/img/luriazap/mary-anning.webp"}
   ];
 
   function phonePersona(item,index=0){
+    const explicitName=String(item?.requester_role||"").split(" · ")[0].trim();
+    const explicit=PHONE_PERSONAS.find(persona=>persona.name===explicitName);
+    if(explicit) return explicit;
     const key=String(item?.slug||item?.id||item?.title||index);
     let hash=0;
     for(let i=0;i<key.length;i++) hash=(hash*31+key.charCodeAt(i))>>>0;
@@ -82,8 +77,8 @@
   }
 
   function phoneAvatarMarkup(persona,size="list"){
-    const avatar=Number(persona?.avatar||0)%8;
-    return `<span class="plantao-phone-portrait plantao-phone-portrait-${size}" data-avatar="${avatar}" aria-hidden="true"><span class="plantao-phone-portrait-hair"></span><span class="plantao-phone-portrait-head"></span><span class="plantao-phone-portrait-neck"></span><span class="plantao-phone-portrait-body"></span></span>`;
+    const src=String(persona?.avatar||PHONE_PERSONAS[0].avatar);
+    return `<img class="plantao-phone-portrait-image plantao-phone-portrait-image-${size}" src="${esc(src)}" alt="" aria-hidden="true" loading="lazy" decoding="async">`;
   }
 
   function setPhoneHeaderPersona(item){
