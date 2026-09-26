@@ -55,6 +55,45 @@
   };
 
   const PHONE_DRAFT_TTL_MS = 6 * 60 * 60 * 1000;
+  const PHONE_PERSONAS = [
+    {name:"Hipócrates",avatar:0},
+    {name:"Galeno",avatar:1},
+    {name:"Avicena",avatar:2},
+    {name:"Florence Nightingale",avatar:3},
+    {name:"Nise da Silveira",avatar:4},
+    {name:"Oswaldo Cruz",avatar:5},
+    {name:"Carlos Chagas",avatar:6},
+    {name:"Rita Lobato",avatar:7},
+    {name:"Anna Nery",avatar:3},
+    {name:"William Osler",avatar:1},
+    {name:"Elizabeth Blackwell",avatar:4},
+    {name:"Ignaz Semmelweis",avatar:5},
+    {name:"Adib Jatene",avatar:6},
+    {name:"Zilda Arns",avatar:7},
+    {name:"Vital Brazil",avatar:0},
+    {name:"Virginia Apgar",avatar:3}
+  ];
+
+  function phonePersona(item,index=0){
+    const key=String(item?.slug||item?.id||item?.title||index);
+    let hash=0;
+    for(let i=0;i<key.length;i++) hash=(hash*31+key.charCodeAt(i))>>>0;
+    return PHONE_PERSONAS[hash%PHONE_PERSONAS.length];
+  }
+
+  function phoneAvatarMarkup(persona,size="list"){
+    const avatar=Number(persona?.avatar||0)%8;
+    return `<span class="plantao-phone-portrait plantao-phone-portrait-${size}" data-avatar="${avatar}" aria-hidden="true"><span class="plantao-phone-portrait-hair"></span><span class="plantao-phone-portrait-head"></span><span class="plantao-phone-portrait-neck"></span><span class="plantao-phone-portrait-body"></span></span>`;
+  }
+
+  function setPhoneHeaderPersona(item){
+    const persona=phonePersona(item);
+    const nameEl=$("plantao-phone-requester");
+    if(nameEl) nameEl.textContent=persona.name;
+    const avatarHost=document.querySelector(".plantao-phone-contact-avatar");
+    if(avatarHost) avatarHost.innerHTML=phoneAvatarMarkup(persona,"header");
+  }
+
 
   function phoneDraftKey(){
     return state.user?.id ? `luria:plantao:luriazap:draft:${state.user.id}` : null;
@@ -118,7 +157,7 @@
     state.phoneUsedChoices=new Set(Array.isArray(draft.usedChoices)?draft.usedChoices:[]);
     $("plantao-phone-inbox").hidden=true;
     $("plantao-phone-station").hidden=false;
-    $("plantao-phone-requester").textContent=item.requester_role||"R1 de Clínica Médica";
+    setPhoneHeaderPersona(item);
     $("plantao-phone-context").textContent=item.title||item.specialty||"Caso clínico";
     const messages=Array.isArray(draft.messages)&&draft.messages.length
       ? draft.messages
@@ -408,8 +447,9 @@
     const query=normalizeLabel(state.phoneSearch||"");
     const filteredCases=state.phoneCases.filter(item=>{
       if(!query) return true;
+      const persona=phonePersona(item);
       return normalizeLabel([
-        item.title,item.specialty,item.difficulty,item.requester_role,item.opening_message
+        persona.name,item.title,item.specialty,item.difficulty,item.requester_role,item.opening_message
       ].filter(Boolean).join(" ")).includes(query);
     });
     if(!filteredCases.length){
@@ -423,17 +463,19 @@
         <div class="plantao-phone-resume-copy">
           <span class="plantao-phone-resume-label">Caso em andamento</span>
           <strong>${esc(draftCase.title||"Interconsulta")}</strong>
-          <small>${esc(draftCase.requester_role||draftCase.specialty||"LuriaZap")}</small>
+          <small>${esc(phonePersona(draftCase).name)}</small>
         </div>
         <button class="plantao-phone-resume-button" type="button" data-resume-phone-case>Continuar caso</button>
       </section>
     ` : "";
-    host.innerHTML=resumeCard+filteredCases.map(item=>`
+    host.innerHTML=resumeCard+filteredCases.map((item,index)=>{
+      const persona=phonePersona(item,index);
+      return `
       <button class="plantao-phone-conversation" type="button" data-start-phone-case="${esc(item.id)}">
-        <span class="plantao-phone-conversation-avatar" aria-hidden="true">✚</span>
+        <span class="plantao-phone-conversation-avatar">${phoneAvatarMarkup(persona,"list")}</span>
         <span class="plantao-phone-conversation-main">
           <span class="plantao-phone-conversation-top">
-            <strong>${esc(item.requester_role||"Interconsulta")}</strong>
+            <strong>${esc(persona.name)}</strong>
             <small>agora</small>
           </span>
           <span class="plantao-phone-conversation-title">${esc(item.title)}</span>
@@ -441,7 +483,8 @@
         </span>
         <span class="plantao-phone-conversation-chevron" aria-hidden="true">›</span>
       </button>
-    `).join("");
+    `;
+    }).join("");
   }
 
   function setPhoneComposeState(enabled,placeholder="Mensagem"){
@@ -495,7 +538,7 @@
     if(msgError) console.warn("Telefone: falha ao registrar abertura",msgError);
     $("plantao-phone-inbox").hidden=true;
     $("plantao-phone-station").hidden=false;
-    $("plantao-phone-requester").textContent=item.requester_role||"R1 de Clínica Médica";
+    setPhoneHeaderPersona(item);
     $("plantao-phone-context").textContent=item.title||item.specialty||"Caso clínico";
     renderPhoneMessages([{sender:"requester",content:item.opening_message}]);
     const choices=$("plantao-phone-choices");
