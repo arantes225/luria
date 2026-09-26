@@ -219,18 +219,12 @@
       objectFit:'contain',
       transformOrigin:'52% 58%',
       willChange:'transform',
-      // The asset already has its own transparent silhouette. Avoid CSS masks/clips
-      // here because their antialiasing can create a dark fringe while transforming.
-      clipPath:'none',
-      WebkitClipPath:'none',
-      maskImage:'none',
-      WebkitMaskImage:'none',
-      filter:'none',
-      boxShadow:'none',
-      background:'transparent',
-      mixBlendMode:'normal',
-      backfaceVisibility:'hidden',
-      WebkitBackfaceVisibility:'hidden'
+      // Move almost the whole sleeve/chest, but leave the lower-left sleeve edge
+      // close to the bed fixed so the breathing overlay does not reveal itself.
+      clipPath:'polygon(0% 4%, 18% 3%, 31% 2%, 46% 0%, 63% 1%, 100% 0%, 100% 100%, 18% 100%, 14% 94%, 12% 86%, 10% 76%, 7% 64%, 3% 51%, 0% 45%)',
+      WebkitClipPath:'polygon(0% 4%, 18% 3%, 31% 2%, 46% 0%, 63% 1%, 100% 0%, 100% 100%, 18% 100%, 14% 94%, 12% 86%, 10% 76%, 7% 64%, 3% 51%, 0% 45%)',
+      maskImage:'radial-gradient(ellipse 86% 92% at 57% 46%, #000 0%, #000 80%, rgba(0,0,0,.9) 87%, rgba(0,0,0,.5) 94%, transparent 100%)',
+      WebkitMaskImage:'radial-gradient(ellipse 86% 92% at 57% 46%, #000 0%, #000 80%, rgba(0,0,0,.9) 87%, rgba(0,0,0,.5) 94%, transparent 100%)'
     });
     positionOverlay(layer,caseContext.breath_box);
     ensureOverlayResizeObserver();
@@ -320,7 +314,13 @@
       willChange:'opacity, transform',
       transform:'translate(0, 0)',
       clipPath:'none',
-      WebkitClipPath:'none'
+      WebkitClipPath:'none',
+      maskImage:'none',
+      WebkitMaskImage:'none',
+      filter:'none',
+      boxShadow:'none',
+      background:'transparent',
+      mixBlendMode:'normal'
     });
     positionOverlay(layer,box);
     ensureOverlayResizeObserver();
@@ -358,19 +358,26 @@
       const t1=Math.round(95/speed);
       const t2=Math.round(205/speed);
       const t3=Math.round(320/speed);
-      half.style.transitionDuration=patientBlinkTuning.transitionMs+'ms';
-      closed.style.transitionDuration=patientBlinkTuning.transitionMs+'ms';
+      const trans=Math.max(0,Math.round(patientBlinkTuning.transitionMs));
+      half.style.transitionDuration=trans+'ms';
+      closed.style.transitionDuration=trans+'ms';
       half.style.opacity='1';
       closed.style.opacity='0';
+
+      // Never cross-fade the two skin overlays at the same time:
+      // fade one out first, then bring the next one in.
+      const gap=Math.max(8,Math.min(40,Math.round(trans*.35)));
       patientBlinkStepTimers=[
-        setTimeout(()=>{half.style.opacity='0';closed.style.opacity='1';},t1),
-        setTimeout(()=>{closed.style.opacity='0';half.style.opacity='1';},t2),
+        setTimeout(()=>{half.style.opacity='0';},Math.max(0,t1-gap)),
+        setTimeout(()=>{closed.style.opacity='1';},t1+gap),
+        setTimeout(()=>{closed.style.opacity='0';},Math.max(t1+gap,t2-gap)),
+        setTimeout(()=>{half.style.opacity='1';},t2+gap),
+        setTimeout(()=>{half.style.opacity='0';},Math.max(t2+gap,t3-gap)),
         setTimeout(()=>{
-          half.style.opacity='0';
           closed.style.opacity='0';
           patientBlinkStepTimers=[];
           scheduleNextPatientBlink();
-        },t3)
+        },t3+gap)
       ];
     },3200+Math.random()*3300);
   }
