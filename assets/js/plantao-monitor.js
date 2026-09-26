@@ -631,6 +631,146 @@
 
   setupMonitorExpansion();
 
+  function setupPatientOverlayCalibration(){
+    if(document.getElementById('plantao-overlay-calibration-toggle')) return;
+
+    const toggle=document.createElement('button');
+    toggle.id='plantao-overlay-calibration-toggle';
+    toggle.type='button';
+    toggle.textContent='Ajustar overlay';
+    toggle.title='Mover os overlays da paciente';
+    Object.assign(toggle.style,{
+      position:'fixed',right:'12px',bottom:'84px',zIndex:'10050',
+      border:'1px solid rgba(255,255,255,.45)',borderRadius:'999px',
+      padding:'8px 12px',font:'600 12px system-ui,sans-serif',
+      background:'rgba(24,72,136,.92)',color:'#fff',boxShadow:'0 4px 18px rgba(0,0,0,.18)'
+    });
+
+    const panel=document.createElement('div');
+    panel.id='plantao-overlay-calibration-panel';
+    panel.hidden=true;
+    Object.assign(panel.style,{
+      position:'fixed',right:'12px',bottom:'126px',zIndex:'10050',
+      width:'min(310px,calc(100vw - 24px))',padding:'10px',
+      borderRadius:'12px',background:'rgba(10,18,30,.94)',color:'#fff',
+      font:'12px system-ui,sans-serif',boxShadow:'0 8px 28px rgba(0,0,0,.28)'
+    });
+    panel.innerHTML='<div style="font-weight:700;margin-bottom:7px">Calibrar overlay</div>'+
+      '<div style="display:flex;gap:6px;margin-bottom:8px">'+
+      '<button type="button" data-overlay="breath">Respiração</button>'+
+      '<button type="button" data-overlay="blink">Piscada</button></div>'+
+      '<div id="plantao-overlay-calibration-readout">Selecione um overlay.</div>'+
+      '<div style="display:flex;gap:6px;margin-top:8px">'+
+      '<button type="button" data-copy-pos>Copiar posição</button>'+
+      '<button type="button" data-reset-pos>Resetar</button></div>'+
+      '<div style="opacity:.72;margin-top:7px">Arraste com mouse/dedo. Setas = 1 px.</div>';
+    panel.querySelectorAll('button').forEach(btn=>Object.assign(btn.style,{
+      border:'1px solid rgba(255,255,255,.24)',borderRadius:'8px',
+      background:'rgba(255,255,255,.09)',color:'#fff',padding:'6px 8px'
+    }));
+
+    document.body.append(toggle,panel);
+
+    let enabled=false;
+    let selected='breath';
+    const offsets={breath:{x:0,y:0},blink:{x:0,y:0}};
+    let drag=null;
+
+    const layersFor=(kind)=>{
+      if(kind==='blink') return [
+        document.getElementById('plantao-patient-blink-half'),
+        document.getElementById('plantao-patient-blink-closed')
+      ].filter(Boolean);
+      return [document.getElementById('plantao-patient-breath-overlay')].filter(Boolean);
+    };
+    const readout=()=>panel.querySelector('#plantao-overlay-calibration-readout');
+    const updateReadout=()=>{
+      const p=offsets[selected];
+      readout().textContent=(selected==='breath'?'Respiração':'Piscada')+' — X: '+p.x+' px | Y: '+p.y+' px';
+    };
+    const applyOffset=()=>{
+      layersFor(selected).forEach(layer=>{
+        layer.style.setProperty('--cal-x',offsets[selected].x+'px');
+        layer.style.setProperty('--cal-y',offsets[selected].y+'px');
+        layer.style.marginLeft=offsets[selected].x+'px';
+        layer.style.marginTop=offsets[selected].y+'px';
+        layer.style.outline=enabled?'1px dashed rgba(255,210,80,.9)':'none';
+        layer.style.pointerEvents=enabled?'auto':'none';
+        layer.style.cursor=enabled?'move':'default';
+        layer.style.touchAction=enabled?'none':'auto';
+      });
+      updateReadout();
+    };
+    const decorateAll=()=>{
+      ['breath','blink'].forEach(kind=>{
+        layersFor(kind).forEach(layer=>{
+          layer.style.outline=(enabled&&kind===selected)?'1px dashed rgba(255,210,80,.9)':'none';
+          layer.style.pointerEvents=(enabled&&kind===selected)?'auto':'none';
+          layer.style.cursor=(enabled&&kind===selected)?'move':'default';
+          layer.style.touchAction=(enabled&&kind===selected)?'none':'auto';
+          layer.style.marginLeft=offsets[kind].x+'px';
+          layer.style.marginTop=offsets[kind].y+'px';
+        });
+      });
+      updateReadout();
+    };
+
+    toggle.addEventListener('click',()=>{
+      enabled=!enabled;
+      panel.hidden=!enabled;
+      toggle.textContent=enabled?'Fechar ajuste':'Ajustar overlay';
+      decorateAll();
+    });
+    panel.querySelectorAll('[data-overlay]').forEach(btn=>btn.addEventListener('click',()=>{
+      selected=btn.dataset.overlay;
+      decorateAll();
+    }));
+
+    document.addEventListener('pointerdown',e=>{
+      if(!enabled || !layersFor(selected).includes(e.target)) return;
+      drag={id:e.pointerId,x:e.clientX,y:e.clientY,ox:offsets[selected].x,oy:offsets[selected].y};
+      e.target.setPointerCapture?.(e.pointerId);
+      e.preventDefault();
+    },true);
+    document.addEventListener('pointermove',e=>{
+      if(!drag || e.pointerId!==drag.id) return;
+      offsets[selected].x=Math.round(drag.ox+e.clientX-drag.x);
+      offsets[selected].y=Math.round(drag.oy+e.clientY-drag.y);
+      applyOffset();
+      e.preventDefault();
+    },true);
+    document.addEventListener('pointerup',e=>{
+      if(drag && e.pointerId===drag.id) drag=null;
+    },true);
+
+    document.addEventListener('keydown',e=>{
+      if(!enabled || !['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)) return;
+      if(e.key==='ArrowLeft') offsets[selected].x--;
+      if(e.key==='ArrowRight') offsets[selected].x++;
+      if(e.key==='ArrowUp') offsets[selected].y--;
+      if(e.key==='ArrowDown') offsets[selected].y++;
+      applyOffset();
+      e.preventDefault();
+    });
+
+    panel.querySelector('[data-reset-pos]').addEventListener('click',()=>{
+      offsets[selected]={x:0,y:0};
+      applyOffset();
+    });
+    panel.querySelector('[data-copy-pos]').addEventListener('click',async()=>{
+      const p=offsets[selected];
+      const value=(selected==='breath'?'RESPIRACAO':'PISCADA')+' X='+p.x+' Y='+p.y;
+      try{await navigator.clipboard.writeText(value);}catch(_){}
+      readout().textContent=value+' — copiado';
+    });
+
+    new MutationObserver(()=>{if(enabled) requestAnimationFrame(decorateAll);})
+      .observe(document.getElementById('plantao-simulator'),{subtree:true,childList:true});
+  }
+
+
+  setupPatientOverlayCalibration();
+
   document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!frame)frame=requestAnimationFrame(draw);});
   new MutationObserver(()=>{if(!frame)frame=requestAnimationFrame(draw);}).observe(document.getElementById('plantao-simulator'),{attributes:true,attributeFilter:['hidden']});
   reduced.addEventListener('change',()=>{
