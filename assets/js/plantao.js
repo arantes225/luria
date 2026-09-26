@@ -2242,8 +2242,8 @@
       patient_image:patientImage,
       unconscious_image:unconsciousImage,
       ...(isElderlyWomanAnimation ? {
-        blink_half_image:"assets/img/plantao/idosa-blink-half-overlay.webp",
-        blink_closed_image:"assets/img/plantao/idosa-blink-closed-overlay.webp",
+        blink_half_image:"assets/img/plantao/02-mulher-idosa-meio-fechados.webp",
+        blink_closed_image:"assets/img/plantao/02-mulher-idosa-piscar-fechado.webp",
         blink_box:{x:511,y:301,w:228,h:149,sourceW:1672,sourceH:941},
         breath_overlay_image:"assets/img/plantao/idosa-breath-overlay.webp",
         breath_box:{x:535,y:500,w:590,h:245,sourceW:1672,sourceH:941}
