@@ -220,10 +220,10 @@
       willChange:'transform',
       // Move almost the whole sleeve/chest, but leave the lower-left sleeve edge
       // close to the bed fixed so the breathing overlay does not reveal itself.
-      clipPath:'polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%, 12% 93%, 10% 84%, 8% 73%, 5% 60%, 2% 48%, 0% 42%)',
-      WebkitClipPath:'polygon(0% 0%, 100% 0%, 100% 100%, 15% 100%, 12% 93%, 10% 84%, 8% 73%, 5% 60%, 2% 48%, 0% 42%)',
-      maskImage:'radial-gradient(ellipse 82% 88% at 58% 48%, #000 0%, #000 79%, rgba(0,0,0,.9) 86%, rgba(0,0,0,.48) 94%, transparent 100%)',
-      WebkitMaskImage:'radial-gradient(ellipse 82% 88% at 58% 48%, #000 0%, #000 79%, rgba(0,0,0,.9) 86%, rgba(0,0,0,.48) 94%, transparent 100%)'
+      clipPath:'polygon(0% 4%, 18% 3%, 31% 2%, 46% 0%, 63% 1%, 100% 0%, 100% 100%, 18% 100%, 14% 94%, 12% 86%, 10% 76%, 7% 64%, 3% 51%, 0% 45%)',
+      WebkitClipPath:'polygon(0% 4%, 18% 3%, 31% 2%, 46% 0%, 63% 1%, 100% 0%, 100% 100%, 18% 100%, 14% 94%, 12% 86%, 10% 76%, 7% 64%, 3% 51%, 0% 45%)',
+      maskImage:'radial-gradient(ellipse 86% 92% at 57% 46%, #000 0%, #000 80%, rgba(0,0,0,.9) 87%, rgba(0,0,0,.5) 94%, transparent 100%)',
+      WebkitMaskImage:'radial-gradient(ellipse 86% 92% at 57% 46%, #000 0%, #000 80%, rgba(0,0,0,.9) 87%, rgba(0,0,0,.5) 94%, transparent 100%)'
     });
     positionOverlay(layer,caseContext.breath_box);
     ensureOverlayResizeObserver();
