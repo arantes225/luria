@@ -3358,3 +3358,60 @@ body[data-page="plantao"] .plantao-phone-new-chat-fab:focus-visible{
   outline:3px solid var(--accent-soft);
   outline-offset:3px;
 }
+
+
+/* LuriaZap — barra de status mais legível */
+body[data-page="plantao"] .plantao-phone-statusbar{
+  font-size:14px!important;
+  font-weight:900!important;
+}
+body[data-page="plantao"] .plantao-phone-status-icons{
+  gap:9px!important;
+  transform:scale(1.08)!important;
+  transform-origin:right center!important;
+}
+body[data-page="plantao"] .plantao-phone-signal{
+  height:14px!important;
+  gap:2.5px!important;
+}
+body[data-page="plantao"] .plantao-phone-signal i{
+  width:2.5px!important;
+}
+body[data-page="plantao"] .plantao-phone-signal i:nth-child(1){height:5px!important}
+body[data-page="plantao"] .plantao-phone-signal i:nth-child(2){height:8px!important}
+body[data-page="plantao"] .plantao-phone-signal i:nth-child(3){height:11px!important}
+body[data-page="plantao"] .plantao-phone-signal i:nth-child(4){height:14px!important}
+body[data-page="plantao"] .plantao-phone-wifi{
+  width:20px!important;
+  height:15px!important;
+}
+body[data-page="plantao"] .plantao-phone-wifi::before{
+  width:20px!important;
+  height:20px!important;
+  border-top-width:2px!important;
+}
+body[data-page="plantao"] .plantao-phone-wifi::after{
+  width:13px!important;
+  height:13px!important;
+  border-top-width:2px!important;
+}
+body[data-page="plantao"] .plantao-phone-wifi i::before{
+  width:6px!important;
+  height:6px!important;
+  border-top-width:2px!important;
+}
+body[data-page="plantao"] .plantao-phone-wifi i::after{
+  width:3.5px!important;
+  height:3.5px!important;
+}
+body[data-page="plantao"] .plantao-phone-battery{
+  width:23px!important;
+  height:11px!important;
+  border-width:1.8px!important;
+}
+body[data-page="plantao"] .plantao-phone-battery::after{
+  top:2.5px!important;
+  right:-3.5px!important;
+  width:2.5px!important;
+  height:5px!important;
+}
