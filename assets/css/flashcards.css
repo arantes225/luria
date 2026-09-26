@@ -1972,3 +1972,44 @@
 
 
 /* Flashcards v17.4: campo Pulo do Gato removido dos flashcards. */
+
+
+/* Biblioteca · Geral / Sistema / Pessoal */
+.library-scope-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  margin: 0 0 14px;
+  border: 1px solid var(--border, #dbe6f2);
+  border-radius: 12px;
+  background: var(--surface-soft, rgba(24, 72, 136, 0.05));
+}
+
+.library-scope-tab {
+  appearance: none;
+  border: 0;
+  border-radius: 9px;
+  padding: 8px 14px;
+  background: transparent;
+  color: var(--text-muted, #64748b);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.library-scope-tab.active {
+  background: var(--brand, #184888);
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .library-scope-tabs {
+    display: flex;
+    width: 100%;
+  }
+
+  .library-scope-tab {
+    flex: 1;
+    padding-inline: 8px;
+  }
+}
