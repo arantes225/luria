@@ -35,6 +35,7 @@ let ankiImportStats = {
 };
 
 let libraryCards = [];
+let libraryScopeFilter = "all";
 
 let editingFlashcardId =
   null;
@@ -4989,6 +4990,19 @@ function filteredLibraryCards() {
   return libraryCards.filter(
     (card) => {
       if (
+        libraryScopeFilter === "system"
+        && card.library_origin !== "system"
+      ) {
+        return false;
+      }
+
+      if (
+        libraryScopeFilter === "personal"
+        && card.library_origin !== "personal"
+      ) {
+        return false;
+      }
+      if (
         area
         && card.area
           !== area
@@ -7203,9 +7217,58 @@ function startExtraReview(cards, label = "revisão extraordinária") {
   updateReviewLauncher();
 }
 
+async function loadSystemFlashcards() {
+  const rows = [];
+  const pageSize = 1000;
+
+  for (let from = 0; ; from += pageSize) {
+    const {
+      data,
+      error
+    } = await flashSb
+      .from("flashcards")
+      .select(`
+        id,
+        user_id,
+        area,
+        materia,
+        theme,
+        front_text,
+        back_text,
+        front_image_path,
+        back_image_path,
+        due_date,
+        review_count,
+        active,
+        created_at,
+        library_scope
+      `)
+      .eq("library_scope", "system")
+      .eq("active", true)
+      .order("materia", { ascending: true })
+      .order("created_at", { ascending: true })
+      .range(from, from + pageSize - 1);
+
+    if (error) {
+      console.error(error);
+      return [];
+    }
+
+    const batch = data || [];
+    rows.push(...batch);
+
+    if (batch.length < pageSize) {
+      break;
+    }
+  }
+
+  return rows;
+}
+
 async function loadLibrary() {
   const [
     ownedResult,
+    systemCards,
     sharedCards
   ] = await Promise.all([
     flashSb
@@ -7223,11 +7286,14 @@ async function loadLibrary() {
         due_date,
         review_count,
         active,
-        created_at
+        created_at,
+        library_scope
       `)
       .eq("user_id", flashUser.id)
+      .eq("library_scope", "personal")
       .order("created_at", { ascending: false })
-      .limit(500),
+      .limit(1000),
+    loadSystemFlashcards(),
     loadSharedFlashcards()
   ]);
 
@@ -7237,12 +7303,25 @@ async function loadLibrary() {
   }
 
   libraryCards = [
+    ...systemCards.map(card => ({
+      ...card,
+      shared: true,
+      system: true,
+      library_origin: "system",
+      owner_user_id: card.user_id
+    })),
     ...(ownedResult.data || []).map(card => ({
       ...card,
       shared: false,
+      system: false,
+      library_origin: "personal",
       owner_user_id: card.user_id
     })),
-    ...sharedCards
+    ...sharedCards.map(card => ({
+      ...card,
+      system: false,
+      library_origin: "personal"
+    }))
   ];
 
   populateLibraryAreas();
@@ -7388,6 +7467,29 @@ function wireReviewCardMenu() {
 
 function wireLibrary() {
   wireLibraryFilterPickers();
+
+  document
+    .querySelectorAll("[data-library-scope]")
+    .forEach((button) => {
+      button.addEventListener("click", () => {
+        libraryScopeFilter =
+          button.dataset.libraryScope
+          || "all";
+
+        document
+          .querySelectorAll("[data-library-scope]")
+          .forEach((item) => {
+            item.classList.toggle(
+              "active",
+              item === button
+            );
+          });
+
+        selectedFlashcardIds.clear();
+        populateLibraryTaxonomyFilters();
+        renderLibrary();
+      });
+    });
 
   document
     .getElementById(
