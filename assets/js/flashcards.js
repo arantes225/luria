@@ -6437,17 +6437,23 @@ ${
 
               <div class="library-card-meta">
 
-                <span>
-                  Próxima: ${formatDueDate(card.due_date)}
-                </span>
+                ${card.system ? `
+                  <span>Livre acesso</span>
+                  <span>Biblioteca oficial LURIA</span>
+                  <span>Sistema</span>
+                ` : `
+                  <span>
+                    Próxima: ${formatDueDate(card.due_date)}
+                  </span>
 
-                <span>
-                  ${card.review_count || 0} revisão${Number(card.review_count || 0) === 1 ? "" : "ões"}
-                </span>
+                  <span>
+                    ${card.review_count || 0} revisão${Number(card.review_count || 0) === 1 ? "" : "ões"}
+                  </span>
 
-                <span>
-                  ${card.active ? "Ativo" : "Arquivado"}
-                </span>
+                  <span>
+                    ${card.active ? "Ativo" : "Arquivado"}
+                  </span>
+                `}
 
               </div>
 
