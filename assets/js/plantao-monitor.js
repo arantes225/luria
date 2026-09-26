@@ -660,8 +660,13 @@
       '<button type="button" data-overlay="breath">Respiração</button>'+
       '<button type="button" data-overlay="blink">Piscada</button></div>'+
       '<div id="plantao-overlay-calibration-readout">Selecione um overlay.</div>'+
+      '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">'+
+      '<button type="button" data-scale="-">− tamanho</button>'+
+      '<button type="button" data-scale="+">+ tamanho</button>'+
+      '<button type="button" data-rotate="-">↺ 0,5°</button>'+
+      '<button type="button" data-rotate="+">↻ 0,5°</button></div>'+
       '<div style="display:flex;gap:6px;margin-top:8px">'+
-      '<button type="button" data-copy-pos>Copiar posição</button>'+
+      '<button type="button" data-copy-pos>Copiar ajuste</button>'+
       '<button type="button" data-reset-pos>Resetar</button></div>'+
       '<div style="opacity:.72;margin-top:7px">Arraste com mouse/dedo. Setas = 1 px.</div>';
     panel.querySelectorAll('button').forEach(btn=>Object.assign(btn.style,{
@@ -673,7 +678,10 @@
 
     let enabled=false;
     let selected='breath';
-    const offsets={breath:{x:0,y:0},blink:{x:0,y:0}};
+    const offsets={
+      breath:{x:0,y:0,scale:1,rotate:0},
+      blink:{x:0,y:0,scale:1,rotate:0}
+    };
     let drag=null;
 
     const layersFor=(kind)=>{
@@ -686,7 +694,8 @@
     const readout=()=>panel.querySelector('#plantao-overlay-calibration-readout');
     const updateReadout=()=>{
       const p=offsets[selected];
-      readout().textContent=(selected==='breath'?'Respiração':'Piscada')+' — X: '+p.x+' px | Y: '+p.y+' px';
+      readout().textContent=(selected==='breath'?'Respiração':'Piscada')+
+        ' — X: '+p.x+' px | Y: '+p.y+' px | '+Math.round(p.scale*100)+'% | '+p.rotate.toFixed(1)+'°';
     };
     const applyOffset=()=>{
       layersFor(selected).forEach(layer=>{
@@ -694,6 +703,8 @@
         layer.style.setProperty('--cal-y',offsets[selected].y+'px');
         layer.style.marginLeft=offsets[selected].x+'px';
         layer.style.marginTop=offsets[selected].y+'px';
+        layer.style.scale=String(offsets[selected].scale);
+        layer.style.rotate=offsets[selected].rotate+'deg';
         layer.style.outline=enabled?'1px dashed rgba(255,210,80,.9)':'none';
         layer.style.pointerEvents=enabled?'auto':'none';
         layer.style.cursor=enabled?'move':'default';
@@ -710,6 +721,8 @@
           layer.style.touchAction=(enabled&&kind===selected)?'none':'auto';
           layer.style.marginLeft=offsets[kind].x+'px';
           layer.style.marginTop=offsets[kind].y+'px';
+          layer.style.scale=String(offsets[kind].scale);
+          layer.style.rotate=offsets[kind].rotate+'deg';
         });
       });
       updateReadout();
@@ -753,13 +766,28 @@
       e.preventDefault();
     });
 
+    panel.querySelectorAll('[data-scale]').forEach(btn=>btn.addEventListener('click',()=>{
+      const step=0.01;
+      offsets[selected].scale=Math.max(.5,Math.min(1.5,
+        offsets[selected].scale+(btn.dataset.scale==='+'?step:-step)));
+      offsets[selected].scale=Math.round(offsets[selected].scale*100)/100;
+      applyOffset();
+    }));
+    panel.querySelectorAll('[data-rotate]').forEach(btn=>btn.addEventListener('click',()=>{
+      const step=.5;
+      offsets[selected].rotate+=(btn.dataset.rotate==='+'?step:-step);
+      offsets[selected].rotate=Math.max(-30,Math.min(30,offsets[selected].rotate));
+      offsets[selected].rotate=Math.round(offsets[selected].rotate*2)/2;
+      applyOffset();
+    }));
     panel.querySelector('[data-reset-pos]').addEventListener('click',()=>{
-      offsets[selected]={x:0,y:0};
+      offsets[selected]={x:0,y:0,scale:1,rotate:0};
       applyOffset();
     });
     panel.querySelector('[data-copy-pos]').addEventListener('click',async()=>{
       const p=offsets[selected];
-      const value=(selected==='breath'?'RESPIRACAO':'PISCADA')+' X='+p.x+' Y='+p.y;
+      const value=(selected==='breath'?'RESPIRACAO':'PISCADA')+
+        ' X='+p.x+' Y='+p.y+' TAMANHO='+Math.round(p.scale*100)+'% ROTACAO='+p.rotate.toFixed(1)+'deg';
       try{await navigator.clipboard.writeText(value);}catch(_){}
       readout().textContent=value+' — copiado';
     });
