@@ -3329,7 +3329,7 @@ body[data-page="plantao"] .plantao-phone-inbox{
 }
 body[data-page="plantao"] .plantao-phone-new-chat-fab{
   position:absolute;
-  left:14px;
+  right:14px;
   bottom:14px;
   width:48px;
   height:48px;
