@@ -388,6 +388,7 @@
 
     document.body.classList.toggle("plantao-phone-mode",phone);
     document.body.classList.toggle("plantao-emergency-mode",!phone);
+    document.documentElement.classList.toggle("plantao-phone-mode",phone);
 
     if(phone){
       renderPhoneCases();
