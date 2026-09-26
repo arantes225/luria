@@ -2184,7 +2184,12 @@
     pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/02-gestante-olhos-fechados.webp"},
     woman:{awake:"assets/img/plantao pwa/05-mulher-adulta-negra-acordada.webp",closed:"assets/img/plantao pwa/04-mulher-adulta-negra-olhos-fechados.webp"},
     man:{awake:"assets/img/plantao pwa/03-homem-adulto-acordado.webp",closed:"assets/img/plantao pwa/06-homem-adulto-olhos-fechados.webp"},
-    elderlyWoman:{awake:"assets/img/plantao pwa/16-mulher-idosa-acordada.webp",closed:"assets/img/plantao pwa/07-mulher-idosa-olhos-fechados.webp"},
+    elderlyWoman:{
+      awake:"assets/img/plantao pwa/16-mulher-idosa-acordada.webp",
+      closed:"assets/img/plantao pwa/07-mulher-idosa-olhos-fechados.webp",
+      blinkHalf:"assets/img/plantao pwa/16-mulher-idosa-acordada.webp",
+      blinkClosed:"assets/img/plantao pwa/07-mulher-idosa-olhos-fechados.webp"
+    },
     elderlyMan:{awake:"assets/img/plantao pwa/11-homem-idoso-acordado.webp",closed:"assets/img/plantao pwa/12-homem-idoso-olhos-fechados.webp"}
   };
 
@@ -2229,7 +2234,14 @@
 
   function patientImagesForCurrentCase(){
     const pwaPair=pwaPatientImagePair();
-    if(pwaPair) return {patient_image:pwaPair.awake,unconscious_image:pwaPair.closed};
+    if(pwaPair) return {
+      patient_image:pwaPair.awake,
+      unconscious_image:pwaPair.closed,
+      ...(pwaPair.blinkHalf && pwaPair.blinkClosed ? {
+        blink_half_image:pwaPair.blinkHalf,
+        blink_closed_image:pwaPair.blinkClosed
+      } : {})
+    };
 
     const patientImage=state.current?.presentation?.patient_image;
     const unconsciousImage=state.current?.presentation?.unconscious_image;
