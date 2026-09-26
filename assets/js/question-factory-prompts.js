@@ -44,18 +44,18 @@ Usar fonte atual aplicável à pergunta e ao cenário brasileiro. Fonte internac
 CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE >=84/100 na saída bruta inédita, antes de correções; não confundir com style_score.
 QUESTÃO FINAL: quality_score >=97/100, style >=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
 Feedback sobre distratores, clareza e segurança pode melhorar regras gerais; só alterar a identidade da banca com evidência primária documentada.
-FLUXO MANUAL DAS ETAPAS CHATGPT — JSON COLADO:
-- Nas etapas executadas pelo revisor independente, a FONTE DE VERDADE é EXCLUSIVAMENTE o JSON COMPLETO colado pelo usuário junto deste prompt.
-- NÃO abrir página da Fábrica, bridge, GitHub RAW, Admin, Supabase, URL operacional ou arquivo externo para obter as questões.
-- NÃO usar snippets, anexos antigos, histórico da conversa, arquivos anteriores ou memória como substituto do JSON colado nesta execução.
-- Antes de auditar, leia e valide o JSON colado por inteiro: batch_code, block_code, question_id, question_code, sequence_no e item_version/version.
-- Preserve exatamente question_id + item_version/version recebidos no JSON.
-- Se o JSON colado não contiver os itens necessários, estiver truncado ou estruturalmente inválido, informe JSON_INPUT_INVALID com o problema concreto; NÃO tente completar buscando dados em outro lugar.
-- O resultado desta etapa deve ser DEVOLVIDO como um único JSON completo, pronto para o usuário colar no botão “Colar JSON de resposta” do Admin.
-- NÃO tente persistir, enviar ao bridge, chamar RPC, SQL, formulário, API ou Supabase.
-- NÃO declare persistência, receipt_id, coverage no banco ou conclusão administrativa. A importação será feita pelo usuário no Admin após esta resposta.
+MODOS DE EXECUÇÃO DAS ETAPAS CHATGPT:
+- MODO OPERACIONAL POR ENDEREÇO: quando o prompt trouxer ENDEREÇO OPERACIONAL com lote/bloco concretos e instruir acesso ao Admin/Supabase autorizado, a FONTE DE VERDADE é a versão ATUAL lida nesse endereço. O ChatGPT deve entrar no workspace indicado, localizar exatamente batch_code + block_code e trabalhar somente nas questões/item_version vigentes e pendentes daquela etapa.
+- MODO MANUAL POR JSON: somente quando o prompt trouxer explicitamente INPUT_JSON, INPUT_JSON_CEGO ou pacote manual colado, a FONTE DE VERDADE passa a ser exclusivamente esse JSON. Nesse modo, não buscar complementos no Admin/Supabase.
+- Nunca misturar os dois modos na mesma execução.
+- Em qualquer modo, NÃO usar memória, snippets, anexos antigos, arquivos anteriores ou histórico da conversa como substituto da fonte de verdade atual.
+- Antes de auditar, confirmar batch_code, block_code, question_id e item_version/version da fonte escolhida.
+- Preserve exatamente question_id + item_version/version recebidos/lidos.
+- Se o modo operacional estiver sem acesso autorizado, informe ACCESS_REQUIRED; nunca peça senha, token, anon key, service_role, JWT ou credencial.
+- Se o modo manual estiver truncado/estruturalmente inválido, informe JSON_INPUT_INVALID com o problema concreto.
+- O resultado de etapa manual deve ser devolvido como um único JSON completo, pronto para “Colar JSON de resposta”.
 - stage_metrics, totais agregados e relatório textual NÃO substituem reviews individuais exigidos pela etapa.
-- Para etapas executadas pelo ChatGPT dentro do ambiente administrativo, permanecem válidos os importadores/RPCs controlados definidos no fluxo interno.
+- Nunca invente persistência, receipt_id, coverage ou conclusão administrativa.
 TELEMETRIA OBRIGATÓRIA POR ETAPA: toda saída JSON deve incluir um objeto top-level stage_metrics. Ele é lido pelo Admin e persistido no Supabase para atualizar o dashboard automaticamente. Preencher com dados REAIS da etapa; nunca estimar contagens. Estrutura obrigatória:
 stage_metrics = {
   exam_style: banca atual,
