@@ -593,7 +593,7 @@
     if(!available.length){
       const lessonDone=phoneLessonFlow().length>0 && state.phoneTurn>=phoneLessonFlow().length;
       host.innerHTML=lessonDone
-        ? '<div class="plantao-phone-choice-done">Aula concluída.</div><button class="plantao-phone-resume-button" type="button" data-phone-finish-lesson>Voltar às aulas</button>'
+        ? '<div class="plantao-phone-choice-done">Caso discutido.</div><button class="plantao-phone-resume-button" type="button" data-phone-finish-lesson>Voltar às conversas</button>'
         : '<div class="plantao-phone-choice-done">Sem outras opções neste caso.</div>';
       return;
     }
@@ -640,9 +640,11 @@
     if(nextStep?.prompt){
       reply += [bridge,String(nextStep.prompt||"").trim()].filter(Boolean).map(text=>"\n\n"+text).join("");
     }else{
-      const summary=String(debrief.summary||"Boa. Você concluiu esta aula.").trim();
+      const caseReturn=String(debrief.case_return||"").trim();
+      const summary=String(debrief.summary||"Caso concluído.").trim();
       const sourceName=String(debrief.source_name||"").trim();
       const sourceUrl=String(debrief.source_url||"").trim();
+      if(caseReturn) reply += `\n\nVoltando ao paciente do início: ${caseReturn}`;
       reply += `\n\n${summary}`;
       if(sourceName) reply += `\n\nFonte brasileira: ${sourceName}`;
       if(sourceUrl) reply += `\n${sourceUrl}`;
