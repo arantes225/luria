@@ -1,5 +1,5 @@
 (() => {
-  const allowed = new Set(["old", "1", "2", "3", "4", "5"]);
+  const allowed = new Set(["1", "2", "3", "4", "5"]);
   const options = document.getElementById("dashboard-layout-options");
   const status = document.getElementById("dashboard-layout-status");
   if (!options) return;
@@ -11,7 +11,12 @@
   function load() {
     let selected = "1";
     try { selected = localStorage.getItem(key()) || "1"; } catch {}
-    options.querySelector(`input[value="${allowed.has(selected) ? selected : "1"}"]`).checked = true;
+    if (!allowed.has(selected)) {
+      selected = "1";
+      try { localStorage.setItem(key(), selected); } catch {}
+    }
+    const input = options.querySelector(`input[value="${selected}"]`);
+    if (input) input.checked = true;
   }
 
   options.addEventListener("change", (event) => {
