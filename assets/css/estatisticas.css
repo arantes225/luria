@@ -289,3 +289,68 @@
 @media(max-width:1180px){.stats-summary-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 @media(max-width:850px){.stats-block,.stats-block.wide{grid-column:span 12!important}.stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.stats-hero{align-items:flex-start!important}}
 @media(max-width:560px){.stats-summary-grid{grid-template-columns:1fr!important}.stats-hero h2{font-size:25px!important}}
+
+
+/* v22 — fidelidade visual às 5 referências aprovadas */
+.stats-page{gap:10px!important;max-width:none!important;padding-bottom:28px!important}
+.stats-hero{padding:2px 0 4px!important}.stats-hero h2{font-size:29px!important}.stats-hero p{font-size:10px!important}
+.stats-tabs-shell{border:0!important;border-bottom:1px solid var(--border)!important;border-radius:0!important;background:transparent!important;padding:0!important}
+.stats-tabs{min-width:0!important;display:flex!important;gap:28px!important}
+.stats-tab{min-width:92px!important;min-height:38px!important;padding:0 8px!important;border-radius:0!important;background:transparent!important;font-size:9px!important}
+.stats-tab.active{background:transparent!important;color:var(--accent)!important;box-shadow:inset 0 -2px 0 var(--accent)!important}
+.stats-summary-grid{display:grid!important;gap:9px!important}
+[data-stats-panel="geral"] .stats-summary-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+[data-stats-panel="aulas"] .stats-summary-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+[data-stats-panel="flashcards"] .stats-summary-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+[data-stats-panel="erros"] .stats-summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+[data-stats-panel="questoes"] .stats-summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+[data-stats-panel="geral"] .stats-summary-card:nth-child(n+6),
+[data-stats-panel="aulas"] .stats-summary-card:nth-child(n+6),
+[data-stats-panel="flashcards"] .stats-summary-card:nth-child(n+7),
+[data-stats-panel="erros"] .stats-summary-card:nth-child(n+5),
+[data-stats-panel="questoes"] .stats-summary-card:nth-child(n+5){display:none!important}
+.stats-summary-card{min-height:84px!important;padding:11px 12px 10px 13px!important;border-radius:8px!important;position:relative;overflow:hidden}
+.stats-summary-card:before{content:"";width:28px;height:28px;border-radius:8px;background:color-mix(in srgb,var(--accent) 10%,var(--surface-2));position:absolute;right:10px;top:10px}
+.stats-summary-card span{max-width:72%;font-size:8px!important;font-weight:700!important}.stats-summary-card strong{font-size:20px!important;margin-top:6px!important}.stats-summary-card small{font-size:7px!important;min-height:0!important}
+.stats-summary-viz{margin-top:5px!important}.stats-mini-track{height:4px!important}
+.stats-block-grid{display:grid!important;grid-template-columns:repeat(12,minmax(0,1fr))!important;gap:9px!important}
+.stats-block{padding:12px!important;border-radius:8px!important;background:var(--surface)!important}
+.stats-section-head h3{font-size:11px!important}.stats-section-head p{font-size:7.5px!important}
+.chart-box{min-height:190px!important}.chart-box.compact{min-height:175px!important}
+/* Geral: evolução grande + distribuição, depois desempenho + constância/resumo */
+[data-stats-panel="geral"] .stats-block-grid>.stats-block:nth-child(1){grid-column:span 7!important}
+[data-stats-panel="geral"] .stats-block-grid>.stats-block:nth-child(2){grid-column:span 5!important}
+[data-stats-panel="geral"] .stats-block-grid>.stats-block:nth-child(3){grid-column:span 5!important}
+[data-stats-panel="geral"] .stats-block-grid>.stats-block:nth-child(4){grid-column:span 7!important}
+[data-stats-panel="geral"] .stats-block-grid>.stats-block:nth-child(5){grid-column:span 8!important}
+[data-stats-panel="geral"] .stats-block-grid>.stats-block:nth-child(6){grid-column:span 4!important}
+/* Aulas: gráfico de torres dominante e blocos laterais */
+[data-stats-panel="aulas"] .stats-block-grid>.stats-block:nth-child(1){grid-column:span 5!important}
+[data-stats-panel="aulas"] .stats-block-grid>.stats-block:nth-child(2){grid-column:span 4!important}
+[data-stats-panel="aulas"] .stats-block-grid>.stats-block:nth-child(3){grid-column:span 3!important}
+[data-stats-panel="aulas"] .stats-block-grid>.stats-block:nth-child(4){grid-column:span 8!important}
+[data-stats-panel="aulas"] .stats-block-grid>.stats-block:nth-child(5){grid-column:span 4!important}
+/* Flashcards: linha + atividade, donut/barras/heatmap e rodapé visual */
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(1){grid-column:span 7!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(2){grid-column:span 5!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(3){grid-column:span 4!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(4){grid-column:span 4!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(5){grid-column:span 4!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(6){grid-column:span 6!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(7){grid-column:span 3!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(8){grid-column:span 3!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(9){grid-column:span 12!important}
+/* Caderno de erros: 3 colunas como a referência */
+[data-stats-panel="erros"] .stats-block-grid>.stats-block{grid-column:span 4!important}
+[data-stats-panel="erros"] .stats-block-grid>.stats-block:nth-child(1),
+[data-stats-panel="erros"] .stats-block-grid>.stats-block:nth-child(6),
+[data-stats-panel="erros"] .stats-block-grid>.stats-block:nth-child(9){grid-column:span 8!important}
+/* Questões: gráfico principal + comparativo e cards inferiores */
+[data-stats-panel="questoes"] .stats-block-grid>.stats-block:nth-child(1){grid-column:span 8!important}
+[data-stats-panel="questoes"] .stats-block-grid>.stats-block:nth-child(2){grid-column:span 4!important}
+[data-stats-panel="questoes"] .stats-block-grid>.stats-block:nth-child(3){grid-column:span 8!important}
+[data-stats-panel="questoes"] .stats-block-grid>.stats-block:nth-child(4){grid-column:span 4!important}
+.stats-table th,.stats-table td{padding:6px!important}.progress-row{min-height:22px!important}.progress-track{height:7px!important}
+.insights{grid-template-columns:1fr!important}.insight{padding:9px 10px!important;border-radius:7px!important}
+@media(max-width:1100px){[data-stats-panel] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.stats-block-grid>.stats-block{grid-column:span 12!important}}
+@media(max-width:650px){.stats-tabs{min-width:620px!important;gap:6px!important}.stats-tabs-shell{overflow-x:auto!important}[data-stats-panel] .stats-summary-grid{grid-template-columns:1fr!important}}
