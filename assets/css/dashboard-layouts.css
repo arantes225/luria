@@ -1665,9 +1665,9 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
     overflow:hidden!important;
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-cat-content .dashboard-cat-symbol{
-    width:54px!important;
-    height:54px!important;
-    flex:0 0 54px!important;
+    width:65px!important;
+    height:65px!important;
+    flex:0 0 65px!important;
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-cat-content p{
     font-size:12.5px!important;
@@ -2203,3 +2203,14 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-to
     height:54px !important;
   }
 }
+
+
+/* Dashboard 4 — Pulo do Gato: variante correta por tema. */
+body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-light{display:block!important}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-dark,
+body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-pink{display:none!important}
+:root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-light{display:none!important}
+:root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-dark{display:block!important}
+:root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-light,
+:root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-dark{display:none!important}
+:root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout="4"] .dashboard-cat-symbol .cat-symbol-pink{display:block!important}
