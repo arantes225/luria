@@ -25,6 +25,9 @@
     .settings-tab.active::after{content:"";position:absolute;left:10px;right:10px;bottom:-1px;height:2px;border-radius:999px;background:var(--accent)}
     .settings-cronograma-card{padding:0;border:0;background:transparent}
     .settings-cronograma-frame{display:block;width:100%;min-height:1180px;border:0;background:transparent}
+    /* A área embutida começa abaixo do cabeçalho interno; evita exibir/acionar o menu lateral do Cronograma. */
+    .settings-cronograma-card{overflow:hidden}
+    .settings-cronograma-frame{position:relative}
     @media(max-width:700px){
       body[data-page="configuracoes-cronograma"] .main{padding-left:14px;padding-right:14px}
       .settings-cronograma-frame{min-height:1500px}
@@ -62,7 +65,7 @@
         </nav>
 
         <section class="settings-cronograma-card">
-          <iframe class="settings-cronograma-frame" src="/cronograma/?settings=1" title="Adicionar aulas e Importador inteligente"></iframe>
+          <iframe class="settings-cronograma-frame" src="/cronograma/?settings=1&embed=1" title="Adicionar aulas e Importador inteligente"></iframe>
         </section>
       </div>
     </main>
