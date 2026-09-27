@@ -4715,11 +4715,22 @@ function renderAgendaSide() {
     };
     if(scheduleState.agendaScope==="today") addDateItems(today);
     else {
-      const seen=new Set();
-      scheduleState.topics.forEach(t=>{const d=t.scheduled_date||t.original_date;if(d)seen.add(d)});
-      scheduleState.events.forEach(e=>{if(e.event_date)seen.add(e.event_date)});
-      scheduleState.errorItems.forEach(e=>{if(e.due_date)seen.add(e.due_date)});
-      [...seen].sort().forEach(iso=>{const d=parseISODateSchedule(iso);if(d)addDateItems(d)});
+      /* "Todas" é o gerenciador completo: inclui também aulas concluídas.
+         Não usa topicsOnDate(), pois essa função exclui completed_at. */
+      scheduleState.topics.forEach(topic=>{
+        const date=topic.scheduled_date||topic.original_date||((topic.completed_at||"").slice(0,10));
+        if(!date)return;
+        const kind=kindClass(topic.type||"lesson");
+        sourceItems.push({source:"topic",id:topic.id,date,kind,title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(kind,topic.id),time:Boolean(topic.completed_at)?"Concluída":"Agendada"});
+      });
+      scheduleState.events.forEach(event=>{
+        if(!event.event_date)return;const kind=kindClass(event.event_type||event.title);
+        sourceItems.push({source:"event",id:event.id,date:event.event_date,kind,title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:Boolean(event.completed_at),href:todayHref(kind,event.id),time:event.event_time?String(event.event_time).slice(0,5):"Evento"});
+      });
+      scheduleState.errorItems.forEach(item=>{
+        if(!item.due_date)return;
+        sourceItems.push({source:"error",id:item.id,date:item.due_date,kind:"errors",title:item.theme||item.materia||item.area||"Caderno de erros",meta:[item.area,item.materia].filter(Boolean).join(" · ")||"Revisão do caderno de erros",completed:item.active===false||Boolean(item.completed_at),href:"/caderno-erros/",time:item.active===false?"Concluída":"Revisão"});
+      });
     }
     const af=scheduleState.activityFilters||{};
     const visible=sourceItems.filter(item=>(scheduleState.agendaFilter==="all"||item.kind===scheduleState.agendaFilter)&&(af.type==="all"||item.kind===af.type)&&(!af.date||item.date===af.date)&&(!af.materia||normalizeHeader(item.meta||"").includes(normalizeHeader(af.materia)));
@@ -4727,8 +4738,8 @@ function renderAgendaSide() {
     const row=item=>{
       const key=item.source+":"+item.id, selected=scheduleState.agendaSelected.has(key);
       const check=scheduleState.agendaScope==="all"?'<label class="agenda-bulk-check-wrap"><input class="agenda-bulk-check" type="checkbox" data-agenda-select="'+escapeScheduleHtml(key)+'" '+(selected?"checked":"")+'></label>':"";
-      return '<div class="agenda-today-row kind-'+item.kind+(scheduleState.agendaScope==="all"?" bulk-mode":"")+'">'+check
-        +'<a class="agenda-today-open" '+(item.source==="topic"?'data-start-study-topic="'+escapeScheduleHtml(item.id)+'" ':"")+'href="'+item.href+'"><span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(item.time)+'</span><strong>'+escapeScheduleHtml(item.title)+'</strong><small>'+escapeScheduleHtml(item.meta)+'</small></span><span class="agenda-today-kind">'+escapeScheduleHtml(labelForKind(item.kind))+'</span></a>'
+      return '<div class="agenda-today-row kind-'+item.kind+(scheduleState.agendaScope==="all"?" bulk-mode":"")+(item.completed?" is-completed":"")+'">'+check
+        +'<a class="agenda-today-open" '+(item.source==="topic"&&!item.completed?'data-start-study-topic="'+escapeScheduleHtml(item.id)+'" ':"")+'href="'+item.href+'"><span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(item.time)+'</span><strong>'+escapeScheduleHtml(item.title)+'</strong><small>'+escapeScheduleHtml(item.meta)+'</small></span><span class="agenda-today-kind">'+escapeScheduleHtml(labelForKind(item.kind))+(item.completed?' · Concluída':'')+'</span></a>'
         +todayMenu(item.source,item.id,item.date)+'</div>';
     };
     if(scheduleState.agendaScope==="all"){
