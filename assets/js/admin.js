@@ -2429,11 +2429,20 @@
   }
 
   async function openQuestionFactoryBlock(batchNumber, blockNumber, issuesOnly = false) {
-    const { data, error } = await sb.rpc("admin_question_factory_block", {
-      p_batch_number: Number(batchNumber),
-      p_block_number: Number(blockNumber),
-      p_only_issues: Boolean(issuesOnly)
-    });
+    const [blockResult, blindResult] = await Promise.all([
+      sb.rpc("admin_question_factory_block", {
+        p_batch_number: Number(batchNumber),
+        p_block_number: Number(blockNumber),
+        p_only_issues: Boolean(issuesOnly)
+      }),
+      sb.rpc("admin_question_factory_blind_reviews", {
+        p_batch_number: Number(batchNumber),
+        p_block_number: Number(blockNumber)
+      })
+    ]);
+    const { data, error } = blockResult;
+    const blindReviews = Array.isArray(blindResult?.data) ? blindResult.data : [];
+    const blindByItem = new Map(blindReviews.map(review => [String(review.item_id || ""), review]));
     const dialog = $("admin-qf-dialog");
     const list = $("admin-qf-question-list");
     if (dialog && !dialog.open) dialog.showModal();
@@ -2453,6 +2462,7 @@
     if (list) {
       list.innerHTML = questions.length ? questions.map(q => {
         const review = q.latest_review || {};
+        const blindReview = blindByItem.get(String(q.id || "")) || null;
         const score = q.quality_score == null ? "—" : Number(q.quality_score).toLocaleString("pt-BR",{maximumFractionDigits:1})+"%";
         return `
           <details class="admin-qf-question">
@@ -2475,7 +2485,7 @@
                   return '<div class="admin-qf-alt '+(q.gabarito===letter?"correct":"")+'"><strong>'+letter+'</strong> — '+esc(val)+'</div>';
                 }).join("")}
               </div>
-              <div class="admin-qf-bad-reason">
+              ${blindReview ? `\n                <div class="admin-qf-bad-reason">\n                  <strong>Resolução cega independente</strong>\n                  <span><b>Resposta independente:</b> ${esc(blindReview.independent_answer || "Ambígua / sem resposta forçada")}</span>\n                  <small>${esc(blindReview.reason || "Sem justificativa registrada.")}</small>\n                  <small>${blindReview.ambiguity ? "Ambiguidade: sim" : "Ambiguidade: não"} · ${blindReview.single_best_answer ? "Única melhor resposta: sim" : "Única melhor resposta: não"}</small>\n                </div>\n              ` : ""}\n              <div class="admin-qf-bad-reason">
                 <strong>Parecer mais recente</strong>
                 <span>${esc(review.suggested_correction || q.block_review_notes || "Sem observação registrada.")}</span>
                 ${review.style_issue ? `<small>Estilo: ${esc(review.style_issue)}</small>` : ""}
