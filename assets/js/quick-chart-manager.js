@@ -27,7 +27,15 @@
     const raw=normalizeCode(value);
     return raw.replace(/(.{4})/g,"$1-").replace(/-$/,"");
   }
+  function publicAddress(){
+    return portal?.access_slug ? location.origin+"/"+portal.access_slug : location.origin+"/";
+  }
+  function renderAddress(){
+    const el=document.getElementById("quick-chart-public-address");
+    if(el) el.textContent=portal?.access_slug ? publicAddress() : "Defina seu código abaixo";
+  }
   function renderContent(){
+    renderAddress();
     if(!portal){
       contentBox.className="quick-chart-current-content empty";
       contentBox.textContent="Configure um código fixo para começar.";
@@ -62,7 +70,7 @@
   async function load(){
     if(!user) return;
     const {data,error}=await sb.from("external_quick_chart_portals")
-      .select("owner_id,content,content_expires_at,last_accessed_at,updated_at")
+      .select("owner_id,access_slug,content,content_expires_at,last_accessed_at,updated_at")
       .eq("owner_id",user.id)
       .maybeSingle();
     if(error){console.error(error);status.textContent="Não foi possível carregar o prontuário rápido.";return;}
@@ -85,17 +93,18 @@
       const payload={
         owner_id:user.id,
         access_code_hash:hash,
+        access_slug:code,
         content:portal?.content||{},
         content_expires_at:portal?.content_expires_at||null
       };
       const {data,error}=await sb.from("external_quick_chart_portals")
         .upsert(payload,{onConflict:"owner_id"})
-        .select("owner_id,content,content_expires_at,last_accessed_at,updated_at")
+        .select("owner_id,access_slug,content,content_expires_at,last_accessed_at,updated_at")
         .single();
       if(error) throw error;
       portal=data;
       codeInput.value="";
-      status.textContent="Código salvo. Memorize-o: "+formatCode(code);
+      status.textContent="Código salvo. Seu endereço é "+location.origin+"/"+code;
       renderContent();
     }catch(e){
       console.error(e);
@@ -113,7 +122,8 @@
     renderContent();
   }
   document.getElementById("quick-chart-copy-address").addEventListener("click",async()=>{
-    const url=location.origin+"/trabalho/prontuario/";
+    const url=publicAddress();
+    if(!portal?.access_slug){status.textContent="Defina seu código primeiro.";return;}
     try{await navigator.clipboard.writeText(url);status.textContent="Endereço copiado.";}catch{status.textContent=url;}
   });
   document.getElementById("quick-chart-refresh").addEventListener("click",load);
