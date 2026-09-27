@@ -247,21 +247,19 @@
   function apply() {
     let selected = "1";
     try { selected = localStorage.getItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`) || "1"; } catch {}
-    current = selected === "old" || allowed.has(selected) ? selected : "1";
+    current = allowed.has(selected) ? selected : "1";
+    if (!allowed.has(selected)) {
+      try { localStorage.setItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`, "1"); } catch {}
+    }
     document.body.dataset.dashboardLayout = current;
-    root.hidden = current === "old";
+    root.hidden = false;
     [".dashboard-detail-grid", ".calendar-panel"].forEach((selector) => {
-      page.querySelector(selector)?.setAttribute("aria-hidden", String(current !== "old"));
+      page.querySelector(selector)?.setAttribute("aria-hidden", "true");
     });
-    if (current !== "old") schedule();
+    schedule();
   }
   function enhanceShell() {
     const topbar = page.querySelector(".topbar");
-    if (current === "old") {
-      topbar?.querySelector("#dl-topbar-controls")?.remove();
-      topbar?.querySelector(".dl-avatar")?.remove();
-      return;
-    }
     if (!topbar || document.getElementById("dl-topbar-controls")) {
       const avatar = topbar?.querySelector(".dl-avatar");
       if (avatar) {
