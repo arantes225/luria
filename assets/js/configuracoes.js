@@ -49,6 +49,60 @@ const PROFILE_GENDER_OPTIONS = [
   { value: "prefer_not_to_say", label: "Prefiro não informar" }
 ];
 
+function buildProfilePicker(menuId, toggleId, options, onSelect) {
+  const menu = document.getElementById(menuId);
+  const toggle = document.getElementById(toggleId);
+  if (!menu || !toggle) return;
+
+  menu.innerHTML = options.map((item) => `
+    <button
+      type="button"
+      class="profile-picker-option"
+      data-profile-picker-value="${item.value}"
+      role="option"
+    >${item.label}</button>
+  `).join("");
+
+  menu.querySelectorAll("[data-profile-picker-value]").forEach((option) => {
+    option.addEventListener("click", () => {
+      onSelect(option.dataset.profilePickerValue || "");
+      menu.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      syncProfilePickerLabels();
+    });
+  });
+
+  toggle.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const willOpen = menu.hidden;
+    closeProfilePickers(willOpen ? menuId : null);
+    menu.hidden = !willOpen;
+    toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+  });
+}
+
+function wireProfilePickers() {
+  buildProfilePicker(
+    "profile-gender-menu",
+    "profile-gender-toggle",
+    PROFILE_GENDER_OPTIONS,
+    (value) => {
+      const input = document.getElementById("profile-gender");
+      if (input) {
+        input.value = value;
+        input.dispatchEvent(new Event("change", { bubbles: true }));
+      }
+    }
+  );
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".profile-picker")) closeProfilePickers();
+  });
+
+  syncProfilePickerLabels();
+}
+
 function closeProfilePickers(except = null) {
   [
     ["profile-gender-menu", "profile-gender-toggle"]
@@ -1073,9 +1127,10 @@ function setPasskeyStatus(text, type = "") {
 
 function passkeySupported() {
   return Boolean(
-    window.PublicKeyCredential
-    && settingsSb?.auth?.registerPasskey
-    && settingsSb?.auth?.passkey
+    window.isSecureContext
+    && window.PublicKeyCredential
+    && navigator.credentials
+    && typeof settingsSb?.auth?.registerPasskey === "function"
   );
 }
 
@@ -1085,8 +1140,8 @@ async function loadPasskeys() {
   if (!list || !button) return;
 
   if (!passkeySupported()) {
-    button.disabled = true;
-    list.textContent = "Passkeys não são compatíveis com este navegador/dispositivo.";
+    button.disabled = false;
+    list.textContent = "Este navegador ainda não disponibilizou o Face ID / Passkey para esta página.";
     return;
   }
 
@@ -1185,10 +1240,15 @@ async function registerPasskey() {
     );
     await loadPasskeys();
   } catch (error) {
+    console.error("Falha ao cadastrar Passkey:", error);
+    const name = String(error?.name || "");
+    const message = String(error?.message || "");
     setPasskeyStatus(
-      String(error?.name || "") === "NotAllowedError"
-        ? "Cadastro cancelado ou não autorizado no dispositivo."
-        : "Não foi possível cadastrar a Passkey.",
+      name === "NotAllowedError"
+        ? "Cadastro cancelado, bloqueado ou não autorizado pelo dispositivo."
+        : message.toLowerCase().includes("passkey_disabled")
+          ? "Passkeys ainda não estão habilitadas no servidor."
+          : message || "Não foi possível cadastrar a Passkey.",
       "error"
     );
   } finally {
@@ -1200,12 +1260,17 @@ function wirePasskeySettings() {
   const button = document.getElementById("register-passkey");
   if (!button) return;
 
-  if (!passkeySupported()) {
-    button.disabled = true;
-    return;
-  }
-
+  button.disabled = false;
   button.addEventListener("click", registerPasskey);
+
+  if (!passkeySupported()) {
+    setPasskeyStatus(
+      window.isSecureContext
+        ? "Face ID / Passkey não está disponível neste navegador ou modo de abertura."
+        : "Face ID / Passkey exige uma conexão HTTPS segura.",
+      "error"
+    );
+  }
 }
 
 function setOtherSessionsStatus(text, type = "") {
