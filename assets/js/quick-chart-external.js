@@ -64,7 +64,6 @@
       status.textContent="Sincronizado";
       fields().forEach(el=>el.addEventListener("input",queueSave));
       document.getElementById("external-save").addEventListener("click",save);
-      window.addEventListener("pagehide",()=>{if(serialized()!==lastSerialized) navigator.sendBeacon?.(ENDPOINT,new Blob([JSON.stringify({slug,token,action:"save",content:read()})],{type:"application/json"}))});
     }catch(e){fail(e.message);}
   }
   load();
