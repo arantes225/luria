@@ -2134,7 +2134,7 @@
     const steps = [
       { n:1, title:"Gerar 200", owner:"ChatGPT", stats:`${generated}/200 geradas` },
       { n:2, title:"Revisão adversarial + autocorreção", owner:"ChatGPT", stats:`${initialAudited} auditadas · ${initialFlagged} sinalizadas · ${versioned} com nova versão` },
-      { n:3, title:"Revisão cega independente", owner:"ChatGPT", stats:`${perplexityAudited} auditadas · ${perplexityFlagged} com achados` },
+      { n:3, title:"Revisão cega independente", owner:"ChatGPT", stats:`${blind}/200 resolvidas cegamente · ${perplexityAudited} auditadas · ${perplexityFlagged} com achados` },
       { n:4, title:"Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
       { n:5, title:"Reauditar correções do zero", owner:"ChatGPT", stats:`${reaudited} reavaliadas · ${pending} pendentes` },
       { n:6, title:"Aceitar para o lote", owner:"Você", stats: humanStatus === "approved" ? "Aprovado e enviado ao lote" : `${approved}/200 aprovadas pela máquina` }
