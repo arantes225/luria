@@ -2655,6 +2655,15 @@
     }
 
     const isIndependentReviewStage = ["blind_resolution","perplexity_initial","perplexity_reaudit","lot_perplexity_final"].includes(inferredStage);
+
+    // The database still uses the legacy technical reviewer key "Perplexity" for
+    // perplexity_initial/perplexity_reaudit. The product flow is ChatGPT-only now,
+    // so normalize only at the persistence boundary while keeping the UI/prompt
+    // semantics and review content unchanged.
+    if (["perplexity_initial","perplexity_reaudit"].includes(inferredStage) && payload.reviewer === "ChatGPT") {
+      payload = { ...payload, reviewer:"Perplexity" };
+    }
+
     const reviewList = Array.isArray(payload.reviews) ? payload.reviews : null;
     const reviewChunks = isIndependentReviewStage && reviewList?.length > 50
       ? Array.from({ length: Math.ceil(reviewList.length / 50) }, (_, index) => reviewList.slice(index * 50, (index + 1) * 50))
