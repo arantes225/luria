@@ -255,6 +255,23 @@
     }
   `;
 
+  style.textContent += `
+    #sidebar.sidebar .work-pcr-button {
+      display:flex;align-items:center;justify-content:center;gap:12px;width:100%;
+      min-height:82px;padding:14px 16px;box-sizing:border-box;border:2px solid #ff4d4d;
+      border-radius:16px;background:#d40000;color:#fff;text-decoration:none;
+      box-shadow:0 10px 26px rgba(212,0,0,.34);font-weight:950;letter-spacing:.04em;
+      transition:transform 140ms ease,box-shadow 140ms ease,background 140ms ease;
+    }
+    #sidebar.sidebar .work-pcr-button:hover{background:#ee0000;transform:translateY(-1px);box-shadow:0 14px 32px rgba(212,0,0,.42)}
+    #sidebar.sidebar .work-pcr-button:active{transform:scale(.99)}
+    #sidebar.sidebar .work-pcr-icon{display:grid;place-items:center;width:46px;height:46px;flex:0 0 46px;border-radius:50%;background:rgba(255,255,255,.16);font-size:28px}
+    #sidebar.sidebar .work-pcr-copy{display:grid;gap:3px;min-width:0}
+    #sidebar.sidebar .work-pcr-copy strong{color:#fff;font-size:20px;line-height:1}
+    #sidebar.sidebar .work-pcr-copy small{color:rgba(255,255,255,.94);font-size:10px;font-weight:850}
+    @media(max-width:980px){html.pwa-standalone body #sidebar.sidebar .work-pcr-button{min-height:88px!important}}
+  `;
+
   document.head.appendChild(style);
 })();
 
@@ -276,7 +293,7 @@ const PAGE_INFO = {
   configuracoes: { title: "Configurações", eyebrow: "Conta e preferências" },
   admin: { title: "Admin", eyebrow: "Métricas do produto" },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Trabalho" },
-  trabalho_plantoes: { title: "Plantões", eyebrow: "Trabalho" },
+  trabalho_plantoes: { title: "Escala", eyebrow: "Trabalho" },
   trabalho_passometro: { title: "Passômetro", eyebrow: "Trabalho" },
   trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Trabalho" },
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Trabalho" },
@@ -285,7 +302,6 @@ const PAGE_INFO = {
   trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
   trabalho_diagnostico: { title: "Diagnóstico", eyebrow: "Trabalho" },
   trabalho_laboratorio: { title: "Laboratório", eyebrow: "Trabalho" },
-  trabalho_paciente: { title: "Paciente", eyebrow: "Trabalho" },
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Trabalho" },
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Trabalho" },
   trabalho_ecg: { title: "ECG", eyebrow: "Trabalho" },
@@ -452,11 +468,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         </a>
 
         <a class="nav-link ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">
-          <span class="nav-icon">▦</span><span>Plantões</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_paciente" ? "active" : ""}" href="/trabalho/paciente/">
-          <span class="nav-icon">◉</span><span>Paciente</span>
+          <span class="nav-icon">▦</span><span>Escala</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_passometro" ? "active" : ""}" href="/trabalho/passometro/">
@@ -563,27 +575,29 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
     </nav>
 
     <div class="sidebar-footer">
-      <div class="streak-mini" data-sidebar-streak-card>
-        <div class="streak-mini-icon" aria-hidden="true">
-          <span class="streak-mini-snow">❄</span>
-
-          <svg class="streak-mini-flame" viewBox="0 0 64 80" role="presentation">
-            <path
-              fill="currentColor"
-              d="M34 3C35 15 26 19 26 29C26 35 30 38 33 40C27 40 22 35 21 29C13 37 8 46 8 56C8 69 18 77 32 77C46 77 56 68 56 54C56 41 48 30 40 22C39 30 36 34 32 36C35 27 43 18 34 3Z"
-            ></path>
-            <path
-              class="streak-mini-core"
-              d="M33 40C27 47 23 52 23 59C23 67 27 71 33 71C40 71 44 66 44 59C44 52 39 47 35 43C35 48 33 51 30 53C31 48 34 45 33 40Z"
-            ></path>
-          </svg>
+      ${String(page).startsWith("trabalho_") ? `
+        <a class="work-pcr-button" href="/trabalho/pcr/" aria-label="Abrir Parada cardiorrespiratória">
+          <span class="work-pcr-icon" aria-hidden="true">✚</span>
+          <span class="work-pcr-copy">
+            <strong>PCR</strong>
+            <small>PARADA CARDIORRESPIRATÓRIA</small>
+          </span>
+        </a>
+      ` : `
+        <div class="streak-mini" data-sidebar-streak-card>
+          <div class="streak-mini-icon" aria-hidden="true">
+            <span class="streak-mini-snow">❄</span>
+            <svg class="streak-mini-flame" viewBox="0 0 64 80" role="presentation">
+              <path fill="currentColor" d="M34 3C35 15 26 19 26 29C26 35 30 38 33 40C27 40 22 35 21 29C13 37 8 46 8 56C8 69 18 77 32 77C46 77 56 68 56 54C56 41 48 30 40 22C39 30 36 34 32 36C35 27 43 18 34 3Z"></path>
+              <path class="streak-mini-core" d="M33 40C27 47 23 52 23 59C23 67 27 71 33 71C40 71 44 66 44 59C44 52 39 47 35 43C35 48 33 51 30 53C31 48 34 45 33 40Z"></path>
+            </svg>
+          </div>
+          <div class="streak-mini-copy">
+            <strong data-sidebar-streak-copy><span data-streak-value>—</span> dias</strong>
+            <small data-sidebar-streak-status>Comece hoje</small>
+          </div>
         </div>
-
-        <div class="streak-mini-copy">
-          <strong data-sidebar-streak-copy><span data-streak-value>—</span> dias</strong>
-          <small data-sidebar-streak-status>Comece hoje</small>
-        </div>
-      </div>
+      `}
 
       <div class="user-mini">
         <div class="user-avatar">${escapeHtml(initial)}</div>
