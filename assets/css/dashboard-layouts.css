@@ -352,3 +352,107 @@ body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .dl-avata
     padding-top:16px!important;
   }
 }
+
+
+/* Dashboard Estudos — faixa compacta de controles: Pomodoro, notificações e conta. */
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:12px!important;
+  position:relative!important;
+  height:64px!important;
+  min-height:64px!important;
+  max-height:64px!important;
+  margin:0!important;
+  padding:10px 0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .page-heading{
+  display:none!important;
+}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .dl-topbar-controls{
+  display:flex!important;
+  order:1!important;
+  margin-left:auto!important;
+}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .dl-stopwatch{
+  display:none!important;
+}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .luria-notifications{
+  display:flex!important;
+  order:2!important;
+  margin-left:0!important;
+}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .dl-account{
+  display:block!important;
+  order:3!important;
+  position:relative;
+}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar>.dl-avatar{
+  display:none!important;
+}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) #dashboard-alternative{
+  padding-top:0!important;
+}
+.dl-account .dl-avatar{
+  border:0;
+  cursor:pointer;
+}
+.dl-account-menu{
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+  z-index:260;
+  min-width:176px;
+  padding:7px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface);
+  box-shadow:var(--shadow);
+}
+.dl-account-menu[hidden]{display:none!important}
+.dl-account-menu a,
+.dl-account-menu button{
+  width:100%;
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  padding:0 11px;
+  border:0;
+  border-radius:8px;
+  background:transparent;
+  color:var(--text);
+  text-align:left;
+  font:inherit;
+  font-size:13px;
+  font-weight:650;
+  cursor:pointer;
+}
+.dl-account-menu a:hover,
+.dl-account-menu button:hover{
+  background:var(--surface-2);
+}
+.dl-account-menu button#logout{
+  color:var(--danger);
+}
+@media(max-width:700px){
+  body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar{
+    height:58px!important;
+    min-height:58px!important;
+    max-height:58px!important;
+    padding:8px 0!important;
+  }
+  body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .menu-open{
+    display:grid!important;
+    position:static!important;
+    order:0!important;
+    margin-right:auto;
+  }
+  body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .dl-greeting{
+    padding-left:0!important;
+  }
+}
