@@ -2497,8 +2497,10 @@
                 <small>${esc(q.exam_style || "—")} · ${esc(q.area || "—")} · v${esc(q.version || 1)}</small>
               </div>
               <div class="admin-qf-review-pills">
-                <span class="admin-qf-review-pill ${esc(q.block_review_status || "")}">Qualidade: ${esc(score)}</span>
-                ${qfReviewPill("Status", q.block_review_status)}
+                <span class="admin-qf-review-pill">Cega: ${esc(blindScore)}</span>
+                <span class="admin-qf-review-pill">Indep.: ${esc(independentScore)}</span>
+                <span class="admin-qf-review-pill ${esc(q.block_review_status || "")}">Gate: ${esc(score)}</span>
+                ${qfReviewPill("Destino", decisionLabel)}
               </div>
             </summary>
             <div class="admin-qf-question-body">
@@ -2509,7 +2511,7 @@
                   return '<div class="admin-qf-alt '+(q.gabarito===letter?"correct":"")+'"><strong>'+letter+'</strong> — '+esc(val)+'</div>';
                 }).join("")}
               </div>
-              ${blindReview ? `\n                <div class="admin-qf-bad-reason">\n                  <strong>Resolução cega independente</strong>\n                  <span><b>Resposta independente:</b> ${esc(blindReview.independent_answer || "Ambígua / sem resposta forçada")}</span>\n                  <small>${esc(blindReview.reason || "Sem justificativa registrada.")}</small>\n                  <small>${blindReview.ambiguity ? "Ambiguidade: sim" : "Ambiguidade: não"} · ${blindReview.single_best_answer ? "Única melhor resposta: sim" : "Única melhor resposta: não"}</small>\n                </div>\n              ` : ""}\n              <div class="admin-qf-bad-reason">
+              ${blindReview ? `\n                <div class="admin-qf-bad-reason">\n                  <strong>Resolução cega independente</strong>\n                  <span><b>Resposta independente:</b> ${esc(blindReview.independent_answer || "Ambígua / sem resposta forçada")} · <b>Nota:</b> ${esc(blindReview.quality_score == null ? "—" : Number(blindReview.quality_score).toLocaleString("pt-BR",{maximumFractionDigits:1}))}/100</span>\n                  <small>${esc(blindReview.reason || "Sem justificativa registrada.")}</small>\n                  <small>${blindReview.ambiguity ? "Ambiguidade: sim" : "Ambiguidade: não"} · ${blindReview.single_best_answer ? "Única melhor resposta: sim" : "Única melhor resposta: não"}</small>\n                </div>\n              ` : ""}\n              <div class="admin-qf-bad-reason">
                 <strong>Qualidade individual · fluxo 95/50</strong>
                 <span><b>Resolução cega:</b> ${esc(blindScore)}/100 · <b>Revisão independente:</b> ${esc(independentScore)}/100</span>
                 <span><b>Nota de roteamento:</b> ${esc(score)} · <b>Destino:</b> ${esc(decisionLabel)}</span>
@@ -2906,12 +2908,10 @@
     const map = {
       generation: { label: "1 · Gerar 200 questões", provider: "chatgpt" },
       chatgpt_initial: { label: "2 · ChatGPT · revisão adversarial + autocorreção", provider: "chatgpt" },
-      blind_resolution: { label: "3 · ChatGPT · resolução cega sem memória", provider: "chatgpt" },
-      perplexity_initial: { label: "4 · ChatGPT · revisão independente do bloco", provider: "chatgpt" },
-      chatgpt_adjudication: { label: "5 · ChatGPT · decidir/corrigir pendências", provider: "chatgpt" },
-      chatgpt_correction: { label: "5 · ChatGPT · aplicar correções", provider: "chatgpt" },
-      perplexity_reaudit: { label: "6 · ChatGPT · revisar cegamente as correções", provider: "chatgpt" },
-      human_review: { label: "7 · Sua aprovação para o lote", provider: null },
+      blind_resolution: { label: "3 · ChatGPT · resolução cega + nota", provider: "chatgpt" },
+      perplexity_initial: { label: "4 · ChatGPT · revisão independente + nota", provider: "chatgpt" },
+      perplexity_reaudit: { label: "5 · ChatGPT · nova revisão das questões 50–95", provider: "chatgpt" },
+      human_review: { label: "Aprovação humana (legado)", provider: null },
       block_complete: { label: "Bloco concluído", provider: null }
     };
     return map[stage] || { label: stage || "Pendente", provider: null };
@@ -3642,7 +3642,7 @@
       return { next, provider:null, label:"Bloco concluído", phase:"Concluído" };
     }
 
-    const independentLegacyStages = ["blind_resolution","perplexity_initial"];
+    const independentLegacyStages = ["blind_resolution","perplexity_initial","perplexity_reaudit"];
     const provider = independentLegacyStages.includes(String(next.next_stage || ""))
       ? "chatgpt"
       : (next.next_provider || "chatgpt");
@@ -3652,7 +3652,8 @@
       generation:"1 · Gerar / repor questões",
       chatgpt_initial:"2 · ChatGPT · revisão adversarial + autocorreção",
       blind_resolution:"3 · ChatGPT · resolução cega + nota",
-      perplexity_initial:"4 · ChatGPT · revisão independente + decisão 95/50"
+      perplexity_initial:"4 · ChatGPT · revisão independente + decisão >95/50",
+      perplexity_reaudit:"5 · ChatGPT · nova revisão das questões 50–95"
     };
     const phase = phaseLabels[next.next_stage] || next.phase || "Próxima fase";
     return { next, provider, providerLabel, phase, label:`${phase} · abrir ${providerLabel}` };
@@ -3744,7 +3745,7 @@
   }
 
   function questionFactoryIndependentChunkStage(stage) {
-    return ["perplexity_initial"].includes(String(stage || ""));
+    return ["perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
   }
 
   function questionFactoryDecisionPackageStage(stage) {
@@ -3754,11 +3755,11 @@
   function questionFactoryPendingForStage(question, stage) {
     const currentStage = String(stage || "");
     if (currentStage === "blind_resolution") {
-      return !(question?.blind_resolution && typeof question.blind_resolution === "object");
+      return !(question?.blind_resolution && typeof question.blind_resolution === "object" && question.blind_resolution.quality_score != null);
     }
     const latestStage = String(question?.latest_review?.review_stage || "");
     if (currentStage === "perplexity_initial") return latestStage !== "perplexity_initial";
-    if (currentStage === "perplexity_reaudit") return latestStage !== "perplexity_reaudit";
+    if (currentStage === "perplexity_reaudit") return String(question?.status || "") === "needs_revision";
     return true;
   }
 
