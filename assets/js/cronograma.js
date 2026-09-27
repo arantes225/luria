@@ -4796,12 +4796,18 @@ function renderAgendaSide() {
   const bannerPct = weekTotal ? Math.round((bannerCompleted / weekTotal) * 100) : 0;
   const bannerBar=document.getElementById("agenda-goal-banner-bar"), bannerPercent=document.getElementById("agenda-goal-banner-percent"), bannerCopy=document.getElementById("agenda-goal-banner-copy");
   if(bannerBar) bannerBar.style.width=bannerPct+"%"; if(bannerPercent) bannerPercent.textContent=bannerPct+"%"; if(bannerCopy) bannerCopy.textContent=bannerCompleted+" de "+weekTotal+" atividades concluídas";
-  const currentIso=toISODateSchedule(today);
-  weekDays.forEach((date,i)=>{
-    const el=document.querySelector('[data-goal-day="'+i+'"]'); if(!el)return;
-    const topics=topicsOnDate(date), events=eventsOnDate(date), errors=errorItemsOnDate(date), total=topics.length+events.length+errors.length, done=topics.filter(t=>Boolean(t.completed_at)).length;
-    const strong=el.querySelector("strong"), small=el.querySelector("small"); if(strong)strong.textContent=String(date.getDate());if(small)small.textContent=done+"/"+total;
-    el.classList.toggle("done",total>0&&done>=total);el.classList.toggle("has-progress",done>0);el.classList.toggle("current",toISODateSchedule(date)===currentIso);
+  ["lesson","questions","flashcards","review","errors","simulation"].forEach((kind)=>{
+    const el=document.querySelector('[data-goal-kind="'+kind+'"]');
+    if(!el)return;
+    const items=weeklyItems.filter(item=>item.type===kind);
+    const total=items.length;
+    const done=items.filter(item=>item.completed).length;
+    const strong=el.querySelector("strong"), small=el.querySelector("small"), bar=el.querySelector("i > b");
+    if(strong)strong.textContent=done+"/"+total;
+    if(small)small.textContent=total ? (done===total ? "meta concluída" : (total-done)+" pendente"+(total-done===1?"":"s")) : "sem meta";
+    if(bar)bar.style.width=(total?Math.round(done/total*100):0)+"%";
+    el.classList.toggle("done",total>0&&done>=total);
+    el.classList.toggle("has-progress",done>0);
   });
 
   const completedThisWeek = weeklyItems.filter(item => item.completed).length;
