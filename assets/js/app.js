@@ -1224,7 +1224,7 @@ function updateLuriaLogo(theme) {
 
   if (theme === "dark") {
     source =
-      "/assets/img/logos/logo-icone-azul-claro.png?v=luria10";
+      "/assets/img/logos/logo-branca.png?v=luria11";
   }
 
   if (theme === "leila-mood") {
