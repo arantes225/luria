@@ -8090,6 +8090,12 @@ function wireThemeLibraryFilters() {
 
 
 function renderSchedule() {
+  /* Configurações > Cronograma usa somente os controles de importação/cadastro.
+     Não tenta renderizar a agenda quando o planner não existe nesta página. */
+  if (!document.getElementById("week-planner") && !document.getElementById("month-planner")) {
+    return;
+  }
+
   renderSummary();
   renderPlanner();
   renderDeck();
@@ -9214,27 +9220,38 @@ function wireAlreadyDoneDialog() {
 async function initCronograma() {
   scheduleState.user = window.docmapUser;
 
+  const nativeSettingsPage =
+    document.body?.dataset?.page === "configuracoes-cronograma";
+
+  /* Controles compartilhados entre a agenda e Configurações > Cronograma. */
   wireImportControls();
-  wirePlannerNavigation();
-  wireDeckDropzone();
-
-  document
-    .getElementById(
-      "deck-distribute"
-    )
-    ?.addEventListener(
-      "click",
-      distributeDeckTopics
-    );
-
-  wireAlreadyDoneDialog();
   wireManualTopicForm();
   wireScheduleAddMode();
-  wireThemeLibraryFilters();
-  wireThemeLibraryBulkActions();
-  wireEventLibrary();
-  wireOverdueOrganizer();
   wireBaseSchedule();
+
+  /* Estes controles só existem na Agenda do menu lateral. */
+  if (!nativeSettingsPage) {
+    wirePlannerNavigation();
+    wireDeckDropzone();
+
+    document
+      .getElementById("deck-distribute")
+      ?.addEventListener("click", distributeDeckTopics);
+
+    wireAlreadyDoneDialog();
+    wireThemeLibraryFilters();
+    wireThemeLibraryBulkActions();
+    wireEventLibrary();
+    wireOverdueOrganizer();
+
+    document.addEventListener("click", () => closeTopicOverflowMenus());
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeTopicOverflowMenus();
+      }
+    });
+  }
 
   const initialDataPromise = Promise.all([
     loadSchedulePreferences(),
@@ -9242,45 +9259,17 @@ async function initCronograma() {
   ]);
 
   const automaticAllowed =
-    window.LuriaEntitlements?.enabled(
-      "automatic_schedule"
-    ) === true;
+    window.LuriaEntitlements?.enabled("automatic_schedule") === true;
 
   const automaticButton =
-    document.querySelector(
-      '[data-schedule-add-mode="automatic"]'
-    );
+    document.querySelector('[data-schedule-add-mode="automatic"]');
 
-  if (
-    automaticButton
-    && !automaticAllowed
-  ) {
-    automaticButton.hidden =
-      true;
+  if (automaticButton && !automaticAllowed) {
+    automaticButton.hidden = true;
   }
 
   switchScheduleAddMode(
-    automaticAllowed
-      ? "automatic"
-      : "manual"
-  );
-
-  document.addEventListener(
-    "click",
-    () =>
-      closeTopicOverflowMenus()
-  );
-
-  document.addEventListener(
-    "keydown",
-    (event) => {
-      if (
-        event.key ===
-        "Escape"
-      ) {
-        closeTopicOverflowMenus();
-      }
-    }
+    automaticAllowed ? "automatic" : "manual"
   );
 
   await initialDataPromise;
