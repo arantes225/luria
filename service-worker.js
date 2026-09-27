@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v165-dashboard-global-bg";
+const CACHE_VERSION = "luria-pwa-v166-work-dashboard-refresh";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -20,6 +20,8 @@ const APP_SHELL = [
   "/configuracoes/",
   "/dashboard/",
   "/trabalho/",
+  "/assets/css/work-dashboard.css?v=2",
+  "/assets/js/work-dashboard.js?v=2",
   "/trabalho/plantoes/",
   "/trabalho/passometro/",
   "/trabalho/prontuario-rapido/",
