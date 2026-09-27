@@ -8,6 +8,7 @@ const scheduleState = {
   fileType: null,
   topics: [],
   events: [],
+  errorItems: [],
   existingTopicKeys: new Set(),
   existingEventKeys: new Set(),
   weekAnchor: startOfDaySchedule(new Date()),
@@ -4417,6 +4418,13 @@ function topicsOnDate(date) {
   );
 }
 
+function errorItemsOnDate(date) {
+  const iso = toISODateSchedule(date);
+  return (scheduleState.errorItems || []).filter(
+    (item) => item.active !== false && item.due_date === iso
+  );
+}
+
 function renderSummary() {
   const deck = scheduleState.topics.filter(
     (topic) =>
@@ -4491,6 +4499,19 @@ function renderMonthEventItem(event) {
   `;
 }
 
+function renderMonthErrorItem(item) {
+  const title = item.theme || item.materia || item.area || "Caderno de erros";
+  return `
+    <a
+      class="month-event month-error-review"
+      href="/caderno-erros/"
+      title="${escapeScheduleHtml(title)}"
+    >
+      ${escapeScheduleHtml(title)}
+    </a>
+  `;
+}
+
 function renderMonthPlanner() {
   const planner =
     document.getElementById("month-planner");
@@ -4536,12 +4557,18 @@ function renderMonthPlanner() {
           const events =
             eventsOnDate(date);
 
+          const errorItems =
+            errorItemsOnDate(date);
+
           const allItems = [
             ...topics.map(
               renderMonthTopicItem
             ),
             ...events.map(
               renderMonthEventItem
+            ),
+            ...errorItems.map(
+              renderMonthErrorItem
             )
           ];
 
@@ -4583,14 +4610,16 @@ function renderWeeklyOverview() {
   const days = Array.from({ length: 7 }, (_, index) => addDaysSchedule(start, index));
   const categories = [
     ["Aulas", "lesson", "book"],
-    ["Questões", "questions", "clipboard"],
+    ["Questões", "questions", "file"],
     ["Flashcards", "flashcards", "cards"],
     ["Revisões", "review", "refresh"],
+    ["Caderno de erros", "errors", "clipboard"],
     ["Simulados", "simulation", "simulation"],
     ["Outros", "other", "more"]
   ];
   const classify = (topic, event) => {
     const source = normalizeHeader(event ? (event.event_type || event.title || "") : (topic?.type || topic?.theme || ""));
+    if (source.includes("caderno de erro") || source.includes("erro")) return "errors";
     if (source.includes("quest")) return "questions";
     if (source.includes("flash")) return "flashcards";
     if (source.includes("revis")) return "review";
@@ -4602,7 +4631,10 @@ function renderWeeklyOverview() {
     days.map(date => '<div class="week-matrix-head '+(sameDateSchedule(date,today)?'today':'')+'"><span>'+new Intl.DateTimeFormat("pt-BR",{weekday:"short"}).format(date).replace(".","")+'</span><strong>'+date.getDate()+'</strong></div>').join("") +
     categories.map(([label,key,iconName]) => {
       const cells = days.map(date => {
-        const count = topicsOnDate(date).filter(t => classify(t,null)===key).length + eventsOnDate(date).filter(e => classify(null,e)===key).length;
+        const count =
+          topicsOnDate(date).filter(t => classify(t,null)===key).length
+          + eventsOnDate(date).filter(e => classify(null,e)===key).length
+          + (key === "errors" ? errorItemsOnDate(date).length : 0);
         return '<div class="week-matrix-cell" data-planner-date="'+toISODateSchedule(date)+'">'+(count ? '<span class="week-dot kind-'+key+'" title="'+count+' atividade(s)"></span>' : '<span class="week-dot empty"></span>')+'</div>';
       }).join("");
       const categoryIcon = window.LuriaIcon ? window.LuriaIcon(iconName, "week-category-svg") : '<span class="week-legend kind-'+key+'"></span>';
@@ -4614,6 +4646,7 @@ function renderAgendaSide() {
   const today = startOfDaySchedule(new Date());
   const todayTopics = topicsOnDate(today);
   const todayEvents = eventsOnDate(today);
+  const todayErrors = errorItemsOnDate(today);
   const count = document.getElementById("agenda-today-count");
   const list = document.getElementById("agenda-today-list");
   const dateLabel = document.getElementById("agenda-today-date");
@@ -4626,9 +4659,9 @@ function renderAgendaSide() {
     }).format(today);
     dateLabel.textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
   }
-  if (count) count.textContent = String(todayTopics.length + todayEvents.length);
+  if (count) count.textContent = String(todayTopics.length + todayEvents.length + todayErrors.length);
 
-  const todayTotal = todayTopics.length + todayEvents.length;
+  const todayTotal = todayTopics.length + todayEvents.length + todayErrors.length;
   const todayCompleted = todayTopics.filter(topic => Boolean(topic.completed_at)).length;
   const todayPercent = todayTotal ? Math.round((todayCompleted / todayTotal) * 100) : 0;
   const todayProgressText = document.getElementById("agenda-today-progress-text");
@@ -4674,13 +4707,26 @@ function renderAgendaSide() {
         + '</div>';
     });
 
-    const rows = [...topicRows, ...eventRows];
+    const errorRows = todayErrors.map(item => {
+      const title = item.theme || item.materia || item.area || "Caderno de erros";
+      return '<a class="agenda-today-row kind-errors" href="/caderno-erros/">'
+        + '<span class="agenda-today-check" aria-hidden="true"></span>'
+        + '<span class="agenda-today-main">'
+        + '<span class="agenda-today-time">Hoje</span>'
+        + '<strong>'+escapeScheduleHtml(title)+'</strong>'
+        + '<small>'+escapeScheduleHtml([item.area,item.materia].filter(Boolean).join(" · ") || "Revisão do caderno de erros")+'</small>'
+        + '</span>'
+        + '<span class="agenda-today-kind">Caderno de erros</span>'
+        + '</a>';
+    });
+
+    const rows = [...topicRows, ...errorRows, ...eventRows];
     list.innerHTML = rows.length ? rows.join("") : '<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
   }
 
   const weekStart = startOfWeekSchedule(today);
   const weekDays = Array.from({length:7},(_,i)=>addDaysSchedule(weekStart,i));
-  const totals = weekDays.map(d=>topicsOnDate(d).length+eventsOnDate(d).length);
+  const totals = weekDays.map(d=>topicsOnDate(d).length+eventsOnDate(d).length+errorItemsOnDate(d).length);
   const totalEl=document.getElementById("agenda-week-total"), daysEl=document.getElementById("agenda-week-days"), overdueEl=document.getElementById("agenda-week-overdue");
   const weekTotal = totals.reduce((a,b)=>a+b,0);
   if(totalEl) totalEl.textContent=String(weekTotal);
@@ -4698,11 +4744,13 @@ function renderAgendaSide() {
   weekDays.forEach(date => {
     topicsOnDate(date).forEach(topic => weeklyItems.push({ type: kindClass(topic.type || topic.theme || "lesson"), completed: Boolean(topic.completed_at) }));
     eventsOnDate(date).forEach(event => weeklyItems.push({ type: kindClass(event.event_type || event.title || "other"), completed: false }));
+    errorItemsOnDate(date).forEach(() => weeklyItems.push({ type: "errors", completed: false }));
   });
 
   const distribution = [
     { key:"lesson", label:"Aulas", color:"var(--accent)" },
     { key:"review", label:"Revisões", color:"#20b7aa" },
+    { key:"errors", label:"Caderno de erros", color:"#e04f5f" },
     { key:"simulation", label:"Simulados", color:"#8b5cf6" },
     { key:"other", label:"Outros", color:"#f59e0b" }
   ].map(item => ({ ...item, count: weeklyItems.filter(entry => entry.type === item.key).length }))
@@ -4757,6 +4805,7 @@ function renderAgendaSide() {
     for(let i=1;i<=14 && future.length<5;i++){
       const d=addDaysSchedule(today,i);
       topicsOnDate(d).forEach(t=>future.push({title:t.theme,date:d,meta:topicMeta(t)||"Aula"}));
+      errorItemsOnDate(d).forEach(e=>future.push({title:e.theme||e.materia||e.area||"Caderno de erros",date:d,meta:"Caderno de erros"}));
       eventsOnDate(d).forEach(e=>future.push({title:e.title,date:d,meta:scheduleKindLabel(e.event_type||"other")}));
     }
     next.innerHTML=future.length?future.slice(0,5).map(item=>'<div class="agenda-next-item"><strong>'+escapeScheduleHtml(item.title)+'</strong><span>'+new Intl.DateTimeFormat("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit"}).format(item.date).replace(".","")+' · '+escapeScheduleHtml(item.meta)+'</span></div>').join(""):'<p class="agenda-empty">Sem próximas atividades nos próximos 14 dias.</p>';
@@ -8487,7 +8536,8 @@ function wireDynamicInteractions() {
 async function loadTopics() {
   const [
     topicsResult,
-    eventsResult
+    eventsResult,
+    errorsResult
   ] = await Promise.all([
     scheduleSb
       .from("study_topics")
@@ -8500,7 +8550,14 @@ async function loadTopics() {
       .select("*")
       .eq("user_id", scheduleState.user.id)
       .order("event_date", { ascending: true })
-      .order("created_at", { ascending: true })
+      .order("created_at", { ascending: true }),
+
+    scheduleSb
+      .from("error_notebook")
+      .select("id,area,materia,theme,due_date,active,review_count")
+      .eq("user_id", scheduleState.user.id)
+      .eq("active", true)
+      .order("due_date", { ascending: true })
   ]);
 
   if (topicsResult.error) {
@@ -8521,12 +8578,25 @@ async function loadTopics() {
     return;
   }
 
+  if (errorsResult.error) {
+    console.error(errorsResult.error);
+    setImportStatus(
+      `Não foi possível carregar o caderno de erros: ${errorsResult.error.message}`,
+      "error"
+    );
+    return;
+  }
+
   scheduleState.topics =
     topicsResult.data
     || [];
 
   scheduleState.events =
     eventsResult.data
+    || [];
+
+  scheduleState.errorItems =
+    errorsResult.data
     || [];
 
   refreshExistingKeys();
