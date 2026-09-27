@@ -1478,3 +1478,25 @@ body[data-dashboard-layout="5"] .dl5-week span{
   white-space:nowrap!important;
   letter-spacing:-.02em!important;
 }
+
+
+/* Dashboard 1 — Progresso por área e Pulo do Gato lado a lado. */
+body[data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+  grid-column:1/2!important;
+  min-width:0!important;
+}
+body[data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+  grid-column:2/3!important;
+  min-width:0!important;
+}
+body[data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+  grid-template-columns:minmax(90px,130px) minmax(0,1fr) 38px!important;
+  gap:8px!important;
+}
+body[data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row small{
+  display:none!important;
+}
+body[data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+  min-height:110px!important;
+  height:100%!important;
+}
