@@ -3371,3 +3371,36 @@
 @media(max-width:1180px){.notebook-book-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:850px){.notebook-book-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.notebook-book-grid{grid-template-columns:1fr}.notebook-library-search-controls{grid-template-columns:1fr 44px!important}}
+
+
+/* v21.1 — Cadernos espelha exatamente a biblioteca de Decks */
+#notebook-view-library{margin-top:-4px!important}
+#notebook-view-library>.notebook-view-head{display:flex!important;align-items:center!important;margin:-8px 0 6px!important;padding:0 4px 17px!important}
+#notebook-view-library>.notebook-view-head h2{font-size:34px!important;font-weight:800!important;line-height:1.1!important;margin:0 0 5px!important}
+#notebook-view-library>.notebook-view-head p{font-size:11px!important;margin:0!important;color:var(--muted)!important}
+#notebook-view-library .notebook-library-search-controls{display:grid!important;grid-template-columns:minmax(320px,1.55fr) minmax(190px,.72fr) minmax(190px,.72fr)!important;gap:10px!important;margin:0 0 26px!important}
+#notebook-view-library .notebook-searchbar{grid-column:1!important}
+#notebook-view-library .notebook-searchbar input{height:44px!important;border-radius:9px!important;padding-left:15px!important;font-size:10px!important}
+#notebook-view-library .notebook-library-filter-wrap{grid-column:2!important}
+#notebook-view-library .notebook-filter-toggle{width:100%!important;height:44px!important;border-radius:9px!important}
+#notebook-view-library .notebook-library-filter-toggle:after{content:"Especialidade";font-size:10px;font-weight:700;margin-left:8px}
+#notebook-view-library .notebook-library-actions{display:none!important}
+#notebook-view-library .notebook-area-shelf{margin:0 0 31px!important}
+#notebook-view-library .notebook-area-shelf-head{display:flex!important;align-items:center!important;gap:11px!important;margin-bottom:12px!important}
+#notebook-view-library .notebook-area-shelf-icon{width:36px!important;height:36px!important;border:0!important;background:transparent!important;font-size:23px!important}
+#notebook-view-library .notebook-area-shelf-head>div{display:flex!important;flex-direction:column!important;gap:2px!important}
+#notebook-view-library .notebook-area-shelf-head strong{font-size:14px!important}
+#notebook-view-library .notebook-area-shelf-head small{font-size:9px!important}
+#notebook-view-library .notebook-area-shelf-head button{font-size:9px!important}
+#notebook-view-library .notebook-book-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:13px!important}
+#notebook-view-library .notebook-book-card{min-height:215px!important;padding:17px!important;border-radius:11px!important;border:1px solid var(--border)!important;background:var(--surface)!important;box-shadow:var(--shadow-sm)!important}
+#notebook-view-library .notebook-book-icon{display:grid!important;place-items:center!important;width:42px!important;height:42px!important;background:transparent!important;font-size:25px!important;color:var(--accent)!important}
+#notebook-view-library .notebook-book-menu{font-size:15px!important}
+#notebook-view-library .notebook-book-card h3{font-size:12px!important;margin:10px 0 5px!important}
+#notebook-view-library .notebook-book-card>p{font-size:8.8px!important;line-height:1.42!important;min-height:37px!important}
+#notebook-view-library .notebook-book-meta{margin-top:14px!important}
+#notebook-view-library .notebook-book-meta b{font-size:13px!important}
+#notebook-view-library .notebook-book-meta small{font-size:7.8px!important}
+@media(max-width:1180px){#notebook-view-library .notebook-book-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:850px){#notebook-view-library .notebook-book-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#notebook-view-library .notebook-library-search-controls{grid-template-columns:1fr 180px!important}}
+@media(max-width:560px){#notebook-view-library .notebook-book-grid{grid-template-columns:1fr!important}#notebook-view-library .notebook-library-search-controls{grid-template-columns:1fr 44px!important}#notebook-view-library .notebook-filter-toggle:after{display:none}}
