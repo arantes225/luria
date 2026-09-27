@@ -767,6 +767,19 @@
     .password-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .quick-access-settings .security-email{background:var(--surface)}
     @media(max-width:700px){.password-pair{grid-template-columns:1fr}}
+
+    .profile-choice-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .profile-choice{position:relative}
+    .profile-choice input{position:absolute;opacity:0;pointer-events:none}
+    .profile-choice span{
+      min-height:44px;display:flex;align-items:center;justify-content:center;padding:0 12px;
+      border:1px solid var(--border);border-radius:10px;background:var(--surface);
+      color:var(--muted);font-size:12px;font-weight:760;text-align:center;cursor:pointer
+    }
+    .profile-choice input:checked + span{
+      border-color:var(--accent);background:var(--accent-soft);color:var(--accent)
+    }
+    @media(max-width:700px){.profile-choice-row{grid-template-columns:1fr}}
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=5-reference">
@@ -861,6 +874,31 @@
                 >
                 <small>3–30 caracteres: letras minúsculas, números, ponto, hífen ou _.</small>
               </label>
+
+              <label class="profile-field">
+                <span>Faculdade</span>
+                <input
+                  id="profile-medical-school"
+                  type="text"
+                  maxlength="120"
+                  placeholder="Ex.: CEUB"
+                  autocomplete="organization"
+                >
+              </label>
+
+              <div class="profile-field">
+                <span>Você já é formado?</span>
+                <div class="profile-choice-row" role="radiogroup" aria-label="Situação de formação">
+                  <label class="profile-choice">
+                    <input type="radio" name="profile-graduated" value="false">
+                    <span>Ainda estou cursando</span>
+                  </label>
+                  <label class="profile-choice">
+                    <input type="radio" name="profile-graduated" value="true">
+                    <span>Já sou formado</span>
+                  </label>
+                </div>
+              </div>
 
               <div class="profile-field">
                 <span>Sexo</span>
@@ -1804,7 +1842,7 @@
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
-  <script src="assets/js/configuracoes.js?v=13.6-passkey-fix"></script>
+  <script src="assets/js/configuracoes.js?v=13.7-profile-school"></script>
   <script src="assets/js/dashboard-layout-settings.js?v=4-option5"></script>
   <script defer src="assets/js/pwa.js?v=5"></script>
 </body>
