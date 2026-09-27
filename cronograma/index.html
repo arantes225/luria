@@ -2854,6 +2854,38 @@
     body:not(.schedule-settings-embed) .week-dot{width:7px!important;height:7px!important}
   }
 
+
+  /* Atividades segue imediatamente a altura real do calendário */
+  body:not(.schedule-settings-embed) .agenda-reference-layout{
+    align-items:start!important
+  }
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.planner-panel{grid-column:1!important;grid-row:1!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-insights-side{grid-column:2!important;grid-row:1 / span 2!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    grid-column:1!important;grid-row:2!important;margin-top:12px!important;align-self:start!important
+  }
+
+  /* Hoje: contraste branco sobre o destaque azul */
+  body:not(.schedule-settings-embed) .week-matrix-head.today,
+  body:not(.schedule-settings-embed) .week-matrix-head.is-today,
+  body:not(.schedule-settings-embed) .week-matrix-head.current,
+  body:not(.schedule-settings-embed) .week-matrix-head[aria-current="date"],
+  body:not(.schedule-settings-embed) .week-matrix-head[data-today="true"]{
+    background:var(--accent)!important;color:#fff!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-head.today span,
+  body:not(.schedule-settings-embed) .week-matrix-head.today strong,
+  body:not(.schedule-settings-embed) .week-matrix-head.is-today span,
+  body:not(.schedule-settings-embed) .week-matrix-head.is-today strong,
+  body:not(.schedule-settings-embed) .week-matrix-head.current span,
+  body:not(.schedule-settings-embed) .week-matrix-head.current strong,
+  body:not(.schedule-settings-embed) .week-matrix-head[aria-current="date"] span,
+  body:not(.schedule-settings-embed) .week-matrix-head[aria-current="date"] strong,
+  body:not(.schedule-settings-embed) .week-matrix-head[data-today="true"] span,
+  body:not(.schedule-settings-embed) .week-matrix-head[data-today="true"] strong{
+    color:#fff!important
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
