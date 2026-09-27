@@ -7,6 +7,8 @@
   let metronomeOn = true;
   let audioReady = false;
   let audioCtx = null;
+  let audioEl = null;
+  let audioUnlocked = false;
   let beatTimer = null;
   let lastCycle = 1;
   const BPM = 110;
@@ -212,14 +214,83 @@
     }
   }
 
-  function beep(freq = 650, duration = 0.035) {
-    if (!audioCtx) return;
+  function makeBeepWavDataUri(freq = 880, durationMs = 55, volume = 0.45) {
+    const sampleRate = 22050;
+    const samples = Math.max(1, Math.floor(sampleRate * (durationMs / 1000)));
+    const bytesPerSample = 2;
+    const dataSize = samples * bytesPerSample;
+    const buffer = new ArrayBuffer(44 + dataSize);
+    const view = new DataView(buffer);
+    const writeString = (offset, str) => {
+      for (let i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i));
+    };
+    writeString(0, "RIFF");
+    view.setUint32(4, 36 + dataSize, true);
+    writeString(8, "WAVE");
+    writeString(12, "fmt ");
+    view.setUint32(16, 16, true);
+    view.setUint16(20, 1, true);
+    view.setUint16(22, 1, true);
+    view.setUint32(24, sampleRate, true);
+    view.setUint32(28, sampleRate * bytesPerSample, true);
+    view.setUint16(32, bytesPerSample, true);
+    view.setUint16(34, 16, true);
+    writeString(36, "data");
+    view.setUint32(40, dataSize, true);
+    for (let i = 0; i < samples; i++) {
+      const t = i / sampleRate;
+      const env = Math.max(0, 1 - i / samples);
+      const sample = Math.sin(2 * Math.PI * freq * t) * env * volume;
+      view.setInt16(44 + i * 2, Math.max(-1, Math.min(1, sample)) * 0x7fff, true);
+    }
+    let binary = "";
+    const bytes = new Uint8Array(buffer);
+    for (let i = 0; i < bytes.length; i++) binary += String.fromCharCode(bytes[i]);
+    return "data:audio/wav;base64," + btoa(binary);
+  }
+
+  function ensureAudioElement() {
+    if (audioEl) return audioEl;
+    audioEl = new Audio(makeBeepWavDataUri(900, 65, 0.7));
+    audioEl.preload = "auto";
+    audioEl.playsInline = true;
+    audioEl.setAttribute("playsinline", "");
+    audioEl.setAttribute("webkit-playsinline", "");
+    return audioEl;
+  }
+
+  async function playHtmlBeep() {
+    const el = ensureAudioElement();
+    try {
+      el.currentTime = 0;
+    } catch {}
+    try {
+      await el.play();
+      audioUnlocked = true;
+      return true;
+    } catch (error) {
+      console.warn("HTMLAudio beep bloqueado:", error);
+      return false;
+    }
+  }
+
+  function beep(freq = 760, duration = 0.05) {
+    if (audioUnlocked && audioEl) {
+      try {
+        audioEl.currentTime = 0;
+        const p = audioEl.play();
+        if (p?.catch) p.catch(() => {});
+        return;
+      } catch {}
+    }
+
+    if (!audioCtx || audioCtx.state !== "running") return;
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
     osc.type = "square";
     osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
     gain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.22, audioCtx.currentTime + 0.006);
+    gain.gain.exponentialRampToValueAtTime(0.25, audioCtx.currentTime + 0.004);
     gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
     osc.connect(gain);
     gain.connect(audioCtx.destination);
@@ -240,40 +311,46 @@
   }
 
   async function unlockAudio() {
+    let htmlOk = false;
+    let ctxOk = false;
+
+    // Most reliable path on iOS/PWA: explicitly play a real audio element
+    // during the user's tap gesture.
+    try {
+      htmlOk = await playHtmlBeep();
+    } catch {}
+
+    // Keep WebAudio as secondary fallback.
     try {
       const Ctx = window.AudioContext || window.webkitAudioContext;
-      if (!Ctx) return false;
-
-      if (!audioCtx || audioCtx.state === "closed") {
-        audioCtx = new Ctx();
+      if (Ctx) {
+        if (!audioCtx || audioCtx.state === "closed") audioCtx = new Ctx();
+        if (audioCtx.state === "suspended") await audioCtx.resume();
+        ctxOk = audioCtx.state === "running";
       }
-
-      if (audioCtx.state === "suspended") {
-        await audioCtx.resume();
-      }
-
-      // iOS/PWA: create and play a tiny silent buffer in the same user gesture
-      // to fully unlock the audio graph before oscillator clicks.
-      const buffer = audioCtx.createBuffer(1, 1, 22050);
-      const source = audioCtx.createBufferSource();
-      source.buffer = buffer;
-      source.connect(audioCtx.destination);
-      source.start(0);
-
-      audioReady = audioCtx.state === "running";
-
-      if (audioReady) {
-        metroBtn.querySelector("small").textContent = "110 bpm · som ativo";
-        beep(760, 0.06);
-        setTimeout(() => beep(620, 0.04), 120);
-      }
-
-      return audioReady;
     } catch (error) {
-      console.warn("Não foi possível ativar o metrônomo:", error);
-      audioReady = false;
-      return false;
+      console.warn("WebAudio indisponível:", error);
     }
+
+    audioReady = htmlOk || ctxOk;
+
+    if (audioReady) {
+      metroBtn.querySelector("small").textContent = "110 bpm · som ativo";
+      if (htmlOk) {
+        // second immediate audible confirmation
+        setTimeout(() => {
+          try {
+            audioEl.currentTime = 0;
+            audioEl.play().catch(() => {});
+          } catch {}
+        }, 140);
+      } else {
+        beep(760, 0.06);
+        setTimeout(() => beep(620, 0.05), 140);
+      }
+    }
+
+    return audioReady;
   }
 
   function setMode(next) {
@@ -338,7 +415,7 @@
       metronomeOn = true;
       metroBtn.classList.add("active");
       metroBtn.setAttribute("aria-pressed", "true");
-      metroBtn.querySelector("small").textContent = "Ativando som…";
+      metroBtn.querySelector("small").textContent = "Ativando áudio do iPhone…";
 
       const ok = await unlockAudio();
 
