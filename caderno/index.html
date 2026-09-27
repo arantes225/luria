@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=23.4">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=23.5">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -73,11 +73,11 @@
         <section id="notebook-view-editor" class="notebook-view">
 <div class="note-studio">
 <aside class="note-tree">
- <div class="note-tree-head"><div><small>Anotações</small><strong>Meus cadernos</strong></div><button id="notebook-topic-panel-toggle" type="button" aria-expanded="true"><span id="notebook-topic-panel-arrow">‹</span></button></div>
- <div class="note-tree-search"><input id="notebook-topic-search" type="search" placeholder="Buscar página..." autocomplete="off"><button id="notebook-filter-toggle" type="button">⌁</button></div>
+ <div class="note-tree-head"><div><small>Anotação atual</small><strong>Estrutura da página</strong></div><button id="notebook-topic-panel-toggle" type="button" aria-expanded="true"><span id="notebook-topic-panel-arrow">‹</span></button></div>
+ <div class="note-outline-help">Navegue pelos títulos e subtítulos desta anotação.</div><input id="notebook-topic-search" type="search" hidden><button id="notebook-filter-toggle" type="button" hidden>⌁</button>
  <div id="notebook-filter-menu" class="notebook-filter-menu" hidden><button id="notebook-filter-close" type="button">×</button><select id="notebook-area-filter"><option value="">Todas as áreas</option></select><button id="notebook-filter-clear" type="button">Limpar</button><button id="notebook-filter-apply" type="button">Aplicar</button></div>
- <button id="notebook-new-free-page" class="note-new-page" type="button">＋ Nova página</button><span id="notebook-topic-count" hidden>0</span>
- <div id="notebook-topic-list" class="notebook-topic-list"><div class="notebook-empty-small">Carregando...</div></div>
+ <button id="notebook-new-free-page" class="note-new-page" type="button" hidden>＋ Nova página</button><span id="notebook-topic-count" hidden>0</span>
+ <div id="notebook-topic-list" class="notebook-topic-list note-page-outline"><div class="notebook-empty-small">Abra uma anotação para ver sua estrutura.</div></div>
 </aside>
 <main class="note-canvas">
  <header class="note-editor-identity"><div><div id="notebook-document-area" class="note-page-area">Área</div><h1 id="notebook-document-title">Tema</h1><div id="notebook-document-date" class="note-page-date"></div></div><div class="notebook-document-menu-wrap"><button id="notebook-document-menu-toggle" type="button">•••</button><div id="notebook-document-menu" class="notebook-document-menu" hidden><button id="notebook-document-edit" type="button">Editar</button><button id="notebook-document-delete" class="danger" type="button">Apagar</button></div></div></header><div id="notebook-toolbar" class="note-toolbar">
@@ -523,7 +523,7 @@
     }
   </style>
 
-  <script src="assets/js/caderno.js?v=23.4"></script>
+  <script src="assets/js/caderno.js?v=23.5"></script>
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
