@@ -2085,7 +2085,7 @@
       chatgpt_initial: "Revisão ChatGPT",
       blind_resolution: "Resolução cega",
       perplexity_initial: "Revisão independente ChatGPT",
-      chatgpt_adjudication: "Julgar parecer + corrigir",
+      chatgpt_adjudication: "Decisão/correção das pendências",
       chatgpt_correction: "Correção ChatGPT",
       perplexity_reaudit: "Revisão cega final",
       human_review: "Aprovação humana"
@@ -2215,6 +2215,7 @@
         const finalRejected = Number(flow?.reaudit_rejected_count || 0);
         const finalFailedCount = finalNeedsRevision + finalRejected;
         const finalReviewComplete = Number(flow?.reaudit_count || 0) >= Number(block?.target_size || 200);
+        const awaitingFinalDisposition = finalReviewComplete && finalFailedCount > 0;
         const nextStage = String(blockAction?.next?.next_stage || "");
         const independentChunkStage = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(nextStage);
         const independentActionLabel = nextStage === "perplexity_initial"
@@ -2234,11 +2235,11 @@
 
             ${finalReviewComplete && finalFailedCount > 0 ? `
               <div class="admin-qf-final-choice">
-                <strong>Etapa 6 concluída: ${finalFailedCount} questão${finalFailedCount === 1 ? "" : "ões"} não aprovada${finalFailedCount === 1 ? "" : "s"}</strong>
-                <small>${finalNeedsRevision} para revisar · ${finalRejected} rejeitada${finalRejected === 1 ? "" : "s"}. Escolha o destino final destes itens.</small>
+                <strong>Etapa 6 encerrada · ${finalFailedCount} questão${finalFailedCount === 1 ? "" : "ões"} pendente${finalFailedCount === 1 ? "" : "s"}</strong>
+                <small>${finalNeedsRevision} para revisar · ${finalRejected} rejeitada${finalRejected === 1 ? "" : "s"}. O bloco não volta sozinho para etapas anteriores. Escolha: corrigir estas pendências ou arquivá-las e gerar reposições.</small>
                 <div class="admin-qf-final-choice-actions">
-                  <button class="button primary" type="button" data-qf-final-fix="${Number(batch.batch_number)}:${n}">Copiar novo prompt para corrigir</button>
-                  <button class="button secondary" type="button" data-qf-final-discard="${Number(batch.batch_number)}:${n}" data-qf-final-discard-count="${finalFailedCount}">Apagar ${finalFailedCount} questão${finalFailedCount === 1 ? "" : "ões"}</button>
+                  <button class="button primary" type="button" data-qf-final-fix="${Number(batch.batch_number)}:${n}">Corrigir apenas as ${finalFailedCount} pendentes</button>
+                  <button class="button secondary" type="button" data-qf-final-discard="${Number(batch.batch_number)}:${n}" data-qf-final-discard-count="${finalFailedCount}">Arquivar e repor ${finalFailedCount}</button>
                 </div>
               </div>
             ` : ""}
@@ -2246,27 +2247,29 @@
             <button class="button secondary admin-qf-view-block-wide" type="button" data-qf-view-block="${Number(batch.batch_number)}:${n}">${needs || rejected ? "Ver pendências" : "Ver bloco"}</button>
             ${blockAction.provider === "perplexity" ? "" : `<button class="button secondary admin-qf-import-stage-wide" type="button" data-qf-import-stage="${Number(batch.batch_number)}:${n}">Importar etapa</button>`}
 
-            <div class="admin-qf-block-ai-action ${independentChunkStage ? "is-perplexity-manual" : ""}">
-              <small>${esc(blockAction.phase || "Etapa atual")}</small>
-              ${independentChunkStage ? `
-                <div class="admin-qf-perplexity-manual-actions">
-                  <button class="button primary" type="button" data-qf-copy-json-part="${Number(batch.batch_number)}:${n}:next">${esc(independentActionLabel)}</button>
-                  <button class="button secondary" type="button" data-qf-paste-stage-json="${Number(batch.batch_number)}:${n}">2 · Colar JSON de resposta</button>
-                </div>
-                <small class="admin-qf-perplexity-manual-help">${blockAction?.next?.next_stage === "blind_resolution"
-                  ? "O botão busca somente versões ainda sem resolução cega e copia prompt + JSON cegado. Gabarito, explicações, fontes e pareceres são removidos antes de ir para a área de transferência."
-                  : "O botão busca somente itens ainda pendentes desta etapa e copia, em um único pacote, o prompt + todas as questões pendentes do bloco, em um único pacote de até 200. Não há subdivisão de 50 em 50."}</small>
-              ` : blockAction.provider ? `
-                <button class="button primary" type="button" data-qf-copy-block-stage="${Number(batch.batch_number)}:${n}">Prompt</button>
-                <button class="button secondary" type="button" data-qf-block-ai="${Number(batch.batch_number)}:${n}">${esc("Copiar + abrir " + blockAction.providerLabel)}</button>
-              ` : blockAction?.next?.next_stage === "human_review" ? `
-                <button class="button secondary" type="button" disabled>Etapa sem prompt · aprovação humana</button>
-              ` : blockAction?.next?.next_stage === "block_complete" ? `
-                <button class="button secondary" type="button" disabled>Bloco concluído</button>
-              ` : `
-                <button class="button secondary" type="button" disabled>Prompt da etapa indisponível</button>
-              `}
-            </div>
+            ${!awaitingFinalDisposition ? `
+              <div class="admin-qf-block-ai-action ${independentChunkStage ? "is-perplexity-manual" : ""}">
+                <small>${esc(blockAction.phase || "Etapa atual")}</small>
+                ${independentChunkStage ? `
+                  <div class="admin-qf-perplexity-manual-actions">
+                    <button class="button primary" type="button" data-qf-copy-json-part="${Number(batch.batch_number)}:${n}:next">${esc(independentActionLabel)}</button>
+                    <button class="button secondary" type="button" data-qf-paste-stage-json="${Number(batch.batch_number)}:${n}">2 · Colar JSON de resposta</button>
+                  </div>
+                  <small class="admin-qf-perplexity-manual-help">${blockAction?.next?.next_stage === "blind_resolution"
+                    ? "O botão busca somente versões ainda sem resolução cega e copia prompt + JSON cegado. Gabarito, explicações, fontes e pareceres são removidos antes de ir para a área de transferência."
+                    : "O botão busca somente itens ainda pendentes desta etapa e copia, em um único pacote, o prompt + todas as questões pendentes do bloco, em um único pacote de até 200. Não há subdivisão de 50 em 50."}</small>
+                ` : blockAction.provider ? `
+                  <button class="button primary" type="button" data-qf-copy-block-stage="${Number(batch.batch_number)}:${n}">Prompt</button>
+                  <button class="button secondary" type="button" data-qf-block-ai="${Number(batch.batch_number)}:${n}">${esc("Copiar + abrir " + blockAction.providerLabel)}</button>
+                ` : blockAction?.next?.next_stage === "human_review" ? `
+                  <button class="button secondary" type="button" disabled>Etapa sem prompt · aprovação humana</button>
+                ` : blockAction?.next?.next_stage === "block_complete" ? `
+                  <button class="button secondary" type="button" disabled>Bloco concluído</button>
+                ` : `
+                  <button class="button secondary" type="button" disabled>Prompt da etapa indisponível</button>
+                `}
+              </div>
+            ` : ""}
 
             ${human === "pending" && blockAction?.next?.next_stage === "human_review" ? `
               <div class="admin-qf-human-gate">
@@ -2901,7 +2904,7 @@
       chatgpt_initial: { label: "2 · ChatGPT · revisão adversarial + autocorreção", provider: "chatgpt" },
       blind_resolution: { label: "3 · ChatGPT · resolução cega sem memória", provider: "chatgpt" },
       perplexity_initial: { label: "4 · ChatGPT · revisão independente do bloco", provider: "chatgpt" },
-      chatgpt_adjudication: { label: "5 · ChatGPT · julgar parecer + corrigir", provider: "chatgpt" },
+      chatgpt_adjudication: { label: "5 · ChatGPT · decidir/corrigir pendências", provider: "chatgpt" },
       chatgpt_correction: { label: "5 · ChatGPT · aplicar correções", provider: "chatgpt" },
       perplexity_reaudit: { label: "6 · ChatGPT · revisar cegamente as correções", provider: "chatgpt" },
       human_review: { label: "7 · Sua aprovação para o lote", provider: null },
@@ -3646,7 +3649,7 @@
       chatgpt_initial:"2 · ChatGPT · revisão adversarial + autocorreção",
       blind_resolution:afterCorrection ? "6 · ChatGPT · nova resolução cega sem memória" : "3 · ChatGPT · resolução cega sem memória",
       perplexity_initial:"4 · ChatGPT · revisão independente do bloco",
-      chatgpt_adjudication:"5 · ChatGPT · julgar parecer + corrigir",
+      chatgpt_adjudication:"5 · ChatGPT · decidir/corrigir pendências",
       chatgpt_correction:"5 · ChatGPT · aplicar correções",
       perplexity_reaudit:"6 · ChatGPT · revisar cegamente as correções"
     };
