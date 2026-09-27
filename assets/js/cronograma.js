@@ -9410,4 +9410,5 @@ if (window.docmapUser) {
     { once: true }
   );
 }
-\nif (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindReferenceCalendarControls); else bindReferenceCalendarControls();\n
+
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindReferenceCalendarControls); else bindReferenceCalendarControls();
