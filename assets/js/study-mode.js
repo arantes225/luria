@@ -66,7 +66,7 @@
       "Ginecologia e Obstetrícia",
       "Cirurgia Geral",
       "Pediatria",
-      "Preventiva"
+      "Medicina Preventiva"
     ],
 
   };
