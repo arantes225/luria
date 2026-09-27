@@ -415,3 +415,16 @@
   color:#fff!important;
   box-shadow:none!important;
 }
+
+/* v23.2 — heatmap compacto, padrão GitHub/referência */
+.activity-heatmap{margin-top:8px;max-width:520px}
+.activity-months{display:grid;grid-template-columns:28px repeat(12,12px);gap:4px;margin-bottom:4px;color:var(--muted);font-size:7px}.activity-months span{text-align:left;white-space:nowrap}
+.activity-grid{display:grid;grid-template-columns:28px repeat(12,12px);grid-auto-rows:12px;gap:4px;align-items:center}
+.activity-day{font-size:7px;color:var(--muted);line-height:12px}
+.activity-square{display:block;width:12px;height:12px;border-radius:2.5px;background:color-mix(in srgb,var(--accent) 4%,var(--surface-2));border:1px solid color-mix(in srgb,var(--border) 75%,transparent)}
+.activity-square.level-1{background:color-mix(in srgb,var(--accent) 16%,var(--surface))}
+.activity-square.level-2{background:color-mix(in srgb,var(--accent) 30%,var(--surface))}
+.activity-square.level-3{background:color-mix(in srgb,var(--accent) 48%,var(--surface))}
+.activity-square.level-4{background:color-mix(in srgb,var(--accent) 68%,var(--surface))}
+.activity-square.level-5{background:color-mix(in srgb,var(--accent) 88%,var(--surface))}
+.activity-legend{display:flex;align-items:center;gap:4px;margin-top:7px;margin-left:28px;color:var(--muted);font-size:7px}.activity-legend .activity-square{width:9px;height:9px;border-radius:2px}.activity-legend span:first-child{margin-right:2px}.activity-legend span:last-child{margin-left:2px}
