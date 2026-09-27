@@ -4944,9 +4944,18 @@ async function deleteErrorNotebook(area,name){
   setErrorLibraryStatus("Caderno excluído.","success");
   await Promise.all([loadErrorMetrics(),loadErrorAreas(),loadErrorLibrary(),loadErrorQueue()]);
 }
+function canonicalErrorArea(value){
+  const v=String(value||"").trim().toLowerCase();
+  if(v.includes("clínica")||v.includes("clinica"))return "Clínica Médica";
+  if(v.includes("gine")||v==="go"||v.includes("obst"))return "GO";
+  if(v.includes("cirurg"))return "Cirurgia Geral";
+  if(v.includes("pedi"))return "Pediatria";
+  if(v.includes("prevent"))return "Preventiva";
+  return value||"Sem área";
+}
 function editErrorNotebook(area,name){
-  const rows=errorLibraryItems.filter(i=>(i.area||"Sem área")===area && (i.materia||i.theme||"Geral")===name);
-  const select=document.getElementById("error-library-area");if(select)select.value=area;
+  const rows=errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area && (i.materia||i.theme||"Geral")===name);
+  const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalErrorArea(o.value)===area);select.value=exact?.value||""}
   const search=document.getElementById("error-library-search");if(search)search.value=name;
   renderErrorLibrary();
   setErrorLibraryStatus(`Caderno “${name}” aberto. Use o menu de cada nota para editar ou excluir.`,"success");
@@ -4963,7 +4972,7 @@ async function addErrorsToTodayReview(items,label="itens"){
   await loadErrorQueue();
 }
 function reviewErrorNotebook(area,name){
-  errorQueue=errorLibraryItems.filter(i=>(i.area||"Sem área")===area && (i.materia||i.theme||"Geral")===name);
+  errorQueue=errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area && (i.materia||i.theme||"Geral")===name);
   errorIndex=0; switchErrorTab("review"); renderCurrentError();
 }
 function closeNotebookMenus(except=null){
@@ -5003,12 +5012,12 @@ function renderErrorLibrary() {
     </section>`}).join("");
   renderErrorHomeExtras();updateErrorBulkToolbar();
   container.querySelectorAll("[data-error-area-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const area=button.dataset.errorAreaMore;document.querySelectorAll("[data-error-area-menu]").forEach(m=>{if(m.dataset.errorAreaMenu!==area)m.hidden=true});const menu=container.querySelector(`[data-error-area-menu="${CSS.escape(area)}"]`);if(menu)menu.hidden=!menu.hidden}));
-  container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalArea(i.area)===area),area));shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>{errorQueue=errorLibraryItems.filter(i=>canonicalArea(i.area)===area);errorIndex=0;switchErrorTab("review");renderCurrentError()});shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||""}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
+  container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area),area));shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>{errorQueue=errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area);errorIndex=0;switchErrorTab("review");renderCurrentError()});shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||""}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
   container.querySelectorAll("[data-error-notebook-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const key=button.dataset.errorNotebookMore;const menu=container.querySelector(`[data-error-notebook-menu="${CSS.escape(key)}"]`);const opening=menu?.hidden;closeNotebookMenus();if(menu)menu.hidden=!opening}));
   container.querySelectorAll("[data-error-notebook]").forEach(card=>{
     const [area,name]=card.dataset.errorNotebook.split("||");
     card.addEventListener("click",event=>{if(event.target.closest(".error-notebook-menu,.error-notebook-more"))return;editErrorNotebook(area,name)});
-    card.querySelector("[data-notebook-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalArea(i.area)===area&&(i.materia||i.theme||"Geral")===name),name));
+    card.querySelector("[data-notebook-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area&&(i.materia||i.theme||"Geral")===name),name));
     card.querySelector("[data-notebook-review]")?.addEventListener("click",()=>reviewErrorNotebook(area,name));
     card.querySelector("[data-notebook-edit]")?.addEventListener("click",()=>editErrorNotebook(area,name));
     card.querySelector("[data-notebook-delete]")?.addEventListener("click",()=>deleteErrorNotebook(area,name));
