@@ -1724,6 +1724,32 @@ optgroup {
   font-style: normal !important;
 }
 
+/* LURIA — tipografia oficial em toda a interface.
+   Exceções: conteúdo autoral editável e blocos técnicos/monospace. */
+body :where(
+  div, span, p, a, button, input, select, textarea, optgroup, option,
+  label, small, strong, b, em, i, h1, h2, h3, h4, h5, h6,
+  ul, ol, li, table, thead, tbody, tfoot, tr, th, td,
+  nav, aside, header, footer, main, section, article, dialog, summary,
+  fieldset, legend
+) {
+  font-family: var(--font-ui) !important;
+}
+
+body :where(code, pre, kbd, samp),
+body :where(code, pre, kbd, samp) * {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
+}
+
+body [contenteditable="true"],
+body [contenteditable="true"] *,
+body .note-editor-content,
+body .note-editor-content *,
+body .caderno-editor-content,
+body .caderno-editor-content * {
+  font-family: inherit !important;
+}
+
 /* LURIA — SIDEBAR GLOBAL */
 .sidebar .brand .brand-copy strong {
   font-size: 20.7px !important;
