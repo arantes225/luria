@@ -1149,11 +1149,12 @@ async function startReviewSession() {
 
   setFlashStatus("review-status", "");
 
-  const {
-    data,
-    error
-  } =
-    await flashSb.rpc(
+  // A revisão não pode depender da telemetria de tempo.
+  // Se a RPC de sessão falhar, abre os cards normalmente e apenas
+  // deixa o registro de tempo indisponível nesta sessão.
+  let sessionData = null;
+  try {
+    const result = await flashSb.rpc(
       "start_study_session",
       {
         p_activity_kind: "flashcards",
@@ -1162,26 +1163,17 @@ async function startReviewSession() {
         p_materia: commonReviewValue("materia")
       }
     );
-
-  if (error) {
-    console.error(error);
-
-    if (button) {
-      button.disabled = false;
-      button.textContent = "Iniciar revisão";
+    if (result?.error) {
+      console.warn("Contagem de tempo indisponível; revisão continuará:", result.error);
+    } else {
+      sessionData = result?.data || null;
     }
-
-    setFlashStatus(
-      "review-status",
-      `Não foi possível iniciar a contagem de tempo: ${error.message}`,
-      "error"
-    );
-
-    return;
+  } catch (error) {
+    console.warn("Contagem de tempo indisponível; revisão continuará:", error);
   }
 
   reviewStudySessionId =
-    data?.id || null;
+    sessionData?.id || null;
 
   reviewSessionStartedAt =
     Date.now();
