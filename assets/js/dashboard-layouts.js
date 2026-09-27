@@ -55,10 +55,28 @@
     };
   };
 
-  function greeting() {
+  function dashboardFirstName() {
     let profile;
     try { profile = JSON.parse(localStorage.getItem(`docmap:profile:${window.docmapUser?.id}`) || "null"); } catch {}
-    const name = (profile?.display_name || window.docmapUser?.user_metadata?.display_name || "").trim().split(/\s+/)[0];
+    return (profile?.display_name || window.docmapUser?.user_metadata?.display_name || "").trim().split(/\s+/)[0];
+  }
+
+  function dashboardGreetingTitle() {
+    const name = dashboardFirstName();
+    return `Olá${name ? `, ${name}` : ""}!`;
+  }
+
+  function syncDashboardHeading() {
+    const heading = topbar?.querySelector(".page-heading");
+    if (!heading) return;
+    const eyebrow = heading.querySelector("[data-page-eyebrow]");
+    const title = heading.querySelector("[data-page-title]");
+    if (eyebrow) eyebrow.textContent = "SEU PAINEL DE ESTUDOS";
+    if (title) title.textContent = dashboardGreetingTitle();
+  }
+
+  function greeting() {
+    const name = dashboardFirstName();
     return `<header class="dl-greeting"><div><span class="dl-eyebrow">SEU PAINEL DE ESTUDOS</span><h2>Olá${name ? `, ${escape(name)}` : ""}!</h2><p>Vamos em frente hoje? Consistência é o que transforma.</p></div></header>`;
   }
 
@@ -354,8 +372,11 @@
       const data = snap();
       const html = current === "5"
         ? layout5(data)
-        : greeting() + ({ "1": layout1, "2": layout2, "3": layout3, "4": layout4 }[current])(data);
+        : current === "4"
+          ? layout4(data)
+          : greeting() + ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
       if (html) root.innerHTML = html;
+      syncDashboardHeading();
       root.hidden = false;
       root.dataset.rendered = "true";
     } catch (error) {
