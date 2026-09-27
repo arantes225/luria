@@ -3755,6 +3755,7 @@
 
   function questionFactoryPendingForStage(question, stage) {
     const currentStage = String(stage || "");
+    if (String(question?.status || "") === "ready") return false;
     if (currentStage === "blind_resolution") {
       return !(question?.blind_resolution && typeof question.blind_resolution === "object" && question.blind_resolution.quality_score != null);
     }
