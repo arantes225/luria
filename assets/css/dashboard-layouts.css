@@ -568,7 +568,8 @@ body[data-dashboard-layout="1"] .main,
 body[data-dashboard-layout="2"] .main,
 body[data-dashboard-layout="3"] .main,
 body[data-dashboard-layout="4"] .main{
-  background-color:var(--bg)!important;
+  background:transparent!important;
+  background-image:none!important;
 }
 
 body[data-dashboard-layout="1"] .page,

@@ -355,7 +355,7 @@
     }
     .luria-profile-top { position:relative; display:flex; align-items:center; }
     .luria-profile-toggle {
-      width:40px;height:40px;border:1px solid var(--border);border-radius:50%;
+      width:52px;height:52px;border:1px solid var(--border);border-radius:50%;
       display:grid;place-items:center;background:var(--surface);color:var(--accent);
       font:900 16px/1 inherit;cursor:pointer;
     }
@@ -386,12 +386,12 @@
       align-items:center;
     }
     .luria-pomodoro-toggle {
-      min-width:132px;
-      height:40px;
+      min-width:172px;
+      height:52px;
       display:flex;
       align-items:center;
-      gap:9px;
-      padding:0 13px;
+      gap:12px;
+      padding:0 17px;
       border:1px solid var(--border);
       border-radius:11px;
       background:var(--surface);
@@ -407,40 +407,40 @@
       color:var(--accent);
     }
     .luria-pomodoro-icon {
-      width:24px;height:24px;display:grid;place-items:center;flex:0 0 24px;
+      width:31px;height:31px;display:grid;place-items:center;flex:0 0 31px;
     }
     .luria-pomodoro-icon svg {
-      width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;
+      width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:1.8;
       stroke-linecap:round;stroke-linejoin:round;
     }
     .luria-pomodoro-copy { display:grid; line-height:1.05; }
-    .luria-pomodoro-copy strong { font-size:11.5px; font-weight:850; }
-    .luria-pomodoro-copy small { margin-top:2px; font-size:10.5px; color:var(--muted); font-weight:850; }
+    .luria-pomodoro-copy strong { font-size:15px; font-weight:850; }
+    .luria-pomodoro-copy small { margin-top:2px; font-size:13.5px; color:var(--muted); font-weight:850; }
 
     .luria-notification-toggle,
     .luria-profile-toggle {
-      width:40px !important;
-      height:40px !important;
-      min-width:40px !important;
-      border-radius:11px !important;
+      width:52px !important;
+      height:52px !important;
+      min-width:52px !important;
+      border-radius:14px !important;
     }
 
     .luria-notification-toggle svg {
-      width:19px !important;
-      height:19px !important;
+      width:25px !important;
+      height:25px !important;
     }
 
     .luria-profile-toggle {
       border:1px solid var(--border) !important;
       background:var(--surface) !important;
       color:var(--accent) !important;
-      font:900 19.2px/1 inherit !important;
+      font:900 25px/1 inherit !important;
     }
 
     .luria-pomodoro-panel {
       position:absolute;
       right:0;
-      top:48px;
+      top:60px;
       z-index:420;
       width:220px;
       padding:14px;
@@ -530,8 +530,8 @@
     }
 
     #luria-notification-toggle svg {
-      width:29.6px !important;
-      height:29.6px !important;
+      width:38px !important;
+      height:38px !important;
     }
 
     /* Afastar Pomodoro e sino do perfil */
@@ -540,7 +540,7 @@
 
     @media(max-width:760px){
       .luria-notifications{gap:9px!important}
-      .luria-pomodoro-toggle{min-width:96px;padding:0 8px}
+      .luria-pomodoro-toggle{min-width:125px;height:52px;padding:0 10px}
       .luria-pomodoro-copy strong{display:none}
       .luria-pomodoro-copy small{margin:0;font-size:10px}
     }
@@ -2681,128 +2681,6 @@ function prepararSidebarDesktop(
     }
   );
 }
-
-
-function prepararStudyMenu(
-  userId
-) {
-  const group =
-    document.getElementById(
-      "study-nav-group"
-    );
-
-  const toggle =
-    document.getElementById(
-      "study-nav-toggle"
-    );
-
-  const submenu =
-    document.getElementById(
-      "study-nav-submenu"
-    );
-
-  if (
-    !group
-    || !toggle
-    || !submenu
-  ) {
-    return;
-  }
-
-  const pageInsideStudy =
-    [
-      "caderno",
-      "flashcards",
-      "erros",
-      "questoes",
-      "plantao"
-    ].includes(
-      page
-    );
-
-  let open =
-    pageInsideStudy;
-
-  try {
-    const saved =
-      localStorage.getItem(
-        studyNavKey(
-          userId
-        )
-      );
-
-    if (
-      saved !== null
-    ) {
-      open =
-        saved === "1";
-    }
-  } catch {}
-
-  const apply =
-    (nextOpen) => {
-      group.classList.toggle(
-        "nav-group-collapsed",
-        !nextOpen
-      );
-
-      submenu.hidden =
-        !nextOpen;
-
-      toggle.setAttribute(
-        "aria-expanded",
-        nextOpen
-          ? "true"
-          : "false"
-      );
-
-      try {
-        localStorage.setItem(
-          studyNavKey(
-            userId
-          ),
-          nextOpen
-            ? "1"
-            : "0"
-        );
-      } catch {}
-    };
-
-  apply(
-    open
-  );
-
-  toggle.addEventListener(
-    "click",
-    (event) => {
-      event.preventDefault();
-
-      apply(
-        toggle.getAttribute(
-          "aria-expanded"
-        ) !== "true"
-      );
-    }
-  );
-
-  submenu
-    .querySelectorAll(
-      ".nav-sublink"
-    )
-    .forEach(
-      (link) => {
-        link.addEventListener(
-          "click",
-          () => {
-            apply(
-              false
-            );
-          }
-        );
-      }
-    );
-}
-
 
 
 function prepararWorkManagementMenu(userId) {
@@ -5254,9 +5132,6 @@ async function iniciarApp() {
   prepararSidebarDesktop(
     user.id
   );
-  prepararStudyMenu(
-    user.id
-  );
   prepararWorkManagementMenu(
     user.id
   );
@@ -5353,9 +5228,6 @@ async function iniciarApp() {
 
         prepararMobileMenu();
         prepararSidebarDesktop(
-          user.id
-        );
-        prepararStudyMenu(
           user.id
         );
         prepararWorkManagementMenu(

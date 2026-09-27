@@ -6,17 +6,7 @@ html:not([data-theme]):has(body[data-page="trabalho_dashboard"]){
 }
 body[data-page="trabalho_dashboard"]{background:var(--bg)}
 body[data-page="trabalho_dashboard"] .main{
-  position:relative;isolation:isolate;padding:0 28px 40px;background:var(--bg);overflow-x:hidden;
-}
-body[data-page="trabalho_dashboard"] .main::before,
-body[data-page="trabalho_dashboard"] .main::after{
-  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
-  background-image:var(--luria-pattern-image);background-repeat:repeat;
-  background-size:var(--luria-pattern-size) var(--luria-pattern-size);
-  transform:rotate(-8deg) scale(1.08);transform-origin:center;opacity:var(--luria-pattern-opacity);
-}
-body[data-page="trabalho_dashboard"] .main::after{
-  background-position:calc(var(--luria-pattern-size)/2) calc(var(--luria-pattern-size)/2);
+  position:relative;isolation:isolate;padding:0 28px 40px;background:transparent;overflow-x:hidden;
 }
 body[data-page="trabalho_dashboard"] .page{max-width:1500px}
 body[data-page="trabalho_dashboard"] .topbar{

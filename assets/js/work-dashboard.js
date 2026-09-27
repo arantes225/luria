@@ -165,7 +165,6 @@
   buttons.forEach(btn=>btn.addEventListener("click",()=>render(btn.dataset.workLayout)));
   const nameEl=$("work-dashboard-name");
   if(nameEl) nameEl.textContent=`${greeting()}, ${userName()}`;
-  const dateEl=$("work-dashboard-date"); if(dateEl) dateEl.textContent=formatDate();
   cleanWorkTopbar();
   render(readLayout());
   window.addEventListener("docmap:ready",()=>{

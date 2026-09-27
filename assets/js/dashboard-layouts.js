@@ -43,7 +43,7 @@
     let profile;
     try { profile = JSON.parse(localStorage.getItem(`docmap:profile:${window.docmapUser?.id}`) || "null"); } catch {}
     const name = (profile?.display_name || window.docmapUser?.user_metadata?.display_name || "").trim().split(/\s+/)[0];
-    return `<header class="dl-greeting"><div><span class="dl-eyebrow">SEU PAINEL DE ESTUDOS</span><h2>Olá${name ? `, ${escape(name)}` : ""}!</h2><p>Vamos em frente hoje? Consistência é o que transforma.</p></div><time datetime="${dayISO(new Date())}">${escape(readableDate(new Date()))}</time></header>`;
+    return `<header class="dl-greeting"><div><span class="dl-eyebrow">SEU PAINEL DE ESTUDOS</span><h2>Olá${name ? `, ${escape(name)}` : ""}!</h2><p>Vamos em frente hoje? Consistência é o que transforma.</p></div></header>`;
   }
 
   // Ícones vetoriais nos traços e cores das quatro referências.
