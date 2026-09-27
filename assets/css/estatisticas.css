@@ -669,3 +669,24 @@
  [data-stats-panel="questoes"] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
  .qeh-squares{grid-template-columns:repeat(14,11px)}
 }
+
+/* v24.5 — insights neutros: sem preenchimento colorido, gradiente ou efeitos */
+[data-stats-panel] .insights .insight,
+[data-stats-panel]:not([data-stats-panel="geral"]) .insight,
+.error-ref-insights .insight{
+  position:static!important;
+  overflow:visible!important;
+  background:var(--surface)!important;
+  background-image:none!important;
+  border:1px solid var(--border)!important;
+  box-shadow:none!important;
+  filter:none!important;
+  transform:none!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+[data-stats-panel] .insights .insight::before,
+[data-stats-panel] .insights .insight::after{
+  content:none!important;
+  display:none!important;
+}
