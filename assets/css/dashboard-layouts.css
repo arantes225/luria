@@ -753,23 +753,16 @@ body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::after
    Composição fiel à referência enviada pelo usuário.
    ========================================================= */
 body[data-dashboard-layout="5"] .main{
-  padding:0!important;
-  background:var(--bg)!important;
+  padding-bottom:16px!important;
 }
-body[data-dashboard-layout="5"] .main::before,
-body[data-dashboard-layout="5"] .main::after{display:none!important}
-body[data-dashboard-layout="5"] .page{max-width:none!important;padding:0!important}
+body[data-dashboard-layout="5"] .page{max-width:none!important}
 body[data-dashboard-layout="5"] #dashboard-alternative{padding:0!important}
-body[data-dashboard-layout="5"] .topbar{display:none!important}
 
 .dl5-shell{
   min-height:100%;
   padding:16px 22px 28px;
   color:var(--text);
-  background:
-    radial-gradient(circle at 18% 8%,color-mix(in srgb,var(--accent) 6%,transparent),transparent 30%),
-    radial-gradient(circle at 87% 18%,color-mix(in srgb,#69c7ff 6%,transparent),transparent 28%),
-    var(--bg);
+  background:transparent;
 }
 .dl5-top{
   display:grid;
