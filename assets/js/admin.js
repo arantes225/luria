@@ -4505,6 +4505,10 @@
       const finalFixButton = event.target.closest("[data-qf-final-fix]");
       if (finalFixButton) {
         const [batch, block] = finalFixButton.dataset.qfFinalFix.split(":");
+        // Etapa 6 pode ter acabado de devolver itens para a Etapa 5. Recarregue
+        // o tracker antes de montar o pacote para não copiar novamente um prompt
+        // de reauditoria já concluída.
+        await loadQuestionFactoryBlockTracker();
         await copyQuestionFactoryBlockStagePrompt(batch, block, finalFixButton);
         return;
       }
