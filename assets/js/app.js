@@ -454,6 +454,75 @@
       min-height:36px;border:1px solid var(--border);border-radius:9px;background:var(--surface-2);
       color:var(--text);font-weight:800;
     }
+    .luria-pomodoro-modes {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:7px;
+      margin-top:12px;
+    }
+    .luria-pomodoro-modes button {
+      min-height:34px;
+      border:1px solid var(--border);
+      border-radius:9px;
+      background:var(--surface-2);
+      color:var(--muted);
+      font-weight:800;
+      cursor:pointer;
+    }
+    .luria-pomodoro-modes button[aria-pressed="true"] {
+      border-color:var(--accent);
+      background:var(--accent);
+      color:#fff;
+    }
+    .luria-pomodoro-fields {
+      display:grid;
+      gap:8px;
+      margin:10px 0 12px;
+    }
+    .luria-pomodoro-fields label {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      color:var(--muted);
+      font-size:11px;
+      font-weight:700;
+    }
+    .luria-pomodoro-fields label > span:last-child {
+      display:flex;
+      align-items:center;
+      gap:5px;
+    }
+    .luria-pomodoro-fields input {
+      width:58px;
+      min-height:32px;
+      padding:4px 6px;
+      border:1px solid var(--border);
+      border-radius:8px;
+      background:var(--surface);
+      color:var(--text);
+      text-align:center;
+      font:inherit;
+    }
+    .luria-pomodoro-save {
+      width:100%;
+      min-height:36px;
+      margin-top:8px;
+      border:1px solid var(--accent);
+      border-radius:9px;
+      background:var(--accent);
+      color:#fff;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .luria-pomodoro-status {
+      display:block;
+      min-height:15px;
+      margin-top:7px;
+      color:var(--muted);
+      font-size:10px;
+      line-height:1.35;
+    }
 
     /* Afastar Pomodoro e sino do perfil */
     .luria-pomodoro-top { margin-right:2px; }
@@ -2839,11 +2908,32 @@ function ensureNotificationCenter() {
             <small id="luria-pomodoro-state-label">Foco</small>
           </div>
         </header>
+
+        <div class="luria-pomodoro-modes" role="group" aria-label="Etapa do Pomodoro">
+          <button type="button" data-luria-pomodoro-mode="focus" aria-pressed="true">Foco</button>
+          <button type="button" data-luria-pomodoro-mode="break" aria-pressed="false">Pausa</button>
+        </div>
+
         <div id="luria-pomodoro-time" class="luria-pomodoro-time">25:00</div>
+
+        <div class="luria-pomodoro-fields">
+          <label>
+            <span>Foco</span>
+            <span><input id="luria-pomodoro-focus-minutes" type="number" min="1" max="240" step="1" value="25"> min</span>
+          </label>
+          <label>
+            <span>Pausa</span>
+            <span><input id="luria-pomodoro-break-minutes" type="number" min="1" max="120" step="1" value="5"> min</span>
+          </label>
+        </div>
+
         <div class="luria-pomodoro-actions">
           <button id="luria-pomodoro-start" type="button">Iniciar</button>
           <button id="luria-pomodoro-reset" type="button">Reiniciar</button>
         </div>
+
+        <button id="luria-pomodoro-save" class="luria-pomodoro-save" type="button">Salvar durações</button>
+        <small id="luria-pomodoro-status" class="luria-pomodoro-status" role="status" aria-live="polite"></small>
       </section>
     </div>
 
@@ -2948,11 +3038,20 @@ function ensureNotificationCenter() {
   const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
   const pomodoroMiniTime = document.getElementById("luria-pomodoro-mini-time");
   const pomodoroTime = document.getElementById("luria-pomodoro-time");
+  const pomodoroStateLabel = document.getElementById("luria-pomodoro-state-label");
   const pomodoroStart = document.getElementById("luria-pomodoro-start");
   const pomodoroReset = document.getElementById("luria-pomodoro-reset");
-  let pomodoroRemaining = 25 * 60;
+  const pomodoroSave = document.getElementById("luria-pomodoro-save");
+  const pomodoroStatus = document.getElementById("luria-pomodoro-status");
+  const pomodoroFocusInput = document.getElementById("luria-pomodoro-focus-minutes");
+  const pomodoroBreakInput = document.getElementById("luria-pomodoro-break-minutes");
+  const pomodoroModes = [...document.querySelectorAll("[data-luria-pomodoro-mode]")];
+
+  const pomodoroDurations = { focus: 25, break: 5 };
+  let pomodoroMode = "focus";
+  let pomodoroRemaining = pomodoroDurations.focus * 60;
+  let pomodoroDeadline = 0;
   let pomodoroTimer = null;
-  let pomodoroRunning = false;
 
   const renderPomodoro = () => {
     const m = String(Math.floor(pomodoroRemaining / 60)).padStart(2, "0");
@@ -2960,13 +3059,39 @@ function ensureNotificationCenter() {
     const label = m + ":" + s;
     if (pomodoroMiniTime) pomodoroMiniTime.textContent = label;
     if (pomodoroTime) pomodoroTime.textContent = label;
-    if (pomodoroStart) pomodoroStart.textContent = pomodoroRunning ? "Pausar" : "Iniciar";
+    if (pomodoroStateLabel) pomodoroStateLabel.textContent = pomodoroMode === "focus" ? "Foco" : "Pausa";
+    if (pomodoroStart) pomodoroStart.textContent = pomodoroTimer ? "Pausar" : "Iniciar";
+    pomodoroModes.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === pomodoroMode));
+    });
   };
 
   const stopPomodoro = () => {
     if (pomodoroTimer) clearInterval(pomodoroTimer);
     pomodoroTimer = null;
-    pomodoroRunning = false;
+    pomodoroDeadline = 0;
+    renderPomodoro();
+  };
+
+  const tickPomodoro = () => {
+    pomodoroRemaining = Math.max(0, Math.ceil((pomodoroDeadline - Date.now()) / 1000));
+    renderPomodoro();
+    if (pomodoroRemaining === 0) {
+      stopPomodoro();
+      if (pomodoroStatus) {
+        pomodoroStatus.textContent = pomodoroMode === "focus"
+          ? "Foco concluído. Inicie a pausa."
+          : "Pausa concluída. Volte ao foco.";
+      }
+    }
+  };
+
+  const selectPomodoroMode = (nextMode) => {
+    if (!["focus","break"].includes(nextMode)) return;
+    stopPomodoro();
+    pomodoroMode = nextMode;
+    pomodoroRemaining = pomodoroDurations[pomodoroMode] * 60;
+    if (pomodoroStatus) pomodoroStatus.textContent = "";
     renderPomodoro();
   };
 
@@ -2977,25 +3102,90 @@ function ensureNotificationCenter() {
     pomodoroToggle.setAttribute("aria-expanded", String(open));
   });
 
+  pomodoroModes.forEach((button) => {
+    button.addEventListener("click", () => selectPomodoroMode(button.dataset.luriaPomodoroMode));
+  });
+
   pomodoroStart?.addEventListener("click", () => {
-    if (pomodoroRunning) {
+    if (pomodoroTimer) {
+      tickPomodoro();
       stopPomodoro();
       return;
     }
-    pomodoroRunning = true;
+    if (pomodoroRemaining === 0) pomodoroRemaining = pomodoroDurations[pomodoroMode] * 60;
+    pomodoroDeadline = Date.now() + pomodoroRemaining * 1000;
+    pomodoroTimer = setInterval(tickPomodoro, 250);
     renderPomodoro();
-    pomodoroTimer = setInterval(() => {
-      pomodoroRemaining = Math.max(0, pomodoroRemaining - 1);
-      renderPomodoro();
-      if (pomodoroRemaining === 0) stopPomodoro();
-    }, 1000);
+    tickPomodoro();
   });
 
   pomodoroReset?.addEventListener("click", () => {
-    stopPomodoro();
-    pomodoroRemaining = 25 * 60;
-    renderPomodoro();
+    selectPomodoroMode(pomodoroMode);
   });
+
+  const loadPomodoroConfig = async () => {
+    if (!window.docmapUser?.id || !window.supabaseClient) return;
+    const { data, error } = await window.supabaseClient
+      .from("user_settings")
+      .select("pomodoro_focus_minutes,pomodoro_break_minutes")
+      .eq("user_id", window.docmapUser.id)
+      .maybeSingle();
+
+    if (error) {
+      if (pomodoroStatus) pomodoroStatus.textContent = "Não foi possível carregar as durações.";
+      return;
+    }
+
+    pomodoroDurations.focus = Math.min(240, Math.max(1, Number(data?.pomodoro_focus_minutes) || 25));
+    pomodoroDurations.break = Math.min(120, Math.max(1, Number(data?.pomodoro_break_minutes) || 5));
+    if (pomodoroFocusInput) pomodoroFocusInput.value = pomodoroDurations.focus;
+    if (pomodoroBreakInput) pomodoroBreakInput.value = pomodoroDurations.break;
+    if (!pomodoroTimer) {
+      pomodoroRemaining = pomodoroDurations[pomodoroMode] * 60;
+      renderPomodoro();
+    }
+  };
+
+  pomodoroSave?.addEventListener("click", async () => {
+    const focus = Number(pomodoroFocusInput?.value);
+    const pause = Number(pomodoroBreakInput?.value);
+
+    if (!Number.isInteger(focus) || focus < 1 || focus > 240 || !Number.isInteger(pause) || pause < 1 || pause > 120) {
+      if (pomodoroStatus) pomodoroStatus.textContent = "Foco: 1–240 min; pausa: 1–120 min.";
+      return;
+    }
+
+    if (!window.docmapUser?.id || !window.supabaseClient) {
+      if (pomodoroStatus) pomodoroStatus.textContent = "Entre na sua conta para salvar.";
+      return;
+    }
+
+    pomodoroSave.disabled = true;
+    if (pomodoroStatus) pomodoroStatus.textContent = "Salvando...";
+
+    const { error } = await window.supabaseClient
+      .from("user_settings")
+      .upsert({
+        user_id: window.docmapUser.id,
+        pomodoro_focus_minutes: focus,
+        pomodoro_break_minutes: pause
+      }, { onConflict: "user_id" });
+
+    pomodoroSave.disabled = false;
+
+    if (error) {
+      if (pomodoroStatus) pomodoroStatus.textContent = "Não foi possível salvar as durações.";
+      return;
+    }
+
+    pomodoroDurations.focus = focus;
+    pomodoroDurations.break = pause;
+    selectPomodoroMode(pomodoroMode);
+    if (pomodoroStatus) pomodoroStatus.textContent = "Durações salvas.";
+  });
+
+  if (window.docmapUser?.id) loadPomodoroConfig();
+  else window.addEventListener("docmap:ready", loadPomodoroConfig, { once: true });
 
   renderPomodoro();
 
