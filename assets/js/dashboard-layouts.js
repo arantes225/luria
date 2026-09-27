@@ -138,15 +138,6 @@
       topbar?.querySelector(".dl-avatar")?.remove();
       return;
     }
-    if (current !== "old") {
-      const notesLink = document.querySelector('.sidebar .nav a[href="/caderno/"]');
-      if (notesLink) notesLink.textContent = "Anotações";
-      const examsLink = document.querySelector('.sidebar .nav a[href="/editais/"]');
-      const examsLabel = examsLink?.lastElementChild;
-      if (examsLabel) examsLabel.textContent = "Editais e Provas";
-      const planLabel = document.querySelector(".sidebar .user-copy small");
-      if (planLabel && window.docmapPlan) planLabel.textContent = `Plano ${window.docmapPlan === "essential" ? "Básico" : window.docmapPlan === "plus" ? "Plus" : window.docmapPlan === "pro" ? "Pro" : "Admin"}`;
-    }
     if (!topbar || document.getElementById("dl-topbar-controls")) {
       const avatar = topbar?.querySelector(".dl-avatar");
       if (avatar) avatar.textContent = (document.querySelector(".sidebar .user-avatar")?.textContent || "U").trim();
