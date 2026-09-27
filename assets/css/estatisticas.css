@@ -379,3 +379,39 @@
 .error-aging-bar{display:flex;height:24px;margin:10px 0 8px;border-radius:4px;overflow:hidden;background:var(--surface-2)}.error-aging-bar span{background:var(--accent);border-right:1px solid rgba(255,255,255,.7)}.error-aging-bar span:nth-child(2){opacity:.78}.error-aging-bar span:nth-child(3){opacity:.55}.error-aging-bar span:nth-child(4){opacity:.32}.error-aging-bar+p{font-size:7px;color:var(--muted);line-height:1.4;margin:0}
 .error-status{font-size:7px;font-weight:800}.error-status.danger{color:var(--danger,#e34b62)}.error-status.ok{color:#15956b}
 @media(max-width:900px){.error-ref-summary{grid-template-columns:repeat(2,minmax(0,1fr))!important}.error-ref-card,.error-ref-critical,.error-ref-insights{grid-column:span 12!important}}
+
+/* v23.1 — switch Estatísticas no padrão LURIA / Cronograma */
+.stats-tabs-shell{
+  display:inline-flex!important;
+  width:auto!important;
+  justify-self:start!important;
+  padding:3px!important;
+  border:0!important;
+  border-radius:8px!important;
+  background:var(--surface-2)!important;
+  overflow:auto!important;
+}
+.stats-tabs{
+  display:flex!important;
+  min-width:max-content!important;
+  gap:3px!important;
+}
+.stats-tab{
+  min-width:auto!important;
+  height:24px!important;
+  min-height:24px!important;
+  padding:0 10px!important;
+  border:0!important;
+  border-radius:6px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  font-weight:750!important;
+  box-shadow:none!important;
+  white-space:nowrap!important;
+}
+.stats-tab.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
