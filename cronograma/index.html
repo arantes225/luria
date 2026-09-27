@@ -2785,6 +2785,17 @@
     }
   }
 
+
+  /* Cabeçalho funcional: meta semanal */
+  body:not(.schedule-settings-embed) .reference-cronograma-head{display:none!important}
+  .agenda-week-goal-banner{display:grid;grid-template-columns:minmax(230px,1.05fr) minmax(390px,1.45fr) auto;align-items:center;gap:18px;margin:0 0 12px;padding:13px 15px;border:1px solid var(--border);border-radius:14px;background:var(--surface);box-shadow:0 3px 14px rgba(20,48,84,.035)}
+  .agenda-week-goal-copy{display:grid;grid-template-columns:31px 1fr;gap:10px;align-items:start;min-width:0}.agenda-goal-target{width:31px;height:31px;display:grid;place-items:center;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-size:20px;font-weight:900}.agenda-week-goal-copy strong{display:block;font-size:11px}.agenda-week-goal-copy small{display:block;margin-top:2px;color:var(--muted);font-size:7px}
+  .agenda-goal-progress-line{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;margin-top:9px}.agenda-goal-progress-line>span{height:7px;border-radius:999px;background:var(--surface-2);overflow:hidden}.agenda-goal-progress-line i{display:block;width:0;height:100%;border-radius:inherit;background:var(--accent);transition:width .25s ease}.agenda-goal-progress-line b{font-size:9px}.agenda-week-goal-copy em{display:block;margin-top:4px;color:var(--muted);font-size:7px;font-style:normal}
+  .agenda-goal-days{display:grid;grid-template-columns:repeat(7,minmax(34px,1fr));gap:7px;border-left:1px solid var(--border);padding-left:16px}.agenda-goal-day{text-align:center;display:grid;justify-items:center;gap:3px}.agenda-goal-day span{font-size:6px;font-weight:800;color:var(--muted)}.agenda-goal-day strong{font-size:7px}.agenda-goal-day i{width:24px;height:24px;border:1.5px solid var(--border);border-radius:50%;background:var(--surface);position:relative}.agenda-goal-day.done i{background:#dff6e9;border-color:#67c68f}.agenda-goal-day.done i::after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#2fa866;font-size:11px;font-weight:900}.agenda-goal-day.current i{border:2px solid var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}.agenda-goal-day.has-progress:not(.done):not(.current) i{background:color-mix(in srgb,var(--accent) 12%,var(--surface));border-color:color-mix(in srgb,var(--accent) 35%,var(--border))}.agenda-goal-day small{font-size:6px;color:var(--muted)}
+  .agenda-week-goal-banner .reference-new-activity{align-self:center;white-space:nowrap}
+  @media(max-width:1050px){.agenda-week-goal-banner{grid-template-columns:1fr auto}.agenda-goal-days{grid-column:1/-1;grid-row:2;border-left:0;border-top:1px solid var(--border);padding:10px 0 0}}
+  @media(max-width:620px){.agenda-week-goal-banner{grid-template-columns:1fr;padding:11px}.agenda-week-goal-banner .reference-new-activity{grid-row:2;width:100%}.agenda-goal-days{grid-row:3;gap:3px}.agenda-goal-day i{width:21px;height:21px}}
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3103,7 +3114,11 @@
             <div id="base-schedule-deck" class="base-schedule-deck"></div>
           </section>
 
-          <div class="reference-cronograma-head"><div><h1>Cronograma</h1><p>Organize seus estudos, visualize seus compromissos e mantenha o foco nos seus objetivos.</p></div><button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button></div>
+          <section class="agenda-week-goal-banner">
+  <div class="agenda-week-goal-copy"><span class="agenda-goal-target" aria-hidden="true">◎</span><div><strong>Meta da semana</strong><small id="agenda-goal-message">Conclua suas atividades e mantenha a consistência.</small><div class="agenda-goal-progress-line"><span><i id="agenda-goal-banner-bar"></i></span><b id="agenda-goal-banner-percent">0%</b></div><em id="agenda-goal-banner-copy">0 de 0 atividades concluídas</em></div></div>
+  <div id="agenda-goal-days" class="agenda-goal-days"><div class="agenda-goal-day" data-goal-day="0"><span>Seg</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="1"><span>Ter</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="2"><span>Qua</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="3"><span>Qui</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="4"><span>Sex</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="5"><span>Sáb</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="6"><span>Dom</span><strong>—</strong><i></i><small>0/0</small></div></div>
+  <button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button>
+</section>
 
           <div class="agenda-workspace agenda-reference-layout">
             <section class="planner-panel">
