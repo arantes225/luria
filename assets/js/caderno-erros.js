@@ -4006,13 +4006,10 @@ function switchErrorTab(
     );
 
 
-  if (
-    name === "create"
-  ) {
-    toggleNewErrorForm(
-      true
-    );
-  }
+  if (name === "create") { toggleNewErrorForm(true); }
+  document.querySelector(".error-home-head")?.toggleAttribute("hidden", name !== "library");
+  document.querySelector(".error-featured")?.toggleAttribute("hidden", name !== "library");
+  document.querySelector(".error-home-layout")?.toggleAttribute("hidden", name !== "library");
 
 
   if (
@@ -5050,549 +5047,76 @@ async function importErrorRows() {
 }
 
 
-function renderErrorLibrary() {
-  const container =
-    document.getElementById(
-      "error-library"
-    );
-
-
-  const empty =
-    document.getElementById(
-      "error-library-empty"
-    );
-
-
-  const count =
-    document.getElementById(
-      "error-library-count"
-    );
-
-
-  if (
-    !container
-    || !empty
-    || !count
-  ) {
-    return;
-  }
-
-
-  const items =
-    filteredErrorLibrary();
-
-
-  count.textContent =
-    `${items.length} ${
-      items.length === 1
-        ? "erro"
-        : "erros"
-    }`;
-
-
-  if (
-    !items.length
-  ) {
-    container.innerHTML =
-      "";
-
-    empty.hidden =
-      false;
-
-    updateErrorBulkToolbar();
-
-    return;
-  }
-
-
-  empty.hidden =
-    true;
-
-
-  const groups =
-    new Map();
-
-
-  items.forEach(
-    (item) => {
-      const area =
-        item.area
-        || "Sem área";
-
-
-      if (
-        !groups.has(
-          area
-        )
-      ) {
-        groups.set(
-          area,
-          []
-        );
-      }
-
-
-      groups
-        .get(area)
-        .push(item);
-    }
-  );
-
-
-  const sortedAreas =
-    Array.from(
-      groups.keys()
-    )
-      .sort(
-        (
-          a,
-          b
-        ) =>
-          a.localeCompare(
-            b,
-            "pt-BR"
-          )
-      );
-
-
-  container.innerHTML =
-    sortedAreas
-      .map(
-        (area) => {
-          const areaItems =
-            groups.get(
-              area
-            );
-
-
-          return `
-            <section class="error-library-group">
-
-              <div class="error-library-group-head">
-
-                <h3>
-                  ${errorLibraryEscape(
-                    area
-                  )}
-                </h3>
-
-                <span>
-                  ${areaItems.length} ${
-                    areaItems.length === 1
-                      ? "erro"
-                      : "erros"
-                  }
-                </span>
-
-              </div>
-
-
-              <div class="error-library-grid">
-
-                ${areaItems
-                  .map(
-                    (item) => {
-                      const meta =
-                        [
-                          item.materia,
-                          item.theme
-                        ]
-                          .filter(
-                            Boolean
-                          )
-                          .join(
-                            " · "
-                          );
-
-
-                      return `
-                        <article
-                          class="error-library-card"
-                          data-library-card="${errorLibraryEscape(
-                            item.id
-                          )}"
-                        >
-
-                          <label
-                            class="error-library-select-wrap"
-                            aria-label="Selecionar item"
-                          >
-                            <input
-                              class="error-library-select-check"
-                              type="checkbox"
-                              data-error-library-select="${errorLibraryEscape(
-                                item.id
-                              )}"
-                              ${selectedErrorIds.has(item.id) ? "checked" : ""}
-                            >
-                          </label>
-
-                          <div class="error-library-menu-wrap">
-
-                            <button
-                              class="error-library-menu-trigger"
-                              type="button"
-                              data-error-library-menu-trigger="${errorLibraryEscape(
-                                item.id
-                              )}"
-                              aria-label="Opções do item"
-                              aria-expanded="false"
-                            >
-                              ⋯
-                            </button>
-
-                            <div
-                              class="error-library-menu"
-                              data-error-library-menu="${errorLibraryEscape(
-                                item.id
-                              )}"
-                              hidden
-                            >
-
-                              <button
-                                type="button"
-                                data-error-library-edit="${errorLibraryEscape(
-                                  item.id
-                                )}"
-                              >
-                                Editar
-                              </button>
-
-                              <button
-                                class="danger"
-                                type="button"
-                                data-error-library-delete="${errorLibraryEscape(
-                                  item.id
-                                )}"
-                              >
-                                Excluir
-                              </button>
-
-                            </div>
-
-                          </div>
-
-
-                          <div class="error-library-card-main">
-
-                            <div class="error-library-card-ccq">
-                              ${errorLibraryEscape(
-                                item.ccq
-                                || "Sem Pulo do Gato"
-                              )}
-                            </div>
-
-                            <div class="error-library-card-meta">
-                              ${errorLibraryEscape(
-                                meta
-                                || area
-                              )}
-                            </div>
-
-                            <div class="error-library-card-stats">
-
-                              <span>
-                                Próxima:
-                                ${errorLibraryEscape(
-                                  formatErrorDate(
-                                    item.due_date
-                                  )
-                                )}
-                              </span>
-
-                              <span>
-                                ${Number(
-                                  item.review_count
-                                  || 0
-                                )} ${
-                                  Number(
-                                    item.review_count
-                                    || 0
-                                  ) === 1
-                                    ? "revisão"
-                                    : "revisões"
-                                }
-                              </span>
-
-                            </div>
-
-                          </div>
-
-
-                          <div class="error-library-card-actions">
-
-                            <button
-                              class="button secondary"
-                              type="button"
-                              data-library-open="${errorLibraryEscape(
-                                item.id
-                              )}"
-                            >
-                              Abrir
-                            </button>
-
-                          </div>
-
-
-                          <div
-                            class="error-library-card-details"
-                            data-library-details="${errorLibraryEscape(
-                              item.id
-                            )}"
-                            hidden
-                          >
-
-                            <div class="error-library-detail-block">
-                              <span>Questão</span>
-                              <div>
-                                ${errorLibraryEscape(
-                                  item.question_text
-                                  || "—"
-                                )}
-                              </div>
-                            </div>
-
-
-                            <div class="error-library-detail-block">
-                              <span>Resposta correta</span>
-                              <div>
-                                ${errorLibraryEscape(
-                                  item.correct_answer
-                                  || "—"
-                                )}
-                              </div>
-                            </div>
-
-
-                            ${
-                              item.what_i_thought
-                                ? `
-                                  <div class="error-library-detail-block">
-                                    <span>O que eu pensei</span>
-                                    <div>
-                                      ${errorLibraryEscape(
-                                        item.what_i_thought
-                                      )}
-                                    </div>
-                                  </div>
-                                `
-                                : ""
-                            }
-
-                          </div>
-
-                        </article>
-                      `;
-                    }
-                  )
-                  .join("")}
-
-              </div>
-
-            </section>
-          `;
-        }
-      )
-      .join("");
-
-
-  container
-    .querySelectorAll(
-      "[data-error-library-select]"
-    )
-    .forEach(
-      (input) => {
-        input.addEventListener(
-          "change",
-          () => {
-            const id =
-              input.dataset
-                .errorLibrarySelect;
-
-
-            if (input.checked) {
-              selectedErrorIds.add(
-                id
-              );
-
-            } else {
-              selectedErrorIds.delete(
-                id
-              );
-            }
-
-
-            updateErrorBulkToolbar();
-          }
-        );
-      }
-    );
-
-
-  updateErrorBulkToolbar();
-
-
-  container
-    .querySelectorAll(
-      "[data-error-library-menu-trigger]"
-    )
-    .forEach(
-      (button) => {
-        button.addEventListener(
-          "click",
-          (event) => {
-            event.stopPropagation();
-
-
-            const id =
-              button
-                .dataset
-                .errorLibraryMenuTrigger;
-
-
-            const menu =
-              container.querySelector(
-                `[data-error-library-menu="${CSS.escape(
-                  id
-                )}"]`
-              );
-
-
-            if (!menu) {
-              return;
-            }
-
-
-            const willOpen =
-              menu.hidden;
-
-
-            closeErrorLibraryMenus();
-
-
-            menu.hidden =
-              !willOpen;
-
-
-            button.setAttribute(
-              "aria-expanded",
-              willOpen
-                ? "true"
-                : "false"
-            );
-          }
-        );
-      }
-    );
-
-
-  container
-    .querySelectorAll(
-      "[data-error-library-menu]"
-    )
-    .forEach(
-      (menu) => {
-        menu.addEventListener(
-          "click",
-          (event) =>
-            event.stopPropagation()
-        );
-      }
-    );
-
-
-  container
-    .querySelectorAll(
-      "[data-error-library-edit]"
-    )
-    .forEach(
-      (button) => {
-        button.addEventListener(
-          "click",
-          () => {
-            closeErrorLibraryMenus();
-
-
-            openErrorEditDialog(
-              button
-                .dataset
-                .errorLibraryEdit
-            );
-          }
-        );
-      }
-    );
-
-
-  container
-    .querySelectorAll(
-      "[data-error-library-delete]"
-    )
-    .forEach(
-      (button) => {
-        button.addEventListener(
-          "click",
-          async () => {
-            closeErrorLibraryMenus();
-
-
-            await deleteErrorFromLibrary(
-              button
-                .dataset
-                .errorLibraryDelete
-            );
-          }
-        );
-      }
-    );
-
-
-  container
-    .querySelectorAll(
-      "[data-library-open]"
-    )
-    .forEach(
-      (button) => {
-        button.addEventListener(
-          "click",
-          () => {
-            const id =
-              button
-                .dataset
-                .libraryOpen;
-
-
-            const details =
-              container.querySelector(
-                `[data-library-details="${CSS.escape(
-                  id
-                )}"]`
-              );
-
-
-            if (!details) {
-              return;
-            }
-
-
-            const open =
-              details.hidden;
-
-
-            details.hidden =
-              !open;
-
-
-            button.textContent =
-              open
-                ? "Fechar"
-                : "Abrir";
-          }
-        );
-      }
-    );
+function errorAreaIcon(area){
+  const v=String(area||"").toLowerCase();
+  if(v.includes("pedi")) return "♙";
+  if(v.includes("cirurg")) return "✂";
+  if(v.includes("gine")||v.includes("obst")) return "♀";
+  if(v.includes("prevent")) return "✚";
+  return "♧";
 }
-
+function errorState(item){
+  const n=Number(item.review_count||0);
+  const due=String(item.due_date||"");
+  if(n>=5) return "mastered";
+  if(n>=2) return "consolidating";
+  if(!due||due<=errorTodayISO()) return "review";
+  return "all";
+}
+let errorHomeState="all";
+function filteredHomeItems(){
+  const base=filteredErrorLibrary();
+  if(errorHomeState==="all") return base;
+  return base.filter(item=>errorState(item)===errorHomeState);
+}
+function renderErrorHomeExtras(){
+  const featured=document.getElementById("error-featured-list");
+  if(featured){
+    featured.innerHTML=errorLibraryItems.slice().sort((a,b)=>Number(b.review_count||0)-Number(a.review_count||0)).slice(0,4).map(item=>`
+      <article class="error-feature-card"><span>${errorLibraryEscape(item.area||"Sem área")}</span><strong>${errorLibraryEscape(item.theme||item.materia||"Ponto importante")}</strong><p>💡 ${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</p></article>`).join("") || '<div class="error-home-empty">Seus Pulos do Gato aparecerão aqui.</div>';
+  }
+  const due=errorLibraryItems.filter(i=>!i.due_date||i.due_date<=errorTodayISO()).slice(0,5);
+  const today=document.getElementById("error-today-list"); const count=document.getElementById("error-today-count");
+  if(count) count.textContent=String(due.length);
+  if(today) today.innerHTML=due.map((item,i)=>`<button type="button" class="error-today-row" data-home-review-id="${errorLibraryEscape(item.id)}"><b>${i+1}</b><span><strong>${errorLibraryEscape(item.theme||item.materia||"Erro")}</strong><small>${errorLibraryEscape(item.area||"Sem área")}</small></span><i>›</i></button>`).join("") || '<div class="error-home-empty">Nenhuma revisão pendente hoje.</div>';
+  const repeat=document.getElementById("error-repeat-list");
+  if(repeat){
+    const groups=new Map(); errorLibraryItems.forEach(i=>{const k=i.theme||i.materia||i.area||"Sem assunto";groups.set(k,(groups.get(k)||0)+1)});
+    repeat.innerHTML=[...groups.entries()].sort((x,y)=>y[1]-x[1]).slice(0,5).map(([name,n],i)=>`<div class="error-repeat-row"><b>${i+1}</b><span>${errorLibraryEscape(name)}</span><em>${n}x</em></div>`).join("") || '<div class="error-home-empty">Sem recorrências ainda.</div>';
+  }
+}
+function renderErrorLibrary() {
+  const container=document.getElementById("error-library"), empty=document.getElementById("error-library-empty"), count=document.getElementById("error-library-count");
+  if(!container||!empty||!count)return;
+  const items=filteredHomeItems(); count.textContent=`${items.length} ${items.length===1?"erro":"erros"}`;
+  if(!items.length){container.innerHTML="";empty.hidden=false;updateErrorBulkToolbar();renderErrorHomeExtras();return}
+  empty.hidden=true;
+  const groups=new Map(); items.forEach(item=>{const area=item.area||"Sem área";if(!groups.has(area))groups.set(area,[]);groups.get(area).push(item)});
+  const preferred=["Clínica Médica","Pediatria","Cirurgia Geral","Ginecologia e Obstetrícia","Preventiva"];
+  const sorted=[...groups.keys()].sort((x,y)=>{const ax=preferred.indexOf(x),ay=preferred.indexOf(y);if(ax>=0||ay>=0)return (ax<0?99:ax)-(ay<0?99:ay);return x.localeCompare(y,"pt-BR")});
+  container.innerHTML=sorted.map((area,gi)=>{const rows=groups.get(area);return `
+    <section class="error-library-group ${gi===0?"open":""}">
+      <button class="error-library-group-head" type="button" data-error-group-toggle>
+        <span class="error-area-mark">${errorAreaIcon(area)}</span><h3>${errorLibraryEscape(area)}</h3><span class="error-area-count">${rows.length} erros</span><i>⌃</i>
+      </button>
+      <div class="error-library-rows">
+      ${rows.map(item=>`<article class="error-library-card" data-library-card="${errorLibraryEscape(item.id)}">
+        <label class="error-library-select-wrap"><input class="error-library-select-check" type="checkbox" data-error-library-select="${errorLibraryEscape(item.id)}" ${selectedErrorIds.has(item.id)?"checked":""}></label>
+        <div class="error-library-card-main"><strong>${errorLibraryEscape(item.theme||item.materia||"Erro registrado")}</strong><p><b>Pulo do Gato:</b> ${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</p></div>
+        <span class="error-review-pill">${Number(item.review_count||0)}x</span>
+        <span class="error-library-date">${errorLibraryEscape(formatErrorDate(item.due_date))}</span>
+        <button class="error-library-menu-trigger" type="button" data-error-library-menu-trigger="${errorLibraryEscape(item.id)}">⋯</button>
+        <div class="error-library-menu" data-error-library-menu="${errorLibraryEscape(item.id)}" hidden><button type="button" data-error-library-edit="${errorLibraryEscape(item.id)}">Editar</button><button class="danger" type="button" data-error-library-delete="${errorLibraryEscape(item.id)}">Excluir</button></div>
+      </article>`).join("")}
+      </div>
+    </section>`}).join("");
+  renderErrorHomeExtras(); updateErrorBulkToolbar();
+  container.querySelectorAll("[data-error-group-toggle]").forEach(btn=>btn.addEventListener("click",()=>btn.closest(".error-library-group")?.classList.toggle("open")));
+  container.querySelectorAll("[data-error-library-select]").forEach(input=>input.addEventListener("change",()=>{const id=input.dataset.errorLibrarySelect;input.checked?selectedErrorIds.add(id):selectedErrorIds.delete(id);updateErrorBulkToolbar()}));
+  container.querySelectorAll("[data-error-library-menu-trigger]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const id=button.dataset.errorLibraryMenuTrigger;const menu=container.querySelector(`[data-error-library-menu="${CSS.escape(id)}"]`);const open=menu?.hidden;closeErrorLibraryMenus();if(menu)menu.hidden=!open;button.setAttribute("aria-expanded",open?"true":"false")}));
+  container.querySelectorAll("[data-error-library-edit]").forEach(button=>button.addEventListener("click",()=>{closeErrorLibraryMenus();openErrorEditDialog(button.dataset.errorLibraryEdit)}));
+  container.querySelectorAll("[data-error-library-delete]").forEach(button=>button.addEventListener("click",async()=>{closeErrorLibraryMenus();await deleteErrorFromLibrary(button.dataset.errorLibraryDelete)}));
+}
 
 async function loadErrorLibrary() {
   const {
@@ -5655,6 +5179,11 @@ async function loadErrorLibrary() {
 
 
 function wireErrorLibrary() {
+  document.querySelectorAll("[data-error-state]").forEach(button=>button.addEventListener("click",()=>{errorHomeState=button.dataset.errorState||"all";document.querySelectorAll("[data-error-state]").forEach(b=>b.classList.toggle("active",b===button));renderErrorLibrary()}));
+  document.querySelectorAll("[data-error-home-back]").forEach(button=>button.addEventListener("click",()=>switchErrorTab("library")));
+  document.getElementById("error-start-home-review")?.addEventListener("click",()=>switchErrorTab("review"));
+  document.getElementById("error-today-list")?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;const idx=errorQueue.findIndex(i=>String(i.id)===String(button.dataset.homeReviewId));if(idx>=0)errorIndex=idx;switchErrorTab("review");renderCurrentError()});
+
   document
     .querySelectorAll(
       "[data-error-tab]"
@@ -6063,6 +5592,7 @@ async function initErrorNotebook() {
 
 
   await loadErrorQueue();
+  switchErrorTab("library");
 }
 
 
