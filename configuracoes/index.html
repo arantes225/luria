@@ -640,8 +640,10 @@
     .settings-tabs::-webkit-scrollbar{display:none}
     .settings-tab {
       position:relative;flex:0 0 auto;min-height:42px;padding:0 12px;border:0;
+      display:inline-flex;align-items:center;justify-content:center;
       background:transparent;color:var(--muted);font:inherit;font-size:12px;
-      font-weight:720;cursor:pointer;white-space:nowrap;
+      line-height:1;font-weight:720;cursor:pointer;white-space:nowrap;text-decoration:none;
+      box-sizing:border-box;
     }
     .settings-tab:hover{color:var(--text)}
     .settings-tab.active{color:var(--accent)}
