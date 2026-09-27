@@ -29,6 +29,11 @@ const scheduleState = {
   editingEventId: null,
   agendaScope: "today",
   agendaFilter: "all",
+  agendaAreaFilter: "all",
+  agendaThemeFilter: "all",
+  monthFilter: "all",
+  monthAreaFilter: "all",
+  monthThemeFilter: "all",
   agendaSelected: new Set(),
 
   theoryStudyWeekdays:
@@ -4515,6 +4520,30 @@ function renderMonthErrorItem(item) {
   `;
 }
 
+function cronogramaItemKind(value) {
+  const normalized=normalizeHeader(value||"");
+  if(normalized.includes("quest"))return "questions";
+  if(normalized.includes("flash"))return "flashcards";
+  if(normalized.includes("erro"))return "errors";
+  if(normalized.includes("revis"))return "review";
+  if(normalized.includes("simulado")||normalized.includes("prova"))return "simulation";
+  if(normalized.includes("aula")||normalized.includes("lesson"))return "lesson";
+  return "other";
+}
+function cronogramaMatchesFilters(item, area, theme, type) {
+  const itemArea=normalizeHeader(item.area||"");
+  const itemTheme=normalizeHeader(item.theme||item.title||"");
+  return (area==="all"||itemArea===normalizeHeader(area))
+    &&(theme==="all"||itemTheme===normalizeHeader(theme))
+    &&(type==="all"||item.kind===type);
+}
+function fillCronogramaFilter(id, values, current, allLabel) {
+  const el=document.getElementById(id); if(!el)return;
+  const clean=[...new Set(values.filter(Boolean).map(v=>String(v).trim()))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+  el.innerHTML='<option value="all">'+allLabel+'</option>'+clean.map(v=>'<option value="'+escapeScheduleHtml(v)+'">'+escapeScheduleHtml(v)+'</option>').join("");
+  el.value=clean.includes(current)?current:"all";
+}
+
 function renderMonthPlanner() {
   const planner =
     document.getElementById("month-planner");
@@ -4554,25 +4583,14 @@ function renderMonthPlanner() {
     days
       .map(
         (date) => {
-          const topics =
-            topicsOnDate(date);
-
-          const events =
-            eventsOnDate(date);
-
-          const errorItems =
-            errorItemsOnDate(date);
+          const topics = topicsOnDate(date).filter(t=>cronogramaMatchesFilters({area:t.area,theme:t.theme,kind:cronogramaItemKind(t.type||t.theme||"lesson")},scheduleState.monthAreaFilter,scheduleState.monthThemeFilter,scheduleState.monthFilter));
+          const events = eventsOnDate(date).filter(e=>cronogramaMatchesFilters({area:e.area,theme:e.title,kind:cronogramaItemKind(e.event_type||e.title)},scheduleState.monthAreaFilter,scheduleState.monthThemeFilter,scheduleState.monthFilter));
+          const errorItems = errorItemsOnDate(date).filter(e=>cronogramaMatchesFilters({area:e.area,theme:e.theme||e.materia,kind:"errors"},scheduleState.monthAreaFilter,scheduleState.monthThemeFilter,scheduleState.monthFilter));
 
           const allItems = [
-            ...topics.map(
-              renderMonthTopicItem
-            ),
-            ...events.map(
-              renderMonthEventItem
-            ),
-            ...errorItems.map(
-              renderMonthErrorItem
-            )
+            ...topics.map(renderMonthTopicItem),
+            ...events.map(renderMonthEventItem),
+            ...errorItems.map(renderMonthErrorItem)
           ];
 
           const visible = allItems;
@@ -4716,7 +4734,14 @@ function renderAgendaSide() {
       scheduleState.errorItems.forEach(e=>{if(e.due_date)seen.add(e.due_date)});
       [...seen].sort().forEach(iso=>{const d=parseISODateSchedule(iso);if(d)addDateItems(d)});
     }
-    const visible=sourceItems.filter(item=>scheduleState.agendaFilter==="all"||item.kind===scheduleState.agendaFilter);
+    sourceItems.forEach(item=>{
+      if(item.source==="topic"){const t=scheduleState.topics.find(x=>String(x.id)===String(item.id));item.area=t?.area||"";item.theme=t?.theme||item.title;}
+      else if(item.source==="event"){const e=scheduleState.events.find(x=>String(x.id)===String(item.id));item.area=e?.area||"";item.theme=e?.title||item.title;}
+      else {const e=scheduleState.errorItems.find(x=>String(x.id)===String(item.id));item.area=e?.area||"";item.theme=e?.theme||e?.materia||item.title;}
+    });
+    fillCronogramaFilter("agenda-filter-area",sourceItems.map(i=>i.area),scheduleState.agendaAreaFilter,"Todas as áreas");
+    fillCronogramaFilter("agenda-filter-theme",sourceItems.map(i=>i.theme),scheduleState.agendaThemeFilter,"Todos os temas");
+    const visible=sourceItems.filter(item=>cronogramaMatchesFilters(item,scheduleState.agendaAreaFilter,scheduleState.agendaThemeFilter,scheduleState.agendaFilter));
     const labelForKind=k=>({lesson:"Aula",questions:"Questões",review:"Revisão",flashcards:"Flashcards",errors:"Caderno de erros",simulation:"Simulado",other:"Outro"}[k]||"Atividade");
     const row=item=>{
       const key=item.source+":"+item.id, selected=scheduleState.agendaSelected.has(key);
@@ -8511,6 +8536,9 @@ function wireDynamicInteractions() {
     if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="all"?"Todas as datas":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(startOfDaySchedule(new Date()));
     document.querySelectorAll("[data-agenda-scope]").forEach(b=>b.classList.toggle("active",b===button)); renderAgendaSide(); wireDynamicInteractions();
   }));
+  const bindStructuredFilter=(id,stateKey)=>{const el=document.getElementById(id);if(!el)return;el.value=scheduleState[stateKey]||"all";el.onchange=()=>{scheduleState[stateKey]=el.value;scheduleState.agendaSelected.clear();renderAgendaSide();wireDynamicInteractions();};};
+  bindStructuredFilter("agenda-filter-area","agendaAreaFilter");
+  bindStructuredFilter("agenda-filter-theme","agendaThemeFilter");
   const agendaFilter=document.getElementById("agenda-activity-filter");
   if(agendaFilter){agendaFilter.value=scheduleState.agendaFilter;agendaFilter.onchange=()=>{scheduleState.agendaFilter=agendaFilter.value;scheduleState.agendaSelected.clear();renderAgendaSide();wireDynamicInteractions();};}
   document.querySelectorAll("[data-agenda-select]").forEach(input=>input.addEventListener("change",()=>{input.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect);const el=document.getElementById("agenda-selected-count");if(el)el.textContent=scheduleState.agendaSelected.size+" selecionadas";}));
@@ -8529,7 +8557,13 @@ function wireDynamicInteractions() {
     scheduleState.agendaSelected.clear(); await loadTopics();
   };
   const bulkDate=document.getElementById("agenda-bulk-reschedule");if(bulkDate)bulkDate.onclick=()=>bulkUpdate("date");
-  const bulkComplete=document.getElementById("agenda-bulk-complete");if(bulkComplete)bulkComplete.onclick=()=>bulkUpdate("complete");
+  const bulkDeck=document.getElementById("agenda-bulk-deck");if(bulkDeck)bulkDeck.onclick=async()=>{const keys=[...scheduleState.agendaSelected].filter(k=>k.startsWith("topic:"));if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma aula para remover ao deck.");return;}for(const key of keys){const id=key.split(":")[1];await scheduleSb.from("study_topics").update({status:"deck",scheduled_date:null}).eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
+  const bulkDelete=document.getElementById("agenda-bulk-delete");if(bulkDelete)bulkDelete.onclick=async()=>{const keys=[...scheduleState.agendaSelected];if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma atividade.");return;}if(!confirm("Apagar "+keys.length+" atividade(s)? Esta ação não pode ser desfeita."))return;for(const key of keys){const [source,id]=key.split(":");if(source==="topic")await scheduleSb.from("study_topics").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="event")await scheduleSb.from("schedule_events").delete().eq("id",id).eq("user_id",scheduleState.user.id);if(source==="error")await scheduleSb.from("error_notebook").delete().eq("id",id).eq("user_id",scheduleState.user.id);}scheduleState.agendaSelected.clear();await loadTopics();};
+  const bindMonthFilter=(id,key)=>{const el=document.getElementById(id);if(!el)return;el.value=scheduleState[key]||"all";el.onchange=()=>{scheduleState[key]=el.value;renderMonthPlanner();wireDynamicInteractions();};};
+  const monthItems=[...scheduleState.topics.map(x=>({area:x.area,theme:x.theme})),...scheduleState.events.map(x=>({area:x.area,theme:x.title})),...scheduleState.errorItems.map(x=>({area:x.area,theme:x.theme||x.materia}))];
+  fillCronogramaFilter("month-filter-area",monthItems.map(x=>x.area),scheduleState.monthAreaFilter,"Todas as áreas");
+  fillCronogramaFilter("month-filter-theme",monthItems.map(x=>x.theme),scheduleState.monthThemeFilter,"Todos os temas");
+  bindMonthFilter("month-filter-area","monthAreaFilter");bindMonthFilter("month-filter-theme","monthThemeFilter");bindMonthFilter("month-filter-type","monthFilter");
 
   document.querySelectorAll("[data-today-menu-trigger]").forEach((button) => {
     button.addEventListener("click", (event) => {
