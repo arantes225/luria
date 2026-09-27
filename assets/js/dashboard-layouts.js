@@ -204,8 +204,7 @@
           <section class="dl5-card dl5-streak">
             <div class="dl5-title"><h3>🔥 Ofensiva</h3><a href="/estatisticas/">›</a></div>
             <div class="dl5-streak-number"><strong>${data.streak}</strong><span>dias seguidos</span></div>
-            <div class="dl5-week">${["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"].map((d,i)=>`<span class="${i<=weekday && data.streak>0 ? "on":""}"><i></i>${d}</span>`).join("")}</div>
-            <div class="dl5-focus"><span><strong>25 min</strong><small>Tempo de foco</small></span><span><strong>5 min</strong><small>Pausa curta</small></span><span><strong>15 min</strong><small>Pausa longa</small></span></div>
+            <div class="dl5-week">${["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"].map((d,i)=>{ const daysBack = weekday - i; const active = daysBack >= 0 && daysBack < data.streak; return `<span class="${active ? "on":""}"><i></i>${d}</span>`; }).join("")}</div>
           </section>
 
           <section class="dl5-card dl5-areas">
