@@ -199,11 +199,55 @@
     return String(Math.floor(total/60)).padStart(2,"0")+":"+String(total%60).padStart(2,"0");
   }
 
-  function show(section) {
+  function plantaoViewKey(){
+    return state.user?.id ? "luria:plantao:view:"+state.user.id : "luria:plantao:view";
+  }
+
+  function savePlantaoView(patch={}){
+    try{
+      const key=plantaoViewKey();
+      const previous=JSON.parse(localStorage.getItem(key)||"{}");
+      localStorage.setItem(key,JSON.stringify({
+        ...previous,
+        ...patch,
+        savedAt:Date.now()
+      }));
+    }catch(error){
+      console.warn("Plantão: não foi possível salvar a posição da navegação.",error);
+    }
+  }
+
+  function readPlantaoView(){
+    try{
+      return JSON.parse(localStorage.getItem(plantaoViewKey())||"{}")||{};
+    }catch{
+      return {};
+    }
+  }
+
+  function clearPlantaoClinicalView(){
+    const current=readPlantaoView();
+    savePlantaoView({
+      mode:current.mode==="phone" ? "phone" : "emergency",
+      section:"plantao-library",
+      clinicalSessionId:null,
+      clinicalCaseId:null
+    });
+  }
+
+  function show(section,{persist=true}={}) {
     ["plantao-library","plantao-simulator","plantao-debrief"].forEach(id => {
       const el=$(id);
       if (el) el.hidden = id !== section;
     });
+    if(persist){
+      savePlantaoView({
+        mode:state.phoneMode ? "phone" : "emergency",
+        section,
+        clinicalSessionId:state.session?.id||null,
+        clinicalCaseId:state.current?.id||null
+      });
+    }
     window.scrollTo({top:0,behavior:"smooth"});
   }
 
@@ -266,18 +310,35 @@
       .order("started_at",{ascending:false})
       .limit(100);
     state.sessions=sessionsRes.error ? [] : (sessionsRes.data || []);
-    // Remove resíduos de atendimentos interrompidos em fechamentos/reloads anteriores.
-    const cleanup=await sb.from("clinical_case_sessions")
-      .delete()
-      .eq("user_id",user.id)
-      .neq("status","completed");
-    if(cleanup.error) console.warn("Plantão: limpeza de sessões incompletas pendente",cleanup.error);
+
     const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
     const difficulties=[...new Set(state.cases.map(x=>x.difficulty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
     buildSiteFilter("specialty",specialties);
     buildSiteFilter("difficulty",difficulties);
     renderLibrary();
+
+    const savedView=readPlantaoView();
+    if(savedView.mode==="phone" && phoneAllowed){
+      setPlantaoMode("phone");
+      if(getPhoneDraft()) restorePhoneDraft();
+      return;
+    }
+
     setPlantaoMode("emergency");
+    if(savedView.clinicalSessionId && ["plantao-simulator","plantao-debrief"].includes(savedView.section)){
+      const activeRes=await sb.from("clinical_case_sessions")
+        .select("id,case_id,status,started_at,completed_at,elapsed_minutes,score,result,state,action_log")
+        .eq("user_id",user.id)
+        .eq("id",savedView.clinicalSessionId)
+        .maybeSingle();
+      if(!activeRes.error && activeRes.data){
+        const restored=await restoreClinicalSession(activeRes.data,savedView.section);
+        if(restored) return;
+      }
+    }
+
+    show("plantao-library",{persist:false});
+    savePlantaoView({mode:"emergency",section:"plantao-library",clinicalSessionId:null,clinicalCaseId:null});
   }
 
   function bestScore(caseId) {
@@ -462,6 +523,10 @@
     document.body.classList.toggle("plantao-phone-mode",phone);
     document.body.classList.toggle("plantao-emergency-mode",!phone);
     document.documentElement.classList.toggle("plantao-phone-mode",phone);
+    savePlantaoView({
+      mode:phone ? "phone" : "emergency",
+      section:phone ? "phone" : (readPlantaoView().section||"plantao-library")
+    });
 
     if(phone){
       renderPhoneCases();
@@ -568,6 +633,7 @@
       .select("*").single();
     if(error){console.error("Telefone: não foi possível iniciar a sessão",error);return;}
     state.phoneSession=session;
+    savePlantaoView({mode:"phone",section:"phone",phoneCaseId:item.id,clinicalSessionId:null,clinicalCaseId:null});
     const firstLessonStep=lessonMode ? item.ai_context.lesson_flow[0] : null;
     const openingText=[
       phoneOpeningText(item),
@@ -837,6 +903,7 @@
       state.phoneSession=null; state.phoneCase=null; state.phoneTurn=0; state.phoneUsedChoices=new Set();
       $("plantao-phone-station").hidden=true;
       $("plantao-phone-inbox").hidden=false;
+      savePlantaoView({mode:"phone",section:"phone",phoneCaseId:null});
       renderPhoneCases();
       return;
     }
@@ -3391,6 +3458,8 @@
         penalties:state.penalties, criticalElapsed:state.criticalElapsed, elapsed_seconds:Math.round(state.elapsed*60),
         sequenceViolations:state.sequenceViolations,
         harmfulCount:state.harmfulCount, dead:state.dead, deathReason:state.deathReason, clinicalEvents:state.clinicalEvents,
+        fetalHarmCount:state.fetalHarmCount, fetalDeath:state.fetalDeath, fetalStatus:state.fetalStatus,
+        monitorOn:state.monitorOn,
         diagnosis:state.diagnosis, disposition:state.disposition, scoring_version:5
       },
       action_log:state.log,
@@ -3398,6 +3467,114 @@
     };
     const {error}=await sb.from("clinical_case_sessions").update(payload).eq("id",state.session.id);
     if (error) { console.warn("Plantão: não foi possível persistir a sessão",error); return false; }
+    return true;
+  }
+
+  function renderCurrentClinicalCaseShell(item){
+    const safeOpening=item.presentation?.opening || item.presentation?.chief_complaint || "Paciente admitido para avaliação na sala de emergência.";
+    $("plantao-setting").textContent=item.setting || "Sala de emergência";
+    $("plantao-case-title").textContent=item.presentation?.chief_complaint || item.presentation?.display_title || "Caso em avaliação";
+    const pwaCaseTitle=$("plantao-pwa-case-title");
+    if(pwaCaseTitle) pwaCaseTitle.textContent=item.presentation?.chief_complaint || item.presentation?.display_title || item.title || "Caso em andamento";
+    $("plantao-opening").textContent=safeOpening;
+    const rawAge=String(item.presentation?.age||"").trim();
+    const ageNumber=Number(rawAge);
+    const ageLabel=rawAge
+      ? (/ano|mes|mês|dia/i.test(rawAge) ? rawAge : (Number.isFinite(ageNumber) ? ageNumber+" "+(ageNumber===1?"ano":"anos") : rawAge))
+      : "";
+    const rawSex=normalizeLabel(item.presentation?.sex||"");
+    const sexLabel=rawSex==="f"||rawSex==="feminino" ? "Feminino" : rawSex==="m"||rawSex==="masculino" ? "Masculino" : (item.presentation?.sex||"");
+    $("plantao-age").textContent=ageLabel ? "Idade · "+ageLabel : "";
+    $("plantao-sex").textContent=sexLabel ? "Sexo · "+sexLabel : "";
+    $("plantao-chief").textContent="";
+    $("plantao-time").textContent=fmtTime(state.elapsed);
+    $("plantao-action-search").value="";
+    $("plantao-action-drawer").hidden=true;
+    $("plantao-action-tabs").inert=false;
+    $("plantao-death-overlay").hidden=true;
+    $("plantao-simulator").classList.toggle("patient-dead",!!state.dead);
+    updateScore();
+    renderVitals();
+    renderActions();
+    renderCriticalWindow();
+    $("plantao-feed").innerHTML=state.log.slice().reverse().map(entry=>`
+      <div class="plantao-feed-item ${esc(entry.type||"event")}">
+        <span>T+${fmtTime(entry.time||0)}</span>
+        <p>${esc(entry.message||"")}</p>
+        ${entry.reportKey ? `<button class="plantao-feed-report-button" type="button" data-open-exam-report="${esc(entry.reportKey)}">Abrir laudo</button>` : ""}
+      </div>
+    `).join("");
+  }
+
+  async function restoreClinicalSession(sessionRow,targetSection="plantao-simulator"){
+    if(!sessionRow?.case_id) return false;
+    let caseRes;
+    try{
+      caseRes=await sb.rpc("get_active_clinical_case",{p_case_id:sessionRow.case_id});
+    }catch(error){
+      console.warn("Plantão: falha ao recuperar o caso após recarregar a página.",error);
+      return false;
+    }
+    if(caseRes.error || !caseRes.data?.length) return false;
+
+    const item=caseRes.data[0];
+    const saved=sessionRow.state||{};
+    state.current=item;
+    state.session={
+      id:sessionRow.id,
+      case_id:sessionRow.case_id,
+      status:sessionRow.status,
+      started_at:sessionRow.started_at,
+      completed_at:sessionRow.completed_at||null
+    };
+    state.elapsed=Number(saved.elapsed_seconds||0)/60 || Number(sessionRow.elapsed_minutes||0) || 0;
+    state.score=Number(sessionRow.score||0);
+    state.vitals={...(saved.vitals||item.initial_vitals||{})};
+    state.performed=Array.isArray(saved.performed)?saved.performed:[];
+    state.outcomes=Array.isArray(saved.outcomes)?saved.outcomes:[];
+    state.triggered=Array.isArray(saved.triggered)?saved.triggered:[];
+    state.log=Array.isArray(sessionRow.action_log)?sessionRow.action_log:[];
+    state.examReports={};
+    state.sequenceViolations=Array.isArray(saved.sequenceViolations)?saved.sequenceViolations:[];
+    state.monitorOn=saved.monitorOn===true || state.performed.includes("monitor");
+    state.harmfulCount=Number(saved.harmfulCount||0);
+    state.dead=saved.dead===true;
+    state.deathReason=String(saved.deathReason||"");
+    state.fetalHarmCount=Number(saved.fetalHarmCount||0);
+    state.fetalDeath=saved.fetalDeath===true;
+    state.fetalStatus=String(saved.fetalStatus||"");
+    state.clinicalEvents=Array.isArray(saved.clinicalEvents)?saved.clinicalEvents:[];
+    state.category=null;
+    state.arrestStartedAt=null;
+    state.penalties=Number(saved.penalties||0);
+    state.criticalElapsed=Number(saved.criticalElapsed||0);
+    state.diagnosis=saved.diagnosis||sessionRow.result?.diagnosis||null;
+    state.disposition=saved.disposition||sessionRow.result?.disposition||null;
+    state.busy=false;
+
+    renderCurrentClinicalCaseShell(item);
+
+    if(targetSection==="plantao-debrief" && sessionRow.status==="completed"){
+      const rules=item.completion_rules||{};
+      const required=E.requiredActions ? E.requiredActions(item) : (rules.required_actions||[]);
+      const missingRequired=sessionRow.result?.missing_required || required.filter(x=>!done(x));
+      const missingRecommended=sessionRow.result?.missing_recommended || (rules.recommended_actions||[]).filter(x=>!done(x));
+      show("plantao-debrief",{persist:false});
+      try{
+        renderDebrief(Number(sessionRow.score||sessionRow.result?.final_score||0),missingRequired,missingRecommended);
+      }catch(error){
+        console.warn("Plantão: debriefing parcialmente restaurado.",error);
+      }
+    }else{
+      show("plantao-simulator",{persist:false});
+    }
+
+    savePlantaoView({
+      mode:"emergency",
+      section:targetSection==="plantao-debrief" && sessionRow.status==="completed" ? "plantao-debrief" : "plantao-simulator",
+      clinicalSessionId:sessionRow.id,
+      clinicalCaseId:sessionRow.case_id
+    });
     return true;
   }
 
@@ -3467,6 +3644,12 @@
     }
     state.busy=false;
     state.session=data;
+    savePlantaoView({
+      mode:"emergency",
+      section:"plantao-simulator",
+      clinicalSessionId:data.id,
+      clinicalCaseId:item.id
+    });
 
     const safeOpening=item.presentation?.opening || item.presentation?.chief_complaint || "Paciente admitido para avaliação na sala de emergência.";
     $("plantao-setting").textContent=item.setting || "Sala de emergência";
@@ -3884,6 +4067,7 @@
     else await discardActiveSession();
     state.current=null;
     state.session=null;
+    clearPlantaoClinicalView();
     renderLibrary();
     $("plantao-action-drawer").hidden=true;
     $("plantao-action-tabs").inert=false;
