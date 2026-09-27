@@ -706,6 +706,81 @@
 
 
   style.textContent += `
+    /* LURIA global trays — always above page content and simulator overlays. */
+    .topbar,
+    .topbar-actions,
+    .luria-notifications,
+    .luria-pomodoro-top,
+    .luria-profile-top {
+      overflow:visible!important;
+    }
+
+    .luria-notification-panel,
+    .luria-pomodoro-panel,
+    .luria-profile-menu {
+      z-index:2147483000!important;
+      isolation:isolate;
+      border-color:var(--border)!important;
+      background:var(--surface)!important;
+      color:var(--text)!important;
+      box-shadow:0 22px 64px rgba(4,18,33,.24)!important;
+    }
+
+    .luria-pomodoro-panel {
+      color:var(--text)!important;
+    }
+    .luria-pomodoro-panel header strong,
+    .luria-pomodoro-time {
+      color:var(--text)!important;
+    }
+    .luria-pomodoro-panel header small,
+    .luria-stopwatch-note,
+    .luria-pomodoro-fields label {
+      color:var(--muted)!important;
+    }
+    .luria-pomodoro-panel input {
+      border-color:var(--border)!important;
+      background:var(--surface-2)!important;
+      color:var(--text)!important;
+    }
+    .luria-pomodoro-actions button,
+    .luria-pomodoro-modes button {
+      border-color:var(--border)!important;
+      background:var(--surface-2)!important;
+      color:var(--text)!important;
+    }
+    .luria-pomodoro-actions button:hover,
+    .luria-pomodoro-modes button:hover {
+      border-color:var(--accent)!important;
+      background:var(--accent-soft)!important;
+      color:var(--accent)!important;
+    }
+    .luria-pomodoro-modes button[aria-pressed="true"] {
+      border-color:var(--accent)!important;
+      background:var(--accent)!important;
+      color:#fff!important;
+    }
+    .luria-timer-switch {
+      border-color:var(--border)!important;
+      background:var(--surface-2)!important;
+    }
+    .luria-timer-switch button {
+      color:var(--muted)!important;
+    }
+    .luria-timer-switch button[aria-pressed="true"] {
+      background:var(--surface)!important;
+      color:var(--accent)!important;
+      box-shadow:0 1px 5px rgba(15,23,42,.10)!important;
+    }
+
+    /* Keep the trigger row itself above page stacking contexts. */
+    .topbar {
+      z-index:2147482000!important;
+    }
+  `;
+
+
+  style.textContent += `
     /* Sidebar fixa e compacta — sem rolagem interna. */
     #sidebar.sidebar {
       overflow:hidden !important;
