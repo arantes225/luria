@@ -16,7 +16,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
-  <link rel="stylesheet" href="assets/css/estatisticas.css?v=22.0">
+  <link rel="stylesheet" href="assets/css/estatisticas.css?v=23.0">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=10">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=15">
@@ -206,60 +206,17 @@
           </div>
 
           <!-- CADERNO DE ERROS -->
-          <div data-stats-panel="erros" hidden>
-            <section class="stats-summary-box">
-              <div class="stats-section-head"><div><span class="stats-kicker">Resumo</span><h3>Caderno de Erros</h3><p>Nove indicadores centrais do Caderno de Erros.</p></div></div>
-              <div id="error-summary" class="stats-summary-grid"></div>
-            </section>
-
-            <div class="stats-block-grid">
-              <article class="stats-block wide">
-                <div class="stats-section-head"><div><h3>Criação e revisão</h3><p>Entrada de novos Pulos do Gato e atividade de revisão.</p></div></div>
-                <div id="error-volume-metrics" class="metric-strip"></div>
-                <div class="chart-box"><canvas id="chart-error-flow"></canvas></div>
-              </article>
-
-              <article class="stats-block">
-                <div class="stats-section-head"><div><h3>Carga atual</h3><p>Itens vencidos e próximos vencimentos.</p></div></div>
-                <div id="error-load-metrics" class="metric-strip"></div>
-                <div class="chart-box compact"><canvas id="chart-error-workload"></canvas></div>
-              </article>
-
-              <article class="stats-block">
-                <div class="stats-section-head"><div><h3>Memória e profundidade</h3><p>Retenção, estabilidade e número de revisões.</p></div></div>
-                <div id="error-memory-metrics" class="metric-strip"></div>
-                <div class="chart-box compact"><canvas id="chart-error-depth"></canvas></div>
-              </article>
-
-              <article class="stats-block">
-                <div class="stats-section-head"><div><h3>Pulos do Gato ativos por área</h3><p>Concentração atual do Caderno.</p></div></div>
-                <div class="chart-box compact"><canvas id="chart-error-area"></canvas></div>
-              </article>
-
-              <article class="stats-block">
-                <div class="stats-section-head"><div><h3>Retenção por área</h3><p>Memória estimada dos Pulos do Gato revisados.</p></div></div>
-                <div id="error-area-retention"></div>
-              </article>
-
-              <article class="stats-block wide">
-                <div class="stats-section-head"><div><h3>Matérias no Caderno</h3><p>Pulos do Gato ativos, revisões, retenção, estabilidade, intervalo e atrasos.</p></div></div>
-                <div id="error-subject-table" class="stats-table-wrap"></div>
-              </article>
-
-              <article class="stats-block">
-                <div class="stats-section-head"><div><h3>Pulos do Gato mais persistentes</h3><p>Itens que acumularam mais revisões.</p></div></div>
-                <div id="error-most-reviewed"></div>
-              </article>
-
-              <article class="stats-block">
-                <div class="stats-section-head"><div><h3>Pulos do Gato por matéria</h3><p>Maiores concentrações atuais.</p></div></div>
-                <div class="chart-box compact"><canvas id="chart-error-subject"></canvas></div>
-              </article>
-
-              <article class="stats-block wide">
-                <div class="stats-section-head"><div><h3>Insights do Caderno</h3><p>Prioridades de revisão, carga pendente, retenção e recorrência dos erros.</p></div></div>
-                <div id="error-insights"></div>
-              </article>
+          <div data-stats-panel="erros" hidden class="error-reference-page">
+            <div id="error-summary" class="stats-summary-grid error-ref-summary"></div>
+            <div class="error-ref-grid">
+              <article class="stats-block error-ref-card"><div class="stats-section-head"><h3>Erros por disciplina</h3></div><div id="error-area-list"></div></article>
+              <article class="stats-block error-ref-card"><div class="stats-section-head"><h3>Erros mais frequentes</h3></div><div id="error-frequent-table" class="stats-table-wrap"></div></article>
+              <article class="stats-block error-ref-card"><div class="stats-section-head"><h3>Desempenho pós-revisão</h3></div><div class="chart-box compact"><canvas id="chart-error-postreview"></canvas></div><div id="error-postreview-note" class="error-ref-note"></div></article>
+              <article class="stats-block error-ref-card"><div class="stats-section-head"><h3>Revisão agendada vs concluída</h3></div><div class="chart-box compact"><canvas id="chart-error-scheduled"></canvas></div></article>
+              <article class="stats-block error-ref-card"><div class="stats-section-head"><h3>Erros corrigidos vs reincidentes</h3></div><div class="chart-box compact"><canvas id="chart-error-corrected"></canvas></div></article>
+              <article class="stats-block error-ref-card"><div class="stats-section-head"><h3>Envelhecimento dos erros</h3></div><div id="error-aging"></div></article>
+              <article class="stats-block error-ref-card error-ref-critical"><div class="stats-section-head"><h3>Tópicos críticos para revisar</h3></div><div id="error-critical-table" class="stats-table-wrap"></div></article>
+              <article class="stats-block error-ref-card error-ref-insights"><div class="stats-section-head"><h3>✦ Insights automáticos</h3></div><div id="error-insights"></div></article>
             </div>
           </div>
 
@@ -306,7 +263,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
   <script src="assets/js/supabase.js"></script>
   <script src="assets/js/app.js?v=17.8-streak"></script>
-  <script src="assets/js/estatisticas.js?v=21.0"></script>
+  <script src="assets/js/estatisticas.js?v=23.0"></script>
   <script defer src="assets/js/pwa.js?v=4"></script>
 </body>
 </html>
