@@ -533,64 +533,48 @@
     const el = $(id);
     if (!el) return;
 
-    const weekdays = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"];
-    const grouped = new Map();
+    const canonical = [
+      ["Clínica Médica", ["clinica medica","clínica médica","clinica","clínica"]],
+      ["Pediatria", ["pediatria"]],
+      ["Cirurgia Geral", ["cirurgia geral","cirurgia"]],
+      ["Preventiva", ["preventiva","medicina preventiva","saude coletiva","saúde coletiva"]],
+      ["GO", ["go","ginecologia e obstetricia","ginecologia e obstetrícia","ginecologia","obstetricia","obstetrícia"]]
+    ];
+    const norm = value => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+    const end = startDay(state.bounds?.end || new Date());
+    const start = new Date(end);
+    start.setDate(end.getDate() - 83);
+    const days = Array.from({length:84},(_,i)=>{ const d=new Date(start); d.setDate(start.getDate()+i); return d; });
+    const key = d => localISO(d);
+    const buckets = new Map(canonical.map(([label])=>[label,new Map()]));
 
     for (const row of attempts || []) {
       if (row.result !== "wrong") continue;
-
-      const label = area(row);
-      const d = new Date(row.answered_at);
-      if (Number.isNaN(d.getTime())) continue;
-
-      const weekday = (d.getDay() + 6) % 7;
-
-      if (!grouped.has(label)) {
-        grouped.set(
-          label,
-          Array.from({ length: 7 }, () => 0)
-        );
-      }
-
-      grouped.get(label)[weekday] += 1;
+      const raw = norm(area(row));
+      const hit = canonical.find(([,aliases])=>aliases.some(x=>raw===norm(x) || raw.includes(norm(x))));
+      if (!hit) continue;
+      const d = parseDate(row.answered_at);
+      if (!d || d < start || d > end) continue;
+      const k = key(d), map = buckets.get(hit[0]);
+      map.set(k,(map.get(k)||0)+1);
     }
 
-    const rows = Array.from(grouped.entries())
-      .map(([label, cells]) => ({
-        label,
-        cells,
-        total: cells.reduce((sum, value) => sum + value, 0)
-      }))
-      .sort((a, b) => b.total - a.total)
-      .slice(0, 10);
-
-    if (!rows.length) {
-      el.innerHTML = '<div class="stats-empty">Ainda não há erros com área registrada para montar o mapa.</div>';
-      return;
-    }
-
-    const max = Math.max(
-      1,
-      ...rows.flatMap(row => row.cells)
-    );
+    const all = canonical.flatMap(([label])=>days.map(d=>buckets.get(label).get(key(d))||0));
+    const max = Math.max(1,...all);
+    const level = value => value<=0 ? 0 : Math.max(1,Math.min(5,Math.ceil((value/max)*5)));
 
     el.innerHTML = `
-      <div class="heatmap-grid area-week">
-        <div class="heatmap-head">Área</div>
-        ${weekdays.map(day => `<div class="heatmap-head">${day}</div>`).join("")}
-
-        ${rows.map(row => `
-          <div class="heatmap-row-label">${esc(row.label)}</div>
-          ${row.cells.map(value => `
-            <div class="heatmap-cell" style="--heat:${heatIntensity(value,max)}">
-              <strong>${value || "—"}</strong>
-              <small>${value === 1 ? "1 erro" : `${value} erros`}</small>
+      <div class="question-error-heatmap">
+        <div class="qeh-head"><span>Área</span><span>Erros ao longo do período</span></div>
+        ${canonical.map(([label])=>`
+          <div class="qeh-row">
+            <strong>${esc(label)}</strong>
+            <div class="qeh-squares">
+              ${days.map(d=>{ const v=buckets.get(label).get(key(d))||0; return `<i class="activity-square level-${level(v)}" title="${esc(label)} · ${key(d)} · ${v} erro${v===1?"":"s"}"></i>`; }).join("")}
             </div>
-          `).join("")}
-        `).join("")}
-      </div>
-      <div class="heatmap-legend"><span>menos</span><span class="heatmap-legend-swatch"></span><span>mais erros</span></div>
-    `;
+          </div>`).join("")}
+        <div class="qeh-legend"><span>Menos erros</span>${[0,1,2,3,4,5].map(n=>`<i class="activity-square level-${n}"></i>`).join("")}<span>Mais erros</span></div>
+      </div>`;
   }
 
   function renderMetricStrip(id, cards) {
