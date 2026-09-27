@@ -857,3 +857,26 @@
  .stats-controls-row{align-items:stretch!important;overflow-x:auto!important}
  .stats-tabs-shell,.stats-range{min-width:max-content!important}
 }
+
+/* v25.1 — remove placeholders decorativos dos cards-resumo */
+[data-stats-panel] .stats-summary-card::before,
+[data-stats-panel] .stats-summary-card:before,
+.error-ref-summary .stats-summary-card::before,
+.error-ref-summary .stats-summary-card:before{
+  content:none!important;
+  display:none!important;
+  width:0!important;
+  height:0!important;
+  background:none!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.error-ref-summary .stats-summary-card span,
+.error-ref-summary .stats-summary-card strong,
+.error-ref-summary .stats-summary-card small,
+.error-ref-summary .stats-summary-card .stats-summary-viz{
+  margin-left:0!important;
+}
+[data-stats-panel] .stats-summary-card{
+  box-shadow:none!important;
+}
