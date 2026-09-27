@@ -386,12 +386,12 @@
       align-items:center;
     }
     .luria-pomodoro-toggle {
-      min-width:112px;
+      min-width:132px;
       height:40px;
       display:flex;
       align-items:center;
-      gap:8px;
-      padding:0 10px;
+      gap:9px;
+      padding:0 13px;
       border:1px solid var(--border);
       border-radius:11px;
       background:var(--surface);
@@ -414,8 +414,8 @@
       stroke-linecap:round;stroke-linejoin:round;
     }
     .luria-pomodoro-copy { display:grid; line-height:1.05; }
-    .luria-pomodoro-copy strong { font-size:10px; font-weight:850; }
-    .luria-pomodoro-copy small { margin-top:2px; font-size:9px; color:var(--muted); font-weight:800; }
+    .luria-pomodoro-copy strong { font-size:11.5px; font-weight:850; }
+    .luria-pomodoro-copy small { margin-top:2px; font-size:10.5px; color:var(--muted); font-weight:850; }
 
     .luria-notification-toggle,
     .luria-profile-toggle {
@@ -423,6 +423,11 @@
       height:40px !important;
       min-width:40px !important;
       border-radius:11px !important;
+    }
+
+    .luria-notification-toggle svg {
+      width:19px !important;
+      height:19px !important;
     }
 
     .luria-profile-toggle {
