@@ -179,8 +179,7 @@
       linear-gradient(180deg,rgba(4,22,42,.18),transparent 24%,transparent 67%,rgba(4,22,42,.60));
   }
 
-  /* Patient micro-animation prototype: lightweight, PWA-only.
-     A masked duplicate moves over the static room so the background stays visually stable. */
+  /* Patient procedural reactions only. No idle eye or breathing motion. */
   .pwa-standalone #plantao-simulator:not([hidden]) #plantao-patient-image{
     z-index:0;
   }
@@ -189,39 +188,22 @@
     display:block!important;
     z-index:1!important;
     pointer-events:none;
-    opacity:1;
+    opacity:0;
     transform-origin:50% 60%;
     -webkit-mask-image:radial-gradient(ellipse 36% 44% at 50% 58%,#000 0 54%,rgba(0,0,0,.96) 67%,rgba(0,0,0,.45) 82%,transparent 100%);
     mask-image:radial-gradient(ellipse 36% 44% at 50% 58%,#000 0 54%,rgba(0,0,0,.96) 67%,rgba(0,0,0,.45) 82%,transparent 100%);
-    animation:plantaoPatientBreath 3.4s ease-in-out infinite;
+    animation:none;
     will-change:transform;
   }
 
-  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-tachypnea #plantao-patient-motion{
-    animation-duration:1.45s;
-  }
-
-  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-bradypnea #plantao-patient-motion{
-    animation-duration:5.8s;
-  }
-
-  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-apnea #plantao-patient-motion,
-  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-unconscious #plantao-patient-motion{
-    animation:none;
-    transform:none;
-  }
-
   .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-shock #plantao-patient-motion{
+    opacity:1;
     animation:plantaoPatientShock .46s cubic-bezier(.2,.75,.25,1);
   }
 
   .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-cpr #plantao-patient-motion{
+    opacity:1;
     animation:plantaoPatientCpr .48s ease-in-out infinite;
-  }
-
-  @keyframes plantaoPatientBreath{
-    0%,100%{transform:translateY(0) scaleY(1)}
-    50%{transform:translateY(-3px) scaleY(1.022)}
   }
 
   @keyframes plantaoPatientShock{
@@ -237,9 +219,6 @@
   }
 
   @media (prefers-reduced-motion:reduce){
-    .pwa-standalone #plantao-simulator:not([hidden]) #plantao-patient-motion{
-      animation-duration:6s!important;
-    }
     .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-shock #plantao-patient-motion,
     .pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.patient-cpr #plantao-patient-motion{
       animation:none!important;
