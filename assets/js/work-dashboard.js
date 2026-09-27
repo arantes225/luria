@@ -143,6 +143,15 @@
       </div>`;
   }
 
+  function cleanWorkTopbar(){
+    const topbar=document.querySelector('body[data-page="trabalho_dashboard"] .topbar');
+    if(!topbar) return;
+    [...topbar.childNodes].forEach(node=>{
+      if(node.nodeType===Node.TEXT_NODE && node.textContent.trim()) node.remove();
+    });
+    topbar.querySelectorAll('[data-work-dashboard-stray="1"]').forEach(el=>el.remove());
+  }
+
   const root=$("work-dashboard-content");
   const buttons=[...document.querySelectorAll("[data-work-layout]")];
   function storageKey(){return `luria:work-dashboard-layout:${window.docmapUser?.id||"guest"}`;}
@@ -157,8 +166,10 @@
   const nameEl=$("work-dashboard-name");
   if(nameEl) nameEl.textContent=`${greeting()}, ${userName()}`;
   const dateEl=$("work-dashboard-date"); if(dateEl) dateEl.textContent=formatDate();
+  cleanWorkTopbar();
   render(readLayout());
   window.addEventListener("docmap:ready",()=>{
+    cleanWorkTopbar();
     if(nameEl) nameEl.textContent=`${greeting()}, ${userName()}`;
     render(readLayout());
   },{once:true});
