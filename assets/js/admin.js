@@ -2480,13 +2480,14 @@
         const review = q.latest_review || {};
         const blindReview = blindByItem.get(String(q.id || "")) || null;
         const fast = fastByItem.get(String(q.id || "")) || {};
-        const routeScore = fast.routing_score ?? q.quality_score;
+        const routeScore = fast.routing_score ?? fast.display_quality_score ?? q.quality_score;
         const score = routeScore == null ? "—" : Number(routeScore).toLocaleString("pt-BR",{maximumFractionDigits:1})+"/100";
         const blindScore = fast.blind_score == null ? "—" : Number(fast.blind_score).toLocaleString("pt-BR",{maximumFractionDigits:1});
         const independentScore = fast.independent_score == null ? "—" : Number(fast.independent_score).toLocaleString("pt-BR",{maximumFractionDigits:1});
         const decisionLabel = fast.routing_decision === "approved" ? "Direto para o lote"
           : fast.routing_decision === "retry" ? "Nova revisão"
           : fast.routing_decision === "excluded" ? "Excluída"
+          : fast.independent_stage === "perplexity_reaudit" ? "Histórico do fluxo antigo"
           : "Aguardando notas";
         return `
           <details class="admin-qf-question">
