@@ -19158,7 +19158,7 @@ function ensureNotebookSideTools() {
   const children=[...col.children]; const core=document.createElement("div"); core.className="notebook-editor-core";
   children.forEach(ch=>core.appendChild(ch));
   const outline=document.createElement("aside"); outline.className="notebook-outline-panel"; outline.innerHTML='<div class="notebook-outline-title">Estrutura</div><div id="notebook-outline-items"></div>';
-  const quick=document.createElement("aside"); quick.className="notebook-quick-panel"; quick.innerHTML='<div class="notebook-quick-title">Ações rápidas</div><button type="button" data-quick="save">Salvar agora</button><button type="button" data-quick="share">Compartilhar</button><button type="button" data-quick="pdf">Exportar PDF</button><button type="button" data-quick="library">Meus cadernos</button>';
+  const quick=document.createElement("aside"); quick.className="notebook-quick-panel"; quick.innerHTML='<div class="notebook-quick-title">Ações rápidas</div><button type="button" data-quick="save">✓ Salvar agora</button><button type="button" data-quick="share">↗ Compartilhar</button><button type="button" data-quick="pdf">↓ Exportar PDF</button><button type="button" data-quick="library">▣ Meus cadernos</button>';
   col.append(outline,core,quick); col.classList.add("with-side-tools");
   quick.querySelector('[data-quick="save"]').onclick=()=>saveCurrentNotebook(true);
   quick.querySelector('[data-quick="library"]').onclick=()=>switchView("library");
