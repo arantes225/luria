@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=2">
+  <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=3">
 </head>
 <body data-page="trabalho_prontuario_rapido">
   <div class="app-shell">
@@ -33,21 +33,45 @@
           <article class="quick-chart-hero">
             <div>
               <h2>Prontuário rápido</h2>
-              <p>Gere um acesso temporário para usar em qualquer computador sem entrar na sua conta do LURIA. O que for escrito no link fica sincronizado aqui.</p>
+              <p>Use sempre o mesmo endereço e o mesmo código em qualquer computador, sem abrir sua conta do LURIA naquele dispositivo.</p>
             </div>
-            <button id="quick-chart-create" class="quick-chart-create" type="button">Gerar acesso externo</button>
+            <a class="quick-chart-create" href="/trabalho/prontuario/" target="_blank" rel="noopener">Abrir página externa</a>
           </article>
 
           <div class="quick-chart-info">
-            <strong>Como funciona:</strong> o link dá acesso somente a um prontuário e expira automaticamente em 12 horas. Sua conta do LURIA não é aberta no computador externo. Você pode encerrar o acesso a qualquer momento.
+            <strong>Endereço fixo:</strong>
+            <code id="quick-chart-public-address">/trabalho/prontuario/</code>
+            <button id="quick-chart-copy-address" type="button">Copiar endereço</button>
           </div>
 
-          <div class="quick-chart-list-head">
-            <h3>Acessos ativos</h3>
-            <span>Sincronização automática</span>
-          </div>
+          <article class="quick-chart-code-card">
+            <div>
+              <span class="quick-chart-eyebrow">Código pessoal fixo</span>
+              <h3 id="quick-chart-code-title">Configure seu código</h3>
+              <p id="quick-chart-code-help">Você vai digitar este mesmo código toda vez que usar um computador externo. Ele não expira; somente o conteúdo do prontuário é apagado automaticamente.</p>
+            </div>
 
-          <div id="quick-chart-session-list" class="quick-chart-list"></div>
+            <div class="quick-chart-code-form">
+              <input id="quick-chart-code-input" type="text" maxlength="32" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Mínimo 10 caracteres">
+              <button id="quick-chart-suggest-code" type="button">Sugerir código</button>
+              <button id="quick-chart-save-code" class="primary" type="button">Salvar código</button>
+            </div>
+
+            <small class="quick-chart-code-note">O código é armazenado apenas como hash. Depois de salvar, o LURIA não consegue mostrá-lo novamente. Se esquecer, basta definir um novo.</small>
+          </article>
+
+          <article class="quick-chart-current">
+            <div class="quick-chart-list-head">
+              <h3>Conteúdo atual</h3>
+              <span id="quick-chart-expiry">Nenhum conteúdo ativo</span>
+            </div>
+            <div id="quick-chart-current-content" class="quick-chart-current-content"></div>
+            <div class="quick-chart-current-actions">
+              <button id="quick-chart-refresh" type="button">Atualizar</button>
+              <button id="quick-chart-clear" class="danger" type="button">Limpar conteúdo</button>
+            </div>
+          </article>
+
           <div id="quick-chart-status" class="quick-chart-status" role="status" aria-live="polite"></div>
         </section>
       </div>
@@ -57,7 +81,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.22-prontuario-rapido"></script>
-  <script src="/assets/js/quick-chart-manager.js?v=2"></script>
+  <script src="/assets/js/quick-chart-manager.js?v=3"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
