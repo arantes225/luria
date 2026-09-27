@@ -685,6 +685,16 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
             <small data-sidebar-streak-status>Comece hoje</small>
           </div>
         </div>
+
+        <a class="user-mini luria-mode-footer-switch"
+           href="/trabalho/"
+           aria-label="Trocar do ambiente Estudos para Trabalho">
+          <div class="user-avatar">T</div>
+          <div class="user-copy">
+            <strong>Trabalho</strong>
+            <small>Trocar ambiente</small>
+          </div>
+        </a>
       `}
     </div>
   `;
