@@ -987,7 +987,11 @@ const PAGE_INFO = {
   trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Trabalho" },
   trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Prescrição" },
   trabalho_exames: { title: "Exames", eyebrow: "Prescrição" },
-  trabalho_scores: { title: "Scores", eyebrow: "Trabalho" }
+  trabalho_scores: { title: "Scores", eyebrow: "Trabalho" },
+  trabalho_procedimentos: { title: "Procedimentos", eyebrow: "Trabalho" },
+  trabalho_antimicrobianos: { title: "Antimicrobianos", eyebrow: "Trabalho" },
+  trabalho_condutas: { title: "Condutas rápidas", eyebrow: "Trabalho" },
+  trabalho_paciente_temporario: { title: "Paciente temporário", eyebrow: "Trabalho" }
 };
 
 
@@ -1168,6 +1172,22 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_scores" ? "active" : ""}" href="/trabalho/scores/">
           <span class="nav-icon">#</span><span>Scores</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_paciente_temporario" ? "active" : ""}" href="/trabalho/paciente-temporario/">
+          <span class="nav-icon">◎</span><span>Paciente temporário</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_procedimentos" ? "active" : ""}" href="/trabalho/procedimentos/">
+          <span class="nav-icon">✚</span><span>Procedimentos</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_antimicrobianos" ? "active" : ""}" href="/trabalho/antimicrobianos/">
+          <span class="nav-icon">⊕</span><span>Antimicrobianos</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_condutas" ? "active" : ""}" href="/trabalho/condutas-rapidas/">
+          <span class="nav-icon">⚡</span><span>Condutas rápidas</span>
         </a>
 
         <div class="nav-group">
