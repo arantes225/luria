@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v149-work-pcr-escala";
+const CACHE_VERSION = "luria-pwa-v150-work-fixed-footer";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -43,7 +43,7 @@ const APP_SHELL = [
   "/assets/css/plantao-pwa-game.css?v=7-no-patient-breath",
   "/assets/css/luria-brand-v5.css",
   "/assets/js/luria-brand-v5.js?v=12",
-  "/assets/js/app.js?v=17.19-work-pcr-escala",
+  "/assets/js/app.js?v=17.20-work-fixed-footer",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
