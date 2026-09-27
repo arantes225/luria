@@ -5,7 +5,9 @@
   const root = document.createElement("div");
   root.id = "dashboard-alternative";
   root.setAttribute("aria-live", "off");
-  page.querySelector(".dashboard-detail-grid")?.before(root);
+  const topbar = page.querySelector(".topbar");
+  if (topbar) topbar.after(root);
+  else page.prepend(root);
   let current = "1";
   let selectedDate = new Date();
   let frame = 0;
@@ -13,7 +15,11 @@
   const escape = (value) => String(value ?? "")
     .replaceAll("&", "&amp;").replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;");
-  const text = (id, fallback = "—") => document.getElementById(id)?.textContent?.trim() || fallback;
+  const text = (id, fallback = "—") => {
+    const stateValue = window.luriaDashboardMetrics?.[id];
+    if (stateValue !== null && stateValue !== undefined && String(stateValue).trim()) return String(stateValue).trim();
+    return document.getElementById(id)?.textContent?.trim() || fallback;
+  };
   const number = (value) => Number(String(value).match(/\d+/)?.[0] || 0);
   const dayISO = (date) => `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
   const readableDate = (date) => new Intl.DateTimeFormat("pt-BR", { weekday: "long", day: "numeric", month: "long" }).format(date);
@@ -33,14 +39,14 @@
     const today = window.luriaDashboardTodayLessons || { completed: 0, total: 0 };
     return {
       done, total, progress, today,
-      streak: number(document.querySelector("#dashboard-streak-card [data-streak-value]")?.textContent || "0"),
+      streak: Number(window.luriaCurrentStreak || 0),
       flashcards: number(text("metric-flashcards", "0")),
       errors: number(text("metric-errors", "0")),
       hours: text("metric-hours", "0h"),
       retention: text("metric-retention"),
       simulations: text("metric-simulations-accuracy"),
-      ccq: text("dashboard-passive-ccq-text", "Seu Pulo do Gato aparecerá aqui."),
-      ccqArea: text("dashboard-passive-ccq-meta", ""),
+      ccq: window.luriaDashboardCcq?.text || "Seu Pulo do Gato aparecerá aqui.",
+      ccqArea: window.luriaDashboardCcq?.area || "",
       areas: window.luriaDashboardAreaSummary || [],
       questions: number(text("metric-questions", "0")),
       simulationsCount: number(text("metric-simulations", "0"))
@@ -277,9 +283,6 @@
     // Renderiza primeiro; só então oculta o Dashboard legado.
     // Evita tela vazia durante reload quando o primeiro frame atrasa.
     render();
-    [".dashboard-detail-grid", ".calendar-panel"].forEach((selector) => {
-      page.querySelector(selector)?.setAttribute("aria-hidden", "true");
-    });
     schedule();
   }
   function enhanceShell() {
