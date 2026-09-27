@@ -2455,7 +2455,7 @@
     if ($("admin-qf-dialog-title")) $("admin-qf-dialog-title").textContent = `L${String(Number(batchNumber)).padStart(3,"0")}-B${String(Number(blockNumber)).padStart(2,"0")} · Bloco ${blockNumber}`;
     if ($("admin-qf-dialog-meta")) {
       const c = data?.counts || {};
-      $("admin-qf-dialog-meta").textContent = `${formatNumber(c.total)} questões · ${formatNumber(c.needs_revision)} a rever · ${formatNumber(c.rejected)} rejeitadas`;
+      $("admin-qf-dialog-meta").textContent = `${formatNumber(c.total)} questões · ${formatNumber(blindReviews.length)} resoluções cegas · ${formatNumber(c.needs_revision)} a rever · ${formatNumber(c.rejected_raw ?? c.rejected)} rejeitadas`;
     }
     if ($("admin-qf-page-info")) $("admin-qf-page-info").textContent = issuesOnly ? `${questions.length} pendências` : `${questions.length} questões`;
 
