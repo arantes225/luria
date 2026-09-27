@@ -2886,40 +2886,11 @@
     color:#fff!important
   }
 
-
-  .agenda-today-head-actions{display:flex;align-items:center;gap:7px}.schedule-filter-wrap{position:relative}.schedule-filter-trigger{width:30px!important;height:30px!important;min-height:30px!important;display:grid!important;place-items:center!important;padding:0!important;border:1px solid var(--border)!important;border-radius:8px!important;background:var(--surface)!important;color:var(--muted)!important}.schedule-filter-trigger svg{width:15px;height:15px}.schedule-filter-trigger.active,.schedule-filter-trigger:hover{color:var(--accent)!important;border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important;background:var(--accent-soft)!important}
-  .schedule-filter-popover{position:absolute;z-index:80;right:0;top:36px;width:210px;padding:11px;border:1px solid var(--border);border-radius:11px;background:var(--surface);box-shadow:0 14px 34px rgba(20,48,84,.17)}.schedule-filter-popover[hidden]{display:none!important}.schedule-filter-popover>strong{display:block;margin-bottom:8px;font-size:9px}.schedule-filter-popover label{display:grid;gap:4px;margin-top:7px;font-size:7px;font-weight:800;color:var(--muted)}.schedule-filter-popover select,.schedule-filter-popover input{width:100%;height:31px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 7px;font-size:8px}.schedule-filter-popover>button{width:100%;height:29px;min-height:29px;margin-top:9px;border:1px solid var(--border);border-radius:7px;background:var(--surface-2);color:var(--text);font-size:8px;font-weight:800}
-  @media(max-width:620px){.agenda-today-head-actions{gap:4px}.schedule-filter-popover{right:-4px;width:min(210px,calc(100vw - 38px))}}
-
-
-  /* Histórico completo: concluídas continuam visíveis */
-  body:not(.schedule-settings-embed) .agenda-today-row.is-completed{
-    opacity:.72!important;background:color-mix(in srgb,var(--activity-color) 3%,var(--surface))!important
-  }
-  body:not(.schedule-settings-embed) .agenda-today-row.is-completed .agenda-today-main strong{
-    text-decoration:none!important
-  }
-  body:not(.schedule-settings-embed) .agenda-today-row.is-completed .agenda-today-time{
-    color:#2fa866!important
-  }
-
-
-  /* Ritmo vertical idêntico aos cards laterais */
-  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
-    margin-top:10px!important
-  }
-  /* hidden precisa prevalecer sobre os displays customizados do planner */
-  body:not(.schedule-settings-embed) #week-planner[hidden],
-  body:not(.schedule-settings-embed) #month-planner[hidden]{
-    display:none!important
-  }
-
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=15">
   <link rel="canonical" href="/cronograma/">
-  <!-- deploy-marker: 2026-09-27-v30-init-recovery -->
 </head>
 <body data-page="cronograma">
 <div class="app-shell">
@@ -3271,10 +3242,6 @@
                 </div>
 
                 <div class="planner-tools">
-                  <div class="schedule-filter-wrap">
-                    <button class="schedule-filter-trigger" type="button" data-filter-trigger="calendar" aria-label="Filtrar calendário" title="Filtros"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-                    <div class="schedule-filter-popover" data-filter-popover="calendar" hidden><strong>Filtrar calendário</strong><label>Tipo<select data-filter-field="calendar:type"><option value="all">Todos</option><option value="lesson">Aulas</option><option value="questions">Questões</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="simulation">Simulados</option><option value="other">Outros</option></select></label><label>Data<input type="date" data-filter-field="calendar:date"></label><label>Matéria<input type="search" placeholder="Ex.: Cardiologia" data-filter-field="calendar:materia"></label><button type="button" data-filter-clear="calendar">Limpar filtros</button></div>
-                  </div>
                   <button id="week-today" class="planner-today" type="button">Hoje</button>
                   <div class="planner-view-toggle" role="group" aria-label="Visualização do planejador">
                     <button id="planner-view-month" class="active" type="button" aria-pressed="true">Mês</button>
@@ -3313,12 +3280,10 @@
                   <span class="agenda-today-icon" aria-hidden="true">▣</span>
                   <div><h3 id="agenda-activities-title">Atividades de hoje</h3><span id="agenda-today-date" class="agenda-today-date"></span></div>
                 </div>
-                <div class="agenda-today-head-actions">
-                  <div class="schedule-filter-wrap"><button class="schedule-filter-trigger" type="button" data-filter-trigger="activities" aria-label="Filtrar atividades" title="Filtros"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="schedule-filter-popover" data-filter-popover="activities" hidden><strong>Filtrar atividades</strong><label>Tipo<select data-filter-field="activities:type"><option value="all">Todos</option><option value="lesson">Aulas</option><option value="questions">Questões</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="simulation">Simulados</option><option value="other">Outros</option></select></label><label>Data<input type="date" data-filter-field="activities:date"></label><label>Matéria<input type="search" placeholder="Ex.: Cardiologia" data-filter-field="activities:materia"></label><button type="button" data-filter-clear="activities">Limpar filtros</button></div></div>
                 <div class="agenda-activity-view-switch" role="group" aria-label="Período das atividades">
                   <button type="button" class="active" data-agenda-scope="today">Hoje</button>
                   <button type="button" data-agenda-scope="all">Todas</button>
-                </div></div>
+                </div>
               </div>
               <div id="agenda-bulk-tools" class="agenda-bulk-tools" hidden>
                 <div class="agenda-bulk-filter">
@@ -3334,7 +3299,10 @@
                   <button id="agenda-bulk-complete" type="button">Confirmar em massa</button>
                 </div>
               </div>
-              
+              <div class="agenda-today-progress">
+                <div class="agenda-today-progress-copy"><span id="agenda-today-progress-text">0 de 0 atividades concluídas</span><strong id="agenda-today-progress-percent">0%</strong></div>
+                <div class="agenda-today-progress-track"><i id="agenda-today-progress-bar"></i></div>
+              </div>
               <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
             </section>
             </div>
@@ -3808,7 +3776,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=31-stable-recovery"></script>
+  <script src="assets/js/cronograma.js?v=32-full-stable"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
