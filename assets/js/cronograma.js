@@ -328,7 +328,7 @@ function formatMonthLabelSchedule(date) {
     year: "numeric"
   }).format(date);
 
-  return label.charAt(0).toUpperCase() + label.slice(1);
+  return (label.charAt(0).toUpperCase() + label.slice(1)).replace(" de ", " ");
 }
 
 function startOfMonthSchedule(date) {
@@ -4691,10 +4691,7 @@ function updatePlannerViewControls() {
   );
 
   if (todayButton) {
-    todayButton.textContent =
-      isMonth
-        ? "Este mês"
-        : "Esta semana";
+    todayButton.textContent = "Hoje";
   }
 }
 
