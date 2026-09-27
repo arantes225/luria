@@ -2084,10 +2084,10 @@
       generation: "Geração",
       chatgpt_initial: "Revisão ChatGPT",
       blind_resolution: "Resolução cega",
-      perplexity_initial: "Revisão independente B",
-      chatgpt_adjudication: "Julgamento ChatGPT",
+      perplexity_initial: "Revisão independente ChatGPT",
+      chatgpt_adjudication: "Julgar parecer + corrigir",
       chatgpt_correction: "Correção ChatGPT",
-      perplexity_reaudit: "Reauditoria cega",
+      perplexity_reaudit: "Revisão cega final",
       human_review: "Aprovação humana"
     };
     return labels[active.next_stage] || active.phase || qfStatusLabel(status);
@@ -2127,8 +2127,10 @@
     const adjudicated = Number(f.adjudicated_count || 0);
     const corrected = Number(f.corrected_count || 0);
     const reaudited = Number(f.reaudit_count || 0);
+    const reauditApproved = Number(f.reaudit_approved_count || 0);
+    const reauditNeedsRevision = Number(f.reaudit_needs_revision_count || 0);
+    const reauditRejected = Number(f.reaudit_rejected_count || 0);
     const machinePending = Number(f.machine_pending_count || 0);
-    const pendingReaudit = Number(blockAction?.next?.pending_reaudit_count ?? Math.max(0, reaudited ? 200 - reaudited : 0));
     const approved = Number(f.machine_approved_count || 0);
     const hadReaudit = Number(f.reaudit_reviews_total || 0) > 0;
 
@@ -2138,7 +2140,7 @@
       { n:3, title:"Resolução cega independente", owner:"ChatGPT", stats:`${blind}/200 resolvidas cegamente` },
       { n:4, title:"Revisão independente do bloco", owner:"ChatGPT", stats:`${perplexityAudited}/200 revisadas · ${perplexityFlagged} com achados` },
       { n:5, title:"Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
-      { n:6, title:"Revisar cegamente as correções", owner:"ChatGPT", stats:`${reaudited}/200 revisadas · ${pendingReaudit} pendentes` },
+      { n:6, title:"Revisar cegamente as correções", owner:"ChatGPT", stats:`${reaudited}/200 revisadas · ${reauditApproved} aprovadas · ${reauditNeedsRevision} revisar · ${reauditRejected} rejeitadas` },
       { n:7, title:"Aceitar para o lote", owner:"Você", stats: humanStatus === "approved" ? "Aprovado e enviado ao lote" : `${approved}/200 aprovadas pela máquina · ${machinePending} ainda não aprovadas` }
     ];
 
@@ -2209,6 +2211,10 @@
         const flow = Array.isArray(state.qfBlockFlow)
           ? state.qfBlockFlow.find(x => Number(x.batch_number) === Number(batch.batch_number) && Number(x.block_number) === n)
           : null;
+        const finalNeedsRevision = Number(flow?.reaudit_needs_revision_count || 0);
+        const finalRejected = Number(flow?.reaudit_rejected_count || 0);
+        const finalFailedCount = finalNeedsRevision + finalRejected;
+        const finalReviewComplete = Number(flow?.reaudit_count || 0) >= Number(block?.target_size || 200);
         const nextStage = String(blockAction?.next?.next_stage || "");
         const independentChunkStage = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(nextStage);
         const independentActionLabel = nextStage === "perplexity_initial"
@@ -2225,6 +2231,17 @@
             </div>
 
             ${renderQuestionFactoryOperationalFlow(batch.batch_number, n, flow, blockAction, human)}
+
+            ${finalReviewComplete && finalFailedCount > 0 ? `
+              <div class="admin-qf-final-choice">
+                <strong>Etapa 6 concluída: ${finalFailedCount} questão${finalFailedCount === 1 ? "" : "ões"} não aprovada${finalFailedCount === 1 ? "" : "s"}</strong>
+                <small>${finalNeedsRevision} para revisar · ${finalRejected} rejeitada${finalRejected === 1 ? "" : "s"}. Escolha o destino final destes itens.</small>
+                <div class="admin-qf-final-choice-actions">
+                  <button class="button primary" type="button" data-qf-final-fix="${Number(batch.batch_number)}:${n}">Copiar novo prompt para corrigir</button>
+                  <button class="button secondary" type="button" data-qf-final-discard="${Number(batch.batch_number)}:${n}" data-qf-final-discard-count="${finalFailedCount}">Apagar ${finalFailedCount} questão${finalFailedCount === 1 ? "" : "ões"}</button>
+                </div>
+              </div>
+            ` : ""}
 
             <button class="button secondary admin-qf-view-block-wide" type="button" data-qf-view-block="${Number(batch.batch_number)}:${n}">${needs || rejected ? "Ver pendências" : "Ver bloco"}</button>
             ${blockAction.provider === "perplexity" ? "" : `<button class="button secondary admin-qf-import-stage-wide" type="button" data-qf-import-stage="${Number(batch.batch_number)}:${n}">Importar etapa</button>`}
@@ -4157,6 +4174,39 @@
     $("admin-qf-import-stage-metrics")?.addEventListener("click", () => openReviewImportDialog(null, null, "metrics"));
     $("admin-qf-start-lot")?.addEventListener("click", startQuestionFactoryLot);
     $("admin-qf-batches")?.addEventListener("click", async event => {
+      const finalFixButton = event.target.closest("[data-qf-final-fix]");
+      if (finalFixButton) {
+        const [batch, block] = finalFixButton.dataset.qfFinalFix.split(":");
+        await copyQuestionFactoryBlockStagePrompt(batch, block, finalFixButton);
+        return;
+      }
+
+      const finalDiscardButton = event.target.closest("[data-qf-final-discard]");
+      if (finalDiscardButton) {
+        const [batch, block] = finalDiscardButton.dataset.qfFinalDiscard.split(":");
+        const count = Number(finalDiscardButton.dataset.qfFinalDiscardCount || 0);
+        const ok = window.confirm("Apagar " + count + " questão" + (count === 1 ? "" : "ões") + " não aprovada" + (count === 1 ? "" : "s") + " da reauditoria final?\n\nElas serão arquivadas em Questões ruins antes da exclusão, e o bloco voltará para geração de reposição.");
+        if (!ok) return;
+        const original = finalDiscardButton.textContent;
+        finalDiscardButton.disabled = true;
+        finalDiscardButton.textContent = "Arquivando e apagando...";
+        const { data, error } = await sb.rpc("admin_question_factory_discard_failed_reaudit", {
+          p_batch_number: Number(batch),
+          p_block_number: Number(block)
+        });
+        if (error) {
+          window.alert(error.message || "Não foi possível apagar as questões.");
+          finalDiscardButton.disabled = false;
+          finalDiscardButton.textContent = original;
+          return;
+        }
+        const deleted = Number(data?.deleted || 0);
+        window.alert(deleted + " questão" + (deleted === 1 ? "" : "ões") + " arquivada" + (deleted === 1 ? "" : "s") + " e removida" + (deleted === 1 ? "" : "s") + ". O bloco voltou para geração de reposição.");
+        await refreshQuestionFactory();
+        await loadQuestionFactoryBlockTracker();
+        return;
+      }
+
       const jsonPartButton = event.target.closest("[data-qf-copy-json-part]");
       if (jsonPartButton) {
         const [batch, block, part] = jsonPartButton.dataset.qfCopyJsonPart.split(":");
