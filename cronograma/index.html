@@ -2738,6 +2738,22 @@
     body:not(.schedule-settings-embed) .agenda-today-menu{padding-right:7px!important}
   }
 
+
+  /* Coluna direita: insights de tempo inspirados na referência */
+  body:not(.schedule-settings-embed) .agenda-insights-side{display:grid!important;gap:10px!important;align-content:start!important;height:auto!important}
+  body:not(.schedule-settings-embed) .agenda-insight-card{padding:12px!important;border:1px solid var(--border)!important;border-radius:14px!important;background:var(--surface)!important;box-shadow:0 4px 16px rgba(20,48,84,.035)!important}
+  .agenda-insight-title{display:flex;align-items:center;gap:7px;margin-bottom:9px}.agenda-insight-title>span{color:var(--accent);font-size:18px}.agenda-insight-title h3{margin:0;font-size:12px;letter-spacing:-.02em}
+  .agenda-insight-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;padding:3px;border-radius:8px;background:var(--surface-2);margin-bottom:10px}
+  .agenda-insight-tabs button{height:24px;min-height:24px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--muted);font-size:8px;font-weight:750}.agenda-insight-tabs button.active{background:var(--accent);color:#fff}.agenda-insight-tabs button:disabled{opacity:.7}
+  .agenda-study-total{display:flex;flex-direction:column;margin-bottom:8px}.agenda-study-total strong{font-size:21px;line-height:1;font-weight:900;letter-spacing:-.04em}.agenda-study-total span{margin-top:3px;color:var(--muted);font-size:8px}
+  .agenda-study-bars{height:104px;display:grid;grid-template-columns:repeat(7,1fr);gap:5px;align-items:end;padding-top:12px;border-bottom:1px solid var(--border)}
+  .agenda-study-day{height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:3px;min-width:0}.agenda-study-value{font-size:6px;font-weight:800;color:var(--text);white-space:nowrap}.agenda-study-bar-track{height:72px;width:min(22px,80%);display:flex;align-items:flex-end}.agenda-study-bar{display:block;width:100%;min-height:2px;border-radius:5px 5px 2px 2px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 75%,#fff),var(--accent))}.agenda-study-label{font-size:7px;font-weight:800;color:var(--muted)}
+  .agenda-category-body{display:grid;grid-template-columns:92px minmax(0,1fr);gap:10px;align-items:center}
+  .agenda-category-donut{width:88px;aspect-ratio:1;border-radius:50%;position:relative;background:conic-gradient(var(--border) 0 100%);display:grid;place-items:center}.agenda-category-donut::after{content:"";position:absolute;inset:17px;border-radius:50%;background:var(--surface)}.agenda-category-donut span{position:relative;z-index:1;font-size:10px;font-weight:900;text-align:center}
+  .agenda-category-legend{display:grid;gap:6px;min-width:0}.agenda-category-item{display:grid;grid-template-columns:7px minmax(0,1fr) auto;gap:5px;align-items:center;font-size:7px}.agenda-category-dot{width:7px;height:7px;border-radius:50%}.agenda-category-copy{min-width:0}.agenda-category-copy strong{display:block;font-size:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.agenda-category-copy span{color:var(--muted);font-size:6px}.agenda-category-pct{font-weight:850}
+  @media(max-width:1050px){body:not(.schedule-settings-embed) .agenda-insights-side{grid-template-columns:1fr 1fr!important}}
+  @media(max-width:620px){body:not(.schedule-settings-embed) .agenda-insights-side{grid-template-columns:1fr!important}.agenda-category-body{grid-template-columns:84px 1fr}.agenda-category-donut{width:80px}}
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3082,46 +3098,24 @@
               <div id="month-planner" class="month-planner"></div>
             </section>
 
-            <aside class="agenda-side agenda-summary-side">
-              <section class="agenda-side-card agenda-week-summary-card">
-                <div class="agenda-side-head agenda-summary-head">
-                  <div>
-                    <span class="agenda-kicker">Visão geral</span>
-                    <h3>Resumo da semana</h3>
-                    <span id="agenda-week-range" class="agenda-today-date"></span>
+            <aside class="agenda-side agenda-summary-side agenda-insights-side">
+              <section class="agenda-insight-card agenda-study-time-card">
+                <div class="agenda-insight-title"><span aria-hidden="true">◷</span><h3>Tempo de estudo</h3></div>
+                <div class="agenda-insight-tabs"><button class="active" type="button">Semana</button><button type="button" disabled>Mês</button><button type="button" disabled>Ano</button></div>
+                <div class="agenda-study-total"><strong id="agenda-study-total">0min</strong><span>Nesta semana</span></div>
+                <div id="agenda-study-bars" class="agenda-study-bars" aria-label="Tempo de estudo por dia"></div>
+              </section>
+              <section class="agenda-insight-card agenda-category-card">
+                <div class="agenda-insight-title"><span aria-hidden="true">◔</span><h3>Distribuição por categoria</h3></div>
+                <div class="agenda-insight-tabs"><button class="active" type="button">Semana</button><button type="button" disabled>Mês</button><button type="button" disabled>Ano</button></div>
+                <div class="agenda-category-body">
+                  <div class="agenda-category-donut-wrap">
+                    <div id="agenda-category-donut" class="agenda-category-donut"><span id="agenda-category-total">0min</span></div>
                   </div>
-                </div>
-
-                <div class="agenda-summary-metrics">
-                  <div class="agenda-summary-metric">
-                    <span class="agenda-summary-icon">▣</span>
-                    <div><strong id="agenda-week-total">0</strong><span>atividades</span></div>
-                  </div>
-                  <div class="agenda-summary-metric">
-                    <span class="agenda-summary-icon">◷</span>
-                    <div><strong id="agenda-week-days">0</strong><span>dias ativos</span></div>
-                  </div>
-                  <div class="agenda-summary-metric">
-                    <span class="agenda-summary-icon">!</span>
-                    <div><strong id="agenda-week-overdue">0</strong><span>atrasadas</span></div>
-                  </div>
-                </div>
-
-                <div class="agenda-distribution">
-                  <div class="agenda-distribution-head">
-                    <strong>Distribuição por atividade</strong>
-                    <span id="agenda-distribution-total">0</span>
-                  </div>
-                  <div class="agenda-donut-row">
-                    <div id="agenda-donut" class="agenda-donut" aria-label="Distribuição semanal"></div>
-                    <div id="agenda-distribution-legend" class="agenda-distribution-legend">
-                      <span class="agenda-empty">Sem atividades nesta semana.</span>
-                    </div>
-                  </div>
+                  <div id="agenda-category-legend" class="agenda-category-legend"><span class="agenda-empty">Sem tempo registrado.</span></div>
                 </div>
               </section>
-            </aside>
-          </div>
+            </aside>          </div>
 
           <div class="agenda-bottom-grid">
             <section class="agenda-side-card agenda-today-card">
