@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v154-pcr-export-log";
+const CACHE_VERSION = "luria-pwa-v155-pcr-rosc-pause";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -60,7 +60,7 @@ const APP_SHELL = [
   "/assets/js/onboarding.js?v=2.4",
   "/assets/css/onboarding.css?v=1.9",
   "/assets/js/storage-router.js?v=1.0.0",
-  "/assets/js/trabalho-pcr.js?v=4-export-log",
+  "/assets/js/trabalho-pcr.js?v=5-rosc-pause",
   "/assets/js/pwa.js",
   "/assets/img/logos/logo-principal.png",
 ];
