@@ -663,7 +663,12 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         <a class="user-mini luria-mode-footer-switch"
            href="/dashboard/"
            aria-label="Trocar do ambiente Trabalho para Estudos">
-          <div class="user-avatar">E</div>
+          <div class="user-avatar luria-mode-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5v-16Z"></path>
+              <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5A2.5 2.5 0 0 1 20 21.5v-16Z"></path>
+            </svg>
+          </div>
           <div class="user-copy">
             <strong>Estudos</strong>
             <small>Trocar ambiente</small>
@@ -689,7 +694,14 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         <a class="user-mini luria-mode-footer-switch"
            href="/trabalho/"
            aria-label="Trocar do ambiente Estudos para Trabalho">
-          <div class="user-avatar">T</div>
+          <div class="user-avatar luria-mode-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M6 3v7a4 4 0 0 0 8 0V3"></path>
+              <path d="M4 3h4M12 3h4"></path>
+              <path d="M10 14v2a4 4 0 0 0 8 0v-2"></path>
+              <circle cx="18" cy="12" r="2"></circle>
+            </svg>
+          </div>
           <div class="user-copy">
             <strong>Trabalho</strong>
             <small>Trocar ambiente</small>
