@@ -649,3 +649,23 @@
 @media(max-width:1050px){
  [data-stats-panel="geral"] .stats-block-grid{grid-template-columns:1fr!important;grid-template-areas:"heat" "habit" "dist" "prog" "area" "ins"!important}
 }
+
+/* v24.4 — Questões: 4 KPIs largos + mapa de calor por área */
+[data-stats-panel="questoes"] .stats-summary-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+[data-stats-panel="questoes"] .stats-summary-card{min-height:104px!important;padding:15px 16px!important}
+[data-stats-panel="questoes"] .stats-summary-card strong{font-size:23px!important}
+[data-stats-panel="questoes"] .stats-summary-card:nth-child(n+5){display:none!important}
+[data-stats-panel="questoes"] .stats-block:nth-child(2){min-height:250px!important}
+[data-stats-panel="questoes"] #question-area-week-heatmap{display:flex!important;align-items:center!important;min-height:205px!important;padding:2px 0!important}
+.question-error-heatmap{width:100%;display:grid;gap:10px}
+.qeh-head,.qeh-row{display:grid;grid-template-columns:88px minmax(0,1fr);gap:10px;align-items:center}
+.qeh-head{font-size:7px;color:var(--muted);font-weight:750}
+.qeh-row>strong{font-size:8px;color:var(--text);font-weight:750;white-space:nowrap}
+.qeh-squares{display:grid;grid-template-columns:repeat(28,11px);grid-auto-rows:11px;gap:3px;overflow:hidden}
+.qeh-squares .activity-square{width:11px!important;height:11px!important;border-radius:2.5px!important}
+.qeh-legend{display:flex;align-items:center;justify-content:flex-end;gap:4px;font-size:6.5px;color:var(--muted);padding-top:2px}
+.qeh-legend .activity-square{width:9px!important;height:9px!important;border-radius:2px!important}
+@media(max-width:900px){
+ [data-stats-panel="questoes"] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .qeh-squares{grid-template-columns:repeat(14,11px)}
+}
