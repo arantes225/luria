@@ -5977,3 +5977,31 @@ iniciarApp();
   ["pointerdown","keydown","touchstart","input","change"].forEach(ev=>document.addEventListener(ev,touch,{passive:true,capture:true}));
   window.LuriaStudyTimer={start,pause,resume,finish:flush,touch,setExternalQuestions,getState:()=>state,getElapsedSeconds:elapsed};
 })();
+
+/* PWA global topbar v30 — compact, aligned and scrolls with the page */
+(function(){
+  const style=document.createElement("style");
+  style.id="luria-pwa-topbar-v30";
+  style.textContent=`
+  @media(max-width:980px){
+    html.pwa-standalone,html.pwa-standalone body{height:auto!important;min-height:100%!important;overflow-x:hidden!important;overflow-y:auto!important}
+    html.pwa-standalone body .app-shell{height:auto!important;min-height:100dvh!important;overflow:visible!important}
+    html.pwa-standalone body .main{height:auto!important;min-height:100dvh!important;overflow:visible!important;padding-top:max(10px,env(safe-area-inset-top))!important}
+    html.pwa-standalone body .page{height:auto!important;min-height:0!important;overflow:visible!important}
+    html.pwa-standalone body .topbar{position:relative!important;top:auto!important;z-index:40!important;width:100%!important;min-width:0!important;min-height:44px!important;height:auto!important;margin:0 0 12px!important;padding:0!important;display:grid!important;grid-template-columns:40px minmax(0,1fr) auto!important;align-items:center!important;gap:9px!important;background:transparent!important;transform:none!important}
+    html.pwa-standalone body .topbar .menu-open{display:grid!important;width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;margin:0!important;align-self:center!important}
+    html.pwa-standalone body .topbar .page-heading{min-width:0!important;max-width:100%!important;align-self:center!important;overflow:hidden!important}
+    html.pwa-standalone body .topbar .page-heading .eyebrow{margin:0 0 2px!important;font-size:7px!important;line-height:1.1!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+    html.pwa-standalone body .topbar .page-heading h1{margin:0!important;font-size:17px!important;line-height:1.12!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+    html.pwa-standalone body .topbar .luria-notifications{position:relative!important;top:auto!important;right:auto!important;width:auto!important;min-width:0!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:6px!important;z-index:45!important}
+    html.pwa-standalone body .luria-pomodoro-toggle{width:40px!important;min-width:40px!important;height:40px!important;padding:0!important;display:grid!important;place-items:center!important;border-radius:11px!important}
+    html.pwa-standalone body .luria-pomodoro-icon{width:20px!important;height:20px!important;flex:0 0 20px!important}
+    html.pwa-standalone body .luria-pomodoro-icon svg{width:20px!important;height:20px!important}
+    html.pwa-standalone body .luria-pomodoro-copy{display:none!important}
+    html.pwa-standalone body .luria-notification-toggle,html.pwa-standalone body .luria-profile-toggle{width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;border-radius:11px!important}
+    html.pwa-standalone body .luria-profile-toggle{font-size:21px!important}
+    html.pwa-standalone body .luria-notification-panel,html.pwa-standalone body .luria-pomodoro-panel,html.pwa-standalone body .luria-profile-menu{position:fixed!important;top:calc(env(safe-area-inset-top) + 56px)!important;right:8px!important;left:auto!important;max-width:calc(100vw - 16px)!important;z-index:2147483000!important}
+  }
+  `;
+  document.head.appendChild(style);
+})();
