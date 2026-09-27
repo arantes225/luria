@@ -3702,8 +3702,14 @@
     }
     $("plantao-action-drawer").hidden=true;
     $("plantao-action-tabs").inert=false;
-    renderDebrief(score,missingRequired,missingRecommended);
+    // Abra o debrief antes de preencher os blocos: um card opcional ausente
+    // nunca mais deve impedir a navegação após o encerramento do caso.
     show("plantao-debrief");
+    try{
+      renderDebrief(score,missingRequired,missingRecommended);
+    }catch(error){
+      console.error("Plantão: falha parcial ao renderizar o debriefing",error);
+    }
   }
 
   function actionLabel(id) {
@@ -3716,18 +3722,24 @@
     const required=E.requiredActions ? E.requiredActions(state.current) : (rules.required_actions||[]);
     const missingRequired=required.filter(x=>!done(x));
     const missingRecommended=(rules.recommended_actions||[]).filter(x=>!done(x));
-    renderDebrief(0,missingRequired,missingRecommended);
-    $("plantao-diagnosis").textContent="Óbito durante a simulação — "+state.deathReason;
     show("plantao-debrief");
+    try{
+      renderDebrief(0,missingRequired,missingRecommended);
+      const diagnosisEl=$("plantao-diagnosis");
+      if(diagnosisEl) diagnosisEl.textContent="Óbito durante a simulação — "+state.deathReason;
+    }catch(error){
+      console.error("Plantão: falha parcial ao renderizar o debriefing de óbito",error);
+    }
   }
 
   function renderDebrief(score,missingRequired,missingRecommended) {
     const d=state.current.debrief || {};
-    $("plantao-debrief-title").textContent=state.current.title;
-    $("plantao-diagnosis").textContent=d.diagnosis || "";
-    $("plantao-final-score").textContent=score;
-    $("plantao-pulo").textContent=d.pulo_do_gato || "";
-    $("plantao-case-explanation").innerHTML=[
+    const debriefTitle=$("plantao-debrief-title"); if(debriefTitle) debriefTitle.textContent=state.current.title;
+    const diagnosisEl=$("plantao-diagnosis"); if(diagnosisEl) diagnosisEl.textContent=d.diagnosis || "";
+    const finalScoreEl=$("plantao-final-score"); if(finalScoreEl) finalScoreEl.textContent=score;
+    const puloEl=$("plantao-pulo"); if(puloEl) puloEl.textContent=d.pulo_do_gato || "";
+    const caseExplanationEl=$("plantao-case-explanation");
+    if(caseExplanationEl) caseExplanationEl.innerHTML=[
       ["O que costuma ter?",d.o_que_costuma_ter||d.epidemiologia||d.explanation||d.explicacao||""],
       ["O que está acontecendo?",d.o_que_esta_acontecendo||d.quadro_clinico||d.explanation||d.explicacao||""],
       ["Como aparece no plantão?",d.como_aparece_no_plantao||d.apresentacao||state.current?.summary||""],
@@ -3740,7 +3752,8 @@
     const positive=eventCount("essencial")+eventCount("benefica");
     const harmful=eventCount("malefica")+eventCount("mortal");
 
-    $("plantao-performance").innerHTML=[
+    const performanceEl=$("plantao-performance");
+    if(performanceEl) performanceEl.innerHTML=[
       ["Tempo",fmtTime(state.elapsed)],
       ["Penalidades","−"+E.score(state.current,state).penalties+" pontos"],
       ["Hipótese",state.diagnosis?.label||"Não definida"],
@@ -3762,7 +3775,7 @@
     const key=[...(d.key_actions||[]),d.scoring_note].filter(Boolean).map(text=>`<div class="plantao-review-item"><span>✓</span><span>${esc(text)}</span></div>`);
     if (missingRequired.length) key.push(...missingRequired.map(id=>`<div class="plantao-review-item"><span>!</span><span>Você não realizou: ${esc(actionLabel(id))}</span></div>`));
     if (missingRecommended.length) key.push(...missingRecommended.slice(0,4).map(id=>`<div class="plantao-review-item"><span>–</span><span>Poderia acrescentar: ${esc(actionLabel(id))}</span></div>`));
-    $("plantao-key-actions").innerHTML=key.join("");
+    const keyActionsEl=$("plantao-key-actions"); if(keyActionsEl) keyActionsEl.innerHTML=key.join("");
 
     const sequence=state.sequenceViolations.map(item=>
       '<div class="plantao-review-item plantao-sequence-item"><span>↳</span><span><strong>'+
@@ -3772,17 +3785,17 @@
     const expectedSequence=(d.sequence_errors||[]).map(text=>
       '<div class="plantao-review-item plantao-sequence-item"><span>•</span><span><strong>Ponto crítico de sequência:</strong> '+esc(text)+'</span></div>'
     );
-    $("plantao-sequence-errors").innerHTML=[...sequence,...expectedSequence].join("")||'<div class="plantao-review-item"><span>✓</span><span>Nenhum erro de sequência registrado.</span></div>';
+    const sequenceErrorsEl=$("plantao-sequence-errors"); if(sequenceErrorsEl) sequenceErrorsEl.innerHTML=[...sequence,...expectedSequence].join("")||'<div class="plantao-review-item"><span>✓</span><span>Nenhum erro de sequência registrado.</span></div>';
 
     const wrongEvents=state.clinicalEvents.filter(x=>x.level==="malefica"||x.level==="mortal");
     const expectedWrong=(d.wrong_actions||[]).map(text=>`<div class="plantao-review-item"><span>•</span><span>${esc(text)}</span></div>`);
     const performedWrong=wrongEvents.map(item=>`<div class="plantao-review-item"><span>!</span><span><strong>${esc(item.action_label)}:</strong> ${esc(item.reason||"Conduta inadequada para o contexto clínico.")}</span></div>`);
-    $("plantao-wrong-actions").innerHTML=[...performedWrong,...expectedWrong].join("")||'<div class="plantao-review-item"><span>✓</span><span>Nenhuma conduta errada prevista ou registrada.</span></div>';
+    const wrongActionsEl=$("plantao-wrong-actions"); if(wrongActionsEl) wrongActionsEl.innerHTML=[...performedWrong,...expectedWrong].join("")||'<div class="plantao-review-item"><span>✓</span><span>Nenhuma conduta errada prevista ou registrada.</span></div>';
 
     const danger=(d.dangerous_actions||[]).map(text=>`<div class="plantao-review-item"><span>!</span><span>${esc(text)}</span></div>`);
-    $("plantao-danger-actions").innerHTML=danger.join("");
+    const dangerActionsEl=$("plantao-danger-actions"); if(dangerActionsEl) dangerActionsEl.innerHTML=danger.join("");
 
-    $("plantao-sources").innerHTML=(state.current.source_refs||[]).map(src=>`<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">${esc(src.title)}</a>`).join("");
+    const sourcesEl=$("plantao-sources"); if(sourcesEl) sourcesEl.innerHTML=(state.current.source_refs||[]).map(src=>`<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">${esc(src.title)}</a>`).join("");
   }
 
   async function pruneCaseHistory(caseId) {
