@@ -82,6 +82,9 @@
     uterus: '<path d="M8 8c-1-3-4-4-6-2 0 3 2 6 5 6m9-4c1-3 4-4 6-2 0 3-2 6-5 6M8 8c0 3 1 5 4 5s4-2 4-5m-9 4c0 5 3 6 5 6s5-1 5-6m-5 6v4"/>'
   };
   function icon(name) {
+    if (typeof window.LuriaIcon === "function") {
+      return window.LuriaIcon(name, `dl-icon dl-icon-${name}`);
+    }
     return `<svg class="dl-icon dl-icon-${name}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name] || iconPaths.file}</svg>`;
   }
 
@@ -167,7 +170,7 @@
   }
 
   function layout3(data) {
-    return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-progress dl-overview">${heading(icon("calendar"), "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section>${streak(data)}${cat(data)}<section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section><section class="dl-card dl-performance">${heading(icon("chart"), "Meu desempenho", "/estatisticas/")}<div class="dl-performance-grid"><a href="/cronograma/"><span>${icon("book")}</span><small>Aulas</small><strong>${data.done}</strong></a><a href="/questoes-simulados/"><span>${icon("file")}</span><small>Simulados</small><strong>${escape(data.simulations)}</strong></a><a href="/flashcards/"><span>${icon("cards")}</span><small>Flashcards</small><strong>${data.flashcards}</strong></a><a href="/estatisticas/"><span>${icon("refresh")}</span><small>Retenção</small><strong>${escape(data.retention)}</strong></a></div>${areas(data)}</section><section class="dl-card dl-shortcuts">${heading(icon("notebook"), "Meus cadernos", "/caderno/")}<div><a href="/caderno/">Anotações →</a><a href="/caderno-erros/">Caderno de erros →</a></div></section><section class="dl-card dl-shortcuts">${heading(icon("calendar"), "Meus flashcards", "/flashcards/")}<p>${data.flashcards} cartão${data.flashcards === 1 ? "" : "ões"} pendente${data.flashcards === 1 ? "" : "s"}</p><a class="dl-primary" href="/flashcards/">Iniciar revisão</a></section><section class="dl-card dl-shortcuts">${heading(icon("simulation"), "Meus simulados", "/questoes-simulados/")}<p>Última precisão: ${escape(data.simulations)}</p><a class="dl-primary" href="/questoes-simulados/">Ver simulados</a></section></div>`;
+    return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-progress dl-overview">${heading(icon("calendar"), "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section>${streak(data)}${cat(data)}<section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section><section class="dl-card dl-performance">${heading(icon("chart"), "Meu desempenho", "/estatisticas/")}<div class="dl-performance-grid"><a href="/cronograma/"><span>${icon("book")}</span><small>Aulas</small><strong>${data.done}</strong></a><a href="/questoes-simulados/"><span>${icon("simulation")}</span><small>Simulados</small><strong>${escape(data.simulations)}</strong></a><a href="/flashcards/"><span>${icon("cards")}</span><small>Flashcards</small><strong>${data.flashcards}</strong></a><a href="/estatisticas/"><span>${icon("refresh")}</span><small>Retenção</small><strong>${escape(data.retention)}</strong></a></div>${areas(data)}</section><section class="dl-card dl-shortcuts">${heading(icon("notebook"), "Meus cadernos", "/caderno/")}<div><a href="/caderno/">Anotações →</a><a href="/caderno-erros/">Caderno de erros →</a></div></section><section class="dl-card dl-shortcuts">${heading(icon("cards"), "Meus flashcards", "/flashcards/")}<p>${data.flashcards} cartão${data.flashcards === 1 ? "" : "ões"} pendente${data.flashcards === 1 ? "" : "s"}</p><a class="dl-primary" href="/flashcards/">Iniciar revisão</a></section><section class="dl-card dl-shortcuts">${heading(icon("simulation"), "Meus simulados", "/questoes-simulados/")}<p>Última precisão: ${escape(data.simulations)}</p><a class="dl-primary" href="/questoes-simulados/">Ver simulados</a></section></div>`;
   }
 
   async function loadDailyChallengeAccuracy() {
@@ -201,7 +204,7 @@
     const summaryMetrics = [
       ["calendar", "Horas de aula", data.hours, "/estatisticas/"],
       ["book", "Aulas concluídas", `${data.done}/${data.total}`, "/cronograma/"],
-      ["file", "Simulados", data.simulationsCount || data.simulations || "—", "/questoes-simulados/"],
+      ["simulation", "Simulados", data.simulationsCount || data.simulations || "—", "/questoes-simulados/"],
       ["cards", "Flashcards pendentes", String(data.flashcards), "/flashcards/"]
     ];
     const challengeValue = Number.isFinite(data.challengeAccuracy) ? `${data.challengeAccuracy}%` : "Novo";
@@ -280,7 +283,7 @@
         <div class="dl5-metrics">
           <a class="dl5-metric" href="/cronograma/"><span class="dl5-metric-icon is-blue">${icon("book")}</span><div><small>Aulas concluídas</small><strong>${data.done}</strong><em>↗ progresso do cronograma</em></div></a>
           <a class="dl5-metric" href="/questoes-simulados/"><span class="dl5-metric-icon is-orange">${icon("file")}</span><div><small>Questões resolvidas</small><strong>${data.questions || "—"}</strong><em>↗ desempenho em questões</em></div></a>
-          <a class="dl5-metric" href="/questoes-simulados/"><span class="dl5-metric-icon is-green">${icon("target")}</span><div><small>Simulados feitos</small><strong>${data.simulationsCount || "—"}</strong><em>↗ histórico de simulados</em></div></a>
+          <a class="dl5-metric" href="/questoes-simulados/"><span class="dl5-metric-icon is-green">${icon("simulation")}</span><div><small>Simulados feitos</small><strong>${data.simulationsCount || "—"}</strong><em>↗ histórico de simulados</em></div></a>
           <a class="dl5-metric" href="/estatisticas/"><span class="dl5-metric-icon is-purple">◷</span><div><small>Horas de estudo</small><strong>${escape(data.hours)}</strong><em>esta semana</em></div></a>
         </div>
 
@@ -327,7 +330,7 @@
 
         <div class="dl5-bottom">
           <section class="dl5-card dl5-sims">
-            <div class="dl5-title"><h3>${icon("file")} Últimos simulados</h3><a href="/questoes-simulados/">›</a></div>
+            <div class="dl5-title"><h3>${icon("simulation")} Últimos simulados</h3><a href="/questoes-simulados/">›</a></div>
             <div class="dl5-sim-list">
               ${recent.map((item,i)=>`<a href="/questoes-simulados/"><div><strong>${escape(item[0])}</strong><small>${escape(item[2])}</small></div><span>${escape(item[1] || "—")}</span><em>›</em></a>`).join("")}
             </div>
