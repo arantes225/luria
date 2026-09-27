@@ -28,3 +28,36 @@
   load();
   window.addEventListener("docmap:ready", load, { once: true });
 })();
+
+
+(() => {
+  const allowed = new Set(["detailed", "simple"]);
+  const options = document.getElementById("work-dashboard-layout-options");
+  const status = document.getElementById("work-dashboard-layout-status");
+  if (!options) return;
+
+  function key() {
+    return `luria:work-dashboard-layout:${window.docmapUser?.id || "guest"}`;
+  }
+
+  function load() {
+    let selected = "detailed";
+    try { selected = localStorage.getItem(key()) || "detailed"; } catch {}
+    const input = options.querySelector(`input[value="${allowed.has(selected) ? selected : "detailed"}"]`);
+    if (input) input.checked = true;
+  }
+
+  options.addEventListener("change", (event) => {
+    const value = event.target?.value;
+    if (!allowed.has(value)) return;
+    try {
+      localStorage.setItem(key(), value);
+      if (status) status.textContent = "Layout do Trabalho salvo.";
+    } catch {
+      if (status) status.textContent = "Não foi possível salvar a escolha neste dispositivo.";
+    }
+  });
+
+  load();
+  window.addEventListener("docmap:ready", load, { once: true });
+})();
