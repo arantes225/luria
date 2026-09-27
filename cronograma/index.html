@@ -2657,6 +2657,52 @@
     body:not(.schedule-settings-embed) .agenda-today-main{grid-template-columns:auto minmax(0,1fr)!important}
   }
 
+
+  /* Semana compacta: 7 dias sempre visíveis */
+  body:not(.schedule-settings-embed) .week-planner:not([hidden]){
+    display:block!important;width:100%!important;overflow:hidden!important;border:0!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix{width:100%!important;overflow:hidden!important}
+  body:not(.schedule-settings-embed) .week-matrix-grid{
+    width:100%!important;min-width:0!important;
+    grid-template-columns:minmax(82px,1.05fr) repeat(7,minmax(0,1fr))!important;
+    border-radius:10px!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-label,
+  body:not(.schedule-settings-embed) .week-matrix-head,
+  body:not(.schedule-settings-embed) .week-matrix-cell{
+    min-width:0!important;min-height:32px!important;padding:3px 4px!important;gap:4px!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-label{font-size:8px!important}
+  body:not(.schedule-settings-embed) .week-matrix-head{font-size:8px!important;gap:0!important}
+  body:not(.schedule-settings-embed) .week-matrix-head strong{font-size:10px!important}
+  body:not(.schedule-settings-embed) .week-category-label{gap:5px!important;white-space:nowrap!important;overflow:hidden!important}
+  body:not(.schedule-settings-embed) .week-category-icon{
+    width:18px!important;height:18px!important;flex:0 0 18px!important;border-radius:5px!important
+  }
+  body:not(.schedule-settings-embed) .week-category-icon .week-category-svg{width:10px!important;height:10px!important}
+  body:not(.schedule-settings-embed) .week-dot{width:7px!important;height:7px!important}
+  @media(max-width:900px){
+    body:not(.schedule-settings-embed) .week-matrix{overflow:hidden!important}
+    body:not(.schedule-settings-embed) .week-matrix-grid{
+      min-width:0!important;grid-template-columns:minmax(72px,.95fr) repeat(7,minmax(0,1fr))!important
+    }
+  }
+  @media(max-width:520px){
+    body:not(.schedule-settings-embed) .week-matrix-grid{
+      grid-template-columns:minmax(62px,.9fr) repeat(7,minmax(0,1fr))!important
+    }
+    body:not(.schedule-settings-embed) .week-matrix-label,
+    body:not(.schedule-settings-embed) .week-matrix-head,
+    body:not(.schedule-settings-embed) .week-matrix-cell{min-height:29px!important;padding:2px!important}
+    body:not(.schedule-settings-embed) .week-category-icon{width:15px!important;height:15px!important;flex-basis:15px!important}
+    body:not(.schedule-settings-embed) .week-category-icon .week-category-svg{width:8px!important;height:8px!important}
+    body:not(.schedule-settings-embed) .week-category-label strong{font-size:7px!important;overflow:hidden!important;text-overflow:ellipsis!important}
+    body:not(.schedule-settings-embed) .week-matrix-head span{font-size:7px!important}
+    body:not(.schedule-settings-embed) .week-matrix-head strong{font-size:9px!important}
+    body:not(.schedule-settings-embed) .week-dot{width:6px!important;height:6px!important}
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
