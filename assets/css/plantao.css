@@ -3802,3 +3802,95 @@ body[data-page="plantao"] .plantao-phone-bubble p strong,
 body[data-page="plantao"] .plantao-phone-bubble p b{
   font-weight:850;
 }
+
+
+/* LuriaZap — contraste dark + scrollbar temática */
+:root[data-theme="dark"] body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station{
+  padding:6px!important;
+  border:1px solid rgba(255,255,255,.18)!important;
+  border-radius:48px!important;
+  background:
+    linear-gradient(145deg,#e6ebf0 0%,#9aa7b5 14%,#5f6d7a 30%,#dce3e9 50%,#7f8c99 68%,#cbd4dc 84%,#596671 100%)!important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.06),
+    0 18px 46px rgba(0,0,0,.52),
+    0 0 28px rgba(79,127,184,.16)!important;
+}
+:root[data-theme="dark"] body.plantao-phone-mode #plantao-telefone .plantao-phone-device{
+  border-color:#b7c1cb!important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.18),
+    0 0 0 1px rgba(0,0,0,.72)!important;
+}
+
+/* Scrollbar do inbox e da conversa */
+body[data-page="plantao"] .plantao-phone-inbox,
+body[data-page="plantao"] .plantao-phone-chat-body{
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in srgb,var(--accent) 78%,var(--surface) 22%) color-mix(in srgb,var(--surface-2) 88%,transparent);
+}
+body[data-page="plantao"] .plantao-phone-inbox::-webkit-scrollbar,
+body[data-page="plantao"] .plantao-phone-chat-body::-webkit-scrollbar{
+  width:7px;
+}
+body[data-page="plantao"] .plantao-phone-inbox::-webkit-scrollbar-track,
+body[data-page="plantao"] .plantao-phone-chat-body::-webkit-scrollbar-track{
+  background:color-mix(in srgb,var(--surface-2) 82%,transparent);
+  border-radius:999px;
+  margin:6px 0;
+}
+body[data-page="plantao"] .plantao-phone-inbox::-webkit-scrollbar-thumb,
+body[data-page="plantao"] .plantao-phone-chat-body::-webkit-scrollbar-thumb{
+  background:linear-gradient(
+    180deg,
+    color-mix(in srgb,var(--accent) 92%,#fff 8%),
+    color-mix(in srgb,var(--accent-strong) 92%,#000 8%)
+  );
+  border:1px solid color-mix(in srgb,var(--surface) 76%,transparent);
+  border-radius:999px;
+  min-height:32px;
+}
+body[data-page="plantao"] .plantao-phone-inbox::-webkit-scrollbar-thumb:hover,
+body[data-page="plantao"] .plantao-phone-chat-body::-webkit-scrollbar-thumb:hover{
+  background:var(--accent);
+}
+
+/* Botão + sempre destacado e coerente com o tema */
+body[data-page="plantao"] .plantao-phone-new-chat-fab{
+  background:var(--accent)!important;
+  color:#fff!important;
+  border:2px solid color-mix(in srgb,#fff 80%,var(--accent) 20%)!important;
+  box-shadow:
+    0 10px 28px color-mix(in srgb,var(--accent) 38%,transparent),
+    0 0 0 4px color-mix(in srgb,var(--accent) 16%,transparent)!important;
+  font-weight:700!important;
+}
+:root[data-theme="dark"] body[data-page="plantao"] .plantao-phone-new-chat-fab{
+  background:#4F7FB8!important;
+  border-color:#dbe8f5!important;
+  color:#fff!important;
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.42),
+    0 0 0 4px rgba(79,127,184,.28),
+    0 0 22px rgba(79,127,184,.34)!important;
+}
+:root[data-theme="leila-mood"] body[data-page="plantao"] .plantao-phone-new-chat-fab,
+:root[data-theme="pink-mood"] body[data-page="plantao"] .plantao-phone-new-chat-fab,
+:root[data-theme="pink"] body[data-page="plantao"] .plantao-phone-new-chat-fab{
+  background:#e7357d!important;
+  border-color:#ffd9e8!important;
+  box-shadow:
+    0 10px 28px rgba(231,53,125,.28),
+    0 0 0 4px rgba(231,53,125,.14)!important;
+}
+
+/* No PWA full-screen não existe moldura externa; mantém o destaque só no conteúdo. */
+@media(max-width:680px){
+  :root[data-theme="dark"] body.plantao-phone-mode #plantao-telefone .plantao-phone-layout>.plantao-phone-station{
+    padding:0!important;
+    border:0!important;
+    border-radius:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+}
