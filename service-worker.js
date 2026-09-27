@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v162-dashboard-pattern";
+const CACHE_VERSION = "luria-pwa-v163-dashboard-refresh";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -49,8 +49,8 @@ const APP_SHELL = [
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
-  "/assets/css/dashboard-layouts.css?v=1",
-  "/assets/js/dashboard-layouts.js?v=1",
+  "/assets/css/dashboard-layouts.css?v=4-bg-classic",
+  "/assets/js/dashboard-layouts.js?v=3-streak-sync",
   "/assets/js/dashboard-layout-settings.js?v=1",
   "/assets/img/dashboard-layouts/opcao-1.webp",
   "/assets/img/dashboard-layouts/opcao-2.webp",
@@ -62,7 +62,7 @@ const APP_SHELL = [
   "/assets/css/onboarding.css?v=1.9",
   "/assets/js/storage-router.js?v=1.0.0",
   "/assets/js/trabalho-pcr.js?v=8-pwa-causes",
-  "/assets/js/pwa.js",
+  "/assets/js/pwa.js?v=4-force-refresh",
   "/assets/img/logos/logo-principal.png",
 ];
 
