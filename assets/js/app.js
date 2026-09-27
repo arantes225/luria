@@ -3146,7 +3146,10 @@ function ensureNotificationCenter() {
 
         <div id="luria-timer-view" class="luria-timer-view">
           <div id="luria-stopwatch-time" class="luria-pomodoro-time">00:00</div>
-          <small class="luria-stopwatch-note">Cronômetro progressivo para acompanhar o tempo livremente.</small>
+          <small class="luria-stopwatch-note">Defina um tempo abaixo para usar contagem regressiva. Deixe vazio para usar como cronômetro.</small>
+          <div class="luria-pomodoro-fields">
+            <label><span>Tempo</span><span><input id="luria-timer-duration-minutes" type="number" min="1" max="1440" step="1" placeholder="—"> min</span></label>
+          </div>
           <div class="luria-pomodoro-actions">
             <button id="luria-stopwatch-start" type="button">Iniciar</button>
             <button id="luria-stopwatch-reset" type="button">Zerar</button>
@@ -3312,6 +3315,7 @@ function ensureNotificationCenter() {
   const stopwatchStart = document.getElementById("luria-stopwatch-start");
   const stopwatchReset = document.getElementById("luria-stopwatch-reset");
 
+  const timerDurationInput = document.getElementById("luria-timer-duration-minutes");
   const pomodoroDurations = { focus: 25, break: 5 };
   let pomodoroMode = "focus";
   let pomodoroRemaining = pomodoroDurations.focus * 60;
@@ -3321,6 +3325,7 @@ function ensureNotificationCenter() {
   let stopwatchElapsedMs = 0;
   let stopwatchStartedAt = 0;
   let stopwatchInterval = null;
+  let stopwatchCountdownSeconds = null;
 
   const formatClock = (totalSeconds, showHours = false) => {
     const safe = Math.max(0, Math.floor(totalSeconds));
@@ -3336,11 +3341,21 @@ function ensureNotificationCenter() {
   const currentStopwatchMs = () =>
     stopwatchElapsedMs + (stopwatchInterval ? Math.max(0, Date.now() - stopwatchStartedAt) : 0);
 
+  const currentTimerSeconds = () => {
+    if (stopwatchCountdownSeconds === null) return currentStopwatchMs() / 1000;
+    const elapsed = currentStopwatchMs() / 1000;
+    return Math.max(0, stopwatchCountdownSeconds - elapsed);
+  };
+
   const renderStopwatch = () => {
-    const label = formatClock(currentStopwatchMs() / 1000, true);
+    const label = formatClock(currentTimerSeconds(), true);
     if (stopwatchTime) stopwatchTime.textContent = label;
     if (activeTimerView === "timer" && pomodoroMiniTime) pomodoroMiniTime.textContent = label;
     if (stopwatchStart) stopwatchStart.textContent = stopwatchInterval ? "Pausar" : "Iniciar";
+    if (stopwatchInterval && stopwatchCountdownSeconds !== null && currentTimerSeconds() <= 0) {
+      clearInterval(stopwatchInterval); stopwatchInterval = null; stopwatchStartedAt = 0;
+      if (pomodoroStatus) pomodoroStatus.textContent = "Tempo concluído.";
+    }
   };
 
   const setTimerView = (nextView) => {
@@ -3382,6 +3397,10 @@ function ensureNotificationCenter() {
       renderStopwatch();
       return;
     }
+    if (stopwatchElapsedMs === 0) {
+      const requestedMinutes = Number(timerDurationInput?.value || 0);
+      stopwatchCountdownSeconds = requestedMinutes > 0 ? Math.round(requestedMinutes * 60) : null;
+    }
     stopwatchStartedAt = Date.now();
     stopwatchInterval = setInterval(renderStopwatch, 250);
     renderStopwatch();
@@ -3392,6 +3411,7 @@ function ensureNotificationCenter() {
     stopwatchInterval = null;
     stopwatchStartedAt = 0;
     stopwatchElapsedMs = 0;
+    stopwatchCountdownSeconds = null;
     if (pomodoroStatus) pomodoroStatus.textContent = "";
     renderStopwatch();
   });
@@ -5740,3 +5760,37 @@ async function iniciarApp() {
 }
 
 iniciarApp();
+
+
+/* Sessão global de estudo: persiste entre páginas e pausa após 15 min sem interação. */
+(function installLuriaStudyTimer(){
+  if (window.LuriaStudyTimer) return;
+  const KEY="luria:active-study-session:v1", IDLE_MS=15*60*1000;
+  let state=null, idleHandle=null;
+  const read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"null")}catch{return null}};
+  const write=()=>{try{state?localStorage.setItem(KEY,JSON.stringify(state)):localStorage.removeItem(KEY)}catch{}};
+  const now=()=>Date.now();
+  const elapsed=()=>state ? Math.max(0,Math.floor(((state.accumulatedMs||0)+(state.running?now()-state.segmentStartedAt:0))/1000)) : 0;
+  async function flush(reason="paused"){
+    if(!state||!window.supabaseClient||!window.docmapUser?.id) return;
+    const seconds=elapsed(); if(seconds<1) return;
+    const payload={user_id:window.docmapUser.id,activity_kind:state.kind||"study",area:state.area||null,materia:state.materia||null,started_at:new Date(state.startedAt).toISOString(),ended_at:new Date().toISOString(),duration_seconds:seconds};
+    if(state.sourceId && /^[0-9a-f-]{36}$/i.test(state.sourceId)) payload.source_id=state.sourceId;
+    const {error}=await window.supabaseClient.from("study_sessions").insert(payload);
+    if(error) console.warn("LURIA: não foi possível registrar tempo de estudo",error);
+    else { state=null; write(); window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason,seconds}})); }
+  }
+  function pause(reason="manual"){
+    if(!state?.running) return;
+    state.accumulatedMs=(state.accumulatedMs||0)+Math.max(0,now()-state.segmentStartedAt); state.running=false; state.pausedReason=reason; write();
+    window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason,state}}));
+  }
+  function resume(){if(!state||state.running)return; state.running=true;state.segmentStartedAt=now();state.lastInteractionAt=now();state.pausedReason=null;write();scheduleIdle();}
+  function scheduleIdle(){clearTimeout(idleHandle);if(!state?.running||state.allowIdle)return;const wait=Math.max(0,IDLE_MS-(now()-(state.lastInteractionAt||now())));idleHandle=setTimeout(()=>pause("idle_15m"),wait+50)}
+  function touch(){if(!state?.running||state.allowIdle)return;state.lastInteractionAt=now();write();scheduleIdle()}
+  async function start(kind="study",opts={}){if(state) await flush("activity_changed"); const t=now();state={kind,sourceId:opts.sourceId||null,area:opts.area||null,materia:opts.materia||null,allowIdle:!!opts.allowIdle,startedAt:t,segmentStartedAt:t,lastInteractionAt:t,accumulatedMs:0,running:true};write();scheduleIdle();window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason:"started",state}}));return state}
+  function setExternalQuestions(active=true){if(!state&&active)return start("external_questions",{allowIdle:true});if(state){state.allowIdle=!!active;if(active)state.kind="external_questions";write();scheduleIdle()}}
+  state=read(); if(state?.running){state.segmentStartedAt=now();state.lastInteractionAt=now();write();scheduleIdle()}
+  ["pointerdown","keydown","touchstart","input","change"].forEach(ev=>document.addEventListener(ev,touch,{passive:true,capture:true}));
+  window.LuriaStudyTimer={start,pause,resume,finish:flush,touch,setExternalQuestions,getState:()=>state,getElapsedSeconds:elapsed};
+})();
