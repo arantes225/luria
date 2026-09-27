@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v166-dashboard-no-blue-pattern";
+const CACHE_VERSION = "luria-pwa-v167-work-dashboard-settings-topbar";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -20,8 +20,8 @@ const APP_SHELL = [
   "/configuracoes/",
   "/dashboard/",
   "/trabalho/",
-  "/assets/css/work-dashboard.css?v=2",
-  "/assets/js/work-dashboard.js?v=2",
+  "/assets/css/work-dashboard.css?v=3",
+  "/assets/js/work-dashboard.js?v=3",
   "/trabalho/plantoes/",
   "/trabalho/passometro/",
   "/trabalho/prontuario-rapido/",
@@ -53,7 +53,7 @@ const APP_SHELL = [
   "/assets/js/configuracoes.js?v=13.3-auth",
   "/assets/css/dashboard-layouts.css?v=3-no-direct-pattern",
   "/assets/js/dashboard-layouts.js?v=3-streak-sync",
-  "/assets/js/dashboard-layout-settings.js?v=1",
+  "/assets/js/dashboard-layout-settings.js?v=2-work",
   "/assets/img/dashboard-layouts/opcao-1.webp",
   "/assets/img/dashboard-layouts/opcao-2.webp",
   "/assets/img/dashboard-layouts/opcao-3.webp",
