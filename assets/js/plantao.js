@@ -633,6 +633,7 @@
       .select("*").single();
     if(error){console.error("Telefone: não foi possível iniciar a sessão",error);return;}
     state.phoneSession=session;
+    window.LuriaStudyTimer?.start("luria_zap", { sourceId: session.id, materia: item.title || item.specialty || "Luria Zap" });
     savePlantaoView({mode:"phone",section:"phone",phoneCaseId:item.id,clinicalSessionId:null,clinicalCaseId:null});
     const firstLessonStep=lessonMode ? item.ai_context.lesson_flow[0] : null;
     const openingText=[
@@ -3644,6 +3645,7 @@
     }
     state.busy=false;
     state.session=data;
+    window.LuriaStudyTimer?.start("plantao", { sourceId: data.id, materia: item.presentation?.chief_complaint || item.title || "Plantão" });
     savePlantaoView({
       mode:"emergency",
       section:"plantao-simulator",
