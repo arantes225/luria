@@ -3736,3 +3736,94 @@
     margin:2px 2px 0!important;
   }
 }
+
+
+/* PWA ADMIN / QUESTION FACTORY — mobile hardening v20 */
+@media (max-width:760px){
+  .pwa-standalone body[data-page="admin"]{
+    overflow-x:hidden!important;
+  }
+  .pwa-standalone body[data-page="admin"] #admin-app,
+  .pwa-standalone body[data-page="admin"] .app-shell,
+  .pwa-standalone body[data-page="admin"] .main,
+  .pwa-standalone body[data-page="admin"] .page,
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"]{
+    width:100%!important;min-width:0!important;max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+  .pwa-standalone body[data-page="admin"] .main{
+    overflow:visible!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-page{
+    padding-left:12px!important;padding-right:12px!important;
+    padding-bottom:calc(24px + env(safe-area-inset-bottom))!important;
+    overflow:visible!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-topbar{
+    top:env(safe-area-inset-top)!important;
+    grid-template-columns:auto minmax(0,1fr)!important;
+    gap:8px!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-topbar .page-heading{
+    min-width:0!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-topbar .page-heading h1{
+    font-size:18px!important;white-space:normal!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-range{
+    grid-column:1/-1!important;width:100%!important;
+    display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;
+    align-items:center!important;gap:8px!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-range select{
+    width:100%!important;min-width:0!important;min-height:40px!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-view-menu{
+    position:sticky!important;top:calc(env(safe-area-inset-top) + 92px)!important;
+    z-index:210!important;background:var(--bg)!important;
+  }
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"]{
+    padding:12px!important;overflow:visible!important;
+  }
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] *,
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] *::before,
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] *::after{
+    box-sizing:border-box;
+  }
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] input,
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] select,
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] textarea{
+    max-width:100%!important;min-width:0!important;font-size:16px!important;
+  }
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] textarea{
+    resize:vertical!important;
+  }
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] .button{
+    min-height:44px!important;touch-action:manipulation;
+  }
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] table{
+    min-width:620px;
+  }
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] .table-wrap,
+  .pwa-standalone body[data-page="admin"] [data-admin-view="factory"] .admin-table-wrap{
+    width:100%!important;max-width:100%!important;overflow-x:auto!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-qf-dialog{
+    width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;
+    max-height:calc(100dvh - 16px)!important;margin:8px!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-qf-dialog-body{
+    min-height:0!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-qf-batch-folder,
+  .pwa-standalone body[data-page="admin"] .admin-qf-block-tracker-panel,
+  .pwa-standalone body[data-page="admin"] .admin-qf-question,
+  .pwa-standalone body[data-page="admin"] .admin-qf-route-editor{
+    max-width:100%!important;min-width:0!important;overflow:hidden!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-qf-tracker-row,
+  .pwa-standalone body[data-page="admin"] .admin-qf-batch-folder-body{
+    max-width:100%!important;min-width:0!important;
+  }
+}
