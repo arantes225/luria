@@ -2513,7 +2513,7 @@
                 }).join("")}
               </div>
               ${blindReview ? `\n                <div class="admin-qf-bad-reason">\n                  <strong>Resolução cega independente</strong>\n                  <span><b>Resposta independente:</b> ${esc(blindReview.independent_answer || "Ambígua / sem resposta forçada")} · <b>Nota:</b> ${esc(blindReview.quality_score == null ? "—" : Number(blindReview.quality_score).toLocaleString("pt-BR",{maximumFractionDigits:1}))}/100</span>\n                  <small>${esc(blindReview.reason || "Sem justificativa registrada.")}</small>\n                  <small>${blindReview.ambiguity ? "Ambiguidade: sim" : "Ambiguidade: não"} · ${blindReview.single_best_answer ? "Única melhor resposta: sim" : "Única melhor resposta: não"}</small>\n                </div>\n              ` : ""}\n              <div class="admin-qf-bad-reason">
-                <strong>Qualidade individual · fluxo 95/50</strong>
+                <strong>Qualidade individual · fluxo 86/50</strong>
                 <span><b>Resolução cega:</b> ${esc(blindScore)}/100 · <b>Revisão independente:</b> ${esc(independentScore)}/100</span>
                 <span><b>Nota de roteamento:</b> ${esc(score)} · <b>Destino:</b> ${esc(decisionLabel)}</span>
                 ${fast.component_scores && Object.keys(fast.component_scores).length ? `<small>${Object.entries(fast.component_scores).map(([k,v]) => esc(k)+": "+esc(v)).join(" · ")}</small>` : ""}
@@ -2911,7 +2911,7 @@
       chatgpt_initial: { label: "2 · ChatGPT · revisão adversarial + autocorreção", provider: "chatgpt" },
       blind_resolution: { label: "3 · ChatGPT · resolução cega + nota", provider: "chatgpt" },
       perplexity_initial: { label: "4 · ChatGPT · revisão independente + nota", provider: "chatgpt" },
-      perplexity_reaudit: { label: "5 · ChatGPT · nova revisão das questões 50–95", provider: "chatgpt" },
+      perplexity_reaudit: { label: "5 · ChatGPT · nova revisão das questões 50–86", provider: "chatgpt" },
       human_review: { label: "Aprovação humana (legado)", provider: null },
       block_complete: { label: "Bloco concluído", provider: null }
     };
@@ -3653,8 +3653,8 @@
       generation:"1 · Gerar / repor questões",
       chatgpt_initial:"2 · ChatGPT · revisão adversarial + autocorreção",
       blind_resolution:"3 · ChatGPT · resolução cega + nota",
-      perplexity_initial:"4 · ChatGPT · revisão independente + decisão >95/50",
-      perplexity_reaudit:"5 · ChatGPT · nova revisão das questões 50–95"
+      perplexity_initial:"4 · ChatGPT · revisão independente + decisão >86/50",
+      perplexity_reaudit:"5 · ChatGPT · nova revisão das questões 50–86"
     };
     const phase = phaseLabels[next.next_stage] || next.phase || "Próxima fase";
     return { next, provider, providerLabel, phase, label:`${phase} · abrir ${providerLabel}` };
