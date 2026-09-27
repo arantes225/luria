@@ -620,7 +620,7 @@
 
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=1">
+  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=3-work-settings">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/configuracoes/">
   <script>(function(){try{if(location.pathname.endsWith("/configuracoes.html"))history.replaceState(null,"","/configuracoes/"+location.search+location.hash);}catch(e){}})();</script>
@@ -891,6 +891,38 @@
             <a class="dashboard-layout-open" href="/dashboard/">Ver dashboard →</a>
           </article>
 
+
+
+          <article class="setting-row work-dashboard-layout-setting">
+            <div>
+              <h2>Layout do dashboard do Trabalho</h2>
+              <p>Escolha entre a visão completa do ambiente profissional e uma versão mais direta para o dia a dia.</p>
+            </div>
+            <fieldset id="work-dashboard-layout-options" class="dashboard-layout-options">
+              <legend class="sr-only">Escolha o layout do dashboard do Trabalho</legend>
+
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="work-dashboard-layout" value="detailed">
+                <span class="dashboard-layout-choice-body dashboard-layout-old-preview">
+                  <span class="dashboard-layout-old-icon" aria-hidden="true">▦</span>
+                  <strong>Detalhado</strong>
+                  <small>Plantões, horas, financeiro, atendimento e ferramentas clínicas.</small>
+                </span>
+              </label>
+
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="work-dashboard-layout" value="simple">
+                <span class="dashboard-layout-choice-body dashboard-layout-old-preview">
+                  <span class="dashboard-layout-old-icon" aria-hidden="true">▤</span>
+                  <strong>Simples</strong>
+                  <small>Próximo plantão, resumo do mês e acessos rápidos.</small>
+                </span>
+              </label>
+            </fieldset>
+
+            <div id="work-dashboard-layout-status" class="inline-status" role="status" aria-live="polite"></div>
+            <a class="dashboard-layout-open" href="/trabalho/">Ver dashboard do Trabalho →</a>
+          </article>
 
           <article class="setting-row target-exams-setting">
             <div>
@@ -1597,7 +1629,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/configuracoes.js?v=13.3-auth"></script>
-  <script src="assets/js/dashboard-layout-settings.js?v=1"></script>
+  <script src="assets/js/dashboard-layout-settings.js?v=2-work"></script>
   <script defer src="assets/js/pwa.js?v=5"></script>
 </body>
 </html>
