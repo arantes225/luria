@@ -11,7 +11,7 @@ const scheduleState = {
   existingTopicKeys: new Set(),
   existingEventKeys: new Set(),
   weekAnchor: startOfDaySchedule(new Date()),
-  plannerView: "month",
+  plannerView: "week",
   draggingTopicId: null,
   alreadyDoneTopicId: null,
   themeSearch: "",
