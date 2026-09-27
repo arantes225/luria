@@ -1143,7 +1143,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         </a>
 
         <a class="nav-link ${page === "caderno" ? "active" : ""}" href="/caderno/">
-          <span class="nav-icon">▱</span><span>Caderno</span>
+          <span class="nav-icon">▱</span><span>Anotações</span>
         </a>
 
         <a class="nav-link ${page === "flashcards" ? "active" : ""}" href="/flashcards/">
