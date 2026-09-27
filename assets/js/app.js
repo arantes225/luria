@@ -620,12 +620,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">◎</span><span>Amigos</span>
         </a>
 
-        <a class="nav-link ${page === "configuracoes" ? "active" : ""}" href="/configuracoes/">
-          <span class="nav-icon nav-icon-settings" aria-hidden="true">
-            <img src="/assets/img/logos/pwa-icon-192.png?v=3" alt="">
-          </span><span>Configurações</span>
-        </a>
-
         <span id="admin-nav-slot"></span>
       `}
     </nav>
@@ -639,6 +633,16 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
             <small>PARADA CARDIORRESPIRATÓRIA</small>
           </span>
         </a>
+
+        <div class="user-mini">
+          <div class="user-avatar">${escapeHtml(initial)}</div>
+          <div class="user-copy">
+            <strong>${escapeHtml(sidebarName)}</strong>
+            <small>${escapeHtml(specialty)}</small>
+          </div>
+        </div>
+
+        <button id="logout" class="logout-button" type="button">Sair</button>
       ` : `
         <div class="streak-mini" data-sidebar-streak-card>
           <div class="streak-mini-icon" aria-hidden="true">
@@ -654,17 +658,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           </div>
         </div>
       `}
-
-      <div class="user-mini">
-        <div class="user-avatar">${escapeHtml(initial)}</div>
-
-        <div class="user-copy">
-          <strong>${escapeHtml(sidebarName)}</strong>
-          <small>${escapeHtml(specialty)}</small>
-        </div>
-      </div>
-
-      <button id="logout" class="logout-button" type="button">Sair</button>
     </div>
   `;
 }
