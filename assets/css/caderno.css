@@ -3451,3 +3451,19 @@
 .note-details-card dl{gap:0!important}.note-details-card dl>div{grid-template-columns:67px minmax(0,1fr);align-items:center;gap:6px!important;padding:7px 0;border-bottom:1px solid color-mix(in srgb,var(--border) 65%,transparent)}.note-details-card dl>div:last-child{border-bottom:0}.note-details-card dt{font-size:7.5px!important}.note-details-card dd{font-size:8px!important;font-weight:650!important}
 .note-tags-list{display:flex;flex-wrap:wrap;gap:5px}.note-tags-list .note-tag,.note-tag-empty{display:inline-flex;align-items:center;min-height:23px;padding:0 8px;border-radius:999px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font-size:7.5px;font-weight:750}.note-tag-empty{color:var(--muted);background:var(--surface-2)}
 .note-actions-card{display:grid!important;gap:6px}.note-actions-card .note-side-title{margin-bottom:3px}.note-actions-card>button{width:100%;display:flex!important;align-items:center;gap:8px;height:33px!important;text-align:left!important;padding:0 9px!important;background:var(--surface)!important}.note-actions-card>button:hover{background:var(--surface-2)!important}.note-actions-card>button>span{font-size:8px}.note-actions-card>button.danger{color:var(--danger,#d84a4a)!important}
+
+
+/* v23.2 — proporções e painel conforme referência */
+.note-studio{grid-template-columns:230px minmax(560px,1fr) 250px!important;gap:10px!important;border:0!important;background:transparent!important;overflow:visible!important}
+.note-tree,.note-canvas,.note-info{border:1px solid var(--border)!important;border-radius:10px!important;background:var(--surface)!important}
+.note-tree{padding:12px 10px!important}.note-canvas{overflow:visible}.note-info{border:0!important;border-radius:0!important;background:transparent!important;padding:0!important;gap:10px!important}
+.note-info .note-side-card{padding:13px 12px!important;border-radius:10px!important;box-shadow:none!important}
+.note-side-title h3{font-size:9.5px!important}.note-side-title>button{width:auto!important;height:auto!important;border:0!important;background:transparent!important;color:var(--accent)!important;font-size:7.5px!important;padding:2px!important}
+.note-details-card dl>div{grid-template-columns:78px minmax(0,1fr)!important;padding:8px 0!important}.note-details-card dd{border:1px solid var(--border);border-radius:6px;padding:6px 7px;font-weight:600!important;background:var(--surface)}
+.note-tags-list{gap:6px!important}.note-tags-list .note-tag,.note-tag-empty{min-height:24px!important;padding:0 9px!important;background:color-mix(in srgb,var(--accent) 9%,var(--surface))!important}
+.note-add-row{margin-top:9px;width:auto!important;height:27px!important}
+.note-reference-list{display:grid;gap:5px}.note-reference-empty{font-size:7.5px;color:var(--muted);padding:8px;border:1px dashed var(--border);border-radius:7px}
+.note-actions-card>button{height:31px!important;border-radius:6px!important}.note-actions-card>button.danger{border-color:color-mix(in srgb,var(--danger,#d84a4a) 30%,var(--border))!important;background:color-mix(in srgb,var(--danger,#d84a4a) 4%,var(--surface))!important}
+.note-toolbar{border-radius:10px 10px 0 0}.note-page{max-width:none!important;padding:34px 18px 90px!important}.note-page-head{padding:0 0 14px!important;margin-bottom:15px!important}.note-page-head h1{font-size:22px!important}.note-page .notebook-editor{font-size:10.5px!important;line-height:1.55!important}
+@media(max-width:1260px){.note-studio{grid-template-columns:210px minmax(0,1fr) 225px!important}}
+@media(max-width:1050px){.note-studio{grid-template-columns:205px minmax(0,1fr)!important}.note-info{display:none!important}}
