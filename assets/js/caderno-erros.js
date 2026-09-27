@@ -4993,7 +4993,7 @@ function renderErrorLibrary() {
   empty.hidden=true;
   const areas=new Map();
   items.forEach(item=>{const area=item.area||"Sem área";const notebook=item.materia||item.theme||"Geral";if(!areas.has(area))areas.set(area,new Map());const books=areas.get(area);if(!books.has(notebook))books.set(notebook,[]);books.get(notebook).push(item)});
-  const canonicalArea=(value)=>{const v=String(value||"").trim().toLowerCase();if(v.includes("clínica")||v.includes("clinica"))return "Clínica Médica";if(v.includes("gine")||v==="go"||v.includes("obst"))return "GO";if(v.includes("cirurg"))return "Cirurgia Geral";if(v.includes("pedi"))return "Pediatria";if(v.includes("prevent"))return "Preventiva";return value||"Sem área"};
+  const canonicalArea=canonicalErrorArea;
   const normalizedAreas=new Map();items.forEach(item=>{const area=canonicalArea(item.area);const notebook=item.materia||item.theme||"Geral";if(!normalizedAreas.has(area))normalizedAreas.set(area,new Map());const books=normalizedAreas.get(area);if(!books.has(notebook))books.set(notebook,[]);books.get(notebook).push(item)});
   areas.clear();normalizedAreas.forEach((v,k)=>areas.set(k,v));
   const preferred=["Clínica Médica","GO","Cirurgia Geral","Pediatria","Preventiva"];
