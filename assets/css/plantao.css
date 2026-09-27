@@ -3558,3 +3558,50 @@ html:not(.pwa-standalone) .plantao-patient-sheet-hda p{
     grid-template-columns:1fr;
   }
 }
+
+/* LuriaZap · busca com filtro por área */
+.plantao-phone-search-wrap{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:7px;
+}
+.plantao-phone-search-row{
+  display:grid;
+  grid-template-columns:20px minmax(0,1fr) 28px;
+  gap:6px;
+  align-items:center;
+}
+.plantao-phone-area-filter{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  gap:8px;
+  align-items:center;
+  padding-top:6px;
+  border-top:1px solid #e5edf3;
+}
+.plantao-phone-area-filter>span{
+  font-size:10px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  color:#668096;
+}
+.plantao-phone-area-filter select{
+  width:100%;
+  min-width:0;
+  height:30px;
+  border:1px solid #d6e0e8;
+  border-radius:10px;
+  background:#f7fafc;
+  color:#173550;
+  font:inherit;
+  font-size:11px;
+  padding:0 9px;
+  outline:0;
+}
+:root[data-theme="dark"] .plantao-phone-area-filter{border-top-color:#ffffff18}
+:root[data-theme="dark"] .plantao-phone-area-filter select{
+  background:#102a40;
+  border-color:#ffffff24;
+  color:#eef6fb;
+}
