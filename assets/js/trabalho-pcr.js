@@ -1,5 +1,6 @@
 (() => {
   const startedAt = Date.now();
+  let stoppedAt = null;
   let mode = "adult";
   let selectedRhythm = null;
   let shockable = false;
@@ -34,7 +35,8 @@
   const pedsCauseNote = $("pcr-peds-cause-note");
 
   function elapsedSeconds() {
-    return Math.max(0, Math.floor((Date.now() - startedAt) / 1000));
+    const end = stoppedAt || Date.now();
+    return Math.max(0, Math.floor((end - startedAt) / 1000));
   }
 
   function mmss(total) {
@@ -455,7 +457,22 @@
   });
 
   $("pcr-log-cpr").addEventListener("click", () => addLog("Troca de compressor", "Novo compressor assumiu RCP"));
-  $("pcr-rosc").addEventListener("click", () => addLog("RCE / ROSC", "Retorno da circulação espontânea"));
+  $("pcr-rosc").addEventListener("click", () => {
+    if (stoppedAt) return;
+
+    stoppedAt = Date.now();
+    metronomeOn = false;
+    metroBtn.classList.remove("active");
+    metroBtn.setAttribute("aria-pressed", "false");
+    metroBtn.querySelector("small").textContent = "Pausado após RCE / ROSC";
+
+    addLog("RCE / ROSC", "Retorno da circulação espontânea · cronômetro pausado");
+    updateTimer();
+
+    const roscBtn = $("pcr-rosc");
+    roscBtn.disabled = true;
+    roscBtn.textContent = "✓ RCE / ROSC registrado";
+  });
 
   $("pcr-causes").addEventListener("click", () => causesDialog.showModal());
   document.querySelectorAll("[data-cause]").forEach((button) => {
