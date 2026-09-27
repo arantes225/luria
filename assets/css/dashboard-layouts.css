@@ -1734,9 +1734,9 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar > .dl-avatar{
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming,
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak{
-    height:220px!important;
-    min-height:220px!important;
-    max-height:220px!important;
+    height:250px!important;
+    min-height:250px!important;
+    max-height:250px!important;
     align-self:start!important;
     overflow:hidden!important;
   }
