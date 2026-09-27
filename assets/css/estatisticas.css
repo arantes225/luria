@@ -920,3 +920,26 @@
    grid-template-areas:"heat" "habit" "dist" "prog" "area" "ins"!important;
  }
 }
+
+/* v25.4 — Geral: heatmap em células retangulares para preencher melhor o painel */
+[data-stats-panel="geral"] #general-week-heatmap .activity-grid{
+  grid-template-columns:28px repeat(12,minmax(24px,1fr))!important;
+  grid-auto-rows:17px!important;
+  gap:4px!important;
+  width:100%!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-months{
+  grid-template-columns:28px repeat(12,minmax(24px,1fr))!important;
+  gap:4px!important;
+  width:100%!important;
+  margin-bottom:3px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-square{
+  width:100%!important;
+  height:17px!important;
+  min-width:24px!important;
+  border-radius:4px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-day{
+  line-height:17px!important;
+}
