@@ -564,20 +564,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">◫</span><span>Dashboard</span>
         </a>
 
-        <div class="nav-group" id="work-management-nav-group">
-          <button class="nav-group-label" id="work-management-nav-toggle" type="button" aria-expanded="false" aria-controls="work-management-nav-submenu">
-            <span class="nav-icon">▦</span>
-            <span class="nav-label-text">Gestão dos plantões</span>
-            <span class="nav-group-chevron" aria-hidden="true">⌄</span>
-          </button>
-
-          <div class="nav-submenu" id="work-management-nav-submenu" hidden>
-            <a class="nav-sublink ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">Escala</a>
-            <a class="nav-sublink ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">Divisor de Plantão</a>
-            <a class="nav-sublink ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">Financeiro</a>
-          </div>
-        </div>
-
         <a class="nav-link ${page === "trabalho_passometro" ? "active" : ""}" href="/trabalho/passometro/">
           <span class="nav-icon">⌁</span><span>Passômetro</span>
         </a>
@@ -621,6 +607,20 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         <a class="nav-link ${page === "trabalho_fluidos" ? "active" : ""}" href="/trabalho/fluidos-eletrólitos/">
           <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
         </a>
+
+        <div class="nav-group" id="work-management-nav-group">
+          <button class="nav-group-label" id="work-management-nav-toggle" type="button" aria-expanded="false" aria-controls="work-management-nav-submenu">
+            <span class="nav-icon">▦</span>
+            <span class="nav-label-text">Gestão dos plantões</span>
+            <span class="nav-group-chevron" aria-hidden="true">⌄</span>
+          </button>
+
+          <div class="nav-submenu" id="work-management-nav-submenu" hidden>
+            <a class="nav-sublink ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">Escala</a>
+            <a class="nav-sublink ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">Divisor de Plantão</a>
+            <a class="nav-sublink ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">Financeiro</a>
+          </div>
+        </div>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
           <span class="nav-icon">◫</span><span>Dashboard</span>
