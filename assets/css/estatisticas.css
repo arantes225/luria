@@ -562,3 +562,61 @@
  }
  [data-stats-panel="geral"] #general-week-heatmap{min-height:125px!important}
 }
+
+/* v24.2 — Geral: 2x4 KPIs e grade final refinada */
+[data-stats-panel="geral"] .stats-summary-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  grid-template-rows:repeat(2,minmax(84px,auto))!important;
+}
+[data-stats-panel="geral"] .stats-summary-card:nth-child(n+9){display:none!important}
+
+[data-stats-panel="geral"] .stats-block-grid{
+  grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  grid-template-areas:
+    "habit habit habit habit heat heat heat prog prog prog prog prog"
+    "dist dist dist dist dist dist dist prog prog prog prog prog"
+    "ins ins ins ins ins ins area area area area area area"!important;
+  gap:10px!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(1){grid-area:habit!important}
+[data-stats-panel="geral"] .stats-block:nth-child(2){grid-area:dist!important}
+[data-stats-panel="geral"] .stats-block:nth-child(3){grid-area:prog!important}
+[data-stats-panel="geral"] .stats-block:nth-child(4){grid-area:heat!important}
+[data-stats-panel="geral"] .stats-block:nth-child(5){grid-area:area!important}
+[data-stats-panel="geral"] .stats-block:nth-child(6){grid-area:ins!important}
+
+[data-stats-panel="geral"] .stats-block:nth-child(3){
+  min-height:100%!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(4){
+  min-width:0!important;
+  padding:10px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap{
+  min-height:118px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-grid{
+  grid-template-columns:20px repeat(12,10px)!important;
+  grid-auto-rows:10px!important;
+  gap:3px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-months{
+  grid-template-columns:20px repeat(12,10px)!important;
+  gap:3px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-square{
+  width:10px!important;height:10px!important;border-radius:2px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-day{line-height:10px!important;font-size:6px!important}
+
+[data-stats-panel="geral"] .stats-block:nth-child(2),
+[data-stats-panel="geral"] .stats-block:nth-child(6),
+[data-stats-panel="geral"] .stats-block:nth-child(5){min-height:190px!important}
+
+@media(max-width:1050px){
+ [data-stats-panel="geral"] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ [data-stats-panel="geral"] .stats-block-grid{
+   grid-template-columns:1fr!important;
+   grid-template-areas:"heat" "habit" "prog" "dist" "ins" "area"!important;
+ }
+}
