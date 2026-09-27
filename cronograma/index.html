@@ -2454,8 +2454,10 @@
   @media(max-width:720px){body:not(.schedule-settings-embed) .agenda-bottom-grid{grid-template-columns:1fr!important}body:not(.schedule-settings-embed) .planner-header{grid-template-columns:1fr!important}}
 
   /* Atividades de hoje — versão horizontal inspirada na referência */
-  .agenda-bottom-grid{grid-template-columns:1fr 1fr!important}
-  .agenda-bottom-grid>.agenda-today-card{grid-column:1/-1;min-height:0!important}
+  .agenda-bottom-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;align-items:stretch!important}
+  .agenda-bottom-grid>.agenda-today-card{grid-column:1!important;grid-row:1 / span 2;min-height:0!important}
+  .agenda-bottom-grid>.agenda-next-card{grid-column:2!important;grid-row:1!important}
+  .agenda-bottom-grid>.agenda-goals-card{grid-column:2!important;grid-row:2!important}
   .agenda-today-card{border:1px solid #e5eaf2!important;border-radius:14px!important;background:var(--surface)!important}
   .agenda-today-head{padding:14px 16px!important;align-items:flex-start!important;gap:18px!important}
   .agenda-today-title-wrap{gap:11px!important}
@@ -2494,7 +2496,9 @@
   .agenda-today-row::after{content:"⋮";grid-column:5;color:var(--muted);font-size:17px;text-align:center;line-height:1}
   @media(max-width:720px){
     .agenda-bottom-grid{grid-template-columns:1fr!important}
-    .agenda-bottom-grid>.agenda-today-card{grid-column:auto}
+    .agenda-bottom-grid>.agenda-today-card,
+    .agenda-bottom-grid>.agenda-next-card,
+    .agenda-bottom-grid>.agenda-goals-card{grid-column:auto!important;grid-row:auto!important}
     .agenda-today-head{flex-direction:column}
     .agenda-today-progress{width:100%;min-width:0}
     .agenda-today-row{grid-template-columns:22px 48px minmax(0,1fr) auto 14px!important;gap:7px!important}
