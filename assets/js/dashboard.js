@@ -1,5 +1,8 @@
 const dashboardSb = window.supabaseClient;
 
+window.luriaDashboardMetrics = window.luriaDashboardMetrics || {};
+window.luriaDashboardCcq = window.luriaDashboardCcq || { text: "", area: "" };
+
 const agendaState = {
   view: "week",
   anchorDate: startOfDay(new Date()),
@@ -1158,22 +1161,16 @@ function setDashboardText(
   id,
   value
 ) {
-  const element =
-    document.getElementById(
-      id
-    );
-
-  if (!element) {
-    return;
-  }
-
-  element.textContent =
-    value === null
-    || value === undefined
+  const normalized =
+    value === null || value === undefined
       ? "—"
       : String(value);
-}
 
+  window.luriaDashboardMetrics[id] = normalized;
+
+  const element = document.getElementById(id);
+  if (element) element.textContent = normalized;
+}
 
 function dashboardTrendText(
   current,
@@ -1623,187 +1620,50 @@ async function loadSimulationMetrics() {
 
 
 /* =========================================================
-   PULO DO GATO — REVISÃO PASSIVA
+   PULO DO GATO — dados dos layouts atuais
    ========================================================= */
 
 const DASHBOARD_CCQ_ROTATION_MS = 15000;
-
-const dashboardCcqState = {
-  items: [],
-  currentIndex: -1,
-  bag: [],
-  timerId: null
-};
+const dashboardCcqState = { items: [], currentIndex: -1, bag: [], timerId: null };
 
 function shuffleCcqIndexes(count) {
   const indexes = Array.from({ length: count }, (_, index) => index);
-
   for (let i = indexes.length - 1; i > 0; i -= 1) {
     const j = Math.floor(Math.random() * (i + 1));
     [indexes[i], indexes[j]] = [indexes[j], indexes[i]];
   }
-
   return indexes;
 }
-
-function refillCcqBag() {
-  dashboardCcqState.bag = shuffleCcqIndexes(dashboardCcqState.items.length);
-}
-
+function refillCcqBag() { dashboardCcqState.bag = shuffleCcqIndexes(dashboardCcqState.items.length); }
 function nextCcqIndex() {
   if (!dashboardCcqState.items.length) return -1;
   if (dashboardCcqState.items.length === 1) return 0;
-
-  if (!dashboardCcqState.bag.length) {
-    refillCcqBag();
-  }
-
+  if (!dashboardCcqState.bag.length) refillCcqBag();
   let index = dashboardCcqState.bag.pop();
-
-  if (
-    index === dashboardCcqState.currentIndex &&
-    dashboardCcqState.bag.length
-  ) {
+  if (index === dashboardCcqState.currentIndex && dashboardCcqState.bag.length) {
     const alternative = dashboardCcqState.bag.pop();
     dashboardCcqState.bag.push(index);
     index = alternative;
   }
-
   return index;
 }
-
-function resetCcqProgress() {
-  const bar = document.getElementById("dashboard-passive-ccq-progress");
-  if (!bar) return;
-
-  bar.style.transition = "none";
-  bar.style.width = "0%";
-
-  void bar.offsetWidth;
-
-  bar.style.transition =
-    `width ${DASHBOARD_CCQ_ROTATION_MS}ms linear`;
-
-  requestAnimationFrame(() => {
-    bar.style.width = "100%";
-  });
-}
-
-function fitDashboardCcqText(element) {
-  if (!element) return;
-
-  const maxSize = 24;
-  const minSize = 7;
-  const stage = element.closest(".dashboard-passive-ccq-stage");
-
-  element.style.fontSize = maxSize + "px";
-  element.style.lineHeight = "1.28";
-  element.style.webkitLineClamp = "unset";
-  element.style.display = "block";
-  element.style.overflow = "hidden";
-  element.style.maxHeight = "none";
-
-  if (!stage) return;
-
-  const meta = stage.querySelector(".dashboard-passive-ccq-meta");
-  const availableHeight = Math.max(
-    44,
-    stage.clientHeight
-      - (meta?.offsetHeight || 0)
-      - 12
-  );
-
-  let size = maxSize;
-
-  while (
-    size > minSize
-    && (
-      element.scrollHeight > availableHeight
-      || element.scrollWidth > element.clientWidth + 1
-    )
-  ) {
-    size -= 0.5;
-    element.style.fontSize = size + "px";
-  }
-
-  element.style.maxHeight = availableHeight + "px";
-}
-
-function refitDashboardCcqText() {
-  const text = document.getElementById("dashboard-passive-ccq-text");
-  if (!text || text.closest(".dashboard-passive-ccq-stage")?.hidden) return;
-  fitDashboardCcqText(text);
-}
-
 function showDashboardCcq() {
   if (!dashboardCcqState.items.length) return;
-
   const index = nextCcqIndex();
   if (index < 0) return;
-
   dashboardCcqState.currentIndex = index;
-
   const item = dashboardCcqState.items[index];
-  const text = document.getElementById("dashboard-passive-ccq-text");
-  const meta = document.getElementById("dashboard-passive-ccq-meta");
-
-  if (text) {
-    text.textContent = item.ccq || "";
-    requestAnimationFrame(() => fitDashboardCcqText(text));
-  }
-
-  const summaryText =
-    document.getElementById(
-      "summary-ccq-text"
-    );
-
-  if (
-    summaryText
-  ) {
-    summaryText.textContent =
-      item.ccq
-      || "—";
-  }
-
-  if (meta) {
-    meta.textContent =
-      item.area
-      || "";
-  }
-
+  window.luriaDashboardCcq = { text: item.ccq || "", area: item.area || "" };
   window.dispatchEvent(new Event("luria:dashboard-data"));
-
-  resetCcqProgress();
 }
-
-window.addEventListener("resize", () => {
-  window.clearTimeout(window.__luriaDashboardCcqResizeTimer);
-  window.__luriaDashboardCcqResizeTimer = window.setTimeout(
-    refitDashboardCcqText,
-    90
-  );
-});
-
 function startDashboardCcqRotation() {
-  if (dashboardCcqState.timerId) {
-    clearInterval(dashboardCcqState.timerId);
-  }
-
+  if (dashboardCcqState.timerId) clearInterval(dashboardCcqState.timerId);
   if (dashboardCcqState.items.length < 2) return;
-
   dashboardCcqState.timerId = setInterval(() => {
-    if (!document.hidden) {
-      showDashboardCcq();
-    }
+    if (!document.hidden) showDashboardCcq();
   }, DASHBOARD_CCQ_ROTATION_MS);
 }
-
 async function loadDashboardPassiveCcq() {
-  const empty = document.getElementById("dashboard-passive-ccq-empty");
-  const stage = document.getElementById("dashboard-passive-ccq-stage");
-
-  if (!empty || !stage) return;
-
   const { data, error } = await dashboardSb
     .from("error_notebook")
     .select("id,area,materia,theme,ccq,due_date,review_count,created_at")
@@ -1813,481 +1673,21 @@ async function loadDashboardPassiveCcq() {
 
   if (error) {
     console.warn(error);
-    empty.textContent = "Sem Pulos do Gato disponíveis.";
-    empty.hidden = false;
-    stage.hidden = true;
-
-    const summaryText =
-      document.getElementById(
-        "summary-ccq-text"
-      );
-
-    if (
-      summaryText
-    ) {
-      summaryText.textContent =
-        "Sem Pulos do Gato disponíveis";
-    }
-
+    window.luriaDashboardCcq = { text: "Sem Pulos do Gato disponíveis.", area: "" };
+    window.dispatchEvent(new Event("luria:dashboard-data"));
     return;
   }
 
-  dashboardCcqState.items = (data || []).filter(
-    (item) => String(item.ccq || "").trim()
-  );
-
+  dashboardCcqState.items = (data || []).filter((item) => String(item.ccq || "").trim());
   if (!dashboardCcqState.items.length) {
-    empty.textContent = "Nenhum Pulo do Gato ativo no Caderno de Erros.";
-    empty.hidden = false;
-    stage.hidden = true;
-
-    const summaryText =
-      document.getElementById(
-        "summary-ccq-text"
-      );
-
-    if (
-      summaryText
-    ) {
-      summaryText.textContent =
-        "Nenhum Pulo do Gato ativo";
-    }
-
+    window.luriaDashboardCcq = { text: "Nenhum Pulo do Gato ativo no Caderno de Erros.", area: "" };
+    window.dispatchEvent(new Event("luria:dashboard-data"));
     return;
   }
-
-  empty.hidden = true;
-  stage.hidden = false;
 
   refillCcqBag();
   showDashboardCcq();
   startDashboardCcqRotation();
-}
-
-
-/* =========================================================
-   OFENSIVA — CHAMA PROGRESSIVA
-   ========================================================= */
-
-function dashboardStreakTier(days) {
-  if (days < 4) {
-    return {
-      tier: "snow",
-      label: "Esquentando",
-      title: "Sequência"
-    };
-  }
-
-  if (days < 7) {
-    return {
-      tier: "1",
-      label: "Aquecendo",
-      title: "Ofensiva"
-    };
-  }
-
-  if (days < 30) {
-    return {
-      tier: "2",
-      label: "Em ritmo",
-      title: "Ofensiva"
-    };
-  }
-
-  if (days < 90) {
-    return {
-      tier: "3",
-      label: "Em chamas",
-      title: "Ofensiva"
-    };
-  }
-
-  if (days < 180) {
-    return {
-      tier: "4",
-      label: "Imparável",
-      title: "Ofensiva"
-    };
-  }
-
-  if (days < 365) {
-    return {
-      tier: "5",
-      label: "Incendiário",
-      title: "Ofensiva"
-    };
-  }
-
-  return {
-    tier: "6",
-    label: "Lendário",
-    title: "Ofensiva"
-  };
-}
-
-
-function initDashboardStreakVisual() {
-  const card =
-    document.getElementById(
-      "dashboard-streak-card"
-    );
-
-
-  const value =
-    card?.querySelector(
-      "[data-streak-value]"
-    );
-
-
-  const label =
-    document.getElementById(
-      "dashboard-streak-stage"
-    );
-
-  const title =
-    document.getElementById(
-      "dashboard-streak-title"
-    );
-
-
-  if (
-    !card ||
-    !value
-  ) {
-    return;
-  }
-
-
-  const update =
-    () => {
-      const days =
-        Number(
-          String(
-            value.textContent ||
-            "0"
-          )
-            .replace(
-              /[^\d]/g,
-              ""
-            )
-        )
-        ||
-        0;
-
-
-      const info =
-        dashboardStreakTier(
-          days
-        );
-
-
-      card.dataset.streakTier =
-        info.tier;
-
-
-      if (label) {
-        label.textContent =
-          info.label;
-      }
-
-      if (title) {
-        title.textContent =
-          info.title;
-      }
-
-    };
-
-
-  const observer =
-    new MutationObserver(
-      update
-    );
-
-
-  observer.observe(
-    value,
-    {
-      childList: true,
-      characterData: true,
-      subtree: true
-    }
-  );
-
-
-  update();
-}
-
-
-function dashboardCopyText(
-  fromId,
-  toId,
-  transform = null
-) {
-  const from =
-    document.getElementById(
-      fromId
-    );
-
-  const to =
-    document.getElementById(
-      toId
-    );
-
-  if (
-    !from
-    || !to
-  ) {
-    return;
-  }
-
-  const value =
-    from.textContent
-      ?.trim()
-    || "—";
-
-  to.textContent =
-    typeof transform
-    === "function"
-      ? transform(
-          value
-        )
-      : value;
-}
-
-
-function updateDashboardSummaryFromDetails() {
-  dashboardCopyText(
-    "metric-overdue-lessons",
-    "summary-overdue-lessons"
-  );
-
-  dashboardCopyText(
-    "metric-flashcards",
-    "summary-flashcards"
-  );
-
-  dashboardCopyText(
-    "metric-lessons-progress",
-    "summary-progress"
-  );
-
-  dashboardCopyText(
-    "metric-hours",
-    "summary-hours"
-  );
-
-  dashboardCopyText(
-    "metric-simulations-accuracy",
-    "summary-simulations"
-  );
-
-  const simulationCount =
-    Number(
-      document
-        .getElementById(
-          "metric-simulations"
-        )
-        ?.textContent
-      || 0
-    );
-
-  const simulationHelper =
-    document.getElementById(
-      "summary-simulations-helper"
-    );
-
-  if (
-    simulationHelper
-  ) {
-    simulationHelper.textContent =
-      simulationCount
-        + " prova"
-        + (
-          simulationCount === 1
-            ? ""
-            : "s"
-        );
-  }
-
-  const errorValue =
-    document.getElementById(
-      "metric-errors"
-    )
-      ?.textContent
-      ?.trim()
-    || "";
-
-  const summaryErrors =
-    document.getElementById(
-      "summary-errors"
-    );
-
-  if (
-    summaryErrors
-  ) {
-    const match =
-      errorValue.match(
-        /(\d+)\s+(?:CCQs?|Pulos? do Gato)/i
-      );
-
-    summaryErrors.textContent =
-      match
-        ? match[1]
-          + " Pulo" + (Number(match[1]) === 1 ? "" : "s") + " do Gato"
-        : (
-            errorValue
-            || "—"
-          );
-  }
-}
-
-
-async function loadTodaySummary() {
-  const today =
-    toISODate(
-      new Date()
-    );
-
-  const [
-    agendaResult,
-    hoursResult
-  ] =
-    await Promise.all([
-      dashboardSb
-        .from(
-          "agenda_feed"
-        )
-        .select(
-          "kind,item_count"
-        )
-        .eq(
-          "activity_date",
-          today
-        ),
-
-      dashboardSb
-        .from(
-          "study_hours_daily"
-        )
-        .select(
-          "total_seconds"
-        )
-        .eq(
-          "study_date",
-          today
-        )
-        .maybeSingle()
-    ]);
-
-  if (
-    agendaResult.error
-  ) {
-    console.warn(
-      agendaResult.error
-    );
-  }
-
-  if (
-    hoursResult.error
-  ) {
-    console.warn(
-      hoursResult.error
-    );
-  }
-
-  const items =
-    agendaResult.data
-    || [];
-
-  const lessonCount =
-    items
-      .filter(
-        item =>
-          item.kind
-          === "lesson"
-      )
-      .reduce(
-        (
-          sum,
-          item
-        ) =>
-          sum
-          + Math.max(
-              1,
-              Number(
-                item.item_count
-                || 1
-              )
-            ),
-        0
-      );
-
-  const activityCount =
-    items.reduce(
-      (
-        sum,
-        item
-      ) =>
-        sum
-        + Math.max(
-            1,
-            Number(
-              item.item_count
-              || 1
-            )
-          ),
-      0
-    );
-
-  const primary =
-    lessonCount > 0
-      ? lessonCount
-        + " aula"
-        + (
-          lessonCount === 1
-            ? ""
-            : "s"
-        )
-      : activityCount > 0
-        ? activityCount
-          + " atividade"
-          + (
-            activityCount === 1
-              ? ""
-              : "s"
-          )
-        : "Sem atividades";
-
-  const main =
-    document.getElementById(
-      "summary-today"
-    );
-
-  const helper =
-    document.getElementById(
-      "summary-today-helper"
-    );
-
-  if (
-    main
-  ) {
-    main.textContent =
-      primary;
-  }
-
-  if (
-    helper
-  ) {
-    helper.textContent =
-      formatHours(
-        Number(
-          hoursResult.data
-            ?.total_seconds
-          || 0
-        )
-      )
-      + " estudadas hoje";
-  }
 }
 
 
@@ -2300,10 +1700,6 @@ async function loadDashboardMetrics() {
     loadErrorMetrics(),
     loadSimulationMetrics()
   ]);
-
-  updateDashboardSummaryFromDetails();
-
-  await loadTodaySummary();
   window.dispatchEvent(new Event("luria:dashboard-data"));
 }
 
@@ -3658,9 +3054,6 @@ function wireDashboardControls() {
 }
 
 async function initDashboard() {
-  wireDashboardControls();
-  initDashboardStreakVisual();
-
   await Promise.all([
     loadDashboardMetrics(),
     loadAgenda(),
