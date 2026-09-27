@@ -278,7 +278,8 @@ const PAGE_INFO = {
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Trabalho" },
   trabalho_plantoes: { title: "Plantões", eyebrow: "Trabalho" },
   trabalho_passometro: { title: "Passômetro", eyebrow: "Trabalho" },
-  trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Trabalho" }
+  trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Trabalho" },
+  trabalho_financeiro: { title: "Financeiro", eyebrow: "Trabalho" }
 };
 
 
@@ -449,6 +450,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_pcr" ? "active" : ""}" href="/trabalho/pcr/">
           <span class="nav-icon">✚</span><span>PCR</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">
+          <span class="nav-icon">◌</span><span>Financeiro</span>
         </a>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
