@@ -662,34 +662,34 @@
 
     #sidebar.sidebar .nav-link,
     #sidebar.sidebar .nav-group-label {
-      min-height:36px !important;
-      gap:9px !important;
+      min-height:38px !important;
+      gap:10px !important;
       padding:0 10px !important;
       border-radius:9px !important;
-      font-size:13px !important;
-      line-height:1.1 !important;
+      font-size:13.8px !important;
+      line-height:1.15 !important;
     }
 
     #sidebar.sidebar .nav-icon {
       width:18px !important;
-      font-size:15px !important;
+      font-size:15.5px !important;
     }
 
     #sidebar.sidebar .nav-group {
-      margin:0 !important;
+      margin:1px 0 !important;
     }
 
     #sidebar.sidebar .nav-submenu {
-      gap:1px !important;
-      margin:1px 0 4px 34px !important;
+      gap:2px !important;
+      margin:2px 0 5px 34px !important;
     }
 
     #sidebar.sidebar .nav-sublink {
-      min-height:29px !important;
+      min-height:31px !important;
       padding:0 8px !important;
       border-radius:7px !important;
-      font-size:12px !important;
-      line-height:1.1 !important;
+      font-size:12.6px !important;
+      line-height:1.15 !important;
     }
 
     #sidebar.sidebar .sidebar-footer,
