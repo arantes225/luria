@@ -4796,10 +4796,10 @@ function renderAgendaSide() {
   const bannerPct = weekTotal ? Math.round((bannerCompleted / weekTotal) * 100) : 0;
   const bannerBar=document.getElementById("agenda-goal-banner-bar"), bannerPercent=document.getElementById("agenda-goal-banner-percent"), bannerCopy=document.getElementById("agenda-goal-banner-copy");
   if(bannerBar) bannerBar.style.width=bannerPct+"%"; if(bannerPercent) bannerPercent.textContent=bannerPct+"%"; if(bannerCopy) bannerCopy.textContent=bannerCompleted+" de "+weekTotal+" atividades concluídas";
-  ["lesson","questions","flashcards","review","errors","simulation"].forEach((kind)=>{
+  ["lesson","review","flashcards","errors","questions-simulation"].forEach((kind)=>{
     const el=document.querySelector('[data-goal-kind="'+kind+'"]');
     if(!el)return;
-    const items=weeklyItems.filter(item=>item.type===kind);
+    const items=weeklyItems.filter(item=>kind==="questions-simulation" ? (item.type==="questions" || item.type==="simulation") : item.type===kind);
     const total=items.length;
     const done=items.filter(item=>item.completed).length;
     const strong=el.querySelector("strong"), small=el.querySelector("small"), bar=el.querySelector("i > b");
