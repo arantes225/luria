@@ -282,7 +282,8 @@ const PAGE_INFO = {
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Trabalho" },
   trabalho_calculadora: { title: "Calculadora", eyebrow: "Trabalho" },
   trabalho_bulario: { title: "Bulário", eyebrow: "Trabalho" },
-  trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" }
+  trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
+  trabalho_diagnostico: { title: "Diagnóstico", eyebrow: "Trabalho" }
 };
 
 
@@ -469,6 +470,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">
           <span class="nav-icon">÷</span><span>Divisor de Plantão</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">
+          <span class="nav-icon">⌕</span><span>Diagnóstico</span>
         </a>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
