@@ -4543,11 +4543,8 @@ function renderMonthPlanner() {
             )
           ];
 
-          const visible =
-            allItems.slice(0, 3);
-
-          const extra =
-            allItems.length - visible.length;
+          const visible = allItems;
+          const extra = 0;
 
           const inMonth =
             date.getMonth()
@@ -4610,6 +4607,40 @@ function renderWeeklyOverview() {
     }).join("") + '</div></div>';
 }
 
+function renderAgendaSide() {
+  const today = startOfDaySchedule(new Date());
+  const todayISO = toISODateSchedule(today);
+  const todayTopics = topicsOnDate(today);
+  const todayEvents = eventsOnDate(today);
+  const count = document.getElementById("agenda-today-count");
+  const list = document.getElementById("agenda-today-list");
+  if (count) count.textContent = String(todayTopics.length + todayEvents.length);
+  if (list) {
+    const rows = [
+      ...todayTopics.map(topic => '<label class="agenda-task"><input type="checkbox" data-complete-topic="'+escapeScheduleHtml(topic.id)+'"><span><strong>'+escapeScheduleHtml(topic.theme)+'</strong><small>'+escapeScheduleHtml(topicMeta(topic)||"Aula")+'</small></span></label>'),
+      ...todayEvents.map(event => '<div class="agenda-task"><span aria-hidden="true">•</span><span><strong>'+escapeScheduleHtml(event.title)+'</strong><small>'+escapeScheduleHtml(scheduleKindLabel(event.event_type||"other"))+'</small></span></div>')
+    ];
+    list.innerHTML = rows.length ? rows.join("") : '<p class="agenda-empty">Nenhuma atividade para hoje.</p>';
+  }
+  const weekStart = startOfWeekSchedule(today);
+  const weekDays = Array.from({length:7},(_,i)=>addDaysSchedule(weekStart,i));
+  const totals = weekDays.map(d=>topicsOnDate(d).length+eventsOnDate(d).length);
+  const totalEl=document.getElementById("agenda-week-total"), daysEl=document.getElementById("agenda-week-days"), overdueEl=document.getElementById("agenda-week-overdue");
+  if(totalEl) totalEl.textContent=String(totals.reduce((a,b)=>a+b,0));
+  if(daysEl) daysEl.textContent=String(totals.filter(Boolean).length);
+  if(overdueEl) overdueEl.textContent=String(scheduleState.topics.filter(isTopicOverdue).length);
+  const next=document.getElementById("agenda-next-list");
+  if(next){
+    const future=[];
+    for(let i=1;i<=14 && future.length<5;i++){
+      const d=addDaysSchedule(today,i);
+      topicsOnDate(d).forEach(t=>future.push({title:t.theme,date:d,meta:topicMeta(t)||"Aula"}));
+      eventsOnDate(d).forEach(e=>future.push({title:e.title,date:d,meta:scheduleKindLabel(e.event_type||"other")}));
+    }
+    next.innerHTML=future.length?future.slice(0,5).map(item=>'<div class="agenda-next-item"><strong>'+escapeScheduleHtml(item.title)+'</strong><span>'+new Intl.DateTimeFormat("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit"}).format(item.date).replace(".","")+' · '+escapeScheduleHtml(item.meta)+'</span></div>').join(""):'<p class="agenda-empty">Sem próximas atividades nos próximos 14 dias.</p>';
+  }
+}
+
 function updatePlannerViewControls() {
   const isMonth =
     scheduleState.plannerView === "month";
@@ -4669,6 +4700,7 @@ function updatePlannerViewControls() {
 
 function renderPlanner() {
   updatePlannerViewControls();
+  renderAgendaSide();
 
   if (
     scheduleState.plannerView
