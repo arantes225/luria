@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v170-direct-quick-chart-code";
+const CACHE_VERSION = "luria-pwa-v171-pcr-route-fix";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -28,6 +28,7 @@ const APP_SHELL = [
   "/assets/css/quick-chart-manager.css?v=4",
   "/assets/js/quick-chart-manager.js?v=4",
   "/trabalho/pcr/",
+  "/trabalho/pcr/executar/",
   "/trabalho/financeiro/",
   "/trabalho/calculadora/",
   "/trabalho/bulario/",
@@ -65,7 +66,7 @@ const APP_SHELL = [
   "/assets/js/onboarding.js?v=2.4",
   "/assets/css/onboarding.css?v=1.9",
   "/assets/js/storage-router.js?v=1.0.0",
-  "/assets/js/trabalho-pcr.js?v=8-pwa-causes",
+  "/assets/js/trabalho-pcr.js?v=9-pdf-branding",
   "/assets/js/pwa.js?v=4-force-refresh",
   "/assets/img/logos/logo-principal.png",
 ];
