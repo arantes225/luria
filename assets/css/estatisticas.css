@@ -428,3 +428,80 @@
 .activity-square.level-4{background:color-mix(in srgb,var(--accent) 68%,var(--surface))}
 .activity-square.level-5{background:color-mix(in srgb,var(--accent) 88%,var(--surface))}
 .activity-legend{display:flex;align-items:center;gap:4px;margin-top:7px;margin-left:28px;color:var(--muted);font-size:7px}.activity-legend .activity-square{width:9px;height:9px;border-radius:2px}.activity-legend span:first-child{margin-right:2px}.activity-legend span:last-child{margin-left:2px}
+
+/* v24 — composição visual das referências aprovadas */
+.stats-page{max-width:1440px!important;margin:0 auto!important}
+.stats-hero{padding-bottom:7px!important}.stats-hero h1{font-size:28px!important;letter-spacing:-.04em!important}.stats-hero p{font-size:10px!important}
+.stats-tabs-shell{margin:2px 0 10px!important}
+[data-stats-panel]{animation:none!important}
+[data-stats-panel] .stats-summary-box{padding:0!important;border:0!important;background:transparent!important;margin:0 0 10px!important}
+[data-stats-panel] .stats-summary-box>.stats-section-head{display:none!important}
+[data-stats-panel] .stats-summary-grid{gap:10px!important;margin:0!important}
+[data-stats-panel="geral"] .stats-summary-grid,[data-stats-panel="aulas"] .stats-summary-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+[data-stats-panel="flashcards"] .stats-summary-grid,[data-stats-panel="questoes"] .stats-summary-grid{grid-template-columns:repeat(6,minmax(0,1fr))!important}
+[data-stats-panel] .stats-summary-card{min-height:88px!important;padding:12px 13px!important;border-radius:9px!important;background:var(--surface)!important}
+[data-stats-panel] .stats-summary-card span{font-size:8px!important;text-transform:none!important;letter-spacing:0!important}
+[data-stats-panel] .stats-summary-card strong{font-size:20px!important;margin-top:4px!important}
+[data-stats-panel] .stats-summary-card small{font-size:7px!important;margin-top:4px!important}
+[data-stats-panel] .stats-block-grid{gap:10px!important}
+[data-stats-panel] .stats-block{padding:12px!important;border-radius:9px!important;background:var(--surface)!important;box-shadow:none!important}
+[data-stats-panel] .stats-section-head{margin-bottom:7px!important;padding-bottom:0!important;border:0!important}
+[data-stats-panel] .stats-section-head h3{font-size:11px!important}
+[data-stats-panel] .stats-section-head p{font-size:7.5px!important;margin-top:2px!important}
+[data-stats-panel] .chart-box{min-height:180px!important}[data-stats-panel] .chart-box.compact{min-height:155px!important}
+[data-stats-panel] .metric-strip{gap:7px!important}.metric-mini{min-height:64px!important;padding:9px!important;border-radius:8px!important}
+[data-stats-panel] .stats-table{font-size:7.5px!important}.stats-table th,.stats-table td{padding:5px 6px!important}
+[data-stats-panel] .progress-row{min-height:25px!important}
+[data-stats-panel] .insights{gap:7px!important}.insight{min-height:58px!important;padding:8px 9px!important;border-radius:8px!important}
+
+/* geral: painel visual compacto, sem página interminável */
+[data-stats-panel="geral"] .stats-block-grid{grid-template-columns:repeat(12,minmax(0,1fr))!important}
+[data-stats-panel="geral"] .stats-block{grid-column:span 4!important}
+[data-stats-panel="geral"] .stats-block.wide{grid-column:span 6!important}
+[data-stats-panel="geral"] .stats-block:nth-child(1){grid-column:span 6!important}
+[data-stats-panel="geral"] .stats-block:nth-child(2){grid-column:span 6!important}
+[data-stats-panel="geral"] .stats-block:nth-child(3){grid-column:span 4!important}
+[data-stats-panel="geral"] .stats-block:nth-child(4){grid-column:span 4!important}
+[data-stats-panel="geral"] .stats-block:nth-child(5){grid-column:span 4!important}
+[data-stats-panel="geral"] .stats-block:nth-child(6){grid-column:span 12!important}
+
+/* aulas: cartões e gráficos na densidade da referência */
+[data-stats-panel="aulas"] .stats-block-grid{grid-template-columns:repeat(12,minmax(0,1fr))!important}
+[data-stats-panel="aulas"] .stats-block{grid-column:span 4!important}
+[data-stats-panel="aulas"] .stats-block.wide{grid-column:span 6!important}
+[data-stats-panel="aulas"] .stats-block:nth-child(1){grid-column:span 6!important}
+[data-stats-panel="aulas"] .stats-block:nth-child(2),[data-stats-panel="aulas"] .stats-block:nth-child(3){grid-column:span 3!important}
+[data-stats-panel="aulas"] .stats-block:nth-child(4){grid-column:span 8!important}
+[data-stats-panel="aulas"] .stats-block:nth-child(5){grid-column:span 4!important}
+
+/* flashcards: tendência larga + módulos menores, como a referência */
+[data-stats-panel="flashcards"] .stats-block-grid{grid-template-columns:repeat(12,minmax(0,1fr))!important}
+[data-stats-panel="flashcards"] .stats-block{grid-column:span 4!important}
+[data-stats-panel="flashcards"] .stats-block.wide{grid-column:span 6!important}
+[data-stats-panel="flashcards"] .stats-block:nth-child(1){grid-column:span 7!important}
+[data-stats-panel="flashcards"] .stats-block:nth-child(2){grid-column:span 5!important}
+[data-stats-panel="flashcards"] .stats-block:nth-child(3),[data-stats-panel="flashcards"] .stats-block:nth-child(4),[data-stats-panel="flashcards"] .stats-block:nth-child(5){grid-column:span 4!important}
+[data-stats-panel="flashcards"] .stats-block:nth-child(6){grid-column:span 6!important}
+[data-stats-panel="flashcards"] .stats-block:nth-child(7),[data-stats-panel="flashcards"] .stats-block:nth-child(8){grid-column:span 3!important}
+[data-stats-panel="flashcards"] .stats-block:nth-child(9){grid-column:span 12!important}
+
+/* questões: gráfico principal largo + comparativos, no padrão da imagem */
+[data-stats-panel="questoes"] .stats-block-grid{grid-template-columns:repeat(12,minmax(0,1fr))!important}
+[data-stats-panel="questoes"] .stats-block{grid-column:span 6!important}
+[data-stats-panel="questoes"] .stats-block:nth-child(1){grid-column:span 8!important}
+[data-stats-panel="questoes"] .stats-block:nth-child(2){grid-column:span 4!important}
+[data-stats-panel="questoes"] .stats-block:nth-child(3){grid-column:span 8!important}
+[data-stats-panel="questoes"] .stats-block:nth-child(4){grid-column:span 4!important}
+
+/* mapa de atividade: quadradinhos discretos como nas referências */
+.activity-heatmap{max-width:none!important}
+.activity-months{grid-template-columns:24px repeat(12,11px)!important;gap:3px!important}
+.activity-grid{grid-template-columns:24px repeat(12,11px)!important;grid-auto-rows:11px!important;gap:3px!important}
+.activity-square{width:11px!important;height:11px!important;border-radius:2px!important}
+.activity-day{font-size:6.5px!important;line-height:11px!important}
+.activity-legend{margin-left:24px!important}
+
+@media(max-width:900px){
+ [data-stats-panel] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ [data-stats-panel] .stats-block,[data-stats-panel] .stats-block.wide{grid-column:span 12!important}
+}
