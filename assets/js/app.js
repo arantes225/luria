@@ -284,7 +284,13 @@ const PAGE_INFO = {
   trabalho_bulario: { title: "Bulário", eyebrow: "Trabalho" },
   trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
   trabalho_diagnostico: { title: "Diagnóstico", eyebrow: "Trabalho" },
-  trabalho_laboratorio: { title: "Laboratório", eyebrow: "Trabalho" }
+  trabalho_laboratorio: { title: "Laboratório", eyebrow: "Trabalho" },
+  trabalho_paciente: { title: "Paciente", eyebrow: "Trabalho" },
+  trabalho_prescricao: { title: "Prescrição", eyebrow: "Trabalho" },
+  trabalho_protocolos: { title: "Protocolos", eyebrow: "Trabalho" },
+  trabalho_ecg: { title: "ECG", eyebrow: "Trabalho" },
+  trabalho_cid: { title: "CID", eyebrow: "Trabalho" },
+  trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Trabalho" }
 };
 
 
@@ -449,12 +455,24 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">▦</span><span>Plantões</span>
         </a>
 
+        <a class="nav-link ${page === "trabalho_paciente" ? "active" : ""}" href="/trabalho/paciente/">
+          <span class="nav-icon">◉</span><span>Paciente</span>
+        </a>
+
         <a class="nav-link ${page === "trabalho_passometro" ? "active" : ""}" href="/trabalho/passometro/">
           <span class="nav-icon">⌁</span><span>Passômetro</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_pcr" ? "active" : ""}" href="/trabalho/pcr/">
           <span class="nav-icon">✚</span><span>PCR</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">
+          <span class="nav-icon">▤</span><span>Protocolos</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_prescricao" ? "active" : ""}" href="/trabalho/prescricao/">
+          <span class="nav-icon">✎</span><span>Prescrição</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">
@@ -479,6 +497,18 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_laboratorio" ? "active" : ""}" href="/trabalho/laboratorio/">
           <span class="nav-icon">⚗</span><span>Laboratório</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_ecg" ? "active" : ""}" href="/trabalho/ecg/">
+          <span class="nav-icon">⌁</span><span>ECG</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_cid" ? "active" : ""}" href="/trabalho/cid/">
+          <span class="nav-icon">#</span><span>CID</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_fluidos" ? "active" : ""}" href="/trabalho/fluidos-eletrólitos/">
+          <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
         </a>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
