@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v150-work-fixed-footer";
+const CACHE_VERSION = "luria-pwa-v151-pcr-operacional";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -41,6 +41,7 @@ const APP_SHELL = [
   "/assets/css/pwa-mobile.css?v=18",
   "/assets/css/plantao.css?v=8.7-pwa-monitor-fill",
   "/assets/css/plantao-pwa-game.css?v=7-no-patient-breath",
+  "/assets/css/trabalho-pcr.css?v=1",
   "/assets/css/luria-brand-v5.css",
   "/assets/js/luria-brand-v5.js?v=12",
   "/assets/js/app.js?v=17.20-work-fixed-footer",
@@ -59,6 +60,7 @@ const APP_SHELL = [
   "/assets/js/onboarding.js?v=2.4",
   "/assets/css/onboarding.css?v=1.9",
   "/assets/js/storage-router.js?v=1.0.0",
+  "/assets/js/trabalho-pcr.js?v=1",
   "/assets/js/pwa.js",
   "/assets/img/logos/logo-principal.png",
 ];
