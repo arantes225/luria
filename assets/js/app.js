@@ -434,7 +434,7 @@
       border:1px solid var(--border) !important;
       background:var(--surface) !important;
       color:var(--accent) !important;
-      font:900 25px/1 inherit !important;
+      font:900 28px/1 inherit !important;
     }
 
     .luria-pomodoro-panel {
@@ -530,13 +530,21 @@
     }
 
     #luria-notification-toggle svg {
-      width:38px !important;
-      height:38px !important;
+      width:27px !important;
+      height:27px !important;
     }
 
     /* Afastar Pomodoro e sino do perfil */
     .luria-pomodoro-top { margin-right:2px; }
     #luria-notification-toggle { margin-right:4px; }
+
+    /* Alinha Pomodoro + sino + L ao botão de recolher a sidebar no desktop. */
+    @media (min-width:981px) {
+      .topbar .luria-notifications {
+        position:relative !important;
+        top:8px !important;
+      }
+    }
 
     @media(max-width:760px){
       .luria-notifications{gap:9px!important}
