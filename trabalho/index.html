@@ -13,18 +13,8 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.9-dashboard-like-cronograma">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <style>
-    .work-shell{display:grid;gap:16px}
-    .work-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .work-hero h2{margin:0 0 8px;font-size:24px}
-    .work-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .work-card{min-height:150px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
-    .work-card strong{display:block;margin-bottom:8px;font-size:15px}
-    .work-card span{color:var(--muted);font-size:13px;line-height:1.5}
-    @media(max-width:800px){.work-grid{grid-template-columns:1fr}.work-hero{padding:18px}}
-  </style>
-</head>
+  <link rel="stylesheet" href="/assets/css/work-dashboard.css?v=1">
+/head>
 <body data-page="trabalho_dashboard">
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
@@ -38,16 +28,21 @@
             <h1 data-page-title></h1>
           </div>
         </header>
-        <section class="work-shell">
-          <article class="work-hero">
-            <h2>Dashboard de Trabalho</h2>
-            <p>Visão geral do ambiente profissional do LURIA.</p>
-          </article>
-          <div class="work-grid">
-            <article class="work-card"><strong>Em construção</strong><span>Esta área já está criada e pronta para receber os módulos que você definir.</span></article>
-            <article class="work-card"><strong>Ambiente Trabalho</strong><span>A navegação deste espaço fica separada do ambiente de Estudos.</span></article>
-            <article class="work-card"><strong>Próximo passo</strong><span>Você pode me dizer agora quais informações e funções entram nesta página.</span></article>
+        <section class="work-dashboard" aria-label="Dashboard de Trabalho">
+          <div class="work-dashboard-head">
+            <div>
+              <h2 id="work-dashboard-name">Trabalho</h2>
+              <p>Seu ambiente profissional em um só lugar.</p>
+            </div>
+            <div class="work-dashboard-actions">
+              <time id="work-dashboard-date" class="work-dashboard-date"></time>
+              <div class="work-layout-toggle" aria-label="Visualização do dashboard">
+                <button type="button" data-work-layout="detailed" aria-pressed="true">Detalhado</button>
+                <button type="button" data-work-layout="simple" aria-pressed="false">Simples</button>
+              </div>
+            </div>
           </div>
+          <div id="work-dashboard-content"></div>
         </section>
       </div>
     </main>
@@ -55,6 +50,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.11-trabalho"></script>
+  <script src="/assets/js/work-dashboard.js?v=1"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
