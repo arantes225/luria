@@ -503,3 +503,26 @@ body[data-dashboard-layout="3"] .dl-account,
 body[data-dashboard-layout="4"] .dl-account{
   flex:0 0 auto;
 }
+
+
+/* Pomodoro — centralização precisa da seta de configurações. */
+body[data-dashboard-layout="1"] .dl-timer-settings-toggle,
+body[data-dashboard-layout="2"] .dl-timer-settings-toggle,
+body[data-dashboard-layout="3"] .dl-timer-settings-toggle,
+body[data-dashboard-layout="4"] .dl-timer-settings-toggle{
+  display:inline-grid!important;
+  place-items:center!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:0!important;
+  margin:0!important;
+  line-height:1!important;
+  vertical-align:middle!important;
+}
+
+body[data-dashboard-layout="1"] .dl-pomodoro,
+body[data-dashboard-layout="2"] .dl-pomodoro,
+body[data-dashboard-layout="3"] .dl-pomodoro,
+body[data-dashboard-layout="4"] .dl-pomodoro{
+  align-items:center!important;
+}
