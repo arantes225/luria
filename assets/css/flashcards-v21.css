@@ -101,3 +101,12 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel
 .flash-library-hero{padding-top:0!important;margin-top:-8px!important}
 .flash-library-hero>div:first-child{width:100%}
 .flash-library-hero-actions{display:none!important}
+
+
+/* v23.3 — switch LURIA uniforme (mesmo padrão do Cronograma) */
+.flash-tabs{display:inline-flex!important;width:auto!important;align-items:center!important;gap:3px!important;padding:3px!important;margin:0 0 18px!important;border:1px solid var(--border)!important;border-radius:11px!important;background:var(--surface-2)!important;overflow:visible!important}
+.flash-tabs .flash-tab{position:static!important;min-height:36px!important;height:36px!important;padding:0 14px!important;border:0!important;border-radius:8px!important;background:transparent!important;color:var(--muted)!important;font-size:11px!important;font-weight:800!important;box-shadow:none!important}
+.flash-tabs .flash-tab:after{display:none!important}
+.flash-tabs .flash-tab:hover{color:var(--text)!important}
+.flash-tabs .flash-tab.active{background:var(--surface)!important;color:var(--accent)!important;box-shadow:0 1px 3px rgba(15,35,65,.08)!important}
+body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin-top:0!important}
