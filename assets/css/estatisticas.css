@@ -895,3 +895,28 @@
   border-radius:7px!important;
   font-size:9px!important;
 }
+
+/* v25.3 — Geral: segunda linha fecha 100% da largura, sem sobras */
+[data-stats-panel="geral"] .stats-block-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  grid-template-areas:
+    "habit heat"
+    "dist prog"
+    "area ins"!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(2),
+[data-stats-panel="geral"] .stats-block:nth-child(3){
+  grid-column:auto!important;
+  width:auto!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  align-self:stretch!important;
+  justify-self:stretch!important;
+}
+@media(max-width:1050px){
+ [data-stats-panel="geral"] .stats-block-grid{
+   grid-template-columns:1fr!important;
+   grid-template-areas:"heat" "habit" "dist" "prog" "area" "ins"!important;
+ }
+}
