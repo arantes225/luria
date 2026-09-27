@@ -159,6 +159,34 @@ function wireProfilePickers() {
   syncProfilePickerLabels();
 }
 
+function normalizeUsername(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]/g, "")
+    .slice(0, 30);
+}
+
+function validUsername(value) {
+  return /^[a-z0-9][a-z0-9._-]{2,29}$/.test(value);
+}
+
+function setAccountStatus(id, text, type = "") {
+  const element = document.getElementById(id);
+  if (!element) return;
+  element.textContent = text;
+  element.className = `settings-save-status ${type}`.trim();
+}
+
+function normalizePhone(value) {
+  const raw = String(value || "").trim();
+  const digits = raw.replace(/\D/g, "");
+  if (!digits) return "";
+  if (raw.startsWith("+")) return "+" + digits;
+  if (digits.startsWith("55")) return "+" + digits;
+  return "+55" + digits;
+}
+
 function updateProfilePreview() {
   const name =
     document.getElementById("profile-name").value.trim()
@@ -186,7 +214,7 @@ function updateProfilePreview() {
 async function loadProfileSettings() {
   const { data, error } = await settingsSb
     .from("profiles")
-    .select("display_name, gender, specialty")
+    .select("display_name, username, gender, specialty")
     .eq("user_id", settingsUser.id)
     .maybeSingle();
 
@@ -202,6 +230,9 @@ async function loadProfileSettings() {
   document.getElementById("profile-name").value =
     data?.display_name || "";
 
+  const usernameInput = document.getElementById("profile-username");
+  if (usernameInput) usernameInput.value = data?.username || "";
+
   document.getElementById("profile-gender").value =
     data?.gender || "";
 
@@ -215,6 +246,9 @@ async function loadProfileSettings() {
 async function saveProfileSettings() {
   const name =
     document.getElementById("profile-name").value.trim();
+
+  const username =
+    normalizeUsername(document.getElementById("profile-username")?.value);
 
   const gender =
     document.getElementById("profile-gender").value || null;
@@ -230,6 +264,14 @@ async function saveProfileSettings() {
     return;
   }
 
+  if (username && !validUsername(username)) {
+    setProfileStatus(
+      "Nome de usuário inválido. Use 3–30 caracteres: letras minúsculas, números, ponto, hífen ou _.",
+      "error"
+    );
+    return;
+  }
+
   const button = document.getElementById("save-profile");
   button.disabled = true;
   setProfileStatus("Salvando...");
@@ -240,6 +282,7 @@ async function saveProfileSettings() {
       {
         user_id: settingsUser.id,
         display_name: name,
+        username: username || null,
         gender,
         specialty: specialty || null
       },
@@ -247,7 +290,7 @@ async function saveProfileSettings() {
         onConflict: "user_id"
       }
     )
-    .select("display_name, gender, specialty")
+    .select("display_name, username, gender, specialty")
     .single();
 
   button.disabled = false;
@@ -288,6 +331,7 @@ function wireProfileSettings() {
 
   [
     "profile-name",
+    "profile-username",
     "profile-gender",
     "profile-specialty"
   ].forEach((id) => {
@@ -975,15 +1019,133 @@ function setPasswordStatus(
 
 
 function loadAccountSecurity() {
-  const email =
-    document.getElementById(
-      "account-email"
-    );
+  const email = document.getElementById("account-email");
+  const phone = document.getElementById("account-phone");
 
-  if (email) {
-    email.textContent =
-      settingsUser?.email
-      || "E-mail não disponível";
+  if (email) email.value = settingsUser?.email || "";
+  if (phone) phone.value = settingsUser?.phone || "";
+
+  refreshQuickAccessAddress();
+}
+
+function currentProfileUsername() {
+  return normalizeUsername(document.getElementById("profile-username")?.value);
+}
+
+function refreshQuickAccessAddress() {
+  const el = document.getElementById("quick-access-address");
+  if (!el) return;
+  const username = currentProfileUsername();
+  el.textContent = validUsername(username)
+    ? `${location.origin}/${username}`
+    : "Defina um nome de usuário válido no perfil.";
+}
+
+async function saveAccountEmail() {
+  const button = document.getElementById("save-account-email");
+  const email = document.getElementById("account-email")?.value.trim() || "";
+  if (!email || !email.includes("@")) {
+    setAccountStatus("account-email-status", "Digite um e-mail válido.", "error");
+    return;
+  }
+  button.disabled = true;
+  setAccountStatus("account-email-status", "Solicitando alteração...");
+  const { error } = await settingsSb.auth.updateUser({ email });
+  button.disabled = false;
+  if (error) {
+    setAccountStatus("account-email-status", `Não foi possível alterar: ${error.message}`, "error");
+    return;
+  }
+  setAccountStatus("account-email-status", "Confirmação enviada. Verifique o novo e-mail.", "success");
+}
+
+async function saveAccountPhone() {
+  const button = document.getElementById("save-account-phone");
+  const phoneInput = document.getElementById("account-phone");
+  const phone = normalizePhone(phoneInput?.value);
+  if (!/^\+[1-9]\d{7,14}$/.test(phone)) {
+    setAccountStatus("account-phone-status", "Digite o telefone com DDD; o país será +55 quando não informado.", "error");
+    return;
+  }
+  if (phoneInput) phoneInput.value = phone;
+  button.disabled = true;
+  setAccountStatus("account-phone-status", "Enviando código de confirmação...");
+  const { error } = await settingsSb.auth.updateUser({ phone });
+  button.disabled = false;
+  if (error) {
+    setAccountStatus("account-phone-status", `Não foi possível alterar: ${error.message}`, "error");
+    return;
+  }
+  setAccountStatus("account-phone-status", "Código enviado por SMS. Digite-o abaixo para confirmar.", "success");
+}
+
+async function verifyAccountPhone() {
+  const button = document.getElementById("verify-account-phone");
+  const phone = normalizePhone(document.getElementById("account-phone")?.value);
+  const token = String(document.getElementById("account-phone-otp")?.value || "").replace(/\D/g, "");
+  if (!/^\d{6}$/.test(token)) {
+    setAccountStatus("account-phone-status", "Digite o código de 6 dígitos recebido por SMS.", "error");
+    return;
+  }
+  button.disabled = true;
+  setAccountStatus("account-phone-status", "Confirmando telefone...");
+  const { error } = await settingsSb.auth.verifyOtp({ phone, token, type: "phone_change" });
+  button.disabled = false;
+  if (error) {
+    setAccountStatus("account-phone-status", `Não foi possível confirmar: ${error.message}`, "error");
+    return;
+  }
+  setAccountStatus("account-phone-status", "Telefone confirmado.", "success");
+}
+
+async function saveQuickAccessPin() {
+  const button = document.getElementById("save-quick-access-pin");
+  const pin = String(document.getElementById("quick-access-pin")?.value || "").replace(/\D/g, "");
+  const confirmPin = String(document.getElementById("quick-access-pin-confirm")?.value || "").replace(/\D/g, "");
+  const username = currentProfileUsername();
+
+  if (!validUsername(username)) {
+    setAccountStatus("quick-access-status", "Salve primeiro um nome de usuário válido no perfil.", "error");
+    return;
+  }
+  if (!/^\d{4}$/.test(pin)) {
+    setAccountStatus("quick-access-status", "O PIN precisa ter exatamente 4 dígitos.", "error");
+    return;
+  }
+  if (pin !== confirmPin) {
+    setAccountStatus("quick-access-status", "Os PINs não coincidem.", "error");
+    return;
+  }
+
+  const { data: sessionData } = await settingsSb.auth.getSession();
+  const token = sessionData?.session?.access_token;
+  if (!token) {
+    setAccountStatus("quick-access-status", "Sessão expirada. Entre novamente.", "error");
+    return;
+  }
+
+  button.disabled = true;
+  setAccountStatus("quick-access-status", "Salvando PIN...");
+  try {
+    const response = await fetch("https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "apikey": "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L",
+        "Authorization": `Bearer ${token}`
+      },
+      body: JSON.stringify({ action: "set_pin", pin })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.error || "Não foi possível salvar o PIN.");
+    document.getElementById("quick-access-pin").value = "";
+    document.getElementById("quick-access-pin-confirm").value = "";
+    refreshQuickAccessAddress();
+    setAccountStatus("quick-access-status", "PIN salvo. Seu acesso externo está pronto.", "success");
+  } catch (error) {
+    setAccountStatus("quick-access-status", error?.message || "Não foi possível salvar o PIN.", "error");
+  } finally {
+    button.disabled = false;
   }
 }
 
@@ -1742,6 +1904,23 @@ async function initStudySettings() {
 
   loadAccountSecurity();
   wirePasskeySettings();
+
+  document.getElementById("profile-username")
+    ?.addEventListener("input", () => {
+      const input = document.getElementById("profile-username");
+      const normalized = normalizeUsername(input?.value);
+      if (input && input.value !== normalized) input.value = normalized;
+      refreshQuickAccessAddress();
+    });
+
+  document.getElementById("save-account-email")
+    ?.addEventListener("click", saveAccountEmail);
+  document.getElementById("save-account-phone")
+    ?.addEventListener("click", saveAccountPhone);
+  document.getElementById("verify-account-phone")
+    ?.addEventListener("click", verifyAccountPhone);
+  document.getElementById("save-quick-access-pin")
+    ?.addEventListener("click", saveQuickAccessPin);
 
   document.getElementById("signout-other-browsers")
     ?.addEventListener("click", signOutOtherBrowsers);
