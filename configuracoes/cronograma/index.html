@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Cronograma · Configurações · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.11-settings-reference">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=9">
+  <style>
+    body[data-page="configuracoes-cronograma"] .page{max-width:1480px}
+    body[data-page="configuracoes-cronograma"] .topbar .page-heading{display:none}
+    .settings-page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:4px 0 14px;padding:0 2px}
+    .settings-page-head h1{margin:0;font-size:clamp(25px,3vw,34px);line-height:1.1;letter-spacing:-.03em;color:var(--text)}
+    .settings-page-head p{margin:7px 0 0;color:var(--muted);font-size:13px}
+    .settings-tabs{display:flex;align-items:center;gap:6px;width:100%;margin:0 0 16px;padding:0 2px;overflow-x:auto;border-bottom:1px solid var(--border);scrollbar-width:none}
+    .settings-tabs::-webkit-scrollbar{display:none}
+    .settings-tab{position:relative;flex:0 0 auto;min-height:42px;display:inline-flex;align-items:center;padding:0 12px;border:0;background:transparent;color:var(--muted);font:inherit;font-size:12px;font-weight:720;cursor:pointer;white-space:nowrap}
+    .settings-tab:hover{color:var(--text)}
+    .settings-tab.active{color:var(--accent)}
+    .settings-tab.active::after{content:"";position:absolute;left:10px;right:10px;bottom:-1px;height:2px;border-radius:999px;background:var(--accent)}
+    .settings-cronograma-card{padding:0;border:0;background:transparent}
+    .settings-cronograma-frame{display:block;width:100%;min-height:1180px;border:0;background:transparent}
+    @media(max-width:700px){
+      body[data-page="configuracoes-cronograma"] .main{padding-left:14px;padding-right:14px}
+      .settings-cronograma-frame{min-height:1500px}
+      .settings-tab{min-height:40px;padding:0 10px;font-size:11px}
+    }
+  </style>
+</head>
+<body data-page="configuracoes-cronograma">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"></div>
+        </header>
+
+        <section class="settings-page-head">
+          <div>
+            <h1>Cronograma</h1>
+            <p>Configure como suas aulas entram no cronograma.</p>
+          </div>
+        </section>
+
+        <nav class="settings-tabs" aria-label="Seções das configurações">
+          <a class="settings-tab" href="/configuracoes/#perfil">Perfil e Conta</a>
+          <a class="settings-tab" href="/configuracoes/">Personalizar</a>
+          <a class="settings-tab active" href="/configuracoes/cronograma/" aria-current="page">Cronograma</a>
+          <a class="settings-tab" href="/configuracoes/">Pomodoro e Cronômetro</a>
+          <a class="settings-tab" href="/configuracoes/">Revisões</a>
+          <a class="settings-tab" href="/configuracoes/">Notificações</a>
+          <a class="settings-tab" href="/configuracoes/">Aparência</a>
+          <a class="settings-tab" href="/configuracoes/">Privacidade</a>
+        </nav>
+
+        <section class="settings-cronograma-card">
+          <iframe class="settings-cronograma-frame" src="/cronograma/?settings=1" title="Adicionar aulas e Importador inteligente"></iframe>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=17.27-fixed-sidebar"></script>
+  <script src="/assets/js/study-mode.js?v=14.0"></script>
+  <script defer src="/assets/js/pwa.js?v=5"></script>
+</body>
+</html>
