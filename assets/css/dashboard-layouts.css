@@ -2501,3 +2501,44 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>str
     padding-top:24px!important;
   }
 }
+
+
+/* Dashboard 4 — Atividades do dia ficam contidas no próprio card. */
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-activities{
+  display:flex!important;
+  flex-direction:column!important;
+  min-height:0!important;
+  overflow:hidden!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-activities .dl-card-heading{
+  flex:0 0 auto!important;
+  margin-bottom:10px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll{
+  flex:1 1 auto!important;
+  min-height:0!important;
+  overflow-y:auto!important;
+  overflow-x:hidden!important;
+  overscroll-behavior:contain!important;
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in srgb,var(--accent) 35%,transparent) transparent;
+  padding-right:4px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll::-webkit-scrollbar{
+  width:5px;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll::-webkit-scrollbar-thumb{
+  background:color-mix(in srgb,var(--accent) 35%,transparent);
+  border-radius:999px;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-timeline{
+  gap:7px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-activity{
+  min-height:50px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-activity-info{
+  min-height:48px!important;
+  padding-top:7px!important;
+  padding-bottom:7px!important;
+}
