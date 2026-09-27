@@ -456,3 +456,50 @@ body[data-dashboard-layout]:not([data-dashboard-layout="old"]) #dashboard-altern
     padding-left:0!important;
   }
 }
+
+
+/* Dashboard Estudos — cabeçalho flutuante sem faixa de fundo. */
+body[data-dashboard-layout="1"] .topbar,
+body[data-dashboard-layout="2"] .topbar,
+body[data-dashboard-layout="3"] .topbar,
+body[data-dashboard-layout="4"] .topbar{
+  background:transparent!important;
+  background-color:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
+
+body[data-dashboard-layout="1"] .topbar::before,
+body[data-dashboard-layout="1"] .topbar::after,
+body[data-dashboard-layout="2"] .topbar::before,
+body[data-dashboard-layout="2"] .topbar::after,
+body[data-dashboard-layout="3"] .topbar::before,
+body[data-dashboard-layout="3"] .topbar::after,
+body[data-dashboard-layout="4"] .topbar::before,
+body[data-dashboard-layout="4"] .topbar::after{
+  content:none!important;
+  display:none!important;
+}
+
+body[data-dashboard-layout="1"] .topbar,
+body[data-dashboard-layout="2"] .topbar,
+body[data-dashboard-layout="3"] .topbar,
+body[data-dashboard-layout="4"] .topbar{
+  justify-content:flex-end!important;
+}
+
+body[data-dashboard-layout="1"] .dl-topbar-controls,
+body[data-dashboard-layout="2"] .dl-topbar-controls,
+body[data-dashboard-layout="3"] .dl-topbar-controls,
+body[data-dashboard-layout="4"] .dl-topbar-controls{
+  margin-left:auto!important;
+}
+
+body[data-dashboard-layout="1"] .dl-account,
+body[data-dashboard-layout="2"] .dl-account,
+body[data-dashboard-layout="3"] .dl-account,
+body[data-dashboard-layout="4"] .dl-account{
+  flex:0 0 auto;
+}
