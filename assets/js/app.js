@@ -3831,8 +3831,18 @@ function prepararMobileMenu() {
 
   const abrir = () => document.body.classList.add("sidebar-open");
   const fechar = () => document.body.classList.remove("sidebar-open");
+  const alternar = () => {
+    if (
+      document.body.classList.contains("plantao-phone-mode")
+      && document.body.classList.contains("sidebar-open")
+    ) {
+      fechar();
+      return;
+    }
+    abrir();
+  };
 
-  open?.addEventListener("click", abrir);
+  open?.addEventListener("click", alternar);
   close?.addEventListener("click", fechar);
   backdrop?.addEventListener("click", fechar);
 }
