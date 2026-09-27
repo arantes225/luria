@@ -1,0 +1,30 @@
+/* Flashcards Central v18 — caderno de decks + player de revisão */
+body[data-page="flashcards"] .flash-tabs{position:sticky;top:0;z-index:8;background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(14px);padding:8px;border:1px solid var(--border);border-radius:16px;margin-bottom:14px}
+body[data-page="flashcards"] .flash-tab{border-radius:11px}
+body[data-page="flashcards"] [data-flash-section="library"]>.panel{padding:18px;border-radius:20px}
+body[data-page="flashcards"] [data-flash-section="library"] .panel-header h2{font-size:22px}
+body[data-page="flashcards"] .library-filters{padding:10px;border:1px solid var(--border);border-radius:15px;background:var(--surface-2)}
+body[data-page="flashcards"] .flash-deck-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+body[data-page="flashcards"] .flash-deck-card{min-height:170px;padding:16px;border-radius:18px;background:var(--surface);box-shadow:0 8px 26px rgba(10,35,66,.055);transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+body[data-page="flashcards"] .flash-deck-card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 40%,var(--border));box-shadow:0 14px 34px rgba(10,35,66,.09)}
+body[data-page="flashcards"] .flash-deck-card>strong{font-size:15px}
+body[data-page="flashcards"] .flash-deck-card>small{font-size:10px;line-height:1.45}
+body[data-page="flashcards"] .flash-deck-card .flash-deck-buttons{margin-top:auto}
+body[data-page="flashcards"] .flash-deck-card .flash-deck-buttons button{min-height:36px;border-radius:10px;font-size:10px}
+body[data-page="flashcards"] .flash-deck-card[data-priority]::before{content:attr(data-priority);justify-self:start;padding:5px 8px;border-radius:999px;font-size:8px;font-weight:850}
+body[data-page="flashcards"] .flash-deck-card[data-priority="Alta prioridade"]::before{color:#b42318;background:#fee4e2}
+body[data-page="flashcards"] .flash-deck-card[data-priority="Média prioridade"]::before{color:#b54708;background:#fef0c7}
+body[data-page="flashcards"] .flash-deck-card[data-priority="Baixa prioridade"]::before{color:#067647;background:#dcfae6}
+.flash-priority-board{display:grid;grid-template-columns:1fr repeat(3,100px);gap:8px;align-items:center;margin:12px 0;padding:12px 14px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
+.flash-priority-board .copy{display:grid;gap:2px}.flash-priority-board .copy strong{font-size:12px}.flash-priority-board .copy small{color:var(--muted);font-size:9px}
+.flash-priority-stat{display:grid;place-items:center;gap:2px;min-height:54px;border-radius:12px;font-size:8px;font-weight:800}.flash-priority-stat b{font-size:16px}
+.flash-priority-stat.high{background:#fff1f0;color:#b42318}.flash-priority-stat.medium{background:#fff8e6;color:#b54708}.flash-priority-stat.low{background:#edfdf3;color:#067647}
+.flash-review-fullscreen{margin-left:auto;min-height:34px!important}
+body.flash-review-session-active .flash-review-panel{border-radius:22px}
+body.flash-review-session-active .review-card{min-height:420px;display:flex;flex-direction:column;justify-content:center}
+body.flash-review-session-active .review-text{font-size:clamp(20px,2.2vw,30px);line-height:1.4;text-align:center}
+body.flash-review-session-active .rating-actions{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+body.flash-review-session-active .rating-button{min-height:70px;border-radius:14px}
+body.flash-review-session-active .review-focus-toolbar{position:sticky;top:10px;z-index:10;box-shadow:0 8px 28px rgba(10,35,66,.08)}
+@media(max-width:900px){body[data-page="flashcards"] .flash-deck-grid{grid-template-columns:1fr}.flash-priority-board{grid-template-columns:1fr repeat(3,1fr)}}
+@media(max-width:620px){.flash-priority-board{grid-template-columns:1fr 1fr 1fr}.flash-priority-board .copy{grid-column:1/-1}body[data-page="flashcards"] [data-flash-section="library"]>.panel{padding:12px}body.flash-review-session-active .review-card{min-height:330px}}
