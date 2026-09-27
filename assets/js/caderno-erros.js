@@ -2543,193 +2543,21 @@ function renderErrorMeta(
 }
 
 
-async function renderCurrentError() {
-  const empty =
-    document.getElementById(
-      "error-empty"
-    );
-
-
-  const stage =
-    document.getElementById(
-      "error-stage"
-    );
-
-
-  if (
-    errorIndex
-    >= errorQueue.length
-  ) {
-    stage.hidden =
-      true;
-
-    const selectedArea =
-      currentAreaFilter();
-
-    empty.hidden =
-      !selectedArea;
-
-
-    document
-      .getElementById(
-        "error-position"
-      )
-      .textContent =
-        errorQueue.length
-          ? `${errorQueue.length} / ${errorQueue.length}`
-          : "0 / 0";
-
-
-    document
-      .getElementById(
-        "error-progress-copy"
-      )
-      .textContent =
-        "sem pendências";
-
-
-    return;
-  }
-
-
-  empty.hidden =
-    true;
-
-
-  stage.hidden =
-    false;
-
-
-  const item =
-    errorQueue[
-      errorIndex
-    ];
-
-
-  const remaining =
-    errorQueue.length
-    - errorIndex;
-
-
-  document
-    .getElementById(
-      "error-position"
-    )
-    .textContent =
-      `${errorIndex + 1} / ${errorQueue.length}`;
-
-
-  document
-    .getElementById(
-      "error-progress-copy"
-    )
-    .textContent =
-      `${remaining} restante${
-        remaining === 1
-          ? ""
-          : "s"
-      }`;
-
-
-  document
-    .getElementById(
-      "error-ccq"
-    )
-    .textContent =
-      item.ccq
-      || "Sem Pulo do Gato";
-
-
-  renderErrorMeta(
-    item
-  );
-
-
-  const question =
-    document.getElementById(
-      "error-question"
-    );
-
-
-  question.textContent =
-    item.question_text
-    || (
-      item.question_image_path
-        ? ""
-        : "Questão não informada."
-    );
-
-
-  document
-    .getElementById(
-      "error-correct-answer"
-    )
-    .textContent =
-      item.correct_answer
-      || "—";
-
-
-  const thoughtBlock =
-    document.getElementById(
-      "error-thought-block"
-    );
-
-
-  const thought =
-    document.getElementById(
-      "error-thought"
-    );
-
-
-  if (
-    item.what_i_thought
-  ) {
-    thoughtBlock.hidden =
-      false;
-
-
-    thought.textContent =
-      item.what_i_thought;
-
-
-  } else {
-    thoughtBlock.hidden =
-      true;
-
-
-    thought.textContent =
-      "";
-  }
-
-
-  const details =
-    document.getElementById(
-      "error-details"
-    );
-
-
-  details.hidden =
-    true;
-
-
-  document
-    .getElementById(
-      "open-error"
-    )
-    .textContent =
-      "Abrir";
-
-
-  setErrorStatus(
-    ""
-  );
-
-
-  prepareErrorImage(
-    item.question_image_path
-  );
+async function renderReviewSidebars(){
+  const upcoming=document.getElementById("error-review-queue-list"), count=document.getElementById("error-review-queue-count");
+  const rest=errorQueue.slice(errorIndex+1,errorIndex+6); if(count)count.textContent=String(Math.max(0,errorQueue.length-errorIndex-1));
+  if(upcoming)upcoming.innerHTML=rest.length?rest.map((x,i)=>`<button type="button" data-review-jump="${errorIndex+i+1}"><span>${i+1}</span><div><strong>${errorLibraryEscape(x.materia||x.theme||x.area||"Erro")}</strong><small>${errorLibraryEscape(x.area||"Sem área")}</small></div><b>›</b></button>`).join(""):`<div class="error-review-queue-empty">Último item da revisão.</div>`;
+  upcoming?.querySelectorAll("[data-review-jump]").forEach(b=>b.addEventListener("click",()=>{errorIndex=Number(b.dataset.reviewJump);renderCurrentError()}));
+  const metrics=document.getElementById("error-review-session-metrics"); if(metrics){const done=errorIndex,total=errorQueue.length,pct=total?Math.round(done/total*100):0;const areas={};errorQueue.forEach(x=>{const a=x.area||"Sem área";areas[a]=(areas[a]||0)+1});metrics.innerHTML=`<div class="review-metric-ring" style="--p:${pct}"><div><strong>${done}<small> de ${total}</small></strong><span>revisados</span></div></div><div class="review-metric-pair"><div><span>✓</span><strong>${done}</strong><small>Concluídos</small></div><div><span>↻</span><strong>${Math.max(0,total-done)}</strong><small>Pendentes</small></div></div><h3>Erros por área nesta revisão</h3><div class="review-area-bars">${Object.entries(areas).map(([a,n])=>`<div><span>${errorLibraryEscape(a)}</span><i><b style="width:${Math.round(n/Math.max(1,total)*100)}%"></b></i><strong>${n}</strong></div>`).join("")}</div>`}}
 }
-
+function renderCurrentError() {
+  const empty=document.getElementById("error-empty"),stage=document.getElementById("error-stage");
+  if(errorIndex>=errorQueue.length){stage.hidden=true;empty.hidden=false;document.getElementById("error-position").textContent=`${errorQueue.length} / ${errorQueue.length}`;document.getElementById("error-progress-copy").textContent="revisão concluída";renderReviewSidebars();return}
+  empty.hidden=true;stage.hidden=false;const item=errorQueue[errorIndex],remaining=errorQueue.length-errorIndex;
+  document.getElementById("error-position").textContent=`${errorIndex+1} de ${errorQueue.length}`;document.getElementById("error-progress-copy").textContent=`${remaining} restante${remaining===1?"":"s"}`;
+  stage.innerHTML=`<div class="review-focus-meta"><span>${errorLibraryEscape(item.area||"Sem área")}</span><span>${errorLibraryEscape(item.materia||item.theme||"Revisão")}</span></div><section class="review-flashcard"><div class="review-cat-badge"><span>🐱</span> Pulo do Gato</div><div id="error-ccq" class="review-ccq">${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</div></section><section id="error-details" class="review-details" hidden><h3>Questão original</h3><p id="error-question">${errorLibraryEscape(item.question_text||"Questão não informada.")}</p><div class="review-answer"><strong>Resposta correta</strong><p id="error-correct-answer">${errorLibraryEscape(item.correct_answer||"—")}</p></div>${item.what_i_thought?`<div id="error-thought-block"><strong>O que eu pensei</strong><p id="error-thought">${errorLibraryEscape(item.what_i_thought)}</p></div>`:""}</section><div class="review-focus-actions"><button id="mark-error-read" class="button primary" type="button">✓ Entendi</button><button id="open-error" class="button secondary" type="button">Ver questão</button></div><span id="error-status" class="error-status" aria-live="polite"></span>`;
+  document.getElementById("open-error")?.addEventListener("click",toggleErrorDetails);document.getElementById("mark-error-read")?.addEventListener("click",markCurrentErrorRead);renderReviewSidebars();
+}
 
 async function loadErrorQueue() {
   const selectColumns =
