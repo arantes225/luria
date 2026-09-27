@@ -163,7 +163,15 @@
     }
     if (!topbar || document.getElementById("dl-topbar-controls")) {
       const avatar = topbar?.querySelector(".dl-avatar");
-      if (avatar) avatar.textContent = (document.querySelector(".sidebar .user-avatar")?.textContent || "U").trim();
+      if (avatar) {
+        const name = (
+          window.docmapProfile?.display_name
+          || window.docmapUser?.user_metadata?.display_name
+          || window.docmapUser?.email?.split("@")[0]
+          || "Usuário"
+        ).trim();
+        avatar.textContent = (name.charAt(0) || "U").toUpperCase();
+      }
       return;
     }
     const controls = document.createElement("div");
@@ -232,10 +240,39 @@
     const watchStop = () => { clearInterval(watchInterval); watchInterval = null; watchToggle.textContent = "▶"; watchToggle.setAttribute("aria-label", "Iniciar cronômetro"); };
     watchToggle.addEventListener("click", () => { if (watchInterval) { watchStop(); return; } watchToggle.textContent = "Ⅱ"; watchToggle.setAttribute("aria-label", "Pausar cronômetro"); watchInterval = setInterval(() => { seconds++; watchUpdate(); }, 1000); });
     stopwatch.querySelector(".dl-timer-reset").addEventListener("click", () => { watchStop(); seconds = 0; watchUpdate(); });
-    const avatar = document.createElement("a");
-    avatar.className = "dl-avatar"; avatar.href = "/configuracoes/"; avatar.setAttribute("aria-label", "Perfil e configurações");
-    avatar.textContent = (document.querySelector(".sidebar .user-avatar")?.textContent || "U").trim();
-    topbar.appendChild(avatar);
+    const account = document.createElement("div");
+    account.className = "dl-account";
+    const profileName = (
+      window.docmapProfile?.display_name
+      || window.docmapUser?.user_metadata?.display_name
+      || window.docmapUser?.email?.split("@")[0]
+      || "Usuário"
+    ).trim();
+    const accountInitial = (profileName.charAt(0) || "U").toUpperCase();
+    account.innerHTML = `
+      <button class="dl-avatar" type="button" aria-label="Abrir menu da conta" aria-expanded="false" aria-controls="dl-account-menu">${accountInitial}</button>
+      <div class="dl-account-menu" id="dl-account-menu" hidden>
+        <a href="/configuracoes/#perfil">Perfil</a>
+        <a href="/configuracoes/">Configurações</a>
+        <button id="logout" type="button">Sair</button>
+      </div>
+    `;
+    topbar.appendChild(account);
+    const accountButton = account.querySelector(".dl-avatar");
+    const accountMenu = account.querySelector(".dl-account-menu");
+    accountButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const opening = accountMenu.hidden;
+      accountMenu.hidden = !opening;
+      accountButton.setAttribute("aria-expanded", String(opening));
+    });
+    accountMenu.addEventListener("click", (event) => event.stopPropagation());
+    document.addEventListener("click", () => {
+      if (!accountMenu.hidden) {
+        accountMenu.hidden = true;
+        accountButton.setAttribute("aria-expanded", "false");
+      }
+    });
   }
   root.addEventListener("click", (event) => {
     const button = event.target.closest("[data-dl-day]");
