@@ -3605,3 +3605,49 @@ html:not(.pwa-standalone) .plantao-patient-sheet-hda p{
   border-color:#ffffff24;
   color:#eef6fb;
 }
+
+
+/* v9.0 — LuriaZap must never block global navigation */
+body.plantao-phone-mode .sidebar{
+  z-index:130!important;
+}
+body.plantao-phone-mode .sidebar-backdrop{
+  z-index:125!important;
+}
+body.plantao-phone-mode .sidebar-desktop-toggle{
+  z-index:135!important;
+}
+
+@media(max-width:980px){
+  /* Keep only the hamburger available above the full-screen phone UI. */
+  body.plantao-phone-mode .topbar{
+    display:flex!important;
+    position:fixed!important;
+    top:max(12px,env(safe-area-inset-top))!important;
+    left:12px!important;
+    z-index:140!important;
+    width:auto!important;
+    margin:0!important;
+    padding:0!important;
+    background:transparent!important;
+    pointer-events:none!important;
+  }
+  body.plantao-phone-mode .topbar .menu-open{
+    display:inline-grid!important;
+    pointer-events:auto!important;
+    width:42px!important;
+    height:42px!important;
+    margin:0!important;
+    border:1px solid color-mix(in srgb,var(--border) 82%,var(--accent) 18%)!important;
+    border-radius:12px!important;
+    background:color-mix(in srgb,var(--surface) 94%,transparent)!important;
+    color:var(--text)!important;
+    box-shadow:0 4px 14px rgba(0,0,0,.14)!important;
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+  }
+  body.plantao-phone-mode .topbar .page-heading,
+  body.plantao-phone-mode .topbar .luria-notifications{
+    display:none!important;
+  }
+}
