@@ -31,7 +31,7 @@
 
   <link
     rel="stylesheet"
-    href="assets/css/caderno-erros.css?v=14.4"
+    href="assets/css/caderno-erros.css?v=15.0"
   >
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -80,743 +80,87 @@
         </header>
 
 
-        <!-- ================================================
-             MINIDASHBOARD
-             ================================================ -->
-
-        <section class="error-metrics">
-
-          <article class="error-metric-card">
-            <span>Erros registrados</span>
-            <strong id="error-metric-registered">—</strong>
-            <small>total no caderno</small>
-          </article>
-
-          <article class="error-metric-card">
-            <span>Feitos</span>
-            <strong id="error-metric-reviewed">—</strong>
-            <small>com pelo menos 1 revisão</small>
-          </article>
-
-          <article class="error-metric-card">
-            <span>Atrasados</span>
-            <strong id="error-metric-overdue">—</strong>
-            <small>revisão antes de hoje</small>
-          </article>
-
-          <article class="error-metric-card">
-            <span>Retenção</span>
-            <strong id="error-metric-retention">—</strong>
-            <small>estimativa média atual</small>
-          </article>
-
+        <section class="error-home-head">
+          <div>
+            <h1>Caderno de Erros</h1>
+            <p>Transforme seus erros em acertos. Revise, consolide e domine seus pontos fracos.</p>
+          </div>
+          <button class="button primary error-new-native" type="button" data-error-tab="create">＋ Novo erro</button>
         </section>
 
-
-        <section
-          class="error-tabs"
-          aria-label="Seções do Caderno de Erros"
-        >
-          <button
-            class="error-tab active"
-            type="button"
-            data-error-tab="review"
-          >
-            Revisar
-          </button>
-
-          <button
-            class="error-tab error-tab-create"
-            type="button"
-            data-error-tab="create"
-            aria-label="Criar novo erro"
-          >
-            <span class="error-tab-create-icon" aria-hidden="true">＋</span>
-            <span>Criar novo erro</span>
-          </button>
-
-          <button
-            class="error-tab"
-            type="button"
-            data-error-tab="library"
-          >
-            Biblioteca
-          </button>
-
-          <button
-            class="error-tab"
-            type="button"
-            data-error-tab="import"
-          >
-            Importar
-          </button>
+        <section class="error-featured">
+          <div class="error-featured-head">
+            <div><span class="error-featured-kicker">Pulo do Gato</span><h2>Pulos do Gato em destaque</h2><p>Revisão rápida dos pontos mais importantes que você errou recentemente.</p></div>
+          </div>
+          <div id="error-featured-list" class="error-featured-list"></div>
         </section>
 
+        <section class="error-home-layout">
+          <div class="error-home-main">
+            <div class="error-library-nav">
+              <div class="error-state-switch" aria-label="Estado dos erros">
+                <button class="active" type="button" data-error-state="all">Todos</button>
+                <button type="button" data-error-state="review">A revisar</button>
+                <button type="button" data-error-state="consolidating">Em consolidação</button>
+                <button type="button" data-error-state="mastered">Dominados</button>
+              </div>
+              <div class="error-library-tools">
+                <label class="error-library-field"><span>Área</span><select id="error-library-area" data-luria-general-area-select data-blank-label="Todas as áreas"><option value="">Todas as áreas</option></select></label>
+                <label class="error-library-field error-library-search"><span>Buscar</span><input id="error-library-search" type="search" placeholder="Buscar no caderno..."></label>
+              </div>
+            </div>
 
-        <!-- ================================================
-             NOVO ERRO
-             ================================================ -->
+            <section class="error-library-panel error-section active" data-error-section="library">
+              <div class="error-library-title"><div><h2>Seus erros</h2><p>Organizados pelas cinco grandes áreas.</p></div><span id="error-library-count" class="badge accent">—</span></div>
+              <div id="error-library-bulk" class="error-library-bulk">
+                <label class="error-bulk-check"><input id="error-library-select-all" type="checkbox"><span>Selecionar visíveis</span></label>
+                <span id="error-library-selected">0 selecionados</span>
+                <button id="error-library-export-selected" class="button secondary" type="button" disabled>Exportar PDF</button>
+                <button id="error-library-delete-selected" class="button secondary error-bulk-danger" type="button" disabled>Excluir selecionados</button>
+              </div>
+              <span id="error-library-status" class="error-status" aria-live="polite"></span>
+              <div id="error-library-empty" class="error-library-empty" hidden>Nenhum erro encontrado.</div>
+              <div id="error-library" class="error-library"></div>
+            </section>
+          </div>
+
+          <aside class="error-home-aside">
+            <section class="error-side-card">
+              <div class="error-side-head"><div><span>↻</span><h3>Revisões de hoje</h3></div><span id="error-today-count" class="badge accent">0</span></div>
+              <p>Erros que precisam ser revistos agora.</p>
+              <div id="error-today-list" class="error-today-list"></div>
+              <button id="error-start-home-review" class="button primary error-side-primary" type="button">▶ Iniciar revisão</button>
+            </section>
+            <section class="error-side-card">
+              <div class="error-side-head"><div><span>▥</span><h3>Erros que mais se repetem</h3></div></div>
+              <p>Assuntos com maior recorrência no seu caderno.</p>
+              <div id="error-repeat-list" class="error-repeat-list"></div>
+            </section>
+          </aside>
+        </section>
 
         <section class="panel error-create-panel error-section" data-error-section="create">
-
-          <div class="panel-header error-create-head">
-
-            <div>
-              <h2>Adicionar novo erro</h2>
-
-              <p>
-                Registre manualmente um erro para entrar
-                no seu ciclo de revisões.
-              </p>
-            </div>
-
-            <button
-              id="toggle-error-form"
-              class="button secondary"
-              type="button"
-            >
-              Adicionar
-            </button>
-
-          </div>
-
-
-          <div
-            id="error-create-form"
-            class="error-create-form"
-            hidden
-          >
-
+          <div class="panel-header error-create-head"><div><span class="badge accent">Novo erro</span><h2>Adicionar ao Caderno de Erros</h2><p>Registre o ponto que você quer revisar depois.</p></div><button class="button secondary" type="button" data-error-home-back>Voltar</button></div>
+          <div id="error-create-form" class="error-create-form">
             <div class="error-form-grid">
-
-              <div class="error-field error-area-create-field">
-                <span>Área *</span>
-                <div class="flash-area-picker">
-                  <button id="new-error-area-toggle" class="flash-click-select flash-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
-                    <span id="new-error-area-label">Selecione a área</span>
-                    <span class="flash-area-chevron" aria-hidden="true">⌄</span>
-                  </button>
-                  <div id="new-error-area-menu" class="flash-area-menu" role="listbox" hidden></div>
-                  <input id="new-error-area" type="hidden" value="">
-                </div>
-              </div>
-
-              <div class="error-field">
-                <span>Matéria <small>(opcional)</small></span>
-                <div class="flash-subject-picker">
-                  <button id="new-error-materia-toggle" class="flash-click-select flash-subject-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" disabled>
-                    <span id="new-error-materia-label">Selecione primeiro a área</span>
-                    <span class="flash-subject-chevron" aria-hidden="true">⌄</span>
-                  </button>
-                  <div id="new-error-materia-menu" class="flash-subject-menu" role="listbox" hidden></div>
-                  <input id="new-error-materia" type="hidden" value="">
-                </div>
-              </div>
-
-              <label class="error-field full">
-                <span>Tema</span>
-
-                <input
-                  id="new-error-theme"
-                  type="text"
-                  placeholder="Ex.: Insuficiência cardíaca"
-                >
-              </label>
-
-
-              <label class="error-field full">
-                <span>Pulo do Gato *</span>
-
-                <textarea
-                  id="new-error-ccq"
-                  rows="3"
-                  placeholder="Conceito central que você quer lembrar..."
-                ></textarea>
-              </label>
-
-
-              <label class="error-field full">
-                <span>Questão <small>(opcional)</small></span>
-
-                <textarea
-                  id="new-error-question"
-                  rows="6"
-                  placeholder="Opcional: cole a questão ou descreva o erro..."
-                ></textarea>
-              </label>
-
-
-              <label class="error-field full">
-                <span>Resposta correta <small>(opcional)</small></span>
-
-                <textarea
-                  id="new-error-answer"
-                  rows="4"
-                  placeholder="Opcional: resposta correta e explicação essencial..."
-                ></textarea>
-              </label>
-
-
-              <label class="error-field full">
-                <span>
-                  O que eu pensei
-                  <small>(opcional)</small>
-                </span>
-
-                <textarea
-                  id="new-error-thought"
-                  rows="4"
-                  placeholder="Qual foi o raciocínio que levou ao erro?"
-                ></textarea>
-              </label>
-
-
-              <label class="error-field full error-image-field">
-                <span>
-                  Imagem da questão
-                  <small>(opcional)</small>
-                </span>
-
-                <div class="error-image-input-row">
-                  <input
-                    id="new-error-image"
-                    type="file"
-                    accept="image/*"
-                  >
-
-                  <button
-                    id="remove-new-error-image"
-                    class="button secondary error-image-remove"
-                    type="button"
-                    disabled
-                  >
-                    Apagar imagem
-                  </button>
-                </div>
-
-                <label class="error-image-keep-option">
-                  <input
-                    id="keep-new-error-image"
-                    type="checkbox"
-                  >
-                  <span>Manter imagem no Caderno de Erros</span>
-                </label>
-
-                <button
-                  id="extract-error-image-text"
-                  class="button secondary error-image-extract"
-                  type="button"
-                  disabled
-                >
-                  Extrair texto
-                </button>
-
-                <span
-                  id="new-error-image-info"
-                  class="error-image-info"
-                  aria-live="polite"
-                ></span>
-              </label>
-
+              <div class="error-field error-area-create-field"><span>Área *</span><div class="flash-area-picker"><button id="new-error-area-toggle" class="flash-click-select flash-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="new-error-area-label">Selecione a área</span><span class="flash-area-chevron" aria-hidden="true">⌄</span></button><div id="new-error-area-menu" class="flash-area-menu" role="listbox" hidden></div><input id="new-error-area" type="hidden" value=""></div></div>
+              <div class="error-field"><span>Matéria <small>(opcional)</small></span><div class="flash-subject-picker"><button id="new-error-materia-toggle" class="flash-click-select flash-subject-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" disabled><span id="new-error-materia-label">Selecione primeiro a área</span><span class="flash-subject-chevron" aria-hidden="true">⌄</span></button><div id="new-error-materia-menu" class="flash-subject-menu" role="listbox" hidden></div><input id="new-error-materia" type="hidden" value=""></div></div>
+              <label class="error-field full"><span>Tema</span><input id="new-error-theme" type="text" placeholder="Ex.: Insuficiência cardíaca"></label>
+              <label class="error-field full"><span>Pulo do Gato *</span><textarea id="new-error-ccq" rows="3" placeholder="Conceito central que você quer lembrar..."></textarea></label>
+              <label class="error-field full"><span>Questão <small>(opcional)</small></span><textarea id="new-error-question" rows="5"></textarea></label>
+              <label class="error-field full"><span>Resposta correta <small>(opcional)</small></span><textarea id="new-error-answer" rows="4"></textarea></label>
+              <label class="error-field full"><span>O que eu pensei <small>(opcional)</small></span><textarea id="new-error-thought" rows="4"></textarea></label>
+              <label class="error-field full error-image-field"><span>Imagem da questão <small>(opcional)</small></span><div class="error-image-input-row"><input id="new-error-image" type="file" accept="image/*"><button id="remove-new-error-image" class="button secondary error-image-remove" type="button" disabled>Apagar imagem</button></div><label class="error-image-keep-option"><input id="keep-new-error-image" type="checkbox"><span>Manter imagem no Caderno de Erros</span></label><button id="extract-error-image-text" class="button secondary error-image-extract" type="button" disabled>Extrair texto</button><span id="new-error-image-info" class="error-image-info" aria-live="polite"></span></label>
             </div>
-
-
-            <datalist id="error-medical-areas" data-luria-general-area-list>
-              <option value="Clínica Médica"></option>
-              <option value="Pediatria"></option>
-              <option value="Ginecologia e Obstetrícia"></option>
-              <option value="Cirurgia Geral"></option>
-              <option value="Preventiva"></option>
-            </datalist>
-
-
-            <div class="error-create-actions">
-
-              <button
-                id="save-new-error"
-                class="button primary"
-                type="button"
-              >
-                Salvar no Caderno de Erros
-              </button>
-
-              <button
-                id="cancel-new-error"
-                class="button secondary"
-                type="button"
-              >
-                Cancelar
-              </button>
-
-              <span
-                id="new-error-status"
-                class="error-status"
-                aria-live="polite"
-              ></span>
-
-            </div>
-
+            <datalist id="error-medical-areas" data-luria-general-area-list><option value="Clínica Médica"></option><option value="Pediatria"></option><option value="Ginecologia e Obstetrícia"></option><option value="Cirurgia Geral"></option><option value="Preventiva"></option></datalist>
+            <div class="error-create-actions"><button id="save-new-error" class="button primary" type="button">Salvar no Caderno de Erros</button><button id="cancel-new-error" class="button secondary" type="button">Cancelar</button><span id="new-error-status" class="error-status" aria-live="polite"></span></div>
           </div>
-
         </section>
 
-
-        <!-- ================================================
-             REVISÃO
-             ================================================ -->
-
-        <section class="panel error-review-panel error-section active" data-error-section="review">
-
-          <div class="panel-header error-review-header">
-
-            <div class="error-review-heading">
-              <span class="error-review-kicker">
-                Revisão
-              </span>
-
-              <h2 id="error-review-title">
-                Caderno de Erros
-              </h2>
-
-              <p id="error-review-copy">
-                Leia o Pulo do Gato. Abra os detalhes se precisar
-                rever a questão.
-              </p>
-            </div>
-
-
-            <div class="error-review-tools">
-
-              <div
-                id="error-area-filter-wrap"
-                class="error-area-filter"
-              >
-                <span>Revisar por área</span>
-
-                <div class="error-area-picker">
-                  <button
-                    id="error-area-filter-toggle"
-                    class="error-area-filter-toggle"
-                    type="button"
-                    aria-haspopup="listbox"
-                    aria-expanded="false"
-                  >
-                    <span id="error-area-filter-label">Todas as áreas</span>
-                    <span class="error-area-filter-chevron" aria-hidden="true">⌄</span>
-                  </button>
-
-                  <div
-                    id="error-area-filter-menu"
-                    class="error-area-filter-menu"
-                    role="listbox"
-                    hidden
-                  ></div>
-
-                  <select
-                    id="error-area-filter"
-                    class="error-area-filter-native"
-                    data-luria-general-area-select
-                    data-blank-label="Todas as áreas"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                    <option value="">Todas as áreas</option>
-                  </select>
-                </div>
-              </div>
-
-
-              <div class="error-progress">
-
-                <strong id="error-position">
-                  0 / 0
-                </strong>
-
-                <small id="error-progress-copy">
-                  carregando...
-                </small>
-
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div
-            id="error-empty"
-            class="error-empty"
-            hidden
-          >
-            <span id="error-empty-copy">
-              Nenhum Pulo do Gato pendente nesta seleção.
-            </span>
-          </div>
-
-
-          <div
-            id="error-stage"
-            class="error-stage"
-            hidden
-          >
-
-            <article class="error-ccq-card">
-
-              <div class="error-review-menu-wrap">
-
-                <button
-                  id="error-review-menu-trigger"
-                  class="error-library-menu-trigger"
-                  type="button"
-                  aria-label="Opções do item"
-                  aria-expanded="false"
-                >
-                  ⋯
-                </button>
-
-                <div
-                  id="error-review-menu"
-                  class="error-library-menu"
-                  hidden
-                >
-                  <button
-                    id="error-review-edit"
-                    type="button"
-                  >
-                    Editar
-                  </button>
-
-                  <button
-                    id="error-review-delete"
-                    class="danger"
-                    type="button"
-                  >
-                    Excluir
-                  </button>
-                </div>
-
-              </div>
-
-              <div class="error-pulo-brand" role="img" aria-label="Pulo do Gato">
-                <img class="error-pulo-brand-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924e" alt="">
-                <img class="error-pulo-brand-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924e" alt="">
-                <img class="error-pulo-brand-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924e" alt="">
-              </div>
-
-              <div
-                id="error-ccq"
-                class="error-ccq"
-              ></div>
-
-
-              <div
-                id="error-meta"
-                class="error-meta"
-              ></div>
-
-
-              <div
-                id="error-details"
-                class="error-details"
-                hidden
-              >
-
-                <div class="error-detail-block">
-
-                  <span class="error-detail-label">
-                    Questão
-                  </span>
-
-                  <div
-                    id="error-question"
-                    class="error-question"
-                  ></div>
-
-                  <button
-                    id="error-question-image-load"
-                    class="button secondary error-image-load"
-                    type="button"
-                    hidden
-                  >
-                    Ver imagem
-                  </button>
-
-                  <img
-                    id="error-question-image"
-                    class="error-image"
-                    alt="Imagem da questão"
-                    hidden
-                  >
-
-                </div>
-
-
-                <div class="error-detail-grid">
-
-                  <div class="error-detail-block">
-
-                    <span class="error-detail-label">
-                      Resposta correta
-                    </span>
-
-                    <div
-                      id="error-correct-answer"
-                      class="error-answer-text"
-                    ></div>
-
-                  </div>
-
-
-                  <div
-                    id="error-thought-block"
-                    class="error-detail-block"
-                  >
-
-                    <span class="error-detail-label">
-                      O que eu pensei
-                    </span>
-
-                    <div
-                      id="error-thought"
-                      class="error-thought"
-                    ></div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <div class="error-card-actions">
-
-                <button
-                  id="open-error"
-                  class="button secondary"
-                  type="button"
-                >
-                  Abrir
-                </button>
-
-                <button
-                  id="mark-error-read"
-                  class="button primary"
-                  type="button"
-                >
-                  Lido
-                </button>
-
-              </div>
-
-            </article>
-
-
-            <div
-              id="error-status"
-              class="error-status"
-              aria-live="polite"
-            ></div>
-
-          </div>
-
-        </section>
-
-
-        <!-- ================================================
-             IMPORTAR
-             ================================================ -->
-
-        <section
-          class="panel error-import-panel error-section"
-          data-error-section="import"
-        >
-
-          <div class="panel-header">
-            <div>
-              <h2>Importar Caderno de Erros</h2>
-              <p>
-                Aceita Excel ou CSV. Apenas a coluna Pulo do Gato é obrigatória.
-              </p>
-            </div>
-          </div>
-
-          <div class="error-import-box">
-
-            <input
-              id="error-import-file"
-              type="file"
-              accept=".xlsx,.xls,.csv"
-            >
-
-            <div>
-              <strong>Colunas reconhecidas</strong>
-              <code>
-                Área | Matéria | Tema | Pulo do Gato | Questão | Resposta correta | O que eu pensei
-              </code>
-            </div>
-
-          </div>
-
-          <div
-            id="error-import-preview"
-            class="error-import-preview"
-            hidden
-          >
-            <div class="error-import-preview-head">
-              <strong>Prévia</strong>
-              <span id="error-import-summary"></span>
-            </div>
-
-            <div class="error-import-table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Área</th>
-                    <th>Matéria</th>
-                    <th>Tema</th>
-                    <th>Pulo do Gato</th>
-                    <th>Questão</th>
-                    <th>Resposta</th>
-                  </tr>
-                </thead>
-                <tbody id="error-import-body"></tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="error-create-actions">
-
-            <button
-              id="error-import-confirm"
-              class="button primary"
-              type="button"
-              disabled
-            >
-              Importar itens
-            </button>
-
-            <span
-              id="error-import-status"
-              class="error-status"
-              aria-live="polite"
-            ></span>
-
-          </div>
-
-        </section>
-
-
-        <!-- ================================================
-             BIBLIOTECA
-             ================================================ -->
-
-        <section class="panel error-library-panel error-section" data-error-section="library">
-
-          <div class="panel-header error-library-header">
-
-            <div>
-              <h2>Biblioteca do Caderno de Erros</h2>
-
-              <p>
-                Todos os erros registrados, organizados por área.
-              </p>
-            </div>
-
-            <span
-              id="error-library-count"
-              class="badge accent"
-            >
-              —
-            </span>
-
-          </div>
-
-
-          <div class="error-library-tools">
-
-            <label class="error-library-field">
-
-              <span>Área</span>
-
-              <select id="error-library-area" data-luria-general-area-select data-blank-label="Todas as áreas">
-                <option value="">
-                  Todas as áreas
-                </option>
-              </select>
-
-            </label>
-
-
-            <label class="error-library-field error-library-search">
-
-              <span>Buscar</span>
-
-              <input
-                id="error-library-search"
-                type="search"
-                placeholder="Pulo do Gato, matéria, tema ou questão..."
-              >
-
-            </label>
-
-          </div>
-
-
-          <div
-            id="error-library-bulk"
-            class="error-library-bulk"
-          >
-            <label class="error-bulk-check">
-              <input
-                id="error-library-select-all"
-                type="checkbox"
-              >
-              <span>Selecionar visíveis</span>
-            </label>
-
-            <span id="error-library-selected">
-              0 selecionados
-            </span>
-
-            <button
-              id="error-library-export-selected"
-              class="button secondary"
-              type="button"
-              disabled
-            >
-              Exportar PDF
-            </button>
-
-            <button
-              id="error-library-delete-selected"
-              class="button secondary error-bulk-danger"
-              type="button"
-              disabled
-            >
-              Excluir selecionados
-            </button>
-          </div>
-
-          <span
-            id="error-library-status"
-            class="error-status"
-            aria-live="polite"
-          ></span>
-
-          <div
-            id="error-library-empty"
-            class="error-library-empty"
-            hidden
-          >
-            Nenhum erro encontrado.
-          </div>
-
-
-          <div
-            id="error-library"
-            class="error-library"
-          ></div>
-
+        <section class="panel error-review-panel error-section" data-error-section="review">
+          <div class="panel-header error-review-header"><div class="error-review-heading"><span class="error-review-kicker">Revisão</span><h2 id="error-review-title">Caderno de Erros</h2><p id="error-review-copy">Leia o Pulo do Gato. Abra os detalhes se precisar rever a questão.</p></div><button class="button secondary" type="button" data-error-home-back>Voltar à biblioteca</button><div class="error-review-tools"><div id="error-area-filter-wrap" class="error-area-filter"><span>Revisar por área</span><div class="error-area-picker"><button id="error-area-filter-toggle" class="error-area-filter-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="error-area-filter-label">Todas as áreas</span><span class="error-area-filter-chevron" aria-hidden="true">⌄</span></button><div id="error-area-filter-menu" class="error-area-filter-menu" role="listbox" hidden></div><select id="error-area-filter" class="error-area-filter-native" data-luria-general-area-select data-blank-label="Todas as áreas" tabindex="-1" aria-hidden="true"><option value="">Todas as áreas</option></select></div></div><div class="error-progress"><strong id="error-position">0 / 0</strong><small id="error-progress-copy">carregando...</small></div></div></div>
+          <div id="error-empty" class="error-empty" hidden><span id="error-empty-copy">Nenhum Pulo do Gato pendente nesta seleção.</span></div>
+          <div id="error-stage" class="error-stage" hidden></div>
         </section>
 
       </div>
@@ -1001,7 +345,7 @@
   <script src="assets/js/app.js?v=17.28-theme-switch"></script>
   <script src="assets/js/study-mode.js?v=13.0"></script>
 
-  <script src="assets/js/caderno-erros.js?v=13.7"></script>
+  <script src="assets/js/caderno-erros.js?v=15.0"></script>
 
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
