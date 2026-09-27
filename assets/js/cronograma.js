@@ -4673,51 +4673,56 @@ function renderAgendaSide() {
 
   const kindClass = (value) => {
     const normalized = normalizeHeader(value || "");
+    if (normalized.includes("quest")) return "questions";
+    if (normalized.includes("flash")) return "flashcards";
+    if (normalized.includes("erro")) return "errors";
     if (normalized.includes("revis")) return "review";
     if (normalized.includes("simulado") || normalized.includes("prova")) return "simulation";
     if (normalized.includes("aula") || normalized.includes("lesson")) return "lesson";
     return "other";
   };
+  const todayHref = (kind, id = "") => {
+    if (kind === "lesson" || kind === "review") return "/caderno/?topic_id=" + encodeURIComponent(id) + "&view=editor";
+    if (kind === "questions" || kind === "simulation") return "/questoes-simulados/";
+    if (kind === "flashcards") return "/flashcards/";
+    if (kind === "errors") return "/caderno-erros/";
+    return "/cronograma/";
+  };
+  const todayMenu = (source, id, date) =>
+    '<div class="agenda-today-menu">'
+    + '<button class="agenda-today-more" type="button" data-today-menu-trigger="'+escapeScheduleHtml(source+":"+id)+'" aria-label="Editar atividade" aria-expanded="false">⋯</button>'
+    + '<div class="agenda-today-popover" data-today-menu="'+escapeScheduleHtml(source+":"+id)+'" hidden>'
+    + '<strong>Remarcar atividade</strong>'
+    + '<input type="date" value="'+escapeScheduleHtml(date||toISODateSchedule(today))+'" data-today-date-input="'+escapeScheduleHtml(source+":"+id)+'">'
+    + '<button type="button" data-today-date-save="'+escapeScheduleHtml(source+":"+id)+'">Salvar data</button>'
+    + '</div></div>';
 
   if (list) {
     const topicRows = todayTopics.map(topic => {
       const kind = kindClass(topic.type || "lesson");
-      return '<label class="agenda-today-row kind-'+kind+'">'
-        + '<input class="agenda-today-check" type="checkbox" data-complete-topic="'+escapeScheduleHtml(topic.id)+'">'
-        + '<span class="agenda-today-main">'
-        + '<span class="agenda-today-time">Hoje</span>'
-        + '<strong>'+escapeScheduleHtml(topic.theme)+'</strong>'
-        + '<small>'+escapeScheduleHtml(topicMeta(topic)||"Aula")+'</small>'
-        + '</span>'
-        + '<span class="agenda-today-kind">'+escapeScheduleHtml(kind === "review" ? "Revisão" : "Aula")+'</span>'
-        + '</label>';
+      const href = todayHref(kind, topic.id);
+      return '<div class="agenda-today-row kind-'+kind+'">'
+        + '<a class="agenda-today-open" data-start-study-topic="'+escapeScheduleHtml(topic.id)+'" href="'+href+'">'
+        + '<span class="agenda-today-main"><span class="agenda-today-time">Hoje</span><strong>'+escapeScheduleHtml(topic.theme)+'</strong><small>'+escapeScheduleHtml(topicMeta(topic)||"Aula")+'</small></span>'
+        + '<span class="agenda-today-kind">'+escapeScheduleHtml(kind === "review" ? "Revisão" : kind === "questions" ? "Questões" : kind === "flashcards" ? "Flashcards" : "Aula")+'</span>'
+        + '</a>'+todayMenu("topic",topic.id,topic.scheduled_date||topic.original_date)+'</div>';
     });
 
     const eventRows = todayEvents.map(event => {
       const kind = kindClass(event.event_type || event.title);
       const time = event.event_time ? String(event.event_time).slice(0,5) : "Hoje";
       return '<div class="agenda-today-row kind-'+kind+'">'
-        + '<span class="agenda-today-check" aria-hidden="true"></span>'
-        + '<span class="agenda-today-main">'
-        + '<span class="agenda-today-time">'+escapeScheduleHtml(time)+'</span>'
-        + '<strong>'+escapeScheduleHtml(event.title)+'</strong>'
-        + '<small>'+escapeScheduleHtml([event.area,event.materia].filter(Boolean).join(" · ") || scheduleKindLabel(event.event_type||"other"))+'</small>'
-        + '</span>'
-        + '<span class="agenda-today-kind">'+escapeScheduleHtml(scheduleKindLabel(event.event_type||"other"))+'</span>'
-        + '</div>';
+        + '<a class="agenda-today-open" href="'+todayHref(kind,event.id)+'">'
+        + '<span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(time)+'</span><strong>'+escapeScheduleHtml(event.title)+'</strong><small>'+escapeScheduleHtml([event.area,event.materia].filter(Boolean).join(" · ") || scheduleKindLabel(event.event_type||"other"))+'</small></span>'
+        + '<span class="agenda-today-kind">'+escapeScheduleHtml(kind === "questions" ? "Questões" : kind === "flashcards" ? "Flashcards" : scheduleKindLabel(event.event_type||"other"))+'</span>'
+        + '</a>'+todayMenu("event",event.id,event.event_date)+'</div>';
     });
 
     const errorRows = todayErrors.map(item => {
       const title = item.theme || item.materia || item.area || "Caderno de erros";
-      return '<a class="agenda-today-row kind-errors" href="/caderno-erros/">'
-        + '<span class="agenda-today-check" aria-hidden="true"></span>'
-        + '<span class="agenda-today-main">'
-        + '<span class="agenda-today-time">Hoje</span>'
-        + '<strong>'+escapeScheduleHtml(title)+'</strong>'
-        + '<small>'+escapeScheduleHtml([item.area,item.materia].filter(Boolean).join(" · ") || "Revisão do caderno de erros")+'</small>'
-        + '</span>'
-        + '<span class="agenda-today-kind">Caderno de erros</span>'
-        + '</a>';
+      return '<div class="agenda-today-row kind-errors">'
+        + '<a class="agenda-today-open" href="/caderno-erros/"><span class="agenda-today-main"><span class="agenda-today-time">Hoje</span><strong>'+escapeScheduleHtml(title)+'</strong><small>'+escapeScheduleHtml([item.area,item.materia].filter(Boolean).join(" · ") || "Revisão do caderno de erros")+'</small></span><span class="agenda-today-kind">Caderno de erros</span></a>'
+        + todayMenu("error",item.id,item.due_date)+'</div>';
     });
 
     const rows = [...topicRows, ...errorRows, ...eventRows];
@@ -8470,6 +8475,36 @@ function wireDynamicInteractions() {
       }
 
       await scheduleTopic(topicId, date);
+    });
+  });
+
+  document.querySelectorAll("[data-today-menu-trigger]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault(); event.stopPropagation();
+      const key=button.dataset.todayMenuTrigger;
+      document.querySelectorAll("[data-today-menu]").forEach(menu => { if(menu.dataset.todayMenu!==key) menu.hidden=true; });
+      const menu=document.querySelector('[data-today-menu="'+CSS.escape(key)+'"]');
+      if(menu){ menu.hidden=!menu.hidden; button.setAttribute("aria-expanded", String(!menu.hidden)); }
+    });
+  });
+  document.querySelectorAll("[data-today-menu]").forEach(menu => menu.addEventListener("click", e => e.stopPropagation()));
+  document.querySelectorAll("[data-today-date-save]").forEach(button => {
+    button.addEventListener("click", async (event) => {
+      event.preventDefault(); event.stopPropagation();
+      const key=button.dataset.todayDateSave;
+      const [source,id]=key.split(":");
+      const input=document.querySelector('[data-today-date-input="'+CSS.escape(key)+'"]');
+      const date=input?.value; if(!date) return;
+      button.disabled=true;
+      try{
+        let error=null;
+        if(source==="topic"){ const result=await scheduleSb.from("study_topics").update({scheduled_date:date}).eq("id",id).eq("user_id",scheduleState.user.id); error=result.error; }
+        else if(source==="event"){ const result=await scheduleSb.from("schedule_events").update({event_date:date}).eq("id",id).eq("user_id",scheduleState.user.id); error=result.error; }
+        else if(source==="error"){ const result=await scheduleSb.from("error_notebook").update({due_date:date}).eq("id",id).eq("user_id",scheduleState.user.id); error=result.error; }
+        if(error) throw error;
+        await loadTopics();
+      }catch(err){ console.error(err); window.LuriaDialog?.alert("Não foi possível alterar a data."); }
+      finally{ button.disabled=false; }
     });
   });
 
