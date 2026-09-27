@@ -9499,16 +9499,15 @@ function wirePlannerNavigation() {
   });
 
   document.getElementById("planner-view-week")?.addEventListener("click", () => {
-    scheduleState.plannerView =
-      "week";
-
+    scheduleState.plannerView = "week";
+    updatePlannerViewControls();
     renderSchedule();
   });
 
   document.getElementById("planner-view-month")?.addEventListener("click", () => {
-    scheduleState.plannerView =
-      "month";
-
+    scheduleState.plannerView = "month";
+    updatePlannerViewControls();
+    renderMonthPlanner();
     renderSchedule();
   });
 }
