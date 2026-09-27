@@ -564,9 +564,19 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">◫</span><span>Dashboard</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">
-          <span class="nav-icon">▦</span><span>Escala</span>
-        </a>
+        <div class="nav-group" id="work-management-nav-group">
+          <button class="nav-group-label" id="work-management-nav-toggle" type="button" aria-expanded="false" aria-controls="work-management-nav-submenu">
+            <span class="nav-icon">▦</span>
+            <span class="nav-label-text">Gestão dos plantões</span>
+            <span class="nav-group-chevron" aria-hidden="true">⌄</span>
+          </button>
+
+          <div class="nav-submenu" id="work-management-nav-submenu" hidden>
+            <a class="nav-sublink ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">Escala</a>
+            <a class="nav-sublink ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">Divisor de Plantão</a>
+            <a class="nav-sublink ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">Financeiro</a>
+          </div>
+        </div>
 
         <a class="nav-link ${page === "trabalho_passometro" ? "active" : ""}" href="/trabalho/passometro/">
           <span class="nav-icon">⌁</span><span>Passômetro</span>
@@ -576,7 +586,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">▧</span><span>Prontuário rápido</span>
         </a>
 
-
         <a class="nav-link ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">
           <span class="nav-icon">▤</span><span>Protocolos</span>
         </a>
@@ -585,20 +594,12 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">✎</span><span>Prescrição</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">
-          <span class="nav-icon">◌</span><span>Financeiro</span>
-        </a>
-
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
           <span class="nav-icon">∑</span><span>Calculadoras</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">
           <span class="nav-icon">▣</span><span>Bulário</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">
-          <span class="nav-icon">÷</span><span>Divisor de Plantão</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">
@@ -2542,6 +2543,54 @@ function prepararStudyMenu(
     );
 }
 
+
+
+function prepararWorkManagementMenu(userId) {
+  const group = document.getElementById("work-management-nav-group");
+  const toggle = document.getElementById("work-management-nav-toggle");
+  const submenu = document.getElementById("work-management-nav-submenu");
+
+  if (!group || !toggle || !submenu) return;
+
+  const pageInsideGroup = [
+    "trabalho_plantoes",
+    "trabalho_divisor_plantao",
+    "trabalho_financeiro"
+  ].includes(page);
+
+  const key = `docmap:work-management-open:${userId}`;
+  let open = pageInsideGroup;
+
+  try {
+    const saved = localStorage.getItem(key);
+    if (saved !== null) open = saved === "1";
+  } catch {}
+
+  const apply = (nextOpen) => {
+    group.classList.toggle("nav-group-collapsed", !nextOpen);
+    submenu.hidden = !nextOpen;
+    toggle.setAttribute("aria-expanded", nextOpen ? "true" : "false");
+
+    try {
+      localStorage.setItem(key, nextOpen ? "1" : "0");
+    } catch {}
+  };
+
+  apply(open);
+
+  toggle.addEventListener("click", (event) => {
+    event.preventDefault();
+    apply(toggle.getAttribute("aria-expanded") !== "true");
+  });
+
+  submenu.querySelectorAll(".nav-sublink").forEach((link) => {
+    link.addEventListener("click", () => {
+      try {
+        localStorage.setItem(key, "1");
+      } catch {}
+    });
+  });
+}
 
 
 function notificationTimeLabel(value) {
@@ -4711,6 +4760,9 @@ async function iniciarApp() {
   prepararStudyMenu(
     user.id
   );
+  prepararWorkManagementMenu(
+    user.id
+  );
   prepararConfiguracoes();
 
   window.docmapUser =
@@ -4807,6 +4859,9 @@ async function iniciarApp() {
           user.id
         );
         prepararStudyMenu(
+          user.id
+        );
+        prepararWorkManagementMenu(
           user.id
         );
 
