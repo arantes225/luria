@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=8.7-no-patient-breath">\n  <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=7-no-patient-breath">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=8.8-luriazap-area-filter">\n  <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=7-no-patient-breath">
   <link rel="canonical" href="/plantao/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <script>(function(){try{if(location.pathname.endsWith("/plantao.html"))history.replaceState(null,"","/plantao/"+location.search+location.hash);}catch(e){}})();</script>
@@ -129,9 +129,17 @@
                       </div>
                     </header>
                     <div id="plantao-phone-search-wrap" class="plantao-phone-search-wrap" hidden>
-                      <span aria-hidden="true">⌕</span>
-                      <input id="plantao-phone-search" type="search" placeholder="Pesquisar conversas" autocomplete="off" aria-label="Pesquisar conversas">
-                      <button id="plantao-phone-search-close" type="button" aria-label="Fechar pesquisa">×</button>
+                      <div class="plantao-phone-search-row">
+                        <span aria-hidden="true">⌕</span>
+                        <input id="plantao-phone-search" type="search" placeholder="Pesquisar conversas" autocomplete="off" aria-label="Pesquisar conversas">
+                        <button id="plantao-phone-search-close" type="button" aria-label="Fechar pesquisa">×</button>
+                      </div>
+                      <label class="plantao-phone-area-filter" for="plantao-phone-area-filter">
+                        <span>Área</span>
+                        <select id="plantao-phone-area-filter" aria-label="Filtrar conversas por área">
+                          <option value="">Todas</option>
+                        </select>
+                      </label>
                     </div>
                     <div class="plantao-phone-inbox-toolbar">
                       <strong>Conversas</strong>
@@ -294,7 +302,7 @@
   <script src="assets/js/app.js?v=17.10-plantao-plus"></script>
   <script src="assets/js/plantao-monitor.js?v=5.5-no-patient-motion"></script>
   <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
-  <script src="assets/js/plantao.js?v=9.7-luriazap-case-flow"></script>
+  <script src="assets/js/plantao.js?v=9.8-luriazap-area-filter"></script>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
