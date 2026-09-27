@@ -60,7 +60,170 @@
       body[data-page="configuracoes-cronograma"] .main{padding-left:14px;padding-right:14px}
       .settings-tab{min-height:40px;padding:0 10px;font-size:11px}
     }
-  </style>
+      /* Visual alinhado ao Dashboard LURIA */
+    body[data-page="configuracoes-cronograma"] .settings-page-head{margin-bottom:18px}
+    body[data-page="configuracoes-cronograma"] .settings-page-head h1{
+      font-size:clamp(24px,2.3vw,31px);
+      font-weight:850;
+      letter-spacing:-.035em;
+    }
+    body[data-page="configuracoes-cronograma"] .settings-page-head p{
+      margin-top:6px;
+      font-size:12px;
+      line-height:1.45;
+    }
+    .native-cronograma-settings{display:grid;gap:14px}
+    .native-cronograma-settings .schedule-stack{gap:14px}
+    .native-cronograma-settings .schedule-add-hub,
+    .native-cronograma-settings .import-box,
+    .native-cronograma-settings .manual-panel{
+      padding:18px;
+      border:1px solid color-mix(in srgb,var(--border) 85%,transparent);
+      border-radius:18px;
+      background:var(--surface);
+      box-shadow:0 1px 0 color-mix(in srgb,var(--text) 3%,transparent);
+    }
+    .native-cronograma-settings .schedule-add-hub{padding:14px 16px}
+    .native-cronograma-settings h2{
+      margin:0;
+      color:var(--text);
+      font-size:15px;
+      font-weight:850;
+      letter-spacing:-.02em;
+    }
+    .native-cronograma-settings p{
+      margin:5px 0 0;
+      color:var(--muted);
+      font-size:10.5px;
+      line-height:1.5;
+    }
+    .native-cronograma-settings .badge{
+      display:inline-flex;
+      align-items:center;
+      min-height:22px;
+      margin-bottom:7px;
+      padding:0 8px;
+      border-radius:999px;
+      background:var(--accent-soft);
+      color:var(--accent);
+      font-size:8px;
+      font-weight:800;
+      letter-spacing:.025em;
+    }
+    .native-cronograma-settings .schedule-add-hub-head{
+      align-items:center;
+    }
+    .native-cronograma-settings .schedule-add-tabs{
+      display:inline-flex;
+      align-items:center;
+      gap:3px;
+      padding:3px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--surface-2);
+      flex-wrap:nowrap;
+    }
+    .native-cronograma-settings .schedule-add-tab{
+      min-height:32px;
+      padding:0 11px;
+      border:0;
+      border-radius:9px;
+      background:transparent;
+      color:var(--muted);
+      font:inherit;
+      font-size:9.5px;
+      font-weight:700;
+      cursor:pointer;
+      transition:background .16s ease,color .16s ease,box-shadow .16s ease;
+      white-space:nowrap;
+    }
+    .native-cronograma-settings .schedule-add-tab:hover{
+      color:var(--text);
+    }
+    .native-cronograma-settings .schedule-add-tab.active{
+      background:var(--surface);
+      color:var(--text);
+      box-shadow:0 1px 4px color-mix(in srgb,var(--text) 10%,transparent);
+    }
+    .native-cronograma-settings .import-grid{
+      gap:14px;
+      margin-top:16px;
+    }
+    .native-cronograma-settings .drop-file{
+      min-height:150px;
+      padding:18px;
+      border:1px dashed color-mix(in srgb,var(--accent) 38%,var(--border));
+      border-radius:14px;
+      background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface));
+    }
+    .native-cronograma-settings .drop-file strong{
+      display:block;
+      margin-bottom:5px;
+      font-size:11px;
+      font-weight:800;
+    }
+    .native-cronograma-settings .drop-file small,
+    .native-cronograma-settings .mode-option small{
+      color:var(--muted);
+      font-size:9px;
+      line-height:1.45;
+    }
+    .native-cronograma-settings .mode-option span{
+      padding:12px 13px;
+      border-radius:12px;
+      background:var(--surface-2);
+    }
+    .native-cronograma-settings .mode-option strong{
+      display:block;
+      margin-bottom:3px;
+      font-size:10px;
+      font-weight:800;
+    }
+    .native-cronograma-settings .mode-option input:checked+span{
+      border-color:color-mix(in srgb,var(--accent) 45%,var(--border));
+      background:var(--accent-soft);
+    }
+    .native-cronograma-settings input[type="text"],
+    .native-cronograma-settings input[type="date"],
+    .native-cronograma-settings select{
+      min-height:40px;
+      border:1px solid var(--border);
+      border-radius:10px;
+      background:var(--surface-2);
+      color:var(--text);
+      font:inherit;
+      font-size:10px;
+    }
+    .native-cronograma-settings .button{
+      min-height:36px;
+      border-radius:10px;
+      font-size:9.5px;
+      font-weight:800;
+    }
+    .native-cronograma-settings .base-schedule-controls{
+      display:grid;
+      grid-template-columns:minmax(180px,.8fr) minmax(180px,1fr) auto;
+      align-items:end;
+      gap:12px;
+      margin-top:16px;
+    }
+    .native-cronograma-settings .base-schedule-controls label,
+    .native-cronograma-settings .base-schedule-days{
+      display:grid;
+      gap:6px;
+      color:var(--muted);
+      font-size:9px;
+    }
+    .native-cronograma-settings .base-schedule-days strong{
+      color:var(--text);
+      font-size:9px;
+    }
+    @media(max-width:820px){
+      .native-cronograma-settings .schedule-add-hub-head{display:grid;gap:12px}
+      .native-cronograma-settings .schedule-add-tabs{width:100%;overflow-x:auto}
+      .native-cronograma-settings .base-schedule-controls{grid-template-columns:1fr}
+    }
+</style>
 </head>
 <body data-page="configuracoes-cronograma">
   <div class="app-shell">
@@ -374,7 +537,7 @@
   <script src="/assets/js/exam-priority-extra.js?v=1"></script>
   <script src="/assets/js/exam-priority.js?v=3"></script>
   <script src="/assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="/assets/js/cronograma.js?v=18.2-native-settings"></script>
+  <script src="/assets/js/cronograma.js?v=18.8-native-settings-fix"></script>
   <script defer src="/assets/js/pwa.js?v=5"></script>
 </body>
 </html>
