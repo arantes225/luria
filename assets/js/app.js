@@ -283,7 +283,8 @@ const PAGE_INFO = {
   trabalho_calculadora: { title: "Calculadora", eyebrow: "Trabalho" },
   trabalho_bulario: { title: "Bulário", eyebrow: "Trabalho" },
   trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
-  trabalho_diagnostico: { title: "Diagnóstico", eyebrow: "Trabalho" }
+  trabalho_diagnostico: { title: "Diagnóstico", eyebrow: "Trabalho" },
+  trabalho_laboratorio: { title: "Laboratório", eyebrow: "Trabalho" }
 };
 
 
@@ -474,6 +475,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">
           <span class="nav-icon">⌕</span><span>Diagnóstico</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_laboratorio" ? "active" : ""}" href="/trabalho/laboratorio/">
+          <span class="nav-icon">⚗</span><span>Laboratório</span>
         </a>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
