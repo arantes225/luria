@@ -3513,3 +3513,11 @@
 /* v24.0 — navegação do editor */
 .note-editor-identity{gap:12px!important}.note-back-library{height:32px;display:inline-flex;align-items:center;gap:6px;flex:0 0 auto;padding:0 9px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--muted);font-size:8px;font-weight:750;cursor:pointer}.note-back-library:hover{background:var(--surface-2);color:var(--accent)}
 @media(max-width:620px){.note-back-library span{display:none}.note-back-library{width:32px;justify-content:center;padding:0}}
+
+/* v24.1 — fluxo leitura/edição */
+.note-studio-wrap{display:grid;gap:8px}.note-back-library-top{justify-self:start;margin:0 0 1px 2px}
+.note-editor-identity{align-items:flex-start!important}.note-editor-identity>div:first-child{flex:1!important;text-align:left!important}
+.note-editor-identity .note-page-area,.note-editor-identity h1,.note-editor-identity .note-page-date{text-align:left!important}
+.note-editor-identity h1{width:100%!important}
+.note-actions-card #notebook-inspector-edit{color:var(--accent)!important;background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;border-color:color-mix(in srgb,var(--accent) 22%,var(--border))!important}
+.note-actions-card #notebook-inspector-edit svg{stroke:currentColor}
