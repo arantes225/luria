@@ -4,212 +4,70 @@
   <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>PCR · LURIA</title>
-  <meta name="theme-color" content="#b40000">
+  <meta name="theme-color" content="#184888">
+  <title>Modo PCR · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.9-dashboard-like-cronograma">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=3-pwa-causes">
+  <style>
+    .pcr-entry{min-height:calc(100dvh - 170px);display:flex;flex-direction:column}
+    .pcr-entry-main{flex:1;display:grid;place-items:center;text-align:center;padding:48px 18px}
+    .pcr-entry-content{max-width:620px}
+    .pcr-entry-icon{width:112px;height:112px;border-radius:50%;margin:0 auto 26px;display:grid;place-items:center;background:#fff0f0;color:#a91f24}
+    .pcr-entry-icon svg{width:58px;height:58px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+    .pcr-entry h2{font-size:30px;margin:0 0 14px}
+    .pcr-entry p{font-size:17px;line-height:1.55;color:var(--muted);margin:0 auto;max-width:560px}
+    .pcr-entry-action{border-top:1px solid var(--border);padding:22px 0 10px}
+    .pcr-entry-action small{display:block;color:var(--muted);font-size:14px;margin:0 0 12px}
+    .pcr-entry-start{width:100%;border:0;border-radius:16px;padding:17px 20px;background:var(--primary,#184888);color:white;font:inherit;font-size:19px;font-weight:800;cursor:pointer}
+    .pcr-entry-start:active{transform:scale(.995)}
+    @media(max-width:640px){
+      .pcr-entry{min-height:calc(100dvh - 112px)}
+      .pcr-entry-main{padding:30px 10px}
+      .pcr-entry-icon{width:94px;height:94px;margin-bottom:22px}
+      .pcr-entry-icon svg{width:48px;height:48px}
+      .pcr-entry h2{font-size:25px}
+      .pcr-entry p{font-size:16px}
+      .pcr-entry-action{padding:16px 0 max(8px,env(safe-area-inset-bottom))}
+    }
+  </style>
 </head>
 <body data-page="trabalho_pcr">
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
-
     <main class="main">
-      <div class="page pcr-page">
-        <header class="topbar pcr-topbar">
+      <div class="page">
+        <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading">
-            <span class="eyebrow">Trabalho</span>
-            <h1>PCR</h1>
-          </div>
-
-          <div class="pcr-top-actions">
-            <button class="pcr-cause-button" id="pcr-causes" type="button">5H + 5T</button>
-            <div class="pcr-time-card" aria-label="Tempo de parada">
-              <small>TEMPO DE PCR</small>
-              <strong id="pcr-timer">00:00</strong>
-              <span id="pcr-cycle">Ciclo 1 · 02:00</span>
-            </div>
-          </div>
+          <div class="page-heading"><span class="eyebrow">Trabalho</span><h1>Modo PCR</h1><small style="color:var(--muted)">Aguardando início</small></div>
         </header>
-
-        <section class="pcr-controlbar" aria-label="Configurações da PCR">
-          <div class="pcr-segmented" role="group" aria-label="Faixa etária">
-            <button class="active" type="button" data-pcr-mode="adult">Adulto</button>
-            <button type="button" data-pcr-mode="pediatric">Pediátrico</button>
-          </div>
-
-          <label class="pcr-weight">
-            <span>Peso</span>
-            <input id="pcr-weight" type="number" min="1" max="250" step="0.1" inputmode="decimal" placeholder="kg">
-            <small>kg</small>
-          </label>
-
-          <button class="pcr-metronome active" id="pcr-metronome" type="button" aria-pressed="true">
-            <span class="pcr-metronome-dot"></span>
-            <span><strong>Metrônomo</strong><small>110 bpm · toque para ativar som</small></span>
-          </button>
-
-          <button class="pcr-quick-action" id="pcr-log-cpr" type="button">↻ Trocar compressor</button>
-          <button class="pcr-quick-action success" id="pcr-rosc" type="button">✓ RCE / ROSC</button>
-        </section>
-
-        <nav class="pcr-pwa-tabs" aria-label="Controles da PCR">
-          <button type="button" data-pcr-panel="rhythms" aria-controls="pcr-rhythm-list" aria-expanded="false"><span aria-hidden="true">⌁</span>Ritmos</button>
-          <button type="button" data-pcr-panel="drugs" aria-controls="pcr-drug-column" aria-expanded="false"><span aria-hidden="true">✚</span>Drogas</button>
-          <button type="button" data-pcr-panel="causes" aria-controls="pcr-cause-panel" aria-expanded="false"><span aria-hidden="true">◇</span>Identificar causa</button>
-        </nav>
-
-        <section class="pcr-workspace" data-pwa-panel="closed">
-          <aside class="pcr-column pcr-rhythm-column">
-            <div class="pcr-section-title">
-              <div><span>DESFIBRILADOR</span><h2>Ritmo</h2><small id="pcr-selected-rhythm-label" class="pcr-selected-rhythm">Nenhum ritmo selecionado</small></div>
-              <span id="pcr-rhythm-state" class="pcr-state neutral">Não definido</span>
-            </div>
-
-            <div class="pcr-rhythms" id="pcr-rhythm-list">
-              <button class="pcr-rhythm shockable" type="button" data-rhythm="FV" data-shockable="true">
-                <span class="rhythm-copy"><strong>FV</strong><small>Chocável</small></span>
-                <svg viewBox="0 0 180 46" aria-hidden="true"><polyline points="0,25 8,8 17,36 25,4 34,41 45,11 53,34 61,6 70,39 80,13 90,31 99,7 110,38 121,10 132,34 143,5 154,40 164,12 180,27"/></svg>
-              </button>
-
-              <button class="pcr-rhythm shockable" type="button" data-rhythm="TV sem pulso" data-shockable="true">
-                <span class="rhythm-copy"><strong>TV sem pulso</strong><small>Chocável</small></span>
-                <svg viewBox="0 0 180 46" aria-hidden="true"><polyline points="0,28 10,28 18,5 27,42 36,7 45,40 54,8 63,39 72,7 81,41 90,8 99,39 108,7 117,41 126,8 135,39 144,7 153,41 162,8 171,31 180,31"/></svg>
-              </button>
-
-              <button class="pcr-rhythm nonshockable" type="button" data-rhythm="Assistolia" data-shockable="false">
-                <span class="rhythm-copy"><strong>Assistolia</strong><small>Não chocável</small></span>
-                <svg viewBox="0 0 180 46" aria-hidden="true"><polyline points="0,24 40,24 50,23 60,24 100,24 111,25 121,24 180,24"/></svg>
-              </button>
-
-              <button class="pcr-rhythm nonshockable" type="button" data-rhythm="AESP" data-shockable="false">
-                <span class="rhythm-copy"><strong>AESP</strong><small>Não chocável</small></span>
-                <svg viewBox="0 0 180 46" aria-hidden="true"><polyline points="0,27 18,27 24,21 28,27 34,5 39,39 45,27 64,27 70,22 75,27 81,8 86,38 92,27 112,27 118,20 123,27 129,6 134,39 140,27 180,27"/></svg>
-              </button>
-            </div>
-
-            <div class="pcr-defib-panel">
-              <div>
-                <span>Energia sugerida</span>
-                <strong id="pcr-energy">Bifásico: recomendação do fabricante</strong>
-                <small id="pcr-energy-note">Se desconhecida, usar a máxima disponível.</small>
+        <section class="pcr-entry">
+          <div class="pcr-entry-main">
+            <div class="pcr-entry-content">
+              <div class="pcr-entry-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64"><path d="M32 53S10 41 10 23c0-8 5-13 12-13 5 0 8 3 10 7 2-4 5-7 10-7 7 0 12 5 12 13 0 18-22 30-22 30Z"/><path d="M13 31h10l4-8 7 16 5-8h12"/></svg>
               </div>
-              <button class="pcr-shock-button" id="pcr-shock" type="button"><span>⚡</span>CHOQUE</button>
-              <small id="pcr-shock-count">0 choques registrados</small>
-            </div>
-          </aside>
-
-          <section class="pcr-column pcr-team-column" id="pcr-team-column">
-            <div class="pcr-section-title">
-              <div><span>EQUIPE</span><h2>Posições e tarefas</h2></div>
-              <span class="pcr-quality">RCP 100–120/min</span>
-            </div>
-
-            <div class="pcr-team-map">
-              <button class="team-position pos-airway" type="button" data-action="Via aérea / ventilação"><strong>1</strong><span>Via aérea</span></button>
-              <button class="team-position pos-compressor" type="button" data-action="Compressor"><strong>2</strong><span>Compressor</span></button>
-              <button class="team-position pos-defib" type="button" data-action="Monitor / desfibrilador"><strong>3</strong><span>Desfibrilador</span></button>
-              <button class="team-position pos-meds" type="button" data-action="Acesso / medicações"><strong>4</strong><span>Drogas / acesso</span></button>
-              <button class="team-position pos-leader" type="button" data-action="Líder / registro"><strong>5</strong><span>Líder / registro</span></button>
-
-              <div class="patient-figure" aria-label="Paciente em parada cardiorrespiratória">
-                <div class="patient-head"></div>
-                <div class="patient-body"><span class="compression-target">●</span></div>
-                <div class="patient-arm left"></div><div class="patient-arm right"></div>
-                <div class="patient-leg left"></div><div class="patient-leg right"></div>
-              </div>
-
-              <div class="compression-guide">
-                <strong>RCP de alta qualidade</strong>
-                <span>Trocar compressor a cada 2 min</span>
-                <span>Minimizar interrupções</span>
-              </div>
-            </div>
-          </section>
-
-          <aside class="pcr-column pcr-drug-column" id="pcr-drug-column">
-            <div class="pcr-section-title">
-              <div><span>MEDICAÇÕES</span><h2>Drogas</h2></div>
-              <span class="pcr-state neutral" id="pcr-dose-mode">Adulto</span>
-            </div>
-
-            <div id="pcr-drugs" class="pcr-drug-list"></div>
-
-            <div class="pcr-airway-mini">
-              <strong>Via aérea avançada</strong>
-              <span id="pcr-ventilation-copy">1 ventilação a cada 6 s com compressões contínuas.</span>
-              <button type="button" data-log-action="Via aérea avançada">Registrar via aérea</button>
-            </div>
-          </aside>
-          <section class="pcr-column pcr-cause-column" id="pcr-cause-panel" aria-label="Causas reversíveis: 5 Hs e 5 Ts">
-            <div class="pcr-section-title"><div><span>CAUSAS REVERSÍVEIS</span><h2>5 Hs e 5 Ts</h2></div></div>
-            <div class="pcr-pwa-causes-host"></div>
-            <p id="pcr-pwa-peds-cause-note" hidden></p>
-          </section>
-        </section>
-
-        <section class="pcr-log-panel">
-          <div class="pcr-log-head">
-            <div><span>REGISTRO AUTOMÁTICO</span><h2>Linha do tempo</h2></div>
-            <div class="pcr-log-actions">
-              <button type="button" id="pcr-export-log">Exportar linha do tempo</button>
-              <button type="button" id="pcr-add-note">+ Observação</button>
-              <button type="button" id="pcr-clear-log">Limpar</button>
+              <h2>Pronto para iniciar</h2>
+              <p>Toque em Iniciar PCR para abrir o modo de ressuscitação e iniciar o registro do atendimento.</p>
             </div>
           </div>
-          <div id="pcr-log" class="pcr-log" aria-live="polite"></div>
+          <div class="pcr-entry-action">
+            <small>Toque para iniciar a PCR</small>
+            <button id="pcr-entry-start" class="pcr-entry-start" type="button">Iniciar PCR</button>
+          </div>
         </section>
-
-        <p class="pcr-disclaimer">Ferramenta de apoio à equipe treinada. Confirme condutas e doses no protocolo institucional vigente; não substitui treinamento em ressuscitação.</p>
       </div>
     </main>
   </div>
-
-  <dialog id="pcr-causes-dialog" class="pcr-dialog">
-    <form method="dialog">
-      <header><div><span>CAUSAS REVERSÍVEIS</span><h2>5 Hs e 5 Ts</h2></div><button value="close" aria-label="Fechar">×</button></header>
-      <div class="pcr-causes-grid">
-        <section>
-          <h3>5 Hs</h3>
-          <button type="button" data-cause="Hipovolemia">Hipovolemia</button>
-          <button type="button" data-cause="Hipóxia">Hipóxia</button>
-          <button type="button" data-cause="H+ (acidose)">H+ / acidose</button>
-          <button type="button" data-cause="Hipo/hipercalemia">Hipo/hipercalemia</button>
-          <button type="button" data-cause="Hipotermia">Hipotermia</button>
-        </section>
-        <section>
-          <h3>5 Ts</h3>
-          <button type="button" data-cause="Pneumotórax hipertensivo">Pneumotórax hipertensivo</button>
-          <button type="button" data-cause="Tamponamento cardíaco">Tamponamento cardíaco</button>
-          <button type="button" data-cause="Toxinas">Toxinas</button>
-          <button type="button" data-cause="Trombose pulmonar">Trombose pulmonar</button>
-          <button type="button" data-cause="Trombose coronariana">Trombose coronariana</button>
-        </section>
-      </div>
-      <p id="pcr-peds-cause-note" hidden>Na PCR pediátrica, o algoritmo AHA 2025 também lista hipoglicemia entre as causas reversíveis.</p>
-    </form>
-  </dialog>
-
-  <dialog id="pcr-note-dialog" class="pcr-dialog small">
-    <form method="dialog" id="pcr-note-form">
-      <header><h2>Adicionar observação</h2><button value="close" aria-label="Fechar">×</button></header>
-      <textarea id="pcr-note-text" maxlength="240" placeholder="Ex.: acesso intraósseo obtido, capnografia 18 mmHg..."></textarea>
-      <div class="dialog-actions"><button value="close">Cancelar</button><button value="save" id="pcr-note-save">Registrar</button></div>
-    </form>
-  </dialog>
-
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.20-work-fixed-footer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jspdf/dist/jspdf.umd.min.js"></script>
-  <script src="/assets/js/trabalho-pcr.js?v=9-pdf-branding"></script>
+  <script>
+    document.getElementById('pcr-entry-start').addEventListener('click',()=>{location.href='/trabalho/pcr/executar/';});
+  </script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
