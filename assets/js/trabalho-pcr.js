@@ -23,6 +23,8 @@
   const drugsEl = $("pcr-drugs");
   const shockBtn = $("pcr-shock");
   const rhythmState = $("pcr-rhythm-state");
+  const selectedRhythmLabel = $("pcr-selected-rhythm-label");
+  const pwaWorkspace = document.querySelector(".pcr-workspace");
   const energyEl = $("pcr-energy");
   const energyNoteEl = $("pcr-energy-note");
   const shockCountEl = $("pcr-shock-count");
@@ -384,9 +386,26 @@
     shockable = button.dataset.shockable === "true";
     rhythmState.textContent = shockable ? "Chocável" : "Não chocável";
     rhythmState.className = "pcr-state " + (shockable ? "shock" : "no-shock");
+    selectedRhythmLabel.textContent = selectedRhythm;
     shockBtn.disabled = !shockable;
     addLog("Ritmo", selectedRhythm + " · " + (shockable ? "chocável" : "não chocável"));
+    if (document.documentElement.classList.contains("pwa-standalone")) setPwaPanel("closed");
   }
+
+  function setPwaPanel(panel) {
+    pwaWorkspace.dataset.pwaPanel = panel;
+    document.querySelectorAll("[data-pcr-panel]").forEach((button) => {
+      const open = button.dataset.pcrPanel === panel;
+      button.classList.toggle("active", open);
+      button.setAttribute("aria-expanded", String(open));
+    });
+  }
+
+  document.querySelectorAll("[data-pcr-panel]").forEach((button) => {
+    button.addEventListener("click", () => {
+      setPwaPanel(pwaWorkspace.dataset.pwaPanel === button.dataset.pcrPanel ? "closed" : button.dataset.pcrPanel);
+    });
+  });
 
   document.querySelectorAll("[data-pcr-mode]").forEach((button) => {
     button.addEventListener("click", () => setMode(button.dataset.pcrMode));

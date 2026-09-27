@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=1">
+  <link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=2-pwa-panels">
 </head>
 <body data-page="trabalho_pcr">
   <div class="app-shell">
@@ -60,14 +60,20 @@
           <button class="pcr-quick-action success" id="pcr-rosc" type="button">✓ RCE / ROSC</button>
         </section>
 
-        <section class="pcr-workspace">
+        <nav class="pcr-pwa-tabs" aria-label="Controles da PCR">
+          <button type="button" data-pcr-panel="rhythms" aria-controls="pcr-rhythm-list" aria-expanded="false"><span aria-hidden="true">⌁</span>Ritmos</button>
+          <button type="button" data-pcr-panel="drugs" aria-controls="pcr-drug-column" aria-expanded="false"><span aria-hidden="true">✚</span>Drogas</button>
+          <button type="button" data-pcr-panel="team" aria-controls="pcr-team-column" aria-expanded="false"><span aria-hidden="true">☷</span>Ações</button>
+        </nav>
+
+        <section class="pcr-workspace" data-pwa-panel="closed">
           <aside class="pcr-column pcr-rhythm-column">
             <div class="pcr-section-title">
-              <div><span>DESFIBRILADOR</span><h2>Ritmo</h2></div>
+              <div><span>DESFIBRILADOR</span><h2>Ritmo</h2><small id="pcr-selected-rhythm-label" class="pcr-selected-rhythm">Nenhum ritmo selecionado</small></div>
               <span id="pcr-rhythm-state" class="pcr-state neutral">Não definido</span>
             </div>
 
-            <div class="pcr-rhythms">
+            <div class="pcr-rhythms" id="pcr-rhythm-list">
               <button class="pcr-rhythm shockable" type="button" data-rhythm="FV" data-shockable="true">
                 <span class="rhythm-copy"><strong>FV</strong><small>Chocável</small></span>
                 <svg viewBox="0 0 180 46" aria-hidden="true"><polyline points="0,25 8,8 17,36 25,4 34,41 45,11 53,34 61,6 70,39 80,13 90,31 99,7 110,38 121,10 132,34 143,5 154,40 164,12 180,27"/></svg>
@@ -100,9 +106,9 @@
             </div>
           </aside>
 
-          <section class="pcr-column pcr-team-column">
+          <section class="pcr-column pcr-team-column" id="pcr-team-column">
             <div class="pcr-section-title">
-              <div><span>EQUIPE</span><h2>Posições</h2></div>
+              <div><span>EQUIPE</span><h2>Posições e tarefas</h2></div>
               <span class="pcr-quality">RCP 100–120/min</span>
             </div>
 
@@ -128,7 +134,7 @@
             </div>
           </section>
 
-          <aside class="pcr-column pcr-drug-column">
+          <aside class="pcr-column pcr-drug-column" id="pcr-drug-column">
             <div class="pcr-section-title">
               <div><span>MEDICAÇÕES</span><h2>Drogas</h2></div>
               <span class="pcr-state neutral" id="pcr-dose-mode">Adulto</span>
@@ -198,7 +204,7 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.20-work-fixed-footer"></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf/dist/jspdf.umd.min.js"></script>
-  <script src="/assets/js/trabalho-pcr.js?v=6-pdf-export"></script>
+  <script src="/assets/js/trabalho-pcr.js?v=7-pwa-panels"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
