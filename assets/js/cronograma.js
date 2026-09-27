@@ -4609,19 +4609,62 @@ function renderWeeklyOverview() {
 
 function renderAgendaSide() {
   const today = startOfDaySchedule(new Date());
-  const todayISO = toISODateSchedule(today);
   const todayTopics = topicsOnDate(today);
   const todayEvents = eventsOnDate(today);
   const count = document.getElementById("agenda-today-count");
   const list = document.getElementById("agenda-today-list");
-  if (count) count.textContent = String(todayTopics.length + todayEvents.length);
-  if (list) {
-    const rows = [
-      ...todayTopics.map(topic => '<label class="agenda-task"><input type="checkbox" data-complete-topic="'+escapeScheduleHtml(topic.id)+'"><span><strong>'+escapeScheduleHtml(topic.theme)+'</strong><small>'+escapeScheduleHtml(topicMeta(topic)||"Aula")+'</small></span></label>'),
-      ...todayEvents.map(event => '<div class="agenda-task"><span aria-hidden="true">•</span><span><strong>'+escapeScheduleHtml(event.title)+'</strong><small>'+escapeScheduleHtml(scheduleKindLabel(event.event_type||"other"))+'</small></span></div>')
-    ];
-    list.innerHTML = rows.length ? rows.join("") : '<p class="agenda-empty">Nenhuma atividade para hoje.</p>';
+  const dateLabel = document.getElementById("agenda-today-date");
+  if (dateLabel) {
+    const formatted = new Intl.DateTimeFormat("pt-BR", {
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    }).format(today);
+    dateLabel.textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
   }
+  if (count) count.textContent = String(todayTopics.length + todayEvents.length);
+
+  const kindClass = (value) => {
+    const normalized = normalizeHeader(value || "");
+    if (normalized.includes("revis")) return "review";
+    if (normalized.includes("simulado") || normalized.includes("prova")) return "simulation";
+    if (normalized.includes("aula") || normalized.includes("lesson")) return "lesson";
+    return "other";
+  };
+
+  if (list) {
+    const topicRows = todayTopics.map(topic => {
+      const kind = kindClass(topic.type || "lesson");
+      return '<label class="agenda-today-row kind-'+kind+'">'
+        + '<input class="agenda-today-check" type="checkbox" data-complete-topic="'+escapeScheduleHtml(topic.id)+'">'
+        + '<span class="agenda-today-main">'
+        + '<span class="agenda-today-time">Hoje</span>'
+        + '<strong>'+escapeScheduleHtml(topic.theme)+'</strong>'
+        + '<small>'+escapeScheduleHtml(topicMeta(topic)||"Aula")+'</small>'
+        + '</span>'
+        + '<span class="agenda-today-kind">'+escapeScheduleHtml(kind === "review" ? "Revisão" : "Aula")+'</span>'
+        + '</label>';
+    });
+
+    const eventRows = todayEvents.map(event => {
+      const kind = kindClass(event.event_type || event.title);
+      const time = event.event_time ? String(event.event_time).slice(0,5) : "Hoje";
+      return '<div class="agenda-today-row kind-'+kind+'">'
+        + '<span class="agenda-today-check" aria-hidden="true"></span>'
+        + '<span class="agenda-today-main">'
+        + '<span class="agenda-today-time">'+escapeScheduleHtml(time)+'</span>'
+        + '<strong>'+escapeScheduleHtml(event.title)+'</strong>'
+        + '<small>'+escapeScheduleHtml([event.area,event.materia].filter(Boolean).join(" · ") || scheduleKindLabel(event.event_type||"other"))+'</small>'
+        + '</span>'
+        + '<span class="agenda-today-kind">'+escapeScheduleHtml(scheduleKindLabel(event.event_type||"other"))+'</span>'
+        + '</div>';
+    });
+
+    const rows = [...topicRows, ...eventRows];
+    list.innerHTML = rows.length ? rows.join("") : '<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
+  }
+
   const weekStart = startOfWeekSchedule(today);
   const weekDays = Array.from({length:7},(_,i)=>addDaysSchedule(weekStart,i));
   const totals = weekDays.map(d=>topicsOnDate(d).length+eventsOnDate(d).length);
