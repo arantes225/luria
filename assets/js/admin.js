@@ -2103,12 +2103,12 @@
       generation: 1,
       chatgpt_initial: 2,
       blind_resolution: 3,
-      perplexity_initial: 3,
-      chatgpt_adjudication: 4,
-      chatgpt_correction: 4,
-      perplexity_reaudit: 5,
-      human_review: 6,
-      block_complete: 7
+      perplexity_initial: 4,
+      chatgpt_adjudication: 5,
+      chatgpt_correction: 5,
+      perplexity_reaudit: 6,
+      human_review: 7,
+      block_complete: 8
     };
     return map[String(stage || "")] || 1;
   }
@@ -2127,17 +2127,19 @@
     const adjudicated = Number(f.adjudicated_count || 0);
     const corrected = Number(f.corrected_count || 0);
     const reaudited = Number(f.reaudit_count || 0);
-    const pending = Number(f.machine_pending_count || 0);
+    const machinePending = Number(f.machine_pending_count || 0);
+    const pendingReaudit = Number(blockAction?.next?.pending_reaudit_count ?? Math.max(0, reaudited ? 200 - reaudited : 0));
     const approved = Number(f.machine_approved_count || 0);
     const hadReaudit = Number(f.reaudit_reviews_total || 0) > 0;
 
     const steps = [
       { n:1, title:"Gerar 200", owner:"ChatGPT", stats:`${generated}/200 geradas` },
       { n:2, title:"Revisão adversarial + autocorreção", owner:"ChatGPT", stats:`${initialAudited} auditadas · ${initialFlagged} sinalizadas · ${versioned} com nova versão` },
-      { n:3, title:"Revisão cega independente", owner:"ChatGPT", stats:`${blind}/200 resolvidas cegamente · ${perplexityAudited} auditadas · ${perplexityFlagged} com achados` },
-      { n:4, title:"Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
-      { n:5, title:"Reauditar correções do zero", owner:"ChatGPT", stats:`${reaudited} reavaliadas · ${pending} pendentes` },
-      { n:6, title:"Aceitar para o lote", owner:"Você", stats: humanStatus === "approved" ? "Aprovado e enviado ao lote" : `${approved}/200 aprovadas pela máquina` }
+      { n:3, title:"Resolução cega independente", owner:"ChatGPT", stats:`${blind}/200 resolvidas cegamente` },
+      { n:4, title:"Revisão independente do bloco", owner:"ChatGPT", stats:`${perplexityAudited}/200 revisadas · ${perplexityFlagged} com achados` },
+      { n:5, title:"Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
+      { n:6, title:"Reauditar correções do zero", owner:"ChatGPT", stats:`${reaudited} reavaliadas · ${pendingReaudit} pendentes desta reauditoria` },
+      { n:7, title:"Aceitar para o lote", owner:"Você", stats: humanStatus === "approved" ? "Aprovado e enviado ao lote" : `${approved}/200 aprovadas pela máquina · ${machinePending} ainda não aprovadas` }
     ];
 
     return `
@@ -2147,8 +2149,8 @@
           if (currentStage === "block_complete" || humanStatus === "approved") stateClass = "done";
           else if (step.n < currentStep) stateClass = "done";
           else if (step.n === currentStep) stateClass = "active";
-          if (step.n === 4 && currentStep === 4 && hadReaudit) stateClass += " loop";
-          if (step.n === 5 && currentStep === 4 && hadReaudit) stateClass = "return";
+          if (step.n === 5 && currentStep === 5 && hadReaudit) stateClass += " loop";
+          if (step.n === 6 && currentStep === 5 && hadReaudit) stateClass = "return";
           return `
             <div class="admin-qf-flow-step ${stateClass}">
               <span class="admin-qf-flow-number">${step.n}</span>
@@ -2161,7 +2163,7 @@
           `;
         }).join("")}
       </div>
-      ${hadReaudit && currentStep === 4 ? '<div class="admin-qf-flow-loop-note">↺ Ainda há pendências: voltou ao ChatGPT. Depois da correção, retorna para uma nova revisão cega do ChatGPT, ignorando memória e pareceres anteriores.</div>' : ""}
+      ${hadReaudit && currentStep === 5 ? '<div class="admin-qf-flow-loop-note">↺ Ainda há pendências: voltou ao ChatGPT. Depois da correção, segue para a Etapa 6, reauditoria cega das correções, ignorando memória e pareceres anteriores.</div>' : ""}
     `;
   }
 
@@ -2707,12 +2709,12 @@
     const map = {
       generation: { label: "1 · Gerar 200 questões", provider: "chatgpt" },
       chatgpt_initial: { label: "2 · ChatGPT · revisão adversarial + autocorreção", provider: "chatgpt" },
-      blind_resolution: { label: "3A · ChatGPT · resolução cega sem memória", provider: "chatgpt" },
-      perplexity_initial: { label: "3B · ChatGPT · revisão independente sem memória", provider: "chatgpt" },
-      chatgpt_adjudication: { label: "4 · ChatGPT · julgar + corrigir", provider: "chatgpt" },
-      chatgpt_correction: { label: "4 · ChatGPT · aplicar correções", provider: "chatgpt" },
-      perplexity_reaudit: { label: "5 · ChatGPT · reauditoria cega sem memória", provider: "chatgpt" },
-      human_review: { label: "6 · Sua aprovação para o lote", provider: null },
+      blind_resolution: { label: "3 · ChatGPT · resolução cega sem memória", provider: "chatgpt" },
+      perplexity_initial: { label: "4 · ChatGPT · revisão independente do bloco", provider: "chatgpt" },
+      chatgpt_adjudication: { label: "5 · ChatGPT · julgar parecer + corrigir", provider: "chatgpt" },
+      chatgpt_correction: { label: "5 · ChatGPT · aplicar correções", provider: "chatgpt" },
+      perplexity_reaudit: { label: "6 · ChatGPT · reauditar correções do zero", provider: "chatgpt" },
+      human_review: { label: "7 · Sua aprovação para o lote", provider: null },
       block_complete: { label: "Bloco concluído", provider: null }
     };
     return map[stage] || { label: stage || "Pendente", provider: null };
@@ -3450,11 +3452,11 @@
     const phaseLabels = {
       generation:"1 · Gerar 200 questões",
       chatgpt_initial:"2 · ChatGPT · revisão adversarial + autocorreção",
-      blind_resolution:afterCorrection ? "5 · ChatGPT · nova resolução cega sem memória" : "3A · ChatGPT · resolução cega sem memória",
-      perplexity_initial:"3B · ChatGPT · auditoria independente sem memória",
-      chatgpt_adjudication:"4 · ChatGPT · julgar + corrigir",
-      chatgpt_correction:"4 · ChatGPT · aplicar correções",
-      perplexity_reaudit:"5 · ChatGPT · reauditoria cega sem memória"
+      blind_resolution:afterCorrection ? "6 · ChatGPT · nova resolução cega sem memória" : "3 · ChatGPT · resolução cega sem memória",
+      perplexity_initial:"4 · ChatGPT · revisão independente do bloco",
+      chatgpt_adjudication:"5 · ChatGPT · julgar parecer + corrigir",
+      chatgpt_correction:"5 · ChatGPT · aplicar correções",
+      perplexity_reaudit:"6 · ChatGPT · reauditar correções do zero"
     };
     const phase = phaseLabels[next.next_stage] || next.phase || "Próxima fase";
     return { next, provider, providerLabel, phase, label:`${phase} · abrir ${providerLabel}` };
