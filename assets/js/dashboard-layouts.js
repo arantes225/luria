@@ -214,7 +214,7 @@
           </section>
 
           <section class="dl5-card dl5-streak">
-            <div class="dl5-title"><h3>🔥 Ofensiva</h3><a href="/estatisticas/">›</a></div>
+            <div class="dl5-title"><h3><span class="dl-streak-heading-icon" aria-hidden="true">${streakVisual(data.streak)}</span> Ofensiva</h3><a href="/estatisticas/">›</a></div>
             <div class="dl5-streak-number"><strong>${data.streak}</strong><span>dias seguidos</span></div>
             <div class="dl5-week">${["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"].map((d,i)=>{ const daysBack = weekday - i; const active = daysBack >= 0 && daysBack < data.streak; return `<span class="${active ? "on":""}"><i></i>${d}</span>`; }).join("")}</div>
           </section>
@@ -239,7 +239,7 @@
           </section>
 
           <section class="dl5-card dl5-cat">
-            <div class="dl5-title"><h3>💡 Pulo do Gato do dia</h3><a href="/dashboard/">›</a></div>
+            <div class="dl5-title"><h3>${icon("cat")} Pulo do Gato do dia</h3><a href="/dashboard/">›</a></div>
             <div class="dl5-cat-body">
               <span class="dashboard-cat-symbol" aria-hidden="true"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924d" alt=""></span>
               <div><strong>${escape(data.ccqArea || "Dica clínica")}</strong><p>${escape(data.ccq)}</p><a href="/dashboard/">Ver explicação completa →</a></div>
