@@ -2928,6 +2928,20 @@
     margin-top:10px!important;
   }
 
+
+  /* Meta semanal por produção */
+  body:not(.schedule-settings-embed) .agenda-goal-categories{grid-template-columns:repeat(6,minmax(82px,1fr))!important;gap:6px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day{min-width:0!important;padding:6px 7px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>span{white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>strong{font-size:11px!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>i{display:block!important;height:3px!important;margin:4px 0 2px!important;border-radius:999px!important;background:var(--border)!important;overflow:hidden!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day>i>b{display:block!important;width:0;height:100%;border-radius:inherit;background:var(--accent)!important}
+  body:not(.schedule-settings-embed) .agenda-goal-categories .agenda-goal-day.done>i>b{background:var(--success)!important}
+  /* Cards de insights ligeiramente mais altos */
+  body:not(.schedule-settings-embed) .agenda-study-time-card,
+  body:not(.schedule-settings-embed) .agenda-category-card{min-height:222px!important}
+  @media(max-width:900px){body:not(.schedule-settings-embed) .agenda-goal-categories{grid-template-columns:repeat(3,1fr)!important}}
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3248,7 +3262,7 @@
 
           <section class="agenda-week-goal-banner">
   <div class="agenda-week-goal-copy"><span class="agenda-goal-target" aria-hidden="true">◎</span><div><strong>Meta da semana</strong><small id="agenda-goal-message">Conclua suas atividades e mantenha a consistência.</small><div class="agenda-goal-progress-line"><span><i id="agenda-goal-banner-bar"></i></span><b id="agenda-goal-banner-percent">0%</b></div><em id="agenda-goal-banner-copy">0 de 0 atividades concluídas</em></div></div>
-  <div id="agenda-goal-days" class="agenda-goal-days"><div class="agenda-goal-day" data-goal-day="0"><span>Seg</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="1"><span>Ter</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="2"><span>Qua</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="3"><span>Qui</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="4"><span>Sex</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="5"><span>Sáb</span><strong>—</strong><i></i><small>0/0</small></div><div class="agenda-goal-day" data-goal-day="6"><span>Dom</span><strong>—</strong><i></i><small>0/0</small></div></div>
+  <div id="agenda-goal-days" class="agenda-goal-days agenda-goal-categories"><div class="agenda-goal-day" data-goal-kind="lesson"><span>Anotações</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="questions"><span>Questões</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="flashcards"><span>Flashcards</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="review"><span>Revisões</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="errors"><span>Caderno de erros</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="simulation"><span>Simulados</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div></div>
   <button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button>
 </section>
 
@@ -3818,7 +3832,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=33-month-toggle"></script>
+  <script src="assets/js/cronograma.js?v=34-week-goals"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
