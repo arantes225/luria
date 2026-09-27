@@ -180,19 +180,6 @@
     ];
     return `
       <div class="dl5-shell">
-        <div class="dl5-top">
-          <label class="dl5-search" aria-label="Buscar na LURIA">
-            <span>⌕</span><input type="search" placeholder="Buscar na LURIA..." autocomplete="off">
-          </label>
-          <div class="dl5-top-actions">
-            <div class="dl5-pill dl5-pomodoro"><span>🍅</span><strong>25:00</strong><button type="button" aria-label="Iniciar Pomodoro">▶</button><span>⌄</span></div>
-            <div class="dl5-pill dl5-watch"><span>◷</span><strong>00:00</strong><button type="button" aria-label="Iniciar cronômetro">▶</button><span>⌄</span></div>
-            <a class="dl5-bell" href="/notificacoes/" aria-label="Notificações">♧</a>
-            <span class="dl5-avatar">${escape((window.docmapProfile?.display_name || window.docmapUser?.user_metadata?.display_name || window.docmapUser?.email || "U").trim().charAt(0).toUpperCase())}</span>
-            <span class="dl5-chevron">⌄</span>
-          </div>
-        </div>
-
         <div class="dl5-hero">
           <div>
             <h2>${greeting().match(/<h2>(.*?)<\/h2>/)?.[1] || "Olá!"}</h2>
