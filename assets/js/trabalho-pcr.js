@@ -216,14 +216,15 @@
     if (!audioCtx) return;
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
-    osc.frequency.value = freq;
+    osc.type = "square";
+    osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
     gain.gain.setValueAtTime(0.0001, audioCtx.currentTime);
-    gain.gain.exponentialRampToValueAtTime(0.12, audioCtx.currentTime + 0.005);
+    gain.gain.exponentialRampToValueAtTime(0.22, audioCtx.currentTime + 0.006);
     gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
     osc.connect(gain);
     gain.connect(audioCtx.destination);
-    osc.start();
-    osc.stop(audioCtx.currentTime + duration + 0.01);
+    osc.start(audioCtx.currentTime);
+    osc.stop(audioCtx.currentTime + duration + 0.015);
   }
 
   function tickMetronome() {
@@ -239,18 +240,40 @@
   }
 
   async function unlockAudio() {
-    if (audioReady) return;
     try {
       const Ctx = window.AudioContext || window.webkitAudioContext;
-      if (!Ctx) return;
-      audioCtx = audioCtx || new Ctx();
-      await audioCtx.resume();
+      if (!Ctx) return false;
+
+      if (!audioCtx || audioCtx.state === "closed") {
+        audioCtx = new Ctx();
+      }
+
+      if (audioCtx.state === "suspended") {
+        await audioCtx.resume();
+      }
+
+      // iOS/PWA: create and play a tiny silent buffer in the same user gesture
+      // to fully unlock the audio graph before oscillator clicks.
+      const buffer = audioCtx.createBuffer(1, 1, 22050);
+      const source = audioCtx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(audioCtx.destination);
+      source.start(0);
+
       audioReady = audioCtx.state === "running";
+
       if (audioReady) {
         metroBtn.querySelector("small").textContent = "110 bpm · som ativo";
-        beep(620, 0.04);
+        beep(760, 0.06);
+        setTimeout(() => beep(620, 0.04), 120);
       }
-    } catch {}
+
+      return audioReady;
+    } catch (error) {
+      console.warn("Não foi possível ativar o metrônomo:", error);
+      audioReady = false;
+      return false;
+    }
   }
 
   function setMode(next) {
@@ -311,13 +334,38 @@
   });
 
   metroBtn.addEventListener("click", async () => {
-    await unlockAudio();
+    if (!audioReady) {
+      metronomeOn = true;
+      metroBtn.classList.add("active");
+      metroBtn.setAttribute("aria-pressed", "true");
+      metroBtn.querySelector("small").textContent = "Ativando som…";
+
+      const ok = await unlockAudio();
+
+      if (ok) {
+        tickMetronome();
+        addLog("Metrônomo", "110 bpm · som ativado");
+      } else {
+        metroBtn.querySelector("small").textContent = "Toque novamente para ativar o som";
+        addLog("Metrônomo", "Falha ao ativar áudio");
+      }
+      return;
+    }
+
     metronomeOn = !metronomeOn;
     metroBtn.classList.toggle("active", metronomeOn);
     metroBtn.setAttribute("aria-pressed", String(metronomeOn));
     metroBtn.querySelector("small").textContent = metronomeOn
-      ? (audioReady ? "110 bpm · som ativo" : "110 bpm · toque para ativar som")
+      ? "110 bpm · som ativo"
       : "Pausado";
+
+    if (metronomeOn) {
+      if (audioCtx?.state === "suspended") {
+        try { await audioCtx.resume(); } catch {}
+      }
+      tickMetronome();
+    }
+
     addLog("Metrônomo", metronomeOn ? "110 bpm ativado" : "Pausado");
   });
 
@@ -347,12 +395,11 @@
     logEl.innerHTML = '<div class="pcr-log-empty">Nenhum evento registrado após a limpeza.</div>';
   });
 
-  document.addEventListener("pointerdown", unlockAudio, { once: true });
-
   renderDrugs();
   updateEnergy();
   addLog("Início da PCR", "Cronômetro iniciado automaticamente");
   updateTimer();
   setInterval(updateTimer, 1000);
+  metroBtn.querySelector("small").textContent = "110 bpm · toque para ativar som";
   startMetronomeLoop();
 })();
