@@ -1,6 +1,7 @@
 (() => {
   const ENDPOINT="https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart";
   const APIKEY="sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
+  const normalizeCode=value=>String(value||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,32);
   const gate=document.getElementById("external-gate");
   const editor=document.getElementById("external-editor");
   const errorBox=document.getElementById("external-error");
@@ -10,12 +11,12 @@
   const gateError=document.getElementById("external-gate-error");
   const status=document.getElementById("external-status");
   const saveState=document.getElementById("external-save-state");
-  let accessCode="";
+  const routeHash=new URLSearchParams(location.hash.replace(/^#/,""));
+  let accessCode=normalizeCode(routeHash.get("c")||"");
   let saveTimer=null;
   let loading=true;
   let lastSerialized="";
 
-  const normalizeCode=value=>String(value||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,32);
   const fields=()=>[...document.querySelectorAll("[data-chart-field]")];
   const read=()=>Object.fromEntries(fields().map(el=>[el.dataset.chartField,el.value]));
   const fill=(content={})=>fields().forEach(el=>{el.value=String(content?.[el.dataset.chartField]||"")});
@@ -39,8 +40,8 @@
     el.textContent="Conteúdo apaga "+d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"});
   }
 
-  async function openPortal(){
-    accessCode=normalizeCode(codeInput.value);
+  async function openPortal(forcedCode=""){
+    accessCode=normalizeCode(forcedCode||codeInput.value);
     gateError.hidden=true;
     if(accessCode.length<10){
       gateError.textContent="Digite o código completo.";
@@ -108,9 +109,14 @@
     }
   }
 
-  enterBtn.addEventListener("click",openPortal);
+  enterBtn.addEventListener("click",()=>openPortal());
   codeInput.addEventListener("keydown",e=>{if(e.key==="Enter")openPortal();});
   document.getElementById("external-save").addEventListener("click",save);
   document.getElementById("external-clear").addEventListener("click",clearAll);
-  codeInput.focus();
+  if(accessCode){
+    history.replaceState(null,"","/trabalho/prontuario/");
+    openPortal(accessCode);
+  }else{
+    codeInput.focus();
+  }
 })();
