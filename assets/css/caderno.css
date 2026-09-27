@@ -3404,3 +3404,7 @@
 @media(max-width:1180px){#notebook-view-library .notebook-book-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 @media(max-width:850px){#notebook-view-library .notebook-book-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}#notebook-view-library .notebook-library-search-controls{grid-template-columns:1fr 180px!important}}
 @media(max-width:560px){#notebook-view-library .notebook-book-grid{grid-template-columns:1fr!important}#notebook-view-library .notebook-library-search-controls{grid-template-columns:1fr 44px!important}#notebook-view-library .notebook-filter-toggle:after{display:none}}
+
+/* v21.2 — ícones lineares como na referência */
+#notebook-view-library .notebook-area-shelf-icon svg{width:31px;height:31px;display:block;color:var(--accent)}
+#notebook-view-library .notebook-book-icon svg{width:38px;height:38px;display:block;color:var(--accent)}
