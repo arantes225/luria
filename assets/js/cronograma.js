@@ -4938,13 +4938,12 @@ function updatePlannerViewControls() {
 
 function renderPlanner() {
   updatePlannerViewControls();
-  renderAgendaSide();
-  renderScheduleStudyInsights();
 
-  if (
-    scheduleState.plannerView
-    === "month"
-  ) {
+  /* Um widget auxiliar nunca pode bloquear o calendário inteiro. */
+  try { renderAgendaSide(); } catch (error) { console.error("Falha ao renderizar atividades:", error); }
+  try { renderScheduleStudyInsights(); } catch (error) { console.error("Falha ao renderizar insights:", error); }
+
+  if (scheduleState.plannerView === "month") {
     renderMonthPlanner();
     return;
   }
@@ -8311,12 +8310,12 @@ function renderSchedule() {
     return;
   }
 
-  renderSummary();
-  renderPlanner();
-  renderDeck();
-  renderThemeLibrary();
-  renderEventLibrary();
-  wireDynamicInteractions();
+  try { renderSummary(); } catch (error) { console.error("Falha no resumo:", error); }
+  try { renderPlanner(); } catch (error) { console.error("Falha no planner:", error); }
+  try { renderDeck(); } catch (error) { console.error("Falha no deck:", error); }
+  try { renderThemeLibrary(); } catch (error) { console.error("Falha na lista de aulas:", error); }
+  try { renderEventLibrary(); } catch (error) { console.error("Falha na lista de eventos:", error); }
+  try { wireDynamicInteractions(); } catch (error) { console.error("Falha nas interações:", error); }
 }
 
 
