@@ -169,13 +169,13 @@
   }
 
   function layout4(data) {
-    const cards = [
-      ["book", "Aulas concluídas", `${data.done}/${data.total}`, data.progress, "/cronograma/"],
-      ["file", "Simulados", data.simulations, 0, "/questoes-simulados/"],
-      ["cards", "Flashcards pendentes", String(data.flashcards), 0, "/flashcards/"],
-      ["refresh", "Erros ativos", String(data.errors), 0, "/caderno-erros/"]
+    const summaryMetrics = [
+      ["calendar", "Horas de aula", data.hours, "/estatisticas/"],
+      ["book", "Aulas concluídas", `${data.done}/${data.total}`, "/cronograma/"],
+      ["file", "Simulados", data.simulationsCount || data.simulations || "—", "/questoes-simulados/"],
+      ["cards", "Flashcards pendentes", String(data.flashcards), "/flashcards/"]
     ];
-    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics">${cards.map(([iconName, label, value, percent, href]) => `<a class="dl-card dl-metric" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span>${percent ? `<i class="dl-metric-track"><b style="width:${percent}%"></b></i>` : ""}</a>`).join("")}</div><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon">${icon("target")}</span><span class="dl-challenge-copy"><small>Desafio do dia</small><strong>3 dicas</strong><em>Resolver agora ›</em></span></a></div><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
   }
 
 
