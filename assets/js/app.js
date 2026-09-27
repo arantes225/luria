@@ -328,6 +328,37 @@
   `;
   style.dataset.workSidebarFixedFooter = "1";
 
+  style.textContent += `
+    #sidebar.sidebar .luria-mode-footer-switch {
+      text-decoration:none !important;
+      cursor:pointer !important;
+      transition:transform 140ms ease,border-color 140ms ease,background 140ms ease !important;
+    }
+    #sidebar.sidebar .luria-mode-footer-switch:hover {
+      transform:translateY(-1px);
+      border-color:var(--accent) !important;
+      background:color-mix(in srgb,var(--accent) 7%,var(--surface)) !important;
+    }
+    .luria-profile-top { position:relative; display:flex; align-items:center; }
+    .luria-profile-toggle {
+      width:40px;height:40px;border:1px solid var(--border);border-radius:50%;
+      display:grid;place-items:center;background:var(--surface);color:var(--accent);
+      font:900 16px/1 inherit;cursor:pointer;
+    }
+    .luria-profile-menu {
+      position:absolute;right:0;top:48px;z-index:400;min-width:190px;padding:7px;
+      border:1px solid var(--border);border-radius:13px;background:var(--surface);
+      box-shadow:0 16px 42px rgba(0,0,0,.16);
+    }
+    .luria-profile-menu[hidden]{display:none!important}
+    .luria-profile-menu a,.luria-profile-menu button {
+      width:100%;min-height:40px;box-sizing:border-box;display:flex;align-items:center;
+      padding:0 11px;border:0;border-radius:9px;background:transparent;color:var(--text);
+      text-decoration:none;font:700 13px/1 inherit;text-align:left;cursor:pointer;
+    }
+    .luria-profile-menu a:hover,.luria-profile-menu button:hover{background:var(--surface-2)}
+  `;
+
   document.head.appendChild(style);
 })();
 
@@ -513,11 +544,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
     </div>
 
     <nav class="nav ${String(page).startsWith("trabalho_") ? "nav-work" : "nav-study"}">
-      <a class="nav-link luria-mode-switch" href="${String(page).startsWith("trabalho_") ? "/dashboard/" : "/trabalho/"}" aria-label="Alternar entre Estudos e Trabalho">
-        <span class="nav-icon">${String(page).startsWith("trabalho_") ? "▣" : "◈"}</span>
-        <span>${String(page).startsWith("trabalho_") ? "Trabalho" : "Estudos"}</span>
-      </a>
-
       ${String(page).startsWith("trabalho_") ? `
         <a class="nav-link ${page === "trabalho_dashboard" ? "active" : ""}" href="/trabalho/">
           <span class="nav-icon">◫</span><span>Dashboard</span>
@@ -634,13 +660,15 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           </span>
         </a>
 
-        <div class="user-mini">
-          <div class="user-avatar">${escapeHtml(initial)}</div>
+        <a class="user-mini luria-mode-footer-switch"
+           href="/dashboard/"
+           aria-label="Trocar do ambiente Trabalho para Estudos">
+          <div class="user-avatar">E</div>
           <div class="user-copy">
-            <strong>${escapeHtml(sidebarName)}</strong>
-            <small>${escapeHtml(specialty)}</small>
+            <strong>Estudos</strong>
+            <small>Trocar ambiente</small>
           </div>
-        </div>
+        </a>
 
         <button id="logout" class="logout-button" type="button">Sair</button>
       ` : `
@@ -2614,6 +2642,21 @@ function ensureNotificationCenter() {
       ></span>
     </button>
 
+    <div class="luria-profile-top">
+      <button
+        id="luria-profile-toggle"
+        class="luria-profile-toggle"
+        type="button"
+        aria-label="Perfil"
+        aria-expanded="false"
+      >L</button>
+      <div id="luria-profile-menu" class="luria-profile-menu" hidden>
+        <a href="/configuracoes/#perfil">Perfil</a>
+        <a href="/configuracoes/">Configurações</a>
+        <button id="luria-profile-logout" type="button">Sair</button>
+      </div>
+    </div>
+
     ${page === "questoes" ? `
       <button
         id="qs-simulations-help"
@@ -2668,6 +2711,26 @@ function ensureNotificationCenter() {
   topbar.appendChild(
     center
   );
+
+  const profileToggle = document.getElementById("luria-profile-toggle");
+  const profileMenu = document.getElementById("luria-profile-menu");
+  profileToggle?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const open = profileMenu?.hidden ?? true;
+    if (profileMenu) profileMenu.hidden = !open;
+    profileToggle.setAttribute("aria-expanded", String(open));
+  });
+  document.addEventListener("click", (event) => {
+    if (!profileMenu || profileMenu.hidden) return;
+    if (!center.contains(event.target)) {
+      profileMenu.hidden = true;
+      profileToggle?.setAttribute("aria-expanded", "false");
+    }
+  });
+  document.getElementById("luria-profile-logout")?.addEventListener("click", async () => {
+    try { await sb.auth.signOut(); } catch {}
+    window.location.href = "/login/";
+  });
 
   if (page === "questoes") {
     document
