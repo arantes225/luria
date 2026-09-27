@@ -30,9 +30,9 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
   <div class="top">
     <div>
       <h1>LURIA · Question Factory Bridge</h1>
-      <p class="sub">Página pública temporária para leitura dos blocos L001 e envio de pareceres do Perplexity.</p>
+      <p class="sub">Página pública temporária para leitura dos blocos publicados da Fábrica e envio de pareceres do Perplexity.</p>
     </div>
-    <span class="pill">L001 · B01–B05</span>
+    <span class="pill">L001 · B01–B05 + L002 · B04</span>
   </div>
 
   <div class="grid">
@@ -72,7 +72,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
       <section class="card panel">
         <h2>Enviar resultado</h2>
         <p class="sub">Cole aqui o JSON completo devolvido pelo Perplexity. O envio vai para uma caixa de entrada isolada para validação antes de qualquer importação na fábrica.</p>
-        <textarea id="payload" spellcheck="false" placeholder='{"schema_version":"2.3","review_stage":"perplexity_initial","reviewer":"Perplexity","batch_number":1,"block_number":1,"reviews":[...]}'></textarea>
+        <textarea id="payload" spellcheck="false" placeholder='{"schema_version":"2.3","review_stage":"perplexity_initial","reviewer":"Perplexity","batch_number":2,"block_number":4,"reviews":[...]}'></textarea>
         <div class="toolbar" style="margin-top:10px">
           <button id="submit">Enviar parecer</button>
           <button id="template" class="secondary">Inserir modelo</button>
@@ -87,13 +87,13 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 const SUPABASE_URL="https://sxdsfklllilhdyuamvvg.supabase.co";
 const ANON="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN4ZHNma2xsbGlsaGR5dWFtdnZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk3MzMxOTcsImV4cCI6MjEwNTMwOTE5N30.SbeOYGT-h-l-9tUsZgCgTxqfA_0tkTGPllyu5RmX8KU";
 const ACCESS="r8K2mV7qL4x9P1cF";
-const BLOCKS=["L001-B01","L001-B02","L001-B03","L001-B04","L001-B05"];
+const BLOCKS=["L001-B01","L001-B02","L001-B03","L001-B04","L001-B05","L002-B04"];
 let currentBlock=(new URLSearchParams(location.search).get("block")||"L001-B01").toUpperCase();
 if(!BLOCKS.includes(currentBlock)) currentBlock="L001-B01";
 let currentData=null;
 
 function headers(){return {"Content-Type":"application/json","apikey":ANON,"Authorization":"Bearer "+ANON}}
-function blockNumber(){return Number(currentBlock.slice(-2))}
+function batchNumber(){return Number(currentBlock.slice(1,4))}\nfunction blockNumber(){return Number(currentBlock.slice(-2))}
 function renderBlocks(){
   const n=document.getElementById("blocks"); n.innerHTML="";
   for(const b of BLOCKS){
@@ -131,7 +131,7 @@ document.getElementById("copy").onclick=async()=>{if(!currentData)return;await n
 document.getElementById("template").onclick=()=>{
   document.getElementById("payload").value=JSON.stringify({
     schema_version:"2.3",review_stage:document.getElementById("stage").value,reviewer:"Perplexity",
-    batch_number:1,block_number:blockNumber(),reviews:[]
+    batch_number:batchNumber(),block_number:blockNumber(),reviews:[]
   },null,2);
 };
 document.getElementById("submit").onclick=async()=>{
