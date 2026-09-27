@@ -426,8 +426,8 @@
     }
 
     .luria-notification-toggle svg {
-      width:25px !important;
-      height:25px !important;
+      width:14px !important;
+      height:14px !important;
     }
 
     .luria-profile-toggle {
@@ -530,8 +530,8 @@
     }
 
     #luria-notification-toggle svg {
-      width:27px !important;
-      height:27px !important;
+      width:14px !important;
+      height:14px !important;
     }
 
     /* Afastar Pomodoro e sino do perfil */
