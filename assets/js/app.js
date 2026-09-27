@@ -398,7 +398,7 @@ const PAGE_INFO = {
   trabalho_passometro: { title: "Passômetro", eyebrow: "Trabalho" },
   trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Trabalho" },
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Trabalho" },
-  trabalho_calculadora: { title: "Calculadora", eyebrow: "Trabalho" },
+  trabalho_calculadora: { title: "Calculadoras", eyebrow: "Trabalho" },
   trabalho_bulario: { title: "Bulário", eyebrow: "Trabalho" },
   trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
   trabalho_diagnostico: { title: "Diagnóstico", eyebrow: "Trabalho" },
@@ -585,7 +585,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         </a>
 
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
-          <span class="nav-icon">∑</span><span>Calculadora</span>
+          <span class="nav-icon">∑</span><span>Calculadoras</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">
