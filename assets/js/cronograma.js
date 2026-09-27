@@ -4752,6 +4752,30 @@ function renderAgendaSide() {
   }
 }
 
+function bindReferenceCalendarControls() {
+  const dayButton = document.getElementById("planner-view-day");
+  const settingsButton = document.getElementById("planner-settings");
+  const newActivityButton = document.getElementById("reference-new-activity");
+
+  dayButton?.addEventListener("click", () => {
+    scheduleState.plannerView = "week";
+    renderPlanner();
+    const today = startOfDaySchedule(new Date());
+    const target = document.querySelector('[data-planner-date="' + toISODateSchedule(today) + '"]');
+    target?.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+  });
+
+  settingsButton?.addEventListener("click", () => {
+    document.querySelector('[data-schedule-add-mode="manual"]')?.click();
+    document.querySelector(".schedule-add-hub")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  newActivityButton?.addEventListener("click", () => {
+    document.querySelector('[data-schedule-add-mode="manual"]')?.click();
+    document.querySelector(".schedule-add-hub")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
 function updatePlannerViewControls() {
   const isMonth =
     scheduleState.plannerView === "month";
@@ -9376,3 +9400,4 @@ if (window.docmapUser) {
     { once: true }
   );
 }
+\nif (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindReferenceCalendarControls); else bindReferenceCalendarControls();\n
