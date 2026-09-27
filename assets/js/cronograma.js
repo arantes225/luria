@@ -9554,56 +9554,63 @@ async function initCronograma() {
   const nativeSettingsPage =
     document.body?.dataset?.page === "configuracoes-cronograma";
 
-  /* Controles compartilhados entre a agenda e Configurações > Cronograma. */
-  wireImportControls();
-  wireManualTopicForm();
-  wireScheduleAddMode();
-  wireBaseSchedule();
+  /* Carregamento de dados não pode depender da presença de controles opcionais. */
+  const safeWire = (name, fn) => {
+    try { fn(); }
+    catch (error) { console.error("Cronograma: falha ao iniciar " + name, error); }
+  };
 
-  /* Estes controles só existem na Agenda do menu lateral. */
+  safeWire("importação", wireImportControls);
+  safeWire("cadastro manual", wireManualTopicForm);
+  safeWire("modo de adição", wireScheduleAddMode);
+  safeWire("agenda-base", wireBaseSchedule);
+
   if (!nativeSettingsPage) {
-    wirePlannerNavigation();
-    wireDeckDropzone();
+    safeWire("navegação do calendário", wirePlannerNavigation);
+    safeWire("deck", wireDeckDropzone);
 
     document
       .getElementById("deck-distribute")
       ?.addEventListener("click", distributeDeckTopics);
 
-    wireAlreadyDoneDialog();
-    wireThemeLibraryFilters();
-    wireThemeLibraryBulkActions();
-    wireEventLibrary();
-    wireOverdueOrganizer();
+    safeWire("aula concluída", wireAlreadyDoneDialog);
+    safeWire("filtros da biblioteca", wireThemeLibraryFilters);
+    safeWire("ações da biblioteca", wireThemeLibraryBulkActions);
+    safeWire("eventos", wireEventLibrary);
+    safeWire("atrasadas", wireOverdueOrganizer);
 
     document.addEventListener("click", () => closeTopicOverflowMenus());
-
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        closeTopicOverflowMenus();
-      }
+      if (event.key === "Escape") closeTopicOverflowMenus();
     });
   }
 
-  const initialDataPromise = Promise.all([
+  const automaticAllowed =
+    window.LuriaEntitlements?.enabled("automatic_schedule") === true;
+  const automaticButton =
+    document.querySelector('[data-schedule-add-mode="automatic"]');
+
+  if (automaticButton && !automaticAllowed) automaticButton.hidden = true;
+  safeWire("seletor automático/manual", () =>
+    switchScheduleAddMode(automaticAllowed ? "automatic" : "manual")
+  );
+
+  /* Preferências podem falhar sem impedir que as atividades apareçam. */
+  const results = await Promise.allSettled([
     loadSchedulePreferences(),
     loadTopics()
   ]);
 
-  const automaticAllowed =
-    window.LuriaEntitlements?.enabled("automatic_schedule") === true;
-
-  const automaticButton =
-    document.querySelector('[data-schedule-add-mode="automatic"]');
-
-  if (automaticButton && !automaticAllowed) {
-    automaticButton.hidden = true;
-  }
-
-  switchScheduleAddMode(
-    automaticAllowed ? "automatic" : "manual"
-  );
-
-  await initialDataPromise;
+  results.forEach((result, index) => {
+    if (result.status === "rejected") {
+      console.error(
+        index === 0
+          ? "Cronograma: preferências não carregaram"
+          : "Cronograma: atividades não carregaram",
+        result.reason
+      );
+    }
+  });
 }
 
 if (window.docmapUser) {
