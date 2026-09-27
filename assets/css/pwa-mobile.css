@@ -3892,3 +3892,60 @@
   html.pwa-standalone body[data-page="cronograma"] .agenda-side{position:static!important;top:auto!important;transform:none!important}
   html.pwa-standalone body[data-page="cronograma"] .agenda-today-card{position:relative!important;z-index:1!important}
 }
+
+/* PWA MOBILE COMPOSITION v23 — no máximo 1 bloco grande ou 2 pequenos por linha */
+@media(max-width:760px){
+  html.pwa-standalone body{
+    --pwa-gap:10px;
+    --pwa-small-min:0px;
+  }
+  html.pwa-standalone body .page,
+  html.pwa-standalone body main,
+  html.pwa-standalone body .main{min-width:0!important;max-width:100%!important;overflow-x:hidden!important}
+  /* Grades genéricas nunca passam de duas colunas no PWA. */
+  html.pwa-standalone body [class*="-grid"]{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:var(--pwa-gap)!important;
+  }
+  /* Blocos de conteúdo/visualização são sempre largura inteira. */
+  html.pwa-standalone body [class*="-grid"] > section,
+  html.pwa-standalone body [class*="-grid"] > article[class*="panel"],
+  html.pwa-standalone body [class*="-grid"] > [class*="chart"],
+  html.pwa-standalone body [class*="-grid"] > [class*="table"],
+  html.pwa-standalone body [class*="-grid"] > [class*="list"],
+  html.pwa-standalone body [class*="-grid"] > [class*="timeline"],
+  html.pwa-standalone body [class*="-grid"] > [class*="calendar"],
+  html.pwa-standalone body [class*="-grid"] > [class*="planner"]{
+    grid-column:1/-1!important;
+  }
+  html.pwa-standalone body [class*="-card"],
+  html.pwa-standalone body [class*="-panel"],
+  html.pwa-standalone body [class*="-callout"]{
+    min-width:0!important;max-width:100%!important;box-sizing:border-box!important;
+  }
+  /* Cronograma: calendário/agenda = blocos grandes; resumos podem ficar 2 por linha. */
+  html.pwa-standalone body[data-page="cronograma"] .agenda-workspace,
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout,
+  html.pwa-standalone body[data-page="cronograma"] .agenda-bottom-grid,
+  html.pwa-standalone body[data-page="cronograma"] .agenda-side{
+    grid-template-columns:1fr!important;
+  }
+  html.pwa-standalone body[data-page="cronograma"] .planner-panel,
+  html.pwa-standalone body[data-page="cronograma"] .week-planner,
+  html.pwa-standalone body[data-page="cronograma"] .month-planner,
+  html.pwa-standalone body[data-page="cronograma"] .agenda-today-card{width:100%!important;grid-column:1/-1!important}
+  /* Estatísticas: KPIs pequenos 2x; gráficos grandes 1x. */
+  html.pwa-standalone body[data-page="estatisticas"] .stats-summary-grid,
+  html.pwa-standalone body[data-page="estatisticas"] .metric-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  html.pwa-standalone body[data-page="estatisticas"] .stats-block-grid{grid-template-columns:1fr!important}
+  /* Dashboard: métricas pequenas 2x; todo card funcional grande 1x. */
+  html.pwa-standalone body[data-page="dashboard"] .dl-metric-cluster{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  html.pwa-standalone body[data-page="dashboard"] .dl-upcoming,
+  html.pwa-standalone body[data-page="dashboard"] .dl-today-activities,
+  html.pwa-standalone body[data-page="dashboard"] .dl-streak,
+  html.pwa-standalone body[data-page="dashboard"] .dl-areas,
+  html.pwa-standalone body[data-page="dashboard"] .dl-cat{grid-column:1/-1!important;width:100%!important}
+}
+@media(max-width:340px){
+  html.pwa-standalone body [class*="-grid"]{grid-template-columns:1fr!important}
+}
