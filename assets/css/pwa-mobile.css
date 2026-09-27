@@ -3827,3 +3827,40 @@
     max-width:100%!important;min-width:0!important;
   }
 }
+
+/* PWA CRONOGRAMA — mobile hardening v21 */
+@media (max-width:760px){
+  .pwa-standalone body[data-page="cronograma"]{overflow-x:hidden!important}
+  .pwa-standalone body[data-page="cronograma"] .main,
+  .pwa-standalone body[data-page="cronograma"] .page,
+  .pwa-standalone body[data-page="cronograma"] .schedule-stack,
+  .pwa-standalone body[data-page="cronograma"] .agenda-workspace,
+  .pwa-standalone body[data-page="cronograma"] .planner-panel{width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important}
+  .pwa-standalone body[data-page="cronograma"] .main{padding-left:10px!important;padding-right:10px!important;padding-bottom:calc(20px + env(safe-area-inset-bottom))!important}
+  .pwa-standalone body[data-page="cronograma"] .page{padding:0!important;margin:0!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-workspace,
+  .pwa-standalone body[data-page="cronograma"] .agenda-reference-layout{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .pwa-standalone body[data-page="cronograma"] .planner-header{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .pwa-standalone body[data-page="cronograma"] .planner-header-left,
+  .pwa-standalone body[data-page="cronograma"] .planner-tools{width:100%!important;min-width:0!important;max-width:100%!important}
+  .pwa-standalone body[data-page="cronograma"] .planner-tools{display:flex!important;flex-wrap:wrap!important;justify-content:flex-start!important;gap:6px!important}
+  .pwa-standalone body[data-page="cronograma"] .planner-period-title{font-size:18px!important;line-height:1.2!important;white-space:normal!important}
+  .pwa-standalone body[data-page="cronograma"] .planner-view-toggle{max-width:100%!important;overflow-x:auto!important}
+  .pwa-standalone body[data-page="cronograma"] .week-planner,
+  .pwa-standalone body[data-page="cronograma"] .month-planner{width:100%!important;min-width:0!important;max-width:100%!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch!important}
+  .pwa-standalone body[data-page="cronograma"] .week-planner>*,
+  .pwa-standalone body[data-page="cronograma"] .month-planner>*{min-width:0!important;box-sizing:border-box!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-side{width:100%!important;min-width:0!important;max-width:100%!important;display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-week-goal-banner,
+  .pwa-standalone body[data-page="cronograma"] .agenda-side-card,
+  .pwa-standalone body[data-page="cronograma"] .agenda-insight-card{width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;overflow:hidden!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-goal-days,
+  .pwa-standalone body[data-page="cronograma"] .agenda-goal-categories{min-width:0!important;max-width:100%!important;overflow-x:auto!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-bottom-grid{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-today-head{display:flex!important;flex-wrap:wrap!important;gap:8px!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-activity-view-switch,
+  .pwa-standalone body[data-page="cronograma"] .agenda-bulk-tools{max-width:100%!important;overflow-x:auto!important}
+  .pwa-standalone body[data-page="cronograma"] .agenda-today-list{width:100%!important;min-width:0!important}
+  .pwa-standalone body[data-page="cronograma"] .month-filter-tools{width:100%!important;max-width:100%!important;display:flex!important;flex-wrap:wrap!important;gap:7px!important}
+  .pwa-standalone body[data-page="cronograma"] .schedule-dialog{width:calc(100vw - 16px)!important;max-width:calc(100vw - 16px)!important;max-height:calc(100dvh - 16px)!important;margin:8px!important;overflow:auto!important}
+}
