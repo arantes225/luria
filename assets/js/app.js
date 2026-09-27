@@ -1097,6 +1097,30 @@ function getProfileTitle(gender) {
   return "";
 }
 
+const LURIA_ICON_PATHS = {
+  dashboard: '<rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><rect x="3" y="15" width="7" height="5" rx="1.5"/><rect x="14" y="15" width="7" height="5" rx="1.5"/>',
+  calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/>',
+  clipboard: '<rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/>',
+  target: '<circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="4"/><circle cx="11" cy="13" r="1" fill="currentColor" stroke="none"/><path d="m13 11 8-8m-5 0h5v5"/>',
+  refresh: '<path d="M20 11a8 8 0 0 0-14-5L4 8m0-5v5h5M4 13a8 8 0 0 0 14 5l2-2m0 5v-5h-5"/>',
+  chart: '<rect x="3" y="13" width="3" height="8" rx="1" fill="currentColor" stroke="none"/><rect x="10" y="8" width="3" height="13" rx="1" fill="currentColor" stroke="none"/><rect x="17" y="3" width="3" height="18" rx="1" fill="currentColor" stroke="none"/>',
+  book: '<path d="M12 6c-2.7-2-5.7-2.5-9-2v15c3.3-.5 6.3 0 9 2 2.7-2 5.7-2.5 9-2V4c-3.3-.5-6.3 0-9 2Zm0 0v15"/>',
+  file: '<path d="M6 2h8l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm8 0v5h5M8 12h8M8 16h8"/>',
+  cards: '<rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/>',
+  notebook: '<rect x="6" y="2" width="15" height="20" rx="2"/><path d="M10 7h7m-7 4h7m-7 4h5M3 6h5M3 11h5M3 16h5"/>',
+  simulation: '<path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm9 0v5h5M9 12h7m-7 4h7"/>',
+  stethoscope: '<path d="M6 3v7a4 4 0 0 0 8 0V3M4 3h4m4 0h4m-6 11v2a4 4 0 0 0 8 0v-2"/><circle cx="18" cy="12" r="2"/>',
+  users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  more: '<circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/>'
+};
+
+function luriaIcon(name, className = "") {
+  const path = LURIA_ICON_PATHS[name] || LURIA_ICON_PATHS.file;
+  return `<svg class="luria-ui-icon ${className}" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${path}</svg>`;
+}
+
+window.LuriaIcon = luriaIcon;
+
 function sidebarMarkup(user, profile = null, isAdmin = false) {
   const fallbackName = user.email
     ? user.email.split("@")[0]
@@ -1219,47 +1243,47 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         </div>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
-          <span class="nav-icon">◫</span><span>Dashboard</span>
+          <span class="nav-icon">${luriaIcon("dashboard")}</span><span>Dashboard</span>
         </a>
 
         <a class="nav-link ${page === "cronograma" ? "active" : ""}" href="/cronograma/">
-          <span class="nav-icon">▦</span><span>Cronograma</span>
-        </a>
-
-        <a class="nav-link ${page === "caderno" ? "active" : ""}" href="/caderno/">
-          <span class="nav-icon">▱</span><span>Anotações</span>
-        </a>
-
-        <a class="nav-link ${page === "flashcards" ? "active" : ""}" href="/flashcards/">
-          <span class="nav-icon">▣</span><span>Flashcards</span>
-        </a>
-
-        <a class="nav-link ${page === "erros" ? "active" : ""}" href="/caderno-erros/">
-          <span class="nav-icon">!</span><span>Caderno de erros</span>
-        </a>
-
-        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
-          <span class="nav-icon">?</span><span>Questões e Simulados</span>
-        </a>
-
-        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/">
-          <span class="nav-icon">✚</span><span>Plantão</span>
+          <span class="nav-icon">${luriaIcon("calendar")}</span><span>Cronograma</span>
         </a>
 
         <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
-          <span class="nav-icon">✦</span><span>Desafio Diário</span>
+          <span class="nav-icon">${luriaIcon("target")}</span><span>Desafio Diário</span>
+        </a>
+
+        <a class="nav-link ${page === "caderno" ? "active" : ""}" href="/caderno/">
+          <span class="nav-icon">${luriaIcon("notebook")}</span><span>Anotações</span>
+        </a>
+
+        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
+          <span class="nav-icon">${luriaIcon("file")}</span><span>Questões e Simulados</span>
+        </a>
+
+        <a class="nav-link ${page === "flashcards" ? "active" : ""}" href="/flashcards/">
+          <span class="nav-icon">${luriaIcon("cards")}</span><span>Flashcards</span>
+        </a>
+
+        <a class="nav-link ${page === "erros" ? "active" : ""}" href="/caderno-erros/">
+          <span class="nav-icon">${luriaIcon("clipboard")}</span><span>Caderno de erros</span>
+        </a>
+
+        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/">
+          <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador</span>
         </a>
 
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
-          <span class="nav-icon">▥</span><span>Estatísticas</span>
+          <span class="nav-icon">${luriaIcon("chart")}</span><span>Estatísticas</span>
         </a>
 
         <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
-          <span class="nav-icon">▤</span><span>Editais / Provas</span>
+          <span class="nav-icon">${luriaIcon("simulation")}</span><span>Editais e Provas</span>
         </a>
 
         <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
-          <span class="nav-icon">◎</span><span>Amigos</span>
+          <span class="nav-icon">${luriaIcon("users")}</span><span>Amigos</span>
         </a>
 
         <span id="admin-nav-slot"></span>
