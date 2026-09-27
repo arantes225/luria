@@ -51,7 +51,7 @@
     calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/>',
     clipboard: '<rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/>',
     target: '<circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="4"/><circle cx="11" cy="13" r="1" fill="currentColor" stroke="none"/><path d="m13 11 8-8m-5 0h5v5"/>',
-    flame: '<path d="M12 22c4.4 0 7-3.2 7-7.1 0-2.9-1.5-5.2-3-6.4.1 2.4-1 3.2-1.9 3.4C15 8.3 12.3 5.1 10.6 2c.3 3.7-1 5.3-3.3 8C5.8 11.7 5 13.3 5 15.2 5 19 7.6 22 12 22Z" fill="currentColor" stroke="none"/><path d="M12 22c-2.1 0-3.5-1.5-3.5-3.5 0-1.4.7-2.5 2.2-3.8.1 1.2.8 1.8 1.4 2.1.6-1.4 1.2-2.4 1.1-3.6 1.8 1.6 2.4 3.2 2.4 5.1 0 2.1-1.3 3.6-3.6 3.6Z" fill="#ffb164" stroke="none"/>',
+    flame: '<path d="M12 22c4.4 0 7-3.2 7-7.1 0-2.9-1.5-5.2-3-6.4.1 2.4-1 3.2-1.9 3.4C15 8.3 12.3 5.1 10.6 2c.3 3.7-1 5.3-3.3 8C5.8 11.7 5 13.3 5 15.2 5 19 7.6 22 12 22Z" fill="currentColor" stroke="none"/><path d="M12 22c-2.1 0-3.5-1.5-3.5-3.5 0-1.4.7-2.5 2.2-3.8.1 1.2.8 1.8 1.4 2.1.6-1.4 1.2-2.4 1.1-3.6 1.8 1.6 2.4 3.2 2.4 5.1 0 2.1-1.3 3.6-3.6 3.6Z" fill="var(--gold-soft)" stroke="none"/>',
     refresh: '<path d="M20 11a8 8 0 0 0-14-5L4 8m0-5v5h5M4 13a8 8 0 0 0 14 5l2-2m0 5v-5h-5"/>',
     chart: '<rect x="3" y="13" width="3" height="8" rx="1" fill="currentColor" stroke="none"/><rect x="10" y="8" width="3" height="13" rx="1" fill="currentColor" stroke="none"/><rect x="17" y="3" width="3" height="18" rx="1" fill="currentColor" stroke="none"/>',
     book: '<path d="M12 6c-2.7-2-5.7-2.5-9-2v15c3.3-.5 6.3 0 9 2 2.7-2 5.7-2.5 9-2V4c-3.3-.5-6.3 0-9 2Zm0 0v15"/>',
