@@ -4897,6 +4897,13 @@ function filteredHomeItems(){
   if(errorHomeState==="all") return base;
   return base.filter(item=>errorState(item)===errorHomeState);
 }
+let errorSpotlightTimer=null,errorSpotlightIndex=0;
+function startErrorSpotlight(){
+  const text=document.getElementById("error-cat-spotlight-text"),meta=document.getElementById("error-cat-spotlight-meta"),bar=document.getElementById("error-cat-timer-bar");if(!text)return;
+  const items=errorLibraryItems.filter(x=>x.ccq);if(!items.length){text.textContent="Seus melhores Pulos do Gato vão aparecer aqui.";if(meta)meta.textContent="Adicione erros ao caderno para começar.";return}
+  const paint=()=>{const item=items[errorSpotlightIndex%items.length];text.classList.add("changing");setTimeout(()=>{text.textContent=item.ccq;meta.textContent=[item.area,item.materia||item.theme].filter(Boolean).join(" · ")||"Caderno de Erros";text.classList.remove("changing")},160);if(bar){bar.style.animation="none";void bar.offsetWidth;bar.style.animation="errorCatCountdown 15s linear forwards"};errorSpotlightIndex=(errorSpotlightIndex+1)%items.length};
+  if(errorSpotlightTimer)clearInterval(errorSpotlightTimer);paint();if(items.length>1)errorSpotlightTimer=setInterval(paint,15000);
+}
 function renderErrorHomeExtras(){
   const featured=document.getElementById("error-featured-list");
   if(featured){
