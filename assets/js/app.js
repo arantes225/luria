@@ -858,8 +858,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
             <small>Trocar ambiente</small>
           </div>
         </a>
-
-        <button id="logout" class="logout-button" type="button">Sair</button>
       ` : `
         <div class="streak-mini" data-sidebar-streak-card>
           <div class="streak-mini-icon" aria-hidden="true">
