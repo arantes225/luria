@@ -739,3 +739,21 @@
    grid-template-areas:"heat" "habit" "dist" "prog" "area" "ins"!important;
  }
 }
+
+/* v24.7 — cards limpos, sem mini barras/círculos decorativos */
+.stats-summary-viz,.stats-mini-track{display:none!important}
+.stats-summary-card small{flex:0 0 auto!important}
+[data-stats-panel="questoes"] .stats-summary-grid{
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  width:100%!important;
+  gap:9px!important;
+}
+[data-stats-panel="questoes"] .stats-summary-card{
+  width:100%!important;
+  min-width:0!important;
+  min-height:108px!important;
+}
+@media(max-width:900px){
+ [data-stats-panel="questoes"] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
