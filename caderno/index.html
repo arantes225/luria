@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Caderno · LURIA</title>
+  <title>Anotações · LURIA</title>
 
   <link rel="manifest" href="/manifest.webmanifest?v=4">
   <link rel="apple-touch-icon" href="/assets/img/logos/logo-icone-original.png?v=pwa4">
@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=18.6">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=20.0">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -52,13 +52,13 @@
           ></span>
         </header>
 
-        <nav class="notebook-tabs" aria-label="Seções do caderno">
+        <nav class="notebook-tabs" aria-label="Seções de Anotações">
           <button
             class="notebook-tab active"
             type="button"
             data-notebook-tab="editor"
           >
-            Caderno
+            Editor
           </button>
 
           <button
@@ -66,7 +66,7 @@
             type="button"
             data-notebook-tab="library"
           >
-            Biblioteca
+            Cadernos
           </button>
         </nav>
 
@@ -240,8 +240,34 @@
                   <option value="default">Padrão</option>
                   <option value="Times New Roman">Times</option>
                   <option value="Georgia">Georgia</option>
-                  <option value="Verdana">Verdana</option>
+                  <option value="Comic Sans MS">Escrita à mão</option>
                 </select>
+
+                <button
+                  id="notebook-columns"
+                  class="notebook-tool-button notebook-tool-text"
+                  type="button"
+                  title="Inserir bloco em duas colunas"
+                  disabled
+                >▥ 2 colunas</button>
+
+                <div class="notebook-tool-menu-wrap">
+                  <button
+                    id="notebook-paper-toggle"
+                    class="notebook-tool-button notebook-tool-text"
+                    type="button"
+                    title="Aparência da página"
+                    aria-expanded="false"
+                    disabled
+                  >Papel</button>
+                  <div id="notebook-paper-menu" class="notebook-tool-menu" hidden>
+                    <div class="notebook-tool-menu-head"><strong>Aparência da página</strong><small>Escolha o fundo desta anotação.</small></div>
+                    <button type="button" data-paper-style="white">Branco</button>
+                    <button type="button" data-paper-style="lined">Pautado</button>
+                    <button type="button" data-paper-style="dotted">Pontilhado</button>
+                    <button type="button" data-paper-style="luria">LURIA</button>
+                  </div>
+                </div>
 
                 <div class="notebook-tool-menu-wrap">
                   <button
@@ -777,10 +803,10 @@
         >
           <div class="notebook-view-head">
             <div>
-              <h2>Biblioteca</h2>
+              <h2>Meus Cadernos</h2>
 
               <p>
-                Selecione os cadernos que deseja exportar em PDF.
+                Organize suas anotações por área e pelas aulas vinculadas.
               </p>
             </div>
           </div>
@@ -1169,7 +1195,7 @@
     }
   </style>
 
-  <script src="assets/js/caderno.js?v=18.8"></script>
+  <script src="assets/js/caderno.js?v=20.0"></script>
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
