@@ -3392,7 +3392,7 @@ function ensureNotificationCenter() {
   const profileMenu = document.getElementById("luria-profile-menu");
   const themeSwitch = document.getElementById("luria-theme-switch");
   const themeCycle = ["light","dark","leila-mood"];
-  const themeLabel = { light:"Claro", dark:"Escuro", "leila-mood":"Pink Mood" };
+  const themeLabel = { light:"Claro", dark:"Escuro", "leila-mood":"Rosa" };
   const renderThemeSwitch = () => {
     if (!themeSwitch) return;
     const resolved = document.documentElement.dataset.theme || "light";
