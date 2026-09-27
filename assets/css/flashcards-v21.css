@@ -84,3 +84,14 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel
 @media(max-width:1180px){.flash-deck-cards{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 @media(max-width:850px){.flash-deck-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:560px){.flash-deck-cards{grid-template-columns:1fr!important}}
+
+
+/* v23.1 — Adicionar segue o mesmo padrão visual das abas LURIA */
+.flash-tabs{display:flex!important;align-items:center!important;gap:26px!important;border-bottom:1px solid var(--border)!important;padding:0!important;margin:0 0 20px!important;overflow-x:auto!important}
+.flash-tabs .flash-tab{position:relative!important;min-height:43px!important;padding:0 2px!important;border:0!important;background:transparent!important;border-radius:0!important;color:var(--muted)!important;font-size:11px!important;font-weight:720!important;box-shadow:none!important}
+.flash-tabs .flash-tab:hover{color:var(--text)!important}.flash-tabs .flash-tab.active{color:var(--accent)!important;background:transparent!important}
+.flash-tabs .flash-tab.active:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;border-radius:999px;background:var(--accent)}
+.flash-add-hub{display:none}.flash-add-hub.active{display:block!important}
+.flash-add-hub>[data-flash-section="create"]{display:block!important}
+.flash-add-hub>[data-flash-section="create"]>.panel{max-width:none!important;border:1px solid var(--border)!important;border-radius:14px!important;background:var(--surface)!important;padding:20px!important;box-shadow:none!important}
+.flash-add-hub .panel-header h2{font-size:18px!important}.flash-add-hub .panel-header p{font-size:11px!important}
