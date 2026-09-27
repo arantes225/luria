@@ -2081,14 +2081,11 @@
     const active = rows.find(row => row.next_stage !== "block_complete");
     if (!active) return "Blocos concluídos";
     const labels = {
-      generation: "Geração",
-      chatgpt_initial: "Revisão ChatGPT",
+      generation: "Geração / reposição",
+      chatgpt_initial: "Revisão adversarial + autocorreção",
       blind_resolution: "Resolução cega",
-      perplexity_initial: "Revisão independente ChatGPT",
-      chatgpt_adjudication: "Decisão/correção das pendências",
-      chatgpt_correction: "Correção ChatGPT",
-      perplexity_reaudit: "Revisão cega final",
-      human_review: "Aprovação humana"
+      perplexity_initial: "Revisão independente do bloco",
+      block_complete: "No lote"
     };
     return labels[active.next_stage] || active.phase || qfStatusLabel(status);
   }
@@ -2104,11 +2101,7 @@
       chatgpt_initial: 2,
       blind_resolution: 3,
       perplexity_initial: 4,
-      chatgpt_adjudication: 5,
-      chatgpt_correction: 5,
-      perplexity_reaudit: 6,
-      human_review: 7,
-      block_complete: 8
+      block_complete: 5
     };
     return map[String(stage || "")] || 1;
   }
@@ -2116,43 +2109,30 @@
   function renderQuestionFactoryOperationalFlow(batchNumber, blockNumber, flow, blockAction, humanStatus) {
     const currentStage = String(blockAction?.next?.next_stage || "");
     const currentStep = questionFactoryOperationalStep(currentStage);
-    const f = flow || {};
-    const generated = Number(f.generated_count || 0);
-    const initialAudited = Number(f.initial_audited_count || 0);
-    const initialFlagged = Number(f.initial_flagged_count || 0);
-    const versioned = Number(f.versioned_count || 0);
-    const blind = Number(f.blind_resolved_count || 0);
-    const perplexityAudited = Number(f.perplexity_audited_count || 0);
-    const perplexityFlagged = Number(f.perplexity_flagged_count || 0);
-    const adjudicated = Number(f.adjudicated_count || 0);
-    const corrected = Number(f.corrected_count || 0);
-    const reaudited = Number(f.reaudit_count || 0);
-    const reauditApproved = Number(f.reaudit_approved_count || 0);
-    const reauditNeedsRevision = Number(f.reaudit_needs_revision_count || 0);
-    const reauditRejected = Number(f.reaudit_rejected_count || 0);
-    const machinePending = Number(f.machine_pending_count || 0);
-    const approved = Number(f.machine_approved_count || 0);
-    const hadReaudit = Number(f.reaudit_reviews_total || 0) > 0;
+    const next = blockAction?.next || {};
+    const generated = Number(next.question_count || flow?.generated_count || 0);
+    const initialReviewed = Number(next.initial_reviewed_count || flow?.initial_audited_count || 0);
+    const blind = Number(next.blind_seen_count || flow?.blind_resolved_count || 0);
+    const independent = Number(next.independent_seen_count || next.perplexity_seen_count || flow?.perplexity_audited_count || 0);
+    const approved = Number(next.machine_approved_count || 0);
+    const retry = Number(next.retry_count || 0);
+    const excluded = Number(next.excluded_count || 0);
+    const avg = next.average_routing_score == null ? "—" : Number(next.average_routing_score).toLocaleString("pt-BR",{maximumFractionDigits:1});
 
     const steps = [
-      { n:1, title:"Gerar 200", owner:"ChatGPT", stats:`${generated}/200 geradas` },
-      { n:2, title:"Revisão adversarial + autocorreção", owner:"ChatGPT", stats:`${initialAudited} auditadas · ${initialFlagged} sinalizadas · ${versioned} com nova versão` },
-      { n:3, title:"Resolução cega independente", owner:"ChatGPT", stats:`${blind}/200 resolvidas cegamente` },
-      { n:4, title:"Revisão independente do bloco", owner:"ChatGPT", stats:`${perplexityAudited}/200 revisadas · ${perplexityFlagged} com achados` },
-      { n:5, title:hadReaudit && currentStep === 5 ? "Decidir destino das pendências" : "Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
-      { n:6, title:"Revisar cegamente as correções", owner:"ChatGPT", stats:`${reaudited}/200 revisadas · ${reauditApproved} aprovadas · ${reauditNeedsRevision} revisar · ${reauditRejected} rejeitadas` },
-      { n:7, title:"Aceitar para o lote", owner:"Você", stats: humanStatus === "approved" ? "Aprovado e enviado ao lote" : `${approved}/200 aprovadas pela máquina · ${machinePending} ainda não aprovadas` }
+      { n:1, title:"Gerar / repor questões", owner:"ChatGPT", stats:`${generated}/200 no bloco` },
+      { n:2, title:"Revisão adversarial + autocorreção", owner:"ChatGPT", stats:`${initialReviewed}/200 revisadas` },
+      { n:3, title:"Resolução cega com nota", owner:"ChatGPT", stats:`${blind}/200 resolvidas` },
+      { n:4, title:"Revisão independente + decisão automática", owner:"ChatGPT", stats:`${independent}/200 revisadas · média ${avg}` }
     ];
 
     return `
       <div class="admin-qf-flow">
         ${steps.map(step => {
           let stateClass = "waiting";
-          if (currentStage === "block_complete" || humanStatus === "approved") stateClass = "done";
+          if (currentStage === "block_complete") stateClass = "done";
           else if (step.n < currentStep) stateClass = "done";
           else if (step.n === currentStep) stateClass = "active";
-          if (step.n === 5 && currentStep === 5 && hadReaudit) stateClass += " loop";
-          if (step.n === 6 && currentStep === 5 && hadReaudit) stateClass = "return";
           return `
             <div class="admin-qf-flow-step ${stateClass}">
               <span class="admin-qf-flow-number">${step.n}</span>
@@ -2165,7 +2145,11 @@
           `;
         }).join("")}
       </div>
-      ${hadReaudit && currentStep === 5 ? '<div class="admin-qf-flow-loop-note">Etapa 6 finalizada. O fluxo está parado nesta decisão e não volta automaticamente para etapas anteriores. Corrija somente as pendências ou arquive-as para gerar reposições.</div>' : ""}
+      <div class="admin-qf-quality-row-meta">
+        <span><b>${approved}</b> direto para o lote (≥95)</span>
+        <span><b>${retry}</b> nova revisão (50–94,99)</span>
+        <span><b>${excluded}</b> excluídas (&lt;50)</span>
+      </div>
     `;
   }
 
@@ -2455,7 +2439,7 @@
   }
 
   async function openQuestionFactoryBlock(batchNumber, blockNumber, issuesOnly = false) {
-    const [blockResult, blindResult] = await Promise.all([
+    const [blockResult, blindResult, scoreResult] = await Promise.all([
       sb.rpc("admin_question_factory_block", {
         p_batch_number: Number(batchNumber),
         p_block_number: Number(blockNumber),
@@ -2464,11 +2448,17 @@
       sb.rpc("admin_question_factory_blind_reviews", {
         p_batch_number: Number(batchNumber),
         p_block_number: Number(blockNumber)
+      }),
+      sb.rpc("admin_question_factory_fast_scores", {
+        p_batch_number: Number(batchNumber),
+        p_block_number: Number(blockNumber)
       })
     ]);
     const { data, error } = blockResult;
     const blindReviews = Array.isArray(blindResult?.data) ? blindResult.data : [];
     const blindByItem = new Map(blindReviews.map(review => [String(review.item_id || ""), review]));
+    const fastScores = Array.isArray(scoreResult?.data) ? scoreResult.data : [];
+    const fastByItem = new Map(fastScores.map(row => [String(row.item_id || ""), row]));
     const dialog = $("admin-qf-dialog");
     const list = $("admin-qf-question-list");
     if (dialog && !dialog.open) dialog.showModal();
@@ -2489,7 +2479,15 @@
       list.innerHTML = questions.length ? questions.map(q => {
         const review = q.latest_review || {};
         const blindReview = blindByItem.get(String(q.id || "")) || null;
-        const score = q.quality_score == null ? "—" : Number(q.quality_score).toLocaleString("pt-BR",{maximumFractionDigits:1})+"%";
+        const fast = fastByItem.get(String(q.id || "")) || {};
+        const routeScore = fast.routing_score ?? q.quality_score;
+        const score = routeScore == null ? "—" : Number(routeScore).toLocaleString("pt-BR",{maximumFractionDigits:1})+"/100";
+        const blindScore = fast.blind_score == null ? "—" : Number(fast.blind_score).toLocaleString("pt-BR",{maximumFractionDigits:1});
+        const independentScore = fast.independent_score == null ? "—" : Number(fast.independent_score).toLocaleString("pt-BR",{maximumFractionDigits:1});
+        const decisionLabel = fast.routing_decision === "approved" ? "Direto para o lote"
+          : fast.routing_decision === "retry" ? "Nova revisão"
+          : fast.routing_decision === "excluded" ? "Excluída"
+          : "Aguardando notas";
         return `
           <details class="admin-qf-question">
             <summary>
@@ -2512,6 +2510,12 @@
                 }).join("")}
               </div>
               ${blindReview ? `\n                <div class="admin-qf-bad-reason">\n                  <strong>Resolução cega independente</strong>\n                  <span><b>Resposta independente:</b> ${esc(blindReview.independent_answer || "Ambígua / sem resposta forçada")}</span>\n                  <small>${esc(blindReview.reason || "Sem justificativa registrada.")}</small>\n                  <small>${blindReview.ambiguity ? "Ambiguidade: sim" : "Ambiguidade: não"} · ${blindReview.single_best_answer ? "Única melhor resposta: sim" : "Única melhor resposta: não"}</small>\n                </div>\n              ` : ""}\n              <div class="admin-qf-bad-reason">
+                <strong>Qualidade individual · fluxo 95/50</strong>
+                <span><b>Resolução cega:</b> ${esc(blindScore)}/100 · <b>Revisão independente:</b> ${esc(independentScore)}/100</span>
+                <span><b>Nota de roteamento:</b> ${esc(score)} · <b>Destino:</b> ${esc(decisionLabel)}</span>
+                ${fast.component_scores && Object.keys(fast.component_scores).length ? `<small>${Object.entries(fast.component_scores).map(([k,v]) => esc(k)+": "+esc(v)).join(" · ")}</small>` : ""}
+              </div>
+              <div class="admin-qf-bad-reason">
                 <strong>Parecer mais recente</strong>
                 <span>${esc(review.suggested_correction || q.block_review_notes || "Sem observação registrada.")}</span>
                 ${review.style_issue ? `<small>Estilo: ${esc(review.style_issue)}</small>` : ""}
@@ -3139,7 +3143,7 @@
 
   async function loadQuestionFactoryBlockTracker() {
     const [trackerResult, flowResult] = await Promise.all([
-      sb.rpc("admin_question_factory_block_tracker"),
+      sb.rpc("admin_question_factory_fast_tracker"),
       sb.rpc("admin_question_factory_block_flow_snapshot")
     ]);
     if (trackerResult.error) {
@@ -3638,20 +3642,17 @@
       return { next, provider:null, label:"Bloco concluído", phase:"Concluído" };
     }
 
-    const independentLegacyStages = ["blind_resolution","perplexity_initial","perplexity_reaudit","lot_perplexity_final"];
+    const independentLegacyStages = ["blind_resolution","perplexity_initial"];
     const provider = independentLegacyStages.includes(String(next.next_stage || ""))
       ? "chatgpt"
       : (next.next_provider || "chatgpt");
     const providerLabel = provider === "gemini" ? "Gemini" : "ChatGPT";
     const afterCorrection = next.next_stage === "blind_resolution" && String(next.latest_review_stage || "") === "chatgpt_correction_review";
     const phaseLabels = {
-      generation:"1 · Gerar 200 questões",
+      generation:"1 · Gerar / repor questões",
       chatgpt_initial:"2 · ChatGPT · revisão adversarial + autocorreção",
-      blind_resolution:afterCorrection ? "6 · ChatGPT · nova resolução cega sem memória" : "3 · ChatGPT · resolução cega sem memória",
-      perplexity_initial:"4 · ChatGPT · revisão independente do bloco",
-      chatgpt_adjudication:"5 · ChatGPT · decidir/corrigir pendências",
-      chatgpt_correction:"5 · ChatGPT · aplicar correções",
-      perplexity_reaudit:"6 · ChatGPT · revisar cegamente as correções"
+      blind_resolution:"3 · ChatGPT · resolução cega + nota",
+      perplexity_initial:"4 · ChatGPT · revisão independente + decisão 95/50"
     };
     const phase = phaseLabels[next.next_stage] || next.phase || "Próxima fase";
     return { next, provider, providerLabel, phase, label:`${phase} · abrir ${providerLabel}` };
@@ -3743,11 +3744,11 @@
   }
 
   function questionFactoryIndependentChunkStage(stage) {
-    return ["perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
+    return ["perplexity_initial"].includes(String(stage || ""));
   }
 
   function questionFactoryDecisionPackageStage(stage) {
-    return ["chatgpt_adjudication","chatgpt_correction"].includes(String(stage || ""));
+    return false;
   }
 
   function questionFactoryPendingForStage(question, stage) {
