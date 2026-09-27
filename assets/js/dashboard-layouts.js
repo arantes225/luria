@@ -19,7 +19,13 @@
   const readableDate = (date) => new Intl.DateTimeFormat("pt-BR", { weekday: "long", day: "numeric", month: "long" }).format(date);
   const shortDate = (value) => new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "short" }).format(new Date(`${value}T12:00:00`));
   const items = () => (typeof agendaState === "object" && Array.isArray(agendaState.items) ? agendaState.items : []);
-  const upcoming = (limit = 4) => items().filter((item) => item.activity_date >= dayISO(new Date())).slice(0, limit);
+  const upcomingItems = () => Array.isArray(window.luriaDashboardUpcomingAgenda)
+    ? window.luriaDashboardUpcomingAgenda
+    : items();
+  const upcoming = (limit = 4) => upcomingItems()
+    .filter((item) => item.activity_date >= dayISO(new Date()))
+    .sort((a, b) => String(a.activity_date).localeCompare(String(b.activity_date)))
+    .slice(0, limit);
   const metric = (id) => escape(text(id));
   const snap = () => {
     const [done, total] = text("metric-lessons-progress-copy", "0/0").split("/").map(number);
