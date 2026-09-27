@@ -2598,6 +2598,62 @@
       return;
     }
 
+    if (inferredStage === "chatgpt_correction_cycle") {
+      const adjudication = payload.adjudication;
+      const correction = payload.correction;
+      if (!adjudication || typeof adjudication !== "object" || Array.isArray(adjudication)) {
+        if (message) message.textContent = "O ciclo não contém adjudication válido.";
+        return;
+      }
+      if (!correction || typeof correction !== "object" || Array.isArray(correction)) {
+        if (message) message.textContent = "O ciclo não contém correction válido.";
+        return;
+      }
+      if (adjudication.review_stage !== "chatgpt_adjudication") {
+        if (message) message.textContent = "adjudication.review_stage inválido.";
+        return;
+      }
+      if (correction.review_stage !== "chatgpt_correction_review") {
+        if (message) message.textContent = "correction.review_stage inválido.";
+        return;
+      }
+      if (Number(adjudication.batch_number) !== payloadBatch || Number(adjudication.block_number) !== payloadBlock
+          || Number(correction.batch_number) !== payloadBatch || Number(correction.block_number) !== payloadBlock) {
+        if (message) message.textContent = "Escopo interno do ciclo diverge do lote/bloco selecionado.";
+        return;
+      }
+
+      if (message) message.textContent = "Persistindo adjudicação...";
+      const adjudicationResult = await sb.rpc("admin_import_question_factory_stage", { p_payload: adjudication });
+      if (adjudicationResult.error) {
+        if (message) message.textContent = adjudicationResult.error.message || "Falha ao persistir adjudicação.";
+        return;
+      }
+
+      const correctionQuestions = Array.isArray(correction.questions) ? correction.questions : [];
+      let correctionData = null;
+      if (correctionQuestions.length) {
+        if (message) message.textContent = "Adjudicação persistida. Aplicando correções autorizadas...";
+        const correctionResult = await sb.rpc("admin_import_question_factory_stage", { p_payload: correction });
+        if (correctionResult.error) {
+          if (message) message.textContent = "Adjudicação persistida, mas a correção falhou: " + (correctionResult.error.message || "erro de importação") + ". O bloco continuará em chatgpt_correction para retomada segura.";
+          await Promise.all([loadQuestionFactory(),loadQuestionFactoryStyles(),loadQuestionFactoryBlockTracker(),loadQuestionFactoryQuality()]);
+          return;
+        }
+        correctionData = correctionResult.data;
+      }
+
+      const decisions = Number(adjudicationResult.data?.result?.decisions_imported || 0);
+      const corrected = Number(correctionData?.result?.corrected || 0);
+      if (message) {
+        message.textContent = correctionQuestions.length
+          ? "Ciclo concluído: " + decisions + " adjudicações persistidas · " + corrected + " correções aplicadas. Próxima etapa: nova resolução cega/reauditoria."
+          : "Ciclo concluído: " + decisions + " adjudicações persistidas · nenhuma correção autorizada. Próxima etapa: reauditoria das discordâncias.";
+      }
+      await Promise.all([loadQuestionFactory(),loadQuestionFactoryStyles(),loadQuestionFactoryBlockTracker(),loadQuestionFactoryQuality(),loadBadQuestionFolder(0)]);
+      return;
+    }
+
     const isIndependentReviewStage = ["blind_resolution","perplexity_initial","perplexity_reaudit","lot_perplexity_final"].includes(inferredStage);
     const reviewList = Array.isArray(payload.reviews) ? payload.reviews : null;
     const reviewChunks = isIndependentReviewStage && reviewList?.length > 50
@@ -3504,6 +3560,11 @@
       return;
     }
 
+    if (questionFactoryDecisionPackageStage(next.next_stage)) {
+      await copyQuestionFactoryDecisionPackage(batchNumber, blockNumber, button);
+      return;
+    }
+
     const prompt = questionFactoryBlockPrompt(next);
     if (!prompt) {
       window.alert("Não foi possível montar o prompt deste bloco.");
@@ -3529,6 +3590,11 @@
 
     if (questionFactoryIndependentChunkStage(next.next_stage)) {
       await copyQuestionFactoryJsonPart(batchNumber, blockNumber, "next", button);
+      return;
+    }
+
+    if (questionFactoryDecisionPackageStage(next.next_stage)) {
+      await copyQuestionFactoryDecisionPackage(batchNumber, blockNumber, button);
       return;
     }
 
@@ -3562,6 +3628,10 @@
 
   function questionFactoryIndependentChunkStage(stage) {
     return ["perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
+  }
+
+  function questionFactoryDecisionPackageStage(stage) {
+    return ["chatgpt_adjudication","chatgpt_correction"].includes(String(stage || ""));
   }
 
   function questionFactoryPendingForStage(question, stage) {
@@ -3681,6 +3751,151 @@
     } catch (error) {
       console.warn("Falha ao preparar pacote da etapa:", error);
       window.alert(error?.message || "Não foi possível preparar o pacote de até 200 questões desta etapa.");
+      if (button) button.textContent = "Falha ao copiar";
+      setTimeout(() => { if (button) button.textContent = original; }, 1800);
+    } finally {
+      if (button) button.disabled = false;
+    }
+  }
+
+  async function copyQuestionFactoryDecisionPackage(batchNumber, blockNumber, button) {
+    const action = questionFactoryBlockAction(batchNumber, blockNumber);
+    const next = action.next;
+    const stage = String(next?.next_stage || "");
+    const original = button?.textContent || "Prompt";
+
+    if (!next || !questionFactoryDecisionPackageStage(stage)) {
+      window.alert("Esta função só prepara adjudicação/correção com a versão atual do bloco.");
+      return;
+    }
+
+    if (button) {
+      button.disabled = true;
+      button.textContent = "Buscando questão + parecer atuais...";
+    }
+
+    try {
+      const { data, error } = await sb.rpc("admin_export_question_factory", {
+        p_batch_number: Number(batchNumber),
+        p_block_number: Number(blockNumber),
+        p_blind: false
+      });
+      if (error) throw error;
+      if (!data || typeof data !== "object") throw new Error("O exportador não retornou um JSON válido.");
+
+      const questionKey = ["questions","items","questoes"].find(key => Array.isArray(data[key]));
+      if (!questionKey) throw new Error("Não encontrei a lista de questões no JSON exportado.");
+
+      const ordered = [...data[questionKey]].sort((a,b) =>
+        Number(a.block_sequence_no ?? a.sequence_no ?? 0) - Number(b.block_sequence_no ?? b.sequence_no ?? 0)
+      );
+
+      const pending = ordered.filter(question => {
+        const review = question?.latest_review;
+        if (!review || typeof review !== "object") return false;
+        const reviewStage = String(review.review_stage || "");
+        if (!["perplexity_initial","perplexity_reaudit"].includes(reviewStage)) return false;
+        const currentVersion = Number(question.version ?? question.item_version ?? 1);
+        if (Number(review.item_version ?? currentVersion) !== currentVersion) return false;
+
+        if (stage === "chatgpt_adjudication") {
+          return ["needs_revision","rejected"].includes(String(review.review_status || ""))
+            && !String(review.chatgpt_agreement_status || "").trim();
+        }
+
+        return ["agree","partially_agree"].includes(String(review.chatgpt_agreement_status || ""))
+          && ["needs_revision","rejected"].includes(String(question.status || review.review_status || ""));
+      });
+
+      const selected = pending.slice(0, 200);
+      if (!selected.length) {
+        if (button) button.textContent = "Sem pendências nesta etapa";
+        window.alert("Não há itens pendentes de adjudicação/correção na versão atual. Atualize o fluxo do bloco.");
+        await loadQuestionFactoryBlockTracker();
+        return;
+      }
+
+      const selectedIds = new Set(selected.map(question => String(question.question_id || "")));
+      const selectedManifest = Array.isArray(data.version_manifest)
+        ? data.version_manifest.filter(item => selectedIds.has(String(item?.question_id || "")))
+        : selected.map(question => ({
+            question_id: question.question_id,
+            item_version: Number(question.version ?? question.item_version ?? 1)
+          }));
+
+      const batchCode = next.batch_code || ("L" + String(Number(batchNumber)).padStart(3,"0"));
+      const blockCode = next.block_code || (batchCode + "-B" + String(Number(blockNumber)).padStart(2,"0"));
+      const payload = {
+        schema_version: data.schema_version || "2.0",
+        batch_number: Number(batchNumber),
+        batch_code: batchCode,
+        block_number: Number(blockNumber),
+        block_code: blockCode,
+        operational_address: blockCode,
+        exam_style: next.exam_style || null,
+        input_stage: stage,
+        version_manifest: selectedManifest,
+        questions: selected,
+        question_count: selected.length,
+        input_package: {
+          mode: stage === "chatgpt_adjudication"
+            ? "adjudication_and_correction_current_versions"
+            : "correction_only_current_versions",
+          delivered_count: selected.length,
+          pending_before_copy: pending.length,
+          pending_after_this_package_if_imported: Math.max(0, pending.length - selected.length)
+        }
+      };
+
+      const prompt = String(questionFactoryBlockPrompt(next) || "").trim();
+      if (!prompt) throw new Error("Não foi possível montar o prompt desta etapa.");
+
+      const manualLines = stage === "chatgpt_adjudication"
+        ? [
+            "MODO MANUAL OBRIGATÓRIO NESTA EXECUÇÃO:",
+            "- INPUT_JSON_ATUAL abaixo é a fonte de verdade. NÃO tente acessar Admin/Supabase e NÃO use memória.",
+            "- Julgue somente questions[].latest_review da MESMA question_id + item_version.",
+            "- Para agree/partially_agree, approved_patch deve conter os textos finais EXATOS a aplicar.",
+            "- Para disagree, approved_patch={} e rebuttal_to_reviewer deve justificar a discordância.",
+            "- Devolva UM ÚNICO objeto JSON, sem markdown, com review_stage=chatgpt_correction_cycle.",
+            "- Estrutura externa obrigatória: {schema_version, review_stage, batch_number, batch_code, block_number, block_code, operational_address, exam_style, adjudication:{...}, correction:{...}}.",
+            "- Inclua adjudication (review_stage=chatgpt_adjudication, decisions[], stage_metrics) e correction (review_stage=chatgpt_correction_review, questions[], stage_metrics).",
+            "- correction.questions[] contém somente agree/partially_agree e repete question_id, expected_version, review_id e patch autorizado.",
+            "- Se nenhuma questão precisar de correção, use correction.questions=[].",
+            "- Inclua stage_metrics REAIS em cada subpayload."
+          ]
+        : [
+            "MODO MANUAL OBRIGATÓRIO NESTA EXECUÇÃO:",
+            "- INPUT_JSON_ATUAL abaixo é a fonte de verdade. NÃO tente acessar Admin/Supabase e NÃO use memória.",
+            "- Use somente o approved_patch já persistido em questions[].latest_review.raw_payload.adjudication.",
+            "- Devolva UM ÚNICO JSON review_stage=chatgpt_correction_review, sem markdown.",
+            "- questions[] deve preservar question_id, expected_version e review_id e aplicar exatamente o patch autorizado."
+          ];
+
+      const combined = [
+        prompt,
+        "",
+        "============================================================",
+        "INPUT_JSON_ATUAL — FONTE DE VERDADE DESTA EXECUÇÃO",
+        "============================================================",
+        manualLines.join("\n"),
+        "",
+        "DADOS ATUAIS DO BLOCO:",
+        JSON.stringify(payload, null, 2)
+      ].join("\n");
+
+      await writePromptClipboard(combined);
+      if (button) {
+        button.textContent = selected.length + " pendências + prompt copiados";
+        button.classList.add("success");
+        setTimeout(() => {
+          button.textContent = original;
+          button.classList.remove("success");
+        }, 2200);
+      }
+    } catch (error) {
+      console.warn("Falha ao preparar pacote de adjudicação/correção:", error);
+      window.alert(error?.message || "Não foi possível preparar o pacote atual desta etapa.");
       if (button) button.textContent = "Falha ao copiar";
       setTimeout(() => { if (button) button.textContent = original; }, 1800);
     } finally {
