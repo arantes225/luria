@@ -5130,11 +5130,14 @@ function renderErrorLibrary() {
   empty.hidden=true;
   const areas=new Map();
   items.forEach(item=>{const area=item.area||"Sem área";const notebook=item.materia||item.theme||"Geral";if(!areas.has(area))areas.set(area,new Map());const books=areas.get(area);if(!books.has(notebook))books.set(notebook,[]);books.get(notebook).push(item)});
-  const preferred=["Clínica Médica","Pediatria","Cirurgia Geral","Ginecologia e Obstetrícia","Preventiva"];
+  const canonicalArea=(value)=>{const v=String(value||"").trim().toLowerCase();if(v.includes("clínica")||v.includes("clinica"))return "Clínica Médica";if(v.includes("gine")||v==="go"||v.includes("obst"))return "GO";if(v.includes("cirurg"))return "Cirurgia Geral";if(v.includes("pedi"))return "Pediatria";if(v.includes("prevent"))return "Preventiva";return value||"Sem área"};
+  const normalizedAreas=new Map();items.forEach(item=>{const area=canonicalArea(item.area);const notebook=item.materia||item.theme||"Geral";if(!normalizedAreas.has(area))normalizedAreas.set(area,new Map());const books=normalizedAreas.get(area);if(!books.has(notebook))books.set(notebook,[]);books.get(notebook).push(item)});
+  areas.clear();normalizedAreas.forEach((v,k)=>areas.set(k,v));
+  const preferred=["Clínica Médica","GO","Cirurgia Geral","Pediatria","Preventiva"];
   const sorted=[...areas.keys()].sort((x,y)=>{const ax=preferred.indexOf(x),ay=preferred.indexOf(y);if(ax>=0||ay>=0)return (ax<0?99:ax)-(ay<0?99:ay);return x.localeCompare(y,"pt-BR")});
   container.innerHTML=sorted.map(area=>{const books=areas.get(area);return `
     <section class="error-notebook-shelf">
-      <div class="error-notebook-shelf-head"><span class="error-area-mark">${errorAreaIcon(area)}</span><div><h3>${errorLibraryEscape(area)}</h3><p>${[...books.values()].reduce((n,v)=>n+v.length,0)} erros em ${books.size} cadernos</p></div></div>
+      <div class="error-notebook-shelf-head"><span class="error-area-mark">${errorAreaIcon(area)}</span><div><h3>${errorLibraryEscape(area)}</h3><p>${[...books.values()].reduce((n,v)=>n+v.length,0)} erros em ${books.size} cadernos</p></div><div class="error-area-actions"><button type="button" data-error-area-more="${errorLibraryEscape(area)}">•••</button><div class="error-area-menu" data-error-area-menu="${errorLibraryEscape(area)}" hidden><button type="button" data-area-review>Revisar agora</button><button type="button" data-area-edit>Editar área</button></div></div></div>
       <div class="error-notebook-grid">${[...books.entries()].map(([name,rows])=>{const reviews=rows.reduce((n,i)=>n+Number(i.review_count||0),0);const due=rows.filter(i=>!i.due_date||i.due_date<=errorTodayISO()).length;const tip=rows.find(i=>i.ccq)?.ccq||"Abra para revisar seus erros.";return `
         <article class="error-notebook-card" data-error-notebook="${errorLibraryEscape(area)}||${errorLibraryEscape(name)}">
           <div class="error-notebook-icon">${errorAreaIcon(area)}</div><button class="error-notebook-more" type="button" data-error-notebook-more="${errorLibraryEscape(area)}||${errorLibraryEscape(name)}">•••</button>
@@ -5145,6 +5148,8 @@ function renderErrorLibrary() {
         </article>`}).join("")}</div>
     </section>`}).join("");
   renderErrorHomeExtras();updateErrorBulkToolbar();
+  container.querySelectorAll("[data-error-area-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const area=button.dataset.errorAreaMore;document.querySelectorAll("[data-error-area-menu]").forEach(m=>{if(m.dataset.errorAreaMenu!==area)m.hidden=true});const menu=container.querySelector(`[data-error-area-menu="${CSS.escape(area)}"]`);if(menu)menu.hidden=!menu.hidden}));
+  container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>{errorQueue=errorLibraryItems.filter(i=>canonicalArea(i.area)===area);errorIndex=0;switchErrorTab("review");renderCurrentError()});shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||""}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
   container.querySelectorAll("[data-error-notebook-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const key=button.dataset.errorNotebookMore;const menu=container.querySelector(`[data-error-notebook-menu="${CSS.escape(key)}"]`);const opening=menu?.hidden;closeNotebookMenus();if(menu)menu.hidden=!opening}));
   container.querySelectorAll("[data-error-notebook]").forEach(card=>{
     const [area,name]=card.dataset.errorNotebook.split("||");
