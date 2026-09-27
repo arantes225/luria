@@ -516,51 +516,17 @@
   }
 
   function renderWeekTimeHeatmap(id, sessions) {
-    const el = $(id);
-    if (!el) return;
-
-    const weekdays = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"];
-    const periods = [
-      { label:"Madrugada", start:0, end:6 },
-      { label:"Manhã", start:6, end:12 },
-      { label:"Tarde", start:12, end:18 },
-      { label:"Noite", start:18, end:24 }
-    ];
-
-    const matrix = Array.from({length:7}, () => Array(4).fill(0));
-
-    for (const row of sessions || []) {
-      const d = new Date(row.started_at);
-      if (Number.isNaN(d.getTime())) continue;
-
-      const weekday = (d.getDay() + 6) % 7;
-      const hour = d.getHours();
-      const period = periods.findIndex(p => hour >= p.start && hour < p.end);
-
-      if (period >= 0) {
-        matrix[weekday][period] += Number(row.duration_seconds || 0) / 60;
-      }
-    }
-
-    const max = Math.max(0, ...matrix.flat());
-
-    el.innerHTML = `
-      <div class="heatmap-grid week-time">
-        <div class="heatmap-head">Dia</div>
-        ${periods.map(p => `<div class="heatmap-head">${esc(p.label)}</div>`).join("")}
-
-        ${weekdays.map((day, dayIndex) => `
-          <div class="heatmap-row-label">${day}</div>
-          ${matrix[dayIndex].map(minutes => `
-            <div class="heatmap-cell" style="--heat:${heatIntensity(minutes,max)}">
-              <strong>${minutes ? hours(minutes * 60) : "—"}</strong>
-              <small>${minutes ? `${num(minutes)} min` : "sem registro"}</small>
-            </div>
-          `).join("")}
-        `).join("")}
-      </div>
-      <div class="heatmap-legend"><span>menos</span><span class="heatmap-legend-swatch"></span><span>mais tempo</span></div>
-    `;
+    const el=$(id); if(!el)return;
+    const end=new Date(state.bounds.end); end.setHours(23,59,59,999);
+    const start=new Date(end); start.setDate(start.getDate()-83); start.setHours(0,0,0,0);
+    const days=[]; const values=new Map();
+    for(let i=0;i<84;i++){const d=new Date(start);d.setDate(start.getDate()+i);days.push(d)}
+    for(const row of sessions||[]){const d=new Date(row.started_at);if(Number.isNaN(d.getTime())||d<start||d>end)continue;const key=d.toISOString().slice(0,10);values.set(key,(values.get(key)||0)+Number(row.duration_seconds||0)/60)}
+    const max=Math.max(1,...values.values()); const weeks=12;
+    const monthLabels=Array(weeks).fill("");
+    days.forEach((d,i)=>{if(i%7===0)monthLabels[Math.floor(i/7)]=new Intl.DateTimeFormat("pt-BR",{month:"short"}).format(d).replace(".","")});
+    const rows=["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
+    el.innerHTML='<div class="activity-heatmap"><div class="activity-months"><span></span>'+monthLabels.map(x=>'<span>'+x+'</span>').join("")+'</div><div class="activity-grid">'+rows.map((label,ri)=>'<span class="activity-day">'+label+'</span>'+Array.from({length:weeks},(_,wi)=>{const d=days[wi*7+ri];const key=d?.toISOString().slice(0,10);const v=key?(values.get(key)||0):0;const level=v?Math.max(1,Math.min(5,Math.ceil(v/max*5))):0;return '<i class="activity-square level-'+level+'" title="'+(d?fmtDate(d):"")+(v?' · '+Math.round(v)+' min':'')+'"></i>'}).join("")).join("")+'</div><div class="activity-legend"><span>Menos atividade</span>'+[0,1,2,3,4,5].map(x=>'<i class="activity-square level-'+x+'"></i>').join("")+'<span>Mais atividade</span></div></div>';
   }
 
   function renderQuestionAreaWeekHeatmap(id, attempts) {
