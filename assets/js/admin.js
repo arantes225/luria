@@ -2544,19 +2544,123 @@
     $("admin-qf-review-import-dialog")?.showModal();
   }
 
+  function normalizeQuestionFactoryImportPayload(rawText) {
+    let source = String(rawText || "").trim();
+
+    // Accept JSON copied directly from ChatGPT/Perplexity code blocks.
+    source = source
+      .replace(/^\`\`\`(?:json)?\\s*/i, "")
+      .replace(/\\s*\`\`\`$/i, "")
+      .trim();
+
+    let payload = JSON.parse(source);
+
+    if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+      throw new Error("Informe um objeto JSON.");
+    }
+
+    // Some assistants wrap the requested artifact in payload/data/result.
+    const hasFactoryShape = value =>
+      value
+      && typeof value === "object"
+      && !Array.isArray(value)
+      && (
+        value.review_stage
+        || value.stage
+        || value.stage_metrics
+        || value.questions
+        || value.reviews
+        || value.initial_reviews
+        || value.adjudication
+        || value.correction
+      );
+
+    if (!hasFactoryShape(payload)) {
+      for (const key of ["payload", "data", "result"]) {
+        if (hasFactoryShape(payload[key])) {
+          payload = payload[key];
+          break;
+        }
+      }
+    }
+
+    payload = { ...payload };
+
+    // The factory currently uses schema 2.0. Outputs produced by older prompts
+    // often omit the field even though their structure is already compatible.
+    if (!payload.schema_version) {
+      payload.schema_version = "2.0";
+    }
+
+    if (!payload.review_stage && payload.stage) {
+      payload.review_stage = payload.stage;
+    }
+
+    if (!Array.isArray(payload.reviews) && Array.isArray(payload.audits)) {
+      payload.reviews = payload.audits;
+    }
+
+    const parseCodeNumber = (value, prefix) => {
+      const match = String(value || "").match(new RegExp(prefix + "(\\\\d+)", "i"));
+      return match ? Number(match[1]) : null;
+    };
+
+    let batchNumber = Number(
+      payload.batch_number
+      ?? payload.batch?.batch_number
+      ?? payload.scope?.batch_number
+      ?? parseCodeNumber(payload.batch_code, "L")
+    );
+    let blockNumber = Number(
+      payload.block_number
+      ?? payload.batch?.block_number
+      ?? payload.scope?.block_number
+      ?? parseCodeNumber(payload.block_code, "B")
+    );
+
+    if (!Number.isFinite(batchNumber) || batchNumber <= 0) {
+      batchNumber = Number(state.qfReviewImportBatch);
+      if (Number.isFinite(batchNumber) && batchNumber > 0) {
+        payload.batch_number = batchNumber;
+      }
+    }
+
+    if (!Number.isFinite(blockNumber) || blockNumber <= 0) {
+      blockNumber = Number(state.qfReviewImportBlock);
+      if (Number.isFinite(blockNumber) && blockNumber > 0) {
+        payload.block_number = blockNumber;
+      }
+    }
+
+    // If the assistant omitted the stage, use the stage the selected block is
+    // currently expecting. This prevents a valid audit from being rejected
+    // before it even reaches Supabase.
+    if (!payload.review_stage && Number.isFinite(batchNumber) && Number.isFinite(blockNumber)) {
+      const tracker = Array.isArray(state.qfBlockTracker)
+        ? state.qfBlockTracker.find(
+            row =>
+              Number(row.batch_number) === batchNumber
+              && Number(row.block_number) === blockNumber
+          )
+        : null;
+
+      if (tracker?.next_stage) {
+        payload.review_stage = tracker.next_stage;
+      }
+    }
+
+    return payload;
+  }
+
   async function submitReviewImport() {
     const box = $("admin-qf-review-import-json");
     const message = $("admin-qf-review-import-message");
     let payload;
-    try {
-      payload = JSON.parse(box?.value || "");
-    } catch {
-      if (message) message.textContent = "JSON inválido.";
-      return;
-    }
 
-    if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
-      if (message) message.textContent = "Informe um objeto JSON.";
+    try {
+      payload = normalizeQuestionFactoryImportPayload(box?.value || "");
+    } catch (error) {
+      if (message) message.textContent = error?.message || "JSON inválido.";
       return;
     }
     if (state.qfReviewImportMode === "metrics") {
