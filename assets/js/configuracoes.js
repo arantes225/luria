@@ -940,41 +940,97 @@ function refreshQuickAccessAddress() {
     : "Defina um nome de usuário válido no perfil.";
 }
 
+async function confirmCurrentPassword(password, statusId) {
+  const email = settingsUser?.email || "";
+  if (!password) {
+    setAccountStatus(statusId, "Digite sua senha atual para confirmar sua identidade.", "error");
+    return false;
+  }
+  if (!email) {
+    setAccountStatus(statusId, "Não foi possível identificar o e-mail atual da conta.", "error");
+    return false;
+  }
+
+  setAccountStatus(statusId, "Confirmando sua identidade...");
+  const { data, error } = await settingsSb.auth.signInWithPassword({ email, password });
+  if (error || data?.user?.id !== settingsUser.id) {
+    setAccountStatus(statusId, "Senha atual incorreta.", "error");
+    return false;
+  }
+  return true;
+}
+
 async function saveAccountEmail() {
   const button = document.getElementById("save-account-email");
   const email = document.getElementById("account-email")?.value.trim() || "";
+  const password = document.getElementById("account-email-current-password")?.value || "";
+
   if (!email || !email.includes("@")) {
     setAccountStatus("account-email-status", "Digite um e-mail válido.", "error");
     return;
   }
+  if (email.toLowerCase() === String(settingsUser?.email || "").toLowerCase()) {
+    setAccountStatus("account-email-status", "Esse já é o e-mail atual da conta.", "error");
+    return;
+  }
+
   button.disabled = true;
-  setAccountStatus("account-email-status", "Solicitando alteração...");
+  const confirmed = await confirmCurrentPassword(password, "account-email-status");
+  if (!confirmed) {
+    button.disabled = false;
+    return;
+  }
+
+  setAccountStatus("account-email-status", "Enviando confirmação da troca...");
   const { error } = await settingsSb.auth.updateUser({ email });
   button.disabled = false;
+
   if (error) {
     setAccountStatus("account-email-status", `Não foi possível alterar: ${error.message}`, "error");
     return;
   }
-  setAccountStatus("account-email-status", "Confirmação enviada. Verifique o novo e-mail.", "success");
+
+  document.getElementById("account-email-current-password").value = "";
+  setAccountStatus(
+    "account-email-status",
+    "Pedido enviado. A troca só entra em vigor depois da confirmação por e-mail.",
+    "success"
+  );
 }
 
 async function saveAccountPhone() {
   const button = document.getElementById("save-account-phone");
   const phoneInput = document.getElementById("account-phone");
   const phone = normalizePhone(phoneInput?.value);
+  const password = document.getElementById("account-phone-current-password")?.value || "";
+
   if (!/^\+[1-9]\d{7,14}$/.test(phone)) {
     setAccountStatus("account-phone-status", "Digite o telefone com DDD; o país será +55 quando não informado.", "error");
     return;
   }
+  if (phone === normalizePhone(settingsUser?.phone || "")) {
+    setAccountStatus("account-phone-status", "Esse já é o telefone atual da conta.", "error");
+    return;
+  }
+
   if (phoneInput) phoneInput.value = phone;
   button.disabled = true;
+  const confirmed = await confirmCurrentPassword(password, "account-phone-status");
+  if (!confirmed) {
+    button.disabled = false;
+    return;
+  }
+
   setAccountStatus("account-phone-status", "Enviando código de confirmação...");
   const { error } = await settingsSb.auth.updateUser({ phone });
   button.disabled = false;
+
   if (error) {
     setAccountStatus("account-phone-status", `Não foi possível alterar: ${error.message}`, "error");
     return;
   }
+
+  document.getElementById("account-phone-current-password").value = "";
   setAccountStatus("account-phone-status", "Código enviado por SMS. Digite-o abaixo para confirmar.", "success");
 }
 
