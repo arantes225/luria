@@ -89,9 +89,12 @@
 
   function activity(item, action = true) {
     const label = typeof kindMeta === "function" ? kindMeta(item.kind).label : "Atividade";
-    const href = typeof activityCanStart === "function" && activityCanStart(item)
-      ? buildAmbientacaoUrl(item)
-      : item.kind === "exam" || item.kind === "registration_deadline" ? "/editais/" : "/cronograma/";
+    const href =
+      item.kind === "exam" || item.kind === "registration_deadline"
+        ? "/editais/"
+        : item.kind === "lesson"
+          ? "/caderno/"
+          : "/cronograma/";
     const area = item.area ? `<span class="dl-chip">${escape(item.area)}</span>` : "";
     return `<li class="dl-activity"><span class="dl-activity-date">${escape(shortDate(item.activity_date))}</span><span class="dl-activity-dot" aria-hidden="true"></span><div class="dl-activity-info"><strong>${escape(item.title || label)}</strong><small>${escape(label)} ${area}</small></div>${action ? `<a class="dl-start" href="${escape(href)}" aria-label="Abrir ${escape(item.title || label)}">▶ <span>Abrir</span></a>` : ""}</li>`;
   }
@@ -215,9 +218,10 @@
   }
 
   function dashboard5ActivityHref(item) {
-    return item && typeof activityCanStart === "function" && activityCanStart(item)
-      ? buildAmbientacaoUrl(item)
-      : "/cronograma/";
+    if (!item) return "/cronograma/";
+    if (item.kind === "exam" || item.kind === "registration_deadline") return "/editais/";
+    if (item.kind === "lesson") return "/caderno/";
+    return "/cronograma/";
   }
 
   function layout5(data) {
@@ -325,7 +329,9 @@
       if (!root.innerHTML.trim()) {
         root.innerHTML = '<div class="dl5-shell"><div class="dl5-hero"><div><h2>Carregando Dashboard…</h2><p>Atualizando seus dados.</p></div></div></div>';
       }
-      setTimeout(() => schedule(), 120);
+      setTimeout(() => {
+        if (root.dataset.rendered !== "true") schedule();
+      }, 120);
     }
   }
   function schedule() { if (!frame) frame = requestAnimationFrame(render); }
