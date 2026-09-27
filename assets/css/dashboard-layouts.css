@@ -1716,9 +1716,9 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar > .dl-avatar{
     min-height:0!important;
     display:grid!important;
     grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
-    grid-template-rows:112px 220px 164px!important;
+    grid-template-rows:112px 280px 164px!important;
     column-gap:16px!important;
-    row-gap:10px!important;
+    row-gap:14px!important;
     align-content:start!important;
     overflow:visible!important;
   }
