@@ -856,7 +856,10 @@
       { label:"Revisões de flashcards", value:num(m.flashReviews.length), helper:compare(m.flashReviews.length,m.prevFlashReviews.length), progress:Math.min(100,m.flashReviews.length/1500*100) },
       { label:"Retenção dos flashcards", value:percent(m.retention,1), helper:`${m.reviewedCards.length} cards estimados`, progress:m.retention },
       { label:"Pulos do Gato ativos", value:num(m.err.length), helper:`${m.overdueErr} atrasados`, progress:pct(m.err.length,Math.max(1,state.static.errors.length)) },
-      { label:"Ofensiva", value:`${currentStreak()} d`, helper:`recorde ${longestStreak()} dias`, progress:pct(currentStreak(),Math.max(1,longestStreak())) }
+      { label:"Ofensiva", value:`${currentStreak()} d`, helper:`recorde ${longestStreak()} dias`, progress:pct(currentStreak(),Math.max(1,longestStreak())) },
+      { label:"Aulas no período", value:num(m.donePeriod), helper:`${m.plannedDone.length} previstas concluídas`, progress:m.adherence },
+      { label:"Simulados concluídos", value:num(m.completedSets), helper:"no período selecionado", progress:Math.min(100,m.completedSets*20) },
+      { label:"Revisões teóricas", value:num(m.doneReviews.length), helper:`${m.scheduledReviews.length} agendadas`, progress:m.reviewRate }
     ]);
 
     renderMetricStrip("general-habit-metrics", []);
