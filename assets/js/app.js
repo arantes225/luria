@@ -3146,6 +3146,7 @@ function ensureNotificationCenter() {
       >L</button>
       <div id="luria-profile-menu" class="luria-profile-menu" hidden>
         <a href="/configuracoes/#perfil">Perfil</a>
+        <button type="button" data-restart-onboarding>Refazer onboarding</button>
         <a href="/configuracoes/">Configurações</a>
         <button id="luria-profile-logout" type="button">Sair</button>
       </div>
