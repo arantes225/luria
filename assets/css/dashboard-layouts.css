@@ -556,3 +556,24 @@ body[data-dashboard-layout="4"] .page{
   position:relative;
   z-index:0;
 }
+
+
+/* Dashboard Estudos — espaçamento sino/avatar e avatar maior. */
+body[data-dashboard-layout="1"] .topbar .luria-notifications,
+body[data-dashboard-layout="2"] .topbar .luria-notifications,
+body[data-dashboard-layout="3"] .topbar .luria-notifications,
+body[data-dashboard-layout="4"] .topbar .luria-notifications{
+  margin-right:8px!important;
+}
+
+body[data-dashboard-layout="1"] .dl-account .dl-avatar,
+body[data-dashboard-layout="2"] .dl-account .dl-avatar,
+body[data-dashboard-layout="3"] .dl-account .dl-avatar,
+body[data-dashboard-layout="4"] .dl-account .dl-avatar{
+  width:44px!important;
+  height:44px!important;
+  min-width:44px!important;
+  min-height:44px!important;
+  flex:0 0 44px!important;
+  font-size:15px!important;
+}
