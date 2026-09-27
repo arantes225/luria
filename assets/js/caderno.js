@@ -14307,36 +14307,22 @@ function filteredLibraryEntries() {
 
 
 function renderLibrary() {
-  const list = document.getElementById("notebook-library-list");
-  if (!list) return;
-  const entries = filteredLibraryEntries();
-  if (!entries.length) {
-    list.innerHTML = '<div class="notebook-empty-small">'+(notebookState.librarySearch ? "Nenhum caderno encontrado." : "Sua biblioteca ainda está vazia.")+'</div>';
-    updateLibraryActions(); return;
-  }
-  const groups = new Map();
-  entries.forEach(entry => { const area=entry.area||"Sem área"; if(!groups.has(area)) groups.set(area,[]); groups.get(area).push(entry); });
-  const areaIcon = area => { const a=String(area||"").toLowerCase(),base='viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"'; if(/cirurg/.test(a))return '<svg '+base+'><path d="m5 19 11-11 3 3L8 22H5v-3Z"/><path d="m14 10 3 3"/></svg>'; if(/pediatr/.test(a))return '<svg '+base+'><path d="M12 21s-8-4.5-8-11a4 4 0 0 1 7-2.6A4 4 0 0 1 18 10c0 6.5-6 11-6 11Z"/></svg>'; if(/gine|obst/.test(a))return '<svg '+base+'><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>'; if(/prevent|saúde/.test(a))return '<svg '+base+'><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z"/></svg>'; return '<svg '+base+'><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>'; };
-  list.innerHTML = Array.from(groups.entries()).map(([area,items]) => `
-    <section class="notebook-area-shelf">
-      <header class="notebook-area-shelf-head">
-        <span class="notebook-area-shelf-icon">${areaIcon(area)}</span>
-        <div><strong>${escapeHtml(area)}</strong><small>${items.length} caderno${items.length===1?"":"s"}</small></div>
-        <button type="button" data-notebook-area="${escapeHtml(area)}">Ver todos →</button>
-      </header>
-      <div class="notebook-book-grid">
-        ${items.map(entry=>`
-          <article class="notebook-book-card ${entry.note.is_shared?"notebook-shared-note":""}">
-            <div class="notebook-book-top"><span class="notebook-book-icon">${areaIcon(entry.area)}</span><span class="notebook-book-menu">☆ ···</span></div>
-            <h3>${escapeHtml(entry.title)}</h3>
-            <p>${escapeHtml(entry.area)} · ${escapeHtml(formatDate(entry.date)||"Anotação LURIA")}</p>
-            <div class="notebook-book-meta"><span><b>${entry.note.topic_id?"Aula":"Livre"}</b><small>tipo</small></span><span><b>${entry.note.is_shared?"Sim":"Não"}</b><small>compart.</small></span></div>
-            <button class="notebook-book-open" type="button" data-open-note="${escapeHtml(entry.note.id)}" aria-label="Abrir ${escapeHtml(entry.title)}"></button>
-          </article>`).join("")}
-      </div>
-    </section>`).join("");
-  list.querySelectorAll("[data-open-note]").forEach(button=>button.addEventListener("click",()=>{const note=noteById(button.dataset.openNote);if(!note)return;if(note.topic_id&&!note.is_shared)openTopic(note.topic_id);else openFreeNote(note.id)}));
-  list.querySelectorAll("[data-notebook-area]").forEach(button=>button.addEventListener("click",()=>{notebookState.libraryAreaFilter=button.dataset.notebookArea;const sel=document.getElementById("notebook-library-area-filter");if(sel)sel.value=button.dataset.notebookArea;renderLibrary()}));
+  const list=document.getElementById("notebook-library-list"); if(!list)return;
+  const real=filteredLibraryEntries();
+  const seeds=[
+    ["Clínica Médica","Cardiologia"],["Clínica Médica","Pneumologia"],["Clínica Médica","Gastroenterologia"],
+    ["Cirurgia Geral","Abdômen Agudo"],["Cirurgia Geral","Trauma"],["Cirurgia Geral","Perioperatório"],
+    ["Pediatria","Crescimento e Desenvolvimento"],["Pediatria","Doenças Exantemáticas"],["Pediatria","Puericultura"],
+    ["Ginecologia e Obstetrícia","Pré-natal"],["Ginecologia e Obstetrícia","Contracepção"],["Ginecologia e Obstetrícia","Puerpério"],
+    ["Preventiva","SUS"],["Preventiva","Epidemiologia"],["Preventiva","Atenção Primária"]
+  ].map(([area,title],i)=>({area,title,date:"",placeholder:true,note:{id:"demo-"+i,topic_id:null,is_shared:false}}));
+  const existing=new Set(real.map(e=>(e.area||"")+"|||"+(e.title||"")));
+  const entries=[...real,...seeds.filter(e=>!existing.has(e.area+"|||"+e.title))];
+  const groups=new Map(); entries.forEach(e=>{const a=e.area||"Sem área";if(!groups.has(a))groups.set(a,[]);groups.get(a).push(e)});
+  const areaIcon=area=>{const a=String(area||"").toLowerCase(),base='viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';if(/cl[ií]nica|cardio/.test(a))return '<svg '+base+'><path d="M4 13h4l2-5 3 10 2-5h5"/><path d="M12 21C6 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-3 7.5-9 11.5Z"/></svg>';if(/cirurg/.test(a))return '<svg '+base+'><path d="m5 19 11-11 3 3L8 22H5v-3Z"/><path d="m14 10 3 3"/></svg>';if(/pediatr/.test(a))return '<svg '+base+'><path d="M12 21s-8-4.5-8-11a4 4 0 0 1 7-2.6A4 4 0 0 1 18 10c0 6.5-6 11-6 11Z"/></svg>';if(/gine|obst/.test(a))return '<svg '+base+'><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>';if(/prevent/.test(a))return '<svg '+base+'><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z"/></svg>';return '<svg '+base+'><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>'};
+  list.innerHTML=[...groups].map(([area,items])=>'<section class="notebook-area-shelf"><header class="notebook-area-shelf-head"><span class="notebook-area-shelf-icon">'+areaIcon(area)+'</span><div><strong>'+escapeHtml(area)+'</strong><small>'+items.length+' cadernos</small></div><button type="button" data-notebook-area="'+escapeHtml(area)+'">Ver todos →</button></header><div class="notebook-book-grid">'+items.map(e=>'<article class="notebook-book-card '+(e.placeholder?'notebook-placeholder-card':'')+'"><div class="notebook-book-top"><span class="notebook-book-icon">'+areaIcon(e.area)+'</span><span class="notebook-book-menu">'+(e.placeholder?'':'☆ ···')+'</span></div><h3>'+escapeHtml(e.title)+'</h3><p>'+escapeHtml(e.area)+' · '+(e.placeholder?'Caderno vazio':escapeHtml(formatDate(e.date)||"Anotação LURIA"))+'</p><div class="notebook-book-meta"><span><b>'+(e.placeholder?'0':'1')+'</b><small>páginas</small></span><span><b>'+(e.placeholder?'Vazio':(e.note.topic_id?"Aula":"Livre"))+'</b><small>status</small></span></div>'+(e.placeholder?'<span class="notebook-demo-badge">Estrutura inicial</span>':'<button class="notebook-book-open" type="button" data-open-note="'+escapeHtml(e.note.id)+'" aria-label="Abrir '+escapeHtml(e.title)+'"></button>')+'</article>').join("")+'</div></section>').join("");
+  list.querySelectorAll("[data-open-note]").forEach(b=>b.addEventListener("click",()=>{const note=noteById(b.dataset.openNote);if(!note)return;if(note.topic_id&&!note.is_shared)openTopic(note.topic_id);else openFreeNote(note.id)}));
+  list.querySelectorAll("[data-notebook-area]").forEach(b=>b.addEventListener("click",()=>{notebookState.libraryAreaFilter=b.dataset.notebookArea;const sel=document.getElementById("notebook-library-area-filter");if(sel)sel.value=b.dataset.notebookArea;renderLibrary()}));
   updateLibraryActions();
 }
 
