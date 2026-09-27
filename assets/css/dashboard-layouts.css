@@ -667,3 +667,61 @@ body[data-dashboard-layout="4"] .dl-account .dl-avatar{
     animation:none;
   }
 }
+
+
+/* Dashboard Estudos — fim da rolagem colado ao último callout + background contínuo. */
+body[data-dashboard-layout="1"] .main,
+body[data-dashboard-layout="2"] .main,
+body[data-dashboard-layout="3"] .main,
+body[data-dashboard-layout="4"] .main{
+  padding-bottom:16px!important;
+  overscroll-behavior-y:none!important;
+  background-color:var(--bg)!important;
+  background-image:
+    var(--luria-pattern-image),
+    var(--luria-pattern-image)!important;
+  background-repeat:repeat,repeat!important;
+  background-size:
+    var(--luria-pattern-size) var(--luria-pattern-size),
+    var(--luria-pattern-size) var(--luria-pattern-size)!important;
+  background-position:
+    0 0,
+    calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
+}
+
+body[data-dashboard-layout="1"] #dashboard-alternative,
+body[data-dashboard-layout="2"] #dashboard-alternative,
+body[data-dashboard-layout="3"] #dashboard-alternative,
+body[data-dashboard-layout="4"] #dashboard-alternative{
+  padding-bottom:0!important;
+}
+
+/* Mantém apenas um respiro equivalente ao gap entre os callouts. */
+body[data-dashboard-layout="1"] .dl-grid,
+body[data-dashboard-layout="2"] .dl-grid,
+body[data-dashboard-layout="3"] .dl-grid,
+body[data-dashboard-layout="4"] .dl-grid{
+  margin-bottom:0!important;
+}
+
+/* Evita a faixa sem padrão no fim durante o bounce/scroll do iOS. */
+html:has(body[data-dashboard-layout="1"]),
+html:has(body[data-dashboard-layout="2"]),
+html:has(body[data-dashboard-layout="3"]),
+html:has(body[data-dashboard-layout="4"]),
+body[data-dashboard-layout="1"],
+body[data-dashboard-layout="2"],
+body[data-dashboard-layout="3"],
+body[data-dashboard-layout="4"]{
+  background-color:var(--bg)!important;
+  background-image:
+    var(--luria-pattern-image),
+    var(--luria-pattern-image)!important;
+  background-repeat:repeat,repeat!important;
+  background-size:
+    var(--luria-pattern-size) var(--luria-pattern-size),
+    var(--luria-pattern-size) var(--luria-pattern-size)!important;
+  background-position:
+    0 0,
+    calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
+}
