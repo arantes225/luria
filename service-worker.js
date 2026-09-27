@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v143-trabalho-financeiro";
+const CACHE_VERSION = "luria-pwa-v144-trabalho-tools";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -24,6 +24,8 @@ const APP_SHELL = [
   "/trabalho/passometro/",
   "/trabalho/pcr/",
   "/trabalho/financeiro/",
+  "/trabalho/calculadora/",
+  "/trabalho/bulario/",
   "/plantao/",
   "/assets/js/plantao.js?v=9.10-luriazap-area-filter-fix",
   "/assets/css/style.css?v=16.6",
@@ -33,7 +35,7 @@ const APP_SHELL = [
   "/assets/css/plantao-pwa-game.css?v=7-no-patient-breath",
   "/assets/css/luria-brand-v5.css",
   "/assets/js/luria-brand-v5.js?v=12",
-  "/assets/js/app.js?v=17.13-financeiro",
+  "/assets/js/app.js?v=17.14-tools",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
