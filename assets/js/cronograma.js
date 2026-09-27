@@ -27,6 +27,9 @@ const scheduleState = {
   eventDateFrom: "",
   eventDateTo: "",
   editingEventId: null,
+  agendaScope: "today",
+  agendaFilter: "all",
+  agendaSelected: new Set(),
 
   theoryStudyWeekdays:
     [1, 3, 5],
@@ -4698,35 +4701,37 @@ function renderAgendaSide() {
     + '</div></div>';
 
   if (list) {
-    const topicRows = todayTopics.map(topic => {
-      const kind = kindClass(topic.type || "lesson");
-      const href = todayHref(kind, topic.id);
-      return '<div class="agenda-today-row kind-'+kind+'">'
-        + '<a class="agenda-today-open" data-start-study-topic="'+escapeScheduleHtml(topic.id)+'" href="'+href+'">'
-        + '<span class="agenda-today-main"><span class="agenda-today-time">Hoje</span><strong>'+escapeScheduleHtml(topic.theme)+'</strong><small>'+escapeScheduleHtml(topicMeta(topic)||"Aula")+'</small></span>'
-        + '<span class="agenda-today-kind">'+escapeScheduleHtml(kind === "review" ? "Revisão" : kind === "questions" ? "Questões" : kind === "flashcards" ? "Flashcards" : "Aula")+'</span>'
-        + '</a>'+todayMenu("topic",topic.id,topic.scheduled_date||topic.original_date)+'</div>';
-    });
-
-    const eventRows = todayEvents.map(event => {
-      const kind = kindClass(event.event_type || event.title);
-      const time = event.event_time ? String(event.event_time).slice(0,5) : "Hoje";
-      return '<div class="agenda-today-row kind-'+kind+'">'
-        + '<a class="agenda-today-open" href="'+todayHref(kind,event.id)+'">'
-        + '<span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(time)+'</span><strong>'+escapeScheduleHtml(event.title)+'</strong><small>'+escapeScheduleHtml([event.area,event.materia].filter(Boolean).join(" · ") || scheduleKindLabel(event.event_type||"other"))+'</small></span>'
-        + '<span class="agenda-today-kind">'+escapeScheduleHtml(kind === "questions" ? "Questões" : kind === "flashcards" ? "Flashcards" : scheduleKindLabel(event.event_type||"other"))+'</span>'
-        + '</a>'+todayMenu("event",event.id,event.event_date)+'</div>';
-    });
-
-    const errorRows = todayErrors.map(item => {
-      const title = item.theme || item.materia || item.area || "Caderno de erros";
-      return '<div class="agenda-today-row kind-errors">'
-        + '<a class="agenda-today-open" href="/caderno-erros/"><span class="agenda-today-main"><span class="agenda-today-time">Hoje</span><strong>'+escapeScheduleHtml(title)+'</strong><small>'+escapeScheduleHtml([item.area,item.materia].filter(Boolean).join(" · ") || "Revisão do caderno de erros")+'</small></span><span class="agenda-today-kind">Caderno de erros</span></a>'
-        + todayMenu("error",item.id,item.due_date)+'</div>';
-    });
-
-    const rows = [...topicRows, ...errorRows, ...eventRows];
-    list.innerHTML = rows.length ? rows.join("") : '<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
+    const sourceItems=[];
+    const addDateItems=(date)=>{
+      const iso=toISODateSchedule(date);
+      topicsOnDate(date).forEach(topic=>sourceItems.push({source:"topic",id:topic.id,date:topic.scheduled_date||topic.original_date||iso,kind:kindClass(topic.type||"lesson"),title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(kindClass(topic.type||"lesson"),topic.id),time:"Hoje"}));
+      eventsOnDate(date).forEach(event=>sourceItems.push({source:"event",id:event.id,date:event.event_date||iso,kind:kindClass(event.event_type||event.title),title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:false,href:todayHref(kindClass(event.event_type||event.title),event.id),time:event.event_time?String(event.event_time).slice(0,5):"Hoje"}));
+      errorItemsOnDate(date).forEach(item=>sourceItems.push({source:"error",id:item.id,date:item.due_date||iso,kind:"errors",title:item.theme||item.materia||item.area||"Caderno de erros",meta:[item.area,item.materia].filter(Boolean).join(" · ")||"Revisão do caderno de erros",completed:false,href:"/caderno-erros/",time:"Hoje"}));
+    };
+    if(scheduleState.agendaScope==="today") addDateItems(today);
+    else {
+      const seen=new Set();
+      scheduleState.topics.forEach(t=>{const d=t.scheduled_date||t.original_date;if(d)seen.add(d)});
+      scheduleState.events.forEach(e=>{if(e.event_date)seen.add(e.event_date)});
+      scheduleState.errorItems.forEach(e=>{if(e.due_date)seen.add(e.due_date)});
+      [...seen].sort().forEach(iso=>{const d=parseISODateSchedule(iso);if(d)addDateItems(d)});
+    }
+    const visible=sourceItems.filter(item=>scheduleState.agendaFilter==="all"||item.kind===scheduleState.agendaFilter);
+    const labelForKind=k=>({lesson:"Aula",questions:"Questões",review:"Revisão",flashcards:"Flashcards",errors:"Caderno de erros",simulation:"Simulado",other:"Outro"}[k]||"Atividade");
+    const row=item=>{
+      const key=item.source+":"+item.id, selected=scheduleState.agendaSelected.has(key);
+      const check=scheduleState.agendaScope==="all"?'<label class="agenda-bulk-check-wrap"><input class="agenda-bulk-check" type="checkbox" data-agenda-select="'+escapeScheduleHtml(key)+'" '+(selected?"checked":"")+'></label>':"";
+      return '<div class="agenda-today-row kind-'+item.kind+(scheduleState.agendaScope==="all"?" bulk-mode":"")+'">'+check
+        +'<a class="agenda-today-open" '+(item.source==="topic"?'data-start-study-topic="'+escapeScheduleHtml(item.id)+'" ':"")+'href="'+item.href+'"><span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(item.time)+'</span><strong>'+escapeScheduleHtml(item.title)+'</strong><small>'+escapeScheduleHtml(item.meta)+'</small></span><span class="agenda-today-kind">'+escapeScheduleHtml(labelForKind(item.kind))+'</span></a>'
+        +todayMenu(item.source,item.id,item.date)+'</div>';
+    };
+    if(scheduleState.agendaScope==="all"){
+      const groups=new Map(); visible.forEach(item=>{if(!groups.has(item.date))groups.set(item.date,[]);groups.get(item.date).push(item)});
+      list.innerHTML=[...groups.entries()].map(([date,items])=>'<section class="agenda-date-group"><div class="agenda-date-group-head">'+new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(parseISODateSchedule(date))+'</div>'+items.map(row).join("")+'</section>').join("")||'<p class="agenda-empty" style="padding:10px">Nenhuma atividade encontrada.</p>';
+    } else list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
+    const bulk=document.getElementById("agenda-bulk-tools"); if(bulk) bulk.hidden=scheduleState.agendaScope!=="all";
+    const title=document.getElementById("agenda-activities-title"); if(title) title.textContent=scheduleState.agendaScope==="all"?"Todas as atividades":"Atividades de hoje";
+    const countEl=document.getElementById("agenda-selected-count"); if(countEl) countEl.textContent=scheduleState.agendaSelected.size+" selecionadas";
   }
 
   const weekStart = startOfWeekSchedule(today);
@@ -8478,6 +8483,30 @@ function wireDynamicInteractions() {
       await scheduleTopic(topicId, date);
     });
   });
+
+  document.querySelectorAll("[data-agenda-scope]").forEach(button=>button.addEventListener("click",()=>{
+    scheduleState.agendaScope=button.dataset.agendaScope; scheduleState.agendaSelected.clear();
+    document.querySelectorAll("[data-agenda-scope]").forEach(b=>b.classList.toggle("active",b===button)); renderAgendaSide(); wireDynamicInteractions();
+  }));
+  const agendaFilter=document.getElementById("agenda-activity-filter");
+  if(agendaFilter){agendaFilter.value=scheduleState.agendaFilter;agendaFilter.onchange=()=>{scheduleState.agendaFilter=agendaFilter.value;scheduleState.agendaSelected.clear();renderAgendaSide();wireDynamicInteractions();};}
+  document.querySelectorAll("[data-agenda-select]").forEach(input=>input.addEventListener("change",()=>{input.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect);const el=document.getElementById("agenda-selected-count");if(el)el.textContent=scheduleState.agendaSelected.size+" selecionadas";}));
+  const selectAll=document.getElementById("agenda-select-all"); if(selectAll) selectAll.onchange=()=>{document.querySelectorAll("[data-agenda-select]").forEach(input=>{input.checked=selectAll.checked;selectAll.checked?scheduleState.agendaSelected.add(input.dataset.agendaSelect):scheduleState.agendaSelected.delete(input.dataset.agendaSelect)});const el=document.getElementById("agenda-selected-count");if(el)el.textContent=scheduleState.agendaSelected.size+" selecionadas";};
+  const bulkUpdate=async(mode)=>{
+    const keys=[...scheduleState.agendaSelected]; if(!keys.length){window.LuriaDialog?.alert("Selecione pelo menos uma atividade.");return;}
+    const date=document.getElementById("agenda-bulk-date")?.value;
+    if(mode==="date"&&!date){window.LuriaDialog?.alert("Escolha a nova data.");return;}
+    for(const key of keys){const [source,id]=key.split(":");
+      if(mode==="date"){
+        if(source==="topic") await scheduleSb.from("study_topics").update({scheduled_date:date}).eq("id",id).eq("user_id",scheduleState.user.id);
+        if(source==="event") await scheduleSb.from("schedule_events").update({event_date:date}).eq("id",id).eq("user_id",scheduleState.user.id);
+        if(source==="error") await scheduleSb.from("error_notebook").update({due_date:date}).eq("id",id).eq("user_id",scheduleState.user.id);
+      } else if(mode==="complete"&&source==="topic"){await scheduleSb.from("study_topics").update({completed_at:new Date().toISOString()}).eq("id",id).eq("user_id",scheduleState.user.id);}
+    }
+    scheduleState.agendaSelected.clear(); await loadTopics();
+  };
+  const bulkDate=document.getElementById("agenda-bulk-reschedule");if(bulkDate)bulkDate.onclick=()=>bulkUpdate("date");
+  const bulkComplete=document.getElementById("agenda-bulk-complete");if(bulkComplete)bulkComplete.onclick=()=>bulkUpdate("complete");
 
   document.querySelectorAll("[data-today-menu-trigger]").forEach((button) => {
     button.addEventListener("click", (event) => {
