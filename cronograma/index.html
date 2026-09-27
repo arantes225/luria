@@ -2769,6 +2769,22 @@
   .agenda-today-row.bulk-mode{grid-template-columns:30px minmax(0,1fr)!important}.agenda-bulk-check-wrap{display:grid;place-items:center;padding-left:10px}.agenda-bulk-check{width:16px;height:16px;accent-color:var(--accent)}
   @media(max-width:720px){.agenda-today-head{align-items:flex-start!important}.agenda-activity-view-switch{margin-left:auto}.agenda-bulk-tools{margin-left:11px;margin-right:11px}.agenda-bulk-actions{width:100%}.agenda-bulk-actions button{flex:1}.agenda-today-card>.agenda-today-progress{margin-left:11px!important;margin-right:11px!important}}
 
+
+  /* Atividades acompanha a largura da Agenda, sem ocupar a coluna lateral */
+  body:not(.schedule-settings-embed) .agenda-bottom-grid{
+    width:calc(100% - 316px)!important;
+    max-width:calc(100% - 316px)!important;
+    justify-self:start!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-card{
+    width:100%!important;max-width:100%!important;min-width:0!important
+  }
+  @media(max-width:1050px){
+    body:not(.schedule-settings-embed) .agenda-bottom-grid{
+      width:100%!important;max-width:100%!important
+    }
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
