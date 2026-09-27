@@ -743,3 +743,37 @@ body[data-dashboard-layout="4"]{
     0 0,
     calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
 }
+
+
+/* RESTAURAÇÃO — dashboards alternativos usam exatamente o pattern clássico do dashboard original. */
+body[data-page="dashboard"][data-dashboard-layout="1"] .main,
+body[data-page="dashboard"][data-dashboard-layout="2"] .main,
+body[data-page="dashboard"][data-dashboard-layout="3"] .main,
+body[data-page="dashboard"][data-dashboard-layout="4"] .main{
+  background:transparent!important;
+  background-image:none!important;
+}
+
+body[data-page="dashboard"][data-dashboard-layout="1"] .main::before,
+body[data-page="dashboard"][data-dashboard-layout="1"] .main::after,
+body[data-page="dashboard"][data-dashboard-layout="2"] .main::before,
+body[data-page="dashboard"][data-dashboard-layout="2"] .main::after,
+body[data-page="dashboard"][data-dashboard-layout="3"] .main::before,
+body[data-page="dashboard"][data-dashboard-layout="3"] .main::after,
+body[data-page="dashboard"][data-dashboard-layout="4"] .main::before,
+body[data-page="dashboard"][data-dashboard-layout="4"] .main::after{
+  content:none!important;
+  display:none!important;
+  background-image:none!important;
+}
+
+body[data-page="dashboard"][data-dashboard-layout="1"] .page,
+body[data-page="dashboard"][data-dashboard-layout="2"] .page,
+body[data-page="dashboard"][data-dashboard-layout="3"] .page,
+body[data-page="dashboard"][data-dashboard-layout="4"] .page,
+body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative,
+body[data-page="dashboard"][data-dashboard-layout="2"] #dashboard-alternative,
+body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternative,
+body[data-page="dashboard"][data-dashboard-layout="4"] #dashboard-alternative{
+  background:transparent!important;
+}
