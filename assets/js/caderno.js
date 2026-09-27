@@ -3010,18 +3010,24 @@ function setNotebookEditMode(
     );
   }
 
-  if (
-    notebookState.editorEditable
-  ) {
-    requestAnimationFrame(
-      () => {
-        document
-          .getElementById(
-            "notebook-editor"
-          )
-          ?.focus();
+  if (notebookState.editorEditable) {
+    requestAnimationFrame(() => {
+      const toolbar = document.getElementById("notebook-toolbar");
+      if (toolbar) {
+        const top = toolbar.getBoundingClientRect().top + window.scrollY - 12;
+        window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
       }
-    );
+      const editor = document.getElementById("notebook-editor");
+      if (editor) {
+        const range = document.createRange();
+        const selection = window.getSelection();
+        range.selectNodeContents(editor);
+        range.collapse(true);
+        selection?.removeAllRanges();
+        selection?.addRange(range);
+        editor.focus({ preventScroll: true });
+      }
+    });
   }
 }
 
@@ -18121,6 +18127,8 @@ function wireEvents() {
 
 
 
+
+  document.getElementById("notebook-inspector-edit")?.addEventListener("click", () => { setNotebookEditMode(true); });
 
   document.getElementById("notebook-back-library")?.addEventListener("click", async () => {
     setNotebookEditMode(false);
