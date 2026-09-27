@@ -4669,9 +4669,75 @@ function renderAgendaSide() {
   const weekDays = Array.from({length:7},(_,i)=>addDaysSchedule(weekStart,i));
   const totals = weekDays.map(d=>topicsOnDate(d).length+eventsOnDate(d).length);
   const totalEl=document.getElementById("agenda-week-total"), daysEl=document.getElementById("agenda-week-days"), overdueEl=document.getElementById("agenda-week-overdue");
-  if(totalEl) totalEl.textContent=String(totals.reduce((a,b)=>a+b,0));
+  const weekTotal = totals.reduce((a,b)=>a+b,0);
+  if(totalEl) totalEl.textContent=String(weekTotal);
   if(daysEl) daysEl.textContent=String(totals.filter(Boolean).length);
   if(overdueEl) overdueEl.textContent=String(scheduleState.topics.filter(isTopicOverdue).length);
+
+  const weekRange = document.getElementById("agenda-week-range");
+  if (weekRange) {
+    const weekEnd = addDaysSchedule(weekStart, 6);
+    const formatShort = (date) => new Intl.DateTimeFormat("pt-BR", { day:"2-digit", month:"short" }).format(date).replace(".","");
+    weekRange.textContent = formatShort(weekStart) + " – " + formatShort(weekEnd);
+  }
+
+  const weeklyItems = [];
+  weekDays.forEach(date => {
+    topicsOnDate(date).forEach(topic => weeklyItems.push({ type: kindClass(topic.type || topic.theme || "lesson"), completed: Boolean(topic.completed_at) }));
+    eventsOnDate(date).forEach(event => weeklyItems.push({ type: kindClass(event.event_type || event.title || "other"), completed: false }));
+  });
+
+  const distribution = [
+    { key:"lesson", label:"Aulas", color:"var(--accent)" },
+    { key:"review", label:"Revisões", color:"#20b7aa" },
+    { key:"simulation", label:"Simulados", color:"#8b5cf6" },
+    { key:"other", label:"Outros", color:"#f59e0b" }
+  ].map(item => ({ ...item, count: weeklyItems.filter(entry => entry.type === item.key).length }))
+   .filter(item => item.count > 0);
+
+  const distributionTotal = document.getElementById("agenda-distribution-total");
+  if (distributionTotal) distributionTotal.textContent = weekTotal ? String(weekTotal) + " itens" : "0";
+
+  const donut = document.getElementById("agenda-donut");
+  const legend = document.getElementById("agenda-distribution-legend");
+  if (donut && legend) {
+    if (!weekTotal || !distribution.length) {
+      donut.style.background = "conic-gradient(var(--border) 0 100%)";
+      legend.innerHTML = '<span class="agenda-empty">Sem atividades nesta semana.</span>';
+    } else {
+      let cursor = 0;
+      const segments = distribution.map(item => {
+        const start = cursor;
+        cursor += (item.count / weekTotal) * 100;
+        return item.color + " " + start.toFixed(2) + "% " + cursor.toFixed(2) + "%";
+      });
+      donut.style.background = "conic-gradient(" + segments.join(",") + ")";
+      legend.innerHTML = distribution.map(item => {
+        const pct = Math.round((item.count / weekTotal) * 100);
+        return '<div class="agenda-legend-item"><span class="agenda-legend-dot" style="background:'+item.color+'"></span><span>'+escapeScheduleHtml(item.label)+'</span><strong>'+pct+'%</strong></div>';
+      }).join("");
+    }
+  }
+
+  const completedThisWeek = weeklyItems.filter(item => item.completed).length;
+  const pendingThisWeek = Math.max(0, weekTotal - completedThisWeek);
+  const plannedEl = document.getElementById("agenda-goal-planned");
+  const completedEl = document.getElementById("agenda-goal-completed");
+  const pendingEl = document.getElementById("agenda-goal-pending");
+  if (plannedEl) plannedEl.textContent = String(weekTotal);
+  if (completedEl) completedEl.textContent = String(completedThisWeek);
+  if (pendingEl) pendingEl.textContent = String(pendingThisWeek);
+
+  const setGoalBar = (id, value) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const pct = weekTotal ? Math.max(0, Math.min(100, (value / weekTotal) * 100)) : 0;
+    el.style.width = pct.toFixed(1) + "%";
+  };
+  setGoalBar("agenda-goal-planned-bar", weekTotal ? weekTotal : 0);
+  setGoalBar("agenda-goal-completed-bar", completedThisWeek);
+  setGoalBar("agenda-goal-pending-bar", pendingThisWeek);
+
   const next=document.getElementById("agenda-next-list");
   if(next){
     const future=[];
