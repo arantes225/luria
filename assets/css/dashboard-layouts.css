@@ -691,24 +691,13 @@ body[data-dashboard-layout="4"] .dl-account .dl-avatar{
 }
 
 
-/* Dashboard Estudos — fim da rolagem colado ao último callout + background contínuo. */
+/* Dashboard Estudos — acabamento final sem background próprio. */
 body[data-dashboard-layout="1"] .main,
 body[data-dashboard-layout="2"] .main,
 body[data-dashboard-layout="3"] .main,
 body[data-dashboard-layout="4"] .main{
   padding-bottom:16px!important;
   overscroll-behavior-y:none!important;
-  background-color:var(--bg)!important;
-  background-image:
-    var(--luria-pattern-image),
-    var(--luria-pattern-image)!important;
-  background-repeat:repeat,repeat!important;
-  background-size:
-    var(--luria-pattern-size) var(--luria-pattern-size),
-    var(--luria-pattern-size) var(--luria-pattern-size)!important;
-  background-position:
-    0 0,
-    calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
 }
 
 body[data-dashboard-layout="1"] #dashboard-alternative,
@@ -718,7 +707,6 @@ body[data-dashboard-layout="4"] #dashboard-alternative{
   padding-bottom:0!important;
 }
 
-/* Mantém apenas um respiro equivalente ao gap entre os callouts. */
 body[data-dashboard-layout="1"] .dl-grid,
 body[data-dashboard-layout="2"] .dl-grid,
 body[data-dashboard-layout="3"] .dl-grid,
@@ -726,101 +714,20 @@ body[data-dashboard-layout="4"] .dl-grid{
   margin-bottom:0!important;
 }
 
-/* Evita a faixa sem padrão no fim durante o bounce/scroll do iOS. */
-html:has(body[data-dashboard-layout="1"]),
-html:has(body[data-dashboard-layout="2"]),
-html:has(body[data-dashboard-layout="3"]),
-html:has(body[data-dashboard-layout="4"]),
-body[data-dashboard-layout="1"],
-body[data-dashboard-layout="2"],
-body[data-dashboard-layout="3"],
-body[data-dashboard-layout="4"]{
-  background-color:var(--bg)!important;
-  background-image:
-    var(--luria-pattern-image),
-    var(--luria-pattern-image)!important;
-  background-repeat:repeat,repeat!important;
-  background-size:
-    var(--luria-pattern-size) var(--luria-pattern-size),
-    var(--luria-pattern-size) var(--luria-pattern-size)!important;
-  background-position:
-    0 0,
-    calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
-}
-
-
-/* RESTAURAÇÃO — dashboards alternativos usam exatamente o pattern clássico do dashboard original. */
-body[data-page="dashboard"][data-dashboard-layout="1"] .main,
-body[data-page="dashboard"][data-dashboard-layout="2"] .main,
-body[data-page="dashboard"][data-dashboard-layout="3"] .main,
-body[data-page="dashboard"][data-dashboard-layout="4"] .main{
-  background:transparent!important;
-  background-image:none!important;
-}
-
-body[data-page="dashboard"][data-dashboard-layout="1"] .main::before,
-body[data-page="dashboard"][data-dashboard-layout="1"] .main::after,
-body[data-page="dashboard"][data-dashboard-layout="2"] .main::before,
-body[data-page="dashboard"][data-dashboard-layout="2"] .main::after,
-body[data-page="dashboard"][data-dashboard-layout="3"] .main::before,
-body[data-page="dashboard"][data-dashboard-layout="3"] .main::after,
-body[data-page="dashboard"][data-dashboard-layout="4"] .main::before,
-body[data-page="dashboard"][data-dashboard-layout="4"] .main::after{
-  content:none!important;
-  display:none!important;
-  background-image:none!important;
-}
-
-body[data-page="dashboard"][data-dashboard-layout="1"] .page,
-body[data-page="dashboard"][data-dashboard-layout="2"] .page,
-body[data-page="dashboard"][data-dashboard-layout="3"] .page,
-body[data-page="dashboard"][data-dashboard-layout="4"] .page,
-body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative,
-body[data-page="dashboard"][data-dashboard-layout="2"] #dashboard-alternative,
-body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternative,
-body[data-page="dashboard"][data-dashboard-layout="4"] #dashboard-alternative{
-  background:transparent!important;
-}
-
-/* Dashboard layouts: usar EXATAMENTE o pattern global das páginas comuns. */
-body[data-page="dashboard"][data-dashboard-layout] .main::before,
-body[data-page="dashboard"][data-dashboard-layout] .main::after{
-  content:none!important;
-  display:none!important;
-  background-image:none!important;
-}
+/* Nenhum layout alternativo desenha pattern próprio.
+   O fundo é exclusivamente o global de style.css, igual ao Cronograma. */
 body[data-page="dashboard"][data-dashboard-layout] .main,
 body[data-page="dashboard"][data-dashboard-layout] .page,
 body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   background:transparent!important;
-}
-
-
-/* FIX DEFINITIVO — não pintar a logo diretamente no dashboard.
-   O único pattern permitido é o global de style.css, igual ao Cronograma. */
-html:has(body[data-page="dashboard"]),
-body[data-page="dashboard"],
-body[data-page="dashboard"][data-dashboard-layout],
-body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-body[data-page="dashboard"][data-dashboard-layout] .main,
-body[data-page="dashboard"][data-dashboard-layout] .page,
-body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative {
-  background-image: none !important;
+  background-image:none!important;
 }
 
 body[data-page="dashboard"][data-dashboard-layout] .main::before,
 body[data-page="dashboard"][data-dashboard-layout] .main::after,
 body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::before,
-body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::after {
-  content: none !important;
-  display: none !important;
-  background-image: none !important;
-  opacity: 0 !important;
-}
-
-/* Mantém somente a cor base; as logos vêm de body::before/after do style.css. */
-html:has(body[data-page="dashboard"]),
-body[data-page="dashboard"],
-body[data-page="dashboard"][data-dashboard-layout] .main {
-  background-color: var(--bg) !important;
+body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::after{
+  content:none!important;
+  display:none!important;
+  background:none!important;
 }
