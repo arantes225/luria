@@ -51,7 +51,7 @@
     penalties:0, criticalElapsed:0, diagnosis:null, disposition:null, busy:false,
     phoneCases:[], phoneCase:null, phoneSession:null, phoneTurn:0, phoneMode:false, phoneUsedChoices:new Set(),
     filters:{specialty:"",difficulty:""},
-    phoneSearch:"", phoneNewChat:false
+    phoneSearch:"", phoneArea:"", phoneNewChat:false
   };
 
   const PHONE_DRAFT_TTL_MS = 6 * 60 * 60 * 1000;
@@ -200,6 +200,13 @@
         .eq("active",true)
         .order("created_at",{ascending:true});
       state.phoneCases=phoneCasesRes.error ? [] : (phoneCasesRes.data||[]);
+      const areaSelect=$("plantao-phone-area-filter");
+      if(areaSelect){
+        const areas=[...new Set(state.phoneCases.map(item=>String(item.specialty||"").trim()).filter(Boolean))]
+          .sort((a,b)=>a.localeCompare(b,"pt-BR"));
+        areaSelect.innerHTML='<option value="">Todas</option>'+areas.map(area=>`<option value="${esc(area)}">${esc(area)}</option>`).join("");
+        areaSelect.value=state.phoneArea||"";
+      }
       renderPhoneCases();
     }
 
@@ -440,7 +447,9 @@
     const host=$("plantao-phone-case-list");
     if(!host) return;
     const query=normalizeLabel(state.phoneSearch||"");
+    const area=String(state.phoneArea||"");
     const filteredCases=state.phoneCases.filter(item=>{
+      if(area && String(item.specialty||"")!==area) return false;
       if(!query) return true;
       const persona=phonePersona(item);
       return normalizeLabel([
@@ -452,7 +461,7 @@
       return;
     }
     const draft=getPhoneDraft();
-    const draftCase=!query && draft ? state.phoneCases.find(x=>String(x.id)===String(draft.caseId)) : null;
+    const draftCase=!query && !area && draft ? state.phoneCases.find(x=>String(x.id)===String(draft.caseId)) : null;
     const resumeCard=draftCase ? `
       <section class="plantao-phone-resume-card" aria-label="Caso em andamento">
         <div class="plantao-phone-resume-copy">
@@ -748,11 +757,18 @@
     $("plantao-phone-search-toggle")?.setAttribute("aria-expanded","false");
     const input=$("plantao-phone-search");
     if(input) input.value="";
+    const areaSelect=$("plantao-phone-area-filter");
+    if(areaSelect) areaSelect.value="";
     state.phoneSearch="";
+    state.phoneArea="";
     renderPhoneCases();
   });
   $("plantao-phone-search")?.addEventListener("input",event=>{
     state.phoneSearch=event.currentTarget.value||"";
+    renderPhoneCases();
+  });
+  $("plantao-phone-area-filter")?.addEventListener("change",event=>{
+    state.phoneArea=event.currentTarget.value||"";
     renderPhoneCases();
   });
   $("plantao-phone-new-chat")?.addEventListener("click",openPhoneNewConversation);
