@@ -18122,6 +18122,31 @@ function wireEvents() {
 
 
 
+  document.getElementById("notebook-back-library")?.addEventListener("click", async () => {
+    setNotebookEditMode(false);
+    await switchView("library");
+  });
+
+  document.getElementById("notebook-inspector-share")?.addEventListener("click", async () => {
+    try {
+      if (notebookState.editorDirty) await saveCurrentNotebook(true);
+      const current = getCurrentDocument();
+      if (!current?.note?.id) {
+        await saveCurrentNotebook(false);
+      }
+      const noteId = getCurrentDocument()?.note?.id;
+      if (!noteId) {
+        window.LuriaDialog.alert("Salve a anotação antes de compartilhar.");
+        return;
+      }
+      await createNotebookShareLink(noteId);
+    } catch (error) {
+      console.error(error);
+      window.LuriaDialog.alert("Não foi possível compartilhar esta anotação.");
+    }
+  });
+
+
   const emojiToggle =
     document.getElementById(
       "notebook-emoji-toggle"
@@ -18974,7 +18999,7 @@ function wireNotebookEnhancements() {
   const columns=document.getElementById("notebook-columns");
   if(columns) columns.onclick=()=>{restoreEditorSelection();insertHtmlAtCursor('<div class="notebook-two-columns"><div class="notebook-column"><p>Coluna 1</p></div><div class="notebook-column"><p>Coluna 2</p></div></div><p><br></p>');markEditorDirty();refreshNotebookOutline();};
   const paperToggle=document.getElementById("notebook-paper-toggle"), paperMenu=document.getElementById("notebook-paper-menu");
-  if(paperToggle&&paperMenu){paperToggle.onclick=e=>{e.stopPropagation();paperMenu.hidden=!paperMenu.hidden;paperToggle.setAttribute("aria-expanded",paperMenu.hidden?"false":"true")};paperMenu.querySelectorAll("[data-paper-style]").forEach(b=>b.onclick=()=>{applyNotebookPaperStyle(b.dataset.paperStyle);paperMenu.hidden=true;document.getElementById("notebook-inspector-edit")?.addEventListener("click",()=>document.getElementById("notebook-document-edit")?.click());document.getElementById("notebook-inspector-delete")?.addEventListener("click",()=>document.getElementById("notebook-document-delete")?.click());document.getElementById("notebook-inspector-export")?.addEventListener("click",()=>document.getElementById("notebook-library-export")?.click());document.getElementById("notebook-inspector-share")?.addEventListener("click",()=>{const d=getCurrentDocument();if(d?.note?.id)createNotebookShareLink(d.note.id)});document.getElementById("notebook-editor")?.addEventListener("input",refreshNotebookInspector);
+  if(paperToggle&&paperMenu){paperToggle.onclick=e=>{e.stopPropagation();paperMenu.hidden=!paperMenu.hidden;paperToggle.setAttribute("aria-expanded",paperMenu.hidden?"false":"true")};paperMenu.querySelectorAll("[data-paper-style]").forEach(b=>b.onclick=()=>{applyNotebookPaperStyle(b.dataset.paperStyle);paperMenu.hidden=true;document.getElementById("notebook-inspector-edit")?.addEventListener("click",()=>document.getElementById("notebook-document-edit")?.click());document.getElementById("notebook-inspector-delete")?.addEventListener("click",()=>document.getElementById("notebook-document-delete")?.click());document.getElementById("notebook-inspector-export")?.addEventListener("click",()=>document.getElementById("notebook-library-export")?.click());document.getElementById("notebook-editor")?.addEventListener("input",refreshNotebookInspector);
 });}
   restoreNotebookPaperStyle(); refreshNotebookOutline();
 }
