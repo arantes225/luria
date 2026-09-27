@@ -95,3 +95,9 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel
 .flash-add-hub>[data-flash-section="create"]{display:block!important}
 .flash-add-hub>[data-flash-section="create"]>.panel{max-width:none!important;border:1px solid var(--border)!important;border-radius:14px!important;background:var(--surface)!important;padding:20px!important;box-shadow:none!important}
 .flash-add-hub .panel-header h2{font-size:18px!important}.flash-add-hub .panel-header p{font-size:11px!important}
+
+
+/* v23.2 — Decks é somente biblioteca; cabeçalho sobe */
+.flash-library-hero{padding-top:0!important;margin-top:-8px!important}
+.flash-library-hero>div:first-child{width:100%}
+.flash-library-hero-actions{display:none!important}
