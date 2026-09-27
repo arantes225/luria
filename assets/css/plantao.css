@@ -3651,3 +3651,34 @@ body.plantao-phone-mode .sidebar-desktop-toggle{
     display:none!important;
   }
 }
+
+
+/* PWA · monitor ocupa integralmente a área reservada */
+@media(max-width:680px){
+  html.pwa-standalone #plantao-simulator:not([hidden]) .plantao-monitor-dock{
+    width:100%!important;
+    padding:0!important;
+    align-items:stretch!important;
+    overflow:visible!important;
+  }
+
+  html.pwa-standalone #plantao-simulator:not([hidden]) .plantao-bedside .plantao-monitor-dock .plantao-monitor{
+    width:100%!important;
+    max-width:none!important;
+    align-self:stretch!important;
+    margin:0!important;
+    transform:none!important;
+    box-sizing:border-box!important;
+    grid-template-columns:minmax(0,1fr) minmax(54px,.32fr)!important;
+  }
+
+  html.pwa-standalone #plantao-simulator:not([hidden]) .plantao-monitor-dock .plantao-monitor canvas{
+    width:100%!important;
+    max-width:none!important;
+    min-width:0!important;
+    height:100%!important;
+    align-self:stretch!important;
+    justify-self:stretch!important;
+    transform:none!important;
+  }
+}
