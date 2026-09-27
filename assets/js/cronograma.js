@@ -30,8 +30,6 @@ const scheduleState = {
   agendaScope: "today",
   agendaFilter: "all",
   agendaSelected: new Set(),
-  calendarFilters: { type:"all", date:"", materia:"" },
-  activityFilters: { type:"all", date:"", materia:"" },
 
   theoryStudyWeekdays:
     [1, 3, 5],
@@ -210,17 +208,6 @@ function normalizeHeader(value) {
     .toLowerCase()
     .replace(/[_-]+/g, " ")
     .replace(/\s+/g, " ");
-}
-
-function scheduleActivityKind(value) {
-  const normalized = normalizeHeader(value || "");
-  if (normalized.includes("quest")) return "questions";
-  if (normalized.includes("flash")) return "flashcards";
-  if (normalized.includes("erro")) return "errors";
-  if (normalized.includes("revis")) return "review";
-  if (normalized.includes("simulado") || normalized.includes("prova")) return "simulation";
-  if (normalized.includes("aula") || normalized.includes("lesson")) return "lesson";
-  return "other";
 }
 
 function escapeScheduleHtml(value) {
@@ -4567,17 +4554,14 @@ function renderMonthPlanner() {
     days
       .map(
         (date) => {
-          let errorItems = errorItemsOnDate(date);
-          let topics = topicsOnDate(date);
-          let events = eventsOnDate(date);
-          const filters=scheduleState.calendarFilters||{};
-          const iso=toISODateSchedule(date), matchesText=value=>!filters.materia||normalizeHeader(value||"").includes(normalizeHeader(filters.materia));
-          if(filters.date&&filters.date!==iso){topics=[];events=[];errorItems=[];}
-          else{
-            topics=topics.filter(t=>(filters.type==="all"||scheduleActivityKind(t.type||"lesson")===filters.type)&&matchesText(t.materia));
-            events=events.filter(e=>(filters.type==="all"||scheduleActivityKind(e.event_type||e.title)===filters.type)&&matchesText(e.materia));
-            errorItems=errorItems.filter(e=>(filters.type==="all"||filters.type==="errors")&&matchesText(e.materia));
-          }
+          const topics =
+            topicsOnDate(date);
+
+          const events =
+            eventsOnDate(date);
+
+          const errorItems =
+            errorItemsOnDate(date);
 
           const allItems = [
             ...topics.map(
@@ -4690,6 +4674,16 @@ function renderAgendaSide() {
   if (todayProgressPercent) todayProgressPercent.textContent = todayPercent + "%";
   if (todayProgressBar) todayProgressBar.style.width = todayPercent + "%";
 
+  const kindClass = (value) => {
+    const normalized = normalizeHeader(value || "");
+    if (normalized.includes("quest")) return "questions";
+    if (normalized.includes("flash")) return "flashcards";
+    if (normalized.includes("erro")) return "errors";
+    if (normalized.includes("revis")) return "review";
+    if (normalized.includes("simulado") || normalized.includes("prova")) return "simulation";
+    if (normalized.includes("aula") || normalized.includes("lesson")) return "lesson";
+    return "other";
+  };
   const todayHref = (kind, id = "") => {
     if (kind === "lesson" || kind === "review") return "/caderno/?topic_id=" + encodeURIComponent(id) + "&view=editor";
     if (kind === "questions" || kind === "simulation") return "/questoes-simulados/";
@@ -4710,37 +4704,25 @@ function renderAgendaSide() {
     const sourceItems=[];
     const addDateItems=(date)=>{
       const iso=toISODateSchedule(date);
-      topicsOnDate(date).forEach(topic=>sourceItems.push({source:"topic",id:topic.id,date:topic.scheduled_date||topic.original_date||iso,kind:scheduleActivityKind(topic.type||"lesson"),title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(scheduleActivityKind(topic.type||"lesson"),topic.id),time:"Hoje"}));
-      eventsOnDate(date).forEach(event=>sourceItems.push({source:"event",id:event.id,date:event.event_date||iso,kind:scheduleActivityKind(event.event_type||event.title),title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:false,href:todayHref(scheduleActivityKind(event.event_type||event.title),event.id),time:event.event_time?String(event.event_time).slice(0,5):"Hoje"}));
+      topicsOnDate(date).forEach(topic=>sourceItems.push({source:"topic",id:topic.id,date:topic.scheduled_date||topic.original_date||iso,kind:kindClass(topic.type||"lesson"),title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(kindClass(topic.type||"lesson"),topic.id),time:"Hoje"}));
+      eventsOnDate(date).forEach(event=>sourceItems.push({source:"event",id:event.id,date:event.event_date||iso,kind:kindClass(event.event_type||event.title),title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:false,href:todayHref(kindClass(event.event_type||event.title),event.id),time:event.event_time?String(event.event_time).slice(0,5):"Hoje"}));
       errorItemsOnDate(date).forEach(item=>sourceItems.push({source:"error",id:item.id,date:item.due_date||iso,kind:"errors",title:item.theme||item.materia||item.area||"Caderno de erros",meta:[item.area,item.materia].filter(Boolean).join(" · ")||"Revisão do caderno de erros",completed:false,href:"/caderno-erros/",time:"Hoje"}));
     };
     if(scheduleState.agendaScope==="today") addDateItems(today);
     else {
-      /* "Todas" é o gerenciador completo: inclui também aulas concluídas.
-         Não usa topicsOnDate(), pois essa função exclui completed_at. */
-      scheduleState.topics.forEach(topic=>{
-        const date=topic.scheduled_date||topic.original_date||((topic.completed_at||"").slice(0,10));
-        if(!date)return;
-        const kind=scheduleActivityKind(topic.type||"lesson");
-        sourceItems.push({source:"topic",id:topic.id,date,kind,title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(kind,topic.id),time:Boolean(topic.completed_at)?"Concluída":"Agendada"});
-      });
-      scheduleState.events.forEach(event=>{
-        if(!event.event_date)return;const kind=scheduleActivityKind(event.event_type||event.title);
-        sourceItems.push({source:"event",id:event.id,date:event.event_date,kind,title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:Boolean(event.completed_at),href:todayHref(kind,event.id),time:event.event_time?String(event.event_time).slice(0,5):"Evento"});
-      });
-      scheduleState.errorItems.forEach(item=>{
-        if(!item.due_date)return;
-        sourceItems.push({source:"error",id:item.id,date:item.due_date,kind:"errors",title:item.theme||item.materia||item.area||"Caderno de erros",meta:[item.area,item.materia].filter(Boolean).join(" · ")||"Revisão do caderno de erros",completed:item.active===false||Boolean(item.completed_at),href:"/caderno-erros/",time:item.active===false?"Concluída":"Revisão"});
-      });
+      const seen=new Set();
+      scheduleState.topics.forEach(t=>{const d=t.scheduled_date||t.original_date;if(d)seen.add(d)});
+      scheduleState.events.forEach(e=>{if(e.event_date)seen.add(e.event_date)});
+      scheduleState.errorItems.forEach(e=>{if(e.due_date)seen.add(e.due_date)});
+      [...seen].sort().forEach(iso=>{const d=parseISODateSchedule(iso);if(d)addDateItems(d)});
     }
-    const af=scheduleState.activityFilters||{};
-    const visible=sourceItems.filter(item=>(scheduleState.agendaFilter==="all"||item.kind===scheduleState.agendaFilter)&&(af.type==="all"||item.kind===af.type)&&(!af.date||item.date===af.date)&&(!af.materia||normalizeHeader(item.meta||"").includes(normalizeHeader(af.materia)));
+    const visible=sourceItems.filter(item=>scheduleState.agendaFilter==="all"||item.kind===scheduleState.agendaFilter);
     const labelForKind=k=>({lesson:"Aula",questions:"Questões",review:"Revisão",flashcards:"Flashcards",errors:"Caderno de erros",simulation:"Simulado",other:"Outro"}[k]||"Atividade");
     const row=item=>{
       const key=item.source+":"+item.id, selected=scheduleState.agendaSelected.has(key);
       const check=scheduleState.agendaScope==="all"?'<label class="agenda-bulk-check-wrap"><input class="agenda-bulk-check" type="checkbox" data-agenda-select="'+escapeScheduleHtml(key)+'" '+(selected?"checked":"")+'></label>':"";
-      return '<div class="agenda-today-row kind-'+item.kind+(scheduleState.agendaScope==="all"?" bulk-mode":"")+(item.completed?" is-completed":"")+'">'+check
-        +'<a class="agenda-today-open" '+(item.source==="topic"&&!item.completed?'data-start-study-topic="'+escapeScheduleHtml(item.id)+'" ':"")+'href="'+item.href+'"><span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(item.time)+'</span><strong>'+escapeScheduleHtml(item.title)+'</strong><small>'+escapeScheduleHtml(item.meta)+'</small></span><span class="agenda-today-kind">'+escapeScheduleHtml(labelForKind(item.kind))+(item.completed?' · Concluída':'')+'</span></a>'
+      return '<div class="agenda-today-row kind-'+item.kind+(scheduleState.agendaScope==="all"?" bulk-mode":"")+'">'+check
+        +'<a class="agenda-today-open" '+(item.source==="topic"?'data-start-study-topic="'+escapeScheduleHtml(item.id)+'" ':"")+'href="'+item.href+'"><span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(item.time)+'</span><strong>'+escapeScheduleHtml(item.title)+'</strong><small>'+escapeScheduleHtml(item.meta)+'</small></span><span class="agenda-today-kind">'+escapeScheduleHtml(labelForKind(item.kind))+'</span></a>'
         +todayMenu(item.source,item.id,item.date)+'</div>';
     };
     if(scheduleState.agendaScope==="all"){
@@ -4772,8 +4754,8 @@ function renderAgendaSide() {
 
   const weeklyItems = [];
   weekDays.forEach(date => {
-    topicsOnDate(date).forEach(topic => weeklyItems.push({ type: scheduleActivityKind(topic.type || topic.theme || "lesson"), completed: Boolean(topic.completed_at) }));
-    eventsOnDate(date).forEach(event => weeklyItems.push({ type: scheduleActivityKind(event.event_type || event.title || "other"), completed: false }));
+    topicsOnDate(date).forEach(topic => weeklyItems.push({ type: kindClass(topic.type || topic.theme || "lesson"), completed: Boolean(topic.completed_at) }));
+    eventsOnDate(date).forEach(event => weeklyItems.push({ type: kindClass(event.event_type || event.title || "other"), completed: false }));
     errorItemsOnDate(date).forEach(() => weeklyItems.push({ type: "errors", completed: false }));
   });
 
@@ -4939,12 +4921,13 @@ function updatePlannerViewControls() {
 
 function renderPlanner() {
   updatePlannerViewControls();
+  renderAgendaSide();
+  renderScheduleStudyInsights();
 
-  /* Um widget auxiliar nunca pode bloquear o calendário inteiro. */
-  try { renderAgendaSide(); } catch (error) { console.error("Falha ao renderizar atividades:", error); }
-  try { renderScheduleStudyInsights(); } catch (error) { console.error("Falha ao renderizar insights:", error); }
-
-  if (scheduleState.plannerView === "month") {
+  if (
+    scheduleState.plannerView
+    === "month"
+  ) {
     renderMonthPlanner();
     return;
   }
@@ -8311,12 +8294,12 @@ function renderSchedule() {
     return;
   }
 
-  try { renderSummary(); } catch (error) { console.error("Falha no resumo:", error); }
-  try { renderPlanner(); } catch (error) { console.error("Falha no planner:", error); }
-  try { renderDeck(); } catch (error) { console.error("Falha no deck:", error); }
-  try { renderThemeLibrary(); } catch (error) { console.error("Falha na lista de aulas:", error); }
-  try { renderEventLibrary(); } catch (error) { console.error("Falha na lista de eventos:", error); }
-  try { wireDynamicInteractions(); } catch (error) { console.error("Falha nas interações:", error); }
+  renderSummary();
+  renderPlanner();
+  renderDeck();
+  renderThemeLibrary();
+  renderEventLibrary();
+  wireDynamicInteractions();
 }
 
 
@@ -8515,10 +8498,6 @@ function wireDynamicInteractions() {
     });
   });
 
-  document.querySelectorAll("[data-filter-trigger]").forEach(button=>button.onclick=e=>{e.stopPropagation();const key=button.dataset.filterTrigger,pop=document.querySelector('[data-filter-popover="'+key+'"]');document.querySelectorAll("[data-filter-popover]").forEach(p=>{if(p!==pop)p.hidden=true});if(pop){pop.hidden=!pop.hidden;button.classList.toggle("active",!pop.hidden);}});
-  document.querySelectorAll("[data-filter-popover]").forEach(pop=>pop.onclick=e=>e.stopPropagation());
-  document.querySelectorAll("[data-filter-field]").forEach(field=>{const [scope,name]=field.dataset.filterField.split(":");const target=scope==="calendar"?scheduleState.calendarFilters:scheduleState.activityFilters;field.value=target[name]||"";field.oninput=()=>{target[name]=field.value;if(scope==="calendar")renderMonthPlanner();else{renderAgendaSide();wireDynamicInteractions();}};});
-  document.querySelectorAll("[data-filter-clear]").forEach(button=>button.onclick=()=>{const scope=button.dataset.filterClear,target=scope==="calendar"?scheduleState.calendarFilters:scheduleState.activityFilters;target.type="all";target.date="";target.materia="";if(scope==="calendar")renderMonthPlanner();else{renderAgendaSide();wireDynamicInteractions();}});
   document.querySelectorAll("[data-agenda-scope]").forEach(button=>button.addEventListener("click",()=>{
     scheduleState.agendaScope=button.dataset.agendaScope; scheduleState.agendaSelected.clear();
     const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
@@ -9499,15 +9478,16 @@ function wirePlannerNavigation() {
   });
 
   document.getElementById("planner-view-week")?.addEventListener("click", () => {
-    scheduleState.plannerView = "week";
-    updatePlannerViewControls();
+    scheduleState.plannerView =
+      "week";
+
     renderSchedule();
   });
 
   document.getElementById("planner-view-month")?.addEventListener("click", () => {
-    scheduleState.plannerView = "month";
-    updatePlannerViewControls();
-    renderMonthPlanner();
+    scheduleState.plannerView =
+      "month";
+
     renderSchedule();
   });
 }
@@ -9554,63 +9534,56 @@ async function initCronograma() {
   const nativeSettingsPage =
     document.body?.dataset?.page === "configuracoes-cronograma";
 
-  /* Carregamento de dados não pode depender da presença de controles opcionais. */
-  const safeWire = (name, fn) => {
-    try { fn(); }
-    catch (error) { console.error("Cronograma: falha ao iniciar " + name, error); }
-  };
+  /* Controles compartilhados entre a agenda e Configurações > Cronograma. */
+  wireImportControls();
+  wireManualTopicForm();
+  wireScheduleAddMode();
+  wireBaseSchedule();
 
-  safeWire("importação", wireImportControls);
-  safeWire("cadastro manual", wireManualTopicForm);
-  safeWire("modo de adição", wireScheduleAddMode);
-  safeWire("agenda-base", wireBaseSchedule);
-
+  /* Estes controles só existem na Agenda do menu lateral. */
   if (!nativeSettingsPage) {
-    safeWire("navegação do calendário", wirePlannerNavigation);
-    safeWire("deck", wireDeckDropzone);
+    wirePlannerNavigation();
+    wireDeckDropzone();
 
     document
       .getElementById("deck-distribute")
       ?.addEventListener("click", distributeDeckTopics);
 
-    safeWire("aula concluída", wireAlreadyDoneDialog);
-    safeWire("filtros da biblioteca", wireThemeLibraryFilters);
-    safeWire("ações da biblioteca", wireThemeLibraryBulkActions);
-    safeWire("eventos", wireEventLibrary);
-    safeWire("atrasadas", wireOverdueOrganizer);
+    wireAlreadyDoneDialog();
+    wireThemeLibraryFilters();
+    wireThemeLibraryBulkActions();
+    wireEventLibrary();
+    wireOverdueOrganizer();
 
     document.addEventListener("click", () => closeTopicOverflowMenus());
+
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape") closeTopicOverflowMenus();
+      if (event.key === "Escape") {
+        closeTopicOverflowMenus();
+      }
     });
   }
 
-  const automaticAllowed =
-    window.LuriaEntitlements?.enabled("automatic_schedule") === true;
-  const automaticButton =
-    document.querySelector('[data-schedule-add-mode="automatic"]');
-
-  if (automaticButton && !automaticAllowed) automaticButton.hidden = true;
-  safeWire("seletor automático/manual", () =>
-    switchScheduleAddMode(automaticAllowed ? "automatic" : "manual")
-  );
-
-  /* Preferências podem falhar sem impedir que as atividades apareçam. */
-  const results = await Promise.allSettled([
+  const initialDataPromise = Promise.all([
     loadSchedulePreferences(),
     loadTopics()
   ]);
 
-  results.forEach((result, index) => {
-    if (result.status === "rejected") {
-      console.error(
-        index === 0
-          ? "Cronograma: preferências não carregaram"
-          : "Cronograma: atividades não carregaram",
-        result.reason
-      );
-    }
-  });
+  const automaticAllowed =
+    window.LuriaEntitlements?.enabled("automatic_schedule") === true;
+
+  const automaticButton =
+    document.querySelector('[data-schedule-add-mode="automatic"]');
+
+  if (automaticButton && !automaticAllowed) {
+    automaticButton.hidden = true;
+  }
+
+  switchScheduleAddMode(
+    automaticAllowed ? "automatic" : "manual"
+  );
+
+  await initialDataPromise;
 }
 
 if (window.docmapUser) {
