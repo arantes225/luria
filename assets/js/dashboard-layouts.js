@@ -245,9 +245,24 @@
 
   function render() {
     frame = 0;
-    if (!allowed.has(current)) return;
-    const data = snap();
-    root.innerHTML = current === "5" ? layout5(data) : greeting() + ({ "1": layout1, "2": layout2, "3": layout3, "4": layout4 }[current])(data);
+    if (!allowed.has(current)) current = "1";
+    try {
+      const data = snap();
+      const html = current === "5"
+        ? layout5(data)
+        : greeting() + ({ "1": layout1, "2": layout2, "3": layout3, "4": layout4 }[current])(data);
+      if (html) root.innerHTML = html;
+      root.hidden = false;
+      root.dataset.rendered = "true";
+    } catch (error) {
+      console.error("Falha ao renderizar layout do Dashboard:", error);
+      root.hidden = false;
+      root.dataset.rendered = "false";
+      if (!root.innerHTML.trim()) {
+        root.innerHTML = '<div class="dl5-shell"><div class="dl5-hero"><div><h2>Carregando Dashboard…</h2><p>Atualizando seus dados.</p></div></div></div>';
+      }
+      setTimeout(() => schedule(), 120);
+    }
   }
   function schedule() { if (!frame) frame = requestAnimationFrame(render); }
   function apply() {
@@ -258,7 +273,10 @@
       try { localStorage.setItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`, "1"); } catch {}
     }
     document.body.dataset.dashboardLayout = current;
-    root.hidden = false;
+
+    // Renderiza primeiro; só então oculta o Dashboard legado.
+    // Evita tela vazia durante reload quando o primeiro frame atrasa.
+    render();
     [".dashboard-detail-grid", ".calendar-panel"].forEach((selector) => {
       page.querySelector(selector)?.setAttribute("aria-hidden", "true");
     });
