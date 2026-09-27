@@ -36,7 +36,6 @@ const APP_SHELL = [
   "/trabalho/diagnostico/",
   "/trabalho/laboratorio/",
   "/trabalho/fluidos-eletrólitos/",
-  "/trabalho/cid/",
   "/trabalho/ecg/",
   "/trabalho/protocolos/",
   "/trabalho/prescricao/",
