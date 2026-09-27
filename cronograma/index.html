@@ -2193,6 +2193,19 @@
   .exam-priority-badge.medium { background:color-mix(in srgb,var(--warning) 14%,transparent); color:var(--warning); }
   .exam-priority-badge.low { background:var(--surface-2); color:var(--muted); border:1px solid var(--border); }
 
+
+  /* Adição/importação de aulas vive em Configurações > Cronograma. */
+  body:not(.schedule-settings-embed) .schedule-add-hub,
+  body:not(.schedule-settings-embed) .schedule-add-section { display:none!important; }
+  body.schedule-settings-embed .sidebar,
+  body.schedule-settings-embed #sidebar-backdrop,
+  body.schedule-settings-embed .topbar { display:none!important; }
+  body.schedule-settings-embed .app-shell { display:block!important; }
+  body.schedule-settings-embed .main { margin:0!important; padding:0!important; min-height:0!important; background:transparent!important; }
+  body.schedule-settings-embed .page { max-width:none!important; padding:0!important; }
+  body.schedule-settings-embed .schedule-stack { gap:16px!important; }
+  body.schedule-settings-embed .schedule-stack > :not(.schedule-add-hub):not(.schedule-add-section) { display:none!important; }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -2202,6 +2215,7 @@
 </head>
 
 <body data-page="cronograma">
+  <script>if(new URLSearchParams(location.search).get("settings")==="1")document.body.classList.add("schedule-settings-embed");</script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
