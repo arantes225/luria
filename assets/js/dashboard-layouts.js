@@ -166,7 +166,12 @@
   function streak(data) {
     const weekday = (new Date().getDay() + 6) % 7;
     const tier = streakTier(data.streak);
-    return `<section class="dl-card dl-streak" data-streak-tier="${tier}"><div class="dl-card-heading"><h3><span class="dl-heading-icon dl-streak-heading-icon" aria-hidden="true">${streakVisual(data.streak)}</span> Ofensiva</h3><a href="/estatisticas/" aria-label="Ver Ofensiva">Ver mais ›</a></div><div class="dl-streak-value"><strong>${data.streak}</strong><span>dias seguidos</span></div><div class="dl-weekdays">${["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"].map((day, index) => `<span class="${index <= weekday && data.streak > 0 ? "active" : ""}"><i></i>${day}</span>`).join("")}</div></section>`;
+    const isDashboard4 = current === "4";
+    const headingFlame = isDashboard4 ? icon("flame") : streakVisual(data.streak);
+    const streakValue = isDashboard4
+      ? `<div class="dl-streak-value dl-streak-value-hero">${streakVisual(data.streak)}<strong>${data.streak} dias seguidos</strong></div>`
+      : `<div class="dl-streak-value"><strong>${data.streak}</strong><span>dias seguidos</span></div>`;
+    return `<section class="dl-card dl-streak" data-streak-tier="${tier}"><div class="dl-card-heading"><h3><span class="dl-heading-icon dl-streak-heading-icon" aria-hidden="true">${headingFlame}</span> Ofensiva</h3><a href="/estatisticas/" aria-label="Ver Ofensiva">Ver mais ›</a></div>${streakValue}<div class="dl-weekdays">${["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"].map((day, index) => `<span class="${index <= weekday && data.streak > 0 ? "active" : ""}"><i></i>${day}</span>`).join("")}</div></section>`;
   }
 
   function areas(data) {
