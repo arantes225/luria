@@ -1774,3 +1774,47 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
     overflow:hidden!important;
   }
 }
+
+
+/* Dashboard 4 — compacta as próximas atividades dentro do callout central de 300px. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming{
+    padding:14px 16px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-card-heading{
+    margin-bottom:8px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-timeline{
+    gap:4px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity{
+    grid-template-columns:48px 10px minmax(0,1fr) auto!important;
+    gap:8px!important;
+    min-height:48px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity-info{
+    min-height:42px!important;
+    padding:6px 9px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity-info strong{
+    font-size:12px!important;
+    line-height:1.15!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity-info small{
+    margin-top:2px!important;
+    font-size:10px!important;
+    line-height:1.1!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-chip{
+    padding:1px 5px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-start{
+    min-width:32px!important;
+    min-height:30px!important;
+    padding:0 6px!important;
+    font-size:11px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity-date{
+    font-size:10.5px!important;
+  }
+}
