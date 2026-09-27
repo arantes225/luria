@@ -152,7 +152,6 @@
     document.body.dataset.workDashboardLayout=value;
     buttons.forEach(btn=>{const active=btn.dataset.workLayout===value;btn.classList.toggle("active",active);btn.setAttribute("aria-pressed",String(active));});
     if(root) root.innerHTML=value==="simple"?simple():detailed();
-    try{localStorage.setItem(storageKey(),value);}catch{}
   }
   buttons.forEach(btn=>btn.addEventListener("click",()=>render(btn.dataset.workLayout)));
   const nameEl=$("work-dashboard-name");
