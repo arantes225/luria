@@ -1737,7 +1737,10 @@ body :where(
 }
 
 body :where(code, pre, kbd, samp),
-body :where(code, pre, kbd, samp) * {
+body :where(code, pre, kbd, samp) *,
+body .admin-qf-prompt,
+body .admin-qf-board-master-text,
+body .admin-qf-review-import-body textarea {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace !important;
 }
 
