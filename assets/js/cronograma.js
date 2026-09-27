@@ -212,6 +212,17 @@ function normalizeHeader(value) {
     .replace(/\s+/g, " ");
 }
 
+function scheduleActivityKind(value) {
+  const normalized = normalizeHeader(value || "");
+  if (normalized.includes("quest")) return "questions";
+  if (normalized.includes("flash")) return "flashcards";
+  if (normalized.includes("erro")) return "errors";
+  if (normalized.includes("revis")) return "review";
+  if (normalized.includes("simulado") || normalized.includes("prova")) return "simulation";
+  if (normalized.includes("aula") || normalized.includes("lesson")) return "lesson";
+  return "other";
+}
+
 function escapeScheduleHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -4563,8 +4574,8 @@ function renderMonthPlanner() {
           const iso=toISODateSchedule(date), matchesText=value=>!filters.materia||normalizeHeader(value||"").includes(normalizeHeader(filters.materia));
           if(filters.date&&filters.date!==iso){topics=[];events=[];errorItems=[];}
           else{
-            topics=topics.filter(t=>(filters.type==="all"||kindClass(t.type||"lesson")===filters.type)&&matchesText(t.materia));
-            events=events.filter(e=>(filters.type==="all"||kindClass(e.event_type||e.title)===filters.type)&&matchesText(e.materia));
+            topics=topics.filter(t=>(filters.type==="all"||scheduleActivityKind(t.type||"lesson")===filters.type)&&matchesText(t.materia));
+            events=events.filter(e=>(filters.type==="all"||scheduleActivityKind(e.event_type||e.title)===filters.type)&&matchesText(e.materia));
             errorItems=errorItems.filter(e=>(filters.type==="all"||filters.type==="errors")&&matchesText(e.materia));
           }
 
@@ -4709,8 +4720,8 @@ function renderAgendaSide() {
     const sourceItems=[];
     const addDateItems=(date)=>{
       const iso=toISODateSchedule(date);
-      topicsOnDate(date).forEach(topic=>sourceItems.push({source:"topic",id:topic.id,date:topic.scheduled_date||topic.original_date||iso,kind:kindClass(topic.type||"lesson"),title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(kindClass(topic.type||"lesson"),topic.id),time:"Hoje"}));
-      eventsOnDate(date).forEach(event=>sourceItems.push({source:"event",id:event.id,date:event.event_date||iso,kind:kindClass(event.event_type||event.title),title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:false,href:todayHref(kindClass(event.event_type||event.title),event.id),time:event.event_time?String(event.event_time).slice(0,5):"Hoje"}));
+      topicsOnDate(date).forEach(topic=>sourceItems.push({source:"topic",id:topic.id,date:topic.scheduled_date||topic.original_date||iso,kind:scheduleActivityKind(topic.type||"lesson"),title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(scheduleActivityKind(topic.type||"lesson"),topic.id),time:"Hoje"}));
+      eventsOnDate(date).forEach(event=>sourceItems.push({source:"event",id:event.id,date:event.event_date||iso,kind:scheduleActivityKind(event.event_type||event.title),title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:false,href:todayHref(scheduleActivityKind(event.event_type||event.title),event.id),time:event.event_time?String(event.event_time).slice(0,5):"Hoje"}));
       errorItemsOnDate(date).forEach(item=>sourceItems.push({source:"error",id:item.id,date:item.due_date||iso,kind:"errors",title:item.theme||item.materia||item.area||"Caderno de erros",meta:[item.area,item.materia].filter(Boolean).join(" · ")||"Revisão do caderno de erros",completed:false,href:"/caderno-erros/",time:"Hoje"}));
     };
     if(scheduleState.agendaScope==="today") addDateItems(today);
@@ -4720,11 +4731,11 @@ function renderAgendaSide() {
       scheduleState.topics.forEach(topic=>{
         const date=topic.scheduled_date||topic.original_date||((topic.completed_at||"").slice(0,10));
         if(!date)return;
-        const kind=kindClass(topic.type||"lesson");
+        const kind=scheduleActivityKind(topic.type||"lesson");
         sourceItems.push({source:"topic",id:topic.id,date,kind,title:topic.theme,meta:topicMeta(topic)||"Aula",completed:Boolean(topic.completed_at),href:todayHref(kind,topic.id),time:Boolean(topic.completed_at)?"Concluída":"Agendada"});
       });
       scheduleState.events.forEach(event=>{
-        if(!event.event_date)return;const kind=kindClass(event.event_type||event.title);
+        if(!event.event_date)return;const kind=scheduleActivityKind(event.event_type||event.title);
         sourceItems.push({source:"event",id:event.id,date:event.event_date,kind,title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:Boolean(event.completed_at),href:todayHref(kind,event.id),time:event.event_time?String(event.event_time).slice(0,5):"Evento"});
       });
       scheduleState.errorItems.forEach(item=>{
@@ -4771,8 +4782,8 @@ function renderAgendaSide() {
 
   const weeklyItems = [];
   weekDays.forEach(date => {
-    topicsOnDate(date).forEach(topic => weeklyItems.push({ type: kindClass(topic.type || topic.theme || "lesson"), completed: Boolean(topic.completed_at) }));
-    eventsOnDate(date).forEach(event => weeklyItems.push({ type: kindClass(event.event_type || event.title || "other"), completed: false }));
+    topicsOnDate(date).forEach(topic => weeklyItems.push({ type: scheduleActivityKind(topic.type || topic.theme || "lesson"), completed: Boolean(topic.completed_at) }));
+    eventsOnDate(date).forEach(event => weeklyItems.push({ type: scheduleActivityKind(event.event_type || event.title || "other"), completed: false }));
     errorItemsOnDate(date).forEach(() => weeklyItems.push({ type: "errors", completed: false }));
   });
 
