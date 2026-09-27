@@ -1,18 +1,19 @@
 (() => {
   const ENDPOINT="https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart";
   const APIKEY="sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
-  const normalizeCode=value=>String(value||"").toUpperCase().replace(/[^A-Z0-9]/g,"").slice(0,32);
+  const normalizeUsername=value=>String(value||"").trim().toLowerCase().replace(/[^a-z0-9._-]/g,"").slice(0,30);
   const gate=document.getElementById("external-gate");
   const editor=document.getElementById("external-editor");
   const errorBox=document.getElementById("external-error");
-  const errorMessage=document.getElementById("external-error-message");
-  const codeInput=document.getElementById("external-code");
+  const usernameInput=document.getElementById("external-username");
+  const pinInput=document.getElementById("external-pin");
   const enterBtn=document.getElementById("external-enter");
   const gateError=document.getElementById("external-gate-error");
   const status=document.getElementById("external-status");
   const saveState=document.getElementById("external-save-state");
   const routeHash=new URLSearchParams(location.hash.replace(/^#/,""));
-  let accessCode=normalizeCode(routeHash.get("c")||"");
+  let username=normalizeUsername(routeHash.get("u")||"");
+  let pin="";
   let saveTimer=null;
   let loading=true;
   let lastSerialized="";
@@ -26,7 +27,7 @@
     const res=await fetch(ENDPOINT,{
       method:"POST",
       headers:{"Content-Type":"application/json","apikey":APIKEY},
-      body:JSON.stringify({code:accessCode,...body})
+      body:JSON.stringify({username,pin,...body})
     });
     const data=await res.json().catch(()=>({}));
     if(!res.ok) throw new Error(data.error||"Não foi possível acessar o prontuário.");
@@ -40,14 +41,22 @@
     el.textContent="Conteúdo apaga "+d.toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"});
   }
 
-  async function openPortal(forcedCode=""){
-    accessCode=normalizeCode(forcedCode||codeInput.value);
+  async function openPortal(){
+    username=normalizeUsername(usernameInput.value||username);
+    pin=String(pinInput.value||"").replace(/\D/g,"").slice(0,4);
     gateError.hidden=true;
-    if(accessCode.length<10){
-      gateError.textContent="Digite o código completo.";
+
+    if(!/^[a-z0-9][a-z0-9._-]{2,29}$/.test(username)){
+      gateError.textContent="Digite seu nome de usuário.";
       gateError.hidden=false;
       return;
     }
+    if(!/^\d{4}$/.test(pin)){
+      gateError.textContent="Digite seu PIN de 4 dígitos.";
+      gateError.hidden=false;
+      return;
+    }
+
     enterBtn.disabled=true;
     enterBtn.textContent="Abrindo…";
     try{
@@ -60,10 +69,11 @@
       errorBox.hidden=true;
       editor.hidden=false;
       status.textContent="Sincronizado";
-      codeInput.value="";
+      pinInput.value="";
+      history.replaceState(null,"","/trabalho/prontuario/");
       fields().forEach(el=>el.addEventListener("input",queueSave));
     }catch(e){
-      accessCode="";
+      pin="";
       gateError.textContent=e.message;
       gateError.hidden=false;
     }finally{
@@ -73,7 +83,7 @@
   }
 
   async function save(){
-    if(loading||!accessCode) return;
+    if(loading||!username||!pin) return;
     const now=serialized();
     if(now===lastSerialized){saveState.textContent="Salvo";return;}
     saveState.textContent="Salvando…";
@@ -96,7 +106,7 @@
   }
 
   async function clearAll(){
-    if(!accessCode) return;
+    if(!username||!pin) return;
     if(!confirm("Limpar todo o conteúdo deste prontuário rápido?")) return;
     try{
       await call({action:"clear"});
@@ -109,14 +119,18 @@
     }
   }
 
-  enterBtn.addEventListener("click",()=>openPortal());
-  codeInput.addEventListener("keydown",e=>{if(e.key==="Enter")openPortal();});
+  enterBtn.addEventListener("click",openPortal);
+  usernameInput.addEventListener("input",()=>{usernameInput.value=normalizeUsername(usernameInput.value)});
+  usernameInput.addEventListener("keydown",e=>{if(e.key==="Enter")pinInput.focus()});
+  pinInput.addEventListener("input",()=>{pinInput.value=pinInput.value.replace(/\D/g,"").slice(0,4)});
+  pinInput.addEventListener("keydown",e=>{if(e.key==="Enter")openPortal()});
   document.getElementById("external-save").addEventListener("click",save);
   document.getElementById("external-clear").addEventListener("click",clearAll);
-  if(accessCode){
-    history.replaceState(null,"","/trabalho/prontuario/");
-    openPortal(accessCode);
+
+  if(username){
+    usernameInput.value=username;
+    pinInput.focus();
   }else{
-    codeInput.focus();
+    usernameInput.focus();
   }
 })();
