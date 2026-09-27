@@ -33,7 +33,7 @@
           <article class="quick-chart-hero">
             <div>
               <h2>Prontuário rápido</h2>
-              <p>Defina um código exclusivo do Prontuário Rápido. Ele vira seu endereço direto para acesso externo, separado do seu código de amizade.</p>
+              <p>Seu acesso externo usa o nome de usuário da LURIA e um PIN de 4 dígitos configurado em Perfil e Conta.</p>
             </div>
             <a class="quick-chart-create" href="/trabalho/prontuario/" target="_blank" rel="noopener">Abrir acesso manual</a>
           </article>
@@ -46,18 +46,14 @@
 
           <article class="quick-chart-code-card">
             <div>
-              <span class="quick-chart-eyebrow">Código pessoal fixo</span>
-              <h3 id="quick-chart-code-title">Configure seu código</h3>
-              <p id="quick-chart-code-help">Esse código é exclusivo do Prontuário Rápido e não tem relação com o código de amizade. Ele vira seu endereço, por exemplo: resibulando.online/ABCD12345678.</p>
+              <span class="quick-chart-eyebrow">Acesso pessoal</span>
+              <h3 id="quick-chart-code-title">Nome de usuário + PIN</h3>
+              <p id="quick-chart-code-help">O endereço usa seu nome de usuário. Ao abrir, aparece uma tela simples pedindo o PIN de 4 dígitos.</p>
             </div>
-
             <div class="quick-chart-code-form">
-              <input id="quick-chart-code-input" type="text" maxlength="32" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="Mínimo 10 caracteres">
-              <button id="quick-chart-suggest-code" type="button">Sugerir código</button>
-              <button id="quick-chart-save-code" class="primary" type="button">Salvar código</button>
+              <a class="quick-chart-create" href="/configuracoes/#perfil">Configurar usuário e PIN</a>
             </div>
-
-            <small class="quick-chart-code-note">O código é exclusivo deste recurso. Você pode trocar quando quiser; ao trocar, o endereço antigo deixa de funcionar.</small>
+            <small class="quick-chart-code-note">O PIN é protegido e não fica salvo em texto puro.</small>
           </article>
 
           <article class="quick-chart-current">
@@ -81,7 +77,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.22-prontuario-rapido"></script>
-  <script src="/assets/js/quick-chart-manager.js?v=4"></script>
+  <script src="/assets/js/quick-chart-manager.js?v=5"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
