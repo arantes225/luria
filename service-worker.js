@@ -54,7 +54,7 @@ const APP_SHELL = [
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
   "/assets/css/dashboard-layouts.css?v=4-clean-bg",
-  "/assets/js/dashboard-layouts.js?v=3-streak-sync",
+  "/assets/js/dashboard-layouts.js?v=4-reload-fix",
   "/assets/js/dashboard-layout-settings.js?v=2-work",
   "/assets/img/dashboard-layouts/opcao-1.webp",
   "/assets/img/dashboard-layouts/opcao-2.webp",
