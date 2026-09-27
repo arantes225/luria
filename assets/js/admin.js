@@ -2209,9 +2209,13 @@
         const flow = Array.isArray(state.qfBlockFlow)
           ? state.qfBlockFlow.find(x => Number(x.batch_number) === Number(batch.batch_number) && Number(x.block_number) === n)
           : null;
-        const independentChunkStage = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(
-          String(blockAction?.next?.next_stage || "")
-        );
+        const nextStage = String(blockAction?.next?.next_stage || "");
+        const independentChunkStage = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(nextStage);
+        const independentActionLabel = nextStage === "perplexity_initial"
+          ? "Etapa 4 · Copiar bloco/JSON"
+          : nextStage === "perplexity_reaudit"
+            ? "Etapa 6 · Copiar pendentes/JSON"
+            : "Etapa 3 · Copiar bloco/JSON";
 
         return `
           <article class="admin-qf-block-mini admin-qf-block-workflow" data-block-status="${esc(status)}">
@@ -2229,7 +2233,7 @@
               <small>${esc(blockAction.phase || "Etapa atual")}</small>
               ${independentChunkStage ? `
                 <div class="admin-qf-perplexity-manual-actions">
-                  <button class="button primary" type="button" data-qf-copy-json-part="${Number(batch.batch_number)}:${n}:next">1 · Copiar bloco · até 200</button>
+                  <button class="button primary" type="button" data-qf-copy-json-part="${Number(batch.batch_number)}:${n}:next">${esc(independentActionLabel)}</button>
                   <button class="button secondary" type="button" data-qf-paste-stage-json="${Number(batch.batch_number)}:${n}">2 · Colar JSON de resposta</button>
                 </div>
                 <small class="admin-qf-perplexity-manual-help">${blockAction?.next?.next_stage === "blind_resolution"
@@ -3029,9 +3033,11 @@
         const promptStages = [
           ["01","Gerar 200 questões",null,"chatgpt"],
           ["02","ChatGPT · revisão adversarial + autocorreção","chatgpt_initial","chatgpt"],
-          ["03","ChatGPT · auditoria independente sem memória","perplexity_cycle","chatgpt"],
-          ["04","ChatGPT · julgar + corrigir","chatgpt_correction_cycle","chatgpt"],
-          ["05","ChatGPT · confirmar correções em revisão cega","perplexity_reaudit","chatgpt"]
+          ["03","ChatGPT · resolução cega sem memória","blind_resolution","chatgpt"],
+          ["04","ChatGPT · revisão independente do bloco","perplexity_cycle","chatgpt"],
+          ["05","ChatGPT · julgar parecer + corrigir","chatgpt_correction_cycle","chatgpt"],
+          ["06","ChatGPT · reauditar correções do zero","perplexity_reaudit","chatgpt"],
+          ["07","Sua aprovação para o lote",null,"human"]
         ];
         const finalLotStages = [
           ["09A","ChatGPT · revisão global das 1.000","lot_chatgpt_final","chatgpt"],
