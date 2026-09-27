@@ -49,9 +49,20 @@
             <span>Queixa: ${esc(c.chief_complaint||"—")}</span>
             <span>Hipótese: ${esc(c.assessment||"—")}</span>
           </div>
+          <div class="quick-chart-full" hidden data-full-content>
+            ${[
+              ["HDA / anamnese",c.history],
+              ["Exame físico",c.physical_exam],
+              ["Exames",c.tests],
+              ["Hipóteses",c.assessment],
+              ["Conduta",c.plan],
+              ["Evolução / observações",c.progress]
+            ].map(([label,value])=>`<section><strong>${esc(label)}</strong><p>${esc(value||"—").replaceAll("\n","<br>")}</p></section>`).join("")}
+          </div>
         </div>
         <div class="quick-chart-card-actions">
-          ${url?`<a class="primary" href="${esc(url)}" target="_blank" rel="noopener">Abrir</a><button type="button" data-copy-link>Copiar link</button>`:""}
+          <button type="button" data-toggle-details>Ver conteúdo</button>
+          ${url?`<a class="primary" href="${esc(url)}" target="_blank" rel="noopener">Abrir link</a><button type="button" data-copy-link>Copiar link</button>`:""}
           <button type="button" class="danger" data-revoke>Encerrar acesso</button>
         </div>
       </article>`;
@@ -91,6 +102,14 @@
   list.addEventListener("click",async(event)=>{
     const card=event.target.closest("[data-session-id]");if(!card)return;
     const id=card.dataset.sessionId;
+    if(event.target.closest("[data-toggle-details]")){
+      const box=card.querySelector("[data-full-content]");
+      const button=event.target.closest("[data-toggle-details]");
+      if(box){
+        box.hidden=!box.hidden;
+        button.textContent=box.hidden?"Ver conteúdo":"Ocultar conteúdo";
+      }
+    }
     if(event.target.closest("[data-copy-link]")){
       const token=sessionStorage.getItem("luria:quick-chart-token:"+id)||"";
       const link=card.querySelector(".quick-chart-link")?.textContent||"";
