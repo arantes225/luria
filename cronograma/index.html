@@ -2345,7 +2345,7 @@
   .agenda-donut{width:88px;aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--border) 0 100%);position:relative}
   .agenda-donut::after{content:"";position:absolute;inset:19px;border-radius:50%;background:var(--surface)}
   .agenda-distribution-legend{display:grid;gap:7px;min-width:0}.agenda-legend-item{display:grid;grid-template-columns:7px 1fr auto;gap:6px;align-items:center;font-size:8px;color:var(--muted)}.agenda-legend-dot{width:7px;height:7px;border-radius:50%}.agenda-legend-item strong{font-size:8px;color:var(--text)}
-  .agenda-bottom-grid{display:grid;grid-template-columns:1.05fr 1fr .95fr;gap:14px;align-items:stretch}
+  .agenda-bottom-grid{display:grid;grid-template-columns:1fr;gap:14px;align-items:stretch}
   .agenda-bottom-grid>.agenda-side-card{min-height:188px;padding:0;border-radius:15px;overflow:hidden}
   .agenda-bottom-grid .agenda-next-card,.agenda-bottom-grid .agenda-goals-card{padding:13px}
   .agenda-bottom-grid .agenda-today-list{max-height:205px;overflow:auto}
@@ -2911,35 +2911,9 @@
               <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
             </section>
 
-            <section class="agenda-side-card agenda-next-card">
-              <div class="agenda-side-head">
-                <div><span class="agenda-kicker">Agenda</span><h3>Próximas atividades</h3></div>
-              </div>
-              <div id="agenda-next-list" class="agenda-next-list"><p class="agenda-empty">Sem próximas atividades.</p></div>
-            </section>
 
-            <section class="agenda-side-card agenda-goals-card">
-              <div class="agenda-side-head">
-                <div><span class="agenda-kicker">Semana</span><h3>Metas da semana</h3></div>
-              </div>
-              <div class="agenda-goals-list">
-                <div class="agenda-goal-row">
-                  <span>Atividades planejadas</span>
-                  <strong id="agenda-goal-planned">0</strong>
-                </div>
-                <div class="agenda-goal-progress"><i id="agenda-goal-planned-bar"></i></div>
-                <div class="agenda-goal-row">
-                  <span>Concluídas</span>
-                  <strong id="agenda-goal-completed">0</strong>
-                </div>
-                <div class="agenda-goal-progress"><i id="agenda-goal-completed-bar"></i></div>
-                <div class="agenda-goal-row">
-                  <span>Pendências</span>
-                  <strong id="agenda-goal-pending">0</strong>
-                </div>
-                <div class="agenda-goal-progress"><i id="agenda-goal-pending-bar"></i></div>
-              </div>
-            </section>
+
+
           </div>
 
           <section class="overdue-organizer">
