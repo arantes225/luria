@@ -3431,8 +3431,8 @@ html:not(.pwa-standalone) #plantao-simulator:not([hidden]) .plantao-action-rail>
   padding:10px;
   border:1px solid var(--border);
   border-radius:14px;
-  background:var(--accent-soft);
-  color:var(--accent);
+  background:var(--surface);
+  color:var(--text);
   text-align:left;
   cursor:pointer;
 }
