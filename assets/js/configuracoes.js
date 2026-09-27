@@ -87,125 +87,11 @@ function syncProfilePickerLabels() {
       || "Selecione";
   }
 
-  const specialty = document.getElementById("profile-specialty")?.value || "";
-  const specialtyLabel = document.getElementById("profile-specialty-label");
-  if (specialtyLabel) {
-    specialtyLabel.textContent = specialty || "Selecione";
-  }
-}
-
-function buildProfilePicker(menuId, toggleId, options, onSelect) {
-  const menu = document.getElementById(menuId);
-  const toggle = document.getElementById(toggleId);
-  if (!menu || !toggle) return;
-
-  menu.innerHTML = "";
-
-  options.forEach((item) => {
-    const option = document.createElement("button");
-    option.type = "button";
-    option.className = "profile-picker-option";
-    option.textContent = item.label;
-    option.dataset.value = item.value;
-
-    option.addEventListener("click", (event) => {
-      event.stopPropagation();
-      onSelect(item.value);
-      menu.hidden = true;
-      toggle.setAttribute("aria-expanded", "false");
-      syncProfilePickerLabels();
-      updateProfilePreview();
-    });
-
-    menu.appendChild(option);
-  });
-
-  toggle.addEventListener("click", (event) => {
-    event.stopPropagation();
-    const open = menu.hidden;
-    closeProfilePickers(open ? menuId : null);
-    menu.hidden = !open;
-    toggle.setAttribute("aria-expanded", open ? "true" : "false");
-  });
-}
-
-function wireProfilePickers() {
-  buildProfilePicker(
-    "profile-gender-menu",
-    "profile-gender-toggle",
-    PROFILE_GENDER_OPTIONS,
-    (value) => {
-      const input = document.getElementById("profile-gender");
-      if (input) input.value = value;
-    }
-  );
-
-  buildProfilePicker(
-    "profile-specialty-menu",
-    "profile-specialty-toggle",
-    profileSpecialtyOptions().map((value) => ({ value, label: value })),
-    (value) => {
-      const input = document.getElementById("profile-specialty");
-      if (input) input.value = value;
-    }
-  );
-
-  document.addEventListener("click", (event) => {
-    if (!event.target.closest(".profile-picker")) {
-      closeProfilePickers();
-    }
-  });
-
-  syncProfilePickerLabels();
-}
-
-function normalizeUsername(value) {
-  return String(value || "")
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9._-]/g, "")
-    .slice(0, 30);
-}
-
-function validUsername(value) {
-  return /^[a-z0-9][a-z0-9._-]{2,29}$/.test(value);
-}
-
-function setAccountStatus(id, text, type = "") {
-  const element = document.getElementById(id);
-  if (!element) return;
-  element.textContent = text;
-  element.className = `settings-save-status ${type}`.trim();
-}
-
-function normalizePhone(value) {
-  const raw = String(value || "").trim();
-  const digits = raw.replace(/\D/g, "");
-  if (!digits) return "";
-  if (raw.startsWith("+")) return "+" + digits;
-  if (digits.startsWith("55")) return "+" + digits;
-  return "+55" + digits;
-}
-
-function updateProfilePreview() {
-  const name =
-    document.getElementById("profile-name").value.trim()
-    || "Seu nome";
-
-  const gender =
-    document.getElementById("profile-gender").value;
-
-  const specialty =
-    document.getElementById("profile-specialty").value.trim()
-    || "Sua especialidade";
-
-  const title = profileTitle(gender);
+    const title = profileTitle(gender);
 
   document.getElementById("profile-preview-name").textContent =
     title ? `${title} ${name}` : name;
 
-  document.getElementById("profile-preview-specialty").textContent =
-    specialty;
 
   document.getElementById("profile-preview-avatar").textContent =
     name.charAt(0).toUpperCase() || "U";
@@ -214,7 +100,7 @@ function updateProfilePreview() {
 async function loadProfileSettings() {
   const { data, error } = await settingsSb
     .from("profiles")
-    .select("display_name, username, gender, specialty")
+    .select("display_name, username, gender")
     .eq("user_id", settingsUser.id)
     .maybeSingle();
 
@@ -236,9 +122,6 @@ async function loadProfileSettings() {
   document.getElementById("profile-gender").value =
     data?.gender || "";
 
-  document.getElementById("profile-specialty").value =
-    data?.specialty || "";
-
   syncProfilePickerLabels();
   updateProfilePreview();
 }
@@ -252,9 +135,6 @@ async function saveProfileSettings() {
 
   const gender =
     document.getElementById("profile-gender").value || null;
-
-  const specialty =
-    document.getElementById("profile-specialty").value.trim();
 
   if (!name) {
     setProfileStatus(
@@ -272,6 +152,25 @@ async function saveProfileSettings() {
     return;
   }
 
+  if (username) {
+    const { data: duplicate, error: duplicateError } = await settingsSb
+      .from("profiles")
+      .select("user_id")
+      .eq("username", username)
+      .neq("user_id", settingsUser.id)
+      .maybeSingle();
+
+    if (duplicateError) {
+      setProfileStatus("Não foi possível validar o nome de usuário.", "error");
+      return;
+    }
+
+    if (duplicate) {
+      setProfileStatus("Esse nome de usuário já está em uso. Escolha outro.", "error");
+      return;
+    }
+  }
+
   const button = document.getElementById("save-profile");
   button.disabled = true;
   setProfileStatus("Salvando...");
@@ -283,14 +182,13 @@ async function saveProfileSettings() {
         user_id: settingsUser.id,
         display_name: name,
         username: username || null,
-        gender,
-        specialty: specialty || null
+        gender
       },
       {
         onConflict: "user_id"
       }
     )
-    .select("display_name, username, gender, specialty")
+    .select("display_name, username, gender")
     .single();
 
   button.disabled = false;
@@ -298,7 +196,9 @@ async function saveProfileSettings() {
   if (error) {
     console.error(error);
     setProfileStatus(
-      `Não foi possível salvar o perfil: ${error.message}`,
+      error.code === "23505"
+        ? "Esse nome de usuário já está em uso. Escolha outro."
+        : `Não foi possível salvar o perfil: ${error.message}`,
       "error"
     );
     return;
@@ -332,8 +232,7 @@ function wireProfileSettings() {
   [
     "profile-name",
     "profile-username",
-    "profile-gender",
-    "profile-specialty"
+    "profile-gender"
   ].forEach((id) => {
     const element = document.getElementById(id);
 
