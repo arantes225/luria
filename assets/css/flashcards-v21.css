@@ -127,3 +127,9 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-tabs .flash-tab{position:static!important;height:24px!important;min-height:24px!important;padding:0 10px!important;border:0!important;border-radius:6px!important;background:transparent!important;color:var(--muted)!important;font-size:8px!important;font-weight:750!important;box-shadow:none!important}
 .flash-tabs .flash-tab:after{display:none!important}
 .flash-tabs .flash-tab.active{background:var(--accent)!important;color:#fff!important;box-shadow:none!important}
+
+
+/* v23.6 — quatro campos da referência */
+.flash-tabs{grid-template-columns:repeat(4,1fr)!important;min-width:330px!important}
+.flash-due-shelf{margin-bottom:34px!important;padding-bottom:4px!important;border-bottom:1px solid color-mix(in srgb,var(--border) 70%,transparent)!important}
+.flash-due-deck{min-height:165px!important}
