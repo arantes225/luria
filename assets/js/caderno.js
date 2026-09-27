@@ -14316,7 +14316,7 @@ function renderLibrary() {
   }
   const groups = new Map();
   entries.forEach(entry => { const area=entry.area||"Sem área"; if(!groups.has(area)) groups.set(area,[]); groups.get(area).push(entry); });
-  const areaIcon = area => /cirurg/i.test(area)?"✎":/pediatr/i.test(area)?"♡":/gine|obst/i.test(area)?"♀":/prevent|saúde/i.test(area)?"✚":"♧";
+  const areaIcon = area => { const a=String(area||"").toLowerCase(),base='viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"'; if(/cirurg/.test(a))return '<svg '+base+'><path d="m5 19 11-11 3 3L8 22H5v-3Z"/><path d="m14 10 3 3"/></svg>'; if(/pediatr/.test(a))return '<svg '+base+'><path d="M12 21s-8-4.5-8-11a4 4 0 0 1 7-2.6A4 4 0 0 1 18 10c0 6.5-6 11-6 11Z"/></svg>'; if(/gine|obst/.test(a))return '<svg '+base+'><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>'; if(/prevent|saúde/.test(a))return '<svg '+base+'><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z"/></svg>'; return '<svg '+base+'><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>'; };
   list.innerHTML = Array.from(groups.entries()).map(([area,items]) => `
     <section class="notebook-area-shelf">
       <header class="notebook-area-shelf-head">
@@ -14327,7 +14327,7 @@ function renderLibrary() {
       <div class="notebook-book-grid">
         ${items.map(entry=>`
           <article class="notebook-book-card ${entry.note.is_shared?"notebook-shared-note":""}">
-            <div class="notebook-book-top"><span class="notebook-book-icon">▤</span><span class="notebook-book-menu">☆ ···</span></div>
+            <div class="notebook-book-top"><span class="notebook-book-icon">${areaIcon(entry.area)}</span><span class="notebook-book-menu">☆ ···</span></div>
             <h3>${escapeHtml(entry.title)}</h3>
             <p>${escapeHtml(entry.area)} · ${escapeHtml(formatDate(entry.date)||"Anotação LURIA")}</p>
             <div class="notebook-book-meta"><span><b>${entry.note.topic_id?"Aula":"Livre"}</b><small>tipo</small></span><span><b>${entry.note.is_shared?"Sim":"Não"}</b><small>compart.</small></span></div>
