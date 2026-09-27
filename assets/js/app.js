@@ -339,6 +339,20 @@
       border-color:var(--accent) !important;
       background:color-mix(in srgb,var(--accent) 7%,var(--surface)) !important;
     }
+    #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon {
+      color:var(--accent) !important;
+      background:var(--accent-soft) !important;
+    }
+    #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon svg {
+      width:20px;
+      height:20px;
+      display:block;
+      fill:none;
+      stroke:currentColor;
+      stroke-width:1.9;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
     .luria-profile-top { position:relative; display:flex; align-items:center; }
     .luria-profile-toggle {
       width:40px;height:40px;border:1px solid var(--border);border-radius:50%;
