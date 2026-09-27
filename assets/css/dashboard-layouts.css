@@ -988,3 +988,43 @@ body[data-dashboard-layout="5"] #dashboard-alternative{padding:0!important}
   .dl5-areas{grid-column:auto}
   .dl5-area-list>div{grid-template-columns:105px minmax(50px,1fr) 35px}
 }
+
+
+/* Dashboard opção 5 — viewport fixa, sem rolagem */
+html:has(body[data-dashboard-layout="5"]),
+body[data-dashboard-layout="5"]{
+  height:100%;
+  overflow:hidden!important;
+}
+body[data-dashboard-layout="5"] .app-shell{
+  height:100vh!important;
+  height:100dvh!important;
+  overflow:hidden!important;
+}
+body[data-dashboard-layout="5"] .main{
+  height:100vh!important;
+  height:100dvh!important;
+  overflow:hidden!important;
+  overscroll-behavior:none!important;
+}
+body[data-dashboard-layout="5"] .page,
+body[data-dashboard-layout="5"] #dashboard-alternative{
+  height:100%!important;
+  min-height:0!important;
+  overflow:hidden!important;
+}
+body[data-dashboard-layout="5"] .dl5-shell{
+  box-sizing:border-box;
+  height:100%;
+  min-height:0;
+  overflow:hidden;
+  display:grid;
+  grid-template-rows:auto auto minmax(0,1fr) minmax(0,.78fr);
+}
+body[data-dashboard-layout="5"] .dl5-hero{
+  justify-content:flex-start;
+}
+body[data-dashboard-layout="5"] .dl5-mid,
+body[data-dashboard-layout="5"] .dl5-bottom{
+  min-height:0;
+}
