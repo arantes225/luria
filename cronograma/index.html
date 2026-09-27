@@ -2796,6 +2796,14 @@
   @media(max-width:1050px){.agenda-week-goal-banner{grid-template-columns:1fr auto}.agenda-goal-days{grid-column:1/-1;grid-row:2;border-left:0;border-top:1px solid var(--border);padding:10px 0 0}}
   @media(max-width:620px){.agenda-week-goal-banner{grid-template-columns:1fr;padding:11px}.agenda-week-goal-banner .reference-new-activity{grid-row:2;width:100%}.agenda-goal-days{grid-row:3;gap:3px}.agenda-goal-day i{width:21px;height:21px}}
 
+
+  .quick-activity-dialog{width:min(560px,calc(100vw - 28px));padding:0!important;border:0!important;border-radius:16px!important;background:var(--surface)!important;color:var(--text)!important;box-shadow:0 24px 70px rgba(15,35,65,.25)!important}.quick-activity-dialog::backdrop{background:rgba(12,25,43,.42);backdrop-filter:blur(2px)}
+  .quick-activity-form{padding:18px}.quick-activity-head{display:flex;justify-content:space-between;gap:16px;align-items:start}.quick-activity-head h2{margin:5px 0 2px;font-size:18px}.quick-activity-head p{margin:0;color:var(--muted);font-size:9px}.quick-activity-head>button{width:31px;height:31px;min-height:31px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--muted);font-size:18px}
+  .quick-activity-switch{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:16px 0 14px;padding:4px;border-radius:10px;background:var(--surface-2)}.quick-activity-switch button{height:32px;min-height:32px;border:0;border-radius:7px;background:transparent;color:var(--muted);font-size:9px;font-weight:800}.quick-activity-switch button.active{background:var(--accent);color:#fff}
+  .quick-activity-fields{display:none;grid-template-columns:1fr 1fr;gap:11px}.quick-activity-fields.active{display:grid}.quick-activity-fields label{display:grid;gap:5px}.quick-activity-fields label.wide{grid-column:1/-1}.quick-activity-fields label>span{font-size:8px;font-weight:800}.quick-activity-fields input,.quick-activity-fields select{width:100%;height:37px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);padding:0 10px;font-size:9px}
+  .quick-activity-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--border)}.quick-activity-actions>span{margin-right:auto;font-size:8px;color:var(--muted)}.quick-activity-actions button{height:35px!important;min-height:35px!important}
+  @media(max-width:520px){.quick-activity-fields{grid-template-columns:1fr}.quick-activity-fields label.wide{grid-column:auto}.quick-activity-form{padding:14px}}
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3120,7 +3128,27 @@
   <button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button>
 </section>
 
-          <div class="agenda-workspace agenda-reference-layout">
+          <dialog id="quick-activity-dialog" class="schedule-dialog quick-activity-dialog">
+  <form id="quick-activity-form" class="quick-activity-form">
+    <div class="quick-activity-head"><div><span class="badge accent">Cronograma</span><h2>Nova atividade</h2><p>Adicione uma aula ou outro compromisso à agenda.</p></div><button id="quick-activity-close" type="button" aria-label="Fechar">×</button></div>
+    <div class="quick-activity-switch"><button type="button" class="active" data-quick-kind="lesson">Nova aula</button><button type="button" data-quick-kind="event">Outros</button></div>
+    <section class="quick-activity-fields active" data-quick-fields="lesson">
+      <label><span>Área *</span><select id="quick-lesson-area" required><option value="">Selecione a área</option><option>Clínica Médica</option><option>Cirurgia Geral</option><option>Ginecologia e Obstetrícia</option><option>Medicina Preventiva</option><option>Pediatria</option></select></label>
+      <label><span>Matéria</span><input id="quick-lesson-materia" type="text" maxlength="120" placeholder="Ex.: Cardiologia"></label>
+      <label class="wide"><span>Tema da aula *</span><input id="quick-lesson-theme" type="text" maxlength="180" placeholder="Ex.: Insuficiência cardíaca"></label>
+      <label><span>Data *</span><input id="quick-lesson-date" type="date"></label>
+    </section>
+    <section class="quick-activity-fields" data-quick-fields="event">
+      <label class="wide"><span>Título *</span><input id="quick-event-title" type="text" maxlength="180" placeholder="Ex.: Congresso de Cardiologia"></label>
+      <label><span>Tipo de evento *</span><select id="quick-event-type"><option value="congresso">Congresso</option><option value="reuniao">Reunião</option><option value="festa">Festa / compromisso</option><option value="simulation">Prova / simulado</option><option value="plantao">Plantão</option><option value="other">Outro</option></select></label>
+      <label><span>Data *</span><input id="quick-event-date" type="date"></label>
+      <label><span>Horário <small>(opcional)</small></span><input id="quick-event-time" type="time"></label>
+    </section>
+    <div class="quick-activity-actions"><span id="quick-activity-status"></span><button id="quick-activity-save" class="button primary" type="submit">Adicionar aula</button></div>
+  </form>
+</dialog>
+
+<div class="agenda-workspace agenda-reference-layout">
             <section class="planner-panel">
               <div class="planner-header">
                 <div class="planner-header-left">
