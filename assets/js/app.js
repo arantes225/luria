@@ -396,6 +396,7 @@ const PAGE_INFO = {
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Trabalho" },
   trabalho_plantoes: { title: "Escala", eyebrow: "Trabalho" },
   trabalho_passometro: { title: "Passômetro", eyebrow: "Trabalho" },
+  trabalho_prontuario_rapido: { title: "Prontuário rápido", eyebrow: "Trabalho" },
   trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Trabalho" },
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Trabalho" },
   trabalho_calculadora: { title: "Calculadoras", eyebrow: "Trabalho" },
@@ -569,6 +570,10 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_passometro" ? "active" : ""}" href="/trabalho/passometro/">
           <span class="nav-icon">⌁</span><span>Passômetro</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_prontuario_rapido" ? "active" : ""}" href="/trabalho/prontuario-rapido/">
+          <span class="nav-icon">▧</span><span>Prontuário rápido</span>
         </a>
 
 
