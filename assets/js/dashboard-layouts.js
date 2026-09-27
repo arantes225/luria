@@ -260,7 +260,7 @@
     frame = 0;
     if (!allowed.has(current)) return;
     const data = snap();
-    root.innerHTML = greeting() + ({ "1": layout1, "2": layout2, "3": layout3, "4": layout4, "5": layout5 }[current])(data);
+    root.innerHTML = current === "5" ? layout5(data) : greeting() + ({ "1": layout1, "2": layout2, "3": layout3, "4": layout4 }[current])(data);
   }
   function schedule() { if (!frame) frame = requestAnimationFrame(render); }
   function apply() {
