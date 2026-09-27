@@ -2197,9 +2197,12 @@
   /* Adição/importação de aulas vive em Configurações > Cronograma. */
   body:not(.schedule-settings-embed) .schedule-add-hub,
   body:not(.schedule-settings-embed) .schedule-add-section { display:none!important; }
+  html.schedule-settings-embed-root .sidebar,
+  html.schedule-settings-embed-root #sidebar-backdrop,
+  html.schedule-settings-embed-root .topbar,
   body.schedule-settings-embed .sidebar,
   body.schedule-settings-embed #sidebar-backdrop,
-  body.schedule-settings-embed .topbar { display:none!important; }
+  body.schedule-settings-embed .topbar { display:none!important; pointer-events:none!important; }
   body.schedule-settings-embed .app-shell { display:block!important; }
   body.schedule-settings-embed .main { margin:0!important; padding:0!important; min-height:0!important; background:transparent!important; }
   body.schedule-settings-embed .page { max-width:none!important; padding:0!important; }
@@ -2253,7 +2256,16 @@
 </head>
 
 <body data-page="cronograma">
-  <script>if(new URLSearchParams(location.search).get("settings")==="1")document.body.classList.add("schedule-settings-embed");</script>
+  <script>
+    (function(){
+      const params=new URLSearchParams(location.search);
+      if(params.get("settings")==="1"){
+        document.body.classList.add("schedule-settings-embed");
+        /* O conteúdo de Configurações > Cronograma é embutido: não deve abrir/renderizar o shell lateral. */
+        document.documentElement.classList.add("schedule-settings-embed-root");
+      }
+    })();
+  </script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
