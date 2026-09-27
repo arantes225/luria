@@ -13,13 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <style>
-    .quick-chart-shell{display:grid;gap:16px}
-    .quick-chart-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .quick-chart-hero h2{margin:0 0 8px;font-size:24px}
-    .quick-chart-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .quick-chart-placeholder{padding:20px;border:1px dashed var(--border);border-radius:16px;background:var(--surface-2);color:var(--muted)}
-  </style>
+  <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=1">
 </head>
 <body data-page="trabalho_prontuario_rapido">
   <div class="app-shell">
@@ -37,13 +31,24 @@
 
         <section class="quick-chart-shell">
           <article class="quick-chart-hero">
-            <h2>Prontuário rápido</h2>
-            <p>Área do ambiente Trabalho para organizar rapidamente as principais informações clínicas durante o atendimento.</p>
+            <div>
+              <h2>Prontuário rápido</h2>
+              <p>Gere um acesso temporário para usar em qualquer computador sem entrar na sua conta do LURIA. O que for escrito no link fica sincronizado aqui.</p>
+            </div>
+            <button id="quick-chart-create" class="quick-chart-create" type="button">Gerar acesso externo</button>
           </article>
 
-          <div class="quick-chart-placeholder">
-            Página criada e pronta para receber o fluxo de anamnese, exame físico, hipóteses, exames, condutas e evolução.
+          <div class="quick-chart-info">
+            <strong>Como funciona:</strong> o link dá acesso somente a um prontuário e expira automaticamente em 12 horas. Sua conta do LURIA não é aberta no computador externo. Você pode encerrar o acesso a qualquer momento.
           </div>
+
+          <div class="quick-chart-list-head">
+            <h3>Acessos ativos</h3>
+            <span>Sincronização automática</span>
+          </div>
+
+          <div id="quick-chart-session-list" class="quick-chart-list"></div>
+          <div id="quick-chart-status" class="quick-chart-status" role="status" aria-live="polite"></div>
         </section>
       </div>
     </main>
@@ -52,6 +57,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.22-prontuario-rapido"></script>
+  <script src="/assets/js/quick-chart-manager.js?v=1"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
