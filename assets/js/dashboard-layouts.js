@@ -73,6 +73,13 @@
     const title = heading.querySelector("[data-page-title]");
     if (eyebrow) eyebrow.textContent = "SEU PAINEL DE ESTUDOS";
     if (title) title.textContent = dashboardGreetingTitle();
+    let subtitle = heading.querySelector(".dl-heading-subtitle");
+    if (!subtitle) {
+      subtitle = document.createElement("p");
+      subtitle.className = "dl-heading-subtitle";
+      heading.appendChild(subtitle);
+    }
+    subtitle.textContent = "Vamos em frente hoje? Consistência é o que transforma.";
   }
 
   function greeting() {
