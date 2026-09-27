@@ -2804,6 +2804,56 @@
   .quick-activity-actions{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin-top:16px;padding-top:13px;border-top:1px solid var(--border)}.quick-activity-actions>span{margin-right:auto;font-size:8px;color:var(--muted)}.quick-activity-actions button{height:35px!important;min-height:35px!important}
   @media(max-width:520px){.quick-activity-fields{grid-template-columns:1fr}.quick-activity-fields label.wide{grid-column:auto}.quick-activity-form{padding:14px}}
 
+
+  /* Atividades exatamente na coluna do calendário */
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    grid-column:1!important;width:100%!important;max-width:none!important;min-width:0!important;
+    margin:0!important;align-self:start!important
+  }
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid>.agenda-today-card{
+    width:100%!important;max-width:none!important;box-sizing:border-box!important
+  }
+
+  /* Semana: tipografia LURIA mais legível, mantendo os 7 dias */
+  body:not(.schedule-settings-embed) .week-matrix-grid{
+    grid-template-columns:minmax(112px,1.28fr) repeat(7,minmax(0,1fr))!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-label,
+  body:not(.schedule-settings-embed) .week-matrix-head,
+  body:not(.schedule-settings-embed) .week-matrix-cell{
+    min-height:38px!important;padding:5px 6px!important
+  }
+  body:not(.schedule-settings-embed) .week-category-label{gap:7px!important}
+  body:not(.schedule-settings-embed) .week-category-label strong{
+    font-size:9px!important;font-weight:800!important;letter-spacing:-.01em!important;
+    color:var(--text)!important;line-height:1.15!important
+  }
+  body:not(.schedule-settings-embed) .week-category-icon{
+    width:21px!important;height:21px!important;flex:0 0 21px!important;border-radius:6px!important
+  }
+  body:not(.schedule-settings-embed) .week-category-icon .week-category-svg{width:11px!important;height:11px!important}
+  body:not(.schedule-settings-embed) .week-matrix-head span{
+    font-size:7px!important;font-weight:750!important;color:var(--muted)!important;letter-spacing:.01em!important
+  }
+  body:not(.schedule-settings-embed) .week-matrix-head strong{
+    font-size:10px!important;font-weight:850!important;color:var(--text)!important
+  }
+  body:not(.schedule-settings-embed) .week-dot{width:8px!important;height:8px!important}
+  @media(max-width:900px){
+    body:not(.schedule-settings-embed) .week-matrix-grid{grid-template-columns:minmax(92px,1.1fr) repeat(7,minmax(0,1fr))!important}
+    body:not(.schedule-settings-embed) .week-category-label strong{font-size:8px!important}
+  }
+  @media(max-width:520px){
+    body:not(.schedule-settings-embed) .week-matrix-grid{grid-template-columns:minmax(76px,1fr) repeat(7,minmax(0,1fr))!important}
+    body:not(.schedule-settings-embed) .week-matrix-label,
+    body:not(.schedule-settings-embed) .week-matrix-head,
+    body:not(.schedule-settings-embed) .week-matrix-cell{min-height:34px!important;padding:3px!important}
+    body:not(.schedule-settings-embed) .week-category-label{gap:4px!important}
+    body:not(.schedule-settings-embed) .week-category-icon{width:17px!important;height:17px!important;flex-basis:17px!important}
+    body:not(.schedule-settings-embed) .week-category-label strong{font-size:7.5px!important}
+    body:not(.schedule-settings-embed) .week-dot{width:7px!important;height:7px!important}
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3189,9 +3239,9 @@
                   <div id="agenda-category-legend" class="agenda-category-legend"><span class="agenda-empty">Sem tempo registrado.</span></div>
                 </div>
               </section>
-            </aside>          </div>
+            </aside>
 
-          <div class="agenda-bottom-grid">
+            <div class="agenda-bottom-grid">
             <section class="agenda-side-card agenda-today-card">
               <div class="agenda-today-head">
                 <div class="agenda-today-title-wrap">
@@ -3223,10 +3273,7 @@
               </div>
               <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
             </section>
-
-
-
-
+            </div>
           </div>
 
           <section class="overdue-organizer">
