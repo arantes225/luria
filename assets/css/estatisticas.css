@@ -620,3 +620,32 @@
    grid-template-areas:"heat" "habit" "prog" "dist" "ins" "area"!important;
  }
 }
+
+/* v24.3 — Geral: restaura a composição aprovada dos gráficos */
+[data-stats-panel="geral"] .stats-summary-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  grid-template-rows:repeat(2,minmax(84px,auto))!important;
+}
+[data-stats-panel="geral"] .stats-summary-card:nth-child(n){display:block!important}
+[data-stats-panel="geral"] .stats-block-grid{
+  grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  grid-template-areas:
+    "habit habit habit habit habit habit heat heat heat heat heat heat"
+    "dist dist dist dist prog prog prog prog area area area area"
+    "ins ins ins ins ins ins ins ins ins ins ins ins"!important;
+  gap:10px!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(1){grid-area:habit!important}
+[data-stats-panel="geral"] .stats-block:nth-child(2){grid-area:dist!important;min-height:0!important}
+[data-stats-panel="geral"] .stats-block:nth-child(3){grid-area:prog!important;min-height:0!important}
+[data-stats-panel="geral"] .stats-block:nth-child(4){grid-area:heat!important;padding:12px!important}
+[data-stats-panel="geral"] .stats-block:nth-child(5){grid-area:area!important;min-height:0!important}
+[data-stats-panel="geral"] .stats-block:nth-child(6){grid-area:ins!important;min-height:0!important}
+[data-stats-panel="geral"] #general-week-heatmap{min-height:150px!important}
+[data-stats-panel="geral"] #general-week-heatmap .activity-grid{grid-template-columns:24px repeat(12,13px)!important;grid-auto-rows:13px!important;gap:4px!important}
+[data-stats-panel="geral"] #general-week-heatmap .activity-months{grid-template-columns:24px repeat(12,13px)!important;gap:4px!important}
+[data-stats-panel="geral"] #general-week-heatmap .activity-square{width:13px!important;height:13px!important;border-radius:3px!important}
+[data-stats-panel="geral"] #general-week-heatmap .activity-day{line-height:13px!important;font-size:6.5px!important}
+@media(max-width:1050px){
+ [data-stats-panel="geral"] .stats-block-grid{grid-template-columns:1fr!important;grid-template-areas:"heat" "habit" "dist" "prog" "area" "ins"!important}
+}
