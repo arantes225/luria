@@ -137,3 +137,7 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 
 /* v23.7 — navegação de escopo antiga removida */
 .library-scope-tabs{display:none!important}
+
+
+/* v23.8 — switch Tempo de estudo com fundo do bloco normal */
+.flash-tabs{background:var(--surface)!important;border:1px solid var(--border)!important}
