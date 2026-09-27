@@ -740,6 +740,31 @@
     @media(max-width:700px){
       .account-change-row,.account-pin-grid{grid-template-columns:1fr}
     }
+
+    .settings-personalize-grid.is-profile-view{gap:22px!important}
+    .settings-personalize-grid.is-profile-view>.settings-profile-card{
+      padding:24px!important;border-radius:18px!important
+    }
+    .settings-personalize-grid.is-profile-view>.settings-profile-card>div:first-child{margin-bottom:18px}
+    .settings-personalize-grid.is-profile-view>.settings-profile-card h2{font-size:20px!important}
+    .settings-personalize-grid.is-profile-view>.settings-profile-card p{font-size:13px!important;line-height:1.6!important}
+    .settings-personalize-grid.is-profile-view .profile-field span,
+    .settings-personalize-grid.is-profile-view .security-field>span,
+    .settings-personalize-grid.is-profile-view .security-confirm-field>span{font-size:13px!important}
+    .settings-personalize-grid.is-profile-view input,
+    .settings-personalize-grid.is-profile-view .security-email{font-size:14px!important;min-height:46px}
+    .settings-personalize-grid.is-profile-view small{font-size:11.5px!important;line-height:1.55!important}
+    .security-grid-spaced{gap:18px!important}
+    .security-subcard{
+      padding:18px;border:1px solid var(--border);border-radius:14px;
+      background:var(--surface-2);gap:10px!important
+    }
+    .security-subcard-title{font-size:15px!important;font-weight:850!important;color:var(--text)}
+    .security-confirm-field{display:grid;gap:6px;margin-top:6px}
+    .security-confirm-field>span{color:var(--muted);font-weight:750}
+    .password-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .quick-access-settings .security-email{background:var(--surface)}
+    @media(max-width:700px){.password-pair{grid-template-columns:1fr}}
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=5-reference">
@@ -867,104 +892,6 @@
                 </div>
               </div>
 
-              <div class="profile-field">
-                <span>Especialidade</span>
-
-                <div class="profile-picker">
-                  <button
-                    id="profile-specialty-toggle"
-                    class="profile-picker-toggle"
-                    type="button"
-                    aria-haspopup="listbox"
-                    aria-expanded="false"
-                  >
-                    <span id="profile-specialty-label">Selecione</span>
-                    <span class="profile-picker-chevron" aria-hidden="true">⌄</span>
-                  </button>
-
-                  <div
-                    id="profile-specialty-menu"
-                    class="profile-picker-menu profile-specialty-menu"
-                    role="listbox"
-                    hidden
-                  ></div>
-
-                  <input
-                    id="profile-specialty"
-                    class="profile-native-select"
-                    type="text"
-                    maxlength="100"
-                    list="specialty-options"
-                    placeholder="Ex.: Cirurgia Geral"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                </div>
-
-                <datalist id="specialty-options" data-luria-area-list>
-                  <option value="Alergia e Imunologia">
-                  <option value="Anestesiologia">
-                  <option value="Angiologia">
-                  <option value="Cardiologia">
-                  <option value="Cirurgia Cardiovascular">
-                  <option value="Cirurgia da Mão">
-                  <option value="Cirurgia de Cabeça e Pescoço">
-                  <option value="Cirurgia do Aparelho Digestivo">
-                  <option value="Cirurgia Geral">
-                  <option value="Cirurgia Oncológica">
-                  <option value="Cirurgia Pediátrica">
-                  <option value="Cirurgia Plástica">
-                  <option value="Cirurgia Torácica">
-                  <option value="Cirurgia Vascular">
-                  <option value="Clínica Médica">
-                  <option value="Coloproctologia">
-                  <option value="Dermatologia">
-                  <option value="Endocrinologia e Metabologia">
-                  <option value="Endoscopia">
-                  <option value="Gastroenterologia">
-                  <option value="Genética Médica">
-                  <option value="Geriatria">
-                  <option value="Ginecologia e Obstetrícia">
-                  <option value="Hematologia e Hemoterapia">
-                  <option value="Homeopatia">
-                  <option value="Infectologia">
-                  <option value="Mastologia">
-                  <option value="Medicina de Emergência">
-                  <option value="Medicina de Família e Comunidade">
-                  <option value="Medicina do Esporte">
-                  <option value="Medicina do Trabalho">
-                  <option value="Medicina Física e Reabilitação">
-                  <option value="Medicina Intensiva">
-                  <option value="Medicina Legal e Perícia Médica">
-                  <option value="Medicina Nuclear">
-                  <option value="Medicina Preventiva">
-                  <option value="Nefrologia">
-                  <option value="Neurocirurgia">
-                  <option value="Neurologia">
-                  <option value="Nutrologia">
-                  <option value="Oftalmologia">
-                  <option value="Oncologia Clínica">
-                  <option value="Ortopedia e Traumatologia">
-                  <option value="Otorrinolaringologia">
-                  <option value="Patologia">
-                  <option value="Patologia Clínica / Medicina Laboratorial">
-                  <option value="Pediatria">
-                  <option value="Pneumologia">
-                  <option value="Psiquiatria">
-                  <option value="Radiologia e Diagnóstico por Imagem">
-                  <option value="Radioterapia">
-                  <option value="Reumatologia">
-                  <option value="Urologia">
-                </datalist>
-              </div>
-            </div>
-
-            <div class="profile-preview">
-              <div id="profile-preview-avatar" class="profile-preview-avatar">U</div>
-              <div>
-                <strong id="profile-preview-name">Seu nome</strong>
-                <small id="profile-preview-specialty">Sua especialidade</small>
-              </div>
             </div>
 
             <div class="profile-actions">
@@ -1650,7 +1577,7 @@
             </div>
           </article>
 
-          <article class="setting-row">
+          <article class="setting-row settings-security-card">
             <div>
               <h2>Login e segurança</h2>
               <p>
@@ -1658,9 +1585,9 @@
               </p>
             </div>
 
-            <div class="security-grid">
-              <div class="security-field full">
-                <span>Face ID / Passkey</span>
+            <div class="security-grid security-grid-spaced">
+              <div class="security-field full security-subcard">
+                <span class="security-subcard-title">Face ID / Passkey</span>
                 <div class="security-email" style="display:block;padding:12px;line-height:1.5;">
                   Use uma Passkey para entrar no PWA com a autenticação do iPhone. No iPhone, o iOS pode usar Face ID para confirmar sua identidade.
                 </div>
@@ -1685,23 +1612,31 @@
                 ></span>
               </div>
 
-              <div class="security-field full">
-                <span>E-mail da conta</span>
+              <div class="security-field full security-subcard">
+                <span class="security-subcard-title">E-mail da conta</span>
                 <div class="account-change-row">
                   <input id="account-email" type="email" autocomplete="email" placeholder="seu@email.com">
                   <button id="save-account-email" class="button secondary" type="button">Trocar e-mail</button>
                 </div>
-                <small>A alteração pode exigir confirmação no novo e-mail antes de entrar em vigor.</small>
+                <small>Para trocar o e-mail, confirme primeiro sua senha atual. Depois, confirme a alteração pelo e-mail enviado.</small>
+                <label class="security-confirm-field">
+                  <span>Senha atual para confirmar</span>
+                  <input id="account-email-current-password" type="password" autocomplete="current-password" placeholder="Sua senha atual">
+                </label>
                 <span id="account-email-status" class="settings-save-status" aria-live="polite"></span>
               </div>
 
-              <div class="security-field full">
-                <span>Telefone</span>
+              <div class="security-field full security-subcard">
+                <span class="security-subcard-title">Telefone</span>
                 <div class="account-change-row">
                   <input id="account-phone" type="tel" autocomplete="tel" placeholder="+55 61 99999-9999">
                   <button id="save-account-phone" class="button secondary" type="button">Trocar telefone</button>
                 </div>
-                <small>Use o formato internacional. O Supabase enviará um código de confirmação por SMS quando o provedor estiver habilitado.</small>
+                <small>Confirme sua senha atual antes da troca. Depois, confirme o novo telefone com o código recebido por SMS.</small>
+                <label class="security-confirm-field">
+                  <span>Senha atual para confirmar</span>
+                  <input id="account-phone-current-password" type="password" autocomplete="current-password" placeholder="Sua senha atual">
+                </label>
                 <div class="account-change-row account-phone-verify">
                   <input id="account-phone-otp" type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code" placeholder="Código SMS">
                   <button id="verify-account-phone" class="button secondary" type="button">Confirmar telefone</button>
@@ -1709,8 +1644,8 @@
                 <span id="account-phone-status" class="settings-save-status" aria-live="polite"></span>
               </div>
 
-              <div class="security-field full quick-access-settings">
-                <span>Acesso externo ao Prontuário Rápido</span>
+              <div class="security-field full quick-access-settings security-subcard">
+                <span class="security-subcard-title">Acesso externo ao Prontuário Rápido</span>
                 <div id="quick-access-address" class="security-email">Defina um nome de usuário no perfil.</div>
                 <div class="account-pin-grid">
                   <input id="quick-access-pin" type="password" inputmode="numeric" maxlength="4" autocomplete="new-password" placeholder="PIN de 4 dígitos">
@@ -1721,8 +1656,10 @@
                 <span id="quick-access-status" class="settings-save-status" aria-live="polite"></span>
               </div>
 
-              <label class="security-field full">
-                <span>Senha atual</span>
+              <div class="security-field full security-subcard password-security-subcard">
+                <span class="security-subcard-title">Senha da conta</span>
+                <label class="security-field">
+                  <span>Senha atual</span>
                 <input
                   id="current-password"
                   type="password"
@@ -1732,10 +1669,11 @@
                 <small>
                   Necessária para confirmar sua identidade antes da alteração.
                 </small>
-              </label>
+                </label>
 
-              <label class="security-field">
-                <span>Nova senha</span>
+                <div class="password-pair">
+                <label class="security-field">
+                  <span>Nova senha</span>
                 <input
                   id="new-password"
                   type="password"
@@ -1743,10 +1681,10 @@
                   autocomplete="new-password"
                   placeholder="Mínimo de 8 caracteres"
                 >
-              </label>
+                </label>
 
-              <label class="security-field">
-                <span>Confirmar nova senha</span>
+                <label class="security-field">
+                  <span>Confirmar nova senha</span>
                 <input
                   id="confirm-password"
                   type="password"
@@ -1754,10 +1692,10 @@
                   autocomplete="new-password"
                   placeholder="Repita a nova senha"
                 >
-              </label>
-            </div>
+                </label>
+                </div>
 
-            <div class="settings-actions">
+                <div class="settings-actions">
               <button
                 id="save-password"
                 class="button primary"
@@ -1771,9 +1709,11 @@
                 class="settings-save-status"
                 aria-live="polite"
               ></span>
+                </div>
+              </div>
             </div>
 
-            <div class="security-field full" style="margin-top:16px;">
+            <div class="security-field full security-subcard" style="margin-top:16px;">
               <span>Sessões abertas</span>
               <small>
                 Encerre o acesso da sua conta em outros navegadores e dispositivos, mantendo este navegador conectado.
@@ -1854,7 +1794,7 @@
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
-  <script src="assets/js/configuracoes.js?v=13.4-account"></script>
+  <script src="assets/js/configuracoes.js?v=13.5-security-layout"></script>
   <script src="assets/js/dashboard-layout-settings.js?v=3-reference"></script>
   <script defer src="assets/js/pwa.js?v=5"></script>
 </body>
