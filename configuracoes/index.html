@@ -724,6 +724,22 @@
       min-width:0 !important;
     }
 
+
+    .profile-field small{color:var(--muted);font-size:10px;line-height:1.4}
+    .account-change-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center}
+    .account-change-row input,.account-pin-grid input{
+      width:100%;min-height:42px;padding:0 11px;border:1px solid var(--border);border-radius:10px;
+      background:var(--surface);color:var(--text);outline:none
+    }
+    .account-change-row input:focus,.account-pin-grid input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+    .account-phone-verify{margin-top:8px}
+    .account-pin-grid{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-top:8px}
+    .quick-access-settings{padding-top:6px}
+    .settings-personalize-grid.is-profile-view > .setting-row{display:none!important}
+    .settings-personalize-grid.is-profile-view > .setting-row.settings-profile-card{display:block!important}
+    @media(max-width:700px){
+      .account-change-row,.account-pin-grid{grid-template-columns:1fr}
+    }
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=3-work-settings">
@@ -794,8 +810,8 @@
             </div>
 
             <div class="profile-grid">
-              <label class="profile-field full">
-                <span>Nome de usuário</span>
+              <label class="profile-field">
+                <span>Nome</span>
                 <input
                   id="profile-name"
                   type="text"
@@ -803,6 +819,20 @@
                   placeholder="Ex.: Luiz Arantes"
                   autocomplete="name"
                 >
+              </label>
+
+              <label class="profile-field">
+                <span>Nome de usuário</span>
+                <input
+                  id="profile-username"
+                  type="text"
+                  maxlength="30"
+                  placeholder="Ex.: luizarantes"
+                  autocomplete="username"
+                  autocapitalize="none"
+                  spellcheck="false"
+                >
+                <small>3–30 caracteres: letras minúsculas, números, ponto, hífen ou _.</small>
               </label>
 
               <div class="profile-field">
@@ -1655,15 +1685,41 @@
                 ></span>
               </div>
 
-              <label class="security-field full">
+              <div class="security-field full">
                 <span>E-mail da conta</span>
-                <div
-                  id="account-email"
-                  class="security-email"
-                >
-                  —
+                <div class="account-change-row">
+                  <input id="account-email" type="email" autocomplete="email" placeholder="seu@email.com">
+                  <button id="save-account-email" class="button secondary" type="button">Trocar e-mail</button>
                 </div>
-              </label>
+                <small>A alteração pode exigir confirmação no novo e-mail antes de entrar em vigor.</small>
+                <span id="account-email-status" class="settings-save-status" aria-live="polite"></span>
+              </div>
+
+              <div class="security-field full">
+                <span>Telefone</span>
+                <div class="account-change-row">
+                  <input id="account-phone" type="tel" autocomplete="tel" placeholder="+55 61 99999-9999">
+                  <button id="save-account-phone" class="button secondary" type="button">Trocar telefone</button>
+                </div>
+                <small>Use o formato internacional. O Supabase enviará um código de confirmação por SMS quando o provedor estiver habilitado.</small>
+                <div class="account-change-row account-phone-verify">
+                  <input id="account-phone-otp" type="text" inputmode="numeric" maxlength="6" autocomplete="one-time-code" placeholder="Código SMS">
+                  <button id="verify-account-phone" class="button secondary" type="button">Confirmar telefone</button>
+                </div>
+                <span id="account-phone-status" class="settings-save-status" aria-live="polite"></span>
+              </div>
+
+              <div class="security-field full quick-access-settings">
+                <span>Acesso externo ao Prontuário Rápido</span>
+                <div id="quick-access-address" class="security-email">Defina um nome de usuário no perfil.</div>
+                <div class="account-pin-grid">
+                  <input id="quick-access-pin" type="password" inputmode="numeric" maxlength="4" autocomplete="new-password" placeholder="PIN de 4 dígitos">
+                  <input id="quick-access-pin-confirm" type="password" inputmode="numeric" maxlength="4" autocomplete="new-password" placeholder="Confirmar PIN">
+                  <button id="save-quick-access-pin" class="button primary" type="button">Salvar PIN</button>
+                </div>
+                <small>Quem abrir seu endereço pessoal verá uma tela simples com seu nome de usuário e PIN. O PIN não é salvo em texto puro.</small>
+                <span id="quick-access-status" class="settings-save-status" aria-live="polite"></span>
+              </div>
 
               <label class="security-field full">
                 <span>Senha atual</span>
@@ -1759,26 +1815,35 @@
         ["Caderno de erros", { icon: "✦", wide: true }],
         ["Revisão de matérias", { icon: "↺", wide: true }]
       ]);
+      const profileCards = new Set(["Perfil","Login e segurança"]);
 
       section.querySelectorAll(":scope > .setting-row").forEach((card) => {
         const heading = card.querySelector("h2");
         const title = heading?.textContent?.trim() || "";
         const config = visibleCards.get(title);
-        if (!config) return;
-        card.classList.add("settings-personalize-card");
-        if (config.wide) card.classList.add("settings-wide-card");
-        heading.setAttribute("data-settings-icon", config.icon);
+        if (config) {
+          card.classList.add("settings-personalize-card");
+          if (config.wide) card.classList.add("settings-wide-card");
+          heading.setAttribute("data-settings-icon", config.icon);
+        }
+        if (profileCards.has(title)) card.classList.add("settings-profile-card");
       });
 
       document.querySelectorAll(".settings-tab").forEach((tab) => {
         tab.addEventListener("click", () => {
-          if (tab.dataset.settingsTab !== "personalizar") return;
+          const target = tab.dataset.settingsTab;
+          if (!["personalizar","perfil"].includes(target)) return;
+          section.classList.toggle("is-profile-view", target === "perfil");
           document.querySelectorAll(".settings-tab").forEach((item) => {
             item.classList.toggle("active", item === tab);
             item.toggleAttribute("aria-current", item === tab);
           });
         });
       });
+
+      if (location.hash === "#perfil") {
+        document.querySelector('[data-settings-tab="perfil"]')?.click();
+      }
     })();
   </script>
 
@@ -1789,7 +1854,7 @@
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
-  <script src="assets/js/configuracoes.js?v=13.3-auth"></script>
+  <script src="assets/js/configuracoes.js?v=13.4-account"></script>
   <script src="assets/js/dashboard-layout-settings.js?v=2-work"></script>
   <script defer src="assets/js/pwa.js?v=5"></script>
 </body>
