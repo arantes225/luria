@@ -420,13 +420,22 @@ button:disabled { cursor: not-allowed; opacity: .65; }
 
 .menu-open {
   display: none;
-  flex: 0 0 auto;
-  width: 42px;
-  height: 42px;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-self: center;
+  place-items: center;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
   border-radius: 11px;
+  line-height: 1;
+  font-size: 20px;
 }
 
 .page-heading { min-width: 0; }
@@ -912,6 +921,15 @@ body.app-ready .app-shell .main { opacity: 1; }
 }
 
 @media (max-width: 760px) {
+  .menu-open {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    min-height: 38px;
+    border-radius: 10px;
+  }
+
   .selected-activity {
     align-items: flex-start;
     flex-direction: column;
