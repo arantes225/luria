@@ -2252,20 +2252,6 @@
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=15">
   <link rel="canonical" href="/cronograma/">
-  <script>(function(){try{if(location.pathname.endsWith("/cronograma.html"))history.replaceState(null,"","/cronograma/"+location.search+location.hash);}catch(e){}})();</script>
-</head>
-
-<body data-page="cronograma">
-  <script>
-    (function(){
-      const params=new URLSearchParams(location.search);
-      if(params.get("settings")==="1"){
-        document.body.classList.add("schedule-settings-embed");
-        /* O conteúdo de Configurações > Cronograma é embutido: não deve abrir/renderizar o shell lateral. */
-        document.documentElement.classList.add("schedule-settings-embed-root");
-      }
-    })();
-  </script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -2581,7 +2567,7 @@
           <section class="planner-panel">
             <div class="planner-header">
               <div>
-                <h2>Planejador semanal</h2>
+                <h2>Agenda</h2>
                 <p id="planner-range">Carregando...</p>
               </div>
 
@@ -3071,7 +3057,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=18.1-calendar-focus"></script>
+  <script src="assets/js/cronograma.js?v=18.3-agenda-web"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
