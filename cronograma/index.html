@@ -2228,20 +2228,20 @@
   body:not(.schedule-settings-embed) .month-day:nth-child(7n){border-right:0!important}
   body:not(.schedule-settings-embed) .month-topic,
   body:not(.schedule-settings-embed) .month-event{padding:5px 7px!important;border-radius:6px!important;font-size:9px!important}
-  body:not(.schedule-settings-embed) .week-planner{border:0!important;gap:8px!important;overflow:visible!important}
+  body:not(.schedule-settings-embed) .week-planner{border:0!important;gap:8px!important;overflow:visible!important;height:auto!important;min-height:0!important}
   body:not(.schedule-settings-embed) .planner-day{min-height:0!important;border:1px solid var(--border)!important;border-radius:12px!important;overflow:hidden}
   body:not(.schedule-settings-embed) .planner-day-header{min-height:44px!important}
   body:not(.schedule-settings-embed) .planner-day-body{padding:7px!important;gap:6px!important}
   body:not(.schedule-settings-embed) .topic-card{padding:8px!important;border-radius:8px!important}
   body:not(.schedule-settings-embed) .topic-card h3{font-size:10px!important}
   @media(min-width:1050px){
-    body:not(.schedule-settings-embed) .planner-panel{min-height:calc(100vh - 150px)}
+    body:not(.schedule-settings-embed) .planner-panel{min-height:0}
     body:not(.schedule-settings-embed) .month-day{min-height:calc((100vh - 255px)/5)!important}
   }
 
 
   .agenda-workspace{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:14px;align-items:start}
-  .agenda-workspace .planner-panel{min-width:0}
+  .agenda-workspace .planner-panel{min-width:0;height:max-content;align-self:start}
   .agenda-side{display:grid;gap:10px;position:sticky;top:14px}
   .agenda-side-card{padding:13px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
   .agenda-side-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px}
