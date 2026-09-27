@@ -527,15 +527,20 @@
       .select("*").single();
     if(error){console.error("Telefone: não foi possível iniciar a sessão",error);return;}
     state.phoneSession=session;
+    const firstLessonStep=lessonMode ? item.ai_context.lesson_flow[0] : null;
+    const openingText=[
+      String(item.opening_message||"").trim(),
+      String(firstLessonStep?.prompt||"").trim()
+    ].filter(Boolean).join("\n\n");
     const {error:msgError}=await sb.from("interconsultation_messages").insert({
-      session_id:session.id,user_id:state.user.id,turn_index:0,sender:"requester",content:item.opening_message,metadata:{pilot:true}
+      session_id:session.id,user_id:state.user.id,turn_index:0,sender:"requester",content:openingText,metadata:{pilot:true,lesson:lessonMode}
     });
     if(msgError) console.warn("Telefone: falha ao registrar abertura",msgError);
     $("plantao-phone-inbox").hidden=true;
     $("plantao-phone-station").hidden=false;
     setPhoneHeaderPersona(item);
     $("plantao-phone-context").textContent=item.title||item.specialty||"Caso clínico";
-    renderPhoneMessages([{sender:"requester",content:item.opening_message}]);
+    renderPhoneMessages([{sender:"requester",content:openingText}]);
     const choices=$("plantao-phone-choices");
     if(choices) choices.hidden=false;
     renderPhoneChoices();
