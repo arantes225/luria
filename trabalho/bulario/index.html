@@ -14,11 +14,12 @@
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <style>
-    .tool-shell{display:grid;gap:16px}
-    .tool-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .tool-hero h2{margin:0 0 8px;font-size:24px}
-    .tool-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .tool-placeholder{padding:20px;border:1px dashed var(--border);border-radius:16px;background:var(--surface-2);color:var(--muted)}
+    .bulario{display:grid;gap:14px}.bulario-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .bulario-search{flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text)}
+    .bulario-count{font-size:13px;color:var(--muted)}.drug-list{display:grid;gap:8px}
+    .drug{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+    .drug b{display:block;margin-bottom:4px}.drug small{color:var(--muted);line-height:1.4}
+    .empty{padding:20px;border:1px dashed var(--border);border-radius:14px;color:var(--muted)}
   </style>
 </head>
 <body data-page="trabalho_bulario">
@@ -29,17 +30,14 @@
       <div class="page">
         <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading">
-            <span class="eyebrow" data-page-eyebrow></span>
-            <h1 data-page-title></h1>
-          </div>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
-        <section class="tool-shell">
-          <article class="tool-hero">
-            <h2>Bulário</h2>
-            <p>Área do ambiente Trabalho destinada à consulta organizada de medicamentos.</p>
-          </article>
-          <div class="tool-placeholder">A página já está criada e pronta para receber as funções que você definir.</div>
+        <section class="bulario">
+          <div class="bulario-head">
+            <input id="drug-search" class="bulario-search" type="search" placeholder="Buscar medicamento, classe ou princípio ativo" autocomplete="off">
+            <span id="drug-count" class="bulario-count"></span>
+          </div>
+          <div id="drug-list" class="drug-list"><div class="empty">Carregando medicamentos…</div></div>
         </section>
       </div>
     </main>
@@ -48,5 +46,12 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.14-tools"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
+  <script>
+    (()=>{const q=document.getElementById('drug-search'),box=document.getElementById('drug-list'),count=document.getElementById('drug-count');let rows=[];
+    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const draw=()=>{const t=q.value.trim().toLowerCase(),r=t?rows.filter(x=>[x.name,x.active_ingredient,x.therapeutic_class,x.pharmacological_class].some(v=>v&&v.toLowerCase().includes(t))):rows;count.textContent=`${r.length} medicamento${r.length===1?'':'s'}`;box.innerHTML=r.length?r.map(x=>`<article class="drug"><b>${esc(x.name)}</b><small>${esc(x.active_ingredient||'Princípio ativo pendente')} · ${esc(x.pharmacological_class||'Sem classe farmacológica')}<br>${esc(x.therapeutic_class||'Sem classe terapêutica')}</small></article>`).join(''):'<div class="empty">Nenhum medicamento encontrado.</div>'};
+    q.addEventListener('input',draw);
+    (async()=>{const {data,error}=await window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class').order('name');if(error){box.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';count.textContent='';return}rows=data||[];draw()})()})();
+  </script>
 </body>
 </html>
