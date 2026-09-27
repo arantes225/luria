@@ -9478,17 +9478,17 @@ function wirePlannerNavigation() {
   });
 
   document.getElementById("planner-view-week")?.addEventListener("click", () => {
-    scheduleState.plannerView =
-      "week";
-
-    renderSchedule();
+    scheduleState.plannerView = "week";
+    updatePlannerViewControls();
+    renderWeeklyOverview();
+    wireDynamicInteractions();
   });
 
   document.getElementById("planner-view-month")?.addEventListener("click", () => {
-    scheduleState.plannerView =
-      "month";
-
-    renderSchedule();
+    scheduleState.plannerView = "month";
+    updatePlannerViewControls();
+    renderMonthPlanner();
+    wireDynamicInteractions();
   });
 }
 
