@@ -91,7 +91,11 @@
     if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
     if (img) img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
     const badge = document.getElementById('plantao-consciousness');
-    if (badge) badge.textContent = vitals.mental || 'Estado neurológico não informado';
+    if (badge) {
+      badge.textContent = '';
+      badge.hidden = true;
+      badge.setAttribute('aria-hidden', 'true');
+    }
     if (!frame) frame = requestAnimationFrame(draw);
   }
 
