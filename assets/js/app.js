@@ -591,11 +591,19 @@
     .luria-pomodoro-top { margin-right:2px; }
     #luria-notification-toggle { margin-right:4px; }
 
-    /* Alinha Pomodoro + sino + L ao botão de recolher a sidebar no desktop. */
+    /* Cabeçalho global: Timer + sino + conta usam a mesma altura de Configurações em todas as páginas. */
     @media (min-width:981px) {
+      .topbar {
+        min-height:52px !important;
+        align-items:flex-start !important;
+      }
+      .topbar .page-heading {
+        align-self:flex-start !important;
+      }
       .topbar .luria-notifications {
         position:relative !important;
         top:8px !important;
+        align-self:flex-start !important;
       }
     }
 
