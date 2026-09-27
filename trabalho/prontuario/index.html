@@ -9,7 +9,7 @@
   <title>Prontuário rápido · LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/quick-chart-external.css?v=1">
+  <link rel="stylesheet" href="/assets/css/quick-chart-external.css?v=2">
 </head>
 <body>
   <main class="external-chart">
@@ -18,24 +18,40 @@
         <img src="/assets/img/logos/logo-icone-original.png?v=luria10" alt="">
         <div><strong>LURIA</strong><span>Prontuário rápido</span></div>
       </div>
-      <span id="external-status" class="external-status">Abrindo…</span>
+      <span id="external-status" class="external-status">Acesso externo</span>
     </header>
+
+    <section id="external-gate" class="external-editor external-gate">
+      <div class="external-title">
+        <div>
+          <span>Sem login</span>
+          <h1>Digite seu código</h1>
+        </div>
+      </div>
+      <p class="external-privacy">Use o seu código fixo do Prontuário Rápido. Ele não fica salvo neste computador.</p>
+      <label class="external-code-field">
+        <span>Código de acesso</span>
+        <input id="external-code" type="text" inputmode="text" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="32" placeholder="Ex.: LURIA7K4M9P">
+      </label>
+      <button id="external-enter" class="external-enter" type="button">Abrir prontuário</button>
+      <p id="external-gate-error" class="external-gate-error" hidden></p>
+    </section>
 
     <section id="external-error" class="external-error" hidden>
       <h1>Este acesso não está disponível</h1>
-      <p id="external-error-message">Confira o link ou gere um novo acesso no LURIA.</p>
+      <p id="external-error-message">Confira o código e tente novamente.</p>
     </section>
 
     <section id="external-editor" class="external-editor" hidden>
       <div class="external-title">
         <div>
           <span>Acesso temporário</span>
-          <h1 id="external-title">Prontuário rápido</h1>
+          <h1>Prontuário rápido</h1>
         </div>
         <small id="external-expiry"></small>
       </div>
 
-      <p class="external-privacy">Use iniciais, leito ou identificador interno sempre que possível. Evite inserir dados pessoais desnecessários.</p>
+      <p class="external-privacy">Use iniciais, leito ou identificador interno sempre que possível. O conteúdo é apagado automaticamente após 12 horas sem edição.</p>
 
       <div class="chart-grid">
         <label class="wide"><span>Paciente / leito</span><input data-chart-field="patient" maxlength="120" autocomplete="off" placeholder="Ex.: J.S. · Leito 12"></label>
@@ -52,10 +68,11 @@
 
       <footer class="external-savebar">
         <span id="external-save-state">Salvo</span>
+        <button id="external-clear" type="button" class="external-clear">Limpar</button>
         <button id="external-save" type="button">Salvar agora</button>
       </footer>
     </section>
   </main>
-  <script src="/assets/js/quick-chart-external.js?v=2"></script>
+  <script src="/assets/js/quick-chart-external.js?v=3"></script>
 </body>
 </html>
