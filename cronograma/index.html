@@ -2240,6 +2240,21 @@
   }
 
 
+  body:not(.schedule-settings-embed) .planner-header{display:flex;align-items:center!important;justify-content:space-between;gap:14px;margin-bottom:12px!important}
+  .planner-header-left{display:flex;align-items:center;gap:14px;min-width:0}
+  .planner-period-title{margin:0!important;font-size:20px!important;font-weight:850!important;letter-spacing:-.025em;color:var(--text);white-space:nowrap}
+  .planner-nav-arrows{display:flex;align-items:center;gap:6px;order:initial!important}
+  .planner-nav-arrows button{width:38px;height:38px;padding:0;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);font-size:23px;line-height:1;display:grid;place-items:center}
+  .planner-nav-arrows button:hover{background:var(--surface-2);border-color:color-mix(in srgb,var(--accent) 35%,var(--border))}
+  .planner-today{min-height:38px;padding:0 15px;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--text);font:inherit;font-size:11px;font-weight:750;cursor:pointer}
+  .planner-today:hover{background:var(--surface-2)}
+  body:not(.schedule-settings-embed) .planner-tools{display:flex;flex-direction:row!important;align-items:center!important;gap:8px!important}
+  @media(max-width:720px){
+    body:not(.schedule-settings-embed) .planner-header{align-items:flex-start!important;flex-wrap:wrap}
+    .planner-period-title{font-size:17px!important}
+    .planner-nav-arrows button{width:34px;height:34px}
+    body:not(.schedule-settings-embed) .planner-tools{width:100%;justify-content:space-between}
+  }
   .agenda-workspace{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:14px;align-items:start}
   .agenda-workspace .planner-panel{min-width:0;height:max-content;align-self:start}
   .agenda-side{display:grid;gap:10px;position:sticky;top:14px}
@@ -2590,21 +2605,19 @@
           <div class="agenda-workspace">
           <section class="planner-panel">
             <div class="planner-header">
-              <div>
-                <h2>Agenda</h2>
-                <p id="planner-range">Carregando...</p>
+              <div class="planner-header-left">
+                <div class="planner-nav planner-nav-arrows">
+                  <button id="week-prev" type="button" aria-label="Período anterior">‹</button>
+                  <button id="week-next" type="button" aria-label="Próximo período">›</button>
+                </div>
+                <h2 id="planner-range" class="planner-period-title">Carregando...</h2>
               </div>
 
               <div class="planner-tools">
+                <button id="week-today" class="planner-today" type="button">Hoje</button>
                 <div class="planner-view-toggle" role="group" aria-label="Visualização do planejador">
                   <button id="planner-view-week" class="active" type="button" aria-pressed="true">Semana</button>
                   <button id="planner-view-month" type="button" aria-pressed="false">Mês</button>
-                </div>
-
-                <div class="planner-nav">
-                  <button id="week-prev" type="button" aria-label="Período anterior">‹</button>
-                  <button id="week-today" type="button">Esta semana</button>
-                  <button id="week-next" type="button" aria-label="Próximo período">›</button>
                 </div>
               </div>
             </div>
