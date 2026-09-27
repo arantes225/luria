@@ -484,7 +484,8 @@ body[data-dashboard-layout]:not([data-dashboard-layout="old"]) #dashboard-altern
 body[data-dashboard-layout="1"] .topbar,
 body[data-dashboard-layout="2"] .topbar,
 body[data-dashboard-layout="3"] .topbar,
-body[data-dashboard-layout="4"] .topbar{
+body[data-dashboard-layout="4"] .topbar,
+body[data-dashboard-layout="5"] .topbar{
   background:transparent!important;
   background-color:transparent!important;
   border:0!important;
@@ -499,8 +500,10 @@ body[data-dashboard-layout="2"] .topbar::before,
 body[data-dashboard-layout="2"] .topbar::after,
 body[data-dashboard-layout="3"] .topbar::before,
 body[data-dashboard-layout="3"] .topbar::after,
-body[data-dashboard-layout="4"] .topbar::before,
-body[data-dashboard-layout="4"] .topbar::after{
+body[data-dashboard-layout="4"] .topbar,
+body[data-dashboard-layout="5"] .topbar::before,
+body[data-dashboard-layout="4"] .topbar,
+body[data-dashboard-layout="5"] .topbar::after{
   content:none!important;
   display:none!important;
 }
@@ -508,21 +511,24 @@ body[data-dashboard-layout="4"] .topbar::after{
 body[data-dashboard-layout="1"] .topbar,
 body[data-dashboard-layout="2"] .topbar,
 body[data-dashboard-layout="3"] .topbar,
-body[data-dashboard-layout="4"] .topbar{
+body[data-dashboard-layout="4"] .topbar,
+body[data-dashboard-layout="5"] .topbar{
   justify-content:flex-end!important;
 }
 
 body[data-dashboard-layout="1"] .dl-topbar-controls,
 body[data-dashboard-layout="2"] .dl-topbar-controls,
 body[data-dashboard-layout="3"] .dl-topbar-controls,
-body[data-dashboard-layout="4"] .dl-topbar-controls{
+body[data-dashboard-layout="4"] .dl-topbar-controls,
+body[data-dashboard-layout="5"] .dl-topbar-controls{
   margin-left:auto!important;
 }
 
 body[data-dashboard-layout="1"] .dl-account,
 body[data-dashboard-layout="2"] .dl-account,
 body[data-dashboard-layout="3"] .dl-account,
-body[data-dashboard-layout="4"] .dl-account{
+body[data-dashboard-layout="4"] .dl-account,
+body[data-dashboard-layout="5"] .dl-account{
   flex:0 0 auto;
 }
 
@@ -531,7 +537,8 @@ body[data-dashboard-layout="4"] .dl-account{
 body[data-dashboard-layout="1"] .dl-timer-settings-toggle,
 body[data-dashboard-layout="2"] .dl-timer-settings-toggle,
 body[data-dashboard-layout="3"] .dl-timer-settings-toggle,
-body[data-dashboard-layout="4"] .dl-timer-settings-toggle{
+body[data-dashboard-layout="4"] .dl-timer-settings-toggle,
+body[data-dashboard-layout="5"] .dl-timer-settings-toggle{
   display:inline-grid!important;
   place-items:center!important;
   align-items:center!important;
@@ -545,7 +552,8 @@ body[data-dashboard-layout="4"] .dl-timer-settings-toggle{
 body[data-dashboard-layout="1"] .dl-pomodoro,
 body[data-dashboard-layout="2"] .dl-pomodoro,
 body[data-dashboard-layout="3"] .dl-pomodoro,
-body[data-dashboard-layout="4"] .dl-pomodoro{
+body[data-dashboard-layout="4"] .dl-pomodoro,
+body[data-dashboard-layout="5"] .dl-pomodoro{
   align-items:center!important;
 }
 
@@ -558,7 +566,9 @@ body[data-dashboard-layout="2"] .main::after,
 body[data-dashboard-layout="3"] .main::before,
 body[data-dashboard-layout="3"] .main::after,
 body[data-dashboard-layout="4"] .main::before,
-body[data-dashboard-layout="4"] .main::after{
+body[data-dashboard-layout="4"] .main::after,
+body[data-dashboard-layout="5"] .main::before,
+body[data-dashboard-layout="5"] .main::after{
   inset:-14%!important;
   transform:rotate(-8deg) scale(1.18)!important;
   clip-path:none!important;
@@ -567,7 +577,8 @@ body[data-dashboard-layout="4"] .main::after{
 body[data-dashboard-layout="1"] .main,
 body[data-dashboard-layout="2"] .main,
 body[data-dashboard-layout="3"] .main,
-body[data-dashboard-layout="4"] .main{
+body[data-dashboard-layout="4"] .main,
+body[data-dashboard-layout="5"] .main{
   background:transparent!important;
   background-image:none!important;
 }
@@ -585,14 +596,16 @@ body[data-dashboard-layout="4"] .page{
 body[data-dashboard-layout="1"] .topbar .luria-notifications,
 body[data-dashboard-layout="2"] .topbar .luria-notifications,
 body[data-dashboard-layout="3"] .topbar .luria-notifications,
-body[data-dashboard-layout="4"] .topbar .luria-notifications{
+body[data-dashboard-layout="4"] .topbar,
+body[data-dashboard-layout="5"] .topbar .luria-notifications{
   margin-right:8px!important;
 }
 
 body[data-dashboard-layout="1"] .dl-account .dl-avatar,
 body[data-dashboard-layout="2"] .dl-account .dl-avatar,
 body[data-dashboard-layout="3"] .dl-account .dl-avatar,
-body[data-dashboard-layout="4"] .dl-account .dl-avatar{
+body[data-dashboard-layout="4"] .dl-account,
+body[data-dashboard-layout="5"] .dl-account .dl-avatar{
   width:44px!important;
   height:44px!important;
   min-width:44px!important;
@@ -696,7 +709,8 @@ body[data-dashboard-layout="4"] .dl-account .dl-avatar{
 body[data-dashboard-layout="1"] .main,
 body[data-dashboard-layout="2"] .main,
 body[data-dashboard-layout="3"] .main,
-body[data-dashboard-layout="4"] .main{
+body[data-dashboard-layout="4"] .main,
+body[data-dashboard-layout="5"] .main{
   padding-bottom:16px!important;
   overscroll-behavior-y:none!important;
 }
