@@ -4905,6 +4905,7 @@ function startErrorSpotlight(){
   if(errorSpotlightTimer)clearInterval(errorSpotlightTimer);paint();if(items.length>1)errorSpotlightTimer=setInterval(paint,15000);
 }
 function renderErrorHomeExtras(){
+  setTimeout(startErrorSpotlight,0);
   const featured=document.getElementById("error-featured-list");
   if(featured){
     featured.innerHTML=errorLibraryItems.slice().sort((a,b)=>Number(b.review_count||0)-Number(a.review_count||0)).slice(0,4).map(item=>`
