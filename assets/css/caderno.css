@@ -3412,3 +3412,21 @@
 
 /* v21.3 — cadernos demonstrativos da estante inicial */
 .notebook-placeholder-card{opacity:.88;border-style:dashed!important}.notebook-demo-badge{display:inline-flex;width:max-content;margin-top:auto;padding:4px 7px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:7px;font-weight:800}.notebook-placeholder-card .notebook-book-icon{opacity:.75}
+
+
+/* v22.0 — editor inspirado nas referências: navegador + folha + inspector */
+#notebook-view-editor .notebook-workspace{grid-template-columns:245px minmax(520px,1fr) 235px!important;gap:12px!important;align-items:start}
+.notebook-editor-frame{min-width:0;border:1px solid var(--border);border-radius:13px;background:var(--surface);overflow:hidden;box-shadow:0 4px 18px rgba(15,23,42,.04)}
+.notebook-editor-frame .notebook-toolbar{position:sticky!important;top:70px!important;margin:0!important;border:0!important;border-bottom:1px solid var(--border)!important;border-radius:0!important;box-shadow:none!important;min-height:48px!important;padding:6px 9px!important}
+.notebook-editor-frame .notebook-document-wrap{padding:0!important;background:var(--surface)!important}
+.notebook-editor-frame .notebook-paper{width:100%!important;min-height:calc(100vh - 175px)!important;margin:0!important;padding:34px 42px 80px!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.notebook-editor-frame .notebook-document-head{padding-bottom:16px!important;margin-bottom:20px!important}
+.notebook-editor-frame .notebook-document-area{display:inline-flex;width:max-content;padding:5px 9px;border-radius:999px;background:var(--accent-soft);text-transform:none!important;letter-spacing:0!important;font-size:8px!important}
+.notebook-editor-frame .notebook-document-head h1{font-size:28px!important;letter-spacing:-.025em!important}
+.notebook-topic-panel{top:76px!important;border-radius:13px!important;padding:12px!important;box-shadow:none!important}
+.notebook-topic-panel-title .badge{display:none!important}.notebook-topic-panel-head h2{margin:0!important;font-size:14px!important}.notebook-topic-panel-head h2:before{content:"Meus cadernos";font-size:14px}.notebook-topic-panel-head h2{font-size:0!important}
+.notebook-topic-item{padding:9px!important;border-radius:8px!important}.notebook-topic-item strong{font-size:9.5px!important}.notebook-topic-item small{font-size:7.8px!important}
+.notebook-inspector{position:sticky;top:76px;display:grid;gap:10px;max-height:calc(100vh - 96px);overflow:auto}.notebook-inspector section{padding:13px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}.notebook-inspector h3{margin:0 0 12px;font-size:11px}.notebook-inspector dl{margin:0;display:grid;gap:10px}.notebook-inspector dl div{display:grid;gap:2px}.notebook-inspector dt{font-size:7.5px;color:var(--muted)}.notebook-inspector dd{margin:0;font-size:9px;font-weight:750}.notebook-inspector section:last-child{display:grid;gap:6px}.notebook-inspector button{width:100%;min-height:32px;padding:0 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;font-size:8px;font-weight:750;text-align:left;cursor:pointer}.notebook-inspector button:hover{background:var(--surface-2)}.notebook-inspector button.danger{color:var(--danger)}
+.notebook-tabs{margin-bottom:12px!important}
+@media(max-width:1180px){#notebook-view-editor .notebook-workspace{grid-template-columns:220px minmax(0,1fr)!important}.notebook-inspector{display:none!important}}
+@media(max-width:780px){#notebook-view-editor .notebook-workspace{display:block!important}.notebook-topic-panel{position:relative!important;top:auto!important;margin-bottom:10px}.notebook-editor-frame .notebook-paper{padding:24px 18px 60px!important}}
