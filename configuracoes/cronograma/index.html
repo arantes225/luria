@@ -24,13 +24,40 @@
     .settings-tab.active{color:var(--accent)}
     .settings-tab.active::after{content:"";position:absolute;left:10px;right:10px;bottom:-1px;height:2px;border-radius:999px;background:var(--accent)}
     .settings-cronograma-card{padding:0;border:0;background:transparent}
-    .settings-cronograma-frame{display:block;width:100%;min-height:1180px;border:0;background:transparent}
-    /* A área embutida começa abaixo do cabeçalho interno; evita exibir/acionar o menu lateral do Cronograma. */
-    .settings-cronograma-card{overflow:hidden}
-    .settings-cronograma-frame{position:relative}
+    .settings-cronograma-card{display:block;width:100%;border:0;background:transparent}
+    .native-cronograma-settings .schedule-stack{display:grid;gap:16px}
+    .native-cronograma-settings .schedule-add-hub,
+    .native-cronograma-settings .import-box,
+    .native-cronograma-settings .manual-panel{padding:20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+    .native-cronograma-settings .schedule-add-hub-head,
+    .native-cronograma-settings .import-header,
+    .native-cronograma-settings .manual-head,
+    .native-cronograma-settings .base-schedule-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+    .native-cronograma-settings .schedule-add-tabs{display:flex;gap:6px;flex-wrap:wrap}
+    .native-cronograma-settings .schedule-add-tab{min-height:36px;padding:0 12px;border:1px solid var(--border);border-radius:9px;background:var(--surface-2);color:var(--text);font:inherit;font-size:11px;font-weight:750;cursor:pointer}
+    .native-cronograma-settings .schedule-add-tab.active{background:var(--accent);border-color:var(--accent);color:#fff}
+    .native-cronograma-settings .schedule-add-section{display:none}
+    .native-cronograma-settings .schedule-add-section.active{display:block}
+    .native-cronograma-settings .import-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-top:20px}
+    .native-cronograma-settings .drop-file{min-height:160px;display:grid;place-items:center;padding:20px;border:1.5px dashed var(--border);border-radius:14px;background:var(--surface-2);text-align:center}
+    .native-cronograma-settings .drop-file input{display:none}
+    .native-cronograma-settings .drop-file small{display:block;color:var(--muted);line-height:1.5}
+    .native-cronograma-settings .mode-card{display:grid;gap:10px}
+    .native-cronograma-settings .mode-option input{position:absolute;opacity:0;pointer-events:none}
+    .native-cronograma-settings .mode-option span{display:block;padding:15px;border:1px solid var(--border);border-radius:12px;background:var(--surface);cursor:pointer}
+    .native-cronograma-settings .mode-option input:checked+span{border-color:var(--accent);background:var(--accent-soft)}
+    .native-cronograma-settings .import-help{margin-top:16px;padding:12px;border-radius:12px;background:var(--surface-2);display:grid;gap:4px}
+    .native-cronograma-settings .import-preview{display:none;margin-top:18px}
+    .native-cronograma-settings .import-preview.active{display:block}
+    .native-cronograma-settings .preview-table-wrap{overflow:auto}
+    .native-cronograma-settings .preview-table{width:100%;border-collapse:collapse}
+    .native-cronograma-settings .manual-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+    .native-cronograma-settings .manual-field{display:grid;gap:6px}
+    .native-cronograma-settings .manual-field.theme{grid-column:1/-1}
+    .native-cronograma-settings .manual-actions{grid-column:1/-1;display:flex;align-items:center;gap:10px}
+    @media(max-width:760px){.native-cronograma-settings .import-grid,.native-cronograma-settings .manual-form{grid-template-columns:1fr}.native-cronograma-settings .schedule-add-hub-head{display:grid}}
     @media(max-width:700px){
       body[data-page="configuracoes-cronograma"] .main{padding-left:14px;padding-right:14px}
-      .settings-cronograma-frame{min-height:1500px}
       .settings-tab{min-height:40px;padding:0 10px;font-size:11px}
     }
   </style>
@@ -64,17 +91,290 @@
           <a class="settings-tab" href="/configuracoes/">Privacidade</a>
         </nav>
 
-        <section class="settings-cronograma-card">
-          <iframe class="settings-cronograma-frame" src="/cronograma/?settings=1&embed=1" title="Adicionar aulas e Importador inteligente"></iframe>
+        <section class="settings-cronograma-card native-cronograma-settings">
+          <div class="schedule-stack">
+<section class="schedule-add-hub">
+
+            <div class="schedule-add-hub-head">
+              <div>
+                <span class="badge accent">Adicionar ao cronograma</span>
+                <h2>Adicionar aulas</h2>
+                <p>
+                  Escolha entre importar um cronograma automaticamente
+                  ou cadastrar uma aula manualmente.
+                </p>
+              </div>
+
+              <div
+                class="schedule-add-tabs"
+                aria-label="Forma de adicionar aulas"
+              >
+                <button
+                  class="schedule-add-tab active"
+                  type="button"
+                  data-schedule-add-mode="automatic"
+                >
+                  Automaticamente
+                </button>
+
+                <button
+                  class="schedule-add-tab"
+                  type="button"
+                  data-schedule-add-mode="manual"
+                >
+                  Manualmente
+                </button>
+
+                <button
+                  class="schedule-add-tab"
+                  type="button"
+                  data-schedule-add-mode="base"
+                >
+                  Cronograma base
+                </button>
+              </div>
+            </div>
+
+          </section>
+
+
+          <section
+            class="import-box schedule-add-section active"
+            data-schedule-add-section="automatic"
+          >
+            <div class="import-header">
+              <div>
+                <span class="badge accent">Excel · CSV · PDF</span>
+                <h2>Importador inteligente</h2>
+                <p>
+                  O LURIA tenta reconhecer datas, aulas, simulados e revisões.
+                  Antes de salvar, você pode corrigir tudo na prévia.
+                </p>
+              </div>
+            </div>
+
+            <div class="import-grid">
+              <div id="file-drop" class="drop-file">
+                <div>
+                  <strong id="file-name">Selecione um cronograma</strong>
+                  <small>
+                    Aceita .xlsx, .xls, .csv e .pdf.<br>
+                    PDFs em formato de planner mensal também são reconhecidos.
+                  </small>
+
+                  <label class="button secondary" for="schedule-file">Escolher arquivo</label>
+                  <input
+                    id="schedule-file"
+                    type="file"
+                    accept=".xlsx,.xls,.csv,.pdf,application/pdf"
+                  >
+                </div>
+              </div>
+
+              <div class="mode-card">
+                <label class="mode-option">
+                  <input type="radio" name="import-mode" value="dates" checked>
+                  <span>
+                    <strong>Importar datas</strong>
+                    <small>
+                      Mantém as datas encontradas. Aulas sem data vão automaticamente para o Deck.
+                    </small>
+                  </span>
+                </label>
+
+                <label class="mode-option">
+                  <input type="radio" name="import-mode" value="deck">
+                  <span>
+                    <strong>Importar aulas como deck</strong>
+                    <small>
+                      Envia as aulas para o Deck mesmo quando o arquivo possui datas. Eventos como simulados precisam de data.
+                    </small>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="import-help">
+              <strong>Como funciona com PDF?</strong>
+              <span>
+                O leitor reconhece planners e cronogramas em listas/blocos. O tema da aula é o único campo obrigatório;
+                área, data e bloco são opcionais. Quando nenhuma data é encontrada, as aulas seguem para o Deck.
+              </span>
+            </div>
+
+            <div id="import-preview" class="import-preview">
+              <div class="preview-toolbar">
+                <strong>Prévia editável</strong>
+
+                <div class="preview-toolbar-actions">
+                  <label class="preview-select-all">
+                    <input id="preview-select-all" type="checkbox">
+                    <span>Marcar todos</span>
+                  </label>
+
+                  <span id="preview-summary"></span>
+                </div>
+              </div>
+
+              <div class="preview-table-wrap smart-preview-wrap">
+                <table class="preview-table smart-preview-table">
+                  <thead>
+                    <tr>
+                      <th>Importar</th>
+                      <th>Origem</th>
+                      <th>Data</th>
+                      <th>Tipo</th>
+                      <th>Área</th>
+                      <th>Matéria</th>
+                      <th>Bloco</th>
+                      <th>Conteúdo</th>
+                      <th>Já feita?</th>
+                      <th>Data estudada</th>
+                      <th>Confiança</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="preview-body"></tbody>
+                </table>
+              </div>
+
+              <div class="import-actions">
+                <button id="cancel-import" class="button secondary" type="button">Cancelar</button>
+                <button id="confirm-import" class="button primary" type="button">Importar selecionados</button>
+              </div>
+            </div>
+
+            <div id="import-status" class="import-status" aria-live="polite"></div>
+          </section>
+
+
+          <section
+            class="manual-panel schedule-add-section"
+            data-schedule-add-section="manual"
+          >
+            <div class="manual-head">
+              <div>
+                <span class="badge accent">Manual</span>
+                <h2>Adicionar nova aula</h2>
+                <p>
+                  Cadastre uma aula sem precisar importar planilha. A aula manual já entra
+                  diretamente em uma data do cronograma.
+                </p>
+              </div>
+            </div>
+
+            <form id="manual-topic-form" class="manual-form">
+              <label class="manual-field">
+                <span>Área</span>
+                <input
+                  id="manual-area"
+                  type="text"
+                  maxlength="100"
+                  list="manual-area-options"
+                  placeholder="Ex.: Clínica Médica"
+                >
+                <datalist id="manual-area-options" data-luria-area-list>
+                  <option value="Clínica Médica">
+                  <option value="Pediatria">
+                  <option value="Ginecologia e Obstetrícia">
+                  <option value="Cirurgia Geral">
+                  <option value="Preventiva">
+                </datalist>
+              </label>
+
+              <label class="manual-field">
+                <span>Matéria <small>(opcional)</small></span>
+                <input
+                  id="manual-materia"
+                  type="text"
+                  maxlength="120"
+                  placeholder="Ex.: Cardiologia"
+                >
+              </label>
+
+              <label class="manual-field theme">
+                <span>Tema da aula *</span>
+                <input
+                  id="manual-theme"
+                  type="text"
+                  maxlength="180"
+                  required
+                  placeholder="Ex.: Insuficiência cardíaca"
+                >
+              </label>
+
+              <label class="manual-field">
+                <span>Data *</span>
+                <input id="manual-date" type="date" required>
+              </label>
+
+              <div class="manual-actions">
+                <button id="manual-add-topic" class="button primary" type="submit">
+                  Adicionar aula
+                </button>
+
+                <span id="manual-topic-status" class="manual-status" aria-live="polite"></span>
+              </div>
+            </form>
+          </section>
+
+
+          <section class="import-box base-schedule-panel schedule-add-section" data-schedule-add-section="base">
+            <div class="base-schedule-head">
+              <div>
+                <span class="badge accent">ENARE · <span data-study-mode-label>Medicina</span></span>
+                <h2>Utilizar cronograma genérico</h2>
+                <p>
+                  Use uma base pronta do LURIA quando ainda não tiver um
+                  cronograma próprio. A lista é distribuída até a data limite usando
+                  no máximo 3 dias de aula por semana.
+                </p>
+              </div>
+              <span id="base-schedule-count" class="badge">—</span>
+            </div>
+
+            <div class="base-schedule-controls">
+              <label>
+                <span>Data limite *</span>
+                <input id="base-schedule-end-date" type="date">
+              </label>
+
+              <div class="base-schedule-days">
+                <strong>Dias utilizados</strong>
+                <span id="base-schedule-days-label">Carregando...</span>
+              </div>
+
+              <button
+                id="apply-base-schedule"
+                class="button primary"
+                type="button"
+                onclick="window.applyLuriaGenericSchedule && window.applyLuriaGenericSchedule()"
+              >
+                Adicionar cronograma genérico
+              </button>
+            </div>
+
+            <div id="base-schedule-priority-summary" class="base-schedule-priority-summary"></div>
+            <div id="base-schedule-status" class="manual-status" aria-live="polite"></div>
+            <div id="base-schedule-deck" class="base-schedule-deck"></div>
+          </section>
+          </div>
         </section>
       </div>
     </main>
   </div>
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="/assets/js/supabase.js?v=auth4"></script>
   <script src="/assets/js/app.js?v=17.27-fixed-sidebar"></script>
   <script src="/assets/js/study-mode.js?v=14.0"></script>
+  <script src="/assets/js/exam-priority-data.js?v=1"></script>
+  <script src="/assets/js/exam-priority-extra.js?v=1"></script>
+  <script src="/assets/js/exam-priority.js?v=3"></script>
+  <script src="/assets/js/cronograma-base-data.js?v=12.6"></script>
+  <script src="/assets/js/cronograma.js?v=18.2-native-settings"></script>
   <script defer src="/assets/js/pwa.js?v=5"></script>
 </body>
 </html>
