@@ -689,6 +689,25 @@ function wireCalendarInteractions() {
   });
 }
 
+
+async function loadDashboardUpcomingAgenda() {
+  const today = toISODate(startOfDay(new Date()));
+  const { data, error } = await dashboardSb
+    .from("agenda_feed")
+    .select("*")
+    .gte("activity_date", today)
+    .order("activity_date", { ascending: true })
+    .limit(80);
+
+  if (error) {
+    console.warn("Não foi possível carregar as próximas atividades do Dashboard:", error);
+    window.luriaDashboardUpcomingAgenda = [];
+    return;
+  }
+
+  window.luriaDashboardUpcomingAgenda = data || [];
+}
+
 async function loadAgenda() {
   if (agendaState.loading) return;
 
@@ -3645,8 +3664,10 @@ async function initDashboard() {
   await Promise.all([
     loadDashboardMetrics(),
     loadAgenda(),
+    loadDashboardUpcomingAgenda(),
     loadDashboardPassiveCcq()
   ]);
+  window.dispatchEvent(new Event("luria:dashboard-data"));
 }
 
 if (window.docmapUser) {
