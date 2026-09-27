@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v139-plantao-state-restore";
+const CACHE_VERSION = "luria-pwa-v140-luriazap-area-filter-fix";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -20,11 +20,11 @@ const APP_SHELL = [
   "/configuracoes/",
   "/dashboard/",
   "/plantao/",
-  "/assets/js/plantao.js?v=9.6-state-restore",
+  "/assets/js/plantao.js?v=9.10-luriazap-area-filter-fix",
   "/assets/css/style.css?v=16.6",
   "/assets/css/landing.css",
   "/assets/css/pwa-mobile.css?v=18",
-  "/assets/css/plantao.css?v=8.8-luriazap-area-filter",
+  "/assets/css/plantao.css?v=8.9-luriazap-area-filter-fix",
   "/assets/css/plantao-pwa-game.css?v=7-no-patient-breath",
   "/assets/css/luria-brand-v5.css",
   "/assets/js/luria-brand-v5.js?v=12",
