@@ -3949,3 +3949,21 @@
 @media(max-width:340px){
   html.pwa-standalone body [class*="-grid"]{grid-template-columns:1fr!important}
 }
+
+/* PWA v24 — topo acompanha o scroll; nenhum cabeçalho fica fixo */
+@media(max-width:760px){
+  html.pwa-standalone body .topbar,
+  html.pwa-standalone body [class*="topbar"],
+  html.pwa-standalone body [class*="-topbar"],
+  html.pwa-standalone body header,
+  html.pwa-standalone body .page-heading,
+  html.pwa-standalone body .admin-topbar,
+  html.pwa-standalone body .admin-view-menu{
+    position:relative!important;
+    top:auto!important;
+    bottom:auto!important;
+    left:auto!important;
+    right:auto!important;
+    transform:none!important;
+  }
+}
