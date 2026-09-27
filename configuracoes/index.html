@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-title" content="LURIA">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="assets/css/style.css?v=16.8-settings-v2">
 
   <style>
     .settings-section {
@@ -618,6 +618,81 @@
       .target-exam-slot { min-height:58px; }
     }
 
+
+    /* Configurações V2 — navegação horizontal + grade Personalizar */
+    body[data-page="configuracoes"] .page { max-width: 1480px; }
+    body[data-page="configuracoes"] .topbar .page-heading { display: none; }
+
+    .settings-page-head {
+      display:flex;align-items:flex-end;justify-content:space-between;gap:18px;
+      margin:4px 0 14px;padding:0 2px;
+    }
+    .settings-page-head h1 {
+      margin:0;font-size:clamp(25px,3vw,34px);line-height:1.1;
+      letter-spacing:-.03em;color:var(--text);
+    }
+    .settings-page-head p { margin:7px 0 0;color:var(--muted);font-size:13px; }
+
+    .settings-tabs {
+      display:flex;align-items:center;gap:6px;width:100%;margin:0 0 16px;
+      padding:0 2px;overflow-x:auto;border-bottom:1px solid var(--border);scrollbar-width:none;
+    }
+    .settings-tabs::-webkit-scrollbar{display:none}
+    .settings-tab {
+      position:relative;flex:0 0 auto;min-height:42px;padding:0 12px;border:0;
+      background:transparent;color:var(--muted);font:inherit;font-size:12px;
+      font-weight:720;cursor:pointer;white-space:nowrap;
+    }
+    .settings-tab:hover{color:var(--text)}
+    .settings-tab.active{color:var(--accent)}
+    .settings-tab.active::after {
+      content:"";position:absolute;left:10px;right:10px;bottom:-1px;height:2px;
+      border-radius:999px;background:var(--accent);
+    }
+
+    .settings-section.settings-personalize-grid {
+      max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;align-items:start;
+    }
+    .settings-personalize-grid > .setting-row {
+      display:none;min-width:0;margin:0;padding:18px;border:1px solid var(--border);
+      border-radius:16px;background:color-mix(in srgb,var(--surface) 94%,var(--accent) 6%);
+      box-shadow:0 6px 18px rgba(15,23,42,.035);
+    }
+    .settings-personalize-grid > .setting-row.settings-personalize-card{display:block}
+    .settings-personalize-grid > .setting-row.settings-personalize-card > div:first-child{margin-bottom:14px}
+    .settings-personalize-grid > .setting-row.settings-personalize-card h2 {
+      display:flex;align-items:center;gap:9px;margin:0;font-size:17px;color:var(--text);
+    }
+    .settings-personalize-grid > .setting-row.settings-personalize-card h2::before {
+      content:attr(data-settings-icon);display:grid;place-items:center;width:28px;height:28px;
+      flex:0 0 28px;border-radius:8px;background:var(--accent-soft);color:var(--accent);
+      font-size:15px;font-weight:850;
+    }
+    .settings-personalize-grid > .setting-row.settings-personalize-card p {
+      margin:5px 0 0 37px;color:var(--muted);font-size:11px;line-height:1.45;
+    }
+    .settings-personalize-grid > .setting-row.settings-wide-card{grid-column:1/-1}
+    .settings-personalize-grid .profile-grid,
+    .settings-personalize-grid .security-grid,
+    .settings-personalize-grid .study-days-grid,
+    .settings-personalize-grid .interval-editor,
+    .settings-personalize-grid .pomodoro-settings-grid,
+    .settings-personalize-grid .single-setting-grid{margin-top:10px}
+    .settings-personalize-grid .settings-actions{margin-top:14px}
+
+    @media(max-width:980px){
+      .settings-section.settings-personalize-grid{grid-template-columns:1fr}
+      .settings-personalize-grid > .setting-row.settings-wide-card{grid-column:auto}
+    }
+    @media(max-width:700px){
+      body[data-page="configuracoes"] .main{padding-left:14px;padding-right:14px}
+      .settings-page-head{margin-top:0}
+      .settings-tabs{margin-left:-2px;margin-right:-2px}
+      .settings-tab{min-height:40px;padding:0 10px;font-size:11px}
+      .settings-personalize-grid > .setting-row{padding:15px;border-radius:14px}
+    }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=3-work-settings">
@@ -642,7 +717,25 @@
           </div>
         </header>
 
-        <section class="settings-section">
+        <section class="settings-page-head" aria-labelledby="settings-page-title">
+          <div>
+            <h1 id="settings-page-title">Configurações</h1>
+            <p>Personalize a LURIA de acordo com o seu jeito de estudar.</p>
+          </div>
+        </section>
+
+        <nav class="settings-tabs" aria-label="Seções das configurações">
+          <button type="button" class="settings-tab" data-settings-tab="perfil">Perfil e Conta</button>
+          <button type="button" class="settings-tab active" data-settings-tab="personalizar" aria-current="page">Personalizar</button>
+          <button type="button" class="settings-tab" data-settings-tab="cronograma">Cronograma</button>
+          <button type="button" class="settings-tab" data-settings-tab="pomodoro">Pomodoro e Cronômetro</button>
+          <button type="button" class="settings-tab" data-settings-tab="revisoes">Revisões</button>
+          <button type="button" class="settings-tab" data-settings-tab="notificacoes">Notificações</button>
+          <button type="button" class="settings-tab" data-settings-tab="aparencia">Aparência</button>
+          <button type="button" class="settings-tab" data-settings-tab="privacidade">Privacidade</button>
+        </nav>
+
+        <section class="settings-section settings-personalize-grid" data-settings-view="personalizar">
 
           <article class="setting-row onboarding-settings-block">
             <div>
@@ -1621,9 +1714,46 @@
     </main>
   </div>
 
+  <script>
+    (function () {
+      const section = document.querySelector('[data-settings-view="personalizar"]');
+      if (!section) return;
+
+      const visibleCards = new Map([
+        ["Aparência", { icon: "◐", wide: false }],
+        ["Layout do dashboard", { icon: "▦", wide: false }],
+        ["Dias de estudo", { icon: "▣", wide: false }],
+        ["Pomodoro", { icon: "◷", wide: false }],
+        ["Periodização dos flashcards", { icon: "↻", wide: true }],
+        ["Caderno de erros", { icon: "✦", wide: true }],
+        ["Revisão de matérias", { icon: "↺", wide: true }]
+      ]);
+
+      section.querySelectorAll(":scope > .setting-row").forEach((card) => {
+        const heading = card.querySelector("h2");
+        const title = heading?.textContent?.trim() || "";
+        const config = visibleCards.get(title);
+        if (!config) return;
+        card.classList.add("settings-personalize-card");
+        if (config.wide) card.classList.add("settings-wide-card");
+        heading.setAttribute("data-settings-icon", config.icon);
+      });
+
+      document.querySelectorAll(".settings-tab").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          if (tab.dataset.settingsTab !== "personalizar") return;
+          document.querySelectorAll(".settings-tab").forEach((item) => {
+            item.classList.toggle("active", item === tab);
+            item.toggleAttribute("aria-current", item === tab);
+          });
+        });
+      });
+    })();
+  </script>
+
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js?v=auth4"></script>
-  <script src="assets/js/app.js?v=17.8-streak"></script>
+  <script src="assets/js/app.js?v=17.27-fixed-sidebar"></script>
   <script src="assets/js/study-mode.js?v=14.0"></script>
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
