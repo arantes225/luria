@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=23.2">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=23.3">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -80,7 +80,7 @@
  <div id="notebook-topic-list" class="notebook-topic-list"><div class="notebook-empty-small">Carregando...</div></div>
 </aside>
 <main class="note-canvas">
- <div id="notebook-toolbar" class="note-toolbar">
+ <header class="note-editor-identity"><div><div id="notebook-document-area" class="note-page-area">Área</div><h1 id="notebook-document-title">Tema</h1><div id="notebook-document-date" class="note-page-date"></div></div><div class="notebook-document-menu-wrap"><button id="notebook-document-menu-toggle" type="button">•••</button><div id="notebook-document-menu" class="notebook-document-menu" hidden><button id="notebook-document-edit" type="button">Editar</button><button id="notebook-document-delete" class="danger" type="button">Apagar</button></div></div></header><div id="notebook-toolbar" class="note-toolbar">
   <select id="notebook-block-style" disabled><option value="p">Texto</option><option value="h1">Título 1</option><option value="h2">Título 2</option><option value="h3">Título 3</option></select>
   <select id="notebook-font-family" disabled><option value="default">Padrão</option><option value="Times New Roman">Times</option><option value="Georgia">Georgia</option><option value="Comic Sans MS">Escrita à mão</option></select>
   <span class="note-tool-sep"></span><button id="notebook-bold" type="button" disabled><b>B</b></button><button id="notebook-italic" type="button" disabled><i>I</i></button><button id="notebook-underline" type="button" disabled><u>U</u></button>
@@ -103,7 +103,7 @@
  <div id="notebook-editor-hint" class="note-empty"><div>✎</div><strong>Abra uma página para começar</strong><span>Escolha uma anotação à esquerda ou crie uma nova página.</span></div>
  <div id="notebook-document-wrap" class="note-document" hidden>
   <article class="note-page">
-   <header class="note-page-head"><div><div id="notebook-document-area" class="note-page-area">Área</div><h1 id="notebook-document-title">Tema</h1><div id="notebook-document-date" class="note-page-date"></div></div><div class="notebook-document-menu-wrap"><button id="notebook-document-menu-toggle" type="button">•••</button><div id="notebook-document-menu" class="notebook-document-menu" hidden><button id="notebook-document-edit" type="button">Editar</button><button id="notebook-document-delete" class="danger" type="button">Apagar</button></div></div></header>
+   
    <div id="notebook-editor" class="notebook-editor" contenteditable="false" aria-readonly="true" role="textbox" aria-multiline="true" spellcheck="true" data-placeholder="Comece a escrever..."></div>
   </article>
  </div>
@@ -523,7 +523,7 @@
     }
   </style>
 
-  <script src="assets/js/caderno.js?v=23.2"></script>
+  <script src="assets/js/caderno.js?v=23.3"></script>
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
