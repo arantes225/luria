@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=23.1">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=23.2">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -109,22 +109,10 @@
  </div>
 </main>
 <aside class="note-info">
- <section class="note-side-card note-details-card">
-  <div class="note-side-title"><h3>Detalhes da anotação</h3><button id="notebook-inspector-edit" type="button" title="Editar">✎</button></div>
-  <dl><div><dt>Título</dt><dd id="notebook-inspector-title">—</dd></div><div><dt>Caderno</dt><dd id="notebook-inspector-book">—</dd></div><div><dt>Área</dt><dd id="notebook-inspector-area">—</dd></div><div><dt>Criada em</dt><dd id="notebook-inspector-created">—</dd></div><div><dt>Última edição</dt><dd id="notebook-inspector-updated">—</dd></div><div><dt>Palavras</dt><dd id="notebook-inspector-words">—</dd></div></dl>
- </section>
- <section class="note-side-card note-tags-card">
-  <div class="note-side-title"><h3>Tags</h3><button id="notebook-tags-add" type="button" title="Adicionar tag">＋</button></div>
-  <div id="notebook-tags-list" class="note-tags-list"><span class="note-tag-empty">Nenhuma tag</span></div>
- </section>
- <section class="note-side-card note-actions-card">
-  <div class="note-side-title"><h3>Ações rápidas</h3></div>
-  <button id="notebook-inspector-duplicate" type="button">▢ <span>Duplicar anotação</span></button>
-  <button id="notebook-inspector-export" type="button">⇩ <span>Exportar PDF</span></button>
-  <button id="notebook-inspector-share" type="button">↗ <span>Compartilhar link</span></button>
-  <button id="notebook-inspector-flashcards" type="button">▣ <span>Transformar em flashcards</span></button>
-  <button id="notebook-inspector-delete" class="danger" type="button">⌫ <span>Excluir anotação</span></button>
- </section>
+<section class="note-side-card note-details-card"><div class="note-side-title"><h3>▣ Informações da anotação</h3></div><dl><div><dt>Caderno</dt><dd id="notebook-inspector-book">—</dd></div><div><dt>Área</dt><dd id="notebook-inspector-area">—</dd></div><div><dt>Última edição</dt><dd id="notebook-inspector-updated">—</dd></div><div><dt>Criada em</dt><dd id="notebook-inspector-created">—</dd></div></dl><span id="notebook-inspector-words" hidden>—</span><span id="notebook-inspector-title" hidden>—</span><button id="notebook-inspector-edit" hidden type="button">Editar</button></section>
+<section class="note-side-card note-tags-card"><div class="note-side-title"><h3>◇ Tags</h3><button id="notebook-tags-add" type="button">Gerenciar</button></div><div id="notebook-tags-list" class="note-tags-list"><span class="note-tag-empty">Nenhuma tag</span></div><button class="note-add-row" id="notebook-tag-add-row" type="button">＋ Adicionar tag</button></section>
+<section class="note-side-card note-links-card"><div class="note-side-title"><h3>↗ Links e referências</h3><button id="notebook-reference-add" type="button">Adicionar</button></div><div id="notebook-reference-list" class="note-reference-list"><div class="note-reference-empty">Nenhuma referência adicionada</div></div></section>
+<section class="note-side-card note-actions-card"><div class="note-side-title"><h3>ϟ Ações rápidas</h3></div><button id="notebook-inspector-duplicate" type="button">▢ <span>Duplicar anotação</span></button><button id="notebook-inspector-export" type="button">⇩ <span>Exportar (PDF)</span></button><button id="notebook-inspector-flashcards" type="button">▣ <span>Transformar em flashcards</span></button><button id="notebook-inspector-share" type="button">⌘ <span>Compartilhar</span></button><button id="notebook-inspector-delete" class="danger" type="button">⌫ <span>Excluir anotação</span></button></section>
 </aside>
 </div></section>
 
@@ -535,7 +523,7 @@
     }
   </style>
 
-  <script src="assets/js/caderno.js?v=23.1"></script>
+  <script src="assets/js/caderno.js?v=23.2"></script>
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
