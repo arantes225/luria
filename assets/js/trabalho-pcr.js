@@ -504,35 +504,106 @@
       return;
     }
 
-    const ordered = [...timelineEntries].reverse();
-    const header = [
-      "LURIA · Linha do tempo da PCR",
-      "Exportado em: " + new Intl.DateTimeFormat("pt-BR", {
-        dateStyle: "short",
-        timeStyle: "medium"
-      }).format(new Date()),
-      "",
-      "Horário | Tempo de PCR | Evento | Detalhes"
-    ];
+    const JsPDF = window.jspdf?.jsPDF;
+    if (!JsPDF) {
+      alert("Não foi possível carregar o gerador de PDF. Verifique a conexão e tente novamente.");
+      return;
+    }
 
-    const rows = ordered.map((entry) => {
+    const doc = new JsPDF({ unit: "mm", format: "a4" });
+    const ordered = [...timelineEntries].reverse();
+    const exportedAt = new Intl.DateTimeFormat("pt-BR", {
+      dateStyle: "short",
+      timeStyle: "medium"
+    }).format(new Date());
+
+    const duration = mmss(elapsedSeconds());
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const pageHeight = doc.internal.pageSize.getHeight();
+    const margin = 14;
+    const usable = pageWidth - margin * 2;
+    let y = 16;
+
+    const addPageHeader = () => {
+      doc.setFillColor(24, 72, 136);
+      doc.rect(0, 0, pageWidth, 12, "F");
+      doc.setTextColor(255, 255, 255);
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(10);
+      doc.text("LURIA · PCR", margin, 8);
+      doc.setTextColor(25, 25, 25);
+    };
+
+    const ensureSpace = (needed = 12) => {
+      if (y + needed <= pageHeight - 14) return;
+      doc.addPage();
+      addPageHeader();
+      y = 20;
+    };
+
+    addPageHeader();
+
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(18);
+    doc.text("Linha do tempo da PCR", margin, y);
+    y += 8;
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(9);
+    doc.setTextColor(85, 85, 85);
+    doc.text("Exportado em: " + exportedAt, margin, y);
+    y += 5;
+    doc.text("Duração registrada: " + duration, margin, y);
+    y += 9;
+
+    doc.setTextColor(25, 25, 25);
+    doc.setFillColor(242, 244, 247);
+    doc.roundedRect(margin, y, usable, 8, 1.5, 1.5, "F");
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(8);
+    doc.text("HORÁRIO", margin + 2, y + 5.3);
+    doc.text("PCR", margin + 31, y + 5.3);
+    doc.text("EVENTO / DETALHES", margin + 50, y + 5.3);
+    y += 11;
+
+    ordered.forEach((entry) => {
       const detail = entry.detail ? entry.detail.replace(/\s+/g, " ").trim() : "";
-      return [entry.clock, entry.elapsed, entry.action, detail].join(" | ");
+      const eventText = detail ? entry.action + " - " + detail : entry.action;
+      const lines = doc.splitTextToSize(eventText, usable - 52);
+      const rowHeight = Math.max(8, lines.length * 4 + 3);
+
+      ensureSpace(rowHeight + 2);
+
+      doc.setDrawColor(225, 225, 225);
+      doc.line(margin, y + rowHeight, margin + usable, y + rowHeight);
+
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(8);
+      doc.setTextColor(70, 70, 70);
+      doc.text(entry.clock, margin + 2, y + 4.8);
+      doc.text(entry.elapsed, margin + 31, y + 4.8);
+
+      doc.setTextColor(25, 25, 25);
+      doc.text(lines, margin + 50, y + 4.8);
+
+      y += rowHeight;
     });
 
-    const content = [...header, ...rows].join("\n");
-    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const anchor = document.createElement("a");
-    const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-    anchor.href = url;
-    anchor.download = "luria-pcr-linha-do-tempo-" + stamp + ".txt";
-    document.body.appendChild(anchor);
-    anchor.click();
-    anchor.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    ensureSpace(18);
+    y += 7;
+    doc.setFont("helvetica", "italic");
+    doc.setFontSize(7.5);
+    doc.setTextColor(100, 100, 100);
+    const footer = doc.splitTextToSize(
+      "Registro gerado pelo LURIA a partir dos eventos inseridos durante a PCR. Ferramenta de apoio; conferir o registro clínico institucional.",
+      usable
+    );
+    doc.text(footer, margin, y);
 
-    addLog("Linha do tempo exportada", "Arquivo TXT gerado");
+    const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+    doc.save("luria-pcr-linha-do-tempo-" + stamp + ".pdf");
+
+    addLog("Linha do tempo exportada", "PDF gerado");
   });
 
   renderDrugs();
