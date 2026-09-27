@@ -2303,6 +2303,16 @@
   .week-matrix-label,.week-matrix-head,.week-matrix-cell{min-height:48px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:7px;padding:7px}
   .week-matrix-label{justify-content:flex-start;font-size:10px}.week-matrix-head{flex-direction:column;gap:1px;font-size:10px}.week-matrix-head span{color:var(--muted);text-transform:capitalize}.week-matrix-head strong{font-size:12px}.week-matrix-head.today{background:var(--accent);color:#fff}.week-matrix-head.today span{color:#fff}
   .week-dot{width:9px;height:9px;border-radius:50%;display:block;background:var(--accent)}.week-dot.empty{background:var(--border)}.week-legend{width:9px;height:9px;border-radius:3px;background:var(--accent)}
+  .week-category-label{gap:8px!important}
+  .week-category-icon{width:25px;height:25px;display:grid;place-items:center;border-radius:7px;color:#fff;flex:0 0 25px}
+  .week-category-icon .week-category-svg{width:14px;height:14px}
+  .week-category-icon.kind-lesson{background:#2f8ff3}
+  .week-category-icon.kind-questions{background:#25b982}
+  .week-category-icon.kind-flashcards{background:#8b5cf6}
+  .week-category-icon.kind-review{background:#f07a14}
+  .week-category-icon.kind-simulation{background:#e04f5f}
+  .week-category-icon.kind-other{background:#6e8199}
+
   .kind-questions{background:#20b77a!important}.kind-flashcards{background:#8b5cf6!important}.kind-review{background:#f59e0b!important}.kind-simulation{background:#ef5350!important}.kind-other{background:#7b8798!important}
   @media(max-width:900px){.week-matrix{overflow-x:auto}.week-matrix-grid{min-width:720px}}
 
@@ -3379,13 +3389,13 @@
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="assets/js/supabase.js"></script>
-  <script src="assets/js/app.js?v=17.28-theme-switch"></script>
+  <script src="assets/js/app.js?v=17.29-shared-icons"></script>
   <script src="assets/js/study-mode.js?v=12.1"></script>
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=24-week-replace-month"></script>
+  <script src="assets/js/cronograma.js?v=25-shared-icons"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
