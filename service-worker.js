@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v167-work-dashboard-settings-topbar";
+const CACHE_VERSION = "luria-pwa-v167-dashboard-bg-clean-final";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -51,7 +51,7 @@ const APP_SHELL = [
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
-  "/assets/css/dashboard-layouts.css?v=3-no-direct-pattern",
+  "/assets/css/dashboard-layouts.css?v=4-clean-bg",
   "/assets/js/dashboard-layouts.js?v=3-streak-sync",
   "/assets/js/dashboard-layout-settings.js?v=2-work",
   "/assets/img/dashboard-layouts/opcao-1.webp",
