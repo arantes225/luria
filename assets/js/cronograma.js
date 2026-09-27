@@ -4307,9 +4307,7 @@ function renderTopicCard(
 
               <a
                 class="topic-action primary"
-                href="/ambientacao/?${escapeScheduleHtml(
-                  startParams.toString()
-                )}"
+                href="/caderno/?topic_id=${escapeScheduleHtml(topic.id)}&view=editor"
               >
                 Iniciar
               </a>
@@ -4321,9 +4319,7 @@ function renderTopicCard(
 
               <a
                 class="topic-action primary"
-                href="/ambientacao/?${escapeScheduleHtml(
-                  startParams.toString()
-                )}"
+                href="/caderno/?topic_id=${escapeScheduleHtml(topic.id)}&view=editor"
               >
                 Iniciar
               </a>
