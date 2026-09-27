@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="pt-BR"><head><base href="/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Flashcards · Configurações · LURIA</title>
+<link rel="manifest" href="/manifest.webmanifest?v=5"><link rel="icon" href="/assets/img/logos/logo-icone-original.png"><link rel="stylesheet" href="/assets/css/style.css?v=16.11-settings-reference"><link rel="stylesheet" href="/assets/css/flashcards.css?v=17.4"><link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=9">
+<style>body[data-page="configuracoes-flashcards"] .page{max-width:1480px}.topbar .page-heading{display:none}.settings-page-head{margin:4px 0 14px}.settings-page-head h1{margin:0;font-size:34px}.settings-page-head p{margin:7px 0 0;color:var(--muted);font-size:13px}.settings-tabs{display:flex;gap:6px;margin:0 0 18px;border-bottom:1px solid var(--border);overflow-x:auto}.settings-tab{min-height:42px;padding:0 12px;display:inline-flex;align-items:center;color:var(--muted);font-size:12px;font-weight:720;text-decoration:none;white-space:nowrap}.settings-tab.active{color:var(--accent);border-bottom:2px solid var(--accent)}.flash-settings-grid{display:grid;grid-template-columns:1fr;gap:16px}.flash-settings-grid .flash-section{display:block!important}.flash-settings-grid .panel{border:1px solid var(--border);border-radius:16px;background:var(--surface);padding:20px}@media(max-width:700px){.main{padding-left:14px;padding-right:14px}}</style></head>
+<body data-page="configuracoes-flashcards"><div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open" class="menu-open" type="button">☰</button><div class="page-heading"></div></header>
+<section class="settings-page-head"><div><h1>Configurações</h1><p>Gerencie criação e importação de flashcards.</p></div></section>
+<nav class="settings-tabs"><a class="settings-tab" href="/configuracoes/">Perfil e Conta</a><a class="settings-tab" href="/configuracoes/">Personalizar</a><a class="settings-tab" href="/configuracoes/cronograma/">Cronograma</a><a class="settings-tab active" href="/configuracoes/flashcards/">Flashcards</a><a class="settings-tab" href="/configuracoes/">Pomodoro e Cronômetro</a><a class="settings-tab" href="/configuracoes/">Revisões</a><a class="settings-tab" href="/configuracoes/">Notificações</a><a class="settings-tab" href="/configuracoes/">Aparência</a><a class="settings-tab" href="/configuracoes/">Privacidade</a></nav>
+<div class="flash-settings-grid"><section
+          class="flash-section"
+          data-flash-section="create"
+        >
+
+          <article class="panel">
+
+            <div class="panel-header">
+              <div>
+                <h2>Novo flashcard</h2>
+                <p>
+                  Organize em Área → Matéria → Tema.
+                  Imagens são opcionais.
+                </p>
+              </div>
+            </div>
+
+            <div class="flash-form-grid">
+
+              <div class="flash-field">
+                <span>Área *</span>
+                <div class="flash-area-picker">
+                  <button
+                    id="create-area-toggle"
+                    class="flash-click-select flash-area-toggle"
+                    type="button"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                  >
+                    <span id="create-area-label">Selecione a área</span>
+                    <span class="flash-area-chevron" aria-hidden="true">⌄</span>
+                  </button>
+                  <div
+                    id="create-area-menu"
+                    class="flash-area-menu"
+                    role="listbox"
+                    hidden
+                  ></div>
+                  <input id="create-area" type="hidden" value="">
+                </div>
+              </div>
+
+              <div class="flash-field">
+                <span>Matéria <small>(opcional)</small></span>
+
+                <div class="flash-subject-picker">
+                  <button
+                    id="create-materia-toggle"
+                    class="flash-click-select flash-subject-toggle"
+                    type="button"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                  >
+                    <span id="create-materia-label">Selecione primeiro a área</span>
+                    <span class="flash-subject-chevron" aria-hidden="true">⌄</span>
+                  </button>
+
+                  <div
+                    id="create-materia-menu"
+                    class="flash-subject-menu"
+                    role="listbox"
+                    hidden
+                  ></div>
+
+                  <input
+                    id="create-materia"
+                    type="hidden"
+                    value=""
+                  >
+                </div>
+              </div>
+
+              <label class="flash-field full">
+                <span>Frente *</span>
+                <textarea
+                  id="create-front"
+                  rows="5"
+                  placeholder="Pergunta, conceito ou gatilho..."
+                ></textarea>
+              </label>
+
+              <label class="flash-field full">
+                <span>Verso *</span>
+                <textarea
+                  id="create-back"
+                  rows="6"
+                  placeholder="Resposta..."
+                ></textarea>
+              </label>
+
+              <label class="flash-field">
+                <span>Imagem da frente</span>
+                <input
+                  id="create-front-image"
+                  type="file"
+                  accept="image/*"
+                >
+              </label>
+
+              <label class="flash-field">
+                <span>Imagem do verso</span>
+                <input
+                  id="create-back-image"
+                  type="file"
+                  accept="image/*"
+                >
+              </label>
+
+            </div>
+
+            <datalist id="medical-areas" data-luria-general-area-list>
+              <option value="Clínica Médica"></option>
+              <option value="Pediatria"></option>
+              <option value="Ginecologia e Obstetrícia"></option>
+              <option value="Cirurgia Geral"></option>
+              <option value="Preventiva"></option>
+            </datalist>
+
+            <div class="flash-actions">
+
+              <button
+                id="create-card"
+                class="button primary"
+                type="button"
+              >
+                Criar flashcard
+              </button>
+
+              <button
+                id="clear-create-card"
+                class="button secondary"
+                type="button"
+              >
+                Limpar
+              </button>
+
+              <span
+                id="create-status"
+                class="flash-status"
+                aria-live="polite"
+              ></span>
+
+            </div>
+
+          </article>
+
+        </section>
+
+        <!-- =====================================================
+             IMPORTAR
+             ===================================================== -->
+        <section
+          class="flash-section"
+          data-flash-section="import"
+        >
+
+          <article class="panel">
+
+            <div class="panel-header">
+              <div>
+                <h2>Importar em lote</h2>
+                <p>
+                  Aceita Excel, CSV e pacotes do Anki
+                  (.apkg e .colpkg).
+                </p>
+              </div>
+            </div>
+
+            <div class="import-upload-box">
+
+              <input
+                id="import-file"
+                type="file"
+                accept=".xlsx,.xls,.csv,.apkg,.colpkg,application/zip"
+              >
+
+              <div>
+                <strong>Formatos aceitos</strong>
+                <code>
+                  Excel/CSV: Área | Matéria | Tema | Frente | Verso
+                  <br>
+                  Anki: lê os decks e permite escolher Área, Matéria e Tema de destino.
+                </code>
+              </div>
+
+            </div>
+
+            <div
+              id="anki-deck-map"
+              class="anki-deck-map"
+              hidden
+            >
+              <div class="anki-deck-map-head">
+                <div>
+                  <strong>Organizar decks do Anki</strong>
+                  <small>
+                    Escolha Área, Matéria e Tema para cada deck antes de importar.
+                  </small>
+                </div>
+
+                <span
+                  id="anki-import-format"
+                  class="badge"
+                >
+                  Anki
+                </span>
+              </div>
+
+              <div
+                id="anki-deck-map-list"
+                class="anki-deck-map-list"
+              ></div>
+
+              <p
+                id="anki-media-note"
+                class="anki-media-note"
+                hidden
+              ></p>
+            </div>
+
+            <div
+              id="import-summary"
+              class="import-summary"
+              hidden
+            ></div>
+
+            <div
+              id="import-preview-wrap"
+              class="import-preview-wrap"
+              hidden
+            >
+
+              <table class="import-preview">
+                <thead>
+                  <tr>
+                    <th>Origem</th>
+                    <th>Área</th>
+                    <th>Matéria</th>
+                    <th>Frente</th>
+                    <th>Verso</th>
+                  </tr>
+                </thead>
+
+                <tbody id="import-preview-body"></tbody>
+              </table>
+
+            </div>
+
+            <div class="flash-actions">
+
+              <button
+                id="import-cards"
+                class="button primary"
+                type="button"
+                disabled
+              >
+                Importar flashcards
+              </button>
+
+              <span
+                id="import-status"
+                class="flash-status"
+                aria-live="polite"
+              ></span>
+
+            </div>
+
+          </article>
+
+        </section>
+
+        </div></div></main></div>
+<script src="/assets/vendor/supabase-2.110.6.js"></script><script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script><script src="https://cdn.jsdelivr.net/npm/sql.js@1.11.0/dist/sql-wasm.js"></script><script src="https://cdn.jsdelivr.net/npm/fzstd@0.1.1/umd/index.js"></script><script src="/assets/js/supabase.js"></script><script src="/assets/js/storage-router.js?v=1.0.0"></script><script src="/assets/js/app.js?v=17.11-topbar-size"></script><script src="/assets/js/flashcards.js?v=17.4"></script><script defer src="/assets/js/pwa.js?v=3"></script></body></html>
