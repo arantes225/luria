@@ -280,7 +280,7 @@
               <span class="dl5-streak-hero" aria-hidden="true">${streakVisual(data.streak)}</span>
               <div class="dl5-streak-copy"><strong>${data.streak} dias seguidos</strong></div>
             </div>
-            <div class="dl5-week">${["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"].map((d,i)=>{ const daysBack = weekday - i; const active = daysBack >= 0 && daysBack < data.streak; return `<span class="${active ? "on":""}"><i></i>${d}</span>`; }).join("")}</div>
+            <div class="dl5-week">${["Segunda","Terça","Quarta","Quinta","Sexta","Sábado","Domingo"].map((d,i)=>{ const daysBack = weekday - i; const active = daysBack >= 0 && daysBack < data.streak; return `<span class="${active ? "on":""}"><i></i>${d}</span>`; }).join("")}</div>
           </section>
 
           <section class="dl5-card dl5-areas">
