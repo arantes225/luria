@@ -4690,16 +4690,6 @@ function renderAgendaSide() {
   if (todayProgressPercent) todayProgressPercent.textContent = todayPercent + "%";
   if (todayProgressBar) todayProgressBar.style.width = todayPercent + "%";
 
-  const kindClass = (value) => {
-    const normalized = normalizeHeader(value || "");
-    if (normalized.includes("quest")) return "questions";
-    if (normalized.includes("flash")) return "flashcards";
-    if (normalized.includes("erro")) return "errors";
-    if (normalized.includes("revis")) return "review";
-    if (normalized.includes("simulado") || normalized.includes("prova")) return "simulation";
-    if (normalized.includes("aula") || normalized.includes("lesson")) return "lesson";
-    return "other";
-  };
   const todayHref = (kind, id = "") => {
     if (kind === "lesson" || kind === "review") return "/caderno/?topic_id=" + encodeURIComponent(id) + "&view=editor";
     if (kind === "questions" || kind === "simulation") return "/questoes-simulados/";
