@@ -2306,6 +2306,44 @@
   .kind-questions{background:#20b77a!important}.kind-flashcards{background:#8b5cf6!important}.kind-review{background:#f59e0b!important}.kind-simulation{background:#ef5350!important}.kind-other{background:#7b8798!important}
   @media(max-width:900px){.week-matrix{overflow-x:auto}.week-matrix-grid{min-width:720px}}
 
+
+  /* Cronograma inspirado no layout de referência: calendário central + resumo lateral + cards inferiores */
+  body:not(.schedule-settings-embed) .schedule-stack{gap:14px!important}
+  body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:minmax(0,1fr) 285px;gap:14px;align-items:stretch}
+  body:not(.schedule-settings-embed) .agenda-reference-layout .planner-panel{padding:14px!important;border-radius:15px!important;box-shadow:0 8px 24px rgba(15,35,65,.035)}
+  body:not(.schedule-settings-embed) .agenda-summary-side{position:static;display:block;height:100%}
+  body:not(.schedule-settings-embed) .agenda-week-summary-card{height:100%;padding:14px!important;display:flex;flex-direction:column}
+  .agenda-summary-head{margin-bottom:12px!important}
+  .agenda-summary-head h3{font-size:15px!important;margin-top:3px!important}
+  .agenda-summary-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .agenda-summary-metric{display:flex;align-items:center;gap:9px;min-height:58px;padding:10px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2)}
+  .agenda-summary-metric:last-child{grid-column:1/-1}
+  .agenda-summary-icon{width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-weight:900;font-size:11px}
+  .agenda-summary-metric strong{display:block;font-size:15px;line-height:1}.agenda-summary-metric span:last-child{display:block;margin-top:4px;color:var(--muted);font-size:8px}
+  .agenda-distribution{margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
+  .agenda-distribution-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.agenda-distribution-head strong{font-size:10px}.agenda-distribution-head span{font-size:8px;color:var(--muted)}
+  .agenda-donut-row{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:center}
+  .agenda-donut{width:88px;aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--border) 0 100%);position:relative}
+  .agenda-donut::after{content:"";position:absolute;inset:19px;border-radius:50%;background:var(--surface)}
+  .agenda-distribution-legend{display:grid;gap:7px;min-width:0}.agenda-legend-item{display:grid;grid-template-columns:7px 1fr auto;gap:6px;align-items:center;font-size:8px;color:var(--muted)}.agenda-legend-dot{width:7px;height:7px;border-radius:50%}.agenda-legend-item strong{font-size:8px;color:var(--text)}
+  .agenda-bottom-grid{display:grid;grid-template-columns:1.05fr 1fr .95fr;gap:14px;align-items:stretch}
+  .agenda-bottom-grid>.agenda-side-card{min-height:188px;padding:0;border-radius:15px;overflow:hidden}
+  .agenda-bottom-grid .agenda-next-card,.agenda-bottom-grid .agenda-goals-card{padding:13px}
+  .agenda-bottom-grid .agenda-today-list{max-height:205px;overflow:auto}
+  .agenda-bottom-grid .agenda-next-list{display:grid;gap:0}
+  .agenda-bottom-grid .agenda-next-item{padding:10px 2px}
+  .agenda-goals-list{display:grid;gap:8px}.agenda-goal-row{display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:9px}.agenda-goal-row span{color:var(--muted)}.agenda-goal-row strong{font-size:9px}.agenda-goal-progress{height:6px;border-radius:999px;background:var(--surface-2);overflow:hidden}.agenda-goal-progress i{display:block;height:100%;width:0;border-radius:inherit;background:var(--accent);transition:width .25s ease}
+  body:not(.schedule-settings-embed) .planner-period-title{text-transform:capitalize}
+  body:not(.schedule-settings-embed) .planner-view-toggle{order:0!important}
+  body:not(.schedule-settings-embed) .planner-view-toggle button{min-width:58px}
+  body:not(.schedule-settings-embed) .month-planner{margin-top:10px!important;border-radius:12px!important}
+  body:not(.schedule-settings-embed) .month-weekday{min-height:30px!important;font-size:8px!important}
+  body:not(.schedule-settings-embed) .month-day{min-height:118px!important;padding:6px!important}
+  body:not(.schedule-settings-embed) .month-day-number{width:22px;height:22px;font-size:9px}
+  body:not(.schedule-settings-embed) .month-topic,body:not(.schedule-settings-embed) .month-event{padding:4px 6px!important;border-radius:5px!important;font-size:8px!important}
+  @media(min-width:1200px){body:not(.schedule-settings-embed) .month-day{min-height:126px!important}}
+  @media(max-width:1050px){body:not(.schedule-settings-embed) .agenda-reference-layout{grid-template-columns:1fr}.agenda-summary-side{width:100%}.agenda-bottom-grid{grid-template-columns:1fr 1fr}.agenda-bottom-grid .agenda-goals-card{grid-column:1/-1}}
+  @media(max-width:720px){.agenda-bottom-grid{grid-template-columns:1fr}.agenda-bottom-grid .agenda-goals-card{grid-column:auto}.agenda-donut-row{grid-template-columns:76px 1fr}.agenda-donut{width:72px}.agenda-donut::after{inset:16px}}
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -2622,37 +2660,78 @@
             <div id="base-schedule-deck" class="base-schedule-deck"></div>
           </section>
 
-          <div class="agenda-workspace">
-          <section class="planner-panel">
-            <div class="planner-header">
-              <div class="planner-header-left">
-                <div class="planner-nav planner-nav-arrows">
-                  <button id="week-prev" type="button" aria-label="Período anterior">‹</button>
-                  <button id="week-next" type="button" aria-label="Próximo período">›</button>
+          <div class="agenda-workspace agenda-reference-layout">
+            <section class="planner-panel">
+              <div class="planner-header">
+                <div class="planner-header-left">
+                  <div class="planner-nav planner-nav-arrows">
+                    <button id="week-prev" type="button" aria-label="Período anterior">‹</button>
+                    <button id="week-next" type="button" aria-label="Próximo período">›</button>
+                  </div>
+                  <h2 id="planner-range" class="planner-period-title">Carregando...</h2>
                 </div>
-                <h2 id="planner-range" class="planner-period-title">Carregando...</h2>
+
+                <div class="planner-tools">
+                  <button id="week-today" class="planner-today" type="button">Hoje</button>
+                  <div class="planner-view-toggle" role="group" aria-label="Visualização do planejador">
+                    <button id="planner-view-month" class="active" type="button" aria-pressed="true">Mês</button>
+                    <button id="planner-view-week" type="button" aria-pressed="false">Semana</button>
+                  </div>
+                </div>
               </div>
 
-              <div class="planner-tools">
-                <button id="week-today" class="planner-today" type="button">Hoje</button>
-                <div class="planner-view-toggle" role="group" aria-label="Visualização do planejador">
-                  <button id="planner-view-week" class="active" type="button" aria-pressed="true">Semana</button>
-                  <button id="planner-view-month" type="button" aria-pressed="false">Mês</button>
+              <div id="week-planner" class="week-planner" hidden></div>
+              <div id="month-planner" class="month-planner"></div>
+            </section>
+
+            <aside class="agenda-side agenda-summary-side">
+              <section class="agenda-side-card agenda-week-summary-card">
+                <div class="agenda-side-head agenda-summary-head">
+                  <div>
+                    <span class="agenda-kicker">Visão geral</span>
+                    <h3>Resumo da semana</h3>
+                    <span id="agenda-week-range" class="agenda-today-date"></span>
+                  </div>
                 </div>
-              </div>
-            </div>
 
-            <div id="week-planner" class="week-planner"></div>
-            <div id="month-planner" class="month-planner" hidden></div>
-          </section>
+                <div class="agenda-summary-metrics">
+                  <div class="agenda-summary-metric">
+                    <span class="agenda-summary-icon">▣</span>
+                    <div><strong id="agenda-week-total">0</strong><span>atividades</span></div>
+                  </div>
+                  <div class="agenda-summary-metric">
+                    <span class="agenda-summary-icon">◷</span>
+                    <div><strong id="agenda-week-days">0</strong><span>dias ativos</span></div>
+                  </div>
+                  <div class="agenda-summary-metric">
+                    <span class="agenda-summary-icon">!</span>
+                    <div><strong id="agenda-week-overdue">0</strong><span>atrasadas</span></div>
+                  </div>
+                </div>
 
-          <aside class="agenda-side">
+                <div class="agenda-distribution">
+                  <div class="agenda-distribution-head">
+                    <strong>Distribuição por atividade</strong>
+                    <span id="agenda-distribution-total">0</span>
+                  </div>
+                  <div class="agenda-donut-row">
+                    <div id="agenda-donut" class="agenda-donut" aria-label="Distribuição semanal"></div>
+                    <div id="agenda-distribution-legend" class="agenda-distribution-legend">
+                      <span class="agenda-empty">Sem atividades nesta semana.</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </aside>
+          </div>
+
+          <div class="agenda-bottom-grid">
             <section class="agenda-side-card agenda-today-card">
               <div class="agenda-today-head">
                 <div class="agenda-today-title-wrap">
                   <span class="agenda-today-icon" aria-hidden="true">▣</span>
                   <div>
-                    <h3>Agenda de hoje</h3>
+                    <h3>Atividades de hoje</h3>
                     <span id="agenda-today-date" class="agenda-today-date"></span>
                   </div>
                 </div>
@@ -2660,19 +2739,36 @@
               </div>
               <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
             </section>
-            <section class="agenda-side-card">
-              <div class="agenda-side-head"><div><span class="agenda-kicker">Semana</span><h3>Resumo</h3></div></div>
-              <div class="agenda-mini-stats">
-                <div><strong id="agenda-week-total">0</strong><span>atividades</span></div>
-                <div><strong id="agenda-week-days">0</strong><span>dias ativos</span></div>
-                <div><strong id="agenda-week-overdue">0</strong><span>atrasadas</span></div>
-              </div>
-            </section>
+
             <section class="agenda-side-card agenda-next-card">
-              <div class="agenda-side-head"><div><span class="agenda-kicker">Depois</span><h3>Próximas atividades</h3></div></div>
+              <div class="agenda-side-head">
+                <div><span class="agenda-kicker">Agenda</span><h3>Próximas atividades</h3></div>
+              </div>
               <div id="agenda-next-list" class="agenda-next-list"><p class="agenda-empty">Sem próximas atividades.</p></div>
             </section>
-          </aside>
+
+            <section class="agenda-side-card agenda-goals-card">
+              <div class="agenda-side-head">
+                <div><span class="agenda-kicker">Semana</span><h3>Metas da semana</h3></div>
+              </div>
+              <div class="agenda-goals-list">
+                <div class="agenda-goal-row">
+                  <span>Atividades planejadas</span>
+                  <strong id="agenda-goal-planned">0</strong>
+                </div>
+                <div class="agenda-goal-progress"><i id="agenda-goal-planned-bar"></i></div>
+                <div class="agenda-goal-row">
+                  <span>Concluídas</span>
+                  <strong id="agenda-goal-completed">0</strong>
+                </div>
+                <div class="agenda-goal-progress"><i id="agenda-goal-completed-bar"></i></div>
+                <div class="agenda-goal-row">
+                  <span>Pendências</span>
+                  <strong id="agenda-goal-pending">0</strong>
+                </div>
+                <div class="agenda-goal-progress"><i id="agenda-goal-pending-bar"></i></div>
+              </div>
+            </section>
           </div>
 
           <section class="overdue-organizer">
