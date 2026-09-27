@@ -19194,6 +19194,8 @@ async function initNotebook() {
 
   wireEvents();
 
+  wireNotebookEnhancements();
+
   initNotebookTopicPanelState();
 
   setEditorEnabled(
@@ -19289,10 +19291,9 @@ async function initNotebook() {
 
 
     await switchView(
-      requestedView ===
-      "library"
-        ? "library"
-        : "editor",
+      requestedView === "editor"
+        ? "editor"
+        : "library",
 
       true
     );
