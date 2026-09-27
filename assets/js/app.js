@@ -286,6 +286,7 @@ const PAGE_FEATURES = {
   flashcards: "flashcards",
   erros: "error_notebook",
   questoes: "questions",
+  plantao: "plantao",
   estatisticas: "statistics_general"
 };
 
@@ -293,6 +294,7 @@ const PLUS_NAV_FEATURES = {
   "/flashcards/": "flashcards",
   "/questoes-simulados/": "questions",
   "/registrar-questoes/": "questions",
+  "/plantao/": "plantao",
   "/estatisticas/": "statistics_general"
 };
 
@@ -3895,6 +3897,7 @@ function essentialEntitlementsFallback() {
       questions: { enabled: false, limit: 0 },
       question_import: { enabled: false, limit: 0 },
       simulations: { enabled: false, limit: 0 },
+      plantao: { enabled: false, limit: 0 },
       statistics_general: { enabled: true, limit: null },
       advanced_statistics: { enabled: false, limit: 0 },
       notebook_images: { enabled: false, limit: 0 },
