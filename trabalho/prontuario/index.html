@@ -9,7 +9,7 @@
   <title>Prontuário rápido · LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/quick-chart-external.css?v=2">
+  <link rel="stylesheet" href="/assets/css/quick-chart-external.css?v=3">
 </head>
 <body>
   <main class="external-chart">
@@ -24,14 +24,18 @@
     <section id="external-gate" class="external-editor external-gate">
       <div class="external-title">
         <div>
-          <span>Sem login</span>
-          <h1>Digite seu código</h1>
+          <span>Acesso protegido</span>
+          <h1>Entre no seu prontuário</h1>
         </div>
       </div>
-      <p class="external-privacy">Use o seu código fixo do Prontuário Rápido. Ele não fica salvo neste computador.</p>
+      <p class="external-privacy">Digite seu nome de usuário da LURIA e o PIN de 4 dígitos. Esses dados não ficam salvos neste computador.</p>
       <label class="external-code-field">
-        <span>Código de acesso</span>
-        <input id="external-code" type="text" inputmode="text" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="32" placeholder="Ex.: LURIA7K4M9P">
+        <span>Nome de usuário</span>
+        <input id="external-username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="30" placeholder="Ex.: luizarantes">
+      </label>
+      <label class="external-code-field external-pin-field">
+        <span>PIN</span>
+        <input id="external-pin" type="password" inputmode="numeric" autocomplete="one-time-code" maxlength="4" placeholder="••••">
       </label>
       <button id="external-enter" class="external-enter" type="button">Abrir prontuário</button>
       <p id="external-gate-error" class="external-gate-error" hidden></p>
@@ -73,6 +77,6 @@
       </footer>
     </section>
   </main>
-  <script src="/assets/js/quick-chart-external.js?v=4"></script>
+  <script src="/assets/js/quick-chart-external.js?v=5"></script>
 </body>
 </html>
