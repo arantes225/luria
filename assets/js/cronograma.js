@@ -30,6 +30,8 @@ const scheduleState = {
   agendaScope: "today",
   agendaFilter: "all",
   agendaSelected: new Set(),
+  calendarFilters: { type:"all", date:"", materia:"" },
+  activityFilters: { type:"all", date:"", materia:"" },
 
   theoryStudyWeekdays:
     [1, 3, 5],
@@ -4554,14 +4556,17 @@ function renderMonthPlanner() {
     days
       .map(
         (date) => {
-          const topics =
-            topicsOnDate(date);
-
-          const events =
-            eventsOnDate(date);
-
-          const errorItems =
-            errorItemsOnDate(date);
+          let errorItems = errorItemsOnDate(date);
+          let topics = topicsOnDate(date);
+          let events = eventsOnDate(date);
+          const filters=scheduleState.calendarFilters||{};
+          const iso=toISODateSchedule(date), matchesText=value=>!filters.materia||normalizeHeader(value||"").includes(normalizeHeader(filters.materia));
+          if(filters.date&&filters.date!==iso){topics=[];events=[];errorItems=[];}
+          else{
+            topics=topics.filter(t=>(filters.type==="all"||kindClass(t.type||"lesson")===filters.type)&&matchesText(t.materia));
+            events=events.filter(e=>(filters.type==="all"||kindClass(e.event_type||e.title)===filters.type)&&matchesText(e.materia));
+            errorItems=errorItems.filter(e=>(filters.type==="all"||filters.type==="errors")&&matchesText(e.materia));
+          }
 
           const allItems = [
             ...topics.map(
@@ -4716,7 +4721,8 @@ function renderAgendaSide() {
       scheduleState.errorItems.forEach(e=>{if(e.due_date)seen.add(e.due_date)});
       [...seen].sort().forEach(iso=>{const d=parseISODateSchedule(iso);if(d)addDateItems(d)});
     }
-    const visible=sourceItems.filter(item=>scheduleState.agendaFilter==="all"||item.kind===scheduleState.agendaFilter);
+    const af=scheduleState.activityFilters||{};
+    const visible=sourceItems.filter(item=>(scheduleState.agendaFilter==="all"||item.kind===scheduleState.agendaFilter)&&(af.type==="all"||item.kind===af.type)&&(!af.date||item.date===af.date)&&(!af.materia||normalizeHeader(item.meta||"").includes(normalizeHeader(af.materia)));
     const labelForKind=k=>({lesson:"Aula",questions:"Questões",review:"Revisão",flashcards:"Flashcards",errors:"Caderno de erros",simulation:"Simulado",other:"Outro"}[k]||"Atividade");
     const row=item=>{
       const key=item.source+":"+item.id, selected=scheduleState.agendaSelected.has(key);
@@ -8498,6 +8504,10 @@ function wireDynamicInteractions() {
     });
   });
 
+  document.querySelectorAll("[data-filter-trigger]").forEach(button=>button.onclick=e=>{e.stopPropagation();const key=button.dataset.filterTrigger,pop=document.querySelector('[data-filter-popover="'+key+'"]');document.querySelectorAll("[data-filter-popover]").forEach(p=>{if(p!==pop)p.hidden=true});if(pop){pop.hidden=!pop.hidden;button.classList.toggle("active",!pop.hidden);}});
+  document.querySelectorAll("[data-filter-popover]").forEach(pop=>pop.onclick=e=>e.stopPropagation());
+  document.querySelectorAll("[data-filter-field]").forEach(field=>{const [scope,name]=field.dataset.filterField.split(":");const target=scope==="calendar"?scheduleState.calendarFilters:scheduleState.activityFilters;field.value=target[name]||"";field.oninput=()=>{target[name]=field.value;if(scope==="calendar")renderMonthPlanner();else{renderAgendaSide();wireDynamicInteractions();}};});
+  document.querySelectorAll("[data-filter-clear]").forEach(button=>button.onclick=()=>{const scope=button.dataset.filterClear,target=scope==="calendar"?scheduleState.calendarFilters:scheduleState.activityFilters;target.type="all";target.date="";target.materia="";if(scope==="calendar")renderMonthPlanner();else{renderAgendaSide();wireDynamicInteractions();}});
   document.querySelectorAll("[data-agenda-scope]").forEach(button=>button.addEventListener("click",()=>{
     scheduleState.agendaScope=button.dataset.agendaScope; scheduleState.agendaSelected.clear();
     const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
