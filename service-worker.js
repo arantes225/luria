@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v175-mobile-scroll-dashboard";
+const CACHE_VERSION = "luria-pwa-v176-font-uniform";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -41,7 +41,7 @@ const APP_SHELL = [
   "/trabalho/prescricao/",
   "/plantao/",
   "/assets/js/plantao.js?v=9.10-luriazap-area-filter-fix",
-  "/assets/css/style.css?v=16.11-dashboard-match-cronograma",
+  "/assets/css/style.css?v=16.13-font-uniform",
   "/assets/css/landing.css",
   "/assets/css/pwa-mobile.css?v=18",
   "/assets/css/plantao.css?v=8.7-pwa-monitor-fill",
