@@ -3230,6 +3230,7 @@ function loadNotebookImageOnDemand(
 
 
 function renderDocument() {
+  queueMicrotask(()=>{restoreNotebookPaperStyle();refreshNotebookOutline();});
 
   const current =
     getCurrentDocument();
@@ -19128,6 +19129,51 @@ function startNotebookRealtime() {
 /* =========================================================
    INIT
    ========================================================= */
+
+
+function notebookPaperKey() {
+  const doc=getCurrentDocument();
+  return "luria:notebook-paper:"+(doc?.note?.id || doc?.topic?.id || "draft");
+}
+function applyNotebookPaperStyle(style) {
+  const paper=document.querySelector(".notebook-paper");
+  if(!paper)return;
+  paper.classList.remove("paper-white","paper-lined","paper-dotted","paper-luria");
+  paper.classList.add("paper-"+(style||"white"));
+  try{localStorage.setItem(notebookPaperKey(),style||"white")}catch{}
+}
+function restoreNotebookPaperStyle() {
+  let style="white"; try{style=localStorage.getItem(notebookPaperKey())||"white"}catch{}
+  applyNotebookPaperStyle(style);
+}
+function refreshNotebookOutline() {
+  const editor=document.getElementById("notebook-editor"), panel=document.getElementById("notebook-outline-items");
+  if(!editor||!panel)return;
+  const heads=[...editor.querySelectorAll("h1,h2,h3")];
+  panel.innerHTML=heads.length?heads.map((h,i)=>`<button type="button" data-outline-index="${i}" style="padding-left:${8+(Number(h.tagName[1])-1)*10}px">${escapeHtml(h.textContent||"Seção")}</button>`).join(""):'<small style="color:var(--muted)">Use títulos para criar a estrutura.</small>';
+  panel.querySelectorAll("[data-outline-index]").forEach(b=>b.onclick=()=>heads[Number(b.dataset.outlineIndex)]?.scrollIntoView({behavior:"smooth",block:"center"}));
+}
+function ensureNotebookSideTools() {
+  const col=document.querySelector(".notebook-editor-column"); if(!col||col.classList.contains("with-side-tools"))return;
+  const children=[...col.children]; const core=document.createElement("div"); core.className="notebook-editor-core";
+  children.forEach(ch=>core.appendChild(ch));
+  const outline=document.createElement("aside"); outline.className="notebook-outline-panel"; outline.innerHTML='<div class="notebook-outline-title">Estrutura</div><div id="notebook-outline-items"></div>';
+  const quick=document.createElement("aside"); quick.className="notebook-quick-panel"; quick.innerHTML='<div class="notebook-quick-title">Ações rápidas</div><button type="button" data-quick="save">Salvar agora</button><button type="button" data-quick="share">Compartilhar</button><button type="button" data-quick="pdf">Exportar PDF</button><button type="button" data-quick="library">Meus cadernos</button>';
+  col.append(outline,core,quick); col.classList.add("with-side-tools");
+  quick.querySelector('[data-quick="save"]').onclick=()=>saveCurrentNotebook(true);
+  quick.querySelector('[data-quick="library"]').onclick=()=>switchView("library");
+  quick.querySelector('[data-quick="share"]').onclick=()=>{const d=getCurrentDocument();const e=getLibraryEntries().find(x=>x.note?.id===d?.note?.id);if(e)openNotebookShareDialog([e],e.title||"Caderno LURIA")};
+  quick.querySelector('[data-quick="pdf"]').onclick=()=>{const d=getCurrentDocument();if(d?.note){notebookState.librarySelected=new Set([d.note.id]);exportSelectedPdf();}};
+  document.getElementById("notebook-editor")?.addEventListener("input",refreshNotebookOutline);
+}
+function wireNotebookEnhancements() {
+  ensureNotebookSideTools();
+  const columns=document.getElementById("notebook-columns");
+  if(columns) columns.onclick=()=>{restoreEditorSelection();insertHtmlAtCursor('<div class="notebook-two-columns"><div class="notebook-column"><p>Coluna 1</p></div><div class="notebook-column"><p>Coluna 2</p></div></div><p><br></p>');markEditorDirty();refreshNotebookOutline();};
+  const paperToggle=document.getElementById("notebook-paper-toggle"), paperMenu=document.getElementById("notebook-paper-menu");
+  if(paperToggle&&paperMenu){paperToggle.onclick=e=>{e.stopPropagation();paperMenu.hidden=!paperMenu.hidden;paperToggle.setAttribute("aria-expanded",paperMenu.hidden?"false":"true")};paperMenu.querySelectorAll("[data-paper-style]").forEach(b=>b.onclick=()=>{applyNotebookPaperStyle(b.dataset.paperStyle);paperMenu.hidden=true;});}
+  restoreNotebookPaperStyle(); refreshNotebookOutline();
+}
 
 async function initNotebook() {
 
