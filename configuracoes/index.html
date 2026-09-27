@@ -765,11 +765,6 @@
     .password-pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .quick-access-settings .security-email{background:var(--surface)}
     @media(max-width:700px){.password-pair{grid-template-columns:1fr}}
-
-    .settings-cronograma-view[hidden]{display:none!important}
-    .settings-cronograma-view{display:grid;gap:16px}
-    .settings-cronograma-frame{width:100%;min-height:1150px;border:0;background:transparent}
-    @media(max-width:700px){.settings-cronograma-frame{min-height:1450px}}
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=5-reference">
@@ -804,7 +799,7 @@
         <nav class="settings-tabs" aria-label="Seções das configurações">
           <button type="button" class="settings-tab" data-settings-tab="perfil">Perfil e Conta</button>
           <button type="button" class="settings-tab active" data-settings-tab="personalizar" aria-current="page">Personalizar</button>
-          <button type="button" class="settings-tab" data-settings-tab="cronograma">Cronograma</button>
+          <a class="settings-tab" href="/configuracoes/cronograma/">Cronograma</a>
           <button type="button" class="settings-tab" data-settings-tab="pomodoro">Pomodoro e Cronômetro</button>
           <button type="button" class="settings-tab" data-settings-tab="revisoes">Revisões</button>
           <button type="button" class="settings-tab" data-settings-tab="notificacoes">Notificações</button>
@@ -1749,10 +1744,6 @@
           </article>
 
         </section>
-
-        <section class="settings-section settings-cronograma-view" data-settings-view="cronograma" hidden>
-          <iframe class="settings-cronograma-frame" src="/cronograma/?settings=1" title="Configurações do cronograma"></iframe>
-        </section>
       </div>
     </main>
   </div>
@@ -1788,11 +1779,8 @@
       document.querySelectorAll(".settings-tab").forEach((tab) => {
         tab.addEventListener("click", () => {
           const target = tab.dataset.settingsTab;
-          if (!["personalizar","perfil","cronograma"].includes(target)) return;
-          const cronogramaView = document.querySelector('[data-settings-view="cronograma"]');
-          const showCronograma = target === "cronograma";
-          section.hidden = showCronograma;
-          if (cronogramaView) cronogramaView.hidden = !showCronograma;
+          if (!["personalizar","perfil"].includes(target)) return;
+          section.hidden = false;
           section.classList.toggle("is-profile-view", target === "perfil");
           document.querySelectorAll(".settings-tab").forEach((item) => {
             item.classList.toggle("active", item === tab);
