@@ -156,3 +156,49 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-tabs .flash-tab{height:34px!important;min-height:34px!important;padding:0 15px!important;font-size:10px!important;border-radius:7px!important}
 .flash-history-summary,.flash-review-dashboard{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0 24px}.flash-history-summary>div,.flash-review-dashboard>div{padding:18px;border:1px solid var(--border);border-radius:11px;background:var(--surface);display:grid;gap:5px}.flash-history-summary b,.flash-review-dashboard b{font-size:24px}.flash-history-summary span,.flash-review-dashboard span{font-size:9px;color:var(--muted);font-weight:700}.flash-review-hub h2{font-size:18px;margin:0 0 12px}
 @media(max-width:720px){.flash-tabs{min-width:100%!important;overflow-x:auto!important}.flash-tabs .flash-tab{padding:0 10px!important}.flash-history-summary,.flash-review-dashboard{grid-template-columns:1fr!important}}
+
+
+/* v24.4 — hierarquia dos Decks no padrão de espessura do switch principal */
+.flash-area-shelf-head{
+  min-height:42px!important;
+  padding:4px!important;
+  border:1px solid var(--border)!important;
+  border-radius:8px!important;
+  background:var(--surface)!important;
+  gap:8px!important;
+}
+.flash-area-shelf-icon{
+  width:34px!important;
+  height:34px!important;
+  flex:0 0 34px!important;
+  border-radius:7px!important;
+  background:var(--surface-2)!important;
+}
+.flash-area-shelf-icon svg{width:24px!important;height:24px!important}
+.flash-area-shelf-copy strong{font-size:10px!important;font-weight:750!important}
+.flash-area-shelf-copy small{font-size:8px!important}
+.flash-area-shelf-head>button{
+  min-height:34px!important;
+  padding:0 12px!important;
+  border-radius:7px!important;
+  background:var(--surface-2)!important;
+  font-size:9px!important;
+}
+.flash-ref-deck{
+  min-height:0!important;
+  padding:12px!important;
+  border-radius:8px!important;
+}
+.flash-ref-deck-top{min-height:34px!important}
+.flash-ref-deck-icon{
+  width:34px!important;
+  height:34px!important;
+  flex:0 0 34px!important;
+  border-radius:7px!important;
+  background:var(--surface-2)!important;
+}
+.flash-ref-deck-icon svg{width:25px!important;height:25px!important}
+.flash-ref-deck h3{margin-top:8px!important;font-size:10px!important;font-weight:750!important}
+.flash-ref-deck-desc{min-height:30px!important;font-size:8px!important}
+.flash-ref-deck-stats{margin-top:10px!important}
+.flash-ref-progress{margin-top:9px!important}
