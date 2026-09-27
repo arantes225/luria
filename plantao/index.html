@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/plantao.css?v=9.0-sidebar-nav-fix">
-  <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=8">
+  <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
   <link rel="canonical" href="/plantao/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <script>(function(){try{if(location.pathname.endsWith("/plantao.html"))history.replaceState(null,"","/plantao/"+location.search+location.hash);}catch(e){}})();</script>
@@ -237,23 +237,27 @@
         </section>
 
         <div id="plantao-patient-sheet" class="plantao-patient-sheet" hidden aria-hidden="true">
-          <section class="plantao-patient-sheet-card" role="dialog" aria-modal="true" aria-labelledby="plantao-patient-sheet-title">
-            <div class="plantao-patient-sheet-head">
-              <div>
-                <span class="metric-label">Resumo do paciente</span>
-                <h2 id="plantao-patient-sheet-title">Paciente</h2>
-              </div>
-              <button id="plantao-patient-sheet-close" class="button secondary" type="button" aria-label="Fechar resumo">×</button>
-            </div>
-            <div class="plantao-patient-sheet-meta">
+          <section class="plantao-patient-sheet-card plantao-patient-chart" role="dialog" aria-modal="true" aria-labelledby="plantao-patient-sheet-title">
+            <div class="plantao-report-clip" aria-hidden="true"></div>
+            <button id="plantao-patient-sheet-close" class="plantao-report-close" type="button" aria-label="Fechar prontuário">×</button>
+            <header class="plantao-report-head plantao-patient-chart-head">
+              <span class="plantao-report-brand">LURIA · SALA DE EMERGÊNCIA</span>
+              <h2 id="plantao-patient-sheet-title">Prontuário do paciente</h2>
+            </header>
+            <section class="plantao-report-patient plantao-patient-sheet-meta">
               <div><span>Nome completo</span><strong id="plantao-patient-sheet-name">—</strong></div>
               <div><span>Idade</span><strong id="plantao-patient-sheet-age">—</strong></div>
               <div><span>Sexo</span><strong id="plantao-patient-sheet-sex">—</strong></div>
-            </div>
-            <div class="plantao-patient-sheet-hda">
-              <span>HDA</span>
+            </section>
+            <section class="plantao-report-content plantao-patient-sheet-hda">
+              <span class="plantao-report-label">História da Doença Atual</span>
+              <div class="plantao-report-rule"></div>
               <p id="plantao-patient-sheet-hda">—</p>
-            </div>
+            </section>
+            <footer class="plantao-report-footer">
+              <span>Prontuário simulado para fins educacionais</span>
+              <button id="plantao-patient-sheet-ok" class="button primary" type="button">Fechar prontuário</button>
+            </footer>
           </section>
         </div>
 
