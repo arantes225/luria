@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src https://sxdsfklllilhdyuamvvg.supabase.co; frame-ancestors 'none'; upgrade-insecure-requests">
+  <title>Prontuário rápido · LURIA</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/quick-chart-external.css?v=1">
+</head>
+<body>
+  <main class="external-chart">
+    <header class="external-head">
+      <div class="external-brand">
+        <img src="/assets/img/logos/logo-icone-original.png?v=luria10" alt="">
+        <div><strong>LURIA</strong><span>Prontuário rápido</span></div>
+      </div>
+      <span id="external-status" class="external-status">Abrindo…</span>
+    </header>
+
+    <section id="external-error" class="external-error" hidden>
+      <h1>Este acesso não está disponível</h1>
+      <p id="external-error-message">Confira o link ou gere um novo acesso no LURIA.</p>
+    </section>
+
+    <section id="external-editor" class="external-editor" hidden>
+      <div class="external-title">
+        <div>
+          <span>Acesso temporário</span>
+          <h1 id="external-title">Prontuário rápido</h1>
+        </div>
+        <small id="external-expiry"></small>
+      </div>
+
+      <p class="external-privacy">Use iniciais, leito ou identificador interno sempre que possível. Evite inserir dados pessoais desnecessários.</p>
+
+      <div class="chart-grid">
+        <label class="wide"><span>Paciente / leito</span><input data-chart-field="patient" maxlength="120" autocomplete="off" placeholder="Ex.: J.S. · Leito 12"></label>
+        <label><span>Idade</span><input data-chart-field="age" maxlength="40" autocomplete="off"></label>
+        <label><span>Sexo</span><input data-chart-field="sex" maxlength="40" autocomplete="off"></label>
+        <label class="wide"><span>Queixa principal</span><input data-chart-field="chief_complaint" maxlength="240" autocomplete="off"></label>
+        <label class="wide"><span>HDA / anamnese</span><textarea data-chart-field="history" rows="6"></textarea></label>
+        <label class="wide"><span>Exame físico</span><textarea data-chart-field="physical_exam" rows="6"></textarea></label>
+        <label class="wide"><span>Exames</span><textarea data-chart-field="tests" rows="5"></textarea></label>
+        <label class="wide"><span>Hipóteses</span><textarea data-chart-field="assessment" rows="5"></textarea></label>
+        <label class="wide"><span>Conduta</span><textarea data-chart-field="plan" rows="6"></textarea></label>
+        <label class="wide"><span>Evolução / observações</span><textarea data-chart-field="progress" rows="6"></textarea></label>
+      </div>
+
+      <footer class="external-savebar">
+        <span id="external-save-state">Salvo</span>
+        <button id="external-save" type="button">Salvar agora</button>
+      </footer>
+    </section>
+  </main>
+  <script src="/assets/js/quick-chart-external.js?v=1"></script>
+</body>
+</html>
