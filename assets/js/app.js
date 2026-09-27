@@ -272,6 +272,62 @@
     @media(max-width:980px){html.pwa-standalone body #sidebar.sidebar .work-pcr-button{min-height:88px!important}}
   `;
 
+  style.textContent += `
+    /* Trabalho: somente a lista de páginas rola; PCR + usuário permanecem fixos. */
+    body[data-page^="trabalho_"] #sidebar.sidebar {
+      overflow: hidden !important;
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-top {
+      flex: 0 0 auto !important;
+    }
+
+    body[data-page^="trabalho_"] #sidebar.sidebar .nav {
+      flex: 1 1 auto !important;
+      min-height: 0 !important;
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
+      overscroll-behavior: contain;
+      padding-right: 4px;
+      scrollbar-width: thin;
+    }
+
+    body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer {
+      flex: 0 0 auto !important;
+      margin-top: 12px !important;
+      padding-top: 12px !important;
+      padding-bottom: max(4px, env(safe-area-inset-bottom)) !important;
+      background: var(--sidebar) !important;
+      position: relative !important;
+      z-index: 3 !important;
+    }
+
+    body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
+    body[data-page^="trabalho_"] #sidebar.sidebar .user-mini,
+    body[data-page^="trabalho_"] #sidebar.sidebar .logout-button {
+      flex-shrink: 0 !important;
+    }
+
+    @media (max-width: 980px) {
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar {
+        overflow: hidden !important;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav {
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer {
+        margin-top: 10px !important;
+        padding-top: 10px !important;
+      }
+    }
+  `;
+  style.dataset.workSidebarFixedFooter = "1";
+
   document.head.appendChild(style);
 })();
 
