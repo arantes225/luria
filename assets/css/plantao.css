@@ -3682,3 +3682,107 @@ body.plantao-phone-mode .sidebar-desktop-toggle{
     transform:none!important;
   }
 }
+
+
+/* v8.8 — prontuário em formato de folha, igual aos laudos */
+.plantao-patient-sheet{
+  position:fixed;
+  inset:0;
+  z-index:13000;
+  display:grid;
+  place-items:center;
+  padding:24px;
+  background:rgba(8,18,34,.58);
+  backdrop-filter:blur(7px);
+  -webkit-backdrop-filter:blur(7px);
+}
+.plantao-patient-sheet[hidden]{display:none!important}
+.plantao-patient-sheet-card.plantao-patient-chart{
+  position:relative;
+  width:min(720px,calc(100vw - 32px));
+  max-height:min(88vh,900px);
+  overflow:auto;
+  padding:34px 38px 28px;
+  border:1px solid #d8d3c7;
+  border-radius:16px;
+  background:#fffdf7;
+  color:#18212f;
+  box-shadow:0 30px 80px rgba(6,17,32,.30),0 6px 18px rgba(6,17,32,.12);
+}
+.plantao-patient-chart .plantao-patient-sheet-meta{
+  display:grid;
+  grid-template-columns:1.5fr .75fr .75fr;
+  gap:0;
+  margin-top:22px;
+  padding:14px 0;
+  border-top:1px solid #ddd7ca;
+  border-bottom:1px solid #ddd7ca;
+}
+.plantao-patient-chart .plantao-patient-sheet-meta>div{
+  min-width:0;
+  padding:0 14px;
+  border-left:1px solid #e5dfd3;
+}
+.plantao-patient-chart .plantao-patient-sheet-meta>div:first-child{
+  padding-left:0;
+  border-left:0;
+}
+.plantao-patient-chart .plantao-patient-sheet-meta span{
+  display:block;
+  margin-bottom:5px;
+  color:#6f7782;
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.plantao-patient-chart .plantao-patient-sheet-meta strong{
+  display:block;
+  color:#18212f;
+  font-size:13px;
+  line-height:1.35;
+}
+.plantao-patient-chart .plantao-patient-sheet-hda{
+  margin-top:22px;
+  padding:0;
+  border:0;
+  background:transparent;
+}
+.plantao-patient-chart .plantao-patient-sheet-hda p{
+  margin:16px 0 0;
+  color:#26313f;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:15px;
+  line-height:1.7;
+  white-space:pre-wrap;
+}
+@media(max-width:680px){
+  .plantao-patient-sheet{
+    padding:16px;
+  }
+  .plantao-patient-sheet-card.plantao-patient-chart{
+    width:min(100%,620px);
+    max-height:88dvh;
+    padding:30px 22px 22px;
+    border-radius:14px;
+  }
+  .plantao-patient-chart .plantao-patient-sheet-meta{
+    grid-template-columns:1fr 1fr;
+    row-gap:12px;
+  }
+  .plantao-patient-chart .plantao-patient-sheet-meta>div{
+    padding:0 10px;
+  }
+  .plantao-patient-chart .plantao-patient-sheet-meta>div:first-child{
+    grid-column:1/-1;
+    padding:0 0 12px;
+    border-bottom:1px solid #e5dfd3;
+  }
+  .plantao-patient-chart .plantao-patient-sheet-meta>div:nth-child(2){
+    padding-left:0;
+    border-left:0;
+  }
+  .plantao-patient-chart .plantao-patient-sheet-hda p{
+    font-size:14px;
+  }
+}
