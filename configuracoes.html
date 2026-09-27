@@ -620,6 +620,7 @@
 
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
+  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=1">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/configuracoes/">
   <script>(function(){try{if(location.pathname.endsWith("/configuracoes.html"))history.replaceState(null,"","/configuracoes/"+location.search+location.hash);}catch(e){}})();</script>
@@ -853,6 +854,41 @@
             </form>
 
             <div id="theme-status" class="inline-status"></div>
+          </article>
+
+          <article class="setting-row dashboard-layout-setting">
+            <div>
+              <h2>Layout do dashboard</h2>
+              <p>Escolha como os seus dados aparecem na página inicial.</p>
+            </div>
+            <fieldset id="dashboard-layout-options" class="dashboard-layout-options">
+              <legend class="sr-only">Escolha o layout do dashboard</legend>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="old">
+                <span class="dashboard-layout-choice-body dashboard-layout-old-preview">
+                  <span class="dashboard-layout-old-icon" aria-hidden="true">▦</span>
+                  <strong>Opção antiga</strong><small>Layout atual do LURIA</small>
+                </span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="1">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-1.webp" alt="Prévia da agenda em destaque" loading="lazy"><strong>Opção 1 · Agenda</strong><small>Dia em primeiro plano</small></span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="2">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-2.webp" alt="Prévia dos indicadores em colunas" loading="lazy"><strong>Opção 2 · Indicadores</strong><small>Progresso em colunas</small></span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="3">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-3.webp" alt="Prévia do painel completo" loading="lazy"><strong>Opção 3 · Painel completo</strong><small>Inclui o Pulo do Gato</small></span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="4">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-4.webp" alt="Prévia dos cartões de progresso" loading="lazy"><strong>Opção 4 · Compacto</strong><small>Cartões e próximas atividades</small></span>
+              </label>
+            </fieldset>
+            <div id="dashboard-layout-status" class="inline-status" role="status" aria-live="polite"></div>
+            <a class="dashboard-layout-open" href="/dashboard/">Ver dashboard →</a>
           </article>
 
           
@@ -1561,6 +1597,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/configuracoes.js?v=13.3-auth"></script>
+  <script src="assets/js/dashboard-layout-settings.js?v=1"></script>
   <script defer src="assets/js/pwa.js?v=5"></script>
 </body>
 </html>

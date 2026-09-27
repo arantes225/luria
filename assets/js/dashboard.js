@@ -716,6 +716,7 @@ async function loadAgenda() {
   );
 
   renderCalendar();
+  window.dispatchEvent(new Event("luria:dashboard-data"));
 
   const count = agendaState.items.length;
   setCalendarStatus(
@@ -1285,7 +1286,7 @@ async function loadLessonMetrics() {
 
   const { data, error } = await dashboardSb
     .from("study_topics")
-    .select("id,status,scheduled_date,completed_at");
+    .select("id,area,status,scheduled_date,completed_at");
 
   if (error) {
     console.warn(error);
@@ -1293,6 +1294,30 @@ async function loadLessonMetrics() {
   }
 
   const rows = data || [];
+  const byArea = new Map();
+  rows.forEach((row) => {
+    const area = String(row.area || "Sem área").trim();
+    const current = byArea.get(area) || { area, total: 0, completed: 0 };
+    current.total += 1;
+    if (row.status === "completed" || row.completed_at) current.completed += 1;
+    byArea.set(area, current);
+  });
+  window.luriaDashboardAreaSummary = [...byArea.values()]
+    .sort((a, b) => b.total - a.total || a.area.localeCompare(b.area, "pt-BR"));
+  const todayRows = rows.filter((row) => row.scheduled_date === todayIso);
+  window.luriaDashboardTodayLessons = {
+    total: todayRows.length,
+    completed: todayRows.filter((row) => row.status === "completed" || row.completed_at).length
+  };
+  window.luriaDashboardDayLessons = {};
+  rows.forEach((row) => {
+    if (!row.scheduled_date) return;
+    const date = row.scheduled_date;
+    const day = window.luriaDashboardDayLessons[date] || { total: 0, completed: 0 };
+    day.total += 1;
+    if (row.status === "completed" || row.completed_at) day.completed += 1;
+    window.luriaDashboardDayLessons[date] = day;
+  });
   const total = rows.length;
 
   const completed = rows.filter(
@@ -1721,6 +1746,8 @@ function showDashboardCcq() {
       item.area
       || "";
   }
+
+  window.dispatchEvent(new Event("luria:dashboard-data"));
 
   resetCcqProgress();
 }
@@ -2253,6 +2280,7 @@ async function loadDashboardMetrics() {
   updateDashboardSummaryFromDetails();
 
   await loadTodaySummary();
+  window.dispatchEvent(new Event("luria:dashboard-data"));
 }
 
 function openEventDialog(

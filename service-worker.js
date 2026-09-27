@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v146-diagnostico";
+const CACHE_VERSION = "luria-pwa-v147-dashboard-layouts";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -41,6 +41,13 @@ const APP_SHELL = [
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
+  "/assets/css/dashboard-layouts.css?v=1",
+  "/assets/js/dashboard-layouts.js?v=1",
+  "/assets/js/dashboard-layout-settings.js?v=1",
+  "/assets/img/dashboard-layouts/opcao-1.webp",
+  "/assets/img/dashboard-layouts/opcao-2.webp",
+  "/assets/img/dashboard-layouts/opcao-3.webp",
+  "/assets/img/dashboard-layouts/opcao-4.webp",
   "/assets/js/exam-priority-data.js?v=1",
   "/assets/js/exam-priority.js?v=1",
   "/assets/js/onboarding.js?v=2.4",
