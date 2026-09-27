@@ -361,6 +361,7 @@ function setSaveStatus(
 }
 
 
+function refreshNotebookInspector(){const doc=getCurrentDocument();if(!doc)return;const note=doc.note||{};const ed=document.getElementById("notebook-editor");const set=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v||"—"};set("notebook-inspector-book",doc.area);set("notebook-inspector-area",doc.area);set("notebook-inspector-created",formatDate(note.created_at||doc.date));set("notebook-inspector-updated",formatDate(note.updated_at||note.created_at||doc.date));const words=(ed?.innerText||"").trim().split(/\s+/).filter(Boolean).length;set("notebook-inspector-words",words?words+" palavras":"0 palavras")}
 function getCurrentDocument() {
 
   if (
@@ -18916,7 +18917,8 @@ function wireNotebookEnhancements() {
   const columns=document.getElementById("notebook-columns");
   if(columns) columns.onclick=()=>{restoreEditorSelection();insertHtmlAtCursor('<div class="notebook-two-columns"><div class="notebook-column"><p>Coluna 1</p></div><div class="notebook-column"><p>Coluna 2</p></div></div><p><br></p>');markEditorDirty();refreshNotebookOutline();};
   const paperToggle=document.getElementById("notebook-paper-toggle"), paperMenu=document.getElementById("notebook-paper-menu");
-  if(paperToggle&&paperMenu){paperToggle.onclick=e=>{e.stopPropagation();paperMenu.hidden=!paperMenu.hidden;paperToggle.setAttribute("aria-expanded",paperMenu.hidden?"false":"true")};paperMenu.querySelectorAll("[data-paper-style]").forEach(b=>b.onclick=()=>{applyNotebookPaperStyle(b.dataset.paperStyle);paperMenu.hidden=true;});}
+  if(paperToggle&&paperMenu){paperToggle.onclick=e=>{e.stopPropagation();paperMenu.hidden=!paperMenu.hidden;paperToggle.setAttribute("aria-expanded",paperMenu.hidden?"false":"true")};paperMenu.querySelectorAll("[data-paper-style]").forEach(b=>b.onclick=()=>{applyNotebookPaperStyle(b.dataset.paperStyle);paperMenu.hidden=true;document.getElementById("notebook-inspector-edit")?.addEventListener("click",()=>document.getElementById("notebook-document-edit")?.click());document.getElementById("notebook-inspector-delete")?.addEventListener("click",()=>document.getElementById("notebook-document-delete")?.click());document.getElementById("notebook-inspector-export")?.addEventListener("click",()=>document.getElementById("notebook-library-export")?.click());document.getElementById("notebook-inspector-share")?.addEventListener("click",()=>{const d=getCurrentDocument();if(d?.note?.id)createNotebookShareLink(d.note.id)});document.getElementById("notebook-editor")?.addEventListener("input",refreshNotebookInspector);
+});}
   restoreNotebookPaperStyle(); refreshNotebookOutline();
 }
 
