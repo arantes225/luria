@@ -799,3 +799,61 @@
 [data-stats-panel="geral"] #general-week-heatmap .activity-day{
   line-height:15px!important;
 }
+
+/* v25 — switches Estatísticas no padrão oficial LURIA/Cronograma */
+.stats-controls-row{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:12px!important;
+  width:100%!important;
+  margin:2px 0 10px!important;
+}
+.stats-tabs-shell,.stats-range{
+  display:inline-flex!important;
+  width:auto!important;
+  flex:0 0 auto!important;
+  align-items:center!important;
+  gap:3px!important;
+  padding:3px!important;
+  margin:0!important;
+  border:1px solid var(--border)!important;
+  border-radius:8px!important;
+  background:#fff!important;
+  box-shadow:none!important;
+  overflow:auto!important;
+}
+.stats-tabs{
+  display:flex!important;
+  min-width:max-content!important;
+  gap:3px!important;
+}
+.stats-tab,.stats-range button{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:auto!important;
+  min-width:auto!important;
+  height:24px!important;
+  min-height:24px!important;
+  padding:0 10px!important;
+  border:0!important;
+  border-radius:6px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  box-shadow:none!important;
+  font:inherit!important;
+  font-size:8px!important;
+  font-weight:750!important;
+  white-space:nowrap!important;
+  cursor:pointer!important;
+}
+.stats-tab.active,.stats-range button.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
+@media(max-width:760px){
+ .stats-controls-row{align-items:stretch!important;overflow-x:auto!important}
+ .stats-tabs-shell,.stats-range{min-width:max-content!important}
+}
