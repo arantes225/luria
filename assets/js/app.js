@@ -985,7 +985,7 @@ const PAGE_INFO = {
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Trabalho" },
   trabalho_ecg: { title: "ECG", eyebrow: "Trabalho" },
   trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Trabalho" },
-  trabalho_receitas: { title: "Receitas", eyebrow: "Prescrição" },
+  trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Prescrição" },
   trabalho_exames: { title: "Exames", eyebrow: "Prescrição" },
   trabalho_scores: { title: "Scores", eyebrow: "Trabalho" }
 };
@@ -1157,7 +1157,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <div class="nav-submenu" ${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_exames"].includes(page) ? "" : "hidden"}>
             <a class="nav-sublink ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">Bulário</a>
             <a class="nav-sublink ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">Protocolos</a>
-            <a class="nav-sublink ${page === "trabalho_receitas" ? "active" : ""}" href="/trabalho/receitas/">Receitas</a>
+            <a class="nav-sublink ${page === "trabalho_receitas" ? "active" : ""}" href="/trabalho/receitas/">Tratamentos gerais</a>
             <a class="nav-sublink ${page === "trabalho_exames" ? "active" : ""}" href="/trabalho/exames/">Exames</a>
           </div>
         </div>
