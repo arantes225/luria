@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v151-pcr-operacional";
+const CACHE_VERSION = "luria-pwa-v152-pcr-audio";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -60,7 +60,7 @@ const APP_SHELL = [
   "/assets/js/onboarding.js?v=2.4",
   "/assets/css/onboarding.css?v=1.9",
   "/assets/js/storage-router.js?v=1.0.0",
-  "/assets/js/trabalho-pcr.js?v=1",
+  "/assets/js/trabalho-pcr.js?v=2-ios-audio",
   "/assets/js/pwa.js",
   "/assets/img/logos/logo-principal.png",
 ];
