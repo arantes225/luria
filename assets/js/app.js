@@ -2725,6 +2725,9 @@ function renderizarOfensivaGlobal() {
       ?? 0
     );
 
+  window.luriaCurrentStreak = currentDays;
+  window.dispatchEvent(new Event("luria:dashboard-data"));
+
   let status =
     "Esquentando";
 
