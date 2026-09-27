@@ -49,7 +49,7 @@ const APP_SHELL = [
   "/assets/css/trabalho-pcr.css?v=3-pwa-causes",
   "/assets/css/luria-brand-v5.css",
   "/assets/js/luria-brand-v5.js?v=12",
-  "/assets/js/app.js?v=17.28-private-work",
+  "/assets/js/app.js?v=17.29-global-timer",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
