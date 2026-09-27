@@ -1446,3 +1446,35 @@ body[data-dashboard-layout="5"] .dl5-title-flame .dl-icon{
 body[data-dashboard-layout="5"] .dl5-streak-main{
   display:none!important;
 }
+
+
+/* Dashboard 5 — ordem vertical da Ofensiva e dias por extenso. */
+body[data-dashboard-layout="5"] .dl5-streak{
+  display:grid!important;
+  grid-template-rows:46px minmax(0,1fr) auto!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack{
+  grid-template-rows:auto auto!important;
+  justify-items:center!important;
+  align-content:center!important;
+  gap:5px!important;
+  padding:2px 8px 4px!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl5-streak-copy strong{
+  display:block!important;
+  white-space:nowrap!important;
+  font-size:13px!important;
+  line-height:1!important;
+}
+body[data-dashboard-layout="5"] .dl5-week{
+  grid-template-columns:repeat(7,minmax(0,1fr))!important;
+  gap:2px!important;
+  padding:5px 5px 8px!important;
+}
+body[data-dashboard-layout="5"] .dl5-week span{
+  min-width:0!important;
+  font-size:7.2px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  letter-spacing:-.02em!important;
+}
