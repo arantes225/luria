@@ -2236,6 +2236,14 @@
     body:not(.schedule-settings-embed) .month-day{min-height:calc((100vh - 255px)/6)!important}
   }
 
+
+  .week-matrix-grid{display:grid;grid-template-columns:minmax(105px,1.15fr) repeat(7,minmax(70px,1fr));border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--surface)}
+  .week-matrix-label,.week-matrix-head,.week-matrix-cell{min-height:48px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:7px;padding:7px}
+  .week-matrix-label{justify-content:flex-start;font-size:10px}.week-matrix-head{flex-direction:column;gap:1px;font-size:10px}.week-matrix-head span{color:var(--muted);text-transform:capitalize}.week-matrix-head strong{font-size:12px}.week-matrix-head.today{background:var(--accent);color:#fff}.week-matrix-head.today span{color:#fff}
+  .week-dot{width:9px;height:9px;border-radius:50%;display:block;background:var(--accent)}.week-dot.empty{background:var(--border)}.week-legend{width:9px;height:9px;border-radius:3px;background:var(--accent)}
+  .kind-questions{background:#20b77a!important}.kind-flashcards{background:#8b5cf6!important}.kind-review{background:#f59e0b!important}.kind-simulation{background:#ef5350!important}.kind-other{background:#7b8798!important}
+  @media(max-width:900px){.week-matrix{overflow-x:auto}.week-matrix-grid{min-width:720px}}
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
