@@ -327,6 +327,26 @@ button:disabled { cursor: not-allowed; opacity: .65; }
   padding-top: 20px;
 }
 
+/* Modo Estudos: somente a lista de navegação rola; Ofensiva, usuário e Sair ficam fixos. */
+.sidebar .nav-study {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  padding-right: 2px;
+  scrollbar-gutter: stable;
+}
+
+.sidebar .sidebar-footer-study {
+  flex: 0 0 auto;
+  margin-top: 0;
+  padding-top: 12px;
+  background: var(--sidebar);
+  position: relative;
+  z-index: 2;
+}
+
 .streak-mini,
 .user-mini {
   display: flex;
