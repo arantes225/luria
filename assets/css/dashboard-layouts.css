@@ -17,7 +17,7 @@ body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .dashboard-detail
 body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .calendar-panel{display:none!important}
 body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .dashboard-summary-grid{display:none!important}
 body[data-dashboard-layout]:not([data-dashboard-layout="old"]){--dl-blue:#08679e;--dl-deep:#092955;--dl-muted:#6b83a0;--dl-border:#dfeaf2;background:#f4f9fd}
-body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .main{padding:0 28px 40px;background:#f5faff}
+body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .main{padding:0 28px 40px;background:linear-gradient(rgba(245,250,255,.965),rgba(245,250,255,.965)),url('/assets/img/logos/logo-principal.png') center 105px/340px auto repeat}
 body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .page{max-width:1500px}
 body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar{height:72px;min-height:72px;margin:0 -28px 0;padding:0 28px;background:#eff7fd;border-bottom:1px solid #e7f0f7;gap:14px}
 body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .page-heading{display:none}
@@ -50,7 +50,16 @@ body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .luria-no
 .dl-card{min-width:0;background:#fff;border:1px solid var(--dl-border);border-radius:16px;padding:18px 20px;box-shadow:0 5px 16px rgba(26,79,117,.035)}
 .dl-card-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
 .dl-card-heading h3{display:flex;align-items:center;gap:10px;color:var(--dl-deep);margin:0;font-size:18px;line-height:1.25;font-weight:800}
-.dl-card-heading h3 span{color:#0871aa;font-size:25px;line-height:1}
+.dl-card-heading h3 .dl-heading-icon{display:inline-grid;place-items:center;flex:0 0 29px;width:29px;height:29px;color:#086ca5}
+.dl-icon{display:block;width:27px;height:27px;flex:none}
+.dl-heading-icon .dl-icon{width:28px;height:28px}
+.dl-icon-flame{color:#f36d36}
+.dl-icon-refresh{color:#9251eb}
+.dl-icon-cards{color:#08ad9b}
+.dl-icon-file,.dl-icon-simulation{color:#f5a022}
+.dl-icon-cat{color:#136a9b}
+.dl-card-heading h3 .dl-heading-icon:has(.dl-icon-flame){color:#f36d36}
+.dl-card-heading h3 .dl-heading-icon:has(.dl-icon-refresh){color:#9251eb}
 .dl-card-heading a{font-size:12px;white-space:nowrap;color:#46799d}
 .dl-card-heading a:hover{text-decoration:underline}
 .dl-empty{padding:18px 4px;color:var(--dl-muted);margin:0}
@@ -134,13 +143,17 @@ body[data-dashboard-layout]:not([data-dashboard-layout="old"]) .topbar .luria-no
 .dl-layout-3 .dl-performance .dl-areas .dl-card-heading{margin:8px 0}
 .dl-performance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .dl-performance-grid a{border:1px solid #e5eef5;border-radius:10px;padding:9px;color:var(--dl-deep);display:grid;gap:3px}
-.dl-performance-grid span{color:#0c7fbe;font-size:24px}
+.dl-performance-grid span{display:inline-grid;color:#0c7fbe;place-items:center;width:30px;height:30px}
+.dl-performance-grid span .dl-icon{width:28px;height:28px}
 .dl-performance-grid small{font-size:10px}.dl-performance-grid strong{font-size:18px}
 .dl-shortcuts{min-height:170px}.dl-shortcuts>div:not(.dl-card-heading){display:grid;gap:8px}.dl-shortcuts>div>a{border:1px solid #e5eef5;padding:10px;border-radius:8px;font-size:13px}.dl-shortcuts p{margin:12px 0;color:#54708d}
 .dl-layout-4{grid-template-columns:1fr 1fr}
 .dl-metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .dl-metric{display:flex;align-items:center;gap:12px;min-height:110px;padding:16px;position:relative;color:var(--dl-deep)}
-.dl-metric-icon{display:grid;place-items:center;width:47px;height:47px;border-radius:50%;background:#e4f3fc;color:#0684c5;font-size:27px}
+.dl-metric-icon{display:grid;place-items:center;width:47px;height:47px;border-radius:50%;background:#e4f3fc;color:#0684c5}
+.dl-metric:nth-child(2) .dl-metric-icon{background:#eaf4fd;color:#218ded}
+.dl-metric:nth-child(3) .dl-metric-icon{background:#e3f8f4;color:#0aaea2}
+.dl-metric:nth-child(4) .dl-metric-icon{background:#f1eafb;color:#9251eb}
 .dl-metric>span:nth-child(2){display:grid;gap:3px}.dl-metric small{font-size:12px;color:#536f8a}.dl-metric strong{font-size:22px}
 .dl-metric-track{position:absolute;left:18px;right:18px;bottom:14px;height:8px}
 .dl-layout-4 .dl-upcoming,.dl-layout-4 .dl-streak{min-height:255px}

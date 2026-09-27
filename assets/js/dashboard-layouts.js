@@ -46,8 +46,31 @@
     return `<header class="dl-greeting"><div><span class="dl-eyebrow">SEU PAINEL DE ESTUDOS</span><h2>Olá${name ? `, ${escape(name)}` : ""}!</h2><p>Vamos em frente hoje? Consistência é o que transforma.</p></div><time datetime="${dayISO(new Date())}">${escape(readableDate(new Date()))}</time></header>`;
   }
 
+  // Ícones vetoriais nos traços e cores das quatro referências.
+  const iconPaths = {
+    calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/>',
+    clipboard: '<rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/>',
+    target: '<circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="4"/><circle cx="11" cy="13" r="1" fill="currentColor" stroke="none"/><path d="m13 11 8-8m-5 0h5v5"/>',
+    flame: '<path d="M12 22c4.4 0 7-3.2 7-7.1 0-2.9-1.5-5.2-3-6.4.1 2.4-1 3.2-1.9 3.4C15 8.3 12.3 5.1 10.6 2c.3 3.7-1 5.3-3.3 8C5.8 11.7 5 13.3 5 15.2 5 19 7.6 22 12 22Z" fill="currentColor" stroke="none"/><path d="M12 22c-2.1 0-3.5-1.5-3.5-3.5 0-1.4.7-2.5 2.2-3.8.1 1.2.8 1.8 1.4 2.1.6-1.4 1.2-2.4 1.1-3.6 1.8 1.6 2.4 3.2 2.4 5.1 0 2.1-1.3 3.6-3.6 3.6Z" fill="#ffb164" stroke="none"/>',
+    refresh: '<path d="M20 11a8 8 0 0 0-14-5L4 8m0-5v5h5M4 13a8 8 0 0 0 14 5l2-2m0 5v-5h-5"/>',
+    chart: '<rect x="3" y="13" width="3" height="8" rx="1" fill="currentColor" stroke="none"/><rect x="10" y="8" width="3" height="13" rx="1" fill="currentColor" stroke="none"/><rect x="17" y="3" width="3" height="18" rx="1" fill="currentColor" stroke="none"/>',
+    book: '<path d="M12 6c-2.7-2-5.7-2.5-9-2v15c3.3-.5 6.3 0 9 2 2.7-2 5.7-2.5 9-2V4c-3.3-.5-6.3 0-9 2Zm0 0v15"/>',
+    file: '<path d="M6 2h8l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm8 0v5h5M8 12h8M8 16h8"/>',
+    cards: '<rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/>',
+    notebook: '<rect x="6" y="2" width="15" height="20" rx="2"/><path d="M10 7h7m-7 4h7m-7 4h5M3 6h5M3 11h5M3 16h5"/>',
+    play: '<path d="m8 5 11 7-11 7V5Z" fill="currentColor" stroke="none"/>',
+    cat: '<path d="M4 10 3 3l6 3a10 10 0 0 1 6 0l6-3-1 7a9 9 0 1 1-16 0Z"/><circle cx="9" cy="13" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="13" r="1" fill="currentColor" stroke="none"/><path d="m11 17 1 1 1-1"/>',
+    simulation: '<path d="M6 2h9l5 5v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm9 0v5h5M9 12h7m-7 4h7"/>',
+    stethoscope: '<path d="M6 3v7a4 4 0 0 0 8 0V3M4 3h4m4 0h4m-6 11v2a4 4 0 0 0 8 0v-2"/><circle cx="18" cy="12" r="2"/>',
+    baby: '<circle cx="12" cy="12" r="9"/><path d="M9 8c1-2 3-2 4 0m-4 5h.01M15 13h.01m-5 3c1 1 3 1 4 0"/>',
+    uterus: '<path d="M8 8c-1-3-4-4-6-2 0 3 2 6 5 6m9-4c1-3 4-4 6-2 0 3-2 6-5 6M8 8c0 3 1 5 4 5s4-2 4-5m-9 4c0 5 3 6 5 6s5-1 5-6m-5 6v4"/>'
+  };
+  function icon(name) {
+    return `<svg class="dl-icon dl-icon-${name}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name] || iconPaths.file}</svg>`;
+  }
+
   function heading(icon, title, href = "") {
-    return `<div class="dl-card-heading"><h3><span aria-hidden="true">${icon}</span> ${escape(title)}</h3>${href ? `<a href="${href}" aria-label="Ver ${escape(title)}">Ver mais ›</a>` : ""}</div>`;
+    return `<div class="dl-card-heading"><h3><span class="dl-heading-icon" aria-hidden="true">${icon}</span> ${escape(title)}</h3>${href ? `<a href="${href}" aria-label="Ver ${escape(title)}">Ver mais ›</a>` : ""}</div>`;
   }
 
   function activity(item, action = true) {
@@ -71,19 +94,19 @@
 
   function streak(data) {
     const weekday = (new Date().getDay() + 6) % 7;
-    return `<section class="dl-card dl-streak">${heading("🔥", "Ofensiva", "/estatisticas/")}<div class="dl-streak-value"><strong>${data.streak}</strong><span>dias seguidos</span></div><div class="dl-weekdays">${["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"].map((day, index) => `<span class="${index <= weekday && data.streak > 0 ? "active" : ""}"><i></i>${day}</span>`).join("")}</div></section>`;
+    return `<section class="dl-card dl-streak">${heading(icon("flame"), "Ofensiva", "/estatisticas/")}<div class="dl-streak-value"><strong>${data.streak}</strong><span>dias seguidos</span></div><div class="dl-weekdays">${["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"].map((day, index) => `<span class="${index <= weekday && data.streak > 0 ? "active" : ""}"><i></i>${day}</span>`).join("")}</div></section>`;
   }
 
   function areas(data) {
     const rows = data.areas.slice(0, 5);
-    return `<section class="dl-card dl-areas">${heading("▥", "Progresso por área", "/estatisticas/")}${rows.length ? rows.map((entry) => {
+    return `<section class="dl-card dl-areas">${heading(icon("chart"), "Progresso por área", "/estatisticas/")}${rows.length ? rows.map((entry) => {
       const percent = entry.total ? Math.round(entry.completed / entry.total * 100) : 0;
       return `<div class="dl-area-row"><span>${escape(entry.area)}</span><div class="dl-area-track"><i style="width:${percent}%"></i></div><strong>${percent}%</strong><small>${entry.completed}/${entry.total} aulas</small></div>`;
     }).join("") : '<p class="dl-empty">Adicione aulas ao cronograma para ver o progresso por área.</p>'}</section>`;
   }
 
   function cat(data, compact = false) {
-    return `<section class="dl-card dl-cat ${compact ? "dl-cat-compact" : ""}">${heading("✦", "Pulo do Gato do dia")}<div class="dl-cat-content"><span class="dashboard-cat-symbol" role="img" aria-label="Pulo do Gato"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924d" alt=""></span><div><p>${escape(data.ccq)}</p>${data.ccqArea ? `<small>${escape(data.ccqArea)}</small>` : ""}</div></div></section>`;
+    return `<section class="dl-card dl-cat ${compact ? "dl-cat-compact" : ""}">${heading(icon("cat"), "Pulo do Gato do dia")}<div class="dl-cat-content"><span class="dashboard-cat-symbol" role="img" aria-label="Pulo do Gato"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924d" alt=""></span><div><p>${escape(data.ccq)}</p>${data.ccqArea ? `<small>${escape(data.ccqArea)}</small>` : ""}</div></div></section>`;
   }
 
   function layout1(data) {
@@ -91,26 +114,26 @@
     const dayLessons = window.luriaDashboardDayLessons?.[dayISO(selectedDate)] || { completed: 0, total: 0 };
     const done = dayLessons.completed; const total = dayLessons.total;
     const pct = total ? Math.round(done / total * 100) : 0;
-    return `<div class="dl-grid dl-layout-1"><section class="dl-card dl-agenda-large">${heading("▣", "Hoje · Agenda", "/cronograma/")}<div class="dl-day-nav"><button data-dl-day="-1" aria-label="Dia anterior">‹</button><span>${escape(readableDate(selectedDate))}</span><button data-dl-day="1" aria-label="Próximo dia">›</button></div>${activityList(todayItems, 10)}</section><div class="dl-side"><section class="dl-card dl-day-summary">${heading("☑", "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Hoje · Agenda", "/cronograma/")}<div class="dl-day-nav"><button data-dl-day="-1" aria-label="Dia anterior">‹</button><span>${escape(readableDate(selectedDate))}</span><button data-dl-day="1" aria-label="Próximo dia">›</button></div>${activityList(todayItems, 10)}</section><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
   }
 
   function layout2(data) {
     const reviewItems = items().filter((item) => /review|flashcards|errors/.test(item.kind) && item.activity_date >= dayISO(new Date()));
-    return `<div class="dl-grid dl-layout-2"><section class="dl-card dl-progress">${heading("◎", "Seu progresso", "/estatisticas/")}${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Erros ativos <strong>${data.errors}</strong></span></div></section>${streak(data)}<section class="dl-card dl-upcoming">${heading("▣", "Próximas atividades", "/cronograma/")}${activityList(upcoming(3), 3)}</section><section class="dl-card dl-reviews">${heading("↻", "Revisões programadas", "/flashcards/")}${ring(0, String(reviewItems.length), "na agenda")}<a class="dl-primary" href="/flashcards/">Continuar revisando</a></section>${areas(data)}</div>`;
+    return `<div class="dl-grid dl-layout-2"><section class="dl-card dl-progress">${heading(icon("target"), "Seu progresso", "/estatisticas/")}${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Erros ativos <strong>${data.errors}</strong></span></div></section>${streak(data)}<section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(3), 3)}</section><section class="dl-card dl-reviews">${heading(icon("refresh"), "Revisões programadas", "/flashcards/")}${ring(0, String(reviewItems.length), "na agenda")}<a class="dl-primary" href="/flashcards/">Continuar revisando</a></section>${areas(data)}</div>`;
   }
 
   function layout3(data) {
-    return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-progress dl-overview">${heading("▣", "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section>${streak(data)}${cat(data)}<section class="dl-card dl-upcoming">${heading("▣", "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section><section class="dl-card dl-performance">${heading("▥", "Meu desempenho", "/estatisticas/")}<div class="dl-performance-grid"><a href="/cronograma/"><span>▤</span><small>Aulas</small><strong>${data.done}</strong></a><a href="/questoes-simulados/"><span>▧</span><small>Simulados</small><strong>${escape(data.simulations)}</strong></a><a href="/flashcards/"><span>▣</span><small>Flashcards</small><strong>${data.flashcards}</strong></a><a href="/estatisticas/"><span>◎</span><small>Retenção</small><strong>${escape(data.retention)}</strong></a></div>${areas(data)}</section><section class="dl-card dl-shortcuts">${heading("▤", "Meus cadernos", "/caderno/")}<div><a href="/caderno/">Anotações →</a><a href="/caderno-erros/">Caderno de erros →</a></div></section><section class="dl-card dl-shortcuts">${heading("▣", "Meus flashcards", "/flashcards/")}<p>${data.flashcards} cartão${data.flashcards === 1 ? "" : "ões"} pendente${data.flashcards === 1 ? "" : "s"}</p><a class="dl-primary" href="/flashcards/">Iniciar revisão</a></section><section class="dl-card dl-shortcuts">${heading("▧", "Meus simulados", "/questoes-simulados/")}<p>Última precisão: ${escape(data.simulations)}</p><a class="dl-primary" href="/questoes-simulados/">Ver simulados</a></section></div>`;
+    return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-progress dl-overview">${heading(icon("calendar"), "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section>${streak(data)}${cat(data)}<section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section><section class="dl-card dl-performance">${heading(icon("chart"), "Meu desempenho", "/estatisticas/")}<div class="dl-performance-grid"><a href="/cronograma/"><span>${icon("book")}</span><small>Aulas</small><strong>${data.done}</strong></a><a href="/questoes-simulados/"><span>${icon("file")}</span><small>Simulados</small><strong>${escape(data.simulations)}</strong></a><a href="/flashcards/"><span>${icon("cards")}</span><small>Flashcards</small><strong>${data.flashcards}</strong></a><a href="/estatisticas/"><span>${icon("refresh")}</span><small>Retenção</small><strong>${escape(data.retention)}</strong></a></div>${areas(data)}</section><section class="dl-card dl-shortcuts">${heading(icon("notebook"), "Meus cadernos", "/caderno/")}<div><a href="/caderno/">Anotações →</a><a href="/caderno-erros/">Caderno de erros →</a></div></section><section class="dl-card dl-shortcuts">${heading(icon("calendar"), "Meus flashcards", "/flashcards/")}<p>${data.flashcards} cartão${data.flashcards === 1 ? "" : "ões"} pendente${data.flashcards === 1 ? "" : "s"}</p><a class="dl-primary" href="/flashcards/">Iniciar revisão</a></section><section class="dl-card dl-shortcuts">${heading(icon("simulation"), "Meus simulados", "/questoes-simulados/")}<p>Última precisão: ${escape(data.simulations)}</p><a class="dl-primary" href="/questoes-simulados/">Ver simulados</a></section></div>`;
   }
 
   function layout4(data) {
     const cards = [
-      ["▤", "Aulas concluídas", `${data.done}/${data.total}`, data.progress, "/cronograma/"],
-      ["▧", "Simulados", data.simulations, 0, "/questoes-simulados/"],
-      ["▣", "Flashcards pendentes", String(data.flashcards), 0, "/flashcards/"],
-      ["↻", "Erros ativos", String(data.errors), 0, "/caderno-erros/"]
+      ["book", "Aulas concluídas", `${data.done}/${data.total}`, data.progress, "/cronograma/"],
+      ["file", "Simulados", data.simulations, 0, "/questoes-simulados/"],
+      ["cards", "Flashcards pendentes", String(data.flashcards), 0, "/flashcards/"],
+      ["refresh", "Erros ativos", String(data.errors), 0, "/caderno-erros/"]
     ];
-    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics">${cards.map(([icon, label, value, percent, href]) => `<a class="dl-card dl-metric" href="${href}"><span class="dl-metric-icon">${icon}</span><span><small>${label}</small><strong>${escape(value)}</strong></span>${percent ? `<i class="dl-metric-track"><b style="width:${percent}%"></b></i>` : ""}</a>`).join("")}</div><section class="dl-card dl-upcoming">${heading("▣", "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics">${cards.map(([iconName, label, value, percent, href]) => `<a class="dl-card dl-metric" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span>${percent ? `<i class="dl-metric-track"><b style="width:${percent}%"></b></i>` : ""}</a>`).join("")}</div><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
   }
 
   function render() {
