@@ -2903,6 +2903,17 @@
     color:#2fa866!important
   }
 
+
+  /* Ritmo vertical idêntico aos cards laterais */
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    margin-top:10px!important
+  }
+  /* hidden precisa prevalecer sobre os displays customizados do planner */
+  body:not(.schedule-settings-embed) #week-planner[hidden],
+  body:not(.schedule-settings-embed) #month-planner[hidden]{
+    display:none!important
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
