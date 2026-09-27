@@ -10,6 +10,59 @@
 
   const esc=v=>String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
   const publicAddress=()=>username?location.origin+"/"+username:location.origin+"/configuracoes/#perfil";
+  const ENDPOINT="https://sxdsfklllilhdyuamvvg.supabase.co/functions/v1/external-quick-chart";
+  const APIKEY="sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L";
+
+  async function savePinHere(){
+    const button=document.getElementById("quick-chart-save-pin");
+    const pin=String(document.getElementById("quick-chart-pin")?.value||"").replace(/\D/g,"");
+    const confirmPin=String(document.getElementById("quick-chart-pin-confirm")?.value||"").replace(/\D/g,"");
+
+    if(!username){
+      status.textContent="Defina primeiro seu nome de usuário em Perfil e Conta.";
+      return;
+    }
+    if(!/^\d{4}$/.test(pin)){
+      status.textContent="O PIN precisa ter exatamente 4 dígitos.";
+      return;
+    }
+    if(pin!==confirmPin){
+      status.textContent="Os PINs não coincidem.";
+      return;
+    }
+
+    const {data:sessionData}=await sb.auth.getSession();
+    const token=sessionData?.session?.access_token;
+    if(!token){
+      status.textContent="Sua sessão expirou. Entre novamente.";
+      return;
+    }
+
+    button.disabled=true;
+    status.textContent="Salvando PIN…";
+    try{
+      const response=await fetch(ENDPOINT,{
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json",
+          "apikey":APIKEY,
+          "Authorization":"Bearer "+token
+        },
+        body:JSON.stringify({action:"set_pin",pin})
+      });
+      const data=await response.json().catch(()=>({}));
+      if(!response.ok) throw new Error(data.error||"Não foi possível salvar o PIN.");
+      document.getElementById("quick-chart-pin").value="";
+      document.getElementById("quick-chart-pin-confirm").value="";
+      portal={...(portal||{}),pin_configured_at:new Date().toISOString(),access_slug:username};
+      status.textContent="PIN configurado. Seu acesso externo está pronto.";
+      renderContent();
+    }catch(error){
+      status.textContent=error?.message||"Não foi possível salvar o PIN.";
+    }finally{
+      button.disabled=false;
+    }
+  }
 
   function renderAddress(){
     const el=document.getElementById("quick-chart-public-address");
@@ -20,10 +73,21 @@
     renderAddress();
     const codeTitle=document.getElementById("quick-chart-code-title");
     const codeHelp=document.getElementById("quick-chart-code-help");
-    if(codeTitle) codeTitle.textContent=username?("@"+username):"Nome de usuário + PIN";
-    if(codeHelp) codeHelp.textContent=username
-      ? "Abra seu endereço pessoal e digite o PIN de 4 dígitos."
-      : "Defina um nome de usuário e um PIN em Configurações > Perfil e Conta.";
+    if(codeTitle) {
+      codeTitle.textContent=portal?.pin_configured_at
+        ? "PIN configurado"
+        : "Configure seu PIN";
+    }
+    if(codeHelp) {
+      codeHelp.textContent=!username
+        ? "Defina primeiro um nome de usuário em Configurações → Perfil e Conta."
+        : portal?.pin_configured_at
+          ? "Seu acesso externo já está protegido. Você pode trocar o PIN aqui quando quiser."
+          : "Crie agora seu PIN de 4 dígitos para ativar o acesso externo.";
+    }
+
+    const pinSetup=document.getElementById("quick-chart-pin-setup");
+    if(pinSetup) pinSetup.style.opacity=username?"1":".55";
 
     if(!portal){
       contentBox.className="quick-chart-current-content empty";
@@ -88,6 +152,13 @@
     status.textContent="Conteúdo apagado.";
     renderContent();
   }
+
+  document.getElementById("quick-chart-save-pin")?.addEventListener("click",savePinHere);
+  ["quick-chart-pin","quick-chart-pin-confirm"].forEach(id=>{
+    document.getElementById(id)?.addEventListener("input",event=>{
+      event.currentTarget.value=event.currentTarget.value.replace(/\D/g,"").slice(0,4);
+    });
+  });
 
   document.getElementById("quick-chart-copy-address").addEventListener("click",async()=>{
     if(!username){status.textContent="Defina seu nome de usuário primeiro.";return;}
