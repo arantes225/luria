@@ -176,13 +176,54 @@
   }
 
 
-  function layout5(data) {
-    const next = upcoming(1)[0] || null;
-    const nextTitle = next?.title || "Nenhuma atividade programada";
-    const nextMeta = next ? (typeof kindMeta === "function" ? kindMeta(next.kind).label : "Atividade") : "Agenda livre";
-    const nextHref = next && typeof activityCanStart === "function" && activityCanStart(next)
-      ? buildAmbientacaoUrl(next)
+
+  function dashboard5UpcomingItems() {
+    const today = dayISO(new Date());
+    const source = Array.isArray(window.luriaDashboardUpcomingAgenda)
+      ? window.luriaDashboardUpcomingAgenda
+      : [];
+
+    const future = source
+      .filter((item) => item?.activity_date && item.activity_date >= today);
+
+    const todayLessons = future
+      .filter((item) => item.activity_date === today && item.kind === "lesson")
+      .sort((a, b) =>
+        String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
+        || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
+      );
+
+    if (todayLessons.length) return todayLessons.slice(0, 2);
+
+    const todayOthers = future
+      .filter((item) => item.activity_date === today)
+      .sort((a, b) =>
+        String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
+        || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
+      );
+
+    if (todayOthers.length) return todayOthers.slice(0, 2);
+
+    return future
+      .sort((a, b) =>
+        String(a.activity_date).localeCompare(String(b.activity_date))
+        || (a.kind === "lesson" ? -1 : b.kind === "lesson" ? 1 : 0)
+        || String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
+        || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
+      )
+      .slice(0, 2);
+  }
+
+  function dashboard5ActivityHref(item) {
+    return item && typeof activityCanStart === "function" && activityCanStart(item)
+      ? buildAmbientacaoUrl(item)
       : "/cronograma/";
+  }
+
+  function layout5(data) {
+    const nextItems = dashboard5UpcomingItems();
+    const next = nextItems[0] || null;
+    const nextHref = dashboard5ActivityHref(next);
     const rows = (data.areas || []).slice(0, 5);
     const weekday = (new Date().getDay() + 6) % 7;
     const recent = [
@@ -208,9 +249,23 @@
 
         <div class="dl5-mid">
           <section class="dl5-card dl5-next">
-            <div class="dl5-title"><h3>${icon("calendar")} Próxima atividade</h3><a href="/cronograma/">›</a></div>
-            <div class="dl5-next-body"><span class="dl5-timeline-dot"></span><div><small>${next ? escape(shortDate(next.activity_date)) : "Hoje"}</small><strong>${escape(nextTitle)}</strong><span>${escape(nextMeta)}${next?.area ? ` · ${escape(next.area)}` : ""}</span><a href="${escape(nextHref)}">Continuar de onde parou</a></div></div>
-            <a class="dl5-start" href="${escape(nextHref)}">▶ &nbsp; Iniciar</a>
+            <div class="dl5-title"><h3>${icon("calendar")} Próximas atividades</h3><a href="/cronograma/">›</a></div>
+            <div class="dl5-next-list">
+              ${nextItems.length ? nextItems.map((item, index) => {
+                const label = typeof kindMeta === "function" ? kindMeta(item.kind).label : "Atividade";
+                const href = dashboard5ActivityHref(item);
+                return `<a class="dl5-next-item" href="${escape(href)}">
+                  <span class="dl5-timeline-dot" aria-hidden="true"></span>
+                  <div>
+                    <small>${escape(shortDate(item.activity_date))}</small>
+                    <strong>${escape(item.title || "Atividade")}</strong>
+                    <span>${escape(label)}${item.area ? ` · ${escape(item.area)}` : ""}</span>
+                  </div>
+                  <em>›</em>
+                </a>`;
+              }).join("") : `<div class="dl5-next-empty"><strong>Nenhuma atividade programada</strong><span>Seu cronograma está livre.</span></div>`}
+            </div>
+            <a class="dl5-start" href="${escape(nextHref)}">▶ &nbsp; ${next ? "Iniciar próxima" : "Abrir cronograma"}</a>
           </section>
 
           <section class="dl5-card dl5-streak">
