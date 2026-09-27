@@ -529,7 +529,7 @@
     logEl.innerHTML = '<div class="pcr-log-empty">Nenhum evento registrado após a limpeza.</div>';
   });
 
-  $("pcr-export-log").addEventListener("click", () => {
+  $("pcr-export-log").addEventListener("click", async () => {
     if (!timelineEntries.length) {
       alert("Ainda não há eventos na linha do tempo para exportar.");
       return;
@@ -541,98 +541,221 @@
       return;
     }
 
+    const imageToDataUrl = async (src, opacity = 1) => {
+      try {
+        const response = await fetch(src, { cache: "force-cache" });
+        if (!response.ok) return null;
+        const blob = await response.blob();
+        const bitmap = await createImageBitmap(blob);
+        const canvas = document.createElement("canvas");
+        const size = 700;
+        canvas.width = size;
+        canvas.height = size;
+        const ctx = canvas.getContext("2d");
+        if (!ctx) return null;
+        ctx.clearRect(0, 0, size, size);
+        ctx.globalAlpha = opacity;
+        const ratio = Math.min(size / bitmap.width, size / bitmap.height);
+        const w = bitmap.width * ratio;
+        const h = bitmap.height * ratio;
+        ctx.drawImage(bitmap, (size - w) / 2, (size - h) / 2, w, h);
+        bitmap.close?.();
+        return canvas.toDataURL("image/png");
+      } catch {
+        return null;
+      }
+    };
+
     const doc = new JsPDF({ unit: "mm", format: "a4" });
     const ordered = [...timelineEntries].reverse();
-    const exportedAt = new Intl.DateTimeFormat("pt-BR", {
-      dateStyle: "short",
-      timeStyle: "medium"
-    }).format(new Date());
-
+    const now = new Date();
+    const startedDate = new Date(startedAt);
+    const endDate = stoppedAt ? new Date(stoppedAt) : null;
     const duration = mmss(elapsedSeconds());
     const pageWidth = doc.internal.pageSize.getWidth();
     const pageHeight = doc.internal.pageSize.getHeight();
     const margin = 14;
     const usable = pageWidth - margin * 2;
-    let y = 16;
+    const watermark = await imageToDataUrl("/assets/img/logos/logo-icone-original.png", 0.07);
+    let y = 18;
 
-    const addPageHeader = () => {
+    const formatDate = (date) => new Intl.DateTimeFormat("pt-BR", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric"
+    }).format(date);
+
+    const formatTime = (date) => new Intl.DateTimeFormat("pt-BR", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit"
+    }).format(date);
+
+    const addWatermark = () => {
+      if (!watermark) return;
+      const size = 118;
+      doc.addImage(
+        watermark,
+        "PNG",
+        (pageWidth - size) / 2,
+        (pageHeight - size) / 2 + 8,
+        size,
+        size,
+        undefined,
+        "FAST"
+      );
+    };
+
+    const addPageHeader = (firstPage = false) => {
+      addWatermark();
+
       doc.setFillColor(24, 72, 136);
-      doc.rect(0, 0, pageWidth, 12, "F");
-      doc.setTextColor(255, 255, 255);
+      doc.rect(0, 0, pageWidth, 4, "F");
+
+      doc.setTextColor(24, 72, 136);
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(10);
-      doc.text("LURIA · PCR", margin, 8);
+      doc.setFontSize(firstPage ? 12 : 9);
+      doc.text("LURIA", margin, firstPage ? 14 : 11);
+
+      if (!firstPage) {
+        doc.setTextColor(75, 75, 75);
+        doc.setFont("helvetica", "normal");
+        doc.text("Registro de PCR", pageWidth - margin, 11, { align: "right" });
+      }
+
       doc.setTextColor(25, 25, 25);
     };
 
     const ensureSpace = (needed = 12) => {
-      if (y + needed <= pageHeight - 14) return;
+      if (y + needed <= pageHeight - 16) return;
       doc.addPage();
-      addPageHeader();
-      y = 20;
+      addPageHeader(false);
+      y = 18;
     };
 
-    addPageHeader();
+    addPageHeader(true);
 
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(18);
-    doc.text("Linha do tempo da PCR", margin, y);
-    y += 8;
+    doc.setFontSize(21);
+    doc.setTextColor(20, 32, 48);
+    doc.text("REGISTRO DE PCR", margin, 25);
 
     doc.setFont("helvetica", "normal");
-    doc.setFontSize(9);
-    doc.setTextColor(85, 85, 85);
-    doc.text("Exportado em: " + exportedAt, margin, y);
-    y += 5;
-    doc.text("Duração registrada: " + duration, margin, y);
-    y += 9;
+    doc.setFontSize(8.5);
+    doc.setTextColor(92, 103, 116);
+    doc.text("Parada cardiorrespiratória · registro cronológico assistencial", margin, 31);
 
-    doc.setTextColor(25, 25, 25);
-    doc.setFillColor(242, 244, 247);
-    doc.roundedRect(margin, y, usable, 8, 1.5, 1.5, "F");
+    y = 39;
+
+    const meta = [
+      ["Data", formatDate(startedDate)],
+      ["Hora de início", formatTime(startedDate)],
+      ["RCE / encerramento", endDate ? formatTime(endDate) : "PCR em andamento"],
+      ["Duração registrada", duration],
+      ["Perfil", mode === "adult" ? "Adulto" : "Pediátrico"],
+      ["Peso", safeWeight() ? safeWeight() + " kg" : "Não informado"],
+      ["Choques", String(shockCount)],
+      ["Ritmo selecionado", selectedRhythm || "Não registrado"]
+    ];
+
+    const metaGap = 4;
+    const metaCols = 2;
+    const cardW = (usable - metaGap) / metaCols;
+    const cardH = 13;
+
+    meta.forEach((item, index) => {
+      const col = index % metaCols;
+      const row = Math.floor(index / metaCols);
+      const x = margin + col * (cardW + metaGap);
+      const yy = y + row * (cardH + metaGap);
+
+      doc.setFillColor(246, 248, 251);
+      doc.setDrawColor(224, 229, 236);
+      doc.roundedRect(x, yy, cardW, cardH, 2, 2, "FD");
+
+      doc.setTextColor(105, 113, 125);
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(6.7);
+      doc.text(item[0].toUpperCase(), x + 3, yy + 4.2);
+
+      doc.setTextColor(28, 38, 52);
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9);
+      doc.text(String(item[1]), x + 3, yy + 9.6);
+    });
+
+    y += 4 * (cardH + metaGap) + 3;
+
+    doc.setTextColor(20, 32, 48);
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(8);
+    doc.setFontSize(12);
+    doc.text("Linha do tempo", margin, y);
+    y += 6;
+
+    doc.setFillColor(24, 72, 136);
+    doc.roundedRect(margin, y, usable, 8, 1.5, 1.5, "F");
+    doc.setTextColor(255, 255, 255);
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(7.6);
     doc.text("HORÁRIO", margin + 2, y + 5.3);
     doc.text("PCR", margin + 31, y + 5.3);
     doc.text("EVENTO / DETALHES", margin + 50, y + 5.3);
     y += 11;
 
-    ordered.forEach((entry) => {
+    ordered.forEach((entry, index) => {
       const detail = entry.detail ? entry.detail.replace(/\s+/g, " ").trim() : "";
-      const eventText = detail ? entry.action + " - " + detail : entry.action;
+      const eventText = detail ? entry.action + " — " + detail : entry.action;
       const lines = doc.splitTextToSize(eventText, usable - 52);
-      const rowHeight = Math.max(8, lines.length * 4 + 3);
+      const rowHeight = Math.max(9, lines.length * 4 + 3);
 
       ensureSpace(rowHeight + 2);
 
-      doc.setDrawColor(225, 225, 225);
+      if (index % 2 === 0) {
+        doc.setFillColor(249, 250, 252);
+        doc.rect(margin, y, usable, rowHeight, "F");
+      }
+
+      doc.setDrawColor(229, 232, 237);
       doc.line(margin, y + rowHeight, margin + usable, y + rowHeight);
 
       doc.setFont("helvetica", "normal");
       doc.setFontSize(8);
-      doc.setTextColor(70, 70, 70);
-      doc.text(entry.clock, margin + 2, y + 4.8);
-      doc.text(entry.elapsed, margin + 31, y + 4.8);
+      doc.setTextColor(77, 86, 99);
+      doc.text(entry.clock, margin + 2, y + 5);
+      doc.text(entry.elapsed, margin + 31, y + 5);
 
       doc.setTextColor(25, 25, 25);
-      doc.text(lines, margin + 50, y + 4.8);
+      doc.text(lines, margin + 50, y + 5);
 
       y += rowHeight;
     });
 
-    ensureSpace(18);
+    ensureSpace(24);
     y += 7;
+
+    doc.setDrawColor(215, 220, 227);
+    doc.line(margin, y, margin + usable, y);
+    y += 6;
+
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(7.2);
+    doc.setTextColor(100, 106, 116);
+    doc.text(
+      "Documento gerado em " + formatDate(now) + " às " + formatTime(now) + ".",
+      margin,
+      y
+    );
+    y += 4;
+
     doc.setFont("helvetica", "italic");
-    doc.setFontSize(7.5);
-    doc.setTextColor(100, 100, 100);
     const footer = doc.splitTextToSize(
       "Registro gerado pelo LURIA a partir dos eventos inseridos durante a PCR. Ferramenta de apoio; conferir o registro clínico institucional.",
       usable
     );
     doc.text(footer, margin, y);
 
-    const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-    doc.save("luria-pcr-linha-do-tempo-" + stamp + ".pdf");
+    const stamp = now.toISOString().replace(/[:.]/g, "-");
+    doc.save("luria-registro-pcr-" + stamp + ".pdf");
 
     addLog("Linha do tempo exportada", "PDF gerado");
   });
