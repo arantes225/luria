@@ -901,7 +901,7 @@ const sb = window.supabaseClient;
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral" },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e temas" },
-  caderno: { title: "Caderno", eyebrow: "Estudar" },
+  caderno: { title: "Anotações", eyebrow: "Estudar" },
   flashcards: { title: "Flashcards", eyebrow: "Estudar" },
   erros: { title: "Caderno de erros", eyebrow: "Estudar" },
   questoes: { title: "Questões e Simulados", eyebrow: "Estudar" },
