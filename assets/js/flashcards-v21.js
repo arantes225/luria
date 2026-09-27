@@ -17,7 +17,7 @@ function buildNavigation(){
  const tabs=document.querySelector(".flash-tabs"); if(!tabs)return;
  tabs.innerHTML='<button class="flash-tab active" type="button" data-v21-tab="library">Decks</button><button class="flash-tab" type="button" data-v21-tab="review">Revisar</button><button class="flash-tab" type="button" data-v21-tab="add">Adicionar</button>';
  const create=document.querySelector('[data-flash-section="create"]'),imp=document.querySelector('[data-flash-section="import"]');
- if(create&&imp&&!document.querySelector(".flash-add-hub")){const hub=document.createElement("section");hub.className="flash-add-hub";hub.dataset.v21Section="add";create.before(hub);hub.append(create,imp)}
+ if(create&&!document.querySelector(".flash-add-hub")){const hub=document.createElement("section");hub.className="flash-add-hub";hub.dataset.v21Section="add";create.before(hub);hub.append(create)}
  function show(name){tabs.querySelectorAll("[data-v21-tab]").forEach(b=>b.classList.toggle("active",b.dataset.v21Tab===name));document.querySelectorAll('[data-flash-section="review"],[data-flash-section="library"]').forEach(s=>s.classList.toggle("active",s.dataset.flashSection===name));document.querySelector(".flash-add-hub")?.classList.toggle("active",name==="add");if(name==="library"){loadLibrary().then(()=>setTimeout(rebuildDecks,0))}}
  tabs.querySelectorAll("[data-v21-tab]").forEach(b=>b.onclick=()=>show(b.dataset.v21Tab));
  window.luriaFlashShow=show;
