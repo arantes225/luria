@@ -2415,3 +2415,41 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity
     display:none!important;
   }
 }
+
+
+/* Dashboard 4 — Ofensiva: chama grande central + contagem em uma linha. */
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-heading-icon .dl-icon-flame{
+  width:18px!important;
+  height:18px!important;
+  color:var(--gold)!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  margin:auto!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>.dl-streak-visual{
+  width:76px!important;
+  height:92px!important;
+  display:grid!important;
+  place-items:center!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>.dl-streak-visual .dl-streak-flame{
+  width:76px!important;
+  height:92px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>.dl-streak-visual .dl-streak-snow{
+  font-size:68px!important;
+  line-height:1!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>strong{
+  display:block!important;
+  font-size:17px!important;
+  line-height:1.15!important;
+  white-space:nowrap!important;
+  color:var(--text)!important;
+  font-weight:800!important;
+}
