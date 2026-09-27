@@ -371,6 +371,27 @@
       text-decoration:none;font:700 13px/1 inherit;text-align:left;cursor:pointer;
     }
     .luria-profile-menu a:hover,.luria-profile-menu button:hover{background:var(--surface-2)}
+    .luria-profile-theme-row {
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      min-height:44px;padding:0 8px 7px 11px;margin-bottom:4px;
+      border-bottom:1px solid var(--border);color:var(--text);
+    }
+    .luria-profile-theme-row>span {
+      font:700 12px/1 inherit;color:var(--muted);
+    }
+    .luria-theme-switch {
+      width:auto!important;min-width:92px!important;min-height:32px!important;height:32px!important;
+      padding:0 9px!important;border:1px solid var(--border)!important;border-radius:999px!important;
+      display:flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;
+      background:var(--surface-2)!important;color:var(--text)!important;
+      font:800 11px/1 inherit!important;
+    }
+    .luria-theme-switch::before {
+      content:"";width:10px;height:10px;border-radius:50%;background:var(--accent);
+      box-shadow:0 0 0 3px var(--accent-soft);flex:0 0 10px;
+    }
+    :root[data-theme="dark"] .luria-theme-switch::before{background:#7eb6e8}
+    :root[data-theme="leila-mood"] .luria-theme-switch::before{background:#e7357d}
   `;
 
   style.textContent += `
@@ -3145,6 +3166,12 @@ function ensureNotificationCenter() {
         aria-expanded="false"
       >L</button>
       <div id="luria-profile-menu" class="luria-profile-menu" hidden>
+        <div class="luria-profile-theme-row">
+          <span>Tema</span>
+          <button id="luria-theme-switch" class="luria-theme-switch" type="button" aria-label="Trocar tema">
+            Claro
+          </button>
+        </div>
         <a href="/configuracoes/#perfil">Perfil</a>
         <button type="button" data-restart-onboarding>Refazer onboarding</button>
         <a href="/configuracoes/">Configurações</a>
@@ -3369,6 +3396,30 @@ function ensureNotificationCenter() {
 
   const profileToggle = document.getElementById("luria-profile-toggle");
   const profileMenu = document.getElementById("luria-profile-menu");
+  const themeSwitch = document.getElementById("luria-theme-switch");
+  const themeCycle = ["light","dark","leila-mood"];
+  const themeLabel = { light:"Claro", dark:"Escuro", "leila-mood":"Pink Mood" };
+  const renderThemeSwitch = () => {
+    if (!themeSwitch) return;
+    const resolved = document.documentElement.dataset.theme || "light";
+    themeSwitch.textContent = themeLabel[resolved] || "Claro";
+    themeSwitch.setAttribute("aria-label", `Tema atual: ${themeSwitch.textContent}. Toque para trocar`);
+  };
+  renderThemeSwitch();
+  themeSwitch?.addEventListener("click", async (event) => {
+    event.stopPropagation();
+    const resolved = document.documentElement.dataset.theme || "light";
+    const currentIndex = Math.max(0, themeCycle.indexOf(resolved));
+    const nextTheme = themeCycle[(currentIndex + 1) % themeCycle.length];
+    applyThemeSetting(nextTheme);
+    renderThemeSwitch();
+    try {
+      await salvarTema(nextTheme);
+      renderThemeSwitch();
+    } catch (error) {
+      console.error("Não foi possível salvar o tema:", error);
+    }
+  });
   profileToggle?.addEventListener("click", (event) => {
     event.stopPropagation();
     const open = profileMenu?.hidden ?? true;
