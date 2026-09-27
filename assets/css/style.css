@@ -2667,6 +2667,48 @@ body > footer {
 
 
 
+/* Dashboard Estudos — força exatamente o mesmo pattern do Cronograma. */
+body[data-page="dashboard"]::before,
+body[data-page="dashboard"]::after {
+  background-image: url("../img/logos/logo-icone-original.png?v=pattern4") !important;
+  background-repeat: repeat !important;
+  background-size: 138px 138px !important;
+  opacity: 0.020 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+body[data-page="dashboard"]::before {
+  background-position: 0 0 !important;
+}
+
+body[data-page="dashboard"]::after {
+  background-position: 69px 69px !important;
+}
+
+:root[data-theme="dark"] body[data-page="dashboard"]::before,
+:root[data-theme="dark"] body[data-page="dashboard"]::after {
+  background-image: url("../img/logos/logo-icone-azul-claro.png?v=pattern4") !important;
+  opacity: 0.028 !important;
+}
+
+:root[data-theme="leila-mood"] body[data-page="dashboard"]::before,
+:root[data-theme="leila-mood"] body[data-page="dashboard"]::after {
+  background-image: url("../img/logos/logo-icone-rosa-escuro.png?v=pattern4") !important;
+  opacity: 0.024 !important;
+}
+
+@media (max-width:760px) {
+  body[data-page="dashboard"]::before,
+  body[data-page="dashboard"]::after {
+    background-size:118px 118px !important;
+    opacity:0.017 !important;
+  }
+  body[data-page="dashboard"]::after {
+    background-position:59px 59px !important;
+  }
+}
+
 /* =========================================================
    LURIA — CENTRAL GLOBAL DE NOTIFICAÇÕES
    ========================================================= */
