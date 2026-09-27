@@ -943,3 +943,29 @@
 [data-stats-panel="geral"] #general-week-heatmap .activity-day{
   line-height:17px!important;
 }
+
+/* v25.5 — Geral: alinhamento rígido das bordas direita/esquerda */
+[data-stats-panel="geral"] .stats-block-grid{
+  width:100%!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  justify-content:stretch!important;
+}
+[data-stats-panel="geral"] .stats-block{
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin-left:0!important;
+  margin-right:0!important;
+  justify-self:stretch!important;
+  box-sizing:border-box!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(3),
+[data-stats-panel="geral"] .stats-block:nth-child(6){
+  justify-self:stretch!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-right:0!important;
+}
+@media(max-width:1050px){
+ [data-stats-panel="geral"] .stats-block-grid{grid-template-columns:1fr!important}
+}
