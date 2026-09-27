@@ -1294,3 +1294,86 @@ body[data-dashboard-layout="5"] .dl5-streak .dl5-title h3 > .dl-icon{
 body[data-dashboard-layout="5"] .dl5-streak-number{
   display:none!important;
 }
+
+
+/* Dashboard 5 — próximas atividades sincronizadas com o Cronograma. */
+body[data-dashboard-layout="5"] .dl5-next{
+  grid-template-rows:46px minmax(0,1fr) auto!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-list{
+  min-height:0!important;
+  display:grid!important;
+  align-content:start!important;
+  padding:8px 14px 4px!important;
+  overflow:hidden!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item{
+  position:relative!important;
+  min-width:0!important;
+  display:grid!important;
+  grid-template-columns:14px minmax(0,1fr) 14px!important;
+  align-items:center!important;
+  gap:8px!important;
+  padding:7px 0!important;
+  border-bottom:1px solid var(--border)!important;
+  color:var(--text)!important;
+  text-decoration:none!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item:last-child{
+  border-bottom:0!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item .dl5-timeline-dot{
+  position:static!important;
+  width:8px!important;
+  height:8px!important;
+  border-width:2px!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item > div{
+  min-width:0!important;
+  display:grid!important;
+  gap:2px!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item small{
+  color:var(--muted)!important;
+  font-size:8.5px!important;
+  line-height:1!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item strong{
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  font-size:11.5px!important;
+  line-height:1.15!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item span{
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  color:var(--accent)!important;
+  font-size:9px!important;
+  line-height:1.1!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-item em{
+  color:var(--accent)!important;
+  font-size:16px!important;
+  font-style:normal!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-empty{
+  min-height:72px!important;
+  display:grid!important;
+  place-content:center start!important;
+  gap:4px!important;
+  padding:0 6px!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-empty strong{
+  font-size:12px!important;
+}
+body[data-dashboard-layout="5"] .dl5-next-empty span{
+  color:var(--muted)!important;
+  font-size:9px!important;
+}
+body[data-dashboard-layout="5"] .dl5-next .dl5-start{
+  min-height:34px!important;
+  margin:2px 14px 10px!important;
+  font-size:10.5px!important;
+}
