@@ -88,7 +88,7 @@ body[data-dashboard-layout] .main::after{
 body[data-dashboard-layout] .main{
   position:relative;
   isolation:isolate;
-  padding:0 28px 40px;
+  padding:28px 28px 40px;
   background:transparent;
 }
 body[data-dashboard-layout] .main::before,
@@ -383,11 +383,11 @@ body[data-dashboard-layout] .topbar{
   justify-content:flex-end!important;
   gap:12px!important;
   position:relative!important;
-  height:64px!important;
-  min-height:64px!important;
-  max-height:64px!important;
+  height:52px!important;
+  min-height:52px!important;
+  max-height:52px!important;
   margin:0!important;
-  padding:10px 0!important;
+  padding:0!important;
   border:0!important;
   background:transparent!important;
   box-shadow:none!important;
