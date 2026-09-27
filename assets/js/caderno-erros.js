@@ -4961,7 +4961,14 @@ function closeNotebookMenus(except=null){
 function renderErrorLibrary() {
   const container=document.getElementById("error-library"), empty=document.getElementById("error-library-empty"), count=document.getElementById("error-library-count");
   if(!container||!empty||!count)return;
-  const items=filteredHomeItems(); count.textContent=`${items.length} ${items.length===1?"erro":"erros"}`;
+  let items=filteredHomeItems();
+  /* A biblioteca nunca deve desaparecer por estado de UI stale.
+     Se "Todos" estiver ativo e a busca/filtro visual estiverem vazios,
+     a fonte de verdade é a coleção carregada do Supabase. */
+  const areaFilter=document.getElementById("error-library-area")?.value||"";
+  const searchFilter=document.getElementById("error-library-search")?.value?.trim()||"";
+  if(errorHomeState==="all"&&!areaFilter&&!searchFilter&&errorLibraryItems.length) items=errorLibraryItems.slice();
+  count.textContent=`${items.length} ${items.length===1?"erro":"erros"}`;
   if(!items.length){container.innerHTML="";empty.hidden=false;updateErrorBulkToolbar();renderErrorHomeExtras();return}
   empty.hidden=true;
   const areas=new Map();
