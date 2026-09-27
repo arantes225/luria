@@ -1,0 +1,27 @@
+(()=>{"use strict";
+const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+const today=()=>new Date().toISOString().slice(0,10);
+function priority(cards){const t=today(),active=cards.filter(c=>c.active!==false),over=active.filter(c=>c.due_date&&c.due_date<t).length,due=active.filter(c=>c.due_date&&c.due_date<=t).length,r=active.length?due/active.length:0;return over>=5||r>=.45?["Alta","high"]:due>=3||r>=.18?["Média","medium"]:["Baixa","low"]}
+function rebuildDecks(){
+ const host=document.getElementById("library-decks"); if(!host||typeof libraryCards==="undefined")return;
+ const area=document.getElementById("library-area")?.value||"",mat=document.getElementById("library-materia")?.value||"",scope=typeof libraryScopeFilter==="string"?libraryScopeFilter:"all",active=document.getElementById("library-active")?.value||"active",search=(document.getElementById("library-search")?.value||"").trim().toLowerCase();
+ const cards=libraryCards.filter(c=>(!area||c.area===area)&&(!mat||c.materia===mat)&&(scope==="all"||c.library_origin===scope)&&(active==="all"||(active==="active"?c.active:c.active===false))&&(!search||[c.area,c.materia,c.theme,c.front_text,c.back_text].filter(Boolean).join(" ").toLowerCase().includes(search)));
+ const groups=new Map(); cards.forEach(c=>{const a=c.area||"Sem área";if(!groups.has(a))groups.set(a,new Map());const m=c.materia||c.theme||"Geral";if(!groups.get(a).has(m))groups.get(a).set(m,[]);groups.get(a).get(m).push(c)});
+ host.innerHTML=[...groups].map(([a,subjects])=>{const all=[...subjects.values()].flat(),p=priority(all),due=all.filter(c=>c.active!==false&&c.due_date&&c.due_date<=today()).length;return '<article class="flash-notebook"><div class="flash-notebook-head"><div class="flash-notebook-icon">▤</div><div class="flash-notebook-title"><strong>'+esc(a)+'</strong><small>'+all.length+' flashcards · '+subjects.size+' '+(subjects.size===1?'deck':'decks')+(due?' · '+due+' para revisar':'')+'</small></div><span class="flash-notebook-priority '+p[1]+'">'+p[0]+'</span></div><div class="flash-subject-list">'+[...subjects].map(([m,cs])=>{const d=cs.filter(c=>c.active!==false&&c.due_date&&c.due_date<=today()).length;return '<div class="flash-subject-row"><div class="flash-subject-copy"><strong>'+esc(m)+'</strong><small>'+cs.length+' card'+(cs.length===1?'':'s')+'</small></div><span class="flash-subject-due">'+(d?d+' hoje':'Em dia')+'</span><button class="button secondary" type="button" data-v21-area="'+esc(a)+'" data-v21-subject="'+esc(m)+'">Revisar</button></div>'}).join("")+'</div></article>'}).join("")||'<div class="flash-empty"><strong>Nenhum caderno encontrado.</strong><span>Ajuste os filtros ou adicione flashcards.</span></div>';
+ host.querySelectorAll("[data-v21-area]").forEach(b=>b.onclick=()=>{const cs=libraryCards.filter(c=>(c.area||"Sem área")===b.dataset.v21Area&&(c.materia||c.theme||"Geral")===b.dataset.v21Subject&&c.active!==false);startExtraReview(cs,b.dataset.v21Area+" · "+b.dataset.v21Subject)});
+}
+function buildNavigation(){
+ const tabs=document.querySelector(".flash-tabs"); if(!tabs)return;
+ tabs.innerHTML='<button class="flash-tab active" type="button" data-v21-tab="review">Revisar</button><button class="flash-tab" type="button" data-v21-tab="library">Cadernos / Decks</button><button class="flash-tab" type="button" data-v21-tab="add">Adicionar / Importar</button>';
+ const create=document.querySelector('[data-flash-section="create"]'),imp=document.querySelector('[data-flash-section="import"]');
+ if(create&&imp&&!document.querySelector(".flash-add-hub")){const hub=document.createElement("section");hub.className="flash-add-hub";hub.dataset.v21Section="add";create.before(hub);hub.append(create,imp)}
+ function show(name){tabs.querySelectorAll("[data-v21-tab]").forEach(b=>b.classList.toggle("active",b.dataset.v21Tab===name));document.querySelectorAll('[data-flash-section="review"],[data-flash-section="library"]').forEach(s=>s.classList.toggle("active",s.dataset.flashSection===name));document.querySelector(".flash-add-hub")?.classList.toggle("active",name==="add");if(name==="library"){loadLibrary().then(()=>setTimeout(rebuildDecks,0))}}
+ tabs.querySelectorAll("[data-v21-tab]").forEach(b=>b.onclick=()=>show(b.dataset.v21Tab));
+ window.luriaFlashShow=show;
+ const params=new URLSearchParams(location.search);show(params.has("agenda_date")||params.has("agenda_area")?"review":"library");
+}
+function fullscreen(){
+ const bar=document.getElementById("review-focus-toolbar");if(!bar||document.getElementById("flash-v21-fullscreen"))return;const b=document.createElement("button");b.id="flash-v21-fullscreen";b.className="button secondary";b.type="button";b.textContent="Tela cheia";b.onclick=async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch{document.body.classList.toggle("flash-review-session-active")}};bar.append(b)
+}
+document.addEventListener("DOMContentLoaded",()=>{buildNavigation();fullscreen();const host=document.getElementById("library-decks");if(host)new MutationObserver(()=>{if(!host.querySelector(".flash-notebook"))rebuildDecks()}).observe(host,{childList:true});["library-search","library-area","library-materia","library-active"].forEach(id=>document.getElementById(id)?.addEventListener(id==="library-search"?"input":"change",()=>setTimeout(rebuildDecks,0)))});
+})();
