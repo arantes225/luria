@@ -1763,3 +1763,21 @@
 .error-library-nav select{min-width:150px!important}
 .error-library-search input{width:230px!important}
 @media(max-width:700px){.error-state-switch{overflow-x:auto;max-width:100%}.error-state-switch button{flex:0 0 auto}.error-library-nav select{min-width:140px!important}.error-library-search input{width:100%!important}}
+
+/* v15.5 — menus de ações maiores e alinhamento dos três pontos */
+.error-area-actions>button{
+  display:grid!important;place-items:center!important;
+  width:36px!important;height:34px!important;padding:0!important;
+  line-height:1!important;font-size:15px!important;letter-spacing:1px!important;
+}
+.error-area-menu{top:39px!important;min-width:168px!important;padding:7px!important;border-radius:10px!important}
+.error-area-menu button{min-height:34px!important;padding:9px 11px!important;border-radius:7px!important;font-size:10px!important;line-height:1.2!important}
+
+.error-notebook-more{
+  display:grid!important;place-items:center!important;
+  width:32px!important;height:32px!important;padding:0!important;
+  right:9px!important;top:9px!important;
+  font-size:14px!important;line-height:1!important;letter-spacing:1px!important;
+}
+.error-notebook-menu{right:8px!important;top:43px!important;min-width:176px!important;padding:7px!important;border-radius:10px!important}
+.error-notebook-menu button{min-height:35px!important;padding:9px 11px!important;border-radius:7px!important;font-size:10px!important;line-height:1.2!important}
