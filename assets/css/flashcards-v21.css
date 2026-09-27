@@ -133,3 +133,7 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-tabs{grid-template-columns:repeat(4,1fr)!important;min-width:330px!important}
 .flash-due-shelf{margin-bottom:34px!important;padding-bottom:4px!important;border-bottom:1px solid color-mix(in srgb,var(--border) 70%,transparent)!important}
 .flash-due-deck{min-height:165px!important}
+
+
+/* v23.7 — navegação de escopo antiga removida */
+.library-scope-tabs{display:none!important}
