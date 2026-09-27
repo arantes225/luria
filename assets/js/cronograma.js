@@ -4582,12 +4582,12 @@ function renderWeeklyOverview() {
   document.getElementById("planner-range").textContent = formatWeekRangeSchedule(start, end);
   const days = Array.from({ length: 7 }, (_, index) => addDaysSchedule(start, index));
   const categories = [
-    ["Aulas", "lesson"],
-    ["Questões", "questions"],
-    ["Flashcards", "flashcards"],
-    ["Revisões", "review"],
-    ["Simulados", "simulation"],
-    ["Outros", "other"]
+    ["Aulas", "lesson", "book"],
+    ["Questões", "questions", "clipboard"],
+    ["Flashcards", "flashcards", "cards"],
+    ["Revisões", "review", "refresh"],
+    ["Simulados", "simulation", "simulation"],
+    ["Outros", "other", "more"]
   ];
   const classify = (topic, event) => {
     const source = normalizeHeader(event ? (event.event_type || event.title || "") : (topic?.type || topic?.theme || ""));
@@ -4600,12 +4600,13 @@ function renderWeeklyOverview() {
   planner.innerHTML = '<div class="week-matrix" style="grid-column:1/-1"><div class="week-matrix-grid">' +
     '<div class="week-matrix-label"><strong>Categorias</strong></div>' +
     days.map(date => '<div class="week-matrix-head '+(sameDateSchedule(date,today)?'today':'')+'"><span>'+new Intl.DateTimeFormat("pt-BR",{weekday:"short"}).format(date).replace(".","")+'</span><strong>'+date.getDate()+'</strong></div>').join("") +
-    categories.map(([label,key]) => {
+    categories.map(([label,key,iconName]) => {
       const cells = days.map(date => {
         const count = topicsOnDate(date).filter(t => classify(t,null)===key).length + eventsOnDate(date).filter(e => classify(null,e)===key).length;
         return '<div class="week-matrix-cell" data-planner-date="'+toISODateSchedule(date)+'">'+(count ? '<span class="week-dot kind-'+key+'" title="'+count+' atividade(s)"></span>' : '<span class="week-dot empty"></span>')+'</div>';
       }).join("");
-      return '<div class="week-matrix-label"><span class="week-legend kind-'+key+'"></span><strong>'+label+'</strong></div>'+cells;
+      const categoryIcon = window.LuriaIcon ? window.LuriaIcon(iconName, "week-category-svg") : '<span class="week-legend kind-'+key+'"></span>';
+      return '<div class="week-matrix-label week-category-label"><span class="week-category-icon kind-'+key+'">'+categoryIcon+'</span><strong>'+label+'</strong></div>'+cells;
     }).join("") + '</div></div>';
 }
 
