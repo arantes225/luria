@@ -1208,3 +1208,41 @@
     white-space:pre-wrap;
   }
 }
+
+
+/* v9 — Paciente com o mesmo card dos demais + tempo realmente central */
+@media (max-width:680px){
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
+    background:rgba(248,252,255,.96)!important;
+    color:#184888!important;
+    border:1px solid rgba(169,204,232,.95)!important;
+    border-left:0!important;
+    box-shadow:0 6px 18px rgba(4,31,58,.20)!important;
+    pointer-events:auto!important;
+  }
+
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-clock{
+    position:absolute!important;
+    left:50%!important;
+    top:50%!important;
+    transform:translate(-50%,-50%)!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:max-content!important;
+    margin:0!important;
+    gap:0!important;
+    text-align:center!important;
+  }
+
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-clock::before{
+    content:none!important;
+    display:none!important;
+  }
+
+  .pwa-standalone #plantao-simulator:not([hidden]) .plantao-clock strong{
+    display:block!important;
+    margin:0!important;
+    text-align:center!important;
+  }
+}
