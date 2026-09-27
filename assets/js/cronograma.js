@@ -4307,6 +4307,7 @@ function renderTopicCard(
 
               <a
                 class="topic-action primary"
+                data-start-study-topic="${escapeScheduleHtml(topic.id)}"
                 href="/caderno/?topic_id=${escapeScheduleHtml(topic.id)}&view=editor"
               >
                 Iniciar
@@ -4319,6 +4320,7 @@ function renderTopicCard(
 
               <a
                 class="topic-action primary"
+                data-start-study-topic="${escapeScheduleHtml(topic.id)}"
                 href="/caderno/?topic_id=${escapeScheduleHtml(topic.id)}&view=editor"
               >
                 Iniciar
@@ -8414,6 +8416,14 @@ function wireDynamicInteractions() {
       openAlreadyDoneDialog(
         button.dataset.alreadyDoneTopic
       );
+    });
+  });
+
+
+  document.querySelectorAll("[data-start-study-topic]").forEach((link) => {
+    link.addEventListener("click", () => {
+      const topic = scheduleState.topics.find((item) => item.id === link.dataset.startStudyTopic);
+      window.LuriaStudyTimer?.start("lesson", { sourceId: topic?.id, area: topic?.area || null, materia: topic?.materia || topic?.theme || null });
     });
   });
 
