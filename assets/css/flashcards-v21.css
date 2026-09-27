@@ -60,3 +60,27 @@ body.flash-review-session-active .sidebar,body.flash-review-session-active .topb
 @media(max-width:1180px){.flash-deck-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:850px){.flash-deck-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.library-filters{grid-template-columns:1fr 1fr!important}.library-filters>input{grid-column:1/-1}.flash-library-hero{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.flash-deck-cards{grid-template-columns:1fr}.library-filters{grid-template-columns:1fr!important}.library-filters>input{grid-column:auto}.flash-library-hero h2{font-size:24px}.flash-library-hero-actions{width:100%}.flash-library-hero-actions .button{flex:1}.flash-ref-deck{min-height:176px}}
+
+/* LURIA Flashcards v23 — faithful deck library */
+body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin-top:-4px}
+body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel{padding:0!important}
+.flash-library-hero{align-items:center!important;margin:0 0 6px!important;padding:5px 4px 17px!important}
+.flash-library-hero h2{font-size:34px!important;font-weight:800!important}.flash-library-hero p{font-size:11px!important}
+.flash-library-hero-actions{align-self:flex-end;margin-bottom:1px}
+.flash-library-hero-actions .button{min-width:105px}
+.library-scope-tabs{gap:27px!important;margin-bottom:18px!important}.library-scope-tab{font-size:10px!important;font-weight:700!important}
+.library-filters{display:grid!important;grid-template-columns:minmax(320px,1.55fr) minmax(190px,.72fr) minmax(190px,.72fr)!important;gap:10px!important;margin-bottom:26px!important}
+#library-search,.library-filter-toggle{height:44px!important;border-radius:9px!important}
+#library-search{padding-left:15px!important;font-size:10px!important}
+.flash-area-shelf{margin:0 0 31px!important}
+.flash-area-shelf-head{margin-bottom:12px!important}.flash-area-shelf-icon{width:36px!important;height:36px!important;border:0!important;background:transparent!important;font-size:23px!important}.flash-area-shelf-copy strong{font-size:14px!important}.flash-area-shelf-copy small{font-size:9px!important}.flash-area-shelf-head button{font-size:9px!important}
+.flash-deck-cards{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:13px!important}
+.flash-ref-deck{min-height:215px!important;padding:17px!important;border-radius:11px!important}
+.flash-ref-deck-icon{width:42px!important;height:42px!important;background:transparent!important;font-size:25px!important}
+.flash-ref-deck h3{font-size:12px!important;margin-top:10px!important}.flash-ref-deck-desc{font-size:8.8px!important;line-height:1.42!important;min-height:37px!important}
+.flash-ref-deck-stats{margin-top:14px!important}.flash-ref-deck-stat b{font-size:13px!important}.flash-ref-deck-stat small{font-size:7.8px!important}
+.flash-ref-progress{margin-top:12px!important}.flash-ref-track{height:7px!important}
+.flash-ref-deck-menu{font-size:15px!important}
+@media(max-width:1180px){.flash-deck-cards{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:850px){.flash-deck-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:560px){.flash-deck-cards{grid-template-columns:1fr!important}}
