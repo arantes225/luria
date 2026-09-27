@@ -2549,8 +2549,8 @@
 
     // Accept JSON copied directly from ChatGPT/Perplexity code blocks.
     source = source
-      .replace(/^\`\`\`(?:json)?\\s*/i, "")
-      .replace(/\\s*\`\`\`$/i, "")
+      .replace(/^```(?:json)?\s*/i, "")
+      .replace(/\s*```$/i, "")
       .trim();
 
     let payload = JSON.parse(source);
@@ -2601,7 +2601,7 @@
     }
 
     const parseCodeNumber = (value, prefix) => {
-      const match = String(value || "").match(new RegExp(prefix + "(\\\\d+)", "i"));
+      const match = String(value || "").match(new RegExp(prefix + "(\\d+)", "i"));
       return match ? Number(match[1]) : null;
     };
 
