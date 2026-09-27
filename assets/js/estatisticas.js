@@ -500,11 +500,6 @@
         <span>${esc(c.label)}</span>
         <strong>${esc(c.value)}</strong>
         <small>${esc(c.helper || "")}</small>
-        <div class="stats-summary-viz">
-          <div class="stats-mini-track">
-            <span style="width:${clamp(c.progress ?? 0)}%"></span>
-          </div>
-        </div>
       </article>
     `).join("");
   }
