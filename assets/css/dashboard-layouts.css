@@ -1233,3 +1233,64 @@ body[data-dashboard-layout="5"] .dl5-area-list{
   gap:9px!important;
   padding:12px 16px!important;
 }
+
+
+/* Dashboard 5 — Ofensiva: vetor no título e fogo dinâmico dentro do callout. */
+body[data-dashboard-layout="5"] .dl5-streak-main{
+  display:grid!important;
+  grid-template-columns:64px minmax(0,1fr)!important;
+  align-items:center!important;
+  gap:12px!important;
+  padding:8px 14px 2px!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero{
+  width:64px!important;
+  height:64px!important;
+  display:grid!important;
+  place-items:center!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero .dl-streak-visual{
+  width:58px!important;
+  height:58px!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero .dl-streak-flame{
+  --sidebar-flame-size:42px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero .dl-streak-visual[data-streak-tier="2"]{
+  --sidebar-flame-size:46px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero .dl-streak-visual[data-streak-tier="3"]{
+  --sidebar-flame-size:49px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero .dl-streak-visual[data-streak-tier="4"]{
+  --sidebar-flame-size:52px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero .dl-streak-visual[data-streak-tier="5"]{
+  --sidebar-flame-size:55px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-hero .dl-streak-visual[data-streak-tier="6"]{
+  --sidebar-flame-size:58px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-copy{
+  min-width:0!important;
+  display:grid!important;
+  gap:3px!important;
+  align-content:center!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-copy strong{
+  font-size:30px!important;
+  line-height:1!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-copy span{
+  color:var(--muted)!important;
+  font-size:11px!important;
+  line-height:1.1!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak .dl5-title h3 > .dl-icon{
+  width:20px!important;
+  height:20px!important;
+  flex:0 0 20px!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-number{
+  display:none!important;
+}
