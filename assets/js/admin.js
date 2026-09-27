@@ -2139,7 +2139,7 @@
       { n:2, title:"Revisão adversarial + autocorreção", owner:"ChatGPT", stats:`${initialAudited} auditadas · ${initialFlagged} sinalizadas · ${versioned} com nova versão` },
       { n:3, title:"Resolução cega independente", owner:"ChatGPT", stats:`${blind}/200 resolvidas cegamente` },
       { n:4, title:"Revisão independente do bloco", owner:"ChatGPT", stats:`${perplexityAudited}/200 revisadas · ${perplexityFlagged} com achados` },
-      { n:5, title:"Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
+      { n:5, title:hadReaudit && currentStep === 5 ? "Decidir destino das pendências" : "Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
       { n:6, title:"Revisar cegamente as correções", owner:"ChatGPT", stats:`${reaudited}/200 revisadas · ${reauditApproved} aprovadas · ${reauditNeedsRevision} revisar · ${reauditRejected} rejeitadas` },
       { n:7, title:"Aceitar para o lote", owner:"Você", stats: humanStatus === "approved" ? "Aprovado e enviado ao lote" : `${approved}/200 aprovadas pela máquina · ${machinePending} ainda não aprovadas` }
     ];
@@ -2165,7 +2165,7 @@
           `;
         }).join("")}
       </div>
-      ${hadReaudit && currentStep === 5 ? '<div class="admin-qf-flow-loop-note">↺ Ainda há pendências: voltou ao ChatGPT. Depois da correção, segue para a Etapa 6, reauditoria cega das correções, ignorando memória e pareceres anteriores.</div>' : ""}
+      ${hadReaudit && currentStep === 5 ? '<div class="admin-qf-flow-loop-note">Etapa 6 finalizada. O fluxo está parado nesta decisão e não volta automaticamente para etapas anteriores. Corrija somente as pendências ou arquive-as para gerar reposições.</div>' : ""}
     `;
   }
 
@@ -2245,7 +2245,7 @@
             ` : ""}
 
             <button class="button secondary admin-qf-view-block-wide" type="button" data-qf-view-block="${Number(batch.batch_number)}:${n}">${needs || rejected ? "Ver pendências" : "Ver bloco"}</button>
-            ${blockAction.provider === "perplexity" ? "" : `<button class="button secondary admin-qf-import-stage-wide" type="button" data-qf-import-stage="${Number(batch.batch_number)}:${n}">Importar etapa</button>`}
+            ${awaitingFinalDisposition ? "" : (blockAction.provider === "perplexity" ? "" : `<button class="button secondary admin-qf-import-stage-wide" type="button" data-qf-import-stage="${Number(batch.batch_number)}:${n}">Importar etapa</button>`)}
 
             ${!awaitingFinalDisposition ? `
               <div class="admin-qf-block-ai-action ${independentChunkStage ? "is-perplexity-manual" : ""}">
