@@ -540,7 +540,7 @@
     const start = new Date(end);
     start.setDate(end.getDate() - 83);
     const days = Array.from({length:84},(_,i)=>{ const d=new Date(start); d.setDate(start.getDate()+i); return d; });
-    const key = d => localISO(d);
+    const key = d => { const y=d.getFullYear(); const m=String(d.getMonth()+1).padStart(2,"0"); const day=String(d.getDate()).padStart(2,"0"); return `${y}-${m}-${day}`; };
     const buckets = new Map(canonical.map(([label])=>[label,new Map()]));
 
     for (const row of attempts || []) {
