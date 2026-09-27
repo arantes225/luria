@@ -1,0 +1,123 @@
+/* Dashboard Trabalho · LURIA
+   Replica a linguagem visual dos dashboards de Estudos sem Pomodoro. */
+html:not([data-theme]):has(body[data-page="trabalho_dashboard"]){
+  --bg:#F7F9FC;--surface:#FFFFFF;--surface-2:#F1F5F9;--text:#10243E;--muted:#5F6F82;
+  --border:#D9E2EC;--accent:#184888;--accent-strong:#123A70;--accent-soft:#E7EEF7;
+}
+body[data-page="trabalho_dashboard"]{background:var(--bg)}
+body[data-page="trabalho_dashboard"] .main{
+  position:relative;isolation:isolate;padding:0 28px 40px;background:var(--bg);overflow-x:hidden;
+}
+body[data-page="trabalho_dashboard"] .main::before,
+body[data-page="trabalho_dashboard"] .main::after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:var(--luria-pattern-image);background-repeat:repeat;
+  background-size:var(--luria-pattern-size) var(--luria-pattern-size);
+  transform:rotate(-8deg) scale(1.08);transform-origin:center;opacity:var(--luria-pattern-opacity);
+}
+body[data-page="trabalho_dashboard"] .main::after{
+  background-position:calc(var(--luria-pattern-size)/2) calc(var(--luria-pattern-size)/2);
+}
+body[data-page="trabalho_dashboard"] .page{max-width:1500px}
+body[data-page="trabalho_dashboard"] .topbar{
+  position:relative;height:0;min-height:0;margin:0;padding:0;border:0;background:transparent;overflow:visible;
+}
+body[data-page="trabalho_dashboard"] .topbar .page-heading{display:none}
+body[data-page="trabalho_dashboard"] .work-dashboard{padding-top:24px;color:var(--text)}
+.work-dashboard-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin:1px 5px 20px}
+.work-dashboard-head h2{margin:0 0 4px;font-size:clamp(25px,2.6vw,38px);letter-spacing:-.035em;line-height:1.15}
+.work-dashboard-head p{margin:0;color:var(--muted);font-size:16px}
+.work-dashboard-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.work-dashboard-date{color:var(--muted);font-size:13px;white-space:nowrap;text-transform:capitalize}
+.work-layout-toggle{display:inline-flex;padding:3px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2)}
+.work-layout-toggle button{min-height:36px;padding:0 12px;border:0;border-radius:8px;background:transparent;color:var(--muted);font-weight:750;cursor:pointer}
+.work-layout-toggle button.active{background:var(--surface);color:var(--text);box-shadow:0 1px 4px rgba(20,25,35,.08)}
+.work-grid{display:grid;gap:16px}
+.work-card{min-width:0;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px 20px;box-shadow:0 5px 16px rgba(26,79,117,.035)}
+.work-card-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.work-card-heading h3{display:flex;align-items:center;gap:10px;margin:0;font-size:18px;font-weight:800}
+.work-card-heading a{color:var(--accent);font-size:12px;white-space:nowrap}
+.work-card-heading a:hover{text-decoration:underline}
+.work-heading-icon{display:inline-grid;place-items:center;width:29px;height:29px;color:var(--accent)}
+.work-icon{width:27px;height:27px;display:block}
+.work-detail{grid-template-columns:repeat(4,minmax(0,1fr))}
+.work-detail>.work-card{min-height:230px}
+.work-detail .work-span-2{grid-column:span 2}
+.work-detail .work-span-4{grid-column:1/-1}
+.work-metric{display:flex;flex-direction:column;justify-content:center;text-align:center;align-items:center}
+.work-metric-label{display:block;width:100%;color:var(--muted);font-size:11px;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
+.work-metric-value{display:block;width:100%;margin-top:13px;font-size:31px;font-weight:880;line-height:1.05;overflow-wrap:anywhere}
+.work-metric-help{display:block;width:100%;margin-top:9px;color:var(--muted);font-size:12px;line-height:1.45}
+.work-empty{display:grid;place-items:center;min-height:135px;padding:20px;border:1px dashed var(--border);border-radius:13px;background:var(--surface-2);text-align:center;color:var(--muted);line-height:1.5}
+.work-empty strong{display:block;color:var(--text);font-size:14px;margin-bottom:5px}
+.work-empty a{display:inline-flex;margin-top:12px;min-height:36px;align-items:center;padding:0 12px;border-radius:8px;background:var(--accent);color:#fff;font-size:12px;font-weight:800}
+.work-shift-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.work-shift-summary>a,.work-finance-row,.work-tool{
+  border:1px solid var(--border);border-radius:11px;background:var(--surface);padding:12px;
+}
+.work-shift-summary>a{display:grid;gap:4px;color:var(--text)}
+.work-shift-summary small,.work-finance-row small,.work-tool small{color:var(--muted);font-size:10px}
+.work-shift-summary strong{font-size:14px}
+.work-quick-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.work-tool{display:flex;align-items:center;gap:10px;min-height:70px;color:var(--text);transition:border-color .15s,transform .15s}
+.work-tool:hover{border-color:var(--accent);transform:translateY(-1px)}
+.work-tool-icon{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:9px;background:var(--accent-soft);color:var(--accent)}
+.work-tool span{display:grid;min-width:0;gap:2px}
+.work-tool strong{font-size:12px;line-height:1.2}
+.work-finance-list{display:grid;gap:8px}
+.work-finance-row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.work-finance-row strong{font-size:13px}
+.work-finance-row span{color:var(--muted);font-size:12px;text-align:right}
+.work-action-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.work-action-row a{min-height:74px;display:grid;place-items:center;text-align:center;padding:10px;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);font-size:12px;font-weight:800}
+.work-action-row a:first-child{background:var(--accent);border-color:var(--accent);color:#fff}
+.work-simple{grid-template-columns:minmax(0,1.35fr) minmax(260px,.8fr)}
+.work-simple .work-simple-actions{grid-column:1/-1}
+.work-simple-next{min-height:285px}
+.work-simple-status{display:grid;gap:10px;margin-top:6px}
+.work-simple-status>div{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px;border:1px solid var(--border);border-radius:11px}
+.work-simple-status span{color:var(--muted);font-size:12px}
+.work-simple-status strong{font-size:13px;text-align:right}
+.work-simple-actions-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.work-simple-actions-grid a{min-height:112px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;border:1px solid var(--border);border-radius:13px;background:var(--surface);color:var(--text);font-weight:800;text-align:center}
+.work-simple-actions-grid a:hover{border-color:var(--accent)}
+.work-simple-actions-grid .work-tool-icon{width:42px;height:42px;flex-basis:42px}
+.work-dashboard [hidden]{display:none!important}
+@media(max-width:1100px){
+  .work-detail{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .work-detail .work-span-4{grid-column:1/-1}
+  .work-detail>.work-card{min-height:190px}
+  .work-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:980px){
+  body[data-page="trabalho_dashboard"] .topbar .menu-open{display:grid;position:absolute;top:18px;left:0;z-index:80}
+  .work-dashboard-head{padding-left:52px}
+}
+@media(min-width:981px){
+  body[data-page="trabalho_dashboard"] .topbar .menu-open{display:none!important}
+}
+@media(max-width:760px){
+  body[data-page="trabalho_dashboard"] .main{
+    padding:max(12px,env(safe-area-inset-top)) 10px calc(28px + env(safe-area-inset-bottom));
+  }
+  .work-dashboard{padding-top:12px}
+  .work-dashboard-head{padding-left:48px;margin:0 0 14px;align-items:flex-start;flex-direction:column;gap:10px}
+  .work-dashboard-head h2{font-size:25px}
+  .work-dashboard-head p{font-size:13px}
+  .work-dashboard-actions{width:100%;justify-content:space-between}
+  .work-dashboard-date{font-size:10px}
+  .work-layout-toggle button{min-height:32px;padding:0 9px;font-size:10px}
+  .work-grid,.work-detail,.work-simple{grid-template-columns:1fr}
+  .work-detail .work-span-2,.work-detail .work-span-4,.work-simple .work-simple-actions{grid-column:auto}
+  .work-detail>.work-card{min-height:145px}
+  .work-card{padding:14px;border-radius:14px}
+  .work-card-heading{margin-bottom:12px}
+  .work-card-heading h3{font-size:15px}
+  .work-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+  .work-tool{min-height:64px;padding:9px}
+  .work-tool strong{font-size:11px}
+  .work-shift-summary{grid-template-columns:1fr}
+  .work-action-row{grid-template-columns:1fr}
+  .work-simple-actions-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .work-simple-actions-grid a{min-height:94px;font-size:11px}
+}
