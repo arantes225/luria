@@ -35,6 +35,11 @@
   const causesDialog = $("pcr-causes-dialog");
   const noteDialog = $("pcr-note-dialog");
   const pedsCauseNote = $("pcr-peds-cause-note");
+  const pwaCauseNote = $("pcr-pwa-peds-cause-note");
+  document.querySelector(".pcr-pwa-causes-host").appendChild(
+    causesDialog.querySelector(".pcr-causes-grid").cloneNode(true)
+  );
+  pwaCauseNote.textContent = pedsCauseNote.textContent;
 
   function elapsedSeconds() {
     const end = stoppedAt || Date.now();
@@ -371,6 +376,7 @@
       btn.classList.toggle("active", btn.dataset.pcrMode === next);
     });
     pedsCauseNote.hidden = next !== "pediatric";
+    pwaCauseNote.hidden = next !== "pediatric";
     ventilationEl.textContent = next === "adult"
       ? "1 ventilação a cada 6 s com compressões contínuas."
       : "Com via aérea avançada: 1 ventilação a cada 2–3 s com compressões contínuas.";
@@ -496,7 +502,13 @@
   $("pcr-causes").addEventListener("click", () => causesDialog.showModal());
   document.querySelectorAll("[data-cause]").forEach((button) => {
     button.addEventListener("click", () => {
-      button.classList.toggle("checked");
+      const checked = !button.classList.contains("checked");
+      document.querySelectorAll("[data-cause]").forEach((causeButton) => {
+        if (causeButton.dataset.cause === button.dataset.cause) {
+          causeButton.classList.toggle("checked", checked);
+          causeButton.setAttribute("aria-pressed", String(checked));
+        }
+      });
       addLog("Causa reversível avaliada", button.dataset.cause);
     });
   });

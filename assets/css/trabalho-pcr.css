@@ -42,6 +42,7 @@
 @media(max-width:760px){.pcr-topbar{flex-wrap:wrap}.pcr-top-actions{width:100%;justify-content:space-between}.pcr-time-card{min-width:140px}.pcr-workspace{grid-template-columns:1fr}.pcr-team-column{grid-column:auto;grid-row:auto}.pcr-controlbar{align-items:stretch}.pcr-metronome{flex:1 1 180px}.pcr-weight{flex:1 1 120px}.pcr-team-map{min-height:470px}.team-position{min-width:78px;padding:7px 6px}.pcr-log-item{grid-template-columns:58px 58px 1fr;gap:6px}.pcr-causes-grid{grid-template-columns:1fr}}
 .pcr-pwa-tabs{display:none}
 .pcr-selected-rhythm{display:none;color:var(--muted);font-size:11px;font-weight:750}
+.pcr-cause-column{display:none}
 
 /* PWA: ações recolhidas acima do registro, no mesmo fluxo do simulador. */
 @media(max-width:760px){
@@ -54,6 +55,7 @@
   .pwa-standalone .pcr-topbar .page-heading h1{font-size:24px;line-height:1;margin:0}
   .pwa-standalone .pcr-top-actions{width:auto;margin-left:auto;gap:6px;justify-content:flex-end}
   .pwa-standalone .pcr-cause-button{min-height:42px;padding:0 8px;font-size:11px}
+  .pwa-standalone .pcr-cause-button{display:none}
   .pwa-standalone .pcr-time-card{min-width:104px;padding:6px 9px;border-radius:11px}
   .pwa-standalone .pcr-time-card small{font-size:7px}.pwa-standalone .pcr-time-card strong{font-size:22px}.pwa-standalone .pcr-time-card span{font-size:8px}
   .pwa-standalone .pcr-controlbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px;padding:8px;margin:0}
@@ -61,7 +63,7 @@
   .pwa-standalone .pcr-segmented button{min-height:34px;padding:5px}.pwa-standalone .pcr-weight{min-height:42px}.pwa-standalone .pcr-metronome{min-height:42px;padding:5px 7px}
   .pwa-standalone .pcr-metronome small{font-size:8px}.pwa-standalone .pcr-quick-action{min-height:38px;padding:4px 6px;font-size:11px}
   .pwa-standalone .pcr-pwa-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
-  .pwa-standalone .pcr-pwa-tabs button{display:flex;align-items:center;justify-content:center;gap:5px;min-height:47px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font-size:12px;font-weight:850;box-shadow:0 2px 7px rgba(0,0,0,.06)}
+  .pwa-standalone .pcr-pwa-tabs button{display:flex;align-items:center;justify-content:center;gap:5px;min-height:50px;padding:4px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font-size:11px;font-weight:850;line-height:1.15;box-shadow:0 2px 7px rgba(0,0,0,.06)}
   .pwa-standalone .pcr-pwa-tabs button span{font-size:19px;line-height:1;color:var(--accent)}
   .pwa-standalone .pcr-pwa-tabs button.active{border-color:var(--accent);background:var(--accent);color:#fff}
   .pwa-standalone .pcr-pwa-tabs button.active span{color:#fff}
@@ -77,8 +79,12 @@
   .pwa-standalone .pcr-defib-panel{flex:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(105px,34%);align-items:center;gap:7px;margin:0;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
   .pwa-standalone .pcr-defib-panel>div{min-width:0}.pwa-standalone .pcr-defib-panel strong{font-size:11px}.pwa-standalone .pcr-defib-panel small{font-size:8px}
   .pwa-standalone .pcr-shock-button{min-height:52px;font-size:15px}.pwa-standalone #pcr-shock-count{grid-column:1/-1;text-align:right}
-  .pwa-standalone .pcr-team-column,.pwa-standalone .pcr-drug-column{display:none;flex:none;padding:12px}
-  .pwa-standalone .pcr-workspace[data-pwa-panel="team"] .pcr-team-column,.pwa-standalone .pcr-workspace[data-pwa-panel="drugs"] .pcr-drug-column{display:block}
+  .pwa-standalone .pcr-team-column,.pwa-standalone .pcr-drug-column,.pwa-standalone .pcr-cause-column{display:none;flex:none;padding:12px}
+  .pwa-standalone .pcr-workspace[data-pwa-panel="drugs"] .pcr-drug-column,.pwa-standalone .pcr-workspace[data-pwa-panel="causes"] .pcr-cause-column{display:block}
+  .pwa-standalone .pcr-cause-column .pcr-causes-grid{display:grid;grid-template-columns:1fr;gap:14px}
+  .pwa-standalone .pcr-cause-column .pcr-causes-grid section{gap:6px}
+  .pwa-standalone .pcr-cause-column .pcr-causes-grid button{min-height:42px}
+  .pwa-standalone #pcr-pwa-peds-cause-note:not([hidden]){margin:12px 0 0;color:var(--muted);font-size:11px;line-height:1.4}
   .pwa-standalone .pcr-team-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;min-height:0;padding:0;background:transparent;overflow:visible}
   .pwa-standalone .pcr-team-map .patient-figure,.pwa-standalone .pcr-team-map .compression-guide{display:none}
   .pwa-standalone .pcr-team-map .team-position{position:static;transform:none;min-width:0;min-height:48px;display:flex;align-items:center;justify-content:flex-start;gap:8px;padding:8px}

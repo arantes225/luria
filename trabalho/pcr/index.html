@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=2-pwa-panels">
+  <link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=3-pwa-causes">
 </head>
 <body data-page="trabalho_pcr">
   <div class="app-shell">
@@ -63,7 +63,7 @@
         <nav class="pcr-pwa-tabs" aria-label="Controles da PCR">
           <button type="button" data-pcr-panel="rhythms" aria-controls="pcr-rhythm-list" aria-expanded="false"><span aria-hidden="true">⌁</span>Ritmos</button>
           <button type="button" data-pcr-panel="drugs" aria-controls="pcr-drug-column" aria-expanded="false"><span aria-hidden="true">✚</span>Drogas</button>
-          <button type="button" data-pcr-panel="team" aria-controls="pcr-team-column" aria-expanded="false"><span aria-hidden="true">☷</span>Ações</button>
+          <button type="button" data-pcr-panel="causes" aria-controls="pcr-cause-panel" aria-expanded="false"><span aria-hidden="true">◇</span>Identificar causa</button>
         </nav>
 
         <section class="pcr-workspace" data-pwa-panel="closed">
@@ -148,6 +148,11 @@
               <button type="button" data-log-action="Via aérea avançada">Registrar via aérea</button>
             </div>
           </aside>
+          <section class="pcr-column pcr-cause-column" id="pcr-cause-panel" aria-label="Causas reversíveis: 5 Hs e 5 Ts">
+            <div class="pcr-section-title"><div><span>CAUSAS REVERSÍVEIS</span><h2>5 Hs e 5 Ts</h2></div></div>
+            <div class="pcr-pwa-causes-host"></div>
+            <p id="pcr-pwa-peds-cause-note" hidden></p>
+          </section>
         </section>
 
         <section class="pcr-log-panel">
@@ -204,7 +209,7 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.20-work-fixed-footer"></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf/dist/jspdf.umd.min.js"></script>
-  <script src="/assets/js/trabalho-pcr.js?v=7-pwa-panels"></script>
+  <script src="/assets/js/trabalho-pcr.js?v=8-pwa-causes"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
