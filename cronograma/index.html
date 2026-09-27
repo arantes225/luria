@@ -2258,6 +2258,27 @@
   .agenda-workspace{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:14px;align-items:start}
   .agenda-workspace .planner-panel{min-width:0;height:max-content;align-self:start}
   .agenda-side{display:grid;gap:10px;position:sticky;top:14px}
+  .agenda-today-card{padding:0!important;overflow:hidden}
+  .agenda-today-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 13px;border-bottom:1px solid var(--border)}
+  .agenda-today-title-wrap{display:flex;align-items:center;gap:9px;min-width:0}
+  .agenda-today-icon{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-size:13px}
+  .agenda-today-title-wrap h3{margin:0;font-size:12px;font-weight:850;color:var(--text)}
+  .agenda-today-date{display:block;margin-top:2px;color:var(--muted);font-size:7.5px;white-space:nowrap}
+  .agenda-today-list{display:grid;gap:0!important;padding:5px}
+  .agenda-today-row{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;min-height:50px;padding:7px 7px 7px 12px;border-bottom:1px solid var(--border);background:var(--surface)}
+  .agenda-today-row:last-child{border-bottom:0}
+  .agenda-today-row::before{content:"";position:absolute;left:3px;top:8px;bottom:8px;width:3px;border-radius:999px;background:var(--agenda-row-accent,var(--accent))}
+  .agenda-today-check{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer}
+  .agenda-today-main{min-width:0}
+  .agenda-today-time{display:block;color:var(--muted);font-size:7.5px;font-weight:750;margin-bottom:2px}
+  .agenda-today-main strong{display:block;font-size:9px;line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .agenda-today-main small{display:block;margin-top:2px;color:var(--muted);font-size:7.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .agenda-today-kind{display:inline-flex;align-items:center;justify-content:center;min-height:22px;padding:0 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:7px;font-weight:800;white-space:nowrap}
+  .agenda-today-row.kind-review{--agenda-row-accent:#20b7aa}
+  .agenda-today-row.kind-simulation{--agenda-row-accent:#8b5cf6}
+  .agenda-today-row.kind-other{--agenda-row-accent:#f59e0b}
+  .agenda-today-row.kind-lesson{--agenda-row-accent:var(--accent)}
+
   .agenda-side-card{padding:13px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
   .agenda-side-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:10px}
   .agenda-side-head h3{margin:2px 0 0;font-size:12px}
@@ -2627,8 +2648,17 @@
           </section>
 
           <aside class="agenda-side">
-            <section class="agenda-side-card">
-              <div class="agenda-side-head"><div><span class="agenda-kicker">Hoje</span><h3>Atividades de hoje</h3></div><span id="agenda-today-count" class="agenda-count">0</span></div>
+            <section class="agenda-side-card agenda-today-card">
+              <div class="agenda-today-head">
+                <div class="agenda-today-title-wrap">
+                  <span class="agenda-today-icon" aria-hidden="true">▣</span>
+                  <div>
+                    <h3>Agenda de hoje</h3>
+                    <span id="agenda-today-date" class="agenda-today-date"></span>
+                  </div>
+                </div>
+                <span id="agenda-today-count" class="agenda-count">0</span>
+              </div>
               <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
             </section>
             <section class="agenda-side-card">
@@ -3114,7 +3144,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=18.6-calendar-header"></script>
+  <script src="assets/js/cronograma.js?v=18.7-today-agenda"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
