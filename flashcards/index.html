@@ -4,7 +4,7 @@
   <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://commons.wikimedia.org https://upload.wikimedia.org; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <title>Flashcards · LURIA</title>
@@ -19,7 +19,8 @@
 
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/flashcards.css?v=14.7">
+  <link rel="stylesheet" href="assets/css/flashcards.css?v=15.0">
+  <link rel="stylesheet" href="assets/css/flashcards-central-v18.css?v=18.0">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/flashcards/">
@@ -251,6 +252,62 @@
             </div>
 
             <div
+              id="review-launcher"
+              class="review-launcher"
+            >
+              <div class="review-launcher-copy">
+                <span class="eyebrow">Pronto para revisar</span>
+                <h3 id="review-launcher-title">Revisões do dia</h3>
+                <p id="review-launcher-copy">
+                  Carregando suas revisões...
+                </p>
+              </div>
+
+              <div class="review-launcher-action">
+                <strong id="review-launcher-count">0 flashcards</strong>
+                <button
+                  id="start-review-session"
+                  class="button primary"
+                  type="button"
+                  disabled
+                >
+                  Iniciar revisão
+                </button>
+              </div>
+            </div>
+
+            <div
+              id="review-focus-toolbar"
+              class="review-focus-toolbar"
+              hidden
+            >
+              <div class="review-focus-time">
+                <small>Tempo de revisão</small>
+                <strong id="review-elapsed">0:00</strong>
+              </div>
+
+              <div class="review-focus-pomodoro">
+                <small>Pomodoro opcional</small>
+                <strong id="review-pomodoro-clock">25:00</strong>
+                <button
+                  id="review-pomodoro-toggle"
+                  class="button secondary"
+                  type="button"
+                >
+                  Iniciar Pomodoro
+                </button>
+              </div>
+
+              <button
+                id="finish-review-session"
+                class="button secondary review-finish-button"
+                type="button"
+              >
+                Terminar revisão
+              </button>
+            </div>
+
+            <div
               id="review-empty"
               class="flash-empty"
               hidden
@@ -278,12 +335,6 @@
                 <span
                   id="review-materia"
                   class="taxonomy-chip"
-                  hidden
-                ></span>
-
-                <span
-                  id="review-theme"
-                  class="taxonomy-chip accent"
                   hidden
                 ></span>
 
@@ -507,15 +558,6 @@
               </div>
 
               <label class="flash-field full">
-                <span>Pulo do Gato <small>(conceito central da questão)</small></span>
-                <input
-                  id="create-theme"
-                  type="text"
-                  placeholder="Ex.: Insuficiência cardíaca"
-                >
-              </label>
-
-              <label class="flash-field full">
                 <span>Frente *</span>
                 <textarea
                   id="create-front"
@@ -681,7 +723,6 @@
                     <th>Origem</th>
                     <th>Área</th>
                     <th>Matéria</th>
-                    <th>Tema</th>
                     <th>Frente</th>
                     <th>Verso</th>
                   </tr>
@@ -729,8 +770,7 @@
               <div>
                 <h2>Biblioteca</h2>
                 <p>
-                  Pesquise seus flashcards
-                  e arquive o que não estiver usando.
+                  Acesse os flashcards do sistema e organize os seus.
                 </p>
               </div>
 
@@ -742,6 +782,18 @@
               </span>
             </div>
 
+            <div class="library-scope-tabs" role="tablist" aria-label="Origem dos flashcards">
+              <button class="library-scope-tab active" type="button" data-library-scope="all" role="tab" aria-selected="true">
+                Geral
+              </button>
+              <button class="library-scope-tab" type="button" data-library-scope="system" role="tab" aria-selected="false">
+                Sistema
+              </button>
+              <button class="library-scope-tab" type="button" data-library-scope="personal" role="tab" aria-selected="false">
+                Pessoal
+              </button>
+            </div>
+
             <div class="library-filters">
 
               <input
@@ -750,31 +802,90 @@
                 placeholder="Buscar frente, verso, matéria ou tema..."
               >
 
-              <select id="library-area" data-luria-general-area-select data-blank-label="Todas as áreas">
-                <option value="">
-                  Todas as áreas
-                </option>
-              </select>
+              <div class="library-filter-picker" data-library-picker="library-area">
+                <button
+                  class="library-filter-toggle"
+                  type="button"
+                  data-library-picker-toggle="library-area"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                >
+                  <span data-library-picker-label="library-area">Todas as áreas</span>
+                  <span class="library-filter-chevron" aria-hidden="true">⌄</span>
+                </button>
+                <div
+                  class="library-filter-menu"
+                  data-library-picker-menu="library-area"
+                  role="listbox"
+                  hidden
+                ></div>
+                <select
+                  id="library-area"
+                  class="library-filter-native"
+                  data-luria-general-area-select
+                  data-blank-label="Todas as áreas"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <option value="">Todas as áreas</option>
+                </select>
+              </div>
 
-              <select id="library-materia">
-                <option value="">Todas as matérias</option>
-              </select>
+              <div class="library-filter-picker" data-library-picker="library-materia">
+                <button
+                  class="library-filter-toggle"
+                  type="button"
+                  data-library-picker-toggle="library-materia"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                >
+                  <span data-library-picker-label="library-materia">Todas as matérias</span>
+                  <span class="library-filter-chevron" aria-hidden="true">⌄</span>
+                </button>
+                <div
+                  class="library-filter-menu"
+                  data-library-picker-menu="library-materia"
+                  role="listbox"
+                  hidden
+                ></div>
+                <select
+                  id="library-materia"
+                  class="library-filter-native"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <option value="">Todas as matérias</option>
+                </select>
+              </div>
 
-              <select id="library-theme">
-                <option value="">Todos os temas</option>
-              </select>
-
-              <select id="library-active">
-                <option value="active">
-                  Ativos
-                </option>
-                <option value="archived">
-                  Arquivados
-                </option>
-                <option value="all">
-                  Todos
-                </option>
-              </select>
+              <div class="library-filter-picker" data-library-picker="library-active">
+                <button
+                  class="library-filter-toggle"
+                  type="button"
+                  data-library-picker-toggle="library-active"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                >
+                  <span data-library-picker-label="library-active">Ativos</span>
+                  <span class="library-filter-chevron" aria-hidden="true">⌄</span>
+                </button>
+                <div
+                  class="library-filter-menu"
+                  data-library-picker-menu="library-active"
+                  role="listbox"
+                  hidden
+                ></div>
+                <select
+                  id="library-active"
+                  class="library-filter-native"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <option value="active">Ativos</option>
+                  <option value="archived">Arquivados</option>
+                  <option value="all">Todos</option>
+                </select>
+              </div>
 
             </div>
 
@@ -915,15 +1026,6 @@
         </label>
 
         <label class="full">
-          <span>Tema</span>
-          <input
-            id="flash-edit-theme"
-            type="text"
-            placeholder="Opcional"
-          >
-        </label>
-
-        <label class="full">
           <span>Frente *</span>
           <textarea
             id="flash-edit-front"
@@ -986,12 +1088,14 @@
   ></script>
 
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
-  <script src="assets/js/supabase.js"></script>\n  <script src="assets/js/storage-router.js?v=1.0.0"></script>
+  <script src="assets/js/supabase.js"></script>
+  <script src="assets/js/storage-router.js?v=1.0.0"></script>
   <script src="assets/js/pdf-branding.js?v=1"></script>
   <script src="assets/js/app.js?v=17.11-topbar-size"></script>
   <script src="assets/js/study-mode.js?v=13.0"></script>
   <script src="assets/js/sharing.js?v=3"></script>
-  <script src="assets/js/flashcards.js?v=17.1"></script>
+  <script src="assets/js/flashcards.js?v=17.4"></script>
+  <script src="assets/js/flashcards-central-v18.js?v=18.0"></script>
 
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
