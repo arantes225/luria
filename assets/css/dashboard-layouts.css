@@ -1664,3 +1664,27 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar > .dl-avatar{
     max-height:58px!important;
   }
 }
+
+
+/* Dashboard 4 — ajuste fino vertical para liberar o bloco inferior. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-greeting{
+    transform:translateY(-6px)!important;
+    margin-bottom:4px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4{
+    height:calc(100% - 48px)!important;
+    grid-template-rows:auto minmax(0,.92fr) auto!important;
+    gap:10px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak{
+    min-height:0!important;
+    height:auto!important;
+    max-height:220px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-cat{
+    height:164px!important;
+  }
+}
