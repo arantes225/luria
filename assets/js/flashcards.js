@@ -731,7 +731,7 @@ async function signedFlashImage(path) {
     return null;
   }
 
-  if (/^https?:\/\//i.test(path)) {
+  if (/^(?:https?:\/\/|data:image\/)/i.test(path)) {
     return path;
   }
 
@@ -5708,9 +5708,19 @@ async function flashPdfImageData(path) {
   if (!path) return null;
 
   try {
-    const { data: blob, error } = await window.LuriaStorage.download("flashcard_images",path);
+    let blob;
 
-    if (error) throw error;
+    if (/^(?:https?:\/\/|data:image\/)/i.test(path)) {
+      const response = await fetch(path);
+      if (!response.ok && !/^data:image\//i.test(path)) {
+        throw new Error(`Falha ao carregar mídia: ${response.status}`);
+      }
+      blob = await response.blob();
+    } else {
+      const { data, error } = await window.LuriaStorage.download("flashcard_images", path);
+      if (error) throw error;
+      blob = data;
+    }
 
     const bitmap = await createImageBitmap(blob);
     const maxWidth = 1000;
