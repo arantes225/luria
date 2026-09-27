@@ -1053,7 +1053,7 @@ body[data-page="trabalho"] *{
 body[data-dashboard-layout="5"] .dl5-bottom > .dl5-card{min-height:0;overflow:hidden}
 
 
-/* Dashboard 5 — sobe o conjunto inteiro e preserva a faixa inferior. */
+/* Dashboard 5 — ajuste fino do topo e encaixe exato da faixa inferior. */
 body[data-dashboard-layout="5"] .topbar{
   height:46px!important;
   min-height:46px!important;
@@ -1062,22 +1062,54 @@ body[data-dashboard-layout="5"] .topbar{
   margin:0!important;
 }
 body[data-dashboard-layout="5"] #dashboard-alternative{
-  transform:translateY(-18px);
+  transform:translateY(-14px);
 }
 body[data-dashboard-layout="5"] .dl5-shell{
   padding-top:0!important;
-  padding-bottom:24px!important;
-  grid-template-rows:auto auto minmax(0,.88fr) minmax(0,.92fr)!important;
+  padding-bottom:18px!important;
+  grid-template-rows:auto auto minmax(0,.84fr) minmax(164px,.96fr)!important;
 }
 body[data-dashboard-layout="5"] .dl5-hero{
-  padding:2px 2px 8px!important;
+  padding:6px 2px 8px!important;
 }
 body[data-dashboard-layout="5"] .dl5-metrics{
-  margin-bottom:8px!important;
+  margin-bottom:7px!important;
 }
 body[data-dashboard-layout="5"] .dl5-mid{
-  margin-bottom:8px!important;
+  margin-bottom:7px!important;
 }
 body[data-dashboard-layout="5"] .dl5-bottom{
-  padding-bottom:2px;
+  min-height:0!important;
+  height:100%!important;
+  padding-bottom:0!important;
+  align-items:stretch!important;
+}
+body[data-dashboard-layout="5"] .dl5-bottom > .dl5-card{
+  min-height:0!important;
+  height:100%!important;
+  overflow:hidden!important;
+}
+body[data-dashboard-layout="5"] .dl5-sims,
+body[data-dashboard-layout="5"] .dl5-cat{
+  display:grid!important;
+  grid-template-rows:44px minmax(0,1fr)!important;
+}
+body[data-dashboard-layout="5"] .dl5-bottom .dl5-title{
+  min-height:44px!important;
+  height:44px!important;
+}
+body[data-dashboard-layout="5"] .dl5-sim-list{
+  min-height:0!important;
+  overflow:hidden!important;
+}
+body[data-dashboard-layout="5"] .dl5-sim-list > a{
+  min-height:0!important;
+  padding-top:7px!important;
+  padding-bottom:7px!important;
+}
+body[data-dashboard-layout="5"] .dl5-cat-body{
+  min-height:0!important;
+  overflow:hidden!important;
+  padding-top:10px!important;
+  padding-bottom:10px!important;
 }
