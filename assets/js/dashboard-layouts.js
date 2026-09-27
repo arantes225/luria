@@ -11,6 +11,7 @@
   let current = "1";
   let selectedDate = new Date();
   let frame = 0;
+  let dailyChallengeAccuracy = null;
 
   const escape = (value) => String(value ?? "")
     .replaceAll("&", "&amp;").replaceAll("<", "&lt;")
@@ -49,7 +50,8 @@
       ccqArea: window.luriaDashboardCcq?.area || "",
       areas: window.luriaDashboardAreaSummary || [],
       questions: number(text("metric-questions", "0")),
-      simulationsCount: number(text("metric-simulations", "0"))
+      simulationsCount: number(text("metric-simulations", "0")),
+      challengeAccuracy: dailyChallengeAccuracy
     };
   };
 
@@ -168,6 +170,33 @@
     return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-progress dl-overview">${heading(icon("calendar"), "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section>${streak(data)}${cat(data)}<section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section><section class="dl-card dl-performance">${heading(icon("chart"), "Meu desempenho", "/estatisticas/")}<div class="dl-performance-grid"><a href="/cronograma/"><span>${icon("book")}</span><small>Aulas</small><strong>${data.done}</strong></a><a href="/questoes-simulados/"><span>${icon("file")}</span><small>Simulados</small><strong>${escape(data.simulations)}</strong></a><a href="/flashcards/"><span>${icon("cards")}</span><small>Flashcards</small><strong>${data.flashcards}</strong></a><a href="/estatisticas/"><span>${icon("refresh")}</span><small>Retenção</small><strong>${escape(data.retention)}</strong></a></div>${areas(data)}</section><section class="dl-card dl-shortcuts">${heading(icon("notebook"), "Meus cadernos", "/caderno/")}<div><a href="/caderno/">Anotações →</a><a href="/caderno-erros/">Caderno de erros →</a></div></section><section class="dl-card dl-shortcuts">${heading(icon("calendar"), "Meus flashcards", "/flashcards/")}<p>${data.flashcards} cartão${data.flashcards === 1 ? "" : "ões"} pendente${data.flashcards === 1 ? "" : "s"}</p><a class="dl-primary" href="/flashcards/">Iniciar revisão</a></section><section class="dl-card dl-shortcuts">${heading(icon("simulation"), "Meus simulados", "/questoes-simulados/")}<p>Última precisão: ${escape(data.simulations)}</p><a class="dl-primary" href="/questoes-simulados/">Ver simulados</a></section></div>`;
   }
 
+  async function loadDailyChallengeAccuracy() {
+    try {
+      const sb = window.supabaseClient;
+      if (!sb) return;
+      let userId = window.docmapUser?.id || null;
+      if (!userId) {
+        const { data: authData } = await sb.auth.getUser();
+        userId = authData?.user?.id || null;
+      }
+      if (!userId) return;
+
+      const { data, error } = await sb
+        .from("daily_challenge_progress")
+        .select("status")
+        .eq("user_id", userId)
+        .in("status", ["won", "lost"]);
+
+      if (error) throw error;
+      const completed = Array.isArray(data) ? data.length : 0;
+      const wins = Array.isArray(data) ? data.filter((row) => row.status === "won").length : 0;
+      dailyChallengeAccuracy = completed ? Math.round((wins / completed) * 100) : null;
+      schedule();
+    } catch (error) {
+      console.warn("Dashboard: não foi possível carregar a taxa de acerto do Desafio Diário.", error);
+    }
+  }
+
   function layout4(data) {
     const summaryMetrics = [
       ["calendar", "Horas de aula", data.hours, "/estatisticas/"],
@@ -175,7 +204,9 @@
       ["file", "Simulados", data.simulationsCount || data.simulations || "—", "/questoes-simulados/"],
       ["cards", "Flashcards pendentes", String(data.flashcards), "/flashcards/"]
     ];
-    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon dl-challenge-flame">${streakVisual(data.streak)}</span><span class="dl-challenge-copy"><small>Ofensiva do desafio</small><strong>${data.streak} dia${data.streak === 1 ? "" : "s"}</strong><em>Manter ofensiva ›</em></span></a></div><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
+    const challengeValue = Number.isFinite(data.challengeAccuracy) ? `${data.challengeAccuracy}%` : "Novo";
+    const challengeCaption = Number.isFinite(data.challengeAccuracy) ? "taxa de acerto ›" : "Jogar hoje ›";
+    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon">${icon("target")}</span><span class="dl-challenge-copy"><small>Desafio diário</small><strong>${escape(challengeValue)}</strong><em>${escape(challengeCaption)}</em></span></a></div><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
   }
 
 
@@ -428,7 +459,8 @@
     schedule();
   });
   window.addEventListener("luria:dashboard-data", schedule);
-  window.addEventListener("docmap:ready", () => { apply(); enhanceShell(); }, { once: true });
+  window.addEventListener("docmap:ready", () => { apply(); enhanceShell(); loadDailyChallengeAccuracy(); }, { once: true });
   apply();
   enhanceShell();
+  loadDailyChallengeAccuracy();
 })();
