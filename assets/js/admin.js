@@ -2207,7 +2207,7 @@
         const flow = Array.isArray(state.qfBlockFlow)
           ? state.qfBlockFlow.find(x => Number(x.batch_number) === Number(batch.batch_number) && Number(x.block_number) === n)
           : null;
-        const independentChunkStage = ["perplexity_initial","perplexity_reaudit"].includes(
+        const independentChunkStage = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(
           String(blockAction?.next?.next_stage || "")
         );
 
