@@ -566,7 +566,7 @@
       if(!step) return [];
       return (Array.isArray(step.options)?step.options:[]).map((opt,index)=>({
         id:String(opt.id||`option_${index+1}`),
-        group:"Sua resposta",
+        group:"O que você responderia?",
         label:String(opt.label||opt.text||"Opção"),
         text:String(opt.label||opt.text||"Opção"),
         correct:opt.correct===true,
@@ -631,13 +631,14 @@
     const answeredTurn=state.phoneTurn+1;
     const specialistIndex=answeredTurn*2-1;
     const requesterIndex=answeredTurn*2;
-    const verdict=opt.correct ? "Correto." : "Não é a melhor resposta.";
+    const verdict=opt.correct ? "Isso." : "Quase — essa não é a melhor resposta.";
     const explanation=String(step.explanation||"").trim();
+    const bridge=String(step.bridge||"").trim();
     const nextStep=flow[answeredTurn];
     const debrief=state.phoneCase?.debrief||{};
     let reply=[verdict,explanation].filter(Boolean).join(" ");
     if(nextStep?.prompt){
-      reply += `\n\n${nextStep.prompt}`;
+      reply += [bridge,String(nextStep.prompt||"").trim()].filter(Boolean).map(text=>"\n\n"+text).join("");
     }else{
       const summary=String(debrief.summary||"Boa. Você concluiu esta aula.").trim();
       const sourceName=String(debrief.source_name||"").trim();
