@@ -182,19 +182,24 @@ function activityCanMove(item) {
   return item.movable === true;
 }
 
-function buildAmbientacaoUrl(item) {
-  const params = new URLSearchParams({
-    kind: item.kind,
-    date: item.activity_date,
-    title: item.title || "Atividade"
-  });
+function buildStudyStartUrl(item) {
+  const id = item.item_id ? encodeURIComponent(item.item_id) : "";
 
-  if (item.item_id) params.set("item_id", item.item_id);
-  if (item.area) params.set("area", item.area);
-  if (item.materia) params.set("materia", item.materia);
-  if (item.subtitle) params.set("subtitle", item.subtitle);
+  if (item.kind === "flashcards_batch") {
+    return "/flashcards/";
+  }
 
-  return `/ambientacao/?${params.toString()}`;
+  if (item.kind === "errors_batch") {
+    return "/caderno-erros/";
+  }
+
+  if (item.kind === "lesson" || item.kind === "subject_review") {
+    return id
+      ? `/caderno/?topic_id=${id}&view=editor`
+      : "/caderno/";
+  }
+
+  return "/dashboard/";
 }
 
 function escapeDashboardHtml(value) {
@@ -215,7 +220,7 @@ function renderActivityCard(item) {
 
   if (canStart) {
     actions.push(
-      `<a class="agenda-card-action primary-action" href="${escapeDashboardHtml(buildAmbientacaoUrl(item))}">Iniciar</a>`
+      `<a class="agenda-card-action primary-action" href="${escapeDashboardHtml(buildStudyStartUrl(item))}">Iniciar</a>`
     );
   } else if (item.kind === "exam" || item.kind === "registration_deadline") {
     const examUrl =
