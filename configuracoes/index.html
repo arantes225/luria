@@ -333,7 +333,7 @@
         grid-template-columns: 1fr;
       }
     }
-  
+
     .profile-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -438,7 +438,7 @@
       }
     }
 
-  
+
     .capacity-grid {
       display: grid;
       gap: 10px;
@@ -455,7 +455,9 @@
       font-size: 10px;
       font-weight: 500;
     }
-.error-review-interval-row {
+
+
+    .error-review-interval-row {
       grid-template-columns:
         150px
         repeat(6, minmax(64px, 1fr));
@@ -479,7 +481,7 @@
       }
     }
 
-  
+
     /* Legibilidade ampliada das Configurações */
     .settings-section .setting-row h2{font-size:18px;line-height:1.25}
     .settings-section .setting-row p{font-size:13px;line-height:1.55}
@@ -618,6 +620,7 @@
 
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
+  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=1">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/configuracoes/">
   <script>(function(){try{if(location.pathname.endsWith("/configuracoes.html"))history.replaceState(null,"","/configuracoes/"+location.search+location.hash);}catch(e){}})();</script>
@@ -844,7 +847,7 @@
               <label class="theme-option leila-preview">
                 <input type="radio" name="theme" value="leila-mood">
                 <span>
-                  <strong>Leila Mood</strong>
+                  <strong>Pink Mood</strong>
                   <small>tons de rosa</small>
                 </span>
               </label>
@@ -852,7 +855,44 @@
 
             <div id="theme-status" class="inline-status"></div>
           </article>
-<article class="setting-row target-exams-setting">
+
+          <article class="setting-row dashboard-layout-setting">
+            <div>
+              <h2>Layout do dashboard</h2>
+              <p>Escolha como os seus dados aparecem na página inicial.</p>
+            </div>
+            <fieldset id="dashboard-layout-options" class="dashboard-layout-options">
+              <legend class="sr-only">Escolha o layout do dashboard</legend>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="old">
+                <span class="dashboard-layout-choice-body dashboard-layout-old-preview">
+                  <span class="dashboard-layout-old-icon" aria-hidden="true">▦</span>
+                  <strong>Opção antiga</strong><small>Layout atual do LURIA</small>
+                </span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="1">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-1.webp" alt="Prévia da agenda em destaque" loading="lazy"><strong>Opção 1 · Agenda</strong><small>Dia em primeiro plano</small></span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="2">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-2.webp" alt="Prévia dos indicadores em colunas" loading="lazy"><strong>Opção 2 · Indicadores</strong><small>Progresso em colunas</small></span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="3">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-3.webp" alt="Prévia do painel completo" loading="lazy"><strong>Opção 3 · Painel completo</strong><small>Inclui o Pulo do Gato</small></span>
+              </label>
+              <label class="dashboard-layout-choice">
+                <input type="radio" name="dashboard-layout" value="4">
+                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-4.webp" alt="Prévia dos cartões de progresso" loading="lazy"><strong>Opção 4 · Compacto</strong><small>Cartões e próximas atividades</small></span>
+              </label>
+            </fieldset>
+            <div id="dashboard-layout-status" class="inline-status" role="status" aria-live="polite"></div>
+            <a class="dashboard-layout-open" href="/dashboard/">Ver dashboard →</a>
+          </article>
+
+
+          <article class="setting-row target-exams-setting">
             <div>
               <h2>Provas-alvo</h2>
               <p>
@@ -868,7 +908,7 @@
 
             <div class="target-exam-meta">
               <span><strong id="target-exam-count">0/3</strong> selecionadas</span>
-              <span>1ª escolha: 50% · 2ª: 30% · 3ª: 20%</span>
+              <span>Pesos: 1ª 50% · 2ª 30% · 3ª 20%</span>
             </div>
 
             <div class="settings-actions">
@@ -1433,6 +1473,32 @@
             </div>
 
             <div class="security-grid">
+              <div class="security-field full">
+                <span>Face ID / Passkey</span>
+                <div class="security-email" style="display:block;padding:12px;line-height:1.5;">
+                  Use uma Passkey para entrar no PWA com a autenticação do iPhone. No iPhone, o iOS pode usar Face ID para confirmar sua identidade.
+                </div>
+                <div class="settings-actions" style="margin-top:10px;">
+                  <button
+                    id="register-passkey"
+                    class="button primary"
+                    type="button"
+                  >
+                    Ativar Face ID / Passkey
+                  </button>
+                </div>
+                <div
+                  id="passkey-list"
+                  class="settings-note"
+                  style="margin-top:10px;"
+                ></div>
+                <span
+                  id="passkey-status"
+                  class="settings-save-status"
+                  aria-live="polite"
+                ></span>
+              </div>
+
               <label class="security-field full">
                 <span>E-mail da conta</span>
                 <div
@@ -1524,13 +1590,14 @@
   </div>
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="assets/js/supabase.js"></script>
+  <script src="assets/js/supabase.js?v=auth4"></script>
   <script src="assets/js/app.js?v=17.8-streak"></script>
-  <script src="assets/js/study-mode.js?v=12.1"></script>
+  <script src="assets/js/study-mode.js?v=14.0"></script>
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/configuracoes.js?v=13.3-auth"></script>
-  <script defer src="assets/js/pwa.js?v=3"></script>
+  <script src="assets/js/dashboard-layout-settings.js?v=1"></script>
+  <script defer src="assets/js/pwa.js?v=5"></script>
 </body>
 </html>
