@@ -2227,12 +2227,12 @@
               <small>${esc(blockAction.phase || "Etapa atual")}</small>
               ${independentChunkStage ? `
                 <div class="admin-qf-perplexity-manual-actions">
-                  <button class="button primary" type="button" data-qf-copy-json-part="${Number(batch.batch_number)}:${n}:next">1 · Copiar próxima parte · até 50</button>
+                  <button class="button primary" type="button" data-qf-copy-json-part="${Number(batch.batch_number)}:${n}:next">1 · Copiar bloco · até 200</button>
                   <button class="button secondary" type="button" data-qf-paste-stage-json="${Number(batch.batch_number)}:${n}">2 · Colar JSON de resposta</button>
                 </div>
                 <small class="admin-qf-perplexity-manual-help">${blockAction?.next?.next_stage === "blind_resolution"
                   ? "O botão busca somente versões ainda sem resolução cega e copia prompt + JSON cegado. Gabarito, explicações, fontes e pareceres são removidos antes de ir para a área de transferência."
-                  : "O botão busca somente itens ainda pendentes desta etapa e copia, em um único pacote, o prompt + até 50 questões atuais. Depois de importar a resposta, clique novamente para receber a próxima parte."}</small>
+                  : "O botão busca somente itens ainda pendentes desta etapa e copia, em um único pacote, o prompt + todas as questões pendentes do bloco, em um único pacote de até 200. Não há subdivisão de 50 em 50."}</small>
               ` : blockAction.provider ? `
                 <button class="button primary" type="button" data-qf-copy-block-stage="${Number(batch.batch_number)}:${n}">Prompt</button>
                 <button class="button secondary" type="button" data-qf-block-ai="${Number(batch.batch_number)}:${n}">${esc("Copiar + abrir " + blockAction.providerLabel)}</button>
@@ -2919,7 +2919,7 @@
             <span>Próximo prompt</span>
             <div class="admin-qf-tracker-prompt-actions">
               ${["perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
-                ? `<button class="button primary" type="button" data-qf-copy-block-stage="${Number(block.batch_number||0)}:${Number(block.block_number||0)}">Próxima parte · até 50</button>`
+                ? `<button class="button primary" type="button" data-qf-copy-block-stage="${Number(block.batch_number||0)}:${Number(block.block_number||0)}">Copiar bloco · até 200</button>`
                 : (prompt ? `<button class="button primary admin-qf-copy-inline" type="button" data-inline-prompt="${esc(pid)}">Prompt</button>` : "")}
             </div>
             ${prompt && !["perplexity_initial","perplexity_reaudit"].includes(String(block.next_stage || ""))
@@ -3544,10 +3544,10 @@
     const action = questionFactoryBlockAction(batchNumber, blockNumber);
     const next = action.next;
     const stage = String(next?.next_stage || "");
-    const original = button?.textContent || "Copiar próxima parte · até 50";
+    const original = button?.textContent || "Copiar bloco · até 200";
 
     if (!next || !questionFactoryIndependentChunkStage(stage)) {
-      window.alert("Esta etapa não usa o pacote independente em partes de até 50.");
+      window.alert("Esta etapa usa um único pacote independente do bloco, com até 200 questões.");
       return;
     }
 
@@ -3575,7 +3575,7 @@
         Number(a.block_sequence_no ?? a.sequence_no ?? 0) - Number(b.block_sequence_no ?? b.sequence_no ?? 0)
       );
       const pending = ordered.filter(question => questionFactoryPendingForStage(question, stage));
-      const selected = pending.slice(0, 50);
+      const selected = pending.slice(0, 200);
 
       if (!selected.length) {
         if (button) button.textContent = "Sem pendências nesta etapa";
@@ -3609,12 +3609,12 @@
         version_manifest: selectedManifest,
         questions: copiedQuestions,
         question_count: copiedQuestions.length,
-        input_chunk: {
-          mode: "next_pending",
-          requested_max: 50,
+        input_package: {
+          mode: "block_pending_up_to_200",
+          requested_max: 200,
           delivered_count: copiedQuestions.length,
           pending_before_copy: pending.length,
-          pending_after_this_chunk_if_imported: Math.max(0, pending.length - copiedQuestions.length),
+          pending_after_this_package_if_imported: Math.max(0, pending.length - copiedQuestions.length),
           expected_review_count: copiedQuestions.length
         }
       };
@@ -3645,7 +3645,7 @@
       }
     } catch (error) {
       console.warn("Falha ao preparar pacote da etapa:", error);
-      window.alert(error?.message || "Não foi possível preparar a próxima parte da etapa.");
+      window.alert(error?.message || "Não foi possível preparar o pacote de até 200 questões desta etapa.");
       if (button) button.textContent = "Falha ao copiar";
       setTimeout(() => { if (button) button.textContent = original; }, 1800);
     } finally {
