@@ -1377,3 +1377,72 @@ body[data-dashboard-layout="5"] .dl5-next .dl5-start{
   margin:2px 14px 10px!important;
   font-size:10.5px!important;
 }
+
+
+/* Dashboard 5 — teste visual Ofensiva: fogo grande, contagem abaixo e título limpo. */
+body[data-dashboard-layout="5"] .dl5-streak-stack{
+  min-height:0!important;
+  display:grid!important;
+  justify-items:center!important;
+  align-content:center!important;
+  gap:4px!important;
+  padding:4px 10px 0!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl5-streak-hero{
+  width:74px!important;
+  height:74px!important;
+  display:grid!important;
+  place-items:center!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl-streak-visual{
+  width:70px!important;
+  height:70px!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl-streak-flame{
+  --sidebar-flame-size:54px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl-streak-visual[data-streak-tier="2"]{
+  --sidebar-flame-size:58px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl-streak-visual[data-streak-tier="3"]{
+  --sidebar-flame-size:62px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl-streak-visual[data-streak-tier="4"]{
+  --sidebar-flame-size:66px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl-streak-visual[data-streak-tier="5"]{
+  --sidebar-flame-size:69px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl-streak-visual[data-streak-tier="6"]{
+  --sidebar-flame-size:72px;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl5-streak-copy{
+  display:block!important;
+  text-align:center!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-stack .dl5-streak-copy strong{
+  font-size:14px!important;
+  line-height:1.1!important;
+  font-weight:850!important;
+}
+body[data-dashboard-layout="5"] .dl5-title-flame{
+  width:20px!important;
+  height:20px!important;
+  display:grid!important;
+  place-items:center!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  padding:0!important;
+  color:var(--accent)!important;
+}
+body[data-dashboard-layout="5"] .dl5-title-flame .dl-icon{
+  width:20px!important;
+  height:20px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body[data-dashboard-layout="5"] .dl5-streak-main{
+  display:none!important;
+}
