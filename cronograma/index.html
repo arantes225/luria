@@ -2197,6 +2197,14 @@
   /* Adição/importação de aulas vive em Configurações > Cronograma. */
   body:not(.schedule-settings-embed) .schedule-add-hub,
   body:not(.schedule-settings-embed) .schedule-add-section { display:none!important; }
+
+  /* Nova Atividade: exibe o compositor manual dentro do Cronograma. */
+  body:not(.schedule-settings-embed).activity-composer-open .schedule-add-hub{
+    display:block!important;
+  }
+  body:not(.schedule-settings-embed).activity-composer-open .schedule-add-section.active{
+    display:block!important;
+  }
   html.schedule-settings-embed-root .sidebar,
   html.schedule-settings-embed-root #sidebar-backdrop,
   html.schedule-settings-embed-root .topbar,
@@ -3395,7 +3403,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=25-shared-icons"></script>
+  <script src="assets/js/cronograma.js?v=26-new-activity-fix"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
