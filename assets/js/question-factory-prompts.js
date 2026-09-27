@@ -42,7 +42,7 @@ Estilo vem de cadernos oficiais do processo-alvo; ciência vem de fontes cientí
 Não inventar documento, edição, URL, seção, dados de corpus ou característica de banca. Falta de acesso = SOURCE_VERIFICATION_PENDING; falta de corpus = NEEDS_MORE_PRIMARY_STYLE_DATA; ambas impedem declarar aprovação correspondente.
 Usar fonte atual aplicável à pergunta e ao cenário brasileiro. Fonte internacional adequada não perde pontos por nacionalidade. Conflitos entre recomendações exigem contexto explícito que assegure resposta única.
 CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE >=84/100 na saída bruta inédita, antes de correções; não confundir com style_score.
-QUESTÃO FINAL: quality_score >=97/100, style >=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
+QUESTÃO FINAL: quality_score >=95/100, style >=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
 Feedback sobre distratores, clareza e segurança pode melhorar regras gerais; só alterar a identidade da banca com evidência primária documentada.
 MODOS DE EXECUÇÃO DAS ETAPAS CHATGPT:
 - MODO OPERACIONAL POR ENDEREÇO: quando o prompt trouxer ENDEREÇO OPERACIONAL com lote/bloco concretos e instruir acesso ao Admin/Supabase autorizado, a FONTE DE VERDADE é a versão ATUAL lida nesse endereço. O ChatGPT deve entrar no workspace indicado, localizar exatamente batch_code + block_code e trabalhar somente nas questões/item_version vigentes e pendentes daquela etapa.
@@ -145,8 +145,9 @@ Somente perfis ainda não aprovados devem registrar edição, URL oficial, IDs/p
 - IGNORE MEMÓRIA e qualquer contexto/revisão anterior.
 - Leia apenas comando + alternativas da versão atual; não consulte gabarito, explicações ou pareceres antes de registrar independent_answer.
 - Grave SOMENTE o registro de resolução cega separado para question_id + item_version.
+- A resolução cega DEVE atribuir quality_score de 0 a 100 usando apenas enunciado + alternativas: clareza do comando, existência de única melhor resposta, qualidade/competição dos distratores e ausência de pistas formais.
 - PROIBIDO alterar a questão principal.
-- Depois de registrada, a resposta cega é imutável para a mesma versão.`,
+- Depois de registrada, resposta e nota cegas são imutáveis para a mesma versão.`,
       perplexity_initial: `PERSISTÊNCIA DESTA ETAPA — CHATGPT / REVISÃO INDEPENDENTE 2:
 - IGNORE MEMÓRIA, parecer da revisão 1, scores, status e correções anteriores.
 - Trabalhe na versão atual e confronte o gabarito somente DEPOIS de preservar a resposta cega.
@@ -390,13 +391,16 @@ SAÍDA OBRIGATÓRIA
 - Um review para CADA questão processada.
 - Preserve exatamente question_id + item_version/version da versão atual.
 - independent_answer = A | B | C | D | null.
+- quality_score = 0–100 e é OBRIGATÓRIO.
+- Rubrica cega: clareza/solubilidade 25; single-best-answer 30; distratores competitivos 25; ausência de surface guess/pistas formais 20.
 - ambiguity e single_best_answer devem refletir a resolução independente.
 - reason deve registrar de forma curta o raciocínio e o dado decisivo.
+- Corte operacional posterior: >=95 pode seguir para o lote se a revisão independente também for >=95; 50–94,99 volta para nova revisão; <50 é excluída do pipeline ativo.
 - stage_metrics.total_count deve ser a quantidade REAL processada nesta resposta.
 - Nunca deixe reviews[] vazio quando houver questões pendentes acessíveis.
 
 FORMATO DE SAÍDA
-${stringify({...context(item,ctx),review_stage:'blind_resolution',reviewer:'ChatGPT',reviews:[{question_id:'SUBSTITUIR_PELO_ID_REAL',item_version:1,independent_answer:null,ambiguity:false,single_best_answer:false,reason:'Registrar raciocínio curto e dado decisivo; null apenas se realmente irresolúvel.'}],stage_metrics:{exam_style:item.exam_style||null,batch_number:ctx.batch_number??null,batch_code:ctx.batch_code||null,block_number:ctx.block_number??null,block_code:ctx.block_code||null,stage:'blind_resolution',provider:'ChatGPT',run_label:null,total_count:0,approved_count:0,needs_revision_count:0,rejected_count:0,hard_reject_count:0,agreement_count:0,score:null,status:'completed',metrics:{},notes:''}})}
+${stringify({...context(item,ctx),review_stage:'blind_resolution',reviewer:'ChatGPT',reviews:[{question_id:'SUBSTITUIR_PELO_ID_REAL',item_version:1,independent_answer:null,quality_score:0,component_scores:{clarity_solvability:0,single_best_answer:0,distractor_competition:0,no_surface_clues:0},ambiguity:false,single_best_answer:false,reason:'Registrar raciocínio curto e dado decisivo; null apenas se realmente irresolúvel.'}],stage_metrics:{exam_style:item.exam_style||null,batch_number:ctx.batch_number??null,batch_code:ctx.batch_code||null,block_number:ctx.block_number??null,block_code:ctx.block_code||null,stage:'blind_resolution',provider:'ChatGPT',run_label:null,total_count:0,approved_count:0,needs_revision_count:0,rejected_count:0,hard_reject_count:0,agreement_count:0,score:null,status:'completed',metrics:{},notes:''}})}
 
 IMPORTANTE: o objeto acima é SOMENTE o formato de saída. Não trate SUBSTITUIR_PELO_ID_REAL como questão real. Busque os IDs reais no endereço operacional deste bloco antes de responder.`;
     if(['chatgpt_initial','perplexity_initial','perplexity_reaudit'].includes(stage))return `${common}
@@ -411,7 +415,7 @@ Antes de aprovar cada item, validar também:
 Falha em qualquer um desses quatro componentes = needs_revision; ausência, genericidade ou explicação vazia = HARD REJECT 10.
 ${stage==='chatgpt_initial'
 ? `Na etapa ChatGPT inicial, MODIFICAR imediatamente itens needs_revision/rejected com CORREÇÃO RÍGIDA: não fazer remendo cosmético, não suavizar achado do revisor e não aprovar por aproximação. Corrigir a causa-raiz de cada falha apontada, inclusive reescrevendo completamente enunciado, alternativas, explicações ou Pulo do Gato quando necessário. Depois da correção, submeter a nova versão a TODOS os hard rejects e gates como se fosse uma questão inédita. Se qualquer falha permanecer, corrigir novamente antes de marcar approved. Devolver patch completo apenas dos campos necessários, aplicar mentalmente a nova versão e reavaliá-la antes da saída. Campos permitidos: ${editable.join(', ')}. O JSON deve trazer initial_reviews, autocorrections e final_reviews. Cada autocorrection deve conter question_id, expected_version, new_version=expected_version+1, original_status, reason e patch. final_reviews deve avaliar a versão NOVA já corrigida. Se não houver correção segura possível, manter final_status rejected/needs_revision e explicar por quê.`
-: `Não modificar itens. Para todo needs_revision/rejected, propor substituições completas APENAS de campos necessários em proposed_change.exact_replacement; não inventar correção quando faltarem evidências. Campos permitidos: ${editable.join(', ')}. IMPORTANTE: proposed_change é parecer, não patch executável nesta etapa. Persistir o parecer em registro separado; nunca escrever essas propostas na questão principal.`}
+: `Não modificar itens nesta revisão independente. quality_score é obrigatório e deve refletir a rubrica completa. O destino é AUTOMÁTICO, usando a MENOR nota entre esta revisão e a resolução cega da mesma versão: >=95 = direto para o lote; 50–94,99 = nova revisão adversarial + autocorreção; <50 = exclusão do pipeline ativo com arquivamento em Questões ruins. proposed_change pode registrar recomendação editorial, mas não existe mais etapa obrigatória de adjudicação/reauditoria para decidir o destino. Campos permitidos: ${editable.join(', ')}.`}
 Informar cobertura; trabalhar em partes identificadas se necessário, sem marcar bloco completo até revisar todos os IDs. Recalcular soma/estatísticas por código quando disponível. Números no exemplo são tetos, não notas pré-atribuídas.
 Ao final, emitir obrigatoriamente “RELATÓRIO QUESTÃO POR QUESTÃO”, preservando a ordem dos IDs recebidos. Exemplo:
 42 — REJEITADA — motivo: hard reject por duas respostas defensáveis.
@@ -508,7 +512,8 @@ EXECUÇÃO:
 7. Fonte só pode ser VERIFIED se realmente checada nesta execução.
 8. Não altere a questão principal nesta etapa. proposed_change é parecer separado.
 9. Persista o resultado exclusivamente pelo importador/RPC controlado da Fábrica. Nunca faça INSERT/UPDATE direto em questão/review.
-10. Só marque approved se todos os hard gates passarem.
+10. Atribua quality_score de 0 a 100. O backend decide o destino pela MENOR nota entre resolução cega e revisão independente: >=95 lote; 50–94,99 nova revisão; <50 exclusão.
+11. Use status coerente com a nota desta etapa: approved >=95; needs_revision entre 50 e 94,99; rejected <50.
 
 ${segment(item,stage,ctx)}
 
