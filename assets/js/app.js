@@ -890,21 +890,25 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">▦</span><span>Cronograma</span>
         </a>
 
-        <div class="nav-group" id="study-nav-group">
-          <button class="nav-group-label" id="study-nav-toggle" type="button" aria-expanded="true" aria-controls="study-nav-submenu">
-            <span class="nav-icon">◉</span>
-            <span class="nav-label-text">Estudar</span>
-            <span class="nav-group-chevron" aria-hidden="true">⌄</span>
-          </button>
+        <a class="nav-link ${page === "caderno" ? "active" : ""}" href="/caderno/">
+          <span class="nav-icon">▱</span><span>Caderno</span>
+        </a>
 
-          <div class="nav-submenu" id="study-nav-submenu">
-            <a class="nav-sublink ${page === "caderno" ? "active" : ""}" href="/caderno/">Caderno</a>
-            <a class="nav-sublink ${page === "flashcards" ? "active" : ""}" href="/flashcards/">Flashcards</a>
-            <a class="nav-sublink ${page === "erros" ? "active" : ""}" href="/caderno-erros/">Caderno de erros</a>
-            <a class="nav-sublink ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">Questões e Simulados</a>
-            <a class="nav-sublink ${page === "plantao" ? "active" : ""}" href="/plantao/">Plantão</a>
-          </div>
-        </div>
+        <a class="nav-link ${page === "flashcards" ? "active" : ""}" href="/flashcards/">
+          <span class="nav-icon">▣</span><span>Flashcards</span>
+        </a>
+
+        <a class="nav-link ${page === "erros" ? "active" : ""}" href="/caderno-erros/">
+          <span class="nav-icon">!</span><span>Caderno de erros</span>
+        </a>
+
+        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
+          <span class="nav-icon">?</span><span>Questões e Simulados</span>
+        </a>
+
+        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/">
+          <span class="nav-icon">✚</span><span>Plantão</span>
+        </a>
 
         <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
           <span class="nav-icon">✦</span><span>Desafio Diário</span>
