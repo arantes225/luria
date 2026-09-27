@@ -219,8 +219,10 @@
 
   function dashboard5ActivityHref(item) {
     if (!item) return "/cronograma/";
+    if (typeof activityCanStart === "function" && activityCanStart(item)) {
+      return buildAmbientacaoUrl(item);
+    }
     if (item.kind === "exam" || item.kind === "registration_deadline") return "/editais/";
-    if (item.kind === "lesson") return "/caderno/";
     return "/cronograma/";
   }
 
