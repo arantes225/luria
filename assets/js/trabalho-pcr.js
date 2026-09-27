@@ -5,6 +5,7 @@
   let selectedRhythm = null;
   let shockable = false;
   let shockCount = 0;
+  let adultAmiodaroneDoses = 0;
   let metronomeOn = true;
   let audioReady = false;
   let audioCtx = null;
@@ -146,8 +147,8 @@
       },
       {
         name: "Amiodarona",
-        dose: shockCount >= 2 ? "150 mg IV/IO" : "300 mg IV/IO",
-        note: shockCount >= 2 ? "Segunda dose para FV/TV sem pulso refratária." : "Primeira dose para FV/TV sem pulso refratária.",
+        dose: adultAmiodaroneDoses >= 1 ? "150 mg IV/IO" : "300 mg IV/IO",
+        note: adultAmiodaroneDoses >= 1 ? "2ª dose: 150 mg para FV/TV sem pulso refratária." : "1ª dose: 300 mg para FV/TV sem pulso refratária.",
         action: "Amiodarona"
       },
       {
@@ -182,6 +183,15 @@
       btn.textContent = "Administrar / registrar";
       btn.addEventListener("click", () => {
         addLog(drug.action, drug.dose);
+        if (mode === "adult" && drug.action === "Amiodarona") {
+          if (adultAmiodaroneDoses === 0) {
+            adultAmiodaroneDoses = 1;
+            renderDrugs();
+          } else if (adultAmiodaroneDoses === 1) {
+            adultAmiodaroneDoses = 2;
+            renderDrugs();
+          }
+        }
       });
 
       card.append(header, p, btn);
