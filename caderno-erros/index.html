@@ -31,7 +31,7 @@
 
   <link
     rel="stylesheet"
-    href="assets/css/caderno-erros.css?v=15.2"
+    href="assets/css/caderno-erros.css?v=16.0"
   >
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -156,10 +156,24 @@
           </div>
         </section>
 
-        <section class="panel error-review-panel error-section" data-error-section="review">
-          <div class="panel-header error-review-header"><div class="error-review-heading"><span class="error-review-kicker">Revisão</span><h2 id="error-review-title">Caderno de Erros</h2><p id="error-review-copy">Leia o Pulo do Gato. Abra os detalhes se precisar rever a questão.</p></div><button class="button secondary" type="button" data-error-home-back>Voltar à biblioteca</button><div class="error-review-tools"><div id="error-area-filter-wrap" class="error-area-filter"><span>Revisar por área</span><div class="error-area-picker"><button id="error-area-filter-toggle" class="error-area-filter-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="error-area-filter-label">Todas as áreas</span><span class="error-area-filter-chevron" aria-hidden="true">⌄</span></button><div id="error-area-filter-menu" class="error-area-filter-menu" role="listbox" hidden></div><select id="error-area-filter" class="error-area-filter-native" data-luria-general-area-select data-blank-label="Todas as áreas" tabindex="-1" aria-hidden="true"><option value="">Todas as áreas</option></select></div></div><div class="error-progress"><strong id="error-position">0 / 0</strong><small id="error-progress-copy">carregando...</small></div></div></div>
+        <section class="error-review-panel error-section" data-error-section="review">
+          <div class="error-review-topline">
+            <button class="error-review-back" type="button" data-error-home-back>← Caderno de Erros</button>
+            <div class="error-review-progress"><strong id="error-position">0 / 0</strong><span id="error-progress-copy">carregando...</span></div>
+          </div>
           <div id="error-empty" class="error-empty" hidden><span id="error-empty-copy">Nenhum Pulo do Gato pendente nesta seleção.</span></div>
-          <div id="error-stage" class="error-stage" hidden></div>
+          <div class="error-review-workspace">
+            <aside class="error-review-queue">
+              <div class="error-review-column-head"><div><span>↻</span><h2>Próximos erros</h2></div><span id="error-review-queue-count" class="badge accent">0</span></div>
+              <p>Continue pela sua fila de revisão.</p>
+              <div id="error-review-queue-list" class="error-review-queue-list"></div>
+            </aside>
+            <main id="error-stage" class="error-stage error-review-focus" hidden></main>
+            <aside class="error-review-metrics">
+              <div class="error-review-column-head"><div><span>▥</span><h2>Métricas da revisão</h2></div></div>
+              <div id="error-review-session-metrics" class="error-review-session-metrics"></div>
+            </aside>
+          </div>
         </section>
 
       </div>
@@ -344,7 +358,7 @@
   <script src="assets/js/app.js?v=17.28-theme-switch"></script>
   <script src="assets/js/study-mode.js?v=13.0"></script>
 
-  <script src="assets/js/caderno-erros.js?v=15.2"></script>
+  <script src="assets/js/caderno-erros.js?v=16.0"></script>
 
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
