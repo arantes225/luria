@@ -5094,6 +5094,34 @@ function renderErrorHomeExtras(){
       <div class="error-metric-areas">${areas.map(([name,n])=>`<div><span>${errorLibraryEscape(name)}</span><i><b style="width:${total?Math.round(n/total*100):0}%"></b></i><em>${total?Math.round(n/total*100):0}%</em></div>`).join("")}</div>`;
   }
 }
+async function deleteErrorNotebook(area,name){
+  const rows=errorLibraryItems.filter(i=>(i.area||"Sem área")===area && (i.materia||i.theme||"Geral")===name);
+  if(!rows.length)return;
+  const ok=await window.LuriaDialog.confirm(`Excluir o caderno “${name}” inteiro, com ${rows.length} erro${rows.length===1?"":"s"}? Esta ação não pode ser desfeita.`);
+  if(!ok)return;
+  setErrorLibraryStatus("Excluindo caderno...");
+  const ids=rows.map(i=>i.id);
+  const {error}=await errorSb.from("error_notebook").delete().in("id",ids);
+  if(error){setErrorLibraryStatus(`Não foi possível excluir: ${error.message}`,"error");return}
+  const paths=rows.map(i=>i.question_image_path).filter(Boolean);
+  if(paths.length) await window.LuriaStorage.remove("error_images",paths);
+  setErrorLibraryStatus("Caderno excluído.","success");
+  await Promise.all([loadErrorMetrics(),loadErrorAreas(),loadErrorLibrary(),loadErrorQueue()]);
+}
+function editErrorNotebook(area,name){
+  const rows=errorLibraryItems.filter(i=>(i.area||"Sem área")===area && (i.materia||i.theme||"Geral")===name);
+  const select=document.getElementById("error-library-area");if(select)select.value=area;
+  const search=document.getElementById("error-library-search");if(search)search.value=name;
+  renderErrorLibrary();
+  setErrorLibraryStatus(`Caderno “${name}” aberto. Use o menu de cada nota para editar ou excluir.`,"success");
+}
+function reviewErrorNotebook(area,name){
+  errorQueue=errorLibraryItems.filter(i=>(i.area||"Sem área")===area && (i.materia||i.theme||"Geral")===name);
+  errorIndex=0; switchErrorTab("review"); renderCurrentError();
+}
+function closeNotebookMenus(except=null){
+  document.querySelectorAll("[data-error-notebook-menu]").forEach(m=>{if(m.dataset.errorNotebookMenu!==except)m.hidden=true});
+}
 function renderErrorLibrary() {
   const container=document.getElementById("error-library"), empty=document.getElementById("error-library-empty"), count=document.getElementById("error-library-count");
   if(!container||!empty||!count)return;
@@ -5108,15 +5136,23 @@ function renderErrorLibrary() {
     <section class="error-notebook-shelf">
       <div class="error-notebook-shelf-head"><span class="error-area-mark">${errorAreaIcon(area)}</span><div><h3>${errorLibraryEscape(area)}</h3><p>${[...books.values()].reduce((n,v)=>n+v.length,0)} erros em ${books.size} cadernos</p></div></div>
       <div class="error-notebook-grid">${[...books.entries()].map(([name,rows])=>{const reviews=rows.reduce((n,i)=>n+Number(i.review_count||0),0);const due=rows.filter(i=>!i.due_date||i.due_date<=errorTodayISO()).length;const tip=rows.find(i=>i.ccq)?.ccq||"Abra para revisar seus erros.";return `
-        <button class="error-notebook-card" type="button" data-error-notebook="${errorLibraryEscape(area)}||${errorLibraryEscape(name)}">
-          <div class="error-notebook-icon">${errorAreaIcon(area)}</div><span class="error-notebook-more">•••</span>
+        <article class="error-notebook-card" data-error-notebook="${errorLibraryEscape(area)}||${errorLibraryEscape(name)}">
+          <div class="error-notebook-icon">${errorAreaIcon(area)}</div><button class="error-notebook-more" type="button" data-error-notebook-more="${errorLibraryEscape(area)}||${errorLibraryEscape(name)}">•••</button>
+          <div class="error-notebook-menu" data-error-notebook-menu="${errorLibraryEscape(area)}||${errorLibraryEscape(name)}" hidden><button type="button" data-notebook-review>Revisar agora</button><button type="button" data-notebook-edit>Editar notas</button><button type="button" class="danger" data-notebook-delete>Excluir caderno</button></div>
           <strong>${errorLibraryEscape(name)}</strong><p>${errorLibraryEscape(tip)}</p>
           <div class="error-notebook-stats"><span><b>${rows.length}</b> erros</span><span><b>${reviews}</b> revisões</span><span><b>${due}</b> pendentes</span></div>
           <div class="error-notebook-progress"><i style="width:${rows.length?Math.min(100,Math.round((rows.length-due)/rows.length*100)):0}%"></i></div>
-        </button>`}).join("")}</div>
+        </article>`}).join("")}</div>
     </section>`}).join("");
   renderErrorHomeExtras();updateErrorBulkToolbar();
-  container.querySelectorAll("[data-error-notebook]").forEach(button=>button.addEventListener("click",()=>{const [area,name]=button.dataset.errorNotebook.split("||");const select=document.getElementById("error-library-area");if(select)select.value=area;const search=document.getElementById("error-library-search");if(search)search.value=name;renderErrorLibrary()}));
+  container.querySelectorAll("[data-error-notebook-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const key=button.dataset.errorNotebookMore;const menu=container.querySelector(`[data-error-notebook-menu="${CSS.escape(key)}"]`);const opening=menu?.hidden;closeNotebookMenus();if(menu)menu.hidden=!opening}));
+  container.querySelectorAll("[data-error-notebook]").forEach(card=>{
+    const [area,name]=card.dataset.errorNotebook.split("||");
+    card.addEventListener("click",event=>{if(event.target.closest(".error-notebook-menu,.error-notebook-more"))return;editErrorNotebook(area,name)});
+    card.querySelector("[data-notebook-review]")?.addEventListener("click",()=>reviewErrorNotebook(area,name));
+    card.querySelector("[data-notebook-edit]")?.addEventListener("click",()=>editErrorNotebook(area,name));
+    card.querySelector("[data-notebook-delete]")?.addEventListener("click",()=>deleteErrorNotebook(area,name));
+  });
 }
 
 async function loadErrorLibrary() {
