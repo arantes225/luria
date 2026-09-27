@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=3">
+  <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=4">
 </head>
 <body data-page="trabalho_prontuario_rapido">
   <div class="app-shell">
@@ -33,14 +33,14 @@
           <article class="quick-chart-hero">
             <div>
               <h2>Prontuário rápido</h2>
-              <p>Use sempre o mesmo endereço e o mesmo código em qualquer computador, sem abrir sua conta do LURIA naquele dispositivo.</p>
+              <p>Defina um código exclusivo do Prontuário Rápido. Ele vira seu endereço direto para acesso externo, separado do seu código de amizade.</p>
             </div>
-            <a class="quick-chart-create" href="/trabalho/prontuario/" target="_blank" rel="noopener">Abrir página externa</a>
+            <a class="quick-chart-create" href="/trabalho/prontuario/" target="_blank" rel="noopener">Abrir acesso manual</a>
           </article>
 
           <div class="quick-chart-info">
-            <strong>Endereço fixo:</strong>
-            <code id="quick-chart-public-address">/trabalho/prontuario/</code>
+            <strong>Seu endereço:</strong>
+            <code id="quick-chart-public-address">Defina seu código abaixo</code>
             <button id="quick-chart-copy-address" type="button">Copiar endereço</button>
           </div>
 
@@ -48,7 +48,7 @@
             <div>
               <span class="quick-chart-eyebrow">Código pessoal fixo</span>
               <h3 id="quick-chart-code-title">Configure seu código</h3>
-              <p id="quick-chart-code-help">Você vai digitar este mesmo código toda vez que usar um computador externo. Ele não expira; somente o conteúdo do prontuário é apagado automaticamente.</p>
+              <p id="quick-chart-code-help">Esse código é exclusivo do Prontuário Rápido e não tem relação com o código de amizade. Ele vira seu endereço, por exemplo: resibulando.online/ABCD12345678.</p>
             </div>
 
             <div class="quick-chart-code-form">
@@ -57,7 +57,7 @@
               <button id="quick-chart-save-code" class="primary" type="button">Salvar código</button>
             </div>
 
-            <small class="quick-chart-code-note">O código é armazenado apenas como hash. Depois de salvar, o LURIA não consegue mostrá-lo novamente. Se esquecer, basta definir um novo.</small>
+            <small class="quick-chart-code-note">O código é exclusivo deste recurso. Você pode trocar quando quiser; ao trocar, o endereço antigo deixa de funcionar.</small>
           </article>
 
           <article class="quick-chart-current">
@@ -81,7 +81,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.22-prontuario-rapido"></script>
-  <script src="/assets/js/quick-chart-manager.js?v=3"></script>
+  <script src="/assets/js/quick-chart-manager.js?v=4"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
