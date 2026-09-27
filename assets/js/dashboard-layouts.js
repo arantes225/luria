@@ -169,33 +169,69 @@
     const controls = document.createElement("div");
     controls.id = "dl-topbar-controls";
     controls.className = "dl-topbar-controls";
-    controls.innerHTML = `<div class="dl-search"><input type="search" aria-label="Buscar páginas na LURIA" placeholder="Buscar na LURIA..." autocomplete="off"><div class="dl-search-results" hidden></div></div><div class="dl-timer" data-seconds="1500"><span class="dl-timer-icon" aria-hidden="true">◉</span><span class="dl-timer-time">25:00</span><button type="button" class="dl-timer-toggle" aria-label="Iniciar foco">▶</button><button type="button" class="dl-timer-reset" aria-label="Reiniciar foco">⌄</button></div><div class="dl-timer" data-seconds="0"><span class="dl-timer-icon" aria-hidden="true">◷</span><span class="dl-timer-time">00:00</span><button type="button" class="dl-timer-toggle" aria-label="Iniciar cronômetro">▶</button><button type="button" class="dl-timer-reset" aria-label="Zerar cronômetro">⌄</button></div>`;
+    controls.innerHTML = `<div class="dl-timer dl-pomodoro"><span class="dl-timer-icon dl-pomodoro-logo" aria-hidden="true"><svg viewBox="0 0 32 32" role="presentation"><path d="M16 8c-7 0-12 5-12 12 0 6 5 10 12 10s12-4 12-10C28 13 23 8 16 8Z" fill="#e94359"/><path d="M16 10c-3-4-3-6-2-8 1 2 2 3 3 4 2-2 4-3 7-2-2 1-3 3-4 5l-4 1Z" fill="#21815a"/><path d="m15 8-6-2 3 5m8-3 5-1-4 5" fill="#21815a"/><circle cx="16" cy="19" r="6.5" fill="#fff"/><path d="M16 15v4l2.5 1.5" fill="none" stroke="#184888" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="dl-timer-time" aria-live="off">25:00</span><button type="button" class="dl-timer-toggle" aria-label="Iniciar Pomodoro">▶</button><button type="button" class="dl-timer-settings-toggle" aria-label="Configurar Pomodoro" aria-expanded="false" aria-controls="dl-pomodoro-settings">⌄</button><div class="dl-pomodoro-settings" id="dl-pomodoro-settings" hidden><strong>Pomodoro</strong><div class="dl-pomodoro-modes" role="group" aria-label="Etapa do Pomodoro"><button type="button" data-pomodoro-mode="focus" aria-pressed="true">Foco</button><button type="button" data-pomodoro-mode="break" aria-pressed="false">Pausa</button></div><label>Foco <span><input type="number" name="focus" min="1" max="240" step="1" value="25"> min</span></label><label>Pausa <span><input type="number" name="break" min="1" max="120" step="1" value="5"> min</span></label><div class="dl-pomodoro-actions"><button type="button" data-pomodoro-reset>Reiniciar</button><button type="button" data-pomodoro-save>Salvar</button></div><small class="dl-pomodoro-status" role="status" aria-live="polite"></small></div></div><div class="dl-timer dl-stopwatch"><span class="dl-timer-icon" aria-hidden="true">◷</span><span class="dl-timer-time">00:00</span><button type="button" class="dl-timer-toggle" aria-label="Iniciar cronômetro">▶</button><button type="button" class="dl-timer-reset" aria-label="Zerar cronômetro">⌄</button></div>`;
     topbar.insertBefore(controls, topbar.querySelector(".luria-notifications"));
-    const pages = [["Dashboard", "/dashboard/"], ["Cronograma", "/cronograma/"], ["Questões e Simulados", "/questoes-simulados/"], ["Plantão", "/plantao/"], ["Flashcards", "/flashcards/"], ["Anotações", "/caderno/"], ["Caderno de Erros", "/caderno-erros/"], ["Estatísticas", "/estatisticas/"], ["Editais e Provas", "/editais/"], ["Amigos", "/amigos/"], ["Configurações", "/configuracoes/"]];
-    const search = controls.querySelector(".dl-search input");
-    const results = controls.querySelector(".dl-search-results");
-    search.addEventListener("input", () => {
-      const query = search.value.trim().toLocaleLowerCase("pt-BR");
-      const matches = query ? pages.filter(([label]) => label.toLocaleLowerCase("pt-BR").includes(query)).slice(0, 6) : [];
-      results.innerHTML = matches.map(([label, url]) => `<a href="${url}">${escape(label)}</a>`).join("") || '<span class="dl-empty">Nenhuma página encontrada.</span>';
-      results.hidden = !query;
+    const pomodoro = controls.querySelector(".dl-pomodoro");
+    const config = pomodoro.querySelector(".dl-pomodoro-settings");
+    const configToggle = pomodoro.querySelector(".dl-timer-settings-toggle");
+    const clock = pomodoro.querySelector(".dl-timer-time");
+    const play = pomodoro.querySelector(".dl-timer-toggle");
+    const status = pomodoro.querySelector(".dl-pomodoro-status");
+    const durations = { focus: 25, break: 5 };
+    let mode = "focus";
+    let remaining = 25 * 60;
+    let deadline = 0;
+    let ticker = null;
+    const showTime = () => { clock.textContent = `${String(Math.floor(remaining / 60)).padStart(2, "0")}:${String(remaining % 60).padStart(2, "0")}`; };
+    const stop = () => { if (ticker) clearInterval(ticker); ticker = null; deadline = 0; play.textContent = "▶"; play.setAttribute("aria-label", `Iniciar ${mode === "focus" ? "foco" : "pausa"}`); };
+    const tick = () => { remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000)); showTime(); if (remaining === 0) { stop(); status.textContent = mode === "focus" ? "Foco concluído. Inicie a pausa." : "Pausa concluída."; } };
+    const selectMode = (next) => {
+      stop(); mode = next; remaining = durations[mode] * 60; showTime(); status.textContent = "";
+      config.querySelectorAll("[data-pomodoro-mode]").forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.pomodoroMode === mode)));
+    };
+    play.addEventListener("click", () => {
+      if (ticker) { tick(); stop(); return; }
+      if (remaining === 0) remaining = durations[mode] * 60;
+      deadline = Date.now() + remaining * 1000;
+      play.textContent = "Ⅱ"; play.setAttribute("aria-label", "Pausar Pomodoro");
+      ticker = setInterval(tick, 250); tick();
     });
-    search.addEventListener("keydown", (event) => { if (event.key === "Enter" && !results.hidden) results.querySelector("a")?.click(); if (event.key === "Escape") results.hidden = true; });
-    search.addEventListener("blur", () => setTimeout(() => { results.hidden = true; }, 150));
-    controls.querySelectorAll(".dl-timer").forEach((timer) => {
-      const initial = Number(timer.dataset.seconds);
-      let seconds = initial; let interval = null;
-      const display = timer.querySelector(".dl-timer-time");
-      const toggle = timer.querySelector(".dl-timer-toggle");
-      const update = () => { display.textContent = `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`; };
-      const stop = () => { clearInterval(interval); interval = null; toggle.textContent = "▶"; toggle.setAttribute("aria-label", initial ? "Iniciar foco" : "Iniciar cronômetro"); };
-      toggle.addEventListener("click", () => {
-        if (interval) { stop(); return; }
-        toggle.textContent = "Ⅱ"; toggle.setAttribute("aria-label", "Pausar");
-        interval = setInterval(() => { seconds = initial ? Math.max(0, seconds - 1) : seconds + 1; update(); if (initial && !seconds) stop(); }, 1000);
-      });
-      timer.querySelector(".dl-timer-reset").addEventListener("click", () => { stop(); seconds = initial; update(); });
+    configToggle.addEventListener("click", () => { config.hidden = !config.hidden; configToggle.setAttribute("aria-expanded", String(!config.hidden)); });
+    document.addEventListener("pointerdown", (event) => { if (!pomodoro.contains(event.target)) { config.hidden = true; configToggle.setAttribute("aria-expanded", "false"); } });
+    config.addEventListener("keydown", (event) => { if (event.key === "Escape") { config.hidden = true; configToggle.setAttribute("aria-expanded", "false"); configToggle.focus(); } });
+    config.querySelectorAll("[data-pomodoro-mode]").forEach((button) => button.addEventListener("click", () => selectMode(button.dataset.pomodoroMode)));
+    config.querySelector("[data-pomodoro-reset]").addEventListener("click", () => selectMode(mode));
+    const focusInput = config.querySelector('[name="focus"]');
+    const breakInput = config.querySelector('[name="break"]');
+    const loadConfig = async () => {
+      if (!window.docmapUser?.id || !window.supabaseClient) return;
+      const { data, error } = await window.supabaseClient.from("user_settings").select("pomodoro_focus_minutes,pomodoro_break_minutes").eq("user_id", window.docmapUser.id).maybeSingle();
+      if (error) { status.textContent = "Não foi possível carregar as durações."; return; }
+      durations.focus = Math.min(240, Math.max(1, Number(data?.pomodoro_focus_minutes) || 25));
+      durations.break = Math.min(120, Math.max(1, Number(data?.pomodoro_break_minutes) || 5));
+      focusInput.value = durations.focus; breakInput.value = durations.break;
+      if (!ticker) { remaining = durations[mode] * 60; showTime(); }
+    };
+    config.querySelector("[data-pomodoro-save]").addEventListener("click", async (event) => {
+      const saveButton = event.currentTarget;
+      const focus = Number(focusInput.value), pause = Number(breakInput.value);
+      if (!Number.isInteger(focus) || focus < 1 || focus > 240 || !Number.isInteger(pause) || pause < 1 || pause > 120) { status.textContent = "Foco: 1–240 min; pausa: 1–120 min."; return; }
+      if (!window.docmapUser?.id || !window.supabaseClient) { status.textContent = "Entre na sua conta para salvar."; return; }
+      saveButton.disabled = true; status.textContent = "Salvando...";
+      const { error } = await window.supabaseClient.from("user_settings").upsert({ user_id: window.docmapUser.id, pomodoro_focus_minutes: focus, pomodoro_break_minutes: pause }, { onConflict: "user_id" });
+      saveButton.disabled = false;
+      if (error) { status.textContent = "Não foi possível salvar as durações."; return; }
+      durations.focus = focus; durations.break = pause; selectMode(mode); status.textContent = "Durações salvas.";
     });
+    if (window.docmapUser?.id) loadConfig(); else window.addEventListener("docmap:ready", loadConfig, { once: true });
+    const stopwatch = controls.querySelector(".dl-stopwatch");
+    let seconds = 0, watchInterval = null;
+    const watchDisplay = stopwatch.querySelector(".dl-timer-time");
+    const watchToggle = stopwatch.querySelector(".dl-timer-toggle");
+    const watchUpdate = () => { watchDisplay.textContent = `${String(Math.floor(seconds / 60)).padStart(2, "0")}:${String(seconds % 60).padStart(2, "0")}`; };
+    const watchStop = () => { clearInterval(watchInterval); watchInterval = null; watchToggle.textContent = "▶"; watchToggle.setAttribute("aria-label", "Iniciar cronômetro"); };
+    watchToggle.addEventListener("click", () => { if (watchInterval) { watchStop(); return; } watchToggle.textContent = "Ⅱ"; watchToggle.setAttribute("aria-label", "Pausar cronômetro"); watchInterval = setInterval(() => { seconds++; watchUpdate(); }, 1000); });
+    stopwatch.querySelector(".dl-timer-reset").addEventListener("click", () => { watchStop(); seconds = 0; watchUpdate(); });
     const avatar = document.createElement("a");
     avatar.className = "dl-avatar"; avatar.href = "/configuracoes/"; avatar.setAttribute("aria-label", "Perfil e configurações");
     avatar.textContent = (document.querySelector(".sidebar .user-avatar")?.textContent || "U").trim();
