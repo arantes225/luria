@@ -794,3 +794,33 @@ body[data-page="dashboard"][data-dashboard-layout] .page,
 body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   background:transparent!important;
 }
+
+
+/* FIX DEFINITIVO — não pintar a logo diretamente no dashboard.
+   O único pattern permitido é o global de style.css, igual ao Cronograma. */
+html:has(body[data-page="dashboard"]),
+body[data-page="dashboard"],
+body[data-page="dashboard"][data-dashboard-layout],
+body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+body[data-page="dashboard"][data-dashboard-layout] .main,
+body[data-page="dashboard"][data-dashboard-layout] .page,
+body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative {
+  background-image: none !important;
+}
+
+body[data-page="dashboard"][data-dashboard-layout] .main::before,
+body[data-page="dashboard"][data-dashboard-layout] .main::after,
+body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::before,
+body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::after {
+  content: none !important;
+  display: none !important;
+  background-image: none !important;
+  opacity: 0 !important;
+}
+
+/* Mantém somente a cor base; as logos vêm de body::before/after do style.css. */
+html:has(body[data-page="dashboard"]),
+body[data-page="dashboard"],
+body[data-page="dashboard"][data-dashboard-layout] .main {
+  background-color: var(--bg) !important;
+}
