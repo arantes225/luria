@@ -512,7 +512,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
       </div>
     </div>
 
-    <nav class="nav">
+    <nav class="nav ${String(page).startsWith("trabalho_") ? "nav-work" : "nav-study"}">
       <a class="nav-link luria-mode-switch" href="${String(page).startsWith("trabalho_") ? "/dashboard/" : "/trabalho/"}" aria-label="Alternar entre Estudos e Trabalho">
         <span class="nav-icon">${String(page).startsWith("trabalho_") ? "▣" : "◈"}</span>
         <span>${String(page).startsWith("trabalho_") ? "Trabalho" : "Estudos"}</span>
@@ -630,7 +630,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
       `}
     </nav>
 
-    <div class="sidebar-footer">
+    <div class="sidebar-footer ${String(page).startsWith("trabalho_") ? "sidebar-footer-work" : "sidebar-footer-study"}">
       ${String(page).startsWith("trabalho_") ? `
         <a class="work-pcr-button" href="/trabalho/pcr/" aria-label="Abrir Parada cardiorrespiratória">
           <span class="work-pcr-icon" aria-hidden="true">✚</span>
