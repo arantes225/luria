@@ -549,7 +549,6 @@ const sb = window.supabaseClient;
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral" },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e temas" },
-  ambientacao: { title: "Ambientação", eyebrow: "Estudar" },
   caderno: { title: "Caderno", eyebrow: "Estudar" },
   flashcards: { title: "Flashcards", eyebrow: "Estudar" },
   erros: { title: "Caderno de erros", eyebrow: "Estudar" },
@@ -583,7 +582,6 @@ const PAGE_INFO = {
 const PAGE_FEATURES = {
   dashboard: "dashboard",
   cronograma: "cronograma",
-  ambientacao: "ambientacao",
   caderno: "caderno",
   flashcards: "flashcards",
   erros: "error_notebook",
@@ -806,7 +804,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           </button>
 
           <div class="nav-submenu" id="study-nav-submenu">
-            <a class="nav-sublink ${page === "ambientacao" ? "active" : ""}" href="/ambientacao/">Ambientação</a>
             <a class="nav-sublink ${page === "caderno" ? "active" : ""}" href="/caderno/">Caderno</a>
             <a class="nav-sublink ${page === "flashcards" ? "active" : ""}" href="/flashcards/">Flashcards</a>
             <a class="nav-sublink ${page === "erros" ? "active" : ""}" href="/caderno-erros/">Caderno de erros</a>
@@ -2618,7 +2615,6 @@ function prepararStudyMenu(
 
   const pageInsideStudy =
     [
-      "ambientacao",
       "caderno",
       "flashcards",
       "erros",
