@@ -92,9 +92,34 @@
     return `<div class="dl-ring" style="--dl-progress:${p}%"><div><strong>${escape(center)}</strong><small>${escape(subtitle)}</small></div></div>`;
   }
 
+  function streakTier(days) {
+    const currentDays = Number(days || 0);
+    if (currentDays >= 365) return "6";
+    if (currentDays >= 180) return "5";
+    if (currentDays >= 90) return "4";
+    if (currentDays >= 30) return "3";
+    if (currentDays >= 7) return "2";
+    if (currentDays >= 4) return "1";
+    return "snow";
+  }
+
+  function streakVisual(days) {
+    const tier = streakTier(days);
+    return `
+      <span class="dl-streak-visual" data-streak-tier="${tier}" aria-hidden="true">
+        <span class="dl-streak-snow">❄</span>
+        <svg class="dl-streak-flame" viewBox="0 0 64 80" role="presentation">
+          <path fill="currentColor" d="M34 3C35 15 26 19 26 29C26 35 30 38 33 40C27 40 22 35 21 29C13 37 8 46 8 56C8 69 18 77 32 77C46 77 56 68 56 54C56 41 48 30 40 22C39 30 36 34 32 36C35 27 43 18 34 3Z"></path>
+          <path class="dl-streak-core" d="M33 40C27 47 23 52 23 59C23 67 27 71 33 71C40 71 44 66 44 59C44 52 39 47 35 43C35 48 33 51 30 53C31 48 34 45 33 40Z"></path>
+        </svg>
+      </span>
+    `;
+  }
+
   function streak(data) {
     const weekday = (new Date().getDay() + 6) % 7;
-    return `<section class="dl-card dl-streak">${heading(icon("flame"), "Ofensiva", "/estatisticas/")}<div class="dl-streak-value"><strong>${data.streak}</strong><span>dias seguidos</span></div><div class="dl-weekdays">${["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"].map((day, index) => `<span class="${index <= weekday && data.streak > 0 ? "active" : ""}"><i></i>${day}</span>`).join("")}</div></section>`;
+    const tier = streakTier(data.streak);
+    return `<section class="dl-card dl-streak" data-streak-tier="${tier}"><div class="dl-card-heading"><h3><span class="dl-heading-icon dl-streak-heading-icon" aria-hidden="true">${streakVisual(data.streak)}</span> Ofensiva</h3><a href="/estatisticas/" aria-label="Ver Ofensiva">Ver mais ›</a></div><div class="dl-streak-value"><strong>${data.streak}</strong><span>dias seguidos</span></div><div class="dl-weekdays">${["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"].map((day, index) => `<span class="${index <= weekday && data.streak > 0 ? "active" : ""}"><i></i>${day}</span>`).join("")}</div></section>`;
   }
 
   function areas(data) {
