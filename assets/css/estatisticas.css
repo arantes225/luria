@@ -779,3 +779,23 @@
 [data-stats-panel="geral"] #general-activity-metrics{
   width:100%!important;
 }
+
+/* v24.9 — heatmap Geral: células maiores e cabeçalho de meses mais próximo */
+[data-stats-panel="geral"] #general-week-heatmap .activity-grid{
+  grid-template-columns:24px repeat(12,15px)!important;
+  grid-auto-rows:15px!important;
+  gap:4px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-months{
+  grid-template-columns:24px repeat(12,15px)!important;
+  gap:4px!important;
+  margin-bottom:2px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-square{
+  width:15px!important;
+  height:15px!important;
+  border-radius:3px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-day{
+  line-height:15px!important;
+}
