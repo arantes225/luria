@@ -886,7 +886,6 @@ const PAGE_INFO = {
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Trabalho" },
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Trabalho" },
   trabalho_ecg: { title: "ECG", eyebrow: "Trabalho" },
-  trabalho_cid: { title: "CID", eyebrow: "Trabalho" },
   trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Trabalho" }
 };
 
@@ -1077,11 +1076,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         <a class="nav-link ${page === "trabalho_ecg" ? "active" : ""}" href="/trabalho/ecg/">
           <span class="nav-icon">⌁</span><span>ECG</span>
         </a>
-
-        <a class="nav-link ${page === "trabalho_cid" ? "active" : ""}" href="/trabalho/cid/">
-          <span class="nav-icon">#</span><span>CID</span>
-        </a>
-
         <a class="nav-link ${page === "trabalho_fluidos" ? "active" : ""}" href="/trabalho/fluidos-eletrólitos/">
           <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
         </a>
