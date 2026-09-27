@@ -526,3 +526,33 @@ body[data-dashboard-layout="3"] .dl-pomodoro,
 body[data-dashboard-layout="4"] .dl-pomodoro{
   align-items:center!important;
 }
+
+
+/* Dashboard Estudos — cobertura total do padrão nos cantos após rotação. */
+body[data-dashboard-layout="1"] .main::before,
+body[data-dashboard-layout="1"] .main::after,
+body[data-dashboard-layout="2"] .main::before,
+body[data-dashboard-layout="2"] .main::after,
+body[data-dashboard-layout="3"] .main::before,
+body[data-dashboard-layout="3"] .main::after,
+body[data-dashboard-layout="4"] .main::before,
+body[data-dashboard-layout="4"] .main::after{
+  inset:-14%!important;
+  transform:rotate(-8deg) scale(1.18)!important;
+  clip-path:none!important;
+}
+
+body[data-dashboard-layout="1"] .main,
+body[data-dashboard-layout="2"] .main,
+body[data-dashboard-layout="3"] .main,
+body[data-dashboard-layout="4"] .main{
+  background-color:var(--bg)!important;
+}
+
+body[data-dashboard-layout="1"] .page,
+body[data-dashboard-layout="2"] .page,
+body[data-dashboard-layout="3"] .page,
+body[data-dashboard-layout="4"] .page{
+  position:relative;
+  z-index:0;
+}
