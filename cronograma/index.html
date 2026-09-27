@@ -2962,6 +2962,23 @@
   body:not(.schedule-settings-embed) .reference-new-activity{margin-left:14px!important}
   @media(max-width:900px){body:not(.schedule-settings-embed) .agenda-week-goal-banner{grid-template-columns:1fr!important}.agenda-goal-categories{max-width:none!important}.reference-new-activity{margin-left:0!important}}
 
+
+  /* Tipografia refinada do cronograma */
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner :is(strong,small,em,span,b){font-size:calc(1em + 1.5px)}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner .agenda-goal-day>span{font-size:9px!important}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner .agenda-goal-day>strong{font-size:12px!important}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner .agenda-goal-day>small{font-size:7.5px!important}
+  body:not(.schedule-settings-embed) .agenda-week-goal-banner button{font-size:10px!important}
+  body:not(.schedule-settings-embed) .planner-tools button,
+  body:not(.schedule-settings-embed) .planner-nav button{font-size:10px!important}
+  body:not(.schedule-settings-embed) .planner-nav button{font-size:16px!important}
+  /* Filtros compartilhados */
+  .month-filter-tools{display:none;gap:6px;margin:0 0 8px;align-items:center}
+  .month-filter-tools select{height:29px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 8px;font-size:8px}
+  body:not(.schedule-settings-embed) .month-planner:not([hidden])~*{}
+  body:not(.schedule-settings-embed) .planner-panel:has(.month-planner:not([hidden])) .month-filter-tools{display:flex}
+  @media(max-width:720px){.month-filter-tools{flex-wrap:wrap}.month-filter-tools select{flex:1;min-width:110px}}
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3327,7 +3344,7 @@
               </div>
 
               <div id="week-planner" class="week-planner" hidden></div>
-              <div id="month-planner" class="month-planner"></div>
+              <div id="month-filter-tools" class="month-filter-tools"><select id="month-filter-area" aria-label="Filtrar mês por área"><option value="all">Todas as áreas</option></select><select id="month-filter-theme" aria-label="Filtrar mês por tema"><option value="all">Todos os temas</option></select><select id="month-filter-type" aria-label="Filtrar mês por tipo"><option value="all">Todos os tipos</option><option value="lesson">Aulas</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="questions">Questões</option><option value="simulation">Simulados</option><option value="other">Outros eventos</option></select></div><div id="month-planner" class="month-planner"></div>
             </section>
 
             <aside class="agenda-side agenda-summary-side agenda-insights-side">
@@ -3363,21 +3380,20 @@
               </div>
               <div id="agenda-bulk-tools" class="agenda-bulk-tools" hidden>
                 <div class="agenda-bulk-filter">
-                  <select id="agenda-activity-filter" aria-label="Filtrar atividades">
-                    <option value="all">Todas as atividades</option><option value="lesson">Aulas</option><option value="questions">Questões</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="simulation">Simulados</option>
+                  <select id="agenda-filter-area" aria-label="Filtrar por área"><option value="all">Todas as áreas</option></select>
+                  <select id="agenda-filter-theme" aria-label="Filtrar por tema"><option value="all">Todos os temas</option></select>
+                  <select id="agenda-activity-filter" aria-label="Filtrar por tipo">
+                    <option value="all">Todos os tipos</option><option value="lesson">Aulas</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="questions">Questões</option><option value="simulation">Simulados</option><option value="other">Outros eventos</option>
                   </select>
-                  <label class="agenda-select-all"><input id="agenda-select-all" type="checkbox"> Selecionar todas</label>
+                  <label class="agenda-select-all"><input id="agenda-select-all" type="checkbox"> Selecionar todos</label>
                 </div>
                 <div id="agenda-bulk-actions" class="agenda-bulk-actions">
                   <span id="agenda-selected-count">0 selecionadas</span>
                   <input id="agenda-bulk-date" type="date" aria-label="Nova data">
-                  <button id="agenda-bulk-reschedule" type="button">Alterar data</button>
-                  <button id="agenda-bulk-complete" type="button">Confirmar em massa</button>
+                  <button id="agenda-bulk-reschedule" type="button">Mover</button>
+                  <button id="agenda-bulk-deck" type="button">Remover para o deck</button>
+                  <button id="agenda-bulk-delete" type="button">Apagar</button>
                 </div>
-              </div>
-              <div class="agenda-today-progress">
-                <div class="agenda-today-progress-copy"><span id="agenda-today-progress-text">0 de 0 atividades concluídas</span><strong id="agenda-today-progress-percent">0%</strong></div>
-                <div class="agenda-today-progress-track"><i id="agenda-today-progress-bar"></i></div>
               </div>
               <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
             </section>
@@ -3852,7 +3868,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=35-week-goals"></script>
+  <script src="assets/js/cronograma.js?v=36-filters-bulk"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
