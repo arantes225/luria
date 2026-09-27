@@ -13,8 +13,8 @@
     (function(){
       try{
         var path=decodeURIComponent(location.pathname.replace(/^\/+|\/+$/g,""));
-        if(/^[A-Za-z0-9]{10,32}$/.test(path)){
-          location.replace("/trabalho/prontuario/#c="+encodeURIComponent(path.toUpperCase()));
+        if(/^[a-zA-Z0-9][a-zA-Z0-9._-]{2,29}$/.test(path)){
+          location.replace("/trabalho/prontuario/#u="+encodeURIComponent(path.toLowerCase()));
           return;
         }
       }catch(e){}
