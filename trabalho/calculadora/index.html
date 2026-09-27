@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <base href="/">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
-  <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Calculadora · LURIA</title>
-  <meta name="theme-color" content="#184888">
-  <link rel="manifest" href="/manifest.webmanifest?v=5">
-  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
-  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <style>
-    .tool-shell{display:grid;gap:16px}
-    .tool-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .tool-hero h2{margin:0 0 8px;font-size:24px}
-    .tool-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .tool-placeholder{padding:20px;border:1px dashed var(--border);border-radius:16px;background:var(--surface-2);color:var(--muted)}
-  </style>
-</head>
-<body data-page="trabalho_calculadora">
-  <div class="app-shell">
-    <aside id="sidebar" class="sidebar"></aside>
-    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
-    <main class="main">
-      <div class="page">
-        <header class="topbar">
-          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading">
-            <span class="eyebrow" data-page-eyebrow></span>
-            <h1 data-page-title></h1>
-          </div>
-        </header>
-        <section class="tool-shell">
-          <article class="tool-hero">
-            <h2>Calculadora</h2>
-            <p>Área do ambiente Trabalho para cálculos e ferramentas clínicas.</p>
-          </article>
-          <div class="tool-placeholder">A página já está criada e pronta para receber as funções que você definir.</div>
-        </section>
-      </div>
-    </main>
-  </div>
-  <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=17.14-tools"></script>
-  <script defer src="/assets/js/pwa.js?v=3"></script>
-</body>
-</html>
+<html lang="pt-BR"><head><base href="/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+<title>Calculadoras · LURIA</title><meta name="theme-color" content="#184888"><link rel="manifest" href="/manifest.webmanifest?v=5"><link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5"><link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2"><link rel="stylesheet" href="/assets/css/style.css?v=16.6"><link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
+<style>
+.calc-page{max-width:980px;margin:auto}.calc-intro{margin:0 0 16px;color:var(--muted)}.chips{display:flex;gap:8px;overflow:auto;padding:2px 0 14px;scrollbar-width:none}.chip{white-space:nowrap;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:999px;padding:9px 14px;font:inherit}.chip.active{background:#184888;color:#fff;border-color:#184888}.group{margin:18px 0 26px}.group-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.group-head h2{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0}.count{background:var(--surface-2);border-radius:999px;padding:5px 9px;color:var(--muted);font-size:12px}.calc-list{display:grid;gap:9px}.calc-card{width:100%;display:grid;grid-template-columns:72px 1fr 28px;align-items:center;min-height:88px;padding:0;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);overflow:hidden;text-align:left}.calc-code{height:100%;display:grid;place-items:center;border-left:5px solid #184888;color:#184888;font-weight:700;letter-spacing:.03em}.calc-copy{padding:14px 10px}.calc-copy strong{display:block;font-size:17px}.calc-copy span{display:block;color:var(--muted);font-size:13px;margin-top:4px}.arrow{font-size:28px;color:var(--muted)}.panel{display:none;margin:10px 0 18px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}.panel.open{display:block}.panel h3{margin:0 0 5px}.formula{font-size:12px;color:var(--muted);margin-bottom:14px}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px}.field input,.field select{width:100%;min-height:44px;border:1px solid var(--border);border-radius:11px;padding:9px 11px;background:var(--surface-2);color:var(--text);font:inherit}.actions{display:flex;gap:8px;margin-top:14px}.actions button{border:0;border-radius:11px;padding:11px 15px;font-weight:700}.go{background:#184888;color:#fff}.clear{background:var(--surface-2);color:var(--text)}.result{display:none;margin-top:14px;padding:14px;border-radius:12px;background:var(--surface-2)}.result.show{display:block}.result b{font-size:22px}.result small{display:block;color:var(--muted);margin-top:4px}.err{color:#b42318;font-size:13px;margin-top:8px}.note{font-size:11px;color:var(--muted);margin-top:12px;line-height:1.45}@media(max-width:600px){.page{padding-left:14px;padding-right:14px}.fields{grid-template-columns:1fr}.calc-card{grid-template-columns:64px 1fr 24px}.calc-copy strong{font-size:16px}}
+</style></head>
+<body data-page="trabalho_calculadora"><div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page calc-page"><header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title>Calculadoras</h1></div></header>
+<p class="calc-intro">Cálculos clínicos rápidos. Os resultados auxiliam a decisão e devem ser interpretados no contexto do paciente.</p><nav class="chips" id="chips"></nav><div id="catalog"></div></div></main></div>
+<script>
+const C=[
+['Renal','TFG','TFG estimada (CKD-EPI 2021)','Função renal estimada','egfr'],
+['Renal','FEN','Fração de excreção de sódio (FENa)','Avaliação tubular renal','fena'],
+['Cardiovascular','PAM','Pressão Arterial Média','Perfusão arterial','pam'],
+['Metabólico','AG','Ânion Gap','Avaliação ácido-base','ag'],
+['Metabólico','AGC','Ânion Gap corrigido','Correção pela albumina','agc'],
+['Metabólico','NA','Sódio corrigido','Correção na hiperglicemia','nac'],
+['Metabólico','OSM','Osmolaridade calculada','Osmolaridade plasmática','osm'],
+['Antropometria','IMC','IMC','Relação entre peso e altura','imc'],
+['Antropometria','SC','Superfície Corporal','Fórmula de Mosteller','bsa'],
+['Pediatria','HS','Manutenção 4-2-1','Fluidos pediátricos por peso','hs'],
+['Conversores','GTS','mL/h ↔ gotas/min','Equipo macro/microgotas','gts'],
+['Conversores','MGM','% → mg/mL','Concentração de soluções','mgm']
+];
+const defs={
+egfr:{fields:[['cr','Creatinina sérica','number','mg/dL'],['age','Idade','number','anos'],['sex','Sexo','select','Feminino|Masculino']],formula:'CKD-EPI 2021 (creatinina, sem raça)',calc:v=>{let cr=+v.cr,a=+v.age,f=v.sex==='Feminino',k=f?.7:.9,alpha=f?-.241:-.302;return [142*Math.pow(Math.min(cr/k,1),alpha)*Math.pow(Math.max(cr/k,1),-1.2)*Math.pow(.9938,a)*(f?1.012:1),'mL/min/1,73 m²']}},
+fena:{fields:[['un','Na urinário','number','mEq/L'],['pc','Creatinina plasmática','number','mg/dL'],['pn','Na plasmático','number','mEq/L'],['uc','Creatinina urinária','number','mg/dL']],formula:'FENa = (NaU × CrP) / (NaP × CrU) × 100',calc:v=>[(+v.un*+v.pc)/(+v.pn*+v.uc)*100,'%']},
+pam:{fields:[['pas','PAS','number','mmHg'],['pad','PAD','number','mmHg']],formula:'PAM ≈ (PAS + 2 × PAD) / 3',calc:v=>[(+v.pas+2*+v.pad)/3,'mmHg']},
+ag:{fields:[['na','Sódio','number','mEq/L'],['cl','Cloro','number','mEq/L'],['hco','Bicarbonato','number','mEq/L']],formula:'AG = Na − (Cl + HCO₃)',calc:v=>[+v.na-(+v.cl+ +v.hco),'mEq/L']},
+agc:{fields:[['na','Sódio','number','mEq/L'],['cl','Cloro','number','mEq/L'],['hco','Bicarbonato','number','mEq/L'],['alb','Albumina','number','g/dL']],formula:'AG corrigido = AG + 2,5 × (4 − albumina)',calc:v=>[(+v.na-(+v.cl+ +v.hco))+2.5*(4-+v.alb),'mEq/L']},
+nac:{fields:[['na','Sódio medido','number','mEq/L'],['glu','Glicose','number','mg/dL']],formula:'Na corrigido = Na + 1,6 × ((glicose − 100) / 100)',calc:v=>[+v.na+1.6*((+v.glu-100)/100),'mEq/L']},
+osm:{fields:[['na','Sódio','number','mEq/L'],['glu','Glicose','number','mg/dL'],['bun','BUN','number','mg/dL']],formula:'Osm ≈ 2×Na + glicose/18 + BUN/2,8',calc:v=>[2*+v.na+(+v.glu/18)+(+v.bun/2.8),'mOsm/kg']},
+imc:{fields:[['w','Peso','number','kg'],['h','Altura','number','cm']],formula:'IMC = peso / altura²',calc:v=>[+v.w/Math.pow(+v.h/100,2),'kg/m²']},
+bsa:{fields:[['w','Peso','number','kg'],['h','Altura','number','cm']],formula:'Mosteller: SC = √((altura × peso) / 3600)',calc:v=>[Math.sqrt((+v.h*+v.w)/3600),'m²']},
+hs:{fields:[['w','Peso','number','kg']],formula:'4 mL/kg/h (0–10 kg) + 2 (10–20 kg) + 1 (>20 kg)',calc:v=>{let w=+v.w,r=w<=10?4*w:w<=20?40+2*(w-10):60+(w-20);return [r,'mL/h · '+Math.round(r*24)+' mL/dia']}},
+gts:{fields:[['ml','Velocidade','number','mL/h'],['factor','Equipo','select','20 gotas/mL|60 microgotas/mL']],formula:'gotas/min = mL/h × fator / 60',calc:v=>[+v.ml*(v.factor.startsWith('20')?20:60)/60,v.factor.startsWith('20')?'gotas/min':'microgotas/min']},
+mgm:{fields:[['pct','Concentração','number','%']],formula:'Solução X% = X g/100 mL = 10X mg/mL',calc:v=>[+v.pct*10,'mg/mL']}
+};
+const cats=['Todos',...new Set(C.map(x=>x[0]))],chips=document.querySelector('#chips'),catalog=document.querySelector('#catalog');let active='Todos';
+function render(){chips.innerHTML=cats.map(x=>'<button class="chip '+(x===active?'active':'')+'" data-cat="'+x+'">'+x+'</button>').join('');let rows=C.filter(x=>active==='Todos'||x[0]===active),groups=[...new Set(rows.map(x=>x[0]))];catalog.innerHTML=groups.map(g=>{let a=rows.filter(x=>x[0]===g);return '<section class="group"><div class="group-head"><h2>'+g+'</h2><span class="count">'+a.length+'</span></div><div class="calc-list">'+a.map(x=>'<button class="calc-card" data-id="'+x[4]+'"><span class="calc-code">'+x[1]+'</span><span class="calc-copy"><strong>'+x[2]+'</strong><span>'+x[3]+'</span></span><span class="arrow">›</span></button><div class="panel" id="p-'+x[4]+'"></div>').join('')+'</div></section>'}).join('');bind()}
+function panel(id){let d=defs[id],p=document.querySelector('#p-'+id);p.innerHTML='<h3>'+C.find(x=>x[4]===id)[2]+'</h3><div class="formula">'+d.formula+'</div><form><div class="fields">'+d.fields.map(f=>'<div class="field"><label>'+f[1]+' ('+f[3]+')</label>'+(f[2]==='select'?'<select name="'+f[0]+'">'+f[3].split('|').map(o=>'<option>'+o+'</option>').join('')+'</select>':'<input name="'+f[0]+'" type="number" step="any" inputmode="decimal" required>')+'</div>').join('')+'</div><div class="err"></div><div class="actions"><button class="go" type="submit">Calcular</button><button class="clear" type="reset">Limpar</button></div><div class="result" aria-live="polite"></div><div class="note">Ferramenta de apoio. Confirme dados, unidades e adequação clínica antes de utilizar o resultado.</div></form>';p.classList.add('open');let form=p.querySelector('form'),res=p.querySelector('.result'),err=p.querySelector('.err');form.addEventListener('submit',e=>{e.preventDefault();let v=Object.fromEntries(new FormData(form));if(d.fields.filter(f=>f[2]!=='select').some(f=>!isFinite(+v[f[0]])||+v[f[0]]<=0)){err.textContent='Preencha todos os valores com números válidos.';res.classList.remove('show');return}try{let [n,u]=d.calc(v);if(!isFinite(n))throw 0;err.textContent='';res.innerHTML='<b>'+n.toLocaleString('pt-BR',{maximumFractionDigits:2})+' '+u+'</b><small>Resultado calculado com os dados informados.</small>';res.classList.add('show')}catch{err.textContent='Não foi possível calcular com esses valores.'}});form.addEventListener('reset',()=>{err.textContent='';res.classList.remove('show')})}
+function bind(){chips.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{active=b.dataset.cat;render()});catalog.querySelectorAll('.calc-card').forEach(b=>b.onclick=()=>{let p=document.querySelector('#p-'+b.dataset.id);if(p.classList.contains('open'))p.classList.remove('open');else panel(b.dataset.id)})}render();
+</script><script src="/assets/vendor/supabase-2.110.6.js"></script><script src="/assets/js/supabase.js"></script><script src="/assets/js/app.js?v=17.14-tools"></script><script defer src="/assets/js/pwa.js?v=3"></script></body></html>
