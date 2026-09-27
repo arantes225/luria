@@ -67,21 +67,32 @@
   }
 
   function renderClues() {
-    const visible = clueCount();
+    const answeredAt = clueCount();
+    const won = progress?.status === "won";
+    const visible = won ? Math.min(5, answeredAt + 2) : answeredAt;
+
     els.clues.innerHTML = Array.from({length: visible}, (_, i) => {
       const n = i + 1;
       const text = challenge["clue_" + n] || "";
-      return '<div class="daily-clue ' + (n === visible ? "is-current" : "") + '">' +
+      const classes = ["daily-clue"];
+      if (won && n === answeredAt) classes.push("is-correct");
+      else if (!won && n === visible) classes.push("is-current");
+      else if (won && n > answeredAt) classes.push("is-post-win");
+
+      return '<div class="' + classes.join(" ") + '">' +
         '<span class="daily-clue-number">' + n + '</span>' +
         '<p>' + esc(text) + '</p></div>';
     }).join("");
 
     els.dots.forEach((dot, i) => {
       dot.classList.toggle("is-visible", i < visible);
-      dot.classList.toggle("is-current", i === visible - 1);
+      dot.classList.toggle("is-current", !won && i === visible - 1);
+      dot.classList.toggle("is-correct", won && i === answeredAt - 1);
     });
 
-    els.progressLabel.textContent = "Pista " + visible + " de 5";
+    els.progressLabel.textContent = won
+      ? "Acertou na pista " + answeredAt
+      : "Pista " + visible + " de 5";
     const nextValue = points[Math.min(4, Number(progress?.attempts || 0))];
     els.pointsLive.textContent = progress?.status === "in_progress" || !progress
       ? "Vale " + nextValue + " pontos"
@@ -105,8 +116,10 @@
     els.finalScore.textContent = String(result.score || 0);
     els.finalAttempts.textContent = String(result.attempts || 0);
     els.pointsLive.textContent = "Desafio concluído";
-    els.dots.forEach(dot => dot.classList.add("is-visible"));
-    if (result.status === "won") showFeedback("Acertou! Desafio concluído.", "ok");
+    if (result.status === "won") {
+      renderClues();
+      showFeedback("Acertou! Desafio concluído.", "ok");
+    }
     else showFeedback("As cinco pistas foram usadas. Confira o diagnóstico abaixo.", "error");
   }
 
