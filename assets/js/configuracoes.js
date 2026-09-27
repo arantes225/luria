@@ -34,12 +34,6 @@ function cacheProfile(userId, profile) {
 }
 
 
-function profileTitle(gender) {
-  if (gender === "male") return "Dr.";
-  if (gender === "female") return "Dra.";
-  return "";
-}
-
 function setProfileStatus(text, type = "") {
   const element = document.getElementById("profile-status");
   element.textContent = text;
@@ -55,20 +49,9 @@ const PROFILE_GENDER_OPTIONS = [
   { value: "prefer_not_to_say", label: "Prefiro não informar" }
 ];
 
-function profileSpecialtyOptions() {
-  return Array.from(
-    document.querySelectorAll(
-      "#specialty-options option"
-    )
-  )
-    .map((option) => option.value)
-    .filter(Boolean);
-}
-
 function closeProfilePickers(except = null) {
   [
-    ["profile-gender-menu", "profile-gender-toggle"],
-    ["profile-specialty-menu", "profile-specialty-toggle"]
+    ["profile-gender-menu", "profile-gender-toggle"]
   ].forEach(([menuId, toggleId]) => {
     if (except === menuId) return;
     const menu = document.getElementById(menuId);
@@ -86,15 +69,6 @@ function syncProfilePickerLabels() {
       PROFILE_GENDER_OPTIONS.find((item) => item.value === gender)?.label
       || "Selecione";
   }
-
-    const title = profileTitle(gender);
-
-  document.getElementById("profile-preview-name").textContent =
-    title ? `${title} ${name}` : name;
-
-
-  document.getElementById("profile-preview-avatar").textContent =
-    name.charAt(0).toUpperCase() || "U";
 }
 
 async function loadProfileSettings() {
@@ -123,7 +97,6 @@ async function loadProfileSettings() {
     data?.gender || "";
 
   syncProfilePickerLabels();
-  updateProfilePreview();
 }
 
 async function saveProfileSettings() {
@@ -219,7 +192,6 @@ async function saveProfileSettings() {
     "success"
   );
 
-  updateProfilePreview();
 
   setTimeout(() => {
     window.location.reload();
@@ -228,19 +200,6 @@ async function saveProfileSettings() {
 
 function wireProfileSettings() {
   wireProfilePickers();
-
-  [
-    "profile-name",
-    "profile-username",
-    "profile-gender"
-  ].forEach((id) => {
-    const element = document.getElementById(id);
-
-    element.addEventListener(
-      id === "profile-gender" ? "change" : "input",
-      updateProfilePreview
-    );
-  });
 
   document
     .getElementById("save-profile")
