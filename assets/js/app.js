@@ -500,6 +500,38 @@
       background:var(--accent);
       color:#fff;
     }
+    .luria-timer-switch {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:6px;
+      padding:4px;
+      margin:10px 0 12px;
+      border:1px solid var(--border);
+      border-radius:11px;
+      background:var(--surface-2);
+    }
+    .luria-timer-switch button {
+      min-height:34px;
+      border:0;
+      border-radius:8px;
+      background:transparent;
+      color:var(--muted);
+      font-weight:850;
+      cursor:pointer;
+    }
+    .luria-timer-switch button[aria-pressed="true"] {
+      background:var(--surface);
+      color:var(--accent);
+      box-shadow:0 1px 4px rgba(15,23,42,.08);
+    }
+    .luria-timer-view[hidden]{display:none!important}
+    .luria-stopwatch-note {
+      display:block;
+      margin:-5px 0 12px;
+      color:var(--muted);
+      font-size:10px;
+      line-height:1.35;
+    }
     .luria-pomodoro-fields {
       display:grid;
       gap:8px;
@@ -3083,43 +3115,60 @@ function ensureNotificationCenter() {
           </svg>
         </span>
         <span class="luria-pomodoro-copy">
-          <strong>Pomodoro</strong>
-          <small id="luria-pomodoro-mini-time">25:00</small>
+          <strong>Timer</strong>
+          <small id="luria-pomodoro-mini-time">00:00</small>
         </span>
       </button>
 
       <section id="luria-pomodoro-panel" class="luria-pomodoro-panel" hidden>
         <header>
           <div>
-            <strong>Pomodoro</strong>
-            <small id="luria-pomodoro-state-label">Foco</small>
+            <strong>Timer</strong>
+            <small id="luria-pomodoro-state-label">Cronômetro</small>
           </div>
         </header>
 
-        <div class="luria-pomodoro-modes" role="group" aria-label="Etapa do Pomodoro">
-          <button type="button" data-luria-pomodoro-mode="focus" aria-pressed="true">Foco</button>
-          <button type="button" data-luria-pomodoro-mode="break" aria-pressed="false">Pausa</button>
+        <div class="luria-timer-switch" role="group" aria-label="Tipo de timer">
+          <button type="button" data-luria-timer-view="timer" aria-pressed="true">Timer</button>
+          <button type="button" data-luria-timer-view="pomodoro" aria-pressed="false">Pomodoro</button>
         </div>
 
-        <div id="luria-pomodoro-time" class="luria-pomodoro-time">25:00</div>
-
-        <div class="luria-pomodoro-fields">
-          <label>
-            <span>Foco</span>
-            <span><input id="luria-pomodoro-focus-minutes" type="number" min="1" max="240" step="1" value="25"> min</span>
-          </label>
-          <label>
-            <span>Pausa</span>
-            <span><input id="luria-pomodoro-break-minutes" type="number" min="1" max="120" step="1" value="5"> min</span>
-          </label>
+        <div id="luria-timer-view" class="luria-timer-view">
+          <div id="luria-stopwatch-time" class="luria-pomodoro-time">00:00</div>
+          <small class="luria-stopwatch-note">Cronômetro progressivo para acompanhar o tempo livremente.</small>
+          <div class="luria-pomodoro-actions">
+            <button id="luria-stopwatch-start" type="button">Iniciar</button>
+            <button id="luria-stopwatch-reset" type="button">Zerar</button>
+          </div>
         </div>
 
-        <div class="luria-pomodoro-actions">
-          <button id="luria-pomodoro-start" type="button">Iniciar</button>
-          <button id="luria-pomodoro-reset" type="button">Reiniciar</button>
+        <div id="luria-pomodoro-view" class="luria-timer-view" hidden>
+          <div class="luria-pomodoro-modes" role="group" aria-label="Etapa do Pomodoro">
+            <button type="button" data-luria-pomodoro-mode="focus" aria-pressed="true">Foco</button>
+            <button type="button" data-luria-pomodoro-mode="break" aria-pressed="false">Pausa</button>
+          </div>
+
+          <div id="luria-pomodoro-time" class="luria-pomodoro-time">25:00</div>
+
+          <div class="luria-pomodoro-fields">
+            <label>
+              <span>Foco</span>
+              <span><input id="luria-pomodoro-focus-minutes" type="number" min="1" max="240" step="1" value="25"> min</span>
+            </label>
+            <label>
+              <span>Pausa</span>
+              <span><input id="luria-pomodoro-break-minutes" type="number" min="1" max="120" step="1" value="5"> min</span>
+            </label>
+          </div>
+
+          <div class="luria-pomodoro-actions">
+            <button id="luria-pomodoro-start" type="button">Iniciar</button>
+            <button id="luria-pomodoro-reset" type="button">Reiniciar</button>
+          </div>
+
+          <button id="luria-pomodoro-save" class="luria-pomodoro-save" type="button">Salvar durações</button>
         </div>
 
-        <button id="luria-pomodoro-save" class="luria-pomodoro-save" type="button">Salvar durações</button>
         <small id="luria-pomodoro-status" class="luria-pomodoro-status" role="status" aria-live="polite"></small>
       </section>
     </div>
@@ -3245,22 +3294,98 @@ function ensureNotificationCenter() {
   const pomodoroFocusInput = document.getElementById("luria-pomodoro-focus-minutes");
   const pomodoroBreakInput = document.getElementById("luria-pomodoro-break-minutes");
   const pomodoroModes = [...document.querySelectorAll("[data-luria-pomodoro-mode]")];
+  const timerViewButtons = [...document.querySelectorAll("[data-luria-timer-view]")];
+  const timerView = document.getElementById("luria-timer-view");
+  const pomodoroView = document.getElementById("luria-pomodoro-view");
+  const stopwatchTime = document.getElementById("luria-stopwatch-time");
+  const stopwatchStart = document.getElementById("luria-stopwatch-start");
+  const stopwatchReset = document.getElementById("luria-stopwatch-reset");
 
   const pomodoroDurations = { focus: 25, break: 5 };
   let pomodoroMode = "focus";
   let pomodoroRemaining = pomodoroDurations.focus * 60;
   let pomodoroDeadline = 0;
   let pomodoroTimer = null;
+  let activeTimerView = "timer";
+  let stopwatchElapsedMs = 0;
+  let stopwatchStartedAt = 0;
+  let stopwatchInterval = null;
+
+  const formatClock = (totalSeconds, showHours = false) => {
+    const safe = Math.max(0, Math.floor(totalSeconds));
+    const hours = Math.floor(safe / 3600);
+    const minutes = Math.floor((safe % 3600) / 60);
+    const seconds = safe % 60;
+    if (showHours || hours > 0) {
+      return [hours, minutes, seconds].map((part) => String(part).padStart(2, "0")).join(":");
+    }
+    return String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
+  };
+
+  const currentStopwatchMs = () =>
+    stopwatchElapsedMs + (stopwatchInterval ? Math.max(0, Date.now() - stopwatchStartedAt) : 0);
+
+  const renderStopwatch = () => {
+    const label = formatClock(currentStopwatchMs() / 1000, true);
+    if (stopwatchTime) stopwatchTime.textContent = label;
+    if (activeTimerView === "timer" && pomodoroMiniTime) pomodoroMiniTime.textContent = label;
+    if (stopwatchStart) stopwatchStart.textContent = stopwatchInterval ? "Pausar" : "Iniciar";
+  };
+
+  const setTimerView = (nextView) => {
+    if (!["timer", "pomodoro"].includes(nextView)) return;
+    activeTimerView = nextView;
+    if (timerView) timerView.hidden = nextView !== "timer";
+    if (pomodoroView) pomodoroView.hidden = nextView !== "pomodoro";
+    timerViewButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.luriaTimerView === nextView));
+    });
+    if (pomodoroStateLabel) {
+      pomodoroStateLabel.textContent =
+        nextView === "timer"
+          ? "Cronômetro"
+          : (pomodoroMode === "focus" ? "Foco" : "Pausa");
+    }
+    if (nextView === "timer") renderStopwatch();
+    else renderPomodoro();
+  };
 
   const renderPomodoro = () => {
     const m = String(Math.floor(pomodoroRemaining / 60)).padStart(2, "0");
     const s = String(pomodoroRemaining % 60).padStart(2, "0");
     const label = m + ":" + s;
-    if (pomodoroMiniTime) pomodoroMiniTime.textContent = label;
+    if (activeTimerView === "pomodoro" && pomodoroMiniTime) pomodoroMiniTime.textContent = label;
     if (pomodoroTime) pomodoroTime.textContent = label;
-    if (pomodoroStateLabel) pomodoroStateLabel.textContent = pomodoroMode === "focus" ? "Foco" : "Pausa";
+    if (activeTimerView === "pomodoro" && pomodoroStateLabel) pomodoroStateLabel.textContent = pomodoroMode === "focus" ? "Foco" : "Pausa";
     if (pomodoroStart) pomodoroStart.textContent = pomodoroTimer ? "Pausar" : "Iniciar";
-    pomodoroModes.forEach((button) => {
+    timerViewButtons.forEach((button) => {
+    button.addEventListener("click", () => setTimerView(button.dataset.luriaTimerView));
+  });
+
+  stopwatchStart?.addEventListener("click", () => {
+    if (stopwatchInterval) {
+      stopwatchElapsedMs = currentStopwatchMs();
+      clearInterval(stopwatchInterval);
+      stopwatchInterval = null;
+      stopwatchStartedAt = 0;
+      renderStopwatch();
+      return;
+    }
+    stopwatchStartedAt = Date.now();
+    stopwatchInterval = setInterval(renderStopwatch, 250);
+    renderStopwatch();
+  });
+
+  stopwatchReset?.addEventListener("click", () => {
+    if (stopwatchInterval) clearInterval(stopwatchInterval);
+    stopwatchInterval = null;
+    stopwatchStartedAt = 0;
+    stopwatchElapsedMs = 0;
+    if (pomodoroStatus) pomodoroStatus.textContent = "";
+    renderStopwatch();
+  });
+
+  pomodoroModes.forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === pomodoroMode));
     });
   };
@@ -3387,6 +3512,8 @@ function ensureNotificationCenter() {
   else window.addEventListener("docmap:ready", loadPomodoroConfig, { once: true });
 
   renderPomodoro();
+  renderStopwatch();
+  setTimerView("timer");
 
   const profileToggle = document.getElementById("luria-profile-toggle");
   const profileMenu = document.getElementById("luria-profile-menu");
