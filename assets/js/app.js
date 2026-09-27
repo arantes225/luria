@@ -571,9 +571,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">⌁</span><span>Passômetro</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_pcr" ? "active" : ""}" href="/trabalho/pcr/">
-          <span class="nav-icon">✚</span><span>PCR</span>
-        </a>
 
         <a class="nav-link ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">
           <span class="nav-icon">▤</span><span>Protocolos</span>
