@@ -1,5 +1,5 @@
 (() => {
-  const allowed = new Set(["1", "2", "3", "4"]);
+  const allowed = new Set(["1", "2", "3", "4", "5"]);
   const page = document.querySelector('body[data-page="dashboard"] .page');
   if (!page) return;
   const root = document.createElement("div");
@@ -35,7 +35,9 @@
       simulations: text("metric-simulations-accuracy"),
       ccq: text("dashboard-passive-ccq-text", "Seu Pulo do Gato aparecerá aqui."),
       ccqArea: text("dashboard-passive-ccq-meta", ""),
-      areas: window.luriaDashboardAreaSummary || []
+      areas: window.luriaDashboardAreaSummary || [],
+      questions: number(text("metric-questions", "0")),
+      simulationsCount: number(text("metric-simulations", "0"))
     };
   };
 
@@ -161,11 +163,104 @@
     return `<div class="dl-grid dl-layout-4"><div class="dl-metrics">${cards.map(([iconName, label, value, percent, href]) => `<a class="dl-card dl-metric" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span>${percent ? `<i class="dl-metric-track"><b style="width:${percent}%"></b></i>` : ""}</a>`).join("")}</div><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
   }
 
+
+  function layout5(data) {
+    const next = upcoming(1)[0] || null;
+    const nextTitle = next?.title || "Nenhuma atividade programada";
+    const nextMeta = next ? (typeof kindMeta === "function" ? kindMeta(next.kind).label : "Atividade") : "Agenda livre";
+    const nextHref = next && typeof activityCanStart === "function" && activityCanStart(next)
+      ? buildAmbientacaoUrl(next)
+      : "/cronograma/";
+    const rows = (data.areas || []).slice(0, 5);
+    const weekday = (new Date().getDay() + 6) % 7;
+    const recent = [
+      ["Simulado mais recente", data.simulations, "Resultado geral"],
+      ["Questões e Simulados", data.simulations, "Desempenho recente"],
+      ["Revisão de desempenho", data.retention, "Retenção"]
+    ];
+    return `
+      <div class="dl5-shell">
+        <div class="dl5-top">
+          <label class="dl5-search" aria-label="Buscar na LURIA">
+            <span>⌕</span><input type="search" placeholder="Buscar na LURIA..." autocomplete="off">
+          </label>
+          <div class="dl5-top-actions">
+            <div class="dl5-pill dl5-pomodoro"><span>🍅</span><strong>25:00</strong><button type="button" aria-label="Iniciar Pomodoro">▶</button><span>⌄</span></div>
+            <div class="dl5-pill dl5-watch"><span>◷</span><strong>00:00</strong><button type="button" aria-label="Iniciar cronômetro">▶</button><span>⌄</span></div>
+            <a class="dl5-bell" href="/notificacoes/" aria-label="Notificações">♧</a>
+            <span class="dl5-avatar">${escape((window.docmapProfile?.display_name || window.docmapUser?.user_metadata?.display_name || window.docmapUser?.email || "U").trim().charAt(0).toUpperCase())}</span>
+            <span class="dl5-chevron">⌄</span>
+          </div>
+        </div>
+
+        <div class="dl5-hero">
+          <div>
+            <h2>${greeting().match(/<h2>(.*?)<\/h2>/)?.[1] || "Olá!"}</h2>
+            <p>Vamos em frente hoje? Consistência é o que transforma.</p>
+          </div>
+          <div class="dl5-date">
+            <strong>${escape(readableDate(new Date()))}</strong>
+            <span>“Disciplina hoje, liberdade amanhã.”</span>
+            <small>— LURIA</small>
+          </div>
+        </div>
+
+        <div class="dl5-metrics">
+          <a class="dl5-metric" href="/cronograma/"><span class="dl5-metric-icon is-blue">${icon("book")}</span><div><small>Aulas concluídas</small><strong>${data.done}</strong><em>↗ progresso do cronograma</em></div></a>
+          <a class="dl5-metric" href="/questoes-simulados/"><span class="dl5-metric-icon is-orange">${icon("file")}</span><div><small>Questões resolvidas</small><strong>${data.questions || "—"}</strong><em>↗ desempenho em questões</em></div></a>
+          <a class="dl5-metric" href="/questoes-simulados/"><span class="dl5-metric-icon is-green">${icon("target")}</span><div><small>Simulados feitos</small><strong>${data.simulationsCount || "—"}</strong><em>↗ histórico de simulados</em></div></a>
+          <a class="dl5-metric" href="/estatisticas/"><span class="dl5-metric-icon is-purple">◷</span><div><small>Horas de estudo</small><strong>${escape(data.hours)}</strong><em>esta semana</em></div></a>
+        </div>
+
+        <div class="dl5-mid">
+          <section class="dl5-card dl5-next">
+            <div class="dl5-title"><h3>${icon("calendar")} Próxima atividade</h3><a href="/cronograma/">›</a></div>
+            <div class="dl5-next-body"><span class="dl5-timeline-dot"></span><div><small>${next ? escape(shortDate(next.activity_date)) : "Hoje"}</small><strong>${escape(nextTitle)}</strong><span>${escape(nextMeta)}${next?.area ? ` · ${escape(next.area)}` : ""}</span><a href="${escape(nextHref)}">Continuar de onde parou</a></div></div>
+            <a class="dl5-start" href="${escape(nextHref)}">▶ &nbsp; Iniciar</a>
+          </section>
+
+          <section class="dl5-card dl5-streak">
+            <div class="dl5-title"><h3>🔥 Ofensiva</h3><a href="/estatisticas/">›</a></div>
+            <div class="dl5-streak-number"><strong>${data.streak}</strong><span>dias seguidos</span></div>
+            <div class="dl5-week">${["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"].map((d,i)=>`<span class="${i<=weekday && data.streak>0 ? "on":""}"><i></i>${d}</span>`).join("")}</div>
+            <div class="dl5-focus"><span><strong>25 min</strong><small>Tempo de foco</small></span><span><strong>5 min</strong><small>Pausa curta</small></span><span><strong>15 min</strong><small>Pausa longa</small></span></div>
+          </section>
+
+          <section class="dl5-card dl5-areas">
+            <div class="dl5-title"><h3>${icon("chart")} Desempenho por área</h3><a href="/estatisticas/">›</a></div>
+            <div class="dl5-area-list">
+              ${rows.length ? rows.map((entry)=>{
+                const pct=entry.total ? Math.round(entry.completed/entry.total*100) : 0;
+                return `<div><span>${escape(entry.area)}</span><i><b style="width:${pct}%"></b></i><strong>${pct}%</strong></div>`;
+              }).join("") : '<p class="dl-empty">Sem dados por área ainda.</p>'}
+            </div>
+          </section>
+        </div>
+
+        <div class="dl5-bottom">
+          <section class="dl5-card dl5-sims">
+            <div class="dl5-title"><h3>${icon("file")} Últimos simulados</h3><a href="/questoes-simulados/">›</a></div>
+            <div class="dl5-sim-list">
+              ${recent.map((item,i)=>`<a href="/questoes-simulados/"><div><strong>${escape(item[0])}</strong><small>${escape(item[2])}</small></div><span>${escape(item[1] || "—")}</span><em>›</em></a>`).join("")}
+            </div>
+          </section>
+
+          <section class="dl5-card dl5-cat">
+            <div class="dl5-title"><h3>💡 Pulo do Gato do dia</h3><a href="/dashboard/">›</a></div>
+            <div class="dl5-cat-body">
+              <span class="dashboard-cat-symbol" aria-hidden="true"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924d" alt=""></span>
+              <div><strong>${escape(data.ccqArea || "Dica clínica")}</strong><p>${escape(data.ccq)}</p><a href="/dashboard/">Ver explicação completa →</a></div>
+            </div>
+          </section>
+        </div>
+      </div>`;
+  }
+
   function render() {
     frame = 0;
     if (!allowed.has(current)) return;
     const data = snap();
-    root.innerHTML = greeting() + ({ "1": layout1, "2": layout2, "3": layout3, "4": layout4 }[current])(data);
+    root.innerHTML = greeting() + ({ "1": layout1, "2": layout2, "3": layout3, "4": layout4, "5": layout5 }[current])(data);
   }
   function schedule() { if (!frame) frame = requestAnimationFrame(render); }
   function apply() {
