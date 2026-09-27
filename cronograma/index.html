@@ -2942,6 +2942,17 @@
   body:not(.schedule-settings-embed) .agenda-category-card{min-height:222px!important}
   @media(max-width:900px){body:not(.schedule-settings-embed) .agenda-goal-categories{grid-template-columns:repeat(3,1fr)!important}}
 
+
+  /* Gap efetivo entre calendário e Atividades = gap dos insights (10px).
+     O grid já adiciona 12px entre linhas; neutralizamos esse gap e usamos 10px explícitos. */
+  body:not(.schedule-settings-embed) .agenda-reference-layout{
+    column-gap:12px!important;
+    row-gap:0!important;
+  }
+  body:not(.schedule-settings-embed) .agenda-reference-layout>.agenda-bottom-grid{
+    margin-top:10px!important;
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
