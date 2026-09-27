@@ -128,7 +128,7 @@ function syncProfilePickerLabels() {
 async function loadProfileSettings() {
   const { data, error } = await settingsSb
     .from("profiles")
-    .select("display_name, username, gender")
+    .select("display_name, username, gender, medical_school, is_graduated")
     .eq("user_id", settingsUser.id)
     .maybeSingle();
 
@@ -150,6 +150,18 @@ async function loadProfileSettings() {
   document.getElementById("profile-gender").value =
     data?.gender || "";
 
+  const schoolInput = document.getElementById("profile-medical-school");
+  if (schoolInput) schoolInput.value = data?.medical_school || "";
+
+  document.querySelectorAll('input[name="profile-graduated"]').forEach((input) => {
+    input.checked =
+      data?.is_graduated === true
+        ? input.value === "true"
+        : data?.is_graduated === false
+          ? input.value === "false"
+          : false;
+  });
+
   syncProfilePickerLabels();
 }
 
@@ -162,6 +174,17 @@ async function saveProfileSettings() {
 
   const gender =
     document.getElementById("profile-gender").value || null;
+
+  const medicalSchool =
+    document.getElementById("profile-medical-school")?.value.trim() || "";
+
+  const graduationChoice =
+    document.querySelector('input[name="profile-graduated"]:checked');
+
+  const isGraduated =
+    graduationChoice
+      ? graduationChoice.value === "true"
+      : null;
 
   if (!name) {
     setProfileStatus(
@@ -209,13 +232,15 @@ async function saveProfileSettings() {
         user_id: settingsUser.id,
         display_name: name,
         username: username || null,
-        gender
+        gender,
+        medical_school: medicalSchool || null,
+        is_graduated: isGraduated
       },
       {
         onConflict: "user_id"
       }
     )
-    .select("display_name, username, gender")
+    .select("display_name, username, gender, medical_school, is_graduated")
     .single();
 
   button.disabled = false;
