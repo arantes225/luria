@@ -76,6 +76,34 @@
     return PHONE_PERSONAS[hash%PHONE_PERSONAS.length];
   }
 
+  function phoneOpeningText(item,value=null){
+    let text=String(value ?? item?.opening_message ?? "").trim();
+    const names=[
+      String(item?.requester_role||"").split(" · ")[0].trim(),
+      phonePersona(item).name
+    ].filter(Boolean);
+
+    for(const name of names){
+      const prefix=name+":";
+      if(text.startsWith(prefix)){
+        text=text.slice(prefix.length).trim();
+        break;
+      }
+    }
+
+    if(text.startsWith('"')){
+      text=text.slice(1);
+      const firstBreak=text.indexOf("\n\n");
+      if(firstBreak>=0 && text[firstBreak-1]==='"'){
+        text=text.slice(0,firstBreak-1)+text.slice(firstBreak);
+      }else if(text.endsWith('"')){
+        text=text.slice(0,-1);
+      }
+    }
+
+    return text.trim();
+  }
+
   function phoneAvatarMarkup(persona,size="list"){
     const src=String(persona?.avatar||PHONE_PERSONAS[0].avatar);
     return `<img class="plantao-phone-portrait-image plantao-phone-portrait-image-${size}" src="${esc(src)}" alt="" aria-hidden="true" loading="lazy" decoding="async">`;
@@ -155,8 +183,12 @@
     setPhoneHeaderPersona(item);
     $("plantao-phone-context").textContent=item.title||item.specialty||"Caso clínico";
     const messages=Array.isArray(draft.messages)&&draft.messages.length
-      ? draft.messages
-      : [{sender:"requester",content:item.opening_message}];
+      ? draft.messages.map((message,index)=>(
+          index===0 && message?.sender==="requester"
+            ? {...message,content:phoneOpeningText(item,message.content)}
+            : message
+        ))
+      : [{sender:"requester",content:phoneOpeningText(item)}];
     renderPhoneMessages(messages);
     renderPhoneChoices();
     return true;
@@ -483,7 +515,7 @@
             <small>agora</small>
           </span>
           <span class="plantao-phone-conversation-title">${esc(item.title)}</span>
-          <span class="plantao-phone-conversation-preview">${esc(item.opening_message||"Nova solicitação de interconsulta")}</span>
+          <span class="plantao-phone-conversation-preview">${esc(phoneOpeningText(item)||"Nova solicitação de interconsulta")}</span>
         </span>
         <span class="plantao-phone-conversation-chevron" aria-hidden="true">›</span>
       </button>
@@ -538,7 +570,7 @@
     state.phoneSession=session;
     const firstLessonStep=lessonMode ? item.ai_context.lesson_flow[0] : null;
     const openingText=[
-      String(item.opening_message||"").trim(),
+      phoneOpeningText(item),
       String(firstLessonStep?.prompt||"").trim()
     ].filter(Boolean).join("\n\n");
     const {error:msgError}=await sb.from("interconsultation_messages").insert({
