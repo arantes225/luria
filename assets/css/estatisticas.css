@@ -690,3 +690,52 @@
   content:none!important;
   display:none!important;
 }
+
+/* v24.6 — Geral: composição final por faixas
+   1: Ritmo + heatmap até a borda direita
+   2: Distribuição + Progresso ocupam toda a faixa
+   3: Visão por área + Insights dividem toda a faixa */
+[data-stats-panel="geral"] .stats-block-grid{
+  display:grid!important;
+  grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  grid-template-areas:
+    "habit habit habit habit heat heat heat heat heat heat heat heat"
+    "dist dist dist dist dist dist prog prog prog prog prog prog"
+    "area area area area area area ins ins ins ins ins ins"!important;
+  gap:10px!important;
+  align-items:stretch!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(1){grid-area:habit!important}
+[data-stats-panel="geral"] .stats-block:nth-child(2){grid-area:dist!important}
+[data-stats-panel="geral"] .stats-block:nth-child(3){grid-area:prog!important}
+[data-stats-panel="geral"] .stats-block:nth-child(4){
+  grid-area:heat!important;
+  width:100%!important;
+  max-width:none!important;
+  align-self:stretch!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(5){grid-area:area!important}
+[data-stats-panel="geral"] .stats-block:nth-child(6){grid-area:ins!important}
+
+[data-stats-panel="geral"] .stats-block:nth-child(2),
+[data-stats-panel="geral"] .stats-block:nth-child(3){
+  min-height:205px!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(5),
+[data-stats-panel="geral"] .stats-block:nth-child(6){
+  min-height:205px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap{
+  width:100%!important;
+  min-height:150px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-heatmap{
+  width:100%!important;
+  max-width:none!important;
+}
+@media(max-width:1050px){
+ [data-stats-panel="geral"] .stats-block-grid{
+   grid-template-columns:1fr!important;
+   grid-template-areas:"heat" "habit" "dist" "prog" "area" "ins"!important;
+ }
+}
