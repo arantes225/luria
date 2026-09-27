@@ -1183,7 +1183,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           </div>
         </div>
 
-        <a class="user-mini luria-mode-footer-switch"
+        ${isAdmin ? `        <a class="user-mini luria-mode-footer-switch"
            href="/trabalho/"
            aria-label="Trocar do ambiente Estudos para Trabalho">
           <div class="user-avatar luria-mode-icon" aria-hidden="true">
@@ -1196,7 +1196,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
             <strong>Estudos</strong>
             <small>Trocar ambiente</small>
           </div>
-        </a>
+        </a>` : ""}
       `}
     </div>
   `;
@@ -5286,6 +5286,18 @@ async function iniciarApp() {
 
   const user =
     data.session.user;
+
+  // O ambiente Trabalho é privado: somente a conta administrativa pode acessá-lo.
+  // A verificação usa o RPC is_admin no servidor, não dados editáveis do perfil.
+  if (String(page).startsWith("trabalho_")) {
+    const workAllowed =
+      await verificarAcessoAdmin();
+
+    if (!workAllowed) {
+      window.location.replace("/dashboard/");
+      return;
+    }
+  }
 
   // PRIMEIRA PINTURA: somente dados locais/cache.
   // Nada de Supabase remoto pode segurar a exibição da página.
