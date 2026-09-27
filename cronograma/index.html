@@ -2891,6 +2891,18 @@
   .schedule-filter-popover{position:absolute;z-index:80;right:0;top:36px;width:210px;padding:11px;border:1px solid var(--border);border-radius:11px;background:var(--surface);box-shadow:0 14px 34px rgba(20,48,84,.17)}.schedule-filter-popover[hidden]{display:none!important}.schedule-filter-popover>strong{display:block;margin-bottom:8px;font-size:9px}.schedule-filter-popover label{display:grid;gap:4px;margin-top:7px;font-size:7px;font-weight:800;color:var(--muted)}.schedule-filter-popover select,.schedule-filter-popover input{width:100%;height:31px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 7px;font-size:8px}.schedule-filter-popover>button{width:100%;height:29px;min-height:29px;margin-top:9px;border:1px solid var(--border);border-radius:7px;background:var(--surface-2);color:var(--text);font-size:8px;font-weight:800}
   @media(max-width:620px){.agenda-today-head-actions{gap:4px}.schedule-filter-popover{right:-4px;width:min(210px,calc(100vw - 38px))}}
 
+
+  /* Histórico completo: concluídas continuam visíveis */
+  body:not(.schedule-settings-embed) .agenda-today-row.is-completed{
+    opacity:.72!important;background:color-mix(in srgb,var(--activity-color) 3%,var(--surface))!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-row.is-completed .agenda-today-main strong{
+    text-decoration:none!important
+  }
+  body:not(.schedule-settings-embed) .agenda-today-row.is-completed .agenda-today-time{
+    color:#2fa866!important
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
