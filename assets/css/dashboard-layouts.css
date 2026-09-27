@@ -1818,3 +1818,115 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
     font-size:10.5px!important;
   }
 }
+
+
+/* Dashboard 4 — faixa superior 3-1: resumo agrupado + Desafio do Dia. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metrics{
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-cluster{
+    grid-column:span 3!important;
+    height:112px!important;
+    min-height:112px!important;
+    padding:0!important;
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    overflow:hidden!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini{
+    min-width:0!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    padding:14px 16px!important;
+    color:var(--text)!important;
+    text-decoration:none!important;
+    border-right:1px solid var(--border)!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini:last-child{
+    border-right:0!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini > span:last-child{
+    min-width:0!important;
+    display:grid!important;
+    gap:3px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini small{
+    color:var(--muted)!important;
+    font-size:11px!important;
+    line-height:1.1!important;
+    white-space:nowrap!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini strong{
+    color:var(--text)!important;
+    font-size:20px!important;
+    line-height:1!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini .dl-metric-icon{
+    width:40px!important;
+    height:40px!important;
+    flex:0 0 40px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-daily-challenge{
+    grid-column:span 1!important;
+    height:112px!important;
+    min-height:112px!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:12px!important;
+    padding:14px 16px!important;
+    color:var(--text)!important;
+    text-decoration:none!important;
+    overflow:hidden!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-icon{
+    width:44px!important;
+    height:44px!important;
+    flex:0 0 44px!important;
+    display:grid!important;
+    place-items:center!important;
+    border-radius:50%!important;
+    background:var(--accent-soft)!important;
+    color:var(--accent)!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-icon .dl-icon{
+    width:25px!important;
+    height:25px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-copy{
+    min-width:0!important;
+    display:grid!important;
+    gap:2px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-copy small{
+    color:var(--muted)!important;
+    font-size:11px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-copy strong{
+    font-size:20px!important;
+    line-height:1!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-copy em{
+    margin-top:3px!important;
+    color:var(--accent)!important;
+    font-size:10px!important;
+    font-style:normal!important;
+    font-weight:700!important;
+    white-space:nowrap!important;
+  }
+}
+@media(max-width:980px){
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-cluster{
+    grid-column:1/-1!important;
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-daily-challenge{
+    grid-column:1/-1!important;
+  }
+}
