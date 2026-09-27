@@ -11,7 +11,7 @@ const scheduleState = {
   existingTopicKeys: new Set(),
   existingEventKeys: new Set(),
   weekAnchor: startOfDaySchedule(new Date()),
-  plannerView: "week",
+  plannerView: "month",
   draggingTopicId: null,
   alreadyDoneTopicId: null,
   themeSearch: "",
@@ -4574,6 +4574,42 @@ function renderMonthPlanner() {
       .join("");
 }
 
+function renderWeeklyOverview() {
+  const planner = document.getElementById("week-planner");
+  if (!planner) return;
+  const start = startOfWeekSchedule(scheduleState.weekAnchor);
+  const end = addDaysSchedule(start, 6);
+  const today = startOfDaySchedule(new Date());
+  document.getElementById("planner-range").textContent = formatWeekRangeSchedule(start, end);
+  const days = Array.from({ length: 7 }, (_, index) => addDaysSchedule(start, index));
+  const categories = [
+    ["Aulas", "lesson"],
+    ["Questões", "questions"],
+    ["Flashcards", "flashcards"],
+    ["Revisões", "review"],
+    ["Simulados", "simulation"],
+    ["Outros", "other"]
+  ];
+  const classify = (topic, event) => {
+    const source = normalizeHeader(event ? (event.event_type || event.title || "") : (topic?.type || topic?.theme || ""));
+    if (source.includes("quest")) return "questions";
+    if (source.includes("flash")) return "flashcards";
+    if (source.includes("revis")) return "review";
+    if (source.includes("simulado") || source.includes("prova")) return "simulation";
+    return event ? "other" : "lesson";
+  };
+  planner.innerHTML = '<div class="week-matrix" style="grid-column:1/-1"><div class="week-matrix-grid">' +
+    '<div class="week-matrix-label"><strong>Categorias</strong></div>' +
+    days.map(date => '<div class="week-matrix-head '+(sameDateSchedule(date,today)?'today':'')+'"><span>'+new Intl.DateTimeFormat("pt-BR",{weekday:"short"}).format(date).replace(".","")+'</span><strong>'+date.getDate()+'</strong></div>').join("") +
+    categories.map(([label,key]) => {
+      const cells = days.map(date => {
+        const count = topicsOnDate(date).filter(t => classify(t,null)===key).length + eventsOnDate(date).filter(e => classify(null,e)===key).length;
+        return '<div class="week-matrix-cell" data-planner-date="'+toISODateSchedule(date)+'">'+(count ? '<span class="week-dot kind-'+key+'" title="'+count+' atividade(s)"></span>' : '<span class="week-dot empty"></span>')+'</div>';
+      }).join("");
+      return '<div class="week-matrix-label"><span class="week-legend kind-'+key+'"></span><strong>'+label+'</strong></div>'+cells;
+    }).join("") + '</div></div>';
+}
+
 function updatePlannerViewControls() {
   const isMonth =
     scheduleState.plannerView === "month";
@@ -4641,6 +4677,9 @@ function renderPlanner() {
     renderMonthPlanner();
     return;
   }
+
+  renderWeeklyOverview();
+  return;
 
   const planner = document.getElementById("week-planner");
   const start = startOfWeekSchedule(scheduleState.weekAnchor);
