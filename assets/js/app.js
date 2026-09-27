@@ -373,6 +373,100 @@
     .luria-profile-menu a:hover,.luria-profile-menu button:hover{background:var(--surface-2)}
   `;
 
+  style.textContent += `
+    .luria-notifications {
+      display:flex !important;
+      align-items:center !important;
+      gap:12px !important;
+      margin-left:auto !important;
+    }
+    .luria-pomodoro-top,.luria-profile-top {
+      position:relative;
+      display:flex;
+      align-items:center;
+    }
+    .luria-pomodoro-toggle {
+      min-width:112px;
+      height:40px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:0 10px;
+      border:1px solid var(--border);
+      border-radius:11px;
+      background:var(--surface);
+      color:var(--text);
+      box-shadow:0 1px 2px rgba(15,23,42,.03);
+      cursor:pointer;
+      text-align:left;
+    }
+    .luria-pomodoro-toggle:hover,
+    .luria-pomodoro-toggle[aria-expanded="true"] {
+      border-color:var(--accent);
+      background:var(--accent-soft);
+      color:var(--accent);
+    }
+    .luria-pomodoro-icon {
+      width:20px;height:20px;display:grid;place-items:center;flex:0 0 20px;
+    }
+    .luria-pomodoro-icon svg {
+      width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;
+      stroke-linecap:round;stroke-linejoin:round;
+    }
+    .luria-pomodoro-copy { display:grid; line-height:1.05; }
+    .luria-pomodoro-copy strong { font-size:10px; font-weight:850; }
+    .luria-pomodoro-copy small { margin-top:2px; font-size:9px; color:var(--muted); font-weight:800; }
+
+    .luria-notification-toggle,
+    .luria-profile-toggle {
+      width:40px !important;
+      height:40px !important;
+      min-width:40px !important;
+      border-radius:11px !important;
+    }
+
+    .luria-profile-toggle {
+      border:1px solid var(--border) !important;
+      background:var(--surface) !important;
+      color:var(--accent) !important;
+      font:900 16px/1 inherit !important;
+    }
+
+    .luria-pomodoro-panel {
+      position:absolute;
+      right:0;
+      top:48px;
+      z-index:420;
+      width:220px;
+      padding:14px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:var(--surface);
+      box-shadow:0 16px 42px rgba(0,0,0,.16);
+    }
+    .luria-pomodoro-panel[hidden]{display:none!important}
+    .luria-pomodoro-panel header { display:flex; justify-content:space-between; }
+    .luria-pomodoro-panel header strong { display:block; font-size:13px; }
+    .luria-pomodoro-panel header small { color:var(--muted); font-size:9px; }
+    .luria-pomodoro-time { margin:14px 0; font-size:34px; font-weight:900; letter-spacing:-.04em; }
+    .luria-pomodoro-actions { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .luria-pomodoro-actions button {
+      min-height:36px;border:1px solid var(--border);border-radius:9px;background:var(--surface-2);
+      color:var(--text);font-weight:800;
+    }
+
+    /* Afastar Pomodoro e sino do perfil */
+    .luria-pomodoro-top { margin-right:2px; }
+    #luria-notification-toggle { margin-right:4px; }
+
+    @media(max-width:760px){
+      .luria-notifications{gap:9px!important}
+      .luria-pomodoro-toggle{min-width:96px;padding:0 8px}
+      .luria-pomodoro-copy strong{display:none}
+      .luria-pomodoro-copy small{margin:0;font-size:10px}
+    }
+  `;
+
   document.head.appendChild(style);
 })();
 
@@ -2676,10 +2770,25 @@ function notificationIcon(type) {
 
 
 function ensureNotificationCenter() {
-  const topbar =
+  let topbar =
     document.querySelector(
       ".topbar"
     );
+
+  if (!topbar) {
+    const pageRoot =
+      document.querySelector(".page")
+      || document.querySelector("main");
+
+    if (pageRoot) {
+      topbar = document.createElement("header");
+      topbar.className = "topbar luria-global-topbar";
+      const spacer = document.createElement("div");
+      spacer.className = "page-heading luria-global-topbar-spacer";
+      topbar.appendChild(spacer);
+      pageRoot.prepend(topbar);
+    }
+  }
 
   if (
     !topbar
@@ -2702,6 +2811,42 @@ function ensureNotificationCenter() {
     "luria-notifications";
 
   center.innerHTML = `
+    <div class="luria-pomodoro-top">
+      <button
+        id="luria-pomodoro-toggle"
+        class="luria-pomodoro-toggle"
+        type="button"
+        aria-label="Pomodoro"
+        aria-expanded="false"
+      >
+        <span class="luria-pomodoro-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 2h6"></path>
+            <path d="M12 14l3-3"></path>
+            <circle cx="12" cy="14" r="8"></circle>
+          </svg>
+        </span>
+        <span class="luria-pomodoro-copy">
+          <strong>Pomodoro</strong>
+          <small id="luria-pomodoro-mini-time">25:00</small>
+        </span>
+      </button>
+
+      <section id="luria-pomodoro-panel" class="luria-pomodoro-panel" hidden>
+        <header>
+          <div>
+            <strong>Pomodoro</strong>
+            <small id="luria-pomodoro-state-label">Foco</small>
+          </div>
+        </header>
+        <div id="luria-pomodoro-time" class="luria-pomodoro-time">25:00</div>
+        <div class="luria-pomodoro-actions">
+          <button id="luria-pomodoro-start" type="button">Iniciar</button>
+          <button id="luria-pomodoro-reset" type="button">Reiniciar</button>
+        </div>
+      </section>
+    </div>
+
     <button
       id="luria-notification-toggle"
       class="luria-notification-toggle"
@@ -2799,6 +2944,61 @@ function ensureNotificationCenter() {
     center
   );
 
+  const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
+  const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
+  const pomodoroMiniTime = document.getElementById("luria-pomodoro-mini-time");
+  const pomodoroTime = document.getElementById("luria-pomodoro-time");
+  const pomodoroStart = document.getElementById("luria-pomodoro-start");
+  const pomodoroReset = document.getElementById("luria-pomodoro-reset");
+  let pomodoroRemaining = 25 * 60;
+  let pomodoroTimer = null;
+  let pomodoroRunning = false;
+
+  const renderPomodoro = () => {
+    const m = String(Math.floor(pomodoroRemaining / 60)).padStart(2, "0");
+    const s = String(pomodoroRemaining % 60).padStart(2, "0");
+    const label = m + ":" + s;
+    if (pomodoroMiniTime) pomodoroMiniTime.textContent = label;
+    if (pomodoroTime) pomodoroTime.textContent = label;
+    if (pomodoroStart) pomodoroStart.textContent = pomodoroRunning ? "Pausar" : "Iniciar";
+  };
+
+  const stopPomodoro = () => {
+    if (pomodoroTimer) clearInterval(pomodoroTimer);
+    pomodoroTimer = null;
+    pomodoroRunning = false;
+    renderPomodoro();
+  };
+
+  pomodoroToggle?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const open = pomodoroPanel?.hidden ?? true;
+    if (pomodoroPanel) pomodoroPanel.hidden = !open;
+    pomodoroToggle.setAttribute("aria-expanded", String(open));
+  });
+
+  pomodoroStart?.addEventListener("click", () => {
+    if (pomodoroRunning) {
+      stopPomodoro();
+      return;
+    }
+    pomodoroRunning = true;
+    renderPomodoro();
+    pomodoroTimer = setInterval(() => {
+      pomodoroRemaining = Math.max(0, pomodoroRemaining - 1);
+      renderPomodoro();
+      if (pomodoroRemaining === 0) stopPomodoro();
+    }, 1000);
+  });
+
+  pomodoroReset?.addEventListener("click", () => {
+    stopPomodoro();
+    pomodoroRemaining = 25 * 60;
+    renderPomodoro();
+  });
+
+  renderPomodoro();
+
   const profileToggle = document.getElementById("luria-profile-toggle");
   const profileMenu = document.getElementById("luria-profile-menu");
   profileToggle?.addEventListener("click", (event) => {
@@ -2808,10 +3008,15 @@ function ensureNotificationCenter() {
     profileToggle.setAttribute("aria-expanded", String(open));
   });
   document.addEventListener("click", (event) => {
-    if (!profileMenu || profileMenu.hidden) return;
     if (!center.contains(event.target)) {
-      profileMenu.hidden = true;
-      profileToggle?.setAttribute("aria-expanded", "false");
+      if (profileMenu && !profileMenu.hidden) {
+        profileMenu.hidden = true;
+        profileToggle?.setAttribute("aria-expanded", "false");
+      }
+      if (pomodoroPanel && !pomodoroPanel.hidden) {
+        pomodoroPanel.hidden = true;
+        pomodoroToggle?.setAttribute("aria-expanded", "false");
+      }
     }
   });
   document.getElementById("luria-profile-logout")?.addEventListener("click", async () => {
