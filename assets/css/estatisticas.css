@@ -505,3 +505,60 @@
  [data-stats-panel] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
  [data-stats-panel] .stats-block,[data-stats-panel] .stats-block.wide{grid-column:span 12!important}
 }
+
+/* v24.1 — hierarquia ergonômica do Geral: mapa de atividade sobe e vira callout principal */
+[data-stats-panel="geral"] .stats-block-grid{
+  display:grid!important;
+  grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  grid-template-areas:
+    "habit habit habit habit habit habit heat heat heat heat heat heat"
+    "dist dist dist dist prog prog prog prog area area area area"
+    "ins ins ins ins ins ins ins ins ins ins ins ins"!important;
+  align-items:stretch!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(1){grid-area:habit!important}
+[data-stats-panel="geral"] .stats-block:nth-child(2){grid-area:dist!important}
+[data-stats-panel="geral"] .stats-block:nth-child(3){grid-area:prog!important}
+[data-stats-panel="geral"] .stats-block:nth-child(4){
+  grid-area:heat!important;
+  min-height:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-start!important;
+}
+[data-stats-panel="geral"] .stats-block:nth-child(5){grid-area:area!important}
+[data-stats-panel="geral"] .stats-block:nth-child(6){grid-area:ins!important}
+
+/* heatmap como módulo visual, sem espaço morto */
+[data-stats-panel="geral"] #general-week-heatmap{
+  flex:1!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:150px!important;
+  padding:4px 0 0!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-heatmap{width:100%!important}
+[data-stats-panel="geral"] #general-week-heatmap .activity-grid{
+  justify-content:center!important;
+  grid-template-columns:24px repeat(12,13px)!important;
+  grid-auto-rows:13px!important;
+  gap:4px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-months{
+  justify-content:center!important;
+  grid-template-columns:24px repeat(12,13px)!important;
+  gap:4px!important;
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-square{
+  width:13px!important;height:13px!important;border-radius:3px!important
+}
+[data-stats-panel="geral"] #general-week-heatmap .activity-day{line-height:13px!important}
+
+@media(max-width:900px){
+ [data-stats-panel="geral"] .stats-block-grid{
+   grid-template-columns:1fr!important;
+   grid-template-areas:"heat" "habit" "dist" "prog" "area" "ins"!important;
+ }
+ [data-stats-panel="geral"] #general-week-heatmap{min-height:125px!important}
+}
