@@ -15,7 +15,7 @@
   <meta name="apple-mobile-web-app-title" content="LURIA">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="assets/css/style.css?v=16.11-settings-reference">
 
   <style>
     .settings-section {
@@ -812,6 +812,234 @@
       }
     }
 
+
+    /* Configurações — Personalizar fiel à referência */
+    .settings-reference-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+      align-items:start;
+    }
+    .settings-reference-card{
+      min-width:0;
+      padding:18px 20px;
+      border:1px solid var(--border);
+      border-radius:16px;
+      background:color-mix(in srgb,var(--surface) 96%,var(--accent) 4%);
+      box-shadow:0 8px 24px rgba(15,23,42,.035);
+    }
+    .settings-reference-head{
+      display:flex;
+      align-items:flex-start;
+      gap:11px;
+      margin-bottom:14px;
+    }
+    .settings-reference-icon{
+      width:31px;height:31px;flex:0 0 31px;
+      display:grid;place-items:center;
+      color:var(--accent);
+      font-size:22px;font-weight:800;line-height:1;
+    }
+    .settings-reference-head h2{
+      margin:0;
+      color:var(--text);
+      font-size:17px;
+      line-height:1.2;
+    }
+    .settings-reference-head p{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:11px;
+      line-height:1.4;
+    }
+    .settings-choice-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+    }
+    .settings-choice{
+      position:relative;
+      min-height:116px;
+      padding:11px 12px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--surface);
+      cursor:pointer;
+      transition:border-color .15s,box-shadow .15s,background .15s;
+    }
+    .settings-choice input{
+      position:absolute;
+      opacity:0;
+      pointer-events:none;
+    }
+    .settings-choice:has(input:checked){
+      border-color:var(--accent);
+      box-shadow:inset 0 0 0 1px var(--accent),0 0 0 3px color-mix(in srgb,var(--accent) 10%,transparent);
+      background:color-mix(in srgb,var(--surface) 94%,var(--accent) 6%);
+    }
+    .settings-choice-radio{
+      width:18px;height:18px;
+      border:1px solid var(--border);
+      border-radius:50%;
+      display:grid;place-items:center;
+      margin-bottom:7px;
+    }
+    .settings-choice:has(input:checked) .settings-choice-radio{
+      border-color:var(--accent);
+    }
+    .settings-choice:has(input:checked) .settings-choice-radio::after{
+      content:"";
+      width:9px;height:9px;border-radius:50%;
+      background:var(--accent);
+    }
+    .settings-choice-preview{
+      height:44px;
+      margin:0 0 8px 28px;
+      border-radius:7px;
+      border:1px solid var(--border);
+      background:
+        linear-gradient(90deg,color-mix(in srgb,var(--accent) 24%,var(--surface-2)) 0 24%,var(--surface-2) 24% 100%);
+      position:relative;
+      overflow:hidden;
+    }
+    .settings-choice-preview.top{
+      background:
+        linear-gradient(180deg,color-mix(in srgb,var(--accent) 24%,var(--surface-2)) 0 26%,var(--surface-2) 26% 100%);
+    }
+    .settings-choice-preview.cards::before{
+      content:"";
+      position:absolute;
+      left:8px;right:8px;bottom:7px;height:19px;
+      border-radius:5px;
+      background:linear-gradient(90deg,var(--surface) 0 31%,transparent 31% 34%,var(--surface) 34% 65%,transparent 65% 68%,var(--surface) 68%);
+    }
+    .settings-choice strong{
+      display:block;
+      margin-top:2px;
+      color:var(--text);
+      font-size:12px;
+    }
+    .settings-choice small{
+      display:block;
+      margin-top:4px;
+      color:var(--muted);
+      font-size:10px;
+      line-height:1.35;
+    }
+    .settings-control-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px 18px;
+    }
+    .settings-control-grid.cols-4{
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+    }
+    .settings-control{
+      display:grid;
+      gap:6px;
+      min-width:0;
+    }
+    .settings-control>span{
+      color:var(--muted);
+      font-size:10px;
+      font-weight:700;
+    }
+    .settings-control input,
+    .settings-control select{
+      width:100%;
+      min-height:40px;
+      padding:0 11px;
+      border:1px solid var(--border);
+      border-radius:9px;
+      background:var(--surface);
+      color:var(--text);
+      outline:none;
+    }
+    .settings-control input:focus,
+    .settings-control select:focus{
+      border-color:var(--accent);
+      box-shadow:0 0 0 3px var(--accent-soft);
+    }
+    .settings-switch-list{
+      display:grid;
+      gap:10px;
+      margin-top:12px;
+    }
+    .settings-switch-row{
+      display:grid;
+      grid-template-columns:18px minmax(0,1fr) auto;
+      gap:9px;
+      align-items:start;
+      color:var(--text);
+      font-size:11px;
+    }
+    .settings-switch-row .row-icon{
+      color:var(--muted);
+      line-height:22px;
+    }
+    .settings-switch-copy strong{
+      display:block;
+      font-size:11px;
+      font-weight:700;
+    }
+    .settings-switch-copy small{
+      display:block;
+      margin-top:2px;
+      color:var(--muted);
+      font-size:9px;
+      line-height:1.35;
+    }
+    .settings-switch{
+      position:relative;
+      width:34px;height:20px;
+      flex:0 0 auto;
+    }
+    .settings-switch input{
+      position:absolute;
+      opacity:0;
+      pointer-events:none;
+    }
+    .settings-switch span{
+      position:absolute;inset:0;
+      border-radius:999px;
+      background:var(--border);
+      transition:.18s;
+      cursor:pointer;
+    }
+    .settings-switch span::after{
+      content:"";
+      position:absolute;
+      width:16px;height:16px;
+      top:2px;left:2px;
+      border-radius:50%;
+      background:#fff;
+      box-shadow:0 1px 3px rgba(15,23,42,.2);
+      transition:.18s;
+    }
+    .settings-switch input:checked+span{
+      background:var(--accent);
+    }
+    .settings-switch input:checked+span::after{
+      transform:translateX(14px);
+    }
+    .settings-reference-card.interface-card{
+      grid-column:1;
+    }
+    @media(max-width:1100px){
+      .settings-control-grid.cols-4{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media(max-width:900px){
+      .settings-reference-grid{grid-template-columns:1fr}
+      .settings-reference-card.interface-card{grid-column:auto}
+    }
+    @media(max-width:620px){
+      .settings-choice-grid,
+      .settings-control-grid,
+      .settings-control-grid.cols-4{grid-template-columns:1fr}
+      .settings-reference-card{padding:15px}
+    }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=3-work-settings">
@@ -854,980 +1082,128 @@
           <button type="button" class="settings-tab" data-settings-tab="privacidade">Privacidade</button>
         </nav>
 
-        <section class="settings-section settings-personalize-grid" data-settings-view="personalizar">
+        <section class="settings-section" data-settings-view="personalizar">
+          <div class="settings-reference-grid">
 
-          <article class="setting-row onboarding-settings-block">
-            <div>
-              <h2>Onboarding</h2>
-              <p>Refaça o passeio guiado do LURIA sempre que quiser rever as principais funções da plataforma.</p>
-            </div>
-
-            <div class="settings-actions">
-              <button
-                id="restart-luria-onboarding"
-                class="button primary"
-                type="button"
-              >
-                Refazer onboarding
-              </button>
-            </div>
-          </article>
-
-          <article class="setting-row" id="perfil">
-            <div>
-              <h2>Perfil</h2>
-              <p>
-                Essas informações aparecem no menu lateral do LURIA.
-              </p>
-            </div>
-
-            <div class="profile-grid">
-              <label class="profile-field full">
-                <span>Nome de usuário</span>
-                <input
-                  id="profile-name"
-                  type="text"
-                  maxlength="80"
-                  placeholder="Ex.: Luiz Arantes"
-                  autocomplete="name"
-                >
-              </label>
-
-              <div class="profile-field">
-                <span>Sexo</span>
-
-                <div class="profile-picker">
-                  <button
-                    id="profile-gender-toggle"
-                    class="profile-picker-toggle"
-                    type="button"
-                    aria-haspopup="listbox"
-                    aria-expanded="false"
-                  >
-                    <span id="profile-gender-label">Selecione</span>
-                    <span class="profile-picker-chevron" aria-hidden="true">⌄</span>
-                  </button>
-
-                  <div
-                    id="profile-gender-menu"
-                    class="profile-picker-menu"
-                    role="listbox"
-                    hidden
-                  ></div>
-
-                  <select id="profile-gender" class="profile-native-select" tabindex="-1" aria-hidden="true">
-                    <option value="">Selecione</option>
-                    <option value="male">Masculino</option>
-                    <option value="female">Feminino</option>
-                    <option value="other">Outro</option>
-                    <option value="prefer_not_to_say">Prefiro não informar</option>
-                  </select>
-                </div>
+            <article class="settings-reference-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">☰</span>
+                <div><h2>Menu</h2><p>Escolha como prefere navegar na LURIA.</p></div>
               </div>
-
-              <div class="profile-field">
-                <span>Especialidade</span>
-
-                <div class="profile-picker">
-                  <button
-                    id="profile-specialty-toggle"
-                    class="profile-picker-toggle"
-                    type="button"
-                    aria-haspopup="listbox"
-                    aria-expanded="false"
-                  >
-                    <span id="profile-specialty-label">Selecione</span>
-                    <span class="profile-picker-chevron" aria-hidden="true">⌄</span>
-                  </button>
-
-                  <div
-                    id="profile-specialty-menu"
-                    class="profile-picker-menu profile-specialty-menu"
-                    role="listbox"
-                    hidden
-                  ></div>
-
-                  <input
-                    id="profile-specialty"
-                    class="profile-native-select"
-                    type="text"
-                    maxlength="100"
-                    list="specialty-options"
-                    placeholder="Ex.: Cirurgia Geral"
-                    tabindex="-1"
-                    aria-hidden="true"
-                  >
-                </div>
-
-                <datalist id="specialty-options" data-luria-area-list>
-                  <option value="Alergia e Imunologia">
-                  <option value="Anestesiologia">
-                  <option value="Angiologia">
-                  <option value="Cardiologia">
-                  <option value="Cirurgia Cardiovascular">
-                  <option value="Cirurgia da Mão">
-                  <option value="Cirurgia de Cabeça e Pescoço">
-                  <option value="Cirurgia do Aparelho Digestivo">
-                  <option value="Cirurgia Geral">
-                  <option value="Cirurgia Oncológica">
-                  <option value="Cirurgia Pediátrica">
-                  <option value="Cirurgia Plástica">
-                  <option value="Cirurgia Torácica">
-                  <option value="Cirurgia Vascular">
-                  <option value="Clínica Médica">
-                  <option value="Coloproctologia">
-                  <option value="Dermatologia">
-                  <option value="Endocrinologia e Metabologia">
-                  <option value="Endoscopia">
-                  <option value="Gastroenterologia">
-                  <option value="Genética Médica">
-                  <option value="Geriatria">
-                  <option value="Ginecologia e Obstetrícia">
-                  <option value="Hematologia e Hemoterapia">
-                  <option value="Homeopatia">
-                  <option value="Infectologia">
-                  <option value="Mastologia">
-                  <option value="Medicina de Emergência">
-                  <option value="Medicina de Família e Comunidade">
-                  <option value="Medicina do Esporte">
-                  <option value="Medicina do Trabalho">
-                  <option value="Medicina Física e Reabilitação">
-                  <option value="Medicina Intensiva">
-                  <option value="Medicina Legal e Perícia Médica">
-                  <option value="Medicina Nuclear">
-                  <option value="Medicina Preventiva">
-                  <option value="Nefrologia">
-                  <option value="Neurocirurgia">
-                  <option value="Neurologia">
-                  <option value="Nutrologia">
-                  <option value="Oftalmologia">
-                  <option value="Oncologia Clínica">
-                  <option value="Ortopedia e Traumatologia">
-                  <option value="Otorrinolaringologia">
-                  <option value="Patologia">
-                  <option value="Patologia Clínica / Medicina Laboratorial">
-                  <option value="Pediatria">
-                  <option value="Pneumologia">
-                  <option value="Psiquiatria">
-                  <option value="Radiologia e Diagnóstico por Imagem">
-                  <option value="Radioterapia">
-                  <option value="Reumatologia">
-                  <option value="Urologia">
-                </datalist>
-              </div>
-            </div>
-
-            <div class="profile-preview">
-              <div id="profile-preview-avatar" class="profile-preview-avatar">U</div>
-              <div>
-                <strong id="profile-preview-name">Seu nome</strong>
-                <small id="profile-preview-specialty">Sua especialidade</small>
-              </div>
-            </div>
-
-            <div class="profile-actions">
-              <button id="save-profile" class="button primary" type="button">
-                Salvar perfil
-              </button>
-
-              <span id="profile-status" class="profile-status" aria-live="polite"></span>
-            </div>
-          </article>
-
-          <article class="setting-row">
-            <div>
-              <h2>Aparência</h2>
-              <p>O tema fica salvo na sua conta.</p>
-            </div>
-
-            <form id="theme-form" class="theme-options">
-              <label class="theme-option">
-                <input type="radio" name="theme" value="light">
-                <span>Claro</span>
-              </label>
-
-              <label class="theme-option">
-                <input type="radio" name="theme" value="dark">
-                <span>Escuro</span>
-              </label>
-
-              <label class="theme-option">
-                <input type="radio" name="theme" value="system">
-                <span>Sistema</span>
-              </label>
-
-              <label class="theme-option leila-preview">
-                <input type="radio" name="theme" value="leila-mood">
-                <span>
-                  <strong>Pink Mood</strong>
-                  <small>tons de rosa</small>
-                </span>
-              </label>
-            </form>
-
-            <div id="theme-status" class="inline-status"></div>
-          </article>
-
-          <article class="setting-row dashboard-layout-setting">
-            <div>
-              <h2>Layout do dashboard</h2>
-              <p>Escolha como os seus dados aparecem na página inicial.</p>
-            </div>
-            <fieldset id="dashboard-layout-options" class="dashboard-layout-options">
-              <legend class="sr-only">Escolha o layout do dashboard</legend>
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="old">
-                <span class="dashboard-layout-choice-body dashboard-layout-old-preview">
-                  <span class="dashboard-layout-old-icon" aria-hidden="true">▦</span>
-                  <strong>Opção antiga</strong><small>Layout atual do LURIA</small>
-                </span>
-              </label>
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="1">
-                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-1.webp" alt="Prévia da agenda em destaque" loading="lazy"><strong>Opção 1 · Agenda</strong><small>Dia em primeiro plano</small></span>
-              </label>
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="2">
-                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-2.webp" alt="Prévia dos indicadores em colunas" loading="lazy"><strong>Opção 2 · Indicadores</strong><small>Progresso em colunas</small></span>
-              </label>
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="3">
-                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-3.webp" alt="Prévia do painel completo" loading="lazy"><strong>Opção 3 · Painel completo</strong><small>Inclui o Pulo do Gato</small></span>
-              </label>
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="4">
-                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-4.webp" alt="Prévia dos cartões de progresso" loading="lazy"><strong>Opção 4 · Compacto</strong><small>Cartões e próximas atividades</small></span>
-              </label>
-            </fieldset>
-            <div id="dashboard-layout-status" class="inline-status" role="status" aria-live="polite"></div>
-            <a class="dashboard-layout-open" href="/dashboard/">Ver dashboard →</a>
-          </article>
-
-          
-
-          <article class="setting-row work-dashboard-layout-setting">
-            <div>
-              <h2>Layout do dashboard do Trabalho</h2>
-              <p>Escolha entre a visão completa do ambiente profissional e uma versão mais direta para o dia a dia.</p>
-            </div>
-            <fieldset id="work-dashboard-layout-options" class="dashboard-layout-options">
-              <legend class="sr-only">Escolha o layout do dashboard do Trabalho</legend>
-
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="work-dashboard-layout" value="detailed">
-                <span class="dashboard-layout-choice-body dashboard-layout-old-preview">
-                  <span class="dashboard-layout-old-icon" aria-hidden="true">▦</span>
-                  <strong>Detalhado</strong>
-                  <small>Plantões, horas, financeiro, atendimento e ferramentas clínicas.</small>
-                </span>
-              </label>
-
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="work-dashboard-layout" value="simple">
-                <span class="dashboard-layout-choice-body dashboard-layout-old-preview">
-                  <span class="dashboard-layout-old-icon" aria-hidden="true">▤</span>
-                  <strong>Simples</strong>
-                  <small>Próximo plantão, resumo do mês e acessos rápidos.</small>
-                </span>
-              </label>
-            </fieldset>
-
-            <div id="work-dashboard-layout-status" class="inline-status" role="status" aria-live="polite"></div>
-            <a class="dashboard-layout-open" href="/trabalho/">Ver dashboard do Trabalho →</a>
-          </article>
-
-          <article class="setting-row target-exams-setting">
-            <div>
-              <h2>Provas-alvo</h2>
-              <p>
-                Escolha até 3 provas em ordem de importância. A 1ª escolha tem maior peso,
-                seguida pela 2ª e pela 3ª, e essa hierarquia reorganiza o Cronograma Base.
-              </p>
-            </div>
-
-            <div id="target-exam-priority-summary" class="target-exam-priority-summary" aria-label="Ordem de prioridade das provas"></div>
-            <div class="target-exam-list-label">Escolha as provas na ordem de importância</div>
-            <input id="target-exam-search" class="target-exam-search" type="search" placeholder="Buscar prova..." autocomplete="off" aria-label="Buscar prova">
-            <div class="target-exam-grid" id="target-exam-grid" aria-label="Provas-alvo"></div>
-
-            <div class="target-exam-meta">
-              <span><strong id="target-exam-count">0/3</strong> selecionadas</span>
-              <span>Pesos: 1ª 50% · 2ª 30% · 3ª 20%</span>
-            </div>
-
-            <div class="settings-actions">
-              <button id="save-target-exams" class="button primary" type="button">Salvar provas</button>
-              <span id="target-exams-status" class="settings-save-status" aria-live="polite"></span>
-            </div>
-
-            <p class="settings-note">
-              Preparado para IA: futuramente o mesmo motor poderá relacionar automaticamente
-              nomes de aulas dos cursinhos aos temas canônicos destas provas.
-            </p>
-          </article>
-
-<article class="setting-row">
-            <div>
-              <h2>Dias de estudo</h2>
-              <p>
-                Revisões automáticas serão deslocadas para o próximo dia permitido.
-                Movimentos manuais na agenda continuam livres.
-              </p>
-            </div>
-
-            <div class="study-days-grid">
-
-              <div class="study-days-row">
-                <div class="study-days-label">
-                  <strong>Flashcards</strong>
-                  <small>Dias em que revisões de flashcards podem cair.</small>
-                </div>
-                <div class="weekday-options" data-weekday-group="flashcard_weekdays"></div>
-              </div>
-
-              <div class="study-days-row">
-                <div class="study-days-label">
-                  <strong>Estudo teórico</strong>
-                  <small>Dias preferenciais para aulas e distribuição automática futura.</small>
-                </div>
-                <div class="weekday-options" data-weekday-group="theory_study_weekdays"></div>
-              </div>
-
-              <div class="study-days-row">
-                <div class="study-days-label">
-                  <strong>Revisão teórica</strong>
-                  <small>Dias usados para revisões das matérias já estudadas.</small>
-                </div>
-                <div class="weekday-options" data-weekday-group="theory_review_weekdays"></div>
-              </div>
-
-              <div class="study-days-row">
-                <div class="study-days-label">
-                  <strong>Caderno de erros</strong>
-                  <small>Dias permitidos para a revisão dos Pulos do Gato.</small>
-                </div>
-                <div class="weekday-options" data-weekday-group="error_weekdays"></div>
-              </div>
-
-              <div class="study-days-row">
-                <div class="study-days-label">
-                  <strong>Questões</strong>
-                  <small>Dias destinados às sessões de questões.</small>
-                </div>
-                <div class="weekday-options" data-weekday-group="question_weekdays"></div>
-              </div>
-
-            </div>
-
-            <div class="capacity-grid">
-
-              <div class="capacity-row">
-                <label for="max-lessons-per-day">
-                  <strong>Máximo de aulas teóricas por dia</strong>
-                  <small>
-                    Usado ao reorganizar aulas atrasadas no Cronograma.
-                  </small>
+              <div class="settings-choice-grid">
+                <label class="settings-choice">
+                  <input type="radio" name="settings-menu-mode" value="lateral" checked>
+                  <span class="settings-choice-radio"></span>
+                  <div class="settings-choice-preview"></div>
+                  <strong>Lateral</strong>
+                  <small>Menu na lateral (padrão).</small>
                 </label>
-
-                <input
-                  id="max-lessons-per-day"
-                  type="number"
-                  min="1"
-                  max="50"
-                  step="1"
-                  value="1"
-                >
-              </div>
-
-              <div class="capacity-row">
-                <label for="max-subject-reviews">
-                  <strong>Máximo de revisões teóricas por dia</strong>
-                </label>
-
-                <input
-                  id="max-subject-reviews"
-                  type="number"
-                  min="1"
-                  max="50"
-                  step="1"
-                  value="3"
-                >
-              </div>
-
-            </div>
-
-            <div class="settings-actions">
-              <button id="save-study-days" class="button primary" type="button">
-                Salvar dias de estudo
-              </button>
-
-              <span id="study-days-status" class="settings-save-status" aria-live="polite"></span>
-            </div>
-          </article>
-
-          <article class="setting-row">
-            <div>
-              <h2>Pomodoro</h2>
-              <p>
-                Defina a duração padrão dos ciclos de foco e das pausas.
-                O tempo contabilizado no Dashboard considera somente o foco efetivo.
-              </p>
-            </div>
-
-            <div class="pomodoro-settings-grid">
-              <label class="pomodoro-setting-field">
-                <span>Foco</span>
-                <input
-                  id="pomodoro-focus-minutes"
-                  type="number"
-                  min="1"
-                  max="240"
-                  step="1"
-                  value="25"
-                >
-                <small>minutos por ciclo</small>
-              </label>
-
-              <label class="pomodoro-setting-field">
-                <span>Pausa</span>
-                <input
-                  id="pomodoro-break-minutes"
-                  type="number"
-                  min="1"
-                  max="120"
-                  step="1"
-                  value="5"
-                >
-                <small>minutos por pausa</small>
-              </label>
-            </div>
-
-            <div class="settings-actions">
-              <button
-                id="save-pomodoro-settings"
-                class="button primary"
-                type="button"
-              >
-                Salvar Pomodoro
-              </button>
-
-              <button
-                id="restore-pomodoro-settings"
-                class="button secondary settings-restore-default"
-                type="button"
-              >
-                Restaurar padrão
-              </button>
-
-              <span
-                id="pomodoro-settings-status"
-                class="settings-save-status"
-                aria-live="polite"
-              ></span>
-            </div>
-          </article>
-
-          <article class="setting-row">
-            <div>
-              <h2>Periodização dos flashcards</h2>
-              <p>
-                Defina os intervalos usados nas três primeiras etapas.
-                Depois da terceira etapa, o intervalo continua crescendo gradativamente.
-              </p>
-            </div>
-
-            <div class="interval-editor">
-
-              <div class="interval-row">
-                <div class="interval-label">
-                  <strong>Difícil</strong>
-                  <small>Conta como erro.</small>
-                </div>
-
-                <label class="interval-field">
-                  <span>1ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_hard"
-                    data-interval-index="0"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>2ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_hard"
-                    data-interval-index="1"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>3ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_hard"
-                    data-interval-index="2"
-                  >
+                <label class="settings-choice">
+                  <input type="radio" name="settings-menu-mode" value="superior">
+                  <span class="settings-choice-radio"></span>
+                  <div class="settings-choice-preview top"></div>
+                  <strong>Superior</strong>
+                  <small>Menu no topo da página.</small>
                 </label>
               </div>
+            </article>
 
-              <div class="interval-row">
-                <div class="interval-label">
-                  <strong>Intermediário</strong>
-                  <small>Conta como acerto.</small>
-                </div>
-
-                <label class="interval-field">
-                  <span>1ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_medium"
-                    data-interval-index="0"
-                  >
+            <article class="settings-reference-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">▣</span>
+                <div><h2>Estudar</h2><p>Defina o comportamento das abas e listas durante os estudos.</p></div>
+              </div>
+              <div class="settings-choice-grid">
+                <label class="settings-choice">
+                  <input type="radio" name="settings-study-mode" value="abertas" checked>
+                  <span class="settings-choice-radio"></span>
+                  <div class="settings-choice-preview cards"></div>
+                  <strong>Abas sempre abertas</strong>
+                  <small>Mantém todas as abas visíveis.</small>
                 </label>
-
-                <label class="interval-field">
-                  <span>2ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_medium"
-                    data-interval-index="1"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>3ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_medium"
-                    data-interval-index="2"
-                  >
+                <label class="settings-choice">
+                  <input type="radio" name="settings-study-mode" value="accordion">
+                  <span class="settings-choice-radio"></span>
+                  <div class="settings-choice-preview top"></div>
+                  <strong>Lista que abre e fecha</strong>
+                  <small>Mostra apenas uma seção por vez.</small>
                 </label>
               </div>
+            </article>
 
-              <div class="interval-row">
-                <div class="interval-label">
-                  <strong>Fácil</strong>
-                  <small>Conta como acerto.</small>
-                </div>
-
-                <label class="interval-field">
-                  <span>1ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_easy"
-                    data-interval-index="0"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>2ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_easy"
-                    data-interval-index="1"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>3ª etapa</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="flashcard_intervals_easy"
-                    data-interval-index="2"
-                  >
-                </label>
+            <article class="settings-reference-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">▦</span>
+                <div><h2>Cronograma</h2><p>Ajuste a visualização e o comportamento do seu cronograma.</p></div>
               </div>
-
-            </div>
-
-            <div class="settings-actions">
-              <button
-                id="save-flashcard-intervals"
-                class="button primary"
-                type="button"
-              >
-                Salvar intervalos
-              </button>
-
-              <button
-                id="restore-flashcard-intervals"
-                class="button secondary settings-restore-default"
-                type="button"
-              >
-                Restaurar padrão
-              </button>
-
-              <span
-                id="flashcard-intervals-status"
-                class="settings-save-status"
-                aria-live="polite"
-              ></span>
-            </div>
-          </article>
-
-          <article class="setting-row">
-            <div>
-              <h2>Caderno de erros</h2>
-              <p>
-                Configure a sequência de revisões dos Pulos do Gato. Cada valor representa
-                quantos dias serão adicionados depois de clicar em <strong>Lido</strong>.
-              </p>
-            </div>
-
-            <div class="interval-editor">
-              <div class="interval-row error-review-interval-row">
-
-                <div class="interval-label">
-                  <strong>Revisões</strong>
-                  <small>Sequência padrão: 7 + 21 + 21 + 21 + 21 + 21 dias.</small>
-                </div>
-
-                <label class="interval-field">
-                  <span>1ª</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="error_review_intervals"
-                    data-interval-index="0"
-                    value="7"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>2ª</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="error_review_intervals"
-                    data-interval-index="1"
-                    value="21"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>3ª</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="error_review_intervals"
-                    data-interval-index="2"
-                    value="21"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>4ª</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="error_review_intervals"
-                    data-interval-index="3"
-                    value="21"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>5ª</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="error_review_intervals"
-                    data-interval-index="4"
-                    value="21"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>6ª+</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="error_review_intervals"
-                    data-interval-index="5"
-                    value="21"
-                  >
-                </label>
-
+              <div class="settings-control-grid">
+                <label class="settings-control"><span>Visão padrão</span><select id="ui-schedule-view"><option>Semanal</option><option>Mensal</option></select></label>
+                <label class="settings-control"><span>Exibição inicial</span><select id="ui-schedule-initial"><option>Meus eventos</option><option>Aulas</option><option>Revisões</option></select></label>
               </div>
-            </div>
-
-            <p class="settings-note">
-              Depois da 6ª revisão, o último intervalo continua sendo reutilizado.
-              Os dias permitidos para o Caderno de Erros continuam sendo respeitados.
-            </p>
-
-            <div class="settings-actions">
-              <button
-                id="save-error-review-settings"
-                class="button primary"
-                type="button"
-              >
-                Salvar Caderno de Erros
-              </button>
-
-              <button
-                id="restore-error-review-settings"
-                class="button secondary settings-restore-default"
-                type="button"
-              >
-                Restaurar padrão
-              </button>
-
-              <span
-                id="error-review-settings-status"
-                class="settings-save-status"
-                aria-live="polite"
-              ></span>
-            </div>
-          </article>
-
-          <article class="setting-row">
-            <div>
-              <h2>Revisão de matérias</h2>
-              <p>
-                Configure quando as revisões teóricas serão criadas após
-                concluir uma aula.
-              </p>
-            </div>
-
-            <div class="interval-editor">
-              <div class="interval-row">
-                <div class="interval-label">
-                  <strong>Revisões</strong>
-                  <small>Dias depois da aula.</small>
-                </div>
-
-                <label class="interval-field">
-                  <span>1ª revisão</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="subject_review_intervals"
-                    data-interval-index="0"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>2ª revisão</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="subject_review_intervals"
-                    data-interval-index="1"
-                  >
-                </label>
-
-                <label class="interval-field">
-                  <span>3ª revisão</span>
-                  <input
-                    type="number"
-                    min="1"
-                    max="3650"
-                    data-interval-field="subject_review_intervals"
-                    data-interval-index="2"
-                  >
-                </label>
+              <div class="settings-switch-list">
+                <div class="settings-switch-row"><span class="row-icon">◉</span><div class="settings-switch-copy"><strong>Mostrar finais de semana</strong></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+                <div class="settings-switch-row"><span class="row-icon">▤</span><div class="settings-switch-copy"><strong>Destacar revisões</strong></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+                <div class="settings-switch-row"><span class="row-icon">▧</span><div class="settings-switch-copy"><strong>Mostrar disciplinas por cor</strong></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
               </div>
-            </div>
+            </article>
 
-            <p class="settings-note">
-              Os dias permitidos e o limite diário continuam sendo respeitados.
-              Revisões já agendadas não são movidas automaticamente.
-            </p>
-
-            <div class="settings-actions">
-              <button
-                id="save-subject-review-settings"
-                class="button primary"
-                type="button"
-              >
-                Salvar revisões teóricas
-              </button>
-
-              <button
-                id="restore-subject-review-settings"
-                class="button secondary settings-restore-default"
-                type="button"
-              >
-                Restaurar padrão
-              </button>
-
-              <span
-                id="subject-review-settings-status"
-                class="settings-save-status"
-                aria-live="polite"
-              ></span>
-            </div>
-          </article>
-
-          <article class="setting-row">
-            <div>
-              <h2>Onboarding</h2>
-              <p>
-                Refaça a apresentação guiada do LURIA e reveja como funcionam
-                as principais ferramentas da plataforma.
-              </p>
-            </div>
-
-            <div class="settings-actions">
-              <button
-                id="restart-luria-onboarding"
-                class="button secondary"
-                type="button"
-              >
-                Refazer onboarding
-              </button>
-            </div>
-          </article>
-
-          <article class="setting-row">
-            <div>
-              <h2>Login e segurança</h2>
-              <p>
-                Veja a conta conectada e altere sua senha de acesso ao LURIA.
-              </p>
-            </div>
-
-            <div class="security-grid">
-              <div class="security-field full">
-                <span>Face ID / Passkey</span>
-                <div class="security-email" style="display:block;padding:12px;line-height:1.5;">
-                  Use uma Passkey para entrar no PWA com a autenticação do iPhone. No iPhone, o iOS pode usar Face ID para confirmar sua identidade.
-                </div>
-                <div class="settings-actions" style="margin-top:10px;">
-                  <button
-                    id="register-passkey"
-                    class="button primary"
-                    type="button"
-                  >
-                    Ativar Face ID / Passkey
-                  </button>
-                </div>
-                <div
-                  id="passkey-list"
-                  class="settings-note"
-                  style="margin-top:10px;"
-                ></div>
-                <span
-                  id="passkey-status"
-                  class="settings-save-status"
-                  aria-live="polite"
-                ></span>
+            <article class="settings-reference-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">◉</span>
+                <div><h2>Pomodoro</h2><p>Defina seus tempos e preferências do Pomodoro.</p></div>
               </div>
-
-              <label class="security-field full">
-                <span>E-mail da conta</span>
-                <div
-                  id="account-email"
-                  class="security-email"
-                >
-                  —
-                </div>
-              </label>
-
-              <label class="security-field full">
-                <span>Senha atual</span>
-                <input
-                  id="current-password"
-                  type="password"
-                  autocomplete="current-password"
-                  placeholder="Digite sua senha atual"
-                >
-                <small>
-                  Necessária para confirmar sua identidade antes da alteração.
-                </small>
-              </label>
-
-              <label class="security-field">
-                <span>Nova senha</span>
-                <input
-                  id="new-password"
-                  type="password"
-                  minlength="8"
-                  autocomplete="new-password"
-                  placeholder="Mínimo de 8 caracteres"
-                >
-              </label>
-
-              <label class="security-field">
-                <span>Confirmar nova senha</span>
-                <input
-                  id="confirm-password"
-                  type="password"
-                  minlength="8"
-                  autocomplete="new-password"
-                  placeholder="Repita a nova senha"
-                >
-              </label>
-            </div>
-
-            <div class="settings-actions">
-              <button
-                id="save-password"
-                class="button primary"
-                type="button"
-              >
-                Alterar senha
-              </button>
-
-              <span
-                id="password-status"
-                class="settings-save-status"
-                aria-live="polite"
-              ></span>
-            </div>
-
-            <div class="security-field full" style="margin-top:16px;">
-              <span>Sessões abertas</span>
-              <small>
-                Encerre o acesso da sua conta em outros navegadores e dispositivos, mantendo este navegador conectado.
-              </small>
-              <div class="settings-actions" style="margin-top:10px;">
-                <button
-                  id="signout-other-browsers"
-                  class="button secondary"
-                  type="button"
-                >
-                  Sair dos outros navegadores
-                </button>
-
-                <span
-                  id="other-sessions-status"
-                  class="settings-save-status"
-                  aria-live="polite"
-                ></span>
+              <div class="settings-control-grid cols-4">
+                <label class="settings-control"><span>Tempo de foco</span><input id="pomodoro-focus-minutes-ui" type="number" value="25" min="1" max="240"></label>
+                <label class="settings-control"><span>Pausa curta</span><input id="pomodoro-break-minutes-ui" type="number" value="5" min="1" max="120"></label>
+                <label class="settings-control"><span>Pausa longa</span><input type="number" value="15" min="1" max="120"></label>
+                <label class="settings-control"><span>Número de ciclos</span><select><option>4</option><option>3</option><option>5</option></select></label>
               </div>
-            </div>
-          </article>
+              <div class="settings-switch-list">
+                <div class="settings-switch-row"><span class="row-icon">◷</span><div class="settings-switch-copy"><strong>Pausar após 1 hora de inatividade</strong><small>O Pomodoro será pausado automaticamente se você ficar mais de 1 hora sem se movimentar na LURIA.</small></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+              </div>
+            </article>
 
+            <article class="settings-reference-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">◷</span>
+                <div><h2>Cronômetro</h2><p>Defina o comportamento do cronômetro comum.</p></div>
+              </div>
+              <div class="settings-switch-list">
+                <div class="settings-switch-row"><span class="row-icon">◷</span><div class="settings-switch-copy"><strong>Manter rodando entre páginas</strong><small>O cronômetro continua ativo mesmo ao mudar de página.</small></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+                <div class="settings-switch-row"><span class="row-icon">◷</span><div class="settings-switch-copy"><strong>Pausar após 1 hora de inatividade</strong><small>Será pausado automaticamente se você ficar mais de 1 hora sem se movimentar na LURIA.</small></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+              </div>
+            </article>
+
+            <article class="settings-reference-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">↻</span>
+                <div><h2>Revisões</h2><p>Ajuste os intervalos e tempos de revisão.</p></div>
+              </div>
+              <div class="settings-control-grid">
+                <label class="settings-control"><span>Intervalo padrão</span><select><option>1 - 3 - 7 - 15 - 30 dias</option><option>1 - 7 - 30 dias</option></select></label>
+                <label class="settings-control"><span>Tempo de flashcard</span><select><option>15 segundos</option><option>20 segundos</option><option>30 segundos</option></select></label>
+                <label class="settings-control"><span>Repetição de questões erradas</span><select><option>Aumentar frequência</option><option>Frequência padrão</option></select></label>
+                <div class="settings-switch-row" style="align-self:end;padding-bottom:8px"><span class="row-icon">◉</span><div class="settings-switch-copy"><strong>Notificar revisões do dia</strong><small>Receba um lembrete ao iniciar o dia.</small></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+              </div>
+            </article>
+
+            <article class="settings-reference-card interface-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">▰</span>
+                <div><h2>Interface</h2><p>Personalize o visual da LURIA.</p></div>
+              </div>
+              <div class="settings-control-grid cols-4">
+                <label class="settings-control"><span>Tema</span><select id="ui-theme-select"><option value="dark">Escuro (padrão)</option><option value="light">Claro</option><option value="leila-mood">Rosa</option></select></label>
+                <label class="settings-control"><span>Densidade da interface</span><select><option>Confortável</option><option>Compacta</option></select></label>
+                <label class="settings-control"><span>Tamanho da fonte</span><select><option>Médio</option><option>Pequeno</option><option>Grande</option></select></label>
+              </div>
+              <div class="settings-switch-list" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+                <div class="settings-switch-row"><span class="row-icon">▧</span><div class="settings-switch-copy"><strong>Mostrar animações</strong></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+                <div class="settings-switch-row"><span class="row-icon">✧</span><div class="settings-switch-copy"><strong>Efeitos de destaque</strong></div><label class="settings-switch"><input type="checkbox" checked><span></span></label></div>
+              </div>
+            </article>
+
+          </div>
         </section>
       </div>
     </main>
@@ -1835,33 +1211,47 @@
 
   <script>
     (function () {
-      const section = document.querySelector('[data-settings-view="personalizar"]');
-      if (!section) return;
+      const storageKey = "luria:settings:personalizar:v1";
+      const root = document.querySelector('[data-settings-view="personalizar"]');
+      if (!root) return;
 
-      const visibleCards = new Map([
-        ["Aparência", { icon: "◐", wide: false }],
-        ["Layout do dashboard", { icon: "▦", wide: false }],
-        ["Dias de estudo", { icon: "▣", wide: false }],
-        ["Pomodoro", { icon: "◷", wide: false }],
-        ["Periodização dos flashcards", { icon: "↻", wide: true }],
-        ["Caderno de erros", { icon: "✦", wide: true }],
-        ["Revisão de matérias", { icon: "↺", wide: true }]
-      ]);
+      let saved = {};
+      try { saved = JSON.parse(localStorage.getItem(storageKey) || "{}"); } catch {}
 
-      section.querySelectorAll(":scope > .setting-row").forEach((card) => {
-        const heading = card.querySelector("h2");
-        const title = heading?.textContent?.trim() || "";
-        const config = visibleCards.get(title);
-        if (!config) return;
+      const restoreRadio = (name, value) => {
+        if (!value) return;
+        const input = root.querySelector('input[name="' + name + '"][value="' + value + '"]');
+        if (input) input.checked = true;
+      };
+      restoreRadio("settings-menu-mode", saved.menuMode);
+      restoreRadio("settings-study-mode", saved.studyMode);
 
-        card.classList.add("settings-personalize-card");
-        if (config.wide) card.classList.add("settings-wide-card");
-        heading.setAttribute("data-settings-icon", config.icon);
+      const scheduleView = document.getElementById("ui-schedule-view");
+      const scheduleInitial = document.getElementById("ui-schedule-initial");
+      const theme = document.getElementById("ui-theme-select");
+      if (saved.scheduleView && scheduleView) scheduleView.value = saved.scheduleView;
+      if (saved.scheduleInitial && scheduleInitial) scheduleInitial.value = saved.scheduleInitial;
+      if (saved.theme && theme) theme.value = saved.theme;
+
+      const persist = () => {
+        const next = {
+          menuMode: root.querySelector('input[name="settings-menu-mode"]:checked')?.value || "lateral",
+          studyMode: root.querySelector('input[name="settings-study-mode"]:checked')?.value || "abertas",
+          scheduleView: scheduleView?.value || "Semanal",
+          scheduleInitial: scheduleInitial?.value || "Meus eventos",
+          theme: theme?.value || "dark"
+        };
+        try { localStorage.setItem(storageKey, JSON.stringify(next)); } catch {}
+      };
+      root.addEventListener("change", persist);
+
+      theme?.addEventListener("change", () => {
+        document.documentElement.dataset.theme = theme.value;
+        try { localStorage.setItem("docmap:theme:preview", theme.value); } catch {}
       });
 
       document.querySelectorAll(".settings-tab").forEach((tab) => {
         tab.addEventListener("click", () => {
-          if (tab.dataset.settingsTab !== "personalizar") return;
           document.querySelectorAll(".settings-tab").forEach((item) => {
             item.classList.toggle("active", item === tab);
             item.toggleAttribute("aria-current", item === tab);
@@ -1873,7 +1263,7 @@
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js?v=auth4"></script>
-  <script src="assets/js/app.js?v=17.8-streak"></script>
+  <script src="assets/js/app.js?v=17.30-settings-reference"></script>
   <script src="assets/js/study-mode.js?v=14.0"></script>
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
