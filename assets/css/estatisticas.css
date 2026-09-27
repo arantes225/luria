@@ -354,3 +354,28 @@
 .insights{grid-template-columns:1fr!important}.insight{padding:9px 10px!important;border-radius:7px!important}
 @media(max-width:1100px){[data-stats-panel] .stats-summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.stats-block-grid>.stats-block{grid-column:span 12!important}}
 @media(max-width:650px){.stats-tabs{min-width:620px!important;gap:6px!important}.stats-tabs-shell{overflow-x:auto!important}[data-stats-panel] .stats-summary-grid{grid-template-columns:1fr!important}}
+
+/* v23 — Caderno de Erros fiel à referência aprovada */
+.error-reference-page{display:grid;gap:10px}
+.error-ref-summary{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+.error-ref-summary .stats-summary-card{min-height:102px!important;background:var(--surface)!important;padding:14px 16px!important}
+.error-ref-summary .stats-summary-card:before{left:14px;right:auto;top:14px;width:38px;height:38px;border-radius:50%}
+.error-ref-summary .stats-summary-card span,.error-ref-summary .stats-summary-card strong,.error-ref-summary .stats-summary-card small,.error-ref-summary .stats-summary-viz{margin-left:52px!important}
+.error-ref-summary .stats-summary-card span{font-size:9px!important;text-transform:none!important;letter-spacing:0!important;color:var(--text)!important}
+.error-ref-summary .stats-summary-card strong{font-size:22px!important;margin-top:5px!important}.error-ref-summary .stats-summary-viz{display:none}
+.error-ref-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:10px}
+.error-ref-card{grid-column:span 4!important;min-height:220px;padding:12px!important}
+.error-ref-card .stats-section-head{border-bottom:1px solid color-mix(in srgb,var(--border) 70%,transparent);padding-bottom:8px;margin-bottom:7px}
+.error-ref-card .stats-section-head h3{font-size:11px!important}
+.error-ref-card .progress-list{margin-top:4px!important}.error-ref-card .progress-row{grid-template-columns:minmax(120px,1.35fr) minmax(100px,1fr) 46px!important;min-height:27px!important}
+.error-ref-card .progress-row strong{font-size:8px!important}.error-ref-card .progress-row small{font-size:7px!important}
+.error-ref-card .stats-table-wrap{margin-top:2px!important}.error-ref-card .stats-table{font-size:7.6px!important}.error-ref-card .stats-table th,.error-ref-card .stats-table td{padding:5px 6px!important}
+.error-ref-card .chart-box.compact{min-height:165px!important;margin-top:2px!important}
+.error-ref-note{margin-top:4px;padding:8px 10px;border-radius:7px;background:color-mix(in srgb,var(--accent) 8%,var(--surface-2));font-size:8px;text-align:center}
+.error-ref-critical,.error-ref-insights{grid-column:span 6!important;min-height:175px}
+.error-ref-insights .insights{margin-top:0!important;display:grid!important;grid-template-columns:1fr!important;gap:5px!important}.error-ref-insights .insight{padding:7px 9px!important}
+.error-aging-total{display:grid;margin:8px 0 10px}.error-aging-total strong{font-size:26px;line-height:1}.error-aging-total span{font-size:8px;color:var(--muted);margin-top:4px}
+.error-aging-legend{display:grid;gap:5px}.error-aging-legend>div{display:grid;grid-template-columns:8px 1fr auto;gap:6px;align-items:center;font-size:7.5px}.error-aging-legend i{width:7px;height:7px;border-radius:50%;background:var(--accent)}.error-aging-legend strong{font-size:8px}
+.error-aging-bar{display:flex;height:24px;margin:10px 0 8px;border-radius:4px;overflow:hidden;background:var(--surface-2)}.error-aging-bar span{background:var(--accent);border-right:1px solid rgba(255,255,255,.7)}.error-aging-bar span:nth-child(2){opacity:.78}.error-aging-bar span:nth-child(3){opacity:.55}.error-aging-bar span:nth-child(4){opacity:.32}.error-aging-bar+p{font-size:7px;color:var(--muted);line-height:1.4;margin:0}
+.error-status{font-size:7px;font-weight:800}.error-status.danger{color:var(--danger,#e34b62)}.error-status.ok{color:#15956b}
+@media(max-width:900px){.error-ref-summary{grid-template-columns:repeat(2,minmax(0,1fr))!important}.error-ref-card,.error-ref-critical,.error-ref-insights{grid-column:span 12!important}}
