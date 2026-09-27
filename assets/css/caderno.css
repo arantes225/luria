@@ -3345,3 +3345,29 @@
 .notebook-library-list.is-area-home{grid-template-columns:repeat(auto-fill,minmax(210px,1fr))!important}
 @media(max-width:1280px){.notebook-editor-column.with-side-tools{grid-template-columns:minmax(0,1fr) 210px!important}.notebook-outline-panel{display:none!important}}
 @media(max-width:900px){.notebook-workspace{grid-template-columns:1fr!important}.notebook-topic-panel{position:relative!important;top:auto!important;max-height:260px!important}.notebook-editor-column.with-side-tools{display:block!important}.notebook-quick-panel{position:relative!important;top:auto!important;margin-top:10px}.notebook-paper{padding:18px!important}}
+
+
+/* v21.0 — Cadernos no mesmo sistema visual dos Decks */
+#notebook-view-library .notebook-view-head{margin:4px 0 18px}
+#notebook-view-library .notebook-view-head h2{font-size:34px;line-height:1.05;margin:0 0 7px;font-weight:800}
+#notebook-view-library .notebook-view-head p{font-size:11px;margin:0;color:var(--muted)}
+.notebook-library-search-controls{display:grid!important;grid-template-columns:minmax(320px,1fr) 48px!important;gap:10px!important;margin-bottom:25px!important}
+.notebook-searchbar input{height:44px!important;border-radius:9px!important}
+.notebook-library-actions{display:none!important}
+.notebook-library-list{display:block!important}
+.notebook-area-shelf{margin:0 0 31px}
+.notebook-area-shelf-head{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.notebook-area-shelf-icon{display:grid;place-items:center;width:36px;height:36px;font-size:23px;color:var(--accent)}
+.notebook-area-shelf-head>div{display:flex;flex-direction:column;gap:2px}
+.notebook-area-shelf-head strong{font-size:14px}.notebook-area-shelf-head small{font-size:9px;color:var(--muted)}
+.notebook-area-shelf-head button{margin-left:auto;border:0;background:transparent;color:var(--accent);font:inherit;font-size:9px;font-weight:700;cursor:pointer}
+.notebook-book-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.notebook-book-card{position:relative;min-height:190px;padding:17px;border:1px solid var(--border);border-radius:11px;background:var(--surface);box-shadow:var(--shadow-sm);overflow:hidden}
+.notebook-book-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+.notebook-book-top{display:flex;align-items:flex-start;justify-content:space-between}.notebook-book-icon{font-size:27px;color:var(--accent)}.notebook-book-menu{font-size:15px;color:var(--muted)}
+.notebook-book-card h3{font-size:12px;margin:12px 0 5px}.notebook-book-card>p{font-size:8.8px;line-height:1.45;min-height:38px;color:var(--muted);margin:0}
+.notebook-book-meta{display:flex;gap:24px;margin-top:16px}.notebook-book-meta span{display:flex;flex-direction:column}.notebook-book-meta b{font-size:11px}.notebook-book-meta small{font-size:7.8px;color:var(--muted)}
+.notebook-book-open{position:absolute;inset:0;border:0;background:transparent;cursor:pointer}
+@media(max-width:1180px){.notebook-book-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:850px){.notebook-book-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.notebook-book-grid{grid-template-columns:1fr}.notebook-library-search-controls{grid-template-columns:1fr 44px!important}}
