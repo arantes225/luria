@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=24.0">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=24.1">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -31,7 +31,7 @@
     <main class="main notebook-main-shell">
       <div class="page notebook-page">
 <section id="notebook-view-editor" class="notebook-view">
-<div class="note-studio">
+<div class="note-studio-wrap"><button id="notebook-back-library" class="note-back-library note-back-library-top" type="button" aria-label="Voltar para Meus Cadernos">← <span>Meus Cadernos</span></button><div class="note-studio">
 <aside class="note-tree">
  <div class="note-tree-head"><div><small>Anotação atual</small><strong>Estrutura da página</strong></div><button id="notebook-topic-panel-toggle" type="button" aria-expanded="true"><span id="notebook-topic-panel-arrow">‹</span></button></div>
  <div class="note-outline-help">Navegue pelos títulos e subtítulos desta anotação.</div><input id="notebook-topic-search" type="search" hidden><button id="notebook-filter-toggle" type="button" hidden>⌁</button>
@@ -40,7 +40,7 @@
  <div id="notebook-topic-list" class="notebook-topic-list note-page-outline"><div class="notebook-empty-small">Abra uma anotação para ver sua estrutura.</div></div>
 </aside>
 <main class="note-canvas">
- <header class="note-editor-identity"><button id="notebook-back-library" class="note-back-library" type="button" aria-label="Voltar para Meus Cadernos">← <span>Meus Cadernos</span></button><div><div id="notebook-document-area" class="note-page-area">Área</div><h1 id="notebook-document-title">Tema</h1><div id="notebook-document-date" class="note-page-date"></div></div><div class="notebook-document-menu-wrap"><button id="notebook-document-menu-toggle" type="button">•••</button><div id="notebook-document-menu" class="notebook-document-menu" hidden><button id="notebook-document-edit" type="button">Editar</button><button id="notebook-document-delete" class="danger" type="button">Apagar</button></div></div></header><div id="notebook-toolbar" class="note-toolbar" aria-label="Barra de formatação">
+ <header class="note-editor-identity"><div><div id="notebook-document-area" class="note-page-area">Área</div><h1 id="notebook-document-title">Tema</h1><div id="notebook-document-date" class="note-page-date"></div></div><div class="notebook-document-menu-wrap"><button id="notebook-document-menu-toggle" type="button">•••</button><div id="notebook-document-menu" class="notebook-document-menu" hidden><button id="notebook-document-edit" type="button">Editar</button><button id="notebook-document-delete" class="danger" type="button">Apagar</button></div></div></header><div id="notebook-toolbar" class="note-toolbar" aria-label="Barra de formatação">
  <div class="note-toolbar-group note-history-tools"><button type="button" class="note-icon-tool" data-editor-command="undo" title="Desfazer">↶</button><button type="button" class="note-icon-tool" data-editor-command="redo" title="Refazer">↷</button></div>
  <span class="note-tool-sep"></span>
  <div class="note-toolbar-group note-type-tools"><select id="notebook-block-style" class="note-doc-select" disabled><option value="p">Texto normal</option><option value="h1">Título 1</option><option value="h2">Título 2</option><option value="h3">Título 3</option></select><select id="notebook-font-family" class="note-doc-select note-font-select" disabled><option value="default">Padrão</option><option value="Times New Roman">Times</option><option value="Georgia">Georgia</option><option value="Comic Sans MS">Escrita à mão</option></select></div>
@@ -74,8 +74,8 @@
 <section class="note-side-card note-details-card"><div class="note-side-title"><h3>▣ Informações da anotação</h3></div><dl><div><dt>Caderno</dt><dd id="notebook-inspector-book">—</dd></div><div><dt>Área</dt><dd id="notebook-inspector-area">—</dd></div><div><dt>Última edição</dt><dd id="notebook-inspector-updated">—</dd></div><div><dt>Criada em</dt><dd id="notebook-inspector-created">—</dd></div></dl><span id="notebook-inspector-words" hidden>—</span><span id="notebook-inspector-title" hidden>—</span><button id="notebook-inspector-edit" hidden type="button">Editar</button></section>
 <section class="note-side-card note-tasks-card"><div class="note-side-title"><h3>☑ Tarefas do estudo</h3><button id="notebook-task-add" type="button">＋</button></div><div id="notebook-study-tasks" class="note-study-tasks"></div><button class="note-add-row" id="notebook-task-add-row" type="button">＋ Adicionar tarefa</button></section>
 <section class="note-side-card note-links-card"><div class="note-side-title"><h3>↗ Links e referências</h3><button id="notebook-reference-add" type="button">Adicionar</button></div><div id="notebook-reference-list" class="note-reference-list"><div class="note-reference-empty">Nenhuma referência adicionada</div></div></section>
-<section class="note-side-card note-actions-card"><div class="note-side-title"><h3>ϟ Ações rápidas</h3></div><button id="notebook-inspector-open-theme" type="button"><svg viewBox="0 0 24 24"><path d="M4 6h6l2 2h8v10H4z"/><path d="m14 12 2 2-2 2M16 14h-5"/></svg><span>Abrir outro tema</span></button><button id="notebook-inspector-flashcards" type="button"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg><span>Transformar em flashcards</span></button><button id="notebook-inspector-share" type="button"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="19" r="2"/><path d="m8 11 8-5M8 13l8 5"/></svg><span>Compartilhar</span></button><button id="notebook-inspector-delete" class="danger" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/></svg><span>Excluir anotação</span></button></section>
-</aside><div id="notebook-theme-picker" class="note-theme-picker" hidden><div class="note-theme-picker-card"><div class="note-theme-picker-head"><div><small>ANOTAÇÕES</small><h3>Abrir outro tema</h3></div><button id="notebook-theme-picker-close" type="button">×</button></div><input id="notebook-theme-picker-search" type="search" placeholder="Pesquisar tema, aula ou área..." autocomplete="off"><div id="notebook-theme-picker-list" class="note-theme-picker-list"></div></div></div>
+<section class="note-side-card note-actions-card"><div class="note-side-title"><h3>ϟ Ações rápidas</h3></div><button id="notebook-inspector-edit" type="button"><svg viewBox="0 0 24 24"><path d="M4 20h4l11-11-4-4L4 16z"/><path d="m13 7 4 4"/></svg><span>Editar anotação</span></button><button id="notebook-inspector-open-theme" type="button"><svg viewBox="0 0 24 24"><path d="M4 6h6l2 2h8v10H4z"/><path d="m14 12 2 2-2 2M16 14h-5"/></svg><span>Abrir outro tema</span></button><button id="notebook-inspector-flashcards" type="button"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg><span>Transformar em flashcards</span></button><button id="notebook-inspector-share" type="button"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="19" r="2"/><path d="m8 11 8-5M8 13l8 5"/></svg><span>Compartilhar</span></button><button id="notebook-inspector-delete" class="danger" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/></svg><span>Excluir anotação</span></button></section>
+</aside></div><div id="notebook-theme-picker" class="note-theme-picker" hidden><div class="note-theme-picker-card"><div class="note-theme-picker-head"><div><small>ANOTAÇÕES</small><h3>Abrir outro tema</h3></div><button id="notebook-theme-picker-close" type="button">×</button></div><input id="notebook-theme-picker-search" type="search" placeholder="Pesquisar tema, aula ou área..." autocomplete="off"><div id="notebook-theme-picker-list" class="note-theme-picker-list"></div></div></div>
 </div></section>
 
 <section
@@ -485,7 +485,7 @@
     }
   </style>
 
-  <script src="assets/js/caderno.js?v=24.0"></script>
+  <script src="assets/js/caderno.js?v=24.1"></script>
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
