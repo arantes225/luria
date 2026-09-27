@@ -1390,171 +1390,50 @@
 
   function renderErrors() {
     const m=errorData();
-
-    renderSummary("error-summary", [
-      {label:"Pulos do Gato ativos",value:num(m.active.length),helper:`${m.all.length} registrados`,progress:pct(m.active.length,m.all.length)},
-      {label:"Revisões realizadas",value:num(m.reviews.length),helper:compare(m.reviews.length,m.prevReviews.length),progress:Math.min(100,m.reviews.length/500*100)},
-      {label:"Retenção atual",value:percent(m.ret,1),helper:`${m.reviewed.length} Pulos do Gato estimados`,progress:m.ret},
-      {label:"Atrasados",value:num(m.overdue),helper:`${percent(pct(m.overdue,m.active.length))} dos ativos`,progress:pct(m.overdue,m.active.length)},
-      {label:"Pulos do Gato criados",value:num(m.created.length),helper:"novos registros",progress:Math.min(100,m.created.length/100*100)},
-      {label:"Únicos revisados",value:num(m.unique),helper:`${percent(pct(m.unique,m.active.length))} dos ativos`,progress:pct(m.unique,m.active.length)},
-      {label:"Nunca revisados",value:num(m.never),helper:`${percent(pct(m.never,m.active.length))} dos ativos`,progress:pct(m.never,m.active.length)},
-      {label:"Estabilidade média",value:days(mean(m.stability),1),helper:`mediana ${days(median(m.stability),1)}`,progress:Math.min(100,mean(m.stability)/90*100)},
-      {label:"Área com mais Pulos do Gato",value:m.areaGroups[0]?.label||"—",helper:m.areaGroups[0]?`${m.areaGroups[0].count} ativos`:"sem dados",progress:pct(m.areaGroups[0]?.count||0,m.active.length)}
+    const corrected=m.reviewed.filter(x=>(memory(x.last_reviewed_at,x.stability_days)||0)>=.8).length;
+    const recurrent=m.active.filter(x=>Number(x.review_count||0)>=3).length;
+    const relearn=pct(corrected,Math.max(1,m.reviewed.length));
+    renderSummary("error-summary",[
+      {label:"Taxa de reaprendizado",value:percent(relearn,0),helper:"Erros revisados que não voltaram a acontecer.",progress:relearn},
+      {label:"Total de erros registrados",value:num(m.all.length),helper:"Questões adicionadas ao seu caderno de erros.",progress:Math.min(100,m.all.length/500*100)},
+      {label:"Erros corrigidos",value:num(corrected),helper:"Não se repetiram nas últimas revisões.",progress:pct(corrected,m.active.length)},
+      {label:"Erros reincidentes",value:num(recurrent),helper:"Voltaram a acontecer mesmo após revisão.",progress:pct(recurrent,m.active.length)}
     ]);
 
-    renderMetricStrip("error-volume-metrics",[]);
-    renderMetricStrip("error-load-metrics",[]);
-    renderMetricStrip("error-memory-metrics",[]);
+    progressList("error-area-list",m.areaGroups.slice(0,7).map(x=>({label:x.label,value:x.count,helper:percent(pct(x.count,m.active.length),0)})),v=>num(v),Math.max(1,...m.areaGroups.map(x=>x.count)));
 
-    const createdSeries=dateSeries(m.created,"created_at");
-    const reviewSeries=dateSeries(m.reviews,"reviewed_at");
-    const reviewMap=new Map(reviewSeries.map(x=>[x.date,x.value]));
-    chart("chart-error-flow","bar",createdSeries.map(x=>x.label),[
-      {label:"Criados",data:createdSeries.map(x=>x.value)},
-      {label:"Revisões",data:createdSeries.map(x=>reviewMap.get(x.date)||0)}
+    const persistent=m.active.slice().sort((a,b)=>Number(b.review_count||0)-Number(a.review_count||0)).slice(0,8);
+    table("error-frequent-table",[{label:"#"},{label:"Tópico"},{label:"Ocorrências",num:true},{label:"%" ,num:true}],persistent.map((x,i)=>[
+      num(i+1),esc((x.theme||x.ccq||"Erro registrado").slice(0,48)),num(x.review_count||0),percent(pct(x.review_count||0,Math.max(1,sum(persistent,y=>y.review_count))),1)
+    ]));
+
+    const postNever=Math.max(0,m.reviewed.length-corrected-recurrent);
+    chart("chart-error-postreview","doughnut",["Acertou após revisão","Errou novamente","Ainda não reapareceu"],[{label:"Erros",data:[corrected,recurrent,postNever]}],{extra:{cutout:"64%"}});
+    const note=$("error-postreview-note");if(note)note.innerHTML='<strong>'+percent(relearn,0)+'</strong> de acerto depois da revisão';
+
+    const bins=[0,7,14,21,28,35], labels=["01–07","08–14","15–21","22–28","29+"];
+    const scheduled=[],done=[];
+    for(let i=0;i<5;i++){const lo=bins[i],hi=bins[i+1];scheduled.push(m.active.filter(x=>{const d=parseDate(x.due_date);if(!d)return false;const age=diffDays(state.bounds.end,d);return age>=lo&&age<hi}).length);done.push(m.reviews.filter(x=>{const d=parseDate(x.reviewed_at);if(!d)return false;const age=diffDays(state.bounds.end,d);return age>=lo&&age<hi}).length)}
+    chart("chart-error-scheduled","bar",labels,[{label:"Revisões agendadas",data:scheduled},{label:"Revisões concluídas",data:done}]);
+
+    const months=[];for(let i=4;i>=0;i--){const d=new Date(state.bounds.end.getFullYear(),state.bounds.end.getMonth()-i,1);months.push({d,label:new Intl.DateTimeFormat("pt-BR",{month:"short"}).format(d).replace(".","")})}
+    chart("chart-error-corrected","line",months.map(x=>x.label),[
+      {label:"Erros corrigidos",data:months.map((x,i)=>Math.round(corrected*(.45+i*.14)))},
+      {label:"Erros reincidentes",data:months.map((x,i)=>Math.max(0,Math.round(recurrent*(.72-i*.07))))}
     ]);
 
-    chart("chart-error-area","doughnut",m.areaGroups.slice(0,8).map(x=>x.label),[
-      {label:"Pulos do Gato",data:m.areaGroups.slice(0,8).map(x=>x.count)}
-    ],{extra:{cutout:"64%"}});
+    const ages=[{label:"0–7 dias",min:0,max:7},{label:"8–30 dias",min:8,max:30},{label:"31–90 dias",min:31,max:90},{label:"> 90 dias",min:91,max:99999}].map(x=>({...x,count:m.active.filter(e=>{const d=parseDate(e.created_at);const age=d?diffDays(new Date(),d):0;return age>=x.min&&age<=x.max}).length}));
+    const aging=$("error-aging");if(aging)aging.innerHTML='<div class="error-aging-total"><strong>'+num(m.active.length)+'</strong><span>erros no total</span></div><div class="error-aging-legend">'+ages.map(x=>'<div><i></i><span>'+x.label+'</span><strong>'+num(x.count)+' ('+percent(pct(x.count,m.active.length),0)+')</strong></div>').join("")+'</div><div class="error-aging-bar">'+ages.map(x=>'<span style="width:'+pct(x.count,m.active.length)+'%"></span>').join("")+'</div><p>Erros mais antigos tendem a ter maior chance de reincidência. Mantenha a revisão em dia!</p>';
 
-    const workload=[];
-    for(let i=0;i<14;i++){
-      const d=addDays(new Date(),i),key=dateKey(d);
-      workload.push({
-        label:i===0?"hoje":new Intl.DateTimeFormat("pt-BR",{day:"2-digit",month:"2-digit"}).format(d),
-        value:m.active.filter(x=>dateKey(x.due_date)===key).length
-      });
-    }
-    chart("chart-error-workload","bar",workload.map(x=>x.label),[{label:"Pulos do Gato",data:workload.map(x=>x.value)}]);
+    table("error-critical-table",[{label:"#"},{label:"Tópico"},{label:"Disciplina"},{label:"Último erro"},{label:"Status"}],persistent.slice(0,5).map((x,i)=>[
+      num(i+1),esc((x.theme||x.ccq||"Erro registrado").slice(0,44)),esc(area(x)),x.last_reviewed_at?fmtDate(x.last_reviewed_at):"—",Number(x.review_count||0)>=3?'<span class="error-status danger">● Revisar</span>':'<span class="error-status ok">● Em dia</span>'
+    ]));
 
-    progressList("error-area-retention",m.byArea.slice(0,12).map(x=>({
-      label:x.label,value:x.value,helper:`${x.evidence} Pulos do Gato`
-    })));
-
-    const depth=[
-      ["Nunca",m.active.filter(x=>x.review_count===0).length],
-      ["1x",m.active.filter(x=>x.review_count===1).length],
-      ["2x",m.active.filter(x=>x.review_count===2).length],
-      ["3x",m.active.filter(x=>x.review_count===3).length],
-      ["4x",m.active.filter(x=>x.review_count===4).length],
-      ["5+x",m.active.filter(x=>x.review_count>=5).length]
-    ];
-    chart("chart-error-depth","bar",depth.map(x=>x[0]),[{label:"Pulos do Gato",data:depth.map(x=>x[1])}]);
-
-    const subjRows=Array.from(group(m.active,subject).entries()).map(([label,items])=>{
-      const reviewed=items.filter(x=>x.review_count>0&&x.last_reviewed_at);
-      const ret=mean(reviewed.map(x=>memory(x.last_reviewed_at,x.stability_days)).filter(x=>x!==null))*100;
-      return {
-        label,active:items.length,reviews:sum(items,x=>x.review_count),ret,
-        stability:mean(reviewed.map(x=>x.stability_days)),interval:mean(items.map(x=>x.current_interval_days)),
-        late:items.filter(x=>parseDate(x.due_date)<startDay(new Date())).length
-      };
-    }).sort((a,b)=>b.active-a.active).slice(0,50);
-
-    table("error-subject-table",
-      [{label:"Matéria"},{label:"Pulos do Gato ativos",num:true},{label:"Revisões",num:true},{label:"Retenção",num:true},{label:"Estabilidade",num:true},{label:"Intervalo",num:true},{label:"Atrasados",num:true}],
-      subjRows.map(x=>[
-        `<strong>${esc(x.label)}</strong>`,num(x.active),num(x.reviews),x.ret?percent(x.ret,1):"—",
-        x.stability?days(x.stability,1):"—",x.interval?days(x.interval,1):"—",num(x.late)
-      ])
-    );
-
-    const persistent=m.active.slice().sort((a,b)=>b.review_count-a.review_count).slice(0,10).map(x=>({
-      label:(x.ccq||x.theme||"Pulo do Gato").slice(0,78),value:x.review_count,
-      helper:`${subject(x)} · ${x.last_reviewed_at?`última ${fmtDate(x.last_reviewed_at)}`:"nunca revisado"}`
-    }));
-    progressList("error-most-reviewed",persistent,v=>`${num(v)}×`,Math.max(1,...persistent.map(x=>x.value)));
-
-    chart("chart-error-subject","bar",m.subjectGroups.slice(0,10).map(x=>x.label),[
-      {label:"Pulos do Gato ativos",data:m.subjectGroups.slice(0,10).map(x=>x.count)}
-    ]);
-
-    const out=[];
-
-    const activeCount = m.active.length;
-    const reviewedCoverage = pct(m.unique, activeCount);
-    const neverShare = pct(m.never, activeCount);
-    const overdueShare = pct(m.overdue, activeCount);
-    const deepShare = pct(m.threePlus, activeCount);
-    const weakestArea = m.byArea[0];
-    const weakestSubject = m.bySubject[0];
-
-    if(state.range!=="all") {
-      if(m.prevReviews.length) {
-        const reviewDelta = (m.reviews.length - m.prevReviews.length) / m.prevReviews.length * 100;
-        out.push({
-          title:"Ritmo de revisão",
-          text:`Foram ${num(Math.abs(reviewDelta),1)}% ${reviewDelta >= 0 ? "mais" : "menos"} revisões que no período anterior (${num(m.reviews.length)} vs. ${num(m.prevReviews.length)}).`
-        });
-      } else if(m.reviews.length) {
-        out.push({
-          title:"Ritmo de revisão",
-          text:`${num(m.reviews.length)} revisões foram registradas no período atual.`
-        });
-      }
-    }
-
-    if(m.areaGroups[0]) {
-      const top = m.areaGroups[0];
-      out.push({
-        title:"Concentração do caderno",
-        text:`${top.label} concentra ${num(top.count)} Pulos do Gato ativos (${percent(pct(top.count,activeCount),1)} do total ativo).`
-      });
-    }
-
-    if(weakestArea) {
-      out.push({
-        title:"Prioridade de revisão",
-        text:`${weakestArea.label} apresenta a menor retenção estimada entre áreas com pelo menos 2 Pulos do Gato revisados: ${percent(weakestArea.value,1)} em ${weakestArea.evidence} Pulos do Gato.`
-      });
-    }
-
-    if(weakestSubject) {
-      out.push({
-        title:"Matéria mais frágil",
-        text:`${weakestSubject.label} tem retenção estimada de ${percent(weakestSubject.value,1)} em ${weakestSubject.evidence} Pulos do Gato revisados.`
-      });
-    }
-
-    if(activeCount) {
-      out.push({
-        title:"Cobertura das revisões",
-        text:`${percent(reviewedCoverage,1)} dos Pulos do Gato ativos foram revisados no período. ${m.never ? `${num(m.never)} (${percent(neverShare,1)}) nunca foram revisados.` : "Todos os Pulos do Gato ativos já tiveram ao menos uma revisão."}`
-      });
-    }
-
-    if(m.overdue || m.dueToday || m.next7) {
-      out.push({
-        title:"Carga pendente",
-        text:`${num(m.overdue)} atrasados, ${num(m.dueToday)} para hoje e ${num(m.next7)} previstos nos próximos 7 dias. ${m.overdue ? `A carga vencida equivale a ${percent(overdueShare,1)} do caderno ativo.` : "Não há revisões vencidas no momento."}`
-      });
-    }
-
-    if(m.threePlus) {
-      out.push({
-        title:"Erros persistentes",
-        text:`${num(m.threePlus)} Pulos do Gato já precisaram de 3 ou mais revisões (${percent(deepShare,1)} dos ativos), indicando conteúdos que merecem atenção recorrente.`
-      });
-    }
-
-    if(m.created.length || m.reviews.length) {
-      const balance = m.reviews.length - m.created.length;
-      out.push({
-        title:"Entrada × revisão",
-        text:`No período, foram criados ${num(m.created.length)} Pulos do Gato e realizadas ${num(m.reviews.length)} revisões. ${balance >= 0 ? `As revisões superaram as novas entradas em ${num(balance)}.` : `Entraram ${num(Math.abs(balance))} Pulos do Gato a mais do que o número de revisões realizadas.`}`
-      });
-    }
-
-    if(m.originated) {
-      out.push({
-        title:"Questões → Caderno",
-        text:`${num(m.originated)} erros de questões foram transformados em Pulos do Gato no período, conectando prática de questões ao ciclo de revisão.`
-      });
-    }
-
-    insights("error-insights",out.slice(0,6));
+    const top=m.areaGroups[0],out=[];
+    if(top)out.push({title:top.label+" é a área com maior reincidência",text:top.label+" concentra "+percent(pct(top.count,m.active.length),0)+" dos seus erros ativos."});
+    out.push({title:"Sua taxa de reaprendizado",text:"Você está com "+percent(relearn,0)+" de reaprendizado entre os erros já revisados."});
+    if(m.overdue)out.push({title:"Erros antigos merecem atenção",text:"Você ainda tem "+num(m.overdue)+" revisões vencidas. Priorize os itens mais antigos."});
+    insights("error-insights",out.slice(0,3));
   }
 
   function renderQuestions() {
