@@ -120,3 +120,10 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-tabs .flash-tab.active:after{background:var(--accent)!important}
 .flash-area-shelf-icon svg,.flash-ref-deck-icon svg{width:100%;height:100%;display:block;color:var(--accent)}
 .flash-area-shelf-icon svg{width:31px;height:31px}.flash-ref-deck-icon svg{width:38px;height:38px}
+
+
+/* v23.5 — switch 1:1 do Tempo de estudo / Cronograma */
+.flash-tabs{display:grid!important;grid-template-columns:repeat(3,1fr)!important;width:max-content!important;min-width:240px!important;gap:3px!important;padding:3px!important;margin:0 0 18px!important;border:0!important;border-radius:8px!important;background:var(--surface-2)!important;overflow:visible!important}
+.flash-tabs .flash-tab{position:static!important;height:24px!important;min-height:24px!important;padding:0 10px!important;border:0!important;border-radius:6px!important;background:transparent!important;color:var(--muted)!important;font-size:8px!important;font-weight:750!important;box-shadow:none!important}
+.flash-tabs .flash-tab:after{display:none!important}
+.flash-tabs .flash-tab.active{background:var(--accent)!important;color:#fff!important;box-shadow:none!important}
