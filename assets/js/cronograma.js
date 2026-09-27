@@ -4627,6 +4627,16 @@ function renderAgendaSide() {
   }
   if (count) count.textContent = String(todayTopics.length + todayEvents.length);
 
+  const todayTotal = todayTopics.length + todayEvents.length;
+  const todayCompleted = todayTopics.filter(topic => Boolean(topic.completed_at)).length;
+  const todayPercent = todayTotal ? Math.round((todayCompleted / todayTotal) * 100) : 0;
+  const todayProgressText = document.getElementById("agenda-today-progress-text");
+  const todayProgressPercent = document.getElementById("agenda-today-progress-percent");
+  const todayProgressBar = document.getElementById("agenda-today-progress-bar");
+  if (todayProgressText) todayProgressText.textContent = todayCompleted + " de " + todayTotal + " atividades concluídas";
+  if (todayProgressPercent) todayProgressPercent.textContent = todayPercent + "%";
+  if (todayProgressBar) todayProgressBar.style.width = todayPercent + "%";
+
   const kindClass = (value) => {
     const normalized = normalizeHeader(value || "");
     if (normalized.includes("revis")) return "review";
