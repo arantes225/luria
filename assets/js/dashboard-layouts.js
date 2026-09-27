@@ -197,103 +197,6 @@
     }
   }
 
-  function dashboard4ActivityDone(item) {
-    const status = String(item?.status || item?.activity_status || "").toLowerCase();
-    return Boolean(
-      item?.completed_at
-      || item?.is_completed === true
-      || item?.completed === true
-      || item?.done === true
-      || ["done", "completed", "concluida", "concluído", "concluido"].includes(status)
-    );
-  }
-
-  function dashboard4Time(value) {
-    const raw = String(value || "").trim();
-    if (!raw) return "—";
-    const match = raw.match(/(\d{1,2}):(\d{2})/);
-    return match ? `${match[1].padStart(2, "0")}:${match[2]}` : raw;
-  }
-
-  function dashboard4Duration(item) {
-    const minutes = Number(item?.duration_minutes || item?.estimated_minutes || item?.duration || 0);
-    if (!Number.isFinite(minutes) || minutes <= 0) return "";
-    const hours = Math.floor(minutes / 60);
-    const rest = Math.round(minutes % 60);
-    if (hours && rest) return `${hours}h ${rest}min`;
-    if (hours) return `${hours}h`;
-    return `${rest}min`;
-  }
-
-  function dashboard4KindClass(kind) {
-    if (kind === "lesson") return "study";
-    if (kind === "questions" || kind === "question_batch") return "questions";
-    if (kind === "flashcards_batch" || kind === "errors_batch" || /review/.test(String(kind || ""))) return "review";
-    if (kind === "exam" || kind === "simulation") return "exam";
-    return "study";
-  }
-
-  function dashboard4TodayAgenda() {
-    const today = dayISO(new Date());
-    return upcomingItems()
-      .filter((item) => item?.activity_date === today)
-      .sort((a, b) =>
-        String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
-        || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
-      )
-      .slice(0, 4);
-  }
-
-  function dashboard4Agenda(data) {
-    const list = dashboard4TodayAgenda();
-    const completed = list.filter(dashboard4ActivityDone).length;
-    const total = list.length;
-    const percent = total ? Math.round((completed / total) * 100) : 0;
-    const dateLabel = readableDate(new Date());
-    const rows = list.length
-      ? list.map((item) => {
-          const meta = typeof kindMeta === "function" ? kindMeta(item.kind) : { label: "Atividade" };
-          const label = meta?.label || "Atividade";
-          const duration = dashboard4Duration(item);
-          const done = dashboard4ActivityDone(item);
-          const kindClass = dashboard4KindClass(item.kind);
-          const href =
-            item.kind === "exam" || item.kind === "registration_deadline"
-              ? "/editais/"
-              : item.kind === "lesson"
-                ? "/caderno/"
-                : "/cronograma/";
-          return `
-            <li class="dl4-agenda-row ${done ? "is-done" : ""}">
-              <span class="dl4-check" aria-hidden="true">${done ? "✓" : ""}</span>
-              <span class="dl4-time">${escape(dashboard4Time(item.activity_time))}</span>
-              ${duration ? `<span class="dl4-duration">${escape(duration)}</span>` : '<span class="dl4-duration is-empty"></span>'}
-              <a class="dl4-activity-copy" href="${escape(href)}">
-                <strong>${escape(item.title || label)}</strong>
-                <small>${escape(item.subtitle || item.materia || item.area || "")}</small>
-              </a>
-              <span class="dl4-kind dl4-kind-${kindClass}">${escape(label)}</span>
-              <a class="dl4-more" href="/cronograma/" aria-label="Abrir atividade no cronograma">⋮</a>
-            </li>`;
-        }).join("")
-      : '<li class="dl4-agenda-empty">Nenhuma atividade marcada para hoje.</li>';
-
-    return `
-      <section class="dl-card dl-upcoming dl4-today-agenda">
-        <div class="dl4-agenda-header">
-          <div class="dl4-agenda-title">
-            <span class="dl4-agenda-icon">${icon("calendar")}</span>
-            <div><h3>Atividades de hoje</h3><p>${escape(dateLabel)}</p></div>
-          </div>
-          <div class="dl4-agenda-progress">
-            <div><span>${completed} de ${total} atividades concluídas</span><strong>${percent}%</strong></div>
-            <div class="dl4-progress-track"><i style="width:${percent}%"></i></div>
-          </div>
-        </div>
-        <ol class="dl4-agenda-list">${rows}</ol>
-      </section>`;
-  }
-
   function layout4(data) {
     const summaryMetrics = [
       ["calendar", "Horas de aula", data.hours, "/estatisticas/"],
@@ -303,7 +206,7 @@
     ];
     const challengeValue = Number.isFinite(data.challengeAccuracy) ? `${data.challengeAccuracy}%` : "Novo";
     const challengeCaption = Number.isFinite(data.challengeAccuracy) ? "taxa de acerto ›" : "Jogar hoje ›";
-    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon">${icon("target")}</span><span class="dl-challenge-copy"><small>Desafio diário</small><strong>${escape(challengeValue)}</strong><em>${escape(challengeCaption)}</em></span></a></div>${dashboard4Agenda(data)}${streak(data)}${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon">${icon("target")}</span><span class="dl-challenge-copy"><small>Desafio diário</small><strong>${escape(challengeValue)}</strong><em>${escape(challengeCaption)}</em></span></a></div><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(4), 4)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
   }
 
 
