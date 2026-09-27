@@ -4128,6 +4128,7 @@
   $("plantao-action-search")?.addEventListener("input",renderActions);
   $("plantao-pwa-patient-tab")?.addEventListener("click",openPatientSheet);
   $("plantao-patient-sheet-close")?.addEventListener("click",closePatientSheet);
+  $("plantao-patient-sheet-ok")?.addEventListener("click",closePatientSheet);
   $("plantao-patient-sheet")?.addEventListener("click",event=>{if(event.target?.id==="plantao-patient-sheet") closePatientSheet();});
   document.addEventListener("keydown",e=>{
     if(e.key!=="Escape") return;
