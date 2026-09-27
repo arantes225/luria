@@ -3467,3 +3467,10 @@
 .note-toolbar{border-radius:10px 10px 0 0}.note-page{max-width:none!important;padding:34px 18px 90px!important}.note-page-head{padding:0 0 14px!important;margin-bottom:15px!important}.note-page-head h1{font-size:22px!important}.note-page .notebook-editor{font-size:10.5px!important;line-height:1.55!important}
 @media(max-width:1260px){.note-studio{grid-template-columns:210px minmax(0,1fr) 225px!important}}
 @media(max-width:1050px){.note-studio{grid-template-columns:205px minmax(0,1fr)!important}.note-info{display:none!important}}
+
+
+/* v23.3 — identidade da anotação acima das ferramentas */
+.note-editor-identity{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 18px 10px;border-bottom:1px solid var(--border);background:var(--surface)}
+.note-editor-identity>div:first-child{min-width:0}.note-editor-identity .note-page-area{margin:0 0 4px;font-size:7px;padding:3px 7px}.note-editor-identity h1{margin:0;font-size:18px;line-height:1.12;letter-spacing:-.025em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.note-editor-identity .note-page-date{margin-top:3px;font-size:7px}.note-editor-identity #notebook-document-menu-toggle{border:0;background:transparent;color:var(--muted);font-size:12px;cursor:pointer;padding:6px}
+.note-toolbar{top:0;border-radius:0!important}.note-page{padding-top:24px!important}.note-page-head{display:none!important}
+@media(max-width:760px){.note-editor-identity{padding:10px 12px;min-height:66px}.note-editor-identity h1{font-size:16px}}
