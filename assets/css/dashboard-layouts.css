@@ -1983,3 +1983,45 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-to
   padding:0!important;
   line-height:1!important;
 }
+
+
+/* Dashboard 4 — Desafio do Dia como métrica de ofensiva. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-daily-challenge{
+    position:relative!important;
+    background:linear-gradient(135deg,var(--surface),var(--accent-soft))!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-daily-challenge::after{
+    content:"›"!important;
+    position:absolute!important;
+    top:10px!important;
+    right:13px!important;
+    color:var(--accent)!important;
+    font-size:20px!important;
+    font-weight:800!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-flame{
+    background:transparent!important;
+    width:52px!important;
+    height:58px!important;
+    flex:0 0 52px!important;
+    border-radius:0!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-flame .dl-streak-visual{
+    width:52px!important;
+    height:58px!important;
+    display:grid!important;
+    place-items:center!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-flame .dl-streak-flame{
+    --sidebar-flame-size:46px;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-copy small{
+    font-size:10.5px!important;
+    font-weight:700!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-challenge-copy strong{
+    font-size:22px!important;
+    font-weight:850!important;
+  }
+}
