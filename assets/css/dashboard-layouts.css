@@ -1694,3 +1694,58 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar > .dl-avatar{
     align-self:start!important;
   }
 }
+
+
+/* Dashboard 4 — correção estrutural baseada no viewport real.
+   As linhas deixam de usar 1fr: cada faixa passa a ocupar apenas a própria altura. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="4"] #dashboard-alternative{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    height:100%!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-greeting{
+    flex:0 0 auto!important;
+    transform:none!important;
+    margin:0 0 10px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4{
+    flex:0 0 auto!important;
+    height:auto!important;
+    min-height:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-rows:112px 220px 164px!important;
+    column-gap:16px!important;
+    row-gap:10px!important;
+    align-content:start!important;
+    overflow:visible!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metrics{
+    height:112px!important;
+    min-height:112px!important;
+    align-self:start!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric{
+    height:112px!important;
+    min-height:112px!important;
+    padding:14px 16px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak{
+    height:220px!important;
+    min-height:220px!important;
+    max-height:220px!important;
+    align-self:start!important;
+    overflow:hidden!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-cat{
+    height:164px!important;
+    min-height:164px!important;
+    max-height:164px!important;
+    align-self:start!important;
+    overflow:hidden!important;
+  }
+}
