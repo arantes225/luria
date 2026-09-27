@@ -544,6 +544,95 @@
       .luria-pomodoro-copy strong{display:none}
       .luria-pomodoro-copy small{margin:0;font-size:10px}
     }
+
+    /* PWA: viewport preso; topo sempre visível; conteúdo rola por baixo. */
+    @media (max-width:980px) {
+      html.pwa-standalone,
+      html.pwa-standalone body {
+        width:100%;
+        max-width:100%;
+        height:100%;
+        min-height:100%;
+        overflow:hidden!important;
+        overscroll-behavior:none!important;
+      }
+
+      html.pwa-standalone body .app-shell {
+        width:100%;
+        max-width:100vw;
+        height:100vh;
+        height:100dvh;
+        min-height:0!important;
+        overflow:hidden!important;
+      }
+
+      html.pwa-standalone body .main {
+        width:100%;
+        max-width:100vw;
+        height:100vh;
+        height:100dvh;
+        min-height:0!important;
+        overflow:hidden!important;
+        padding-top:max(10px, env(safe-area-inset-top))!important;
+        padding-bottom:max(10px, env(safe-area-inset-bottom))!important;
+      }
+
+      html.pwa-standalone body .page {
+        width:100%;
+        max-width:100%;
+        height:100%;
+        min-height:0;
+        overflow-x:hidden!important;
+        overflow-y:auto!important;
+        overscroll-behavior-x:none!important;
+        overscroll-behavior-y:contain!important;
+        -webkit-overflow-scrolling:touch;
+      }
+
+      html.pwa-standalone body .topbar {
+        position:sticky!important;
+        top:0!important;
+        z-index:240!important;
+        display:flex!important;
+        align-items:center!important;
+        min-height:52px!important;
+        margin-bottom:10px!important;
+        background:transparent!important;
+        border:0!important;
+        box-shadow:none!important;
+        overflow:visible!important;
+      }
+
+      html.pwa-standalone body .topbar .luria-notifications {
+        display:flex!important;
+        align-items:center!important;
+        margin-left:auto!important;
+        z-index:245!important;
+      }
+
+      html.pwa-standalone body .topbar .luria-profile-top,
+      html.pwa-standalone body .topbar .luria-notification-toggle {
+        display:flex!important;
+        visibility:visible!important;
+        opacity:1!important;
+      }
+
+      html.pwa-standalone body:not([data-page^="trabalho_"]) .topbar .luria-pomodoro-top {
+        display:flex!important;
+        visibility:visible!important;
+        opacity:1!important;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] .topbar .luria-pomodoro-top {
+        display:none!important;
+      }
+
+      html.pwa-standalone body .luria-notification-panel,
+      html.pwa-standalone body .luria-profile-menu,
+      html.pwa-standalone body .luria-pomodoro-panel {
+        z-index:500!important;
+      }
+    }
   `;
 
   document.head.appendChild(style);
@@ -3037,6 +3126,11 @@ function ensureNotificationCenter() {
   topbar.appendChild(
     center
   );
+
+  // Pomodoro é exclusivo do ambiente Estudos.
+  if (String(page).startsWith("trabalho_")) {
+    center.querySelector(".luria-pomodoro-top")?.remove();
+  }
 
   const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
   const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
