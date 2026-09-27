@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Dashboard · LURIA</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
+  <style>
+    .work-shell{display:grid;gap:16px}
+    .work-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .work-hero h2{margin:0 0 8px;font-size:24px}
+    .work-hero p{margin:0;color:var(--muted);line-height:1.55}
+    .work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .work-card{min-height:150px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+    .work-card strong{display:block;margin-bottom:8px;font-size:15px}
+    .work-card span{color:var(--muted);font-size:13px;line-height:1.5}
+    @media(max-width:800px){.work-grid{grid-template-columns:1fr}.work-hero{padding:18px}}
+  </style>
+</head>
+<body data-page="trabalho_dashboard">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading">
+            <span class="eyebrow" data-page-eyebrow></span>
+            <h1 data-page-title></h1>
+          </div>
+        </header>
+        <section class="work-shell">
+          <article class="work-hero">
+            <h2>Dashboard de Trabalho</h2>
+            <p>Visão geral do ambiente profissional do LURIA.</p>
+          </article>
+          <div class="work-grid">
+            <article class="work-card"><strong>Em construção</strong><span>Esta área já está criada e pronta para receber os módulos que você definir.</span></article>
+            <article class="work-card"><strong>Ambiente Trabalho</strong><span>A navegação deste espaço fica separada do ambiente de Estudos.</span></article>
+            <article class="work-card"><strong>Próximo passo</strong><span>Você pode me dizer agora quais informações e funções entram nesta página.</span></article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=17.11-trabalho"></script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
