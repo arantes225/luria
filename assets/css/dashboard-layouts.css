@@ -1,4 +1,22 @@
 /* Layouts alternativos do dashboard; o layout original permanece intacto. */
+
+/* Evita flash/fallback azul-escuro antes da inicialização do tema.
+   Se o tema salvo for dark/pink, o app aplica data-theme em seguida e essas
+   variáveis deixam de valer automaticamente. */
+html:not([data-theme]):has(body[data-page="dashboard"]) {
+  --bg: #F7F9FC;
+  --surface: #FFFFFF;
+  --surface-2: #F1F5F9;
+  --text: #10243E;
+  --muted: #5F6F82;
+  --border: #D9E2EC;
+  --accent: #184888;
+  --accent-strong: #123A70;
+  --accent-soft: #E7EEF7;
+  --luria-pattern-image: url("../img/logos/logo-icone-original.png?v=pattern4");
+  --luria-pattern-opacity: 0.020;
+}
+
 .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 .dashboard-layout-options{border:0;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(174px,1fr));gap:12px}
 .dashboard-layout-choice{display:block;cursor:pointer;min-width:0}
