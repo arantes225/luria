@@ -2667,53 +2667,18 @@ body > footer {
 
 
 
-/* =========================================================
-   LURIA — DASHBOARDS COM WATERMARK LEVE
-   Fundo limpo, com poucas marcas e opacidade muito baixa.
-   ========================================================= */
-
+/* DASHBOARDS — mesmo background das páginas comuns (ex.: Cronograma) */
 body[data-page="dashboard"],
 body[data-page="trabalho_dashboard"] {
-  --luria-pattern-image: url("../img/logos/logo-icone-original.png?v=pattern-dashboard-clean");
-  --luria-pattern-size: 220px;
-  --luria-pattern-opacity: 0.007;
   background: var(--bg) !important;
 }
 
-:root[data-theme="dark"] body[data-page="dashboard"],
-:root[data-theme="dark"] body[data-page="trabalho_dashboard"] {
-  --luria-pattern-image: url("../img/logos/logo-icone-azul-claro.png?v=pattern-dashboard-clean");
-  --luria-pattern-opacity: 0.010;
-}
-
-:root[data-theme="leila-mood"] body[data-page="dashboard"],
-:root[data-theme="leila-mood"] body[data-page="trabalho_dashboard"] {
-  --luria-pattern-image: url("../img/logos/logo-icone-rosa-escuro.png?v=pattern-dashboard-clean");
-  --luria-pattern-opacity: 0.008;
-}
-
 body[data-page="dashboard"]::before,
-body[data-page="trabalho_dashboard"]::before {
-  display:block !important;
-  content:"" !important;
-  position:fixed !important;
-  inset:-8% !important;
-  pointer-events:none !important;
-  z-index:0 !important;
-  background-image:var(--luria-pattern-image) !important;
-  background-repeat:repeat !important;
-  background-size:var(--luria-pattern-size) var(--luria-pattern-size) !important;
-  background-position:0 0 !important;
-  transform:rotate(-5deg) scale(1.04) !important;
-  transform-origin:center !important;
-  opacity:var(--luria-pattern-opacity) !important;
-}
-
-/* Uma única camada: evita o efeito "lotado" e o azul escuro acumulado. */
 body[data-page="dashboard"]::after,
+body[data-page="trabalho_dashboard"]::before,
 body[data-page="trabalho_dashboard"]::after {
-  display:none !important;
-  content:none !important;
+  display: none !important;
+  content: none !important;
 }
 
 body[data-page="dashboard"] .app-shell,
@@ -2722,20 +2687,7 @@ body[data-page="dashboard"] .main,
 body[data-page="trabalho_dashboard"] .main,
 body[data-page="dashboard"] .page,
 body[data-page="trabalho_dashboard"] .page {
-  background:transparent !important;
-}
-
-@media (max-width:760px) {
-  body[data-page="dashboard"],
-  body[data-page="trabalho_dashboard"] {
-    --luria-pattern-size:180px;
-    --luria-pattern-opacity:0.006;
-  }
-
-  :root[data-theme="dark"] body[data-page="dashboard"],
-  :root[data-theme="dark"] body[data-page="trabalho_dashboard"] {
-    --luria-pattern-opacity:0.008;
-  }
+  background: transparent !important;
 }
 
 /* =========================================================
