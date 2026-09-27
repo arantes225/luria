@@ -695,12 +695,19 @@ function wireCalendarInteractions() {
 
 async function loadDashboardUpcomingAgenda() {
   const today = toISODate(startOfDay(new Date()));
-  const { data, error } = await dashboardSb
+  let query = dashboardSb
     .from("agenda_feed")
     .select("*")
     .gte("activity_date", today)
     .order("activity_date", { ascending: true })
-    .limit(80);
+    .order("activity_time", { ascending: true, nullsFirst: true })
+    .limit(200);
+
+  if (window.docmapUser?.id) {
+    query = query.eq("user_id", window.docmapUser.id);
+  }
+
+  const { data, error } = await query;
 
   if (error) {
     console.warn("Não foi possível carregar as próximas atividades do Dashboard:", error);
