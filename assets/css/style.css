@@ -2668,6 +2668,80 @@ body > footer {
 
 
 /* =========================================================
+   LURIA — DASHBOARDS COM PATTERN CLÁSSICO
+   Mantém o fundo do dashboard antigo em Estudos e Trabalho.
+   ========================================================= */
+
+body[data-page="dashboard"],
+body[data-page="trabalho_dashboard"] {
+  --luria-pattern-image: url("../img/logos/logo-icone-original.png?v=pattern-dashboard-classic");
+  --luria-pattern-size: 138px;
+  --luria-pattern-opacity: 0.020;
+  background: var(--bg) !important;
+}
+
+:root[data-theme="dark"] body[data-page="dashboard"],
+:root[data-theme="dark"] body[data-page="trabalho_dashboard"] {
+  --luria-pattern-image: url("../img/logos/logo-icone-azul-claro.png?v=pattern-dashboard-classic");
+  --luria-pattern-opacity: 0.028;
+}
+
+:root[data-theme="leila-mood"] body[data-page="dashboard"],
+:root[data-theme="leila-mood"] body[data-page="trabalho_dashboard"] {
+  --luria-pattern-image: url("../img/logos/logo-icone-rosa-escuro.png?v=pattern-dashboard-classic");
+  --luria-pattern-opacity: 0.024;
+}
+
+body[data-page="dashboard"]::before,
+body[data-page="dashboard"]::after,
+body[data-page="trabalho_dashboard"]::before,
+body[data-page="trabalho_dashboard"]::after {
+  display: block !important;
+  content: "" !important;
+  position: fixed !important;
+  inset: -14% !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+  background-image: var(--luria-pattern-image) !important;
+  background-repeat: repeat !important;
+  background-size: var(--luria-pattern-size) var(--luria-pattern-size) !important;
+  transform: rotate(-8deg) scale(1.08) !important;
+  transform-origin: center !important;
+}
+
+body[data-page="dashboard"]::before,
+body[data-page="trabalho_dashboard"]::before {
+  background-position: 0 0 !important;
+  opacity: var(--luria-pattern-opacity) !important;
+}
+
+body[data-page="dashboard"]::after,
+body[data-page="trabalho_dashboard"]::after {
+  background-position:
+    calc(var(--luria-pattern-size) / 2)
+    calc(var(--luria-pattern-size) / 2) !important;
+  opacity: var(--luria-pattern-opacity) !important;
+}
+
+/* O conteúdo continua acima das marcas, mas o fundo estrutural não as cobre. */
+body[data-page="dashboard"] .app-shell,
+body[data-page="trabalho_dashboard"] .app-shell,
+body[data-page="dashboard"] .main,
+body[data-page="trabalho_dashboard"] .main,
+body[data-page="dashboard"] .page,
+body[data-page="trabalho_dashboard"] .page {
+  background: transparent !important;
+}
+
+@media (max-width: 760px) {
+  body[data-page="dashboard"],
+  body[data-page="trabalho_dashboard"] {
+    --luria-pattern-size: 118px;
+    --luria-pattern-opacity: 0.017;
+  }
+}
+
+/* =========================================================
    LURIA — CENTRAL GLOBAL DE NOTIFICAÇÕES
    ========================================================= */
 
