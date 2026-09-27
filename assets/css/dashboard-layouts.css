@@ -413,8 +413,20 @@ body[data-dashboard-layout="4"] .topbar .page-heading h1{
   font-size:clamp(24px,4vw,32px)!important;
   line-height:1.15!important;
 }
+body[data-dashboard-layout="4"] .topbar .page-heading .dl-heading-subtitle{
+  margin:5px 0 0!important;
+  color:var(--muted)!important;
+  font-size:13px!important;
+  line-height:1.35!important;
+  font-weight:500!important;
+}
+body[data-dashboard-layout="4"] .topbar{
+  height:70px!important;
+  min-height:70px!important;
+  max-height:70px!important;
+}
 body[data-dashboard-layout="4"] #dashboard-alternative{
-  padding-top:12px!important;
+  padding-top:18px!important;
 }
 body[data-dashboard-layout] .topbar .dl-topbar-controls{
   display:flex!important;
