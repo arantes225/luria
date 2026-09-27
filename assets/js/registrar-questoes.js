@@ -427,9 +427,11 @@ async function saveQuestionSession(event) {
   button.disabled = true;
   setQuestionStatus("Salvando...");
 
-  const { error } = await questionsSb
+  const { data: savedSession, error } = await questionsSb
     .from("question_sessions")
-    .insert(payload);
+    .insert(payload)
+    .select("id")
+    .single();
 
   button.disabled = false;
 
@@ -442,6 +444,24 @@ async function saveQuestionSession(event) {
     );
 
     return;
+  }
+
+  if (durationMinutes !== null && durationMinutes > 0 && window.LuriaStudyTimer) {
+    const active = window.LuriaStudyTimer.getState?.();
+    if (active?.kind === "external_questions") {
+      await window.LuriaStudyTimer.finish("external_questions_registered");
+    } else {
+      await questionsSb.from("study_sessions").insert({
+        user_id: questionsState.user.id,
+        activity_kind: "external_questions",
+        source_id: savedSession?.id || null,
+        started_at: new Date(Date.now() - durationMinutes * 60000).toISOString(),
+        ended_at: new Date().toISOString(),
+        duration_seconds: durationMinutes * 60,
+        area: payload.area,
+        materia: payload.materia
+      });
+    }
   }
 
   setQuestionStatus(
