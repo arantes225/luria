@@ -4730,7 +4730,9 @@ function renderAgendaSide() {
       list.innerHTML=[...groups.entries()].map(([date,items])=>'<section class="agenda-date-group"><div class="agenda-date-group-head">'+new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(parseISODateSchedule(date))+'</div>'+items.map(row).join("")+'</section>').join("")||'<p class="agenda-empty" style="padding:10px">Nenhuma atividade encontrada.</p>';
     } else list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
     const bulk=document.getElementById("agenda-bulk-tools"); if(bulk) bulk.hidden=scheduleState.agendaScope!=="all";
-    const title=document.getElementById("agenda-activities-title"); if(title) title.textContent=scheduleState.agendaScope==="all"?"Todas as atividades":"Atividades de hoje";
+    const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
+    if(title) title.textContent=scheduleState.agendaScope==="all"?"Todas as atividades":"Atividades de hoje";
+    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="all"?"Todas as datas":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(today);
     const countEl=document.getElementById("agenda-selected-count"); if(countEl) countEl.textContent=scheduleState.agendaSelected.size+" selecionadas";
   }
 
@@ -8498,6 +8500,9 @@ function wireDynamicInteractions() {
 
   document.querySelectorAll("[data-agenda-scope]").forEach(button=>button.addEventListener("click",()=>{
     scheduleState.agendaScope=button.dataset.agendaScope; scheduleState.agendaSelected.clear();
+    const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
+    if(title) title.textContent=scheduleState.agendaScope==="all"?"Todas as atividades":"Atividades de hoje";
+    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="all"?"Todas as datas":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(startOfDaySchedule(new Date()));
     document.querySelectorAll("[data-agenda-scope]").forEach(b=>b.classList.toggle("active",b===button)); renderAgendaSide(); wireDynamicInteractions();
   }));
   const agendaFilter=document.getElementById("agenda-activity-filter");
