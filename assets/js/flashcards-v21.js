@@ -12,7 +12,7 @@ function rebuildDecks(){
  host.querySelectorAll("[data-v21-area]").forEach(b=>b.onclick=()=>{const cs=libraryCards.filter(c=>(c.area||"Sem área")===b.dataset.v21Area&&(c.materia||c.theme||"Geral")===b.dataset.v21Subject&&c.active!==false);startExtraReview(cs,b.dataset.v21Area+" · "+b.dataset.v21Subject)});
  host.querySelectorAll("[data-v22-area]").forEach(b=>b.onclick=()=>{const sel=document.getElementById("library-area");if(sel){sel.value=b.dataset.v22Area;sel.dispatchEvent(new Event("change",{bubbles:true}))}});
 }
-function ensureLibraryHero(){const sec=document.querySelector('[data-flash-section="library"]>.panel');if(!sec||sec.querySelector(".flash-library-hero"))return;const h=document.createElement("div");h.className="flash-library-hero";h.innerHTML='<div><h2>Flashcards</h2><p>Revise, memorize e evolua com decks organizados por área e matéria.</p></div>';sec.prepend(h)}
+function ensureLibraryHero(){}
 function buildNavigation(){
  const tabs=document.querySelector(".flash-tabs"); if(!tabs)return;
  tabs.innerHTML='<button class="flash-tab active" type="button" data-v21-tab="library">Decks</button><button class="flash-tab" type="button" data-v21-tab="review">Revisar</button><button class="flash-tab" type="button" data-v21-tab="add">Adicionar</button>';
