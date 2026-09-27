@@ -476,6 +476,7 @@ async function saveQuestionSession(event) {
     localISODate();
 
   updateLiveResult();
+  wireExternalQuestionsTimer();
 
   await loadQuestionSessions();
 }
@@ -557,4 +558,24 @@ if (window.docmapUser) {
     initQuestions,
     { once: true }
   );
+}
+
+function wireExternalQuestionsTimer() {
+  const button = document.getElementById("toggle-external-questions-timer");
+  if (!button) return;
+  const render = () => {
+    const active = window.LuriaStudyTimer?.getState?.();
+    const on = active?.kind === "external_questions" && active?.running;
+    button.textContent = on ? "Pausar questões externas" : "Estou fazendo questões externas";
+    button.setAttribute("aria-pressed", String(!!on));
+  };
+  button.addEventListener("click", async () => {
+    const active = window.LuriaStudyTimer?.getState?.();
+    if (active?.kind === "external_questions" && active?.running) window.LuriaStudyTimer.pause("manual");
+    else if (active?.kind === "external_questions") window.LuriaStudyTimer.resume();
+    else await window.LuriaStudyTimer?.start("external_questions", { allowIdle: true });
+    render();
+  });
+  window.addEventListener("luria:study-timer", render);
+  render();
 }
