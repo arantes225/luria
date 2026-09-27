@@ -4998,6 +4998,7 @@ function renderErrorLibrary() {
   areas.clear();normalizedAreas.forEach((v,k)=>areas.set(k,v));
   const preferred=["Clínica Médica","GO","Cirurgia Geral","Pediatria","Preventiva"];
   const sorted=[...areas.keys()].sort((x,y)=>{const ax=preferred.indexOf(x),ay=preferred.indexOf(y);if(ax>=0||ay>=0)return (ax<0?99:ax)-(ay<0?99:ay);return x.localeCompare(y,"pt-BR")});
+  try {
   container.innerHTML=sorted.map(area=>{const books=areas.get(area);return `
     <section class="error-notebook-shelf">
       <div class="error-notebook-shelf-head"><span class="error-area-mark">${errorAreaIcon(area)}</span><div><h3>${errorLibraryEscape(area)}</h3><p>${[...books.values()].reduce((n,v)=>n+v.length,0)} erros em ${books.size} cadernos</p></div><div class="error-area-actions"><button type="button" data-error-area-more="${errorLibraryEscape(area)}">•••</button><div class="error-area-menu" data-error-area-menu="${errorLibraryEscape(area)}" hidden><button type="button" data-area-add-today>＋ Adicionar à revisão de hoje</button><button type="button" data-area-review>Revisar agora</button><button type="button" data-area-edit>Editar área</button></div></div></div>
@@ -5010,6 +5011,11 @@ function renderErrorLibrary() {
           <div class="error-notebook-progress"><i style="width:${rows.length?Math.min(100,Math.round((rows.length-due)/rows.length*100)):0}%"></i></div>
         </article>`}).join("")}</div>
     </section>`}).join("");
+  } catch (renderError) {
+    console.error("Falha ao renderizar cadernos:",renderError);
+    container.innerHTML=items.map(item=>`<article class="error-notebook-card error-notebook-fallback"><strong>${errorLibraryEscape(item.materia||item.theme||"Geral")}</strong><p>${errorLibraryEscape(item.ccq||item.question_text||"Erro salvo")}</p><small>${errorLibraryEscape(canonicalErrorArea(item.area))}</small></article>`).join("");
+    setErrorLibraryStatus("Os cadernos foram carregados em modo de recuperação.","error");
+  }
   renderErrorHomeExtras();updateErrorBulkToolbar();
   container.querySelectorAll("[data-error-area-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const area=button.dataset.errorAreaMore;document.querySelectorAll("[data-error-area-menu]").forEach(m=>{if(m.dataset.errorAreaMenu!==area)m.hidden=true});const menu=container.querySelector(`[data-error-area-menu="${CSS.escape(area)}"]`);if(menu)menu.hidden=!menu.hidden}));
   container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area),area));shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>{errorQueue=errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area);errorIndex=0;switchErrorTab("review");renderCurrentError()});shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||""}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
@@ -5063,21 +5069,16 @@ async function loadErrorLibrary() {
 
 
   if (error) {
-    console.warn(
-      "Não foi possível carregar a biblioteca do Caderno de Erros:",
-      error.message
-    );
-
+    console.error("Não foi possível carregar a biblioteca do Caderno de Erros:",error);
+    setErrorLibraryStatus("Não foi possível carregar seus cadernos. Atualize a página ou entre novamente.","error");
+    const empty=document.getElementById("error-library-empty"); if(empty){empty.hidden=false;empty.textContent="Falha ao consultar seus cadernos."}
     return;
   }
 
 
-  errorLibraryItems =
-    data || [];
-
-
+  errorLibraryItems = Array.isArray(data) ? data : [];
+  console.info("[Caderno de Erros] registros carregados:",errorLibraryItems.length);
   populateLibraryAreas();
-
   renderErrorLibrary();
 }
 
