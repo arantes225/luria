@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=19.0">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=19.1">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -242,6 +242,32 @@
                   <option value="Georgia">Georgia</option>
                   <option value="Comic Sans MS">Escrita à mão</option>
                 </select>
+
+                <button
+                  id="notebook-columns"
+                  class="notebook-tool-button notebook-tool-text"
+                  type="button"
+                  title="Inserir bloco em duas colunas"
+                  disabled
+                >▥ 2 colunas</button>
+
+                <div class="notebook-tool-menu-wrap">
+                  <button
+                    id="notebook-paper-toggle"
+                    class="notebook-tool-button notebook-tool-text"
+                    type="button"
+                    title="Aparência da página"
+                    aria-expanded="false"
+                    disabled
+                  >Papel</button>
+                  <div id="notebook-paper-menu" class="notebook-tool-menu" hidden>
+                    <div class="notebook-tool-menu-head"><strong>Aparência da página</strong><small>Escolha o fundo desta anotação.</small></div>
+                    <button type="button" data-paper-style="white">Branco</button>
+                    <button type="button" data-paper-style="lined">Pautado</button>
+                    <button type="button" data-paper-style="dotted">Pontilhado</button>
+                    <button type="button" data-paper-style="luria">LURIA</button>
+                  </div>
+                </div>
 
                 <div class="notebook-tool-menu-wrap">
                   <button
@@ -1169,7 +1195,7 @@
     }
   </style>
 
-  <script src="assets/js/caderno.js?v=19.0"></script>
+  <script src="assets/js/caderno.js?v=19.1"></script>
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
