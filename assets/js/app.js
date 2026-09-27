@@ -407,10 +407,10 @@
       color:var(--accent);
     }
     .luria-pomodoro-icon {
-      width:20px;height:20px;display:grid;place-items:center;flex:0 0 20px;
+      width:24px;height:24px;display:grid;place-items:center;flex:0 0 24px;
     }
     .luria-pomodoro-icon svg {
-      width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;
+      width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;
       stroke-linecap:round;stroke-linejoin:round;
     }
     .luria-pomodoro-copy { display:grid; line-height:1.05; }
@@ -429,7 +429,7 @@
       border:1px solid var(--border) !important;
       background:var(--surface) !important;
       color:var(--accent) !important;
-      font:900 16px/1 inherit !important;
+      font:900 19.2px/1 inherit !important;
     }
 
     .luria-pomodoro-panel {
@@ -522,6 +522,11 @@
       color:var(--muted);
       font-size:10px;
       line-height:1.35;
+    }
+
+    #luria-notification-toggle svg {
+      width:29.6px !important;
+      height:29.6px !important;
     }
 
     /* Afastar Pomodoro e sino do perfil */
