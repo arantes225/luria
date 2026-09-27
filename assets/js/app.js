@@ -984,7 +984,10 @@ const PAGE_INFO = {
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Trabalho" },
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Trabalho" },
   trabalho_ecg: { title: "ECG", eyebrow: "Trabalho" },
-  trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Trabalho" }
+  trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Trabalho" },
+  trabalho_receitas: { title: "Receitas", eyebrow: "Prescrição" },
+  trabalho_exames: { title: "Exames", eyebrow: "Prescrição" },
+  trabalho_scores: { title: "Scores", eyebrow: "Trabalho" }
 };
 
 
@@ -1147,33 +1150,36 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">▧</span><span>Prontuário rápido</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">
-          <span class="nav-icon">▤</span><span>Protocolos</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_prescricao" ? "active" : ""}" href="/trabalho/prescricao/">
-          <span class="nav-icon">✎</span><span>Prescrição</span>
-        </a>
+        <div class="nav-group">
+          <button class="nav-group-label" type="button" aria-expanded="${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_exames"].includes(page)}">
+            <span class="nav-icon">✎</span><span class="nav-label-text">Prescrição</span><span class="nav-group-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-submenu" ${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_exames"].includes(page) ? "" : "hidden"}>
+            <a class="nav-sublink ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">Bulário</a>
+            <a class="nav-sublink ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">Protocolos</a>
+            <a class="nav-sublink ${page === "trabalho_receitas" ? "active" : ""}" href="/trabalho/receitas/">Receitas</a>
+            <a class="nav-sublink ${page === "trabalho_exames" ? "active" : ""}" href="/trabalho/exames/">Exames</a>
+          </div>
+        </div>
 
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
           <span class="nav-icon">∑</span><span>Calculadoras</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">
-          <span class="nav-icon">▣</span><span>Bulário</span>
+        <a class="nav-link ${page === "trabalho_scores" ? "active" : ""}" href="/trabalho/scores/">
+          <span class="nav-icon">#</span><span>Scores</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">
-          <span class="nav-icon">⌕</span><span>Diagnóstico</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_laboratorio" ? "active" : ""}" href="/trabalho/laboratorio/">
-          <span class="nav-icon">⚗</span><span>Laboratório</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_ecg" ? "active" : ""}" href="/trabalho/ecg/">
-          <span class="nav-icon">⌁</span><span>ECG</span>
-        </a>
+        <div class="nav-group">
+          <button class="nav-group-label" type="button" aria-expanded="${["trabalho_diagnostico","trabalho_laboratorio","trabalho_ecg"].includes(page)}">
+            <span class="nav-icon">⌕</span><span class="nav-label-text">Diagnóstico</span><span class="nav-group-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="nav-submenu" ${["trabalho_diagnostico","trabalho_laboratorio","trabalho_ecg"].includes(page) ? "" : "hidden"}>
+            <a class="nav-sublink ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">Diagnóstico por Sintomas</a>
+            <a class="nav-sublink ${page === "trabalho_laboratorio" ? "active" : ""}" href="/trabalho/laboratorio/">Laboratório</a>
+            <a class="nav-sublink ${page === "trabalho_ecg" ? "active" : ""}" href="/trabalho/ecg/">ECG</a>
+          </div>
+        </div>
         <a class="nav-link ${page === "trabalho_fluidos" ? "active" : ""}" href="/trabalho/fluidos-eletrólitos/">
           <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
         </a>
