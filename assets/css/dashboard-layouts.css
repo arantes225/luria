@@ -1741,7 +1741,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
     min-height:0!important;
     display:grid!important;
     grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
-    grid-template-rows:112px 280px 164px!important;
+    grid-template-rows:112px 300px 164px!important;
     column-gap:16px!important;
     row-gap:14px!important;
     align-content:start!important;
@@ -1759,9 +1759,9 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming,
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak{
-    height:280px!important;
-    min-height:280px!important;
-    max-height:280px!important;
+    height:300px!important;
+    min-height:300px!important;
+    max-height:300px!important;
     align-self:start!important;
     overflow:hidden!important;
   }
