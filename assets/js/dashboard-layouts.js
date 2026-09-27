@@ -185,11 +185,6 @@
             <h2>${greeting().match(/<h2>(.*?)<\/h2>/)?.[1] || "Olá!"}</h2>
             <p>Vamos em frente hoje? Consistência é o que transforma.</p>
           </div>
-          <div class="dl5-date">
-            <strong>${escape(readableDate(new Date()))}</strong>
-            <span>“Disciplina hoje, liberdade amanhã.”</span>
-            <small>— LURIA</small>
-          </div>
         </div>
 
         <div class="dl5-metrics">
