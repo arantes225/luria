@@ -14307,279 +14307,38 @@ function filteredLibraryEntries() {
 
 
 function renderLibrary() {
-
-  const list =
-    document.getElementById(
-      "notebook-library-list"
-    );
-
-
-  if (
-    !list
-  ) {
-
-    return;
-
+  const list = document.getElementById("notebook-library-list");
+  if (!list) return;
+  const entries = filteredLibraryEntries();
+  if (!entries.length) {
+    list.innerHTML = '<div class="notebook-empty-small">'+(notebookState.librarySearch ? "Nenhum caderno encontrado." : "Sua biblioteca ainda está vazia.")+'</div>';
+    updateLibraryActions(); return;
   }
-
-
-  const entries =
-    filteredLibraryEntries();
-
-
-  if (
-    !entries.length
-  ) {
-
-    list.innerHTML =
-      `
-        <div class="notebook-empty-small">
-          ${
-            notebookState.librarySearch
-              ? "Nenhum caderno encontrado."
-              : "Sua biblioteca ainda está vazia."
-          }
-        </div>
-      `;
-
-
-    updateLibraryActions();
-
-
-    return;
-
-  }
-
-
-  list.innerHTML =
-    entries
-      .map(
-        (entry) => `
-          <div class="notebook-library-row ${entry.note.is_shared ? "notebook-shared-note" : ""}">
-
-            <input
-              class="notebook-library-check"
-              type="checkbox"
-              data-note-id="${escapeHtml(
-                entry.note.id
-              )}"
-              ${
-                notebookState
-                  .librarySelected
-                  .has(
-                    entry.note.id
-                  )
-                  ? "checked"
-                  : ""
-              }
-            >
-
-            <strong>
-              ${escapeHtml(
-                entry.title
-              )}
-
-              ${
-                entry.isFree
-                  ? `
-                    <span class="notebook-free-badge">
-                      Livre
-                    </span>
-                  `
-                  : ""
-              }
-
-              ${
-                entry.note.is_shared
-                  ? `
-                    <span class="notebook-shared-badge">
-                      ${sharedMembershipFor(entry.note.id)?.mode === "overlay" ? "Compartilhado · personalizado" : (sharedMembershipFor(entry.note.id)?.mode === "edit" ? "Compartilhado · edição" : "Compartilhado")}
-                    </span>
-                  `
-                  : ""
-              }
-            </strong>
-
-            <span class="notebook-page-area">
-              ${escapeHtml(
-                entry.area
-              )}
-            </span>
-
-            <span class="notebook-page-date">
-              ${escapeHtml(
-                formatDate(
-                  entry.date
-                )
-              )}
-            </span>
-
-            <button
-              class="notebook-open-button"
-              type="button"
-              data-open-note="${escapeHtml(
-                entry.note.id
-              )}"
-            >
-              Abrir
-            </button>
-
-            ${
-              entry.note.is_shared
-                ? ""
-                : `
-                  <button
-                    class="notebook-share-button"
-                    type="button"
-                    data-share-note="${escapeHtml(entry.note.id)}"
-                  >
-                    Compartilhar
-                  </button>
-                `
-            }
-
-          </div>
-        `
-      )
-      .join(
-        ""
-      );
-
-
-  list
-    .querySelectorAll(
-      "[data-note-id]"
-    )
-    .forEach(
-      (checkbox) => {
-
-        checkbox.addEventListener(
-          "change",
-          () => {
-
-            const noteId =
-              checkbox.dataset
-                .noteId;
-
-
-            if (
-              checkbox.checked
-            ) {
-
-              notebookState
-                .librarySelected
-                .add(
-                  noteId
-                );
-
-            }
-
-            else {
-
-              notebookState
-                .librarySelected
-                .delete(
-                  noteId
-                );
-
-            }
-
-
-            updateLibraryActions();
-
-          }
-        );
-
-      }
-    );
-
-
-  list
-    .querySelectorAll(
-      "[data-open-note]"
-    )
-    .forEach(
-      (button) => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            const note =
-              noteById(
-                button.dataset
-                  .openNote
-              );
-
-
-            if (
-              !note
-            ) {
-
-              return;
-
-            }
-
-
-            if (
-              note.topic_id
-              && !note.is_shared
-            ) {
-
-              openTopic(
-                note.topic_id
-              );
-
-            }
-
-            else {
-
-              openFreeNote(
-                note.id
-              );
-
-            }
-
-          }
-        );
-
-      }
-    );
-
-
-  list
-    .querySelectorAll(
-      "[data-share-note]"
-    )
-    .forEach(
-      button => {
-        button.addEventListener(
-          "click",
-          () => {
-            const entry =
-              getLibraryEntries()
-                .find(
-                  item =>
-                    item.note.id ===
-                    button.dataset.shareNote
-                );
-
-            if (entry) {
-              openNotebookShareDialog(
-                [entry],
-                entry.title || "Caderno LURIA"
-              );
-            }
-          }
-        );
-      }
-    );
-
-
+  const groups = new Map();
+  entries.forEach(entry => { const area=entry.area||"Sem área"; if(!groups.has(area)) groups.set(area,[]); groups.get(area).push(entry); });
+  const areaIcon = area => /cirurg/i.test(area)?"✎":/pediatr/i.test(area)?"♡":/gine|obst/i.test(area)?"♀":/prevent|saúde/i.test(area)?"✚":"♧";
+  list.innerHTML = Array.from(groups.entries()).map(([area,items]) => `
+    <section class="notebook-area-shelf">
+      <header class="notebook-area-shelf-head">
+        <span class="notebook-area-shelf-icon">${areaIcon(area)}</span>
+        <div><strong>${escapeHtml(area)}</strong><small>${items.length} caderno${items.length===1?"":"s"}</small></div>
+        <button type="button" data-notebook-area="${escapeHtml(area)}">Ver todos →</button>
+      </header>
+      <div class="notebook-book-grid">
+        ${items.map(entry=>`
+          <article class="notebook-book-card ${entry.note.is_shared?"notebook-shared-note":""}">
+            <div class="notebook-book-top"><span class="notebook-book-icon">▤</span><span class="notebook-book-menu">☆ ···</span></div>
+            <h3>${escapeHtml(entry.title)}</h3>
+            <p>${escapeHtml(entry.area)} · ${escapeHtml(formatDate(entry.date)||"Anotação LURIA")}</p>
+            <div class="notebook-book-meta"><span><b>${entry.note.topic_id?"Aula":"Livre"}</b><small>tipo</small></span><span><b>${entry.note.is_shared?"Sim":"Não"}</b><small>compart.</small></span></div>
+            <button class="notebook-book-open" type="button" data-open-note="${escapeHtml(entry.note.id)}" aria-label="Abrir ${escapeHtml(entry.title)}"></button>
+          </article>`).join("")}
+      </div>
+    </section>`).join("");
+  list.querySelectorAll("[data-open-note]").forEach(button=>button.addEventListener("click",()=>{const note=noteById(button.dataset.openNote);if(!note)return;if(note.topic_id&&!note.is_shared)openTopic(note.topic_id);else openFreeNote(note.id)}));
+  list.querySelectorAll("[data-notebook-area]").forEach(button=>button.addEventListener("click",()=>{notebookState.libraryAreaFilter=button.dataset.notebookArea;const sel=document.getElementById("notebook-library-area-filter");if(sel)sel.value=button.dataset.notebookArea;renderLibrary()}));
   updateLibraryActions();
-
 }
-
 
 function selectedEntries() {
 
