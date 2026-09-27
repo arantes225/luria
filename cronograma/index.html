@@ -2754,6 +2754,21 @@
   @media(max-width:1050px){body:not(.schedule-settings-embed) .agenda-insights-side{grid-template-columns:1fr 1fr!important}}
   @media(max-width:620px){body:not(.schedule-settings-embed) .agenda-insights-side{grid-template-columns:1fr!important}.agenda-category-body{grid-template-columns:84px 1fr}.agenda-category-donut{width:80px}}
 
+
+  /* Hoje / Todas + seleção e ações em massa */
+  .agenda-activity-view-switch{display:grid;grid-template-columns:1fr 1fr;gap:3px;padding:3px;border-radius:9px;background:var(--surface-2)}
+  .agenda-activity-view-switch button{min-width:58px;height:27px;min-height:27px;padding:0 10px;border:0;border-radius:7px;background:transparent;color:var(--muted);font-size:8px;font-weight:800}
+  .agenda-activity-view-switch button.active{background:var(--accent);color:#fff}
+  .agenda-today-card>.agenda-today-progress{margin:0 16px 10px!important}
+  .agenda-bulk-tools{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 16px 10px;padding:9px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2)}
+  .agenda-bulk-tools[hidden]{display:none!important}.agenda-bulk-filter,.agenda-bulk-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+  .agenda-bulk-tools select,.agenda-bulk-tools input[type=date]{height:30px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 8px;font-size:8px}
+  .agenda-select-all{display:flex;align-items:center;gap:5px;font-size:8px;font-weight:750;color:var(--muted)}
+  .agenda-bulk-actions>span{font-size:8px;color:var(--muted);font-weight:750}.agenda-bulk-actions button{height:30px;min-height:30px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);padding:0 10px;font-size:8px;font-weight:800}.agenda-bulk-actions button:last-child{background:var(--accent);border-color:var(--accent);color:#fff}
+  .agenda-date-group{display:grid;gap:7px}.agenda-date-group-head{display:flex;align-items:center;gap:8px;padding:7px 2px 1px;font-size:9px;font-weight:850;color:var(--text)}.agenda-date-group-head::after{content:"";height:1px;flex:1;background:var(--border)}
+  .agenda-today-row.bulk-mode{grid-template-columns:30px minmax(0,1fr)!important}.agenda-bulk-check-wrap{display:grid;place-items:center;padding-left:10px}.agenda-bulk-check{width:16px;height:16px;accent-color:var(--accent)}
+  @media(max-width:720px){.agenda-today-head{align-items:flex-start!important}.agenda-activity-view-switch{margin-left:auto}.agenda-bulk-tools{margin-left:11px;margin-right:11px}.agenda-bulk-actions{width:100%}.agenda-bulk-actions button{flex:1}.agenda-today-card>.agenda-today-progress{margin-left:11px!important;margin-right:11px!important}}
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3122,18 +3137,30 @@
               <div class="agenda-today-head">
                 <div class="agenda-today-title-wrap">
                   <span class="agenda-today-icon" aria-hidden="true">▣</span>
-                  <div>
-                    <h3>Atividades de hoje</h3>
-                    <span id="agenda-today-date" class="agenda-today-date"></span>
-                  </div>
+                  <div><h3 id="agenda-activities-title">Atividades de hoje</h3><span id="agenda-today-date" class="agenda-today-date"></span></div>
                 </div>
-                <div class="agenda-today-progress">
-                  <div class="agenda-today-progress-copy">
-                    <span id="agenda-today-progress-text">0 de 0 atividades concluídas</span>
-                    <strong id="agenda-today-progress-percent">0%</strong>
-                  </div>
-                  <div class="agenda-today-progress-track"><i id="agenda-today-progress-bar"></i></div>
+                <div class="agenda-activity-view-switch" role="group" aria-label="Período das atividades">
+                  <button type="button" class="active" data-agenda-scope="today">Hoje</button>
+                  <button type="button" data-agenda-scope="all">Todas</button>
                 </div>
+              </div>
+              <div id="agenda-bulk-tools" class="agenda-bulk-tools" hidden>
+                <div class="agenda-bulk-filter">
+                  <select id="agenda-activity-filter" aria-label="Filtrar atividades">
+                    <option value="all">Todas as atividades</option><option value="lesson">Aulas</option><option value="questions">Questões</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="simulation">Simulados</option>
+                  </select>
+                  <label class="agenda-select-all"><input id="agenda-select-all" type="checkbox"> Selecionar todas</label>
+                </div>
+                <div id="agenda-bulk-actions" class="agenda-bulk-actions">
+                  <span id="agenda-selected-count">0 selecionadas</span>
+                  <input id="agenda-bulk-date" type="date" aria-label="Nova data">
+                  <button id="agenda-bulk-reschedule" type="button">Alterar data</button>
+                  <button id="agenda-bulk-complete" type="button">Confirmar em massa</button>
+                </div>
+              </div>
+              <div class="agenda-today-progress">
+                <div class="agenda-today-progress-copy"><span id="agenda-today-progress-text">0 de 0 atividades concluídas</span><strong id="agenda-today-progress-percent">0%</strong></div>
+                <div class="agenda-today-progress-track"><i id="agenda-today-progress-bar"></i></div>
               </div>
               <div id="agenda-today-list" class="agenda-today-list"><p class="agenda-empty">Nenhuma atividade para hoje.</p></div>
             </section>
