@@ -2148,8 +2148,9 @@
   function updateScore() {
     const clock=$("plantao-score-live");
     if(!clock)return;
-    clock.textContent="◷ "+fmtTime(state.elapsed);
-    clock.setAttribute("aria-label","Tempo do caso: "+fmtTime(state.elapsed));
+    const time=fmtTime(state.elapsed);
+    clock.innerHTML='<svg class="plantao-time-icon" aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v5l3.4 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>'+time+'</span>';
+    clock.setAttribute("aria-label","Tempo do caso: "+time);
   }
   function patientSex(){
     const raw=normalizeLabel(state.current?.presentation?.sex||"");
