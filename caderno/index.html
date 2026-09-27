@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=21.3">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=22.0">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -211,7 +211,7 @@
               </div>
             </aside>
 
-            <section class="notebook-editor-column">
+            <section class="notebook-editor-column"><div class="notebook-editor-frame">
 
               <div
                 id="notebook-toolbar"
@@ -792,7 +792,8 @@
                 </article>
               </div>
 
-            </section>
+            </div></section>
+            <aside class="notebook-inspector" aria-label="Detalhes da anotação"><section><h3>Detalhes da anotação</h3><dl><div><dt>Caderno</dt><dd id="notebook-inspector-book">—</dd></div><div><dt>Área</dt><dd id="notebook-inspector-area">—</dd></div><div><dt>Criada em</dt><dd id="notebook-inspector-created">—</dd></div><div><dt>Última edição</dt><dd id="notebook-inspector-updated">—</dd></div><div><dt>Palavras</dt><dd id="notebook-inspector-words">—</dd></div></dl></section><section><h3>Ações rápidas</h3><button type="button" id="notebook-inspector-edit">Editar anotação</button><button type="button" id="notebook-inspector-export">Exportar PDF</button><button type="button" id="notebook-inspector-share">Compartilhar</button><button type="button" class="danger" id="notebook-inspector-delete">Excluir anotação</button></section></aside>
           </div>
         </section>
 
