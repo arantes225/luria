@@ -693,6 +693,37 @@
       .settings-personalize-grid > .setting-row{padding:15px;border-radius:14px}
     }
 
+
+    /* Personalizar — layout único e consistente em lista */
+    .settings-section.settings-personalize-grid {
+      display:grid !important;
+      grid-template-columns:minmax(0,1fr) !important;
+      gap:14px !important;
+      align-items:stretch !important;
+      width:100% !important;
+      max-width:none !important;
+    }
+
+    .settings-personalize-grid > .setting-row.settings-personalize-card,
+    .settings-personalize-grid > .setting-row.settings-wide-card {
+      grid-column:1 !important;
+      width:100% !important;
+      max-width:none !important;
+      min-width:0 !important;
+      align-self:stretch !important;
+    }
+
+    .settings-personalize-grid .profile-grid,
+    .settings-personalize-grid .security-grid,
+    .settings-personalize-grid .study-days-grid,
+    .settings-personalize-grid .interval-editor,
+    .settings-personalize-grid .pomodoro-settings-grid,
+    .settings-personalize-grid .single-setting-grid {
+      width:100% !important;
+      max-width:none !important;
+      min-width:0 !important;
+    }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=3-work-settings">
