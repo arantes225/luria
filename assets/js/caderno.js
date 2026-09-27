@@ -14308,22 +14308,79 @@ function filteredLibraryEntries() {
 
 
 function renderLibrary() {
-  const list=document.getElementById("notebook-library-list"); if(!list)return;
-  const real=filteredLibraryEntries();
-  const seeds=[
+  const list = document.getElementById("notebook-library-list");
+  if (!list) return;
+
+  const real = filteredLibraryEntries();
+  const seeds = [
     ["Clínica Médica","Cardiologia"],["Clínica Médica","Pneumologia"],["Clínica Médica","Gastroenterologia"],
     ["Cirurgia Geral","Abdômen Agudo"],["Cirurgia Geral","Trauma"],["Cirurgia Geral","Perioperatório"],
     ["Pediatria","Crescimento e Desenvolvimento"],["Pediatria","Doenças Exantemáticas"],["Pediatria","Puericultura"],
     ["Ginecologia e Obstetrícia","Pré-natal"],["Ginecologia e Obstetrícia","Contracepção"],["Ginecologia e Obstetrícia","Puerpério"],
     ["Preventiva","SUS"],["Preventiva","Epidemiologia"],["Preventiva","Atenção Primária"]
-  ].map(([area,title],i)=>({area,title,date:"",placeholder:true,note:{id:"demo-"+i,topic_id:null,is_shared:false}}));
-  const existing=new Set(real.map(e=>(e.area||"")+"|||"+(e.title||"")));
-  const entries=[...real,...seeds.filter(e=>!existing.has(e.area+"|||"+e.title))];
-  const groups=new Map(); entries.forEach(e=>{const a=e.area||"Sem área";if(!groups.has(a))groups.set(a,[]);groups.get(a).push(e)});
-  const areaIcon=area=>{const a=String(area||"").toLowerCase(),base='viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';if(/cl[ií]nica|cardio/.test(a))return '<svg '+base+'><path d="M4 13h4l2-5 3 10 2-5h5"/><path d="M12 21C6 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-3 7.5-9 11.5Z"/></svg>';if(/cirurg/.test(a))return '<svg '+base+'><path d="m5 19 11-11 3 3L8 22H5v-3Z"/><path d="m14 10 3 3"/></svg>';if(/pediatr/.test(a))return '<svg '+base+'><path d="M12 21s-8-4.5-8-11a4 4 0 0 1 7-2.6A4 4 0 0 1 18 10c0 6.5-6 11-6 11Z"/></svg>';if(/gine|obst/.test(a))return '<svg '+base+'><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>';if(/prevent/.test(a))return '<svg '+base+'><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z"/></svg>';return '<svg '+base+'><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>'};
-  list.innerHTML=[...groups].map(([area,items])=>'<section class="notebook-area-shelf"><header class="notebook-area-shelf-head"><span class="notebook-area-shelf-icon">'+areaIcon(area)+'</span><div><strong>'+escapeHtml(area)+'</strong><small>'+items.length+' cadernos</small></div><button type="button" data-notebook-area="'+escapeHtml(area)+'">Ver todos →</button></header><div class="notebook-book-grid">'+items.map(e=>'<article class="notebook-book-card '+(e.placeholder?'notebook-placeholder-card':'')+'"><div class="notebook-book-top"><span class="notebook-book-icon">'+areaIcon(e.area)+'</span><span class="notebook-book-menu">'+(e.placeholder?'':'☆ ···')+'</span></div><h3>'+escapeHtml(e.title)+'</h3><p>'+escapeHtml(e.area)+' · '+(e.placeholder?'Caderno vazio':escapeHtml(formatDate(e.date)||"Anotação LURIA"))+'</p><div class="notebook-book-meta"><span><b>'+(e.placeholder?'0':'1')+'</b><small>páginas</small></span><span><b>'+(e.placeholder?'Vazio':(e.note.topic_id?"Aula":"Livre"))+'</b><small>status</small></span></div>'+(e.placeholder?'<span class="notebook-demo-badge">Estrutura inicial</span>':'<button class="notebook-book-open" type="button" data-open-note="'+escapeHtml(e.note.id)+'" aria-label="Abrir '+escapeHtml(e.title)+'"></button>')+'</article>').join("")+'</div></section>').join("");
-  list.querySelectorAll("[data-open-note]").forEach(b=>b.addEventListener("click",()=>{const note=noteById(b.dataset.openNote);if(!note)return;if(note.topic_id&&!note.is_shared)openTopic(note.topic_id);else openFreeNote(note.id)}));
-  list.querySelectorAll("[data-notebook-area]").forEach(b=>b.addEventListener("click",()=>{notebookState.libraryAreaFilter=b.dataset.notebookArea;const sel=document.getElementById("notebook-library-area-filter");if(sel)sel.value=b.dataset.notebookArea;renderLibrary()}));
+  ];
+
+  const areaIcon = area => {
+    const a=String(area||"").toLowerCase(),base='viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';
+    if(/cl[ií]nica|cardio/.test(a))return '<svg '+base+'><path d="M4 13h4l2-5 3 10 2-5h5"/><path d="M12 21C6 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-3 7.5-9 11.5Z"/></svg>';
+    if(/cirurg/.test(a))return '<svg '+base+'><path d="m5 19 11-11 3 3L8 22H5v-3Z"/><path d="m14 10 3 3"/></svg>';
+    if(/pediatr/.test(a))return '<svg '+base+'><path d="M12 21s-8-4.5-8-11a4 4 0 0 1 7-2.6A4 4 0 0 1 18 10c0 6.5-6 11-6 11Z"/></svg>';
+    if(/gine|obst/.test(a))return '<svg '+base+'><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>';
+    if(/prevent/.test(a))return '<svg '+base+'><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z"/></svg>';
+    return '<svg '+base+'><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>';
+  };
+
+  const subjectFor = entry => entry.topic?.materia || entry.note?.materia || "Outros";
+  const realByArea = new Map();
+  real.forEach(entry => {
+    const area=entry.area||"Sem área";
+    if(!realByArea.has(area)) realByArea.set(area,[]);
+    realByArea.get(area).push(entry);
+  });
+
+  const catalog = new Map();
+  seeds.forEach(([area,subject]) => {
+    if(!catalog.has(area)) catalog.set(area,new Set());
+    catalog.get(area).add(subject);
+  });
+  real.forEach(entry => {
+    const area=entry.area||"Sem área", subject=subjectFor(entry);
+    if(!catalog.has(area)) catalog.set(area,new Set());
+    catalog.get(area).add(subject);
+  });
+
+  const weekStart=new Date(); weekStart.setHours(0,0,0,0); weekStart.setDate(weekStart.getDate()-((weekStart.getDay()+6)%7));
+  const weekEnd=new Date(weekStart); weekEnd.setDate(weekEnd.getDate()+7);
+  const weekEntries=real.filter(e=>{const d=e.date?new Date(e.date):null;return d&&!Number.isNaN(d.getTime())&&d>=weekStart&&d<weekEnd;});
+  const plusCard='<button class="notebook-add-book-card" type="button" data-notebook-add aria-label="Adicionar caderno"><span>＋</span></button>';
+  const pageCard=e=>'<article class="notebook-page-card"><div><strong>'+escapeHtml(e.title)+'</strong><small>'+escapeHtml(formatDate(e.date)||"Página")+'</small></div><button type="button" data-open-note="'+escapeHtml(e.note.id)+'">Abrir</button></article>';
+
+  const weekHtml='<section class="notebook-week-shelf"><header><div><strong>Desta semana</strong><small>'+(weekEntries.length?weekEntries.length+' página'+(weekEntries.length===1?'':'s')+' vinculada'+(weekEntries.length===1?'':'s'):'Adicione um caderno para começar')+'</small></div></header><div class="notebook-week-grid">'+weekEntries.map(e=>'<article class="notebook-week-card"><span>'+areaIcon(e.area)+'</span><div><strong>'+escapeHtml(e.title)+'</strong><small>'+escapeHtml(e.area)+' · '+escapeHtml(subjectFor(e))+'</small></div><button type="button" data-open-note="'+escapeHtml(e.note.id)+'" aria-label="Abrir"></button></article>').join("")+plusCard+'</div></section>';
+
+  const areasHtml=[...catalog].map(([area,subjects])=>{
+    const entries=realByArea.get(area)||[];
+    return '<section class="notebook-area-shelf"><header class="notebook-area-shelf-head"><span class="notebook-area-shelf-icon">'+areaIcon(area)+'</span><div><strong>'+escapeHtml(area)+'</strong><small>'+subjects.size+' matéria'+(subjects.size===1?'':'s')+'</small></div></header><div class="notebook-book-grid">'+[...subjects].map(subject=>{
+      const pages=entries.filter(e=>subjectFor(e)===subject);
+      const key=encodeURIComponent(area+"|||"+subject);
+      return '<article class="notebook-book-card notebook-subject-card" data-subject-card="'+key+'"><div class="notebook-book-top"><span class="notebook-book-icon">'+areaIcon(subject)+'</span><span class="notebook-book-menu">›</span></div><h3>'+escapeHtml(subject)+'</h3><p>'+escapeHtml(area)+'</p><div class="notebook-book-meta"><span><b>'+pages.length+'</b><small>páginas</small></span></div><button class="notebook-book-open" type="button" data-open-subject="'+key+'" aria-label="Abrir '+escapeHtml(subject)+'"></button></article>';
+    }).join("")+'</div></section>';
+  }).join("");
+
+  list.innerHTML=weekHtml+areasHtml+'<section id="notebook-subject-pages" class="notebook-subject-pages" hidden></section>';
+
+  const openEntry=id=>{const note=noteById(id);if(!note)return;if(note.topic_id&&!note.is_shared)openTopic(note.topic_id);else openFreeNote(note.id)};
+  list.querySelectorAll("[data-open-note]").forEach(b=>b.addEventListener("click",()=>openEntry(b.dataset.openNote)));
+  list.querySelectorAll("[data-open-subject]").forEach(b=>b.addEventListener("click",()=>{
+    const [area,subject]=decodeURIComponent(b.dataset.openSubject).split("|||");
+    const pages=(realByArea.get(area)||[]).filter(e=>subjectFor(e)===subject);
+    const host=list.querySelector("#notebook-subject-pages");
+    host.hidden=false;
+    host.innerHTML='<div class="notebook-subject-pages-head"><button type="button" data-pages-back>← Voltar</button><div><small>'+escapeHtml(area)+'</small><h3>'+escapeHtml(subject)+'</h3><span>'+pages.length+' página'+(pages.length===1?'':'s')+'</span></div></div><div class="notebook-pages-list">'+(pages.length?pages.map(pageCard).join(""):'<div class="notebook-pages-empty">Nenhuma página ainda nesta matéria.</div>')+'</div>';
+    list.querySelectorAll(".notebook-week-shelf,.notebook-area-shelf").forEach(el=>el.hidden=true);
+    host.querySelector("[data-pages-back]").addEventListener("click",()=>{host.hidden=true;list.querySelectorAll(".notebook-week-shelf,.notebook-area-shelf").forEach(el=>el.hidden=false)});
+    host.querySelectorAll("[data-open-note]").forEach(x=>x.addEventListener("click",()=>openEntry(x.dataset.openNote)));
+  }));
+  list.querySelectorAll("[data-notebook-add]").forEach(b=>b.addEventListener("click",()=>document.getElementById("notebook-new-free-page")?.click()));
   updateLibraryActions();
 }
 
