@@ -1666,25 +1666,31 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar > .dl-avatar{
 }
 
 
-/* Dashboard 4 — ajuste fino vertical para liberar o bloco inferior. */
+/* Dashboard 4 — espaçamento vertical uniforme entre as três faixas. */
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-greeting{
-    transform:translateY(-3px)!important;
-    margin-bottom:6px!important;
+    transform:translateY(-2px)!important;
+    margin-bottom:7px!important;
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4{
-    height:calc(100% - 51px)!important;
-    grid-template-rows:auto minmax(0,.96fr) auto!important;
-    gap:4px!important;
+    height:calc(100% - 52px)!important;
+    grid-template-rows:auto minmax(0,1fr) auto!important;
+    gap:10px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric{
+    min-height:100px!important;
+    padding-top:14px!important;
+    padding-bottom:14px!important;
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming,
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak{
     min-height:0!important;
     height:auto!important;
-    max-height:232px!important;
+    max-height:210px!important;
   }
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-areas,
   body[data-page="dashboard"][data-dashboard-layout="4"] .dl-cat{
     height:164px!important;
+    align-self:start!important;
   }
 }
