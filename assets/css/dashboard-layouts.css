@@ -1051,3 +1051,33 @@ body[data-page="trabalho"] *{
 }
 
 body[data-dashboard-layout="5"] .dl5-bottom > .dl5-card{min-height:0;overflow:hidden}
+
+
+/* Dashboard 5 — sobe o conjunto inteiro e preserva a faixa inferior. */
+body[data-dashboard-layout="5"] .topbar{
+  height:46px!important;
+  min-height:46px!important;
+  max-height:46px!important;
+  padding:2px 0!important;
+  margin:0!important;
+}
+body[data-dashboard-layout="5"] #dashboard-alternative{
+  transform:translateY(-18px);
+}
+body[data-dashboard-layout="5"] .dl5-shell{
+  padding-top:0!important;
+  padding-bottom:24px!important;
+  grid-template-rows:auto auto minmax(0,.88fr) minmax(0,.92fr)!important;
+}
+body[data-dashboard-layout="5"] .dl5-hero{
+  padding:2px 2px 8px!important;
+}
+body[data-dashboard-layout="5"] .dl5-metrics{
+  margin-bottom:8px!important;
+}
+body[data-dashboard-layout="5"] .dl5-mid{
+  margin-bottom:8px!important;
+}
+body[data-dashboard-layout="5"] .dl5-bottom{
+  padding-bottom:2px;
+}
