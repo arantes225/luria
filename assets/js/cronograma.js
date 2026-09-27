@@ -5268,6 +5268,22 @@ async function addManualTopic(event) {
   const date =
     document.getElementById("manual-date").value || null;
 
+  const allowedAreas = new Set([
+    "Clínica Médica",
+    "Cirurgia Geral",
+    "Ginecologia e Obstetrícia",
+    "Medicina Preventiva",
+    "Pediatria"
+  ]);
+
+  if (!allowedAreas.has(area)) {
+    setManualStatus(
+      "Selecione uma das cinco grandes áreas.",
+      "error"
+    );
+    return;
+  }
+
   if (!theme) {
     setManualStatus(
       "Informe o tema da aula.",
