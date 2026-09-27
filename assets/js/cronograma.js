@@ -4512,7 +4512,7 @@ function renderMonthPlanner() {
 
   const days =
     Array.from(
-      { length: 42 },
+      { length: 35 },
       (_, index) =>
         addDaysSchedule(gridStart, index)
     );
