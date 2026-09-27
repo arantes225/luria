@@ -577,3 +577,93 @@ body[data-dashboard-layout="4"] .dl-account .dl-avatar{
   flex:0 0 44px!important;
   font-size:15px!important;
 }
+
+
+/* Ofensiva dos dashboards — mesmo sistema visual da Ofensiva da sidebar. */
+.dl-streak-visual{
+  --sidebar-streak-main:#f59e0b;
+  --sidebar-streak-core:#fde68a;
+  --sidebar-flame-size:29px;
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+}
+
+.dl-streak-flame,
+.dl-streak-snow{
+  grid-area:1 / 1;
+}
+
+.dl-streak-flame{
+  width:var(--sidebar-flame-size);
+  height:calc(var(--sidebar-flame-size) * 1.23);
+  overflow:visible;
+  color:var(--sidebar-streak-main);
+  transform-origin:50% 85%;
+  filter:drop-shadow(0 3px 6px color-mix(in srgb,var(--sidebar-streak-main) 24%,transparent));
+  animation:sidebarStreakFlamePulse 2.5s ease-in-out infinite;
+}
+
+.dl-streak-snow{
+  display:none;
+  color:#60a5fa;
+  font-size:29px;
+  line-height:1;
+  filter:drop-shadow(0 4px 7px rgba(96,165,250,.22));
+  animation:sidebarSnowPulse 2.8s ease-in-out infinite;
+}
+
+.dl-streak-core{
+  fill:var(--sidebar-streak-core);
+}
+
+.dl-streak-visual[data-streak-tier="snow"]{
+  --sidebar-streak-main:#60a5fa;
+  --sidebar-streak-core:#bfdbfe;
+  --sidebar-flame-size:29px;
+}
+.dl-streak-visual[data-streak-tier="snow"] .dl-streak-flame{display:none}
+.dl-streak-visual[data-streak-tier="snow"] .dl-streak-snow{display:block}
+
+.dl-streak-visual[data-streak-tier="1"]{
+  --sidebar-streak-main:#f5a524;
+  --sidebar-streak-core:#fde68a;
+  --sidebar-flame-size:29px;
+}
+.dl-streak-visual[data-streak-tier="2"]{
+  --sidebar-streak-main:#ff7a1a;
+  --sidebar-streak-core:#ffd166;
+  --sidebar-flame-size:32px;
+}
+.dl-streak-visual[data-streak-tier="3"]{
+  --sidebar-streak-main:#ff4d2e;
+  --sidebar-streak-core:#ffb347;
+  --sidebar-flame-size:35px;
+}
+.dl-streak-visual[data-streak-tier="4"]{
+  --sidebar-streak-main:#e43dff;
+  --sidebar-streak-core:#ff9bf0;
+  --sidebar-flame-size:38px;
+}
+.dl-streak-visual[data-streak-tier="5"]{
+  --sidebar-streak-main:#7c4dff;
+  --sidebar-streak-core:#c7b8ff;
+  --sidebar-flame-size:41px;
+}
+.dl-streak-visual[data-streak-tier="6"]{
+  --sidebar-streak-main:#169bff;
+  --sidebar-streak-core:#8fddff;
+  --sidebar-flame-size:44px;
+}
+
+.dl-streak-heading-icon{
+  overflow:visible!important;
+}
+
+@media (prefers-reduced-motion:reduce){
+  .dl-streak-flame,
+  .dl-streak-snow{
+    animation:none;
+  }
+}
