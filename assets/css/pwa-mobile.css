@@ -3675,3 +3675,64 @@
   }
 }
 
+
+
+/* =========================================================
+   PWA MOBILE — ADMIN VIEW ISOLATION + POLISH
+   ========================================================= */
+@media (max-width:760px){
+  .pwa-standalone body[data-page="admin"] [data-admin-view][hidden]{
+    display:none!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-view-menu{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:6px!important;
+    width:100%!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    padding:4px!important;
+    scroll-snap-type:x proximity;
+    -webkit-overflow-scrolling:touch;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-view-tab{
+    flex:0 0 auto!important;
+    min-height:42px!important;
+    padding:0 14px!important;
+    border-radius:12px!important;
+    white-space:nowrap!important;
+    scroll-snap-align:start;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-topbar{
+    position:sticky!important;
+    top:0!important;
+    z-index:220!important;
+    padding:4px 0 8px!important;
+    background:color-mix(in srgb,var(--bg) 90%,transparent)!important;
+    -webkit-backdrop-filter:blur(12px);
+    backdrop-filter:blur(12px);
+  }
+  .pwa-standalone body[data-page="admin"] .admin-plan-grid,
+  .pwa-standalone body[data-page="admin"] .admin-metrics-grid,
+  .pwa-standalone body[data-page="admin"] .admin-feature-grid,
+  .pwa-standalone body[data-page="admin"] .admin-infra-grid,
+  .pwa-standalone body[data-page="admin"] .admin-finance-grid{
+    gap:10px!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-plan-card,
+  .pwa-standalone body[data-page="admin"] .admin-metric-card,
+  .pwa-standalone body[data-page="admin"] .admin-feature-card,
+  .pwa-standalone body[data-page="admin"] .admin-infra-card,
+  .pwa-standalone body[data-page="admin"] .admin-finance-card{
+    min-height:104px!important;
+    padding:13px!important;
+    border-radius:16px!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-section{
+    padding:14px!important;
+    border-radius:17px!important;
+  }
+  .pwa-standalone body[data-page="admin"] .admin-status{
+    margin:2px 2px 0!important;
+  }
+}
