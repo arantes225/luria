@@ -2595,52 +2595,52 @@ body[data-page="plantao"] .plantao-phone-brand-name{
   letter-spacing:-.01em;
 }
 body[data-page="plantao"] .plantao-phone-inbox-toolbar strong{
-  font-size:14px!important;
+  font-size:15px!important;
   font-weight:800;
   line-height:1.2;
 }
 body[data-page="plantao"] .plantao-phone-inbox-toolbar small{
-  font-size:11px!important;
+  font-size:12px!important;
   line-height:1.35;
 }
 body[data-page="plantao"] .plantao-phone-conversation-title{
-  font-size:15px!important;
+  font-size:16px!important;
   font-weight:800;
   line-height:1.25;
   letter-spacing:-.01em;
 }
 body[data-page="plantao"] .plantao-phone-conversation-top strong{
-  font-size:14px!important;
+  font-size:15px!important;
   font-weight:800;
   line-height:1.2;
 }
 body[data-page="plantao"] .plantao-phone-conversation-preview{
-  font-size:12px!important;
+  font-size:13px!important;
   line-height:1.38;
 }
 body[data-page="plantao"] .plantao-phone-conversation-top small{
-  font-size:11px!important;
+  font-size:12px!important;
   line-height:1.2;
 }
 body[data-page="plantao"] .plantao-phone-contact-copy strong{
-  font-size:14px!important;
+  font-size:16px!important;
   font-weight:800;
 }
 body[data-page="plantao"] .plantao-phone-contact-copy small{
-  font-size:11px!important;
+  font-size:12px!important;
   line-height:1.3;
 }
 body[data-page="plantao"] .plantao-phone-bubble{
-  font-size:13px!important;
+  font-size:14px!important;
   line-height:1.48;
 }
 body[data-page="plantao"] .plantao-phone-choice-group button{
-  font-size:13px!important;
+  font-size:14px!important;
   line-height:1.35;
 }
 body[data-page="plantao"] .plantao-phone-search-wrap input,
 body[data-page="plantao"] .plantao-phone-compose-form input{
-  font-size:14px;
+  font-size:15px;
 }
 body[data-page="plantao"] .plantao-phone-conversation{
   padding-top:12px;
@@ -3095,7 +3095,7 @@ body.plantao-phone-mode #plantao-telefone.plantao-phone-preview{
 }
 
 body.plantao-phone-mode #plantao-telefone .plantao-phone-layout{
-  width:min(100%,455px);
+  width:min(100%,440px);
   height:100dvh;
   min-height:0;
   max-height:100dvh;
@@ -3785,4 +3785,20 @@ body.plantao-phone-mode .sidebar-desktop-toggle{
   .plantao-patient-chart .plantao-patient-sheet-hda p{
     font-size:14px;
   }
+}
+
+
+/* LuriaZap — ênfase tipográfica nas conversas */
+body[data-page="plantao"] .plantao-phone-bubble strong,
+body[data-page="plantao"] .plantao-phone-bubble b{
+  display:inline;
+  margin:0;
+  font-size:inherit;
+  font-weight:850;
+  letter-spacing:0;
+  color:inherit;
+}
+body[data-page="plantao"] .plantao-phone-bubble p strong,
+body[data-page="plantao"] .plantao-phone-bubble p b{
+  font-weight:850;
 }
