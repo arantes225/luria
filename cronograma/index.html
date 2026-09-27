@@ -2886,6 +2886,42 @@
     color:#fff!important
   }
 
+
+  /* Mês compacto — mantém a lógica estável e reduz apenas a densidade visual */
+  body:not(.schedule-settings-embed) .month-planner{
+    border-radius:10px!important;
+  }
+  body:not(.schedule-settings-embed) .month-weekday{
+    min-height:25px!important;
+    font-size:7px!important;
+  }
+  body:not(.schedule-settings-embed) .month-day{
+    min-height:64px!important;
+    padding:4px 5px!important;
+  }
+  body:not(.schedule-settings-embed) .month-day-number{
+    font-size:8px!important;
+    margin-bottom:2px!important;
+  }
+  body:not(.schedule-settings-embed) .month-day-items{
+    gap:2px!important;
+  }
+  body:not(.schedule-settings-embed) .month-item{
+    min-height:14px!important;
+    padding:1px 4px!important;
+    font-size:6.5px!important;
+    border-radius:4px!important;
+  }
+  @media(max-width:720px){
+    body:not(.schedule-settings-embed) .month-planner{
+      grid-template-columns:repeat(7,minmax(72px,1fr))!important;
+    }
+    body:not(.schedule-settings-embed) .month-day{
+      min-height:60px!important;
+      padding:4px!important;
+    }
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3776,7 +3812,7 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/cronograma-base-data.js?v=12.6"></script>
-  <script src="assets/js/cronograma.js?v=32-full-stable"></script>
+  <script src="assets/js/cronograma.js?v=33-month-toggle"></script>
   <script defer src="assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
