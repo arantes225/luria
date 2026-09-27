@@ -3408,3 +3408,7 @@
 /* v21.2 — ícones lineares como na referência */
 #notebook-view-library .notebook-area-shelf-icon svg{width:31px;height:31px;display:block;color:var(--accent)}
 #notebook-view-library .notebook-book-icon svg{width:38px;height:38px;display:block;color:var(--accent)}
+
+
+/* v21.3 — cadernos demonstrativos da estante inicial */
+.notebook-placeholder-card{opacity:.88;border-style:dashed!important}.notebook-demo-badge{display:inline-flex;width:max-content;margin-top:auto;padding:4px 7px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:7px;font-weight:800}.notebook-placeholder-card .notebook-book-icon{opacity:.75}
