@@ -4903,6 +4903,7 @@ function updatePlannerViewControls() {
 function renderPlanner() {
   updatePlannerViewControls();
   renderAgendaSide();
+  renderScheduleStudyInsights();
 
   if (
     scheduleState.plannerView
@@ -8566,6 +8567,33 @@ function wireDynamicInteractions() {
         );
       });
     });
+}
+
+function formatStudyDuration(seconds=0){
+  const total=Math.max(0,Math.round(Number(seconds)||0)), h=Math.floor(total/3600), m=Math.floor((total%3600)/60);
+  return h ? h+"h "+String(m).padStart(2,"0")+"min" : m+"min";
+}
+async function renderScheduleStudyInsights(){
+  const totalEl=document.getElementById("agenda-study-total"), barsEl=document.getElementById("agenda-study-bars"), donut=document.getElementById("agenda-category-donut"), donutTotal=document.getElementById("agenda-category-total"), legend=document.getElementById("agenda-category-legend");
+  if(!totalEl||!barsEl||!donut||!legend||!scheduleState.user?.id) return;
+  const today=startOfDaySchedule(new Date()), start=startOfWeekSchedule(today), end=addDaysSchedule(start,7);
+  const {data,error}=await scheduleSb.from("study_sessions").select("started_at,duration_seconds,activity_kind,area,materia").eq("user_id",scheduleState.user.id).gte("started_at",start.toISOString()).lt("started_at",end.toISOString());
+  if(error){console.warn("LURIA: não foi possível carregar tempo do cronograma",error);return;}
+  const rows=data||[], days=Array(7).fill(0), byCategory=new Map();
+  rows.forEach(row=>{
+    const sec=Math.max(0,Number(row.duration_seconds)||0), d=startOfDaySchedule(new Date(row.started_at)), idx=Math.round((d-start)/86400000);
+    if(idx>=0&&idx<7) days[idx]+=sec;
+    const label=(row.area||row.materia||({lesson:"Aulas",questions:"Questões",external_questions:"Questões",flashcards:"Flashcards",simulation:"Simulados",study:"Estudo"}[row.activity_kind])||"Outros");
+    byCategory.set(label,(byCategory.get(label)||0)+sec);
+  });
+  const total=days.reduce((a,b)=>a+b,0), max=Math.max(...days,1), dayNames=["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
+  totalEl.textContent=formatStudyDuration(total); if(donutTotal) donutTotal.textContent=formatStudyDuration(total);
+  barsEl.innerHTML=days.map((sec,i)=>'<div class="agenda-study-day"><span class="agenda-study-value">'+(sec?formatStudyDuration(sec):"")+'</span><span class="agenda-study-bar-track"><i class="agenda-study-bar" style="height:'+Math.max(sec?5:2,Math.round(sec/max*100))+'%"></i></span><span class="agenda-study-label">'+dayNames[i]+'</span></div>').join("");
+  const palette=["#2086e8","#20b7aa","#f6a334","#8b6ee8","#aab6c7"], cats=[...byCategory.entries()].sort((a,b)=>b[1]-a[1]).slice(0,5), catTotal=cats.reduce((a,x)=>a+x[1],0);
+  if(!catTotal){donut.style.background="conic-gradient(var(--border) 0 100%)";legend.innerHTML='<span class="agenda-empty">Sem tempo registrado.</span>';return;}
+  let cursor=0; const segs=cats.map(([label,sec],i)=>{const a=cursor,b=cursor+sec/catTotal*100;cursor=b;return palette[i]+" "+a+"% "+b+"%";});
+  donut.style.background="conic-gradient("+segs.join(",")+")";
+  legend.innerHTML=cats.map(([label,sec],i)=>'<div class="agenda-category-item"><i class="agenda-category-dot" style="background:'+palette[i]+'"></i><span class="agenda-category-copy"><strong>'+escapeScheduleHtml(label)+'</strong><span>'+formatStudyDuration(sec)+'</span></span><span class="agenda-category-pct">'+Math.round(sec/catTotal*100)+'%</span></div>').join("");
 }
 
 async function loadTopics() {
