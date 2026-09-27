@@ -4782,8 +4782,13 @@ function bindReferenceCalendarControls() {
   });
 
   newActivityButton?.addEventListener("click", () => {
-    document.querySelector('[data-schedule-add-mode="manual"]')?.click();
-    document.querySelector(".schedule-add-hub")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    document.body.classList.add("activity-composer-open");
+    switchScheduleAddMode("manual");
+    requestAnimationFrame(() => {
+      const section = document.querySelector('[data-schedule-add-section="manual"]');
+      section?.scrollIntoView({ behavior: "smooth", block: "start" });
+      document.getElementById("manual-area")?.focus({ preventScroll: true });
+    });
   });
 }
 
