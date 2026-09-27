@@ -340,7 +340,10 @@
   function apply() {
     let selected = "1";
     try { selected = localStorage.getItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`) || "1"; } catch {}
-    current = allowed.has(selected) ? selected : "1";
+    const standalonePwa = document.documentElement.classList.contains("pwa-standalone")
+      || window.matchMedia?.("(display-mode: standalone)")?.matches
+      || window.navigator.standalone === true;
+    current = standalonePwa ? "4" : (allowed.has(selected) ? selected : "1");
     if (!allowed.has(selected)) {
       try { localStorage.setItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`, "1"); } catch {}
     }
