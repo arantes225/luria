@@ -2138,7 +2138,7 @@
       { n:3, title:"Resolução cega independente", owner:"ChatGPT", stats:`${blind}/200 resolvidas cegamente` },
       { n:4, title:"Revisão independente do bloco", owner:"ChatGPT", stats:`${perplexityAudited}/200 revisadas · ${perplexityFlagged} com achados` },
       { n:5, title:"Julgar parecer + corrigir", owner:"ChatGPT", stats:`${adjudicated} julgadas · ${corrected} corrigidas` },
-      { n:6, title:"Reauditar correções do zero", owner:"ChatGPT", stats:`${reaudited} reavaliadas · ${pendingReaudit} pendentes desta reauditoria` },
+      { n:6, title:"Revisar cegamente as correções", owner:"ChatGPT", stats:`${reaudited}/200 revisadas · ${pendingReaudit} pendentes` },
       { n:7, title:"Aceitar para o lote", owner:"Você", stats: humanStatus === "approved" ? "Aprovado e enviado ao lote" : `${approved}/200 aprovadas pela máquina · ${machinePending} ainda não aprovadas` }
     ];
 
@@ -2214,7 +2214,7 @@
         const independentActionLabel = nextStage === "perplexity_initial"
           ? "Etapa 4 · Copiar bloco/JSON"
           : nextStage === "perplexity_reaudit"
-            ? "Etapa 6 · Copiar pendentes/JSON"
+            ? "Etapa 6 · Continuar pendentes/JSON"
             : "Etapa 3 · Copiar bloco/JSON";
 
         return `
@@ -2717,7 +2717,7 @@
       perplexity_initial: { label: "4 · ChatGPT · revisão independente do bloco", provider: "chatgpt" },
       chatgpt_adjudication: { label: "5 · ChatGPT · julgar parecer + corrigir", provider: "chatgpt" },
       chatgpt_correction: { label: "5 · ChatGPT · aplicar correções", provider: "chatgpt" },
-      perplexity_reaudit: { label: "6 · ChatGPT · reauditar correções do zero", provider: "chatgpt" },
+      perplexity_reaudit: { label: "6 · ChatGPT · revisar cegamente as correções", provider: "chatgpt" },
       human_review: { label: "7 · Sua aprovação para o lote", provider: null },
       block_complete: { label: "Bloco concluído", provider: null }
     };
@@ -3036,7 +3036,7 @@
           ["03","ChatGPT · resolução cega sem memória","blind_resolution","chatgpt"],
           ["04","ChatGPT · revisão independente do bloco","perplexity_cycle","chatgpt"],
           ["05","ChatGPT · julgar parecer + corrigir","chatgpt_correction_cycle","chatgpt"],
-          ["06","ChatGPT · reauditar correções do zero","perplexity_reaudit","chatgpt"],
+          ["06","ChatGPT · revisar cegamente as correções","perplexity_reaudit","chatgpt"],
           ["07","Sua aprovação para o lote",null,"human"]
         ];
         const finalLotStages = [
@@ -3462,7 +3462,7 @@
       perplexity_initial:"4 · ChatGPT · revisão independente do bloco",
       chatgpt_adjudication:"5 · ChatGPT · julgar parecer + corrigir",
       chatgpt_correction:"5 · ChatGPT · aplicar correções",
-      perplexity_reaudit:"6 · ChatGPT · reauditar correções do zero"
+      perplexity_reaudit:"6 · ChatGPT · revisar cegamente as correções"
     };
     const phase = phaseLabels[next.next_stage] || next.phase || "Próxima fase";
     return { next, provider, providerLabel, phase, label:`${phase} · abrir ${providerLabel}` };
