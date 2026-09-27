@@ -274,7 +274,10 @@ const PAGE_INFO = {
   editais: { title: "Editais / Provas", eyebrow: "Planejamento" },
   amigos: { title: "Amigos", eyebrow: "Compartilhar" },
   configuracoes: { title: "Configurações", eyebrow: "Conta e preferências" },
-  admin: { title: "Admin", eyebrow: "Métricas do produto" }
+  admin: { title: "Admin", eyebrow: "Métricas do produto" },
+  trabalho_dashboard: { title: "Dashboard", eyebrow: "Trabalho" },
+  trabalho_plantoes: { title: "Plantões", eyebrow: "Trabalho" },
+  trabalho_passometro: { title: "Passômetro", eyebrow: "Trabalho" }
 };
 
 
@@ -425,55 +428,73 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
     </div>
 
     <nav class="nav">
-      <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
-        <span class="nav-icon">◫</span><span>Dashboard</span>
+      <a class="nav-link luria-mode-switch" href="${String(page).startsWith("trabalho_") ? "/dashboard/" : "/trabalho/"}" aria-label="Alternar entre Estudos e Trabalho">
+        <span class="nav-icon">${String(page).startsWith("trabalho_") ? "▣" : "◈"}</span>
+        <span>${String(page).startsWith("trabalho_") ? "Trabalho" : "Estudos"}</span>
       </a>
 
-      <a class="nav-link ${page === "cronograma" ? "active" : ""}" href="/cronograma/">
-        <span class="nav-icon">▦</span><span>Cronograma</span>
-      </a>
+      ${String(page).startsWith("trabalho_") ? `
+        <a class="nav-link ${page === "trabalho_dashboard" ? "active" : ""}" href="/trabalho/">
+          <span class="nav-icon">◫</span><span>Dashboard</span>
+        </a>
 
-      <div class="nav-group" id="study-nav-group">
-        <button class="nav-group-label" id="study-nav-toggle" type="button" aria-expanded="true" aria-controls="study-nav-submenu">
-          <span class="nav-icon">◉</span>
-          <span class="nav-label-text">Estudar</span>
-          <span class="nav-group-chevron" aria-hidden="true">⌄</span>
-        </button>
+        <a class="nav-link ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">
+          <span class="nav-icon">▦</span><span>Plantões</span>
+        </a>
 
-        <div class="nav-submenu" id="study-nav-submenu">
-          <a class="nav-sublink ${page === "ambientacao" ? "active" : ""}" href="/ambientacao/">Ambientação</a>
-          <a class="nav-sublink ${page === "caderno" ? "active" : ""}" href="/caderno/">Caderno</a>
-          <a class="nav-sublink ${page === "flashcards" ? "active" : ""}" href="/flashcards/">Flashcards</a>
-          <a class="nav-sublink ${page === "erros" ? "active" : ""}" href="/caderno-erros/">Caderno de erros</a>
-          <a class="nav-sublink ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">Questões e Simulados</a>
-          <a class="nav-sublink ${page === "plantao" ? "active" : ""}" href="/plantao/">Plantão</a>
+        <a class="nav-link ${page === "trabalho_passometro" ? "active" : ""}" href="/trabalho/passometro/">
+          <span class="nav-icon">⌁</span><span>Passômetro</span>
+        </a>
+      ` : `
+        <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
+          <span class="nav-icon">◫</span><span>Dashboard</span>
+        </a>
+
+        <a class="nav-link ${page === "cronograma" ? "active" : ""}" href="/cronograma/">
+          <span class="nav-icon">▦</span><span>Cronograma</span>
+        </a>
+
+        <div class="nav-group" id="study-nav-group">
+          <button class="nav-group-label" id="study-nav-toggle" type="button" aria-expanded="true" aria-controls="study-nav-submenu">
+            <span class="nav-icon">◉</span>
+            <span class="nav-label-text">Estudar</span>
+            <span class="nav-group-chevron" aria-hidden="true">⌄</span>
+          </button>
+
+          <div class="nav-submenu" id="study-nav-submenu">
+            <a class="nav-sublink ${page === "ambientacao" ? "active" : ""}" href="/ambientacao/">Ambientação</a>
+            <a class="nav-sublink ${page === "caderno" ? "active" : ""}" href="/caderno/">Caderno</a>
+            <a class="nav-sublink ${page === "flashcards" ? "active" : ""}" href="/flashcards/">Flashcards</a>
+            <a class="nav-sublink ${page === "erros" ? "active" : ""}" href="/caderno-erros/">Caderno de erros</a>
+            <a class="nav-sublink ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">Questões e Simulados</a>
+            <a class="nav-sublink ${page === "plantao" ? "active" : ""}" href="/plantao/">Plantão</a>
+          </div>
         </div>
-      </div>
 
-      <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
-        <span class="nav-icon">✦</span><span>Desafio Diário</span>
-      </a>
+        <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
+          <span class="nav-icon">✦</span><span>Desafio Diário</span>
+        </a>
 
-      <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
-        <span class="nav-icon">▥</span><span>Estatísticas</span>
-      </a>
+        <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
+          <span class="nav-icon">▥</span><span>Estatísticas</span>
+        </a>
 
-      <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
-        <span class="nav-icon">▤</span><span>Editais / Provas</span>
-      </a>
+        <a class="nav-link ${page === "editais" ? "active" : ""}" href="/editais/">
+          <span class="nav-icon">▤</span><span>Editais / Provas</span>
+        </a>
 
-      <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
-        <span class="nav-icon">◎</span><span>Amigos</span>
-      </a>
+        <a class="nav-link ${page === "amigos" ? "active" : ""}" href="/amigos/">
+          <span class="nav-icon">◎</span><span>Amigos</span>
+        </a>
 
-      <a class="nav-link ${page === "configuracoes" ? "active" : ""}" href="/configuracoes/">
-        <span class="nav-icon nav-icon-settings" aria-hidden="true">
-          <img src="/assets/img/logos/pwa-icon-192.png?v=3" alt="">
-        </span><span>Configurações</span>
-      </a>
+        <a class="nav-link ${page === "configuracoes" ? "active" : ""}" href="/configuracoes/">
+          <span class="nav-icon nav-icon-settings" aria-hidden="true">
+            <img src="/assets/img/logos/pwa-icon-192.png?v=3" alt="">
+          </span><span>Configurações</span>
+        </a>
 
-      <!-- O item Admin é inserido via JavaScript somente após o RPC is_admin() confirmar o usuário. -->
-      <span id="admin-nav-slot"></span>
+        <span id="admin-nav-slot"></span>
+      `}
     </nav>
 
     <div class="sidebar-footer">
