@@ -12,6 +12,7 @@
   let beatTimer = null;
   let lastCycle = 1;
   const BPM = 110;
+  const timelineEntries = [];
   const beatMs = Math.round(60000 / BPM);
 
   const $ = (id) => document.getElementById(id);
@@ -77,6 +78,13 @@
 
     item.append(time, elapsed, copy);
     logEl.prepend(item);
+
+    timelineEntries.unshift({
+      clock: time.textContent,
+      elapsed: elapsed.textContent,
+      action,
+      detail
+    });
   }
 
   function safeWeight() {
@@ -469,7 +477,45 @@
   });
 
   $("pcr-clear-log").addEventListener("click", () => {
+    timelineEntries.length = 0;
     logEl.innerHTML = '<div class="pcr-log-empty">Nenhum evento registrado após a limpeza.</div>';
+  });
+
+  $("pcr-export-log").addEventListener("click", () => {
+    if (!timelineEntries.length) {
+      alert("Ainda não há eventos na linha do tempo para exportar.");
+      return;
+    }
+
+    const ordered = [...timelineEntries].reverse();
+    const header = [
+      "LURIA · Linha do tempo da PCR",
+      "Exportado em: " + new Intl.DateTimeFormat("pt-BR", {
+        dateStyle: "short",
+        timeStyle: "medium"
+      }).format(new Date()),
+      "",
+      "Horário | Tempo de PCR | Evento | Detalhes"
+    ];
+
+    const rows = ordered.map((entry) => {
+      const detail = entry.detail ? entry.detail.replace(/\s+/g, " ").trim() : "";
+      return [entry.clock, entry.elapsed, entry.action, detail].join(" | ");
+    });
+
+    const content = [...header, ...rows].join("\n");
+    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+    anchor.href = url;
+    anchor.download = "luria-pcr-linha-do-tempo-" + stamp + ".txt";
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+
+    addLog("Linha do tempo exportada", "Arquivo TXT gerado");
   });
 
   renderDrugs();
