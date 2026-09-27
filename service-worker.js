@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v155-pcr-rosc-pause";
+const CACHE_VERSION = "luria-pwa-v156-profile-switch";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -44,7 +44,7 @@ const APP_SHELL = [
   "/assets/css/trabalho-pcr.css?v=1",
   "/assets/css/luria-brand-v5.css",
   "/assets/js/luria-brand-v5.js?v=12",
-  "/assets/js/app.js?v=17.20-work-fixed-footer",
+  "/assets/js/app.js?v=17.21-profile-switch",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
