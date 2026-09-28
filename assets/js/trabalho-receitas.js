@@ -48,9 +48,13 @@
 
     routes.forEach((route) => {
       lines.push(String(route.route || "USO").toUpperCase() + ":");
-      (route.items || []).forEach((item, index) => {
+      const items = route.items || [];
+      const alternatives = route.mode === "alternatives";
+      items.forEach((item, index) => {
+        if (alternatives && index > 0) lines.push("OU");
         const qty = item.quantity ? ` — ${item.quantity}` : "";
-        lines.push(`${index + 1}) ${item.drug || "Medicamento"}${qty}`);
+        const prefix = alternatives ? `${index + 1}ª OPÇÃO)` : `${index + 1})`;
+        lines.push(`${prefix} ${item.drug || "Medicamento"}${qty}`);
         if (item.directions) lines.push(`   ${item.directions}`);
         lines.push("");
       });
@@ -187,9 +191,10 @@
         <div class="recipe-route-title">${esc(route.route || "Uso")}</div>
         <div class="recipe-med-list">
           ${((route.items || []).map((item, i) => `
+            ${route.mode === "alternatives" && i > 0 ? '<div class="recipe-or-divider" aria-label="ou">OU</div>' : ""}
             <article class="recipe-med">
               <div class="recipe-med-head">
-                <span class="recipe-med-num">${i + 1}</span>
+                <span class="recipe-med-num">${route.mode === "alternatives" ? `${i + 1}ª` : i + 1}</span>
                 <div>
                   <strong>${esc(item.drug || "Medicamento")}</strong>
                   ${item.quantity ? `<span>${esc(item.quantity)}</span>` : ""}
