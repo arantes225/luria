@@ -17,27 +17,14 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-remove-loose-logo-v8">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-native-shell-v9">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <script>(function(){try{if(location.pathname.endsWith("/plantao.html"))history.replaceState(null,"","/plantao/"+location.search+location.hash);}catch(e){}})();</script>
   <style>
     .plantao-module-entry .plantao-mode-menu{display:none!important}
-    .plantao-module-back{display:inline-flex;align-items:center;gap:7px;margin:0 0 12px;padding:8px 11px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font-size:9px;font-weight:800;text-decoration:none}
-    .plantao-module-back:hover{background:var(--surface-2)}
-    /* Critical Sala de Emergência shell: keeps the reference layout visible even if an old cached CSS wins. */
-    body.plantao-module-entry .app-shell{display:block!important}
-    body.plantao-module-entry .plantao-page>.topbar,
-    body.plantao-module-entry .plantao-module-back{display:none!important}
-    body.plantao-module-entry main.main{display:block!important;margin:0!important;padding:0!important;width:100%!important;max-width:none!important;min-height:100vh!important}
-    body.plantao-module-entry .page.plantao-page{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;max-width:none!important;min-height:100vh!important;margin:0!important;padding:0!important;background:#f7faff!important}
-    body.plantao-module-entry #plantao-library{display:block!important;visibility:visible!important;opacity:1!important;min-height:100vh!important;background:#f7faff!important}
-    body.plantao-module-entry #plantao-library[hidden]{display:block!important}
-    body.plantao-module-entry .plantao-ref-header{display:grid!important}
-    body.plantao-module-entry .plantao-ref-intro{display:flex!important}
-    body.plantao-module-entry .plantao-quick-grid{display:grid!important}
-    body.plantao-module-entry #plantao-emergency-panel{display:block!important}
+    .plantao-module-back{display:none!important}
   </style>
 </head>
 <body data-page="plantao" data-plantao-entry="emergency" class="plantao-module-entry">
@@ -46,32 +33,16 @@
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
     <main class="main">
       <div class="page plantao-page">
-        <header class="topbar">
+        <header class="topbar plantao-standard-topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+          <div class="page-heading">
+            <h1>Simulador Sala de Emergência</h1>
+          </div>
         </header>
 
-        <a class="plantao-module-back" href="/plantao/">← Voltar ao Simulador</a>
-
         <section id="plantao-library" class="plantao-library">
-          <header class="plantao-ref-header" aria-label="Navegação da Sala de Emergência">
-            
 
-            <div class="plantao-ref-actions"><span>♢</span><b>LU</b></div>
-          </header>
-          <section class="plantao-library-intro plantao-ref-intro">
-            <div class="plantao-library-intro-copy">
-              <span class="plantao-intro-icon plantao-ref-title-icon" aria-hidden="true">✚</span>
-              <div>
-                <h1>Sala de Emergência</h1>
-                <p>Escolha um caso clínico e coloque seus conhecimentos em prática.</p>
-              </div>
-            </div>
-            <div class="plantao-library-search plantao-ref-search">
-              <span aria-hidden="true">⌕</span>
-              <input id="plantao-case-search" type="search" placeholder="Buscar casos por condição, sintoma ou palavra-chave..." autocomplete="off" aria-label="Buscar casos clínicos">
-            </div>
-          </section>
+
 
           <section class="plantao-quick-grid" aria-label="Ações rápidas">
             <article id="plantao-featured-case" class="plantao-featured-case">
@@ -412,7 +383,7 @@
   </script>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js"></script>
-  <script src="assets/js/app.js?v=17.28-emergency-sidebar-toggle-v7"></script>
+  <script src="assets/js/app.js?v=17.28-native-shell-v9"></script>
   <script src="assets/js/plantao-monitor.js?v=5.4"></script>
   <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
   <script src="/assets/js/plantao.js?v=9.10-reference-exact-v4"></script>
