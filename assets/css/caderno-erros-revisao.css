@@ -213,3 +213,39 @@ html[data-theme="leila-mood"] .error-review-cat-logo-pinktheme,
 body.theme-leila-mood .error-review-cat-logo-pinktheme{
   display:block!important;
 }
+
+
+/* v5 — encerramento da revisão */
+.error-review-page-empty p{
+  max-width:420px;
+  margin:10px auto 22px;
+  font-size:11px;
+  line-height:1.55;
+  color:var(--muted);
+}
+.error-review-finish-back{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  min-height:46px;
+  padding:0 18px;
+  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+  border-radius:12px;
+  background:var(--accent);
+  color:#fff;
+  font-size:10px;
+  font-weight:850;
+  text-decoration:none;
+  box-shadow:0 8px 18px color-mix(in srgb,var(--accent) 18%,transparent);
+  transition:transform .16s ease,box-shadow .16s ease,filter .16s ease;
+}
+.error-review-finish-back:hover{
+  transform:translateY(-1px);
+  filter:brightness(1.03);
+  box-shadow:0 11px 22px color-mix(in srgb,var(--accent) 23%,transparent);
+}
+.error-review-finish-back span{
+  font-size:14px;
+  line-height:1;
+}
