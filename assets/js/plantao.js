@@ -454,8 +454,11 @@
     if(specialty.includes("gine") || specialty.includes("obst") || title.includes("gesta")) {
       return "/assets/img/plantao/gestante_acordada_triste_1300x900_100kb.webp";
     }
-    if(title.includes("idos") || specialty.includes("geri")) {
-      return index%2 ? "/assets/img/plantao/10-homem-idoso-acordado.webp" : "/assets/img/plantao/02-mulher-idosa-acordada.webp";
+    const age=patientAgeYears(item);
+    const sexRaw=normalizeLabel(item?.presentation?.sex||"");
+    const female=sexRaw==="f" || sexRaw.startsWith("fem");
+    if((Number.isFinite(age) && age>=50) || title.includes("idos") || specialty.includes("geri")) {
+      return female ? "/assets/img/plantao/02-mulher-idosa-acordada.webp" : "/assets/img/plantao/10-homem-idoso-acordado.webp";
     }
     if(specialty.includes("cirurg") || title.includes("trauma") || title.includes("abdominal")) {
       return "/assets/img/plantao/plantao-homem-adulto-acordado-v2-1600x900.webp";
@@ -2622,11 +2625,22 @@
     if(Number.isFinite(age) && age<2) return PWA_PATIENT_IMAGES.baby;
     if(Number.isFinite(age) && age<13) return female ? PWA_PATIENT_IMAGES.girl : PWA_PATIENT_IMAGES.boy;
     if(pregnant) return PWA_PATIENT_IMAGES.pregnant;
-    if(Number.isFinite(age) && age>=65) return female ? PWA_PATIENT_IMAGES.elderlyWoman : PWA_PATIENT_IMAGES.elderlyMan;
+    if(Number.isFinite(age) && age>=50) return female ? PWA_PATIENT_IMAGES.elderlyWoman : PWA_PATIENT_IMAGES.elderlyMan;
     return female ? PWA_PATIENT_IMAGES.woman : PWA_PATIENT_IMAGES.man;
   }
 
   function patientImagesForCurrentCase(){
+    const age=patientAgeYears();
+    if(Number.isFinite(age) && age>=50){
+      const sexRaw=normalizeLabel(state.current?.presentation?.sex||"");
+      const female=sexRaw==="f" || sexRaw.startsWith("fem");
+      const elderlyPair=female ? PWA_PATIENT_IMAGES.elderlyWoman : PWA_PATIENT_IMAGES.elderlyMan;
+      return {
+        patient_image:elderlyPair.awake,
+        unconscious_image:elderlyPair.closed
+      };
+    }
+
     const pwaPair=pwaPatientImagePair();
     if(pwaPair) return {
       patient_image:pwaPair.awake,
