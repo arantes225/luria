@@ -3583,3 +3583,13 @@
   color:var(--accent);
   font-size:13px!important;
 }
+
+
+/* v24.2 — acabamento do ícone igual ao Caderno de Erros */
+#notebook-view-library .notebook-book-icon{
+  border:1.5px solid color-mix(in srgb,var(--accent) 72%,#ffffff 28%)!important;
+  box-shadow:
+    inset 4px 0 rgba(255,255,255,.15),
+    0 5px 12px rgba(24,72,136,.13),
+    0 0 0 1px color-mix(in srgb,var(--accent) 18%,transparent)!important;
+}
