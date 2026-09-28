@@ -78,16 +78,16 @@
         </section>
 
         <section class="work-card work-span-2">
-          ${heading("calendar","Agenda de trabalho","/trabalho/plantoes/")}
-          <div class="work-empty"><div><strong>Sua escala ainda está vazia</strong>Quando você cadastrar plantões, o próximo turno, horário, local e duração aparecem aqui.<br><a href="/trabalho/plantoes/">Configurar escala</a></div></div>
+          ${heading("calendar","Agenda de trabalho","/trabalho/gestor-plantoes/")}
+          <div class="work-empty"><div><strong>Sua escala ainda está vazia</strong>Quando você cadastrar plantões, o próximo turno, horário, local e duração aparecem aqui.<br><a href="/trabalho/gestor-plantoes/">Abrir gestor</a></div></div>
         </section>
 
         <section class="work-card work-span-2">
-          ${heading("briefcase","Gestão dos plantões")}
+          ${heading("briefcase","Gestor de Plantões")}
           <div class="work-shift-summary">
-            <a href="/trabalho/plantoes/"><small>Escala</small><strong>Organizar plantões</strong></a>
-            <a href="/trabalho/divisor-plantao/"><small>Divisão</small><strong>Divisor de plantão</strong></a>
-            <a href="/trabalho/financeiro/"><small>Financeiro</small><strong>Pagamentos e repasses</strong></a>
+            <a href="/trabalho/gestor-plantoes/"><small>Escala</small><strong>Organizar plantões</strong></a>
+            <a href="/trabalho/gestor-plantoes/"><small>Divisão</small><strong>Divisor de plantão</strong></a>
+            <a href="/trabalho/gestor-plantoes/"><small>Financeiro</small><strong>Pagamentos e repasses</strong></a>
           </div>
         </section>
 
@@ -119,8 +119,8 @@
     return `
       <div class="work-grid work-simple">
         <section class="work-card work-simple-next">
-          ${heading("calendar","Próximo plantão","/trabalho/plantoes/")}
-          <div class="work-empty"><div><strong>Nenhum plantão configurado</strong>Cadastre sua escala para ver o próximo turno diretamente no dashboard.<br><a href="/trabalho/plantoes/">Abrir escala</a></div></div>
+          ${heading("calendar","Próximo plantão","/trabalho/gestor-plantoes/")}
+          <div class="work-empty"><div><strong>Nenhum plantão configurado</strong>Cadastre sua escala para ver o próximo turno diretamente no dashboard.<br><a href="/trabalho/gestor-plantoes/">Abrir gestor</a></div></div>
         </section>
         <section class="work-card">
           ${heading("briefcase","Resumo do mês")}
