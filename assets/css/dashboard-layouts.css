@@ -2628,3 +2628,22 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-acti
  }
  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-activity-info small>*{min-width:0!important;max-width:100%!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
 }
+
+
+/* Dashboard 1 v40 — ofensiva com foguinho SVG grande */
+body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-heading-icon .dl-icon-flame{
+  width:20px!important;height:20px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{
+  display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
+  gap:8px!important;margin:auto!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{
+  width:82px!important;height:102px!important;min-width:82px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual .dl-streak-flame{
+  width:100%!important;height:100%!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{
+  font-size:17px!important;line-height:1.1!important;font-weight:850!important;color:var(--text)!important;
+}
