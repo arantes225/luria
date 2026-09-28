@@ -918,3 +918,48 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-logo{
   background:color-mix(in srgb,var(--accent) 11%,var(--surface))!important;
   border-color:color-mix(in srgb,var(--accent) 16%,var(--border))!important;
 }
+
+
+/* v17 — cards e CTAs acompanham integralmente a cor do tema */
+.sim-hub-page .sim-hero-card,
+.sim-hub-page .sim-hero-zap{
+  background:
+    linear-gradient(115deg,
+      color-mix(in srgb,var(--accent) 88%,black 12%) 0%,
+      var(--accent) 56%,
+      color-mix(in srgb,var(--accent) 78%,white 22%) 100%)!important;
+}
+.sim-hub-page .sim-reference-button{
+  color:var(--accent)!important;
+  border-color:color-mix(in srgb,var(--accent) 20%,transparent)!important;
+}
+.sim-hub-page .sim-reference-button:hover{
+  background:color-mix(in srgb,#fff 92%,var(--accent) 8%)!important;
+  color:color-mix(in srgb,var(--accent) 88%,black 12%)!important;
+}
+.sim-hub-page .sim-hero-badge,
+.sim-hub-page .sim-hero-zap .sim-hero-badge{
+  background:color-mix(in srgb,var(--accent) 74%,black 26%)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,#fff 12%,transparent)!important;
+}
+.sim-hub-page .button.primary,
+.sim-hub-page button.primary,
+.sim-hub-page .sim-primary-button{
+  background:var(--accent)!important;
+  border-color:var(--accent)!important;
+  color:#fff!important;
+}
+.sim-hub-page .button.secondary,
+.sim-hub-page button.secondary{
+  color:var(--accent)!important;
+  border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+  background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;
+}
+html[data-theme="leila-mood"] .sim-hub-page .sim-hero-card,
+html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
+  background:
+    linear-gradient(115deg,
+      color-mix(in srgb,var(--accent) 84%,black 16%) 0%,
+      var(--accent) 55%,
+      color-mix(in srgb,var(--accent) 76%,white 24%) 100%)!important;
+}
