@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-record-cleanup-v43">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-library-switch-v44">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=10-theme-buttons">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -81,6 +81,10 @@
             </nav>
           </div>
 
+          <section class="plantao-library-inner-switch" aria-label="Filtrar casos por área">
+            <div id="plantao-specialty-chips" class="plantao-specialty-chips plantao-specialty-native-switch" aria-label="Áreas"></div>
+          </section>
+
           <section class="plantao-library-metrics" aria-label="Resumo da Sala de Emergência">
             <div><span>Casos ativos</span><strong id="plantao-case-count">—</strong></div>
             <div><span>Casos concluídos</span><strong id="plantao-session-count">—</strong></div>
@@ -127,13 +131,6 @@
               </div>
               <button id="plantao-filter-clear" class="plantao-clear-filters" type="button">↻ Limpar filtros</button>
             </div>
-            <section class="plantao-library-inner-switch" aria-label="Filtros da biblioteca">
-              <div class="plantao-library-inner-switch-head">
-                <span>Biblioteca</span>
-                <small>Filtrar por especialidade</small>
-              </div>
-              <div id="plantao-specialty-chips" class="plantao-specialty-chips plantao-native-switch plantao-specialty-native-switch" aria-label="Especialidades"></div>
-            </section>
             <div class="plantao-cases-section-head">
               <div>
                 <span></span>
@@ -485,7 +482,7 @@
   <script src="assets/js/app.js?v=17.29-practice-label-v10"></script>
   <script src="assets/js/plantao-monitor.js?v=5.4"></script>
   <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
-  <script src="/assets/js/plantao.js?v=9.27-record-cleanup-v43"></script>
+  <script src="/assets/js/plantao.js?v=9.28-library-switch-v44"></script>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
