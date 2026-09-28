@@ -6770,3 +6770,16 @@ body.plantao-module-entry .plantao-record-button{
     right:10px;
   }
 }
+
+.plantao-disaster-library-card{overflow:hidden;border:1px solid var(--border,#dfe5ee);border-radius:20px;background:var(--panel,#fff);box-shadow:0 10px 30px rgba(18,53,89,.07)}
+.plantao-disaster-card-image{position:relative;aspect-ratio:16/8;overflow:hidden;background:#0b1d31}
+.plantao-disaster-card-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease}
+.plantao-disaster-library-card:hover .plantao-disaster-card-image img{transform:scale(1.025)}
+.plantao-disaster-card-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,20,36,.72),transparent 58%)}
+.plantao-disaster-card-image>span{position:absolute;z-index:1;left:12px;bottom:10px;padding:5px 8px;border-radius:999px;background:rgba(8,27,48,.72);border:1px solid rgba(255,255,255,.26);color:#fff;font-size:.66rem;font-weight:900;letter-spacing:.06em}
+.plantao-disaster-card-body{padding:14px;display:grid;gap:9px}
+.plantao-disaster-card-meta,.plantao-disaster-card-tags{display:flex;gap:6px;flex-wrap:wrap}
+.plantao-disaster-card-meta span,.plantao-disaster-card-tags span{padding:4px 7px;border-radius:999px;background:color-mix(in srgb,var(--accent,#184888) 8%,transparent);font-size:.7rem;font-weight:750}
+.plantao-disaster-card-body h3{margin:0;font-size:1.02rem;line-height:1.22}
+.plantao-disaster-card-body p{margin:0;font-size:.8rem;line-height:1.4;opacity:.74;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.plantao-disaster-card-body .plantao-record-button{margin-top:3px;width:100%}
