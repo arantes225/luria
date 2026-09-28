@@ -3643,7 +3643,7 @@ async function createFreePage() {
           "Página livre",
 
         materia:
-          null,
+          document.getElementById("notebook-free-modal")?.dataset.subject || null,
 
         content_html:
           ""
@@ -3695,7 +3695,7 @@ async function createFreePage() {
     );
 
 
-  closeFreePageModal();
+  const freeModal=document.getElementById("notebook-free-modal"); if(freeModal){delete freeModal.dataset.subject;delete freeModal.dataset.area;} closeFreePageModal();
 
 
   renderLibrary();
@@ -14183,10 +14183,17 @@ function renderLibrary() {
     const pages=(realByArea.get(area)||[]).filter(e=>subjectFor(e)===subject);
     const host=list.querySelector("#notebook-subject-pages");
     host.hidden=false;
-    host.innerHTML='<div class="notebook-subject-pages-head"><button type="button" data-pages-back>← Voltar</button><div><small>'+escapeHtml(area)+'</small><h3>'+escapeHtml(subject)+'</h3><span>'+pages.length+' página'+(pages.length===1?'':'s')+'</span></div></div><div class="notebook-pages-list">'+(pages.length?pages.map(pageCard).join(""):'<div class="notebook-pages-empty">Nenhuma página ainda nesta matéria.</div>')+'</div>';
+    host.innerHTML='<div class="notebook-subject-pages-head"><button type="button" data-pages-back>← Voltar</button><div><small>'+escapeHtml(area)+'</small><h3>'+escapeHtml(subject)+'</h3><span>'+pages.length+' página'+(pages.length===1?'':'s')+'</span></div></div><div class="notebook-pages-list">'+(pages.length?pages.map(pageCard).join(""):'<div class="notebook-pages-empty">Nenhuma página ainda nesta matéria.</div>')+'<button class="notebook-add-book-card notebook-add-subject-page" type="button" data-add-subject-page aria-label="Adicionar página em '+escapeHtml(subject)+'"><span>＋</span></button></div>';
     list.querySelectorAll(".notebook-week-shelf,.notebook-area-shelf").forEach(el=>el.hidden=true);
     host.querySelector("[data-pages-back]").addEventListener("click",()=>{host.hidden=true;list.querySelectorAll(".notebook-week-shelf,.notebook-area-shelf").forEach(el=>el.hidden=false)});
     host.querySelectorAll("[data-open-note]").forEach(x=>x.addEventListener("click",()=>openEntry(x.dataset.openNote)));
+    host.querySelector("[data-add-subject-page]")?.addEventListener("click",()=>{
+      openFreePageModal();
+      const areaInput=document.getElementById("notebook-free-area");
+      if(areaInput) areaInput.value=area;
+      const modal=document.getElementById("notebook-free-modal");
+      if(modal){modal.dataset.subject=subject;modal.dataset.area=area;}
+    });
   }));
   list.querySelectorAll("[data-notebook-add]").forEach(b=>b.addEventListener("click",()=>document.getElementById("notebook-new-free-page")?.click()));
   updateLibraryActions();
