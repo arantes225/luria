@@ -1055,16 +1055,15 @@ const PAGE_INFO = {
   trabalho_bulario: { title: "Bulário", eyebrow: "Trabalho" },
   trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
   trabalho_diagnostico: { title: "Diagnóstico por Sintomas", eyebrow: "Diagnóstico" },
-  trabalho_laboratorio: { title: "Laboratório", eyebrow: "Trabalho" },
+  trabalho_laboratorio: { title: "Laboratório", eyebrow: "Diagnóstico" },
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Trabalho" },
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Trabalho" },
-  trabalho_ecg: { title: "ECG", eyebrow: "Trabalho" },
+  trabalho_ecg: { title: "ECG", eyebrow: "Diagnóstico" },
   trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Trabalho" },
   trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Prescrição" },
-  trabalho_exames: { title: "Exames", eyebrow: "Prescrição" },
+  trabalho_exames: { title: "Exames", eyebrow: "Diagnóstico" },
   trabalho_scores: { title: "Scores", eyebrow: "Trabalho" },
   trabalho_antimicrobianos: { title: "Antimicrobianos", eyebrow: "Trabalho" },
-  trabalho_condutas: { title: "Condutas rápidas", eyebrow: "Trabalho" },
 };
 
 
@@ -1255,10 +1254,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">✎</span><span>Prescrição</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_exames" ? "active" : ""}" href="/trabalho/exames/">
-          <span class="nav-icon">◌</span><span>Exames</span>
-        </a>
-
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
           <span class="nav-icon">∑</span><span>Calculadoras</span>
         </a>
@@ -1267,20 +1262,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">#</span><span>Scores</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_condutas" ? "active" : ""}" href="/trabalho/condutas-rapidas/">
-          <span class="nav-icon">⚡</span><span>Condutas rápidas</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">
+        <a class="nav-link ${["trabalho_diagnostico","trabalho_exames","trabalho_laboratorio","trabalho_ecg"].includes(page) ? "active" : ""}" href="/trabalho/diagnostico/">
           <span class="nav-icon">⌕</span><span>Diagnóstico por Sintomas</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_laboratorio" ? "active" : ""}" href="/trabalho/laboratorio/">
-          <span class="nav-icon">◫</span><span>Laboratório</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_ecg" ? "active" : ""}" href="/trabalho/ecg/">
-          <span class="nav-icon">⌁</span><span>ECG</span>
         </a>
         <a class="nav-link ${page === "trabalho_fluidos" ? "active" : ""}" href="/trabalho/fluidos-eletrólitos/">
           <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
