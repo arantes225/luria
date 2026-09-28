@@ -1194,6 +1194,43 @@ function luriaIcon(name, className = "") {
 
 window.LuriaIcon = luriaIcon;
 
+function luriaUserInitials(user, profile = null) {
+  const fallbackName = user?.email
+    ? String(user.email).split("@")[0]
+    : "Usuário";
+
+  const rawName =
+    String(profile?.display_name || fallbackName || "")
+      .trim()
+      .replace(/\s+/g, " ");
+
+  const parts = rawName
+    .split(" ")
+    .map(part => part.trim())
+    .filter(Boolean);
+
+  if (!parts.length) return "U";
+
+  const first = parts[0].charAt(0).toUpperCase();
+
+  if (parts.length === 1) {
+    return first || "U";
+  }
+
+  const last = parts[parts.length - 1].charAt(0).toUpperCase();
+
+  return `${first}${last}` || first || "U";
+}
+
+function updateLuriaProfileInitials(user = window.docmapUser, profile = window.docmapProfile) {
+  const toggle = document.getElementById("luria-profile-toggle");
+  if (!toggle) return;
+
+  const initials = luriaUserInitials(user, profile);
+  toggle.textContent = initials;
+  toggle.setAttribute("aria-label", `Perfil de ${profile?.display_name || user?.email || "usuário"}`);
+}
+
 function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {
   const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();
   const canAccessWork = isAdmin === true || sidebarPlan === "plus" || sidebarPlan === "pro";
@@ -3458,7 +3495,7 @@ function ensureNotificationCenter() {
         type="button"
         aria-label="Perfil"
         aria-expanded="false"
-      >L</button>
+      >${luriaUserInitials(window.docmapUser, window.docmapProfile)}</button>
       <div id="luria-profile-menu" class="luria-profile-menu" hidden>
         <div class="luria-profile-theme-row">
           <span>Tema</span>
@@ -3527,6 +3564,7 @@ function ensureNotificationCenter() {
   topbar.appendChild(
     center
   );
+  updateLuriaProfileInitials();
 
   // Pomodoro é exclusivo do ambiente Estudos.
   if (String(page).startsWith("trabalho_")) {
@@ -5891,6 +5929,7 @@ async function iniciarApp() {
     data.session;
   window.docmapProfile =
     cachedProfile;
+  updateLuriaProfileInitials(user, cachedProfile);
   window.docmapEntitlements =
     cachedEntitlements;
   window.docmapPlan =
@@ -5982,6 +6021,7 @@ async function iniciarApp() {
 
         window.docmapProfile =
           finalProfile;
+        updateLuriaProfileInitials(user, finalProfile);
         window.docmapEntitlements =
           finalEntitlements;
         window.docmapIsAdmin =
