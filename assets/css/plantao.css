@@ -6182,3 +6182,26 @@ body.plantao-module-entry .plantao-practice-back:hover{
     font-size:9px!important;
   }
 }
+
+
+/* === Sala de Emergência · neutral record tabs v33 === */
+/* Etiquetas menores neutras em todos os temas. */
+body.plantao-module-entry .plantao-record-paper-slip,
+body.plantao-module-entry .plantao-record-paper-slip.difficulty,
+body.plantao-module-entry .plantao-record-paper-slip.time{
+  background:#fff!important;
+  border-color:var(--border)!important;
+  color:#111!important;
+}
+
+/* Botão volta ao padrão do tema atual. */
+body.plantao-module-entry .plantao-record-button{
+  background:var(--surface)!important;
+  border-color:var(--accent)!important;
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-record-button:hover{
+  background:var(--accent-soft)!important;
+  border-color:var(--accent)!important;
+  color:var(--accent)!important;
+}
