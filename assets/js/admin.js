@@ -3789,7 +3789,7 @@
   }
 
   function questionFactoryIndependentChunkStage(stage) {
-    return ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
+    return ["chatgpt_initial","blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
   }
 
   function questionFactoryDecisionPackageStage(stage) {
@@ -3855,7 +3855,8 @@
         Number(a.block_sequence_no ?? a.sequence_no ?? 0) - Number(b.block_sequence_no ?? b.sequence_no ?? 0)
       );
       const pending = ordered.filter(question => questionFactoryPendingForStage(question, stage));
-      const selected = pending.slice(0, 200);
+      const packageLimit = stage === "chatgpt_initial" ? 50 : 200;
+      const selected = pending.slice(0, packageLimit);
 
       if (!selected.length) {
         if (button) button.textContent = "Sem pendências nesta etapa";
@@ -3890,8 +3891,8 @@
         questions: copiedQuestions,
         question_count: copiedQuestions.length,
         input_package: {
-          mode: "block_pending_up_to_200",
-          requested_max: 200,
+          mode: stage === "chatgpt_initial" ? "block_pending_up_to_50" : "block_pending_up_to_200",
+          requested_max: packageLimit,
           delivered_count: copiedQuestions.length,
           pending_before_copy: pending.length,
           pending_after_this_package_if_imported: Math.max(0, pending.length - copiedQuestions.length),
@@ -3902,15 +3903,18 @@
       const prompt = String(questionFactoryBlockPrompt(next) || "").trim();
       if (!prompt) throw new Error("Não foi possível montar o prompt desta etapa.");
 
-      const inputLabel = stage === "blind_resolution" ? "INPUT_JSON_CEGO" : "INPUT_JSON_ATUAL";
+      const inputLabel = stage === "blind_resolution" ? "INPUT_JSON_CEGO" : "INPUT_JSON";
       const combined = [
         prompt,
         "",
         "============================================================",
         inputLabel + " — FONTE DE VERDADE DESTA EXECUÇÃO",
         "============================================================",
+        "MODO MANUAL POR JSON: a fonte de verdade desta execução é EXCLUSIVAMENTE o INPUT_JSON abaixo; NÃO tente acessar Admin/Supabase para reler as questões.",
         "Processe TODOS e SOMENTE os itens de questions[] abaixo.",
-        "Devolva um único JSON da etapa com exatamente " + copiedQuestions.length + " reviews, um por question_id + version recebido.",
+        stage === "chatgpt_initial"
+          ? "Na revisão inicial, devolva initial_reviews, autocorrections e final_reviews para TODOS os itens recebidos; preserve question_id e use item_version/version atual em cada revisão."
+          : "Devolva um único JSON da etapa com exatamente " + copiedQuestions.length + " reviews, um por question_id + version recebido.",
         JSON.stringify(payload, null, 2)
       ].join("\n");
 
