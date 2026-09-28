@@ -11,7 +11,8 @@
     unavailable: document.getElementById("daily-unavailable"),
     content: document.getElementById("daily-content"),
     area: document.getElementById("daily-area"),
-    heroDate: document.getElementById("daily-hero-date"),
+    number: document.getElementById("daily-number"),
+    cardDate: document.getElementById("daily-card-date"),
     clues: document.getElementById("daily-clues"),
     feedback: document.getElementById("daily-feedback"),
     form: document.getElementById("daily-form"),
@@ -127,7 +128,8 @@
   }
   function renderHeader() {
     els.area.textContent = challenge.area || "Desafio clínico";
-    els.heroDate.textContent = formatDate(challenge.challenge_date, false);
+    if (els.number) els.number.textContent = "#" + String(challenge.id).padStart(3, "0");
+    if (els.cardDate) els.cardDate.textContent = formatDate(challenge.challenge_date, false);
   }
 
   function startTimer() {
