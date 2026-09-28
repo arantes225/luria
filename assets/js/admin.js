@@ -151,7 +151,25 @@
     { key: "advanced_statistics", label: "Estatísticas detalhadas", description: "Análises aprofundadas por módulo." },
     { key: "studyrats_accessories", label: "Acessórios dos ratinhos", description: "Libera uso de acessórios no StudyRats." },
     { key: "studyrats_variants", label: "Outros ratos", description: "Libera variantes além do rato azul base." },
-    { key: "ai", label: "IA", description: "Recursos de inteligência artificial." }
+    { key: "ai", label: "IA", description: "Recursos de inteligência artificial." },
+    { key: "plantao", label: "Simulador clínico", description: "Acesso aos casos e simuladores clínicos." },
+    { key: "editais", label: "Editais e Provas", description: "Central de editais, provas e acompanhamento." },
+    { key: "amigos", label: "Amigos", description: "Amigos, compartilhamentos e StudyRats." },
+    { key: "desafio_diario", label: "Desafio Diário", description: "Acesso ao desafio diário e histórico de participações." },
+    { key: "trabalho", label: "Modo Trabalho", description: "Libera o ambiente Trabalho e o acesso às ferramentas profissionais." },
+    { key: "trabalho_passometro", label: "Passômetro", description: "Passagem de plantão e acompanhamento de pacientes." },
+    { key: "trabalho_cola_rapida", label: "Cola rápida", description: "Caderno temporário de acesso rápido no plantão." },
+    { key: "trabalho_prescricao", label: "Prescrição", description: "Central de prescrição e ferramentas relacionadas." },
+    { key: "trabalho_bulario", label: "Bulário", description: "Bulário de medicamentos, apresentações, doses, reações e interações." },
+    { key: "trabalho_protocolos", label: "Protocolos", description: "Protocolos médicos e fluxos de atendimento." },
+    { key: "trabalho_tratamentos", label: "Tratamentos gerais", description: "Receitas e tratamentos prontos para consulta." },
+    { key: "trabalho_antimicrobianos", label: "Antimicrobianos", description: "Guia de antimicrobianos por foco, germe e classe." },
+    { key: "trabalho_calculadoras", label: "Calculadoras", description: "Calculadoras médicas e reposições." },
+    { key: "trabalho_scores", label: "Scores", description: "Scores e escores clínicos." },
+    { key: "trabalho_diagnostico", label: "Diagnóstico por Sintomas", description: "Diagnóstico diferencial, exames, laboratório e ECG." },
+    { key: "trabalho_fluidos", label: "Fluidos e eletrólitos", description: "Reposição, correções e manejo de fluidos e eletrólitos." },
+    { key: "trabalho_gestor_plantoes", label: "Gestor de Plantões", description: "Escala, financeiro, divisor e gestão de plantões." },
+    { key: "trabalho_pcr", label: "PCR", description: "Módulo de parada cardiorrespiratória." }
   ];
 
   function $(id) {
