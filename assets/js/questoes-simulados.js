@@ -4720,6 +4720,15 @@ async function createManualSimulation() {
     );
 
 
+  const manualHours = Math.max(0, Number(document.getElementById("qs-manual-hours")?.value || 0));
+  const manualMinutes = Math.max(0, Number(document.getElementById("qs-manual-minutes")?.value || 0));
+  const durationMinutes = Math.round(manualHours * 60 + manualMinutes);
+
+  if (manualHours > 23 || manualMinutes > 59) {
+    setManualStatus("Informe um tempo válido.", "error");
+    return;
+  }
+
   if (!title) {
     setManualStatus(
       "Digite o nome do simulado.",
@@ -4783,6 +4792,9 @@ async function createManualSimulation() {
 
           total_questions:
             total,
+
+          duration_minutes:
+            durationMinutes > 0 ? durationMinutes : null,
 
           status:
             "ready",
@@ -4870,12 +4882,11 @@ async function createManualSimulation() {
     }
 
 
-    document
-      .getElementById(
-        "qs-manual-title"
-      )
-      .value =
-        "";
+    document.getElementById("qs-manual-title").value = "";
+    const manualHoursInput=document.getElementById("qs-manual-hours");
+    const manualMinutesInput=document.getElementById("qs-manual-minutes");
+    if(manualHoursInput) manualHoursInput.value="0";
+    if(manualMinutesInput) manualMinutesInput.value="0";
 
 
     setManualStatus(
