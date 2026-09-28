@@ -4899,10 +4899,6 @@ function renderErrorHomeExtras(){
       <article class="error-feature-card"><span>${errorLibraryEscape(item.area||"Sem área")}</span><strong>${errorLibraryEscape(item.theme||item.materia||"Ponto importante")}</strong><p>💡 ${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</p></article>`).join("") || '<div class="error-home-empty">Seus Pulos do Gato aparecerão aqui.</div>';
   }
   const due=errorLibraryItems.filter(i=>!i.due_date||i.due_date<=errorTodayISO()).slice(0,5);
-  const today=document.getElementById("error-review-home-today-list")||document.getElementById("error-today-list");
-  const count=document.getElementById("error-review-home-today-count")||document.getElementById("error-today-count");
-  if(count) count.textContent=String(due.length);
-  if(today) today.innerHTML=due.map((item,i)=>`<button type="button" class="error-today-row" data-home-review-id="${errorLibraryEscape(item.id)}"><b>${i+1}</b><span><strong>${errorLibraryEscape(item.theme||item.materia||"Erro")}</strong><small>${errorLibraryEscape(item.area||"Sem área")}</small></span><i>›</i></button>`).join("") || '<div class="error-home-empty">Nenhuma revisão pendente hoje.</div>';
   const metrics=document.getElementById("error-review-home-quick-metrics")||document.getElementById("error-quick-metrics");
   if(metrics){
     const reviewed=errorLibraryItems.filter(i=>Number(i.review_count||0)>0).length;
@@ -4911,8 +4907,16 @@ function renderErrorHomeExtras(){
     const areaCounts=new Map(); errorLibraryItems.forEach(i=>{const k=i.area||"Sem área";areaCounts.set(k,(areaCounts.get(k)||0)+1)});
     const areas=[...areaCounts.entries()].sort((x,y)=>y[1]-x[1]).slice(0,5);
     metrics.innerHTML=`
+      <div class="error-metric-summary-grid">
+        <div><span>Erros totais</span><strong>${total}</strong><small>itens salvos</small></div>
+        <div><span>Revisões</span><strong>${totalReviews}</strong><small>vezes revisado</small></div>
+        <div><span>Retenção</span><strong>${retentionPct}%</strong><small>consolidação atual</small></div>
+      </div>
       <div class="error-metric-progress"><div class="error-metric-ring" style="--p:${total?Math.round(reviewed/total*100):0}"><strong>${reviewed}</strong><span>de ${total}</span></div><div><strong>Revisados</strong><span>${total?Math.round(reviewed/total*100):0}% do caderno</span><div class="error-metric-track"><i style="width:${total?Math.round(reviewed/total*100):0}%"></i></div></div></div>
-      <div class="error-metric-mini-grid"><div><b>↻</b><strong>${recurring}</strong><span>Erros recorrentes</span></div><div><b>△</b><strong>${dueCount}</strong><span>A revisar agora</span></div></div>
+      <div class="error-metric-mini-grid">
+        <div><b>↻</b><strong>${recurring}</strong><span>Erros recorrentes</span></div>
+        <div><b>△</b><strong>${dueCount}</strong><span>A revisar agora</span></div>
+      </div>
       <h4>Erros por área</h4>
       <div class="error-metric-areas">${areas.map(([name,n])=>`<div><span>${errorLibraryEscape(name)}</span><i><b style="width:${total?Math.round(n/total*100):0}%"></b></i><em>${total?Math.round(n/total*100):0}%</em></div>`).join("")}</div>`;
   }
@@ -5342,7 +5346,7 @@ function wireErrorLibrary() {
     setErrorHomeMode("all");
     setErrorLibraryStatus("Abra um caderno e use Selecionar para montar uma revisão personalizada.","success");
   });
-  (document.getElementById("error-review-home-today-list")||document.getElementById("error-today-list"))?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;openErrorReviewPage({mode:"today",item:button.dataset.homeReviewId})});
+
 
   document
     .querySelectorAll(
