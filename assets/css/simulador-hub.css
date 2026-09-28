@@ -1,0 +1,29 @@
+
+.sim-hub-page{max-width:1280px}
+.sim-hub-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin:4px 0 18px}
+.sim-hub-intro-copy{max-width:720px}.sim-hub-kicker{display:block;margin-bottom:6px;color:var(--accent);font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.sim-hub-intro h2{margin:0;font-size:30px;line-height:1.05;letter-spacing:-.03em;color:var(--text)}
+.sim-hub-intro p{margin:9px 0 0;color:var(--muted);font-size:11px;line-height:1.55}
+.sim-hub-quote{max-width:330px;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--muted);font-size:10px;line-height:1.45}
+.sim-hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sim-hub-card{position:relative;overflow:hidden;min-height:390px;border:1px solid var(--border);border-radius:18px;background:var(--surface);text-decoration:none;color:var(--text);box-shadow:0 10px 30px rgba(22,56,92,.06);transition:.18s}
+.sim-hub-card:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 35%,var(--border));box-shadow:0 16px 34px rgba(22,56,92,.09)}
+.sim-hub-card-main{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:18px;align-items:center;padding:26px 26px 18px}
+.sim-hub-card-logo{display:grid;place-items:center;width:76px;height:76px;margin-bottom:18px;border-radius:18px;background:var(--accent-soft)}
+.sim-hub-card-logo img{max-width:56px;max-height:56px;object-fit:contain}
+.sim-hub-logo-dark,.sim-hub-logo-pink{display:none}
+html[data-theme="dark"] .sim-hub-logo-light{display:none}
+html[data-theme="dark"] .sim-hub-logo-dark{display:block}
+html[data-theme="leila-mood"] .sim-hub-logo-light{display:none}
+html[data-theme="leila-mood"] .sim-hub-logo-pink{display:block}
+.sim-hub-card h3{margin:0;font-size:24px;letter-spacing:-.02em}
+.sim-hub-card p{margin:8px 0 0;max-width:520px;color:var(--muted);font-size:10px;line-height:1.55}
+.sim-hub-visual{display:grid;place-items:center;height:220px;border-radius:16px;background:linear-gradient(145deg,var(--surface-2),color-mix(in srgb,var(--accent-soft) 55%,var(--surface)))}
+.sim-hub-visual svg{width:118px;height:118px;color:var(--accent)}
+.sim-hub-features{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:0 26px 22px}
+.sim-hub-feature{padding:10px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2)}
+.sim-hub-feature strong{display:block;font-size:8.5px}.sim-hub-feature span{display:block;margin-top:3px;color:var(--muted);font-size:7.5px;line-height:1.35}
+.sim-hub-cta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 26px 24px;padding:12px 14px;border-radius:11px;background:var(--accent);color:#fff;font-size:10px;font-weight:850}
+.sim-hub-cta b{font-size:16px}
+@media(max-width:900px){.sim-hub-intro{align-items:flex-start;flex-direction:column}.sim-hub-quote{max-width:none}.sim-hub-grid{grid-template-columns:1fr}.sim-hub-card-main{grid-template-columns:minmax(0,1fr) 150px}}
+@media(max-width:620px){.sim-hub-intro h2{font-size:25px}.sim-hub-card-main{grid-template-columns:1fr}.sim-hub-visual{height:150px}.sim-hub-features{grid-template-columns:1fr}.sim-hub-card{min-height:0}}
