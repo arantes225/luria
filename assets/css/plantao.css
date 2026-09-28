@@ -5460,3 +5460,11 @@ body.plantao-module-entry .plantao-record-photo img{
   border-color:var(--border)!important;
   background:var(--surface-2)!important;
 }
+
+
+/* === Sala de Emergência · patient face crop v19 === */
+body.plantao-module-entry .plantao-record-photo img{
+  object-position:center 20%!important;
+  transform:scale(1.22)!important;
+  transform-origin:center 25%!important;
+}
