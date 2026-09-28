@@ -48,7 +48,19 @@ function renderCurrent(){
   const thoughtWrap=document.getElementById("error-review-thought-wrap");
   const thought=document.getElementById("error-review-thought");
   thoughtWrap.hidden=!item.what_i_thought;if(item.what_i_thought)thought.textContent=item.what_i_thought;
-  document.getElementById("error-review-details").hidden=true;
+
+  const details=document.getElementById("error-review-details");
+  const card=document.getElementById("error-review-big-card");
+  const answer=document.getElementById("error-review-user-answer");
+  const feedback=document.getElementById("error-review-feedback");
+  const userAnswerCopy=document.getElementById("error-review-user-answer-copy");
+  if(details)details.hidden=true;
+  card?.classList.remove("question-open");
+  if(answer){answer.value="";answer.disabled=false}
+  if(feedback)feedback.hidden=true;
+  if(userAnswerCopy)userAnswerCopy.textContent="—";
+  const confirm=document.getElementById("error-review-confirm-answer");
+  if(confirm){confirm.disabled=false;confirm.textContent="Confirmar resposta"}
   document.getElementById("error-review-show-question").textContent="Ver questão";
   setStatus("");
   renderSidebars();
@@ -81,8 +93,33 @@ async function markUnderstood(){
 
 function wire(){
   document.getElementById("error-review-show-question")?.addEventListener("click",()=>{
-    const details=document.getElementById("error-review-details");const open=details.hidden;details.hidden=!open;document.getElementById("error-review-show-question").textContent=open?"Fechar questão":"Ver questão";
+    const details=document.getElementById("error-review-details");
+    const card=document.getElementById("error-review-big-card");
+    const open=details.hidden;
+    details.hidden=!open;
+    card?.classList.toggle("question-open",open);
+    document.getElementById("error-review-show-question").textContent=open?"Fechar questão":"Ver questão";
+    if(open)setTimeout(()=>document.getElementById("error-review-user-answer")?.focus(),120);
   });
+
+  document.getElementById("error-review-confirm-answer")?.addEventListener("click",()=>{
+    const textarea=document.getElementById("error-review-user-answer");
+    const value=textarea?.value?.trim()||"";
+    if(!value){
+      setStatus("Escreva sua resposta antes de confirmar.","error");
+      textarea?.focus();
+      return;
+    }
+    const copy=document.getElementById("error-review-user-answer-copy");
+    const feedback=document.getElementById("error-review-feedback");
+    if(copy)copy.textContent=value;
+    if(feedback)feedback.hidden=false;
+    if(textarea)textarea.disabled=true;
+    const confirm=document.getElementById("error-review-confirm-answer");
+    if(confirm){confirm.disabled=true;confirm.textContent="Resposta confirmada"}
+    setStatus("Resposta registrada nesta revisão. Compare com o gabarito abaixo.","success");
+  });
+
   document.getElementById("error-review-understood")?.addEventListener("click",markUnderstood);
 }
 
