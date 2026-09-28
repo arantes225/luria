@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v184-temp-notebook";
+const CACHE_VERSION = "luria-pwa-v185-recipe-bank";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -38,7 +38,7 @@ const APP_SHELL = [
   "/trabalho/fluidos-eletrólitos/",
   "/trabalho/ecg/",
   "/trabalho/protocolos/",
-  "/trabalho/prescricao/",
+  "/trabalho/prescricao/",\n  "/trabalho/receitas/",\n  "/assets/js/trabalho-receitas.js?v=1",
   "/plantao/",
   "/plantao/sala-emergencia/",
   "/plantao/luriazap/",
