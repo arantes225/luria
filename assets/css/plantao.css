@@ -5434,3 +5434,29 @@ body.plantao-module-entry .plantao-record-button{
     min-height:0!important;
   }
 }
+
+
+/* === Sala de Emergência · patient photo v18 === */
+body.plantao-module-entry .plantao-record-avatar{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-record-photo{
+  width:44px!important;
+  height:52px!important;
+  border-radius:7px!important;
+  overflow:hidden!important;
+  border:1px solid #d8dde6!important;
+  background:#f6f8fb!important;
+  box-shadow:inset 0 0 0 1px rgba(15,23,42,.02)!important;
+}
+body.plantao-module-entry .plantao-record-photo img{
+  width:100%!important;
+  height:100%!important;
+  display:block!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-photo{
+  border-color:var(--border)!important;
+  background:var(--surface-2)!important;
+}
