@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "enabled": false,
+  "week": "2026-W40",
+  "group_count": 3,
+  "strategy": "stable-user-hash",
+  "note": "Infraestrutura ativa. Pacotes só serão publicados após seleção de conteúdo aprovado.",
+  "groups": [
+    {
+      "id": 0,
+      "flashcards": [],
+      "questions": []
+    },
+    {
+      "id": 1,
+      "flashcards": [],
+      "questions": []
+    },
+    {
+      "id": 2,
+      "flashcards": [],
+      "questions": []
+    }
+  ]
+}
