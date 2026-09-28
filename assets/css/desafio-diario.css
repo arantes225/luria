@@ -21,9 +21,7 @@
 .daily-card-titlebar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px}
 .daily-card-title{display:flex;align-items:center;gap:10px;color:var(--text,#172338)}
 .daily-card-title strong{font-size:14px}
-.daily-doc-icon,.daily-target-icon,.daily-bars-icon,.daily-clock-icon{display:grid;place-items:center;color:var(--primary,#184888);font-weight:900}
-.daily-doc-icon{width:34px;height:34px;border-radius:11px;background:color-mix(in srgb,var(--primary,#184888) 9%,var(--surface,#fff));border:1px solid color-mix(in srgb,var(--primary,#184888) 13%,transparent)}
-.daily-doc-icon svg{width:18px;height:18px}
+.daily-target-icon{display:grid;place-items:center;color:var(--primary,#184888);font-weight:900}
 .daily-area{display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:999px;background:color-mix(in srgb,var(--primary,#184888) 8%,transparent);color:var(--primary,#184888);font-size:11px;font-weight:850}
 .daily-clues{display:grid;gap:10px}
 .daily-clue-row{display:grid;grid-template-columns:118px minmax(0,1fr);gap:16px;align-items:center;position:relative}
@@ -64,7 +62,6 @@
 .daily-side-card{padding:17px}
 .daily-side-heading{display:flex;align-items:center;gap:9px;margin-bottom:14px;color:var(--text,#172338)}
 .daily-side-heading strong{font-size:14px}
-.daily-bars-icon,.daily-clock-icon{width:26px;height:26px;border-radius:8px;background:color-mix(in srgb,var(--primary,#184888) 8%,transparent)}
 .daily-summary-progress{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;padding:4px 0 15px;border-bottom:1px solid var(--border,#e4e8ee)}
 .daily-ring{--ring:20%;width:66px;height:66px;border-radius:50%;background:conic-gradient(var(--primary,#184888) var(--ring),var(--border,#e5eaf0) 0);position:relative;display:grid;place-items:center}
 .daily-ring::after{content:"";position:absolute;inset:8px;border-radius:50%;background:var(--surface,#fff)}
@@ -135,3 +132,20 @@
 .daily-card-number{padding:0 7px;border-radius:999px;border:1px solid var(--border,#dfe5ec);background:var(--surface,#fff);color:var(--primary,#184888)}
 .daily-card-date::before{content:"•";margin-right:8px;color:var(--border,#cfd7e2)}
 .daily-hero{min-height:0;padding:0}
+
+.daily-section-icon{
+  width:30px;
+  height:30px;
+  flex:0 0 30px;
+  display:grid;
+  place-items:center;
+  border-radius:9px;
+  background:var(--accent-soft, color-mix(in srgb,var(--primary,#184888) 9%,transparent));
+  color:var(--accent,var(--primary,#184888));
+}
+.daily-section-icon .luria-ui-icon{
+  width:18px;
+  height:18px;
+  display:block;
+  color:currentColor;
+}
