@@ -2127,3 +2127,66 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
     font-size:20px!important;
   }
 }
+
+
+/* v14.5 — revisão: mascote oficial + texto contido no card */
+.review-flashcard{
+  width:100%;
+  min-width:0;
+  overflow:hidden;
+  box-sizing:border-box;
+}
+.review-cat-badge{
+  max-width:100%;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.review-cat-brand{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  flex:0 0 42px;
+}
+.review-cat-brand img{
+  grid-area:1/1;
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  display:block;
+}
+.review-cat-dark,
+.review-cat-pink{display:none!important}
+:root[data-theme="dark"] .review-cat-light{display:none!important}
+:root[data-theme="dark"] .review-cat-dark{display:block!important}
+:root[data-theme="pink"] .review-cat-light,
+:root[data-theme="rosa"] .review-cat-light{display:none!important}
+:root[data-theme="pink"] .review-cat-pink,
+:root[data-theme="rosa"] .review-cat-pink{display:block!important}
+
+.review-ccq{
+  width:100%;
+  max-width:610px;
+  min-width:0;
+  margin:20px auto 0;
+  padding:0 4px;
+  box-sizing:border-box;
+  font-size:clamp(18px,2.15vw,28px)!important;
+  line-height:1.22!important;
+  letter-spacing:-.02em!important;
+  text-align:center;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:break-word!important;
+  hyphens:auto;
+}
+.review-flashcard *{
+  max-width:100%;
+  box-sizing:border-box;
+}
+@media(max-width:700px){
+  .review-flashcard{padding:26px 18px!important}
+  .review-cat-brand,
+  .review-cat-brand img{width:36px;height:36px}
+  .review-ccq{font-size:clamp(17px,6vw,23px)!important}
+}
