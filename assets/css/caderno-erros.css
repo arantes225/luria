@@ -2190,3 +2190,28 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
   .review-cat-brand img{width:36px;height:36px}
   .review-ccq{font-size:clamp(17px,6vw,23px)!important}
 }
+
+
+/* v18.2 — revisão: Pulo do Gato correto por tema e menor */
+.review-cat-brand,
+.review-cat-brand img{
+  width:30px!important;
+  height:30px!important;
+}
+.review-cat-brand{flex:0 0 30px!important}
+.review-cat-light,
+.review-cat-dark,
+.review-cat-pink{display:none!important}
+/* No tema claro, usar a arte escura/azul para contrastar com o fundo branco. */
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .review-cat-dark,
+:root[data-theme="light"] .review-cat-dark{display:block!important}
+:root[data-theme="dark"] .review-cat-light{display:block!important}
+:root[data-theme="leila-mood"] .review-cat-pink,
+:root[data-theme="pink"] .review-cat-pink,
+:root[data-theme="rosa"] .review-cat-pink{display:block!important}
+.review-cat-badge{gap:5px!important;padding:5px 8px!important;font-size:9px!important}
+.review-cat-badge>span:last-child{font-size:9px!important}
+@media(max-width:700px){
+  .review-cat-brand,.review-cat-brand img{width:27px!important;height:27px!important}
+  .review-cat-brand{flex-basis:27px!important}
+}
