@@ -11,24 +11,104 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.13-font-uniform">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <style>
-    .work-shell{display:grid;gap:16px}
-    .work-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .work-hero h2{margin:0 0 8px;font-size:24px}
-    .work-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .work-card{min-height:150px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
-    .work-card strong{display:block;margin-bottom:8px;font-size:15px}
-    .work-card span{color:var(--muted);font-size:13px;line-height:1.5}
-    @media(max-width:800px){.work-grid{grid-template-columns:1fr}.work-hero{padding:18px}}
+    .pm-page{display:grid;gap:16px}
+    .pm-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .pm-search{position:relative;flex:1;max-width:680px}
+    .pm-search input{width:100%;height:44px;padding:0 42px 0 42px;border:1px solid var(--border);border-radius:13px;background:var(--surface);color:var(--text);font:inherit}
+    .pm-search svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);stroke:var(--muted);fill:none;stroke-width:2}
+    .pm-new{height:44px;padding:0 16px;border:0;border-radius:12px;background:var(--accent);color:#fff;font-weight:850;cursor:pointer;white-space:nowrap}
+    .pm-new:hover{filter:brightness(.96)}
+    .pm-subbar{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:12px}
+    .pm-decks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .pm-deck{position:relative;min-height:170px;padding:18px;border:1px solid var(--border);border-radius:17px;background:var(--surface);box-shadow:0 6px 20px rgba(15,23,42,.035);cursor:pointer;transition:.16s ease}
+    .pm-deck:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 38%,var(--border))}
+    .pm-deck-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+    .pm-deck-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-weight:900}
+    .pm-deck-date{font-size:11px;color:var(--muted);font-weight:750}
+    .pm-deck h3{margin:14px 0 4px;font-size:17px;line-height:1.2}
+    .pm-deck p{margin:0;color:var(--muted);font-size:12px}
+    .pm-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+    .pm-chip{display:inline-flex;align-items:center;min-height:25px;padding:0 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:10px;font-weight:800}
+    .pm-empty{grid-column:1/-1;min-height:220px;display:grid;place-items:center;text-align:center;padding:30px;border:1px dashed var(--border);border-radius:16px;background:var(--surface);color:var(--muted)}
+    .pm-empty strong{display:block;color:var(--text);font-size:17px;margin-bottom:6px}
+    .pm-detail[hidden],.pm-list[hidden]{display:none!important}
+    .pm-detail-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+    .pm-back{height:38px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-weight:800;cursor:pointer}
+    .pm-detail-title{flex:1}
+    .pm-detail-title h2{margin:0 0 4px;font-size:24px}
+    .pm-detail-title p{margin:0;color:var(--muted);font-size:12px}
+    .pm-patient-grid{display:grid;gap:10px}
+    .pm-patient{position:relative;padding:14px 16px;border:1px solid var(--border);border-left-width:5px;border-radius:14px;background:var(--surface);cursor:pointer}
+    .pm-patient[data-priority="green"]{border-left-color:#2ca56c}
+    .pm-patient[data-priority="yellow"]{border-left-color:#d6a019}
+    .pm-patient[data-priority="red"]{border-left-color:#d84b4b}
+    .pm-patient[data-priority="none"]{border-left-color:var(--border)}
+    .pm-patient-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .pm-patient h3{margin:0;font-size:15px}
+    .pm-patient small{color:var(--muted)}
+    .pm-patient-summary{margin-top:7px;color:var(--muted);font-size:12px;line-height:1.45}
+    .pm-patient-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+    .pm-tag{font-size:9px;font-weight:800;padding:4px 7px;border-radius:999px;background:var(--surface-2);color:var(--muted)}
+    .pm-dialog{width:min(760px,calc(100vw - 24px));max-height:min(88vh,900px);padding:0;border:1px solid var(--border);border-radius:18px;background:var(--surface);color:var(--text);box-shadow:0 24px 70px rgba(15,23,42,.22)}
+    .pm-dialog::backdrop{background:rgba(8,20,35,.45);backdrop-filter:blur(2px)}
+    .pm-dialog-head{position:sticky;top:0;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--border);background:var(--surface)}
+    .pm-dialog-head h2{margin:0;font-size:19px}
+    .pm-close{width:36px;height:36px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font-size:18px;cursor:pointer}
+    .pm-form{display:grid;gap:15px;padding:18px}
+    .pm-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .pm-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .pm-field{display:grid;gap:6px}
+    .pm-field label,.pm-label{font-size:11px;font-weight:850;color:var(--muted)}
+    .pm-field input,.pm-field select,.pm-field textarea,.pm-subfield input,.pm-subfield select{width:100%;min-height:42px;padding:9px 11px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:inherit;font-size:13px}
+    .pm-field textarea{min-height:88px;resize:vertical}
+    .pm-section{padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}
+    .pm-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .pm-section-head strong{font-size:13px}
+    .pm-toggle{display:inline-flex;padding:3px;border:1px solid var(--border);border-radius:999px;background:var(--surface)}
+    .pm-toggle button{min-width:46px;height:29px;padding:0 10px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:10px;font-weight:850;cursor:pointer}
+    .pm-toggle button.active{background:var(--accent);color:#fff}
+    .pm-toggle.no button[data-value="no"].active{background:var(--surface-2);color:var(--text)}
+    .pm-conditional{display:grid;gap:10px;margin-top:12px}
+    .pm-conditional[hidden]{display:none!important}
+    .pm-med-row{display:grid;grid-template-columns:minmax(150px,1.5fr) 90px 90px 110px minmax(130px,1fr) 34px;gap:8px;align-items:end}
+    .pm-antibiotic-row{display:grid;grid-template-columns:minmax(150px,1.4fr) 90px 90px 110px minmax(120px,1fr) 90px 34px;gap:8px;align-items:end}
+    .pm-subfield{display:grid;gap:5px}
+    .pm-subfield label{font-size:9px;color:var(--muted);font-weight:800}
+    .pm-remove{width:34px;height:40px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--danger);font-size:17px;cursor:pointer}
+    .pm-add-row{justify-self:start;min-height:34px;padding:0 11px;border:1px dashed var(--border);border-radius:9px;background:var(--surface);color:var(--accent);font-weight:800;cursor:pointer}
+    .pm-priority{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .pm-priority button{min-height:42px;border:1px solid var(--border);border-radius:10px;background:var(--surface);font-weight:850;cursor:pointer}
+    .pm-priority button.active[data-priority="green"]{background:#e8f7ef;border-color:#2ca56c;color:#197347}
+    .pm-priority button.active[data-priority="yellow"]{background:#fff7dd;border-color:#d6a019;color:#8a6500}
+    .pm-priority button.active[data-priority="red"]{background:#fff0f0;border-color:#d84b4b;color:#a62f2f}
+    .pm-dialog-actions{position:sticky;bottom:0;display:flex;justify-content:flex-end;gap:9px;padding:14px 18px;border-top:1px solid var(--border);background:var(--surface)}
+    .pm-secondary,.pm-primary{min-height:40px;padding:0 14px;border-radius:10px;font-weight:850;cursor:pointer}
+    .pm-secondary{border:1px solid var(--border);background:var(--surface);color:var(--text)}
+    .pm-primary{border:1px solid var(--accent);background:var(--accent);color:#fff}
+    .pm-required{color:#d84b4b}
+    @media(max-width:980px){.pm-decks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:700px){
+      .main{padding-left:12px!important;padding-right:12px!important}
+      .pm-toolbar{align-items:stretch}.pm-search{max-width:none}.pm-new{padding:0 13px}
+      .pm-decks{grid-template-columns:1fr}.pm-deck{min-height:145px}
+      .pm-grid-2,.pm-grid-3{grid-template-columns:1fr}
+      .pm-med-row,.pm-antibiotic-row{grid-template-columns:1fr 1fr}
+      .pm-med-row .pm-subfield:first-child,.pm-antibiotic-row .pm-subfield:first-child{grid-column:1/-1}
+      .pm-remove{width:100%}
+      .pm-detail-head{flex-wrap:wrap}.pm-detail-title{order:3;flex-basis:100%}
+      .pm-dialog{width:calc(100vw - 12px);max-height:92vh}
+      .pm-form{padding:14px}.pm-dialog-head{padding:14px}.pm-dialog-actions{padding:12px 14px}
+    }
   </style>
 </head>
 <body data-page="trabalho_passometro">
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
     <main class="main">
       <div class="page">
         <header class="topbar">
@@ -38,23 +118,419 @@
             <h1 data-page-title></h1>
           </div>
         </header>
-        <section class="work-shell">
-          <article class="work-hero">
-            <h2>Passômetro</h2>
-            <p>Página criada para acompanhar o Passômetro dentro do ambiente de Trabalho.</p>
-          </article>
-          <div class="work-grid">
-            <article class="work-card"><strong>Em construção</strong><span>Esta área já está criada e pronta para receber os módulos que você definir.</span></article>
-            <article class="work-card"><strong>Ambiente Trabalho</strong><span>A navegação deste espaço fica separada do ambiente de Estudos.</span></article>
-            <article class="work-card"><strong>Próximo passo</strong><span>Você pode me dizer agora quais informações e funções entram nesta página.</span></article>
+
+        <section class="pm-page">
+          <div class="pm-list" id="pm-list">
+            <div class="pm-toolbar">
+              <div class="pm-search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+                <input id="pm-search" type="search" placeholder="Pesquisar hospital, data ou paciente..." autocomplete="off">
+              </div>
+              <button class="pm-new" id="pm-new" type="button">+ Novo</button>
+            </div>
+            <div class="pm-subbar">
+              <span>Passômetros por hospital e data</span>
+              <span id="pm-count"></span>
+            </div>
+            <div class="pm-decks" id="pm-decks"></div>
+          </div>
+
+          <div class="pm-detail" id="pm-detail" hidden>
+            <div class="pm-detail-head">
+              <button class="pm-back" id="pm-back" type="button">← Voltar</button>
+              <div class="pm-detail-title">
+                <h2 id="pm-detail-title"></h2>
+                <p id="pm-detail-subtitle"></p>
+              </div>
+              <button class="pm-new" id="pm-add-patient" type="button">+ Paciente</button>
+            </div>
+            <div class="pm-patient-grid" id="pm-patients"></div>
           </div>
         </section>
       </div>
     </main>
   </div>
+
+  <dialog class="pm-dialog" id="pm-deck-dialog">
+    <form id="pm-deck-form" method="dialog">
+      <div class="pm-dialog-head">
+        <h2>Novo passômetro</h2>
+        <button class="pm-close" type="button" data-close-dialog="pm-deck-dialog">×</button>
+      </div>
+      <div class="pm-form">
+        <div class="pm-grid-2">
+          <div class="pm-field">
+            <label for="deck-hospital">Hospital</label>
+            <input id="deck-hospital" name="hospital" placeholder="Ex.: Hospital Brasília" required>
+          </div>
+          <div class="pm-field">
+            <label for="deck-date">Data</label>
+            <input id="deck-date" name="date" type="date" required>
+          </div>
+        </div>
+        <div class="pm-grid-2">
+          <div class="pm-field">
+            <label for="deck-sector">Setor / especialidade</label>
+            <input id="deck-sector" name="sector" placeholder="Ex.: Clínica Médica">
+          </div>
+          <div class="pm-field">
+            <label for="deck-shift">Turno</label>
+            <select id="deck-shift" name="shift">
+              <option value="">Não informado</option>
+              <option>Diurno</option>
+              <option>Noturno</option>
+              <option>24h</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="pm-dialog-actions">
+        <button class="pm-secondary" type="button" data-close-dialog="pm-deck-dialog">Cancelar</button>
+        <button class="pm-primary" type="submit">Criar passômetro</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="pm-dialog" id="pm-patient-dialog">
+    <form id="pm-patient-form">
+      <div class="pm-dialog-head">
+        <h2 id="pm-patient-dialog-title">Novo paciente</h2>
+        <button class="pm-close" type="button" data-close-dialog="pm-patient-dialog">×</button>
+      </div>
+      <div class="pm-form">
+        <div class="pm-grid-2">
+          <div class="pm-field">
+            <label>ID / Leito <span class="pm-required">*</span></label>
+            <input name="bed" required placeholder="Ex.: 301A">
+          </div>
+          <div class="pm-field">
+            <label>Nome ou iniciais <span class="pm-required">*</span></label>
+            <input name="name" required placeholder="Ex.: J.B.C.">
+          </div>
+        </div>
+
+        <div class="pm-grid-3">
+          <div class="pm-field">
+            <label>Idade</label>
+            <input name="age" placeholder="Ex.: 67 anos">
+          </div>
+          <div class="pm-field">
+            <label>Data da internação</label>
+            <input name="admissionDate" type="date">
+          </div>
+          <div class="pm-field">
+            <label>Dieta</label>
+            <select name="diet">
+              <option value="">Não informada</option>
+              <option>Livre</option><option>Branda</option><option>Pastosa</option><option>Líquida</option>
+              <option>Enteral</option><option>Parenteral</option><option>Jejum</option><option>Outra</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pm-field">
+          <label>Diagnóstico principal</label>
+          <input name="diagnosis" placeholder="Diagnóstico principal">
+        </div>
+        <div class="pm-field">
+          <label>Motivo da internação</label>
+          <textarea name="reason" placeholder="Resumo do motivo da internação"></textarea>
+        </div>
+        <div class="pm-field">
+          <label>Antecedentes</label>
+          <textarea name="history" placeholder="Comorbidades e antecedentes relevantes"></textarea>
+        </div>
+
+        <div class="pm-section" data-switch-section="allergies">
+          <div class="pm-section-head">
+            <strong>Alergias</strong>
+            <div class="pm-toggle"><button type="button" data-switch="allergies" data-value="no">Não</button><button type="button" data-switch="allergies" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="allergies" hidden>
+            <div class="pm-field"><label>Quais?</label><input name="allergiesDetail" placeholder="Ex.: dipirona, látex..."></div>
+          </div>
+        </div>
+
+        <div class="pm-section" data-switch-section="isolation">
+          <div class="pm-section-head">
+            <strong>Isolamento</strong>
+            <div class="pm-toggle"><button type="button" data-switch="isolation" data-value="no">Não</button><button type="button" data-switch="isolation" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="isolation" hidden>
+            <div class="pm-field">
+              <label>Tipo</label>
+              <select name="isolationType"><option value="">Selecione</option><option>Contato</option><option>Gotículas</option><option>Aerossóis</option><option>Outro</option></select>
+            </div>
+          </div>
+        </div>
+
+        <div class="pm-section" data-switch-section="oxygen">
+          <div class="pm-section-head">
+            <strong>Oxigenoterapia / suporte respiratório</strong>
+            <div class="pm-toggle"><button type="button" data-switch="oxygen" data-value="no">Não</button><button type="button" data-switch="oxygen" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="oxygen" hidden>
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Tipo / dispositivo</label><input name="oxygenType" placeholder="Ex.: CN, máscara, VNI, VM"></div>
+              <div class="pm-field"><label>Fluxo / parâmetros</label><input name="oxygenParams" placeholder="Ex.: 3 L/min"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pm-section" data-switch-section="medications">
+          <div class="pm-section-head">
+            <strong>Medicações atuais</strong>
+            <div class="pm-toggle"><button type="button" data-switch="medications" data-value="no">Não</button><button type="button" data-switch="medications" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="medications" hidden>
+            <div id="pm-medications"></div>
+            <button class="pm-add-row" type="button" id="pm-add-medication">+ Adicionar medicamento</button>
+          </div>
+        </div>
+
+        <div class="pm-section" data-switch-section="antibiotics">
+          <div class="pm-section-head">
+            <strong>Antibiótico</strong>
+            <div class="pm-toggle"><button type="button" data-switch="antibiotics" data-value="no">Não</button><button type="button" data-switch="antibiotics" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="antibiotics" hidden>
+            <div id="pm-antibiotics"></div>
+            <button class="pm-add-row" type="button" id="pm-add-antibiotic">+ Adicionar antibiótico</button>
+          </div>
+        </div>
+
+        <div class="pm-section" data-switch-section="devices">
+          <div class="pm-section-head">
+            <strong>Dispositivos</strong>
+            <div class="pm-toggle"><button type="button" data-switch="devices" data-value="no">Não</button><button type="button" data-switch="devices" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="devices" hidden>
+            <div class="pm-field"><label>Dispositivos em uso</label><textarea name="devicesDetail" placeholder="Ex.: CVC D3; SVD D1; SNE..."></textarea></div>
+          </div>
+        </div>
+
+        <div class="pm-section" data-switch-section="exams">
+          <div class="pm-section-head">
+            <strong>Exames</strong>
+            <div class="pm-toggle"><button type="button" data-switch="exams" data-value="no">Não</button><button type="button" data-switch="exams" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="exams" hidden>
+            <div class="pm-field"><label>Exames relevantes</label><textarea name="examsDetail" placeholder="Resultados relevantes para a passagem"></textarea></div>
+          </div>
+        </div>
+
+        <div class="pm-field">
+          <label>Impressão diagnóstica</label>
+          <textarea name="impression" placeholder="Sua impressão clínica atual do caso"></textarea>
+        </div>
+
+        <div class="pm-section" data-switch-section="events24h">
+          <div class="pm-section-head">
+            <strong>Intercorrências nas últimas 24 horas</strong>
+            <div class="pm-toggle"><button type="button" data-switch="events24h" data-value="no">Não</button><button type="button" data-switch="events24h" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="events24h" hidden>
+            <div class="pm-field"><label>Intercorrências</label><textarea name="events24hDetail" placeholder="O que aconteceu nas últimas 24h?"></textarea></div>
+          </div>
+        </div>
+
+        <div class="pm-section" data-switch-section="pending">
+          <div class="pm-section-head">
+            <strong>Pendências</strong>
+            <div class="pm-toggle"><button type="button" data-switch="pending" data-value="no">Não</button><button type="button" data-switch="pending" data-value="yes">Sim</button></div>
+          </div>
+          <div class="pm-conditional" data-conditional="pending" hidden>
+            <div class="pm-field"><label>Pendências</label><textarea name="pendingDetail" placeholder="Ex.: aguardar TC; repetir gasometria; avaliar alta..."></textarea></div>
+          </div>
+        </div>
+
+        <div class="pm-field">
+          <label>Prioridade da passagem</label>
+          <div class="pm-priority" id="pm-priority">
+            <button type="button" data-priority="green">🟢 Estável</button>
+            <button type="button" data-priority="yellow">🟡 Atenção</button>
+            <button type="button" data-priority="red">🔴 Crítico</button>
+          </div>
+        </div>
+      </div>
+      <div class="pm-dialog-actions">
+        <button class="pm-secondary" type="button" data-close-dialog="pm-patient-dialog">Cancelar</button>
+        <button class="pm-primary" type="submit">Salvar paciente</button>
+      </div>
+    </form>
+  </dialog>
+
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=17.11-trabalho"></script>
-  <script defer src="/assets/js/pwa.js?v=3"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=17.29-global-timer"></script>
+  <script defer src="/assets/js/pwa.js?v=4-force-refresh"></script>
+  <script>
+  (() => {
+    const STORAGE_KEY = "luria:passometro:v1";
+    const state = { decks: [], activeDeckId: null, editingPatientId: null, switches: {}, priority: "none" };
+    const $ = (s, r=document) => r.querySelector(s);
+    const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+    const esc = (v="") => String(v).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
+    const uid = () => (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36)+Math.random().toString(36).slice(2));
+    const fmtDate = iso => { if(!iso) return ""; const [y,m,d]=iso.split("-"); return `${d}/${m}/${y}`; };
+
+    function load(){
+      try{ state.decks = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); }catch{ state.decks=[]; }
+      renderDecks();
+    }
+    function save(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state.decks)); }
+    function activeDeck(){ return state.decks.find(d=>d.id===state.activeDeckId); }
+
+    function renderDecks(){
+      const q = ($("#pm-search")?.value || "").trim().toLowerCase();
+      const decks = state.decks.filter(d => {
+        const patientText = (d.patients||[]).map(p=>`${p.name} ${p.bed}`).join(" ");
+        return !q || `${d.hospital} ${d.date} ${d.sector||""} ${patientText}`.toLowerCase().includes(q);
+      }).sort((a,b)=>(b.date||"").localeCompare(a.date||"") || (b.createdAt||0)-(a.createdAt||0));
+      $("#pm-count").textContent = `${decks.length} ${decks.length===1?"passômetro":"passômetros"}`;
+      const host=$("#pm-decks");
+      if(!decks.length){
+        host.innerHTML='<div class="pm-empty"><div><strong>Nenhum passômetro encontrado</strong><span>Crie um novo para começar a organizar sua passagem de plantão.</span></div></div>';
+        return;
+      }
+      host.innerHTML = decks.map(d=>{
+        const pend=(d.patients||[]).filter(p=>p.switches?.pending==="yes" && p.pendingDetail).length;
+        return `<article class="pm-deck" data-deck-id="${d.id}">
+          <div class="pm-deck-head"><span class="pm-deck-icon">P</span><span class="pm-deck-date">${esc(fmtDate(d.date))}</span></div>
+          <h3>${esc(d.hospital)}</h3>
+          <p>${esc(d.sector||"Setor não informado")}${d.shift?" · "+esc(d.shift):""}</p>
+          <div class="pm-meta"><span class="pm-chip">${(d.patients||[]).length} pacientes</span><span class="pm-chip">${pend} pendências</span></div>
+        </article>`;
+      }).join("");
+    }
+
+    function openDeck(id){
+      state.activeDeckId=id;
+      const d=activeDeck(); if(!d) return;
+      $("#pm-list").hidden=true; $("#pm-detail").hidden=false;
+      $("#pm-detail-title").textContent=`${d.hospital} · ${fmtDate(d.date)}`;
+      $("#pm-detail-subtitle").textContent=[d.sector,d.shift].filter(Boolean).join(" · ") || "Passômetro";
+      renderPatients();
+    }
+    function renderPatients(){
+      const d=activeDeck(); const host=$("#pm-patients"); if(!d) return;
+      if(!(d.patients||[]).length){
+        host.innerHTML='<div class="pm-empty"><div><strong>Nenhum paciente adicionado</strong><span>Use “+ Paciente” para começar este passômetro.</span></div></div>';
+        return;
+      }
+      host.innerHTML=(d.patients||[]).map(p=>{
+        const tags=[];
+        if(p.switches?.antibiotics==="yes") tags.push("ATB");
+        if(p.switches?.oxygen==="yes") tags.push("O₂ / suporte");
+        if(p.switches?.isolation==="yes") tags.push("Isolamento");
+        if(p.switches?.pending==="yes") tags.push("Pendências");
+        return `<article class="pm-patient" data-patient-id="${p.id}" data-priority="${p.priority||"none"}">
+          <div class="pm-patient-top"><h3>Leito ${esc(p.bed)} · ${esc(p.name)}</h3><small>${esc(p.age||"")}</small></div>
+          <div class="pm-patient-summary">${esc(p.diagnosis || p.reason || "Sem resumo clínico")}</div>
+          <div class="pm-patient-tags">${tags.map(t=>`<span class="pm-tag">${t}</span>`).join("")}</div>
+        </article>`;
+      }).join("");
+    }
+
+    function closeDialog(id){ const d=document.getElementById(id); if(d?.open) d.close(); }
+    $$("[data-close-dialog]").forEach(b=>b.addEventListener("click",()=>closeDialog(b.dataset.closeDialog)));
+    $("#pm-new").addEventListener("click",()=>{
+      const f=$("#pm-deck-form"); f.reset(); $("#deck-date").value=new Date().toISOString().slice(0,10); $("#pm-deck-dialog").showModal();
+    });
+    $("#pm-deck-form").addEventListener("submit",e=>{
+      e.preventDefault();
+      const fd=new FormData(e.currentTarget);
+      const d={id:uid(),hospital:String(fd.get("hospital")||"").trim(),date:String(fd.get("date")||""),sector:String(fd.get("sector")||"").trim(),shift:String(fd.get("shift")||""),createdAt:Date.now(),patients:[]};
+      if(!d.hospital||!d.date) return;
+      state.decks.push(d); save(); closeDialog("pm-deck-dialog"); renderDecks(); openDeck(d.id);
+    });
+    $("#pm-decks").addEventListener("click",e=>{ const card=e.target.closest("[data-deck-id]"); if(card) openDeck(card.dataset.deckId); });
+    $("#pm-back").addEventListener("click",()=>{ $("#pm-detail").hidden=true; $("#pm-list").hidden=false; state.activeDeckId=null; renderDecks(); });
+    $("#pm-search").addEventListener("input",renderDecks);
+
+    function resetPatientForm(){
+      const form=$("#pm-patient-form"); form.reset();
+      state.editingPatientId=null; state.switches={}; state.priority="none";
+      $$("[data-switch]").forEach(b=>b.classList.remove("active"));
+      $$("[data-conditional]").forEach(x=>x.hidden=true);
+      $$("[data-priority]").forEach(b=>b.classList.remove("active"));
+      $("#pm-medications").innerHTML=""; $("#pm-antibiotics").innerHTML="";
+      $("#pm-patient-dialog-title").textContent="Novo paciente";
+    }
+    function setSwitch(name,val){
+      state.switches[name]=val;
+      $$('[data-switch="'+name+'"]').forEach(b=>b.classList.toggle("active",b.dataset.value===val));
+      const c=$('[data-conditional="'+name+'"]'); if(c) c.hidden=val!=="yes";
+      if(val==="yes" && name==="medications" && !$("#pm-medications").children.length) addMedicationRow();
+      if(val==="yes" && name==="antibiotics" && !$("#pm-antibiotics").children.length) addAntibioticRow();
+    }
+    $("#pm-patient-form").addEventListener("click",e=>{
+      const sw=e.target.closest("[data-switch]"); if(sw){ setSwitch(sw.dataset.switch,sw.dataset.value); return; }
+      const pr=e.target.closest("[data-priority]"); if(pr){ state.priority=pr.dataset.priority; $$("[data-priority]").forEach(b=>b.classList.toggle("active",b===pr)); return; }
+      const rm=e.target.closest(".pm-remove"); if(rm) rm.closest(".pm-med-row,.pm-antibiotic-row")?.remove();
+    });
+
+    function addMedicationRow(v={}){
+      const row=document.createElement("div"); row.className="pm-med-row"; row.innerHTML=`
+        <div class="pm-subfield"><label>Medicamento</label><input data-k="name" value="${esc(v.name||"")}" placeholder="Ex.: furosemida"></div>
+        <div class="pm-subfield"><label>Dose</label><input data-k="dose" value="${esc(v.dose||"")}" placeholder="40"></div>
+        <div class="pm-subfield"><label>Unidade</label><select data-k="unit"><option></option><option>mg</option><option>g</option><option>mcg</option><option>UI</option><option>mL</option></select></div>
+        <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>SC</option><option>IN</option><option>Outra</option></select></div>
+        <div class="pm-subfield"><label>Posologia</label><input data-k="schedule" value="${esc(v.schedule||"")}" placeholder="Ex.: 8/8h"></div>
+        <button class="pm-remove" type="button" aria-label="Remover">×</button>`;
+      $("#pm-medications").appendChild(row);
+      row.querySelector('[data-k="unit"]').value=v.unit||""; row.querySelector('[data-k="route"]').value=v.route||"";
+    }
+    function addAntibioticRow(v={}){
+      const row=document.createElement("div"); row.className="pm-antibiotic-row"; row.innerHTML=`
+        <div class="pm-subfield"><label>Antibiótico</label><input data-k="name" value="${esc(v.name||"")}" placeholder="Ex.: ceftriaxona"></div>
+        <div class="pm-subfield"><label>Dose</label><input data-k="dose" value="${esc(v.dose||"")}" placeholder="2"></div>
+        <div class="pm-subfield"><label>Unidade</label><select data-k="unit"><option></option><option>mg</option><option>g</option><option>mcg</option><option>UI</option><option>mL</option></select></div>
+        <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>Outra</option></select></div>
+        <div class="pm-subfield"><label>Posologia</label><input data-k="schedule" value="${esc(v.schedule||"")}" placeholder="Ex.: 1x/dia"></div>
+        <div class="pm-subfield"><label>Dia</label><input data-k="day" value="${esc(v.day||"")}" placeholder="D2/7"></div>
+        <button class="pm-remove" type="button" aria-label="Remover">×</button>`;
+      $("#pm-antibiotics").appendChild(row);
+      row.querySelector('[data-k="unit"]').value=v.unit||""; row.querySelector('[data-k="route"]').value=v.route||"";
+    }
+    $("#pm-add-medication").addEventListener("click",()=>addMedicationRow());
+    $("#pm-add-antibiotic").addEventListener("click",()=>addAntibioticRow());
+
+    function collectRows(hostSel){
+      return $$(hostSel+" > div").map(row=>{
+        const out={}; $$("[data-k]",row).forEach(i=>out[i.dataset.k]=i.value.trim()); return out;
+      }).filter(x=>Object.values(x).some(Boolean));
+    }
+    function fillPatient(p){
+      resetPatientForm(); state.editingPatientId=p.id; $("#pm-patient-dialog-title").textContent="Editar paciente";
+      const form=$("#pm-patient-form");
+      ["bed","name","age","admissionDate","diet","diagnosis","reason","history","allergiesDetail","isolationType","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+      Object.entries(p.switches||{}).forEach(([k,v])=>setSwitch(k,v));
+      state.priority=p.priority||"none"; $$("[data-priority]").forEach(b=>b.classList.toggle("active",b.dataset.priority===state.priority));
+      $("#pm-medications").innerHTML=""; (p.medications||[]).forEach(addMedicationRow);
+      $("#pm-antibiotics").innerHTML=""; (p.antibiotics||[]).forEach(addAntibioticRow);
+    }
+
+    $("#pm-add-patient").addEventListener("click",()=>{ resetPatientForm(); $("#pm-patient-dialog").showModal(); });
+    $("#pm-patients").addEventListener("click",e=>{
+      const card=e.target.closest("[data-patient-id]"); if(!card) return;
+      const p=(activeDeck()?.patients||[]).find(x=>x.id===card.dataset.patientId); if(!p) return;
+      fillPatient(p); $("#pm-patient-dialog").showModal();
+    });
+    $("#pm-patient-form").addEventListener("submit",e=>{
+      e.preventDefault();
+      const form=e.currentTarget; if(!form.reportValidity()) return;
+      const fd=new FormData(form);
+      const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics")};
+      ["bed","name","age","admissionDate","diet","diagnosis","reason","history","allergiesDetail","isolationType","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
+      const d=activeDeck(); if(!d) return;
+      const idx=(d.patients||[]).findIndex(x=>x.id===p.id);
+      if(idx>=0) d.patients[idx]=p; else d.patients.push(p);
+      save(); closeDialog("pm-patient-dialog"); renderPatients();
+    });
+
+    load();
+  })();
+  </script>
 </body>
 </html>
