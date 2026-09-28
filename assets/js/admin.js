@@ -3806,6 +3806,13 @@
       : {};
     const latestStage = String(latestReview.review_stage || "");
     const latestReviewer = String(latestReview.reviewer || "");
+    const currentVersion = Number(question?.version ?? question?.item_version ?? 1);
+    const reviewedVersion = Number(latestReview?.item_version ?? 0);
+    if (currentStage === "chatgpt_initial") {
+      return latestStage !== "chatgpt_initial"
+        || latestReviewer !== "ChatGPT"
+        || reviewedVersion !== currentVersion;
+    }
     if (currentStage === "perplexity_initial") {
       // Parecer legado do Perplexity não conta como a Etapa 4 do fluxo atual.
       // A Etapa 4 só é considerada feita quando a versão atual recebeu
