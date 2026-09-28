@@ -7072,3 +7072,75 @@ body.plantao-module-entry .plantao-record-button{
     font-size:14px!important;
   }
 }
+
+
+/* === Sala de Emergência · compact area switch v44 === */
+body.plantao-module-entry .plantao-primary-switch-wrap{
+  margin-bottom:6px!important;
+}
+body.plantao-module-entry .plantao-library-inner-switch{
+  display:block!important;
+  width:fit-content!important;
+  max-width:100%!important;
+  margin:0 0 14px!important;
+  padding:4px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 14%,var(--border))!important;
+  border-radius:12px!important;
+  background:color-mix(in srgb,var(--accent) 3%,var(--surface))!important;
+  box-shadow:none!important;
+}
+body.plantao-module-entry[data-case-library-view="home"] .plantao-library-inner-switch{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-library-inner-switch-head{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-specialty-native-switch{
+  display:flex!important;
+  align-items:center!important;
+  flex-wrap:wrap!important;
+  gap:3px!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+body.plantao-module-entry .plantao-specialty-chip{
+  min-height:29px!important;
+  padding:0 10px!important;
+  border:1px solid transparent!important;
+  border-radius:9px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font-size:9px!important;
+  font-weight:800!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  box-shadow:none!important;
+}
+body.plantao-module-entry .plantao-specialty-chip:hover{
+  background:color-mix(in srgb,var(--accent) 6%,var(--surface))!important;
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-specialty-chip.active{
+  border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-specialty-chip>span{
+  display:none!important;
+}
+@media(max-width:620px){
+  body.plantao-module-entry .plantao-library-inner-switch{
+    width:100%!important;
+  }
+  body.plantao-module-entry .plantao-specialty-native-switch{
+    display:grid!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+  body.plantao-module-entry .plantao-specialty-chip{
+    width:100%!important;
+    padding:0 6px!important;
+    font-size:8.3px!important;
+  }
+}
