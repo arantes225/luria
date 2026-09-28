@@ -2580,242 +2580,44 @@ function toggleFilterMenu() {
    ========================================================= */
 
 function renderTopicList() {
+  const list=document.getElementById("notebook-topic-list");
+  const count=document.getElementById("notebook-topic-count");
+  if(!list)return;
 
-  const list =
-    document.getElementById(
-      "notebook-topic-list"
-    );
+  const current=getCurrentDocument();
+  const editor=document.getElementById("notebook-editor");
+  const sourceHtml=editor?.innerHTML || current?.note?.content_html || "";
+  const parser=document.createElement("div");
+  parser.innerHTML=sourceHtml;
 
+  const headings=[...parser.querySelectorAll("h1,h2,h3,h4")].map((heading,index)=>({
+    index,
+    level:Number(heading.tagName.slice(1))||2,
+    text:String(heading.textContent||"").trim()||"Seção"
+  }));
 
-  const count =
-    document.getElementById(
-      "notebook-topic-count"
-    );
+  if(count)count.textContent=headings.length;
 
-
-  if (!list) {
+  if(!current){
+    list.innerHTML='<div class="notebook-empty-small">Abra uma anotação para ver sua estrutura.</div>';
     return;
   }
 
-
-  const query =
-    normalizeText(
-      notebookState.topicSearch
-    );
-
-
-  const areaFilter =
-    normalizeText(
-      notebookState.topicAreaFilter
-    );
-
-
-  const topics =
-    notebookState.topics.filter(
-      (topic) => {
-
-        const matchesSearch =
-          !query
-          ||
-          normalizeText(
-            [
-              topic.theme,
-              topic.area,
-              topic.materia,
-              formatDate(
-                topicDate(
-                  topic
-                )
-              )
-            ]
-              .filter(
-                Boolean
-              )
-              .join(
-                " "
-              )
-          )
-            .includes(
-              query
-            );
-
-
-        const matchesArea =
-          !areaFilter
-          ||
-          normalizeText(
-            topic.area
-          ) ===
-          areaFilter;
-
-
-        return (
-          matchesSearch
-          &&
-          matchesArea
-        );
-
-      }
-    );
-
-
-  if (
-    count
-  ) {
-
-    count.textContent =
-      topics.length;
-
-  }
-
-
-  if (
-    !topics.length
-  ) {
-
-    list.innerHTML =
-      `
-        <div class="notebook-empty-small">
-          Nenhum tema encontrado.
-        </div>
-      `;
-
-
+  if(!headings.length){
+    list.innerHTML='<div class="notebook-empty-small">Esta anotação ainda não possui títulos ou subtítulos.</div>';
     return;
-
   }
 
+  list.innerHTML=headings.map(h=>`<button class="notebook-topic-item notebook-outline-item" type="button" data-note-outline-index="${h.index}" style="padding-left:${10+Math.max(0,h.level-1)*10}px"><strong>${escapeHtml(h.text)}</strong><small>H${h.level}</small></button>`).join("");
 
-  list.innerHTML =
-    topics
-      .map(
-        (topic) => {
-
-          const note =
-            noteByTopicId(
-              topic.id
-            );
-
-
-          const active =
-            (
-              notebookState.selectedType ===
-              "lesson"
-              &&
-              topic.id ===
-              notebookState.selectedTopicId
-            );
-
-
-          return `
-            <button
-              class="
-                notebook-topic-item
-                ${active ? "active" : ""}
-              "
-              type="button"
-              data-topic-id="${escapeHtml(
-                topic.id
-              )}"
-            >
-
-              <strong>
-                ${escapeHtml(
-                  topic.theme ||
-                  "Tema sem título"
-                )}
-              </strong>
-
-              <small>
-                ${escapeHtml(
-                  [
-                    topic.area,
-                    topic.materia,
-                    formatDate(
-                      topicDate(
-                        topic
-                      )
-                    )
-                  ]
-                    .filter(
-                      Boolean
-                    )
-                    .join(
-                      " · "
-                    )
-                )}
-              </small>
-
-              <span class="notebook-topic-flags">
-
-                ${
-                  note
-                    ?.content_html
-                    ?.trim()
-                    ? `
-                      <span class="
-                        notebook-topic-flag
-                        has-note
-                      ">
-                        com anotações
-                      </span>
-                    `
-                    : ""
-                }
-
-                ${
-                  topic.completed_at
-                    ? `
-                      <span class="
-                        notebook-topic-flag
-                        completed
-                      ">
-                        concluída
-                      </span>
-                    `
-                    : ""
-                }
-
-              </span>
-
-            </button>
-          `;
-
-        }
-      )
-      .join(
-        ""
-      );
-
-
-  list
-    .querySelectorAll(
-      "[data-topic-id]"
-    )
-    .forEach(
-      (button) => {
-
-        button.addEventListener(
-          "click",
-          () => {
-
-            openTopic(
-              button.dataset
-                .topicId
-            );
-
-            applyNotebookTopicPanelState(
-              true
-            );
-
-          }
-        );
-
-      }
-    );
-
+  list.querySelectorAll("[data-note-outline-index]").forEach(button=>{
+    button.addEventListener("click",()=>{
+      const liveEditor=document.getElementById("notebook-editor");
+      const liveHeads=[...(liveEditor?.querySelectorAll("h1,h2,h3,h4")||[])];
+      liveHeads[Number(button.dataset.noteOutlineIndex)]?.scrollIntoView({behavior:"smooth",block:"center"});
+    });
+  });
 }
-
 
 /* =========================================================
    EDITOR
@@ -19000,7 +18802,7 @@ function ensureNotebookSideTools() {
   quick.querySelector('[data-quick="library"]').onclick=()=>switchView("library");
   quick.querySelector('[data-quick="share"]').onclick=()=>{const d=getCurrentDocument();const e=getLibraryEntries().find(x=>x.note?.id===d?.note?.id);if(e)openNotebookShareDialog([e],e.title||"Caderno LURIA")};
   quick.querySelector('[data-quick="pdf"]').onclick=()=>{const d=getCurrentDocument();if(d?.note){notebookState.librarySelected=new Set([d.note.id]);exportSelectedPdf();}};
-  document.getElementById("notebook-editor")?.addEventListener("input",refreshNotebookOutline);
+  document.getElementById("notebook-editor")?.addEventListener("input",()=>{refreshNotebookOutline();renderTopicList();});
 }
 function wireNotebookEnhancements() {
   ensureNotebookSideTools();
