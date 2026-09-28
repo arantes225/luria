@@ -3121,6 +3121,31 @@ function prepararSidebarDesktop(
 }
 
 
+function prepararNavGroupsGlobais(userId) {
+  const sidebar=document.getElementById("sidebar");
+  if(!sidebar)return;
+  sidebar.querySelectorAll(".nav-group").forEach((group,index)=>{
+    const toggle=group.querySelector(":scope > .nav-group-label");
+    const submenu=group.querySelector(":scope > .nav-submenu");
+    if(!toggle||!submenu||toggle.id==="work-management-nav-toggle")return;
+    const key=`docmap:nav-group:${page}:${index}`;
+    const apply=(open)=>{
+      submenu.hidden=!open;
+      group.classList.toggle("nav-group-collapsed",!open);
+      toggle.setAttribute("aria-expanded",open?"true":"false");
+      try{localStorage.setItem(key,open?"1":"0")}catch{}
+    };
+    let open=toggle.getAttribute("aria-expanded")==="true"||!submenu.hidden;
+    try{const saved=localStorage.getItem(key);if(saved!==null)open=saved==="1"}catch{}
+    apply(open);
+    toggle.addEventListener("click",(event)=>{
+      event.preventDefault();event.stopPropagation();
+      apply(toggle.getAttribute("aria-expanded")!=="true");
+    });
+  });
+}
+
+
 function prepararWorkManagementMenu(userId) {
   const group = document.getElementById("work-management-nav-group");
   const toggle = document.getElementById("work-management-nav-toggle");
@@ -5741,6 +5766,7 @@ async function iniciarApp() {
   prepararWorkManagementMenu(
     user.id
   );
+  prepararNavGroupsGlobais(user.id);
   prepararConfiguracoes();
 
   window.docmapUser =
