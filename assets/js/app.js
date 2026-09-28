@@ -5891,6 +5891,35 @@ async function iniciarApp() {
   window.docmapIsAdmin =
     cachedAdmin;
 
+  // Conteúdo semanal é carregado de forma ociosa e nunca bloqueia a página.
+  // Se o script já estiver presente, o evento docmap:ready abaixo dispara o prefetch.
+  // Caso contrário, ele é injetado e usa window.docmapUser ao terminar de carregar.
+  if (
+    !window.LuriaWeeklyContent
+    && !document.querySelector(
+      'script[data-luria-weekly-content]'
+    )
+  ) {
+    const weeklyScript =
+      document.createElement(
+        "script"
+      );
+
+    weeklyScript.src =
+      "/assets/js/weekly-content.js?v=1";
+
+    weeklyScript.async =
+      true;
+
+    weeklyScript.dataset
+      .luriaWeeklyContent =
+      "1";
+
+    document.head.appendChild(
+      weeklyScript
+    );
+  }
+
   // A página fica visível imediatamente.
   document.body.classList.add(
     "app-ready"
