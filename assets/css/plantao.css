@@ -6979,3 +6979,96 @@ body.plantao-module-entry .plantao-case-record:hover .plantao-record-paper{
 :root[data-theme="leila-mood"] body.plantao-module-entry .plantao-record-folder::after{
   background:color-mix(in srgb,var(--surface) 94%,var(--accent-soft) 6%)!important;
 }
+
+
+/* === Sala de Emergência · clean record separators + full-width complaint v43 === */
+body.plantao-module-entry .plantao-record-paper-header{
+  padding-right:76px!important;
+  margin-bottom:0!important;
+  padding-bottom:8px!important;
+  border-bottom:0!important;
+}
+body.plantao-module-entry .plantao-record-patient{
+  margin:2px 0 0!important;
+  padding-bottom:0!important;
+  border-bottom:0!important;
+}
+body.plantao-module-entry .plantao-record-patient strong{
+  font-size:14.4px!important;
+  line-height:1.16!important;
+}
+body.plantao-module-entry .plantao-record-patient-meta{
+  margin-top:1px!important;
+  font-size:9.3px!important;
+  line-height:1.2!important;
+}
+
+body.plantao-module-entry .plantao-record-chief{
+  width:100%!important;
+  max-width:none!important;
+  box-sizing:border-box!important;
+  margin:0!important;
+  padding:9px 0 11px!important;
+  border-top:1px solid color-mix(in srgb,var(--border) 92%,var(--accent) 8%)!important;
+  border-bottom:1px solid color-mix(in srgb,var(--border) 92%,var(--accent) 8%)!important;
+  border-left:0!important;
+  border-right:0!important;
+  border-radius:0!important;
+}
+body.plantao-module-entry .plantao-record-chief>span{
+  font-size:7.9px!important;
+}
+body.plantao-module-entry .plantao-record-chief h3{
+  width:100%!important;
+  max-width:none!important;
+  padding-right:0!important;
+  font-size:14.7px!important;
+  line-height:1.32!important;
+  -webkit-line-clamp:4!important;
+}
+
+body.plantao-module-entry .plantao-record-lines{
+  width:100%!important;
+  gap:0!important;
+  margin:0!important;
+}
+body.plantao-module-entry .plantao-record-line{
+  width:100%!important;
+  min-height:0!important;
+  box-sizing:border-box!important;
+  gap:3px!important;
+  padding:7px 0!important;
+  margin:0!important;
+  border-top:0!important;
+  border-left:0!important;
+  border-right:0!important;
+  border-bottom:1px solid color-mix(in srgb,var(--border) 92%,var(--accent) 8%)!important;
+  border-radius:0!important;
+}
+body.plantao-module-entry .plantao-record-line:last-child{
+  border-bottom:0!important;
+}
+body.plantao-module-entry .plantao-record-line strong{
+  font-size:8.1px!important;
+  line-height:1.15!important;
+}
+body.plantao-module-entry .plantao-record-line span{
+  font-size:9.7px!important;
+  line-height:1.34!important;
+}
+
+body.plantao-module-entry .plantao-record-paper{
+  padding:15px 15px 13px!important;
+}
+body.plantao-module-entry .plantao-record-button{
+  margin-top:8px!important;
+}
+
+@media(max-width:620px){
+  body.plantao-module-entry .plantao-record-paper-header{
+    padding-right:68px!important;
+  }
+  body.plantao-module-entry .plantao-record-patient strong{
+    font-size:14px!important;
+  }
+}
