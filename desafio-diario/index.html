@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=24-scroll-header">
-  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=3-clues-only">
+  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4-pistas-dashboard">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/desafio-diario/">
@@ -34,6 +34,15 @@
         </header>
 
         <section class="daily-shell" aria-live="polite">
+          <div class="daily-hero">
+            <div>
+              <span class="daily-kicker">DESAFIO DIÁRIO</span>
+              <h2>Desafio Diário</h2>
+              <p>Raciocínio clínico, um caso por dia.</p>
+            </div>
+            <div id="daily-hero-date" class="daily-hero-date">Hoje</div>
+          </div>
+
           <div id="daily-loading" class="daily-state-card">
             <div class="daily-loader" aria-hidden="true"></div>
             <strong>Carregando o desafio de hoje…</strong>
@@ -45,61 +54,98 @@
             <p>Não encontramos um desafio ativo para esta data.</p>
           </div>
 
-          <article id="daily-card" class="daily-card" hidden>
-            <div class="daily-card-head">
-              <div>
-                <div class="daily-meta-row">
+          <div id="daily-content" class="daily-content" hidden>
+            <div class="daily-main-col">
+              <div id="daily-stepper" class="daily-stepper" aria-label="Progresso das pistas">
+                <div class="daily-step"><span>1</span><small>Pista 1</small></div>
+                <div class="daily-step"><span>2</span><small>Pista 2</small></div>
+                <div class="daily-step"><span>3</span><small>Pista 3</small></div>
+                <div class="daily-step"><span>4</span><small>Pista 4</small></div>
+                <div class="daily-step"><span>5</span><small>Pista 5</small></div>
+              </div>
+
+              <article id="daily-card" class="daily-card">
+                <div class="daily-card-titlebar">
+                  <div class="daily-card-title">
+                    <span class="daily-doc-icon">▤</span>
+                    <strong>Pistas do caso</strong>
+                  </div>
                   <span id="daily-area" class="daily-area"></span>
-                  <span id="daily-number" class="daily-number"></span>
                 </div>
-                <div id="daily-date" class="daily-date"></div>
-              </div>
 
-              <div class="daily-progress-copy">
-                <strong id="daily-progress-label">Pista 1 de 5</strong>
-                <span id="daily-points-live">Vale 100 pontos</span>
-              </div>
+                <div id="daily-clues" class="daily-clues"></div>
+                <div id="daily-feedback" class="daily-feedback" hidden></div>
+              </article>
+
+              <form id="daily-form" class="daily-answer-card" autocomplete="off">
+                <div class="daily-answer-title">
+                  <span class="daily-target-icon">◎</span>
+                  <div>
+                    <strong>Sua hipótese diagnóstica</strong>
+                    <small>Qual diagnóstico explica melhor as pistas liberadas?</small>
+                  </div>
+                </div>
+                <div class="daily-answer-row">
+                  <input
+                    id="daily-answer"
+                    name="answer"
+                    type="text"
+                    maxlength="180"
+                    placeholder="Digite o nome da doença…"
+                    autocomplete="off"
+                    autocapitalize="sentences"
+                    enterkeyhint="send"
+                    required
+                  >
+                  <button id="daily-submit" type="submit">Responder <span>→</span></button>
+                </div>
+              </form>
+
+              <section id="daily-result" class="daily-result" hidden>
+                <div id="daily-result-icon" class="daily-result-icon"></div>
+                <div class="daily-result-copy">
+                  <span id="daily-result-kicker"></span>
+                  <h3 id="daily-diagnosis"></h3>
+                  <p id="daily-explanation"></p>
+                  <div class="daily-result-stats">
+                    <span><strong id="daily-final-score">0</strong> pontos</span>
+                    <span><strong id="daily-final-attempts">0</strong> tentativa(s)</span>
+                  </div>
+                </div>
+              </section>
             </div>
 
-            <div id="daily-progress-dots" class="daily-progress-dots" aria-label="Progresso das pistas">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
-
-            <div id="daily-clues" class="daily-clues"></div>
-
-            <div id="daily-feedback" class="daily-feedback" hidden></div>
-
-            <form id="daily-form" class="daily-form" autocomplete="off">
-              <label for="daily-answer">Qual é o diagnóstico?</label>
-              <div class="daily-answer-row">
-                <input
-                  id="daily-answer"
-                  name="answer"
-                  type="text"
-                  maxlength="180"
-                  placeholder="Digite sua resposta…"
-                  autocomplete="off"
-                  autocapitalize="sentences"
-                  enterkeyhint="send"
-                  required
-                >
-                <button id="daily-submit" type="submit">Confirmar</button>
-              </div>
-            </form>
-
-            <section id="daily-result" class="daily-result" hidden>
-              <div id="daily-result-icon" class="daily-result-icon"></div>
-              <div class="daily-result-copy">
-                <span id="daily-result-kicker"></span>
-                <h3 id="daily-diagnosis"></h3>
-                <p id="daily-explanation"></p>
-                <div class="daily-result-stats">
-                  <span><strong id="daily-final-score">0</strong> pontos</span>
-                  <span><strong id="daily-final-attempts">0</strong> tentativa(s)</span>
+            <aside class="daily-side">
+              <section class="daily-side-card daily-summary-card">
+                <div class="daily-side-heading">
+                  <span class="daily-bars-icon">▥</span>
+                  <strong>Seu resumo de hoje</strong>
                 </div>
-              </div>
-            </section>
-          </article>
+                <div class="daily-summary-progress">
+                  <div id="daily-ring" class="daily-ring"><span id="daily-ring-value">1/5</span></div>
+                  <div><strong id="daily-visible-count">1 / 5</strong><small>pistas visualizadas</small></div>
+                </div>
+                <div class="daily-summary-row">
+                  <span class="daily-summary-icon">◷</span>
+                  <div><strong id="daily-time">0 min</strong><small>tempo de tentativa</small></div>
+                </div>
+                <div class="daily-summary-row">
+                  <span class="daily-summary-icon">▤</span>
+                  <div><strong id="daily-attempts">0</strong><small>tentativas</small></div>
+                </div>
+              </section>
+
+              <section class="daily-side-card daily-recent-card">
+                <div class="daily-side-heading">
+                  <span class="daily-clock-icon">◷</span>
+                  <strong>Últimos desafios</strong>
+                </div>
+                <div id="daily-recent-list" class="daily-recent-list">
+                  <div class="daily-recent-empty">Nenhum desafio concluído ainda.</div>
+                </div>
+              </section>
+            </aside>
+          </div>
         </section>
       </div>
     </main>
@@ -108,7 +154,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.9-daily"></script>
-  <script src="/assets/js/desafio-diario.js?v=3-clues-only"></script>
+  <script src="/assets/js/desafio-diario.js?v=4-pistas-dashboard"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
