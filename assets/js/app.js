@@ -1194,7 +1194,7 @@ function luriaIcon(name, className = "") {
 
 window.LuriaIcon = luriaIcon;
 
-function sidebarMarkup(user, profile = null, isAdmin = false) {
+function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {\n  const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();\n  const canAccessWork = isAdmin === true || sidebarPlan === "plus" || sidebarPlan === "pro";
   const fallbackName = user.email
     ? user.email.split("@")[0]
     : "Usuário";
@@ -1363,7 +1363,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           </div>
         </div>
 
-        ${isAdmin ? `        <a class="user-mini luria-mode-footer-switch"
+        ${canAccessWork ? `        <a class="user-mini luria-mode-footer-switch"
            href="/trabalho/"
            aria-label="Trocar do ambiente Estudos para Trabalho">
           <div class="user-avatar luria-mode-icon" aria-hidden="true">
