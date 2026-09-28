@@ -842,7 +842,12 @@
     ]);
 
     renderMetricStrip("general-habit-metrics", []);
-    renderMetricStrip("general-progress-metrics", []);
+    renderMetricStrip("general-progress-metrics", [
+      { label:"Cronograma", value:percent(m.progress,1), helper:`${m.totalDone}/${m.totalTopics} aulas concluídas` },
+      { label:"Flashcards", value:num(m.flashReviews.length), helper:`${percent(m.retention,1)} de retenção estimada` },
+      { label:"Caderno de erros", value:num(m.err.length), helper:`${m.overdueErr} atrasados` },
+      { label:"Revisões teóricas", value:percent(m.reviewRate,1), helper:`${m.doneReviews.length}/${m.scheduledReviews.length} concluídas` }
+    ]);
 
     const studySeries = dateSeries(m.sessions, "started_at", x => Number(x.duration_seconds || 0) / 3600);
     chart("chart-general-study","bar",studySeries.map(x=>x.label),[
