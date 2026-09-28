@@ -1831,3 +1831,155 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
 .error-notebook-menu button{
   width:100%!important;
 }
+
+
+/* v16.7 — detalhe do caderno com lista real de erros */
+.error-home-layout.notebook-detail-open{
+  grid-template-columns:minmax(0,1fr)!important;
+}
+.error-home-layout.notebook-detail-open .error-home-aside{
+  display:none!important;
+}
+.error-home-layout.notebook-detail-open .error-library-nav{
+  display:none!important;
+}
+.error-notebook-detail{
+  display:grid;
+  gap:14px;
+}
+.error-notebook-detail-toolbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:4px;
+}
+.error-notebook-detail-list{
+  display:grid;
+  gap:12px;
+}
+.error-note-detail-card{
+  display:grid;
+  grid-template-columns:42px minmax(0,1fr);
+  gap:14px;
+  padding:16px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:var(--surface);
+  box-shadow:0 8px 22px rgba(22,56,92,.04);
+}
+.error-note-detail-index{
+  display:grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  border-radius:11px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  font-size:13px;
+  font-weight:900;
+}
+.error-note-detail-body{
+  min-width:0;
+}
+.error-note-detail-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+}
+.error-note-detail-kicker{
+  display:block;
+  margin-bottom:5px;
+  color:var(--accent);
+  font-size:8px;
+  font-weight:850;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.error-note-detail-head h3{
+  margin:0;
+  font-size:15px;
+  line-height:1.35;
+  color:var(--text);
+}
+.error-note-detail-date{
+  flex:0 0 auto;
+  padding:5px 8px;
+  border-radius:999px;
+  background:var(--surface-2);
+  color:var(--muted);
+  font-size:7.5px;
+  font-weight:750;
+}
+.error-note-detail-question,
+.error-note-detail-answer{
+  margin-top:12px;
+  padding:11px 12px;
+  border-radius:10px;
+  background:var(--surface-2);
+}
+.error-note-detail-answer{
+  background:color-mix(in srgb,var(--accent-soft) 45%,var(--surface));
+}
+.error-note-detail-question strong,
+.error-note-detail-answer strong{
+  display:block;
+  margin-bottom:5px;
+  font-size:8px;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.error-note-detail-question p,
+.error-note-detail-answer p,
+.error-note-detail-thought p{
+  margin:0;
+  font-size:9.5px;
+  line-height:1.5;
+  color:var(--text);
+}
+.error-note-detail-thought{
+  margin-top:10px;
+  padding:10px 12px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:var(--surface);
+}
+.error-note-detail-thought summary{
+  cursor:pointer;
+  font-size:8.5px;
+  font-weight:800;
+  color:var(--muted);
+}
+.error-note-detail-thought p{
+  margin-top:8px;
+}
+.error-note-detail-actions{
+  display:flex;
+  gap:8px;
+  margin-top:12px;
+}
+.error-note-detail-actions .button{
+  min-height:36px;
+  font-size:9px;
+}
+@media(max-width:700px){
+  .error-notebook-detail-toolbar{
+    align-items:stretch;
+    flex-direction:column;
+  }
+  .error-note-detail-card{
+    grid-template-columns:1fr;
+  }
+  .error-note-detail-index{
+    width:36px;
+    height:36px;
+  }
+  .error-note-detail-head{
+    flex-direction:column;
+  }
+  .error-note-detail-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+}
