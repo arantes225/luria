@@ -167,7 +167,7 @@
     const weekday = (new Date().getDay() + 6) % 7;
     const tier = streakTier(data.streak);
     const isDashboard4 = current === "4";
-    const isDashboard1 = currentLayout === 1;
+    const isDashboard1 = current === "1";
     const headingFlame = (isDashboard4 || isDashboard1) ? icon("flame") : streakVisual(data.streak);
     const streakValue = isDashboard4
       ? `<div class="dl-streak-value dl-streak-value-hero">${streakVisual(data.streak)}<strong>${data.streak} dias seguidos</strong></div>`
