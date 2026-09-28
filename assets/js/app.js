@@ -1342,7 +1342,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
         </a>
 
         <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/">
-          <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador</span>
+          <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Prática clínica</span>
         </a>
 
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
