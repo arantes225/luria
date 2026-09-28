@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v179-simulator-hub";
+const CACHE_VERSION = "luria-pwa-v180-simulator-reference";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -42,7 +42,8 @@ const APP_SHELL = [
   "/plantao/",
   "/plantao/sala-emergencia/",
   "/plantao/luriazap/",
-  "/assets/css/simulador-hub.css?v=1",
+  "/assets/css/simulador-hub.css?v=2-reference",
+  "/assets/js/simulador-hub.js?v=1",
   "/assets/js/plantao.js?v=9.7-entry-routes",
   "/assets/css/style.css?v=16.13-font-uniform",
   "/assets/css/landing.css",
