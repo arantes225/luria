@@ -1253,17 +1253,25 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">▧</span><span>Prontuário rápido</span>
         </a>
 
-        <div class="nav-group">
-          <button class="nav-group-label" type="button" aria-expanded="${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_exames"].includes(page)}">
-            <span class="nav-icon">✎</span><span class="nav-label-text">Prescrição</span><span class="nav-group-chevron" aria-hidden="true">⌄</span>
-          </button>
-          <div class="nav-submenu" ${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_exames"].includes(page) ? "" : "hidden"}>
-            <a class="nav-sublink ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">Bulário</a>
-            <a class="nav-sublink ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">Protocolos</a>
-            <a class="nav-sublink ${page === "trabalho_receitas" ? "active" : ""}" href="/trabalho/receitas/">Tratamentos gerais</a>
-            <a class="nav-sublink ${page === "trabalho_exames" ? "active" : ""}" href="/trabalho/exames/">Exames</a>
-          </div>
-        </div>
+        <a class="nav-link ${page === "trabalho_prescricao" ? "active" : ""}" href="/trabalho/prescricao/">
+          <span class="nav-icon">✎</span><span>Prescrição</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">
+          <span class="nav-icon">℞</span><span>Bulário</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">
+          <span class="nav-icon">☷</span><span>Protocolos</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_receitas" ? "active" : ""}" href="/trabalho/receitas/">
+          <span class="nav-icon">▤</span><span>Tratamentos gerais</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_exames" ? "active" : ""}" href="/trabalho/exames/">
+          <span class="nav-icon">◌</span><span>Exames</span>
+        </a>
 
         <a class="nav-link ${page === "trabalho_calculadora" ? "active" : ""}" href="/trabalho/calculadora/">
           <span class="nav-icon">∑</span><span>Calculadoras</span>
@@ -1289,33 +1297,32 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">⚡</span><span>Condutas rápidas</span>
         </a>
 
-        <div class="nav-group">
-          <button class="nav-group-label" type="button" aria-expanded="${["trabalho_diagnostico","trabalho_laboratorio","trabalho_ecg"].includes(page)}">
-            <span class="nav-icon">⌕</span><span class="nav-label-text">Diagnóstico</span><span class="nav-group-chevron" aria-hidden="true">⌄</span>
-          </button>
-          <div class="nav-submenu" ${["trabalho_diagnostico","trabalho_laboratorio","trabalho_ecg"].includes(page) ? "" : "hidden"}>
-            <a class="nav-sublink ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">Diagnóstico por Sintomas</a>
-            <a class="nav-sublink ${page === "trabalho_laboratorio" ? "active" : ""}" href="/trabalho/laboratorio/">Laboratório</a>
-            <a class="nav-sublink ${page === "trabalho_ecg" ? "active" : ""}" href="/trabalho/ecg/">ECG</a>
-          </div>
-        </div>
+        <a class="nav-link ${page === "trabalho_diagnostico" ? "active" : ""}" href="/trabalho/diagnostico/">
+          <span class="nav-icon">⌕</span><span>Diagnóstico por Sintomas</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_laboratorio" ? "active" : ""}" href="/trabalho/laboratorio/">
+          <span class="nav-icon">◫</span><span>Laboratório</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_ecg" ? "active" : ""}" href="/trabalho/ecg/">
+          <span class="nav-icon">⌁</span><span>ECG</span>
+        </a>
         <a class="nav-link ${page === "trabalho_fluidos" ? "active" : ""}" href="/trabalho/fluidos-eletrólitos/">
           <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
         </a>
 
-        <div class="nav-group" id="work-management-nav-group">
-          <button class="nav-group-label" id="work-management-nav-toggle" type="button" aria-expanded="false" aria-controls="work-management-nav-submenu">
-            <span class="nav-icon">▦</span>
-            <span class="nav-label-text">Gestão dos plantões</span>
-            <span class="nav-group-chevron" aria-hidden="true">⌄</span>
-          </button>
+        <a class="nav-link ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">
+          <span class="nav-icon">▦</span><span>Escala</span>
+        </a>
 
-          <div class="nav-submenu" id="work-management-nav-submenu" hidden>
-            <a class="nav-sublink ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">Escala</a>
-            <a class="nav-sublink ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">Divisor de Plantão</a>
-            <a class="nav-sublink ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">Financeiro</a>
-          </div>
-        </div>
+        <a class="nav-link ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">
+          <span class="nav-icon">÷</span><span>Divisor de Plantão</span>
+        </a>
+
+        <a class="nav-link ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">
+          <span class="nav-icon">$</span><span>Financeiro</span>
+        </a>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
           <span class="nav-icon">${luriaIcon("dashboard")}</span><span>Dashboard</span>
