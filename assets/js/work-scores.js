@@ -507,9 +507,68 @@
         field("Hemoglobina (g/dL)","g_hb","number",'step="0.1" min="0"')+
         field("PAS (mmHg)","g_sbp","number",'min="0"')+
         selectField("FC ≥100 bpm","g_hr",yesno())+selectField("Melena","g_mel",yesno())+selectField("Síncope","g_syn",yesno(2))+selectField("Doença hepática","g_liv",yesno(2))+selectField("Insuficiência cardíaca","g_hf",yesno(2));
-      $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcGBS); setResult("—","Preencha os campos.");
+      $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcGBS); setResult("—","Preencha os campos.");,
+    },
+    grace(f){
+      f.innerHTML=
+        field("Idade (anos)","gr_age","number",'min="18" max="120"')+
+        field("Frequência cardíaca (bpm)","gr_hr","number",'min="0"')+
+        field("PAS (mmHg)","gr_sbp","number",'min="0"')+
+        field("Creatinina (mg/dL)","gr_cr","number",'step="0.01" min="0"')+
+        selectField("Classe de Killip","gr_k",[opt("I",0),opt("II",20),opt("III",39),opt("IV",59)])+
+        selectField("Parada cardíaca na admissão","gr_ca",yesno(39))+
+        selectField("Desvio de ST","gr_st",yesno(28))+
+        selectField("Marcadores de necrose elevados","gr_bio",yesno(14));
+      $("input,select",f).forEach(x=>x.oninput=x.onchange=calcGrace); setResult("—","Preencha os campos.");
+    },
+    psi(f){
+      f.innerHTML=
+        field("Idade (anos)","p_age","number",'min="18" max="120"')+
+        selectField("Sexo","p_sex",[opt("Masculino","m"),opt("Feminino","f")])+
+        selectField("Residente em instituição de longa permanência","p_nh",yesno(10))+
+        selectField("Neoplasia","p_ca",yesno(30))+selectField("Doença hepática","p_liv",yesno(20))+selectField("Insuficiência cardíaca","p_hf",yesno(10))+selectField("Doença cerebrovascular","p_cvd",yesno(10))+selectField("Doença renal","p_renal",yesno(10))+
+        selectField("Alteração do estado mental","p_ams",yesno(20))+selectField("FR ≥30 irpm","p_rr",yesno(20))+selectField("PAS <90 mmHg","p_sbp",yesno(20))+selectField("Temperatura <35°C ou ≥40°C","p_temp",yesno(15))+selectField("FC ≥125 bpm","p_hr",yesno(10))+
+        selectField("pH arterial <7,35","p_ph",yesno(30))+selectField("BUN ≥30 mg/dL","p_bun",yesno(20))+selectField("Sódio <130 mEq/L","p_na",yesno(20))+selectField("Glicose ≥250 mg/dL","p_glu",yesno(10))+selectField("Hematócrito <30%","p_hct",yesno(10))+selectField("PaO₂ <60 mmHg ou SatO₂ <90%","p_o2",yesno(10))+selectField("Derrame pleural","p_eff",yesno(10));
+      $("input,select",f).forEach(x=>x.oninput=x.onchange=calcPsi); setResult("—","Preencha os campos.");
+    },
+    rts(f){
+      f.innerHTML=
+        selectField("Glasgow",[opt("13–15",4),opt("9–12",3),opt("6–8",2),opt("4–5",1),opt("3",0)])+
+        selectField("PAS (mmHg)", "r_sbp",[opt(">89",4),opt("76–89",3),opt("50–75",2),opt("1–49",1),opt("0",0)])+
+        selectField("FR (irpm)", "r_rr",[opt("10–29",4),opt(">29",3),opt("6–9",2),opt("1–5",1),opt("0",0)]);
+      $("select",f).forEach(x=>x.onchange=calcRts); setResult("—","Preencha os campos.");
+
     }
   };
+
+
+  function calcGrace(){
+    const ids=["gr_age","gr_hr","gr_sbp","gr_cr","gr_k","gr_ca","gr_st","gr_bio"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
+    const age=+$("#gr_age").value, hr=+$("#gr_hr").value, sbp=+$("#gr_sbp").value, cr=+$("#gr_cr").value;
+    const ageP=age<30?0:age<40?8:age<50?25:age<60?41:age<70?58:age<80?75:age<90?91:100;
+    const hrP=hr<50?0:hr<70?3:hr<90?9:hr<110?15:hr<150?24:hr<200?38:46;
+    const sbpP=sbp<80?58:sbp<100?53:sbp<120?43:sbp<140?34:sbp<160?24:sbp<200?10:0;
+    const crP=cr<0.4?1:cr<0.8?4:cr<1.2?7:cr<1.6?10:cr<2?13:cr<4?21:28;
+    const n=ageP+hrP+sbpP+crP+["gr_k","gr_ca","gr_st","gr_bio"].reduce((a,id)=>a+Number($("#"+id).value),0);
+    const txt=n<=108?"GRACE ≤108: faixa de menor risco.":n<=140?"GRACE 109–140: risco intermediário.":"GRACE >140: alto risco.";
+    setResult(String(n),txt,"Pontuação GRACE para SCA; usar em conjunto com estratégia invasiva e avaliação clínica.");
+  }
+
+  function calcPsi(){
+    const ids=["p_age","p_sex","p_nh","p_ca","p_liv","p_hf","p_cvd","p_renal","p_ams","p_rr","p_sbp","p_temp","p_hr","p_ph","p_bun","p_na","p_glu","p_hct","p_o2","p_eff"];
+    if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
+    let n=+$("#p_age").value;
+    if($("#p_sex").value==="f") n-=10;
+    for(const id of ids.slice(2)) n+=Number($("#"+id).value);
+    const cls=n<=70?"Classe II":n<=90?"Classe III":n<=130?"Classe IV":"Classe V";
+    setResult(String(n),`PSI/PORT: ${cls}.`,"A Classe I exige algoritmo clínico específico; esta calculadora usa a pontuação numérica para Classes II–V.");
+  }
+
+  function calcRts(){
+    const v=$("#score-form select").map(x=>x.value); if(v.some(x=>x==="")) return setResult("—","Preencha todos os campos.");
+    const [g,s,r]=v.map(Number); const weighted=0.9368*g+0.7326*s+0.2908*r;
+    setResult(weighted.toFixed(3),`RTS ponderado: ${weighted.toFixed(3)} / 7,840.`,"Quanto menor o RTS, maior a gravidade fisiológica do trauma.");
+  }
 
   function calcNews2(){
     const ids=["n_rr","n_spo2","n_scale","n_o2","n_sbp","n_hr","n_cns","n_temp"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
