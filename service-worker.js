@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v178-error-notebook-runtime";
+const CACHE_VERSION = "luria-pwa-v179-simulator-hub";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -40,7 +40,10 @@ const APP_SHELL = [
   "/trabalho/protocolos/",
   "/trabalho/prescricao/",
   "/plantao/",
-  "/assets/js/plantao.js?v=9.10-luriazap-area-filter-fix",
+  "/plantao/sala-emergencia/",
+  "/plantao/luriazap/",
+  "/assets/css/simulador-hub.css?v=1",
+  "/assets/js/plantao.js?v=9.7-entry-routes",
   "/assets/css/style.css?v=16.13-font-uniform",
   "/assets/css/landing.css",
   "/assets/css/pwa-mobile.css?v=18",
