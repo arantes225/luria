@@ -3891,3 +3891,14 @@ body.theme-dark[data-page="caderno"] .notebook-task-modal .notebook-modal-field 
   background:var(--surface-2);
   border-color:var(--border);
 }
+
+
+/* v24.9 — botão Voltar pros meus cadernos maior */
+#notebook-back-library{
+  min-height:38px!important;
+  padding:0 14px!important;
+  border-radius:9px!important;
+  font-size:10px!important;
+  font-weight:800!important;
+  line-height:1!important;
+}
