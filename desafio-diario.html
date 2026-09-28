@@ -12,8 +12,8 @@
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
-  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=13">
-  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=2-win-clue">
+  <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=24-scroll-header">
+  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=3-clues-only">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/desafio-diario/">
@@ -34,21 +34,6 @@
         </header>
 
         <section class="daily-shell" aria-live="polite">
-          <div class="daily-intro">
-            <div>
-              <span class="daily-kicker">UM CASO. CINCO PISTAS.</span>
-              <h2>Qual é o diagnóstico?</h2>
-              <p>Errou? A próxima pista aparece automaticamente. Quanto antes acertar, maior a pontuação.</p>
-            </div>
-            <div class="daily-score-scale" aria-label="Pontuação por tentativa">
-              <span><strong>100</strong><small>1ª</small></span>
-              <span><strong>80</strong><small>2ª</small></span>
-              <span><strong>60</strong><small>3ª</small></span>
-              <span><strong>40</strong><small>4ª</small></span>
-              <span><strong>20</strong><small>5ª</small></span>
-            </div>
-          </div>
-
           <div id="daily-loading" class="daily-state-card">
             <div class="daily-loader" aria-hidden="true"></div>
             <strong>Carregando o desafio de hoje…</strong>
@@ -100,7 +85,6 @@
                 >
                 <button id="daily-submit" type="submit">Confirmar</button>
               </div>
-              <small>Não precisa escrever classificações ou subtipos desnecessários.</small>
             </form>
 
             <section id="daily-result" class="daily-result" hidden>
@@ -115,25 +99,7 @@
                 </div>
               </div>
             </section>
-          </article>
-
-          <section class="daily-rules">
-            <article>
-              <strong>Pista 1</strong>
-              <span>Mais difícil</span>
-            </article>
-            <div class="daily-rule-line"></div>
-            <article>
-              <strong>Pista 3</strong>
-              <span>Direciona</span>
-            </article>
-            <div class="daily-rule-line"></div>
-            <article>
-              <strong>Pista 5</strong>
-              <span>Quase entrega</span>
-            </article>
-          </section>
-        </section>
+          </article></section>
       </div>
     </main>
   </div>
@@ -141,7 +107,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.9-daily"></script>
-  <script src="/assets/js/desafio-diario.js?v=2-win-clue"></script>
+  <script src="/assets/js/desafio-diario.js?v=3-clues-only"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
