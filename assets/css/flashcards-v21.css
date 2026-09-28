@@ -391,3 +391,45 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
   .review-launcher h3{font-size:24px!important}
   .review-launcher-action{min-width:0!important;width:100%!important}
 }
+
+
+/* LURIA Flashcards v26 — decks com acabamento azul de caderno */
+.flash-ref-deck{
+  overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--accent) 26%,var(--border))!important;
+  border-left:5px solid var(--accent)!important;
+  background:
+    linear-gradient(90deg,color-mix(in srgb,var(--accent) 8%,transparent) 0 30px,transparent 30px),
+    linear-gradient(145deg,color-mix(in srgb,var(--accent) 3%,var(--surface)),var(--surface))!important;
+  box-shadow:0 8px 24px rgba(15,35,65,.055)!important;
+}
+.flash-ref-deck::before{
+  content:""!important;
+  position:absolute!important;left:10px!important;top:17px!important;bottom:17px!important;width:2px!important;
+  border-radius:999px!important;background:color-mix(in srgb,var(--accent) 35%,transparent)!important;
+  pointer-events:none!important;
+}
+.flash-ref-deck::after{
+  content:""!important;
+  position:absolute!important;left:18px!important;top:0!important;bottom:0!important;width:1px!important;
+  background:color-mix(in srgb,var(--accent) 12%,transparent)!important;
+  pointer-events:none!important;
+}
+.flash-ref-deck-top,.flash-ref-deck h3,.flash-ref-deck-desc,.flash-ref-deck-stats,.flash-ref-progress{
+  position:relative!important;z-index:1!important;
+}
+.flash-ref-deck-icon{
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border))!important;
+  border-radius:10px!important;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface))!important;
+  color:var(--accent)!important;
+}
+.flash-ref-deck h3{color:color-mix(in srgb,var(--accent) 82%,var(--text))!important}
+.flash-ref-deck:hover{
+  transform:translateY(-2px)!important;
+  border-color:color-mix(in srgb,var(--accent) 45%,var(--border))!important;
+  border-left-color:var(--accent)!important;
+  box-shadow:0 13px 32px rgba(15,35,65,.09)!important;
+}
+.flash-ref-track{background:color-mix(in srgb,var(--accent) 11%,var(--surface))!important}
+.flash-ref-fill{background:var(--accent)!important}
