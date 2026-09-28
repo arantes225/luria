@@ -6076,3 +6076,21 @@ iniciarApp();
   html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .luria-mode-footer-switch{flex-shrink:0!important}
  }`;document.head.appendChild(style);
 })();
+
+/* PWA topbar v32 — menu exatamente alinhado aos controles da direita */
+(function(){
+ const style=document.createElement("style");style.id="luria-pwa-topbar-align-v32";style.textContent=`
+ @media(max-width:980px){
+  html.pwa-standalone body .topbar{align-items:center!important}
+  html.pwa-standalone body .topbar .menu-open,
+  html.pwa-standalone body .topbar .luria-pomodoro-toggle,
+  html.pwa-standalone body .topbar .luria-notification-toggle,
+  html.pwa-standalone body .topbar .luria-profile-toggle{
+   width:40px!important;height:40px!important;min-width:40px!important;min-height:40px!important;
+   margin-top:0!important;margin-bottom:0!important;align-self:center!important;transform:none!important;
+   box-sizing:border-box!important
+  }
+  html.pwa-standalone body .topbar .menu-open{position:relative!important;top:auto!important;bottom:auto!important}
+  html.pwa-standalone body .topbar .luria-notifications{align-self:center!important;height:40px!important;align-items:center!important}
+ }`;document.head.appendChild(style);
+})();
