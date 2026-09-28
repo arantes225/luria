@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/favicon.png?v=luria2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.2">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="/assets/css/caderno-erros-revisao.css?v=6-progress-chip">
+  <link rel="stylesheet" href="/assets/css/caderno-erros-revisao.css?v=7-bounded-result">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
 </head>
 <body data-page="erros" class="error-review-page">
@@ -88,6 +88,13 @@
                     <strong>O que eu pensei originalmente</strong>
                     <p id="error-review-thought">—</p>
                   </div>
+                  <div id="error-review-result-actions" class="error-review-result-actions" hidden>
+                    <span>Como foi?</span>
+                    <div>
+                      <button id="error-review-wrong" class="button secondary" type="button">Errei</button>
+                      <button id="error-review-correct" class="button primary" type="button">Acertei</button>
+                    </div>
+                  </div>
                 </div>
               </section>
 
@@ -121,7 +128,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.28-theme-switch"></script>
-  <script src="/assets/js/caderno-erros-revisao.js?v=2-answer-mode"></script>
+  <script src="/assets/js/caderno-erros-revisao.js?v=3-bounded-result"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
