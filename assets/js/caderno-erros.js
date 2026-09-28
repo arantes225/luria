@@ -4842,11 +4842,11 @@ async function importErrorRows() {
 
 function errorAreaIcon(area){
   const v=String(area||"").toLowerCase();
-  if(v.includes("pedi")) return "♙";
-  if(v.includes("cirurg")) return "✂";
-  if(v.includes("gine")||v.includes("obst")) return "♀";
-  if(v.includes("prevent")) return "✚";
-  return "♧";
+  if(v.includes("pedi")) return "🧸";
+  if(v.includes("cirurg")) return "✂️";
+  if(v.includes("gine")||v==="go"||v.includes("obst")) return "♀";
+  if(v.includes("prevent")) return "🛡️";
+  return "🩺";
 }
 function errorState(item){
   const n=Number(item.review_count||0);
