@@ -469,3 +469,36 @@ body.flash-review-session-active .page{
   margin:0 auto!important;
   padding:18px 0 40px!important;
 }
+
+
+/* LURIA Flashcards v29 — Revisões do dia compacta, estilo Caderno de Erros */
+.review-launcher{
+  min-height:0!important;
+  padding:12px 14px!important;
+  border-radius:12px!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  gap:14px!important;
+  align-items:center!important;
+  background:color-mix(in srgb,var(--text) 94%,var(--accent) 6%)!important;
+  border:1px solid color-mix(in srgb,var(--text) 80%,var(--accent) 20%)!important;
+  box-shadow:0 8px 22px rgba(0,0,0,.10)!important;
+}
+.review-launcher::before{width:3px!important;inset:9px auto 9px 0!important;background:var(--accent)!important}
+.review-launcher-copy .eyebrow{font-size:8px!important;color:color-mix(in srgb,var(--accent) 75%,#fff 25%)!important}
+.review-launcher h3{margin:1px 0 2px!important;font-size:15px!important;line-height:1.15!important;color:#fff!important}
+.review-launcher-copy p{font-size:9px!important;line-height:1.35!important;color:rgba(255,255,255,.66)!important}
+.review-launcher-action{
+  min-width:190px!important;
+  padding:8px 10px!important;
+  gap:8px!important;
+  border-radius:9px!important;
+  background:rgba(255,255,255,.06)!important;
+  border:1px solid rgba(255,255,255,.09)!important;
+}
+.review-launcher-action strong{font-size:13px!important;color:#fff!important}
+.review-launcher #start-review-session{min-height:34px!important;padding:0 13px!important;font-size:10px!important}
+.review-launcher:hover{box-shadow:0 10px 26px rgba(0,0,0,.14)!important}
+@media(max-width:760px){
+  .review-launcher{grid-template-columns:1fr!important;padding:12px!important;gap:10px!important}
+  .review-launcher-action{min-width:0!important;width:100%!important;grid-template-columns:1fr auto!important}
+}
