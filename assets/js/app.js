@@ -1054,7 +1054,7 @@ const PAGE_INFO = {
   trabalho_calculadora: { title: "Calculadoras", eyebrow: "Trabalho" },
   trabalho_bulario: { title: "Bulário", eyebrow: "Trabalho" },
   trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
-  trabalho_diagnostico: { title: "Diagnóstico", eyebrow: "Trabalho" },
+  trabalho_diagnostico: { title: "Diagnóstico por Sintomas", eyebrow: "Diagnóstico" },
   trabalho_laboratorio: { title: "Laboratório", eyebrow: "Trabalho" },
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Trabalho" },
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Trabalho" },
