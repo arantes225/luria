@@ -51,7 +51,7 @@
     arrestStartedAt:null,
     penalties:0, criticalElapsed:0, diagnosis:null, disposition:null, busy:false,
     phoneCases:[], phoneCase:null, phoneSession:null, phoneTurn:0, phoneMode:false, phoneUsedChoices:new Set(),
-    filters:{specialty:"",difficulty:"",query:""}, activeSession:null,
+    filters:{specialty:"",difficulty:"",query:""}, activeSession:null, libraryView:"home",
     phoneSearch:"", phoneArea:"", phoneNewChat:false
   };
 
@@ -321,11 +321,29 @@
       .maybeSingle();
     state.activeSession = activeSessionRes.error ? null : (activeSessionRes.data || null);
 
+    const resumeCard=$("plantao-resume-card");
+    if(resumeCard && state.activeSession?.case_id){
+      const resumeCase=state.cases.find(item=>String(item.id)===String(state.activeSession.case_id));
+      const resumeTitle=$("plantao-resume-title");
+      const resumeMeta=$("plantao-resume-meta");
+      const resumeProgress=$("plantao-resume-progress-bar");
+      if(resumeTitle) resumeTitle.textContent=resumeCase?.title || resumeCase?.presentation?.chief_complaint || "Caso em andamento";
+      if(resumeMeta) resumeMeta.textContent="Retome de onde parou";
+      if(resumeProgress){
+        const minutes=Math.max(0,Number(state.activeSession.elapsed_minutes||0));
+        resumeProgress.style.width=Math.min(92,Math.max(18,(minutes/25)*100))+"%";
+      }
+    }
+
+    const savedLibraryView=readPlantaoView().libraryView;
+    state.libraryView=savedLibraryView==="library" ? "library" : "home";
+    document.body.dataset.caseLibraryView=state.libraryView;
+
     const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
     const difficulties=[...new Set(state.cases.map(x=>x.difficulty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
     buildSiteFilter("specialty",specialties);
     buildSiteFilter("difficulty",difficulties);
-    renderLibrary();
+    setCaseLibraryView(state.libraryView,{persist:false});
 
     const savedView=readPlantaoView();
 
@@ -459,14 +477,52 @@
     return presets[file] || {x:50,y:22,scale:2};
   }
 
+  function weeklyFeaturedCases(cases){
+    const list=Array.isArray(cases)?cases:[];
+    if(list.length<=6) return [...list];
+    const now=new Date();
+    const start=new Date(now.getFullYear(),0,1);
+    const day=Math.floor((now-start)/86400000);
+    const week=Math.floor((day+start.getDay())/7);
+    return [...list]
+      .map(item=>{
+        const key=String(item.id||item.slug||item.title||"");
+        let hash=(week+1)*2654435761;
+        for(let i=0;i<key.length;i++) hash=((hash^key.charCodeAt(i))*16777619)>>>0;
+        return {item,hash};
+      })
+      .sort((a,b)=>a.hash-b.hash)
+      .slice(0,6)
+      .map(entry=>entry.item);
+  }
+
+  function setCaseLibraryView(view,{persist=true}={}){
+    const next=view==="library" ? "library" : "home";
+    state.libraryView=next;
+    document.body.dataset.caseLibraryView=next;
+    document.querySelectorAll("[data-case-library-view]").forEach(button=>{
+      const active=button.dataset.caseLibraryView===next;
+      button.classList.toggle("active",active);
+      if(active) button.setAttribute("aria-current","page");
+      else button.removeAttribute("aria-current");
+    });
+
+    const resume=$("plantao-resume-card");
+    if(resume) resume.hidden=!(next==="home" && state.activeSession?.id);
+
+    if(persist) savePlantaoView({libraryView:next});
+    renderLibrary();
+  }
+
   function renderLibrary() {
     const specialty=state.filters.specialty || "";
     const difficulty=state.filters.difficulty || "";
     const query=normalizeLabel(state.filters.query || "");
-    const visibleCases=state.cases.filter(item=>{
-      if(specialty && item.specialty!==specialty) return false;
-      if(difficulty && item.difficulty!==difficulty) return false;
-      if(!query) return true;
+    const sourceCases=state.libraryView==="home" ? weeklyFeaturedCases(state.cases) : state.cases;
+    const visibleCases=sourceCases.filter(item=>{
+      if(state.libraryView==="library" && specialty && item.specialty!==specialty) return false;
+      if(state.libraryView==="library" && difficulty && item.difficulty!==difficulty) return false;
+      if(state.libraryView!=="library" || !query) return true;
       const haystack=normalizeLabel([
         item.title,item.summary,item.setting,item.specialty,item.difficulty,
         item.presentation?.chief_complaint,item.presentation?.display_title,caseMateria(item)
@@ -479,7 +535,11 @@
     const visibleCount=$("plantao-visible-count");
     if(countEl) countEl.textContent=state.cases.length;
     if(sessionEl) sessionEl.textContent=state.sessions.length;
-    if(visibleCount) visibleCount.textContent=visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
+    if(visibleCount) visibleCount.textContent=state.libraryView==="home"
+      ? visibleCases.length+" destaque"+(visibleCases.length===1?"":"s")
+      : visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
+    const listTitle=$("plantao-case-list-title");
+    if(listTitle) listTitle.textContent=state.libraryView==="home" ? "Casos em destaque da semana" : "Casos disponíveis";
 
     const sideCaseCount=$("plantao-side-case-count");
     const sideActiveCount=$("plantao-side-active-count");
@@ -601,36 +661,30 @@
       const materia=caseMateria(item);
       const summary=item.summary || item.presentation?.opening || "Paciente aguardando avaliação na sala de emergência.";
       const diff=String(item.difficulty||"").toLowerCase();
-      const caseImage=plantaoReferenceImage(item,index+1);
-      const faceCrop=plantaoReferenceFaceCrop(caseImage);
+      const patientName=patientReportName(item);
+      const patientAge=reportAgeLabel(item);
+      const patientSexLabel=reportSexLabel(item);
 
       return `
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
           <div class="plantao-record-folder">
-            <div class="plantao-record-folder-tab"><span>${esc(item.specialty || "Clínica Médica")}</span></div>
+            <div class="plantao-record-folder-tabs">
+              <div class="plantao-record-folder-tab"><span>${esc(item.specialty || "Clínica Médica")}</span></div>
+              <span class="plantao-record-paper-slip difficulty">${esc(item.difficulty || "Intermediário")}</span>
+              <span class="plantao-record-paper-slip time">◷ 20 min</span>
+            </div>
             <div class="plantao-record-paper-back"></div>
 
             <div class="plantao-record-paper">
               <div class="plantao-record-paper-header">
-                <div class="plantao-record-photo">
-                  <img
-                    src="${caseImage}"
-                    alt="${esc(title)}"
-                    loading="lazy"
-                    decoding="async"
-                    style="--face-x:${faceCrop.x}%;--face-y:${faceCrop.y}%;--face-scale:${faceCrop.scale}"
-                  >
-                </div>
-
                 <div class="plantao-record-title-wrap">
                   <span class="plantao-record-kicker">PRONTUÁRIO DO PACIENTE</span>
+                  <div class="plantao-record-patient">
+                    <strong>${esc(patientName)}</strong>
+                    <span>${esc(patientAge)} · ${esc(patientSexLabel)}</span>
+                  </div>
                   <h3>${esc(title)}</h3>
                 </div>
-              </div>
-
-              <div class="plantao-record-meta">
-                <span class="plantao-record-chip difficulty">${esc(item.difficulty || "Intermediário")}</span>
-                <span class="plantao-record-chip time">◷ 20 min</span>
               </div>
 
               <div class="plantao-record-lines">
@@ -1209,6 +1263,12 @@
   $("plantao-case-search")?.addEventListener("input",event=>{
     state.filters.query=event.currentTarget.value||"";
     renderLibrary();
+  });
+
+  document.querySelector(".plantao-primary-switch-wrap")?.addEventListener("click",event=>{
+    const button=event.target.closest("[data-case-library-view]");
+    if(!button) return;
+    setCaseLibraryView(button.dataset.caseLibraryView);
   });
 
   $("plantao-specialty-chips")?.addEventListener("click",event=>{
@@ -2477,8 +2537,8 @@
     clock.innerHTML='<svg class="plantao-time-icon" aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v5l3.4 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>'+time+'</span>';
     clock.setAttribute("aria-label","Tempo do caso: "+time);
   }
-  function patientSex(){
-    const raw=normalizeLabel(state.current?.presentation?.sex||"");
+  function patientSex(item=state.current){
+    const raw=normalizeLabel(item?.presentation?.sex||"");
     return raw==="f" || raw.startsWith("fem") ? "F" : "M";
   }
   function genderText(text){
@@ -3885,29 +3945,29 @@
     show("plantao-simulator");
   }
 
-  function patientReportName(){
-    const explicit=String(state.current?.presentation?.patient_name||state.current?.presentation?.name||"").trim();
+  function patientReportName(item=state.current){
+    const explicit=String(item?.presentation?.patient_name||item?.presentation?.name||"").trim();
     if(explicit) return explicit;
 
     const female=["Ana Martins","Mariana Alves","Camila Rocha","Juliana Ribeiro","Fernanda Costa","Larissa Gomes","Patrícia Lima","Beatriz Souza"];
     const male=["Carlos Martins","Rafael Alves","Bruno Rocha","Lucas Ribeiro","Felipe Costa","Gustavo Gomes","Eduardo Lima","André Souza"];
-    const source=String(state.current?.slug||state.current?.id||state.current?.title||"paciente");
+    const source=String(item?.slug||item?.id||item?.title||"paciente");
     let hash=0;
     for(let i=0;i<source.length;i++) hash=(hash*31+source.charCodeAt(i))>>>0;
-    const list=patientSex()==="F"?female:male;
+    const list=patientSex(item)==="F"?female:male;
     return list[hash%list.length];
   }
 
-  function reportAgeLabel(){
-    const raw=String(state.current?.presentation?.age||"").trim();
+  function reportAgeLabel(item=state.current){
+    const raw=String(item?.presentation?.age||"").trim();
     if(!raw) return "—";
     if(/ano|mes|mês|dia/i.test(raw)) return raw;
     const n=Number(raw);
     return Number.isFinite(n) ? n+" "+(n===1?"ano":"anos") : raw;
   }
 
-  function reportSexLabel(){
-    return patientSex()==="F" ? "Feminino" : "Masculino";
+  function reportSexLabel(item=state.current){
+    return patientSex(item)==="F" ? "Feminino" : "Masculino";
   }
 
   function patientHdaText(){
