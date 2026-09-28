@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Prontuário rápido · LURIA</title>
+  <title>Caderno · LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=5">
+  <link rel="stylesheet" href="/assets/css/quick-chart-manager.css?v=7-notebook">
 </head>
 <body data-page="trabalho_prontuario_rapido">
   <div class="app-shell">
@@ -29,54 +29,40 @@
           </div>
         </header>
 
-        <section class="quick-chart-shell">
-          <article class="quick-chart-hero">
+        <section class="temp-note-shell">
+          <div class="temp-note-topbar">
             <div>
-              <h2>Prontuário rápido</h2>
-              <p>Seu acesso externo usa o nome de usuário da LURIA e um PIN de 4 dígitos configurado em Perfil e Conta.</p>
+              <span class="temp-note-kicker">Acesso temporário</span>
+              <strong id="quick-chart-expiry">Nenhum conteúdo ativo</strong>
             </div>
-            <a class="quick-chart-create" href="/trabalho/prontuario/" target="_blank" rel="noopener">Abrir acesso manual</a>
-          </article>
-
-          <div class="quick-chart-info">
-            <strong>Seu endereço:</strong>
-            <code id="quick-chart-public-address">Defina seu código abaixo</code>
-            <button id="quick-chart-copy-address" type="button">Copiar endereço</button>
+            <div class="temp-note-top-actions">
+              <code id="quick-chart-public-address">Defina seu usuário</code>
+              <button id="quick-chart-copy-address" type="button">Copiar acesso</button>
+              <a href="/trabalho/prontuario/" target="_blank" rel="noopener">Abrir acesso</a>
+            </div>
           </div>
 
-          <article class="quick-chart-code-card">
-            <div>
-              <span class="quick-chart-eyebrow">Acesso pessoal</span>
-              <h3 id="quick-chart-code-title">Configure seu PIN</h3>
-              <p id="quick-chart-code-help">Na primeira vez, crie aqui seu PIN de 4 dígitos. Depois você também pode alterá-lo em Configurações → Perfil e Conta.</p>
-            </div>
-
-            <div id="quick-chart-pin-setup" class="quick-chart-pin-setup">
-              <input id="quick-chart-pin" type="password" inputmode="numeric" maxlength="4" autocomplete="new-password" placeholder="PIN de 4 dígitos">
-              <input id="quick-chart-pin-confirm" type="password" inputmode="numeric" maxlength="4" autocomplete="new-password" placeholder="Confirmar PIN">
-              <button id="quick-chart-save-pin" class="primary" type="button">Salvar PIN</button>
-            </div>
-
-            <div class="quick-chart-code-form">
-              <a class="quick-chart-create" href="/configuracoes/#perfil">Abrir Perfil e Conta</a>
-            </div>
-
-            <small class="quick-chart-code-note">O PIN é protegido e não fica salvo em texto puro.</small>
+          <article class="temp-note-paper">
+            <textarea id="quick-chart-note" spellcheck="true" autocomplete="off" placeholder="Comece a escrever..."></textarea>
           </article>
 
-          <article class="quick-chart-current">
-            <div class="quick-chart-list-head">
-              <h3>Conteúdo atual</h3>
-              <span id="quick-chart-expiry">Nenhum conteúdo ativo</span>
-            </div>
-            <div id="quick-chart-current-content" class="quick-chart-current-content"></div>
-            <div class="quick-chart-current-actions">
-              <button id="quick-chart-refresh" type="button">Atualizar</button>
-              <button id="quick-chart-clear" class="danger" type="button">Limpar conteúdo</button>
-            </div>
-          </article>
+          <div class="temp-note-savebar">
+            <span id="quick-chart-status" role="status" aria-live="polite">Pronto</span>
+            <button id="quick-chart-clear" class="secondary" type="button">Limpar</button>
+            <button id="quick-chart-save-note" class="primary" type="button">Salvar</button>
+          </div>
 
-          <div id="quick-chart-status" class="quick-chart-status" role="status" aria-live="polite"></div>
+          <details class="temp-note-access">
+            <summary>Configurar acesso temporário</summary>
+            <div class="temp-note-access-grid">
+              <p>Use seu nome de usuário da LURIA e um PIN de 4 dígitos para abrir este caderno fora da conta.</p>
+              <div id="quick-chart-pin-setup" class="quick-chart-pin-setup">
+                <input id="quick-chart-pin" type="text" inputmode="numeric" maxlength="4" autocomplete="one-time-code" data-lpignore="true" data-1p-ignore="true" name="luria-access-code" placeholder="PIN">
+                <input id="quick-chart-pin-confirm" type="text" inputmode="numeric" maxlength="4" autocomplete="one-time-code" data-lpignore="true" data-1p-ignore="true" name="luria-access-code-confirm" placeholder="Confirmar PIN">
+                <button id="quick-chart-save-pin" type="button">Salvar PIN</button>
+              </div>
+            </div>
+          </details>
         </section>
       </div>
     </main>
@@ -84,8 +70,8 @@
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=17.22-prontuario-rapido"></script>
-  <script src="/assets/js/quick-chart-manager.js?v=6"></script>
+  <script src="/assets/js/app.js?v=17.23-temp-notebook"></script>
+  <script src="/assets/js/quick-chart-manager.js?v=7-notebook"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
