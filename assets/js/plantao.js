@@ -591,7 +591,7 @@
       return `
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
           <div class="plantao-record-folder">
-            <div class="plantao-record-folder-tab"></div>
+            <div class="plantao-record-folder-tab"><span>${esc(item.specialty || "Clínica Médica")}</span></div>
             <div class="plantao-record-paper-back"></div>
 
             <div class="plantao-record-paper">
@@ -612,7 +612,6 @@
               </div>
 
               <div class="plantao-record-meta">
-                <span class="plantao-record-chip area">${esc(item.specialty || "Clínica Médica")}</span>
                 <span class="plantao-record-chip difficulty">${esc(item.difficulty || "Intermediário")}</span>
                 <span class="plantao-record-chip time">◷ 20 min</span>
               </div>
