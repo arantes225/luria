@@ -5839,3 +5839,70 @@ body.plantao-module-entry .plantao-library-side>.plantao-side-card:first-child{
     position:static!important;
   }
 }
+
+
+/* === Sala de Emergência · compact patient records v27 === */
+/* Cards mais curtos e densos: remove o excesso de vazio vertical visto no prontuário. */
+body.plantao-module-entry #plantao-case-grid{
+  align-items:start!important;
+}
+body.plantao-module-entry .plantao-case-record{
+  height:auto!important;
+  align-self:start!important;
+}
+body.plantao-module-entry .plantao-record-folder{
+  height:auto!important;
+  min-height:0!important;
+  padding-top:24px!important;
+}
+body.plantao-module-entry .plantao-record-folder-tabs{
+  height:26px!important;
+}
+body.plantao-module-entry .plantao-record-folder-tab{
+  height:24px!important;
+}
+body.plantao-module-entry .plantao-record-paper-slip{
+  height:20px!important;
+  padding:0 8px!important;
+}
+body.plantao-module-entry .plantao-record-folder::before{
+  inset:24px 0 7px 0!important;
+}
+body.plantao-module-entry .plantao-record-paper-back{
+  top:31px!important;
+}
+body.plantao-module-entry .plantao-record-paper{
+  min-height:0!important;
+  height:auto!important;
+  margin-top:6px!important;
+  padding-top:13px!important;
+  padding-bottom:12px!important;
+}
+body.plantao-module-entry .plantao-record-paper-header{
+  margin-bottom:6px!important;
+}
+body.plantao-module-entry .plantao-record-patient{
+  margin:0 0 6px!important;
+  padding-bottom:5px!important;
+}
+body.plantao-module-entry .plantao-record-lines{
+  flex:0 0 auto!important;
+  gap:4px!important;
+}
+body.plantao-module-entry .plantao-record-line{
+  gap:1px!important;
+  padding-bottom:3px!important;
+}
+body.plantao-module-entry .plantao-record-summary span{
+  -webkit-line-clamp:2!important;
+}
+body.plantao-module-entry .plantao-record-button{
+  margin-top:10px!important;
+  min-height:30px!important;
+}
+@media(min-width:621px){
+  body.plantao-module-entry .plantao-record-folder,
+  body.plantao-module-entry .plantao-record-paper{
+    min-height:0!important;
+  }
+}
