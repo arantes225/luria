@@ -2853,3 +2853,38 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
     margin:0 auto!important;
   }
 }
+
+
+/* Dashboard 1 v45 — botão Abrir dentro do callout da atividade */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-action-inside{
+    grid-template-columns:12px minmax(0,1fr)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-action-inside .dl-activity-info{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-action-inside .dl-activity-copy{
+    min-width:0!important;
+    flex:1 1 auto!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-action-inside .dl-start{
+    flex:0 0 auto!important;
+    min-width:64px!important;
+    height:30px!important;
+    min-height:30px!important;
+    padding:0 10px!important;
+    border-radius:8px!important;
+    background:var(--accent-soft)!important;
+    border-color:color-mix(in srgb,var(--accent) 20%,var(--border))!important;
+    color:var(--accent)!important;
+    font-size:11px!important;
+    font-weight:800!important;
+    box-shadow:none!important;
+  }
+}
