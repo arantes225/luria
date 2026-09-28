@@ -3593,3 +3593,40 @@
     0 5px 12px rgba(24,72,136,.13),
     0 0 0 1px color-mix(in srgb,var(--accent) 18%,transparent)!important;
 }
+
+
+/* v24.3 — renomear título direto no cabeçalho */
+#notebook-document-title{
+  cursor:text;
+}
+#notebook-document-title::after{
+  content:"";
+}
+#notebook-document-title:hover{
+  color:var(--accent)!important;
+}
+#notebook-document-title.is-renaming{
+  overflow:visible!important;
+  white-space:normal!important;
+}
+.notebook-title-inline-input{
+  width:min(100%,720px);
+  min-width:220px;
+  height:38px;
+  padding:5px 8px;
+  border:1px solid color-mix(in srgb,var(--accent) 52%,var(--border));
+  border-radius:8px;
+  background:var(--surface);
+  color:var(--text);
+  font:inherit;
+  font-size:18px;
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-.025em;
+  outline:none;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 10%,transparent);
+}
+.notebook-title-inline-input:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 14%,transparent);
+}
