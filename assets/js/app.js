@@ -1063,10 +1063,8 @@ const PAGE_INFO = {
   trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Prescrição" },
   trabalho_exames: { title: "Exames", eyebrow: "Prescrição" },
   trabalho_scores: { title: "Scores", eyebrow: "Trabalho" },
-  trabalho_procedimentos: { title: "Procedimentos", eyebrow: "Trabalho" },
   trabalho_antimicrobianos: { title: "Antimicrobianos", eyebrow: "Trabalho" },
   trabalho_condutas: { title: "Condutas rápidas", eyebrow: "Trabalho" },
-  trabalho_paciente_temporario: { title: "Paciente temporário", eyebrow: "Trabalho" }
 };
 
 
