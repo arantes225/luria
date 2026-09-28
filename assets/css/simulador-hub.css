@@ -688,3 +688,58 @@ html[data-theme="leila-mood"]{
     min-width:0!important;
   }
 }
+
+
+/* v9 — distribuição por especialidade em tons do tema */
+:root{
+  --sim-chart-1:color-mix(in srgb,var(--accent) 100%,white 0%);
+  --sim-chart-2:color-mix(in srgb,var(--accent) 82%,white 18%);
+  --sim-chart-3:color-mix(in srgb,var(--accent) 66%,white 34%);
+  --sim-chart-4:color-mix(in srgb,var(--accent) 50%,white 50%);
+  --sim-chart-5:color-mix(in srgb,var(--accent) 36%,white 64%);
+}
+html[data-theme="dark"]{
+  --sim-chart-1:color-mix(in srgb,var(--accent) 100%,black 0%);
+  --sim-chart-2:color-mix(in srgb,var(--accent) 82%,black 18%);
+  --sim-chart-3:color-mix(in srgb,var(--accent) 66%,black 34%);
+  --sim-chart-4:color-mix(in srgb,var(--accent) 52%,black 48%);
+  --sim-chart-5:color-mix(in srgb,var(--accent) 38%,black 62%);
+}
+html[data-theme="leila-mood"]{
+  --sim-chart-1:color-mix(in srgb,var(--accent) 100%,white 0%);
+  --sim-chart-2:color-mix(in srgb,var(--accent) 84%,white 16%);
+  --sim-chart-3:color-mix(in srgb,var(--accent) 68%,white 32%);
+  --sim-chart-4:color-mix(in srgb,var(--accent) 52%,white 48%);
+  --sim-chart-5:color-mix(in srgb,var(--accent) 38%,white 62%);
+}
+.sim-donut{
+  background:conic-gradient(
+    var(--sim-chart-1) 0 34%,
+    var(--sim-chart-2) 34% 55%,
+    var(--sim-chart-3) 55% 72%,
+    var(--sim-chart-4) 72% 84%,
+    var(--sim-chart-5) 84% 100%
+  )!important;
+}
+.sim-specialty-legend{
+  counter-reset:sim-specialty;
+}
+.sim-specialty-legend div{
+  position:relative;
+  padding-left:13px;
+}
+.sim-specialty-legend div::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:50%;
+  width:7px;
+  height:7px;
+  border-radius:999px;
+  transform:translateY(-50%);
+  background:var(--sim-chart-1);
+}
+.sim-specialty-legend div:nth-child(2)::before{background:var(--sim-chart-2)}
+.sim-specialty-legend div:nth-child(3)::before{background:var(--sim-chart-3)}
+.sim-specialty-legend div:nth-child(4)::before{background:var(--sim-chart-4)}
+.sim-specialty-legend div:nth-child(5)::before{background:var(--sim-chart-5)}
