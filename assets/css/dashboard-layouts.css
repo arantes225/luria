@@ -2604,3 +2604,27 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-acti
   font-size:24px!important;line-height:1!important;font-weight:850!important;white-space:nowrap!important
  }
 }
+
+/* Dashboard 4 PWA v42 — mini cronograma em lista mobile */
+@media(max-width:760px){
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-activities{height:auto!important;max-height:none!important;overflow:hidden!important;padding:14px 12px!important}
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll{display:grid!important;grid-template-columns:1fr!important;gap:9px!important;max-height:330px!important;overflow-y:auto!important;overflow-x:hidden!important;padding:2px!important}
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-activity,
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity{
+  display:grid!important;grid-template-columns:62px 8px minmax(0,1fr)!important;gap:7px!important;align-items:center!important;width:100%!important;min-width:0!important;margin:0!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-activity-date{
+  width:auto!important;min-width:0!important;margin:0!important;text-align:right!important;font-size:9px!important;line-height:1.1!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-activity-dot{width:8px!important;height:8px!important;min-width:8px!important;margin:0!important}
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-activity-info{
+  min-width:0!important;width:100%!important;min-height:58px!important;padding:9px 42px 9px 10px!important;border-radius:12px!important;overflow:hidden!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-activity-info strong{
+  display:block!important;margin:0 0 3px!important;font-size:12px!important;line-height:1.15!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-activity-info small{
+  display:flex!important;align-items:center!important;gap:5px!important;min-width:0!important;font-size:9px!important;line-height:1.15!important;white-space:nowrap!important;overflow:hidden!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-activity-info small>*{min-width:0!important;max-width:100%!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+}
