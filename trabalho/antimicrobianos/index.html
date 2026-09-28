@@ -1,1 +1,187 @@
-<!DOCTYPE html><html lang="pt-BR"><head><base href="/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Antimicrobianos · LURIA</title><meta name="theme-color" content="#184888"><link rel="manifest" href="/manifest.webmanifest?v=5"><link rel="stylesheet" href="/assets/css/style.css?v=16.6"><link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10"><style>.clinical-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.clinical-card{padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}.clinical-card h3{margin:0 0 7px}.clinical-card p{margin:0;color:var(--muted);font-size:13px}.temp-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}.temp-form label{display:grid;gap:6px;font-size:12px;font-weight:800}.temp-form input,.temp-form select{min-height:42px;padding:0 10px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text)}.temp-actions{display:flex;gap:10px;margin-top:14px}.temp-actions button{min-height:40px;padding:0 14px;border-radius:10px;border:1px solid var(--border);font-weight:800}.primary{background:var(--accent);color:#fff;border-color:var(--accent)!important}</style></head><body data-page="trabalho_antimicrobianos"><div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div></header><section><p style="color:var(--muted)">Consulta por foco infeccioso, com integração futura ao Bulário, função renal e alergias. Conteúdo terapêutico será liberado somente após validação.</p><div class="clinical-grid"><article class="clinical-card"><h3>Foco infeccioso</h3><p>Escolha o foco para organizar opções terapêuticas.</p></article><article class="clinical-card"><h3>Alergias</h3><p>Alternativas conforme alergias documentadas.</p></article><article class="clinical-card"><h3>Função renal</h3><p>Integração com estimativa de função renal.</p></article><article class="clinical-card"><h3>Descalonamento</h3><p>Espaço para cultura, revisão e duração.</p></article></div></section></div></main></div><script src="/assets/vendor/supabase-2.110.6.js"></script><script src="/assets/js/supabase.js"></script><script src="/assets/js/app.js?v=17.16-worktools"></script><script defer src="/assets/js/pwa.js?v=3"></script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Antimicrobianos · LURIA</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
+  <style>
+    .abx-page{display:grid;gap:16px}
+    .abx-intro{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--border);border-radius:20px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 10%,var(--surface)),var(--surface))}
+    .abx-intro h2{margin:0 0 6px;font-size:1.35rem}.abx-intro p{margin:0;color:var(--muted);line-height:1.55;max-width:780px}
+    .abx-note{font-size:12px;color:var(--muted);max-width:310px;line-height:1.45}
+    .abx-tabs{display:flex;gap:8px;overflow:auto;padding-bottom:2px}.abx-tab{border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;white-space:nowrap}
+    .abx-tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+    .abx-panel{display:none}.abx-panel.active{display:grid;gap:16px}
+    .section-title{display:flex;align-items:end;justify-content:space-between;gap:12px}.section-title h2{margin:0;font-size:1.2rem}.section-title p{margin:4px 0 0;color:var(--muted);font-size:13px}
+    .concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .concept-card{padding:18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .concept-card h3{margin:0 0 8px;font-size:1rem}.concept-card p{margin:0;color:var(--muted);line-height:1.55;font-size:14px}.concept-card ul{margin:10px 0 0;padding-left:19px;color:var(--muted);font-size:13px;line-height:1.55}
+    .concept-chip{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:5px 9px;margin-bottom:10px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+    .key-box{padding:16px 18px;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));border-radius:16px;background:color-mix(in srgb,var(--accent) 7%,var(--surface));line-height:1.5}
+    .key-box strong{color:var(--accent)}
+    .quad{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.quad div{padding:12px;border:1px solid var(--border);border-radius:13px;background:var(--surface);font-weight:800;font-size:13px;text-align:center}
+    .focus-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .summary-card{padding:13px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}.summary-card span{display:block;font-size:11px;font-weight:900;text-transform:uppercase;color:var(--muted);letter-spacing:.04em}.summary-card b{display:block;margin-top:5px;font-size:14px;line-height:1.35}
+    .focus-tools{display:flex;gap:10px;flex-wrap:wrap}.focus-search{flex:1;min-width:220px;min-height:44px;padding:0 13px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text)}
+    .focus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.focus-card{border:1px solid var(--border);border-radius:17px;background:var(--surface);overflow:hidden}
+    .focus-card summary{list-style:none;display:flex;align-items:center;gap:11px;padding:15px 16px;cursor:pointer}.focus-card summary::-webkit-details-marker{display:none}.focus-card summary:after{content:"⌄";margin-left:auto;color:var(--muted);font-weight:900}.focus-card[open] summary:after{transform:rotate(180deg)}
+    .focus-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));font-size:19px}.focus-title{min-width:0}.focus-title strong{display:block}.focus-title small{display:block;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .focus-body{padding:0 16px 16px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.tag{display:inline-flex;padding:5px 8px;border-radius:8px;background:color-mix(in srgb,var(--accent) 9%,var(--surface));font-size:11px;font-weight:850}.germs{display:grid;gap:6px;margin:0;padding-left:18px;font-size:13px;line-height:1.45}.pearl{margin-top:12px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:9px;background:color-mix(in srgb,var(--accent) 7%,var(--surface));font-size:12.5px;line-height:1.45}
+    .classes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.class-card{padding:16px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}.class-card h3{margin:0 0 5px}.class-card p{margin:0 0 10px;color:var(--muted);font-size:13px;line-height:1.45}.agents{display:flex;flex-wrap:wrap;gap:6px}.agent{padding:6px 8px;border:1px solid var(--border);border-radius:9px;font-size:12px;font-weight:750}
+    .warning{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);font-size:12.5px;color:var(--muted);line-height:1.5}
+    .empty-search{display:none;padding:18px;border:1px dashed var(--border);border-radius:14px;color:var(--muted)}
+    @media(max-width:900px){.focus-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.quad{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:720px){.abx-intro{display:grid}.concept-grid,.focus-grid,.classes-grid{grid-template-columns:1fr}.focus-summary{grid-template-columns:1fr 1fr}.abx-note{max-width:none}}
+  </style>
+</head>
+<body data-page="trabalho_antimicrobianos">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+
+        <section class="abx-page">
+          <div class="abx-intro">
+            <div>
+              <h2>Entenda o germe antes de pensar no antimicrobiano</h2>
+              <p>Use o foco infeccioso para estimar os microrganismos mais prováveis e conecte esse raciocínio ao Gram, à relação com oxigênio e às classes de antimicrobianos.</p>
+            </div>
+            <div class="abx-note"><strong>Uso educacional.</strong> O foco sugere probabilidades, não identifica sozinho o agente. Cultura, antibiograma, gravidade, epidemiologia local e características do paciente podem mudar a conduta.</div>
+          </div>
+
+          <nav class="abx-tabs" aria-label="Seções de antimicrobianos">
+            <button class="abx-tab" type="button" data-tab="fundamentos" aria-selected="true">Fundamentos</button>
+            <button class="abx-tab" type="button" data-tab="focos" aria-selected="false">Focos e germes</button>
+            <button class="abx-tab" type="button" data-tab="classes" aria-selected="false">Classes</button>
+          </nav>
+
+          <div class="abx-panel active" data-panel="fundamentos">
+            <div class="section-title"><div><h2>Gram e oxigênio são classificações diferentes</h2><p>Uma descreve principalmente a parede bacteriana; a outra descreve a relação do microrganismo com o oxigênio.</p></div></div>
+            <div class="concept-grid">
+              <article class="concept-card"><span class="concept-chip">Gram</span><h3>Gram-positivas</h3><p>Possuem uma camada espessa de peptidoglicano e, na coloração de Gram, costumam aparecer roxas.</p><ul><li><i>Staphylococcus</i></li><li><i>Streptococcus</i></li><li><i>Enterococcus</i></li></ul></article>
+              <article class="concept-card"><span class="concept-chip">Gram</span><h3>Gram-negativas</h3><p>Possuem peptidoglicano mais fino e uma membrana externa adicional. Na coloração de Gram, costumam aparecer rosadas ou avermelhadas.</p><ul><li><i>Escherichia coli</i></li><li><i>Klebsiella</i></li><li><i>Pseudomonas</i></li><li><i>Neisseria</i></li></ul></article>
+              <article class="concept-card"><span class="concept-chip">Oxigênio</span><h3>Aeróbios</h3><p>Crescem utilizando oxigênio ou apresentam crescimento favorecido em sua presença. Isso é independente de serem Gram-positivos ou Gram-negativos.</p></article>
+              <article class="concept-card"><span class="concept-chip">Oxigênio</span><h3>Anaeróbios</h3><p>Conseguem crescer em ambientes com pouco ou nenhum oxigênio. São especialmente relevantes em cavidade oral, intestino, pelve, abscessos profundos e tecido necrótico.</p></article>
+            </div>
+            <div class="key-box"><strong>Resumo:</strong> Gram positivo/negativo não determina se uma bactéria é aeróbia ou anaeróbia. As duas classificações se combinam para descrever melhor o microrganismo.</div>
+            <div class="quad"><div>Gram+ aeróbio/facultativo</div><div>Gram+ anaeróbio</div><div>Gram− aeróbio/facultativo</div><div>Gram− anaeróbio</div></div>
+            <div class="key-box"><strong>Como raciocinar na prática:</strong> foco da infecção → flora habitual do local → germes mais prováveis → perfil Gram/oxigênio → cobertura que precisa ser considerada. O foco não define uma bactéria exata; ele define probabilidades.</div>
+          </div>
+
+          <div class="abx-panel" data-panel="focos">
+            <div class="section-title"><div><h2>Principais focos e germes prováveis</h2><p>Um mapa rápido para conectar anatomia, flora e microbiologia.</p></div></div>
+            <div class="focus-summary">
+              <div class="summary-card"><span>Pele</span><b>Gram+ · Staph / Strep</b></div>
+              <div class="summary-card"><span>Urina</span><b>Gram− · E. coli</b></div>
+              <div class="summary-card"><span>Abdome</span><b>Gram− + anaeróbios</b></div>
+              <div class="summary-card"><span>Boca</span><b>Gram+ + anaeróbios</b></div>
+            </div>
+            <div class="focus-tools"><input id="focus-search" class="focus-search" type="search" placeholder="Buscar foco, doença ou germe" autocomplete="off"></div>
+            <div id="focus-grid" class="focus-grid">
+              <details class="focus-card" data-search="pulmao pneumonia comunitaria pac pneumococo streptococcus pneumoniae haemophilus influenzae mycoplasma chlamydia legionella">
+                <summary><span class="focus-icon">🫁</span><span class="focus-title"><strong>Pneumonia comunitária</strong><small>Pneumococo + atípicos + alguns Gram−</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram+</span><span class="tag">Gram−</span><span class="tag">Atípicos</span></div><ul class="germs"><li><i>Streptococcus pneumoniae</i></li><li><i>Haemophilus influenzae</i></li><li><i>Mycoplasma pneumoniae</i></li><li><i>Chlamydia pneumoniae</i></li><li><i>Legionella pneumophila</i></li></ul></div>
+              </details>
+              <details class="focus-card" data-search="pulmao pneumonia hospitalar pav pseudomonas klebsiella coli acinetobacter staphylococcus mrsa">
+                <summary><span class="focus-icon">🏥</span><span class="focus-title"><strong>Pneumonia hospitalar / PAV</strong><small>Gram− resistentes + possibilidade de MRSA</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram−</span><span class="tag">Pseudomonas</span><span class="tag">± MRSA</span></div><ul class="germs"><li><i>Pseudomonas aeruginosa</i></li><li><i>Klebsiella pneumoniae</i></li><li><i>Escherichia coli</i></li><li><i>Acinetobacter baumannii</i></li><li><i>Staphylococcus aureus</i></li></ul></div>
+              </details>
+              <details class="focus-card" data-search="urina trato urinario cistite pielonefrite uti coli klebsiella proteus enterococcus saprophyticus">
+                <summary><span class="focus-icon">🚽</span><span class="focus-title"><strong>Trato urinário</strong><small>Predomínio de Gram− entéricos</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram− predominante</span></div><ul class="germs"><li><i>Escherichia coli</i> — principal</li><li><i>Klebsiella pneumoniae</i></li><li><i>Proteus mirabilis</i></li><li><i>Enterococcus</i> spp.</li><li><i>Staphylococcus saprophyticus</i> em alguns grupos</li></ul><div class="pearl"><strong>Pulo do Gato:</strong> ITU → pense primeiro em enterobactéria, principalmente <i>E. coli</i>.</div></div>
+              </details>
+              <details class="focus-card" data-search="pele partes moles celulite erisipela abscesso staphylococcus aureus streptococcus pyogenes">
+                <summary><span class="focus-icon">🩹</span><span class="focus-title"><strong>Pele e partes moles</strong><small>Predomínio de Gram+</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram+</span></div><ul class="germs"><li><i>Staphylococcus aureus</i></li><li><i>Streptococcus pyogenes</i></li></ul><div class="pearl"><strong>Pulo do Gato:</strong> pele → Staph + Strep. Abscesso lembra especialmente <i>S. aureus</i>.</div></div>
+              </details>
+              <details class="focus-card" data-search="abdome abdominal apendicite perfuracao peritonite abscesso coli klebsiella bacteroides fragilis enterococcus anaerobios">
+                <summary><span class="focus-icon">🥩</span><span class="focus-title"><strong>Intra-abdominal</strong><small>Gram− entéricos + anaeróbios</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram−</span><span class="tag">Anaeróbios</span></div><ul class="germs"><li><i>Escherichia coli</i></li><li><i>Klebsiella</i> spp.</li><li><i>Bacteroides fragilis</i></li><li><i>Enterococcus</i> em determinados cenários</li></ul><div class="pearl"><strong>Pulo do Gato:</strong> intestino perfurado → enterobactéria + anaeróbio.</div></div>
+              </details>
+              <details class="focus-card" data-search="boca odontogenica cavidade oral estreptococos prevotella fusobacterium peptostreptococcus anaerobios">
+                <summary><span class="focus-icon">🦷</span><span class="focus-title"><strong>Odontogênica / cavidade oral</strong><small>Gram+ + anaeróbios</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram+</span><span class="tag">Anaeróbios</span></div><ul class="germs"><li>Estreptococos da flora oral</li><li><i>Prevotella</i></li><li><i>Fusobacterium</i></li><li>Outros anaeróbios</li></ul></div>
+              </details>
+              <details class="focus-card" data-search="meningite pneumococo streptococcus pneumoniae neisseria meningitidis listeria monocytogenes">
+                <summary><span class="focus-icon">🧠</span><span class="focus-title"><strong>Meningite bacteriana</strong><small>O perfil muda com idade e contexto</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram+</span><span class="tag">Gram−</span></div><ul class="germs"><li><i>Streptococcus pneumoniae</i></li><li><i>Neisseria meningitidis</i></li><li><i>Listeria monocytogenes</i> em grupos de risco específicos</li></ul><div class="pearl">Idade, imunidade e contexto clínico mudam os agentes que precisam ser considerados.</div></div>
+              </details>
+              <details class="focus-card" data-search="endocardite staphylococcus aureus viridans enterococcus coagulase negativos">
+                <summary><span class="focus-icon">❤️</span><span class="focus-title"><strong>Endocardite infecciosa</strong><small>Predomínio de Gram+</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram+</span></div><ul class="germs"><li><i>Staphylococcus aureus</i></li><li>Estreptococos do grupo viridans</li><li><i>Enterococcus</i> spp.</li><li>Estafilococos coagulase-negativos em contextos específicos</li></ul></div>
+              </details>
+              <details class="focus-card" data-search="osso articulacao osteomielite artrite septica staphylococcus aureus gonorrhoeae">
+                <summary><span class="focus-icon">🦴</span><span class="focus-title"><strong>Osso e articulação</strong><small>S. aureus é referência inicial frequente</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram+ predominante</span></div><ul class="germs"><li><i>Staphylococcus aureus</i></li><li><i>Streptococcus</i> spp.</li><li><i>Neisseria gonorrhoeae</i> em contexto compatível</li></ul><div class="pearl">Prótese, trauma, idade, anemia falciforme e outros contextos podem modificar o espectro.</div></div>
+              </details>
+              <details class="focus-card" data-search="vias biliares colecistite colangite coli klebsiella enterobacter enterococcus">
+                <summary><span class="focus-icon">🟡</span><span class="focus-title"><strong>Vias biliares</strong><small>Predomínio de Gram− entéricos</small></span></summary>
+                <div class="focus-body"><div class="tags"><span class="tag">Gram− predominante</span></div><ul class="germs"><li><i>Escherichia coli</i></li><li><i>Klebsiella</i></li><li><i>Enterobacter</i></li><li><i>Enterococcus</i> em determinados casos</li></ul></div>
+              </details>
+            </div>
+            <div id="empty-search" class="empty-search">Nenhum foco encontrado para essa busca.</div>
+            <div class="warning"><strong>Atenção:</strong> internação prévia, antimicrobianos recentes, dispositivos, imunossupressão, colonização prévia e o perfil local de resistência podem mudar bastante os germes prováveis e a cobertura empírica.</div>
+          </div>
+
+          <div class="abx-panel" data-panel="classes">
+            <div class="section-title"><div><h2>Classes e principais representantes</h2><p>Organização por princípio ativo. A disponibilidade de apresentações e fabricantes pode variar no Brasil.</p></div></div>
+            <div class="classes-grid">
+              <article class="class-card"><h3>Penicilinas</h3><p>Beta-lactâmicos que atuam na síntese da parede celular.</p><div class="agents"><span class="agent">Penicilina G cristalina</span><span class="agent">Benzatina</span><span class="agent">Penicilina V</span><span class="agent">Ampicilina</span><span class="agent">Amoxicilina</span><span class="agent">Oxacilina</span><span class="agent">Piperacilina/tazobactam</span><span class="agent">Amoxicilina/clavulanato</span></div></article>
+              <article class="class-card"><h3>Cefalosporinas</h3><p>Beta-lactâmicos organizados didaticamente em gerações, com diferenças relevantes de espectro.</p><div class="agents"><span class="agent">Cefalexina</span><span class="agent">Cefazolina</span><span class="agent">Cefuroxima</span><span class="agent">Cefoxitina</span><span class="agent">Ceftriaxona</span><span class="agent">Cefotaxima</span><span class="agent">Ceftazidima</span><span class="agent">Cefepima</span><span class="agent">Ceftarolina</span></div></article>
+              <article class="class-card"><h3>Carbapenêmicos</h3><p>Beta-lactâmicos de amplo espectro.</p><div class="agents"><span class="agent">Meropenem</span><span class="agent">Imipenem/cilastatina</span><span class="agent">Ertapenem</span></div></article>
+              <article class="class-card"><h3>Macrolídeos</h3><p>Inibem síntese proteica e são importantes em diversos patógenos respiratórios e atípicos.</p><div class="agents"><span class="agent">Azitromicina</span><span class="agent">Claritromicina</span><span class="agent">Eritromicina</span></div></article>
+              <article class="class-card"><h3>Lincosamidas</h3><p>Atividade contra diversos Gram+ e anaeróbios, conforme o perfil de sensibilidade.</p><div class="agents"><span class="agent">Clindamicina</span></div></article>
+              <article class="class-card"><h3>Tetraciclinas</h3><p>Inibidores de síntese proteica com aplicações em infecções específicas e patógenos atípicos.</p><div class="agents"><span class="agent">Doxiciclina</span><span class="agent">Tetraciclina</span><span class="agent">Minociclina</span><span class="agent">Tigeciclina</span></div></article>
+              <article class="class-card"><h3>Aminoglicosídeos</h3><p>Importantes sobretudo contra Gram− aeróbios. Exigem atenção a nefrotoxicidade e ototoxicidade.</p><div class="agents"><span class="agent">Gentamicina</span><span class="agent">Amicacina</span><span class="agent">Tobramicina</span><span class="agent">Estreptomicina</span></div></article>
+              <article class="class-card"><h3>Fluoroquinolonas</h3><p>Possuem diferenças importantes de espectro e distribuição tecidual entre os representantes.</p><div class="agents"><span class="agent">Ciprofloxacino</span><span class="agent">Levofloxacino</span><span class="agent">Moxifloxacino</span><span class="agent">Norfloxacino</span></div></article>
+              <article class="class-card"><h3>Sulfonamidas</h3><p>Combinação clássica com atuação sequencial na via do folato bacteriano.</p><div class="agents"><span class="agent">Sulfametoxazol + trimetoprima</span></div></article>
+              <article class="class-card"><h3>Glicopeptídeos</h3><p>Atuam principalmente contra Gram-positivos.</p><div class="agents"><span class="agent">Vancomicina</span><span class="agent">Teicoplanina</span></div></article>
+              <article class="class-card"><h3>Oxazolidinonas e lipopeptídeos</h3><p>Opções importantes para alguns Gram+ resistentes em cenários selecionados.</p><div class="agents"><span class="agent">Linezolida</span><span class="agent">Daptomicina</span></div></article>
+              <article class="class-card"><h3>Nitroimidazólicos</h3><p>Atividade importante contra anaeróbios e alguns protozoários.</p><div class="agents"><span class="agent">Metronidazol</span><span class="agent">Tinidazol</span></div></article>
+              <article class="class-card"><h3>Urinários</h3><p>Agentes com papel particularmente relevante em infecções urinárias específicas.</p><div class="agents"><span class="agent">Nitrofurantoína</span><span class="agent">Fosfomicina</span></div></article>
+              <article class="class-card"><h3>Polimixinas</h3><p>Reservadas sobretudo para determinados Gram− multirresistentes.</p><div class="agents"><span class="agent">Polimixina B</span><span class="agent">Colistina / polimixina E</span></div></article>
+              <article class="class-card"><h3>Rifamicinas</h3><p>Importantes em esquemas específicos, incluindo micobactérias e algumas infecções associadas a biofilme.</p><div class="agents"><span class="agent">Rifampicina</span><span class="agent">Rifabutina</span></div></article>
+              <article class="class-card"><h3>Outros</h3><p>Agentes que não se encaixam tão bem nas divisões didáticas acima.</p><div class="agents"><span class="agent">Aztreonam</span><span class="agent">Cloranfenicol</span><span class="agent">Fidaxomicina</span><span class="agent">Mupirocina</span><span class="agent">Ácido fusídico</span></div></article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=17.16-worktools"></script>
+  <script>
+    (() => {
+      const tabs=[...document.querySelectorAll('.abx-tab')];
+      const panels=[...document.querySelectorAll('.abx-panel')];
+      tabs.forEach(btn=>btn.addEventListener('click',()=>{
+        const id=btn.dataset.tab;
+        tabs.forEach(x=>x.setAttribute('aria-selected',String(x===btn)));
+        panels.forEach(p=>p.classList.toggle('active',p.dataset.panel===id));
+      }));
+      const input=document.getElementById('focus-search');
+      const cards=[...document.querySelectorAll('.focus-card')];
+      const empty=document.getElementById('empty-search');
+      const norm=s=>(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+      input?.addEventListener('input',()=>{
+        const q=norm(input.value.trim()); let shown=0;
+        cards.forEach(card=>{const ok=!q||norm(card.dataset.search+' '+card.textContent).includes(q);card.hidden=!ok;if(ok)shown++;});
+        if(empty)empty.style.display=shown?'none':'block';
+      });
+    })();
+  </script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
