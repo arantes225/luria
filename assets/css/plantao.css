@@ -4605,3 +4605,48 @@ body.plantao-module-entry .plantao-standard-topbar .luria-notification-toggle{
     align-self:center!important;
   }
 }
+
+
+/* === Sala de Emergência · library switch v11 === */
+body.plantao-module-entry .plantao-primary-switch-wrap{
+  margin-bottom:10px!important;
+}
+body.plantao-module-entry .plantao-primary-switch-wrap .plantao-native-switch>a{
+  flex:1 1 0!important;
+}
+body.plantao-module-entry .plantao-library-inner-switch{
+  display:grid;
+  gap:7px;
+  margin:0 0 12px;
+  padding:10px;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:color-mix(in srgb,var(--surface) 94%,var(--accent) 6%);
+}
+body.plantao-module-entry .plantao-library-inner-switch-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:12px;
+  padding:0 2px;
+}
+body.plantao-module-entry .plantao-library-inner-switch-head>span{
+  color:var(--text);
+  font-size:11px;
+  font-weight:900;
+}
+body.plantao-module-entry .plantao-library-inner-switch-head>small{
+  color:var(--muted);
+  font-size:9px;
+  font-weight:700;
+}
+body.plantao-module-entry .plantao-library-inner-switch .plantao-specialty-native-switch{
+  margin:0!important;
+}
+@media(max-width:620px){
+  body.plantao-module-entry .plantao-library-inner-switch-head{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:2px;
+  }
+}
