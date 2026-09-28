@@ -2709,8 +2709,8 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
     min-height:0!important;
-    height:302px!important;
-    max-height:302px!important;
+    height:317px!important;
+    max-height:317px!important;
     padding:14px 16px!important;
     display:flex!important;
     flex-direction:column!important;
@@ -2745,8 +2745,8 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
-    height:302px!important;
-    max-height:302px!important;
+    height:317px!important;
+    max-height:317px!important;
     min-height:0!important;
     display:grid!important;
     grid-template-rows:1fr 1fr!important;
@@ -2755,7 +2755,7 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side>.dl-card{
     min-height:0!important;
-    height:145px!important;
+    height:152px!important;
     padding:13px 16px!important;
     overflow:hidden!important;
   }
@@ -2822,3 +2822,5 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
     padding-bottom:14px!important;
   }
 }
+
+/* Dashboard 1 v43 — ajuste fino de altura */
