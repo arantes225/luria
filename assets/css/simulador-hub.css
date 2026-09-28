@@ -762,3 +762,38 @@ html[data-theme="leila-mood"]{
     max-width:112px!important;
   }
 }
+
+
+/* v11 — badge de casos disponíveis com presença visual do timer */
+.sim-hub-page .sim-hero-badge{
+  min-height:52px!important;
+  min-width:128px!important;
+  padding:10px 14px!important;
+  gap:8px!important;
+  border-radius:12px!important;
+  align-items:center!important;
+}
+.sim-hub-page .sim-hero-badge strong{
+  font-size:16px!important;
+  font-weight:900!important;
+  line-height:1!important;
+  letter-spacing:-.02em!important;
+}
+.sim-hub-page .sim-hero-badge span{
+  font-size:8.5px!important;
+  font-weight:750!important;
+  line-height:1.22!important;
+}
+@media(max-width:620px){
+  .sim-hub-page .sim-hero-badge{
+    min-height:46px!important;
+    min-width:108px!important;
+    padding:8px 11px!important;
+  }
+  .sim-hub-page .sim-hero-badge strong{
+    font-size:14px!important;
+  }
+  .sim-hub-page .sim-hero-badge span{
+    font-size:7.5px!important;
+  }
+}
