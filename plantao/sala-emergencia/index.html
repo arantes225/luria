@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-emergency-reference-v2">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-emergency-library-v1">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -42,62 +42,98 @@
         <a class="plantao-module-back" href="/plantao/">← Voltar ao Simulador</a>
 
         <section id="plantao-library" class="plantao-library">
-          <header class="emergency-site-header">
-            <a class="emergency-brand" href="/dashboard/" aria-label="LURIA">
-              <img src="/assets/img/logos/logo-principal.png" alt="LURIA">
-            </a>
-            <nav class="emergency-topnav" aria-label="Navegação principal">
-              <a href="/dashboard/">⌂ <span>Início</span></a>
-              <a class="active" href="/plantao/sala-emergencia/">✚ <span>Sala de Emergência</span></a>
-              <a href="/estatisticas/">▥ <span>Meus Progressos</span></a>
-              <a href="/biblioteca/">▤ <span>Biblioteca</span></a>
-              <a href="/ajuda/">? <span>Ajuda</span></a>
-            </nav>
-            <div class="emergency-header-actions">
-              <button type="button" aria-label="Notificações">♢</button>
-              <span class="emergency-avatar">LU</span>
-            </div>
-          </header>
-
-          <section class="emergency-page-head">
-            <div class="emergency-title-wrap">
-              <span class="emergency-title-icon" aria-hidden="true">✚</span>
+          <section class="plantao-library-intro">
+            <div class="plantao-library-intro-copy">
+              <span class="plantao-intro-icon" aria-hidden="true">⌁</span>
               <div>
                 <h1>Sala de Emergência</h1>
-                <p>Escolha um caso clínico e coloque seus conhecimentos em prática.</p>
+                <p>Escolha um caso clínico e treine sua tomada de decisão em cenários de urgência e emergência.</p>
               </div>
             </div>
-            <label class="emergency-search">
+            <div class="plantao-library-search">
               <span aria-hidden="true">⌕</span>
-              <input id="plantao-case-search" type="search" placeholder="Buscar casos por condição, sintoma ou palavra-chave..." autocomplete="off" aria-label="Buscar casos clínicos">
-            </label>
+              <input id="plantao-case-search" type="search" placeholder="Buscar casos, temas ou especialidades..." autocomplete="off" aria-label="Buscar casos clínicos">
+            </div>
           </section>
 
-          <div id="plantao-specialty-chips" class="emergency-specialty-tabs" aria-label="Especialidades"></div>
+          <section class="plantao-quick-grid" aria-label="Ações rápidas">
+            <article id="plantao-resume-card" class="plantao-quick-card plantao-resume-card" hidden>
+              <div class="plantao-quick-icon" aria-hidden="true">▶</div>
+              <div class="plantao-quick-copy">
+                <span>Continuar último caso</span>
+                <strong id="plantao-resume-title">Caso em andamento</strong>
+                <small id="plantao-resume-meta">Retome de onde parou</small>
+                <div class="plantao-resume-progress"><i id="plantao-resume-progress-bar"></i></div>
+              </div>
+              <button id="plantao-resume-case" class="button primary" type="button">Continuar →</button>
+            </article>
+            <article class="plantao-quick-card plantao-random-card">
+              <div class="plantao-quick-icon" aria-hidden="true">◇</div>
+              <div class="plantao-quick-copy">
+                <span>Caso aleatório</span>
+                <strong>Surpreenda-me</strong>
+                <small>Receba um desafio de qualquer especialidade.</small>
+              </div>
+              <button id="plantao-random-case" class="button primary" type="button">Sortear caso</button>
+            </article>
+          </section>
 
+          <section class="plantao-library-metrics" aria-label="Resumo da Sala de Emergência">
+            <div><span>Casos ativos</span><strong id="plantao-case-count">—</strong></div>
+            <div><span>Casos concluídos</span><strong id="plantao-session-count">—</strong></div>
+            <div><span>Experiência</span><strong>Simulação clínica</strong></div>
+          </section>
+          <nav class="plantao-mode-menu" aria-label="Modos do Plantão">
+            <button id="plantao-emergency-mode-card" class="plantao-mode-card active" type="button" aria-current="page">
+              <span class="plantao-mode-icon" aria-hidden="true"><img class="plantao-mode-logo plantao-mode-logo-light" src="assets/img/plantao/logo-sala-emergencia-light.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-dark" src="assets/img/plantao/logo-sala-emergencia-dark.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-pink" src="assets/img/plantao/logo-sala-emergencia-pink.webp?v=2" alt=""></span>
+              <span class="plantao-mode-copy">
+                <strong>Sala de emergência</strong>
+                <small>Casos clínicos interativos</small>
+              </span>
+            </button>
+            <button id="plantao-phone-mode-card" class="plantao-mode-card" type="button" hidden>
+              <span class="plantao-mode-icon" aria-hidden="true"><img class="plantao-mode-logo plantao-mode-logo-light" src="assets/img/plantao/logo-luriazap-light.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-dark" src="assets/img/plantao/logo-luriazap-dark.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-pink" src="assets/img/plantao/logo-luriazap-pink.webp?v=2" alt=""></span>
+              <span class="plantao-mode-copy">
+                <strong>LuriaZap</strong>
+                <small>Conversas e condutas</small>
+              </span>
+            </button>
+          </nav>
           <div id="plantao-emergency-panel">
-            <section class="emergency-feature-row">
-              <article id="plantao-featured-case" class="emergency-feature-card"></article>
-              <article class="emergency-random-card">
-                <div class="emergency-random-art" aria-hidden="true">◇</div>
-                <div>
-                  <h2>Caso aleatório</h2>
-                  <p>Desafie-se com um caso surpresa da nossa biblioteca.</p>
+          <div id="plantao-emergencia" class="plantao-library-toolbar">
+            <div class="plantao-filter-row" id="plantao-emergency-filters" aria-label="Filtros dos casos">
+              <div class="plantao-site-filter">
+                <span class="plantao-filter-label">Especialidade</span>
+                <div class="plantao-site-select" data-plantao-filter="specialty">
+                  <button id="plantao-filter-specialty-button" class="plantao-site-select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                    <span id="plantao-filter-specialty-label">Todas</span><span aria-hidden="true">⌄</span>
+                  </button>
+                  <div id="plantao-filter-specialty-list" class="plantao-site-select-list" role="listbox" hidden></div>
                 </div>
-                <button id="plantao-random-case" class="button primary" type="button">⤨ Sortear caso aleatório</button>
-              </article>
-            </section>
-
-            <div class="emergency-library-title">
-              <h2>Casos disponíveis</h2>
-              <span id="plantao-visible-count">—</span>
+              </div>
+              <div class="plantao-site-filter">
+                <span class="plantao-filter-label">Dificuldade</span>
+                <div class="plantao-site-select" data-plantao-filter="difficulty">
+                  <button id="plantao-filter-difficulty-button" class="plantao-site-select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                    <span id="plantao-filter-difficulty-label">Todas</span><span aria-hidden="true">⌄</span>
+                  </button>
+                  <div id="plantao-filter-difficulty-list" class="plantao-site-select-list" role="listbox" hidden></div>
+                </div>
+              </div>
+              <button id="plantao-filter-clear" class="plantao-clear-filters" type="button">↻ Limpar filtros</button>
             </div>
-            <div id="plantao-case-grid" class="plantao-case-grid emergency-case-grid" aria-live="polite"></div>
-            <div id="plantao-empty" class="placeholder" hidden>Nenhum caso clínico disponível.</div>
+            <div id="plantao-specialty-chips" class="plantao-specialty-chips" aria-label="Especialidades"></div>
+            <div class="plantao-cases-section-head">
+              <div>
+                <span>Biblioteca clínica</span>
+                <h2>Todos os casos</h2>
+              </div>
+              <strong id="plantao-visible-count">—</strong>
+            </div>
           </div>
-
-          <span id="plantao-case-count" hidden>—</span>
-          <span id="plantao-session-count" hidden>—</span>
+          <div id="plantao-case-grid" class="plantao-case-grid" aria-live="polite"></div>
+          <div id="plantao-empty" class="placeholder" hidden>Nenhum caso clínico disponível.</div>
+          </div>
           <article id="plantao-telefone" class="plantao-phone-preview" hidden aria-labelledby="plantao-phone-title">
             <div class="plantao-phone-layout">
               <button id="plantao-phone-page-back" class="plantao-phone-page-back" type="button" aria-label="Voltar para o Plantão">← Voltar</button>
@@ -319,7 +355,7 @@
   <script src="assets/js/app.js?v=17.28-theme-switch"></script>
   <script src="assets/js/plantao-monitor.js?v=5.4"></script>
   <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
-  <script src="/assets/js/plantao.js?v=9.9-emergency-reference-v2"></script>
+  <script src="/assets/js/plantao.js?v=9.8-emergency-library-v1"></script>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
