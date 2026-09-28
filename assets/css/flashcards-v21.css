@@ -534,3 +534,159 @@ body.flash-v21-booting [data-flash-section],
 body.flash-v21-booting .flash-dashboard-overview{visibility:hidden!important;opacity:0!important}
 body:not(.flash-v21-booting) .flash-tabs,
 body:not(.flash-v21-booting) [data-flash-section]{transition:opacity .12s ease}
+
+
+/* LURIA Flashcards v30 — decks idênticos aos cadernos de Anotações / Caderno de Erros */
+.flash-section[data-flash-section="library"] .flash-ref-deck{
+  position:relative!important;
+  min-width:0!important;
+  min-height:215px!important;
+  padding:17px!important;
+  overflow:hidden!important;
+  border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;
+  border-left:5px solid var(--accent)!important;
+  border-radius:13px!important;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb,var(--accent) 4%,var(--surface)),
+      var(--surface) 58%
+    )!important;
+  box-shadow:0 9px 24px rgba(24,72,136,.06)!important;
+  color:var(--text)!important;
+  transition:
+    transform .18s ease,
+    border-color .18s ease,
+    box-shadow .18s ease!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck:hover{
+  transform:translateY(-3px)!important;
+  border-color:color-mix(in srgb,var(--accent) 72%,var(--border))!important;
+  border-left-color:var(--accent)!important;
+  box-shadow:0 14px 30px rgba(24,72,136,.12)!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck::before,
+.flash-section[data-flash-section="library"] .flash-ref-deck::after{
+  content:none!important;
+  display:none!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-top{
+  min-height:42px!important;
+  position:relative!important;
+  z-index:2!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-icon{
+  width:38px!important;
+  height:42px!important;
+  display:grid!important;
+  place-items:center!important;
+  flex:0 0 38px!important;
+  border:1.5px solid color-mix(in srgb,var(--accent) 72%,#ffffff 28%)!important;
+  border-radius:7px 11px 11px 7px!important;
+  background:var(--accent)!important;
+  color:#fff!important;
+  box-shadow:
+    inset 4px 0 rgba(255,255,255,.15),
+    0 5px 12px rgba(24,72,136,.13),
+    0 0 0 1px color-mix(in srgb,var(--accent) 18%,transparent)!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-icon svg{
+  width:21px!important;
+  height:21px!important;
+  color:#fff!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck h3{
+  margin:10px 0 5px!important;
+  color:var(--text)!important;
+  font-size:13px!important;
+  font-weight:750!important;
+  line-height:1.3!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-desc{
+  min-height:37px!important;
+  margin:0!important;
+  color:var(--muted)!important;
+  font-size:8.8px!important;
+  line-height:1.42!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-stats{
+  display:flex!important;
+  gap:24px!important;
+  margin-top:14px!important;
+  padding-top:11px!important;
+  border-top:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-stat{
+  border:0!important;
+  min-width:0!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-stat b{
+  display:block!important;
+  margin-bottom:1px!important;
+  color:var(--accent)!important;
+  font-size:13px!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-deck-stat small{
+  color:var(--muted)!important;
+  font-size:7.8px!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-progress{
+  height:4px!important;
+  margin-top:10px!important;
+  border-radius:99px!important;
+  background:var(--surface-2)!important;
+  overflow:hidden!important;
+}
+
+.flash-section[data-flash-section="library"] .flash-ref-fill{
+  height:100%!important;
+  border-radius:inherit!important;
+  background:var(--accent)!important;
+}
+
+/* mantém também os agrupadores antigos no mesmo acabamento, se aparecerem */
+.flash-section[data-flash-section="library"] .flash-notebook{
+  border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;
+  border-left:5px solid var(--accent)!important;
+  border-radius:13px!important;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%)!important;
+  box-shadow:0 9px 24px rgba(24,72,136,.06)!important;
+}
+.flash-section[data-flash-section="library"] .flash-notebook-icon{
+  border:1.5px solid color-mix(in srgb,var(--accent) 72%,#ffffff 28%)!important;
+  border-radius:7px 11px 11px 7px!important;
+  background:var(--accent)!important;
+  color:#fff!important;
+  box-shadow:
+    inset 4px 0 rgba(255,255,255,.15),
+    0 5px 12px rgba(24,72,136,.13),
+    0 0 0 1px color-mix(in srgb,var(--accent) 18%,transparent)!important;
+}
+
+@media(max-width:1180px){
+  .flash-deck-cards{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:850px){
+  .flash-deck-cards{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:560px){
+  .flash-deck-cards{
+    grid-template-columns:1fr!important;
+  }
+}
