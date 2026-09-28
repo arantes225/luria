@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-hospital-folders-v12">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-right-sidebar-v13">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -109,6 +109,8 @@
             </button>
           </nav>
           <div id="plantao-emergency-panel">
+            <div class="plantao-library-layout">
+              <section class="plantao-library-main">
           <div id="plantao-emergencia" class="plantao-library-toolbar">
             <div class="plantao-filter-row" id="plantao-emergency-filters" aria-label="Filtros dos casos">
               <div class="plantao-site-filter">
@@ -148,6 +150,65 @@
           </div>
           <div id="plantao-case-grid" class="plantao-case-grid" aria-live="polite"></div>
           <div id="plantao-empty" class="placeholder" hidden>Nenhum caso clínico disponível.</div>
+              </section>
+
+              <aside class="plantao-library-side" aria-label="Resumo do plantão">
+                <article class="plantao-side-card plantao-today-card">
+                  <div class="plantao-side-card-head">
+                    <h3>Seu plantão hoje</h3>
+                    <a href="#plantao-emergencia">Ver todos</a>
+                  </div>
+                  <div class="plantao-today-grid">
+                    <div class="plantao-today-metric">
+                      <span class="plantao-today-icon cases" aria-hidden="true">▤</span>
+                      <div><strong id="plantao-side-case-count">—</strong><small>Casos disponíveis</small></div>
+                    </div>
+                    <div class="plantao-today-metric">
+                      <span class="plantao-today-icon active" aria-hidden="true">▷</span>
+                      <div><strong id="plantao-side-active-count">—</strong><small>Em andamento</small></div>
+                    </div>
+                    <div class="plantao-today-metric">
+                      <span class="plantao-today-icon time" aria-hidden="true">◷</span>
+                      <div><strong id="plantao-side-average-time">—</strong><small>Tempo médio</small></div>
+                    </div>
+                    <div class="plantao-today-metric">
+                      <span class="plantao-today-icon rate" aria-hidden="true">▥</span>
+                      <div><strong id="plantao-side-completion-rate">—</strong><small>Taxa de conclusão</small></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="plantao-side-card plantao-difficulty-card">
+                  <h3>Distribuição por dificuldade</h3>
+                  <div class="plantao-difficulty-content">
+                    <div class="plantao-difficulty-donut" id="plantao-difficulty-donut">
+                      <div><strong id="plantao-difficulty-total">—</strong><small>casos</small></div>
+                    </div>
+                    <div class="plantao-difficulty-legend">
+                      <div><span class="dot basic"></span><span>Básico</span><strong id="plantao-diff-basic">—</strong></div>
+                      <div><span class="dot intermediate"></span><span>Intermediário</span><strong id="plantao-diff-intermediate">—</strong></div>
+                      <div><span class="dot advanced"></span><span>Avançado</span><strong id="plantao-diff-advanced">—</strong></div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="plantao-side-card plantao-next-challenge">
+                  <div class="plantao-next-illustration" aria-hidden="true">
+                    <span class="doctor doctor-a">⚕</span>
+                    <span class="doctor doctor-b">✚</span>
+                  </div>
+                  <div class="plantao-next-copy">
+                    <h3>Pronto para o próximo desafio?</h3>
+                    <p>Casos da vida real, com feedback inteligente, para você evoluir na sua prática clínica.</p>
+                  </div>
+                </article>
+
+                <article class="plantao-side-card plantao-quote-card">
+                  <span class="plantao-quote-mark" aria-hidden="true">“</span>
+                  <p>A prática deliberada em cenários realistas transforma conhecimento em confiança.</p>
+                </article>
+              </aside>
+            </div>
           </div>
           <article id="plantao-telefone" class="plantao-phone-preview" hidden aria-labelledby="plantao-phone-title">
             <div class="plantao-phone-layout">
@@ -391,7 +452,7 @@
   <script src="assets/js/app.js?v=17.28-native-shell-v9"></script>
   <script src="assets/js/plantao-monitor.js?v=5.4"></script>
   <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
-  <script src="/assets/js/plantao.js?v=9.11-hospital-folders-v12"></script>
+  <script src="/assets/js/plantao.js?v=9.12-right-sidebar-v13"></script>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
