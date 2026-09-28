@@ -421,7 +421,7 @@
     const ids=["g_bun","g_sex","g_hb","g_sbp","g_hr","g_mel","g_syn","g_liv","g_hf"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
     const bun=+$("#g_bun").value, sex=$("#g_sex").value, hb=+$("#g_hb").value, sbp=+$("#g_sbp").value;
     let n=0;
-    n += bun>=70?6:bun>=50?4:bun>=41?3:bun>=28?2:bun>=18.2?2:0;
+    n += bun>=70?6:bun>=28?4:bun>=22.4?3:bun>=18.2?2:0;
     if(sex==="m") n += hb<10?6:hb<12?3:hb<13?1:0; else n += hb<10?6:hb<12?1:0;
     n += sbp<90?3:sbp<100?2:sbp<110?1:0;
     n += +$("#g_hr").value + +$("#g_mel").value + +$("#g_syn").value + +$("#g_liv").value + +$("#g_hf").value;
