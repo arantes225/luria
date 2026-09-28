@@ -1,25 +1,61 @@
 {
   "version": 1,
-  "enabled": false,
+  "enabled": true,
   "week": "2026-W40",
   "group_count": 3,
   "strategy": "stable-user-hash",
-  "note": "Infraestrutura ativa. Pacotes só serão publicados após seleção de conteúdo aprovado.",
+  "published_at": "2026-09-28",
   "groups": [
     {
       "id": 0,
-      "flashcards": [],
-      "questions": []
+      "flashcards": [
+        {
+          "url": "/content/weekly/2026-W40/flashcards-g1-v1.json",
+          "count": 50,
+          "version": 1
+        }
+      ],
+      "questions": [
+        {
+          "url": "/content/weekly/2026-W40/questions-g1-v1.json",
+          "count": 50,
+          "version": 1
+        }
+      ]
     },
     {
       "id": 1,
-      "flashcards": [],
-      "questions": []
+      "flashcards": [
+        {
+          "url": "/content/weekly/2026-W40/flashcards-g2-v1.json",
+          "count": 50,
+          "version": 1
+        }
+      ],
+      "questions": [
+        {
+          "url": "/content/weekly/2026-W40/questions-g2-v1.json",
+          "count": 50,
+          "version": 1
+        }
+      ]
     },
     {
       "id": 2,
-      "flashcards": [],
-      "questions": []
+      "flashcards": [
+        {
+          "url": "/content/weekly/2026-W40/flashcards-g3-v1.json",
+          "count": 50,
+          "version": 1
+        }
+      ],
+      "questions": [
+        {
+          "url": "/content/weekly/2026-W40/questions-g3-v1.json",
+          "count": 50,
+          "version": 1
+        }
+      ]
     }
   ]
 }
