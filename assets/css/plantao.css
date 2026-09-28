@@ -6841,3 +6841,59 @@ body.plantao-module-entry .plantao-record-chief h3{
   -webkit-box-orient:vertical!important;
   overflow:hidden!important;
 }
+
+
+/* === Sala de Emergência · stacked papers v41 === */
+body.plantao-module-entry .plantao-record-folder{
+  position:relative!important;
+  overflow:visible!important;
+  padding-bottom:8px!important;
+}
+body.plantao-module-entry .plantao-record-folder::before,
+body.plantao-module-entry .plantao-record-folder::after{
+  content:""!important;
+  position:absolute!important;
+  pointer-events:none!important;
+  border:1px solid var(--border)!important;
+  background:var(--surface)!important;
+  border-radius:12px!important;
+  box-shadow:0 5px 14px rgba(18,48,82,.05)!important;
+}
+body.plantao-module-entry .plantao-record-folder::before{
+  z-index:0!important;
+  top:10px!important;
+  left:9px!important;
+  right:1px!important;
+  bottom:3px!important;
+  transform:rotate(1.15deg)!important;
+  opacity:.86!important;
+}
+body.plantao-module-entry .plantao-record-folder::after{
+  z-index:1!important;
+  top:6px!important;
+  left:5px!important;
+  right:5px!important;
+  bottom:7px!important;
+  transform:rotate(-.7deg)!important;
+  opacity:.94!important;
+}
+body.plantao-module-entry .plantao-record-paper{
+  z-index:2!important;
+  box-shadow:0 9px 22px rgba(18,48,82,.07)!important;
+}
+body.plantao-module-entry .plantao-case-record:hover .plantao-record-folder::before{
+  transform:rotate(1.45deg) translateY(1px)!important;
+}
+body.plantao-module-entry .plantao-case-record:hover .plantao-record-folder::after{
+  transform:rotate(-.9deg) translateY(.5px)!important;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-folder::before,
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-folder::after{
+  background:color-mix(in srgb,var(--surface) 94%,white 6%)!important;
+  border-color:color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
+}
+:root[data-theme="leila-mood"] body.plantao-module-entry .plantao-record-folder::before,
+:root[data-theme="leila-mood"] body.plantao-module-entry .plantao-record-folder::after{
+  background:color-mix(in srgb,var(--surface) 97%,var(--accent-soft) 3%)!important;
+  border-color:color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
+}
