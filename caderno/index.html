@@ -75,7 +75,23 @@
 <section class="note-side-card note-tasks-card"><div class="note-side-title"><h3>☑ Tarefas do estudo</h3><button id="notebook-task-add" type="button">＋</button></div><div id="notebook-study-tasks" class="note-study-tasks"></div><button class="note-add-row" id="notebook-task-add-row" type="button">＋ Adicionar tarefa</button></section>
 <section class="note-side-card note-links-card"><div class="note-side-title"><h3>↗ Links e referências</h3><button id="notebook-reference-add" type="button">Adicionar</button></div><div id="notebook-reference-list" class="note-reference-list"><div class="note-reference-empty">Nenhuma referência adicionada</div></div></section>
 <section class="note-side-card note-details-card"><div class="note-side-title"><h3>▣ Informações da anotação</h3></div><dl><div><dt>Nome</dt><dd id="notebook-inspector-title">—</dd></div><div><dt>Área</dt><dd id="notebook-inspector-area">—</dd></div><div><dt>Matéria</dt><dd id="notebook-inspector-subject">—</dd></div><div><dt>Palavras</dt><dd id="notebook-inspector-words">0 palavras</dd></div><div><dt>Criada em</dt><dd id="notebook-inspector-created">—</dd></div><div><dt>Última edição</dt><dd id="notebook-inspector-updated">—</dd></div></dl><span id="notebook-inspector-book" hidden>—</span><button id="notebook-inspector-edit-hidden" hidden type="button">Editar</button></section>
-</aside></div><div id="notebook-theme-picker" class="note-theme-picker" hidden><div class="note-theme-picker-card"><div class="note-theme-picker-head"><div><small>ANOTAÇÕES</small><h3>Abrir outro tema</h3></div><button id="notebook-theme-picker-close" type="button">×</button></div><input id="notebook-theme-picker-search" type="search" placeholder="Pesquisar tema, aula ou área..." autocomplete="off"><div id="notebook-theme-picker-list" class="note-theme-picker-list"></div></div></div>
+</aside></div><div id="notebook-task-modal" class="notebook-modal-backdrop" hidden>
+  <section class="notebook-modal notebook-task-modal" role="dialog" aria-modal="true" aria-labelledby="notebook-task-modal-title">
+    <div class="notebook-modal-head">
+      <div><span class="badge accent">Tarefa</span><h2 id="notebook-task-modal-title">Adicionar tarefa</h2></div>
+      <button id="notebook-task-modal-close" class="notebook-modal-close" type="button" aria-label="Fechar">×</button>
+    </div>
+    <label class="notebook-modal-field">
+      <span>Nova tarefa de estudo</span>
+      <input id="notebook-task-modal-input" type="text" maxlength="160" placeholder="Ex.: Revisar insuficiência cardíaca" autocomplete="off">
+    </label>
+    <div class="notebook-modal-actions">
+      <button id="notebook-task-modal-cancel" class="button secondary" type="button">Cancelar</button>
+      <button id="notebook-task-modal-save" class="button primary" type="button">Adicionar tarefa</button>
+    </div>
+  </section>
+</div>
+<div id="notebook-theme-picker" class="note-theme-picker" hidden><div class="note-theme-picker-card"><div class="note-theme-picker-head"><div><small>ANOTAÇÕES</small><h3>Abrir outro tema</h3></div><button id="notebook-theme-picker-close" type="button">×</button></div><input id="notebook-theme-picker-search" type="search" placeholder="Pesquisar tema, aula ou área..." autocomplete="off"><div id="notebook-theme-picker-list" class="note-theme-picker-list"></div></div></div>
 </div></section>
 
 <section
