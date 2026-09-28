@@ -246,6 +246,300 @@
       .pm-detail-metrics{grid-template-columns:repeat(2,1fr)!important}
     }
 
+
+    /* Passômetro v3 — linguagem visual de Flashcards + Caderno de Erros */
+    .pm-page{
+      max-width:1280px!important;
+      gap:14px!important;
+    }
+    .pm-list{
+      gap:12px!important;
+    }
+
+    /* Cabeçalho mais limpo, no mesmo ritmo das páginas de estudo */
+    .pm-home-head{
+      min-height:44px!important;
+      padding:0!important;
+      align-items:flex-end!important;
+      border:0!important;
+      background:transparent!important;
+    }
+    .pm-home-title h2{
+      font-size:20px!important;
+      line-height:1.1!important;
+      letter-spacing:-.03em!important;
+    }
+    .pm-home-title p{
+      margin-top:4px!important;
+      font-size:9px!important;
+      color:var(--muted)!important;
+    }
+
+    /* Métricas no padrão compacto dos Flashcards */
+    .pm-overview{
+      gap:10px!important;
+    }
+    .pm-overview-card{
+      position:relative;
+      min-height:88px!important;
+      padding:12px 13px!important;
+      border-radius:10px!important;
+      background:var(--surface)!important;
+      box-shadow:none!important;
+      overflow:hidden;
+    }
+    .pm-overview-card::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:3px;
+      background:color-mix(in srgb,var(--accent) 18%,transparent);
+    }
+    .pm-overview-card.accent::after{
+      background:var(--accent);
+    }
+    .pm-overview-card span{
+      font-size:8px!important;
+      text-transform:none!important;
+      letter-spacing:0!important;
+      font-weight:800!important;
+    }
+    .pm-overview-card strong{
+      margin-top:3px!important;
+      font-size:22px!important;
+      line-height:1.05!important;
+    }
+    .pm-overview-card small{
+      margin-top:2px!important;
+      font-size:7.5px!important;
+      line-height:1.3!important;
+    }
+
+    /* Barra de biblioteca: mesma leitura visual de Caderno de Erros */
+    .pm-toolbar{
+      min-height:0!important;
+      padding:0!important;
+      gap:9px!important;
+      border:0!important;
+      border-radius:0!important;
+      background:transparent!important;
+      box-shadow:none!important;
+    }
+    .pm-search input{
+      height:42px!important;
+      padding-left:38px!important;
+      border-radius:10px!important;
+      background:var(--surface)!important;
+      font-size:10px!important;
+    }
+    .pm-search svg{
+      left:13px!important;
+      width:16px!important;
+      height:16px!important;
+    }
+    .pm-new{
+      height:42px!important;
+      min-width:112px!important;
+      border-radius:10px!important;
+      padding:0 15px!important;
+      font-size:10px!important;
+      box-shadow:none!important;
+    }
+    .pm-subbar{
+      min-height:30px!important;
+      margin:0!important;
+      padding:0 2px 5px!important;
+      border-bottom:1px solid var(--border);
+      font-size:9px!important;
+      font-weight:750;
+    }
+    #pm-count{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:22px;
+      padding:0 8px;
+      border-radius:999px;
+      background:var(--accent-soft);
+      color:var(--accent);
+      font-size:8px;
+      font-weight:850;
+    }
+
+    /* Biblioteca em cartões mais próximos de decks/erros */
+    .pm-decks{
+      grid-template-columns:repeat(3,minmax(0,1fr))!important;
+      gap:10px!important;
+    }
+    .pm-deck{
+      min-height:154px!important;
+      border-radius:12px!important;
+      background:var(--surface)!important;
+      box-shadow:none!important;
+      overflow:visible!important;
+    }
+    .pm-deck-head{
+      min-height:43px!important;
+      padding:7px 9px!important;
+      border-bottom:1px solid var(--border)!important;
+      border-radius:11px 11px 0 0!important;
+      background:var(--surface-2)!important;
+    }
+    .pm-deck-icon{
+      width:29px!important;
+      height:29px!important;
+      border-radius:8px!important;
+      background:var(--accent-soft)!important;
+      color:var(--accent)!important;
+    }
+    .pm-deck-date{
+      font-size:7.5px!important;
+    }
+    .pm-deck h3{
+      margin:11px 11px 3px!important;
+      font-size:14px!important;
+      line-height:1.2!important;
+    }
+    .pm-deck>p{
+      min-height:24px;
+      margin:0 11px 9px!important;
+      font-size:8.5px!important;
+      line-height:1.4!important;
+    }
+    .pm-meta{
+      padding:8px 9px!important;
+      gap:5px!important;
+    }
+    .pm-chip{
+      min-height:26px!important;
+      padding:4px 5px!important;
+      border:1px solid color-mix(in srgb,var(--border) 78%,transparent);
+      border-radius:7px!important;
+      background:var(--surface-2)!important;
+      font-size:7px!important;
+    }
+
+    /* Detalhe com cabeçalho e cartões no mesmo padrão de biblioteca/revisão */
+    .pm-detail-shell{
+      gap:10px!important;
+    }
+    .pm-detail-hero{
+      border-radius:12px!important;
+      box-shadow:none!important;
+    }
+    .pm-detail-head{
+      min-height:58px!important;
+      padding:9px 11px!important;
+      background:var(--surface)!important;
+    }
+    .pm-detail-title h2{
+      font-size:17px!important;
+    }
+    .pm-detail-title p{
+      font-size:8px!important;
+    }
+    .pm-detail-metrics{
+      padding:10px!important;
+      border-top:0!important;
+      background:var(--surface-2);
+    }
+    .pm-detail-metric{
+      min-height:62px;
+      display:grid;
+      align-content:center;
+      border:1px solid var(--border)!important;
+      background:var(--surface)!important;
+    }
+    .pm-patients-title{
+      min-height:36px;
+      margin:2px 0 0!important;
+      padding:0 2px 6px;
+      border-bottom:1px solid var(--border);
+    }
+    .pm-patients-title h3{
+      font-size:13px!important;
+    }
+    .pm-patient-grid{
+      gap:8px!important;
+    }
+    .pm-patient{
+      border-left-width:3px!important;
+      border-radius:11px!important;
+      box-shadow:none!important;
+    }
+    .pm-patient-top{
+      min-height:42px!important;
+      background:var(--surface)!important;
+    }
+    .pm-patient-summary{
+      padding-top:8px!important;
+    }
+
+    /* Modais/formulários: superfícies e controles iguais ao restante da LURIA */
+    .pm-dialog{
+      border-radius:16px!important;
+      box-shadow:var(--shadow)!important;
+    }
+    .pm-dialog-head{
+      padding:14px 16px!important;
+    }
+    .pm-dialog-head h2{
+      font-size:16px!important;
+    }
+    .pm-form{
+      gap:12px!important;
+      padding:15px 16px!important;
+    }
+    .pm-section{
+      padding:12px!important;
+      border-radius:11px!important;
+      background:var(--surface)!important;
+    }
+    .pm-field input,.pm-field select,.pm-field textarea,
+    .pm-subfield input,.pm-subfield select{
+      min-height:41px!important;
+      border-radius:9px!important;
+      background:var(--surface)!important;
+      font-size:11px!important;
+    }
+    .pm-field textarea{
+      min-height:82px!important;
+    }
+    .pm-toggle{
+      border-radius:9px!important;
+      background:var(--surface-2)!important;
+    }
+    .pm-toggle button{
+      height:29px!important;
+      min-width:44px!important;
+      border-radius:7px!important;
+      font-size:9px!important;
+    }
+
+    @media(max-width:1050px){
+      .pm-decks{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+    }
+    @media(max-width:700px){
+      .pm-page{gap:11px!important}
+      .pm-home-head{min-height:38px!important}
+      .pm-home-title h2{font-size:18px!important}
+      .pm-overview{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+      .pm-overview-card{min-height:78px!important}
+      .pm-toolbar{
+        grid-template-columns:minmax(0,1fr) auto!important;
+        gap:7px!important;
+      }
+      .pm-new{
+        min-width:88px!important;
+        padding:0 11px!important;
+      }
+      .pm-decks{grid-template-columns:1fr!important}
+      .pm-deck{min-height:146px!important}
+      .pm-detail-metrics{gap:6px!important}
+    }
+
   </style>
 </head>
 <body data-page="trabalho_passometro">
