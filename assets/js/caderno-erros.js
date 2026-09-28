@@ -4980,9 +4980,18 @@ async function addErrorsToTodayReview(items,label="itens"){
   renderErrorLibrary();
   await loadErrorQueue();
 }
+
+function openErrorReviewPage({mode="today",area="",name="",item=""}={}){
+  const params=new URLSearchParams();
+  params.set("mode",mode);
+  if(area)params.set("area",area);
+  if(name)params.set("name",name);
+  if(item)params.set("item",item);
+  window.location.href=`/caderno-erros/revisao/?${params.toString()}`;
+}
+
 function reviewErrorNotebook(area,name){
-  errorQueue=errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area && (i.materia||i.theme||"Geral")===name);
-  errorIndex=0; switchErrorTab("review"); renderCurrentError();
+  openErrorReviewPage({mode:"notebook",area,name});
 }
 function closeNotebookMenus(except=null){
   document.querySelectorAll("[data-error-notebook-menu]").forEach(m=>{if(m.dataset.errorNotebookMenu!==except)m.hidden=true});
@@ -5027,7 +5036,7 @@ function renderErrorLibrary() {
   }
   renderErrorHomeExtras();updateErrorBulkToolbar();
   container.querySelectorAll("[data-error-area-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const area=button.dataset.errorAreaMore;document.querySelectorAll("[data-error-area-menu]").forEach(m=>{if(m.dataset.errorAreaMenu!==area)m.hidden=true});const menu=container.querySelector(`[data-error-area-menu="${CSS.escape(area)}"]`);if(menu)menu.hidden=!menu.hidden}));
-  container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area),area));shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>{errorQueue=errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area);errorIndex=0;switchErrorTab("review");renderCurrentError()});shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||""}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
+  container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area),area));shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>openErrorReviewPage({mode:"area",area}));shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||""}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
   container.querySelectorAll("[data-error-notebook-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const key=button.dataset.errorNotebookMore;const menu=container.querySelector(`[data-error-notebook-menu="${CSS.escape(key)}"]`);const opening=menu?.hidden;closeNotebookMenus();if(menu)menu.hidden=!opening}));
   container.querySelectorAll("[data-error-notebook]").forEach(card=>{
     const [area,name]=card.dataset.errorNotebook.split("||");
@@ -5106,8 +5115,8 @@ async function loadErrorLibrary() {
 function wireErrorLibrary() {
   document.querySelectorAll("[data-error-state]").forEach(button=>button.addEventListener("click",()=>{errorHomeState=button.dataset.errorState||"all";document.querySelectorAll("[data-error-state]").forEach(b=>b.classList.toggle("active",b===button));renderErrorLibrary()}));
   document.querySelectorAll("[data-error-home-back]").forEach(button=>button.addEventListener("click",()=>switchErrorTab("library")));
-  document.getElementById("error-start-home-review")?.addEventListener("click",()=>switchErrorTab("review"));
-  document.getElementById("error-today-list")?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;const idx=errorQueue.findIndex(i=>String(i.id)===String(button.dataset.homeReviewId));if(idx>=0)errorIndex=idx;switchErrorTab("review");renderCurrentError()});
+  document.getElementById("error-start-home-review")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
+  document.getElementById("error-today-list")?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;openErrorReviewPage({mode:"today",item:button.dataset.homeReviewId})});
 
   document
     .querySelectorAll(
