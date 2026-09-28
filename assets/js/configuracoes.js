@@ -280,12 +280,46 @@ async function saveProfileSettings() {
 function wireProfileSettings() {
   wireProfilePickers();
 
-  document
-    .getElementById("save-profile")
-    .addEventListener(
-      "click",
-      saveProfileSettings
-    );
+  const button = document.getElementById("save-profile");
+  if (!button || button.dataset.profileSaveBound === "1") return;
+
+  button.dataset.profileSaveBound = "1";
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    saveProfileSettings().catch((error) => {
+      console.error("Falha inesperada ao salvar perfil:", error);
+      button.disabled = false;
+      setProfileStatus("Não foi possível salvar o perfil. Tente novamente.", "error");
+    });
+  });
+}
+
+/*
+ * Fallback resiliente: a página de Configurações possui blocos/tabs que podem ser
+ * reorganizados sem recriar o script. Se a inicialização assíncrona não chegar a
+ * wireProfileSettings(), o clique no botão continua funcionando por delegação.
+ */
+if (!document.documentElement.dataset.profileSaveDelegated) {
+  document.documentElement.dataset.profileSaveDelegated = "1";
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest?.("#save-profile");
+    if (!button || button.dataset.profileSaveBound === "1") return;
+
+    event.preventDefault();
+
+    settingsUser = settingsUser || window.docmapUser || null;
+    if (!settingsUser) {
+      setProfileStatus("Carregando sua conta...", "");
+      return;
+    }
+
+    saveProfileSettings().catch((error) => {
+      console.error("Falha inesperada ao salvar perfil:", error);
+      button.disabled = false;
+      setProfileStatus("Não foi possível salvar o perfil. Tente novamente.", "error");
+    });
+  });
 }
 
 
