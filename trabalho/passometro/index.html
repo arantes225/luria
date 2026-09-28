@@ -14,47 +14,65 @@
   <link rel="stylesheet" href="/assets/css/style.css?v=16.13-font-uniform">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <style>
-    .pm-page{display:grid;gap:16px}
-    .pm-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .pm-page{display:grid;gap:18px;max-width:1180px;margin:0 auto}
+    .pm-overview{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .pm-overview-card{min-height:92px;padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);display:grid;align-content:center;gap:5px}
+    .pm-overview-card span{color:var(--muted);font-size:9px;font-weight:850;letter-spacing:.05em;text-transform:uppercase}
+    .pm-overview-card strong{font-size:26px;line-height:1;color:var(--text)}
+    .pm-overview-card small{color:var(--muted);font-size:9px}
+    .pm-overview-card.accent{background:linear-gradient(145deg,color-mix(in srgb,var(--accent-soft) 55%,var(--surface)),var(--surface));border-color:color-mix(in srgb,var(--accent) 22%,var(--border))}
+    .pm-overview-card.accent strong{color:var(--accent)}
+    .pm-home-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+    .pm-home-title h2{margin:0;font-size:24px;letter-spacing:-.025em}
+    .pm-home-title p{margin:5px 0 0;color:var(--muted);font-size:12px}
+    .pm-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
     .pm-search{position:relative;flex:1;max-width:680px}
     .pm-search input{width:100%;height:44px;padding:0 42px 0 42px;border:1px solid var(--border);border-radius:13px;background:var(--surface);color:var(--text);font:inherit}
     .pm-search svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);stroke:var(--muted);fill:none;stroke-width:2}
     .pm-new{height:44px;padding:0 16px;border:0;border-radius:12px;background:var(--accent);color:#fff;font-weight:850;cursor:pointer;white-space:nowrap}
     .pm-new:hover{filter:brightness(.96)}
-    .pm-subbar{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:12px}
+    .pm-subbar{display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--muted);font-size:11px;margin-top:-4px;padding:0 2px}
     .pm-retention{display:flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2);color:var(--muted);font-size:11px;line-height:1.35}
     .pm-retention strong{color:var(--text)}
     .pm-retention-icon{display:grid;place-items:center;flex:0 0 28px;width:28px;height:28px;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-weight:900}
-    .pm-decks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
-    .pm-deck{position:relative;min-height:170px;padding:18px;border:1px solid var(--border);border-radius:17px;background:var(--surface);box-shadow:0 6px 20px rgba(15,23,42,.035);cursor:pointer;transition:.16s ease}
-    .pm-deck:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--accent) 38%,var(--border))}
+    .pm-decks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .pm-deck{position:relative;min-height:152px;padding:16px 17px;border:1px solid var(--border);border-radius:15px;background:var(--surface);box-shadow:0 5px 16px rgba(26,79,117,.035);cursor:pointer;transition:.16s ease;display:grid;grid-template-rows:auto 1fr auto}
+    .pm-deck:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 38%,var(--border));background:color-mix(in srgb,var(--accent) 2%,var(--surface))}
     .pm-deck-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-    .pm-deck-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-weight:900}
+    .pm-deck-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--surface-2);color:var(--accent);font-weight:900}
     .pm-deck-date{font-size:11px;color:var(--muted);font-weight:750}
-    .pm-deck h3{margin:14px 0 4px;font-size:17px;line-height:1.2}
-    .pm-deck p{margin:0;color:var(--muted);font-size:12px}
-    .pm-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
-    .pm-chip{display:inline-flex;align-items:center;min-height:25px;padding:0 9px;border-radius:999px;background:var(--surface-2);color:var(--muted);font-size:10px;font-weight:800}
+    .pm-deck h3{margin:14px 0 4px;font-size:18px;line-height:1.2;letter-spacing:-.015em}
+    .pm-deck p{margin:0;color:var(--muted);font-size:11px}
+    .pm-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:14px}
+    .pm-chip{display:grid;place-items:center;min-height:34px;padding:5px 8px;border-radius:9px;background:var(--surface-2);color:var(--muted);font-size:9px;font-weight:800;text-align:center}
     .pm-empty{grid-column:1/-1;min-height:220px;display:grid;place-items:center;text-align:center;padding:30px;border:1px dashed var(--border);border-radius:16px;background:var(--surface);color:var(--muted)}
     .pm-empty strong{display:block;color:var(--text);font-size:17px;margin-bottom:6px}
     .pm-detail[hidden],.pm-list[hidden]{display:none!important}
-    .pm-detail-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
+    .pm-detail-shell{display:grid;gap:14px}
+    .pm-detail-hero{padding:18px;border:1px solid var(--border);border-radius:16px;background:linear-gradient(145deg,color-mix(in srgb,var(--accent-soft) 50%,var(--surface)),var(--surface))}
+    .pm-detail-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:0}
     .pm-back{height:38px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-weight:800;cursor:pointer}
     .pm-detail-title{flex:1}
-    .pm-detail-title h2{margin:0 0 4px;font-size:24px}
-    .pm-detail-title p{margin:0;color:var(--muted);font-size:12px}
-    .pm-patient-grid{display:grid;gap:10px}
-    .pm-patient{position:relative;padding:14px 16px;border:1px solid var(--border);border-left-width:5px;border-radius:14px;background:var(--surface);cursor:pointer}
+    .pm-detail-title h2{margin:0 0 4px;font-size:24px;letter-spacing:-.025em}
+    .pm-detail-title p{margin:0;color:var(--muted);font-size:11px}
+    .pm-detail-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:15px}
+    .pm-detail-metric{padding:11px 12px;border:1px solid color-mix(in srgb,var(--border) 85%,transparent);border-radius:10px;background:color-mix(in srgb,var(--surface) 92%,transparent)}
+    .pm-detail-metric span{display:block;color:var(--muted);font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+    .pm-detail-metric strong{display:block;margin-top:4px;font-size:18px}
+    .pm-patients-title{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-top:4px}
+    .pm-patients-title h3{margin:0;font-size:15px}.pm-patients-title p{margin:3px 0 0;color:var(--muted);font-size:10px}
+    .pm-patient-grid{display:grid;gap:8px}
+    .pm-patient{position:relative;padding:13px 14px;border:1px solid var(--border);border-left-width:4px;border-radius:12px;background:var(--surface);cursor:pointer;transition:.15s ease}
     .pm-patient[data-priority="green"]{border-left-color:#2ca56c}
     .pm-patient[data-priority="yellow"]{border-left-color:#d6a019}
     .pm-patient[data-priority="red"]{border-left-color:#d84b4b}
     .pm-patient[data-priority="none"]{border-left-color:var(--border)}
-    .pm-patient-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .pm-patient h3{margin:0;font-size:15px}
+    .pm-patient-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:7px;border-bottom:1px solid color-mix(in srgb,var(--border) 70%,transparent)}
+    .pm-patient h3{margin:0;font-size:14px;color:var(--text)}
     .pm-patient small{color:var(--muted)}
-    .pm-patient-summary{margin-top:7px;color:var(--muted);font-size:12px;line-height:1.45}
-    .pm-patient-tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
-    .pm-tag{font-size:9px;font-weight:800;padding:4px 7px;border-radius:999px;background:var(--surface-2);color:var(--muted)}
+    .pm-patient-summary{margin-top:8px;color:var(--muted);font-size:10px;line-height:1.45}
+    .pm-patient-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:9px}
+    .pm-tag{font-size:8px;font-weight:800;padding:4px 7px;border-radius:7px;background:var(--surface-2);color:var(--muted)}
     .pm-dialog{width:min(760px,calc(100vw - 24px));max-height:min(88vh,900px);padding:0;border:1px solid var(--border);border-radius:18px;background:var(--surface);color:var(--text);box-shadow:0 24px 70px rgba(15,23,42,.22);overflow:hidden}
     .pm-dialog>form{display:flex;flex-direction:column;max-height:min(88vh,900px);min-height:0}
 
@@ -98,11 +116,13 @@
     .pm-secondary{border:1px solid var(--border);background:var(--surface);color:var(--text)}
     .pm-primary{border:1px solid var(--accent);background:var(--accent);color:#fff}
     .pm-required{color:#d84b4b}
-    @media(max-width:980px){.pm-decks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:980px){.pm-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.pm-detail-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:700px){
       .main{padding-left:12px!important;padding-right:12px!important}
       .pm-toolbar{align-items:stretch}.pm-search{max-width:none}.pm-new{padding:0 13px}
-      .pm-decks{grid-template-columns:1fr}.pm-deck{min-height:145px}
+      .pm-overview{grid-template-columns:1fr 1fr}.pm-overview-card{min-height:82px;padding:13px}.pm-overview-card strong{font-size:22px}
+      .pm-home-head{align-items:flex-start;flex-direction:column}.pm-toolbar{padding:9px}.pm-decks{grid-template-columns:1fr}.pm-deck{min-height:145px}
+      .pm-detail-hero{padding:14px}.pm-detail-metrics{grid-template-columns:1fr 1fr}
       .pm-grid-2,.pm-grid-3{grid-template-columns:1fr}
       .pm-med-row,.pm-antibiotic-row{grid-template-columns:1fr 1fr}
       .pm-med-row .pm-subfield:first-child,.pm-antibiotic-row .pm-subfield:first-child{grid-column:1/-1}
@@ -133,6 +153,15 @@
 
         <section class="pm-page">
           <div class="pm-list" id="pm-list">
+            <div class="pm-home-head">
+              <div class="pm-home-title"><h2>Passômetros</h2><p>Organize plantões, pacientes e pendências em um só lugar.</p></div>
+            </div>
+            <div class="pm-overview" id="pm-overview">
+              <article class="pm-overview-card accent"><span>Passômetros ativos</span><strong id="pm-stat-decks">0</strong><small>últimos 30 dias</small></article>
+              <article class="pm-overview-card"><span>Pacientes</span><strong id="pm-stat-patients">0</strong><small>em todos os passômetros</small></article>
+              <article class="pm-overview-card"><span>Pendências</span><strong id="pm-stat-pending">0</strong><small>marcadas para acompanhamento</small></article>
+              <article class="pm-overview-card"><span>Críticos</span><strong id="pm-stat-critical">0</strong><small>prioridade vermelha</small></article>
+            </div>
             <div class="pm-toolbar">
               <div class="pm-search">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
@@ -152,6 +181,8 @@
           </div>
 
           <div class="pm-detail" id="pm-detail" hidden>
+            <div class="pm-detail-shell">
+              <section class="pm-detail-hero">
             <div class="pm-detail-head">
               <button class="pm-back" id="pm-back" type="button">← Voltar</button>
               <div class="pm-detail-title">
@@ -160,7 +191,16 @@
               </div>
               <button class="pm-new" id="pm-add-patient" type="button">+ Paciente</button>
             </div>
-            <div class="pm-patient-grid" id="pm-patients"></div>
+            <div class="pm-detail-metrics">
+              <div class="pm-detail-metric"><span>Pacientes</span><strong id="pm-detail-patient-count">0</strong></div>
+              <div class="pm-detail-metric"><span>Pendências</span><strong id="pm-detail-pending-count">0</strong></div>
+              <div class="pm-detail-metric"><span>Antibiótico</span><strong id="pm-detail-atb-count">0</strong></div>
+              <div class="pm-detail-metric"><span>Críticos</span><strong id="pm-detail-critical-count">0</strong></div>
+            </div>
+              </section>
+              <div class="pm-patients-title"><div><h3>Pacientes do plantão</h3><p>Clique em um paciente para revisar ou editar os dados.</p></div></div>
+              <div class="pm-patient-grid" id="pm-patients"></div>
+            </div>
           </div>
         </section>
       </div>
@@ -415,6 +455,11 @@
         return !q || `${d.hospital} ${d.date} ${d.sector||""} ${patientText}`.toLowerCase().includes(q);
       }).sort((a,b)=>(b.date||"").localeCompare(a.date||"") || (b.createdAt||0)-(a.createdAt||0));
       $("#pm-count").textContent = `${decks.length} ${decks.length===1?"passômetro":"passômetros"}`;
+      const allPatients=state.decks.flatMap(d=>d.patients||[]);
+      $("#pm-stat-decks").textContent=state.decks.length;
+      $("#pm-stat-patients").textContent=allPatients.length;
+      $("#pm-stat-pending").textContent=allPatients.filter(p=>p.switches?.pending==="yes").length;
+      $("#pm-stat-critical").textContent=allPatients.filter(p=>p.priority==="red").length;
       const host=$("#pm-decks");
       if(!decks.length){
         host.innerHTML='<div class="pm-empty"><div><strong>Nenhum passômetro encontrado</strong><span>Crie um novo para começar a organizar sua passagem de plantão.</span></div></div>';
@@ -443,6 +488,11 @@
     }
     function renderPatients(){
       const d=activeDeck(); const host=$("#pm-patients"); if(!d) return;
+      const pts=d.patients||[];
+      $("#pm-detail-patient-count").textContent=pts.length;
+      $("#pm-detail-pending-count").textContent=pts.filter(p=>p.switches?.pending==="yes").length;
+      $("#pm-detail-atb-count").textContent=pts.filter(p=>p.switches?.antibiotics==="yes").length;
+      $("#pm-detail-critical-count").textContent=pts.filter(p=>p.priority==="red").length;
       if(!(d.patients||[]).length){
         host.innerHTML='<div class="pm-empty"><div><strong>Nenhum paciente adicionado</strong><span>Use “+ Paciente” para começar este passômetro.</span></div></div>';
         return;
