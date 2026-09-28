@@ -2790,14 +2790,6 @@
 
     const isIndependentReviewStage = ["blind_resolution","perplexity_initial","perplexity_reaudit","lot_perplexity_final"].includes(inferredStage);
 
-    // The database still uses the legacy technical reviewer key "Perplexity" for
-    // perplexity_initial/perplexity_reaudit. The product flow is ChatGPT-only now,
-    // so normalize only at the persistence boundary while keeping the UI/prompt
-    // semantics and review content unchanged.
-    if (["perplexity_initial","perplexity_reaudit"].includes(inferredStage) && payload.reviewer === "ChatGPT") {
-      payload = { ...payload, reviewer:"Perplexity" };
-    }
-
     const reviewList = Array.isArray(payload.reviews) ? payload.reviews : null;
     const reviewChunks = isIndependentReviewStage && reviewList?.length > 50
       ? Array.from({ length: Math.ceil(reviewList.length / 50) }, (_, index) => reviewList.slice(index * 50, (index + 1) * 50))
@@ -3797,7 +3789,7 @@
   }
 
   function questionFactoryIndependentChunkStage(stage) {
-    return ["perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
+    return ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(String(stage || ""));
   }
 
   function questionFactoryDecisionPackageStage(stage) {
@@ -3806,7 +3798,6 @@
 
   function questionFactoryPendingForStage(question, stage) {
     const currentStage = String(stage || "");
-    if (String(question?.status || "") === "ready") return false;
     if (currentStage === "blind_resolution") {
       return !(question?.blind_resolution && typeof question.blind_resolution === "object" && question.blind_resolution.quality_score != null);
     }
