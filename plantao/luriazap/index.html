@@ -28,7 +28,7 @@
     .plantao-module-back:hover{background:var(--surface-2)}
   </style>
 </head>
-<body data-page="plantao" data-plantao-entry="phone" class="plantao-module-entry">
+<body data-page="plantao" data-plantao-entry="phone" class="plantao-module-entry plantao-phone-mode">
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -69,7 +69,7 @@
               </span>
             </button>
           </nav>
-          <div id="plantao-emergency-panel">
+          <div id="plantao-emergency-panel" hidden aria-hidden="true" style="display:none">
           <div id="plantao-emergencia" class="plantao-library-head">
             <div class="plantao-library-title-row">
               <h2>Sala de emergência</h2>
@@ -105,7 +105,7 @@
           <div id="plantao-case-grid" class="plantao-case-grid" aria-live="polite"></div>
           <div id="plantao-empty" class="placeholder" hidden>Nenhum caso clínico disponível.</div>
           </div>
-          <article id="plantao-telefone" class="plantao-phone-preview" hidden aria-labelledby="plantao-phone-title">
+          <article id="plantao-telefone" class="plantao-phone-preview" aria-hidden="false" style="display:grid" aria-labelledby="plantao-phone-title">
             <div class="plantao-phone-layout">
               <button id="plantao-phone-page-back" class="plantao-phone-page-back" type="button" aria-label="Voltar para o Plantão">← Voltar</button>
               <div class="plantao-phone-station">
