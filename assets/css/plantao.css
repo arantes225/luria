@@ -5808,3 +5808,34 @@ body.plantao-module-entry .plantao-record-meta{
     font-size:7px;
   }
 }
+
+
+/* === Sala de Emergência · align plantao summary with featured v26 === */
+/* O bloco "Seu plantão hoje" nasce exatamente no mesmo eixo vertical do caso em destaque. */
+body.plantao-module-entry #plantao-library{
+  align-items:start!important;
+}
+body.plantao-module-entry .plantao-quick-grid,
+body.plantao-module-entry .plantao-library-side{
+  margin-top:0!important;
+  padding-top:0!important;
+}
+body.plantao-module-entry .plantao-library-side{
+  grid-column:2!important;
+  grid-row:1 / span 3!important;
+  align-self:start!important;
+  justify-self:stretch!important;
+  position:static!important;
+  top:auto!important;
+  transform:none!important;
+}
+body.plantao-module-entry .plantao-library-side>.plantao-side-card:first-child{
+  margin-top:0!important;
+}
+@media(max-width:940px){
+  body.plantao-module-entry .plantao-library-side{
+    grid-column:1!important;
+    grid-row:auto!important;
+    position:static!important;
+  }
+}
