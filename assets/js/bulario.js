@@ -19,7 +19,7 @@
   function calculator(formulation,index){
     const c=formulation.calculator;
     if(!c)return '';
-    return `<section class="rx-card rx-calculator" data-calculator="${esc(c.type)}" data-formulation-index="${index}"><h3>Cálculo por peso</h3><div class="rx-controls"><label>Peso (kg)<input class="rx-weight" type="number" min="0.1" max="300" step="0.1" inputmode="decimal" placeholder="Ex.: 18"></label><label>Idade (anos)<input class="rx-age" type="number" min="0" max="120" step="0.1" inputmode="decimal" placeholder="Ex.: 5"></label>${c.renal_gate?'<label>Função renal<select class="rx-renal"><option value="">Selecione</option><option value="normal">ClCr ≥ 30 mL/min</option><option value="reduced">ClCr &lt; 30 mL/min</option></select></label><label>Escolha mg/kg/dia<input class="rx-rate" type="number" min="20" max="50" step="1" value="40"></label>':''}</div><div class="rx-result" aria-live="polite">Informe os dados para calcular.</div><p class="rx-note">Cálculo restrito à apresentação acima. Confirme idade, alergias, função renal, outros medicamentos e indicação clínica.</p></section>`;
+    return `<section class="rx-card rx-calculator" data-calculator="${esc(c.type)}" data-formulation-index="${index}"><h3>Cálculo por peso</h3><div class="rx-controls"><label>Peso (kg)<input class="rx-weight" type="number" min="0.1" max="300" step="0.1" inputmode="decimal" placeholder="Ex.: 18"></label><label>Idade (anos)<input class="rx-age" type="number" min="0" max="120" step="0.1" inputmode="decimal" placeholder="Ex.: 5"></label>${c.renal_gate?'<label>Função renal<select class="rx-renal"><option value="">Selecione</option><option value="normal">≥30 mL/min conforme bula</option><option value="reduced">ClCr &lt; 30 mL/min</option></select></label><label>Escolha mg/kg/dia<input class="rx-rate" type="number" min="${c.min_mg_kg_day}" max="${c.max_mg_kg_day}" step="1" value="${c.default_mg_kg_day||c.min_mg_kg_day}"></label>':''}</div><div class="rx-result" aria-live="polite">Informe os dados para calcular.</div><p class="rx-note">Cálculo restrito à apresentação acima. Confirme idade, alergias, função renal, outros medicamentos e indicação clínica.</p></section>`;
   }
   function presentationPicker(formulations){
     if(!formulations.length)return '<p class="rx-note">Apresentações ainda não cadastradas.</p>';
@@ -61,6 +61,15 @@
       if(weight<c.min_weight_kg||weight>c.max_weight_kg){result.textContent='Peso fora da faixa configurada; avalie individualmente.';return}
       const daily=Math.min(weight*c.mg_kg_day,c.max_daily_mg);
       result.textContent=`${number(c.mg_kg_day)} mg/kg/dia × ${number(weight)} kg = ${number(daily)} mg/24 h (teto ${number(c.max_daily_mg)} mg/24 h). Confirme uma apresentação que permita medir a dose exata.`;
+    }else if(c.type==='mg_kg_combo_day'){
+      if(age<c.min_age_years||weight<c.min_weight_kg||weight>=c.max_weight_kg_exclusive){result.textContent='Fora da faixa validada para o cálculo pediátrico desta apresentação.';return}
+      const renal=el.querySelector('.rx-renal').value;
+      if(renal!=='normal'){result.textContent=renal==='reduced'?'Função renal reduzida: cálculo bloqueado. Consulte a bula.':'Informe a função renal para calcular.';return}
+      const rate=Number(el.querySelector('.rx-rate').value);
+      if(!Number.isFinite(rate)||rate<c.min_mg_kg_day||rate>c.max_mg_kg_day){result.textContent=`Escolha ${c.min_mg_kg_day}–${c.max_mg_kg_day} mg/kg/dia de amoxicilina.`;return}
+      if(age<2&&rate>c.max_under_two_years_mg_kg_day){result.textContent='Abaixo de 2 anos, não há dados para dose acima de 45 mg/kg/dia de amoxicilina nesta bula.';return}
+      const amoxDaily=weight*rate,amoxDose=amoxDaily/c.doses_per_day,ml=amoxDose/f.strength_mg_ml,clavDose=ml*f.clav_mg_ml;
+      result.textContent=`${number(ml)} mL por dose a cada 12 h: ${number(amoxDose)} mg de amoxicilina + ${number(clavDose)} mg de clavulanato. Total diário: ${number(amoxDaily)} mg + ${number(clavDose*c.doses_per_day)} mg. Confirme indicação e volume mensurável na seringa.`;
     }else if(c.type==='mg_kg_day'){
       if(weight>=c.max_weight_kg_exclusive||weight<c.min_weight_kg){result.textContent='Fora da faixa de peso pediátrica desta regra. Consulte posologia individual.';return}
       const renal=el.querySelector('.rx-renal').value;
