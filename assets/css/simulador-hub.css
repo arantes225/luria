@@ -888,3 +888,33 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-logo{
     bottom:17px!important;
   }
 }
+
+
+/* v16 — força todos os ícones da Prática Clínica a seguir o tema */
+.sim-hub-page .sim-stat-icon,
+.sim-hub-page .sim-panel-icon,
+.sim-hub-page .sim-hero-logo,
+.sim-hub-page .sim-stat-icon-completed,
+.sim-hub-page .sim-stat-icon-active,
+.sim-hub-page .sim-stat-icon-zap,
+.sim-hub-page .sim-stat-icon-performance,
+.sim-hub-page .sim-panel-icon-stats,
+.sim-hub-page .sim-panel-icon-recent{
+  color:var(--accent)!important;
+}
+.sim-hub-page .sim-stat-icon svg,
+.sim-hub-page .sim-panel-icon svg,
+.sim-hub-page .sim-hero-logo svg{
+  color:var(--accent)!important;
+  stroke:currentColor!important;
+}
+.sim-hub-page .sim-stat-icon svg *,
+.sim-hub-page .sim-panel-icon svg *,
+.sim-hub-page .sim-hero-logo svg *{
+  stroke:currentColor!important;
+}
+.sim-hub-page .sim-stat-icon,
+.sim-hub-page .sim-panel-icon{
+  background:color-mix(in srgb,var(--accent) 11%,var(--surface))!important;
+  border-color:color-mix(in srgb,var(--accent) 16%,var(--border))!important;
+}
