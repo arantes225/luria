@@ -738,7 +738,7 @@
                   <span class="plantao-record-kicker">PRONTUÁRIO DO PACIENTE</span>
                   <div class="plantao-record-patient">
                     <strong>${esc(patientName)}</strong>
-                    <span>${esc(patientAge)} · ${esc(patientSexLabel)}</span>
+                    <span class="plantao-record-patient-meta">${esc(patientAge)} · ${esc(patientSexLabel)}</span>
                   </div>
                   <div class="plantao-record-chief">
                     <span>Queixa principal</span>
