@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=24-scroll-header">
-  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.1-clean-hero">
+  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.2-history-summary">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/desafio-diario/">
@@ -139,7 +139,22 @@
                   <strong>Últimos desafios</strong>
                 </div>
                 <div id="daily-recent-list" class="daily-recent-list">
-                  <div class="daily-recent-empty">Nenhum desafio concluído ainda.</div>
+                  <div class="daily-recent-empty">Carregando desafios anteriores…</div>
+                </div>
+              </section>
+
+              <section class="daily-side-card daily-general-card">
+                <div class="daily-side-heading">
+                  <span class="daily-bars-icon">▥</span>
+                  <strong>Resumo geral</strong>
+                </div>
+                <div class="daily-general-stat">
+                  <span>Desafios feitos</span>
+                  <strong id="daily-total-done">0</strong>
+                </div>
+                <div class="daily-general-stat">
+                  <span>Média de pistas necessárias</span>
+                  <strong id="daily-average-clues">—</strong>
                 </div>
               </section>
             </aside>
@@ -152,7 +167,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.9-daily"></script>
-  <script src="/assets/js/desafio-diario.js?v=4-pistas-dashboard"></script>
+  <script src="/assets/js/desafio-diario.js?v=4.2-history-summary"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
