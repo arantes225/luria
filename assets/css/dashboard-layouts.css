@@ -3070,3 +3070,29 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
     box-shadow:none!important;
   }
 }
+
+
+/* Dashboard v50 — Pulo do Gato acompanha o tema em todos os layouts */
+body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-light{
+  display:block!important;
+}
+body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-dark,
+body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-pink{
+  display:none!important;
+}
+
+:root[data-theme="dark"] body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-light,
+:root[data-theme="dark"] body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-pink{
+  display:none!important;
+}
+:root[data-theme="dark"] body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-dark{
+  display:block!important;
+}
+
+:root[data-theme="leila-mood"] body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-light,
+:root[data-theme="leila-mood"] body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-dark{
+  display:none!important;
+}
+:root[data-theme="leila-mood"] body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-pink{
+  display:block!important;
+}
