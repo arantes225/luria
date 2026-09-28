@@ -2493,6 +2493,102 @@
     box-shadow:0 8px 22px rgba(0,0,0,.12)!important;
   }
 
+
+
+  /* Gráficos v21 — paleta por tema + tipografia maior */
+  body[data-page="cronograma"]{
+    --chart-1:var(--accent);
+    --chart-2:color-mix(in srgb,var(--accent) 82%,var(--text));
+    --chart-3:color-mix(in srgb,var(--accent) 68%,var(--surface));
+    --chart-4:color-mix(in srgb,var(--accent) 54%,var(--text));
+    --chart-5:color-mix(in srgb,var(--accent) 40%,var(--surface-2));
+  }
+
+  :root[data-theme="dark"] body[data-page="cronograma"],
+  body.theme-dark[data-page="cronograma"]{
+    --chart-1:var(--accent);
+    --chart-2:color-mix(in srgb,var(--accent) 84%,#ffffff);
+    --chart-3:color-mix(in srgb,var(--accent) 68%,#ffffff);
+    --chart-4:color-mix(in srgb,var(--accent) 56%,var(--text));
+    --chart-5:color-mix(in srgb,var(--accent) 42%,var(--surface-2));
+  }
+
+  :root[data-theme="leila-mood"] body[data-page="cronograma"],
+  :root[data-theme="pink"] body[data-page="cronograma"],
+  :root[data-theme="rosa"] body[data-page="cronograma"]{
+    --chart-1:var(--accent);
+    --chart-2:color-mix(in srgb,var(--accent) 82%,#ffd6ee);
+    --chart-3:color-mix(in srgb,var(--accent) 68%,#fff0f8);
+    --chart-4:color-mix(in srgb,var(--accent) 54%,#8b3d6b);
+    --chart-5:color-mix(in srgb,var(--accent) 42%,var(--surface-2));
+  }
+
+  body[data-page="cronograma"] .agenda-study-bar{
+    background:linear-gradient(180deg,var(--chart-2),var(--chart-1))!important;
+  }
+
+  body[data-page="cronograma"] .agenda-distribution-head strong{
+    font-size:12px!important;
+  }
+  body[data-page="cronograma"] .agenda-distribution-head span{
+    font-size:9px!important;
+  }
+  body[data-page="cronograma"] .agenda-legend-item{
+    grid-template-columns:8px 1fr auto!important;
+    gap:7px!important;
+    font-size:9px!important;
+  }
+  body[data-page="cronograma"] .agenda-legend-dot{
+    width:8px!important;
+    height:8px!important;
+  }
+  body[data-page="cronograma"] .agenda-legend-item strong{
+    font-size:9.5px!important;
+  }
+
+  body[data-page="cronograma"] .agenda-insight-title h3{
+    font-size:14px!important;
+  }
+  body[data-page="cronograma"] .agenda-study-total strong{
+    font-size:24px!important;
+  }
+  body[data-page="cronograma"] .agenda-study-total span{
+    font-size:9.5px!important;
+  }
+  body[data-page="cronograma"] .agenda-study-value{
+    font-size:8px!important;
+  }
+  body[data-page="cronograma"] .agenda-study-label{
+    font-size:8.5px!important;
+  }
+  body[data-page="cronograma"] .agenda-category-donut span{
+    font-size:12px!important;
+  }
+  body[data-page="cronograma"] .agenda-category-item{
+    grid-template-columns:8px minmax(0,1fr) auto!important;
+    gap:6px!important;
+    font-size:9px!important;
+  }
+  body[data-page="cronograma"] .agenda-category-dot{
+    width:8px!important;
+    height:8px!important;
+  }
+  body[data-page="cronograma"] .agenda-category-copy strong{
+    font-size:9px!important;
+  }
+  body[data-page="cronograma"] .agenda-category-copy span{
+    font-size:8px!important;
+  }
+  body[data-page="cronograma"] .agenda-category-pct{
+    font-size:9px!important;
+  }
+  body[data-page="cronograma"] .agenda-summary-metric strong{
+    font-size:16px!important;
+  }
+  body[data-page="cronograma"] .agenda-summary-metric span:last-child{
+    font-size:9px!important;
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
