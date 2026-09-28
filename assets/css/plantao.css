@@ -3894,3 +3894,105 @@ body[data-page="plantao"] .plantao-phone-new-chat-fab{
     box-shadow:none!important;
   }
 }
+
+
+/* v9.8 — moldura do LuriaZap mais próxima de um iPhone real */
+body.plantao-phone-mode .plantao-phone-device{
+  position:relative!important;
+  border:3px solid #101216!important;
+  border-radius:52px!important;
+  background:#0b0d10!important;
+  box-shadow:
+    0 28px 60px rgba(2,12,24,.28),
+    0 0 0 1px #5f6872,
+    0 0 0 3px #b9c0c7,
+    inset 0 0 0 1px rgba(255,255,255,.12)!important;
+  overflow:visible!important;
+}
+body.plantao-phone-mode .plantao-phone-device::before{
+  content:"";
+  position:absolute;
+  left:-7px;
+  top:116px;
+  width:4px;
+  height:54px;
+  border-radius:4px 0 0 4px;
+  background:linear-gradient(180deg,#5d6670,#c5cbd1 45%,#5e6670);
+  box-shadow:
+    0 72px 0 #7d858d,
+    0 116px 0 #7d858d;
+  z-index:3;
+}
+body.plantao-phone-mode .plantao-phone-device::after{
+  content:"";
+  position:absolute;
+  right:-7px;
+  top:152px;
+  width:4px;
+  height:86px;
+  border-radius:0 4px 4px 0;
+  background:linear-gradient(180deg,#59616a,#c8cdd2 45%,#59616a);
+  z-index:3;
+}
+body.plantao-phone-mode .plantao-phone-screen{
+  position:relative!important;
+  border-radius:48px!important;
+  overflow:hidden!important;
+  background:var(--surface)!important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.07),
+    inset 0 0 0 2px #050608!important;
+}
+body.plantao-phone-mode .plantao-phone-notch{
+  top:15px!important;
+  width:112px!important;
+  height:31px!important;
+  border-radius:999px!important;
+  background:#020203!important;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.035),
+    0 1px 2px rgba(0,0,0,.7)!important;
+}
+body.plantao-phone-mode .plantao-phone-notch::before{
+  content:"";
+  position:absolute;
+  left:13px;
+  top:50%;
+  width:48px;
+  height:5px;
+  transform:translateY(-50%);
+  border-radius:999px;
+  background:#06080b;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.02);
+}
+body.plantao-phone-mode .plantao-phone-notch::after{
+  right:12px!important;
+  width:8px!important;
+  height:8px!important;
+  background:radial-gradient(circle at 35% 35%,#1e4d75 0 18%,#08131d 38%,#010203 75%)!important;
+  box-shadow:0 0 2px rgba(65,139,199,.45)!important;
+}
+body.plantao-phone-mode .plantao-phone-statusbar{
+  top:16px!important;
+  left:29px!important;
+  right:27px!important;
+  height:30px!important;
+  padding:0!important;
+  font-size:12px!important;
+}
+@media(max-width:680px){
+  body.plantao-phone-mode .plantao-phone-device{
+    border:0!important;
+    border-radius:0!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+  }
+  body.plantao-phone-mode .plantao-phone-device::before,
+  body.plantao-phone-mode .plantao-phone-device::after{
+    display:none!important;
+  }
+  body.plantao-phone-mode .plantao-phone-screen{
+    border-radius:0!important;
+    box-shadow:none!important;
+  }
+}
