@@ -1,5 +1,6 @@
-const errorSb =
-  window.supabaseClient;
+let errorSb =
+  window.supabaseClient
+  || null;
 
 
 let errorUser =
@@ -5483,6 +5484,18 @@ async function initErrorNotebook() {
   errorUser =
     window.docmapUser;
 
+  errorSb = window.supabaseClient || errorSb;
+  if (!errorSb) {
+    setErrorLibraryStatus("Conexão com o banco ainda não está pronta. Tentando novamente...","error");
+    setTimeout(initErrorNotebook,250);
+    return;
+  }
+
+  if (document.documentElement.dataset.errorNotebookInitialized === "1") {
+    await Promise.all([loadErrorMetrics(),loadErrorAreas(),loadErrorLibrary(),loadErrorQueue()]);
+    return;
+  }
+  document.documentElement.dataset.errorNotebookInitialized = "1";
 
   wireNewError();
 
@@ -5503,19 +5516,21 @@ async function initErrorNotebook() {
 }
 
 
-if (
-  window.docmapUser
-) {
+if (window.docmapUser) {
   initErrorNotebook();
-
-
 } else {
-  window.addEventListener(
-    "docmap:ready",
-    initErrorNotebook,
-    {
-      once:
-        true
+  window.addEventListener("docmap:ready",initErrorNotebook,{once:true});
+  /* app.js pode disparar docmap:ready antes deste bundle terminar de executar.
+     Recupera também desse race sem depender exclusivamente do evento. */
+  let errorBootTries=0;
+  const errorBootTimer=setInterval(()=>{
+    errorBootTries+=1;
+    if(window.docmapUser){
+      clearInterval(errorBootTimer);
+      initErrorNotebook();
+    } else if(errorBootTries>=40){
+      clearInterval(errorBootTimer);
+      setErrorLibraryStatus("Não foi possível iniciar o Caderno de Erros. Reabra a página.","error");
     }
-  );
+  },250);
 }
