@@ -903,3 +903,110 @@ body[data-page="flashcards"] .review-launcher-action .button{
   background:var(--surface)!important;
   border-color:var(--border)!important;
 }
+
+
+/* v33 — reutiliza literalmente o padrão visual do Caderno de Erros */
+body[data-page="flashcards"] .review-launcher.error-review-home-actions{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:14px!important;
+  margin-top:12px!important;
+  padding:16px!important;
+  border:1px solid var(--border)!important;
+  border-radius:14px!important;
+  background:var(--surface)!important;
+  box-shadow:0 8px 22px rgba(22,56,92,.04)!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher.error-review-home-actions .review-launcher-copy{
+  display:block!important;
+  width:auto!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher.error-review-home-actions .review-launcher-copy .eyebrow{
+  display:none!important;
+}
+
+body[data-page="flashcards"] .review-launcher.error-review-home-actions h3{
+  margin:0 0 4px!important;
+  font-size:13px!important;
+  letter-spacing:0!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher.error-review-home-actions p{
+  margin:0!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher.error-review-home-actions .review-launcher-action.error-review-home-buttons{
+  display:flex!important;
+  width:auto!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:8px!important;
+  flex:0 0 auto!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher.error-review-home-actions .review-launcher-action strong{
+  font-size:9px!important;
+  color:var(--muted)!important;
+  font-weight:800!important;
+}
+
+body[data-page="flashcards"] .flash-review-dashboard.error-review-home-dashboard{
+  display:grid!important;
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+  gap:10px!important;
+  margin:12px 0 24px!important;
+}
+
+body[data-page="flashcards"] .flash-review-dashboard.error-review-home-dashboard>.error-review-home-metric{
+  padding:16px!important;
+  border:1.5px solid color-mix(in srgb,var(--accent) 38%,var(--border))!important;
+  border-radius:14px!important;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface))!important;
+  box-shadow:0 8px 22px rgba(24,72,136,.045)!important;
+}
+
+body[data-page="flashcards"] .flash-review-dashboard.error-review-home-dashboard>.error-review-home-metric b{
+  display:block!important;
+  margin:6px 0 2px!important;
+  color:var(--accent)!important;
+  font-size:24px!important;
+  line-height:1!important;
+}
+
+body[data-page="flashcards"] .flash-review-dashboard.error-review-home-dashboard>.error-review-home-metric span{
+  display:block!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  font-weight:800!important;
+  text-transform:uppercase!important;
+  letter-spacing:.04em!important;
+}
+
+@media(max-width:900px){
+  body[data-page="flashcards"] .flash-review-dashboard.error-review-home-dashboard{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:700px){
+  body[data-page="flashcards"] .review-launcher.error-review-home-actions{
+    align-items:stretch!important;
+    flex-direction:column!important;
+  }
+  body[data-page="flashcards"] .review-launcher.error-review-home-actions .review-launcher-action.error-review-home-buttons{
+    width:100%!important;
+    flex-wrap:wrap!important;
+  }
+  body[data-page="flashcards"] .flash-review-dashboard.error-review-home-dashboard{
+    grid-template-columns:1fr!important;
+  }
+}
