@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=24-scroll-header">
-  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.8-dashboard-icons">
+  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.9-summary-order">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/desafio-diario/">
@@ -128,16 +128,6 @@
                 </div>
               </section>
 
-              <section class="daily-side-card daily-recent-card">
-                <div class="daily-side-heading">
-                  <span class="daily-section-icon"><svg class="luria-ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg></span>
-                  <strong>Últimos desafios</strong>
-                </div>
-                <div id="daily-recent-list" class="daily-recent-list">
-                  <div class="daily-recent-empty">Carregando desafios anteriores…</div>
-                </div>
-              </section>
-
               <section class="daily-side-card daily-general-card">
                 <div class="daily-side-heading">
                   <span class="daily-section-icon"><svg class="luria-ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="7" rx="1.5"/><rect x="14" y="4" width="7" height="7" rx="1.5"/><rect x="3" y="15" width="7" height="5" rx="1.5"/><rect x="14" y="15" width="7" height="5" rx="1.5"/></svg></span>
@@ -152,6 +142,16 @@
                   <strong id="daily-average-clues">—</strong>
                 </div>
               </section>
+
+              <section class="daily-side-card daily-recent-card">
+                <div class="daily-side-heading">
+                  <span class="daily-section-icon"><svg class="luria-ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg></span>
+                  <strong>Últimos desafios</strong>
+                </div>
+                <div id="daily-recent-list" class="daily-recent-list">
+                  <div class="daily-recent-empty">Carregando desafios anteriores…</div>
+                </div>
+              </section>
             </aside>
           </div>
         </section>
@@ -162,7 +162,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.9-daily"></script>
-  <script src="/assets/js/desafio-diario.js?v=4.6-card-meta"></script>
+  <script src="/assets/js/desafio-diario.js?v=4.7-recent-clean"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
