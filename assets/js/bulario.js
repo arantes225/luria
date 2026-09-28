@@ -13,8 +13,7 @@
     const matches=rows.filter(row=>[row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(value=>String(value||'').toLocaleLowerCase('pt-BR').includes(term)));
     matches.sort((a,b)=>status(b)-status(a)||a.name.localeCompare(b.name,'pt-BR'));
     count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}`;
-    list.innerHTML=matches.slice(0,80).map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${row.id===selected}"><strong>${esc(row.name)}</strong><small>${esc(row.active_ingredient||'Princípio ativo a confirmar')}${status(row)===2?` · ${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}`:status(row)===1?' · Resumo da bula':''}</small></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
-    if(matches.length>80)list.insertAdjacentHTML('beforeend','<p class="rx-note">Mostrando os primeiros 80. Refine a busca para ver os demais.</p>');
+    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${row.id===selected}"><strong>${esc(row.name)}</strong><small>${esc(row.active_ingredient||'Princípio ativo a confirmar')}${status(row)===2?` · ${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}`:status(row)===1?' · Resumo da bula':''}</small></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
   }
   function calculator(formulation,index){
     const c=formulation.calculator;
