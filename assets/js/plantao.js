@@ -383,6 +383,8 @@
   }
 
   function caseMateria(item){
+    const explicitSubarea=String(item?.presentation?.subarea||item?.debrief?.subarea||"").trim();
+    if(explicitSubarea) return explicitSubarea;
     const text=normalizeLabel([item.title,item.summary,item.presentation?.chief_complaint].filter(Boolean).join(" "));
     const area=String(item.specialty||"");
 
@@ -600,8 +602,7 @@
         {label:"Clínica Médica",value:"Clínica Médica",icon:"♧"},
         {label:"Cirurgia",value:"Cirurgia Geral",icon:"◒"},
         {label:"Pediatria",value:"Pediatria",icon:"♙"},
-        {label:"GO",value:"Ginecologia e Obstetrícia",icon:"♀"},
-        {label:"Neurologia",value:"Neurologia",icon:"◉"}
+        {label:"GO",value:"Ginecologia e Obstetrícia",icon:"♀"}
       ];
       chips.innerHTML=preferred.map(tab=>`
         <button type="button" class="plantao-specialty-chip${tab.value===specialty?" active":""}" data-specialty-chip="${esc(tab.value)}">
