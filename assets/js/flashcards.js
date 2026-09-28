@@ -726,6 +726,12 @@ async function loadMetrics() {
   }
 }
 
+const FLASH_IMAGE_SIGNED_URL_CACHE_MS =
+  50 * 60 * 1000;
+
+const flashImageSignedUrlCache =
+  new Map();
+
 async function signedFlashImage(path) {
   if (!path) {
     return null;
@@ -735,13 +741,27 @@ async function signedFlashImage(path) {
     return path;
   }
 
+  const key =
+    String(path).trim();
+
+  const cached =
+    flashImageSignedUrlCache.get(key);
+
+  if (
+    cached
+    && cached.expiresAt > Date.now()
+  ) {
+    return cached.url;
+  }
+
   const {
     data,
     error
-  } = await window.LuriaStorage.createSignedUrl("flashcard_images",
-      path,
-      60 * 60
-    );
+  } = await window.LuriaStorage.createSignedUrl(
+    "flashcard_images",
+    key,
+    60 * 60
+  );
 
   if (error) {
     console.warn(
@@ -752,7 +772,22 @@ async function signedFlashImage(path) {
     return null;
   }
 
-  return data?.signedUrl || null;
+  const url =
+    data?.signedUrl || null;
+
+  if (url) {
+    flashImageSignedUrlCache.set(
+      key,
+      {
+        url,
+        expiresAt:
+          Date.now()
+          + FLASH_IMAGE_SIGNED_URL_CACHE_MS
+      }
+    );
+  }
+
+  return url;
 }
 
 async function setReviewImage(
