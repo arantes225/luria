@@ -124,3 +124,5 @@
 .daily-recent-status.is-pending{background:var(--primary,#184888)}
 .daily-recent-status.is-won{background:#1d9a61}
 .daily-recent-status.is-lost{background:#d85a68}
+
+.daily-step[hidden]{display:none!important}
