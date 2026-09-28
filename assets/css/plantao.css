@@ -6367,3 +6367,93 @@ body.plantao-module-entry .plantao-case-record:hover .plantao-record-paper{
     padding:0 6px!important;
   }
 }
+
+
+/* === Sala de Emergência · area-inside + chief complaint emphasis v36 === */
+/* Só dificuldade e tempo ficam fora da folha. */
+body.plantao-module-entry .plantao-record-folder-tabs{
+  justify-content:flex-end!important;
+  left:auto!important;
+  right:4px!important;
+  width:auto!important;
+  gap:5px!important;
+}
+body.plantao-module-entry .plantao-record-folder-tab{
+  display:none!important;
+}
+
+/* Área principal passa para dentro do prontuário. */
+body.plantao-module-entry .plantao-record-area{
+  display:inline-flex!important;
+  align-items:center!important;
+  width:max-content!important;
+  max-width:100%!important;
+  min-height:22px!important;
+  margin:3px 0 8px!important;
+  padding:0 8px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+  border-radius:7px!important;
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+  font-size:7.8px!important;
+  font-weight:850!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+
+/* Mais espaço e hierarquia para a queixa principal. */
+body.plantao-module-entry .plantao-record-chief{
+  display:grid!important;
+  gap:4px!important;
+  margin-top:10px!important;
+  padding:10px 0 11px!important;
+  border-top:1px solid var(--border)!important;
+  border-bottom:1px solid var(--border)!important;
+}
+body.plantao-module-entry .plantao-record-chief>span{
+  color:var(--muted)!important;
+  font-size:7.2px!important;
+  font-weight:800!important;
+  letter-spacing:.055em!important;
+  text-transform:uppercase!important;
+}
+body.plantao-module-entry .plantao-record-chief h3{
+  margin:0!important;
+  color:var(--text)!important;
+  font-size:13.2px!important;
+  line-height:1.34!important;
+  font-weight:800!important;
+  -webkit-line-clamp:5!important;
+}
+body.plantao-module-entry .plantao-record-paper-header{
+  margin-bottom:12px!important;
+  padding-bottom:0!important;
+}
+
+/* Tipografia do prontuário alinhada aos tokens globais do site. */
+body.plantao-module-entry .plantao-record-kicker{
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-record-patient strong{
+  color:var(--text)!important;
+}
+body.plantao-module-entry .plantao-record-patient span{
+  color:var(--muted)!important;
+}
+body.plantao-module-entry .plantao-record-line strong{
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-record-line span{
+  color:var(--text)!important;
+}
+body.plantao-module-entry .plantao-record-summary span{
+  color:var(--muted)!important;
+}
+
+/* Um pouco mais de altura para a nova hierarquia sem voltar ao card excessivamente alto. */
+body.plantao-module-entry .plantao-record-paper{
+  padding-top:16px!important;
+  padding-bottom:14px!important;
+}
