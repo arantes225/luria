@@ -5504,3 +5504,102 @@ body.plantao-module-entry .plantao-record-photo img{
   transform:scale(1.34)!important;
   transform-origin:center 18%!important;
 }
+
+
+/* === Sala de Emergência · featured/sidebar alignment v22 === */
+/* O topo passa a usar duas colunas: destaque à esquerda e resumo do plantão à direita. */
+body.plantao-module-entry #plantao-library{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 330px!important;
+  grid-template-rows:auto auto auto!important;
+  column-gap:18px!important;
+  row-gap:12px!important;
+  align-items:start!important;
+}
+
+/* Remove a coluna vazia que antes era ocupada por "Caso aleatório". */
+body.plantao-module-entry .plantao-quick-grid{
+  grid-column:1!important;
+  grid-row:1!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr)!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+body.plantao-module-entry .plantao-quick-grid .plantao-featured-case{
+  width:100%!important;
+}
+
+/* Switch fica exatamente limitado à largura do card de destaque. */
+body.plantao-module-entry .plantao-primary-switch-wrap{
+  grid-column:1!important;
+  grid-row:2!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+body.plantao-module-entry .plantao-primary-switch-wrap .plantao-native-switch{
+  width:100%!important;
+  max-width:100%!important;
+}
+
+/* Faz os wrappers intermediários deixarem main e sidebar participarem do grid superior. */
+body.plantao-module-entry #plantao-emergency-panel,
+body.plantao-module-entry .plantao-library-layout{
+  display:contents!important;
+}
+body.plantao-module-entry .plantao-library-main{
+  grid-column:1!important;
+  grid-row:3!important;
+  min-width:0!important;
+}
+
+/* Sidebar começa na mesma linha/altura do caso em destaque. */
+body.plantao-module-entry .plantao-library-side{
+  grid-column:2!important;
+  grid-row:1 / span 3!important;
+  align-self:start!important;
+  margin:0!important;
+  position:sticky!important;
+  top:88px!important;
+}
+
+/* Elementos ocultos não interferem no grid. */
+body.plantao-module-entry .plantao-library-metrics,
+body.plantao-module-entry .plantao-mode-menu{
+  display:none!important;
+}
+
+@media(max-width:1180px){
+  body.plantao-module-entry #plantao-library{
+    grid-template-columns:minmax(0,1fr) 290px!important;
+  }
+}
+
+@media(max-width:940px){
+  body.plantao-module-entry #plantao-library{
+    grid-template-columns:1fr!important;
+    grid-template-rows:auto!important;
+  }
+  body.plantao-module-entry .plantao-quick-grid{
+    grid-column:1!important;
+    grid-row:auto!important;
+  }
+  body.plantao-module-entry .plantao-primary-switch-wrap{
+    grid-column:1!important;
+    grid-row:auto!important;
+  }
+  body.plantao-module-entry .plantao-library-main{
+    grid-column:1!important;
+    grid-row:auto!important;
+  }
+  body.plantao-module-entry .plantao-library-side{
+    grid-column:1!important;
+    grid-row:auto!important;
+    position:static!important;
+    margin-top:4px!important;
+  }
+}
