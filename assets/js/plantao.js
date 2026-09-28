@@ -269,7 +269,7 @@
     const phoneModeCard = $("plantao-phone-mode-card");
     const phoneSection = $("plantao-telefone");
     if (phoneModeCard) phoneModeCard.hidden = !phoneAllowed;
-    if (phoneSection) phoneSection.hidden = true;
+    if (phoneSection && ENTRY_MODE!=="phone") phoneSection.hidden = true;
 
     if(phoneAllowed){
       const phoneCasesRes=await sb.from("interconsultation_cases")
