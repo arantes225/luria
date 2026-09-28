@@ -596,7 +596,14 @@
 
             <div class="plantao-record-paper">
               <div class="plantao-record-paper-header">
-                <div class="plantao-record-avatar" aria-hidden="true"></div>
+                <div class="plantao-record-photo">
+                  <img
+                    src="${plantaoReferenceImage(item,index+1)}"
+                    alt="${esc(title)}"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </div>
 
                 <div class="plantao-record-title-wrap">
                   <span class="plantao-record-kicker">PRONTUÁRIO DO PACIENTE</span>
