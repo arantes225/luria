@@ -1805,3 +1805,29 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
 /* v16.3 — logo Pulo do Gato +40% */
 .error-cat-logo img{max-width:147px!important;max-height:134px!important}
 @media(max-width:700px){.error-cat-logo img{max-width:101px!important;max-height:104px!important}}
+
+
+/* v16.6 — menu dos três pontos contido no próprio caderno */
+.error-notebook-card{
+  overflow:hidden!important;
+  isolation:isolate;
+}
+.error-notebook-card:has(.error-notebook-menu:not([hidden])){
+  z-index:5;
+}
+.error-notebook-menu{
+  left:8px!important;
+  right:8px!important;
+  top:43px!important;
+  bottom:8px!important;
+  width:auto!important;
+  min-width:0!important;
+  max-height:none!important;
+  overflow-y:auto!important;
+  overscroll-behavior:contain;
+  z-index:40!important;
+  box-sizing:border-box;
+}
+.error-notebook-menu button{
+  width:100%!important;
+}
