@@ -4264,3 +4264,123 @@
     min-height: 44px !important;
   }
 }
+
+
+/* Cronograma PWA v27 — corrige sobreposição do grid no iOS */
+@media (max-width:760px){
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:12px!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.planner-panel,
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.agenda-insights-side,
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.agenda-bottom-grid{
+    grid-column:auto!important;
+    grid-row:auto!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    align-self:stretch!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.planner-panel{order:1!important}
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.agenda-insights-side{
+    order:2!important;
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+    position:static!important;
+    inset:auto!important;
+    transform:none!important;
+  }
+  html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.agenda-bottom-grid{
+    order:3!important;
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .agenda-insight-card{
+    position:relative!important;
+    inset:auto!important;
+    transform:none!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .week-planner{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .week-matrix{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .week-matrix-grid{
+    width:max-content!important;
+    min-width:720px!important;
+    max-width:none!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .month-planner{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    overflow-x:auto!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .planner-panel{
+    overflow:hidden!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .planner-header,
+  html.pwa-standalone body[data-page="cronograma"] .planner-header-left,
+  html.pwa-standalone body[data-page="cronograma"] .planner-tools{
+    min-width:0!important;
+    max-width:100%!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .planner-tools{
+    width:100%!important;
+    display:grid!important;
+    grid-template-columns:auto minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:8px!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .planner-view-toggle{
+    width:100%!important;
+    max-width:100%!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    overflow:hidden!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .planner-view-toggle button{
+    min-width:0!important;
+    width:100%!important;
+  }
+
+  html.pwa-standalone body[data-page="cronograma"] .agenda-study-time-card,
+  html.pwa-standalone body[data-page="cronograma"] .agenda-category-card{
+    min-height:0!important;
+  }
+}
