@@ -740,11 +740,12 @@
                     <strong>${esc(patientName)}</strong>
                     <span class="plantao-record-patient-meta">${esc(patientAge)} · ${esc(patientSexLabel)}</span>
                   </div>
-                  <div class="plantao-record-chief">
-                    <span>Queixa principal</span>
-                    <h3>${esc(title)}</h3>
-                  </div>
                 </div>
+              </div>
+
+              <div class="plantao-record-chief">
+                <span>Queixa principal</span>
+                <h3>${esc(title)}</h3>
               </div>
 
               <div class="plantao-record-lines">
