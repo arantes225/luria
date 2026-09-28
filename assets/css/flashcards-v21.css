@@ -690,3 +690,146 @@ body:not(.flash-v21-booting) [data-flash-section]{transition:opacity .12s ease}
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* LURIA Flashcards v31 — revisão no mesmo tom do Caderno de Erros */
+.flash-section[data-flash-section="review"] .flash-review-panel{
+  max-width:1240px!important;
+  padding:0!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher{
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  align-items:center!important;
+  gap:18px!important;
+  min-height:118px!important;
+  padding:18px!important;
+  border:1.5px solid color-mix(in srgb,var(--accent) 38%,var(--border))!important;
+  border-radius:14px!important;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb,var(--accent) 4%,var(--surface)),
+      var(--surface)
+    )!important;
+  color:var(--text)!important;
+  box-shadow:0 8px 22px rgba(24,72,136,.045)!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher::before{
+  content:none!important;
+  display:none!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher-copy{
+  max-width:720px!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher-copy .eyebrow{
+  display:inline-flex!important;
+  width:max-content!important;
+  padding:5px 8px!important;
+  border-radius:7px!important;
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+  font-size:8px!important;
+  font-weight:850!important;
+  letter-spacing:.04em!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher h3{
+  margin:8px 0 5px!important;
+  color:var(--text)!important;
+  font-size:18px!important;
+  line-height:1.15!important;
+  font-weight:850!important;
+  letter-spacing:-.025em!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher-copy p{
+  max-width:610px!important;
+  margin:0!important;
+  color:var(--muted)!important;
+  font-size:9px!important;
+  line-height:1.45!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher-action{
+  display:grid!important;
+  justify-items:end!important;
+  align-content:center!important;
+  gap:8px!important;
+  min-width:180px!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher-action strong{
+  color:var(--accent)!important;
+  font-size:16px!important;
+  font-weight:900!important;
+  text-align:right!important;
+}
+
+.flash-section[data-flash-section="review"] #start-review-session{
+  min-height:38px!important;
+  padding:0 14px!important;
+  border-radius:9px!important;
+  font-size:9px!important;
+}
+
+.flash-section[data-flash-section="review"] .review-focus-toolbar{
+  border:1px solid color-mix(in srgb,var(--accent) 26%,var(--border))!important;
+  border-radius:12px!important;
+  background:color-mix(in srgb,var(--accent) 3%,var(--surface))!important;
+  box-shadow:0 8px 22px rgba(24,72,136,.05)!important;
+}
+
+.flash-section[data-flash-section="review"] .review-card{
+  border:1.5px solid color-mix(in srgb,var(--accent) 38%,var(--border))!important;
+  border-radius:14px!important;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb,var(--accent) 2.5%,var(--surface)),
+      var(--surface)
+    )!important;
+  box-shadow:0 10px 28px rgba(24,72,136,.055)!important;
+}
+
+.flash-section[data-flash-section="review"] .review-taxonomy span,
+.flash-section[data-flash-section="review"] .review-side-label{
+  color:var(--accent)!important;
+}
+
+.flash-section[data-flash-section="review"] .rating-button{
+  border-radius:10px!important;
+  box-shadow:none!important;
+}
+
+.flash-section[data-flash-section="review"] .review-launcher:hover{
+  border-color:color-mix(in srgb,var(--accent) 58%,var(--border))!important;
+  box-shadow:0 12px 28px rgba(24,72,136,.075)!important;
+}
+
+@media(max-width:700px){
+  .flash-section[data-flash-section="review"] .review-launcher{
+    grid-template-columns:1fr!important;
+    gap:12px!important;
+    padding:14px!important;
+  }
+  .flash-section[data-flash-section="review"] .review-launcher-action{
+    width:100%!important;
+    min-width:0!important;
+    justify-items:stretch!important;
+  }
+  .flash-section[data-flash-section="review"] .review-launcher-action strong{
+    text-align:left!important;
+  }
+}
