@@ -2217,8 +2217,14 @@
         const finalRejected = Number(flow?.reaudit_rejected_count || 0);
         const finalFailedCount = finalNeedsRevision + finalRejected;
         const finalReviewComplete = Number(flow?.reaudit_count || 0) >= Number(block?.target_size || 200);
-        const awaitingFinalDisposition = finalReviewComplete && finalFailedCount > 0;
         const nextStage = String(blockAction?.next?.next_stage || "");
+        // Nunca trate uma rodada antiga da Etapa 6 como encerramento do bloco.
+        // Se a versão atual voltou para correção/resolução cega/reauditoria, o fluxo
+        // continua normalmente e os botões da etapa atual permanecem disponíveis.
+        const awaitingFinalDisposition =
+          finalReviewComplete
+          && finalFailedCount > 0
+          && ["human_review","block_complete"].includes(nextStage);
         const independentChunkStage = ["blind_resolution","perplexity_initial","perplexity_reaudit"].includes(nextStage);
         const independentActionLabel = nextStage === "perplexity_initial"
           ? "Etapa 4 · Copiar bloco/JSON"
@@ -2235,14 +2241,10 @@
 
             ${renderQuestionFactoryOperationalFlow(batch.batch_number, n, flow, blockAction, human)}
 
-            ${finalReviewComplete && finalFailedCount > 0 ? `
+            ${awaitingFinalDisposition ? `
               <div class="admin-qf-final-choice">
-                <strong>Etapa 6 encerrada · ${finalFailedCount} questão${finalFailedCount === 1 ? "" : "ões"} pendente${finalFailedCount === 1 ? "" : "s"}</strong>
-                <small>${finalNeedsRevision} para revisar · ${finalRejected} rejeitada${finalRejected === 1 ? "" : "s"}. O bloco não volta sozinho para etapas anteriores. Escolha: corrigir estas pendências ou arquivá-las e gerar reposições.</small>
-                <div class="admin-qf-final-choice-actions">
-                  <button class="button primary" type="button" data-qf-final-fix="${Number(batch.batch_number)}:${n}">Corrigir apenas as ${finalFailedCount} pendentes</button>
-                  <button class="button secondary" type="button" data-qf-final-discard="${Number(batch.batch_number)}:${n}" data-qf-final-discard-count="${finalFailedCount}">Arquivar e repor ${finalFailedCount}</button>
-                </div>
+                <strong>Validação final pendente · ${finalFailedCount} questão${finalFailedCount === 1 ? "" : "ões"} ainda não aprovada${finalFailedCount === 1 ? "" : "s"}</strong>
+                <small>${finalNeedsRevision} para revisar · ${finalRejected} rejeitada${finalRejected === 1 ? "" : "s"}. O lote só pode avançar quando a versão atual de cada questão estiver sem pendências.</small>
               </div>
             ` : ""}
 
@@ -3161,12 +3163,13 @@
   }
 
   async function loadQuestionFactoryBlockTracker() {
-    const [trackerResult, flowResult] = await Promise.all([
+    const [fastTrackerResult, strictTrackerResult, flowResult] = await Promise.all([
       sb.rpc("admin_question_factory_fast_tracker"),
+      sb.rpc("admin_question_factory_block_tracker"),
       sb.rpc("admin_question_factory_block_flow_snapshot")
     ]);
-    if (trackerResult.error) {
-      console.warn("Não foi possível carregar o acompanhamento dos blocos:", trackerResult.error);
+    if (fastTrackerResult.error && strictTrackerResult.error) {
+      console.warn("Não foi possível carregar o acompanhamento dos blocos:", fastTrackerResult.error || strictTrackerResult.error);
       return;
     }
     if (flowResult.error) {
@@ -3175,7 +3178,37 @@
     } else {
       state.qfBlockFlow = Array.isArray(flowResult.data) ? flowResult.data : [];
     }
-    const trackerRows = trackerResult.data || [];
+
+    // O fast tracker mantém os contadores leves do dashboard, mas o estado operacional
+    // precisa vir do tracker estrito, que valida a VERSÃO ATUAL de cada questão e a ordem
+    // real do ciclo (correção -> resolução cega -> reauditoria). Isso impede uma
+    // reauditoria antiga de "encerrar" a Etapa 6 depois que a questão ganhou nova versão.
+    const fastRows = Array.isArray(fastTrackerResult.data) ? fastTrackerResult.data : [];
+    const strictRows = Array.isArray(strictTrackerResult.data) ? strictTrackerResult.data : [];
+    const strictByBlock = new Map(
+      strictRows.map(row => [
+        `${Number(row.batch_number)}:${Number(row.block_number)}`,
+        row
+      ])
+    );
+    const sourceRows = fastRows.length ? fastRows : strictRows;
+    const trackerRows = sourceRows.map(row => {
+      const strict = strictByBlock.get(
+        `${Number(row.batch_number)}:${Number(row.block_number)}`
+      );
+      if (!strict) return row;
+      return {
+        ...row,
+        next_stage: strict.next_stage,
+        next_provider: strict.next_provider,
+        phase: strict.phase,
+        strict_ready_count: strict.ready_count,
+        strict_needs_new_review_count: strict.needs_new_review_count,
+        strict_blind_seen_count: strict.blind_seen_count,
+        strict_independent_scored_count: strict.independent_scored_count
+      };
+    });
+
     renderQuestionFactoryBlockTracker(trackerRows);
     if (state.questionFactory) renderQuestionFactory(state.questionFactory);
 
