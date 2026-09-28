@@ -539,17 +539,21 @@
       const summary=item.summary || item.presentation?.opening || "Paciente aguardando avaliação na sala de emergência.";
       const diff=String(item.difficulty||"").toLowerCase();
       return `
-        <article class="plantao-case-card" data-difficulty="${esc(diff)}">
-          <div class="plantao-case-card-ref-image">
-            <img src="${plantaoReferenceImage(item,index+1)}" alt="" loading="lazy" decoding="async">
-            <span class="plantao-case-card-ref-difficulty">${esc(item.difficulty||"Intermediário")}</span>
-            <span class="plantao-case-card-ref-time">◷ 20 min</span>
+        <article class="plantao-case-card plantao-case-folder" data-difficulty="${esc(diff)}">
+          <div class="plantao-case-folder-tab">
+            <span class="plantao-case-folder-icon" aria-hidden="true">▤</span>
+            <span class="plantao-case-folder-label">Caso clínico</span>
           </div>
-          <div class="plantao-case-card-ref-body">
+          <div class="plantao-case-folder-body">
+            <div class="plantao-case-folder-meta">
+              <span class="plantao-case-chip area">${esc(item.specialty||"Clínica")}</span>
+              <span class="plantao-case-chip difficulty">${esc(item.difficulty||"Intermediário")}</span>
+              <span class="plantao-case-chip time">◷ 20 min</span>
+            </div>
             <h3>${esc(title)}</h3>
             <div class="plantao-case-card-ref-tags">
-              <span>${esc(item.specialty||"Clínica")}</span>
               <span>${esc(materia)}</span>
+              <span>${esc(item.setting||"Sala de emergência")}</span>
             </div>
             <p>${esc(summary)}</p>
             ${best==null ? "" : `<small>Melhor resultado: ${Math.round(best)}/100${attempts ? " · "+attempts+" tentativa"+(attempts===1?"":"s") : ""}</small>`}
