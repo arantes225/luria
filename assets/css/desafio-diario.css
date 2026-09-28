@@ -22,7 +22,8 @@
 .daily-card-title{display:flex;align-items:center;gap:10px;color:var(--text,#172338)}
 .daily-card-title strong{font-size:14px}
 .daily-doc-icon,.daily-target-icon,.daily-bars-icon,.daily-clock-icon{display:grid;place-items:center;color:var(--primary,#184888);font-weight:900}
-.daily-doc-icon{width:30px;height:30px;border-radius:9px;background:color-mix(in srgb,var(--primary,#184888) 8%,var(--surface,#fff))}
+.daily-doc-icon{width:34px;height:34px;border-radius:11px;background:color-mix(in srgb,var(--primary,#184888) 9%,var(--surface,#fff));border:1px solid color-mix(in srgb,var(--primary,#184888) 13%,transparent)}
+.daily-doc-icon svg{width:18px;height:18px}
 .daily-area{display:inline-flex;align-items:center;min-height:30px;padding:0 12px;border-radius:999px;background:color-mix(in srgb,var(--primary,#184888) 8%,transparent);color:var(--primary,#184888);font-size:11px;font-weight:850}
 .daily-clues{display:grid;gap:10px}
 .daily-clue-row{display:grid;grid-template-columns:118px minmax(0,1fr);gap:16px;align-items:center;position:relative}
