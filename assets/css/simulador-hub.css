@@ -63,3 +63,183 @@ html[data-theme="leila-mood"] .sim-logo-pink{display:block}
 .sim-insights-grid article>span{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-size:15px}.sim-insights-grid strong{display:block;font-size:8.5px}.sim-insights-grid p{margin:4px 0 0;font-size:7px;line-height:1.35;color:var(--muted)}.sim-insights-grid b{color:var(--accent);font-size:17px}
 @media(max-width:960px){.sim-hero-grid,.sim-dashboard-grid{grid-template-columns:1fr}.sim-stats-strip{grid-template-columns:repeat(2,1fr)}.sim-stats-strip article:nth-child(2){border-right:0}.sim-stats-strip article:nth-child(-n+2){border-bottom:1px solid var(--border)}.sim-insights-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.sim-hero-card{min-height:230px;padding:18px}.sim-hero-copy{max-width:100%;grid-template-columns:52px 1fr}.sim-hero-logo{width:52px;height:52px}.sim-hero-art{opacity:.18;width:55%}.sim-reference-button{min-width:0;width:calc(100% - 115px)}.sim-hero-badge{right:12px;bottom:17px;min-width:95px}.sim-stats-strip{grid-template-columns:1fr}.sim-stats-strip article{border-right:0;border-bottom:1px solid var(--border)!important}.sim-stats-strip article:last-child{border-bottom:0!important}.sim-chart-content{grid-template-columns:1fr}.sim-insights-grid{grid-template-columns:1fr}.sim-recent-row{grid-template-columns:70px 1fr auto}.sim-recent-meta{display:none}}
+
+
+/* v3 — cards principais alinhados à referência enviada */
+.sim-hero-card{
+  min-height:202px!important;
+  padding:28px 26px 24px!important;
+  border-radius:12px!important;
+  box-shadow:none!important;
+}
+.sim-hero-emergency{
+  background:
+    linear-gradient(90deg,rgba(11,69,124,.98) 0%,rgba(14,80,140,.97) 44%,rgba(20,89,149,.92) 62%,rgba(24,101,167,.9) 100%)!important;
+}
+.sim-hero-zap{
+  background:
+    linear-gradient(90deg,rgba(55,132,195,.98) 0%,rgba(60,143,207,.97) 48%,rgba(77,157,215,.93) 100%)!important;
+}
+.sim-hero-copy{
+  grid-template-columns:72px minmax(0,1fr)!important;
+  gap:20px!important;
+  max-width:62%!important;
+}
+.sim-hero-logo{
+  width:72px!important;
+  height:72px!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  color:#0d4b8c!important;
+  box-shadow:0 7px 16px rgba(7,47,87,.12)!important;
+}
+.sim-hero-logo svg{
+  width:43px!important;
+  height:43px!important;
+}
+.sim-hero-card h2{
+  margin:0 0 7px!important;
+  font-size:20px!important;
+  line-height:1.1!important;
+  color:#fff!important;
+}
+.sim-hero-card p{
+  max-width:360px!important;
+  font-size:10px!important;
+  line-height:1.45!important;
+  color:rgba(255,255,255,.92)!important;
+}
+.sim-reference-button{
+  min-width:244px!important;
+  margin-top:17px!important;
+  padding:11px 16px!important;
+  border:0!important;
+  border-radius:10px!important;
+  background:#fff!important;
+  color:#0b3f77!important;
+  box-shadow:0 3px 8px rgba(5,42,82,.08)!important;
+  font-size:9px!important;
+  font-weight:900!important;
+}
+.sim-reference-button:hover{
+  transform:none!important;
+  background:#fff!important;
+  color:#0b3f77!important;
+  box-shadow:0 3px 8px rgba(5,42,82,.08)!important;
+}
+.sim-reference-button span{
+  font-size:22px!important;
+  font-weight:500!important;
+}
+.sim-hero-badge{
+  right:16px!important;
+  bottom:16px!important;
+  min-width:108px!important;
+  padding:9px 12px!important;
+  border-radius:12px!important;
+  background:rgba(6,52,98,.58)!important;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)!important;
+}
+.sim-hero-badge strong{
+  font-size:12px!important;
+}
+.sim-hero-badge span{
+  font-size:7px!important;
+}
+.sim-hero-art{
+  right:0!important;
+  top:0!important;
+  width:43%!important;
+  height:100%!important;
+  opacity:1!important;
+  pointer-events:none;
+}
+.sim-emergency-photo{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 70% 34%,rgba(255,255,255,.13),transparent 22%),
+    linear-gradient(180deg,rgba(255,255,255,.02),rgba(4,41,78,.14));
+}
+.sim-emergency-photo:before{
+  content:"";
+  position:absolute;
+  right:34px;
+  bottom:25px;
+  width:145px;
+  height:78px;
+  border-radius:6px 6px 10px 10px;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.08));
+  box-shadow:
+    -52px 20px 0 -38px rgba(255,255,255,.22),
+    -12px -43px 0 -24px rgba(255,255,255,.18),
+    -75px -20px 0 -58px rgba(255,255,255,.22);
+}
+.sim-emergency-photo:after{
+  content:"";
+  position:absolute;
+  right:38px;
+  top:34px;
+  width:84px;
+  height:48px;
+  border:4px solid rgba(255,255,255,.22);
+  border-radius:4px;
+  box-shadow:-40px 18px 0 -30px rgba(255,255,255,.22);
+}
+.sim-emergency-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(17,80,140,0) 0%,rgba(5,49,92,.06) 40%,rgba(5,49,92,.2) 100%);
+}
+.sim-zap-art{
+  overflow:hidden;
+}
+.sim-zap-art img{
+  position:absolute;
+  right:6px;
+  top:8px;
+  width:138px;
+  height:auto;
+  object-fit:contain;
+  transform:rotate(4deg) scale(1.08);
+  filter:saturate(.9) brightness(1.12);
+  opacity:.84;
+}
+.sim-chat-bubble{
+  background:rgba(255,255,255,.18)!important;
+  border:1px solid rgba(255,255,255,.08);
+}
+.sim-chat-bubble.one{
+  right:143px!important;
+  top:67px!important;
+  width:54px!important;
+  height:34px!important;
+}
+.sim-chat-bubble.two{
+  right:121px!important;
+  top:114px!important;
+  width:38px!important;
+  height:25px!important;
+}
+.sim-chat-bubble.three{
+  position:absolute;
+  right:155px;
+  top:130px;
+  width:27px;
+  height:18px;
+  border-radius:8px;
+  background:rgba(255,255,255,.12);
+}
+html[data-theme="dark"] .sim-hero-logo,
+html[data-theme="leila-mood"] .sim-hero-logo{
+  background:#fff!important;
+  color:#0d4b8c!important;
+}
+@media(max-width:760px){
+  .sim-hero-copy{max-width:100%!important;grid-template-columns:58px 1fr!important}
+  .sim-hero-logo{width:58px!important;height:58px!important;border-radius:14px!important}
+  .sim-hero-logo svg{width:34px!important;height:34px!important}
+  .sim-hero-art{opacity:.18!important;width:50%!important}
+  .sim-reference-button{min-width:0!important;width:calc(100% - 118px)!important}
+}
