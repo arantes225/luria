@@ -412,7 +412,7 @@
       <button class="score-fav ${fav?"active":""}" data-fav="${s.id}" type="button" aria-label="${fav?"Remover dos favoritos":"Adicionar aos favoritos"}">${fav?"★":"☆"}</button>
       <button class="score-card-main" data-open="${s.id}" type="button" style="appearance:none;border:0;background:transparent;color:inherit;text-align:left;padding:0;width:100%;">
         <span class="score-code">${esc(scoreCode(s))}</span>
-        <span class="score-card-copy"><strong>${esc(s.name)}</strong><p>${esc(s.desc)}</p><span class="score-card-meta"><span class="score-tag">${esc(s.category)}</span>${(s.tags||[]).slice(0,2).map(t=>`<span class="score-tag">${esc(t)}</span>`).join("")}</span></span>
+        <span class="score-card-copy"><strong>${esc(s.name)}</strong><p class="score-purpose"><b>Serve para:</b> ${esc(s.desc)}</p><span class="score-card-meta"><span class="score-tag">${esc(s.category)}</span>${(s.tags||[]).slice(0,2).map(t=>`<span class="score-tag">${esc(t)}</span>`).join("")}</span></span>
         <span class="score-arrow">›</span>
       </button>
     </article>`;
@@ -458,6 +458,7 @@
         <div><small>${esc(s.category)}</small><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p></div>
         <button class="score-close" type="button">×</button>
       </div>
+      <div class="score-purpose-box"><b>Serve para:</b> ${esc(s.desc)}</div>
       <div class="score-modal-body">
         <form class="score-form" id="score-form"></form>
         <aside class="score-result">
