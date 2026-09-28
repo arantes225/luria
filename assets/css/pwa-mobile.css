@@ -3992,3 +3992,275 @@
  html.pwa-standalone body[data-page="cronograma"] .weekly-goal-grid,
  html.pwa-standalone body[data-page="cronograma"] .goal-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
 }
+
+
+/* =========================================================
+   PWA MOBILE v26 — correção estrutural final
+   Estatísticas: remove grid-areas desktop que criavam colunas
+   implícitas no iOS. Modais: respeitam viewport/safe area.
+   ========================================================= */
+@media (max-width: 760px) {
+  html.pwa-standalone body[data-page="estatisticas"] .main {
+    width: 100% !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    overflow-x: hidden !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .page {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel] {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* A causa do layout estreito: grid-template-areas do desktop
+     continuava ativo depois de trocar para uma coluna. */
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel] .stats-block-grid,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-block-grid,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel="aulas"] .stats-block-grid,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel="flashcards"] .stats-block-grid,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel="questoes"] .stats-block-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas: none !important;
+    grid-auto-columns: minmax(0, 1fr) !important;
+    grid-auto-flow: row !important;
+    gap: 12px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel] .stats-block,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel] .stats-block.wide,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel] .stats-block:nth-child(n) {
+    grid-area: auto !important;
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    align-self: auto !important;
+    justify-self: stretch !important;
+    display: block !important;
+    padding: 14px !important;
+    border-radius: 14px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .stats-section-head {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .stats-section-head h3 {
+    font-size: 17px !important;
+    line-height: 1.18 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .stats-section-head p {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .chart-box,
+  html.pwa-standalone body[data-page="estatisticas"] .chart-box.compact,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-block:nth-child(2) .chart-box,
+  html.pwa-standalone body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-block:nth-child(3) .chart-box {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 210px !important;
+    min-height: 210px !important;
+    max-height: 210px !important;
+    margin-top: 10px !important;
+    flex: none !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .chart-box.compact {
+    height: 190px !important;
+    min-height: 190px !important;
+    max-height: 190px !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .chart-box canvas,
+  html.pwa-standalone body[data-page="estatisticas"] .chart-box.compact canvas {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .stats-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-template-rows: none !important;
+    gap: 9px !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .stats-summary-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    min-height: 96px !important;
+    padding: 11px !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .metric-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .progress-row {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 6px !important;
+    padding: 9px 0 !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .progress-value {
+    text-align: left !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .stats-table-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .stats-table {
+    width: max-content !important;
+    min-width: 680px !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] .insights {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  html.pwa-standalone body[data-page="estatisticas"] #general-week-heatmap {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 0 !important;
+    overflow-x: auto !important;
+  }
+
+  /* Modais genéricos do PWA não podem ficar atrás da safe area. */
+  html.pwa-standalone body .calc-modal {
+    padding:
+      max(10px, env(safe-area-inset-top))
+      8px
+      max(10px, env(safe-area-inset-bottom))
+      8px !important;
+    align-items: center !important;
+  }
+
+  html.pwa-standalone body .calc-modal-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 680px !important;
+    max-height: calc(100dvh - max(20px, env(safe-area-inset-top)) - max(20px, env(safe-area-inset-bottom))) !important;
+    border-radius: 18px !important;
+    border-bottom: 1px solid var(--border) !important;
+    overflow: hidden !important;
+  }
+
+  html.pwa-standalone body .calc-modal-head {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 3 !important;
+    flex: 0 0 auto !important;
+    padding: 14px 15px 12px !important;
+    background: var(--surface) !important;
+  }
+
+  html.pwa-standalone body .calc-modal-title {
+    min-width: 0 !important;
+  }
+
+  html.pwa-standalone body .calc-modal-title > div {
+    min-width: 0 !important;
+  }
+
+  html.pwa-standalone body .calc-modal-title h3,
+  html.pwa-standalone body .calc-modal-title p {
+    overflow-wrap: anywhere !important;
+  }
+
+  html.pwa-standalone body .calc-modal-body {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 14px 15px calc(18px + env(safe-area-inset-bottom)) !important;
+  }
+
+  html.pwa-standalone body .calc-modal-body .fields {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  html.pwa-standalone body .calc-modal-body .field label {
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+  }
+
+  html.pwa-standalone body .calc-modal-body .field input,
+  html.pwa-standalone body .calc-modal-body .field select {
+    min-height: 48px !important;
+    font-size: 16px !important;
+  }
+
+  /* Passômetro: modal ocupa a tela útil, sem cortar header/actions. */
+  html.pwa-standalone body[data-page="trabalho_passometro"] .pm-dialog {
+    width: calc(100vw - 16px) !important;
+    max-width: calc(100vw - 16px) !important;
+    max-height: calc(100dvh - max(18px, env(safe-area-inset-top)) - max(18px, env(safe-area-inset-bottom))) !important;
+    margin: auto !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+  }
+
+  html.pwa-standalone body[data-page="trabalho_passometro"] .pm-dialog > form {
+    max-height: inherit !important;
+  }
+
+  html.pwa-standalone body[data-page="trabalho_passometro"] .pm-dialog-head {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 4 !important;
+    padding: 14px 15px !important;
+  }
+
+  html.pwa-standalone body[data-page="trabalho_passometro"] .pm-form {
+    overflow-y: auto !important;
+    min-height: 0 !important;
+    padding: 14px 15px !important;
+  }
+
+  html.pwa-standalone body[data-page="trabalho_passometro"] .pm-dialog-actions {
+    position: sticky !important;
+    bottom: 0 !important;
+    z-index: 4 !important;
+    padding: 11px 15px calc(11px + env(safe-area-inset-bottom)) !important;
+    flex-wrap: wrap !important;
+  }
+
+  html.pwa-standalone body[data-page="trabalho_passometro"] .pm-dialog-actions button {
+    min-height: 44px !important;
+  }
+}
