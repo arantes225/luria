@@ -6456,3 +6456,62 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Profile menu v34 — ações uniformes + saída destacada */
+(function ensureProfileMenuUniformActions(){
+  if(document.getElementById("luria-profile-menu-uniform-v34")) return;
+  const style=document.createElement("style");
+  style.id="luria-profile-menu-uniform-v34";
+  style.textContent=`
+    .luria-profile-menu{
+      min-width:208px!important;
+      padding:8px!important;
+    }
+
+    .luria-profile-menu > a,
+    .luria-profile-menu > button:not(.luria-theme-switch){
+      width:100%!important;
+      height:42px!important;
+      min-height:42px!important;
+      padding:0 12px!important;
+      margin:0!important;
+      box-sizing:border-box!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:flex-start!important;
+      border-radius:9px!important;
+      font-size:13px!important;
+      font-weight:750!important;
+      line-height:1!important;
+      text-align:left!important;
+    }
+
+    .luria-profile-menu > [data-restart-onboarding]{
+      min-height:42px!important;
+      height:42px!important;
+    }
+
+    .luria-profile-menu > #luria-profile-logout{
+      min-height:42px!important;
+      height:42px!important;
+      margin-top:6px!important;
+      border:1px solid color-mix(in srgb,var(--danger,#d84a4a) 58%,var(--border))!important;
+      background:color-mix(in srgb,var(--danger,#d84a4a) 8%,var(--surface))!important;
+      color:var(--danger,#d84a4a)!important;
+      font-weight:850!important;
+    }
+
+    .luria-profile-menu > #luria-profile-logout:hover{
+      border-color:var(--danger,#d84a4a)!important;
+      background:color-mix(in srgb,var(--danger,#d84a4a) 14%,var(--surface))!important;
+      color:var(--danger,#d84a4a)!important;
+    }
+
+    :root[data-theme="dark"] .luria-profile-menu > #luria-profile-logout{
+      background:color-mix(in srgb,var(--danger,#e56464) 11%,var(--surface))!important;
+      border-color:color-mix(in srgb,var(--danger,#e56464) 55%,var(--border))!important;
+    }
+  `;
+  document.head.appendChild(style);
+})();
