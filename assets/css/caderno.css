@@ -3702,3 +3702,115 @@ body.theme-dark[data-page="caderno"] #notebook-image-add{
 body.theme-dark[data-page="caderno"] #notebook-table-toggle{
   color:color-mix(in srgb,var(--notebook-dark-highlight) 68%,var(--text))!important;
 }
+
+
+/* v24.6 — botões ativos + paleta de cores por quadradinhos */
+.note-toolbar button.is-active,
+.note-toolbar button[aria-expanded="true"],
+.note-toolbar .notebook-color-button.is-active{
+  background:color-mix(in srgb,var(--accent) 12%,var(--surface))!important;
+  color:var(--accent)!important;
+  border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 10%,transparent)!important;
+}
+
+.notebook-tool-menu button.is-selected{
+  background:color-mix(in srgb,var(--accent) 10%,var(--surface))!important;
+  color:var(--accent)!important;
+}
+
+.notebook-color-palette-wrap{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+}
+
+.notebook-color-button{
+  position:relative;
+  overflow:visible!important;
+}
+
+.notebook-color-button::after{
+  content:"";
+  position:absolute;
+  left:6px;
+  right:6px;
+  bottom:3px;
+  height:3px;
+  border-radius:99px;
+  background:var(--active-color,var(--accent));
+  opacity:.95;
+}
+
+.notebook-highlight-button::after{
+  height:4px;
+}
+
+.notebook-color-palette{
+  position:absolute;
+  top:calc(100% + 7px);
+  left:0;
+  z-index:150;
+  width:178px;
+  display:grid;
+  grid-template-columns:repeat(6,24px);
+  gap:5px;
+  padding:9px;
+  border:1px solid var(--border);
+  border-radius:11px;
+  background:var(--surface);
+  box-shadow:0 16px 36px rgba(15,23,42,.16);
+}
+
+.notebook-color-palette[hidden]{
+  display:none!important;
+}
+
+.notebook-color-palette button{
+  width:24px!important;
+  min-width:24px!important;
+  height:24px!important;
+  min-height:24px!important;
+  padding:0!important;
+  border:1px solid color-mix(in srgb,var(--text) 16%,var(--border))!important;
+  border-radius:6px!important;
+  background:var(--swatch,transparent)!important;
+  box-shadow:none!important;
+  cursor:pointer;
+}
+
+.notebook-color-palette button:hover,
+.notebook-color-palette button.is-selected{
+  transform:scale(1.08);
+  border-color:var(--accent)!important;
+  box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 18%,transparent)!important;
+}
+
+.notebook-color-palette button.no-color{
+  display:grid!important;
+  place-items:center!important;
+  background:
+    linear-gradient(135deg,transparent 46%,#d94b4b 47% 53%,transparent 54%),
+    var(--surface-2)!important;
+  color:var(--muted)!important;
+  font-size:12px!important;
+  font-weight:900!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] .note-toolbar button.is-active,
+:root[data-theme="dark"] body[data-page="caderno"] .note-toolbar button[aria-expanded="true"],
+:root[data-theme="dark"] body[data-page="caderno"] .note-toolbar .notebook-color-button.is-active,
+body.theme-dark[data-page="caderno"] .note-toolbar button.is-active,
+body.theme-dark[data-page="caderno"] .note-toolbar button[aria-expanded="true"],
+body.theme-dark[data-page="caderno"] .note-toolbar .notebook-color-button.is-active{
+  background:var(--notebook-dark-highlight-bg)!important;
+  color:var(--notebook-dark-highlight)!important;
+  border-color:color-mix(in srgb,var(--notebook-dark-highlight) 48%,var(--border))!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] .notebook-color-palette,
+body.theme-dark[data-page="caderno"] .notebook-color-palette{
+  background:var(--surface)!important;
+  border-color:var(--border)!important;
+  box-shadow:0 18px 40px rgba(0,0,0,.35)!important;
+}
