@@ -4785,11 +4785,11 @@ function renderAgendaSide() {
   });
 
   const distribution = [
-    { key:"lesson", label:"Aulas", color:"var(--accent)" },
-    { key:"review", label:"Revisões", color:"#20b7aa" },
-    { key:"errors", label:"Caderno de erros", color:"#e04f5f" },
-    { key:"simulation", label:"Simulados", color:"#8b5cf6" },
-    { key:"other", label:"Outros", color:"#f59e0b" }
+    { key:"lesson", label:"Aulas", color:"var(--chart-1)" },
+    { key:"review", label:"Revisões", color:"var(--chart-2)" },
+    { key:"errors", label:"Caderno de erros", color:"var(--chart-3)" },
+    { key:"simulation", label:"Simulados", color:"var(--chart-4)" },
+    { key:"other", label:"Outros", color:"var(--chart-5)" }
   ].map(item => ({ ...item, count: weeklyItems.filter(entry => entry.type === item.key).length }))
    .filter(item => item.count > 0);
 
@@ -8675,7 +8675,7 @@ async function renderScheduleStudyInsights(){
   const total=days.reduce((a,b)=>a+b,0), max=Math.max(...days,1), dayNames=["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
   totalEl.textContent=formatStudyDuration(total); if(donutTotal) donutTotal.textContent=formatStudyDuration(total);
   barsEl.innerHTML=days.map((sec,i)=>'<div class="agenda-study-day"><span class="agenda-study-value">'+(sec?formatStudyDuration(sec):"")+'</span><span class="agenda-study-bar-track"><i class="agenda-study-bar" style="height:'+Math.max(sec?5:2,Math.round(sec/max*100))+'%"></i></span><span class="agenda-study-label">'+dayNames[i]+'</span></div>').join("");
-  const palette=["#2086e8","#20b7aa","#f6a334","#8b6ee8","#aab6c7"], cats=[...byCategory.entries()].sort((a,b)=>b[1]-a[1]).slice(0,5), catTotal=cats.reduce((a,x)=>a+x[1],0);
+  const palette=["var(--chart-1)","var(--chart-2)","var(--chart-3)","var(--chart-4)","var(--chart-5)"], cats=[...byCategory.entries()].sort((a,b)=>b[1]-a[1]).slice(0,5), catTotal=cats.reduce((a,x)=>a+x[1],0);
   if(!catTotal){donut.style.background="conic-gradient(var(--border) 0 100%)";legend.innerHTML='<span class="agenda-empty">Sem tempo registrado.</span>';return;}
   let cursor=0; const segs=cats.map(([label,sec],i)=>{const a=cursor,b=cursor+sec/catTotal*100;cursor=b;return palette[i]+" "+a+"% "+b+"%";});
   donut.style.background="conic-gradient("+segs.join(",")+")";
