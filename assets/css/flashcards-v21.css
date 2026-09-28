@@ -502,3 +502,27 @@ body.flash-review-session-active .page{
   .review-launcher{grid-template-columns:1fr!important;padding:12px!important;gap:10px!important}
   .review-launcher-action{min-width:0!important;width:100%!important;grid-template-columns:1fr auto!important}
 }
+
+
+/* LURIA Flashcards v30 — barra Revisões do dia em destaque */
+.flash-review-panel{padding-top:10px!important}
+.flash-review-progress-only{display:none!important}
+.review-launcher{margin-top:0!important}
+.review-launcher-copy .eyebrow{
+  color:color-mix(in srgb,var(--accent) 55%,#fff 45%)!important;
+  font-weight:900!important;
+  letter-spacing:.12em!important;
+}
+.review-launcher h3{
+  color:#fff!important;
+  font-weight:900!important;
+  text-shadow:0 1px 1px rgba(0,0,0,.18)!important;
+}
+.review-launcher-copy p{color:rgba(255,255,255,.78)!important}
+.review-launcher-action strong{color:#fff!important;font-weight:900!important}
+.review-launcher #start-review-session{
+  background:var(--accent)!important;
+  border-color:var(--accent)!important;
+  color:#fff!important;
+  box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 38%,transparent)!important;
+}
