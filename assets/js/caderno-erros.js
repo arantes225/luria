@@ -3792,11 +3792,9 @@ function switchErrorTab(
     )
     .forEach(
       (section) => {
-        section.classList.toggle(
-          "active",
-          section.dataset
-            .errorSection === name
-        );
+        const isActive = section.dataset.errorSection === name;
+        section.classList.toggle("active", isActive);
+        section.hidden = !isActive;
       }
     );
 
@@ -4922,10 +4920,54 @@ function canonicalErrorArea(value){
 }
 function editErrorNotebook(area,name){
   const rows=errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area && (i.materia||i.theme||"Geral")===name);
-  const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalErrorArea(o.value)===area);select.value=exact?.value||""}
-  const search=document.getElementById("error-library-search");if(search)search.value=name;
-  renderErrorLibrary();
-  setErrorLibraryStatus(`Caderno “${name}” aberto. Use o menu de cada nota para editar ou excluir.`,"success");
+  const container=document.getElementById("error-library");
+  const empty=document.getElementById("error-library-empty");
+  const count=document.getElementById("error-library-count");
+  if(!container||!empty||!count)return;
+
+  empty.hidden=true;
+  count.textContent=`${rows.length} ${rows.length===1?"erro":"erros"}`;
+
+  container.innerHTML=`
+    <section class="error-notebook-open">
+      <div class="error-notebook-open-head">
+        <button id="error-notebook-back" class="button secondary" type="button">← Voltar aos cadernos</button>
+        <div>
+          <span class="badge accent">${errorLibraryEscape(area)}</span>
+          <h3>${errorLibraryEscape(name)}</h3>
+          <p>${rows.length} ${rows.length===1?"erro salvo":"erros salvos"} neste caderno.</p>
+        </div>
+      </div>
+      <div class="error-notebook-open-list">
+        ${rows.map(item=>`
+          <article class="error-note-card" data-error-note-id="${errorLibraryEscape(item.id)}">
+            <div class="error-note-card-head">
+              <div>
+                <strong>${errorLibraryEscape(item.theme||item.materia||"Erro")}</strong>
+                <small>${item.due_date?errorLibraryEscape(formatErrorDate(item.due_date)):"Sem data de revisão"}</small>
+              </div>
+              <button type="button" class="button secondary" data-error-note-edit="${errorLibraryEscape(item.id)}">Editar</button>
+            </div>
+            <p class="error-note-tip">💡 ${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</p>
+            ${item.question_text?`<details><summary>Ver questão</summary><p>${errorLibraryEscape(item.question_text)}</p>${item.correct_answer?`<div class="review-answer"><strong>Resposta correta</strong><p>${errorLibraryEscape(item.correct_answer)}</p></div>`:""}</details>`:""}
+          </article>
+        `).join("")}
+      </div>
+    </section>`;
+
+  document.getElementById("error-notebook-back")?.addEventListener("click",()=>{
+    renderErrorLibrary();
+    setErrorLibraryStatus("");
+  });
+
+  container.querySelectorAll("[data-error-note-edit]").forEach(button=>{
+    button.addEventListener("click",(event)=>{
+      event.stopPropagation();
+      openErrorEditDialog(button.dataset.errorNoteEdit);
+    });
+  });
+
+  setErrorLibraryStatus(`Caderno “${name}” aberto.`,"success");
 }
 async function addErrorsToTodayReview(items,label="itens"){
   const ids=[...new Set((items||[]).map(i=>i.id).filter(Boolean))];
