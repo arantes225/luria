@@ -2939,3 +2939,18 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
     grid-template-columns:1fr;
   }
 }
+
+
+/* v18.10 — ordem visual: destaque > switch > dashboard > hora de revisar */
+.error-cat-spotlight{
+  margin-bottom:10px!important;
+}
+.error-home-layout .error-library-nav{
+  margin:0 0 10px!important;
+}
+.error-review-home-dashboard{
+  margin:0 0 12px!important;
+}
+.error-review-home-content{
+  margin-top:0!important;
+}
