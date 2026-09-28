@@ -17,3 +17,134 @@
 .error-review-metric-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}.error-review-metric-pair>div{padding:12px;border:1px solid var(--border);border-radius:10px;text-align:center}.error-review-metric-pair>div>span{display:block;font-size:16px}.error-review-metric-pair strong{display:block;font-size:18px}.error-review-metric-pair small{font-size:7.5px;color:var(--muted)}.error-review-page-metrics h3{margin:18px 0 10px;font-size:10px}.error-review-area-bars{display:grid;gap:8px}.error-review-area-bars>div{display:grid;grid-template-columns:90px 1fr 22px;align-items:center;gap:7px;font-size:7.5px}.error-review-area-bars i{height:5px;border-radius:99px;background:var(--surface-2);overflow:hidden}.error-review-area-bars b{display:block;height:100%;border-radius:inherit;background:var(--accent)}
 @media(max-width:1050px){.error-review-page-grid{grid-template-columns:190px minmax(0,1fr)}.error-review-page-metrics{grid-column:1/-1;position:static;display:grid;grid-template-columns:auto 150px 1fr;gap:14px;align-items:center}.error-review-page-metrics h3,.error-review-area-bars{grid-column:1/-1}}
 @media(max-width:760px){.error-review-page-topbar{grid-template-columns:auto 1fr}.error-review-page-heading{display:none}.error-review-page-back{justify-self:start}.error-review-page-grid{grid-template-columns:1fr}.error-review-page-next{order:2;position:static}.error-review-page-center{order:1}.error-review-page-metrics{order:3;display:block}.error-review-big-card{min-height:360px;padding:24px}.error-review-big-copy{font-size:clamp(28px,9vw,42px)}}
+
+
+/* v2 — revisão ativa com logo real e questão reexecutável */
+.error-review-cat-logo{
+  width:118px;
+  height:86px;
+  margin-bottom:24px;
+  display:grid;
+  place-items:center;
+}
+.error-review-cat-logo img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+.error-review-cat-logo-dark{display:none}
+[data-theme="dark"] .error-review-cat-logo-light,
+.dark .error-review-cat-logo-light{display:none}
+[data-theme="dark"] .error-review-cat-logo-dark,
+.dark .error-review-cat-logo-dark{display:block}
+
+.error-review-big-card{
+  transition:min-height .22s ease,padding .22s ease,transform .22s ease;
+}
+.error-review-big-card.question-open{
+  min-height:260px;
+  padding-top:24px;
+  padding-bottom:24px;
+  transform:translateY(-6px);
+}
+.error-review-big-card.question-open .error-review-cat-logo{
+  width:92px;
+  height:64px;
+  margin-bottom:14px;
+}
+.error-review-big-card.question-open .error-review-big-copy{
+  font-size:clamp(24px,2.5vw,40px);
+}
+
+.error-review-details{
+  margin-top:10px;
+}
+.error-review-question-block{
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface);
+}
+.error-review-question-kicker{
+  display:block;
+  margin-bottom:5px;
+  color:var(--accent);
+  font-size:8px;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.error-review-question-block h3{
+  margin:0 0 8px;
+  font-size:12px;
+}
+.error-review-response-box{
+  display:grid;
+  gap:9px;
+  margin-top:12px;
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface);
+}
+.error-review-response-box label{
+  font-size:9px;
+  font-weight:850;
+  color:var(--text);
+}
+.error-review-response-box textarea{
+  width:100%;
+  min-height:120px;
+  resize:vertical;
+  padding:12px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface-2);
+  color:var(--text);
+  font:inherit;
+  font-size:10px;
+  line-height:1.5;
+  box-sizing:border-box;
+}
+.error-review-response-box textarea:focus{
+  outline:2px solid color-mix(in srgb,var(--accent) 28%,transparent);
+  border-color:var(--accent);
+}
+.error-review-feedback{
+  display:grid;
+  gap:10px;
+  margin-top:12px;
+}
+.error-review-your-answer,
+.error-review-answer,
+#error-review-thought-wrap{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:var(--surface);
+}
+.error-review-your-answer{
+  background:color-mix(in srgb,var(--accent-soft) 35%,var(--surface));
+}
+.error-review-feedback strong{
+  display:block;
+  margin-bottom:5px;
+  font-size:8.5px;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.error-review-feedback p{
+  margin:0;
+  font-size:10px;
+  line-height:1.55;
+}
+
+@media(max-width:760px){
+  .error-review-cat-logo{
+    width:96px;
+    height:70px;
+  }
+  .error-review-big-card.question-open{
+    min-height:220px;
+  }
+}
