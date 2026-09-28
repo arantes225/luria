@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-face-presets-v23">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-summary-align-v26">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -71,10 +71,9 @@
           </section>
 
           <div class="plantao-native-switch-wrap plantao-primary-switch-wrap">
-            <nav class="plantao-ref-nav plantao-native-switch">
-              <a href="/dashboard/">⌂ <span>Início</span></a>
-              <a class="active" href="#plantao-emergencia" aria-current="page">▤ <span>Biblioteca</span></a>
-              <a href="/ajuda/">? <span>Ajuda</span></a>
+            <nav class="plantao-ref-nav plantao-native-switch" aria-label="Visão dos casos">
+              <button class="active" type="button" data-case-library-view="home" aria-current="page">⌂ <span>Início</span></button>
+              <button type="button" data-case-library-view="library">▤ <span>Biblioteca</span></button>
             </nav>
           </div>
 
@@ -134,7 +133,7 @@
             <div class="plantao-cases-section-head">
               <div>
                 <span></span>
-                <h2>Casos disponíveis</h2>
+                <h2 id="plantao-case-list-title">Casos em destaque da semana</h2>
               </div>
               <strong id="plantao-visible-count">—</strong>
             </div>
@@ -443,7 +442,7 @@
   <script src="assets/js/app.js?v=17.28-native-shell-v9"></script>
   <script src="assets/js/plantao-monitor.js?v=5.4"></script>
   <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
-  <script src="/assets/js/plantao.js?v=9.17-face-presets-v23"></script>
+  <script src="/assets/js/plantao.js?v=9.19-record-slips-v25"></script>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
