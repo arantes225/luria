@@ -2827,3 +2827,115 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
     display:none;
   }
 }
+
+
+/* v18.9 — navegação única e layout reorganizado */
+.error-home-head-minimal{
+  justify-content:flex-end!important;
+  margin:4px 0 12px!important;
+}
+.error-home-layout{
+  grid-template-columns:minmax(0,1fr)!important;
+  gap:12px!important;
+}
+.error-home-layout.review-mode{
+  grid-template-columns:minmax(0,1fr) 280px!important;
+}
+.error-review-home-dashboard{
+  margin:0 0 12px!important;
+}
+.error-library-nav{
+  align-items:end!important;
+  margin:0 0 12px!important;
+  padding-bottom:0!important;
+}
+.error-state-switch{
+  max-width:100%;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.error-state-switch::-webkit-scrollbar{
+  display:none;
+}
+.error-state-switch button{
+  flex:0 0 auto;
+}
+.error-review-home-content{
+  display:none;
+}
+.error-home-layout.review-mode .error-review-home-content{
+  display:block;
+}
+.error-home-layout.review-mode .error-library-tools{
+  display:none!important;
+}
+.error-home-layout.review-mode .error-library-panel{
+  display:none!important;
+}
+.error-review-home-aside{
+  display:none;
+}
+.error-home-layout.review-mode .error-review-home-aside{
+  display:grid;
+  gap:10px;
+}
+.error-home-layout:not(.review-mode) .error-home-main{
+  width:100%;
+}
+.error-home-layout:not(.review-mode) .error-library-panel{
+  display:block!important;
+}
+.error-home-layout:not(.review-mode) .error-library-nav{
+  justify-content:space-between;
+}
+.error-review-home-actions{
+  margin-top:0!important;
+}
+.error-review-home-metric{
+  min-height:92px;
+}
+.error-review-home-metric strong{
+  font-size:22px!important;
+}
+@media(max-width:1050px){
+  .error-home-layout.review-mode{
+    grid-template-columns:1fr!important;
+  }
+  .error-home-layout.review-mode .error-review-home-aside{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:700px){
+  .error-home-head-minimal{
+    align-items:stretch!important;
+  }
+  .error-new-native{
+    width:100%;
+  }
+  .error-review-home-dashboard{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:7px!important;
+  }
+  .error-review-home-metric{
+    min-height:78px;
+    padding:11px!important;
+  }
+  .error-review-home-metric span{
+    font-size:6.7px!important;
+  }
+  .error-review-home-metric strong{
+    font-size:18px!important;
+  }
+  .error-review-home-metric small{
+    font-size:6.5px!important;
+  }
+  .error-library-nav{
+    gap:8px!important;
+  }
+  .error-library-tools{
+    width:100%!important;
+  }
+  .error-home-layout.review-mode .error-review-home-aside{
+    grid-template-columns:1fr;
+  }
+}
