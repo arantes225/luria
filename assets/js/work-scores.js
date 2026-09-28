@@ -507,7 +507,7 @@
         field("Hemoglobina (g/dL)","g_hb","number",'step="0.1" min="0"')+
         field("PAS (mmHg)","g_sbp","number",'min="0"')+
         selectField("FC ≥100 bpm","g_hr",yesno())+selectField("Melena","g_mel",yesno())+selectField("Síncope","g_syn",yesno(2))+selectField("Doença hepática","g_liv",yesno(2))+selectField("Insuficiência cardíaca","g_hf",yesno(2));
-      $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcGBS); setResult("—","Preencha os campos.");,
+      $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcGBS); setResult("—","Preencha os campos.");
     },
     grace(f){
       f.innerHTML=
