@@ -60,8 +60,8 @@
     }else if(c.type==='mg_kg_fixed_day'){
       if((c.min_age_years!==undefined&&age<c.min_age_years)||(c.max_age_years_exclusive!==undefined&&age>=c.max_age_years_exclusive)){result.textContent='Idade fora da faixa validada para o cálculo desta apresentação. Confira a bula.';return}
       if(weight<c.min_weight_kg||weight>c.max_weight_kg){result.textContent='Peso fora da faixa configurada; avalie individualmente.';return}
-      const daily=Math.min(weight*c.mg_kg_day,c.max_daily_mg);
-      result.textContent=`${number(c.mg_kg_day)} mg/kg/dia × ${number(weight)} kg = ${number(daily)} mg/24 h (teto ${number(c.max_daily_mg)} mg/24 h). Confirme uma apresentação que permita medir a dose exata.`;
+      const calculated=weight*c.mg_kg_day,daily=Math.min(calculated,c.max_daily_mg);
+      result.textContent=`${number(c.mg_kg_day)} mg/kg/dia × ${number(weight)} kg = ${number(calculated)} mg/24 h; dose após teto: ${number(daily)} mg/24 h (máximo ${number(c.max_daily_mg)} mg/24 h). Confirme uma apresentação que permita medir a dose exata.`;
     }else if(c.type==='mg_kg_combo_day'){
       if(age<c.min_age_years||weight<c.min_weight_kg||weight>=c.max_weight_kg_exclusive){result.textContent='Fora da faixa validada para o cálculo pediátrico desta apresentação.';return}
       const renal=el.querySelector('.rx-renal').value;
