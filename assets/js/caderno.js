@@ -19340,8 +19340,44 @@ else {
 /* v23.4 — checklist local por anotação */
 (()=>{const KEY="luria:notebook-study-tasks";const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"{}")}catch{return{}}};const save=v=>localStorage.setItem(KEY,JSON.stringify(v));const noteKey=()=>{try{const d=getCurrentDocument();return String(d?.note?.id||d?.topic?.id||d?.title||"default")}catch{return"default"}};
 function renderStudyTasks(){const root=document.getElementById("notebook-study-tasks");if(!root)return;const all=load(),key=noteKey(),items=all[key]||[];root.innerHTML=items.length?items.map((t,i)=>'<label class="note-study-task"><input type="checkbox" data-study-task="'+i+'" '+(t.done?'checked':'')+'><span>'+escapeHtml(String(t.text||""))+'</span><button type="button" data-study-task-delete="'+i+'" aria-label="Remover tarefa">×</button></label>').join(""):'<div class="note-task-empty">Nenhuma tarefa adicionada</div>'}
-function addStudyTask(){const text=prompt("Nova tarefa de estudo:");if(!text?.trim())return;const all=load(),key=noteKey();all[key]=all[key]||[];all[key].push({text:text.trim(),done:false});save(all);renderStudyTasks()}
-document.addEventListener("click",e=>{if(e.target.closest("#notebook-task-add,#notebook-task-add-row"))addStudyTask();const del=e.target.closest("[data-study-task-delete]");if(del){const all=load(),key=noteKey();(all[key]||[]).splice(Number(del.dataset.studyTaskDelete),1);save(all);renderStudyTasks()}});
+function openStudyTaskModal(){
+  const modal=document.getElementById("notebook-task-modal");
+  const input=document.getElementById("notebook-task-modal-input");
+  if(!modal||!input)return;
+  input.value="";
+  modal.hidden=false;
+  requestAnimationFrame(()=>input.focus());
+}
+function closeStudyTaskModal(){
+  const modal=document.getElementById("notebook-task-modal");
+  if(modal)modal.hidden=true;
+}
+function saveStudyTaskFromModal(){
+  const input=document.getElementById("notebook-task-modal-input");
+  const text=String(input?.value||"").trim();
+  if(!text){input?.focus();return;}
+  const all=load(),key=noteKey();
+  all[key]=all[key]||[];
+  all[key].push({text,done:false});
+  save(all);
+  renderStudyTasks();
+  closeStudyTaskModal();
+}
+document.addEventListener("click",e=>{
+  if(e.target.closest("#notebook-task-add,#notebook-task-add-row"))openStudyTaskModal();
+  if(e.target.closest("#notebook-task-modal-close,#notebook-task-modal-cancel"))closeStudyTaskModal();
+  if(e.target.closest("#notebook-task-modal-save"))saveStudyTaskFromModal();
+  if(e.target.id==="notebook-task-modal")closeStudyTaskModal();
+  const del=e.target.closest("[data-study-task-delete]");
+  if(del){const all=load(),key=noteKey();(all[key]||[]).splice(Number(del.dataset.studyTaskDelete),1);save(all);renderStudyTasks()}
+});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"&&!document.getElementById("notebook-task-modal")?.hidden)closeStudyTaskModal();
+  if(e.key==="Enter"&&document.activeElement?.id==="notebook-task-modal-input"){
+    e.preventDefault();
+    saveStudyTaskFromModal();
+  }
+});
 document.addEventListener("change",e=>{if(!e.target.matches("[data-study-task]"))return;const all=load(),key=noteKey(),arr=all[key]||[],i=Number(e.target.dataset.studyTask);if(arr[i]){arr[i].done=e.target.checked;save(all);renderStudyTasks()}});
 const obs=new MutationObserver(()=>renderStudyTasks());const title=document.getElementById("notebook-document-title");if(title)obs.observe(title,{childList:true,characterData:true,subtree:true});renderStudyTasks();})();
 
