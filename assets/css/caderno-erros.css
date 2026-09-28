@@ -2215,3 +2215,54 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
   .review-cat-brand,.review-cat-brand img{width:27px!important;height:27px!important}
   .review-cat-brand{flex-basis:27px!important}
 }
+
+
+/* v18.4 — cards/callouts no mesmo padrão visual dos Flashcards */
+.error-notebook-card,
+.error-library-group,
+.error-side-card,
+.error-note-detail-card{
+  border:1.5px solid color-mix(in srgb,var(--accent) 58%,var(--border))!important;
+  border-radius:16px!important;
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb,var(--accent) 3.5%,var(--surface)),
+      var(--surface)
+    )!important;
+  box-shadow:
+    0 8px 24px rgba(15,35,65,.045),
+    inset 0 0 28px color-mix(in srgb,var(--accent) 2.5%,transparent)!important;
+}
+
+.error-notebook-card:hover,
+.error-library-group:hover,
+.error-side-card:hover,
+.error-note-detail-card:hover{
+  border-color:color-mix(in srgb,var(--accent) 78%,var(--border))!important;
+}
+
+.error-library-group-head{
+  background:
+    color-mix(in srgb,var(--accent) 5.5%,var(--surface))!important;
+}
+
+.error-notebook-icon,
+.error-area-mark,
+.error-note-detail-index{
+  background:color-mix(in srgb,var(--accent) 10%,var(--surface))!important;
+  color:var(--accent)!important;
+}
+
+.error-notebook-progress{
+  background:color-mix(in srgb,var(--accent) 9%,var(--surface-2))!important;
+}
+
+@media(max-width:700px){
+  .error-notebook-card,
+  .error-library-group,
+  .error-side-card,
+  .error-note-detail-card{
+    border-radius:14px!important;
+  }
+}
