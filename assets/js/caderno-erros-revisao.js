@@ -59,6 +59,8 @@ function renderCurrent(){
   if(answer){answer.value="";answer.disabled=false}
   if(feedback)feedback.hidden=true;
   if(userAnswerCopy)userAnswerCopy.textContent="—";
+  const resultActions=document.getElementById("error-review-result-actions");
+  if(resultActions)resultActions.hidden=true;
   const confirm=document.getElementById("error-review-confirm-answer");
   if(confirm){confirm.disabled=false;confirm.textContent="Confirmar resposta"}
   document.getElementById("error-review-show-question").textContent="Ver questão";
@@ -81,14 +83,22 @@ async function loadItems(){
   renderCurrent();
 }
 
-async function markUnderstood(){
+async function finishReview(correct=null){
   const item=reviewItems[reviewIndex];if(!item)return;
-  const btn=document.getElementById("error-review-understood"),show=document.getElementById("error-review-show-question");
-  btn.disabled=true;show.disabled=true;setStatus("Agendando próxima revisão...");
-  const {error}=await reviewSb.rpc("review_error_entry",{p_error_id:item.id});
-  btn.disabled=false;show.disabled=false;
+  const understood=document.getElementById("error-review-understood");
+  const show=document.getElementById("error-review-show-question");
+  const correctBtn=document.getElementById("error-review-correct");
+  const wrongBtn=document.getElementById("error-review-wrong");
+  [understood,show,correctBtn,wrongBtn].forEach(b=>{if(b)b.disabled=true});
+  setStatus(correct===true?"Salvando acerto...":correct===false?"Salvando erro...":"Agendando próxima revisão...");
+  const {error}=await reviewSb.rpc("review_error_entry_result",{p_error_id:item.id,p_correct:correct});
+  [understood,show,correctBtn,wrongBtn].forEach(b=>{if(b)b.disabled=false});
   if(error){setStatus(`Não foi possível salvar: ${error.message}`,"error");return}
   reviewCompleted+=1;reviewIndex+=1;renderCurrent();
+}
+
+async function markUnderstood(){
+  await finishReview(null);
 }
 
 function wire(){
@@ -114,12 +124,16 @@ function wire(){
     const feedback=document.getElementById("error-review-feedback");
     if(copy)copy.textContent=value;
     if(feedback)feedback.hidden=false;
+    const resultActions=document.getElementById("error-review-result-actions");
+    if(resultActions)resultActions.hidden=false;
     if(textarea)textarea.disabled=true;
     const confirm=document.getElementById("error-review-confirm-answer");
     if(confirm){confirm.disabled=true;confirm.textContent="Resposta confirmada"}
-    setStatus("Resposta registrada nesta revisão. Compare com o gabarito abaixo.","success");
+    setStatus("Resposta mantida apenas nesta tela. Marque se acertou ou errou.","success");
   });
 
+  document.getElementById("error-review-correct")?.addEventListener("click",()=>finishReview(true));
+  document.getElementById("error-review-wrong")?.addEventListener("click",()=>finishReview(false));
   document.getElementById("error-review-understood")?.addEventListener("click",markUnderstood);
 }
 
