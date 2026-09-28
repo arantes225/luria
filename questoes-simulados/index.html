@@ -1395,6 +1395,17 @@
                   >
                 </label>
 
+                <label class="qs-field">
+                  <span>Tempo gasto no simulado</span>
+                  <div class="qs-manual-time-row">
+                    <input id="qs-manual-hours" type="number" min="0" max="23" step="1" value="0" inputmode="numeric" aria-label="Horas">
+                    <small>h</small>
+                    <input id="qs-manual-minutes" type="number" min="0" max="59" step="1" value="0" inputmode="numeric" aria-label="Minutos">
+                    <small>min</small>
+                  </div>
+                  <small>Opcional · use se o simulado foi feito fora do LURIA.</small>
+                </label>
+
                 <div class="qs-manual-copy">
                   <strong>Como funciona</strong>
                   <p>
@@ -1694,6 +1705,11 @@
       syncError();
     })();
   </script>
+  <style>
+    .qs-manual-time-row{display:flex;align-items:center;gap:8px}
+    .qs-manual-time-row input{width:82px!important;flex:0 0 82px}
+    .qs-manual-time-row small{font-weight:800;color:var(--muted)}
+  </style>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
