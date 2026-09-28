@@ -51,7 +51,7 @@
     arrestStartedAt:null,
     penalties:0, criticalElapsed:0, diagnosis:null, disposition:null, busy:false,
     phoneCases:[], phoneCase:null, phoneSession:null, phoneTurn:0, phoneMode:false, phoneUsedChoices:new Set(),
-    filters:{specialty:"",difficulty:"",query:""}, activeSession:null, libraryView:"home",
+    filters:{specialty:"",difficulty:"",query:""}, activeSession:null, libraryView:"home", disaster:null,
     phoneSearch:"", phoneArea:"", phoneNewChat:false
   };
 
@@ -461,7 +461,12 @@
     return "Outros";
   }
 
+  function isDisasterCase(item=state.current){
+    return String(item?.presentation?.mode || "").toLowerCase() === "mass_casualty";
+  }
+
   function plantaoReferenceImage(item,index=0){
+    if(isDisasterCase(item) && item?.presentation?.scene_image) return String(item.presentation.scene_image);
     const specialty=normalizeLabel(item?.specialty||"");
     const title=normalizeLabel([
       item?.title,item?.summary,item?.presentation?.chief_complaint,item?.presentation?.display_title
@@ -3768,7 +3773,7 @@
         harmfulCount:state.harmfulCount, dead:state.dead, deathReason:state.deathReason, clinicalEvents:state.clinicalEvents,
         fetalHarmCount:state.fetalHarmCount, fetalDeath:state.fetalDeath, fetalStatus:state.fetalStatus,
         monitorOn:state.monitorOn,
-        diagnosis:state.diagnosis, disposition:state.disposition, scoring_version:5
+        diagnosis:state.diagnosis, disposition:state.disposition, disaster:state.disaster, scoring_version:5
       },
       action_log:state.log,
       ...extra
@@ -3860,6 +3865,24 @@
     state.disposition=saved.disposition||sessionRow.result?.disposition||null;
     state.busy=false;
 
+    if(isDisasterCase(item)){
+      state.disaster=buildDisasterState(item,saved.disaster);
+      if(targetSection==="plantao-debrief" && sessionRow.status==="completed"){
+        show("plantao-debrief",{persist:false});
+        renderDisasterDebrief(Number(sessionRow.score||sessionRow.result?.final_score||0));
+      }else{
+        startDisasterCase(item,saved.disaster);
+      }
+      savePlantaoView({
+        mode:"emergency",
+        section:targetSection==="plantao-debrief" && sessionRow.status==="completed" ? "plantao-debrief" : "plantao-simulator",
+        clinicalSessionId:sessionRow.id,
+        clinicalCaseId:sessionRow.case_id
+      });
+      return true;
+    }
+    state.disaster=null;
+    setDisasterShell(false);
     renderCurrentClinicalCaseShell(item);
 
     if(targetSection==="plantao-debrief" && sessionRow.status==="completed"){
@@ -3884,6 +3907,239 @@
       clinicalCaseId:sessionRow.case_id
     });
     return true;
+  }
+
+  const DISASTER_TRIAGE_LABELS={red:"Vermelho",yellow:"Amarelo",green:"Verde",black:"Preto"};
+  const DISASTER_COMMANDS=[
+    {id:"scene_safety",label:"Avaliar segurança da cena",points:6,time:.5,message:"Riscos imediatos identificados e zona de atuação delimitada."},
+    {id:"activate_mci",label:"Ativar incidente com múltiplas vítimas",points:6,time:.5,message:"Comando do incidente ativado e reforços solicitados."},
+    {id:"triage_zone",label:"Definir área de triagem e fluxo",points:6,time:.5,message:"Área de triagem definida fora da zona de risco."},
+    {id:"start_start",label:"Iniciar triagem START",points:7,time:.5,message:"Triagem primária iniciada. Priorize rapidez e intervenções salvadoras."}
+  ];
+
+  function disasterVictimsSource(item=state.current){
+    return Array.isArray(item?.presentation?.victims) ? item.presentation.victims : [];
+  }
+
+  function buildDisasterState(item=state.current,saved=null){
+    if(saved && typeof saved==="object"){
+      return {
+        commands:{...(saved.commands||{})},
+        victims:Array.isArray(saved.victims)?saved.victims:disasterVictimsSource(item).map(v=>({...v})),
+        events:Array.isArray(saved.events)?saved.events:[],
+        selectedVictim:saved.selectedVictim||null
+      };
+    }
+    return {
+      commands:{},
+      victims:disasterVictimsSource(item).map(v=>({...v,triage_choice:null,intervention_done:false,transport_done:false})),
+      events:[{time:0,message:String(item?.presentation?.radio_opening||"Central informa múltiplas vítimas. Assuma o comando inicial da cena.")}],
+      selectedVictim:null
+    };
+  }
+
+  function disasterScore(){
+    const d=state.disaster;
+    if(!d) return 0;
+    let score=0;
+    for(const cmd of DISASTER_COMMANDS) if(d.commands?.[cmd.id]) score+=cmd.points;
+    for(const victim of (d.victims||[])){
+      if(victim.triage_choice){
+        score += victim.triage_choice===victim.correct_triage ? 7 : -4;
+      }
+      if(victim.life_saving_action && victim.intervention_done) score += 5;
+      if(victim.transport_priority && victim.transport_done) score += 4;
+    }
+    return Math.max(0,Math.min(100,Math.round(score)));
+  }
+
+  function disasterPhase(){
+    const d=state.disaster;
+    if(!d) return "Reconhecimento da cena";
+    const commandsDone=DISASTER_COMMANDS.filter(cmd=>d.commands?.[cmd.id]).length;
+    if(commandsDone<4) return "Reconhecimento e comando";
+    const victims=d.victims||[];
+    const triaged=victims.filter(v=>v.triage_choice).length;
+    if(triaged<victims.length) return "Triagem primária START";
+    const pendingCritical=victims.filter(v=>v.life_saving_action && !v.intervention_done).length;
+    if(pendingCritical) return "Intervenções salvadoras";
+    const pendingTransport=victims.filter(v=>v.transport_priority && !v.transport_done).length;
+    if(pendingTransport) return "Evacuação e transporte";
+    return "Reavaliação e encerramento";
+  }
+
+  function pushDisasterEvent(message,timeDelta=.25){
+    state.elapsed+=Number(timeDelta||0);
+    state.disaster.events=state.disaster.events||[];
+    state.disaster.events.push({time:state.elapsed,message:String(message||"")});
+    $("plantao-time").textContent=fmtTime(state.elapsed);
+  }
+
+  function setDisasterShell(active){
+    const disaster=$("plantao-disaster-stage");
+    const standard=$("plantao-standard-bedside");
+    if(disaster) disaster.hidden=!active;
+    if(standard) standard.hidden=active;
+    const patientTab=$("plantao-pwa-patient-tab");
+    if(patientTab) patientTab.hidden=active;
+    const actionRail=document.querySelector(".plantao-action-rail");
+    if(actionRail) actionRail.hidden=active;
+  }
+
+  function renderDisasterStage(){
+    if(!isDisasterCase() || !state.disaster) return;
+    const p=state.current.presentation||{};
+    setDisasterShell(true);
+    $("plantao-setting").textContent=state.current.setting||"Desastre / múltiplas vítimas";
+    $("plantao-case-title").textContent=p.chief_complaint||p.display_title||state.current.title;
+    const pwaTitle=$("plantao-pwa-case-title"); if(pwaTitle) pwaTitle.textContent=p.chief_complaint||state.current.title;
+    $("plantao-opening").textContent=p.opening||state.current.summary||"";
+    $("plantao-age").textContent="";
+    $("plantao-sex").textContent="";
+    $("plantao-chief").textContent="";
+    $("plantao-time").textContent=fmtTime(state.elapsed);
+    const scoreEl=$("plantao-score-live"); if(scoreEl) scoreEl.textContent=disasterScore()+"/100";
+
+    const image=$("plantao-disaster-image");
+    if(image){image.src=p.scene_image||"";image.alt="Cena simulada: "+(state.current.title||"desastre");}
+    $("plantao-disaster-title").textContent=p.incident?.type||p.chief_complaint||state.current.title;
+    $("plantao-disaster-briefing").textContent=p.opening||state.current.summary||"";
+    const hazards=Array.isArray(p.incident?.hazards)?p.incident.hazards:[];
+    $("plantao-disaster-hazards").innerHTML=hazards.map(h=>'<span>⚠ '+esc(h)+'</span>').join("");
+
+    const r=p.resources||{};
+    $("plantao-disaster-resources").innerHTML=[
+      ["Vítimas",(state.disaster.victims||[]).length],
+      ["Ambulâncias",Number(r.ambulancias_basicas||0)+Number(r.ambulancias_avancadas||0)],
+      ["Bombeiros",r.bombeiros??"—"],
+      ["Reforço",(p.incident?.reinforcement_eta_min??"—")+" min"]
+    ].map(([a,b])=>'<div class="plantao-disaster-resource"><span>'+esc(a)+'</span><strong>'+esc(b)+'</strong></div>').join("");
+
+    $("plantao-disaster-command-actions").innerHTML=DISASTER_COMMANDS.map(cmd=>{
+      const done=!!state.disaster.commands?.[cmd.id];
+      return '<button class="button '+(done?'secondary done':'primary')+'" type="button" data-disaster-command="'+cmd.id+'" '+(done?'disabled':'')+'>'+(done?'✓ ':'')+esc(cmd.label)+'</button>';
+    }).join("");
+    $("plantao-disaster-phase").textContent=disasterPhase();
+
+    const counts={red:0,yellow:0,green:0,black:0};
+    for(const v of state.disaster.victims||[]) if(v.triage_choice && counts[v.triage_choice]!=null) counts[v.triage_choice]++;
+    $("plantao-disaster-summary").innerHTML=['red','yellow','green','black'].map(k=>'<span class="'+k+'">'+counts[k]+'</span>').join("");
+
+    const canTriage=!!state.disaster.commands?.start_start;
+    $("plantao-disaster-victims").innerHTML=(state.disaster.victims||[]).map(v=>{
+      const choice=String(v.triage_choice||"");
+      const tag=choice?'<span class="plantao-disaster-triage-tag '+choice+'">'+DISASTER_TRIAGE_LABELS[choice]+'</span>':'<span class="plantao-disaster-triage-tag">Não classificado</span>';
+      const vitals=[
+        v.walks!=null ? (v.walks?"Deambula":"Não deambula") : null,
+        v.rr!=null ? "FR "+v.rr : null,
+        v.pulse ? "Pulso "+v.pulse : null,
+        v.mental ? esc(v.mental) : null
+      ].filter(Boolean);
+      const triage=['red','yellow','green','black'].map(k=>'<button class="'+k+(choice===k?' selected':'')+'" type="button" data-disaster-triage="'+esc(v.id)+':'+k+'" '+(!canTriage?'disabled':'')+'>'+DISASTER_TRIAGE_LABELS[k]+'</button>').join("");
+      const actionButton=v.life_saving_action
+        ? '<button class="button secondary '+(v.intervention_done?'disaster-action-done':'')+'" type="button" data-disaster-intervention="'+esc(v.id)+'" '+(!choice||v.intervention_done?'disabled':'')+'>'+(v.intervention_done?'✓ ':'')+esc(v.life_saving_label||"Intervenção salvadora")+'</button>'
+        :"";
+      const transportButton=v.transport_priority
+        ? '<button class="button secondary '+(v.transport_done?'disaster-action-done':'')+'" type="button" data-disaster-transport="'+esc(v.id)+'" '+(!choice||v.transport_done?'disabled':'')+'>'+(v.transport_done?'✓ ':'')+'Evacuar como prioridade '+esc(v.transport_priority)+'</button>'
+        :"";
+      return '<article class="plantao-disaster-victim"><div class="plantao-disaster-victim-head"><div style="display:flex;gap:9px"><span class="plantao-disaster-victim-id">'+esc(v.id)+'</span><div><h3>'+esc(v.label||"Vítima")+'</h3><p>'+esc(v.visible||"Avaliação rápida pendente.")+'</p></div></div>'+tag+'</div><div class="plantao-disaster-vitals">'+vitals.map(x=>'<span>'+x+'</span>').join("")+'</div><div class="plantao-disaster-triage-options">'+triage+'</div><div class="plantao-disaster-victim-actions">'+actionButton+transportButton+'</div></article>';
+    }).join("");
+
+    $("plantao-disaster-feed").innerHTML=(state.disaster.events||[]).slice().reverse().map(e=>'<div class="plantao-disaster-feed-item"><strong>T+'+fmtTime(e.time||0)+'</strong>'+esc(e.message)+'</div>').join("");
+    const finish=$("plantao-disaster-finish");
+    if(finish){
+      const triaged=(state.disaster.victims||[]).filter(v=>v.triage_choice).length;
+      finish.disabled=triaged<(state.disaster.victims||[]).length;
+      finish.textContent=finish.disabled?"Classifique todas as vítimas":"Encerrar operação · "+disasterScore()+"/100";
+    }
+  }
+
+  async function runDisasterCommand(id){
+    if(!isDisasterCase()||state.disaster?.commands?.[id]) return;
+    const cmd=DISASTER_COMMANDS.find(x=>x.id===id); if(!cmd)return;
+    state.disaster.commands[id]=true;
+    pushDisasterEvent(cmd.message,cmd.time);
+    await persistSession();
+    renderDisasterStage();
+  }
+
+  async function setDisasterTriage(victimId,choice){
+    if(!state.disaster?.commands?.start_start) return;
+    const victim=(state.disaster.victims||[]).find(v=>String(v.id)===String(victimId)); if(!victim)return;
+    const first=!victim.triage_choice;
+    victim.triage_choice=choice;
+    if(first) pushDisasterEvent(victim.id+" classificada como "+DISASTER_TRIAGE_LABELS[choice]+".",.4);
+    else pushDisasterEvent(victim.id+" reclassificada como "+DISASTER_TRIAGE_LABELS[choice]+".",.2);
+    await persistSession();
+    renderDisasterStage();
+  }
+
+  async function runDisasterIntervention(victimId){
+    const victim=(state.disaster?.victims||[]).find(v=>String(v.id)===String(victimId)); if(!victim||victim.intervention_done)return;
+    victim.intervention_done=true;
+    pushDisasterEvent(victim.id+": "+(victim.life_saving_result||victim.life_saving_label||"intervenção salvadora realizada")+"." ,Number(victim.action_time_min||.5));
+    await persistSession();
+    renderDisasterStage();
+  }
+
+  async function runDisasterTransport(victimId){
+    const victim=(state.disaster?.victims||[]).find(v=>String(v.id)===String(victimId)); if(!victim||victim.transport_done)return;
+    victim.transport_done=true;
+    pushDisasterEvent(victim.id+" encaminhada para evacuação prioritária ("+victim.transport_priority+").",.35);
+    await persistSession();
+    renderDisasterStage();
+  }
+
+  function renderDisasterDebrief(score){
+    const d=state.current.debrief||{};
+    $("plantao-debrief-title").textContent=state.current.title;
+    $("plantao-diagnosis").textContent="Incidente com múltiplas vítimas · desempenho operacional";
+    $("plantao-final-score").textContent=score;
+    $("plantao-pulo").textContent=d.pulo_do_gato||"Em múltiplas vítimas, a prioridade é maximizar sobreviventes: segurança, triagem rápida, intervenções salvadoras e transporte ordenado.";
+    const victims=state.disaster?.victims||[];
+    const correct=victims.filter(v=>v.triage_choice===v.correct_triage).length;
+    const under=victims.filter(v=>v.triage_choice && v.triage_choice!==v.correct_triage && ["yellow","green"].includes(v.triage_choice) && v.correct_triage==="red").length;
+    const performance=$("plantao-performance");
+    if(performance) performance.innerHTML=[
+      ["Tempo",fmtTime(state.elapsed)],["Triagem correta",correct+"/"+victims.length],["Subtriagens",String(under)],
+      ["Intervenções críticas",String(victims.filter(v=>v.intervention_done).length)],
+      ["Evacuações prioritárias",String(victims.filter(v=>v.transport_done).length)]
+    ].map(([a,b])=>'<div class="plantao-performance-row"><span>'+esc(a)+'</span><strong>'+esc(b)+'</strong></div>').join("");
+    const key=$("plantao-key-actions");
+    if(key) key.innerHTML=victims.map(v=>'<div class="plantao-review-item"><span>'+(v.triage_choice===v.correct_triage?'✓':'!')+'</span><span><strong>'+esc(v.id)+'</strong> · correto: '+esc(DISASTER_TRIAGE_LABELS[v.correct_triage]||v.correct_triage)+' · escolhido: '+esc(DISASTER_TRIAGE_LABELS[v.triage_choice]||"não classificado")+(v.triage_reason?' — '+esc(v.triage_reason):'')+'</span></div>').join("");
+    const danger=$("plantao-danger-actions");
+    if(danger) danger.innerHTML=(d.dangerous_actions||["Subtriagem de vítimas críticas.","Atraso de controle de hemorragia/via aérea.","Consumir tempo excessivo em uma única vítima."]).map(x=>'<div class="plantao-review-item"><span>!</span><span>'+esc(x)+'</span></div>').join("");
+    const seq=$("plantao-sequence-errors");
+    if(seq) seq.innerHTML=(d.sequence_errors||["Entrar na cena sem avaliar segurança.","Tratar detalhadamente antes de concluir a triagem primária."]).map(x=>'<div class="plantao-review-item"><span>↳</span><span>'+esc(x)+'</span></div>').join("");
+    const wrong=$("plantao-wrong-actions");
+    if(wrong) wrong.innerHTML=under?'<div class="plantao-review-item"><span>!</span><span>Houve subtriagem de '+under+' vítima(s) que deveriam ser prioridade vermelha.</span></div>':'<div class="plantao-review-item"><span>✓</span><span>Nenhuma subtriagem vermelha registrada.</span></div>';
+    const explain=$("plantao-case-explanation");
+    if(explain) explain.innerHTML='<section class="plantao-understand-topic"><h3>Como funciona a cena?</h3><p>'+esc(d.explanation||"A estação avalia comando inicial, START, intervenções salvadoras e ordem de evacuação. O objetivo não é completar um atendimento hospitalar individual, mas organizar recursos escassos para o maior benefício coletivo.")+'</p></section>';
+    const sources=$("plantao-sources");
+    if(sources) sources.innerHTML=(state.current.source_refs||[]).map(src=>'<a href="'+esc(src.url)+'" target="_blank" rel="noopener noreferrer">'+esc(src.title)+'</a>').join("");
+  }
+
+  async function finishDisasterCase(){
+    if(!isDisasterCase()||!state.session)return;
+    const victims=state.disaster?.victims||[];
+    if(victims.some(v=>!v.triage_choice)){
+      pushDisasterEvent("Ainda há vítimas sem classificação de triagem.",0);
+      renderDisasterStage();
+      return;
+    }
+    const score=disasterScore();
+    const result={final_score:score,scoring_version:"disaster-1",mode:"mass_casualty",elapsed_minutes:Math.ceil(state.elapsed),disaster:state.disaster};
+    const saved=await persistSession({status:"completed",completed_at:new Date().toISOString(),score,result});
+    if(saved){state.session.status="completed";state.sessions.unshift({id:state.session.id,case_id:state.current.id,status:"completed",score,result,started_at:state.session.started_at,completed_at:new Date().toISOString()});}
+    show("plantao-debrief");
+    renderDisasterDebrief(score);
+  }
+
+  function startDisasterCase(item,saved=null){
+    state.disaster=buildDisasterState(item,saved);
+    setDisasterShell(true);
+    renderDisasterStage();
+    show("plantao-simulator");
   }
 
   async function startCase(caseId) {
@@ -3959,6 +4215,14 @@
       clinicalSessionId:data.id,
       clinicalCaseId:item.id
     });
+
+    if(isDisasterCase(item)){
+      startDisasterCase(item);
+      await persistSession();
+      return;
+    }
+    state.disaster=null;
+    setDisasterShell(false);
 
     const safeOpening=item.presentation?.opening || item.presentation?.chief_complaint || "Paciente admitido para avaliação na sala de emergência.";
     $("plantao-setting").textContent=item.setting || "Sala de emergência";
@@ -4217,7 +4481,7 @@
   }
 
   function hasAnySuccessOutcome() {return E.success(state.current,state);}
-  function finalScore() {return E.score(state.current,state).total;}
+  function finalScore() {return isDisasterCase() ? disasterScore() : E.score(state.current,state).total;}
 
   async function finishCase(options={}) {
     if (!state.current || !state.session) return;
@@ -4387,6 +4651,8 @@
     else await discardActiveSession();
     state.current=null;
     state.session=null;
+    state.disaster=null;
+    setDisasterShell(false);
     clearPlantaoClinicalView();
     renderLibrary();
     $("plantao-action-drawer").hidden=true;
@@ -4417,6 +4683,19 @@
       return;
     }
 
+    const disasterCommand=event.target.closest("[data-disaster-command]");
+    if(disasterCommand){event.preventDefault();return runDisasterCommand(disasterCommand.dataset.disasterCommand);}
+    const disasterTriage=event.target.closest("[data-disaster-triage]");
+    if(disasterTriage){
+      event.preventDefault();
+      const [victimId,choice]=String(disasterTriage.dataset.disasterTriage||"").split(":");
+      return setDisasterTriage(victimId,choice);
+    }
+    const disasterIntervention=event.target.closest("[data-disaster-intervention]");
+    if(disasterIntervention){event.preventDefault();return runDisasterIntervention(disasterIntervention.dataset.disasterIntervention);}
+    const disasterTransport=event.target.closest("[data-disaster-transport]");
+    if(disasterTransport){event.preventDefault();return runDisasterTransport(disasterTransport.dataset.disasterTransport);}
+
     const tab=event.target.closest("[data-case-category]");
     if (tab) {
       $("plantao-action-search").value="";
@@ -4442,7 +4721,8 @@
     if (action) return runAction(action.dataset.caseAction);
   });
 
-  $("plantao-finish")?.addEventListener("click",()=>{if(state.disposition)finishCase();else openActions("hipoteses");});
+  $("plantao-finish")?.addEventListener("click",()=>{if(isDisasterCase())finishDisasterCase();else if(state.disposition)finishCase();else openActions("hipoteses");});
+  $("plantao-disaster-finish")?.addEventListener("click",finishDisasterCase);
   $("plantao-conduta-finish")?.addEventListener("click",()=>{if(state.disposition)finishCase();else feed("Defina a conduta final antes de finalizar o atendimento.","warning");});
   $("plantao-action-close")?.addEventListener("click",closeActions);
   $("plantao-action-search")?.addEventListener("input",renderActions);
