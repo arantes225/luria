@@ -5311,19 +5311,17 @@ async function carregarEntitlements() {
     (await sb.auth.getSession())?.data?.session?.user?.id
     || null;
 
+  // Entitlements são autorização: sempre confirmar no servidor primeiro.
+  // O cache existe somente para manter o último acesso válido em falha de rede.
   const cached =
     userId
       ? readFreshCache(
           entitlementsCacheKey(userId),
-          6 * 60 * 60 * 1000
+          24 * 60 * 60 * 1000
         )
       : null;
 
-  if (cached) {
-    return cached;
-  }
-
-  for (let attempt = 0; attempt < 2; attempt += 1) {
+  for (let attempt = 0; attempt < 3; attempt += 1) {
     try {
       const { data, error } =
         await sb.rpc("get_my_entitlements");
@@ -5349,18 +5347,16 @@ async function carregarEntitlements() {
       );
     }
 
-    if (attempt === 0) {
-      await new Promise(resolve => setTimeout(resolve, 350));
+    if (attempt < 2) {
+      await new Promise(
+        resolve => setTimeout(resolve, 350 * (attempt + 1))
+      );
     }
   }
 
-  if (cached) {
-    return cached;
-  }
-
-  return essentialEntitlementsFallback();
+  // Não rebaixa silenciosamente Plus/Pro para Essential por erro transitório.
+  return cached || null;
 }
-
 
 function temFeature(
   entitlements,
@@ -5789,9 +5785,9 @@ async function iniciarApp() {
   const cachedEntitlements =
     readFreshCache(
       entitlementsCacheKey(user.id),
-      6 * 60 * 60 * 1000
+      24 * 60 * 60 * 1000
     )
-    || essentialEntitlementsFallback();
+    || null;
 
   const cachedAdmin =
     readFreshCache(
