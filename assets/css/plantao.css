@@ -5906,3 +5906,149 @@ body.plantao-module-entry .plantao-record-button{
     min-height:0!important;
   }
 }
+
+
+/* === Sala de Emergência · themed featured hero v28 === */
+/* Cabeçalho no mesmo padrão das demais páginas do LURIA. */
+body.plantao-module-entry .plantao-standard-topbar{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  margin-bottom:16px!important;
+}
+body.plantao-module-entry .plantao-standard-topbar .page-heading .eyebrow{
+  display:block!important;
+}
+body.plantao-module-entry .plantao-standard-topbar .page-heading h1{
+  display:block!important;
+}
+
+/* Destaque escuro, tematizável, sem depender de fotografia de paciente. */
+body.plantao-module-entry .plantao-featured-case{
+  position:relative!important;
+  isolation:isolate!important;
+  background:
+    linear-gradient(105deg,
+      color-mix(in srgb,var(--accent) 86%,black 14%) 0%,
+      color-mix(in srgb,var(--accent) 78%,black 22%) 48%,
+      color-mix(in srgb,var(--accent) 62%,black 12%) 100%
+    )!important;
+}
+body.plantao-module-entry .plantao-featured-case::before{
+  background:
+    linear-gradient(90deg,
+      rgba(4,19,39,.52) 0%,
+      rgba(4,19,39,.28) 52%,
+      rgba(4,19,39,.05) 100%
+    )!important;
+  z-index:0!important;
+}
+body.plantao-module-entry .plantao-featured-inner{
+  position:relative!important;
+  z-index:2!important;
+}
+body.plantao-module-entry .plantao-featured-label,
+body.plantao-module-entry .plantao-featured-meta,
+body.plantao-module-entry .plantao-featured-copy h2,
+body.plantao-module-entry .plantao-featured-copy p,
+body.plantao-module-entry .plantao-featured-tags span{
+  color:#fff!important;
+}
+body.plantao-module-entry .plantao-featured-copy p{
+  opacity:.9!important;
+}
+body.plantao-module-entry .plantao-featured-tags span{
+  background:rgba(255,255,255,.13)!important;
+  border:1px solid rgba(255,255,255,.10)!important;
+}
+body.plantao-module-entry .plantao-featured-start{
+  background:#fff!important;
+  color:color-mix(in srgb,var(--accent) 78%,black 22%)!important;
+}
+
+/* Arte HTML reaproveitada do hub do Simulador: monitor + maca + suporte. */
+body.plantao-module-entry .plantao-featured-art{
+  position:absolute;
+  z-index:1;
+  inset:0 0 0 auto;
+  width:43%;
+  overflow:hidden;
+  opacity:.55;
+  pointer-events:none;
+}
+body.plantao-module-entry .plantao-featured-room-wall{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,transparent 0 11%,rgba(255,255,255,.06) 11% 12%,transparent 12% 100%),
+    linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,0));
+}
+body.plantao-module-entry .plantao-featured-monitor{
+  position:absolute;right:44px;top:28px;width:92px;height:58px;
+}
+body.plantao-module-entry .plantao-featured-monitor .screen{
+  position:absolute;inset:0 0 11px;
+  border:4px solid rgba(4,39,74,.46);
+  border-radius:4px;
+  background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(7,61,107,.20));
+}
+body.plantao-module-entry .plantao-featured-monitor .screen::before{
+  content:"";position:absolute;left:11px;right:11px;top:21px;height:2px;
+  background:rgba(220,241,255,.72);
+  clip-path:polygon(0 45%,18% 45%,26% 0,35% 100%,43% 45%,61% 45%,69% 18%,77% 74%,84% 45%,100% 45%,100% 58%,84% 58%,77% 88%,68% 36%,62% 58%,44% 58%,35% 100%,25% 22%,20% 58%,0 58%);
+}
+body.plantao-module-entry .plantao-featured-monitor .stand{
+  position:absolute;left:41px;bottom:0;width:9px;height:13px;background:rgba(5,44,80,.35);
+}
+body.plantao-module-entry .plantao-featured-monitor::after{
+  content:"";position:absolute;left:22px;bottom:-2px;width:48px;height:5px;border-radius:5px;background:rgba(5,44,80,.32);
+}
+body.plantao-module-entry .plantao-featured-bed{
+  position:absolute;right:0;bottom:23px;width:185px;height:74px;
+  border-radius:9px 4px 5px 5px;
+  background:linear-gradient(180deg,rgba(225,241,252,.38),rgba(155,201,231,.16));
+  transform:skewX(-4deg);
+  box-shadow:0 12px 18px rgba(0,36,72,.08);
+}
+body.plantao-module-entry .plantao-featured-bed::before{
+  content:"";position:absolute;left:14px;right:12px;bottom:-13px;height:13px;
+  border-left:5px solid rgba(220,239,253,.26);border-right:5px solid rgba(220,239,253,.26);
+}
+body.plantao-module-entry .plantao-featured-bed .pillow{
+  position:absolute;left:20px;top:8px;width:52px;height:25px;border-radius:9px;background:rgba(235,247,255,.34);
+}
+body.plantao-module-entry .plantao-featured-bed .rail{
+  position:absolute;right:15px;top:-20px;width:72px;height:27px;border:4px solid rgba(230,245,255,.25);border-bottom:0;border-radius:6px 6px 0 0;
+}
+body.plantao-module-entry .plantao-featured-iv{
+  position:absolute;right:171px;top:29px;width:26px;height:127px;
+}
+body.plantao-module-entry .plantao-featured-iv::before{
+  content:"";position:absolute;left:12px;top:0;width:3px;height:110px;background:rgba(230,245,255,.30);
+}
+body.plantao-module-entry .plantao-featured-iv::after{
+  content:"";position:absolute;left:0;bottom:8px;width:26px;height:3px;background:rgba(230,245,255,.25);
+}
+body.plantao-module-entry .plantao-featured-iv span{
+  position:absolute;left:2px;top:6px;width:13px;height:21px;border:2px solid rgba(235,248,255,.32);border-radius:3px;
+}
+body.plantao-module-entry .plantao-featured-cart{
+  position:absolute;right:197px;bottom:26px;width:45px;height:55px;border-radius:4px;
+  background:rgba(226,242,253,.13);
+  box-shadow:0 26px 0 -21px rgba(226,242,253,.18);
+}
+
+/* O modo rosa usa o mesmo HTML e herda a cor do tema automaticamente. */
+html[data-theme="leila-mood"] body.plantao-module-entry .plantao-featured-case{
+  background:
+    linear-gradient(105deg,
+      color-mix(in srgb,var(--accent) 82%,black 18%) 0%,
+      color-mix(in srgb,var(--accent) 74%,black 20%) 48%,
+      color-mix(in srgb,var(--accent) 70%,white 8%) 100%
+    )!important;
+}
+@media(max-width:760px){
+  body.plantao-module-entry .plantao-featured-art{
+    width:52%;
+    opacity:.28;
+  }
+}
