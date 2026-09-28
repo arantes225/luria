@@ -67,9 +67,16 @@
       lines.push("");
     }
 
+    const followUp = Array.isArray(data.follow_up) ? data.follow_up : [];
+    if (followUp.length) {
+      lines.push("REAVALIAÇÃO:");
+      followUp.forEach((x) => lines.push(`- ${x}`));
+      lines.push("");
+    }
+
     const warnings = Array.isArray(data.warnings) ? data.warnings : [];
     if (warnings.length) {
-      lines.push("ATENÇÃO:");
+      lines.push("SINAIS DE ALARME / ATENÇÃO:");
       warnings.forEach((x) => lines.push(`- ${x}`));
     }
 
@@ -268,12 +275,15 @@
       <div class="recipe-status-note ${s.cls}">${esc(s.help)}</div>
 
       ${renderVerifiedRoutes(data)}
-      ${renderSourceRegimen(data)}
+      ${data.eligibility ? `<section class="recipe-detail-section info"><h3>Quando este esquema se aplica</h3><p>${esc(data.eligibility)}</p></section>` : ""}
+      ${listBlock("Pontos-chave do protocolo", data.key_corrections, "info")}
       ${listBlock("Orientações", data.orientations)}
+      ${listBlock("Reavaliação e seguimento", data.follow_up, "follow")}
+      ${listBlock("Sinais de alarme / atenção", data.warnings, "warn")}
       ${listBlock("Não incluir automaticamente", data.do_not_include, "danger")}
-      ${listBlock("Atenção", data.warnings, "warn")}
       ${data.review_note ? `<section class="recipe-detail-section warn"><h3>Revisão pendente</h3><p>${esc(data.review_note)}</p></section>` : ""}
       ${data.corrected_key_point ? `<section class="recipe-detail-section info"><h3>Correção já aplicada</h3><p>${esc(data.corrected_key_point)}</p></section>` : ""}
+      ${renderSourceRegimen(data)}
       ${data.source_excerpt ? `<details class="recipe-source-excerpt"><summary>Trecho de origem do seu resumo</summary><p>${esc(data.source_excerpt)}</p></details>` : ""}
       ${renderReferences(data)}
     `;
