@@ -41,6 +41,14 @@
     .pm-deck-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
     .pm-deck-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--surface-2);color:var(--accent);font-weight:900}
     .pm-deck-date{font-size:11px;color:var(--muted);font-weight:750}
+    .pm-deck-actions{position:relative;margin-left:auto}
+    .pm-deck-more{width:34px;height:34px;display:grid;place-items:center;border:0;border-radius:9px;background:transparent;color:var(--muted);font-size:20px;line-height:1;cursor:pointer}
+    .pm-deck-more:hover,.pm-deck-more[aria-expanded="true"]{background:var(--surface-2);color:var(--text)}
+    .pm-deck-menu{position:absolute;right:0;top:38px;z-index:40;min-width:155px;padding:6px;border:1px solid var(--border);border-radius:10px;background:var(--surface);box-shadow:0 12px 30px rgba(15,35,65,.16)}
+    .pm-deck-menu[hidden]{display:none!important}
+    .pm-deck-menu button{display:block;width:100%;min-height:36px;padding:8px 10px;border:0;border-radius:7px;background:transparent;color:var(--text);font:inherit;font-size:10px;font-weight:750;text-align:left;cursor:pointer}
+    .pm-deck-menu button:hover{background:var(--surface-2)}
+    .pm-deck-menu button.danger{color:var(--danger,#d84b4b)}
     .pm-deck h3{margin:14px 0 4px;font-size:18px;line-height:1.2;letter-spacing:-.015em}
     .pm-deck p{margin:0;color:var(--muted);font-size:11px}
     .pm-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:14px}
@@ -210,7 +218,7 @@
   <dialog class="pm-dialog" id="pm-deck-dialog">
     <form id="pm-deck-form" method="dialog">
       <div class="pm-dialog-head">
-        <h2>Novo passômetro</h2>
+        <h2 id="pm-deck-dialog-title">Novo passômetro</h2>
         <button class="pm-close" type="button" data-close-dialog="pm-deck-dialog">×</button>
       </div>
       <div class="pm-form">
@@ -426,7 +434,7 @@
   (() => {
     const STORAGE_KEY = "luria:passometro:v1";
     const RETENTION_MS = 30 * 24 * 60 * 60 * 1000;
-    const state = { decks: [], activeDeckId: null, editingPatientId: null, switches: {}, priority: "none" };
+    const state = { decks: [], activeDeckId: null, editingDeckId: null, editingPatientId: null, switches: {}, priority: "none" };
     const $ = (s, r=document) => r.querySelector(s);
     const $$ = (s, r=document) => [...r.querySelectorAll(s)];
     const esc = (v="") => String(v).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
@@ -470,7 +478,7 @@
         const createdAt = Number(d.createdAt || Date.now());
         const daysLeft = Math.max(0, Math.ceil((RETENTION_MS - (Date.now() - createdAt)) / (24*60*60*1000)));
         return `<article class="pm-deck" data-deck-id="${d.id}">
-          <div class="pm-deck-head"><span class="pm-deck-icon">P</span><span class="pm-deck-date">${esc(fmtDate(d.date))}</span></div>
+          <div class="pm-deck-head"><span class="pm-deck-icon">P</span><span class="pm-deck-date">${esc(fmtDate(d.date))}</span><div class="pm-deck-actions"><button class="pm-deck-more" type="button" data-deck-menu-toggle="${d.id}" aria-label="Opções do passômetro" aria-expanded="false">⋯</button><div class="pm-deck-menu" data-deck-menu="${d.id}" hidden><button type="button" data-deck-edit="${d.id}">Editar</button><button type="button" class="danger" data-deck-delete="${d.id}">Excluir</button></div></div></div>
           <h3>${esc(d.hospital)}</h3>
           <p>${esc(d.sector||"Setor não informado")}${d.shift?" · "+esc(d.shift):""}</p>
           <div class="pm-meta"><span class="pm-chip">${(d.patients||[]).length} pacientes</span><span class="pm-chip">${pend} pendências</span><span class="pm-chip">expira em ${daysLeft}d</span></div>
@@ -514,16 +522,71 @@
     function closeDialog(id){ const d=document.getElementById(id); if(d?.open) d.close(); }
     $$("[data-close-dialog]").forEach(b=>b.addEventListener("click",()=>closeDialog(b.dataset.closeDialog)));
     $("#pm-new").addEventListener("click",()=>{
-      const f=$("#pm-deck-form"); f.reset(); $("#deck-date").value=new Date().toISOString().slice(0,10); $("#pm-deck-dialog").showModal();
+      state.editingDeckId=null;
+      const f=$("#pm-deck-form"); f.reset();
+      $("#pm-deck-dialog-title").textContent="Novo passômetro";
+      $("#deck-date").value=new Date().toISOString().slice(0,10);
+      $("#pm-deck-dialog").showModal();
     });
     $("#pm-deck-form").addEventListener("submit",e=>{
       e.preventDefault();
       const fd=new FormData(e.currentTarget);
-      const d={id:uid(),hospital:String(fd.get("hospital")||"").trim(),date:String(fd.get("date")||""),sector:String(fd.get("sector")||"").trim(),shift:String(fd.get("shift")||""),createdAt:Date.now(),patients:[]};
-      if(!d.hospital||!d.date) return;
-      state.decks.push(d); save(); closeDialog("pm-deck-dialog"); renderDecks(); openDeck(d.id);
+      const values={hospital:String(fd.get("hospital")||"").trim(),date:String(fd.get("date")||""),sector:String(fd.get("sector")||"").trim(),shift:String(fd.get("shift")||"")};
+      if(!values.hospital||!values.date) return;
+      let d;
+      if(state.editingDeckId){
+        d=state.decks.find(x=>x.id===state.editingDeckId);
+        if(!d) return;
+        Object.assign(d,values);
+      }else{
+        d={id:uid(),...values,createdAt:Date.now(),patients:[]};
+        state.decks.push(d);
+      }
+      state.editingDeckId=null;
+      save(); closeDialog("pm-deck-dialog"); renderDecks(); openDeck(d.id);
     });
-    $("#pm-decks").addEventListener("click",e=>{ const card=e.target.closest("[data-deck-id]"); if(card) openDeck(card.dataset.deckId); });
+    $("#pm-decks").addEventListener("click",e=>{
+      const toggle=e.target.closest("[data-deck-menu-toggle]");
+      if(toggle){
+        e.stopPropagation();
+        const id=toggle.dataset.deckMenuToggle;
+        const menu=$('[data-deck-menu="'+id+'"]');
+        const willOpen=menu?.hidden;
+        $("[data-deck-menu]").forEach(m=>m.hidden=true);
+        $("[data-deck-menu-toggle]").forEach(b=>b.setAttribute("aria-expanded","false"));
+        if(menu){menu.hidden=!willOpen;toggle.setAttribute("aria-expanded",willOpen?"true":"false");}
+        return;
+      }
+      const edit=e.target.closest("[data-deck-edit]");
+      if(edit){
+        e.stopPropagation();
+        const d=state.decks.find(x=>x.id===edit.dataset.deckEdit); if(!d) return;
+        state.editingDeckId=d.id;
+        const form=$("#pm-deck-form"); form.reset();
+        form.elements.hospital.value=d.hospital||"";
+        form.elements.date.value=d.date||"";
+        form.elements.sector.value=d.sector||"";
+        form.elements.shift.value=d.shift||"";
+        $("#pm-deck-dialog-title").textContent="Editar passômetro";
+        $("#pm-deck-dialog").showModal();
+        return;
+      }
+      const del=e.target.closest("[data-deck-delete]");
+      if(del){
+        e.stopPropagation();
+        const d=state.decks.find(x=>x.id===del.dataset.deckDelete); if(!d) return;
+        if(!confirm('Excluir o passômetro de "'+d.hospital+'" e todos os pacientes nele?')) return;
+        state.decks=state.decks.filter(x=>x.id!==d.id);
+        save(); renderDecks();
+        return;
+      }
+      const card=e.target.closest("[data-deck-id]"); if(card) openDeck(card.dataset.deckId);
+    });
+    document.addEventListener("click",e=>{
+      if(e.target.closest(".pm-deck-actions")) return;
+      $("[data-deck-menu]").forEach(m=>m.hidden=true);
+      $("[data-deck-menu-toggle]").forEach(b=>b.setAttribute("aria-expanded","false"));
+    });
     $("#pm-back").addEventListener("click",()=>{ $("#pm-detail").hidden=true; $("#pm-list").hidden=false; state.activeDeckId=null; renderDecks(); });
     $("#pm-search").addEventListener("input",renderDecks);
 
