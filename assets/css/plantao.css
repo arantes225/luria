@@ -5468,3 +5468,31 @@ body.plantao-module-entry .plantao-record-photo img{
   transform:scale(1.22)!important;
   transform-origin:center 25%!important;
 }
+
+
+/* === Sala de Emergência · specialty folder labels v20 === */
+body.plantao-module-entry .plantao-record-folder-tab{
+  width:auto!important;
+  min-width:104px!important;
+  max-width:calc(100% - 42px)!important;
+  padding:0 12px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+}
+body.plantao-module-entry .plantao-record-folder-tab span{
+  display:block;
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color:#5f4b2f;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.035em;
+  text-transform:uppercase;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-folder-tab span{
+  color:#f0dfc3;
+}
