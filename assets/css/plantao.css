@@ -5611,3 +5611,231 @@ body.plantao-module-entry .plantao-record-photo img{
   transform:scale(var(--face-scale,2))!important;
   transform-origin:var(--face-x,50%) var(--face-y,22%)!important;
 }
+
+
+/* === Sala de Emergência · home/library split prep v24 === */
+/* Início e Biblioteca são duas visões da mesma página. */
+body.plantao-module-entry .plantao-primary-switch-wrap .plantao-native-switch>button{
+  flex:1 1 0!important;
+}
+
+/* Início: destaque semanal + continuidade. Sem filtros de biblioteca. */
+body.plantao-module-entry[data-case-library-view="home"] .plantao-library-inner-switch,
+body.plantao-module-entry[data-case-library-view="home"] .plantao-filter-row{
+  display:none!important;
+}
+body.plantao-module-entry[data-case-library-view="home"] #plantao-resume-card:not([hidden]){
+  display:grid!important;
+  grid-template-columns:auto minmax(0,1fr) auto!important;
+  min-height:96px!important;
+  margin-top:2px!important;
+}
+body.plantao-module-entry[data-case-library-view="home"] .plantao-quick-grid{
+  gap:12px!important;
+}
+
+/* Biblioteca: mesma tela, mas abre o catálogo completo e seus filtros. */
+body.plantao-module-entry[data-case-library-view="library"] #plantao-resume-card{
+  display:none!important;
+}
+body.plantao-module-entry[data-case-library-view="library"] .plantao-library-inner-switch{
+  display:grid!important;
+}
+
+/* O título muda via JS; reduz o espaço quando o seletor interno fica oculto. */
+body.plantao-module-entry[data-case-library-view="home"] .plantao-library-toolbar{
+  gap:6px!important;
+}
+body.plantao-module-entry[data-case-library-view="home"] .plantao-cases-section-head{
+  padding-top:0!important;
+}
+
+/* Mantém a lateral na mesma posição em ambas as visões. */
+body.plantao-module-entry[data-case-library-view="home"] .plantao-library-side,
+body.plantao-module-entry[data-case-library-view="library"] .plantao-library-side{
+  align-self:start!important;
+}
+
+@media(max-width:760px){
+  body.plantao-module-entry[data-case-library-view="home"] #plantao-resume-card:not([hidden]){
+    grid-template-columns:auto minmax(0,1fr)!important;
+  }
+  body.plantao-module-entry[data-case-library-view="home"] #plantao-resume-card .button{
+    grid-column:1/-1!important;
+    width:100%!important;
+  }
+}
+
+
+/* === Sala de Emergência · no-photo patient records v25 === */
+/* Remove retratos e usa o espaço superior para identificação do paciente. */
+body.plantao-module-entry .plantao-record-photo,
+body.plantao-module-entry .plantao-record-avatar{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-record-paper-header{
+  display:block!important;
+  grid-template-columns:none!important;
+  padding-left:0!important;
+}
+body.plantao-module-entry .plantao-record-title-wrap{
+  width:100%!important;
+}
+body.plantao-module-entry .plantao-record-patient{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:10px;
+  margin:2px 0 8px;
+  padding-bottom:7px;
+  border-bottom:1px solid #e5e8ef;
+}
+body.plantao-module-entry .plantao-record-patient strong{
+  min-width:0;
+  color:#172b4d;
+  font-size:12px;
+  font-weight:900;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+body.plantao-module-entry .plantao-record-patient span{
+  flex:0 0 auto;
+  color:#6d7d90;
+  font-size:8px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+/* A etiqueta vira um conjunto de abas/papéis encaixados na pasta. */
+body.plantao-module-entry .plantao-record-folder{
+  padding-top:28px!important;
+}
+body.plantao-module-entry .plantao-record-folder-tabs{
+  position:absolute;
+  top:0;
+  left:14px;
+  right:14px;
+  z-index:4;
+  display:flex;
+  align-items:flex-end;
+  gap:5px;
+  height:30px;
+}
+body.plantao-module-entry .plantao-record-folder-tab{
+  position:static!important;
+  height:27px!important;
+  min-width:104px!important;
+  max-width:52%!important;
+  padding:0 11px!important;
+  border-radius:9px 9px 0 0!important;
+}
+body.plantao-module-entry .plantao-record-paper-slip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:23px;
+  padding:0 9px;
+  margin-bottom:1px;
+  border:1px solid #d7c7a7;
+  border-bottom:0;
+  border-radius:7px 7px 0 0;
+  background:#f6eddd;
+  color:#6a573d;
+  box-shadow:0 -1px 0 rgba(255,255,255,.55) inset;
+  font-size:7.5px;
+  font-weight:900;
+  white-space:nowrap;
+}
+body.plantao-module-entry .plantao-record-paper-slip.difficulty{
+  background:#fff4d6;
+  color:#8b6619;
+}
+body.plantao-module-entry .plantao-record-paper-slip.time{
+  background:#edf3f9;
+  color:#556b82;
+}
+body.plantao-module-entry .plantao-record-folder::before{
+  inset:28px 0 8px 0!important;
+}
+body.plantao-module-entry .plantao-record-paper-back{
+  top:37px!important;
+}
+body.plantao-module-entry .plantao-record-paper{
+  margin-top:8px!important;
+}
+
+/* Chips internos de dificuldade/tempo deixam de existir: agora são "papéis" na aba. */
+body.plantao-module-entry .plantao-record-meta{
+  display:none!important;
+}
+
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-patient strong{
+  color:var(--text)!important;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-patient{
+  border-bottom-color:var(--border)!important;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-patient span{
+  color:var(--muted)!important;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-paper-slip{
+  border-color:#685a45;
+  background:#4c4132;
+  color:#e7d9bf;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-paper-slip.difficulty{
+  background:#53482c;
+  color:#f1d98c;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-paper-slip.time{
+  background:#344456;
+  color:#d7e5f4;
+}
+
+@media(max-width:620px){
+  body.plantao-module-entry .plantao-record-folder-tabs{
+    left:10px;
+    right:10px;
+    gap:4px;
+  }
+  body.plantao-module-entry .plantao-record-folder-tab{
+    min-width:92px!important;
+    max-width:48%!important;
+  }
+  body.plantao-module-entry .plantao-record-paper-slip{
+    padding:0 7px;
+    font-size:7px;
+  }
+}
+
+
+/* === Sala de Emergência · align plantao summary with featured v26 === */
+/* O bloco "Seu plantão hoje" nasce exatamente no mesmo eixo vertical do caso em destaque. */
+body.plantao-module-entry #plantao-library{
+  align-items:start!important;
+}
+body.plantao-module-entry .plantao-quick-grid,
+body.plantao-module-entry .plantao-library-side{
+  margin-top:0!important;
+  padding-top:0!important;
+}
+body.plantao-module-entry .plantao-library-side{
+  grid-column:2!important;
+  grid-row:1 / span 3!important;
+  align-self:start!important;
+  justify-self:stretch!important;
+  position:static!important;
+  top:auto!important;
+  transform:none!important;
+}
+body.plantao-module-entry .plantao-library-side>.plantao-side-card:first-child{
+  margin-top:0!important;
+}
+@media(max-width:940px){
+  body.plantao-module-entry .plantao-library-side{
+    grid-column:1!important;
+    grid-row:auto!important;
+    position:static!important;
+  }
+}
