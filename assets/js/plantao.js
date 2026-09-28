@@ -6,6 +6,7 @@
   if (!sb) return;
 
   const $ = (id) => document.getElementById(id);
+  const ENTRY_MODE = String(document.body?.dataset?.plantaoEntry || "").trim().toLowerCase();
   const esc = (value) => String(value ?? "")
     .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
     .replaceAll('"',"&quot;").replaceAll("'","&#039;");
@@ -318,13 +319,21 @@
     renderLibrary();
 
     const savedView=readPlantaoView();
-    if(savedView.mode==="phone" && phoneAllowed){
+
+    if(ENTRY_MODE==="phone"){
+      if(phoneAllowed){
+        setPlantaoMode("phone");
+        if(getPhoneDraft()) restorePhoneDraft();
+        return;
+      }
+      setPlantaoMode("emergency");
+    }else if(ENTRY_MODE!=="emergency" && savedView.mode==="phone" && phoneAllowed){
       setPlantaoMode("phone");
       if(getPhoneDraft()) restorePhoneDraft();
       return;
+    }else{
+      setPlantaoMode("emergency");
     }
-
-    setPlantaoMode("emergency");
     if(savedView.clinicalSessionId && ["plantao-simulator","plantao-debrief"].includes(savedView.section)){
       const activeRes=await sb.from("clinical_case_sessions")
         .select("id,case_id,status,started_at,completed_at,elapsed_minutes,score,result,state,action_log")
@@ -937,6 +946,10 @@
     state.phoneSession=null; state.phoneCase=null; state.phoneTurn=0; state.phoneUsedChoices=new Set();
     $("plantao-phone-station").hidden=true;
     $("plantao-phone-inbox").hidden=false;
+    if(ENTRY_MODE==="phone"){
+      window.location.href="/plantao/";
+      return;
+    }
     setPlantaoMode("emergency");
   });
 
