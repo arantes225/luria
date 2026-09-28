@@ -118,23 +118,16 @@
                 <button type="button" data-error-state="consolidating">Em consolidação</button>
                 <button type="button" data-error-state="mastered">Dominados</button>
               </div>
+              <div class="error-review-action-switch" aria-label="Ações de revisão">
+                <button id="error-review-home-now" class="active" type="button">▶ Revisar agora</button>
+                <button id="error-review-home-create" type="button">＋ Criar nova revisão</button>
+              </div>
               <div class="error-library-tools">
                 <div class="error-library-field error-library-area-field"><span>Área</span><div class="error-library-area-picker"><button id="error-library-area-toggle" class="error-library-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="error-library-area-label">Todas as áreas</span><span class="error-library-area-chevron" aria-hidden="true">⌄</span></button><div id="error-library-area-menu" class="error-library-area-menu" role="listbox" hidden></div><select id="error-library-area" class="error-library-area-native" data-luria-general-area-select data-blank-label="Todas as áreas" tabindex="-1" aria-hidden="true"><option value="">Todas as áreas</option></select></div></div>
                 <label class="error-library-field error-library-search"><span>Buscar</span><input id="error-library-search" type="search" placeholder="Buscar no caderno..."></label>
               </div>
             </div>
-
-            <div id="error-review-home-content" class="error-review-home-content">
-              <div class="error-review-home-actions">
-                <div><h3>Hora de revisar?</h3><p>Continue pela fila de hoje ou monte uma revisão escolhendo seus próprios cadernos.</p></div>
-                <div class="error-review-home-buttons">
-                  <button id="error-review-home-now" class="button primary" type="button">▶ Revisar agora</button>
-                  <button id="error-review-home-create" class="button secondary" type="button">＋ Criar nova revisão</button>
-                </div>
-              </div>
-            </div>
-
-            <section class="error-library-panel error-section active" data-error-section="library" hidden>
+<section class="error-library-panel error-section active" data-error-section="library" hidden>
               <div class="error-library-title error-library-title-minimal"><span id="error-library-count" class="badge accent">—</span></div>
               <div id="error-library-bulk" class="error-library-bulk">
                 <label class="error-bulk-check"><input id="error-library-select-all" type="checkbox"><span>Selecionar visíveis</span></label>
