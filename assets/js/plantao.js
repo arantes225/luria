@@ -622,6 +622,13 @@
         const materia=caseMateria(featured);
         featuredHost.style.setProperty("--featured-image",`url("${plantaoReferenceImage(featured,0)}")`);
         featuredHost.innerHTML=`
+          <div class="plantao-featured-art" aria-hidden="true">
+            <div class="plantao-featured-room-wall"></div>
+            <div class="plantao-featured-monitor"><span class="screen"></span><span class="stand"></span></div>
+            <div class="plantao-featured-iv"><span></span></div>
+            <div class="plantao-featured-bed"><span class="pillow"></span><span class="rail"></span></div>
+            <div class="plantao-featured-cart"></div>
+          </div>
           <div class="plantao-featured-inner">
             <div class="plantao-featured-top">
               <span class="plantao-featured-label">★ Caso em destaque</span>
