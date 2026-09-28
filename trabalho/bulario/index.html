@@ -16,14 +16,17 @@
   <style>
     .bulario{display:grid;gap:14px}.bulario-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
     .bulario-search{flex:1;min-width:220px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text)}
-    .bulario-count{font-size:13px;color:var(--muted)}.drug-list{display:grid;gap:8px}
-    .drug{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
-    .drug b{display:block;margin-bottom:4px}.drug small{color:var(--muted);line-height:1.4}
-    .drug details{margin-top:10px}.drug summary{cursor:pointer;color:var(--accent);font-weight:700}
-    .drug p{margin:9px 0;line-height:1.5}.drug a{color:var(--accent);font-weight:700}
-    .drug .conditions{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.drug .conditions span{padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--text);font-size:13px}
-    .drug .pending{font-size:13px;color:var(--muted)}
+    .bulario-count{font-size:13px;color:var(--muted)}.bulario-layout{display:grid;grid-template-columns:minmax(230px,330px) minmax(0,1fr);gap:14px;align-items:start}
+    .drug-list{display:grid;gap:7px;max-height:calc(100vh - 190px);overflow:auto}.drug-row{width:100%;text-align:left;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);cursor:pointer}
+    .drug-row[aria-current="true"]{border-color:var(--accent);box-shadow:inset 3px 0 var(--accent)}.drug-row strong,.drug-row small{display:block}.drug-row small{color:var(--muted);margin-top:3px;line-height:1.35}
+    .drug-detail{padding:22px;border:1px solid var(--border);border-radius:18px;background:var(--surface);min-height:240px}.drug-detail h2{margin:4px 0;font-size:1.55rem}.drug-detail h3{margin:18px 0 9px;font-size:1.05rem}
+    .drug-detail p{line-height:1.5}.drug-detail a{color:var(--accent);font-weight:700}.drug-kicker{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}.drug-sub{color:var(--muted);margin:3px 0 14px}
+    .rx-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.rx-field{padding:11px 13px;border:1px solid var(--border);border-radius:12px}.rx-field span{display:block;color:var(--muted);font-size:12px;font-weight:700;margin-bottom:3px}.rx-field b{font-size:14px;line-height:1.4}
+    .rx-tags,.rx-products{display:flex;flex-wrap:wrap;gap:7px}.rx-tags span,.rx-products span{padding:6px 10px;border-radius:9px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));font-size:13px}
+    .rx-card{margin-top:15px;padding:16px;border:1px solid var(--border);border-radius:14px}.rx-card h3{margin-top:0}.rx-note{font-size:13px;color:var(--muted)}.rx-alert{padding:12px;border-radius:10px;background:color-mix(in srgb,var(--accent) 8%,var(--surface));line-height:1.45}
+    .rx-controls{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}.rx-controls label{display:grid;gap:5px;font-size:13px;font-weight:700}.rx-controls input,.rx-controls select{min-height:40px;width:130px;padding:8px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text)}.rx-result{font-weight:700;line-height:1.55}
     .empty{padding:20px;border:1px dashed var(--border);border-radius:14px;color:var(--muted)}
+    @media(max-width:760px){.bulario-layout{grid-template-columns:1fr}.drug-list{max-height:230px}.drug-detail{padding:16px}.rx-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body data-page="trabalho_bulario">
@@ -41,7 +44,7 @@
             <input id="drug-search" class="bulario-search" type="search" placeholder="Buscar medicamento, classe ou princípio ativo" autocomplete="off">
             <span id="drug-count" class="bulario-count"></span>
           </div>
-          <div id="drug-list" class="drug-list"><div class="empty">Carregando medicamentos…</div></div>
+          <div class="bulario-layout"><div id="drug-list" class="drug-list"><div class="empty">Carregando medicamentos…</div></div><article id="drug-detail" class="drug-detail"><div class="empty">Selecione um medicamento.</div></article></div>
         </section>
       </div>
     </main>
@@ -50,12 +53,6 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.14-tools"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
-  <script>
-    (()=>{const q=document.getElementById('drug-search'),box=document.getElementById('drug-list'),count=document.getElementById('drug-count');let rows=[];
-    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    const draw=()=>{const t=q.value.trim().toLowerCase(),r=t?rows.filter(x=>[x.name,x.active_ingredient,x.data?.therapeutic_class||x.therapeutic_class,x.pharmacological_class,...(Array.isArray(x.data?.diseases)?x.data.diseases:[])].some(v=>v&&v.toLowerCase().includes(t))):rows;count.textContent=`${r.length} medicamento${r.length===1?'':'s'}`;box.innerHTML=r.length?r.map(x=>{const d=x.data||{},verified=d.status==='verified'&&/^https:\/\/consultaremedios\.com\.br\/[\w-]+\/bula$/.test(d.leaflet_url||'');return `<article class="drug"><b>${esc(x.name)}</b><small>${esc(x.active_ingredient||'Princípio ativo a confirmar')} · ${esc(x.pharmacological_class||'Classe a confirmar')}<br>${esc(d.therapeutic_class||x.therapeutic_class||'Classe terapêutica a confirmar')}</small>${verified?`<details><summary>Ver informações da bula</summary><p><strong>Principais condições descritas na bula:</strong></p><div class="conditions">${(Array.isArray(d.diseases)?d.diseases:[]).map(v=>`<span>${esc(v)}</span>`).join('')}</div><p><strong>Indicação:</strong> ${esc(d.indication)}</p><p><strong>Apresentação:</strong> ${esc(d.presentation)}</p><a href="${esc(d.leaflet_url)}" target="_blank" rel="noopener noreferrer">Consultar bula do produto ↗</a><p class="pending">Resumo conferido em ${esc(d.reviewed_at)}. Indicações, dose, contraindicações e receita dependem da apresentação e do paciente; consulte a bula completa.</p></details>`:`<p class="pending">Bula deste produto ainda não conferida. <a href="https://consultas.anvisa.gov.br/#/bulario/" target="_blank" rel="noopener noreferrer">Pesquisar na Anvisa ↗</a></p>`}</article>`}).join(''):'<div class="empty">Nenhum medicamento encontrado.</div>'};
-    q.addEventListener('input',draw);
-    (async()=>{const {data,error}=await window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000);if(error){box.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';count.textContent='';return}rows=data||[];draw()})()})();
-  </script>
+  <script src="/assets/js/bulario.js?v=1"></script>
 </body>
 </html>
