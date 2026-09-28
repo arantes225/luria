@@ -16,6 +16,24 @@
       .filter(Boolean);
     return `<div class="rx-field rx-field-multiline"><span>${esc(label)}</span><b>${parts.map(x=>`<em class="rx-value-line">${esc(x)}</em>`).join('')}</b></div>`;
   };
+  const normalizeClinicalList=value=>{
+    if(Array.isArray(value)) return value.map(x=>String(x||'').trim()).filter(Boolean);
+    if(value&&typeof value==='object'){
+      return Object.entries(value).flatMap(([k,v])=>{
+        if(Array.isArray(v)) return v.map(item=>`${k}: ${item}`);
+        if(v==null||v==='') return [];
+        return [`${k}: ${v}`];
+      });
+    }
+    const raw=String(value||'').trim();
+    if(!raw)return [];
+    return raw.split(/\n+|\s*;\s*/).map(x=>x.trim()).filter(Boolean);
+  };
+  const clinicalList=(value,emptyText)=>{
+    const items=normalizeClinicalList(value);
+    if(!items.length)return `<p class="rx-note">${esc(emptyText)}</p>`;
+    return `<div class="rx-clinical-list">${items.map(item=>`<div class="rx-clinical-item">${esc(item)}</div>`).join('')}</div>`;
+  };
   function renderList(){
     const term=search.value.trim().toLocaleLowerCase('pt-BR');
     const matches=rows.filter(row=>[row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(value=>String(value||'').toLocaleLowerCase('pt-BR').includes(term)));
@@ -44,6 +62,8 @@
       <section class="rx-section"><div class="rx-section-head"><h3>Nomes e produtos</h3></div>${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:`<p class="rx-note">${esc(row.name)}${row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?` · princípio ativo: ${esc(row.active_ingredient)}`:''}. Outras marcas e genéricos ainda não vinculados.</p>`}</section>
       ${ready?presentationPicker(formulations):''}
       ${ready?formulations.map((f,i)=>`<section class="rx-card rx-presentation" data-formulation-index="${i}" ${i?'hidden':''}><div class="drug-kicker">Apresentação ${i+1}</div><h3>${esc(f.label)}</h3><section class="rx-posology"><div class="rx-posology-title"><h4>Posologia</h4><span>uma informação por linha</span></div><div class="rx-grid">${multilineField('Dose',f.dose_text)}${field('Intervalo',f.interval_text)}${multilineField('Via',f.route)}${field('Duração',f.duration_text)}${field('Público',f.population)}${field('Máximo em 24 h',f.max_daily_text)}${field('Como administrar',f.administration)}${field('Tipo de receita',f.prescription_type)}</div></section><p class="rx-alert"><strong>Conferir antes de prescrever:</strong> ${esc(f.cautions)}</p>${calculator(f,i)}<a href="${esc(f.source_url)}" target="_blank" rel="noopener noreferrer">Bula desta apresentação ↗</a></section>`).join(''):`<section class="rx-card"><h3>Prescrição</h3><p class="rx-note">Dose, intervalo, via, limite diário e ajustes desta apresentação ainda não foram conferidos. Consulte a bula antes de prescrever.</p>${d.indication?`<div class="rx-field"><span>Indicação resumida</span><b>${esc(d.indication)}</b></div>`:''}${d.presentation?`<div class="rx-field"><span>Apresentação</span><b>${esc(d.presentation)}</b></div>`:''}</section>`}
+      <section class="rx-section"><div class="rx-section-head"><h3>Reações adversas</h3></div>${clinicalList(d.adverse_reactions||d.adverse_effects,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
+      <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(d.leaflet_url||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
     detail.querySelectorAll('.rx-presentation-tab').forEach(tab=>tab.addEventListener('click',()=>{
       const index=Number(tab.dataset.formulationIndex);
