@@ -309,3 +309,27 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-section[data-flash-section="library"] .flash-notebook-icon{
   box-shadow:0 5px 12px rgba(24,72,136,.14)!important;
 }
+
+
+/* v24.7 — acabamento real dos cards de deck */
+.flash-section[data-flash-section="library"] .flash-ref-deck{
+  border:1.5px solid color-mix(in srgb,var(--accent) 46%,var(--border))!important;
+  border-left-width:1.5px!important;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface))!important;
+  box-shadow:0 9px 26px rgba(24,72,136,.06)!important;
+}
+.flash-section[data-flash-section="library"] .flash-ref-deck:hover{
+  border-color:color-mix(in srgb,var(--accent) 72%,var(--border))!important;
+  box-shadow:0 14px 32px rgba(24,72,136,.11)!important;
+}
+.flash-section[data-flash-section="library"] .flash-ref-deck::before,
+.flash-section[data-flash-section="library"] .flash-ref-deck::after{
+  content:none!important;
+  display:none!important;
+}
+.flash-section[data-flash-section="library"] .flash-ref-deck-stat{
+  border-right:0!important;
+}
+.flash-section[data-flash-section="library"] .flash-ref-deck-stats{
+  gap:10px!important;
+}
