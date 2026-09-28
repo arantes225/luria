@@ -4150,3 +4150,148 @@ body[data-page="plantao"] .plantao-module-back:hover::before{
 @media(max-width:1120px){.plantao-module-entry #plantao-case-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}.plantao-ref-nav a{padding:0 8px}.plantao-ref-intro,.plantao-library-toolbar,.plantao-module-entry .plantao-quick-grid,.plantao-module-entry #plantao-case-grid{padding-left:24px!important;padding-right:24px!important}}
 @media(max-width:860px){.plantao-ref-nav a span{display:none}.plantao-ref-intro{align-items:stretch!important;flex-direction:column!important}.plantao-ref-search{width:100%!important}.plantao-module-entry .plantao-quick-grid{grid-template-columns:1fr!important}.plantao-module-entry #plantao-case-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:620px){.plantao-ref-header{grid-template-columns:1fr auto;height:54px;padding:0 14px}.plantao-ref-brand img{width:100px}.plantao-ref-nav{position:fixed;left:10px;right:10px;bottom:10px;z-index:90;justify-content:space-around;height:54px;padding:4px;border:1px solid #dce5ef;border-radius:17px;background:rgba(255,255,255,.97);box-shadow:0 12px 28px rgba(20,54,92,.14);backdrop-filter:blur(12px)}.plantao-ref-nav a{width:44px;height:44px;justify-content:center;padding:0;font-size:15px}.plantao-ref-intro{padding:18px 16px 10px!important}.plantao-ref-intro h1{font-size:27px!important}.plantao-ref-intro p{font-size:10px!important}.plantao-library-toolbar,.plantao-module-entry .plantao-quick-grid,.plantao-module-entry #plantao-case-grid{padding-left:16px!important;padding-right:16px!important}.plantao-featured-inner{grid-template-columns:1fr!important;padding:16px!important}.plantao-featured-start{justify-self:start}.plantao-module-entry #plantao-case-grid{grid-template-columns:1fr!important;padding-bottom:86px!important}.plantao-case-card-ref-image{height:145px}}
+
+
+/* === Sala de Emergência · native switches v5 === */
+/* Topo volta a ficar simples; o switch principal agora mora abaixo do destaque. */
+.plantao-ref-header{
+  grid-template-columns:1fr auto!important;
+}
+.plantao-ref-header .plantao-ref-brand{justify-self:start}
+.plantao-ref-header .plantao-ref-actions{justify-self:end}
+
+/* Linguagem visual nativa da LURIA: container discreto + abas retangulares arredondadas. */
+.plantao-native-switch-wrap{
+  max-width:1420px;
+  margin:0 auto;
+  padding:0 34px 12px;
+}
+.plantao-native-switch{
+  display:flex!important;
+  align-items:center!important;
+  gap:4px!important;
+  width:100%!important;
+  padding:4px!important;
+  border:1px solid var(--border)!important;
+  border-radius:12px!important;
+  background:var(--surface-2)!important;
+  box-shadow:none!important;
+  overflow-x:auto!important;
+  scrollbar-width:none;
+}
+.plantao-native-switch::-webkit-scrollbar{display:none}
+.plantao-native-switch>a,
+.plantao-native-switch>button{
+  flex:1 0 auto!important;
+  min-width:max-content!important;
+  min-height:36px!important;
+  height:36px!important;
+  margin:0!important;
+  padding:0 12px!important;
+  border:0!important;
+  border-radius:8px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  box-shadow:none!important;
+  font-size:10px!important;
+  font-weight:800!important;
+  line-height:1!important;
+  text-decoration:none!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:6px!important;
+  transition:background .15s ease,color .15s ease;
+}
+.plantao-native-switch>a:hover,
+.plantao-native-switch>button:hover{
+  background:var(--surface)!important;
+  color:var(--text)!important;
+}
+.plantao-native-switch>a.active,
+.plantao-native-switch>button.active{
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  box-shadow:0 1px 2px rgba(15,23,42,.05)!important;
+}
+
+/* Switch principal */
+.plantao-primary-switch-wrap{
+  margin-top:0;
+  margin-bottom:2px;
+}
+.plantao-primary-switch-wrap .plantao-ref-nav{
+  position:static!important;
+  inset:auto!important;
+  height:auto!important;
+  justify-content:stretch!important;
+}
+.plantao-primary-switch-wrap .plantao-ref-nav a{
+  width:auto!important;
+}
+
+/* Switch de tipo de caso no mesmo padrão visual. */
+.plantao-library-toolbar{
+  padding-top:0!important;
+}
+.plantao-specialty-native-switch{
+  margin:0 0 10px!important;
+  padding:4px!important;
+  border-radius:12px!important;
+  background:var(--surface-2)!important;
+}
+.plantao-specialty-native-switch .plantao-specialty-chip{
+  border:0!important;
+  border-radius:8px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  min-height:36px!important;
+  height:36px!important;
+  padding:0 12px!important;
+  font-size:10px!important;
+  font-weight:800!important;
+  box-shadow:none!important;
+}
+.plantao-specialty-native-switch .plantao-specialty-chip.active{
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  box-shadow:0 1px 2px rgba(15,23,42,.05)!important;
+}
+
+/* Mantém ambos com o mesmo alinhamento e largura do conteúdo principal. */
+.plantao-primary-switch-wrap,
+.plantao-library-toolbar{
+  max-width:1420px!important;
+}
+@media(max-width:1120px){
+  .plantao-native-switch-wrap{padding-left:24px!important;padding-right:24px!important}
+}
+@media(max-width:620px){
+  .plantao-native-switch-wrap{padding-left:16px!important;padding-right:16px!important}
+  .plantao-primary-switch-wrap .plantao-ref-nav{
+    position:static!important;
+    left:auto!important;
+    right:auto!important;
+    bottom:auto!important;
+    z-index:auto!important;
+    height:auto!important;
+    padding:4px!important;
+    border:1px solid var(--border)!important;
+    border-radius:12px!important;
+    background:var(--surface-2)!important;
+    box-shadow:none!important;
+    backdrop-filter:none!important;
+  }
+  .plantao-primary-switch-wrap .plantao-ref-nav a{
+    width:auto!important;
+    height:36px!important;
+    padding:0 10px!important;
+    font-size:10px!important;
+  }
+  .plantao-primary-switch-wrap .plantao-ref-nav a span{
+    display:inline!important;
+  }
+  .plantao-specialty-native-switch .plantao-specialty-chip{
+    flex:0 0 auto!important;
+  }
+}
