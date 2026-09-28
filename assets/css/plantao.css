@@ -5387,3 +5387,50 @@ body.plantao-module-entry .plantao-record-button{
     margin-right:6px!important;
   }
 }
+
+
+/* === Sala de Emergência · equal patient record heights v17 === */
+/* Todos os prontuários com a mesma altura visual em cada linha. */
+body.plantao-module-entry #plantao-case-grid{
+  align-items:stretch!important;
+}
+body.plantao-module-entry .plantao-case-record{
+  display:flex!important;
+  height:100%!important;
+  align-self:stretch!important;
+}
+body.plantao-module-entry .plantao-record-folder{
+  display:flex!important;
+  width:100%!important;
+  height:100%!important;
+  min-height:430px!important;
+}
+body.plantao-module-entry .plantao-record-paper{
+  display:flex!important;
+  flex-direction:column!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:400px!important;
+}
+body.plantao-module-entry .plantao-record-lines{
+  flex:1 1 auto!important;
+}
+body.plantao-module-entry .plantao-record-button{
+  margin-top:auto!important;
+}
+@media(max-width:1180px){
+  body.plantao-module-entry .plantao-record-folder{
+    min-height:420px!important;
+  }
+  body.plantao-module-entry .plantao-record-paper{
+    min-height:390px!important;
+  }
+}
+@media(max-width:620px){
+  body.plantao-module-entry .plantao-record-folder{
+    min-height:0!important;
+  }
+  body.plantao-module-entry .plantao-record-paper{
+    min-height:0!important;
+  }
+}
