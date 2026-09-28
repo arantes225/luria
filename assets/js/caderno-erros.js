@@ -306,40 +306,16 @@ async function loadErrorMetrics() {
     };
 
 
-  document
-    .getElementById(
-      "error-metric-registered"
-    )
-    .textContent =
-      Number(
-        metrics
-          .registered_errors
-        || 0
-      );
+  const registeredMetric = document.getElementById("error-metric-registered");
+  if (registeredMetric) registeredMetric.textContent = Number(metrics.registered_errors || 0);
 
 
-  document
-    .getElementById(
-      "error-metric-reviewed"
-    )
-    .textContent =
-      Number(
-        metrics
-          .reviewed_errors
-        || 0
-      );
+  const reviewedMetric = document.getElementById("error-metric-reviewed");
+  if (reviewedMetric) reviewedMetric.textContent = Number(metrics.reviewed_errors || 0);
 
 
-  document
-    .getElementById(
-      "error-metric-overdue"
-    )
-    .textContent =
-      Number(
-        metrics
-          .overdue_errors
-        || 0
-      );
+  const overdueMetric = document.getElementById("error-metric-overdue");
+  if (overdueMetric) overdueMetric.textContent = Number(metrics.overdue_errors || 0);
 
 
   const retention =
@@ -347,22 +323,13 @@ async function loadErrorMetrics() {
       .retention_percent;
 
 
-  document
-    .getElementById(
-      "error-metric-retention"
-    )
-    .textContent =
-      retention === null
-      || retention === undefined
+  const retentionMetric = document.getElementById("error-metric-retention");
+  if (retentionMetric) {
+    retentionMetric.textContent =
+      retention === null || retention === undefined
         ? "—"
-        : `${Number(
-            retention
-          )
-            .toFixed(1)
-            .replace(
-              ".",
-              ","
-            )}%`;
+        : `${Number(retention).toFixed(1).replace(".", ",")}%`;
+  }
 }
 
 
@@ -1834,10 +1801,7 @@ function toggleNewErrorForm(
     );
 
 
-  if (
-    !form
-    || !button
-  ) {
+  if (!form) {
     return;
   }
 
@@ -1854,10 +1818,12 @@ function toggleNewErrorForm(
     !open;
 
 
-  button.textContent =
-    open
-      ? "Fechar"
-      : "Adicionar";
+  if (button) {
+    button.textContent =
+      open
+        ? "Fechar"
+        : "Adicionar";
+  }
 }
 
 
@@ -5476,6 +5442,29 @@ function wireErrorLibrary() {
 
 
 
+
+function wireErrorNavigationRecovery() {
+  if (document.documentElement.dataset.errorNavigationRecovery === "1") return;
+  document.documentElement.dataset.errorNavigationRecovery = "1";
+
+  document.addEventListener("click", (event) => {
+    const tabButton = event.target.closest("[data-error-tab]");
+    if (tabButton) {
+      event.preventDefault();
+      switchErrorTab(tabButton.dataset.errorTab || "library");
+      return;
+    }
+
+    const backButton = event.target.closest("[data-error-home-back]");
+    if (backButton) {
+      event.preventDefault();
+      switchErrorTab("library");
+    }
+  });
+}
+
+wireErrorNavigationRecovery();
+
 /* =========================================================
    INICIALIZAÇÃO
    ========================================================= */
@@ -5501,7 +5490,12 @@ async function initErrorNotebook() {
   }
 
   if (document.documentElement.dataset.errorNotebookInitialized === "1") {
-    await Promise.all([loadErrorMetrics(),loadErrorAreas(),loadErrorLibrary(),loadErrorQueue()]);
+    await Promise.allSettled([
+      loadErrorMetrics(),
+      loadErrorAreas(),
+      loadErrorLibrary(),
+      loadErrorQueue()
+    ]);
     return;
   }
   document.documentElement.dataset.errorNotebookInitialized = "1";
@@ -5513,14 +5507,24 @@ async function initErrorNotebook() {
   wireErrorLibrary();
 
 
-  await Promise.all([
+  const initialLoads = await Promise.allSettled([
     loadErrorMetrics(),
     loadErrorAreas(),
     loadErrorLibrary()
   ]);
 
+  initialLoads.forEach((result, index) => {
+    if (result.status === "rejected") {
+      console.error("[Caderno de Erros] falha parcial na inicialização", index, result.reason);
+    }
+  });
 
-  await loadErrorQueue();
+  try {
+    await loadErrorQueue();
+  } catch (error) {
+    console.error("[Caderno de Erros] fila de revisão não carregou, mantendo biblioteca disponível:", error);
+  }
+
   switchErrorTab("library");
 }
 
