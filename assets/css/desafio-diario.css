@@ -72,9 +72,8 @@
 .daily-summary-row:last-child{border-bottom:0;padding-bottom:0}
 .daily-summary-icon{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--primary,#184888) 8%,transparent);color:var(--primary,#184888);font-weight:900}
 .daily-recent-list{display:grid}
-.daily-recent-item{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:9px;align-items:center;padding:11px 0;border-bottom:1px solid var(--border,#e6eaf0)}
+.daily-recent-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;align-items:center;padding:11px 0;border-bottom:1px solid var(--border,#e6eaf0)}
 .daily-recent-item:last-child{border-bottom:0}
-.daily-recent-cal{color:var(--primary,#184888);font-size:16px}
 .daily-recent-copy strong{display:block;font-size:11px;color:var(--text,#26364f)}
 .daily-recent-copy small{display:block;margin-top:2px;font-size:10px;color:var(--muted,#7a8698)}
 .daily-recent-status{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:900;background:#1d9a61}
