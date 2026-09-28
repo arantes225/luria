@@ -228,7 +228,105 @@
       questions:[q("Ronco alto",yesno()),q("Cansaço/sonolência diurna",yesno()),q("Apneia observada",yesno()),q("Hipertensão",yesno()),q("IMC >35 kg/m²",yesno()),q("Idade >50 anos",yesno()),q("Circunferência cervical >40 cm",yesno()),q("Sexo masculino",yesno())],
       interpret:sumInterpret([[0,2,"Baixo risco pelo STOP-BANG"],[3,4,"Risco intermediário"],[5,8,"Alto risco"]]),
       reference:"Chung F et al. Anesthesiology. 2008;108:812–821."
+    },
+    {
+      id:"grace",name:"GRACE",category:"Cardiologia",aliases:"SCA síndrome coronariana aguda IAM NSTEMI angina instável",desc:"Estratificação prognóstica na síndrome coronariana aguda.",tags:["SCA","PS"],custom:"grace",
+      reference:"Fox KAA et al. BMJ. 2006;333:1091. Diretrizes brasileiras de SCA utilizam GRACE para estratificação."
+    },
+    {
+      id:"timi_ua",name:"TIMI — SCA sem supra",category:"Cardiologia",aliases:"TIMI SCA NSTEMI angina instável infarto",desc:"Risco de eventos em SCA sem supradesnivelamento do ST.",tags:["SCA","PS"],
+      questions:[
+        q("Idade ≥65 anos",yesno()),q("≥3 fatores de risco para DAC",yesno()),q("DAC conhecida (estenose ≥50%)",yesno()),
+        q("Uso de AAS nos últimos 7 dias",yesno()),q("≥2 episódios de angina nas últimas 24 h",yesno()),
+        q("Desvio de ST ≥0,5 mm",yesno()),q("Marcador de necrose miocárdica elevado",yesno())
+      ],
+      interpret:(n)=>`TIMI ${n}/7. Quanto maior a pontuação, maior o risco de eventos isquêmicos; interpretar no contexto da SCA.`,
+      reference:"Antman EM et al. JAMA. 2000;284:835–842."
+    },
+    {
+      id:"rcri",name:"RCRI (Lee)",category:"Cardiologia",aliases:"risco cardíaco perioperatório cirurgia lee",desc:"Estimativa de risco cardíaco em cirurgia não cardíaca.",tags:["Pré-op","Cirurgia"],
+      questions:[
+        q("Cirurgia de alto risco",yesno()),q("Doença cardíaca isquêmica",yesno()),q("Insuficiência cardíaca",yesno()),
+        q("Doença cerebrovascular",yesno()),q("Diabetes em uso de insulina",yesno()),q("Creatinina >2,0 mg/dL",yesno())
+      ],
+      interpret:(n)=>`RCRI ${n}/6. Usar com o tipo de cirurgia, capacidade funcional e avaliação perioperatória global.`,
+      reference:"Lee TH et al. Circulation. 1999;100:1043–1049. Diretriz SBC de Avaliação Cardiovascular Perioperatória 2024."
+    },
+    {
+      id:"cha2ds2va",name:"CHA₂DS₂-VA",category:"Cardiologia",aliases:"fibrilação atrial FA AVC anticoagulação 2025 brasil",desc:"Escore tromboembólico adotado na Diretriz Brasileira de Fibrilação Atrial 2025.",tags:["FA","Anticoagulação"],
+      questions:[
+        q("Insuficiência cardíaca / disfunção VE",yesno()),q("Hipertensão",yesno()),
+        q("Idade",[opt("<65 anos",0),opt("65–74 anos",1),opt("≥75 anos",2)]),
+        q("Diabetes mellitus",yesno()),q("AVC/AIT/tromboembolismo prévio",yesno(2)),q("Doença vascular",yesno())
+      ],
+      interpret:(n)=>`CHA₂DS₂-VA: ${n}. Interpretar conforme a Diretriz Brasileira de FA vigente e contexto clínico.`,
+      reference:"Diretriz Brasileira de Fibrilação Atrial – 2025. Arq Bras Cardiol. 2025;122(9):e20250618."
+    },
+    {
+      id:"crb65",name:"CRB-65",category:"Respiratório",aliases:"pneumonia PAC atenção primária emergência",desc:"Versão do CURB-65 sem ureia, útil quando laboratório não está disponível.",tags:["Pneumonia","APS"],
+      questions:[q("Confusão nova",yesno()),q("FR ≥30 irpm",yesno()),q("PAS <90 ou PAD ≤60 mmHg",yesno()),q("Idade ≥65 anos",yesno())],
+      interpret:sumInterpret([[0,0,"CRB-65 0: menor gravidade pelo escore."],[1,2,"CRB-65 1–2: risco intermediário; avaliar necessidade de internação."],[3,4,"CRB-65 3–4: alto risco; avaliação hospitalar urgente."]]),
+      reference:"Recomendações brasileiras para manejo da pneumonia adquirida na comunidade, J Bras Pneumol. 2018."
+    },
+    {
+      id:"psi",name:"PSI / PORT",category:"Respiratório",aliases:"pneumonia severity index PORT PAC",desc:"Índice de gravidade da pneumonia com variáveis demográficas, clínicas e laboratoriais.",tags:["Pneumonia","PS"],custom:"psi",
+      reference:"Fine MJ et al. N Engl J Med. 1997;336:243–250. Recomendado nas diretrizes brasileiras de PAC."
+    },
+    {
+      id:"ichscore",name:"ICH Score",category:"Neurologia",aliases:"hemorragia intracerebral AVC hemorrágico",desc:"Estratificação prognóstica inicial na hemorragia intracerebral espontânea.",tags:["AVC","Neuro"],
+      questions:[
+        q("Glasgow",[opt("13–15",0),opt("5–12",1),opt("3–4",2)]),
+        q("Volume do hematoma ≥30 mL",yesno()),q("Hemorragia intraventricular",yesno()),q("Origem infratentorial",yesno()),q("Idade ≥80 anos",yesno())
+      ],
+      interpret:(n)=>`ICH Score ${n}/6. Ferramenta prognóstica; não deve ser usada isoladamente para limitar tratamento.`,
+      reference:"Hemphill JC et al. Stroke. 2001;32:891–897."
+    },
+    {
+      id:"hunthess",name:"Hunt-Hess",category:"Neurologia",aliases:"hemorragia subaracnoide HSA aneurisma",desc:"Classificação clínica da gravidade da hemorragia subaracnoide.",tags:["HSA","Neuro"],
+      questions:[q("Estado clínico",[opt("Grau I — assintomático ou cefaleia leve/rigidez nucal discreta",1),opt("Grau II — cefaleia moderada/grave, rigidez nucal, sem déficit exceto pares cranianos",2),opt("Grau III — sonolência/confusão ou déficit focal leve",3),opt("Grau IV — estupor, hemiparesia moderada/grave",4),opt("Grau V — coma profundo, rigidez descerebrada, moribundo",5)])],
+      interpret:(n)=>`Hunt-Hess grau ${n}.`,
+      reference:"Hunt WE, Hess RM. J Neurosurg. 1968;28:14–20."
+    },
+    {
+      id:"mfisher",name:"Fisher modificada",category:"Neurologia",aliases:"hemorragia subaracnoide HSA vasoespasmo tomografia",desc:"Classificação tomográfica da HSA relacionada ao risco de vasoespasmo.",tags:["HSA","Neuro"],
+      questions:[q("TC de crânio",[opt("0 — sem HSA ou hemorragia intraventricular",0),opt("1 — HSA fina, sem hemorragia intraventricular",1),opt("2 — HSA fina com hemorragia intraventricular",2),opt("3 — HSA espessa, sem hemorragia intraventricular",3),opt("4 — HSA espessa com hemorragia intraventricular",4)])],
+      interpret:(n)=>`Fisher modificada: grau ${n}.`,
+      reference:"Frontera JA et al. Neurosurgery. 2006;59:21–27."
+    },
+    {
+      id:"caprini",name:"Caprini",category:"Cirurgia",aliases:"TEV trombose profilaxia cirurgia perioperatório",desc:"Estratificação de risco de tromboembolismo venoso em pacientes cirúrgicos.",tags:["Cirurgia","TEV"],
+      questions:[
+        q("Idade 41–60 anos",yesno()),q("Cirurgia menor",yesno()),q("IMC >25 kg/m²",yesno()),q("Edema de membros inferiores",yesno()),q("Varizes",yesno()),
+        q("Gestação/puerpério",yesno()),q("ACO ou terapia hormonal",yesno()),q("Sepse (<1 mês)",yesno()),q("Doença pulmonar grave / função pulmonar anormal",yesno()),q("IAM (<1 mês)",yesno()),q("ICC (<1 mês)",yesno()),
+        q("Idade 61–74 anos",yesno(2)),q("Cirurgia >45 min",yesno(2)),q("Cirurgia laparoscópica >45 min",yesno(2)),q("Neoplasia",yesno(2)),q("Acamado >72 h",yesno(2)),q("Acesso venoso central",yesno(2)),
+        q("Idade ≥75 anos",yesno(3)),q("História de TEV",yesno(3)),q("História familiar de TEV",yesno(3)),q("Trombofilia conhecida",yesno(3)),
+        q("AVC recente (<1 mês)",yesno(5)),q("Artroplastia eletiva",yesno(5)),q("Fratura de quadril/pelve/perna",yesno(5)),q("Lesão medular aguda (<1 mês)",yesno(5))
+      ],
+      interpret:(n)=>n===0?"Caprini 0: risco muito baixo.":n<=2?"Caprini 1–2: baixo risco.":n<=4?"Caprini 3–4: risco moderado.":"Caprini ≥5: alto risco.",
+      reference:"Caprini JA. Dis Mon. 2005;51:70–78. Modelo utilizado em protocolos hospitalares brasileiros."
+    },
+    {
+      id:"ciwaar",name:"CIWA-Ar",category:"Psiquiatria/Toxicologia",aliases:"abstinência álcool SAA delirium tremens",desc:"Avaliação da gravidade da síndrome de abstinência do álcool.",tags:["Álcool","Urgência"],
+      questions:[
+        q("Náuseas e vômitos",[opt("Nenhum",0),opt("Leve",1),opt("2",2),opt("3",3),opt("4",4),opt("5",5),opt("6",6),opt("Constante",7)]),
+        q("Tremor",[opt("Nenhum",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderado",4),opt("5",5),opt("6",6),opt("Grave",7)]),
+        q("Sudorese paroxística",[opt("Nenhuma",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderada",4),opt("5",5),opt("6",6),opt("Profusa",7)]),
+        q("Ansiedade",[opt("Nenhuma",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderada",4),opt("5",5),opt("6",6),opt("Pânico",7)]),
+        q("Agitação",[opt("Normal",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderada",4),opt("5",5),opt("6",6),opt("Grave",7)]),
+        q("Distúrbios táteis",[opt("Nenhum",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderado",4),opt("5",5),opt("6",6),opt("Alucinações contínuas",7)]),
+        q("Distúrbios auditivos",[opt("Nenhum",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderado",4),opt("5",5),opt("6",6),opt("Alucinações contínuas",7)]),
+        q("Distúrbios visuais",[opt("Nenhum",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderado",4),opt("5",5),opt("6",6),opt("Alucinações contínuas",7)]),
+        q("Cefaleia / plenitude cefálica",[opt("Nenhuma",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderada",4),opt("5",5),opt("6",6),opt("Extremamente grave",7)]),
+        q("Orientação",[opt("Orientado",0),opt("Não sabe data / cálculo seriado incerto",1),opt("Desorientado na data em até 2 dias",2),opt("Desorientado na data >2 dias",3),opt("Desorientado em lugar/pessoa",4)])
+      ],
+      interpret:(n)=>n<=9?"CIWA-Ar 0–9: abstinência leve.":n<=18?"CIWA-Ar 10–18: abstinência moderada.":"CIWA-Ar >18: abstinência grave.",
+      reference:"Ministério da Saúde — Linha de Cuidado para Transtornos por Uso de Álcool no Adulto; CIWA-Ar."
+    },
+    {
+      id:"rts",name:"RTS — Revised Trauma Score",category:"Trauma",aliases:"trauma escore fisiológico Glasgow PAS FR",desc:"Escore fisiológico para avaliação de gravidade no trauma.",tags:["Trauma","Emergência"],custom:"rts",
+      reference:"Champion HR et al. J Trauma. 1989;29:623–629. Escalas de trauma são previstas em protocolos brasileiros de atendimento."
     }
+
   ];
 
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
