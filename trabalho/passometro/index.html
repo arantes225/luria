@@ -159,11 +159,12 @@
       .pm-antibiotic-row .pm-subfield:nth-child(6){grid-column:auto}
       .pm-remove{width:100%;grid-column:1/-1}
       .pm-detail-head{flex-wrap:wrap}.pm-detail-title{order:3;flex-basis:100%}.pm-detail-actions{width:100%;order:4}.pm-export-btn{flex:1}
-      .pm-dialog{width:calc(100vw - 12px);max-height:calc(100dvh - 18px)}
-      .pm-dialog>form{max-height:calc(100dvh - 18px)}
-      .pm-form{padding:14px;overflow-y:auto!important;min-height:0!important;-webkit-overflow-scrolling:touch!important}
-      .pm-dialog-head{padding:14px;position:relative;flex:0 0 auto}
-      .pm-dialog-actions{padding:12px 14px;position:relative;flex:0 0 auto}
+      .pm-dialog{width:calc(100vw - 16px);max-width:calc(100vw - 16px);max-height:calc(100dvh - max(18px,env(safe-area-inset-top)) - max(18px,env(safe-area-inset-bottom)));margin:auto;border-radius:18px;overflow:hidden}
+      .pm-dialog>form{max-height:inherit;min-height:0}
+      .pm-form{padding:14px 15px;overflow-y:auto!important;overflow-x:hidden!important;min-height:0!important;-webkit-overflow-scrolling:touch!important;overscroll-behavior:contain}
+      .pm-dialog-head{padding:14px 15px;position:sticky;top:0;z-index:4;flex:0 0 auto;background:var(--surface)}
+      .pm-dialog-actions{padding:11px 15px calc(11px + env(safe-area-inset-bottom));position:sticky;bottom:0;z-index:4;flex:0 0 auto;background:var(--surface);flex-wrap:wrap}
+      .pm-dialog-actions button{min-height:44px}
     }
 
     /* Passômetro v2 — biblioteca no padrão LURIA / Modo Estudos */
