@@ -2841,17 +2841,68 @@ async function iniciarLofiGlobal(userId) {
 let ultimaOfensivaCarregada = null;
 
 async function registrarAcessoDiario() {
-  const { data, error } = await sb.rpc("register_daily_access");
+  const userId =
+    window.docmapUser?.id
+    || "session";
+
+  const today =
+    new Date().toISOString().slice(0, 10);
+
+  const cacheKey =
+    `luria:daily-access:${userId}`;
+
+  try {
+    const cached =
+      JSON.parse(
+        localStorage.getItem(cacheKey)
+        || "null"
+      );
+
+    if (
+      cached?.date === today
+      && cached?.streak
+    ) {
+      ultimaOfensivaCarregada =
+        cached.streak;
+
+      renderizarOfensivaGlobal();
+      return;
+    }
+  } catch {}
+
+  const { data, error } =
+    await sb.rpc(
+      "register_daily_access"
+    );
 
   if (error) {
-    console.warn("Não foi possível registrar acesso diário:", error.message);
+    console.warn(
+      "Não foi possível registrar acesso diário:",
+      error.message
+    );
     return;
   }
 
-  const streak = Array.isArray(data) ? data[0] : data;
+  const streak =
+    Array.isArray(data)
+      ? data[0]
+      : data;
+
   if (!streak) return;
 
-  ultimaOfensivaCarregada = streak;
+  ultimaOfensivaCarregada =
+    streak;
+
+  try {
+    localStorage.setItem(
+      cacheKey,
+      JSON.stringify({
+        date: today,
+        streak
+      })
+    );
+  } catch {}
+
   renderizarOfensivaGlobal();
 }
 
@@ -3839,6 +3890,75 @@ async function markNotificationRead(
 }
 
 
+async function loadNotificationCount() {
+  const badge =
+    document.getElementById(
+      "luria-notification-badge"
+    );
+
+  const subtitle =
+    document.getElementById(
+      "luria-notification-subtitle"
+    );
+
+  const readAll =
+    document.getElementById(
+      "luria-notification-read-all"
+    );
+
+  if (!badge) return;
+
+  const {
+    count,
+    error
+  } =
+    await sb
+      .from("notifications")
+      .select(
+        "id",
+        {
+          count: "exact",
+          head: true
+        }
+      )
+      .is(
+        "read_at",
+        null
+      );
+
+  if (error) {
+    console.warn(
+      "Não foi possível contar notificações:",
+      error.message
+    );
+    return;
+  }
+
+  const unread =
+    Number(count || 0);
+
+  badge.hidden =
+    unread === 0;
+
+  badge.textContent =
+    unread > 99
+      ? "99+"
+      : String(unread);
+
+  if (subtitle) {
+    subtitle.textContent =
+      unread
+        ? `${unread} não lida${unread === 1 ? "" : "s"}`
+        : "Tudo em dia";
+  }
+
+  if (readAll) {
+    readAll.hidden =
+      unread === 0;
+  }
+}
+
+
 async function loadNotifications() {
   const list =
     document.getElementById(
@@ -4171,7 +4291,7 @@ async function prepararNotificacoes(
     }
   );
 
-  await loadNotifications();
+  await loadNotificationCount();
 
   const channel =
     sb
@@ -4191,7 +4311,11 @@ async function prepararNotificacoes(
             `user_id=eq.${userId}`
         },
         () => {
-          loadNotifications();
+          if (panel.hidden) {
+            loadNotificationCount();
+          } else {
+            loadNotifications();
+          }
         }
       )
       .subscribe();
@@ -5194,6 +5318,10 @@ async function carregarEntitlements() {
           6 * 60 * 60 * 1000
         )
       : null;
+
+  if (cached) {
+    return cached;
+  }
 
   for (let attempt = 0; attempt < 2; attempt += 1) {
     try {
