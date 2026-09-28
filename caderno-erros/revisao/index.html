@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Revisão · Caderno de Erros · LURIA</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/favicon.png?v=luria2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.2">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=9">
+  <link rel="stylesheet" href="/assets/css/caderno-erros-revisao.css?v=1">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+</head>
+<body data-page="erros" class="error-review-page">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page error-review-page-shell">
+        <header class="topbar error-review-page-topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <a class="error-review-page-back" href="/caderno-erros/">← Voltar ao Caderno de Erros</a>
+          <div class="error-review-page-heading">
+            <span id="error-review-scope">Revisão</span>
+            <strong id="error-review-progress">0 de 0</strong>
+          </div>
+        </header>
+
+        <section class="error-review-page-grid">
+          <aside class="error-review-page-side error-review-page-next">
+            <div class="error-review-page-section-head">
+              <div><span>↻</span><h2>Próximos erros</h2></div>
+              <b id="error-review-next-count">0</b>
+            </div>
+            <p>Itens que vêm depois deste.</p>
+            <div id="error-review-next-list" class="error-review-next-list"></div>
+          </aside>
+
+          <main class="error-review-page-center">
+            <div id="error-review-empty" class="error-review-page-empty" hidden>
+              <strong>Revisão concluída</strong>
+              <p>Você terminou os erros desta seleção.</p>
+              <a class="button primary" href="/caderno-erros/">Voltar aos cadernos</a>
+            </div>
+
+            <section id="error-review-card-wrap" class="error-review-card-wrap" hidden>
+              <div class="error-review-card-meta">
+                <span id="error-review-area">—</span>
+                <span id="error-review-subject">—</span>
+              </div>
+
+              <article class="error-review-big-card">
+                <div class="error-review-cat-badge">🐱 <span>Pulo do Gato</span></div>
+                <div id="error-review-ccq" class="error-review-big-copy">—</div>
+              </article>
+
+              <section id="error-review-details" class="error-review-details" hidden>
+                <h3>Questão original</h3>
+                <p id="error-review-question">—</p>
+                <div class="error-review-answer">
+                  <strong>Resposta correta</strong>
+                  <p id="error-review-answer">—</p>
+                </div>
+                <div id="error-review-thought-wrap" hidden>
+                  <strong>O que eu pensei</strong>
+                  <p id="error-review-thought">—</p>
+                </div>
+              </section>
+
+              <div class="error-review-page-actions">
+                <button id="error-review-understood" class="button primary" type="button">✓ Entendi</button>
+                <button id="error-review-show-question" class="button secondary" type="button">Ver questão</button>
+              </div>
+              <span id="error-review-status" class="error-status" aria-live="polite"></span>
+            </section>
+          </main>
+
+          <aside class="error-review-page-side error-review-page-metrics">
+            <div class="error-review-page-section-head">
+              <div><span>▥</span><h2>Métricas da revisão</h2></div>
+            </div>
+            <div class="error-review-metric-ring" id="error-review-ring">
+              <div><strong id="error-review-done">0</strong><small>de <span id="error-review-total">0</span></small><span>revisados</span></div>
+            </div>
+            <div class="error-review-metric-pair">
+              <div><span>✓</span><strong id="error-review-completed">0</strong><small>Concluídos</small></div>
+              <div><span>↻</span><strong id="error-review-pending">0</strong><small>Pendentes</small></div>
+            </div>
+            <h3>Erros por área</h3>
+            <div id="error-review-area-bars" class="error-review-area-bars"></div>
+          </aside>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=17.28-theme-switch"></script>
+  <script src="/assets/js/caderno-erros-revisao.js?v=1"></script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
