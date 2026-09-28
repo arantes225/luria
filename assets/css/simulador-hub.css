@@ -1030,3 +1030,137 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     min-height:40px!important;
   }
 }
+
+
+/* v19 — distribuição de pontuação + especialidades explícitas */
+.sim-panel-subtitle{
+  color:var(--muted);
+  font-size:8.5px;
+  font-weight:750;
+}
+
+.sim-score-row{
+  display:grid;
+  grid-template-columns:58px minmax(0,1fr) 30px 38px;
+  align-items:center;
+  gap:9px;
+  min-height:44px;
+  border-bottom:1px solid var(--border);
+}
+.sim-score-row:last-child{border-bottom:0}
+.sim-score-label{
+  color:var(--text);
+  font-size:9px;
+  font-weight:800;
+}
+.sim-score-track{
+  display:block;
+  height:7px;
+  overflow:hidden;
+  border-radius:999px;
+  background:color-mix(in srgb,var(--accent) 9%,var(--surface-2));
+}
+.sim-score-track i{
+  display:block;
+  height:100%;
+  border-radius:inherit;
+  background:var(--accent);
+}
+.sim-score-count{
+  color:var(--muted);
+  font-size:8.5px;
+  font-weight:750;
+  text-align:right;
+}
+.sim-score-pct{
+  color:var(--accent);
+  font-size:9.5px;
+  text-align:right;
+}
+
+.sim-specialty-legend{
+  display:grid;
+  gap:4px;
+  margin-top:10px;
+}
+.sim-specialty-legend-row{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:8px;
+  align-items:center;
+  padding:4px 0 4px 13px!important;
+}
+.sim-specialty-legend-row span{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color:var(--text);
+  font-size:8.5px;
+  font-weight:700;
+}
+.sim-specialty-legend-row b{
+  color:var(--accent);
+  font-size:8px;
+  font-weight:850;
+}
+.sim-specialty-legend-row::before{
+  background:var(--accent)!important;
+  opacity:calc(1 - (var(--legend-index,0) * .11));
+}
+
+.sim-mini-bars{
+  display:grid!important;
+  gap:8px!important;
+  align-content:start!important;
+  height:auto!important;
+  min-height:0!important;
+  padding-top:6px;
+}
+.sim-specialty-list-row{
+  display:grid;
+  grid-template-columns:minmax(90px,1.2fr) minmax(80px,1fr) 26px;
+  gap:8px;
+  align-items:center;
+}
+.sim-specialty-list-name{
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color:var(--text);
+  font-size:8.5px;
+  font-weight:750;
+}
+.sim-specialty-list-bar{
+  display:block;
+  height:6px;
+  overflow:hidden;
+  border-radius:999px;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface-2));
+}
+.sim-specialty-list-bar i{
+  display:block;
+  height:100%;
+  border-radius:inherit;
+  background:var(--accent);
+}
+.sim-specialty-list-row b{
+  color:var(--accent);
+  font-size:8.5px;
+  text-align:right;
+}
+
+.sim-chart-content h4{
+  font-size:10px!important;
+}
+
+@media(max-width:620px){
+  .sim-score-row{
+    grid-template-columns:52px minmax(0,1fr) 26px 34px;
+    gap:7px;
+  }
+  .sim-specialty-list-row{
+    grid-template-columns:minmax(90px,1fr) minmax(70px,1fr) 24px;
+  }
+}
