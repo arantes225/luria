@@ -365,3 +365,20 @@ html[data-theme="leila-mood"] .sim-hero-logo{
   box-shadow:inset 0 0 0 1px rgba(255,255,255,.045);
   border-radius:12px;
 }
+
+
+/* v5 — imagens reais fornecidas pelo usuário como fundo dos cards */
+.sim-hero-emergency{
+  background:
+    linear-gradient(90deg,rgba(8,63,116,.96) 0%,rgba(8,67,122,.88) 38%,rgba(8,67,122,.38) 62%,rgba(8,67,122,.08) 100%),
+    url("/assets/img/plantao/emergencia-card-bg.webp") center/cover no-repeat!important;
+}
+.sim-hero-zap{
+  background:
+    linear-gradient(90deg,rgba(49,126,192,.94) 0%,rgba(55,137,202,.84) 42%,rgba(55,137,202,.34) 66%,rgba(55,137,202,.04) 100%),
+    url("/assets/img/plantao/luriazap-card-bg.webp") center/cover no-repeat!important;
+}
+.sim-hero-emergency .sim-hero-art,
+.sim-hero-zap .sim-hero-art{
+  display:none!important;
+}
