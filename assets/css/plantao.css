@@ -6205,3 +6205,63 @@ body.plantao-module-entry .plantao-record-button:hover{
   border-color:var(--accent)!important;
   color:var(--accent)!important;
 }
+
+
+/* === Sala de Emergência · lightweight doctors SVG v34 === */
+body.plantao-module-entry .plantao-next-illustration{
+  height:132px!important;
+  display:flex!important;
+  align-items:flex-end!important;
+  justify-content:center!important;
+  overflow:hidden!important;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb,var(--accent) 9%,var(--surface)) 0%,
+      color-mix(in srgb,var(--accent) 3%,var(--surface)) 100%)!important;
+}
+body.plantao-module-entry .plantao-next-illustration::before,
+body.plantao-module-entry .plantao-next-illustration::after,
+body.plantao-module-entry .plantao-next-illustration .doctor{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-doctors-svg{
+  width:min(100%,300px)!important;
+  height:auto!important;
+  display:block!important;
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .doctor-bg{
+  fill:color-mix(in srgb,var(--accent) 6%,transparent)!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .line{
+  fill:none!important;
+  stroke:color-mix(in srgb,var(--accent) 16%,transparent)!important;
+  stroke-width:1.5!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .hair{
+  fill:color-mix(in srgb,var(--accent) 72%,#15314d 28%)!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .skin{
+  fill:color-mix(in srgb,var(--accent) 12%,#dfeaf4 88%)!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .coat{
+  fill:color-mix(in srgb,var(--accent) 8%,#f8fbff 92%)!important;
+  stroke:color-mix(in srgb,var(--accent) 44%,transparent)!important;
+  stroke-width:1.1!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .shirt{
+  fill:color-mix(in srgb,var(--accent) 20%,#fff 80%)!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .tie,
+body.plantao-module-entry .plantao-doctors-svg .steth-dot{
+  fill:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-doctors-svg .outline,
+body.plantao-module-entry .plantao-doctors-svg .steth,
+body.plantao-module-entry .plantao-doctors-svg .face{
+  fill:none!important;
+  stroke:color-mix(in srgb,var(--accent) 72%,#27445f 28%)!important;
+  stroke-width:1.6!important;
+  stroke-linecap:round!important;
+  stroke-linejoin:round!important;
+}
