@@ -14,11 +14,91 @@
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <style>
-    .work-tool-shell{display:grid;gap:16px}
-    .work-tool-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .work-tool-hero h2{margin:0 0 8px;font-size:24px}
-    .work-tool-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .work-tool-placeholder{padding:20px;border:1px dashed var(--border);border-radius:16px;background:var(--surface-2);color:var(--muted)}
+    .prescription-hub{display:grid;gap:18px}
+    .prescription-hero{
+      position:relative;overflow:hidden;
+      display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;
+      padding:26px 28px;border:1px solid var(--border);border-radius:22px;
+      background:linear-gradient(135deg,var(--surface) 0%,color-mix(in srgb,var(--accent) 7%,var(--surface)) 100%);
+      box-shadow:0 10px 30px rgba(15,35,66,.05)
+    }
+    .prescription-hero::after{
+      content:"℞";position:absolute;right:24px;top:-24px;
+      font-size:150px;font-weight:900;line-height:1;color:var(--accent);opacity:.055;pointer-events:none
+    }
+    .prescription-hero-copy{position:relative;z-index:1;max-width:760px}
+    .prescription-kicker{
+      display:inline-flex;align-items:center;gap:7px;margin-bottom:10px;
+      color:var(--accent);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase
+    }
+    .prescription-kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+    .prescription-hero h2{margin:0 0 8px;font-size:clamp(25px,3vw,34px);letter-spacing:-.035em}
+    .prescription-hero p{max-width:680px;margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+    .prescription-hero-meta{
+      position:relative;z-index:1;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end
+    }
+    .prescription-hero-meta span{
+      padding:8px 11px;border:1px solid var(--border);border-radius:999px;
+      background:var(--surface);color:var(--muted);font-size:11px;font-weight:800;white-space:nowrap
+    }
+
+    .prescription-section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;padding:2px 2px 0}
+    .prescription-section-head div{display:grid;gap:3px}
+    .prescription-section-head small{color:var(--accent);font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .prescription-section-head h3{margin:0;font-size:18px;letter-spacing:-.02em}
+    .prescription-section-head p{margin:0;color:var(--muted);font-size:12px}
+
+    .prescription-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .prescription-card{
+      position:relative;isolation:isolate;overflow:hidden;
+      min-height:190px;padding:22px;
+      display:flex;flex-direction:column;justify-content:space-between;gap:22px;
+      border:1px solid var(--border);border-radius:20px;background:var(--surface);
+      color:var(--text);text-decoration:none;
+      box-shadow:0 5px 18px rgba(15,35,66,.035);
+      transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease,background .16s ease
+    }
+    .prescription-card::after{
+      content:"";position:absolute;z-index:-1;right:-50px;bottom:-62px;width:170px;height:170px;
+      border-radius:50%;background:var(--accent);opacity:.045;transition:transform .18s ease,opacity .18s ease
+    }
+    .prescription-card:hover{
+      transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 50%,var(--border));
+      background:color-mix(in srgb,var(--accent) 3%,var(--surface));
+      box-shadow:0 14px 34px rgba(15,35,66,.09)
+    }
+    .prescription-card:hover::after{transform:scale(1.12);opacity:.075}
+    .prescription-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+    .prescription-icon{
+      width:52px;height:52px;flex:0 0 52px;display:grid;place-items:center;
+      border-radius:15px;background:var(--accent-soft);color:var(--accent);
+      font-size:25px;font-weight:900;border:1px solid color-mix(in srgb,var(--accent) 16%,transparent)
+    }
+    .prescription-arrow{
+      width:34px;height:34px;display:grid;place-items:center;border-radius:50%;
+      border:1px solid var(--border);color:var(--muted);background:var(--surface-2);
+      font-size:18px;transition:transform .16s ease,color .16s ease,border-color .16s ease
+    }
+    .prescription-card:hover .prescription-arrow{transform:translate(2px,-2px);color:var(--accent);border-color:var(--accent)}
+    .prescription-card-copy{display:grid;gap:6px}
+    .prescription-card-copy strong{font-size:20px;letter-spacing:-.025em}
+    .prescription-card-copy small{max-width:430px;color:var(--muted);font-size:12.5px;line-height:1.5}
+    .prescription-card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+    .prescription-card-tags span{
+      padding:5px 8px;border-radius:8px;background:var(--surface-2);color:var(--muted);
+      font-size:9.5px;font-weight:800;border:1px solid var(--border)
+    }
+
+    @media(max-width:760px){
+      .prescription-hub{gap:14px}
+      .prescription-hero{grid-template-columns:1fr;padding:20px;border-radius:18px}
+      .prescription-hero-meta{justify-content:flex-start}
+      .prescription-grid{grid-template-columns:1fr;gap:10px}
+      .prescription-card{min-height:155px;padding:18px;border-radius:17px;gap:18px}
+      .prescription-icon{width:46px;height:46px;flex-basis:46px;font-size:22px;border-radius:13px}
+      .prescription-card-copy strong{font-size:18px}
+      .prescription-section-head p{display:none}
+    }
   </style>
 </head>
 <body data-page="trabalho_prescricao">
@@ -31,19 +111,84 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
-        <section class="work-tool-shell">
-          <article class="work-tool-hero">
-            <h2>Prescrição</h2>
-            <p>Área para prescrições e receitas prontas dentro do mesmo módulo.</p>
+
+        <section class="prescription-hub" aria-label="Central de Prescrição">
+          <article class="prescription-hero">
+            <div class="prescription-hero-copy">
+              <span class="prescription-kicker">Central clínica</span>
+              <h2>Tudo para prescrever, consultar e tratar.</h2>
+              <p>Acesse rapidamente medicamentos, protocolos, tratamentos prontos e antimicrobianos em um único lugar.</p>
+            </div>
+            <div class="prescription-hero-meta" aria-label="Recursos disponíveis">
+              <span>4 módulos</span>
+              <span>Acesso rápido</span>
+            </div>
           </article>
-          <div class="work-tool-placeholder">Página preparada para modelos editáveis, prescrições frequentes e receitas prontas.</div>
+
+          <div class="prescription-section-head">
+            <div>
+              <small>Prescrição</small>
+              <h3>Escolha o que você precisa</h3>
+            </div>
+            <p>Abra um módulo para consultar ou montar sua conduta.</p>
+          </div>
+
+          <nav class="prescription-grid" aria-label="Módulos de prescrição">
+            <a class="prescription-card" href="/trabalho/bulario/">
+              <div class="prescription-card-top">
+                <span class="prescription-icon" aria-hidden="true">℞</span>
+                <span class="prescription-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="prescription-card-copy">
+                <strong>Bulário</strong>
+                <small>Apresentações, doses, posologias, vias, ajustes e informações práticas dos medicamentos.</small>
+                <div class="prescription-card-tags"><span>Medicamentos</span><span>Doses</span><span>Posologia</span></div>
+              </div>
+            </a>
+
+            <a class="prescription-card" href="/trabalho/protocolos/">
+              <div class="prescription-card-top">
+                <span class="prescription-icon" aria-hidden="true">☷</span>
+                <span class="prescription-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="prescription-card-copy">
+                <strong>Protocolos</strong>
+                <small>Fluxos clínicos organizados por etapas, com avaliação, conduta, tratamento e acompanhamento.</small>
+                <div class="prescription-card-tags"><span>Fluxos</span><span>Condutas</span><span>Etapas</span></div>
+              </div>
+            </a>
+
+            <a class="prescription-card" href="/trabalho/receitas/">
+              <div class="prescription-card-top">
+                <span class="prescription-icon" aria-hidden="true">▤</span>
+                <span class="prescription-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="prescription-card-copy">
+                <strong>Tratamentos gerais</strong>
+                <small>Condutas e esquemas terapêuticos prontos para consulta rápida e uso na rotina clínica.</small>
+                <div class="prescription-card-tags"><span>Tratamento</span><span>Receitas</span><span>Pronto uso</span></div>
+              </div>
+            </a>
+
+            <a class="prescription-card" href="/trabalho/antimicrobianos/">
+              <div class="prescription-card-top">
+                <span class="prescription-icon" aria-hidden="true">⊕</span>
+                <span class="prescription-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div class="prescription-card-copy">
+                <strong>Antimicrobianos</strong>
+                <small>Classes, espectro, principais agentes, cobertura e escolha prática conforme foco infeccioso.</small>
+                <div class="prescription-card-tags"><span>Espectro</span><span>Cobertura</span><span>Infecções</span></div>
+              </div>
+            </a>
+          </nav>
         </section>
       </div>
     </main>
   </div>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=17.18-trabalho-clinico"></script>
+  <script src="/assets/js/app.js?v=17.19-prescription-hub"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
