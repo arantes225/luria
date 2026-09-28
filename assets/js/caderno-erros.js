@@ -3814,17 +3814,15 @@ function switchErrorTab(
 
 
   if (name === "create") { toggleNewErrorForm(true); }
-  const showHomeNav = name === "review-home" || name === "library";
-  document.querySelector(".error-home-head")?.toggleAttribute("hidden", !showHomeNav);
-  document.querySelector(".error-cat-spotlight")?.toggleAttribute("hidden", name !== "library");
-  document.querySelector(".error-featured")?.toggleAttribute("hidden", name !== "library");
-  document.querySelector(".error-home-layout")?.toggleAttribute("hidden", name !== "library");
+  const showHome = name === "library";
+  document.querySelector(".error-home-head")?.toggleAttribute("hidden", !showHome);
+  document.querySelector(".error-cat-spotlight")?.toggleAttribute("hidden", !showHome);
+  document.querySelector(".error-featured")?.toggleAttribute("hidden", !showHome);
+  document.querySelector(".error-home-layout")?.toggleAttribute("hidden", !showHome);
 
-
-  if (
-    name === "library"
-  ) {
+  if (name === "library") {
     loadErrorLibrary();
+    queueMicrotask(()=>setErrorHomeMode(errorHomeState));
   }
 }
 
@@ -4868,7 +4866,7 @@ function errorState(item){
   if(!due||due<=errorTodayISO()) return "review";
   return "all";
 }
-let errorHomeState="all";
+let errorHomeState="review-home";
 function filteredHomeItems(){
   const base=filteredErrorLibrary();
   if(errorHomeState==="all") return base;
@@ -5320,16 +5318,31 @@ async function loadErrorLibrary() {
 
 
 
+function setErrorHomeMode(mode){
+  errorHomeState=mode||"review-home";
+  const reviewMode=errorHomeState==="review-home";
+  const layout=document.querySelector(".error-home-layout");
+  const reviewContent=document.getElementById("error-review-home-content");
+  const libraryPanel=document.querySelector('[data-error-section="library"]');
+  layout?.classList.toggle("review-mode",reviewMode);
+  if(reviewContent)reviewContent.hidden=!reviewMode;
+  if(libraryPanel)libraryPanel.hidden=reviewMode;
+  document.querySelectorAll("[data-error-state]").forEach(button=>{
+    button.classList.toggle("active",button.dataset.errorState===errorHomeState);
+  });
+  if(!reviewMode)renderErrorLibrary();
+}
+
 function wireErrorLibrary() {
-  document.querySelectorAll("[data-error-state]").forEach(button=>button.addEventListener("click",()=>{errorHomeState=button.dataset.errorState||"all";document.querySelectorAll("[data-error-state]").forEach(b=>b.classList.toggle("active",b===button));renderErrorLibrary()}));
+  document.querySelectorAll("[data-error-state]").forEach(button=>button.addEventListener("click",()=>setErrorHomeMode(button.dataset.errorState||"review-home")));
   document.querySelectorAll("[data-error-home-back]").forEach(button=>button.addEventListener("click",()=>switchErrorTab("library")));
   document.getElementById("error-start-home-review")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
   document.getElementById("error-review-home-now")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
   document.getElementById("error-review-home-create")?.addEventListener("click",()=>{
-    switchErrorTab("library");
+    setErrorHomeMode("all");
     setErrorLibraryStatus("Abra um caderno e use Selecionar para montar uma revisão personalizada.","success");
   });
-  document.getElementById("error-today-list")?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;openErrorReviewPage({mode:"today",item:button.dataset.homeReviewId})});
+  (document.getElementById("error-review-home-today-list")||document.getElementById("error-today-list"))?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;openErrorReviewPage({mode:"today",item:button.dataset.homeReviewId})});
 
   document
     .querySelectorAll(
@@ -5818,7 +5831,8 @@ async function initErrorNotebook() {
     console.error("[Caderno de Erros] fila de revisão não carregou, mantendo biblioteca disponível:", error);
   }
 
-  switchErrorTab("review-home");
+  switchErrorTab("library");
+  setErrorHomeMode("review-home");
 }
 
 
