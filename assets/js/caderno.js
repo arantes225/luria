@@ -2813,12 +2813,31 @@ function setNotebookEditMode(
   }
 
   if (notebookState.editorEditable) {
+    const hint = document.getElementById("notebook-editor-hint");
+    const wrap = document.getElementById("notebook-document-wrap");
+    if (hint) hint.hidden = true;
+    if (wrap) wrap.hidden = false;
+
     requestAnimationFrame(() => {
-      const toolbar = document.getElementById("notebook-toolbar");
-      if (toolbar) {
-        const top = toolbar.getBoundingClientRect().top + window.scrollY - 12;
-        window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+      const anchor =
+        document.querySelector(".note-editor-identity")
+        || document.getElementById("notebook-toolbar")
+        || document.getElementById("notebook-document-wrap");
+
+      if (anchor) {
+        anchor.scrollIntoView({ behavior: "smooth", block: "start" });
       }
+
+      const mainScroller = document.querySelector("main.main");
+      if (mainScroller && anchor) {
+        const mainRect = mainScroller.getBoundingClientRect();
+        const anchorRect = anchor.getBoundingClientRect();
+        mainScroller.scrollBy({
+          top: anchorRect.top - mainRect.top - 10,
+          behavior: "smooth"
+        });
+      }
+
       const editor = document.getElementById("notebook-editor");
       if (editor) {
         const range = document.createRange();
@@ -17937,7 +17956,15 @@ function wireEvents() {
 
 
 
-  document.getElementById("notebook-inspector-edit")?.addEventListener("click", () => { setNotebookEditMode(true); });
+  document.querySelectorAll("#notebook-inspector-edit, #notebook-inspector-edit-hidden").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (!getCurrentDocument()) {
+        renderDocument();
+        return;
+      }
+      setNotebookEditMode(true);
+    });
+  });
 
   document.getElementById("notebook-back-library")?.addEventListener("click", async () => {
     setNotebookEditMode(false);
