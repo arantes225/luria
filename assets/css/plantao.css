@@ -6667,3 +6667,106 @@ body[data-theme="pink"] .plantao-disaster-resource,
 body[data-theme="pink"] .plantao-disaster-phase{background:rgba(210,70,136,.09)}
 @media(max-width:1050px){.plantao-disaster-dashboard{grid-template-columns:1fr 1.7fr}.plantao-disaster-live{grid-column:1/-1}.plantao-disaster-feed{max-height:220px}}
 @media(max-width:760px){.plantao-disaster-hero{min-height:290px}.plantao-disaster-hero-overlay{width:100%;padding:24px}.plantao-disaster-hero:after{background:linear-gradient(0deg,rgba(5,20,38,.94),rgba(5,20,38,.32))}.plantao-disaster-dashboard{grid-template-columns:1fr}.plantao-disaster-live{grid-column:auto}.plantao-disaster-victims{grid-template-columns:1fr}.plantao-disaster-triage-options{grid-template-columns:repeat(2,1fr)}}
+
+
+/* === Sala de Emergência · prontuário hierarchy v39 === */
+body.plantao-module-entry .plantao-record-folder{
+  padding-top:0!important;
+}
+body.plantao-module-entry .plantao-record-folder-tabs,
+body.plantao-module-entry .plantao-record-paper-slip{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-record-folder::before{
+  inset:0 0 7px 0!important;
+}
+body.plantao-module-entry .plantao-record-paper{
+  position:relative!important;
+  margin-top:6px!important;
+  padding:17px 15px 15px!important;
+}
+body.plantao-module-entry .plantao-record-score-callout{
+  position:absolute;
+  top:12px;
+  right:12px;
+  z-index:3;
+  display:grid;
+  gap:1px;
+  min-width:62px;
+  padding:7px 9px;
+  border:1px solid color-mix(in srgb,var(--accent) 26%,var(--border));
+  border-radius:10px;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface));
+  box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 8%,transparent);
+  text-align:right;
+}
+body.plantao-module-entry .plantao-record-score-callout span{
+  color:var(--muted);
+  font-size:7.5px;
+  font-weight:850;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+body.plantao-module-entry .plantao-record-score-callout strong{
+  color:var(--accent);
+  font-size:13px;
+  line-height:1.05;
+  font-weight:900;
+}
+body.plantao-module-entry .plantao-record-paper-header{
+  padding-right:76px!important;
+  margin-bottom:11px!important;
+}
+body.plantao-module-entry .plantao-record-line{
+  gap:4px!important;
+  min-height:35px!important;
+  padding:6px 0 7px!important;
+}
+body.plantao-module-entry .plantao-record-line strong{
+  font-size:8.2px!important;
+  line-height:1.2!important;
+}
+body.plantao-module-entry .plantao-record-line span{
+  font-size:9.8px!important;
+  line-height:1.48!important;
+}
+body.plantao-module-entry .plantao-record-area-line strong,
+body.plantao-module-entry .plantao-record-area-line span{
+  color:var(--text)!important;
+}
+body.plantao-module-entry .plantao-record-area-line strong{
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-record-difficulty-line span{
+  font-weight:750;
+}
+body.plantao-module-entry .plantao-record-chief>span{
+  font-size:7.8px!important;
+}
+body.plantao-module-entry .plantao-record-chief h3{
+  font-size:14px!important;
+  line-height:1.38!important;
+}
+body.plantao-module-entry .plantao-record-patient strong{
+  font-size:12.8px!important;
+}
+body.plantao-module-entry .plantao-record-patient span{
+  font-size:8.8px!important;
+}
+body.plantao-module-entry .plantao-record-kicker{
+  font-size:8.2px!important;
+}
+body.plantao-module-entry .plantao-record-button{
+  min-height:35px!important;
+  margin-top:11px!important;
+  font-size:8.8px!important;
+}
+@media(max-width:620px){
+  body.plantao-module-entry .plantao-record-paper-header{
+    padding-right:70px!important;
+  }
+  body.plantao-module-entry .plantao-record-score-callout{
+    top:10px;
+    right:10px;
+  }
+}
