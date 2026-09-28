@@ -3556,14 +3556,6 @@
   box-shadow:0 9px 24px rgba(24,72,136,.06)!important;
   transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
 }
-#notebook-view-library .notebook-book-card::after{
-  content:"";
-  position:absolute;
-  inset:0 auto 0 5px;
-  width:1px;
-  background:color-mix(in srgb,var(--accent) 22%,transparent);
-  pointer-events:none;
-}
 #notebook-view-library .notebook-book-card:hover{
   transform:translateY(-3px)!important;
   border-color:color-mix(in srgb,var(--accent) 72%,var(--border))!important;
