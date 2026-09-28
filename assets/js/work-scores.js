@@ -326,8 +326,36 @@
       id:"rts",name:"RTS — Revised Trauma Score",category:"Trauma",aliases:"trauma escore fisiológico Glasgow PAS FR",desc:"Escore fisiológico para avaliação de gravidade no trauma.",tags:["Trauma","Emergência"],custom:"rts",
       reference:"Champion HR et al. J Trauma. 1989;29:623–629. Escalas de trauma são previstas em protocolos brasileiros de atendimento."
     }
+,
+    {
+      id:"centor",name:"Centor / McIsaac",category:"Infectologia",aliases:"faringite faringoamigdalite streptococcus estreptococo garganta",desc:"Estimativa clínica da probabilidade de faringoamigdalite estreptocócica.",tags:["APS","PS"],
+      questions:[
+        q("Febre >38 °C",yesno()),
+        q("Ausência de tosse",yesno()),
+        q("Exsudato ou edema tonsilar",yesno()),
+        q("Linfonodos cervicais anteriores dolorosos",yesno()),
+        q("Idade",[opt("3–14 anos",1),opt("15–44 anos",0),opt("≥45 anos",-1)])
+      ],
+      interpret:(n)=>n<=0?"McIsaac ≤0: baixa probabilidade clínica.":n===1?"McIsaac 1: baixa probabilidade.":n<=3?"McIsaac 2–3: probabilidade intermediária; considerar teste conforme protocolo local.":"McIsaac ≥4: maior probabilidade clínica; confirmar e conduzir conforme protocolo local.",
+      reference:"Centor RM et al. Med Decis Making. 1981;1:239–246; McIsaac WJ et al. CMAJ. 1998;158:75–83."
+    }
 
   ];
+
+  const practicalScoreIds = new Set([
+    "gcs","news2","qsofa","sofa",
+    "heart","grace","timi_ua","cha2ds2vasc","hasbled",
+    "wellspe","perc","wellsdvt","spesi",
+    "curb65",
+    "nihss","abcd2","ichscore","hunthess","mfisher",
+    "childpugh","meldna","gbs","bisap",
+    "alvarado","rcri","caprini",
+    "bishop","apgar",
+    "ciwaar","centor"
+  ]);
+  for (let i = scores.length - 1; i >= 0; i -= 1) {
+    if (!practicalScoreIds.has(scores[i].id)) scores.splice(i, 1);
+  }
 
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
