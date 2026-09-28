@@ -51,6 +51,37 @@
     if(!formulations.length)return '<section class="rx-section"><div class="rx-section-head"><h3>Apresentações</h3></div><p class="rx-note">Apresentações ainda não cadastradas.</p></section>';
     return `<section class="rx-section"><div class="rx-presentations-head"><h3>Apresentações</h3><span>${formulations.length} cadastrada${formulations.length===1?'':'s'}</span></div><div class="rx-presentation-tabs" role="tablist" aria-label="Escolher apresentação">${formulations.map((f,i)=>`<button type="button" class="rx-presentation-tab" role="tab" aria-selected="${i===0}" data-formulation-index="${i}"><small>${i+1}</small><span>${esc(f.label)}</span></button>`).join('')}</div></section>`;
   }
+  function formulationCard(f,i){
+    return `<section class="rx-card rx-presentation" data-formulation-index="${i}">
+      <div class="drug-kicker">Apresentação ${i+1}</div>
+      <h3>${esc(f.label)}</h3>
+      <section class="rx-posology">
+        <div class="rx-posology-title"><h4>Posologia</h4><span>uma informação por linha</span></div>
+        <div class="rx-grid">
+          ${multilineField('Dose',f.dose_text)}
+          ${field('Intervalo',f.interval_text)}
+          ${multilineField('Via',f.route)}
+          ${field('Duração',f.duration_text)}
+          ${field('Público',f.population)}
+          ${field('Máximo em 24 h',f.max_daily_text)}
+          ${field('Como administrar',f.administration)}
+          ${field('Tipo de receita',f.prescription_type)}
+        </div>
+      </section>
+      <p class="rx-alert"><strong>Conferir antes de prescrever:</strong> ${esc(f.cautions)}</p>
+      ${calculator(f,i)}
+      <a href="${esc(f.source_url)}" target="_blank" rel="noopener noreferrer">Bula desta apresentação ↗</a>
+    </section>`;
+  }
+  function bindPresentationCalculator(container,formulations){
+    container.querySelectorAll('.rx-calculator').forEach(el=>{
+      const f=formulations[Number(el.dataset.formulationIndex)];
+      if(!f)return;
+      const handler=()=>calculate(el,f);
+      el.addEventListener('input',handler);
+      el.addEventListener('change',handler);
+    });
+  }
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';return}
     const d=row.data||{},ready=d.status==='posology_verified',summary=d.status==='verified';
@@ -61,19 +92,21 @@
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Nomes e produtos</h3></div>${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:`<p class="rx-note">${esc(row.name)}${row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?` · princípio ativo: ${esc(row.active_ingredient)}`:''}. Outras marcas e genéricos ainda não vinculados.</p>`}</section>
       ${ready?presentationPicker(formulations):''}
-      ${ready?formulations.map((f,i)=>`<section class="rx-card rx-presentation" data-formulation-index="${i}" ${i?'hidden':''}><div class="drug-kicker">Apresentação ${i+1}</div><h3>${esc(f.label)}</h3><section class="rx-posology"><div class="rx-posology-title"><h4>Posologia</h4><span>uma informação por linha</span></div><div class="rx-grid">${multilineField('Dose',f.dose_text)}${field('Intervalo',f.interval_text)}${multilineField('Via',f.route)}${field('Duração',f.duration_text)}${field('Público',f.population)}${field('Máximo em 24 h',f.max_daily_text)}${field('Como administrar',f.administration)}${field('Tipo de receita',f.prescription_type)}</div></section><p class="rx-alert"><strong>Conferir antes de prescrever:</strong> ${esc(f.cautions)}</p>${calculator(f,i)}<a href="${esc(f.source_url)}" target="_blank" rel="noopener noreferrer">Bula desta apresentação ↗</a></section>`).join(''):`<section class="rx-card"><h3>Prescrição</h3><p class="rx-note">Dose, intervalo, via, limite diário e ajustes desta apresentação ainda não foram conferidos. Consulte a bula antes de prescrever.</p>${d.indication?`<div class="rx-field"><span>Indicação resumida</span><b>${esc(d.indication)}</b></div>`:''}${d.presentation?`<div class="rx-field"><span>Apresentação</span><b>${esc(d.presentation)}</b></div>`:''}</section>`}
+      ${ready?`<div id="rx-active-presentation">${formulations.length?formulationCard(formulations[0],0):''}</div>`:`<section class="rx-card"><h3>Prescrição</h3><p class="rx-note">Dose, intervalo, via, limite diário e ajustes desta apresentação ainda não foram conferidos. Consulte a bula antes de prescrever.</p>${d.indication?`<div class="rx-field"><span>Indicação resumida</span><b>${esc(d.indication)}</b></div>`:''}${d.presentation?`<div class="rx-field"><span>Apresentação</span><b>${esc(d.presentation)}</b></div>`:''}</section>`}
       <section class="rx-section"><div class="rx-section-head"><h3>Reações adversas</h3></div>${clinicalList(d.adverse_reactions||d.adverse_effects,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(d.leaflet_url||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
+    const activePresentation=detail.querySelector('#rx-active-presentation');
     detail.querySelectorAll('.rx-presentation-tab').forEach(tab=>tab.addEventListener('click',()=>{
       const index=Number(tab.dataset.formulationIndex);
+      const f=formulations[index];
+      if(!f||!activePresentation)return;
       detail.querySelectorAll('.rx-presentation-tab').forEach(item=>item.setAttribute('aria-selected',String(item===tab)));
-      detail.querySelectorAll('.rx-presentation').forEach(card=>{card.hidden=Number(card.dataset.formulationIndex)!==index});
+      activePresentation.innerHTML=formulationCard(f,index);
+      bindPresentationCalculator(activePresentation,formulations);
+      activePresentation.scrollIntoView({block:'nearest',behavior:'smooth'});
     }));
-    detail.querySelectorAll('.rx-calculator').forEach((el,i)=>{
-      const f=formulations[Number(el.dataset.formulationIndex)],handler=()=>calculate(el,f);
-      el.addEventListener('input',handler);el.addEventListener('change',handler);
-    });
+    if(activePresentation)bindPresentationCalculator(activePresentation,formulations);
   }
   function calculate(el,f){
     const c=f.calculator,weight=Number(el.querySelector('.rx-weight').value),age=Number(el.querySelector('.rx-age').value),result=el.querySelector('.rx-result');
