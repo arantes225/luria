@@ -83,5 +83,14 @@
   }
   list.addEventListener('click',event=>{const button=event.target.closest('[data-id]');if(!button)return;selected=Number(button.dataset.id);renderList();renderDetail(rows.find(row=>row.id===selected));});
   search.addEventListener('input',renderList);
-  (async()=>{const {data,error}=await window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000);if(error){list.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';return}rows=data||[];selected=rows.find(row=>row.id===363)?.id||rows[0]?.id;renderList();renderDetail(rows.find(row=>row.id===selected));})();
+  (async()=>{const {data,error}=await window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000);if(error){list.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';return}rows=data||[];
+    const q=new URLSearchParams(location.search).get('q')?.trim();
+    if(q){
+      search.value=q;
+      const term=q.toLocaleLowerCase('pt-BR');
+      const hit=rows.find(row=>[row.name,row.active_ingredient].some(v=>String(v||'').toLocaleLowerCase('pt-BR')===term))
+        || rows.find(row=>[row.name,row.active_ingredient].some(v=>String(v||'').toLocaleLowerCase('pt-BR').includes(term)));
+      selected=hit?.id||rows[0]?.id;
+    }else selected=rows.find(row=>row.id===363)?.id||rows[0]?.id;
+    renderList();renderDetail(rows.find(row=>row.id===selected));})();
 })();
