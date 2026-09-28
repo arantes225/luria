@@ -3827,3 +3827,67 @@ body.theme-dark[data-page="caderno"] .notebook-color-palette{
   color:var(--accent)!important;
   caret-color:var(--accent)!important;
 }
+
+
+/* v24.8 — modal de tarefa + tipografia lateral maior */
+.note-actions-card .note-side-title h3,
+.note-details-card .note-side-title h3{
+  font-size:11px!important;
+}
+
+.note-actions-card>button>span{
+  font-size:9px!important;
+}
+
+.note-details-card dt{
+  font-size:8px!important;
+}
+
+.note-details-card dd{
+  font-size:9px!important;
+  line-height:1.35!important;
+}
+
+.notebook-task-modal{
+  width:min(92vw,460px)!important;
+}
+
+.notebook-task-modal .notebook-modal-head h2{
+  font-size:18px!important;
+}
+
+.notebook-task-modal .notebook-modal-field{
+  display:grid;
+  gap:7px;
+  margin-top:6px;
+}
+
+.notebook-task-modal .notebook-modal-field span{
+  font-size:9px;
+  font-weight:800;
+  color:var(--muted);
+}
+
+.notebook-task-modal .notebook-modal-field input{
+  width:100%;
+  min-height:44px;
+  padding:0 12px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface);
+  color:var(--text);
+  font:inherit;
+  font-size:11px;
+  outline:none;
+}
+
+.notebook-task-modal .notebook-modal-field input:focus{
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 12%,transparent);
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] .notebook-task-modal .notebook-modal-field input,
+body.theme-dark[data-page="caderno"] .notebook-task-modal .notebook-modal-field input{
+  background:var(--surface-2);
+  border-color:var(--border);
+}
