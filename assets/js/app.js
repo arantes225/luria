@@ -1046,14 +1046,15 @@ const PAGE_INFO = {
   configuracoes: { title: "Configurações", eyebrow: "Conta e preferências" },
   admin: { title: "Admin", eyebrow: "Métricas do produto" },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Trabalho" },
-  trabalho_plantoes: { title: "Escala", eyebrow: "Trabalho" },
+  trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Trabalho" },
+  trabalho_plantoes: { title: "Escala", eyebrow: "Gestor de Plantões" },
   trabalho_passometro: { title: "Passômetro", eyebrow: "Trabalho" },
   trabalho_prontuario_rapido: { title: "Cola rápida", eyebrow: "Acesso temporário" },
   trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Trabalho" },
-  trabalho_financeiro: { title: "Financeiro", eyebrow: "Trabalho" },
+  trabalho_financeiro: { title: "Financeiro", eyebrow: "Gestor de Plantões" },
   trabalho_calculadora: { title: "Calculadoras", eyebrow: "Trabalho" },
   trabalho_bulario: { title: "Bulário", eyebrow: "Trabalho" },
-  trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Trabalho" },
+  trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Gestor de Plantões" },
   trabalho_diagnostico: { title: "Diagnóstico por Sintomas", eyebrow: "Diagnóstico" },
   trabalho_laboratorio: { title: "Laboratório", eyebrow: "Diagnóstico" },
   trabalho_prescricao: { title: "Prescrição", eyebrow: "Trabalho" },
@@ -1269,16 +1270,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">≈</span><span>Fluidos e eletrólitos</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_plantoes" ? "active" : ""}" href="/trabalho/plantoes/">
-          <span class="nav-icon">▦</span><span>Escala</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_divisor_plantao" ? "active" : ""}" href="/trabalho/divisor-plantao/">
-          <span class="nav-icon">÷</span><span>Divisor de Plantão</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_financeiro" ? "active" : ""}" href="/trabalho/financeiro/">
-          <span class="nav-icon">$</span><span>Financeiro</span>
+        <a class="nav-link ${["trabalho_gestor_plantoes","trabalho_plantoes","trabalho_divisor_plantao","trabalho_financeiro"].includes(page) ? "active" : ""}" href="/trabalho/gestor-plantoes/">
+          <span class="nav-icon">▦</span><span>Gestor de Plantões</span>
         </a>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
