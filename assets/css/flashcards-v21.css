@@ -526,3 +526,11 @@ body.flash-review-session-active .page{
   color:#fff!important;
   box-shadow:0 4px 12px color-mix(in srgb,var(--accent) 38%,transparent)!important;
 }
+
+
+/* LURIA Flashcards v31 — impede flash da interface legada durante inicialização */
+body.flash-v21-booting .flash-tabs,
+body.flash-v21-booting [data-flash-section],
+body.flash-v21-booting .flash-dashboard-overview{visibility:hidden!important;opacity:0!important}
+body:not(.flash-v21-booting) .flash-tabs,
+body:not(.flash-v21-booting) [data-flash-section]{transition:opacity .12s ease}
