@@ -202,3 +202,25 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-ref-deck-desc{min-height:30px!important;font-size:8px!important}
 .flash-ref-deck-stats{margin-top:10px!important}
 .flash-ref-progress{margin-top:9px!important}
+
+
+/* v24.5 — resumo de revisão com quatro métricas */
+.flash-review-dashboard{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+}
+.flash-review-dashboard>div{
+  min-height:86px;
+}
+.flash-review-dashboard b{
+  font-size:26px!important;
+}
+@media(max-width:900px){
+  .flash-review-dashboard{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+@media(max-width:520px){
+  .flash-review-dashboard{
+    grid-template-columns:1fr!important;
+  }
+}
