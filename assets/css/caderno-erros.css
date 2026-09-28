@@ -3016,3 +3016,96 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
     grid-template-columns:repeat(3,minmax(0,1fr));
   }
 }
+
+
+/* v18.12 — switches maiores + ações de revisão em switch */
+.error-home-layout .error-library-nav{
+  align-items:center!important;
+  gap:12px!important;
+}
+
+.error-state-switch,
+.error-review-action-switch{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  padding:4px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface)!important;
+  box-shadow:0 2px 8px rgba(15,23,42,.04);
+}
+
+.error-state-switch{
+  flex:0 1 auto;
+  max-width:100%;
+}
+
+.error-state-switch button,
+.error-review-action-switch button{
+  min-height:32px!important;
+  height:32px!important;
+  padding:0 12px!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font:inherit;
+  font-size:9px!important;
+  font-weight:800!important;
+  line-height:1!important;
+  white-space:nowrap;
+  cursor:pointer;
+}
+
+.error-state-switch button.active,
+.error-review-action-switch button.active,
+.error-review-action-switch button:hover{
+  background:var(--accent)!important;
+  color:#fff!important;
+}
+
+.error-review-action-switch{
+  display:none;
+  margin-left:auto;
+  flex:0 0 auto;
+}
+
+.error-home-layout.review-mode .error-review-action-switch{
+  display:inline-flex;
+}
+
+.error-home-layout.review-mode .error-library-nav{
+  justify-content:space-between!important;
+}
+
+.error-home-layout.review-mode .error-review-home-content{
+  display:none!important;
+}
+
+:root[data-theme="dark"] .error-state-switch,
+:root[data-theme="dark"] .error-review-action-switch{
+  background:var(--surface)!important;
+  border-color:var(--border)!important;
+}
+
+@media(max-width:1050px){
+  .error-home-layout.review-mode .error-library-nav{
+    flex-wrap:wrap;
+  }
+  .error-review-action-switch{
+    margin-left:0;
+  }
+}
+
+@media(max-width:700px){
+  .error-state-switch,
+  .error-review-action-switch{
+    width:100%;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  .error-review-action-switch button{
+    flex:1 0 auto;
+  }
+}
