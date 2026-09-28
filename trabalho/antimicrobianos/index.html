@@ -20,7 +20,7 @@
     .focus-card summary{list-style:none;display:flex;align-items:center;gap:11px;padding:14px 15px;cursor:pointer}.focus-card summary::-webkit-details-marker{display:none}.focus-card summary:after{content:"⌄";margin-left:auto;color:var(--muted);font-weight:900}.focus-card[open] summary:after{transform:rotate(180deg)}
     .focus-icon{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));font-size:19px}.focus-title{min-width:0}.focus-title strong{display:block}.focus-title small{display:block;color:var(--muted);margin-top:2px}
     .focus-body{padding:0 15px 15px}.micro-table{width:100%;border-collapse:separate;border-spacing:0 7px}.micro-table th{text-align:left;color:var(--muted);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;padding:0 8px}.micro-table td{vertical-align:top;background:color-mix(in srgb,var(--accent) 4%,var(--surface));padding:9px 8px;font-size:12px;line-height:1.4;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}.micro-table td:first-child{border-left:1px solid var(--border);border-radius:10px 0 0 10px}.micro-table td:last-child{border-right:1px solid var(--border);border-radius:0 10px 10px 0}.micro-table b{font-size:12.5px}.micro-table small{display:block;color:var(--muted);margin-top:2px}
-    .ctx{margin-top:8px;padding:9px 11px;border-left:3px solid var(--accent);border-radius:8px;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:11.5px;line-height:1.45;color:var(--muted)}
+    .focus-drugs{margin-top:12px;padding-top:11px;border-top:1px solid var(--border)}.focus-drugs-title{font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:900;margin-bottom:7px}.drug-chip{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--text);padding:6px 9px;border-radius:9px;font-size:11.5px;font-weight:800;cursor:pointer}.drug-chip:hover{border-color:var(--accent);color:var(--accent)}.drug-chip.missing{opacity:.6}.drug-popover{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.38)}.drug-popover.open{display:flex}.drug-popover-card{width:min(560px,100%);max-height:min(78vh,700px);overflow:auto;padding:18px;border-radius:18px;border:1px solid var(--border);background:var(--surface);box-shadow:0 22px 60px rgba(0,0,0,.22)}.drug-popover-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.drug-popover-head h3{margin:0}.drug-popover-close{border:0;background:transparent;color:var(--muted);font-size:22px;cursor:pointer}.drug-popover-sub{color:var(--muted);font-size:12.5px;margin:4px 0 12px}.drug-popover-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.drug-mini{padding:10px;border:1px solid var(--border);border-radius:10px}.drug-mini span{display:block;font-size:10px;text-transform:uppercase;color:var(--muted);font-weight:900;margin-bottom:3px}.drug-mini b{font-size:12px;line-height:1.35}.drug-popover-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.drug-popover-actions a{display:inline-flex;align-items:center;padding:8px 11px;border-radius:9px;background:var(--accent);color:#fff;text-decoration:none;font-size:12px;font-weight:850}.drug-popover-note{font-size:11px;color:var(--muted);line-height:1.4;margin-top:10px}.ctx{margin-top:8px;padding:9px 11px;border-left:3px solid var(--accent);border-radius:8px;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:11.5px;line-height:1.45;color:var(--muted)}
     .germ-grid,.class-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.germ-card,.class-card{padding:15px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}.germ-card h3,.class-card h3{margin:0 0 4px;font-size:1rem}.germ-card p,.class-card p{margin:0 0 10px;color:var(--muted);font-size:12.5px;line-height:1.45}
     .meta{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.tag{padding:4px 7px;border-radius:7px;background:color-mix(in srgb,var(--accent) 9%,var(--surface));font-size:10.5px;font-weight:850}.label{font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:900;margin-top:10px}.drugline{font-size:12px;line-height:1.5;margin-top:3px}.agents{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}.agent{padding:5px 8px;border:1px solid var(--border);border-radius:8px;font-size:11.5px;font-weight:750}
     .concept-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.concept{padding:16px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}.concept h3{margin:0 0 6px}.concept p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
@@ -49,7 +49,7 @@
       <div class="abx-panel active" data-panel="focos">
         <div class="section-head"><h2>Foco → agente provável → opções com atividade</h2><p>Visão de plantão para localizar rapidamente os principais agentes e as classes às quais costumam ser sensíveis, sem substituir escolha empírica baseada no contexto.</p></div>
         <div class="focus-grid">
-          <details class="focus-card searchable" open data-search="pneumonia comunitaria pac pneumococo haemophilus mycoplasma legionella amoxicilina ceftriaxona macrolideo doxiciclina">
+          <details class="focus-card searchable" open data-search="pneumonia comunitaria pac pneumococo haemophilus mycoplasma legionella amoxicilina ceftriaxona macrolideo doxiciclina" data-drugs="Amoxicilina|Amoxicilina + clavulanato|Ceftriaxona|Cefotaxima|Azitromicina|Claritromicina|Doxiciclina|Levofloxacino|Moxifloxacino">
             <summary><span class="focus-icon">🫁</span><span class="focus-title"><strong>Pneumonia adquirida na comunidade</strong><small>Pneumococo · H. influenzae · atípicos</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>S. pneumoniae</b></td><td>Gram+ diplococo</td><td>Penicilinas — amoxicilina, penicilina G<br>Cefalosporinas — ceftriaxona, cefotaxima<br>Macrolídeos — conforme resistência local</td></tr>
@@ -58,7 +58,7 @@
             </tbody></table><div class="ctx">Gravidade, comorbidades e risco epidemiológico definem se é necessário ampliar a cobertura ou associar classes.</div></div>
           </details>
 
-          <details class="focus-card searchable" data-search="pneumonia hospitalar pav pseudomonas klebsiella acinetobacter mrsa cefepime ceftazidima piperacilina meropenem vancomicina linezolida">
+          <details class="focus-card searchable" data-search="pneumonia hospitalar pav pseudomonas klebsiella acinetobacter mrsa cefepime ceftazidima piperacilina meropenem vancomicina linezolida" data-drugs="Piperacilina + tazobactam|Cefepima|Ceftazidima|Meropenem|Imipenem + cilastatina|Amicacina|Tobramicina|Vancomicina|Linezolida">
             <summary><span class="focus-icon">🏥</span><span class="focus-title"><strong>Pneumonia hospitalar / PAV</strong><small>Gram− hospitalares · Pseudomonas · ± MRSA</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>P. aeruginosa</b></td><td>Gram− aeróbio</td><td>Penicilina antipseudomonas — piperacilina/tazobactam<br>Cefalosporinas — cefepima, ceftazidima<br>Carbapenêmicos — meropenem, imipenem<br>Aminoglicosídeos — amicacina, tobramicina</td></tr>
@@ -68,7 +68,7 @@
             </tbody></table><div class="ctx">Aqui o antibiograma e a epidemiologia institucional pesam mais que qualquer regra fixa de “classe por bactéria”.</div></div>
           </details>
 
-          <details class="focus-card searchable" data-search="cistite pielonefrite uti urina ecoli klebsiella proteus saprophyticus nitrofurantoina fosfomicina ceftriaxona ciprofloxacino">
+          <details class="focus-card searchable" data-search="cistite pielonefrite uti urina ecoli klebsiella proteus saprophyticus nitrofurantoina fosfomicina ceftriaxona ciprofloxacino" data-drugs="Nitrofurantoína|Fosfomicina|Cefalexina|Ceftriaxona|Ciprofloxacino|Sulfametoxazol + trimetoprima">
             <summary><span class="focus-icon">🚽</span><span class="focus-title"><strong>Trato urinário</strong><small>E. coli · Klebsiella · Proteus · S. saprophyticus</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>E. coli</b></td><td>Gram− entérico</td><td>Nitrofurano — nitrofurantoína<br>Fosfonato — fosfomicina<br>Cefalosporinas — cefalexina, ceftriaxona<br>Fluoroquinolonas — conforme indicação e resistência</td></tr>
@@ -78,7 +78,7 @@
             </tbody></table><div class="ctx">Cistite e pielonefrite não são o mesmo cenário: penetração tecidual e gravidade mudam a escolha do fármaco.</div></div>
           </details>
 
-          <details class="focus-card searchable" data-search="pele celulite erisipela abscesso staphylococcus aureus streptococcus pyogenes mssa mrsa cefalexina cefazolina oxacilina vancomicina clindamicina">
+          <details class="focus-card searchable" data-search="pele celulite erisipela abscesso staphylococcus aureus streptococcus pyogenes mssa mrsa cefalexina cefazolina oxacilina vancomicina clindamicina" data-drugs="Penicilina V|Amoxicilina|Cefalexina|Cefazolina|Oxacilina|Vancomicina|Linezolida|Clindamicina">
             <summary><span class="focus-icon">🩹</span><span class="focus-title"><strong>Pele e partes moles</strong><small>Streptococcus · MSSA/MRSA conforme contexto</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>Streptococcus pyogenes</b></td><td>Gram+</td><td>Penicilinas — penicilina, amoxicilina<br>Cefalosporinas — cefalexina, cefazolina</td></tr>
@@ -87,7 +87,7 @@
             </tbody></table><div class="ctx">Em abscesso, controle de foco/drenagem pode ser tão importante quanto o antimicrobiano.</div></div>
           </details>
 
-          <details class="focus-card searchable" data-search="intra abdominal apendicite perfuracao peritonite abscesso ecoli klebsiella bacteroides anaerobio metronidazol piperacilina ceftriaxona carbapenemico">
+          <details class="focus-card searchable" data-search="intra abdominal apendicite perfuracao peritonite abscesso ecoli klebsiella bacteroides anaerobio metronidazol piperacilina ceftriaxona carbapenemico" data-drugs="Ceftriaxona|Metronidazol|Piperacilina + tazobactam|Meropenem|Ertapenem|Ampicilina|Vancomicina">
             <summary><span class="focus-icon">🥩</span><span class="focus-title"><strong>Infecção intra-abdominal</strong><small>Gram− entéricos + anaeróbios</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>E. coli / Klebsiella</b></td><td>Gram−</td><td>Cefalosporinas, piperacilina/tazobactam ou carbapenêmicos conforme gravidade e resistência</td></tr>
@@ -96,7 +96,7 @@
             </tbody></table><div class="ctx">Controle de foco é central. Cobertura de enterococo não é obrigatória em todo quadro intra-abdominal.</div></div>
           </details>
 
-          <details class="focus-card searchable" data-search="odontogenica boca oral streptococcus anaerobios prevotella fusobacterium amoxicilina clavulanato metronidazol clindamicina">
+          <details class="focus-card searchable" data-search="odontogenica boca oral streptococcus anaerobios prevotella fusobacterium amoxicilina clavulanato metronidazol clindamicina" data-drugs="Amoxicilina|Amoxicilina + clavulanato|Metronidazol|Clindamicina|Penicilina V">
             <summary><span class="focus-icon">🦷</span><span class="focus-title"><strong>Odontogênica / cavidade oral</strong><small>Estreptococos orais + anaeróbios</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>Streptococcus do grupo viridans</b></td><td>Gram+</td><td>Penicilinas — amoxicilina, penicilina V</td></tr>
@@ -104,7 +104,7 @@
             </tbody></table><div class="ctx">Intervenção odontológica e drenagem, quando indicadas, fazem parte do tratamento do foco.</div></div>
           </details>
 
-          <details class="focus-card searchable" data-search="meningite pneumococo meningococo listeria ceftriaxona cefotaxima vancomicina ampicilina">
+          <details class="focus-card searchable" data-search="meningite pneumococo meningococo listeria ceftriaxona cefotaxima vancomicina ampicilina" data-drugs="Ceftriaxona|Cefotaxima|Vancomicina|Ampicilina|Penicilina G">
             <summary><span class="focus-icon">🧠</span><span class="focus-title"><strong>Meningite bacteriana</strong><small>Pneumococo · meningococo · Listeria em grupos específicos</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>S. pneumoniae</b></td><td>Gram+</td><td>Cefalosporinas de 3ª geração — ceftriaxona, cefotaxima<br>Vancomicina pode ser necessária empiricamente conforme resistência</td></tr>
@@ -113,7 +113,7 @@
             </tbody></table><div class="ctx">Faixa etária, imunossupressão e epidemiologia determinam a cobertura empírica inicial.</div></div>
           </details>
 
-          <details class="focus-card searchable" data-search="endocardite staphylococcus aureus viridans enterococcus oxacilina cefazolina vancomicina ampicilina gentamicina">
+          <details class="focus-card searchable" data-search="endocardite staphylococcus aureus viridans enterococcus oxacilina cefazolina vancomicina ampicilina gentamicina" data-drugs="Oxacilina|Cefazolina|Vancomicina|Daptomicina|Penicilina G|Ceftriaxona|Ampicilina|Gentamicina">
             <summary><span class="focus-icon">❤️</span><span class="focus-title"><strong>Endocardite infecciosa</strong><small>S. aureus · viridans · Enterococcus</small></span></summary>
             <div class="focus-body"><table class="micro-table"><thead><tr><th>Agente</th><th>Perfil</th><th>Classes / exemplos com atividade</th></tr></thead><tbody>
               <tr><td><b>MSSA</b></td><td>Gram+</td><td>Oxacilina ou cefazolina</td></tr>
@@ -165,6 +165,12 @@
       </div>
 
       <div id="abx-empty" class="empty">Nenhum resultado encontrado nesta seção.</div>
+<div id="drug-popover" class="drug-popover" role="dialog" aria-modal="true" aria-label="Resumo do medicamento">
+  <article class="drug-popover-card">
+    <div class="drug-popover-head"><div><h3 id="drug-popover-title">Medicamento</h3><div id="drug-popover-sub" class="drug-popover-sub"></div></div><button id="drug-popover-close" class="drug-popover-close" type="button" aria-label="Fechar">×</button></div>
+    <div id="drug-popover-body"></div>
+  </article>
+</div>
     </section>
   </div></main>
 </div>
@@ -190,6 +196,57 @@
     panels.forEach(p=>p.classList.toggle('active',p.dataset.panel===id)); filter();
   }));
   search?.addEventListener('input',filter);
+
+  const esc=v=>String(v??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const pop=document.getElementById('drug-popover'), popTitle=document.getElementById('drug-popover-title'), popSub=document.getElementById('drug-popover-sub'), popBody=document.getElementById('drug-popover-body');
+  let catalog=[];
+  const normDrug=s=>norm(String(s||'').replace(/\s*\+\s*/g,' '));
+  function findDrug(name){
+    const q=normDrug(name);
+    return catalog.find(r=>normDrug(r.name)===q||normDrug(r.active_ingredient)===q)
+      || catalog.find(r=>normDrug(r.name).includes(q)||q.includes(normDrug(r.name))||normDrug(r.active_ingredient).includes(q));
+  }
+  function addFocusDrugButtons(){
+    document.querySelectorAll('.focus-card[data-drugs]').forEach(card=>{
+      if(card.querySelector('.focus-drugs'))return;
+      const names=(card.dataset.drugs||'').split('|').filter(Boolean);
+      const box=document.createElement('div'); box.className='focus-drugs';
+      box.innerHTML='<div class="focus-drugs-title">Antimicrobianos relacionados ao foco · toque para ver o Bulário</div><div class="agents"></div>';
+      const wrap=box.querySelector('.agents');
+      names.forEach(name=>{const btn=document.createElement('button');btn.type='button';btn.className='drug-chip';btn.dataset.drug=name;btn.textContent=name;wrap.appendChild(btn);});
+      card.querySelector('.focus-body')?.appendChild(box);
+    });
+  }
+  function openDrug(name){
+    const row=findDrug(name);
+    popTitle.textContent=row?.name||name;
+    if(!row){
+      popSub.textContent='Medicamento ainda não localizado no catálogo do Bulário.';
+      popBody.innerHTML='<div class="ctx">Abra o Bulário para pesquisar o princípio ativo e conferir a ficha disponível.</div><div class="drug-popover-actions"><a href="/trabalho/bulario/?q='+encodeURIComponent(name)+'">Abrir no Bulário</a></div>';
+      pop.classList.add('open'); return;
+    }
+    const d=row.data||{}, forms=Array.isArray(d.formulations)?d.formulations:[], f=forms[0]||{}, diseases=Array.isArray(d.diseases)?d.diseases:[];
+    popSub.textContent=(row.active_ingredient||'Princípio ativo a confirmar')+' · '+(d.therapeutic_class||row.therapeutic_class||row.pharmacological_class||'Classe a confirmar');
+    popBody.innerHTML='<div class="drug-popover-grid">'+
+      '<div class="drug-mini"><span>Apresentações</span><b>'+esc(forms.length?forms.length+' cadastrada'+(forms.length===1?'':'s'):'A confirmar')+'</b></div>'+
+      '<div class="drug-mini"><span>Via</span><b>'+esc(f.route||'A confirmar')+'</b></div>'+
+      '<div class="drug-mini"><span>Posologia</span><b>'+esc(f.dose_text||'Ver ficha completa')+'</b></div>'+
+      '<div class="drug-mini"><span>Intervalo</span><b>'+esc(f.interval_text||'Ver ficha completa')+'</b></div>'+
+      '</div>'+
+      (diseases.length?'<div class="label">Indicações cadastradas</div><div class="drugline">'+esc(diseases.slice(0,5).join(' · '))+'</div>':'')+
+      (f.cautions?'<div class="ctx"><strong>Atenções:</strong> '+esc(f.cautions)+'</div>':'')+
+      '<div class="drug-popover-actions"><a href="/trabalho/bulario/?q='+encodeURIComponent(row.name)+'">Abrir ficha completa no Bulário</a></div>'+
+      '<div class="drug-popover-note">Resumo puxado do cadastro do Bulário. A indicação para o foco depende de gravidade, susceptibilidade, função renal, alergias, interações e protocolo local.</div>';
+    pop.classList.add('open');
+  }
+  document.addEventListener('click',e=>{const b=e.target.closest('.drug-chip');if(b)openDrug(b.dataset.drug);});
+  document.getElementById('drug-popover-close')?.addEventListener('click',()=>pop.classList.remove('open'));
+  pop?.addEventListener('click',e=>{if(e.target===pop)pop.classList.remove('open')});
+  addFocusDrugButtons();
+  (async()=>{try{
+    const {data,error}=await window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000);
+    if(!error)catalog=data||[];
+  }catch(_){}})();
 })();
 </script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
