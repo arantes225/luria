@@ -323,6 +323,8 @@
 
     const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
     const difficulties=[...new Set(state.cases.map(x=>x.difficulty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
+    buildSiteFilter("specialty",specialties);
+    buildSiteFilter("difficulty",difficulties);
     renderLibrary();
 
     const savedView=readPlantaoView();
@@ -423,31 +425,6 @@
     return "Outros";
   }
 
-  function caseCardImage(item,index=0){
-    const specialty=normalizeLabel(item?.specialty||"");
-    const title=normalizeLabel([
-      item?.title,item?.summary,item?.presentation?.chief_complaint,item?.presentation?.display_title
-    ].filter(Boolean).join(" "));
-    if(specialty.includes("pedi") || title.includes("crianca") || title.includes("lactente")) {
-      return index%2 ? "/assets/img/plantao/08-menino-acordado.webp" : "/assets/img/plantao/06-menina-acordada.webp";
-    }
-    if(specialty.includes("gine") || specialty.includes("obst") || title.includes("gesta")) return "/assets/img/plantao/gestante_acordada_triste_1300x900_100kb.webp";
-    if(title.includes("idos") || specialty.includes("geri")) return index%2 ? "/assets/img/plantao/10-homem-idoso-acordado.webp" : "/assets/img/plantao/02-mulher-idosa-acordada.webp";
-    if(specialty.includes("cirurg") || title.includes("trauma") || title.includes("abdominal")) return "/assets/img/plantao/plantao-homem-adulto-acordado-v2-1600x900.webp";
-    return index%2 ? "/assets/img/plantao/04-mulher-adulta-acordada.webp" : "/assets/img/plantao/plantao-homem-adulto-acordado-v2-1600x900.webp";
-  }
-
-  function specialtyTabs(){
-    return [
-      {label:"Todos",value:"",icon:"▦"},
-      {label:"Clínica Médica",value:"Clínica Médica",icon:"♧"},
-      {label:"Cirurgia",value:"Cirurgia Geral",icon:"◒"},
-      {label:"Pediatria",value:"Pediatria",icon:"♙"},
-      {label:"GO",value:"Ginecologia e Obstetrícia",icon:"♀"},
-      {label:"Neurologia",value:"Neurologia",icon:"◉"}
-    ];
-  }
-
   function renderLibrary() {
     const specialty=state.filters.specialty || "";
     const difficulty=state.filters.difficulty || "";
@@ -472,45 +449,27 @@
 
     const chips=$("plantao-specialty-chips");
     if(chips){
-      chips.innerHTML=specialtyTabs().map(tab=>`
-        <button type="button" class="emergency-specialty-tab${tab.value===specialty?" active":""}" data-specialty-chip="${esc(tab.value)}">
-          <span aria-hidden="true">${tab.icon}</span>${esc(tab.label)}
+      const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
+      chips.innerHTML=["",...specialties].map(value=>`
+        <button type="button" class="plantao-specialty-chip${value===specialty?" active":""}" data-specialty-chip="${esc(value)}">
+          ${esc(value||"Todos")}
         </button>
       `).join("");
     }
 
-    const featuredHost=$("plantao-featured-case");
-    const featured=visibleCases.find(item=>normalizeLabel([
-      item.title,item.summary,item.presentation?.chief_complaint,item.presentation?.display_title
-    ].filter(Boolean).join(" ")).includes("sepse")) || visibleCases[0] || null;
-
-    if(featuredHost){
-      if(!featured){
-        featuredHost.hidden=true;
-      }else{
-        featuredHost.hidden=false;
-        const title=featured.presentation?.chief_complaint || featured.presentation?.display_title || featured.summary || featured.title || "Caso clínico";
-        const summary=featured.summary || featured.presentation?.opening || "Paciente admitido na sala de emergência. Avalie, investigue e defina a melhor conduta.";
-        const materia=caseMateria(featured);
-        featuredHost.style.setProperty("--featured-image",`url("${caseCardImage(featured,0)}")`);
-        featuredHost.innerHTML=`
-          <div class="emergency-feature-overlay">
-            <div class="emergency-feature-top">
-              <span class="emergency-feature-label">★ Caso em destaque</span>
-              <span class="emergency-feature-meta">◷ 25 min &nbsp;&nbsp; ▥ ${esc(featured.difficulty||"Intermediário")}</span>
-            </div>
-            <div class="emergency-feature-copy">
-              <h2>${esc(title)}</h2>
-              <p>${esc(summary)}</p>
-              <div class="emergency-feature-tags">
-                <span>${esc(featured.specialty||"Clínica Médica")}</span>
-                <span>${esc(materia)}</span>
-                <span>${esc(featured.setting||"Sala de emergência")}</span>
-              </div>
-            </div>
-            <button class="emergency-feature-button" type="button" data-start-case="${esc(featured.id)}">Selecionar caso ›</button>
-          </div>
-        `;
+    const resumeCard=$("plantao-resume-card");
+    if(resumeCard){
+      const active=state.activeSession;
+      const item=active ? state.cases.find(x=>String(x.id)===String(active.case_id)) : null;
+      resumeCard.hidden=!item;
+      if(item){
+        const title=item.presentation?.chief_complaint || item.presentation?.display_title || item.summary || item.title || "Caso em andamento";
+        $("plantao-resume-title").textContent=title;
+        $("plantao-resume-meta").textContent=[item.specialty,item.difficulty].filter(Boolean).join(" · ") || "Caso em andamento";
+        const elapsed=Math.max(0,Number(active.elapsed_minutes||0));
+        const pct=Math.min(85,Math.max(12,elapsed*2.5));
+        const bar=$("plantao-resume-progress-bar");
+        if(bar) bar.style.width=pct+"%";
       }
     }
 
@@ -525,8 +484,7 @@
     }
     empty.hidden=true;
 
-    const cardCases=featured ? visibleCases.filter(item=>String(item.id)!==String(featured.id)) : visibleCases;
-    grid.innerHTML=cardCases.map((item,index)=>{
+    grid.innerHTML=visibleCases.map(item=>{
       const best=bestScore(item.id);
       const attempts=state.sessions.filter(x=>x.case_id===item.id && x.status==="completed").length;
       const title=item.presentation?.chief_complaint || item.presentation?.display_title || item.summary || item.title || "Caso clínico";
@@ -534,21 +492,22 @@
       const summary=item.summary || item.presentation?.opening || "Paciente aguardando avaliação na sala de emergência.";
       const diff=String(item.difficulty||"").toLowerCase();
       return `
-        <article class="emergency-case-card" data-difficulty="${esc(diff)}">
-          <div class="emergency-case-image">
-            <img src="${caseCardImage(item,index+1)}" alt="" loading="lazy" decoding="async">
-            <span class="emergency-difficulty">${esc(item.difficulty||"Intermediário")}</span>
-            <span class="emergency-time">◷ 20 min</span>
+        <article class="plantao-case-card" data-difficulty="${esc(diff)}">
+          <div class="plantao-case-card-visual" aria-hidden="true">
+            <span>${esc((item.specialty||"Caso clínico").slice(0,2).toUpperCase())}</span>
           </div>
-          <div class="emergency-case-body">
-            <h3>${esc(title)}</h3>
-            <div class="emergency-case-tags">
-              <span>${esc(item.specialty||"Clínica")}</span>
-              <span>${esc(materia)}</span>
+          <div class="plantao-case-card-body">
+            <div class="plantao-case-card-topline">
+              <span class="plantao-case-specialty">${esc(item.specialty||"Clínica")}</span>
+              <span class="plantao-case-difficulty">${esc(item.difficulty||"")}</span>
             </div>
+            <h3>${esc(title)}</h3>
             <p>${esc(summary)}</p>
-            ${best==null ? "" : `<small>Melhor resultado: ${Math.round(best)}/100${attempts ? " · "+attempts+" tentativa"+(attempts===1?"":"s") : ""}</small>`}
-            <button type="button" data-start-case="${esc(item.id)}">Selecionar caso ›</button>
+            <div class="plantao-case-card-meta">
+              <span>${esc(materia)}</span>
+              ${best==null ? "" : `<span>Melhor: ${Math.round(best)}/100${attempts ? " · "+attempts+"x" : ""}</span>`}
+            </div>
+            <button class="button primary" type="button" data-start-case="${esc(item.id)}">Iniciar caso →</button>
           </div>
         </article>
       `;
