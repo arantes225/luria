@@ -5603,3 +5603,11 @@ body.plantao-module-entry .plantao-mode-menu{
     margin-top:4px!important;
   }
 }
+
+
+/* === Sala de Emergência · per-image face focus v23 === */
+body.plantao-module-entry .plantao-record-photo img{
+  object-position:var(--face-x,50%) var(--face-y,22%)!important;
+  transform:scale(var(--face-scale,2))!important;
+  transform-origin:var(--face-x,50%) var(--face-y,22%)!important;
+}
