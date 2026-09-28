@@ -1983,3 +1983,102 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
     grid-template-columns:1fr;
   }
 }
+
+
+/* v16.8 — ações compactas dentro dos erros de cada caderno */
+.error-note-detail-head{
+  position:relative;
+}
+.error-note-detail-side{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex:0 0 auto;
+}
+.error-note-detail-more{
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  padding:0;
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:var(--surface);
+  color:var(--muted);
+  font-size:14px;
+  line-height:1;
+  cursor:pointer;
+}
+.error-note-detail-more:hover{
+  background:var(--surface-2);
+}
+.error-note-detail-menu{
+  position:absolute;
+  right:0;
+  top:40px;
+  z-index:35;
+  min-width:150px;
+  padding:6px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface);
+  box-shadow:0 12px 28px rgba(15,35,65,.14);
+}
+.error-note-detail-menu button{
+  display:block;
+  width:100%;
+  min-height:34px;
+  padding:8px 10px;
+  border:0;
+  border-radius:7px;
+  background:transparent;
+  color:var(--text);
+  font-size:9px;
+  text-align:left;
+  cursor:pointer;
+}
+.error-note-detail-menu button:hover{
+  background:var(--surface-2);
+}
+.error-note-detail-menu button.danger{
+  color:#d33b4e;
+}
+.error-note-detail-open-row{
+  display:flex;
+  margin-top:12px;
+}
+.error-note-detail-open{
+  min-width:92px;
+}
+.error-note-detail-expanded{
+  margin-top:10px;
+  padding-top:4px;
+  border-top:1px solid var(--border);
+}
+.error-note-detail-expanded[hidden]{
+  display:none!important;
+}
+.error-note-detail-thought{
+  margin-top:10px;
+  padding:11px 12px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:var(--surface);
+}
+.error-note-detail-thought strong{
+  display:block;
+  margin-bottom:5px;
+  font-size:8px;
+  text-transform:uppercase;
+}
+@media(max-width:700px){
+  .error-note-detail-side{
+    width:100%;
+    justify-content:space-between;
+  }
+  .error-note-detail-menu{
+    right:0;
+    top:40px;
+  }
+}
