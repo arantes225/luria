@@ -2888,3 +2888,17 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
     box-shadow:none!important;
   }
 }
+
+
+/* Dashboard 1 v46 — subir saudação e conteúdo */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    padding-top:0!important;
+    margin-top:-12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-greeting{
+    margin-top:0!important;
+    margin-bottom:14px!important;
+  }
+}
