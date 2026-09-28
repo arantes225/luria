@@ -844,3 +844,29 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-logo{
     bottom:17px!important;
   }
 }
+
+
+/* v14 — CTA maior e badge de casos alinhado ao botão */
+.sim-hero-card .sim-reference-button{
+  min-width:270px!important;
+  min-height:40px!important;
+  padding:12px 17px!important;
+}
+.sim-hero-card .sim-hero-badge{
+  bottom:16px!important;
+  align-items:center!important;
+  min-height:40px!important;
+  padding-top:8px!important;
+  padding-bottom:8px!important;
+}
+@media(max-width:760px){
+  .sim-hero-card .sim-reference-button{
+    min-width:0!important;
+    width:calc(100% - 126px)!important;
+    min-height:40px!important;
+  }
+  .sim-hero-card .sim-hero-badge{
+    bottom:17px!important;
+    min-height:40px!important;
+  }
+}
