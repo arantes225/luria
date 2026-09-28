@@ -445,6 +445,20 @@
     return index%2 ? "/assets/img/plantao/04-mulher-adulta-acordada.webp" : "/assets/img/plantao/plantao-homem-adulto-acordado-v2-1600x900.webp";
   }
 
+  function plantaoReferenceFaceCrop(src){
+    const file=String(src||"").split("/").pop();
+    const presets={
+      "plantao-homem-adulto-acordado-v2-1600x900.webp":{x:50,y:24,scale:2.05},
+      "04-mulher-adulta-acordada.webp":{x:50,y:22,scale:2.08},
+      "02-mulher-idosa-acordada.webp":{x:50,y:23,scale:2.0},
+      "10-homem-idoso-acordado.webp":{x:50,y:23,scale:2.02},
+      "06-menina-acordada.webp":{x:50,y:25,scale:2.12},
+      "08-menino-acordado.webp":{x:50,y:25,scale:2.12},
+      "gestante_acordada_triste_1300x900_100kb.webp":{x:50,y:22,scale:1.95}
+    };
+    return presets[file] || {x:50,y:22,scale:2};
+  }
+
   function renderLibrary() {
     const specialty=state.filters.specialty || "";
     const difficulty=state.filters.difficulty || "";
@@ -587,6 +601,8 @@
       const materia=caseMateria(item);
       const summary=item.summary || item.presentation?.opening || "Paciente aguardando avaliação na sala de emergência.";
       const diff=String(item.difficulty||"").toLowerCase();
+      const caseImage=plantaoReferenceImage(item,index+1);
+      const faceCrop=plantaoReferenceFaceCrop(caseImage);
 
       return `
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
@@ -598,10 +614,11 @@
               <div class="plantao-record-paper-header">
                 <div class="plantao-record-photo">
                   <img
-                    src="${plantaoReferenceImage(item,index+1)}"
+                    src="${caseImage}"
                     alt="${esc(title)}"
                     loading="lazy"
                     decoding="async"
+                    style="--face-x:${faceCrop.x}%;--face-y:${faceCrop.y}%;--face-scale:${faceCrop.scale}"
                   >
                 </div>
 
