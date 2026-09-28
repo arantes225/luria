@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=24-scroll-header">
-  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.5-track-follows-callout">
+  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.6-card-meta">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/desafio-diario/">
@@ -34,11 +34,7 @@
         </header>
 
         <section class="daily-shell" aria-live="polite">
-          <div class="daily-hero">
-            <div>
-</div>
-            <div id="daily-hero-date" class="daily-hero-date">Hoje</div>
-          </div>
+          <div class="daily-hero"></div>
 
           <div id="daily-loading" class="daily-state-card">
             <div class="daily-loader" aria-hidden="true"></div>
@@ -57,7 +53,13 @@
                 <div class="daily-card-titlebar">
                   <div class="daily-card-title">
                     <span class="daily-doc-icon">▤</span>
-                    <strong>Pistas do caso</strong>
+                    <div class="daily-card-heading-copy">
+                      <strong>Pistas do caso</strong>
+                      <div class="daily-card-meta">
+                        <span id="daily-number" class="daily-card-number"></span>
+                        <span id="daily-card-date" class="daily-card-date"></span>
+                      </div>
+                    </div>
                   </div>
                   <span id="daily-area" class="daily-area"></span>
                 </div>
@@ -160,7 +162,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.9-daily"></script>
-  <script src="/assets/js/desafio-diario.js?v=4.5-track-follows-callout"></script>
+  <script src="/assets/js/desafio-diario.js?v=4.6-card-meta"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
