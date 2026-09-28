@@ -178,7 +178,6 @@
         const statusIcon = status === "won" ? "✓" : status === "lost" ? "×" : "→";
         const statusLabel = status === "won" ? "Concluído" : status === "lost" ? "Encerrado" : p ? "Continuar" : "Fazer";
         return '<button class="daily-recent-item" type="button" data-date="' + esc(c.challenge_date) + '">' +
-          '<span class="daily-recent-cal">▣</span>' +
           '<div class="daily-recent-copy"><strong>' + esc(formatDate(c.challenge_date)) + '</strong><small>' + esc(c.area || "") + ' · ' + statusLabel + '</small></div>' +
           '<span class="daily-recent-status ' + statusClass + '">' + statusIcon + '</span>' +
         '</button>';
