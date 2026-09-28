@@ -31,7 +31,7 @@
 
   <link
     rel="stylesheet"
-    href="assets/css/caderno-erros.css?v=18.5-annotation-notebooks"
+    href="assets/css/caderno-erros.css?v=18.7-site-area-picker"
   >
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -117,7 +117,7 @@
                 <button type="button" data-error-state="mastered">Dominados</button>
               </div>
               <div class="error-library-tools">
-                <label class="error-library-field"><span>Área</span><select id="error-library-area" data-luria-general-area-select data-blank-label="Todas as áreas"><option value="">Todas as áreas</option></select></label>
+                <div class="error-library-field error-library-area-field"><span>Área</span><div class="error-library-area-picker"><button id="error-library-area-toggle" class="error-library-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="error-library-area-label">Todas as áreas</span><span class="error-library-area-chevron" aria-hidden="true">⌄</span></button><div id="error-library-area-menu" class="error-library-area-menu" role="listbox" hidden></div><select id="error-library-area" class="error-library-area-native" data-luria-general-area-select data-blank-label="Todas as áreas" tabindex="-1" aria-hidden="true"><option value="">Todas as áreas</option></select></div></div>
                 <label class="error-library-field error-library-search"><span>Buscar</span><input id="error-library-search" type="search" placeholder="Buscar no caderno..."></label>
               </div>
             </div>
@@ -354,7 +354,7 @@
   <script src="/assets/js/study-mode.js?v=13.0"></script>
 
   <script src="/assets/js/medical-icons.js?v=1.0"></script>
-  <script src="/assets/js/caderno-erros.js?v=18.3-flashcard-area-icons"></script>
+  <script src="/assets/js/caderno-erros.js?v=18.7-site-area-picker"></script>
 
     <script src="/assets/js/image-lightbox.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
