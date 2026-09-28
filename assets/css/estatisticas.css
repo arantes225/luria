@@ -969,3 +969,29 @@
 @media(max-width:1050px){
  [data-stats-panel="geral"] .stats-block-grid{grid-template-columns:1fr!important}
 }
+
+
+/* v25.5 — Geral: bloco Progresso e revisões compacto e preenchido */
+[data-stats-panel="geral"] .stats-block-grid>.stats-block:nth-child(3){
+  height:auto!important;
+  min-height:0!important;
+  align-self:start!important;
+  justify-self:stretch!important;
+  display:block!important;
+}
+[data-stats-panel="geral"] #general-progress-metrics{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:8px!important;
+  margin-top:10px!important;
+  width:100%!important;
+}
+[data-stats-panel="geral"] #general-progress-metrics .metric-mini{
+  min-height:70px!important;
+  padding:10px 11px!important;
+}
+@media(max-width:650px){
+  [data-stats-panel="geral"] #general-progress-metrics{
+    grid-template-columns:1fr!important;
+  }
+}
