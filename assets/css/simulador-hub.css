@@ -829,3 +829,18 @@ html[data-theme="dark"] .sim-hub-page .sim-hero-logo{
 html[data-theme="leila-mood"] .sim-hub-page .sim-hero-logo{
   background:color-mix(in srgb,var(--surface) 88%,var(--accent) 12%)!important;
 }
+
+
+/* v13 — botões dos cards principais alinhados ao rodapé */
+.sim-hero-card .sim-reference-button{
+  position:absolute!important;
+  left:26px!important;
+  bottom:16px!important;
+  margin-top:0!important;
+}
+@media(max-width:760px){
+  .sim-hero-card .sim-reference-button{
+    left:18px!important;
+    bottom:17px!important;
+  }
+}
