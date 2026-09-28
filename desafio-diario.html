@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=24-scroll-header">
-  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.3-no-title">
+  <link rel="stylesheet" href="/assets/css/desafio-diario.css?v=4.4-vertical-track">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/desafio-diario/">
@@ -53,14 +53,6 @@
 
           <div id="daily-content" class="daily-content" hidden>
             <div class="daily-main-col">
-              <div id="daily-stepper" class="daily-stepper" aria-label="Progresso das pistas">
-                <div class="daily-step"><span>1</span><small>Pista 1</small></div>
-                <div class="daily-step"><span>2</span><small>Pista 2</small></div>
-                <div class="daily-step"><span>3</span><small>Pista 3</small></div>
-                <div class="daily-step"><span>4</span><small>Pista 4</small></div>
-                <div class="daily-step"><span>5</span><small>Pista 5</small></div>
-              </div>
-
               <article id="daily-card" class="daily-card">
                 <div class="daily-card-titlebar">
                   <div class="daily-card-title">
@@ -70,8 +62,20 @@
                   <span id="daily-area" class="daily-area"></span>
                 </div>
 
-                <div id="daily-clues" class="daily-clues"></div>
-                <div id="daily-feedback" class="daily-feedback" hidden></div>
+                <div class="daily-card-body">
+                  <div id="daily-stepper" class="daily-stepper" aria-label="Progresso das pistas">
+                    <div class="daily-step"><span>1</span><small>Pista 1</small></div>
+                    <div class="daily-step"><span>2</span><small>Pista 2</small></div>
+                    <div class="daily-step"><span>3</span><small>Pista 3</small></div>
+                    <div class="daily-step"><span>4</span><small>Pista 4</small></div>
+                    <div class="daily-step"><span>5</span><small>Pista 5</small></div>
+                  </div>
+
+                  <div class="daily-clues-wrap">
+                    <div id="daily-clues" class="daily-clues"></div>
+                    <div id="daily-feedback" class="daily-feedback" hidden></div>
+                  </div>
+                </div>
               </article>
 
               <form id="daily-form" class="daily-answer-card" autocomplete="off">
