@@ -2979,6 +2979,127 @@
   body:not(.schedule-settings-embed) .planner-panel:has(.month-planner:not([hidden])) .month-filter-tools{display:flex}
   @media(max-width:720px){.month-filter-tools{flex-wrap:wrap}.month-filter-tools select{flex:1;min-width:110px}}
 
+
+
+  /* Meta da semana v19 — compacto e no padrão visual do Caderno de Erros */
+  body[data-page="cronograma"] .agenda-week-goal-banner{
+    grid-template-columns:minmax(280px,1.15fr) minmax(430px,1.5fr) auto!important;
+    align-items:center!important;
+    gap:16px!important;
+    padding:13px 16px!important;
+    border:1.5px solid color-mix(in srgb,var(--accent) 38%,var(--border))!important;
+    border-radius:14px!important;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface))!important;
+    box-shadow:0 8px 22px rgba(24,72,136,.045)!important;
+  }
+  body[data-page="cronograma"] .agenda-week-goal-copy{
+    grid-template-columns:34px minmax(0,1fr)!important;
+    gap:11px!important;
+    align-items:start!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-target{
+    width:34px!important;
+    height:34px!important;
+    border-radius:10px!important;
+    background:color-mix(in srgb,var(--accent) 10%,var(--surface))!important;
+    color:var(--accent)!important;
+    font-size:18px!important;
+  }
+  body[data-page="cronograma"] .agenda-week-goal-copy strong{
+    font-size:12px!important;
+    line-height:1.15!important;
+    font-weight:850!important;
+  }
+  body[data-page="cronograma"] .agenda-week-goal-copy small{
+    margin-top:3px!important;
+    font-size:7.5px!important;
+    line-height:1.35!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-progress-line{
+    width:min(100%,330px)!important;
+    grid-template-columns:minmax(0,1fr) 34px!important;
+    gap:8px!important;
+    margin:8px auto 0!important;
+    align-items:center!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-progress-line>span{
+    height:7px!important;
+    border-radius:999px!important;
+    background:color-mix(in srgb,var(--accent) 9%,var(--surface-2))!important;
+    box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 8%,transparent)!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-progress-line i{
+    background:var(--accent)!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-progress-line b{
+    min-width:34px!important;
+    font-size:8px!important;
+    text-align:right!important;
+    color:var(--accent)!important;
+  }
+  body[data-page="cronograma"] .agenda-week-goal-copy em{
+    width:min(100%,330px)!important;
+    margin:4px auto 0!important;
+    font-size:7px!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-days{
+    grid-template-columns:repeat(5,minmax(72px,1fr))!important;
+    gap:8px!important;
+    padding-left:16px!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day{
+    gap:3px!important;
+    padding:6px 5px!important;
+    border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+    border-radius:10px!important;
+    background:color-mix(in srgb,var(--accent) 2.5%,var(--surface))!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day span{
+    font-size:6.5px!important;
+    line-height:1.15!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day strong{
+    font-size:8px!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day i{
+    width:100%!important;
+    max-width:62px!important;
+    height:4px!important;
+    border:0!important;
+    border-radius:99px!important;
+    background:var(--surface-2)!important;
+    overflow:hidden!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day i>b{
+    display:block!important;
+    height:100%!important;
+    border-radius:inherit!important;
+    background:var(--accent)!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day.done i{
+    background:var(--surface-2)!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day.done i::after{
+    display:none!important;
+  }
+  body[data-page="cronograma"] .agenda-goal-day small{
+    font-size:6px!important;
+    line-height:1.15!important;
+  }
+  @media(max-width:1050px){
+    body[data-page="cronograma"] .agenda-week-goal-banner{
+      grid-template-columns:1fr auto!important;
+    }
+    body[data-page="cronograma"] .agenda-goal-days{
+      grid-column:1/-1!important;
+      grid-row:2!important;
+      grid-template-columns:repeat(5,minmax(0,1fr))!important;
+      border-left:0!important;
+      border-top:1px solid var(--border)!important;
+      padding:10px 0 0!important;
+    }
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
