@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/favicon.png?v=luria2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.2">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="/assets/css/caderno-erros-revisao.css?v=1">
+  <link rel="stylesheet" href="/assets/css/caderno-erros-revisao.css?v=2-answer-mode">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
 </head>
 <body data-page="erros" class="error-review-page">
@@ -53,21 +53,40 @@
                 <span id="error-review-subject">—</span>
               </div>
 
-              <article class="error-review-big-card">
-                <div class="error-review-cat-badge">🐱 <span>Pulo do Gato</span></div>
+              <article id="error-review-big-card" class="error-review-big-card">
+                <div class="error-review-cat-logo" aria-label="Pulo do Gato">
+                  <img class="error-review-cat-logo-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="Pulo do Gato">
+                  <img class="error-review-cat-logo-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp" alt="Pulo do Gato">
+                </div>
                 <div id="error-review-ccq" class="error-review-big-copy">—</div>
               </article>
 
               <section id="error-review-details" class="error-review-details" hidden>
-                <h3>Questão original</h3>
-                <p id="error-review-question">—</p>
-                <div class="error-review-answer">
-                  <strong>Resposta correta</strong>
-                  <p id="error-review-answer">—</p>
+                <div class="error-review-question-block">
+                  <span class="error-review-question-kicker">Refaça a questão</span>
+                  <h3>Questão original</h3>
+                  <p id="error-review-question">—</p>
                 </div>
-                <div id="error-review-thought-wrap" hidden>
-                  <strong>O que eu pensei</strong>
-                  <p id="error-review-thought">—</p>
+
+                <div class="error-review-response-box">
+                  <label for="error-review-user-answer">Sua resposta</label>
+                  <textarea id="error-review-user-answer" rows="4" placeholder="Responda novamente antes de conferir o gabarito..."></textarea>
+                  <button id="error-review-confirm-answer" class="button primary" type="button">Confirmar resposta</button>
+                </div>
+
+                <div id="error-review-feedback" class="error-review-feedback" hidden>
+                  <div class="error-review-your-answer">
+                    <strong>Sua resposta</strong>
+                    <p id="error-review-user-answer-copy">—</p>
+                  </div>
+                  <div class="error-review-answer">
+                    <strong>Resposta correta</strong>
+                    <p id="error-review-answer">—</p>
+                  </div>
+                  <div id="error-review-thought-wrap" hidden>
+                    <strong>O que eu pensei originalmente</strong>
+                    <p id="error-review-thought">—</p>
+                  </div>
                 </div>
               </section>
 
@@ -101,7 +120,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.28-theme-switch"></script>
-  <script src="/assets/js/caderno-erros-revisao.js?v=1"></script>
+  <script src="/assets/js/caderno-erros-revisao.js?v=2-answer-mode"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
