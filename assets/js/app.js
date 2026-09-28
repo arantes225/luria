@@ -6253,3 +6253,54 @@ iniciarApp();
   html.pwa-standalone body .topbar .luria-notifications{align-self:center!important;height:40px!important;align-items:center!important}
  }`;document.head.appendChild(style);
 })();
+
+
+/* Global notification bell alignment v33 — desktop + mobile + PWA */
+(function ensureGlobalNotificationBellAlignment(){
+  if(document.getElementById("luria-notification-bell-align-v33")) return;
+  const style=document.createElement("style");
+  style.id="luria-notification-bell-align-v33";
+  style.textContent=`
+    body .topbar .luria-notification-toggle,
+    body #luria-notification-toggle {
+      display:grid!important;
+      place-items:center!important;
+      align-items:center!important;
+      justify-items:center!important;
+      padding:0!important;
+      line-height:0!important;
+      text-align:center!important;
+    }
+
+    body .topbar .luria-notification-toggle > svg,
+    body #luria-notification-toggle > svg {
+      position:static!important;
+      inset:auto!important;
+      display:block!important;
+      grid-area:1 / 1!important;
+      margin:0!important;
+      padding:0!important;
+      flex:none!important;
+      align-self:center!important;
+      justify-self:center!important;
+      transform:translateY(-0.5px)!important;
+      transform-origin:center!important;
+    }
+
+    body .topbar .luria-notification-toggle .luria-notification-badge,
+    body #luria-notification-toggle .luria-notification-badge {
+      grid-area:1 / 1!important;
+      align-self:start!important;
+      justify-self:end!important;
+    }
+
+    @media(max-width:980px){
+      html.pwa-standalone body .topbar .luria-notification-toggle,
+      html.pwa-standalone body #luria-notification-toggle {
+        display:grid!important;
+        place-items:center!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
