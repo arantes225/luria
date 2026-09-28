@@ -148,3 +148,35 @@
     min-height:220px;
   }
 }
+
+
+/* v3 — variantes corretas do logo Pulo do Gato */
+.error-review-cat-logo img{
+  display:none;
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+.error-review-cat-logo-default{
+  display:block!important;
+}
+html[data-theme="dark"] .error-review-cat-logo-default,
+body.theme-dark .error-review-cat-logo-default,
+[data-theme="dark"] .error-review-cat-logo-default{
+  display:none!important;
+}
+html[data-theme="dark"] .error-review-cat-logo-darktheme,
+body.theme-dark .error-review-cat-logo-darktheme,
+[data-theme="dark"] .error-review-cat-logo-darktheme{
+  display:block!important;
+}
+html[data-theme="pink"] .error-review-cat-logo-default,
+body.theme-pink .error-review-cat-logo-default,
+[data-theme="pink"] .error-review-cat-logo-default{
+  display:none!important;
+}
+html[data-theme="pink"] .error-review-cat-logo-pinktheme,
+body.theme-pink .error-review-cat-logo-pinktheme,
+[data-theme="pink"] .error-review-cat-logo-pinktheme{
+  display:block!important;
+}
