@@ -16,3 +16,12 @@
 .score-result{position:sticky;top:0;align-self:start;display:grid;gap:10px;padding:16px;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 5%,var(--surface))}.score-result-label{color:var(--muted);font-size:9px;font-weight:850;text-transform:uppercase;letter-spacing:.06em}.score-result-value{font-size:36px;font-weight:950;letter-spacing:-.04em;color:var(--accent)}.score-result-text{font-size:11px;font-weight:800;line-height:1.4}.score-result-note{color:var(--muted);font-size:9px;line-height:1.5}.score-copy{height:38px;border:1px solid var(--accent);border-radius:10px;background:var(--accent);color:#fff;font:850 10px/1 inherit;cursor:pointer}.score-reset{height:36px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--muted);font:800 10px/1 inherit;cursor:pointer}.score-reference{padding-top:8px;border-top:1px solid var(--border);color:var(--muted);font-size:8px;line-height:1.45}
 @media(hover:hover) and (pointer:fine){.score-card:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--border));transform:translateY(-1px);background:color-mix(in srgb,var(--accent) 2%,var(--surface))}.score-fav:hover,.score-search-clear:hover,.score-close:hover{background:var(--surface-2)}}
 @media(max-width:760px){.score-tabs{display:flex;width:100%;border-radius:11px}.score-tab{padding:9px 12px}.score-toolbar{grid-template-columns:1fr}.score-toolbar-count{display:none}.score-grid{grid-template-columns:1fr}.score-modal{width:calc(100vw - 16px);max-height:92dvh}.score-modal-body{grid-template-columns:1fr;max-height:calc(92dvh - 112px)}.score-result{position:static}.score-card{min-height:90px}}
+
+/* Finalidade clínica visível nos cards e no modal */
+.score-purpose b{color:var(--text);font-weight:800}
+.score-purpose-box{margin:14px 20px 0;padding:10px 12px;border:1px solid var(--border);border-radius:11px;background:color-mix(in srgb,var(--accent) 4%,var(--surface));color:var(--muted);font-size:11px;line-height:1.45}
+.score-purpose-box b{color:var(--text);font-weight:800}
+@media(max-width:760px){
+  .score-purpose{font-size:11px!important;line-height:1.4!important}
+  .score-purpose-box{margin:12px 14px 0;padding:10px 11px;font-size:10.5px}
+}
