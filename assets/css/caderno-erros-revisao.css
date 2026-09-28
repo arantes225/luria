@@ -180,3 +180,36 @@ body.theme-pink .error-review-cat-logo-pinktheme,
 [data-theme="pink"] .error-review-cat-logo-pinktheme{
   display:block!important;
 }
+
+
+/* v4 — segue exatamente o tema real da LURIA */
+html[data-theme="light"] .error-review-cat-logo-default{
+  display:block!important;
+}
+html[data-theme="light"] .error-review-cat-logo-darktheme,
+html[data-theme="light"] .error-review-cat-logo-pinktheme{
+  display:none!important;
+}
+
+html[data-theme="dark"] .error-review-cat-logo-default{
+  display:none!important;
+}
+html[data-theme="dark"] .error-review-cat-logo-darktheme{
+  display:block!important;
+}
+html[data-theme="dark"] .error-review-cat-logo-pinktheme{
+  display:none!important;
+}
+
+html[data-theme="leila-mood"] .error-review-cat-logo-default,
+body.theme-leila-mood .error-review-cat-logo-default{
+  display:none!important;
+}
+html[data-theme="leila-mood"] .error-review-cat-logo-darktheme,
+body.theme-leila-mood .error-review-cat-logo-darktheme{
+  display:none!important;
+}
+html[data-theme="leila-mood"] .error-review-cat-logo-pinktheme,
+body.theme-leila-mood .error-review-cat-logo-pinktheme{
+  display:block!important;
+}
