@@ -6533,3 +6533,70 @@ html:not(.pwa-standalone) body[data-plantao-entry="emergency"] #plantao-simulato
     text-align:center!important;
   }
 }
+
+
+/* === Sala de Emergência · themed difficulty + today cards v38 === */
+body.plantao-module-entry{
+  --plantao-tone-1:color-mix(in srgb,var(--accent) 28%,var(--surface));
+  --plantao-tone-2:color-mix(in srgb,var(--accent) 62%,var(--surface));
+  --plantao-tone-3:color-mix(in srgb,var(--accent-strong) 88%,var(--surface));
+  --plantao-tone-soft:color-mix(in srgb,var(--accent) 9%,var(--surface));
+}
+body.plantao-module-entry .plantao-today-card{
+  border-color:color-mix(in srgb,var(--accent) 18%,var(--border))!important;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb,var(--accent) 4%,var(--surface)) 0%,
+      var(--surface) 58%)!important;
+}
+body.plantao-module-entry .plantao-today-card .plantao-side-card-head{
+  border-bottom:1px solid color-mix(in srgb,var(--accent) 12%,var(--border));
+}
+body.plantao-module-entry .plantao-today-icon.cases{
+  background:color-mix(in srgb,var(--accent) 10%,var(--surface))!important;
+  color:var(--accent)!important;
+}
+body.plantao-module-entry .plantao-today-icon.active{
+  background:color-mix(in srgb,var(--accent) 16%,var(--surface))!important;
+  color:color-mix(in srgb,var(--accent) 78%,var(--text))!important;
+}
+body.plantao-module-entry .plantao-today-icon.time{
+  background:color-mix(in srgb,var(--accent) 22%,var(--surface))!important;
+  color:var(--accent-strong)!important;
+}
+body.plantao-module-entry .plantao-today-icon.rate{
+  background:color-mix(in srgb,var(--accent-strong) 14%,var(--surface))!important;
+  color:var(--accent-strong)!important;
+}
+body.plantao-module-entry .plantao-difficulty-card{
+  border-color:color-mix(in srgb,var(--accent) 18%,var(--border))!important;
+  background:
+    linear-gradient(180deg,
+      color-mix(in srgb,var(--accent) 4%,var(--surface)) 0%,
+      var(--surface) 68%)!important;
+}
+body.plantao-module-entry .plantao-difficulty-donut{
+  background:
+    conic-gradient(
+      var(--plantao-tone-1) 0 var(--diff-basic,33%),
+      var(--plantao-tone-2) var(--diff-basic,33%) calc(var(--diff-basic,33%) + var(--diff-intermediate,34%)),
+      var(--plantao-tone-3) calc(var(--diff-basic,33%) + var(--diff-intermediate,34%)) 100%
+    )!important;
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 10%,transparent);
+}
+body.plantao-module-entry .plantao-difficulty-legend .basic{background:var(--plantao-tone-1)!important}
+body.plantao-module-entry .plantao-difficulty-legend .intermediate{background:var(--plantao-tone-2)!important}
+body.plantao-module-entry .plantao-difficulty-legend .advanced{background:var(--plantao-tone-3)!important}
+
+/* Botão Prática Clínica fica abaixo do título e antes do caso em destaque. */
+body.plantao-module-entry .plantao-practice-back-row{
+  display:flex;
+  align-items:center;
+  margin:2px 0 12px;
+}
+body.plantao-module-entry .plantao-practice-back{
+  margin-left:0!important;
+}
+@media(max-width:760px){
+  body.plantao-module-entry .plantao-practice-back-row{margin:0 0 10px}
+}
