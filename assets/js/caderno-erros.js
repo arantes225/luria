@@ -4951,39 +4951,48 @@ function editErrorNotebook(area,name){
         ${rows.map((item,index)=>`
           <article class="error-note-detail-card" data-error-note-id="${errorLibraryEscape(item.id)}">
             <div class="error-note-detail-index">${index+1}</div>
+
             <div class="error-note-detail-body">
               <div class="error-note-detail-head">
                 <div>
                   <span class="error-note-detail-kicker">${errorLibraryEscape(item.theme||"Erro salvo")}</span>
                   <h3>${errorLibraryEscape(item.ccq||item.question_text||`Erro ${index+1}`)}</h3>
                 </div>
-                <span class="error-note-detail-date">${item.due_date?errorLibraryEscape(formatErrorDate(item.due_date)):"Sem revisão agendada"}</span>
+
+                <div class="error-note-detail-side">
+                  <span class="error-note-detail-date">${item.due_date?errorLibraryEscape(formatErrorDate(item.due_date)):"Sem revisão agendada"}</span>
+                  <button type="button" class="error-note-detail-more" aria-label="Mais ações" aria-expanded="false" data-error-note-more="${errorLibraryEscape(item.id)}">•••</button>
+                  <div class="error-note-detail-menu" data-error-note-menu="${errorLibraryEscape(item.id)}" hidden>
+                    <button type="button" data-error-note-review="${errorLibraryEscape(item.id)}">▶ Revisar</button>
+                    <button type="button" data-error-note-edit="${errorLibraryEscape(item.id)}">Editar</button>
+                    <button type="button" class="danger" data-error-note-delete="${errorLibraryEscape(item.id)}">Excluir</button>
+                  </div>
+                </div>
               </div>
 
-              ${item.question_text?`
-                <div class="error-note-detail-question">
-                  <strong>Questão</strong>
-                  <p>${errorLibraryEscape(item.question_text)}</p>
-                </div>
-              `:""}
+              <div class="error-note-detail-open-row">
+                <button type="button" class="button secondary error-note-detail-open" data-error-note-open="${errorLibraryEscape(item.id)}" aria-expanded="false">Abrir</button>
+              </div>
 
-              ${item.correct_answer?`
+              <div class="error-note-detail-expanded" data-error-note-expanded="${errorLibraryEscape(item.id)}" hidden>
+                ${item.question_text?`
+                  <div class="error-note-detail-question">
+                    <strong>Questão</strong>
+                    <p>${errorLibraryEscape(item.question_text)}</p>
+                  </div>
+                `:`<div class="error-note-detail-question"><strong>Questão</strong><p>Questão não informada.</p></div>`}
+
                 <div class="error-note-detail-answer">
                   <strong>Resposta correta</strong>
-                  <p>${errorLibraryEscape(item.correct_answer)}</p>
+                  <p>${errorLibraryEscape(item.correct_answer||"—")}</p>
                 </div>
-              `:""}
 
-              ${item.what_i_thought?`
-                <details class="error-note-detail-thought">
-                  <summary>O que eu pensei</summary>
-                  <p>${errorLibraryEscape(item.what_i_thought)}</p>
-                </details>
-              `:""}
-
-              <div class="error-note-detail-actions">
-                <button type="button" class="button primary" data-error-note-review="${errorLibraryEscape(item.id)}">Revisar este erro</button>
-                <button type="button" class="button secondary" data-error-note-edit="${errorLibraryEscape(item.id)}">Editar</button>
+                ${item.what_i_thought?`
+                  <div class="error-note-detail-thought">
+                    <strong>O que eu pensei</strong>
+                    <p>${errorLibraryEscape(item.what_i_thought)}</p>
+                  </div>
+                `:""}
               </div>
             </div>
           </article>
@@ -5001,12 +5010,51 @@ function editErrorNotebook(area,name){
     setErrorLibraryStatus("");
   };
 
+  const closeNoteMenus=(exceptId=null)=>{
+    container.querySelectorAll("[data-error-note-menu]").forEach(menu=>{
+      if(String(menu.dataset.errorNoteMenu)!==String(exceptId))menu.hidden=true;
+    });
+    container.querySelectorAll("[data-error-note-more]").forEach(button=>{
+      if(String(button.dataset.errorNoteMore)!==String(exceptId))button.setAttribute("aria-expanded","false");
+    });
+  };
+
   document.getElementById("error-notebook-back")?.addEventListener("click",restoreNotebookLibrary);
   document.getElementById("error-notebook-review-all")?.addEventListener("click",()=>reviewErrorNotebook(area,name));
+
+  container.querySelectorAll("[data-error-note-open]").forEach(button=>{
+    button.addEventListener("click",(event)=>{
+      event.stopPropagation();
+      const id=button.dataset.errorNoteOpen;
+      const panel=container.querySelector(`[data-error-note-expanded="${CSS.escape(id)}"]`);
+      if(!panel)return;
+      const open=panel.hidden;
+      panel.hidden=!open;
+      button.textContent=open?"Fechar":"Abrir";
+      button.setAttribute("aria-expanded",open?"true":"false");
+    });
+  });
+
+  container.querySelectorAll("[data-error-note-more]").forEach(button=>{
+    button.addEventListener("click",(event)=>{
+      event.stopPropagation();
+      const id=button.dataset.errorNoteMore;
+      const menu=container.querySelector(`[data-error-note-menu="${CSS.escape(id)}"]`);
+      const open=!!menu?.hidden;
+      closeNoteMenus(id);
+      if(menu)menu.hidden=!open;
+      button.setAttribute("aria-expanded",open?"true":"false");
+    });
+  });
+
+  container.querySelectorAll("[data-error-note-menu]").forEach(menu=>{
+    menu.addEventListener("click",(event)=>event.stopPropagation());
+  });
 
   container.querySelectorAll("[data-error-note-edit]").forEach(button=>{
     button.addEventListener("click",(event)=>{
       event.stopPropagation();
+      closeNoteMenus();
       openErrorEditDialog(button.dataset.errorNoteEdit);
     });
   });
@@ -5014,10 +5062,21 @@ function editErrorNotebook(area,name){
   container.querySelectorAll("[data-error-note-review]").forEach(button=>{
     button.addEventListener("click",(event)=>{
       event.stopPropagation();
+      closeNoteMenus();
       openErrorReviewPage({mode:"notebook",area,name,item:button.dataset.errorNoteReview});
     });
   });
 
+  container.querySelectorAll("[data-error-note-delete]").forEach(button=>{
+    button.addEventListener("click",async(event)=>{
+      event.stopPropagation();
+      closeNoteMenus();
+      await deleteErrorFromLibrary(button.dataset.errorNoteDelete);
+      editErrorNotebook(area,name);
+    });
+  });
+
+  document.addEventListener("click",closeNoteMenus,{once:true});
   setErrorLibraryStatus("");
 }
 async function addErrorsToTodayReview(items,label="itens"){
