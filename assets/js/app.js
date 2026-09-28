@@ -1251,20 +1251,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
           <span class="nav-icon">▧</span><span>Cola rápida</span>
         </a>
 
-        <a class="nav-link ${page === "trabalho_prescricao" ? "active" : ""}" href="/trabalho/prescricao/">
+        <a class="nav-link ${["trabalho_prescricao","trabalho_bulario","trabalho_protocolos","trabalho_receitas","trabalho_antimicrobianos"].includes(page) ? "active" : ""}" href="/trabalho/prescricao/">
           <span class="nav-icon">✎</span><span>Prescrição</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_bulario" ? "active" : ""}" href="/trabalho/bulario/">
-          <span class="nav-icon">℞</span><span>Bulário</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_protocolos" ? "active" : ""}" href="/trabalho/protocolos/">
-          <span class="nav-icon">☷</span><span>Protocolos</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_receitas" ? "active" : ""}" href="/trabalho/receitas/">
-          <span class="nav-icon">▤</span><span>Tratamentos gerais</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_exames" ? "active" : ""}" href="/trabalho/exames/">
@@ -1277,10 +1265,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_scores" ? "active" : ""}" href="/trabalho/scores/">
           <span class="nav-icon">#</span><span>Scores</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_antimicrobianos" ? "active" : ""}" href="/trabalho/antimicrobianos/">
-          <span class="nav-icon">⊕</span><span>Antimicrobianos</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_condutas" ? "active" : ""}" href="/trabalho/condutas-rapidas/">
