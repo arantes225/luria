@@ -63,7 +63,13 @@
       portal={...portal,content:{},content_expires_at:null};
     }
     note.value=String(portal?.content?.note||"");
-    renderAddress();renderExpiry();setStatus("Pronto");
+    const shouldImport=new URLSearchParams(location.search).get("import")==="1";
+    const incoming=shouldImport?window.LuriaClinicalBridge?.consume():null;
+    if(incoming?.text){
+      const block=[incoming.title?String(incoming.title).toUpperCase():"",String(incoming.text||"")].filter(Boolean).join("\n");
+      note.value=note.value.trim()?note.value.trimEnd()+"\n\n──────────\n"+block:block;
+    }
+    renderAddress();renderExpiry();setStatus(incoming?.text?"Conteúdo importado. Revise e salve.":"Pronto");
   }
 
   async function saveNote(){
