@@ -4650,3 +4650,153 @@ body.plantao-module-entry .plantao-library-inner-switch .plantao-specialty-nativ
     gap:2px;
   }
 }
+
+
+/* === Sala de Emergência · hospital folder cards v12 === */
+body.plantao-module-entry .plantao-case-card-ref-image{
+  display:none!important;
+}
+body.plantao-module-entry #plantao-case-grid{
+  gap:16px!important;
+}
+body.plantao-module-entry .plantao-case-folder{
+  position:relative!important;
+  overflow:visible!important;
+  padding:12px 0 0!important;
+  border:0!important;
+  border-radius:14px!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body.plantao-module-entry .plantao-case-folder-tab{
+  position:absolute;
+  top:0;
+  left:14px;
+  z-index:2;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  min-height:30px;
+  padding:0 11px;
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));
+  border-bottom:0;
+  border-radius:10px 10px 0 0;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface));
+  color:var(--accent);
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+body.plantao-module-entry .plantao-case-folder-icon{
+  font-size:12px;
+  line-height:1;
+}
+body.plantao-module-entry .plantao-case-folder-body{
+  display:grid;
+  gap:9px;
+  min-height:100%;
+  padding:20px 14px 14px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background:
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb,var(--accent) 4%,var(--surface)) 0,
+      color-mix(in srgb,var(--accent) 4%,var(--surface)) 46px,
+      var(--surface) 46px,
+      var(--surface) 100%
+    );
+  box-shadow:0 6px 16px rgba(18,48,82,.045);
+  transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease;
+}
+body.plantao-module-entry .plantao-case-folder:hover .plantao-case-folder-body{
+  transform:translateY(-2px);
+  border-color:color-mix(in srgb,var(--accent) 28%,var(--border));
+  box-shadow:0 10px 24px rgba(18,48,82,.08);
+}
+body.plantao-module-entry .plantao-case-folder-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+body.plantao-module-entry .plantao-case-chip{
+  display:inline-flex;
+  align-items:center;
+  min-height:22px;
+  padding:0 7px;
+  border-radius:999px;
+  font-size:8px;
+  font-weight:850;
+}
+body.plantao-module-entry .plantao-case-chip.area{
+  background:var(--accent-soft);
+  color:var(--accent);
+}
+body.plantao-module-entry .plantao-case-chip.difficulty{
+  background:#fff1cc;
+  color:#9a6500;
+}
+body.plantao-module-entry .plantao-case-folder[data-difficulty*="bás"] .plantao-case-chip.difficulty,
+body.plantao-module-entry .plantao-case-folder[data-difficulty*="bas"] .plantao-case-chip.difficulty,
+body.plantao-module-entry .plantao-case-folder[data-difficulty*="fácil"] .plantao-case-chip.difficulty,
+body.plantao-module-entry .plantao-case-folder[data-difficulty*="facil"] .plantao-case-chip.difficulty{
+  background:#ddf7ea;
+  color:#17734c;
+}
+body.plantao-module-entry .plantao-case-folder[data-difficulty*="avan"] .plantao-case-chip.difficulty,
+body.plantao-module-entry .plantao-case-folder[data-difficulty*="dif"] .plantao-case-chip.difficulty{
+  background:#ffe1e2;
+  color:#b92e3b;
+}
+body.plantao-module-entry .plantao-case-chip.time{
+  background:var(--surface-2);
+  color:var(--muted);
+}
+body.plantao-module-entry .plantao-case-folder-body h3{
+  margin:0!important;
+  color:var(--text)!important;
+  font-size:13px!important;
+  line-height:1.28!important;
+}
+body.plantao-module-entry .plantao-case-folder-body .plantao-case-card-ref-tags{
+  display:flex;
+  gap:5px;
+  flex-wrap:wrap;
+}
+body.plantao-module-entry .plantao-case-folder-body .plantao-case-card-ref-tags span{
+  padding:4px 6px;
+  border-radius:7px;
+  background:var(--surface-2);
+  color:var(--muted);
+  font-size:7.5px;
+  font-weight:760;
+}
+body.plantao-module-entry .plantao-case-folder-body p{
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  min-height:42px!important;
+  margin:0!important;
+  color:var(--muted)!important;
+  font-size:9px!important;
+  line-height:1.5!important;
+}
+body.plantao-module-entry .plantao-case-folder-body small{
+  color:var(--muted);
+  font-size:7.5px;
+}
+body.plantao-module-entry .plantao-case-folder-body .button{
+  width:100%!important;
+  min-height:34px!important;
+  margin-top:2px;
+  border:1px solid color-mix(in srgb,var(--accent) 55%,var(--border))!important;
+  border-radius:8px!important;
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  font-size:8.5px!important;
+  font-weight:900!important;
+}
+body.plantao-module-entry .plantao-case-folder-body .button:hover{
+  background:var(--accent-soft)!important;
+}
