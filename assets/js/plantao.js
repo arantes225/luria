@@ -701,15 +701,16 @@
       return `
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
           <div class="plantao-record-folder">
-            <div class="plantao-record-folder-tabs">
-              <span class="plantao-record-paper-slip difficulty">${esc(item.difficulty || "Intermediário")}</span>
-              <span class="plantao-record-paper-slip time">◷ 20 min</span>
-            </div>
             <div class="plantao-record-paper">
+              ${best == null ? "" : `
+                <div class="plantao-record-score-callout" title="Melhor pontuação neste caso">
+                  <span>Nota</span>
+                  <strong>${Math.round(best)}/100</strong>
+                </div>
+              `}
               <div class="plantao-record-paper-header">
                 <div class="plantao-record-title-wrap">
                   <span class="plantao-record-kicker">PRONTUÁRIO DO PACIENTE</span>
-                  <div class="plantao-record-area">${esc(area)}</div>
                   <div class="plantao-record-patient">
                     <strong>${esc(patientName)}</strong>
                     <span>${esc(patientAge)} · ${esc(patientSexLabel)}</span>
@@ -722,27 +723,25 @@
               </div>
 
               <div class="plantao-record-lines">
+                <div class="plantao-record-line plantao-record-area-line">
+                  <strong>Área:</strong>
+                  <span>${esc(area)}</span>
+                </div>
+
                 <div class="plantao-record-line">
                   <strong>Subárea:</strong>
                   <span>${esc(materia)}</span>
+                </div>
+
+                <div class="plantao-record-line plantao-record-difficulty-line">
+                  <strong>Dificuldade:</strong>
+                  <span>${esc(item.difficulty || "Intermediário")}</span>
                 </div>
 
                 <div class="plantao-record-line">
                   <strong>Setor:</strong>
                   <span>${esc(item.setting || "Sala de emergência")}</span>
                 </div>
-
-                <div class="plantao-record-line plantao-record-summary">
-                  <strong>Resumo clínico:</strong>
-                  <span>${esc(summary)}</span>
-                </div>
-
-                ${best == null ? "" : `
-                  <div class="plantao-record-line">
-                    <strong>Desempenho:</strong>
-                    <span>Melhor resultado: ${Math.round(best)}/100${attempts ? " · " + attempts + " tentativa" + (attempts === 1 ? "" : "s") : ""}</span>
-                  </div>
-                `}
               </div>
 
               <button class="button plantao-record-button" type="button" data-start-case="${esc(item.id)}">
