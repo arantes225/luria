@@ -134,6 +134,7 @@
       if (category && r.category !== category) return false;
       if (!q) return true;
       const hay = norm([
+        r.slug,
         r.title,
         r.category,
         r.summary,
@@ -325,9 +326,9 @@
     const params = new URLSearchParams(location.search);
     const wanted = params.get("q")?.trim();
     if (wanted) {
-      els.search.value = wanted;
       const nw = norm(wanted);
       const hit = all.find((r) => r.slug === wanted) || all.find((r) => norm(r.title).includes(nw) || norm((r.tags||[]).join(" ")).includes(nw));
+      els.search.value = hit?.title || wanted;
       selectedId = hit?.id || null;
     }
     renderStats();
