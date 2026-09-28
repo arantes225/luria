@@ -2989,3 +2989,84 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
     align-content:start!important;
   }
 }
+
+
+/* Dashboard 3 v49 — títulos no topo + atividades do dia em callouts internos */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternative{
+    padding-top:0!important;
+    margin-top:-12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-greeting{
+    margin-top:0!important;
+    margin-bottom:14px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-card-heading{
+    align-items:flex-start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-card-heading h3{
+    align-items:flex-start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-timeline{
+    display:grid!important;
+    gap:10px!important;
+    margin-top:2px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-activity-action-inside{
+    display:block!important;
+    min-height:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-activity-action-inside .dl-activity-dot,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-activity-action-inside .dl-activity-date{
+    display:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-activity-action-inside .dl-activity-info{
+    width:100%!important;
+    min-height:52px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:12px!important;
+    padding:9px 12px!important;
+    border:1px solid var(--border)!important;
+    border-radius:13px!important;
+    background:var(--surface)!important;
+    box-shadow:0 1px 2px rgba(15,23,42,.025)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-activity-action-inside .dl-activity-copy{
+    flex:1 1 auto!important;
+    min-width:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-activity-action-inside .dl-activity-copy strong{
+    margin:0 0 3px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-upcoming .dl-activity-action-inside .dl-start{
+    flex:0 0 auto!important;
+    min-width:72px!important;
+    height:32px!important;
+    min-height:32px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:5px!important;
+    padding:0 10px!important;
+    border-radius:9px!important;
+    background:var(--surface-2)!important;
+    border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border))!important;
+    color:var(--accent)!important;
+    font-size:11px!important;
+    font-weight:800!important;
+    box-shadow:none!important;
+  }
+}
