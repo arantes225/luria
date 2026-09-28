@@ -12,7 +12,6 @@
     content: document.getElementById("daily-content"),
     area: document.getElementById("daily-area"),
     heroDate: document.getElementById("daily-hero-date"),
-    steps: [...document.querySelectorAll("#daily-stepper .daily-step")],
     clues: document.getElementById("daily-clues"),
     feedback: document.getElementById("daily-feedback"),
     form: document.getElementById("daily-form"),
@@ -97,25 +96,32 @@
 
     els.clues.innerHTML = Array.from({length: visible}, (_, i) => {
       const n = i + 1;
-      const classes = ["daily-clue","is-unlocked"];
+      const classes = ["daily-clue"];
+      const stepClasses = ["daily-track-step"];
 
-      if (!won && !lost && n === unlocked) classes.push("is-current");
-      if (won && n === unlocked) classes.push("is-correct");
+      if (!won && !lost && n === unlocked) {
+        classes.push("is-current");
+        stepClasses.push("is-current");
+      } else if (n < unlocked || won || lost) {
+        classes.push("is-unlocked");
+        stepClasses.push("is-visible");
+      }
+      if (won && n === unlocked) {
+        classes.push("is-correct");
+        stepClasses.push("is-correct");
+      }
 
       const text = challenge["clue_" + n] || "";
 
-      return '<div class="' + classes.join(" ") + '"><div class="daily-clue-inner">' +
-        '<div class="daily-clue-copy"><p>' + esc(text) + '</p></div>' +
-      '</div></div>';
+      return '<div class="daily-clue-row">' +
+        '<div class="' + stepClasses.join(" ") + '">' +
+          '<span>' + n + '</span><small>Pista ' + n + '</small>' +
+        '</div>' +
+        '<div class="' + classes.join(" ") + '"><div class="daily-clue-inner">' +
+          '<div class="daily-clue-copy"><p>' + esc(text) + '</p></div>' +
+        '</div></div>' +
+      '</div>';
     }).join("");
-
-    els.steps.forEach((step, i) => {
-      const n = i + 1;
-      step.hidden = n > visible;
-      step.classList.toggle("is-visible", n < unlocked || (won && n <= visible));
-      step.classList.toggle("is-current", !won && !lost && n === unlocked);
-      step.classList.toggle("is-complete", won && n <= unlocked);
-    });
 
     renderSummary();
   }
