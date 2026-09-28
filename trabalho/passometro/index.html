@@ -67,15 +67,17 @@
     .pm-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
     .pm-field{display:grid;gap:6px}
     .pm-field label,.pm-label{font-size:11px;font-weight:850;color:var(--muted)}
-    .pm-field input,.pm-field select,.pm-field textarea,.pm-subfield input,.pm-subfield select{width:100%;min-height:42px;padding:9px 11px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:inherit;font-size:13px}
+    .pm-field input,.pm-field select,.pm-field textarea,.pm-subfield input,.pm-subfield select{width:100%;min-height:44px;padding:9px 42px 9px 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2);color:var(--text);font:inherit;font-size:13px;outline:none;transition:border-color .16s ease,box-shadow .16s ease,background .16s ease}
+    .pm-field input:focus,.pm-field select:focus,.pm-field textarea:focus,.pm-subfield input:focus,.pm-subfield select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);background:var(--surface)}
+    .pm-field select,.pm-subfield select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--accent) 50%),linear-gradient(135deg,var(--accent) 50%,transparent 50%);background-position:calc(100% - 18px) calc(50% - 2px),calc(100% - 13px) calc(50% - 2px);background-size:5px 5px,5px 5px;background-repeat:no-repeat;cursor:pointer}
     .pm-field textarea{min-height:88px;resize:vertical}
     .pm-section{padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}
     .pm-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
     .pm-section-head strong{font-size:13px}
-    .pm-toggle{display:inline-flex;padding:3px;border:1px solid var(--border);border-radius:999px;background:var(--surface)}
-    .pm-toggle button{min-width:46px;height:29px;padding:0 10px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:10px;font-weight:850;cursor:pointer}
-    .pm-toggle button.active{background:var(--accent);color:#fff}
-    .pm-toggle.no button[data-value="no"].active{background:var(--surface-2);color:var(--text)}
+    .pm-toggle{display:inline-flex;gap:3px;padding:3px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}
+    .pm-toggle button{min-width:48px;height:31px;padding:0 11px;border:0;border-radius:7px;background:transparent;color:var(--muted);font-size:10px;font-weight:850;cursor:pointer;transition:.16s ease}
+    .pm-toggle button.active{background:var(--accent);color:#fff;box-shadow:0 1px 3px rgba(15,35,65,.08)}
+    .pm-toggle.no button[data-value="no"].active{background:var(--surface-2);color:var(--text);box-shadow:none}
     .pm-conditional{display:grid;gap:10px;margin-top:12px}
     .pm-conditional[hidden]{display:none!important}
     .pm-med-row{display:grid;grid-template-columns:minmax(150px,1.5fr) 90px 90px 110px minmax(130px,1fr) 34px;gap:8px;align-items:end}
@@ -84,8 +86,8 @@
     .pm-subfield label{font-size:9px;color:var(--muted);font-weight:800}
     .pm-remove{width:34px;height:40px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--danger);font-size:17px;cursor:pointer}
     .pm-add-row{justify-self:start;min-height:34px;padding:0 11px;border:1px dashed var(--border);border-radius:9px;background:var(--surface);color:var(--accent);font-weight:800;cursor:pointer}
-    .pm-priority{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-    .pm-priority button{min-height:42px;border:1px solid var(--border);border-radius:10px;background:var(--surface);font-weight:850;cursor:pointer}
+    .pm-priority{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:4px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+    .pm-priority button{min-height:40px;border:0;border-radius:8px;background:transparent;color:var(--muted);font-weight:850;cursor:pointer}
     .pm-priority button.active[data-priority="green"]{background:#e8f7ef;border-color:#2ca56c;color:#197347}
     .pm-priority button.active[data-priority="yellow"]{background:#fff7dd;border-color:#d6a019;color:#8a6500}
     .pm-priority button.active[data-priority="red"]{background:#fff0f0;border-color:#d84b4b;color:#a62f2f}
