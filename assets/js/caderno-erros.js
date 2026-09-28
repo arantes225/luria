@@ -3104,6 +3104,19 @@ function errorLibraryEscape(
 }
 
 
+function syncErrorLibraryAreaPicker() {
+  const select=document.getElementById("error-library-area");
+  const label=document.getElementById("error-library-area-label");
+  const menu=document.getElementById("error-library-area-menu");
+  if(!select)return;
+  const current=select.value||"";
+  const currentText=select.options[select.selectedIndex]?.textContent?.trim()||"Todas as áreas";
+  if(label)label.textContent=currentText;
+  if(menu){
+    menu.innerHTML=[...select.options].map(option=>`<button type="button" class="error-library-area-option" role="option" data-error-library-area-value="${errorLibraryEscape(option.value)}" aria-selected="${String(option.value===current)}">${errorLibraryEscape(option.textContent.trim())}</button>`).join("");
+  }
+}
+
 function populateLibraryAreas() {
   const select =
     document.getElementById(
@@ -3149,6 +3162,7 @@ function populateLibraryAreas() {
     select.value =
       current;
   }
+  syncErrorLibraryAreaPicker();
 }
 
 
@@ -5142,7 +5156,7 @@ function renderErrorLibrary() {
   }
   renderErrorHomeExtras();updateErrorBulkToolbar();
   container.querySelectorAll("[data-error-area-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const area=button.dataset.errorAreaMore;document.querySelectorAll("[data-error-area-menu]").forEach(m=>{if(m.dataset.errorAreaMenu!==area)m.hidden=true});const menu=container.querySelector(`[data-error-area-menu="${CSS.escape(area)}"]`);if(menu)menu.hidden=!menu.hidden}));
-  container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area),area));shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>openErrorReviewPage({mode:"area",area}));shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||""}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
+  container.querySelectorAll(".error-notebook-shelf").forEach(shelf=>{const more=shelf.querySelector("[data-error-area-more]");if(!more)return;const area=more.dataset.errorAreaMore;shelf.querySelector("[data-area-add-today]")?.addEventListener("click",()=>addErrorsToTodayReview(errorLibraryItems.filter(i=>canonicalErrorArea(i.area)===area),area));shelf.querySelector("[data-area-review]")?.addEventListener("click",()=>openErrorReviewPage({mode:"area",area}));shelf.querySelector("[data-area-edit]")?.addEventListener("click",()=>{const select=document.getElementById("error-library-area");if(select){const exact=[...select.options].find(o=>canonicalArea(o.value)===area);select.value=exact?.value||"";syncErrorLibraryAreaPicker()}const search=document.getElementById("error-library-search");if(search)search.value="";renderErrorLibrary();setErrorLibraryStatus(`Área “${area}” aberta para edição.`,"success")})});
   container.querySelectorAll("[data-error-notebook-more]").forEach(button=>button.addEventListener("click",event=>{event.stopPropagation();const key=button.dataset.errorNotebookMore;const menu=container.querySelector(`[data-error-notebook-menu="${CSS.escape(key)}"]`);const opening=menu?.hidden;closeNotebookMenus();if(menu)menu.hidden=!opening}));
   container.querySelectorAll("[data-error-notebook]").forEach(card=>{
     const [area,name]=card.dataset.errorNotebook.split("||");
@@ -5248,8 +5262,37 @@ function wireErrorLibrary() {
     )
     ?.addEventListener(
       "change",
-      renderErrorLibrary
+      () => {
+        syncErrorLibraryAreaPicker();
+        renderErrorLibrary();
+      }
     );
+
+  const areaToggle=document.getElementById("error-library-area-toggle");
+  const areaMenu=document.getElementById("error-library-area-menu");
+  const closeAreaPicker=()=>{
+    if(areaMenu)areaMenu.hidden=true;
+    areaToggle?.setAttribute("aria-expanded","false");
+  };
+  areaToggle?.addEventListener("click",(event)=>{
+    event.stopPropagation();
+    if(!areaMenu)return;
+    const open=areaMenu.hidden;
+    areaMenu.hidden=!open;
+    areaToggle.setAttribute("aria-expanded",String(open));
+  });
+  areaMenu?.addEventListener("click",(event)=>{
+    const option=event.target.closest("[data-error-library-area-value]");
+    if(!option)return;
+    const select=document.getElementById("error-library-area");
+    if(!select)return;
+    select.value=option.dataset.errorLibraryAreaValue||"";
+    select.dispatchEvent(new Event("change",{bubbles:true}));
+    closeAreaPicker();
+  });
+  document.addEventListener("click",(event)=>{
+    if(!event.target.closest(".error-library-area-picker"))closeAreaPicker();
+  });
 
 
   document
