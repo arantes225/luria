@@ -4950,16 +4950,42 @@ function editErrorNotebook(area,name){
   if(!rows.length) empty.textContent="Nenhum erro encontrado neste caderno.";
   count.textContent=`${rows.length} ${rows.length===1?"erro":"erros"}`;
 
+  const notebookReviews=rows.reduce((sum,item)=>sum+Number(item.review_count||0),0);
+  const notebookRetained=rows.filter(item=>Number(item.review_count||0)>=2).length;
+  const notebookRetention=rows.length?Math.round((notebookRetained/rows.length)*100):0;
+
   container.innerHTML=`
     <section class="error-notebook-detail">
       <div class="error-notebook-detail-toolbar">
         <button id="error-notebook-back" class="button secondary" type="button">← Voltar aos cadernos</button>
-        <button id="error-notebook-review-all" class="button primary" type="button" ${rows.length?"":"disabled"}>▶ Revisar este caderno</button>
+        <div class="error-notebook-detail-actions-top">
+          <button id="error-notebook-select-mode" class="button secondary" type="button" ${rows.length?"":"disabled"}>Selecionar</button>
+          <button id="error-notebook-review-all" class="button primary" type="button" ${rows.length?"":"disabled"}>▶ Revisar este caderno</button>
+        </div>
+      </div>
+
+      <div class="error-notebook-mini-dashboard">
+        <div><span>Questões</span><strong>${rows.length}</strong></div>
+        <div><span>Revisões</span><strong>${notebookReviews}</strong></div>
+        <div><span>Retenção</span><strong>${notebookRetention}%</strong></div>
+      </div>
+
+      <div id="error-notebook-selection-bar" class="error-notebook-selection-bar" hidden>
+        <div><strong id="error-notebook-selected-count">0</strong><span>selecionados</span></div>
+        <div class="error-notebook-selection-actions">
+          <button id="error-notebook-select-all" class="button secondary" type="button">Selecionar todos</button>
+          <button id="error-notebook-add-selected" class="button secondary" type="button" disabled>＋ Revisão de hoje</button>
+          <button id="error-notebook-export-selected" class="button secondary" type="button" disabled>Exportar PDF</button>
+        </div>
       </div>
 
       <div class="error-notebook-detail-list">
         ${rows.map((item,index)=>`
           <article class="error-note-detail-card" data-error-note-id="${errorLibraryEscape(item.id)}">
+            <label class="error-note-select-wrap" hidden>
+              <input type="checkbox" class="error-note-select" data-error-note-select="${errorLibraryEscape(item.id)}">
+              <span aria-hidden="true"></span>
+            </label>
             <div class="error-note-detail-index">${index+1}</div>
 
             <div class="error-note-detail-body">
@@ -5031,6 +5057,54 @@ function editErrorNotebook(area,name){
 
   document.getElementById("error-notebook-back")?.addEventListener("click",restoreNotebookLibrary);
   document.getElementById("error-notebook-review-all")?.addEventListener("click",()=>reviewErrorNotebook(area,name));
+
+  const notebookSelectMode=document.getElementById("error-notebook-select-mode");
+  const notebookSelectionBar=document.getElementById("error-notebook-selection-bar");
+  const notebookSelectAll=document.getElementById("error-notebook-select-all");
+  const notebookAddSelected=document.getElementById("error-notebook-add-selected");
+  const notebookExportSelected=document.getElementById("error-notebook-export-selected");
+  const notebookSelectedCount=document.getElementById("error-notebook-selected-count");
+  const notebookChecks=[...container.querySelectorAll("[data-error-note-select]")];
+  let notebookSelecting=false;
+
+  const selectedNotebookIds=()=>notebookChecks.filter(check=>check.checked).map(check=>check.dataset.errorNoteSelect);
+  const syncNotebookSelection=()=>{
+    const ids=selectedNotebookIds();
+    if(notebookSelectedCount)notebookSelectedCount.textContent=String(ids.length);
+    if(notebookAddSelected)notebookAddSelected.disabled=!ids.length;
+    if(notebookExportSelected)notebookExportSelected.disabled=!ids.length;
+    if(notebookSelectAll)notebookSelectAll.textContent=ids.length===notebookChecks.length&&notebookChecks.length?"Desmarcar todos":"Selecionar todos";
+    container.querySelectorAll(".error-note-detail-card").forEach(card=>{
+      const check=card.querySelector("[data-error-note-select]");
+      card.classList.toggle("selected",Boolean(check?.checked));
+    });
+  };
+  const setNotebookSelectionMode=(enabled)=>{
+    notebookSelecting=Boolean(enabled);
+    notebookSelectMode?.classList.toggle("active",notebookSelecting);
+    if(notebookSelectMode)notebookSelectMode.textContent=notebookSelecting?"Cancelar seleção":"Selecionar";
+    if(notebookSelectionBar)notebookSelectionBar.hidden=!notebookSelecting;
+    container.querySelectorAll(".error-note-select-wrap").forEach(label=>label.hidden=!notebookSelecting);
+    if(!notebookSelecting)notebookChecks.forEach(check=>check.checked=false);
+    syncNotebookSelection();
+  };
+  notebookSelectMode?.addEventListener("click",()=>setNotebookSelectionMode(!notebookSelecting));
+  notebookChecks.forEach(check=>check.addEventListener("change",syncNotebookSelection));
+  notebookSelectAll?.addEventListener("click",()=>{
+    const allSelected=notebookChecks.length&&notebookChecks.every(check=>check.checked);
+    notebookChecks.forEach(check=>check.checked=!allSelected);
+    syncNotebookSelection();
+  });
+  notebookAddSelected?.addEventListener("click",()=>{
+    const ids=new Set(selectedNotebookIds());
+    addErrorsToTodayReview(rows.filter(item=>ids.has(String(item.id))),"selecionados");
+  });
+  notebookExportSelected?.addEventListener("click",async()=>{
+    selectedErrorIds.clear();
+    selectedNotebookIds().forEach(id=>selectedErrorIds.add(id));
+    await exportSelectedErrorsPdf();
+    selectedErrorIds.clear();
+  });
 
   container.querySelectorAll("[data-error-note-open]").forEach(button=>{
     button.addEventListener("click",(event)=>{
