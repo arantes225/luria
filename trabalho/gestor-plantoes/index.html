@@ -25,6 +25,11 @@
     .gm-card h3{margin:0 0 7px;font-size:18px}
     .gm-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.5}
     .gm-open{margin-top:auto;padding-top:18px;color:var(--accent);font-size:11px;font-weight:850}
+    .gm-security-row{display:flex;justify-content:flex-end}
+    .gm-security-card{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:14px 16px;border:1px solid var(--border);border-radius:15px;background:var(--surface)}
+    .gm-security-copy{min-width:0}.gm-security-copy strong{display:block;font-size:14px}.gm-security-copy span{display:block;margin-top:3px;color:var(--muted);font-size:11px;line-height:1.4}
+    .gm-security-actions{display:flex;gap:8px;flex-wrap:wrap}.gm-security-action{min-height:38px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font-size:11px;font-weight:850;cursor:pointer}.gm-security-action:hover{border-color:var(--accent);color:var(--accent)}
+    @media(max-width:700px){.gm-security-card{align-items:flex-start;flex-direction:column}.gm-security-actions{width:100%}.gm-security-action{flex:1}}
     @media(max-width:900px){.gm-grid{grid-template-columns:1fr}}
     @media(max-width:700px){.gm-hero{padding:17px}.gm-card{min-height:150px;padding:16px}.gm-icon{margin-bottom:14px}}
   </style>
@@ -47,6 +52,17 @@
             <h2>Gestor de Plantões</h2>
             <p>Escala, divisão de plantão e controle financeiro reunidos em um único lugar.</p>
           </article>
+          <div class="gm-security-row">
+            <div class="gm-security-card">
+              <div class="gm-security-copy">
+                <strong>Segurança do Gestor de Plantões</strong>
+                <span>Troque o PIN, altere o tipo de proteção, use a senha da conta ou remova a proteção quando quiser.</span>
+              </div>
+              <div class="gm-security-actions">
+                <button id="gm-security" class="gm-security-action" type="button">Segurança</button>
+              </div>
+            </div>
+          </div>
           <div class="gm-grid">
             <a class="gm-card" href="/trabalho/plantoes/">
               <span class="gm-icon" aria-hidden="true">▦</span>
@@ -74,6 +90,6 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js?v=auth4"></script>
   <script src="/assets/js/app.js?v=17.31-shift-manager"></script>
-  <script src="/assets/js/shift-manager-security.js?v=1"></script>\n  <script defer src="/assets/js/pwa.js?v=4-force-refresh"></script>
+  <script src="/assets/js/shift-manager-security.js?v=2"></script>\n  <script defer src="/assets/js/pwa.js?v=4-force-refresh"></script>
 </body>
 </html>
