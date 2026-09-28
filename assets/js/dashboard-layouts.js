@@ -196,7 +196,7 @@
     const dayLessons = window.luriaDashboardDayLessons?.[todayISO] || { completed: 0, total: 0 };
     const done = dayLessons.completed; const total = dayLessons.total;
     const pct = total ? Math.round(done / total * 100) : 0;
-    return `<div class="dl-grid dl-layout-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}${activityList(todayItems, 10, false)}</section><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Atividades de hoje", "/cronograma/")}${activityList(todayItems, 10, false)}</section><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
   }
 
   function layout2(data) {
