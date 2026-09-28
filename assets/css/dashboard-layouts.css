@@ -2824,3 +2824,32 @@ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboar
 }
 
 /* Dashboard 1 v43 — ajuste fino de altura */
+
+
+/* Dashboard 1 v44 — preencher melhor a altura útil da tela */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
+    height:clamp(340px,43dvh,382px)!important;
+    max-height:clamp(340px,43dvh,382px)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:clamp(340px,43dvh,382px)!important;
+    max-height:clamp(340px,43dvh,382px)!important;
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side>.dl-card{
+    height:auto!important;
+    min-height:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body{
+    height:auto!important;
+    min-height:96px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{
+    margin:0 auto!important;
+  }
+}
