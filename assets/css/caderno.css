@@ -3630,3 +3630,75 @@
   border-color:var(--accent);
   box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 14%,transparent);
 }
+
+
+/* v24.5 — destaque claro no editor escuro + ícones distintos */
+#notebook-image-add svg,
+#notebook-table-toggle svg{
+  width:17px;
+  height:17px;
+  display:block;
+  flex:0 0 auto;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"]{
+  --notebook-dark-highlight:color-mix(in srgb,var(--accent) 34%,#d9ebff);
+  --notebook-dark-highlight-bg:color-mix(in srgb,var(--accent) 18%,var(--surface-2));
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] .note-toolbar button:hover:not(:disabled),
+:root[data-theme="dark"] body[data-page="caderno"] .note-toolbar button:focus-visible,
+:root[data-theme="dark"] body[data-page="caderno"] .note-toolbar select:focus,
+:root[data-theme="dark"] body[data-page="caderno"] .notebook-dark-active,
+body.theme-dark[data-page="caderno"] .note-toolbar button:hover:not(:disabled),
+body.theme-dark[data-page="caderno"] .note-toolbar button:focus-visible,
+body.theme-dark[data-page="caderno"] .note-toolbar select:focus,
+body.theme-dark[data-page="caderno"] .notebook-dark-active{
+  background:var(--notebook-dark-highlight-bg)!important;
+  color:var(--notebook-dark-highlight)!important;
+  border-color:color-mix(in srgb,var(--notebook-dark-highlight) 48%,var(--border))!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--notebook-dark-highlight) 20%,transparent)!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] .notebook-tool-menu button:hover,
+:root[data-theme="dark"] body[data-page="caderno"] .notebook-tool-menu button:focus-visible,
+:root[data-theme="dark"] body[data-page="caderno"] .notebook-tool-menu button[aria-checked="true"],
+:root[data-theme="dark"] body[data-page="caderno"] .notebook-tool-menu button.active,
+body.theme-dark[data-page="caderno"] .notebook-tool-menu button:hover,
+body.theme-dark[data-page="caderno"] .notebook-tool-menu button:focus-visible,
+body.theme-dark[data-page="caderno"] .notebook-tool-menu button[aria-checked="true"],
+body.theme-dark[data-page="caderno"] .notebook-tool-menu button.active{
+  background:var(--notebook-dark-highlight-bg)!important;
+  color:var(--notebook-dark-highlight)!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] #notebook-editor ul,
+:root[data-theme="dark"] body[data-page="caderno"] #notebook-editor ol,
+body.theme-dark[data-page="caderno"] #notebook-editor ul,
+body.theme-dark[data-page="caderno"] #notebook-editor ol{
+  color:var(--text)!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] #notebook-editor li::marker,
+body.theme-dark[data-page="caderno"] #notebook-editor li::marker{
+  color:var(--notebook-dark-highlight)!important;
+  font-weight:900!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] #notebook-editor li:focus-within,
+:root[data-theme="dark"] body[data-page="caderno"] #notebook-editor li:hover,
+body.theme-dark[data-page="caderno"] #notebook-editor li:focus-within,
+body.theme-dark[data-page="caderno"] #notebook-editor li:hover{
+  background:color-mix(in srgb,var(--accent) 9%,transparent)!important;
+  border-radius:6px!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] #notebook-image-add,
+body.theme-dark[data-page="caderno"] #notebook-image-add{
+  color:color-mix(in srgb,var(--notebook-dark-highlight) 88%,#fff)!important;
+}
+
+:root[data-theme="dark"] body[data-page="caderno"] #notebook-table-toggle,
+body.theme-dark[data-page="caderno"] #notebook-table-toggle{
+  color:color-mix(in srgb,var(--notebook-dark-highlight) 68%,var(--text))!important;
+}
