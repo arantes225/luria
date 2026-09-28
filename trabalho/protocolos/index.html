@@ -14,11 +14,41 @@
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
   <style>
-    .work-tool-shell{display:grid;gap:16px}
-    .work-tool-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .work-tool-hero h2{margin:0 0 8px;font-size:24px}
-    .work-tool-hero p{margin:0;color:var(--muted);line-height:1.55}
-    .work-tool-placeholder{padding:20px;border:1px dashed var(--border);border-radius:16px;background:var(--surface-2);color:var(--muted)}
+    .protocol-shell{display:grid;gap:16px}
+    .protocol-hero{padding:22px;border:1px solid var(--border);border-radius:20px;background:linear-gradient(135deg,var(--surface),color-mix(in srgb,var(--theme,#184888) 5%,var(--surface)))}
+    .protocol-hero h2{margin:0 0 7px;font-size:1.45rem}.protocol-hero p{margin:0;color:var(--muted);line-height:1.55;max-width:850px}
+    .protocol-controls{display:grid;grid-template-columns:minmax(220px,1fr) 240px auto;gap:10px;padding:12px;border:1px solid var(--border);border-radius:16px;background:var(--surface);align-items:center}
+    .protocol-controls input,.protocol-controls select{width:100%;min-height:42px;padding:0 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:inherit}
+    #protocol-count{font-size:.8rem;color:var(--muted);font-weight:700;white-space:nowrap}
+    .protocol-workspace{display:grid;grid-template-columns:minmax(290px,34%) minmax(0,1fr);gap:14px;align-items:start}
+    .protocol-list-panel,.protocol-detail{border:1px solid var(--border);border-radius:18px;background:var(--surface);overflow:hidden}
+    .protocol-list-panel{max-height:calc(100vh - 245px);overflow:auto}.protocol-list{display:grid}
+    .protocol-row{display:flex;justify-content:space-between;gap:12px;width:100%;padding:14px 15px;border:0;border-bottom:1px solid var(--border);background:transparent;color:var(--text);text-align:left;cursor:pointer}
+    .protocol-row:hover,.protocol-row.active{background:color-mix(in srgb,var(--theme,#184888) 7%,var(--surface))}
+    .protocol-row span{display:grid;gap:4px}.protocol-row strong{line-height:1.25}.protocol-row small{font-size:.74rem;color:var(--muted)}
+    .protocol-row em,.protocol-chips span{font-style:normal;border-radius:999px;padding:5px 8px;font-size:.66rem;font-weight:800;height:max-content;white-space:nowrap;background:var(--surface-2);border:1px solid var(--border)}
+    .protocol-row em.ok,.protocol-chips .ok{background:#e8f7ee;color:#176b3a}.protocol-row em.warn,.protocol-chips .warn{background:#fff5d7;color:#845f00}
+    .protocol-detail{padding:20px;position:sticky;top:12px;min-height:520px}
+    .protocol-detail-head{display:flex;justify-content:space-between;gap:18px;padding-bottom:18px;border-bottom:1px solid var(--border)}
+    .protocol-detail-head h2{margin:9px 0 7px;font-size:1.5rem}.protocol-detail-head p{margin:0;color:var(--muted);line-height:1.5}
+    .protocol-chips{display:flex;gap:6px;flex-wrap:wrap}
+    .protocol-actions{display:flex;gap:8px;flex-wrap:wrap;align-content:flex-start;justify-content:flex-end}
+    .protocol-actions button,.protocol-drugs button{border:0;border-radius:11px;padding:10px 12px;background:var(--theme,#184888);color:#fff;font-weight:800;cursor:pointer}
+    .protocol-actions button.secondary{background:var(--surface-2);color:var(--text);border:1px solid var(--border)}
+    .protocol-section{margin-top:16px;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+    .protocol-section>h3{margin:0 0 10px;font-size:.94rem}.protocol-stack{display:grid;gap:9px}.protocol-card{padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+    .protocol-card strong{display:block;margin-bottom:6px}.protocol-card ul,.protocol-section>ul{margin:0;padding-left:19px}.protocol-card li,.protocol-section>ul li{margin:5px 0;line-height:1.45}
+    .protocol-regimen{display:inline-flex;margin:0 0 8px;padding:5px 8px;border-radius:8px;background:color-mix(in srgb,var(--theme,#184888) 10%,var(--surface));color:var(--theme,#184888);font-size:.76rem;font-weight:850}
+    .protocol-flow{display:grid;gap:9px}.protocol-flow-step{display:grid;grid-template-columns:32px 1fr;gap:10px;padding:12px;border:1px solid var(--border);border-radius:12px;background:color-mix(in srgb,var(--theme,#184888) 4%,var(--surface))}
+    .protocol-flow-number{display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:var(--theme,#184888);color:#fff;font-weight:850;font-size:.76rem}
+    .protocol-flow-step strong,.protocol-flow-step b{font-size:.68rem;letter-spacing:.06em;color:var(--theme,#184888)}.protocol-flow-step p{margin:3px 0 8px;line-height:1.45}.protocol-flow-step p:last-child{margin-bottom:0}
+    .protocol-section.treatment{background:color-mix(in srgb,var(--theme,#184888) 4%,var(--surface))}
+    .protocol-section.danger{background:#fff3f2}.protocol-section.notification{background:#fff9e7}
+    .protocol-drugs{display:flex;gap:8px;flex-wrap:wrap}.protocol-drugs button{background:var(--surface-2);color:var(--theme,#184888);border:1px solid color-mix(in srgb,var(--theme,#184888) 25%,var(--border))}
+    .protocol-drugs button span{margin-left:4px}.protocol-refs>div{display:flex;gap:8px;flex-wrap:wrap}.protocol-refs a{display:inline-flex;padding:8px 10px;border:1px solid var(--border);border-radius:10px;color:var(--theme,#184888);text-decoration:none;font-size:.78rem;font-weight:750}
+    .protocol-placeholder,.protocol-empty{padding:22px;text-align:center;color:var(--muted)}.protocol-empty{margin:12px;border:1px dashed var(--border);border-radius:12px}
+    @media(max-width:900px){.protocol-controls{grid-template-columns:1fr 1fr}.protocol-controls input{grid-column:1/-1}.protocol-workspace{grid-template-columns:1fr}.protocol-list-panel{max-height:none}.protocol-detail{position:static;min-height:0}}
+    @media(max-width:600px){.protocol-controls{grid-template-columns:1fr}.protocol-controls input{grid-column:auto}.protocol-detail-head{display:grid}.protocol-actions{justify-content:stretch}.protocol-actions button{flex:1}.protocol-detail{padding:15px}}
   </style>
 </head>
 <body data-page="trabalho_protocolos">
@@ -31,19 +61,32 @@
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
-        <section class="work-tool-shell">
-          <article class="work-tool-hero">
-            <h2>Protocolos</h2>
-            <p>Protocolos rápidos para consulta durante o atendimento.</p>
+        <section class="protocol-shell">
+          <article class="protocol-hero">
+            <h2>Protocolos clínicos</h2>
+            <p>Fluxos operacionais para usar durante o atendimento: quando suspeitar, quais exames pedir, como interpretar, tratar, acompanhar e quando encaminhar. Medicamentos abrem direto no Bulário e os esquemas relacionados conversam com Tratamentos gerais.</p>
           </article>
-          <div class="work-tool-placeholder">Página preparada para fluxos como sepse, AVC, síndrome coronariana aguda, anafilaxia, cetoacidose e outras urgências.</div>
+          <section class="protocol-controls">
+            <input id="protocol-search" type="search" autocomplete="off" placeholder="Buscar protocolo, sintoma, exame ou diagnóstico…">
+            <select id="protocol-category"><option value="">Todas as áreas</option></select>
+            <span id="protocol-count">—</span>
+          </section>
+          <section class="protocol-workspace">
+            <div class="protocol-list-panel">
+              <div id="protocol-list" class="protocol-list"><div class="protocol-placeholder">Carregando protocolos…</div></div>
+              <div id="protocol-empty" class="protocol-empty" hidden>Nenhum protocolo encontrado.</div>
+            </div>
+            <article id="protocol-detail" class="protocol-detail"><div class="protocol-placeholder">Selecione um protocolo.</div></article>
+          </section>
         </section>
       </div>
     </main>
   </div>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=17.18-trabalho-clinico"></script>
+  <script src="/assets/js/app.js?v=17.30-clinical-integration"></script>
+  <script src="/assets/js/clinical-bridge.js?v=1"></script>
+  <script src="/assets/js/trabalho-protocolos.js?v=1"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
