@@ -5496,3 +5496,11 @@ body.plantao-module-entry .plantao-record-folder-tab span{
 :root[data-theme="dark"] body.plantao-module-entry .plantao-record-folder-tab span{
   color:#f0dfc3;
 }
+
+
+/* === Sala de Emergência · tighter face crop v21 === */
+body.plantao-module-entry .plantao-record-photo img{
+  object-position:center 12%!important;
+  transform:scale(1.34)!important;
+  transform-origin:center 18%!important;
+}
