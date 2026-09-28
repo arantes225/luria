@@ -3810,9 +3810,22 @@
     if (currentStage === "blind_resolution") {
       return !(question?.blind_resolution && typeof question.blind_resolution === "object" && question.blind_resolution.quality_score != null);
     }
-    const latestStage = String(question?.latest_review?.review_stage || "");
-    if (currentStage === "perplexity_initial") return latestStage !== "perplexity_initial";
-    if (currentStage === "perplexity_reaudit") return String(question?.status || "") === "needs_revision";
+    const latestReview = question?.latest_review && typeof question.latest_review === "object"
+      ? question.latest_review
+      : {};
+    const latestStage = String(latestReview.review_stage || "");
+    const latestReviewer = String(latestReview.reviewer || "");
+    if (currentStage === "perplexity_initial") {
+      // Parecer legado do Perplexity não conta como a Etapa 4 do fluxo atual.
+      // A Etapa 4 só é considerada feita quando a versão atual recebeu
+      // a revisão independente pelo ChatGPT.
+      return latestStage !== "perplexity_initial" || latestReviewer !== "ChatGPT";
+    }
+    if (currentStage === "perplexity_reaudit") {
+      return String(question?.status || "") === "needs_revision"
+        || latestStage !== "perplexity_reaudit"
+        || latestReviewer !== "ChatGPT";
+    }
     return true;
   }
 
