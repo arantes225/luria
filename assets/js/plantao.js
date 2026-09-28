@@ -623,7 +623,8 @@
         {label:"Clínica Médica",value:"Clínica Médica",icon:"♧"},
         {label:"Cirurgia",value:"Cirurgia Geral",icon:"◒"},
         {label:"Pediatria",value:"Pediatria",icon:"♙"},
-        {label:"GO",value:"Ginecologia e Obstetrícia",icon:"♀"}
+        {label:"GO",value:"Ginecologia e Obstetrícia",icon:"♀"},
+        {label:"APH / Desastres",value:"Emergência e APH",icon:"⚑"}
       ];
       chips.innerHTML=preferred.map(tab=>`
         <button type="button" class="plantao-specialty-chip${tab.value===specialty?" active":""}" data-specialty-chip="${esc(tab.value)}">
@@ -697,6 +698,30 @@
       const patientName=patientReportName(item);
       const patientAge=reportAgeLabel(item);
       const patientSexLabel=reportSexLabel(item);
+      if(isDisasterCase(item)){
+        const victimCount=Array.isArray(item.presentation?.victims)?item.presentation.victims.length:0;
+        return `
+          <article class="plantao-case-card plantao-disaster-library-card" data-difficulty="${esc(diff)}">
+            <div class="plantao-disaster-card-image">
+              <img src="${esc(plantaoReferenceImage(item,index))}" alt="" loading="lazy" decoding="async">
+              <span>DESASTRE · MÚLTIPLAS VÍTIMAS</span>
+            </div>
+            <div class="plantao-disaster-card-body">
+              <div class="plantao-disaster-card-meta">
+                <span>${esc(item.difficulty||"Intermediário")}</span>
+                <span>${victimCount||"—"} vítimas</span>
+              </div>
+              <h3>${esc(title)}</h3>
+              <p>${esc(summary)}</p>
+              <div class="plantao-disaster-card-tags">
+                <span>${esc(item.specialty||"Emergência e APH")}</span>
+                <span>${esc(item.setting||"Desastre")}</span>
+              </div>
+              <button class="button plantao-record-button" type="button" data-start-case="${esc(item.id)}">Iniciar ocorrência ›</button>
+            </div>
+          </article>
+        `;
+      }
 
       return `
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
