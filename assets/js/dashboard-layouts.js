@@ -126,7 +126,11 @@
           ? "/caderno/"
           : "/cronograma/";
     const area = item.area ? `<span class="dl-chip">${escape(item.area)}</span>` : "";
-    return `<li class="dl-activity">${showDate ? `<span class="dl-activity-date">${escape(shortDate(item.activity_date))}</span>` : ""}<span class="dl-activity-dot" aria-hidden="true"></span><div class="dl-activity-info"><strong>${escape(item.title || label)}</strong><small>${escape(label)} ${area}</small></div>${action ? `<a class="dl-start" href="${escape(href)}" aria-label="Abrir ${escape(item.title || label)}">▶ <span>Abrir</span></a>` : ""}</li>`;
+    const actionButton = action
+      ? `<a class="dl-start" href="${escape(href)}" aria-label="Abrir ${escape(item.title || label)}">▶ <span>Abrir</span></a>`
+      : "";
+    const actionInsideCallout = current === "1" && !showDate;
+    return `<li class="dl-activity ${actionInsideCallout ? "dl-activity-action-inside" : ""}">${showDate ? `<span class="dl-activity-date">${escape(shortDate(item.activity_date))}</span>` : ""}<span class="dl-activity-dot" aria-hidden="true"></span><div class="dl-activity-info"><div class="dl-activity-copy"><strong>${escape(item.title || label)}</strong><small>${escape(label)} ${area}</small></div>${actionInsideCallout ? actionButton : ""}</div>${actionInsideCallout ? "" : actionButton}</li>`;
   }
 
   function activityList(list, limit = 5, showDate = true) {
