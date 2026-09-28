@@ -4365,3 +4365,32 @@ body.plantao-module-entry.sidebar-hidden #sidebar .sidebar-top{
     display:none!important;
   }
 }
+
+
+/* === Sala de Emergência · sidebar toggle interaction v7 === */
+body.plantao-module-entry .sidebar-desktop-toggle{
+  display:grid!important;
+  pointer-events:auto!important;
+}
+body.plantao-module-entry.sidebar-hidden #sidebar.sidebar{
+  transform:translateX(-105%)!important;
+  opacity:0!important;
+  pointer-events:none!important;
+}
+body.plantao-module-entry:not(.sidebar-hidden) #sidebar.sidebar{
+  transform:translateX(0)!important;
+  opacity:1!important;
+  pointer-events:auto!important;
+}
+@media(max-width:980px){
+  body.plantao-module-entry .sidebar-desktop-toggle{
+    display:grid!important;
+    left:12px!important;
+  }
+  body.plantao-module-entry #sidebar.sidebar{
+    transform:translateX(-105%)!important;
+  }
+  body.plantao-module-entry.sidebar-open #sidebar.sidebar{
+    transform:translateX(0)!important;
+  }
+}
