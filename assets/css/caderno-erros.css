@@ -2414,3 +2414,19 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* v18.6 — remove contador solto acima da estante e sobe os cadernos */
+.error-library-title-minimal{
+  display:none!important;
+  margin:0!important;
+  padding:0!important;
+  height:0!important;
+  min-height:0!important;
+}
+.error-library-panel{
+  margin-top:0!important;
+}
+.error-notebook-shelf:first-child{
+  margin-top:0!important;
+}
