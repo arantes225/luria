@@ -98,7 +98,7 @@
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
-    const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>keys.some(k=>k&&k.includes(String(term||"").toLocaleLowerCase("pt-BR")))||String(term||"").toLocaleLowerCase("pt-BR").includes(keys[0])));
+    const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>{const t=String(term||"").toLocaleLowerCase("pt-BR");return keys.some(k=>k&&(k.includes(t)||t.includes(k)));}));
     detail.innerHTML=`<header class="rx-detail-head"><div class="drug-kicker">${ready?'Ficha de posologia por apresentação':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
       <div class="rx-bridge-actions">
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
