@@ -6600,3 +6600,70 @@ body.plantao-module-entry .plantao-practice-back{
 @media(max-width:760px){
   body.plantao-module-entry .plantao-practice-back-row{margin:0 0 10px}
 }
+
+
+/* ===== Sala de Emergência · Modo Desastre / Múltiplas Vítimas ===== */
+.plantao-disaster-stage{display:grid;gap:16px;margin-top:14px}
+.plantao-disaster-stage[hidden]{display:none!important}
+.plantao-disaster-hero{position:relative;min-height:320px;border-radius:24px;overflow:hidden;background:#091a2f;box-shadow:0 18px 48px rgba(9,32,62,.18)}
+.plantao-disaster-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.plantao-disaster-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,20,38,.9) 0%,rgba(5,20,38,.58) 48%,rgba(5,20,38,.12) 100%)}
+.plantao-disaster-hero-overlay{position:relative;z-index:1;width:min(640px,72%);padding:36px;color:#fff}
+.plantao-disaster-kicker{display:inline-flex;align-items:center;padding:7px 11px;border:1px solid rgba(255,255,255,.34);border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.08em;background:rgba(8,27,48,.36);backdrop-filter:blur(8px)}
+.plantao-disaster-hero h2{font-size:clamp(1.7rem,3vw,2.55rem);line-height:1.04;margin:14px 0 10px;color:#fff}
+.plantao-disaster-hero p{max-width:610px;margin:0;color:rgba(255,255,255,.9);font-size:1rem;line-height:1.5}
+.plantao-disaster-hazards{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+.plantao-disaster-hazards span{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);font-size:.76rem;font-weight:700}
+.plantao-disaster-dashboard{display:grid;grid-template-columns:minmax(220px,.82fr) minmax(0,2fr) minmax(220px,.82fr);gap:14px;align-items:start}
+.plantao-disaster-command,.plantao-disaster-victim-zone,.plantao-disaster-live{border-radius:20px}
+.plantao-disaster-resources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.plantao-disaster-resource{padding:10px;border-radius:13px;background:color-mix(in srgb,var(--accent,#184888) 7%,transparent);border:1px solid color-mix(in srgb,var(--accent,#184888) 15%,transparent)}
+.plantao-disaster-resource span{display:block;font-size:.72rem;opacity:.72}
+.plantao-disaster-resource strong{display:block;margin-top:2px;font-size:.98rem}
+.plantao-disaster-command-actions{display:grid;gap:8px}
+.plantao-disaster-command-actions button{width:100%;text-align:left;justify-content:flex-start;min-height:43px}
+.plantao-disaster-command-actions button.done{opacity:.72}
+.plantao-disaster-phase{margin-top:13px;padding:11px 12px;border-radius:13px;background:color-mix(in srgb,var(--accent,#184888) 9%,transparent)}
+.plantao-disaster-phase span{display:block;font-size:.7rem;opacity:.68;text-transform:uppercase;letter-spacing:.06em}
+.plantao-disaster-phase strong{display:block;margin-top:3px;font-size:.9rem}
+.plantao-disaster-victim-head{gap:12px;align-items:flex-start}
+.plantao-disaster-summary{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end}
+.plantao-disaster-summary span{display:inline-flex;min-width:34px;justify-content:center;padding:5px 8px;border-radius:999px;font-size:.74rem;font-weight:800;background:var(--surface-soft,#f3f6fa)}
+.plantao-disaster-summary .red{background:#fee2e2;color:#991b1b}
+.plantao-disaster-summary .yellow{background:#fef3c7;color:#854d0e}
+.plantao-disaster-summary .green{background:#dcfce7;color:#166534}
+.plantao-disaster-summary .black{background:#202734;color:#fff}
+.plantao-disaster-victims{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.plantao-disaster-victim{border:1px solid var(--border,#dfe5ee);border-radius:16px;padding:13px;background:var(--panel,#fff);display:grid;gap:10px;transition:.18s ease}
+.plantao-disaster-victim:hover{transform:translateY(-1px);box-shadow:0 8px 25px rgba(19,55,91,.08)}
+.plantao-disaster-victim-head{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}
+.plantao-disaster-victim-id{display:inline-flex;min-width:38px;height:30px;align-items:center;justify-content:center;border-radius:10px;background:color-mix(in srgb,var(--accent,#184888) 11%,transparent);color:var(--accent,#184888);font-weight:900}
+.plantao-disaster-victim h3{margin:0;font-size:.96rem}
+.plantao-disaster-victim p{margin:3px 0 0;font-size:.82rem;line-height:1.38;opacity:.78}
+.plantao-disaster-triage-tag{padding:5px 8px;border-radius:999px;font-size:.69rem;font-weight:900;white-space:nowrap;background:var(--surface-soft,#f2f5f9)}
+.plantao-disaster-triage-tag.red{background:#fee2e2;color:#991b1b}
+.plantao-disaster-triage-tag.yellow{background:#fef3c7;color:#854d0e}
+.plantao-disaster-triage-tag.green{background:#dcfce7;color:#166534}
+.plantao-disaster-triage-tag.black{background:#202734;color:#fff}
+.plantao-disaster-vitals{display:flex;gap:6px;flex-wrap:wrap}
+.plantao-disaster-vitals span{padding:5px 7px;border-radius:8px;background:var(--surface-soft,#f4f6f9);font-size:.73rem;font-weight:700}
+.plantao-disaster-triage-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+.plantao-disaster-triage-options button{min-height:34px;border:0;border-radius:9px;font-size:.71rem;font-weight:900;cursor:pointer}
+.plantao-disaster-triage-options .red{background:#fee2e2;color:#991b1b}
+.plantao-disaster-triage-options .yellow{background:#fef3c7;color:#854d0e}
+.plantao-disaster-triage-options .green{background:#dcfce7;color:#166534}
+.plantao-disaster-triage-options .black{background:#202734;color:#fff}
+.plantao-disaster-triage-options button.selected{outline:2px solid var(--accent,#184888);outline-offset:2px}
+.plantao-disaster-victim-actions{display:flex;gap:7px;flex-wrap:wrap}
+.plantao-disaster-victim-actions button{font-size:.75rem;min-height:34px;padding:7px 10px}
+.plantao-disaster-victim .disaster-action-done{opacity:.65}
+.plantao-disaster-feed{display:grid;gap:8px;max-height:470px;overflow:auto;margin:12px 0}
+.plantao-disaster-feed-item{padding:9px 10px;border-radius:11px;background:var(--surface-soft,#f4f6f9);font-size:.78rem;line-height:1.36}
+.plantao-disaster-feed-item strong{display:block;font-size:.68rem;opacity:.62;margin-bottom:2px}
+#plantao-disaster-finish{width:100%;margin-top:5px}
+body[data-theme="dark"] .plantao-disaster-victim,
+body.dark .plantao-disaster-victim{background:rgba(10,24,42,.78)}
+body[data-theme="pink"] .plantao-disaster-resource,
+body[data-theme="pink"] .plantao-disaster-phase{background:rgba(210,70,136,.09)}
+@media(max-width:1050px){.plantao-disaster-dashboard{grid-template-columns:1fr 1.7fr}.plantao-disaster-live{grid-column:1/-1}.plantao-disaster-feed{max-height:220px}}
+@media(max-width:760px){.plantao-disaster-hero{min-height:290px}.plantao-disaster-hero-overlay{width:100%;padding:24px}.plantao-disaster-hero:after{background:linear-gradient(0deg,rgba(5,20,38,.94),rgba(5,20,38,.32))}.plantao-disaster-dashboard{grid-template-columns:1fr}.plantao-disaster-live{grid-column:auto}.plantao-disaster-victims{grid-template-columns:1fr}.plantao-disaster-triage-options{grid-template-columns:repeat(2,1fr)}}
