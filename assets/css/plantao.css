@@ -6897,3 +6897,85 @@ body.plantao-module-entry .plantao-case-record:hover .plantao-record-folder::aft
   background:color-mix(in srgb,var(--surface) 97%,var(--accent-soft) 3%)!important;
   border-color:color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
 }
+
+
+/* === Sala de Emergência · stacked papers stronger + rounded v42 === */
+body.plantao-module-entry .plantao-record-folder{
+  position:relative!important;
+  overflow:visible!important;
+  padding:12px 10px 16px 10px!important;
+  border-radius:18px!important;
+}
+body.plantao-module-entry .plantao-record-folder::before,
+body.plantao-module-entry .plantao-record-folder::after{
+  content:""!important;
+  position:absolute!important;
+  pointer-events:none!important;
+  border-radius:16px!important;
+  border:1px solid color-mix(in srgb,var(--border) 82%,var(--accent) 18%)!important;
+  background:var(--surface)!important;
+  transform-origin:center!important;
+}
+body.plantao-module-entry .plantao-record-folder::before{
+  z-index:0!important;
+  top:18px!important;
+  left:18px!important;
+  right:-6px!important;
+  bottom:0!important;
+  transform:rotate(2.3deg)!important;
+  opacity:.78!important;
+  box-shadow:0 10px 26px rgba(18,48,82,.09)!important;
+}
+body.plantao-module-entry .plantao-record-folder::after{
+  z-index:1!important;
+  top:10px!important;
+  left:3px!important;
+  right:8px!important;
+  bottom:7px!important;
+  transform:rotate(-1.55deg)!important;
+  opacity:.93!important;
+  box-shadow:0 8px 22px rgba(18,48,82,.075)!important;
+}
+body.plantao-module-entry .plantao-record-paper{
+  position:relative!important;
+  z-index:2!important;
+  margin:0!important;
+  border-radius:16px!important;
+  overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
+  box-shadow:0 12px 28px rgba(18,48,82,.10)!important;
+}
+body.plantao-module-entry .plantao-record-paper-header{
+  border-radius:12px 12px 0 0!important;
+}
+body.plantao-module-entry .plantao-record-chief,
+body.plantao-module-entry .plantao-record-lines,
+body.plantao-module-entry .plantao-record-line,
+body.plantao-module-entry .plantao-record-button{
+  border-radius:10px!important;
+}
+body.plantao-module-entry .plantao-record-line{
+  padding-left:4px!important;
+  padding-right:4px!important;
+}
+body.plantao-module-entry .plantao-record-button{
+  overflow:hidden!important;
+}
+body.plantao-module-entry .plantao-case-record:hover .plantao-record-folder::before{
+  transform:rotate(2.8deg) translate(2px,2px)!important;
+}
+body.plantao-module-entry .plantao-case-record:hover .plantao-record-folder::after{
+  transform:rotate(-1.9deg) translate(-1px,1px)!important;
+}
+body.plantao-module-entry .plantao-case-record:hover .plantao-record-paper{
+  transform:translateY(-2px)!important;
+  box-shadow:0 16px 34px rgba(18,48,82,.13)!important;
+}
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-folder::before,
+:root[data-theme="dark"] body.plantao-module-entry .plantao-record-folder::after{
+  background:color-mix(in srgb,var(--surface) 92%,white 8%)!important;
+}
+:root[data-theme="leila-mood"] body.plantao-module-entry .plantao-record-folder::before,
+:root[data-theme="leila-mood"] body.plantao-module-entry .plantao-record-folder::after{
+  background:color-mix(in srgb,var(--surface) 94%,var(--accent-soft) 6%)!important;
+}
