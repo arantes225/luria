@@ -92,20 +92,16 @@
   function renderClues() {
     const unlocked = clueCount();
     const won = progress?.status === "won";
+    const lost = progress?.status === "lost";
+    const visible = won || lost ? 5 : unlocked;
 
-    els.clues.innerHTML = Array.from({length: 5}, (_, i) => {
+    els.clues.innerHTML = Array.from({length: visible}, (_, i) => {
       const n = i + 1;
-      const isUnlocked = n <= unlocked || won;
-      if (!isUnlocked) {
-        return '<div class="daily-clue is-locked"><div class="daily-clue-inner">' +
-          '<div class="daily-clue-copy"></div>' +
-          '<span class="daily-clue-locknote">Desbloqueie após responder a pista ' + (n - 1) + '</span>' +
-        '</div></div>';
-      }
-
       const classes = ["daily-clue","is-unlocked"];
-      if (!won && n === unlocked) classes.push("is-current");
+
+      if (!won && !lost && n === unlocked) classes.push("is-current");
       if (won && n === unlocked) classes.push("is-correct");
+
       const text = challenge["clue_" + n] || "";
 
       return '<div class="' + classes.join(" ") + '"><div class="daily-clue-inner">' +
@@ -115,13 +111,14 @@
 
     els.steps.forEach((step, i) => {
       const n = i + 1;
-      step.classList.toggle("is-visible", n < unlocked);
-      step.classList.toggle("is-current", n === unlocked && !won);
+      step.hidden = n > visible;
+      step.classList.toggle("is-visible", n < unlocked || (won && n <= visible));
+      step.classList.toggle("is-current", !won && !lost && n === unlocked);
       step.classList.toggle("is-complete", won && n <= unlocked);
     });
+
     renderSummary();
   }
-
   function renderHeader() {
     els.area.textContent = challenge.area || "Desafio clínico";
     els.heroDate.textContent = formatDate(challenge.challenge_date, false);
