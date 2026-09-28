@@ -336,7 +336,11 @@
     }
 
     const savedLibraryView=readPlantaoView().libraryView;
-    state.libraryView=savedLibraryView==="library" ? "library" : "home";
+    // Ao entrar diretamente na Sala de Emergência, sempre começar na tela inicial.
+    // A sessão em andamento continua disponível apenas pelo card "Continuar último caso".
+    state.libraryView=ENTRY_MODE==="emergency"
+      ? "home"
+      : (savedLibraryView==="library" ? "library" : "home");
     document.body.dataset.caseLibraryView=state.libraryView;
 
     const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
@@ -361,7 +365,9 @@
     }else{
       setPlantaoMode("emergency");
     }
-    if(savedView.clinicalSessionId && ["plantao-simulator","plantao-debrief"].includes(savedView.section)){
+    // Nunca reabrir um atendimento automaticamente ao acessar a Sala de Emergência.
+    // O usuário decide explicitamente se quer retomá-lo pelo botão de continuar.
+    if(ENTRY_MODE!=="emergency" && savedView.clinicalSessionId && ["plantao-simulator","plantao-debrief"].includes(savedView.section)){
       const activeRes=await sb.from("clinical_case_sessions")
         .select("id,case_id,status,started_at,completed_at,elapsed_minutes,score,result,state,action_log")
         .eq("user_id",user.id)
