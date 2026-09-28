@@ -23,6 +23,7 @@
   };
 
   let all = [];
+  let protocols = [];
   let selectedId = null;
 
   function esc(value) {
@@ -203,7 +204,7 @@
               <div class="recipe-med-head">
                 <span class="recipe-med-num">${route.mode === "alternatives" ? `${i + 1}ª` : i + 1}</span>
                 <div>
-                  <strong>${esc(item.drug || "Medicamento")}</strong>
+                  <button type="button" class="recipe-drug-link" data-open-drug="${esc(item.drug || "Medicamento")}">${esc(item.drug || "Medicamento")} ↗</button>
                   ${item.quantity ? `<span>${esc(item.quantity)}</span>` : ""}
                 </div>
               </div>
@@ -255,6 +256,7 @@
     const data = recipe.data || {};
     const s = STATUS[recipe.status] || STATUS.review_needed;
     const copyEnabled = recipe.status === "verified" && data.copy_ready === true;
+    const relatedProtocol = protocols.find((p) => Array.isArray(p.linked_recipe_slugs) && p.linked_recipe_slugs.includes(recipe.slug));
 
     els.detail.innerHTML = `
       <div class="recipe-detail-head">
@@ -267,9 +269,13 @@
           <h2>${esc(recipe.title)}</h2>
           <p>${esc(recipe.summary || "")}</p>
         </div>
-        <button class="recipe-copy-btn" type="button" data-copy-current="1" ${copyEnabled ? "" : "disabled"}>
-          ${copyEnabled ? "Copiar receita" : "Aguardando revisão"}
-        </button>
+        <div class="recipe-head-actions">
+          ${relatedProtocol ? '<button class="recipe-copy-btn recipe-protocol-btn" type="button" data-open-protocol="1">Abrir protocolo</button>' : ""}
+          <button class="recipe-copy-btn recipe-note-btn" type="button" data-send-note="1">Enviar à Cola Rápida</button>
+          <button class="recipe-copy-btn" type="button" data-copy-current="1" ${copyEnabled ? "" : "disabled"}>
+            ${copyEnabled ? "Copiar receita" : "Aguardando revisão"}
+          </button>
+        </div>
       </div>
 
       <div class="recipe-status-note ${s.cls}">${esc(s.help)}</div>
@@ -290,6 +296,9 @@
 
     const copy = els.detail.querySelector('[data-copy-current="1"]');
     if (copyEnabled) copy?.addEventListener("click", () => copyRecipe(recipe));
+    els.detail.querySelector('[data-open-protocol="1"]')?.addEventListener("click", () => window.LuriaClinicalBridge?.openProtocol(relatedProtocol.slug));
+    els.detail.querySelector('[data-send-note="1"]')?.addEventListener("click", () => window.LuriaClinicalBridge?.toQuickChart({type:"recipe",slug:recipe.slug,title:recipe.title,text:recipeText(recipe),source:"Tratamentos gerais LURIA"}));
+    els.detail.querySelectorAll("[data-open-drug]").forEach((btn) => btn.addEventListener("click", () => window.LuriaClinicalBridge?.openDrug(btn.dataset.openDrug)));
   }
 
   async function load() {
@@ -300,10 +309,10 @@
 
     els.list.innerHTML = '<div class="recipe-loading">Carregando banco de receitas…</div>';
 
-    const { data, error } = await client
-      .from("recipe_bank")
-      .select("*")
-      .order("title", { ascending: true });
+    const [{ data, error }, { data: protocolRows }] = await Promise.all([
+      client.from("recipe_bank").select("*").order("title", { ascending: true }),
+      client.from("clinical_protocols").select("slug,title,linked_recipe_slugs").order("title", { ascending: true })
+    ]);
 
     if (error) {
       console.error("[LURIA recipes]", error);
@@ -312,6 +321,15 @@
     }
 
     all = Array.isArray(data) ? data : [];
+    protocols = Array.isArray(protocolRows) ? protocolRows : [];
+    const params = new URLSearchParams(location.search);
+    const wanted = params.get("q")?.trim();
+    if (wanted) {
+      els.search.value = wanted;
+      const nw = norm(wanted);
+      const hit = all.find((r) => r.slug === wanted) || all.find((r) => norm(r.title).includes(nw) || norm((r.tags||[]).join(" ")).includes(nw));
+      selectedId = hit?.id || null;
+    }
     renderStats();
     fillCategories();
     renderList();
