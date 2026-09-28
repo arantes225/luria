@@ -10,14 +10,16 @@
 .daily-hero-date::before{content:"▣";color:var(--primary,#184888);font-size:17px}
 .daily-content{display:grid;grid-template-columns:minmax(0,1fr) 288px;gap:20px;align-items:start}
 .daily-main-col{display:grid;gap:16px}
-.daily-stepper{display:grid;grid-template-columns:repeat(5,1fr);position:relative;padding:2px 12px 4px}
-.daily-stepper::before{content:"";position:absolute;left:10%;right:10%;top:19px;height:2px;background:var(--border,#dbe3ee)}
-.daily-step{position:relative;z-index:1;display:grid;justify-items:center;gap:7px}
-.daily-step span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--surface-2,#eef2f7);border:1px solid var(--border,#dce4ee);color:var(--muted,#6f7d91);font-size:12px;font-weight:850;transition:.2s ease}
-.daily-step small{font-size:11px;color:var(--muted,#748096);font-weight:750}
-.daily-step.is-visible span,.daily-step.is-current span{background:var(--primary,#184888);border-color:var(--primary,#184888);color:#fff;box-shadow:0 6px 15px color-mix(in srgb,var(--primary,#184888) 18%,transparent)}
+.daily-card-body{display:grid;grid-template-columns:118px minmax(0,1fr);gap:18px;align-items:start}
+.daily-clues-wrap{min-width:0}
+.daily-stepper{display:grid;grid-template-columns:1fr;gap:0;position:relative;padding:2px 0 2px 4px}
+.daily-stepper::before{content:"";position:absolute;left:22px;top:22px;bottom:22px;width:2px;background:var(--border,#dbe3ee)}
+.daily-step{position:relative;z-index:1;display:grid;grid-template-columns:44px minmax(0,1fr);align-items:center;justify-items:start;gap:10px;min-height:60px}
+.daily-step span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--surface-2,#eef2f7);border:1px solid var(--border,#dce4ee);color:var(--muted,#6f7d91);font-size:12px;font-weight:850;transition:.2s ease;box-shadow:0 0 0 6px var(--surface,#fff)}
+.daily-step small{font-size:11px;color:var(--muted,#748096);font-weight:800;white-space:nowrap}
+.daily-step.is-visible span,.daily-step.is-current span{background:var(--primary,#184888);border-color:var(--primary,#184888);color:#fff;box-shadow:0 0 0 6px var(--surface,#fff),0 6px 15px color-mix(in srgb,var(--primary,#184888) 18%,transparent)}
 .daily-step.is-current small,.daily-step.is-visible small{color:var(--primary,#184888)}
-.daily-step.is-complete span{background:#1d9a61;border-color:#1d9a61;color:#fff}
+.daily-step.is-complete span{background:#1d9a61;border-color:#1d9a61;color:#fff;box-shadow:0 0 0 6px var(--surface,#fff)}
 .daily-card,.daily-answer-card,.daily-result,.daily-side-card,.daily-state-card{border:1px solid var(--border,#e0e6ee);background:var(--surface,#fff);border-radius:18px;box-shadow:0 12px 30px rgba(17,34,68,.055)}
 .daily-state-card{min-height:280px;display:grid;place-items:center;align-content:center;gap:12px;text-align:center;padding:38px}
 .daily-state-card p{margin:0;color:var(--muted,#6f7b8d)}
@@ -99,9 +101,13 @@
   .daily-hero h2{font-size:30px}
   .daily-hero p{font-size:13px}
   .daily-hero-date{font-size:11px}
-  .daily-stepper{padding-inline:2px}
-  .daily-stepper::before{left:9%;right:9%;top:16px}
-  .daily-step span{width:32px;height:32px}
+  .daily-card-body{grid-template-columns:1fr;gap:14px}
+  .daily-stepper{grid-template-columns:repeat(5,1fr);gap:0;padding:0 2px}
+  .daily-stepper::before{left:10%;right:10%;top:16px;bottom:auto;width:auto;height:2px}
+  .daily-step{grid-template-columns:1fr;justify-items:center;gap:6px;min-height:auto}
+  .daily-step span{width:32px;height:32px;box-shadow:0 0 0 4px var(--surface,#fff)}
+  .daily-step.is-visible span,.daily-step.is-current span{box-shadow:0 0 0 4px var(--surface,#fff)}
+  .daily-step.is-complete span{box-shadow:0 0 0 4px var(--surface,#fff)}
   .daily-step small{font-size:9px}
   .daily-card,.daily-answer-card,.daily-side-card{padding:14px;border-radius:15px}
   .daily-clue-inner{grid-template-columns:25px minmax(0,1fr);padding:12px;gap:8px}
