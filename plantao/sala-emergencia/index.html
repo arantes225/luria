@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-native-topbar-v10">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260928-library-switch-v11">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -82,9 +82,7 @@
           <div class="plantao-native-switch-wrap plantao-primary-switch-wrap">
             <nav class="plantao-ref-nav plantao-native-switch">
               <a href="/dashboard/">⌂ <span>Início</span></a>
-              <a class="active" href="/plantao/sala-emergencia/">✚ <span>Sala de Emergência</span></a>
-              <a href="/estatisticas/">▥ <span>Meus Progressos</span></a>
-              <a href="/biblioteca/">▤ <span>Biblioteca</span></a>
+              <a class="active" href="#plantao-emergencia" aria-current="page">▤ <span>Biblioteca</span></a>
               <a href="/ajuda/">? <span>Ajuda</span></a>
             </nav>
           </div>
@@ -133,7 +131,13 @@
               </div>
               <button id="plantao-filter-clear" class="plantao-clear-filters" type="button">↻ Limpar filtros</button>
             </div>
-            <div id="plantao-specialty-chips" class="plantao-specialty-chips plantao-native-switch plantao-specialty-native-switch" aria-label="Especialidades"></div>
+            <section class="plantao-library-inner-switch" aria-label="Filtros da biblioteca">
+              <div class="plantao-library-inner-switch-head">
+                <span>Biblioteca</span>
+                <small>Filtrar por especialidade</small>
+              </div>
+              <div id="plantao-specialty-chips" class="plantao-specialty-chips plantao-native-switch plantao-specialty-native-switch" aria-label="Especialidades"></div>
+            </section>
             <div class="plantao-cases-section-head">
               <div>
                 <span></span>
