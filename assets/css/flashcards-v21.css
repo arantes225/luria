@@ -298,3 +298,14 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
   border-radius:999px;
   background:color-mix(in srgb,var(--accent) 9%,transparent);
 }
+
+
+/* v24.6 — remove qualquer linha vertical interna residual dos decks */
+.flash-section[data-flash-section="library"] .flash-notebook::before,
+.flash-section[data-flash-section="library"] .flash-notebook::after{
+  content:none!important;
+  display:none!important;
+}
+.flash-section[data-flash-section="library"] .flash-notebook-icon{
+  box-shadow:0 5px 12px rgba(24,72,136,.14)!important;
+}
