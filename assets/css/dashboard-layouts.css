@@ -3096,3 +3096,13 @@ body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-pink{
 :root[data-theme="leila-mood"] body[data-page="dashboard"] .dashboard-cat-symbol .cat-symbol-pink{
   display:block!important;
 }
+
+
+/* Dashboard v51 — subir título do Pulo do Gato */
+body[data-page="dashboard"] .dl-cat .dl-card-heading{
+  margin-top:-4px!important;
+  margin-bottom:10px!important;
+}
+body[data-page="dashboard"] .dl-cat .dl-card-heading h3{
+  transform:translateY(-2px)!important;
+}
