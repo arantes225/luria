@@ -661,36 +661,30 @@
       const materia=caseMateria(item);
       const summary=item.summary || item.presentation?.opening || "Paciente aguardando avaliação na sala de emergência.";
       const diff=String(item.difficulty||"").toLowerCase();
-      const caseImage=plantaoReferenceImage(item,index+1);
-      const faceCrop=plantaoReferenceFaceCrop(caseImage);
+      const patientName=patientReportName(item);
+      const patientAge=reportAgeLabel(item);
+      const patientSexLabel=reportSexLabel(item);
 
       return `
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
           <div class="plantao-record-folder">
-            <div class="plantao-record-folder-tab"><span>${esc(item.specialty || "Clínica Médica")}</span></div>
+            <div class="plantao-record-folder-tabs">
+              <div class="plantao-record-folder-tab"><span>${esc(item.specialty || "Clínica Médica")}</span></div>
+              <span class="plantao-record-paper-slip difficulty">${esc(item.difficulty || "Intermediário")}</span>
+              <span class="plantao-record-paper-slip time">◷ 20 min</span>
+            </div>
             <div class="plantao-record-paper-back"></div>
 
             <div class="plantao-record-paper">
               <div class="plantao-record-paper-header">
-                <div class="plantao-record-photo">
-                  <img
-                    src="${caseImage}"
-                    alt="${esc(title)}"
-                    loading="lazy"
-                    decoding="async"
-                    style="--face-x:${faceCrop.x}%;--face-y:${faceCrop.y}%;--face-scale:${faceCrop.scale}"
-                  >
-                </div>
-
                 <div class="plantao-record-title-wrap">
                   <span class="plantao-record-kicker">PRONTUÁRIO DO PACIENTE</span>
+                  <div class="plantao-record-patient">
+                    <strong>${esc(patientName)}</strong>
+                    <span>${esc(patientAge)} · ${esc(patientSexLabel)}</span>
+                  </div>
                   <h3>${esc(title)}</h3>
                 </div>
-              </div>
-
-              <div class="plantao-record-meta">
-                <span class="plantao-record-chip difficulty">${esc(item.difficulty || "Intermediário")}</span>
-                <span class="plantao-record-chip time">◷ 20 min</span>
               </div>
 
               <div class="plantao-record-lines">
@@ -2543,8 +2537,8 @@
     clock.innerHTML='<svg class="plantao-time-icon" aria-hidden="true" viewBox="0 0 24 24" width="1em" height="1em" focusable="false"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v5l3.4 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>'+time+'</span>';
     clock.setAttribute("aria-label","Tempo do caso: "+time);
   }
-  function patientSex(){
-    const raw=normalizeLabel(state.current?.presentation?.sex||"");
+  function patientSex(item=state.current){
+    const raw=normalizeLabel(item?.presentation?.sex||"");
     return raw==="f" || raw.startsWith("fem") ? "F" : "M";
   }
   function genderText(text){
@@ -3951,29 +3945,29 @@
     show("plantao-simulator");
   }
 
-  function patientReportName(){
-    const explicit=String(state.current?.presentation?.patient_name||state.current?.presentation?.name||"").trim();
+  function patientReportName(item=state.current){
+    const explicit=String(item?.presentation?.patient_name||item?.presentation?.name||"").trim();
     if(explicit) return explicit;
 
     const female=["Ana Martins","Mariana Alves","Camila Rocha","Juliana Ribeiro","Fernanda Costa","Larissa Gomes","Patrícia Lima","Beatriz Souza"];
     const male=["Carlos Martins","Rafael Alves","Bruno Rocha","Lucas Ribeiro","Felipe Costa","Gustavo Gomes","Eduardo Lima","André Souza"];
-    const source=String(state.current?.slug||state.current?.id||state.current?.title||"paciente");
+    const source=String(item?.slug||item?.id||item?.title||"paciente");
     let hash=0;
     for(let i=0;i<source.length;i++) hash=(hash*31+source.charCodeAt(i))>>>0;
-    const list=patientSex()==="F"?female:male;
+    const list=patientSex(item)==="F"?female:male;
     return list[hash%list.length];
   }
 
-  function reportAgeLabel(){
-    const raw=String(state.current?.presentation?.age||"").trim();
+  function reportAgeLabel(item=state.current){
+    const raw=String(item?.presentation?.age||"").trim();
     if(!raw) return "—";
     if(/ano|mes|mês|dia/i.test(raw)) return raw;
     const n=Number(raw);
     return Number.isFinite(n) ? n+" "+(n===1?"ano":"anos") : raw;
   }
 
-  function reportSexLabel(){
-    return patientSex()==="F" ? "Feminino" : "Masculino";
+  function reportSexLabel(item=state.current){
+    return patientSex(item)==="F" ? "Feminino" : "Masculino";
   }
 
   function patientHdaText(){
