@@ -28,31 +28,53 @@ async function init(){
     $("sim-donut-total").textContent=completed;
     $("sim-progress-copy").textContent=completed?("Você já concluiu "+completed+" caso"+(completed===1?"":"s")+" no Simulador."):"Seu histórico aparecerá aqui conforme você praticar.";
 
-    const recent=clinicalRows.slice(0,5);
-    if(recent.length){
-      const ids=[...new Set(recent.map(x=>x.case_id).filter(Boolean))];
-      let names={};
-      if(ids.length){
-        const q=await sb.from("clinical_cases").select("id,title,specialty").in("id",ids);
-        (q.data||[]).forEach(x=>names[x.id]=x);
-      }
-      $("sim-recent-list").innerHTML=recent.map(row=>{
-        const c=names[row.case_id]||{};
-        const status=row.status==="completed"?"Concluído":row.status==="in_progress"?"Em andamento":"Novo";
-        const cls=row.status==="completed"?"done":row.status==="in_progress"?"":"new";
-        return '<div class="sim-recent-row"><span class="sim-recent-status '+cls+'">'+status+'</span><span class="sim-recent-title">'+esc(c.title||"Caso clínico")+'</span><span class="sim-recent-meta">'+esc(c.specialty||"Clínica")+'</span><span class="sim-recent-time">'+fmtAgo(row.started_at)+'</span></div>';
-      }).join("");
-    } else {
-      $("sim-recent-list").innerHTML='<div class="sim-empty-row">Seus casos recentes aparecerão aqui.</div>';
-    }
+    const scoredSessions=[...clinicalRows,...zapRows]
+      .map(row=>Number(row.score))
+      .filter(score=>Number.isFinite(score)&&score>=0);
+
+    const scoreBands=[
+      {label:"0–49%",min:0,max:49},
+      {label:"50–69%",min:50,max:69},
+      {label:"70–84%",min:70,max:84},
+      {label:"85–100%",min:85,max:100}
+    ];
+
+    const scoreTotal=scoredSessions.length;
+    $("sim-recent-list").innerHTML=scoreTotal
+      ? scoreBands.map((band,index)=>{
+          const count=scoredSessions.filter(score=>score>=band.min&&score<=band.max).length;
+          const pct=Math.round((count/scoreTotal)*100);
+          return '<div class="sim-score-row">'
+            +'<span class="sim-score-label">'+band.label+'</span>'
+            +'<span class="sim-score-track"><i style="width:'+pct+'%"></i></span>'
+            +'<span class="sim-score-count">'+count+'x</span>'
+            +'<strong class="sim-score-pct">'+pct+'%</strong>'
+            +'</div>';
+        }).join("")
+      : '<div class="sim-empty-row">Sua distribuição de pontuação aparecerá após concluir casos.</div>';
 
     const counts={};
     caseRows.forEach(c=>{const k=c.specialty||"Outras";counts[k]=(counts[k]||0)+1});
-    const top=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,5);
-    const total=top.reduce((s,x)=>s+x[1],0)||1;
-    $("sim-specialty-legend").innerHTML=top.map(x=>'<div><span>'+esc(x[0])+'</span><b>'+Math.round(x[1]/total*100)+'%</b></div>').join("");
-    const bars=[clinicalRows.length%7+2,zapRows.length%7+3,completed%7+2,active%7+2,(msgs.count||0)%7+3,Math.max(2,scores.length%7+2),Math.max(3,completed%5+3)];
-    $("sim-mini-bars").innerHTML=bars.map(n=>'<i style="height:'+Math.min(100,22+n*9)+'%"></i>').join("");
+    const specialties=Object.entries(counts).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],"pt-BR"));
+    const specialtyTotal=specialties.reduce((s,x)=>s+x[1],0)||1;
+
+    $("sim-specialty-legend").innerHTML=specialties.map((x,index)=>
+      '<div class="sim-specialty-legend-row" style="--legend-index:'+index+'">'
+      +'<span>'+esc(x[0])+'</span>'
+      +'<b>'+x[1]+' caso'+(x[1]===1?'':'s')+'</b>'
+      +'</div>'
+    ).join("");
+
+    $("sim-mini-bars").innerHTML=specialties.length
+      ? specialties.map((x,index)=>{
+          const pct=Math.round((x[1]/specialtyTotal)*100);
+          return '<div class="sim-specialty-list-row">'
+            +'<span class="sim-specialty-list-name">'+esc(x[0])+'</span>'
+            +'<span class="sim-specialty-list-bar"><i style="width:'+pct+'%"></i></span>'
+            +'<b>'+x[1]+'</b>'
+            +'</div>';
+        }).join("")
+      : '<div class="sim-empty-row">Nenhuma especialidade disponível.</div>';
   }catch(err){console.warn("Simulador hub:",err)}
 }
 if(window.docmapUser)init();else window.addEventListener("docmap:ready",init,{once:true});
