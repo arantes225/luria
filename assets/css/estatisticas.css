@@ -995,3 +995,94 @@
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* v25.1 — reorganização Geral + Flashcards */
+[data-stats-panel="geral"] .stats-block-grid{
+  grid-template-areas:
+    "habit habit habit habit heat heat heat heat heat heat heat heat"
+    "prog prog prog prog prog prog dist dist dist dist dist dist"
+    "area area area area area area ins ins ins ins ins ins"!important;
+}
+[data-stats-panel="geral"] .stats-general-progress{
+  grid-area:prog!important;
+  min-height:250px!important;
+  height:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+[data-stats-panel="geral"] .stats-general-distribution{
+  grid-area:dist!important;
+  min-height:250px!important;
+  height:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+[data-stats-panel="geral"] .stats-general-progress #general-progress-metrics{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:8px!important;
+  width:100%!important;
+  margin-top:12px!important;
+}
+[data-stats-panel="geral"] .stats-general-progress .metric-mini{
+  min-height:78px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+}
+[data-stats-panel="geral"] .stats-general-distribution .chart-box{
+  flex:1 1 auto!important;
+  min-height:195px!important;
+}
+[data-stats-panel="geral"] .stats-general-progress,
+[data-stats-panel="geral"] .stats-general-distribution{
+  align-self:stretch!important;
+}
+
+/* Flashcards: frágeis + revisões por área, depois memória por matéria, depois insights */
+[data-stats-panel="flashcards"] .stats-flash-fragile{
+  grid-column:span 5!important;
+  min-height:230px!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-area-reviews{
+  grid-column:span 7!important;
+  min-height:230px!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-area-reviews .chart-box{
+  flex:1 1 auto!important;
+  width:100%!important;
+  min-height:190px!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-subject-memory{
+  grid-column:span 12!important;
+  min-height:0!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-insights{
+  grid-column:span 12!important;
+}
+
+/* neutraliza regras antigas baseadas em nth-child para os quatro blocos movidos */
+[data-stats-panel="flashcards"] .stats-flash-fragile,
+[data-stats-panel="flashcards"] .stats-flash-area-reviews,
+[data-stats-panel="flashcards"] .stats-flash-subject-memory,
+[data-stats-panel="flashcards"] .stats-flash-insights{
+  max-width:none!important;
+  width:100%!important;
+}
+
+@media(max-width:1050px){
+  [data-stats-panel="geral"] .stats-block-grid{
+    grid-template-areas:"heat" "habit" "prog" "dist" "area" "ins"!important;
+  }
+}
+@media(max-width:900px){
+  [data-stats-panel="flashcards"] .stats-flash-fragile,
+  [data-stats-panel="flashcards"] .stats-flash-area-reviews,
+  [data-stats-panel="flashcards"] .stats-flash-subject-memory,
+  [data-stats-panel="flashcards"] .stats-flash-insights{
+    grid-column:span 12!important;
+  }
+}
