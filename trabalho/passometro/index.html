@@ -708,6 +708,166 @@
       }
     }
 
+
+    /* Passômetro v5 — ajuste geral após remoção do cabeçalho */
+    .pm-page{
+      max-width:1280px!important;
+      gap:12px!important;
+    }
+    .pm-list{
+      gap:11px!important;
+    }
+
+    /* Sem bloco vazio entre o título da página e as métricas */
+    .pm-home-head{
+      display:none!important;
+    }
+
+    /* Métricas viram o primeiro bloco visual da página */
+    .pm-overview{
+      margin-top:0!important;
+      grid-template-columns:repeat(4,minmax(0,1fr))!important;
+      gap:10px!important;
+    }
+    .pm-overview-card{
+      min-height:84px!important;
+      padding:12px 14px 14px!important;
+      border-radius:11px!important;
+    }
+    .pm-overview-card::after{
+      height:4px!important;
+      background:var(--accent)!important;
+    }
+    .pm-overview-card span{
+      font-size:8px!important;
+      font-weight:800!important;
+    }
+    .pm-overview-card strong{
+      font-size:23px!important;
+    }
+    .pm-overview-card small{
+      font-size:7.5px!important;
+    }
+
+    /* Toolbar alinhada e com proporção mais próxima de Flashcards/Caderno */
+    .pm-toolbar{
+      display:grid!important;
+      grid-template-columns:minmax(0,1fr) auto!important;
+      align-items:center!important;
+      gap:8px!important;
+      padding:8px!important;
+      border-radius:11px!important;
+    }
+    .pm-search{
+      max-width:none!important;
+      min-width:0!important;
+    }
+    .pm-search input{
+      width:100%!important;
+      height:40px!important;
+      border-radius:9px!important;
+    }
+    .pm-new{
+      height:40px!important;
+      min-width:108px!important;
+      border-radius:9px!important;
+    }
+
+    /* Separador de biblioteca */
+    .pm-subbar{
+      min-height:31px!important;
+      margin:0!important;
+      padding:0 4px 6px!important;
+    }
+
+    /* Cards com altura e distribuição consistentes */
+    .pm-decks{
+      grid-template-columns:repeat(3,minmax(0,1fr))!important;
+      align-items:stretch!important;
+      gap:10px!important;
+    }
+    .pm-deck{
+      min-height:150px!important;
+      height:100%!important;
+      display:grid!important;
+      grid-template-rows:auto 1fr auto!important;
+      border-radius:11px!important;
+    }
+    .pm-deck-head{
+      min-height:42px!important;
+    }
+    .pm-deck h3{
+      font-size:14px!important;
+    }
+    .pm-meta{
+      align-self:end!important;
+    }
+
+    /* Tela interna */
+    .pm-detail-shell{
+      gap:10px!important;
+    }
+    .pm-detail-head{
+      min-height:58px!important;
+    }
+    .pm-detail-actions{
+      margin-left:auto!important;
+    }
+    .pm-detail-metrics{
+      grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    }
+    .pm-detail-metric{
+      min-height:62px!important;
+      border-radius:9px!important;
+    }
+    .pm-patients-title{
+      margin-top:2px!important;
+    }
+
+    /* Formulários com respiro uniforme */
+    .pm-dialog-head,
+    .pm-dialog-actions{
+      padding-left:16px!important;
+      padding-right:16px!important;
+    }
+    .pm-form{
+      padding:15px 16px!important;
+    }
+
+    @media(max-width:1050px){
+      .pm-overview{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+      }
+      .pm-decks{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+      }
+    }
+    @media(max-width:700px){
+      .pm-page{gap:10px!important}
+      .pm-overview{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+        gap:8px!important;
+      }
+      .pm-overview-card{
+        min-height:76px!important;
+        padding:10px 11px 12px!important;
+      }
+      .pm-toolbar{
+        grid-template-columns:minmax(0,1fr) auto!important;
+        padding:7px!important;
+      }
+      .pm-new{
+        min-width:84px!important;
+        padding:0 10px!important;
+      }
+      .pm-decks{
+        grid-template-columns:1fr!important;
+      }
+      .pm-detail-metrics{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important;
+      }
+    }
+
   </style>
 </head>
 <body data-page="trabalho_passometro">
@@ -727,9 +887,6 @@
 
         <section class="pm-page">
           <div class="pm-list" id="pm-list">
-            <div class="pm-home-head">
-              
-            </div>
             <div class="pm-overview" id="pm-overview">
               <article class="pm-overview-card accent"><span>Passômetros ativos</span><strong id="pm-stat-decks">0</strong><small>últimos 30 dias</small></article>
               <article class="pm-overview-card"><span>Pacientes</span><strong id="pm-stat-patients">0</strong><small>em todos os passômetros</small></article>
