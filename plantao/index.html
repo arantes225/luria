@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="/assets/css/simulador-hub.css?v=2-reference">
+  <link rel="stylesheet" href="/assets/css/simulador-hub.css?v=3-reference-exact">
   <link rel="canonical" href="/plantao/">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
 </head>
@@ -32,10 +32,12 @@
         <section class="sim-hero-grid" aria-label="Modos do simulador">
           <article class="sim-hero-card sim-hero-emergency">
             <div class="sim-hero-copy">
-              <div class="sim-hero-logo">
-                <img class="sim-logo-light" src="/assets/img/plantao/logo-sala-emergencia-light.webp" alt="">
-                <img class="sim-logo-dark" src="/assets/img/plantao/logo-sala-emergencia-dark.webp" alt="">
-                <img class="sim-logo-pink" src="/assets/img/plantao/logo-sala-emergencia-pink.webp" alt="">
+              <div class="sim-hero-logo" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M14 18h20a3 3 0 0 1 3 3v15H11V21a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="3"/>
+                  <path d="M18 18v-4a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v4" stroke="currentColor" stroke-width="3"/>
+                  <path d="M24 23v8M20 27h8" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                </svg>
               </div>
               <div>
                 <h2>Sala de Emergência</h2>
@@ -43,8 +45,8 @@
               </div>
             </div>
             <div class="sim-hero-art sim-emergency-art" aria-hidden="true">
-              <div class="sim-monitor"><span></span><span></span><span></span></div>
-              <div class="sim-bed"></div>
+              <div class="sim-emergency-photo"></div>
+              <div class="sim-emergency-overlay"></div>
             </div>
             <a class="sim-reference-button" href="/plantao/sala-emergencia/">Acessar Sala de Emergência <span>›</span></a>
             <div class="sim-hero-badge"><strong id="sim-emergency-total">—</strong><span>casos disponíveis</span></div>
@@ -52,10 +54,13 @@
 
           <article class="sim-hero-card sim-hero-zap">
             <div class="sim-hero-copy">
-              <div class="sim-hero-logo">
-                <img class="sim-logo-light" src="/assets/img/plantao/logo-luriazap-light.webp" alt="">
-                <img class="sim-logo-dark" src="/assets/img/plantao/logo-luriazap-dark.webp" alt="">
-                <img class="sim-logo-pink" src="/assets/img/plantao/logo-luriazap-pink.webp" alt="">
+              <div class="sim-hero-logo" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M11 13h26a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H24l-8 6v-6h-5a4 4 0 0 1-4-4V17a4 4 0 0 1 4-4Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                  <circle cx="18" cy="24" r="1.7" fill="currentColor"/>
+                  <circle cx="24" cy="24" r="1.7" fill="currentColor"/>
+                  <circle cx="30" cy="24" r="1.7" fill="currentColor"/>
+                </svg>
               </div>
               <div>
                 <h2>LuriaZap</h2>
@@ -63,8 +68,10 @@
               </div>
             </div>
             <div class="sim-hero-art sim-zap-art" aria-hidden="true">
-              <div class="sim-phone"><span></span><span></span><span></span></div>
-              <div class="sim-chat-bubble one"></div><div class="sim-chat-bubble two"></div>
+              <img src="/assets/img/plantao/telefone-interconsulta-base.webp" alt="">
+              <div class="sim-chat-bubble one"></div>
+              <div class="sim-chat-bubble two"></div>
+              <div class="sim-chat-bubble three"></div>
             </div>
             <a class="sim-reference-button" href="/plantao/luriazap/">Acessar LuriaZap <span>›</span></a>
             <div class="sim-hero-badge"><strong id="sim-zap-total">—</strong><span>casos disponíveis</span></div>
