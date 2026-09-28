@@ -691,7 +691,6 @@
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
           <div class="plantao-record-folder">
             <div class="plantao-record-folder-tabs">
-              <div class="plantao-record-folder-tab"><span>${esc(area)}</span></div>
               <span class="plantao-record-paper-slip difficulty">${esc(item.difficulty || "Intermediário")}</span>
               <span class="plantao-record-paper-slip time">◷ 20 min</span>
             </div>
@@ -699,11 +698,15 @@
               <div class="plantao-record-paper-header">
                 <div class="plantao-record-title-wrap">
                   <span class="plantao-record-kicker">PRONTUÁRIO DO PACIENTE</span>
+                  <div class="plantao-record-area">${esc(area)}</div>
                   <div class="plantao-record-patient">
                     <strong>${esc(patientName)}</strong>
                     <span>${esc(patientAge)} · ${esc(patientSexLabel)}</span>
                   </div>
-                  <h3>${esc(title)}</h3>
+                  <div class="plantao-record-chief">
+                    <span>Queixa principal</span>
+                    <h3>${esc(title)}</h3>
+                  </div>
                 </div>
               </div>
 
