@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v183-pratica-clinica-theme-photo";
+const CACHE_VERSION = "luria-pwa-v184-dashboard-topbar-align";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -60,7 +60,7 @@ const APP_SHELL = [
   "/assets/js/auth.js?v=auth4",
   "/assets/js/configuracoes.js?v=13.3-auth",
   "/assets/css/dashboard-layouts.css?v=4-clean-bg",
-  "/assets/js/dashboard-layouts.js?v=4-reload-fix",
+  "/assets/js/dashboard-layouts.js?v=24-pwa-topbar-align",
   "/assets/js/dashboard-layout-settings.js?v=2-work",
   "/assets/img/dashboard-layouts/opcao-1.webp",
   "/assets/img/dashboard-layouts/opcao-2.webp",
