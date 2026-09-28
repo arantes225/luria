@@ -470,3 +470,71 @@ html[data-theme="leila-mood"] .sim-hero-logo{
     flex-basis:28px;
   }
 }
+
+
+/* v7 — fotos reais com tratamento por tema */
+:root{
+  --sim-emergency-tint-start:rgba(6,54,102,.94);
+  --sim-emergency-tint-mid:rgba(7,63,117,.78);
+  --sim-emergency-tint-end:rgba(7,63,117,.14);
+  --sim-zap-tint-start:rgba(5,51,99,.97);
+  --sim-zap-tint-mid:rgba(6,63,117,.88);
+  --sim-zap-tint-end:rgba(6,63,117,.24);
+}
+html[data-theme="dark"]{
+  --sim-emergency-tint-start:rgba(2,18,34,.96);
+  --sim-emergency-tint-mid:rgba(4,31,55,.88);
+  --sim-emergency-tint-end:rgba(4,31,55,.38);
+  --sim-zap-tint-start:rgba(1,16,31,.98);
+  --sim-zap-tint-mid:rgba(3,28,52,.93);
+  --sim-zap-tint-end:rgba(3,28,52,.46);
+}
+html[data-theme="leila-mood"]{
+  --sim-emergency-tint-start:rgba(92,24,67,.93);
+  --sim-emergency-tint-mid:rgba(126,40,88,.78);
+  --sim-emergency-tint-end:rgba(126,40,88,.18);
+  --sim-zap-tint-start:rgba(78,19,61,.96);
+  --sim-zap-tint-mid:rgba(116,34,84,.86);
+  --sim-zap-tint-end:rgba(116,34,84,.28);
+}
+.sim-hero-emergency{
+  background-image:
+    linear-gradient(90deg,
+      var(--sim-emergency-tint-start) 0%,
+      var(--sim-emergency-tint-mid) 43%,
+      var(--sim-emergency-tint-end) 100%
+    ),
+    url("/assets/img/plantao/emergencia-card-bg.webp")!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+}
+.sim-hero-zap{
+  background-image:
+    linear-gradient(90deg,
+      var(--sim-zap-tint-start) 0%,
+      var(--sim-zap-tint-mid) 46%,
+      var(--sim-zap-tint-end) 100%
+    ),
+    url("/assets/img/plantao/luriazap-card-bg.webp")!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+}
+.sim-hero-emergency::before,
+.sim-hero-zap::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  border-radius:inherit;
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.025),rgba(0,0,0,.07));
+  z-index:1;
+}
+.sim-hero-copy,
+.sim-reference-button,
+.sim-hero-badge{
+  position:relative;
+  z-index:3;
+}
