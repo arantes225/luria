@@ -2954,3 +2954,65 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
 .error-review-home-content{
   margin-top:0!important;
 }
+
+
+/* v18.11 — Métricas rápidas vira painel único e mais completo */
+.error-home-layout.review-mode{
+  grid-template-columns:minmax(0,1fr) 340px!important;
+}
+.error-review-home-aside{
+  width:100%;
+}
+.error-quick-metrics{
+  padding:16px!important;
+}
+.error-metric-summary-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:7px;
+}
+.error-metric-summary-grid>div{
+  padding:10px;
+  border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));
+  border-radius:9px;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface));
+}
+.error-metric-summary-grid span,
+.error-metric-summary-grid small{
+  display:block;
+}
+.error-metric-summary-grid span{
+  color:var(--muted);
+  font-size:6.8px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.error-metric-summary-grid strong{
+  display:block;
+  margin:4px 0 2px;
+  color:var(--accent);
+  font-size:15px;
+  line-height:1;
+}
+.error-metric-summary-grid small{
+  color:var(--muted);
+  font-size:6.3px;
+  line-height:1.25;
+}
+.error-review-home-dashboard{
+  display:none!important;
+}
+@media(max-width:1050px){
+  .error-home-layout.review-mode{
+    grid-template-columns:1fr!important;
+  }
+  .error-review-home-aside{
+    width:100%;
+  }
+}
+@media(max-width:700px){
+  .error-metric-summary-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
