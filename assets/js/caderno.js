@@ -3313,6 +3313,129 @@ function renderDocument() {
 }
 
 
+
+async function renameCurrentNotebookTitle(nextTitle) {
+  const current = getCurrentDocument();
+  const title = String(nextTitle || "").trim();
+
+  if (!current || !title || title === current.title) {
+    renderDocument();
+    return;
+  }
+
+  if (current.note?.is_shared) {
+    window.LuriaDialog?.alert?.("O título de um caderno compartilhado não pode ser renomeado por aqui.");
+    renderDocument();
+    return;
+  }
+
+  setSaveStatus("Renomeando...", "saving");
+
+  try {
+    if (current.type === "lesson") {
+      const topicResult = await notebookSb
+        .from("study_topics")
+        .update({ theme: title })
+        .eq("id", current.topic.id)
+        .eq("user_id", notebookState.user.id)
+        .select("id,user_id,area,materia,theme,scheduled_date,original_date,completed_at,status,created_at")
+        .single();
+
+      if (topicResult.error) throw topicResult.error;
+
+      Object.assign(current.topic, topicResult.data);
+
+      if (current.note?.id) {
+        const noteResult = await notebookSb
+          .from("study_notes")
+          .update({ topic_title: title })
+          .eq("id", current.note.id)
+          .eq("user_id", notebookState.user.id)
+          .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at")
+          .single();
+
+        if (noteResult.error) throw noteResult.error;
+        Object.assign(current.note, noteResult.data);
+        notebookState.notesById.set(noteResult.data.id, noteResult.data);
+        notebookState.notesByTopic.set(current.topic.id, noteResult.data);
+      }
+    } else {
+      const noteResult = await notebookSb
+        .from("study_notes")
+        .update({ topic_title: title })
+        .eq("id", current.note.id)
+        .eq("user_id", notebookState.user.id)
+        .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at")
+        .single();
+
+      if (noteResult.error) throw noteResult.error;
+      Object.assign(current.note, noteResult.data);
+      notebookState.notesById.set(noteResult.data.id, noteResult.data);
+    }
+
+    renderTopicList();
+    renderLibrary();
+    renderDocument();
+    setSaveStatus("Nome atualizado", "saved");
+  } catch (error) {
+    console.error(error);
+    setSaveStatus("Erro ao renomear: " + error.message, "error");
+    renderDocument();
+  }
+}
+
+function beginNotebookTitleRename() {
+  if (!notebookState.editorEditable) return;
+
+  const current = getCurrentDocument();
+  const titleEl = document.getElementById("notebook-document-title");
+  if (!current || !titleEl || titleEl.querySelector("input")) return;
+
+  const oldTitle = current.title;
+  const input = document.createElement("input");
+  input.type = "text";
+  input.className = "notebook-title-inline-input";
+  input.value = oldTitle;
+  input.maxLength = 180;
+  input.setAttribute("aria-label", current.type === "lesson" ? "Nome da aula" : "Nome da página");
+
+  titleEl.textContent = "";
+  titleEl.appendChild(input);
+  titleEl.classList.add("is-renaming");
+
+  let finished = false;
+  const finish = async (save) => {
+    if (finished) return;
+    finished = true;
+    titleEl.classList.remove("is-renaming");
+    if (!save) {
+      titleEl.textContent = oldTitle;
+      return;
+    }
+    const value = input.value.trim();
+    if (!value) {
+      titleEl.textContent = oldTitle;
+      return;
+    }
+    await renameCurrentNotebookTitle(value);
+  };
+
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      finish(true);
+    } else if (event.key === "Escape") {
+      event.preventDefault();
+      finish(false);
+    }
+  });
+
+  input.addEventListener("blur", () => finish(true), { once: true });
+
+  input.focus();
+  input.select();
+}
+
 async function openTopic(
   topicId
 ) {
@@ -17942,6 +18065,10 @@ function wireEvents() {
       "click",
       toggleCurrentDocumentEdit
     );
+
+  document
+    .getElementById("notebook-document-title")
+    ?.addEventListener("click", beginNotebookTitleRename);
 
 
   document
