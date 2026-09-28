@@ -1048,7 +1048,7 @@ const PAGE_INFO = {
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Trabalho" },
   trabalho_plantoes: { title: "Escala", eyebrow: "Trabalho" },
   trabalho_passometro: { title: "Passômetro", eyebrow: "Trabalho" },
-  trabalho_prontuario_rapido: { title: "Caderno", eyebrow: "Acesso temporário" },
+  trabalho_prontuario_rapido: { title: "Cola rápida", eyebrow: "Acesso temporário" },
   trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Trabalho" },
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Trabalho" },
   trabalho_calculadora: { title: "Calculadoras", eyebrow: "Trabalho" },
@@ -1250,7 +1250,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
         </a>
 
         <a class="nav-link ${page === "trabalho_prontuario_rapido" ? "active" : ""}" href="/trabalho/prontuario-rapido/">
-          <span class="nav-icon">▧</span><span>Caderno</span>
+          <span class="nav-icon">▧</span><span>Cola rápida</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_prescricao" ? "active" : ""}" href="/trabalho/prescricao/">
@@ -1279,14 +1279,6 @@ function sidebarMarkup(user, profile = null, isAdmin = false) {
 
         <a class="nav-link ${page === "trabalho_scores" ? "active" : ""}" href="/trabalho/scores/">
           <span class="nav-icon">#</span><span>Scores</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_paciente_temporario" ? "active" : ""}" href="/trabalho/paciente-temporario/">
-          <span class="nav-icon">◎</span><span>Paciente temporário</span>
-        </a>
-
-        <a class="nav-link ${page === "trabalho_procedimentos" ? "active" : ""}" href="/trabalho/procedimentos/">
-          <span class="nav-icon">✚</span><span>Procedimentos</span>
         </a>
 
         <a class="nav-link ${page === "trabalho_antimicrobianos" ? "active" : ""}" href="/trabalho/antimicrobianos/">
