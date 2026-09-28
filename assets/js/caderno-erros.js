@@ -4901,7 +4901,7 @@ function filteredHomeItems(){
 let errorSpotlightTimer=null,errorSpotlightIndex=0;
 function startErrorSpotlight(){
   const text=document.getElementById("error-cat-spotlight-text"),meta=document.getElementById("error-cat-spotlight-meta"),bar=document.getElementById("error-cat-timer-bar");if(!text)return;
-  const items=errorLibraryItems.filter(x=>x.ccq);if(!items.length){text.textContent="Seus melhores Pulos do Gato vão aparecer aqui.";if(meta)meta.textContent="Adicione erros ao caderno para começar.";return}
+  const items=(Array.isArray(errorLibraryItems)?errorLibraryItems:[]).filter(x=>String(x?.ccq||"").trim());if(!items.length){text.textContent="Nenhum Pulo do Gato disponível nesta conta.";if(meta)meta.textContent="Os Pulos aparecem quando seus erros carregarem.";return}
   const paint=()=>{const item=items[errorSpotlightIndex%items.length];text.classList.add("changing");setTimeout(()=>{text.textContent=item.ccq;meta.textContent=[item.area,item.materia||item.theme].filter(Boolean).join(" · ")||"Caderno de Erros";text.classList.remove("changing")},160);if(bar){bar.style.animation="none";void bar.offsetWidth;bar.style.animation="errorCatCountdown 15s linear forwards"};errorSpotlightIndex=(errorSpotlightIndex+1)%items.length};
   if(errorSpotlightTimer)clearInterval(errorSpotlightTimer);paint();if(items.length>1)errorSpotlightTimer=setInterval(paint,15000);
 }
@@ -5080,7 +5080,16 @@ async function loadErrorLibrary() {
   errorLibraryItems = Array.isArray(data) ? data : [];
   console.info("[Caderno de Erros] registros carregados:",errorLibraryItems.length);
   populateLibraryAreas();
-  renderErrorLibrary();
+  /* O Pulo do Gato não pode depender da renderização dos cadernos.
+     Pinta assim que a consulta termina, mesmo que algum card da biblioteca falhe. */
+  startErrorSpotlight();
+  renderErrorHomeExtras();
+  try {
+    renderErrorLibrary();
+  } catch (renderError) {
+    console.error("Falha ao renderizar biblioteca; mantendo Pulo do Gato disponível:",renderError);
+    setErrorLibraryStatus("Os dados foram carregados, mas houve uma falha ao montar os cadernos.","error");
+  }
 }
 
 
