@@ -71,6 +71,8 @@
     .pm-field input:focus,.pm-field select:focus,.pm-field textarea:focus,.pm-subfield input:focus,.pm-subfield select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft);background:var(--surface)}
     .pm-field select,.pm-subfield select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--accent) 50%),linear-gradient(135deg,var(--accent) 50%,transparent 50%);background-position:calc(100% - 18px) calc(50% - 2px),calc(100% - 13px) calc(50% - 2px);background-size:5px 5px,5px 5px;background-repeat:no-repeat;cursor:pointer}
     .pm-field textarea{min-height:88px;resize:vertical}
+    [data-other-field][hidden]{display:none!important}
+    [data-other-field]{margin-top:2px}
     .pm-section{padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}
     .pm-section-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
     .pm-section-head strong{font-size:13px}
@@ -234,11 +236,12 @@
           </div>
           <div class="pm-field">
             <label>Dieta</label>
-            <select name="diet">
+            <select name="diet" data-other-target="dietOther">
               <option value="">Não informada</option>
               <option>Livre</option><option>Branda</option><option>Pastosa</option><option>Líquida</option>
               <option>Enteral</option><option>Parenteral</option><option>Jejum</option><option>Outra</option>
             </select>
+            <input name="dietOther" data-other-field hidden placeholder="Qual outra dieta?">
           </div>
         </div>
 
@@ -273,7 +276,8 @@
           <div class="pm-conditional" data-conditional="isolation" hidden>
             <div class="pm-field">
               <label>Tipo</label>
-              <select name="isolationType"><option value="">Selecione</option><option>Contato</option><option>Gotículas</option><option>Aerossóis</option><option>Outro</option></select>
+              <select name="isolationType" data-other-target="isolationTypeOther"><option value="">Selecione</option><option>Contato</option><option>Gotículas</option><option>Aerossóis</option><option>Outro</option></select>
+              <input name="isolationTypeOther" data-other-field hidden placeholder="Qual outro tipo de isolamento?">
             </div>
           </div>
         </div>
@@ -480,6 +484,7 @@
       $$("[data-conditional]").forEach(x=>x.hidden=true);
       $$("[data-priority]").forEach(b=>b.classList.remove("active"));
       $("#pm-medications").innerHTML=""; $("#pm-antibiotics").innerHTML="";
+      syncAllOtherFields(form);
       $("#pm-patient-dialog-title").textContent="Novo paciente";
     }
     function setSwitch(name,val){
@@ -495,28 +500,54 @@
       const rm=e.target.closest(".pm-remove"); if(rm) rm.closest(".pm-med-row,.pm-antibiotic-row")?.remove();
     });
 
+    function syncOtherField(select){
+      const target=select?.dataset?.otherTarget;
+      if(!target) return;
+      const field=select.form?.elements?.[target] || document.querySelector('[name="'+target+'"]');
+      if(!field) return;
+      const show=/^outr[oa]$/i.test(String(select.value||"").trim());
+      field.hidden=!show;
+      field.required=false;
+      if(!show) field.value="";
+    }
+    function syncAllOtherFields(root=document){
+      $("select[data-other-target]",root).forEach(syncOtherField);
+    }
+    $("#pm-patient-form").addEventListener("change",e=>{
+      const sel=e.target.closest("select[data-other-target]");
+      if(sel) syncOtherField(sel);
+      const route=e.target.closest('select[data-k="route"]');
+      if(route){
+        const row=route.closest(".pm-med-row,.pm-antibiotic-row");
+        const other=row?.querySelector('[data-k="routeOther"]');
+        if(other){const show=route.value==="Outra";other.hidden=!show;if(!show)other.value="";}
+      }
+    });
+
     function addMedicationRow(v={}){
       const row=document.createElement("div"); row.className="pm-med-row"; row.innerHTML=`
         <div class="pm-subfield"><label>Medicamento</label><input data-k="name" value="${esc(v.name||"")}" placeholder="Ex.: furosemida"></div>
         <div class="pm-subfield"><label>Dose</label><input data-k="dose" value="${esc(v.dose||"")}" placeholder="40"></div>
         <div class="pm-subfield"><label>Unidade</label><select data-k="unit"><option></option><option>mg</option><option>g</option><option>mcg</option><option>UI</option><option>mL</option></select></div>
-        <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>SC</option><option>IN</option><option>Outra</option></select></div>
+        <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>SC</option><option>IN</option><option>Outra</option></select><input data-k="routeOther" value="${esc(v.routeOther||"")}" placeholder="Qual outra via?" hidden></div>
         <div class="pm-subfield"><label>Posologia</label><input data-k="schedule" value="${esc(v.schedule||"")}" placeholder="Ex.: 8/8h"></div>
         <button class="pm-remove" type="button" aria-label="Remover">×</button>`;
       $("#pm-medications").appendChild(row);
       row.querySelector('[data-k="unit"]').value=v.unit||""; row.querySelector('[data-k="route"]').value=v.route||"";
+      const medOther=row.querySelector('[data-k="routeOther"]'); if(medOther){medOther.hidden=(v.route!=="Outra");}
     }
     function addAntibioticRow(v={}){
       const row=document.createElement("div"); row.className="pm-antibiotic-row"; row.innerHTML=`
         <div class="pm-subfield"><label>Antibiótico</label><input data-k="name" value="${esc(v.name||"")}" placeholder="Ex.: ceftriaxona"></div>
         <div class="pm-subfield"><label>Dose</label><input data-k="dose" value="${esc(v.dose||"")}" placeholder="2"></div>
         <div class="pm-subfield"><label>Unidade</label><select data-k="unit"><option></option><option>mg</option><option>g</option><option>mcg</option><option>UI</option><option>mL</option></select></div>
-        <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>Outra</option></select></div>
+        <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>Outra</option></select><input data-k="routeOther" value="${esc(v.routeOther||"")}" placeholder="Qual outra via?" hidden></div>
         <div class="pm-subfield"><label>Posologia</label><input data-k="schedule" value="${esc(v.schedule||"")}" placeholder="Ex.: 1x/dia"></div>
         <div class="pm-subfield"><label>Dia</label><input data-k="day" value="${esc(v.day||"")}" placeholder="D2/7"></div>
         <button class="pm-remove" type="button" aria-label="Remover">×</button>`;
       $("#pm-antibiotics").appendChild(row);
       row.querySelector('[data-k="unit"]').value=v.unit||""; row.querySelector('[data-k="route"]').value=v.route||"";
+      const atbOther=row.querySelector('[data-k="routeOther"]'); if(atbOther){atbOther.hidden=(v.route!=="Outra");}
     }
     $("#pm-add-medication").addEventListener("click",()=>addMedicationRow());
     $("#pm-add-antibiotic").addEventListener("click",()=>addAntibioticRow());
@@ -529,7 +560,8 @@
     function fillPatient(p){
       resetPatientForm(); state.editingPatientId=p.id; $("#pm-patient-dialog-title").textContent="Editar paciente";
       const form=$("#pm-patient-form");
-      ["bed","name","age","admissionDate","diet","diagnosis","reason","history","allergiesDetail","isolationType","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+      syncAllOtherFields(form);
       Object.entries(p.switches||{}).forEach(([k,v])=>setSwitch(k,v));
       state.priority=p.priority||"none"; $$("[data-priority]").forEach(b=>b.classList.toggle("active",b.dataset.priority===state.priority));
       $("#pm-medications").innerHTML=""; (p.medications||[]).forEach(addMedicationRow);
@@ -547,7 +579,7 @@
       const form=e.currentTarget; if(!form.reportValidity()) return;
       const fd=new FormData(form);
       const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics")};
-      ["bed","name","age","admissionDate","diet","diagnosis","reason","history","allergiesDetail","isolationType","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
+      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
       const d=activeDeck(); if(!d) return;
       const idx=(d.patients||[]).findIndex(x=>x.id===p.id);
       if(idx>=0) d.patients[idx]=p; else d.patients.push(p);
