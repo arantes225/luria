@@ -6265,3 +6265,105 @@ body.plantao-module-entry .plantao-doctors-svg .face{
   stroke-linecap:round!important;
   stroke-linejoin:round!important;
 }
+
+
+/* === Sala de Emergência · single-sheet records + correct area v35 === */
+/* Remove completamente a pasta e a folha de trás: fica apenas a folha principal. */
+body.plantao-module-entry .plantao-record-folder{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  padding-top:28px!important;
+  background:transparent!important;
+  border:0!important;
+}
+body.plantao-module-entry .plantao-record-folder::before,
+body.plantao-module-entry .plantao-record-paper-back{
+  display:none!important;
+  content:none!important;
+}
+
+/* Um pouco mais de largura útil para área + dificuldade + tempo. */
+body.plantao-module-entry #plantao-case-grid{
+  grid-template-columns:repeat(3,minmax(250px,1fr))!important;
+  gap:16px!important;
+}
+body.plantao-module-entry .plantao-record-folder-tabs{
+  position:absolute!important;
+  top:0!important;
+  left:4px!important;
+  right:4px!important;
+  height:29px!important;
+  display:flex!important;
+  align-items:flex-end!important;
+  gap:5px!important;
+  z-index:3!important;
+}
+body.plantao-module-entry .plantao-record-folder-tab{
+  position:static!important;
+  flex:1 1 auto!important;
+  min-width:0!important;
+  max-width:none!important;
+  width:auto!important;
+  height:24px!important;
+  padding:0 9px!important;
+  border:1px solid var(--border)!important;
+  border-radius:7px 7px 0 0!important;
+  background:#fff!important;
+}
+body.plantao-module-entry .plantao-record-folder-tab span{
+  color:#111!important;
+  font-size:7.5px!important;
+  text-transform:none!important;
+  letter-spacing:.01em!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+}
+body.plantao-module-entry .plantao-record-paper-slip{
+  flex:0 0 auto!important;
+  height:21px!important;
+  padding:0 8px!important;
+  margin-bottom:0!important;
+  border-radius:7px 7px 0 0!important;
+}
+
+/* Folha única, um pouco mais larga e sem rotação de "papéis empilhados". */
+body.plantao-module-entry .plantao-record-paper{
+  width:100%!important;
+  min-height:0!important;
+  height:auto!important;
+  margin:0!important;
+  padding:14px 15px 13px!important;
+  transform:none!important;
+  border:1px solid var(--border)!important;
+  border-radius:0 0 12px 12px!important;
+  background:var(--surface)!important;
+  box-shadow:0 5px 14px rgba(18,48,82,.05)!important;
+}
+body.plantao-module-entry .plantao-case-record:hover .plantao-record-paper{
+  transform:translateY(-1px)!important;
+}
+
+@media(max-width:1180px){
+  body.plantao-module-entry #plantao-case-grid{
+    grid-template-columns:repeat(2,minmax(250px,1fr))!important;
+  }
+}
+@media(max-width:620px){
+  body.plantao-module-entry #plantao-case-grid{
+    grid-template-columns:1fr!important;
+  }
+  body.plantao-module-entry .plantao-record-folder-tabs{
+    left:2px!important;
+    right:2px!important;
+    gap:3px!important;
+  }
+  body.plantao-module-entry .plantao-record-folder-tab{
+    padding:0 6px!important;
+  }
+  body.plantao-module-entry .plantao-record-paper-slip{
+    padding:0 6px!important;
+  }
+}
