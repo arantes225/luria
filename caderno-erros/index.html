@@ -31,7 +31,7 @@
 
   <link
     rel="stylesheet"
-    href="assets/css/caderno-erros.css?v=18.8-review-home"
+    href="assets/css/caderno-erros.css?v=18.9-unified-nav"
   >
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -81,47 +81,7 @@
 
 
         <section class="error-home-head error-home-head-minimal">
-          <div class="error-main-tabs" aria-label="Caderno de Erros">
-            <button class="error-main-tab active" type="button" data-error-tab="review-home">Revisão</button>
-            <button class="error-main-tab" type="button" data-error-tab="library">Cadernos</button>
-          </div>
           <button class="button primary error-new-native" type="button" data-error-tab="create">＋ Novo erro</button>
-        </section>
-
-        <section class="error-review-home error-section active" data-error-section="review-home">
-          <div class="error-review-home-layout">
-            <div class="error-review-home-main">
-              <div class="error-review-home-heading">
-                <div><span class="badge accent">Revisão</span><h2>Seu Caderno de Erros</h2><p>Uma visão rápida do que você já registrou e do que vale revisar agora.</p></div>
-              </div>
-
-              <div class="error-review-home-dashboard">
-                <div class="error-review-home-metric"><span>Erros totais</span><strong id="error-review-home-total">0</strong><small>itens salvos</small></div>
-                <div class="error-review-home-metric"><span>Revisões</span><strong id="error-review-home-reviews">0</strong><small>vezes revisado</small></div>
-                <div class="error-review-home-metric"><span>Retenção</span><strong id="error-review-home-retention">—</strong><small>consolidação atual</small></div>
-              </div>
-
-              <div class="error-review-home-actions">
-                <div><h3>Hora de revisar?</h3><p>Continue pela fila de hoje ou monte uma revisão escolhendo seus próprios cadernos.</p></div>
-                <div class="error-review-home-buttons">
-                  <button id="error-review-home-now" class="button primary" type="button">▶ Revisar agora</button>
-                  <button id="error-review-home-create" class="button secondary" type="button">＋ Criar nova revisão</button>
-                </div>
-              </div>
-            </div>
-
-            <aside class="error-review-home-aside">
-              <section class="error-side-card error-quick-metrics">
-                <div class="error-side-head"><div><span>▥</span><h3>Métricas rápidas</h3></div></div>
-                <div id="error-review-home-quick-metrics" class="error-quick-metrics-body"></div>
-              </section>
-              <section class="error-side-card">
-                <div class="error-side-head"><div><span>↻</span><h3>Revisões de hoje</h3></div><span id="error-review-home-today-count" class="badge accent">0</span></div>
-                <p>Erros que precisam ser revistos agora.</p>
-                <div id="error-review-home-today-list" class="error-today-list"></div>
-              </section>
-            </aside>
-          </div>
         </section>
 
         <section class="panel error-create-panel error-section" data-error-section="create">
@@ -147,11 +107,19 @@
           <div class="error-cat-copy"><span class="error-cat-label">Destaque</span><strong id="error-cat-spotlight-text">Carregando seu Pulo do Gato...</strong><small id="error-cat-spotlight-meta">Uma ideia essencial para levar para a prova.</small></div>
           <div class="error-cat-timer"><span id="error-cat-timer-bar"></span></div>
         </section>
-        <section class="error-home-layout error-library-home-layout">
+
+        <section class="error-home-layout review-mode">
           <div class="error-home-main">
+            <div class="error-review-home-dashboard">
+              <div class="error-review-home-metric"><span>Erros totais</span><strong id="error-review-home-total">0</strong><small>itens salvos</small></div>
+              <div class="error-review-home-metric"><span>Revisões</span><strong id="error-review-home-reviews">0</strong><small>vezes revisado</small></div>
+              <div class="error-review-home-metric"><span>Retenção</span><strong id="error-review-home-retention">—</strong><small>consolidação atual</small></div>
+            </div>
+
             <div class="error-library-nav">
-              <div class="error-state-switch" aria-label="Estado dos erros">
-                <button class="active" type="button" data-error-state="all">Todos</button>
+              <div class="error-state-switch" aria-label="Visão do Caderno de Erros">
+                <button class="active" type="button" data-error-state="review-home">Revisão</button>
+                <button type="button" data-error-state="all">Todos</button>
                 <button type="button" data-error-state="review">A revisar</button>
                 <button type="button" data-error-state="consolidating">Em consolidação</button>
                 <button type="button" data-error-state="mastered">Dominados</button>
@@ -162,7 +130,17 @@
               </div>
             </div>
 
-            <section class="error-library-panel error-section active" data-error-section="library">
+            <div id="error-review-home-content" class="error-review-home-content">
+              <div class="error-review-home-actions">
+                <div><h3>Hora de revisar?</h3><p>Continue pela fila de hoje ou monte uma revisão escolhendo seus próprios cadernos.</p></div>
+                <div class="error-review-home-buttons">
+                  <button id="error-review-home-now" class="button primary" type="button">▶ Revisar agora</button>
+                  <button id="error-review-home-create" class="button secondary" type="button">＋ Criar nova revisão</button>
+                </div>
+              </div>
+            </div>
+
+            <section class="error-library-panel error-section active" data-error-section="library" hidden>
               <div class="error-library-title error-library-title-minimal"><span id="error-library-count" class="badge accent">—</span></div>
               <div id="error-library-bulk" class="error-library-bulk">
                 <label class="error-bulk-check"><input id="error-library-select-all" type="checkbox"><span>Selecionar visíveis</span></label>
@@ -176,7 +154,17 @@
             </section>
           </div>
 
-
+          <aside class="error-review-home-aside">
+            <section class="error-side-card error-quick-metrics">
+              <div class="error-side-head"><div><span>▥</span><h3>Métricas rápidas</h3></div></div>
+              <div id="error-review-home-quick-metrics" class="error-quick-metrics-body"></div>
+            </section>
+            <section class="error-side-card">
+              <div class="error-side-head"><div><span>↻</span><h3>Revisões de hoje</h3></div><span id="error-review-home-today-count" class="badge accent">0</span></div>
+              <p>Erros que precisam ser revistos agora.</p>
+              <div id="error-review-home-today-list" class="error-today-list"></div>
+            </section>
+          </aside>
         </section>
 
         <section class="error-review-panel error-section" data-error-section="review">
@@ -383,7 +371,7 @@
   <script src="/assets/js/study-mode.js?v=13.0"></script>
 
   <script src="/assets/js/medical-icons.js?v=1.0"></script>
-  <script src="/assets/js/caderno-erros.js?v=18.8-review-home"></script>
+  <script src="/assets/js/caderno-erros.js?v=18.9-unified-nav"></script>
 
     <script src="/assets/js/image-lightbox.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
