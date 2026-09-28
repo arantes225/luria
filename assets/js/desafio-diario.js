@@ -4,22 +4,26 @@
   let challenge = null;
   let progress = null;
   let user = null;
+  let startedAt = Date.now();
 
   const els = {
     loading: document.getElementById("daily-loading"),
     unavailable: document.getElementById("daily-unavailable"),
-    card: document.getElementById("daily-card"),
+    content: document.getElementById("daily-content"),
     area: document.getElementById("daily-area"),
-    number: document.getElementById("daily-number"),
-    date: document.getElementById("daily-date"),
-    progressLabel: document.getElementById("daily-progress-label"),
-    pointsLive: document.getElementById("daily-points-live"),
-    dots: [...document.querySelectorAll("#daily-progress-dots span")],
+    heroDate: document.getElementById("daily-hero-date"),
+    steps: [...document.querySelectorAll("#daily-stepper .daily-step")],
     clues: document.getElementById("daily-clues"),
     feedback: document.getElementById("daily-feedback"),
     form: document.getElementById("daily-form"),
     answer: document.getElementById("daily-answer"),
     submit: document.getElementById("daily-submit"),
+    ring: document.getElementById("daily-ring"),
+    ringValue: document.getElementById("daily-ring-value"),
+    visibleCount: document.getElementById("daily-visible-count"),
+    time: document.getElementById("daily-time"),
+    attempts: document.getElementById("daily-attempts"),
+    recent: document.getElementById("daily-recent-list"),
     result: document.getElementById("daily-result"),
     resultIcon: document.getElementById("daily-result-icon"),
     resultKicker: document.getElementById("daily-result-kicker"),
@@ -38,10 +42,11 @@
     return value.year + "-" + value.month + "-" + value.day;
   }
 
-  function formatDate(iso) {
+  function formatDate(iso, withWeekday = false) {
     const [y,m,d] = iso.split("-").map(Number);
     return new Intl.DateTimeFormat("pt-BR", {
-      weekday: "long", day: "2-digit", month: "long"
+      ...(withWeekday ? { weekday: "long" } : {}),
+      day: "2-digit", month: "long", year: "numeric"
     }).format(new Date(y, m - 1, d));
   }
 
@@ -66,46 +71,98 @@
     return Math.max(1, Math.min(5, Number(progress?.revealed_clues || 1)));
   }
 
+  function renderSummary() {
+    const visible = clueCount();
+    const pct = Math.round((visible / 5) * 100);
+    els.ring?.style.setProperty("--ring", pct + "%");
+    if (els.ringValue) els.ringValue.textContent = visible + "/5";
+    if (els.visibleCount) els.visibleCount.textContent = visible + " / 5";
+    if (els.attempts) els.attempts.textContent = String(progress?.attempts || 0);
+  }
+
   function renderClues() {
-    const answeredAt = clueCount();
+    const unlocked = clueCount();
     const won = progress?.status === "won";
-    const visible = won ? Math.min(5, answeredAt + 2) : answeredAt;
 
-    els.clues.innerHTML = Array.from({length: visible}, (_, i) => {
+    els.clues.innerHTML = Array.from({length: 5}, (_, i) => {
       const n = i + 1;
-      const text = challenge["clue_" + n] || "";
-      const classes = ["daily-clue"];
-      if (won && n === answeredAt) classes.push("is-correct");
-      else if (!won && n === visible) classes.push("is-current");
-      else if (won && n > answeredAt) classes.push("is-post-win");
-
-      return '<div class="' + classes.join(" ") + '">' +
-        '<span class="daily-clue-icon" aria-hidden="true">⌁</span>' +
-        '<div class="daily-clue-copy">' +
-          '<strong>Pista ' + n + ' de 5</strong>' +
-          '<p>' + esc(text) + '</p>' +
+      const isUnlocked = n <= unlocked || won;
+      if (!isUnlocked) {
+        return '<div class="daily-clue is-locked"><div class="daily-clue-inner">' +
+          '<span class="daily-clue-icon" aria-hidden="true">▣</span>' +
+          '<div class="daily-clue-copy"><strong>Pista ' + n + '</strong></div>' +
+          '<span class="daily-clue-locknote">Desbloqueie após responder a pista ' + (n - 1) + '</span>' +
         '</div></div>';
+      }
+
+      const classes = ["daily-clue","is-unlocked"];
+      if (!won && n === unlocked) classes.push("is-current");
+      if (won && n === unlocked) classes.push("is-correct");
+      const text = challenge["clue_" + n] || "";
+
+      return '<div class="' + classes.join(" ") + '"><div class="daily-clue-inner">' +
+        '<span class="daily-clue-icon" aria-hidden="true">◉</span>' +
+        '<div class="daily-clue-copy"><strong>Pista ' + n + '</strong><p>' + esc(text) + '</p></div>' +
+      '</div></div>';
     }).join("");
 
-    els.dots.forEach((dot, i) => {
-      dot.classList.toggle("is-visible", i < visible);
-      dot.classList.toggle("is-current", !won && i === visible - 1);
-      dot.classList.toggle("is-correct", won && i === answeredAt - 1);
+    els.steps.forEach((step, i) => {
+      const n = i + 1;
+      step.classList.toggle("is-visible", n < unlocked);
+      step.classList.toggle("is-current", n === unlocked && !won);
+      step.classList.toggle("is-complete", won && n <= unlocked);
     });
-
-    els.progressLabel.textContent = won
-      ? "Acertou na pista " + answeredAt
-      : "Pista " + visible + " de 5";
-    const nextValue = points[Math.min(4, Number(progress?.attempts || 0))];
-    els.pointsLive.textContent = progress?.status === "in_progress" || !progress
-      ? "Vale " + nextValue + " pontos"
-      : "Desafio concluído";
+    renderSummary();
   }
 
   function renderHeader() {
     els.area.textContent = challenge.area || "Desafio clínico";
-    els.number.textContent = "#" + String(challenge.id).padStart(3, "0");
-    els.date.textContent = formatDate(challenge.challenge_date);
+    els.heroDate.textContent = formatDate(challenge.challenge_date, false);
+  }
+
+  function startTimer() {
+    startedAt = Date.now();
+    const tick = () => {
+      if (!els.time) return;
+      const min = Math.max(0, Math.floor((Date.now() - startedAt) / 60000));
+      els.time.textContent = min + " min";
+    };
+    tick();
+    window.setInterval(tick, 30000);
+  }
+
+  async function loadRecent() {
+    try {
+      const { data: rows, error } = await sb
+        .from("daily_challenge_progress")
+        .select("challenge_id,status,completed_at,updated_at")
+        .eq("user_id", user.id)
+        .in("status", ["won","lost"])
+        .order("updated_at", { ascending: false })
+        .limit(5);
+      if (error || !rows?.length) return;
+
+      const ids = rows.map(r => r.challenge_id);
+      const { data: challenges, error: challengeError } = await sb
+        .from("daily_challenges")
+        .select("id,challenge_date,area")
+        .in("id", ids);
+      if (challengeError) return;
+
+      const byId = Object.fromEntries((challenges || []).map(c => [String(c.id), c]));
+      els.recent.innerHTML = rows.map(row => {
+        const c = byId[String(row.challenge_id)];
+        if (!c) return "";
+        const lost = row.status === "lost";
+        return '<div class="daily-recent-item">' +
+          '<span class="daily-recent-cal">▣</span>' +
+          '<div class="daily-recent-copy"><strong>' + esc(formatDate(c.challenge_date)) + '</strong><small>' + esc(c.area || "") + '</small></div>' +
+          '<span class="daily-recent-status' + (lost ? ' is-lost' : '') + '">' + (lost ? '×' : '✓') + '</span>' +
+        '</div>';
+      }).join("") || '<div class="daily-recent-empty">Nenhum desafio concluído ainda.</div>';
+    } catch (error) {
+      console.warn("Histórico do desafio:", error);
+    }
   }
 
   async function showResult(result) {
@@ -118,12 +175,14 @@
     els.explanation.textContent = result.explanation || "";
     els.finalScore.textContent = String(result.score || 0);
     els.finalAttempts.textContent = String(result.attempts || 0);
-    els.pointsLive.textContent = "Desafio concluído";
     if (result.status === "won") {
       renderClues();
       showFeedback("Acertou! Desafio concluído.", "ok");
+    } else {
+      renderClues();
+      showFeedback("As cinco pistas foram usadas. Confira o diagnóstico abaixo.", "error");
     }
-    else showFeedback("As cinco pistas foram usadas. Confira o diagnóstico abaixo.", "error");
+    await loadRecent();
   }
 
   async function loadTerminalResult() {
@@ -186,7 +245,9 @@
 
       renderHeader();
       renderClues();
-      els.card.hidden = false;
+      els.content.hidden = false;
+      startTimer();
+      loadRecent();
 
       if (progress.status === "won" || progress.status === "lost") {
         await loadTerminalResult();
@@ -238,7 +299,8 @@
         els.answer.disabled = false;
         els.submit.disabled = false;
         requestAnimationFrame(() => {
-          els.clues.lastElementChild?.scrollIntoView({behavior:"smooth", block:"nearest"});
+          const current = els.clues.querySelector(".daily-clue.is-current");
+          current?.scrollIntoView({behavior:"smooth", block:"nearest"});
           els.answer.focus();
         });
       }
