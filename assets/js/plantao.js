@@ -467,6 +467,55 @@
     if(sessionEl) sessionEl.textContent=state.sessions.length;
     if(visibleCount) visibleCount.textContent=visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
 
+    const sideCaseCount=$("plantao-side-case-count");
+    const sideActiveCount=$("plantao-side-active-count");
+    const sideAverageTime=$("plantao-side-average-time");
+    const sideCompletionRate=$("plantao-side-completion-rate");
+    if(sideCaseCount) sideCaseCount.textContent=state.cases.length;
+    if(sideActiveCount) sideActiveCount.textContent=state.activeSession ? "1" : "0";
+
+    const completedSessions=state.sessions.filter(x=>x.status==="completed");
+    const avgMinutes=completedSessions.length
+      ? Math.round(completedSessions.reduce((sum,x)=>sum+Number(x.elapsed_minutes||0),0)/completedSessions.length)
+      : 0;
+    if(sideAverageTime) sideAverageTime.textContent=(avgMinutes||20)+" min";
+
+    const attemptedCaseIds=new Set([
+      ...completedSessions.map(x=>String(x.case_id)),
+      ...(state.activeSession?.case_id ? [String(state.activeSession.case_id)] : [])
+    ]);
+    const completionRate=attemptedCaseIds.size
+      ? Math.round((new Set(completedSessions.map(x=>String(x.case_id))).size/attemptedCaseIds.size)*100)
+      : 0;
+    if(sideCompletionRate) sideCompletionRate.textContent=completionRate+"%";
+
+    const normalizeDifficulty=(value)=>{
+      const text=normalizeLabel(value||"");
+      if(text.includes("facil") || text.includes("bas")) return "basic";
+      if(text.includes("avan") || text.includes("dific")) return "advanced";
+      return "intermediate";
+    };
+    const difficultyCounts=state.cases.reduce((acc,item)=>{
+      acc[normalizeDifficulty(item.difficulty)]++;
+      return acc;
+    },{basic:0,intermediate:0,advanced:0});
+    const totalDifficulty=Math.max(1,state.cases.length);
+    const basicPct=(difficultyCounts.basic/totalDifficulty)*100;
+    const intermediatePct=(difficultyCounts.intermediate/totalDifficulty)*100;
+    const donut=$("plantao-difficulty-donut");
+    if(donut){
+      donut.style.setProperty("--diff-basic",basicPct.toFixed(2)+"%");
+      donut.style.setProperty("--diff-intermediate",intermediatePct.toFixed(2)+"%");
+    }
+    const diffTotal=$("plantao-difficulty-total");
+    const diffBasic=$("plantao-diff-basic");
+    const diffIntermediate=$("plantao-diff-intermediate");
+    const diffAdvanced=$("plantao-diff-advanced");
+    if(diffTotal) diffTotal.textContent=state.cases.length;
+    if(diffBasic) diffBasic.textContent=difficultyCounts.basic;
+    if(diffIntermediate) diffIntermediate.textContent=difficultyCounts.intermediate;
+    if(diffAdvanced) diffAdvanced.textContent=difficultyCounts.advanced;
+
     const chips=$("plantao-specialty-chips");
     if(chips){
       const preferred=[
