@@ -6052,3 +6052,80 @@ html[data-theme="leila-mood"] body.plantao-module-entry .plantao-featured-case{
     opacity:.28;
   }
 }
+
+
+/* === Sala de Emergência · force native topbar controls v29 === */
+/* Sobrescreve o legado "reference exact" que escondia a topbar por alta especificidade. */
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  align-items:flex-start!important;
+  width:100%!important;
+  min-height:60px!important;
+  margin:0 0 16px!important;
+  padding:0!important;
+  position:relative!important;
+  z-index:2147482000!important;
+  overflow:visible!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .page-heading{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  min-width:0!important;
+}
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .page-heading .eyebrow{
+  display:block!important;
+  color:var(--muted)!important;
+  font-size:12px!important;
+  font-weight:750!important;
+  line-height:1.1!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+}
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .page-heading h1{
+  display:block!important;
+  margin:3px 0 0!important;
+  color:var(--text)!important;
+  font-size:clamp(24px,4vw,32px)!important;
+  line-height:1.12!important;
+}
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar #luria-notifications,
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-notifications{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  align-items:center!important;
+  gap:10px!important;
+  margin-left:auto!important;
+  align-self:flex-start!important;
+  top:0!important;
+}
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-pomodoro-top,
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-notification-toggle,
+body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-profile-top{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+/* Mantém os menus do timer, sino e perfil acima do card de destaque. */
+body.plantao-module-entry .luria-pomodoro-panel,
+body.plantao-module-entry .luria-notification-panel,
+body.plantao-module-entry .luria-profile-menu{
+  z-index:2147483000!important;
+}
+
+@media(max-width:980px){
+  body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar{
+    min-height:54px!important;
+    align-items:center!important;
+  }
+  body.plantao-module-entry>.app-shell>.main>.plantao-page>header.topbar.plantao-standard-topbar .luria-notifications{
+    align-self:center!important;
+  }
+}
