@@ -31,7 +31,7 @@
 
   <link
     rel="stylesheet"
-    href="assets/css/caderno-erros.css?v=18.9-unified-nav"
+    href="assets/css/caderno-erros.css?v=18.10-review-order"
   >
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -110,12 +110,6 @@
 
         <section class="error-home-layout review-mode">
           <div class="error-home-main">
-            <div class="error-review-home-dashboard">
-              <div class="error-review-home-metric"><span>Erros totais</span><strong id="error-review-home-total">0</strong><small>itens salvos</small></div>
-              <div class="error-review-home-metric"><span>Revisões</span><strong id="error-review-home-reviews">0</strong><small>vezes revisado</small></div>
-              <div class="error-review-home-metric"><span>Retenção</span><strong id="error-review-home-retention">—</strong><small>consolidação atual</small></div>
-            </div>
-
             <div class="error-library-nav">
               <div class="error-state-switch" aria-label="Visão do Caderno de Erros">
                 <button class="active" type="button" data-error-state="review-home">Revisão</button>
@@ -128,6 +122,12 @@
                 <div class="error-library-field error-library-area-field"><span>Área</span><div class="error-library-area-picker"><button id="error-library-area-toggle" class="error-library-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="error-library-area-label">Todas as áreas</span><span class="error-library-area-chevron" aria-hidden="true">⌄</span></button><div id="error-library-area-menu" class="error-library-area-menu" role="listbox" hidden></div><select id="error-library-area" class="error-library-area-native" data-luria-general-area-select data-blank-label="Todas as áreas" tabindex="-1" aria-hidden="true"><option value="">Todas as áreas</option></select></div></div>
                 <label class="error-library-field error-library-search"><span>Buscar</span><input id="error-library-search" type="search" placeholder="Buscar no caderno..."></label>
               </div>
+            </div>
+
+            <div class="error-review-home-dashboard">
+              <div class="error-review-home-metric"><span>Erros totais</span><strong id="error-review-home-total">0</strong><small>itens salvos</small></div>
+              <div class="error-review-home-metric"><span>Revisões</span><strong id="error-review-home-reviews">0</strong><small>vezes revisado</small></div>
+              <div class="error-review-home-metric"><span>Retenção</span><strong id="error-review-home-retention">—</strong><small>consolidação atual</small></div>
             </div>
 
             <div id="error-review-home-content" class="error-review-home-content">
