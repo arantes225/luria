@@ -19,6 +19,9 @@
     .bulario-count{font-size:13px;color:var(--muted)}.drug-list{display:grid;gap:8px}
     .drug{padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
     .drug b{display:block;margin-bottom:4px}.drug small{color:var(--muted);line-height:1.4}
+    .drug details{margin-top:10px}.drug summary{cursor:pointer;color:var(--accent);font-weight:700}
+    .drug p{margin:9px 0;line-height:1.5}.drug a{color:var(--accent);font-weight:700}
+    .drug .pending{font-size:13px;color:var(--muted)}
     .empty{padding:20px;border:1px dashed var(--border);border-radius:14px;color:var(--muted)}
   </style>
 </head>
@@ -49,9 +52,9 @@
   <script>
     (()=>{const q=document.getElementById('drug-search'),box=document.getElementById('drug-list'),count=document.getElementById('drug-count');let rows=[];
     const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-    const draw=()=>{const t=q.value.trim().toLowerCase(),r=t?rows.filter(x=>[x.name,x.active_ingredient,x.therapeutic_class,x.pharmacological_class].some(v=>v&&v.toLowerCase().includes(t))):rows;count.textContent=`${r.length} medicamento${r.length===1?'':'s'}`;box.innerHTML=r.length?r.map(x=>`<article class="drug"><b>${esc(x.name)}</b><small>${esc(x.active_ingredient||'Princípio ativo pendente')} · ${esc(x.pharmacological_class||'Sem classe farmacológica')}<br>${esc(x.therapeutic_class||'Sem classe terapêutica')}</small></article>`).join(''):'<div class="empty">Nenhum medicamento encontrado.</div>'};
+    const draw=()=>{const t=q.value.trim().toLowerCase(),r=t?rows.filter(x=>[x.name,x.active_ingredient,x.therapeutic_class,x.pharmacological_class].some(v=>v&&v.toLowerCase().includes(t))):rows;count.textContent=`${r.length} medicamento${r.length===1?'':'s'}`;box.innerHTML=r.length?r.map(x=>{const d=x.data||{},verified=d.status==='verified'&&/^https:\/\/consultaremedios\.com\.br\/[\w-]+\/bula$/.test(d.leaflet_url||'');return `<article class="drug"><b>${esc(x.name)}</b><small>${esc(x.active_ingredient||'Princípio ativo a confirmar')} · ${esc(x.pharmacological_class||'Classe a confirmar')}<br>${esc(x.therapeutic_class||'Classe terapêutica a confirmar')}</small>${verified?`<details><summary>Ver informações da bula</summary><p><strong>Indicação:</strong> ${esc(d.indication)}</p><p><strong>Apresentação:</strong> ${esc(d.presentation)}</p><a href="${esc(d.leaflet_url)}" target="_blank" rel="noopener noreferrer">Consultar bula do produto ↗</a><p class="pending">Resumo conferido em ${esc(d.reviewed_at)}. Dose, contraindicações e receita dependem da apresentação; consulte a bula completa.</p></details>`:`<p class="pending">Bula deste produto ainda não conferida. <a href="https://consultas.anvisa.gov.br/#/bulario/" target="_blank" rel="noopener noreferrer">Pesquisar na Anvisa ↗</a></p>`}</article>`}).join(''):'<div class="empty">Nenhum medicamento encontrado.</div>'};
     q.addEventListener('input',draw);
-    (async()=>{const {data,error}=await window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class').order('name');if(error){box.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';count.textContent='';return}rows=data||[];draw()})()})();
+    (async()=>{const {data,error}=await window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000);if(error){box.innerHTML='<div class="empty">Não foi possível carregar o Bulário.</div>';count.textContent='';return}rows=data||[];draw()})()})();
   </script>
 </body>
 </html>
