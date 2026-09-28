@@ -833,3 +833,73 @@ body:not(.flash-v21-booting) [data-flash-section]{transition:opacity .12s ease}
     text-align:left!important;
   }
 }
+
+
+/* v32 — topo de Revisar no padrão visual do Caderno de Erros */
+body[data-page="flashcards"] .review-launcher{
+  min-height:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+  gap:12px!important;
+  padding:16px!important;
+  border:1px solid var(--border)!important;
+  border-radius:14px!important;
+  background:var(--surface)!important;
+  box-shadow:0 8px 22px rgba(22,56,92,.04)!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher-copy{
+  width:100%!important;
+  display:grid!important;
+  justify-items:start!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher-copy .eyebrow,
+body[data-page="flashcards"] .review-launcher-copy h3,
+body[data-page="flashcards"] .review-launcher-copy p{
+  text-align:left!important;
+  justify-self:start!important;
+}
+
+body[data-page="flashcards"] .review-launcher-copy h3{
+  margin:4px 0 3px!important;
+  font-size:22px!important;
+  letter-spacing:-.02em!important;
+}
+
+body[data-page="flashcards"] .review-launcher-copy p{
+  margin:0!important;
+  color:var(--muted)!important;
+  font-size:9px!important;
+}
+
+body[data-page="flashcards"] .review-launcher-action{
+  width:100%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:12px!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher-action strong{
+  font-size:13px!important;
+  color:var(--text)!important;
+  text-align:left!important;
+}
+
+body[data-page="flashcards"] .review-launcher-action .button{
+  min-height:36px!important;
+  padding:0 13px!important;
+  border-radius:9px!important;
+}
+
+:root[data-theme="dark"] body[data-page="flashcards"] .review-launcher,
+:root[data-theme="leila-mood"] body[data-page="flashcards"] .review-launcher{
+  background:var(--surface)!important;
+  border-color:var(--border)!important;
+}
