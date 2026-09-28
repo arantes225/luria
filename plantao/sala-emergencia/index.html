@@ -311,7 +311,45 @@
 
           </article>
 
-          <div class="plantao-bedside">
+          <section id="plantao-disaster-stage" class="plantao-disaster-stage" hidden aria-label="Simulação de desastre com múltiplas vítimas">
+            <div class="plantao-disaster-hero">
+              <img id="plantao-disaster-image" alt="Cena simulada de desastre com múltiplas vítimas">
+              <div class="plantao-disaster-hero-overlay">
+                <span class="plantao-disaster-kicker">INCIDENTE COM MÚLTIPLAS VÍTIMAS</span>
+                <h2 id="plantao-disaster-title">Cena de desastre</h2>
+                <p id="plantao-disaster-briefing"></p>
+                <div id="plantao-disaster-hazards" class="plantao-disaster-hazards"></div>
+              </div>
+            </div>
+
+            <div class="plantao-disaster-dashboard">
+              <aside class="plantao-disaster-command panel">
+                <div class="plantao-section-head"><div><span class="metric-label">Comando da cena</span><h2>Primeiras decisões</h2></div></div>
+                <div id="plantao-disaster-resources" class="plantao-disaster-resources"></div>
+                <div id="plantao-disaster-command-actions" class="plantao-disaster-command-actions"></div>
+                <div class="plantao-disaster-phase">
+                  <span>Fase atual</span>
+                  <strong id="plantao-disaster-phase">Reconhecimento da cena</strong>
+                </div>
+              </aside>
+
+              <section class="plantao-disaster-victim-zone panel">
+                <div class="plantao-section-head plantao-disaster-victim-head">
+                  <div><span class="metric-label">Triagem</span><h2>Vítimas na cena</h2></div>
+                  <div id="plantao-disaster-summary" class="plantao-disaster-summary"></div>
+                </div>
+                <div id="plantao-disaster-victims" class="plantao-disaster-victims"></div>
+              </section>
+
+              <aside class="plantao-disaster-live panel">
+                <div class="plantao-section-head"><div><span class="metric-label">Ocorrência</span><h2>Rádio / evolução</h2></div></div>
+                <div id="plantao-disaster-feed" class="plantao-disaster-feed"></div>
+                <button id="plantao-disaster-finish" class="button primary" type="button">Encerrar operação</button>
+              </aside>
+            </div>
+          </section>
+
+          <div id="plantao-standard-bedside" class="plantao-bedside">
             <aside class="plantao-action-rail" aria-label="Menu clínico">
               <div id="plantao-score-live" class="plantao-score-live" aria-live="polite">0/100</div>
               <button id="plantao-pwa-patient-tab" class="plantao-pwa-patient-tab" type="button" aria-haspopup="dialog" aria-controls="plantao-patient-sheet" aria-expanded="false"><span>●</span><strong>Paciente</strong></button>
