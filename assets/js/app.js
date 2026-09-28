@@ -3138,6 +3138,12 @@ function prepararSidebarDesktop(
       ) === "1";
   } catch {}
 
+  if (
+    document.body?.dataset?.plantaoEntry === "emergency"
+  ) {
+    initial = true;
+  }
+
 
   apply(
     initial
