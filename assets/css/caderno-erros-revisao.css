@@ -268,3 +268,26 @@ body.theme-leila-mood .error-review-cat-logo-pinktheme{
   font-weight:900;
   line-height:1;
 }
+
+
+/* v7 — resultado leve: apenas acerto/erro */
+.error-review-result-actions{
+  margin-top:14px;
+  padding-top:12px;
+  border-top:1px solid var(--border);
+}
+.error-review-result-actions>span{
+  display:block;
+  margin-bottom:8px;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:800;
+}
+.error-review-result-actions>div{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+.error-review-result-actions .button{
+  min-height:40px;
+}
