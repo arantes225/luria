@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Plantão · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=4">
+  <link rel="apple-touch-icon" href="/assets/img/logos/logo-icone-original.png?v=pwa4">
+  <meta name="theme-color" content="#0A2342">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="LURIA">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260927-luriazap-dark-polish">
+  <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
+  <link rel="canonical" href="/plantao/luriazap/">
+  <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
+  <script>(function(){try{if(location.pathname.endsWith("/plantao.html"))history.replaceState(null,"","/plantao/"+location.search+location.hash);}catch(e){}})();</script>
+  <style>
+    .plantao-module-entry .plantao-mode-menu{display:none!important}
+    .plantao-module-back{display:inline-flex;align-items:center;gap:7px;margin:0 0 12px;padding:8px 11px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font-size:9px;font-weight:800;text-decoration:none}
+    .plantao-module-back:hover{background:var(--surface-2)}
+  </style>
+</head>
+<body data-page="plantao" data-plantao-entry="phone" class="plantao-module-entry">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page plantao-page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+
+        <a class="plantao-module-back" href="/plantao/">← Voltar ao Simulador</a>
+
+        <section id="plantao-library" class="plantao-library">
+          <article class="plantao-hero panel">
+            <div>
+              <span class="badge accent">Simulação clínica</span>
+              <h2>Entre no caso com informação limitada e decida o que fazer.</h2>
+              <p>Peça exames, explore a anamnese, examine o paciente, trate e reavalie. O tempo corre dentro do caso e algumas decisões mudam a evolução clínica. Uso exclusivamente educacional; não é ferramenta assistencial.</p>
+            </div>
+            <div class="plantao-hero-meta">
+              <span><strong id="plantao-case-count">—</strong> casos ativos</span>
+              <span><strong id="plantao-session-count">—</strong> tentativas</span>
+            </div>
+          </article>
+          <nav class="plantao-mode-menu" aria-label="Modos do Plantão">
+            <button id="plantao-emergency-mode-card" class="plantao-mode-card active" type="button" aria-current="page">
+              <span class="plantao-mode-icon" aria-hidden="true"><img class="plantao-mode-logo plantao-mode-logo-light" src="assets/img/plantao/logo-sala-emergencia-light.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-dark" src="assets/img/plantao/logo-sala-emergencia-dark.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-pink" src="assets/img/plantao/logo-sala-emergencia-pink.webp?v=2" alt=""></span>
+              <span class="plantao-mode-copy">
+                <strong>Sala de emergência</strong>
+                <small>Casos clínicos interativos</small>
+              </span>
+            </button>
+            <button id="plantao-phone-mode-card" class="plantao-mode-card" type="button" hidden>
+              <span class="plantao-mode-icon" aria-hidden="true"><img class="plantao-mode-logo plantao-mode-logo-light" src="assets/img/plantao/logo-luriazap-light.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-dark" src="assets/img/plantao/logo-luriazap-dark.webp?v=2" alt=""><img class="plantao-mode-logo plantao-mode-logo-pink" src="assets/img/plantao/logo-luriazap-pink.webp?v=2" alt=""></span>
+              <span class="plantao-mode-copy">
+                <strong>LuriaZap</strong>
+                <small>Conversas e condutas</small>
+              </span>
+            </button>
+          </nav>
+          <div id="plantao-emergency-panel">
+          <div id="plantao-emergencia" class="plantao-library-head">
+            <div class="plantao-library-title-row">
+              <h2>Sala de emergência</h2>
+              <div class="plantao-filter-menu">
+                <button id="plantao-filter-menu-toggle" class="plantao-filter-menu-toggle" type="button" aria-label="Filtrar casos" aria-expanded="false" aria-controls="plantao-emergency-filters">
+                  <svg class="plantao-filter-icon" aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M4 6h16M7 12h10M10 18h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div id="plantao-emergency-filters" class="plantao-filters plantao-filter-popover" aria-label="Filtros dos casos" hidden>
+                  <div class="plantao-site-filter">
+                    <span class="plantao-filter-label">Especialidade</span>
+                    <div class="plantao-site-select" data-plantao-filter="specialty">
+                      <button id="plantao-filter-specialty-button" class="plantao-site-select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                        <span id="plantao-filter-specialty-label">Todas</span><span aria-hidden="true">⌄</span>
+                      </button>
+                      <div id="plantao-filter-specialty-list" class="plantao-site-select-list" role="listbox" hidden></div>
+                    </div>
+                  </div>
+                  <div class="plantao-site-filter">
+                    <span class="plantao-filter-label">Dificuldade</span>
+                    <div class="plantao-site-select" data-plantao-filter="difficulty">
+                      <button id="plantao-filter-difficulty-button" class="plantao-site-select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                        <span id="plantao-filter-difficulty-label">Todas</span><span aria-hidden="true">⌄</span>
+                      </button>
+                      <div id="plantao-filter-difficulty-list" class="plantao-site-select-list" role="listbox" hidden></div>
+                    </div>
+                  </div>
+                  <button id="plantao-filter-clear" class="button secondary" type="button">Limpar filtros</button>
+                </div>
+              </div>
+            </div>
+            <button id="plantao-random-case" class="button primary plantao-random-case" type="button">Iniciar aleatório</button>
+          </div>
+          <div id="plantao-case-grid" class="plantao-case-grid" aria-live="polite"></div>
+          <div id="plantao-empty" class="placeholder" hidden>Nenhum caso clínico disponível.</div>
+          </div>
+          <article id="plantao-telefone" class="plantao-phone-preview" hidden aria-labelledby="plantao-phone-title">
+            <div class="plantao-phone-layout">
+              <button id="plantao-phone-page-back" class="plantao-phone-page-back" type="button" aria-label="Voltar para o Plantão">← Voltar</button>
+              <div class="plantao-phone-station">
+              <div class="plantao-phone-device" aria-label="Telefone de interconsultas">
+                <div class="plantao-phone-notch" aria-hidden="true"></div>
+                <div class="plantao-phone-statusbar" aria-hidden="true">
+                  <strong id="plantao-phone-status-time">--:--</strong>
+                  <div class="plantao-phone-status-icons">
+                    <span class="plantao-phone-signal"><i></i><i></i><i></i><i></i></span>
+                    <span class="plantao-phone-wifi"><i></i></span>
+                    <span class="plantao-phone-battery"><i></i></span>
+                  </div>
+                </div>
+                <div class="plantao-phone-screen">
+                  <section id="plantao-phone-inbox" class="plantao-phone-inbox">
+                    <header class="plantao-phone-chat-head plantao-phone-inbox-head">
+                      <button id="plantao-phone-exit" type="button" aria-label="Voltar para o Plantão">‹</button>
+                      <div class="plantao-phone-brand" aria-label="LuriaZap">
+                        <span class="plantao-phone-brand-symbol" aria-hidden="true">
+                          <img class="plantao-phone-brand-logo plantao-phone-brand-logo-light" src="assets/img/logos/logo-icone-original.png?v=luriazap1" alt="">
+                          <img class="plantao-phone-brand-logo plantao-phone-brand-logo-dark" src="assets/img/logos/logo-icone-azul-claro.png?v=luriazap1" alt="">
+                          <img class="plantao-phone-brand-logo plantao-phone-brand-logo-pink" src="assets/img/logos/logo-icone-rosa-escuro.png?v=luriazap1" alt="">
+                        </span>
+                        <strong id="plantao-phone-title" class="plantao-phone-brand-name">LuriaZap</strong>
+                      </div>
+                      <div class="plantao-phone-inbox-actions">
+                        <button id="plantao-phone-search-toggle" type="button" aria-label="Pesquisar conversas" aria-expanded="false">⌕</button>
+                        
+                      </div>
+                    </header>
+                    <div id="plantao-phone-search-wrap" class="plantao-phone-search-wrap" hidden>
+                      <span aria-hidden="true">⌕</span>
+                      <input id="plantao-phone-search" type="search" placeholder="Pesquisar conversas" autocomplete="off" aria-label="Pesquisar conversas">
+                      <button id="plantao-phone-search-close" type="button" aria-label="Fechar pesquisa">×</button>
+                    </div>
+                    <div class="plantao-phone-inbox-toolbar">
+                      <strong>Conversas</strong>
+                      <small>Escolha uma interconsulta para atender</small>
+                    </div>
+                    <div id="plantao-phone-case-list" class="plantao-phone-case-list" aria-live="polite"></div>
+                    <button id="plantao-phone-new-chat" class="plantao-phone-new-chat-fab" type="button" aria-label="Criar nova aula com IA" title="Criar nova aula com IA">+</button>
+                  </section>
+
+                  <section id="plantao-phone-station" class="plantao-phone-chat-view" hidden>
+                    <header class="plantao-phone-chat-head">
+                      <button id="plantao-phone-back" type="button" aria-label="Voltar para conversas">‹</button>
+                      <div class="plantao-phone-contact-wrap"><span class="plantao-phone-contact-avatar" aria-hidden="true"><span class="plantao-phone-person-icon"></span></span><div class="plantao-phone-contact-copy"><strong id="plantao-phone-requester">R1 de Clínica Médica</strong><small id="plantao-phone-context">Caso clínico</small></div></div>
+                      <span aria-hidden="true">•••</span>
+                    </header>
+                    <div id="plantao-phone-chat-body" class="plantao-phone-chat-body" aria-live="polite"></div>
+                    <div id="plantao-phone-choices" class="plantao-phone-choices" aria-label="Opções de resposta"></div>
+                    <form id="plantao-phone-compose-form" class="plantao-phone-compose-form" autocomplete="off">
+                      <input id="plantao-phone-compose-input" type="text" placeholder="Mensagem" aria-label="Digite uma mensagem">
+                      <button id="plantao-phone-compose-send" type="submit" aria-label="Enviar mensagem">➤</button>
+                    </form>
+                  </section>
+                </div>
+              </div>
+            </div>
+            </div>
+          </article>
+        </section>
+
+        <div id="plantao-confirm-overlay" class="plantao-confirm-overlay" hidden aria-hidden="true">
+          <section class="plantao-confirm-modal panel" role="dialog" aria-modal="true" aria-labelledby="plantao-confirm-title">
+            <span class="badge accent">Finalizar atendimento</span>
+            <h2 id="plantao-confirm-title">Confirmar conduta final?</h2>
+            <p id="plantao-confirm-message">Esta decisão encerra o atendimento e abre a avaliação.</p>
+            <div class="plantao-confirm-actions">
+              <button id="plantao-confirm-cancel" class="button secondary" type="button">Cancelar</button>
+              <button id="plantao-confirm-ok" class="button primary" type="button">Confirmar e finalizar</button>
+            </div>
+          </section>
+        </div>
+
+        <section id="plantao-simulator" class="plantao-simulator" hidden>
+          <div id="plantao-death-overlay" class="plantao-death-overlay" hidden aria-hidden="true">
+            <section class="plantao-death-card" role="dialog" aria-modal="true" aria-labelledby="plantao-death-title">
+              <span>ATENDIMENTO ENCERRADO</span>
+              <h2 id="plantao-death-title">Paciente evoluiu a óbito</h2>
+              <p id="plantao-death-reason"></p>
+              <button id="plantao-death-review" class="button primary" type="button">Revisar caso</button>
+            </section>
+          </div>
+          <div class="plantao-sim-top">
+            <button id="plantao-back" class="button secondary" type="button">← Casos</button>
+            <div class="plantao-pwa-case-summary" aria-hidden="true">
+              <span>Caso</span>
+              <strong id="plantao-pwa-case-title">Caso em andamento</strong>
+            </div>
+            <div class="plantao-clock"><span>Tempo do caso</span><strong id="plantao-time">00:00</strong></div>
+            <span class="plantao-pwa-live" aria-hidden="true">● AO VIVO</span>
+            <button id="plantao-finish" class="button primary plantao-top-finish" type="button" hidden>Finalizar</button>
+          </div>
+
+          <article class="plantao-patient-card panel">
+            <div class="plantao-patient-main">
+              <span id="plantao-setting" class="badge accent">Sala de emergência</span>
+              <h2 id="plantao-case-title">Caso</h2>
+              <p id="plantao-opening" hidden></p>
+              <div class="plantao-patient-meta" hidden><span id="plantao-age"></span><span id="plantao-sex"></span><span id="plantao-chief"></span></div>
+            </div>
+
+          </article>
+
+          <div class="plantao-bedside">
+            <aside class="plantao-action-rail" aria-label="Menu clínico">
+              <div id="plantao-score-live" class="plantao-score-live" aria-live="polite">0/100</div>
+              <button id="plantao-pwa-patient-tab" class="plantao-pwa-patient-tab" type="button" aria-haspopup="dialog" aria-controls="plantao-patient-sheet" aria-expanded="false"><span>●</span><strong>Paciente</strong></button>
+              <nav id="plantao-action-tabs" class="plantao-action-tabs" aria-label="Grupos de ações"></nav>
+              <section id="plantao-action-drawer" class="plantao-action-drawer" hidden aria-labelledby="plantao-action-title">
+                <div class="plantao-drawer-head"><button id="plantao-action-close" class="button secondary" type="button">← Voltar</button><h2 id="plantao-action-title">Ações</h2><button id="plantao-conduta-finish" class="button primary plantao-conduta-finish" type="button" hidden>Finalizar</button></div>
+                <label class="plantao-search-label" for="plantao-action-search">Buscar nesta lista</label>
+                <input id="plantao-action-search" class="plantao-action-search" type="search" placeholder="Medicamento, exame ou conduta…">
+                <div id="plantao-actions" class="plantao-actions"></div>
+              </section>
+            </aside>
+          <section class="plantao-scene" aria-label="Leito e monitor do paciente">
+            <img id="plantao-patient-image" src="assets/img/plantao/awake.webp" alt="Ilustração do paciente acordado no leito" width="1536" height="1024">
+            <div class="plantao-monitor-dock">
+            <div class="plantao-monitor" aria-label="Monitor de sinais vitais">
+              <div class="plantao-monitor-heading">MONITOR <span>● AO VIVO</span></div>
+              <canvas id="plantao-waveforms" width="600" height="220" aria-label="Traçados ilustrativos de ECG, pulso e respiração"></canvas>
+              <div id="plantao-vitals" class="plantao-vitals" aria-live="polite"></div>
+              <small>Simulação de ritmo • janela de 6 segundos</small>
+            </div>
+            <aside class="plantao-feed panel">
+              <div class="plantao-section-head"><div><span class="metric-label">Evolução</span><h2>Prontuário em tempo real</h2></div></div>
+              <div id="plantao-feed" class="plantao-feed-list"></div>
+            </aside>
+            </div>
+          </section>
+          </div>
+
+        </section>
+
+        <div id="plantao-patient-sheet" class="plantao-patient-sheet" hidden aria-hidden="true">
+          <section class="plantao-patient-sheet-card plantao-patient-chart" role="dialog" aria-modal="true" aria-labelledby="plantao-patient-sheet-title">
+            <div class="plantao-report-clip" aria-hidden="true"></div>
+            <button id="plantao-patient-sheet-close" class="plantao-report-close" type="button" aria-label="Fechar prontuário">×</button>
+            <header class="plantao-report-head plantao-patient-chart-head">
+              <span class="plantao-report-brand">LURIA · SALA DE EMERGÊNCIA</span>
+              <h2 id="plantao-patient-sheet-title">Prontuário do paciente</h2>
+            </header>
+            <section class="plantao-report-patient plantao-patient-sheet-meta">
+              <div><span>Nome completo</span><strong id="plantao-patient-sheet-name">—</strong></div>
+              <div><span>Idade</span><strong id="plantao-patient-sheet-age">—</strong></div>
+              <div><span>Sexo</span><strong id="plantao-patient-sheet-sex">—</strong></div>
+            </section>
+            <section class="plantao-report-content plantao-patient-sheet-hda">
+              <span class="plantao-report-label">História da Doença Atual</span>
+              <div class="plantao-report-rule"></div>
+              <p id="plantao-patient-sheet-hda">—</p>
+            </section>
+            <footer class="plantao-report-footer">
+              <span>Prontuário simulado para fins educacionais</span>
+              <button id="plantao-patient-sheet-ok" class="button primary" type="button">Fechar prontuário</button>
+            </footer>
+          </section>
+        </div>
+
+        <div id="plantao-report-overlay" class="plantao-report-overlay" hidden aria-hidden="true">
+          <article class="plantao-report-board" role="dialog" aria-modal="true" aria-labelledby="plantao-report-exam">
+            <div class="plantao-report-clip" aria-hidden="true"></div>
+            <button id="plantao-report-close" class="plantao-report-close" type="button" aria-label="Fechar laudo">×</button>
+            <header class="plantao-report-head">
+              <span class="plantao-report-brand">LURIA · SALA DE EMERGÊNCIA</span>
+              <h2>Laudo de exame</h2>
+            </header>
+            <section class="plantao-report-patient">
+              <div><span>Paciente</span><strong id="plantao-report-name">—</strong></div>
+              <div><span>Idade</span><strong id="plantao-report-age">—</strong></div>
+              <div><span>Sexo</span><strong id="plantao-report-sex">—</strong></div>
+              <div><span>Horário</span><strong id="plantao-report-time">—</strong></div>
+            </section>
+            <section class="plantao-report-content">
+              <span class="plantao-report-label">Exame</span>
+              <h3 id="plantao-report-exam">—</h3>
+              <div class="plantao-report-rule"></div>
+              <span class="plantao-report-label">Laudo:</span>
+              <p id="plantao-report-text">—</p>
+            </section>
+            <footer class="plantao-report-footer">
+              <span>Documento simulado para fins educacionais</span>
+              <button id="plantao-report-ok" class="button primary" type="button">Fechar laudo</button>
+            </footer>
+          </article>
+        </div>
+
+        <section id="plantao-debrief" class="plantao-debrief" hidden>
+          <div class="plantao-debrief-head panel">
+            <div><span class="badge accent">Debriefing</span><h2 id="plantao-debrief-title">Caso encerrado</h2><p id="plantao-diagnosis"></p></div>
+            <div class="plantao-final-score"><strong id="plantao-final-score">0</strong><span>/100</span></div>
+          </div>
+          <div class="plantao-debrief-grid">
+            <article class="panel"><span class="metric-label">Pulo do Gato</span><p id="plantao-pulo" class="plantao-pulo"></p></article>
+            <article class="panel"><span class="metric-label">Seu desempenho</span><div id="plantao-performance" class="plantao-performance"></div></article>
+            <article class="panel"><span class="metric-label">Condutas-chave</span><div id="plantao-key-actions" class="plantao-review-list"></div></article>
+            <article class="panel"><span class="metric-label">Erros de alto impacto</span><div id="plantao-danger-actions" class="plantao-review-list"></div></article>
+          </div>
+          <article class="panel plantao-case-explanation-panel">
+            <span class="metric-label">Entenda o caso</span>
+            <div id="plantao-case-explanation" class="plantao-understand"></div>
+          </article>
+          <div class="plantao-debrief-grid plantao-debrief-grid-secondary">
+            <article class="panel"><span class="metric-label">Erros de sequência</span><div id="plantao-sequence-errors" class="plantao-review-list"></div></article>
+            <article class="panel"><span class="metric-label">Condutas inadequadas</span><div id="plantao-wrong-actions" class="plantao-review-list"></div></article>
+          </div>
+          <article class="panel plantao-sources"><span class="metric-label">Fontes do caso</span><div id="plantao-sources"></div></article>
+          <div class="plantao-debrief-actions"><button id="plantao-retry" class="button primary" type="button">Refazer este caso</button><button id="plantao-all-cases" class="button secondary" type="button">Voltar aos casos</button></div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="assets/js/supabase.js"></script>
+  <script src="assets/js/app.js?v=17.28-theme-switch"></script>
+  <script src="assets/js/plantao-monitor.js?v=5.4"></script>
+  <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
+  <script src="assets/js/plantao.js?v=9.6-state-restore"></script>
+  <script defer src="assets/js/pwa.js?v=3"></script>
+</body>
+</html>
