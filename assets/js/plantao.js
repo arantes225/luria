@@ -4092,6 +4092,17 @@
     const action=E.resolve(state.current,state,selected);
     if(action.role==='disposition') {
       if(!state.diagnosis) { feed("Selecione uma hipótese principal antes de definir o destino final.","warning");return; }
+      const rules=state.current?.completion_rules||{};
+      const required=E.requiredActions ? E.requiredActions(state.current) : (rules.required_actions||[]);
+      const missingRequired=required.filter(id=>!done(id));
+      if(missingRequired.length){
+        const labels=missingRequired
+          .map(id=>mergedActions().find(item=>item.id===id)?.label||id)
+          .slice(0,4);
+        const suffix=missingRequired.length>4?` e mais ${missingRequired.length-4}`:"";
+        feed(`Ainda falta completar o manejo antes do destino final: ${labels.join("; ")}${suffix}.`,"warning");
+        return;
+      }
       if(!(await confirmPlantaoFinalization(action.label))) return;
     }
     state.busy=true;renderActions();
