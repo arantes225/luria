@@ -619,16 +619,15 @@
     const chips=$("plantao-specialty-chips");
     if(chips){
       const preferred=[
-        {label:"Todos",value:"",icon:"▦"},
-        {label:"Clínica Médica",value:"Clínica Médica",icon:"♧"},
-        {label:"Cirurgia",value:"Cirurgia Geral",icon:"◒"},
-        {label:"Pediatria",value:"Pediatria",icon:"♙"},
-        {label:"GO",value:"Ginecologia e Obstetrícia",icon:"♀"},
-        {label:"APH / Desastres",value:"Emergência e APH",icon:"⚑"}
+        {label:"Todos",value:""},
+        {label:"Clínica Médica",value:"Clínica Médica"},
+        {label:"Cirurgia",value:"Cirurgia Geral"},
+        {label:"Pediatria",value:"Pediatria"},
+        {label:"GO",value:"Ginecologia e Obstetrícia"}
       ];
       chips.innerHTML=preferred.map(tab=>`
         <button type="button" class="plantao-specialty-chip${tab.value===specialty?" active":""}" data-specialty-chip="${esc(tab.value)}">
-          <span aria-hidden="true">${tab.icon}</span> ${esc(tab.label)}
+          ${esc(tab.label)}
         </button>
       `).join("");
     }
