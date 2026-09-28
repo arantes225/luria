@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v182-simulator-bg-fidelity";
+const CACHE_VERSION = "luria-pwa-v183-pratica-clinica-theme-photo";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
@@ -42,8 +42,10 @@ const APP_SHELL = [
   "/plantao/",
   "/plantao/sala-emergencia/",
   "/plantao/luriazap/",
-  "/assets/css/simulador-hub.css?v=4-reference-bg",
+  "/assets/css/simulador-hub.css?v=7-theme-photo",
   "/assets/js/simulador-hub.js?v=1",
+  "/assets/img/plantao/luriazap-card-bg.webp",
+  "/assets/img/plantao/emergencia-card-bg.webp",
   "/assets/js/plantao.js?v=9.7-entry-routes",
   "/assets/css/style.css?v=16.13-font-uniform",
   "/assets/css/landing.css",
