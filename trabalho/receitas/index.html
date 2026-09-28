@@ -1,1 +1,116 @@
-<!DOCTYPE html><html lang="pt-BR"><head><base href="/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Tratamentos gerais · LURIA</title><meta name="theme-color" content="#184888"><link rel="manifest" href="/manifest.webmanifest?v=5"><link rel="stylesheet" href="/assets/css/style.css?v=16.6"><link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10"><style>.tool-shell{display:grid;gap:16px}.tool-hero{padding:24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}.tool-hero h2{margin:0 0 8px}.tool-hero p{margin:0;color:var(--muted)}</style></head><body data-page="trabalho_receitas"><div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page"><header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div></header><section class="tool-shell"><article class="tool-hero"><h2>Tratamentos gerais</h2><p>Condutas e tratamentos gerais organizados para consulta clínica.</p></article></section></div></main></div><script src="/assets/vendor/supabase-2.110.6.js"></script><script src="/assets/js/supabase.js"></script><script src="/assets/js/app.js?v=17.29-tratamentos-gerais"></script><script defer src="/assets/js/pwa.js?v=3"></script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Tratamentos gerais · LURIA</title>
+  <meta name="theme-color" content="#184888">
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
+  <style>
+    .recipe-shell{display:grid;gap:16px}
+    .recipe-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:center;padding:22px;border:1px solid var(--border);border-radius:20px;background:var(--surface)}
+    .recipe-hero h2{margin:0 0 7px;font-size:1.4rem}
+    .recipe-hero p{margin:0;color:var(--muted);max-width:760px;line-height:1.5}
+    .recipe-stats{display:grid;grid-template-columns:repeat(4,minmax(90px,1fr));gap:8px}
+    .recipe-stat{min-width:92px;padding:11px 12px;border:1px solid var(--border);border-radius:14px;background:color-mix(in srgb,var(--surface) 82%,var(--theme, #184888) 3%)}
+    .recipe-stat strong{display:block;font-size:1.22rem;line-height:1}
+    .recipe-stat span{display:block;margin-top:5px;font-size:.72rem;color:var(--muted)}
+    .recipe-controls{display:grid;grid-template-columns:minmax(220px,1fr) 180px 180px;gap:10px;padding:12px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+    .recipe-controls input,.recipe-controls select{width:100%;min-height:42px;padding:0 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font:inherit}
+    .recipe-workspace{display:grid;grid-template-columns:minmax(280px,36%) minmax(0,1fr);gap:14px;align-items:start}
+    .recipe-list-panel,.recipe-detail{border:1px solid var(--border);border-radius:18px;background:var(--surface);overflow:hidden}
+    .recipe-list-panel{max-height:calc(100vh - 245px);min-height:520px;overflow:auto}
+    .recipe-list{display:grid}
+    .recipe-row{display:grid;gap:7px;width:100%;padding:15px 16px;border:0;border-bottom:1px solid var(--border);background:transparent;color:var(--text);text-align:left;cursor:pointer}
+    .recipe-row:hover,.recipe-row.active{background:color-mix(in srgb,var(--theme,#184888) 7%,var(--surface))}
+    .recipe-row-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+    .recipe-row-title{font-weight:750;line-height:1.25}
+    .recipe-row-meta{font-size:.74rem;color:var(--muted)}
+    .recipe-row-summary{font-size:.84rem;color:var(--muted);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .recipe-status,.recipe-chip{display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;border-radius:999px;padding:5px 8px;font-size:.68rem;font-weight:750}
+    .recipe-status.ok{background:#e8f7ee;color:#176b3a}.recipe-status.warn{background:#fff5d7;color:#845f00}.recipe-status.info{background:#e9f2ff;color:#235b9d}.recipe-status.danger{background:#ffe9e8;color:#a12d27}
+    .recipe-chip{background:color-mix(in srgb,var(--theme,#184888) 9%,var(--surface));color:var(--text);border:1px solid color-mix(in srgb,var(--theme,#184888) 18%,var(--border))}
+    .recipe-detail{padding:20px;min-height:520px;position:sticky;top:12px}
+    .recipe-detail-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--border)}
+    .recipe-detail-head h2{margin:9px 0 7px;font-size:1.42rem}.recipe-detail-head p{margin:0;color:var(--muted);line-height:1.5}
+    .recipe-detail-tags{display:flex;gap:6px;flex-wrap:wrap}
+    .recipe-copy-btn{min-width:132px;min-height:42px;padding:0 14px;border:0;border-radius:12px;background:var(--theme,#184888);color:#fff;font-weight:750;cursor:pointer}
+    .recipe-copy-btn:disabled{background:color-mix(in srgb,var(--muted) 28%,var(--surface));color:var(--muted);cursor:not-allowed}
+    .recipe-status-note{margin:14px 0;padding:11px 13px;border-radius:12px;font-size:.83rem;font-weight:650}
+    .recipe-status-note.ok{background:#effaf3;color:#176b3a}.recipe-status-note.warn{background:#fff9e7;color:#745700}.recipe-status-note.info{background:#edf5ff;color:#235b9d}.recipe-status-note.danger{background:#fff0ef;color:#8d2924}
+    .recipe-route{margin-top:18px}.recipe-route-title{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:8px}
+    .recipe-med-list{display:grid;gap:9px}.recipe-med{padding:13px 14px;border:1px solid var(--border);border-radius:14px;background:color-mix(in srgb,var(--surface) 96%,var(--theme,#184888) 4%)}
+    .recipe-med-head{display:flex;gap:10px;align-items:flex-start}.recipe-med-num{display:grid;place-items:center;flex:0 0 26px;width:26px;height:26px;border-radius:9px;background:var(--theme,#184888);color:#fff;font-size:.73rem;font-weight:800}
+    .recipe-med strong{display:block}.recipe-med-head span:not(.recipe-med-num){display:block;margin-top:3px;color:var(--muted);font-size:.74rem}.recipe-med p{margin:9px 0 0 36px;line-height:1.5;font-size:.88rem}
+    .recipe-detail-section{margin-top:16px;padding:14px;border:1px solid var(--border);border-radius:14px}.recipe-detail-section h3{margin:0 0 8px;font-size:.9rem}.recipe-detail-section p{margin:0;line-height:1.5}.recipe-detail-section ul{margin:0;padding-left:19px}.recipe-detail-section li{margin:5px 0;line-height:1.45}
+    .recipe-detail-section.warn{background:#fffaf0}.recipe-detail-section.danger{background:#fff3f2}.recipe-detail-section.info{background:#f3f8ff}.recipe-detail-section.source{background:color-mix(in srgb,var(--theme,#184888) 4%,var(--surface))}
+    .recipe-source-grid{display:grid;gap:8px}.recipe-source-grid article{padding:10px 11px;border:1px solid var(--border);border-radius:11px;background:var(--surface)}.recipe-source-grid p{margin:5px 0 0!important;font-size:.83rem;color:var(--muted)}.recipe-source-grid small{display:block;margin-top:6px;color:#8b5d00}
+    .recipe-source-excerpt{margin-top:14px;border-top:1px solid var(--border);padding-top:12px;color:var(--muted)}.recipe-source-excerpt summary{cursor:pointer;font-weight:700;color:var(--text)}.recipe-source-excerpt p{font-size:.82rem;line-height:1.5}
+    .recipe-refs{display:flex;gap:8px;flex-wrap:wrap}.recipe-refs a{display:inline-flex;padding:7px 10px;border:1px solid var(--border);border-radius:10px;color:var(--theme,#184888);text-decoration:none;font-size:.78rem;font-weight:700}
+    .recipe-loading,.recipe-error,.recipe-empty,.recipe-detail-placeholder{padding:22px;color:var(--muted);text-align:center}.recipe-empty{border:1px dashed var(--border);border-radius:14px;margin:12px}
+    @media (max-width:1000px){.recipe-hero{grid-template-columns:1fr}.recipe-stats{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:900px){.recipe-controls{grid-template-columns:1fr 1fr}.recipe-controls input{grid-column:1/-1}.recipe-workspace{grid-template-columns:1fr}.recipe-list-panel{max-height:none;min-height:0}.recipe-detail{position:static;min-height:0}.recipe-stats{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.recipe-hero{padding:17px}.recipe-controls{grid-template-columns:1fr}.recipe-controls input{grid-column:auto}.recipe-detail{padding:15px}.recipe-detail-head{display:grid}.recipe-copy-btn{width:100%}.recipe-med p{margin-left:0}.recipe-stats{gap:6px}.recipe-stat{min-width:0}}
+  </style>
+</head>
+<body data-page="trabalho_receitas">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+
+        <section class="recipe-shell">
+          <section class="recipe-hero">
+            <div>
+              <h2>Banco de receitas prontas</h2>
+              <p>Receitas montadas a partir dos seus resumos, organizadas por diagnóstico. Só o que passou pela revisão aparece como pronto para copiar; o restante fica sinalizado sem risco de virar prescrição automática por engano.</p>
+            </div>
+            <div class="recipe-stats" aria-label="Resumo do banco">
+              <div class="recipe-stat"><strong id="recipe-count-all">—</strong><span>Total</span></div>
+              <div class="recipe-stat"><strong id="recipe-count-verified">—</strong><span>Prontas</span></div>
+              <div class="recipe-stat"><strong id="recipe-count-review">—</strong><span>Em revisão</span></div>
+              <div class="recipe-stat"><strong id="recipe-count-protocol">—</strong><span>Protocolos</span></div>
+            </div>
+          </section>
+
+          <section class="recipe-controls" aria-label="Filtros de receitas">
+            <input id="recipe-search" type="search" autocomplete="off" placeholder="Buscar diagnóstico, medicamento ou área…">
+            <select id="recipe-status-filter">
+              <option value="">Todos os status</option>
+              <option value="verified">Prontas</option>
+              <option value="review_needed">Em revisão</option>
+              <option value="protocol_only">Protocolos</option>
+              <option value="avoid">Não automatizar</option>
+            </select>
+            <select id="recipe-category-filter"><option value="">Todas as áreas</option></select>
+          </section>
+
+          <section class="recipe-workspace">
+            <div class="recipe-list-panel">
+              <div id="recipe-list" class="recipe-list"></div>
+              <div id="recipe-empty" class="recipe-empty" hidden>Nenhuma receita encontrada com esses filtros.</div>
+            </div>
+            <article id="recipe-detail" class="recipe-detail">
+              <div class="recipe-detail-placeholder">Selecione uma receita para visualizar.</div>
+            </article>
+          </section>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=17.29-tratamentos-gerais"></script>
+  <script src="/assets/js/trabalho-receitas.js?v=1"></script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
