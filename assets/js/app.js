@@ -3050,128 +3050,35 @@ function prepararSidebarDesktop(
       "sidebar-desktop-toggle"
     );
 
+
   if (!button) {
     button =
       document.createElement(
         "button"
       );
 
+
     button.id =
       "sidebar-desktop-toggle";
+
 
     button.className =
       "sidebar-desktop-toggle";
 
+
     button.type =
       "button";
 
+
     button.innerHTML =
       "<span aria-hidden=\"true\">☰</span>";
+
 
     document.body.appendChild(
       button
     );
   }
 
-  const isEmergency =
-    document.body?.dataset?.plantaoEntry === "emergency";
-
-  if (isEmergency) {
-    const sidebar =
-      document.getElementById(
-        "sidebar"
-      );
-
-    const backdrop =
-      document.getElementById(
-        "sidebar-backdrop"
-      );
-
-    const isCompact =
-      () =>
-        window.matchMedia(
-          "(max-width: 980px)"
-        ).matches;
-
-    const applyEmergency =
-      (open) => {
-        document.body.classList.remove("sidebar-hidden");
-        document.body.classList.toggle(
-          "sidebar-open",
-          !!open
-        );
-
-        if (!isCompact()) {
-          document.body.classList.toggle(
-            "sidebar-hidden",
-            !open
-          );
-          document.body.classList.remove(
-            "sidebar-open"
-          );
-        }
-
-        button.setAttribute(
-          "aria-label",
-          open
-            ? "Fechar menu lateral"
-            : "Abrir menu lateral"
-        );
-
-        button.setAttribute(
-          "aria-pressed",
-          open
-            ? "true"
-            : "false"
-        );
-
-        button.title =
-          open
-            ? "Fechar menu lateral"
-            : "Abrir menu lateral";
-      };
-
-    applyEmergency(false);
-
-    button.onclick =
-      (event) => {
-        event.preventDefault();
-        event.stopPropagation();
-
-        const openNow =
-          isCompact()
-            ? document.body.classList.contains(
-                "sidebar-open"
-              )
-            : !document.body.classList.contains(
-                "sidebar-hidden"
-              );
-
-        applyEmergency(
-          !openNow
-        );
-      };
-
-    backdrop?.addEventListener(
-      "click",
-      () => applyEmergency(false)
-    );
-
-    sidebar
-      ?.querySelector("#sidebar-close")
-      ?.addEventListener(
-        "click",
-        () => applyEmergency(false)
-      );
-
-    window.addEventListener(
-      "resize",
-      () => applyEmergency(false),
-      { passive: true }
-    );
-
-    return;
-  }
 
   const apply =
     (hidden) => {
@@ -3182,12 +3089,14 @@ function prepararSidebarDesktop(
           hidden
         );
 
+
       button.setAttribute(
         "aria-label",
         hidden
           ? "Abrir menu lateral"
           : "Recolher menu lateral"
       );
+
 
       button.setAttribute(
         "aria-pressed",
@@ -3196,10 +3105,12 @@ function prepararSidebarDesktop(
           : "false"
       );
 
+
       button.title =
         hidden
           ? "Abrir menu lateral"
           : "Recolher menu lateral";
+
 
       try {
         localStorage.setItem(
@@ -3213,8 +3124,10 @@ function prepararSidebarDesktop(
       } catch {}
     };
 
+
   let initial =
     false;
+
 
   try {
     initial =
@@ -3225,9 +3138,11 @@ function prepararSidebarDesktop(
       ) === "1";
   } catch {}
 
+
   apply(
     initial
   );
+
 
   button.addEventListener(
     "click",
@@ -3239,6 +3154,7 @@ function prepararSidebarDesktop(
       ) {
         return;
       }
+
 
       apply(
         !document.body
