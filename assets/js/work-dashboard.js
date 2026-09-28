@@ -47,10 +47,9 @@
       ["calc","Calculadoras","Ferramentas clínicas","/trabalho/calculadora/"],
       ["cid","CID","Buscar códigos","/trabalho/cid/"],
       ["file","Prescrição","Apoio à prescrição","/trabalho/prescricao/"],
-      ["lab","Laboratório","Referências e interpretação","/trabalho/laboratorio/"],
+      ["lab","Diagnóstico","Sintomas, exames, laboratório e ECG","/trabalho/diagnostico/"],
       ["droplet","Fluidos e eletrólitos","Reposição e correções","/trabalho/fluidos-eletrólitos/"],
-      ["ecg","ECG","Apoio à interpretação","/trabalho/ecg/"],
-      ["protocol","Protocolos","Condutas rápidas","/trabalho/protocolos/"]
+      ["protocol","Protocolos","Protocolos clínicos","/trabalho/protocolos/"]
     ];
     return `<div class="work-quick-grid">${items.map(([i,t,s,h])=>`<a class="work-tool" href="${h}"><span class="work-tool-icon">${icon(i)}</span><span><strong>${esc(t)}</strong><small>${esc(s)}</small></span></a>`).join("")}</div>`;
   }
