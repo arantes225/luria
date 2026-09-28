@@ -98,8 +98,7 @@
       const isUnlocked = n <= unlocked || won;
       if (!isUnlocked) {
         return '<div class="daily-clue is-locked"><div class="daily-clue-inner">' +
-          '<span class="daily-clue-icon" aria-hidden="true">▣</span>' +
-          '<div class="daily-clue-copy"><strong>Pista ' + n + '</strong></div>' +
+          '<div class="daily-clue-copy"></div>' +
           '<span class="daily-clue-locknote">Desbloqueie após responder a pista ' + (n - 1) + '</span>' +
         '</div></div>';
       }
@@ -110,8 +109,7 @@
       const text = challenge["clue_" + n] || "";
 
       return '<div class="' + classes.join(" ") + '"><div class="daily-clue-inner">' +
-        '<span class="daily-clue-icon" aria-hidden="true">◉</span>' +
-        '<div class="daily-clue-copy"><strong>Pista ' + n + '</strong><p>' + esc(text) + '</p></div>' +
+        '<div class="daily-clue-copy"><p>' + esc(text) + '</p></div>' +
       '</div></div>';
     }).join("");
 
