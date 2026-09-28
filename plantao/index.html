@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="/assets/css/simulador-hub.css?v=1">
+  <link rel="stylesheet" href="/assets/css/simulador-hub.css?v=2-reference">
   <link rel="canonical" href="/plantao/">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
 </head>
@@ -21,66 +21,95 @@
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
     <main class="main">
       <div class="page sim-hub-page">
-        <header class="topbar">
+        <header class="topbar sim-hub-topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading"><span class="eyebrow">Prática clínica</span><h1>Simulador</h1></div>
+          <div class="page-heading">
+            <span class="eyebrow">Simulador</span>
+            <h1>Prática clínica</h1>
+          </div>
         </header>
 
-        <section class="sim-hub-intro">
-          <div class="sim-hub-intro-copy">
-            <span class="sim-hub-kicker">Escolha seu modo</span>
-            <h2>Treine a medicina por dois caminhos diferentes.</h2>
-            <p>Entre em um caso de emergência e tome decisões em tempo real ou pratique discussão clínica no formato de conversa pelo LuriaZap.</p>
-          </div>
-          <div class="sim-hub-quote">A prática transforma conhecimento em decisão. Escolha um módulo e comece.</div>
+        <section class="sim-hero-grid" aria-label="Modos do simulador">
+          <article class="sim-hero-card sim-hero-emergency">
+            <div class="sim-hero-copy">
+              <div class="sim-hero-logo">
+                <img class="sim-logo-light" src="/assets/img/plantao/logo-sala-emergencia-light.webp" alt="">
+                <img class="sim-logo-dark" src="/assets/img/plantao/logo-sala-emergencia-dark.webp" alt="">
+                <img class="sim-logo-pink" src="/assets/img/plantao/logo-sala-emergencia-pink.webp" alt="">
+              </div>
+              <div>
+                <h2>Sala de Emergência</h2>
+                <p>Casos clínicos interativos e realistas para treinar seu raciocínio em cenários de urgência e emergência.</p>
+              </div>
+            </div>
+            <div class="sim-hero-art sim-emergency-art" aria-hidden="true">
+              <div class="sim-monitor"><span></span><span></span><span></span></div>
+              <div class="sim-bed"></div>
+            </div>
+            <a class="sim-reference-button" href="/plantao/sala-emergencia/">Acessar Sala de Emergência <span>›</span></a>
+            <div class="sim-hero-badge"><strong id="sim-emergency-total">—</strong><span>casos disponíveis</span></div>
+          </article>
+
+          <article class="sim-hero-card sim-hero-zap">
+            <div class="sim-hero-copy">
+              <div class="sim-hero-logo">
+                <img class="sim-logo-light" src="/assets/img/plantao/logo-luriazap-light.webp" alt="">
+                <img class="sim-logo-dark" src="/assets/img/plantao/logo-luriazap-dark.webp" alt="">
+                <img class="sim-logo-pink" src="/assets/img/plantao/logo-luriazap-pink.webp" alt="">
+              </div>
+              <div>
+                <h2>LuriaZap</h2>
+                <p>Discuta casos, tire dúvidas e desenvolva seu raciocínio clínico em um formato rápido de conversa.</p>
+              </div>
+            </div>
+            <div class="sim-hero-art sim-zap-art" aria-hidden="true">
+              <div class="sim-phone"><span></span><span></span><span></span></div>
+              <div class="sim-chat-bubble one"></div><div class="sim-chat-bubble two"></div>
+            </div>
+            <a class="sim-reference-button" href="/plantao/luriazap/">Acessar LuriaZap <span>›</span></a>
+            <div class="sim-hero-badge"><strong id="sim-zap-total">—</strong><span>casos disponíveis</span></div>
+          </article>
         </section>
 
-        <section class="sim-hub-grid" aria-label="Modos do Simulador">
-          <a class="sim-hub-card" href="/plantao/sala-emergencia/">
-            <div class="sim-hub-card-main">
-              <div>
-                <div class="sim-hub-card-logo" aria-hidden="true">
-                  <img class="sim-hub-logo-light" src="/assets/img/plantao/logo-sala-emergencia-light.webp" alt="">
-                  <img class="sim-hub-logo-dark" src="/assets/img/plantao/logo-sala-emergencia-dark.webp" alt="">
-                  <img class="sim-hub-logo-pink" src="/assets/img/plantao/logo-sala-emergencia-pink.webp" alt="">
-                </div>
-                <h3>Sala de Emergência</h3>
-                <p>Casos clínicos interativos para treinar raciocínio, investigação, conduta e reavaliação em cenários realistas.</p>
-              </div>
-              <div class="sim-hub-visual" aria-hidden="true">
-                <svg viewBox="0 0 120 120" fill="none"><rect x="16" y="28" width="88" height="58" rx="12" stroke="currentColor" stroke-width="4"/><path d="M28 65h18l8-16 12 31 9-20h17" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M35 96h50M45 86v10M75 86v10" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
-              </div>
-            </div>
-            <div class="sim-hub-features">
-              <div class="sim-hub-feature"><strong>Casos realistas</strong><span>Informação limitada e decisões sequenciais.</span></div>
-              <div class="sim-hub-feature"><strong>Feedback imediato</strong><span>Veja o impacto das suas condutas.</span></div>
-              <div class="sim-hub-feature"><strong>Evolução clínica</strong><span>O caso muda conforme suas escolhas.</span></div>
-            </div>
-            <div class="sim-hub-cta"><span>Entrar na Sala de Emergência</span><b>→</b></div>
-          </a>
+        <section class="sim-stats-strip" aria-label="Resumo do simulador">
+          <article><span class="sim-stat-icon">▣</span><div><strong id="sim-completed">—</strong><small>casos concluídos</small></div></article>
+          <article><span class="sim-stat-icon">◉</span><div><strong id="sim-active">—</strong><small>casos em andamento</small></div></article>
+          <article><span class="sim-stat-icon">◌</span><div><strong id="sim-zap-messages">—</strong><small>interações no LuriaZap</small></div></article>
+          <article><span class="sim-stat-icon">☆</span><div><strong id="sim-score">—</strong><small>média de desempenho</small></div></article>
+        </section>
 
-          <a class="sim-hub-card" href="/plantao/luriazap/">
-            <div class="sim-hub-card-main">
-              <div>
-                <div class="sim-hub-card-logo" aria-hidden="true">
-                  <img class="sim-hub-logo-light" src="/assets/img/plantao/logo-luriazap-light.webp" alt="">
-                  <img class="sim-hub-logo-dark" src="/assets/img/plantao/logo-luriazap-dark.webp" alt="">
-                  <img class="sim-hub-logo-pink" src="/assets/img/plantao/logo-luriazap-pink.webp" alt="">
-                </div>
-                <h3>LuriaZap</h3>
-                <p>Discuta casos clínicos no formato de conversa, organize hipóteses, proponha condutas e aprenda com feedbacks.</p>
+        <section class="sim-dashboard-grid">
+          <article class="sim-panel sim-recent-panel">
+            <header><div><span class="sim-panel-icon">▣</span><h3>Casos em andamento / recentes</h3></div><a href="/plantao/sala-emergencia/">Ver todos ›</a></header>
+            <div id="sim-recent-list" class="sim-recent-list">
+              <div class="sim-empty-row">Carregando seus casos...</div>
+            </div>
+          </article>
+
+          <article class="sim-panel sim-chart-panel">
+            <header><div><span class="sim-panel-icon">▥</span><h3>Estatísticas do Simulador</h3></div></header>
+            <div class="sim-chart-content">
+              <div class="sim-donut-wrap">
+                <h4>Casos por especialidade</h4>
+                <div class="sim-donut" id="sim-donut"><div><strong id="sim-donut-total">0</strong><span>casos</span></div></div>
+                <div id="sim-specialty-legend" class="sim-specialty-legend"></div>
               </div>
-              <div class="sim-hub-visual" aria-hidden="true">
-                <svg viewBox="0 0 120 120" fill="none"><rect x="30" y="14" width="60" height="92" rx="14" stroke="currentColor" stroke-width="4"/><path d="M43 40h34M43 55h25M43 70h31" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="60" cy="92" r="4" fill="currentColor"/></svg>
+              <div class="sim-mini-chart-wrap">
+                <h4>Atividade recente</h4>
+                <div id="sim-mini-bars" class="sim-mini-bars"></div>
               </div>
             </div>
-            <div class="sim-hub-features">
-              <div class="sim-hub-feature"><strong>Discussão clínica</strong><span>Treine raciocínio em formato de conversa.</span></div>
-              <div class="sim-hub-feature"><strong>Passo a passo</strong><span>Construa hipótese e conduta ao longo do caso.</span></div>
-              <div class="sim-hub-feature"><strong>Rotina rápida</strong><span>Casos curtos para revisar no dia a dia.</span></div>
-            </div>
-            <div class="sim-hub-cta"><span>Entrar no LuriaZap</span><b>→</b></div>
-          </a>
+          </article>
+        </section>
+
+        <section class="sim-panel sim-insights-panel">
+          <header><div><span class="sim-panel-icon">◊</span><h3>Insights do Simulador</h3></div></header>
+          <div class="sim-insights-grid">
+            <article><span>◎</span><div><strong>Treino direcionado</strong><p>Continue pelos temas em que você mais pratica.</p></div><b>›</b></article>
+            <article><span>◉</span><div><strong>Raciocínio clínico</strong><p>Use os dois modos para comparar formas de tomada de decisão.</p></div><b>›</b></article>
+            <article><span>☆</span><div><strong>Dica da semana</strong><p>Revise o debrief dos casos concluídos antes de repetir o cenário.</p></div><b>›</b></article>
+            <article><span>▥</span><div><strong>Seu progresso</strong><p id="sim-progress-copy">Seu histórico aparecerá aqui conforme você praticar.</p></div><b>›</b></article>
+          </div>
         </section>
       </div>
     </main>
@@ -89,6 +118,7 @@
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=17.28-theme-switch"></script>
+  <script src="/assets/js/simulador-hub.js?v=1"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
