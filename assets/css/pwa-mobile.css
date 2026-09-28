@@ -3967,3 +3967,28 @@
     transform:none!important;
   }
 }
+
+/* Cronograma PWA v25 — composição mobile de uma coluna */
+@media(max-width:760px){
+ html.pwa-standalone body[data-page="cronograma"] .agenda-workspace,
+ html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout,
+ html.pwa-standalone body[data-page="cronograma"] .agenda-bottom-grid{
+  display:grid!important;grid-template-columns:1fr!important;gap:12px!important;width:100%!important;max-width:100%!important
+ }
+ html.pwa-standalone body[data-page="cronograma"] .planner-panel,
+ html.pwa-standalone body[data-page="cronograma"] .agenda-side,
+ html.pwa-standalone body[data-page="cronograma"] .study-time-card,
+ html.pwa-standalone body[data-page="cronograma"] .category-distribution-card{
+  grid-column:1/-1!important;width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important
+ }
+ html.pwa-standalone body[data-page="cronograma"] .planner-header{display:flex!important;flex-wrap:wrap!important;gap:8px!important;width:100%!important;min-width:0!important}
+ html.pwa-standalone body[data-page="cronograma"] .planner-header>*{min-width:0!important;max-width:100%!important}
+ html.pwa-standalone body[data-page="cronograma"] .week-planner,
+ html.pwa-standalone body[data-page="cronograma"] .month-planner{width:100%!important;max-width:100%!important;min-width:0!important;overflow-x:auto!important}
+ html.pwa-standalone body[data-page="cronograma"] .week-planner{grid-template-columns:repeat(7,minmax(82px,1fr))!important}
+ html.pwa-standalone body[data-page="cronograma"] .agenda-side{position:static!important;top:auto!important;transform:none!important}
+ html.pwa-standalone body[data-page="cronograma"] .agenda-side>[class*="card"],
+ html.pwa-standalone body[data-page="cronograma"] .agenda-side>[class*="panel"]{width:100%!important;max-width:100%!important;margin:0 0 12px!important}
+ html.pwa-standalone body[data-page="cronograma"] .weekly-goal-grid,
+ html.pwa-standalone body[data-page="cronograma"] .goal-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+}
