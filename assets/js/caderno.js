@@ -17270,7 +17270,12 @@ function wireEvents() {
               toggle.title =
                 labels[alignment]
                 || "Alinhamento";
+              toggle.classList.add("is-active");
+              toggle.setAttribute("aria-pressed", "true");
             }
+
+            document.querySelectorAll("[data-align]")
+              .forEach(item => item.classList.toggle("is-selected", item === button));
 
             closeNotebookToolMenus();
           }
@@ -17340,7 +17345,12 @@ function wireEvents() {
             if (toggle) {
               toggle.title =
                 `Espaçamento ${spacing.replace(".", ",")}`;
+              toggle.classList.add("is-active");
+              toggle.setAttribute("aria-pressed", "true");
             }
+
+            document.querySelectorAll("[data-line-spacing]")
+              .forEach(item => item.classList.toggle("is-selected", item === button));
 
             closeNotebookToolMenus();
           }
@@ -17432,30 +17442,89 @@ function wireEvents() {
     );
 
 
-  document
-    .getElementById(
-      "notebook-text-color"
-    )
-    ?.addEventListener(
-      "input",
-      (event) =>
-        applyTextColor(
-          event.target.value
-        )
-    );
+  const closeNotebookColorPalettes = (except = null) => {
+    [
+      ["text", "notebook-text-color", "notebook-text-color-palette"],
+      ["highlight", "notebook-highlight-color", "notebook-highlight-color-palette"]
+    ].forEach(([name, buttonId, paletteId]) => {
+      if (name === except) return;
+      const palette = document.getElementById(paletteId);
+      const button = document.getElementById(buttonId);
+      if (palette) palette.hidden = true;
+      if (button) button.setAttribute("aria-expanded", "false");
+    });
+  };
 
+  const wireColorPalette = (kind, buttonId, paletteId, applyColor) => {
+    const button = document.getElementById(buttonId);
+    const palette = document.getElementById(paletteId);
+    if (!button || !palette) return;
 
-  document
-    .getElementById(
-      "notebook-highlight-color"
-    )
-    ?.addEventListener(
-      "input",
-      (event) =>
-        applyHighlightColor(
-          event.target.value
-        )
-    );
+    button.addEventListener("pointerdown", (event) => {
+      saveSelection();
+      if (event.pointerType === "mouse") event.preventDefault();
+    });
+
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      if (button.disabled) return;
+      saveSelection();
+      closeNotebookToolMenus();
+      closeEmojiMenu();
+      const opening = palette.hidden;
+      closeNotebookColorPalettes(opening ? kind : null);
+      palette.hidden = !opening;
+      button.setAttribute("aria-expanded", opening ? "true" : "false");
+    });
+
+    palette.querySelectorAll(kind === "text" ? "[data-text-color]" : "[data-highlight-color]")
+      .forEach((swatch) => {
+        swatch.addEventListener("mousedown", (event) => event.preventDefault());
+        swatch.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          const color = kind === "text"
+            ? swatch.dataset.textColor
+            : swatch.dataset.highlightColor;
+          applyColor(color);
+
+          palette.querySelectorAll(".is-selected")
+            .forEach((item) => item.classList.remove("is-selected"));
+          swatch.classList.add("is-selected");
+          button.classList.add("is-active");
+          button.dataset.activeColor = color || "";
+          button.style.setProperty("--active-color", color || "transparent");
+
+          palette.hidden = true;
+          button.setAttribute("aria-expanded", "false");
+        });
+      });
+  };
+
+  wireColorPalette(
+    "text",
+    "notebook-text-color",
+    "notebook-text-color-palette",
+    applyTextColor
+  );
+
+  wireColorPalette(
+    "highlight",
+    "notebook-highlight-color",
+    "notebook-highlight-color-palette",
+    applyHighlightColor
+  );
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".notebook-color-palette-wrap")) {
+      closeNotebookColorPalettes();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeNotebookColorPalettes();
+  });
 
 
   const notebookToolMenuToggles = {
@@ -17623,10 +17692,21 @@ function wireEvents() {
         button.addEventListener(
           "click",
           () => {
+            const listCommand = button.dataset.listCommand;
             execEditorCommand(
-              button.dataset
-                .listCommand
+              listCommand
             );
+
+            const listToggle = document.getElementById("notebook-list-toggle");
+            let listActive = true;
+            try {
+              listActive = document.queryCommandState(listCommand);
+            } catch {}
+            listToggle?.classList.toggle("is-active", listActive);
+            listToggle?.setAttribute("aria-pressed", listActive ? "true" : "false");
+
+            document.querySelectorAll("[data-list-command]")
+              .forEach(item => item.classList.toggle("is-selected", item === button && listActive));
 
             closeNotebookToolMenus();
           }
