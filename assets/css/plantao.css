@@ -6783,3 +6783,61 @@ body.plantao-module-entry .plantao-record-button{
 .plantao-disaster-card-body h3{margin:0;font-size:1.02rem;line-height:1.22}
 .plantao-disaster-card-body p{margin:0;font-size:.8rem;line-height:1.4;opacity:.74;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .plantao-disaster-card-body .plantao-record-button{margin-top:3px;width:100%}
+
+
+/* === Sala de Emergência · patient identity + chief complaint v40 === */
+body.plantao-module-entry .plantao-record-patient{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:3px!important;
+  align-items:start!important;
+  justify-content:start!important;
+  margin:2px 0 10px!important;
+  padding-bottom:9px!important;
+  border-bottom:1px solid var(--border)!important;
+}
+body.plantao-module-entry .plantao-record-patient strong{
+  display:block!important;
+  max-width:100%!important;
+  color:var(--text)!important;
+  font-size:13.4px!important;
+  font-weight:900!important;
+  line-height:1.18!important;
+  white-space:normal!important;
+  overflow:visible!important;
+  text-overflow:clip!important;
+}
+body.plantao-module-entry .plantao-record-patient-meta{
+  display:block!important;
+  color:var(--muted)!important;
+  font-size:9.2px!important;
+  font-weight:750!important;
+  line-height:1.25!important;
+  white-space:normal!important;
+}
+body.plantao-module-entry .plantao-record-chief{
+  display:grid!important;
+  gap:6px!important;
+  margin-top:0!important;
+  padding:10px 0 12px!important;
+  border-top:0!important;
+  border-bottom:1px solid var(--border)!important;
+}
+body.plantao-module-entry .plantao-record-chief>span{
+  color:var(--accent)!important;
+  font-size:8px!important;
+  font-weight:900!important;
+  letter-spacing:.06em!important;
+  text-transform:uppercase!important;
+}
+body.plantao-module-entry .plantao-record-chief h3{
+  margin:0!important;
+  color:var(--text)!important;
+  font-size:14.6px!important;
+  line-height:1.36!important;
+  font-weight:850!important;
+  display:-webkit-box!important;
+  -webkit-line-clamp:4!important;
+  -webkit-box-orient:vertical!important;
+  overflow:hidden!important;
+}
