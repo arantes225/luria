@@ -3521,3 +3521,73 @@
 .note-editor-identity h1{width:100%!important}
 .note-actions-card #notebook-inspector-edit{color:var(--accent)!important;background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;border-color:color-mix(in srgb,var(--accent) 22%,var(--border))!important}
 .note-actions-card #notebook-inspector-edit svg{stroke:currentColor}
+
+
+/* v24.1 — Biblioteca de Cadernos com acabamento azul */
+#notebook-view-library .notebook-week-shelf{
+  border-color:color-mix(in srgb,var(--accent) 28%,var(--border))!important;
+  background:color-mix(in srgb,var(--accent) 2.5%,var(--surface))!important;
+  box-shadow:0 10px 28px rgba(24,72,136,.05)!important;
+}
+#notebook-view-library .notebook-week-card{
+  border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+  background:color-mix(in srgb,var(--accent) 3.5%,var(--surface))!important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;
+}
+#notebook-view-library .notebook-week-card:hover{
+  transform:translateY(-2px);
+  border-color:color-mix(in srgb,var(--accent) 58%,var(--border))!important;
+  background:color-mix(in srgb,var(--accent) 6%,var(--surface))!important;
+  box-shadow:0 10px 24px rgba(24,72,136,.09);
+}
+#notebook-view-library .notebook-area-shelf-head{
+  padding:0 2px 9px!important;
+  border-bottom:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));
+}
+#notebook-view-library .notebook-area-shelf-icon{
+  border-radius:10px;
+  background:color-mix(in srgb,var(--accent) 9%,transparent);
+}
+#notebook-view-library .notebook-book-card{
+  border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;
+  border-left:5px solid var(--accent)!important;
+  border-radius:13px!important;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%)!important;
+  box-shadow:0 9px 24px rgba(24,72,136,.06)!important;
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+}
+#notebook-view-library .notebook-book-card::after{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 5px;
+  width:1px;
+  background:color-mix(in srgb,var(--accent) 22%,transparent);
+  pointer-events:none;
+}
+#notebook-view-library .notebook-book-card:hover{
+  transform:translateY(-3px)!important;
+  border-color:color-mix(in srgb,var(--accent) 72%,var(--border))!important;
+  border-left-color:var(--accent)!important;
+  box-shadow:0 14px 30px rgba(24,72,136,.12)!important;
+}
+#notebook-view-library .notebook-book-icon{
+  width:38px;height:42px;
+  display:grid;place-items:center;
+  border-radius:7px 11px 11px 7px;
+  background:var(--accent);
+  color:#fff!important;
+  box-shadow:inset 4px 0 rgba(255,255,255,.15),0 5px 12px rgba(24,72,136,.13);
+}
+#notebook-view-library .notebook-book-icon svg{width:21px;height:21px}
+#notebook-view-library .notebook-book-card h3{
+  font-size:13px!important;
+  color:var(--text);
+}
+#notebook-view-library .notebook-book-meta{
+  padding-top:11px;
+  border-top:1px solid color-mix(in srgb,var(--accent) 12%,var(--border));
+}
+#notebook-view-library .notebook-book-meta b{
+  color:var(--accent);
+  font-size:13px!important;
+}
