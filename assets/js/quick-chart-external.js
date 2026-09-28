@@ -30,7 +30,7 @@
       body:JSON.stringify({username,pin,...body})
     });
     const data=await res.json().catch(()=>({}));
-    if(!res.ok) throw new Error(data.error||"Não foi possível acessar o prontuário.");
+    if(!res.ok) throw new Error(data.error||"Não foi possível acessar o caderno.");
     return data;
   }
 
@@ -78,7 +78,7 @@
       gateError.hidden=false;
     }finally{
       enterBtn.disabled=false;
-      enterBtn.textContent="Abrir prontuário";
+      enterBtn.textContent="Abrir caderno";
     }
   }
 
@@ -107,7 +107,7 @@
 
   async function clearAll(){
     if(!username||!pin) return;
-    if(!confirm("Limpar todo o conteúdo deste prontuário rápido?")) return;
+    if(!confirm("Limpar todo o conteúdo deste caderno temporário?")) return;
     try{
       await call({action:"clear"});
       fill({});
