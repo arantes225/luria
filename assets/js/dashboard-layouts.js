@@ -117,7 +117,7 @@
     return `<div class="dl-card-heading"><h3><span class="dl-heading-icon" aria-hidden="true">${icon}</span> ${escape(title)}</h3>${href ? `<a href="${href}" aria-label="Ver ${escape(title)}">Ver mais ›</a>` : ""}</div>`;
   }
 
-  function activity(item, action = true) {
+  function activity(item, action = true, showDate = true) {
     const label = typeof kindMeta === "function" ? kindMeta(item.kind).label : "Atividade";
     const href =
       item.kind === "exam" || item.kind === "registration_deadline"
@@ -126,11 +126,11 @@
           ? "/caderno/"
           : "/cronograma/";
     const area = item.area ? `<span class="dl-chip">${escape(item.area)}</span>` : "";
-    return `<li class="dl-activity"><span class="dl-activity-date">${escape(shortDate(item.activity_date))}</span><span class="dl-activity-dot" aria-hidden="true"></span><div class="dl-activity-info"><strong>${escape(item.title || label)}</strong><small>${escape(label)} ${area}</small></div>${action ? `<a class="dl-start" href="${escape(href)}" aria-label="Abrir ${escape(item.title || label)}">▶ <span>Abrir</span></a>` : ""}</li>`;
+    return `<li class="dl-activity">${showDate ? `<span class="dl-activity-date">${escape(shortDate(item.activity_date))}</span>` : ""}<span class="dl-activity-dot" aria-hidden="true"></span><div class="dl-activity-info"><strong>${escape(item.title || label)}</strong><small>${escape(label)} ${area}</small></div>${action ? `<a class="dl-start" href="${escape(href)}" aria-label="Abrir ${escape(item.title || label)}">▶ <span>Abrir</span></a>` : ""}</li>`;
   }
 
-  function activityList(list, limit = 5) {
-    return list.length ? `<ol class="dl-timeline">${list.slice(0, limit).map((item) => activity(item)).join("")}</ol>`
+  function activityList(list, limit = 5, showDate = true) {
+    return list.length ? `<ol class="dl-timeline">${list.slice(0, limit).map((item) => activity(item, true, showDate)).join("")}</ol>`
       : '<p class="dl-empty">Nenhuma atividade programada para este período.</p>';
   }
 
@@ -187,11 +187,13 @@
   }
 
   function layout1(data) {
-    const todayItems = items().filter((item) => item.activity_date === dayISO(selectedDate));
-    const dayLessons = window.luriaDashboardDayLessons?.[dayISO(selectedDate)] || { completed: 0, total: 0 };
+    const today = new Date();
+    const todayISO = dayISO(today);
+    const todayItems = items().filter((item) => item.activity_date === todayISO);
+    const dayLessons = window.luriaDashboardDayLessons?.[todayISO] || { completed: 0, total: 0 };
     const done = dayLessons.completed; const total = dayLessons.total;
     const pct = total ? Math.round(done / total * 100) : 0;
-    return `<div class="dl-grid dl-layout-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Hoje · Agenda", "/cronograma/")}<div class="dl-day-nav"><button data-dl-day="-1" aria-label="Dia anterior">‹</button><span>${escape(readableDate(selectedDate))}</span><button data-dl-day="1" aria-label="Próximo dia">›</button></div>${activityList(todayItems, 10)}</section><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}${activityList(todayItems, 10, false)}</section><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
   }
 
   function layout2(data) {
