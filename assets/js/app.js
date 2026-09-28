@@ -6005,3 +6005,22 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+/* PWA sidebar anchors v31 — streak/mode fixed; Trabalho PCR/mode fixed */
+(function(){
+ const style=document.createElement("style");style.id="luria-pwa-sidebar-anchors-v31";style.textContent=`
+ @media(max-width:980px){
+  html.pwa-standalone body #sidebar.sidebar{overflow:hidden!important;display:flex!important;flex-direction:column!important;height:100dvh!important}
+  html.pwa-standalone body #sidebar.sidebar .sidebar-top{position:relative!important;top:auto!important;margin-top:0!important;padding-top:0!important;flex:0 0 auto!important}
+  html.pwa-standalone body #sidebar.sidebar .nav,
+  html.pwa-standalone body #sidebar.sidebar .nav-study,
+  html.pwa-standalone body #sidebar.sidebar .nav-work{flex:1 1 auto!important;min-height:0!important;overflow-y:auto!important;overflow-x:hidden!important;-webkit-overflow-scrolling:touch!important;overscroll-behavior:contain!important}
+  html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+  html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+  html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{position:relative!important;flex:0 0 auto!important;margin-top:8px!important;padding-top:8px!important;padding-bottom:max(8px,env(safe-area-inset-bottom))!important;background:var(--sidebar)!important;z-index:12!important}
+  html.pwa-standalone body #sidebar.sidebar .streak-mini,
+  html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{flex-shrink:0!important}
+  html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
+  html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .luria-mode-footer-switch{flex-shrink:0!important}
+ }`;document.head.appendChild(style);
+})();
