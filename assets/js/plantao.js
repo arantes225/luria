@@ -51,7 +51,7 @@
     arrestStartedAt:null,
     penalties:0, criticalElapsed:0, diagnosis:null, disposition:null, busy:false,
     phoneCases:[], phoneCase:null, phoneSession:null, phoneTurn:0, phoneMode:false, phoneUsedChoices:new Set(),
-    filters:{specialty:"",difficulty:""},
+    filters:{specialty:"",difficulty:"",query:""}, activeSession:null,
     phoneSearch:"", phoneArea:"", phoneNewChat:false
   };
 
@@ -312,6 +312,15 @@
       .limit(100);
     state.sessions=sessionsRes.error ? [] : (sessionsRes.data || []);
 
+    const activeSessionRes = await sb.from("clinical_case_sessions")
+      .select("id,case_id,status,started_at,elapsed_minutes,score,result,state,action_log")
+      .eq("user_id",user.id)
+      .eq("status","in_progress")
+      .order("started_at",{ascending:false})
+      .limit(1)
+      .maybeSingle();
+    state.activeSession = activeSessionRes.error ? null : (activeSessionRes.data || null);
+
     const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
     const difficulties=[...new Set(state.cases.map(x=>x.difficulty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
     buildSiteFilter("specialty",specialties);
@@ -419,9 +428,51 @@
   function renderLibrary() {
     const specialty=state.filters.specialty || "";
     const difficulty=state.filters.difficulty || "";
-    const visibleCases=state.cases.filter(item=>(!specialty || item.specialty===specialty) && (!difficulty || item.difficulty===difficulty));
-    $("plantao-case-count").textContent=state.cases.length;
-    $("plantao-session-count").textContent=state.sessions.length;
+    const query=normalizeLabel(state.filters.query || "");
+    const visibleCases=state.cases.filter(item=>{
+      if(specialty && item.specialty!==specialty) return false;
+      if(difficulty && item.difficulty!==difficulty) return false;
+      if(!query) return true;
+      const haystack=normalizeLabel([
+        item.title,item.summary,item.setting,item.specialty,item.difficulty,
+        item.presentation?.chief_complaint,item.presentation?.display_title,caseMateria(item)
+      ].filter(Boolean).join(" "));
+      return haystack.includes(query);
+    });
+
+    const countEl=$("plantao-case-count");
+    const sessionEl=$("plantao-session-count");
+    const visibleCount=$("plantao-visible-count");
+    if(countEl) countEl.textContent=state.cases.length;
+    if(sessionEl) sessionEl.textContent=state.sessions.length;
+    if(visibleCount) visibleCount.textContent=visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
+
+    const chips=$("plantao-specialty-chips");
+    if(chips){
+      const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
+      chips.innerHTML=["",...specialties].map(value=>`
+        <button type="button" class="plantao-specialty-chip${value===specialty?" active":""}" data-specialty-chip="${esc(value)}">
+          ${esc(value||"Todos")}
+        </button>
+      `).join("");
+    }
+
+    const resumeCard=$("plantao-resume-card");
+    if(resumeCard){
+      const active=state.activeSession;
+      const item=active ? state.cases.find(x=>String(x.id)===String(active.case_id)) : null;
+      resumeCard.hidden=!item;
+      if(item){
+        const title=item.presentation?.chief_complaint || item.presentation?.display_title || item.summary || item.title || "Caso em andamento";
+        $("plantao-resume-title").textContent=title;
+        $("plantao-resume-meta").textContent=[item.specialty,item.difficulty].filter(Boolean).join(" · ") || "Caso em andamento";
+        const elapsed=Math.max(0,Number(active.elapsed_minutes||0));
+        const pct=Math.min(85,Math.max(12,elapsed*2.5));
+        const bar=$("plantao-resume-progress-bar");
+        if(bar) bar.style.width=pct+"%";
+      }
+    }
+
     const grid=$("plantao-case-grid");
     const empty=$("plantao-empty");
     const randomButton=$("plantao-random-case");
@@ -433,69 +484,32 @@
     }
     empty.hidden=true;
 
-    const grouped=new Map();
-    visibleCases.forEach(item=>{
-      const area=item.specialty||"Outros";
+    grid.innerHTML=visibleCases.map(item=>{
+      const best=bestScore(item.id);
+      const attempts=state.sessions.filter(x=>x.case_id===item.id && x.status==="completed").length;
+      const title=item.presentation?.chief_complaint || item.presentation?.display_title || item.summary || item.title || "Caso clínico";
       const materia=caseMateria(item);
-      if(!grouped.has(area)) grouped.set(area,new Map());
-      const subjects=grouped.get(area);
-      if(!subjects.has(materia)) subjects.set(materia,[]);
-      subjects.get(materia).push(item);
-    });
-
-    const areaOrder=["Clínica Médica","Cirurgia Geral","Pediatria","Ginecologia e Obstetrícia"];
-    const sortedAreas=[...grouped.keys()].sort((a,b)=>{
-      const ia=areaOrder.indexOf(a), ib=areaOrder.indexOf(b);
-      if(ia!==-1||ib!==-1) return (ia===-1?999:ia)-(ib===-1?999:ib);
-      return String(a).localeCompare(String(b),"pt-BR");
-    });
-
-    grid.innerHTML=sortedAreas.map(area=>{
-      const subjects=grouped.get(area);
-      const subjectNames=[...subjects.keys()].sort((a,b)=>{
-        if(a==="Outros") return 1;
-        if(b==="Outros") return -1;
-        return String(a).localeCompare(String(b),"pt-BR");
-      });
-      const subjectHtml=subjectNames.map(materia=>{
-        const items=subjects.get(materia);
-        const cards=items.map(item=>{
-          const best=bestScore(item.id);
-          const attempts=state.sessions.find(x=>x.case_id===item.id && x.status==="completed")?.attempt_count || (best==null ? 0 : 1);
-          return `
-            <article class="plantao-case-card">
-              <div class="plantao-case-card-head">
-                <div>
-                  <h3>${esc(item.presentation?.chief_complaint || item.presentation?.display_title || item.summary || "Queixa não informada")}</h3>
-                  <div class="plantao-case-tags">
-                    <span>${esc(item.difficulty)}</span>
-                    <span>${esc(item.setting)}</span>
-                  </div>
-                </div>
-                ${best==null ? "" : `<span class="badge accent">Melhor: ${Math.round(best)}/100 · ${attempts} tentativa${attempts===1?"":"s"}</span>`}
-              </div>
-              <p>Paciente aguardando avaliação. O diagnóstico será revelado somente após a conclusão do caso.</p>
-              <button class="button primary" type="button" data-start-case="${esc(item.id)}">Iniciar caso</button>
-            </article>
-          `;
-        }).join("");
-        return `
-          <section class="plantao-subject-group">
-            <div class="plantao-subject-head">
-              <h3>${esc(materia)}</h3>
-              <span>${items.length} caso${items.length===1?"":"s"}</span>
-            </div>
-            <div class="plantao-subject-cases">${cards}</div>
-          </section>
-        `;
-      }).join("");
+      const summary=item.summary || item.presentation?.opening || "Paciente aguardando avaliação na sala de emergência.";
+      const diff=String(item.difficulty||"").toLowerCase();
       return `
-        <section class="plantao-area-group">
-          <div class="plantao-area-head">
-            <h2>${esc(area)}</h2>
+        <article class="plantao-case-card" data-difficulty="${esc(diff)}">
+          <div class="plantao-case-card-visual" aria-hidden="true">
+            <span>${esc((item.specialty||"Caso clínico").slice(0,2).toUpperCase())}</span>
           </div>
-          <div class="plantao-area-subjects">${subjectHtml}</div>
-        </section>
+          <div class="plantao-case-card-body">
+            <div class="plantao-case-card-topline">
+              <span class="plantao-case-specialty">${esc(item.specialty||"Clínica")}</span>
+              <span class="plantao-case-difficulty">${esc(item.difficulty||"")}</span>
+            </div>
+            <h3>${esc(title)}</h3>
+            <p>${esc(summary)}</p>
+            <div class="plantao-case-card-meta">
+              <span>${esc(materia)}</span>
+              ${best==null ? "" : `<span>Melhor: ${Math.round(best)}/100${attempts ? " · "+attempts+"x" : ""}</span>`}
+            </div>
+            <button class="button primary" type="button" data-start-case="${esc(item.id)}">Iniciar caso →</button>
+          </div>
+        </article>
       `;
     }).join("");
   }
@@ -1017,9 +1031,9 @@
 
   document.addEventListener("click",()=>{
     closeSiteFilters();
-    if(filterMenu && !filterMenu.hidden){
+    if(filterMenuToggle && filterMenu && !filterMenu.hidden){
       filterMenu.hidden=true;
-      filterMenuToggle?.setAttribute("aria-expanded","false");
+      filterMenuToggle.setAttribute("aria-expanded","false");
     }
   });
   document.addEventListener("keydown",event=>{if(event.key==="Escape") closeSiteFilters();});
@@ -1038,6 +1052,31 @@
     if(event.key==="Escape" && !$("plantao-report-overlay")?.hidden) closeExamReport();
   });
 
+
+  $("plantao-case-search")?.addEventListener("input",event=>{
+    state.filters.query=event.currentTarget.value||"";
+    renderLibrary();
+  });
+
+  $("plantao-specialty-chips")?.addEventListener("click",event=>{
+    const button=event.target.closest("[data-specialty-chip]");
+    if(!button) return;
+    setSiteFilter("specialty",button.dataset.specialtyChip||"");
+  });
+
+  $("plantao-resume-case")?.addEventListener("click",async()=>{
+    const active=state.activeSession;
+    if(!active?.id) return;
+    const activeRes=await sb.from("clinical_case_sessions")
+      .select("id,case_id,status,started_at,completed_at,elapsed_minutes,score,result,state,action_log")
+      .eq("user_id",state.user.id)
+      .eq("id",active.id)
+      .maybeSingle();
+    if(!activeRes.error && activeRes.data){
+      await restoreClinicalSession(activeRes.data,"plantao-simulator");
+    }
+  });
+
   $("plantao-random-case")?.addEventListener("click",()=>{
     if(state.busy) return;
     const specialty=state.filters.specialty || "";
@@ -1051,6 +1090,8 @@
   $("plantao-filter-clear")?.addEventListener("click",()=>{
     state.filters.specialty="";
     state.filters.difficulty="";
+    state.filters.query="";
+    const caseSearch=$("plantao-case-search"); if(caseSearch) caseSearch.value="";
     ["specialty","difficulty"].forEach(kind=>{
       const label=$("plantao-filter-"+kind+"-label");
       if(label) label.textContent="Todas";
