@@ -122,3 +122,10 @@
 .daily-recent-status.is-won{background:#1d9a61}
 .daily-recent-status.is-lost{background:#d85a68}
 
+
+.daily-card-heading-copy{display:grid;gap:4px}
+.daily-card-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.daily-card-number,.daily-card-date{display:inline-flex;align-items:center;min-height:22px;font-size:10px;font-weight:800;color:var(--muted,#758195)}
+.daily-card-number{padding:0 7px;border-radius:999px;border:1px solid var(--border,#dfe5ec);background:var(--surface,#fff);color:var(--primary,#184888)}
+.daily-card-date::before{content:"•";margin-right:8px;color:var(--border,#cfd7e2)}
+.daily-hero{min-height:0;padding:0}
