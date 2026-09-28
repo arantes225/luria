@@ -699,7 +699,7 @@
       const patientAge=reportAgeLabel(item);
       const patientSexLabel=reportSexLabel(item);
       if(isDisasterCase(item)){
-        const victimCount=Array.isArray(item.presentation?.victims)?item.presentation.victims.length:0;
+        const victimCount=Number(item.presentation?.victim_count||0);
         return `
           <article class="plantao-case-card plantao-disaster-library-card" data-difficulty="${esc(diff)}">
             <div class="plantao-disaster-card-image">
