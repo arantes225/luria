@@ -3814,3 +3814,16 @@ body.theme-dark[data-page="caderno"] .notebook-color-palette{
   border-color:var(--border)!important;
   box-shadow:0 18px 40px rgba(0,0,0,.35)!important;
 }
+
+
+/* v24.7 — título segue a cor do tema */
+#notebook-document-title{
+  color:var(--accent)!important;
+}
+#notebook-document-title:hover{
+  color:color-mix(in srgb,var(--accent) 86%,var(--text))!important;
+}
+.notebook-title-inline-input{
+  color:var(--accent)!important;
+  caret-color:var(--accent)!important;
+}
