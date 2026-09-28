@@ -84,6 +84,24 @@
           <button class="button primary error-new-native" type="button" data-error-tab="create">＋ Novo erro</button>
         </section>
 
+        <section class="panel error-create-panel error-section" data-error-section="create">
+          <div class="panel-header error-create-head"><div><span class="badge accent">Novo erro</span><h2>Adicionar ao Caderno de Erros</h2><p>Registre o ponto que você quer revisar depois.</p></div><button class="button secondary" type="button" data-error-home-back>Voltar</button></div>
+          <div id="error-create-form" class="error-create-form">
+            <div class="error-form-grid">
+              <div class="error-field error-area-create-field"><span>Área *</span><div class="flash-area-picker"><button id="new-error-area-toggle" class="flash-click-select flash-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="new-error-area-label">Selecione a área</span><span class="flash-area-chevron" aria-hidden="true">⌄</span></button><div id="new-error-area-menu" class="flash-area-menu" role="listbox" hidden></div><input id="new-error-area" type="hidden" value=""></div></div>
+              <div class="error-field"><span>Matéria <small>(opcional)</small></span><div class="flash-subject-picker"><button id="new-error-materia-toggle" class="flash-click-select flash-subject-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" disabled><span id="new-error-materia-label">Selecione primeiro a área</span><span class="flash-subject-chevron" aria-hidden="true">⌄</span></button><div id="new-error-materia-menu" class="flash-subject-menu" role="listbox" hidden></div><input id="new-error-materia" type="hidden" value=""></div></div>
+              <label class="error-field full"><span>Tema</span><input id="new-error-theme" type="text" placeholder="Ex.: Insuficiência cardíaca"></label>
+              <label class="error-field full"><span>Pulo do Gato *</span><textarea id="new-error-ccq" rows="3" placeholder="Conceito central que você quer lembrar..."></textarea></label>
+              <label class="error-field full"><span>Questão <small>(opcional)</small></span><textarea id="new-error-question" rows="5"></textarea></label>
+              <label class="error-field full"><span>Resposta correta <small>(opcional)</small></span><textarea id="new-error-answer" rows="4"></textarea></label>
+              <label class="error-field full"><span>O que eu pensei <small>(opcional)</small></span><textarea id="new-error-thought" rows="4"></textarea></label>
+              <label class="error-field full error-image-field"><span>Imagem da questão <small>(opcional)</small></span><div class="error-image-input-row"><input id="new-error-image" type="file" accept="image/*"><button id="remove-new-error-image" class="button secondary error-image-remove" type="button" disabled>Apagar imagem</button></div><label class="error-image-keep-option"><input id="keep-new-error-image" type="checkbox"><span>Manter imagem no Caderno de Erros</span></label><button id="extract-error-image-text" class="button secondary error-image-extract" type="button" disabled>Extrair texto</button><span id="new-error-image-info" class="error-image-info" aria-live="polite"></span></label>
+            </div>
+            <datalist id="error-medical-areas" data-luria-general-area-list><option value="Clínica Médica"></option><option value="Pediatria"></option><option value="Ginecologia e Obstetrícia"></option><option value="Cirurgia Geral"></option><option value="Preventiva"></option></datalist>
+            <div class="error-create-actions"><button id="save-new-error" class="button primary" type="button">Salvar no Caderno de Erros</button><button id="cancel-new-error" class="button secondary" type="button">Cancelar</button><span id="new-error-status" class="error-status" aria-live="polite"></span></div>
+          </div>
+        </section>
+
         <section class="error-cat-spotlight" aria-label="Pulo do Gato em destaque">
           <div class="error-cat-logo" aria-hidden="true"><img class="error-cat-logo-lightbg" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt=""><img class="error-cat-logo-darkbg" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp" alt=""></div>
           <div class="error-cat-copy"><span class="error-cat-label">Destaque</span><strong id="error-cat-spotlight-text">Carregando seu Pulo do Gato...</strong><small id="error-cat-spotlight-meta">Uma ideia essencial para levar para a prova.</small></div>
@@ -130,24 +148,6 @@
               <button id="error-start-home-review" class="button primary error-side-primary" type="button">▶ Iniciar revisão</button>
             </section>
           </aside>
-        </section>
-
-        <section class="panel error-create-panel error-section" data-error-section="create">
-          <div class="panel-header error-create-head"><div><span class="badge accent">Novo erro</span><h2>Adicionar ao Caderno de Erros</h2><p>Registre o ponto que você quer revisar depois.</p></div><button class="button secondary" type="button" data-error-home-back>Voltar</button></div>
-          <div id="error-create-form" class="error-create-form">
-            <div class="error-form-grid">
-              <div class="error-field error-area-create-field"><span>Área *</span><div class="flash-area-picker"><button id="new-error-area-toggle" class="flash-click-select flash-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="new-error-area-label">Selecione a área</span><span class="flash-area-chevron" aria-hidden="true">⌄</span></button><div id="new-error-area-menu" class="flash-area-menu" role="listbox" hidden></div><input id="new-error-area" type="hidden" value=""></div></div>
-              <div class="error-field"><span>Matéria <small>(opcional)</small></span><div class="flash-subject-picker"><button id="new-error-materia-toggle" class="flash-click-select flash-subject-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" disabled><span id="new-error-materia-label">Selecione primeiro a área</span><span class="flash-subject-chevron" aria-hidden="true">⌄</span></button><div id="new-error-materia-menu" class="flash-subject-menu" role="listbox" hidden></div><input id="new-error-materia" type="hidden" value=""></div></div>
-              <label class="error-field full"><span>Tema</span><input id="new-error-theme" type="text" placeholder="Ex.: Insuficiência cardíaca"></label>
-              <label class="error-field full"><span>Pulo do Gato *</span><textarea id="new-error-ccq" rows="3" placeholder="Conceito central que você quer lembrar..."></textarea></label>
-              <label class="error-field full"><span>Questão <small>(opcional)</small></span><textarea id="new-error-question" rows="5"></textarea></label>
-              <label class="error-field full"><span>Resposta correta <small>(opcional)</small></span><textarea id="new-error-answer" rows="4"></textarea></label>
-              <label class="error-field full"><span>O que eu pensei <small>(opcional)</small></span><textarea id="new-error-thought" rows="4"></textarea></label>
-              <label class="error-field full error-image-field"><span>Imagem da questão <small>(opcional)</small></span><div class="error-image-input-row"><input id="new-error-image" type="file" accept="image/*"><button id="remove-new-error-image" class="button secondary error-image-remove" type="button" disabled>Apagar imagem</button></div><label class="error-image-keep-option"><input id="keep-new-error-image" type="checkbox"><span>Manter imagem no Caderno de Erros</span></label><button id="extract-error-image-text" class="button secondary error-image-extract" type="button" disabled>Extrair texto</button><span id="new-error-image-info" class="error-image-info" aria-live="polite"></span></label>
-            </div>
-            <datalist id="error-medical-areas" data-luria-general-area-list><option value="Clínica Médica"></option><option value="Pediatria"></option><option value="Ginecologia e Obstetrícia"></option><option value="Cirurgia Geral"></option><option value="Preventiva"></option></datalist>
-            <div class="error-create-actions"><button id="save-new-error" class="button primary" type="button">Salvar no Caderno de Erros</button><button id="cancel-new-error" class="button secondary" type="button">Cancelar</button><span id="new-error-status" class="error-status" aria-live="polite"></span></div>
-          </div>
         </section>
 
         <section class="error-review-panel error-section" data-error-section="review">
