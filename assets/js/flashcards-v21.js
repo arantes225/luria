@@ -31,8 +31,14 @@ function buildNavigation(){
  window.luriaFlashShow=show;
  const params=new URLSearchParams(location.search);loadLibrary().then(()=>{const reviewButton=tabs.querySelector('[data-v21-view="reviewhub"]');reviewButton?.click()});
 }
+function ensureReviewBackButton(){
+ const bar=document.getElementById("review-focus-toolbar");if(!bar||document.getElementById("flash-review-back"))return;
+ const b=document.createElement("button");b.id="flash-review-back";b.className="button secondary flash-review-back";b.type="button";b.innerHTML="← Voltar aos decks";
+ b.onclick=()=>{document.getElementById("finish-review-session")?.click();setTimeout(()=>{const tab=document.querySelector('[data-v21-tab="library"][data-v21-scope="all"]');if(tab)tab.click();else window.luriaFlashShow?.("library")},0)};
+ bar.prepend(b);
+}
 function fullscreen(){
  const bar=document.getElementById("review-focus-toolbar");if(!bar||document.getElementById("flash-v21-fullscreen"))return;const b=document.createElement("button");b.id="flash-v21-fullscreen";b.className="button secondary";b.type="button";b.textContent="Tela cheia";b.onclick=async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch{document.body.classList.toggle("flash-review-session-active")}};bar.append(b)
 }
-document.addEventListener("DOMContentLoaded",()=>{buildNavigation();ensureLibraryHero();fullscreen();let timer=0;["library-search","library-area","library-materia","library-active"].forEach(id=>document.getElementById(id)?.addEventListener(id==="library-search"?"input":"change",()=>{clearTimeout(timer);timer=setTimeout(rebuildDecks,id==="library-search"?180:0)}))});
+document.addEventListener("DOMContentLoaded",()=>{buildNavigation();ensureLibraryHero();ensureReviewBackButton();fullscreen();let timer=0;["library-search","library-area","library-materia","library-active"].forEach(id=>document.getElementById(id)?.addEventListener(id==="library-search"?"input":"change",()=>{clearTimeout(timer);timer=setTimeout(rebuildDecks,id==="library-search"?180:0)}))});
 })();
