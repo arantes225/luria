@@ -333,3 +333,61 @@ body[data-page="flashcards"] .flash-section[data-flash-section="library"]{margin
 .flash-section[data-flash-section="library"] .flash-ref-deck-stats{
   gap:10px!important;
 }
+
+
+/* LURIA Flashcards v25 — revisão de hoje */
+.flash-section[data-flash-section="review"] .flash-review-panel{max-width:1240px!important}
+.flash-review-header{
+  display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:end!important;
+  gap:20px!important;margin:6px 0 20px!important;padding:0 2px 17px!important;border-bottom:1px solid var(--border)!important
+}
+.flash-review-header h2{margin:0 0 5px!important;font-size:30px!important;font-weight:850!important;letter-spacing:-.04em!important}
+.flash-review-header p{margin:0!important;font-size:10.5px!important;color:var(--muted)!important}
+.review-progress-copy{
+  min-width:145px!important;padding:10px 13px!important;border:1px solid var(--border)!important;border-radius:13px!important;
+  background:var(--surface)!important;text-align:right!important
+}
+.review-progress-copy strong{display:block!important;font-size:15px!important;color:var(--accent)!important}
+.review-progress-copy small{display:block!important;margin-top:2px!important;font-size:8px!important;color:var(--muted)!important}
+
+.review-launcher{
+  position:relative!important;overflow:hidden!important;display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;gap:28px!important;
+  min-height:210px!important;padding:32px 36px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border))!important;border-radius:24px!important;
+  background:
+    radial-gradient(circle at 88% 18%,color-mix(in srgb,var(--accent) 15%,transparent) 0 90px,transparent 91px),
+    linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,var(--surface)),var(--surface) 58%)!important;
+  box-shadow:0 18px 50px rgba(15,35,65,.07)!important
+}
+.review-launcher::before{
+  content:""!important;position:absolute!important;left:0!important;top:28px!important;bottom:28px!important;width:4px!important;
+  border-radius:0 999px 999px 0!important;background:var(--accent)!important
+}
+.review-launcher-copy{max-width:690px!important}
+.review-launcher-copy .eyebrow{
+  display:inline-flex!important;align-items:center!important;min-height:26px!important;padding:0 10px!important;margin-bottom:12px!important;
+  border-radius:999px!important;background:var(--accent-soft)!important;color:var(--accent)!important;font-size:8px!important;font-weight:900!important;
+  letter-spacing:.04em!important;text-transform:uppercase!important
+}
+.review-launcher h3{margin:0 0 8px!important;font-size:28px!important;font-weight:850!important;letter-spacing:-.035em!important}
+.review-launcher-copy p{max-width:610px!important;margin:0!important;color:var(--muted)!important;font-size:11px!important;line-height:1.55!important}
+.review-launcher-action{
+  min-width:220px!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:center!important;
+  gap:12px!important;padding:20px!important;border:1px solid color-mix(in srgb,var(--accent) 13%,var(--border))!important;
+  border-radius:18px!important;background:color-mix(in srgb,var(--surface) 88%,transparent)!important;box-shadow:0 8px 26px rgba(15,35,65,.055)!important
+}
+.review-launcher-action strong{text-align:center!important;font-size:25px!important;line-height:1.1!important;letter-spacing:-.03em!important;color:var(--text)!important}
+#start-review-session{
+  width:100%!important;min-height:46px!important;border-radius:12px!important;font-size:10px!important;font-weight:850!important;
+  box-shadow:0 7px 18px color-mix(in srgb,var(--accent) 20%,transparent)!important
+}
+.review-launcher:hover{border-color:color-mix(in srgb,var(--accent) 32%,var(--border))!important;box-shadow:0 20px 55px rgba(15,35,65,.09)!important}
+
+@media(max-width:760px){
+  .flash-review-header{grid-template-columns:1fr!important;gap:10px!important}
+  .review-progress-copy{width:100%!important;text-align:left!important}
+  .review-launcher{grid-template-columns:1fr!important;gap:20px!important;min-height:0!important;padding:25px 22px!important}
+  .review-launcher h3{font-size:24px!important}
+  .review-launcher-action{min-width:0!important;width:100%!important}
+}
