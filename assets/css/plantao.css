@@ -5611,3 +5611,57 @@ body.plantao-module-entry .plantao-record-photo img{
   transform:scale(var(--face-scale,2))!important;
   transform-origin:var(--face-x,50%) var(--face-y,22%)!important;
 }
+
+
+/* === Sala de Emergência · home/library split prep v24 === */
+/* Início e Biblioteca são duas visões da mesma página. */
+body.plantao-module-entry .plantao-primary-switch-wrap .plantao-native-switch>button{
+  flex:1 1 0!important;
+}
+
+/* Início: destaque semanal + continuidade. Sem filtros de biblioteca. */
+body.plantao-module-entry[data-case-library-view="home"] .plantao-library-inner-switch,
+body.plantao-module-entry[data-case-library-view="home"] .plantao-filter-row{
+  display:none!important;
+}
+body.plantao-module-entry[data-case-library-view="home"] #plantao-resume-card:not([hidden]){
+  display:grid!important;
+  grid-template-columns:auto minmax(0,1fr) auto!important;
+  min-height:96px!important;
+  margin-top:2px!important;
+}
+body.plantao-module-entry[data-case-library-view="home"] .plantao-quick-grid{
+  gap:12px!important;
+}
+
+/* Biblioteca: mesma tela, mas abre o catálogo completo e seus filtros. */
+body.plantao-module-entry[data-case-library-view="library"] #plantao-resume-card{
+  display:none!important;
+}
+body.plantao-module-entry[data-case-library-view="library"] .plantao-library-inner-switch{
+  display:grid!important;
+}
+
+/* O título muda via JS; reduz o espaço quando o seletor interno fica oculto. */
+body.plantao-module-entry[data-case-library-view="home"] .plantao-library-toolbar{
+  gap:6px!important;
+}
+body.plantao-module-entry[data-case-library-view="home"] .plantao-cases-section-head{
+  padding-top:0!important;
+}
+
+/* Mantém a lateral na mesma posição em ambas as visões. */
+body.plantao-module-entry[data-case-library-view="home"] .plantao-library-side,
+body.plantao-module-entry[data-case-library-view="library"] .plantao-library-side{
+  align-self:start!important;
+}
+
+@media(max-width:760px){
+  body.plantao-module-entry[data-case-library-view="home"] #plantao-resume-card:not([hidden]){
+    grid-template-columns:auto minmax(0,1fr)!important;
+  }
+  body.plantao-module-entry[data-case-library-view="home"] #plantao-resume-card .button{
+    grid-column:1/-1!important;
+    width:100%!important;
+  }
+}
