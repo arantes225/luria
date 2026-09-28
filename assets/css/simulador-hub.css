@@ -870,3 +870,21 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-logo{
     min-height:40px!important;
   }
 }
+
+
+/* v15 — CTA e badge na mesma linha real do rodapé */
+.sim-hub-page .sim-hero-card .sim-hero-badge{
+  position:absolute!important;
+  left:auto!important;
+  right:18px!important;
+  bottom:16px!important;
+  margin:0!important;
+  align-self:auto!important;
+  justify-self:auto!important;
+}
+@media(max-width:760px){
+  .sim-hub-page .sim-hero-card .sim-hero-badge{
+    right:12px!important;
+    bottom:17px!important;
+  }
+}
