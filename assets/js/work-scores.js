@@ -233,7 +233,9 @@
 
   const categories = ["Todos","Favoritos","Plantão",...new Set(scores.map(s=>s.category))];
   const favKey = "luria:scores:favorites";
+  const recentKey = "luria:scores:recent";
   let favorites = new Set(JSON.parse(localStorage.getItem(favKey)||"[]"));
+  let recents = JSON.parse(localStorage.getItem(recentKey)||"[]");
   let activeCat = "Todos";
   let query = "";
 
@@ -241,23 +243,24 @@
     const root = $("#score-app");
     if (!root) return;
     root.innerHTML = `
-      <section class="score-hero">
-        <div><h2>Scores clínicos</h2><p>Ferramentas rápidas para consulta e cálculo à beira-leito, organizadas por contexto clínico e especialidade.</p></div>
-        <div class="score-hero-badge"><strong>${scores.length}</strong><span>scores</span></div>
-      </section>
+      <p class="score-intro">Scores clínicos rápidos para plantão, enfermaria e ambulatório. Busque pelo nome, condição clínica ou especialidade e mantenha os mais usados por perto.</p>
       <div class="score-warning"><span>ⓘ</span><div><strong>Apoio clínico, não substituto de julgamento médico.</strong> Confirme critérios, unidades, população validada e protocolo institucional antes de usar o resultado em decisão assistencial.</div></div>
       <section class="score-toolbar">
-        <label class="score-search"><input id="score-search" type="search" placeholder="Buscar por score, doença ou contexto…"><span>⌕</span></label>
-        <div class="score-tabs" id="score-tabs"></div>
+        <label class="score-search"><span class="score-search-icon">⌕</span><input id="score-search" type="search" placeholder="Buscar score, ex.: TEP, AVC, dor torácica..." autocomplete="off"><button id="score-search-clear" class="score-search-clear" type="button" aria-label="Limpar busca" hidden>×</button></label>
+        <div class="score-toolbar-count"><span id="score-total"></span></div>
       </section>
-      <section class="score-section"><div class="score-section-title"><h3 id="score-list-title">Todos os scores</h3><span id="score-count"></span></div><div class="score-grid" id="score-grid"></div></section>
+      <div class="score-tabs" id="score-tabs"></div>
+      <section class="score-shelf" id="score-favorites-shelf" hidden><div class="score-shelf-head"><div><h3>Favoritos</h3><p>Acesso rápido aos scores que você marcou.</p></div><span class="score-count" id="score-favorites-count">0</span></div><div class="score-grid" id="score-favorites-grid"></div></section>
+      <section class="score-shelf" id="score-recent-shelf" hidden><div class="score-shelf-head"><div><h3>Recentes</h3><p>Os últimos scores que você abriu.</p></div><span class="score-count" id="score-recent-count">0</span></div><div class="score-grid" id="score-recent-grid"></div></section>
+      <section class="score-section"><div class="score-section-title"><div><h3 id="score-list-title">Todos os scores</h3><p id="score-list-helper">Biblioteca clínica organizada por contexto.</p></div><span class="score-count" id="score-count"></span></div><div class="score-grid" id="score-grid"></div></section>
       <dialog class="score-modal" id="score-modal"></dialog>
     `;
     renderTabs(); renderCards();
-    $("#score-search").addEventListener("input", e=>{query=e.target.value.trim().toLowerCase();renderCards();});
+    const search=$("#score-search"), clear=$("#score-search-clear");
+    search.addEventListener("input", e=>{query=e.target.value.trim().toLowerCase();clear.hidden=!query;renderCards();});
+    clear.addEventListener("click",()=>{search.value="";query="";clear.hidden=true;search.focus();renderCards();});
     $("#score-modal").addEventListener("click", e=>{if(e.target.id==="score-modal") e.currentTarget.close();});
   }
-
   function renderTabs(){
     const box=$("#score-tabs");
     box.innerHTML=categories.map(c=>`<button class="score-tab ${c===activeCat?"active":""}" data-cat="${esc(c)}">${esc(c)}</button>`).join("");
@@ -272,33 +275,58 @@
     });
   }
 
+  function scoreCode(s){
+    const parts=s.name.replace(/[^A-Za-zÀ-ÿ0-9²₂-₉]+/g," ").trim().split(/\s+/);
+    if(parts.length===1) return parts[0].slice(0,4).toUpperCase();
+    return parts.slice(0,2).map(x=>x[0]).join("").toUpperCase();
+  }
+  function cardHtml(s){
+    const fav=favorites.has(s.id);
+    return `<article class="score-card">
+      <button class="score-fav ${fav?"active":""}" data-fav="${s.id}" type="button" aria-label="${fav?"Remover dos favoritos":"Adicionar aos favoritos"}">${fav?"★":"☆"}</button>
+      <button class="score-card-main" data-open="${s.id}" type="button" style="appearance:none;border:0;background:transparent;color:inherit;text-align:left;padding:0;width:100%;">
+        <span class="score-code">${esc(scoreCode(s))}</span>
+        <span class="score-card-copy"><strong>${esc(s.name)}</strong><p>${esc(s.desc)}</p><span class="score-card-meta"><span class="score-tag">${esc(s.category)}</span>${(s.tags||[]).slice(0,2).map(t=>`<span class="score-tag">${esc(t)}</span>`).join("")}</span></span>
+        <span class="score-arrow">›</span>
+      </button>
+    </article>`;
+  }
+  function bindCards(root){
+    $$("[data-fav]",root).forEach(b=>b.onclick=e=>{e.stopPropagation();toggleFav(b.dataset.fav);});
+    $$("[data-open]",root).forEach(b=>b.onclick=()=>openScore(b.dataset.open));
+  }
+  function renderShelves(){
+    const favs=scores.filter(s=>favorites.has(s.id)).slice(0,6);
+    const recentScores=recents.map(id=>scores.find(s=>s.id===id)).filter(Boolean).slice(0,4);
+    const fs=$("#score-favorites-shelf"), rs=$("#score-recent-shelf");
+    fs.hidden=!favs.length||activeCat==="Favoritos"||!!query;
+    rs.hidden=!recentScores.length||activeCat==="Favoritos"||!!query;
+    $("#score-favorites-count").textContent=favs.length;
+    $("#score-recent-count").textContent=recentScores.length;
+    $("#score-favorites-grid").innerHTML=favs.map(cardHtml).join("");
+    $("#score-recent-grid").innerHTML=recentScores.map(cardHtml).join("");
+    bindCards($("#score-favorites-grid")); bindCards($("#score-recent-grid"));
+  }
   function renderCards(){
     const list=filtered(), grid=$("#score-grid");
-    $("#score-count").textContent=`${list.length} encontrado(s)`;
+    $("#score-count").textContent=String(list.length);
+    $("#score-total").textContent=list.length+" "+(list.length===1?"score":"scores");
     $("#score-list-title").textContent=activeCat==="Todos"?"Todos os scores":activeCat;
-    if(!list.length){grid.innerHTML='<div class="score-empty">Nenhum score encontrado com esses filtros.</div>';return;}
-    grid.innerHTML=list.map(s=>`
-      <article class="score-card">
-        <div class="score-card-head">
-          <div class="score-card-title"><small>${esc(s.category)}</small><strong>${esc(s.name)}</strong></div>
-          <button class="score-fav ${favorites.has(s.id)?"active":""}" data-fav="${s.id}" title="Favoritar">★</button>
-        </div>
-        <p>${esc(s.desc)}</p>
-        <div class="score-card-tags">${(s.tags||[]).map(t=>`<span class="score-tag">${esc(t)}</span>`).join("")}</div>
-        <button class="score-open" data-open="${s.id}">Calcular</button>
-      </article>`).join("");
-    $$("[data-fav]",grid).forEach(b=>b.onclick=()=>toggleFav(b.dataset.fav));
-    $$("[data-open]",grid).forEach(b=>b.onclick=()=>openScore(b.dataset.open));
+    $("#score-list-helper").textContent=activeCat==="Todos"?"Biblioteca clínica organizada por contexto.":"Scores de "+activeCat.toLowerCase()+".";
+    if(!list.length){grid.innerHTML='<div class="score-empty">Nenhum score encontrado com esses filtros.</div>';}else{grid.innerHTML=list.map(cardHtml).join("");bindCards(grid);}
+    renderShelves();
   }
 
   function toggleFav(id){
     favorites.has(id)?favorites.delete(id):favorites.add(id);
     localStorage.setItem(favKey,JSON.stringify([...favorites]));
-    renderCards();
+    renderTabs(); renderCards();
   }
 
   function openScore(id){
     const s=scores.find(x=>x.id===id), d=$("#score-modal"); if(!s)return;
+    recents=[id,...recents.filter(x=>x!==id)].slice(0,8);
+    localStorage.setItem(recentKey,JSON.stringify(recents));
     d.innerHTML=`
       <div class="score-modal-head">
         <div><small>${esc(s.category)}</small><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p></div>
@@ -319,7 +347,7 @@
     renderForm(s);
     $("#score-copy").onclick=()=>copyResult(s);
     $("#score-reset").onclick=()=>{renderForm(s);};
-    d.showModal();
+    d.showModal(); renderShelves();
   }
 
   function renderForm(s){
