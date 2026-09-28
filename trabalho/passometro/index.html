@@ -115,6 +115,13 @@
     .pm-med-row input,.pm-med-row select,.pm-antibiotic-row input,.pm-antibiotic-row select{max-width:100%;min-width:0}
     .pm-subfield{display:grid;gap:5px}
     .pm-subfield label{font-size:9px;color:var(--muted);font-weight:800}
+    .pm-drug-field{position:relative}
+    .pm-drug-suggestions{position:absolute;z-index:120;left:0;right:0;top:calc(100% + 5px);max-height:240px;overflow:auto;padding:6px;border:1px solid var(--border);border-radius:11px;background:var(--surface);box-shadow:0 14px 34px rgba(15,35,65,.16)}
+    .pm-drug-suggestions[hidden]{display:none!important}
+    .pm-drug-option{display:block;width:100%;padding:9px 10px;border:0;border-radius:7px;background:transparent;color:var(--text);text-align:left;cursor:pointer}
+    .pm-drug-option:hover,.pm-drug-option:focus{background:var(--surface-2);outline:none}
+    .pm-drug-option strong{display:block;font-size:10px}.pm-drug-option small{display:block;margin-top:3px;color:var(--muted);font-size:8px;line-height:1.35}
+    .pm-drug-source{display:block;margin-top:4px;color:var(--accent);font-size:7px;font-weight:800}
     .pm-remove{width:34px;height:40px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--danger);font-size:17px;cursor:pointer}
     .pm-add-row{justify-self:start;min-height:34px;padding:0 11px;border:1px dashed var(--border);border-radius:9px;background:var(--surface);color:var(--accent);font-weight:800;cursor:pointer}
     .pm-priority{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:4px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
@@ -445,6 +452,75 @@
     const esc = (v="") => String(v).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
     const uid = () => (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36)+Math.random().toString(36).slice(2));
     const fmtDate = iso => { if(!iso) return ""; const [y,m,d]=iso.split("-"); return `${d}/${m}/${y}`; };
+    let drugCatalog=[];
+    const antimicrobialNames=new Set(["penicilina g cristalina","benzatina","penicilina v","ampicilina","amoxicilina","oxacilina","piperacilina/tazobactam","amoxicilina/clavulanato","cefalexina","cefazolina","cefuroxima","cefoxitina","ceftriaxona","cefotaxima","ceftazidima","cefepima","ceftarolina","meropenem","imipenem/cilastatina","ertapenem","azitromicina","claritromicina","eritromicina","clindamicina","doxiciclina","tetraciclina","minociclina","tigeciclina","gentamicina","amicacina","tobramicina","estreptomicina","ciprofloxacino","levofloxacino","moxifloxacino","norfloxacino","sulfametoxazol + trimetoprima","vancomicina","teicoplanina","linezolida","daptomicina","metronidazol","tinidazol","nitrofurantoína","fosfomicina","polimixina b","colistina","rifampicina","rifabutina","aztreonam","cloranfenicol","fidaxomicina","mupirocina","ácido fusídico"]);
+    const norm=s=>String(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    async function loadDrugCatalog(){
+      try{
+        const {data,error}=await window.supabaseClient.from("bulario_catalog").select("id,name,active_ingredient,therapeutic_class,pharmacological_class,data").order("name").limit(1000);
+        if(error) throw error;
+        drugCatalog=data||[];
+      }catch(err){console.warn("Passômetro: não foi possível carregar o Bulário.",err);}
+    }
+    function isAntimicrobial(row){
+      const hay=norm([row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class].join(" "));
+      return hay.includes("anti-infecc")||hay.includes("antibiot")||[row.name,row.active_ingredient].some(v=>antimicrobialNames.has(norm(v)));
+    }
+    function bestDrugMatches(term,type){
+      const q=norm(term).trim(); if(q.length<2) return [];
+      return drugCatalog.filter(row=>{
+        if(type==="antibiotic"&&!isAntimicrobial(row)) return false;
+        return [row.name,row.active_ingredient].some(v=>norm(v).includes(q));
+      }).sort((a,b)=>{
+        const av=a.data?.status==="posology_verified"?2:a.data?.status==="verified"?1:0;
+        const bv=b.data?.status==="posology_verified"?2:b.data?.status==="verified"?1:0;
+        const ae=norm(a.name)===q||norm(a.active_ingredient)===q?1:0;
+        const be=norm(b.name)===q||norm(b.active_ingredient)===q?1:0;
+        return be-ae||bv-av||a.name.localeCompare(b.name,"pt-BR");
+      }).slice(0,7);
+    }
+    function routeToCode(route){
+      const r=norm(route);
+      if(r.includes("oral")) return "VO";
+      if(r.includes("intraven")||r.includes("endoven")) return "EV";
+      if(r.includes("intramus")) return "IM";
+      if(r.includes("subcut")) return "SC";
+      if(r.includes("intranas")) return "IN";
+      return "";
+    }
+    function doseParts(text){
+      const m=String(text||"").match(/(?:iniciar\s+)?(\d+(?:[.,]\d+)?)(?:\s*[–-]\s*(\d+(?:[.,]\d+)?))?\s*(mg|g|mcg|UI|mL)/i);
+      if(!m) return null;
+      return {dose:m[2]?m[1]+"–"+m[2]:m[1],unit:m[3]};
+    }
+    function applyDrugSuggestion(row,input){
+      const wrap=input.closest(".pm-med-row,.pm-antibiotic-row"); if(!wrap) return;
+      const formData=row.data||{}, formulations=Array.isArray(formData.formulations)?formData.formulations:[];
+      const f=formulations[0];
+      input.value=row.active_ingredient||row.name;
+      if(!f) return;
+      const parts=doseParts(f.dose_text);
+      if(parts){
+        const dose=wrap.querySelector('[data-k="dose"]'), unit=wrap.querySelector('[data-k="unit"]');
+        if(dose&&!dose.value) dose.value=parts.dose;
+        if(unit&&!unit.value) unit.value=parts.unit;
+      }
+      const route=wrap.querySelector('[data-k="route"]'), code=routeToCode(f.route);
+      if(route&&code&&!route.value&&[...route.options].some(o=>o.value===code||o.text===code)) route.value=code;
+      const schedule=wrap.querySelector('[data-k="schedule"]');
+      if(schedule&&!schedule.value) schedule.value=f.interval_text||"";
+    }
+    function renderDrugSuggestions(input){
+      const box=input.parentElement.querySelector(".pm-drug-suggestions"),type=input.dataset.drugInput;
+      const rows=bestDrugMatches(input.value,type);
+      if(!rows.length){box.hidden=true;box.innerHTML="";return;}
+      box.innerHTML=rows.map(row=>{
+        const verified=row.data?.status==="posology_verified";
+        return '<button type="button" class="pm-drug-option" data-drug-id="'+row.id+'"><strong>'+esc(row.active_ingredient||row.name)+'</strong><small>'+esc(row.name!==row.active_ingredient?row.name+" · ":"")+esc(row.pharmacological_class||row.therapeutic_class||"")+'</small><span class="pm-drug-source">'+(verified?"Posologia conferida · preencher sugestão":"Cadastrado · preencher nome")+'</span></button>';
+      }).join("");
+      box.hidden=false;
+    }
+
 
     function load(){
       try{ state.decks = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); }catch{ state.decks=[]; }
@@ -644,7 +720,7 @@
 
     function addMedicationRow(v={}){
       const row=document.createElement("div"); row.className="pm-med-row"; row.innerHTML=`
-        <div class="pm-subfield"><label>Medicamento</label><input data-k="name" value="${esc(v.name||"")}" placeholder="Ex.: furosemida"></div>
+        <div class="pm-subfield pm-drug-field"><label>Medicamento</label><input data-k="name" data-drug-input="medication" value="${esc(v.name||"")}" placeholder="Ex.: furosemida" autocomplete="off"><div class="pm-drug-suggestions" hidden></div></div>
         <div class="pm-subfield"><label>Dose</label><input data-k="dose" value="${esc(v.dose||"")}" placeholder="40"></div>
         <div class="pm-subfield"><label>Unidade</label><select data-k="unit"><option></option><option>mg</option><option>g</option><option>mcg</option><option>UI</option><option>mL</option></select></div>
         <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>SC</option><option>IN</option><option>Outra</option></select><input data-k="routeOther" value="${esc(v.routeOther||"")}" placeholder="Qual outra via?" hidden></div>
@@ -656,7 +732,7 @@
     }
     function addAntibioticRow(v={}){
       const row=document.createElement("div"); row.className="pm-antibiotic-row"; row.innerHTML=`
-        <div class="pm-subfield"><label>Antibiótico</label><input data-k="name" value="${esc(v.name||"")}" placeholder="Ex.: ceftriaxona"></div>
+        <div class="pm-subfield pm-drug-field"><label>Antibiótico</label><input data-k="name" data-drug-input="antibiotic" value="${esc(v.name||"")}" placeholder="Ex.: ceftriaxona" autocomplete="off"><div class="pm-drug-suggestions" hidden></div></div>
         <div class="pm-subfield"><label>Dose</label><input data-k="dose" value="${esc(v.dose||"")}" placeholder="2"></div>
         <div class="pm-subfield"><label>Unidade</label><select data-k="unit"><option></option><option>mg</option><option>g</option><option>mcg</option><option>UI</option><option>mL</option></select></div>
         <div class="pm-subfield"><label>Via</label><select data-k="route"><option></option><option>VO</option><option>EV</option><option>IM</option><option>Outra</option></select><input data-k="routeOther" value="${esc(v.routeOther||"")}" placeholder="Qual outra via?" hidden></div>
@@ -704,6 +780,7 @@
       save(); closeDialog("pm-patient-dialog"); renderPatients();
     });
 
+    loadDrugCatalog();
     load();
   })();
   </script>
