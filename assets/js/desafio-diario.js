@@ -24,6 +24,8 @@
     time: document.getElementById("daily-time"),
     attempts: document.getElementById("daily-attempts"),
     recent: document.getElementById("daily-recent-list"),
+    totalDone: document.getElementById("daily-total-done"),
+    averageClues: document.getElementById("daily-average-clues"),
     result: document.getElementById("daily-result"),
     resultIcon: document.getElementById("daily-result-icon"),
     resultKicker: document.getElementById("daily-result-kicker"),
@@ -40,6 +42,13 @@
     }).formatToParts(new Date());
     const value = Object.fromEntries(parts.map(p => [p.type, p.value]));
     return value.year + "-" + value.month + "-" + value.day;
+  }
+
+  function selectedDateISO() {
+    const today = saoPauloDateISO();
+    const requested = new URLSearchParams(window.location.search).get("date");
+    if (!requested || !/^\d{4}-\d{2}-\d{2}$/.test(requested)) return today;
+    return requested <= today ? requested : today;
   }
 
   function formatDate(iso, withWeekday = false) {
@@ -133,38 +142,79 @@
 
   async function loadRecent() {
     try {
-      const { data: rows, error } = await sb
-        .from("daily_challenge_progress")
-        .select("challenge_id,status,completed_at,updated_at")
-        .eq("user_id", user.id)
-        .in("status", ["won","lost"])
-        .order("updated_at", { ascending: false })
-        .limit(5);
-      if (error || !rows?.length) return;
+      const today = saoPauloDateISO();
 
-      const ids = rows.map(r => r.challenge_id);
       const { data: challenges, error: challengeError } = await sb
         .from("daily_challenges")
         .select("id,challenge_date,area")
-        .in("id", ids);
-      if (challengeError) return;
+        .lt("challenge_date", today)
+        .eq("active", true)
+        .order("challenge_date", { ascending: false })
+        .limit(5);
 
-      const byId = Object.fromEntries((challenges || []).map(c => [String(c.id), c]));
-      els.recent.innerHTML = rows.map(row => {
-        const c = byId[String(row.challenge_id)];
-        if (!c) return "";
-        const lost = row.status === "lost";
-        return '<div class="daily-recent-item">' +
+      if (challengeError) throw challengeError;
+      if (!challenges?.length) {
+        els.recent.innerHTML = '<div class="daily-recent-empty">Nenhum desafio anterior disponível.</div>';
+        return;
+      }
+
+      const ids = challenges.map(c => c.id);
+      const { data: rows, error: progressError } = await sb
+        .from("daily_challenge_progress")
+        .select("challenge_id,status,revealed_clues,attempts")
+        .eq("user_id", user.id)
+        .in("challenge_id", ids);
+
+      if (progressError) throw progressError;
+      const byId = Object.fromEntries((rows || []).map(r => [String(r.challenge_id), r]));
+
+      els.recent.innerHTML = challenges.map(c => {
+        const p = byId[String(c.id)];
+        const status = p?.status || "not_started";
+        const statusClass = status === "won" ? "is-won" : status === "lost" ? "is-lost" : "is-pending";
+        const statusIcon = status === "won" ? "✓" : status === "lost" ? "×" : "→";
+        const statusLabel = status === "won" ? "Concluído" : status === "lost" ? "Encerrado" : p ? "Continuar" : "Fazer";
+        return '<button class="daily-recent-item" type="button" data-date="' + esc(c.challenge_date) + '">' +
           '<span class="daily-recent-cal">▣</span>' +
-          '<div class="daily-recent-copy"><strong>' + esc(formatDate(c.challenge_date)) + '</strong><small>' + esc(c.area || "") + '</small></div>' +
-          '<span class="daily-recent-status' + (lost ? ' is-lost' : '') + '">' + (lost ? '×' : '✓') + '</span>' +
-        '</div>';
-      }).join("") || '<div class="daily-recent-empty">Nenhum desafio concluído ainda.</div>';
+          '<div class="daily-recent-copy"><strong>' + esc(formatDate(c.challenge_date)) + '</strong><small>' + esc(c.area || "") + ' · ' + statusLabel + '</small></div>' +
+          '<span class="daily-recent-status ' + statusClass + '">' + statusIcon + '</span>' +
+        '</button>';
+      }).join("");
+
+      els.recent.querySelectorAll("[data-date]").forEach(button => {
+        button.addEventListener("click", () => {
+          const date = button.getAttribute("data-date");
+          if (!date) return;
+          window.location.href = "/desafio-diario/?date=" + encodeURIComponent(date);
+        });
+      });
     } catch (error) {
       console.warn("Histórico do desafio:", error);
+      els.recent.innerHTML = '<div class="daily-recent-empty">Não foi possível carregar os desafios anteriores.</div>';
     }
   }
 
+  async function loadGeneralSummary() {
+    try {
+      const { data: rows, error } = await sb
+        .from("daily_challenge_progress")
+        .select("status,revealed_clues")
+        .eq("user_id", user.id)
+        .in("status", ["won","lost"]);
+
+      if (error) throw error;
+      const completed = rows || [];
+      const wins = completed.filter(r => r.status === "won");
+      const avg = wins.length
+        ? wins.reduce((sum, r) => sum + Number(r.revealed_clues || 1), 0) / wins.length
+        : null;
+
+      if (els.totalDone) els.totalDone.textContent = String(completed.length);
+      if (els.averageClues) els.averageClues.textContent = avg == null ? "—" : avg.toFixed(1).replace(".", ",");
+    } catch (error) {
+      console.warn("Resumo geral do desafio:", error);
+    }
+  }
   async function showResult(result) {
     if (!result) return;
     els.form.hidden = true;
@@ -183,6 +233,7 @@
       showFeedback("As cinco pistas foram usadas. Confira o diagnóstico abaixo.", "error");
     }
     await loadRecent();
+    await loadGeneralSummary();
   }
 
   async function loadTerminalResult() {
@@ -208,11 +259,11 @@
       }
       user = authData.user;
 
-      const today = saoPauloDateISO();
+      const selectedDate = selectedDateISO();
       const { data: challengeData, error: challengeError } = await sb
         .from("daily_challenges")
         .select("id,challenge_date,area,clue_1,clue_2,clue_3,clue_4,clue_5,active")
-        .eq("challenge_date", today)
+        .eq("challenge_date", selectedDate)
         .eq("active", true)
         .maybeSingle();
 
@@ -248,6 +299,7 @@
       els.content.hidden = false;
       startTimer();
       loadRecent();
+      loadGeneralSummary();
 
       if (progress.status === "won" || progress.status === "lost") {
         await loadTerminalResult();
