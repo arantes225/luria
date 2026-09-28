@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v185-recipe-bank";
+const CACHE_VERSION = "luria-pwa-v186-diagnostic-hub";
 const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v1";
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const STATIC_CACHE = CACHE_VERSION + "-static";
