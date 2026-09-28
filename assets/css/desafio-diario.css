@@ -39,13 +39,9 @@
 .daily-clue.is-current{background:color-mix(in srgb,var(--primary,#184888) 7%,var(--surface,#fff));border-color:color-mix(in srgb,var(--primary,#184888) 30%,var(--border,#dfe5ec))}
 .daily-clue.is-correct{background:color-mix(in srgb,#1d9a61 9%,var(--surface,#fff));border-color:color-mix(in srgb,#1d9a61 45%,var(--border,#dfe5ec))}
 .daily-clue.is-locked{background:color-mix(in srgb,var(--surface-2,#f6f8fb) 78%,var(--surface,#fff));color:var(--muted,#7a8698)}
-.daily-clue-inner{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:11px;align-items:start;padding:13px 14px}
-.daily-clue-icon{width:26px;height:26px;display:grid;place-items:center;color:var(--primary,#184888);font-size:17px;font-weight:900}
-.daily-clue.is-locked .daily-clue-icon{color:var(--muted,#8a95a5);font-size:14px}
-.daily-clue-copy strong{display:block;margin:2px 0 5px;color:var(--text,#172338);font-size:13px;font-weight:850}
+.daily-clue-inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:11px;align-items:start;padding:14px 15px}
 .daily-clue-copy p{margin:0;color:var(--text,#24344b);font-size:14px;line-height:1.48}
 .daily-clue-locknote{align-self:center;color:var(--muted,#8994a4);font-size:10px;white-space:nowrap}
-.daily-clue.is-correct .daily-clue-icon,.daily-clue.is-correct .daily-clue-copy strong{color:#187147}
 .daily-feedback{margin-top:12px;padding:10px 12px;border-radius:10px;font-size:12px;font-weight:700}
 .daily-feedback.error{background:rgba(194,57,52,.08);color:#a72f2b}
 .daily-feedback.ok{background:rgba(28,132,84,.09);color:#187147}
@@ -110,8 +106,8 @@
   .daily-step.is-complete span{box-shadow:0 0 0 4px var(--surface,#fff)}
   .daily-step small{font-size:9px}
   .daily-card,.daily-answer-card,.daily-side-card{padding:14px;border-radius:15px}
-  .daily-clue-inner{grid-template-columns:25px minmax(0,1fr);padding:12px;gap:8px}
-  .daily-clue-locknote{grid-column:2;font-size:9px;white-space:normal;margin-top:-2px}
+  .daily-clue-inner{grid-template-columns:minmax(0,1fr);padding:12px}
+  .daily-clue-locknote{grid-column:1;font-size:9px;white-space:normal;margin-top:0}
   .daily-clue-copy p{font-size:13px}
   .daily-answer-row{grid-template-columns:1fr}
   .daily-answer-row button{width:100%}
