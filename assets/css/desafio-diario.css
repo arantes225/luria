@@ -29,8 +29,8 @@
 .daily-track-step{position:relative;display:grid;grid-template-columns:44px minmax(0,1fr);align-items:center;align-self:stretch;gap:10px;min-height:100%}
 .daily-track-step::after{content:"";position:absolute;left:21px;top:50%;bottom:-22px;width:2px;background:var(--border,#dbe3ee);z-index:0}
 .daily-clue-row:last-child .daily-track-step::after{display:none}
-.daily-track-step span{position:relative;z-index:1;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;align-self:center;background:var(--surface-2,#eef2f7);border:1px solid var(--border,#dce4ee);color:var(--muted,#6f7d91);font-size:12px;font-weight:850;box-shadow:0 0 0 6px var(--surface,#fff)}
-.daily-track-step small{font-size:13px;color:var(--muted,#748096);font-weight:850;white-space:nowrap}
+.daily-track-step span{position:relative;z-index:1;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;align-self:center;background:var(--primary,#184888);border:1px solid var(--primary,#184888);color:#fff;font-size:12px;font-weight:850;box-shadow:0 0 0 6px var(--surface,#fff)}
+.daily-track-step small{font-size:13px;color:var(--primary,#184888);font-weight:850;white-space:nowrap}
 .daily-track-step.is-visible span,.daily-track-step.is-current span{background:var(--primary,#184888);border-color:var(--primary,#184888);color:#fff}
 .daily-track-step.is-visible small,.daily-track-step.is-current small{color:var(--primary,#184888)}
 .daily-track-step.is-correct span{background:#1d9a61;border-color:#1d9a61;color:#fff}
