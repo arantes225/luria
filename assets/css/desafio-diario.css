@@ -112,3 +112,13 @@
   .daily-side{grid-template-columns:1fr}
   .daily-result{grid-template-columns:1fr}
 }
+.daily-general-card{display:grid;gap:0}
+.daily-general-stat{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 0;border-top:1px solid var(--border,#e4e8ee)}
+.daily-general-stat:first-of-type{border-top:0;padding-top:2px}
+.daily-general-stat span{font-size:11px;color:var(--muted,#758195)}
+.daily-general-stat strong{font-size:18px;color:var(--text,#172338);letter-spacing:-.02em}
+.daily-recent-item{width:100%;border:0;background:transparent;text-align:left;font:inherit;cursor:pointer}
+.daily-recent-item:hover{background:color-mix(in srgb,var(--primary,#184888) 4%,transparent)}
+.daily-recent-status.is-pending{background:var(--primary,#184888)}
+.daily-recent-status.is-won{background:#1d9a61}
+.daily-recent-status.is-lost{background:#d85a68}
