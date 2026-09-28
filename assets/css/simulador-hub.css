@@ -538,3 +538,153 @@ html[data-theme="leila-mood"]{
   position:relative;
   z-index:3;
 }
+
+
+/* v8 — correção estrutural da Prática Clínica em desktop/tablet */
+.sim-hub-page{
+  width:100%!important;
+  max-width:1280px!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+  overflow-x:hidden!important;
+}
+.sim-hub-page *,
+.sim-hub-page *::before,
+.sim-hub-page *::after{
+  box-sizing:border-box;
+}
+.sim-hub-page .sim-hero-grid{
+  width:100%!important;
+  min-width:0!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  gap:14px!important;
+  align-items:stretch!important;
+}
+.sim-hub-page .sim-hero-card{
+  width:100%!important;
+  min-width:0!important;
+  min-height:222px!important;
+  height:auto!important;
+  overflow:hidden!important;
+}
+.sim-hub-page .sim-hero-copy{
+  width:min(68%,430px)!important;
+  max-width:none!important;
+  min-width:0!important;
+  grid-template-columns:66px minmax(0,1fr)!important;
+  gap:16px!important;
+  align-items:center!important;
+}
+.sim-hub-page .sim-hero-logo{
+  width:66px!important;
+  height:66px!important;
+  padding:13px!important;
+  border-radius:17px!important;
+}
+.sim-hub-page .sim-hero-card h2{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+  margin:0 0 7px!important;
+  color:#fff!important;
+  font-size:19px!important;
+  line-height:1.08!important;
+}
+.sim-hub-page .sim-hero-card p{
+  max-width:330px!important;
+}
+.sim-hub-page .sim-reference-button{
+  width:auto!important;
+  max-width:270px!important;
+  min-width:235px!important;
+}
+.sim-hub-page .sim-hero-badge{
+  left:auto!important;
+  right:14px!important;
+  bottom:14px!important;
+  width:auto!important;
+  min-width:0!important;
+  max-width:126px!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:7px!important;
+  padding:8px 10px!important;
+  border-radius:11px!important;
+  background:rgba(5,43,82,.68)!important;
+}
+.sim-hub-page .sim-hero-badge strong{
+  flex:0 0 auto!important;
+}
+.sim-hub-page .sim-hero-badge span{
+  min-width:0!important;
+}
+.sim-hub-page .sim-stats-strip{
+  width:100%!important;
+  min-width:0!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+}
+.sim-hub-page .sim-stats-strip article{
+  min-width:0!important;
+}
+.sim-hub-page .sim-dashboard-grid{
+  width:100%!important;
+  min-width:0!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1.02fr)!important;
+  gap:14px!important;
+  align-items:start!important;
+}
+.sim-hub-page .sim-panel{
+  min-width:0!important;
+  min-height:0!important;
+  height:auto!important;
+  align-self:start!important;
+}
+.sim-hub-page .sim-recent-panel,
+.sim-hub-page .sim-chart-panel{
+  min-height:0!important;
+  height:auto!important;
+}
+.sim-hub-page .sim-recent-list{
+  min-height:0!important;
+  height:auto!important;
+}
+.sim-hub-page .sim-empty-row{
+  min-height:76px!important;
+  display:grid!important;
+  place-items:center!important;
+}
+@media(max-width:780px){
+  .sim-hub-page .sim-hero-grid,
+  .sim-hub-page .sim-dashboard-grid{
+    grid-template-columns:1fr!important;
+  }
+  .sim-hub-page .sim-stats-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .sim-hub-page .sim-stats-strip article:nth-child(2){
+    border-right:0!important;
+  }
+  .sim-hub-page .sim-stats-strip article:nth-child(-n+2){
+    border-bottom:1px solid var(--border)!important;
+  }
+}
+@media(max-width:520px){
+  .sim-hub-page .sim-stats-strip{
+    grid-template-columns:1fr!important;
+  }
+  .sim-hub-page .sim-hero-copy{
+    width:100%!important;
+    grid-template-columns:54px minmax(0,1fr)!important;
+  }
+  .sim-hub-page .sim-hero-logo{
+    width:54px!important;
+    height:54px!important;
+    padding:10px!important;
+  }
+  .sim-hub-page .sim-reference-button{
+    width:calc(100% - 112px)!important;
+    min-width:0!important;
+  }
+}
