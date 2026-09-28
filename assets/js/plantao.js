@@ -641,7 +641,7 @@
           </div>
         </article>
       `;
-
+    }).join("");
   }
 
   function setPlantaoMode(mode){
