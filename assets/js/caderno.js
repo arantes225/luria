@@ -361,7 +361,36 @@ function setSaveStatus(
 }
 
 
-function refreshNotebookInspector(){const doc=getCurrentDocument();if(!doc)return;const note=doc.note||{};const ed=document.getElementById("notebook-editor");const set=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=v||"—"};set("notebook-inspector-book",doc.area);set("notebook-inspector-area",doc.area);set("notebook-inspector-created",formatDate(note.created_at||doc.date));set("notebook-inspector-updated",formatDate(note.updated_at||note.created_at||doc.date));const words=(ed?.innerText||"").trim().split(/\s+/).filter(Boolean).length;set("notebook-inspector-words",words?words+" palavras":"0 palavras")}
+function refreshNotebookInspector(){
+  const doc=getCurrentDocument();
+  const ed=document.getElementById("notebook-editor");
+  const set=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=(v===0||v)?String(v):"—"};
+
+  if(!doc){
+    set("notebook-inspector-title","—");
+    set("notebook-inspector-area","—");
+    set("notebook-inspector-subject","—");
+    set("notebook-inspector-created","—");
+    set("notebook-inspector-updated","—");
+    set("notebook-inspector-words","0 palavras");
+    set("notebook-inspector-book","—");
+    return;
+  }
+
+  const note=doc.note||{};
+  const subject=doc.type==="lesson"
+    ? (doc.topic?.materia||"Sem matéria")
+    : (note.materia||"Página livre");
+  const words=(ed?.innerText||"").trim().split(/\s+/).filter(Boolean).length;
+
+  set("notebook-inspector-title",doc.title);
+  set("notebook-inspector-book",doc.title);
+  set("notebook-inspector-area",doc.area);
+  set("notebook-inspector-subject",subject);
+  set("notebook-inspector-created",formatDate(note.created_at||doc.date));
+  set("notebook-inspector-updated",formatDate(note.updated_at||note.created_at||doc.date));
+  set("notebook-inspector-words",words+" palavras");
+}
 function getCurrentDocument() {
 
   if (
@@ -3277,6 +3306,8 @@ function renderDocument() {
     false;
 
 
+  refreshNotebookInspector();
+
   notebookState.savedRange =
     null;
 
@@ -3376,6 +3407,7 @@ async function renameCurrentNotebookTitle(nextTitle) {
     renderTopicList();
     renderLibrary();
     renderDocument();
+    refreshNotebookInspector();
     setSaveStatus("Nome atualizado", "saved");
   } catch (error) {
     console.error(error);
@@ -4179,6 +4211,8 @@ async function saveCurrentNotebook(
   renderTopicList();
 
   renderLibrary();
+
+  refreshNotebookInspector();
 
 
   setSaveStatus(
