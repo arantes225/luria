@@ -80,8 +80,11 @@
       else if (won && n > answeredAt) classes.push("is-post-win");
 
       return '<div class="' + classes.join(" ") + '">' +
-        '<span class="daily-clue-number">' + n + '</span>' +
-        '<p>' + esc(text) + '</p></div>';
+        '<span class="daily-clue-icon" aria-hidden="true">⌁</span>' +
+        '<div class="daily-clue-copy">' +
+          '<strong>Pista ' + n + ' de 5</strong>' +
+          '<p>' + esc(text) + '</p>' +
+        '</div></div>';
     }).join("");
 
     els.dots.forEach((dot, i) => {
