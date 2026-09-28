@@ -743,3 +743,22 @@ html[data-theme="leila-mood"]{
 .sim-specialty-legend div:nth-child(3)::before{background:var(--sim-chart-3)}
 .sim-specialty-legend div:nth-child(4)::before{background:var(--sim-chart-4)}
 .sim-specialty-legend div:nth-child(5)::before{background:var(--sim-chart-5)}
+
+
+/* v10 — badge de casos disponíveis alinhado à direita do card */
+.sim-hub-page .sim-hero-badge{
+  left:auto!important;
+  right:18px!important;
+  bottom:18px!important;
+  justify-self:end!important;
+  margin-left:auto!important;
+  transform:none!important;
+  max-width:132px!important;
+}
+@media(max-width:620px){
+  .sim-hub-page .sim-hero-badge{
+    right:12px!important;
+    bottom:14px!important;
+    max-width:112px!important;
+  }
+}
