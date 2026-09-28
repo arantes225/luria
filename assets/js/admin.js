@@ -2364,7 +2364,7 @@
     if (state.qfAutoRefreshTimer) {
       clearInterval(state.qfAutoRefreshTimer);
     }
-    state.qfAutoRefreshTimer = setInterval(refreshQuestionFactoryLive, 5000);
+    state.qfAutoRefreshTimer = setInterval(refreshQuestionFactoryLive, 30000);
   }
 
   async function loadQuestionFactory() {
