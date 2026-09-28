@@ -779,10 +779,10 @@
       if(toggle){
         e.stopPropagation();
         const id=toggle.dataset.deckMenuToggle;
-        const menu=host.querySelector('[data-deck-menu="'+CSS.escape(id)+'"]');
+        const menu=$("#pm-decks").querySelector('[data-deck-menu="'+CSS.escape(id)+'"]');
         const willOpen=menu?.hidden;
-        $("[data-deck-menu]").forEach(m=>m.hidden=true);
-        $("[data-deck-menu-toggle]").forEach(b=>b.setAttribute("aria-expanded","false"));
+        $$("[data-deck-menu]").forEach(m=>m.hidden=true);
+        $$("[data-deck-menu-toggle]").forEach(b=>b.setAttribute("aria-expanded","false"));
         if(menu){menu.hidden=!willOpen;toggle.setAttribute("aria-expanded",willOpen?"true":"false");}
         return;
       }
@@ -814,8 +814,8 @@
     });
     document.addEventListener("click",e=>{
       if(e.target.closest(".pm-deck-actions")) return;
-      $("[data-deck-menu]").forEach(m=>m.hidden=true);
-      $("[data-deck-menu-toggle]").forEach(b=>b.setAttribute("aria-expanded","false"));
+      $$("[data-deck-menu]").forEach(m=>m.hidden=true);
+      $$("[data-deck-menu-toggle]").forEach(b=>b.setAttribute("aria-expanded","false"));
     });
     $("#pm-back").addEventListener("click",()=>{ $("#pm-detail").hidden=true; $("#pm-list").hidden=false; state.activeDeckId=null; renderDecks(); });
     $("#pm-search").addEventListener("input",renderDecks);
@@ -878,7 +878,7 @@
       if(!show) field.value="";
     }
     function syncAllOtherFields(root=document){
-      $("select[data-other-target]",root).forEach(syncOtherField);
+      $$("select[data-other-target]",root).forEach(syncOtherField);
     }
     $("#pm-patient-form").addEventListener("change",e=>{
       const sel=e.target.closest("select[data-other-target]");
