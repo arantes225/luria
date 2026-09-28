@@ -540,6 +540,174 @@
       .pm-detail-metrics{gap:6px!important}
     }
 
+
+    /* Passômetro v4 — barras azuis e acabamento visual */
+    /* Barrinha azul igual em todos os cards-resumo */
+    .pm-overview-card::after,
+    .pm-overview-card.accent::after{
+      height:4px!important;
+      background:var(--accent)!important;
+    }
+
+    /* Um pouco mais de profundidade sem fugir do padrão LURIA */
+    .pm-overview-card{
+      border-color:color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
+      background:
+        linear-gradient(180deg,
+          color-mix(in srgb,var(--accent) 2.5%,var(--surface)),
+          var(--surface) 54%)!important;
+      box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 4%,transparent)!important;
+      transition:border-color .16s ease,transform .16s ease,box-shadow .16s ease;
+    }
+    .pm-overview-card:hover{
+      transform:translateY(-1px);
+      border-color:color-mix(in srgb,var(--accent) 30%,var(--border))!important;
+      box-shadow:0 7px 18px color-mix(in srgb,var(--accent) 7%,transparent)!important;
+    }
+
+    /* Cabeçalho da biblioteca com detalhe de cor */
+    .pm-home-head{
+      position:relative;
+      padding:9px 12px 10px 16px!important;
+      border:1px solid color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
+      border-radius:12px!important;
+      background:
+        linear-gradient(90deg,
+          color-mix(in srgb,var(--accent) 7%,var(--surface)) 0%,
+          color-mix(in srgb,var(--accent) 2%,var(--surface)) 38%,
+          var(--surface) 100%)!important;
+      overflow:hidden;
+    }
+    .pm-home-head::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      width:4px;
+      background:var(--accent);
+    }
+    .pm-home-head::after{
+      content:"";
+      position:absolute;
+      right:-42px;
+      top:-64px;
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      border:24px solid color-mix(in srgb,var(--accent) 5%,transparent);
+      pointer-events:none;
+    }
+    .pm-home-title{
+      position:relative;
+      z-index:1;
+    }
+
+    /* Busca vira uma barra de ferramentas de verdade */
+    .pm-toolbar{
+      padding:8px!important;
+      border:1px solid var(--border)!important;
+      border-radius:12px!important;
+      background:var(--surface)!important;
+      box-shadow:0 3px 12px color-mix(in srgb,var(--text) 3%,transparent)!important;
+    }
+    .pm-search input{
+      background:var(--surface-2)!important;
+      border-color:color-mix(in srgb,var(--border) 92%,var(--accent) 8%)!important;
+    }
+    .pm-search input:focus{
+      border-color:var(--accent)!important;
+      box-shadow:0 0 0 3px var(--accent-soft)!important;
+      background:var(--surface)!important;
+      outline:none!important;
+    }
+
+    /* Cabeçalho "Seus passômetros" mais visual */
+    .pm-subbar{
+      min-height:34px!important;
+      padding:0 4px 7px!important;
+      color:var(--text)!important;
+      font-weight:850!important;
+    }
+    .pm-subbar>span:first-child{
+      position:relative;
+      padding-left:12px;
+    }
+    .pm-subbar>span:first-child::before{
+      content:"";
+      position:absolute;
+      left:0;
+      top:50%;
+      width:5px;
+      height:5px;
+      border-radius:50%;
+      background:var(--accent);
+      transform:translateY(-50%);
+      box-shadow:0 0 0 4px var(--accent-soft);
+    }
+
+    /* Cards da biblioteca com acabamento mais próximo de Flashcards/Caderno */
+    .pm-deck{
+      border-color:color-mix(in srgb,var(--border) 90%,var(--accent) 10%)!important;
+      box-shadow:0 4px 14px color-mix(in srgb,var(--text) 3%,transparent)!important;
+      transition:border-color .16s ease,box-shadow .16s ease,transform .16s ease!important;
+    }
+    .pm-deck:hover{
+      transform:translateY(-1px)!important;
+      border-color:color-mix(in srgb,var(--accent) 34%,var(--border))!important;
+      box-shadow:0 7px 18px color-mix(in srgb,var(--accent) 6%,transparent)!important;
+    }
+    .pm-deck-head{
+      background:
+        linear-gradient(90deg,
+          color-mix(in srgb,var(--accent) 6%,var(--surface)),
+          var(--surface-2))!important;
+    }
+    .pm-deck-icon{
+      box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 10%,transparent);
+    }
+    .pm-chip{
+      color:color-mix(in srgb,var(--text) 68%,var(--muted))!important;
+    }
+
+    /* Estado vazio menos cru */
+    .pm-empty{
+      background:
+        radial-gradient(circle at 50% 0,
+          color-mix(in srgb,var(--accent) 8%,transparent),
+          transparent 42%),
+        var(--surface)!important;
+      border-color:color-mix(in srgb,var(--accent) 18%,var(--border))!important;
+    }
+
+    /* Tela interna segue o mesmo acabamento */
+    .pm-detail-hero{
+      border-color:color-mix(in srgb,var(--border) 88%,var(--accent) 12%)!important;
+      box-shadow:0 4px 14px color-mix(in srgb,var(--text) 3%,transparent)!important;
+    }
+    .pm-detail-metric{
+      position:relative;
+      overflow:hidden;
+    }
+    .pm-detail-metric::after{
+      content:"";
+      position:absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      height:3px;
+      background:var(--accent);
+    }
+
+    @media(max-width:700px){
+      .pm-home-head{
+        padding:9px 10px 9px 14px!important;
+      }
+      .pm-toolbar{
+        padding:7px!important;
+      }
+    }
+
   </style>
 </head>
 <body data-page="trabalho_passometro">
