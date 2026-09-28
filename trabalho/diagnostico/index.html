@@ -6,13 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Diagnóstico · LURIA</title>
+  <title>Diagnóstico por Sintomas · LURIA</title>
   <meta name="theme-color" content="#184888">
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.13-font-uniform">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
+  <style>
+    .dx-shell{display:grid;gap:16px}
+    .dx-hero{padding:22px 24px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .dx-hero h2{margin:0 0 7px;font-size:24px}
+    .dx-hero p{max-width:760px;margin:0;color:var(--muted);line-height:1.55}
+    .dx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .dx-card{min-height:190px;display:flex;flex-direction:column;padding:19px;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);text-decoration:none;transition:transform .15s,border-color .15s,box-shadow .15s}
+    .dx-card:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 9px 24px rgba(15,23,42,.06)}
+    .dx-icon{width:43px;height:43px;display:grid;place-items:center;margin-bottom:20px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:21px;font-weight:850}
+    .dx-card h3{margin:0 0 7px;font-size:17px}
+    .dx-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.5}
+    .dx-open{margin-top:auto;padding-top:18px;color:var(--accent);font-size:11px;font-weight:850}
+    @media(max-width:900px){.dx-grid{grid-template-columns:1fr}}
+    @media(max-width:700px){.dx-hero{padding:17px}.dx-card{min-height:150px;padding:16px}.dx-icon{margin-bottom:14px}}
+  </style>
 </head>
 <body data-page="trabalho_diagnostico">
   <div class="app-shell">
@@ -27,12 +42,40 @@
             <h1 data-page-title></h1>
           </div>
         </header>
+
+        <section class="dx-shell">
+          <article class="dx-hero">
+            <h2>Diagnóstico por Sintomas</h2>
+            <p>Central de apoio diagnóstico. Exames, laboratório e ECG ficam reunidos aqui para manter o ambiente de Trabalho mais organizado.</p>
+          </article>
+
+          <div class="dx-grid">
+            <a class="dx-card" href="/trabalho/exames/">
+              <span class="dx-icon" aria-hidden="true">◌</span>
+              <h3>Exames</h3>
+              <p>Acesso à organização e consulta de exames complementares.</p>
+              <span class="dx-open">Abrir exames →</span>
+            </a>
+            <a class="dx-card" href="/trabalho/laboratorio/">
+              <span class="dx-icon" aria-hidden="true">◫</span>
+              <h3>Laboratório</h3>
+              <p>Valores de referência, interpretação e apoio para exames laboratoriais.</p>
+              <span class="dx-open">Abrir laboratório →</span>
+            </a>
+            <a class="dx-card" href="/trabalho/ecg/">
+              <span class="dx-icon" aria-hidden="true">⌁</span>
+              <h3>ECG</h3>
+              <p>Apoio à leitura sistemática e interpretação do eletrocardiograma.</p>
+              <span class="dx-open">Abrir ECG →</span>
+            </a>
+          </div>
+        </section>
       </div>
     </main>
   </div>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=17.16-diagnostico"></script>
-  <script defer src="/assets/js/pwa.js?v=3"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=17.30-diagnostic-hub"></script>
+  <script defer src="/assets/js/pwa.js?v=4-force-refresh"></script>
 </body>
 </html>
