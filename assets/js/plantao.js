@@ -382,11 +382,21 @@
     return values.length ? Math.max(...values) : null;
   }
 
+  function caseAreaName(item){
+    const raw=normalizeLabel(item?.specialty||item?.presentation?.area||"");
+    if(raw.includes("clinica")) return "Clínica Médica";
+    if(raw.includes("cirurg")) return "Cirurgia Geral";
+    if(raw.includes("pedi")) return "Pediatria";
+    if(raw.includes("gine") || raw.includes("obst") || raw==="go") return "Ginecologia e Obstetrícia";
+    if(raw.includes("prevent") || raw.includes("saude coletiva") || raw.includes("medicina de familia") || raw.includes("mfc")) return "Medicina Preventiva";
+    return String(item?.specialty||"Clínica Médica").trim() || "Clínica Médica";
+  }
+
   function caseMateria(item){
     const explicitSubarea=String(item?.presentation?.subarea||item?.debrief?.subarea||"").trim();
     if(explicitSubarea) return explicitSubarea;
     const text=normalizeLabel([item.title,item.summary,item.presentation?.chief_complaint].filter(Boolean).join(" "));
-    const area=String(item.specialty||"");
+    const area=caseAreaName(item);
 
     const has=(...terms)=>terms.some(term=>text.includes(normalizeLabel(term)));
 
@@ -669,6 +679,7 @@
       const best=bestScore(item.id);
       const attempts=state.sessions.filter(x=>x.case_id===item.id && x.status==="completed").length;
       const title=item.presentation?.chief_complaint || item.presentation?.display_title || item.summary || item.title || "Caso clínico";
+      const area=caseAreaName(item);
       const materia=caseMateria(item);
       const summary=item.summary || item.presentation?.opening || "Paciente aguardando avaliação na sala de emergência.";
       const diff=String(item.difficulty||"").toLowerCase();
@@ -680,12 +691,10 @@
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
           <div class="plantao-record-folder">
             <div class="plantao-record-folder-tabs">
-              <div class="plantao-record-folder-tab"><span>${esc(item.specialty || "Clínica Médica")}</span></div>
+              <div class="plantao-record-folder-tab"><span>${esc(area)}</span></div>
               <span class="plantao-record-paper-slip difficulty">${esc(item.difficulty || "Intermediário")}</span>
               <span class="plantao-record-paper-slip time">◷ 20 min</span>
             </div>
-            <div class="plantao-record-paper-back"></div>
-
             <div class="plantao-record-paper">
               <div class="plantao-record-paper-header">
                 <div class="plantao-record-title-wrap">
@@ -700,7 +709,7 @@
 
               <div class="plantao-record-lines">
                 <div class="plantao-record-line">
-                  <strong>Área:</strong>
+                  <strong>Subárea:</strong>
                   <span>${esc(materia)}</span>
                 </div>
 
