@@ -1164,3 +1164,33 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     grid-template-columns:minmax(90px,1fr) minmax(70px,1fr) 24px;
   }
 }
+
+
+/* v20 — fundos dedicados do modo rosa */
+html[data-theme="leila-mood"] .sim-hub-page .sim-hero-emergency{
+  background-image:
+    linear-gradient(90deg,
+      rgba(118,28,83,.92) 0%,
+      rgba(149,43,99,.76) 42%,
+      rgba(177,63,116,.34) 70%,
+      rgba(177,63,116,.08) 100%
+    ),
+    url("/assets/img/plantao/emergencia-card-bg-pink.webp")!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+}
+
+html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
+  background-image:
+    linear-gradient(90deg,
+      rgba(112,24,79,.92) 0%,
+      rgba(151,40,97,.74) 44%,
+      rgba(185,69,121,.30) 72%,
+      rgba(185,69,121,.06) 100%
+    ),
+    url("/assets/img/plantao/luriazap-card-bg-pink.webp")!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+}
