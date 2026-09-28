@@ -3814,7 +3814,9 @@ function switchErrorTab(
 
 
   if (name === "create") { toggleNewErrorForm(true); }
-  document.querySelector(".error-home-head")?.toggleAttribute("hidden", name !== "library");
+  const showHomeNav = name === "review-home" || name === "library";
+  document.querySelector(".error-home-head")?.toggleAttribute("hidden", !showHomeNav);
+  document.querySelector(".error-cat-spotlight")?.toggleAttribute("hidden", name !== "library");
   document.querySelector(".error-featured")?.toggleAttribute("hidden", name !== "library");
   document.querySelector(".error-home-layout")?.toggleAttribute("hidden", name !== "library");
 
@@ -4880,6 +4882,18 @@ function startErrorSpotlight(){
   if(errorSpotlightTimer)clearInterval(errorSpotlightTimer);paint();if(items.length>1)errorSpotlightTimer=setInterval(paint,15000);
 }
 function renderErrorHomeExtras(){
+  const total=errorLibraryItems.length;
+  const totalReviews=errorLibraryItems.reduce((sum,item)=>sum+Number(item.review_count||0),0);
+  const retained=errorLibraryItems.filter(item=>Number(item.review_count||0)>=2).length;
+  const retentionPct=total?Math.round(retained/total*100):0;
+
+  const reviewTotal=document.getElementById("error-review-home-total");
+  const reviewReviews=document.getElementById("error-review-home-reviews");
+  const reviewRetention=document.getElementById("error-review-home-retention");
+  if(reviewTotal)reviewTotal.textContent=String(total);
+  if(reviewReviews)reviewReviews.textContent=String(totalReviews);
+  if(reviewRetention)reviewRetention.textContent=`${retentionPct}%`;
+
   setTimeout(startErrorSpotlight,0);
   const featured=document.getElementById("error-featured-list");
   if(featured){
@@ -4887,12 +4901,12 @@ function renderErrorHomeExtras(){
       <article class="error-feature-card"><span>${errorLibraryEscape(item.area||"Sem área")}</span><strong>${errorLibraryEscape(item.theme||item.materia||"Ponto importante")}</strong><p>💡 ${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</p></article>`).join("") || '<div class="error-home-empty">Seus Pulos do Gato aparecerão aqui.</div>';
   }
   const due=errorLibraryItems.filter(i=>!i.due_date||i.due_date<=errorTodayISO()).slice(0,5);
-  const today=document.getElementById("error-today-list"); const count=document.getElementById("error-today-count");
+  const today=document.getElementById("error-review-home-today-list")||document.getElementById("error-today-list");
+  const count=document.getElementById("error-review-home-today-count")||document.getElementById("error-today-count");
   if(count) count.textContent=String(due.length);
   if(today) today.innerHTML=due.map((item,i)=>`<button type="button" class="error-today-row" data-home-review-id="${errorLibraryEscape(item.id)}"><b>${i+1}</b><span><strong>${errorLibraryEscape(item.theme||item.materia||"Erro")}</strong><small>${errorLibraryEscape(item.area||"Sem área")}</small></span><i>›</i></button>`).join("") || '<div class="error-home-empty">Nenhuma revisão pendente hoje.</div>';
-  const metrics=document.getElementById("error-quick-metrics");
+  const metrics=document.getElementById("error-review-home-quick-metrics")||document.getElementById("error-quick-metrics");
   if(metrics){
-    const total=errorLibraryItems.length;
     const reviewed=errorLibraryItems.filter(i=>Number(i.review_count||0)>0).length;
     const dueCount=errorLibraryItems.filter(i=>!i.due_date||i.due_date<=errorTodayISO()).length;
     const recurring=errorLibraryItems.filter(i=>Number(i.review_count||0)>=2).length;
@@ -5310,6 +5324,11 @@ function wireErrorLibrary() {
   document.querySelectorAll("[data-error-state]").forEach(button=>button.addEventListener("click",()=>{errorHomeState=button.dataset.errorState||"all";document.querySelectorAll("[data-error-state]").forEach(b=>b.classList.toggle("active",b===button));renderErrorLibrary()}));
   document.querySelectorAll("[data-error-home-back]").forEach(button=>button.addEventListener("click",()=>switchErrorTab("library")));
   document.getElementById("error-start-home-review")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
+  document.getElementById("error-review-home-now")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
+  document.getElementById("error-review-home-create")?.addEventListener("click",()=>{
+    switchErrorTab("review-home");
+    setErrorLibraryStatus("Abra um caderno e use Selecionar para montar uma revisão personalizada.","success");
+  });
   document.getElementById("error-today-list")?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;openErrorReviewPage({mode:"today",item:button.dataset.homeReviewId})});
 
   document
