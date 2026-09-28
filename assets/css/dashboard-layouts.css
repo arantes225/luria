@@ -2580,3 +2580,27 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-acti
  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity-info{width:100%!important;min-width:0!important;padding:10px 46px 10px 10px!important}
  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-upcoming .dl-activity-date{min-width:0!important;font-size:10px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
 }
+
+/* Dashboard 4 PWA v41 — métrica: rótulo em cima, número grande embaixo */
+@media(max-width:760px){
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini{
+  display:grid!important;grid-template-columns:34px minmax(0,1fr)!important;grid-template-rows:auto auto!important;
+  column-gap:9px!important;row-gap:3px!important;align-items:center!important;padding:8px 6px!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini [class*="icon"]{
+  grid-column:1!important;grid-row:1/-1!important;width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini [class*="icon"] svg,
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini [class*="icon"] img{
+  width:25px!important;height:25px!important;max-width:25px!important;max-height:25px!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini span,
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini small{
+  grid-column:2!important;grid-row:1!important;align-self:end!important;margin:0!important;font-size:11px!important;line-height:1.15!important;
+  white-space:normal!important;overflow:visible!important
+ }
+ html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini strong{
+  grid-column:2!important;grid-row:2!important;align-self:start!important;display:block!important;margin:0!important;
+  font-size:24px!important;line-height:1!important;font-weight:850!important;white-space:nowrap!important
+ }
+}
