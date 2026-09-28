@@ -5753,11 +5753,25 @@ async function iniciarApp() {
   const user =
     data.session.user;
 
-  // O ambiente Trabalho é privado: somente a conta administrativa pode acessá-lo.
-  // A verificação usa o RPC is_admin no servidor, não dados editáveis do perfil.
+  // O ambiente Trabalho é liberado para Admin e assinantes Plus/Pro.
+  // Usa entitlements do servidor; em falha transitória, carregarEntitlements preserva
+  // o último entitlement válido em cache sem rebaixar silenciosamente o usuário.
   if (String(page).startsWith("trabalho_")) {
+    const [workAdmin, workEntitlements] =
+      await Promise.all([
+        verificarAcessoAdmin(),
+        carregarEntitlements()
+      ]);
+
+    const workPlan =
+      String(workEntitlements?.plan || "")
+        .trim()
+        .toLowerCase();
+
     const workAllowed =
-      await verificarAcessoAdmin();
+      workAdmin === true
+      || workPlan === "plus"
+      || workPlan === "pro";
 
     if (!workAllowed) {
       window.location.replace("/dashboard/");
