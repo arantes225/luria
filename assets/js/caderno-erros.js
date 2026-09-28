@@ -5326,7 +5326,7 @@ function wireErrorLibrary() {
   document.getElementById("error-start-home-review")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
   document.getElementById("error-review-home-now")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
   document.getElementById("error-review-home-create")?.addEventListener("click",()=>{
-    switchErrorTab("review-home");
+    switchErrorTab("library");
     setErrorLibraryStatus("Abra um caderno e use Selecionar para montar uma revisão personalizada.","success");
   });
   document.getElementById("error-today-list")?.addEventListener("click",event=>{const button=event.target.closest("[data-home-review-id]");if(!button)return;openErrorReviewPage({mode:"today",item:button.dataset.homeReviewId})});
@@ -5818,7 +5818,7 @@ async function initErrorNotebook() {
     console.error("[Caderno de Erros] fila de revisão não carregou, mantendo biblioteca disponível:", error);
   }
 
-  switchErrorTab("library");
+  switchErrorTab("review-home");
 }
 
 
