@@ -501,3 +501,76 @@
   enhanceShell();
   loadDailyChallengeAccuracy();
 })();
+
+
+/* PWA dashboard topbar v24 — controles perfeitamente alinhados */
+(function(){
+  const style=document.createElement("style");
+  style.id="dashboard-pwa-topbar-align-v24";
+  style.textContent=`
+    @media(max-width:980px){
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar{
+        align-items:center!important;
+      }
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-toggle,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+        width:44px!important;
+        height:44px!important;
+        min-width:44px!important;
+        min-height:44px!important;
+        flex:0 0 44px!important;
+        margin:0!important;
+        padding:0!important;
+        align-self:center!important;
+        box-sizing:border-box!important;
+        border-radius:12px!important;
+        transform:none!important;
+      }
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
+        position:relative!important;
+        inset:auto!important;
+        display:grid!important;
+        place-items:center!important;
+        font-size:21px!important;
+        line-height:1!important;
+      }
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+        position:relative!important;
+        inset:auto!important;
+        height:44px!important;
+        min-height:44px!important;
+        display:flex!important;
+        align-items:center!important;
+        align-self:center!important;
+        gap:8px!important;
+        margin:0 0 0 auto!important;
+        transform:none!important;
+      }
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-top,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-top{
+        height:44px!important;
+        min-height:44px!important;
+        display:flex!important;
+        align-items:center!important;
+        align-self:center!important;
+        margin:0!important;
+      }
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-icon,
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-icon svg{
+        width:22px!important;
+        height:22px!important;
+      }
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle svg{
+        width:22px!important;
+        height:22px!important;
+      }
+      html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+        font-size:22px!important;
+        line-height:1!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
