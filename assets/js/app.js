@@ -4229,6 +4229,16 @@ async function prepararNotificacoes(
       "luria-notification-read-all"
     );
 
+  const badge =
+    document.getElementById(
+      "luria-notification-badge"
+    );
+
+  const subtitle =
+    document.getElementById(
+      "luria-notification-subtitle"
+    );
+
   if (
     !center
     || !toggle
@@ -4333,47 +4343,189 @@ async function prepararNotificacoes(
 
   await loadNotificationCount();
 
-  const channel =
-    sb
-      .channel(
-        `luria-notifications-${userId}`
-      )
-      .on(
-        "postgres_changes",
-        {
-          event:
-            "INSERT",
-          schema:
-            "public",
-          table:
-            "notifications",
-          filter:
-            `user_id=eq.${userId}`
-        },
-        () => {
-          if (panel.hidden) {
-            loadNotificationCount();
-          } else {
-            loadNotifications();
-          }
-        }
-      )
-      .subscribe();
+  const realtimeKey =
+    "__luriaNotificationRealtime";
 
-  window.addEventListener(
-    "beforeunload",
-    () => {
-      sb.removeChannel(
+  const realtimeState =
+    window[realtimeKey]
+    || {
+      channel:
+        null,
+      userId:
+        null
+    };
+
+  window[realtimeKey] =
+    realtimeState;
+
+  async function disconnectNotificationRealtime() {
+    if (
+      !realtimeState.channel
+    ) {
+      return;
+    }
+
+    const channel =
+      realtimeState.channel;
+
+    realtimeState.channel =
+      null;
+    realtimeState.userId =
+      null;
+
+    try {
+      await sb.removeChannel(
         channel
       );
-    },
+    } catch (
+      error
+    ) {
+      console.warn(
+        "Não foi possível encerrar o canal de notificações:",
+        error
+      );
+    }
+  }
+
+  function incrementNotificationBadge() {
+    if (!badge) {
+      return;
+    }
+
+    const current =
+      badge.hidden
+        ? 0
+        : Math.max(
+            0,
+            Number.parseInt(
+              badge.textContent,
+              10
+            )
+            || 0
+          );
+
+    const unread =
+      current
+      + 1;
+
+    badge.hidden =
+      false;
+
+    badge.textContent =
+      unread > 99
+        ? "99+"
+        : String(
+            unread
+          );
+
+    if (
+      subtitle
+    ) {
+      subtitle.textContent =
+        `${unread} não lida${unread === 1 ? "" : "s"}`;
+    }
+
+    if (
+      readAll
+    ) {
+      readAll.hidden =
+        false;
+    }
+  }
+
+  async function connectNotificationRealtime() {
+    if (
+      document.hidden
+    ) {
+      return;
+    }
+
+    if (
+      realtimeState.channel
+      && realtimeState.userId
+        === userId
+    ) {
+      return;
+    }
+
+    await disconnectNotificationRealtime();
+
+    realtimeState.userId =
+      userId;
+
+    realtimeState.channel =
+      sb
+        .channel(
+          `luria-notifications-${userId}`
+        )
+        .on(
+          "postgres_changes",
+          {
+            event:
+              "INSERT",
+            schema:
+              "public",
+            table:
+              "notifications",
+            filter:
+              `user_id=eq.${userId}`
+          },
+          () => {
+            if (
+              panel.hidden
+            ) {
+              incrementNotificationBadge();
+            } else {
+              loadNotifications();
+            }
+          }
+        )
+        .subscribe();
+  }
+
+  const handleVisibilityChange =
+    async () => {
+      if (
+        document.hidden
+      ) {
+        await disconnectNotificationRealtime();
+        return;
+      }
+
+      await loadNotificationCount();
+      await connectNotificationRealtime();
+    };
+
+  const handlePageHide =
+    () => {
+      disconnectNotificationRealtime();
+    };
+
+  document.addEventListener(
+    "visibilitychange",
+    handleVisibilityChange
+  );
+
+  window.addEventListener(
+    "pagehide",
+    handlePageHide,
     {
       once:
         true
     }
   );
-}
 
+  window.addEventListener(
+    "beforeunload",
+    handlePageHide,
+    {
+      once:
+        true
+    }
+  );
+
+  await connectNotificationRealtime();
+}
 
 function prepararMobileMenu() {
   const open = document.getElementById("menu-open");
