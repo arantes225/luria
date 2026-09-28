@@ -4923,42 +4923,86 @@ function editErrorNotebook(area,name){
   const container=document.getElementById("error-library");
   const empty=document.getElementById("error-library-empty");
   const count=document.getElementById("error-library-count");
+  const layout=document.querySelector(".error-home-layout");
+  const titleWrap=document.querySelector(".error-library-title");
+  const title=titleWrap?.querySelector("h2");
+  const subtitle=titleWrap?.querySelector("p");
+
   if(!container||!empty||!count)return;
 
-  empty.hidden=true;
+  layout?.classList.add("notebook-detail-open");
+  document.body.classList.add("error-notebook-detail-active");
+
+  if(title) title.textContent=name;
+  if(subtitle) subtitle.textContent=`${area} · ${rows.length} ${rows.length===1?"erro salvo":"erros salvos"} neste caderno.`;
+
+  empty.hidden=rows.length>0;
+  if(!rows.length) empty.textContent="Nenhum erro encontrado neste caderno.";
   count.textContent=`${rows.length} ${rows.length===1?"erro":"erros"}`;
 
   container.innerHTML=`
-    <section class="error-notebook-open">
-      <div class="error-notebook-open-head">
+    <section class="error-notebook-detail">
+      <div class="error-notebook-detail-toolbar">
         <button id="error-notebook-back" class="button secondary" type="button">← Voltar aos cadernos</button>
-        <div>
-          <span class="badge accent">${errorLibraryEscape(area)}</span>
-          <h3>${errorLibraryEscape(name)}</h3>
-          <p>${rows.length} ${rows.length===1?"erro salvo":"erros salvos"} neste caderno.</p>
-        </div>
+        <button id="error-notebook-review-all" class="button primary" type="button" ${rows.length?"":"disabled"}>▶ Revisar este caderno</button>
       </div>
-      <div class="error-notebook-open-list">
-        ${rows.map(item=>`
-          <article class="error-note-card" data-error-note-id="${errorLibraryEscape(item.id)}">
-            <div class="error-note-card-head">
-              <div>
-                <strong>${errorLibraryEscape(item.theme||item.materia||"Erro")}</strong>
-                <small>${item.due_date?errorLibraryEscape(formatErrorDate(item.due_date)):"Sem data de revisão"}</small>
+
+      <div class="error-notebook-detail-list">
+        ${rows.map((item,index)=>`
+          <article class="error-note-detail-card" data-error-note-id="${errorLibraryEscape(item.id)}">
+            <div class="error-note-detail-index">${index+1}</div>
+            <div class="error-note-detail-body">
+              <div class="error-note-detail-head">
+                <div>
+                  <span class="error-note-detail-kicker">${errorLibraryEscape(item.theme||"Erro salvo")}</span>
+                  <h3>${errorLibraryEscape(item.ccq||item.question_text||`Erro ${index+1}`)}</h3>
+                </div>
+                <span class="error-note-detail-date">${item.due_date?errorLibraryEscape(formatErrorDate(item.due_date)):"Sem revisão agendada"}</span>
               </div>
-              <button type="button" class="button secondary" data-error-note-edit="${errorLibraryEscape(item.id)}">Editar</button>
+
+              ${item.question_text?`
+                <div class="error-note-detail-question">
+                  <strong>Questão</strong>
+                  <p>${errorLibraryEscape(item.question_text)}</p>
+                </div>
+              `:""}
+
+              ${item.correct_answer?`
+                <div class="error-note-detail-answer">
+                  <strong>Resposta correta</strong>
+                  <p>${errorLibraryEscape(item.correct_answer)}</p>
+                </div>
+              `:""}
+
+              ${item.what_i_thought?`
+                <details class="error-note-detail-thought">
+                  <summary>O que eu pensei</summary>
+                  <p>${errorLibraryEscape(item.what_i_thought)}</p>
+                </details>
+              `:""}
+
+              <div class="error-note-detail-actions">
+                <button type="button" class="button primary" data-error-note-review="${errorLibraryEscape(item.id)}">Revisar este erro</button>
+                <button type="button" class="button secondary" data-error-note-edit="${errorLibraryEscape(item.id)}">Editar</button>
+              </div>
             </div>
-            <p class="error-note-tip">💡 ${errorLibraryEscape(item.ccq||"Sem Pulo do Gato")}</p>
-            ${item.question_text?`<details><summary>Ver questão</summary><p>${errorLibraryEscape(item.question_text)}</p>${item.correct_answer?`<div class="review-answer"><strong>Resposta correta</strong><p>${errorLibraryEscape(item.correct_answer)}</p></div>`:""}</details>`:""}
           </article>
         `).join("")}
       </div>
     </section>`;
 
-  document.getElementById("error-notebook-back")?.addEventListener("click",()=>{
+  const restoreNotebookLibrary=()=>{
+    layout?.classList.remove("notebook-detail-open");
+    document.body.classList.remove("error-notebook-detail-active");
+    if(title) title.textContent="Meus cadernos";
+    if(subtitle) subtitle.textContent="Abra uma área e escolha o caderno da matéria que quer revisar.";
+    empty.textContent="Nenhum erro encontrado.";
     renderErrorLibrary();
     setErrorLibraryStatus("");
-  });
+  };
+
+  document.getElementById("error-notebook-back")?.addEventListener("click",restoreNotebookLibrary);
+  document.getElementById("error-notebook-review-all")?.addEventListener("click",()=>reviewErrorNotebook(area,name));
 
   container.querySelectorAll("[data-error-note-edit]").forEach(button=>{
     button.addEventListener("click",(event)=>{
@@ -4967,7 +5011,14 @@ function editErrorNotebook(area,name){
     });
   });
 
-  setErrorLibraryStatus(`Caderno “${name}” aberto.`,"success");
+  container.querySelectorAll("[data-error-note-review]").forEach(button=>{
+    button.addEventListener("click",(event)=>{
+      event.stopPropagation();
+      openErrorReviewPage({mode:"notebook",area,name,item:button.dataset.errorNoteReview});
+    });
+  });
+
+  setErrorLibraryStatus("");
 }
 async function addErrorsToTodayReview(items,label="itens"){
   const ids=[...new Set((items||[]).map(i=>i.id).filter(Boolean))];
