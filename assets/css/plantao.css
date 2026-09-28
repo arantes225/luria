@@ -3996,3 +3996,66 @@ body.plantao-phone-mode .plantao-phone-statusbar{
     box-shadow:none!important;
   }
 }
+
+
+/* v9.9 — Voltar ao Simulador no formato do Pomodoro */
+body[data-page="plantao"] .plantao-module-back{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:10px!important;
+  width:max-content!important;
+  min-width:176px!important;
+  height:52px!important;
+  box-sizing:border-box!important;
+  margin:0 0 14px!important;
+  padding:0 17px!important;
+  border:1px solid var(--border)!important;
+  border-radius:11px!important;
+  background:var(--surface)!important;
+  color:var(--text)!important;
+  box-shadow:0 1px 2px rgba(15,23,42,.03)!important;
+  text-decoration:none!important;
+  font-size:13px!important;
+  font-weight:850!important;
+  line-height:1!important;
+  cursor:pointer!important;
+  transition:border-color .16s ease,background .16s ease,color .16s ease,transform .16s ease!important;
+}
+body[data-page="plantao"] .plantao-module-back::before{
+  content:"←";
+  display:grid;
+  place-items:center;
+  width:31px;
+  height:31px;
+  flex:0 0 31px;
+  border-radius:9px;
+  background:var(--surface-2);
+  color:var(--accent);
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+}
+body[data-page="plantao"] .plantao-module-back:hover{
+  border-color:var(--accent)!important;
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+  transform:translateY(-1px);
+}
+body[data-page="plantao"] .plantao-module-back:hover::before{
+  background:var(--surface);
+}
+@media(max-width:680px){
+  body[data-page="plantao"] .plantao-module-back{
+    min-width:0!important;
+    height:46px!important;
+    padding:0 13px!important;
+    font-size:12px!important;
+  }
+  body[data-page="plantao"] .plantao-module-back::before{
+    width:28px;
+    height:28px;
+    flex-basis:28px;
+    font-size:16px;
+  }
+}
