@@ -3122,29 +3122,48 @@ function prepararSidebarDesktop(
 
 
 function prepararNavGroupsGlobais(userId) {
-  const sidebar=document.getElementById("sidebar");
-  if(!sidebar)return;
-  sidebar.querySelectorAll(".nav-group").forEach((group,index)=>{
-    const toggle=group.querySelector(":scope > .nav-group-label");
-    const submenu=group.querySelector(":scope > .nav-submenu");
-    if(!toggle||!submenu||toggle.id==="work-management-nav-toggle")return;
-    const key=`docmap:nav-group:${page}:${index}`;
-    const apply=(open)=>{
-      submenu.hidden=!open;
-      group.classList.toggle("nav-group-collapsed",!open);
-      toggle.setAttribute("aria-expanded",open?"true":"false");
-      try{localStorage.setItem(key,open?"1":"0")}catch{}
+  const sidebar = document.getElementById("sidebar");
+  if (!sidebar) return;
+
+  sidebar.querySelectorAll(".nav-group").forEach((group) => {
+    const toggle = group.querySelector(":scope > .nav-group-label");
+    const submenu = group.querySelector(":scope > .nav-submenu");
+    if (!toggle || !submenu || toggle.id === "work-management-nav-toggle") return;
+
+    const label = (
+      toggle.querySelector(".nav-label-text")?.textContent ||
+      toggle.textContent ||
+      "grupo"
+    ).trim().toLowerCase().replace(/\s+/g, "-");
+
+    const key = `docmap:nav-group:${userId}:${label}`;
+    const containsActivePage = !!submenu.querySelector(".nav-sublink.active");
+
+    const apply = (open, persist = true) => {
+      submenu.hidden = !open;
+      group.classList.toggle("nav-group-collapsed", !open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      if (persist) {
+        try { localStorage.setItem(key, open ? "1" : "0"); } catch {}
+      }
     };
-    let open=toggle.getAttribute("aria-expanded")==="true"||!submenu.hidden;
-    try{const saved=localStorage.getItem(key);if(saved!==null)open=saved==="1"}catch{}
-    apply(open);
-    toggle.addEventListener("click",(event)=>{
-      event.preventDefault();event.stopPropagation();
-      apply(toggle.getAttribute("aria-expanded")!=="true");
-    });
+
+    let open = containsActivePage || toggle.getAttribute("aria-expanded") === "true" || !submenu.hidden;
+    try {
+      const saved = localStorage.getItem(key);
+      if (saved !== null && !containsActivePage) open = saved === "1";
+    } catch {}
+
+    apply(open, false);
+
+    toggle.onclick = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const nextOpen = toggle.getAttribute("aria-expanded") !== "true";
+      apply(nextOpen, true);
+    };
   });
 }
-
 
 function prepararWorkManagementMenu(userId) {
   const group = document.getElementById("work-management-nav-group");
