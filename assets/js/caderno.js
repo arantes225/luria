@@ -18999,6 +18999,45 @@ function ensureNotebookSideTools() {
   quick.querySelector('[data-quick="pdf"]').onclick=()=>{const d=getCurrentDocument();if(d?.note){notebookState.librarySelected=new Set([d.note.id]);exportSelectedPdf();}};
   document.getElementById("notebook-editor")?.addEventListener("input",()=>{refreshNotebookOutline();renderTopicList();});
 }
+
+function wireNotebookDarkSelectionFeedback() {
+  const toolbar = document.getElementById("notebook-toolbar");
+  if (!toolbar || toolbar.dataset.selectionFeedbackWired === "1") return;
+  toolbar.dataset.selectionFeedbackWired = "1";
+
+  const isDark = () =>
+    document.documentElement.dataset.theme === "dark"
+    || document.body.classList.contains("theme-dark");
+
+  const clearActive = () => {
+    toolbar.querySelectorAll(".notebook-dark-active")
+      .forEach(el => el.classList.remove("notebook-dark-active"));
+  };
+
+  toolbar.addEventListener("click", (event) => {
+    if (!isDark()) return;
+    const target = event.target.closest(
+      "button:not(:disabled), select:not(:disabled), label.note-color, .notebook-color-control"
+    );
+    if (!target || !toolbar.contains(target)) return;
+
+    clearActive();
+    target.classList.add("notebook-dark-active");
+
+    const menuButton = target.closest(".notebook-tool-menu-wrap")?.querySelector(":scope > button");
+    if (menuButton && menuButton !== target) {
+      menuButton.classList.add("notebook-dark-active");
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!isDark()) return;
+    if (!event.target.closest("#notebook-toolbar")) {
+      clearActive();
+    }
+  });
+}
+
 function wireNotebookEnhancements() {
   ensureNotebookSideTools();
   const columns=document.getElementById("notebook-columns");
@@ -19029,6 +19068,8 @@ async function initNotebook() {
   wireEvents();
 
   wireNotebookEnhancements();
+
+  wireNotebookDarkSelectionFeedback();
 
   initNotebookTopicPanelState();
 
