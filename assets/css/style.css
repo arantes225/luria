@@ -3310,3 +3310,61 @@ body.auth-page>.auth-card{
 :root[data-theme="leila-mood"] body.auth-page{
   --luria-pattern-opacity:.048;
 }
+
+
+/* =========================================================
+   LURIA — CABEÇALHO/CARD SUPERIOR GLOBAL v53
+   Referência geométrica: card "Anotações"
+   ========================================================= */
+:root{
+  --luria-page-title-card-min-height:138px;
+  --luria-page-title-card-pad-y:24px;
+  --luria-page-title-card-pad-x:28px;
+  --luria-page-title-card-radius:15px;
+}
+
+/* Mantém a geometria dos cards superiores igual entre as páginas. */
+.luria-page-spotlight,
+.daily-hero,
+.stats-hero,
+.flash-top-spotlight,
+.qs-v17-top{
+  box-sizing:border-box!important;
+  min-height:var(--luria-page-title-card-min-height)!important;
+  padding:var(--luria-page-title-card-pad-y) var(--luria-page-title-card-pad-x)!important;
+  border-radius:var(--luria-page-title-card-radius)!important;
+}
+
+/* O cabeçalho superior ocupa sempre a mesma largura útil. */
+.topbar{
+  width:100%!important;
+  box-sizing:border-box!important;
+}
+
+/* Timer + sino + perfil ficam no mesmo ponto, independente da página. */
+@media (min-width:981px){
+  .topbar .luria-notifications{
+    position:fixed!important;
+    top:18px!important;
+    right:34px!important;
+    left:auto!important;
+    margin:0!important;
+    transform:none!important;
+    z-index:245!important;
+  }
+}
+
+/* Iniciais com o mesmo peso visual aprovado. */
+.luria-profile-toggle,
+.user-avatar{
+  font-weight:950!important;
+  letter-spacing:-.045em!important;
+}
+
+@media(max-width:700px){
+  :root{
+    --luria-page-title-card-min-height:118px;
+    --luria-page-title-card-pad-y:20px;
+    --luria-page-title-card-pad-x:20px;
+  }
+}
