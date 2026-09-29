@@ -477,3 +477,11 @@ body[data-page="questoes"] .qs-home-action-library img.qs-home-card-art{
     opacity:.82!important;
   }
 }
+
+
+/* QS cards v8 — arquivos fisicamente recortados, sem crop visual */
+body[data-page="questoes"] .qs-home-next img.qs-home-art-next,
+body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
+  object-fit:contain!important;
+  object-position:center!important;
+}
