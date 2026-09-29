@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/plantao.css?v=20260929-aph-v2">
+  <link rel="stylesheet" href="assets/css/plantao.css?v=20260929-debrief-v1">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=10-theme-buttons">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -425,16 +425,19 @@
             <div><span class="badge accent">Debriefing</span><h2 id="plantao-debrief-title">Caso encerrado</h2><p id="plantao-diagnosis"></p></div>
             <div class="plantao-final-score"><strong id="plantao-final-score">0</strong><span>/100</span></div>
           </div>
-          <div class="plantao-debrief-grid">
-            <article class="panel"><span class="metric-label">Pulo do Gato</span><p id="plantao-pulo" class="plantao-pulo"></p></article>
-            <article class="panel"><span class="metric-label">Seu desempenho</span><div id="plantao-performance" class="plantao-performance"></div></article>
-            <article class="panel"><span class="metric-label">Condutas-chave</span><div id="plantao-key-actions" class="plantao-review-list"></div></article>
-            <article class="panel"><span class="metric-label">Erros de alto impacto</span><div id="plantao-danger-actions" class="plantao-review-list"></div></article>
-          </div>
+          <article class="panel plantao-pulo-panel">
+            <span class="metric-label">Pulo do Gato</span>
+            <p id="plantao-pulo" class="plantao-pulo"></p>
+          </article>
           <article class="panel plantao-case-explanation-panel">
             <span class="metric-label">Entenda o caso</span>
             <div id="plantao-case-explanation" class="plantao-understand"></div>
           </article>
+          <div class="plantao-debrief-grid">
+            <article class="panel"><span class="metric-label">Seu desempenho</span><div id="plantao-performance" class="plantao-performance"></div></article>
+            <article class="panel"><span class="metric-label">Condutas-chave</span><div id="plantao-key-actions" class="plantao-review-list"></div></article>
+            <article class="panel"><span class="metric-label">Erros de alto impacto</span><div id="plantao-danger-actions" class="plantao-review-list"></div></article>
+          </div>
           <div class="plantao-debrief-grid plantao-debrief-grid-secondary">
             <article class="panel"><span class="metric-label">Erros de sequência</span><div id="plantao-sequence-errors" class="plantao-review-list"></div></article>
             <article class="panel"><span class="metric-label">Condutas inadequadas</span><div id="plantao-wrong-actions" class="plantao-review-list"></div></article>
@@ -472,7 +475,7 @@
   <script src="assets/js/app.js?v=17.37-top-controls-120"></script>
   <script src="assets/js/plantao-monitor.js?v=5.4"></script>
   <script src="assets/js/plantao-engine.js?v=1.4-rules"></script>
-  <script src="/assets/js/plantao.js?v=20260929-aph-v3"></script>
+  <script src="/assets/js/plantao.js?v=20260929-debrief-v1"></script>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
