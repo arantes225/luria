@@ -618,19 +618,19 @@
   background:color-mix(in srgb,var(--surface-2) 82%,transparent);
 }
 
-.exam-card-grid .exam-score-comparison,
+.exam-card-grid .exam-result-card,
 .exam-card-grid .exam-cutoff-card{
   align-items:center;
   text-align:center;
   background:color-mix(in srgb,var(--surface) 76%,var(--accent-soft));
 }
-.exam-card-grid .exam-score-comparison > span,
+.exam-card-grid .exam-result-card > span,
 .exam-card-grid .exam-cutoff-card > span{
   width:100%;
   color:var(--text);
   font-size:8px;
 }
-.exam-card-grid .exam-score-comparison .exam-inline-score,
+.exam-card-grid .exam-result-card .exam-inline-score,
 .exam-card-grid .exam-cutoff-card .exam-inline-score{
   width:70px;
   height:70px;
@@ -647,7 +647,7 @@
   background:var(--surface);
   box-shadow:0 4px 14px color-mix(in srgb,var(--text) 7%,transparent);
 }
-.exam-card-grid .exam-score-comparison .exam-inline-score{
+.exam-card-grid .exam-result-card .exam-inline-score{
   border-color:color-mix(in srgb,var(--accent) 62%,var(--border));
 }
 .exam-card-grid .exam-cutoff-card .exam-inline-score{
