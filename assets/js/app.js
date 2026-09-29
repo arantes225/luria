@@ -1150,6 +1150,7 @@ const PAGE_INFO = {
   amigos: { title: "Amigos", eyebrow: "Compartilhar" },
   configuracoes: { title: "Configurações", eyebrow: "Conta e preferências" },
   admin: { title: "Admin", eyebrow: "Métricas do produto" },
+  beta_testers: { title: "Beta Testers", eyebrow: "Feedback" },
   trabalho_dashboard: { title: "Dashboard", eyebrow: "Trabalho" },
   trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Trabalho" },
   trabalho_plantoes: { title: "Escala", eyebrow: "Gestor de Plantões" },
@@ -5994,10 +5995,10 @@ async function prepararAdminNavigation(
     "beta-testers-nav-link";
 
   betaLink.className =
-    `nav-link ${location.hash === "#beta" && page === "admin" ? "active" : ""}`;
+    `nav-link ${page === "beta_testers" ? "active" : ""}`;
 
   betaLink.href =
-    "/admin/#beta";
+    "/beta-testers/";
 
   betaLink.innerHTML =
     `<span class="nav-icon">${luriaIcon("users")}</span><span>Beta Testers</span>`;
