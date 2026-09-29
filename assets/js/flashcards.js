@@ -7794,6 +7794,60 @@ window.addEventListener(
 );
 
 
+
+/* LURIA_FLASHCARD_NOTEBOOK_HANDOFF_V1 */
+function consumeNotebookFlashcardDraft() {
+  let draft = null;
+
+  try {
+    const raw = localStorage.getItem("luria:flashcard-draft-from-notebook");
+    if (raw) draft = JSON.parse(raw);
+    localStorage.removeItem("luria:flashcard-draft-from-notebook");
+  } catch {}
+
+  if (!draft) return;
+
+  switchFlashTab("create");
+
+  const areaInput = document.getElementById("create-area");
+  const areaLabel = document.getElementById("create-area-label");
+  const subjectInput = document.getElementById("create-materia");
+  const subjectLabel = document.getElementById("create-materia-label");
+  const front = document.getElementById("create-front");
+  const back = document.getElementById("create-back");
+
+  if (areaInput) {
+    areaInput.value = normalizeFlashAreaName(draft.area || "");
+    areaInput.dispatchEvent(new Event("change", { bubbles: true }));
+  }
+
+  if (areaLabel) {
+    areaLabel.textContent = areaInput?.value || "Selecione a área";
+  }
+
+  if (subjectInput && draft.materia) {
+    subjectInput.value = String(draft.materia);
+  }
+
+  updateCreateSubjectOptions();
+
+  if (subjectInput && draft.materia) {
+    subjectInput.value = String(draft.materia);
+    if (subjectLabel) subjectLabel.textContent = String(draft.materia);
+  }
+
+  if (front) front.value = String(draft.front || "");
+  if (back) back.value = String(draft.back || "");
+
+  setFlashStatus(
+    "create-status",
+    "Conteúdo importado das Anotações. Revise frente e verso antes de criar.",
+    "success"
+  );
+
+  front?.focus();
+}
+
 async function initFlashcards() {
   flashUser =
     window.docmapUser;
@@ -7803,6 +7857,8 @@ async function initFlashcards() {
   wireCreate();
   wireImport();
   wireLibrary();
+
+  consumeNotebookFlashcardDraft();
 
   await loadFlashSettings();
   await closeAbandonedReviewSession();
