@@ -439,3 +439,41 @@ body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
     opacity:.76!important;
   }
 }
+
+
+/* QS v7 — garante artes de Iniciar e Biblioteca visíveis */
+body[data-page="questoes"] .qs-home-next{
+  position:relative!important;
+  overflow:hidden!important;
+}
+body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
+  right:18px!important;
+  top:50%!important;
+  bottom:auto!important;
+  width:42%!important;
+  height:82%!important;
+  max-width:42%!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:translateY(-50%)!important;
+  opacity:.90!important;
+  z-index:2!important;
+}
+body[data-page="questoes"] .qs-home-action-library img.qs-home-card-art{
+  opacity:.90!important;
+}
+@media(max-width:760px){
+  body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
+    right:6px!important;
+    top:50%!important;
+    bottom:auto!important;
+    width:39%!important;
+    max-width:39%!important;
+    height:76%!important;
+    transform:translateY(-50%)!important;
+    opacity:.78!important;
+  }
+  body[data-page="questoes"] .qs-home-action-library img.qs-home-card-art{
+    opacity:.82!important;
+  }
+}
