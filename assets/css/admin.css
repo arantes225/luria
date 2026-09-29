@@ -619,14 +619,9 @@
   min-height: 100vh;
   display: grid;
   place-items: center;
-  padding: 28px 18px;
-  background:
-    radial-gradient(
-      circle at top,
-      color-mix(in srgb, var(--accent) 7%, transparent),
-      transparent 42%
-    ),
-    var(--bg);
+  padding: 22px 16px;
+  background: var(--accent);
+  transition: background-color .2s ease;
 }
 
 .admin-pin-gate[hidden] {
@@ -634,26 +629,26 @@
 }
 
 .admin-pin-card {
-  width: min(100%, 410px);
-  padding: 28px;
-  border: 1px solid var(--border);
-  border-radius: 20px;
+  width: min(100%, 344px);
+  padding: 20px 22px;
+  border: 1px solid color-mix(in srgb, var(--border) 84%, transparent);
+  border-radius: 17px;
   background: var(--surface);
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 48px color-mix(in srgb, #000 18%, transparent);
 }
 
 .admin-pin-brand {
   display: grid;
   justify-items: center;
-  gap: 10px;
-  padding-bottom: 20px;
-  margin-bottom: 24px;
+  gap: 7px;
+  padding-bottom: 14px;
+  margin-bottom: 16px;
   border-bottom: 1px solid var(--border);
   text-align: center;
 }
 
 .admin-pin-logo {
-  width: min(100%, 190px);
+  width: min(100%, 148px);
   height: auto;
   display: block;
   object-fit: contain;
@@ -678,22 +673,22 @@
 }
 
 .admin-pin-copy h1 {
-  margin: 7px 0 0;
-  font-size: 24px;
-  line-height: 1.12;
+  margin: 5px 0 0;
+  font-size: 20px;
+  line-height: 1.15;
 }
 
 .admin-pin-copy p {
-  margin: 9px 0 0;
+  margin: 7px 0 0;
   color: var(--muted);
-  font-size: 11px;
-  line-height: 1.55;
+  font-size: 10px;
+  line-height: 1.45;
 }
 
 .admin-pin-fields {
   display: grid;
-  gap: 12px;
-  margin-top: 22px;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .admin-pin-field {
@@ -716,16 +711,16 @@
 
 .admin-pin-field input {
   width: 100%;
-  height: 52px;
-  padding: 0 14px;
+  height: 46px;
+  padding: 0 12px;
   border: 1px solid var(--border);
   border-radius: 11px;
   outline: none;
   background: var(--surface);
   color: var(--text);
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 900;
-  letter-spacing: .28em;
+  letter-spacing: .24em;
   text-align: center;
 }
 
@@ -735,8 +730,8 @@
 }
 
 .admin-pin-message {
-  min-height: 18px;
-  margin-top: 13px;
+  min-height: 16px;
+  margin-top: 10px;
   color: var(--muted);
   font-size: 9px;
   font-weight: 700;
@@ -753,13 +748,13 @@
 
 .admin-pin-submit {
   width: 100%;
-  min-height: 44px;
-  margin-top: 5px;
+  min-height: 40px;
+  margin-top: 3px;
 }
 
 .admin-pin-back {
   display: block;
-  margin-top: 15px;
+  margin-top: 11px;
   color: var(--muted);
   font-size: 9px;
   font-weight: 750;
@@ -771,9 +766,18 @@
 }
 
 @media (max-width: 520px) {
+  .admin-pin-gate {
+    padding: 16px 14px;
+  }
+
   .admin-pin-card {
-    padding: 22px;
-    border-radius: 16px;
+    width: min(100%, 330px);
+    padding: 18px 20px;
+    border-radius: 15px;
+  }
+
+  .admin-pin-logo {
+    width: min(100%, 136px);
   }
 }
 
