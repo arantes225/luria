@@ -3613,8 +3613,9 @@ function ensureNotificationCenter() {
           <div class="luria-pomodoro-fields">
             <label><span>Tempo</span><span><input id="luria-timer-duration-minutes" type="number" min="1" max="1440" step="1" placeholder="—"> min</span></label>
           </div>
-          <div class="luria-pomodoro-actions">
+          <div class="luria-pomodoro-actions luria-stopwatch-actions">
             <button id="luria-stopwatch-start" type="button">Iniciar</button>
+            <button id="luria-stopwatch-pause" type="button">Pausar</button>
             <button id="luria-stopwatch-reset" type="button">Zerar</button>
           </div>
         </div>
@@ -3773,6 +3774,7 @@ function ensureNotificationCenter() {
   const pomodoroView = document.getElementById("luria-pomodoro-view");
   const stopwatchTime = document.getElementById("luria-stopwatch-time");
   const stopwatchStart = document.getElementById("luria-stopwatch-start");
+  const stopwatchPause = document.getElementById("luria-stopwatch-pause");
   const stopwatchReset = document.getElementById("luria-stopwatch-reset");
 
   const timerDurationInput = document.getElementById("luria-timer-duration-minutes");
@@ -3823,7 +3825,11 @@ function ensureNotificationCenter() {
     const label = formatClock(currentTimerSeconds(), true);
     if (stopwatchTime) stopwatchTime.textContent = label;
     if (activeTimerView === "timer") renderCompactTopTimer(currentTimerSeconds());
-    if (stopwatchStart) stopwatchStart.textContent = stopwatchInterval ? "Pausar" : "Iniciar";
+    if (stopwatchStart) {
+      stopwatchStart.textContent = "Iniciar";
+      stopwatchStart.disabled = Boolean(stopwatchInterval);
+    }
+    if (stopwatchPause) stopwatchPause.disabled = !stopwatchInterval;
     if (stopwatchInterval && stopwatchCountdownSeconds !== null && currentTimerSeconds() <= 0) {
       clearInterval(stopwatchInterval); stopwatchInterval = null; stopwatchStartedAt = 0;
       if (pomodoroStatus) pomodoroStatus.textContent = "Tempo concluído.";
@@ -3855,7 +3861,11 @@ function ensureNotificationCenter() {
     if (activeTimerView === "pomodoro") renderCompactTopTimer(pomodoroRemaining);
     if (pomodoroTime) pomodoroTime.textContent = label;
     if (activeTimerView === "pomodoro" && pomodoroStateLabel) pomodoroStateLabel.textContent = pomodoroMode === "focus" ? "Foco" : "Pausa";
-    if (pomodoroStart) pomodoroStart.textContent = pomodoroTimer ? "Pausar" : "Iniciar";
+    if (pomodoroStart) {
+      pomodoroStart.textContent = pomodoroTimer
+        ? "Pausar"
+        : (pomodoroMode === "break" ? "Iniciar pausa" : "Iniciar foco");
+    }
     timerViewButtons.forEach((button) => {
     button.addEventListener("click", () => setTimerView(button.dataset.luriaTimerView));
   });
@@ -3876,14 +3886,7 @@ function ensureNotificationCenter() {
   };
 
   stopwatchStart?.addEventListener("click", () => {
-    if (stopwatchInterval) {
-      stopwatchElapsedMs = currentStopwatchMs();
-      clearInterval(stopwatchInterval);
-      stopwatchInterval = null;
-      stopwatchStartedAt = 0;
-      renderStopwatch();
-      return;
-    }
+    if (stopwatchInterval) return;
 
     if (stopwatchElapsedMs === 0) {
       resolveTimerModeFromInput();
@@ -3891,6 +3894,15 @@ function ensureNotificationCenter() {
 
     stopwatchStartedAt = Date.now();
     stopwatchInterval = setInterval(renderStopwatch, 250);
+    renderStopwatch();
+  });
+
+  stopwatchPause?.addEventListener("click", () => {
+    if (!stopwatchInterval) return;
+    stopwatchElapsedMs = currentStopwatchMs();
+    clearInterval(stopwatchInterval);
+    stopwatchInterval = null;
+    stopwatchStartedAt = 0;
     renderStopwatch();
   });
 
@@ -3920,17 +3932,49 @@ function ensureNotificationCenter() {
     renderPomodoro();
   };
 
+  const signalPomodoroTransition = (message) => {
+    if (pomodoroPanel) pomodoroPanel.hidden = false;
+    if (pomodoroToggle) {
+      pomodoroToggle.setAttribute("aria-expanded", "true");
+      pomodoroToggle.classList.remove("luria-pomodoro-attention");
+      void pomodoroToggle.offsetWidth;
+      pomodoroToggle.classList.add("luria-pomodoro-attention");
+      window.setTimeout(() => pomodoroToggle.classList.remove("luria-pomodoro-attention"), 7000);
+    }
+    if (pomodoroStatus) pomodoroStatus.textContent = message;
+  };
+
   const tickPomodoro = () => {
     pomodoroRemaining = Math.max(0, Math.ceil((pomodoroDeadline - Date.now()) / 1000));
     renderPomodoro();
-    if (pomodoroRemaining === 0) {
-      stopPomodoro();
-      if (pomodoroStatus) {
-        pomodoroStatus.textContent = pomodoroMode === "focus"
-          ? "Foco concluído. Inicie a pausa."
-          : "Pausa concluída. Volte ao foco.";
-      }
+
+    if (pomodoroRemaining !== 0) return;
+
+    const completedMode = pomodoroMode;
+    if (pomodoroTimer) clearInterval(pomodoroTimer);
+    pomodoroTimer = null;
+    pomodoroDeadline = 0;
+
+    if (completedMode === "focus") {
+      pomodoroMode = "break";
+      pomodoroRemaining = pomodoroDurations.break * 60;
+      pomodoroModes.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === "break"));
+      });
+      activeTimerView = "pomodoro";
+      renderPomodoro();
+      signalPomodoroTransition("Foco concluído. Hora da pausa — toque em Iniciar pausa.");
+      return;
     }
+
+    pomodoroMode = "focus";
+    pomodoroRemaining = pomodoroDurations.focus * 60;
+    pomodoroModes.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === "focus"));
+    });
+    activeTimerView = "pomodoro";
+    renderPomodoro();
+    signalPomodoroTransition("Pausa concluída. Pronto para iniciar o próximo foco.");
   };
 
   const selectPomodoroMode = (nextMode) => {
@@ -7397,6 +7441,50 @@ iniciarApp();
       font-weight:850!important;
       line-height:.9!important;
       color:var(--muted)!important;
+    }
+  `;
+  document.head.appendChild(style);
+})();
+
+
+/* Timer/Pomodoro v42 — pausa separada + aviso de transição */
+(function ensureTimerControlsV42(){
+  if(document.getElementById("luria-timer-controls-v42")) return;
+  const style=document.createElement("style");
+  style.id="luria-timer-controls-v42";
+  style.textContent=`
+    .luria-stopwatch-actions{
+      grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    }
+
+    .luria-stopwatch-actions button:disabled{
+      opacity:.45!important;
+      cursor:default!important;
+    }
+
+    .luria-pomodoro-toggle.luria-pomodoro-attention{
+      border-color:var(--accent)!important;
+      background:var(--accent-soft)!important;
+      color:var(--accent)!important;
+      animation:luriaPomodoroAttention 900ms ease-in-out 0s 5;
+    }
+
+    @keyframes luriaPomodoroAttention{
+      0%,100%{
+        box-shadow:0 1px 2px rgba(15,23,42,.03);
+        transform:scale(1);
+      }
+      50%{
+        box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent);
+        transform:scale(1.025);
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      .luria-pomodoro-toggle.luria-pomodoro-attention{
+        animation:none!important;
+        box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent)!important;
+      }
     }
   `;
   document.head.appendChild(style);
