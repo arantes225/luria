@@ -4163,3 +4163,26 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     margin-top:4px!important;
   }
 }
+
+
+/* =========================================================
+   Dashboard 1 v45 — alinhamento da linha inferior
+   ========================================================= */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:236px!important;
+    min-height:236px!important;
+    max-height:236px!important;
+    align-self:start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    transform:translateY(-6px)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    transform:translateY(-6px)!important;
+    padding-bottom:16px!important;
+  }
+}
