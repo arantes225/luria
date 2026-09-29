@@ -649,3 +649,96 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     margin-top:0!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v72 — topo final conforme referência visual enviada
+   Controles no fluxo, acima do card, sem flutuar.
+   ========================================================= */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .page{
+    padding-top:0!important;
+  }
+
+  body:not([data-page="dashboard"]) .page > .topbar{
+    position:relative!important;
+    inset:auto!important;
+    display:flex!important;
+    align-items:center!important;
+    width:100%!important;
+    height:72px!important;
+    min-height:72px!important;
+    max-height:72px!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+    background:transparent!important;
+    overflow:visible!important;
+    z-index:240!important;
+  }
+
+  body:not([data-page="dashboard"]) .topbar .page-heading{
+    display:none!important;
+  }
+
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    position:static!important;
+    inset:auto!important;
+    width:100%!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:18px!important;
+    z-index:auto!important;
+  }
+
+  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+    min-width:184px!important;
+    width:184px!important;
+    height:58px!important;
+    padding:0 18px!important;
+    gap:12px!important;
+    border-radius:16px!important;
+  }
+
+  body:not([data-page="dashboard"]) .luria-pomodoro-icon,
+  body:not([data-page="dashboard"]) .luria-pomodoro-icon svg{
+    width:28px!important;
+    height:28px!important;
+  }
+
+  body:not([data-page="dashboard"]) .luria-pomodoro-copy strong{
+    font-size:16px!important;
+    line-height:1.05!important;
+  }
+
+  body:not([data-page="dashboard"]) .luria-pomodoro-copy small{
+    margin-top:4px!important;
+    font-size:13px!important;
+    line-height:1!important;
+  }
+
+  body:not([data-page="dashboard"]) .luria-notification-toggle,
+  body:not([data-page="dashboard"]) .luria-profile-toggle{
+    width:58px!important;
+    height:58px!important;
+    min-width:58px!important;
+    min-height:58px!important;
+    border-radius:16px!important;
+  }
+
+  body:not([data-page="dashboard"]) .luria-notification-toggle svg{
+    width:22px!important;
+    height:22px!important;
+  }
+
+  body:not([data-page="dashboard"]) .luria-profile-toggle{
+    font-size:19px!important;
+  }
+
+  body:not([data-page="dashboard"]) .page > .topbar + *{
+    margin-top:0!important;
+  }
+}
