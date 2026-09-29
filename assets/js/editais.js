@@ -633,6 +633,35 @@ async function updateExamStatusInline(
 }
 
 
+document.addEventListener(
+  "click",
+  () => {
+    document
+      .querySelectorAll(
+        "[data-exam-menu]"
+      )
+      .forEach(
+        (menu) => {
+          menu.hidden = true;
+        }
+      );
+
+    document
+      .querySelectorAll(
+        "[data-exam-menu-toggle]"
+      )
+      .forEach(
+        (button) => {
+          button.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+        }
+      );
+  }
+);
+
+
 function renderExams() {
   const list =
     document.getElementById(
@@ -795,30 +824,64 @@ function renderExams() {
                 </div>
 
 
-                <label class="exam-quick-status">
-                  <span>Status</span>
+                <div class="exam-card-top-actions">
+                  <label class="exam-quick-status">
+                    <span>Status</span>
 
-                  <select
-                    data-exam-status-quick="${examEscape(exam.id)}"
-                    aria-label="Alterar status de ${examEscape(exam.institution)}"
-                  >
-                    <option value="planned" ${exam.status === "planned" ? "selected" : ""}>
-                      Planejada
-                    </option>
+                    <select
+                      data-exam-status-quick="${examEscape(exam.id)}"
+                      aria-label="Alterar status de ${examEscape(exam.institution)}"
+                    >
+                      <option value="planned" ${exam.status === "planned" ? "selected" : ""}>
+                        Planejada
+                      </option>
 
-                    <option value="registered" ${exam.status === "registered" ? "selected" : ""}>
-                      Inscrita
-                    </option>
+                      <option value="registered" ${exam.status === "registered" ? "selected" : ""}>
+                        Inscrita
+                      </option>
 
-                    <option value="taken" ${exam.status === "taken" ? "selected" : ""}>
-                      Realizada
-                    </option>
+                      <option value="taken" ${exam.status === "taken" ? "selected" : ""}>
+                        Realizada
+                      </option>
 
-                    <option value="cancelled" ${exam.status === "cancelled" ? "selected" : ""}>
-                      Cancelada
-                    </option>
-                  </select>
-                </label>
+                      <option value="cancelled" ${exam.status === "cancelled" ? "selected" : ""}>
+                        Cancelada
+                      </option>
+                    </select>
+                  </label>
+
+                  <div class="exam-card-menu">
+                    <button
+                      class="exam-card-menu-toggle"
+                      type="button"
+                      data-exam-menu-toggle="${examEscape(exam.id)}"
+                      aria-label="Opções da prova ${examEscape(exam.institution)}"
+                      aria-expanded="false"
+                    >
+                      <span aria-hidden="true">•••</span>
+                    </button>
+
+                    <div
+                      class="exam-card-menu-popover"
+                      data-exam-menu="${examEscape(exam.id)}"
+                      hidden
+                    >
+                      <button
+                        type="button"
+                        data-edit-exam="${examEscape(exam.id)}"
+                      >
+                        Editar
+                      </button>
+                      <button
+                        class="danger"
+                        type="button"
+                        data-delete-exam="${examEscape(exam.id)}"
+                      >
+                        Excluir
+                      </button>
+                    </div>
+                  </div>
+                </div>
 
               </div>
 
@@ -912,17 +975,6 @@ function renderExams() {
 
               <div class="exam-card-actions">
 
-                <button
-                  class="button secondary"
-                  type="button"
-                  data-edit-exam="${examEscape(
-                    exam.id
-                  )}"
-                >
-                  Editar
-                </button>
-
-
                 ${
                   exam.edital_url
                     ? `
@@ -958,16 +1010,6 @@ function renderExams() {
                     : ""
                 }
 
-
-                <button
-                  class="button secondary exam-delete"
-                  type="button"
-                  data-delete-exam="${examEscape(
-                    exam.id
-                  )}"
-                >
-                  Excluir
-                </button>
 
               </div>
 
@@ -1012,6 +1054,84 @@ function renderExams() {
 
 
   updateExamBulkToolbar();
+
+
+  list
+    .querySelectorAll(
+      "[data-exam-menu-toggle]"
+    )
+    .forEach(
+      (button) => {
+        button.addEventListener(
+          "click",
+          (event) => {
+            event.stopPropagation();
+
+            const id =
+              button.dataset
+                .examMenuToggle;
+
+            const menu =
+              list.querySelector(
+                `[data-exam-menu="${CSS.escape(id)}"]`
+              );
+
+            const willOpen =
+              Boolean(menu?.hidden);
+
+            list
+              .querySelectorAll(
+                "[data-exam-menu]"
+              )
+              .forEach(
+                (item) => {
+                  item.hidden = true;
+                }
+              );
+
+            list
+              .querySelectorAll(
+                "[data-exam-menu-toggle]"
+              )
+              .forEach(
+                (item) => {
+                  item.setAttribute(
+                    "aria-expanded",
+                    "false"
+                  );
+                }
+              );
+
+            if (
+              menu
+              && willOpen
+            ) {
+              menu.hidden = false;
+              button.setAttribute(
+                "aria-expanded",
+                "true"
+              );
+            }
+          }
+        );
+      }
+    );
+
+
+  list
+    .querySelectorAll(
+      "[data-exam-menu]"
+    )
+    .forEach(
+      (menu) => {
+        menu.addEventListener(
+          "click",
+          (event) => {
+            event.stopPropagation();
+          }
+        );
+      }
+    );
 
 
   list
