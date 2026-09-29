@@ -421,3 +421,40 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 .luria-notifications{
   cursor:default!important;
 }
+
+
+/* =========================================================
+   LURIA v67 — controles fixos no topo das páginas
+   Timer + notificações + perfil permanecem presos ao cabeçalho.
+   ========================================================= */
+@media(min-width:981px){
+  body .topbar,
+  body:not([data-page="dashboard"]) .topbar,
+  body[data-page="dashboard"] .topbar{
+    position:sticky!important;
+    top:0!important;
+    z-index:240!important;
+    background:var(--bg)!important;
+  }
+
+  .topbar .luria-notifications,
+  body:not([data-page="dashboard"]) .topbar .luria-notifications,
+  body[data-page="dashboard"] .topbar .luria-notifications{
+    position:static!important;
+    inset:auto!important;
+    margin-left:auto!important;
+    transform:none!important;
+    translate:none!important;
+    z-index:auto!important;
+  }
+}
+
+@media(max-width:980px){
+  body .topbar,
+  html.pwa-standalone body .topbar{
+    position:sticky!important;
+    top:0!important;
+    z-index:240!important;
+    background:var(--bg)!important;
+  }
+}
