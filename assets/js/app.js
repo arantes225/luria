@@ -598,19 +598,9 @@
       overflow:visible !important;
     }
 
-    /* Perfil global: mesma posição horizontal em todas as páginas. */
-    @media (min-width:981px) {
-      .topbar .luria-notifications {
-        position:fixed !important;
-        top:18px !important;
-        right:34px !important;
-        left:auto !important;
-        margin-left:0 !important;
-        z-index:245 !important;
-      }
-    }
+    /* Posição dos controles superiores é definida no CSS global carregado no <head>. */
 
-    /* Iniciais: peso forte padronizado em todo o LURIA. */
+/* Iniciais: peso forte padronizado em todo o LURIA. */
     .luria-profile-toggle,
     .user-avatar {
       font-weight:950 !important;
@@ -622,14 +612,10 @@
       align-self:flex-start !important;
     }
     .topbar .luria-notifications {
-      position:relative !important;
-      top:0 !important;
       margin-left:auto !important;
-      align-self:flex-start !important;
       display:flex !important;
       align-items:center !important;
-      gap:12px !important;
-      transform:translateY(-10px) !important;
+      gap:10px !important;
     }
     .topbar .luria-pomodoro-top,
     .topbar .luria-profile-top,
@@ -639,20 +625,9 @@
       margin-bottom:0 !important;
     }
 
-    /* Desktop: Timer + sino + perfil ancorados no mesmo ponto em todas as páginas. */
-    @media (min-width:981px) {
-      .topbar .luria-notifications {
-        position:fixed !important;
-        top:18px !important;
-        right:34px !important;
-        left:auto !important;
-        margin:0 !important;
-        transform:none !important;
-        z-index:245 !important;
-      }
-    }
+    /* Desktop: geometria do grupo controlada exclusivamente por luria-brand-v5.css. */
 
-    /* v17.37 — controles superiores +20% e alinhados ao card da página.
+/* v17.37 — dimensões dos controles; posição fica no CSS global.
        Dashboard mantém seu cabeçalho próprio. */
     @media (min-width:981px) {
       body:not([data-page="dashboard"]) .topbar {
@@ -6921,70 +6896,6 @@ iniciarApp();
 })();
 
 
-/* Exact topbar/title geometry v36 */
-(function installExactTopbarTitleGeometry(){
-  if(window.__luriaExactTopbarTitleGeometryInstalled) return;
-  window.__luriaExactTopbarTitleGeometryInstalled=true;
+/* Exact topbar/title geometry v37 — disabled.
+   Topbar and title geometry are now CSS-only to avoid layout shaking. */
 
-  const titleSelector=[
-    ".page > .luria-page-spotlight",
-    ".page > .schedule-top-spotlight",
-    ".page > .editais-title-spotlight"
-  ].join(",");
-
-  function apply(){
-    const topbar=document.querySelector(".topbar");
-    const controls=topbar?.querySelector(".luria-notifications");
-    const timer=topbar?.querySelector(".luria-pomodoro-toggle");
-    const profile=topbar?.querySelector(".luria-profile-toggle");
-    const title=document.querySelector(titleSelector);
-    if(!topbar||!controls||!timer||!profile||!title) return;
-
-    /* Sempre parte da geometria natural antes de recalcular. */
-    title.style.removeProperty("margin-top");
-    controls.style.removeProperty("transform");
-
-    requestAnimationFrame(()=>{
-      const titleRect=title.getBoundingClientRect();
-      const profileRect=profile.getBoundingClientRect();
-
-      /* Horizontal: borda direita das iniciais = borda direita do callout. */
-      const dx=titleRect.right-profileRect.right;
-      if(Math.abs(dx)>.25){
-        controls.style.setProperty("transform",`translateX(${dx}px)`,"important");
-      }else{
-        controls.style.setProperty("transform","none","important");
-      }
-
-      requestAnimationFrame(()=>{
-        const timerRect=timer.getBoundingClientRect();
-        const currentTitleRect=title.getBoundingClientRect();
-
-        /* Vertical: espaço acima do timer = espaço entre timer e título. */
-        const topGap=Math.max(0,timerRect.top);
-        const desiredTitleTop=timerRect.bottom+topGap;
-        const dy=desiredTitleTop-currentTitleRect.top;
-        title.style.setProperty("margin-top",`${dy}px`,"important");
-      });
-    });
-  }
-
-  let raf=0;
-  function schedule(){
-    cancelAnimationFrame(raf);
-    raf=requestAnimationFrame(apply);
-  }
-
-  window.addEventListener("resize",schedule,{passive:true});
-  window.addEventListener("orientationchange",schedule,{passive:true});
-  window.addEventListener("pageshow",schedule);
-  document.addEventListener("DOMContentLoaded",schedule,{once:true});
-
-  const observer=new MutationObserver(schedule);
-  observer.observe(document.documentElement,{attributes:true,attributeFilter:["data-theme","class"]});
-  observer.observe(document.body,{childList:true,subtree:true});
-
-  schedule();
-  setTimeout(schedule,80);
-  setTimeout(schedule,350);
-})();
