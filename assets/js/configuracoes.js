@@ -36,6 +36,7 @@ function cacheProfile(userId, profile) {
 
 function setProfileStatus(text, type = "") {
   const element = document.getElementById("profile-status");
+  if (!element) return;
   element.textContent = text;
   element.className = `profile-status ${type}`.trim();
 }
@@ -166,8 +167,33 @@ async function loadProfileSettings() {
 }
 
 async function saveProfileSettings() {
+  // Não dependa do timing do app.js/docmap:ready para salvar o perfil.
+  // Em páginas restauradas do cache/PWA, o botão pode ser clicado antes de
+  // window.docmapUser ser preenchido. Recupera a sessão diretamente do Supabase.
+  if (!settingsUser?.id) {
+    settingsUser = window.docmapUser || null;
+
+    if (!settingsUser?.id) {
+      const { data: authData, error: authError } = await settingsSb.auth.getUser();
+
+      if (authError || !authData?.user?.id) {
+        console.error("Não foi possível resolver o usuário para salvar o perfil:", authError);
+        setProfileStatus("Sua sessão ainda não está pronta. Reabra esta página e tente novamente.", "error");
+        return;
+      }
+
+      settingsUser = authData.user;
+    }
+  }
+
+  const nameInput = document.getElementById("profile-name");
+  if (!nameInput) {
+    setProfileStatus("Não foi possível localizar os campos do perfil.", "error");
+    return;
+  }
+
   const name =
-    document.getElementById("profile-name").value.trim();
+    nameInput.value.trim();
 
   const username =
     normalizeUsername(document.getElementById("profile-username")?.value);
@@ -308,11 +334,9 @@ if (!document.documentElement.dataset.profileSaveDelegated) {
 
     event.preventDefault();
 
+    // saveProfileSettings resolve a sessão diretamente se app.js ainda não
+    // tiver preenchido window.docmapUser.
     settingsUser = settingsUser || window.docmapUser || null;
-    if (!settingsUser) {
-      setProfileStatus("Carregando sua conta...", "");
-      return;
-    }
 
     saveProfileSettings().catch((error) => {
       console.error("Falha inesperada ao salvar perfil:", error);
