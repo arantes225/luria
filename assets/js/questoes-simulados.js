@@ -227,6 +227,12 @@ function switchQsMode(
     renderSimulationLibrary();
   }
 
+  if (
+    mode === "mine"
+  ) {
+    renderHomeDashboard();
+  }
+
 
   if (
     mode !== "library"
@@ -7981,6 +7987,7 @@ async function loadSets() {
   }));
 
   renderSetHistory();
+  renderHomeDashboard();
 
   await loadQuestionOverview();
 }
@@ -8806,6 +8813,397 @@ function renderSetHistory() {
     );
 }
 
+
+function qsHomeDate(value) {
+  if (!value) return "Disponível agora";
+
+  const date =
+    new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return "Disponível agora";
+  }
+
+  return new Intl.DateTimeFormat(
+    "pt-BR",
+    {
+      day: "2-digit",
+      month: "short"
+    }
+  )
+    .format(date)
+    .replace(".", "");
+}
+
+
+function renderHomeDashboard() {
+  const sets =
+    (qsState.sets || [])
+      .filter(
+        set =>
+          set.id
+          !== qsState.pendingNewSetId
+      );
+
+  const now =
+    new Date();
+
+  const weekStart =
+    new Date(
+      now.getFullYear(),
+      now.getMonth(),
+      now.getDate()
+    );
+
+  const day =
+    weekStart.getDay();
+
+  const mondayOffset =
+    day === 0
+      ? -6
+      : 1 - day;
+
+  weekStart.setDate(
+    weekStart.getDate()
+    + mondayOffset
+  );
+
+  const weekSimulations =
+    sets.filter(
+      set => {
+        const created =
+          new Date(
+            set.created_at
+            || 0
+          );
+
+        return (
+          !Number.isNaN(
+            created.getTime()
+          )
+          && created >= weekStart
+        );
+      }
+    ).length;
+
+  const weekSimsElement =
+    document.getElementById(
+      "qs-home-week-sims"
+    );
+
+  if (weekSimsElement) {
+    weekSimsElement.textContent =
+      weekSimulations;
+  }
+
+  const nextSet =
+    sets.find(
+      set => {
+        const answered =
+          Number(
+            set.metrics?.answered
+            || 0
+          );
+
+        const total =
+          Number(
+            set.total_questions
+            || 0
+          );
+
+        return (
+          set.status === "ready"
+          && (
+            total === 0
+            || answered < total
+          )
+        );
+      }
+    )
+    || sets[0]
+    || null;
+
+  const nextTitle =
+    document.getElementById(
+      "qs-home-next-title"
+    );
+
+  const nextSubtitle =
+    document.getElementById(
+      "qs-home-next-subtitle"
+    );
+
+  const nextDate =
+    document.getElementById(
+      "qs-home-next-date"
+    );
+
+  const nextCount =
+    document.getElementById(
+      "qs-home-next-count"
+    );
+
+  const nextProgress =
+    document.getElementById(
+      "qs-home-next-progress"
+    );
+
+  const nextButton =
+    document.getElementById(
+      "qs-home-next-open"
+    );
+
+  if (!nextSet) {
+    if (nextTitle) {
+      nextTitle.textContent =
+        "Seu próximo simulado começa aqui";
+    }
+
+    if (nextSubtitle) {
+      nextSubtitle.textContent =
+        "Crie ou envie um simulado para começar.";
+    }
+
+    if (nextDate) {
+      nextDate.textContent =
+        "Nenhum simulado ainda";
+    }
+
+    if (nextCount) {
+      nextCount.textContent =
+        "— questões";
+    }
+
+    if (nextProgress) {
+      nextProgress.textContent =
+        "Pronto para começar";
+    }
+
+    if (nextButton) {
+      nextButton.querySelector("span").textContent =
+        "Criar simulado";
+
+      nextButton.onclick =
+        () => {
+          switchQsMode("add");
+          switchQsAddMode("manual");
+        };
+    }
+
+  } else {
+    const answered =
+      Number(
+        nextSet.metrics?.answered
+        || 0
+      );
+
+    const total =
+      Number(
+        nextSet.total_questions
+        || 0
+      );
+
+    const progress =
+      total > 0
+        ? Math.min(
+            100,
+            Math.round(
+              (
+                answered
+                / total
+              )
+              * 100
+            )
+          )
+        : 0;
+
+    if (nextTitle) {
+      nextTitle.textContent =
+        nextSet.title
+        || "Simulado";
+    }
+
+    if (nextSubtitle) {
+      nextSubtitle.textContent =
+        answered > 0
+          ? "Você já começou este simulado. Continue de onde parou."
+          : "Simulado pronto para resolução no LURIA.";
+    }
+
+    if (nextDate) {
+      nextDate.textContent =
+        qsHomeDate(
+          nextSet.created_at
+        );
+    }
+
+    if (nextCount) {
+      nextCount.textContent =
+        `${total || 0} questões`;
+    }
+
+    if (nextProgress) {
+      nextProgress.textContent =
+        answered > 0
+          ? `${progress}% concluído`
+          : "Pronto para começar";
+    }
+
+    if (nextButton) {
+      nextButton.querySelector("span").textContent =
+        answered > 0
+          ? "Continuar simulado"
+          : "Iniciar simulado";
+
+      nextButton.onclick =
+        () =>
+          openSet(
+            nextSet.id
+          );
+    }
+  }
+
+  const lastContainer =
+    document.getElementById(
+      "qs-home-last-content"
+    );
+
+  if (!lastContainer) {
+    return;
+  }
+
+  const lastSet =
+    sets[0]
+    || null;
+
+  if (!lastSet) {
+    lastContainer.innerHTML =
+      '<div class="qs-empty">Seu histórico de simulados aparecerá aqui.</div>';
+
+    return;
+  }
+
+  const metrics =
+    lastSet.metrics
+    || {
+      answered: 0,
+      correct: 0,
+      wrong: 0
+    };
+
+  const considered =
+    Number(
+      metrics.correct
+      || 0
+    )
+    + Number(
+        metrics.wrong
+        || 0
+      );
+
+  const accuracyValue =
+    considered > 0
+      ? `${(
+          (
+            Number(
+              metrics.correct
+              || 0
+            )
+            / considered
+          )
+          * 100
+        )
+          .toFixed(0)}%`
+      : "—";
+
+  const duration =
+    Number(
+      lastSet.duration_minutes
+      || 0
+    );
+
+  const durationText =
+    duration > 0
+      ? (
+          duration >= 60
+            ? `${Math.floor(
+                duration / 60
+              )}h ${String(
+                duration % 60
+              ).padStart(
+                2,
+                "0"
+              )}min`
+            : `${duration} min`
+        )
+      : "—";
+
+  lastContainer.innerHTML =
+    `
+      <div class="qs-home-last-row">
+        <div class="qs-home-last-main">
+          <strong>${qsEscape(
+            lastSet.title
+            || "Simulado"
+          )}</strong>
+          <small>
+            ${qsHomeDate(
+              lastSet.created_at
+            )}
+            · ${lastSet.status === "ready" ? "Pronto" : qsEscape(lastSet.status || "")}
+          </small>
+        </div>
+
+        <div class="qs-home-last-stat">
+          <span>Questões</span>
+          <strong>${Number(
+            lastSet.total_questions
+            || 0
+          )}</strong>
+        </div>
+
+        <div class="qs-home-last-stat">
+          <span>Respondidas</span>
+          <strong>${Number(
+            metrics.answered
+            || 0
+          )}</strong>
+        </div>
+
+        <div class="qs-home-last-stat">
+          <span>Tempo</span>
+          <strong>${durationText}</strong>
+        </div>
+
+        <div class="qs-home-last-accuracy">
+          ${accuracyValue}
+        </div>
+
+        <button
+          class="qs-home-last-open"
+          type="button"
+          data-home-open-set="${qsEscape(
+            lastSet.id
+          )}"
+        >
+          Abrir
+        </button>
+      </div>
+    `;
+
+  lastContainer
+    .querySelector(
+      "[data-home-open-set]"
+    )
+    ?.addEventListener(
+      "click",
+      () =>
+        openSet(
+          lastSet.id
+        )
+    );
+}
+
 async function attachPrivateImageUrls(
   rows
 ) {
@@ -9243,6 +9641,8 @@ async function openSet(setId) {
 
   document.getElementById("qs-answer-panel").hidden =
     false;
+
+  document.body.classList.add("qs-solving");
 
   renderQuestions();
   renderSetHistory();
@@ -16372,7 +16772,10 @@ function closeCurrentSet() {
   document.getElementById("qs-answer-panel").hidden =
     true;
 
+  document.body.classList.remove("qs-solving");
+
   renderSetHistory();
+  renderHomeDashboard();
 }
 
 function wireUpload() {
