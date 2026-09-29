@@ -510,16 +510,48 @@
     const start=new Date(now.getFullYear(),0,1);
     const day=Math.floor((now-start)/86400000);
     const week=Math.floor((day+start.getDay())/7);
-    return [...list]
+
+    const ranked=[...list]
       .map(item=>{
         const key=String(item.id||item.slug||item.title||"");
         let hash=(week+1)*2654435761;
         for(let i=0;i<key.length;i++) hash=((hash^key.charCodeAt(i))*16777619)>>>0;
         return {item,hash};
       })
+      .sort((a,b)=>a.hash-b.hash);
+
+    const groups=new Map();
+    ranked.forEach(entry=>{
+      const specialty=String(entry.item?.specialty||entry.item?.presentation?.area||"Outros").trim()||"Outros";
+      if(!groups.has(specialty)) groups.set(specialty,[]);
+      groups.get(specialty).push(entry);
+    });
+
+    const specialtyOrder=[...groups.keys()]
+      .map(name=>{
+        let hash=(week+1)*2246822519;
+        for(let i=0;i<name.length;i++) hash=((hash^name.charCodeAt(i))*3266489917)>>>0;
+        return {name,hash};
+      })
       .sort((a,b)=>a.hash-b.hash)
-      .slice(0,6)
-      .map(entry=>entry.item);
+      .map(entry=>entry.name);
+
+    const picked=[];
+    let round=0;
+    while(picked.length<6){
+      let added=false;
+      for(const specialty of specialtyOrder){
+        const group=groups.get(specialty)||[];
+        if(group[round]){
+          picked.push(group[round].item);
+          added=true;
+          if(picked.length===6) break;
+        }
+      }
+      if(!added) break;
+      round++;
+    }
+    return picked;
   }
 
   function setCaseLibraryView(view,{persist=true}={}){
