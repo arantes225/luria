@@ -1897,6 +1897,59 @@
     filter:none!important;
   }
 </style>
+
+<style id="qs-actions-compact-visible-v11">
+  /* Mantém as três ações compactas mesmo com a arte SVG visível. */
+  body[data-page="questoes"] .qs-home-actions-compact{
+    gap:4px!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+    position:relative!important;
+    min-height:38px!important;
+    height:38px!important;
+    max-height:38px!important;
+    padding:4px 8px!important;
+    overflow:hidden!important;
+    grid-template-columns:25px minmax(0,1fr) 12px!important;
+    gap:7px!important;
+    align-items:center!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-icon{
+    width:24px!important;height:24px!important;min-width:24px!important;min-height:24px!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy{
+    padding-right:62px!important;
+    align-self:center!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy strong{
+    font-size:9.5px!important;line-height:1!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{
+    margin-top:2px!important;font-size:6.7px!important;line-height:1!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-arrow{
+    position:absolute!important;
+    right:7px!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    font-size:10px!important;
+    z-index:5!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    position:absolute!important;
+    right:25px!important;
+    top:50%!important;
+    bottom:auto!important;
+    transform:translateY(-50%)!important;
+    width:54px!important;
+    height:34px!important;
+    opacity:.34!important;
+  }
+  :root[data-theme="dark"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art,
+  body.dark[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{opacity:.58!important}
+  :root[data-theme="pink"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art,
+  body.pink[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{opacity:.42!important}
+</style>
 </head>
 
 <body data-page="questoes">
