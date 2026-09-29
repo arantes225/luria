@@ -980,6 +980,7 @@
         );
 
     if (resultCard) {
+      resultCard.classList.add("exam-result-card");
       resultCard.classList.remove(
         "exam-score-comparison",
         "red",
