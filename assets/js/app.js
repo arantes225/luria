@@ -5997,8 +5997,24 @@ async function prepararAdminNavigation(
   link.innerHTML =
     '<span class="nav-icon">◆</span><span>Admin</span>';
 
+  const betaLink =
+    document.createElement("a");
+
+  betaLink.id =
+    "beta-testers-nav-link";
+
+  betaLink.className =
+    `nav-link ${location.hash === "#beta" && page === "admin" ? "active" : ""}`;
+
+  betaLink.href =
+    "/admin/#beta";
+
+  betaLink.innerHTML =
+    `<span class="nav-icon">${luriaIcon("users")}</span><span>Beta Testers</span>`;
+
   slot.replaceWith(
-    link
+    link,
+    betaLink
   );
 
   return true;
