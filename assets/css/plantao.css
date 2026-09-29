@@ -7621,3 +7621,9 @@ body.plantao-module-entry #plantao-resume-case:disabled{
     object-position:50% 46%!important;
   }
 }
+
+
+/* v2026.09.29 — remove título do simulador na Sala de Emergência */
+body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-heading{
+  display:none!important;
+}
