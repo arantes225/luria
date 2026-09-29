@@ -7552,3 +7552,35 @@ body.plantao-module-entry #plantao-resume-case:disabled{
   box-shadow:none!important;
   cursor:not-allowed!important;
 }
+
+
+/* v53 — APH: preserva enquadramento das imagens exclusivas da ambulância */
+#plantao-simulator #plantao-patient-image[src*="/plantao/ambulancia/"],
+#plantao-simulator #plantao-patient-motion[src*="/plantao/ambulancia/"]{
+  object-fit:contain!important;
+  object-position:center center!important;
+  background:color-mix(in srgb,var(--surface) 88%,var(--accent) 12%)!important;
+  transform:none!important;
+}
+@media (min-width:681px){
+  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"]){
+    min-height:0!important;
+    height:auto!important;
+    aspect-ratio:16/9!important;
+    background:color-mix(in srgb,var(--surface) 88%,var(--accent) 12%)!important;
+  }
+  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"])>img{
+    height:100%!important;
+    aspect-ratio:auto!important;
+  }
+}
+@media (max-width:680px){
+  #plantao-simulator .plantao-scene:has(#plantao-patient-image[src*="/plantao/ambulancia/"]){
+    background:color-mix(in srgb,var(--surface) 88%,var(--accent) 12%)!important;
+  }
+  #plantao-simulator #plantao-patient-image[src*="/plantao/ambulancia/"],
+  #plantao-simulator #plantao-patient-motion[src*="/plantao/ambulancia/"]{
+    aspect-ratio:auto!important;
+    max-height:56dvh!important;
+  }
+}
