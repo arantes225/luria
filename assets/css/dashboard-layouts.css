@@ -3675,3 +3675,100 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     height:23px!important;
   }
 }
+
+
+/* =========================================================
+   Dashboard 1 v43 — compactação vertical da primeira faixa
+   Sobe Progresso por área e Pulo do Gato sem alterar colunas.
+   ========================================================= */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
+    height:286px!important;
+    max-height:286px!important;
+    min-height:0!important;
+    padding:13px 16px 11px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large .dl-card-heading{
+    margin-bottom:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large .dl-timeline{
+    gap:5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large .dl-activity{
+    min-height:45px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large .dl-activity-info{
+    min-height:43px!important;
+    padding:6px 10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:286px!important;
+    max-height:286px!important;
+    min-height:0!important;
+    grid-template-rows:137px 137px!important;
+    gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side>.dl-card{
+    height:137px!important;
+    min-height:137px!important;
+    max-height:137px!important;
+    padding:11px 15px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side .dl-card-heading{
+    margin-bottom:5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body{
+    height:78px!important;
+    gap:9px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring{
+    width:74px!important;
+    height:74px!important;
+    flex:0 0 74px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring:before{
+    inset:9px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring strong{
+    font-size:19px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child{
+    gap:3px!important;
+    font-size:10.5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child strong{
+    font-size:12.5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{
+    gap:2px!important;
+    margin:-8px auto 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{
+    width:70px!important;
+    height:84px!important;
+    min-width:70px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{
+    font-size:15px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{
+    margin-top:2px!important;
+  }
+}
