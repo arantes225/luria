@@ -3115,14 +3115,9 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
 html[data-theme="dark"] .error-cat-spotlight,
 body.theme-dark .error-cat-spotlight,
 [data-theme="dark"] .error-cat-spotlight{
-  background:linear-gradient(
-    110deg,
-    color-mix(in srgb,var(--accent) 88%,#071c3c),
-    var(--accent) 58%,
-    color-mix(in srgb,var(--accent) 75%,#091f49)
-  )!important;
+  background:#0A2342!important;
   color:#fff!important;
-  border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important;
+  border-color:#123A70!important;
   box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
 }
 html[data-theme="dark"] .error-cat-spotlight:after,
