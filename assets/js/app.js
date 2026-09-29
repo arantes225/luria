@@ -7358,3 +7358,26 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Compact timer v40 — minutos maiores, segundos menores */
+(function ensureCompactTimerHierarchyV40(){
+  if(document.getElementById("luria-compact-timer-hierarchy-v40")) return;
+  const style=document.createElement("style");
+  style.id="luria-compact-timer-hierarchy-v40";
+  style.textContent=`
+    .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-minutes{
+      font-size:16px!important;
+      font-weight:900!important;
+      line-height:.9!important;
+    }
+
+    .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-seconds{
+      font-size:10px!important;
+      font-weight:850!important;
+      line-height:.9!important;
+      color:var(--muted)!important;
+    }
+  `;
+  document.head.appendChild(style);
+})();
