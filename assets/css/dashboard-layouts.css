@@ -3772,3 +3772,21 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     margin-top:2px!important;
   }
 }
+
+
+/* Dashboard 1 v57 — compacta os espaços verticais entre as faixas */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-greeting{
+    margin-bottom:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    gap:7px!important;
+    row-gap:7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    margin-top:0!important;
+  }
+}
