@@ -401,6 +401,36 @@
       gap:12px !important;
       margin-left:auto !important;
     }
+    .luria-top-controls-drag-handle {
+      display:none;
+      width:28px;
+      height:48px;
+      min-width:28px;
+      border:1px dashed var(--border);
+      border-radius:10px;
+      background:color-mix(in srgb,var(--surface) 92%,transparent);
+      color:var(--muted);
+      place-items:center;
+      padding:0;
+      cursor:grab;
+      touch-action:none;
+      user-select:none;
+      -webkit-user-select:none;
+      font:900 15px/1 inherit;
+      letter-spacing:-3px;
+    }
+    .luria-top-controls-drag-handle:active {
+      cursor:grabbing;
+    }
+    .luria-notifications.luria-top-controls-dragging {
+      user-select:none!important;
+      -webkit-user-select:none!important;
+    }
+    @media (min-width:981px) {
+      body:not([data-page="dashboard"]) .luria-top-controls-drag-handle {
+        display:grid;
+      }
+    }
     .luria-pomodoro-top,.luria-profile-top {
       position:relative;
       display:flex;
@@ -3425,6 +3455,152 @@ function notificationIcon(type) {
 }
 
 
+function luriaTopControlsPositionKey() {
+  const userId = window.docmapUser?.id || "local";
+  return `luria:top-controls-position:v1:${userId}`;
+}
+
+function readLuriaTopControlsPosition() {
+  try {
+    const raw = localStorage.getItem(luriaTopControlsPositionKey());
+    if (!raw) return null;
+    const value = JSON.parse(raw);
+    if (!Number.isFinite(value?.top) || !Number.isFinite(value?.right)) return null;
+    return { top: value.top, right: value.right };
+  } catch {
+    return null;
+  }
+}
+
+function saveLuriaTopControlsPosition(position) {
+  try {
+    localStorage.setItem(
+      luriaTopControlsPositionKey(),
+      JSON.stringify({
+        top: Math.round(position.top),
+        right: Math.round(position.right)
+      })
+    );
+  } catch {}
+}
+
+function applyLuriaTopControlsPosition(center, position) {
+  if (!center || !position || window.innerWidth < 981) return;
+
+  const rect = center.getBoundingClientRect();
+  const maxTop = Math.max(8, window.innerHeight - rect.height - 8);
+  const maxRight = Math.max(8, window.innerWidth - rect.width - 8);
+  const top = Math.min(Math.max(8, Number(position.top) || 8), maxTop);
+  const right = Math.min(Math.max(8, Number(position.right) || 8), maxRight);
+
+  center.style.setProperty("top", `${top}px`, "important");
+  center.style.setProperty("right", `${right}px`, "important");
+  center.style.setProperty("left", "auto", "important");
+  center.dataset.luriaCustomPosition = "1";
+}
+
+function resetLuriaTopControlsPosition(center) {
+  try {
+    localStorage.removeItem(luriaTopControlsPositionKey());
+  } catch {}
+
+  center?.style.removeProperty("top");
+  center?.style.removeProperty("right");
+  center?.style.removeProperty("left");
+  if (center) delete center.dataset.luriaCustomPosition;
+}
+
+function wireLuriaTopControlsDrag(center) {
+  if (!center || center.dataset.luriaDragBound === "1") return;
+  center.dataset.luriaDragBound = "1";
+
+  const handle = center.querySelector(".luria-top-controls-drag-handle");
+  if (!handle) return;
+
+  const saved = readLuriaTopControlsPosition();
+  if (saved) {
+    requestAnimationFrame(() => applyLuriaTopControlsPosition(center, saved));
+  }
+
+  let drag = null;
+
+  const move = (event) => {
+    if (!drag || event.pointerId !== drag.pointerId) return;
+    event.preventDefault();
+
+    const dx = event.clientX - drag.startX;
+    const dy = event.clientY - drag.startY;
+    const nextLeft = Math.min(
+      Math.max(8, drag.startLeft + dx),
+      Math.max(8, window.innerWidth - drag.width - 8)
+    );
+    const nextTop = Math.min(
+      Math.max(8, drag.startTop + dy),
+      Math.max(8, window.innerHeight - drag.height - 8)
+    );
+    const nextRight = Math.max(8, window.innerWidth - nextLeft - drag.width);
+
+    center.style.setProperty("top", `${nextTop}px`, "important");
+    center.style.setProperty("right", `${nextRight}px`, "important");
+    center.style.setProperty("left", "auto", "important");
+    center.dataset.luriaCustomPosition = "1";
+  };
+
+  const end = (event) => {
+    if (!drag || event.pointerId !== drag.pointerId) return;
+
+    try { handle.releasePointerCapture(event.pointerId); } catch {}
+    const rect = center.getBoundingClientRect();
+    const position = {
+      top: rect.top,
+      right: Math.max(8, window.innerWidth - rect.right)
+    };
+    saveLuriaTopControlsPosition(position);
+
+    drag = null;
+    center.classList.remove("luria-top-controls-dragging");
+    window.removeEventListener("pointermove", move);
+    window.removeEventListener("pointerup", end);
+    window.removeEventListener("pointercancel", end);
+  };
+
+  handle.addEventListener("pointerdown", (event) => {
+    if (window.innerWidth < 981 || event.button !== 0) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    const rect = center.getBoundingClientRect();
+    drag = {
+      pointerId: event.pointerId,
+      startX: event.clientX,
+      startY: event.clientY,
+      startLeft: rect.left,
+      startTop: rect.top,
+      width: rect.width,
+      height: rect.height
+    };
+
+    center.classList.add("luria-top-controls-dragging");
+    try { handle.setPointerCapture(event.pointerId); } catch {}
+    window.addEventListener("pointermove", move, { passive: false });
+    window.addEventListener("pointerup", end);
+    window.addEventListener("pointercancel", end);
+  });
+
+  handle.addEventListener("dblclick", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    resetLuriaTopControlsPosition(center);
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth < 981) return;
+    const current = readLuriaTopControlsPosition();
+    if (current) applyLuriaTopControlsPosition(center, current);
+  });
+}
+
 function ensureNotificationCenter() {
   let topbar =
     document.querySelector(
@@ -3467,6 +3643,13 @@ function ensureNotificationCenter() {
     "luria-notifications";
 
   center.innerHTML = `
+    <button
+      class="luria-top-controls-drag-handle"
+      type="button"
+      aria-label="Mover timer, notificações e perfil"
+      title="Arraste para mover · duplo clique para restaurar"
+    >⋮⋮</button>
+
     <div class="luria-pomodoro-top">
       <button
         id="luria-pomodoro-toggle"
@@ -3643,6 +3826,8 @@ function ensureNotificationCenter() {
   if (String(page).startsWith("trabalho_")) {
     center.querySelector(".luria-pomodoro-top")?.remove();
   }
+
+  wireLuriaTopControlsDrag(center);
 
   const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
   const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
