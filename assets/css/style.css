@@ -4503,3 +4503,142 @@ body:not([data-page="dashboard"]) :is(
     padding:var(--luria-dashboard-title-pad-y) var(--luria-dashboard-title-pad-x)!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v2026.09.29 — TIPOGRAFIA ÚNICA DOS CARDS DE TÍTULO
+   Um único padrão para eyebrow + título + helper.
+   ========================================================= */
+:root{
+  --luria-title-eyebrow-size:10px;
+  --luria-title-main-size:32px;
+  --luria-title-helper-size:11px;
+  --luria-title-eyebrow-gap:6px;
+  --luria-title-helper-gap:7px;
+  --luria-title-eyebrow-weight:850;
+  --luria-title-main-weight:900;
+  --luria-title-helper-weight:650;
+}
+
+/* Bloco textual interno */
+:is(
+  .luria-page-spotlight,
+  .luria-work-page-spotlight,
+  .luria-dashboard-spotlight,
+  .daily-hero,
+  .stats-hero,
+  .flash-top-spotlight,
+  .qs-v17-top,
+  .error-cat-spotlight,
+  .schedule-top-spotlight
+) :is(
+  .luria-page-spotlight-copy,
+  .daily-hero-copy,
+  .stats-hero-copy,
+  .flash-top-spotlight-copy,
+  .qs-v17-top-copy,
+  .error-cat-spotlight-copy,
+  .schedule-top-spotlight-copy
+){
+  color:#fff!important;
+}
+
+/* Texto acima do título */
+:is(
+  .luria-page-spotlight-label,
+  .schedule-top-spotlight-label,
+  .daily-hero .eyebrow,
+  .stats-hero .eyebrow,
+  .flash-top-spotlight .eyebrow,
+  .qs-v17-top .eyebrow,
+  .error-cat-spotlight .eyebrow,
+  .luria-page-spotlight .eyebrow
+){
+  display:block!important;
+  margin:0 0 var(--luria-title-eyebrow-gap)!important;
+  color:#fff!important;
+  opacity:1!important;
+  font-size:var(--luria-title-eyebrow-size)!important;
+  font-weight:var(--luria-title-eyebrow-weight)!important;
+  line-height:1.1!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+}
+
+/* Título principal */
+:is(
+  .luria-page-spotlight-copy > strong,
+  .luria-page-spotlight [data-page-title],
+  .luria-work-page-spotlight [data-page-title],
+  .luria-dashboard-spotlight [data-page-title],
+  .daily-hero h1,
+  .daily-hero h2,
+  .stats-hero h1,
+  .stats-hero h2,
+  .flash-top-spotlight h1,
+  .flash-top-spotlight h2,
+  .qs-v17-top h1,
+  .qs-v17-top h2,
+  .error-cat-spotlight h1,
+  .error-cat-spotlight h2,
+  .schedule-top-spotlight h1,
+  .schedule-top-spotlight h2
+){
+  display:block!important;
+  margin:0!important;
+  color:#fff!important;
+  opacity:1!important;
+  font-size:var(--luria-title-main-size)!important;
+  font-weight:var(--luria-title-main-weight)!important;
+  line-height:1.08!important;
+  letter-spacing:-.8px!important;
+}
+
+/* Texto abaixo do título */
+:is(
+  .luria-page-spotlight-helper,
+  .schedule-top-spotlight-helper,
+  .daily-hero .hero-helper,
+  .stats-hero .hero-helper,
+  .flash-top-spotlight .hero-helper,
+  .qs-v17-top .hero-helper,
+  .error-cat-spotlight .hero-helper,
+  .luria-page-spotlight .hero-helper
+){
+  display:block!important;
+  margin:var(--luria-title-helper-gap) 0 0!important;
+  max-width:720px!important;
+  color:#fff!important;
+  opacity:1!important;
+  font-size:var(--luria-title-helper-size)!important;
+  font-weight:var(--luria-title-helper-weight)!important;
+  line-height:1.3!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+}
+
+/* Garante branco também para elementos simples dentro do card de título */
+:is(
+  .luria-page-spotlight,
+  .luria-work-page-spotlight,
+  .luria-dashboard-spotlight,
+  .daily-hero,
+  .stats-hero,
+  .flash-top-spotlight,
+  .qs-v17-top,
+  .error-cat-spotlight,
+  .schedule-top-spotlight
+) :is(h1,h2,h3,strong,p,small,span){
+  color:#fff;
+}
+
+/* Mobile/PWA: mesma hierarquia em todas as páginas */
+@media(max-width:700px){
+  :root{
+    --luria-title-eyebrow-size:9px;
+    --luria-title-main-size:27px;
+    --luria-title-helper-size:10px;
+    --luria-title-eyebrow-gap:5px;
+    --luria-title-helper-gap:6px;
+  }
+}
