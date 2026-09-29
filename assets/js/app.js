@@ -656,14 +656,14 @@
        Dashboard mantém seu cabeçalho próprio. */
     @media (min-width:981px) {
       body:not([data-page="dashboard"]) .topbar {
-        min-height:72px !important;
-        height:72px !important;
-        margin-bottom:8px !important;
+        min-height:26px !important;
+        height:26px !important;
+        margin-bottom:14px !important;
       }
       body:not([data-page="dashboard"]) .topbar .luria-notifications {
         position:fixed !important;
         top:10px !important;
-        right:28px !important;
+        right:34px !important;
         gap:14px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-toggle {
@@ -701,7 +701,7 @@
       }
       /* A borda direita do perfil acompanha a borda direita do card de conteúdo. */
       body:not([data-page="dashboard"]) .page {
-        --luria-top-controls-right:28px;
+        --luria-top-controls-right:34px;
       }
       body:not([data-page="dashboard"]) .page > .luria-page-spotlight,
       body:not([data-page="dashboard"]) .page > .schedule-top-spotlight {
