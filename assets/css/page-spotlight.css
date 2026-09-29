@@ -200,3 +200,12 @@ body.pink[data-page="questoes"] .qs-home-art-next{opacity:.82!important}
     right:-14px!important;bottom:-12px!important;width:44%!important;height:108%!important;opacity:.56!important
   }
 }
+
+/* flashcards optical width correction — match Caderno/Estatísticas/Questões edge exactly */
+@media(min-width:701px){
+  body[data-page="flashcards"]:not(.schedule-settings-embed) .page > .luria-page-spotlight{
+    width:calc(100% - 4px)!important;
+    margin-left:2px!important;
+    margin-right:2px!important;
+  }
+}
