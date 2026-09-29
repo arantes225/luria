@@ -666,9 +666,13 @@
         margin-bottom:14px !important;
       }
       body:not([data-page="dashboard"]) .topbar .luria-notifications {
-        position:fixed !important;
-        top:var(--luria-top-controls-top,0px) !important;
-        right:var(--luria-top-controls-right,34px) !important;
+        position:static !important;
+        inset:auto !important;
+        top:auto !important;
+        right:auto !important;
+        margin-left:auto !important;
+        transform:none !important;
+        translate:none !important;
         gap:10px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-toggle {
@@ -780,13 +784,17 @@
       }
 
       html.pwa-standalone body .topbar .luria-notifications {
+        position:static!important;
+        inset:auto!important;
         display:flex!important;
         align-items:center!important;
         margin-left:auto!important;
-        align-self:flex-start!important;
-        top:0!important;
-        transform:translateY(-10px)!important;
-        z-index:245!important;
+        align-self:center!important;
+        top:auto!important;
+        right:auto!important;
+        transform:none!important;
+        translate:none!important;
+        z-index:auto!important;
       }
 
       html.pwa-standalone body .topbar .luria-profile-top,
@@ -7073,4 +7081,45 @@ iniciarApp();
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',syncBackButtons,{once:true});
   else syncBackButtons();
   new MutationObserver(syncBackButtons).observe(document.documentElement,{childList:true,subtree:true});
+})();
+
+
+/* LURIA_TOP_CONTROLS_LOCKED_V66 */
+(function(){
+  const style=document.createElement("style");
+  style.id="luria-top-controls-locked-v66";
+  style.textContent=`
+    .topbar .luria-notifications,
+    body:not([data-page="dashboard"]) .topbar .luria-notifications,
+    body[data-page="dashboard"] .topbar .luria-notifications,
+    html.pwa-standalone body .topbar .luria-notifications{
+      position:static!important;
+      inset:auto!important;
+      top:auto!important;
+      right:auto!important;
+      bottom:auto!important;
+      left:auto!important;
+      margin:0 0 0 auto!important;
+      transform:none!important;
+      translate:none!important;
+      animation:none!important;
+      transition:none!important;
+      will-change:auto!important;
+      align-self:center!important;
+    }
+    .luria-notifications[data-luria-custom-position],
+    .luria-notifications.luria-top-controls-dragging{
+      position:static!important;
+      inset:auto!important;
+      transform:none!important;
+      translate:none!important;
+      user-select:auto!important;
+      cursor:default!important;
+    }
+    .luria-top-controls-drag-handle{
+      display:none!important;
+      pointer-events:none!important;
+    }
+  `;
+  document.head.appendChild(style);
 })();
