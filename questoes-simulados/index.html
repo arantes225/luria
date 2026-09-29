@@ -1950,6 +1950,48 @@
   :root[data-theme="pink"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art,
   body.pink[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{opacity:.42!important}
 </style>
+
+<style id="qs-svg-filter-theme-v12">
+  /* Mantém o SVG detalhado original; apenas converte a paleta inteira para a cor do tema. */
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    display:block!important;
+    visibility:visible!important;
+    background-color:transparent!important;
+    -webkit-mask-image:none!important;
+    mask-image:none!important;
+    background-repeat:no-repeat!important;
+    background-position:center!important;
+    background-size:contain!important;
+    opacity:.72!important;
+    mix-blend-mode:normal!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-art-create{
+    background-image:url("/assets/img/qs-create-pro.svg?v=20260929-detail3")!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-art-upload{
+    background-image:url("/assets/img/qs-upload-pro.svg?v=20260929-detail3")!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-art-library{
+    background-image:url("/assets/img/qs-library-pro.svg?v=20260929-detail3")!important;
+  }
+  /* azul */
+  :root:not([data-theme="pink"]):not([data-theme="dark"]) body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    filter:none!important;
+    opacity:.76!important;
+  }
+  /* rosa: preserva luz/sombra e converte os azuis para rosa */
+  :root[data-theme="pink"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art,
+  body.pink[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    filter:hue-rotate(103deg) saturate(.92) brightness(1.02)!important;
+    opacity:.78!important;
+  }
+  /* escuro: arte original com contraste e luminosidade suficientes */
+  :root[data-theme="dark"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art,
+  body.dark[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    filter:brightness(1.42) saturate(.82) contrast(.94)!important;
+    opacity:.88!important;
+  }
+</style>
 </head>
 
 <body data-page="questoes">
