@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v208-qs-next-library";
+const CACHE_VERSION = "luria-pwa-v206-qs-images-fixed";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
