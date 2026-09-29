@@ -29,9 +29,15 @@ html:not([data-theme]):has(body[data-page="dashboard"]) {
 .dashboard-layout-old-icon{font-size:64px;line-height:1;color:var(--accent)}
 .dashboard-layout-open{display:inline-block;margin-top:8px;color:var(--accent);font-weight:750}
 #dashboard-alternative[hidden]{display:none!important}
-body[data-dashboard-layout] .dashboard-detail-grid,
-body[data-dashboard-layout] .calendar-panel{display:none!important}
-body[data-dashboard-layout] .dashboard-summary-grid{display:none!important}
+
+/* O Dashboard atual é o único que pode aparecer, inclusive no primeiro frame. */
+body[data-page="dashboard"] .dashboard-detail-grid,
+body[data-page="dashboard"] .calendar-panel,
+body[data-page="dashboard"] .dashboard-summary-grid,
+body[data-page="dashboard"] .dashboard-legacy,
+body[data-page="dashboard"] [data-dashboard-legacy]{
+  display:none!important;
+}
 body[data-dashboard-layout]{--dl-blue:var(--accent);--dl-deep:var(--text);--dl-muted:var(--muted);--dl-border:var(--border);background:var(--bg)}
 html:has(body[data-dashboard-layout]){
   width:100%;
