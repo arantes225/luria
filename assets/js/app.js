@@ -638,7 +638,7 @@
       body:not([data-page="dashboard"]) .topbar .luria-notifications {
         position:fixed !important;
         top:10px !important;
-        right:34px !important;
+        right:var(--luria-top-controls-right,34px) !important;
         gap:10px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-toggle {
