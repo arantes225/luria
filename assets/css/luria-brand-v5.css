@@ -789,3 +789,16 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     min-height:43px!important;
   }
 }
+
+
+/* v75 — largura do Timer igual à proporção do Dashboard */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+    gap:8px!important;
+  }
+}
