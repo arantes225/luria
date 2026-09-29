@@ -600,9 +600,7 @@
 
 /* Em "Provas" os cards ficam limpos, sem controles de edição/exclusão. */
 .editais-own-content:not(.exam-management-mode) .exam-bulk-toolbar,
-.editais-own-content:not(.exam-management-mode) .exam-card-select,
-.editais-own-content:not(.exam-management-mode) [data-edit-exam],
-.editais-own-content:not(.exam-management-mode) [data-delete-exam] {
+.editais-own-content:not(.exam-management-mode) .exam-card-select {
   display: none !important;
 }
 
