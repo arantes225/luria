@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
   <link rel="stylesheet" href="assets/css/flashcards.css?v=15.0">
-  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=34-error-spotlight-copy">
+  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=35-quick-metrics">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/flashcards/">
@@ -200,42 +200,56 @@
           <div class="flash-top-spotlight-timer" aria-hidden="true"><span></span></div>
         </section>
 
-        <section class="flash-tabs" aria-label="Seções de flashcards">
+        <section class="flash-control-row" aria-label="Navegação e métricas rápidas">
+          <section class="flash-tabs" aria-label="Seções de flashcards">
 
-          <button
-            class="flash-tab active"
-            type="button"
-            data-flash-tab="review"
-          >
-            Revisar
-          </button>
+            <button
+              class="flash-tab active"
+              type="button"
+              data-flash-tab="review"
+            >
+              Revisar
+            </button>
 
-          <button
-            class="flash-tab flash-tab-create"
-            type="button"
-            data-flash-tab="create"
-            aria-label="Criar novo flashcard"
-          >
-            <span class="flash-tab-create-icon" aria-hidden="true">＋</span>
-            <span>Criar flashcard</span>
-          </button>
+            <button
+              class="flash-tab flash-tab-create"
+              type="button"
+              data-flash-tab="create"
+              aria-label="Criar novo flashcard"
+            >
+              <span class="flash-tab-create-icon" aria-hidden="true">＋</span>
+              <span>Criar flashcard</span>
+            </button>
 
-          <button
-            class="flash-tab"
-            type="button"
-            data-flash-tab="import"
-          >
-            Importar
-          </button>
+            <button
+              class="flash-tab"
+              type="button"
+              data-flash-tab="import"
+            >
+              Importar
+            </button>
 
-          <button
-            class="flash-tab"
-            type="button"
-            data-flash-tab="library"
-          >
-            Biblioteca
-          </button>
+            <button
+              class="flash-tab"
+              type="button"
+              data-flash-tab="library"
+            >
+              Biblioteca
+            </button>
 
+          </section>
+
+          <aside class="flash-quick-metrics" aria-label="Métricas rápidas">
+            <div class="flash-quick-metrics-title">
+              <span>Métricas rápidas</span>
+            </div>
+            <div class="flash-quick-metrics-grid">
+              <div><strong id="quick-metric-due">—</strong><small>A revisar</small></div>
+              <div><strong id="quick-metric-correct">—</strong><small>Acertos</small></div>
+              <div><strong id="quick-metric-wrong">—</strong><small>Erros</small></div>
+              <div><strong id="quick-metric-retention">—</strong><small>Retenção</small></div>
+            </div>
+          </aside>
         </section>
 
         <!-- =====================================================
@@ -1112,7 +1126,7 @@
   <script src="assets/js/sharing.js?v=3"></script>
   <script src="assets/js/flashcards.js?v=17.5"></script>
   <script src="/assets/js/medical-icons.js?v=1.0"></script>
-  <script src="assets/js/flashcards-v21.js?v=32-error-copy"></script>
+  <script src="assets/js/flashcards-v21.js?v=35-quick-metrics"></script>
 
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
