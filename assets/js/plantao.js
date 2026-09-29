@@ -2808,10 +2808,23 @@
     if(Number.isFinite(age) && age>=50){
       const sexRaw=normalizeLabel(state.current?.presentation?.sex||"");
       const female=sexRaw==="f" || sexRaw.startsWith("fem");
-      const elderlyPair=female ? PWA_PATIENT_IMAGES.elderlyWoman : PWA_PATIENT_IMAGES.elderlyMan;
+
+      // PWA usa o conjunto vertical próprio; hospital/web usa os assets normais.
+      if(isStandalonePwa()){
+        const elderlyPair=female ? PWA_PATIENT_IMAGES.elderlyWoman : PWA_PATIENT_IMAGES.elderlyMan;
+        return {
+          patient_image:elderlyPair.awake,
+          unconscious_image:elderlyPair.closed
+        };
+      }
+
       return {
-        patient_image:elderlyPair.awake,
-        unconscious_image:elderlyPair.closed
+        patient_image:female
+          ? "/assets/img/plantao/02-mulher-idosa-acordada.webp"
+          : "/assets/img/plantao/10-homem-idoso-acordado.webp",
+        unconscious_image:female
+          ? "/assets/img/plantao/01-mulher-idosa-olhos-fechados.webp"
+          : "/assets/img/plantao/09-homem-idoso-olhos-fechados.webp"
       };
     }
 
