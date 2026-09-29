@@ -3969,3 +3969,138 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
     font-size:27px;
   }
 }
+
+
+/* =========================================================
+   v2026.09.29 — TODOS OS SWITCHES = CADERNO DE ERROS
+   Referência única:
+   callout 56px / padding 6px / gap 6px / radius 14px
+   botão 46px / padding-x 21px / radius 10px
+   fonte 16px / line-height 1.15
+   ========================================================= */
+
+:root{
+  --luria-switch-font-size:16px;
+  --luria-switch-height:46px;
+  --luria-switch-pad-x:21px;
+  --luria-switch-radius:10px;
+  --luria-switch-shell-height:56px;
+  --luria-switch-shell-padding:6px;
+  --luria-switch-shell-gap:6px;
+  --luria-switch-shell-radius:14px;
+}
+
+/* Todos os callouts/containers de switches */
+.error-main-tabs,
+.error-tabs,
+.error-state-switch,
+.flash-tabs,
+.library-scope-tabs,
+.qs-mode-tabs,
+.notebook-tabs,
+.stats-tabs-shell,
+.stats-range,
+.schedule-add-tabs,
+.segmented-control,
+.mode-tabs,
+.view-tabs,
+.section-tabs,
+.page-tabs,
+.scope-tabs,
+.switch-group,
+.view-switch,
+.mode-switch{
+  min-height:var(--luria-switch-shell-height)!important;
+  padding:var(--luria-switch-shell-padding)!important;
+  gap:var(--luria-switch-shell-gap)!important;
+  border-radius:var(--luria-switch-shell-radius)!important;
+}
+
+/* Todos os botões internos dos switches */
+.error-main-tab,
+.error-tab,
+.error-state-switch > button,
+.flash-tab,
+.library-scope-tab,
+.qs-mode-tab,
+.notebook-tab,
+.stats-tab,
+.stats-range > button,
+.schedule-add-tab,
+.segmented-control > button,
+.mode-tab,
+.view-tab,
+.section-tab,
+.page-tab,
+.scope-tab,
+.switch-group > button,
+.view-switch > button,
+.mode-switch > button{
+  min-height:var(--luria-switch-height)!important;
+  height:var(--luria-switch-height)!important;
+  padding:0 var(--luria-switch-pad-x)!important;
+  border-radius:var(--luria-switch-radius)!important;
+  font-size:var(--luria-switch-font-size)!important;
+  line-height:1.15!important;
+  font-weight:400!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+
+/* Mobile/PWA: mantém exatamente o mesmo padrão visual */
+@media (max-width:700px){
+  .error-main-tabs,
+  .error-tabs,
+  .error-state-switch,
+  .flash-tabs,
+  .library-scope-tabs,
+  .qs-mode-tabs,
+  .notebook-tabs,
+  .stats-tabs-shell,
+  .stats-range,
+  .schedule-add-tabs,
+  .segmented-control,
+  .mode-tabs,
+  .view-tabs,
+  .section-tabs,
+  .page-tabs,
+  .scope-tabs,
+  .switch-group,
+  .view-switch,
+  .mode-switch{
+    min-height:var(--luria-switch-shell-height)!important;
+    padding:var(--luria-switch-shell-padding)!important;
+    gap:var(--luria-switch-shell-gap)!important;
+    border-radius:var(--luria-switch-shell-radius)!important;
+  }
+
+  .error-main-tab,
+  .error-tab,
+  .error-state-switch > button,
+  .flash-tab,
+  .library-scope-tab,
+  .qs-mode-tab,
+  .notebook-tab,
+  .stats-tab,
+  .stats-range > button,
+  .schedule-add-tab,
+  .segmented-control > button,
+  .mode-tab,
+  .view-tab,
+  .section-tab,
+  .page-tab,
+  .scope-tab,
+  .switch-group > button,
+  .view-switch > button,
+  .mode-switch > button{
+    min-height:var(--luria-switch-height)!important;
+    height:var(--luria-switch-height)!important;
+    padding:0 var(--luria-switch-pad-x)!important;
+    border-radius:var(--luria-switch-radius)!important;
+    font-size:var(--luria-switch-font-size)!important;
+    line-height:1.15!important;
+    font-weight:400!important;
+  }
+}
