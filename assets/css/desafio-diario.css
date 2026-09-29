@@ -218,3 +218,15 @@
   background:color-mix(in srgb,#1d9a61 10%,var(--surface))!important;
   border-color:color-mix(in srgb,#1d9a61 52%,var(--border))!important;
 }
+
+
+/* v7 — compactacao e alinhamento do bloco principal do Desafio Diario */
+@media (min-width:981px){
+  .daily-content{
+    grid-template-columns:minmax(0,1fr) 318px;
+    column-gap:14px;
+    margin-top:-5px;
+  }
+  .daily-main-col{gap:10px}
+  .daily-side{gap:10px}
+}
