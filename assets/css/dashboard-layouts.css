@@ -3526,3 +3526,56 @@ body[data-page="dashboard"] .dl-cat .dl-card-heading h3{
     z-index:245!important;
   }
 }
+
+
+/* Dashboard v55 — controles do topo presos ao cabeçalho, sem flutuar */
+body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  position:relative!important;
+  top:auto!important;
+  height:60px!important;
+  min-height:60px!important;
+  max-height:none!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  margin:0 0 16px!important;
+  padding:6px 0!important;
+  overflow:visible!important;
+}
+body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+  display:flex!important;
+  position:static!important;
+  inset:auto!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  margin:0 0 0 auto!important;
+  transform:none!important;
+  translate:none!important;
+  align-self:center!important;
+  height:auto!important;
+  min-height:0!important;
+  z-index:auto!important;
+  animation:none!important;
+  transition:none!important;
+}
+body[data-page="dashboard"][data-dashboard-layout] .topbar .page-heading,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-topbar-controls,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
+  display:none!important;
+}
+@media(max-width:980px){
+  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+    min-height:58px!important;
+    height:58px!important;
+    padding:5px 0!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+    position:static!important;
+    margin-left:auto!important;
+    transform:none!important;
+    translate:none!important;
+    align-self:center!important;
+  }
+}
