@@ -639,40 +639,39 @@
         position:fixed !important;
         top:10px !important;
         right:34px !important;
-        gap:14px !important;
+        gap:10px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-toggle {
-        min-width:206px !important;
-        height:62px !important;
-        padding:0 20px !important;
-        gap:14px !important;
-        border-radius:13px !important;
+        min-width:164px !important;
+        height:48px !important;
+        padding:0 14px !important;
+        gap:10px !important;
+        border-radius:12px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-icon,
       body:not([data-page="dashboard"]) .luria-pomodoro-icon svg {
-        width:37px !important;
-        height:37px !important;
+        width:22px !important;\n        height:22px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-copy strong {
-        font-size:18px !important;
+        font-size:13px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-copy small {
-        font-size:16px !important;
+        font-size:11px !important;
       }
       body:not([data-page="dashboard"]) .luria-notification-toggle,
       body:not([data-page="dashboard"]) .luria-profile-toggle {
-        width:62px !important;
-        height:62px !important;
-        min-width:62px !important;
-        border-radius:17px !important;
+        width:48px !important;
+        height:48px !important;
+        min-width:48px !important;
+        border-radius:12px !important;
       }
       body:not([data-page="dashboard"]) .luria-notification-toggle svg,
       body:not([data-page="dashboard"]) #luria-notification-toggle svg {
-        width:22px !important;
-        height:22px !important;
+        width:20px !important;
+        height:20px !important;
       }
       body:not([data-page="dashboard"]) .luria-profile-toggle {
-        font-size:34px !important;
+        font-size:17px !important;
       }
       /* A borda direita do perfil acompanha a borda direita do card de conteúdo. */
       body:not([data-page="dashboard"]) .page {
