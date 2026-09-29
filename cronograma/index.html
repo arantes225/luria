@@ -3402,6 +3402,192 @@
     background:transparent!important;
   }
 
+
+  /* v21 — Cronograma no padrão visual do destaque de Flashcards */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    min-height:138px;
+    margin:0 0 14px;
+    padding:24px 28px;
+    overflow:hidden;
+    border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+    border-radius:15px;
+    background:linear-gradient(
+      110deg,
+      color-mix(in srgb,var(--accent) 88%,#071c3c),
+      var(--accent) 58%,
+      color-mix(in srgb,var(--accent) 75%,#091f49)
+    );
+    color:#fff;
+    box-shadow:0 10px 30px rgba(17,65,130,.12);
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight:after{
+    content:"";
+    position:absolute;
+    width:310px;
+    height:310px;
+    right:-90px;
+    bottom:-220px;
+    border-radius:50%;
+    background:rgba(255,255,255,.07);
+    box-shadow:-80px -18px 0 rgba(255,255,255,.035);
+    pointer-events:none;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-copy{
+    position:relative;
+    z-index:2;
+    min-width:0;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-copy strong{
+    display:block;
+    margin:0;
+    font-size:32px;
+    line-height:1.08;
+    font-weight:900;
+    letter-spacing:-.8px;
+    color:inherit;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity{
+    position:relative;
+    z-index:3;
+    margin:0!important;
+    min-height:42px!important;
+    height:42px!important;
+    padding:0 18px!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    border-radius:10px!important;
+    background:rgba(255,255,255,.14)!important;
+    color:#fff!important;
+    box-shadow:none!important;
+    backdrop-filter:blur(5px);
+    white-space:nowrap;
+    font-size:11px!important;
+    font-weight:850!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity:hover{
+    background:rgba(255,255,255,.22)!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+    background:linear-gradient(110deg,#f8fbff,#edf4fb)!important;
+    color:#10213d!important;
+    border-color:#d8e3ef!important;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight:after,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight:after{
+    background:rgba(24,72,136,.06)!important;
+    box-shadow:-80px -18px 0 rgba(24,72,136,.035)!important;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity{
+    border-color:rgba(24,72,136,.18)!important;
+    background:rgba(24,72,136,.09)!important;
+    color:#184888!important;
+  }
+  :root[data-theme="leila-mood"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+    background:linear-gradient(
+      110deg,
+      color-mix(in srgb,var(--accent) 88%,#321328),
+      var(--accent) 58%,
+      color-mix(in srgb,var(--accent) 75%,#35152d)
+    )!important;
+  }
+
+  /* Metas semanais passam a viver como um único bloco sob Distribuição por categoria */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-card{
+    min-height:0!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals{
+    margin:12px 0 0;
+    padding:10px;
+    border-top:1px solid var(--border);
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-categories{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+    width:100%!important;
+    max-width:none!important;
+    padding:0!important;
+    border:0!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:center!important;
+    gap:4px 7px!important;
+    min-width:0!important;
+    padding:8px 9px!important;
+    border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+    border-radius:9px!important;
+    background:color-mix(in srgb,var(--accent) 2.5%,var(--surface))!important;
+    text-align:left!important;
+    justify-items:stretch!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day:last-child{
+    grid-column:1/-1!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>span{
+    min-width:0!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+    font-size:7.5px!important;
+    font-weight:800!important;
+    color:var(--muted)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>strong{
+    font-size:10px!important;
+    color:var(--text)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>i{
+    grid-column:1/-1!important;
+    display:block!important;
+    width:100%!important;
+    max-width:none!important;
+    height:4px!important;
+    margin:1px 0 0!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-radius:99px!important;
+    background:var(--surface-2)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>i>b{
+    display:block!important;
+    height:100%!important;
+    border-radius:inherit!important;
+    background:var(--accent)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day.done>i>b{
+    background:var(--success)!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-category-goals .agenda-goal-day>small{
+    grid-column:1/-1!important;
+    font-size:6.5px!important;
+    line-height:1.2!important;
+    color:var(--muted)!important;
+  }
+
+  @media(max-width:700px){
+    body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight{
+      min-height:118px;
+      padding:20px;
+    }
+    body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-copy strong{
+      font-size:25px;
+    }
+    body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight .reference-new-activity{
+      min-height:38px!important;
+      height:38px!important;
+      padding:0 13px!important;
+    }
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -3720,9 +3906,10 @@
             <div id="base-schedule-deck" class="base-schedule-deck"></div>
           </section>
 
-          <section class="agenda-week-goal-banner">
-  <div class="agenda-week-goal-copy"><span class="agenda-goal-target" aria-hidden="true">◎</span><div><strong>Cronograma</strong><small id="agenda-goal-message">Conclua suas atividades e mantenha a consistência.</small><div class="agenda-goal-progress-line"><span><i id="agenda-goal-banner-bar"></i></span><b id="agenda-goal-banner-percent">0%</b></div><em id="agenda-goal-banner-copy">0 de 0 atividades concluídas</em></div></div>
-  <div id="agenda-goal-days" class="agenda-goal-days agenda-goal-categories"><div class="agenda-goal-day" data-goal-kind="lesson"><span>Aulas</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="review"><span>Revisões</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="flashcards"><span>Flashcards</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="errors"><span>Caderno de erros</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div><div class="agenda-goal-day" data-goal-kind="questions-simulation"><span>Questões / Simulados</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div></div>
+          <section class="schedule-top-spotlight" aria-label="Cronograma">
+  <div class="schedule-top-spotlight-copy">
+    <strong>Cronograma</strong>
+  </div>
   <button id="reference-new-activity" class="button primary reference-new-activity" type="button">＋ Nova atividade</button>
 </section>
 
@@ -3785,6 +3972,15 @@
                     <div id="agenda-category-donut" class="agenda-category-donut"><span id="agenda-category-total">0min</span></div>
                   </div>
                   <div id="agenda-category-legend" class="agenda-category-legend"><span class="agenda-empty">Sem tempo registrado.</span></div>
+                </div>
+                <div class="agenda-category-goals" aria-label="Metas semanais por categoria">
+                  <div id="agenda-goal-days" class="agenda-goal-days agenda-goal-categories">
+                    <div class="agenda-goal-day" data-goal-kind="lesson"><span>Aulas</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="review"><span>Revisões</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="flashcards"><span>Flashcards</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="errors"><span>Caderno de erros</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                    <div class="agenda-goal-day" data-goal-kind="questions-simulation"><span>Questões / Simulados</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
+                  </div>
                 </div>
               </section>
             </aside>
