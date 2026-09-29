@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v204-stable-top-controls";
+const CACHE_VERSION = "luria-pwa-v204-qs-card-images";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
