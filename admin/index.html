@@ -126,7 +126,30 @@
           <button class="admin-view-tab" type="button" data-admin-view-tab="plantao" aria-selected="false">
             Plantão
           </button>
+          <button class="admin-view-tab" type="button" data-admin-view-tab="beta" aria-selected="false">
+            Beta Testers
+          </button>
         </nav>
+
+        <section class="admin-section admin-beta-section" data-admin-view="beta" hidden>
+          <div class="admin-section-head">
+            <div>
+              <span class="eyebrow">Feedback periódico</span>
+              <h2>Beta Testers</h2>
+              <p>Respostas obrigatórias coletadas a cada 5 dias das contas com plano Beta Tester.</p>
+            </div>
+            <div class="admin-beta-summary">
+              <strong id="admin-beta-feedback-count">0</strong>
+              <small>respostas</small>
+            </div>
+          </div>
+          <div class="admin-beta-toolbar">
+            <input id="admin-beta-search" type="search" placeholder="Buscar tester ou e-mail..." autocomplete="off">
+            <button id="admin-beta-refresh" class="button secondary" type="button">Atualizar</button>
+          </div>
+          <div id="admin-beta-feedback-status" class="admin-status">Abra esta aba para carregar os feedbacks.</div>
+          <div id="admin-beta-feedback-list" class="admin-beta-feedback-list"></div>
+        </section>
 
         <section class="admin-section" data-admin-view="plantao" hidden>
           <div class="admin-section-head">
@@ -1128,7 +1151,7 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
   <script src="assets/js/app.js?v=17.28-theme-switch"></script>
   <script src="assets/js/admin-editais.js?v=3"></script>
   <script src="assets/js/question-factory-prompts.js?v=4.1-fast-gt86-clinical"></script>
-  <script src="assets/js/admin.js?v=20260928-chatgpt-initial-json-v2"></script>\n  <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
+  <script src="assets/js/admin.js?v=20260928-beta-feedback-v1"></script>\n  <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
   <script defer src="assets/js/pwa.js?v=4"></script>
 </body>
 </html>
