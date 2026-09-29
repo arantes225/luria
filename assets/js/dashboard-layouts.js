@@ -415,8 +415,8 @@
     }
     document.body.dataset.dashboardLayout = current;
 
-    // Renderiza primeiro; só então oculta o Dashboard legado.
-    // Evita tela vazia durante reload quando o primeiro frame atrasa.
+    // O legado já fica oculto pelo CSS desde o primeiro frame.
+    // Renderiza somente a experiência atual para evitar flash visual.
     render();
     schedule();
   }
