@@ -3651,6 +3651,20 @@
     .month-filter-list button.active::after{content:"✓";font-weight:900}
     @media(max-width:720px){.month-filter-tools{grid-template-columns:1fr}.month-filter-list{position:relative;top:4px;margin-bottom:4px;max-height:220px}}
 
+  
+  /* Cronograma v38 — títulos em peso normal e períodos interativos */
+  body[data-page="cronograma"] .agenda-insight-title h3,
+  body[data-page="cronograma"] .agenda-today-title-wrap h3{
+    font-weight:400!important;
+  }
+  body[data-page="cronograma"] .agenda-insight-tabs button{
+    font-weight:400!important;
+    cursor:pointer!important;
+  }
+  body[data-page="cronograma"] .agenda-insight-tabs button.active{
+    font-weight:500!important;
+  }
+
   </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -4037,13 +4051,13 @@
             <aside class="agenda-side agenda-summary-side agenda-insights-side">
               <section class="agenda-insight-card agenda-study-time-card">
                 <div class="agenda-insight-title"><span aria-hidden="true">◷</span><h3>Tempo de estudo</h3></div>
-                <div class="agenda-insight-tabs"><button class="active" type="button">Semana</button><button type="button" disabled>Mês</button><button type="button" disabled>Ano</button></div>
+                <div class="agenda-insight-tabs" data-insight-tabs="study"><button class="active" type="button" data-period="week">Semana</button><button type="button" data-period="month">Mês</button><button type="button" data-period="year">Ano</button></div>
                 <div class="agenda-study-total"><strong id="agenda-study-total">0min</strong><span>Nesta semana</span></div>
                 <div id="agenda-study-bars" class="agenda-study-bars" aria-label="Tempo de estudo por dia"></div>
               </section>
               <section class="agenda-insight-card agenda-category-card">
                 <div class="agenda-insight-title"><span aria-hidden="true">◔</span><h3>Distribuição por categoria</h3></div>
-                <div class="agenda-insight-tabs"><button class="active" type="button">Semana</button><button type="button" disabled>Mês</button><button type="button" disabled>Ano</button></div>
+                <div class="agenda-insight-tabs" data-insight-tabs="category"><button class="active" type="button" data-period="week">Semana</button><button type="button" data-period="month">Mês</button><button type="button" data-period="year">Ano</button></div>
                 <div class="agenda-category-body">
                   <div class="agenda-category-donut-wrap">
                     <div id="agenda-category-donut" class="agenda-category-donut"><span id="agenda-category-total">0min</span></div>
