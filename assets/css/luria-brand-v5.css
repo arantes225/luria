@@ -770,3 +770,22 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     margin-top:0!important;
   }
 }
+
+
+/* v74 — fallback CSS: controles com escala real do Dashboard */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+    height:43px!important;
+    min-height:43px!important;
+    min-width:156px!important;
+    width:auto!important;
+    padding:0 12px!important;
+  }
+  body:not([data-page="dashboard"]) .luria-notification-toggle,
+  body:not([data-page="dashboard"]) .luria-profile-toggle{
+    width:43px!important;
+    height:43px!important;
+    min-width:43px!important;
+    min-height:43px!important;
+  }
+}
