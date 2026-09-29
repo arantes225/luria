@@ -8565,6 +8565,40 @@ function wireDynamicInteractions() {
   fillCronogramaFilter("month-filter-theme",monthItems.map(x=>x.theme),scheduleState.monthThemeFilter,"Todos os temas");
   bindMonthFilter("month-filter-area","monthAreaFilter");bindMonthFilter("month-filter-theme","monthThemeFilter");bindMonthFilter("month-filter-type","monthFilter");
 
+  // Espelha os selects funcionais em listas clicáveis no padrão visual do LURIA.
+  document.querySelectorAll(".month-filter-group[data-month-filter]").forEach((group)=>{
+    const select=document.getElementById(group.dataset.monthFilter);
+    const trigger=group.querySelector(".month-filter-trigger");
+    const list=group.querySelector(".month-filter-list");
+    if(!select||!trigger||!list)return;
+    const label=trigger.querySelector("strong");
+    const sync=()=>{
+      const selected=select.options[select.selectedIndex]||select.options[0];
+      if(label)label.textContent=selected?.textContent||"Todos";
+      list.innerHTML=[...select.options].map(option=>'<button type="button" data-value="'+escapeScheduleHtml(option.value)+'" class="'+(option.value===select.value?"active":"")+'">'+escapeScheduleHtml(option.textContent)+'</button>').join("");
+      list.querySelectorAll("button").forEach(button=>{
+        button.onclick=(event)=>{
+          event.preventDefault();event.stopPropagation();
+          select.value=button.dataset.value;
+          select.dispatchEvent(new Event("change",{bubbles:true}));
+          group.classList.remove("open");list.hidden=true;trigger.setAttribute("aria-expanded","false");
+        };
+      });
+    };
+    sync();
+    trigger.onclick=(event)=>{
+      event.preventDefault();event.stopPropagation();
+      document.querySelectorAll(".month-filter-group.open").forEach(other=>{
+        if(other===group)return;
+        other.classList.remove("open");
+        const otherList=other.querySelector(".month-filter-list");if(otherList)otherList.hidden=true;
+        other.querySelector(".month-filter-trigger")?.setAttribute("aria-expanded","false");
+      });
+      const opening=list.hidden;
+      list.hidden=!opening;group.classList.toggle("open",opening);trigger.setAttribute("aria-expanded",String(opening));
+    };
+  });
+
   document.querySelectorAll("[data-today-menu-trigger]").forEach((button) => {
     button.addEventListener("click", (event) => {
       event.preventDefault(); event.stopPropagation();
