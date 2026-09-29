@@ -83,8 +83,13 @@
   }
 
   function greeting() {
-    const name = dashboardFirstName();
-    return `<header class="dl-greeting"><div><span class="dl-eyebrow">SEU PAINEL DE ESTUDOS</span><h2>Olá${name ? `, ${escape(name)}` : ""}!</h2><p>Vamos em frente hoje? Consistência é o que transforma.</p></div></header>`;
+    return `<section class="luria-page-spotlight luria-dashboard-spotlight dl-dashboard-title-card" aria-label="Dashboard">
+      <div class="luria-page-spotlight-copy">
+        <span class="luria-page-spotlight-label">VISÃO GERAL</span>
+        <strong>Dashboard</strong>
+        <small class="luria-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
+      </div>
+    </section>`;
   }
 
   // Ícones vetoriais nos traços e cores das quatro referências.
@@ -379,6 +384,9 @@
           ? layout4(data)
           : greeting() + ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
       if (html) root.innerHTML = html;
+      document.querySelectorAll(".page > .luria-dashboard-spotlight").forEach(el => {
+        if (!root.contains(el)) el.remove();
+      });
       syncDashboardHeading();
       root.hidden = false;
       root.dataset.rendered = "true";
