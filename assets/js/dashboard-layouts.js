@@ -134,7 +134,8 @@
   }
 
   function activityList(list, limit = 5, showDate = true) {
-    return list.length ? `<ol class="dl-timeline">${list.slice(0, limit).map((item) => activity(item, true, showDate)).join("")}</ol>`
+    const visible = list.slice(0, limit);
+    return visible.length ? `<ol class="dl-timeline" data-activity-count="${visible.length}">${visible.map((item) => activity(item, true, showDate)).join("")}</ol>`
       : '<p class="dl-empty">Nenhuma atividade programada para este período.</p>';
   }
 
