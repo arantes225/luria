@@ -3498,3 +3498,17 @@ body.theme-dark .error-cat-spotlight{
 :root[data-theme="dark"] .error-cat-spotlight small{
   color:#fff!important;
 }
+
+
+/* v56 — alinhamento global entre controles superiores e callout de título */
+@media (min-width:981px){
+  body:not([data-page="dashboard"]) .topbar{
+    min-height:26px!important;
+    height:26px!important;
+    margin-bottom:14px!important;
+  }
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    top:10px!important;
+    right:34px!important;
+  }
+}
