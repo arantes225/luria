@@ -465,7 +465,32 @@
     return String(item?.presentation?.mode || "").toLowerCase() === "mass_casualty";
   }
 
+  function isAphCase(item=state.current){
+    return String(item?.setting||"")==="Ambulância / APH"
+      || String(item?.specialty||"")==="APH / Emergência"
+      || /^ambulancia-\d{3}$/i.test(String(item?.slug||""));
+  }
+
+  const APH_PATIENT_IMAGES={
+    manAwake:"/assets/img/plantao/ambulancia/ambulancia_1.webp?v=20260929-1",
+    womanAwake:"/assets/img/plantao/ambulancia/ambulancia_2.webp?v=20260929-1",
+    manReduced:"/assets/img/plantao/ambulancia/ambulancia_3.webp?v=20260929-1",
+    womanReduced:"/assets/img/plantao/ambulancia/ambulancia_4.webp?v=20260929-1"
+  };
+
+  function aphReferenceImage(item=state.current){
+    const sex=normalizeLabel(item?.presentation?.sex||"");
+    const female=sex==="f" || sex.startsWith("fem");
+    const clinical=normalizeLabel([
+      item?.title,item?.summary,item?.presentation?.opening,item?.presentation?.chief_complaint
+    ].filter(Boolean).join(" "));
+    const reduced=/pcr|parada|inconsciente|rebaix|sonol|confus|convuls|pos-ictal|síncope|sincope|coma|falencia ventilatoria|ventilacao inadequada/.test(clinical);
+    if(reduced) return female ? APH_PATIENT_IMAGES.womanReduced : APH_PATIENT_IMAGES.manReduced;
+    return female ? APH_PATIENT_IMAGES.womanAwake : APH_PATIENT_IMAGES.manAwake;
+  }
+
   function plantaoReferenceImage(item,index=0){
+    if(isAphCase(item)) return aphReferenceImage(item);
     if(isDisasterCase(item) && item?.presentation?.scene_image) return String(item.presentation.scene_image);
     const specialty=normalizeLabel(item?.specialty||"");
     const title=normalizeLabel([
@@ -576,7 +601,6 @@
     const specialty=state.filters.specialty || "";
     const difficulty=state.filters.difficulty || "";
     const query=normalizeLabel(state.filters.query || "");
-    const isAphCase=item=>String(item?.setting||"")==="Ambulância / APH" || String(item?.specialty||"")==="APH / Emergência" || /^ambulancia-\d{3}$/i.test(String(item?.slug||""));
     const aphCases=state.cases.filter(isAphCase);
     const emergencyCases=state.cases.filter(item=>!isAphCase(item));
     const baseCases=state.libraryView==="aph" ? aphCases : emergencyCases;
@@ -1431,6 +1455,21 @@
     hipoteses:{label:"Hipóteses",icon:"◎",categories:["hipoteses","raciocinio"]},
     conduta:{label:"Conduta final",icon:"✓",categories:["destino","encaminhamento"]}
   };
+  const APH_GROUPS = {
+    avaliacao:{label:"Avaliação",icon:"◉",categories:["anamnese","exame","exames","laboratorio","imagem"]},
+    suporte:{label:"Suporte imediato",icon:"ϟ",categories:["iniciais","monitorizacao"]},
+    intervir:{label:"Intervenções",icon:"✚",categories:["tratamento","procedimentos","procedimentos_terapeuticos"]},
+    hipoteses:{label:"Hipótese",icon:"◎",categories:["hipoteses","raciocinio"]},
+    conduta:{label:"Transporte",icon:"✓",categories:["destino","encaminhamento"]}
+  };
+  const APH_CORE_ACTION_IDS = new Set([
+    "exam_ectoscopy","exam_airway","exam_neuro","exam_chest","exam_cardio","exam_abdomen",
+    "exam_extremities","exam_skin","monitor","check_pulse","check_rhythm","abcde","iv_access",
+    "iv_access_2","io_access","oxygen","bvm","cpr","call_team","glucose","ecg","pulse_ox",
+    "capnography","temperature","defibrillate","sync_cardioversion","airway"
+  ]);
+  const APH_POINT_OF_CARE_IDS = new Set(["ecg","pulse_ox","capnography","temperature"]);
+  const activeActionGroups = () => isAphCase() ? APH_GROUPS : GROUPS;
   const GENERIC_ACTIONS = [
     {id:"exam_ectoscopy",label:"Ectoscopia / estado geral",category:"exame",subgroup:"01 · Ectoscopia",time_min:.333,points:0,result:"__PHYSICAL__"},
     {id:"exam_head",label:"Crânio e face",category:"exame",subgroup:"02 · Crânio e face",time_min:.333,points:0,result:"__PHYSICAL__"},
@@ -1822,9 +1861,9 @@
     return "Outras hipóteses";
   }
 
-  function allCaseDiagnoses(){
+  function allCaseDiagnoses(sourceCases=state.cases){
     const seen=new Set();
-    return state.cases
+    return sourceCases
       .filter(item=>item?.title)
       .filter(item=>{
         const key=normalizeLabel(item.title);
@@ -2576,8 +2615,30 @@
 
   function mergedActions(){
     const caseList=[...caseActions(),...importedHistoryActions()];
-
     const byId=new Map(caseList.map(a=>[a.id,a]));
+
+    if(isAphCase()){
+      const aphGeneric=GENERIC_ACTIONS
+        .filter(a=>APH_CORE_ACTION_IDS.has(a.id) || byId.has(a.id))
+        .filter(a=>a.id!=="abcde" || isTraumaCase())
+        .filter(a=>!["laboratorio","imagem"].includes(a.category))
+        .filter(a=>a.category!=="exames" || APH_POINT_OF_CARE_IDS.has(a.id))
+        .map(a=>{
+          const exact=byId.get(a.id);
+          return exact ? {...a,...exact,subgroup:a.subgroup||exact.subgroup} : a;
+        });
+      const aphDiagnoses=allCaseDiagnoses(state.cases.filter(isAphCase));
+      const existingIds=new Set([...aphGeneric,...aphDiagnoses].map(a=>a.id));
+      const extras=caseList.filter(a=>{
+        if(existingIds.has(a.id) || HIDDEN_CASE_ACTIONS.has(a.id) || a.role==="diagnosis") return false;
+        if(["laboratorio","imagem"].includes(a.category)) return false;
+        if(a.category==="exames" && !APH_POINT_OF_CARE_IDS.has(a.id)) return false;
+        if(["exame","iniciais","monitorizacao"].includes(a.category) && !APH_CORE_ACTION_IDS.has(a.id)) return false;
+        return true;
+      });
+      return [...aphGeneric,...aphDiagnoses,...extras];
+    }
+
     const generic=[...GENERIC_ACTIONS,...allCaseDiagnoses(),...GENERAL_DISPOSITIONS]
       .filter(a=>a.id!=="abcde" || isTraumaCase())
       .map(a=>{
@@ -2612,7 +2673,10 @@
     return false;
   }
 
-  const groupOf = category => Object.keys(GROUPS).find(key=>GROUPS[key].categories.includes(category)) || "intervir";
+  const groupOf = category => {
+    const groups=activeActionGroups();
+    return Object.keys(groups).find(key=>groups[key].categories.includes(category)) || "intervir";
+  };
   const done = id => E.done(state.current,state.performed,id);
   function openActions(category) {
     if(category==="conduta" && !state.diagnosis) {
@@ -2731,6 +2795,15 @@
   }
 
   function patientImagesForCurrentCase(){
+    if(isAphCase()){
+      const patientImage=aphReferenceImage(state.current);
+      const sex=patientSex(state.current);
+      return {
+        patient_image:patientImage,
+        unconscious_image:sex==="F" ? APH_PATIENT_IMAGES.womanReduced : APH_PATIENT_IMAGES.manReduced
+      };
+    }
+
     const age=patientAgeYears();
     if(Number.isFinite(age) && age>=50){
       const sexRaw=normalizeLabel(state.current?.presentation?.sex||"");
@@ -2928,14 +3001,15 @@
 
   function renderActions() {
     const actions=mergedActions();
-    if(!GROUPS[state.category])state.category="anamnese";
-    $("plantao-action-tabs").innerHTML=Object.entries(GROUPS)
+    const groupsConfig=activeActionGroups();
+    if(!groupsConfig[state.category]) state.category=Object.keys(groupsConfig)[0];
+    $("plantao-action-tabs").innerHTML=Object.entries(groupsConfig)
       .filter(([key])=>key!=="conduta" || !!state.diagnosis)
       .map(([key,g])=>`
       <button class="plantao-action-tab" type="button" data-case-category="${key}" aria-controls="plantao-action-drawer" aria-expanded="${!$("plantao-action-drawer").hidden&&key===state.category}">
         <span aria-hidden="true">${g.icon}</span><span>${g.label}</span>
       </button>`).join("");
-    $("plantao-action-title").textContent=GROUPS[state.category].label;
+    $("plantao-action-title").textContent=groupsConfig[state.category].label;
     const search=$("plantao-action-search").value.trim().toLocaleLowerCase('pt-BR');
     let available=actions.filter(a=>groupOf(a.category)===state.category && (!search||(a.label+" "+(a.subgroup||"")+" "+medicationDoseHint(a)).toLocaleLowerCase('pt-BR').includes(search)));
     if(state.category==="intervir"){
@@ -2943,7 +3017,7 @@
       const tabHtml='<div class="plantao-intervention-tabs"><button type="button" data-intervention-tab="medicamentos" class="'+(state.interventionTab==="medicamentos"?"active":"")+'">Medicamentos</button><button type="button" data-intervention-tab="procedimentos" class="'+(state.interventionTab==="procedimentos"?"active":"")+'">Procedimentos</button></div>';
       available=available.filter(a=>interventionSection(a)===state.interventionTab);
       $("plantao-actions").dataset.tabs=tabHtml;
-    } else if(state.category==="exames"){
+    } else if(state.category==="exames" && !isAphCase()){
       state.examTab=state.examTab||"gerais";
       const tabHtml='<div class="plantao-intervention-tabs plantao-exam-tabs"><button type="button" data-exam-tab="gerais" class="'+(state.examTab==="gerais"?"active":"")+'">Gerais</button><button type="button" data-exam-tab="imagem" class="'+(state.examTab==="imagem"?"active":"")+'">Exames de imagem</button><button type="button" data-exam-tab="laboratoriais" class="'+(state.examTab==="laboratoriais"?"active":"")+'">Exames laboratoriais</button></div>';
       available=available.filter(a=>examSection(a)===state.examTab);
