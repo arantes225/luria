@@ -4429,23 +4429,15 @@
     const action=E.resolve(state.current,state,selected);
     if(action.role==='disposition') {
       if(!state.diagnosis) { feed("Selecione uma hipótese principal antes de definir o destino final.","warning");return; }
-      const rules=state.current?.completion_rules||{};
-      const required=E.requiredActions ? E.requiredActions(state.current) : (rules.required_actions||[]);
-      const missingRequired=required.filter(id=>!done(id));
-      if(missingRequired.length){
-        const labels=missingRequired
-          .map(id=>mergedActions().find(item=>item.id===id)?.label||id)
-          .slice(0,4);
-        const suffix=missingRequired.length>4?` e mais ${missingRequired.length-4}`:"";
-        feed(`Ainda falta completar o manejo antes do destino final: ${labels.join("; ")}${suffix}.`,"warning");
-        return;
-      }
+      // Não revelar pendências antes do encerramento: o que faltou pertence ao debriefing.
       if(!(await confirmPlantaoFinalization(action.label))) return;
     }
     state.busy=true;renderActions();
     $("plantao-finish").disabled=true;$("plantao-back").disabled=true;
     try {
-      const sequenceIssue=sequenceCheck(action);
+      // A Conduta final não antecipa pendências nem erros de sequência.
+      // Esses pontos são avaliados e exibidos somente no debriefing.
+      const sequenceIssue=action.role==='disposition' ? null : sequenceCheck(action);
       if(sequenceIssue?.blocked) {
         state.elapsed+=.25;
         if(!E.success(state.current,state))state.criticalElapsed+=.25;
@@ -4528,6 +4520,25 @@
       updateScore();renderVitals();
       const saved=await persistSession();
       if(!saved)feed("Não foi possível salvar agora. Mantenha esta tela aberta; a próxima ação tentará novamente.","warning");
+
+      // Ao escolher a hipótese, avançar imediatamente para Conduta final.
+      // Mantém o drawer aberto e troca a lista sem exigir um segundo clique na aba.
+      if(action.role==='diagnosis' && state.diagnosis){
+        state.category="conduta";
+        const search=$("plantao-action-search");
+        if(search) search.value="";
+        const drawer=$("plantao-action-drawer");
+        if(drawer){
+          drawer.hidden=false;
+          drawer.classList.add("is-open");
+        }
+        renderActions();
+        requestAnimationFrame(()=>{
+          const first=drawer?.querySelector("[data-case-action]");
+          first?.focus?.();
+        });
+      }
+
       if(action.role==='disposition'&&state.disposition)await finishCase({forceDebrief:true});
     } finally {
       state.busy=false;renderActions();
