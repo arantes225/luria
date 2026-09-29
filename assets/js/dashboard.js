@@ -695,27 +695,73 @@ function wireCalendarInteractions() {
 
 async function loadDashboardUpcomingAgenda() {
   const today = toISODate(startOfDay(new Date()));
-  let query = dashboardSb
+  const userId = window.docmapUser?.id || null;
+
+  let feedQuery = dashboardSb
     .from("agenda_feed")
     .select("*")
-    .gte("activity_date", today)
-    .order("activity_date", { ascending: true })
+    .eq("activity_date", today)
     .order("activity_time", { ascending: true, nullsFirst: true })
     .limit(200);
 
-  if (window.docmapUser?.id) {
-    query = query.eq("user_id", window.docmapUser.id);
+  if (userId) {
+    feedQuery = feedQuery.eq("user_id", userId);
   }
 
-  const { data, error } = await query;
+  const feedResult = await feedQuery;
+  const merged = new Map();
 
-  if (error) {
-    console.warn("Não foi possível carregar as próximas atividades do Dashboard:", error);
-    window.luriaDashboardUpcomingAgenda = [];
-    return;
+  if (feedResult.error) {
+    console.warn("Dashboard: agenda_feed de hoje não carregou; usando o Cronograma como fonte direta.", feedResult.error);
+  } else {
+    for (const item of feedResult.data || []) {
+      const key = item.agenda_key || `${item.kind || "activity"}:${item.item_id || item.id || ""}`;
+      merged.set(key, item);
+    }
   }
 
-  window.luriaDashboardUpcomingAgenda = data || [];
+  if (userId) {
+    const topicsResult = await dashboardSb
+      .from("study_topics")
+      .select("id,area,materia,theme,scheduled_date,status,completed_at,created_at")
+      .eq("user_id", userId)
+      .eq("scheduled_date", today)
+      .order("created_at", { ascending: true });
+
+    if (topicsResult.error) {
+      console.warn("Dashboard: não foi possível carregar diretamente as aulas de hoje do Cronograma.", topicsResult.error);
+    } else {
+      for (const topic of topicsResult.data || []) {
+        if (!topic?.scheduled_date || topic.completed_at) continue;
+
+        const key = `topic:${topic.id}`;
+        if (merged.has(key)) continue;
+
+        merged.set(key, {
+          agenda_key: key,
+          user_id: userId,
+          kind: "lesson",
+          item_id: topic.id,
+          activity_date: topic.scheduled_date,
+          activity_time: null,
+          title: topic.theme || "Aula",
+          subtitle: "",
+          area: topic.area || null,
+          materia: topic.materia || null,
+          item_count: 1,
+          movable: true
+        });
+      }
+    }
+  }
+
+  window.luriaDashboardUpcomingAgenda = Array.from(merged.values())
+    .filter((item) => item?.activity_date === today)
+    .sort((a, b) =>
+      String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
+      || (a.kind === "lesson" ? -1 : b.kind === "lesson" ? 1 : 0)
+      || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
+    );
 }
 
 async function loadAgenda() {
