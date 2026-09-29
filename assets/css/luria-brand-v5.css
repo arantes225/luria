@@ -258,3 +258,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
     right:var(--luria-top-controls-right)!important;
   }
 }
+
+
+/* LURIA v62 — deslocamento horizontal real dos controles do topo */
+@media (min-width:981px){
+  :root{
+    --luria-top-controls-top:10px;
+    --luria-top-controls-right:154px;
+  }
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    top:var(--luria-top-controls-top)!important;
+    right:var(--luria-top-controls-right)!important;
+  }
+}
