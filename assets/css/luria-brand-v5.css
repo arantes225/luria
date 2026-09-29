@@ -742,3 +742,31 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     margin-top:0!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v73 — ALINHAMENTO VERTICAL GLOBAL PELO DASHBOARD
+   Mesma régua vertical do Dashboard no desktop:
+   main 18px / topbar 60px / -6px no topo / 10px até o card.
+   Mantém tamanhos e alinhamento horizontal já aprovados.
+   ========================================================= */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .main{
+    padding-top:18px!important;
+  }
+
+  body:not([data-page="dashboard"]) .page > .topbar{
+    position:relative!important;
+    inset:auto!important;
+    height:60px!important;
+    min-height:60px!important;
+    max-height:60px!important;
+    margin:-6px 0 10px!important;
+    padding:6px 0!important;
+    box-sizing:border-box!important;
+  }
+
+  body:not([data-page="dashboard"]) .page > .topbar + *{
+    margin-top:0!important;
+  }
+}
