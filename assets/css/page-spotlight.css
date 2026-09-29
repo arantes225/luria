@@ -1,0 +1,47 @@
+/* LURIA page spotlight — shared header visual aligned with Cronograma */
+body:not(.schedule-settings-embed) .luria-page-spotlight{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  min-height:138px;
+  margin:0 0 14px;
+  padding:24px 28px;
+  overflow:hidden;
+  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+  border-radius:15px;
+  background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#071c3c),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#091f49));
+  color:#fff;
+  box-shadow:0 10px 30px rgba(17,65,130,.12);
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight:after{
+  content:"";position:absolute;width:310px;height:310px;right:-90px;bottom:-220px;border-radius:50%;
+  background:rgba(255,255,255,.07);box-shadow:-80px -18px 0 rgba(255,255,255,.035);pointer-events:none;
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy{position:relative;z-index:2;min-width:0}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
+  display:block;margin:0;font-size:32px;line-height:1.08;font-weight:900;letter-spacing:-.8px;color:inherit;
+}
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight,
+body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight{
+  background:linear-gradient(110deg,#f8fbff,#edf4fb)!important;color:#10213d!important;border-color:#d8e3ef!important;
+}
+:root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight:after,
+body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight:after{
+  background:rgba(24,72,136,.06)!important;box-shadow:-80px -18px 0 rgba(24,72,136,.035)!important;
+}
+:root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .luria-page-spotlight{
+  background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#321328),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#35152d))!important;
+}
+body[data-page="desafio"] .daily-topbar .page-heading,
+body[data-page="questoes"] .topbar .page-heading,
+body[data-page="flashcards"] .topbar .page-heading,
+body[data-page="estatisticas"] .topbar .page-heading,
+body[data-page="plantao"] .sim-hub-topbar .page-heading{display:none!important}
+body[data-page="flashcards"] .flash-top-spotlight{display:none!important}
+body[data-page="caderno"] #notebook-view-library>.notebook-view-head{display:none!important}
+@media(max-width:700px){
+  body:not(.schedule-settings-embed) .luria-page-spotlight{min-height:118px;padding:20px}
+  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{font-size:25px}
+}
