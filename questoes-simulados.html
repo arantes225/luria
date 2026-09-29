@@ -1297,6 +1297,43 @@
     opacity:.22!important;
   }
 </style>
+
+<style id="qs-theme-aware-card-art-v3">
+  /* Ilustrações dos cards acompanham a cor ativa do tema e permanecem visíveis no escuro. */
+  body[data-page="questoes"] .qs-home-action{
+    --qs-art-color:var(--accent);
+  }
+  body[data-page="questoes"] .qs-home-card-art,
+  body[data-page="questoes"] .qs-home-action-icon{
+    color:var(--qs-art-color)!important;
+  }
+  body[data-page="questoes"] .qs-home-card-art svg,
+  body[data-page="questoes"] .qs-home-action-icon svg{
+    color:inherit!important;
+    fill:none!important;
+    stroke:currentColor!important;
+  }
+  body[data-page="questoes"] .qs-home-card-art svg *,
+  body[data-page="questoes"] .qs-home-action-icon svg *{
+    stroke:currentColor!important;
+  }
+  body[data-page="questoes"] .qs-home-card-art svg [fill]:not([fill="none"]),
+  body[data-page="questoes"] .qs-home-action-icon svg [fill]:not([fill="none"]){
+    fill:currentColor!important;
+  }
+  body[data-page="questoes"] .qs-home-card-art{
+    opacity:.34!important;
+    filter:none!important;
+    mix-blend-mode:normal!important;
+  }
+  html[data-theme="dark"] body[data-page="questoes"] .qs-home-card-art,
+  body.theme-dark[data-page="questoes"] .qs-home-card-art,
+  body[data-theme="dark"][data-page="questoes"] .qs-home-card-art{
+    opacity:.58!important;
+    filter:drop-shadow(0 0 1px color-mix(in srgb,var(--accent) 35%,transparent))!important;
+  }
+</style>
+
 </head>
 
 <body data-page="questoes">
