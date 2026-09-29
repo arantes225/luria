@@ -3980,7 +3980,7 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
    ========================================================= */
 
 :root{
-  --luria-switch-font-size:16px;
+  --luria-switch-font-size:15px;
   --luria-switch-height:46px;
   --luria-switch-pad-x:21px;
   --luria-switch-radius:10px;
@@ -4208,5 +4208,63 @@ small,
   .nav-link,
   .nav-sublink{
     font-size:var(--luria-body-font-size)!important;
+  }
+}
+
+
+/* v2026.09.29 — força final: todos os switches em 15px */
+:is(
+  .error-main-tab,
+  .error-tab,
+  .error-state-switch > button,
+  .error-review-action-switch > button,
+  .flash-tab,
+  .library-scope-tab,
+  .qs-mode-tab,
+  .notebook-tab,
+  .stats-tab,
+  .stats-range > button,
+  .schedule-add-tab,
+  .segmented-control > button,
+  .mode-tab,
+  .view-tab,
+  .section-tab,
+  .page-tab,
+  .scope-tab,
+  .switch-group > button,
+  .view-switch > button,
+  .mode-switch > button,
+  [role="tablist"] > button,
+  [role="tablist"] [role="tab"]
+){
+  font-size:15px!important;
+}
+
+@media(max-width:700px){
+  :is(
+    .error-main-tab,
+    .error-tab,
+    .error-state-switch > button,
+    .error-review-action-switch > button,
+    .flash-tab,
+    .library-scope-tab,
+    .qs-mode-tab,
+    .notebook-tab,
+    .stats-tab,
+    .stats-range > button,
+    .schedule-add-tab,
+    .segmented-control > button,
+    .mode-tab,
+    .view-tab,
+    .section-tab,
+    .page-tab,
+    .scope-tab,
+    .switch-group > button,
+    .view-switch > button,
+    .mode-switch > button,
+    [role="tablist"] > button,
+    [role="tablist"] [role="tab"]
+  ){
+    font-size:15px!important;
   }
 }
