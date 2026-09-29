@@ -203,3 +203,18 @@
   color:var(--text)!important;
   box-shadow:none!important;
 }
+
+
+/* Estado de acerto — a pista resolvida prevalece sobre o tema */
+.daily-page .daily-track-step.is-correct span{
+  background:#1d9a61!important;
+  border-color:#1d9a61!important;
+  color:#fff!important;
+}
+.daily-page .daily-track-step.is-correct small{
+  color:#1d9a61!important;
+}
+.daily-page .daily-clue.is-correct{
+  background:color-mix(in srgb,#1d9a61 10%,var(--surface))!important;
+  border-color:color-mix(in srgb,#1d9a61 52%,var(--border))!important;
+}
