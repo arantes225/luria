@@ -4270,3 +4270,28 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     max-height:300px!important;
   }
 }
+
+
+/* =========================================================
+   Dashboard 1 v51 — faixa inferior totalmente visível
+   Reduz apenas os blocos externos e preserva margem inferior.
+   ========================================================= */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    padding-bottom:16px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(0,1fr) 154px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:154px!important;
+    min-height:154px!important;
+    max-height:154px!important;
+    margin-top:0!important;
+    align-self:start!important;
+    overflow:hidden!important;
+  }
+}
