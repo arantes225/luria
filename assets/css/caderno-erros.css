@@ -3381,3 +3381,35 @@ body[data-page="erros"] .error-metric-card{
   color:var(--text)!important;
   box-shadow:0 1px 5px rgba(20,25,35,.08)!important;
 }
+
+
+/* v18.18 — padroniza exatamente a altura dos switches do Caderno de Erros */
+.error-state-switch,
+.error-review-action-switch{
+  box-sizing:border-box!important;
+  min-height:50px!important;
+  height:50px!important;
+  padding:4px!important;
+  border-width:1px!important;
+  border-radius:10px!important;
+  align-items:center!important;
+}
+.error-state-switch button,
+.error-review-action-switch button{
+  box-sizing:border-box!important;
+  min-height:40px!important;
+  height:40px!important;
+  padding:0 17px!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:7px!important;
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1!important;
+}
+@media(max-width:700px){
+  .error-state-switch button,
+  .error-review-action-switch button{
+    font-size:15px!important;
+  }
+}
