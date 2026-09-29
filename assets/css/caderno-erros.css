@@ -3115,10 +3115,10 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
 html[data-theme="dark"] .error-cat-spotlight,
 body.theme-dark .error-cat-spotlight,
 [data-theme="dark"] .error-cat-spotlight{
-  background:#0D1B30!important;
+  background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;
   color:#fff!important;
   border-color:#20344F!important;
-  box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
+  box-shadow:0 10px 30px rgba(0,0,0,.22)!important;
 }
 html[data-theme="dark"] .error-cat-spotlight:after,
 body.theme-dark .error-cat-spotlight:after,
