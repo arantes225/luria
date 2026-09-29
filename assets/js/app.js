@@ -7123,3 +7123,64 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Dashboard-sized topbar controls v36 */
+(function ensureDashboardSizedTopbarControls(){
+  if(document.getElementById("luria-dashboard-sized-topbar-controls-v36")) return;
+  const style=document.createElement("style");
+  style.id="luria-dashboard-sized-topbar-controls-v36";
+  style.textContent=`
+    @media(min-width:981px){
+      body:not([data-page="dashboard"]) .topbar .luria-notifications{
+        min-height:43px!important;
+        height:43px!important;
+        gap:10px!important;
+      }
+
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-toggle{
+        height:43px!important;
+        min-height:43px!important;
+        min-width:156px!important;
+        width:auto!important;
+        padding:0 12px!important;
+        gap:8px!important;
+        border-radius:12px!important;
+      }
+
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-icon,
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-icon svg{
+        width:20px!important;
+        height:20px!important;
+        flex:0 0 20px!important;
+      }
+
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-copy strong{
+        font-size:12.5px!important;
+      }
+
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-copy small{
+        font-size:10.5px!important;
+      }
+
+      body:not([data-page="dashboard"]) .topbar .luria-notification-toggle,
+      body:not([data-page="dashboard"]) .topbar .luria-profile-toggle{
+        width:43px!important;
+        height:43px!important;
+        min-width:43px!important;
+        min-height:43px!important;
+        border-radius:12px!important;
+      }
+
+      body:not([data-page="dashboard"]) .topbar .luria-notification-toggle > svg{
+        width:19px!important;
+        height:19px!important;
+      }
+
+      body:not([data-page="dashboard"]) .topbar .luria-profile-toggle{
+        font-size:16px!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
