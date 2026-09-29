@@ -3515,96 +3515,9 @@ function resetLuriaTopControlsPosition(center) {
 }
 
 function wireLuriaTopControlsDrag(center) {
-  if (!center || center.dataset.luriaDragBound === "1") return;
-  center.dataset.luriaDragBound = "1";
-
-  const handle = center.querySelector(".luria-top-controls-drag-handle");
-  if (!handle) return;
-
-  const saved = readLuriaTopControlsPosition();
-  if (saved) {
-    requestAnimationFrame(() => applyLuriaTopControlsPosition(center, saved));
-  }
-
-  let drag = null;
-
-  const move = (event) => {
-    if (!drag || event.pointerId !== drag.pointerId) return;
-    event.preventDefault();
-
-    const dx = event.clientX - drag.startX;
-    const dy = event.clientY - drag.startY;
-    const nextLeft = Math.min(
-      Math.max(8, drag.startLeft + dx),
-      Math.max(8, window.innerWidth - drag.width - 8)
-    );
-    const nextTop = Math.min(
-      Math.max(8, drag.startTop + dy),
-      Math.max(8, window.innerHeight - drag.height - 8)
-    );
-    const nextRight = Math.max(8, window.innerWidth - nextLeft - drag.width);
-
-    center.style.setProperty("position", "fixed", "important");
-    center.style.setProperty("top", `${nextTop}px`, "important");
-    center.style.setProperty("right", `${nextRight}px`, "important");
-    center.style.setProperty("left", "auto", "important");
-    center.style.setProperty("z-index", "2147482001", "important");
-    center.dataset.luriaCustomPosition = "1";
-  };
-
-  const end = (event) => {
-    if (!drag || event.pointerId !== drag.pointerId) return;
-
-    try { handle.releasePointerCapture(event.pointerId); } catch {}
-    const rect = center.getBoundingClientRect();
-    const position = {
-      top: rect.top,
-      right: Math.max(8, window.innerWidth - rect.right)
-    };
-    saveLuriaTopControlsPosition(position);
-
-    drag = null;
-    center.classList.remove("luria-top-controls-dragging");
-    window.removeEventListener("pointermove", move);
-    window.removeEventListener("pointerup", end);
-    window.removeEventListener("pointercancel", end);
-  };
-
-  handle.addEventListener("pointerdown", (event) => {
-    if (window.innerWidth < 981 || event.button !== 0) return;
-
-    event.preventDefault();
-    event.stopPropagation();
-
-    const rect = center.getBoundingClientRect();
-    drag = {
-      pointerId: event.pointerId,
-      startX: event.clientX,
-      startY: event.clientY,
-      startLeft: rect.left,
-      startTop: rect.top,
-      width: rect.width,
-      height: rect.height
-    };
-
-    center.classList.add("luria-top-controls-dragging");
-    try { handle.setPointerCapture(event.pointerId); } catch {}
-    window.addEventListener("pointermove", move, { passive: false });
-    window.addEventListener("pointerup", end);
-    window.addEventListener("pointercancel", end);
-  });
-
-  handle.addEventListener("dblclick", (event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    resetLuriaTopControlsPosition(center);
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.innerWidth < 981) return;
-    const current = readLuriaTopControlsPosition();
-    if (current) applyLuriaTopControlsPosition(center, current);
-  });
+  if (!center) return;
+  try { localStorage.removeItem(luriaTopControlsPositionKey()); } catch {}
+  resetLuriaTopControlsPosition(center);
 }
 
 function ensureNotificationCenter() {
@@ -3649,13 +3562,6 @@ function ensureNotificationCenter() {
     "luria-notifications";
 
   center.innerHTML = `
-    <button
-      class="luria-top-controls-drag-handle"
-      type="button"
-      aria-label="Mover timer, notificações e perfil"
-      title="Arraste para mover · duplo clique para restaurar"
-    >⋮⋮</button>
-
     <div class="luria-pomodoro-top">
       <button
         id="luria-pomodoro-toggle"
@@ -3833,7 +3739,9 @@ function ensureNotificationCenter() {
     center.querySelector(".luria-pomodoro-top")?.remove();
   }
 
-  wireLuriaTopControlsDrag(center);
+  // Controles do topo são fixos ao cabeçalho; remove qualquer posição antiga salva.
+  try { localStorage.removeItem(luriaTopControlsPositionKey()); } catch {}
+  resetLuriaTopControlsPosition(center);
 
   const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
   const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
