@@ -3432,3 +3432,15 @@ body[data-page="erros"] .error-metric-card{
     margin-top:0!important;
   }
 }
+
+
+/* v18.20 — respiro do topo igual ao Dashboard */
+@media(min-width:981px){
+  body[data-page="erros"] .topbar{
+    min-height:48px!important;
+    height:48px!important;
+    max-height:48px!important;
+    margin:0 0 28px!important;
+    padding:0!important;
+  }
+}
