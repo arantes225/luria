@@ -4104,3 +4104,109 @@ body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-cop
     font-weight:400!important;
   }
 }
+
+
+/* =========================================================
+   v2026.09.29 — TIPOGRAFIA PRINCIPAL GLOBAL = 16PX
+   Mantém hierarquia própria para títulos, métricas, badges,
+   legendas auxiliares e microcopy.
+   ========================================================= */
+
+:root{
+  --luria-body-font-size:16px;
+}
+
+/* Texto principal e navegação */
+body,
+p,
+li,
+td,
+th,
+label,
+input,
+select,
+textarea,
+button,
+.button,
+[role="button"],
+.nav-link,
+.nav-sublink,
+.setting-row p,
+.panel-header p,
+.feature-card p,
+.area-row,
+.auth-form label,
+.auth-message,
+.inline-status{
+  font-size:var(--luria-body-font-size)!important;
+}
+
+/* Conteúdo textual recorrente em cards e formulários */
+.panel,
+.feature-card,
+.setting-row,
+.selected-activity,
+.error-question,
+.error-answer-text,
+.error-thought,
+.error-library-card-ccq,
+.error-library-detail-block div{
+  font-size:var(--luria-body-font-size)!important;
+}
+
+/* Mantém títulos e indicadores com hierarquia visual própria */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page-heading h1,
+.metric-value,
+.error-metric-card strong,
+.error-ccq,
+.luria-page-spotlight-copy > strong,
+.brand-copy strong{
+  font-size:revert;
+}
+
+/* Mantém microcopy/labels compactos menores que o corpo */
+small,
+.eyebrow,
+.badge,
+.metric-label,
+.metric-helper,
+.error-metric-card span,
+.error-metric-card small,
+.error-detail-label,
+.error-library-field > span,
+.error-library-card-meta,
+.error-library-card-stats,
+.error-library-detail-block span,
+.luria-page-spotlight-label,
+.luria-page-spotlight-helper,
+.lofi-time,
+.sidebar-lofi-copy small,
+.lofi-loop-note{
+  font-size:revert;
+}
+
+/* Mobile/PWA: mantém o mesmo tamanho base, sem encolher */
+@media(max-width:700px){
+  body,
+  p,
+  li,
+  td,
+  th,
+  label,
+  input,
+  select,
+  textarea,
+  button,
+  .button,
+  [role="button"],
+  .nav-link,
+  .nav-sublink{
+    font-size:var(--luria-body-font-size)!important;
+  }
+}
