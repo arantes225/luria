@@ -3501,3 +3501,22 @@ body[data-page="dashboard"] .dl-cat .dl-card-heading h3{
     margin-top:10px!important;
   }
 }
+
+
+/* Dashboard v54 — posição do Timer/Sino/Perfil igual ao restante do site */
+@media(min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+    position:fixed!important;
+    top:var(--luria-top-controls-top,10px)!important;
+    right:var(--luria-top-controls-right,max(34px,calc((100vw - 1320px) / 2)))!important;
+    bottom:auto!important;
+    left:auto!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    align-self:auto!important;
+    height:auto!important;
+    min-height:0!important;
+    z-index:245!important;
+  }
+}
