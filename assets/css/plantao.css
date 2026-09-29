@@ -7278,3 +7278,48 @@ html[data-theme="pink"] body.plantao-module-entry .plantao-featured-case{
 body.plantao-module-entry .plantao-featured-art{
   display:none!important;
 }
+
+
+/* v49 — timer sem ícone, tempo centralizado */
+body.plantao-module-entry .plantao-clock{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:132px!important;
+  height:42px!important;
+  padding:0 14px!important;
+  border:1px solid var(--border)!important;
+  border-radius:12px!important;
+  background:var(--surface)!important;
+  box-shadow:none!important;
+  text-align:center!important;
+}
+body.plantao-module-entry .plantao-clock span,
+body.plantao-module-entry .plantao-clock svg,
+body.plantao-module-entry .plantao-clock i,
+body.plantao-module-entry .plantao-clock strong::before{
+  display:none!important;
+  content:none!important;
+}
+body.plantao-module-entry .plantao-clock strong{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+  text-align:center!important;
+  color:var(--text)!important;
+  font-size:26px!important;
+  font-weight:900!important;
+  line-height:1!important;
+  letter-spacing:.02em!important;
+  font-variant-numeric:tabular-nums;
+}
+@media(max-width:680px){
+  body.plantao-module-entry .plantao-clock{
+    min-width:116px!important;
+    height:40px!important;
+    padding:0 12px!important;
+  }
+  body.plantao-module-entry .plantao-clock strong{
+    font-size:23px!important;
+  }
+}
