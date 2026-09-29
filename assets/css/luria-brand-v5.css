@@ -587,3 +587,65 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     margin-top:0!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v71 — REGRA AUTORITATIVA DO TOPO
+   Dashboard como referência:
+   controles: top 28px / h 48px
+   card: 14px abaixo => início em 90px
+   ========================================================= */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .main{
+    position:relative!important;
+  }
+
+  body:not([data-page="dashboard"]) .page{
+    position:relative!important;
+    padding-top:62px!important; /* 48px controles + 14px gap */
+  }
+
+  body:not([data-page="dashboard"]) .page > .topbar{
+    position:absolute!important;
+    top:0!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+    margin:0!important;
+    padding:0!important;
+    background:transparent!important;
+    z-index:240!important;
+  }
+
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    position:fixed!important;
+    top:28px!important;
+    right:max(34px, calc((100vw - 1320px) / 2))!important;
+    bottom:auto!important;
+    left:auto!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    z-index:245!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+  }
+
+  body:not([data-page="dashboard"]) .page > .topbar + *{
+    margin-top:0!important;
+  }
+
+  body:not([data-page="dashboard"]) .page > :is(
+    .luria-page-spotlight,
+    .schedule-top-spotlight,
+    .error-cat-spotlight,
+    .schedule-stack,
+    .error-metrics
+  ){
+    margin-top:0!important;
+  }
+}
