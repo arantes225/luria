@@ -3501,7 +3501,7 @@ body.theme-dark .error-cat-spotlight{
 
 /* v2026.09.29 — switches/segmented controls maiores em todo o LURIA */
 :root{
-  --luria-switch-font-size: 17px;
+  --luria-switch-font-size: 16px;
   --luria-switch-height: 46px;
   --luria-switch-pad-x: 21px;
   --luria-switch-radius: 10px;
@@ -3765,7 +3765,7 @@ button,
   [role="tablist"] > button,
   [role="tablist"] [role="tab"]
 ){
-  font-size:17px!important;
+  font-size:16px!important;
   font-weight:400!important;
   line-height:1.15!important;
 }
@@ -3795,7 +3795,7 @@ button,
     [role="tablist"] > button,
     [role="tablist"] [role="tab"]
   ){
-    font-size:16px!important;
+    font-size:15px!important;
   }
 }
 
