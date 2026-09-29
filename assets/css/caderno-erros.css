@@ -3157,3 +3157,21 @@ body.theme-dark .error-cat-timer span,
 [data-theme="dark"] .error-cat-timer span{
   background:rgba(255,255,255,.72)!important;
 }
+
+
+/* LURIA Erros v18.13 — métricas um pouco maiores para a esquerda e para baixo */
+body[data-page="erros"] .error-metrics{
+  width:calc(100% + 12px)!important;
+  margin-left:-12px!important;
+  margin-bottom:18px!important;
+}
+body[data-page="erros"] .error-metric-card{
+  min-height:116px!important;
+  padding:18px!important;
+}
+@media(max-width:900px){
+  body[data-page="erros"] .error-metrics{
+    width:100%!important;
+    margin-left:0!important;
+  }
+}
