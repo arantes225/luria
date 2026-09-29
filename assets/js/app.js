@@ -639,10 +639,16 @@
       margin-bottom:0 !important;
     }
 
-    /* Desktop herda o mesmo cabeçalho global; sem compensações específicas por página. */
+    /* Desktop: Timer + sino + perfil ancorados no mesmo ponto em todas as páginas. */
     @media (min-width:981px) {
       .topbar .luria-notifications {
-        top:0 !important;
+        position:fixed !important;
+        top:18px !important;
+        right:34px !important;
+        left:auto !important;
+        margin:0 !important;
+        transform:none !important;
+        z-index:245 !important;
       }
     }
 
