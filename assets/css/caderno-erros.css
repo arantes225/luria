@@ -3115,9 +3115,9 @@ html[data-theme="dark"] .error-cat-spotlight,body.theme-dark .error-cat-spotligh
 html[data-theme="dark"] .error-cat-spotlight,
 body.theme-dark .error-cat-spotlight,
 [data-theme="dark"] .error-cat-spotlight{
-  background:#4F7FB8!important;
+  background:#0D1B30!important;
   color:#fff!important;
-  border-color:#4F7FB8!important;
+  border-color:#20344F!important;
   box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
 }
 html[data-theme="dark"] .error-cat-spotlight:after,
