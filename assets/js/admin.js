@@ -2118,10 +2118,10 @@
       });
     });
 
-    let initial = "metrics";
+    let initial = location.hash === "#beta" ? "beta" : "metrics";
     try {
       const saved = sessionStorage.getItem("luria-admin-view");
-      if (["metrics", "factory", "editais", "plans", "plantao", "beta"].includes(saved)) {
+      if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "plantao"].includes(saved)) {
         initial = saved;
       }
     } catch (_) {}
