@@ -4256,3 +4256,17 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     padding-bottom:10px!important;
   }
 }
+
+
+/* =========================================================
+   Dashboard 1 v49 — altura externa dos cards inferiores
+   Mantém o conteúdo interno intacto; altera somente o bloco.
+   ========================================================= */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:340px!important;
+    min-height:340px!important;
+    max-height:340px!important;
+  }
+}
