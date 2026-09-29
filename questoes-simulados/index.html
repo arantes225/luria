@@ -1624,6 +1624,20 @@
       .qs-home-user-progress{grid-column:1}
       .qs-home-user-open{grid-column:2;grid-row:1/3}
     }
+
+    .qs-home-actions-compact .qs-home-card-art{
+      display:block!important;
+      right:34px!important;
+      bottom:-12px!important;
+      width:78px!important;
+      height:78px!important;
+      opacity:.28!important;
+      background-size:contain!important;
+      filter:saturate(.88) contrast(1.02);
+    }
+    .qs-home-actions-compact .qs-home-action-copy{
+      padding-right:48px;
+    }
 </style>
   <link rel="canonical" href="/questoes-simulados/">
   <script>(function(){try{if(location.pathname.endsWith("/questoes-simulados.html"))history.replaceState(null,"","/questoes-simulados/"+location.search+location.hash);}catch(e){}})();</script>
@@ -1695,6 +1709,7 @@
                     <small>Monte sua própria lista.</small>
                   </span>
                   <span class="qs-home-action-arrow">→</span>
+                  <img class="qs-home-card-art qs-home-art-create" src="/assets/img/qs-create-pro.svg?v=20260929-svg1" alt="" aria-hidden="true" decoding="async">
                 </button>
 
                 <button class="qs-home-action qs-home-action-upload" type="button" data-qs-mode="add" data-qs-add-mode="automatic">
@@ -1706,6 +1721,7 @@
                     <small>Importe um PDF.</small>
                   </span>
                   <span class="qs-home-action-arrow">→</span>
+                  <img class="qs-home-card-art qs-home-art-upload" src="/assets/img/qs-upload-pro.svg?v=20260929-svg1" alt="" aria-hidden="true" decoding="async">
                 </button>
 
                 <button class="qs-home-action qs-home-action-library" type="button" data-qs-mode="library">
@@ -1717,6 +1733,7 @@
                     <small>Veja tudo o que você salvou.</small>
                   </span>
                   <span class="qs-home-action-arrow">→</span>
+                  <img class="qs-home-card-art qs-home-art-library" src="/assets/img/qs-library-pro.svg?v=20260929-svg1" alt="" aria-hidden="true" decoding="async">
                 </button>
               </div>
 
@@ -1927,20 +1944,6 @@
                 </div>
               </div>
             </div>
-          </section>
-
-          <!-- MEUS SIMULADOS -->
-          <section class="qs-panel qs-mode-section active qs-legacy-history" data-qs-section="mine">
-            <div class="qs-head">
-              <div>
-                <h2>Meus simulados</h2>
-                <p>Abra um simulado para responder as questões diretamente no LURIA.</p>
-              </div>
-
-              <span id="qs-set-count" class="badge">0 simulados</span>
-            </div>
-
-            <div id="qs-history" class="qs-history"></div>
           </section>
 
           <!-- BIBLIOTECA -->
