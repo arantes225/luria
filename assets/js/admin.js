@@ -2218,6 +2218,7 @@
     const next = blockAction?.next || {};
     const generated = Number(next.question_count || flow?.generated_count || 0);
     const initialReviewed = Number(next.initial_reviewed_count || flow?.initial_audited_count || 0);
+    const initialApproved = Number(next.initial_approved_count || next.adversarial_pass_count || 0);
     const blind = Number(next.blind_seen_count || flow?.blind_resolved_count || 0);
     const independent = Number(next.independent_seen_count || next.perplexity_seen_count || flow?.perplexity_audited_count || 0);
     const approved = Number(next.machine_approved_count || 0);
@@ -2227,7 +2228,7 @@
 
     const steps = [
       { n:1, title:"Gerar / repor questões", owner:"ChatGPT", stats:`${generated}/200 no bloco` },
-      { n:2, title:"Revisão adversarial + autocorreção", owner:"ChatGPT", stats:`${initialReviewed}/200 revisadas` },
+      { n:2, title:"Revisão adversarial + autocorreção", owner:"ChatGPT", stats:`${initialReviewed}/200 revisadas · ${initialApproved}/200 aprovadas` },
       { n:3, title:"Resolução cega com nota", owner:"ChatGPT", stats:`${blind}/200 resolvidas` },
       { n:4, title:"Revisão independente + decisão automática", owner:"ChatGPT", stats:`${independent}/200 revisadas · média ${avg}` }
     ];
@@ -3282,6 +3283,7 @@
         next_stage: strict.next_stage,
         next_provider: strict.next_provider,
         phase: strict.phase,
+        initial_approved_count: strict.adversarial_pass_count,
         strict_ready_count: strict.ready_count,
         strict_needs_new_review_count: strict.needs_new_review_count,
         strict_blind_seen_count: strict.blind_seen_count,
