@@ -2585,7 +2585,7 @@
     }
 
     if(action.id==="abcde"){
-      if(!isTraumaCase()) return "Avaliação ABCDE reservada aos casos de trauma neste simulador.";
+      if(!isTraumaCase()) return "ABCDE pré-hospitalar realizado como avaliação estruturada; esta ação não pontua em casos não traumáticos.";
       const a=/via aerea|obstrucao|estridor/.test(t) ? "A: via aérea ameaçada, com necessidade de intervenção imediata." : "A: via aérea pérvia, sem obstrução evidente.";
       const b=(!Number.isFinite(rr)||rr===0) ? "B: ausência de ventilação espontânea eficaz."
         : "B: FR "+rr+" irpm, SpO₂ "+(Number.isFinite(spo2)?spo2+"%":"—")+", "+(rr>=30||spo2<92?"com comprometimento respiratório.":"ventilação espontânea presente.");
@@ -2618,6 +2618,36 @@
     return caseSpecificNeutralResult(action,"procedimento");
   }
 
+  const APH_MAX_FAST_ACTION_MINUTES = 5/60;
+  const APH_FAST_ACTION_CATEGORIES = new Set([
+    "anamnese","exame","exames","laboratorio","imagem",
+    "iniciais","monitorizacao"
+  ]);
+
+  function normalizeAphAction(action){
+    const next={...action};
+
+    if(APH_FAST_ACTION_CATEGORIES.has(next.category)){
+      const current=Number(next.time_min);
+      next.time_min=Number.isFinite(current) && current>0
+        ? Math.min(current,APH_MAX_FAST_ACTION_MINUTES)
+        : APH_MAX_FAST_ACTION_MINUTES;
+    }
+
+    // No APH, o ABCDE pode ser usado como avaliação estruturada em qualquer caso,
+    // mas só pontua quando o caso é traumático.
+    if(next.id==="abcde" && !isTraumaCase()){
+      next.points=0;
+      next.essential=false;
+      next.essential_points=0;
+      next.beneficial_points=0;
+      next.clinical_class="neutra";
+      next.clinical_reason="ABCDE pré-hospitalar sem pontuação em caso não traumático.";
+    }
+
+    return next;
+  }
+
   function mergedActions(){
     const caseList=[...caseActions(),...importedHistoryActions()];
     const byId=new Map(caseList.map(a=>[a.id,a]));
@@ -2625,7 +2655,6 @@
     if(isAphCase()){
       const aphGeneric=GENERIC_ACTIONS
         .filter(a=>APH_CORE_ACTION_IDS.has(a.id) || byId.has(a.id))
-        .filter(a=>a.id!=="abcde" || isTraumaCase())
         .filter(a=>!["laboratorio","imagem"].includes(a.category))
         .filter(a=>a.category!=="exames" || APH_POINT_OF_CARE_IDS.has(a.id))
         .map(a=>{
@@ -2641,7 +2670,7 @@
         if(["exame","iniciais","monitorizacao"].includes(a.category) && !APH_CORE_ACTION_IDS.has(a.id)) return false;
         return true;
       });
-      return [...aphGeneric,...aphDiagnoses,...extras];
+      return [...aphGeneric,...aphDiagnoses,...extras].map(normalizeAphAction);
     }
 
     const generic=[...GENERIC_ACTIONS,...allCaseDiagnoses(),...GENERAL_DISPOSITIONS]
