@@ -3579,3 +3579,33 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     align-self:center!important;
   }
 }
+
+
+/* Dashboard v56 — sobe o conjunto inteiro da página */
+@media(min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    padding-top:18px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+    margin-top:-6px!important;
+    margin-bottom:10px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+    padding-top:8px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] .dl-greeting{
+    margin-top:-2px!important;
+  }
+}
+@media(max-width:980px){
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    padding-top:8px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+    margin-top:-4px!important;
+    margin-bottom:8px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+    padding-top:6px!important;
+  }
+}
