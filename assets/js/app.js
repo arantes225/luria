@@ -6919,3 +6919,72 @@ iniciarApp();
   window.addEventListener("docmap:ready", checkBetaFeedback);
   if (window.docmapUser?.id) checkBetaFeedback();
 })();
+
+
+/* Exact topbar/title geometry v36 */
+(function installExactTopbarTitleGeometry(){
+  if(window.__luriaExactTopbarTitleGeometryInstalled) return;
+  window.__luriaExactTopbarTitleGeometryInstalled=true;
+
+  const titleSelector=[
+    ".page > .luria-page-spotlight",
+    ".page > .schedule-top-spotlight",
+    ".page > .editais-title-spotlight"
+  ].join(",");
+
+  function apply(){
+    const topbar=document.querySelector(".topbar");
+    const controls=topbar?.querySelector(".luria-notifications");
+    const timer=topbar?.querySelector(".luria-pomodoro-toggle");
+    const profile=topbar?.querySelector(".luria-profile-toggle");
+    const title=document.querySelector(titleSelector);
+    if(!topbar||!controls||!timer||!profile||!title) return;
+
+    /* Sempre parte da geometria natural antes de recalcular. */
+    title.style.removeProperty("margin-top");
+    controls.style.removeProperty("transform");
+
+    requestAnimationFrame(()=>{
+      const titleRect=title.getBoundingClientRect();
+      const profileRect=profile.getBoundingClientRect();
+
+      /* Horizontal: borda direita das iniciais = borda direita do callout. */
+      const dx=titleRect.right-profileRect.right;
+      if(Math.abs(dx)>.25){
+        controls.style.setProperty("transform",`translateX(${dx}px)`,"important");
+      }else{
+        controls.style.setProperty("transform","none","important");
+      }
+
+      requestAnimationFrame(()=>{
+        const timerRect=timer.getBoundingClientRect();
+        const currentTitleRect=title.getBoundingClientRect();
+
+        /* Vertical: espaço acima do timer = espaço entre timer e título. */
+        const topGap=Math.max(0,timerRect.top);
+        const desiredTitleTop=timerRect.bottom+topGap;
+        const dy=desiredTitleTop-currentTitleRect.top;
+        title.style.setProperty("margin-top",`${dy}px`,"important");
+      });
+    });
+  }
+
+  let raf=0;
+  function schedule(){
+    cancelAnimationFrame(raf);
+    raf=requestAnimationFrame(apply);
+  }
+
+  window.addEventListener("resize",schedule,{passive:true});
+  window.addEventListener("orientationchange",schedule,{passive:true});
+  window.addEventListener("pageshow",schedule);
+  document.addEventListener("DOMContentLoaded",schedule,{once:true});
+
+  const observer=new MutationObserver(schedule);
+  observer.observe(document.documentElement,{attributes:true,attributeFilter:["data-theme","class"]});
+  observer.observe(document.body,{childList:true,subtree:true});
+
+  schedule();
+  setTimeout(schedule,80);
+  setTimeout(schedule,350);
+})();
