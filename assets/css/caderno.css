@@ -3902,3 +3902,35 @@ body.theme-dark[data-page="caderno"] .notebook-task-modal .notebook-modal-field 
   font-weight:800!important;
   line-height:1!important;
 }
+
+
+/* v25.0 — Anotações alinhadas exatamente à régua do Cronograma */
+body[data-page="caderno"] .notebook-page{
+  max-width:1320px!important;
+  width:100%!important;
+  margin:0 auto!important;
+  padding-right:0!important;
+  box-sizing:border-box!important;
+}
+body[data-page="caderno"] #notebook-view-library{
+  margin-top:0!important;
+}
+body[data-page="caderno"] #notebook-view-library > .luria-page-spotlight{
+  width:100%!important;
+  max-width:none!important;
+  height:138px!important;
+  min-height:138px!important;
+  max-height:138px!important;
+  margin:0 0 14px!important;
+  padding:24px 28px!important;
+  border-radius:15px!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:700px){
+  body[data-page="caderno"] #notebook-view-library > .luria-page-spotlight{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px!important;
+  }
+}
