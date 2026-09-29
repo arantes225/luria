@@ -645,7 +645,6 @@
         const title=featured.presentation?.chief_complaint || featured.presentation?.display_title || featured.summary || featured.title || "Caso clínico";
         const summary=featured.summary || featured.presentation?.opening || "Paciente admitido na sala de emergência. Avalie, investigue e defina a melhor conduta.";
         const materia=caseMateria(featured);
-        featuredHost.style.setProperty("--featured-image",`url("${plantaoReferenceImage(featured,0)}")`);
         featuredHost.innerHTML=`
           <div class="plantao-featured-art" aria-hidden="true">
             <div class="plantao-featured-room-wall"></div>
