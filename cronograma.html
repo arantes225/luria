@@ -2616,6 +2616,31 @@
     background:transparent!important;
   }
 
+
+  /* Cronograma vNext — cabeçalho vive no spotlight */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
+    margin-bottom:0!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-label{
+    display:block;
+    margin-bottom:5px;
+    color:rgba(255,255,255,.76);
+    font-size:8px;
+    font-weight:800;
+    line-height:1.1;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-label,
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight-label{
+    color:color-mix(in srgb,var(--text) 62%,transparent);
+  }
+  @media(max-width:760px){
+    body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
+      margin-bottom:10px!important;
+    }
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -2634,10 +2659,6 @@
         <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
 
-          <div class="page-heading">
-            <span class="eyebrow" data-page-eyebrow></span>
-            <h1 data-page-title></h1>
-          </div>
         </header>
 
         <div class="schedule-stack">
