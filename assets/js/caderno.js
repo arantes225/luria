@@ -80,7 +80,7 @@ const notebookState = {
     new Map(),
 
   activeView:
-    "editor",
+    "library",
 
   selectedType:
     null,
