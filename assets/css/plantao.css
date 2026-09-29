@@ -7263,16 +7263,24 @@ body.plantao-module-entry .plantao-today-icon.active svg path{
 /* === Sala de Emergência · destaque com a mesma arte da Prática Clínica v49 ===
    Esta regra precisa ficar após o bloco v29/v48, que substituía a fotografia por gradiente. */
 body.plantao-module-entry .plantao-featured-case{
-  background:
-    linear-gradient(90deg,rgba(7,33,65,.94) 0%,rgba(8,42,78,.82) 42%,rgba(8,42,78,.28) 68%,rgba(8,42,78,.06) 100%),
-    url("/assets/img/plantao/emergencia-card-bg.webp") center/cover no-repeat!important;
+  background-color:#0e3a69!important;
+  background-image:
+    linear-gradient(90deg,rgba(7,33,65,.96) 0%,rgba(8,42,78,.90) 42%,rgba(8,42,78,.38) 58%,rgba(8,42,78,.06) 100%),
+    url("/assets/img/plantao/emergencia-card-bg.webp")!important;
+  background-repeat:no-repeat,no-repeat!important;
+  background-position:left center,right center!important;
+  background-size:100% 100%,50% 100%!important;
 }
 html[data-theme="leila-mood"] body.plantao-module-entry .plantao-featured-case,
 html[data-theme="pink-mood"] body.plantao-module-entry .plantao-featured-case,
 html[data-theme="pink"] body.plantao-module-entry .plantao-featured-case{
-  background:
-    linear-gradient(90deg,rgba(92,24,67,.93) 0%,rgba(126,40,88,.80) 42%,rgba(177,63,116,.25) 68%,rgba(177,63,116,.05) 100%),
-    url("/assets/img/plantao/emergencia-card-bg-pink.webp") center/cover no-repeat!important;
+  background-color:color-mix(in srgb,var(--accent) 74%,black 26%)!important;
+  background-image:
+    linear-gradient(90deg,rgba(92,24,67,.95) 0%,rgba(126,40,88,.88) 42%,rgba(177,63,116,.34) 58%,rgba(177,63,116,.05) 100%),
+    url("/assets/img/plantao/emergencia-card-bg-pink.webp")!important;
+  background-repeat:no-repeat,no-repeat!important;
+  background-position:left center,right center!important;
+  background-size:100% 100%,50% 100%!important;
 }
 /* A fotografia passa a ser a arte do card; evita a ilustração HTML duplicada sobre ela. */
 body.plantao-module-entry .plantao-featured-art{
