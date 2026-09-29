@@ -25,3 +25,54 @@
   .score-purpose{font-size:11px!important;line-height:1.4!important}
   .score-purpose-box{margin:12px 14px 0;padding:10px 11px;font-size:10.5px}
 }
+
+
+/* v1.3 — card inteiro clicável; proteção contra regra global de botões */
+.score-card{
+  display:block!important;
+  padding:0!important;
+  min-height:96px!important;
+  overflow:hidden;
+}
+.score-card-main{
+  appearance:none!important;
+  display:grid!important;
+  grid-template-columns:48px minmax(0,1fr) 32px!important;
+  align-items:center!important;
+  justify-content:stretch!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:96px!important;
+  margin:0!important;
+  padding:12px!important;
+  border:0!important;
+  border-radius:inherit!important;
+  background:transparent!important;
+  color:inherit!important;
+  text-align:left!important;
+  cursor:pointer!important;
+  box-sizing:border-box!important;
+}
+.score-card-main > .score-code{
+  text-align:center!important;
+}
+.score-card-main > .score-card-copy,
+.score-card-main > .score-card-copy strong,
+.score-card-main > .score-card-copy p,
+.score-card-main > .score-card-copy span{
+  text-align:left!important;
+}
+.score-card-main > .score-arrow{
+  text-align:center!important;
+  justify-self:end!important;
+}
+.score-card-main:focus-visible{
+  outline:3px solid var(--accent-soft)!important;
+  outline-offset:-3px!important;
+}
+@media(max-width:760px){
+  .score-card,
+  .score-card-main{
+    min-height:90px!important;
+  }
+}
