@@ -7478,3 +7478,22 @@ html[data-theme="pink"] body.plantao-module-entry .plantao-featured-case{
     color-mix(in srgb,var(--accent) 75%,#35152d)
   )!important;
 }
+
+
+/* Sala de Emergência v52 — revela o pattern global da LURIA como nas demais páginas */
+body.plantao-module-entry{
+  background:var(--bg)!important;
+}
+body.plantao-module-entry .app-shell,
+body.plantao-module-entry .main,
+body.plantao-module-entry .page.plantao-page,
+body.plantao-module-entry #plantao-library{
+  background:transparent!important;
+}
+body.plantao-module-entry .app-shell,
+body.plantao-module-entry .main,
+body.plantao-module-entry .page.plantao-page,
+body.plantao-module-entry #plantao-library{
+  position:relative!important;
+  z-index:1!important;
+}
