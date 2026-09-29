@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
   <link rel="stylesheet" href="assets/css/caderno.css?v=24.9-back-button">
-  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=58-static-topbar">
+  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=59-content-aligned">
     <style>
     /* Anotações v25 — topo alinhado ao padrão Prática Clínica/Questões */
     body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar{
@@ -51,7 +51,7 @@
       body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar .luria-notifications{
         position:fixed!important;
         top:10px!important;
-        right:34px!important;
+        right:var(--luria-top-controls-right,34px)!important;
         left:auto!important;
         margin:0!important;
         display:flex!important;
@@ -539,7 +539,7 @@
 
   <script src="assets/js/supabase.js"></script>
   <script src="assets/js/pdf-branding.js?v=1"></script>
-  <script src="assets/js/app.js?v=17.39-static-topbar"></script>
+  <script src="assets/js/app.js?v=17.40-content-aligned"></script>
   <script src="assets/js/sharing.js?v=4"></script>
   <style>
     .notebook-pdf-export-host {
