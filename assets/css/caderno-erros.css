@@ -3479,3 +3479,23 @@ body[data-page="erros"] .error-metric-card{
     margin-top:0!important;
   }
 }
+
+
+/* v18.23 — topo final conforme referência visual */
+@media(min-width:981px){
+  body[data-page="erros"] .page{
+    padding-top:0!important;
+  }
+  body[data-page="erros"] .page > .topbar{
+    position:relative!important;
+    inset:auto!important;
+    height:72px!important;
+    min-height:72px!important;
+    max-height:72px!important;
+    margin:0 0 18px!important;
+    padding:0!important;
+  }
+  body[data-page="erros"] .page > .topbar + *{
+    margin-top:0!important;
+  }
+}
