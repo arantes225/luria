@@ -4354,3 +4354,25 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     box-sizing:border-box!important;
   }
 }
+
+
+/* Dashboard v62 — trava a largura após a ativação tardia do layout */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    min-width:0!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] .page{
+    width:auto!important;
+    max-width:1320px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-grid,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-layout-1{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+}
