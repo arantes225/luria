@@ -3860,6 +3860,21 @@ function ensureNotificationCenter() {
     button.addEventListener("click", () => setTimerView(button.dataset.luriaTimerView));
   });
 
+  const resolveTimerModeFromInput = () => {
+    const raw = String(timerDurationInput?.value ?? "").trim();
+    const requestedMinutes = raw === "" ? null : Number(raw);
+
+    if (requestedMinutes !== null && Number.isFinite(requestedMinutes) && requestedMinutes > 0) {
+      stopwatchCountdownSeconds = Math.round(requestedMinutes * 60);
+      if (pomodoroStateLabel) pomodoroStateLabel.textContent = "Timer";
+      return "countdown";
+    }
+
+    stopwatchCountdownSeconds = null;
+    if (pomodoroStateLabel) pomodoroStateLabel.textContent = "Cronômetro";
+    return "stopwatch";
+  };
+
   stopwatchStart?.addEventListener("click", () => {
     if (stopwatchInterval) {
       stopwatchElapsedMs = currentStopwatchMs();
@@ -3869,10 +3884,11 @@ function ensureNotificationCenter() {
       renderStopwatch();
       return;
     }
+
     if (stopwatchElapsedMs === 0) {
-      const requestedMinutes = Number(timerDurationInput?.value || 0);
-      stopwatchCountdownSeconds = requestedMinutes > 0 ? Math.round(requestedMinutes * 60) : null;
+      resolveTimerModeFromInput();
     }
+
     stopwatchStartedAt = Date.now();
     stopwatchInterval = setInterval(renderStopwatch, 250);
     renderStopwatch();
@@ -3885,6 +3901,10 @@ function ensureNotificationCenter() {
     stopwatchElapsedMs = 0;
     stopwatchCountdownSeconds = null;
     if (pomodoroStatus) pomodoroStatus.textContent = "";
+    if (pomodoroStateLabel) {
+      const raw = String(timerDurationInput?.value ?? "").trim();
+      pomodoroStateLabel.textContent = raw ? "Timer" : "Cronômetro";
+    }
     renderStopwatch();
   });
 
