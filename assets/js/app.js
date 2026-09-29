@@ -597,6 +597,27 @@
       align-items:flex-start !important;
       overflow:visible !important;
     }
+
+    /* Perfil global: mesma posição horizontal em todas as páginas. */
+    @media (min-width:981px) {
+      .topbar .luria-notifications {
+        position:fixed !important;
+        top:18px !important;
+        right:34px !important;
+        left:auto !important;
+        margin-left:0 !important;
+        z-index:245 !important;
+      }
+    }
+
+    /* Iniciais: peso forte padronizado em todo o LURIA. */
+    .luria-profile-toggle,
+    .user-avatar {
+      font-weight:950 !important;
+      letter-spacing:-.045em !important;
+      font-family:inherit !important;
+      font-variant-numeric:normal !important;
+    }
     .topbar .page-heading {
       align-self:flex-start !important;
     }
