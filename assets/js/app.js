@@ -6315,6 +6315,22 @@ async function iniciarApp() {
     if (fallbackEyebrow) fallbackEyebrow.textContent = info.eyebrow;
   }
 
+  // Subtítulo curto dentro do card de título, no padrão do Cronograma.
+  document
+    .querySelectorAll(".luria-page-spotlight-copy")
+    .forEach((copy) => {
+      let label = copy.querySelector(".luria-page-spotlight-label");
+
+      if (!label) {
+        label = document.createElement("span");
+        label.className = "luria-page-spotlight-label";
+        copy.prepend(label);
+      }
+
+      label.textContent = info.eyebrow || "";
+      label.hidden = !info.eyebrow;
+    });
+
   // Logout resiliente a re-renderizações da sidebar.
   // A sidebar é substituída após carregar perfil/permissões; por isso o listener
   // precisa ficar em um ancestral estável, não no botão que é recriado.
