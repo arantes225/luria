@@ -591,6 +591,11 @@
     .luria-pomodoro-top { margin-right:2px; }
     #luria-notification-toggle { margin-right:4px; }
 
+    /* Cabeçalho global: Timer + notificações + perfil 10px mais altos. */
+    .topbar .luria-notifications {
+      transform:translateY(-10px) !important;
+    }
+
     /* Cabeçalho global: Timer + sino + conta usam a mesma altura de Configurações em todas as páginas. */
     @media (min-width:981px) {
       .topbar {
@@ -602,7 +607,7 @@
       }
       .topbar .luria-notifications {
         position:relative !important;
-        top:8px !important;
+        top:0 !important;
         align-self:flex-start !important;
       }
     }
