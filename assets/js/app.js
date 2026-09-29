@@ -3585,9 +3585,13 @@ function ensureNotificationCenter() {
             <circle cx="12" cy="14" r="8"></circle>
           </svg>
         </span>
-        <span class="luria-pomodoro-copy">
-          <strong>Timer</strong>
-          <small id="luria-pomodoro-mini-time">00:00</small>
+        <span class="luria-pomodoro-copy luria-timer-compact" aria-label="Timer 00 horas 00 minutos 00 segundos">
+          <span class="luria-timer-hm">
+            <strong id="luria-timer-hours">00</strong>
+            <strong id="luria-timer-minutes">00</strong>
+          </span>
+          <small id="luria-timer-seconds">00</small>
+          <span id="luria-pomodoro-mini-time" class="luria-timer-sr-only">00:00:00</span>
         </span>
       </button>
 
@@ -3754,6 +3758,9 @@ function ensureNotificationCenter() {
   const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
   const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
   const pomodoroMiniTime = document.getElementById("luria-pomodoro-mini-time");
+  const timerHours = document.getElementById("luria-timer-hours");
+  const timerMinutes = document.getElementById("luria-timer-minutes");
+  const timerSeconds = document.getElementById("luria-timer-seconds");
   const pomodoroTime = document.getElementById("luria-pomodoro-time");
   const pomodoroStateLabel = document.getElementById("luria-pomodoro-state-label");
   const pomodoroStart = document.getElementById("luria-pomodoro-start");
@@ -3802,10 +3809,23 @@ function ensureNotificationCenter() {
     return Math.max(0, stopwatchCountdownSeconds - elapsed);
   };
 
+  const renderCompactTopTimer = (totalSeconds) => {
+    const safe = Math.max(0, Math.floor(totalSeconds));
+    const h = String(Math.floor(safe / 3600)).padStart(2, "0");
+    const m = String(Math.floor((safe % 3600) / 60)).padStart(2, "0");
+    const s = String(safe % 60).padStart(2, "0");
+    if (timerHours) timerHours.textContent = h;
+    if (timerMinutes) timerMinutes.textContent = m;
+    if (timerSeconds) timerSeconds.textContent = s;
+    if (pomodoroMiniTime) pomodoroMiniTime.textContent = h + ":" + m + ":" + s;
+    const compact = pomodoroMiniTime?.closest(".luria-timer-compact");
+    if (compact) compact.setAttribute("aria-label", `Timer ${h} horas ${m} minutos ${s} segundos`);
+  };
+
   const renderStopwatch = () => {
     const label = formatClock(currentTimerSeconds(), true);
     if (stopwatchTime) stopwatchTime.textContent = label;
-    if (activeTimerView === "timer" && pomodoroMiniTime) pomodoroMiniTime.textContent = label;
+    if (activeTimerView === "timer") renderCompactTopTimer(currentTimerSeconds());
     if (stopwatchStart) stopwatchStart.textContent = stopwatchInterval ? "Pausar" : "Iniciar";
     if (stopwatchInterval && stopwatchCountdownSeconds !== null && currentTimerSeconds() <= 0) {
       clearInterval(stopwatchInterval); stopwatchInterval = null; stopwatchStartedAt = 0;
@@ -3835,7 +3855,7 @@ function ensureNotificationCenter() {
     const m = String(Math.floor(pomodoroRemaining / 60)).padStart(2, "0");
     const s = String(pomodoroRemaining % 60).padStart(2, "0");
     const label = m + ":" + s;
-    if (activeTimerView === "pomodoro" && pomodoroMiniTime) pomodoroMiniTime.textContent = label;
+    if (activeTimerView === "pomodoro") renderCompactTopTimer(pomodoroRemaining);
     if (pomodoroTime) pomodoroTime.textContent = label;
     if (activeTimerView === "pomodoro" && pomodoroStateLabel) pomodoroStateLabel.textContent = pomodoroMode === "focus" ? "Foco" : "Pausa";
     if (pomodoroStart) pomodoroStart.textContent = pomodoroTimer ? "Pausar" : "Iniciar";
@@ -7203,6 +7223,91 @@ iniciarApp();
       body:not([data-page="dashboard"]) .topbar .luria-pomodoro-copy{
         width:auto!important;
         min-width:0!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
+
+
+/* Compact vertical timer internals v38 — keeps outer callout size unchanged */
+(function ensureCompactVerticalTimerV38(){
+  if(document.getElementById("luria-compact-vertical-timer-v38")) return;
+  const style=document.createElement("style");
+  style.id="luria-compact-vertical-timer-v38";
+  style.textContent=`
+    .luria-pomodoro-toggle{
+      overflow:hidden!important;
+    }
+
+    .luria-pomodoro-toggle .luria-timer-compact{
+      position:relative!important;
+      display:grid!important;
+      grid-template-columns:auto 18px!important;
+      grid-template-rows:1fr!important;
+      align-items:center!important;
+      column-gap:4px!important;
+      width:auto!important;
+      min-width:0!important;
+      height:32px!important;
+      line-height:1!important;
+      margin:0!important;
+    }
+
+    .luria-pomodoro-toggle .luria-timer-hm{
+      display:flex!important;
+      flex-direction:column!important;
+      justify-content:center!important;
+      gap:0!important;
+      height:32px!important;
+      min-height:32px!important;
+      line-height:.86!important;
+    }
+
+    .luria-pomodoro-toggle .luria-timer-hm > strong{
+      display:block!important;
+      margin:0!important;
+      padding:0!important;
+      font-size:14px!important;
+      font-weight:900!important;
+      line-height:.86!important;
+      letter-spacing:-.02em!important;
+      color:currentColor!important;
+      font-variant-numeric:tabular-nums!important;
+    }
+
+    .luria-pomodoro-toggle #luria-timer-seconds{
+      position:relative!important;
+      display:block!important;
+      align-self:center!important;
+      justify-self:start!important;
+      margin:0!important;
+      padding:0!important;
+      font-size:8px!important;
+      font-weight:850!important;
+      line-height:1!important;
+      color:var(--muted)!important;
+      font-variant-numeric:tabular-nums!important;
+      transform:translateY(0)!important;
+    }
+
+    .luria-pomodoro-toggle .luria-timer-sr-only{
+      position:absolute!important;
+      width:1px!important;
+      height:1px!important;
+      padding:0!important;
+      margin:-1px!important;
+      overflow:hidden!important;
+      clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;
+      border:0!important;
+    }
+
+    /* Não altera dimensões externas já aprovadas. */
+    @media(min-width:981px){
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-toggle{
+        height:43px!important;
+        min-height:43px!important;
       }
     }
   `;
