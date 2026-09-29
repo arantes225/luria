@@ -8693,29 +8693,50 @@ function formatStudyDuration(seconds=0){
   const total=Math.max(0,Math.round(Number(seconds)||0)), h=Math.floor(total/3600), m=Math.floor((total%3600)/60);
   return h ? h+"h "+String(m).padStart(2,"0")+"min" : m+"min";
 }
-async function renderScheduleStudyInsights(){
+async function renderScheduleStudyInsights(period){
   const totalEl=document.getElementById("agenda-study-total"), barsEl=document.getElementById("agenda-study-bars"), donut=document.getElementById("agenda-category-donut"), donutTotal=document.getElementById("agenda-category-total"), legend=document.getElementById("agenda-category-legend");
   if(!totalEl||!barsEl||!donut||!legend||!scheduleState.user?.id) return;
-  const today=startOfDaySchedule(new Date()), start=startOfWeekSchedule(today), end=addDaysSchedule(start,7);
+  scheduleState.insightPeriod=period||scheduleState.insightPeriod||"week";
+  const mode=scheduleState.insightPeriod, today=startOfDaySchedule(new Date());
+  let start, end, labels=[], bucketIndex;
+  if(mode==="month"){
+    start=new Date(today.getFullYear(),today.getMonth(),1); end=new Date(today.getFullYear(),today.getMonth()+1,1);
+    const days=Math.round((end-start)/86400000); labels=Array.from({length:days},(_,i)=>String(i+1));
+    bucketIndex=d=>Math.floor((startOfDaySchedule(d)-start)/86400000);
+  }else if(mode==="year"){
+    start=new Date(today.getFullYear(),0,1); end=new Date(today.getFullYear()+1,0,1);
+    labels=["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"];
+    bucketIndex=d=>d.getFullYear()===today.getFullYear()?d.getMonth():-1;
+  }else{
+    start=startOfWeekSchedule(today); end=addDaysSchedule(start,7);
+    labels=["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
+    bucketIndex=d=>Math.round((startOfDaySchedule(d)-start)/86400000);
+  }
+  document.querySelectorAll(".agenda-insight-tabs").forEach(tabs=>tabs.querySelectorAll("[data-period]").forEach(btn=>btn.classList.toggle("active",btn.dataset.period===mode)));
+  const periodLabel=mode==="month"?"Neste mês":mode==="year"?"Neste ano":"Nesta semana";
+  const periodText=totalEl.parentElement?.querySelector("span"); if(periodText)periodText.textContent=periodLabel;
   const {data,error}=await scheduleSb.from("study_sessions").select("started_at,duration_seconds,activity_kind,area,materia").eq("user_id",scheduleState.user.id).gte("started_at",start.toISOString()).lt("started_at",end.toISOString());
   if(error){console.warn("LURIA: não foi possível carregar tempo do cronograma",error);return;}
-  const rows=data||[], days=Array(7).fill(0), byCategory=new Map();
+  const rows=data||[], buckets=Array(labels.length).fill(0), byCategory=new Map();
   rows.forEach(row=>{
-    const sec=Math.max(0,Number(row.duration_seconds)||0), d=startOfDaySchedule(new Date(row.started_at)), idx=Math.round((d-start)/86400000);
-    if(idx>=0&&idx<7) days[idx]+=sec;
+    const sec=Math.max(0,Number(row.duration_seconds)||0), d=new Date(row.started_at), idx=bucketIndex(d);
+    if(idx>=0&&idx<buckets.length)buckets[idx]+=sec;
     const label=(row.area||row.materia||({lesson:"Aulas",questions:"Questões",external_questions:"Questões",flashcards:"Flashcards",simulation:"Simulados",study:"Estudo"}[row.activity_kind])||"Outros");
     byCategory.set(label,(byCategory.get(label)||0)+sec);
   });
-  const total=days.reduce((a,b)=>a+b,0), max=Math.max(...days,1), dayNames=["Seg","Ter","Qua","Qui","Sex","Sáb","Dom"];
-  totalEl.textContent=formatStudyDuration(total); if(donutTotal) donutTotal.textContent=formatStudyDuration(total);
-  barsEl.innerHTML=days.map((sec,i)=>'<div class="agenda-study-day"><span class="agenda-study-value">'+(sec?formatStudyDuration(sec):"")+'</span><span class="agenda-study-bar-track"><i class="agenda-study-bar" style="height:'+Math.max(sec?5:2,Math.round(sec/max*100))+'%"></i></span><span class="agenda-study-label">'+dayNames[i]+'</span></div>').join("");
+  const total=buckets.reduce((a,b)=>a+b,0), max=Math.max(...buckets,1);
+  totalEl.textContent=formatStudyDuration(total); if(donutTotal)donutTotal.textContent=formatStudyDuration(total);
+  barsEl.style.gridTemplateColumns="repeat("+labels.length+",minmax(0,1fr))";
+  barsEl.innerHTML=buckets.map((sec,i)=>'<div class="agenda-study-day"><span class="agenda-study-value">'+(sec?formatStudyDuration(sec):"")+'</span><span class="agenda-study-bar-track"><i class="agenda-study-bar" style="height:'+Math.max(sec?5:2,Math.round(sec/max*100))+'%"></i></span><span class="agenda-study-label">'+labels[i]+'</span></div>').join("");
   const palette=["var(--chart-1)","var(--chart-2)","var(--chart-3)","var(--chart-4)","var(--chart-5)"], cats=[...byCategory.entries()].sort((a,b)=>b[1]-a[1]).slice(0,5), catTotal=cats.reduce((a,x)=>a+x[1],0);
-  if(!catTotal){donut.style.background="conic-gradient(var(--border) 0 100%)";legend.innerHTML='<span class="agenda-empty">Sem tempo registrado.</span>';return;}
-  let cursor=0; const segs=cats.map(([label,sec],i)=>{const a=cursor,b=cursor+sec/catTotal*100;cursor=b;return palette[i]+" "+a+"% "+b+"%";});
-  donut.style.background="conic-gradient("+segs.join(",")+")";
-  legend.innerHTML=cats.map(([label,sec],i)=>'<div class="agenda-category-item"><i class="agenda-category-dot" style="background:'+palette[i]+'"></i><span class="agenda-category-copy"><strong>'+escapeScheduleHtml(label)+'</strong><span>'+formatStudyDuration(sec)+'</span></span><span class="agenda-category-pct">'+Math.round(sec/catTotal*100)+'%</span></div>').join("");
+  if(!catTotal){donut.style.background="conic-gradient(var(--border) 0 100%)";legend.innerHTML='<span class="agenda-empty">Sem tempo registrado.</span>';}
+  else{
+    let cursor=0; const segs=cats.map(([label,sec],i)=>{const a=cursor,b=cursor+sec/catTotal*100;cursor=b;return palette[i]+" "+a+"% "+b+"%";});
+    donut.style.background="conic-gradient("+segs.join(",")+")";
+    legend.innerHTML=cats.map(([label,sec],i)=>'<div class="agenda-category-item"><i class="agenda-category-dot" style="background:'+palette[i]+'"></i><span class="agenda-category-copy"><strong>'+escapeScheduleHtml(label)+'</strong><span>'+formatStudyDuration(sec)+'</span></span><span class="agenda-category-pct">'+Math.round(sec/catTotal*100)+'%</span></div>').join("");
+  }
+  document.querySelectorAll(".agenda-insight-tabs [data-period]").forEach(btn=>btn.onclick=()=>renderScheduleStudyInsights(btn.dataset.period));
 }
-
 async function loadTopics() {
   const [
     topicsResult,
