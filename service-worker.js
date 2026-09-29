@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v208-qs-next-library";
+const CACHE_VERSION = "luria-pwa-v214-work-eyebrows";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -22,7 +22,7 @@ const APP_SHELL = [
   "/assets/css/luria-brand-v5.css?v=64-fine-left",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=17.43-short-eyebrows",
+  "/assets/js/app.js?v=17.44-work-eyebrows",
   "/assets/js/pwa.js?v=4-force-refresh",
   "/assets/js/weekly-content.js?v=1",
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
