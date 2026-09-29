@@ -4397,3 +4397,25 @@ small,
     font-size:15px!important;
   }
 }
+
+
+/* v2026.09.29 — BOTÕES VOLTAR = SWITCHES */
+.luria-back-switch-btn{
+  min-height:var(--luria-switch-height,42px)!important;
+  height:var(--luria-switch-height,42px)!important;
+  padding:0 var(--luria-switch-pad-x,21px)!important;
+  border-radius:var(--luria-switch-radius,7px)!important;
+  font-size:15px!important;
+  line-height:1!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:700px){
+  .luria-back-switch-btn{
+    min-height:var(--luria-switch-height,42px)!important;
+    height:var(--luria-switch-height,42px)!important;
+    font-size:15px!important;
+  }
+}
