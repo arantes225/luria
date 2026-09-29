@@ -699,7 +699,7 @@
                 <span>${esc(featured.setting||"Sala de emergência")}</span>
               </div>
             </div>
-            <button class="plantao-featured-start" type="button" data-start-case="${esc(featured.id)}">Selecionar caso ›</button>
+            <button class="button primary plantao-featured-start" type="button" data-start-case="${esc(featured.id)}">Selecionar caso</button>
           </div>
         `;
       }
