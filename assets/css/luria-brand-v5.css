@@ -130,3 +130,87 @@
     will-change:auto!important;
   }
 }
+
+
+/* LURIA v58 — topbar estático e uniforme */
+@media (min-width:981px){
+  body:not([data-page="dashboard"]) .topbar{
+    min-height:60px!important;
+    height:auto!important;
+    margin:0 0 16px!important;
+    align-items:flex-start!important;
+    overflow:visible!important;
+  }
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    position:fixed!important;
+    top:10px!important;
+    right:34px!important;
+    bottom:auto!important;
+    left:auto!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    transition:none!important;
+    animation:none!important;
+    z-index:245!important;
+  }
+  body:not([data-page="dashboard"]) .luria-pomodoro-toggle{
+    min-width:164px!important;
+    height:48px!important;
+    min-height:48px!important;
+    padding:0 14px!important;
+    gap:10px!important;
+    border-radius:12px!important;
+    box-sizing:border-box!important;
+  }
+  body:not([data-page="dashboard"]) .luria-pomodoro-icon,
+  body:not([data-page="dashboard"]) .luria-pomodoro-icon svg{
+    width:22px!important;
+    height:22px!important;
+  }
+  body:not([data-page="dashboard"]) .luria-pomodoro-copy strong{
+    font-size:13px!important;
+  }
+  body:not([data-page="dashboard"]) .luria-pomodoro-copy small{
+    font-size:11px!important;
+  }
+  body:not([data-page="dashboard"]) .luria-notification-toggle,
+  body:not([data-page="dashboard"]) .luria-profile-toggle{
+    width:48px!important;
+    height:48px!important;
+    min-width:48px!important;
+    min-height:48px!important;
+    border-radius:12px!important;
+    box-sizing:border-box!important;
+  }
+  body:not([data-page="dashboard"]) .luria-notification-toggle svg,
+  body:not([data-page="dashboard"]) #luria-notification-toggle svg{
+    width:20px!important;
+    height:20px!important;
+  }
+  body:not([data-page="dashboard"]) .luria-profile-toggle{
+    font-size:17px!important;
+  }
+}
+body[data-page="caderno"] .notebook-topbar{
+  position:relative!important;
+  top:auto!important;
+  z-index:auto!important;
+  background:transparent!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  margin:0 0 16px!important;
+}
+body[data-page="caderno"] .notebook-save-status{
+  position:absolute!important;
+  left:0!important;
+  top:64px!important;
+  margin:0!important;
+  pointer-events:none!important;
+}
+body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
+  margin:0 0 16px!important;
+}
