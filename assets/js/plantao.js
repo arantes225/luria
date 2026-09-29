@@ -596,8 +596,10 @@
     const countEl=$("plantao-case-count");
     const sessionEl=$("plantao-session-count");
     const visibleCount=$("plantao-visible-count");
+    const scopedCaseIds=new Set(baseCases.map(item=>String(item.id)));
+    const scopedSessions=state.sessions.filter(session=>scopedCaseIds.has(String(session.case_id)));
     if(countEl) countEl.textContent=baseCases.length;
-    if(sessionEl) sessionEl.textContent=state.sessions.length;
+    if(sessionEl) sessionEl.textContent=scopedSessions.length;
     if(visibleCount) visibleCount.textContent=state.libraryView==="home"
       ? visibleCases.length+" destaque"+(visibleCases.length===1?"":"s")
       : visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
@@ -613,7 +615,7 @@
     if(sideCaseCount) sideCaseCount.textContent=baseCases.length;
     if(sideActiveCount) sideActiveCount.textContent=state.activeSession ? "1" : "0";
 
-    const completedSessions=state.sessions.filter(x=>x.status==="completed");
+    const completedSessions=scopedSessions.filter(x=>x.status==="completed");
     const avgMinutes=completedSessions.length
       ? Math.round(completedSessions.reduce((sum,x)=>sum+Number(x.elapsed_minutes||0),0)/completedSessions.length)
       : 0;
@@ -658,6 +660,8 @@
     const chips=$("plantao-specialty-chips");
     const specialtySwitch=document.querySelector(".plantao-library-inner-switch");
     if(specialtySwitch) specialtySwitch.hidden=state.libraryView==="aph";
+    const specialtyFilter=document.querySelector('[data-plantao-filter="specialty"]')?.closest(".plantao-site-filter");
+    if(specialtyFilter) specialtyFilter.hidden=state.libraryView==="aph";
     if(chips){
       const preferred=[
         {label:"Todos",value:""},
