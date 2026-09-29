@@ -3357,3 +3357,27 @@ body[data-page="erros"] .error-metric-card{
 @media(max-width:1050px){
   .error-home-layout.review-mode{grid-template-columns:1fr!important}
 }
+
+
+/* v18.18 — Criar como item normal do switch */
+.error-tabs [data-error-tab="create"]{
+  min-height:var(--luria-switch-height,46px)!important;
+  height:var(--luria-switch-height,46px)!important;
+  padding:0 var(--luria-switch-pad-x,21px)!important;
+  border:0!important;
+  border-radius:var(--luria-switch-radius,10px)!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  box-shadow:none!important;
+  transform:none!important;
+  font-size:var(--luria-switch-font-size,16px)!important;
+  font-weight:400!important;
+}
+.error-tabs [data-error-tab="create"]:hover{
+  color:var(--text)!important;
+}
+.error-tabs [data-error-tab="create"].active{
+  background:var(--surface)!important;
+  color:var(--text)!important;
+  box-shadow:0 1px 5px rgba(20,25,35,.08)!important;
+}
