@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Beta Testers · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=4">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
+  <link rel="stylesheet" href="/assets/css/beta-testers.css?v=1">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="canonical" href="/beta-testers/">
+</head>
+<body data-page="beta_testers">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page beta-testers-page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading">
+            <span class="eyebrow" data-page-eyebrow></span>
+            <h1 data-page-title></h1>
+          </div>
+        </header>
+
+        <section class="beta-hero">
+          <div>
+            <span>Feedback periódico</span>
+            <h2>Beta Testers</h2>
+            <p>Respostas coletadas a cada 5 dias dos usuários Beta Tester.</p>
+          </div>
+          <div class="beta-count"><strong id="beta-feedback-count">—</strong><small>respostas</small></div>
+        </section>
+
+        <section class="beta-panel">
+          <div class="beta-toolbar">
+            <label class="beta-search">
+              <span>Buscar</span>
+              <input id="beta-search" type="search" placeholder="Tester, e-mail ou conteúdo..." autocomplete="off">
+            </label>
+            <button id="beta-refresh" class="button secondary" type="button">Atualizar</button>
+          </div>
+          <div id="beta-status" class="beta-status" aria-live="polite">Verificando acesso...</div>
+          <div id="beta-feedback-list" class="beta-feedback-list"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=17.38-beta-page"></script>
+  <script src="/assets/js/beta-testers.js?v=1"></script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
