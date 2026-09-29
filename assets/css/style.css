@@ -3497,3 +3497,168 @@ body.theme-dark .error-cat-spotlight{
     margin-bottom:14px!important;
   }
 }
+
+
+/* v2026.09.29 — switches/segmented controls maiores em todo o LURIA */
+:root{
+  --luria-switch-font-size: 11px;
+  --luria-switch-height: 40px;
+  --luria-switch-pad-x: 17px;
+  --luria-switch-radius: 10px;
+}
+
+/* Caderno de Erros */
+.error-main-tabs,
+.error-tabs,
+.error-state-switch{
+  min-height: 46px !important;
+  padding: 5px !important;
+  gap: 5px !important;
+  border-radius: 12px !important;
+}
+.error-main-tab,
+.error-tab,
+.error-state-switch > button{
+  min-height: var(--luria-switch-height) !important;
+  height: var(--luria-switch-height) !important;
+  padding: 0 var(--luria-switch-pad-x) !important;
+  border-radius: var(--luria-switch-radius) !important;
+  font-size: var(--luria-switch-font-size) !important;
+  line-height: 1.15 !important;
+}
+
+/* Flashcards */
+.flash-tabs{
+  min-height: 50px !important;
+  padding: 6px !important;
+  gap: 6px !important;
+  border-radius: 15px !important;
+}
+.flash-tab{
+  min-height: 40px !important;
+  padding: 0 18px !important;
+  border-radius: 10px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+.library-scope-tabs{
+  gap: 24px !important;
+}
+.library-scope-tab{
+  min-height: 40px !important;
+  padding: 0 5px 11px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+
+/* Questões e Simulados */
+.qs-mode-tabs{
+  min-height: 48px !important;
+  padding: 5px !important;
+  gap: 5px !important;
+  border-radius: 12px !important;
+}
+.qs-mode-tab{
+  min-height: 38px !important;
+  padding: 0 16px !important;
+  border-radius: 9px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+
+/* Anotações / Caderno */
+.notebook-tabs{
+  min-height: 48px !important;
+  gap: 10px !important;
+}
+.notebook-tab{
+  min-height: 40px !important;
+  padding: 0 18px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+
+/* Estatísticas */
+.stats-tabs-shell,
+.stats-range{
+  padding: 5px !important;
+  gap: 5px !important;
+  border-radius: 11px !important;
+}
+.stats-tab,
+.stats-range button{
+  min-height: 40px !important;
+  padding: 0 15px !important;
+  border-radius: 9px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+
+/* Cronograma e outros segmented controls reutilizados */
+.schedule-add-tabs,
+.segmented-control{
+  min-height: 46px !important;
+  padding: 5px !important;
+  gap: 5px !important;
+  border-radius: 12px !important;
+}
+.schedule-add-tab,
+.segmented-control > button{
+  min-height: 36px !important;
+  padding: 0 15px !important;
+  border-radius: 9px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+
+/* Famílias de switch/tab usadas em páginas auxiliares */
+.mode-tabs,
+.view-tabs,
+.section-tabs,
+.page-tabs,
+.scope-tabs,
+.switch-group,
+.view-switch,
+.mode-switch{
+  min-height: 46px !important;
+  padding: 5px !important;
+  gap: 5px !important;
+}
+.mode-tab,
+.view-tab,
+.section-tab,
+.page-tab,
+.scope-tab,
+.switch-group > button,
+.view-switch > button,
+.mode-switch > button{
+  min-height: 36px !important;
+  padding: 0 15px !important;
+  font-size: 11px !important;
+  line-height: 1.15 !important;
+}
+
+/* PWA: mantém usável sem encolher a tipografia dos switches */
+@media (max-width: 700px){
+  .error-main-tab,
+  .error-tab,
+  .error-state-switch > button,
+  .flash-tab,
+  .library-scope-tab,
+  .qs-mode-tab,
+  .notebook-tab,
+  .stats-tab,
+  .stats-range button,
+  .schedule-add-tab,
+  .segmented-control > button,
+  .mode-tab,
+  .view-tab,
+  .section-tab,
+  .page-tab,
+  .scope-tab,
+  .switch-group > button,
+  .view-switch > button,
+  .mode-switch > button{
+    font-size: 10.5px !important;
+  }
+}
