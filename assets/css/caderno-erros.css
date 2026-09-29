@@ -3444,3 +3444,18 @@ body[data-page="erros"] .error-metric-card{
     padding:0!important;
   }
 }
+
+
+/* v18.21 — regra final real: espaço visual Dashboard */
+@media(min-width:981px){
+  body[data-page="erros"] .page > .topbar{
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+    margin:0 0 34px!important;
+    padding:0!important;
+  }
+  body[data-page="erros"] .page > .topbar + *{
+    margin-top:0!important;
+  }
+}
