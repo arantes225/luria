@@ -3232,3 +3232,20 @@ body[data-page="erros"] .error-metric-card{
   color:var(--accent);
   outline:none;
 }
+
+
+/* v18.16 — switches acompanham a nova tipografia global */
+.error-state-switch button,
+.error-review-action-switch button{
+  font-size:17px!important;
+  min-height:42px!important;
+  height:42px!important;
+  padding-left:17px!important;
+  padding-right:17px!important;
+}
+@media(max-width:700px){
+  .error-state-switch button,
+  .error-review-action-switch button{
+    font-size:16px!important;
+  }
+}
