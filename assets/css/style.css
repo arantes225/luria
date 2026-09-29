@@ -3445,3 +3445,56 @@ body.auth-page>.auth-card{
   border-color:#184888!important;
   color:#fff!important;
 }
+
+
+/* LURIA v55 — cards/callouts superiores também unificados no tema escuro */
+:root[data-theme="dark"] .luria-page-spotlight,
+:root[data-theme="dark"] .daily-hero,
+:root[data-theme="dark"] .stats-hero,
+:root[data-theme="dark"] .flash-top-spotlight,
+:root[data-theme="dark"] .qs-v17-top,
+:root[data-theme="dark"] .error-cat-spotlight,
+body.theme-dark .luria-page-spotlight,
+body.theme-dark .daily-hero,
+body.theme-dark .stats-hero,
+body.theme-dark .flash-top-spotlight,
+body.theme-dark .qs-v17-top,
+body.theme-dark .error-cat-spotlight{
+  background:#184888!important;
+  background-color:#184888!important;
+  border-color:#184888!important;
+  color:#fff!important;
+}
+
+:root[data-theme="dark"] .luria-page-spotlight h1,
+:root[data-theme="dark"] .luria-page-spotlight h2,
+:root[data-theme="dark"] .luria-page-spotlight h3,
+:root[data-theme="dark"] .luria-page-spotlight p,
+:root[data-theme="dark"] .luria-page-spotlight small,
+:root[data-theme="dark"] .daily-hero h1,
+:root[data-theme="dark"] .daily-hero h2,
+:root[data-theme="dark"] .daily-hero h3,
+:root[data-theme="dark"] .daily-hero p,
+:root[data-theme="dark"] .daily-hero small,
+:root[data-theme="dark"] .stats-hero h1,
+:root[data-theme="dark"] .stats-hero h2,
+:root[data-theme="dark"] .stats-hero h3,
+:root[data-theme="dark"] .stats-hero p,
+:root[data-theme="dark"] .stats-hero small,
+:root[data-theme="dark"] .flash-top-spotlight h1,
+:root[data-theme="dark"] .flash-top-spotlight h2,
+:root[data-theme="dark"] .flash-top-spotlight h3,
+:root[data-theme="dark"] .flash-top-spotlight p,
+:root[data-theme="dark"] .flash-top-spotlight small,
+:root[data-theme="dark"] .qs-v17-top h1,
+:root[data-theme="dark"] .qs-v17-top h2,
+:root[data-theme="dark"] .qs-v17-top h3,
+:root[data-theme="dark"] .qs-v17-top p,
+:root[data-theme="dark"] .qs-v17-top small,
+:root[data-theme="dark"] .error-cat-spotlight h1,
+:root[data-theme="dark"] .error-cat-spotlight h2,
+:root[data-theme="dark"] .error-cat-spotlight h3,
+:root[data-theme="dark"] .error-cat-spotlight p,
+:root[data-theme="dark"] .error-cat-spotlight small{
+  color:#fff!important;
+}
