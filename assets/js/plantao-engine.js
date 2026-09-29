@@ -14,13 +14,26 @@
     return variant ? {...action,...variant} : action;
   }
   function success(item,state){return (item.completion_rules?.success_outcomes||[]).some(x=>state.outcomes.includes(x));}
+  function isAphCase(item){
+    return String(item?.setting||"")==="Ambulância / APH"
+      || String(item?.specialty||"")==="APH / Emergência"
+      || /^ambulancia-\d{3}$/i.test(String(item?.slug||""));
+  }
+  function isTraumaCase(item){
+    const t=String([item?.title,item?.debrief?.diagnosis,item?.summary,item?.presentation?.opening,item?.presentation?.chief_complaint].filter(Boolean).join(" "))
+      .normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+    return /trauma|atropel|acidente|queda|ferimento|arma de fogo|arma branca|fratura|luxacao|hemotorax traum|pneumotorax traum|tce|traumatismo|politrauma|hemorragia arterial de extremidade/.test(t);
+  }
   function requiredActions(item){
-    const configured=Array.isArray(item.completion_rules?.required_actions)?item.completion_rules.required_actions.filter(Boolean):[];
+    const configuredRaw=Array.isArray(item.completion_rules?.required_actions)?item.completion_rules.required_actions.filter(Boolean):[];
+    const configured=(isAphCase(item)&&!isTraumaCase(item))
+      ? configuredRaw.filter(id=>id!=="abcde")
+      : configuredRaw;
     if(configured.length) return [...new Set(configured)];
     const t=String([item.title,item.debrief?.diagnosis,item.summary,item.presentation?.opening].filter(Boolean).join(" ")).normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
     const ids=[];
     const add=(...xs)=>ids.push(...xs);
-    const trauma=/trauma|fratura|luxacao|contusao|ferimento|queda|queimadura|mordedura|escoriacao/.test(t);
+    const trauma=isTraumaCase(item);
     const unstable=/choque|instavel|parada cardiorrespiratoria|pcr|insuficiencia respiratoria grave|edema agudo de pulmao|hemorragia importante/.test(t);
     if(trauma) add("abcde");
     if(unstable) add("monitor");
