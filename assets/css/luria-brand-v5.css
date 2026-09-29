@@ -111,7 +111,7 @@
 
 /* LURIA v57 — posição global estável dos controles superiores */
 :root{
-  --luria-top-controls-top:0px;
+  --luria-top-controls-top:10px;
   --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
 }
 @media (min-width:981px){
@@ -242,6 +242,19 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
     --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
   body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    right:var(--luria-top-controls-right)!important;
+  }
+}
+
+
+/* LURIA v61 — restaura altura anterior e mantém deslocamento à esquerda */
+@media (min-width:981px){
+  :root{
+    --luria-top-controls-top:10px;
+    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+  }
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    top:var(--luria-top-controls-top)!important;
     right:var(--luria-top-controls-right)!important;
   }
 }
