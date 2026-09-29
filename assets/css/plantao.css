@@ -4125,8 +4125,14 @@ body[data-page="plantao"] .plantao-module-back:hover::before{
 .plantao-module-entry .plantao-filter-row{display:none!important}
 .plantao-module-entry .plantao-quick-grid{max-width:1420px;margin:0 auto;padding:0 34px 14px;display:grid!important;grid-template-columns:minmax(0,3.2fr) minmax(280px,1fr)!important;gap:14px!important}
 .plantao-module-entry #plantao-resume-card{display:none!important}
-.plantao-featured-case{position:relative;min-height:205px;border-radius:14px;overflow:hidden;background:#0e3a69 var(--featured-image,none) center/cover no-repeat;box-shadow:0 8px 20px rgba(17,48,82,.10)}
+.plantao-featured-case{position:relative;min-height:205px;border-radius:14px;overflow:hidden;background:#0e3a69 url("/assets/img/plantao/emergencia-card-bg.webp") center/cover no-repeat;box-shadow:0 8px 20px rgba(17,48,82,.10)}
 .plantao-featured-case:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,33,65,.96) 0%,rgba(8,42,78,.87) 44%,rgba(8,42,78,.16) 100%)}
+html[data-theme="leila-mood"] .plantao-featured-case,
+html[data-theme="pink-mood"] .plantao-featured-case,
+html[data-theme="pink"] .plantao-featured-case{background-image:url("/assets/img/plantao/emergencia-card-bg-pink.webp")}
+html[data-theme="leila-mood"] .plantao-featured-case:before,
+html[data-theme="pink-mood"] .plantao-featured-case:before,
+html[data-theme="pink"] .plantao-featured-case:before{background:linear-gradient(90deg,rgba(92,24,67,.96) 0%,rgba(126,40,88,.86) 44%,rgba(177,63,116,.16) 100%)}
 .plantao-featured-inner{position:relative;z-index:1;min-height:205px;padding:18px 22px;color:#fff;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto 1fr auto;gap:10px}
 .plantao-featured-top{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;align-items:center}.plantao-featured-label{color:#ffd84d;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.05em}.plantao-featured-meta{font-size:9px;font-weight:800;color:#f7fbff}
 .plantao-featured-copy{align-self:end;max-width:720px}.plantao-featured-copy h2{margin:0 0 7px;font-size:22px;line-height:1.05}.plantao-featured-copy p{margin:0;max-width:620px;color:#e8f2fb;font-size:10px;line-height:1.45}
