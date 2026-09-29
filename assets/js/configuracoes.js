@@ -42,6 +42,18 @@ function setProfileStatus(text, type = "") {
 }
 
 
+function normalizeUsername(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9._-]/g, "")
+    .slice(0, 30);
+}
+
+function validUsername(value) {
+  return /^[a-z0-9][a-z0-9._-]{2,29}$/.test(String(value || ""));
+}
+
 const PROFILE_GENDER_OPTIONS = [
   { value: "", label: "Selecione" },
   { value: "male", label: "Masculino" },
