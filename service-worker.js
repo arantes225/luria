@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v210-short-eyebrows";
+const CACHE_VERSION = "luria-pwa-v211-top-height-restored";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -19,7 +19,7 @@ const APP_SHELL = [
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/css/style.css?v=16.13-font-uniform",
-  "/assets/css/luria-brand-v5.css?v=61-top-controls-aligned",
+  "/assets/css/luria-brand-v5.css?v=62-top-height-restored",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=17.43-short-eyebrows",
