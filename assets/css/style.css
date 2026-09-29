@@ -3501,7 +3501,7 @@ body.theme-dark .error-cat-spotlight{
 
 /* v2026.09.29 — switches/segmented controls maiores em todo o LURIA */
 :root{
-  --luria-switch-font-size: 14px;
+  --luria-switch-font-size: 17px;
   --luria-switch-height: 46px;
   --luria-switch-pad-x: 21px;
   --luria-switch-radius: 10px;
@@ -3659,7 +3659,7 @@ body.theme-dark .error-cat-spotlight{
   .switch-group > button,
   .view-switch > button,
   .mode-switch > button{
-    font-size: 13px !important;
+    font-size: 16px !important;
   }
 }
 
@@ -3737,4 +3737,64 @@ button,
 .button,
 [role="button"]{
   line-height:1.2 !important;
+}
+
+
+/* v2026.09.29b — tipografia global reforçada para switches/tabs */
+:is(
+  .error-main-tab,
+  .error-tab,
+  .error-state-switch > button,
+  .error-review-action-switch > button,
+  .flash-tab,
+  .library-scope-tab,
+  .qs-mode-tab,
+  .notebook-tab,
+  .stats-tab,
+  .stats-range > button,
+  .schedule-add-tab,
+  .segmented-control > button,
+  .mode-tab,
+  .view-tab,
+  .section-tab,
+  .page-tab,
+  .scope-tab,
+  .switch-group > button,
+  .view-switch > button,
+  .mode-switch > button,
+  [role="tablist"] > button,
+  [role="tablist"] [role="tab"]
+){
+  font-size:17px!important;
+  font-weight:800!important;
+  line-height:1.15!important;
+}
+
+@media(max-width:700px){
+  :is(
+    .error-main-tab,
+    .error-tab,
+    .error-state-switch > button,
+    .error-review-action-switch > button,
+    .flash-tab,
+    .library-scope-tab,
+    .qs-mode-tab,
+    .notebook-tab,
+    .stats-tab,
+    .stats-range > button,
+    .schedule-add-tab,
+    .segmented-control > button,
+    .mode-tab,
+    .view-tab,
+    .section-tab,
+    .page-tab,
+    .scope-tab,
+    .switch-group > button,
+    .view-switch > button,
+    .mode-switch > button,
+    [role="tablist"] > button,
+    [role="tablist"] [role="tab"]
+  ){
+    font-size:16px!important;
+  }
 }
