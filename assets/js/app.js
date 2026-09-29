@@ -652,6 +652,63 @@
       }
     }
 
+    /* v17.37 — controles superiores +20% e alinhados ao card da página.
+       Dashboard mantém seu cabeçalho próprio. */
+    @media (min-width:981px) {
+      body:not([data-page="dashboard"]) .topbar {
+        min-height:72px !important;
+        height:72px !important;
+        margin-bottom:8px !important;
+      }
+      body:not([data-page="dashboard"]) .topbar .luria-notifications {
+        position:fixed !important;
+        top:10px !important;
+        right:28px !important;
+        gap:14px !important;
+      }
+      body:not([data-page="dashboard"]) .luria-pomodoro-toggle {
+        min-width:206px !important;
+        height:62px !important;
+        padding:0 20px !important;
+        gap:14px !important;
+        border-radius:13px !important;
+      }
+      body:not([data-page="dashboard"]) .luria-pomodoro-icon,
+      body:not([data-page="dashboard"]) .luria-pomodoro-icon svg {
+        width:37px !important;
+        height:37px !important;
+      }
+      body:not([data-page="dashboard"]) .luria-pomodoro-copy strong {
+        font-size:18px !important;
+      }
+      body:not([data-page="dashboard"]) .luria-pomodoro-copy small {
+        font-size:16px !important;
+      }
+      body:not([data-page="dashboard"]) .luria-notification-toggle,
+      body:not([data-page="dashboard"]) .luria-profile-toggle {
+        width:62px !important;
+        height:62px !important;
+        min-width:62px !important;
+        border-radius:17px !important;
+      }
+      body:not([data-page="dashboard"]) .luria-notification-toggle svg,
+      body:not([data-page="dashboard"]) #luria-notification-toggle svg {
+        width:22px !important;
+        height:22px !important;
+      }
+      body:not([data-page="dashboard"]) .luria-profile-toggle {
+        font-size:34px !important;
+      }
+      /* A borda direita do perfil acompanha a borda direita do card de conteúdo. */
+      body:not([data-page="dashboard"]) .page {
+        --luria-top-controls-right:28px;
+      }
+      body:not([data-page="dashboard"]) .page > .luria-page-spotlight,
+      body:not([data-page="dashboard"]) .page > .schedule-top-spotlight {
+        margin-top:0 !important;
+      }
+    }
+
     @media(max-width:760px){
       .luria-notifications{gap:9px!important}
       .luria-pomodoro-toggle{min-width:125px;height:52px;padding:0 10px}
