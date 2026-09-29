@@ -340,7 +340,7 @@
     // A sessão em andamento continua disponível apenas pelo card "Continuar último caso".
     state.libraryView=ENTRY_MODE==="emergency"
       ? "home"
-      : (savedLibraryView==="library" ? "library" : "home");
+      : (["library","aph"].includes(savedLibraryView) ? savedLibraryView : "home");
     document.body.dataset.caseLibraryView=state.libraryView;
 
     const specialties=[...new Set(state.cases.map(x=>x.specialty).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),"pt-BR"));
@@ -555,7 +555,7 @@
   }
 
   function setCaseLibraryView(view,{persist=true}={}){
-    const next=view==="library" ? "library" : "home";
+    const next=["library","aph"].includes(view) ? view : "home";
     state.libraryView=next;
     document.body.dataset.caseLibraryView=next;
     document.querySelectorAll("[data-case-library-view]").forEach(button=>{
@@ -576,11 +576,16 @@
     const specialty=state.filters.specialty || "";
     const difficulty=state.filters.difficulty || "";
     const query=normalizeLabel(state.filters.query || "");
-    const sourceCases=state.libraryView==="home" ? weeklyFeaturedCases(state.cases) : state.cases;
+    const isAphCase=item=>String(item?.setting||"")==="Ambulância / APH" || String(item?.specialty||"")==="APH / Emergência" || /^ambulancia-\d{3}$/i.test(String(item?.slug||""));
+    const aphCases=state.cases.filter(isAphCase);
+    const emergencyCases=state.cases.filter(item=>!isAphCase(item));
+    const baseCases=state.libraryView==="aph" ? aphCases : emergencyCases;
+    const sourceCases=state.libraryView==="home" ? weeklyFeaturedCases(baseCases) : baseCases;
     const visibleCases=sourceCases.filter(item=>{
+      const filterable=state.libraryView==="library" || state.libraryView==="aph";
       if(state.libraryView==="library" && specialty && item.specialty!==specialty) return false;
-      if(state.libraryView==="library" && difficulty && item.difficulty!==difficulty) return false;
-      if(state.libraryView!=="library" || !query) return true;
+      if(filterable && difficulty && item.difficulty!==difficulty) return false;
+      if(!filterable || !query) return true;
       const haystack=normalizeLabel([
         item.title,item.summary,item.setting,item.specialty,item.difficulty,
         item.presentation?.chief_complaint,item.presentation?.display_title,caseMateria(item)
@@ -591,19 +596,21 @@
     const countEl=$("plantao-case-count");
     const sessionEl=$("plantao-session-count");
     const visibleCount=$("plantao-visible-count");
-    if(countEl) countEl.textContent=state.cases.length;
+    if(countEl) countEl.textContent=baseCases.length;
     if(sessionEl) sessionEl.textContent=state.sessions.length;
     if(visibleCount) visibleCount.textContent=state.libraryView==="home"
       ? visibleCases.length+" destaque"+(visibleCases.length===1?"":"s")
       : visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
     const listTitle=$("plantao-case-list-title");
-    if(listTitle) listTitle.textContent=state.libraryView==="home" ? "Casos em destaque da semana" : "Casos disponíveis";
+    if(listTitle) listTitle.textContent=state.libraryView==="home"
+      ? "Casos em destaque da semana"
+      : (state.libraryView==="aph" ? "Casos de APH" : "Casos disponíveis");
 
     const sideCaseCount=$("plantao-side-case-count");
     const sideActiveCount=$("plantao-side-active-count");
     const sideAverageTime=$("plantao-side-average-time");
     const sideCompletionRate=$("plantao-side-completion-rate");
-    if(sideCaseCount) sideCaseCount.textContent=state.cases.length;
+    if(sideCaseCount) sideCaseCount.textContent=baseCases.length;
     if(sideActiveCount) sideActiveCount.textContent=state.activeSession ? "1" : "0";
 
     const completedSessions=state.sessions.filter(x=>x.status==="completed");
@@ -627,11 +634,11 @@
       if(text.includes("avan") || text.includes("dific")) return "advanced";
       return "intermediate";
     };
-    const difficultyCounts=state.cases.reduce((acc,item)=>{
+    const difficultyCounts=baseCases.reduce((acc,item)=>{
       acc[normalizeDifficulty(item.difficulty)]++;
       return acc;
     },{basic:0,intermediate:0,advanced:0});
-    const totalDifficulty=Math.max(1,state.cases.length);
+    const totalDifficulty=Math.max(1,baseCases.length);
     const basicPct=(difficultyCounts.basic/totalDifficulty)*100;
     const intermediatePct=(difficultyCounts.intermediate/totalDifficulty)*100;
     const donut=$("plantao-difficulty-donut");
@@ -643,12 +650,14 @@
     const diffBasic=$("plantao-diff-basic");
     const diffIntermediate=$("plantao-diff-intermediate");
     const diffAdvanced=$("plantao-diff-advanced");
-    if(diffTotal) diffTotal.textContent=state.cases.length;
+    if(diffTotal) diffTotal.textContent=baseCases.length;
     if(diffBasic) diffBasic.textContent=difficultyCounts.basic;
     if(diffIntermediate) diffIntermediate.textContent=difficultyCounts.intermediate;
     if(diffAdvanced) diffAdvanced.textContent=difficultyCounts.advanced;
 
     const chips=$("plantao-specialty-chips");
+    const specialtySwitch=document.querySelector(".plantao-library-inner-switch");
+    if(specialtySwitch) specialtySwitch.hidden=state.libraryView==="aph";
     if(chips){
       const preferred=[
         {label:"Todos",value:""},
@@ -1382,7 +1391,14 @@
     if(state.busy) return;
     const specialty=state.filters.specialty || "";
     const difficulty=state.filters.difficulty || "";
-    const pool=state.cases.filter(item=>(!specialty || item.specialty===specialty) && (!difficulty || item.difficulty===difficulty));
+    const isAphCase=item=>String(item?.setting||"")==="Ambulância / APH" || String(item?.specialty||"")==="APH / Emergência" || /^ambulancia-\d{3}$/i.test(String(item?.slug||""));
+    const pool=state.cases.filter(item=>{
+      if(state.libraryView==="aph" && !isAphCase(item)) return false;
+      if(state.libraryView!=="aph" && isAphCase(item)) return false;
+      if(state.libraryView==="library" && specialty && item.specialty!==specialty) return false;
+      if(difficulty && item.difficulty!==difficulty) return false;
+      return true;
+    });
     if(!pool.length) return;
     const item=pool[Math.floor(Math.random()*pool.length)];
     startCase(item.id);
