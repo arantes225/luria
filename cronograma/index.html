@@ -18,6 +18,14 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.8-metrics-blue">
 
   <style>
+    /* Cronograma — usa o mesmo fundo global/padrão do restante do site */
+    body[data-page="schedule"],
+    body[data-page="cronograma"],
+    body {
+      background: var(--bg) !important;
+      background-image: none !important;
+    }
+
     .schedule-stack {
       display: grid;
       gap: 16px;
