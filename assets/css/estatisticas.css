@@ -1090,3 +1090,22 @@
     grid-column:span 12!important;
   }
 }
+
+
+/* Estatísticas v26 — hierarquia tipográfica mais leve */
+body[data-page="estatisticas"] .stats-section-head h3{
+  font-size:15px!important;
+  font-weight:600!important;
+  line-height:1.25!important;
+}
+body[data-page="estatisticas"] .stats-section-head p{
+  margin-top:4px!important;
+  font-size:11px!important;
+  font-weight:400!important;
+  line-height:1.4!important;
+}
+body[data-page="estatisticas"] .stats-kicker{
+  font-size:9px!important;
+  font-weight:600!important;
+  letter-spacing:.05em!important;
+}
