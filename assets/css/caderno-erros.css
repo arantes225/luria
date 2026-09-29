@@ -3190,3 +3190,45 @@ body[data-page="erros"] .error-metric-card{
   visibility:visible!important;
   opacity:1!important;
 }
+
+
+/* v18.15 — menu + Criar e Novo erro dentro do switch de revisão */
+.error-create-menu-wrap{
+  position:relative;
+  display:inline-flex;
+}
+.error-create-menu{
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+  z-index:460;
+  width:210px;
+  padding:6px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  background:var(--surface);
+  box-shadow:0 18px 44px rgba(15,23,42,.16);
+}
+.error-create-menu[hidden]{
+  display:none!important;
+}
+.error-create-menu button{
+  width:100%;
+  min-height:40px;
+  padding:0 11px;
+  border:0;
+  border-radius:9px;
+  background:transparent;
+  color:var(--text);
+  text-align:left;
+  font:inherit;
+  font-size:11px;
+  font-weight:800;
+  cursor:pointer;
+}
+.error-create-menu button:hover,
+.error-create-menu button:focus-visible{
+  background:var(--accent-soft);
+  color:var(--accent);
+  outline:none;
+}
