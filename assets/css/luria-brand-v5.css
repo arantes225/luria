@@ -572,3 +572,18 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     padding:0!important;
   }
 }
+
+
+/* v70 — regra final de distância desktop */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .page > .topbar{
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+    margin:0 0 34px!important;
+    padding:0!important;
+  }
+  body:not([data-page="dashboard"]) .page > .topbar + *{
+    margin-top:0!important;
+  }
+}
