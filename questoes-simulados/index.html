@@ -1854,6 +1854,49 @@
     opacity:.22!important;
   }
 </style>
+
+<style id="qs-svg-accent-mask-v10">
+  /* As artes laterais são máscaras monocromáticas: a cor vem diretamente do tema. */
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    display:block!important;
+    visibility:visible!important;
+    background-image:none!important;
+    background-color:var(--accent)!important;
+    filter:none!important;
+    mix-blend-mode:normal!important;
+    opacity:.48!important;
+    -webkit-mask-position:center!important;
+    mask-position:center!important;
+    -webkit-mask-repeat:no-repeat!important;
+    mask-repeat:no-repeat!important;
+    -webkit-mask-size:contain!important;
+    mask-size:contain!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-art-create{
+    -webkit-mask-image:url("/assets/img/qs-create-pro.svg?v=20260929-mask2")!important;
+    mask-image:url("/assets/img/qs-create-pro.svg?v=20260929-mask2")!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-art-upload{
+    -webkit-mask-image:url("/assets/img/qs-upload-pro.svg?v=20260929-mask2")!important;
+    mask-image:url("/assets/img/qs-upload-pro.svg?v=20260929-mask2")!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-art-library{
+    -webkit-mask-image:url("/assets/img/qs-library-pro.svg?v=20260929-mask2")!important;
+    mask-image:url("/assets/img/qs-library-pro.svg?v=20260929-mask2")!important;
+  }
+  :root[data-theme="dark"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art,
+  body.dark[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    background-color:var(--accent)!important;
+    opacity:.82!important;
+    filter:none!important;
+  }
+  :root[data-theme="pink"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art,
+  body.pink[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+    background-color:var(--accent)!important;
+    opacity:.62!important;
+    filter:none!important;
+  }
+</style>
 </head>
 
 <body data-page="questoes">
@@ -1956,7 +1999,7 @@
                     <small>Monte sua própria lista.</small>
                   </span>
                   <span class="qs-home-action-arrow">→</span>
-                  <img class="qs-home-card-art qs-home-art-create" src="/assets/img/qs-create-pro.svg?v=20260929-svg1" alt="" aria-hidden="true" decoding="async">
+                  <span class="qs-home-card-art qs-home-art-create" aria-hidden="true"></span>
                 </button>
 
                 <button class="qs-home-action qs-home-action-upload" type="button" data-qs-mode="add" data-qs-add-mode="automatic">
@@ -1968,7 +2011,7 @@
                     <small>Importe um PDF.</small>
                   </span>
                   <span class="qs-home-action-arrow">→</span>
-                  <img class="qs-home-card-art qs-home-art-upload" src="/assets/img/qs-upload-pro.svg?v=20260929-svg1" alt="" aria-hidden="true" decoding="async">
+                  <span class="qs-home-card-art qs-home-art-upload" aria-hidden="true"></span>
                 </button>
 
                 <button class="qs-home-action qs-home-action-library" type="button" data-qs-mode="library">
@@ -1980,7 +2023,7 @@
                     <small>Veja tudo o que você salvou.</small>
                   </span>
                   <span class="qs-home-action-arrow">→</span>
-                  <img class="qs-home-card-art qs-home-art-library" src="/assets/img/qs-library-pro.svg?v=20260929-svg1" alt="" aria-hidden="true" decoding="async">
+                  <span class="qs-home-card-art qs-home-art-library" aria-hidden="true"></span>
                 </button>
               </div>
             </aside>
