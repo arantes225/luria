@@ -556,3 +556,19 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     top:28px!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v69 — distância visual Dashboard: controles -> título
+   Timer top 28px / altura 48px / respiro 28px
+   Card inicia a 104px do topo da área principal.
+   ========================================================= */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .topbar{
+    min-height:48px!important;
+    height:48px!important;
+    max-height:48px!important;
+    margin:0 0 28px!important;
+    padding:0!important;
+  }
+}
