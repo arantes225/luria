@@ -6301,7 +6301,7 @@ async function iniciarApp() {
   // Modo Trabalho: todas as páginas recebem o box de título padrão.
   // A injeção é automática para manter consistência também em novas abas.
   if (
-    page.startsWith("trabalho_")
+    (page === "dashboard" || page.startsWith("trabalho_"))
     && !document.querySelector(".luria-page-spotlight")
   ) {
     const pageRoot = document.querySelector(".main .page");
@@ -6309,7 +6309,7 @@ async function iniciarApp() {
 
     if (pageRoot && topbar) {
       const spotlight = document.createElement("section");
-      spotlight.className = "luria-page-spotlight luria-work-page-spotlight";
+      spotlight.className = `luria-page-spotlight ${page === "dashboard" ? "luria-dashboard-spotlight" : "luria-work-page-spotlight"}`;
       spotlight.setAttribute("aria-label", info.title || "Página");
       spotlight.innerHTML = `
         <div class="luria-page-spotlight-copy">
