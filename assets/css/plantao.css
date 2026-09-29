@@ -7241,3 +7241,20 @@ body.plantao-module-entry .plantao-practice-back-row{margin:2px 0 12px!important
     font-size:11px!important;
   }
 }
+
+
+/* v48 — ícones SVG no padrão visual do LURIA */
+body.plantao-module-entry .plantao-today-icon svg{
+  display:block;
+  width:20px;
+  height:20px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+body.plantao-module-entry .plantao-today-icon.active svg path{
+  fill:currentColor;
+  stroke:currentColor;
+}
