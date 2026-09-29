@@ -7393,3 +7393,88 @@ body.plantao-module-entry .plantao-featured-start.button.primary:focus-visible{
   outline:0!important;
   box-shadow:0 0 0 3px var(--accent-soft)!important;
 }
+
+
+/* Sala de Emergência v51 — caso em destaque idêntico ao spotlight do Caderno de Erros */
+body.plantao-module-entry .plantao-featured-case{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border))!important;
+  border-radius:15px!important;
+  background:linear-gradient(
+    110deg,
+    color-mix(in srgb,var(--accent) 88%,#071c3c),
+    var(--accent) 58%,
+    color-mix(in srgb,var(--accent) 75%,#091f49)
+  )!important;
+  color:#fff!important;
+  box-shadow:0 10px 30px rgba(17,65,130,.12)!important;
+}
+body.plantao-module-entry .plantao-featured-case::before{
+  content:none!important;
+  display:none!important;
+}
+body.plantao-module-entry .plantao-featured-case::after{
+  content:""!important;
+  position:absolute!important;
+  width:310px!important;
+  height:310px!important;
+  right:-90px!important;
+  bottom:-220px!important;
+  border-radius:50%!important;
+  background:rgba(255,255,255,.07)!important;
+  box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
+  pointer-events:none!important;
+  z-index:0!important;
+}
+body.plantao-module-entry .plantao-featured-art{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-featured-inner{
+  position:relative!important;
+  z-index:2!important;
+}
+body.plantao-module-entry .plantao-featured-label{
+  color:#fff!important;
+}
+body.plantao-module-entry .plantao-featured-copy p{
+  display:none!important;
+}
+
+/* Mesmo comportamento do Caderno de Erros no tema escuro. */
+html[data-theme="dark"] body.plantao-module-entry .plantao-featured-case,
+body.theme-dark.plantao-module-entry .plantao-featured-case,
+[data-theme="dark"] body.plantao-module-entry .plantao-featured-case{
+  background:linear-gradient(110deg,#f8fbff,#edf4fb)!important;
+  color:#10213d!important;
+  border-color:#d8e3ef!important;
+}
+html[data-theme="dark"] body.plantao-module-entry .plantao-featured-case::after,
+body.theme-dark.plantao-module-entry .plantao-featured-case::after,
+[data-theme="dark"] body.plantao-module-entry .plantao-featured-case::after{
+  background:rgba(24,72,136,.06)!important;
+  box-shadow:-80px -18px 0 rgba(24,72,136,.035)!important;
+}
+html[data-theme="dark"] body.plantao-module-entry .plantao-featured-label,
+html[data-theme="dark"] body.plantao-module-entry .plantao-featured-meta,
+html[data-theme="dark"] body.plantao-module-entry .plantao-featured-copy h2,
+html[data-theme="dark"] body.plantao-module-entry .plantao-featured-tags span{
+  color:#10213d!important;
+}
+html[data-theme="dark"] body.plantao-module-entry .plantao-featured-tags span{
+  background:rgba(24,72,136,.09)!important;
+  border-color:rgba(24,72,136,.08)!important;
+}
+
+/* Tema rosa: usa exatamente a mesma lógica cromática do spotlight. */
+html[data-theme="leila-mood"] body.plantao-module-entry .plantao-featured-case,
+html[data-theme="pink-mood"] body.plantao-module-entry .plantao-featured-case,
+html[data-theme="pink"] body.plantao-module-entry .plantao-featured-case{
+  background:linear-gradient(
+    110deg,
+    color-mix(in srgb,var(--accent) 88%,#321328),
+    var(--accent) 58%,
+    color-mix(in srgb,var(--accent) 75%,#35152d)
+  )!important;
+}
