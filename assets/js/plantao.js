@@ -3389,7 +3389,7 @@
     $("plantao-action-drawer").hidden=true;
     $("plantao-action-search").value="";
     renderActions();
-    $("plantao-finish").disabled=true;
+    $("plantao-finish") && ($("plantao-finish").disabled=true);
     await persistSession({status:"completed",completed_at:new Date().toISOString(),score:0,result:{death:true,death_reason:state.deathReason,clinical_events:state.clinicalEvents, harmful_count:state.harmfulCount,fetal_death:state.fetalDeath,fetal_status:state.fetalStatus,fetal_harm_count:state.fetalHarmCount,scoring_version:5}});
   }
 
@@ -4569,7 +4569,7 @@
       if(!(await confirmPlantaoFinalization(action.label))) return;
     }
     state.busy=true;renderActions();
-    $("plantao-finish").disabled=true;$("plantao-back").disabled=true;
+    $("plantao-finish") && ($("plantao-finish").disabled=true);$("plantao-back").disabled=true;
     try {
       // A Conduta final não antecipa pendências nem erros de sequência.
       // Esses pontos são avaliados e exibidos somente no debriefing.
@@ -4678,7 +4678,7 @@
       if(action.role==='disposition'&&state.disposition)await finishCase({forceDebrief:true});
     } finally {
       state.busy=false;renderActions();
-      $("plantao-finish").disabled=false;$("plantao-back").disabled=false;
+      $("plantao-finish") && ($("plantao-finish").disabled=false);$("plantao-back").disabled=false;
     }
   }
 
@@ -4976,10 +4976,7 @@
     const action=event.target.closest("[data-case-action]");
     if (action) return runAction(action.dataset.caseAction);
   });
-
-  $("plantao-finish")?.addEventListener("click",()=>{if(isDisasterCase())finishDisasterCase();else if(state.disposition)finishCase();else openActions("hipoteses");});
   $("plantao-disaster-finish")?.addEventListener("click",finishDisasterCase);
-  $("plantao-conduta-finish")?.addEventListener("click",()=>{if(state.disposition)finishCase();else feed("Defina a conduta final antes de finalizar o atendimento.","warning");});
   $("plantao-action-close")?.addEventListener("click",closeActions);
   $("plantao-action-search")?.addEventListener("input",renderActions);
   $("plantao-pwa-patient-tab")?.addEventListener("click",openPatientSheet);
