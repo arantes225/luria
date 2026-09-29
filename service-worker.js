@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v202-topbar-title-spacing";
+const CACHE_VERSION = "luria-pwa-v203-exact-topbar-title";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
