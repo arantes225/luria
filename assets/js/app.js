@@ -6298,6 +6298,30 @@ async function iniciarApp() {
     PAGE_INFO[page]
     || PAGE_INFO.dashboard;
 
+  // Modo Trabalho: todas as páginas recebem o box de título padrão.
+  // A injeção é automática para manter consistência também em novas abas.
+  if (
+    page.startsWith("trabalho_")
+    && !document.querySelector(".luria-page-spotlight")
+  ) {
+    const pageRoot = document.querySelector(".main .page");
+    const topbar = pageRoot?.querySelector(":scope > .topbar");
+
+    if (pageRoot && topbar) {
+      const spotlight = document.createElement("section");
+      spotlight.className = "luria-page-spotlight luria-work-page-spotlight";
+      spotlight.setAttribute("aria-label", info.title || "Página");
+      spotlight.innerHTML = `
+        <div class="luria-page-spotlight-copy">
+          <span class="luria-page-spotlight-label"></span>
+          <strong data-page-title></strong>
+          <small class="luria-page-spotlight-helper"></small>
+        </div>
+      `;
+      topbar.insertAdjacentElement("afterend", spotlight);
+    }
+  }
+
   document
     .querySelectorAll("[data-page-title]")
     .forEach((el) => {
