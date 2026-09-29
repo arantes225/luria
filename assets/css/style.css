@@ -3823,3 +3823,25 @@ body.theme-dark .luria-page-spotlight-label{
     font-size:9px!important;
   }
 }
+
+
+/* v2026.09.29d — frase curta abaixo dos títulos dos cards */
+.luria-page-spotlight-helper{
+  position:relative;
+  z-index:2;
+  display:block;
+  margin-top:7px;
+  max-width:720px;
+  color:rgba(255,255,255,.78)!important;
+  font-size:11px!important;
+  font-weight:650!important;
+  line-height:1.3!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+}
+@media(max-width:700px){
+  .luria-page-spotlight-helper{
+    margin-top:6px!important;
+    font-size:10px!important;
+  }
+}
