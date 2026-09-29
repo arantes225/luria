@@ -650,7 +650,8 @@
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-icon,
       body:not([data-page="dashboard"]) .luria-pomodoro-icon svg {
-        width:22px !important;\n        height:22px !important;
+        width:22px !important;
+        height:22px !important;
       }
       body:not([data-page="dashboard"]) .luria-pomodoro-copy strong {
         font-size:13px !important;
