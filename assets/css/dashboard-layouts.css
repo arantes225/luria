@@ -4186,3 +4186,22 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     padding-bottom:16px!important;
   }
 }
+
+
+/* =========================================================
+   Dashboard 1 v46 — alturas inferiores e gaps uniformes
+   ========================================================= */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    row-gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:226px!important;
+    min-height:226px!important;
+    max-height:226px!important;
+    transform:none!important;
+    align-self:start!important;
+  }
+}
