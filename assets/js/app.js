@@ -3585,13 +3585,12 @@ function ensureNotificationCenter() {
             <circle cx="12" cy="14" r="8"></circle>
           </svg>
         </span>
-        <span class="luria-pomodoro-copy luria-timer-compact" aria-label="Timer 00 horas 00 minutos 00 segundos">
-          <span class="luria-timer-hm">
-            <strong id="luria-timer-hours">00</strong>
+        <span class="luria-pomodoro-copy luria-timer-compact" aria-label="Timer 00 minutos 00 segundos">
+          <span class="luria-timer-ms">
             <strong id="luria-timer-minutes">00</strong>
+            <strong id="luria-timer-seconds">00</strong>
           </span>
-          <small id="luria-timer-seconds">00</small>
-          <span id="luria-pomodoro-mini-time" class="luria-timer-sr-only">00:00:00</span>
+          <span id="luria-pomodoro-mini-time" class="luria-timer-sr-only">00:00</span>
         </span>
       </button>
 
@@ -3758,7 +3757,6 @@ function ensureNotificationCenter() {
   const pomodoroToggle = document.getElementById("luria-pomodoro-toggle");
   const pomodoroPanel = document.getElementById("luria-pomodoro-panel");
   const pomodoroMiniTime = document.getElementById("luria-pomodoro-mini-time");
-  const timerHours = document.getElementById("luria-timer-hours");
   const timerMinutes = document.getElementById("luria-timer-minutes");
   const timerSeconds = document.getElementById("luria-timer-seconds");
   const pomodoroTime = document.getElementById("luria-pomodoro-time");
@@ -3811,15 +3809,14 @@ function ensureNotificationCenter() {
 
   const renderCompactTopTimer = (totalSeconds) => {
     const safe = Math.max(0, Math.floor(totalSeconds));
-    const h = String(Math.floor(safe / 3600)).padStart(2, "0");
-    const m = String(Math.floor((safe % 3600) / 60)).padStart(2, "0");
+    const totalMinutes = Math.floor(safe / 60);
+    const m = String(totalMinutes).padStart(2, "0");
     const s = String(safe % 60).padStart(2, "0");
-    if (timerHours) timerHours.textContent = h;
     if (timerMinutes) timerMinutes.textContent = m;
     if (timerSeconds) timerSeconds.textContent = s;
-    if (pomodoroMiniTime) pomodoroMiniTime.textContent = h + ":" + m + ":" + s;
+    if (pomodoroMiniTime) pomodoroMiniTime.textContent = m + ":" + s;
     const compact = pomodoroMiniTime?.closest(".luria-timer-compact");
-    if (compact) compact.setAttribute("aria-label", `Timer ${h} horas ${m} minutos ${s} segundos`);
+    if (compact) compact.setAttribute("aria-label", `Timer ${m} minutos ${s} segundos`);
   };
 
   const renderStopwatch = () => {
@@ -7309,6 +7306,54 @@ iniciarApp();
         height:43px!important;
         min-height:43px!important;
       }
+    }
+  `;
+  document.head.appendChild(style);
+})();
+
+
+/* Compact timer v39 — minutos em cima, segundos embaixo */
+(function ensureCompactTimerMinutesSecondsV39(){
+  if(document.getElementById("luria-compact-timer-ms-v39")) return;
+  const style=document.createElement("style");
+  style.id="luria-compact-timer-ms-v39";
+  style.textContent=`
+    .luria-pomodoro-toggle .luria-timer-compact{
+      display:flex!important;
+      align-items:center!important;
+      width:auto!important;
+      min-width:0!important;
+      height:32px!important;
+      margin:0!important;
+    }
+
+    .luria-pomodoro-toggle .luria-timer-ms{
+      display:flex!important;
+      flex-direction:column!important;
+      justify-content:center!important;
+      gap:0!important;
+      height:32px!important;
+      min-height:32px!important;
+      margin:0!important;
+      padding:0!important;
+    }
+
+    .luria-pomodoro-toggle .luria-timer-ms > strong{
+      display:block!important;
+      margin:0!important;
+      padding:0!important;
+      font-size:14px!important;
+      font-weight:900!important;
+      line-height:.86!important;
+      letter-spacing:-.02em!important;
+      color:currentColor!important;
+      font-variant-numeric:tabular-nums!important;
+    }
+
+    .luria-pomodoro-toggle #luria-timer-seconds{
+      font-size:14px!important;
+      color:currentColor!important;
+      transform:none!important;
     }
   `;
   document.head.appendChild(style);
