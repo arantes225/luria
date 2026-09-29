@@ -4205,3 +4205,29 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     align-self:start!important;
   }
 }
+
+
+/* =========================================================
+   Dashboard 1 v47 — gaps realmente uniformes
+   Remove margens antigas que somavam espaço à segunda linha.
+   ========================================================= */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    column-gap:12px!important;
+    row-gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    margin-top:0!important;
+    transform:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-greeting{
+    margin-bottom:12px!important;
+  }
+}
