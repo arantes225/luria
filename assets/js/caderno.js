@@ -18255,6 +18255,48 @@ function wireEvents() {
   });
 
 
+  document.getElementById("notebook-inspector-delete")?.addEventListener("click", async () => {
+    try {
+      await deleteCurrentNotebook();
+    } catch (error) {
+      console.error(error);
+      window.LuriaDialog.alert("Não foi possível excluir esta anotação.");
+    }
+  });
+
+  document.getElementById("notebook-inspector-flashcards")?.addEventListener("click", async () => {
+    const current = getCurrentDocument();
+    if (!current) {
+      window.LuriaDialog.alert("Abra uma anotação antes de transformar em flashcard.");
+      return;
+    }
+
+    if (notebookState.editorDirty) {
+      await saveCurrentNotebook(true);
+    }
+
+    const editor = document.getElementById("notebook-editor");
+    const plainText = String(editor?.innerText || current.note?.content_html || "")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+
+    const subject = current.type === "lesson"
+      ? (current.topic?.materia || "")
+      : (current.note?.materia || "");
+
+    try {
+      localStorage.setItem("luria:flashcard-draft-from-notebook", JSON.stringify({
+        area: current.area || "",
+        materia: subject,
+        front: current.title || "Anotação",
+        back: plainText,
+        createdAt: Date.now()
+      }));
+    } catch {}
+
+    window.location.href = "/flashcards/?from_notebook=1";
+  });
+
   const emojiToggle =
     document.getElementById(
       "notebook-emoji-toggle"
@@ -19416,9 +19458,9 @@ new MutationObserver(renderOutline).observe(editor,{subtree:true,childList:true,
 (()=>{const studio=document.querySelector(".note-studio"),toggle=document.getElementById("notebook-topic-panel-toggle"),picker=document.getElementById("notebook-theme-picker"),search=document.getElementById("notebook-theme-picker-search"),results=document.getElementById("notebook-theme-picker-list");
 toggle?.addEventListener("click",()=>{const collapsed=studio.classList.toggle("outline-collapsed");toggle.setAttribute("aria-expanded",String(!collapsed));const arrow=document.getElementById("notebook-topic-panel-arrow");if(arrow)arrow.textContent=collapsed?"›":"‹"});
 const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function candidates(){const arr=[];(notebookState?.topics||[]).forEach(t=>arr.push({kind:"lesson",id:t.id,title:t.theme||"Tema sem título",area:t.area||t.materia||"Sem área"}));(notebookState?.notes||[]).filter(n=>!n.topic_id).forEach(n=>arr.push({kind:"free",id:n.id,title:n.topic_title||n.title||"Página livre",area:n.area||"Sem área"}));return arr}
+function candidates(){const arr=[];(notebookState?.topics||[]).forEach(t=>arr.push({kind:"lesson",id:t.id,title:t.theme||"Tema sem título",area:t.area||t.materia||"Sem área"}));Array.from(notebookState?.notesById?.values?.()||[]).filter(n=>!n.topic_id||n.is_shared).forEach(n=>arr.push({kind:"free",id:n.id,title:n.topic_title||n.title||"Página livre",area:n.area||"Sem área"}));return arr}
 function render(q=""){const n=String(q).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();const rows=candidates().filter(x=>!n||(x.title+" "+x.area).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().includes(n)).slice(0,30);results.innerHTML=rows.length?rows.map(x=>'<button type="button" data-open-kind="'+x.kind+'" data-open-id="'+esc(x.id)+'"><span>'+esc(x.title)+'</span><small>'+esc(x.area)+'</small></button>').join(""):'<div class="note-theme-empty">Nenhum tema encontrado.</div>'}
 function openPicker(){picker.hidden=false;render();setTimeout(()=>search?.focus(),0)}
-document.getElementById("notebook-inspector-open-theme")?.addEventListener("click",async()=>{try{if(typeof saveCurrentNote==="function")await saveCurrentNote()}catch{}openPicker()});document.getElementById("notebook-theme-picker-close")?.addEventListener("click",()=>picker.hidden=true);picker?.addEventListener("click",e=>{if(e.target===picker)picker.hidden=true});search?.addEventListener("input",()=>render(search.value));
-results?.addEventListener("click",e=>{const b=e.target.closest("[data-open-kind]");if(!b)return;const id=b.dataset.openId;if(b.dataset.openKind==="lesson"){notebookState.selectedType="lesson";notebookState.selectedTopicId=id;notebookState.selectedNoteId=null}else{notebookState.selectedType="free";notebookState.selectedNoteId=id;notebookState.selectedTopicId=null}picker.hidden=true;if(typeof renderNotebook==="function")renderNotebook();else if(typeof renderDocument==="function")renderDocument()});
+document.getElementById("notebook-inspector-open-theme")?.addEventListener("click",async()=>{try{if(notebookState.editorDirty)await saveCurrentNotebook(true)}catch{}openPicker()});document.getElementById("notebook-theme-picker-close")?.addEventListener("click",()=>picker.hidden=true);picker?.addEventListener("click",e=>{if(e.target===picker)picker.hidden=true});search?.addEventListener("input",()=>render(search.value));
+results?.addEventListener("click",async e=>{const b=e.target.closest("[data-open-kind]");if(!b)return;const id=b.dataset.openId;picker.hidden=true;if(b.dataset.openKind==="lesson")await openTopic(id);else await openFreeNote(id)});
 })();
