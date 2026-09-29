@@ -591,24 +591,37 @@
     .luria-pomodoro-top { margin-right:2px; }
     #luria-notification-toggle { margin-right:4px; }
 
-    /* Cabeçalho global: Timer + notificações + perfil 10px mais altos. */
+    /* Cabeçalho global unificado: Timer + notificações + perfil */
+    .topbar {
+      min-height:52px !important;
+      align-items:flex-start !important;
+      overflow:visible !important;
+    }
+    .topbar .page-heading {
+      align-self:flex-start !important;
+    }
     .topbar .luria-notifications {
+      position:relative !important;
+      top:0 !important;
+      margin-left:auto !important;
+      align-self:flex-start !important;
+      display:flex !important;
+      align-items:center !important;
+      gap:12px !important;
       transform:translateY(-10px) !important;
     }
+    .topbar .luria-pomodoro-top,
+    .topbar .luria-profile-top,
+    .topbar .luria-notification-toggle {
+      align-self:center !important;
+      margin-top:0 !important;
+      margin-bottom:0 !important;
+    }
 
-    /* Cabeçalho global: Timer + sino + conta usam a mesma altura de Configurações em todas as páginas. */
+    /* Desktop herda o mesmo cabeçalho global; sem compensações específicas por página. */
     @media (min-width:981px) {
-      .topbar {
-        min-height:52px !important;
-        align-items:flex-start !important;
-      }
-      .topbar .page-heading {
-        align-self:flex-start !important;
-      }
       .topbar .luria-notifications {
-        position:relative !important;
         top:0 !important;
-        align-self:flex-start !important;
       }
     }
 
@@ -681,6 +694,9 @@
         display:flex!important;
         align-items:center!important;
         margin-left:auto!important;
+        align-self:flex-start!important;
+        top:0!important;
+        transform:translateY(-10px)!important;
         z-index:245!important;
       }
 
