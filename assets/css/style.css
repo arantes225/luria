@@ -4268,3 +4268,132 @@ small,
     font-size:15px!important;
   }
 }
+
+
+/* =========================================================
+   v2026.09.29 — ALTURA GLOBAL = "REVISAR AGORA"
+   Referência Caderno de Erros:
+   botão 42px + container com 4px de padding
+   ========================================================= */
+:root{
+  --luria-switch-height:42px;
+  --luria-switch-shell-height:50px;
+  --luria-switch-shell-padding:4px;
+  --luria-switch-shell-gap:4px;
+  --luria-switch-shell-radius:10px;
+  --luria-switch-radius:7px;
+}
+
+/* Containers */
+.error-main-tabs,
+.error-tabs,
+.error-state-switch,
+.error-review-action-switch,
+.flash-tabs,
+.library-scope-tabs,
+.qs-mode-tabs,
+.notebook-tabs,
+.stats-tabs-shell,
+.stats-range,
+.schedule-add-tabs,
+.segmented-control,
+.mode-tabs,
+.view-tabs,
+.section-tabs,
+.page-tabs,
+.scope-tabs,
+.switch-group,
+.view-switch,
+.mode-switch,
+[role="tablist"]{
+  min-height:var(--luria-switch-shell-height)!important;
+  height:auto!important;
+  padding:var(--luria-switch-shell-padding)!important;
+  gap:var(--luria-switch-shell-gap)!important;
+  border-radius:var(--luria-switch-shell-radius)!important;
+}
+
+/* Botões */
+.error-main-tab,
+.error-tab,
+.error-state-switch > button,
+.error-review-action-switch > button,
+.flash-tab,
+.library-scope-tab,
+.qs-mode-tab,
+.notebook-tab,
+.stats-tab,
+.stats-range > button,
+.schedule-add-tab,
+.segmented-control > button,
+.mode-tab,
+.view-tab,
+.section-tab,
+.page-tab,
+.scope-tab,
+.switch-group > button,
+.view-switch > button,
+.mode-switch > button,
+[role="tablist"] > button,
+[role="tablist"] [role="tab"]{
+  min-height:var(--luria-switch-height)!important;
+  height:var(--luria-switch-height)!important;
+  border-radius:var(--luria-switch-radius)!important;
+  font-size:15px!important;
+  line-height:1!important;
+}
+
+/* Mobile/PWA mantém a mesma altura */
+@media(max-width:700px){
+  .error-main-tabs,
+  .error-tabs,
+  .error-state-switch,
+  .error-review-action-switch,
+  .flash-tabs,
+  .library-scope-tabs,
+  .qs-mode-tabs,
+  .notebook-tabs,
+  .stats-tabs-shell,
+  .stats-range,
+  .schedule-add-tabs,
+  .segmented-control,
+  .mode-tabs,
+  .view-tabs,
+  .section-tabs,
+  .page-tabs,
+  .scope-tabs,
+  .switch-group,
+  .view-switch,
+  .mode-switch,
+  [role="tablist"]{
+    min-height:var(--luria-switch-shell-height)!important;
+    padding:var(--luria-switch-shell-padding)!important;
+  }
+
+  .error-main-tab,
+  .error-tab,
+  .error-state-switch > button,
+  .error-review-action-switch > button,
+  .flash-tab,
+  .library-scope-tab,
+  .qs-mode-tab,
+  .notebook-tab,
+  .stats-tab,
+  .stats-range > button,
+  .schedule-add-tab,
+  .segmented-control > button,
+  .mode-tab,
+  .view-tab,
+  .section-tab,
+  .page-tab,
+  .scope-tab,
+  .switch-group > button,
+  .view-switch > button,
+  .mode-switch > button,
+  [role="tablist"] > button,
+  [role="tablist"] [role="tab"]{
+    min-height:var(--luria-switch-height)!important;
+    height:var(--luria-switch-height)!important;
+    font-size:15px!important;
+  }
+}
