@@ -112,7 +112,7 @@
 /* LURIA v57 — posição global estável dos controles superiores */
 :root{
   --luria-top-controls-top:0px;
-  --luria-top-controls-right:max(34px, calc((100vw - 1590px) / 2));
+  --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
 }
 @media (min-width:981px){
   body:not([data-page="dashboard"]) .topbar .luria-notifications{
@@ -220,7 +220,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
 @media (min-width:981px){
   body:not([data-page="dashboard"]) .topbar .luria-notifications{
     top:var(--luria-top-controls-top,0px)!important;
-    right:var(--luria-top-controls-right,max(34px, calc((100vw - 1590px) / 2)))!important;
+    right:var(--luria-top-controls-right,max(34px, calc((100vw - 1320px) / 2)))!important;
     display:flex!important;
     align-items:center!important;
     gap:10px!important;
@@ -232,5 +232,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
     transform:none!important;
     translate:none!important;
     align-self:center!important;
+  }
+}
+
+
+/* LURIA v60 — controles alinhados à largura real de 1320px da página */
+@media (min-width:981px){
+  :root{
+    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+  }
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    right:var(--luria-top-controls-right)!important;
   }
 }
