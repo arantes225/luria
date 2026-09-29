@@ -44,8 +44,8 @@ body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight{
 }
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight:after,
 body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight:after{
-  background:rgba(255,255,255,.07)!important;
-  box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
+  background:transparent!important;
+  box-shadow:none!important;
 }
 :root[data-theme="leila-mood"] body:not(.schedule-settings-embed) .luria-page-spotlight{
   background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#321328),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#35152d))!important;
