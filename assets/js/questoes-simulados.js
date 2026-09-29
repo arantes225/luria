@@ -9063,6 +9063,92 @@ function renderHomeDashboard() {
     }
   }
 
+  const myListsContainer =
+    document.getElementById(
+      "qs-home-my-lists-content"
+    );
+
+  if (myListsContainer) {
+    const personalSets =
+      sets.slice(0, 4);
+
+    if (!personalSets.length) {
+      myListsContainer.innerHTML =
+        '<div class="qs-empty">Crie ou envie sua primeira lista para ela aparecer aqui.</div>';
+    } else {
+      myListsContainer.innerHTML =
+        personalSets.map(
+          (set) => {
+            const answered =
+              Number(
+                set.metrics?.answered
+                || 0
+              );
+
+            const total =
+              Number(
+                set.total_questions
+                || 0
+              );
+
+            const progress =
+              total > 0
+                ? Math.min(
+                    100,
+                    Math.round(
+                      (
+                        answered
+                        / total
+                      )
+                      * 100
+                    )
+                  )
+                : 0;
+
+            return `
+              <div class="qs-home-user-row">
+                <div class="qs-home-user-main">
+                  <strong>${qsEscape(set.title || "Lista sem título")}</strong>
+                  <small>
+                    ${total} questões · ${qsHomeDate(set.created_at)}
+                  </small>
+                </div>
+
+                <div class="qs-home-user-progress">
+                  <strong>${answered > 0 ? `${progress}%` : "Nova"}</strong>
+                  <small>${answered}/${total || 0} respondidas</small>
+                </div>
+
+                <button
+                  class="qs-home-user-open"
+                  type="button"
+                  data-home-user-set="${qsEscape(set.id)}"
+                >
+                  ${answered > 0 ? "Continuar" : "Abrir"}
+                </button>
+              </div>
+            `;
+          }
+        ).join("");
+
+      myListsContainer
+        .querySelectorAll(
+          "[data-home-user-set]"
+        )
+        .forEach(
+          button => {
+            button.addEventListener(
+              "click",
+              () =>
+                openSet(
+                  button.dataset.homeUserSet
+                )
+            );
+          }
+        );
+    }
+  }
+
   const lastContainer =
     document.getElementById(
       "qs-home-last-content"
