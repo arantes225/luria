@@ -20,6 +20,54 @@
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
   <link rel="stylesheet" href="assets/css/caderno.css?v=24.9-back-button">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=58-static-topbar">
+    <style>
+    /* Anotações v25 — topo alinhado ao padrão Prática Clínica/Questões */
+    body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar{
+      position:relative!important;
+      top:auto!important;
+      z-index:245!important;
+      background:transparent!important;
+      backdrop-filter:none!important;
+      -webkit-backdrop-filter:none!important;
+      box-shadow:none!important;
+      border:0!important;
+    }
+    @media (min-width:981px){
+      body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar{
+        min-height:60px!important;
+        height:60px!important;
+        margin:0 0 16px!important;
+        padding:0!important;
+        display:flex!important;
+        align-items:flex-start!important;
+        gap:14px!important;
+        overflow:visible!important;
+      }
+      body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar .page-heading{
+        display:block!important;
+        min-width:0!important;
+        align-self:flex-start!important;
+      }
+      body[data-page="caderno"] .notebook-page > header.topbar.notebook-topbar .luria-notifications{
+        position:fixed!important;
+        top:10px!important;
+        right:34px!important;
+        left:auto!important;
+        margin:0!important;
+        display:flex!important;
+        align-items:center!important;
+        gap:10px!important;
+        transform:none!important;
+        translate:none!important;
+        transition:none!important;
+        animation:none!important;
+      }
+      body[data-page="caderno"] .notebook-save-status{
+        margin-left:0!important;
+        align-self:flex-start!important;
+      }
+    }
+  </style>
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
 </head>
@@ -491,7 +539,7 @@
 
   <script src="assets/js/supabase.js"></script>
   <script src="assets/js/pdf-branding.js?v=1"></script>
-  <script src="assets/js/app.js?v=17.39-static-topbar"></script>
+  <script src="assets/js/app.js?v=17.38-stable-topbar"></script>
   <script src="assets/js/sharing.js?v=4"></script>
   <style>
     .notebook-pdf-export-host {
