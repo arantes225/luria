@@ -102,3 +102,43 @@ body:not(.schedule-settings-embed) .topbar{
     font-size:var(--luria-page-card-title);
   }
 }
+
+
+/* v3 — régua absoluta dos cards de título. Nenhum CSS local pode alterar a geometria. */
+body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
+body:not(.schedule-settings-embed) .page .luria-page-spotlight{
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  height:138px!important;
+  min-height:138px!important;
+  max-height:138px!important;
+  margin:0 0 14px 0!important;
+  padding:24px 28px!important;
+  box-sizing:border-box!important;
+  border-radius:15px!important;
+  flex:0 0 138px!important;
+  align-self:stretch!important;
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy{
+  margin:0!important;
+  padding:0!important;
+}
+body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
+  margin:0!important;
+  font-size:32px!important;
+  line-height:1.08!important;
+}
+@media(max-width:700px){
+  body:not(.schedule-settings-embed) .page > .luria-page-spotlight,
+  body:not(.schedule-settings-embed) .page .luria-page-spotlight{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px!important;
+    flex-basis:118px!important;
+  }
+  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
+    font-size:25px!important;
+  }
+}
