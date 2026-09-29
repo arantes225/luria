@@ -1723,6 +1723,32 @@
       filter:sepia(1) saturate(7) hue-rotate(285deg) brightness(.92)!important;
       opacity:.28!important;
     }
+
+    .qs-page-spotlight .luria-page-spotlight-copy{
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+    }
+    .qs-page-spotlight-eyebrow{
+      display:block;
+      margin:0 0 6px;
+      color:rgba(255,255,255,.72);
+      font-size:9px;
+      font-weight:850;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+    }
+    .qs-page-spotlight .luria-page-spotlight-copy small{
+      display:block;
+      margin-top:7px;
+      color:rgba(255,255,255,.78);
+      font-size:11px;
+      font-weight:600;
+    }
+    :root[data-theme="dark"] .qs-page-spotlight-eyebrow,
+    :root[data-theme="dark"] .qs-page-spotlight .luria-page-spotlight-copy small{
+      color:rgba(255,255,255,.68);
+    }
 </style>
   <link rel="canonical" href="/questoes-simulados/">
   <script>(function(){try{if(location.pathname.endsWith("/questoes-simulados.html"))history.replaceState(null,"","/questoes-simulados/"+location.search+location.hash);}catch(e){}})();</script>
@@ -1744,6 +1770,14 @@
             <h1 data-page-title></h1>
           </div>
         </header>
+
+        <section class="luria-page-spotlight qs-page-spotlight" aria-label="Questões e Simulados">
+          <div class="luria-page-spotlight-copy">
+            <span class="qs-page-spotlight-eyebrow">Prática e desempenho</span>
+            <strong>Questões e Simulados</strong>
+            <small>Resolva, crie e acompanhe suas listas em um só lugar.</small>
+          </div>
+        </section>
 
         <section
           class="qs-mode-section active qs-home"
