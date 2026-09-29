@@ -1746,6 +1746,7 @@
     {id:"andexanet",label:"Andexanet alfa",category:"tratamento",subgroup:"Reversão de anticoagulação",time_min:.25,points:0,result:"Andexanet alfa administrado.",dose_hint:"esquema baixo ou alto conforme anti-Xa e tempo"},
     {id:"ticagrelor",label:"Ticagrelor",category:"tratamento",subgroup:"Antitrombóticos",time_min:.25,points:0,result:"Ticagrelor administrado.",dose_hint:"180 mg VO ataque"},
     {id:"pralidoxime",label:"Pralidoxima",category:"tratamento",subgroup:"Antídotos",time_min:.25,points:0,result:"Pralidoxima administrada.",dose_hint:"1–2 g IV em 15–30 min"},
+    {id:"high_dose_insulin",label:"Insulina euglicêmica em altas doses",category:"tratamento",subgroup:"Antídotos",time_min:.25,points:0,result:"Insulina em altas doses iniciada com suporte de glicose e monitorização seriada de glicemia e potássio.",dose_hint:"Protocolo de intoxicação por betabloqueador/bloqueador de canal de cálcio; titular com glicose e eletrólitos"},
     {id:"hydroxocobalamin",label:"Hidroxocobalamina",category:"tratamento",subgroup:"Antídotos",time_min:.25,points:0,result:"Hidroxocobalamina administrada.",dose_hint:"5 g IV"},
     {id:"methylene_blue",label:"Azul de metileno",category:"tratamento",subgroup:"Antídotos",time_min:.25,points:0,result:"Azul de metileno administrado.",dose_hint:"1–2 mg/kg IV"},
     {id:"digoxin_fab",label:"Fragmentos Fab anti-digoxina",category:"tratamento",subgroup:"Antídotos",time_min:.25,points:0,result:"Anticorpo anti-digoxina administrado.",dose_hint:"dose conforme nível ingerido ou carga corporal"},
@@ -1754,6 +1755,8 @@
     {id:"fludrocortisone",label:"Fludrocortisona",category:"tratamento",subgroup:"Endócrinos",time_min:.25,points:0,result:"Fludrocortisona administrada.",dose_hint:"0,05–0,2 mg VO/dia"},
 
     /* Procedimentos adicionais */
+    {id:"active_cooling",label:"Resfriamento ativo",category:"procedimentos_terapeuticos",subgroup:"Controle de temperatura",time_min:.5,points:0,result:"Resfriamento ativo iniciado com medidas físicas apropriadas e monitorização contínua."},
+    {id:"active_rewarming",label:"Aquecimento ativo",category:"procedimentos_terapeuticos",subgroup:"Controle de temperatura",time_min:.5,points:0,result:"Aquecimento ativo e manejo gentil iniciados, com monitorização contínua."},
     {id:"niv",label:"Ventilação não invasiva (CPAP/BiPAP)",category:"procedimentos_terapeuticos",subgroup:"Via aérea e ventilação",time_min:.5,points:0,result:"Ventilação não invasiva iniciada e ajustada."},
     {id:"high_flow_nasal_cannula",label:"Cânula nasal de alto fluxo",category:"procedimentos_terapeuticos",subgroup:"Via aérea e ventilação",time_min:.5,points:0,result:"Oxigenoterapia por cânula nasal de alto fluxo iniciada."},
     {id:"lumbar_puncture",label:"Punção lombar",category:"procedimentos_terapeuticos",subgroup:"Procedimentos diagnósticos",time_min:2,points:0,result:"Punção lombar realizada e líquor coletado."},
@@ -3547,6 +3550,21 @@
           adjustVital(explicit,"hr",-10,0,220);
         }
         break;
+      case "active_cooling":
+        reactionType="procedure";
+        if(/golpe de calor|hipertermia|heat stroke/.test(target)){
+          adjustVital(explicit,"temp",-1.5,30,43);
+          adjustVital(explicit,"hr",-10,0,220);
+        }
+        break;
+      case "active_rewarming":
+        reactionType="procedure";
+        if(/hipotermia/.test(target)){
+          adjustVital(explicit,"temp",1.0,25,42);
+          if(brady) adjustVital(explicit,"hr",6,0,220);
+          if(hypotensive) adjustBP(explicit,6,3);
+        }
+        break;
       case "niv":
         reactionType="ventilation";
         if(/edema agudo|insuficiencia respiratoria|dpoc|asma|broncoespasmo/.test(target) || hypoxemic){
@@ -3596,6 +3614,13 @@
         if(state.vitals?.pulse!==false && !shockable){
           adjustVital(explicit,"hr",18,0,220);
           adjustBP(explicit,18,10);
+        }
+        break;
+      case "high_dose_insulin":
+        reactionType="medication";
+        if(/betabloqueador|bloqueador de canal de calcio|bloqueador dos canais de calcio|calcio antagonista/.test(target)){
+          adjustBP(explicit,14,8);
+          if(brady) adjustVital(explicit,"hr",8,0,220);
         }
         break;
       case "norepi":
