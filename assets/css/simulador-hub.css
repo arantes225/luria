@@ -1194,3 +1194,40 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
   background-position:center!important;
   background-repeat:no-repeat!important;
 }
+
+
+/* === Prática Clínica · CTAs mais vivos v19 === */
+.sim-hub-page .sim-reference-button,
+.sim-hub-page .button.primary:not(:disabled),
+.sim-hub-page button.primary:not(:disabled),
+.sim-hub-page .sim-primary-button:not(:disabled){
+  background:color-mix(in srgb,var(--accent) 82%,#0788ff 18%)!important;
+  border-color:color-mix(in srgb,var(--accent) 84%,#056fda 16%)!important;
+  color:#fff!important;
+  box-shadow:0 7px 18px color-mix(in srgb,var(--accent) 28%,transparent)!important;
+  opacity:1!important;
+}
+.sim-hub-page .sim-reference-button:hover,
+.sim-hub-page .button.primary:not(:disabled):hover,
+.sim-hub-page button.primary:not(:disabled):hover,
+.sim-hub-page .sim-primary-button:not(:disabled):hover{
+  background:color-mix(in srgb,var(--accent) 70%,#087fff 30%)!important;
+  border-color:color-mix(in srgb,var(--accent) 74%,#056fda 26%)!important;
+  filter:none!important;
+  transform:translateY(-1px);
+  box-shadow:0 9px 22px color-mix(in srgb,var(--accent) 34%,transparent)!important;
+}
+.sim-hub-page .sim-reference-button:active,
+.sim-hub-page .button.primary:not(:disabled):active,
+.sim-hub-page button.primary:not(:disabled):active,
+.sim-hub-page .sim-primary-button:not(:disabled):active{
+  transform:translateY(0);
+  filter:brightness(.94)!important;
+}
+.sim-hub-page button:disabled,
+.sim-hub-page .button:disabled,
+.sim-hub-page .sim-primary-button:disabled{
+  opacity:.42!important;
+  box-shadow:none!important;
+  cursor:not-allowed!important;
+}
