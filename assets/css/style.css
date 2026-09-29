@@ -3431,3 +3431,17 @@ body.auth-page>.auth-card{
 :root[data-theme="light"] .error-cat-spotlight small{
   color:#fff!important;
 }
+
+
+/* Fallback de primeiro paint: ausência de data-theme é o tema claro. */
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .luria-page-spotlight,
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .daily-hero,
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .stats-hero,
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .flash-top-spotlight,
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .qs-v17-top,
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .error-cat-spotlight{
+  background:#184888!important;
+  background-color:#184888!important;
+  border-color:#184888!important;
+  color:#fff!important;
+}
