@@ -3413,3 +3413,22 @@ body[data-page="erros"] .error-metric-card{
     font-size:15px!important;
   }
 }
+
+
+/* v18.19 — Caderno de Erros alinhado ao espaçamento do Dashboard */
+@media(min-width:981px){
+  body[data-page="erros"] .topbar{
+    min-height:48px!important;
+    height:48px!important;
+    max-height:48px!important;
+    margin:0 0 14px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="erros"] .topbar + .error-metrics,
+  body[data-page="erros"] .topbar + .error-cat-spotlight,
+  body[data-page="erros"] .topbar + .luria-page-spotlight{
+    margin-top:0!important;
+  }
+}
