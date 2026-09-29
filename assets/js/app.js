@@ -6538,3 +6538,122 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Global topbar controls uniformity v35 */
+(function ensureGlobalTopbarControlsUniformity(){
+  if(document.getElementById("luria-global-topbar-controls-v35")) return;
+  const style=document.createElement("style");
+  style.id="luria-global-topbar-controls-v35";
+  style.textContent=`
+    /* Desktop/tablet: mesma caixa, raio, borda e alinhamento. */
+    body .topbar .luria-notifications{
+      display:flex!important;
+      align-items:center!important;
+      gap:10px!important;
+      min-height:48px!important;
+    }
+    body .topbar .luria-pomodoro-toggle{
+      height:48px!important;
+      min-height:48px!important;
+      min-width:164px!important;
+      padding:0 14px!important;
+      gap:10px!important;
+      border:1px solid var(--border)!important;
+      border-radius:12px!important;
+      box-sizing:border-box!important;
+      background:var(--surface)!important;
+    }
+    body .topbar .luria-notification-toggle,
+    body .topbar .luria-profile-toggle{
+      width:48px!important;
+      height:48px!important;
+      min-width:48px!important;
+      min-height:48px!important;
+      padding:0!important;
+      border:1px solid var(--border)!important;
+      border-radius:12px!important;
+      box-sizing:border-box!important;
+      background:var(--surface)!important;
+    }
+    body .topbar .luria-pomodoro-icon,
+    body .topbar .luria-pomodoro-icon svg{
+      width:22px!important;
+      height:22px!important;
+    }
+    body .topbar .luria-pomodoro-icon{flex:0 0 22px!important}
+    body .topbar .luria-notification-toggle > svg{
+      width:20px!important;
+      height:20px!important;
+    }
+    body .topbar .luria-profile-toggle{
+      display:grid!important;
+      place-items:center!important;
+      color:var(--accent)!important;
+      font-family:inherit!important;
+      font-size:17px!important;
+      font-weight:900!important;
+      line-height:1!important;
+      letter-spacing:-.02em!important;
+      text-align:center!important;
+    }
+    body .topbar .luria-pomodoro-copy strong{
+      font-size:13px!important;
+      line-height:1.05!important;
+      font-weight:850!important;
+    }
+    body .topbar .luria-pomodoro-copy small{
+      margin-top:2px!important;
+      font-size:11px!important;
+      line-height:1!important;
+      font-weight:800!important;
+    }
+
+    /* PWA/mobile: mesma escala compacta para os três controles. */
+    @media(max-width:980px){
+      html.pwa-standalone body .topbar .luria-notifications{
+        height:40px!important;
+        min-height:40px!important;
+        gap:6px!important;
+        align-items:center!important;
+        align-self:flex-start!important;
+        transform:translateY(-10px)!important;
+      }
+      html.pwa-standalone body .topbar .luria-pomodoro-toggle,
+      html.pwa-standalone body .topbar .luria-notification-toggle,
+      html.pwa-standalone body .topbar .luria-profile-toggle{
+        width:40px!important;
+        height:40px!important;
+        min-width:40px!important;
+        min-height:40px!important;
+        padding:0!important;
+        border-radius:11px!important;
+        box-sizing:border-box!important;
+        align-self:center!important;
+        transform:none!important;
+      }
+      html.pwa-standalone body .topbar .luria-pomodoro-toggle{
+        display:grid!important;
+        place-items:center!important;
+      }
+      html.pwa-standalone body .topbar .luria-pomodoro-icon,
+      html.pwa-standalone body .topbar .luria-pomodoro-icon svg{
+        width:19px!important;
+        height:19px!important;
+      }
+      html.pwa-standalone body .topbar .luria-pomodoro-icon{flex:0 0 19px!important}
+      html.pwa-standalone body .topbar .luria-notification-toggle > svg{
+        width:18px!important;
+        height:18px!important;
+      }
+      html.pwa-standalone body .topbar .luria-profile-toggle{
+        font-size:15px!important;
+        letter-spacing:-.02em!important;
+      }
+      html.pwa-standalone body .topbar .luria-pomodoro-copy{
+        display:none!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
