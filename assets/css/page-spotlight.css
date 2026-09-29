@@ -36,10 +36,10 @@ body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
 }
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight,
 body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight{
-  background:#184888!important;
-  background-color:#184888!important;
+  background:#0A2342!important;
+  background-color:#0A2342!important;
   color:#fff!important;
-  border-color:#184888!important;
+  border-color:#123A70!important;
   box-shadow:0 10px 30px rgba(17,65,130,.18)!important;
 }
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight:after,
