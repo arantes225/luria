@@ -1126,25 +1126,25 @@ const PAGE_INFO = {
   configuracoes: { title: "Configurações", eyebrow: "Sua conta" },
   admin: { title: "Admin", eyebrow: "Gestão LURIA" },
   beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta" },
-  trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina e atalhos" },
-  trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e organização" },
+  trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica" },
+  trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e plantões" },
   trabalho_plantoes: { title: "Escala", eyebrow: "Plantões e horários" },
-  trabalho_passometro: { title: "Passômetro", eyebrow: "Passos e acompanhamento" },
-  trabalho_prontuario_rapido: { title: "Cola rápida", eyebrow: "Consulta e acesso rápido" },
-  trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "Condutas e sequência" },
+  trabalho_passometro: { title: "Passômetro", eyebrow: "Passos e evolução" },
+  trabalho_prontuario_rapido: { title: "Cola rápida", eyebrow: "Consulta rápida" },
+  trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "PCR e condutas" },
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Ganhos e controle" },
-  trabalho_calculadora: { title: "Calculadoras", eyebrow: "Cálculos e ferramentas" },
-  trabalho_bulario: { title: "Bulário", eyebrow: "Medicamentos e posologias" },
+  trabalho_calculadora: { title: "Calculadoras", eyebrow: "Cálculos clínicos" },
+  trabalho_bulario: { title: "Bulário", eyebrow: "Medicamentos e doses" },
   trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Divisão de horários" },
   trabalho_diagnostico: { title: "Diagnóstico por Sintomas", eyebrow: "Sintomas e hipóteses" },
   trabalho_laboratorio: { title: "Laboratório", eyebrow: "Exames e interpretação" },
-  trabalho_prescricao: { title: "Prescrição", eyebrow: "Prescrições e esquemas" },
+  trabalho_prescricao: { title: "Prescrição", eyebrow: "Prescrições e doses" },
   trabalho_protocolos: { title: "Protocolos", eyebrow: "Protocolos e condutas" },
-  trabalho_ecg: { title: "ECG", eyebrow: "Traçados e interpretação" },
-  trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Reposição e correções" },
-  trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Receitas e tratamentos" },
+  trabalho_ecg: { title: "ECG", eyebrow: "Traçados e ritmo" },
+  trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Reposição e correção" },
+  trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Receitas e condutas" },
   trabalho_exames: { title: "Exames", eyebrow: "Exames e investigação" },
-  trabalho_scores: { title: "Scores", eyebrow: "Escores e estratificação" },
+  trabalho_scores: { title: "Scores", eyebrow: "Escores clínicos" },
   trabalho_antimicrobianos: { title: "Antimicrobianos", eyebrow: "Antibióticos e esquemas" },
 };
 
@@ -6114,12 +6114,15 @@ async function iniciarApp() {
         info.title;
     });
 
-  document
-    .querySelectorAll("[data-page-eyebrow]")
-    .forEach((el) => {
-      el.textContent =
-        info.eyebrow;
+  const eyebrowTargets = document.querySelectorAll("[data-page-eyebrow]");
+  if (eyebrowTargets.length) {
+    eyebrowTargets.forEach((el) => {
+      el.textContent = info.eyebrow;
     });
+  } else if (page.startsWith("trabalho_")) {
+    const fallbackEyebrow = document.querySelector(".topbar .page-heading .eyebrow");
+    if (fallbackEyebrow) fallbackEyebrow.textContent = info.eyebrow;
+  }
 
   // Logout resiliente a re-renderizações da sidebar.
   // A sidebar é substituída após carregar perfil/permissões; por isso o listener
