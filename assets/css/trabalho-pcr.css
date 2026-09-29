@@ -98,3 +98,60 @@
   .pwa-standalone .pcr-log-item strong{display:block;font-size:10px;line-height:1.2}.pwa-standalone .pcr-log-item time,.pwa-standalone .pcr-log-item small{font-size:8px}
   .pwa-standalone .pcr-disclaimer{font-size:8px;line-height:1.25}
 }
+
+
+/* v2026.09.29 — reposiciona timer PCR e 5H+5T após remoção do título */
+body[data-page="trabalho_pcr"] .pcr-topbar{
+  position:relative!important;
+  min-height:84px!important;
+  height:auto!important;
+  align-items:flex-end!important;
+}
+body[data-page="trabalho_pcr"] .pcr-topbar .page-heading{
+  display:none!important;
+}
+body[data-page="trabalho_pcr"] .pcr-top-actions{
+  width:100%!important;
+  margin:0!important;
+  padding-top:28px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-end!important;
+  gap:10px!important;
+}
+body[data-page="trabalho_pcr"] .pcr-cause-button{
+  min-height:42px!important;
+  height:42px!important;
+  padding:0 15px!important;
+  font-size:15px!important;
+  line-height:1!important;
+  flex:0 0 auto!important;
+}
+body[data-page="trabalho_pcr"] .pcr-time-card{
+  min-width:150px!important;
+  margin:0!important;
+  flex:0 0 auto!important;
+}
+@media(max-width:760px){
+  body[data-page="trabalho_pcr"] .pcr-topbar{
+    min-height:78px!important;
+    align-items:flex-end!important;
+  }
+  body[data-page="trabalho_pcr"] .pcr-top-actions{
+    width:100%!important;
+    padding-top:22px!important;
+    justify-content:space-between!important;
+    gap:8px!important;
+  }
+  body[data-page="trabalho_pcr"] .pcr-cause-button{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:42px!important;
+    height:42px!important;
+    font-size:13px!important;
+  }
+  body[data-page="trabalho_pcr"] .pcr-time-card{
+    min-width:128px!important;
+  }
+}
