@@ -687,12 +687,11 @@
           </div>
           <div class="plantao-featured-inner">
             <div class="plantao-featured-top">
-              <span class="plantao-featured-label">★ Caso em destaque</span>
+              <span class="plantao-featured-label">Caso em destaque</span>
               <span class="plantao-featured-meta">◷ 25 min &nbsp;&nbsp; ▥ ${esc(featured.difficulty||"Intermediário")}</span>
             </div>
             <div class="plantao-featured-copy">
               <h2>${esc(title)}</h2>
-              <p>${esc(summary)}</p>
               <div class="plantao-featured-tags">
                 <span>${esc(featured.specialty||"Clínica Médica")}</span>
                 <span>${esc(materia)}</span>
