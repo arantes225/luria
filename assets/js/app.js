@@ -7184,3 +7184,27 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Dashboard-width timer v37 */
+(function ensureDashboardWidthTimer(){
+  if(document.getElementById("luria-dashboard-width-timer-v37")) return;
+  const style=document.createElement("style");
+  style.id="luria-dashboard-width-timer-v37";
+  style.textContent=`
+    @media(min-width:981px){
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-toggle{
+        width:auto!important;
+        min-width:0!important;
+        max-width:none!important;
+        padding:0 10px!important;
+        gap:8px!important;
+      }
+      body:not([data-page="dashboard"]) .topbar .luria-pomodoro-copy{
+        width:auto!important;
+        min-width:0!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
