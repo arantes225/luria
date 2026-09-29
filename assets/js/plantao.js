@@ -710,11 +710,11 @@
     const randomButton=$("plantao-random-case");
     if(randomButton) randomButton.disabled=!visibleCases.length;
     if(!visibleCases.length){
-      grid.innerHTML="";
-      empty.hidden=false;
+      if(grid) grid.innerHTML="";
+      if(empty) empty.hidden=false;
       return;
     }
-    empty.hidden=true;
+    if(empty) empty.hidden=true;
 
     const cardCases=featured ? visibleCases.filter(item=>String(item.id)!==String(featured.id)) : visibleCases;
     grid.innerHTML=cardCases.map((item,index)=>{
