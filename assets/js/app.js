@@ -427,7 +427,7 @@
       -webkit-user-select:none!important;
     }
     @media (min-width:981px) {
-      body:not([data-page="dashboard"]) .luria-top-controls-drag-handle {
+      .luria-top-controls-drag-handle {
         display:grid;
       }
     }
@@ -3493,9 +3493,11 @@ function applyLuriaTopControlsPosition(center, position) {
   const top = Math.min(Math.max(8, Number(position.top) || 8), maxTop);
   const right = Math.min(Math.max(8, Number(position.right) || 8), maxRight);
 
+  center.style.setProperty("position", "fixed", "important");
   center.style.setProperty("top", `${top}px`, "important");
   center.style.setProperty("right", `${right}px`, "important");
   center.style.setProperty("left", "auto", "important");
+  center.style.setProperty("z-index", "2147482001", "important");
   center.dataset.luriaCustomPosition = "1";
 }
 
@@ -3504,9 +3506,11 @@ function resetLuriaTopControlsPosition(center) {
     localStorage.removeItem(luriaTopControlsPositionKey());
   } catch {}
 
+  center?.style.removeProperty("position");
   center?.style.removeProperty("top");
   center?.style.removeProperty("right");
   center?.style.removeProperty("left");
+  center?.style.removeProperty("z-index");
   if (center) delete center.dataset.luriaCustomPosition;
 }
 
@@ -3540,9 +3544,11 @@ function wireLuriaTopControlsDrag(center) {
     );
     const nextRight = Math.max(8, window.innerWidth - nextLeft - drag.width);
 
+    center.style.setProperty("position", "fixed", "important");
     center.style.setProperty("top", `${nextTop}px`, "important");
     center.style.setProperty("right", `${nextRight}px`, "important");
     center.style.setProperty("left", "auto", "important");
+    center.style.setProperty("z-index", "2147482001", "important");
     center.dataset.luriaCustomPosition = "1";
   };
 
