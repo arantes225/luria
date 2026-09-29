@@ -1,5 +1,5 @@
 /* LURIA Flashcards v21 — rebuild */
-body[data-page="flashcards"] .page{max-width:1500px}
+body[data-page="flashcards"] .page{width:100%;max-width:1320px}
 .flash-dashboard-overview{display:none!important}
 .flash-tabs{position:sticky;top:10px;z-index:30;display:flex!important;width:max-content;gap:5px;margin:8px 0 18px;padding:5px!important;border:1px solid var(--border)!important;border-radius:14px!important;background:color-mix(in srgb,var(--surface) 94%,transparent)!important;backdrop-filter:blur(18px)}
 .flash-tab{min-height:38px;padding:0 16px!important;border:0!important;border-radius:10px!important;background:transparent!important;font-size:10px!important;font-weight:850!important}
