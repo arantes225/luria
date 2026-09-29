@@ -7143,3 +7143,20 @@ iniciarApp();
 /* Exact topbar/title geometry v37 — disabled.
    Topbar and title geometry are now CSS-only to avoid layout shaking. */
 
+
+
+/* LURIA_BACK_SWITCH_BUTTONS_V1 */
+(function(){
+  function syncBackButtons(){
+    document.querySelectorAll('button,a,[role="button"]').forEach(function(el){
+      var txt=(el.textContent||'').trim().toLowerCase();
+      var aria=(el.getAttribute('aria-label')||'').trim().toLowerCase();
+      if(txt==='voltar'||txt.startsWith('voltar ')||txt.startsWith('← voltar')||aria==='voltar'||aria.startsWith('voltar ')){
+        el.classList.add('luria-back-switch-btn');
+      }
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',syncBackButtons,{once:true});
+  else syncBackButtons();
+  new MutationObserver(syncBackButtons).observe(document.documentElement,{childList:true,subtree:true});
+})();
