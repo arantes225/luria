@@ -14343,11 +14343,12 @@ function renderLibrary() {
 
   const areasHtml=[...catalog].map(([area,subjects])=>{
     const entries=realByArea.get(area)||[];
+    const addSubjectKey=encodeURIComponent(area);
     return '<section class="notebook-area-shelf"><header class="notebook-area-shelf-head"><span class="notebook-area-shelf-icon">'+areaIcon(area)+'</span><div><strong>'+escapeHtml(area)+'</strong><small>'+subjects.size+' matéria'+(subjects.size===1?'':'s')+'</small></div></header><div class="notebook-book-grid">'+[...subjects].map(subject=>{
       const pages=entries.filter(e=>subjectFor(e)===subject);
       const key=encodeURIComponent(area+"|||"+subject);
       return '<article class="notebook-book-card notebook-subject-card" data-subject-card="'+key+'"><div class="notebook-book-top"><span class="notebook-book-icon">'+areaIcon(subject)+'</span><span class="notebook-book-menu">›</span></div><h3>'+escapeHtml(subject)+'</h3><p>'+escapeHtml(area)+'</p><div class="notebook-book-meta"><span><b>'+pages.length+'</b><small>páginas</small></span></div><button class="notebook-book-open" type="button" data-open-subject="'+key+'" aria-label="Abrir '+escapeHtml(subject)+'"></button></article>';
-    }).join("")+'</div></section>';
+    }).join("")+'<button class="notebook-add-book-card notebook-add-subject-book" type="button" data-notebook-add-subject="'+addSubjectKey+'" aria-label="Criar caderno de matéria em '+escapeHtml(area)+'"><span>＋</span><small>Criar caderno de matéria</small></button></div></section>';
   }).join("");
 
   list.innerHTML=weekHtml+areasHtml+'<section id="notebook-subject-pages" class="notebook-subject-pages" hidden></section>';
@@ -14370,6 +14371,28 @@ function renderLibrary() {
       const modal=document.getElementById("notebook-free-modal");
       if(modal){modal.dataset.subject=subject;modal.dataset.area=area;}
     });
+  }));
+  list.querySelectorAll("[data-notebook-add-subject]").forEach(button=>button.addEventListener("click",async()=>{
+    const area=decodeURIComponent(button.dataset.notebookAddSubject||"");
+    const subject=String(await window.LuriaDialog.prompt("Nome da matéria:","")||"").trim();
+    if(!subject)return;
+
+    openFreePageModal();
+
+    const areaInput=document.getElementById("notebook-free-area");
+    const titleInput=document.getElementById("notebook-free-title");
+    const modal=document.getElementById("notebook-free-modal");
+
+    if(areaInput)areaInput.value=area;
+    if(titleInput){
+      titleInput.value=subject;
+      titleInput.focus();
+      titleInput.select();
+    }
+    if(modal){
+      modal.dataset.subject=subject;
+      modal.dataset.area=area;
+    }
   }));
   list.querySelectorAll("[data-notebook-add]").forEach(b=>b.addEventListener("click",()=>document.getElementById("notebook-new-free-page")?.click()));
   updateLibraryActions();
