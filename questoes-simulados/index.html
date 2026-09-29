@@ -1166,6 +1166,304 @@
         grid-template-columns: 65px 1fr 70px 86px;
       }
     }
+    /* =====================================================
+       HOME — QUESTÕES E SIMULADOS
+       ===================================================== */
+    .qs-home.qs-mode-section.active{
+      display:grid!important;
+      gap:16px;
+      margin-bottom:16px;
+    }
+    .qs-legacy-history{display:none!important}
+    .qs-home-top{
+      display:grid;
+      grid-template-columns:minmax(0,1.42fr) minmax(320px,.88fr);
+      gap:16px;
+    }
+    .qs-home-next,.qs-home-week,.qs-home-last{
+      border:1px solid var(--border);
+      border-radius:18px;
+      background:var(--surface);
+      overflow:hidden;
+    }
+    .qs-home-next{
+      position:relative;
+      min-height:286px;
+      padding:28px;
+      display:flex;
+      align-items:center;
+      background:
+        radial-gradient(circle at 88% 20%,rgba(255,255,255,.14),transparent 27%),
+        linear-gradient(135deg,#123f73 0%,#184888 54%,#0b2c52 100%);
+      color:#fff;
+      border-color:transparent;
+      box-shadow:0 12px 30px rgba(24,72,136,.16);
+    }
+    .qs-home-next-copy{position:relative;z-index:2;max-width:68%}
+    .qs-home-kicker,.qs-home-eyebrow{
+      display:block;
+      font-size:9px;
+      font-weight:900;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .qs-home-kicker{color:rgba(255,255,255,.76)}
+    .qs-home-next h2{
+      margin:9px 0 0;
+      font-size:27px;
+      line-height:1.12;
+      color:#fff;
+    }
+    .qs-home-next p{
+      margin:8px 0 0;
+      color:rgba(255,255,255,.76);
+      font-size:11px;
+      line-height:1.5;
+    }
+    .qs-home-next-meta{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+      margin-top:22px;
+    }
+    .qs-home-next-meta span{display:flex;align-items:center;gap:7px}
+    .qs-home-next-meta svg{
+      width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;
+      color:rgba(255,255,255,.78)
+    }
+    .qs-home-next-meta strong{font-size:10px;color:#fff}
+    .qs-home-primary{
+      min-height:43px;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      margin-top:23px;
+      padding:0 18px;
+      border:0;
+      border-radius:10px;
+      background:#fff;
+      color:#123f73;
+      font-size:11px;
+      font-weight:900;
+      cursor:pointer;
+      box-shadow:0 5px 14px rgba(0,0,0,.12);
+    }
+    .qs-home-primary svg{
+      width:15px;height:15px;fill:currentColor;stroke:currentColor;stroke-width:1.4
+    }
+    .qs-home-next-art{
+      position:absolute;
+      right:-16px;
+      bottom:-28px;
+      width:43%;
+      height:112%;
+      opacity:.9;
+      transform:rotate(-5deg);
+    }
+    .qs-home-paper{
+      position:absolute;
+      right:32px;
+      bottom:27px;
+      width:180px;
+      height:220px;
+      border:1px solid rgba(255,255,255,.24);
+      border-radius:16px;
+      background:linear-gradient(160deg,rgba(255,255,255,.18),rgba(255,255,255,.04));
+      box-shadow:0 20px 50px rgba(0,0,0,.16);
+    }
+    .qs-home-paper:before{
+      content:"";
+      position:absolute;
+      inset:34px 28px;
+      background:repeating-linear-gradient(to bottom,rgba(255,255,255,.28) 0 2px,transparent 2px 24px);
+      opacity:.55;
+    }
+    .qs-home-ring{
+      position:absolute;
+      right:88px;
+      bottom:44px;
+      width:95px;height:95px;
+      border:14px solid rgba(255,255,255,.2);
+      border-radius:50%;
+      box-shadow:22px 20px 0 -8px rgba(255,255,255,.09);
+    }
+    .qs-home-week{padding:21px}
+    .qs-home-section-head{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .qs-home-eyebrow{color:var(--accent);opacity:.82}
+    .qs-home-section-head h2{
+      margin:5px 0 0;
+      font-size:16px;
+      color:var(--text);
+    }
+    .qs-home-week-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:9px;
+      margin-top:17px;
+    }
+    .qs-home-metric{
+      min-height:96px;
+      padding:12px;
+      border:1px solid var(--border);
+      border-radius:13px;
+      background:var(--surface-2);
+    }
+    .qs-home-metric-icon{
+      width:30px;height:30px;
+      display:grid;place-items:center;
+      border-radius:10px;
+      background:var(--accent-soft);
+      color:var(--accent);
+    }
+    .qs-home-metric.success .qs-home-metric-icon{color:var(--success);background:color-mix(in srgb,var(--success) 10%,var(--surface))}
+    .qs-home-metric.danger .qs-home-metric-icon{color:var(--danger);background:color-mix(in srgb,var(--danger) 9%,var(--surface))}
+    .qs-home-metric.accent .qs-home-metric-icon{color:#7c4dce;background:color-mix(in srgb,#7c4dce 10%,var(--surface))}
+    .qs-home-metric-icon svg{
+      width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round
+    }
+    .qs-home-metric strong{
+      display:block;
+      margin-top:9px;
+      font-size:20px;
+      line-height:1;
+    }
+    .qs-home-metric small{
+      display:block;
+      margin-top:5px;
+      color:var(--muted);
+      font-size:9px;
+    }
+    .qs-home-actions{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+    }
+    .qs-home-action{
+      position:relative;
+      min-height:150px;
+      display:grid;
+      grid-template-columns:auto minmax(0,1fr) auto;
+      grid-template-rows:auto 1fr;
+      gap:12px;
+      padding:18px;
+      overflow:hidden;
+      border:1px solid var(--border);
+      border-radius:16px;
+      background:var(--surface);
+      color:var(--text);
+      text-align:left;
+      cursor:pointer;
+    }
+    .qs-home-action:after{
+      content:"";
+      position:absolute;
+      right:-40px;
+      bottom:-54px;
+      width:150px;height:150px;
+      border-radius:42px;
+      transform:rotate(26deg);
+      background:currentColor;
+      opacity:.045;
+    }
+    .qs-home-action-create{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,#4f91e8 9%,var(--surface)))}
+    .qs-home-action-upload{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,#41b883 10%,var(--surface)))}
+    .qs-home-action-library{background:linear-gradient(135deg,var(--surface),color-mix(in srgb,#8a63d2 10%,var(--surface)))}
+    .qs-home-action-icon{
+      width:38px;height:38px;
+      display:grid;place-items:center;
+      border-radius:12px;
+      background:var(--accent-soft);
+      color:var(--accent);
+    }
+    .qs-home-action-upload .qs-home-action-icon{color:#22a06b;background:color-mix(in srgb,#22a06b 11%,var(--surface))}
+    .qs-home-action-library .qs-home-action-icon{color:#7c4dce;background:color-mix(in srgb,#7c4dce 11%,var(--surface))}
+    .qs-home-action-icon svg{
+      width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round
+    }
+    .qs-home-action-copy{grid-column:1/3;align-self:end}
+    .qs-home-action-copy strong{display:block;font-size:15px}
+    .qs-home-action-copy small{
+      display:block;
+      margin-top:6px;
+      max-width:245px;
+      color:var(--muted);
+      font-size:9.5px;
+      line-height:1.48;
+    }
+    .qs-home-action-arrow{
+      align-self:start;
+      justify-self:end;
+      font-size:17px;
+      font-weight:900;
+      color:var(--accent);
+    }
+    .qs-home-last{padding:18px 20px}
+    .qs-home-last-head{align-items:center}
+    .qs-home-link,.qs-inner-back{
+      border:0;background:transparent;color:var(--accent);font-size:10px;font-weight:850;cursor:pointer
+    }
+    .qs-inner-back{
+      display:block;
+      width:max-content;
+      margin:0 0 10px;
+      padding:0;
+    }
+    .qs-home-last-content{margin-top:13px}
+    .qs-home-last-row{
+      display:grid;
+      grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(92px,.48fr)) auto;
+      gap:14px;
+      align-items:center;
+      padding:14px;
+      border-radius:13px;
+      background:var(--surface-2);
+    }
+    .qs-home-last-main strong{display:block;font-size:12px}
+    .qs-home-last-main small{display:block;margin-top:4px;color:var(--muted);font-size:9px}
+    .qs-home-last-stat span{display:block;color:var(--muted);font-size:8px}
+    .qs-home-last-stat strong{display:block;margin-top:3px;font-size:12px}
+    .qs-home-last-accuracy{
+      min-width:74px;
+      padding:10px 12px;
+      border-radius:11px;
+      background:color-mix(in srgb,var(--success) 9%,var(--surface));
+      color:var(--success);
+      text-align:center;
+      font-size:14px;
+      font-weight:900;
+    }
+    .qs-home-last-open{
+      min-height:34px;
+      padding:0 12px;
+      border:1px solid var(--accent);
+      border-radius:9px;
+      background:transparent;
+      color:var(--accent);
+      font-size:9px;
+      font-weight:850;
+      cursor:pointer;
+    }
+    @media(max-width:1050px){
+      .qs-home-top{grid-template-columns:1fr}
+      .qs-home-actions{grid-template-columns:1fr}
+      .qs-home-action{min-height:118px}
+    }
+    @media(max-width:760px){
+      .qs-home-next{min-height:250px;padding:22px}
+      .qs-home-next-copy{max-width:100%}
+      .qs-home-next-art{display:none}
+      .qs-home-next h2{font-size:23px}
+      .qs-home-week-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .qs-home-last-row{grid-template-columns:1fr 1fr}
+      .qs-home-last-main{grid-column:1/-1}
+      .qs-home-last-open{grid-column:1/-1}
+    }
+
   </style>
   <link rel="canonical" href="/questoes-simulados/">
   <script>(function(){try{if(location.pathname.endsWith("/questoes-simulados.html"))history.replaceState(null,"","/questoes-simulados/"+location.search+location.hash);}catch(e){}})();</script>
@@ -1187,91 +1485,153 @@
           </div>
         </header>
 
-        <section class="qs-mode-tabs" aria-label="Seções de Questões e Simulados">
-          <button class="qs-mode-tab active" type="button" data-qs-mode="mine">
-            Meus simulados
-          </button>
-
-          <button class="qs-mode-tab" type="button" data-qs-mode="add">
-            Adicionar simulado
-          </button>
-
-          <button class="qs-mode-tab" type="button" data-qs-mode="library">
-            Biblioteca
-          </button>
-
-          <a class="qs-start-button" href="ambientacao.html">
-            Iniciar lista ou simulado
-          </a>
-        </section>
-
-        <!-- =================================================
-             DASHBOARD ENXUTO
-             ================================================= -->
         <section
-          class="qs-mode-section active qs-compact-dashboard"
+          class="qs-mode-section active qs-home"
           data-qs-section="mine"
-          aria-label="Dashboard de questões e simulados"
+          aria-label="Visão geral de questões e simulados"
         >
-          <div class="qs-dashboard-top">
-            <article class="qs-dashboard-stat">
-              <span>Semana atual</span>
-              <strong id="qs-week-questions">—</strong>
-              <small>Questões respondidas</small>
+          <div class="qs-home-top">
+            <article class="qs-home-next">
+              <div class="qs-home-next-copy">
+                <span class="qs-home-kicker">Próximo simulado</span>
+                <h2 id="qs-home-next-title">Carregando seus simulados...</h2>
+                <p id="qs-home-next-subtitle">Continue de onde parou ou comece um novo simulado.</p>
+
+                <div class="qs-home-next-meta">
+                  <span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v3M16 2v3M3.5 9h17M5 4h14a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/></svg>
+                    <strong id="qs-home-next-date">Disponível agora</strong>
+                  </span>
+                  <span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/></svg>
+                    <strong id="qs-home-next-count">— questões</strong>
+                  </span>
+                  <span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg>
+                    <strong id="qs-home-next-progress">Pronto para começar</strong>
+                  </span>
+                </div>
+
+                <button id="qs-home-next-open" class="qs-home-primary" type="button">
+                  <span>Iniciar simulado</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 7 6-7 6z"/></svg>
+                </button>
+              </div>
+
+              <div class="qs-home-next-art" aria-hidden="true">
+                <div class="qs-home-paper"></div>
+                <div class="qs-home-ring"></div>
+              </div>
             </article>
 
-            <article class="qs-dashboard-stat accuracy">
-              <span>Semana atual</span>
-              <strong id="qs-week-accuracy">—</strong>
-              <small>Percentual de acertos</small>
-            </article>
+            <article class="qs-home-week">
+              <div class="qs-home-section-head">
+                <div>
+                  <span class="qs-home-eyebrow">Resumo</span>
+                  <h2>Meus números da semana</h2>
+                </div>
+              </div>
 
-            <article class="qs-dashboard-stat error">
-              <span>Semana atual</span>
-              <strong id="qs-week-error">—</strong>
-              <small>Percentual de erros</small>
+              <div class="qs-home-week-grid">
+                <div class="qs-home-metric">
+                  <span class="qs-home-metric-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/></svg>
+                  </span>
+                  <strong id="qs-week-questions">—</strong>
+                  <small>Questões respondidas</small>
+                </div>
+
+                <div class="qs-home-metric success">
+                  <span class="qs-home-metric-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg>
+                  </span>
+                  <strong id="qs-week-accuracy">—</strong>
+                  <small>Taxa de acerto</small>
+                </div>
+
+                <div class="qs-home-metric danger">
+                  <span class="qs-home-metric-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17"/></svg>
+                  </span>
+                  <strong id="qs-week-wrong">0</strong>
+                  <small>Erros na semana</small>
+                </div>
+
+                <div class="qs-home-metric accent">
+                  <span class="qs-home-metric-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19V2"/></svg>
+                  </span>
+                  <strong id="qs-home-week-sims">0</strong>
+                  <small>Simulados cadastrados</small>
+                </div>
+              </div>
             </article>
           </div>
 
-          <article class="qs-dashboard-trend">
-            <div class="qs-dashboard-trend-head">
-              <div>
-                <span class="badge accent">Desempenho</span>
-                <h2>Desempenho ao longo do tempo</h2>
-                <p>Aproveitamento diário das questões.</p>
-              </div>
+          <div class="qs-home-actions" aria-label="Ações de simulados">
+            <button class="qs-home-action qs-home-action-create" type="button" data-qs-mode="add" data-qs-add-mode="manual">
+              <span class="qs-home-action-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6zM9 8h6M9 12h6M9 16h3"/><path d="M18 14h4M20 12v4"/></svg>
+              </span>
+              <span class="qs-home-action-copy">
+                <strong>Criar novo simulado</strong>
+                <small>Monte um simulado manual e comece a resolver.</small>
+              </span>
+              <span class="qs-home-action-arrow">→</span>
+            </button>
 
-              <strong id="qs-fortnight-current" class="qs-fortnight-current">—</strong>
+            <button class="qs-home-action qs-home-action-upload" type="button" data-qs-mode="add" data-qs-add-mode="automatic">
+              <span class="qs-home-action-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 14v6h14v-6"/></svg>
+              </span>
+              <span class="qs-home-action-copy">
+                <strong>Enviar simulado</strong>
+                <small>Importe um PDF e deixe o LURIA organizar as questões.</small>
+              </span>
+              <span class="qs-home-action-arrow">→</span>
+            </button>
+
+            <button class="qs-home-action qs-home-action-library" type="button" data-qs-mode="library">
+              <span class="qs-home-action-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v14H4zM10 5h4v14h-4zM16 5h4v14h-4z"/></svg>
+              </span>
+              <span class="qs-home-action-copy">
+                <strong>Biblioteca de simulados</strong>
+                <small>Acesse seus simulados enviados e já realizados.</small>
+              </span>
+              <span class="qs-home-action-arrow">→</span>
+            </button>
+          </div>
+
+          <article class="qs-home-last">
+            <div class="qs-home-section-head qs-home-last-head">
+              <div>
+                <span class="qs-home-eyebrow">Histórico</span>
+                <h2>Último simulado</h2>
+              </div>
+              <button class="qs-home-link" type="button" data-qs-mode="library">Ver todos →</button>
             </div>
 
-            <div
-              id="qs-fortnight-chart"
-              class="qs-fortnight-chart"
-              role="img"
-              aria-label="Gráfico linear de desempenho ao longo do tempo"
-            >
+            <div id="qs-home-last-content" class="qs-home-last-content">
               <div class="qs-empty">Carregando...</div>
             </div>
-
-            <small id="qs-fortnight-helper">
-              Aproveitamento diário nos últimos 14 dias
-            </small>
           </article>
 
-          <!-- IDs auxiliares mantidos para compatibilidade com o JS atual. -->
+          <!-- Compatibilidade com as métricas e gráficos já existentes. -->
           <div hidden aria-hidden="true">
             <span id="qs-week-correct">0</span>
-            <span id="qs-week-wrong">0</span>
+            <span id="qs-week-error">—</span>
             <span id="qs-week-helper"></span>
             <span id="qs-week-bar-correct"></span>
             <span id="qs-week-bar-wrong"></span>
             <span id="qs-week-ring"></span>
-
             <span id="qs-total-bar-correct"></span>
             <span id="qs-total-bar-wrong"></span>
             <span id="qs-trend-current"></span>
             <span id="qs-recent-count"></span>
-
+            <span id="qs-fortnight-current"></span>
+            <div id="qs-fortnight-chart"></div>
+            <small id="qs-fortnight-helper"></small>
             <div id="qs-recent-results"></div>
             <div id="qs-monthly-chart"></div>
           </div>
@@ -1282,6 +1642,7 @@
           <section class="qs-panel qs-mode-section" data-qs-section="add">
             <div class="qs-head">
               <div>
+                <button class="qs-inner-back" type="button" data-qs-mode="mine">← Visão geral</button>
                 <span class="badge accent">Adicionar</span>
                 <h2>Novo simulado</h2>
                 <p>
@@ -1426,7 +1787,7 @@
           </section>
 
           <!-- MEUS SIMULADOS -->
-          <section class="qs-panel qs-mode-section active" data-qs-section="mine">
+          <section class="qs-panel qs-mode-section active qs-legacy-history" data-qs-section="mine">
             <div class="qs-head">
               <div>
                 <h2>Meus simulados</h2>
@@ -1443,6 +1804,7 @@
           <section class="qs-panel qs-mode-section" data-qs-section="library">
             <div class="qs-head">
               <div>
+                <button class="qs-inner-back" type="button" data-qs-mode="mine">← Visão geral</button>
                 <span class="badge accent">Gerenciar</span>
                 <h2>Biblioteca de simulados</h2>
                 <p>Edite o nome dos simulados ou exclua um ou vários de uma vez.</p>
@@ -1667,7 +2029,7 @@
   <script src="assets/js/supabase.js"></script>
   <script src="/assets/js/weekly-content.js?v=1"></script>\n  <script src="assets/js/app.js?v=17.8-streak"></script>
   <script src="assets/js/study-mode.js?v=13.0"></script>
-  <script src="assets/js/questoes-simulados.js?v=19.4"></script>
+  <script src="assets/js/questoes-simulados.js?v=19.5-home"></script>
 
   <script>
     /* O JS principal já calcula a taxa de acerto semanal.
