@@ -241,6 +241,11 @@
       const el=$(id);
       if (el) el.hidden = id !== section;
     });
+
+    // O retorno para Prática Clínica pertence somente à biblioteca geral.
+    const practiceBackRow=document.querySelector(".plantao-practice-back-row");
+    if(practiceBackRow) practiceBackRow.hidden = section !== "plantao-library";
+
     if(persist){
       savePlantaoView({
         mode:state.phoneMode ? "phone" : "emergency",
