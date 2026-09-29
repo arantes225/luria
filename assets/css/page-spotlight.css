@@ -205,3 +205,62 @@ body.pink[data-page="questoes"] .qs-home-art-next{opacity:.82!important}
   }
 }
 
+
+
+/* QS image rendering fix — use real <img> elements instead of CSS backgrounds */
+body[data-page="questoes"] img.qs-home-card-art{
+  pointer-events:none!important;
+  position:absolute!important;
+  z-index:2!important;
+  display:block!important;
+  visibility:visible!important;
+  object-fit:contain!important;
+  object-position:right bottom!important;
+  background:none!important;
+  mix-blend-mode:normal!important;
+  filter:saturate(.96)!important;
+}
+body[data-page="questoes"] img.qs-home-art-next{
+  right:-8px!important;
+  bottom:-18px!important;
+  width:58%!important;
+  height:118%!important;
+  opacity:.92!important;
+}
+body[data-page="questoes"] .qs-home-action img.qs-home-card-art{
+  right:-14px!important;
+  bottom:-16px!important;
+  width:49%!important;
+  height:116%!important;
+  opacity:.82!important;
+}
+body[data-theme="dark"][data-page="questoes"] img.qs-home-card-art,
+body.dark[data-page="questoes"] img.qs-home-card-art{
+  filter:saturate(.9) brightness(.9)!important;
+  opacity:.78!important;
+}
+body[data-theme="pink"][data-page="questoes"] img.qs-home-card-art,
+body.pink[data-page="questoes"] img.qs-home-card-art{
+  filter:hue-rotate(55deg) saturate(.74) brightness(1.03)!important;
+  opacity:.74!important;
+}
+body[data-theme="pink"][data-page="questoes"] img.qs-home-art-next,
+body.pink[data-page="questoes"] img.qs-home-art-next{
+  opacity:.82!important;
+}
+@media(max-width:760px){
+  body[data-page="questoes"] img.qs-home-art-next{
+    right:-18px!important;
+    bottom:-8px!important;
+    width:48%!important;
+    height:96%!important;
+    opacity:.62!important;
+  }
+  body[data-page="questoes"] .qs-home-action img.qs-home-card-art{
+    right:-14px!important;
+    bottom:-12px!important;
+    width:44%!important;
+    height:108%!important;
+    opacity:.56!important;
+  }
+}
