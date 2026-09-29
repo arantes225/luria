@@ -2,6 +2,7 @@
 const sb=window.supabaseClient;
 if(!sb)return;
 const $=id=>document.getElementById(id);
+const setText=(id,value)=>{const el=$(id);if(el)el.textContent=value};
 const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
 const fmtAgo=iso=>{if(!iso)return "";const diff=Date.now()-new Date(iso).getTime();const m=Math.max(1,Math.round(diff/60000));if(m<60)return "Há "+m+" min";const h=Math.round(m/60);if(h<24)return "Há "+h+" h";const d=Math.round(h/24);return "Há "+d+" d"};
 async function init(){
@@ -16,19 +17,20 @@ async function init(){
       sb.from("interconsultation_messages").select("id",{count:"exact",head:true}).eq("user_id",user.id)
     ]);
     const caseRows=cases.data||[], clinicalRows=clinical.data||[], zapRows=zap.data||[];
-    $("sim-emergency-total").textContent=cases.count??caseRows.length;
-    $("sim-zap-total").textContent=zapCases.count??0;
+    setText("sim-emergency-total",cases.count??caseRows.length);
+    setText("sim-zap-total",zapCases.count??0);
     const completed=clinicalRows.filter(x=>x.status==="completed").length+zapRows.filter(x=>x.status==="completed").length;
     const active=clinicalRows.filter(x=>x.status==="in_progress").length+zapRows.filter(x=>x.status==="in_progress").length;
     const scores=[...clinicalRows,...zapRows].map(x=>Number(x.score||0)).filter(x=>x>0);
-    $("sim-completed").textContent=completed;
-    $("sim-active").textContent=active;
-    $("sim-zap-messages").textContent=msgs.count??0;
-    $("sim-score").textContent=scores.length?Math.round(scores.reduce((a,b)=>a+b,0)/scores.length)+"%":"—";
-    $("sim-donut-total").textContent=completed;
-    $("sim-progress-copy").textContent=completed?("Você já concluiu "+completed+" caso"+(completed===1?"":"s")+" no Simulador."):"Seu histórico aparecerá aqui conforme você praticar.";
+    setText("sim-completed",completed);
+    setText("sim-active",active);
+    setText("sim-zap-messages",msgs.count??0);
+    setText("sim-score",scores.length?Math.round(scores.reduce((a,b)=>a+b,0)/scores.length)+"%":"—");
+    setText("sim-donut-total",completed);
+    setText("sim-progress-copy",completed?("Você já concluiu "+completed+" caso"+(completed===1?"":"s")+" no Simulador."):"Seu histórico aparecerá aqui conforme você praticar.");
 
     const scoredSessions=[...clinicalRows,...zapRows]
+      .filter(row=>row.status==="completed")
       .map(row=>Number(row.score))
       .filter(score=>Number.isFinite(score)&&score>=0);
 
@@ -40,7 +42,8 @@ async function init(){
     ];
 
     const scoreTotal=scoredSessions.length;
-    $("sim-recent-list").innerHTML=scoreTotal
+    const recentList=$("sim-recent-list");
+    if(recentList) recentList.innerHTML=scoreTotal
       ? scoreBands.map((band,index)=>{
           const count=scoredSessions.filter(score=>score>=band.min&&score<=band.max).length;
           const pct=Math.round((count/scoreTotal)*100);
@@ -58,14 +61,16 @@ async function init(){
     const specialties=Object.entries(counts).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],"pt-BR"));
     const specialtyTotal=specialties.reduce((s,x)=>s+x[1],0)||1;
 
-    $("sim-specialty-legend").innerHTML=specialties.map((x,index)=>
+    const specialtyLegend=$("sim-specialty-legend");
+    if(specialtyLegend) specialtyLegend.innerHTML=specialties.map((x,index)=>
       '<div class="sim-specialty-legend-row" style="--legend-index:'+index+'">'
       +'<span>'+esc(x[0])+'</span>'
       +'<b>'+x[1]+' caso'+(x[1]===1?'':'s')+'</b>'
       +'</div>'
     ).join("");
 
-    $("sim-mini-bars").innerHTML=specialties.length
+    const miniBars=$("sim-mini-bars");
+    if(miniBars) miniBars.innerHTML=specialties.length
       ? specialties.map((x,index)=>{
           const pct=Math.round((x[1]/specialtyTotal)*100);
           return '<div class="sim-specialty-list-row">'
