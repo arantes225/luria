@@ -3662,3 +3662,79 @@ body.theme-dark .error-cat-spotlight{
     font-size: 13px !important;
   }
 }
+
+
+/* v2026.09.29 — alinhamento global de conteúdo em botões */
+button,
+.button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+  text-align:center !important;
+  vertical-align:middle !important;
+}
+
+/* Botões base: centraliza texto/ícone sem alterar largura definida pelo componente */
+button:not(.icon-only):not([aria-label]):not(.sidebar-desktop-toggle):not(.luria-notification-toggle):not(.luria-profile-toggle),
+.button:not(.icon-only),
+[role="button"]:not(.icon-only){
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+
+/* Conteúdo interno também fica centrado */
+button:not(.icon-only) > span,
+button:not(.icon-only) > strong,
+button:not(.icon-only) > small,
+.button:not(.icon-only) > span,
+.button:not(.icon-only) > strong,
+.button:not(.icon-only) > small,
+[role="button"]:not(.icon-only) > span,
+[role="button"]:not(.icon-only) > strong,
+[role="button"]:not(.icon-only) > small{
+  text-align:center !important;
+}
+
+/* Switches/tabs segmentados */
+.error-main-tab,
+.error-tab,
+.error-state-switch > button,
+.flash-tab,
+.library-scope-tab,
+.qs-mode-tab,
+.notebook-tab,
+.stats-tab,
+.stats-range button,
+.schedule-add-tab,
+.segmented-control > button,
+.mode-tab,
+.view-tab,
+.section-tab,
+.page-tab,
+.scope-tab,
+.switch-group > button,
+.view-switch > button,
+.mode-switch > button{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+}
+
+/* Ícones em botões acompanham o centro visual */
+button svg,
+.button svg,
+[role="button"] svg{
+  flex:0 0 auto;
+  vertical-align:middle;
+}
+
+/* Evita desalinhamento causado por line-height herdado */
+button,
+.button,
+[role="button"]{
+  line-height:1.2 !important;
+}
