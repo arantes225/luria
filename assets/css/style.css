@@ -3798,3 +3798,28 @@ button,
     font-size:16px!important;
   }
 }
+
+
+/* v2026.09.29c — subtítulo curto acima dos títulos dos cards, padrão Cronograma */
+.luria-page-spotlight-label{
+  position:relative;
+  z-index:2;
+  display:block;
+  margin:0 0 6px;
+  color:rgba(255,255,255,.76)!important;
+  font-size:10px!important;
+  font-weight:850!important;
+  line-height:1.1!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+}
+:root[data-theme="dark"] .luria-page-spotlight-label,
+body.theme-dark .luria-page-spotlight-label{
+  color:rgba(255,255,255,.68)!important;
+}
+@media(max-width:700px){
+  .luria-page-spotlight-label{
+    margin-bottom:5px!important;
+    font-size:9px!important;
+  }
+}
