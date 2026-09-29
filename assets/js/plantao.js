@@ -472,10 +472,10 @@
   }
 
   const APH_PATIENT_IMAGES={
-    manAwake:"/assets/img/plantao/ambulancia/ambulancia_1.webp?v=20260929-1",
-    womanAwake:"/assets/img/plantao/ambulancia/ambulancia_2.webp?v=20260929-1",
-    manReduced:"/assets/img/plantao/ambulancia/ambulancia_3.webp?v=20260929-1",
-    womanReduced:"/assets/img/plantao/ambulancia/ambulancia_4.webp?v=20260929-1"
+    manAwake:"/assets/img/plantao/ambulancia/ambulancia_1.webp?v=20260929-2",
+    womanAwake:"/assets/img/plantao/ambulancia/ambulancia_2.webp?v=20260929-2",
+    manReduced:"/assets/img/plantao/ambulancia/ambulancia_3.webp?v=20260929-2",
+    womanReduced:"/assets/img/plantao/ambulancia/ambulancia_4.webp?v=20260929-2"
   };
 
   function aphReferenceImage(item=state.current){
