@@ -4231,3 +4231,28 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     margin-bottom:12px!important;
   }
 }
+
+
+/* =========================================================
+   Dashboard 1 v48 — evita corte da linha inferior no viewport
+   ========================================================= */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:206px!important;
+    min-height:206px!important;
+    max-height:206px!important;
+    margin-top:-6px!important;
+    transform:none!important;
+    align-self:start!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    padding-bottom:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding-bottom:10px!important;
+  }
+}
