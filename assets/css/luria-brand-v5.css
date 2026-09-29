@@ -112,7 +112,7 @@
 /* LURIA v57 — posição global estável dos controles superiores */
 :root{
   --luria-top-controls-top:10px;
-  --luria-top-controls-right:34px;
+  --luria-top-controls-right:max(34px, calc((100vw - 1590px) / 2));
 }
 @media (min-width:981px){
   body:not([data-page="dashboard"]) .topbar .luria-notifications{
@@ -144,7 +144,7 @@
   body:not([data-page="dashboard"]) .topbar .luria-notifications{
     position:fixed!important;
     top:10px!important;
-    right:34px!important;
+    right:var(--luria-top-controls-right)!important;
     bottom:auto!important;
     left:auto!important;
     display:flex!important;
