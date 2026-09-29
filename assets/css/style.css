@@ -3341,18 +3341,7 @@ body.auth-page>.auth-card{
   box-sizing:border-box!important;
 }
 
-/* Timer + sino + perfil ficam no mesmo ponto, independente da página. */
-@media (min-width:981px){
-  .topbar .luria-notifications{
-    position:fixed!important;
-    top:18px!important;
-    right:34px!important;
-    left:auto!important;
-    margin:0!important;
-    transform:none!important;
-    z-index:245!important;
-  }
-}
+/* Timer + sino + perfil: posição controlada exclusivamente por luria-brand-v5.css. */
 
 /* Iniciais com o mesmo peso visual aprovado. */
 .luria-profile-toggle,
@@ -3506,9 +3495,5 @@ body.theme-dark .error-cat-spotlight{
     min-height:26px!important;
     height:26px!important;
     margin-bottom:14px!important;
-  }
-  body:not([data-page="dashboard"]) .topbar .luria-notifications{
-    top:10px!important;
-    right:34px!important;
   }
 }
