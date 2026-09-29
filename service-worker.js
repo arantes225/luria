@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v207-qs-card-alignment";
+const CACHE_VERSION = "luria-pwa-v210-short-eyebrows";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -22,7 +22,7 @@ const APP_SHELL = [
   "/assets/css/luria-brand-v5.css?v=61-top-controls-aligned",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=17.42-global-top-controls",
+  "/assets/js/app.js?v=17.43-short-eyebrows",
   "/assets/js/pwa.js?v=4-force-refresh",
   "/assets/js/weekly-content.js?v=1",
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
