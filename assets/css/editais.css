@@ -666,3 +666,44 @@
     width: 100%;
   }
 }
+
+
+/* Editais / Provas — título no mesmo spotlight do Cronograma */
+body[data-page="editais"] .topbar .page-heading{
+  display:none!important;
+}
+body[data-page="editais"] .editais-title-spotlight{
+  height:138px!important;
+  min-height:138px!important;
+  max-height:138px!important;
+  padding:24px 28px!important;
+  margin:0 0 14px!important;
+  border-radius:15px!important;
+}
+body[data-page="editais"] .editais-title-spotlight-label{
+  display:block;
+  margin:0 0 7px;
+  color:rgba(255,255,255,.72);
+  font-size:9px;
+  line-height:1;
+  font-weight:850;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+body[data-page="editais"] .editais-title-spotlight .luria-page-spotlight-copy strong{
+  font-size:32px!important;
+  line-height:1.08!important;
+  font-weight:900!important;
+  letter-spacing:-.8px!important;
+}
+@media(max-width:700px){
+  body[data-page="editais"] .editais-title-spotlight{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px!important;
+  }
+  body[data-page="editais"] .editais-title-spotlight .luria-page-spotlight-copy strong{
+    font-size:25px!important;
+  }
+}
