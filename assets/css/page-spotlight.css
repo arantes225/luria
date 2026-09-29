@@ -1,16 +1,27 @@
-/* LURIA page spotlight — shared header visual aligned with Cronograma */
+/* LURIA page spotlight — régua global baseada em Anotações */
+:root{
+  --luria-page-card-height:138px;
+  --luria-page-card-pad-y:24px;
+  --luria-page-card-pad-x:28px;
+  --luria-page-card-radius:15px;
+  --luria-page-card-title:32px;
+  --luria-page-card-gap:14px;
+}
+
 body:not(.schedule-settings-embed) .luria-page-spotlight{
   position:relative;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:20px;
-  min-height:138px;
-  margin:0 0 14px;
-  padding:24px 28px;
+  min-height:var(--luria-page-card-height);
+  height:var(--luria-page-card-height);
+  box-sizing:border-box;
+  margin:0 0 var(--luria-page-card-gap);
+  padding:var(--luria-page-card-pad-y) var(--luria-page-card-pad-x);
   overflow:hidden;
   border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
-  border-radius:15px;
+  border-radius:var(--luria-page-card-radius);
   background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#071c3c),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#091f49));
   color:#fff;
   box-shadow:0 10px 30px rgba(17,65,130,.12);
@@ -21,7 +32,7 @@ body:not(.schedule-settings-embed) .luria-page-spotlight:after{
 }
 body:not(.schedule-settings-embed) .luria-page-spotlight-copy{position:relative;z-index:2;min-width:0}
 body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
-  display:block;margin:0;font-size:32px;line-height:1.08;font-weight:900;letter-spacing:-.8px;color:inherit;
+  display:block;margin:0;font-size:var(--luria-page-card-title);line-height:1.08;font-weight:900;letter-spacing:-.8px;color:inherit;
 }
 :root[data-theme="dark"] body:not(.schedule-settings-embed) .luria-page-spotlight,
 body.theme-dark:not(.schedule-settings-embed) .luria-page-spotlight{
@@ -44,4 +55,50 @@ body[data-page="caderno"] #notebook-view-library>.notebook-view-head{display:non
 @media(max-width:700px){
   body:not(.schedule-settings-embed) .luria-page-spotlight{min-height:118px;padding:20px}
   body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{font-size:25px}
+}
+
+/* v2 — cabeçalhos destacados do site seguem a mesma proporção de Anotações. */
+body .luria-page-spotlight,
+body .stats-hero,
+body .daily-hero,
+body .flash-top-spotlight{
+  box-sizing:border-box;
+}
+
+/* Quando há o novo spotlight compartilhado, o hero antigo não dita altura do topo. */
+body:has(.luria-page-spotlight) .stats-hero,
+body:has(.luria-page-spotlight) .daily-hero,
+body:has(.luria-page-spotlight) .flash-top-spotlight{
+  min-height:0;
+}
+
+/* A faixa superior do conteúdo passa a usar a mesma largura/proporção visual. */
+body:not(.schedule-settings-embed) .page > .luria-page-spotlight{
+  width:100%;
+  max-width:100%;
+}
+
+/* Topbar global: mantém a mesma altura de referência entre páginas. */
+body:not(.schedule-settings-embed) .topbar{
+  min-height:52px!important;
+  height:52px;
+  box-sizing:border-box;
+  margin-bottom:14px!important;
+}
+
+@media(max-width:700px){
+  :root{
+    --luria-page-card-height:118px;
+    --luria-page-card-pad-y:20px;
+    --luria-page-card-pad-x:20px;
+    --luria-page-card-title:25px;
+  }
+  body:not(.schedule-settings-embed) .luria-page-spotlight{
+    min-height:var(--luria-page-card-height);
+    height:var(--luria-page-card-height);
+    padding:var(--luria-page-card-pad-y) var(--luria-page-card-pad-x);
+  }
+  body:not(.schedule-settings-embed) .luria-page-spotlight-copy strong{
+    font-size:var(--luria-page-card-title);
+  }
 }
