@@ -262,35 +262,13 @@
       ? window.luriaDashboardUpcomingAgenda
       : [];
 
-    const future = source
-      .filter((item) => item?.activity_date && item.activity_date >= today);
-
-    const todayLessons = future
-      .filter((item) => item.activity_date === today && item.kind === "lesson")
+    return source
+      .filter((item) => item?.activity_date === today)
       .sort((a, b) =>
         String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
-        || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
-      );
-
-    if (todayLessons.length) return todayLessons.slice(0, 2);
-
-    const todayOthers = future
-      .filter((item) => item.activity_date === today)
-      .sort((a, b) =>
-        String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
-        || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
-      );
-
-    if (todayOthers.length) return todayOthers.slice(0, 2);
-
-    return future
-      .sort((a, b) =>
-        String(a.activity_date).localeCompare(String(b.activity_date))
         || (a.kind === "lesson" ? -1 : b.kind === "lesson" ? 1 : 0)
-        || String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
         || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
-      )
-      .slice(0, 2);
+      );
   }
 
   function dashboard5ActivityHref(item) {
@@ -331,7 +309,7 @@
 
         <div class="dl5-mid">
           <section class="dl5-card dl5-next">
-            <div class="dl5-title"><h3>${icon("calendar")} Próximas atividades</h3><a href="/cronograma/">›</a></div>
+            <div class="dl5-title"><h3>${icon("calendar")} Atividades de hoje</h3><a href="/cronograma/">›</a></div>
             <div class="dl5-next-list">
               ${nextItems.length ? nextItems.map((item, index) => {
                 const label = typeof kindMeta === "function" ? kindMeta(item.kind).label : "Atividade";
@@ -345,9 +323,9 @@
                   </div>
                   <em>›</em>
                 </a>`;
-              }).join("") : `<div class="dl5-next-empty"><strong>Nenhuma atividade programada</strong><span>Seu cronograma está livre.</span></div>`}
+              }).join("") : `<div class="dl5-next-empty"><strong>Nenhuma atividade para hoje</strong><span>Confira ou ajuste seu cronograma.</span></div>`}
             </div>
-            <a class="dl5-start" href="${escape(nextHref)}">▶ &nbsp; ${next ? "Iniciar próxima" : "Abrir cronograma"}</a>
+            <a class="dl5-start" href="${escape(nextHref)}">▶ &nbsp; ${next ? "Iniciar atividade" : "Abrir cronograma"}</a>
           </section>
 
           <section class="dl5-card dl5-streak">
