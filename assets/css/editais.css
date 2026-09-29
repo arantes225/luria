@@ -707,3 +707,95 @@ body[data-page="editais"] .editais-title-spotlight .luria-page-spotlight-copy st
     font-size:25px!important;
   }
 }
+
+
+/* =========================================================
+   MINHAS PROVAS — MENU DE AÇÕES
+   ========================================================= */
+
+.exam-card-top-actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.exam-card-menu {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.exam-card-menu-toggle {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.exam-card-menu-toggle:hover,
+.exam-card-menu-toggle[aria-expanded="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.exam-card-menu-popover {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 30;
+  width: 138px;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.exam-card-menu-popover[hidden] {
+  display: none !important;
+}
+
+.exam-card-menu-popover button {
+  width: 100%;
+  min-height: 36px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.exam-card-menu-popover button:hover {
+  background: var(--surface-2);
+}
+
+.exam-card-menu-popover button.danger {
+  color: var(--danger);
+}
+
+@media (max-width: 680px) {
+  .exam-card-top-actions {
+    width: 100%;
+    align-items: end;
+  }
+
+  .exam-card-top-actions .exam-quick-status {
+    flex: 1 1 auto;
+  }
+}
