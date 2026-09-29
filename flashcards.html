@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
   <link rel="stylesheet" href="assets/css/flashcards.css?v=15.0">
-  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=37-error-metrics-style">
+  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=38-exact-error-quick-metrics">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=59-content-aligned">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/flashcards/">
@@ -243,11 +243,21 @@
             <div class="flash-quick-metrics-title">
               <span>Métricas rápidas</span>
             </div>
-            <div class="flash-quick-metrics-grid">
-              <div><strong id="quick-metric-due">—</strong><small>A revisar</small></div>
-              <div><strong id="quick-metric-correct">—</strong><small>Acertos</small></div>
-              <div><strong id="quick-metric-wrong">—</strong><small>Erros</small></div>
-              <div><strong id="quick-metric-retention">—</strong><small>Retenção</small></div>
+            <div class="flash-metric-summary-grid">
+              <div><span>A revisar</span><strong id="quick-metric-due">—</strong><small>cards pendentes</small></div>
+              <div><span>Acertos</span><strong id="quick-metric-correct">—</strong><small>respostas corretas</small></div>
+              <div><span>Erros</span><strong id="quick-metric-wrong">—</strong><small>respostas incorretas</small></div>
+            </div>
+            <div class="flash-metric-progress">
+              <div class="flash-metric-ring" id="quick-metric-retention-ring" style="--p:0">
+                <strong id="quick-metric-retention">—</strong>
+                <span>retenção</span>
+              </div>
+              <div>
+                <strong>Retenção</strong>
+                <span>desempenho acumulado nas revisões</span>
+                <div class="flash-metric-track"><i id="quick-metric-retention-bar" style="width:0%"></i></div>
+              </div>
             </div>
           </aside>
         </section>
@@ -1126,7 +1136,7 @@
   <script src="assets/js/sharing.js?v=3"></script>
   <script src="assets/js/flashcards.js?v=17.5"></script>
   <script src="/assets/js/medical-icons.js?v=1.0"></script>
-  <script src="assets/js/flashcards-v21.js?v=35-quick-metrics"></script>
+  <script src="assets/js/flashcards-v21.js?v=36-error-quick-metrics"></script>
 
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
