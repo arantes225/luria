@@ -3617,16 +3617,6 @@ function ensureNotificationCenter() {
       </div>
     </div>
 
-    ${page === "questoes" ? `
-      <button
-        id="qs-simulations-help"
-        class="qs-simulations-help"
-        type="button"
-      >
-        Como funcionam os simulados
-      </button>
-    ` : ""}
-
     <section
       id="luria-notification-panel"
       class="luria-notification-panel"
