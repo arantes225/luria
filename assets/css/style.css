@@ -4419,3 +4419,87 @@ small,
     font-size:15px!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v2026.09.29 — DASHBOARD COMO RÉGUA GLOBAL
+   Geometria de referência do Dashboard:
+   margem lateral 28px / card 138px / padding 24x28 / raio 15px
+   ========================================================= */
+:root{
+  --luria-dashboard-gutter:28px;
+  --luria-dashboard-title-height:138px;
+  --luria-dashboard-title-pad-y:24px;
+  --luria-dashboard-title-pad-x:28px;
+  --luria-dashboard-title-radius:15px;
+  --luria-dashboard-title-gap:14px;
+}
+
+/* Cards de título das páginas usam exatamente a geometria do Dashboard. */
+body:not([data-page="dashboard"]) :is(
+  .luria-page-spotlight,
+  .luria-work-page-spotlight,
+  .daily-hero,
+  .stats-hero,
+  .flash-top-spotlight,
+  .qs-v17-top,
+  .error-cat-spotlight,
+  .schedule-top-spotlight
+){
+  box-sizing:border-box!important;
+  width:100%!important;
+  min-width:0!important;
+  height:var(--luria-dashboard-title-height)!important;
+  min-height:var(--luria-dashboard-title-height)!important;
+  max-height:var(--luria-dashboard-title-height)!important;
+  margin-top:0!important;
+  margin-right:0!important;
+  margin-bottom:var(--luria-dashboard-title-gap)!important;
+  margin-left:0!important;
+  padding:var(--luria-dashboard-title-pad-y) var(--luria-dashboard-title-pad-x)!important;
+  border-radius:var(--luria-dashboard-title-radius)!important;
+}
+
+/* O primeiro card começa na mesma linha útil do Dashboard. */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .page{
+    box-sizing:border-box!important;
+  }
+  body:not([data-page="dashboard"]) .page > :is(
+    .luria-page-spotlight,
+    .luria-work-page-spotlight,
+    .daily-hero,
+    .stats-hero,
+    .flash-top-spotlight,
+    .qs-v17-top,
+    .error-cat-spotlight,
+    .schedule-top-spotlight
+  ){
+    width:100%!important;
+  }
+}
+
+/* Mobile mantém a proporção já aprovada do próprio Dashboard. */
+@media(max-width:700px){
+  :root{
+    --luria-dashboard-gutter:20px;
+    --luria-dashboard-title-height:118px;
+    --luria-dashboard-title-pad-y:20px;
+    --luria-dashboard-title-pad-x:20px;
+  }
+  body:not([data-page="dashboard"]) :is(
+    .luria-page-spotlight,
+    .luria-work-page-spotlight,
+    .daily-hero,
+    .stats-hero,
+    .flash-top-spotlight,
+    .qs-v17-top,
+    .error-cat-spotlight,
+    .schedule-top-spotlight
+  ){
+    height:var(--luria-dashboard-title-height)!important;
+    min-height:var(--luria-dashboard-title-height)!important;
+    max-height:var(--luria-dashboard-title-height)!important;
+    padding:var(--luria-dashboard-title-pad-y) var(--luria-dashboard-title-pad-x)!important;
+  }
+}
