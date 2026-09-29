@@ -369,3 +369,73 @@ body[data-page="questoes"] .qs-home-action-library img.qs-home-card-art{
     opacity:.78!important;
   }
 }
+
+
+/* QS cards v7 — corrige Iniciar + Biblioteca sem alterar Criar/Enviar */
+body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
+  position:absolute!important;
+  right:10px!important;
+  top:50%!important;
+  bottom:auto!important;
+  width:46%!important;
+  height:88%!important;
+  max-width:46%!important;
+  object-fit:cover!important;
+  object-position:right center!important;
+  transform:translateY(-50%)!important;
+  opacity:.9!important;
+  z-index:2!important;
+}
+body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
+  right:6px!important;
+  top:50%!important;
+  bottom:auto!important;
+  width:44%!important;
+  height:86%!important;
+  max-width:44%!important;
+  object-fit:cover!important;
+  object-position:right center!important;
+  transform:translateY(-50%)!important;
+  opacity:.86!important;
+  z-index:2!important;
+}
+@media(max-width:1050px){
+  body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
+    right:8px!important;
+    width:43%!important;
+    max-width:43%!important;
+    height:86%!important;
+  }
+  body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
+    right:4px!important;
+    width:40%!important;
+    max-width:40%!important;
+    height:82%!important;
+  }
+}
+@media(max-width:760px){
+  body[data-page="questoes"] .qs-home-next img.qs-home-art-next{
+    right:4px!important;
+    top:50%!important;
+    bottom:auto!important;
+    width:45%!important;
+    max-width:45%!important;
+    height:80%!important;
+    object-fit:cover!important;
+    object-position:right center!important;
+    transform:translateY(-50%)!important;
+    opacity:.76!important;
+  }
+  body[data-page="questoes"] .qs-home-action-library img.qs-home-art-library{
+    right:2px!important;
+    top:50%!important;
+    bottom:auto!important;
+    width:40%!important;
+    max-width:40%!important;
+    height:80%!important;
+    object-fit:cover!important;
+    object-position:right center!important;
+    transform:translateY(-50%)!important;
+    opacity:.76!important;
+  }
+}
