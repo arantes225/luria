@@ -6206,10 +6206,9 @@ async function iniciarApp() {
     PAGE_INFO[page]
     || PAGE_INFO.dashboard;
 
-  // Modo Trabalho: todas as páginas recebem o box de título padrão.
-  // A injeção é automática para manter consistência também em novas abas.
+  // Dashboard mantém o box de título. No modo Trabalho, os títulos de página foram removidos.
   if (
-    (page === "dashboard" || page.startsWith("trabalho_"))
+    page === "dashboard"
     && !document.querySelector(".luria-page-spotlight")
   ) {
     const pageRoot = document.querySelector(".main .page");
@@ -6228,6 +6227,13 @@ async function iniciarApp() {
       `;
       topbar.insertAdjacentElement("afterend", spotlight);
     }
+  }
+
+  // Modo Trabalho sem títulos de página: remove eyebrow, título e helper, preservando controles do topo.
+  if (page.startsWith("trabalho_")) {
+    document.querySelectorAll(".luria-page-spotlight, .schedule-top-spotlight").forEach((el) => el.remove());
+    const heading = document.querySelector(".topbar .page-heading");
+    if (heading) heading.style.display = "none";
   }
 
   document
