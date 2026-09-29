@@ -4145,7 +4145,10 @@ html[data-theme="pink"] .plantao-featured-case:before{background:linear-gradient
 .plantao-library-toolbar{max-width:1420px;margin:0 auto;padding:0 34px!important;display:block!important}
 .plantao-specialty-chips{display:flex!important;gap:7px!important;overflow-x:auto!important;padding:0 0 14px!important;scrollbar-width:none}.plantao-specialty-chips::-webkit-scrollbar{display:none}
 .plantao-specialty-chip{flex:0 0 auto!important;min-height:34px!important;padding:0 14px!important;border:1px solid #dce5ef!important;border-radius:999px!important;background:#fff!important;color:#294866!important;font-size:10px!important;font-weight:800!important}.plantao-specialty-chip.active{border-color:#1f73d6!important;background:#1f73d6!important;color:#fff!important}
-.plantao-cases-section-head{padding:0 0 9px!important;display:flex!important;align-items:center!important;justify-content:space-between!important}.plantao-cases-section-head>div>span{display:none!important}.plantao-cases-section-head h2{margin:0!important;color:#173152!important;font-size:15px!important}.plantao-cases-section-head>strong{font-size:9px!important;color:#75879a!important}
+.plantao-cases-section-head{padding:0 0 9px!important;display:flex!important;align-items:center!important;justify-content:space-between!important}.plantao-cases-section-head>div>span{display:none!important}.plantao-cases-section-head h2{margin:0!important;color:#173152!important;font-size:15px!important}
+html[data-theme="dark"] body.plantao-module-entry .plantao-cases-section-head h2,
+body.theme-dark.plantao-module-entry .plantao-cases-section-head h2,
+[data-theme="dark"] body.plantao-module-entry .plantao-cases-section-head h2{color:#fff!important}.plantao-cases-section-head>strong{font-size:9px!important;color:#75879a!important}
 .plantao-module-entry #plantao-case-grid{max-width:1420px;margin:0 auto;padding:0 34px 42px;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:13px!important}
 .plantao-module-entry .plantao-case-card{display:block!important;overflow:hidden!important;padding:0!important;border:1px solid #dce6f0!important;border-radius:13px!important;background:#fff!important;box-shadow:0 5px 15px rgba(18,48,82,.04)!important}
 .plantao-case-card-ref-image{position:relative;height:108px;overflow:hidden;background:#dbe8f4}.plantao-case-card-ref-image img{width:100%;height:100%;object-fit:cover;display:block}.plantao-case-card-ref-image:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.12),transparent 55%)}
@@ -7446,25 +7449,26 @@ body.plantao-module-entry .plantao-featured-copy p{
 html[data-theme="dark"] body.plantao-module-entry .plantao-featured-case,
 body.theme-dark.plantao-module-entry .plantao-featured-case,
 [data-theme="dark"] body.plantao-module-entry .plantao-featured-case{
-  background:linear-gradient(110deg,#f8fbff,#edf4fb)!important;
-  color:#10213d!important;
-  border-color:#d8e3ef!important;
+  background:#0D1B30!important;
+  background-color:#0D1B30!important;
+  color:#fff!important;
+  border-color:#20344F!important;
 }
 html[data-theme="dark"] body.plantao-module-entry .plantao-featured-case::after,
 body.theme-dark.plantao-module-entry .plantao-featured-case::after,
 [data-theme="dark"] body.plantao-module-entry .plantao-featured-case::after{
-  background:rgba(24,72,136,.06)!important;
-  box-shadow:-80px -18px 0 rgba(24,72,136,.035)!important;
+  background:rgba(255,255,255,.07)!important;
+  box-shadow:-80px -18px 0 rgba(255,255,255,.035)!important;
 }
 html[data-theme="dark"] body.plantao-module-entry .plantao-featured-label,
 html[data-theme="dark"] body.plantao-module-entry .plantao-featured-meta,
 html[data-theme="dark"] body.plantao-module-entry .plantao-featured-copy h2,
 html[data-theme="dark"] body.plantao-module-entry .plantao-featured-tags span{
-  color:#10213d!important;
+  color:#fff!important;
 }
 html[data-theme="dark"] body.plantao-module-entry .plantao-featured-tags span{
-  background:rgba(24,72,136,.09)!important;
-  border-color:rgba(24,72,136,.08)!important;
+  background:rgba(255,255,255,.10)!important;
+  border-color:rgba(255,255,255,.10)!important;
 }
 
 /* Tema rosa: usa exatamente a mesma lógica cromática do spotlight. */
