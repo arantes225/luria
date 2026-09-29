@@ -4742,6 +4742,51 @@
     return mergedActions().find(x=>x.id===id)?.label || id;
   }
 
+  function cleanDebriefText(value){
+    return String(value ?? "")
+      .replace(/\\\\n/g,"\n")
+      .replace(/\\n/g,"\n")
+      .replace(/\r\n?/g,"\n")
+      .replace(/[ \t]+\n/g,"\n")
+      .replace(/\n{3,}/g,"\n\n")
+      .trim();
+  }
+
+  function parseDebriefExplanation(value){
+    const raw=cleanDebriefText(value);
+    if(!raw) return {};
+    const labels={
+      "APRESENTAÇÃO":"presentation",
+      "APRESENTAÇÃO DESTE CASO":"presentation",
+      "LEITURA CLÍNICA":"mechanism",
+      "MECANISMO":"mechanism",
+      "PONTO CRÍTICO":"priority",
+      "PRIORIDADE NO APH":"priority",
+      "CONDUTA E SEQUÊNCIA":"conduct",
+      "CONDUTA-CHAVE":"conduct",
+      "CONDUTA CRÍTICA":"conduct",
+      "O QUE PRECISA SER FEITO NESTE CASO":"conduct",
+      "REAVALIAÇÃO":"reassessment",
+      "DESTINO":"destination",
+      "DESTINO ESPERADO":"destination"
+    };
+    const out={};
+    let current="intro";
+    for(const line of raw.split("\n")){
+      const trimmed=line.trim();
+      if(!trimmed) continue;
+      const normalized=trimmed.replace(/:+$/,"").toUpperCase();
+      if(labels[normalized]){ current=labels[normalized]; continue; }
+      if(/^CASO\s*:/i.test(trimmed)){
+        const rest=trimmed.replace(/^CASO\s*:\s*/i,"").trim();
+        if(rest) out.intro=[out.intro,rest].filter(Boolean).join(" ");
+        continue;
+      }
+      out[current]=[out[current],trimmed].filter(Boolean).join(" ");
+    }
+    return out;
+  }
+
   async function openDeathDebrief(){
     $("plantao-death-overlay").hidden=true;
     const rules=state.current?.completion_rules||{};
@@ -4765,12 +4810,21 @@
     const finalScoreEl=$("plantao-final-score"); if(finalScoreEl) finalScoreEl.textContent=score;
     const puloEl=$("plantao-pulo"); if(puloEl) puloEl.textContent=d.pulo_do_gato || "";
     const caseExplanationEl=$("plantao-case-explanation");
-    if(caseExplanationEl) caseExplanationEl.innerHTML=[
-      ["O que costuma ter?",d.o_que_costuma_ter||d.epidemiologia||d.explanation||d.explicacao||""],
-      ["O que está acontecendo?",d.o_que_esta_acontecendo||d.quadro_clinico||d.explanation||d.explicacao||""],
-      ["Como aparece no plantão?",d.como_aparece_no_plantao||d.apresentacao||state.current?.summary||""],
-      ["Como faço o fechamento diagnóstico?",d.fechamento_diagnostico||d.diagnostico||d.diagnosis||""]
-    ].map(x=>'<section class="plantao-understand-topic"><h3>'+esc(x[0])+'</h3><p>'+esc(x[1]||"Conteúdo ainda não cadastrado para este tópico.")+'</p></section>').join("");
+    if(caseExplanationEl){
+      const parsed=parseDebriefExplanation(d.explanation||d.explicacao||"");
+      const topics=[
+        ["Apresentação do caso",d.como_aparece_no_plantao||d.apresentacao||parsed.presentation||state.current?.summary||""],
+        ["O que está acontecendo?",d.o_que_esta_acontecendo||d.quadro_clinico||parsed.mechanism||parsed.priority||""],
+        ["Revisão da conduta",d.revisao||d.conduta||parsed.conduct||""],
+        ["Fechamento e destino",d.fechamento_diagnostico||d.diagnostico||d.diagnosis||parsed.destination||""]
+      ].filter(([,value])=>cleanDebriefText(value));
+      if(parsed.reassessment && !topics.some(([title])=>title==="Reavaliação")){
+        topics.splice(Math.min(3,topics.length),0,["Reavaliação",parsed.reassessment]);
+      }
+      caseExplanationEl.innerHTML=topics.map(([title,value])=>
+        '<section class="plantao-understand-topic"><h3>'+esc(title)+'</h3><p>'+esc(cleanDebriefText(value))+'</p></section>'
+      ).join("") || '<section class="plantao-understand-topic"><p>Revisão ainda não cadastrada para este caso.</p></section>';
+    }
 
     const essentialTotal=(E.requiredActions ? E.requiredActions(state.current) : (state.current.completion_rules?.required_actions||[])).length;
     const essentialDone=essentialTotal-missingRequired.length;
