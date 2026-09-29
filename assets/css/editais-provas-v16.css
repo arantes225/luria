@@ -771,3 +771,31 @@
     width:100%;
   }
 }
+
+
+/* V16.5 — interior mais limpo: callouts seguem o fundo do tema */
+.exam-card .exam-card-top,
+.exam-card .exam-card-info,
+.exam-card .exam-simulation-summary,
+.exam-card .exam-result-card,
+.exam-card .exam-cutoff-card,
+.exam-card.exam-score-state-red .exam-card-info,
+.exam-card.exam-score-state-red .exam-simulation-summary,
+.exam-card.exam-score-state-yellow .exam-card-info,
+.exam-card.exam-score-state-yellow .exam-simulation-summary,
+.exam-card.exam-score-state-green .exam-card-info,
+.exam-card.exam-score-state-green .exam-simulation-summary{
+  background:var(--surface)!important;
+}
+
+.exam-card .exam-card-grid .exam-card-info:nth-child(1),
+.exam-card .exam-card-grid .exam-card-info:nth-child(2),
+.exam-card .exam-card-grid .exam-card-info:nth-child(3){
+  background:var(--surface)!important;
+}
+
+.exam-card .exam-result-card .exam-inline-score,
+.exam-card .exam-cutoff-card .exam-inline-score{
+  background:var(--surface)!important;
+  box-shadow:none;
+}
