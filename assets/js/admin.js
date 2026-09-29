@@ -14,6 +14,7 @@
     planPrices: [],
     planFeatures: [],
     customers: [],
+    betaFeedback: [],
     pinConfigured: false,
     pinUnlocked: false,
     wired: false,
@@ -1962,9 +1963,81 @@
     }
   }
 
+  function renderBetaFeedback() {
+    const query = String($("admin-beta-search")?.value || "").trim().toLowerCase();
+    const rows = state.betaFeedback.filter(item => {
+      if (!query) return true;
+      return [item.display_name, item.email, item.positives, item.improvements]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase()
+        .includes(query);
+    });
+
+    const count = $("admin-beta-feedback-count");
+    if (count) count.textContent = formatNumber(rows.length);
+
+    const list = $("admin-beta-feedback-list");
+    if (!list) return;
+
+    if (!rows.length) {
+      list.innerHTML = '<div class="admin-beta-empty">Nenhum feedback encontrado.</div>';
+      return;
+    }
+
+    list.innerHTML = rows.map(item => `
+      <article class="admin-beta-feedback-card">
+        <header>
+          <div>
+            <strong>${esc(item.display_name || "Beta tester")}</strong>
+            <small>${esc(item.email || "")}</small>
+          </div>
+          <time datetime="${esc(item.submitted_at || "")}">${esc(formatDateTime(item.submitted_at))}</time>
+        </header>
+        <div class="admin-beta-feedback-columns">
+          <section class="is-positive">
+            <span>O que já está bom</span>
+            <p>${esc(item.positives || "")}</p>
+          </section>
+          <section class="is-improvement">
+            <span>O que podemos melhorar</span>
+            <p>${esc(item.improvements || "")}</p>
+          </section>
+        </div>
+      </article>
+    `).join("");
+  }
+
+  async function loadBetaFeedback() {
+    const status = $("admin-beta-feedback-status");
+    if (status) {
+      status.textContent = "Carregando feedbacks dos Beta Testers...";
+      status.className = "admin-status";
+    }
+
+    const { data, error } = await sb.rpc("admin_beta_feedback_snapshot");
+    if (error) {
+      if (status) {
+        status.textContent = `Não foi possível carregar os feedbacks: ${error.message}`;
+        status.className = "admin-status error";
+      }
+      throw error;
+    }
+
+    state.betaFeedback = Array.isArray(data) ? data : [];
+    renderBetaFeedback();
+
+    if (status) {
+      status.textContent = state.betaFeedback.length
+        ? `${formatNumber(state.betaFeedback.length)} resposta${state.betaFeedback.length === 1 ? "" : "s"} recebida${state.betaFeedback.length === 1 ? "" : "s"}.`
+        : "Ainda não há respostas dos Beta Testers.";
+      status.className = "admin-status success";
+    }
+  }
+
   function setAdminView(view) {
     const next =
-      ["metrics", "factory", "editais", "plans", "plantao"].includes(view)
+      ["metrics", "factory", "editais", "plans", "plantao", "beta"].includes(view)
         ? view
         : "metrics";
 
@@ -1995,6 +2068,12 @@
       );
     }
 
+    if (next === "beta") {
+      loadBetaFeedback().catch(error => {
+        console.warn("Não foi possível carregar os feedbacks beta:", error);
+      });
+    }
+
     if (next === "plans") {
       loadPlanFeatures().catch(
         error => {
@@ -2023,6 +2102,15 @@
     } catch (_) {}
   }
 
+  function wireBetaFeedback() {
+    $("admin-beta-search")?.addEventListener("input", renderBetaFeedback);
+    $("admin-beta-refresh")?.addEventListener("click", () => {
+      loadBetaFeedback().catch(error => {
+        console.warn("Não foi possível atualizar os feedbacks beta:", error);
+      });
+    });
+  }
+
   function wireAdminViewMenu() {
     document.querySelectorAll("[data-admin-view-tab]").forEach(button => {
       button.addEventListener("click", () => {
@@ -2033,7 +2121,7 @@
     let initial = "metrics";
     try {
       const saved = sessionStorage.getItem("luria-admin-view");
-      if (["metrics", "factory", "editais", "plans", "plantao"].includes(saved)) {
+      if (["metrics", "factory", "editais", "plans", "plantao", "beta"].includes(saved)) {
         initial = saved;
       }
     } catch (_) {}
@@ -4470,6 +4558,7 @@
   }
 
   function wire() {
+    wireBetaFeedback();
     wireAdminViewMenu();
     $("admin-qf-style-manual")?.addEventListener("click", async event => {
       const aiButton = event.target.closest("[data-style-ai-index]");
