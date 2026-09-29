@@ -3632,7 +3632,26 @@
     }
   }
 
-</style>
+
+    /* Calendário v37 — filtros em listas clicáveis no padrão LURIA */
+    .month-filter-tools{display:none;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 10px;align-items:start;position:relative;z-index:20}
+    body:not(.schedule-settings-embed) .planner-panel:has(.month-planner:not([hidden])) .month-filter-tools{display:grid}
+    .month-filter-group{position:relative;min-width:0}
+    .month-filter-native{position:absolute!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+    .month-filter-trigger{width:100%;min-height:44px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);cursor:pointer;text-align:left;box-shadow:0 2px 8px rgba(15,35,65,.035)}
+    .month-filter-trigger:hover,.month-filter-group.open .month-filter-trigger{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
+    .month-filter-trigger>span{font-size:8px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+    .month-filter-trigger>strong{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-weight:850;color:var(--text)}
+    .month-filter-trigger>i{font-style:normal;color:var(--accent);font-size:13px;transition:transform .15s ease}
+    .month-filter-group.open .month-filter-trigger>i{transform:rotate(180deg)}
+    .month-filter-list{position:absolute;top:calc(100% + 6px);left:0;right:0;max-height:280px;overflow:auto;padding:6px;border:1px solid var(--border);border-radius:12px;background:var(--surface);box-shadow:0 14px 32px rgba(15,35,65,.14);z-index:60}
+    .month-filter-list button{width:100%;min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 9px;border:0;border-radius:8px;background:transparent;color:var(--text);font-size:10px;font-weight:750;text-align:left;cursor:pointer}
+    .month-filter-list button:hover{background:var(--surface-2);color:var(--accent)}
+    .month-filter-list button.active{background:var(--accent-soft);color:var(--accent);font-weight:900}
+    .month-filter-list button.active::after{content:"✓";font-weight:900}
+    @media(max-width:720px){.month-filter-tools{grid-template-columns:1fr}.month-filter-list{position:relative;top:4px;margin-bottom:4px;max-height:220px}}
+
+  </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=27-cronograma-ios-grid-fix">
@@ -3996,7 +4015,23 @@
               </div>
 
               <div id="week-planner" class="week-planner" hidden></div>
-              <div id="month-filter-tools" class="month-filter-tools"><select id="month-filter-area" aria-label="Filtrar mês por área"><option value="all">Todas as áreas</option></select><select id="month-filter-theme" aria-label="Filtrar mês por tema"><option value="all">Todos os temas</option></select><select id="month-filter-type" aria-label="Filtrar mês por tipo"><option value="all">Todos os tipos</option><option value="lesson">Aulas</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="questions">Questões</option><option value="simulation">Simulados</option><option value="other">Outros eventos</option></select></div><div id="month-planner" class="month-planner"></div>
+              <div id="month-filter-tools" class="month-filter-tools" aria-label="Filtros do calendário">
+                <div class="month-filter-group" data-month-filter="month-filter-area">
+                  <button class="month-filter-trigger" type="button" aria-expanded="false"><span>Área</span><strong>Todas as áreas</strong><i>⌄</i></button>
+                  <div class="month-filter-list" hidden></div>
+                  <select id="month-filter-area" class="month-filter-native" aria-label="Filtrar mês por área"><option value="all">Todas as áreas</option></select>
+                </div>
+                <div class="month-filter-group" data-month-filter="month-filter-theme">
+                  <button class="month-filter-trigger" type="button" aria-expanded="false"><span>Tema</span><strong>Todos os temas</strong><i>⌄</i></button>
+                  <div class="month-filter-list" hidden></div>
+                  <select id="month-filter-theme" class="month-filter-native" aria-label="Filtrar mês por tema"><option value="all">Todos os temas</option></select>
+                </div>
+                <div class="month-filter-group" data-month-filter="month-filter-type">
+                  <button class="month-filter-trigger" type="button" aria-expanded="false"><span>Tipo</span><strong>Todos os tipos</strong><i>⌄</i></button>
+                  <div class="month-filter-list" hidden></div>
+                  <select id="month-filter-type" class="month-filter-native" aria-label="Filtrar mês por tipo"><option value="all">Todos os tipos</option><option value="lesson">Aulas</option><option value="review">Revisões</option><option value="flashcards">Flashcards</option><option value="errors">Caderno de erros</option><option value="questions">Questões</option><option value="simulation">Simulados</option><option value="other">Outros eventos</option></select>
+                </div>
+              </div><div id="month-planner" class="month-planner"></div>
             </section>
 
             <aside class="agenda-side agenda-summary-side agenda-insights-side">
