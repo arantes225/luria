@@ -2591,6 +2591,31 @@
     font-size:9px!important;
   }
 
+
+  /* Cronograma — fundo idêntico ao Caderno de Erros */
+  body[data-page="cronograma"]:not(.schedule-settings-embed){
+    --luria-pattern-image:url("assets/img/logos/logo-icone-original.png?v=pattern4");
+    --luria-pattern-size:138px;
+    --luria-pattern-opacity:.020;
+    background:var(--bg)!important;
+  }
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed),
+  body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed){
+    --luria-pattern-image:url("assets/img/logos/logo-icone-azul-claro.png?v=pattern4");
+    --luria-pattern-opacity:.028;
+  }
+  :root[data-theme="leila-mood"] body[data-page="cronograma"]:not(.schedule-settings-embed),
+  :root[data-theme="pink"] body[data-page="cronograma"]:not(.schedule-settings-embed),
+  :root[data-theme="rosa"] body[data-page="cronograma"]:not(.schedule-settings-embed){
+    --luria-pattern-image:url("assets/img/logos/logo-icone-rosa-escuro.png?v=pattern4");
+    --luria-pattern-opacity:.024;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) > .app-shell,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
+    background:transparent!important;
+  }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
