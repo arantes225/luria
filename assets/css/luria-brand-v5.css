@@ -273,14 +273,14 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
 }
 
 
-/* LURIA v63 — ajuste fino horizontal conforme alinhamento visual */
+/* LURIA v64 — controles ancorados pela direita na borda real do card de conteúdo */
 @media (min-width:981px){
   :root{
     --luria-top-controls-top:10px;
-    --luria-top-controls-right:58px;
+    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
   body:not([data-page="dashboard"]) .topbar .luria-notifications{
-    top:10px!important;
-    right:58px!important;
+    top:var(--luria-top-controls-top)!important;
+    right:var(--luria-top-controls-right)!important;
   }
 }
