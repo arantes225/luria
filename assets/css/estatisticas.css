@@ -1109,3 +1109,31 @@ body[data-page="estatisticas"] .stats-kicker{
   font-weight:600!important;
   letter-spacing:.05em!important;
 }
+
+
+/* Estatísticas v27 — composição da aba Geral */
+@media (min-width:981px){
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-block-grid{
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  }
+
+  /* Progresso/revisões e mapa de calor: metade + metade. */
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-progress,
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap{
+    grid-column:span 6!important;
+  }
+
+  /* Ritmo ocupa a maior parte da faixa; distribuição fecha a linha. */
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-habit-wide{
+    grid-column:span 9!important;
+  }
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-distribution{
+    grid-column:span 3!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-habit-wide .chart-box,
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-distribution .chart-box{
+    height:100%!important;
+    min-height:180px!important;
+  }
+}
