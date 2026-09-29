@@ -534,3 +534,25 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     right:20px!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v68 — MESMO VÃO DASHBOARD: TIMER -> CARD DE TÍTULO
+   Timer: top 28px / altura 48px
+   Gap aprovado: 14px
+   Card começa em 90px (28 + 48 + 14)
+   ========================================================= */
+@media(min-width:981px){
+  body:not([data-page="dashboard"]) .topbar{
+    min-height:48px!important;
+    height:48px!important;
+    max-height:48px!important;
+    margin:0 0 14px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body:not([data-page="dashboard"]) .topbar .luria-notifications{
+    top:28px!important;
+  }
+}
