@@ -1042,11 +1042,13 @@
 
 /* Flashcards: frágeis + revisões por área, depois memória por matéria, depois insights */
 [data-stats-panel="flashcards"] .stats-flash-fragile{
-  grid-column:span 5!important;
+  grid-column:1 / span 5!important;
+  order:1!important;
   min-height:230px!important;
 }
 [data-stats-panel="flashcards"] .stats-flash-area-reviews{
-  grid-column:span 7!important;
+  grid-column:6 / span 7!important;
+  order:1!important;
   min-height:230px!important;
   display:flex!important;
   flex-direction:column!important;
@@ -1057,11 +1059,13 @@
   min-height:190px!important;
 }
 [data-stats-panel="flashcards"] .stats-flash-subject-memory{
-  grid-column:span 12!important;
+  grid-column:1 / -1!important;
+  order:2!important;
   min-height:0!important;
 }
 [data-stats-panel="flashcards"] .stats-flash-insights{
-  grid-column:span 12!important;
+  grid-column:1 / -1!important;
+  order:3!important;
 }
 
 /* neutraliza regras antigas baseadas em nth-child para os quatro blocos movidos */
