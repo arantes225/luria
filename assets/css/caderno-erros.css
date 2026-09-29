@@ -3459,3 +3459,23 @@ body[data-page="erros"] .error-metric-card{
     margin-top:0!important;
   }
 }
+
+
+/* v18.22 — topo autoritativo igual ao Dashboard */
+@media(min-width:981px){
+  body[data-page="erros"] .page{
+    padding-top:62px!important;
+  }
+  body[data-page="erros"] .page > .topbar{
+    position:absolute!important;
+    top:0!important;
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  body[data-page="erros"] .page > .topbar + *{
+    margin-top:0!important;
+  }
+}
