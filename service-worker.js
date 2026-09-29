@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v206-content-aligned-topbar";
+const CACHE_VERSION = "luria-pwa-v206-large-switches";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
