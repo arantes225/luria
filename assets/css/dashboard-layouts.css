@@ -4028,3 +4028,41 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     min-height:0!important;
   }
 }
+
+
+/* Dashboard v60 — controles superiores ancorados; nunca flutuantes */
+body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  position:relative!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  transform:none!important;
+  translate:none!important;
+}
+body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications{
+  position:absolute!important;
+  top:6px!important;
+  right:0!important;
+  bottom:auto!important;
+  left:auto!important;
+  margin:0!important;
+  transform:none!important;
+  translate:none!important;
+  align-self:auto!important;
+  animation:none!important;
+  transition:none!important;
+}
+body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-top,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-top,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-pomodoro-toggle,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notification-toggle,
+body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle{
+  position:relative!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  transform:none!important;
+  translate:none!important;
+}
