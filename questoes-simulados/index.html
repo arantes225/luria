@@ -1469,15 +1469,16 @@
     .qs-home-card-art{
       pointer-events:none;
       position:absolute;
-      z-index:0;
-      display:block;
-      background-image:url("/assets/img/questoes-simulados-professional.webp?v=2");
+      z-index:1;
+      display:block!important;
+      visibility:visible!important;
+      background-image:url("/assets/img/questoes-simulados-professional.webp?v=3")!important;
       background-repeat:no-repeat;
       background-size:200% 200%;
       opacity:.72;
       filter:saturate(.92);
     }
-    .qs-home-next-copy,.qs-home-action>:not(.qs-home-card-art){position:relative;z-index:2}
+    .qs-home-next-copy,.qs-home-action>:not(.qs-home-card-art){position:relative;z-index:3}
     .qs-home-art-next{
       right:-6px;bottom:-10px;width:52%;height:108%;
       background-position:0 0;
@@ -1490,6 +1491,9 @@
     .qs-home-art-create{background-position:100% 0}
     .qs-home-art-upload{background-position:100% 100%}
     .qs-home-art-library{background-position:0 100%}
+    .qs-home-next,.qs-home-action{isolation:isolate}
+    .qs-home-next:before,.qs-home-action:before{z-index:0}
+    .qs-home-card-art{mix-blend-mode:normal!important}
     [data-theme="dark"] .qs-home-card-art,body.dark .qs-home-card-art{filter:saturate(.82) brightness(.9);opacity:.62}
     [data-theme="pink"] .qs-home-card-art,body.pink .qs-home-card-art{filter:hue-rotate(55deg) saturate(.72);opacity:.58}
     [data-theme="pink"] .qs-home-art-next,body.pink .qs-home-art-next{opacity:.7}
