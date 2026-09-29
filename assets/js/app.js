@@ -1262,7 +1262,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
         <img
           id="luria-brand-logo"
           class="brand-logo-single luria-theme-logo"
-          src="/assets/img/logos/logo-icone-original.png?v=luria10"
+          src="${luriaLogoSourceForTheme(document.documentElement.dataset.theme || "light")}"
           alt="Logo LURIA"
         >
 
@@ -1443,6 +1443,19 @@ async function carregarPerfil(userId) {
   return cached || null;
 }
 
+function luriaLogoSourceForTheme(theme) {
+  if (theme === "dark") {
+    return "/assets/img/logos/logo-icone-azul-claro.png?v=luria11";
+  }
+
+  if (theme === "leila-mood" || theme === "pink" || theme === "rosa") {
+    return "/assets/img/logos/logo-icone-rosa-escuro.png?v=luria11";
+  }
+
+  return "/assets/img/logos/logo-icone-original.png?v=luria11";
+}
+
+
 function updateLuriaLogo(theme) {
   const logo =
     document.getElementById(
@@ -1453,18 +1466,8 @@ function updateLuriaLogo(theme) {
     return;
   }
 
-  let source =
-    "/assets/img/logos/logo-icone-original.png?v=luria10";
-
-  if (theme === "dark") {
-    source =
-      "/assets/img/logos/logo-icone-azul-claro.png?v=luria10";
-  }
-
-  if (theme === "leila-mood") {
-    source =
-      "/assets/img/logos/logo-icone-rosa-escuro.png?v=luria10";
-  }
+  const source =
+    luriaLogoSourceForTheme(theme);
 
   if (
     logo.getAttribute("src")
