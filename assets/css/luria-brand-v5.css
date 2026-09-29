@@ -458,3 +458,45 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     background:var(--bg)!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v68 — posição única dos controles, baseada no Cronograma
+   Aplica também ao Dashboard.
+   ========================================================= */
+@media(min-width:981px){
+  :root{
+    --luria-top-controls-top:10px;
+    --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
+  }
+
+  body .topbar .luria-notifications,
+  body:not([data-page="dashboard"]) .topbar .luria-notifications,
+  body[data-page="dashboard"] .topbar .luria-notifications,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+    position:fixed!important;
+    top:var(--luria-top-controls-top)!important;
+    right:var(--luria-top-controls-right)!important;
+    bottom:auto!important;
+    left:auto!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    z-index:245!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+  }
+}
+
+@media(max-width:980px){
+  body .topbar .luria-notifications,
+  body[data-page="dashboard"] .topbar .luria-notifications,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+    position:static!important;
+    inset:auto!important;
+    margin-left:auto!important;
+    transform:none!important;
+    translate:none!important;
+  }
+}
