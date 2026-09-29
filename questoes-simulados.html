@@ -1334,6 +1334,59 @@
   }
 </style>
 
+
+<style id="qs-external-svg-theme-v4">
+  /* SVGs ilustrativos são arquivos externos: recolorimos o arquivo inteiro via máscara. */
+  body[data-page="questoes"] .qs-home-card-art{
+    background-color:var(--accent)!important;
+    opacity:.42!important;
+  }
+  body[data-page="questoes"] .qs-home-card-art img,
+  body[data-page="questoes"] .qs-home-card-art object,
+  body[data-page="questoes"] .qs-home-card-art svg{
+    visibility:hidden!important;
+  }
+  body[data-page="questoes"] .qs-home-action[data-action="create"] .qs-home-card-art,
+  body[data-page="questoes"] .qs-home-action[data-qs-action="create"] .qs-home-card-art,
+  body[data-page="questoes"] .qs-home-action:nth-child(1) .qs-home-card-art{
+    -webkit-mask:var(--qs-create-art) center/contain no-repeat;
+    mask:var(--qs-create-art) center/contain no-repeat;
+  }
+  body[data-page="questoes"] .qs-home-action[data-action="send"] .qs-home-card-art,
+  body[data-page="questoes"] .qs-home-action[data-qs-action="send"] .qs-home-card-art,
+  body[data-page="questoes"] .qs-home-action:nth-child(2) .qs-home-card-art{
+    -webkit-mask:var(--qs-send-art) center/contain no-repeat;
+    mask:var(--qs-send-art) center/contain no-repeat;
+  }
+  body[data-page="questoes"] .qs-home-action[data-action="library"] .qs-home-card-art,
+  body[data-page="questoes"] .qs-home-action[data-qs-action="library"] .qs-home-card-art,
+  body[data-page="questoes"] .qs-home-action:nth-child(3) .qs-home-card-art{
+    -webkit-mask:var(--qs-library-art) center/contain no-repeat;
+    mask:var(--qs-library-art) center/contain no-repeat;
+  }
+  html[data-theme="dark"] body[data-page="questoes"] .qs-home-card-art,
+  body.theme-dark[data-page="questoes"] .qs-home-card-art,
+  body[data-theme="dark"][data-page="questoes"] .qs-home-card-art{
+    opacity:.72!important;
+  }
+</style>
+
+<script id="qs-external-svg-theme-runtime-v4">
+(function(){
+  function recolorQsArt(){
+    document.querySelectorAll('.qs-home-card-art').forEach(function(el,index){
+      var bg=getComputedStyle(el).backgroundImage;
+      if(!bg||bg==='none') return;
+      var key=index%3===0?'--qs-create-art':index%3===1?'--qs-send-art':'--qs-library-art';
+      document.body.style.setProperty(key,bg);
+      el.style.backgroundImage='none';
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',recolorQsArt);
+  else recolorQsArt();
+  new MutationObserver(recolorQsArt).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme','class']});
+})();
+</script>
 </head>
 
 <body data-page="questoes">
