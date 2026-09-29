@@ -80,16 +80,6 @@
         </header>
 
 
-        <section class="error-home-head error-home-head-minimal">
-          <div class="error-create-menu-wrap">
-            <button id="error-create-menu-trigger" class="button primary error-new-native" type="button" aria-haspopup="menu" aria-expanded="false">＋ Criar</button>
-            <div id="error-create-menu" class="error-create-menu" role="menu" hidden>
-              <button type="button" role="menuitem" data-error-create-action="error">Criar erro</button>
-              <button type="button" role="menuitem" data-error-create-action="review">Criar nova revisão</button>
-            </div>
-          </div>
-        </section>
-
         <section class="panel error-create-panel error-section" data-error-section="create">
           <div class="panel-header error-create-head"><div><span class="badge accent">Novo erro</span><h2>Adicionar ao Caderno de Erros</h2><p>Registre o ponto que você quer revisar depois.</p></div><button class="button secondary" type="button" data-error-home-back>Voltar</button></div>
           <div id="error-create-form" class="error-create-form">
@@ -126,7 +116,13 @@
               </div>
               <div class="error-review-action-switch" aria-label="Ações de revisão">
                 <button id="error-review-home-now" class="active" type="button">▶ Revisar agora</button>
-                <button id="error-review-home-new-error" type="button">＋ Novo erro</button>
+                <div class="error-create-menu-wrap">
+                  <button id="error-create-menu-trigger" type="button" aria-haspopup="menu" aria-expanded="false">＋ Criar</button>
+                  <div id="error-create-menu" class="error-create-menu" role="menu" hidden>
+                    <button type="button" role="menuitem" data-error-create-action="error">Criar erro</button>
+                    <button type="button" role="menuitem" data-error-create-action="review">Criar nova revisão</button>
+                  </div>
+                </div>
               </div>
               <div class="error-library-tools">
                 <div class="error-library-field error-library-area-field"><span>Área</span><div class="error-library-area-picker"><button id="error-library-area-toggle" class="error-library-area-toggle" type="button" aria-haspopup="listbox" aria-expanded="false"><span id="error-library-area-label">Todas as áreas</span><span class="error-library-area-chevron" aria-hidden="true">⌄</span></button><div id="error-library-area-menu" class="error-library-area-menu" role="listbox" hidden></div><select id="error-library-area" class="error-library-area-native" data-luria-general-area-select data-blank-label="Todas as áreas" tabindex="-1" aria-hidden="true"><option value="">Todas as áreas</option></select></div></div>
