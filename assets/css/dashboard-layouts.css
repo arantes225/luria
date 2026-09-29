@@ -4334,3 +4334,23 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     margin-top:0!important;
   }
 }
+
+
+/* Dashboard v61 — mesma largura útil das demais páginas */
+@media (min-width:981px){
+  body[data-page="dashboard"] .page{
+    width:100%!important;
+    max-width:1320px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"] #dashboard-alternative{
+    width:100%!important;
+    max-width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    box-sizing:border-box!important;
+  }
+}
