@@ -3907,3 +3907,65 @@ body[data-page^="trabalho_"] .luria-work-page-spotlight .luria-page-spotlight-co
     font-size:27px;
   }
 }
+
+
+/* v2026.09.29f — teste do box de título no Dashboard Estudo */
+body[data-page="dashboard"] .luria-dashboard-spotlight{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  width:100%;
+  height:138px;
+  min-height:138px!important;
+  margin:0 0 14px;
+  padding:24px 28px!important;
+  overflow:hidden;
+  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+  border-radius:15px!important;
+  background:linear-gradient(
+    110deg,
+    color-mix(in srgb,var(--accent) 88%,#071c3c),
+    var(--accent) 58%,
+    color-mix(in srgb,var(--accent) 75%,#091f49)
+  );
+  color:#fff;
+  box-shadow:0 10px 30px rgba(17,65,130,.12);
+}
+body[data-page="dashboard"] .luria-dashboard-spotlight::after{
+  content:"";
+  position:absolute;
+  width:310px;
+  height:310px;
+  right:-90px;
+  bottom:-220px;
+  border-radius:50%;
+  background:rgba(255,255,255,.07);
+  box-shadow:-80px -18px 0 rgba(255,255,255,.035);
+  pointer-events:none;
+}
+body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-copy{
+  position:relative;
+  z-index:2;
+  min-width:0;
+}
+body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-copy > strong{
+  display:block;
+  margin:0;
+  color:inherit;
+  font-size:32px;
+  font-weight:900;
+  line-height:1.08;
+  letter-spacing:-.8px;
+}
+@media(max-width:700px){
+  body[data-page="dashboard"] .luria-dashboard-spotlight{
+    height:118px;
+    min-height:118px!important;
+    padding:20px!important;
+  }
+  body[data-page="dashboard"] .luria-dashboard-spotlight .luria-page-spotlight-copy > strong{
+    font-size:27px;
+  }
+}
