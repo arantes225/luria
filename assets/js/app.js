@@ -6657,3 +6657,174 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Feedback obrigatório dos Beta Testers: reaparece 5 dias após cada envio. */
+(function initBetaTesterFeedback() {
+  let checking = false;
+  let submitted = false;
+
+  function ensureStyles() {
+    if (document.getElementById("luria-beta-feedback-styles")) return;
+    const style = document.createElement("style");
+    style.id = "luria-beta-feedback-styles";
+    style.textContent = `
+      body.luria-beta-feedback-locked { overflow: hidden !important; }
+      .luria-beta-feedback-overlay {
+        position: fixed; inset: 0; z-index: 10000; display: grid; place-items: center;
+        padding: 22px; background: rgba(5, 20, 38, .72); backdrop-filter: blur(10px);
+      }
+      .luria-beta-feedback-overlay[hidden] { display: none !important; }
+      .luria-beta-feedback-card {
+        width: min(640px, 100%); max-height: min(760px, calc(100dvh - 32px)); overflow: auto;
+        border: 1px solid var(--border); border-radius: 22px; padding: 26px;
+        background: var(--surface, #fff); color: var(--text, #102033);
+        box-shadow: 0 28px 80px rgba(0,0,0,.28);
+      }
+      .luria-beta-feedback-kicker {
+        display: inline-flex; padding: 6px 10px; border-radius: 999px;
+        background: color-mix(in srgb, var(--accent, #184888) 12%, transparent);
+        color: var(--accent, #184888); font-size: 12px; font-weight: 850; letter-spacing: .04em;
+        text-transform: uppercase;
+      }
+      .luria-beta-feedback-card h2 { margin: 12px 0 7px; font-size: clamp(24px, 4vw, 31px); }
+      .luria-beta-feedback-card > p { margin: 0 0 20px; color: var(--muted, #667085); line-height: 1.55; }
+      .luria-beta-feedback-fields { display: grid; gap: 15px; }
+      .luria-beta-feedback-field { display: grid; gap: 7px; }
+      .luria-beta-feedback-field span { font-size: 14px; font-weight: 800; }
+      .luria-beta-feedback-field textarea {
+        width: 100%; min-height: 118px; resize: vertical; box-sizing: border-box;
+        border: 1px solid var(--border); border-radius: 13px; padding: 13px 14px;
+        background: var(--surface-2, #f7f9fc); color: var(--text, #102033);
+        font: inherit; line-height: 1.45; outline: none;
+      }
+      .luria-beta-feedback-field textarea:focus {
+        border-color: var(--accent, #184888);
+        box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent, #184888) 14%, transparent);
+      }
+      .luria-beta-feedback-actions { margin-top: 18px; display: grid; gap: 9px; }
+      .luria-beta-feedback-submit {
+        min-height: 46px; border: 0; border-radius: 12px; padding: 0 18px;
+        background: var(--accent, #184888); color: #fff; font: inherit; font-weight: 850; cursor: pointer;
+      }
+      .luria-beta-feedback-submit:disabled { opacity: .62; cursor: progress; }
+      .luria-beta-feedback-message { min-height: 20px; color: var(--muted, #667085); font-size: 13px; text-align: center; }
+      .luria-beta-feedback-message.is-error { color: #b42318; }
+      @media (max-width: 640px) {
+        .luria-beta-feedback-overlay { padding: 12px; }
+        .luria-beta-feedback-card { padding: 20px 17px; border-radius: 18px; }
+        .luria-beta-feedback-field textarea { min-height: 105px; }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
+  function createModal() {
+    let overlay = document.getElementById("luria-beta-feedback-overlay");
+    if (overlay) return overlay;
+
+    ensureStyles();
+    overlay = document.createElement("div");
+    overlay.id = "luria-beta-feedback-overlay";
+    overlay.className = "luria-beta-feedback-overlay";
+    overlay.hidden = true;
+    overlay.setAttribute("role", "dialog");
+    overlay.setAttribute("aria-modal", "true");
+    overlay.setAttribute("aria-labelledby", "luria-beta-feedback-title");
+    overlay.innerHTML = `
+      <form class="luria-beta-feedback-card" id="luria-beta-feedback-form">
+        <span class="luria-beta-feedback-kicker">Beta Tester</span>
+        <h2 id="luria-beta-feedback-title">Como está sua experiência com o LURIA?</h2>
+        <p>Seu feedback periódico ajuda a definir os próximos ajustes. Para continuar usando o LURIA, responda os dois campos abaixo.</p>
+        <div class="luria-beta-feedback-fields">
+          <label class="luria-beta-feedback-field">
+            <span>O que já está bom?</span>
+            <textarea id="luria-beta-feedback-positives" maxlength="2500" required placeholder="Conte o que funcionou bem, o que você gostou ou o que deveria ser mantido."></textarea>
+          </label>
+          <label class="luria-beta-feedback-field">
+            <span>O que podemos melhorar?</span>
+            <textarea id="luria-beta-feedback-improvements" maxlength="2500" required placeholder="Conte o que incomodou, faltou, ficou confuso ou poderia funcionar melhor."></textarea>
+          </label>
+        </div>
+        <div class="luria-beta-feedback-actions">
+          <button class="luria-beta-feedback-submit" id="luria-beta-feedback-submit" type="submit">Enviar feedback</button>
+          <div class="luria-beta-feedback-message" id="luria-beta-feedback-message" aria-live="polite"></div>
+        </div>
+      </form>
+    `;
+    document.body.appendChild(overlay);
+
+    overlay.addEventListener("click", event => {
+      if (event.target === overlay) event.preventDefault();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (!overlay.hidden && event.key === "Escape") {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+      }
+    }, true);
+
+    const form = overlay.querySelector("#luria-beta-feedback-form");
+    form.addEventListener("submit", async event => {
+      event.preventDefault();
+      const positives = overlay.querySelector("#luria-beta-feedback-positives").value.trim();
+      const improvements = overlay.querySelector("#luria-beta-feedback-improvements").value.trim();
+      const button = overlay.querySelector("#luria-beta-feedback-submit");
+      const message = overlay.querySelector("#luria-beta-feedback-message");
+
+      if (!positives || !improvements) {
+        message.textContent = "Preencha os dois campos para continuar.";
+        message.className = "luria-beta-feedback-message is-error";
+        return;
+      }
+
+      button.disabled = true;
+      message.textContent = "Enviando...";
+      message.className = "luria-beta-feedback-message";
+
+      try {
+        const { error } = await window.supabaseClient.rpc("submit_beta_feedback", {
+          p_positives: positives,
+          p_improvements: improvements
+        });
+        if (error) throw error;
+        submitted = true;
+        overlay.hidden = true;
+        document.body.classList.remove("luria-beta-feedback-locked");
+        message.textContent = "";
+      } catch (error) {
+        console.warn("Não foi possível enviar o feedback beta:", error);
+        message.textContent = "Não foi possível enviar. Verifique sua conexão e tente novamente.";
+        message.className = "luria-beta-feedback-message is-error";
+        button.disabled = false;
+      }
+    });
+
+    return overlay;
+  }
+
+  async function checkBetaFeedback() {
+    if (checking || submitted || !window.supabaseClient || !window.docmapUser?.id) return;
+    checking = true;
+    try {
+      const { data, error } = await window.supabaseClient.rpc("beta_feedback_status");
+      if (error) throw error;
+      if (!data?.is_beta_tester || !data?.due) return;
+
+      const overlay = createModal();
+      overlay.hidden = false;
+      document.body.classList.add("luria-beta-feedback-locked");
+      requestAnimationFrame(() => {
+        overlay.querySelector("#luria-beta-feedback-positives")?.focus();
+      });
+    } catch (error) {
+      console.warn("Não foi possível verificar o feedback beta:", error);
+    } finally {
+      checking = false;
+    }
+  }
+
+  window.addEventListener("docmap:ready", checkBetaFeedback);
+  if (window.docmapUser?.id) checkBetaFeedback();
+})();
