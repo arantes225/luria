@@ -934,7 +934,7 @@ function renderExams() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Edital
+                        Ver edital
                       </a>
                     `
                     : ""
