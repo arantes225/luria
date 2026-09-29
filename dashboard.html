@@ -22,8 +22,12 @@
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/dashboard/">
   <script>(function(){try{if(location.pathname.endsWith("/dashboard.html"))history.replaceState(null,"","/dashboard/"+location.search+location.hash);}catch(e){}})();</script>
+  <style>
+    /* Impede o cabeçalho legado de aparecer durante hard refresh antes do JS. */
+    body.dashboard-preboot[data-page="dashboard"] .topbar .page-heading{display:none!important}
+  </style>
 </head>
-<body data-page="dashboard">
+<body data-page="dashboard" class="dashboard-preboot">
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
