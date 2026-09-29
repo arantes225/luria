@@ -543,7 +543,7 @@ html[data-theme="leila-mood"]{
 /* v8 — correção estrutural da Prática Clínica em desktop/tablet */
 .sim-hub-page{
   width:100%!important;
-  max-width:1280px!important;
+  max-width:1320px!important;
   min-width:0!important;
   box-sizing:border-box!important;
   overflow-x:hidden!important;
