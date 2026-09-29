@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v207-page-eyebrows";
+const CACHE_VERSION = "luria-pwa-v207-qs-card-alignment";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
