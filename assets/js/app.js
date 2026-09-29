@@ -1142,40 +1142,40 @@
 const sb = window.supabaseClient;
 
 const PAGE_INFO = {
-  dashboard: { title: "Dashboard", eyebrow: "Visão geral" },
-  cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos" },
-  caderno: { title: "Anotações", eyebrow: "Notas e materiais" },
-  flashcards: { title: "Flashcards", eyebrow: "Revisão ativa" },
-  erros: { title: "Caderno de erros", eyebrow: "Estudar" },
-  questoes: { title: "Questões e Simulados", eyebrow: "Prática e provas" },
-  plantao: { title: "Plantão", eyebrow: "Prática clínica" },
-  desafio: { title: "Desafio Diário", eyebrow: "Caso do dia" },
-  estatisticas: { title: "Estatísticas", eyebrow: "Seu desempenho" },
-  editais: { title: "Editais / Provas", eyebrow: "Provas e editais" },
-  amigos: { title: "Amigos", eyebrow: "Rede de estudos" },
-  configuracoes: { title: "Configurações", eyebrow: "Sua conta" },
-  admin: { title: "Admin", eyebrow: "Gestão LURIA" },
-  beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta" },
-  trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica" },
-  trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e plantões" },
-  trabalho_plantoes: { title: "Escala", eyebrow: "Plantões e horários" },
-  trabalho_passometro: { title: "Passômetro", eyebrow: "Passos e evolução" },
-  trabalho_prontuario_rapido: { title: "Cola rápida", eyebrow: "Consulta rápida" },
-  trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "PCR e condutas" },
-  trabalho_financeiro: { title: "Financeiro", eyebrow: "Ganhos e controle" },
-  trabalho_calculadora: { title: "Calculadoras", eyebrow: "Cálculos clínicos" },
-  trabalho_bulario: { title: "Bulário", eyebrow: "Medicamentos e doses" },
-  trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Divisão de horários" },
-  trabalho_diagnostico: { title: "Diagnóstico por Sintomas", eyebrow: "Sintomas e hipóteses" },
-  trabalho_laboratorio: { title: "Laboratório", eyebrow: "Exames e interpretação" },
-  trabalho_prescricao: { title: "Prescrição", eyebrow: "Prescrições e doses" },
-  trabalho_protocolos: { title: "Protocolos", eyebrow: "Protocolos e condutas" },
-  trabalho_ecg: { title: "ECG", eyebrow: "Traçados e ritmo" },
-  trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Reposição e correção" },
-  trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Receitas e condutas" },
-  trabalho_exames: { title: "Exames", eyebrow: "Exames e investigação" },
-  trabalho_scores: { title: "Scores", eyebrow: "Escores clínicos" },
-  trabalho_antimicrobianos: { title: "Antimicrobianos", eyebrow: "Antibióticos e esquemas" },
+  dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
+  cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
+  caderno: { title: "Anotações", eyebrow: "Notas e materiais", helper: "Registre, organize e encontre o que importa." },
+  flashcards: { title: "Flashcards", eyebrow: "Revisão ativa", helper: "Revise no ritmo certo e fortaleça a memória." },
+  erros: { title: "Caderno de erros", eyebrow: "Estudar", helper: "Transforme seus erros em revisão direcionada." },
+  questoes: { title: "Questões e Simulados", eyebrow: "Prática e provas", helper: "Treine, meça seu desempenho e evolua." },
+  plantao: { title: "Plantão", eyebrow: "Prática clínica", helper: "Treine decisões clínicas em cenários realistas." },
+  desafio: { title: "Desafio Diário", eyebrow: "Caso do dia", helper: "Uma hipótese por dia para manter o raciocínio afiado." },
+  estatisticas: { title: "Estatísticas", eyebrow: "Seu desempenho", helper: "Acompanhe sua evolução e ajuste sua estratégia." },
+  editais: { title: "Editais / Provas", eyebrow: "Provas e editais", helper: "Centralize datas, provas e informações importantes." },
+  amigos: { title: "Amigos", eyebrow: "Rede de estudos", helper: "Estude junto, compartilhe e acompanhe sua rede." },
+  configuracoes: { title: "Configurações", eyebrow: "Sua conta", helper: "Personalize sua experiência no LURIA." },
+  admin: { title: "Admin", eyebrow: "Gestão LURIA", helper: "Gerencie conteúdo, acessos e operação da plataforma." },
+  beta_testers: { title: "Beta Testers", eyebrow: "Feedback beta", helper: "Acompanhe sugestões e pontos de melhoria." },
+  trabalho_dashboard: { title: "Dashboard", eyebrow: "Rotina clínica", helper: "Acesse rapidamente as ferramentas do seu dia." },
+  trabalho_gestor_plantoes: { title: "Gestor de Plantões", eyebrow: "Escalas e plantões", helper: "Organize sua rotina de plantões em um só lugar." },
+  trabalho_plantoes: { title: "Escala", eyebrow: "Plantões e horários", helper: "Visualize e organize seus plantões." },
+  trabalho_passometro: { title: "Passômetro", eyebrow: "Passos e evolução", helper: "Estruture a passagem de plantão com clareza." },
+  trabalho_prontuario_rapido: { title: "Cola rápida", eyebrow: "Consulta rápida", helper: "Tenha informações essenciais à mão." },
+  trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "PCR e condutas", helper: "Consulte rapidamente passos e condutas críticas." },
+  trabalho_financeiro: { title: "Financeiro", eyebrow: "Ganhos e controle", helper: "Acompanhe receitas e organização dos plantões." },
+  trabalho_calculadora: { title: "Calculadoras", eyebrow: "Cálculos clínicos", helper: "Faça cálculos clínicos de forma rápida e prática." },
+  trabalho_bulario: { title: "Bulário", eyebrow: "Medicamentos e doses", helper: "Consulte apresentações, doses e informações essenciais." },
+  trabalho_divisor_plantao: { title: "Divisor de Plantão", eyebrow: "Divisão de horários", helper: "Distribua horários de forma simples e equilibrada." },
+  trabalho_diagnostico: { title: "Diagnóstico por Sintomas", eyebrow: "Sintomas e hipóteses", helper: "Organize hipóteses a partir dos principais sintomas." },
+  trabalho_laboratorio: { title: "Laboratório", eyebrow: "Exames e interpretação", helper: "Consulte exames e pontos-chave de interpretação." },
+  trabalho_prescricao: { title: "Prescrição", eyebrow: "Prescrições e doses", helper: "Acesse esquemas práticos para a rotina clínica." },
+  trabalho_protocolos: { title: "Protocolos", eyebrow: "Protocolos e condutas", helper: "Consulte fluxos e condutas de forma objetiva." },
+  trabalho_ecg: { title: "ECG", eyebrow: "Traçados e ritmo", helper: "Revise ritmos e achados eletrocardiográficos." },
+  trabalho_fluidos: { title: "Fluidos e eletrólitos", eyebrow: "Reposição e correção", helper: "Calcule e revise reposições com segurança." },
+  trabalho_receitas: { title: "Tratamentos gerais", eyebrow: "Receitas e condutas", helper: "Encontre tratamentos práticos para situações frequentes." },
+  trabalho_exames: { title: "Exames", eyebrow: "Exames e investigação", helper: "Organize a investigação complementar de forma prática." },
+  trabalho_scores: { title: "Scores", eyebrow: "Escores clínicos", helper: "Calcule escores e apoie sua tomada de decisão." },
+  trabalho_antimicrobianos: { title: "Antimicrobianos", eyebrow: "Antibióticos e esquemas", helper: "Consulte esquemas, doses e ajustes importantes." },
 };
 
 
@@ -6329,6 +6329,16 @@ async function iniciarApp() {
 
       label.textContent = info.eyebrow || "";
       label.hidden = !info.eyebrow;
+
+      let helper = copy.querySelector(".luria-page-spotlight-helper");
+      if (!helper) {
+        helper = document.createElement("small");
+        helper.className = "luria-page-spotlight-helper";
+        copy.appendChild(helper);
+      }
+
+      helper.textContent = info.helper || "";
+      helper.hidden = !info.helper;
     });
 
   // Logout resiliente a re-renderizações da sidebar.
