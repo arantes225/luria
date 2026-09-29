@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.8-metrics-blue">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
   <link rel="stylesheet" href="assets/css/flashcards.css?v=15.0">
-  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=36-width-grid">
+  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=39-larger-quick-metrics">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/flashcards/">
@@ -245,11 +245,25 @@
             <div class="flash-quick-metrics-title">
               <span>Métricas rápidas</span>
             </div>
-            <div class="flash-quick-metrics-grid">
-              <div><strong id="quick-metric-due">—</strong><small>A revisar</small></div>
-              <div><strong id="quick-metric-correct">—</strong><small>Acertos</small></div>
-              <div><strong id="quick-metric-wrong">—</strong><small>Erros</small></div>
-              <div><strong id="quick-metric-retention">—</strong><small>Retenção</small></div>
+            <div class="flash-metric-summary-grid">
+              <div><span>A revisar</span><strong id="quick-metric-due">—</strong><small>cards pendentes na fila</small></div>
+              <div><span>Acertos</span><strong id="quick-metric-correct">—</strong><small>respostas corretas acumuladas</small></div>
+              <div><span>Erros</span><strong id="quick-metric-wrong">—</strong><small>respostas incorretas acumuladas</small></div>
+            </div>
+            <div class="flash-metric-progress">
+              <div class="flash-metric-ring" id="quick-metric-retention-ring" style="--p:0">
+                <strong id="quick-metric-retention">—</strong>
+                <span>retenção</span>
+              </div>
+              <div>
+                <strong>Retenção acumulada</strong>
+                <span>proporção de respostas corretas nas revisões já registradas</span>
+                <div class="flash-metric-track"><i id="quick-metric-retention-bar" style="width:0%"></i></div>
+              </div>
+            </div>
+            <div class="flash-metric-detail">
+              <div><span>Fila de revisão</span><small>Mostra quantos cards já venceram ou precisam ser vistos hoje.</small></div>
+              <div><span>Histórico</span><small>Acertos e erros consideram todas as revisões registradas até agora.</small></div>
             </div>
           </aside>
         </section>
