@@ -3953,3 +3953,78 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
     line-height:1.3!important;
   }
 }
+
+
+/* Dashboard 1 v59 — distribui o viewport e ancora a faixa inferior */
+@media (min-width:981px) and (min-height:700px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    height:calc(100dvh - 96px)!important;
+    min-height:0!important;
+    padding-bottom:4px!important;
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-greeting{
+    flex:0 0 auto!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1.7fr) minmax(260px,.95fr)!important;
+    grid-template-rows:minmax(300px,1fr) 174px!important;
+    column-gap:7px!important;
+    row-gap:7px!important;
+    align-content:stretch!important;
+  }
+
+  /* O espaço livre fica na faixa superior, dividido por Atividades,
+     Resumo do dia e Ofensiva. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
+    height:auto!important;
+    max-height:none!important;
+    min-height:300px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:auto!important;
+    max-height:none!important;
+    min-height:300px!important;
+    grid-template-rows:repeat(2,minmax(0,1fr))!important;
+    gap:7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side>.dl-card{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+
+  /* Faixa inferior encostada no limite útil da tela e com alturas iguais. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    align-self:stretch!important;
+    height:174px!important;
+    min-height:174px!important;
+    max-height:174px!important;
+    margin-top:0!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    grid-column:1!important;
+    grid-row:2!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    grid-column:2!important;
+    grid-row:2!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat-content{
+    height:112px!important;
+    min-height:0!important;
+  }
+}
