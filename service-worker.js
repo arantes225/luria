@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v198-metrics-blue";
+const CACHE_VERSION = "luria-pwa-v199-metrics-surface";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
