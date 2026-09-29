@@ -5342,9 +5342,42 @@ function wireErrorLibrary() {
   document.querySelectorAll("[data-error-home-back]").forEach(button=>button.addEventListener("click",()=>switchErrorTab("library")));
   document.getElementById("error-start-home-review")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
   document.getElementById("error-review-home-now")?.addEventListener("click",()=>openErrorReviewPage({mode:"today"}));
-  document.getElementById("error-review-home-create")?.addEventListener("click",()=>{
-    setErrorHomeMode("all");
-    setErrorLibraryStatus("Abra um caderno e use Selecionar para montar uma revisão personalizada.","success");
+  document.getElementById("error-review-home-new-error")?.addEventListener("click",()=>switchErrorTab("create"));
+
+  const createMenuTrigger=document.getElementById("error-create-menu-trigger");
+  const createMenu=document.getElementById("error-create-menu");
+  const closeCreateMenu=()=>{
+    if(createMenu)createMenu.hidden=true;
+    createMenuTrigger?.setAttribute("aria-expanded","false");
+  };
+
+  createMenuTrigger?.addEventListener("click",(event)=>{
+    event.preventDefault();
+    event.stopPropagation();
+    if(!createMenu)return;
+    const open=createMenu.hidden;
+    createMenu.hidden=!open;
+    createMenuTrigger.setAttribute("aria-expanded",String(open));
+  });
+
+  createMenu?.addEventListener("click",(event)=>{
+    const action=event.target.closest("[data-error-create-action]")?.dataset.errorCreateAction;
+    if(!action)return;
+    closeCreateMenu();
+
+    if(action==="error"){
+      switchErrorTab("create");
+      return;
+    }
+
+    if(action==="review"){
+      setErrorHomeMode("all");
+      setErrorLibraryStatus("Abra um caderno e use Selecionar para montar uma revisão personalizada.","success");
+    }
+  });
+
+  document.addEventListener("click",(event)=>{
+    if(!event.target.closest(".error-create-menu-wrap"))closeCreateMenu();
   });
 
 
