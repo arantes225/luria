@@ -3380,9 +3380,9 @@ body.auth-page>.auth-card{
 :root[data-theme="light"] .flash-top-spotlight,
 :root[data-theme="light"] .qs-v17-top,
 :root[data-theme="light"] .error-cat-spotlight{
-  background:#184888!important;
-  background-color:#184888!important;
-  border-color:#184888!important;
+  background:#0A2342!important;
+  background-color:#0A2342!important;
+  border-color:#123A70!important;
   color:#fff!important;
 }
 :root[data-theme="light"] .luria-page-spotlight::before,
@@ -3440,9 +3440,9 @@ body.auth-page>.auth-card{
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .flash-top-spotlight,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .qs-v17-top,
 :root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"]) .error-cat-spotlight{
-  background:#184888!important;
-  background-color:#184888!important;
-  border-color:#184888!important;
+  background:#0A2342!important;
+  background-color:#0A2342!important;
+  border-color:#123A70!important;
   color:#fff!important;
 }
 
@@ -3460,9 +3460,9 @@ body.theme-dark .stats-hero,
 body.theme-dark .flash-top-spotlight,
 body.theme-dark .qs-v17-top,
 body.theme-dark .error-cat-spotlight{
-  background:#184888!important;
-  background-color:#184888!important;
-  border-color:#184888!important;
+  background:#0A2342!important;
+  background-color:#0A2342!important;
+  border-color:#123A70!important;
   color:#fff!important;
 }
 
