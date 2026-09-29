@@ -3175,3 +3175,18 @@ body[data-page="erros"] .error-metric-card{
     margin-left:0!important;
   }
 }
+
+
+/* Force single white Pulo do Gato asset in error notebook */
+.error-cat-logo .error-cat-logo-lightbg,
+.error-cat-logo .error-cat-logo-pink,
+.review-cat-brand .review-cat-light,
+.review-cat-brand .review-cat-pink{
+  display:none!important;
+}
+.error-cat-logo .error-cat-logo-darkbg,
+.review-cat-brand .review-cat-dark{
+  display:block!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
