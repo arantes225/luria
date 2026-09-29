@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v200-dark-spotlight-effect";
+const CACHE_VERSION = "luria-pwa-v201-editais-title";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
