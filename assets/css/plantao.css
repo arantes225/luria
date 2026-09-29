@@ -7323,3 +7323,48 @@ body.plantao-module-entry .plantao-clock strong{
     font-size:23px!important;
   }
 }
+
+
+/* === Sala de Emergência · acabamento v50 === */
+/* Cabeçalho: usa exatamente o comportamento visual do topbar global. */
+body.plantao-module-entry .topbar:not(.plantao-standard-topbar){
+  margin-bottom:20px;
+}
+body.plantao-module-entry .topbar:not(.plantao-standard-topbar) .page-heading h1{
+  margin:0;
+}
+
+/* Card final sem ilustração, mais compacto e alinhado aos demais cards laterais. */
+body.plantao-module-entry .plantao-next-challenge{
+  min-height:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+  background:var(--surface)!important;
+  border:1px solid var(--border)!important;
+  box-shadow:var(--shadow-sm,0 6px 18px rgba(17,48,82,.06))!important;
+}
+body.plantao-module-entry .plantao-next-illustration,
+body.plantao-module-entry .plantao-doctors-art,
+body.plantao-module-entry .plantao-quote-card{
+  display:none!important;
+}
+body.plantao-module-entry .plantao-next-copy{
+  padding:18px!important;
+}
+body.plantao-module-entry .plantao-next-copy h3{
+  margin:0!important;
+  max-width:none!important;
+  font-size:16px!important;
+  line-height:1.25!important;
+  color:var(--text)!important;
+}
+body.plantao-module-entry .plantao-next-copy p{
+  margin:7px 0 0!important;
+  font-size:11px!important;
+  line-height:1.45!important;
+  color:var(--muted)!important;
+  font-weight:650!important;
+}
+body.plantao-module-entry #plantao-empty{
+  display:none!important;
+}
