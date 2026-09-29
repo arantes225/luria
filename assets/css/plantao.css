@@ -7497,3 +7497,16 @@ body.plantao-module-entry #plantao-library{
   position:relative!important;
   z-index:1!important;
 }
+
+
+/* v52 — APH em aba própria */
+body.plantao-module-entry[data-case-library-view="aph"] #plantao-resume-card,
+body.plantao-module-entry[data-case-library-view="aph"] .plantao-library-inner-switch{
+  display:none!important;
+}
+body.plantao-module-entry[data-case-library-view="aph"] .plantao-library-side{
+  align-self:start!important;
+}
+body.plantao-module-entry[data-case-library-view="aph"] .plantao-primary-switch-wrap .plantao-native-switch>button{
+  min-width:0!important;
+}
