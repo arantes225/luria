@@ -3253,3 +3253,251 @@ body[data-page="dashboard"] .dl-cat .dl-card-heading h3{
     font-size:14px!important;
   }
 }
+
+
+/* Dashboard 1 v53 — ergonomia interna final */
+@media (min-width:701px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side>.dl-card{
+    border-radius:18px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading{
+    margin-bottom:14px!important;
+    align-items:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading h3{
+    align-items:center!important;
+    gap:9px!important;
+    font-size:16px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading h3 .dl-heading-icon{
+    width:26px!important;
+    height:26px!important;
+    flex-basis:26px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading a{
+    font-size:11px!important;
+    font-weight:750!important;
+  }
+
+  /* Resumo do dia: conteúdo mais horizontal, sem círculo dominando o card. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    display:grid!important;
+    grid-template-columns:82px minmax(0,1fr)!important;
+    gap:16px!important;
+    align-items:center!important;
+    padding:2px 2px 4px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring{
+    width:82px!important;
+    height:82px!important;
+    flex:0 0 82px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring:before{
+    inset:9px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring strong{
+    font-size:20px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring small{
+    font-size:9px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:7px 8px!important;
+    min-width:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child strong{
+    grid-column:1/-1!important;
+    margin:0 0 1px!important;
+    font-size:14px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child span{
+    min-width:0!important;
+    padding:7px 8px!important;
+    border:1px solid var(--border)!important;
+    border-radius:10px!important;
+    background:var(--surface-2)!important;
+    color:var(--muted)!important;
+    font-size:10px!important;
+    line-height:1.2!important;
+    text-align:center!important;
+  }
+
+  /* Ofensiva: fogo + dias formam um único bloco, evitando vazio vertical. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    display:grid!important;
+    grid-template-columns:100px minmax(0,1fr)!important;
+    grid-template-rows:auto 1fr!important;
+    column-gap:12px!important;
+    align-items:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-card-heading{
+    grid-column:1/-1!important;
+    grid-row:1!important;
+    width:100%!important;
+    margin-bottom:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{
+    grid-column:1!important;
+    grid-row:2!important;
+    min-height:0!important;
+    height:100%!important;
+    margin:0!important;
+    gap:3px!important;
+    justify-content:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{
+    width:68px!important;
+    height:78px!important;
+    min-width:68px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{
+    font-size:14px!important;
+    text-align:center!important;
+    white-space:nowrap!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{
+    grid-column:2!important;
+    grid-row:2!important;
+    align-self:center!important;
+    margin:0!important;
+    padding:0!important;
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:7px 5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays span{
+    display:grid!important;
+    grid-template-columns:12px minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:4px!important;
+    text-align:left!important;
+    font-size:9px!important;
+    line-height:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays i{
+    width:11px!important;
+    height:11px!important;
+    margin:0!important;
+  }
+
+  /* Atividades: grandes quando poucas, mas sem parecer um painel vazio inflado. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline{
+    display:grid!important;
+    align-content:start!important;
+    gap:9px!important;
+    overflow-y:auto!important;
+    padding:1px 3px 3px 1px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="1"]{
+    grid-template-rows:128px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="2"]{
+    grid-template-rows:repeat(2,96px)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="3"]{
+    grid-template-rows:repeat(3,76px)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="4"]{
+    grid-template-rows:repeat(4,64px)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="5"],
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="6"],
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="7"],
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="8"],
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="9"],
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="10"]{
+    grid-auto-rows:58px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-action-inside .dl-activity-info{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:center!important;
+    gap:12px!important;
+    height:100%!important;
+    min-height:0!important;
+    padding:10px 12px!important;
+    border-radius:12px!important;
+    background:var(--surface-2)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-action-inside:first-child .dl-activity-info{
+    border-color:color-mix(in srgb,var(--accent) 22%,var(--border))!important;
+    background:color-mix(in srgb,var(--accent) 5%,var(--surface))!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-copy strong{
+    font-size:13px!important;
+    line-height:1.2!important;
+    white-space:normal!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:2!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-activity-copy small{
+    margin-top:4px!important;
+    font-size:10px!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-start{
+    min-width:68px!important;
+    height:32px!important;
+    border-radius:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="1"] .dl-activity-info{
+    padding:15px 16px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large .dl-timeline[data-activity-count="1"] .dl-activity-copy strong{
+    font-size:15px!important;
+  }
+
+  /* Segunda faixa mais separada visualmente da faixa principal. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    margin-top:10px!important;
+  }
+}
