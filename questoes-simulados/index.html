@@ -2705,6 +2705,23 @@ body[data-theme="dark"][data-page="questoes"] .qs-home-system .qs-home-primary{
   border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
 }
 </style>
+
+<style id="qs-daily-hero-polish-v33">
+body[data-page="questoes"] .qs-home-system{position:relative!important;isolation:isolate!important;overflow:hidden!important;border:1px solid rgba(255,255,255,.18)!important;box-shadow:0 14px 32px color-mix(in srgb,var(--accent) 24%,transparent)!important}
+body[data-page="questoes"] .qs-home-system:before{content:""!important;display:block!important;position:absolute!important;inset:0!important;z-index:-2!important;background:linear-gradient(118deg,rgba(255,255,255,.10),transparent 46%,rgba(0,0,0,.08))!important}
+body[data-page="questoes"] .qs-home-system:after{content:""!important;display:block!important;position:absolute!important;width:260px!important;height:260px!important;right:-82px!important;top:-116px!important;border:1px solid rgba(255,255,255,.16)!important;border-radius:50%!important;box-shadow:0 0 0 38px rgba(255,255,255,.035),0 0 0 78px rgba(255,255,255,.025)!important;z-index:-1!important}
+body[data-page="questoes"] .qs-home-system-copy{position:relative!important;z-index:3!important;max-width:68%!important}
+body[data-page="questoes"] .qs-home-system .qs-home-eyebrow{display:inline-flex!important;align-items:center!important;width:max-content!important;padding:5px 9px!important;border:1px solid rgba(255,255,255,.24)!important;border-radius:999px!important;background:rgba(255,255,255,.10)!important;letter-spacing:.11em!important;font-size:9px!important}
+body[data-page="questoes"] .qs-home-system h2{font-size:clamp(22px,2vw,29px)!important;letter-spacing:-.025em!important;margin:10px 0 7px!important}
+body[data-page="questoes"] .qs-home-system p{max-width:520px!important;color:rgba(255,255,255,.76)!important;line-height:1.55!important}
+body[data-page="questoes"] .qs-daily-badge{position:absolute!important;right:42px!important;top:50%!important;transform:translateY(-50%) rotate(4deg)!important;width:92px!important;height:112px!important;border:1px solid rgba(255,255,255,.24)!important;border-radius:18px!important;background:linear-gradient(145deg,rgba(255,255,255,.18),rgba(255,255,255,.06))!important;box-shadow:0 18px 35px rgba(0,0,0,.13)!important;display:grid!important;place-items:center!important;z-index:2!important;backdrop-filter:blur(4px)!important}
+body[data-page="questoes"] .qs-daily-badge svg{width:46px!important;height:46px!important;fill:none!important;stroke:rgba(255,255,255,.88)!important;stroke-width:1.5!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+body[data-page="questoes"] .qs-daily-decor{position:absolute!important;right:116px!important;bottom:28px!important;display:flex!important;gap:6px!important;z-index:2!important}
+body[data-page="questoes"] .qs-daily-decor span{display:block!important;width:6px!important;height:6px!important;border-radius:50%!important;background:rgba(255,255,255,.42)!important}
+body[data-page="questoes"] .qs-home-system .qs-home-primary{border-radius:12px!important;padding:0 17px!important;min-height:42px!important;transition:transform .18s ease,box-shadow .18s ease!important}
+body[data-page="questoes"] .qs-home-system .qs-home-primary:hover{transform:translateY(-2px)!important;box-shadow:0 10px 22px rgba(0,0,0,.18)!important}
+@media(max-width:760px){body[data-page="questoes"] .qs-home-system-copy{max-width:100%!important}body[data-page="questoes"] .qs-daily-badge{opacity:.28!important;right:14px!important}.qs-daily-decor{display:none!important}}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2738,6 +2755,8 @@ body[data-theme="dark"][data-page="questoes"] .qs-home-system .qs-home-primary{
           <div class="qs-home-workspace">
             <div class="qs-home-main-column">
               <article class="qs-home-system">
+                <div class="qs-daily-decor" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="qs-daily-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10v3H7zM5 6h14v15H5zM8 11h8M8 15h5"/></svg></div>
                 <div class="qs-home-system-copy">
                   <span class="qs-home-eyebrow">Do LURIA</span>
                   <h2>Questões do dia</h2>
