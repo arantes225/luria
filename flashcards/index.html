@@ -185,6 +185,24 @@ body[data-page="flashcards"] .flash-home-action:hover{
  box-shadow:0 12px 28px color-mix(in srgb,var(--accent) 13%,transparent)!important;
 }
 </style>
+
+<style id="flash-daily-hero-like-questions-v47">
+body[data-page="flashcards"] #review-launcher{position:relative!important;isolation:isolate!important;overflow:hidden!important;background:var(--accent)!important;border-color:var(--accent)!important;color:#fff!important;box-shadow:0 14px 32px color-mix(in srgb,var(--accent) 24%,transparent)!important}
+body[data-page="flashcards"] #review-launcher:before{content:""!important;position:absolute!important;inset:0!important;z-index:-2!important;background:linear-gradient(118deg,rgba(255,255,255,.10),transparent 46%,rgba(0,0,0,.08))!important}
+body[data-page="flashcards"] #review-launcher:after{content:""!important;position:absolute!important;width:260px!important;height:260px!important;right:-82px!important;top:-116px!important;border:1px solid rgba(255,255,255,.16)!important;border-radius:50%!important;box-shadow:0 0 0 38px rgba(255,255,255,.035),0 0 0 78px rgba(255,255,255,.025)!important;z-index:-1!important}
+body[data-page="flashcards"] #review-launcher .review-launcher-copy{position:relative!important;z-index:3!important;max-width:66%!important}
+body[data-page="flashcards"] #review-launcher .eyebrow{display:inline-flex!important;width:max-content!important;padding:5px 9px!important;border:1px solid rgba(255,255,255,.24)!important;border-radius:999px!important;background:rgba(255,255,255,.10)!important;color:#fff!important;font-size:9px!important;font-weight:400!important;letter-spacing:.11em!important}
+body[data-page="flashcards"] #review-launcher h3{margin:10px 0 7px!important;color:#fff!important;font-size:clamp(22px,2vw,29px)!important;font-weight:650!important;letter-spacing:-.025em!important}
+body[data-page="flashcards"] #review-launcher p{color:rgba(255,255,255,.76)!important;line-height:1.55!important}
+body[data-page="flashcards"] #review-launcher .review-launcher-action{position:relative!important;z-index:4!important;align-items:flex-end!important}
+body[data-page="flashcards"] #review-launcher .review-launcher-action strong{color:rgba(255,255,255,.82)!important}
+body[data-page="flashcards"] #review-launcher #start-review-session{background:#fff!important;color:var(--accent)!important;border-color:#fff!important;border-radius:12px!important;box-shadow:0 7px 18px rgba(0,0,0,.16)!important}
+body[data-page="flashcards"] .flash-daily-art{position:absolute!important;right:150px!important;top:50%!important;transform:translateY(-50%) rotate(4deg)!important;width:86px!important;height:108px!important;border:1px solid rgba(255,255,255,.24)!important;border-radius:18px!important;background:linear-gradient(145deg,rgba(255,255,255,.18),rgba(255,255,255,.06))!important;box-shadow:0 18px 35px rgba(0,0,0,.13)!important;display:grid!important;place-items:center!important;z-index:2!important;backdrop-filter:blur(4px)!important}
+body[data-page="flashcards"] .flash-daily-art svg{width:45px!important;height:45px!important;fill:none!important;stroke:rgba(255,255,255,.9)!important;stroke-width:1.45!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+body[data-page="flashcards"] .flash-daily-decor{position:absolute!important;right:220px!important;bottom:27px!important;display:flex!important;gap:6px!important;z-index:2!important}.flash-daily-decor span{width:6px!important;height:6px!important;border-radius:50%!important;background:rgba(255,255,255,.42)!important}
+:root[data-theme="dark"] body[data-page="flashcards"] #review-launcher,body.theme-dark[data-page="flashcards"] #review-launcher{background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;border-color:#20344F!important}
+@media(max-width:760px){body[data-page="flashcards"] #review-launcher .review-launcher-copy{max-width:100%!important}body[data-page="flashcards"] .flash-daily-art{opacity:.24!important;right:14px!important}.flash-daily-decor{display:none!important}}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -461,7 +479,7 @@ body[data-page="flashcards"] .flash-home-action:hover{
               tabindex="0"
               aria-label="Abrir flashcards do dia"
             >
-              <div class="review-launcher-copy">
+              <div class="flash-daily-decor" aria-hidden="true"><span></span><span></span><span></span></div><div class="flash-daily-art" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5M9 4V2h10a2 2 0 0 1 2 2v13h-2"/></svg></div><div class="review-launcher-copy">
                 <span class="eyebrow">Pronto para revisar</span>
                 <h3 id="review-launcher-title">Revisões do dia</h3>
                 <p id="review-launcher-copy">
