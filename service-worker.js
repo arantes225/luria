@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v211-layout-pcr-history";
+const CACHE_VERSION = "luria-pwa-v212-work-sidebar-pinned";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
