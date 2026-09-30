@@ -55,7 +55,7 @@
  body[data-page="erros"] .error-review-action-switch{position:absolute!important;right:18px;bottom:18px;z-index:4}
 }
 </style>
-<style id="error-home-identical-qs-v21">
+<style id="error-home-identical-qs-v21" media="not all">
 body[data-page="erros"] .error-cat-spotlight{display:none!important}
 @media(min-width:981px){
  html:has(body[data-page="erros"]),body[data-page="erros"]{height:100dvh!important;max-height:100dvh!important;overflow:hidden!important}
@@ -95,6 +95,76 @@ body[data-page="erros"] .error-cat-spotlight{display:none!important}
  body[data-page="erros"] .error-home-action-copy{display:flex;flex-direction:column;justify-content:center}.error-home-action-copy strong{font-size:13px;font-weight:500;color:var(--accent)}.error-home-action-copy small{margin-top:4px;font-size:9px;color:color-mix(in srgb,var(--accent) 62%,var(--muted))}
  body[data-page="erros"] .error-home-action-arrow{display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--accent)}
  body[data-page="erros"] .error-review-action-switch{display:none!important}
+}
+</style>
+<style id="error-home-clean-qs-v22">
+@media(min-width:981px){
+ html:has(body[data-page="erros"]),body[data-page="erros"]{height:100dvh!important;min-height:100dvh!important;max-height:100dvh!important;overflow:hidden!important}
+ body[data-page="erros"] .error-cat-spotlight{
+  grid-column:1!important;grid-row:1!important;display:flex!important;position:relative!important;
+  height:272px!important;min-height:272px!important;max-height:272px!important;box-sizing:border-box!important;
+  margin:0!important;padding:28px!important;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+  border-radius:15px!important;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,var(--surface)),var(--surface) 58%,color-mix(in srgb,var(--accent) 8%,var(--surface)))!important;
+  box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;overflow:hidden!important
+ }
+ body[data-page="erros"] .error-home-layout.review-mode{
+  display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;
+  grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;
+  height:calc(100dvh - 240px)!important;min-height:0!important;max-height:calc(100dvh - 240px)!important;overflow:hidden!important
+ }
+ body[data-page="erros"] .error-daily-review-card{display:none!important}
+ body[data-page="erros"] .error-home-main{
+  grid-column:1!important;grid-row:2!important;min-height:0!important;height:100%!important;box-sizing:border-box!important;
+  padding:16px 18px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;
+  overflow:hidden!important;display:flex!important;flex-direction:column!important
+ }
+ body[data-page="erros"] .error-library-nav{flex:0 0 auto!important}
+ body[data-page="erros"] .error-library-panel{flex:1 1 auto!important;min-height:0!important;overflow:hidden!important}
+ body[data-page="erros"] #error-library{min-height:0!important;max-height:100%!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain!important}
+ body[data-page="erros"] .error-review-home-aside{display:contents!important}
+ body[data-page="erros"] .error-side-card.error-quick-metrics{
+  grid-column:2!important;grid-row:1!important;height:272px!important;min-height:272px!important;max-height:272px!important;box-sizing:border-box!important;
+  padding:16px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;
+  box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;overflow:hidden!important
+ }
+ body[data-page="erros"] .error-side-head span{display:none!important}
+ body[data-page="erros"] .error-side-head h3{font-size:16px!important;font-weight:600!important;margin:0!important}
+ body[data-page="erros"] .error-review-action-switch{display:none!important}
+ body[data-page="erros"] .error-home-actions{
+  grid-column:2!important;grid-row:2!important;min-height:0!important;height:100%!important;
+  display:grid!important;grid-template-columns:1fr!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;gap:10px!important
+ }
+ body[data-page="erros"] .error-home-action{
+  --qa:var(--accent)!important;position:relative!important;display:grid!important;
+  grid-template-columns:56px minmax(0,1fr) 38px!important;grid-template-rows:1fr!important;
+  align-items:center!important;justify-items:stretch!important;align-content:center!important;gap:12px!important;
+  height:auto!important;min-height:0!important;max-height:none!important;padding:0 15px!important;overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border))!important;border-radius:19px!important;
+  background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;color:var(--accent)!important;text-align:left!important;
+  box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 8%,transparent)!important
+ }
+ body[data-page="erros"] .error-home-action:before{
+  content:""!important;display:block!important;position:absolute!important;left:42%!important;right:-8%!important;bottom:-58%!important;
+  height:105%!important;border-radius:50% 0 0 0!important;background:color-mix(in srgb,var(--accent) 7.5%,transparent)!important;transform:rotate(-8deg)!important
+ }
+ body[data-page="erros"] .error-home-action-icon{
+  position:static!important;z-index:2!important;grid-column:1!important;grid-row:1!important;width:48px!important;height:48px!important;
+  margin:0!important;padding:0!important;align-self:center!important;justify-self:center!important;display:flex!important;align-items:center!important;justify-content:center!important;
+  border-radius:12px!important;background:color-mix(in srgb,var(--accent) 12%,var(--surface))!important;
+  border:1px solid color-mix(in srgb,var(--accent) 18%,transparent)!important;color:var(--accent)!important;font-size:23px!important;line-height:1!important
+ }
+ body[data-page="erros"] .error-home-action-copy{
+  position:static!important;z-index:2!important;grid-column:2!important;grid-row:1!important;align-self:center!important;justify-self:stretch!important;
+  display:flex!important;flex-direction:column!important;justify-content:center!important;min-height:0!important;height:auto!important;margin:0!important;padding:0!important
+ }
+ body[data-page="erros"] .error-home-action-copy strong{display:block!important;margin:0!important;padding:0!important;font-size:21px!important;font-weight:850!important;line-height:1.08!important;color:var(--accent)!important}
+ body[data-page="erros"] .error-home-action-copy small{display:block!important;margin:4px 0 0!important;padding:0!important;font-size:13px!important;line-height:1.15!important;color:color-mix(in srgb,var(--accent) 62%,var(--muted))!important}
+ body[data-page="erros"] .error-home-action-arrow{
+  position:static!important;z-index:2!important;grid-column:3!important;grid-row:1!important;width:34px!important;height:34px!important;margin:0!important;padding:0!important;
+  align-self:center!important;justify-self:center!important;display:flex!important;align-items:center!important;justify-content:center!important;
+  border-radius:50%!important;background:color-mix(in srgb,var(--accent) 9%,var(--surface))!important;color:var(--accent)!important;font-size:25px!important;line-height:1!important
+ }
+ body[data-page="erros"] .error-home-action:hover{transform:translateY(-2px)!important;box-shadow:0 12px 28px color-mix(in srgb,var(--accent) 13%,transparent)!important}
 }
 </style>
 </head>
@@ -158,12 +228,13 @@ body[data-page="erros"] .error-cat-spotlight{display:none!important}
           </div>
         </section>
 
-        <section class="error-cat-spotlight" aria-label="Pulo do Gato em destaque">
+        <section class="error-home-layout review-mode">
+<section class="error-cat-spotlight" aria-label="Pulo do Gato em destaque">
           <div class="error-cat-logo" aria-hidden="true"><img class="error-cat-logo-lightbg" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt=""><img class="error-cat-logo-darkbg" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp" alt=""></div>
           <div class="error-cat-copy"><span class="error-cat-label">Destaque</span><strong id="error-cat-spotlight-text">Carregando seu Pulo do Gato...</strong><small id="error-cat-spotlight-meta">Uma ideia essencial para levar para a prova.</small></div>
           <div class="error-cat-timer"><span id="error-cat-timer-bar"></span></div>
         </section>
-<section class="error-home-layout review-mode">
+
           <article class="error-daily-review-card" id="error-daily-review-card" role="button" tabindex="0">
   <div><span class="error-home-eyebrow">Do LURIA</span><h2>Revisões do dia</h2><p>Revise os erros programados para hoje e mantenha os pontos importantes ativos.</p><div class="error-daily-meta"><span>Conteúdo programado</span><span>Disponível agora</span></div></div>
   <button type="button" id="error-daily-review-open">Abrir revisões do dia →</button>
