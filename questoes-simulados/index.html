@@ -2660,6 +2660,26 @@ body.theme-dark[data-page="questoes"] .qs-home-system{
   border-color:var(--accent)!important;
 }
 </style>
+
+<style id="qs-my-lists-three-v31">
+@media(min-width:981px){
+ body[data-page="questoes"] .qs-home-my-lists-content{
+   overflow:hidden!important;
+   display:grid!important;
+   grid-template-rows:repeat(3,minmax(0,1fr))!important;
+   gap:7px!important;
+   padding:0!important;
+   scrollbar-gutter:auto!important;
+ }
+ body[data-page="questoes"] .qs-home-my-lists-content>.qs-home-user-row{
+   min-height:0!important;
+   max-height:none!important;
+   height:100%!important;
+   padding:7px 10px!important;
+   margin:0!important;
+ }
+}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2711,7 +2731,6 @@ body.theme-dark[data-page="questoes"] .qs-home-system{
                     <span class="qs-home-eyebrow">Minhas listas</span>
                     <h2>Continue de onde parou</h2>
                   </div>
-                  <button class="qs-home-link" type="button" data-qs-mode="library">Ver todas →</button>
                 </div>
                 <div id="qs-home-my-lists-content" class="qs-home-my-lists-content">
                   <div class="qs-empty">Carregando suas listas...</div>
