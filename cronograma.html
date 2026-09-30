@@ -3497,6 +3497,44 @@ body[data-page="cronograma"]::after{
 }
 </style>
 
+
+
+<style id="cronograma-geometry-final-20260929">
+@media(min-width:981px){
+  /* Card superior com a mesma geometria compacta aprovada do Cronograma. */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-page-spotlight{
+    box-sizing:border-box!important;
+    width:100%!important;
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px 24px!important;
+    margin-bottom:14px!important;
+    overflow:hidden!important;
+  }
+
+  /* O limite direito dos controles coincide exatamente com o limite direito da .page. */
+  body[data-page="cronograma"]:not(.schedule-settings-embed){
+    --cronograma-page-gutter:34px;
+    --luria-top-controls-right:max(
+      var(--cronograma-page-gutter),
+      calc((100vw - 1320px) / 2 + var(--cronograma-page-gutter))
+    );
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+    position:fixed!important;
+    top:10px!important;
+    right:var(--luria-top-controls-right)!important;
+    left:auto!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+  }
+}
+</style>
+
 </body>
 </html>
 
