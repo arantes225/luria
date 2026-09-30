@@ -2841,46 +2841,25 @@ body[data-page="questoes"] .qs-home-system{
                 </div>
               </article>
 
-              <div class="qs-home-actions qs-home-actions-compact" aria-label="Ações de simulados">
-                <button class="qs-home-action qs-home-action-create" type="button" data-qs-mode="add" data-qs-add-mode="manual">
-                  <span class="qs-home-action-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6zM9 8h6M9 12h6M9 16h3"/><path d="M18 14h4M20 12v4"/></svg>
-                  </span>
-                  <span class="qs-home-action-copy">
-                    <strong>Criar novo</strong>
-                    <small>Monte sua própria lista.</small>
-                  </span>
-                  <span class="qs-home-action-arrow">→</span>
-                </button>
+              <div class="error-home-actions qs-home-actions-compact" aria-label="Ações de simulados">
+ <button class="error-home-action qs-home-action" type="button" data-qs-mode="add" data-qs-add-mode="manual">
+  <span class="error-home-action-icon">＋</span>
+  <span class="error-home-action-copy"><strong>Criar novo</strong><small>Monte sua própria lista.</small></span>
+  <span class="error-home-action-arrow">→</span>
+ </button>
+ <button class="error-home-action qs-home-action" type="button" data-qs-mode="add" data-qs-add-mode="automatic">
+  <span class="error-home-action-icon">↑</span>
+  <span class="error-home-action-copy"><strong>Enviar novo</strong><small>Importe um PDF.</small></span>
+  <span class="error-home-action-arrow">→</span>
+ </button>
+ <button class="error-home-action qs-home-action" type="button" data-qs-mode="library">
+  <span class="error-home-action-icon">▥</span>
+  <span class="error-home-action-copy"><strong>Biblioteca</strong><small>Veja tudo o que você salvou.</small></span>
+  <span class="error-home-action-arrow">→</span>
+ </button>
+</div>
 
-                <button class="qs-home-action qs-home-action-upload" type="button" data-qs-mode="add" data-qs-add-mode="automatic">
-                  <span class="qs-home-action-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M5 14v6h14v-6"/></svg>
-                  </span>
-                  <span class="qs-home-action-copy">
-                    <strong>Enviar novo</strong>
-                    <small>Importe um PDF.</small>
-                  </span>
-                  <span class="qs-home-action-arrow">→</span>
-                </button>
-
-                <button class="qs-home-action qs-home-action-library" type="button" data-qs-mode="library">
-                  <span class="qs-home-action-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4v14H4zM10 5h4v14h-4zM16 5h4v14h-4z"/></svg>
-                  </span>
-                  <span class="qs-home-action-copy">
-                    <strong>Biblioteca</strong>
-                    <small>Veja tudo o que você salvou.</small>
-                  </span>
-                  <span class="qs-home-action-arrow">→</span>
-                </button>
-              </div>
-
-
-            </aside>
-          </div>
-
-          <div hidden aria-hidden="true">
+<div hidden aria-hidden="true">
             <h2 id="qs-home-next-title"></h2>
             <p id="qs-home-next-subtitle"></p>
             <strong id="qs-home-next-date"></strong>
@@ -3385,4 +3364,18 @@ body[data-page="questoes"] .qs-home-daily-count{
   letter-spacing:-.01em!important;
 }
 body[data-page="questoes"] .qs-home-system .qs-home-primary{margin-top:10px!important}
+</style>
+
+<style id="qs-copy-error-actions-v62">
+/* Questões e Simulados usa exatamente a linguagem dos botões do Caderno de Erros. */
+body[data-page="questoes"] .qs-home-actions-compact{display:grid!important;grid-template-columns:1fr!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;gap:10px!important;height:100%!important;min-height:0!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action{position:relative!important;display:grid!important;grid-template-columns:56px minmax(0,1fr) 38px!important;grid-template-rows:1fr!important;align-items:center!important;gap:12px!important;height:auto!important;min-height:0!important;padding:0 15px!important;overflow:hidden!important;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border))!important;border-radius:19px!important;background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;color:var(--accent)!important;text-align:left!important;box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 8%,transparent)!important;transform:none!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action:before{content:""!important;display:block!important;position:absolute!important;left:42%!important;right:-8%!important;bottom:-58%!important;height:105%!important;border-radius:50% 0 0 0!important;background:color-mix(in srgb,var(--accent) 7.5%,transparent)!important;transform:rotate(-8deg)!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-icon{position:static!important;z-index:2!important;grid-column:1!important;grid-row:1!important;width:48px!important;height:48px!important;margin:0!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important;border-radius:12px!important;background:color-mix(in srgb,var(--accent) 12%,var(--surface))!important;border:1px solid color-mix(in srgb,var(--accent) 18%,transparent)!important;color:var(--accent)!important;font-size:23px!important;line-height:1!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-copy{position:static!important;z-index:2!important;grid-column:2!important;grid-row:1!important;display:flex!important;flex-direction:column!important;justify-content:center!important;min-height:0!important;height:auto!important;margin:0!important;padding:0!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-copy strong{font-size:13px!important;font-weight:500!important;color:var(--accent)!important;line-height:1.15!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-copy small{margin-top:4px!important;font-size:9px!important;color:color-mix(in srgb,var(--accent) 62%,var(--muted))!important;line-height:1.3!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-arrow{position:static!important;z-index:2!important;grid-column:3!important;grid-row:1!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:16px!important;color:var(--accent)!important}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{display:none!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action:hover{border-color:color-mix(in srgb,var(--accent) 38%,var(--border))!important;box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 10%,transparent)!important;transform:translateY(-1px)!important}
 </style>
