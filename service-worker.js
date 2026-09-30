@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v209-qs-clean-images";
+const CACHE_VERSION = "luria-pwa-v210-cronograma-cachefix";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -18,8 +18,8 @@ const APP_SHELL = [
   "/questoes-simulados/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/css/style.css?v=16.13-font-uniform",
-  "/assets/css/luria-brand-v5.css?v=64-fine-left",
+  "/assets/css/style.css?v=20260929-crono-cachefix1",
+  "/assets/css/luria-brand-v5.css?v=77-cronograma-cachefix",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=17.44-work-eyebrows",
