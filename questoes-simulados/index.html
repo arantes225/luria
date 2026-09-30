@@ -2039,6 +2039,25 @@
   :root[data-theme="dark"] body[data-page="questoes"] .qs-home-actions-compact svg.qs-home-card-art,
   body.dark[data-page="questoes"] .qs-home-actions-compact svg.qs-home-card-art{color:var(--accent)!important;opacity:1!important}
 </style>
+<style id="qs-actions-visibility-fix-v10">
+body[data-page="questoes"] .qs-home-side-column,
+body[data-page="questoes"] .qs-home-actions,
+body[data-page="questoes"] .qs-home-actions-compact{
+  display:grid!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact{
+  grid-template-columns:1fr!important;
+  min-height:0!important;
+  overflow:visible!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+  display:grid!important;
+  visibility:visible!important;
+  opacity:1!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
