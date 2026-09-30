@@ -4411,3 +4411,13 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
     flex-basis:118px!important;
   }
 }
+
+/* Dashboard 1 v65 — +15px para baixo em Progresso por área e Pulo do Gato */
+@media (min-width:981px){
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+   height:calc(100% + 15px)!important;
+   min-height:calc(100% + 15px)!important;
+   box-sizing:border-box!important;
+ }
+}
