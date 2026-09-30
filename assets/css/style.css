@@ -4642,3 +4642,37 @@ body:not([data-page="dashboard"]) :is(
     --luria-title-helper-gap:6px;
   }
 }
+
+
+/* =========================================================
+   LURIA LOGIN — fundo branco texturizado com logos repetidas
+   Correção v2026-09-29
+   ========================================================= */
+body.auth-page{
+  background:#fff !important;
+  --luria-pattern-image:url("../img/logos/logo-icone-original.png?v=login-pattern-20260929");
+  --luria-pattern-size:96px;
+  --luria-pattern-opacity:.038;
+}
+body.auth-page::before,
+body.auth-page::after{
+  display:block !important;
+  content:"" !important;
+  background-color:transparent !important;
+  background-image:var(--luria-pattern-image) !important;
+  background-repeat:repeat !important;
+  background-size:var(--luria-pattern-size) var(--luria-pattern-size) !important;
+  pointer-events:none !important;
+}
+body.auth-page::before{
+  background-position:0 0 !important;
+  opacity:var(--luria-pattern-opacity) !important;
+}
+body.auth-page::after{
+  background-position:48px 48px !important;
+  opacity:var(--luria-pattern-opacity) !important;
+}
+body.auth-page>.auth-card{
+  position:relative;
+  z-index:2;
+}
