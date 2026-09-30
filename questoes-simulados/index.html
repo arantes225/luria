@@ -2220,6 +2220,42 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.success{border-col
 body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.danger{border-color:rgba(205,75,75,.18)!important}
 body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-color:color-mix(in srgb,var(--accent) 22%,var(--border))!important}
 </style>
+<style id="qs-home-balance-v16">
+@media(min-width:981px){
+ body[data-page="questoes"] .qs-home-workspace{
+   --qs-top-row-h:356px;
+   --qs-workspace-h:min(660px,calc(100vh - 255px));
+   min-height:var(--qs-workspace-h)!important;
+   align-items:stretch!important;
+ }
+ body[data-page="questoes"] .qs-home-main-column,
+ body[data-page="questoes"] .qs-home-side-column{
+   min-height:var(--qs-workspace-h)!important;height:var(--qs-workspace-h)!important;
+ }
+ body[data-page="questoes"] .qs-home-main-column{
+   display:grid!important;grid-template-rows:var(--qs-top-row-h) minmax(0,1fr)!important;gap:12px!important;
+ }
+ body[data-page="questoes"] .qs-home-system{
+   height:var(--qs-top-row-h)!important;min-height:var(--qs-top-row-h)!important;
+ }
+ body[data-page="questoes"] .qs-home-my-lists{
+   min-height:0!important;height:100%!important;overflow:hidden!important;
+ }
+ body[data-page="questoes"] .qs-home-side-column{
+   display:grid!important;grid-template-rows:var(--qs-top-row-h) minmax(0,1fr)!important;gap:12px!important;
+ }
+ body[data-page="questoes"] .qs-home-actions-compact{
+   height:var(--qs-top-row-h)!important;min-height:var(--qs-top-row-h)!important;
+   display:grid!important;grid-template-columns:1fr!important;grid-template-rows:repeat(3,1fr)!important;gap:10px!important;
+ }
+ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+   height:auto!important;min-height:0!important;max-height:none!important;
+ }
+ body[data-page="questoes"] .qs-home-week-compact{
+   height:100%!important;min-height:0!important;overflow:hidden!important;
+ }
+}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2284,34 +2320,6 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-colo
             </div>
 
             <aside class="qs-home-side-column" aria-label="Resumo e ações">
-              <article class="qs-home-week qs-home-week-compact">
-                <div class="qs-home-section-head">
-                  <div>
-                    <span class="qs-home-eyebrow">Resumo</span>
-                    <h2>Esta semana</h2>
-                  </div>
-                </div>
-
-                <div class="qs-home-week-grid">
-                  <div class="qs-home-metric">
-                    <strong id="qs-week-questions">—</strong>
-                    <small>Questões</small>
-                  </div>
-                  <div class="qs-home-metric success">
-                    <strong id="qs-week-accuracy">—</strong>
-                    <small>Acerto</small>
-                  </div>
-                  <div class="qs-home-metric danger">
-                    <strong id="qs-week-wrong">0</strong>
-                    <small>Erros</small>
-                  </div>
-                  <div class="qs-home-metric accent">
-                    <strong id="qs-home-week-sims">0</strong>
-                    <small>Listas</small>
-                  </div>
-                </div>
-              </article>
-
               <div class="qs-home-actions qs-home-actions-compact" aria-label="Ações de simulados">
                 <button class="qs-home-action qs-home-action-create" type="button" data-qs-mode="add" data-qs-add-mode="manual">
                   <span class="qs-home-action-icon">
@@ -2349,6 +2357,36 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-colo
                   <svg class="qs-home-card-art qs-home-art-library" viewBox="0 0 160 90" aria-hidden="true"><g class="art-soft"><rect x="18" y="16" width="124" height="61" rx="9"/><path d="M28 27h104"/></g><g class="art-main"><path d="M30 38h27l6 6h13v25H30zM83 38h23l6 6h14v25H83z"/><path d="M38 53h27M38 60h20M91 53h25M91 60h18"/></g></svg>
                 </button>
               </div>
+
+              <article class="qs-home-week qs-home-week-compact">
+                <div class="qs-home-section-head">
+                  <div>
+                    <span class="qs-home-eyebrow">Resumo</span>
+                    <h2>Esta semana</h2>
+                  </div>
+                </div>
+
+                <div class="qs-home-week-grid">
+                  <div class="qs-home-metric">
+                    <strong id="qs-week-questions">—</strong>
+                    <small>Questões</small>
+                  </div>
+                  <div class="qs-home-metric success">
+                    <strong id="qs-week-accuracy">—</strong>
+                    <small>Acerto</small>
+                  </div>
+                  <div class="qs-home-metric danger">
+                    <strong id="qs-week-wrong">0</strong>
+                    <small>Erros</small>
+                  </div>
+                  <div class="qs-home-metric accent">
+                    <strong id="qs-home-week-sims">0</strong>
+                    <small>Listas</small>
+                  </div>
+                </div>
+              </article>
+
+
             </aside>
           </div>
 
