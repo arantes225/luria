@@ -18,13 +18,17 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.12-no-legacy-dashboard">
   
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=59-content-aligned">
-  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=54-global-top-controls">
+  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=62-no-legacy-heading-flash">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/dashboard/">
   <script>(function(){try{if(location.pathname.endsWith("/dashboard.html"))history.replaceState(null,"","/dashboard/"+location.search+location.hash);}catch(e){}})();</script>
   <style>
     /* Impede o cabeçalho legado de aparecer durante hard refresh antes do JS. */
-    body.dashboard-preboot[data-page="dashboard"] .topbar .page-heading{display:none!important}
+    /* O Dashboard atual não usa o título legado da topbar. Esconde desde o primeiro paint,
+       inclusive depois que scripts alterarem classes do body durante o boot. */
+    body[data-page="dashboard"] .topbar .page-heading{display:none!important;visibility:hidden!important}
+    body[data-page="dashboard"] .topbar .page-heading [data-page-eyebrow],
+    body[data-page="dashboard"] .topbar .page-heading [data-page-title]{display:none!important}
   </style>
 </head>
 <body data-page="dashboard" class="dashboard-preboot">
