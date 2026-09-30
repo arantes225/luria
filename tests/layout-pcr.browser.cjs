@@ -17,7 +17,7 @@ let diagnosticPage;
 try{
 if(published){
 const context=await browser.newContext();const request=context.request;
-for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css","caderno/index.html","assets/css/caderno.css"]){
+for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css","caderno/index.html","assets/css/caderno.css","assets/css/flashcards-v21.css","assets/js/flashcards-v21.js"]){
 const expected=crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 let matched=false;
 for(let attempt=0;attempt<10;attempt++){
@@ -69,6 +69,16 @@ console.log("PASS Beta non-admin "+viewport.width);
 await goto("/flashcards/");
 await page.locator("#flash-home-decks-list .flash-ref-deck").first().waitFor();
 assert.equal(await page.locator("#flash-home-decks-list [data-v21-area]").count(),14,"All decks are shown");
+const homeDeck=page.locator("#flash-home-decks-list .flash-ref-deck:not(.flash-review-all-deck)").first();
+assert.equal(await homeDeck.locator(".flash-ref-deck-icon svg").count(),1,"Home deck has library icon finish");
+assert.equal(await homeDeck.locator(".flash-ref-deck-stats .flash-ref-deck-stat").count(),3,"Home deck shows library counters");
+const deckFinish=el=>{const s=getComputedStyle(el),icon=getComputedStyle(el.querySelector(".flash-ref-deck-icon"));return{border:s.borderLeftWidth,borderColor:s.borderLeftColor,radius:s.borderRadius,background:s.backgroundImage,padding:s.padding,title:getComputedStyle(el.querySelector("h3")).fontSize,iconBackground:icon.backgroundColor,iconRadius:icon.borderRadius};};
+const homeFinish=await homeDeck.evaluate(deckFinish);
+await page.locator('[data-flash-home-tab="library"]').click();
+await page.locator('[data-flash-section="library"] .flash-ref-deck').first().waitFor();
+assert.deepEqual(await page.locator('[data-flash-section="library"] .flash-ref-deck').first().evaluate(deckFinish),homeFinish,"Home cards match library finish");
+await goto("/flashcards/");await page.locator("#flash-home-decks-list [data-v21-area]").first().waitFor();
+
 assert.equal(await page.locator(".flash-home-decks-head button").count(),0);
 const scroll=await page.locator("#flash-home-decks-list .flash-deck-cards").evaluate(el=>({width:el.clientWidth,scroll:el.scrollWidth,overflow:getComputedStyle(el).overflowX}));
 assert.ok(scroll.scroll>scroll.width && scroll.overflow==="auto","Horizontal deck scroll");
