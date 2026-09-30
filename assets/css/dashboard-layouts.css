@@ -4491,3 +4491,14 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays span{font-size:9px!important;grid-template-columns:11px minmax(0,1fr)!important}
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays i{width:10px!important;height:10px!important}
 }
+
+
+/* Dashboard 1 v56 — ofensiva: fogo central e semana em colunas */
+@media (min-width:701px){
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{grid-template-columns:92px minmax(0,1fr)!important;column-gap:22px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{position:relative!important;align-self:center!important;justify-self:center!important;width:92px!important;transform:translateY(1px)!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{margin:0 auto!important;width:50px!important;height:57px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{font-size:11px!important;line-height:1!important;margin-top:5px!important;text-align:center!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{grid-template-columns:repeat(4,minmax(48px,1fr))!important;grid-template-rows:repeat(2,auto)!important;grid-auto-flow:column!important;gap:11px 13px!important;transform:translateX(10px)!important;justify-self:stretch!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays span{justify-self:start!important}
+}
