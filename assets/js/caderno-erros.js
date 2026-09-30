@@ -5892,3 +5892,36 @@ if (window.docmapUser) {
     }
   },250);
 }
+
+
+/* v18.24 — encontra os botões de "Cadernos a revisar hoje" mesmo quando renderizados dinamicamente */
+(function(){
+  function norm(v){
+    return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim().toLowerCase();
+  }
+  function applyErrorReviewAlignment(){
+    const root=document.querySelector('body[data-page="erros"]')||document.body;
+    if(!root)return;
+    const nodes=[...root.querySelectorAll("h1,h2,h3,h4,strong,span,p")];
+    const title=nodes.find(el=>norm(el.textContent).includes("cadernos a revisar hoje"));
+    if(!title)return;
+    let box=title.parentElement;
+    for(let i=0;i<5&&box;i++,box=box.parentElement){
+      const buttons=[...box.querySelectorAll("button")];
+      if(buttons.length>=3){
+        buttons.slice(0,3).forEach(btn=>{
+          btn.classList.add("luria-error-review-align");
+          btn.style.textAlign="left";
+        });
+        return;
+      }
+    }
+  }
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded",applyErrorReviewAlignment,{once:true});
+  }else applyErrorReviewAlignment();
+  setTimeout(applyErrorReviewAlignment,200);
+  setTimeout(applyErrorReviewAlignment,800);
+  const obs=new MutationObserver(()=>requestAnimationFrame(applyErrorReviewAlignment));
+  obs.observe(document.documentElement,{childList:true,subtree:true});
+})();
