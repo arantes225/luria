@@ -2013,3 +2013,25 @@
     padding-inline: 8px;
   }
 }
+
+
+/* v18.22 — ações do Flashcard: conteúdo à esquerda, ação final à direita */
+body[data-page="flashcards"] .review-launcher{
+  text-align:left!important;
+}
+body[data-page="flashcards"] .review-launcher-copy{
+  justify-self:start!important;
+  text-align:left!important;
+}
+body[data-page="flashcards"] .review-launcher-action{
+  margin-left:auto!important;
+  justify-self:end!important;
+  align-items:flex-end!important;
+}
+body[data-page="flashcards"] .flash-tab-create{
+  justify-content:flex-start!important;
+  text-align:left!important;
+}
+body[data-page="flashcards"] .flash-tab-create-icon{
+  flex:0 0 auto!important;
+}
