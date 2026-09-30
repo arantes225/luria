@@ -219,6 +219,38 @@ body[data-page="flashcards"] #review-launcher #start-review-session{background:#
 :root[data-theme="leila-mood"] body[data-page="flashcards"] #review-launcher,:root[data-theme="pink"] body[data-page="flashcards"] #review-launcher,:root[data-theme="rosa"] body[data-page="flashcards"] #review-launcher{background:var(--accent)!important;border-color:var(--accent)!important}
 :root[data-theme="leila-mood"] body[data-page="flashcards"] #review-launcher #start-review-session{color:#b52d74!important}
 </style>
+<style id="flash-home-fixed-library-scroll-v46">
+@media(min-width:981px){
+ html:has(body[data-page="flashcards"].flash-home-fixed),
+ body[data-page="flashcards"].flash-home-fixed{
+   height:100dvh!important;min-height:100dvh!important;max-height:100dvh!important;overflow:hidden!important;
+ }
+ body[data-page="flashcards"].flash-home-fixed .app-shell,
+ body[data-page="flashcards"].flash-home-fixed .main,
+ body[data-page="flashcards"].flash-home-fixed .page{
+   min-height:0!important;max-height:100dvh!important;overflow:hidden!important;
+ }
+ html:has(body[data-page="flashcards"].flash-library-scroll),
+ body[data-page="flashcards"].flash-library-scroll{
+   height:auto!important;min-height:100dvh!important;max-height:none!important;overflow-y:auto!important;
+ }
+ body[data-page="flashcards"].flash-library-scroll .app-shell,
+ body[data-page="flashcards"].flash-library-scroll .main,
+ body[data-page="flashcards"].flash-library-scroll .page{
+   height:auto!important;min-height:100dvh!important;max-height:none!important;overflow:visible!important;
+ }
+ body[data-page="flashcards"].flash-library-scroll .flash-section[data-flash-section="library"].active{
+   display:block!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;
+ }
+ body[data-page="flashcards"].flash-library-scroll .flash-section[data-flash-section="library"]>.panel{
+   overflow:visible!important;max-height:none!important;
+ }
+ body[data-page="flashcards"].flash-library-scroll #library-decks,
+ body[data-page="flashcards"].flash-library-scroll #library-list{
+   max-height:none!important;overflow:visible!important;
+ }
+}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -1382,6 +1414,24 @@ document.addEventListener("DOMContentLoaded",()=>{
  const sync=()=>{if(!homeDecks||!library)return;const cards=[...library.children].slice(0,3);homeDecks.innerHTML=cards.length?cards.map(x=>x.outerHTML).join(""):'<div class="flash-empty">Nenhum deck ainda.</div>'};
  new MutationObserver(sync).observe(library||document.body,{childList:true,subtree:false});sync();
  document.querySelectorAll("[data-flash-home-tab]").forEach(b=>b.addEventListener("click",()=>{const tab=b.dataset.flashHomeTab;document.querySelector('[data-flash-tab="'+tab+'"]')?.click()}));
+});
+</script>
+<script id="flash-home-scroll-mode-v46">
+document.addEventListener("DOMContentLoaded",()=>{
+ const body=document.body;
+ const sync=()=>{
+   const active=document.querySelector('.flash-section[data-flash-section].active');
+   const section=active?.dataset.flashSection||"review";
+   const library=section==="library";
+   body.classList.toggle("flash-library-scroll",library);
+   body.classList.toggle("flash-home-fixed",!library&&section==="review");
+   if(library){document.documentElement.scrollTop=0;body.scrollTop=0;}
+ };
+ sync();
+ document.addEventListener("click",e=>{
+   if(e.target.closest('[data-flash-tab],[data-flash-home-tab]')) requestAnimationFrame(()=>requestAnimationFrame(sync));
+ });
+ new MutationObserver(sync).observe(document.querySelector(".page")||body,{subtree:true,attributes:true,attributeFilter:["class"]});
 });
 </script>
 </body>
