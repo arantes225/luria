@@ -2471,6 +2471,38 @@ body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy strong{
   }
 }
 </style>
+<style id="qs-lists-scroll-action-align-v26">
+@media(min-width:981px){
+ body[data-page="questoes"] .qs-home-my-lists{display:flex!important;flex-direction:column!important;min-height:0!important}
+ body[data-page="questoes"] .qs-home-my-lists-head{flex:0 0 auto!important}
+ body[data-page="questoes"] .qs-home-my-lists-content{
+   flex:1 1 auto!important;height:auto!important;min-height:0!important;max-height:none!important;
+   overflow-y:auto!important;overflow-x:hidden!important;display:grid!important;grid-auto-rows:minmax(58px,auto)!important;
+   align-content:start!important;gap:8px!important;padding:0 5px 4px 0!important;scrollbar-gutter:stable!important;
+ }
+ body[data-page="questoes"] .qs-home-my-lists-content>*{min-height:58px!important;max-height:72px!important;margin:0!important}
+ body[data-page="questoes"] .qs-home-my-lists-content::-webkit-scrollbar{width:5px}
+ body[data-page="questoes"] .qs-home-my-lists-content::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent) 25%,transparent);border-radius:999px}
+ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+   display:grid!important;grid-template-columns:64px minmax(0,1fr) 42px!important;align-items:center!important;
+   column-gap:14px!important;padding:14px 16px!important;text-align:left!important;
+ }
+ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-icon{
+   grid-column:1!important;justify-self:center!important;align-self:center!important;margin:0!important;
+   display:flex!important;align-items:center!important;justify-content:center!important;
+ }
+ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy{
+   grid-column:2!important;align-self:center!important;justify-self:stretch!important;margin:0!important;
+   display:flex!important;flex-direction:column!important;justify-content:center!important;text-align:left!important;
+ }
+ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy strong,
+ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{margin-left:0!important;margin-right:0!important}
+ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-arrow{
+   grid-column:3!important;justify-self:center!important;align-self:center!important;margin:0!important;
+   display:flex!important;align-items:center!important;justify-content:center!important;
+ }
+}
+</style>
 </head>
 
 <body data-page="questoes">
