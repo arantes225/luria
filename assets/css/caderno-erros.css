@@ -3563,3 +3563,94 @@ body[data-page="erros"] .error-metric-card{
     align-items:flex-start!important;
   }
 }
+
+
+/* v18.21 — compactação adicional e realinhamento superior */
+@media(min-width:1051px){
+  body[data-page="erros"] .error-cat-spotlight{
+    min-height:98px!important;
+    height:98px!important;
+    margin-bottom:6px!important;
+  }
+  body[data-page="erros"] .error-cat-logo{
+    height:78px!important;
+  }
+  body[data-page="erros"] .error-cat-logo img{
+    max-height:70px!important;
+  }
+  body[data-page="erros"] .error-cat-copy{
+    padding-top:6px!important;
+    padding-bottom:6px!important;
+  }
+
+  body[data-page="erros"] .error-quick-metrics{
+    padding-top:8px!important;
+    padding-bottom:8px!important;
+  }
+  body[data-page="erros"] .error-quick-metrics .error-side-head{
+    margin-bottom:4px!important;
+  }
+  body[data-page="erros"] .error-metric-summary-grid{
+    gap:6px!important;
+  }
+  body[data-page="erros"] .error-metric-summary-grid>div{
+    min-height:72px!important;
+    padding-top:7px!important;
+    padding-bottom:7px!important;
+  }
+  body[data-page="erros"] .error-metric-progress{
+    padding-top:6px!important;
+    padding-bottom:6px!important;
+  }
+  body[data-page="erros"] .error-metric-ring{
+    width:68px!important;
+    height:68px!important;
+  }
+  body[data-page="erros"] .error-metric-mini-grid{
+    gap:6px!important;
+  }
+  body[data-page="erros"] .error-metric-mini-grid>div{
+    min-height:50px!important;
+    padding-top:5px!important;
+    padding-bottom:5px!important;
+  }
+  body[data-page="erros"] .error-metric-areas{
+    gap:5px!important;
+  }
+
+  body[data-page="erros"] .error-review-home-content{
+    margin-top:-4px!important;
+  }
+  body[data-page="erros"] .error-review-home-actions{
+    margin-top:0!important;
+    gap:6px!important;
+  }
+  body[data-page="erros"] .error-review-home-buttons{
+    gap:6px!important;
+    margin-top:0!important;
+    align-items:flex-start!important;
+  }
+  body[data-page="erros"] .error-review-home-buttons button{
+    min-height:30px!important;
+    height:30px!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+  }
+  body[data-page="erros"] .error-review-action-switch{
+    min-height:40px!important;
+    height:40px!important;
+    padding:3px!important;
+    margin-top:0!important;
+  }
+  body[data-page="erros"] .error-review-action-switch button{
+    min-height:32px!important;
+    height:32px!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+  }
+  body[data-page="erros"] .error-home-layout.review-mode,
+  body[data-page="erros"] .error-review-home-content,
+  body[data-page="erros"] .error-review-home-aside{
+    align-items:start!important;
+  }
+}
