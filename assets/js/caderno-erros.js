@@ -5210,6 +5210,7 @@ function renderErrorLibrary() {
   const container=document.getElementById("error-library"), empty=document.getElementById("error-library-empty"), count=document.getElementById("error-library-count");
   if(!container||!empty||!count)return;
   let items=filteredHomeItems();
+  if(errorHomeState==="review-home") items=errorLibraryItems.filter(item=>!item.due_date||item.due_date<=errorTodayISO());
   /* A biblioteca nunca deve desaparecer por estado de UI stale.
      Se "Todos" estiver ativo e a busca/filtro visual estiverem vazios,
      a fonte de verdade é a coleção carregada do Supabase. */
