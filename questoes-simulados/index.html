@@ -2609,6 +2609,31 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{
  color:color-mix(in srgb,var(--accent) 62%,var(--muted))!important;
 }
 </style>
+<style id="qs-daily-card-styled-v29">
+body[data-page="questoes"] .qs-home-system{
+ position:relative!important;isolation:isolate!important;overflow:hidden!important;
+ background:
+  radial-gradient(circle at 88% 18%,color-mix(in srgb,var(--accent) 24%,transparent) 0 10%,transparent 34%),
+  radial-gradient(circle at 74% 108%,color-mix(in srgb,var(--accent) 18%,transparent) 0 17%,transparent 43%),
+  linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,var(--surface)) 0%,var(--surface) 54%,color-mix(in srgb,var(--accent) 9%,var(--surface)) 100%)!important;
+ border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+ box-shadow:0 10px 28px color-mix(in srgb,var(--accent) 10%,transparent)!important;
+}
+body[data-page="questoes"] .qs-home-system:before{
+ content:"";position:absolute;z-index:-1;width:250px;height:250px;right:-74px;top:-112px;
+ border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);border-radius:50%;
+ box-shadow:0 0 0 28px color-mix(in srgb,var(--accent) 4%,transparent),0 0 0 62px color-mix(in srgb,var(--accent) 3%,transparent);
+ pointer-events:none;
+}
+body[data-page="questoes"] .qs-home-system:after{
+ content:"";position:absolute;z-index:-1;right:25px;bottom:18px;width:112px;height:76px;opacity:.42;
+ background:repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 24%,transparent) 0 1px,transparent 1px 10px);
+ -webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000);
+ pointer-events:none;
+}
+body[data-page="questoes"] .qs-home-system-copy{position:relative!important;z-index:2!important}
+body[data-page="questoes"] .qs-home-system-meta{display:none!important}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2646,10 +2671,7 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{
                   <span class="qs-home-eyebrow">Do LURIA</span>
                   <h2>Questões do dia</h2>
                   <p>Resolva uma lista preparada pelo LURIA ou entre no fluxo de simulados do sistema.</p>
-                  <div class="qs-home-system-meta">
-                    <span>Conteúdo do sistema</span>
-                    <span>Disponível agora</span>
-                  </div>
+                  
                   <a class="qs-home-primary" href="ambientacao.html">
                     <span>Abrir questões do dia</span>
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 7 6-7 6z"/></svg>
