@@ -206,3 +206,8 @@ html body[data-page="trabalho_pcr"] .page.pcr-page .pcr-cause-button{display:inl
  .pcr-patient-card{padding:16px}
  .pcr-record-event{grid-template-columns:62px 48px minmax(0,1fr);font-size:11px}
 }
+
+/* Keep long PCR event editors inside the viewport despite the global calendar dialog rule. */
+#pcr-edit-dialog[open]{position:fixed!important;inset:0!important;margin:auto!important;width:min(640px,calc(100vw - 24px))!important;max-width:calc(100vw - 24px)!important;max-height:calc(100dvh - 32px)!important;overflow-y:auto!important;overflow-x:hidden!important;box-sizing:border-box!important}
+#pcr-edit-fields{padding:0!important}
+#pcr-edit-form>.pcr-history-actions{position:sticky;bottom:0;background:var(--surface);padding:12px 0;margin-bottom:-12px}

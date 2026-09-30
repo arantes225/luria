@@ -59,6 +59,7 @@ if(!icon||!copy||!arrow)return{valid:false};
 const a=card.getBoundingClientRect(),i=icon.getBoundingClientRect(),c=copy.getBoundingClientRect(),r=arrow.getBoundingClientRect();
 return{valid:i.left<c.left&&r.left>=c.left&&Math.abs(a.right-r.right)<=24&&getComputedStyle(copy).textAlign==="left",rightGap:a.right-r.right,icon:i.left,copy:c.left,arrow:r.left};
 }));
+if(rows.some(row=>!row.valid))console.error("ACTION ALIGNMENT",viewport.width,rows);
 if(rows.some(row=>!row.valid))failures.push("Action alignment "+viewport.width+": "+JSON.stringify(rows));
 }
 await goto("/beta-testers/");

@@ -31,7 +31,7 @@ window.supabaseClient={
 auth:{getSession:async()=>({data:{session:localStorage.getItem("fixture-logged-out")?null:{user:owner,access_token:"fixture"}},error:null}),getUser:async()=>({data:{user:owner},error:null}),onAuthStateChange:()=>({data:{subscription:{unsubscribe(){}}}}),signOut:async()=>({error:null})},
 from:table=>new Query(table),
 rpc:async(name,args={})=>{
-if(["my_friends","my_direct_shares"].includes(name))return{data:[],error:null};
+if(["my_friends","my_direct_shares","my_studyrats_challenges_v3"].includes(name))return{data:[],error:null};
 if(name==="is_admin")return{data:false,error:null};
 if(name==="get_my_entitlements")return{data:{plan:"pro",features:Object.fromEntries(["dashboard","cronograma","caderno","flashcards","error_notebook","questions","plantao","statistics_general","images"].map(name=>[name,{enabled:true,limit:null}]))},error:null};
 if(name==="beta_feedback_status")return{data:{is_beta_tester:false,needs_feedback:false},error:null};
