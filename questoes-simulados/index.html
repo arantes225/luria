@@ -2790,6 +2790,18 @@ body.theme-dark[data-page="questoes"] .qs-home-system{
   background:var(--surface)!important;border-color:color-mix(in srgb,var(--accent) 22%,var(--border))!important;color:var(--text)!important;
 }
 </style>
+<style id="qs-daily-blue-orb-test-v37">
+/* Fundo branco + esfera azul sólida em destaque. */
+body[data-page="questoes"] .qs-home-system:after{
+  content:""!important;display:block!important;position:absolute!important;
+  width:220px!important;height:220px!important;right:-42px!important;top:50%!important;
+  inset:50% -42px auto auto!important;transform:translateY(-50%)!important;
+  border:0!important;border-radius:50%!important;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 88%,#fff) 0%,var(--accent) 58%,color-mix(in srgb,var(--accent) 82%,#071c3c) 100%)!important;
+  box-shadow:0 18px 38px color-mix(in srgb,var(--accent) 24%,transparent),inset 0 1px 0 rgba(255,255,255,.22)!important;
+  opacity:1!important;z-index:-1!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
