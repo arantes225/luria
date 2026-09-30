@@ -2722,6 +2722,30 @@ body[data-page="questoes"] .qs-home-system .qs-home-primary{border-radius:12px!i
 body[data-page="questoes"] .qs-home-system .qs-home-primary:hover{transform:translateY(-2px)!important;box-shadow:0 10px 22px rgba(0,0,0,.18)!important}
 @media(max-width:760px){body[data-page="questoes"] .qs-home-system-copy{max-width:100%!important}body[data-page="questoes"] .qs-daily-badge{opacity:.28!important;right:14px!important}.qs-daily-decor{display:none!important}}
 </style>
+<style id="qs-daily-clean-depth-v34">
+body[data-page="questoes"] .qs-daily-badge,
+body[data-page="questoes"] .qs-daily-decor{display:none!important}
+body[data-page="questoes"] .qs-home-system{
+  background:
+    radial-gradient(circle at 88% 18%,rgba(255,255,255,.14) 0,rgba(255,255,255,.055) 18%,transparent 42%),
+    radial-gradient(circle at 76% 110%,rgba(255,255,255,.10) 0,transparent 42%),
+    linear-gradient(122deg,color-mix(in srgb,var(--accent) 92%,#071c3c) 0%,var(--accent) 58%,color-mix(in srgb,var(--accent) 76%,#081f45) 100%)!important;
+  border:1px solid color-mix(in srgb,#fff 18%,var(--accent))!important;
+  box-shadow:0 16px 34px color-mix(in srgb,var(--accent) 20%,transparent),inset 0 1px 0 rgba(255,255,255,.08)!important;
+}
+body[data-page="questoes"] .qs-home-system:before{
+  content:""!important;display:block!important;position:absolute!important;inset:0!important;z-index:-2!important;
+  background:linear-gradient(108deg,rgba(255,255,255,.07),transparent 44%,rgba(0,0,0,.07))!important;
+}
+body[data-page="questoes"] .qs-home-system:after{
+  content:""!important;display:block!important;position:absolute!important;inset:auto -12% -52% 42%!important;
+  width:auto!important;height:78%!important;border:0!important;border-radius:50% 50% 0 0!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.045),transparent)!important;
+  box-shadow:none!important;transform:rotate(-5deg)!important;z-index:-1!important;
+}
+body[data-page="questoes"] .qs-home-system-copy{max-width:78%!important}
+@media(max-width:760px){body[data-page="questoes"] .qs-home-system-copy{max-width:100%!important}}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2755,8 +2779,6 @@ body[data-page="questoes"] .qs-home-system .qs-home-primary:hover{transform:tran
           <div class="qs-home-workspace">
             <div class="qs-home-main-column">
               <article class="qs-home-system">
-                <div class="qs-daily-decor" aria-hidden="true"><span></span><span></span><span></span></div>
-                <div class="qs-daily-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h10v3H7zM5 6h14v15H5zM8 11h8M8 15h5"/></svg></div>
                 <div class="qs-home-system-copy">
                   <span class="qs-home-eyebrow">Do LURIA</span>
                   <h2>Questões do dia</h2>
