@@ -2058,6 +2058,49 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
   opacity:1!important;
 }
 </style>
+
+<style id="qs-reference-actions-v11">
+body[data-page="questoes"] .qs-home-actions-compact{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:14px!important;
+  width:100%!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+  --qa:#176f58;--qa-rgb:23,111,88;
+  position:relative!important;display:grid!important;
+  grid-template-columns:72px minmax(0,1fr) 46px!important;align-items:center!important;
+  gap:14px!important;height:132px!important;min-height:132px!important;max-height:132px!important;
+  padding:18px 18px!important;overflow:hidden!important;border:1.5px solid rgba(var(--qa-rgb),.38)!important;
+  border-radius:22px!important;background:linear-gradient(135deg,rgba(var(--qa-rgb),.055),rgba(255,255,255,.92))!important;
+  color:var(--qa)!important;box-shadow:0 8px 24px rgba(var(--qa-rgb),.08)!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-upload{--qa:#1763c7;--qa-rgb:23,99,199}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-library{--qa:#5532b7;--qa-rgb:85,50,183}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action:before{
+  content:""!important;display:block!important;position:absolute!important;left:42%!important;right:-8%!important;bottom:-58%!important;
+  height:105%!important;border-radius:50% 0 0 0!important;background:rgba(var(--qa-rgb),.075)!important;transform:rotate(-8deg)!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action:after{display:none!important}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-icon{
+  position:relative!important;z-index:2!important;width:72px!important;height:72px!important;display:grid!important;place-items:center!important;
+  border-radius:22px!important;background:rgba(var(--qa-rgb),.08)!important;border:1px solid rgba(var(--qa-rgb),.08)!important;color:var(--qa)!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-icon svg{width:38px!important;height:38px!important;stroke:currentColor!important;stroke-width:1.9!important}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy{position:relative!important;z-index:2!important;padding:0!important;align-self:center!important}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy strong{display:block!important;font-size:21px!important;line-height:1.08!important;color:var(--qa)!important;font-weight:850!important}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{display:block!important;margin-top:7px!important;font-size:13px!important;line-height:1.15!important;color:color-mix(in srgb,var(--qa) 70%,var(--muted))!important}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-arrow{
+  position:relative!important;z-index:2!important;width:46px!important;height:46px!important;display:grid!important;place-items:center!important;
+  border-radius:50%!important;background:rgba(var(--qa-rgb),.09)!important;color:var(--qa)!important;font-size:25px!important;line-height:1!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{display:none!important}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action:hover{transform:translateY(-2px)!important;box-shadow:0 12px 28px rgba(var(--qa-rgb),.13)!important}
+@media(max-width:1050px){body[data-page="questoes"] .qs-home-actions-compact{grid-template-columns:1fr!important}}
+:root[data-theme="dark"] body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+ background:linear-gradient(135deg,rgba(var(--qa-rgb),.16),color-mix(in srgb,var(--surface) 94%,var(--qa)))!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
