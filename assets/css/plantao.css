@@ -7766,3 +7766,34 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
     z-index:4!important;
   }
 }
+
+/* Sala de Emergência v56 — cabeçalho limpo e alinhamento do plantão com continuidade */
+@media(min-width:941px){
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-featured-case{
+   min-height:138px!important;
+   height:138px!important;
+ }
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-featured-inner{
+   height:100%!important;
+   box-sizing:border-box!important;
+   padding:24px 28px!important;
+   display:flex!important;
+   flex-direction:column!important;
+   justify-content:center!important;
+ }
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-featured-top{
+   margin:0 0 7px!important;
+ }
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-featured-copy h2{
+   margin:0!important;
+ }
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-featured-meta,
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-featured-tags,
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-featured-start{
+   display:none!important;
+ }
+ body.plantao-module-entry[data-case-library-view="home"] .plantao-library-side{
+   padding-top:150px!important;
+   box-sizing:border-box!important;
+ }
+}
