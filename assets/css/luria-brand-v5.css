@@ -854,3 +854,38 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
   background-color:transparent!important;
   background-image:none!important;
 }
+
+
+/* v77 — Cronograma: pattern global visível acima de qualquer folha branca estrutural */
+body[data-page="cronograma"]:not(.schedule-settings-embed){
+  background:var(--bg)!important;
+}
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .main,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
+  background:transparent!important;
+}
+
+/* Replica no shell do Cronograma o MESMO pattern global da LURIA.
+   Necessário porque o app-shell fica acima dos pseudo-elementos do body. */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::before,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+  content:""!important;
+  position:fixed!important;
+  inset:-14%!important;
+  z-index:-1!important;
+  pointer-events:none!important;
+  background-image:var(--luria-pattern-image)!important;
+  background-repeat:repeat!important;
+  background-size:var(--luria-pattern-size) var(--luria-pattern-size)!important;
+  transform:rotate(-8deg) scale(1.08)!important;
+  transform-origin:center!important;
+}
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::before{
+  background-position:0 0!important;
+  opacity:var(--luria-pattern-opacity)!important;
+}
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+  background-position:calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
+  opacity:var(--luria-pattern-opacity)!important;
+}
