@@ -4427,8 +4427,8 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
 @media (min-width:981px){
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
    transform:none!important;
-   height:calc(100% + 45px)!important;
-   max-height:calc(100% + 45px)!important;
+   height:calc(100% + 25px)!important;
+   max-height:calc(100% + 25px)!important;
    min-height:0!important;
    box-sizing:border-box!important;
    align-self:start!important;
