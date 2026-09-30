@@ -1222,6 +1222,7 @@ async function startReviewSession() {
   reviewPomodoroRunning =
     false;
 
+  document.body.classList.remove("flash-home-fixed", "flash-library-scroll");
   document.body.classList.add(
     "flash-review-session-active"
   );
@@ -1317,6 +1318,7 @@ async function finishReviewSession({
   document.body.classList.remove(
     "flash-review-session-active"
   );
+  document.body.classList.add("flash-home-fixed");
 
   reviewPomodoroRemaining =
     reviewPomodoroMinutes * 60;
