@@ -2363,6 +2363,30 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-colo
   }
 }
 </style>
+<style id="qs-home-balance-v22">
+@media(min-width:981px){
+  body[data-page="questoes"] .qs-home-workspace{
+    --qs-top-row-h:272px!important; /* ~10% menor que 302px */
+  }
+  body[data-page="questoes"] .qs-home-system,
+  body[data-page="questoes"] .qs-home-week-compact{
+    height:var(--qs-top-row-h)!important;
+    min-height:var(--qs-top-row-h)!important;
+  }
+}
+/* Com a frase inferior removida, recentra o conteúdo remanescente do card de título. */
+body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy{
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  align-items:flex-start!important;
+  gap:0!important;
+  height:100%!important;
+}
+body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy strong{
+  margin:0!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2385,7 +2409,6 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-colo
           <div class="luria-page-spotlight-copy">
             
             <strong>Questões e Simulados</strong>
-            <small>Treine, meça seu desempenho e evolua.</small>
           </div>
         </section>
 
