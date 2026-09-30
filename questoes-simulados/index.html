@@ -2152,6 +2152,41 @@ body[data-page="questoes"] [data-qs-section="library"] .qs-library-main small{
 }
 body[data-page="questoes"] [data-qs-section="library"] .qs-library-menu-trigger{width:28px!important;height:28px!important;font-weight:400!important}
 </style>
+<style id="qs-actions-clean-smaller-v14">
+/* Remove definitivamente as artes antigas dos três atalhos. */
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
+  display:none!important;
+  background:none!important;
+  background-image:none!important;
+  -webkit-mask:none!important;
+  mask:none!important;
+}
+/* ~15% menor que o card de referência (132px -> 112px). */
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+  height:112px!important;
+  min-height:112px!important;
+  max-height:112px!important;
+  grid-template-columns:61px minmax(0,1fr) 39px!important;
+  gap:12px!important;
+  padding:15px!important;
+  border-radius:19px!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-icon{
+  width:61px!important;height:61px!important;border-radius:19px!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-icon svg{
+  width:32px!important;height:32px!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy strong{
+  font-size:18px!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{
+  margin-top:6px!important;font-size:11px!important;
+}
+body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-arrow{
+  width:39px!important;height:39px!important;font-size:21px!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
