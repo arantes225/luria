@@ -20,10 +20,10 @@ await context.route("**/assets/js/onboarding.js*",route=>route.fulfill({contentT
 await context.route("**/jspdf*umd.min.js",route=>route.fulfill({contentType:"application/javascript",body:fs.readFileSync(require.resolve("jspdf/dist/jspdf.umd.min.js"),"utf8")}));
 const page=await context.newPage();
 const errors=[];
-page.on("pageerror",error=>errors.push(error.message));
+page.on("pageerror",error=>{errors.push(error.message);console.error("PAGE ERROR",page.url(),error.message);});
 async function goto(url){
 await page.goto(base+url,{waitUntil:"domcontentloaded"});await page.locator("body.app-ready").waitFor({timeout:15000});await page.waitForTimeout(800);
-assert.equal(new URL(page.url()).pathname,decodeURI(url).split("?")[0],"Unexpected redirect for "+url);
+assert.equal(decodeURI(new URL(page.url()).pathname),decodeURI(url).split("?")[0],"Unexpected redirect for "+url);
 }
 async function noOverflow(label){
 const dimensions=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:window.innerWidth}));

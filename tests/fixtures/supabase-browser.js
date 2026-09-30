@@ -31,7 +31,7 @@ auth:{getSession:async()=>({data:{session:localStorage.getItem("fixture-logged-o
 from:table=>new Query(table),
 rpc:async(name,args={})=>{
 if(name==="is_admin")return{data:false,error:null};
-if(name==="get_my_entitlements")return{data:{plan:"pro"},error:null};
+if(name==="get_my_entitlements")return{data:{plan:"pro",features:Object.fromEntries(["dashboard","cronograma","caderno","flashcards","error_notebook","questions","plantao","statistics_general","images"].map(name=>[name,{enabled:true,limit:null}]))},error:null};
 if(name==="beta_feedback_status")return{data:{is_beta_tester:false,needs_feedback:false},error:null};
 if(name==="beta_feedback_snapshot")return{data:[{id:"feedback1",display_name:"Beta fixture",positives:"Layout claro",improvements:"Rolagem semanal",submitted_at:new Date().toISOString()}],error:null};
 if(name==="start_study_session")return{data:"fixture-session",error:null};

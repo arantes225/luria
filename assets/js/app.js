@@ -6365,6 +6365,7 @@ async function iniciarApp() {
     user.id
   );
   prepararNavGroupsGlobais(user.id);
+  prepararAdminNavigation(cachedAdmin === true).catch(() => {});
   prepararConfiguracoes();
 
   window.docmapUser =
@@ -6495,11 +6496,8 @@ async function iniciarApp() {
           user.id
         );
 
-        if (acessoAdmin === true) {
-          prepararAdminNavigation(
-            true
-          ).catch(() => {});
-        } else {
+        prepararAdminNavigation(acessoAdmin === true).catch(() => {});
+        if (acessoAdmin !== true) {
           aplicarEntitlementsNaNavegacao(
             finalEntitlements
           );
