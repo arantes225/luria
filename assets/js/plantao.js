@@ -707,43 +707,19 @@
     }
 
     const featuredHost=$("plantao-featured-case");
-    const featured=visibleCases.find(item=>normalizeLabel([
-      item.title,item.summary,item.presentation?.chief_complaint,item.presentation?.display_title
-    ].filter(Boolean).join(" ")).includes("sepse")) || visibleCases[0] || null;
-
     if(featuredHost){
-      if(!featured){
-        featuredHost.hidden=true;
-      }else{
-        featuredHost.hidden=false;
-        const title=featured.presentation?.chief_complaint || featured.presentation?.display_title || featured.summary || featured.title || "Caso clínico";
-        const summary=featured.summary || featured.presentation?.opening || "Paciente admitido na sala de emergência. Avalie, investigue e defina a melhor conduta.";
-        const materia=caseMateria(featured);
-        featuredHost.innerHTML=`
-          <div class="plantao-featured-art" aria-hidden="true">
-            <div class="plantao-featured-room-wall"></div>
-            <div class="plantao-featured-monitor"><span class="screen"></span><span class="stand"></span></div>
-            <div class="plantao-featured-iv"><span></span></div>
-            <div class="plantao-featured-bed"><span class="pillow"></span><span class="rail"></span></div>
-            <div class="plantao-featured-cart"></div>
+      featuredHost.hidden=false;
+      featuredHost.innerHTML=`
+        <div class="plantao-featured-inner">
+          <div class="plantao-featured-top">
+            <span class="plantao-featured-label">PRÁTICA CLÍNICA</span>
           </div>
-          <div class="plantao-featured-inner">
-            <div class="plantao-featured-top">
-              <span class="plantao-featured-label">Caso em destaque</span>
-              <span class="plantao-featured-meta">◷ 25 min &nbsp;&nbsp; ▥ ${esc(featured.difficulty||"Intermediário")}</span>
-            </div>
-            <div class="plantao-featured-copy">
-              <h2>${esc(title)}</h2>
-              <div class="plantao-featured-tags">
-                <span>${esc(featured.specialty||"Clínica Médica")}</span>
-                <span>${esc(materia)}</span>
-                <span>${esc(featured.setting||"Sala de emergência")}</span>
-              </div>
-            </div>
-            <button class="button primary plantao-featured-start" type="button" data-start-case="${esc(featured.id)}">Selecionar caso</button>
+          <div class="plantao-featured-copy">
+            <h2>Simulador de Emergência</h2>
+            <p>Treine tomada de decisão, investigação e conduta em cenários de emergência.</p>
           </div>
-        `;
-      }
+        </div>
+      `;
     }
 
     const grid=$("plantao-case-grid");
@@ -757,7 +733,7 @@
     }
     if(empty) empty.hidden=true;
 
-    const cardCases=featured ? visibleCases.filter(item=>String(item.id)!==String(featured.id)) : visibleCases;
+    const cardCases=visibleCases;
     grid.innerHTML=cardCases.map((item,index)=>{
       const best=bestScore(item.id);
       const attempts=state.sessions.filter(x=>x.case_id===item.id && x.status==="completed").length;
