@@ -26,6 +26,22 @@
   <link rel="canonical" href="/flashcards/">
   <script>(function(){try{if(location.pathname.endsWith("/flashcards.html"))history.replaceState(null,"","/flashcards/"+location.search+location.hash);}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260929-metrics-blue">
+<style id="flash-review-home-v40">
+.flash-review-home-switch-row{display:flex;justify-content:flex-start;margin:0 0 12px}
+.flash-review-action-switch{position:relative;display:inline-flex;align-items:center;padding:4px;border:1px solid var(--border);border-radius:14px;background:var(--surface);box-shadow:0 4px 14px rgba(15,40,75,.05)}
+.flash-review-action-switch>button,.flash-create-menu-wrap>button{height:42px;padding:0 18px;border:0;border-radius:10px;background:transparent;color:var(--muted);font:inherit;font-size:15px;font-weight:500;cursor:pointer}
+.flash-review-action-switch>button.active{background:var(--accent);color:#fff}
+.flash-create-menu-wrap{position:relative}
+.flash-create-menu{position:absolute;top:calc(100% + 7px);left:0;z-index:30;width:210px;padding:6px;border:1px solid var(--border);border-radius:12px;background:var(--surface);box-shadow:0 14px 34px rgba(15,40,75,.14)}
+.flash-create-menu button{display:block;width:100%;padding:10px 11px;border:0;border-radius:8px;background:transparent;color:var(--text);text-align:left;font:inherit;font-size:13px;font-weight:400;cursor:pointer}
+.flash-create-menu button:hover{background:color-mix(in srgb,var(--accent) 8%,transparent)}
+.flash-daily-review-card{min-height:210px!important;padding:28px!important;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border))!important;border-radius:18px!important;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 7%,var(--surface)),var(--surface))!important;box-shadow:0 8px 24px rgba(15,40,75,.06)!important;cursor:pointer!important;transition:transform .18s ease,box-shadow .18s ease!important}
+.flash-daily-review-card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(15,40,75,.10)!important}
+.flash-daily-review-card .review-launcher-copy h3{font-size:25px!important;margin:5px 0 8px!important}
+.flash-daily-review-card .review-launcher-copy .eyebrow{font-size:11px!important;letter-spacing:.08em!important}
+.flash-daily-review-card .review-launcher-action strong{font-size:17px!important}
+@media(max-width:700px){.flash-review-action-switch{width:100%}.flash-review-action-switch>button,.flash-create-menu-wrap{flex:1}.flash-create-menu-wrap>button{width:100%}.flash-daily-review-card{min-height:180px!important;padding:20px!important}}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -202,7 +218,19 @@
           <div class="flash-top-spotlight-timer" aria-hidden="true"><span></span></div>
         </section>
 
-        <section class="flash-control-row" aria-label="Navegação e métricas rápidas">
+        <section class="flash-review-home-switch-row" aria-label="Ações de flashcards">
+  <div class="flash-review-action-switch">
+    <button id="flash-review-now-switch" class="active" type="button">▶ Revisar agora</button>
+    <div class="flash-create-menu-wrap">
+      <button id="flash-create-menu-trigger" type="button" aria-haspopup="menu" aria-expanded="false">＋ Criar</button>
+      <div id="flash-create-menu" class="flash-create-menu" role="menu" hidden>
+        <button type="button" role="menuitem" data-flash-create-action="card">Criar flashcard</button>
+        <button type="button" role="menuitem" data-flash-create-action="review">Criar nova revisão</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="flash-control-row" aria-label="Navegação e métricas rápidas">
           <section class="flash-tabs" aria-label="Seções de flashcards">
 
             <button
@@ -285,7 +313,10 @@
 
             <div
               id="review-launcher"
-              class="review-launcher error-review-home-actions"
+              class="review-launcher error-review-home-actions flash-daily-review-card"
+              role="button"
+              tabindex="0"
+              aria-label="Abrir flashcards do dia"
             >
               <div class="review-launcher-copy">
                 <span class="eyebrow">Pronto para revisar</span>
@@ -1132,5 +1163,28 @@
 
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
+<script id="flash-review-home-actions-v40">
+document.addEventListener("DOMContentLoaded",function(){
+ const trigger=document.getElementById("flash-create-menu-trigger");
+ const menu=document.getElementById("flash-create-menu");
+ const now=document.getElementById("flash-review-now-switch");
+ const launcher=document.getElementById("review-launcher");
+ const start=document.getElementById("start-review-session");
+ const tab=(name)=>document.querySelector('[data-flash-tab="'+name+'"]');
+ function close(){if(menu){menu.hidden=true;trigger&&trigger.setAttribute("aria-expanded","false");}}
+ trigger&&trigger.addEventListener("click",function(e){e.stopPropagation();menu.hidden=!menu.hidden;trigger.setAttribute("aria-expanded",String(!menu.hidden));});
+ document.addEventListener("click",close);
+ menu&&menu.addEventListener("click",function(e){
+   const b=e.target.closest("[data-flash-create-action]"); if(!b)return;
+   const action=b.dataset.flashCreateAction; close();
+   if(action==="card") tab("create")?.click();
+   if(action==="review") tab("library")?.click();
+ });
+ now&&now.addEventListener("click",function(){tab("review")?.click();launcher?.scrollIntoView({behavior:"smooth",block:"center"});});
+ function openDaily(e){if(e.target.closest("button"))return;if(start&&!start.disabled)start.click();}
+ launcher&&launcher.addEventListener("click",openDaily);
+ launcher&&launcher.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openDaily(e);}});
+});
+</script>
 </body>
 </html>
