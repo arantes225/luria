@@ -199,6 +199,11 @@ function setTaxonomyChip(
 }
 
 function switchFlashTab(tabName) {
+  if (typeof window.luriaFlashShow === "function") {
+    window.luriaFlashShow(tabName);
+    return;
+  }
+
   document
     .querySelectorAll(
       "[data-flash-tab]"
