@@ -7442,3 +7442,48 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* PWA Trabalho — mantém PCR e troca de ambiente fixos no rodapé do menu. */
+(function ensurePwaWorkSidebarAnchorsV32() {
+  if (document.getElementById("luria-pwa-work-sidebar-anchors-v32")) return;
+  const style = document.createElement("style");
+  style.id = "luria-pwa-work-sidebar-anchors-v32";
+  style.textContent = `
+    @media (max-width: 980px) {
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100dvh !important;
+        overflow: hidden !important;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav-work {
+        flex: 1 1 0% !important;
+        min-height: 0 !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        overscroll-behavior: contain !important;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer-work {
+        display: grid !important;
+        flex: 0 0 auto !important;
+        margin-top: auto !important;
+        position: sticky !important;
+        bottom: 0 !important;
+        padding-bottom: max(8px, env(safe-area-inset-bottom)) !important;
+        background: var(--sidebar) !important;
+        z-index: 12 !important;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .luria-mode-footer-switch {
+        flex: 0 0 auto !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
