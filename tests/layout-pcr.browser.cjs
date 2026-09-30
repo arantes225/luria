@@ -17,7 +17,7 @@ let diagnosticPage;
 try{
 if(published){
 const context=await browser.newContext();const request=context.request;
-for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css","caderno/index.html","assets/css/caderno.css","assets/css/flashcards-v21.css","assets/js/flashcards-v21.js","assets/js/caderno.js"]){
+for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css","caderno/index.html","assets/css/caderno.css","assets/css/flashcards-v21.css","assets/js/flashcards-v21.js","assets/js/caderno.js","caderno.html"]){
 const expected=crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 let matched=false;
 for(let attempt=0;attempt<10;attempt++){
@@ -142,6 +142,9 @@ for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","
 await page.locator("#notebook-inspector-move").click();await page.locator("#notebook-move-area").fill("Área personalizada");await page.locator("#notebook-move-subject").fill("Caderno personalizado");await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
 await page.locator("#notebook-back-library").click();assert.match(await page.locator("#notebook-library-list").innerText(),/Caderno personalizado/);
 console.log("PASS Notes moving linked/free notes, retry, reload, autosave and custom destination "+viewport.width);
+await page.goto(base+"/caderno.html?note_id=free-note",{waitUntil:"domcontentloaded"});await page.locator("body.app-ready").waitFor();await page.locator("#notebook-inspector-move").waitFor();await page.locator("#notebook-inspector-move").click();await page.locator("#notebook-move-dialog").waitFor();assert.equal(await page.locator("#notebook-move-area").inputValue(),"Área personalizada");await page.locator("#notebook-move-dialog [data-move-cancel]").last().click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
+console.log("PASS Notes move action through legacy address "+viewport.width);
+
 
 await goto("/caderno-erros/");
 await noOverflow("Caderno de Erros");await checkActions(".error-home-actions .error-home-action");
