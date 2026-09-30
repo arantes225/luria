@@ -9139,10 +9139,13 @@ function renderHomeDashboard() {
           button => {
             button.addEventListener(
               "click",
-              () =>
-                openSet(
-                  button.dataset.homeUserSet
-                )
+              () => {
+                window.location.href =
+                  "/resolver-questoes/?set_id="
+                  + encodeURIComponent(
+                      button.dataset.homeUserSet
+                    );
+              }
             );
           }
         );
