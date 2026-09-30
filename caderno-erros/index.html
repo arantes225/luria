@@ -362,6 +362,19 @@ body[data-page="erros"] .error-cat-spotlight{display:none!important}
  }
 }
 </style>
+<style id="error-full-library-v28">
+body[data-page="erros"].error-library-open{height:auto!important;min-height:100dvh!important;max-height:none!important;overflow-y:auto!important}
+body[data-page="erros"].error-library-open .page{overflow:visible!important;height:auto!important;max-height:none!important}
+body[data-page="erros"].error-library-open .error-home-title-card,
+body[data-page="erros"].error-library-open .error-home-layout{display:none!important}
+body[data-page="erros"] .error-full-library-view{width:100%!important;min-height:calc(100dvh - 110px)!important;padding-bottom:42px!important}
+body[data-page="erros"] .error-full-library-head{display:flex!important;align-items:center!important;gap:18px!important;margin-bottom:16px!important;padding:18px 20px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important}
+body[data-page="erros"] .error-full-library-head h2{margin:2px 0 3px!important;font-size:22px!important;font-weight:600!important}
+body[data-page="erros"] .error-full-library-head p{margin:0!important;color:var(--muted)!important;font-size:11px!important}
+body[data-page="erros"] .error-full-library-content{display:block!important;width:100%!important;overflow:visible!important}
+body[data-page="erros"] .error-full-library-content .error-library{display:block!important;max-height:none!important;overflow:visible!important}
+body[data-page="erros"] .error-full-library-content .error-notebook-shelf{margin-bottom:14px!important}
+</style>
 </head>
 
 <body data-page="erros">
@@ -491,6 +504,14 @@ body[data-page="erros"] .error-cat-spotlight{display:none!important}
  <button class="error-home-action" type="button" id="error-home-create-action"><span class="error-home-action-icon">＋</span><span class="error-home-action-copy"><strong>Criar novo</strong><small>Adicione um erro ao caderno.</small></span><span class="error-home-action-arrow">→</span></button>
  <button class="error-home-action" type="button" id="error-home-library-action"><span class="error-home-action-icon">▥</span><span class="error-home-action-copy"><strong>Biblioteca</strong><small>Veja todos os seus erros.</small></span><span class="error-home-action-arrow">→</span></button>
 </div>
+        </section>
+
+        <section class="error-full-library-view" id="error-full-library-view" hidden>
+          <div class="error-full-library-head">
+            <button class="button secondary" type="button" id="error-full-library-back">← Caderno de Erros</button>
+            <div><span class="error-home-eyebrow">CADERNOS E MATÉRIAS</span><h2>Biblioteca</h2><p>Explore seus erros organizados por área e matéria.</p></div>
+          </div>
+          <div id="error-full-library-content" class="error-full-library-content"></div>
         </section>
 
         <section class="error-review-panel error-section" data-error-section="review">
@@ -713,6 +734,29 @@ document.addEventListener("DOMContentLoaded",()=>{
  document.getElementById("error-home-create-action")?.addEventListener("click",()=>{document.getElementById("error-create-menu-trigger")?.click();document.querySelector('[data-error-create-action="error"]')?.click()});
  document.getElementById("error-home-library-action")?.addEventListener("click",()=>document.querySelector('[data-error-state="all"]')?.click());
 });
+</script>
+<script id="error-full-library-js">
+(()=>{
+ const body=document.body,view=document.getElementById("error-full-library-view"),host=document.getElementById("error-full-library-content");
+ const open=()=>{
+   const source=document.getElementById("error-library");
+   if(!view||!host||!source)return;
+   document.querySelector('[data-error-state="all"]')?.click();
+   setTimeout(()=>{
+     host.innerHTML="";
+     host.appendChild(source);
+     view.hidden=false;body.classList.add("error-library-open");window.scrollTo({top:0,behavior:"instant"});
+   },0);
+ };
+ const close=()=>{
+   const source=host?.querySelector("#error-library");
+   const panel=document.querySelector('[data-error-section="library"]');
+   if(source&&panel)panel.appendChild(source);
+   if(view)view.hidden=true;body.classList.remove("error-library-open");window.scrollTo({top:0,behavior:"instant"});
+ };
+ document.getElementById("error-home-library-action")?.addEventListener("click",e=>{e.stopImmediatePropagation();open()},{capture:true});
+ document.getElementById("error-full-library-back")?.addEventListener("click",close);
+})();
 </script>
 </body>
 
