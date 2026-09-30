@@ -18247,7 +18247,11 @@ function wireEvents() {
         window.LuriaDialog.alert("Salve a anotação antes de compartilhar.");
         return;
       }
-      await createNotebookShareLink(noteId);
+      const entry = getCurrentDocument();
+      await openNotebookShareDialog(
+        [entry],
+        entry?.title || "Anotação"
+      );
     } catch (error) {
       console.error(error);
       window.LuriaDialog.alert("Não foi possível compartilhar esta anotação.");
