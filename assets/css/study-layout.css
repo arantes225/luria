@@ -58,7 +58,7 @@ html body[data-page] .page :is(.error-home-actions,.flash-home-actions) :is(.err
 html body[data-page] .page :is(.error-home-action,.flash-home-action)>:is(.error-home-action-icon,i){
  grid-column:1!important;grid-row:1!important;justify-self:start!important;position:static!important;margin:0!important;
 }
-html body[data-page] .page :is(.error-home-action,.flash-home-action)>:is(.error-home-action-copy,span){
+html body[data-page] .page :is(.error-home-action,.flash-home-action)>:is(.error-home-action-copy,span:not([class])){
  grid-column:2!important;grid-row:1!important;justify-self:stretch!important;align-items:flex-start!important;text-align:left!important;min-width:0!important;margin:0!important;
 }
 html body[data-page] .page :is(.error-home-action,.flash-home-action)>:is(.error-home-action-arrow,b){
