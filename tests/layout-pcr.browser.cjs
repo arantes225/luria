@@ -17,7 +17,7 @@ let diagnosticPage;
 try{
 if(published){
 const context=await browser.newContext();const request=context.request;
-for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html"]){
+for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css"]){
 const expected=crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 let matched=false;
 for(let attempt=0;attempt<10;attempt++){
@@ -89,6 +89,15 @@ const questionHero=await page.locator("#qs-daily-card").evaluate(el=>{const s=ge
 assert.deepEqual(questionHero,flashHero,"Daily cards share dimensions and typography");
 await noOverflow("Questões");await checkActions(".qs-home-actions-compact .error-home-action");
 await goto("/cronograma/");
+const activityPlacement=await page.evaluate(()=>{
+ const calendar=document.querySelector(".agenda-reference-layout>.planner-panel"),activities=document.querySelector(".agenda-bottom-grid"),insights=document.querySelector(".agenda-insights-side");
+ const c=calendar.getBoundingClientRect(),a=activities.getBoundingClientRect(),i=insights.getBoundingClientRect();
+ return {gap:a.top-c.bottom,activitiesBeforeInsights:!!(activities.compareDocumentPosition(insights)&Node.DOCUMENT_POSITION_FOLLOWING),aboveInsights:a.top<i.top};
+});
+assert.ok(activityPlacement.activitiesBeforeInsights,"Activities precede insights in reading order");
+assert.ok(activityPlacement.gap>=-1&&activityPlacement.gap<=32,"Activities immediately below calendar: "+JSON.stringify(activityPlacement));
+if(viewport.width<980)assert.ok(activityPlacement.aboveInsights,"Mobile activities appear before insights");
+
 await page.locator(".week-matrix-grid").waitFor();
 assert.equal(await page.locator(".week-category-label strong").count(),7);
 assert.equal(await page.locator(".week-activity-count").count(),49);

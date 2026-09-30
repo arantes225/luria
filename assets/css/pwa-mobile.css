@@ -4291,7 +4291,7 @@
 
   html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.planner-panel{order:1!important}
   html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.agenda-insights-side{
-    order:2!important;
+    order:3!important;
     display:grid!important;
     grid-template-columns:1fr!important;
     gap:12px!important;
@@ -4300,7 +4300,7 @@
     transform:none!important;
   }
   html.pwa-standalone body[data-page="cronograma"] .agenda-reference-layout>.agenda-bottom-grid{
-    order:3!important;
+    order:2!important;
     display:grid!important;
     grid-template-columns:1fr!important;
     gap:12px!important;
