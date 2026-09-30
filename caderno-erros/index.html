@@ -403,6 +403,37 @@ body[data-page="erros"] .error-full-library-content .error-notebook-shelf{margin
  }
 }
 </style>
+<style id="error-align-flash-decks-v31">
+@media(min-width:981px){
+ /* Mesma geometria vertical do bloco Meus decks / Continue de onde parou. */
+ body[data-page="erros"] .error-home-layout.review-mode{
+   height:calc(100dvh - 240px)!important;
+   max-height:calc(100dvh - 240px)!important;
+   grid-template-rows:272px minmax(0,1fr)!important;
+ }
+ body[data-page="erros"] .error-daily-review-card.error-ccq-home-card,
+ body[data-page="erros"] .error-side-card.error-quick-metrics{
+   height:272px!important;
+   min-height:272px!important;
+   max-height:272px!important;
+ }
+ body[data-page="erros"] .error-home-main,
+ body[data-page="erros"] .error-home-actions{
+   min-height:0!important;
+   height:100%!important;
+   max-height:100%!important;
+   align-self:stretch!important;
+   box-sizing:border-box!important;
+ }
+ body[data-page="erros"] .error-home-actions{
+   grid-template-rows:repeat(3,minmax(0,1fr))!important;
+ }
+ body[data-page="erros"] .error-home-action{
+   min-height:0!important;
+   max-height:none!important;
+ }
+}
+</style>
 </head>
 
 <body data-page="erros">
