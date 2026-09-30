@@ -37,7 +37,7 @@
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/caderno-erros/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno-erros.html"))history.replaceState(null,"","/caderno-erros/"+location.search+location.hash);}catch(e){}})();</script>
-<style id="error-qs-home-layout-v20">
+<style id="error-qs-home-layout-v20" media="not all">
 @media(min-width:981px){
  body[data-page="erros"] .error-cat-spotlight{display:none!important}
  body[data-page="erros"] .error-home-layout.review-mode{display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;height:calc(100dvh - 240px)!important;overflow:hidden!important}
@@ -53,6 +53,48 @@
  body[data-page="erros"] .error-side-head h3{font-size:18px!important;font-weight:500!important}.error-side-head span{display:none!important}
  body[data-page="erros"] .error-review-home-aside:after{content:"Ações rápidas";display:block;min-height:0;padding:18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);color:var(--muted);font-size:10px}
  body[data-page="erros"] .error-review-action-switch{position:absolute!important;right:18px;bottom:18px;z-index:4}
+}
+</style>
+<style id="error-home-identical-qs-v21">
+body[data-page="erros"] .error-cat-spotlight{display:none!important}
+@media(min-width:981px){
+ html:has(body[data-page="erros"]),body[data-page="erros"]{height:100dvh!important;max-height:100dvh!important;overflow:hidden!important}
+ body[data-page="erros"] .error-home-layout.review-mode{
+  display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;
+  grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;
+  height:calc(100dvh - 240px)!important;min-height:0!important;max-height:calc(100dvh - 240px)!important;overflow:hidden!important
+ }
+ body[data-page="erros"] .error-daily-review-card{
+  position:static!important;grid-column:1!important;grid-row:1!important;height:272px!important;min-height:272px!important;
+  padding:28px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;
+  box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px!important
+ }
+ body[data-page="erros"] .error-home-main{
+  grid-column:1!important;grid-row:2!important;min-height:0!important;padding:16px 18px!important;border:1px solid var(--border)!important;
+  border-radius:15px!important;background:var(--surface)!important;overflow:hidden!important;display:flex!important;flex-direction:column!important
+ }
+ body[data-page="erros"] .error-library-nav{flex:0 0 auto!important}
+ body[data-page="erros"] .error-library-panel{flex:1 1 auto!important;min-height:0!important;overflow:hidden!important}
+ body[data-page="erros"] #error-library{min-height:0!important;max-height:100%!important;overflow-y:auto!important;overscroll-behavior:contain!important}
+ body[data-page="erros"] .error-review-home-aside{display:contents!important}
+ body[data-page="erros"] .error-side-card.error-quick-metrics{
+  grid-column:2!important;grid-row:1!important;height:272px!important;min-height:272px!important;padding:16px!important;
+  border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;overflow:hidden!important
+ }
+ body[data-page="erros"] .error-side-head span{display:none!important}
+ body[data-page="erros"] .error-side-head h3{font-size:16px!important;font-weight:600!important;margin:0!important}
+ body[data-page="erros"] .error-home-actions{
+  grid-column:2!important;grid-row:2!important;min-height:0!important;display:grid!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;gap:10px!important
+ }
+ body[data-page="erros"] .error-home-action{
+  --qa:var(--accent);display:grid!important;grid-template-columns:56px minmax(0,1fr) 38px!important;grid-template-rows:1fr!important;
+  align-items:center!important;gap:12px!important;padding:0 15px!important;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border))!important;
+  border-radius:19px!important;background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;color:var(--accent)!important;text-align:left!important
+ }
+ body[data-page="erros"] .error-home-action-icon{width:48px;height:48px;border-radius:12px;background:color-mix(in srgb,var(--accent) 12%,var(--surface));display:flex;align-items:center;justify-content:center;font-size:23px}
+ body[data-page="erros"] .error-home-action-copy{display:flex;flex-direction:column;justify-content:center}.error-home-action-copy strong{font-size:13px;font-weight:500;color:var(--accent)}.error-home-action-copy small{margin-top:4px;font-size:9px;color:color-mix(in srgb,var(--accent) 62%,var(--muted))}
+ body[data-page="erros"] .error-home-action-arrow{display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--accent)}
+ body[data-page="erros"] .error-review-action-switch{display:none!important}
 }
 </style>
 </head>
@@ -121,12 +163,11 @@
           <div class="error-cat-copy"><span class="error-cat-label">Destaque</span><strong id="error-cat-spotlight-text">Carregando seu Pulo do Gato...</strong><small id="error-cat-spotlight-meta">Uma ideia essencial para levar para a prova.</small></div>
           <div class="error-cat-timer"><span id="error-cat-timer-bar"></span></div>
         </section>
-
-        <article class="error-daily-review-card" id="error-daily-review-card" role="button" tabindex="0">
+<section class="error-home-layout review-mode">
+          <article class="error-daily-review-card" id="error-daily-review-card" role="button" tabindex="0">
   <div><span class="error-home-eyebrow">Do LURIA</span><h2>Revisões do dia</h2><p>Revise os erros programados para hoje e mantenha os pontos importantes ativos.</p><div class="error-daily-meta"><span>Conteúdo programado</span><span>Disponível agora</span></div></div>
   <button type="button" id="error-daily-review-open">Abrir revisões do dia →</button>
 </article>
-        <section class="error-home-layout review-mode">
           <div class="error-home-main">
             <div class="error-library-nav">
               <div class="error-state-switch" aria-label="Visão do Caderno de Erros">
@@ -171,6 +212,11 @@
               <div id="error-review-home-quick-metrics" class="error-quick-metrics-body"></div>
             </section>
           </aside>
+          <div class="error-home-actions">
+ <button class="error-home-action" type="button" id="error-home-review-action"><span class="error-home-action-icon">↻</span><span class="error-home-action-copy"><strong>Revisar agora</strong><small>Continue sua revisão.</small></span><span class="error-home-action-arrow">→</span></button>
+ <button class="error-home-action" type="button" id="error-home-create-action"><span class="error-home-action-icon">＋</span><span class="error-home-action-copy"><strong>Criar novo</strong><small>Adicione um erro ao caderno.</small></span><span class="error-home-action-arrow">→</span></button>
+ <button class="error-home-action" type="button" id="error-home-library-action"><span class="error-home-action-icon">▥</span><span class="error-home-action-copy"><strong>Biblioteca</strong><small>Veja todos os seus erros.</small></span><span class="error-home-action-arrow">→</span></button>
+</div>
         </section>
 
         <section class="error-review-panel error-section" data-error-section="review">
@@ -385,6 +431,13 @@
 document.addEventListener("DOMContentLoaded",function(){
  const card=document.getElementById("error-daily-review-card"),open=document.getElementById("error-daily-review-open"),target=document.getElementById("error-review-home-now");
  const go=()=>target&&target.click(); open&&open.addEventListener("click",e=>{e.stopPropagation();go()}); card&&card.addEventListener("click",go); card&&card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}});
+});
+</script>
+<script id="error-home-identical-actions-js">
+document.addEventListener("DOMContentLoaded",()=>{
+ document.getElementById("error-home-review-action")?.addEventListener("click",()=>document.getElementById("error-review-home-now")?.click());
+ document.getElementById("error-home-create-action")?.addEventListener("click",()=>{document.getElementById("error-create-menu-trigger")?.click();document.querySelector('[data-error-create-action="error"]')?.click()});
+ document.getElementById("error-home-library-action")?.addEventListener("click",()=>document.querySelector('[data-error-state="all"]')?.click());
 });
 </script>
 </body>
