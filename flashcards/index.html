@@ -1538,3 +1538,32 @@ body[data-page="flashcards"] #review-launcher:after{display:none!important;conte
 body[data-page="flashcards"] #review-launcher-count,
 body[data-page="flashcards"] .review-launcher-action strong{font-size:13px!important;line-height:1.1!important;font-weight:800!important;color:#fff!important}
 </style>
+
+<style id="flash-review-session-repair-v65">
+/* Corrige a transição da home para a sessão de revisão. */
+body[data-page="flashcards"].flash-review-session-active{overflow:auto!important;height:auto!important;max-height:none!important}
+body[data-page="flashcards"].flash-review-session-active .main{margin-left:0!important;width:100%!important;overflow:visible!important}
+body[data-page="flashcards"].flash-review-session-active .page{display:block!important;width:100%!important;max-width:1180px!important;height:auto!important;min-height:100dvh!important;margin:0 auto!important;padding:18px 24px 40px!important;overflow:visible!important}
+body[data-page="flashcards"].flash-review-session-active .flash-section[data-flash-section="review"].active{
+  display:block!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;margin:0!important
+}
+body[data-page="flashcards"].flash-review-session-active .flash-review-panel{
+  display:block!important;width:100%!important;max-width:1180px!important;height:auto!important;margin:0 auto!important;padding:0!important;overflow:visible!important
+}
+body[data-page="flashcards"].flash-review-session-active #review-launcher,
+body[data-page="flashcards"].flash-review-session-active .flash-home-decks,
+body[data-page="flashcards"].flash-review-session-active .flash-home-summary,
+body[data-page="flashcards"].flash-review-session-active .flash-home-actions,
+body[data-page="flashcards"].flash-review-session-active .flash-review-progress-only{display:none!important}
+body[data-page="flashcards"].flash-review-session-active #review-focus-toolbar{
+  position:sticky!important;top:12px!important;display:grid!important;width:100%!important;box-sizing:border-box!important;margin:0 0 18px!important
+}
+body[data-page="flashcards"].flash-review-session-active #review-stage{
+  position:static!important;display:block!important;width:100%!important;max-width:940px!important;height:auto!important;margin:18px auto 0!important;overflow:visible!important
+}
+body[data-page="flashcards"].flash-review-session-active #review-stage[hidden],
+body[data-page="flashcards"].flash-review-session-active #review-focus-toolbar[hidden],
+body[data-page="flashcards"].flash-review-session-active #review-empty[hidden]{display:none!important}
+body[data-page="flashcards"].flash-review-session-active .review-card{width:100%!important;box-sizing:border-box!important}
+@media(max-width:700px){body[data-page="flashcards"].flash-review-session-active .page{padding:12px!important}body[data-page="flashcards"].flash-review-session-active #review-focus-toolbar{grid-template-columns:1fr!important;position:static!important}}
+</style>
