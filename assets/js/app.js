@@ -1353,7 +1353,7 @@ function updateLuriaProfileInitials(user = window.docmapUser, profile = window.d
 
 function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {
   const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();
-  const canAccessWork = isAdmin === true || sidebarPlan === "plus" || sidebarPlan === "pro";
+  const canAccessWork = isAdmin === true || ["plus", "pro", "betatester"].includes(sidebarPlan);
   const fallbackName = user.email
     ? user.email.split("@")[0]
     : "Usuário";
@@ -6183,7 +6183,7 @@ async function iniciarApp() {
   const user =
     data.session.user;
 
-  // O ambiente Trabalho é liberado para Admin e assinantes Plus/Pro.
+  // O ambiente Trabalho é liberado para Admin e planos Plus/Pro/Betatester.
   // Usa entitlements do servidor; em falha transitória, carregarEntitlements preserva
   // o último entitlement válido em cache sem rebaixar silenciosamente o usuário.
   if (String(page).startsWith("trabalho_")) {
@@ -6200,8 +6200,7 @@ async function iniciarApp() {
 
     const workAllowed =
       workAdmin === true
-      || workPlan === "plus"
-      || workPlan === "pro";
+      || ["plus", "pro", "betatester"].includes(workPlan);
 
     if (!workAllowed) {
       window.location.replace("/dashboard/");
