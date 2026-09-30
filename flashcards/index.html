@@ -63,7 +63,7 @@ body[data-page="flashcards"] .flash-switches-inline .flash-review-action-switch>
 }
 @media(max-width:980px){body[data-page="flashcards"] .flash-switches-inline{width:100%;flex-wrap:wrap}}
 </style>
-<style id="flash-qs-home-layout-v42">
+<style id="flash-qs-home-layout-v42" media="not all">
 @media(min-width:981px){
  body[data-page="flashcards"] .flash-top-spotlight{display:none!important}
  body[data-page="flashcards"] .flash-control-row{display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;align-items:stretch!important;margin:0!important;height:calc(100dvh - 240px)!important;overflow:hidden!important}
@@ -84,6 +84,51 @@ body[data-page="flashcards"] .flash-switches-inline .flash-review-action-switch>
  body[data-page="flashcards"] .flash-control-row:after{content:"Ações rápidas";grid-column:2;grid-row:2;display:block;padding:18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);color:var(--muted);font-size:10px}
  body[data-page="flashcards"] .flash-review-action-switch{position:absolute!important;right:18px;bottom:18px;z-index:3}
 }
+</style>
+<style id="flash-home-clean-qs-v43">
+body[data-page="flashcards"] .flash-top-spotlight{display:none!important}
+body[data-page="flashcards"] .flash-control-row{display:none!important}
+body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+ display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;
+ grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;
+ height:calc(100dvh - 240px)!important;min-height:0!important;overflow:hidden!important;
+}
+body[data-page="flashcards"] .flash-review-panel{display:contents!important}
+body[data-page="flashcards"] .flash-review-progress-only{display:none!important}
+body[data-page="flashcards"] #review-launcher{
+ grid-column:1!important;grid-row:1!important;height:272px!important;min-height:272px!important;
+ box-sizing:border-box!important;margin:0!important;padding:28px!important;border:1px solid var(--border)!important;
+ border-radius:15px!important;background:var(--surface)!important;box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;
+ display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;
+}
+body[data-page="flashcards"] #review-launcher .eyebrow{font-weight:400!important;font-size:9px!important}
+body[data-page="flashcards"] #review-launcher h3{font-size:22px!important;margin:5px 0 7px!important}
+body[data-page="flashcards"] #review-launcher p{font-size:11px!important;line-height:1.5!important;max-width:620px!important}
+body[data-page="flashcards"] .flash-home-decks{
+ grid-column:1;grid-row:2;min-height:0;padding:16px 18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);overflow:hidden;display:flex;flex-direction:column
+}
+body[data-page="flashcards"] .flash-home-decks-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
+body[data-page="flashcards"] .flash-home-decks-head span{font-size:9px;color:var(--accent);text-transform:uppercase;letter-spacing:.07em;font-weight:400}
+body[data-page="flashcards"] .flash-home-decks-head h2{font-size:16px;margin:5px 0 0}
+body[data-page="flashcards"] #flash-home-decks-list{flex:1;min-height:0;overflow:auto}
+body[data-page="flashcards"] .flash-home-summary{
+ grid-column:2;grid-row:1;height:272px;padding:16px;border:1px solid var(--border);border-radius:15px;background:var(--surface);overflow:hidden
+}
+body[data-page="flashcards"] .flash-home-summary>span{font-size:9px;color:var(--accent);text-transform:uppercase;letter-spacing:.07em;font-weight:400}
+body[data-page="flashcards"] .flash-home-summary>h2{font-size:16px;margin:5px 0 11px}
+body[data-page="flashcards"] .flash-home-summary .flash-metric-summary-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+body[data-page="flashcards"] .flash-home-summary .flash-metric-summary-grid>div{padding:9px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2)}
+body[data-page="flashcards"] .flash-home-summary .flash-metric-detail{display:none!important}
+body[data-page="flashcards"] .flash-home-actions{
+ grid-column:2;grid-row:2;min-height:0;display:grid;grid-template-rows:repeat(3,minmax(0,1fr));gap:10px
+}
+body[data-page="flashcards"] .flash-home-action{
+ display:grid;grid-template-columns:50px minmax(0,1fr) 34px;align-items:center;gap:12px;padding:0 15px;border:1px solid var(--border);border-radius:15px;background:var(--surface);color:var(--text);text-align:left
+}
+body[data-page="flashcards"] .flash-home-action i{width:42px;height:42px;border-radius:11px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-style:normal;font-size:20px}
+body[data-page="flashcards"] .flash-home-action strong{display:block;font-size:13px;font-weight:500}.flash-home-action small{display:block;margin-top:3px;font-size:9px;color:var(--muted)}
+body[data-page="flashcards"] .flash-home-action b{font-size:16px;font-weight:400;text-align:center}
+@media(max-width:980px){body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{display:block!important;height:auto!important;overflow:visible!important}.flash-home-decks,.flash-home-summary,.flash-home-actions{margin-top:12px!important}}
 </style>
 </head>
 
@@ -380,6 +425,16 @@ body[data-page="flashcards"] .flash-switches-inline .flash-review-action-switch>
                   Iniciar revisão
                 </button>
               </div>
+            </div>
+            <article class="flash-home-decks">
+              <div class="flash-home-decks-head"><div><span>Meus decks</span><h2>Continue de onde parou</h2></div><button class="button secondary" type="button" data-flash-home-tab="library">Ver todos →</button></div>
+              <div id="flash-home-decks-list"><div class="flash-empty">Carregando seus decks...</div></div>
+            </article>
+            <aside class="flash-home-summary"><span>Resumo</span><h2>Métricas rápidas</h2><div id="flash-home-metrics-slot"></div></aside>
+            <div class="flash-home-actions">
+              <button class="flash-home-action" type="button" data-flash-home-tab="create"><i>＋</i><span><strong>Criar flashcard</strong><small>Adicione um novo card.</small></span><b>→</b></button>
+              <button class="flash-home-action" type="button" data-flash-home-tab="import"><i>⇧</i><span><strong>Importar</strong><small>Traga seus flashcards.</small></span><b>→</b></button>
+              <button class="flash-home-action" type="button" data-flash-home-tab="library"><i>▥</i><span><strong>Biblioteca</strong><small>Veja todos os seus decks.</small></span><b>→</b></button>
             </div>
 
             <div
@@ -1227,6 +1282,17 @@ document.addEventListener("DOMContentLoaded",function(){
  function openDaily(e){if(e.target.closest("button"))return;if(start&&!start.disabled)start.click();}
  launcher&&launcher.addEventListener("click",openDaily);
  launcher&&launcher.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openDaily(e);}});
+});
+</script>
+<script id="flash-clean-home-js">
+document.addEventListener("DOMContentLoaded",()=>{
+ const metrics=document.querySelector(".flash-quick-metrics");
+ const slot=document.getElementById("flash-home-metrics-slot");
+ if(metrics&&slot){const kids=[...metrics.children].filter(x=>!x.classList.contains("flash-quick-metrics-title"));kids.forEach(x=>slot.appendChild(x))}
+ const homeDecks=document.getElementById("flash-home-decks-list"),library=document.getElementById("library-decks");
+ const sync=()=>{if(!homeDecks||!library)return;const cards=[...library.children].slice(0,3);homeDecks.innerHTML=cards.length?cards.map(x=>x.outerHTML).join(""):'<div class="flash-empty">Nenhum deck ainda.</div>'};
+ new MutationObserver(sync).observe(library||document.body,{childList:true,subtree:false});sync();
+ document.querySelectorAll("[data-flash-home-tab]").forEach(b=>b.addEventListener("click",()=>{const tab=b.dataset.flashHomeTab;document.querySelector('[data-flash-tab="'+tab+'"]')?.click()}));
 });
 </script>
 </body>
