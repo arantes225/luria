@@ -37,6 +37,24 @@
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/caderno-erros/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno-erros.html"))history.replaceState(null,"","/caderno-erros/"+location.search+location.hash);}catch(e){}})();</script>
+<style id="error-qs-home-layout-v20">
+@media(min-width:981px){
+ body[data-page="erros"] .error-cat-spotlight{display:none!important}
+ body[data-page="erros"] .error-home-layout.review-mode{display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;height:calc(100dvh - 240px)!important;overflow:hidden!important}
+ body[data-page="erros"] .error-daily-review-card{position:absolute;left:0;right:calc(29.5% + 12px);height:272px;box-sizing:border-box;padding:28px;border:1px solid var(--border);border-radius:15px;background:var(--surface);box-shadow:0 8px 24px rgba(15,40,75,.05);display:flex;align-items:center;justify-content:space-between;gap:24px;cursor:pointer}
+ body[data-page="erros"] .error-daily-review-card h2{margin:5px 0 7px;font-size:22px;font-weight:600}
+ body[data-page="erros"] .error-daily-review-card p{max-width:620px;margin:0;color:var(--muted);font-size:11px;line-height:1.5}
+ body[data-page="erros"] .error-home-eyebrow{font-size:9px;color:var(--accent);font-weight:400;text-transform:uppercase;letter-spacing:.08em}
+ body[data-page="erros"] .error-daily-meta{display:flex;gap:8px;margin-top:14px}.error-daily-meta span{padding:6px 9px;border-radius:999px;background:var(--surface-2);font-size:9px;color:var(--muted)}
+ body[data-page="erros"] #error-daily-review-open{padding:11px 14px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-size:11px;font-weight:400;white-space:nowrap}
+ body[data-page="erros"] .error-home-main{grid-column:1;grid-row:2;min-height:0;padding:16px;border:1px solid var(--border);border-radius:15px;background:var(--surface);overflow:auto}
+ body[data-page="erros"] .error-review-home-aside{grid-column:2;grid-row:1 / span 2;display:grid!important;grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;min-height:0}
+ body[data-page="erros"] .error-side-card.error-quick-metrics{height:272px!important;box-sizing:border-box!important;padding:18px!important;border-radius:15px!important;overflow:hidden!important}
+ body[data-page="erros"] .error-side-head h3{font-size:18px!important;font-weight:500!important}.error-side-head span{display:none!important}
+ body[data-page="erros"] .error-review-home-aside:after{content:"Ações rápidas";display:block;min-height:0;padding:18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);color:var(--muted);font-size:10px}
+ body[data-page="erros"] .error-review-action-switch{position:absolute!important;right:18px;bottom:18px;z-index:4}
+}
+</style>
 </head>
 
 <body data-page="erros">
@@ -104,6 +122,10 @@
           <div class="error-cat-timer"><span id="error-cat-timer-bar"></span></div>
         </section>
 
+        <article class="error-daily-review-card" id="error-daily-review-card" role="button" tabindex="0">
+  <div><span class="error-home-eyebrow">Do LURIA</span><h2>Revisões do dia</h2><p>Revise os erros programados para hoje e mantenha os pontos importantes ativos.</p><div class="error-daily-meta"><span>Conteúdo programado</span><span>Disponível agora</span></div></div>
+  <button type="button" id="error-daily-review-open">Abrir revisões do dia →</button>
+</article>
         <section class="error-home-layout review-mode">
           <div class="error-home-main">
             <div class="error-library-nav">
@@ -359,6 +381,12 @@
 
     <script src="/assets/js/image-lightbox.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
+<script id="error-daily-review-card-js">
+document.addEventListener("DOMContentLoaded",function(){
+ const card=document.getElementById("error-daily-review-card"),open=document.getElementById("error-daily-review-open"),target=document.getElementById("error-review-home-now");
+ const go=()=>target&&target.click(); open&&open.addEventListener("click",e=>{e.stopPropagation();go()}); card&&card.addEventListener("click",go); card&&card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}});
+});
+</script>
 </body>
 
 </html>
