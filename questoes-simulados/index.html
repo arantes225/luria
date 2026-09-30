@@ -2680,6 +2680,31 @@ body.theme-dark[data-page="questoes"] .qs-home-system{
  }
 }
 </style>
+
+<style id="qs-daily-button-contrast-v32">
+/* Botão de ação contrasta com o box colorido de Questões do dia. */
+body[data-page="questoes"] .qs-home-system .qs-home-primary{
+  background:#fff!important;
+  color:#184888!important;
+  border:1px solid rgba(255,255,255,.92)!important;
+  box-shadow:0 7px 18px rgba(0,0,0,.16)!important;
+  font-weight:850!important;
+}
+body[data-page="questoes"] .qs-home-system .qs-home-primary:hover{
+  background:rgba(255,255,255,.92)!important;
+  transform:translateY(-1px);
+}
+html[data-theme="leila-mood"] body[data-page="questoes"] .qs-home-system .qs-home-primary,
+body[data-theme="leila-mood"][data-page="questoes"] .qs-home-system .qs-home-primary{
+  color:#b52d74!important;
+}
+html[data-theme="dark"] body[data-page="questoes"] .qs-home-system .qs-home-primary,
+body[data-theme="dark"][data-page="questoes"] .qs-home-system .qs-home-primary{
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
