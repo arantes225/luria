@@ -2746,6 +2746,13 @@ body[data-page="questoes"] .qs-home-system:after{
 body[data-page="questoes"] .qs-home-system-copy{max-width:78%!important}
 @media(max-width:760px){body[data-page="questoes"] .qs-home-system-copy{max-width:100%!important}}
 </style>
+
+<style id="qs-daily-shadow-containment-v35">
+/* Mantém profundidade sem a sombra invadir visualmente Minhas listas. */
+body[data-page="questoes"] .qs-home-system{
+  box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 15%,transparent),inset 0 1px 0 rgba(255,255,255,.08)!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
