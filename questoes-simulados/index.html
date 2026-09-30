@@ -2753,55 +2753,6 @@ body[data-page="questoes"] .qs-home-system{
   box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 15%,transparent),inset 0 1px 0 rgba(255,255,255,.08)!important;
 }
 </style>
-<style id="qs-daily-white-test-v36">
-/* Teste visual: Questões do dia em superfície branca, mantendo profundidade e o círculo azul. */
-body[data-page="questoes"] .qs-home-system{
-  background:
-    radial-gradient(circle at 87% 22%,color-mix(in srgb,var(--accent) 8%,transparent) 0 12%,transparent 36%),
-    linear-gradient(135deg,#fff 0%,#fff 62%,color-mix(in srgb,var(--accent) 5%,#fff) 100%)!important;
-  border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border))!important;
-  color:var(--text)!important;
-  box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 12%,transparent),inset 0 1px 0 rgba(255,255,255,.9)!important;
-}
-body[data-page="questoes"] .qs-home-system:before{
-  content:""!important;display:block!important;position:absolute!important;inset:0!important;z-index:-2!important;
-  background:linear-gradient(112deg,rgba(255,255,255,.82),transparent 48%,color-mix(in srgb,var(--accent) 5%,transparent))!important;
-}
-body[data-page="questoes"] .qs-home-system:after{
-  content:""!important;display:block!important;position:absolute!important;
-  width:250px!important;height:250px!important;right:-72px!important;top:-112px!important;inset:auto -72px auto auto!important;
-  border:1px solid color-mix(in srgb,var(--accent) 24%,transparent)!important;border-radius:50%!important;
-  background:color-mix(in srgb,var(--accent) 9%,transparent)!important;
-  box-shadow:0 0 0 34px color-mix(in srgb,var(--accent) 4%,transparent),0 0 0 72px color-mix(in srgb,var(--accent) 2.5%,transparent)!important;
-  transform:none!important;z-index:-1!important;
-}
-body[data-page="questoes"] .qs-home-system h2{color:var(--text)!important}
-body[data-page="questoes"] .qs-home-system p{color:var(--muted)!important}
-body[data-page="questoes"] .qs-home-system .qs-home-eyebrow{
-  color:var(--accent)!important;background:color-mix(in srgb,var(--accent) 8%,#fff)!important;
-  border-color:color-mix(in srgb,var(--accent) 18%,transparent)!important;
-}
-body[data-page="questoes"] .qs-home-system .qs-home-primary{
-  background:var(--accent)!important;color:#fff!important;border-color:var(--accent)!important;
-  box-shadow:0 7px 18px color-mix(in srgb,var(--accent) 20%,transparent)!important;
-}
-:root[data-theme="dark"] body[data-page="questoes"] .qs-home-system,
-body.theme-dark[data-page="questoes"] .qs-home-system{
-  background:var(--surface)!important;border-color:color-mix(in srgb,var(--accent) 22%,var(--border))!important;color:var(--text)!important;
-}
-</style>
-<style id="qs-daily-blue-orb-test-v37">
-/* Fundo branco + esfera azul sólida em destaque. */
-body[data-page="questoes"] .qs-home-system:after{
-  content:""!important;display:block!important;position:absolute!important;
-  width:220px!important;height:220px!important;right:-42px!important;top:50%!important;
-  inset:50% -42px auto auto!important;transform:translateY(-50%)!important;
-  border:0!important;border-radius:50%!important;
-  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 88%,#fff) 0%,var(--accent) 58%,color-mix(in srgb,var(--accent) 82%,#071c3c) 100%)!important;
-  box-shadow:0 18px 38px color-mix(in srgb,var(--accent) 24%,transparent),inset 0 1px 0 rgba(255,255,255,.22)!important;
-  opacity:1!important;z-index:-1!important;
-}
-</style>
 </head>
 
 <body data-page="questoes">

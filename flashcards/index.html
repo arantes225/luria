@@ -251,6 +251,22 @@ body[data-page="flashcards"] #review-launcher #start-review-session{background:#
  }
 }
 </style>
+<style id="flash-daily-force-visible-v47">
+@media(min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   display:grid!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active #review-launcher{
+   display:flex!important;
+   visibility:visible!important;
+   opacity:1!important;
+   position:relative!important;
+   grid-column:1!important;
+   grid-row:1!important;
+   z-index:2!important;
+ }
+}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
