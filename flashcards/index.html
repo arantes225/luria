@@ -42,6 +42,27 @@
 .flash-daily-review-card .review-launcher-action strong{font-size:17px!important}
 @media(max-width:700px){.flash-review-action-switch{width:100%}.flash-review-action-switch>button,.flash-create-menu-wrap{flex:1}.flash-create-menu-wrap>button{width:100%}.flash-daily-review-card{min-height:180px!important;padding:20px!important}}
 </style>
+<style id="flash-switch-align-v41">
+body[data-page="flashcards"] .flash-switches-inline{display:flex!important;align-items:flex-start!important;gap:10px!important;min-height:42px!important}
+body[data-page="flashcards"] .flash-switches-inline .flash-tabs,
+body[data-page="flashcards"] .flash-switches-inline .flash-review-action-switch{
+  height:42px!important;min-height:42px!important;box-sizing:border-box!important;
+  margin:0!important;padding:4px!important;border:1px solid var(--border)!important;
+  border-radius:11px!important;background:var(--surface)!important;box-shadow:none!important;
+}
+body[data-page="flashcards"] .flash-switches-inline .flash-tabs .flash-tab,
+body[data-page="flashcards"] .flash-switches-inline .flash-review-action-switch>button,
+body[data-page="flashcards"] .flash-switches-inline .flash-create-menu-wrap>button{
+  height:32px!important;min-height:32px!important;box-sizing:border-box!important;
+  padding:0 14px!important;border:0!important;border-radius:7px!important;
+  font-size:10px!important;font-weight:750!important;line-height:32px!important;
+}
+body[data-page="flashcards"] .flash-switches-inline .flash-create-menu-wrap{height:32px!important}
+body[data-page="flashcards"] .flash-switches-inline .flash-review-action-switch>button.active{
+  background:var(--accent)!important;color:#fff!important;
+}
+@media(max-width:980px){body[data-page="flashcards"] .flash-switches-inline{width:100%;flex-wrap:wrap}}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -218,20 +239,9 @@
           <div class="flash-top-spotlight-timer" aria-hidden="true"><span></span></div>
         </section>
 
-        <section class="flash-review-home-switch-row" aria-label="Ações de flashcards">
-  <div class="flash-review-action-switch">
-    <button id="flash-review-now-switch" class="active" type="button">▶ Revisar agora</button>
-    <div class="flash-create-menu-wrap">
-      <button id="flash-create-menu-trigger" type="button" aria-haspopup="menu" aria-expanded="false">＋ Criar</button>
-      <div id="flash-create-menu" class="flash-create-menu" role="menu" hidden>
-        <button type="button" role="menuitem" data-flash-create-action="card">Criar flashcard</button>
-        <button type="button" role="menuitem" data-flash-create-action="review">Criar nova revisão</button>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="flash-control-row" aria-label="Navegação e métricas rápidas">
-          <section class="flash-tabs" aria-label="Seções de flashcards">
+        <section class="flash-control-row" aria-label="Navegação e métricas rápidas">
+          <div class="flash-switches-inline">
+            <section class="flash-tabs" aria-label="Seções de flashcards">
 
             <button
               class="flash-tab active"
@@ -268,6 +278,17 @@
             </button>
 
           </section>
+            <div class="flash-review-action-switch" aria-label="Ações de revisão">
+              <button id="flash-review-now-switch" class="active" type="button">▶ Revisar agora</button>
+              <div class="flash-create-menu-wrap">
+                <button id="flash-create-menu-trigger" type="button" aria-haspopup="menu" aria-expanded="false">＋ Criar</button>
+                <div id="flash-create-menu" class="flash-create-menu" role="menu" hidden>
+                  <button type="button" role="menuitem" data-flash-create-action="card">Criar flashcard</button>
+                  <button type="button" role="menuitem" data-flash-create-action="review">Criar nova revisão</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <aside class="flash-quick-metrics" aria-label="Métricas rápidas">
             <div class="flash-quick-metrics-title">
