@@ -277,6 +277,62 @@ body[data-page="erros"] .error-cat-spotlight{display:none!important}
  }
 }
 </style>
+<style id="error-title-and-ccq-v26">
+@media(min-width:981px){
+ body[data-page="erros"] .error-home-title-card{
+   display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;
+   gap:0!important;
+ }
+ body[data-page="erros"] .error-home-title-card .error-home-eyebrow{
+   margin:0 0 5px!important;font-size:10px!important;font-weight:400!important;line-height:1.15!important;letter-spacing:.07em!important;
+ }
+ body[data-page="erros"] .error-home-title-card h2{
+   margin:0!important;font-size:25px!important;font-weight:700!important;line-height:1.12!important;letter-spacing:-.02em!important;
+ }
+ body[data-page="erros"] .error-home-title-card p{
+   margin:6px 0 0!important;font-size:11px!important;font-weight:400!important;line-height:1.35!important;
+ }
+ body[data-page="erros"] .error-ccq-home-card{
+   display:grid!important;grid-template-columns:190px minmax(0,1fr)!important;align-items:center!important;justify-content:stretch!important;
+   gap:24px!important;padding:22px 30px!important;cursor:default!important;overflow:hidden!important;
+   background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 8%,var(--surface)),var(--surface) 58%,color-mix(in srgb,var(--accent) 5%,var(--surface)))!important;
+ }
+ body[data-page="erros"] .error-ccq-home-logo{
+   width:180px!important;height:180px!important;display:flex!important;align-items:center!important;justify-content:center!important;
+   align-self:center!important;justify-self:center!important;
+ }
+ body[data-page="erros"] .error-ccq-home-logo img{
+   display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;
+ }
+ html[data-theme="dark"] body[data-page="erros"] .error-ccq-home-logo .error-cat-logo-lightbg,
+ body.theme-dark[data-page="erros"] .error-ccq-home-logo .error-cat-logo-lightbg{display:none!important}
+ html:not([data-theme="dark"]) body[data-page="erros"] .error-ccq-home-logo .error-cat-logo-darkbg{display:none!important}
+ body[data-page="erros"] .error-ccq-home-copy{
+   min-width:0!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;
+ }
+ body[data-page="erros"] .error-ccq-home-label{
+   display:inline-flex!important;margin:0 0 10px!important;padding:5px 9px!important;border-radius:999px!important;
+   background:color-mix(in srgb,var(--accent) 10%,var(--surface))!important;color:var(--accent)!important;
+   font-size:9px!important;font-weight:500!important;letter-spacing:.08em!important;text-transform:uppercase!important;
+ }
+ body[data-page="erros"] .error-ccq-home-copy #error-cat-spotlight-text{
+   display:block!important;max-width:760px!important;color:var(--text)!important;font-size:19px!important;font-weight:600!important;line-height:1.35!important;
+   transition:opacity .16s ease,transform .16s ease!important;
+ }
+ body[data-page="erros"] .error-ccq-home-copy #error-cat-spotlight-text.changing{opacity:0!important;transform:translateY(4px)!important}
+ body[data-page="erros"] .error-ccq-home-copy #error-cat-spotlight-meta{
+   display:block!important;margin-top:10px!important;color:var(--muted)!important;font-size:10px!important;font-weight:400!important;
+ }
+ body[data-page="erros"] .error-ccq-home-timer{
+   width:100%!important;height:3px!important;margin-top:15px!important;border-radius:999px!important;overflow:hidden!important;
+   background:color-mix(in srgb,var(--accent) 10%,var(--border))!important;
+ }
+ body[data-page="erros"] .error-ccq-home-timer span{
+   display:block!important;width:100%!important;height:100%!important;border-radius:inherit!important;background:var(--accent)!important;
+ }
+ body[data-page="erros"] #error-daily-review-open,.error-daily-meta{display:none!important}
+}
+</style>
 </head>
 
 <body data-page="erros">
@@ -345,9 +401,17 @@ body[data-page="erros"] .error-cat-spotlight{display:none!important}
         </section>
 
         <section class="error-home-layout review-mode">
-          <article class="error-daily-review-card" id="error-daily-review-card" role="button" tabindex="0">
-  <div><span class="error-home-eyebrow">Do LURIA</span><h2>Revisões do dia</h2><p>Revise os erros programados para hoje e mantenha os pontos importantes ativos.</p><div class="error-daily-meta"><span>Conteúdo programado</span><span>Disponível agora</span></div></div>
-  <button type="button" id="error-daily-review-open">Abrir revisões do dia →</button>
+          <article class="error-daily-review-card error-ccq-home-card" id="error-daily-review-card">
+  <div class="error-ccq-home-logo" aria-hidden="true">
+    <img class="error-cat-logo-lightbg" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="">
+    <img class="error-cat-logo-darkbg" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp" alt="">
+  </div>
+  <div class="error-ccq-home-copy">
+    <span class="error-ccq-home-label">Pulo do Gato</span>
+    <strong id="error-cat-spotlight-text">Carregando seu Pulo do Gato...</strong>
+    <small id="error-cat-spotlight-meta">Uma ideia essencial para levar para a prova.</small>
+    <div class="error-ccq-home-timer"><span id="error-cat-timer-bar"></span></div>
+  </div>
 </article>
           <div class="error-home-main">
             <div class="error-library-nav">
@@ -607,7 +671,7 @@ body[data-page="erros"] .error-cat-spotlight{display:none!important}
 
     <script src="/assets/js/image-lightbox.js?v=1"></script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
-<script id="error-daily-review-card-js">
+<script id="error-daily-review-card-js" type="application/x-disabled">
 document.addEventListener("DOMContentLoaded",function(){
  const card=document.getElementById("error-daily-review-card"),open=document.getElementById("error-daily-review-open"),target=document.getElementById("error-review-home-now");
  const go=()=>target&&target.click(); open&&open.addEventListener("click",e=>{e.stopPropagation();go()}); card&&card.addEventListener("click",go); card&&card.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}});
