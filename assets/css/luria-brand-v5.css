@@ -802,3 +802,55 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     gap:8px!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v76 — CRONOGRAMA = RÉGUA EXATA DO DASHBOARD
+   Corrige X/Y do Timer + sino + perfil sem alterar dimensões.
+   Remove superfícies brancas estruturais para revelar o pattern global.
+   ========================================================= */
+@media(min-width:981px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .page > .topbar{
+    position:relative!important;
+    top:auto!important;
+    right:auto!important;
+    bottom:auto!important;
+    left:auto!important;
+    width:100%!important;
+    height:60px!important;
+    min-height:60px!important;
+    max-height:60px!important;
+    margin:-6px 0 10px!important;
+    padding:0!important;
+    box-sizing:border-box!important;
+    background:transparent!important;
+    overflow:visible!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+    position:absolute!important;
+    top:6px!important;
+    right:0!important;
+    bottom:auto!important;
+    left:auto!important;
+    width:auto!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    align-self:auto!important;
+    justify-content:flex-end!important;
+    animation:none!important;
+    transition:none!important;
+  }
+}
+
+/* O Cronograma não cria uma folha branca sobre o fundo global da LURIA. */
+body[data-page="cronograma"]:not(.schedule-settings-embed),
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .main,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
+  background-color:transparent!important;
+  background-image:none!important;
+}
