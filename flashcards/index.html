@@ -1467,7 +1467,7 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
   <script src="/assets/js/weekly-content.js?v=1"></script>\n  <script src="assets/js/app.js?v=17.43-short-eyebrows"></script>
   <script src="assets/js/study-mode.js?v=13.0"></script>
   <script src="assets/js/sharing.js?v=3"></script>
-  <script src="assets/js/flashcards.js?v=17.5"></script>
+  <script src="assets/js/flashcards.js?v=17.6-review-session-fix"></script>
   <script src="/assets/js/medical-icons.js?v=1.0"></script>
   <script src="assets/js/flashcards-v21.js?v=35-quick-metrics"></script>
 
@@ -1513,6 +1513,10 @@ document.addEventListener("DOMContentLoaded",()=>{
  const sync=()=>{
    const active=document.querySelector('.flash-section[data-flash-section].active');
    const section=active?.dataset.flashSection||"review";
+   if(body.classList.contains("flash-review-session-active")){
+     body.classList.remove("flash-library-scroll","flash-home-fixed");
+     return;
+   }
    const library=section==="library";
    body.classList.toggle("flash-library-scroll",library);
    body.classList.toggle("flash-home-fixed",!library&&section==="review");
