@@ -2307,6 +2307,18 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-colo
   }
 }
 </style>
+<style id="qs-home-balance-v19">
+@media(min-width:981px){
+  body[data-page="questoes"] .qs-home-workspace{
+    --qs-top-row-h:302px!important; /* ~10% menor que 336px */
+  }
+  body[data-page="questoes"] .qs-home-system,
+  body[data-page="questoes"] .qs-home-week-compact{
+    height:var(--qs-top-row-h)!important;
+    min-height:var(--qs-top-row-h)!important;
+  }
+}
+</style>
 </head>
 
 <body data-page="questoes">
