@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#184888">
+  <title>Histórico de PCR · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=77-cronograma-cachefix">
+  <style>
+    .pcr-entry{min-height:calc(100dvh - 170px);display:flex;flex-direction:column}
+    .pcr-entry-main{flex:1;display:grid;place-items:center;text-align:center;padding:48px 18px}
+    .pcr-entry-content{max-width:620px}
+    .pcr-entry-icon{width:112px;height:112px;border-radius:50%;margin:0 auto 26px;display:grid;place-items:center;background:#fff0f0;color:#a91f24}
+    .pcr-entry-icon svg{width:58px;height:58px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+    .pcr-entry h2{font-size:30px;margin:0 0 14px}
+    .pcr-entry p{font-size:17px;line-height:1.55;color:var(--muted);margin:0 auto;max-width:560px}
+    .pcr-entry-action{border-top:1px solid var(--border);padding:22px 0 10px}
+    .pcr-entry-action small{display:block;color:var(--muted);font-size:14px;margin:0 0 12px}
+    .pcr-entry-start{width:100%;border:0;border-radius:16px;padding:17px 20px;background:var(--primary,#184888);color:white;font:inherit;font-size:19px;font-weight:800;cursor:pointer}
+    .pcr-entry-start:active{transform:scale(.995)}
+    @media(max-width:640px){
+      .pcr-entry{min-height:calc(100dvh - 112px)}
+      .pcr-entry-main{padding:30px 10px}
+      .pcr-entry-icon{width:94px;height:94px;margin-bottom:22px}
+      .pcr-entry-icon svg{width:48px;height:48px}
+      .pcr-entry h2{font-size:25px}
+      .pcr-entry p{font-size:16px}
+      .pcr-entry-action{padding:16px 0 max(8px,env(safe-area-inset-bottom))}
+    }
+  </style>
+<style id="luria-page-font-lock-v57">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}</style><link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=20260930-layout-pcr">
+<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
+</head>
+
+<body data-page="trabalho_pcr_historico">
+ <div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+ <main class="main"><div class="page pcr-history-page">
+ <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title>Histórico de PCR</h1></div></header>
+ <div class="pcr-history-actions"><a class="button primary" href="/trabalho/pcr/executar/">Iniciar PCR</a><button id="pcr-history-refresh" class="button secondary" type="button">Atualizar</button><label>Buscar paciente <input id="pcr-history-search" type="search" placeholder="Iniciais ou informações do atendimento"></label></div>
+ <p id="pcr-history-status" class="pcr-save-status" role="status" aria-live="polite">Carregando histórico…</p>
+ <section id="pcr-pending" class="pcr-patient-card" hidden><h2>Atendimento pendente</h2><p id="pcr-pending-copy"></p><div class="pcr-history-actions"><a class="button secondary" href="/trabalho/pcr/executar/">Retomar atendimento</a><button id="pcr-pending-retry" class="button primary" type="button">Tentar salvar novamente</button></div></section>
+ <div id="pcr-history-list"></div>
+ </div></main></div>
+ <dialog id="pcr-edit-dialog" class="pcr-history-dialog"><form id="pcr-edit-form" class="pcr-history-form"><h2 id="pcr-edit-title"></h2><div id="pcr-edit-fields" class="pcr-history-form"></div><p id="pcr-edit-error" class="pcr-save-status" role="status"></p><div class="pcr-history-actions"><button id="pcr-edit-cancel" class="button secondary" type="button">Cancelar</button><button id="pcr-edit-save" class="button primary" type="submit">Salvar alterações</button></div></form></dialog>
+ <script src="/assets/vendor/supabase-2.110.6.js"></script><script src="/assets/js/supabase.js"></script><script src="/assets/js/app.js?v=20260930-layout-pcr"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jspdf/dist/jspdf.umd.min.js"></script>
+ <script src="/assets/js/pcr-store.js?v=20260930"></script><script src="/assets/js/pcr-history.js?v=20260930"></script><script defer src="/assets/js/pwa.js?v=3"></script>
+</body></html>

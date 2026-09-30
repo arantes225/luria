@@ -25,3 +25,8 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action.error-home-a
  body[data-page="questoes"] .qs-home-actions-compact{height:auto!important;grid-template-rows:repeat(3,auto)!important}
  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action.error-home-action{height:auto!important;min-height:88px!important;padding:14px 15px!important}
 }
+
+/* Keep the action copy left aligned and the arrow at the right edge. */
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-icon{justify-self:start!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-copy{text-align:left!important;align-items:flex-start!important}
+body[data-page="questoes"] .qs-home-actions-compact .error-home-action-arrow{justify-self:end!important}

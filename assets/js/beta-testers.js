@@ -16,15 +16,15 @@
   }
   async function load(){
     status("Carregando feedbacks dos Beta Testers...");
-    const {data,error}=await sb.rpc("admin_beta_feedback_snapshot");
+    const {data,error}=await sb.rpc("beta_feedback_snapshot");
     if(error)throw error;
     state.rows=Array.isArray(data)?data:[];
     render();
     status(state.rows.length?`${state.rows.length} resposta${state.rows.length===1?"":"s"} recebida${state.rows.length===1?"":"s"}.`:"Ainda não há respostas dos Beta Testers.","success");
   }
   async function init(){
-    const {data,error}=await sb.rpc("is_admin");
-    if(error||data!==true){window.location.replace("/dashboard/");return}
+    const {data,error}=await sb.auth.getSession();
+    if(error||!data?.session?.user){window.location.replace("/login/?next="+encodeURIComponent("/beta-testers/"));return}
     $("beta-search")?.addEventListener("input",render);
     $("beta-refresh")?.addEventListener("click",()=>load().catch(e=>status("Não foi possível atualizar: "+e.message,"error")));
     await load();

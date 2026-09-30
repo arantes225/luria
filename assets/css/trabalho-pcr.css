@@ -155,3 +155,54 @@ body[data-page="trabalho_pcr"] .pcr-time-card{
     min-width:128px!important;
   }
 }
+
+/* PCR status is in a dedicated bar, with no topbar overlap or fixed viewport. */
+html body[data-page="trabalho_pcr"] .page.pcr-page>.pcr-topbar{height:auto!important;min-height:56px!important;max-height:none!important;align-items:center!important;gap:10px!important}
+html body[data-page="trabalho_pcr"] .page.pcr-page>.pcr-topbar .page-heading{display:block!important}
+html body[data-page="trabalho_pcr"] .page.pcr-page .pcr-statusbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+html body[data-page="trabalho_pcr"] .page.pcr-page .pcr-top-actions{width:auto!important;padding:0!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:12px!important;flex:1!important}
+html body[data-page="trabalho_pcr"] .page.pcr-page .pcr-time-card{min-width:128px!important;justify-items:start!important;box-shadow:none!important}
+html body[data-page="trabalho_pcr"] .page.pcr-page .pcr-cause-button{display:inline-flex!important;align-items:center;justify-content:center;min-height:44px!important;font-size:13px!important}
+.pcr-patient-details{padding:14px 16px;border:1px solid var(--border);border-radius:16px;background:var(--surface);min-width:0}
+.pcr-patient-details summary{cursor:pointer;font-size:13px;font-weight:500}
+.pcr-patient-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.pcr-patient-fields label,.pcr-history-form label{display:grid;gap:6px;min-width:0;font-size:12px}
+.pcr-care-field{grid-column:1/-1}
+.pcr-patient-fields input,.pcr-patient-fields textarea,.pcr-history-form input,.pcr-history-form textarea,.pcr-history-form select{width:100%;min-width:0;min-height:42px;padding:10px;border:1px solid var(--border);border-radius:9px;font:inherit;background:var(--surface);color:var(--text);box-sizing:border-box}
+.pcr-save-status{font-size:12px;line-height:1.5;color:var(--muted);margin:0;overflow-wrap:anywhere}
+.pcr-save-status:empty{display:none}
+.pcr-history-page{display:grid;gap:16px}
+.pcr-history-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pcr-patient-card{padding:20px;border:1px solid var(--border);border-radius:16px;background:var(--surface);min-width:0}
+.pcr-patient-card>header,.pcr-history-record>header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.pcr-patient-card h2{font-size:18px;margin:0 0 4px;font-weight:600}
+.pcr-patient-card header small,.pcr-history-record small{color:var(--muted);font-size:12px}
+.pcr-history-record{border-top:1px solid var(--border);margin-top:16px;padding-top:16px;min-width:0}
+.pcr-record-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12px;margin:12px 0}
+.pcr-record-info{white-space:pre-wrap;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.pcr-record-events{display:grid;gap:8px;margin-top:12px}
+.pcr-record-event{display:grid;grid-template-columns:72px 58px minmax(0,1fr);gap:8px;font-size:12px;padding:10px;background:var(--surface-2);border-radius:9px}
+.pcr-record-event>div{overflow-wrap:anywhere;min-width:0}
+.pcr-record-event small{display:block;margin-top:4px}
+.pcr-record-menu{position:relative;flex-shrink:0}
+.pcr-record-menu summary{cursor:pointer;list-style:none;display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--border);border-radius:9px;font-size:22px}
+.pcr-record-menu[open]>div{position:absolute;right:0;top:44px;z-index:10;display:grid;gap:4px;min-width:180px;padding:6px;border:1px solid var(--border);border-radius:10px;background:var(--surface);box-shadow:0 8px 20px rgba(0,0,0,.10)}
+.pcr-record-menu button{font:inherit;font-size:12px;text-align:left;padding:10px;background:transparent;color:var(--text);border:0;cursor:pointer}
+.pcr-record-menu button.danger{color:var(--danger,#b40000)}
+.pcr-history-form{display:grid;gap:12px;padding:20px}
+.pcr-history-form h2{margin:0;font-size:20px}
+.pcr-event-edit{display:grid;gap:6px;padding:12px;border:1px solid var(--border);border-radius:10px}
+.pcr-history-dialog{max-width:640px;width:calc(100% - 24px);border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);padding:0;max-height:90dvh;overflow:auto}
+@media(max-width:760px){
+ html.pwa-standalone body[data-page="trabalho_pcr"]{overflow:auto!important;overscroll-behavior:auto!important}
+ html.pwa-standalone body[data-page="trabalho_pcr"] .app-shell{height:auto!important;min-height:100dvh!important}
+ html.pwa-standalone body[data-page="trabalho_pcr"] .main{height:auto!important;min-height:100dvh!important;max-height:none!important;overflow:visible!important}
+ html.pwa-standalone body[data-page="trabalho_pcr"] .page.pcr-page{height:auto!important;max-height:none!important;display:flex!important;flex-direction:column!important;padding:0!important;gap:12px!important}
+ html.pwa-standalone body[data-page="trabalho_pcr"] .page.pcr-page .pcr-workspace{overflow:visible!important;min-height:0!important}
+ html.pwa-standalone body[data-page="trabalho_pcr"] .page.pcr-page .pcr-log-panel{min-height:200px!important;overflow:visible!important}
+ html.pwa-standalone body[data-page="trabalho_pcr"] .page.pcr-page .pcr-log{max-height:360px!important;overflow-y:auto!important}
+ .pcr-patient-fields{grid-template-columns:minmax(0,1fr)}
+ .pcr-care-field{grid-column:auto}
+ .pcr-patient-card{padding:16px}
+ .pcr-record-event{grid-template-columns:62px 48px minmax(0,1fr);font-size:11px}
+}

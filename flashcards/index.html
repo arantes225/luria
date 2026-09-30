@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.13-global-font">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
   <link rel="stylesheet" href="assets/css/flashcards.css?v=15.0">
-  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=39-larger-quick-metrics">
+  <link rel="stylesheet" href="assets/css/flashcards-v21.css?v=20260930-layout-pcr">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/flashcards/">
@@ -342,7 +342,9 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action{
 body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
  text-align:center!important;
 }
-</style></head>
+</style><link rel="stylesheet" href="/assets/css/study-layout.css?v=20260930">
+<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+</head>
 
 <body data-page="flashcards" class="flash-v21-booting">
 
@@ -639,7 +641,7 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
               </div>
             </div>
             <article class="flash-home-decks">
-              <div class="flash-home-decks-head"><div><span>Meus decks</span><h2>Continue de onde parou</h2></div><button class="button secondary" type="button" data-flash-home-tab="library">Ver todos →</button></div>
+              <div class="flash-home-decks-head"><div><span>Meus decks</span><h2>Continue de onde parou</h2></div></div>
               <div id="flash-home-decks-list"><div class="flash-empty">Carregando seus decks...</div></div>
             </article>
             <aside class="flash-home-summary"><span>Resumo</span><h2>Métricas rápidas</h2><div id="flash-home-metrics-slot"></div></aside>
@@ -1464,12 +1466,12 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
   <script src="assets/js/supabase.js"></script>
   <script src="assets/js/storage-router.js?v=1.0.0"></script>
   <script src="assets/js/pdf-branding.js?v=1"></script>
-  <script src="/assets/js/weekly-content.js?v=1"></script>\n  <script src="assets/js/app.js?v=17.43-short-eyebrows"></script>
+  <script src="/assets/js/weekly-content.js?v=1"></script>\n  <script src="assets/js/app.js?v=20260930-layout-pcr"></script>
   <script src="assets/js/study-mode.js?v=13.0"></script>
   <script src="assets/js/sharing.js?v=3"></script>
-  <script src="assets/js/flashcards.js?v=17.7-create-screen-fix"></script>
+  <script src="assets/js/flashcards.js?v=20260930-layout-pcr"></script>
   <script src="/assets/js/medical-icons.js?v=1.0"></script>
-  <script src="assets/js/flashcards-v21.js?v=36-create-screen-fix"></script>
+  <script src="assets/js/flashcards-v21.js?v=20260930-layout-pcr"></script>
 
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
@@ -1501,9 +1503,7 @@ document.addEventListener("DOMContentLoaded",()=>{
  const metrics=document.querySelector(".flash-quick-metrics");
  const slot=document.getElementById("flash-home-metrics-slot");
  if(metrics&&slot){const kids=[...metrics.children].filter(x=>!x.classList.contains("flash-quick-metrics-title"));kids.forEach(x=>slot.appendChild(x))}
- const homeDecks=document.getElementById("flash-home-decks-list"),library=document.getElementById("library-decks");
- const sync=()=>{if(!homeDecks||!library)return;const cards=[...library.children].slice(0,3);homeDecks.innerHTML=cards.length?cards.map(x=>x.outerHTML).join(""):'<div class="flash-empty">Nenhum deck ainda.</div>'};
- new MutationObserver(sync).observe(library||document.body,{childList:true,subtree:false});sync();
+ // Home decks are rendered with their own handlers by flashcards-v21.js.
  document.querySelectorAll("[data-flash-home-tab]").forEach(b=>b.addEventListener("click",()=>{const tab=b.dataset.flashHomeTab;document.querySelector('[data-flash-tab="'+tab+'"]')?.click()}));
 });
 </script>

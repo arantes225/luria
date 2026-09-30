@@ -4656,7 +4656,7 @@ function renderWeeklyOverview() {
           topicsOnDate(date).filter(t => classify(t,null)===key).length
           + eventsOnDate(date).filter(e => classify(null,e)===key).length
           + (key === "errors" ? errorItemsOnDate(date).length : 0);
-        return '<div class="week-matrix-cell" data-planner-date="'+toISODateSchedule(date)+'">'+(count ? '<span class="week-dot kind-'+key+'" title="'+count+' atividade(s)"></span>' : '<span class="week-dot empty"></span>')+'</div>';
+        return '<div class="week-matrix-cell" data-planner-date="'+toISODateSchedule(date)+'" aria-label="'+label+', '+date.toLocaleDateString("pt-BR")+': '+count+' atividade(s)">'+(count ? '<span class="week-dot kind-'+key+'" aria-hidden="true"></span><span class="week-activity-count">'+count+'</span>' : '<span class="week-activity-count empty">0</span>')+'</div>';
       }).join("");
       const categoryIcon = window.LuriaIcon ? window.LuriaIcon(iconName, "week-category-svg") : '<span class="week-legend kind-'+key+'"></span>';
       return '<div class="week-matrix-label week-category-label"><span class="week-category-icon kind-'+key+'">'+categoryIcon+'</span><strong>'+label+'</strong></div>'+cells;

@@ -7338,13 +7338,24 @@ async function loadSystemFlashcards() {
   return rows;
 }
 
+async function loadAllFlashRows(buildQuery) {
+  const rows = [];
+  for (let from = 0; ; from += 1000) {
+    const result = await buildQuery(from);
+    if (result.error) return result;
+    const batch = result.data || [];
+    rows.push(...batch);
+    if (batch.length < 1000) return {data:rows,error:null};
+  }
+}
+
 async function loadLibrary() {
   const [
     ownedResult,
     systemCards,
     sharedCards
   ] = await Promise.all([
-    flashSb
+    loadAllFlashRows(from => flashSb
       .from("flashcards")
       .select(`
         id,
@@ -7365,7 +7376,7 @@ async function loadLibrary() {
       .eq("user_id", flashUser.id)
       .eq("library_scope", "personal")
       .order("created_at", { ascending: false })
-      .limit(1000),
+      .order("id", { ascending: true }).range(from, from + 999)),
     loadSystemFlashcards(),
     loadSharedFlashcards()
   ]);

@@ -11,9 +11,11 @@
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="/assets/css/style.css?v=16.6">
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=10">
-  <link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=3-pwa-causes">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=77-cronograma-cachefix">
+  <link rel="stylesheet" href="/assets/css/trabalho-pcr.css?v=20260930-layout-pcr">
+<link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+<link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
 </head>
 <body data-page="trabalho_pcr">
   <div class="app-shell">
@@ -29,6 +31,10 @@
             <h1>PCR</h1>
           </div>
 
+
+        </header>
+
+        <section class="pcr-statusbar" aria-label="Tempo e causas reversíveis">
           <div class="pcr-top-actions">
             <button class="pcr-cause-button" id="pcr-causes" type="button">5H + 5T</button>
             <div class="pcr-time-card" aria-label="Tempo de parada">
@@ -37,8 +43,16 @@
               <span id="pcr-cycle">Ciclo 1 · 02:00</span>
             </div>
           </div>
-        </header>
-
+          <a class="button secondary" href="/trabalho/pcr/historico/">Histórico</a>
+        </section>
+        <details class="pcr-patient-details"><summary>Paciente e informações do atendimento</summary>
+          <div class="pcr-patient-fields">
+            <label><span>Iniciais do paciente</span><input id="pcr-patient-initials" maxlength="20" autocomplete="off" placeholder="Ex.: A.B.C."></label>
+            <label><span>Data de nascimento</span><input id="pcr-patient-birth" type="date"></label>
+            <label class="pcr-care-field"><span>Informações do atendimento</span><textarea id="pcr-care-info" maxlength="4000" rows="3" placeholder="Local, contexto e informações relevantes"></textarea></label>
+          </div>
+        </details>
+        <p id="pcr-save-status" class="pcr-save-status" role="status" aria-live="polite"></p>
         <section class="pcr-controlbar" aria-label="Configurações da PCR">
           <div class="pcr-segmented" role="group" aria-label="Faixa etária">
             <button class="active" type="button" data-pcr-mode="adult">Adulto</button>
@@ -207,9 +221,10 @@
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=17.20-work-fixed-footer"></script>
+  <script src="/assets/js/app.js?v=20260930-layout-pcr"></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf/dist/jspdf.umd.min.js"></script>
-  <script src="/assets/js/trabalho-pcr.js?v=10-amiodarone-sequence"></script>
+  <script src="/assets/js/pcr-store.js?v=20260930"></script>
+  <script src="/assets/js/trabalho-pcr.js?v=20260930-layout-pcr"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>

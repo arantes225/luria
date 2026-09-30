@@ -1169,6 +1169,7 @@ const PAGE_INFO = {
   trabalho_plantoes: { title: "Escala", eyebrow: "Plantões e horários", helper: "Visualize e organize seus plantões." },
   trabalho_passometro: { title: "Passômetro", eyebrow: "Passos e evolução", helper: "Estruture a passagem de plantão com clareza." },
   trabalho_prontuario_rapido: { title: "Cola rápida", eyebrow: "Consulta rápida", helper: "Tenha informações essenciais à mão." },
+  trabalho_pcr_historico: { title: "Histórico de PCR", eyebrow: "Atendimentos", helper: "Pacientes, registros e linhas do tempo." },
   trabalho_pcr: { title: "Parada cardiorrespiratória", eyebrow: "PCR e condutas", helper: "Consulte rapidamente passos e condutas críticas." },
   trabalho_financeiro: { title: "Financeiro", eyebrow: "Ganhos e controle", helper: "Acompanhe receitas e organização dos plantões." },
   trabalho_calculadora: { title: "Calculadoras", eyebrow: "Cálculos clínicos", helper: "Faça cálculos clínicos de forma rápida e prática." },
@@ -1431,6 +1432,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
         <a class="nav-link ${["trabalho_gestor_plantoes","trabalho_plantoes","trabalho_divisor_plantao","trabalho_financeiro"].includes(page) ? "active" : ""}" href="/trabalho/gestor-plantoes/">
           <span class="nav-icon">▦</span><span>Gestor de Plantões</span>
         </a>
+        <a class="nav-link" href="/trabalho/pcr/historico/"><span class="nav-icon">◷</span><span>Histórico de PCR</span></a>
+        <span id="admin-nav-slot"></span>
       ` : `
         <a class="nav-link ${page === "dashboard" ? "active" : ""}" href="/dashboard/">
           <span class="nav-icon">${luriaIcon("dashboard")}</span><span>Dashboard</span>
@@ -6112,68 +6115,26 @@ async function verificarAcessoAdmin() {
 }
 
 
-async function prepararAdminNavigation(
-  acessoAdmin = null
-) {
-  const slot =
-    document.getElementById(
-      "admin-nav-slot"
-    );
-
-  if (!slot) {
-    return false;
-  }
-
-  const isAdmin =
-    typeof acessoAdmin === "boolean"
-      ? acessoAdmin
-      : await verificarAcessoAdmin();
-
-  if (!isAdmin) {
-    slot.replaceChildren();
-    return false;
-  }
-
-  const link =
-    document.createElement(
-      "a"
-    );
-
-  link.id =
-    "admin-nav-link";
-
-  link.className =
-    `nav-link ${page === "admin" ? "active" : ""}`;
-
-  link.href =
-    "/admin/";
-
-  link.innerHTML =
-    '<span class="nav-icon">◆</span><span>Admin</span>';
-
-  const betaLink =
-    document.createElement("a");
-
-  betaLink.id =
-    "beta-testers-nav-link";
-
-  betaLink.className =
-    `nav-link ${page === "beta_testers" ? "active" : ""}`;
-
-  betaLink.href =
-    "/beta-testers/";
-
-  betaLink.innerHTML =
-    `<span class="nav-icon">${luriaIcon("users")}</span><span>Beta Testers</span>`;
-
-  slot.replaceWith(
-    link,
-    betaLink
-  );
-
+async function prepararAdminNavigation(acessoAdmin = null) {
+  const slot = document.getElementById("admin-nav-slot");
+  if (!slot) return false;
+  const betaLink = document.createElement("a");
+  betaLink.id = "beta-testers-nav-link";
+  betaLink.className = `nav-link ${page === "beta_testers" ? "active" : ""}`;
+  betaLink.href = "/beta-testers/";
+  betaLink.innerHTML = `<span class="nav-icon">${luriaIcon("users")}</span><span>Beta Testers</span>`;
+  // Beta feedback is available to every signed-in user, regardless of admin role.
+  slot.replaceChildren(betaLink);
+  const isAdmin = typeof acessoAdmin === "boolean" ? acessoAdmin : await verificarAcessoAdmin();
+  if (!isAdmin) return false;
+  const link = document.createElement("a");
+  link.id = "admin-nav-link";
+  link.className = `nav-link ${page === "admin" ? "active" : ""}`;
+  link.href = "/admin/";
+  link.innerHTML = '<span class="nav-icon">◆</span><span>Admin</span>';
+  slot.prepend(link);
   return true;
 }
-
 
 function carregarOnboardingGlobal() {
   if (
@@ -6297,7 +6258,7 @@ async function iniciarApp() {
 
   // Dashboard mantém o box de título. No modo Trabalho, os títulos de página foram removidos.
   if (
-    page === "dashboard"
+    (page === "dashboard" || (page.startsWith("trabalho_") && !document.querySelector(".pcr-workspace")))
     && !document.querySelector(".luria-page-spotlight")
   ) {
     const pageRoot = document.querySelector(".main .page");
@@ -6318,12 +6279,7 @@ async function iniciarApp() {
     }
   }
 
-  // Modo Trabalho sem títulos de página: remove eyebrow, título e helper, preservando controles do topo.
-  if (page.startsWith("trabalho_")) {
-    document.querySelectorAll(".luria-page-spotlight, .schedule-top-spotlight").forEach((el) => el.remove());
-    const heading = document.querySelector(".topbar .page-heading");
-    if (heading) heading.style.display = "none";
-  }
+  // Work shares the Study heading; the PCR workspace keeps its specialized header.
 
   document
     .querySelectorAll("[data-page-title]")

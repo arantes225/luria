@@ -1,12 +1,22 @@
-(() => {
-  const startedAt = Date.now();
-  let stoppedAt = null;
-  let mode = "adult";
-  let selectedRhythm = null;
+(async () => {
+  const store = window.LuriaPCRStore;
+  let owner;
+  try { owner = await store.user(); } catch {
+    location.replace("/login/?next=" + encodeURIComponent("/trabalho/pcr/executar/"));
+    return;
+  }
+  const draft = store.readDraft(owner.id);
+  const recordId = draft?.id || crypto.randomUUID();
+  const patientId = draft?.patient_id || crypto.randomUUID();
+  const startedAt = draft ? new Date(draft.started_at).getTime() : Date.now();
+  let stoppedAt = draft?.ended_at ? new Date(draft.ended_at).getTime() : null;
+  let saving = false;
+  let mode = draft?.mode || "adult";
+  let selectedRhythm = draft?.rhythm || null;
   let shockable = false;
-  let shockCount = 0;
-  let adultAmiodaroneDoses = 0;
-  let metronomeOn = true;
+  let shockCount = draft?.shock_count || 0;
+  let adultAmiodaroneDoses = draft?.adult_amiodarone_doses || 0;
+  let metronomeOn = !stoppedAt;
   let audioReady = false;
   let audioCtx = null;
   let audioEl = null;
@@ -14,7 +24,7 @@
   let beatTimer = null;
   let lastCycle = 1;
   const BPM = 110;
-  const timelineEntries = [];
+  const timelineEntries = draft?.events ? [...draft.events] : [];
   const beatMs = Math.round(60000 / BPM);
 
   const $ = (id) => document.getElementById(id);
@@ -61,40 +71,68 @@
     }).format(new Date());
   }
 
-  function addLog(action, detail = "") {
-    const empty = logEl.querySelector(".pcr-log-empty");
-    if (empty) empty.remove();
-
+  function renderEntry(entry) {
+    logEl.querySelector(".pcr-log-empty")?.remove();
     const item = document.createElement("div");
     item.className = "pcr-log-item";
-
-    const time = document.createElement("time");
-    time.textContent = clockNow();
-
-    const elapsed = document.createElement("small");
-    elapsed.textContent = "+" + mmss(elapsedSeconds());
-
+    const time = document.createElement("time"); time.textContent = entry.clock;
+    const elapsed = document.createElement("small"); elapsed.textContent = entry.elapsed;
     const copy = document.createElement("div");
-    const strong = document.createElement("strong");
-    strong.textContent = action;
-    copy.appendChild(strong);
-    if (detail) {
-      const small = document.createElement("small");
-      small.style.display = "block";
-      small.style.marginTop = "2px";
-      small.textContent = detail;
-      copy.appendChild(small);
+    const strong = document.createElement("strong"); strong.textContent = entry.action;
+    copy.append(strong);
+    if (entry.detail) {
+      const detail = document.createElement("small"); detail.textContent = entry.detail;
+      detail.style.display = "block"; copy.append(detail);
     }
+    item.append(time, elapsed, copy); logEl.prepend(item);
+  }
 
-    item.append(time, elapsed, copy);
-    logEl.prepend(item);
+  function payload() {
+    return {
+      id: recordId, patient_id: patientId, user_id: owner.id,
+      initials: $("pcr-patient-initials").value.trim().toUpperCase(),
+      birth_date: $("pcr-patient-birth").value || null,
+      care_info: $("pcr-care-info").value.trim(),
+      started_at: new Date(startedAt).toISOString(),
+      ended_at: stoppedAt ? new Date(stoppedAt).toISOString() : null,
+      mode, weight: safeWeight(), shock_count: shockCount, rhythm: selectedRhythm,
+      adult_amiodarone_doses: adultAmiodaroneDoses, events: [...timelineEntries]
+    };
+  }
 
-    timelineEntries.unshift({
-      clock: time.textContent,
-      elapsed: elapsed.textContent,
-      action,
-      detail
-    });
+  function persistDraft() {
+    try { store.writeDraft(owner.id, payload()); return true; }
+    catch (error) {
+      $("pcr-save-status").textContent = "Não foi possível guardar uma cópia no aparelho. Mantenha esta página aberta e tente salvar novamente.";
+      console.warn("Rascunho da PCR:", error);
+      return false;
+    }
+  }
+
+  function addLog(action, detail = "") {
+    if (stoppedAt && action !== "RCE / ROSC" && action !== "Linha do tempo exportada") return;
+    const entry = {clock:clockNow(),elapsed:"+"+mmss(elapsedSeconds()),action,detail};
+    timelineEntries.unshift(entry); renderEntry(entry); persistDraft();
+  }
+
+  function freezeControls() {
+    document.querySelectorAll('[data-pcr-mode],.pcr-rhythm,.team-position,[data-log-action],[data-cause],#pcr-drugs button,#pcr-weight,#pcr-shock,#pcr-log-cpr,#pcr-clear-log,#pcr-add-note').forEach(button => { button.disabled = true; });
+  }
+
+  async function saveAndOpenHistory() {
+    if (saving) return;
+    saving = true;
+    const btn = $("pcr-rosc");
+    btn.disabled = true; btn.textContent = "Salvando PCR…";
+    $("pcr-save-status").textContent = "Salvando seu atendimento…";
+    persistDraft();
+    try {
+      await store.save(payload());
+      location.assign("/trabalho/pcr/historico/?record=" + encodeURIComponent(recordId));
+    } catch (error) {
+      $("pcr-save-status").textContent = "Não foi possível salvar: " + error.message + ". A linha do tempo continua nesta página. Tente novamente.";
+      btn.disabled = false; btn.textContent = "Tentar salvar novamente";
+    } finally { saving = false; }
   }
 
   function safeWeight() {
@@ -186,10 +224,10 @@
         if (mode === "adult" && drug.action === "Amiodarona") {
           if (adultAmiodaroneDoses === 0) {
             adultAmiodaroneDoses = 1;
-            renderDrugs();
+            renderDrugs(); persistDraft();
           } else if (adultAmiodaroneDoses === 1) {
             adultAmiodaroneDoses = 2;
-            renderDrugs();
+            renderDrugs(); persistDraft();
           }
         }
       });
@@ -230,7 +268,7 @@
     const remain = 120 - inside;
     cycleEl.textContent = "Ciclo " + cycle + " · " + mmss(remain === 120 ? 120 : remain);
 
-    if (cycle !== lastCycle) {
+    if (!stoppedAt && cycle !== lastCycle) {
       lastCycle = cycle;
       addLog("Reavaliar ritmo / trocar compressor", "Novo ciclo de 2 minutos");
       if (audioReady && metronomeOn) {
@@ -302,6 +340,7 @@
   }
 
   function beep(freq = 760, duration = 0.05) {
+    if (stoppedAt) return;
     if (audioUnlocked && audioEl) {
       try {
         audioEl.currentTime = 0;
@@ -326,7 +365,7 @@
   }
 
   function tickMetronome() {
-    if (!metronomeOn) return;
+    if (!metronomeOn || stoppedAt) return;
     metroBtn.classList.add("tick");
     setTimeout(() => metroBtn.classList.remove("tick"), 100);
     if (audioReady) beep(620, 0.03);
@@ -338,6 +377,7 @@
   }
 
   async function unlockAudio() {
+    if (stoppedAt) return false;
     let htmlOk = false;
     let ctxOk = false;
 
@@ -361,11 +401,13 @@
 
     audioReady = htmlOk || ctxOk;
 
+    if (stoppedAt) { audioEl?.pause(); return false; }
     if (audioReady) {
       metroBtn.querySelector("small").textContent = "110 bpm · som ativo";
       if (htmlOk) {
         // second immediate audible confirmation
         setTimeout(() => {
+          if (stoppedAt) return;
           try {
             audioEl.currentTime = 0;
             audioEl.play().catch(() => {});
@@ -456,6 +498,7 @@
   });
 
   metroBtn.addEventListener("click", async () => {
+    if (stoppedAt) return;
     if (!audioReady) {
       metronomeOn = true;
       metroBtn.classList.add("active");
@@ -492,21 +535,21 @@
   });
 
   $("pcr-log-cpr").addEventListener("click", () => addLog("Troca de compressor", "Novo compressor assumiu RCP"));
-  $("pcr-rosc").addEventListener("click", () => {
-    if (stoppedAt) return;
-
-    stoppedAt = Date.now();
-    metronomeOn = false;
-    metroBtn.classList.remove("active");
-    metroBtn.setAttribute("aria-pressed", "false");
-    metroBtn.querySelector("small").textContent = "Pausado após RCE / ROSC";
-
-    addLog("RCE / ROSC", "Retorno da circulação espontânea · cronômetro pausado");
-    updateTimer();
-
-    const roscBtn = $("pcr-rosc");
-    roscBtn.disabled = true;
-    roscBtn.textContent = "✓ RCE / ROSC registrado";
+  $("pcr-rosc").addEventListener("click", async () => {
+    if (!stoppedAt) {
+      stoppedAt = Date.now();
+      freezeControls();
+      metronomeOn = false;
+      clearInterval(beatTimer);
+      audioEl?.pause();
+      if (audioCtx?.state === "running") audioCtx.suspend().catch(() => {});
+      metroBtn.classList.remove("active"); metroBtn.disabled = true;
+      metroBtn.setAttribute("aria-pressed", "false");
+      metroBtn.querySelector("small").textContent = "Pausado após RCE / ROSC";
+      addLog("RCE / ROSC", "Retorno da circulação espontânea · cronômetro pausado");
+      updateTimer();
+    }
+    await saveAndOpenHistory();
   });
 
   $("pcr-causes").addEventListener("click", () => causesDialog.showModal());
@@ -535,246 +578,52 @@
   });
 
   $("pcr-clear-log").addEventListener("click", () => {
+    if (stoppedAt || !confirm("Limpar os eventos da linha do tempo?")) return;
     timelineEntries.length = 0;
+    persistDraft();
     logEl.innerHTML = '<div class="pcr-log-empty">Nenhum evento registrado após a limpeza.</div>';
   });
 
-  $("pcr-export-log").addEventListener("click", async () => {
-    if (!timelineEntries.length) {
-      alert("Ainda não há eventos na linha do tempo para exportar.");
-      return;
-    }
-
-    const JsPDF = window.jspdf?.jsPDF;
-    if (!JsPDF) {
-      alert("Não foi possível carregar o gerador de PDF. Verifique a conexão e tente novamente.");
-      return;
-    }
-
-    const imageToDataUrl = async (src, opacity = 1) => {
-      try {
-        const response = await fetch(src, { cache: "force-cache" });
-        if (!response.ok) return null;
-        const blob = await response.blob();
-        const bitmap = await createImageBitmap(blob);
-        const canvas = document.createElement("canvas");
-        const size = 700;
-        canvas.width = size;
-        canvas.height = size;
-        const ctx = canvas.getContext("2d");
-        if (!ctx) return null;
-        ctx.clearRect(0, 0, size, size);
-        ctx.globalAlpha = opacity;
-        const ratio = Math.min(size / bitmap.width, size / bitmap.height);
-        const w = bitmap.width * ratio;
-        const h = bitmap.height * ratio;
-        ctx.drawImage(bitmap, (size - w) / 2, (size - h) / 2, w, h);
-        bitmap.close?.();
-        return canvas.toDataURL("image/png");
-      } catch {
-        return null;
-      }
-    };
-
-    const doc = new JsPDF({ unit: "mm", format: "a4" });
-    const ordered = [...timelineEntries].reverse();
-    const now = new Date();
-    const startedDate = new Date(startedAt);
-    const endDate = stoppedAt ? new Date(stoppedAt) : null;
-    const duration = mmss(elapsedSeconds());
-    const pageWidth = doc.internal.pageSize.getWidth();
-    const pageHeight = doc.internal.pageSize.getHeight();
-    const margin = 14;
-    const usable = pageWidth - margin * 2;
-    const watermark = await imageToDataUrl("/assets/img/logos/logo-icone-original.png", 0.07);
-    let y = 18;
-
-    const formatDate = (date) => new Intl.DateTimeFormat("pt-BR", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric"
-    }).format(date);
-
-    const formatTime = (date) => new Intl.DateTimeFormat("pt-BR", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit"
-    }).format(date);
-
-    const addWatermark = () => {
-      if (!watermark) return;
-      const size = 118;
-      doc.addImage(
-        watermark,
-        "PNG",
-        (pageWidth - size) / 2,
-        (pageHeight - size) / 2 + 8,
-        size,
-        size,
-        undefined,
-        "FAST"
-      );
-    };
-
-    const addPageHeader = (firstPage = false) => {
-      addWatermark();
-
-      doc.setFillColor(24, 72, 136);
-      doc.rect(0, 0, pageWidth, 4, "F");
-
-      doc.setTextColor(24, 72, 136);
-      doc.setFont("helvetica", "bold");
-      doc.setFontSize(firstPage ? 12 : 9);
-      doc.text("LURIA", margin, firstPage ? 14 : 11);
-
-      if (!firstPage) {
-        doc.setTextColor(75, 75, 75);
-        doc.setFont("helvetica", "normal");
-        doc.text("Registro de PCR", pageWidth - margin, 11, { align: "right" });
-      }
-
-      doc.setTextColor(25, 25, 25);
-    };
-
-    const ensureSpace = (needed = 12) => {
-      if (y + needed <= pageHeight - 16) return;
-      doc.addPage();
-      addPageHeader(false);
-      y = 18;
-    };
-
-    addPageHeader(true);
-
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(21);
-    doc.setTextColor(20, 32, 48);
-    doc.text("REGISTRO DE PCR", margin, 25);
-
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(8.5);
-    doc.setTextColor(92, 103, 116);
-    doc.text("Parada cardiorrespiratória · registro cronológico assistencial", margin, 31);
-
-    y = 39;
-
-    const meta = [
-      ["Data", formatDate(startedDate)],
-      ["Hora de início", formatTime(startedDate)],
-      ["RCE / encerramento", endDate ? formatTime(endDate) : "PCR em andamento"],
-      ["Duração registrada", duration],
-      ["Perfil", mode === "adult" ? "Adulto" : "Pediátrico"],
-      ["Peso", safeWeight() ? safeWeight() + " kg" : "Não informado"],
-      ["Choques", String(shockCount)],
-      ["Ritmo selecionado", selectedRhythm || "Não registrado"]
-    ];
-
-    const metaGap = 4;
-    const metaCols = 2;
-    const cardW = (usable - metaGap) / metaCols;
-    const cardH = 13;
-
-    meta.forEach((item, index) => {
-      const col = index % metaCols;
-      const row = Math.floor(index / metaCols);
-      const x = margin + col * (cardW + metaGap);
-      const yy = y + row * (cardH + metaGap);
-
-      doc.setFillColor(246, 248, 251);
-      doc.setDrawColor(224, 229, 236);
-      doc.roundedRect(x, yy, cardW, cardH, 2, 2, "FD");
-
-      doc.setTextColor(105, 113, 125);
-      doc.setFont("helvetica", "bold");
-      doc.setFontSize(6.7);
-      doc.text(item[0].toUpperCase(), x + 3, yy + 4.2);
-
-      doc.setTextColor(28, 38, 52);
-      doc.setFont("helvetica", "normal");
-      doc.setFontSize(9);
-      doc.text(String(item[1]), x + 3, yy + 9.6);
-    });
-
-    y += 4 * (cardH + metaGap) + 3;
-
-    doc.setTextColor(20, 32, 48);
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(12);
-    doc.text("Linha do tempo", margin, y);
-    y += 6;
-
-    doc.setFillColor(24, 72, 136);
-    doc.roundedRect(margin, y, usable, 8, 1.5, 1.5, "F");
-    doc.setTextColor(255, 255, 255);
-    doc.setFont("helvetica", "bold");
-    doc.setFontSize(7.6);
-    doc.text("HORÁRIO", margin + 2, y + 5.3);
-    doc.text("PCR", margin + 31, y + 5.3);
-    doc.text("EVENTO / DETALHES", margin + 50, y + 5.3);
-    y += 11;
-
-    ordered.forEach((entry, index) => {
-      const detail = entry.detail ? entry.detail.replace(/\s+/g, " ").trim() : "";
-      const eventText = detail ? entry.action + " — " + detail : entry.action;
-      const lines = doc.splitTextToSize(eventText, usable - 52);
-      const rowHeight = Math.max(9, lines.length * 4 + 3);
-
-      ensureSpace(rowHeight + 2);
-
-      if (index % 2 === 0) {
-        doc.setFillColor(249, 250, 252);
-        doc.rect(margin, y, usable, rowHeight, "F");
-      }
-
-      doc.setDrawColor(229, 232, 237);
-      doc.line(margin, y + rowHeight, margin + usable, y + rowHeight);
-
-      doc.setFont("helvetica", "normal");
-      doc.setFontSize(8);
-      doc.setTextColor(77, 86, 99);
-      doc.text(entry.clock, margin + 2, y + 5);
-      doc.text(entry.elapsed, margin + 31, y + 5);
-
-      doc.setTextColor(25, 25, 25);
-      doc.text(lines, margin + 50, y + 5);
-
-      y += rowHeight;
-    });
-
-    ensureSpace(24);
-    y += 7;
-
-    doc.setDrawColor(215, 220, 227);
-    doc.line(margin, y, margin + usable, y);
-    y += 6;
-
-    doc.setFont("helvetica", "normal");
-    doc.setFontSize(7.2);
-    doc.setTextColor(100, 106, 116);
-    doc.text(
-      "Documento gerado em " + formatDate(now) + " às " + formatTime(now) + ".",
-      margin,
-      y
-    );
-    y += 4;
-
-    doc.setFont("helvetica", "italic");
-    const footer = doc.splitTextToSize(
-      "Registro gerado pelo LURIA a partir dos eventos inseridos durante a PCR. Ferramenta de apoio; conferir o registro clínico institucional.",
-      usable
-    );
-    doc.text(footer, margin, y);
-
-    const stamp = now.toISOString().replace(/[:.]/g, "-");
-    doc.save("luria-registro-pcr-" + stamp + ".pdf");
-
-    addLog("Linha do tempo exportada", "PDF gerado");
+  $("pcr-export-log").addEventListener("click", () => {
+    try {
+      const record = payload();
+      store.pdf(record, record);
+    } catch (error) { $("pcr-save-status").textContent = error.message; }
   });
 
+  $("pcr-patient-initials").value = draft?.initials || "";
+  $("pcr-patient-birth").value = draft?.birth_date || "";
+  $("pcr-care-info").value = draft?.care_info || "";
+  weightEl.value = draft?.weight || "";
+  ["pcr-patient-initials","pcr-patient-birth","pcr-care-info","pcr-weight"].forEach(id => $(id).addEventListener("input", persistDraft));
+  if (draft) [...timelineEntries].reverse().forEach(renderEntry);
+  document.querySelectorAll("[data-pcr-mode]").forEach(btn => btn.classList.toggle("active", btn.dataset.pcrMode === mode));
+  pedsCauseNote.hidden = mode !== "pediatric"; pwaCauseNote.hidden = mode !== "pediatric";
+  ventilationEl.textContent = mode === "adult" ? "1 ventilação a cada 6 s com compressões contínuas." : "Com via aérea avançada: 1 ventilação a cada 2–3 s com compressões contínuas.";
+  if (selectedRhythm) {
+    const rhythm = [...document.querySelectorAll(".pcr-rhythm")].find(b => b.dataset.rhythm === selectedRhythm);
+    if (rhythm) { rhythm.classList.add("selected"); shockable = rhythm.dataset.shockable === "true"; }
+    selectedRhythmLabel.textContent = selectedRhythm;
+    rhythmState.textContent = shockable ? "Chocável" : "Não chocável";
+    rhythmState.className = "pcr-state " + (shockable ? "shock" : "no-shock");
+  }
+  shockBtn.disabled = stoppedAt || !shockable;
+  shockCountEl.textContent = shockCount + " choques registrados";
+  if (stoppedAt) {
+    freezeControls();
+    $("pcr-rosc").textContent = "Tentar salvar novamente";
+    metroBtn.disabled = true;
+    metroBtn.classList.remove("active"); metroBtn.setAttribute("aria-pressed","false");
+    $("pcr-save-status").textContent = "PCR encerrada aguardando salvamento. Sua linha do tempo foi recuperada.";
+  }
+
   renderDrugs();
+  if (stoppedAt) freezeControls();
   updateEnergy();
-  addLog("Início da PCR", "Cronômetro iniciado automaticamente");
+  if (!draft || !timelineEntries.length) addLog("Início da PCR", "Cronômetro iniciado automaticamente");
   updateTimer();
   setInterval(updateTimer, 1000);
   metroBtn.querySelector("small").textContent = "110 bpm · toque para ativar som";
-  startMetronomeLoop();
+  if (!stoppedAt) startMetronomeLoop();
+  persistDraft();
 })();

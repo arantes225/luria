@@ -967,3 +967,29 @@
     position:absolute!important;
   }
 }
+
+/* Friends follows the page container and card rhythm used in Study. */
+body[data-page="amigos"] .main .friends-page{display:grid!important;gap:16px!important;min-width:0!important;width:100%!important;box-sizing:border-box!important}
+body[data-page="amigos"] .friends-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+body[data-page="amigos"] :is(.friends-card,.studyrats-card){padding:20px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 5%,transparent);min-width:0}
+body[data-page="amigos"] .friends-card h2{font-size:18px;font-weight:600;margin-bottom:6px}
+body[data-page="amigos"] .friends-card p{font-size:12px;line-height:1.5}
+body[data-page="amigos"] :is(.friend-copy strong,.inbox-main strong){font-size:13px}
+body[data-page="amigos"] :is(.friend-copy small,.friends-empty,.friends-status){font-size:11px;line-height:1.4}
+body[data-page="amigos"] .friends-actions .button{font-size:11px;min-height:36px}
+body[data-page="amigos"] :is(.friend-row,.inbox-row){padding:12px;flex-wrap:wrap;gap:12px}
+body[data-page="amigos"] .friend-main{flex:1 1 150px}
+body[data-page="amigos"] .friend-avatar{flex:0 0 36px}
+body[data-page="amigos"] .friends-add-row input{min-width:0;font:inherit;font-size:13px}
+body[data-page="amigos"] .friends-add-row .button{min-height:40px;font-size:12px}
+body[data-page="amigos"] .studyrats-head h2{font-size:22px;font-weight:600}
+@media(max-width:760px){
+ body[data-page="amigos"] .main .friends-page .friends-grid{grid-template-columns:minmax(0,1fr)!important}
+ body[data-page="amigos"] .main .friends-page :is(.friends-card,.studyrats-card){padding:16px!important}
+ body[data-page="amigos"] .main .friends-page :is(.studyrats-home-grid,.studyrats-fields,.studyrats-rat-picker){grid-template-columns:minmax(0,1fr)!important;min-width:0!important}
+ body[data-page="amigos"] .main .friends-page .studyrats-rat-picker-options{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ body[data-page="amigos"] .main .friends-page .studyrats-rat-picker-controls{min-width:0!important}
+ body[data-page="amigos"] .main .friends-page .studyrats-create-actions{flex-wrap:wrap}
+ body[data-page="amigos"] .main .friends-page .studyrats-create-actions .button{flex:1}
+}
+@media(max-width:380px){body[data-page="amigos"] .friends-add-row{grid-template-columns:minmax(0,1fr)}}

@@ -1895,3 +1895,19 @@ body[data-page="flashcards"] .flash-quick-metrics-grid{
 
 /* v60 — ações principais um pouco menores e alinhadas ao padrão do Caderno/Questões */
 body[data-page="flashcards"] .flash-tab{font-size:9px!important;font-weight:850!important}
+
+/* Home decks remain operable and scroll inside their own container. */
+body[data-page="flashcards"] .page .flash-home-decks{min-width:0!important;overflow:hidden!important}
+body[data-page="flashcards"] .page #flash-home-decks-list{min-width:0!important;overflow:hidden!important}
+body[data-page="flashcards"] .page .flash-review-hub{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;min-width:0!important}
+body[data-page="flashcards"] .page .flash-review-hub>h2{display:none!important}
+body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards{display:flex!important;gap:12px!important;overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;padding:4px 2px 14px!important;scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface-2);overscroll-behavior-x:contain}
+body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards::-webkit-scrollbar{height:8px}
+body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards::-webkit-scrollbar-track{background:var(--surface-2);border-radius:8px}
+body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards::-webkit-scrollbar-thumb{background:var(--accent);border-radius:8px}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck{flex:0 0 210px!important;width:210px!important;min-height:170px!important;position:relative!important;background:var(--surface)!important;border:1px solid var(--border)!important;box-shadow:none!important;transform:none!important;transition:none!important;animation:none!important;overflow:hidden!important}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck:before,
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck:after{content:none!important;display:none!important}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck:hover{box-shadow:none!important;transform:none!important}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-review{position:absolute!important;inset:0!important;z-index:5!important;width:100%!important;height:100%!important;background:transparent!important;border:0!important;cursor:pointer!important}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck:focus-within{outline:2px solid var(--accent);outline-offset:-3px}
