@@ -6660,7 +6660,7 @@ async function loadSharedFlashcards() {
   const {
     data,
     error
-  } = await flashSb
+  } = await loadAllFlashRows((from) => flashSb
     .from("flashcard_shared_state")
     .select(`
       flashcard_id,
@@ -6685,7 +6685,8 @@ async function loadSharedFlashcards() {
         created_at
       )
     `)
-    .eq("user_id", flashUser.id);
+    .eq("user_id", flashUser.id)
+    .order("flashcard_id").range(from, from + 999));
 
   if (error) {
     console.warn("Não foi possível carregar flashcards compartilhados:", error.message);

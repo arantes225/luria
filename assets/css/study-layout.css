@@ -49,3 +49,21 @@ body[data-page] .page #qs-daily-card .qs-home-primary svg{display:none!important
  body[data-page] .page :is(.error-home-action-copy,.flash-home-action>span) strong{font-size:18px!important;overflow-wrap:anywhere}
  body[data-page] .page :is(.error-home-action-copy,.flash-home-action>span) small{font-size:12px!important}
 }
+
+/* Keep action tracks aligned despite page-specific legacy rules. */
+html body[data-page] .page :is(.error-home-actions,.flash-home-actions) :is(.error-home-action,.flash-home-action){
+ display:grid!important;grid-template-columns:48px minmax(0,1fr) 34px!important;grid-template-rows:1fr!important;
+ justify-content:stretch!important;justify-items:stretch!important;align-items:center!important;width:100%!important;box-sizing:border-box!important;
+}
+html body[data-page] .page :is(.error-home-action,.flash-home-action)>:is(.error-home-action-icon,i){
+ grid-column:1!important;grid-row:1!important;justify-self:start!important;position:static!important;margin:0!important;
+}
+html body[data-page] .page :is(.error-home-action,.flash-home-action)>:is(.error-home-action-copy,span){
+ grid-column:2!important;grid-row:1!important;justify-self:stretch!important;align-items:flex-start!important;text-align:left!important;min-width:0!important;margin:0!important;
+}
+html body[data-page] .page :is(.error-home-action,.flash-home-action)>:is(.error-home-action-arrow,b){
+ grid-column:3!important;grid-row:1!important;justify-self:end!important;position:static!important;inset:auto!important;margin:0!important;transform:none!important;
+}
+html body[data-page="flashcards"]:not(.flash-review-session-active) .page .flash-section[data-flash-section="review"].active #review-launcher{
+ display:flex!important;visibility:visible!important;
+}
