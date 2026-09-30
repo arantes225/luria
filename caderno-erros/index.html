@@ -385,6 +385,24 @@ body[data-page="erros"] .error-full-library-content .error-notebook-shelf{margin
  body[data-page="erros"] .error-home-action{height:100%!important;min-height:0!important;max-height:none!important}
 }
 </style>
+<style id="error-home-tighten-10px-v30">
+@media(min-width:981px){
+ body[data-page="erros"] .error-home-layout.review-mode{
+   grid-template-rows:282px minmax(0,1fr)!important;
+ }
+ body[data-page="erros"] .error-daily-review-card.error-ccq-home-card,
+ body[data-page="erros"] .error-side-card.error-quick-metrics{
+   height:282px!important;
+   min-height:282px!important;
+   max-height:282px!important;
+ }
+ /* Segunda linha começa 10px acima; dimensões internas dos cadernos e botões permanecem inalteradas. */
+ body[data-page="erros"] .error-home-main,
+ body[data-page="erros"] .error-home-actions{
+   align-self:stretch!important;
+ }
+}
+</style>
 </head>
 
 <body data-page="erros">
