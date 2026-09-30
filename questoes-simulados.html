@@ -1387,6 +1387,68 @@
   new MutationObserver(recolorQsArt).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme','class']});
 })();
 </script>
+
+<style id="qs-action-alignment-fill-v6">
+  /* Ações: ícone + texto à esquerda; seta isolada na extrema direita. */
+  body[data-page="questoes"] .qs-home-actions-compact{
+    display:grid!important;
+    grid-template-rows:repeat(3,minmax(0,1fr))!important;
+    gap:6px!important;
+    min-height:150px!important;
+    height:100%!important;
+    align-self:stretch!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:30px minmax(0,1fr) 24px!important;
+    grid-template-rows:1fr!important;
+    width:100%!important;
+    min-height:46px!important;
+    height:auto!important;
+    max-height:none!important;
+    padding:5px 8px!important;
+    column-gap:8px!important;
+    align-items:center!important;
+    justify-items:stretch!important;
+    text-align:left!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-icon{
+    grid-column:1!important;
+    justify-self:start!important;
+    align-self:center!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy{
+    grid-column:2!important;
+    justify-self:start!important;
+    width:100%!important;
+    padding-right:0!important;
+    text-align:left!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy strong,
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{
+    display:block!important;
+    text-align:left!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-arrow{
+    grid-column:3!important;
+    position:static!important;
+    justify-self:end!important;
+    align-self:center!important;
+    display:grid!important;
+    place-items:center!important;
+    width:22px!important;
+    height:22px!important;
+    margin:0!important;
+    border:1px solid var(--border)!important;
+    border-radius:7px!important;
+    background:var(--surface)!important;
+    color:var(--accent)!important;
+    font-size:14px!important;
+    line-height:1!important;
+  }
+</style>
+
 </head>
 
 <body data-page="questoes">
