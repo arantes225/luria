@@ -623,7 +623,7 @@
   if (!draft || !timelineEntries.length) addLog("Início da PCR", "Cronômetro iniciado automaticamente");
   updateTimer();
   setInterval(updateTimer, 1000);
-  metroBtn.querySelector("small").textContent = "110 bpm · toque para ativar som";
+  metroBtn.querySelector("small").textContent = stoppedAt ? "Pausado após RCE / ROSC" : "110 bpm · toque para ativar som";
   if (!stoppedAt) startMetronomeLoop();
   persistDraft();
 })();

@@ -1,9 +1,10 @@
 (() => {
 const owner={id:"11111111-1111-4111-8111-111111111111",email:"fixture@example.invalid",user_metadata:{display_name:"Teste"}};
 window.__fixtureOwner=owner;
+if(!localStorage.getItem("luria:shift-manager:security-mode:"+owner.id))localStorage.setItem("luria:shift-manager:security-mode:"+owner.id,"none");
 const today=new Date().toISOString().slice(0,10);
 const cards=Array.from({length:14},(_,i)=>({id:"card-"+i,user_id:owner.id,area:"Área "+i,materia:"Deck "+i,theme:"Tema "+i,front_text:"Pergunta "+i,back_text:"Resposta "+i,due_date:today,review_count:0,active:true,created_at:new Date().toISOString(),library_scope:"personal"}));
-const defaults={profiles:[{user_id:owner.id,display_name:"Teste",gender:"other",specialty:"Clínica médica"}],user_settings:[{user_id:owner.id,theme:"light",onboarding_completed:true}],flashcards:cards,study_topics:[{id:"topic-1",user_id:owner.id,area:"Clínica",materia:"Cardiologia",theme:"Aula de teste",type:"lesson",status:"scheduled",completed_at:null,scheduled_date:today,original_date:today,created_at:new Date().toISOString()}],pcr_patients:[],pcr_records:[]};
+const defaults={profiles:[{user_id:owner.id,display_name:"Teste",username:"fixture",luria_id:"TEST1234",gender:"other",specialty:"Clínica médica"}],user_settings:[{user_id:owner.id,theme:"light",onboarding_completed:true}],flashcards:cards,study_topics:[{id:"topic-1",user_id:owner.id,area:"Clínica",materia:"Cardiologia",theme:"Aula de teste",type:"lesson",status:"scheduled",completed_at:null,scheduled_date:today,original_date:today,created_at:new Date().toISOString()}],pcr_patients:[],pcr_records:[]};
 const db=()=>({...defaults,...JSON.parse(localStorage.getItem("fixture-db")||"{}")});
 const persist=value=>localStorage.setItem("fixture-db",JSON.stringify(value));
 class Query {
@@ -30,6 +31,7 @@ window.supabaseClient={
 auth:{getSession:async()=>({data:{session:localStorage.getItem("fixture-logged-out")?null:{user:owner,access_token:"fixture"}},error:null}),getUser:async()=>({data:{user:owner},error:null}),onAuthStateChange:()=>({data:{subscription:{unsubscribe(){}}}}),signOut:async()=>({error:null})},
 from:table=>new Query(table),
 rpc:async(name,args={})=>{
+if(["my_friends","my_direct_shares"].includes(name))return{data:[],error:null};
 if(name==="is_admin")return{data:false,error:null};
 if(name==="get_my_entitlements")return{data:{plan:"pro",features:Object.fromEntries(["dashboard","cronograma","caderno","flashcards","error_notebook","questions","plantao","statistics_general","images"].map(name=>[name,{enabled:true,limit:null}]))},error:null};
 if(name==="beta_feedback_status")return{data:{is_beta_tester:false,needs_feedback:false},error:null};
