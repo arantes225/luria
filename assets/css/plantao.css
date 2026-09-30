@@ -7797,3 +7797,78 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
    box-sizing:border-box!important;
  }
 }
+
+/* Sala de Emergência v57 — cabeçalho longitudinal padrão LURIA */
+@media(min-width:941px){
+ body.plantao-module-entry #plantao-library{
+   grid-template-columns:minmax(0,1fr) 330px!important;
+ }
+ body.plantao-module-entry .plantao-quick-grid{
+   grid-column:1 / -1!important;
+   width:100%!important;
+   max-width:none!important;
+   margin:0!important;
+   padding:0!important;
+ }
+ body.plantao-module-entry .plantao-quick-grid .plantao-featured-case{
+   width:100%!important;
+   height:138px!important;
+   min-height:138px!important;
+   max-height:138px!important;
+   box-sizing:border-box!important;
+ }
+ body.plantao-module-entry .plantao-featured-inner{
+   width:100%!important;
+   height:100%!important;
+   box-sizing:border-box!important;
+   padding:24px 28px!important;
+   display:flex!important;
+   flex-direction:column!important;
+   justify-content:center!important;
+   align-items:flex-start!important;
+   text-align:left!important;
+ }
+ body.plantao-module-entry .plantao-featured-top,
+ body.plantao-module-entry .plantao-featured-copy{
+   width:100%!important;
+   text-align:left!important;
+   justify-content:flex-start!important;
+   align-items:flex-start!important;
+ }
+ body.plantao-module-entry .plantao-featured-label{
+   margin:0 0 6px!important;
+   font-size:10px!important;
+   font-weight:400!important;
+   letter-spacing:.07em!important;
+ }
+ body.plantao-module-entry .plantao-featured-copy h2{
+   margin:0!important;
+   font-size:25px!important;
+   font-weight:700!important;
+   line-height:1.12!important;
+   letter-spacing:-.02em!important;
+   text-align:left!important;
+ }
+ body.plantao-module-entry .plantao-featured-copy p{
+   display:block!important;
+   margin:7px 0 0!important;
+   color:rgba(255,255,255,.78)!important;
+   font-size:11px!important;
+   font-weight:400!important;
+   line-height:1.35!important;
+   text-align:left!important;
+ }
+ body.plantao-module-entry .plantao-primary-switch-wrap{
+   grid-column:1!important;
+   grid-row:2!important;
+ }
+ body.plantao-module-entry .plantao-library-main{
+   grid-column:1!important;
+   grid-row:3!important;
+ }
+ body.plantao-module-entry .plantao-library-side{
+   grid-column:2!important;
+   grid-row:2 / span 2!important;
+   padding-top:0!important;
+ }
+}
