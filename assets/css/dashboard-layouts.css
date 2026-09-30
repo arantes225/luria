@@ -4421,3 +4421,10 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
    box-sizing:border-box!important;
  }
 }
+
+/* Dashboard 1 v66 — aproxima Atividades de hoje da faixa inferior */
+@media (min-width:981px){
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
+   transform:translateY(10px)!important;
+ }
+}
