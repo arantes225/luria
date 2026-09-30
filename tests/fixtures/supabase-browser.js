@@ -19,6 +19,7 @@ insert(v){this.action="insert";this.values=v;return this;}upsert(v){this.action=
 update(v){this.action="update";this.values=v;return this;}delete(){this.action="delete";return this;}
 then(resolve,reject){return Promise.resolve().then(()=>{
 const database=db();let rows=database[this.table]||[];
+if(this.table==="study_notes"&&["update","insert"].includes(this.action)&&localStorage.getItem("fixture-note-fail")==="1")return{data:null,error:{message:"Falha de envio simulada"}};
 if(this.action==="insert"){const added=(Array.isArray(this.values)?this.values:[this.values]).map(v=>({id:crypto.randomUUID(),...v}));rows=[...rows,...added];database[this.table]=rows;persist(database);return{data:this.singleRow?added[0]:added,error:null};}
 const match=row=>this.filters.every(filter=>filter(row));
 if(this.action==="update"){rows=rows.map(row=>match(row)?{...row,...this.values}:row);database[this.table]=rows;persist(database);}

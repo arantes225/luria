@@ -17,7 +17,7 @@ let diagnosticPage;
 try{
 if(published){
 const context=await browser.newContext();const request=context.request;
-for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css","caderno/index.html","assets/css/caderno.css","assets/css/flashcards-v21.css","assets/js/flashcards-v21.js"]){
+for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css","caderno/index.html","assets/css/caderno.css","assets/css/flashcards-v21.css","assets/js/flashcards-v21.js","assets/js/caderno.js"]){
 const expected=crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 let matched=false;
 for(let attempt=0;attempt<10;attempt++){
@@ -116,6 +116,33 @@ for(const view of ["library","editor"]){
  }else assert.ok(await page.locator("#sidebar-desktop-toggle").isVisible(),"Notes desktop sidebar toggle");
 }
 console.log("PASS Notes sidebar button in library and editor "+viewport.width);
+await page.evaluate(()=>{
+ const db=JSON.parse(localStorage.getItem("fixture-db")||"{}"),owner=window.__fixtureOwner.id,now=new Date().toISOString();
+ db.study_notes=[
+  {id:"linked-note",user_id:owner,topic_id:"topic-1",topic_title:"Aula de teste",area:"Clínica",materia:"Cardiologia",content_html:"<p>Conteúdo vinculado preservado</p>",created_at:now,updated_at:now},
+  {id:"free-note",user_id:owner,topic_id:null,topic_title:"Página livre de teste",area:"Pediatria",materia:"Puericultura",content_html:"<p>Conteúdo livre preservado</p>",created_at:now,updated_at:now}
+ ];localStorage.setItem("fixture-db",JSON.stringify(db));
+});
+for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","Conteúdo vinculado preservado"],["/caderno/?note_id=free-note","free-note","Conteúdo livre preservado"]]){
+ await goto(url);await page.locator("#notebook-inspector-move").waitFor();assert.ok(await page.locator("#notebook-inspector-move").isEnabled());
+ await page.locator("#notebook-inspector-move").click();
+ await page.locator("#notebook-move-area").fill("Pediatria");await page.locator("#notebook-move-subject").fill("Crescimento e Desenvolvimento");
+ await page.evaluate(()=>localStorage.setItem("fixture-note-fail","1"));
+ await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-status").filter({hasText:"Não foi possível mover"}).waitFor();
+ assert.ok(await page.locator("#notebook-move-dialog").isVisible(),"Move failure keeps destination dialog");
+ assert.match(await page.locator("#notebook-editor").innerText(),new RegExp(content));
+ await page.evaluate(()=>localStorage.removeItem("fixture-note-fail"));await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
+ assert.equal(await page.locator("#notebook-inspector-area").innerText(),"Pediatria");assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
+ await goto(url);assert.match(await page.locator("#notebook-editor").innerText(),new RegExp(content));assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
+ await page.locator("#notebook-inspector-edit").click();await page.locator("#notebook-editor").fill(content+" atualizado");
+ await page.waitForTimeout(1000);await goto(url);assert.match(await page.locator("#notebook-editor").innerText(),/atualizado/);assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
+ const stored=await page.evaluate(id=>JSON.parse(localStorage.getItem("fixture-db")).study_notes.find(note=>note.id===id),noteId);
+ assert.equal(stored.area,"Pediatria");assert.equal(stored.materia,"Crescimento e Desenvolvimento");assert.equal(stored.topic_id,noteId==="linked-note"?"topic-1":null);
+}
+await page.locator("#notebook-inspector-move").click();await page.locator("#notebook-move-area").fill("Área personalizada");await page.locator("#notebook-move-subject").fill("Caderno personalizado");await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
+await page.locator("#notebook-back-library").click();assert.match(await page.locator("#notebook-library-list").innerText(),/Caderno personalizado/);
+console.log("PASS Notes moving linked/free notes, retry, reload, autosave and custom destination "+viewport.width);
+
 await goto("/caderno-erros/");
 await noOverflow("Caderno de Erros");await checkActions(".error-home-actions .error-home-action");
 await goto("/questoes-simulados/");

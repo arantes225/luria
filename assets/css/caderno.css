@@ -3990,3 +3990,11 @@ body[data-page="caderno"] .notebook-tool-menu button {
  html body[data-page="caderno"] #sidebar-backdrop{z-index:250!important}
  html body[data-page="caderno"].sidebar-open #luria-notifications{pointer-events:none!important}
 }
+
+#notebook-move-dialog[open]{position:fixed!important;inset:0!important;margin:auto!important;width:min(440px,calc(100vw - 24px))!important;max-width:calc(100vw - 24px)!important;max-height:calc(100dvh - 24px)!important;overflow:auto!important;box-sizing:border-box!important;padding:20px!important;color:var(--text);background:var(--surface)}
+#notebook-move-dialog::backdrop{background:rgba(15,23,42,.4)}
+#notebook-move-dialog .notebook-modal-field{padding:0!important}
+#notebook-move-dialog .notebook-move-copy,#notebook-move-status{font-size:12px;line-height:1.5;color:var(--muted)}
+#notebook-move-dialog .notebook-modal-field>span{font-size:12px;font-weight:500}
+#notebook-move-dialog .notebook-modal-field input{font-size:14px;min-height:44px}
+#notebook-move-dialog .notebook-modal-actions{position:sticky;bottom:-20px;padding:12px 0;background:var(--surface)}

@@ -363,6 +363,8 @@ function setSaveStatus(
 
 function refreshNotebookInspector(){
   const doc=getCurrentDocument();
+  const moveButton=document.getElementById("notebook-inspector-move");
+  if(moveButton)moveButton.disabled=!doc||Boolean(doc.note?.is_shared)||Boolean(doc.note&&doc.note.user_id!==notebookState.user?.id);
   const ed=document.getElementById("notebook-editor");
   const set=(id,v)=>{const el=document.getElementById(id);if(el)el.textContent=(v===0||v)?String(v):"—"};
 
@@ -379,7 +381,7 @@ function refreshNotebookInspector(){
 
   const note=doc.note||{};
   const subject=doc.type==="lesson"
-    ? (doc.topic?.materia||"Sem matéria")
+    ? (note.materia||doc.topic?.materia||"Sem matéria")
     : (note.materia||"Página livre");
   const words=(ed?.innerText||"").trim().split(/\s+/).filter(Boolean).length;
 
@@ -425,6 +427,7 @@ function getCurrentDocument() {
         "Tema sem título",
 
       area:
+        noteByTopicId(topic.id)?.area ||
         topic.area ||
         topic.materia ||
         "Sem área",
@@ -3904,7 +3907,14 @@ async function createFreePage() {
    SALVAR
    ========================================================= */
 
-async function saveCurrentNotebook(
+async function saveCurrentNotebook(silent = false) {
+  if(notebookState.moveInProgress)return;
+  const pending=(notebookState.pendingSave||Promise.resolve()).catch(()=>{}).then(()=>saveCurrentNotebookContent(silent));
+  notebookState.pendingSave=pending;
+  try{return await pending;}finally{if(notebookState.pendingSave===pending)notebookState.pendingSave=null;}
+}
+
+async function saveCurrentNotebookContent(
   silent = false
 ) {
 
@@ -4070,10 +4080,12 @@ async function saveCurrentNotebook(
         current.title,
 
       area:
+        current.note?.area ||
         current.topic.area ||
         null,
 
       materia:
+        current.note?.materia ||
         current.topic.materia ||
         null,
 
@@ -14199,9 +14211,9 @@ function getLibraryEntries() {
             "Página sem título",
 
           area:
-            topic?.area
-            ||
             note.area
+            ||
+            topic?.area
             ||
             (
               isFree
@@ -14332,7 +14344,7 @@ function renderLibrary() {
     return '<svg '+base+'><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>';
   };
 
-  const subjectFor = entry => entry.topic?.materia || entry.note?.materia || "Outros";
+  const subjectFor = entry => entry.note?.materia || entry.topic?.materia || "Outros";
   const realByArea = new Map();
   real.forEach(entry => {
     const area=entry.area||"Sem área";
@@ -18303,7 +18315,7 @@ function wireEvents() {
       .trim();
 
     const subject = current.type === "lesson"
-      ? (current.topic?.materia || "")
+      ? (current.note?.materia || current.topic?.materia || "")
       : (current.note?.materia || "");
 
     try {
@@ -19593,4 +19605,84 @@ function render(q=""){const n=String(q).normalize("NFD").replace(/[\u0300-\u036f
 function openPicker(){picker.hidden=false;render();setTimeout(()=>search?.focus(),0)}
 document.getElementById("notebook-inspector-open-theme")?.addEventListener("click",async()=>{try{if(notebookState.editorDirty)await saveCurrentNotebook(true)}catch{}openPicker()});document.getElementById("notebook-theme-picker-close")?.addEventListener("click",()=>picker.hidden=true);picker?.addEventListener("click",e=>{if(e.target===picker)picker.hidden=true});search?.addEventListener("input",()=>render(search.value));
 results?.addEventListener("click",async e=>{const b=e.target.closest("[data-open-kind]");if(!b)return;const id=b.dataset.openId;picker.hidden=true;if(b.dataset.openKind==="lesson")await openTopic(id);else await openFreeNote(id)});
+})();
+
+/* Move the note's library placement without changing the linked lesson. */
+(() => {
+  const fields="id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at";
+  let dialog,busy=false;
+  const subject=doc=>doc?.note?.materia||doc?.topic?.materia||"Outros";
+  function catalog(){
+    const pairs=[];
+    document.querySelectorAll("#notebook-library-list [data-open-subject]").forEach(button=>{
+      try{const [area,materia]=decodeURIComponent(button.dataset.openSubject).split("|||");if(area&&materia)pairs.push([area,materia]);}catch{}
+    });
+    getLibraryEntries().forEach(entry=>pairs.push([entry.area,subject(entry)]));
+    notebookState.topics.forEach(topic=>{if(topic.area)pairs.push([topic.area,topic.materia||"Outros"]);});
+    return pairs;
+  }
+  function ensureDialog(){
+    if(dialog)return dialog;
+    dialog=document.createElement("dialog");dialog.id="notebook-move-dialog";dialog.className="notebook-modal";
+    dialog.innerHTML='<form id="notebook-move-form"><div class="notebook-modal-head"><div><span class="badge accent">Anotações</span><h2>Mover anotação</h2></div><button type="button" class="notebook-modal-close" data-move-cancel aria-label="Fechar">×</button></div><p class="notebook-move-copy">Escolha uma área e um caderno existentes ou digite um novo destino.</p><label class="notebook-modal-field"><span>Área de destino</span><input id="notebook-move-area" list="notebook-move-areas" required maxlength="120" autocomplete="off"><datalist id="notebook-move-areas"></datalist></label><label class="notebook-modal-field"><span>Caderno de destino (matéria)</span><input id="notebook-move-subject" list="notebook-move-subjects" required maxlength="120" autocomplete="off"><datalist id="notebook-move-subjects"></datalist></label><p id="notebook-move-status" role="status" aria-live="polite"></p><div class="notebook-modal-actions"><button type="button" class="button secondary" data-move-cancel>Cancelar</button><button id="notebook-move-submit" type="submit" class="button primary">Mover anotação</button></div></form>';
+    document.body.append(dialog);
+    const area=dialog.querySelector("#notebook-move-area");
+    area.addEventListener("input",()=>updateSubjects(area.value));
+    dialog.querySelectorAll("[data-move-cancel]").forEach(button=>button.addEventListener("click",()=>{if(!busy)dialog.close();}));
+    dialog.addEventListener("cancel",event=>{if(busy)event.preventDefault();});
+    dialog.querySelector("form").addEventListener("submit",move);
+    return dialog;
+  }
+  function updateSubjects(area){
+    const names=[...new Set(catalog().filter(pair=>pair[0]===area.trim()).map(pair=>pair[1]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+    dialog.querySelector("#notebook-move-subjects").innerHTML=names.map(value=>'<option value="'+escapeHtml(value)+'"></option>').join("");
+  }
+  function open(){
+    const current=getCurrentDocument();
+    if(!current||current.note?.is_shared||current.note&&current.note.user_id!==notebookState.user?.id)return;
+    ensureDialog();
+    const areas=[...new Set([...catalog().map(pair=>pair[0]),current.area].filter(Boolean))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+    dialog.querySelector("#notebook-move-areas").innerHTML=areas.map(value=>'<option value="'+escapeHtml(value)+'"></option>').join("");
+    dialog.querySelector("#notebook-move-area").value=current.area;
+    dialog.querySelector("#notebook-move-subject").value=subject(current);
+    updateSubjects(current.area);
+    dialog.querySelector("#notebook-move-status").textContent="";
+    dialog.showModal();
+  }
+  async function move(event){
+    event.preventDefault();if(busy)return;
+    const area=dialog.querySelector("#notebook-move-area").value.trim(),materia=dialog.querySelector("#notebook-move-subject").value.trim(),status=dialog.querySelector("#notebook-move-status");
+    if(!area||!materia){status.textContent="Preencha a área e o caderno de destino.";return;}
+    busy=true;notebookState.moveInProgress=true;clearTimeout(notebookState.saveTimer);
+    const wasEditable=notebookState.editorEditable;
+    setEditorEnabled(false);
+    dialog.querySelectorAll("input,button").forEach(el=>el.disabled=true);status.textContent="Movendo...";
+    try{
+      await notebookState.pendingSave;
+      const current=getCurrentDocument(),owner=notebookState.user?.id;
+      if(!current||!owner||current.note?.is_shared||current.note&&current.note.user_id!==owner)throw new Error("Esta anotação não pode ser movida por esta conta.");
+      const content_html=notebookHtmlForSave(document.getElementById("notebook-editor"));
+      const payload={area,materia,content_html};
+      const query=current.note?.id
+        ? notebookSb.from("study_notes").update(payload).eq("id",current.note.id).eq("user_id",owner)
+        : notebookSb.from("study_notes").insert({...payload,user_id:owner,topic_id:current.topic?.id||null,topic_title:current.title});
+      const {data,error}=await query.select(fields).single();
+      if(error)throw error;
+      if(!data?.id||data.user_id!==owner)throw new Error("O servidor não confirmou a mudança.");
+      notebookState.notesById.set(data.id,data);
+      if(data.topic_id)notebookState.notesByTopic.set(data.topic_id,data);
+      notebookState.editorDirty=false;
+      const areaLabel=document.getElementById("notebook-document-area");if(areaLabel)areaLabel.textContent=area;
+      populateAreaFilter();renderLibrary();refreshNotebookInspector();
+      setSaveStatus("Anotação movida para "+area+" · "+materia,"saved");
+      dialog.close();
+      syncNotebookImageRefsFromHtml(data.id,data.content_html).catch(error=>console.warn("Não foi possível sincronizar as imagens após mover:",error));
+    }catch(error){status.textContent="Não foi possível mover: "+(error.message||"tente novamente.");setSaveStatus("A anotação continua no destino anterior. Tente novamente.","error");}
+    finally{
+      busy=false;notebookState.moveInProgress=false;
+      dialog.querySelectorAll("input,button").forEach(el=>el.disabled=false);
+      notebookState.editorEditable=wasEditable;setEditorEnabled(wasEditable);
+    }
+  }
+  document.getElementById("notebook-inspector-move")?.addEventListener("click",open);
 })();
