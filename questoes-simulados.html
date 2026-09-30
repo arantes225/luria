@@ -1430,6 +1430,33 @@
           data-qs-section="mine"
           aria-label="Dashboard de questões e simulados"
         >
+          <div class="qs-home-actions-compact" aria-label="Ações rápidas">
+            <button class="qs-home-action" type="button" data-qs-mode="add" data-action="create">
+              <span class="qs-home-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+              </span>
+              <span class="qs-home-action-copy"><strong>Criar novo</strong><small>Monte seu próprio simulado</small></span>
+              <span class="qs-home-card-art" aria-hidden="true"></span>
+              <span class="qs-home-action-arrow" aria-hidden="true">›</span>
+            </button>
+            <button class="qs-home-action" type="button" data-qs-mode="add" data-action="send">
+              <span class="qs-home-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 15v4h14v-4"/></svg>
+              </span>
+              <span class="qs-home-action-copy"><strong>Enviar novo</strong><small>Importe uma prova em PDF</small></span>
+              <span class="qs-home-card-art" aria-hidden="true"></span>
+              <span class="qs-home-action-arrow" aria-hidden="true">›</span>
+            </button>
+            <button class="qs-home-action" type="button" data-qs-mode="library" data-action="library">
+              <span class="qs-home-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 5.5h6.5A2.5 2.5 0 0 1 13 8v11a2.5 2.5 0 0 0-2.5-2.5H4zM20 5.5h-4.5A2.5 2.5 0 0 0 13 8v11a2.5 2.5 0 0 1 2.5-2.5H20z"/></svg>
+              </span>
+              <span class="qs-home-action-copy"><strong>Biblioteca</strong><small>Veja suas listas e simulados</small></span>
+              <span class="qs-home-card-art" aria-hidden="true"></span>
+              <span class="qs-home-action-arrow" aria-hidden="true">›</span>
+            </button>
+          </div>
+
           <div class="qs-dashboard-top">
             <article class="qs-dashboard-stat">
               <span>Semana atual</span>
@@ -1941,5 +1968,14 @@
     })();
   </script>
   <script defer src="assets/js/pwa.js?v=3"></script>
+<script id="qs-home-actions-routing-v5">
+  document.addEventListener("click", function(event){
+    const action=event.target.closest(".qs-home-actions-compact .qs-home-action");
+    if(!action) return;
+    const mode=action.dataset.qsMode;
+    const tab=document.querySelector('.qs-mode-tabs [data-qs-mode="'+mode+'"]');
+    if(tab) tab.click();
+  });
+</script>
 </body>
 </html>
