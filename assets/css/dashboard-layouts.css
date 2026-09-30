@@ -4382,6 +4382,6 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
-    transform:translateY(40px)!important;
+    transform:translateY(20px)!important;
   }
 }
