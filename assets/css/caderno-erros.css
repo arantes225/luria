@@ -3654,3 +3654,38 @@ body[data-page="erros"] .error-metric-card{
     align-items:start!important;
   }
 }
+
+
+/* v18.22 — linhas de ação: símbolo/texto à esquerda e seta à direita */
+body[data-page="erros"] .error-today-row,
+body[data-page="erros"] .error-review-queue-list button{
+  width:100%!important;
+  text-align:left!important;
+  justify-items:stretch!important;
+}
+body[data-page="erros"] .error-today-row{
+  grid-template-columns:24px minmax(0,1fr) 24px!important;
+}
+body[data-page="erros"] .error-today-row>b,
+body[data-page="erros"] .error-review-queue-list button>span{
+  justify-self:start!important;
+}
+body[data-page="erros"] .error-today-row>span,
+body[data-page="erros"] .error-review-queue-list button>div{
+  justify-self:start!important;
+  width:100%!important;
+  text-align:left!important;
+}
+body[data-page="erros"] .error-today-row>i,
+body[data-page="erros"] .error-review-queue-list button>b{
+  justify-self:end!important;
+  display:grid!important;
+  place-items:center!important;
+  width:22px!important;
+  height:22px!important;
+  border:1px solid var(--border)!important;
+  border-radius:7px!important;
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  font-style:normal!important;
+}
