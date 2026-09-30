@@ -3726,3 +3726,38 @@ body[data-page="erros"] .error-review-queue-list button>b{
   justify-self:end!important;
   margin-left:auto!important;
 }
+
+
+/* v18.24 — alinhamento dos três botões reais de "Cadernos a revisar hoje" */
+body[data-page="erros"] .luria-error-review-align{
+  display:grid!important;
+  grid-template-columns:auto minmax(0,1fr) auto!important;
+  align-items:center!important;
+  column-gap:8px!important;
+  width:100%!important;
+  text-align:left!important;
+  justify-content:stretch!important;
+}
+body[data-page="erros"] .luria-error-review-align > *{
+  min-width:0!important;
+}
+body[data-page="erros"] .luria-error-review-align > :first-child{
+  grid-column:1!important;
+  justify-self:start!important;
+  margin-left:0!important;
+}
+body[data-page="erros"] .luria-error-review-align > :nth-child(2){
+  grid-column:2!important;
+  justify-self:start!important;
+  width:100%!important;
+  text-align:left!important;
+  margin-left:0!important;
+}
+body[data-page="erros"] .luria-error-review-align > :nth-child(2) *{
+  text-align:left!important;
+}
+body[data-page="erros"] .luria-error-review-align > :last-child{
+  grid-column:3!important;
+  justify-self:end!important;
+  margin-left:auto!important;
+}
