@@ -25,6 +25,11 @@ jobs:
           node-version: "22"
       - name: Install browser test tools
         run: npm install --no-save --package-lock=false playwright jspdf
+      - name: Cache browser binaries
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: studyos-playwright-20260930-${{ runner.os }}
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Check JavaScript syntax
@@ -68,3 +73,31 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
+  verify-published:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install browser test tools
+        run: npm install --no-save --package-lock=false playwright jspdf
+      - name: Cache browser binaries
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: studyos-playwright-20260930-${{ runner.os }}
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify live source, desktop, mobile and login
+        env:
+          TEST_BASE_URL: https://www.resibulando.online
+        run: node tests/layout-pcr.browser.cjs
+      - name: Save published browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: published-browser-layouts
+          path: browser-results/

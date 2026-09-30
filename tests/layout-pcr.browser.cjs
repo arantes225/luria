@@ -8,10 +8,25 @@ function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
 walk("trabalho");
 const base = process.env.TEST_BASE_URL || "http://127.0.0.1:4173";
 const published = Boolean(process.env.TEST_BASE_URL);
+const crypto = require("node:crypto");
 fs.mkdirSync("browser-results",{recursive:true});
 (async()=>{
 const browser=await chromium.launch();
 try{
+if(published){
+const context=await browser.newContext();const request=context.request;
+for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html"]){
+const expected=crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
+let matched=false;
+for(let attempt=0;attempt<10;attempt++){
+const response=await request.get(base+"/"+file+"?validation="+Date.now(),{headers:{"Cache-Control":"no-cache"}});
+if(response.ok()&&crypto.createHash("sha256").update(await response.body()).digest("hex")===expected){matched=true;break;}
+await new Promise(resolve=>setTimeout(resolve,6000));
+}
+assert.ok(matched,"Published file does not match the commit: "+file);
+}
+await context.close();console.log("PASS Published source matches the checked commit");
+}
 for(const viewport of [{width:1365,height:900},{width:390,height:844},{width:320,height:700}]){
 const context=await browser.newContext({viewport,serviceWorkers:"block",isMobile:viewport.width<980,hasTouch:viewport.width<980,acceptDownloads:true});
 await context.addInitScript(({mobile})=>{if(mobile)document.addEventListener("DOMContentLoaded",()=>document.documentElement.classList.add("pwa-standalone"));},{mobile:viewport.width<980});
@@ -23,10 +38,14 @@ const errors=[];
 page.on("pageerror",error=>{errors.push(error.message);console.error("PAGE ERROR",page.url(),error.message);});
 async function goto(url){
 await page.goto(base+url,{waitUntil:"domcontentloaded"});await page.locator("body.app-ready").waitFor({timeout:15000});await page.waitForTimeout(800);
+console.log("CHECK",viewport.width,url);
 assert.equal(decodeURI(new URL(page.url()).pathname),decodeURI(url).split("?")[0],"Unexpected redirect for "+url);
 }
 async function noOverflow(label){
 const dimensions=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,width:window.innerWidth}));
+if(dimensions.scroll>dimensions.width+2){
+console.error("OVERFLOW",label,await page.evaluate(()=>[...document.querySelectorAll("main *")].map(el=>({tag:el.tagName,cls:el.className,id:el.id,rect:el.getBoundingClientRect()})).filter(x=>x.rect.width>window.innerWidth||x.rect.right>window.innerWidth+2).slice(0,20).map(x=>({tag:x.tag,cls:x.cls,id:x.id,left:x.rect.left,right:x.rect.right,width:x.rect.width}))));
+}
 assert.ok(dimensions.scroll<=dimensions.width+2,label+" document overflow: "+JSON.stringify(dimensions));
 }
 await goto("/beta-testers/");
@@ -49,6 +68,8 @@ await goto("/flashcards/");
 await page.locator('[data-flash-home-tab="create"]').click();
 await page.waitForFunction(()=>document.querySelector('[data-flash-section="create"]').classList.contains("active"));
 console.log("PASS Flashcards decks and create "+viewport.width);
+await goto("/caderno-erros/");
+await noOverflow("Caderno de Erros");
 await goto("/questoes-simulados/");
 const questionHero=await page.locator("#qs-daily-card").evaluate(el=>{const s=getComputedStyle(el);return{height:el.getBoundingClientRect().height,background:s.backgroundImage,align:s.alignItems,font:getComputedStyle(el.querySelector("h2")).fontSize,count:getComputedStyle(el.querySelector(".qs-home-daily-count")).fontSize};});
 assert.deepEqual(questionHero,flashHero,"Daily cards share dimensions and typography");

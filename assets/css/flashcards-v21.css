@@ -1911,3 +1911,6 @@ body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck:after{conte
 body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck:hover{box-shadow:none!important;transform:none!important}
 body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-review{position:absolute!important;inset:0!important;z-index:5!important;width:100%!important;height:100%!important;background:transparent!important;border:0!important;cursor:pointer!important}
 body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck:focus-within{outline:2px solid var(--accent);outline-offset:-3px}
+
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-review:before,
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-review:after{content:none!important;display:none!important}
