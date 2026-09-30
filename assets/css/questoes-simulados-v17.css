@@ -572,21 +572,28 @@
 }
 
 
-/* Questões e Simulados — fundo limpo por tema */
+
+/* Questões e Simulados — fundo seguindo a mesma regra cromática do card de título */
 body[data-page="questoes"]{
-  background:#f4f7fb !important;
+  background:#184888 !important;
+}
+:root[data-theme="light"] body[data-page="questoes"]{
+  background:#184888 !important;
+}
+:root[data-theme="dark"] body[data-page="questoes"],
+body.theme-dark[data-page="questoes"]{
+  background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%) !important;
+}
+:root[data-theme="leila-mood"] body[data-page="questoes"],
+:root[data-theme="pink"] body[data-page="questoes"],
+:root[data-theme="rosa"] body[data-page="questoes"]{
+  background:var(--accent) !important;
 }
 body[data-page="questoes"]::before,
 body[data-page="questoes"]::after{
   display:none !important;
   content:none !important;
   background-image:none !important;
-}
-:root[data-theme="leila-mood"] body[data-page="questoes"]{
-  background:#fff6fa !important;
-}
-:root[data-theme="dark"] body[data-page="questoes"]{
-  background:#0b1220 !important;
 }
 body[data-page="questoes"] .app-shell,
 body[data-page="questoes"] .main,
