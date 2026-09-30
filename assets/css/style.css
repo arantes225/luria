@@ -4676,3 +4676,47 @@ body.auth-page>.auth-card{
   position:relative;
   z-index:2;
 }
+
+/* =========================================================
+   v2026.09.29 — SWITCH GLOBAL OFICIAL
+   Espelha exatamente o Caderno de Erros v18.18
+   ========================================================= */
+:root{
+  --luria-switch-height:40px;
+  --luria-switch-shell-height:50px;
+  --luria-switch-shell-padding:4px;
+  --luria-switch-shell-gap:4px;
+  --luria-switch-shell-radius:10px;
+  --luria-switch-radius:7px;
+  --luria-switch-font-size:16px;
+  --luria-switch-font-weight:400;
+  --luria-switch-pad-x:17px;
+}
+.error-main-tabs,.error-tabs,.error-state-switch,.error-review-action-switch,
+.flash-tabs,.flash-review-action-switch,.library-scope-tabs,.qs-mode-tabs,.notebook-tabs,
+.stats-tabs-shell,.stats-range,.schedule-add-tabs,.segmented-control,.mode-tabs,.view-tabs,
+.section-tabs,.page-tabs,.scope-tabs,.switch-group,.view-switch,.mode-switch,[role="tablist"]{
+  box-sizing:border-box!important;
+  min-height:50px!important;height:50px!important;
+  padding:4px!important;gap:4px!important;border-radius:10px!important;
+  align-items:center!important;
+}
+.error-main-tab,.error-tab,.error-state-switch button,.error-review-action-switch button,
+.flash-tab,.flash-review-action-switch button,.library-scope-tab,.qs-mode-tab,.notebook-tab,
+.stats-tab,.stats-range>button,.schedule-add-tab,.segmented-control>button,.mode-tab,.view-tab,
+.section-tab,.page-tab,.scope-tab,.switch-group>button,.view-switch>button,.mode-switch>button,
+[role="tablist"]>button,[role="tablist"] [role="tab"]{
+  box-sizing:border-box!important;
+  min-height:40px!important;height:40px!important;
+  padding:0 17px!important;margin:0!important;
+  border-radius:7px!important;
+  font-size:16px!important;font-weight:400!important;line-height:1!important;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+}
+@media(max-width:700px){
+  .error-main-tab,.error-tab,.error-state-switch button,.error-review-action-switch button,
+  .flash-tab,.flash-review-action-switch button,.library-scope-tab,.qs-mode-tab,.notebook-tab,
+  .stats-tab,.stats-range>button,.schedule-add-tab,.segmented-control>button,.mode-tab,.view-tab,
+  .section-tab,.page-tab,.scope-tab,.switch-group>button,.view-switch>button,.mode-switch>button,
+  [role="tablist"]>button,[role="tablist"] [role="tab"]{font-size:15px!important;font-weight:400!important}
+}
