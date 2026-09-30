@@ -17,7 +17,7 @@ let diagnosticPage;
 try{
 if(published){
 const context=await browser.newContext();const request=context.request;
-for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css"]){
+for(const file of ["assets/js/app.js","assets/js/trabalho-pcr.js","assets/js/pcr-store.js","assets/css/study-layout.css","trabalho/pcr/historico/index.html","cronograma/index.html","assets/css/pwa-mobile.css","caderno/index.html","assets/css/caderno.css"]){
 const expected=crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 let matched=false;
 for(let attempt=0;attempt<10;attempt++){
@@ -82,6 +82,25 @@ await goto("/flashcards/");
 await page.locator('[data-flash-home-tab="create"]').click();
 await page.waitForFunction(()=>document.querySelector('[data-flash-section="create"]').classList.contains("active"));
 console.log("PASS Flashcards decks and create "+viewport.width);
+
+for(const view of ["library","editor"]){
+ await goto("/caderno/?view="+view);
+ await page.locator("#notebook-view-"+view).waitFor({state:"visible"});
+ if(viewport.width<980){
+  const menu=page.locator("#menu-open");assert.ok(await menu.isVisible(),"Notes menu visible in "+view);
+  await menu.click();await page.waitForFunction(()=>document.body.classList.contains("sidebar-open"));
+  await page.waitForTimeout(250);
+  const rect=await page.locator("#sidebar").boundingBox();assert.ok(rect.x>=-1&&rect.width>100,"Notes sidebar opens");
+  await page.locator("#sidebar-close").click();await page.waitForFunction(()=>!document.body.classList.contains("sidebar-open"));
+  await menu.click();await page.locator("#sidebar-backdrop").click({position:{x:viewport.width-5,y:viewport.height/2}});
+  await page.waitForFunction(()=>!document.body.classList.contains("sidebar-open"));
+  await page.evaluate(()=>document.documentElement.classList.remove("pwa-standalone"));
+  await menu.click();await page.waitForFunction(()=>document.body.classList.contains("sidebar-open"));
+  await page.locator("#sidebar-close").click();await page.waitForFunction(()=>!document.body.classList.contains("sidebar-open"));
+  await page.screenshot({path:"browser-results/notes-"+view+"-"+viewport.width+".png",fullPage:true});
+ }else assert.ok(await page.locator("#sidebar-desktop-toggle").isVisible(),"Notes desktop sidebar toggle");
+}
+console.log("PASS Notes sidebar button in library and editor "+viewport.width);
 await goto("/caderno-erros/");
 await noOverflow("Caderno de Erros");await checkActions(".error-home-actions .error-home-action");
 await goto("/questoes-simulados/");
