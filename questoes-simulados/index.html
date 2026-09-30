@@ -2187,6 +2187,39 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-arrow{
   width:39px!important;height:39px!important;font-size:21px!important;
 }
 </style>
+<style id="qs-week-metrics-quick-v15">
+/* Resumo semanal no mesmo idioma visual de "Métricas rápidas". */
+body[data-page="questoes"] .qs-home-week-compact{
+  padding:17px!important;border-radius:15px!important;min-height:184px!important;
+  border:1px solid var(--border)!important;box-shadow:0 5px 16px rgba(15,40,75,.055)!important;
+}
+body[data-page="questoes"] .qs-home-week-compact .qs-home-section-head{
+  margin-bottom:12px!important;
+}
+body[data-page="questoes"] .qs-home-week-compact .qs-home-eyebrow{
+  font-size:9px!important;font-weight:500!important;letter-spacing:.07em!important;
+}
+body[data-page="questoes"] .qs-home-week-compact .qs-home-section-head h2{
+  margin-top:3px!important;font-size:17px!important;line-height:1.15!important;font-weight:500!important;
+}
+body[data-page="questoes"] .qs-home-week-grid{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric{
+  min-height:55px!important;padding:9px 11px!important;border:1px solid var(--border)!important;
+  border-radius:11px!important;background:color-mix(in srgb,var(--surface) 94%,var(--accent))!important;
+  display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric strong{
+  font-size:18px!important;line-height:1!important;font-weight:600!important;color:var(--text)!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric small{
+  margin-top:5px!important;font-size:9px!important;line-height:1!important;font-weight:400!important;color:var(--muted)!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.success{border-color:rgba(34,148,99,.20)!important}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.danger{border-color:rgba(205,75,75,.18)!important}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-color:color-mix(in srgb,var(--accent) 22%,var(--border))!important}
+</style>
 </head>
 
 <body data-page="questoes">
