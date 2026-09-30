@@ -4732,3 +4732,10 @@ table,thead,tbody,tr,th,td,ul,ol,li{
   font-family:var(--luria-font)!important;
 }
 button,input,select,textarea{font-family:var(--luria-font)!important}
+
+/* v2026.09.29 — eyebrows/kickers leves no padrão LURIA */
+.qs-home-kicker,.qs-home-eyebrow,.error-home-eyebrow,.flash-top-spotlight-label,.eyebrow,[class*="eyebrow"],[class*="kicker"]{
+  font-family:var(--luria-font)!important;
+  font-weight:400!important;
+  letter-spacing:.07em!important;
+}
