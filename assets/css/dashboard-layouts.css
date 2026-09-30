@@ -4376,3 +4376,12 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     box-sizing:border-box!important;
   }
 }
+
+
+/* Dashboard 1 v63 — desloca a faixa inferior em conjunto */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    transform:translateY(40px)!important;
+  }
+}
