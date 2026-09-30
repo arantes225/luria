@@ -2283,6 +2283,30 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-colo
  }
 }
 </style>
+<style id="qs-home-balance-v18">
+@media(min-width:981px){
+  body[data-page="questoes"] .qs-home-workspace{
+    --qs-top-row-h:336px!important; /* 20px menor */
+  }
+  body[data-page="questoes"] .qs-home-main-column,
+  body[data-page="questoes"] .qs-home-side-column{
+    padding-bottom:12px!important;
+    box-sizing:border-box!important;
+  }
+  body[data-page="questoes"] .qs-home-main-column{
+    grid-template-rows:var(--qs-top-row-h) minmax(0,1fr)!important;
+  }
+  body[data-page="questoes"] .qs-home-system,
+  body[data-page="questoes"] .qs-home-week-compact{
+    height:var(--qs-top-row-h)!important;
+    min-height:var(--qs-top-row-h)!important;
+  }
+  body[data-page="questoes"] .qs-home-my-lists{
+    height:100%!important;
+    min-height:0!important;
+  }
+}
+</style>
 </head>
 
 <body data-page="questoes">
