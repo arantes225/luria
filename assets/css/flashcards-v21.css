@@ -1892,3 +1892,6 @@ body[data-page="flashcards"] .flash-quick-metrics-grid{
     grid-template-columns:1fr 1fr!important;
   }
 }
+
+/* v60 — ações principais um pouco menores e alinhadas ao padrão do Caderno/Questões */
+body[data-page="flashcards"] .flash-tab{font-size:9px!important;font-weight:850!important}
