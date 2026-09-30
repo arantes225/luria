@@ -63,6 +63,28 @@ body[data-page="flashcards"] .flash-switches-inline .flash-review-action-switch>
 }
 @media(max-width:980px){body[data-page="flashcards"] .flash-switches-inline{width:100%;flex-wrap:wrap}}
 </style>
+<style id="flash-qs-home-layout-v42">
+@media(min-width:981px){
+ body[data-page="flashcards"] .flash-top-spotlight{display:none!important}
+ body[data-page="flashcards"] .flash-control-row{display:grid!important;grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;grid-template-rows:272px minmax(0,1fr)!important;gap:12px!important;align-items:stretch!important;margin:0!important;height:calc(100dvh - 240px)!important;overflow:hidden!important}
+ body[data-page="flashcards"] .flash-switches-inline{grid-column:1;grid-row:2;display:flex!important;align-items:flex-start!important;gap:10px!important;padding:16px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;overflow:auto!important}
+ body[data-page="flashcards"] .flash-quick-metrics{grid-column:2;grid-row:1;display:block!important;height:272px!important;padding:18px!important;border-radius:15px!important;overflow:hidden!important}
+ body[data-page="flashcards"] .flash-quick-metrics-title{border:0!important;padding:0 0 12px!important}
+ body[data-page="flashcards"] .flash-quick-metrics-title span{font-size:10px!important;font-weight:400!important}
+ body[data-page="flashcards"] .flash-quick-metrics-title:after{content:"Resumo";display:block;margin-top:3px;color:var(--text);font-size:18px;font-weight:500}
+ body[data-page="flashcards"] .flash-metric-summary-grid{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:7px!important}
+ body[data-page="flashcards"] .flash-metric-summary-grid>div{min-height:58px!important;padding:9px!important;border:1px solid var(--border)!important;border-radius:11px!important;background:var(--surface-2)!important}
+ body[data-page="flashcards"] .flash-metric-summary-grid span,body[data-page="flashcards"] .flash-metric-summary-grid small{font-weight:400!important}
+ body[data-page="flashcards"] .flash-metric-progress{margin-top:8px!important;padding-top:8px!important}
+ body[data-page="flashcards"] .flash-metric-detail{display:none!important}
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"]{position:absolute!important;left:var(--sidebar-width,250px);right:calc(22% + 26px);top:0;pointer-events:none}
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"] .flash-review-panel{border:0!important;background:transparent!important;box-shadow:none!important;padding:0!important}
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"] #review-launcher{display:flex!important;position:relative!important;pointer-events:auto!important;height:272px!important;min-height:272px!important;padding:28px!important;border-radius:15px!important}
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"] .flash-review-progress-only{display:none!important}
+ body[data-page="flashcards"] .flash-control-row:after{content:"Ações rápidas";grid-column:2;grid-row:2;display:block;padding:18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);color:var(--muted);font-size:10px}
+ body[data-page="flashcards"] .flash-review-action-switch{position:absolute!important;right:18px;bottom:18px;z-index:3}
+}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
