@@ -3934,3 +3934,35 @@ body[data-page="caderno"] #notebook-view-library > .luria-page-spotlight{
     padding:20px!important;
   }
 }
+
+
+/* v25.1 — ajustes finos do editor de Anotações */
+body[data-page="caderno"] #notebook-editor-hint[hidden],
+body[data-page="caderno"] #notebook-document-wrap[hidden]{
+  display:none!important;
+}
+
+body[data-page="caderno"] .note-page .notebook-editor{
+  display:block;
+  position:relative;
+  min-height:520px!important;
+}
+
+body[data-page="caderno"] .notebook-editor:empty::before{
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+  line-height:1.55;
+}
+
+body[data-page="caderno"] #notebook-inspector-edit,
+body[data-page="caderno"] #notebook-task-add-row{
+  font-size:7.5px!important;
+  line-height:1!important;
+  font-weight:700!important;
+}
+
+body[data-page="caderno"] #notebook-inspector-edit > span{
+  font-size:7.5px!important;
+}
