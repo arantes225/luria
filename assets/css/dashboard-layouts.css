@@ -4469,3 +4469,25 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
     margin-top:0!important;
   }
 }
+
+
+/* Dashboard 1 v55 — resumo e ofensiva mais limpos/compactos */
+@media (min-width:701px){
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body{grid-template-columns:68px minmax(0,1fr)!important;gap:13px!important;padding:0 2px 3px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring{width:68px!important;height:68px!important;flex-basis:68px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring:before{inset:8px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring strong{font-size:17px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring small{font-size:8px!important;max-width:48px!important;line-height:1.15!important;text-align:center!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child{grid-template-columns:1fr 1fr!important;gap:6px!important;align-content:center!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child strong{font-size:13px!important;margin-bottom:2px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child span{padding:6px 7px!important;font-size:9px!important;border-radius:8px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{grid-template-columns:78px minmax(0,1fr)!important;column-gap:15px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-card-heading{margin-bottom:3px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{height:auto!important;align-self:center!important;justify-content:center!important;gap:1px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{width:50px!important;height:57px!important;min-width:50px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual .dl-streak-flame{width:50px!important;height:62px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{font-size:12px!important;line-height:1.05!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{grid-template-columns:repeat(4,minmax(42px,1fr))!important;gap:9px 8px!important;align-self:center!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays span{font-size:9px!important;grid-template-columns:11px minmax(0,1fr)!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays i{width:10px!important;height:10px!important}
+}
