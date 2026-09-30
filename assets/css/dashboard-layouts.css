@@ -4434,3 +4434,38 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
    align-self:start!important;
  }
 }
+
+/* Dashboard 1 v68 — geometria vertical unificada */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    row-gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
+    height:calc(100% + 25px)!important;
+    max-height:calc(100% + 25px)!important;
+    align-self:start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:calc(100% + 25px)!important;
+    max-height:calc(100% + 25px)!important;
+    min-height:0!important;
+    align-self:start!important;
+    display:grid!important;
+    grid-template-rows:repeat(2,minmax(0,1fr))!important;
+    gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side > .dl-card{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    margin-top:0!important;
+  }
+}
