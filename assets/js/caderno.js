@@ -2803,6 +2803,22 @@ function setNotebookEditMode(
     notebookState.editorEditable
   );
 
+  const paperToggle =
+    document.getElementById("notebook-paper-toggle");
+
+  const columnsButton =
+    document.getElementById("notebook-columns");
+
+  if (paperToggle) {
+    paperToggle.disabled =
+      !notebookState.editorEditable;
+  }
+
+  if (columnsButton) {
+    columnsButton.disabled =
+      !notebookState.editorEditable;
+  }
+
   const editButton =
     document.getElementById(
       "notebook-document-edit"
@@ -19191,12 +19207,120 @@ function wireNotebookDarkSelectionFeedback() {
 
 function wireNotebookEnhancements() {
   ensureNotebookSideTools();
-  const columns=document.getElementById("notebook-columns");
-  if(columns) columns.onclick=()=>{restoreEditorSelection();insertHtmlAtCursor('<div class="notebook-two-columns"><div class="notebook-column"><p>Coluna 1</p></div><div class="notebook-column"><p>Coluna 2</p></div></div><p><br></p>');markEditorDirty();refreshNotebookOutline();};
-  const paperToggle=document.getElementById("notebook-paper-toggle"), paperMenu=document.getElementById("notebook-paper-menu");
-  if(paperToggle&&paperMenu){paperToggle.onclick=e=>{e.stopPropagation();paperMenu.hidden=!paperMenu.hidden;paperToggle.setAttribute("aria-expanded",paperMenu.hidden?"false":"true")};paperMenu.querySelectorAll("[data-paper-style]").forEach(b=>b.onclick=()=>{applyNotebookPaperStyle(b.dataset.paperStyle);paperMenu.hidden=true;document.getElementById("notebook-inspector-edit")?.addEventListener("click",()=>document.getElementById("notebook-document-edit")?.click());document.getElementById("notebook-inspector-delete")?.addEventListener("click",()=>document.getElementById("notebook-document-delete")?.click());document.getElementById("notebook-inspector-export")?.addEventListener("click",()=>document.getElementById("notebook-library-export")?.click());document.getElementById("notebook-editor")?.addEventListener("input",refreshNotebookInspector);
-});}
-  restoreNotebookPaperStyle(); refreshNotebookOutline();
+
+  const columns =
+    document.getElementById("notebook-columns");
+
+  if (columns) {
+    columns.addEventListener(
+      "mousedown",
+      (event) => event.preventDefault()
+    );
+
+    columns.addEventListener(
+      "click",
+      (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (
+          !notebookState.editorEditable
+          || columns.disabled
+        ) {
+          return;
+        }
+
+        restoreEditorSelection();
+
+        insertHtmlAtCursor(
+          '<div class="notebook-two-columns"><div class="notebook-column"><p>Coluna 1</p></div><div class="notebook-column"><p>Coluna 2</p></div></div><p><br></p>'
+        );
+
+        markEditorDirty();
+        refreshNotebookOutline();
+      }
+    );
+  }
+
+  const paperToggle =
+    document.getElementById("notebook-paper-toggle");
+
+  const paperMenu =
+    document.getElementById("notebook-paper-menu");
+
+  if (
+    paperToggle
+    && paperMenu
+  ) {
+    paperToggle.addEventListener(
+      "mousedown",
+      (event) => event.preventDefault()
+    );
+
+    paperToggle.addEventListener(
+      "click",
+      (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (
+          !notebookState.editorEditable
+          || paperToggle.disabled
+        ) {
+          return;
+        }
+
+        paperMenu.hidden =
+          !paperMenu.hidden;
+
+        paperToggle.setAttribute(
+          "aria-expanded",
+          paperMenu.hidden
+            ? "false"
+            : "true"
+        );
+      }
+    );
+
+    paperMenu
+      .querySelectorAll("[data-paper-style]")
+      .forEach(
+        (button) => {
+          button.addEventListener(
+            "mousedown",
+            (event) => event.preventDefault()
+          );
+
+          button.addEventListener(
+            "click",
+            (event) => {
+              event.preventDefault();
+              event.stopPropagation();
+
+              if (
+                !notebookState.editorEditable
+              ) {
+                return;
+              }
+
+              applyNotebookPaperStyle(
+                button.dataset.paperStyle
+              );
+
+              paperMenu.hidden = true;
+
+              paperToggle.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+            }
+          );
+        }
+      );
+  }
+
+  restoreNotebookPaperStyle();
+  refreshNotebookOutline();
 }
 
 async function initNotebook() {
