@@ -2791,6 +2791,7 @@ body[data-page="questoes"] .qs-home-system{
                   <h2>Questões do dia</h2>
                   <p>Resolva uma lista preparada pelo LURIA ou entre no fluxo de simulados do sistema.</p>
                   
+                  <div class="qs-home-daily-count" id="qs-home-daily-count">— questões</div>
                   <a class="qs-home-primary" href="/resolver-questoes/?daily=1">
                     <span>Abrir questões do dia</span>
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 7 6-7 6z"/></svg>
@@ -3351,4 +3352,37 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy strong{
 body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-copy small{margin-top:2px!important;font-size:7px!important;line-height:1.12!important;color:color-mix(in srgb,var(--accent) 62%,var(--muted))!important}
 body[data-page="questoes"] .qs-home-actions-compact .qs-home-action-arrow{font-size:13px!important;color:var(--accent)!important}
 body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{width:45px!important;height:45px!important;right:20px!important;bottom:-8px!important;opacity:.20!important}
+</style>
+
+<style id="qs-daily-centered-v61">
+/* Questões do dia: conteúdo centralizado, sem a esfera decorativa ao fundo. */
+body[data-page="questoes"] .qs-home-system{
+  min-height:250px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+body[data-page="questoes"] .qs-home-system:before,
+body[data-page="questoes"] .qs-home-system:after{display:none!important;content:none!important}
+body[data-page="questoes"] .qs-home-system-copy{
+  max-width:760px!important;
+  width:100%!important;
+  margin:0 auto!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+}
+body[data-page="questoes"] .qs-home-system .qs-home-eyebrow{margin-left:auto!important;margin-right:auto!important}
+body[data-page="questoes"] .qs-home-system h2{margin-top:7px!important}
+body[data-page="questoes"] .qs-home-system p{max-width:560px!important}
+body[data-page="questoes"] .qs-home-daily-count{
+  margin-top:14px!important;
+  color:var(--text)!important;
+  font-size:13px!important;
+  line-height:1.1!important;
+  font-weight:800!important;
+  letter-spacing:-.01em!important;
+}
+body[data-page="questoes"] .qs-home-system .qs-home-primary{margin-top:10px!important}
 </style>
