@@ -3676,7 +3676,7 @@ input[type="reset"]{
 }
 
 /* Botões base: centraliza texto/ícone sem alterar largura definida pelo componente */
-button:not(.icon-only):not([aria-label]):not(.sidebar-desktop-toggle):not(.luria-notification-toggle):not(.luria-profile-toggle),
+button:not(.icon-only):not([aria-label]):not(.sidebar-desktop-toggle):not(.luria-notification-toggle):not(.luria-profile-toggle):not(.error-home-action):not(.flash-home-action),
 .button:not(.icon-only),
 [role="button"]:not(.icon-only){
   display:inline-flex !important;
