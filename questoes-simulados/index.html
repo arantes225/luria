@@ -2319,6 +2319,33 @@ body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{border-colo
   }
 }
 </style>
+<style id="qs-my-lists-bottom-fill-v20">
+@media(min-width:981px){
+  body[data-page="questoes"] .qs-home-workspace{
+    --qs-bottom-safe:8px;
+    min-height:calc(100vh - 248px)!important;
+    height:calc(100vh - 248px)!important;
+    max-height:none!important;
+  }
+  body[data-page="questoes"] .qs-home-main-column{
+    height:100%!important;
+    min-height:0!important;
+    padding-bottom:var(--qs-bottom-safe)!important;
+    grid-template-rows:var(--qs-top-row-h) minmax(0,1fr)!important;
+  }
+  body[data-page="questoes"] .qs-home-my-lists{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    align-self:stretch!important;
+    overflow:hidden!important;
+  }
+  body[data-page="questoes"] .qs-home-my-lists-content{
+    min-height:0!important;
+    height:100%!important;
+  }
+}
+</style>
 </head>
 
 <body data-page="questoes">
