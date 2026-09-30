@@ -116,7 +116,7 @@
   }
 
   function freezeControls() {
-    document.querySelectorAll('[data-pcr-mode],.pcr-rhythm,.team-position,[data-log-action],[data-cause],#pcr-drugs button,#pcr-weight,#pcr-shock,#pcr-log-cpr,#pcr-clear-log,#pcr-add-note').forEach(button => { button.disabled = true; });
+    document.querySelectorAll('[data-pcr-mode],.pcr-rhythm,.team-position,[data-log-action],[data-cause],#pcr-drugs button,#pcr-shock,#pcr-log-cpr,#pcr-clear-log,#pcr-add-note').forEach(button => { button.disabled = true; });
   }
 
   async function saveAndOpenHistory() {

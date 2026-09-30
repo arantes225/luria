@@ -12,6 +12,8 @@ const crypto = require("node:crypto");
 fs.mkdirSync("browser-results",{recursive:true});
 (async()=>{
 const browser=await chromium.launch();
+const failures=[];
+let diagnosticPage;
 try{
 if(published){
 const context=await browser.newContext();const request=context.request;
@@ -33,7 +35,7 @@ await context.addInitScript(({mobile})=>{if(mobile)document.addEventListener("DO
 await context.route("**/assets/js/supabase.js*",route=>route.fulfill({contentType:"application/javascript",body:fixture}));
 await context.route("**/assets/js/onboarding.js*",route=>route.fulfill({contentType:"application/javascript",body:""}));
 await context.route("**/jspdf*umd.min.js",route=>route.fulfill({contentType:"application/javascript",body:fs.readFileSync(require.resolve("jspdf/dist/jspdf.umd.min.js"),"utf8")}));
-const page=await context.newPage();
+const page=await context.newPage();diagnosticPage=page;
 const errors=[];
 page.on("pageerror",error=>{errors.push(error.message);console.error("PAGE ERROR",page.url(),error.message);});
 async function goto(url){
@@ -46,7 +48,7 @@ const dimensions=await page.evaluate(()=>({scroll:document.documentElement.scrol
 if(dimensions.scroll>dimensions.width+2){
 console.error("OVERFLOW",label,await page.evaluate(()=>[...document.querySelectorAll("main *")].map(el=>({tag:el.tagName,cls:el.className,id:el.id,rect:el.getBoundingClientRect()})).filter(x=>x.rect.width>window.innerWidth||x.rect.right>window.innerWidth+2).slice(0,20).map(x=>({tag:x.tag,cls:x.cls,id:x.id,left:x.rect.left,right:x.rect.right,width:x.rect.width}))));
 }
-assert.ok(dimensions.scroll<=dimensions.width+2,label+" document overflow: "+JSON.stringify(dimensions));
+if(dimensions.scroll>dimensions.width+2)failures.push(label+" "+viewport.width+" document overflow: "+JSON.stringify(dimensions));
 }
 await goto("/beta-testers/");
 await page.locator(".beta-feedback-card").waitFor();assert.match(await page.locator("#beta-feedback-list").innerText(),/Beta fixture/);
@@ -121,8 +123,10 @@ await page.locator("[data-edit-patient]").click();await page.locator('[name="ini
 await page.locator(".pcr-history-record .pcr-record-menu summary").click();await page.locator("[data-edit-record]").click();await page.locator('[name="care_info"]').fill("Atendimento atualizado");await page.locator("#pcr-edit-save").click();await page.locator(".pcr-record-info").filter({hasText:"Atendimento atualizado"}).waitFor();
 await page.locator(".pcr-history-record .pcr-record-menu summary").click();
 page.once("dialog",dialog=>dialog.accept());await page.locator("[data-delete-record]").click();await page.waitForFunction(()=>!document.querySelector(".pcr-history-record"));
+await page.locator(".pcr-patient-card>header .pcr-record-menu summary").click();
+page.once("dialog",dialog=>dialog.accept());await page.locator("[data-delete-patient]").click();await page.waitForFunction(()=>!document.querySelector("#pcr-history-list .pcr-patient-card h2"));
 console.log("PASS PCR RCE, failure, reload, retry, PDF, edits, deletion "+viewport.width);
-assert.equal(errors.length,0,"Browser runtime errors: "+errors.join(" | "));
+if(errors.length)failures.push("Browser runtime errors "+viewport.width+": "+errors.join(" | "));
 await context.close();
 }
 if(published){
@@ -131,5 +135,6 @@ await page.goto(base+"/beta-testers/",{waitUntil:"domcontentloaded"});await page
 console.log("PASS Published login remains required");
 await context.close();
 }
-}finally{await browser.close();}
+assert.equal(failures.length,0,failures.join("\n"));
+}catch(error){if(diagnosticPage&&!diagnosticPage.isClosed())await diagnosticPage.screenshot({path:"browser-results/failure.png",fullPage:true}).catch(()=>{});throw error;}finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
