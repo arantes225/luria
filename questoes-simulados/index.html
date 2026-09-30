@@ -2445,6 +2445,32 @@ body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy strong{
   }
 }
 </style>
+<style id="qs-bottom-balance-v25">
+@media(min-width:981px){
+  body[data-page="questoes"] .qs-home-main-column,
+  body[data-page="questoes"] .qs-home-side-column{
+    padding-bottom:5px!important;
+    box-sizing:border-box!important;
+  }
+  body[data-page="questoes"] .qs-home-side-column{
+    grid-template-rows:var(--qs-top-row-h) minmax(0,1fr)!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact{
+    height:100%!important;
+    min-height:0!important;
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    grid-template-rows:repeat(3,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    align-self:stretch!important;
+  }
+}
+</style>
 </head>
 
 <body data-page="questoes">
