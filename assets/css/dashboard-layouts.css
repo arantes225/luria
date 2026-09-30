@@ -4422,9 +4422,15 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
  }
 }
 
-/* Dashboard 1 v66 — aproxima Atividades de hoje da faixa inferior */
+
+/* Dashboard 1 v67 — Atividades de hoje cresce somente para baixo */
 @media (min-width:981px){
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
-   transform:translateY(10px)!important;
+   transform:none!important;
+   height:calc(100% + 15px)!important;
+   max-height:calc(100% + 15px)!important;
+   min-height:0!important;
+   box-sizing:border-box!important;
+   align-self:start!important;
  }
 }
