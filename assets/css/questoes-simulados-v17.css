@@ -570,3 +570,26 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+
+/* Questões e Simulados — fundo limpo por tema */
+body[data-page="questoes"]{
+  background:#f4f7fb !important;
+}
+body[data-page="questoes"]::before,
+body[data-page="questoes"]::after{
+  display:none !important;
+  content:none !important;
+  background-image:none !important;
+}
+:root[data-theme="leila-mood"] body[data-page="questoes"]{
+  background:#fff6fa !important;
+}
+:root[data-theme="dark"] body[data-page="questoes"]{
+  background:#0b1220 !important;
+}
+body[data-page="questoes"] .app-shell,
+body[data-page="questoes"] .main,
+body[data-page="questoes"] .page{
+  background:transparent !important;
+}
