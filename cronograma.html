@@ -3617,57 +3617,83 @@ body[data-page="cronograma"] .agenda-view-toggle button.active{
 </style>
 
 
+
+
+
 <style id="cronograma-switch-icon-polish-20260929">
-/* Switches do Cronograma: mesma escala/tipografia leve do restante da LURIA. */
-body[data-page="cronograma"] .agenda-scope-toggle button,
-body[data-page="cronograma"] .agenda-insight-tabs button,
-body[data-page="cronograma"] .planner-view-toggle button{
+/* Autoritativo: tipografia dos switches do Cronograma, inclusive conteúdo injetado depois. */
+body[data-page="cronograma"] :is(
+  .agenda-scope-toggle,
+  .agenda-insight-tabs,
+  .planner-view-toggle,
+  [class*="agenda"][class*="tabs"],
+  [class*="agenda"][class*="toggle"]
+) button,
+body[data-page="cronograma"] button[data-agenda-scope],
+body[data-page="cronograma"] button[data-period]{
+  font-family:inherit!important;
   font-size:12px!important;
   font-weight:400!important;
   line-height:1.15!important;
 }
-body[data-page="cronograma"] .agenda-scope-toggle button.active,
-body[data-page="cronograma"] .agenda-insight-tabs button.active,
-body[data-page="cronograma"] .planner-view-toggle button.active{
+body[data-page="cronograma"] :is(
+  .agenda-scope-toggle,
+  .agenda-insight-tabs,
+  .planner-view-toggle,
+  [class*="agenda"][class*="tabs"],
+  [class*="agenda"][class*="toggle"]
+) button:is(.active,[aria-pressed="true"]),
+body[data-page="cronograma"] button[data-agenda-scope].active,
+body[data-page="cronograma"] button[data-period].active{
   font-weight:400!important;
 }
-
-/* Ícones dos cards: remove aparência de emoji e herda a cor do tema. */
-body[data-page="cronograma"] .agenda-insight-icon,
-body[data-page="cronograma"] .agenda-today-icon,
-body[data-page="cronograma"] .agenda-distribution-icon{
-  color:var(--accent)!important;
-  font-family:inherit!important;
+body[data-page="cronograma"] .luria-cronograma-card-icon{
+  width:20px;
+  height:20px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--accent);
+  flex:0 0 20px;
 }
-body[data-page="cronograma"] .agenda-insight-icon svg,
-body[data-page="cronograma"] .agenda-today-icon svg,
-body[data-page="cronograma"] .agenda-distribution-icon svg{
+body[data-page="cronograma"] .luria-cronograma-card-icon svg{
   width:18px!important;
   height:18px!important;
   stroke:currentColor!important;
   fill:none!important;
+  stroke-width:1.8!important;
 }
 </style>
 <script>
-document.addEventListener("DOMContentLoaded",function(){
-  const icon=(name,cls)=>{
-    if(window.LuriaIcon) return window.LuriaIcon(name,cls||"");
-    return "";
+(function(){
+  const svg={
+    calendar:'<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="15" rx="3"/><path d="M7.5 3.5v4M16.5 3.5v4M3.5 9.5h17"/><path d="M8 13h3M13 13h3M8 16.5h3"/></svg>',
+    clock:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3.2 2"/></svg>',
+    chart:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5h16"/><rect x="5.5" y="11.5" width="3" height="6" rx="1"/><rect x="10.5" y="7.5" width="3" height="10" rx="1"/><rect x="15.5" y="4.5" width="3" height="13" rx="1"/></svg>'
   };
-  const replaceCardIcon=(rootSelector,name)=>{
-    const root=document.querySelector(rootSelector);
-    if(!root)return;
-    const target=root.querySelector(".agenda-insight-icon,.agenda-today-icon,.agenda-distribution-icon,[data-card-icon]");
-    if(target){
-      const svg=icon(name,"agenda-standard-icon");
-      if(svg)target.innerHTML=svg;
-    }
-  };
-  replaceCardIcon(".agenda-today-card","calendar");
-  replaceCardIcon(".agenda-study-card","clock");
-  replaceCardIcon(".agenda-category-card","chart");
-  replaceCardIcon(".agenda-distribution-card","chart");
-});
+  const normalize=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+  function polish(){
+    document.querySelectorAll('body[data-page="cronograma"] h2,body[data-page="cronograma"] h3,body[data-page="cronograma"] strong,body[data-page="cronograma"] span').forEach(el=>{
+      const t=normalize(el.textContent.trim());
+      let name="";
+      if(t==="atividades de hoje"||t==="todas as atividades") name="calendar";
+      else if(t==="tempo de estudo") name="clock";
+      else if(t==="distribuicao por categoria") name="chart";
+      if(!name)return;
+      const host=el.closest(".agenda-side-card,.agenda-today-card,[class*='agenda']");
+      if(!host)return;
+      const candidates=[...host.querySelectorAll("span,i,div")].filter(x=>x!==el&&x.children.length===0&&/^[^A-Za-zÀ-ÿ0-9]{1,4}$/.test(x.textContent.trim()));
+      const target=host.querySelector(".agenda-insight-icon,.agenda-today-icon,.agenda-distribution-icon,[data-card-icon]")||candidates[0];
+      if(target){
+        target.classList.add("luria-cronograma-card-icon");
+        target.innerHTML=svg[name];
+      }
+    });
+  }
+  document.addEventListener("DOMContentLoaded",()=>{polish();setTimeout(polish,250);setTimeout(polish,1000);});
+  document.addEventListener("docmap:ready",polish);
+  new MutationObserver(()=>polish()).observe(document.documentElement,{childList:true,subtree:true});
+})();
 </script>
 
 </body>
