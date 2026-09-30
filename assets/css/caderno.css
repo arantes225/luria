@@ -3966,3 +3966,12 @@ body[data-page="caderno"] #notebook-task-add-row{
 body[data-page="caderno"] #notebook-inspector-edit > span{
   font-size:7.5px!important;
 }
+
+
+/* LURIA — compactação final dos menus do editor */
+body[data-page="caderno"] .notebook-tool-menu button,
+body[data-page="caderno"] .note-more-menu > button,
+body[data-page="caderno"] .note-more-menu > .notebook-tool-menu-wrap > button {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
