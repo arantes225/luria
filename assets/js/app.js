@@ -7485,5 +7485,38 @@ iniciarApp();
       }
     }
   `;
+  /* Alinha os dois controles do modo Trabalho aos do modo Estudos:
+     PCR ocupa a altura do card Ofensiva, e a troca de ambiente mantém
+     a mesma posição vertical do seletor de Trabalho. */
+  style.textContent += `
+    #sidebar.sidebar .sidebar-footer-work .work-pcr-button {
+      box-sizing: border-box !important;
+      height: 58px !important;
+      min-height: 58px !important;
+      padding: 6px 8px !important;
+      gap: 7px !important;
+    }
+
+    #sidebar.sidebar .sidebar-footer-work .work-pcr-icon {
+      width: 42px !important;
+      height: 42px !important;
+      flex-basis: 42px !important;
+      font-size: 24px !important;
+    }
+
+    #sidebar.sidebar .sidebar-footer-work .luria-mode-footer-switch {
+      box-sizing: border-box !important;
+      height: 48px !important;
+      min-height: 48px !important;
+    }
+
+    @media (max-width: 980px) {
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer-work .work-pcr-button {
+        height: 58px !important;
+        min-height: 58px !important;
+      }
+    }
+  `;
+
   document.head.appendChild(style);
 })();
