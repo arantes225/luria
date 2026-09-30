@@ -2646,7 +2646,7 @@
   }
 
 </style>
-  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=20260929-topgap2">
+  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=78-cronograma-pattern">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=15">
   <link rel="canonical" href="/cronograma/">
@@ -3493,7 +3493,27 @@ body[data-page="cronograma"]::before,
 body[data-page="cronograma"]::after{
   display:block!important;
   content:""!important;
+  position:fixed!important;
+  inset:-14%!important;
+  pointer-events:none!important;
   background-image:var(--luria-pattern-image)!important;
+  background-repeat:repeat!important;
+  background-size:var(--luria-pattern-size) var(--luria-pattern-size)!important;
+  transform:rotate(-8deg) scale(1.08)!important;
+  transform-origin:center!important;
+  opacity:var(--luria-pattern-opacity)!important;
+  z-index:0!important;
+}
+body[data-page="cronograma"]::before{
+  background-position:0 0!important;
+}
+body[data-page="cronograma"]::after{
+  background-position:calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
+}
+body[data-page="cronograma"] > .app-shell{
+  position:relative!important;
+  z-index:1!important;
+  background:transparent!important;
 }
 </style>
 
