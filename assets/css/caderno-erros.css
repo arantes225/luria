@@ -3689,3 +3689,40 @@ body[data-page="erros"] .error-review-queue-list button>b{
   color:var(--accent)!important;
   font-style:normal!important;
 }
+
+
+/* v18.23 — alinhamento definitivo dos botões do Caderno de Erros */
+body[data-page="erros"] .error-today-row,
+body[data-page="erros"] .error-review-queue-list button{
+  display:grid!important;
+  grid-template-columns:24px minmax(0,1fr) 24px!important;
+  align-items:center!important;
+  column-gap:8px!important;
+  width:100%!important;
+  text-align:left!important;
+}
+body[data-page="erros"] .error-today-row>b,
+body[data-page="erros"] .error-review-queue-list button>span{
+  grid-column:1!important;
+  justify-self:start!important;
+  margin:0!important;
+}
+body[data-page="erros"] .error-today-row>span,
+body[data-page="erros"] .error-review-queue-list button>div{
+  grid-column:2!important;
+  justify-self:start!important;
+  width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  text-align:left!important;
+}
+body[data-page="erros"] .error-today-row>span>*,
+body[data-page="erros"] .error-review-queue-list button>div>*{
+  text-align:left!important;
+}
+body[data-page="erros"] .error-today-row>i,
+body[data-page="erros"] .error-review-queue-list button>b{
+  grid-column:3!important;
+  justify-self:end!important;
+  margin-left:auto!important;
+}
