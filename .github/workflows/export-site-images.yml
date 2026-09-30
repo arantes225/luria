@@ -1,0 +1,21 @@
+name: Export site images
+on:
+  push:
+    paths:
+      - '.github/workflows/export-site-images.yml'
+  workflow_dispatch:
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package images
+        run: |
+          mkdir -p export
+          cp -R assets/img export/assets-img
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LURIA-imagens-site
+          path: export/assets-img
+          if-no-files-found: error
+          retention-days: 1
