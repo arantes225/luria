@@ -3616,6 +3616,60 @@ body[data-page="cronograma"] .agenda-view-toggle button.active{
 }
 </style>
 
+
+<style id="cronograma-switch-icon-polish-20260929">
+/* Switches do Cronograma: mesma escala/tipografia leve do restante da LURIA. */
+body[data-page="cronograma"] .agenda-scope-toggle button,
+body[data-page="cronograma"] .agenda-insight-tabs button,
+body[data-page="cronograma"] .planner-view-toggle button{
+  font-size:12px!important;
+  font-weight:400!important;
+  line-height:1.15!important;
+}
+body[data-page="cronograma"] .agenda-scope-toggle button.active,
+body[data-page="cronograma"] .agenda-insight-tabs button.active,
+body[data-page="cronograma"] .planner-view-toggle button.active{
+  font-weight:400!important;
+}
+
+/* Ícones dos cards: remove aparência de emoji e herda a cor do tema. */
+body[data-page="cronograma"] .agenda-insight-icon,
+body[data-page="cronograma"] .agenda-today-icon,
+body[data-page="cronograma"] .agenda-distribution-icon{
+  color:var(--accent)!important;
+  font-family:inherit!important;
+}
+body[data-page="cronograma"] .agenda-insight-icon svg,
+body[data-page="cronograma"] .agenda-today-icon svg,
+body[data-page="cronograma"] .agenda-distribution-icon svg{
+  width:18px!important;
+  height:18px!important;
+  stroke:currentColor!important;
+  fill:none!important;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  const icon=(name,cls)=>{
+    if(window.LuriaIcon) return window.LuriaIcon(name,cls||"");
+    return "";
+  };
+  const replaceCardIcon=(rootSelector,name)=>{
+    const root=document.querySelector(rootSelector);
+    if(!root)return;
+    const target=root.querySelector(".agenda-insight-icon,.agenda-today-icon,.agenda-distribution-icon,[data-card-icon]");
+    if(target){
+      const svg=icon(name,"agenda-standard-icon");
+      if(svg)target.innerHTML=svg;
+    }
+  };
+  replaceCardIcon(".agenda-today-card","calendar");
+  replaceCardIcon(".agenda-study-card","clock");
+  replaceCardIcon(".agenda-category-card","chart");
+  replaceCardIcon(".agenda-distribution-card","chart");
+});
+</script>
+
 </body>
 </html>
 
