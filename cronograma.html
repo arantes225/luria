@@ -3550,6 +3550,52 @@ body[data-page="cronograma"] .agenda-view-toggle button.active{
 }
 </style>
 
+
+
+<style id="cronograma-match-dashboard-reference-20260929">
+@media(min-width:981px){
+  /* Cronograma usa exatamente a mesma caixa horizontal do conteúdo/dashboard. */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
+    width:auto!important;
+    max-width:1320px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Título azul: mesma altura e largura visual do card do Dashboard. */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-page-spotlight{
+    width:100%!important;
+    height:138px!important;
+    min-height:138px!important;
+    max-height:138px!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    padding:24px 28px!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Timer + sino + perfil terminam na MESMA borda direita do card azul. */
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .page > .topbar{
+    position:relative!important;
+    width:100%!important;
+    box-sizing:border-box!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar .luria-notifications{
+    position:absolute!important;
+    top:50%!important;
+    right:0!important;
+    bottom:auto!important;
+    left:auto!important;
+    margin:0!important;
+    transform:translateY(-50%)!important;
+    translate:none!important;
+    z-index:245!important;
+  }
+}
+</style>
+
 </body>
 </html>
 
