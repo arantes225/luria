@@ -4502,3 +4502,14 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{grid-template-columns:repeat(4,minmax(48px,1fr))!important;grid-template-rows:repeat(2,auto)!important;grid-auto-flow:column!important;gap:11px 13px!important;transform:translateX(10px)!important;justify-self:stretch!important}
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays span{justify-self:start!important}
 }
+
+
+/* Dashboard 1 v57 — Pulo do Gato alinhado ao Progresso por área */
+@media (min-width:701px){
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat{align-self:start!important;padding-top:16px!important;padding-bottom:13px!important;min-height:0!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat .dl-card-heading{margin-top:0!important;margin-bottom:10px!important;min-height:26px!important;align-items:center!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat .dl-card-heading h3{margin:0!important;line-height:26px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat .dl-cat-content{min-height:72px!important;padding:0 4px!important;align-items:center!important;gap:15px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat .dashboard-cat-symbol{width:58px!important;height:58px!important;min-width:58px!important;flex:0 0 58px!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat .dashboard-cat-symbol img{width:58px!important;height:58px!important;object-fit:contain!important}
+}
