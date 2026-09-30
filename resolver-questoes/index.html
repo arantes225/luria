@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resolver questões · LURIA</title>
+  <link rel="manifest" href="manifest.webmanifest?v=3">
+  <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria2">
+  <link rel="stylesheet" href="assets/css/style.css?v=16.3">
+  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=59-content-aligned">
+  <style>
+    body[data-page="questoes"] .page{max-width:none}
+    .qr-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
+    .qr-back{display:inline-flex;align-items:center;gap:7px;border:0;background:transparent;color:var(--muted);font:inherit;font-size:11px;font-weight:750;cursor:pointer;text-decoration:none}
+    .qr-title{min-width:0}.qr-title small{display:block;color:var(--muted);font-size:9px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.qr-title strong{display:block;margin-top:3px;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .qr-progress{display:flex;align-items:center;gap:10px;min-width:210px}.qr-progress-track{height:7px;flex:1;border-radius:999px;background:var(--surface-2);overflow:hidden}.qr-progress-track span{display:block;height:100%;background:var(--accent);border-radius:inherit}.qr-progress b{font-size:11px;color:var(--muted)}
+    .qr-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:14px;align-items:start}
+    .qr-card,.qr-side-card{border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow)}
+    .qr-card{padding:20px}.qr-question-meta{display:flex;align-items:center;gap:8px;margin-bottom:13px}.qr-pill{padding:5px 8px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-size:9px;font-weight:850}.qr-source{color:var(--muted);font-size:9px}
+    .qr-stem{font-size:13px;line-height:1.62;color:var(--text);white-space:pre-wrap}.qr-image{display:block;max-width:min(100%,620px);max-height:330px;object-fit:contain;margin:15px auto;border-radius:12px;border:1px solid var(--border)}
+    .qr-options{display:grid;gap:8px;margin-top:18px}.qr-option{width:100%;display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:center;text-align:left;padding:11px 12px;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer}.qr-option:hover{border-color:var(--accent)}.qr-option.selected{border-color:var(--accent);background:var(--accent-soft)}.qr-option.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 8%,var(--surface))}.qr-option.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}.qr-letter{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:var(--surface-2);font-size:11px;font-weight:900}.qr-option.selected .qr-letter{background:var(--accent);color:#fff}
+    .qr-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}.qr-action-group{display:flex;gap:8px}.qr-btn{min-height:38px;padding:0 13px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font:inherit;font-size:10px;font-weight:850;cursor:pointer}.qr-btn.primary{border-color:var(--accent);background:var(--accent);color:#fff}.qr-btn:disabled{opacity:.45;cursor:not-allowed}
+    .qr-feedback{display:grid;gap:10px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}.qr-result{font-size:11px;font-weight:900}.qr-result.correct{color:var(--success)}.qr-result.wrong{color:var(--danger)}.qr-pulo{padding:13px;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));border-radius:12px;background:var(--accent-soft)}.qr-pulo strong{font-size:11px}.qr-pulo p{margin:5px 0 0;color:var(--muted);font-size:10px;line-height:1.5}
+    .qr-side{display:grid;gap:10px}.qr-side-card{padding:14px}.qr-side-card>small{display:block;color:var(--muted);font-size:8px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.qr-side-card>strong{display:block;margin-top:4px;font-size:13px}.qr-timer{display:flex;align-items:center;gap:10px}.qr-clock{width:58px;height:58px;display:grid;place-items:center;border:4px solid var(--accent-soft);border-top-color:var(--accent);border-radius:50%;font-size:12px;font-weight:900}.qr-timer-copy small,.qr-timer-copy strong{display:block}.qr-timer-copy small{font-size:8px;color:var(--muted);text-transform:uppercase;font-weight:850}.qr-timer-copy strong{font-size:12px;margin-top:3px}
+    .qr-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:10px}.qr-num{aspect-ratio:1;border:1px solid var(--border);border-radius:7px;background:var(--surface-2);color:var(--muted);font-size:9px;font-weight:850;cursor:pointer}.qr-num.active{background:var(--accent);border-color:var(--accent);color:#fff}.qr-num.done{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));color:var(--accent)}
+    .qr-tools{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.qr-tool{min-height:34px;border:1px solid var(--border);border-radius:8px;background:var(--surface-2);color:var(--text);font-size:9px;font-weight:800;cursor:pointer}.qr-tool.active{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+    .qr-status{min-height:18px;margin-top:8px;color:var(--muted);font-size:9px}.qr-empty{padding:40px;text-align:center;color:var(--muted)}
+    mark[data-qr-highlight]{background:#fff1a8;border-radius:2px}
+    @media(max-width:900px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:1fr 1fr}.qr-head{align-items:flex-start;flex-direction:column}.qr-progress{width:100%}}
+    @media(max-width:620px){.qr-card{padding:14px}.qr-side{grid-template-columns:1fr}.qr-option{padding:10px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr 1fr}.qr-btn.primary{width:100%}}
+  </style>
+</head>
+<body data-page="questoes">
+<div class="app-shell">
+  <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+  <main class="main"><div class="page">
+    <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">PRÁTICA</span><h1>Resolver questões</h1></div></header>
+    <div class="qr-head"><a class="qr-back" href="/questoes-simulados/">← Questões e Simulados</a><div class="qr-title"><small id="qr-kicker">Lista</small><strong id="qr-title">Carregando...</strong></div><div class="qr-progress"><div class="qr-progress-track"><span id="qr-progress-bar" style="width:0"></span></div><b id="qr-progress-text">0/0</b></div></div>
+    <div id="qr-loading" class="qr-card qr-empty">Carregando questões...</div>
+    <section id="qr-layout" class="qr-layout" hidden>
+      <article class="qr-card">
+        <div class="qr-question-meta"><span class="qr-pill" id="qr-number">Questão 1</span><span class="qr-source" id="qr-source"></span></div>
+        <div id="qr-text" class="qr-stem"></div><img id="qr-image" class="qr-image" alt="Imagem da questão" hidden>
+        <div id="qr-options" class="qr-options"></div>
+        <div id="qr-feedback" class="qr-feedback" hidden></div>
+        <div class="qr-actions"><div class="qr-action-group"><button id="qr-prev" class="qr-btn">← Anterior</button><button id="qr-mark" class="qr-btn">☆ Marcar</button></div><div class="qr-action-group"><button id="qr-confirm" class="qr-btn primary">Confirmar resposta</button><button id="qr-next" class="qr-btn">Próxima →</button></div></div>
+        <div id="qr-status" class="qr-status"></div>
+      </article>
+      <aside class="qr-side">
+        <article class="qr-side-card"><div class="qr-timer"><div id="qr-clock" class="qr-clock">00:00</div><div class="qr-timer-copy"><small>Tempo da questão</small><strong id="qr-timer-label">Em andamento</strong></div></div></article>
+        <article class="qr-side-card"><small>Navegação</small><strong>Questões da lista</strong><div id="qr-grid" class="qr-grid"></div></article>
+        <article class="qr-side-card"><small>Ferramentas</small><strong>Durante a resolução</strong><div class="qr-tools"><button id="qr-highlight" class="qr-tool">Marca-texto</button><button id="qr-clear-highlight" class="qr-tool">Limpar</button></div></article>
+      </aside>
+    </section>
+  </div></main>
+</div>
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="/assets/js/supabase.js"></script>
+<script src="/assets/js/app.js?v=17.43-short-eyebrows"></script>
+<script>
+(()=>{
+ const sb=window.supabaseClient, p=new URLSearchParams(location.search), requested=p.get("set_id");
+ const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),started:Date.now(),highlight:false};
+ const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+ function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
+ function firstUnanswered(){const i=state.items.findIndex(x=>!state.attempts.has(x.id));return i<0?0:i}
+ function status(t,type=""){$("qr-status").textContent=t;$("qr-status").style.color=type==="error"?"var(--danger)":type==="success"?"var(--success)":""}
+ function tick(){const s=Math.floor((Date.now()-state.started)/1000);$("qr-clock").textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+ function render(){
+  const item=state.items[state.index]; if(!item)return;
+  state.started=Date.now(); const at=state.attempts.get(item.id), sel=state.selected.get(item.id)||String(at?.selected_option||"").toUpperCase(), confirmed=!!at, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
+  $("qr-number").textContent="Questão "+(state.index+1);$("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";
+  const img=$("qr-image"); if(item.image_url){img.src=item.image_url;img.hidden=false}else{img.hidden=true;img.removeAttribute("src")}
+  const os=opts(item);$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span>'+esc(o.t)+'</span></button>'}).join("");
+  document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{state.selected.set(item.id,b.dataset.opt);render()});
+  const fb=$("qr-feedback"); if(confirmed){const ok=correct&&sel===correct;fb.hidden=false;fb.innerHTML='<div class="qr-result '+(ok?"correct":"wrong")+'">'+(correct?(ok?"Resposta correta":"Resposta incorreta · gabarito: "+esc(correct)):"Resposta registrada")+'</div><div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"A explicação e o Pulo do Gato desta questão aparecerão aqui quando estiverem disponíveis no banco.")+'</p></div>'}else{fb.hidden=true;fb.innerHTML=""}
+  $("qr-confirm").disabled=confirmed;$("qr-confirm").textContent=confirmed?"Resposta confirmada":"Confirmar resposta";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;$("qr-mark").textContent=(state.marked.has(item.id)?"★":"☆")+" Marcar";
+  const done=state.attempts.size,total=state.items.length;$("qr-progress-text").textContent=(state.index+1)+"/"+total;$("qr-progress-bar").style.width=(total?((state.index+1)/total*100):0)+"%";
+  $("qr-grid").innerHTML=state.items.map((x,i)=>'<button class="qr-num '+(i===state.index?"active":state.attempts.has(x.id)?"done":"")+'" data-go="'+i+'">'+(i+1)+'</button>').join("");document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{state.index=Number(b.dataset.go);render()});
+ }
+ async function confirm(){const item=state.items[state.index],selected=state.selected.get(item.id);if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}const correct=String(item.official_answer||"").toUpperCase();const previous=state.attempts.get(item.id)||{};const row={user_id:state.user.id,question_item_id:item.id,selected_option:selected,result:correct?(selected===correct?"correct":"wrong"):"correct",area:previous.area||null,materia:previous.materia||null,correct_option:correct||null,ccq:previous.ccq||null,what_i_thought:previous.what_i_thought||null,sent_to_error:previous.sent_to_error||false,error_entry_id:previous.error_entry_id||null,answered_at:new Date().toISOString()};const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();if(error){status("Não foi possível salvar: "+error.message,"error");return}state.attempts.set(item.id,data||row);status("Resposta salva.","success");render()}
+ async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
+ async function init(){const {data:{user}}=await sb.auth.getUser();if(!user){location.href="/login/";return}state.user=user;let setId=requested;if(!setId){const {data:sets}=await sb.from("question_sets").select("*").eq("user_id",user.id).eq("status","ready").order("created_at",{ascending:false}).limit(10);const pick=(sets||[])[0];setId=pick?.id}if(!setId){$("qr-loading").textContent="Nenhuma lista pronta para resolver.";return}const [{data:set,error:se},{data:items,error:ie},{data:attempts}]=await Promise.all([sb.from("question_sets").select("*").eq("id",setId).single(),sb.from("question_items").select("*").eq("set_id",setId).order("order_index",{ascending:true}),sb.from("question_attempts").select("*")]);if(se||ie||!set){$("qr-loading").textContent="Não foi possível carregar esta lista.";return}state.set=set;state.items=await signedImages(items||[]);const ids=new Set(state.items.map(x=>x.id));(attempts||[]).filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));state.index=firstUnanswered();$("qr-title").textContent=set.title||"Questões";$("qr-kicker").textContent=p.get("daily")==="1"?"Questões do dia":"Lista de questões";$("qr-loading").hidden=true;$("qr-layout").hidden=false;render()}
+ $("qr-confirm").onclick=confirm;$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-mark").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);render()};$("qr-highlight").onclick=()=>{state.highlight=!state.highlight;$("qr-highlight").classList.toggle("active",state.highlight)};$("qr-text").onmouseup=()=>{if(!state.highlight)return;const s=getSelection();if(!s||s.isCollapsed||!s.rangeCount)return;const r=s.getRangeAt(0);if(!$("qr-text").contains(r.commonAncestorContainer.nodeType===3?r.commonAncestorContainer.parentNode:r.commonAncestorContainer))return;const m=document.createElement("mark");m.dataset.qrHighlight="1";try{m.appendChild(r.extractContents());r.insertNode(m);s.removeAllRanges()}catch{}};$("qr-clear-highlight").onclick=()=>{render()};setInterval(tick,1000);init();
+})();
+</script>
+<script defer src="/assets/js/pwa.js?v=3"></script>
+</body></html>
