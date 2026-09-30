@@ -3499,3 +3499,67 @@ body[data-page="erros"] .error-metric-card{
     margin-top:0!important;
   }
 }
+
+
+/* v18.20 — compactação vertical solicitada: Pulo + Métricas -30px */
+@media(min-width:1051px){
+  body[data-page="erros"] .error-cat-spotlight{
+    min-height:108px!important; /* 138px -> 108px */
+    height:108px!important;
+    margin-bottom:10px!important;
+  }
+  body[data-page="erros"] .error-cat-logo{
+    height:88px!important;
+  }
+  body[data-page="erros"] .error-cat-logo img{
+    max-height:78px!important;
+  }
+  body[data-page="erros"] .error-cat-copy{
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+  }
+
+  /* Métricas rápidas: reduz 30px no conjunto sem comprimir o conteúdo de forma desigual. */
+  body[data-page="erros"] .error-quick-metrics{
+    box-sizing:border-box!important;
+    padding-top:12px!important;
+    padding-bottom:12px!important;
+  }
+  body[data-page="erros"] .error-quick-metrics .error-side-head{
+    margin-bottom:7px!important;
+  }
+  body[data-page="erros"] .error-metric-summary-grid>div{
+    min-height:78px!important;
+    padding-top:9px!important;
+    padding-bottom:9px!important;
+  }
+  body[data-page="erros"] .error-metric-progress{
+    padding-top:9px!important;
+    padding-bottom:9px!important;
+  }
+  body[data-page="erros"] .error-metric-ring{
+    width:72px!important;
+    height:72px!important;
+  }
+  body[data-page="erros"] .error-metric-mini-grid>div{
+    min-height:56px!important;
+    padding-top:7px!important;
+    padding-bottom:7px!important;
+  }
+  body[data-page="erros"] .error-metric-areas{
+    gap:7px!important;
+  }
+
+  /* O bloco Cadernos a revisar hoje e seus três botões começa no topo disponível. */
+  body[data-page="erros"] .error-review-home-content,
+  body[data-page="erros"] .error-review-home-actions,
+  body[data-page="erros"] .error-review-home-buttons{
+    margin-top:0!important;
+  }
+  body[data-page="erros"] .error-home-layout.review-mode .error-review-home-content{
+    align-self:start!important;
+  }
+  body[data-page="erros"] .error-review-home-buttons{
+    align-items:flex-start!important;
+  }
+}
