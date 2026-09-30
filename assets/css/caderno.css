@@ -3975,3 +3975,11 @@ body[data-page="caderno"] .note-more-menu > .notebook-tool-menu-wrap > button {
   font-size: 12px !important;
   font-weight: 400 !important;
 }
+
+
+/* v25.3 — menus compactos do editor */
+body[data-page="caderno"] .notebook-tool-menu button {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 1.25 !important;
+}
