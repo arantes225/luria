@@ -9070,7 +9070,7 @@ function renderHomeDashboard() {
 
   if (myListsContainer) {
     const personalSets =
-      sets.slice(0, 4);
+      sets.slice(0, 3);
 
     if (!personalSets.length) {
       myListsContainer.innerHTML =
