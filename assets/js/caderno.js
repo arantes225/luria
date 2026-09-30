@@ -2669,6 +2669,8 @@ function setEditorEnabled(
     "notebook-list-toggle",
     "notebook-template",
     "notebook-divider",
+    "notebook-paper-toggle",
+    "notebook-columns",
     "notebook-table-toggle",
     "notebook-image-add",
     "notebook-emoji-toggle",
