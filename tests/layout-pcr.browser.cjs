@@ -50,6 +50,17 @@ console.error("OVERFLOW",label,await page.evaluate(()=>[...document.querySelecto
 }
 if(dimensions.scroll>dimensions.width+2)failures.push(label+" "+viewport.width+" document overflow: "+JSON.stringify(dimensions));
 }
+async function checkActions(selector){
+const rows=await page.locator(selector).evaluateAll(nodes=>nodes.map(card=>{
+const icon=card.querySelector(".error-home-action-icon")||card.querySelector("i");
+const copy=card.querySelector(".error-home-action-copy")||card.querySelector(":scope>span");
+const arrow=card.querySelector(".error-home-action-arrow")||card.querySelector(":scope>b");
+if(!icon||!copy||!arrow)return{valid:false};
+const a=card.getBoundingClientRect(),i=icon.getBoundingClientRect(),c=copy.getBoundingClientRect(),r=arrow.getBoundingClientRect();
+return{valid:i.left<c.left&&r.left>=c.left&&Math.abs(a.right-r.right)<=24&&getComputedStyle(copy).textAlign==="left",rightGap:a.right-r.right,icon:i.left,copy:c.left,arrow:r.left};
+}));
+if(rows.some(row=>!row.valid))failures.push("Action alignment "+viewport.width+": "+JSON.stringify(rows));
+}
 await goto("/beta-testers/");
 await page.locator(".beta-feedback-card").waitFor();assert.match(await page.locator("#beta-feedback-list").innerText(),/Beta fixture/);
 assert.ok(await page.locator("#beta-testers-nav-link").count());
@@ -60,7 +71,7 @@ assert.equal(await page.locator("#flash-home-decks-list [data-v21-area]").count(
 assert.equal(await page.locator(".flash-home-decks-head button").count(),0);
 const scroll=await page.locator("#flash-home-decks-list .flash-deck-cards").evaluate(el=>({width:el.clientWidth,scroll:el.scrollWidth,overflow:getComputedStyle(el).overflowX}));
 assert.ok(scroll.scroll>scroll.width && scroll.overflow==="auto","Horizontal deck scroll");
-await noOverflow("Flashcards");
+await noOverflow("Flashcards");await checkActions(".flash-home-action");
 const flashHero=await page.locator("#review-launcher").evaluate(el=>{const s=getComputedStyle(el);return{height:el.getBoundingClientRect().height,background:s.backgroundImage,align:s.alignItems,font:getComputedStyle(el.querySelector("h3")).fontSize,count:getComputedStyle(el.querySelector("#review-launcher-count")).fontSize};});
 await page.locator("#flash-home-decks-list [data-v21-area]").last().scrollIntoViewIfNeeded();
 await page.locator("#flash-home-decks-list [data-v21-area]").last().click();
@@ -71,11 +82,11 @@ await page.locator('[data-flash-home-tab="create"]').click();
 await page.waitForFunction(()=>document.querySelector('[data-flash-section="create"]').classList.contains("active"));
 console.log("PASS Flashcards decks and create "+viewport.width);
 await goto("/caderno-erros/");
-await noOverflow("Caderno de Erros");
+await noOverflow("Caderno de Erros");await checkActions(".error-home-actions .error-home-action");
 await goto("/questoes-simulados/");
 const questionHero=await page.locator("#qs-daily-card").evaluate(el=>{const s=getComputedStyle(el);return{height:el.getBoundingClientRect().height,background:s.backgroundImage,align:s.alignItems,font:getComputedStyle(el.querySelector("h2")).fontSize,count:getComputedStyle(el.querySelector(".qs-home-daily-count")).fontSize};});
 assert.deepEqual(questionHero,flashHero,"Daily cards share dimensions and typography");
-await noOverflow("Questões");
+await noOverflow("Questões");await checkActions(".qs-home-actions-compact .error-home-action");
 await goto("/cronograma/");
 await page.locator(".week-matrix-grid").waitFor();
 assert.equal(await page.locator(".week-category-label strong").count(),7);
