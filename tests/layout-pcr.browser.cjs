@@ -73,6 +73,7 @@ assert.equal(await page.locator(".flash-home-decks-head button").count(),0);
 const scroll=await page.locator("#flash-home-decks-list .flash-deck-cards").evaluate(el=>({width:el.clientWidth,scroll:el.scrollWidth,overflow:getComputedStyle(el).overflowX}));
 assert.ok(scroll.scroll>scroll.width && scroll.overflow==="auto","Horizontal deck scroll");
 await noOverflow("Flashcards");await checkActions(".flash-home-action");
+const sharedMenuStyle=await page.locator("#menu-open").evaluate(el=>{const s=getComputedStyle(el);return {width:s.width,height:s.height,minWidth:s.minWidth,minHeight:s.minHeight,borderRadius:s.borderRadius,padding:s.padding,fontSize:s.fontSize,background:s.backgroundColor,position:s.position};});
 const flashHero=await page.locator("#review-launcher").evaluate(el=>{const s=getComputedStyle(el);return{height:el.getBoundingClientRect().height,background:s.backgroundImage,align:s.alignItems,font:getComputedStyle(el.querySelector("h3")).fontSize,count:getComputedStyle(el.querySelector("#review-launcher-count")).fontSize};});
 await page.locator("#flash-home-decks-list [data-v21-area]").last().scrollIntoViewIfNeeded();
 await page.locator("#flash-home-decks-list [data-v21-area]").last().click();
@@ -88,6 +89,10 @@ for(const view of ["library","editor"]){
  await page.locator("#notebook-view-"+view).waitFor({state:"visible"});
  if(viewport.width<980){
   const menu=page.locator("#menu-open");assert.ok(await menu.isVisible(),"Notes menu visible in "+view);
+  const notesMenuStyle=await menu.evaluate(el=>{const s=getComputedStyle(el);return {width:s.width,height:s.height,minWidth:s.minWidth,minHeight:s.minHeight,borderRadius:s.borderRadius,padding:s.padding,fontSize:s.fontSize,background:s.backgroundColor,position:s.position};});
+  assert.deepEqual(notesMenuStyle,sharedMenuStyle,"Notes PWA menu follows shared page styling");
+  assert.ok(await page.locator(".topbar #menu-open").count(),"Notes menu is in shared header");
+  assert.equal(await page.locator(".notebook-mobile-navigation").count(),0,"No separate notes navigation bar");
   await menu.click();await page.waitForFunction(()=>document.body.classList.contains("sidebar-open"));
   await page.waitForTimeout(250);
   const rect=await page.locator("#sidebar").boundingBox();assert.ok(rect.x>=-1&&rect.width>100,"Notes sidebar opens");

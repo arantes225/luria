@@ -3984,19 +3984,6 @@ body[data-page="caderno"] .notebook-tool-menu button {
   line-height: 1.25 !important;
 }
 
-/* Navigation remains available in the library and editor on mobile. */
-body[data-page="caderno"] .notebook-mobile-navigation{display:none}
-@media(max-width:980px){
- html body[data-page="caderno"] .notebook-page>.notebook-mobile-navigation{
-  display:flex!important;align-items:center;gap:12px;position:sticky;top:0;z-index:40;
-  padding:8px 0;margin-bottom:10px;background:var(--bg);color:var(--text);font-size:14px;
- }
- html body[data-page="caderno"] .notebook-mobile-navigation #menu-open{
-  display:inline-grid!important;place-items:center!important;position:static!important;
-  flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;
-  margin:0!important;padding:0!important;transform:none!important;visibility:visible!important;opacity:1!important;
- }
-}
 
 @media(max-width:980px){
  html body[data-page="caderno"] #sidebar.sidebar{z-index:260!important}
