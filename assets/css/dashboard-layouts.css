@@ -4385,3 +4385,29 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
     transform:translateY(20px)!important;
   }
 }
+
+
+/* Dashboard v64 — geometria estável do card de título em navegação normal e hard refresh */
+body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+  box-sizing:border-box!important;
+  width:100%!important;
+  min-width:0!important;
+  height:138px!important;
+  min-height:138px!important;
+  max-height:138px!important;
+  margin:0 0 14px!important;
+  padding:24px 28px!important;
+  flex:0 0 138px!important;
+  align-self:stretch!important;
+  overflow:hidden!important;
+}
+
+@media(max-width:980px){
+  body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:20px!important;
+    flex-basis:118px!important;
+  }
+}
