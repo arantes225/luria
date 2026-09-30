@@ -8923,6 +8923,16 @@ function renderHomeDashboard() {
     || sets[0]
     || null;
 
+  const dailyCountElement =
+    document.getElementById("qs-home-daily-count");
+
+  if (dailyCountElement) {
+    const dailyTotal = Number(nextSet?.total_questions || 0);
+    dailyCountElement.textContent = dailyTotal > 0
+      ? `${dailyTotal} questões`
+      : "Questões disponíveis";
+  }
+
   const nextTitle =
     document.getElementById(
       "qs-home-next-title"
