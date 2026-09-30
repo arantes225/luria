@@ -2634,6 +2634,32 @@ body[data-page="questoes"] .qs-home-system:after{
 body[data-page="questoes"] .qs-home-system-copy{position:relative!important;z-index:2!important}
 body[data-page="questoes"] .qs-home-system-meta{display:none!important}
 </style>
+
+<style id="qs-daily-title-rule-v30">
+/* Fundo da página permanece o padrão global; somente o box Questões do dia segue o card de título. */
+body[data-page="questoes"] .qs-home-system{
+  background:#184888!important;
+  border-color:#184888!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
+body[data-page="questoes"] .qs-home-system::before,
+body[data-page="questoes"] .qs-home-system::after{display:none!important;content:none!important}
+body[data-page="questoes"] .qs-home-system h2,
+body[data-page="questoes"] .qs-home-system p,
+body[data-page="questoes"] .qs-home-system .qs-home-eyebrow{color:#fff!important}
+:root[data-theme="dark"] body[data-page="questoes"] .qs-home-system,
+body.theme-dark[data-page="questoes"] .qs-home-system{
+  background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;
+  border-color:#20344F!important;
+}
+:root[data-theme="leila-mood"] body[data-page="questoes"] .qs-home-system,
+:root[data-theme="pink"] body[data-page="questoes"] .qs-home-system,
+:root[data-theme="rosa"] body[data-page="questoes"] .qs-home-system{
+  background:var(--accent)!important;
+  border-color:var(--accent)!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
