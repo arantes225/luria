@@ -1531,3 +1531,10 @@ document.addEventListener("DOMContentLoaded",()=>{
 <style id="flash-review-count-v63">
 body[data-page="flashcards"] #review-launcher-count{font-size:19px!important;line-height:1.1!important;font-weight:700!important}
 </style>
+
+<style id="flash-daily-clean-v64">
+/* Revisões do dia: remove o semicírculo decorativo e iguala o contador ao tamanho de Questões do dia. */
+body[data-page="flashcards"] #review-launcher:after{display:none!important;content:none!important;box-shadow:none!important}
+body[data-page="flashcards"] #review-launcher-count,
+body[data-page="flashcards"] .review-launcher-action strong{font-size:13px!important;line-height:1.1!important;font-weight:800!important;color:#fff!important}
+</style>
