@@ -8927,10 +8927,7 @@ function renderHomeDashboard() {
     document.getElementById("qs-home-daily-count");
 
   if (dailyCountElement) {
-    const dailyTotal = Number(nextSet?.total_questions || 0);
-    dailyCountElement.textContent = dailyTotal > 0
-      ? `${dailyTotal} questões`
-      : "Questões disponíveis";
+    dailyCountElement.textContent = "50 questões";
   }
 
   const nextTitle =
