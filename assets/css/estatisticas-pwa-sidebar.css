@@ -168,3 +168,48 @@
     font-weight: 700 !important;
   }
 }
+
+/* v2 — switches de Estatísticas respeitam o tema em web e PWA */
+body[data-page="estatisticas"] .stats-tabs-shell,
+body[data-page="estatisticas"] .stats-range{
+  background:var(--surface)!important;
+  border-color:var(--border)!important;
+  color:var(--text)!important;
+  box-shadow:none!important;
+}
+body[data-page="estatisticas"] .stats-tab,
+body[data-page="estatisticas"] .stats-range button{
+  background:transparent!important;
+  color:var(--muted)!important;
+  border-color:transparent!important;
+  box-shadow:none!important;
+}
+body[data-page="estatisticas"] .stats-tab.active,
+body[data-page="estatisticas"] .stats-range button.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+  border-color:var(--accent)!important;
+  box-shadow:none!important;
+}
+
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-tabs-shell,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-range{
+  background:#0D1B30!important;
+  border-color:#20344F!important;
+}
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-tab,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-range button{
+  background:transparent!important;
+  color:#A8B8CD!important;
+}
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-tab:hover,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-range button:hover{
+  background:#13233A!important;
+  color:#F4F8FF!important;
+}
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-tab.active,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-range button.active{
+  background:#4F7FB8!important;
+  color:#fff!important;
+  border-color:#4F7FB8!important;
+}
