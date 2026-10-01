@@ -1606,3 +1606,105 @@ body[data-page="flashcards"].flash-review-session-active #review-empty[hidden]{d
 body[data-page="flashcards"].flash-review-session-active .review-card{width:100%!important;box-sizing:border-box!important}
 @media(max-width:700px){body[data-page="flashcards"].flash-review-session-active .page{padding:12px!important}body[data-page="flashcards"].flash-review-session-active #review-focus-toolbar{grid-template-columns:1fr!important;position:static!important}}
 </style>
+
+<style id="flash-create-compact-v66">
+/* Novo flashcard mais compacto e rápido de preencher */
+body[data-page="flashcards"] .flash-section[data-flash-section="create"]>.panel{
+  max-width:980px!important;
+  margin:0 auto!important;
+  padding:16px 18px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+  border-radius:14px!important;
+  background:var(--surface)!important;
+  box-shadow:0 8px 22px rgba(15,40,75,.05)!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .panel-header{
+  margin:0 0 12px!important;
+  padding:0 0 10px!important;
+  border-bottom:1px solid color-mix(in srgb,var(--accent) 9%,var(--border))!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .panel-header h2{
+  margin:0!important;
+  font-size:17px!important;
+  line-height:1.15!important;
+  letter-spacing:-.015em!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .panel-header p{
+  margin:4px 0 0!important;
+  font-size:9px!important;
+  line-height:1.35!important;
+  color:var(--muted)!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-form-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  gap:10px 12px!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-field{
+  gap:5px!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-field>span{
+  font-size:9px!important;
+  font-weight:750!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-field.full{
+  grid-column:1 / -1!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-click-select,
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] input[type="file"]{
+  min-height:38px!important;
+  height:38px!important;
+  border-radius:9px!important;
+  font-size:9px!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] textarea{
+  min-height:92px!important;
+  height:92px!important;
+  padding:10px 11px!important;
+  border-radius:10px!important;
+  font-size:10px!important;
+  line-height:1.4!important;
+  resize:vertical!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] #create-back{
+  min-height:104px!important;
+  height:104px!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-actions{
+  display:flex!important;
+  align-items:center!important;
+  gap:8px!important;
+  margin-top:12px!important;
+  padding-top:10px!important;
+  border-top:1px solid color-mix(in srgb,var(--accent) 9%,var(--border))!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-actions .button{
+  min-height:38px!important;
+  padding:0 14px!important;
+  border-radius:9px!important;
+  font-size:9px!important;
+  font-weight:800!important;
+}
+body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-status{
+  font-size:8.5px!important;
+}
+@media(max-width:700px){
+  body[data-page="flashcards"] .flash-section[data-flash-section="create"]>.panel{
+    padding:14px!important;
+  }
+  body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-form-grid{
+    grid-template-columns:1fr!important;
+  }
+  body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-field.full{
+    grid-column:auto!important;
+  }
+  body[data-page="flashcards"] .flash-section[data-flash-section="create"] textarea,
+  body[data-page="flashcards"] .flash-section[data-flash-section="create"] #create-back{
+    min-height:88px!important;
+    height:88px!important;
+  }
+  body[data-page="flashcards"] .flash-section[data-flash-section="create"] .flash-actions{
+    flex-wrap:wrap!important;
+  }
+}
+</style>
