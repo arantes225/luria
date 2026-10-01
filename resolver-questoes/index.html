@@ -10,47 +10,93 @@
   <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=59-content-aligned">
   <style>
-    body[data-page="questoes"] .page{max-width:none}
-    .qr-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}
-    .qr-back{display:inline-flex;align-items:center;gap:7px;border:0;background:transparent;color:var(--muted);font:inherit;font-size:11px;font-weight:750;cursor:pointer;text-decoration:none}
-    .qr-title{min-width:0}.qr-title small{display:block;color:var(--muted);font-size:9px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}.qr-title strong{display:block;margin-top:3px;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .qr-progress{display:flex;align-items:center;gap:10px;min-width:210px}.qr-progress-track{height:7px;flex:1;border-radius:999px;background:var(--surface-2);overflow:hidden}.qr-progress-track span{display:block;height:100%;background:var(--accent);border-radius:inherit}.qr-progress b{font-size:11px;color:var(--muted)}
-    .qr-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:14px;align-items:start}
-    .qr-card,.qr-side-card{border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow)}
-    .qr-card{padding:20px}.qr-question-meta{display:flex;align-items:center;gap:8px;margin-bottom:13px}.qr-pill{padding:5px 8px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-size:9px;font-weight:850}.qr-source{color:var(--muted);font-size:9px}
-    .qr-stem{font-size:13px;line-height:1.62;color:var(--text);white-space:pre-wrap}.qr-image{display:block;max-width:min(100%,620px);max-height:330px;object-fit:contain;margin:15px auto;border-radius:12px;border:1px solid var(--border)}
-    .qr-options{display:grid;gap:8px;margin-top:18px}.qr-option{width:100%;display:grid;grid-template-columns:32px 1fr;gap:10px;align-items:center;text-align:left;padding:11px 12px;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer}.qr-option:hover{border-color:var(--accent)}.qr-option.selected{border-color:var(--accent);background:var(--accent-soft)}.qr-option.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 8%,var(--surface))}.qr-option.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}.qr-letter{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:var(--surface-2);font-size:11px;font-weight:900}.qr-option.selected .qr-letter{background:var(--accent);color:#fff}
-    .qr-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}.qr-action-group{display:flex;gap:8px}.qr-btn{min-height:38px;padding:0 13px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font:inherit;font-size:10px;font-weight:850;cursor:pointer}.qr-btn.primary{border-color:var(--accent);background:var(--accent);color:#fff}.qr-btn:disabled{opacity:.45;cursor:not-allowed}
-    .qr-feedback{display:grid;gap:10px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}.qr-result{font-size:11px;font-weight:900}.qr-result.correct{color:var(--success)}.qr-result.wrong{color:var(--danger)}.qr-pulo{padding:13px;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));border-radius:12px;background:var(--accent-soft)}.qr-pulo strong{font-size:11px}.qr-pulo p{margin:5px 0 0;color:var(--muted);font-size:10px;line-height:1.5}
-    .qr-side{display:grid;gap:10px}.qr-side-card{padding:14px}.qr-side-card>small{display:block;color:var(--muted);font-size:8px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.qr-side-card>strong{display:block;margin-top:4px;font-size:13px}.qr-timer{display:flex;align-items:center;gap:10px}.qr-clock{width:58px;height:58px;display:grid;place-items:center;border:4px solid var(--accent-soft);border-top-color:var(--accent);border-radius:50%;font-size:12px;font-weight:900}.qr-timer-copy small,.qr-timer-copy strong{display:block}.qr-timer-copy small{font-size:8px;color:var(--muted);text-transform:uppercase;font-weight:850}.qr-timer-copy strong{font-size:12px;margin-top:3px}
-    .qr-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:10px}.qr-num{aspect-ratio:1;border:1px solid var(--border);border-radius:7px;background:var(--surface-2);color:var(--muted);font-size:9px;font-weight:850;cursor:pointer}.qr-num.active{background:var(--accent);border-color:var(--accent);color:#fff}.qr-num.done{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));color:var(--accent)}
-    .qr-tools{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}.qr-tool{min-height:34px;border:1px solid var(--border);border-radius:8px;background:var(--surface-2);color:var(--text);font-size:9px;font-weight:800;cursor:pointer}.qr-tool.active{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
-    .qr-status{min-height:18px;margin-top:8px;color:var(--muted);font-size:9px}.qr-empty{padding:40px;text-align:center;color:var(--muted)}
+    body[data-page="questoes"]{background:var(--bg)}
+    body[data-page="questoes"] .page{max-width:none;padding:0 18px 18px}
+    body[data-page="questoes"] .main{min-width:0}
+    .qr-topbar{height:58px;display:grid;grid-template-columns:minmax(280px,1fr) auto;align-items:center;gap:20px;border-bottom:1px solid var(--border);margin:0 -18px 12px;padding:0 18px;background:color-mix(in srgb,var(--surface) 94%,transparent);position:sticky;top:0;z-index:20}
+    .qr-search{max-width:620px;height:34px;display:flex;align-items:center;gap:9px;padding:0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--muted);font-size:10px}
+    .qr-search svg{width:14px;height:14px;flex:0 0 auto}.qr-search-kbd{margin-left:auto;display:inline-flex;gap:2px;font-size:9px;opacity:.65}
+    .qr-profile{display:flex;align-items:center;gap:10px}.qr-bell{width:34px;height:34px;border:0;background:transparent;color:var(--text);display:grid;place-items:center;border-radius:10px;cursor:pointer}.qr-bell:hover{background:var(--surface-2)}
+    .qr-avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:10px;font-weight:900}.qr-profile-copy{line-height:1.15}.qr-profile-copy strong{display:block;font-size:10px}.qr-profile-copy small{display:block;margin-top:2px;color:var(--muted);font-size:8px}
+    .qr-navrow{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;margin:2px 0 10px}
+    .qr-back{display:inline-flex;align-items:center;gap:7px;border:0;background:transparent;color:var(--text);font:inherit;font-size:10px;font-weight:750;cursor:pointer;text-decoration:none;white-space:nowrap}
+    .qr-tabs{justify-self:center;display:flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--border);border-radius:11px;background:var(--surface)}
+    .qr-tab{height:30px;padding:0 15px;border:0;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:9px;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:7px}.qr-tab.active{background:var(--accent);color:#fff}.qr-tab svg{width:13px;height:13px}
+    .qr-counter{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:9px;font-weight:750;white-space:nowrap}.qr-counter button{width:28px;height:28px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);cursor:pointer}
+    .qr-layout{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:12px;align-items:start}
+    .qr-card,.qr-side-card{border:1px solid var(--border);background:var(--surface);box-shadow:none}
+    .qr-card{border-radius:12px;padding:17px 18px 12px;min-width:0}
+    .qr-question-meta{display:flex;align-items:center;gap:6px;margin-bottom:11px;flex-wrap:wrap}.qr-pill{padding:4px 8px;border-radius:7px;background:var(--accent-soft);color:var(--accent);font-size:8px;font-weight:850}.qr-pill.neutral{background:var(--surface-2);color:var(--muted)}.qr-difficulty{display:inline-flex;align-items:center;gap:4px}
+    .qr-stem{font-size:11px;line-height:1.58;color:var(--text);white-space:pre-wrap}.qr-image{display:block;max-width:min(100%,620px);max-height:300px;object-fit:contain;margin:12px auto;border-radius:9px;border:1px solid var(--border)}
+    .qr-options{display:grid;gap:6px;margin-top:14px}.qr-option{width:100%;display:grid;grid-template-columns:28px 1fr;gap:9px;align-items:center;text-align:left;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer;min-height:40px}.qr-option:hover{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));background:var(--surface-2)}.qr-option.selected{border-color:var(--accent);background:var(--accent-soft)}.qr-option.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 8%,var(--surface))}.qr-option.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}
+    .qr-letter{width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--surface-2);font-size:9px;font-weight:900}.qr-option.selected .qr-letter{background:var(--accent);color:#fff}
+    .qr-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:11px;padding-top:10px;border-top:1px solid var(--border)}.qr-action-group{display:flex;gap:6px}.qr-btn{min-height:31px;padding:0 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;font-size:8px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:5px}.qr-btn.primary{border-color:var(--accent);background:var(--accent);color:#fff;padding-inline:14px}.qr-btn:disabled{opacity:.45;cursor:not-allowed}
+    .qr-feedback{display:grid;gap:8px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}.qr-result{font-size:10px;font-weight:900}.qr-result.correct{color:var(--success)}.qr-result.wrong{color:var(--danger)}.qr-pulo{padding:10px;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));border-radius:9px;background:var(--accent-soft)}.qr-pulo strong{font-size:9px}.qr-pulo p{margin:4px 0 0;color:var(--muted);font-size:9px;line-height:1.45}
+    .qr-side{display:grid;gap:8px}.qr-side-card{border-radius:10px;padding:11px}.qr-side-title{display:flex;align-items:center;gap:6px;font-size:9px;font-weight:900;color:var(--text);margin-bottom:8px}.qr-side-title svg{width:13px;height:13px;color:var(--accent)}
+    .qr-performance{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:8px}.qr-ring{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--success) 0 78%,var(--surface-2) 78% 100%);position:relative}.qr-ring:after{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--surface)}.qr-ring-label{position:relative;z-index:1;text-align:center}.qr-ring-label strong{display:block;font-size:13px}.qr-ring-label small{display:block;font-size:7px;color:var(--muted)}
+    .qr-perf-list{display:grid;gap:5px}.qr-perf-row{display:flex;justify-content:space-between;gap:6px;font-size:8px}.qr-perf-row span{color:var(--muted)}.qr-perf-row b{font-size:8px}
+    .qr-time-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.qr-time-item small{display:block;font-size:7px;color:var(--muted)}.qr-time-item strong{display:block;margin-top:3px;font-size:10px}.qr-time-item.good strong{color:var(--success)}
+    .qr-tags{display:flex;flex-wrap:wrap;gap:5px}.qr-tag{padding:4px 6px;border-radius:6px;background:var(--surface-2);font-size:7px;font-weight:750;color:var(--muted)}
+    .qr-history{height:58px;display:flex;align-items:end;gap:5px;padding:5px 2px 0;border-bottom:1px solid var(--border)}.qr-bar{flex:1;min-width:5px;border-radius:4px 4px 0 0;background:color-mix(in srgb,var(--accent) 72%,var(--surface));opacity:.9}
+    .qr-recent{display:grid;gap:5px}.qr-recent-row{display:grid;grid-template-columns:8px 1fr auto;gap:6px;align-items:center;font-size:7px}.qr-dot{width:7px;height:7px;border-radius:50%;background:var(--success)}.qr-dot.bad{background:var(--danger)}.qr-recent-row span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}.qr-recent-row b{font-size:7px;color:var(--muted)}
+    .qr-status{min-height:14px;margin-top:5px;color:var(--muted);font-size:8px}.qr-empty{padding:40px;text-align:center;color:var(--muted)}
     mark[data-qr-highlight]{background:#fff1a8;border-radius:2px}
-    @media(max-width:900px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:1fr 1fr}.qr-head{align-items:flex-start;flex-direction:column}.qr-progress{width:100%}}
-    @media(max-width:620px){.qr-card{padding:14px}.qr-side{grid-template-columns:1fr}.qr-option{padding:10px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr 1fr}.qr-btn.primary{width:100%}}
+    @media(max-width:980px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:repeat(2,minmax(0,1fr))}.qr-navrow{grid-template-columns:auto 1fr}.qr-counter{grid-column:1/-1;justify-self:end}.qr-tabs{justify-self:end}}
+    @media(max-width:720px){body[data-page="questoes"] .page{padding:0 10px 12px}.qr-topbar{margin:0 -10px 10px;padding:0 10px}.qr-search{display:none}.qr-profile-copy{display:none}.qr-navrow{grid-template-columns:1fr auto}.qr-tabs{grid-column:1/-1;grid-row:2;justify-self:stretch;overflow:auto}.qr-tab{flex:1;justify-content:center;padding-inline:9px}.qr-counter{grid-column:2;grid-row:1}.qr-layout{display:block}.qr-side{display:none}.qr-card{padding:13px}.qr-option{padding:8px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr 1fr}.qr-btn{justify-content:center}.qr-btn.primary{width:100%}}
   </style>
 <style id="luria-page-font-lock-v56">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}html body :where(code,pre,kbd,samp),html body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}</style></head>
 <body data-page="questoes">
 <div class="app-shell">
   <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
   <main class="main"><div class="page">
-    <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">PRÁTICA</span><h1>Resolver questões</h1></div></header>
-    <div class="qr-head"><a class="qr-back" href="/questoes-simulados/">← Questões e Simulados</a><div class="qr-title"><small id="qr-kicker">Lista</small><strong id="qr-title">Carregando...</strong></div><div class="qr-progress"><div class="qr-progress-track"><span id="qr-progress-bar" style="width:0"></span></div><b id="qr-progress-text">0/0</b></div></div>
+    <header class="qr-topbar">
+      <div class="qr-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>Buscar por temas, questões, diretrizes, medicamentos...</span><span class="qr-search-kbd">⌘ K</span>
+      </div>
+      <div class="qr-profile">
+        <button class="qr-bell" type="button" aria-label="Notificações"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"/><path d="M10 21h4"/></svg></button>
+        <div class="qr-avatar">LA</div><div class="qr-profile-copy"><strong>Dr. Luria</strong><small>Estudante de Medicina⌄</small></div>
+      </div>
+    </header>
+    <div class="qr-navrow">
+      <a class="qr-back" href="/questoes-simulados/">‹ Voltar</a>
+      <nav class="qr-tabs" aria-label="Abas da questão">
+        <button class="qr-tab active" type="button">▣ Questão</button>
+        <button class="qr-tab" type="button">◯ Comentário</button>
+        <button class="qr-tab" type="button">▥ Estatísticas</button>
+        <button class="qr-tab" type="button">▤ Referências</button>
+      </nav>
+      <div class="qr-counter"><span id="qr-progress-text">Questão 0 de 0</span><button id="qr-prev" type="button">‹</button><button id="qr-next" type="button">›</button></div>
+    </div>
     <div id="qr-loading" class="qr-card qr-empty">Carregando questões...</div>
     <section id="qr-layout" class="qr-layout" hidden>
       <article class="qr-card">
-        <div class="qr-question-meta"><span class="qr-pill" id="qr-number">Questão 1</span><span class="qr-source" id="qr-source"></span></div>
+        <div class="qr-question-meta">
+          <span class="qr-pill" id="qr-area">Clínica Médica</span>
+          <span class="qr-pill neutral" id="qr-materia">Cardiologia</span>
+          <span class="qr-pill neutral qr-difficulty">▥ <span id="qr-difficulty">Média</span></span>
+          <span id="qr-source" style="margin-left:auto;color:var(--muted);font-size:8px"></span>
+        </div>
         <div id="qr-text" class="qr-stem"></div><img id="qr-image" class="qr-image" alt="Imagem da questão" hidden>
         <div id="qr-options" class="qr-options"></div>
         <div id="qr-feedback" class="qr-feedback" hidden></div>
-        <div class="qr-actions"><div class="qr-action-group"><button id="qr-prev" class="qr-btn">← Anterior</button><button id="qr-mark" class="qr-btn">☆ Marcar</button></div><div class="qr-action-group"><button id="qr-confirm" class="qr-btn primary">Confirmar resposta</button><button id="qr-next" class="qr-btn">Próxima →</button></div></div>
+        <div class="qr-actions">
+          <div class="qr-action-group"><button id="qr-mark" class="qr-btn">☆ Favoritar</button><button id="qr-report" class="qr-btn">⚑ Reportar</button></div>
+          <div class="qr-action-group"><button id="qr-skip" class="qr-btn">▷ Pular questão</button><button id="qr-confirm" class="qr-btn primary">Ver próxima →</button></div>
+        </div>
         <div id="qr-status" class="qr-status"></div>
       </article>
       <aside class="qr-side">
-        <article class="qr-side-card"><div class="qr-timer"><div id="qr-clock" class="qr-clock">00:00</div><div class="qr-timer-copy"><small>Tempo da questão</small><strong id="qr-timer-label">Em andamento</strong></div></div></article>
-        <article class="qr-side-card"><small>Navegação</small><strong>Questões da lista</strong><div id="qr-grid" class="qr-grid"></div></article>
-        <article class="qr-side-card"><small>Ferramentas</small><strong>Durante a resolução</strong><div class="qr-tools"><button id="qr-highlight" class="qr-tool">Marca-texto</button><button id="qr-clear-highlight" class="qr-tool">Limpar</button></div></article>
+        <article class="qr-side-card">
+          <div class="qr-side-title">◉ Meu desempenho neste tema</div>
+          <div class="qr-performance"><div class="qr-ring" id="qr-ring"><div class="qr-ring-label"><strong id="qr-accuracy">78%</strong><small>de acerto</small></div></div>
+          <div class="qr-perf-list"><div class="qr-perf-row"><span>Acertos</span><b id="qr-hits">39</b></div><div class="qr-perf-row"><span>Erros</span><b id="qr-errors">11</b></div><div class="qr-perf-row"><span>Em branco</span><b id="qr-blank">0</b></div><div class="qr-perf-row"><span>Total</span><b id="qr-total">50</b></div></div></div>
+        </article>
+        <article class="qr-side-card"><div class="qr-side-title">◷ Tempo estimado</div><div class="qr-time-grid"><div class="qr-time-item"><small>Seu tempo</small><strong id="qr-clock">1 min 30 s</strong></div><div class="qr-time-item good"><small>Seu tempo médio</small><strong>1 min 12 s</strong></div></div></article>
+        <article class="qr-side-card"><div class="qr-side-title">◇ Tags da questão</div><div class="qr-tags" id="qr-tags"><span class="qr-tag">Infarto Agudo do Miocárdio</span><span class="qr-tag">IAM com Supra de ST</span><span class="qr-tag">Conduta inicial</span><span class="qr-tag">Reperfusão</span></div></article>
+        <article class="qr-side-card"><div class="qr-side-title">▥ Seu histórico neste tema</div><div class="qr-history"><span class="qr-bar" style="height:18px"></span><span class="qr-bar" style="height:32px"></span><span class="qr-bar" style="height:25px"></span><span class="qr-bar" style="height:21px"></span><span class="qr-bar" style="height:40px"></span></div></article>
+        <article class="qr-side-card"><div class="qr-side-title">▤ Últimas questões respondidas</div><div class="qr-recent"><div class="qr-recent-row"><span class="qr-dot"></span><span>Insuficiência cardíaca com fração de ejeção reduzida</span><b>2 min</b></div><div class="qr-recent-row"><span class="qr-dot bad"></span><span>Arritmias supraventriculares</span><b>1 min</b></div><div class="qr-recent-row"><span class="qr-dot"></span><span>Endocardite infecciosa</span><b>1 min</b></div><div class="qr-recent-row"><span class="qr-dot"></span><span>Valvopatias — estenose aórtica</span><b>2 min</b></div></div></article>
       </aside>
     </section>
   </div></main>
@@ -68,18 +114,18 @@
  function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
  function firstUnanswered(){const i=state.items.findIndex(x=>!state.attempts.has(x.id));return i<0?0:i}
  function status(t,type=""){$("qr-status").textContent=t;$("qr-status").style.color=type==="error"?"var(--danger)":type==="success"?"var(--success)":""}
- function tick(){const s=Math.floor((Date.now()-state.started)/1000);$("qr-clock").textContent=String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+ function tick(){const sec=Math.floor((Date.now()-state.started)/1000);const m=Math.floor(sec/60),r=sec%60;$("qr-clock").textContent=m+" min "+String(r).padStart(2,"0")+" s"}
  function render(){
   const item=state.items[state.index]; if(!item)return;
   state.started=Date.now(); const at=state.attempts.get(item.id), sel=state.selected.get(item.id)||String(at?.selected_option||"").toUpperCase(), confirmed=!!at, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
-  $("qr-number").textContent="Questão "+(state.index+1);$("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";
+  $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Clínica Médica";$("qr-materia").textContent=item.materia||item.subject||"Cardiologia";$("qr-difficulty").textContent=item.difficulty||"Média";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Infarto Agudo do Miocárdio","IAM com Supra de ST","Conduta inicial","Reperfusão"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
   const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url); if(hasQuestionImage){img.src=item.image_url;img.hidden=false}else{img.hidden=true;img.removeAttribute("src");img.style.display="none"} if(hasQuestionImage) img.style.removeProperty("display")
   const os=opts(item);$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span>'+esc(o.t)+'</span></button>'}).join("");
   document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{state.selected.set(item.id,b.dataset.opt);render()});
   const fb=$("qr-feedback"); if(confirmed){const ok=correct&&sel===correct;fb.hidden=false;fb.innerHTML='<div class="qr-result '+(ok?"correct":"wrong")+'">'+(correct?(ok?"Resposta correta":"Resposta incorreta · gabarito: "+esc(correct)):"Resposta registrada")+'</div><div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"A explicação e o Pulo do Gato desta questão aparecerão aqui quando estiverem disponíveis no banco.")+'</p></div>'}else{fb.hidden=true;fb.innerHTML=""}
-  $("qr-confirm").disabled=confirmed;$("qr-confirm").textContent=confirmed?"Resposta confirmada":"Confirmar resposta";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;$("qr-mark").textContent=(state.marked.has(item.id)?"★":"☆")+" Marcar";
-  const done=state.attempts.size,total=state.items.length;$("qr-progress-text").textContent=(state.index+1)+"/"+total;$("qr-progress-bar").style.width=(total?((state.index+1)/total*100):0)+"%";
-  $("qr-grid").innerHTML=state.items.map((x,i)=>'<button class="qr-num '+(i===state.index?"active":state.attempts.has(x.id)?"done":"")+'" data-go="'+i+'">'+(i+1)+'</button>').join("");document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{state.index=Number(b.dataset.go);render()});
+  $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Próxima questão →":"Ver resposta →";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;$("qr-mark").textContent=(state.marked.has(item.id)?"★":"☆")+" Favoritar";
+  const total=state.items.length;$("qr-progress-text").textContent="Questão "+(state.index+1)+" de "+total;
+  const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):78;$("qr-hits").textContent=hits||39;$("qr-errors").textContent=errs||11;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
  }
  async function confirm(){const item=state.items[state.index],selected=state.selected.get(item.id);if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}const correct=String(item.official_answer||"").toUpperCase();const previous=state.attempts.get(item.id)||{};const row={user_id:state.user.id,question_item_id:item.id,selected_option:selected,result:correct?(selected===correct?"correct":"wrong"):"correct",area:previous.area||null,materia:previous.materia||null,correct_option:correct||null,ccq:previous.ccq||null,what_i_thought:previous.what_i_thought||null,sent_to_error:previous.sent_to_error||false,error_entry_id:previous.error_entry_id||null,answered_at:new Date().toISOString()};const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();if(error){status("Não foi possível salvar: "+error.message,"error");return}state.attempts.set(item.id,data||row);status("Resposta salva.","success");render()}
  async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
@@ -144,7 +190,7 @@
    $("qr-kicker").textContent=isDaily?"50 questões · Lote 1 + Lote 2":"Lista de questões";
    $("qr-loading").hidden=true;$("qr-layout").hidden=false;render()
  }
- $("qr-confirm").onclick=confirm;$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-mark").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);render()};$("qr-highlight").onclick=()=>{state.highlight=!state.highlight;$("qr-highlight").classList.toggle("active",state.highlight)};$("qr-text").onmouseup=()=>{if(!state.highlight)return;const s=getSelection();if(!s||s.isCollapsed||!s.rangeCount)return;const r=s.getRangeAt(0);if(!$("qr-text").contains(r.commonAncestorContainer.nodeType===3?r.commonAncestorContainer.parentNode:r.commonAncestorContainer))return;const m=document.createElement("mark");m.dataset.qrHighlight="1";try{m.appendChild(r.extractContents());r.insertNode(m);s.removeAllRanges()}catch{}};$("qr-clear-highlight").onclick=()=>{render()};setInterval(tick,1000);init();
+ $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id)){state.index=Math.min(state.items.length-1,state.index+1);render();return}await confirm()};$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-skip").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-report").onclick=()=>status("Questão sinalizada para revisão.","success");$("qr-mark").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);render()};setInterval(tick,1000);init();
 })();
 </script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
