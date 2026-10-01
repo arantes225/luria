@@ -91,14 +91,20 @@
     if(f){lines.push("APRESENTAÇÃO: "+(f.label||""), "Dose: "+(f.dose_text||"A confirmar"), "Intervalo: "+(f.interval_text||"A confirmar"), "Via: "+(f.route||"A confirmar"), "Duração: "+(f.duration_text||"A confirmar"));}
     return lines.join("\n").trim();
   }
+  function closeMobileDetail(){
+    document.body.classList.remove('bulario-detail-open');
+  }
+  function mobileDetailBar(row){
+    return `<div class="bulario-mobile-detail-bar"><button type="button" data-bulario-mobile-close="1">← Voltar</button><strong>${esc(row?.active_ingredient||row?.name||'Bula')}</strong></div>`;
+  }
   function renderDetail(row){
-    if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';return}
+    if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
     const d=row.data||{},formulations=Array.isArray(d.formulations)?d.formulations:[],hasCompletePosology=formulations.length>0&&formulations.every(f=>['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'].every(k=>String(f?.[k]||'').trim())),ready=d.status==='posology_verified'||hasCompletePosology,summary=d.status==='verified';
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
     const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>{const t=String(term||"").toLocaleLowerCase("pt-BR");return keys.some(k=>k&&(k.includes(t)||t.includes(k)));}));
-    detail.innerHTML=`<header class="rx-detail-head"><div class="drug-kicker">${ready?'Ficha de posologia por apresentação':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
+    detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Ficha de posologia por apresentação':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
       <div class="rx-bridge-actions">
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
         <button type="button" class="secondary" data-send-note="1">Enviar à Cola Rápida</button>
@@ -111,6 +117,7 @@
       <section class="rx-section"><div class="rx-section-head"><h3>Interações medicamentosas</h3></div>${clinicalList(d.drug_interactions||d.interactions||d.medication_interactions,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(d.leaflet_url||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
+    detail.querySelector('[data-bulario-mobile-close="1"]')?.addEventListener('click',closeMobileDetail);
     const activePresentation=detail.querySelector('#rx-active-presentation');
     detail.querySelectorAll('.rx-presentation-tab').forEach(tab=>tab.addEventListener('click',()=>{
       const index=Number(tab.dataset.formulationIndex);
@@ -159,7 +166,18 @@
       result.textContent=`${number(rate)} mg/kg/dia × ${number(weight)} kg = ${number(daily)} mg/dia. Dividido em ${c.doses_per_day} tomadas: ${number(perDose)} mg (${number(ml)} mL) a cada 8 h. Defina a duração conforme o foco e o protocolo.`;
     }
   }
-  list.addEventListener('click',event=>{const button=event.target.closest('[data-id]');if(!button)return;selected=Number(button.dataset.id);renderList();renderDetail(rows.find(row=>row.id===selected));});
+  list.addEventListener('click',event=>{
+    const button=event.target.closest('[data-id]');
+    if(!button)return;
+    selected=Number(button.dataset.id);
+    renderList();
+    renderDetail(rows.find(row=>row.id===selected));
+    if(document.documentElement.classList.contains('pwa-standalone')&&window.matchMedia('(max-width:760px)').matches){
+      document.body.classList.add('bulario-detail-open');
+      detail.scrollTop=0;
+    }
+  });
+  window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(); });
   search.addEventListener('input',renderList);
   (async()=>{const [{data,error},{data:protocolRows}]=await Promise.all([
     window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000),
