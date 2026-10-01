@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v213-pratica-sidebar-scroll";
+const CACHE_VERSION = "luria-pwa-v214-emergency-sidebar-scroll";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
