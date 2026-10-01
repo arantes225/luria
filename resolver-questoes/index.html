@@ -186,8 +186,6 @@
    const ids=new Set(state.items.map(x=>x.id));
    attempts.filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));
    state.index=firstUnanswered();
-   $("qr-title").textContent=isDaily?"Questões do dia":(set.title||"Questões");
-   $("qr-kicker").textContent=isDaily?"50 questões · Lote 1 + Lote 2":"Lista de questões";
    $("qr-loading").hidden=true;$("qr-layout").hidden=false;render()
  }
  $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id)){state.index=Math.min(state.items.length-1,state.index+1);render();return}await confirm()};$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-skip").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-report").onclick=()=>status("Questão sinalizada para revisão.","success");$("qr-mark").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);render()};setInterval(tick,1000);init();
