@@ -2756,6 +2756,42 @@ body[data-page="questoes"] .qs-home-system{
 <style id="luria-page-font-lock-v56">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}html body :where(code,pre,kbd,samp),html body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}</style>  <link rel="stylesheet" href="/assets/css/qs-error-actions.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/study-layout.css?v=20260930">
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
+
+<style id="qs-quick-metrics-match-errors-v64">
+@media(min-width:981px){
+  body[data-page="questoes"] .qs-home-week-compact{
+    height:272px!important;min-height:272px!important;max-height:272px!important;box-sizing:border-box!important;
+    padding:16px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;
+    box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;overflow:hidden!important;
+  }
+}
+body[data-page="questoes"] .qs-quick-metrics-head{margin:0 0 14px!important}
+body[data-page="questoes"] .qs-quick-metrics-head h2{
+  margin:0!important;font-size:16px!important;line-height:1.15!important;font-weight:600!important;color:var(--text)!important;
+}
+body[data-page="questoes"] .qs-home-week-grid{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin-top:0!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric{
+  min-height:72px!important;padding:11px 12px!important;border:1px solid var(--border)!important;border-radius:11px!important;
+  background:var(--surface-2)!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;
+  box-shadow:none!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric strong{
+  margin:0!important;font-size:20px!important;line-height:1!important;font-weight:600!important;color:var(--text)!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric small{
+  margin-top:6px!important;font-size:9px!important;line-height:1.1!important;font-weight:400!important;color:var(--muted)!important;
+}
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.success,
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.danger,
+body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{
+  border-color:var(--border)!important;background:var(--surface-2)!important;
+}
+@media(max-width:980px){
+  body[data-page="questoes"] .qs-home-week-compact{padding:16px!important;border-radius:15px!important}
+}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2817,10 +2853,9 @@ body[data-page="questoes"] .qs-home-system{
 
             <aside class="qs-home-side-column" aria-label="Resumo e ações">
               <article class="qs-home-week qs-home-week-compact">
-                <div class="qs-home-section-head">
+                <div class="qs-home-section-head qs-quick-metrics-head">
                   <div>
-                    <span class="qs-home-eyebrow">Resumo</span>
-                    <h2>Esta semana</h2>
+                    <h2>Métricas rápidas</h2>
                   </div>
                 </div>
 
