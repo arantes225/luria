@@ -819,7 +819,7 @@
   margin:0!important;
   border:1px solid var(--border)!important;
   border-radius:8px!important;
-  background:#fff!important;
+  background:var(--surface)!important;
   box-shadow:none!important;
   overflow:auto!important;
 }
@@ -1136,4 +1136,55 @@ body[data-page="estatisticas"] .stats-kicker{
     height:100%!important;
     min-height:180px!important;
   }
+}
+
+
+/* Estatísticas v28 — widgets seguem o tema global (dark/rosa/claro) */
+body[data-page="estatisticas"] .stats-tabs-shell,
+body[data-page="estatisticas"] .stats-range,
+body[data-page="estatisticas"] .stats-summary-card,
+body[data-page="estatisticas"] .stats-block,
+body[data-page="estatisticas"] .metric-mini,
+body[data-page="estatisticas"] .insight,
+body[data-page="estatisticas"] .heatmap-head,
+body[data-page="estatisticas"] .heatmap-row-label,
+body[data-page="estatisticas"] .stats-link{
+  background:var(--surface)!important;
+  border-color:var(--border)!important;
+  color:var(--text)!important;
+}
+body[data-page="estatisticas"] .stats-mini-track,
+body[data-page="estatisticas"] .progress-track,
+body[data-page="estatisticas"] .heatmap-cell{
+  background:var(--surface-2)!important;
+  border-color:var(--border)!important;
+}
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-tabs-shell,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-range,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-summary-card,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-block,
+:root[data-theme="dark"] body[data-page="estatisticas"] .metric-mini,
+:root[data-theme="dark"] body[data-page="estatisticas"] .insight,
+:root[data-theme="dark"] body[data-page="estatisticas"] .heatmap-head,
+:root[data-theme="dark"] body[data-page="estatisticas"] .heatmap-row-label,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-link{
+  background:#0D1B30!important;
+  border-color:#20344F!important;
+  color:var(--text)!important;
+  box-shadow:none!important;
+}
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-mini-track,
+:root[data-theme="dark"] body[data-page="estatisticas"] .progress-track,
+:root[data-theme="dark"] body[data-page="estatisticas"] .heatmap-cell{
+  background:#13233A!important;
+  border-color:#20344F!important;
+}
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-tab,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-range button{
+  color:var(--muted)!important;
+}
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-tab.active,
+:root[data-theme="dark"] body[data-page="estatisticas"] .stats-range button.active{
+  background:var(--accent)!important;
+  color:#fff!important;
 }
