@@ -1003,12 +1003,30 @@
     return Array.isArray(flow) ? flow : [];
   }
 
+  function shufflePhoneChoices(options, seedText){
+    const items=[...options];
+    let seed=2166136261;
+    for(const char of String(seedText||"")) seed=Math.imul(seed^char.charCodeAt(0),16777619)>>>0;
+    const random=()=>{
+      seed=(seed+0x6D2B79F5)>>>0;
+      let value=seed;
+      value=Math.imul(value^(value>>>15),value|1);
+      value^=value+Math.imul(value^(value>>>7),value|61);
+      return ((value^(value>>>14))>>>0)/4294967296;
+    };
+    for(let index=items.length-1;index>0;index--){
+      const swap=Math.floor(random()*(index+1));
+      [items[index],items[swap]]=[items[swap],items[index]];
+    }
+    return items;
+  }
+
   function phoneChoiceOptions(){
     const flow=phoneLessonFlow();
     if(flow.length){
       const step=flow[state.phoneTurn];
       if(!step) return [];
-      return (Array.isArray(step.options)?step.options:[]).map((opt,index)=>({
+      const options=(Array.isArray(step.options)?step.options:[]).map((opt,index)=>({
         id:String(opt.id||`option_${index+1}`),
         group:"O que você responderia?",
         label:String(opt.label||opt.text||"Opção"),
@@ -1017,6 +1035,8 @@
         explanation:String(step.explanation||""),
         stepId:String(step.id||`step_${state.phoneTurn+1}`)
       }));
+      const stepId=String(step.id||`step_${state.phoneTurn+1}`);
+      return shufflePhoneChoices(options,`${state.phoneCase?.id||"case"}:${stepId}`);
     }
     return [
       {id:"meds",group:"Perguntar",label:"Quais medicamentos ele usa?",text:"Quais medicamentos o paciente usa atualmente?"},
