@@ -3471,3 +3471,115 @@ body[data-page="questoes"] #qs-daily-card .qs-home-primary{
   }
 }
 </style>
+
+<style id="qs-add-polish-v67">
+/* Fluxo Adicionar / Enviar novo / Manualmente — alinhado ao visual LURIA */
+body[data-page="questoes"] .qs-mode-section[data-qs-section="add"]{
+  padding:20px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 14%,var(--border))!important;
+  border-radius:18px!important;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 3%,var(--surface)),var(--surface))!important;
+  box-shadow:0 10px 28px rgba(15,40,75,.06)!important;
+}
+body[data-page="questoes"] .qs-mode-section[data-qs-section="add"] .qs-head{
+  margin:0 0 16px!important;
+  padding:16px 18px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+  border-radius:14px!important;
+  background:color-mix(in srgb,var(--accent) 4%,var(--surface))!important;
+}
+body[data-page="questoes"] .qs-mode-section[data-qs-section="add"] .qs-head>div{width:100%!important}
+body[data-page="questoes"] .qs-mode-section[data-qs-section="add"] .qs-inner-back{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  min-height:34px!important;padding:0 11px!important;margin:0 0 12px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border))!important;
+  border-radius:9px!important;background:var(--surface)!important;color:var(--accent)!important;
+  font-size:9px!important;font-weight:750!important;
+}
+body[data-page="questoes"] .qs-mode-section[data-qs-section="add"] .qs-head h2{
+  margin:6px 0 5px!important;font-size:20px!important;line-height:1.12!important;letter-spacing:-.02em!important;
+}
+body[data-page="questoes"] .qs-mode-section[data-qs-section="add"] .qs-head p{
+  max-width:680px!important;margin:0!important;color:var(--muted)!important;font-size:10px!important;line-height:1.5!important;
+}
+body[data-page="questoes"] .qs-add-mode-tabs{
+  display:grid!important;grid-template-columns:1fr 1fr!important;width:min(430px,100%)!important;
+  gap:4px!important;margin:0 0 16px!important;padding:4px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 14%,var(--border))!important;
+  border-radius:12px!important;background:color-mix(in srgb,var(--accent) 5%,var(--surface-2))!important;
+}
+body[data-page="questoes"] .qs-add-mode-tab{
+  min-height:38px!important;padding:0 14px!important;border:0!important;border-radius:9px!important;
+  background:transparent!important;color:var(--muted)!important;font-size:10px!important;font-weight:750!important;
+}
+body[data-page="questoes"] .qs-add-mode-tab.active{
+  background:var(--surface)!important;color:var(--accent)!important;box-shadow:0 3px 10px rgba(15,40,75,.08)!important;
+}
+body[data-page="questoes"] .qs-add-section.active{
+  display:block!important;padding:16px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+  border-radius:15px!important;background:var(--surface)!important;
+}
+body[data-page="questoes"] .qs-upload-grid{
+  grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr)!important;gap:14px!important;margin-top:0!important;
+}
+body[data-page="questoes"] .qs-drop{
+  min-height:220px!important;padding:22px!important;border:1.5px dashed color-mix(in srgb,var(--accent) 34%,var(--border))!important;
+  border-radius:14px!important;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 5%,var(--surface)),var(--surface))!important;
+}
+body[data-page="questoes"] .qs-drop>div{width:min(340px,100%)!important;text-align:center!important}
+body[data-page="questoes"] .qs-drop strong{display:block!important;margin-bottom:7px!important;color:var(--text)!important;font-size:13px!important}
+body[data-page="questoes"] .qs-drop small{display:block!important;margin:0 auto 14px!important;color:var(--muted)!important;font-size:9px!important;line-height:1.45!important}
+body[data-page="questoes"] .qs-drop .button{min-height:38px!important;padding:0 15px!important;border-radius:10px!important}
+body[data-page="questoes"] .qs-import-options{gap:12px!important;padding:2px!important}
+body[data-page="questoes"] .qs-field{gap:6px!important}
+body[data-page="questoes"] .qs-field>span{color:var(--text)!important;font-size:9px!important;font-weight:750!important}
+body[data-page="questoes"] .qs-field input,
+body[data-page="questoes"] .qs-field select{
+  min-height:42px!important;padding:0 12px!important;border:1px solid var(--border)!important;border-radius:10px!important;
+  background:var(--surface-2)!important;color:var(--text)!important;font-size:10px!important;box-shadow:none!important;outline:none!important;
+}
+body[data-page="questoes"] .qs-field input:focus,
+body[data-page="questoes"] .qs-field select:focus{
+  border-color:color-mix(in srgb,var(--accent) 62%,var(--border))!important;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 10%,transparent)!important;background:var(--surface)!important;
+}
+body[data-page="questoes"] .qs-field-help,
+body[data-page="questoes"] .qs-field>small{color:var(--muted)!important;font-size:8.5px!important;line-height:1.4!important}
+body[data-page="questoes"] .qs-extraction-settings{gap:10px!important}
+body[data-page="questoes"] .qs-import-actions{display:flex!important;align-items:center!important;gap:10px!important;margin-top:2px!important}
+body[data-page="questoes"] .qs-import-actions .button{
+  min-height:42px!important;padding:0 17px!important;border-radius:10px!important;font-size:10px!important;font-weight:800!important;
+}
+body[data-page="questoes"] .qs-manual-grid{
+  grid-template-columns:minmax(0,1fr) 180px!important;gap:12px!important;align-items:start!important;
+}
+body[data-page="questoes"] .qs-manual-grid>.qs-field:nth-of-type(3){
+  grid-column:1 / -1!important;padding:13px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+  border-radius:12px!important;background:color-mix(in srgb,var(--accent) 3%,var(--surface-2))!important;
+}
+body[data-page="questoes"] .qs-manual-time-row{
+  display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto!important;
+  gap:7px!important;align-items:center!important;width:min(330px,100%)!important;
+}
+body[data-page="questoes"] .qs-manual-time-row input{min-width:0!important;text-align:center!important;font-variant-numeric:tabular-nums!important}
+body[data-page="questoes"] .qs-manual-time-row small{margin:0!important;color:var(--muted)!important;font-size:9px!important;font-weight:750!important}
+body[data-page="questoes"] .qs-manual-copy{
+  grid-column:1 / -1!important;padding:13px 14px!important;border:1px solid color-mix(in srgb,var(--accent) 11%,var(--border))!important;
+  border-radius:12px!important;background:color-mix(in srgb,var(--accent) 4%,var(--surface))!important;
+}
+body[data-page="questoes"] .qs-manual-copy strong{color:var(--accent)!important;font-size:10px!important}
+body[data-page="questoes"] .qs-manual-copy p{margin:4px 0 0!important;color:var(--muted)!important;font-size:9px!important;line-height:1.45!important}
+body[data-page="questoes"] #qs-create-manual{min-width:180px!important}
+@media(max-width:760px){
+  body[data-page="questoes"] .qs-mode-section[data-qs-section="add"]{padding:14px!important}
+  body[data-page="questoes"] .qs-mode-section[data-qs-section="add"] .qs-head{padding:14px!important}
+  body[data-page="questoes"] .qs-add-section.active{padding:12px!important}
+  body[data-page="questoes"] .qs-upload-grid,
+  body[data-page="questoes"] .qs-manual-grid,
+  body[data-page="questoes"] .qs-extraction-settings{grid-template-columns:1fr!important}
+  body[data-page="questoes"] .qs-manual-grid>.qs-field:nth-of-type(3){grid-column:auto!important}
+  body[data-page="questoes"] .qs-manual-time-row{width:100%!important}
+}
+</style>
