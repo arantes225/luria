@@ -7520,3 +7520,51 @@ iniciarApp();
 
   document.head.appendChild(style);
 })();
+
+
+/* PWA Prática clínica — garante rolagem/touch da sidebar sem travar o drawer. */
+(function ensurePwaPraticaSidebarScrollV213() {
+  if (document.getElementById("luria-pwa-pratica-sidebar-scroll-v213")) return;
+  const style = document.createElement("style");
+  style.id = "luria-pwa-pratica-sidebar-scroll-v213";
+  style.textContent = `
+    @media (max-width: 980px) {
+      html.pwa-standalone body[data-page="plantao"] #sidebar.sidebar {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100dvh !important;
+        max-height: 100dvh !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+        overscroll-behavior-y: contain !important;
+        touch-action: pan-y !important;
+      }
+
+      html.pwa-standalone body[data-page="plantao"] #sidebar.sidebar .nav,
+      html.pwa-standalone body[data-page="plantao"] #sidebar.sidebar .nav-study {
+        flex: 0 0 auto !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        touch-action: pan-y !important;
+      }
+
+      html.pwa-standalone body[data-page="plantao"] #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body[data-page="plantao"] #sidebar.sidebar .sidebar-footer-study {
+        flex: 0 0 auto !important;
+        position: relative !important;
+        margin-top: 12px !important;
+        overflow: visible !important;
+      }
+
+      html.pwa-standalone body[data-page="plantao"].sidebar-open {
+        touch-action: none !important;
+      }
+
+      html.pwa-standalone body[data-page="plantao"].sidebar-open #sidebar.sidebar {
+        touch-action: pan-y !important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
