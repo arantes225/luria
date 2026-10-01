@@ -60,7 +60,9 @@
 <script src="/assets/js/app.js?v=17.43-short-eyebrows"></script>
 <script>
 (()=>{
- const sb=window.supabaseClient, p=new URLSearchParams(location.search), requested=p.get("set_id");
+ const sb=window.supabaseClient, p=new URLSearchParams(location.search), requested=p.get("set_id"), isDaily=p.get("daily")==="1";
+ const DAILY_LIMIT=50, DAILY_PER_LOT=25;
+ const DAILY_LOT_TITLES=["Lote 1 — questões aprovadas","Lote 2 — questões aprovadas"];
  const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),started:Date.now(),highlight:false};
  const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
  function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
@@ -81,7 +83,67 @@
  }
  async function confirm(){const item=state.items[state.index],selected=state.selected.get(item.id);if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}const correct=String(item.official_answer||"").toUpperCase();const previous=state.attempts.get(item.id)||{};const row={user_id:state.user.id,question_item_id:item.id,selected_option:selected,result:correct?(selected===correct?"correct":"wrong"):"correct",area:previous.area||null,materia:previous.materia||null,correct_option:correct||null,ccq:previous.ccq||null,what_i_thought:previous.what_i_thought||null,sent_to_error:previous.sent_to_error||false,error_entry_id:previous.error_entry_id||null,answered_at:new Date().toISOString()};const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();if(error){status("Não foi possível salvar: "+error.message,"error");return}state.attempts.set(item.id,data||row);status("Resposta salva.","success");render()}
  async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
- async function init(){const {data:{user}}=await sb.auth.getUser();if(!user){location.href="/login/";return}state.user=user;let setId=requested;if(!setId){const {data:sets}=await sb.from("question_sets").select("*").eq("user_id",user.id).eq("status","ready").order("created_at",{ascending:false}).limit(10);const pick=(sets||[])[0];setId=pick?.id}if(!setId){$("qr-loading").textContent="Nenhuma lista pronta para resolver.";return}const [{data:set,error:se},{data:items,error:ie},{data:attempts}]=await Promise.all([sb.from("question_sets").select("*").eq("id",setId).single(),sb.from("question_items").select("*").eq("set_id",setId).order("order_index",{ascending:true}),sb.from("question_attempts").select("*")]);if(se||ie||!set){$("qr-loading").textContent="Não foi possível carregar esta lista.";return}state.set=set;state.items=await signedImages(items||[]);const ids=new Set(state.items.map(x=>x.id));(attempts||[]).filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));state.index=firstUnanswered();$("qr-title").textContent=set.title||"Questões";$("qr-kicker").textContent=p.get("daily")==="1"?"Questões do dia":"Lista de questões";$("qr-loading").hidden=true;$("qr-layout").hidden=false;render()}
+ function dailyDaySerial(){const d=new Date();return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/86400000)}
+ function rotatingSlice(items,count,offset){if(!items.length||count<=0)return[];const out=[];for(let i=0;i<Math.min(count,items.length);i+=1)out.push(items[(offset+i)%items.length]);return out}
+ function interleaveDaily(a,b){const out=[];const max=Math.max(a.length,b.length);for(let i=0;i<max;i+=1){if(a[i])out.push(a[i]);if(b[i])out.push(b[i])}return out.slice(0,DAILY_LIMIT)}
+ async function loadDailyItems(user){
+   const {data:sets,error:setsError}=await sb.from("question_sets").select("*").eq("user_id",user.id).eq("status","ready").in("title",DAILY_LOT_TITLES);
+   if(setsError)throw setsError;
+   const byTitle=new Map((sets||[]).map(x=>[x.title,x]));
+   const lot1=byTitle.get(DAILY_LOT_TITLES[0]), lot2=byTitle.get(DAILY_LOT_TITLES[1]);
+   const ids=[lot1?.id,lot2?.id].filter(Boolean);
+   if(!ids.length)return{set:null,items:[]};
+   const {data:items,error:itemsError}=await sb.from("question_items").select("*").in("set_id",ids).order("order_index",{ascending:true});
+   if(itemsError)throw itemsError;
+   const g1=(items||[]).filter(x=>x.set_id===lot1?.id), g2=(items||[]).filter(x=>x.set_id===lot2?.id);
+   const serial=dailyDaySerial();
+   const a=rotatingSlice(g1,Math.min(DAILY_PER_LOT,DAILY_LIMIT),g1.length?(serial*DAILY_PER_LOT)%g1.length:0);
+   const b=rotatingSlice(g2,Math.min(DAILY_PER_LOT,DAILY_LIMIT-a.length),g2.length?(serial*DAILY_PER_LOT)%g2.length:0);
+   let mixed=interleaveDaily(a,b);
+   if(mixed.length<DAILY_LIMIT){
+     const used=new Set(mixed.map(x=>x.id));
+     const fallback=[...g1,...g2].filter(x=>!used.has(x.id));
+     mixed=mixed.concat(rotatingSlice(fallback,DAILY_LIMIT-mixed.length,fallback.length?(serial*DAILY_LIMIT)%fallback.length:0));
+   }
+   return{set:{title:"Questões do dia",total_questions:mixed.length,status:"ready"},items:mixed.slice(0,DAILY_LIMIT)};
+ }
+ async function init(){
+   const {data:{user}}=await sb.auth.getUser();
+   if(!user){location.href="/login/";return}
+   state.user=user;
+   let set=null,items=[],attempts=[],loadError=null;
+   if(isDaily){
+     try{
+       const daily=await loadDailyItems(user);
+       set=daily.set;items=daily.items;
+       const attemptsResult=await sb.from("question_attempts").select("*");
+       attempts=attemptsResult.data||[];
+       if(attemptsResult.error)loadError=attemptsResult.error;
+     }catch(error){loadError=error}
+   }else{
+     let setId=requested;
+     if(!setId){
+       const {data:sets}=await sb.from("question_sets").select("*").eq("user_id",user.id).eq("status","ready").order("created_at",{ascending:false}).limit(10);
+       const pick=(sets||[]).find(x=>!DAILY_LOT_TITLES.includes(x.title))||(sets||[])[0];
+       setId=pick?.id;
+     }
+     if(!setId){$("qr-loading").textContent="Nenhuma lista pronta para resolver.";return}
+     const [{data:setData,error:se},{data:itemData,error:ie},{data:attemptData,error:ae}]=await Promise.all([
+       sb.from("question_sets").select("*").eq("id",setId).single(),
+       sb.from("question_items").select("*").eq("set_id",setId).order("order_index",{ascending:true}),
+       sb.from("question_attempts").select("*")
+     ]);
+     set=setData;items=itemData||[];attempts=attemptData||[];loadError=se||ie||ae;
+   }
+   if(loadError||!set||!items.length){$("qr-loading").textContent=isDaily?"Não foi possível montar as 50 questões de hoje.":"Não foi possível carregar esta lista.";return}
+   state.set=set;state.items=await signedImages(items);
+   const ids=new Set(state.items.map(x=>x.id));
+   attempts.filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));
+   state.index=firstUnanswered();
+   $("qr-title").textContent=isDaily?"Questões do dia":(set.title||"Questões");
+   $("qr-kicker").textContent=isDaily?"50 questões · Lote 1 + Lote 2":"Lista de questões";
+   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render()
+ }
  $("qr-confirm").onclick=confirm;$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-mark").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);render()};$("qr-highlight").onclick=()=>{state.highlight=!state.highlight;$("qr-highlight").classList.toggle("active",state.highlight)};$("qr-text").onmouseup=()=>{if(!state.highlight)return;const s=getSelection();if(!s||s.isCollapsed||!s.rangeCount)return;const r=s.getRangeAt(0);if(!$("qr-text").contains(r.commonAncestorContainer.nodeType===3?r.commonAncestorContainer.parentNode:r.commonAncestorContainer))return;const m=document.createElement("mark");m.dataset.qrHighlight="1";try{m.appendChild(r.extractContents());r.insertNode(m);s.removeAllRanges()}catch{}};$("qr-clear-highlight").onclick=()=>{render()};setInterval(tick,1000);init();
 })();
 </script>
