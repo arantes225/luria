@@ -93,8 +93,7 @@
   }
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';return}
-    const d=row.data||{},ready=d.status==='posology_verified',summary=d.status==='verified';
-    const formulations=Array.isArray(d.formulations)?d.formulations:[];
+    const d=row.data||{},formulations=Array.isArray(d.formulations)?d.formulations:[],hasCompletePosology=formulations.length>0&&formulations.every(f=>['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'].every(k=>String(f?.[k]||'').trim())),ready=d.status==='posology_verified'||hasCompletePosology,summary=d.status==='verified';
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
