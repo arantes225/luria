@@ -14334,15 +14334,9 @@ function renderLibrary() {
     ["Preventiva","SUS"],["Preventiva","Epidemiologia"],["Preventiva","Atenção Primária"]
   ];
 
-  const areaIcon = area => {
-    const a=String(area||"").toLowerCase(),base='viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"';
-    if(/cl[ií]nica|cardio/.test(a))return '<svg '+base+'><path d="M4 13h4l2-5 3 10 2-5h5"/><path d="M12 21C6 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-3 7.5-9 11.5Z"/></svg>';
-    if(/cirurg/.test(a))return '<svg '+base+'><path d="m5 19 11-11 3 3L8 22H5v-3Z"/><path d="m14 10 3 3"/></svg>';
-    if(/pediatr/.test(a))return '<svg '+base+'><path d="M12 21s-8-4.5-8-11a4 4 0 0 1 7-2.6A4 4 0 0 1 18 10c0 6.5-6 11-6 11Z"/></svg>';
-    if(/gine|obst/.test(a))return '<svg '+base+'><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>';
-    if(/prevent/.test(a))return '<svg '+base+'><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6Z"/></svg>';
-    return '<svg '+base+'><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>';
-  };
+  const areaIcon = area => window.LuriaMedicalIcons?.svg
+    ? window.LuriaMedicalIcons.svg(area)
+    : '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-4 3 8 2-4h7"/></svg>';
 
   const subjectFor = entry => entry.note?.materia || entry.topic?.materia || "Outros";
   const realByArea = new Map();
