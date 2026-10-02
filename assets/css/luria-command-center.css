@@ -15,15 +15,12 @@
 @media(max-width:700px){.luria-command-links{grid-template-columns:repeat(2,minmax(0,1fr))}.luria-preexam-fields{grid-template-columns:1fr}.luria-command-trigger span{display:none}.luria-intel-overlay{padding-top:5vh}.luria-intel-modal{max-height:90vh}}
 
 
-.luria-dashboard-study-now{
-  width:100%;min-height:52px;margin-top:12px;padding:0 16px;
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-  border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));
-  border-radius:12px;background:var(--accent);color:#fff;
-  font:850 11px/1 var(--font-ui,Inter,sans-serif);cursor:pointer;
-  box-shadow:none;box-sizing:border-box;
+
+body[data-page="dashboard"] .luria-has-study-now{
+  display:flex!important;
+  flex-direction:column!important;
 }
-.luria-dashboard-study-now:hover{filter:brightness(1.03)}
-.luria-dashboard-study-now strong{font-size:19px;font-weight:500;line-height:1}
-:root[data-theme="dark"] .luria-dashboard-study-now,
-body.theme-dark .luria-dashboard-study-now{background:var(--accent);color:#fff}
+body[data-page="dashboard"] .luria-has-study-now .luria-dashboard-study-now{
+  width:100%!important;
+  margin-top:auto!important;
+}
