@@ -7924,3 +7924,125 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
     overscroll-behavior:none!important;
   }
 }
+
+
+/* Sala de Emergência v58 — PWA: navegação principal primeiro e composição compacta. */
+@media(max-width:760px){
+  html.pwa-standalone body.plantao-module-entry .plantao-practice-back-row,
+  html.pwa-standalone body.plantao-module-entry .plantao-practice-back{
+    display:none!important;
+  }
+
+  /* Esconde qualquer card promocional legado do Mini-OSCE acima da biblioteca. */
+  html.pwa-standalone body.plantao-module-entry .page.plantao-page > section:has(a[href="/mini-osce/"]),
+  html.pwa-standalone body.plantao-module-entry .page.plantao-page > article:has(a[href="/mini-osce/"]),
+  html.pwa-standalone body.plantao-module-entry .page.plantao-page > div:has(> a[href="/mini-osce/"]){
+    display:none!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry #plantao-library{
+    padding-top:0!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-primary-switch-wrap{
+    order:-10!important;
+    width:100%!important;
+    margin:0 0 10px!important;
+    padding:0 16px!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-primary-switch-wrap .plantao-native-switch{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:3px!important;
+    width:100%!important;
+    overflow:hidden!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-primary-switch-wrap .plantao-native-switch>button{
+    width:100%!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:38px!important;
+    min-height:38px!important;
+    padding:0 5px!important;
+    font-size:9px!important;
+    white-space:nowrap!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-quick-grid{
+    width:100%!important;
+    margin:0!important;
+    padding:0 16px 10px!important;
+    gap:10px!important;
+    grid-template-columns:1fr!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-case{
+    width:100%!important;
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    border-radius:15px!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-inner{
+    width:100%!important;
+    height:100%!important;
+    min-height:0!important;
+    padding:18px 20px!important;
+    box-sizing:border-box!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+    align-items:flex-start!important;
+    gap:5px!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-top{
+    margin:0!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-label{
+    font-size:9px!important;
+    line-height:1!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-copy h2{
+    margin:0!important;
+    font-size:22px!important;
+    line-height:1.08!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-copy p,
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-meta,
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-tags,
+  html.pwa-standalone body.plantao-module-entry .plantao-featured-start{
+    display:none!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry #plantao-resume-card{
+    min-height:116px!important;
+    padding:14px!important;
+    gap:10px!important;
+    border-radius:15px!important;
+    grid-template-columns:48px minmax(0,1fr)!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry #plantao-resume-card .plantao-quick-icon{
+    width:48px!important;
+    height:48px!important;
+    border-radius:13px!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry #plantao-resume-card .button{
+    grid-column:1/-1!important;
+    min-height:40px!important;
+    margin-top:0!important;
+  }
+
+  html.pwa-standalone body.plantao-module-entry .plantao-cases-section-head{
+    padding-left:16px!important;
+    padding-right:16px!important;
+  }
+}
