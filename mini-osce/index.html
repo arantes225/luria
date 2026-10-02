@@ -36,8 +36,7 @@
     .osce-command-form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px}.osce-command-input{min-width:0;border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:10px;padding:11px 12px;font:700 10px var(--font-ui,Inter,sans-serif);outline:none}.osce-command-input:focus{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 12%,transparent)}
     .osce-command-send{border:0;border-radius:10px;background:var(--accent);color:#fff;padding:0 15px;font:850 9px var(--font-ui,Inter,sans-serif);cursor:pointer}
     .osce-command-help{margin-top:7px;color:var(--muted);font-size:7.8px;line-height:1.45}.osce-command-help b{color:var(--text)}
-    .osce-status-strip{display:flex;gap:6px;flex-wrap:wrap;padding:0 16px 12px}.osce-status-chip{border:1px solid var(--border);background:var(--surface-2);border-radius:999px;padding:5px 8px;font-size:7.5px;color:var(--muted)}.osce-status-chip.done{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,var(--border));background:var(--accent-soft)}
-    .osce-log{max-height:360px;overflow:auto}
+        .osce-log{max-height:360px;overflow:auto}
     .osce-empty{padding:20px;border:1px dashed var(--border);border-radius:12px;text-align:center;color:var(--muted);font-size:10px}
     @media(max-width:900px){.osce-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.osce-sim{grid-template-columns:1fr}.osce-side{order:-1}.osce-side-actions{margin-top:0}}
     @media(max-width:600px){.osce-grid{grid-template-columns:1fr}.osce-hero{align-items:flex-start;flex-direction:column}.osce-patient{grid-template-columns:70px minmax(0,1fr)}.osce-avatar{width:70px;height:70px}.osce-tool-tabs{grid-template-columns:repeat(2,1fr)}.osce-options,.osce-review{grid-template-columns:1fr}}
@@ -164,7 +163,7 @@
  }
  function addLog(who,text){state.log.push({who,text});renderLog()}
  function renderLog(){const el=$("#osce-log");if(!el)return;el.innerHTML=state.log.length?state.log.map(m=>'<div class="osce-bubble '+m.who+'">'+esc(m.text)+'</div>').join(""):'<div class="osce-bubble system">A estação começou. Conduza o atendimento livremente pelo campo abaixo.</div>';el.scrollTop=el.scrollHeight}
- function updateStatus(){const el=$("#osce-status-strip");if(!el)return;const items=[["Anamnese","anamnese"],["Exame físico","fisico"],["Exames","exames"],["Condutas","conduta"],["Hipótese","hipotese"],["Destino","destino"]];el.innerHTML=items.map(([l,id])=>'<span class="osce-status-chip '+(state.domains.has(id)?'done':'')+'">'+esc(l)+'</span>').join("")}
+ function updateStatus(){/* progresso fica oculto durante a estação */}
  function performMatched(a,q){
    const cat=category(a);state.performed.add(a.id);state.domains.add(cat);
    let result=replaceVitals(a.result||"A ação foi realizada.");
@@ -180,7 +179,54 @@
      .sort((x,y)=>y.score-x.score);
    return commands[0]||null;
  }
+
+ function stableNumber(seed,min,max){
+   const s=String(seed||"");let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;
+   return min+(h%(max-min+1));
+ }
+ function specificPatientAnswer(q){
+   const x=state.full||{},p=x.presentation||{},n=norm(q),name=patientName(x);
+   const age=ageLabel(x),hda=hdaText(x),summary=String(x.summary||"");
+   const seed=String(x.id||x.slug||x.title||"case");
+
+   if(/qual (e|é )?seu nome|como voce se chama|como você se chama|seu nome/.test(n)) return "Meu nome é "+name+".";
+   if(/quantos anos|qual sua idade|sua idade/.test(n)) return "Tenho "+age+".";
+   if(/quantas semanas|idade gestacional|tempo de gestacao|tempo de gestação/.test(n)){
+     const m=String(hda+" "+summary).match(/(\d{1,2})\s*semanas?/i);
+     return m ? "Estou com "+m[1]+" semanas de gestação." : "Não sei dizer exatamente quantas semanas.";
+   }
+   if(/nivel de dor|nível de dor|escala.*dor|dor de 0 a 10|quanto.*dor|intensidade.*dor/.test(n)){
+     const severe=/muito forte|intensa|cada vez mais forte|aumentando progressivamente|fortes/.test(norm(hda+" "+summary));
+     const mild=/leve|discreta/.test(norm(hda+" "+summary));
+     const val=severe?stableNumber(seed+"pain",7,8):(mild?stableNumber(seed+"pain",2,4):stableNumber(seed+"pain",5,7));
+     return "Minha dor está em torno de "+val+" de 10 agora.";
+   }
+   if(/cor.*sangue|cor.*sangramento|sangue.*cor/.test(n)){
+     if(/sangramento|hemorrag/.test(norm(hda+" "+summary))){
+       const color=stableNumber(seed+"blood",0,1)===0?"vermelho vivo":"vermelho escuro";
+       return "O sangue está "+color+".";
+     }
+   }
+   if(/coagulo|coágulo|coagulos|coágulos/.test(n)){
+     if(/sangramento|hemorrag/.test(norm(hda+" "+summary))){
+       return stableNumber(seed+"clot",0,2)>0 ? "Percebi alguns coágulos junto com o sangramento." : "Até agora não percebi coágulos grandes.";
+     }
+   }
+   if(/quantidade.*sangra|quanto.*sangra|muito sangue|volume.*sangra|enche.*absorvente|absorvente/.test(n)){
+     if(/aumentando|progressiv/.test(norm(hda+" "+summary))) return "Está aumentando; já precisei trocar o absorvente mais de uma vez desde que começou.";
+     return "É um sangramento moderado, mas está me preocupando.";
+   }
+   if(/quando comec|quando iniciou|ha quanto tempo|há quanto tempo/.test(n)){
+     if(p.onset) return "Começou "+String(p.onset)+".";
+   }
+   if(/desmai|tont|fraqueza/.test(n)){
+     if(/consciente|hemodinamicamente estavel|hemodinamicamente estável/.test(norm(hda))) return "Senti um pouco de fraqueza, mas não desmaiei.";
+   }
+   return "";
+ }
  function anamnesisFallback(q){
+   const specific=specificPatientAnswer(q);
+   if(specific)return specific;
    const topics=parseHistoryTopics(state.full||{});
    if(!topics.length) return directFieldAnswer(q)||"Não tenho essa informação registrada no caso.";
    const qTokens=conceptTokens(q).map(stemToken).filter(Boolean);
@@ -201,8 +247,7 @@
    }
    const direct=directFieldAnswer(q);
    if(direct)return direct;
-   const generic=topics.find(t=>/queixa atual|inicio|evolucao|sintomas associados/i.test(t.subgroup))||topics[0];
-   return generic?.result||"Não tenho essa informação registrada no caso.";
+   return "Não sei informar isso com mais precisão.";
  }
  function physicalFallback(q){
    const exams=physicalExamActions(state.full||{});
@@ -240,7 +285,9 @@
 
    if(intent==="anamnese"){
      state.domains.add("anamnese");
-     addLog("patient",anamnesisFallback(q));
+     const reply=anamnesisFallback(q);
+     state.performed.add("history_free_text");
+     addLog("patient",reply);
      updateStatus();return;
    }
    if(intent==="fisico"){
@@ -262,7 +309,7 @@
    state.current=state.cases.find(x=>String(x.id)===String(id));state.full=null;state.performed=new Set();state.log=[];state.hypothesis="";state.plan="";state.domains=new Set();state.seconds=480;clearInterval(state.timer);
    const res=await sb.from("clinical_cases").select("id,slug,title,setting,specialty,difficulty,summary,presentation,initial_vitals,actions,debrief,completion_rules,version").eq("id",id).single();
    state.full=res.data||state.current;const x=state.full,name=patientName(x),age=ageLabel(x),sex=sexOf(x)==="F"?"Feminino":"Masculino";
-   $("#osce-root").innerHTML='<section class="osce-sim"><article class="osce-stage"><div class="osce-stage-head"><div><span class="osce-kicker">OSCE · ESTAÇÃO INTERATIVA</span><h2>'+esc(title(x))+'</h2></div><div id="osce-timer" class="osce-timer">08:00</div></div><div class="osce-patient"><div class="osce-avatar">'+esc(name.split(" ").map(p=>p[0]).slice(0,2).join(""))+'</div><div><h3>'+esc(name)+'</h3><p>'+esc(age)+' · '+esc(sex)+'</p><p><b>HDA:</b> '+esc(hdaText(x))+'</p></div></div><div id="osce-log" class="osce-log"></div><div id="osce-status-strip" class="osce-status-strip"></div><div class="osce-command"><div class="osce-command-label"><strong>O que você quer fazer?</strong><span>Entrada livre</span></div><form id="osce-command-form" class="osce-command-form"><input id="osce-command-input" class="osce-command-input" type="text" autocomplete="off" placeholder="Digite sua pergunta, exame, pedido ou conduta..."><button class="osce-command-send" type="submit">Enviar</button></form><div class="osce-command-help"><b>Sem lista de opções.</b> Pode escrever do seu jeito: pergunta, exame, pedido, procedimento, hipótese ou destino.</div></div></article><aside class="osce-side"><h3>Paciente</h3><div id="osce-vitals" class="osce-vitals">'+vitalsHtml(x)+'</div><p>Os itens avaliados ficam ocultos durante a estação.</p><div class="osce-side-actions"><button id="osce-back" class="osce-btn osce-secondary" type="button">Sair</button><button id="osce-finish" class="osce-btn" type="button">Finalizar estação</button></div></aside></section>';
+   $("#osce-root").innerHTML='<section class="osce-sim"><article class="osce-stage"><div class="osce-stage-head"><div><span class="osce-kicker">OSCE · ESTAÇÃO INTERATIVA</span><h2>'+esc(title(x))+'</h2></div><div id="osce-timer" class="osce-timer">08:00</div></div><div class="osce-patient"><div class="osce-avatar">'+esc(name.split(" ").map(p=>p[0]).slice(0,2).join(""))+'</div><div><h3>'+esc(name)+'</h3><p>'+esc(age)+' · '+esc(sex)+'</p><p><b>HDA:</b> '+esc(hdaText(x))+'</p></div></div><div id="osce-log" class="osce-log"></div><div class="osce-command"><div class="osce-command-label"><strong>O que você quer fazer?</strong><span>Entrada livre</span></div><form id="osce-command-form" class="osce-command-form"><input id="osce-command-input" class="osce-command-input" type="text" autocomplete="off" placeholder="Digite sua pergunta, exame, pedido ou conduta..."><button class="osce-command-send" type="submit">Enviar</button></form><div class="osce-command-help"><b>Sem lista de opções.</b> Pode escrever do seu jeito: pergunta, exame, pedido, procedimento, hipótese ou destino.</div></div></article><aside class="osce-side"><h3>Paciente</h3><div id="osce-vitals" class="osce-vitals">'+vitalsHtml(x)+'</div><p>Os itens avaliados ficam ocultos durante a estação.</p><div class="osce-side-actions"><button id="osce-back" class="osce-btn osce-secondary" type="button">Sair</button><button id="osce-finish" class="osce-btn" type="button">Finalizar estação</button></div></aside></section>';
    renderLog();updateStatus();
    $("#osce-back").onclick=()=>location.assign("/plantao/sala-emergencia/");
    $("#osce-finish").onclick=finish;
