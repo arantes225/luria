@@ -3730,6 +3730,133 @@ body[data-page="cronograma"] .agenda-insight-tabs button:hover:not(.active){
   }
 }
 </style>
+
+<style id="cronograma-overdue-card-v40">
+body[data-page="cronograma"] .agenda-overdue-card{
+  display:grid!important;
+  gap:9px!important;
+  padding:12px!important;
+}
+body[data-page="cronograma"] .agenda-overdue-head{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+}
+body[data-page="cronograma"] .agenda-overdue-head>div{min-width:0!important}
+body[data-page="cronograma"] .agenda-overdue-kicker{
+  display:block!important;
+  margin-bottom:3px!important;
+  color:var(--muted)!important;
+  font-size:7px!important;
+  font-weight:700!important;
+  letter-spacing:.09em!important;
+}
+body[data-page="cronograma"] .agenda-overdue-head h3{
+  margin:0!important;
+  color:var(--text)!important;
+  font-size:12px!important;
+  font-weight:500!important;
+}
+body[data-page="cronograma"] #agenda-overdue-count{
+  display:grid!important;
+  place-items:center!important;
+  min-width:28px!important;
+  height:28px!important;
+  padding:0 7px!important;
+  border:1px solid color-mix(in srgb,#d67b2c 34%,var(--border))!important;
+  border-radius:9px!important;
+  background:color-mix(in srgb,#f4ae2b 11%,var(--surface))!important;
+  color:#a75d1a!important;
+  font-size:10px!important;
+  font-weight:800!important;
+}
+body[data-page="cronograma"] .agenda-overdue-help{
+  margin:0!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  line-height:1.4!important;
+}
+body[data-page="cronograma"] .agenda-overdue-list{
+  display:grid!important;
+  gap:5px!important;
+  max-height:188px!important;
+  overflow-y:auto!important;
+  padding-right:2px!important;
+}
+body[data-page="cronograma"] .agenda-overdue-item{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto!important;
+  align-items:center!important;
+  gap:8px!important;
+  min-height:44px!important;
+  padding:7px 8px!important;
+  border:1px solid var(--border)!important;
+  border-radius:9px!important;
+  background:var(--surface-2)!important;
+}
+body[data-page="cronograma"] .agenda-overdue-copy{min-width:0!important}
+body[data-page="cronograma"] .agenda-overdue-copy strong{
+  display:block!important;
+  overflow:hidden!important;
+  color:var(--text)!important;
+  font-size:9px!important;
+  font-weight:700!important;
+  line-height:1.2!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+}
+body[data-page="cronograma"] .agenda-overdue-copy span{
+  display:block!important;
+  margin-top:3px!important;
+  color:var(--muted)!important;
+  font-size:7px!important;
+  line-height:1.15!important;
+}
+body[data-page="cronograma"] .agenda-overdue-to-deck{
+  min-height:30px!important;
+  height:30px!important;
+  padding:0 9px!important;
+  border:1px solid var(--border)!important;
+  border-radius:7px!important;
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  font-size:8px!important;
+  font-weight:700!important;
+  cursor:pointer!important;
+}
+body[data-page="cronograma"] .agenda-overdue-to-deck:hover{
+  border-color:var(--accent)!important;
+  background:var(--accent-soft)!important;
+}
+body[data-page="cronograma"] .agenda-overdue-reinsert{
+  width:100%!important;
+  min-height:36px!important;
+  height:36px!important;
+  border:1px solid var(--accent)!important;
+  border-radius:8px!important;
+  background:var(--accent)!important;
+  color:#fff!important;
+  font-size:9px!important;
+  font-weight:750!important;
+  cursor:pointer!important;
+}
+body[data-page="cronograma"] .agenda-overdue-reinsert:disabled{
+  opacity:.45!important;
+  cursor:default!important;
+}
+body[data-page="cronograma"] .agenda-overdue-empty{
+  padding:12px 8px!important;
+  border:1px dashed var(--border)!important;
+  border-radius:9px!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  text-align:center!important;
+}
+@media(max-width:1050px){
+  body[data-page="cronograma"] .agenda-overdue-card{grid-column:1/-1!important}
+}
+</style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20260930-layout-pcr">
@@ -4171,6 +4298,22 @@ body[data-page="cronograma"] .agenda-insight-tabs button:hover:not(.active){
                     <div class="agenda-goal-day" data-goal-kind="questions-simulation"><span>Questões / Simulados</span><strong>0/0</strong><i><b></b></i><small>feito / meta</small></div>
                   </div>
                 </div>
+              </section>
+              <section class="agenda-insight-card agenda-overdue-card" aria-labelledby="agenda-overdue-title">
+                <div class="agenda-overdue-head">
+                  <div>
+                    <span class="agenda-overdue-kicker">PENDÊNCIAS</span>
+                    <h3 id="agenda-overdue-title">Aulas atrasadas</h3>
+                  </div>
+                  <strong id="agenda-overdue-count">0</strong>
+                </div>
+                <p class="agenda-overdue-help">Recoloque aulas atrasadas no Deck ou redistribua todas respeitando suas configurações atuais.</p>
+                <div id="agenda-overdue-list" class="agenda-overdue-list">
+                  <div class="agenda-overdue-empty">Nenhuma aula atrasada.</div>
+                </div>
+                <button id="agenda-overdue-reinsert" class="agenda-overdue-reinsert" type="button">
+                  Reinserir aulas atrasadas
+                </button>
               </section>
             </aside>
 
