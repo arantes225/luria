@@ -679,8 +679,8 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
                 <div><span>Erros</span><strong id="quick-metric-wrong">—</strong><small>respostas incorretas</small></div>
               </div>
               <div class="error-metric-progress">
-                <div class="error-metric-ring" id="quick-metric-retention-ring" style="--p:0">
-                  <strong id="quick-metric-retention">—</strong><span>retenção</span>
+                <div class="error-metric-ring metric-percent-center" id="quick-metric-retention-ring" style="--p:0">
+                  <strong id="quick-metric-retention">—%</strong>
                 </div>
                 <div>
                   <strong>Retenção acumulada</strong>
@@ -1978,5 +1978,30 @@ body[data-page="flashcards"] .flash-home-summary>span{display:none!important}
   body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics .error-quick-metrics-body{
     grid-template-rows:auto!important;
   }
+}
+</style>
+
+<style id="metric-percent-centered-v70">
+body[data-page="flashcards"] .metric-percent-center,
+body[data-page="questoes"] .metric-percent-center{
+  display:grid!important;
+  place-items:center!important;
+}
+body[data-page="flashcards"] .metric-percent-center strong,
+body[data-page="questoes"] .metric-percent-center strong{
+  position:relative!important;
+  z-index:2!important;
+  align-self:center!important;
+  justify-self:center!important;
+  margin:0!important;
+  line-height:1!important;
+  font-size:17px!important;
+  font-weight:800!important;
+  color:var(--text)!important;
+  transform:none!important;
+}
+body[data-page="flashcards"] .metric-percent-center span,
+body[data-page="questoes"] .metric-percent-center span{
+  display:none!important;
 }
 </style>
