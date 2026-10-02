@@ -167,12 +167,15 @@ if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else bo
     const main=document.querySelector("main.main,.main");
     if(!search||!timer||!main)return;
     const tr=timer.getBoundingClientRect(),mr=main.getBoundingClientRect();
+    const leftPad=window.innerWidth<=700?14:28;
     search.style.setProperty("position","fixed","important");
     search.style.setProperty("top",Math.round(tr.top)+"px","important");
-    search.style.setProperty("left",Math.round(mr.left+28)+"px","important");
+    search.style.setProperty("left",Math.round(mr.left+leftPad)+"px","important");
     search.style.setProperty("right","auto","important");
     search.style.setProperty("margin","0","important");
     search.style.setProperty("height",Math.round(tr.height)+"px","important");
+    search.style.setProperty("min-height",Math.round(tr.height)+"px","important");
+    search.style.setProperty("align-items","center","important");
     search.style.setProperty("z-index","246","important");
     search.style.setProperty("transform","none","important");
   }
