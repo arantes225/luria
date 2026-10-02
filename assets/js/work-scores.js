@@ -339,7 +339,7 @@
         q("Já se sentiu culpado por beber?",yesno()),
         q("Já bebeu pela manhã para aliviar nervosismo ou ressaca (eye-opener)?",yesno())
       ],
-      interpret:(n)=>n>=2?\`CAGE \${n}/4: rastreio positivo (≥2 respostas positivas). Indica necessidade de avaliação mais detalhada do padrão de consumo e de transtorno por uso de álcool; não estabelece diagnóstico.\`:n===1?"CAGE 1/4: abaixo do ponto de corte clássico, mas uma resposta positiva merece exploração clínica do consumo de álcool.":"CAGE 0/4: rastreio negativo pelo ponto de corte clássico; não exclui consumo de risco em todas as populações.",
+      interpret:(n)=>n>=2?`CAGE ${n}/4: rastreio positivo (≥2 respostas positivas). Indica necessidade de avaliação mais detalhada do padrão de consumo e de transtorno por uso de álcool; não estabelece diagnóstico.`:n===1?"CAGE 1/4: abaixo do ponto de corte clássico, mas uma resposta positiva merece exploração clínica do consumo de álcool.":"CAGE 0/4: rastreio negativo pelo ponto de corte clássico; não exclui consumo de risco em todas as populações.",
       reference:"Ewing JA. JAMA. 1984;252:1905–1907."
     },
     {
@@ -352,7 +352,7 @@
         q("Fuma com maior frequência nas primeiras horas após acordar?",yesno()),
         q("Fuma mesmo quando está doente e precisa permanecer acamado?",yesno())
       ],
-      interpret:(n)=>n<=2?\`Fagerström \${n}/10: dependência muito baixa à nicotina.\`:n<=4?\`Fagerström \${n}/10: dependência baixa à nicotina.\`:n===5?"Fagerström 5/10: dependência média à nicotina.":n<=7?\`Fagerström \${n}/10: dependência elevada à nicotina.\`:\`Fagerström \${n}/10: dependência muito elevada à nicotina.\`,
+      interpret:(n)=>n<=2?`Fagerström ${n}/10: dependência muito baixa à nicotina.`:n<=4?`Fagerström ${n}/10: dependência baixa à nicotina.`:n===5?"Fagerström 5/10: dependência média à nicotina.":n<=7?`Fagerström ${n}/10: dependência elevada à nicotina.`:`Fagerström ${n}/10: dependência muito elevada à nicotina.`,
       reference:"Heatherton TF et al. Br J Addict. 1991;86:1119–1127. Classificação utilizada pelo INCA/Ministério da Saúde."
     },
     {
@@ -656,7 +656,7 @@
     const risk=(1-Math.pow(s0,Math.exp(sum-mean)))*100;
     const rounded=Math.round(risk*10)/10;
     const cls=risk<10?"baixo":risk<=20?"moderado":"alto";
-    setResult(rounded.toLocaleString("pt-BR",{maximumFractionDigits:1})+"%",\`Risco cardiovascular global em 10 anos: \${cls} pela classificação <10%, 10–20% e >20%.\`,"A equação estima primeiro evento cardiovascular global e não deve ser aplicada a quem já tem doença cardiovascular estabelecida; nesses casos o risco já é elevado por definição clínica.");
+    setResult(rounded.toLocaleString("pt-BR",{maximumFractionDigits:1})+"%",`Risco cardiovascular global em 10 anos: ${cls} pela classificação <10%, 10–20% e >20%.`,"A equação estima primeiro evento cardiovascular global e não deve ser aplicada a quem já tem doença cardiovascular estabelecida; nesses casos o risco já é elevado por definição clínica.");
   }
 
   function calcGrace(){
