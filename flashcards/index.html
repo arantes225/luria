@@ -1564,7 +1564,7 @@ document.addEventListener("DOMContentLoaded",function(){
 document.addEventListener("DOMContentLoaded",()=>{
  const metrics=document.querySelector(".flash-quick-metrics");
  const slot=document.getElementById("flash-home-metrics-slot");
- if(metrics&&slot){const kids=[...metrics.children].filter(x=>!x.classList.contains("flash-quick-metrics-title"));kids.forEach(x=>slot.appendChild(x))}
+ if(metrics&&slot){const kids=[...metrics.children].filter(x=>!x.classList.contains("flash-quick-metrics-title")&&!x.classList.contains("error-side-head"));kids.forEach(x=>slot.appendChild(x))}
  // Home decks are rendered with their own handlers by flashcards-v21.js.
  document.querySelectorAll("[data-flash-home-tab]").forEach(b=>b.addEventListener("click",()=>{const tab=b.dataset.flashHomeTab;document.querySelector('[data-flash-tab="'+tab+'"]')?.click()}));
 });
