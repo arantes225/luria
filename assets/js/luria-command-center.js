@@ -49,7 +49,7 @@ function sessionSteps(minutes){
  acts.slice(0,3).forEach(a=>add(a.title||"Atividade do cronograma",a.area||"Atividade de hoje",15,a.kind==="lesson"?"/caderno/":"/cronograma/"));
  if(questions||steps.length<2)add("Questões direcionadas","Consolide a sessão com questões do dia.",Math.min(20,Math.max(8,budget-used)),"/resolver-questoes/?daily=1");
  if(!steps.length)add("Revisão guiada","Comece com flashcards e siga para questões.",Math.min(20,budget),"/flashcards/");
- return steps
+ return steps.slice(0,3)
 }
 function openSession(initialMinutes=30){
  let mins=Number(initialMinutes)||30;const o=modal("luria-session-overlay","Estudar agora",'<p style="margin:0;color:var(--muted);font-size:10px">A LURIA organiza uma sessão a partir das atividades e pendências disponíveis agora.</p><div class="luria-session-times"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 h</button><button data-m="999">Completar o dia</button></div><div id="luria-session-list" class="luria-session-list"></div><div class="luria-intel-actions"><button id="luria-session-remix" class="luria-intel-button">Reorganizar</button><button id="luria-session-start" class="luria-intel-button primary">Iniciar sessão</button></div>');
