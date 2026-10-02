@@ -73,8 +73,8 @@
     <section id="qr-layout" class="qr-layout" hidden>
       <article class="qr-card">
         <div class="qr-question-meta">
-          <span class="qr-pill" id="qr-area">Clínica Médica</span>
-          <span class="qr-pill neutral" id="qr-materia">Cardiologia</span>
+          <span class="qr-pill" id="qr-area">Área não classificada</span>
+          <span class="qr-pill neutral" id="qr-materia">Matéria não classificada</span>
           <span class="qr-pill neutral qr-difficulty">▥ <span id="qr-difficulty">Média</span></span>
           <span id="qr-source" style="margin-left:auto;color:var(--muted);font-size:8px"></span>
         </div>
@@ -118,7 +118,7 @@
  function render(){
   const item=state.items[state.index]; if(!item)return;
   state.started=Date.now(); const at=state.attempts.get(item.id), sel=state.selected.get(item.id)||String(at?.selected_option||"").toUpperCase(), confirmed=!!at, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
-  $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Clínica Médica";$("qr-materia").textContent=item.materia||item.subject||"Cardiologia";$("qr-difficulty").textContent=item.difficulty||"Média";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Infarto Agudo do Miocárdio","IAM com Supra de ST","Conduta inicial","Reperfusão"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
+  $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Área não classificada";$("qr-materia").textContent=item.materia||item.subject||"Matéria não classificada";$("qr-difficulty").textContent=item.difficulty||"Não informada";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Sem tags"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
   const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url); if(hasQuestionImage){img.src=item.image_url;img.hidden=false}else{img.hidden=true;img.removeAttribute("src");img.style.display="none"} if(hasQuestionImage) img.style.removeProperty("display")
   const os=opts(item);$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span>'+esc(o.t)+'</span></button>'}).join("");
   document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{state.selected.set(item.id,b.dataset.opt);render()});
