@@ -4161,3 +4161,26 @@ body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle svg{
   stroke:#fff!important;
 }
+
+
+/* ANOTAÇÕES — menu ⋯ dos cadernos */
+.notebook-book-actions{position:relative;z-index:4}
+.notebook-book-menu{
+  position:relative;z-index:5;display:grid;place-items:center;width:32px;height:32px;
+  padding:0;border:0;border-radius:9px;background:transparent;color:var(--muted);
+  font:800 20px/1 var(--font-ui,Inter,sans-serif);cursor:pointer
+}
+.notebook-book-menu:hover,.notebook-book-menu[aria-expanded="true"]{background:var(--surface-2);color:var(--text)}
+.notebook-book-menu-popover{
+  position:absolute;top:36px;right:0;z-index:30;min-width:128px;padding:5px;
+  border:1px solid var(--border);border-radius:11px;background:var(--surface);
+  box-shadow:0 14px 32px rgba(0,0,0,.14)
+}
+.notebook-book-menu-popover[hidden]{display:none!important}
+.notebook-book-menu-popover button{
+  display:flex;width:100%;align-items:center;justify-content:flex-start;
+  padding:9px 10px;border:0;border-radius:8px;background:transparent;color:var(--text);
+  font:750 11px var(--font-ui,Inter,sans-serif);cursor:pointer;text-align:left
+}
+.notebook-book-menu-popover button:hover{background:var(--surface-2)}
+.notebook-book-menu-popover button.danger{color:#b42318}
