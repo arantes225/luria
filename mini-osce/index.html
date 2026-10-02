@@ -61,6 +61,8 @@
    renderAreaSwitches();
    $("#osce-search").oninput=renderList;
    renderList();
+   const requested=new URLSearchParams(location.search).get("case");
+   if(requested && state.cases.some(x=>String(x.id)===String(requested))) start(requested);
  }
  load().catch(()=>{$("#osce-grid").innerHTML='<div class="osce-empty">Não foi possível carregar as estações agora.</div>'})
 })();
