@@ -39,9 +39,27 @@ function preExam(){
  const render=()=>{if(!dt.value){plan.innerHTML="";return}const days=Math.max(0,Math.ceil((new Date(dt.value+"T12:00:00")-new Date())/86400000));const intensity=days<=7?"intensiva":days<=21?"prioritária":"progressiva";plan.innerHTML='<div class="luria-session-step"><b>1</b><div><strong>Revisão '+intensity+'</strong><small>'+days+' dia'+(days===1?"":"s")+' até a prova · priorizar erros, flashcards vencidos e questões de menor desempenho.</small></div><span>'+Math.min(60,20+Math.max(0,21-days))+' min/dia</span></div>'};dt.onchange=render;render();$("#luria-preexam-save",o).onclick=()=>{localStorage.setItem("luria:preexam",JSON.stringify({name:n.value.trim(),date:dt.value,updatedAt:new Date().toISOString()}));o.remove()}
 }
 function commandCard(){
- if(d.body.dataset.page!=="dashboard"||d.getElementById("luria-command-card"))return;
- const host=d.getElementById("dashboard-alternative");if(!host)return;
- const card=d.createElement("section");card.id="luria-command-card";card.className="luria-command-card";card.innerHTML='<div class="luria-command-card-head"><div><h3>Command Center</h3><p>Comece o que importa agora sem procurar entre várias páginas.</p></div><button id="luria-study-now" class="luria-intel-button primary">Estudar agora</button></div><div class="luria-command-links"><a href="/resolver-questoes/?daily=1">Questões do dia</a><a href="/flashcards/">Revisar flashcards</a><button id="luria-preexam">Revisão pré-prova</button><a href="/mini-osce/">Mini-OSCE</a><a href="/bulario/">Bulário</a><a href="/protocolos/">Protocolos</a><a href="/scores/">Scores</a><a href="/passometro/">Passômetro</a></div>';host.prepend(card);$("#luria-study-now",card).onclick=openSession;$("#luria-preexam",card).onclick=preExam
+ const old=d.getElementById("luria-command-card");if(old)old.remove();
+ if(d.body.dataset.page!=="dashboard")return;
+ const root=d.getElementById("dashboard-alternative");if(!root)return;
+ const activityCard=root.querySelector(".dl-agenda-large,.dl-agenda,.dl-upcoming,.dl-card");
+ if(!activityCard||activityCard.querySelector("[data-luria-study-now-inline]"))return;
+ const head=activityCard.querySelector(".dl-card-heading")||activityCard.firstElementChild;
+ const action=d.createElement("button");
+ action.type="button";
+ action.className="luria-intel-button primary";
+ action.dataset.luriaStudyNowInline="1";
+ action.textContent="Estudar agora";
+ action.style.marginLeft="auto";
+ action.onclick=openSession;
+ if(head){
+   head.style.display="flex";
+   head.style.alignItems="center";
+   head.style.gap="8px";
+   head.appendChild(action);
+ }else{
+   activityCard.prepend(action);
+ }
 }
 function enhanceQuestion(){
  const fb=d.getElementById("qr-feedback");if(!fb)return;
