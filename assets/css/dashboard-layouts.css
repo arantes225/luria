@@ -4789,3 +4789,121 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-split .d
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 }
+
+
+/* =========================================================
+   DASHBOARD STUDY PAIRS V2
+   Dois cards independentes: atividades + estudar agora
+   ========================================================= */
+.dl-agenda-study-pair{
+  min-width:0;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:14px;
+  align-items:stretch;
+}
+.dl-agenda-study-pair>.dl-card{
+  min-width:0;
+  width:100%;
+  height:100%;
+}
+.dl-agenda-study-pair-1{
+  min-height:420px;
+}
+.dl-agenda-study-pair-1 .dl-agenda-large,
+.dl-agenda-study-pair-1 .dl-study-now-card-main{
+  min-height:420px!important;
+}
+.dl-agenda-study-pair-4{
+  min-height:300px;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-pair-4{
+  height:300px!important;
+  min-height:300px!important;
+  max-height:300px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-pair-4>.dl-card{
+  height:300px!important;
+  min-height:300px!important;
+  max-height:300px!important;
+  overflow:hidden!important;
+}
+.dl-study-now-card-main{
+  display:flex!important;
+  flex-direction:column!important;
+}
+.dl-study-now-card-main>.dl-study-now{
+  flex:1 1 auto;
+  min-height:0;
+}
+.dl-study-now-card-main .dl-study-time-options{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.dl-study-now-card-main .dl-study-now>p{
+  max-width:34ch;
+}
+
+/* Dashboard 2 — conteúdo compacto dentro do callout real */
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now-card{
+  padding:14px!important;
+  overflow:hidden!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now-card>.dl-study-now{
+  gap:8px!important;
+  min-height:0!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now-head{
+  gap:7px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now-head .dl-heading-icon{
+  width:28px!important;
+  height:28px!important;
+  min-width:28px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now-head small{
+  font-size:7px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now-head h3{
+  font-size:14px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now>p{
+  font-size:9px!important;
+  line-height:1.3!important;
+  max-width:none!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-time-options{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:5px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-time-options button{
+  min-height:30px!important;
+  padding:0 6px!important;
+  font-size:9px!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-study-now .dl-study-now-start{
+  min-height:34px!important;
+  padding:8px 8px!important;
+  margin-top:auto!important;
+  font-size:10px!important;
+}
+
+/* Remove a antiga divisória interna: não é mais usada nos layouts 1 e 4. */
+body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-split,
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-split{
+  display:contents!important;
+}
+
+@media(max-width:980px){
+  .dl-agenda-study-pair{
+    grid-template-columns:1fr;
+  }
+  .dl-agenda-study-pair-1,
+  .dl-agenda-study-pair-1 .dl-agenda-large,
+  .dl-agenda-study-pair-1 .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-pair-4,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-pair-4>.dl-card{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+}
