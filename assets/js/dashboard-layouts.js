@@ -212,7 +212,7 @@
         <span class="dl-heading-icon" aria-hidden="true">${icon("target")}</span>
         <div><small>Sessão guiada</small><h3>Estudar agora</h3></div>
       </div>
-      <p>Escolha quanto tempo você tem. A LURIA organiza atividades, revisões, erros e questões para esta sessão.</p>
+      <p>Escolha seu tempo. A LURIA organiza a sessão para você.</p>
       <div class="dl-study-time-options" role="group" aria-label="Tempo disponível">
         <button type="button" data-luria-study-time="15">15 min</button>
         <button type="button" data-luria-study-time="30" class="active">30 min</button>
@@ -230,7 +230,7 @@
     const dayLessons = window.luriaDashboardDayLessons?.[todayISO] || { completed: 0, total: 0 };
     const done = dayLessons.completed; const total = dayLessons.total;
     const pct = total ? Math.round(done / total * 100) : 0;
-    return `<div class="dl-grid dl-layout-1"><section class="dl-card dl-agenda-large dl-agenda-study-split"><div class="dl-agenda-pane">${heading(icon("calendar"), "Atividades de hoje", "/cronograma/")}${activityList(todayItems, 10, false)}</div>${studyNowPanel()}</section><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-1"><div class="dl-agenda-study-pair dl-agenda-study-pair-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Atividades de hoje", "/cronograma/")}${activityList(todayItems, 10, false)}</section><section class="dl-card dl-study-now-card dl-study-now-card-main">${studyNowPanel()}</section></div><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
   }
 
   function layout2(data) {
@@ -280,7 +280,7 @@
     const challengeValue = Number.isFinite(data.challengeAccuracy) ? `${data.challengeAccuracy}%` : "Novo";
     const challengeCaption = Number.isFinite(data.challengeAccuracy) ? "taxa de acerto ›" : "Jogar hoje ›";
     const todayActivities = upcomingItems().filter((item) => item?.activity_date === dayISO(new Date())).sort((a, b) => String(a.activity_time || "").localeCompare(String(b.activity_time || "")) || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR"));
-    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon">${icon("target")}</span><span class="dl-challenge-copy"><small>Desafio diário</small><strong>${escape(challengeValue)}</strong><em>${escape(challengeCaption)}</em></span></a></div><section class="dl-card dl-upcoming dl-today-activities dl-agenda-study-split"><div class="dl-agenda-pane">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}<div class="dl-today-scroll">${activityList(todayActivities, todayActivities.length || 1)}</div></div>${studyNowPanel(true)}</section>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
+    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon">${icon("target")}</span><span class="dl-challenge-copy"><small>Desafio diário</small><strong>${escape(challengeValue)}</strong><em>${escape(challengeCaption)}</em></span></a></div><div class="dl-agenda-study-pair dl-agenda-study-pair-4"><section class="dl-card dl-upcoming dl-today-activities">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}<div class="dl-today-scroll">${activityList(todayActivities, todayActivities.length || 1)}</div></section><section class="dl-card dl-study-now-card dl-study-now-card-main">${studyNowPanel(true)}</section></div>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
   }
 
 
