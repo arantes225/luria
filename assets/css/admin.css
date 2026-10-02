@@ -4883,3 +4883,31 @@ body.admin-unlocked #admin-app {
 .admin-beta-feedback-columns p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.5;font-size:13px}
 .admin-beta-empty{padding:28px;border:1px dashed var(--border);border-radius:14px;text-align:center;color:var(--muted)}
 @media(max-width:760px){.admin-beta-toolbar{align-items:stretch;flex-direction:column}.admin-beta-toolbar .button{width:100%}.admin-beta-feedback-columns{grid-template-columns:1fr}.admin-beta-feedback-card>header{flex-direction:column;gap:6px}}
+
+
+/* admin-image-review-v1 */
+.admin-image-review-section{display:grid;gap:14px}
+.admin-image-review-rule{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}
+.admin-image-review-rule strong{font-size:11px;white-space:nowrap}
+.admin-image-review-rule span{color:var(--muted);font-size:10px;line-height:1.45}
+.admin-image-review-list{display:grid;gap:12px}
+.admin-image-review-card{display:grid;grid-template-columns:minmax(180px,260px) minmax(0,1fr);gap:14px;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+.admin-image-review-preview{min-height:150px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2);display:grid;place-items:center;overflow:hidden}
+.admin-image-review-preview img{display:block;width:100%;height:100%;max-height:220px;object-fit:contain;background:var(--surface-2)}
+.admin-image-review-preview span{padding:18px;color:var(--muted);font-size:9px;text-align:center}
+.admin-image-review-body{min-width:0;display:grid;gap:9px}
+.admin-image-review-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.admin-image-review-head strong{font-size:14px}
+.admin-image-review-head small{display:block;margin-top:3px;color:var(--muted);font-size:9px}
+.admin-image-review-tags{display:flex;flex-wrap:wrap;gap:6px}
+.admin-image-review-tag{display:inline-flex;align-items:center;min-height:25px;padding:0 8px;border:1px solid var(--border);border-radius:999px;background:var(--surface-2);font-size:8px;font-weight:800}
+.admin-image-review-source{padding:9px 10px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);font-size:9px;line-height:1.45;overflow-wrap:anywhere}
+.admin-image-review-source a{color:var(--accent);font-weight:800}
+.admin-image-review-actions{display:flex;gap:8px;justify-content:flex-end}
+.admin-image-review-actions .button{min-width:96px}
+@media(max-width:760px){
+  .admin-image-review-card{grid-template-columns:1fr}
+  .admin-image-review-preview{min-height:120px}
+  .admin-image-review-actions{justify-content:stretch}
+  .admin-image-review-actions .button{flex:1}
+}
