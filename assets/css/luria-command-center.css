@@ -39,3 +39,42 @@ body[data-page="dashboard"] .dl-upcoming.luria-has-study-now .luria-dashboard-st
   margin-top:auto!important;
   flex:0 0 auto!important;
 }
+
+
+/* stats-timeline-compact-v4 */
+body[data-page="estatisticas"] #luria-stats-timeline{
+  margin:8px 0 10px!important;
+  padding:10px 12px!important;
+  border-radius:10px!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline .luria-stats-timeline-head{
+  display:flex!important;
+  align-items:flex-start!important;
+  justify-content:space-between!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline h3{
+  margin:0!important;
+  font-size:11px!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline p{
+  margin:2px 0 7px!important;
+  font-size:7.5px!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-bars{
+  height:82px!important;
+  gap:6px!important;
+  padding:0 2px!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-col{
+  min-width:16px!important;
+  gap:3px!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-bar{
+  width:min(22px,66%)!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-col small{
+  font-size:6px!important;
+}
+body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-col b{
+  font-size:6.5px!important;
+}
