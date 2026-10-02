@@ -2862,6 +2862,13 @@ function setNotebookEditMode(
     );
   }
 
+  const inspectorEditButton = document.getElementById("notebook-inspector-edit");
+  if (inspectorEditButton) {
+    const inspectorEditLabel = inspectorEditButton.querySelector("span");
+    if (inspectorEditLabel) inspectorEditLabel.textContent = notebookState.editorEditable ? "Salvar" : "Editar";
+    inspectorEditButton.classList.toggle("is-saving-toggle", notebookState.editorEditable);
+  }
+
   if (notebookState.editorEditable) {
     const hint = document.getElementById("notebook-editor-hint");
     const wrap = document.getElementById("notebook-document-wrap");
@@ -18245,12 +18252,26 @@ function wireEvents() {
 
 
   document.querySelectorAll("#notebook-inspector-edit, #notebook-inspector-edit-hidden").forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", async () => {
       if (!getCurrentDocument()) {
         renderDocument();
         return;
       }
-      setNotebookEditMode(true);
+
+      if (!notebookState.editorEditable) {
+        setNotebookEditMode(true);
+        const label = button.querySelector("span");
+        if (label) label.textContent = "Salvar";
+        button.classList.add("is-saving-toggle");
+        document.getElementById("notebook-editor")?.focus();
+        return;
+      }
+
+      await saveCurrentNotebook(false);
+      setNotebookEditMode(false);
+      const label = button.querySelector("span");
+      if (label) label.textContent = "Editar";
+      button.classList.remove("is-saving-toggle");
     });
   });
 
