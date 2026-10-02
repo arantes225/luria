@@ -4748,3 +4748,33 @@ button,input,select,textarea{font-family:var(--luria-font)!important}
 html,body,body *,button,input,select,textarea,optgroup,option{font-family:var(--font-ui)!important}
 body [contenteditable="true"],body [contenteditable="true"] *,body .note-editor-content,body .note-editor-content *{font-family:var(--font-ui)!important}
 body :where(code,pre,kbd,samp),body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}
+
+/* =========================================================
+   v2026.10.02 — SCROLLBAR GLOBAL LURIA
+   Referência visual: scrollbar dos decks de Flashcards
+   ========================================================= */
+html,
+body,
+body *{
+  scrollbar-width:thin;
+  scrollbar-color:var(--accent) var(--surface-2);
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+body *::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+}
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+body *::-webkit-scrollbar-track{
+  background:var(--surface-2);
+  border-radius:8px;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+body *::-webkit-scrollbar-thumb{
+  background:var(--accent);
+  border-radius:8px;
+}
+
