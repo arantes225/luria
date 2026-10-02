@@ -389,7 +389,7 @@
         ? layout5(data)
         : current === "4"
           ? layout4(data)
-          : ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
+          : greeting() + ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
       if (html) root.innerHTML = html;
       document.querySelectorAll(".page > .luria-dashboard-spotlight").forEach(el => {
         if (!root.contains(el)) el.remove();
