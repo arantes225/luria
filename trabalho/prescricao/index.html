@@ -89,6 +89,47 @@
       font-size:9.5px;font-weight:800;border:1px solid var(--border)
     }
 
+    .prescription-mini-note{
+      position:relative;min-height:190px;padding:0;overflow:hidden;
+      display:grid;grid-template-rows:auto minmax(0,1fr) auto;
+      border:1px solid var(--border);border-radius:20px;background:var(--surface);
+      box-shadow:0 5px 18px rgba(15,35,66,.035)
+    }
+    .prescription-mini-note-head{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      padding:13px 14px 10px;border-bottom:1px solid var(--border);
+      background:color-mix(in srgb,var(--accent) 4%,var(--surface))
+    }
+    .prescription-mini-note-title{display:grid;gap:2px;min-width:0}
+    .prescription-mini-note-title strong{font-size:13px;line-height:1.15}
+    .prescription-mini-note-title small{color:var(--muted);font-size:9px;font-weight:750}
+    .prescription-mini-copy,.prescription-mini-clear{
+      width:34px;height:34px;min-width:34px;display:grid;place-items:center;
+      border:1px solid var(--border);border-radius:10px;background:var(--surface);
+      color:var(--muted);cursor:pointer
+    }
+    .prescription-mini-copy:hover,.prescription-mini-clear:hover{color:var(--accent);border-color:var(--accent)}
+    .prescription-mini-copy svg,.prescription-mini-clear svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+    .prescription-mini-paper{
+      position:relative;min-height:120px;
+      background:
+        linear-gradient(to right,transparent 0,transparent 31px,color-mix(in srgb,var(--accent) 18%,transparent) 31px,color-mix(in srgb,var(--accent) 18%,transparent) 32px,transparent 32px),
+        repeating-linear-gradient(to bottom,var(--surface) 0,var(--surface) 25px,color-mix(in srgb,var(--border) 72%,transparent) 26px)
+    }
+    #prescription-mini-note{
+      width:100%;height:100%;min-height:120px;resize:none;overflow:auto;
+      padding:13px 14px 16px 42px;border:0;outline:0;background:transparent;
+      color:var(--text);font:inherit;font-size:11.5px;line-height:26px
+    }
+    #prescription-mini-note::placeholder{color:var(--muted);opacity:.72}
+    .prescription-mini-note-foot{
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+      min-height:38px;padding:7px 10px 7px 14px;border-top:1px solid var(--border);
+      background:var(--surface)
+    }
+    #prescription-mini-status{color:var(--muted);font-size:9px;font-weight:750}
+    .prescription-mini-clear{width:30px;height:30px;min-width:30px;border-radius:9px}
+
     @media(max-width:760px){
       .prescription-hub{gap:14px}
       .prescription-hero{grid-template-columns:1fr;padding:20px;border-radius:18px}
@@ -137,7 +178,7 @@
           </div>
 
           <nav class="prescription-grid" aria-label="Módulos de prescrição">
-            <a class="prescription-card" href="/trabalho/bulario/">
+            <a class="prescription-card" href="/trabalho/bulario/?prescription=1">
               <div class="prescription-card-top">
                 <span class="prescription-icon" aria-hidden="true">℞</span>
                 <span class="prescription-arrow" aria-hidden="true">↗</span>
@@ -173,17 +214,26 @@
               </div>
             </a>
 
-            <a class="prescription-card" href="/trabalho/prontuario-rapido/">
-              <div class="prescription-card-top">
-                <span class="prescription-icon" aria-hidden="true">✎</span>
-                <span class="prescription-arrow" aria-hidden="true">↗</span>
+            <article class="prescription-mini-note" aria-label="Rascunho da prescrição">
+              <div class="prescription-mini-note-head">
+                <div class="prescription-mini-note-title">
+                  <strong>Minha prescrição</strong>
+                  <small>Os itens enviados vão aparecendo aqui</small>
+                </div>
+                <button id="prescription-mini-copy" class="prescription-mini-copy" type="button" aria-label="Copiar prescrição" title="Copiar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"></path></svg>
+                </button>
               </div>
-              <div class="prescription-card-copy">
-                <strong>Cola rápida</strong>
-                <small>Receba com um toque o protocolo, o tratamento ou a ficha do medicamento que você está consultando e leve para sua anotação temporária.</small>
-                <div class="prescription-card-tags"><span>Integração</span><span>Anotação</span><span>Plantão</span></div>
+              <div class="prescription-mini-paper">
+                <textarea id="prescription-mini-note" spellcheck="true" autocomplete="off" placeholder="Adicione medicamentos pelo Bulário ou escreva aqui..."></textarea>
               </div>
-            </a>
+              <div class="prescription-mini-note-foot">
+                <span id="prescription-mini-status">Rascunho local</span>
+                <button id="prescription-mini-clear" class="prescription-mini-clear" type="button" aria-label="Apagar prescrição" title="Apagar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"></path></svg>
+                </button>
+              </div>
+            </article>
 
             <a class="prescription-card" href="/trabalho/antimicrobianos/">
               <div class="prescription-card-top">
@@ -203,7 +253,52 @@
   </div>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=20260930-layout-pcr"></script>
+  <script src="/assets/js/app.js?v=20261002-ios-footer-v38"></script>
+  <script src="/assets/js/clinical-bridge.js?v=2-prescription-draft"></script>
+  <script>
+    (() => {
+      const KEY = "luria-prescription-draft-v1";
+      const note = document.getElementById("prescription-mini-note");
+      const copy = document.getElementById("prescription-mini-copy");
+      const clear = document.getElementById("prescription-mini-clear");
+      const status = document.getElementById("prescription-mini-status");
+      if (!note) return;
+
+      const read = () => { try { return localStorage.getItem(KEY) || ""; } catch (_) { return ""; } };
+      const write = (value) => { try { localStorage.setItem(KEY, value); } catch (_) {} };
+      const setStatus = (value) => {
+        if (!status) return;
+        status.textContent = value;
+        clearTimeout(setStatus.timer);
+        setStatus.timer = setTimeout(() => status.textContent = "Rascunho local", 1200);
+      };
+
+      note.value = read();
+      note.addEventListener("input", () => { write(note.value); setStatus("Salvo"); });
+
+      copy?.addEventListener("click", async () => {
+        const value = note.value.trim();
+        if (!value) { setStatus("Nada para copiar"); return; }
+        try { await navigator.clipboard.writeText(value); }
+        catch (_) {
+          note.focus(); note.select(); document.execCommand("copy");
+          note.setSelectionRange(note.value.length, note.value.length);
+        }
+        setStatus("Copiado");
+      });
+
+      clear?.addEventListener("click", () => {
+        note.value = "";
+        write("");
+        setStatus("Apagado");
+        note.focus();
+      });
+
+      window.addEventListener("storage", (event) => {
+        if (event.key === KEY && event.newValue !== note.value) note.value = event.newValue || "";
+      });
+    })();
+  </script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
