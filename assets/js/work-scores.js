@@ -38,7 +38,7 @@
     {
       id:"qsofa",name:"qSOFA",category:"Emergência",aliases:"sepse infecção",desc:"Triagem prognóstica rápida em pacientes com suspeita de infecção.",tags:["Plantão","Infectologia"],
       questions:[q("FR ≥ 22 irpm",yesno()),q("PAS ≤ 100 mmHg",yesno()),q("Alteração do estado mental (GCS < 15)",yesno())],
-      interpret:sumInterpret([[0,1,"0–1 critério: menor pontuação no qSOFA"],[2,3,"≥2 critérios: maior risco de desfecho desfavorável; requer avaliação clínica completa"]]),
+      interpret:sumInterpret([[0,1,"qSOFA 0–1: abaixo do ponto de corte de maior risco. Não exclui sepse e não deve ser usado isoladamente como rastreio."],[2,3,"qSOFA ≥2: associado a maior risco de desfecho desfavorável em pacientes com suspeita de infecção. Não diagnostica sepse; avaliar disfunção orgânica completa."]]),
       reference:"Singer M et al. JAMA. 2016;315:801–810."
     },
     {id:"sofa",name:"SOFA",category:"Emergência",aliases:"sepse disfunção orgânica UTI",desc:"Quantifica disfunção de seis sistemas orgânicos.",tags:["UTI","Infectologia"],custom:"sofa",reference:refs.sofa},
@@ -62,7 +62,7 @@
         q("Diabetes mellitus",yesno()),q("AVC/AIT/tromboembolismo prévio",yesno(2)),
         q("Doença vascular",yesno()),q("Sexo feminino",yesno())
       ],
-      interpret:(n)=>`Pontuação total: ${n}. Interpretar junto às diretrizes atuais e ao contexto clínico.`,
+      interpret:(n)=>`CHA₂DS₂-VASc ${n}. Estima risco tromboembólico na fibrilação atrial; a decisão sobre anticoagulação depende do escore, do risco hemorrágico e da diretriz vigente.`,
       reference:"Lip GYH et al. Chest. 2010;137:263–272."
     },
     {
@@ -72,7 +72,7 @@
         q("AVC prévio",yesno()),q("Sangramento prévio/predisposição",yesno()),q("INR lábil",yesno()),
         q("Idade >65 anos",yesno()),q("Fármacos que aumentam sangramento",yesno()),q("Álcool",yesno())
       ],
-      interpret:(n)=> n>=3 ? "HAS-BLED ≥3: maior risco de sangramento; revisar fatores modificáveis e intensificar o seguimento." : "HAS-BLED 0–2: abaixo do ponto de corte usual para alto risco.",
+      interpret:(n)=> n>=3 ? "HAS-BLED ≥3: alto risco de sangramento. Identifique e corrija fatores modificáveis e faça seguimento mais próximo; o escore, isoladamente, não é motivo para negar anticoagulação." : "HAS-BLED 0–2: abaixo do ponto de corte de alto risco; ainda assim, revisar fatores modificáveis e reavaliar periodicamente.",
       reference:"Pisters R et al. Chest. 2010;138:1093–1100."
     },
     {
@@ -85,7 +85,7 @@
         q("TEP/TVP prévia",[opt("Não",0),opt("Sim",1.5)]),
         q("Hemoptise",yesno()),q("Malignidade ativa",yesno())
       ],
-      interpret:(n)=> n>4 ? "TEP provável no modelo de 2 níveis (>4)." : "TEP improvável no modelo de 2 níveis (≤4).",
+      interpret:(n)=> n>4 ? "Wells >4: TEP provável no modelo de 2 níveis; a investigação costuma prosseguir diretamente para imagem conforme estabilidade e protocolo." : "Wells ≤4: TEP improvável no modelo de 2 níveis; usar D-dímero apropriado antes de imagem quando indicado.",
       reference:refs.wells
     },
     {
@@ -105,19 +105,19 @@
         q("Edema depressível restrito à perna sintomática",yesno()),q("Veias superficiais colaterais não varicosas",yesno()),q("TVP prévia",yesno()),
         q("Diagnóstico alternativo tão provável quanto TVP",[opt("Não",0),opt("Sim",-2)])
       ],
-      interpret:(n)=> n>=2 ? "TVP provável no modelo de 2 níveis (≥2)." : "TVP improvável no modelo de 2 níveis (≤1).",
+      interpret:(n)=> n>=2 ? "Wells ≥2: TVP provável no modelo de 2 níveis; indicar ultrassonografia venosa conforme protocolo." : "Wells ≤1: TVP improvável no modelo de 2 níveis; iniciar investigação com D-dímero quando apropriado.",
       reference:"Wells PS et al. Lancet. 1997;350:1795–1798."
     },
     {
       id:"spesi",name:"sPESI",category:"Tromboembolismo",aliases:"embolia pulmonar prognóstico TEP",desc:"Estratificação prognóstica simplificada após diagnóstico de TEP.",tags:["TEP","Prognóstico"],
       questions:[q("Idade >80 anos",yesno()),q("Câncer",yesno()),q("Doença cardiopulmonar crônica",yesno()),q("FC ≥110 bpm",yesno()),q("PAS <100 mmHg",yesno()),q("SpO₂ <90%",yesno())],
-      interpret:(n)=> n===0 ? "sPESI = 0: baixo risco pelo modelo." : "sPESI ≥1: presença de pelo menos um marcador de maior risco.",
+      interpret:(n)=> n===0 ? "sPESI 0: baixo risco prognóstico pelo modelo. A elegibilidade para tratamento ambulatorial ainda exige estabilidade, avaliação de ventrículo direito/biomarcadores quando indicada e condições sociais adequadas." : "sPESI ≥1: não pertence ao grupo de baixo risco do modelo; requer estratificação prognóstica adicional.",
       reference:"Jiménez D et al. Arch Intern Med. 2010;170:1383–1389."
     },
     {
       id:"curb65",name:"CURB-65",category:"Respiratório",aliases:"pneumonia PAC",desc:"Estratificação de gravidade na pneumonia adquirida na comunidade.",tags:["Pneumonia","PS"],
       questions:[q("Confusão nova",yesno()),q("Ureia >7 mmol/L (~19 mg/dL de BUN)",yesno()),q("FR ≥30 irpm",yesno()),q("PAS <90 ou PAD ≤60 mmHg",yesno()),q("Idade ≥65 anos",yesno())],
-      interpret:sumInterpret([[0,1,"0–1: faixa de menor gravidade no CURB-65"],[2,2,"2: gravidade intermediária"],[3,5,"3–5: pneumonia grave pelo escore"]]),
+      interpret:sumInterpret([[0,1,"CURB-65 0–1: baixo risco pelo escore; manejo ambulatorial pode ser possível se não houver outros critérios de gravidade."],[2,2,"CURB-65 2: risco intermediário; considerar avaliação hospitalar/internação conforme contexto."],[3,5,"CURB-65 3–5: pneumonia grave pelo escore; avaliação hospitalar urgente e considerar cuidado intensivo conforme quadro."]]),
       reference:refs.curb
     },
     {id:"nihss",name:"NIHSS",category:"Neurologia",aliases:"AVC stroke déficit neurológico",desc:"Quantificação padronizada do déficit neurológico no AVC.",tags:["AVC","Neurologia"],questions:[
@@ -144,7 +144,7 @@
         q("Características clínicas",[opt("Outros",0),opt("Alteração da fala sem fraqueza",1),opt("Fraqueza unilateral",2)]),
         q("Duração",[opt("<10 min",0),opt("10–59 min",1),opt("≥60 min",2)]),q("Diabetes",yesno())
       ],
-      interpret:sumInterpret([[0,3,"ABCD² 0–3: menor pontuação"],[4,5,"ABCD² 4–5: pontuação intermediária"],[6,7,"ABCD² 6–7: maior pontuação"]]),
+      interpret:sumInterpret([[0,3,"ABCD² 0–3: menor pontuação pelo modelo. Um escore baixo não exclui AIT de alto risco nem substitui avaliação etiológica urgente."],[4,5,"ABCD² 4–5: risco clínico intermediário pelo modelo; investigação de AIT deve ser rápida."],[6,7,"ABCD² 6–7: maior risco precoce de AVC pelo modelo; requer avaliação urgente."]]),
       reference:"Johnston SC et al. Lancet. 2007;369:283–292."
     },
     {
@@ -164,7 +164,7 @@
     {
       id:"bisap",name:"BISAP",category:"Gastro/Hepato",aliases:"pancreatite aguda",desc:"Estratificação precoce de gravidade na pancreatite aguda.",tags:["Pancreatite","PS"],
       questions:[q("BUN >25 mg/dL",yesno()),q("Alteração do estado mental (GCS <15)",yesno()),q("SIRS presente",yesno()),q("Idade >60 anos",yesno()),q("Derrame pleural",yesno())],
-      interpret:(n)=>`BISAP ${n}/5. Maior pontuação se associa a maior risco de complicações e mortalidade.`,
+      interpret:(n)=>n>=3?`BISAP ${n}/5: faixa de maior risco; escores ≥3 se associam a maior probabilidade de pancreatite grave e mortalidade.`:`BISAP ${n}/5: faixa de menor risco pelo escore; reavaliar clinicamente porque a gravidade pode evoluir nas primeiras 24–48 h.`,
       reference:refs.bisap
     },
     {
@@ -198,7 +198,7 @@
         q("Consistência",[opt("Firme",0),opt("Média",1),opt("Amolecida",2)]),
         q("Posição",[opt("Posterior",0),opt("Média",1),opt("Anterior",2)])
       ],
-      interpret:(n)=>`Bishop ${n}/13. Quanto maior a pontuação, mais favorável o colo à indução.`,
+      interpret:(n)=>n>=8?`Bishop ${n}/13: colo geralmente considerado favorável à indução.`:n<=5?`Bishop ${n}/13: colo desfavorável; costuma haver maior chance de necessidade de maturação cervical antes da indução.`:`Bishop ${n}/13: faixa intermediária; interpretar com paridade, indicação e protocolo obstétrico.`,
       reference:"Bishop EH. Obstet Gynecol. 1964;24:266–268."
     },
     {
@@ -210,7 +210,7 @@
         q("Tônus muscular",[opt("Flácido",0),opt("Alguma flexão",1),opt("Movimento ativo",2)]),
         q("Respiração",[opt("Ausente",0),opt("Lenta/irregular",1),opt("Boa, choro forte",2)])
       ],
-      interpret:(n)=>`Apgar ${n}/10. Registrar no minuto correspondente; não usar isoladamente para decisões de reanimação.`,
+      interpret:(n)=>n>=7?`Apgar ${n}/10: aos 5 minutos, 7–10 é considerado tranquilizador em RN termo/tardio. Registrar no minuto correspondente; não usar para decidir o início da reanimação.`:n>=4?`Apgar ${n}/10: aos 5 minutos, 4–6 é moderadamente anormal. Reavaliar e manter suporte conforme condição clínica; não usar isoladamente para definir reanimação.`:`Apgar ${n}/10: aos 5 minutos, 0–3 é baixo e indica condição neonatal importante, mas não define asfixia nem prognóstico isoladamente.`,
       reference:"Apgar V. Curr Res Anesth Analg. 1953;32:260–267."
     },
     {
@@ -240,7 +240,7 @@
         q("Uso de AAS nos últimos 7 dias",yesno()),q("≥2 episódios de angina nas últimas 24 h",yesno()),
         q("Desvio de ST ≥0,5 mm",yesno()),q("Marcador de necrose miocárdica elevado",yesno())
       ],
-      interpret:(n)=>`TIMI ${n}/7. Quanto maior a pontuação, maior o risco de eventos isquêmicos; interpretar no contexto da SCA.`,
+      interpret:(n)=>{const risk=[4.7,4.7,8.3,13.2,19.9,26.2,40.9,40.9][n]??null;return `TIMI ${n}/7${risk!==null?` — risco de aproximadamente ${String(risk).replace(".",",")}% do desfecho composto em 14 dias na coorte original`:``}. Use como estratificação complementar na SCA sem supra.`;},
       reference:"Antman EM et al. JAMA. 2000;284:835–842."
     },
     {
@@ -249,7 +249,7 @@
         q("Cirurgia de alto risco",yesno()),q("Doença cardíaca isquêmica",yesno()),q("Insuficiência cardíaca",yesno()),
         q("Doença cerebrovascular",yesno()),q("Diabetes em uso de insulina",yesno()),q("Creatinina >2,0 mg/dL",yesno())
       ],
-      interpret:(n)=>`RCRI ${n}/6. Usar com o tipo de cirurgia, capacidade funcional e avaliação perioperatória global.`,
+      interpret:(n)=>n===0?"RCRI 0: nenhum preditor clínico do índice; menor estrato de risco pelo RCRI.":n===1?"RCRI 1: um preditor clínico; risco perioperatório acima do grupo sem fatores.":n===2?"RCRI 2: dois preditores clínicos; risco perioperatório aumentado.":"RCRI ≥3: maior estrato de risco pelo RCRI; integrar tipo de cirurgia, capacidade funcional e avaliação cardiovascular perioperatória.",
       reference:"Lee TH et al. Circulation. 1999;100:1043–1049. Diretriz SBC de Avaliação Cardiovascular Perioperatória 2024."
     },
     {
@@ -259,13 +259,13 @@
         q("Idade",[opt("<65 anos",0),opt("65–74 anos",1),opt("≥75 anos",2)]),
         q("Diabetes mellitus",yesno()),q("AVC/AIT/tromboembolismo prévio",yesno(2)),q("Doença vascular",yesno())
       ],
-      interpret:(n)=>`CHA₂DS₂-VA: ${n}. Interpretar conforme a Diretriz Brasileira de FA vigente e contexto clínico.`,
+      interpret:(n)=>n>=2?`CHA₂DS₂-VA ${n}: faixa em que anticoagulação oral é geralmente recomendada nas diretrizes contemporâneas, salvo contraindicação.`:n===1?`CHA₂DS₂-VA 1: anticoagulação deve ser considerada após avaliação individual de benefício e risco.`:`CHA₂DS₂-VA 0: risco tromboembólico baixo pelo escore; anticoagulação por FA não é indicada apenas com base nesse escore.`,
       reference:"Diretriz Brasileira de Fibrilação Atrial – 2025. Arq Bras Cardiol. 2025;122(9):e20250618."
     },
     {
       id:"crb65",name:"CRB-65",category:"Respiratório",aliases:"pneumonia PAC atenção primária emergência",desc:"Versão do CURB-65 sem ureia, útil quando laboratório não está disponível.",tags:["Pneumonia","APS"],
       questions:[q("Confusão nova",yesno()),q("FR ≥30 irpm",yesno()),q("PAS <90 ou PAD ≤60 mmHg",yesno()),q("Idade ≥65 anos",yesno())],
-      interpret:sumInterpret([[0,0,"CRB-65 0: menor gravidade pelo escore."],[1,2,"CRB-65 1–2: risco intermediário; avaliar necessidade de internação."],[3,4,"CRB-65 3–4: alto risco; avaliação hospitalar urgente."]]),
+      interpret:sumInterpret([[0,0,"CRB-65 0: baixo risco pelo escore; manejo ambulatorial pode ser possível se o restante da avaliação for favorável."],[1,2,"CRB-65 1–2: risco intermediário; avaliar com atenção necessidade de encaminhamento/internação."],[3,4,"CRB-65 3–4: alto risco; requer avaliação hospitalar urgente."]]),
       reference:"Recomendações brasileiras para manejo da pneumonia adquirida na comunidade, J Bras Pneumol. 2018."
     },
     {
@@ -278,19 +278,19 @@
         q("Glasgow",[opt("13–15",0),opt("5–12",1),opt("3–4",2)]),
         q("Volume do hematoma ≥30 mL",yesno()),q("Hemorragia intraventricular",yesno()),q("Origem infratentorial",yesno()),q("Idade ≥80 anos",yesno())
       ],
-      interpret:(n)=>`ICH Score ${n}/6. Ferramenta prognóstica; não deve ser usada isoladamente para limitar tratamento.`,
+      interpret:(n)=>`ICH Score ${n}/6. Pontua gravidade prognóstica inicial da hemorragia intracerebral; quanto maior o escore, maior a mortalidade observada nas coortes de validação. Não usar isoladamente para limitar tratamento ou definir prognóstico individual.`,
       reference:"Hemphill JC et al. Stroke. 2001;32:891–897."
     },
     {
       id:"hunthess",name:"Hunt-Hess",category:"Neurologia",aliases:"hemorragia subaracnoide HSA aneurisma",desc:"Classificação clínica da gravidade da hemorragia subaracnoide.",tags:["HSA","Neuro"],
       questions:[q("Estado clínico",[opt("Grau I — assintomático ou cefaleia leve/rigidez nucal discreta",1),opt("Grau II — cefaleia moderada/grave, rigidez nucal, sem déficit exceto pares cranianos",2),opt("Grau III — sonolência/confusão ou déficit focal leve",3),opt("Grau IV — estupor, hemiparesia moderada/grave",4),opt("Grau V — coma profundo, rigidez descerebrada, moribundo",5)])],
-      interpret:(n)=>`Hunt-Hess grau ${n}.`,
+      interpret:(n)=>`Hunt-Hess grau ${n}. Graus mais altos correspondem a pior condição clínica inicial na HSA e maior risco de complicações; interpretar após estabilização e junto à avaliação neurológica completa.`,
       reference:"Hunt WE, Hess RM. J Neurosurg. 1968;28:14–20."
     },
     {
       id:"mfisher",name:"Fisher modificada",category:"Neurologia",aliases:"hemorragia subaracnoide HSA vasoespasmo tomografia",desc:"Classificação tomográfica da HSA relacionada ao risco de vasoespasmo.",tags:["HSA","Neuro"],
       questions:[q("TC de crânio",[opt("0 — sem HSA ou hemorragia intraventricular",0),opt("1 — HSA fina, sem hemorragia intraventricular",1),opt("2 — HSA fina com hemorragia intraventricular",2),opt("3 — HSA espessa, sem hemorragia intraventricular",3),opt("4 — HSA espessa com hemorragia intraventricular",4)])],
-      interpret:(n)=>`Fisher modificada: grau ${n}.`,
+      interpret:(n)=>n<=1?`Fisher modificada ${n}: menor carga de sangue subaracnoideo/intraventricular e menor risco relativo de vasoespasmo sintomático.`:`Fisher modificada ${n}: maior carga hemorrágica e maior risco de vasoespasmo sintomático, especialmente nos graus 3–4.`,
       reference:"Frontera JA et al. Neurosurgery. 2006;59:21–27."
     },
     {
@@ -302,7 +302,7 @@
         q("Idade ≥75 anos",yesno(3)),q("História de TEV",yesno(3)),q("História familiar de TEV",yesno(3)),q("Trombofilia conhecida",yesno(3)),
         q("AVC recente (<1 mês)",yesno(5)),q("Artroplastia eletiva",yesno(5)),q("Fratura de quadril/pelve/perna",yesno(5)),q("Lesão medular aguda (<1 mês)",yesno(5))
       ],
-      interpret:(n)=>n===0?"Caprini 0: risco muito baixo.":n<=2?"Caprini 1–2: baixo risco.":n<=4?"Caprini 3–4: risco moderado.":"Caprini ≥5: alto risco.",
+      interpret:(n)=>n===0?"Caprini 0: risco muito baixo de TEV pelo modelo.":n<=2?"Caprini 1–2: baixo risco de TEV.":n<=4?"Caprini 3–4: risco moderado de TEV.":"Caprini ≥5: alto risco de TEV; a profilaxia deve seguir o tipo de cirurgia, risco hemorrágico e protocolo institucional.",
       reference:"Caprini JA. Dis Mon. 2005;51:70–78. Modelo utilizado em protocolos hospitalares brasileiros."
     },
     {
@@ -328,6 +328,38 @@
     }
 ,
     {
+      id:"hints",name:"HINTS",category:"Neurologia",aliases:"vertigem síndrome vestibular aguda head impulse nistagmo skew AVC posterior",desc:"Diferencia padrão vestibular periférico de sinais sugestivos de causa central na síndrome vestibular aguda.",tags:["Vertigem","AVC"],custom:"hints",
+      reference:"Kattah JC et al. Stroke. 2009;40:3504–3510. Aplicável à síndrome vestibular aguda com nistagmo espontâneo e examinador treinado."
+    },
+    {
+      id:"cage",name:"CAGE",category:"Psiquiatria/Toxicologia",aliases:"álcool etilismo uso nocivo dependência rastreio",desc:"Rastreia possível uso problemático de álcool por quatro perguntas.",tags:["Álcool","APS"],
+      questions:[
+        q("Já sentiu que deveria diminuir a quantidade de bebida?",yesno()),
+        q("As pessoas já o incomodaram criticando seu modo de beber?",yesno()),
+        q("Já se sentiu culpado por beber?",yesno()),
+        q("Já bebeu pela manhã para aliviar nervosismo ou ressaca (eye-opener)?",yesno())
+      ],
+      interpret:(n)=>n>=2?\`CAGE \${n}/4: rastreio positivo (≥2 respostas positivas). Indica necessidade de avaliação mais detalhada do padrão de consumo e de transtorno por uso de álcool; não estabelece diagnóstico.\`:n===1?"CAGE 1/4: abaixo do ponto de corte clássico, mas uma resposta positiva merece exploração clínica do consumo de álcool.":"CAGE 0/4: rastreio negativo pelo ponto de corte clássico; não exclui consumo de risco em todas as populações.",
+      reference:"Ewing JA. JAMA. 1984;252:1905–1907."
+    },
+    {
+      id:"fagerstrom",name:"Fagerström",category:"Preventiva",aliases:"tabagismo nicotina dependência cigarro fumo",desc:"Estima o grau de dependência física à nicotina em pessoas que fumam cigarros.",tags:["Tabagismo","APS"],
+      questions:[
+        q("Quanto tempo após acordar fuma o primeiro cigarro?",[opt("Até 5 minutos",3),opt("6–30 minutos",2),opt("31–60 minutos",1),opt("Após 60 minutos",0)]),
+        q("É difícil ficar sem fumar em locais onde é proibido?",yesno()),
+        q("Qual cigarro seria mais difícil de abandonar?",[opt("O primeiro da manhã",1),opt("Qualquer outro",0)]),
+        q("Quantos cigarros fuma por dia?",[opt("Até 10",0),opt("11–20",1),opt("21–30",2),opt("31 ou mais",3)]),
+        q("Fuma com maior frequência nas primeiras horas após acordar?",yesno()),
+        q("Fuma mesmo quando está doente e precisa permanecer acamado?",yesno())
+      ],
+      interpret:(n)=>n<=2?\`Fagerström \${n}/10: dependência muito baixa à nicotina.\`:n<=4?\`Fagerström \${n}/10: dependência baixa à nicotina.\`:n===5?"Fagerström 5/10: dependência média à nicotina.":n<=7?\`Fagerström \${n}/10: dependência elevada à nicotina.\`:\`Fagerström \${n}/10: dependência muito elevada à nicotina.\`,
+      reference:"Heatherton TF et al. Br J Addict. 1991;86:1119–1127. Classificação utilizada pelo INCA/Ministério da Saúde."
+    },
+    {
+      id:"framingham",name:"Framingham — risco CV em 10 anos",category:"Preventiva",aliases:"risco cardiovascular global prevenção primária colesterol hipertensão tabagismo diabetes Ministério Saúde",desc:"Estima o risco cardiovascular global em 10 anos pela equação contínua de Framingham.",tags:["Risco CV","APS"],custom:"framingham",
+      reference:"D'Agostino RB Sr et al. Circulation. 2008;117:743–753. Faixas <10%, 10–20% e >20% são usadas em materiais do Ministério da Saúde para estratificação de risco."
+    },
+    {
       id:"centor",name:"Centor / McIsaac",category:"Infectologia",aliases:"faringite faringoamigdalite streptococcus estreptococo garganta",desc:"Estimativa clínica da probabilidade de faringoamigdalite estreptocócica.",tags:["APS","PS"],
       questions:[
         q("Febre >38 °C",yesno()),
@@ -351,7 +383,7 @@
     "childpugh","meldna","gbs","bisap",
     "alvarado","rcri","caprini",
     "bishop","apgar",
-    "ciwaar","centor"
+    "ciwaar","centor","hints","cage","fagerstrom","framingham"
   ]);
   for (let i = scores.length - 1; i >= 0; i -= 1) {
     if (!practicalScoreIds.has(scores[i].id)) scores.splice(i, 1);
@@ -503,6 +535,29 @@
   function selectField(label,id,opts){return `<div class="score-field"><label for="${id}">${label}</label><select id="${id}"><option value="">Selecione…</option>${opts.map(o=>`<option value="${o.value}">${esc(o.text)}</option>`).join("")}</select></div>`;}
 
   const customRender={
+    hints(f){
+      f.innerHTML=
+        selectField("Quadro compatível com síndrome vestibular aguda contínua?","h_avs",[opt("Sim",1),opt("Não",0)])+
+        selectField("Há nistagmo espontâneo em repouso?","h_nys",[opt("Sim",1),opt("Não",0)])+
+        selectField("Head impulse horizontal","h_hit",[opt("Anormal, com sacada corretiva",0),opt("Normal, sem sacada corretiva",1)])+
+        selectField("Nistagmo","h_ntype",[opt("Horizontal unidirecional",0),opt("Muda de direção com o olhar ou é vertical/torsional",1)])+
+        selectField("Test of skew","h_skew",[opt("Sem desvio vertical",0),opt("Skew/desalinhamento vertical presente",1)]);
+      $("select",f).forEach(x=>x.onchange=calcHints);
+      setResult("—","Preencha os campos.","Use HINTS apenas em síndrome vestibular aguda contínua com nistagmo espontâneo e examinador treinado.");
+    },
+    framingham(f){
+      f.innerHTML=
+        field("Idade (30–74 anos)","f_age","number",'min="30" max="74"')+
+        selectField("Sexo","f_sex",[opt("Masculino","m"),opt("Feminino","f")])+
+        field("Colesterol total (mg/dL)","f_tc","number",'min="1"')+
+        field("HDL-c (mg/dL)","f_hdl","number",'min="1"')+
+        field("PAS (mmHg)","f_sbp","number",'min="1"')+
+        selectField("Em tratamento anti-hipertensivo","f_tx",[opt("Não",0),opt("Sim",1)])+
+        selectField("Tabagismo atual","f_smoke",[opt("Não",0),opt("Sim",1)])+
+        selectField("Diabetes","f_dm",[opt("Não",0),opt("Sim",1)]);
+      $("input,select",f).forEach(x=>x.oninput=x.onchange=calcFramingham);
+      setResult("—","Preencha os campos.","Modelo validado em adultos de 30–74 anos sem doença cardiovascular prévia.");
+    },
     news2(f){
       f.innerHTML=
         field("Frequência respiratória (irpm)","n_rr","number",'min="0"')+
@@ -523,7 +578,7 @@
         selectField("Cardiovascular","s_cv",[opt("PAM ≥70",0),opt("PAM <70",1),opt("Dopamina ≤5 ou dobutamina qualquer dose",2),opt("Dopamina >5 ou epinefrina/norepinefrina ≤0,1 µg/kg/min",3),opt("Dopamina >15 ou epinefrina/norepinefrina >0,1 µg/kg/min",4)])+
         selectField("Glasgow","s_gcs",[opt("15",0),opt("13–14",1),opt("10–12",2),opt("6–9",3),opt("<6",4)])+
         selectField("Renal","s_renal",[opt("Creatinina <1,2 mg/dL",0),opt("1,2–1,9",1),opt("2,0–3,4",2),opt("3,5–4,9 ou diurese <500 mL/d",3),opt(">5,0 ou diurese <200 mL/d",4)]);
-      $$("select",f).forEach(x=>x.onchange=()=>{const v=$$("select",f).map(x=>x.value);if(v.some(x=>x===""))return setResult("—","Preencha todos os sistemas.");const n=v.reduce((a,b)=>a+Number(b),0);setResult(String(n),`SOFA total: ${n}/24.`,"Avalie o valor absoluto e, quando disponível, a variação do SOFA ao longo do tempo.");}); setResult("—","Preencha os campos.");
+      $$("select",f).forEach(x=>x.onchange=()=>{const v=$$("select",f).map(x=>x.value);if(v.some(x=>x===""))return setResult("—","Preencha todos os sistemas.");const n=v.reduce((a,b)=>a+Number(b),0);setResult(String(n),`SOFA total: ${n}/24. Quanto maior a pontuação, maior a disfunção orgânica e o risco prognóstico.`,"Em suspeita de infecção, aumento de ≥2 pontos em relação ao basal integra o conceito de disfunção orgânica do Sepsis-3; o SOFA não deve ser interpretado isoladamente.");}); setResult("—","Preencha os campos.");
     },
     meldna(f){
       f.innerHTML=field("Bilirrubina total (mg/dL)","m_bili","number",'step="0.01" min="0"')+field("INR","m_inr","number",'step="0.01" min="0"')+field("Creatinina (mg/dL)","m_cr","number",'step="0.01" min="0"')+field("Sódio (mEq/L)","m_na","number",'step="0.1" min="100" max="180"')+selectField("Diálise pelo menos 2 vezes na última semana","m_dial",[opt("Não",0),opt("Sim",1)]);
@@ -571,6 +626,39 @@
   };
 
 
+  function calcHints(){
+    const ids=["h_avs","h_nys","h_hit","h_ntype","h_skew"];
+    if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.","");
+    if(+$("#h_avs").value!==1 || +$("#h_nys").value!==1){
+      return setResult("Não aplicável","O HINTS não deve ser interpretado fora da síndrome vestibular aguda contínua com nistagmo espontâneo.","Use outro raciocínio diagnóstico para vertigem episódica, posicional ou sem nistagmo espontâneo.");
+    }
+    const central=+$("#h_hit").value===1 || +$("#h_ntype").value===1 || +$("#h_skew").value===1;
+    if(central){
+      return setResult("Central","HINTS com pelo menos um sinal central: head impulse normal, nistagmo que muda de direção/vertical-torsional ou skew. O padrão é preocupante para AVC de circulação posterior.","Requer avaliação neurológica urgente; HINTS depende de técnica e treinamento e não substitui investigação quando a suspeita clínica permanece.");
+    }
+    setResult("Periférico","Head impulse anormal com sacada corretiva + nistagmo horizontal unidirecional + ausência de skew: padrão HINTS periférico.","Só é válido na síndrome vestibular aguda apropriada e quando o exame é executado por profissional treinado. Considere HINTS+ se houver perda auditiva aguda.");
+  }
+
+  function calcFramingham(){
+    const ids=["f_age","f_sex","f_tc","f_hdl","f_sbp","f_tx","f_smoke","f_dm"];
+    if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.","");
+    const age=+$("#f_age").value, sex=$("#f_sex").value, tc=+$("#f_tc").value, hdl=+$("#f_hdl").value, sbp=+$("#f_sbp").value;
+    if(age<30||age>74||tc<=0||hdl<=0||sbp<=0) return setResult("—","Valores fora da faixa válida do modelo.","Framingham 2008 foi derivado para adultos de 30–74 anos.");
+    const tx=+$("#f_tx").value, smoke=+$("#f_smoke").value, dm=+$("#f_dm").value;
+    let sum,s0,mean;
+    if(sex==="m"){
+      sum=3.06117*Math.log(age)+1.12370*Math.log(tc)-0.93263*Math.log(hdl)+(tx?1.99881:1.93303)*Math.log(sbp)+0.65451*smoke+0.57367*dm;
+      s0=0.88936; mean=23.9802;
+    }else{
+      sum=2.32888*Math.log(age)+1.20904*Math.log(tc)-0.70833*Math.log(hdl)+(tx?2.82263:2.76157)*Math.log(sbp)+0.52873*smoke+0.69154*dm;
+      s0=0.95012; mean=26.1931;
+    }
+    const risk=(1-Math.pow(s0,Math.exp(sum-mean)))*100;
+    const rounded=Math.round(risk*10)/10;
+    const cls=risk<10?"baixo":risk<=20?"moderado":"alto";
+    setResult(rounded.toLocaleString("pt-BR",{maximumFractionDigits:1})+"%",\`Risco cardiovascular global em 10 anos: \${cls} pela classificação <10%, 10–20% e >20%.\`,"A equação estima primeiro evento cardiovascular global e não deve ser aplicada a quem já tem doença cardiovascular estabelecida; nesses casos o risco já é elevado por definição clínica.");
+  }
+
   function calcGrace(){
     const ids=["gr_age","gr_hr","gr_sbp","gr_cr","gr_k","gr_ca","gr_st","gr_bio"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
     const age=+$("#gr_age").value, hr=+$("#gr_hr").value, sbp=+$("#gr_sbp").value, cr=+$("#gr_cr").value;
@@ -614,7 +702,7 @@
     const hrP=hr<=40?3:hr<=50?1:hr<=90?0:hr<=110?1:hr<=130?2:3;
     const tP=t<=35?3:t<=36?1:t<=38?0:t<=39?1:2;
     const n=rrP+spP+o2P+sbpP+hrP+cns+tP;
-    let txt=n<=4?"NEWS2 0–4: baixo risco, desde que nenhum parâmetro isolado tenha 3 pontos.":n<=6?"NEWS2 5–6: risco clínico aumentado.":"NEWS2 ≥7: alto risco clínico.";
+    let txt=n<=4?"NEWS2 0–4: baixo risco, desde que nenhum parâmetro isolado tenha 3 pontos.":n<=6?"NEWS2 5–6: risco médio; requer avaliação clínica urgente e aumento da frequência de monitorização.":"NEWS2 ≥7: alto risco; requer resposta clínica urgente/emergencial conforme protocolo.";
     if(n<=4 && [rrP,spP,sbpP,hrP,cns,tP].some(x=>x===3)) txt="NEWS2 total 0–4, mas há um parâmetro isolado com 3 pontos.";
     setResult(String(n),txt,"Use a Escala 2 de SpO₂ apenas quando houver indicação clínica de alvo entre 88–92%, como em hipercapnia confirmada.");
   }
@@ -628,7 +716,7 @@
     const na=Math.max(125,Math.min(137,+$("#m_na").value));
     let meldNa=meld+1.32*(137-na)-0.033*meld*(137-na);
     meldNa=Math.max(6,Math.min(40,Math.round(meldNa)));
-    setResult(String(meldNa),`MELD-Na: ${meldNa} (MELD base: ${meld}).`,"Implementação da fórmula MELD-Na de 2016; sistemas de transplante podem usar modelos mais recentes.");
+    setResult(String(meldNa),`MELD-Na: ${meldNa} (MELD base: ${meld}). Pontuações maiores correspondem a maior mortalidade em curto prazo e maior prioridade histórica para transplante.`,"Implementação do MELD-Na de 2016; programas de transplante podem utilizar fórmulas e regras de alocação mais recentes.");
   }
 
   function calcGBS(){
@@ -639,7 +727,7 @@
     if(sex==="m") n += hb<10?6:hb<12?3:hb<13?1:0; else n += hb<10?6:hb<12?1:0;
     n += sbp<90?3:sbp<100?2:sbp<110?1:0;
     n += +$("#g_hr").value + +$("#g_mel").value + +$("#g_syn").value + +$("#g_liv").value + +$("#g_hf").value;
-    setResult(String(n),n===0?"Glasgow-Blatchford 0: risco muito baixo pelo escore original.":`Glasgow-Blatchford: ${n}.`,"Interprete em conjunto com a avaliação clínica e o protocolo local para hemorragia digestiva alta.");
+    setResult(String(n),n<=1?`Glasgow-Blatchford ${n}: risco muito baixo; diretrizes permitem considerar alta com seguimento ambulatorial se o paciente estiver clinicamente adequado.`:`Glasgow-Blatchford ${n}: acima da faixa de muito baixo risco (0–1); geralmente requer avaliação hospitalar/endoscópica conforme quadro.`,"Interprete com estabilidade hemodinâmica, comorbidades e protocolo local para hemorragia digestiva alta.");
   }
 
   async function copyResult(s){
