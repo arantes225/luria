@@ -2,7 +2,7 @@
 (()=>{"use strict";
 if(window.__luriaCommandCenterLoaded)return;window.__luriaCommandCenterLoaded=true;
 const d=document,$=(s,r=d)=>r.querySelector(s),all=(s,r=d)=>[...r.querySelectorAll(s)],esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-const css=d.createElement("link");css.rel="stylesheet";css.href="/assets/css/luria-command-center.css?v=20261002-1";d.head.appendChild(css);
+const css=d.createElement("link");css.rel="stylesheet";css.href="/assets/css/luria-command-center.css?v=20261002-3";d.head.appendChild(css);
 const routes=[
  ["Dashboard","Seu dia, sessões e atalhos","/dashboard/","Geral"],["Cronogramas","Planejamento de aulas e revisões","/cronograma/","Estudos"],["Desafio diário","Diagnóstico por pistas","/desafio-diario/","Estudos"],["Anotações · Cola Rápida","Anotações, prescrições e conteúdo rápido","/caderno/","Estudos"],["Questões e Simulados","Biblioteca e listas de questões","/questoes-simulados/","Estudos"],["Flashcards","Decks e revisões","/flashcards/","Estudos"],["Caderno de Erros","Erros e revisões","/caderno-erros/","Estudos"],["Simulador","Sala de emergência e LuriaZap","/plantao/","Prática"],["Mini-OSCE","Estações clínicas objetivas","/mini-osce/","Prática"],["Estatísticas","Evolução e desempenho","/estatisticas/","Desempenho"],["Editais e Provas","Provas, editais e datas","/editais/","Estudos"],["Bulário","Medicamentos e posologias","/bulario/","Trabalho"],["Protocolos","Protocolos clínicos","/protocolos/","Trabalho"],["Scores","Scores médicos","/scores/","Trabalho"],["Calculadoras","Calculadoras clínicas","/calculadoras/","Trabalho"],["Passômetro","Entrega de plantão","/passometro/","Trabalho"]
 ];
@@ -113,4 +113,28 @@ function installLuriaZapTrail(){
 function openTopicSearchFromQuery(){const p=new URLSearchParams(location.search),q=p.get("q");if(!q)return;setTimeout(()=>{const b=d.getElementById("luria-global-search");if(!b)return;b.click();setTimeout(()=>{const input=d.getElementById("luria-search-input");if(input){input.value=q;input.dispatchEvent(new Event("input",{bubbles:true}))}},60)},350)}
 function boot2(){installLuriaZapTrail();openTopicSearchFromQuery();relatedQuestionLinks()}
 if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else boot2();new MutationObserver(()=>installLuriaZapTrail()).observe(d.documentElement,{childList:true,subtree:true});
+})();
+
+;(()=> {
+  if(document.getElementById("dashboard-search-left-anchor-v3")) return;
+  const s=document.createElement("style");
+  s.id="dashboard-search-left-anchor-v3";
+  s.textContent=`
+    body[data-page="dashboard"] .topbar #luria-global-search{
+      position:absolute!important;
+      left:0!important;
+      right:auto!important;
+      top:0!important;
+      margin:0!important;
+      z-index:260!important;
+      transform:none!important;
+    }
+    @media(max-width:980px){
+      body[data-page="dashboard"] .topbar #luria-global-search{
+        left:48px!important;
+        top:0!important;
+      }
+    }
+  `;
+  document.head.appendChild(s);
 })();
