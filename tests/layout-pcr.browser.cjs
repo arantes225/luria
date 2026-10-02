@@ -125,8 +125,12 @@ await page.evaluate(()=>{
 });
 for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","Conteúdo vinculado preservado"],["/caderno/?note_id=free-note","free-note","Conteúdo livre preservado"]]){
  await goto(url);
- await page.locator("#notebook-right-outline-list").waitFor({state:"visible"});
- assert.ok(await page.locator(".note-right-outline-card").isVisible(),"Right sidebar shows text structure");
+ if(viewport.width>=1050){
+  await page.locator("#notebook-right-outline-list").waitFor({state:"visible"});
+  assert.ok(await page.locator(".note-right-outline-card").isVisible(),"Right sidebar shows text structure on desktop");
+ }else{
+  assert.equal(await page.locator(".note-right-outline-card").isVisible(),false,"Right sidebar stays hidden on compact viewports");
+ }
  assert.equal(await page.locator("#notebook-inspector-move").isVisible(),false,"Legacy move action stays hidden from the right sidebar");
  await page.evaluate(()=>document.getElementById("notebook-inspector-move")?.click());
  await page.locator("#notebook-move-area").fill("Pediatria");await page.locator("#notebook-move-subject").fill("Crescimento e Desenvolvimento");
