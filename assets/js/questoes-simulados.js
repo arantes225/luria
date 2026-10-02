@@ -8032,11 +8032,7 @@ function renderSimulationLibrary() {
 
   if (count) {
     count.textContent =
-      `${qsState.sets.length} ${
-        qsState.sets.length === 1
-          ? "simulado"
-          : "simulados"
-      }`;
+      `${qsState.sets.length} ${qsState.sets.length === 1 ? "lista" : "listas"}`;
   }
 
 
@@ -8044,7 +8040,7 @@ function renderSimulationLibrary() {
     !qsState.sets.length
   ) {
     container.innerHTML =
-      '<div class="qs-empty">Nenhum simulado na biblioteca.</div>';
+      '<div class="qs-empty">Nenhuma lista na biblioteca.</div>';
 
     updateSetBulkToolbar();
 
@@ -8060,49 +8056,23 @@ function renderSimulationLibrary() {
 
 
         return `
-          <article class="qs-library-card">
+          <article class="qs-library-card qs-flash-style-card">
 
-            <label
-              class="qs-library-check"
-              aria-label="Selecionar simulado"
-            >
-              <input
-                type="checkbox"
-                data-select-set="${qsEscape(
-                  set.id
-                )}"
-                ${qsState.selectedSetIds.has(set.id) ? "checked" : ""}
-              >
-            </label>
+            <div class="qs-library-card-top">
+              <div class="qs-library-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5M8 17h6"/></svg>
+              </div>
 
+              <div class="qs-library-card-tools">
+                <label class="qs-library-check" aria-label="Selecionar lista">
+                  <input
+                    type="checkbox"
+                    data-select-set="${qsEscape(set.id)}"
+                    ${qsState.selectedSetIds.has(set.id) ? "checked" : ""}
+                  >
+                </label>
 
-            <div class="qs-library-main">
-
-              <strong>
-                ${qsEscape(
-                  set.title
-                )}
-              </strong>
-
-              <small>
-                ${Number(
-                  set.total_questions
-                  || 0
-                )} questões
-                · ${Number(
-                  m.answered
-                  || 0
-                )} respondidas
-                · ${accuracy(
-                  m.correct,
-                  m.correct + m.wrong
-                )} de acerto
-              </small>
-
-            </div>
-
-
-            <div class="qs-library-menu-wrap">
+                <div class="qs-library-menu-wrap">
 
               <button
                 class="qs-library-menu-trigger"
@@ -8143,8 +8113,28 @@ function renderSimulationLibrary() {
                   Excluir
                 </button>
 
+                </div>
               </div>
+            </div>
 
+            <div class="qs-library-main">
+              <h3>${qsEscape(set.title)}</h3>
+              <p class="qs-library-desc">${Number(set.total_questions||0)} questões nesta lista.</p>
+
+              <div class="qs-library-stats">
+                <div class="qs-library-stat">
+                  <b>${Number(set.total_questions||0)}</b>
+                  <small>Questões</small>
+                </div>
+                <div class="qs-library-stat">
+                  <b>${Number(m.answered||0)}</b>
+                  <small>Respondidas</small>
+                </div>
+                <div class="qs-library-stat">
+                  <b>${accuracy(m.correct,m.correct+m.wrong)}</b>
+                  <small>Acerto</small>
+                </div>
+              </div>
             </div>
 
           </article>
