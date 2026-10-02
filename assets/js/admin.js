@@ -5273,7 +5273,7 @@
     list.innerHTML = rows.map(row => {
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
       const src = String(asset.src || "");
-      const safePreview = src && (/^\/assets\//.test(src) || /^https:\/\/sxdsfklllilhdyuamvvg\.supabase\.co\//.test(src));
+      const safePreview = src && (/^\/assets\//.test(src) || /^https:\/\/sxdsfklllilhdyuamvvg\.supabase\.co\//.test(src) || /^https:\/\/upload\.wikimedia\.org\//.test(src) || /^https:\/\/wwwn\.cdc\.gov\//.test(src));
       const preview = safePreview
         ? '<img src="' + esc(src) + '" alt="' + esc(asset.alt || row.modality || "Imagem clínica") + '">'
         : '<span>Prévia indisponível no Admin. Abra a fonte original para revisar.</span>';
