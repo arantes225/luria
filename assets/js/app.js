@@ -7962,3 +7962,210 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* PWA v36 — rodapé visual idêntico entre Estudos e Trabalho.
+   PCR/Ofensiva e troca de ambiente deixam de depender da altura da navegação. */
+(function ensurePwaSidebarFooterLockV36(){
+  if(document.getElementById("luria-pwa-sidebar-footer-lock-v36")) return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-sidebar-footer-lock-v36";
+  style.textContent=`
+    @media(max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        position:fixed!important;
+        height:100dvh!important;
+        max-height:100dvh!important;
+        overflow:hidden!important;
+        padding-bottom:calc(154px + env(safe-area-inset-bottom))!important;
+      }
+
+      /* A navegação rola sozinha e nunca empurra o rodapé. */
+      html.pwa-standalone body #sidebar.sidebar .nav,
+      html.pwa-standalone body #sidebar.sidebar .nav-study,
+      html.pwa-standalone body #sidebar.sidebar .nav-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav{
+        overflow-y:auto!important;
+        overflow-x:hidden!important;
+        min-height:0!important;
+        max-height:none!important;
+        padding-bottom:10px!important;
+        -webkit-overflow-scrolling:touch!important;
+      }
+
+      /* O footer ocupa toda a largura interna, mas não participa do fluxo. */
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{
+        position:absolute!important;
+        left:15px!important;
+        right:15px!important;
+        bottom:calc(12px + env(safe-area-inset-bottom))!important;
+        width:auto!important;
+        margin:0!important;
+        padding:0!important;
+        display:block!important;
+        background:transparent!important;
+        z-index:30!important;
+        overflow:visible!important;
+      }
+
+      /* Botão de troca: MESMO tamanho e MESMA posição nos dois ambientes. */
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        position:absolute!important;
+        left:0!important;
+        right:0!important;
+        bottom:0!important;
+        top:auto!important;
+        width:100%!important;
+        min-width:100%!important;
+        max-width:100%!important;
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        margin:0!important;
+        padding:6px 14px!important;
+        box-sizing:border-box!important;
+        display:flex!important;
+        align-items:center!important;
+        justify-content:flex-start!important;
+        gap:10px!important;
+        border-radius:16px!important;
+        transform:none!important;
+        opacity:1!important;
+      }
+
+      /* Card superior: Ofensiva e PCR ocupam exatamente a mesma caixa. */
+      html.pwa-standalone body #sidebar.sidebar .streak-mini,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button{
+        position:absolute!important;
+        left:0!important;
+        right:0!important;
+        bottom:66px!important;
+        top:auto!important;
+        width:100%!important;
+        min-width:100%!important;
+        max-width:100%!important;
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        margin:0!important;
+        box-sizing:border-box!important;
+      }
+
+      /* Geometria interna do seletor fica igual nos dois modos. */
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon,
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-avatar{
+        width:42px!important;
+        height:42px!important;
+        min-width:42px!important;
+        min-height:42px!important;
+        flex:0 0 42px!important;
+        margin:0!important;
+        border-radius:50%!important;
+        display:grid!important;
+        place-items:center!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy{
+        display:grid!important;
+        align-content:center!important;
+        justify-items:start!important;
+        gap:2px!important;
+        min-width:0!important;
+        opacity:1!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+        display:block!important;
+        margin:0!important;
+        font-size:16px!important;
+        line-height:1.05!important;
+        font-weight:900!important;
+        opacity:1!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+        display:block!important;
+        margin:0!important;
+        font-size:9px!important;
+        line-height:1.1!important;
+        font-weight:800!important;
+        opacity:.92!important;
+      }
+
+      /* Claro + escuro: fundo azul oficial e absolutamente tudo branco. */
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        background:#184888!important;
+        background-color:#184888!important;
+        border:1px solid #184888!important;
+        box-shadow:0 8px 20px rgba(24,72,136,.20)!important;
+      }
+
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch *,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch *{
+        color:#fff!important;
+        -webkit-text-fill-color:#fff!important;
+        text-shadow:none!important;
+      }
+
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+        background:rgba(255,255,255,.16)!important;
+        border-color:transparent!important;
+      }
+
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg,
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg *,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg *{
+        color:#fff!important;
+        stroke:#fff!important;
+        fill:none!important;
+        opacity:1!important;
+      }
+
+      /* Rosa segue a mesma cor do callout superior. */
+      html[data-theme="leila-mood"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="pink"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html.pwa-standalone body.theme-leila-mood #sidebar.sidebar .luria-mode-footer-switch{
+        background:var(--accent)!important;
+        background-color:var(--accent)!important;
+        border-color:var(--accent)!important;
+      }
+
+      /* Fogo da ofensiva cabe dentro da caixa sem alterar o card. */
+      html.pwa-standalone body #sidebar.sidebar .streak-mini{
+        padding:5px 10px!important;
+        gap:8px!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .streak-mini-icon{
+        width:40px!important;
+        height:48px!important;
+        min-width:40px!important;
+        min-height:48px!important;
+        flex:0 0 40px!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .streak-mini-flame{
+        width:34px!important;
+        height:43px!important;
+        max-width:34px!important;
+        max-height:43px!important;
+        margin:auto!important;
+      }
+
+      /* PCR usa a mesma caixa externa, mantendo sua identidade vermelha. */
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button{
+        padding:6px 10px!important;
+        gap:9px!important;
+        border-radius:16px!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
