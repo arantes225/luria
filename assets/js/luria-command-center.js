@@ -51,6 +51,17 @@ function sessionSteps(minutes){
  if(!steps.length)add("Revisão guiada","Comece com flashcards e siga para questões.",Math.min(20,budget),"/flashcards/");
  return steps.slice(0,3)
 }
+function activeGuidedSession(){
+ try{
+   const plan=JSON.parse(sessionStorage.getItem("luria:guided-study-plan")||"null");
+   const steps=Array.isArray(plan?.steps)?plan.steps:[];
+   if(!plan?.createdAt||!steps.length)return null;
+   const progress=JSON.parse(sessionStorage.getItem("luria:guided-study-progress")||"null");
+   const completed=progress?.createdAt===plan.createdAt?Number(progress.completedThrough??-1):-1;
+   if(completed>=steps.length-1)return null;
+   return plan;
+ }catch{return null}
+}
 function openSession(initialMinutes=30){
  let mins=Number(initialMinutes)||30;const o=modal("luria-session-overlay","Estudar agora",'<p style="margin:0;color:var(--muted);font-size:10px">A LURIA organiza uma sessão a partir das atividades e pendências disponíveis agora.</p><div class="luria-session-times"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 h</button><button data-m="999">Completar o dia</button></div><div id="luria-session-list" class="luria-session-list"></div><div class="luria-intel-actions"><button id="luria-session-remix" class="luria-intel-button">Reorganizar</button><button id="luria-session-start" class="luria-intel-button primary">Iniciar sessão</button></div>');
  const render=()=>{const s=sessionSteps(mins);o._steps=s;$("#luria-session-list",o).innerHTML=s.map((x,i)=>'<div class="luria-session-step"><b>'+(i+1)+'</b><div><strong>'+esc(x.title)+'</strong><small>'+esc(x.detail)+'</small></div><span>'+x.min+' min</span></div>').join("")};render();
@@ -69,16 +80,29 @@ function preExam(){
  const render=()=>{if(!dt.value){plan.innerHTML="";return}const days=Math.max(0,Math.ceil((new Date(dt.value+"T12:00:00")-new Date())/86400000));const intensity=days<=7?"intensiva":days<=21?"prioritária":"progressiva";plan.innerHTML='<div class="luria-session-step"><b>1</b><div><strong>Revisão '+intensity+'</strong><small>'+days+' dia'+(days===1?"":"s")+' até a prova · priorizar erros, flashcards vencidos e questões de menor desempenho.</small></div><span>'+Math.min(60,20+Math.max(0,21-days))+' min/dia</span></div>'};dt.onchange=render;render();$("#luria-preexam-save",o).onclick=()=>{localStorage.setItem("luria:preexam",JSON.stringify({name:n.value.trim(),date:dt.value,updatedAt:new Date().toISOString()}));o.remove()}
 }
 function bindNativeStudyPanels(){
+ const active=activeGuidedSession();
  all("[data-luria-study-panel]").forEach(panel=>{
-   if(panel.dataset.luriaBound==="1")return;
-   panel.dataset.luriaBound="1";
    let mins=30;
-   all("[data-luria-study-time]",panel).forEach(btn=>btn.onclick=()=>{
-     mins=Number(btn.dataset.luriaStudyTime)||30;
-     all("[data-luria-study-time]",panel).forEach(x=>x.classList.toggle("active",x===btn));
+   const title=panel.querySelector("h3");
+   const timeButtons=all("[data-luria-study-time]",panel);
+   timeButtons.forEach(btn=>{
+     btn.hidden=!!active;
+     btn.onclick=()=>{
+       mins=Number(btn.dataset.luriaStudyTime)||30;
+       timeButtons.forEach(x=>x.classList.toggle("active",x===btn));
+     };
    });
    const start=panel.querySelector("[data-luria-study-start]");
-   if(start)start.onclick=()=>openSession(mins);
+   if(active){
+     panel.classList.add("has-active-session");
+     if(title)title.textContent="Voltar para a sessão";
+     if(start){start.textContent="Voltar para a sessão";start.onclick=()=>{location.href="/sessao-estudo/"}}
+   }else{
+     panel.classList.remove("has-active-session");
+     if(title)title.textContent="Estudar agora";
+     if(start){start.textContent="Estudar agora";start.onclick=()=>openSession(mins)}
+   }
+   panel.dataset.luriaBound="1";
  });
 }
 function commandCard(){
@@ -97,8 +121,9 @@ function commandCard(){
  action.type="button";
  action.className="dl-primary luria-dashboard-study-now";
  action.dataset.luriaStudyNowInline="1";
- action.textContent="Estudar agora";
- action.onclick=()=>openSession(30);
+ const active=activeGuidedSession();
+ action.textContent=active?"Voltar para a sessão":"Estudar agora";
+ action.onclick=()=>active?(location.href="/sessao-estudo/"):openSession(30);
  const timeline=activityCard.querySelector(".dl-timeline,.dl-empty");
  activityCard.classList.add("luria-has-study-now");
  if(timeline?.parentNode) timeline.parentNode.appendChild(action);
@@ -120,7 +145,7 @@ async function statsTimeline(){
 function plantaoOsceLink(){if(d.body.dataset.page!=="plantao"||d.getElementById("luria-osce-entry"))return;const lib=d.getElementById("plantao-library");if(!lib)return;const a=d.createElement("a");a.id="luria-osce-entry";a.href="/mini-osce/";a.className="luria-command-card";a.style.cssText="display:block;text-decoration:none;color:var(--text);margin-bottom:12px";a.innerHTML='<div class="luria-command-card-head"><div><h3>Mini-OSCE</h3><p>Estações objetivas derivadas dos casos clínicos do Simulador.</p></div><span class="luria-intel-button primary">Abrir estações</span></div>';lib.prepend(a)}
 function adaptive(){try{window.LuriaAdaptive={preExam:JSON.parse(localStorage.getItem("luria:preexam")||"null"),buildSession:sessionSteps,openSession,version:"1.0"}}catch{}}
 function boot(){installSearch();commandCard();bindNativeStudyPanels();enhanceQuestion();statsTimeline();plantaoOsceLink();adaptive()}
-if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else boot();new MutationObserver(()=>{commandCard();enhanceQuestion();plantaoOsceLink()}).observe(d.documentElement,{childList:true,subtree:true});
+if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else boot();window.addEventListener("pageshow",()=>{if(d.body.dataset.page==="dashboard"){commandCard();bindNativeStudyPanels()}});new MutationObserver(()=>{commandCard();enhanceQuestion();plantaoOsceLink()}).observe(d.documentElement,{childList:true,subtree:true});
 })();
 
 ;(()=>{"use strict";if(window.__luriaIntegrationLayer2)return;window.__luriaIntegrationLayer2=true;
