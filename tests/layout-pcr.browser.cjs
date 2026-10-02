@@ -143,8 +143,17 @@ for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","
  await page.evaluate(()=>localStorage.removeItem("fixture-note-fail"));await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
  assert.equal(await page.locator("#notebook-inspector-area").innerText(),"Pediatria");assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
  await goto(url);assert.match(await page.locator("#notebook-editor").innerText(),new RegExp(content));assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
- assert.equal(await page.locator("#notebook-inspector-edit").count(),0,"Edit button stays removed from note information page");
- assert.equal(await page.locator("#notebook-editor").isEditable(),false,"Note information page remains read-only");
+ assert.equal(await page.locator("#notebook-inspector-edit").count(),1,"Edit button is available in note quick actions");
+ assert.equal(await page.locator("#notebook-editor").isEditable(),false,"Note opens in read mode");
+ if(viewport.width>=1050){
+  const edit=page.locator("#notebook-inspector-edit");
+  await edit.click();
+  assert.equal(await edit.locator("span").innerText(),"Salvar","Edit button becomes Save while editing");
+  assert.equal(await page.locator("#notebook-editor").isEditable(),true,"Editor becomes editable");
+  await edit.click();
+  assert.equal(await edit.locator("span").innerText(),"Editar","Save returns button to Edit");
+  assert.equal(await page.locator("#notebook-editor").isEditable(),false,"Editor returns to read mode after saving");
+ }
  await goto(url);assert.match(await page.locator("#notebook-editor").innerText(),new RegExp(content));assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
  const stored=await page.evaluate(id=>JSON.parse(localStorage.getItem("fixture-db")).study_notes.find(note=>note.id===id),noteId);
  assert.equal(stored.area,"Pediatria");assert.equal(stored.materia,"Crescimento e Desenvolvimento");assert.equal(stored.topic_id,noteId==="linked-note"?"topic-1":null);
