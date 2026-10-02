@@ -77,6 +77,20 @@
       border-radius: 10px;
     }
   </style>
+  <style>
+    .guided-study-session{display:grid;gap:14px;margin-bottom:18px}
+    .guided-study-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .guided-study-head h2{margin:6px 0 5px;font-size:1.45rem}.guided-study-head p{margin:0;color:var(--muted)}
+    .guided-study-time{min-width:92px;display:grid;justify-items:end}.guided-study-time strong{font-size:1.35rem;color:var(--accent)}.guided-study-time small{font-size:.72rem;color:var(--muted);font-weight:800}
+    .guided-study-list{display:grid;gap:10px}
+    .guided-study-item{width:100%;display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:12px;padding:14px 15px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text);text-align:left;cursor:pointer;box-shadow:0 2px 7px rgba(0,0,0,.03)}
+    .guided-study-item:hover{background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-color:color-mix(in srgb,var(--accent) 26%,var(--border))}
+    .guided-study-index{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-weight:900}
+    .guided-study-copy{display:grid;gap:3px}.guided-study-copy strong{font-size:.96rem}.guided-study-copy small{font-size:.78rem;color:var(--muted);line-height:1.35}
+    .guided-study-action{display:flex;align-items:center;gap:8px;color:var(--accent);font-weight:850;font-size:.78rem;white-space:nowrap}.guided-study-action::after{content:"→";font-size:1rem}
+    body.guided-study-mode .feature-grid,body.guided-study-mode #selected-activity,body.guided-study-mode #ambientacao-workspace{display:none!important}
+    @media(max-width:650px){.guided-study-head{padding:16px}.guided-study-item{grid-template-columns:40px minmax(0,1fr);}.guided-study-action{grid-column:2;justify-self:start}}
+  </style>
   <link rel="canonical" href="/ambientacao/">
   <script>(function(){try{if(location.pathname.endsWith("/ambientacao.html"))history.replaceState(null,"","/ambientacao/"+location.search+location.hash);}catch(e){}})();</script>
   <script src="/assets/js/medical-icons.js?v=2.0"></script>
@@ -97,6 +111,18 @@
             <h1 data-page-title></h1>
           </div>
         </header>
+
+        <section id="guided-study-session" class="guided-study-session" hidden>
+          <header class="guided-study-head">
+            <div>
+              <span class="badge accent">Estudar agora</span>
+              <h2>Sua sessão de estudo</h2>
+              <p>Escolha a próxima atividade. O timer começa assim que você iniciar uma delas.</p>
+            </div>
+            <div class="guided-study-time"><strong id="guided-study-minutes">—</strong><small>planejados</small></div>
+          </header>
+          <div id="guided-study-list" class="guided-study-list"></div>
+        </section>
 
         <section id="selected-activity" class="selected-activity" hidden>
           <div>
@@ -336,7 +362,7 @@
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js"></script>
-  <script src="assets/js/app.js?v=17.40-content-aligned"></script>
+  <script src="assets/js/app.js?v=20261002-guided-study"></script>
   <script src="assets/js/study-mode.js?v=12.1"></script>
 
   <script>
@@ -503,8 +529,47 @@
         frame.src = url.toString();
       }
 
+      function bootGuidedStudySession() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("study_session") !== "1") return false;
+
+        let plan = null;
+        try { plan = JSON.parse(sessionStorage.getItem("luria:guided-study-plan") || "null"); } catch {}
+        const steps = Array.isArray(plan?.steps) ? plan.steps : [];
+        const host = document.getElementById("guided-study-session");
+        const list = document.getElementById("guided-study-list");
+        const minutes = document.getElementById("guided-study-minutes");
+        if (!host || !list) return true;
+
+        document.body.classList.add("guided-study-mode");
+        host.hidden = false;
+        if (minutes) minutes.textContent = (Number(plan?.minutes) || 0) + " min";
+
+        list.innerHTML = steps.length
+          ? steps.map((step,index) => '<button class="guided-study-item" type="button" data-guided-index="'+index+'"><span class="guided-study-index">'+(index+1)+'</span><span class="guided-study-copy"><strong>'+String(step.title||"Atividade")+'</strong><small>'+String(step.detail||"Atividade planejada")+'</small></span><span class="guided-study-action">'+(Number(step.min)||0)+' min</span></button>').join("")
+          : '<div class="panel"><p style="margin:0;color:var(--muted)">Não encontrei atividades para esta sessão. Volte ao Dashboard e monte uma nova sessão.</p></div>';
+
+        list.querySelectorAll("[data-guided-index]").forEach(button => button.addEventListener("click", () => {
+          const step = steps[Number(button.dataset.guidedIndex)];
+          if (!step?.href) return;
+          const totalMinutes = Math.max(1, Number(plan?.minutes) || Number(step.min) || 1);
+          try {
+            localStorage.setItem("luria:guided-timer", JSON.stringify({
+              startedAt: Date.now(),
+              durationSeconds: Math.round(totalMinutes * 60),
+              title: step.title || "Sessão de estudo",
+              active: true
+            }));
+            sessionStorage.setItem("luria:guided-study-active", JSON.stringify({plan,activeIndex:Number(button.dataset.guidedIndex)}));
+          } catch {}
+          window.location.href = step.href;
+        }));
+        return true;
+      }
+
       function boot() {
         disableOldCcq();
+        if (bootGuidedStudySession()) return;
 
         window.setTimeout(openLessonNotebook, 0);
         window.setTimeout(openLessonNotebook, 250);
