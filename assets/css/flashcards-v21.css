@@ -2028,3 +2028,83 @@ body[data-page="flashcards"] .page .flash-review-hub .flash-review-all-badge{mar
     justify-content:flex-start!important;
   }
 }
+
+
+/* v24.9 — cadernos ajustados dentro do callout da home */
+body[data-page="flashcards"] .page .flash-home-decks{
+  min-height:0!important;
+}
+body[data-page="flashcards"] .page #flash-home-decks-list{
+  flex:1 1 auto!important;
+  min-height:0!important;
+  height:100%!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub{
+  height:100%!important;
+  min-height:0!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards{
+  height:100%!important;
+  min-height:0!important;
+  align-items:stretch!important;
+  box-sizing:border-box!important;
+  padding:2px 2px 10px!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck{
+  flex:0 0 198px!important;
+  width:198px!important;
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  padding:13px 14px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  box-sizing:border-box!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-top{
+  flex:0 0 auto!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck h3{
+  flex:0 0 auto!important;
+  margin:7px 0 2px!important;
+  line-height:1.15!important;
+  display:-webkit-box!important;
+  -webkit-line-clamp:2!important;
+  -webkit-box-orient:vertical!important;
+  overflow:hidden!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-home-deck-area{
+  flex:0 0 auto!important;
+  line-height:1.2!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-stats{
+  flex:0 0 auto!important;
+  margin-top:auto!important;
+  padding-top:8px!important;
+  gap:8px!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-progress{
+  flex:0 0 auto!important;
+  margin-top:7px!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-icon{
+  width:34px!important;
+  height:34px!important;
+  min-width:34px!important;
+  min-height:34px!important;
+}
+@media(max-width:980px){
+  body[data-page="flashcards"] .page #flash-home-decks-list,
+  body[data-page="flashcards"] .page .flash-review-hub,
+  body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards{
+    height:auto!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck{
+    height:auto!important;
+    min-height:185px!important;
+    max-height:none!important;
+  }
+}
