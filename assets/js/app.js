@@ -7568,3 +7568,34 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* LURIA v2026.10.02 — padroniza listas clicáveis e menus de opção do site. */
+(function luriaNormalizeClickableListsV1(){
+  const tag=(root=document)=>{
+    root.querySelectorAll?.("select:not([multiple])").forEach(el=>el.classList.add("luria-site-select"));
+    root.querySelectorAll?.('[role="listbox"],[role="menu"]').forEach(el=>{
+      if(el.closest("#sidebar,.sidebar,.nav,.nav-study,.nav-submenu")) return;
+      el.classList.add("luria-site-list");
+    });
+    root.querySelectorAll?.('div[id$="-menu"],section[id$="-menu"],ul[id$="-menu"]').forEach(el=>{
+      if(el.closest("#sidebar,.sidebar,.nav,.nav-study,.nav-submenu")) return;
+      if(el.classList.contains("notebook-emoji-menu")) return;
+      el.classList.add("luria-site-list");
+    });
+  };
+  const run=()=>tag(document);
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",run,{once:true}); else run();
+  new MutationObserver(records=>{
+    for(const rec of records){
+      rec.addedNodes.forEach(node=>{
+        if(node.nodeType!==1) return;
+        if(node.matches?.("select:not([multiple])")) node.classList.add("luria-site-select");
+        if(node.matches?.('[role="listbox"],[role="menu"],div[id$="-menu"],section[id$="-menu"],ul[id$="-menu"]')){
+          if(!node.closest("#sidebar,.sidebar,.nav,.nav-study,.nav-submenu")&&!node.classList.contains("notebook-emoji-menu")) node.classList.add("luria-site-list");
+        }
+        tag(node);
+      });
+    }
+  }).observe(document.documentElement,{childList:true,subtree:true});
+})();
