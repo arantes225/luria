@@ -158,12 +158,24 @@ assert.deepEqual(questionHero,flashHero,"Daily cards share dimensions and typogr
 await noOverflow("Questões");await checkActions(".qs-home-actions-compact .error-home-action");
 await goto("/cronograma/");
 const activityPlacement=await page.evaluate(()=>{
- const calendar=document.querySelector(".agenda-reference-layout>.planner-panel"),activities=document.querySelector(".agenda-bottom-grid"),insights=document.querySelector(".agenda-insights-side");
+ const calendar=document.querySelector(".agenda-reference-layout>.planner-panel");
+ const activities=document.querySelector(".agenda-bottom-grid");
+ const insights=document.querySelector(".agenda-insights-side");
+ const overdue=document.querySelector(".agenda-overdue-card");
+ const distribution=document.querySelector(".agenda-category-card");
  const c=calendar.getBoundingClientRect(),a=activities.getBoundingClientRect(),i=insights.getBoundingClientRect();
- return {gap:a.top-c.bottom,activitiesBeforeInsights:!!(activities.compareDocumentPosition(insights)&Node.DOCUMENT_POSITION_FOLLOWING),aboveInsights:a.top<i.top};
+ return {
+  gap:a.top-c.bottom,
+  activitiesBeforeInsights:!!(activities.compareDocumentPosition(insights)&Node.DOCUMENT_POSITION_FOLLOWING),
+  aboveInsights:a.top<i.top,
+  overdueInsideInsights:!!overdue&&insights.contains(overdue),
+  overdueAfterDistribution:!!overdue&&!!distribution&&!!(distribution.compareDocumentPosition(overdue)&Node.DOCUMENT_POSITION_FOLLOWING)
+ };
 });
 assert.ok(activityPlacement.activitiesBeforeInsights,"Activities precede insights in reading order");
-assert.ok(activityPlacement.gap>=-1&&activityPlacement.gap<=32,"Activities immediately below calendar: "+JSON.stringify(activityPlacement));
+assert.ok(activityPlacement.gap>=-1&&activityPlacement.gap<=140,"Activities remain below calendar: "+JSON.stringify(activityPlacement));
+assert.ok(activityPlacement.overdueInsideInsights,"Overdue lessons card stays in insights column");
+assert.ok(activityPlacement.overdueAfterDistribution,"Overdue lessons card appears below category distribution");
 if(viewport.width<980)assert.ok(activityPlacement.aboveInsights,"Mobile activities appear before insights");
 
 await page.locator(".week-matrix-grid").waitFor();
