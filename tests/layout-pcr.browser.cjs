@@ -134,7 +134,9 @@ for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","
  await page.evaluate(()=>localStorage.removeItem("fixture-note-fail"));await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
  assert.equal(await page.locator("#notebook-inspector-area").innerText(),"Pediatria");assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
  await goto(url);assert.match(await page.locator("#notebook-editor").innerText(),new RegExp(content));assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
- await page.locator("#notebook-inspector-edit").click();await page.locator("#notebook-editor").fill(content+" atualizado");
+ assert.equal(await page.locator("#notebook-inspector-edit").count(),0,"Edit button stays removed from note information page");
+ assert.equal(await page.locator("#notebook-editor").isEditable(),true,"Note editor remains directly editable");
+ await page.locator("#notebook-editor").fill(content+" atualizado");
  await page.waitForTimeout(1000);await goto(url);assert.match(await page.locator("#notebook-editor").innerText(),/atualizado/);assert.equal(await page.locator("#notebook-inspector-subject").innerText(),"Crescimento e Desenvolvimento");
  const stored=await page.evaluate(id=>JSON.parse(localStorage.getItem("fixture-db")).study_notes.find(note=>note.id===id),noteId);
  assert.equal(stored.area,"Pediatria");assert.equal(stored.materia,"Crescimento e Desenvolvimento");assert.equal(stored.topic_id,noteId==="linked-note"?"topic-1":null);
