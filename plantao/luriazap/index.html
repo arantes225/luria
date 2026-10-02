@@ -26,6 +26,43 @@
     .plantao-module-entry .plantao-mode-menu{display:none!important}
     .plantao-module-back{display:inline-flex;align-items:center;gap:7px;margin:0 0 12px;padding:8px 11px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font-size:9px;font-weight:800;text-decoration:none}
     .plantao-module-back:hover{background:var(--surface-2)}
+
+    /* LuriaZap standalone: nenhum conteúdo da Sala/OSCE pode aparecer atrás. */
+    body[data-plantao-entry="phone"] .plantao-hero,
+    body[data-plantao-entry="phone"] .plantao-mode-menu,
+    body[data-plantao-entry="phone"] #plantao-emergency-panel,
+    body[data-plantao-entry="phone"] #plantao-simulator,
+    body[data-plantao-entry="phone"] #plantao-debrief,
+    body[data-plantao-entry="phone"] .plantao-practice-back-row,
+    body[data-plantao-entry="phone"] .plantao-primary-switch-wrap,
+    body[data-plantao-entry="phone"] .plantao-library-inner-switch,
+    body[data-plantao-entry="phone"] .plantao-library-metrics,
+    body[data-plantao-entry="phone"] .plantao-quick-grid {
+      display:none!important;
+    }
+    body[data-plantao-entry="phone"] #plantao-library{
+      display:block!important;
+      width:100%!important;
+      min-height:calc(100dvh - 60px)!important;
+      padding:0!important;
+      margin:0!important;
+      background:transparent!important;
+    }
+    body[data-plantao-entry="phone"] #plantao-telefone{
+      display:grid!important;
+      visibility:visible!important;
+      opacity:1!important;
+      width:100%!important;
+      min-height:calc(100dvh - 60px)!important;
+      margin:0!important;
+      position:relative!important;
+      z-index:2!important;
+    }
+    body[data-plantao-entry="phone"] .plantao-module-back{
+      position:relative!important;
+      z-index:100!important;
+      pointer-events:auto!important;
+    }
   </style>
 <style id="luria-page-font-lock-v57">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}</style></head>
 <body data-page="plantao" data-plantao-entry="phone" class="plantao-module-entry plantao-phone-mode">
@@ -39,7 +76,7 @@
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
 
-        <a class="plantao-module-back" href="/plantao/">← Voltar ao Simulador</a>
+        <a id="luriazap-back-simulator" class="plantao-module-back" href="/plantao/sala-emergencia/">← Voltar ao Simulador</a>
 
         <section id="plantao-library" class="plantao-library">
           <article class="plantao-hero panel">
@@ -321,6 +358,17 @@
     </main>
   </div>
 
+  <script>
+    (function(){
+      var back=document.getElementById("luriazap-back-simulator");
+      if(back){
+        back.addEventListener("click",function(event){
+          event.preventDefault();
+          window.location.assign("/plantao/sala-emergencia/");
+        });
+      }
+    })();
+  </script>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js"></script>
   <script src="assets/js/app.js?v=20261002-intelligence-1"></script>
