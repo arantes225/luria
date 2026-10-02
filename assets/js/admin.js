@@ -1746,6 +1746,7 @@
     }
 
     startQuestionFactoryAutoRefresh();
+    wireClinicalImageReview();
 
     await Promise.all([
       load(),
@@ -1756,6 +1757,7 @@
       loadQuestionFactoryPromptContexts(),
       loadBadQuestionFolder(0),
       loadQuestionFactoryQuality(),
+      loadClinicalImageReviewQueue(),
       window.LuriaAdminEditais?.load?.() || Promise.resolve()
     ]);
   }
@@ -5231,6 +5233,172 @@
       );
 
       return false;
+    }
+  }
+
+
+  let clinicalImageReviewRows = [];
+
+  function clinicalImageLabel(row) {
+    const map = {
+      clinical_exam: "Exame",
+      skin_lesion: "Lesão de pele",
+      clinical_photo: "Foto clínica",
+      histology: "Lâmina / histologia",
+      decorative: "Decorativa"
+    };
+    return map[String(row?.image_kind || "")] || "Imagem clínica";
+  }
+
+  function renderClinicalImageReviewQueue(rows) {
+    const list = $("admin-images-list");
+    const badge = $("admin-images-pending-badge");
+    const status = $("admin-images-status");
+    if (badge) {
+      badge.textContent = String(rows.length);
+      badge.hidden = rows.length === 0;
+    }
+    if (!list) return;
+    if (!rows.length) {
+      list.innerHTML = '<div class="admin-table-empty">Nenhuma imagem clínica aguardando aprovação.</div>';
+      if (status) status.textContent = "Fila revisada · nenhuma pendência.";
+      return;
+    }
+    list.innerHTML = rows.map(row => {
+      const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
+      const src = String(asset.src || "");
+      const safePreview = src && (/^\/assets\//.test(src) || /^https:\/\/sxdsfklllilhdyuamvvg\.supabase\.co\//.test(src));
+      const preview = safePreview
+        ? '<img src="' + esc(src) + '" alt="' + esc(asset.alt || row.modality || "Imagem clínica") + '">'
+        : '<span>Prévia indisponível no Admin. Abra a fonte original para revisar.</span>';
+      const protocol = row.clinical_protocols;
+      const source = row.source_url
+        ? '<a href="' + esc(row.source_url) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
+        : '<span>Fonte sem URL registrada</span>';
+      return `
+        <article class="admin-image-review-card" data-image-review-id="${Number(row.id)}">
+          <div class="admin-image-review-preview">${preview}</div>
+          <div class="admin-image-review-body">
+            <div class="admin-image-review-head">
+              <div>
+                <strong>${esc(protocol?.title || row.target_ref || "Imagem clínica")}</strong>
+                <small>${esc(protocol?.category || row.target_kind || "")}</small>
+              </div>
+              <span class="admin-image-review-tag">${esc(String(row.source_trust || "unverified"))}</span>
+            </div>
+            <div class="admin-image-review-tags">
+              <span class="admin-image-review-tag">${esc(clinicalImageLabel(row))}</span>
+              <span class="admin-image-review-tag">${esc(String(row.modality || "").toUpperCase())}</span>
+              <span class="admin-image-review-tag">${esc(String(row.target_kind || "protocol"))}</span>
+            </div>
+            <div class="admin-image-review-source">
+              <strong>${esc(row.source_name || "Fonte não verificada")}</strong><br>
+              ${source}
+              ${row.source_license ? '<br><small>Licença: ' + esc(row.source_license) + '</small>' : ""}
+            </div>
+            ${asset.caption ? '<small>' + esc(asset.caption) + '</small>' : ""}
+            <div class="admin-image-review-actions">
+              <button class="button secondary" type="button" data-image-review-action="reject" data-image-review-id="${Number(row.id)}">Rejeitar</button>
+              <button class="button primary" type="button" data-image-review-action="approve" data-image-review-id="${Number(row.id)}">Aprovar</button>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join("");
+    if (status) status.textContent = rows.length + " imagem" + (rows.length === 1 ? "" : "s") + " aguardando sua revisão.";
+  }
+
+  async function loadClinicalImageReviewQueue() {
+    const status = $("admin-images-status");
+    if (status) status.textContent = "Carregando fila de imagens...";
+    const { data, error } = await sb
+      .from("clinical_image_review_queue")
+      .select("id,protocol_id,target_kind,target_ref,image_kind,modality,proposed_asset,source_url,source_name,source_license,source_trust,review_status,created_at,clinical_protocols(title,category)")
+      .eq("review_status", "pending")
+      .order("created_at", { ascending: true });
+    if (error) {
+      if (status) status.textContent = "Não foi possível carregar a fila de imagens.";
+      throw error;
+    }
+    clinicalImageReviewRows = Array.isArray(data) ? data : [];
+    renderClinicalImageReviewQueue(clinicalImageReviewRows);
+  }
+
+  async function reviewClinicalImage(id, decision) {
+    const row = clinicalImageReviewRows.find(item => Number(item.id) === Number(id));
+    if (!row) return;
+    const status = $("admin-images-status");
+    if (status) status.textContent = decision === "approved" ? "Aprovando imagem..." : "Rejeitando imagem...";
+
+    if (decision === "approved" && row.protocol_id && row.target_kind !== "summary") {
+      const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
+      if (asset.src) {
+        const { data: protocol, error: protocolError } = await sb
+          .from("clinical_protocols")
+          .select("image_assets")
+          .eq("id", row.protocol_id)
+          .single();
+        if (protocolError) throw protocolError;
+        const assets = Array.isArray(protocol?.image_assets) ? protocol.image_assets.slice() : [];
+        if (!assets.some(item => String(item?.src || "") === String(asset.src))) {
+          assets.push({
+            ...asset,
+            source_url: row.source_url || asset.source_url || null,
+            source_name: row.source_name || asset.source_name || null,
+            license: row.source_license || asset.license || null,
+            approved_by_admin: true
+          });
+          const { error: updateProtocolError } = await sb
+            .from("clinical_protocols")
+            .update({ image_assets: assets })
+            .eq("id", row.protocol_id);
+          if (updateProtocolError) throw updateProtocolError;
+        }
+      }
+    }
+
+    const { error } = await sb
+      .from("clinical_image_review_queue")
+      .update({
+        review_status: decision,
+        reviewed_by: window.docmapUser?.id || null,
+        reviewed_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
+      })
+      .eq("id", id);
+    if (error) throw error;
+    await loadClinicalImageReviewQueue();
+  }
+
+  function wireClinicalImageReview() {
+    const refresh = $("admin-images-refresh");
+    if (refresh && refresh.dataset.wired !== "1") {
+      refresh.dataset.wired = "1";
+      refresh.addEventListener("click", () => {
+        loadClinicalImageReviewQueue().catch(error => {
+          console.error("Falha ao atualizar imagens clínicas:", error);
+        });
+      });
+    }
+    const list = $("admin-images-list");
+    if (list && list.dataset.wired !== "1") {
+      list.dataset.wired = "1";
+      list.addEventListener("click", async event => {
+        const button = event.target.closest("[data-image-review-action]");
+        if (!button) return;
+        const id = Number(button.dataset.imageReviewId);
+        const action = button.dataset.imageReviewAction;
+        if (!id || !["approve","reject"].includes(action)) return;
+        button.disabled = true;
+        try {
+          await reviewClinicalImage(id, action === "approve" ? "approved" : "rejected");
+        } catch (error) {
+          console.error("Falha ao revisar imagem clínica:", error);
+          const status = $("admin-images-status");
+          if (status) status.textContent = "Falha ao salvar sua decisão.";
+          button.disabled = false;
+        }
+      });
     }
   }
 
