@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v218-protocol-images";
+const CACHE_VERSION = "luria-pwa-v219-mode-switch-theme";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -22,7 +22,7 @@ const APP_SHELL = [
   "/assets/css/luria-brand-v5.css?v=77-cronograma-cachefix",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=20261002-intelligence-1",
+  "/assets/js/app.js?v=20261002-mode-switch-theme",
   "/assets/js/luria-command-center.js?v=20261002-1",
   "/assets/css/luria-command-center.css?v=20261002-1",
   "/mini-osce/",
