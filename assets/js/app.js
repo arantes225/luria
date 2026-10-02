@@ -1173,6 +1173,58 @@
     }
   `;
 
+
+  style.textContent += `
+    /* PWA bottom lock v2 — mantém o botão de ambiente na MESMA posição
+       em Estudo e Trabalho, independente da altura do conteúdo acima. */
+    @media (max-width:980px) {
+      html.pwa-standalone body #sidebar.sidebar {
+        position:fixed !important;
+        overflow:hidden !important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer {
+        position:absolute !important;
+        left:15px !important;
+        right:15px !important;
+        bottom:calc(12px + env(safe-area-inset-bottom)) !important;
+        margin:0 !important;
+        padding:0 !important;
+        z-index:20 !important;
+        background:var(--sidebar) !important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work {
+        display:flex !important;
+        flex-direction:column !important;
+        gap:7px !important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .nav,
+      html.pwa-standalone body #sidebar.sidebar .nav-study,
+      html.pwa-standalone body #sidebar.sidebar .nav-work {
+        padding-bottom:150px !important;
+        overflow-y:auto !important;
+        overflow-x:hidden !important;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav {
+        padding-bottom:190px !important;
+      }
+
+      /* O seletor de ambiente é sempre o último item e fica ancorado
+         exatamente na mesma linha de base nos dois modos. */
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch {
+        margin:0 !important;
+        flex:0 0 auto !important;
+      }
+    }
+  `;
+
   document.head.appendChild(style);
 })();
 
