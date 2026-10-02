@@ -1614,3 +1614,11 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     max-height:calc(100% - 5px)!important;
   }
 }
+
+
+/* v32 — Casos concluídos e Média de desempenho 5px menores */
+@media(min-width:961px){
+  body[data-page="plantao"] .sim-stats-strip-compact article{
+    min-height:61px!important;
+  }
+}
