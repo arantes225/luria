@@ -8046,3 +8046,66 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
     padding-right:16px!important;
   }
 }
+
+
+/* LuriaZap v60 — isolamento de módulo + avatar médico/médica consistente. */
+body[data-plantao-entry="phone"] .plantao-hero,
+body[data-plantao-entry="phone"] .plantao-mode-menu,
+body[data-plantao-entry="phone"] #plantao-emergency-panel,
+body[data-plantao-entry="phone"] #plantao-simulator,
+body[data-plantao-entry="phone"] #plantao-debrief,
+body[data-plantao-entry="phone"] .plantao-practice-back-row,
+body[data-plantao-entry="phone"] .plantao-primary-switch-wrap,
+body[data-plantao-entry="phone"] .plantao-library-inner-switch,
+body[data-plantao-entry="phone"] .plantao-library-metrics,
+body[data-plantao-entry="phone"] .plantao-quick-grid{
+  display:none!important;
+}
+body[data-plantao-entry="phone"] #plantao-library{
+  display:block!important;
+  width:100%!important;
+  min-height:100dvh!important;
+  background:var(--bg)!important;
+}
+body[data-plantao-entry="phone"] #plantao-telefone{
+  display:grid!important;
+  visibility:visible!important;
+  opacity:1!important;
+  position:relative!important;
+  z-index:2!important;
+}
+body[data-plantao-entry="phone"] .plantao-module-back{
+  display:inline-flex!important;
+  position:relative!important;
+  z-index:100!important;
+  pointer-events:auto!important;
+}
+
+body[data-page="plantao"] .plantao-phone-profile-avatar{
+  width:100%;
+  height:100%;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  overflow:hidden;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 16%,var(--surface)),color-mix(in srgb,var(--accent) 5%,var(--surface)));
+  color:var(--accent);
+}
+body[data-page="plantao"] .plantao-phone-profile-avatar svg{
+  width:82%;
+  height:82%;
+  display:block;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+body[data-page="plantao"] .plantao-phone-profile-avatar-list{
+  width:44px;
+  height:44px;
+}
+body[data-page="plantao"] .plantao-phone-profile-avatar-header{
+  width:36px;
+  height:36px;
+}
