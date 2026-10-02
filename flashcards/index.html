@@ -407,6 +407,42 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
  .error-side-card.error-quick-metrics{height:auto!important;min-height:0!important;max-height:none!important}
 }
 </style>
+<style id="quick-metrics-match-questions-v67">
+.error-side-card.error-quick-metrics{
+  box-sizing:border-box!important;height:272px!important;min-height:272px!important;max-height:272px!important;
+  padding:8px 16px!important;border:1px solid var(--border)!important;border-radius:15px!important;
+  background:var(--surface)!important;box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;overflow:hidden!important;
+}
+.error-quick-metrics .error-side-head{margin-bottom:4px!important}
+.error-quick-metrics .error-side-head>div{display:flex!important;align-items:center!important;gap:8px!important}
+.error-quick-metrics .error-side-head>div>span{display:none!important}
+.error-quick-metrics .error-side-head h3{margin:0!important;font-size:16px!important;line-height:1.2!important;font-weight:600!important;color:var(--text)!important}
+.error-quick-metrics-body{display:grid!important;gap:6px!important}
+.error-metric-summary-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
+.error-metric-summary-grid>div{min-height:72px!important;padding:7px 13px!important;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border))!important;border-radius:11px!important;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface))!important}
+.error-metric-summary-grid span,.error-metric-summary-grid small{display:block!important}
+.error-metric-summary-grid span{color:var(--muted)!important;font-size:8px!important;font-weight:800!important;text-transform:uppercase!important;letter-spacing:.045em!important}
+.error-metric-summary-grid strong{display:block!important;margin:7px 0 4px!important;color:var(--accent)!important;font-size:20px!important;line-height:1!important}
+.error-metric-summary-grid small{color:var(--muted)!important;font-size:7.5px!important;line-height:1.35!important}
+.error-metric-progress{display:grid!important;grid-template-columns:92px 1fr!important;align-items:center!important;gap:14px!important;padding:6px 14px!important;border:1px solid var(--border)!important;border-radius:11px!important}
+.error-metric-ring{--p:0;position:relative!important;display:grid!important;place-items:center!important;width:68px!important;height:68px!important;border-radius:50%!important;background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--surface-2) 0)!important}
+.error-metric-ring:after{content:""!important;position:absolute!important;inset:9px!important;border-radius:50%!important;background:var(--surface)!important}
+.error-metric-ring strong,.error-metric-ring span{position:relative!important;z-index:1!important}
+.error-metric-ring strong{align-self:end!important;font-size:19px!important;color:var(--text)!important}
+.error-metric-ring span{align-self:start!important;color:var(--muted)!important;font-size:7.5px!important}
+.error-metric-progress>div:last-child>strong,.error-metric-progress>div:last-child>span{display:block!important}
+.error-metric-progress>div:last-child>strong{font-size:11px!important;color:var(--text)!important}
+.error-metric-progress>div:last-child>span{margin:4px 0 9px!important;color:var(--muted)!important;font-size:8px!important;line-height:1.35!important}
+.error-metric-track{height:7px!important;border-radius:99px!important;background:var(--surface-2)!important;overflow:hidden!important}
+.error-metric-track i{display:block!important;height:100%!important;border-radius:inherit!important;background:var(--accent)!important}
+.error-metric-mini-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:6px!important}
+.error-metric-mini-grid>div{display:grid!important;grid-template-columns:32px 1fr!important;grid-template-rows:auto auto!important;column-gap:9px!important;min-height:50px!important;padding:5px 12px!important;border:1px solid var(--border)!important;border-radius:10px!important}
+.error-metric-mini-grid b{grid-row:1/3!important;display:grid!important;place-items:center!important;width:32px!important;height:32px!important;border-radius:9px!important;background:var(--accent-soft)!important;color:var(--accent)!important;font-size:14px!important}
+.error-metric-mini-grid strong{font-size:15px!important;color:var(--text)!important}
+.error-metric-mini-grid span{color:var(--muted)!important;font-size:7.8px!important;line-height:1.3!important}
+.error-quick-metrics h4,.error-metric-areas{display:none!important}
+@media(max-width:980px){.error-side-card.error-quick-metrics{height:auto!important;min-height:0!important;max-height:none!important}}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -653,8 +689,8 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
                 </div>
               </div>
               <div class="error-metric-mini-grid">
-                <div><b>↻</b><strong id="quick-metric-reviews">—</strong><span>Revisões feitas</span></div>
-                <div><b>△</b><strong id="quick-metric-due-mini">—</strong><span>A revisar agora</span></div>
+                <div><b>✓</b><strong id="quick-metric-reviews">—</strong><span>Revisões</span></div>
+                <div><b>▥</b><strong id="quick-metric-due-mini">—</strong><span>A revisar</span></div>
               </div>
             </div>
           </aside>
