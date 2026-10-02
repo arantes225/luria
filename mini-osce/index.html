@@ -122,15 +122,36 @@
      [/hipotese|diagnostico|diagnóstico/,["diagnosis","hipotese"]],[/alta|uti|enfermaria|intern/,["destino","disposition","alta","uti","enfermaria"]]
    ];groups.forEach(([re,arr])=>{if(re.test(n))arr.forEach(x=>out.add(x))});return [...out];
  }
+ function stemToken(t){
+   return norm(t)
+     .replace(/(oes|aes|ais|eis|is|ns|s)$/,"")
+     .replace(/(ando|endo|indo|ado|ido)$/,"")
+     .replace(/(mente)$/,"")
+     .slice(0,9);
+ }
+ function commandIntent(q){
+   const n=norm(q);
+   if(/^(hipotese|hipótese|diagnostico|diagnóstico)\b|acho que|minha hipotese/.test(n)) return "hipotese";
+   if(/^(destino|conduta final)\b|\balta\b|\binterno\b|\bencaminho\b|\buti\b|\benfermaria\b/.test(n)) return "destino";
+   if(/\b(examino|ausculto|palpo|inspeciono|percuto|avalio pupila|glasgow|exame fisico|exame físico)\b/.test(n)) return "fisico";
+   if(/\b(solicito|peco|peço|colet|dosar|dosagem|raio.?x|radiografia|tomografia|ultrassom|usg|ecg|eletrocard|hemograma|gasometr|troponina|beta.?hcg|urina)\b/.test(n)) return "exames";
+   if(/\b(administro|medico|prescrevo|inicio|instalo|ofereco|ofereço|faço acesso|faco acesso|pun[cç]iono|intubo|ventilo|oxigen|cardiovers|desfibr|dreno|compress|torniquete)\b/.test(n)) return "conduta";
+   if(/[?]$|\b(tem|teve|usa|toma|sente|sentiu|quando|onde|como|quanto|qual|quais|porque|por que|alerg|remedio|medic|anteced|come[cç]ou|dor|febre|sangramento|corrimento|vomito|diarreia)\b/.test(n)) return "anamnese";
+   return "anamnese";
+ }
  function commandScore(a,q){
-   const tokens=conceptTokens(q),txt=norm([a.id,a.label,a.subgroup,a.category,a.role].filter(Boolean).join(" "));let s=0;
-   tokens.forEach(t=>{if(txt.includes(norm(t)))s+=t.length>6?4:2});
-   const qn=norm(q);if(qn&&txt.includes(qn))s+=12;
-   const cat=category(a);
-   if(/[?]|\bpergunto\b|\bindago\b|\brefere\b/.test(qn)&&cat==="anamnese")s+=3;
-   if(/examino|ausculto|palpo|inspeciono|percuto|exame fisico/.test(qn)&&cat==="fisico")s+=5;
-   if(/solicito|peco|peço|colet|dosar|realizo.*ecg|faço.*ecg/.test(qn)&&cat==="exames")s+=5;
-   if(/administro|inicio|instalo|ofereco|ofereço|prescrevo|faço acesso|realizo.*proced/.test(qn)&&cat==="conduta")s+=4;
+   const tokens=conceptTokens(q),txt=norm([a.id,a.label,a.subgroup,a.category,a.role].filter(Boolean).join(" "));
+   const txtTokens=new Set(words(txt).map(stemToken));
+   let s=0;
+   tokens.forEach(t=>{
+     const nt=norm(t),st=stemToken(nt);
+     if(txt.includes(nt)) s+=nt.length>6?5:3;
+     else if(st && [...txtTokens].some(x=>x===st || x.startsWith(st.slice(0,5)) || st.startsWith(x.slice(0,5)))) s+=2;
+   });
+   const qn=norm(q),intent=commandIntent(q),cat=category(a);
+   if(qn&&txt.includes(qn))s+=14;
+   if(intent===cat)s+=7;
+   if(intent==="anamnese"&&cat==="anamnese")s+=5;
    return s;
  }
  function replaceVitals(text){
@@ -152,26 +173,96 @@
    const eff=a.effects?.vitals;if(eff&&state.full){state.full.initial_vitals={...(state.full.initial_vitals||{}),...eff};const v=$("#osce-vitals");if(v)v.innerHTML=vitalsHtml(state.full)}
    updateStatus();
  }
- function interpretCommand(q){
-   const n=norm(q);addLog("user",q);
-   if(/^(hipotese|hipótese|diagnostico|diagnóstico)\s*[:\-]?/.test(n)){
-     state.hypothesis=q.replace(/^[^:\-]+[:\-]?\s*/,"").trim()||q;state.domains.add("hipotese");addLog("system","Hipótese registrada.");updateStatus();return;
+ function bestByIntent(q,intent){
+   const commands=allCommands()
+     .filter(a=>category(a)===intent)
+     .map(a=>({a,score:commandScore(a,q)}))
+     .sort((x,y)=>y.score-x.score);
+   return commands[0]||null;
+ }
+ function anamnesisFallback(q){
+   const topics=parseHistoryTopics(state.full||{});
+   if(!topics.length) return directFieldAnswer(q)||"Não tenho essa informação registrada no caso.";
+   const qTokens=conceptTokens(q).map(stemToken).filter(Boolean);
+   let best=null,bestScore=-1;
+   for(const t of topics){
+     const hay=norm([t.label,t.subgroup].join(" "));
+     const hTokens=words(hay).map(stemToken);
+     let score=0;
+     for(const qt of qTokens){
+       if(hay.includes(qt)) score+=3;
+       if(hTokens.some(ht=>ht===qt||ht.startsWith(qt.slice(0,5))||qt.startsWith(ht.slice(0,5)))) score+=2;
+     }
+     if(score>bestScore){bestScore=score;best=t}
    }
-   if(/^(conduta|destino|encaminho|interno|alta|uti|enfermaria)\b/.test(n)){
+   if(best && bestScore>0){
+     state.performed.add(best.id);state.domains.add("anamnese");updateStatus();
+     return best.result||"Não sei informar melhor.";
+   }
+   const direct=directFieldAnswer(q);
+   if(direct)return direct;
+   const generic=topics.find(t=>/queixa atual|inicio|evolucao|sintomas associados/i.test(t.subgroup))||topics[0];
+   return generic?.result||"Não tenho essa informação registrada no caso.";
+ }
+ function physicalFallback(q){
+   const exams=physicalExamActions(state.full||{});
+   if(!exams.length)return "Exame físico realizado, mas este achado específico ainda não está cadastrado no caso.";
+   const n=norm(q);
+   const preferred=
+     (/pulmao|respirat|auscult|torax/.test(n)&&exams.find(a=>/respirat|pulm|torax|focused/i.test(a.id+" "+a.label)))||
+     (/cardio|coracao|bulha|pulso/.test(n)&&exams.find(a=>/cardio|vascular|focused/i.test(a.id+" "+a.label)))||
+     (/abdome|abdominal|palp/.test(n)&&exams.find(a=>/abd|focused/i.test(a.id+" "+a.label)))||
+     (/neurolog|pupila|glasgow/.test(n)&&exams.find(a=>/neuro|head|eye|focused/i.test(a.id+" "+a.label)))||
+     exams.find(a=>/general|focused|ectosc/i.test(a.id+" "+a.label))||exams[0];
+   state.performed.add(preferred.id);state.domains.add("fisico");updateStatus();
+   return preferred.result||"Exame realizado sem achado adicional cadastrado.";
+ }
+ function testFallback(q){
+   const tests=testResultActions(state.full||{});
+   if(!tests.length)return "Exame solicitado. Este caso ainda não possui um resultado específico cadastrado para esse pedido.";
+   const ranked=tests.map(a=>({a,score:commandScore(a,q)})).sort((x,y)=>y.score-x.score);
+   if(ranked[0]?.score>0){state.performed.add(ranked[0].a.id);state.domains.add("exames");updateStatus();return ranked[0].a.result}
+   return "Exame solicitado. Este resultado específico não está cadastrado para esta estação.";
+ }
+ function interpretCommand(q){
+   const n=norm(q),intent=commandIntent(q);addLog("user",q);
+
+   if(intent==="hipotese"){
+     state.hypothesis=q.replace(/^(hipotese|hipótese|diagnostico|diagnóstico)\s*[:\-]?\s*/i,"").trim()||q;
+     state.domains.add("hipotese");addLog("system","Hipótese registrada.");updateStatus();return;
+   }
+   if(intent==="destino"){
      state.plan=q;state.domains.add("destino");addLog("system","Conduta/destino registrado.");updateStatus();return;
    }
-   const commands=allCommands().map(a=>({a,score:commandScore(a,q)})).sort((x,y)=>y.score-x.score);
-   const best=commands[0],second=commands[1];
-   if(best&&best.score>=3&&(best.score-(second?.score||0)>=1||best.score>=6)){performMatched(best.a,q);return;}
-   const direct=directFieldAnswer(q);if(direct){state.domains.add("anamnese");addLog("patient",direct);updateStatus();return;}
-   addLog("system","Não consegui interpretar com segurança. Escreva a ação de forma mais específica, como você falaria em uma estação.");
+
+   const best=bestByIntent(q,intent);
+   if(best && best.score>=5){performMatched(best.a,q);return;}
+
+   if(intent==="anamnese"){
+     state.domains.add("anamnese");
+     addLog("patient",anamnesisFallback(q));
+     updateStatus();return;
+   }
+   if(intent==="fisico"){
+     addLog("patient",physicalFallback(q));return;
+   }
+   if(intent==="exames"){
+     addLog("patient",testFallback(q));return;
+   }
+   if(intent==="conduta"){
+     const any=allCommands().filter(a=>category(a)==="conduta").map(a=>({a,score:commandScore(a,q)})).sort((a,b)=>b.score-a.score)[0];
+     if(any&&any.score>=3){performMatched(any.a,q);return;}
+     state.domains.add("conduta");addLog("system","Conduta registrada. Não há um efeito específico cadastrado para essa ação nesta estação.");updateStatus();return;
+   }
+
+   addLog("patient",anamnesisFallback(q));updateStatus();
  }
  function vitalsHtml(x){const v=x?.initial_vitals||{};const rows=[["PA",v.bp||"—"],["FC",v.hr!=null?String(v.hr)+" bpm":"—"],["FR",v.rr!=null?String(v.rr)+" irpm":"—"],["SpO₂",v.spo2!=null?String(v.spo2)+"%":"—"],["Temp.",v.temp!=null?String(v.temp)+" °C":"—"],["Estado",v.mental||"—"]];return rows.map(r=>'<div class="osce-vital"><small>'+r[0]+'</small><b>'+esc(r[1])+'</b></div>').join("")}
  async function start(id){
    state.current=state.cases.find(x=>String(x.id)===String(id));state.full=null;state.performed=new Set();state.log=[];state.hypothesis="";state.plan="";state.domains=new Set();state.seconds=480;clearInterval(state.timer);
    const res=await sb.from("clinical_cases").select("id,slug,title,setting,specialty,difficulty,summary,presentation,initial_vitals,actions,debrief,completion_rules,version").eq("id",id).single();
    state.full=res.data||state.current;const x=state.full,name=patientName(x),age=ageLabel(x),sex=sexOf(x)==="F"?"Feminino":"Masculino";
-   $("#osce-root").innerHTML='<section class="osce-sim"><article class="osce-stage"><div class="osce-stage-head"><div><span class="osce-kicker">OSCE · ESTAÇÃO INTERATIVA</span><h2>'+esc(title(x))+'</h2></div><div id="osce-timer" class="osce-timer">08:00</div></div><div class="osce-patient"><div class="osce-avatar">'+esc(name.split(" ").map(p=>p[0]).slice(0,2).join(""))+'</div><div><h3>'+esc(name)+'</h3><p>'+esc(age)+' · '+esc(sex)+'</p><p><b>HDA:</b> '+esc(hdaText(x))+'</p></div></div><div id="osce-log" class="osce-log"></div><div id="osce-status-strip" class="osce-status-strip"></div><div class="osce-command"><div class="osce-command-label"><strong>O que você quer fazer?</strong><span>Entrada livre</span></div><form id="osce-command-form" class="osce-command-form"><input id="osce-command-input" class="osce-command-input" type="text" autocomplete="off" placeholder="Digite sua pergunta, exame, pedido ou conduta..."><button class="osce-command-send" type="submit">Enviar</button></form><div class="osce-command-help"><b>Sem lista de opções.</b> Escreva naturalmente o que faria na estação.</div></div></article><aside class="osce-side"><h3>Paciente</h3><div id="osce-vitals" class="osce-vitals">'+vitalsHtml(x)+'</div><p>Os itens avaliados ficam ocultos durante a estação.</p><div class="osce-side-actions"><button id="osce-back" class="osce-btn osce-secondary" type="button">Sair</button><button id="osce-finish" class="osce-btn" type="button">Finalizar estação</button></div></aside></section>';
+   $("#osce-root").innerHTML='<section class="osce-sim"><article class="osce-stage"><div class="osce-stage-head"><div><span class="osce-kicker">OSCE · ESTAÇÃO INTERATIVA</span><h2>'+esc(title(x))+'</h2></div><div id="osce-timer" class="osce-timer">08:00</div></div><div class="osce-patient"><div class="osce-avatar">'+esc(name.split(" ").map(p=>p[0]).slice(0,2).join(""))+'</div><div><h3>'+esc(name)+'</h3><p>'+esc(age)+' · '+esc(sex)+'</p><p><b>HDA:</b> '+esc(hdaText(x))+'</p></div></div><div id="osce-log" class="osce-log"></div><div id="osce-status-strip" class="osce-status-strip"></div><div class="osce-command"><div class="osce-command-label"><strong>O que você quer fazer?</strong><span>Entrada livre</span></div><form id="osce-command-form" class="osce-command-form"><input id="osce-command-input" class="osce-command-input" type="text" autocomplete="off" placeholder="Digite sua pergunta, exame, pedido ou conduta..."><button class="osce-command-send" type="submit">Enviar</button></form><div class="osce-command-help"><b>Sem lista de opções.</b> Pode escrever do seu jeito: pergunta, exame, pedido, procedimento, hipótese ou destino.</div></div></article><aside class="osce-side"><h3>Paciente</h3><div id="osce-vitals" class="osce-vitals">'+vitalsHtml(x)+'</div><p>Os itens avaliados ficam ocultos durante a estação.</p><div class="osce-side-actions"><button id="osce-back" class="osce-btn osce-secondary" type="button">Sair</button><button id="osce-finish" class="osce-btn" type="button">Finalizar estação</button></div></aside></section>';
    renderLog();updateStatus();
    $("#osce-back").onclick=()=>location.assign("/plantao/sala-emergencia/");
    $("#osce-finish").onclick=finish;
