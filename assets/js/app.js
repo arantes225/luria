@@ -7804,3 +7804,113 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* PWA v35 — seletor Estudos/Trabalho com geometria fixa e cor do callout de título. */
+(function ensurePwaModeSwitchFixedV35(){
+  if(document.getElementById("luria-pwa-mode-switch-fixed-v35")) return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-mode-switch-fixed-v35";
+  style.textContent=`
+    @media(max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{
+        margin-top:auto!important;
+        flex:0 0 auto!important;
+        position:relative!important;
+        bottom:auto!important;
+        display:grid!important;
+        grid-auto-flow:row!important;
+        align-content:end!important;
+        gap:8px!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        position:relative!important;
+        inset:auto!important;
+        width:100%!important;
+        min-width:100%!important;
+        max-width:100%!important;
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        margin:0!important;
+        padding:6px 8px!important;
+        box-sizing:border-box!important;
+        flex:0 0 58px!important;
+        align-self:stretch!important;
+        border-radius:16px!important;
+        gap:7px!important;
+        transform:none!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch:hover{
+        transform:none!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+        width:42px!important;
+        height:42px!important;
+        min-width:42px!important;
+        min-height:42px!important;
+        flex:0 0 42px!important;
+        border-radius:50%!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy{
+        min-width:0!important;
+        display:grid!important;
+        gap:2px!important;
+        align-content:center!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+        font-size:16px!important;
+        line-height:1!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+        margin:0!important;
+        font-size:9px!important;
+        line-height:1.1!important;
+      }
+
+      /* Claro e escuro: azul do callout de título. */
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        background:#184888!important;
+        background-color:#184888!important;
+        border-color:#184888!important;
+        color:#fff!important;
+        box-shadow:0 8px 20px rgba(24,72,136,.20)!important;
+        filter:none!important;
+      }
+
+      /* Rosa: acompanha o mesmo accent usado pelo callout de título. */
+      html[data-theme="leila-mood"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="pink"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html.pwa-standalone body.theme-leila-mood #sidebar.sidebar .luria-mode-footer-switch{
+        background:var(--accent)!important;
+        background-color:var(--accent)!important;
+        border-color:var(--accent)!important;
+        color:#fff!important;
+        box-shadow:0 8px 20px color-mix(in srgb,var(--accent) 22%,transparent)!important;
+        filter:none!important;
+      }
+
+      /* A peça acima ocupa a mesma altura nos dois ambientes:
+         Ofensiva em Estudos e PCR em Trabalho. */
+      html.pwa-standalone body #sidebar.sidebar .streak-mini,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button{
+        box-sizing:border-box!important;
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        margin:0!important;
+        flex:0 0 58px!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
