@@ -8,7 +8,6 @@
   <link rel="canonical" href="/sessao-estudo/">
   <style>
     body[data-page="sessao_estudo"] .topbar .page-heading{display:none!important}
-    .study-session-title-card{margin-bottom:14px!important}
     .study-session-page{display:grid;gap:14px;padding-bottom:32px}
 
     .mission-board{position:relative;overflow:hidden;padding:24px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:20px;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 5%,var(--surface)),var(--surface) 56%);box-shadow:0 14px 34px color-mix(in srgb,var(--accent) 7%,transparent)}
@@ -46,25 +45,27 @@
     .study-session-banner strong{font-size:.84rem;color:#18885c}
     .study-session-banner small{display:block;color:var(--muted);font-size:.7rem;margin-top:2px}
 
-    .study-session-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:2px}
-    .study-session-card{position:relative;display:flex;flex-direction:column;min-height:190px;padding:16px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 5px 16px rgba(15,35,65,.035);transition:.18s ease}
-    .study-session-card.is-current{border-color:color-mix(in srgb,var(--accent) 34%,var(--border));box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 8%,transparent);background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface))}
-    .study-session-card.is-done{border-color:color-mix(in srgb,#18885c 26%,var(--border));background:linear-gradient(180deg,color-mix(in srgb,#18885c 4%,var(--surface)),var(--surface))}
+    .study-session-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:4px}
+    .study-session-card{position:relative;display:flex;flex-direction:column;min-width:0;min-height:148px;padding:12px;border:1px solid var(--border);border-radius:11px;background:var(--surface);color:var(--text);box-shadow:none;transition:.16s ease;overflow:hidden}
+    .study-session-card:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--border));transform:translateY(-1px)}
+    .study-session-card.is-current{border-color:color-mix(in srgb,var(--accent) 46%,var(--border));box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 8%,transparent)}
+    .study-session-card.is-current::before{content:"";position:absolute;left:0;top:12px;bottom:12px;width:3px;border-radius:0 3px 3px 0;background:var(--accent)}
+    .study-session-card.is-done{border-color:color-mix(in srgb,#18885c 30%,var(--border))}
     .study-session-card.is-locked{opacity:.58}
-    .study-session-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .study-session-card-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--accent-soft);color:var(--accent)}
-    .study-session-card-icon svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-    .study-session-card.is-done .study-session-card-icon{background:color-mix(in srgb,#18885c 12%,var(--surface));color:#18885c}
-    .study-session-step-label{font-size:.66rem;font-weight:850;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
-    .study-session-card h3{margin:14px 0 5px;font-size:1rem;letter-spacing:-.02em}
-    .study-session-card p{margin:0;color:var(--muted);font-size:.75rem;line-height:1.5}
-    .study-session-card-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:14px}
-    .study-session-card-meta{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:.68rem;font-weight:760}
-    .study-session-xp-chip{display:inline-flex;align-items:center;padding:5px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.64rem;font-weight:900}
-    .study-session-card.is-done .study-session-xp-chip{background:color-mix(in srgb,#18885c 10%,var(--surface));color:#18885c}
-    .study-session-start{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:0 12px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:850;cursor:pointer;box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 20%,transparent)}
+    .study-session-card-top{display:flex;align-items:center;justify-content:space-between;gap:9px}
+    .study-session-card-icon{display:grid;place-items:center;width:31px;height:31px;border-radius:8px;background:var(--accent-soft);color:var(--accent)}
+    .study-session-card-icon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .study-session-card.is-done .study-session-card-icon{background:color-mix(in srgb,#18885c 10%,var(--surface));color:#18885c}
+    .study-session-step-label{font-size:.62rem;font-weight:850;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+    .study-session-card h3{margin:9px 0 4px;font-size:.9rem;letter-spacing:-.015em}
+    .study-session-card p{height:32px;margin:0 0 9px;color:var(--muted);font-size:.69rem;line-height:1.4;overflow:hidden}
+    .study-session-card-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:8px;border-top:1px solid var(--border)}
+    .study-session-card-meta{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:.62rem;font-weight:760}
+    .study-session-xp-chip{display:inline-flex;align-items:center;padding:4px 6px;border-radius:7px;background:var(--accent-soft);color:var(--accent);font-size:.59rem;font-weight:900}
+    .study-session-card.is-done .study-session-xp-chip{background:color-mix(in srgb,#18885c 9%,var(--surface));color:#18885c}
+    .study-session-start{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:29px;padding:0 10px;border:1px solid color-mix(in srgb,var(--accent) 25%,var(--border));border-radius:8px;background:var(--accent);color:#fff;font-size:.64rem;font-weight:850;cursor:pointer;box-shadow:none}
     .study-session-start:hover{transform:translateY(-1px)}
-    .study-session-status{font-size:.68rem;font-weight:850;color:var(--muted)}
+    .study-session-status{font-size:.62rem;font-weight:850;color:var(--muted)}
     .study-session-card.is-done .study-session-status{color:#18885c}
 
     .study-session-finale{display:none;text-align:center;padding:28px 18px;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 7%,var(--surface)),var(--surface));animation:sessionWin .45s ease both}
@@ -81,7 +82,7 @@
       .mission-board-head{display:grid}
       .mission-summary{grid-template-columns:repeat(3,1fr)}
       .study-session-list{grid-template-columns:1fr}
-      .study-session-card{min-height:154px}
+      .study-session-card{min-height:148px}
     }
     @media(max-width:620px){
       .mission-board{padding:17px}
