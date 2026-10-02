@@ -10,21 +10,35 @@
     body[data-page="sessao_estudo"] .topbar .page-heading{display:none!important}
     .study-session-title-card{margin-bottom:14px!important}
     .study-session-page{display:grid;gap:18px;padding-bottom:32px}
-    .study-session-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .study-session-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;padding:22px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 6%,var(--surface)),var(--surface));box-shadow:0 10px 28px color-mix(in srgb,var(--accent) 8%,transparent);position:relative;overflow:hidden}
+    .study-session-hero::after{content:"";position:absolute;right:-46px;top:-58px;width:170px;height:170px;border-radius:50%;border:1px solid color-mix(in srgb,var(--accent) 14%,transparent);box-shadow:0 0 0 34px color-mix(in srgb,var(--accent) 3%,transparent)}
+    .study-session-hero-main{position:relative;z-index:2}
     .study-session-hero .eyebrow{display:inline-flex;margin-bottom:7px}
-    .study-session-hero h2{margin:0 0 5px;font-size:1.45rem;letter-spacing:-.025em}
+    .study-session-hero h2{margin:0 0 6px;font-size:1.55rem;letter-spacing:-.03em}
     .study-session-hero p{margin:0;color:var(--muted);max-width:680px;line-height:1.5}
-    .study-session-time{min-width:96px;display:grid;justify-items:end}
-    .study-session-time strong{font-size:1.35rem;color:var(--accent)}
-    .study-session-time small{font-size:.72rem;color:var(--muted);font-weight:800}
-    .study-session-progress{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:4px 2px}
+    .study-session-stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,minmax(74px,1fr));gap:8px;align-self:start}
+    .study-session-stat{display:grid;gap:2px;min-width:78px;padding:10px 11px;border:1px solid var(--border);border-radius:12px;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(8px)}
+    .study-session-stat strong{font-size:1rem;color:var(--text)}
+    .study-session-stat small{font-size:.67rem;color:var(--muted);font-weight:800}
+    .study-session-stat.is-accent strong{color:var(--accent)}
+    .study-session-journey{display:grid;gap:12px;padding:16px 16px 14px;border:1px solid var(--border);border-radius:16px;background:var(--surface);position:relative;overflow:hidden}
+    .study-session-journey-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .study-session-journey-head strong{font-size:.92rem}
+    .study-session-journey-head small{color:var(--muted);font-size:.72rem}
+    .study-session-track-wrap{position:relative;padding:18px 8px 3px}
+    .study-session-track{position:absolute;left:34px;right:34px;top:37px;height:6px;border-radius:999px;background:var(--border);overflow:hidden}
+    .study-session-track-fill{height:100%;width:0%;border-radius:inherit;background:linear-gradient(90deg,var(--accent),color-mix(in srgb,var(--accent) 72%,#66a3ff));transition:width .55s cubic-bezier(.2,.8,.2,1)}
+    .study-session-mascot{position:absolute;top:-5px;left:0;width:62px;height:62px;z-index:5;transition:left .65s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 7px 9px rgba(0,0,0,.12));animation:mascotBob 2.2s ease-in-out infinite}
+    .study-session-mascot img{width:100%;height:100%;object-fit:contain}
+    .study-session-progress{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0}
     .study-session-progress-step{position:relative;display:grid;justify-items:center;gap:6px;color:var(--muted);font-size:.69rem;font-weight:850}
-    .study-session-progress-step:not(:last-child)::after{content:"";position:absolute;top:18px;left:calc(50% + 22px);right:calc(-50% + 22px);height:3px;border-radius:99px;background:var(--border)}
+    .study-session-progress-step:not(:last-child)::after{display:none}
     .study-session-progress-dot{position:relative;z-index:2;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:2px solid var(--border);background:var(--surface);font-weight:900}
     .study-session-progress-step.is-current{color:var(--accent)}
     .study-session-progress-step.is-current .study-session-progress-dot{border-color:var(--accent);box-shadow:0 0 0 6px var(--accent-soft);animation:sessionPulse 1.8s ease-in-out infinite}
     .study-session-progress-step.is-done{color:#18885c}
     .study-session-progress-step.is-done .study-session-progress-dot{border-color:#18885c;background:#18885c;color:#fff}
+    .study-session-progress-step.is-finish{color:var(--muted)}.study-session-progress-step.is-finish .study-session-progress-dot{border-style:dashed}
     .study-session-progress-step.is-done::after{background:#18885c}
     .study-session-banner{display:none;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid color-mix(in srgb,#18885c 30%,var(--border));border-radius:13px;background:color-mix(in srgb,#18885c 8%,var(--surface));animation:sessionWin .45s ease both}
     .study-session-banner.is-visible{display:flex}
@@ -52,13 +66,17 @@
     .study-session-finale h3{margin:0 0 5px;font-size:1.25rem}
     .study-session-finale p{margin:0;color:var(--muted)}
     @keyframes sessionPulse{0%,100%{box-shadow:0 0 0 4px var(--accent-soft)}50%{box-shadow:0 0 0 9px color-mix(in srgb,var(--accent) 8%,transparent)}}
+    @keyframes mascotBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
     @keyframes sessionWin{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
     @keyframes sessionBounce{0%{transform:scale(.6) rotate(-8deg)}60%{transform:scale(1.15) rotate(4deg)}100%{transform:scale(1) rotate(0)}}
-    @media(max-width:650px){
-      .study-session-hero{padding:16px}
+    @media(max-width:760px){
+      .study-session-hero{grid-template-columns:1fr;padding:16px}
+      .study-session-stats{grid-template-columns:repeat(3,1fr)}
       .study-session-item{grid-template-columns:40px minmax(0,1fr)}
       .study-session-action{grid-column:2;justify-self:start}
       .study-session-progress-step{font-size:.62rem}
+      .study-session-mascot{width:52px;height:52px;top:0}
+      .study-session-track{left:28px;right:28px}
     }
   </style>
 </head>
@@ -86,15 +104,30 @@
 
         <section class="study-session-page">
           <header class="study-session-hero">
-            <div>
-              <span class="eyebrow">Desafio de hoje</span>
+            <div class="study-session-hero-main">
+              <span class="eyebrow">Missão do dia</span>
               <h2>Complete suas 3 etapas</h2>
-              <p>Vença uma etapa por vez. O timer começa quando você iniciar a primeira atividade e continua durante toda a sessão.</p>
+              <p>Avance pela trilha, acumule XP e conclua sua missão de estudo de hoje.</p>
             </div>
-            <div class="study-session-time"><strong id="study-session-minutes">—</strong><small>planejados</small></div>
+            <div class="study-session-stats">
+              <div class="study-session-stat"><strong id="study-session-minutes">—</strong><small>tempo planejado</small></div>
+              <div class="study-session-stat is-accent"><strong id="study-session-xp">0 XP</strong><small>ganhos na sessão</small></div>
+              <div class="study-session-stat"><strong id="study-session-count">0/3</strong><small>etapas vencidas</small></div>
+            </div>
           </header>
 
-          <div id="study-session-progress" class="study-session-progress" aria-label="Progresso da sessão"></div>
+          <section class="study-session-journey" aria-label="Jornada da missão">
+            <div class="study-session-journey-head">
+              <div><strong>Trilha da missão</strong><small id="study-session-journey-copy">Comece pela primeira etapa.</small></div>
+            </div>
+            <div class="study-session-track-wrap">
+              <div class="study-session-track"><div id="study-session-track-fill" class="study-session-track-fill"></div></div>
+              <div id="study-session-mascot" class="study-session-mascot" aria-hidden="true">
+                <img id="study-session-mascot-img" src="/assets/img/pulo do gato/luria_gato_tema_claro.webp" alt="">
+              </div>
+              <div id="study-session-progress" class="study-session-progress" aria-label="Progresso da sessão"></div>
+            </div>
+          </section>
           <div id="study-session-banner" class="study-session-banner" aria-live="polite"></div>
           <div id="study-session-list" class="study-session-list"></div>
 
@@ -123,7 +156,21 @@
       const banner=document.getElementById("study-session-banner");
       const finale=document.getElementById("study-session-finale");
       const minutes=document.getElementById("study-session-minutes");
+      const xp=document.getElementById("study-session-xp");
+      const count=document.getElementById("study-session-count");
+      const fill=document.getElementById("study-session-track-fill");
+      const mascot=document.getElementById("study-session-mascot");
+      const mascotImg=document.getElementById("study-session-mascot-img");
+      const journeyCopy=document.getElementById("study-session-journey-copy");
       if(minutes)minutes.textContent=(Number(plan?.minutes)||0)+" min";
+      const theme=document.documentElement.dataset.theme||"light";
+      if(mascotImg){
+        mascotImg.src=theme==="dark"
+          ? "/assets/img/pulo do gato/luria_gato_tema_escuro.webp"
+          : (["leila-mood","pink","rosa"].includes(theme)
+            ? "/assets/img/pulo do gato/luria_gato_tema_rosa.webp"
+            : "/assets/img/pulo do gato/luria_gato_tema_claro.webp");
+      }
 
       if(!steps.length){
         list.innerHTML='<div class="panel"><p style="margin:0;color:var(--muted)">Não encontrei uma sessão ativa. Volte ao Dashboard e toque em Estudar agora.</p></div>';
@@ -141,16 +188,31 @@
           sessionStorage.setItem("luria:guided-study-progress",JSON.stringify({createdAt:plan.createdAt,completedThrough}));
           sessionStorage.removeItem("luria:guided-study-active");
           if(banner){
-            banner.innerHTML='<div><strong>Etapa '+(active.activeIndex+1)+' concluída</strong><small>Boa. A próxima etapa foi liberada.</small></div><span>✓</span>';
+            const reward=active.activeIndex===2?30:20;
+            banner.innerHTML='<div><strong>Etapa '+(active.activeIndex+1)+' vencida · +'+reward+' XP</strong><small>Boa. Seu progresso avançou na trilha.</small></div><span>✓</span>';
             banner.classList.add("is-visible");
           }
         }
       }catch{}
 
       const currentIndex=Math.min(steps.length-1,completedThrough+1);
-      progress.innerHTML=[0,1,2].map(index=>{
+      const completedCount=Math.max(0,Math.min(steps.length,completedThrough+1));
+      const xpValue=[0,20,40,70][completedCount]||0;
+      if(xp)xp.textContent=xpValue+" XP";
+      if(count)count.textContent=completedCount+"/3";
+      if(fill)fill.style.width=completedCount===0?"0%":completedCount===1?"33.33%":completedCount===2?"66.66%":"100%";
+      if(mascot){
+        const left=completedCount===0?"0%":completedCount===1?"31%":completedCount===2?"64%":"calc(100% - 62px)";
+        mascot.style.left=left;
+      }
+      if(journeyCopy)journeyCopy.textContent=completedCount===0?"Comece pela primeira etapa.":completedCount===1?"Primeira etapa vencida. Continue.":completedCount===2?"Só falta uma etapa para fechar a missão.":"Missão concluída.";
+      progress.innerHTML=[0,1,2,3].map(index=>{
+        if(index===3){
+          const finish=completedThrough>=steps.length-1;
+          return '<div class="study-session-progress-step is-finish '+(finish?"is-done":"")+'"><span class="study-session-progress-dot">'+(finish?"✓":"★")+'</span><small>Chegada</small></div>';
+        }
         const state=index<=completedThrough?" is-done":index===currentIndex?" is-current":"";
-        const label=index<=completedThrough?"Concluída":index===currentIndex?"Agora":"Depois";
+        const label=index<=completedThrough?"Vencida":index===currentIndex?"Agora":"Depois";
         return '<div class="study-session-progress-step'+state+'"><span class="study-session-progress-dot">'+(index<=completedThrough?"✓":(index+1))+'</span><small>Etapa '+(index+1)+' · '+label+'</small></div>';
       }).join("");
 
