@@ -332,16 +332,38 @@
     #sidebar.sidebar .luria-mode-footer-switch {
       text-decoration:none !important;
       cursor:pointer !important;
-      transition:transform 140ms ease,border-color 140ms ease,background 140ms ease !important;
+      color:#fff !important;
+      border-color:color-mix(in srgb,#184888 35%,#d7e0eb) !important;
+      background:linear-gradient(110deg,color-mix(in srgb,#184888 88%,#071c3c),#184888 58%,color-mix(in srgb,#184888 75%,#091f49)) !important;
+      box-shadow:0 10px 30px rgba(17,65,130,.12) !important;
+      transition:transform 140ms ease,border-color 140ms ease,filter 140ms ease,box-shadow 140ms ease !important;
     }
     #sidebar.sidebar .luria-mode-footer-switch:hover {
       transform:translateY(-1px);
-      border-color:var(--accent) !important;
-      background:color-mix(in srgb,var(--accent) 7%,var(--surface)) !important;
+      border-color:color-mix(in srgb,#184888 55%,#d7e0eb) !important;
+      background:linear-gradient(110deg,color-mix(in srgb,#184888 88%,#071c3c),#184888 58%,color-mix(in srgb,#184888 75%,#091f49)) !important;
+      box-shadow:0 12px 32px rgba(17,65,130,.18) !important;
+      filter:brightness(1.04);
+    }
+    #sidebar.sidebar .luria-mode-footer-switch .user-copy strong,
+    #sidebar.sidebar .luria-mode-footer-switch .user-copy small {
+      color:#fff !important;
     }
     #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon {
-      color:var(--accent) !important;
-      background:var(--accent-soft) !important;
+      color:#fff !important;
+      background:rgba(255,255,255,.14) !important;
+    }
+    :root[data-theme="leila-mood"] #sidebar.sidebar .luria-mode-footer-switch,
+    body.theme-leila-mood #sidebar.sidebar .luria-mode-footer-switch {
+      border-color:color-mix(in srgb,var(--accent) 35%,var(--border)) !important;
+      background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#321328),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#35152d)) !important;
+      box-shadow:0 10px 30px color-mix(in srgb,var(--accent) 18%,transparent) !important;
+    }
+    :root[data-theme="leila-mood"] #sidebar.sidebar .luria-mode-footer-switch:hover,
+    body.theme-leila-mood #sidebar.sidebar .luria-mode-footer-switch:hover {
+      border-color:color-mix(in srgb,var(--accent) 55%,var(--border)) !important;
+      background:linear-gradient(110deg,color-mix(in srgb,var(--accent) 88%,#321328),var(--accent) 58%,color-mix(in srgb,var(--accent) 75%,#35152d)) !important;
+      box-shadow:0 12px 32px color-mix(in srgb,var(--accent) 24%,transparent) !important;
     }
     #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon svg {
       width:20px;
