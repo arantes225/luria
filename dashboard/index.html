@@ -51,6 +51,16 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
           </div>
         </header>
 
+        <div id="dashboard-fallback-shell" hidden>
+          <section class="luria-dashboard-spotlight">
+            <div class="luria-page-spotlight-copy">
+              <span class="luria-page-spotlight-label">Visão geral</span>
+              <strong>Dashboard</strong>
+              <small class="luria-page-spotlight-helper">Seu dia de estudos em um só lugar.</small>
+            </div>
+          </section>
+        </div>
+
               </div>
     </main>
   </div>
@@ -61,6 +71,26 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
   <script src="assets/js/study-mode.js?v=12.1"></script>
   <script src="assets/js/dashboard.js?v=31-today-sync"></script>
   <script src="assets/js/dashboard-layouts.js?v=72-no-old-overview"></script>
+  <script>
+  (function(){
+    var fallback=document.getElementById("dashboard-fallback-shell");
+    var timer=setTimeout(function(){
+      var root=document.getElementById("dashboard-alternative");
+      if((!root||!root.innerHTML.trim())&&fallback) fallback.hidden=false;
+    },2500);
+    window.addEventListener("error",function(event){
+      if(fallback&&String(event.filename||"").includes("dashboard")) fallback.hidden=false;
+    });
+    window.addEventListener("unhandledrejection",function(){
+      var root=document.getElementById("dashboard-alternative");
+      if((!root||!root.innerHTML.trim())&&fallback) fallback.hidden=false;
+    });
+    window.addEventListener("luria:dashboard-data",function(){
+      clearTimeout(timer);
+      if(fallback) fallback.hidden=true;
+    });
+  })();
+  </script>
   <script defer src="assets/js/pwa.js?v=4-doubletap-lock"></script>
 </body>
 </html>
