@@ -3666,6 +3666,70 @@
   }
 
   </style>
+<style id="cronograma-switches-match-erros-v39">
+body[data-page="cronograma"] .planner-view-toggle,
+body[data-page="cronograma"] .agenda-activity-view-switch,
+body[data-page="cronograma"] .agenda-insight-tabs{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:var(--luria-switch-shell-height,50px)!important;
+  height:var(--luria-switch-shell-height,50px)!important;
+  padding:var(--luria-switch-shell-padding,4px)!important;
+  gap:var(--luria-switch-shell-gap,4px)!important;
+  border:1px solid var(--border)!important;
+  border-radius:var(--luria-switch-shell-radius,10px)!important;
+  background:var(--surface)!important;
+  box-sizing:border-box!important;
+  box-shadow:none!important;
+}
+body[data-page="cronograma"] .agenda-insight-tabs{
+  width:100%!important;
+  margin-bottom:10px!important;
+}
+body[data-page="cronograma"] .planner-view-toggle button,
+body[data-page="cronograma"] .agenda-activity-view-switch button,
+body[data-page="cronograma"] .agenda-insight-tabs button{
+  flex:1 1 0!important;
+  min-width:0!important;
+  min-height:var(--luria-switch-height,40px)!important;
+  height:var(--luria-switch-height,40px)!important;
+  padding:0 var(--luria-switch-pad-x,17px)!important;
+  border:0!important;
+  border-radius:var(--luria-switch-radius,7px)!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font-size:var(--luria-switch-font-size,16px)!important;
+  font-weight:var(--luria-switch-font-weight,400)!important;
+  line-height:1!important;
+  cursor:pointer!important;
+  box-shadow:none!important;
+  transition:background .16s ease,color .16s ease,box-shadow .16s ease!important;
+}
+body[data-page="cronograma"] .planner-view-toggle button.active,
+body[data-page="cronograma"] .planner-view-toggle button[aria-pressed="true"],
+body[data-page="cronograma"] .agenda-activity-view-switch button.active,
+body[data-page="cronograma"] .agenda-insight-tabs button.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+  font-weight:500!important;
+  box-shadow:none!important;
+}
+body[data-page="cronograma"] .planner-view-toggle button:hover:not(.active):not([aria-pressed="true"]),
+body[data-page="cronograma"] .agenda-activity-view-switch button:hover:not(.active),
+body[data-page="cronograma"] .agenda-insight-tabs button:hover:not(.active){
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+}
+@media(max-width:700px){
+  body[data-page="cronograma"] .planner-view-toggle,
+  body[data-page="cronograma"] .agenda-activity-view-switch,
+  body[data-page="cronograma"] .agenda-insight-tabs{
+    min-height:var(--luria-switch-shell-height,50px)!important;
+    height:var(--luria-switch-shell-height,50px)!important;
+  }
+}
+</style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20260930-layout-pcr">
