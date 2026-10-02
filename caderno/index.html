@@ -26,6 +26,100 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
 <style id="luria-page-font-lock-v56">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}html body :where(code,pre,kbd,samp),html body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}</style>  <script src="/assets/js/medical-icons.js?v=2.0"></script>
+<style id="note-right-outline-v1">
+body[data-page="caderno"] .note-info{
+  padding:15px 11px!important;
+  display:block!important;
+}
+body[data-page="caderno"] .note-info>.note-side-card:not(.note-right-outline-card){
+  display:none!important;
+}
+body[data-page="caderno"] .note-right-outline-card{
+  display:block!important;
+  position:sticky!important;
+  top:76px!important;
+  padding:13px 12px!important;
+  border:1px solid var(--border)!important;
+  border-radius:11px!important;
+  background:var(--surface)!important;
+  box-shadow:none!important;
+  max-height:calc(100vh - 96px)!important;
+  overflow:auto!important;
+}
+body[data-page="caderno"] .note-right-outline-card .note-side-title{
+  margin-bottom:5px!important;
+}
+body[data-page="caderno"] .note-right-outline-card .note-side-title h3{
+  margin:0!important;
+  font-size:10.5px!important;
+  font-weight:800!important;
+}
+body[data-page="caderno"] #notebook-right-outline-count{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-width:24px!important;
+  height:20px!important;
+  padding:0 6px!important;
+  border-radius:999px!important;
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+  font-size:7px!important;
+  font-weight:800!important;
+}
+body[data-page="caderno"] .note-right-outline-help{
+  margin:0 0 9px!important;
+  padding-bottom:9px!important;
+  border-bottom:1px solid var(--border)!important;
+  color:var(--muted)!important;
+  font-size:7.5px!important;
+  line-height:1.4!important;
+}
+body[data-page="caderno"] .note-right-outline-list{
+  display:grid!important;
+  gap:2px!important;
+}
+body[data-page="caderno"] .note-right-outline-item{
+  width:100%!important;
+  min-height:30px!important;
+  padding:6px 8px!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:transparent!important;
+  color:var(--text)!important;
+  text-align:left!important;
+  cursor:pointer!important;
+  overflow:hidden!important;
+}
+body[data-page="caderno"] .note-right-outline-item:hover{
+  background:var(--surface-2)!important;
+  color:var(--accent)!important;
+}
+body[data-page="caderno"] .note-right-outline-item span{
+  display:block!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  line-height:1.3!important;
+}
+body[data-page="caderno"] .note-right-outline-item.level-h1{
+  font-size:9px!important;
+  font-weight:850!important;
+}
+body[data-page="caderno"] .note-right-outline-item.level-h2{
+  padding-left:18px!important;
+  font-size:8.4px!important;
+  font-weight:700!important;
+}
+body[data-page="caderno"] .note-right-outline-item.level-h3{
+  padding-left:31px!important;
+  font-size:7.8px!important;
+  color:var(--muted)!important;
+}
+@media(max-width:1050px){
+  body[data-page="caderno"] .note-info{display:none!important}
+}
+</style>
 </head>
 
 <body data-page="caderno">
@@ -85,6 +179,13 @@
  </div>
 </main>
 <aside class="note-info">
+<section class="note-side-card note-right-outline-card">
+  <div class="note-side-title"><h3>Estrutura do texto</h3><span id="notebook-right-outline-count">0</span></div>
+  <p class="note-right-outline-help">Títulos e subtítulos desta anotação.</p>
+  <nav id="notebook-right-outline-list" class="note-right-outline-list" aria-label="Estrutura do texto">
+    <div class="notebook-empty-small">Adicione títulos ao texto para criar a estrutura.</div>
+  </nav>
+</section>
 <section class="note-side-card note-actions-card"><div class="note-side-title"><h3>ϟ Ações rápidas</h3></div><button id="notebook-inspector-move" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h6l2 2h10v12H3z"/><path d="M7 13h9m-3-3 3 3-3 3"/></svg><span>Mover anotação</span></button><button id="notebook-inspector-open-theme" type="button"><svg viewBox="0 0 24 24"><path d="M4 6h6l2 2h8v10H4z"/><path d="m14 12 2 2-2 2M16 14h-5"/></svg><span>Abrir outro tema</span></button><button id="notebook-inspector-flashcards" type="button"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg><span>Transformar em flashcards</span></button><button id="notebook-inspector-share" type="button"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="2"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="19" r="2"/><path d="m8 11 8-5M8 13l8 5"/></svg><span>Compartilhar</span></button><button id="notebook-inspector-delete" class="danger" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M7 7l1 13h8l1-13M10 11v5M14 11v5"/></svg><span>Excluir anotação</span></button></section>
 <section class="note-side-card note-tasks-card"><div class="note-side-title"><h3>☑ Tarefas do estudo</h3><button id="notebook-task-add" type="button">＋</button></div><div id="notebook-study-tasks" class="note-study-tasks"></div><button class="note-add-row" id="notebook-task-add-row" type="button">＋ Adicionar tarefa</button></section>
 <section class="note-side-card note-links-card"><div class="note-side-title"><h3>↗ Links e referências</h3><button id="notebook-reference-add" type="button">Adicionar</button></div><div id="notebook-reference-list" class="note-reference-list"><div class="note-reference-empty">Nenhuma referência adicionada</div></div></section>
@@ -518,5 +619,37 @@
   <script src="assets/js/caderno.js?v=20261001-more-menu-fix"></script>
     <script src="assets/js/image-lightbox.js?v=1"></script>
 <script defer src="assets/js/pwa.js?v=3"></script>
+<script id="note-right-outline-js-v1">
+(() => {
+  const editor=document.getElementById("notebook-editor");
+  const list=document.getElementById("notebook-right-outline-list");
+  const count=document.getElementById("notebook-right-outline-count");
+  if(!editor||!list)return;
+  const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+  function render(){
+    const heads=[...editor.querySelectorAll("h1,h2,h3")].filter(h=>h.textContent.trim());
+    if(count)count.textContent=String(heads.length);
+    list.innerHTML=heads.length
+      ? heads.map((h,i)=>'<button type="button" class="note-right-outline-item level-'+h.tagName.toLowerCase()+'" data-right-outline-index="'+i+'"><span>'+esc(h.textContent.trim())+'</span></button>').join("")
+      : '<div class="notebook-empty-small">Adicione títulos ao texto para criar a estrutura.</div>';
+  }
+  list.addEventListener("click",e=>{
+    const b=e.target.closest("[data-right-outline-index]");
+    if(!b)return;
+    const heads=[...editor.querySelectorAll("h1,h2,h3")].filter(h=>h.textContent.trim());
+    const h=heads[Number(b.dataset.rightOutlineIndex)];
+    if(!h)return;
+    h.scrollIntoView({behavior:"smooth",block:"center"});
+    if(editor.contentEditable==="true"){
+      const range=document.createRange();range.selectNodeContents(h);range.collapse(false);
+      const sel=getSelection();sel.removeAllRanges();sel.addRange(range);
+    }
+  });
+  new MutationObserver(render).observe(editor,{subtree:true,childList:true,characterData:true});
+  editor.addEventListener("input",render);
+  render();
+  window.renderNotebookRightOutline=render;
+})();
+</script>
 </body>
 </html>
