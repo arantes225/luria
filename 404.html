@@ -13,6 +13,11 @@
     (function(){
       try{
         var path=decodeURIComponent(location.pathname.replace(/^\/+|\/+$/g,""));
+        var appRoutes=new Set(["dashboard","flashcards","questoes-simulados","caderno","caderno-erros","cronograma","desafio-diario","estatisticas","editais","amigos","plantao","sessao-estudo","mini-osce","login","configuracoes","trabalho"]);
+        if(appRoutes.has(path)){
+          location.replace("/"+path+"/");
+          return;
+        }
         if(/^[a-zA-Z0-9][a-zA-Z0-9._-]{2,29}$/.test(path)){
           location.replace("/trabalho/prontuario/#u="+encodeURIComponent(path.toLowerCase()));
           return;
