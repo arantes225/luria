@@ -15,16 +15,23 @@
   <meta name="apple-mobile-web-app-title" content="LURIA">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="assets/css/style.css?v=16.12-no-legacy-dashboard">
   
-  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=9">
-  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=73-no-duplicate-heading">
+  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=59-content-aligned">
+  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=69-dashboard1-bottom-align">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/dashboard/">
   <script>(function(){try{if(location.pathname.endsWith("/dashboard.html"))history.replaceState(null,"","/dashboard/"+location.search+location.hash);}catch(e){}})();</script>
-<style id="luria-page-font-lock-v56">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}html body :where(code,pre,kbd,samp),html body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}</style>  <script src="/assets/js/medical-icons.js?v=2.0"></script>
+  <style>
+    /* Impede o cabeçalho legado de aparecer durante hard refresh antes do JS. */
+    /* O Dashboard atual não usa o título legado da topbar. Esconde desde o primeiro paint,
+       inclusive depois que scripts alterarem classes do body durante o boot. */
+    body[data-page="dashboard"] .topbar .page-heading{display:none!important;visibility:hidden!important}
+    body[data-page="dashboard"] .topbar .page-heading [data-page-eyebrow],
+    body[data-page="dashboard"] .topbar .page-heading [data-page-title]{display:none!important}
+  </style>
 </head>
-<body data-page="dashboard">
+<body data-page="dashboard" class="dashboard-preboot">
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -46,10 +53,10 @@
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="assets/js/supabase.js?v=auth4"></script>
-  <script src="assets/js/app.js?v=17.45-dashboard-title-box"></script>
+  <script src="assets/js/app.js?v=20261002-intelligence-3"></script>
   <script src="assets/js/study-mode.js?v=12.1"></script>
-  <script src="assets/js/dashboard.js?v=31-today-sync"></script>
-  <script src="assets/js/dashboard-layouts.js?v=73-no-duplicate-heading"></script>
-  <script defer src="assets/js/pwa.js?v=4-doubletap-lock"></script>
+  <script src="assets/js/dashboard.js?v=30-cronograma-sync"></script>
+  <script src="assets/js/dashboard-layouts.js?v=40-dashboard1-height-sync"></script>
+  <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
