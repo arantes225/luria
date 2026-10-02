@@ -34,15 +34,7 @@ function installSearch(){
  const bar=topbar();if(!bar||d.getElementById("luria-global-search"))return;
  const b=d.createElement("button");b.id="luria-global-search";b.className="luria-command-trigger";b.type="button";b.innerHTML='⌕ <span>Buscar</span>';b.setAttribute("aria-label","Busca global");
  const menu=bar.querySelector("#menu-open,.menu-open");
- if(document.body?.dataset?.page==="dashboard"){
-   document.body.appendChild(b);
- }else if(menu?.nextSibling){
-   bar.insertBefore(b,menu.nextSibling);
- }else if(menu){
-   bar.appendChild(b);
- }else{
-   bar.prepend(b);
- }
+ document.body.appendChild(b);
  const open=()=>{const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');const input=$("#luria-search-input",o),list=$("#luria-search-list",o);
  const render=()=>{const raw=input.value.trim(),expanded=expandSearch(raw).map(normSearch),tokens=expanded.flatMap(x=>x.split(/\s+/)).filter(Boolean);const queryNorm=normSearch(raw);const matches=routes.filter(r=>{if(!queryNorm)return true;const hay=localSearchText(r);if(hay.includes(queryNorm)||initialsSearch(r[0])===queryNorm)return true;return expanded.some(x=>x&&hay.includes(x))}).slice(0,14);list.innerHTML=matches.length?matches.map(r=>'<a class="luria-search-item" href="'+r[2]+'"><span><strong>'+esc(r[0])+'</strong><small>'+esc(r[1])+'</small></span><span class="luria-search-kind">'+esc(r[3])+'</span></a>').join(""):'<div class="luria-search-item"><span><strong>Nenhum atalho encontrado</strong><small>Tente outro termo. A busca clínica será ampliada conforme os bancos forem indexados.</small></span></div>';};input.oninput=render;render();setTimeout(()=>input.focus(),40)};
  b.onclick=open;d.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();open()}});
@@ -168,30 +160,54 @@ if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else bo
 
 
 ;(()=> {
-  function syncDashboardSearchToTimer(){
-    if(document.body?.dataset?.page!=="dashboard")return;
+  function syncGlobalSearchPosition(){
     const search=document.getElementById("luria-global-search");
-    const timer=document.querySelector("#luria-pomodoro-toggle,.luria-pomodoro-toggle,.dl-timer");
-    const titleCard=document.querySelector("#dashboard-alternative > .dl-dashboard-title-card,#dashboard-alternative > .luria-dashboard-spotlight");
-    const main=document.querySelector("main.main,.main");
-    if(!search||!timer||!main)return;
-    const tr=timer.getBoundingClientRect(),mr=main.getBoundingClientRect();
-    const titleRect=titleCard?.getBoundingClientRect?.();
-    const fallbackLeft=mr.left+(window.innerWidth<=700?14:28);
-    const searchLeft=titleRect?.width?titleRect.left:fallbackLeft;
+    const bar=document.querySelector(".topbar");
+    if(!search||!bar)return;
+
+    const br=bar.getBoundingClientRect();
+    const notifications=bar.querySelector(".luria-notifications");
+    const heading=bar.querySelector(".page-heading");
+    const menu=bar.querySelector("#menu-open,.menu-open");
+    const nr=notifications?.getBoundingClientRect?.();
+    const hr=heading?.getBoundingClientRect?.();
+    const mr=menu?.getBoundingClientRect?.();
+
     search.style.setProperty("position","fixed","important");
-    search.style.setProperty("top",Math.round(tr.top)+"px","important");
-    search.style.setProperty("left",Math.round(searchLeft)+"px","important");
     search.style.setProperty("right","auto","important");
     search.style.setProperty("margin","0","important");
-    search.style.setProperty("height",Math.round(tr.height)+"px","important");
-    search.style.setProperty("min-height",Math.round(tr.height)+"px","important");
-    search.style.setProperty("align-items","center","important");
     search.style.setProperty("z-index","246","important");
     search.style.setProperty("transform","none","important");
+
+    let targetHeight=38;
+    const timer=bar.querySelector("#luria-pomodoro-toggle,.luria-pomodoro-toggle,.dl-timer");
+    const tr=timer?.getBoundingClientRect?.();
+    if(tr?.height) targetHeight=Math.round(tr.height);
+    search.style.setProperty("height",targetHeight+"px","important");
+    search.style.setProperty("min-height",targetHeight+"px","important");
+    search.style.setProperty("align-items","center","important");
+    search.style.setProperty("top",Math.round(br.top+(br.height-targetHeight)/2)+"px","important");
+
+    let left=br.left+12;
+    if(document.body?.dataset?.page==="dashboard"){
+      const titleCard=document.querySelector("#dashboard-alternative > .dl-dashboard-title-card,#dashboard-alternative > .luria-dashboard-spotlight");
+      const main=document.querySelector("main.main,.main");
+      const titleRect=titleCard?.getBoundingClientRect?.();
+      const mainRect=main?.getBoundingClientRect?.();
+      left=titleRect?.width?titleRect.left:(mainRect?mainRect.left+(window.innerWidth<=700?14:28):left);
+    }else if(mr?.width && getComputedStyle(menu).display!=="none"){
+      left=mr.right+10;
+    }else if(hr?.width){
+      left=hr.right+12;
+    }
+
+    const width=search.getBoundingClientRect().width||76;
+    if(nr?.left && left+width>nr.left-10) left=Math.max(br.left+10,nr.left-width-10);
+    search.style.setProperty("left",Math.round(left)+"px","important");
   }
-  const run=()=>requestAnimationFrame(()=>requestAnimationFrame(syncDashboardSearchToTimer));
+
+  const run=()=>requestAnimationFrame(()=>requestAnimationFrame(syncGlobalSearchPosition));
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run);else run();
   window.addEventListener("resize",run,{passive:true});
-  new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["data-theme","class"]});
+  new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["data-theme","class","data-dashboard-layout"]});
 })();
