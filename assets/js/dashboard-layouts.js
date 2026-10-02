@@ -216,7 +216,9 @@
       <div class="dl-study-time-options" role="group" aria-label="Tempo disponível">
         <button type="button" data-luria-study-time="15">15 min</button>
         <button type="button" data-luria-study-time="30" class="active">30 min</button>
-        <button type="button" data-luria-study-time="60">1 h</button>
+        <button type="button" data-luria-study-time="60">1 hora</button>
+        <button type="button" data-luria-study-time="90">1h30</button>
+        <button type="button" data-luria-study-time="120">2 horas</button>
         <button type="button" data-luria-study-time="999">Completar o dia</button>
       </div>
       <button type="button" class="dl-primary dl-study-now-start" data-luria-study-start>Estudar agora</button>
@@ -240,7 +242,7 @@
   function layout3(data) {
     const todayISO = dayISO(new Date());
     const todayItems = items().filter((item) => item.activity_date === todayISO);
-    return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-progress dl-overview">${heading(icon("calendar"), "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section>${streak(data)}${cat(data)}<section class="dl-card dl-upcoming">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}${activityList(todayItems, 4, false)}</section><section class="dl-card dl-performance">${heading(icon("chart"), "Meu desempenho", "/estatisticas/")}<div class="dl-performance-grid"><a href="/cronograma/"><span>${icon("book")}</span><small>Aulas</small><strong>${data.done}</strong></a><a href="/questoes-simulados/"><span>${icon("simulation")}</span><small>Simulados</small><strong>${escape(data.simulations)}</strong></a><a href="/flashcards/"><span>${icon("cards")}</span><small>Flashcards</small><strong>${data.flashcards}</strong></a><a href="/estatisticas/"><span>${icon("refresh")}</span><small>Retenção</small><strong>${escape(data.retention)}</strong></a></div>${areas(data)}</section></div>`;
+    return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-progress dl-overview">${heading(icon("calendar"), "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section>${streak(data)}${cat(data)}<section class="dl-card dl-upcoming">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}${activityList(todayItems, 4, false)}${studyNowPanel(true)}</section><section class="dl-card dl-performance">${heading(icon("chart"), "Meu desempenho", "/estatisticas/")}<div class="dl-performance-grid"><a href="/cronograma/"><span>${icon("book")}</span><small>Aulas</small><strong>${data.done}</strong></a><a href="/questoes-simulados/"><span>${icon("simulation")}</span><small>Simulados</small><strong>${escape(data.simulations)}</strong></a><a href="/flashcards/"><span>${icon("cards")}</span><small>Flashcards</small><strong>${data.flashcards}</strong></a><a href="/estatisticas/"><span>${icon("refresh")}</span><small>Retenção</small><strong>${escape(data.retention)}</strong></a></div>${areas(data)}</section></div>`;
   }
 
   async function loadDailyChallengeAccuracy() {
@@ -355,6 +357,7 @@
               }).join("") : `<div class="dl5-next-empty"><strong>Nenhuma atividade para hoje</strong><span>Confira ou ajuste seu cronograma.</span></div>`}
             </div>
             <a class="dl5-start" href="${escape(nextHref)}">▶ &nbsp; ${next ? "Iniciar atividade" : "Abrir cronograma"}</a>
+            ${studyNowPanel(true)}
           </section>
 
           <section class="dl5-card dl5-streak">
@@ -396,32 +399,7 @@
       </div>`;
   }
 
-  function syncDashboard1StudyPairHeight(){
-    if(current!=="1") return;
-    const pair=root.querySelector(".dl-agenda-study-pair-1");
-    const side=root.querySelector(".dl-layout-1 > .dl-side");
-    if(!pair||!side) return;
-    const apply=()=>{
-      const h=Math.round(side.getBoundingClientRect().height);
-      if(h>0){
-        pair.style.setProperty("height",h+"px","important");
-        pair.style.setProperty("min-height",h+"px","important");
-        pair.style.setProperty("max-height",h+"px","important");
-        pair.querySelectorAll(":scope > .dl-card").forEach(card=>{
-          card.style.setProperty("height",h+"px","important");
-          card.style.setProperty("min-height",h+"px","important");
-          card.style.setProperty("max-height",h+"px","important");
-        });
-      }
-    };
-    apply();
-    requestAnimationFrame(apply);
-    if(window.ResizeObserver){
-      if(window.__luriaDashboard1HeightObserver) window.__luriaDashboard1HeightObserver.disconnect();
-      window.__luriaDashboard1HeightObserver=new ResizeObserver(apply);
-      window.__luriaDashboard1HeightObserver.observe(side);
-    }
-  }
+
 
   function render() {
     frame = 0;
@@ -441,7 +419,7 @@
       syncDashboardHeading();
       root.hidden = false;
       root.dataset.rendered = "true";
-      syncDashboard1StudyPairHeight();
+
     } catch (error) {
       console.error("Falha ao renderizar layout do Dashboard:", error);
       root.hidden = false;

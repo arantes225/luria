@@ -113,6 +113,28 @@ body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-col b{
   }
 }
 
+
+/* Match the dashboard duration controls, including narrow PWA screens. */
+.luria-session-times{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+}
+.luria-session-times button{
+  min-height:48px;
+  padding:10px 8px;
+  font-size:14px;
+  line-height:1.25;
+  white-space:normal;
+}
+.luria-session-times button:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+@media(max-width:480px){
+  .luria-session-times{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
 @media(min-width:981px){
   .topbar .luria-notifications > #luria-global-search.luria-command-trigger-topbar{
     width:150px!important;

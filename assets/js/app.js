@@ -7654,7 +7654,7 @@ iniciarApp();
 (function loadLuriaCommandCenter(){
   if (document.querySelector('script[data-luria-command-center]')) return;
   const script = document.createElement('script');
-  script.src = '/assets/js/luria-command-center.js?v=20261002-12-smart-session-routing';
+  script.src = '/assets/js/luria-command-center.js?v=20261002-study-durations';
   script.defer = true;
   script.dataset.luriaCommandCenter = '1';
   document.head.appendChild(script);

@@ -4946,3 +4946,85 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-split{
     margin:0!important;
   }
 }
+
+
+/* Six comfortable duration choices shared by all five dashboards. */
+#dashboard-alternative .dl-study-time-options{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:8px!important;
+}
+#dashboard-alternative .dl-study-time-options button{
+  min-height:48px!important;
+  height:auto!important;
+  padding:10px 8px!important;
+  font-family:inherit;
+  font-size:14px!important;
+  font-weight:700;
+  line-height:1.25!important;
+  white-space:normal;
+}
+#dashboard-alternative .dl-study-time-options button:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+}
+#dashboard-alternative .dl-study-now{
+  flex-shrink:0;
+}
+#dashboard-alternative .dl-agenda-study-pair,
+#dashboard-alternative .dl-agenda-study-pair>.dl-card,
+#dashboard-alternative .dl-layout-1>.dl-side{
+  height:auto!important;
+  max-height:none!important;
+  min-height:0!important;
+}
+#dashboard-alternative .dl-study-now-card{
+  min-height:340px!important;
+  max-height:none!important;
+  height:auto!important;
+  overflow:visible!important;
+}
+#dashboard-alternative .dl-layout-3 .dl-upcoming>.dl-study-now,
+#dashboard-alternative .dl5-next>.dl-study-now{
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid var(--border);
+}
+#dashboard-alternative .dl5-next>.dl-study-now{
+  margin:16px;
+}
+html body[data-page="dashboard"][data-dashboard-layout="2"] .main,
+html body[data-page="dashboard"][data-dashboard-layout="5"] .main{
+  overflow-y:auto!important;
+}
+body[data-dashboard-layout="2"] #dashboard-alternative,
+body[data-dashboard-layout="5"] #dashboard-alternative,
+#dashboard-alternative .dl-layout-2,
+#dashboard-alternative .dl5-shell,
+#dashboard-alternative .dl5-mid,
+#dashboard-alternative .dl5-next{
+  height:auto!important;
+  max-height:none!important;
+  grid-template-rows:auto!important;
+}
+#dashboard-alternative .dl-layout-2{
+  grid-template-rows:minmax(340px,auto) auto auto!important;
+}
+
+/* Allow enlarged controls to remain reachable on short screens. */
+html body[data-page="dashboard"][data-dashboard-layout] .main{
+  overflow-y:auto!important;
+}
+html body[data-page="dashboard"][data-dashboard-layout] .page,
+html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+  height:auto!important;
+  max-height:none!important;
+  overflow:visible!important;
+}
+#dashboard-alternative .dl-layout-1{
+  grid-template-rows:minmax(340px,auto) auto!important;
+}
+@media(max-width:980px){
+  #dashboard-alternative .dl-layout-1{
+    grid-template-rows:auto!important;
+  }
+}
