@@ -226,29 +226,25 @@ if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else bo
     search.style.setProperty("height",targetHeight+"px","important");
     search.style.setProperty("min-height",targetHeight+"px","important");
     search.style.setProperty("align-items","center","important");
-    search.style.setProperty("top",Math.round(br.top+(br.height-targetHeight)/2)+"px","important");
 
+    const width=search.getBoundingClientRect().width||76;
     let left=br.left+12;
-    if(document.body?.dataset?.page==="dashboard"){
-      const titleCard=document.querySelector("#dashboard-alternative > .dl-dashboard-title-card,#dashboard-alternative > .luria-dashboard-spotlight");
-      const main=document.querySelector("main.main,.main");
-      const titleRect=titleCard?.getBoundingClientRect?.();
-      const mainRect=main?.getBoundingClientRect?.();
-      left=titleRect?.width?titleRect.left:(mainRect?mainRect.left+(window.innerWidth<=700?14:28):left);
-    }else if(document.body?.dataset?.page==="sessao_estudo"){
-      if(mr?.width && getComputedStyle(menu).display!=="none"){
-        left=mr.right+10;
-      }else{
-        left=br.left+12;
-      }
+    let top=Math.round(br.top+(br.height-targetHeight)/2);
+
+    /* O Buscar acompanha o Timer: mesma linha e posição fixa imediatamente à esquerda. */
+    if(tr?.width && tr?.height){
+      left=Math.round(tr.left-width-10);
+      top=Math.round(tr.top+(tr.height-targetHeight)/2);
     }else if(mr?.width && getComputedStyle(menu).display!=="none"){
       left=mr.right+10;
     }else if(hr?.width){
       left=hr.right+12;
     }
 
-    const width=search.getBoundingClientRect().width||76;
     if(nr?.left && left+width>nr.left-10) left=Math.max(br.left+10,nr.left-width-10);
+    left=Math.max(8,left);
+
+    search.style.setProperty("top",top+"px","important");
     search.style.setProperty("left",Math.round(left)+"px","important");
   }
 
