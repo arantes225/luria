@@ -742,7 +742,10 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
               <div class="flash-home-decks-head"><div><span>Meus decks</span><h2>Continue de onde parou</h2></div></div>
               <div id="flash-home-decks-list"><div class="flash-empty">Carregando seus decks...</div></div>
             </article>
-            <aside class="flash-home-summary"><h2>Métricas rápidas</h2><div id="flash-home-metrics-slot"></div></aside>
+            <aside class="flash-home-summary qs-home-week qs-home-week-compact error-side-card error-quick-metrics" aria-label="Métricas rápidas">
+              <div class="error-side-head"><div><span>▥</span><h3>Métricas rápidas</h3></div></div>
+              <div id="flash-home-metrics-slot" class="error-quick-metrics-body"></div>
+            </aside>
             <div class="flash-home-actions">
               <button class="flash-home-action" type="button" data-flash-home-tab="create"><i>＋</i><span><strong>Criar flashcard</strong><small>Adicione um novo card.</small></span><b>→</b></button>
               <button class="flash-home-action" type="button" data-flash-home-tab="import"><i>⇧</i><span><strong>Importar</strong><small>Traga seus flashcards.</small></span><b>→</b></button>
@@ -1600,7 +1603,7 @@ document.addEventListener("DOMContentLoaded",function(){
 document.addEventListener("DOMContentLoaded",()=>{
  const metrics=document.querySelector(".flash-quick-metrics");
  const slot=document.getElementById("flash-home-metrics-slot");
- if(metrics&&slot){const kids=[...metrics.children].filter(x=>!x.classList.contains("flash-quick-metrics-title")&&!x.classList.contains("error-side-head"));kids.forEach(x=>slot.appendChild(x))}
+ if(metrics&&slot){const source=metrics.querySelector(".error-quick-metrics-body");const kids=source?[...source.children]:[];kids.forEach(x=>slot.appendChild(x))}
  // Home decks are rendered with their own handlers by flashcards-v21.js.
  document.querySelectorAll("[data-flash-home-tab]").forEach(b=>b.addEventListener("click",()=>{const tab=b.dataset.flashHomeTab;document.querySelector('[data-flash-tab="'+tab+'"]')?.click()}));
 });
@@ -1935,6 +1938,44 @@ body[data-page="flashcards"] .error-metric-areas{display:none!important}
   body[data-page="questoes"] .error-quick-metrics-body,
   body[data-page="flashcards"] .error-quick-metrics-body,
   body[data-page="erros"] .error-quick-metrics-body{
+    grid-template-rows:auto!important;
+  }
+}
+</style>
+
+<style id="metrics-home-structure-lock-v69">
+body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics,
+body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics{
+  width:100%!important;
+  height:272px!important;
+  min-height:272px!important;
+  max-height:272px!important;
+  box-sizing:border-box!important;
+  padding:8px 16px!important;
+  margin:0!important;
+  border:1px solid var(--border)!important;
+  border-radius:15px!important;
+  background:var(--surface)!important;
+  box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;
+  overflow:hidden!important;
+}
+body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics .error-quick-metrics-body,
+body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics .error-quick-metrics-body{
+  display:grid!important;
+  grid-template-rows:72px 82px 50px!important;
+  gap:6px!important;
+  margin:0!important;
+  padding:0!important;
+}
+body[data-page="flashcards"] .flash-home-summary>h2,
+body[data-page="flashcards"] .flash-home-summary>span{display:none!important}
+@media(max-width:980px){
+  body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics,
+  body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics{
+    height:auto!important;min-height:0!important;max-height:none!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics .error-quick-metrics-body,
+  body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics .error-quick-metrics-body{
     grid-template-rows:auto!important;
   }
 }
