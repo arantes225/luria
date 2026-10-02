@@ -23,14 +23,14 @@ const C=[
 ['Renal','CRCL','Clearance de creatinina (Cockcroft–Gault)','Estimativa de depuração em mL/min','crcl'],
 ['Renal','FEN','Fração de excreção de sódio (FENa)','Avaliação tubular renal','fena'],
 ['Renal','FEU','Fração de excreção de ureia (FEUreia)','Avaliação tubular renal','feurea'],
-['Renal','CCY','TFG creatinina + cistatina C','CKD-EPI 2021 combinada','egfrcys'],
-['Cardiovascular','PAM','Pressão Arterial Média','Perfusão arterial','pam'],
+['Renal','CCY','TFG estimada por creatinina + cistatina C','CKD-EPI 2021 combinada','egfrcys'],
+['Cardiovascular','PAM','Pressão arterial média','Estimativa da pressão média de perfusão','pam'],
 ['Cardiovascular','IC','Índice de Choque','Frequência cardíaca / PAS','shock'],
-['Cardiovascular','QTC','QT Corrigido','Bazett, Fridericia, Framingham e Hodges','qtc'],
+['Cardiovascular','QTC','QT corrigido (QTc)','Correção do QT pela frequência cardíaca','qtc'],
 ['Cardiovascular','PP','Pressão de Pulso','PAS − PAD','pp'],
 ['Metabólico','AG','Ânion Gap','Avaliação ácido-base','ag'],
 ['Metabólico','WIN','Fórmula de Winter','PaCO₂ esperada na acidose metabólica','winter'],
-['Metabólico','H2O','Déficit de Água Livre','Estimativa na hipernatremia','freewater'],
+['Metabólico','H2O','Déficit de água livre','Estimativa do déficit de água na hipernatremia','freewater'],
 ['Metabólico','KCL','Reposição de potássio (KCl)','Preparo em mL e velocidade em mEq/h','kclprep'],
 ['Metabólico','NAΔ','Adrogué–Madias','Variação estimada do sódio por 1 L de solução','adrogue'],
 ['Metabólico','NAD','Déficit de sódio','Estimativa de mEq para atingir sódio-alvo','nadeficit'],
@@ -39,34 +39,34 @@ const C=[
 ['Metabólico','NA','Sódio corrigido','Correção na hiperglicemia','nac'],
 ['Metabólico','OSM','Osmolaridade calculada','Osmolaridade plasmática','osm'],
 ['Metabólico','OG','Gap Osmolar','Osmolalidade medida − calculada','ogap'],
-['Metabólico','DR','Delta Ratio','Análise de acidose metabólica','delta'],
+['Metabólico','DR','Delta ratio','Avaliação de distúrbios mistos na acidose metabólica','delta'],
 ['Metabólico','CA','Cálcio corrigido','Correção pela albumina','calcio'],
 ['Metabólico','EAG','HbA1c → Glicemia média','Glicemia média estimada (eAG)','eag'],
 ['Metabólico','LDL','LDL calculado (Friedewald)','Colesterol LDL estimado','ldl'],
 ['Antropometria','IMC','IMC','Relação entre peso e altura','imc'],
 ['Antropometria','SC','Superfície Corporal','Fórmula de Mosteller','bsa'],
-['Antropometria','PI','Peso Ideal','Fórmula de Devine','ibw'],
-['Antropometria','PAJ','Peso Ajustado','Para cálculos dependentes de peso','abw'],
+['Antropometria','PI','Peso ideal','Estimativa do peso ideal pela fórmula de Devine','ibw'],
+['Antropometria','PAJ','Peso ajustado','Estimativa de peso para cálculos dependentes do peso','abw'],
 ['Respiratório','PF','Relação PaO₂/FiO₂','Índice de oxigenação','pf'],
 ['Respiratório','ROX','Índice ROX','(SpO₂/FiO₂) / frequência respiratória','rox'],
 ['Respiratório','SF','Relação SpO₂/FiO₂','Índice não invasivo de oxigenação','sf'],
-['Respiratório','PBW','Peso Predito Ventilatório','Baseado em sexo e altura','pbw'],
-['Respiratório','DP','Driving Pressure','Pressão de platô − PEEP','dp'],
-['Respiratório','CST','Complacência Estática','VT / (Pplat − PEEP)','cstat'],
-['Pediatria','HS','Manutenção 4-2-1','Fluidos pediátricos por peso','hs'],
+['Respiratório','PBW','Peso corporal predito','Estimativa para ajuste do volume corrente na ventilação','pbw'],
+['Respiratório','DP','Pressão de distensão (driving pressure)','Pressão de platô menos PEEP','dp'],
+['Respiratório','CST','Complacência estática','Complacência do sistema respiratório em ventilação mecânica','cstat'],
+['Pediatria','HS','Manutenção hídrica 4-2-1','Estimativa de fluidos de manutenção por peso','hs'],
 ['Pediatria','SCH','TFG pediátrica (Schwartz)','Estimativa rápida 1–17 anos','schwartz'],
-['Pediatria','GIR','Taxa de infusão de glicose','GIR em mg/kg/min','gir'],
+['Pediatria','GIR','Taxa de infusão de glicose (GIR)','Cálculo da oferta de glicose em mg/kg/min','gir'],
 ['Obstetrícia','IG','Idade Gestacional','Calculada pela DUM','ig'],
-['Obstetrícia','DPP','Data Provável do Parto','Regra de Näegele','dpp'],
+['Obstetrícia','DPP','Data provável do parto','Estimativa pela regra de Näegele','dpp'],
 ['Conversores','GTS','mL/h ↔ gotas/min','Equipo macro/microgotas','gts'],
 ['Conversores','MGM','% → mg/mL','Concentração de soluções','mgm'],
 ['Conversores','MCG','mg ↔ mcg','Conversão de massa','mcg'],
 ['Conversores','MMOL','Glicose mg/dL ↔ mmol/L','Conversão laboratorial','mmol'],
 ['Conversores','TEMP','°C ↔ °F','Conversão de temperatura','temp'],
-['Infusão','DML','Dose → mL','Dose prescrita e concentração','doseml'],
-['Infusão','DKG','Dose por peso','mg/kg/dose → dose total','dosekg'],
-['Infusão','DIU','Diurese por peso','mL/kg/h','diurese'],
-['Infusão','MKG','mcg/kg/min → mL/h','Infusão contínua por peso','mkg']
+['Infusão','DML','Converter dose em volume','Calcula o volume a partir da dose prescrita e da concentração','doseml'],
+['Infusão','DKG','Dose por peso','Converte mg/kg/dose em dose total','dosekg'],
+['Infusão','DIU','Diurese por peso','Calcula o débito urinário em mL/kg/h','diurese'],
+['Infusão','MKG','Converter mcg/kg/min em mL/h','Calcula a velocidade de infusão contínua por peso','mkg']
 ];
 const defs={
 egfr:{fields:[['cr','Creatinina sérica','number','mg/dL'],['age','Idade','number','anos'],['sex','Sexo','select','Feminino|Masculino']],formula:'CKD-EPI 2021 (creatinina, sem raça)',calc:v=>{let cr=+v.cr,a=+v.age,f=v.sex==='Feminino',k=f?.7:.9,alpha=f?-.241:-.302;return [142*Math.pow(Math.min(cr/k,1),alpha)*Math.pow(Math.max(cr/k,1),-1.2)*Math.pow(.9938,a)*(f?1.012:1),'mL/min/1,73 m²']}},
@@ -82,7 +82,7 @@ ibw:{fields:[['h','Altura','number','cm'],['sex','Sexo','select','Feminino|Mascu
 abw:{fields:[['w','Peso atual','number','kg'],['ideal','Peso ideal','number','kg']],formula:'Peso ajustado = PI + 0,4 × (peso atual − PI)',calc:v=>[+v.ideal+.4*(+v.w-+v.ideal),'kg']},
 pf:{fields:[['pao','PaO₂','number','mmHg'],['fio','FiO₂','number','%']],formula:'P/F = PaO₂ / FiO₂ (fração)',calc:v=>[+v.pao/(+v.fio/100),'']},
 sf:{fields:[['spo','SpO₂','number','%'],['fio','FiO₂','number','%']],formula:'S/F = SpO₂ / FiO₂ (fração)',calc:v=>[+v.spo/(+v.fio/100),'']},
-pbw:{fields:[['h','Altura','number','cm'],['sex','Sexo','select','Feminino|Masculino']],formula:'ARDSNet: 45,5/50 + 0,91 × (altura cm − 152,4)',calc:v=>[(v.sex==='Feminino'?45.5:50)+.91*(+v.h-152.4),'kg']},
+pbw:{fields:[['h','Altura','number','cm'],['sex','Sexo','select','Feminino|Masculino']],formula:'ARDSNet: 45,5 kg (mulher) ou 50 kg (homem) + 0,91 × (altura em cm − 152,4)',calc:v=>[(v.sex==='Feminino'?45.5:50)+.91*(+v.h-152.4),'kg']},
 dp:{fields:[['plat','Pressão de platô','number','cmH₂O'],['peep','PEEP','number','cmH₂O']],formula:'Driving pressure = Pplat − PEEP',calc:v=>[+v.plat-+v.peep,'cmH₂O']},
 cstat:{fields:[['vt','Volume corrente','number','mL'],['plat','Pressão de platô','number','cmH₂O'],['peep','PEEP','number','cmH₂O']],formula:'Cest = VT / (Pplat − PEEP)',calc:v=>[+v.vt/(+v.plat-+v.peep),'mL/cmH₂O']},
 schwartz:{fields:[['h','Altura','number','cm'],['cr','Creatinina','number','mg/dL']],formula:'Bedside Schwartz: 0,413 × altura / creatinina',calc:v=>[.413*+v.h/+v.cr,'mL/min/1,73 m²']},
@@ -114,7 +114,7 @@ nac:{fields:[['na','Sódio medido','number','mEq/L'],['glu','Glicose','number','
 osm:{fields:[['na','Sódio','number','mEq/L'],['glu','Glicose','number','mg/dL'],['bun','BUN','number','mg/dL']],formula:'Osm ≈ 2×Na + glicose/18 + BUN/2,8. Resultado estimado; não existe uma margem fixa universal de ± para esta fórmula.',calc:v=>[2*+v.na+(+v.glu/18)+(+v.bun/2.8),'mOsm/kg']},
 imc:{fields:[['w','Peso','number','kg'],['h','Altura','number','cm']],formula:'IMC = peso / altura²',calc:v=>[+v.w/Math.pow(+v.h/100,2),'kg/m²']},
 bsa:{fields:[['w','Peso','number','kg'],['h','Altura','number','cm']],formula:'Mosteller: SC = √((altura × peso) / 3600)',calc:v=>[Math.sqrt((+v.h*+v.w)/3600),'m²']},
-hs:{fields:[['w','Peso','number','kg']],formula:'4 mL/kg/h (0–10 kg) + 2 (10–20 kg) + 1 (>20 kg)',calc:v=>{let w=+v.w,r=w<=10?4*w:w<=20?40+2*(w-10):60+(w-20);return [r,'mL/h · '+Math.round(r*24)+' mL/dia']}},
+hs:{fields:[['w','Peso','number','kg']],formula:'Regra 4-2-1: 4 mL/kg/h nos primeiros 10 kg + 2 mL/kg/h nos 10 kg seguintes + 1 mL/kg/h acima de 20 kg',calc:v=>{let w=+v.w,r=w<=10?4*w:w<=20?40+2*(w-10):60+(w-20);return [r,'mL/h · '+Math.round(r*24)+' mL/dia']}},
 gts:{fields:[['ml','Velocidade','number','mL/h'],['factor','Equipo','select','20 gotas/mL|60 microgotas/mL']],formula:'gotas/min = mL/h × fator / 60',calc:v=>[+v.ml*(v.factor.startsWith('20')?20:60)/60,v.factor.startsWith('20')?'gotas/min':'microgotas/min']},
 mgm:{fields:[['pct','Concentração','number','%']],formula:'Solução X% = X g/100 mL = 10X mg/mL',calc:v=>[+v.pct*10,'mg/mL']}
 };
@@ -128,7 +128,7 @@ function toggleFav(id){favorites.has(id)?favorites.delete(id):favorites.add(id);
 function shelf(){let favs=C.filter(x=>favorites.has(x[4])&&matches(x)).slice(0,6),rs=recents.map(itemById).filter(Boolean).filter(matches).slice(0,4);favShelf.hidden=!favs.length||active==='Favoritas'||query;recentShelf.hidden=!rs.length||active==='Favoritas'||query;document.querySelector('#favorites-count').textContent=favs.length;document.querySelector('#recent-count').textContent=rs.length;favList.innerHTML=favs.map(card).join('');recentList.innerHTML=rs.map(card).join('');bindCards(favList);bindCards(recentList)}
 function render(){chips.innerHTML=cats.map(x=>'<button class="chip '+(x===active?'active':'')+'" data-cat="'+x+'">'+x+(x==='Favoritas'&&favorites.size?' · '+favorites.size:'')+'</button>').join('');let rows=C.filter(x=>(active==='Todos'||(active==='Favoritas'?favorites.has(x[4]):x[0]===active))&&matches(x));total.textContent=rows.length+' '+(rows.length===1?'calculadora':'calculadoras');let groups=active==='Favoritas'?['Favoritas']:[...new Set(rows.map(x=>x[0]))];if(!rows.length){catalog.innerHTML='<div class="empty-state">Nenhuma calculadora encontrada para esse filtro.</div>'}else{catalog.innerHTML=groups.map(g=>{let a=active==='Favoritas'?rows:rows.filter(x=>x[0]===g);return '<section class="group"><div class="group-head"><div><h2>'+esc(g)+'</h2><p>'+(g==='Favoritas'?'Suas ferramentas salvas para acesso rápido.':'Ferramentas de '+esc(g.toLowerCase())+'.')+'</p></div><span class="count">'+a.length+'</span></div><div class="calc-list">'+a.map(card).join('')+'</div></section>'}).join('')}chips.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{active=b.dataset.cat;render()}));bindCards(catalog);shelf()}
 function addRecent(id){recents=[id,...recents.filter(x=>x!==id)].slice(0,8);localStorage.setItem(recentKey,JSON.stringify(recents))}
-function openCalc(id){let x=itemById(id),d=defs[id];if(!x||!d)return;addRecent(id);document.querySelector('#calc-modal-code').textContent=x[1];document.querySelector('#calc-modal-heading').textContent=x[2];document.querySelector('#calc-modal-subtitle').textContent=x[3]+' · '+x[0];modalBody.innerHTML='<div class="calc-purpose-box"><b>Serve para:</b> '+esc(x[3])+'</div><div class="formula">'+esc(d.formula)+'</div><form><div class="fields">'+d.fields.map(f=>'<div class="field"><label>'+esc(f[1])+' ('+esc(f[3])+')</label>'+(f[2]==='date'?'<input name="'+f[0]+'" type="date" required>':f[2]==='select'?'<select name="'+f[0]+'">'+f[3].split('|').map(o=>'<option>'+esc(o)+'</option>').join('')+'</select>':'<input name="'+f[0]+'" type="number" step="any" inputmode="decimal" required>')+'</div>').join('')+'</div><div class="err"></div><div class="actions"><button class="go" type="submit">Calcular</button><button class="clear" type="reset">Limpar</button></div><div class="result" aria-live="polite"></div><div class="note">Ferramenta de apoio. Em eletrólitos, confirme função renal, diurese, ECG quando indicado, acesso venoso, concentração máxima permitida e limites de velocidade/correção do protocolo institucional antes de utilizar o resultado.</div></form>';modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';let form=modalBody.querySelector('form'),res=form.querySelector('.result'),err=form.querySelector('.err');form.addEventListener('submit',e=>{e.preventDefault();let v=Object.fromEntries(new FormData(form));if(d.fields.filter(f=>f[2]==='number').some(f=>!isFinite(+v[f[0]])||+v[f[0]]<=0)||d.fields.filter(f=>f[2]==='date').some(f=>!v[f[0]])){err.textContent='Preencha todos os valores com números válidos.';res.classList.remove('show');return}try{let [n,u]=d.calc(v);if(!isFinite(n))throw 0;err.textContent='';res.innerHTML='<span class="result-label">Resultado</span><b>'+n.toLocaleString('pt-BR',{maximumFractionDigits:2})+' '+esc(u)+'</b><small>Calculado com os dados informados.</small>';res.classList.add('show')}catch{err.textContent='Não foi possível calcular com esses valores ou a fórmula não é válida nesse cenário.';res.classList.remove('show')}});form.addEventListener('reset',()=>{err.textContent='';res.classList.remove('show')});shelf();setTimeout(()=>{let first=modalBody.querySelector('input,select');if(first)first.focus()},40)}
+function openCalc(id){let x=itemById(id),d=defs[id];if(!x||!d)return;addRecent(id);document.querySelector('#calc-modal-code').textContent=x[1];document.querySelector('#calc-modal-heading').textContent=x[2];document.querySelector('#calc-modal-subtitle').textContent=x[3]+' · '+x[0];modalBody.innerHTML='<div class="calc-purpose-box"><b>Serve para:</b> '+esc(x[3])+'</div><div class="formula"><b>Fórmula:</b> '+esc(d.formula)+'</div><form><div class="fields">'+d.fields.map(f=>'<div class="field"><label>'+esc(f[1])+(f[2]==='number'&&f[3]?' ('+esc(f[3])+')':'')+'</label>'+(f[2]==='date'?'<input name="'+f[0]+'" type="date" required>':f[2]==='select'?'<select name="'+f[0]+'">'+f[3].split('|').map(o=>'<option>'+esc(o)+'</option>').join('')+'</select>':'<input name="'+f[0]+'" type="number" step="any" inputmode="decimal" required>')+'</div>').join('')+'</div><div class="err"></div><div class="actions"><button class="go" type="submit">Calcular</button><button class="clear" type="reset">Limpar</button></div><div class="result" aria-live="polite"></div><div class="note">Ferramenta de apoio clínico. Confirme os dados informados e interprete o resultado no contexto do paciente. Em reposições e infusões, respeite função renal, diurese, acesso venoso, concentração e velocidade máximas do protocolo institucional.</div></form>';modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';let form=modalBody.querySelector('form'),res=form.querySelector('.result'),err=form.querySelector('.err');form.addEventListener('submit',e=>{e.preventDefault();let v=Object.fromEntries(new FormData(form));if(d.fields.filter(f=>f[2]==='number').some(f=>!isFinite(+v[f[0]])||+v[f[0]]<=0)||d.fields.filter(f=>f[2]==='date').some(f=>!v[f[0]])){err.textContent='Preencha todos os valores com números válidos.';res.classList.remove('show');return}try{let [n,u]=d.calc(v);if(!isFinite(n))throw 0;err.textContent='';res.innerHTML='<span class="result-label">Resultado</span><b>'+n.toLocaleString('pt-BR',{maximumFractionDigits:2})+' '+esc(u)+'</b><small>Resultado estimado com os dados informados.</small>';res.classList.add('show')}catch{err.textContent='Não foi possível calcular com esses valores ou a fórmula não é válida nesse cenário.';res.classList.remove('show')}});form.addEventListener('reset',()=>{err.textContent='';res.classList.remove('show')});shelf();setTimeout(()=>{let first=modalBody.querySelector('input,select');if(first)first.focus()},40)}
 function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow=''}
 modal.querySelectorAll('[data-modal-close]').forEach(b=>b.addEventListener('click',closeModal));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});search.addEventListener('input',()=>{query=search.value;searchClear.hidden=!query;render()});searchClear.addEventListener('click',()=>{search.value='';query='';searchClear.hidden=true;search.focus();render()});render();
 </script><script src="/assets/vendor/supabase-2.110.6.js"></script><script src="/assets/js/supabase.js"></script><script src="/assets/js/app.js?v=20260930-layout-pcr"></script><script defer src="/assets/js/pwa.js?v=3"></script></body></html>
