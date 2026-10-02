@@ -1110,29 +1110,25 @@
 
 
   style.textContent += `
-    /* PWA mobile — menu inteiro rolável.
-       Esta regra fica por último de propósito: corrige o hotfix compacto que
-       anteriormente forçava overflow:hidden/visible e impedia subir/descer. */
+    /* PWA mobile — cabeçalho e ações fixos; somente a navegação rola.
+       Mantém PCR + troca de ambiente presos ao rodapé, na mesma referência
+       vertical entre Estudo e Trabalho. */
     @media (max-width:980px) {
       html.pwa-standalone body #sidebar.sidebar {
         height:100vh !important;
         height:100dvh !important;
-        overflow-y:auto !important;
-        overflow-x:hidden !important;
-        overscroll-behavior-y:contain !important;
-        -webkit-overflow-scrolling:touch !important;
-        touch-action:pan-y !important;
-        scroll-behavior:smooth;
+        overflow:hidden !important;
+        overscroll-behavior:none !important;
+        display:flex !important;
+        flex-direction:column !important;
       }
 
       html.pwa-standalone body #sidebar.sidebar .sidebar-top {
-        position:sticky !important;
-        top:calc(-1 * max(22px, calc(env(safe-area-inset-top) + 8px))) !important;
+        position:relative !important;
+        top:auto !important;
         z-index:8 !important;
         flex:0 0 auto !important;
-        padding-top:max(22px, calc(env(safe-area-inset-top) + 8px)) !important;
-        padding-bottom:8px !important;
-        margin-top:calc(-1 * max(22px, calc(env(safe-area-inset-top) + 8px))) !important;
+        margin-top:0 !important;
         margin-bottom:6px !important;
         background:var(--sidebar) !important;
       }
@@ -1141,11 +1137,20 @@
       html.pwa-standalone body #sidebar.sidebar .nav-study,
       html.pwa-standalone body #sidebar.sidebar .nav-work,
       html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav {
-        flex:0 0 auto !important;
-        min-height:auto !important;
-        overflow:visible !important;
-        -webkit-overflow-scrolling:auto !important;
-        touch-action:auto !important;
+        flex:1 1 auto !important;
+        min-height:0 !important;
+        overflow-y:auto !important;
+        overflow-x:hidden !important;
+        overscroll-behavior-y:contain !important;
+        -webkit-overflow-scrolling:touch !important;
+        touch-action:pan-y !important;
+        scrollbar-width:none !important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .nav::-webkit-scrollbar,
+      html.pwa-standalone body #sidebar.sidebar .nav-study::-webkit-scrollbar,
+      html.pwa-standalone body #sidebar.sidebar .nav-work::-webkit-scrollbar {
+        display:none !important;
       }
 
       html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
@@ -1153,11 +1158,13 @@
       html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work,
       html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer {
         flex:0 0 auto !important;
-        margin-top:12px !important;
+        margin-top:auto !important;
         padding-top:10px !important;
         padding-bottom:max(10px, env(safe-area-inset-bottom)) !important;
         overflow:visible !important;
         position:relative !important;
+        z-index:9 !important;
+        background:var(--sidebar) !important;
       }
 
       html.pwa-standalone body.sidebar-open {
