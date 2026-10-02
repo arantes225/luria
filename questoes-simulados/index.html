@@ -2820,6 +2820,96 @@ body[data-page="questoes"] .qs-home-system{
 }
 </style>
   <script src="/assets/js/medical-icons.js?v=2.0"></script>
+<style id="qs-daily-identical-flashcards-v68">
+/* Questões do dia — estrutura e acabamento idênticos a Revisões do dia dos Flashcards. */
+body[data-page="questoes"] #qs-daily-card{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:24px!important;
+  height:272px!important;
+  min-height:272px!important;
+  max-height:272px!important;
+  padding:28px!important;
+  box-sizing:border-box!important;
+  border:1px solid color-mix(in srgb,#fff 18%,var(--accent))!important;
+  border-radius:15px!important;
+  background:
+    radial-gradient(circle at 88% 18%,rgba(255,255,255,.14) 0,rgba(255,255,255,.055) 18%,transparent 42%),
+    radial-gradient(circle at 76% 110%,rgba(255,255,255,.10) 0,transparent 42%),
+    linear-gradient(122deg,color-mix(in srgb,var(--accent) 92%,#071c3c) 0%,var(--accent) 58%,color-mix(in srgb,var(--accent) 76%,#081f45) 100%)!important;
+  color:#fff!important;
+  box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 15%,transparent),inset 0 1px 0 rgba(255,255,255,.08)!important;
+  text-align:center!important;
+}
+body[data-page="questoes"] #qs-daily-card:before{
+  content:""!important;display:block!important;position:absolute!important;inset:0!important;z-index:-2!important;
+  background:linear-gradient(108deg,rgba(255,255,255,.07),transparent 44%,rgba(0,0,0,.07))!important;
+}
+body[data-page="questoes"] #qs-daily-card:after{
+  display:none!important;content:none!important;box-shadow:none!important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-system-copy{
+  position:relative!important;z-index:3!important;
+  width:100%!important;max-width:100%!important;
+  display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-eyebrow{
+  display:inline-flex!important;align-items:center!important;width:max-content!important;
+  margin:0 auto!important;padding:5px 9px!important;
+  border:1px solid rgba(255,255,255,.24)!important;border-radius:999px!important;
+  background:rgba(255,255,255,.10)!important;color:#fff!important;
+  font-size:9px!important;font-weight:400!important;letter-spacing:.11em!important;line-height:1!important;
+}
+body[data-page="questoes"] #qs-daily-card h2{
+  margin:10px auto 7px!important;color:#fff!important;
+  font-size:clamp(22px,2vw,29px)!important;line-height:1.08!important;font-weight:650!important;letter-spacing:-.025em!important;
+}
+body[data-page="questoes"] #qs-daily-card p{
+  max-width:520px!important;margin:0 auto!important;color:rgba(255,255,255,.76)!important;
+  font-size:11px!important;line-height:1.55!important;text-align:center!important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-daily-action{
+  position:relative!important;z-index:4!important;width:100%!important;
+  display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-daily-count{
+  display:block!important;margin:0!important;color:#fff!important;
+  font-size:13px!important;line-height:1.1!important;font-weight:800!important;text-align:center!important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-primary{
+  min-height:42px!important;height:42px!important;margin-top:10px!important;padding:0 17px!important;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  border:1px solid rgba(255,255,255,.92)!important;border-radius:12px!important;
+  background:#fff!important;color:#184888!important;
+  box-shadow:0 7px 18px rgba(0,0,0,.16)!important;
+  font-weight:850!important;box-sizing:border-box!important;text-decoration:none!important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-primary svg{display:none!important}
+:root[data-theme="dark"] body[data-page="questoes"] #qs-daily-card,
+body.theme-dark[data-page="questoes"] #qs-daily-card{
+  background:linear-gradient(110deg,#0D1B30 0%,#10213A 58%,#13233A 100%)!important;
+  border-color:#20344F!important;
+}
+:root[data-theme="dark"] body[data-page="questoes"] #qs-daily-card .qs-home-primary{
+  background:var(--surface)!important;color:var(--accent)!important;border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+}
+:root[data-theme="leila-mood"] body[data-page="questoes"] #qs-daily-card,
+:root[data-theme="pink"] body[data-page="questoes"] #qs-daily-card,
+:root[data-theme="rosa"] body[data-page="questoes"] #qs-daily-card{
+  background:var(--accent)!important;border-color:var(--accent)!important;
+}
+:root[data-theme="leila-mood"] body[data-page="questoes"] #qs-daily-card .qs-home-primary{color:#b52d74!important}
+@media(max-width:700px){
+  body[data-page="questoes"] #qs-daily-card{
+    height:auto!important;min-height:180px!important;max-height:none!important;
+    padding:20px!important;flex-direction:column!important;justify-content:center!important;gap:12px!important;
+  }
+}
+</style>
 </head>
 
 <body data-page="questoes">
@@ -2852,16 +2942,16 @@ body[data-page="questoes"] .qs-home-system{
         >
           <div class="qs-home-workspace">
             <div class="qs-home-main-column">
-              <article id="qs-daily-card" class="qs-home-system">
+              <article id="qs-daily-card" class="qs-home-system qs-daily-review-like">
                 <div class="qs-home-system-copy">
-                  <span class="qs-home-eyebrow">Do LURIA</span>
+                  <span class="qs-home-eyebrow">Pronto para responder</span>
                   <h2>Questões do dia</h2>
-                  <p>Resolva uma lista preparada pelo LURIA ou entre no fluxo de simulados do sistema.</p>
-                  
-                  <div class="qs-home-daily-count" id="qs-home-daily-count">— questões</div>
+                  <p>Resolva a seleção diária preparada pelo LURIA e mantenha sua sequência de estudos.</p>
+                </div>
+                <div class="qs-home-daily-action">
+                  <strong class="qs-home-daily-count" id="qs-home-daily-count">— questões</strong>
                   <a class="qs-home-primary" href="/resolver-questoes/?daily=1">
                     <span>Abrir questões do dia</span>
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 7 6-7 6z"/></svg>
                   </a>
                 </div>
               </article>
