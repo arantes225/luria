@@ -6,6 +6,28 @@ const css=d.createElement("link");css.rel="stylesheet";css.href="/assets/css/lur
 const routes=[
  ["Dashboard","Seu dia, sessões e atalhos","/dashboard/","Geral"],["Cronogramas","Planejamento de aulas e revisões","/cronograma/","Estudos"],["Desafio diário","Diagnóstico por pistas","/desafio-diario/","Estudos"],["Anotações · Cola Rápida","Anotações, prescrições e conteúdo rápido","/caderno/","Estudos"],["Questões e Simulados","Biblioteca e listas de questões","/questoes-simulados/","Estudos"],["Flashcards","Decks e revisões","/flashcards/","Estudos"],["Caderno de Erros","Erros e revisões","/caderno-erros/","Estudos"],["Simulador","Sala de emergência e LuriaZap","/plantao/","Prática"],["Mini-OSCE","Estações clínicas objetivas","/mini-osce/","Prática"],["Estatísticas","Evolução e desempenho","/estatisticas/","Desempenho"],["Editais e Provas","Provas, editais e datas","/editais/","Estudos"],["Bulário","Medicamentos e posologias","/bulario/","Trabalho"],["Protocolos","Protocolos clínicos","/protocolos/","Trabalho"],["Scores","Scores médicos","/scores/","Trabalho"],["Calculadoras","Calculadoras clínicas","/calculadoras/","Trabalho"],["Passômetro","Entrega de plantão","/passometro/","Trabalho"]
 ];
+const SEARCH_ALIASES={
+ "cm":["clinica medica","clínica médica"],"cg":["cirurgia geral"],"go":["ginecologia obstetricia","ginecologia e obstetricia","ginecologia obstetrícia","ginecologia e obstetrícia"],
+ "ped":["pediatria"],"pedi":["pediatria"],"prev":["preventiva","medicina preventiva"],"mfc":["medicina de familia e comunidade","medicina da familia"],
+ "cardio":["cardiologia"],"pneumo":["pneumologia"],"neuro":["neurologia"],"gastro":["gastroenterologia"],"nefro":["nefrologia"],"endo":["endocrinologia"],
+ "hemato":["hematologia"],"infecto":["infectologia"],"reumato":["reumatologia"],"dermato":["dermatologia"],"psiq":["psiquiatria"],
+ "orto":["ortopedia"],"uro":["urologia"],"vascular":["cirurgia vascular"],"plastica":["cirurgia plastica","cirurgia plástica"],
+ "obst":["obstetricia","obstetrícia"],"gineco":["ginecologia"],"neo":["neonatologia"],"aps":["atencao primaria a saude","atenção primária à saúde"],
+ "iam":["infarto agudo do miocardio","infarto agudo do miocárdio"],"ic":["insuficiencia cardiaca","insuficiência cardíaca"],
+ "has":["hipertensao arterial sistemica","hipertensão arterial sistêmica"],"dm":["diabetes mellitus"],"dpoc":["doenca pulmonar obstrutiva cronica","doença pulmonar obstrutiva crônica"],
+ "tep":["tromboembolismo pulmonar"],"tvp":["trombose venosa profunda"],"avc":["acidente vascular cerebral"],"pcr":["parada cardiorrespiratoria","parada cardiorrespiratória"],
+ "bav":["bloqueio atrioventricular"],"brd":["bloqueio de ramo direito"],"bre":["bloqueio de ramo esquerdo"]
+};
+function normSearch(v){return String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLocaleLowerCase("pt-BR").replace(/[^a-z0-9]+/g," ").trim()}
+function initialsSearch(v){return normSearch(v).split(" ").filter(Boolean).map(x=>x[0]).join("")}
+function expandSearch(raw){
+ const n=normSearch(raw),out=new Set([String(raw||"").trim(),n]);
+ (SEARCH_ALIASES[n]||[]).forEach(x=>out.add(x));
+ Object.entries(SEARCH_ALIASES).forEach(([abbr,vals])=>{if(vals.some(x=>normSearch(x)===n))out.add(abbr)});
+ return [...out].filter(Boolean)
+}
+function localSearchText(route){const text=normSearch(route.join(" "));return text+" "+initialsSearch(route[0])+" "+initialsSearch(route[1])}
+
 function topbar(){return $(".topbar")}
 function modal(id,title,body){let o=d.getElementById(id);if(o)o.remove();o=d.createElement("div");o.id=id;o.className="luria-intel-overlay";o.innerHTML='<section class="luria-intel-modal" role="dialog" aria-modal="true"><header class="luria-intel-head"><h2>'+esc(title)+'</h2><button class="luria-intel-close" type="button" aria-label="Fechar">×</button></header>'+body+'</section>';d.body.appendChild(o);o.querySelector(".luria-intel-close").onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};return o}
 function installSearch(){
@@ -14,7 +36,7 @@ function installSearch(){
  const menu=bar.querySelector("#menu-open,.menu-open");
  if(menu?.nextSibling) bar.insertBefore(b,menu.nextSibling); else if(menu) bar.appendChild(b); else bar.prepend(b);
  const open=()=>{const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');const input=$("#luria-search-input",o),list=$("#luria-search-list",o);
- const render=()=>{const q=input.value.trim().toLocaleLowerCase("pt-BR");const tokens=q.split(/\s+/).filter(Boolean);const matches=routes.filter(r=>!tokens.length||tokens.every(t=>(r.join(" ")).toLocaleLowerCase("pt-BR").includes(t))).slice(0,14);list.innerHTML=matches.length?matches.map(r=>'<a class="luria-search-item" href="'+r[2]+'"><span><strong>'+esc(r[0])+'</strong><small>'+esc(r[1])+'</small></span><span class="luria-search-kind">'+esc(r[3])+'</span></a>').join(""):'<div class="luria-search-item"><span><strong>Nenhum atalho encontrado</strong><small>Tente outro termo. A busca clínica será ampliada conforme os bancos forem indexados.</small></span></div>';};input.oninput=render;render();setTimeout(()=>input.focus(),40)};
+ const render=()=>{const raw=input.value.trim(),expanded=expandSearch(raw).map(normSearch),tokens=expanded.flatMap(x=>x.split(/\s+/)).filter(Boolean);const queryNorm=normSearch(raw);const matches=routes.filter(r=>{if(!queryNorm)return true;const hay=localSearchText(r);if(hay.includes(queryNorm)||initialsSearch(r[0])===queryNorm)return true;return expanded.some(x=>x&&hay.includes(x))}).slice(0,14);list.innerHTML=matches.length?matches.map(r=>'<a class="luria-search-item" href="'+r[2]+'"><span><strong>'+esc(r[0])+'</strong><small>'+esc(r[1])+'</small></span><span class="luria-search-kind">'+esc(r[3])+'</span></a>').join(""):'<div class="luria-search-item"><span><strong>Nenhum atalho encontrado</strong><small>Tente outro termo. A busca clínica será ampliada conforme os bancos forem indexados.</small></span></div>';};input.oninput=render;render();setTimeout(()=>input.focus(),40)};
  b.onclick=open;d.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();open()}});
 }
 function todayActivities(){try{if(typeof agendaState==="object"&&Array.isArray(agendaState.items)){const iso=new Date().toLocaleDateString("sv-SE");return agendaState.items.filter(x=>x.activity_date===iso)}}catch{}return[]}
@@ -83,10 +105,11 @@ async function liveSearch(input){
  const q=String(input?.value||"").trim();const list=d.getElementById("luria-search-list");if(!list)return;
  all(".luria-live-result",list).forEach(x=>x.remove());if(q.length<2)return;
  const seq=++searchSeq,sb=window.supabaseClient;if(!sb)return;
- const safe=q.replace(/[%_,]/g," ").trim();const rows=[];
- try{const {data}=await sb.from("question_items").select("id,set_id,stem,topic,subtopic,area,materia").or("stem.ilike.%"+safe+"%,topic.ilike.%"+safe+"%,subtopic.ilike.%"+safe+"%,materia.ilike.%"+safe+"%").limit(6);(data||[]).forEach(x=>rows.push({title:x.topic||x.materia||"Questão",desc:x.stem||x.subtopic||x.area||"",kind:"Questão",href:"/resolver-questoes/?set_id="+encodeURIComponent(x.set_id)}))}catch{}
- try{const {data}=await sb.from("clinical_cases").select("id,title,specialty,summary").eq("active",true).or("title.ilike.%"+safe+"%,summary.ilike.%"+safe+"%,specialty.ilike.%"+safe+"%").limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"Caso clínico",desc:x.summary||x.specialty||"",kind:"Simulador",href:"/plantao/sala-emergencia/"}))}catch{}
- try{const {data}=await sb.from("interconsultation_cases").select("id,title,specialty,opening_message").or("title.ilike.%"+safe+"%,specialty.ilike.%"+safe+"%,opening_message.ilike.%"+safe+"%").limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"LuriaZap",desc:x.specialty||x.opening_message||"",kind:"LuriaZap",href:"/plantao/luriazap/"}))}catch{}
+ const variants=expandSearch(q).map(x=>x.replace(/[%_,]/g," ").trim()).filter(Boolean).slice(0,5);const rows=[];
+ const orFor=cols=>variants.flatMap(v=>cols.map(col=>col+".ilike.%"+v+"%")).join(",");
+ try{const {data}=await sb.from("question_items").select("id,set_id,stem,topic,subtopic,area,materia").or(orFor(["stem","topic","subtopic","area","materia"])).limit(8);(data||[]).forEach(x=>rows.push({title:x.topic||x.materia||"Questão",desc:x.stem||x.subtopic||x.area||"",kind:"Questão",href:"/resolver-questoes/?set_id="+encodeURIComponent(x.set_id)}))}catch{}
+ try{const {data}=await sb.from("clinical_cases").select("id,title,specialty,summary").eq("active",true).or(orFor(["title","summary","specialty"])).limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"Caso clínico",desc:x.summary||x.specialty||"",kind:"Simulador",href:"/plantao/sala-emergencia/"}))}catch{}
+ try{const {data}=await sb.from("interconsultation_cases").select("id,title,specialty,opening_message").or(orFor(["title","specialty","opening_message"])).limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"LuriaZap",desc:x.specialty||x.opening_message||"",kind:"LuriaZap",href:"/plantao/luriazap/"}))}catch{}
  if(seq!==searchSeq||!rows.length)return;list.insertAdjacentHTML("beforeend",rows.map(x=>'<a class="luria-search-item luria-live-result" href="'+x.href+'"><span><strong>'+esc(x.title)+'</strong><small>'+esc(String(x.desc).slice(0,135))+'</small></span><span class="luria-search-kind">'+esc(x.kind)+'</span></a>').join(""));
 }
 d.addEventListener("input",e=>{if(e.target?.id!=="luria-search-input")return;clearTimeout(searchTimer);searchTimer=setTimeout(()=>liveSearch(e.target),220)},true);
@@ -115,26 +138,27 @@ function boot2(){installLuriaZapTrail();openTopicSearchFromQuery();relatedQuesti
 if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else boot2();new MutationObserver(()=>installLuriaZapTrail()).observe(d.documentElement,{childList:true,subtree:true});
 })();
 
+
+
 ;(()=> {
-  if(document.getElementById("dashboard-search-left-anchor-v3")) return;
-  const s=document.createElement("style");
-  s.id="dashboard-search-left-anchor-v3";
-  s.textContent=`
-    body[data-page="dashboard"] .topbar #luria-global-search{
-      position:absolute!important;
-      left:0!important;
-      right:auto!important;
-      top:0!important;
-      margin:0!important;
-      z-index:260!important;
-      transform:none!important;
-    }
-    @media(max-width:980px){
-      body[data-page="dashboard"] .topbar #luria-global-search{
-        left:48px!important;
-        top:0!important;
-      }
-    }
-  `;
-  document.head.appendChild(s);
+  function syncDashboardSearchToTimer(){
+    if(document.body?.dataset?.page!=="dashboard")return;
+    const search=document.getElementById("luria-global-search");
+    const timer=document.querySelector("#luria-pomodoro-toggle,.luria-pomodoro-toggle,.dl-timer");
+    const main=document.querySelector("main.main,.main");
+    if(!search||!timer||!main)return;
+    const tr=timer.getBoundingClientRect(),mr=main.getBoundingClientRect();
+    search.style.setProperty("position","fixed","important");
+    search.style.setProperty("top",Math.round(tr.top)+"px","important");
+    search.style.setProperty("left",Math.round(mr.left+28)+"px","important");
+    search.style.setProperty("right","auto","important");
+    search.style.setProperty("margin","0","important");
+    search.style.setProperty("height",Math.round(tr.height)+"px","important");
+    search.style.setProperty("z-index","246","important");
+    search.style.setProperty("transform","none","important");
+  }
+  const run=()=>requestAnimationFrame(()=>requestAnimationFrame(syncDashboardSearchToTimer));
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run);else run();
+  window.addEventListener("resize",run,{passive:true});
+  new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["data-theme","class"]});
 })();
