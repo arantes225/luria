@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v215-bulario-detail-panel";
+const CACHE_VERSION = "luria-pwa-v216-security-and-bulario-nav";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
