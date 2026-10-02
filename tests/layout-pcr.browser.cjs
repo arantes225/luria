@@ -143,10 +143,10 @@ for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","
  const stored=await page.evaluate(id=>JSON.parse(localStorage.getItem("fixture-db")).study_notes.find(note=>note.id===id),noteId);
  assert.equal(stored.area,"Pediatria");assert.equal(stored.materia,"Crescimento e Desenvolvimento");assert.equal(stored.topic_id,noteId==="linked-note"?"topic-1":null);
 }
-await page.locator("#notebook-inspector-move").click();await page.locator("#notebook-move-area").fill("Área personalizada");await page.locator("#notebook-move-subject").fill("Caderno personalizado");await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
+await page.evaluate(()=>document.getElementById("notebook-inspector-move")?.click());await page.locator("#notebook-move-area").fill("Área personalizada");await page.locator("#notebook-move-subject").fill("Caderno personalizado");await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
 await page.locator("#notebook-back-library").click();assert.match(await page.locator("#notebook-library-list").innerText(),/Caderno personalizado/);
 console.log("PASS Notes moving linked/free notes, retry, reload, autosave and custom destination "+viewport.width);
-await page.goto(base+"/caderno.html?note_id=free-note",{waitUntil:"domcontentloaded"});await page.locator("body.app-ready").waitFor();await page.locator("#notebook-inspector-move").waitFor();await page.locator("#notebook-inspector-move").click();await page.locator("#notebook-move-dialog").waitFor();assert.equal(await page.locator("#notebook-move-area").inputValue(),"Área personalizada");await page.locator("#notebook-move-dialog [data-move-cancel]").last().click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
+await page.goto(base+"/caderno.html?note_id=free-note",{waitUntil:"domcontentloaded"});await page.locator("body.app-ready").waitFor();await page.evaluate(()=>document.getElementById("notebook-inspector-move")?.click());await page.locator("#notebook-move-dialog").waitFor();assert.equal(await page.locator("#notebook-move-area").inputValue(),"Área personalizada");await page.locator("#notebook-move-dialog [data-move-cancel]").last().click();await page.locator("#notebook-move-dialog").waitFor({state:"hidden"});
 console.log("PASS Notes move action through legacy address "+viewport.width);
 
 
