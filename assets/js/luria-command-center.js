@@ -61,3 +61,42 @@ function adaptive(){try{window.LuriaAdaptive={preExam:JSON.parse(localStorage.ge
 function boot(){installSearch();commandCard();enhanceQuestion();statsTimeline();plantaoOsceLink();adaptive()}
 if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot);else boot();new MutationObserver(()=>{commandCard();enhanceQuestion();plantaoOsceLink()}).observe(d.documentElement,{childList:true,subtree:true});
 })();
+
+;(()=>{"use strict";if(window.__luriaIntegrationLayer2)return;window.__luriaIntegrationLayer2=true;
+const d=document,$=(s,r=d)=>r.querySelector(s),all=(s,r=d)=>[...r.querySelectorAll(s)],esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+let searchTimer=0,searchSeq=0;
+async function liveSearch(input){
+ const q=String(input?.value||"").trim();const list=d.getElementById("luria-search-list");if(!list)return;
+ all(".luria-live-result",list).forEach(x=>x.remove());if(q.length<2)return;
+ const seq=++searchSeq,sb=window.supabaseClient;if(!sb)return;
+ const safe=q.replace(/[%_,]/g," ").trim();const rows=[];
+ try{const {data}=await sb.from("question_items").select("id,set_id,stem,topic,subtopic,area,materia").or("stem.ilike.%"+safe+"%,topic.ilike.%"+safe+"%,subtopic.ilike.%"+safe+"%,materia.ilike.%"+safe+"%").limit(6);(data||[]).forEach(x=>rows.push({title:x.topic||x.materia||"Questão",desc:x.stem||x.subtopic||x.area||"",kind:"Questão",href:"/resolver-questoes/?set_id="+encodeURIComponent(x.set_id)}))}catch{}
+ try{const {data}=await sb.from("clinical_cases").select("id,title,specialty,summary").eq("active",true).or("title.ilike.%"+safe+"%,summary.ilike.%"+safe+"%,specialty.ilike.%"+safe+"%").limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"Caso clínico",desc:x.summary||x.specialty||"",kind:"Simulador",href:"/plantao/sala-emergencia/"}))}catch{}
+ try{const {data}=await sb.from("interconsultation_cases").select("id,title,specialty,opening_message").or("title.ilike.%"+safe+"%,specialty.ilike.%"+safe+"%,opening_message.ilike.%"+safe+"%").limit(4);(data||[]).forEach(x=>rows.push({title:x.title||"LuriaZap",desc:x.specialty||x.opening_message||"",kind:"LuriaZap",href:"/plantao/luriazap/"}))}catch{}
+ if(seq!==searchSeq||!rows.length)return;list.insertAdjacentHTML("beforeend",rows.map(x=>'<a class="luria-search-item luria-live-result" href="'+x.href+'"><span><strong>'+esc(x.title)+'</strong><small>'+esc(String(x.desc).slice(0,135))+'</small></span><span class="luria-search-kind">'+esc(x.kind)+'</span></a>').join(""));
+}
+d.addEventListener("input",e=>{if(e.target?.id!=="luria-search-input")return;clearTimeout(searchTimer);searchTimer=setTimeout(()=>liveSearch(e.target),220)},true);
+
+function relatedQuestionLinks(){
+ const fb=d.getElementById("qr-feedback");if(!fb||fb.hidden||$(".luria-related-links",fb))return;
+ const topic=(d.getElementById("qr-materia")?.textContent||all("#qr-tags .qr-tag").map(x=>x.textContent)[0]||"").trim();if(!topic)return;
+ const wrap=d.createElement("div");wrap.className="luria-learning-actions luria-related-links";const q=encodeURIComponent(topic);
+ wrap.innerHTML='<a class="luria-intel-button" href="/flashcards/?q='+q+'" style="text-decoration:none">Flashcards relacionados</a><a class="luria-intel-button" href="/caderno/?q='+q+'" style="text-decoration:none">Resumo / anotações</a><a class="luria-intel-button" href="/protocolos/?q='+q+'" style="text-decoration:none">Protocolos</a><a class="luria-intel-button" href="/plantao/?q='+q+'" style="text-decoration:none">Caso clínico</a>';
+ fb.appendChild(wrap)
+}
+const fb=d.getElementById("qr-feedback");if(fb)new MutationObserver(relatedQuestionLinks).observe(fb,{childList:true,subtree:true,attributes:true});relatedQuestionLinks();
+
+function installLuriaZapTrail(){
+ if(!location.pathname.includes("/plantao/luriazap")||d.getElementById("luriazap-learning-trail"))return;
+ const station=d.getElementById("plantao-phone-station");if(!station)return;
+ const trail=d.createElement("div");trail.id="luriazap-learning-trail";trail.style.cssText="display:flex;gap:4px;padding:6px 8px;border-bottom:1px solid var(--border);background:var(--surface);overflow:auto";
+ const names=["Aprender","Checagem","Caso clínico","Discussão","Fechamento"];
+ trail.innerHTML=names.map((n,i)=>'<span data-lz-stage="'+i+'" style="white-space:nowrap;font-size:6.8px;font-weight:850;padding:4px 6px;border-radius:999px;background:var(--surface-2);color:var(--muted)">'+n+'</span>').join("");
+ const head=station.querySelector(".plantao-phone-chat-head");if(head)head.after(trail);else station.prepend(trail);
+ const update=()=>{const body=d.getElementById("plantao-phone-chat-body");const msgs=body?.querySelectorAll?.("*")?.length||0;const choices=d.getElementById("plantao-phone-choices");let stage=0;if(msgs>12)stage=1;if(msgs>25)stage=2;if(msgs>40)stage=3;if(choices?.textContent?.includes("Caso discutido"))stage=4;all("[data-lz-stage]",trail).forEach((el,i)=>{el.style.background=i<=stage?"var(--accent-soft)":"var(--surface-2)";el.style.color=i<=stage?"var(--accent)":"var(--muted)"})};
+ const body=d.getElementById("plantao-phone-chat-body");if(body)new MutationObserver(update).observe(body,{childList:true,subtree:true});const choices=d.getElementById("plantao-phone-choices");if(choices)new MutationObserver(update).observe(choices,{childList:true,subtree:true});update()
+}
+function openTopicSearchFromQuery(){const p=new URLSearchParams(location.search),q=p.get("q");if(!q)return;setTimeout(()=>{const b=d.getElementById("luria-global-search");if(!b)return;b.click();setTimeout(()=>{const input=d.getElementById("luria-search-input");if(input){input.value=q;input.dispatchEvent(new Event("input",{bubbles:true}))}},60)},350)}
+function boot2(){installLuriaZapTrail();openTopicSearchFromQuery();relatedQuestionLinks()}
+if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else boot2();new MutationObserver(()=>installLuriaZapTrail()).observe(d.documentElement,{childList:true,subtree:true});
+})();
