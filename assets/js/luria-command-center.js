@@ -55,7 +55,13 @@ function openSession(initialMinutes=30){
  let mins=Number(initialMinutes)||30;const o=modal("luria-session-overlay","Estudar agora",'<p style="margin:0;color:var(--muted);font-size:10px">A LURIA organiza uma sessão a partir das atividades e pendências disponíveis agora.</p><div class="luria-session-times"><button data-m="15">15 min</button><button data-m="30" class="active">30 min</button><button data-m="60">1 h</button><button data-m="999">Completar o dia</button></div><div id="luria-session-list" class="luria-session-list"></div><div class="luria-intel-actions"><button id="luria-session-remix" class="luria-intel-button">Reorganizar</button><button id="luria-session-start" class="luria-intel-button primary">Iniciar sessão</button></div>');
  const render=()=>{const s=sessionSteps(mins);o._steps=s;$("#luria-session-list",o).innerHTML=s.map((x,i)=>'<div class="luria-session-step"><b>'+(i+1)+'</b><div><strong>'+esc(x.title)+'</strong><small>'+esc(x.detail)+'</small></div><span>'+x.min+' min</span></div>').join("")};render();
  all("[data-m]",o).forEach(b=>b.onclick=()=>{mins=Number(b.dataset.m);all("[data-m]",o).forEach(x=>x.classList.toggle("active",x===b));render()});
- $("#luria-session-remix",o).onclick=render;$("#luria-session-start",o).onclick=()=>{const first=o._steps?.[0];if(first?.href)location.href=first.href};
+ $("#luria-session-remix",o).onclick=render;$("#luria-session-start",o).onclick=()=>{
+   const steps=Array.isArray(o._steps)?o._steps:[];
+   if(!steps.length)return;
+   const planned=mins===999?steps.reduce((sum,x)=>sum+(Number(x.min)||0),0):mins;
+   try{sessionStorage.setItem("luria:guided-study-plan",JSON.stringify({minutes:planned,requestedMinutes:mins,steps,createdAt:Date.now()}));}catch{}
+   location.href="/ambientacao/?study_session=1";
+ };
 }
 function preExam(){
  const saved=JSON.parse(localStorage.getItem("luria:preexam")||"null");const o=modal("luria-preexam-overlay","Revisão pré-prova",'<p style="margin:0 0 12px;color:var(--muted);font-size:10px">Informe a prova e a data. A LURIA usa a proximidade da prova para priorizar revisões, questões e erros.</p><div class="luria-preexam-fields"><input id="luria-preexam-name" placeholder="Nome da prova, ex.: ENARE"><input id="luria-preexam-date" type="date"></div><div id="luria-preexam-plan" class="luria-session-list"></div><div class="luria-intel-actions"><button id="luria-preexam-save" class="luria-intel-button primary">Salvar revisão</button></div>');
