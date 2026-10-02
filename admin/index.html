@@ -16,7 +16,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria7">
   <link rel="stylesheet" href="assets/css/style.css?v=16.6">
-  <link rel="stylesheet" href="assets/css/admin.css?v=6.0-admin-login-theme">
+  <link rel="stylesheet" href="assets/css/admin.css?v=6.1-image-review">
   <link rel="stylesheet" href="assets/css/admin-editais.css?v=4">
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20-admin-factory-pwa">
   <link rel="canonical" href="/admin/">
@@ -128,7 +128,30 @@
           <button class="admin-view-tab" type="button" data-admin-view-tab="plantao" aria-selected="false">
             Plantão
           </button>
+          <button class="admin-view-tab" type="button" data-admin-view-tab="images" aria-selected="false">
+            Imagens
+            <span id="admin-images-pending-badge" class="admin-tab-badge" hidden>0</span>
+          </button>
         </nav>
+
+        <section class="admin-section admin-image-review-section" data-admin-view="images" hidden>
+          <div class="admin-section-head">
+            <div>
+              <span class="eyebrow">Revisão clínica</span>
+              <h2>Imagens para aprovação</h2>
+              <p>Exames, lesões de pele e outros achados visuais de fonte não confiável ficam bloqueados aqui até sua aprovação.</p>
+            </div>
+            <button id="admin-images-refresh" class="button secondary" type="button">Atualizar</button>
+          </div>
+          <div class="admin-image-review-rule">
+            <strong>Regra editorial</strong>
+            <span>Imagem decorativa pode entrar sem revisão. ECG, RX, TC, RM, USG, endoscopia, lâmina e lesão clínica sem fonte confiável exigem aprovação humana.</span>
+          </div>
+          <div id="admin-images-status" class="admin-status" aria-live="polite">Carregando fila de imagens...</div>
+          <div id="admin-images-list" class="admin-image-review-list">
+            <div class="admin-table-empty">Nenhuma imagem pendente.</div>
+          </div>
+        </section>
 
         <section class="admin-section" data-admin-view="plantao" hidden>
           <div class="admin-section-head">
@@ -1130,7 +1153,7 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
   <script src="assets/js/app.js?v=17.35-beta-feedback"></script>
   <script src="assets/js/admin-editais.js?v=3"></script>
   <script src="assets/js/question-factory-prompts.js?v=4.1-fast-gt86-clinical"></script>
-  <script src="assets/js/admin.js?v=20260929-l002-initial-approval-sync"></script>\n  <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
+  <script src="assets/js/admin.js?v=20261002-image-review"></script>\n  <script src="assets/js/question-factory-initial-package-fix.js?v=1"></script>
   <script defer src="assets/js/pwa.js?v=4"></script>
 </body>
 </html>
