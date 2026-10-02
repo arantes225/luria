@@ -1289,3 +1289,56 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     border-bottom:1px solid var(--border)!important;
   }
 }
+
+
+/* v25 — coluna direita contínua: LuriaZap, métricas e estatísticas */
+@media(min-width:961px){
+  body[data-page="plantao"] .sim-lower-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:14px!important;
+    margin-top:10px!important;
+    align-items:start!important;
+  }
+  body[data-page="plantao"] .sim-lower-left,
+  body[data-page="plantao"] .sim-lower-right{
+    min-width:0!important;
+  }
+  body[data-page="plantao"] .sim-lower-right{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:10px!important;
+  }
+  body[data-page="plantao"] .sim-stats-strip-compact{
+    width:100%!important;
+    margin:0!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  body[data-page="plantao"] .sim-chart-panel-raised{
+    width:100%!important;
+    margin:0!important;
+  }
+  body[data-page="plantao"] .sim-lower-left .sim-recent-panel{
+    width:100%!important;
+    margin:0!important;
+  }
+  body[data-page="plantao"] .sim-dashboard-grid{
+    display:none!important;
+  }
+}
+@media(max-width:960px){
+  body[data-page="plantao"] .sim-lower-grid{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+    margin-top:14px!important;
+  }
+  body[data-page="plantao"] .sim-lower-right{
+    display:grid!important;
+    gap:14px!important;
+  }
+  body[data-page="plantao"] .sim-stats-strip-compact{
+    width:100%!important;
+    margin:0!important;
+  }
+}
