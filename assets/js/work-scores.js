@@ -542,7 +542,7 @@
         selectField("Head impulse horizontal","h_hit",[opt("Anormal, com sacada corretiva",0),opt("Normal, sem sacada corretiva",1)])+
         selectField("Nistagmo","h_ntype",[opt("Horizontal unidirecional",0),opt("Muda de direção com o olhar ou é vertical/torsional",1)])+
         selectField("Test of skew","h_skew",[opt("Sem desvio vertical",0),opt("Skew/desalinhamento vertical presente",1)]);
-      $("select",f).forEach(x=>x.onchange=calcHints);
+      $$("select",f).forEach(x=>x.onchange=calcHints);
       setResult("—","Preencha os campos.","Use HINTS apenas em síndrome vestibular aguda contínua com nistagmo espontâneo e examinador treinado.");
     },
     framingham(f){
@@ -555,7 +555,7 @@
         selectField("Em tratamento anti-hipertensivo","f_tx",[opt("Não",0),opt("Sim",1)])+
         selectField("Tabagismo atual","f_smoke",[opt("Não",0),opt("Sim",1)])+
         selectField("Diabetes","f_dm",[opt("Não",0),opt("Sim",1)]);
-      $("input,select",f).forEach(x=>x.oninput=x.onchange=calcFramingham);
+      $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcFramingham);
       setResult("—","Preencha os campos.","Modelo validado em adultos de 30–74 anos sem doença cardiovascular prévia.");
     },
     news2(f){
@@ -603,7 +603,7 @@
         selectField("Parada cardíaca na admissão","gr_ca",yesno(39))+
         selectField("Desvio de ST","gr_st",yesno(28))+
         selectField("Biomarcadores de necrose miocárdica elevados","gr_bio",yesno(14));
-      $("input,select",f).forEach(x=>x.oninput=x.onchange=calcGrace); setResult("—","Preencha os campos.");
+      $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcGrace); setResult("—","Preencha os campos.");
     },
     psi(f){
       f.innerHTML=
@@ -613,14 +613,14 @@
         selectField("Neoplasia","p_ca",yesno(30))+selectField("Doença hepática","p_liv",yesno(20))+selectField("Insuficiência cardíaca","p_hf",yesno(10))+selectField("Doença cerebrovascular","p_cvd",yesno(10))+selectField("Doença renal","p_renal",yesno(10))+
         selectField("Alteração do estado mental","p_ams",yesno(20))+selectField("FR ≥30 irpm","p_rr",yesno(20))+selectField("PAS <90 mmHg","p_sbp",yesno(20))+selectField("Temperatura <35°C ou ≥40°C","p_temp",yesno(15))+selectField("FC ≥125 bpm","p_hr",yesno(10))+
         selectField("pH arterial <7,35","p_ph",yesno(30))+selectField("BUN ≥30 mg/dL","p_bun",yesno(20))+selectField("Sódio <130 mEq/L","p_na",yesno(20))+selectField("Glicose ≥250 mg/dL","p_glu",yesno(10))+selectField("Hematócrito <30%","p_hct",yesno(10))+selectField("PaO₂ <60 mmHg ou SatO₂ <90%","p_o2",yesno(10))+selectField("Derrame pleural","p_eff",yesno(10));
-      $("input,select",f).forEach(x=>x.oninput=x.onchange=calcPsi); setResult("—","Preencha os campos.");
+      $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcPsi); setResult("—","Preencha os campos.");
     },
     rts(f){
       f.innerHTML=
         selectField("Glasgow","r_gcs",[opt("13–15",4),opt("9–12",3),opt("6–8",2),opt("4–5",1),opt("3",0)])+
         selectField("PAS (mmHg)", "r_sbp",[opt(">89",4),opt("76–89",3),opt("50–75",2),opt("1–49",1),opt("0",0)])+
         selectField("FR (irpm)", "r_rr",[opt("10–29",4),opt(">29",3),opt("6–9",2),opt("1–5",1),opt("0",0)]);
-      $("select",f).forEach(x=>x.onchange=calcRts); setResult("—","Preencha os campos.");
+      $$("select",f).forEach(x=>x.onchange=calcRts); setResult("—","Preencha os campos.");
 
     }
   };
@@ -682,7 +682,7 @@
   }
 
   function calcRts(){
-    const v=$("#score-form select").map(x=>x.value); if(v.some(x=>x==="")) return setResult("—","Preencha todos os campos.");
+    const v=$$("#score-form select").map(x=>x.value); if(v.some(x=>x==="")) return setResult("—","Preencha todos os campos.");
     const [g,s,r]=v.map(Number); const weighted=0.9368*g+0.7326*s+0.2908*r;
     setResult(weighted.toFixed(3),`RTS ponderado: ${weighted.toFixed(3)} / 7,8408.`,"O máximo é 7,8408; valores menores indicam maior comprometimento fisiológico. É ferramenta prognóstica/triagem e não define conduta isoladamente.");
   }
