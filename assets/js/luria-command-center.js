@@ -32,9 +32,11 @@ function topbar(){return $(".topbar")}
 function modal(id,title,body){let o=d.getElementById(id);if(o)o.remove();o=d.createElement("div");o.id=id;o.className="luria-intel-overlay";o.innerHTML='<section class="luria-intel-modal" role="dialog" aria-modal="true"><header class="luria-intel-head"><h2>'+esc(title)+'</h2><button class="luria-intel-close" type="button" aria-label="Fechar">×</button></header>'+body+'</section>';d.body.appendChild(o);o.querySelector(".luria-intel-close").onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};return o}
 function installSearch(){
  const bar=topbar();if(!bar||d.getElementById("luria-global-search"))return;
- const b=d.createElement("button");b.id="luria-global-search";b.className="luria-command-trigger";b.type="button";b.innerHTML='⌕ <span>Buscar</span>';b.setAttribute("aria-label","Busca global");
- const menu=bar.querySelector("#menu-open,.menu-open");
- document.body.appendChild(b);
+ const controls=bar.querySelector(".luria-notifications");
+ if(!controls){setTimeout(installSearch,120);return}
+ const b=d.createElement("button");b.id="luria-global-search";b.className="luria-command-trigger luria-command-trigger-topbar";b.type="button";b.innerHTML='⌕ <span>Buscar</span>';b.setAttribute("aria-label","Busca global");
+ const timerWrap=controls.querySelector(".luria-pomodoro-top");
+ if(timerWrap)controls.insertBefore(b,timerWrap);else controls.prepend(b);
  const open=()=>{const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');const input=$("#luria-search-input",o),list=$("#luria-search-list",o);
  const render=()=>{const raw=input.value.trim(),expanded=expandSearch(raw).map(normSearch),tokens=expanded.flatMap(x=>x.split(/\s+/)).filter(Boolean);const queryNorm=normSearch(raw);const matches=routes.filter(r=>{if(!queryNorm)return true;const hay=localSearchText(r);if(hay.includes(queryNorm)||initialsSearch(r[0])===queryNorm)return true;return expanded.some(x=>x&&hay.includes(x))}).slice(0,14);list.innerHTML=matches.length?matches.map(r=>'<a class="luria-search-item" href="'+r[2]+'"><span><strong>'+esc(r[0])+'</strong><small>'+esc(r[1])+'</small></span><span class="luria-search-kind">'+esc(r[3])+'</span></a>').join(""):'<div class="luria-search-item"><span><strong>Nenhum atalho encontrado</strong><small>Tente outro termo. A busca clínica será ampliada conforme os bancos forem indexados.</small></span></div>';};input.oninput=render;render();setTimeout(()=>input.focus(),40)};
  b.onclick=open;d.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();open()}});
@@ -199,57 +201,4 @@ if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else bo
 
 
 
-;(()=> {
-  function syncGlobalSearchPosition(){
-    const search=document.getElementById("luria-global-search");
-    const bar=document.querySelector(".topbar");
-    if(!search||!bar)return;
-
-    const br=bar.getBoundingClientRect();
-    const notifications=bar.querySelector(".luria-notifications");
-    const heading=bar.querySelector(".page-heading");
-    const menu=bar.querySelector("#menu-open,.menu-open");
-    const nr=notifications?.getBoundingClientRect?.();
-    const hr=heading?.getBoundingClientRect?.();
-    const mr=menu?.getBoundingClientRect?.();
-
-    search.style.setProperty("position","fixed","important");
-    search.style.setProperty("right","auto","important");
-    search.style.setProperty("margin","0","important");
-    search.style.setProperty("z-index","246","important");
-    search.style.setProperty("transform","none","important");
-
-    let targetHeight=38;
-    const timer=bar.querySelector("#luria-pomodoro-toggle,.luria-pomodoro-toggle,.dl-timer");
-    const tr=timer?.getBoundingClientRect?.();
-    if(tr?.height) targetHeight=Math.round(tr.height);
-    search.style.setProperty("height",targetHeight+"px","important");
-    search.style.setProperty("min-height",targetHeight+"px","important");
-    search.style.setProperty("align-items","center","important");
-
-    const width=search.getBoundingClientRect().width||76;
-    let left=br.left+12;
-    let top=Math.round(br.top+(br.height-targetHeight)/2);
-
-    /* O Buscar acompanha o Timer: mesma linha e posição fixa imediatamente à esquerda. */
-    if(tr?.width && tr?.height){
-      left=Math.round(tr.left-width-10);
-      top=Math.round(tr.top+(tr.height-targetHeight)/2);
-    }else if(mr?.width && getComputedStyle(menu).display!=="none"){
-      left=mr.right+10;
-    }else if(hr?.width){
-      left=hr.right+12;
-    }
-
-    if(nr?.left && left+width>nr.left-10) left=Math.max(br.left+10,nr.left-width-10);
-    left=Math.max(8,left);
-
-    search.style.setProperty("top",top+"px","important");
-    search.style.setProperty("left",Math.round(left)+"px","important");
-  }
-
-  const run=()=>requestAnimationFrame(()=>requestAnimationFrame(syncGlobalSearchPosition));
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run);else run();
-  window.addEventListener("resize",run,{passive:true});
-  new MutationObserver(run).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["data-theme","class","data-dashboard-layout"]});
-})();
+/* Buscar fica dentro do mesmo grupo fixo da topbar do Timer. */
