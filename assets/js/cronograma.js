@@ -4433,6 +4433,60 @@ function errorItemsOnDate(date) {
   );
 }
 
+function renderOverdueLessonsCard() {
+  const list = document.getElementById("agenda-overdue-list");
+  const count = document.getElementById("agenda-overdue-count");
+  const reinsert = document.getElementById("agenda-overdue-reinsert");
+  if (!list || !count || !reinsert) return;
+
+  const overdue = scheduleState.topics
+    .filter(isTopicOverdue)
+    .sort((a, b) => String(a.scheduled_date || "").localeCompare(String(b.scheduled_date || "")));
+
+  count.textContent = String(overdue.length);
+  reinsert.disabled = overdue.length === 0;
+
+  if (!overdue.length) {
+    list.innerHTML = '<div class="agenda-overdue-empty">Nenhuma aula atrasada. Seu cronograma está em dia.</div>';
+  } else {
+    const visible = overdue.slice(0, 6);
+    list.innerHTML = visible.map((topic) => {
+      const title = topic.theme || topic.materia || topic.area || "Aula";
+      const meta = [topic.area, topic.materia]
+        .filter(Boolean)
+        .filter((value, index, arr) => arr.indexOf(value) === index)
+        .join(" · ");
+      const date = topic.scheduled_date
+        ? formatDateLabelSchedule(topic.scheduled_date)
+        : "data anterior";
+      return `
+        <div class="agenda-overdue-item">
+          <div class="agenda-overdue-copy">
+            <strong title="${escapeScheduleHtml(title)}">${escapeScheduleHtml(title)}</strong>
+            <span>${escapeScheduleHtml(meta || "Aula")} · atrasada desde ${escapeScheduleHtml(date)}</span>
+          </div>
+          <button
+            class="agenda-overdue-to-deck"
+            type="button"
+            data-overdue-to-deck="${escapeScheduleHtml(topic.id)}"
+          >Mover para o deck</button>
+        </div>`;
+    }).join("") + (overdue.length > visible.length
+      ? `<div class="agenda-overdue-empty">+${overdue.length - visible.length} aula${overdue.length - visible.length === 1 ? "" : "s"} atrasada${overdue.length - visible.length === 1 ? "" : "s"}.</div>`
+      : "");
+  }
+
+  list.querySelectorAll("[data-overdue-to-deck]").forEach((button) => {
+    button.onclick = async () => {
+      button.disabled = true;
+      await returnTopicToDeck(button.dataset.overdueToDeck);
+    };
+  });
+
+  reinsert.onclick = openReorganizeOverdueDialog;
+}
+
+
 function renderSummary() {
   const deck = scheduleState.topics.filter(
     (topic) =>
@@ -8326,6 +8380,7 @@ function renderSchedule() {
   }
 
   renderSummary();
+  renderOverdueLessonsCard();
   renderPlanner();
   renderDeck();
   renderThemeLibrary();
