@@ -14378,7 +14378,7 @@ function renderLibrary() {
     return '<section class="notebook-area-shelf"><header class="notebook-area-shelf-head"><span class="notebook-area-shelf-icon">'+areaIcon(area)+'</span><div><strong>'+escapeHtml(area)+'</strong><small>'+subjects.size+' matéria'+(subjects.size===1?'':'s')+'</small></div></header><div class="notebook-book-grid">'+[...subjects].map(subject=>{
       const pages=entries.filter(e=>subjectFor(e)===subject);
       const key=encodeURIComponent(area+"|||"+subject);
-      return '<article class="notebook-book-card notebook-subject-card" data-subject-card="'+key+'"><div class="notebook-book-top"><span class="notebook-book-icon">'+areaIcon(subject)+'</span><span class="notebook-book-menu">›</span></div><h3>'+escapeHtml(subject)+'</h3><p>'+escapeHtml(area)+'</p><div class="notebook-book-meta"><span><b>'+pages.length+'</b><small>páginas</small></span></div><button class="notebook-book-open" type="button" data-open-subject="'+key+'" aria-label="Abrir '+escapeHtml(subject)+'"></button></article>';
+      return '<article class="notebook-book-card notebook-subject-card" data-subject-card="'+key+'"><div class="notebook-book-top"><span class="notebook-book-icon">'+areaIcon(subject)+'</span><div class="notebook-book-actions"><button class="notebook-book-menu" type="button" data-book-menu="'+key+'" aria-label="Opções do caderno" aria-expanded="false">⋯</button><div class="notebook-book-menu-popover" data-book-menu-popover="'+key+'" hidden><button type="button" data-book-edit="'+key+'">Editar</button><button type="button" class="danger" data-book-delete="'+key+'">Apagar</button></div></div></div><h3>'+escapeHtml(subject)+'</h3><p>'+escapeHtml(area)+'</p><div class="notebook-book-meta"><span><b>'+pages.length+'</b><small>páginas</small></span></div><button class="notebook-book-open" type="button" data-open-subject="'+key+'" aria-label="Abrir '+escapeHtml(subject)+'"></button></article>';
     }).join("")+'<button class="notebook-add-book-card notebook-add-subject-book" type="button" data-notebook-add-subject="'+addSubjectKey+'" aria-label="Criar caderno de matéria em '+escapeHtml(area)+'"><span>＋</span><small>Criar caderno de matéria</small></button></div></section>';
   }).join("");
 
@@ -14386,6 +14386,92 @@ function renderLibrary() {
 
   const openEntry=id=>{const note=noteById(id);if(!note)return;if(note.topic_id&&!note.is_shared)openTopic(note.topic_id);else openFreeNote(note.id)};
   list.querySelectorAll("[data-open-note]").forEach(b=>b.addEventListener("click",()=>openEntry(b.dataset.openNote)));
+
+  const closeBookMenus=()=>{
+    list.querySelectorAll("[data-book-menu-popover]").forEach(menu=>menu.hidden=true);
+    list.querySelectorAll("[data-book-menu]").forEach(button=>button.setAttribute("aria-expanded","false"));
+  };
+
+  list.querySelectorAll("[data-book-menu]").forEach(button=>button.addEventListener("click",(event)=>{
+    event.preventDefault();
+    event.stopPropagation();
+    const key=button.dataset.bookMenu;
+    const menu=list.querySelector('[data-book-menu-popover="'+CSS.escape(key)+'"]');
+    const wasOpen=menu && !menu.hidden;
+    closeBookMenus();
+    if(menu && !wasOpen){menu.hidden=false;button.setAttribute("aria-expanded","true");}
+  }));
+
+  list.querySelectorAll("[data-book-edit]").forEach(button=>button.addEventListener("click",async(event)=>{
+    event.preventDefault();
+    event.stopPropagation();
+    const [area,subject]=decodeURIComponent(button.dataset.bookEdit||"").split("|||");
+    const pages=(realByArea.get(area)||[]).filter(e=>subjectFor(e)===subject);
+    closeBookMenus();
+    if(!pages.length){
+      await window.LuriaDialog?.alert?.("Crie ao menos uma página neste caderno antes de renomeá-lo.");
+      return;
+    }
+    const next=String(await window.LuriaDialog.prompt("Novo nome do caderno:",subject)||"").trim();
+    if(!next || next===subject)return;
+    const owned=pages.filter(e=>!e.note?.is_shared && e.note?.user_id===notebookState.user?.id);
+    if(!owned.length){
+      await window.LuriaDialog?.alert?.("Este caderno não pode ser renomeado porque você não é o proprietário.");
+      return;
+    }
+    const ids=owned.map(e=>e.note.id);
+    const {data,error}=await notebookSb.from("study_notes").update({materia:next}).in("id",ids).eq("user_id",notebookState.user.id).select("id,materia,updated_at");
+    if(error){
+      console.error(error);
+      await window.LuriaDialog?.alert?.("Não foi possível renomear o caderno: "+error.message);
+      return;
+    }
+    (data||[]).forEach(row=>{
+      const note=notebookState.notesById.get(row.id);
+      if(note){note.materia=row.materia;note.updated_at=row.updated_at||note.updated_at;}
+    });
+    renderLibrary();
+  }));
+
+  list.querySelectorAll("[data-book-delete]").forEach(button=>button.addEventListener("click",async(event)=>{
+    event.preventDefault();
+    event.stopPropagation();
+    const [area,subject]=decodeURIComponent(button.dataset.bookDelete||"").split("|||");
+    const pages=(realByArea.get(area)||[]).filter(e=>subjectFor(e)===subject);
+    closeBookMenus();
+    if(!pages.length){
+      await window.LuriaDialog?.alert?.("Este caderno ainda não possui páginas para apagar.");
+      return;
+    }
+    const owned=pages.filter(e=>!e.note?.is_shared && e.note?.user_id===notebookState.user?.id);
+    if(!owned.length){
+      await window.LuriaDialog?.alert?.("Este caderno não pode ser apagado porque você não é o proprietário.");
+      return;
+    }
+    const confirmed=await window.LuriaDialog.confirm('Apagar o caderno "'+subject+'" e '+owned.length+' página'+(owned.length===1?"":"s")+'? Esta ação não pode ser desfeita.');
+    if(!confirmed)return;
+    const ids=owned.map(e=>e.note.id);
+    const {error}=await notebookSb.from("study_notes").delete().in("id",ids).eq("user_id",notebookState.user.id);
+    if(error){
+      console.error(error);
+      await window.LuriaDialog?.alert?.("Não foi possível apagar o caderno: "+error.message);
+      return;
+    }
+    owned.forEach(entry=>{
+      notebookState.notesById.delete(entry.note.id);
+      if(entry.note.topic_id){
+        const mapped=notebookState.notesByTopic.get(entry.note.topic_id);
+        if(mapped?.id===entry.note.id)notebookState.notesByTopic.delete(entry.note.topic_id);
+      }
+    });
+    renderTopicList();
+    renderLibrary();
+  }));
+
+  document.addEventListener("click",(event)=>{
+    if(!event.target.closest?.(".notebook-book-actions"))closeBookMenus();
+  },{once:true});
+
   list.querySelectorAll("[data-open-subject]").forEach(b=>b.addEventListener("click",()=>{
     const [area,subject]=decodeURIComponent(b.dataset.openSubject).split("|||");
     const pages=(realByArea.get(area)||[]).filter(e=>subjectFor(e)===subject);
