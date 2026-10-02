@@ -2921,6 +2921,44 @@ body.theme-dark[data-page="questoes"] #qs-daily-card{
   }
 }
 </style>
+<style id="qs-daily-button-exact-flash-v73">
+/* Questões do dia — botão idêntico ao Iniciar revisão dos Flashcards do dia. */
+body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:max-content!important;
+  min-width:0!important;
+  max-width:none!important;
+  min-height:42px!important;
+  height:42px!important;
+  padding:0 17px!important;
+  margin:10px auto 0!important;
+  border:1px solid rgba(255,255,255,.92)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  color:#184888!important;
+  box-shadow:0 7px 18px rgba(0,0,0,.16)!important;
+  font-family:inherit!important;
+  font-size:13px!important;
+  line-height:1!important;
+  font-weight:850!important;
+  text-decoration:none!important;
+  white-space:nowrap!important;
+  box-sizing:border-box!important;
+}
+:root[data-theme="dark"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary,
+body.theme-dark[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary{
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
+}
+:root[data-theme="leila-mood"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary,
+:root[data-theme="pink"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary,
+:root[data-theme="rosa"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary{
+  color:var(--accent)!important;
+}
+</style>
 </head>
 
 <body data-page="questoes">
