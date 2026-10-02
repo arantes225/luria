@@ -4904,21 +4904,26 @@ function renderErrorHomeExtras(){
     const reviewed=errorLibraryItems.filter(i=>Number(i.review_count||0)>0).length;
     const dueCount=errorLibraryItems.filter(i=>!i.due_date||i.due_date<=errorTodayISO()).length;
     const recurring=errorLibraryItems.filter(i=>Number(i.review_count||0)>=2).length;
-    const areaCounts=new Map(); errorLibraryItems.forEach(i=>{const k=i.area||"Sem área";areaCounts.set(k,(areaCounts.get(k)||0)+1)});
-    const areas=[...areaCounts.entries()].sort((x,y)=>y[1]-x[1]).slice(0,5);
     metrics.innerHTML=`
       <div class="error-metric-summary-grid">
         <div><span>Erros totais</span><strong>${total}</strong><small>itens salvos</small></div>
         <div><span>Revisões</span><strong>${totalReviews}</strong><small>vezes revisado</small></div>
         <div><span>Retenção</span><strong>${retentionPct}%</strong><small>consolidação atual</small></div>
       </div>
-      <div class="error-metric-progress"><div class="error-metric-ring" style="--p:${total?Math.round(reviewed/total*100):0}"><strong>${reviewed}</strong><span>de ${total}</span></div><div><strong>Revisados</strong><span>${total?Math.round(reviewed/total*100):0}% do caderno</span><div class="error-metric-track"><i style="width:${total?Math.round(reviewed/total*100):0}%"></i></div></div></div>
-      <div class="error-metric-mini-grid">
-        <div><b>↻</b><strong>${recurring}</strong><span>Erros recorrentes</span></div>
-        <div><b>△</b><strong>${dueCount}</strong><span>A revisar agora</span></div>
+      <div class="error-metric-progress">
+        <div class="error-metric-ring" style="--p:${total?Math.round(reviewed/total*100):0}">
+          <strong>${reviewed}</strong><span>revisados</span>
+        </div>
+        <div>
+          <strong>Progresso de revisão</strong>
+          <span>${total?Math.round(reviewed/total*100):0}% do caderno revisado</span>
+          <div class="error-metric-track"><i style="width:${total?Math.round(reviewed/total*100):0}%"></i></div>
+        </div>
       </div>
-      <h4>Erros por área</h4>
-      <div class="error-metric-areas">${areas.map(([name,n])=>`<div><span>${errorLibraryEscape(name)}</span><i><b style="width:${total?Math.round(n/total*100):0}%"></b></i><em>${total?Math.round(n/total*100):0}%</em></div>`).join("")}</div>`;
+      <div class="error-metric-mini-grid">
+        <div><b>✓</b><strong>${recurring}</strong><span>Recorrentes</span></div>
+        <div><b>▥</b><strong>${dueCount}</strong><span>A revisar</span></div>
+      </div>`;
   }
 }
 async function deleteErrorNotebook(area,name){
