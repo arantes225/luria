@@ -102,7 +102,7 @@
     .guided-study-action{display:flex;align-items:center;gap:8px;color:var(--accent);font-weight:850;font-size:.78rem;white-space:nowrap}.guided-study-action::after{content:"→";font-size:1rem}
     .guided-study-item.is-done .guided-study-action{color:#18885c}.guided-study-item.is-done .guided-study-action::after{content:"✓"}
     .guided-study-finale{display:none;text-align:center;padding:26px 18px;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,var(--surface)),var(--surface));animation:guidedWin .55s ease both}
-    .guided-study-finale.is-visible{display:block}.guided-study-finale .guided-trophy{font-size:42px;display:block;margin-bottom:8px;animation:guidedBounce .8s ease both}.guided-study-finale h3{margin:0 0 5px;font-size:1.25rem}.guided-study-finale p{margin:0;color:var(--muted)}
+    .guided-study-finale.is-visible{display:block}.guided-study-finale .guided-trophy{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 9px;border-radius:16px;background:var(--accent-soft);color:var(--accent);animation:guidedBounce .8s ease both}.guided-study-finale .guided-trophy svg{width:30px;height:30px}.guided-study-finale h3{margin:0 0 5px;font-size:1.25rem}.guided-study-finale p{margin:0;color:var(--muted)}
     @keyframes guidedPulse{0%,100%{box-shadow:0 0 0 4px var(--accent-soft)}50%{box-shadow:0 0 0 9px color-mix(in srgb,var(--accent) 8%,transparent)}}
     @keyframes guidedWin{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
     @keyframes guidedBounce{0%{transform:scale(.6) rotate(-8deg)}60%{transform:scale(1.15) rotate(4deg)}100%{transform:scale(1) rotate(0)}}
@@ -143,7 +143,7 @@
           <div id="guided-study-banner" class="guided-study-banner" aria-live="polite"></div>
           <div id="guided-study-list" class="guided-study-list"></div>
           <div id="guided-study-finale" class="guided-study-finale">
-            <span class="guided-trophy">🏆</span>
+            <span class="guided-trophy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v3c0 3.3-1.8 5.7-4 6.5C9.8 12.7 8 10.3 8 7V4Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 6H5v1.2c0 2 1.2 3.5 3.2 3.8M16 6h3v1.2c0 2-1.2 3.5-3.2 3.8M12 13.5V17m-3 3h6m-5-3h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
             <h3>Sessão vencida</h3>
             <p>Você concluiu as três etapas planejadas. Mandou bem.</p>
           </div>
