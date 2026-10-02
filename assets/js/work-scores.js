@@ -31,7 +31,7 @@
         q("Resposta verbal",[opt("Orientada",5),opt("Confusa",4),opt("Palavras inapropriadas",3),opt("Sons incompreensíveis",2),opt("Nenhuma",1)]),
         q("Resposta motora",[opt("Obedece comandos",6),opt("Localiza o estímulo doloroso",5),opt("Flexão normal (retirada)",4),opt("Flexão anormal",3),opt("Extensão",2),opt("Nenhuma",1)])
       ],
-      interpret: sumInterpret([[3,8,"Comprometimento grave"],[9,12,"Comprometimento moderado"],[13,15,"Comprometimento leve ou ausente"]]),
+      interpret: sumInterpret([[3,8,"Glasgow 3–8: comprometimento grave do nível de consciência. Avaliar via aérea e causas reversíveis; a decisão de intubação não deve depender apenas do número."],[9,12,"Glasgow 9–12: comprometimento moderado; requer reavaliação seriada e investigação da causa."],[13,15,"Glasgow 13–15: comprometimento leve ou ausência de rebaixamento importante; pequenas quedas ainda podem ser clinicamente relevantes."]]),
       reference:"Teasdale G, Jennett B. Lancet. 1974."
     },
     {id:"news2",name:"NEWS2",category:"Emergência",aliases:"deterioração sinais vitais enfermaria",desc:"Detecção de deterioração clínica a partir de parâmetros fisiológicos.",tags:["Plantão","Enfermaria"],custom:"news2",reference:refs.news2},
@@ -51,7 +51,7 @@
         q("Fatores de risco",[opt("Nenhum",0),opt("1–2",1),opt("≥3 ou doença aterosclerótica conhecida",2)]),
         q("Troponina convencional",[opt("≤ limite superior",0),opt("1–3× limite superior",1),opt("≥3× limite superior",2)],"Para hs-cTn, usar protocolo específico do ensaio.")
       ],
-      interpret:sumInterpret([[0,3,"HEART 0–3: baixo risco"],[4,6,"HEART 4–6: risco intermediário"],[7,10,"HEART 7–10: alto risco"]]),
+      interpret:sumInterpret([[0,3,"HEART 0–3: baixo risco de eventos cardíacos maiores no modelo original; usar dentro de protocolo de dor torácica com troponina adequada e ECG."],[4,6,"HEART 4–6: risco intermediário; geralmente requer observação, troponinas seriadas e estratégia adicional conforme protocolo."],[7,10,"HEART 7–10: alto risco; requer avaliação cardiológica e estratégia para SCA conforme apresentação clínica."]]),
       reference:refs.heart
     },
     {
@@ -94,7 +94,7 @@
         q("Idade ≥50 anos",yesno()),q("FC ≥100 bpm",yesno()),q("SpO₂ <95%",yesno()),q("Edema unilateral de perna",yesno()),
         q("Hemoptise",yesno()),q("Cirurgia/trauma recente",yesno()),q("TEP/TVP prévia",yesno()),q("Uso de estrogênio",yesno())
       ],
-      interpret:(n)=> n===0 ? "PERC negativo (0 critérios) — somente aplicável se probabilidade clínica pré-teste for baixa." : `PERC positivo: ${n} critério(s). A regra não permite excluir TEP.`,
+      interpret:(n)=> n===0 ? "PERC 0: em paciente com baixa probabilidade clínica pré-teste, permite excluir TEP sem D-dímero em cenários validados." : `PERC positivo: ${n} critério(s). Não diagnostica TEP; significa apenas que a regra não pode ser usada para encerrar a investigação.`,
       reference:"Kline JA et al. J Thromb Haemost. 2004;2:1247–1255."
     },
     {
@@ -136,7 +136,7 @@
       q("9. Linguagem",[opt("Sem afasia",0),opt("Afasia leve/moderada",1),opt("Afasia grave",2),opt("Mudo/afasia global",3)]),
       q("10. Disartria",[opt("Normal",0),opt("Leve/moderada",1),opt("Grave/ininteligível",2)]),
       q("11. Extinção/desatenção",[opt("Ausente",0),opt("Desatenção em uma modalidade",1),opt("Desatenção profunda",2)])
-    ],interpret:(n)=>`NIHSS total: ${n}/42. Use a escala completa e as regras oficiais para itens não testáveis.`,reference:refs.nihss},
+    ],interpret:(n)=>n===0?"NIHSS 0/42: nenhum déficit mensurável pela escala, o que não exclui AVC, especialmente déficits posteriores ou incapacitantes não captados.":n<=4?`NIHSS ${n}/42: faixa frequentemente descrita como déficit leve. Não usar o corte isoladamente para decidir trombólise/trombectomia.`:n<=15?`NIHSS ${n}/42: déficit neurológico moderado pela classificação descritiva mais usada; tratamento depende de tempo, imagem e déficit incapacitante.`:n<=20?`NIHSS ${n}/42: déficit moderado a grave.`:`NIHSS ${n}/42: déficit grave.`,reference:refs.nihss},
     {
       id:"abcd2",name:"ABCD²",category:"Neurologia",aliases:"AIT TIA AVC",desc:"Estratificação de risco após ataque isquêmico transitório.",tags:["AIT","Neurologia"],
       questions:[
@@ -156,7 +156,7 @@
         q("Ascite",[opt("Ausente",1),opt("Leve/controlada",2),opt("Moderada/grave/refratária",3)]),
         q("Encefalopatia",[opt("Ausente",1),opt("Grau I–II",2),opt("Grau III–IV",3)])
       ],
-      interpret:sumInterpret([[5,6,"Child-Pugh A"],[7,9,"Child-Pugh B"],[10,15,"Child-Pugh C"]]),
+      interpret:sumInterpret([[5,6,"Child-Pugh A (5–6): menor comprometimento da reserva hepática."],[7,9,"Child-Pugh B (7–9): comprometimento moderado da reserva hepática."],[10,15,"Child-Pugh C (10–15): comprometimento grave da reserva hepática e pior prognóstico."]]),
       reference:"Pugh RNH et al. Br J Surg. 1973;60:646–649."
     },
     {id:"meldna",name:"MELD-Na",category:"Gastro/Hepato",aliases:"cirrose transplante sódio INR creatinina bilirrubina",desc:"Pontuação prognóstica baseada em bilirrubina, INR, creatinina e sódio.",tags:["Hepatologia","Cirrose"],custom:"meldna",reference:refs.meld},
@@ -170,7 +170,7 @@
     {
       id:"alvarado",name:"Alvarado",category:"Cirurgia",aliases:"apendicite MANTRELS",desc:"Estima a probabilidade clínica de apendicite aguda.",tags:["Cirurgia","Abdome agudo"],
       questions:[q("Migração da dor para FID",yesno()),q("Anorexia",yesno()),q("Náuseas/vômitos",yesno()),q("Dor à palpação em FID",yesno(2)),q("Descompressão dolorosa",yesno()),q("Febre",yesno()),q("Leucocitose",yesno(2)),q("Desvio à esquerda",yesno())],
-      interpret:sumInterpret([[0,4,"Alvarado 0–4: menor probabilidade"],[5,6,"Alvarado 5–6: probabilidade intermediária"],[7,10,"Alvarado 7–10: maior probabilidade"]]),
+      interpret:sumInterpret([[0,4,"Alvarado 0–4: apendicite menos provável; observar evolução e considerar diagnósticos alternativos se a suspeita clínica persistir."],[5,6,"Alvarado 5–6: quadro compatível/intermediário; costuma justificar observação e investigação adicional."],[7,8,"Alvarado 7–8: alta probabilidade clínica de apendicite."],[9,10,"Alvarado 9–10: probabilidade clínica muito alta pelo escore."]]),
       reference:"Alvarado A. Ann Emerg Med. 1986;15:557–564."
     },
     {
@@ -319,7 +319,7 @@
         q("Cefaleia / plenitude cefálica",[opt("Nenhuma",0),opt("1",1),opt("2",2),opt("3",3),opt("Moderada",4),opt("5",5),opt("6",6),opt("Extremamente grave",7)]),
         q("Orientação",[opt("Orientado",0),opt("Não sabe data / cálculo seriado incerto",1),opt("Desorientado na data em até 2 dias",2),opt("Desorientado na data >2 dias",3),opt("Desorientado em lugar/pessoa",4)])
       ],
-      interpret:(n)=>n<=9?"CIWA-Ar 0–9: abstinência leve.":n<=18?"CIWA-Ar 10–18: abstinência moderada.":"CIWA-Ar >18: abstinência grave.",
+      interpret:(n)=>n<=9?"CIWA-Ar 0–9: abstinência leve; monitorização e tratamento dependem de sintomas, comorbidades e protocolo.":n<=18?"CIWA-Ar 10–18: abstinência moderada; geralmente requer tratamento farmacológico guiado por sintomas e monitorização próxima.":"CIWA-Ar ≥19: abstinência grave, com maior risco de complicações; requer manejo intensivo conforme protocolo.",
       reference:"Ministério da Saúde — Linha de Cuidado para Transtornos por Uso de Álcool no Adulto; CIWA-Ar."
     },
     {
@@ -368,7 +368,7 @@
         q("Linfonodos cervicais anteriores dolorosos",yesno()),
         q("Idade",[opt("3–14 anos",1),opt("15–44 anos",0),opt("≥45 anos",-1)])
       ],
-      interpret:(n)=>n<=0?"McIsaac ≤0: baixa probabilidade clínica.":n===1?"McIsaac 1: baixa probabilidade.":n<=3?"McIsaac 2–3: probabilidade intermediária; considerar teste conforme protocolo local.":"McIsaac ≥4: maior probabilidade clínica; confirmar e conduzir conforme protocolo local.",
+      interpret:(n)=>n<=0?"McIsaac ≤0: baixa probabilidade de estreptococo do grupo A; em geral não testar nem tratar empiricamente, salvo contexto específico.":n===1?"McIsaac 1: baixa probabilidade; geralmente sem indicação de antibiótico empírico.":n<=3?"McIsaac 2–3: probabilidade intermediária; confirmar com teste rápido/cultura quando disponível antes de antibiótico.":"McIsaac ≥4: maior probabilidade clínica; ainda assim, confirmação microbiológica é preferível quando disponível e a conduta deve seguir o protocolo local.",
       reference:"Centor RM et al. Med Decis Making. 1981;1:239–246; McIsaac WJ et al. CMAJ. 1998;158:75–83."
     }
 
@@ -668,7 +668,7 @@
     const crP=cr<0.4?1:cr<0.8?4:cr<1.2?7:cr<1.6?10:cr<2?13:cr<4?21:28;
     const n=ageP+hrP+sbpP+crP+["gr_k","gr_ca","gr_st","gr_bio"].reduce((a,id)=>a+Number($("#"+id).value),0);
     const txt=n<=108?"GRACE ≤108: faixa de menor risco.":n<=140?"GRACE 109–140: risco intermediário.":"GRACE >140: alto risco.";
-    setResult(String(n),txt,"Pontuação GRACE para SCA; usar em conjunto com estratégia invasiva e avaliação clínica.");
+    setResult(String(n),txt,n>140?"GRACE >140 identifica grupo de alto risco em SCA sem supra e é um dos critérios usados para estratégia invasiva precoce, junto ao quadro clínico.":"Use o GRACE junto a ECG, troponina, estabilidade hemodinâmica e estratégia de SCA; o escore não substitui a avaliação clínica.");
   }
 
   function calcPsi(){
@@ -678,13 +678,13 @@
     if($("#p_sex").value==="f") n-=10;
     for(const id of ids.slice(2)) n+=Number($("#"+id).value);
     const cls=n<=70?"Classe II":n<=90?"Classe III":n<=130?"Classe IV":"Classe V";
-    setResult(String(n),`PSI/PORT: ${cls}.`,"A Classe I exige algoritmo clínico específico; esta calculadora usa a pontuação numérica para Classes II–V.");
+    const psiText=cls==="Classe II"?"PSI Classe II: baixo risco; tratamento ambulatorial pode ser apropriado se não houver outros motivos para internação.":cls==="Classe III"?"PSI Classe III: baixo a intermediário; considerar observação curta ou internação breve conforme contexto.":cls==="Classe IV"?"PSI Classe IV: risco elevado; manejo hospitalar é geralmente indicado.":"PSI Classe V: risco muito elevado; manejo hospitalar e avaliação de gravidade/UTI conforme quadro.";setResult(String(n),psiText,"A Classe I exige algoritmo clínico específico; esta calculadora numérica classifica apenas Classes II–V.");
   }
 
   function calcRts(){
     const v=$("#score-form select").map(x=>x.value); if(v.some(x=>x==="")) return setResult("—","Preencha todos os campos.");
     const [g,s,r]=v.map(Number); const weighted=0.9368*g+0.7326*s+0.2908*r;
-    setResult(weighted.toFixed(3),`RTS ponderado: ${weighted.toFixed(3)} / 7,840.`,"Quanto menor o RTS, maior a gravidade fisiológica do trauma.");
+    setResult(weighted.toFixed(3),`RTS ponderado: ${weighted.toFixed(3)} / 7,8408.`,"O máximo é 7,8408; valores menores indicam maior comprometimento fisiológico. É ferramenta prognóstica/triagem e não define conduta isoladamente.");
   }
 
   function calcNews2(){
