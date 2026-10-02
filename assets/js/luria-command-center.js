@@ -201,6 +201,12 @@ if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else bo
       const titleRect=titleCard?.getBoundingClientRect?.();
       const mainRect=main?.getBoundingClientRect?.();
       left=titleRect?.width?titleRect.left:(mainRect?mainRect.left+(window.innerWidth<=700?14:28):left);
+    }else if(document.body?.dataset?.page==="sessao_estudo"){
+      if(mr?.width && getComputedStyle(menu).display!=="none"){
+        left=mr.right+10;
+      }else{
+        left=br.left+12;
+      }
     }else if(mr?.width && getComputedStyle(menu).display!=="none"){
       left=mr.right+10;
     }else if(hr?.width){
