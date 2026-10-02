@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v220-study-durations";
+const CACHE_VERSION = "luria-pwa-v221-mode-switch-pwa";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
