@@ -8137,3 +8137,39 @@ body[data-page="plantao"] .plantao-phone-profile-avatar-header{
     margin-top:0!important;
   }
 }
+
+
+/* Sala de Emergência v61 — OSCE usa a mesma composição visual do Início. */
+body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-inner-switch{
+  display:block!important;
+}
+body.plantao-module-entry[data-case-library-view="osce"] .plantao-filter-row{
+  display:none!important;
+}
+body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-toolbar{
+  gap:6px!important;
+}
+body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-head{
+  padding-top:0!important;
+}
+@media(min-width:941px){
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-primary-switch-wrap,
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-side{
+    grid-row:2!important;
+    align-self:start!important;
+    margin-top:0!important;
+    padding-top:0!important;
+  }
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-primary-switch-wrap{
+    grid-column:1!important;
+  }
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-side{
+    grid-column:2!important;
+    position:static!important;
+    top:auto!important;
+    transform:none!important;
+  }
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-side>.plantao-side-card:first-child{
+    margin-top:0!important;
+  }
+}
