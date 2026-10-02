@@ -3504,6 +3504,147 @@
     ].filter(Boolean).join(" "));
   }
 
+  function oxygenTargetForCurrentCase(){
+    const target=physiologicTargetText();
+    const rr=Number(state.vitals?.rr);
+    const current=Number(state.vitals?.spo2);
+    if(!Number.isFinite(current)) return null;
+    if(state.vitals?.pulse===false || Number(state.vitals?.hr)===0) return current;
+
+    // Situações em que oxigênio isolado não corrige a fisiologia sem ventilação/desobstrução.
+    if(
+      rr===0
+      || (/obstrucao de via aerea|engasgo|corpo estranho/.test(target) && rr<=8)
+      || (/opioide|depressao respiratoria|afogamento|aspiracao/.test(target) && rr<=6)
+    ){
+      return Math.min(92,Math.max(current+6,84));
+    }
+
+    // Na exacerbação hipercápnica de DPOC, manter resposta controlada em vez de hiperóxia.
+    if(/dpoc|hipercapn/.test(target)) return Math.max(current,94);
+
+    // Oximetria convencional não mede adequadamente carboxi-hemoglobina.
+    if(/monoxido de carbono|carboxi/.test(target)) return current;
+
+    // Nos demais casos com ventilação espontânea, oxigênio suplementar precisa
+    // produzir resposta visível e coerente no monitor.
+    return Math.max(current,98);
+  }
+
+  function applyUniversalPhysiologicResponse(action,original,beforeVitals={}){
+    if(!action) return;
+    const id=String(original?.id||action.id||"");
+    const label=normalizeLabel([id,action.label,original?.label].filter(Boolean).join(" "));
+    const category=String(action.category||original?.category||"");
+    const explicit=(action.effects && typeof action.effects.vitals==="object") ? action.effects.vitals : {};
+    const target=physiologicTargetText();
+    const before=beforeVitals||{};
+    const treatment=["iniciais","tratamento","procedimentos_terapeuticos"].includes(category);
+    if(!treatment) return;
+
+    const currentSpo2=Number(state.vitals?.spo2);
+    const currentHr=Number(state.vitals?.hr);
+    const currentRr=Number(state.vitals?.rr);
+    const bp=parsedBP(state.vitals?.bp);
+    const temp=Number(state.vitals?.temp);
+    const clinicalClass=normalizeLabel(action.clinical_class||original?.clinical_class||"");
+
+    // Oxigênio e suportes ventilatórios: alvo fisiológico, não apenas registro da ação.
+    if(id==="oxygen" || /oxigenio|oxigenoterapia/.test(label)){
+      const goal=oxygenTargetForCurrentCase();
+      if(Number.isFinite(goal) && (!Object.prototype.hasOwnProperty.call(explicit,"spo2") || Number(state.vitals?.spo2)<goal)){
+        state.vitals={...state.vitals,spo2:goal};
+      }
+      if(Number.isFinite(currentRr) && currentRr>22 && !Object.prototype.hasOwnProperty.call(explicit,"rr")){
+        state.vitals={...state.vitals,rr:Math.max(12,currentRr-2)};
+      }
+      return;
+    }
+
+    if(id==="bvm" || /bolsa.valvula|ventilacao com bolsa/.test(label)){
+      if(Number.isFinite(currentSpo2)) state.vitals={...state.vitals,spo2:Math.max(currentSpo2,99)};
+      if(!Object.prototype.hasOwnProperty.call(explicit,"rr")) state.vitals={...state.vitals,rr:12};
+      return;
+    }
+
+    if(id==="niv" || /ventilacao nao invasiva|cpap|bipap/.test(label)){
+      if(Number.isFinite(currentSpo2)) state.vitals={...state.vitals,spo2:Math.max(currentSpo2,98)};
+      if(Number.isFinite(currentRr) && !Object.prototype.hasOwnProperty.call(explicit,"rr")) state.vitals={...state.vitals,rr:Math.max(16,currentRr-5)};
+    }
+
+    if(id==="high_flow_nasal_cannula" || /alto fluxo|cateter nasal de alto fluxo/.test(label)){
+      if(Number.isFinite(currentSpo2)) state.vitals={...state.vitals,spo2:Math.max(currentSpo2,98)};
+      if(Number.isFinite(currentRr) && !Object.prototype.hasOwnProperty.call(explicit,"rr")) state.vitals={...state.vitals,rr:Math.max(16,currentRr-3)};
+    }
+
+    // Inferência por classe farmacológica/terapêutica para ações que ainda não têm
+    // um effects.vitals específico no banco.
+    if(/noradrenalina|norepi|vasopressina|fenilefrina|vasopressor/.test(label) && bp?.sys<110){
+      adjustBP(explicit,Math.max(8,Math.min(20,100-bp.sys)),6);
+    }
+    if(/nitroprussiato|nitroglicerina|nicardipina|hidralazina|anti.hipertens/.test(label) && bp?.sys>140){
+      adjustBP(explicit,-Math.max(8,Math.min(22,bp.sys-135)),-8);
+    }
+    if(/salbutamol|terbutalina|broncodilat|ipratr.pio/.test(label)){
+      if(Number.isFinite(currentSpo2) && currentSpo2<98) state.vitals={...state.vitals,spo2:Math.min(99,currentSpo2+3)};
+      if(Number.isFinite(currentRr) && currentRr>20) state.vitals={...state.vitals,rr:Math.max(14,currentRr-3)};
+    }
+    if(/furosemida|diuret/.test(label) && /edema agudo|congest|insuficiencia cardiaca/.test(target)){
+      if(Number.isFinite(currentRr) && currentRr>20) state.vitals={...state.vitals,rr:Math.max(14,currentRr-3)};
+      if(Number.isFinite(currentSpo2) && currentSpo2<98) state.vitals={...state.vitals,spo2:Math.min(98,currentSpo2+3)};
+      if(bp?.sys>110) adjustBP(explicit,-5,-3);
+    }
+    if(/dipirona|paracetamol|antiterm|antipiret/.test(label) && Number.isFinite(temp) && temp>=38){
+      setVitalIfNotExplicit(explicit,"temp",Math.round(Math.max(36.5,temp-.6)*10)/10);
+    }
+    if(/morfina|fentanil|opioide/.test(label)){
+      if(Number.isFinite(currentRr) && currentRr>8) adjustVital(explicit,"rr",-2,6,60);
+      if(bp?.sys>90) adjustBP(explicit,-4,-2);
+    }
+    if(/atropina/.test(label) && Number.isFinite(currentHr) && currentHr<60){
+      setVitalIfNotExplicit(explicit,"hr",Math.max(70,currentHr+20));
+    }
+    if(/beta.?bloque|metoprolol|propranolol|esmolol|diltiazem|verapamil/.test(label) && Number.isFinite(currentHr) && currentHr>100){
+      setVitalIfNotExplicit(explicit,"hr",Math.max(70,currentHr-18));
+    }
+    if(/cristaloide|soro fisiologico|ringer|reposicao volemica|volume/.test(label) && bp?.sys<95){
+      adjustBP(explicit,10,6);
+      if(Number.isFinite(currentHr) && currentHr>100) adjustVital(explicit,"hr",-5,0,220);
+    }
+
+    // Fallback universal: uma conduta essencial/benéfica deve gerar tendência
+    // fisiológica observável quando o caso tem sinais vitais anormais e nenhum
+    // efeito específico foi cadastrado. Condutas maléficas fazem o oposto.
+    const unchanged=JSON.stringify(before)===JSON.stringify(state.vitals);
+    if(!unchanged) return;
+
+    const beneficial=/essencial|benefica/.test(clinicalClass);
+    const harmful=/malefica|mortal/.test(clinicalClass);
+    if(!beneficial && !harmful) return;
+    const dir=harmful?-1:1;
+
+    if(Number.isFinite(currentSpo2) && currentSpo2<96 && !Object.prototype.hasOwnProperty.call(explicit,"spo2")){
+      state.vitals={...state.vitals,spo2:clampVital(currentSpo2+(dir>0?2:-2),0,100)};
+    }
+    if(Number.isFinite(currentRr) && currentRr>24 && !Object.prototype.hasOwnProperty.call(explicit,"rr")){
+      state.vitals={...state.vitals,rr:clampVital(currentRr+(dir>0?-2:2),0,60)};
+    }else if(Number.isFinite(currentRr) && currentRr<10 && !Object.prototype.hasOwnProperty.call(explicit,"rr")){
+      state.vitals={...state.vitals,rr:clampVital(currentRr+(dir>0?1:-1),0,60)};
+    }
+    if(Number.isFinite(currentHr) && currentHr>110 && !Object.prototype.hasOwnProperty.call(explicit,"hr")){
+      state.vitals={...state.vitals,hr:clampVital(currentHr+(dir>0?-4:4),0,220)};
+    }else if(Number.isFinite(currentHr) && currentHr>0 && currentHr<50 && !Object.prototype.hasOwnProperty.call(explicit,"hr")){
+      state.vitals={...state.vitals,hr:clampVital(currentHr+(dir>0?4:-4),0,220)};
+    }
+    if(bp && bp.sys<90 && !Object.prototype.hasOwnProperty.call(explicit,"bp")){
+      adjustBP(explicit,dir>0?5:-5,dir>0?3:-3);
+    }
+    if(Number.isFinite(temp) && temp>38.5 && !Object.prototype.hasOwnProperty.call(explicit,"temp")){
+      state.vitals={...state.vitals,temp:Math.round((temp+(dir>0?-.2:.2))*10)/10};
+    }
+  }
+
+
   function applyCaseMonitorDirective(action,original,beforeVitals={}) {
     const actionId=original?.id||action?.id;
     const plan=state.current?.monitor?.[actionId];
@@ -3559,7 +3700,9 @@
       note:plan.note||""
     });
 
-    if(plan.note) feed("Monitor: "+plan.note, changed?"event":"event");
+    applyUniversalPhysiologicResponse(action,original,beforeVitals);
+    const correctedChanged=JSON.stringify(before)!==JSON.stringify(state.vitals);
+    if(plan.note) feed("Monitor: "+plan.note, correctedChanged?"event":"event");
     return true;
   }
 
@@ -3605,7 +3748,11 @@
 
       case "oxygen":
         reactionType="oxygen";
-        if(hypoxemic){ upSpo2(4); downRR(1); }
+        {
+          const goal=oxygenTargetForCurrentCase();
+          if(Number.isFinite(goal)) setVitalIfNotExplicit(explicit,"spo2",goal);
+          if(Number(state.vitals?.rr)>22) downRR(2);
+        }
         break;
       case "bvm":
         reactionType="ventilation";
@@ -3896,6 +4043,8 @@
         if(category==="tratamento") reactionType="medication";
         break;
     }
+
+    applyUniversalPhysiologicResponse(action,original,beforeVitals);
 
     /*
       Se qualquer ação do caso (medicamento, choque, procedimento etc.) trouxer
