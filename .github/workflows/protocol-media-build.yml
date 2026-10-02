@@ -1,0 +1,45 @@
+name: Build protocol media
+
+on:
+  push:
+    paths:
+      - ".tmp/protocol-media-source.tgz.b64"
+      - ".github/workflows/protocol-media-build.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-bin webp
+      - name: Build WebP protocol assets
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/protocol-svg assets/img/protocolos
+          base64 -d .tmp/protocol-media-source.tgz.b64 > /tmp/protocol-media-source.tgz
+          tar -xzf /tmp/protocol-media-source.tgz -C /tmp/protocol-svg
+          for f in /tmp/protocol-svg/*.svg; do
+            name="$(basename "${f%.svg}")"
+            rsvg-convert -w 900 -h 600 "$f" | cwebp -quiet -q 72 -m 6 - -o "assets/img/protocolos/${name}.webp"
+          done
+          test "$(find assets/img/protocolos -name '*.webp' | wc -l)" -eq 52
+          if find assets/img/protocolos -name '*.webp' -size +50k | grep -q .; then
+            echo "Protocol image exceeds 50 KB" >&2
+            find assets/img/protocolos -name '*.webp' -size +50k -ls
+            exit 1
+          fi
+          rm -f .tmp/protocol-media-source.tgz.b64
+          rm -f .github/workflows/protocol-media-build.yml
+      - name: Commit generated assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "feat: add audited protocol WebP media"
+          git push
