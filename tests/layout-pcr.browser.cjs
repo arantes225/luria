@@ -125,13 +125,15 @@ await page.evaluate(()=>{
 });
 for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","Conteúdo vinculado preservado"],["/caderno/?note_id=free-note","free-note","Conteúdo livre preservado"]]){
  await goto(url);
+ await page.locator("#notebook-topic-list").waitFor();
+ assert.match(await page.locator(".note-tree-head").innerText(),/Estrutura do texto/,"Text structure stays in the left sidebar");
+ assert.equal(await page.locator(".note-right-outline-card").count(),0,"No duplicate text structure card on the right");
  if(viewport.width>=1050){
-  await page.locator("#notebook-right-outline-list").waitFor({state:"visible"});
-  assert.ok(await page.locator(".note-right-outline-card").isVisible(),"Right sidebar shows text structure on desktop");
- }else{
-  assert.equal(await page.locator(".note-right-outline-card").isVisible(),false,"Right sidebar stays hidden on compact viewports");
+  assert.ok(await page.locator(".note-actions-card").isVisible(),"Quick actions remain visible on the right");
+  assert.ok(await page.locator(".note-tasks-card").isVisible(),"Study tasks remain visible on the right");
+  assert.ok(await page.locator(".note-links-card").isVisible(),"Links remain visible on the right");
+  assert.ok(await page.locator(".note-details-card").isVisible(),"Note information remains visible on the right");
  }
- assert.equal(await page.locator("#notebook-inspector-move").isVisible(),false,"Legacy move action stays hidden from the right sidebar");
  await page.evaluate(()=>document.getElementById("notebook-inspector-move")?.click());
  await page.locator("#notebook-move-area").fill("Pediatria");await page.locator("#notebook-move-subject").fill("Crescimento e Desenvolvimento");
  await page.evaluate(()=>localStorage.setItem("fixture-note-fail","1"));
