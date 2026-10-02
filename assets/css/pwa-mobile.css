@@ -4386,8 +4386,8 @@
 }
 
 /* Responsive content and calendar: horizontal scroll stays inside the matrix. */
-body[data-page="cronograma"] .page .agenda-activity-view-switch{gap:3px!important;padding:3px!important;border-radius:8px!important;background:var(--surface-2)!important}
-body[data-page="cronograma"] .page .agenda-activity-view-switch button{height:24px!important;min-height:24px!important;min-width:52px!important;padding:0 10px!important;border-radius:6px!important;font-size:8px!important;font-weight:400!important;line-height:1!important}
+html.pwa-standalone body[data-page="cronograma"] .page .agenda-activity-view-switch{gap:4px!important;padding:4px!important;border:1px solid var(--border)!important;border-radius:10px!important;background:var(--surface)!important;min-height:50px!important;height:50px!important}
+html.pwa-standalone body[data-page="cronograma"] .page .agenda-activity-view-switch button{height:40px!important;min-height:40px!important;min-width:0!important;padding:0 17px!important;border-radius:7px!important;font-size:15px!important;font-weight:400!important;line-height:1!important}
 body[data-page="cronograma"] .page #week-planner{display:block!important;min-width:0!important;max-width:100%!important;overflow:hidden!important}
 body[data-page="cronograma"] .page #week-planner .week-matrix{display:block!important;min-width:0!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface-2);overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
 body[data-page="cronograma"] .page #week-planner .week-matrix-grid{display:grid!important;grid-template-columns:160px repeat(7,minmax(70px,1fr))!important;min-width:650px!important;width:100%!important}
