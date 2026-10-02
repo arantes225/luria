@@ -30,6 +30,14 @@
     .osce-field label{display:block;font-size:8px;font-weight:850;margin-bottom:5px}.osce-field textarea,.osce-field input{width:100%;box-sizing:border-box;border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:9px;padding:10px;font:700 9px var(--font-ui,Inter,sans-serif);resize:vertical}.osce-field textarea{min-height:72px}
     .osce-side-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:auto}.osce-side-actions .osce-btn:last-child{grid-column:1/-1}
     .osce-score{font-size:36px;font-weight:950;color:var(--accent)}.osce-debrief{border:1px solid var(--border);border-radius:15px;background:var(--surface);padding:18px}.osce-debrief h2{margin:3px 0 8px}.osce-review{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.osce-review-card{border:1px solid var(--border);border-radius:11px;padding:12px;background:var(--surface-2)}.osce-review-card h3{margin:0 0 7px;font-size:10px}.osce-review-card li{font-size:8.5px;line-height:1.45;margin:3px 0}
+
+    .osce-command{padding:14px 16px 16px;border-top:1px solid var(--border);background:var(--surface)}
+    .osce-command-label{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px}.osce-command-label strong{font-size:9px}.osce-command-label span{font-size:7.5px;color:var(--muted)}
+    .osce-command-form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:7px}.osce-command-input{min-width:0;border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:10px;padding:11px 12px;font:700 10px var(--font-ui,Inter,sans-serif);outline:none}.osce-command-input:focus{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 12%,transparent)}
+    .osce-command-send{border:0;border-radius:10px;background:var(--accent);color:#fff;padding:0 15px;font:850 9px var(--font-ui,Inter,sans-serif);cursor:pointer}
+    .osce-command-help{margin-top:7px;color:var(--muted);font-size:7.8px;line-height:1.45}.osce-command-help b{color:var(--text)}
+    .osce-status-strip{display:flex;gap:6px;flex-wrap:wrap;padding:0 16px 12px}.osce-status-chip{border:1px solid var(--border);background:var(--surface-2);border-radius:999px;padding:5px 8px;font-size:7.5px;color:var(--muted)}.osce-status-chip.done{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,var(--border));background:var(--accent-soft)}
+    .osce-log{max-height:360px;overflow:auto}
     .osce-empty{padding:20px;border:1px dashed var(--border);border-radius:12px;text-align:center;color:var(--muted);font-size:10px}
     @media(max-width:900px){.osce-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.osce-sim{grid-template-columns:1fr}.osce-side{order:-1}.osce-side-actions{margin-top:0}}
     @media(max-width:600px){.osce-grid{grid-template-columns:1fr}.osce-hero{align-items:flex-start;flex-direction:column}.osce-patient{grid-template-columns:70px minmax(0,1fr)}.osce-avatar{width:70px;height:70px}.osce-tool-tabs{grid-template-columns:repeat(2,1fr)}.osce-options,.osce-review{grid-template-columns:1fr}}
@@ -52,128 +60,139 @@
 <script>
 (()=>{
  const sb=window.supabaseClient,$=s=>document.querySelector(s),esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
- const state={cases:[],current:null,timer:null,seconds:480,area:"",performed:new Set(),log:[],tab:"anamnese",full:null};
- function norm(v){return String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim()}
- function title(x){return x.title||x.presentation?.display_title||x.presentation?.chief_complaint||"Caso clínico"}
- function area(x){return x.specialty||"Clínica Médica"}
+ const state={cases:[],current:null,full:null,timer:null,seconds:480,area:"",performed:new Set(),log:[],hypothesis:"",plan:"",domains:new Set()};
+ const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+ const words=v=>norm(v).replace(/[^a-z0-9\s]/g," ").split(/\s+/).filter(w=>w.length>2&&!["qual","quais","como","voce","voces","para","esta","esse","essa","isso","uma","uns","das","dos","que","tem","teve","com","por","dos","das","ser","fazer","faco","faço","realizo","realizar"].includes(w));
+ function title(x){return x?.title||x?.presentation?.display_title||x?.presentation?.chief_complaint||"Caso clínico"}
+ function area(x){return x?.specialty||"Clínica Médica"}
  function canonicalArea(v){const n=norm(v);if(n.includes("pedi"))return "Pediatria";if(n.includes("cirurg"))return "Cirurgia Geral";if(n.includes("gine")||n.includes("obst"))return "Ginecologia e Obstetrícia";if(n.includes("prevent")||n.includes("saude coletiva"))return "Preventiva";return "Clínica Médica"}
  function sexOf(x){const s=norm(x?.presentation?.sex);return s==="f"||s.includes("fem")?"F":"M"}
  function patientName(x){
-   const explicit=String(x?.presentation?.patient_name||x?.presentation?.name||"").trim();
-   if(explicit)return explicit;
+   const explicit=String(x?.presentation?.patient_name||x?.presentation?.name||"").trim();if(explicit)return explicit;
    const female=["Ana Martins","Mariana Alves","Camila Rocha","Juliana Ribeiro","Fernanda Costa","Larissa Gomes","Patrícia Lima","Beatriz Souza"];
    const male=["Carlos Martins","Rafael Alves","Bruno Rocha","Lucas Ribeiro","Felipe Costa","Gustavo Gomes","Eduardo Lima","André Souza"];
-   const source=String(x?.slug||x?.id||x?.title||"paciente");let hash=0;
-   for(let i=0;i<source.length;i++)hash=(hash*31+source.charCodeAt(i))>>>0;
+   const source=String(x?.slug||x?.id||x?.title||"paciente");let hash=0;for(let i=0;i<source.length;i++)hash=(hash*31+source.charCodeAt(i))>>>0;
    const list=sexOf(x)==="F"?female:male;return list[hash%list.length];
  }
  function ageLabel(x){const raw=String(x?.presentation?.age||"").trim();if(!raw)return "Idade não informada";if(/ano|mes|mês|dia/i.test(raw))return raw;const n=Number(raw);return Number.isFinite(n)?n+" "+(n===1?"ano":"anos"):raw}
  function hdaText(x){return String(x?.presentation?.hda||x?.presentation?.history||x?.presentation?.opening||x?.summary||x?.presentation?.chief_complaint||"História da doença atual não informada.").trim()}
- function parseHistoryTopics(x){
-   const raw=String(x?.presentation?.history_topics||"").trim();
-   if(!raw)return [];
-   return raw.split(/\n+/).map(line=>line.replace(/^\s*[•\-]\s*/,"").trim()).filter(Boolean).map(line=>{
-     const parts=line.split("→").map(p=>p.trim()).filter(Boolean);
-     if(parts.length>=3)return {label:parts[0],prompt:parts[1],answer:parts.slice(2).join(" → ")};
-     if(parts.length===2)return {label:parts[0],prompt:parts[0],answer:parts[1]};
-     return {label:"",prompt:line,answer:line};
-   });
- }
- function answerPatientQuestion(x,question){
-   const topics=parseHistoryTopics(x);
-   if(!topics.length)return "Não tenho mais informações além do que já contei.";
-   const q=norm(question).replace(/[^a-z0-9\s]/g," ");
-   const stop=new Set(["o","a","os","as","de","da","do","das","dos","e","em","um","uma","que","qual","quais","como","quando","onde","voce","você","tem","teve","esta","está","ha","há","pra","para","se","ele","ela"]);
-   const tokens=q.split(/\s+/).filter(t=>t.length>2&&!stop.has(t));
-   let best=null,bestScore=-1;
-   for(const topic of topics){
-     const hay=norm([topic.label,topic.prompt].join(" ")).replace(/[^a-z0-9\s]/g," ");
-     let score=0;
-     for(const token of tokens)if(hay.includes(token))score+=token.length>=6?3:2;
-     const synonyms=[
-       [["remedio","medicacao","medicamento","usa"],["medic","remed","uso habitual"]],
-       [["alergia","alergico"],["alerg"]],
-       [["comecou","inicio","quando","tempo"],["inicio","evolucao","tempo"]],
-       [["dor","doi","dolor"],["dor","queixa atual","sintomas"]],
-       [["febre","temperatura"],["febre","sintomas associados"]],
-       [["fuma","tabagismo","cigarro"],["tabag","risco","antecedentes"]],
-       [["doenca","antecedente","problema"],["antecedentes"]],
-       [["sangramento","sangue","cor"],["sangramento","queixa atual","sintomas associados"]]
-     ];
-     for(const [asks,targets] of synonyms){
-       if(asks.some(a=>q.includes(norm(a)))&&targets.some(t=>hay.includes(norm(t))))score+=5;
-     }
-     if(score>bestScore){bestScore=score;best=topic}
-   }
-   if(best&&bestScore>0)return best.answer;
-   const fallback=topics.find(t=>norm(t.label).includes("queixa atual"))||topics[0];
-   return fallback?.answer||"Não sei informar melhor.";
- }
  function renderAreaSwitches(){const areas=["","Clínica Médica","Pediatria","Cirurgia Geral","Ginecologia e Obstetrícia","Preventiva"];$("#osce-area-switches").innerHTML=areas.map(a=>'<button type="button" class="osce-area-switch'+(state.area===a?' active':'')+'" data-osce-area="'+esc(a)+'">'+(a||"Todas")+'</button>').join("");document.querySelectorAll("[data-osce-area]").forEach(b=>b.onclick=()=>{state.area=b.dataset.osceArea||"";renderAreaSwitches();renderList()})}
  function renderList(){const q=$("#osce-search").value.trim().toLowerCase(),sp=state.area;const list=state.cases.filter(x=>(!sp||canonicalArea(area(x))===sp)&&(!q||[title(x),area(x),x.summary,x.presentation?.chief_complaint].join(" ").toLowerCase().includes(q)));$("#osce-grid").innerHTML=list.length?list.map((x,i)=>'<article class="osce-card"><small>ESTAÇÃO '+String(i+1).padStart(2,"0")+'</small><h3>'+esc(title(x))+'</h3><div class="osce-tags"><span class="osce-tag">'+esc(canonicalArea(area(x)))+'</span><span class="osce-tag">'+esc(x.difficulty||"Intermediária")+'</span></div><small>'+esc(x.presentation?.chief_complaint||x.summary||"Estação clínica interativa.")+'</small><button type="button" data-osce="'+esc(x.id)+'">Entrar na estação</button></article>').join(""):'<div class="osce-empty">Nenhuma estação encontrada.</div>';document.querySelectorAll("[data-osce]").forEach(b=>b.onclick=()=>start(b.dataset.osce))}
- function cat(a){const c=norm(a.category);if(c.includes("anamn"))return "anamnese";if(c==="exame"||c.includes("exame fis"))return "exame";if(c.includes("labor")||c.includes("imagem")||c==="exames")return "exames";if(c.includes("proced")||c.includes("trat")||c.includes("iniciais"))return "condutas";return "outros"}
- function tabs(){return [["anamnese","Anamnese"],["exame","Exame físico"],["exames","Exames"],["condutas","Condutas"],["outros","Outros"]]}
- function vitalsHtml(x){const v=x.initial_vitals||{};const rows=[["PA",v.bp||"—"],["FC",v.hr?String(v.hr)+" bpm":"—"],["FR",v.rr?String(v.rr)+" irpm":"—"],["SpO₂",v.spo2?String(v.spo2)+"%":"—"],["Temp.",v.temp!=null?String(v.temp)+" °C":"—"],["Estado",v.mental||"—"]];return rows.map(r=>'<div class="osce-vital"><small>'+r[0]+'</small><b>'+esc(r[1])+'</b></div>').join("")}
- function opening(x){return x.presentation?.opening||x.presentation?.chief_complaint||x.summary||"Paciente aguarda sua avaliação."}
- function patientMeta(x){return [x.presentation?.age,x.presentation?.sex].filter(Boolean).join(" · ")||"Paciente da estação"}
- function avatar(x){const s=norm(x.presentation?.sex),a=parseInt(String(x.presentation?.age||"").match(/\d+/)?.[0]||"30",10);if(a<16)return s.includes("fem")?"👧":"👦";if(a>=60)return s.includes("fem")?"👵":"👴";return s.includes("fem")?"👩":"👨"}
- function renderLog(){const el=$("#osce-log");if(!el)return;el.innerHTML=state.log.length?state.log.map(m=>'<div class="osce-bubble '+m.who+'">'+esc(m.text)+'</div>').join(""):'<div class="osce-bubble system">Você entrou na estação. Comece conduzindo a consulta.</div>';el.scrollTop=el.scrollHeight}
- function words(v){return norm(v).replace(/[^a-z0-9\s]/g," ").split(/\s+/).filter(w=>w.length>2&&!["qual","quais","como","voce","voces","para","esta","esse","essa","isso","uma","uns","das","dos","que","tem","teve","com"].includes(w))}
- function conceptTokens(q){const n=norm(q),out=new Set(words(q));const groups=[
-   [/quando|comec|inicio|iniciou|tempo/,["inicio","onset","duracao","tempo","comecou"]],
-   [/quanto tempo|duracao|desde quando/,["duracao","tempo","inicio"]],
-   [/cor|colorac/,["cor","coloracao","aspecto"]],
-   [/quanto|quantidade|volume|muito|pouco/,["quantidade","volume","intensidade"]],
-   [/semana|gesta|gravidez|ig\b/,["gestacao","gestacional","semanas","gravidez"]],
-   [/dor|doi|dolor/,["dor","dolorosa","intensidade","localizacao"]],
-   [/onde|local|localiza/,["localizacao","local"]],
-   [/febre|temperatura/,["febre","temperatura"]],
-   [/alerg/,["alergia","alergias"]],
-   [/remedio|medic|usa|toma/,["medicacao","medicacoes","medicamento"]],
-   [/doenca|anteced|historico|comorb/,["antecedentes","comorbidades","historico"]],
-   [/sangra|sangramento|sangue/,["sangramento","sangue","hemorragia"]],
-   [/movimento fetal|mexendo|mexe/,["movimentos","fetais","fetal"]],
-   [/perda.*liquido|liquido/,["liquido","amniorrexe","bolsa"]],
-   [/contrac/,["contracoes","contracao"]]
- ];groups.forEach(([re,arr])=>{if(re.test(n))arr.forEach(x=>out.add(x))});return [...out]}
- function actionScore(a,q){const qt=conceptTokens(q),txt=norm([a.id,a.label,a.subgroup,a.category].join(" "));let sc=0;qt.forEach(t=>{if(txt.includes(t))sc+=t.length>6?3:2});const qn=norm(q);if(qn&&txt.includes(qn))sc+=8;return sc}
- function hiddenFieldAnswer(q){const p=state.full?.presentation||{},n=norm(q);const entries=Object.entries(p).filter(([,v])=>["string","number"].includes(typeof v));const aliases=[
-   [/semana|gesta|gravidez|ig\b/,/gest|semana|grav|ig/i],
-   [/idade\b/,/^age$|idade/i],
-   [/sexo|genero/,/sex|sexo/i],
-   [/queixa|motivo|sintoma principal/,/chief|complaint|queixa/i]
- ];for(const [qre,kre] of aliases){if(qre.test(n)){const hit=entries.find(([k])=>kre.test(k));if(hit)return String(hit[1])}}return ""}
- function answerTypedQuestion(q){const actions=(state.full?.actions||[]).filter(a=>cat(a)==="anamnese");const ranked=actions.map(a=>({a,score:actionScore(a,q)})).sort((x,y)=>y.score-x.score);const best=ranked[0];state.log.push({who:"user",text:q});if(best&&best.score>=2){state.performed.add(best.a.id);let result=best.a.result||"Paciente responde à pergunta.";const v=state.full.initial_vitals||{};result=result.replace(/{{bp}}/g,v.bp||"—").replace(/{{hr}}/g,v.hr||"—").replace(/{{rr}}/g,v.rr||"—").replace(/{{spo2}}/g,v.spo2||"—").replace(/{{mental}}/g,v.mental||"—");state.log.push({who:"patient",text:result})}else{const direct=hiddenFieldAnswer(q);state.log.push({who:"patient",text:direct||"Não entendi exatamente o que você quer saber. Tente perguntar de outra forma ou seja mais específico."})}renderLog()}
- function renderOptions(){const box=$("#osce-options");if(!box||!state.full)return;if(state.tab==="anamnese"){box.innerHTML='<form id="osce-chat-form" class="osce-chat-form" style="grid-column:1/-1"><input id="osce-chat-input" class="osce-chat-input" type="text" autocomplete="off" placeholder="Pergunte ao paciente: Quando começou? Qual a cor do sangramento? Quantas semanas de gestação?"><button class="osce-chat-send" type="submit">Perguntar</button></form><div class="osce-chat-hint">Digite como você perguntaria na estação. O paciente só revela o que for perguntado.</div>';const form=$("#osce-chat-form"),input=$("#osce-chat-input");form.onsubmit=e=>{e.preventDefault();const q=input.value.trim();if(!q)return;answerTypedQuestion(q);input.value="";input.focus()};return}const actions=(state.full.actions||[]).filter(a=>cat(a)===state.tab);box.innerHTML=actions.length?actions.map(a=>'<button type="button" class="osce-option '+(state.performed.has(a.id)&&!a.repeatable?'done':'')+'" data-action="'+esc(a.id)+'" '+(state.performed.has(a.id)&&!a.repeatable?'disabled':'')+'>'+esc(a.label||a.id)+'</button>').join(""):'<div class="osce-empty" style="grid-column:1/-1">Sem ações nesta categoria.</div>';document.querySelectorAll("[data-action]").forEach(b=>b.onclick=()=>perform(b.dataset.action))}
- function renderTabs(){const box=$("#osce-tool-tabs");if(!box)return;box.innerHTML=tabs().map(([id,label])=>'<button type="button" class="osce-tool-tab '+(state.tab===id?'active':'')+'" data-tab="'+id+'">'+label+'</button>').join("");document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;renderTabs();renderOptions()})}
- function applyEffects(a){const eff=a.effects?.vitals;if(eff&&state.full){state.full.initial_vitals={...(state.full.initial_vitals||{}),...eff};const v=$("#osce-vitals");if(v)v.innerHTML=vitalsHtml(state.full)}}
- function perform(id){const a=(state.full.actions||[]).find(x=>String(x.id)===String(id));if(!a)return;state.performed.add(a.id);state.log.push({who:"user",text:a.label||a.id});let result=a.result||"A ação foi realizada.";const v=state.full.initial_vitals||{};result=result.replace(/{{bp}}/g,v.bp||"—").replace(/{{hr}}/g,v.hr||"—").replace(/{{rr}}/g,v.rr||"—").replace(/{{spo2}}/g,v.spo2||"—").replace(/{{mental}}/g,v.mental||"—");state.log.push({who:(cat(a)==="anamnese"?"patient":"patient"),text:result});applyEffects(a);renderLog();renderOptions()}
+ function category(a){
+   const c=norm(a?.category),id=norm(a?.id),label=norm(a?.label);
+   if(c.includes("anamn")||id.includes("history"))return "anamnese";
+   if(c==="exame"||c.includes("exame fis")||id.startsWith("exam_"))return "fisico";
+   if(c.includes("labor")||c.includes("imagem")||c==="exames"||/ecg|hemograma|gasometr|troponina|raio|radiografia|tomografia|ultrassom|urina|beta.?hcg|lactato/.test(label+" "+id))return "exames";
+   if(c.includes("proced")||c.includes("trat")||c.includes("iniciais")||c.includes("monitor"))return "conduta";
+   if(a?.role==="diagnosis"||c.includes("hipot"))return "hipotese";
+   if(a?.role==="disposition"||c.includes("destino"))return "destino";
+   return "outros";
+ }
+ function parseHistoryTopics(x){
+   const raw=String(x?.presentation?.history_topics||"").trim();if(!raw)return[];
+   return raw.split(/\n+/).map(line=>line.replace(/^\s*[•\-]\s*/,"").trim()).filter(Boolean).map((line,i)=>{
+     const p=line.split("→").map(s=>s.trim()).filter(Boolean);
+     return {id:"history_"+i,label:p[1]||p[0]||("Pergunta "+(i+1)),subgroup:p[0]||"",category:"anamnese",result:p.length>=3?p.slice(2).join(" → "):(p[1]||p[0]||"")};
+   });
+ }
+ function physicalExamActions(x){
+   const src=x?.presentation?.physical_exam;if(!src||typeof src!=="object")return[];
+   return Object.entries(src).map(([id,result])=>({id:"physical_"+id,label:id.replace(/^exam_/,"").replace(/_/g," "),subgroup:"exame físico",category:"exame",result:String(result||"")}));
+ }
+ function testResultActions(x){
+   const src=x?.presentation?.test_results;if(!src||typeof src!=="object")return[];
+   return Object.entries(src).map(([id,result])=>({id:"test_"+id,label:id.replace(/_/g," "),subgroup:"exame complementar",category:"exames",result:String(result||"")}));
+ }
+ function allCommands(){
+   const x=state.full||{};const raw=Array.isArray(x.actions)?x.actions:[];
+   return [...parseHistoryTopics(x),...physicalExamActions(x),...testResultActions(x),...raw];
+ }
+ function conceptTokens(q){
+   const n=norm(q),out=new Set(words(q));const groups=[
+     [/quando|comec|inicio|iniciou|tempo|duracao|desde quando/,["inicio","evolucao","tempo","onset"]],
+     [/cor|colorac/,["cor","coloracao","aspecto"]],[/quantidade|volume|quanto|muito|pouco/,["quantidade","volume","intensidade"]],
+     [/semana|gesta|gravidez|ig\b/,["gestacao","gestacional","semanas","gravidez"]],[/dor|doi|dolor/,["dor","dolorosa","intensidade","localizacao"]],
+     [/febre|temperatura/,["febre","temperatura"]],[/alerg/,["alergia","alergias"]],[/remedio|medic|usa|toma/,["medicacao","medicacoes","medicamento"]],
+     [/doenca|anteced|historico|comorb/,["antecedentes","comorbidades","historico"]],[/sangra|sangramento|sangue/,["sangramento","sangue","hemorragia"]],
+     [/auscult|pulmao|respirat/,["pulmonar","respiratorio","torax","ausculta"]],[/cardio|coracao|bulhas/,["cardiovascular","cardio","coracao"]],
+     [/abdome|abdominal|palp/,["abdome","abdominal","palpacao"]],[/neurolog|glasgow|pupila/,["neurologico","glasgow","pupilas"]],
+     [/ecg|eletrocard/,["ecg"]],[/hemograma/,["cbc","hemograma"]],[/gasometr/,["gas","gasometria"]],[/raio.?x|radiografia|rx/,["xray","radiografia","torax"]],
+     [/tomografia|tc\b/,["ct","tomografia"]],[/ultrassom|usg/,["ultrasound","ultrassom"]],[/oxigen/,["oxygen","oxigenio"]],[/acesso venoso|acesso iv|veia/,["iv_access","acesso","venoso"]],
+     [/cristaloide|soro|ringer/,["crystalloid","cristaloide","volume"]],[/noradrenalina/,["norepi","noradrenalina"]],[/adrenalina/,["epi","adrenalina"]],
+     [/hipotese|diagnostico|diagnóstico/,["diagnosis","hipotese"]],[/alta|uti|enfermaria|intern/,["destino","disposition","alta","uti","enfermaria"]]
+   ];groups.forEach(([re,arr])=>{if(re.test(n))arr.forEach(x=>out.add(x))});return [...out];
+ }
+ function commandScore(a,q){
+   const tokens=conceptTokens(q),txt=norm([a.id,a.label,a.subgroup,a.category,a.role].filter(Boolean).join(" "));let s=0;
+   tokens.forEach(t=>{if(txt.includes(norm(t)))s+=t.length>6?4:2});
+   const qn=norm(q);if(qn&&txt.includes(qn))s+=12;
+   const cat=category(a);
+   if(/[?]|\bpergunto\b|\bindago\b|\brefere\b/.test(qn)&&cat==="anamnese")s+=3;
+   if(/examino|ausculto|palpo|inspeciono|percuto|exame fisico/.test(qn)&&cat==="fisico")s+=5;
+   if(/solicito|peco|peço|colet|dosar|realizo.*ecg|faço.*ecg/.test(qn)&&cat==="exames")s+=5;
+   if(/administro|inicio|instalo|ofereco|ofereço|prescrevo|faço acesso|realizo.*proced/.test(qn)&&cat==="conduta")s+=4;
+   return s;
+ }
+ function replaceVitals(text){
+   const v=state.full?.initial_vitals||{};return String(text||"").replace(/{{bp}}/g,v.bp||"—").replace(/{{hr}}/g,v.hr||"—").replace(/{{rr}}/g,v.rr||"—").replace(/{{spo2}}/g,v.spo2||"—").replace(/{{mental}}/g,v.mental||"—");
+ }
+ function directFieldAnswer(q){
+   const p=state.full?.presentation||{},n=norm(q),entries=Object.entries(p).filter(([,v])=>["string","number"].includes(typeof v));
+   const map=[[/semana|gesta|gravidez|ig\b/,/gest|semana|grav|ig/i],[/idade\b/,/^age$|idade/i],[/sexo|genero/,/sex|sexo/i],[/queixa|motivo|sintoma principal/,/chief|complaint|queixa/i]];
+   for(const [qr,kr] of map){if(qr.test(n)){const hit=entries.find(([k])=>kr.test(k));if(hit)return String(hit[1])}}return "";
+ }
+ function addLog(who,text){state.log.push({who,text});renderLog()}
+ function renderLog(){const el=$("#osce-log");if(!el)return;el.innerHTML=state.log.length?state.log.map(m=>'<div class="osce-bubble '+m.who+'">'+esc(m.text)+'</div>').join(""):'<div class="osce-bubble system">A estação começou. Conduza o atendimento livremente pelo campo abaixo.</div>';el.scrollTop=el.scrollHeight}
+ function updateStatus(){const el=$("#osce-status-strip");if(!el)return;const items=[["Anamnese","anamnese"],["Exame físico","fisico"],["Exames","exames"],["Condutas","conduta"],["Hipótese","hipotese"],["Destino","destino"]];el.innerHTML=items.map(([l,id])=>'<span class="osce-status-chip '+(state.domains.has(id)?'done':'')+'">'+esc(l)+'</span>').join("")}
+ function performMatched(a,q){
+   const cat=category(a);state.performed.add(a.id);state.domains.add(cat);
+   let result=replaceVitals(a.result||"A ação foi realizada.");
+   if(cat==="anamnese") addLog("patient",result||"Não sei informar.");
+   else addLog("patient",result||"A ação foi realizada e o resultado foi reavaliado.");
+   const eff=a.effects?.vitals;if(eff&&state.full){state.full.initial_vitals={...(state.full.initial_vitals||{}),...eff};const v=$("#osce-vitals");if(v)v.innerHTML=vitalsHtml(state.full)}
+   updateStatus();
+ }
+ function interpretCommand(q){
+   const n=norm(q);addLog("user",q);
+   if(/^(hipotese|hipótese|diagnostico|diagnóstico)\s*[:\-]?/.test(n)){
+     state.hypothesis=q.replace(/^[^:\-]+[:\-]?\s*/,"").trim()||q;state.domains.add("hipotese");addLog("system","Hipótese registrada.");updateStatus();return;
+   }
+   if(/^(conduta|destino|encaminho|interno|alta|uti|enfermaria)\b/.test(n)){
+     state.plan=q;state.domains.add("destino");addLog("system","Conduta/destino registrado.");updateStatus();return;
+   }
+   const commands=allCommands().map(a=>({a,score:commandScore(a,q)})).sort((x,y)=>y.score-x.score);
+   const best=commands[0],second=commands[1];
+   if(best&&best.score>=3&&(best.score-(second?.score||0)>=1||best.score>=6)){performMatched(best.a,q);return;}
+   const direct=directFieldAnswer(q);if(direct){state.domains.add("anamnese");addLog("patient",direct);updateStatus();return;}
+   addLog("system","Não consegui interpretar com segurança. Escreva a ação de forma mais específica, como você falaria em uma estação.");
+ }
+ function vitalsHtml(x){const v=x?.initial_vitals||{};const rows=[["PA",v.bp||"—"],["FC",v.hr!=null?String(v.hr)+" bpm":"—"],["FR",v.rr!=null?String(v.rr)+" irpm":"—"],["SpO₂",v.spo2!=null?String(v.spo2)+"%":"—"],["Temp.",v.temp!=null?String(v.temp)+" °C":"—"],["Estado",v.mental||"—"]];return rows.map(r=>'<div class="osce-vital"><small>'+r[0]+'</small><b>'+esc(r[1])+'</b></div>').join("")}
  async function start(id){
-   state.current=state.cases.find(x=>String(x.id)===String(id));state.seconds=480;clearInterval(state.timer);
-   const x=state.current,name=patientName(x),age=ageLabel(x),sex=sexOf(x)==="F"?"Feminino":"Masculino";
-   $("#osce-root").innerHTML='<section class="osce-station"><article class="osce-paper"><span class="osce-kicker">OSCE · 8 MINUTOS</span><h2>'+esc(title(x))+'</h2><p class="osce-scenario"><b>Cenário:</b> Você está atendendo este paciente em uma estação clínica. Conduza a avaliação como faria diante de um paciente real.</p><div class="osce-patient-head"><div class="osce-patient-avatar">'+esc(name.split(" ").map(p=>p[0]).slice(0,2).join(""))+'</div><div class="osce-patient-meta"><strong>'+esc(name)+'</strong><small>'+esc(age)+' · '+esc(sex)+'</small></div></div><div class="osce-hda"><b>História da doença atual</b><p>'+esc(hdaText(x))+'</p></div><div class="osce-chat"><div class="osce-chat-head"><strong>Anamnese com o paciente</strong><small>Digite suas perguntas. O paciente responde com base nas informações do caso.</small></div><div id="osce-chat-body" class="osce-chat-body"><div class="osce-message patient">Pode perguntar, doutor(a).</div></div><form id="osce-chat-form" class="osce-chat-form"><input id="osce-chat-input" type="text" autocomplete="off" placeholder="Ex.: Quando começou? Usa algum remédio?"><button type="submit">Perguntar</button></form></div><div class="osce-task"><b>Tarefas da estação</b><ol>'+tasks(x).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ol><div class="osce-task-note">As respostas da anamnese devem ser obtidas perguntando ao paciente acima.</div></div><div class="osce-actions"><button class="osce-btn osce-secondary" id="osce-back">← Sair</button><button class="osce-btn" id="osce-finish">Finalizar estação</button></div></article><aside class="osce-panel"><span class="osce-kicker">TEMPO RESTANTE</span><div id="osce-timer" class="osce-timer">08:00</div><hr style="border:0;border-top:1px solid var(--border);margin:14px 0"><b style="font-size:10px">Checklist</b><div class="osce-checklist">'+checks(x).map((c,i)=>'<label class="osce-check"><input type="checkbox" data-check="'+i+'"><span>'+esc(c)+'</span></label>').join("")+'</div></aside></section>';
+   state.current=state.cases.find(x=>String(x.id)===String(id));state.full=null;state.performed=new Set();state.log=[];state.hypothesis="";state.plan="";state.domains=new Set();state.seconds=480;clearInterval(state.timer);
+   const res=await sb.from("clinical_cases").select("id,slug,title,setting,specialty,difficulty,summary,presentation,initial_vitals,actions,debrief,completion_rules,version").eq("id",id).single();
+   state.full=res.data||state.current;const x=state.full,name=patientName(x),age=ageLabel(x),sex=sexOf(x)==="F"?"Feminino":"Masculino";
+   $("#osce-root").innerHTML='<section class="osce-sim"><article class="osce-stage"><div class="osce-stage-head"><div><span class="osce-kicker">OSCE · ESTAÇÃO INTERATIVA</span><h2>'+esc(title(x))+'</h2></div><div id="osce-timer" class="osce-timer">08:00</div></div><div class="osce-patient"><div class="osce-avatar">'+esc(name.split(" ").map(p=>p[0]).slice(0,2).join(""))+'</div><div><h3>'+esc(name)+'</h3><p>'+esc(age)+' · '+esc(sex)+'</p><p><b>HDA:</b> '+esc(hdaText(x))+'</p></div></div><div id="osce-log" class="osce-log"></div><div id="osce-status-strip" class="osce-status-strip"></div><div class="osce-command"><div class="osce-command-label"><strong>O que você quer fazer?</strong><span>Entrada livre</span></div><form id="osce-command-form" class="osce-command-form"><input id="osce-command-input" class="osce-command-input" type="text" autocomplete="off" placeholder="Digite sua pergunta, exame, pedido ou conduta..."><button class="osce-command-send" type="submit">Enviar</button></form><div class="osce-command-help"><b>Sem lista de opções.</b> Escreva naturalmente o que faria na estação.</div></div></article><aside class="osce-side"><h3>Paciente</h3><div id="osce-vitals" class="osce-vitals">'+vitalsHtml(x)+'</div><p>Os itens avaliados ficam ocultos durante a estação.</p><div class="osce-side-actions"><button id="osce-back" class="osce-btn osce-secondary" type="button">Sair</button><button id="osce-finish" class="osce-btn" type="button">Finalizar estação</button></div></aside></section>';
+   renderLog();updateStatus();
    $("#osce-back").onclick=()=>location.assign("/plantao/sala-emergencia/");
    $("#osce-finish").onclick=finish;
-   const form=$("#osce-chat-form"),input=$("#osce-chat-input"),chat=$("#osce-chat-body");
-   form.onsubmit=e=>{e.preventDefault();const q=input.value.trim();if(!q)return;chat.insertAdjacentHTML("beforeend",'<div class="osce-message user">'+esc(q)+'</div>');const answer=answerPatientQuestion(x,q);setTimeout(()=>{chat.insertAdjacentHTML("beforeend",'<div class="osce-message patient">'+esc(answer)+'</div>');chat.scrollTop=chat.scrollHeight;},180);input.value="";chat.scrollTop=chat.scrollHeight;input.focus();};
-   state.timer=setInterval(()=>{state.seconds=Math.max(0,state.seconds-1);const m=Math.floor(state.seconds/60),s=state.seconds%60;const t=$("#osce-timer");if(t)t.textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");if(!state.seconds){clearInterval(state.timer);finish()}},1000);
- } function finish(){clearInterval(state.timer);const x=state.full||state.current;if(!x)return;const actions=x.actions||[],ess=actions.filter(a=>a.essential||Number(a.points)>=8),hit=ess.filter(a=>state.performed.has(a.id));const bad=actions.filter(a=>state.performed.has(a.id)&&Number(a.points)<0);const positive=actions.filter(a=>state.performed.has(a.id)&&Number(a.points)>0);const actionScore=ess.length?Math.round(70*hit.length/ess.length):Math.min(70,positive.length*8);const hyp=$("#osce-hyp")?.value.trim()||"",plan=$("#osce-plan")?.value.trim()||"";const dx=x.debrief?.diagnosis||x.title||"";const hypOk=hyp&&norm(dx).split(/\s+/).filter(w=>w.length>4).some(w=>norm(hyp).includes(w));const score=Math.max(0,Math.min(100,actionScore+(hypOk?15:0)+(plan.length>25?15:0)-bad.length*5));const missing=ess.filter(a=>!state.performed.has(a.id));$("#osce-root").innerHTML='<section class="osce-debrief"><span class="osce-kicker">DEBRIEFING DA ESTAÇÃO</span><h2>'+esc(title(x))+'</h2><div class="osce-score">'+score+'%</div><p style="font-size:9px;color:var(--muted)">A correção considera as ações clínicas relevantes executadas durante a estação, hipótese e fechamento. O checklist permaneceu oculto durante o atendimento.</p><div class="osce-review"><div class="osce-review-card"><h3>O que você fez</h3><ul>'+(positive.length?positive.map(a=>'<li>'+esc(a.label)+'</li>').join(""):'<li>Nenhuma ação pontuável registrada.</li>')+'</ul></div><div class="osce-review-card"><h3>Condutas-chave que faltaram</h3><ul>'+(missing.length?missing.map(a=>'<li>'+esc(a.label)+'</li>').join(""):'<li>As principais condutas foram contempladas.</li>')+'</ul></div></div>'+(bad.length?'<div class="osce-review-card"><h3>Condutas inadequadas</h3><ul>'+bad.map(a=>'<li>'+esc(a.label)+' — '+esc(a.result||"Conduta inadequada.")+'</li>').join("")+'</ul></div>':'')+'<div class="osce-review-card" style="margin-top:10px"><h3>Fechamento esperado</h3><p style="font-size:9px;line-height:1.55;margin:0">'+esc(x.debrief?.diagnosis?("Diagnóstico: "+x.debrief.diagnosis+". "):"")+esc(x.debrief?.summary||x.presentation?.goal||"Revise a sequência clínica esperada e compare com sua abordagem.")+'</p></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button type="button" class="osce-btn" id="osce-new">Nova estação</button><button type="button" class="osce-btn osce-secondary" id="osce-retry">Refazer esta</button><a class="osce-btn osce-secondary" href="/plantao/sala-emergencia/" style="text-decoration:none">Sala de Emergência</a></div></section>';$("#osce-new").onclick=()=>location.reload();$("#osce-retry").onclick=()=>start(x.id)}
+   const form=$("#osce-command-form"),input=$("#osce-command-input");form.onsubmit=e=>{e.preventDefault();const q=input.value.trim();if(!q)return;interpretCommand(q);input.value="";input.focus()};input.focus();
+   state.timer=setInterval(()=>{state.seconds=Math.max(0,state.seconds-1);const m=Math.floor(state.seconds/60),s=state.seconds%60,t=$("#osce-timer");if(t)t.textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");if(!state.seconds){clearInterval(state.timer);finish()}},1000);
+ }
+ function finish(){
+   clearInterval(state.timer);const x=state.full||state.current;if(!x)return;
+   const actions=Array.isArray(x.actions)?x.actions:[],essential=actions.filter(a=>a.essential||Number(a.essential_points)>0||Number(a.points)>=8),hit=essential.filter(a=>state.performed.has(a.id)),bad=actions.filter(a=>state.performed.has(a.id)&&Number(a.points)<0);
+   const actionScore=essential.length?Math.round(70*hit.length/essential.length):Math.min(70,state.performed.size*6);
+   const dx=x.debrief?.diagnosis||x.title||"",hyp=state.hypothesis||"",hypOk=hyp&&norm(dx).split(/\s+/).filter(w=>w.length>4).some(w=>norm(hyp).includes(w));
+   const planOk=state.plan.length>10||state.domains.has("destino");const score=Math.max(0,Math.min(100,actionScore+(hypOk?15:0)+(planOk?15:0)-bad.length*5));const missing=essential.filter(a=>!state.performed.has(a.id));
+   $("#osce-root").innerHTML='<section class="osce-debrief"><span class="osce-kicker">DEBRIEFING DA ESTAÇÃO</span><h2>'+esc(title(x))+'</h2><div class="osce-score">'+score+'%</div><p style="font-size:9px;color:var(--muted)">A correção foi feita pelo checklist oculto. Nenhuma lista de ações ficou disponível durante o atendimento.</p><div class="osce-review"><div class="osce-review-card"><h3>Condutas reconhecidas</h3><ul>'+(state.performed.size?[...state.performed].map(id=>{const a=allCommands().find(x=>x.id===id);return'<li>'+esc(a?.label||id)+'</li>'}).join(""):'<li>Nenhuma ação pontuável reconhecida.</li>')+'</ul></div><div class="osce-review-card"><h3>Condutas-chave que faltaram</h3><ul>'+(missing.length?missing.map(a=>'<li>'+esc(a.label||a.id)+'</li>').join(""):'<li>As principais condutas foram contempladas.</li>')+'</ul></div></div><div class="osce-review-card"><h3>Fechamento esperado</h3><p style="font-size:9px;line-height:1.55;margin:0">'+esc(x.debrief?.diagnosis?("Diagnóstico: "+x.debrief.diagnosis+". "):"")+esc(x.debrief?.summary||x.presentation?.goal||"Revise sua sequência clínica e compare com o esperado.")+'</p></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button type="button" class="osce-btn" id="osce-new">Nova estação</button><button type="button" class="osce-btn osce-secondary" id="osce-retry">Refazer esta</button><a class="osce-btn osce-secondary" href="/plantao/sala-emergencia/" style="text-decoration:none">Voltar ao Simulador</a></div></section>';
+   $("#osce-new").onclick=()=>location.reload();$("#osce-retry").onclick=()=>start(x.id);
+ }
  async function load(){
-   let r=await sb.from("clinical_cases")
-     .select("id,slug,title,setting,specialty,difficulty,summary,presentation,version")
-     .eq("active",true)
-     .order("created_at",{ascending:true})
-     .limit(80);
-   if(r.error){
-     r=await sb.rpc("list_active_clinical_case_summaries");
-   }
-   const all=Array.isArray(r.data)?r.data:[];
-   state.cases=all.filter(x=>norm(x.setting)!=="ambulancia / aph"&&norm(x.setting)!=="ambulância / aph").slice(0,60);
-   renderAreaSwitches();
-   $("#osce-search").oninput=renderList;
-   renderList();
-   const requested=new URLSearchParams(location.search).get("case");
-   if(requested && state.cases.some(x=>String(x.id)===String(requested))) start(requested);
+   let r=await sb.from("clinical_cases").select("id,slug,title,setting,specialty,difficulty,summary,presentation,version").eq("active",true).order("created_at",{ascending:true}).limit(80);
+   if(r.error)r=await sb.rpc("list_active_clinical_case_summaries");
+   const all=Array.isArray(r.data)?r.data:[];state.cases=all.filter(x=>!norm(x.setting).includes("ambulancia / aph")).slice(0,60);
+   renderAreaSwitches();$("#osce-search").oninput=renderList;renderList();
+   const requested=new URLSearchParams(location.search).get("case");if(requested&&state.cases.some(x=>String(x.id)===String(requested)))start(requested);
  }
  load().catch(()=>{$("#osce-grid").innerHTML='<div class="osce-empty">Não foi possível carregar as estações agora.</div>'})
 })();
