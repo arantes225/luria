@@ -7899,6 +7899,36 @@ iniciarApp();
         filter:none!important;
       }
 
+
+      /* Claro e escuro: todos os elementos internos permanecem brancos. */
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch *,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch *{
+        color:#fff!important;
+      }
+
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+        background:rgba(255,255,255,.14)!important;
+        color:#fff!important;
+      }
+
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg{
+        color:#fff!important;
+        stroke:#fff!important;
+      }
+
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg path,
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg circle,
+      html[data-theme="light"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg rect,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg path,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg circle,
+      html[data-theme="dark"].pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch svg rect{
+        stroke:#fff!important;
+      }
+
       /* A peça acima ocupa a mesma altura nos dois ambientes:
          Ofensiva em Estudos e PCR em Trabalho. */
       html.pwa-standalone body #sidebar.sidebar .streak-mini,
