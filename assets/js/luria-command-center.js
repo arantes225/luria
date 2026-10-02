@@ -42,14 +42,23 @@ function installSearch(){
  b.onclick=open;d.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();open()}});
 }
 function todayActivities(){try{if(typeof agendaState==="object"&&Array.isArray(agendaState.items)){const iso=new Date().toLocaleDateString("sv-SE");return agendaState.items.filter(x=>x.activity_date===iso)}}catch{}return[]}
+function studyActivityHref(a){
+ const kind=String(a?.kind||"").toLowerCase();
+ const title=String(a?.title||"").toLowerCase();
+ if(kind==="errors_batch"||title.includes("caderno de erro")||title.includes("revisar erro"))return "/caderno-erros/revisao/?mode=today";
+ if(kind==="simulation"||kind==="smart_simulation"||kind==="full_exam"||title.includes("quest")||title.includes("simulado"))return "/resolver-questoes/?daily=1";
+ if(kind==="flashcards_batch"||title.includes("flashcard"))return "/flashcards/";
+ if(kind==="lesson"||kind==="subject_review")return a?.item_id?"/caderno/?topic_id="+encodeURIComponent(a.item_id)+"&view=editor":"/caderno/";
+ return "/cronograma/";
+}
 function sessionSteps(minutes){
  const acts=todayActivities(),steps=[],budget=minutes===999?120:minutes;let used=0;
  const add=(title,detail,min,href)=>{if(used+min<=budget||!steps.length){steps.push({title,detail,min,href});used+=min}};
  const errors=Number((d.getElementById("metric-errors")?.textContent||"").match(/\d+/)?.[0]||0),flash=Number((d.getElementById("metric-flashcards")?.textContent||"").match(/\d+/)?.[0]||0),questions=Number((d.getElementById("metric-questions")?.textContent||"").match(/\d+/)?.[0]||0);
- if(errors)add("Revisar erros","Comece pelos erros pendentes para fechar lacunas.",Math.min(10,budget),"/caderno-erros/");
+ if(errors)add("Revisar erros","Abra diretamente as revisões pendentes de hoje.",Math.min(10,budget),"/caderno-erros/revisao/?mode=today");
  if(flash)add("Flashcards vencidos","Faça uma revisão curta antes de conteúdo novo.",Math.min(12,Math.max(5,budget-used)),"/flashcards/");
- acts.slice(0,3).forEach(a=>add(a.title||"Atividade do cronograma",a.area||"Atividade de hoje",15,a.kind==="lesson"?"/caderno/":"/cronograma/"));
- if(questions||steps.length<2)add("Questões direcionadas","Consolide a sessão com questões do dia.",Math.min(20,Math.max(8,budget-used)),"/resolver-questoes/?daily=1");
+ acts.slice(0,3).forEach(a=>add(a.title||"Atividade do cronograma",a.area||"Atividade de hoje",15,studyActivityHref(a)));
+ if(questions||steps.length<2)add("Questões direcionadas","Abra diretamente a resolução das questões do dia.",Math.min(20,Math.max(8,budget-used)),"/resolver-questoes/?daily=1");
  if(!steps.length)add("Revisão guiada","Comece com flashcards e siga para questões.",Math.min(20,budget),"/flashcards/");
  return steps.slice(0,3)
 }
