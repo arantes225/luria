@@ -8109,3 +8109,31 @@ body[data-page="plantao"] .plantao-phone-profile-avatar-header{
   width:36px;
   height:36px;
 }
+
+
+/* Sala de Emergência v59 — Início: "Seu plantão hoje" alinhado ao seletor principal. */
+@media(min-width:941px){
+  body.plantao-module-entry[data-case-library-view="home"] .plantao-primary-switch-wrap,
+  body.plantao-module-entry[data-case-library-view="home"] .plantao-library-side{
+    grid-row:2!important;
+    align-self:start!important;
+    margin-top:0!important;
+    padding-top:0!important;
+  }
+
+  body.plantao-module-entry[data-case-library-view="home"] .plantao-primary-switch-wrap{
+    grid-column:1!important;
+  }
+
+  body.plantao-module-entry[data-case-library-view="home"] .plantao-library-side{
+    grid-column:2!important;
+    position:static!important;
+    top:auto!important;
+    transform:none!important;
+  }
+
+  body.plantao-module-entry[data-case-library-view="home"] .plantao-library-side > .plantao-side-card:first-child,
+  body.plantao-module-entry[data-case-library-view="home"] .plantao-today-card{
+    margin-top:0!important;
+  }
+}
