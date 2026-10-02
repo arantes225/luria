@@ -106,8 +106,17 @@
   }
 
   function phoneAvatarMarkup(persona,size="list"){
-    const src=String(persona?.avatar||PHONE_PERSONAS[0].avatar);
-    return `<img class="plantao-phone-portrait-image plantao-phone-portrait-image-${size}" src="${esc(src)}" alt="" aria-hidden="true" loading="lazy" decoding="async">`;
+    const female=/^Dra\./i.test(String(persona?.name||""));
+    const label=female ? "Médica" : "Médico";
+    return `<span class="plantao-phone-profile-avatar plantao-phone-profile-avatar-${size}" aria-hidden="true" title="${label}">
+      <svg viewBox="0 0 48 48" focusable="false" role="presentation">
+        <circle cx="24" cy="17" r="8"></circle>
+        <path d="M10 41c1.2-9 6.5-14 14-14s12.8 5 14 14"></path>
+        <path d="M18 29v5l6 4 6-4v-5"></path>
+        <path d="M15 35h-4v7h26v-7h-4"></path>
+        ${female ? '<path d="M15 17c0-7 3.5-11 9-11s9 4 9 11c-2-3-5-5-9-5s-7 2-9 5Z"></path>' : '<path d="M16 14c1-6 4-9 8-9 5 0 8 3 9 8-3-2-6-3-9-3-3 0-6 1-8 4Z"></path>'}
+      </svg>
+    </span>`;
   }
 
   function setPhoneHeaderPersona(item){
