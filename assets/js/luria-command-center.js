@@ -2,7 +2,7 @@
 (()=>{"use strict";
 if(window.__luriaCommandCenterLoaded)return;window.__luriaCommandCenterLoaded=true;
 const d=document,$=(s,r=d)=>r.querySelector(s),all=(s,r=d)=>[...r.querySelectorAll(s)],esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-const css=d.createElement("link");css.rel="stylesheet";css.href="/assets/css/luria-command-center.css?v=20261002-5-search-docked";d.head.appendChild(css);
+const css=d.createElement("link");css.rel="stylesheet";css.href="/assets/css/luria-command-center.css?v=20261002-6-study-routing-search-size";d.head.appendChild(css);
 const routes=[
  ["Dashboard","Seu dia, sessões e atalhos","/dashboard/","Geral"],["Cronogramas","Planejamento de aulas e revisões","/cronograma/","Estudos"],["Desafio diário","Diagnóstico por pistas","/desafio-diario/","Estudos"],["Anotações · Cola Rápida","Anotações, prescrições e conteúdo rápido","/caderno/","Estudos"],["Questões e Simulados","Biblioteca e listas de questões","/questoes-simulados/","Estudos"],["Flashcards","Decks e revisões","/flashcards/","Estudos"],["Caderno de Erros","Erros e revisões","/caderno-erros/","Estudos"],["Simulador","Sala de emergência e LuriaZap","/plantao/","Prática"],["Mini-OSCE","Estações clínicas objetivas","/mini-osce/","Prática"],["Estatísticas","Evolução e desempenho","/estatisticas/","Desempenho"],["Editais e Provas","Provas, editais e datas","/editais/","Estudos"],["Bulário","Medicamentos e posologias","/bulario/","Trabalho"],["Protocolos","Protocolos clínicos","/protocolos/","Trabalho"],["Scores","Scores médicos","/scores/","Trabalho"],["Calculadoras","Calculadoras clínicas","/calculadoras/","Trabalho"],["Passômetro","Entrega de plantão","/passometro/","Trabalho"]
 ];
