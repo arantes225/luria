@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sessão de estudo · LURIA</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="canonical" href="/sessao-estudo/">
+  <style>
+    .study-session-page{display:grid;gap:18px;padding-bottom:32px}
+    .study-session-hero{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:20px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .study-session-hero .eyebrow{display:inline-flex;margin-bottom:7px}
+    .study-session-hero h2{margin:0 0 5px;font-size:1.45rem;letter-spacing:-.025em}
+    .study-session-hero p{margin:0;color:var(--muted);max-width:680px;line-height:1.5}
+    .study-session-time{min-width:96px;display:grid;justify-items:end}
+    .study-session-time strong{font-size:1.35rem;color:var(--accent)}
+    .study-session-time small{font-size:.72rem;color:var(--muted);font-weight:800}
+    .study-session-progress{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding:4px 2px}
+    .study-session-progress-step{position:relative;display:grid;justify-items:center;gap:6px;color:var(--muted);font-size:.69rem;font-weight:850}
+    .study-session-progress-step:not(:last-child)::after{content:"";position:absolute;top:18px;left:calc(50% + 22px);right:calc(-50% + 22px);height:3px;border-radius:99px;background:var(--border)}
+    .study-session-progress-dot{position:relative;z-index:2;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:2px solid var(--border);background:var(--surface);font-weight:900}
+    .study-session-progress-step.is-current{color:var(--accent)}
+    .study-session-progress-step.is-current .study-session-progress-dot{border-color:var(--accent);box-shadow:0 0 0 6px var(--accent-soft);animation:sessionPulse 1.8s ease-in-out infinite}
+    .study-session-progress-step.is-done{color:#18885c}
+    .study-session-progress-step.is-done .study-session-progress-dot{border-color:#18885c;background:#18885c;color:#fff}
+    .study-session-progress-step.is-done::after{background:#18885c}
+    .study-session-banner{display:none;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid color-mix(in srgb,#18885c 30%,var(--border));border-radius:13px;background:color-mix(in srgb,#18885c 8%,var(--surface));animation:sessionWin .45s ease both}
+    .study-session-banner.is-visible{display:flex}
+    .study-session-banner strong{font-size:.9rem;color:#18885c}
+    .study-session-banner small{display:block;color:var(--muted);font-size:.75rem;margin-top:2px}
+    .study-session-list{display:grid;gap:10px}
+    .study-session-item{width:100%;display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:12px;padding:14px 15px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text);text-align:left;cursor:pointer;box-shadow:0 2px 7px rgba(0,0,0,.03);transition:.18s ease}
+    .study-session-item:hover:not(:disabled){transform:translateY(-1px);background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-color:color-mix(in srgb,var(--accent) 26%,var(--border))}
+    .study-session-item.is-current{border-color:color-mix(in srgb,var(--accent) 35%,var(--border));box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 10%,transparent)}
+    .study-session-item.is-done{border-color:color-mix(in srgb,#18885c 35%,var(--border));background:color-mix(in srgb,#18885c 5%,var(--surface))}
+    .study-session-item:disabled{opacity:.48;cursor:not-allowed;filter:saturate(.55)}
+    .study-session-index{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-weight:900}
+    .study-session-item.is-done .study-session-index{background:#18885c;color:#fff}
+    .study-session-copy{display:grid;gap:3px}
+    .study-session-copy strong{font-size:.96rem}
+    .study-session-copy small{font-size:.78rem;color:var(--muted);line-height:1.35}
+    .study-session-action{display:flex;align-items:center;gap:8px;color:var(--accent);font-weight:850;font-size:.78rem;white-space:nowrap}
+    .study-session-action::after{content:"→";font-size:1rem}
+    .study-session-item.is-done .study-session-action{color:#18885c}
+    .study-session-item.is-done .study-session-action::after{content:"✓"}
+    .study-session-finale{display:none;text-align:center;padding:26px 18px;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,var(--surface)),var(--surface));animation:sessionWin .55s ease both}
+    .study-session-finale.is-visible{display:block}
+    .study-session-finale .trophy{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 9px;border-radius:16px;background:var(--accent-soft);color:var(--accent);animation:sessionBounce .8s ease both}
+    .study-session-finale .trophy svg{width:30px;height:30px}
+    .study-session-finale h3{margin:0 0 5px;font-size:1.25rem}
+    .study-session-finale p{margin:0;color:var(--muted)}
+    @keyframes sessionPulse{0%,100%{box-shadow:0 0 0 4px var(--accent-soft)}50%{box-shadow:0 0 0 9px color-mix(in srgb,var(--accent) 8%,transparent)}}
+    @keyframes sessionWin{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+    @keyframes sessionBounce{0%{transform:scale(.6) rotate(-8deg)}60%{transform:scale(1.15) rotate(4deg)}100%{transform:scale(1) rotate(0)}}
+    @media(max-width:650px){
+      .study-session-hero{padding:16px}
+      .study-session-item{grid-template-columns:40px minmax(0,1fr)}
+      .study-session-action{grid-column:2;justify-self:start}
+      .study-session-progress-step{font-size:.62rem}
+    }
+  </style>
+</head>
+<body data-page="sessao_estudo">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading">
+            <span class="eyebrow">Estudar agora</span>
+            <h1>Sessão de estudo do dia</h1>
+          </div>
+        </header>
+
+        <section class="study-session-page">
+          <header class="study-session-hero">
+            <div>
+              <span class="eyebrow">Desafio de hoje</span>
+              <h2>Complete suas 3 etapas</h2>
+              <p>Vença uma etapa por vez. O timer começa quando você iniciar a primeira atividade e continua durante toda a sessão.</p>
+            </div>
+            <div class="study-session-time"><strong id="study-session-minutes">—</strong><small>planejados</small></div>
+          </header>
+
+          <div id="study-session-progress" class="study-session-progress" aria-label="Progresso da sessão"></div>
+          <div id="study-session-banner" class="study-session-banner" aria-live="polite"></div>
+          <div id="study-session-list" class="study-session-list"></div>
+
+          <div id="study-session-finale" class="study-session-finale">
+            <span class="trophy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v3c0 3.3-1.8 5.7-4 6.5C9.8 12.7 8 10.3 8 7V4Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 6H5v1.2c0 2 1.2 3.5 3.2 3.8M16 6h3v1.2c0 2-1.2 3.5-3.2 3.8M12 13.5V17m-3 3h6m-5-3h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3>Sessão vencida</h3>
+            <p>Você concluiu as três etapas planejadas para hoje.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js"></script>
+  <script src="/assets/js/app.js?v=20261002-study-session-page"></script>
+  <script>
+  (function(){
+    const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[char]));
+    function render(){
+      let plan=null;
+      try{plan=JSON.parse(sessionStorage.getItem("luria:guided-study-plan")||"null")}catch{}
+      const steps=(Array.isArray(plan?.steps)?plan.steps:[]).slice(0,3);
+      const list=document.getElementById("study-session-list");
+      const progress=document.getElementById("study-session-progress");
+      const banner=document.getElementById("study-session-banner");
+      const finale=document.getElementById("study-session-finale");
+      const minutes=document.getElementById("study-session-minutes");
+      if(minutes)minutes.textContent=(Number(plan?.minutes)||0)+" min";
+
+      if(!steps.length){
+        list.innerHTML='<div class="panel"><p style="margin:0;color:var(--muted)">Não encontrei uma sessão ativa. Volte ao Dashboard e toque em Estudar agora.</p></div>';
+        progress.innerHTML="";
+        return;
+      }
+
+      let completedThrough=-1;
+      try{
+        const saved=JSON.parse(sessionStorage.getItem("luria:guided-study-progress")||"null");
+        if(saved?.createdAt===plan?.createdAt)completedThrough=Number(saved.completedThrough??-1);
+        const active=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null");
+        if(active?.plan?.createdAt===plan?.createdAt&&Number.isInteger(active.activeIndex)){
+          completedThrough=Math.max(completedThrough,active.activeIndex);
+          sessionStorage.setItem("luria:guided-study-progress",JSON.stringify({createdAt:plan.createdAt,completedThrough}));
+          sessionStorage.removeItem("luria:guided-study-active");
+          if(banner){
+            banner.innerHTML='<div><strong>Etapa '+(active.activeIndex+1)+' concluída</strong><small>Boa. A próxima etapa foi liberada.</small></div><span>✓</span>';
+            banner.classList.add("is-visible");
+          }
+        }
+      }catch{}
+
+      const currentIndex=Math.min(steps.length-1,completedThrough+1);
+      progress.innerHTML=[0,1,2].map(index=>{
+        const state=index<=completedThrough?" is-done":index===currentIndex?" is-current":"";
+        const label=index<=completedThrough?"Concluída":index===currentIndex?"Agora":"Depois";
+        return '<div class="study-session-progress-step'+state+'"><span class="study-session-progress-dot">'+(index<=completedThrough?"✓":(index+1))+'</span><small>Etapa '+(index+1)+' · '+label+'</small></div>';
+      }).join("");
+
+      list.innerHTML=steps.map((step,index)=>{
+        const done=index<=completedThrough,current=index===currentIndex,locked=index>currentIndex;
+        const cls=done?" is-done":current?" is-current":"";
+        const action=done?"Vencida":current?"Começar":"Bloqueada";
+        return '<button class="study-session-item'+cls+'" type="button" data-session-index="'+index+'" '+(locked||done?"disabled":"")+'><span class="study-session-index">'+(done?"✓":(index+1))+'</span><span class="study-session-copy"><strong>'+esc(step.title||"Atividade")+'</strong><small>'+esc(step.detail||"Atividade planejada")+'</small></span><span class="study-session-action">'+action+' · '+(Number(step.min)||0)+' min</span></button>';
+      }).join("");
+
+      if(completedThrough>=steps.length-1){
+        list.hidden=true;
+        finale.classList.add("is-visible");
+        try{localStorage.removeItem("luria:guided-timer")}catch{}
+      }
+
+      list.querySelectorAll("[data-session-index]").forEach(button=>button.addEventListener("click",()=>{
+        const index=Number(button.dataset.sessionIndex);
+        if(index!==currentIndex)return;
+        const step=steps[index];
+        if(!step?.href)return;
+        try{
+          const existing=JSON.parse(localStorage.getItem("luria:guided-timer")||"null");
+          if(!existing?.active){
+            const totalMinutes=Math.max(1,Number(plan?.minutes)||Number(step.min)||1);
+            localStorage.setItem("luria:guided-timer",JSON.stringify({startedAt:Date.now(),durationSeconds:Math.round(totalMinutes*60),title:step.title||"Sessão de estudo",active:true}));
+          }
+          sessionStorage.setItem("luria:guided-study-active",JSON.stringify({plan,activeIndex:index}));
+        }catch{}
+        location.href=step.href;
+      }));
+    }
+    if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",render);else render();
+    window.addEventListener("pageshow",render);
+  })();
+  </script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
