@@ -19163,11 +19163,13 @@ function notebookPaperKey() {
   return "luria:notebook-paper:"+(doc?.note?.id || doc?.topic?.id || "draft");
 }
 function applyNotebookPaperStyle(style) {
-  const paper=document.querySelector(".notebook-paper");
+  const paper=document.querySelector(".note-page, .notebook-paper");
   if(!paper)return;
+  const normalized=["white","lined","dotted","luria"].includes(style)?style:"white";
   paper.classList.remove("paper-white","paper-lined","paper-dotted","paper-luria");
-  paper.classList.add("paper-"+(style||"white"));
-  try{localStorage.setItem(notebookPaperKey(),style||"white")}catch{}
+  paper.classList.add("paper-"+normalized);
+  paper.dataset.paperStyle=normalized;
+  try{localStorage.setItem(notebookPaperKey(),normalized)}catch{}
 }
 function restoreNotebookPaperStyle() {
   let style="white"; try{style=localStorage.getItem(notebookPaperKey())||"white"}catch{}
