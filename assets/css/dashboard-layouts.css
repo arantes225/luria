@@ -4641,3 +4641,13 @@ body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
     padding-bottom:5px!important;
   }
 }
+
+
+/* Dashboard 2 v5 — widgets superiores crescem pela base até o gap do Progresso por área */
+@media(min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2>.dl-card:not(.dl-areas):not(.dl-cat){
+    align-self:stretch!important;
+    height:100%!important;
+    max-height:none!important;
+  }
+}
