@@ -2053,6 +2053,12 @@ function sanitizeHtml(
               src
             );
 
+        const validInternalImage =
+          /^\/assets\/img\/[a-z0-9_\-./% ]+\.(?:png|jpe?g|webp|gif|svg)(?:\?.*)?$/i
+            .test(
+              src
+            );
+
         keepImageAssetId =
           String(
             child.getAttribute(
@@ -2067,6 +2073,8 @@ function sanitizeHtml(
             !validDataImage
             &&
             !validSharedImage
+            &&
+            !validInternalImage
           )
           ||
           keptImages >= 2
