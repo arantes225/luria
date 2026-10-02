@@ -7599,3 +7599,14 @@ iniciarApp();
     }
   }).observe(document.documentElement,{childList:true,subtree:true});
 })();
+
+
+/* LURIA intelligence / command center layer */
+(function loadLuriaCommandCenter(){
+  if (document.querySelector('script[data-luria-command-center]')) return;
+  const script = document.createElement('script');
+  script.src = '/assets/js/luria-command-center.js?v=20261002-1';
+  script.defer = true;
+  script.dataset.luriaCommandCenter = '1';
+  document.head.appendChild(script);
+})();
