@@ -57,6 +57,58 @@
  function title(x){return x.title||x.presentation?.display_title||x.presentation?.chief_complaint||"Caso clínico"}
  function area(x){return x.specialty||"Clínica Médica"}
  function canonicalArea(v){const n=norm(v);if(n.includes("pedi"))return "Pediatria";if(n.includes("cirurg"))return "Cirurgia Geral";if(n.includes("gine")||n.includes("obst"))return "Ginecologia e Obstetrícia";if(n.includes("prevent")||n.includes("saude coletiva"))return "Preventiva";return "Clínica Médica"}
+ function sexOf(x){const s=norm(x?.presentation?.sex);return s==="f"||s.includes("fem")?"F":"M"}
+ function patientName(x){
+   const explicit=String(x?.presentation?.patient_name||x?.presentation?.name||"").trim();
+   if(explicit)return explicit;
+   const female=["Ana Martins","Mariana Alves","Camila Rocha","Juliana Ribeiro","Fernanda Costa","Larissa Gomes","Patrícia Lima","Beatriz Souza"];
+   const male=["Carlos Martins","Rafael Alves","Bruno Rocha","Lucas Ribeiro","Felipe Costa","Gustavo Gomes","Eduardo Lima","André Souza"];
+   const source=String(x?.slug||x?.id||x?.title||"paciente");let hash=0;
+   for(let i=0;i<source.length;i++)hash=(hash*31+source.charCodeAt(i))>>>0;
+   const list=sexOf(x)==="F"?female:male;return list[hash%list.length];
+ }
+ function ageLabel(x){const raw=String(x?.presentation?.age||"").trim();if(!raw)return "Idade não informada";if(/ano|mes|mês|dia/i.test(raw))return raw;const n=Number(raw);return Number.isFinite(n)?n+" "+(n===1?"ano":"anos"):raw}
+ function hdaText(x){return String(x?.presentation?.hda||x?.presentation?.history||x?.presentation?.opening||x?.summary||x?.presentation?.chief_complaint||"História da doença atual não informada.").trim()}
+ function parseHistoryTopics(x){
+   const raw=String(x?.presentation?.history_topics||"").trim();
+   if(!raw)return [];
+   return raw.split(/\n+/).map(line=>line.replace(/^\s*[•\-]\s*/,"").trim()).filter(Boolean).map(line=>{
+     const parts=line.split("→").map(p=>p.trim()).filter(Boolean);
+     if(parts.length>=3)return {label:parts[0],prompt:parts[1],answer:parts.slice(2).join(" → ")};
+     if(parts.length===2)return {label:parts[0],prompt:parts[0],answer:parts[1]};
+     return {label:"",prompt:line,answer:line};
+   });
+ }
+ function answerPatientQuestion(x,question){
+   const topics=parseHistoryTopics(x);
+   if(!topics.length)return "Não tenho mais informações além do que já contei.";
+   const q=norm(question).replace(/[^a-z0-9\s]/g," ");
+   const stop=new Set(["o","a","os","as","de","da","do","das","dos","e","em","um","uma","que","qual","quais","como","quando","onde","voce","você","tem","teve","esta","está","ha","há","pra","para","se","ele","ela"]);
+   const tokens=q.split(/\s+/).filter(t=>t.length>2&&!stop.has(t));
+   let best=null,bestScore=-1;
+   for(const topic of topics){
+     const hay=norm([topic.label,topic.prompt].join(" ")).replace(/[^a-z0-9\s]/g," ");
+     let score=0;
+     for(const token of tokens)if(hay.includes(token))score+=token.length>=6?3:2;
+     const synonyms=[
+       [["remedio","medicacao","medicamento","usa"],["medic","remed","uso habitual"]],
+       [["alergia","alergico"],["alerg"]],
+       [["comecou","inicio","quando","tempo"],["inicio","evolucao","tempo"]],
+       [["dor","doi","dolor"],["dor","queixa atual","sintomas"]],
+       [["febre","temperatura"],["febre","sintomas associados"]],
+       [["fuma","tabagismo","cigarro"],["tabag","risco","antecedentes"]],
+       [["doenca","antecedente","problema"],["antecedentes"]],
+       [["sangramento","sangue","cor"],["sangramento","queixa atual","sintomas associados"]]
+     ];
+     for(const [asks,targets] of synonyms){
+       if(asks.some(a=>q.includes(norm(a)))&&targets.some(t=>hay.includes(norm(t))))score+=5;
+     }
+     if(score>bestScore){bestScore=score;best=topic}
+   }
+   if(best&&bestScore>0)return best.answer;
+   const fallback=topics.find(t=>norm(t.label).includes("queixa atual"))||topics[0];
+   return fallback?.answer||"Não sei informar melhor.";
+ }
  function renderAreaSwitches(){const areas=["","Clínica Médica","Pediatria","Cirurgia Geral","Ginecologia e Obstetrícia","Preventiva"];$("#osce-area-switches").innerHTML=areas.map(a=>'<button type="button" class="osce-area-switch'+(state.area===a?' active':'')+'" data-osce-area="'+esc(a)+'">'+(a||"Todas")+'</button>').join("");document.querySelectorAll("[data-osce-area]").forEach(b=>b.onclick=()=>{state.area=b.dataset.osceArea||"";renderAreaSwitches();renderList()})}
  function renderList(){const q=$("#osce-search").value.trim().toLowerCase(),sp=state.area;const list=state.cases.filter(x=>(!sp||canonicalArea(area(x))===sp)&&(!q||[title(x),area(x),x.summary,x.presentation?.chief_complaint].join(" ").toLowerCase().includes(q)));$("#osce-grid").innerHTML=list.length?list.map((x,i)=>'<article class="osce-card"><small>ESTAÇÃO '+String(i+1).padStart(2,"0")+'</small><h3>'+esc(title(x))+'</h3><div class="osce-tags"><span class="osce-tag">'+esc(canonicalArea(area(x)))+'</span><span class="osce-tag">'+esc(x.difficulty||"Intermediária")+'</span></div><small>'+esc(x.presentation?.chief_complaint||x.summary||"Estação clínica interativa.")+'</small><button type="button" data-osce="'+esc(x.id)+'">Entrar na estação</button></article>').join(""):'<div class="osce-empty">Nenhuma estação encontrada.</div>';document.querySelectorAll("[data-osce]").forEach(b=>b.onclick=()=>start(b.dataset.osce))}
  function cat(a){const c=norm(a.category);if(c.includes("anamn"))return "anamnese";if(c==="exame"||c.includes("exame fis"))return "exame";if(c.includes("labor")||c.includes("imagem")||c==="exames")return "exames";if(c.includes("proced")||c.includes("trat")||c.includes("iniciais"))return "condutas";return "outros"}
@@ -96,9 +148,33 @@
  function renderTabs(){const box=$("#osce-tool-tabs");if(!box)return;box.innerHTML=tabs().map(([id,label])=>'<button type="button" class="osce-tool-tab '+(state.tab===id?'active':'')+'" data-tab="'+id+'">'+label+'</button>').join("");document.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{state.tab=b.dataset.tab;renderTabs();renderOptions()})}
  function applyEffects(a){const eff=a.effects?.vitals;if(eff&&state.full){state.full.initial_vitals={...(state.full.initial_vitals||{}),...eff};const v=$("#osce-vitals");if(v)v.innerHTML=vitalsHtml(state.full)}}
  function perform(id){const a=(state.full.actions||[]).find(x=>String(x.id)===String(id));if(!a)return;state.performed.add(a.id);state.log.push({who:"user",text:a.label||a.id});let result=a.result||"A ação foi realizada.";const v=state.full.initial_vitals||{};result=result.replace(/{{bp}}/g,v.bp||"—").replace(/{{hr}}/g,v.hr||"—").replace(/{{rr}}/g,v.rr||"—").replace(/{{spo2}}/g,v.spo2||"—").replace(/{{mental}}/g,v.mental||"—");state.log.push({who:(cat(a)==="anamnese"?"patient":"patient"),text:result});applyEffects(a);renderLog();renderOptions()}
- async function start(id){const base=state.cases.find(x=>String(x.id)===String(id));if(!base)return;state.current=base;state.seconds=480;state.performed=new Set();state.log=[];state.tab="anamnese";clearInterval(state.timer);$("#osce-root").innerHTML='<div class="osce-empty">Preparando estação...</div>';let r=await sb.from("clinical_cases").select("*").eq("id",id).maybeSingle();state.full=r.data||base;const x=state.full;$("#osce-root").innerHTML='<section class="osce-sim"><article class="osce-stage"><div class="osce-stage-head"><div><span class="osce-kicker">ESTAÇÃO OSCE · 8 MINUTOS</span><h2>'+esc(title(x))+'</h2></div><div id="osce-timer" class="osce-timer">08:00</div></div><div class="osce-patient"><div class="osce-avatar">'+avatar(x)+'</div><div><h3>'+esc(x.presentation?.display_title||x.presentation?.chief_complaint||"Paciente")+'</h3><p>'+esc(patientMeta(x))+'</p><p>'+esc(opening(x))+'</p></div></div><div id="osce-log" class="osce-log"></div><div class="osce-tools"><div id="osce-tool-tabs" class="osce-tool-tabs"></div><div id="osce-options" class="osce-options"></div></div></article><aside class="osce-side"><div><span class="osce-kicker">DADOS DISPONÍVEIS</span><h3>Paciente</h3></div><div id="osce-vitals" class="osce-vitals">'+vitalsHtml(x)+'</div><div class="osce-field"><label for="osce-hyp">Hipótese diagnóstica</label><textarea id="osce-hyp" placeholder="Escreva sua hipótese principal e, se quiser, diferenciais."></textarea></div><div class="osce-field"><label for="osce-plan">Conduta final</label><textarea id="osce-plan" placeholder="Defina investigação, tratamento e destino/seguimento."></textarea></div><div class="osce-side-actions"><button type="button" class="osce-btn osce-secondary" id="osce-exit">Sair</button><button type="button" class="osce-btn osce-secondary" id="osce-reset">Recomeçar</button><button type="button" class="osce-btn" id="osce-finish">Finalizar estação</button></div></aside></section>';renderTabs();renderOptions();renderLog();$("#osce-exit").onclick=()=>location.reload();$("#osce-reset").onclick=()=>start(id);$("#osce-finish").onclick=finish;state.timer=setInterval(()=>{state.seconds=Math.max(0,state.seconds-1);const m=Math.floor(state.seconds/60),s=state.seconds%60,t=$("#osce-timer");if(t)t.textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");if(!state.seconds){clearInterval(state.timer);finish()}},1000)}
- function finish(){clearInterval(state.timer);const x=state.full||state.current;if(!x)return;const actions=x.actions||[],ess=actions.filter(a=>a.essential||Number(a.points)>=8),hit=ess.filter(a=>state.performed.has(a.id));const bad=actions.filter(a=>state.performed.has(a.id)&&Number(a.points)<0);const positive=actions.filter(a=>state.performed.has(a.id)&&Number(a.points)>0);const actionScore=ess.length?Math.round(70*hit.length/ess.length):Math.min(70,positive.length*8);const hyp=$("#osce-hyp")?.value.trim()||"",plan=$("#osce-plan")?.value.trim()||"";const dx=x.debrief?.diagnosis||x.title||"";const hypOk=hyp&&norm(dx).split(/\s+/).filter(w=>w.length>4).some(w=>norm(hyp).includes(w));const score=Math.max(0,Math.min(100,actionScore+(hypOk?15:0)+(plan.length>25?15:0)-bad.length*5));const missing=ess.filter(a=>!state.performed.has(a.id));$("#osce-root").innerHTML='<section class="osce-debrief"><span class="osce-kicker">DEBRIEFING DA ESTAÇÃO</span><h2>'+esc(title(x))+'</h2><div class="osce-score">'+score+'%</div><p style="font-size:9px;color:var(--muted)">A correção considera as ações clínicas relevantes executadas durante a estação, hipótese e fechamento. O checklist permaneceu oculto durante o atendimento.</p><div class="osce-review"><div class="osce-review-card"><h3>O que você fez</h3><ul>'+(positive.length?positive.map(a=>'<li>'+esc(a.label)+'</li>').join(""):'<li>Nenhuma ação pontuável registrada.</li>')+'</ul></div><div class="osce-review-card"><h3>Condutas-chave que faltaram</h3><ul>'+(missing.length?missing.map(a=>'<li>'+esc(a.label)+'</li>').join(""):'<li>As principais condutas foram contempladas.</li>')+'</ul></div></div>'+(bad.length?'<div class="osce-review-card"><h3>Condutas inadequadas</h3><ul>'+bad.map(a=>'<li>'+esc(a.label)+' — '+esc(a.result||"Conduta inadequada.")+'</li>').join("")+'</ul></div>':'')+'<div class="osce-review-card" style="margin-top:10px"><h3>Fechamento esperado</h3><p style="font-size:9px;line-height:1.55;margin:0">'+esc(x.debrief?.diagnosis?("Diagnóstico: "+x.debrief.diagnosis+". "):"")+esc(x.debrief?.summary||x.presentation?.goal||"Revise a sequência clínica esperada e compare com sua abordagem.")+'</p></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button type="button" class="osce-btn" id="osce-new">Nova estação</button><button type="button" class="osce-btn osce-secondary" id="osce-retry">Refazer esta</button><a class="osce-btn osce-secondary" href="/plantao/sala-emergencia/" style="text-decoration:none">Sala de Emergência</a></div></section>';$("#osce-new").onclick=()=>location.reload();$("#osce-retry").onclick=()=>start(x.id)}
- async function load(){let r=await sb.rpc("list_active_clinical_case_summaries");if(r.error)r=await sb.from("clinical_cases").select("id,slug,title,setting,specialty,difficulty,summary,presentation,version").eq("active",true).order("title").limit(60);const all=Array.isArray(r.data)?r.data:[];state.cases=all.filter(x=>norm(x.setting)!=="aph").slice(0,60);renderAreaSwitches();$("#osce-search").oninput=renderList;renderList();const requested=new URLSearchParams(location.search).get("case");if(requested&&state.cases.some(x=>String(x.id)===String(requested)))start(requested)}
+ async function start(id){
+   state.current=state.cases.find(x=>String(x.id)===String(id));state.seconds=480;clearInterval(state.timer);
+   const x=state.current,name=patientName(x),age=ageLabel(x),sex=sexOf(x)==="F"?"Feminino":"Masculino";
+   $("#osce-root").innerHTML='<section class="osce-station"><article class="osce-paper"><span class="osce-kicker">OSCE · 8 MINUTOS</span><h2>'+esc(title(x))+'</h2><p class="osce-scenario"><b>Cenário:</b> Você está atendendo este paciente em uma estação clínica. Conduza a avaliação como faria diante de um paciente real.</p><div class="osce-patient-head"><div class="osce-patient-avatar">'+esc(name.split(" ").map(p=>p[0]).slice(0,2).join(""))+'</div><div class="osce-patient-meta"><strong>'+esc(name)+'</strong><small>'+esc(age)+' · '+esc(sex)+'</small></div></div><div class="osce-hda"><b>História da doença atual</b><p>'+esc(hdaText(x))+'</p></div><div class="osce-chat"><div class="osce-chat-head"><strong>Anamnese com o paciente</strong><small>Digite suas perguntas. O paciente responde com base nas informações do caso.</small></div><div id="osce-chat-body" class="osce-chat-body"><div class="osce-message patient">Pode perguntar, doutor(a).</div></div><form id="osce-chat-form" class="osce-chat-form"><input id="osce-chat-input" type="text" autocomplete="off" placeholder="Ex.: Quando começou? Usa algum remédio?"><button type="submit">Perguntar</button></form></div><div class="osce-task"><b>Tarefas da estação</b><ol>'+tasks(x).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ol><div class="osce-task-note">As respostas da anamnese devem ser obtidas perguntando ao paciente acima.</div></div><div class="osce-actions"><button class="osce-btn osce-secondary" id="osce-back">← Sair</button><button class="osce-btn" id="osce-finish">Finalizar estação</button></div></article><aside class="osce-panel"><span class="osce-kicker">TEMPO RESTANTE</span><div id="osce-timer" class="osce-timer">08:00</div><hr style="border:0;border-top:1px solid var(--border);margin:14px 0"><b style="font-size:10px">Checklist</b><div class="osce-checklist">'+checks(x).map((c,i)=>'<label class="osce-check"><input type="checkbox" data-check="'+i+'"><span>'+esc(c)+'</span></label>').join("")+'</div></aside></section>';
+   $("#osce-back").onclick=()=>location.assign("/plantao/sala-emergencia/");
+   $("#osce-finish").onclick=finish;
+   const form=$("#osce-chat-form"),input=$("#osce-chat-input"),chat=$("#osce-chat-body");
+   form.onsubmit=e=>{e.preventDefault();const q=input.value.trim();if(!q)return;chat.insertAdjacentHTML("beforeend",'<div class="osce-message user">'+esc(q)+'</div>');const answer=answerPatientQuestion(x,q);setTimeout(()=>{chat.insertAdjacentHTML("beforeend",'<div class="osce-message patient">'+esc(answer)+'</div>');chat.scrollTop=chat.scrollHeight;},180);input.value="";chat.scrollTop=chat.scrollHeight;input.focus();};
+   state.timer=setInterval(()=>{state.seconds=Math.max(0,state.seconds-1);const m=Math.floor(state.seconds/60),s=state.seconds%60;const t=$("#osce-timer");if(t)t.textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");if(!state.seconds){clearInterval(state.timer);finish()}},1000);
+ } function finish(){clearInterval(state.timer);const x=state.full||state.current;if(!x)return;const actions=x.actions||[],ess=actions.filter(a=>a.essential||Number(a.points)>=8),hit=ess.filter(a=>state.performed.has(a.id));const bad=actions.filter(a=>state.performed.has(a.id)&&Number(a.points)<0);const positive=actions.filter(a=>state.performed.has(a.id)&&Number(a.points)>0);const actionScore=ess.length?Math.round(70*hit.length/ess.length):Math.min(70,positive.length*8);const hyp=$("#osce-hyp")?.value.trim()||"",plan=$("#osce-plan")?.value.trim()||"";const dx=x.debrief?.diagnosis||x.title||"";const hypOk=hyp&&norm(dx).split(/\s+/).filter(w=>w.length>4).some(w=>norm(hyp).includes(w));const score=Math.max(0,Math.min(100,actionScore+(hypOk?15:0)+(plan.length>25?15:0)-bad.length*5));const missing=ess.filter(a=>!state.performed.has(a.id));$("#osce-root").innerHTML='<section class="osce-debrief"><span class="osce-kicker">DEBRIEFING DA ESTAÇÃO</span><h2>'+esc(title(x))+'</h2><div class="osce-score">'+score+'%</div><p style="font-size:9px;color:var(--muted)">A correção considera as ações clínicas relevantes executadas durante a estação, hipótese e fechamento. O checklist permaneceu oculto durante o atendimento.</p><div class="osce-review"><div class="osce-review-card"><h3>O que você fez</h3><ul>'+(positive.length?positive.map(a=>'<li>'+esc(a.label)+'</li>').join(""):'<li>Nenhuma ação pontuável registrada.</li>')+'</ul></div><div class="osce-review-card"><h3>Condutas-chave que faltaram</h3><ul>'+(missing.length?missing.map(a=>'<li>'+esc(a.label)+'</li>').join(""):'<li>As principais condutas foram contempladas.</li>')+'</ul></div></div>'+(bad.length?'<div class="osce-review-card"><h3>Condutas inadequadas</h3><ul>'+bad.map(a=>'<li>'+esc(a.label)+' — '+esc(a.result||"Conduta inadequada.")+'</li>').join("")+'</ul></div>':'')+'<div class="osce-review-card" style="margin-top:10px"><h3>Fechamento esperado</h3><p style="font-size:9px;line-height:1.55;margin:0">'+esc(x.debrief?.diagnosis?("Diagnóstico: "+x.debrief.diagnosis+". "):"")+esc(x.debrief?.summary||x.presentation?.goal||"Revise a sequência clínica esperada e compare com sua abordagem.")+'</p></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button type="button" class="osce-btn" id="osce-new">Nova estação</button><button type="button" class="osce-btn osce-secondary" id="osce-retry">Refazer esta</button><a class="osce-btn osce-secondary" href="/plantao/sala-emergencia/" style="text-decoration:none">Sala de Emergência</a></div></section>';$("#osce-new").onclick=()=>location.reload();$("#osce-retry").onclick=()=>start(x.id)}
+ async function load(){
+   let r=await sb.from("clinical_cases")
+     .select("id,slug,title,setting,specialty,difficulty,summary,presentation,version")
+     .eq("active",true)
+     .order("created_at",{ascending:true})
+     .limit(80);
+   if(r.error){
+     r=await sb.rpc("list_active_clinical_case_summaries");
+   }
+   const all=Array.isArray(r.data)?r.data:[];
+   state.cases=all.filter(x=>norm(x.setting)!=="ambulancia / aph"&&norm(x.setting)!=="ambulância / aph").slice(0,60);
+   renderAreaSwitches();
+   $("#osce-search").oninput=renderList;
+   renderList();
+   const requested=new URLSearchParams(location.search).get("case");
+   if(requested && state.cases.some(x=>String(x.id)===String(requested))) start(requested);
+ }
  load().catch(()=>{$("#osce-grid").innerHTML='<div class="osce-empty">Não foi possível carregar as estações agora.</div>'})
 })();
 </script>
