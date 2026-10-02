@@ -4114,3 +4114,50 @@ body[data-page="caderno"] #notebook-more-menu .notebook-emoji-menu button {
     max-height: min(72dvh, 540px) !important;
   }
 }
+
+
+/* LURIA — Editar/Salvar alinhado ao botão Adicionar tarefa */
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit{
+  width:auto!important;
+  min-width:0!important;
+  height:27px!important;
+  min-height:27px!important;
+  margin-top:0!important;
+  padding:0 9px!important;
+  border:1px solid var(--border)!important;
+  border-radius:7px!important;
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:6px!important;
+  font-size:7.5px!important;
+  line-height:1!important;
+  font-weight:700!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit > span{
+  font-size:7.5px!important;
+  line-height:1!important;
+  font-weight:700!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit svg{
+  width:13px!important;
+  height:13px!important;
+  flex:0 0 13px!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit:hover{
+  background:var(--surface-2)!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle{
+  background:var(--accent)!important;
+  border-color:var(--accent)!important;
+  color:#fff!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle > span{
+  font-size:9px!important;
+  font-weight:800!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle svg{
+  stroke:#fff!important;
+}
