@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=64-fine-left">
-  <link rel="stylesheet" href="/assets/css/simulador-hub.css?v=24-stats-right-raised">
+  <link rel="stylesheet" href="/assets/css/simulador-hub.css?v=25-luriazap-right-stack">
   <link rel="canonical" href="/plantao/">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260928-uniform-v5">
@@ -81,7 +81,21 @@
           </article>
         </section>
 
-        <section class="sim-stats-strip sim-stats-strip-compact" aria-label="Resumo do simulador">
+        <section class="sim-lower-grid" aria-label="Resumo do simulador">
+          <div class="sim-lower-left">
+            <article class="sim-panel sim-recent-panel">
+            <header><div><span class="sim-panel-icon sim-panel-icon-recent"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" >
+  <path d="M5 6.5h14v12H5z"></path>
+  <path d="M8 3.5h8v3H8z"></path>
+  <path d="M8 10h8M8 14h5"></path>
+</svg></span><h3>Distribuição de pontuação</h3></div><span class="sim-panel-subtitle">últimos casos concluídos</span></header>
+            <div id="sim-recent-list" class="sim-recent-list">
+              <div class="sim-empty-row">Carregando suas pontuações...</div>
+            </div>
+          </article>
+          </div>
+          <div class="sim-lower-right">
+            <section class="sim-stats-strip sim-stats-strip-compact" aria-label="Resumo do simulador">
           <article><span class="sim-stat-icon sim-stat-icon-completed"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" >
   <rect x="5" y="3.5" width="14" height="17" rx="3"></rect>
   <path d="M9 3.5h6v3H9z"></path>
@@ -94,20 +108,7 @@
   <path d="M16.5 6H18v1.5"></path>
 </svg></span><div><strong id="sim-score">—</strong><small>média de desempenho</small></div></article>
         </section>
-
-        <section class="sim-dashboard-grid">
-          <article class="sim-panel sim-recent-panel">
-            <header><div><span class="sim-panel-icon sim-panel-icon-recent"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" >
-  <path d="M5 6.5h14v12H5z"></path>
-  <path d="M8 3.5h8v3H8z"></path>
-  <path d="M8 10h8M8 14h5"></path>
-</svg></span><h3>Distribuição de pontuação</h3></div><span class="sim-panel-subtitle">últimos casos concluídos</span></header>
-            <div id="sim-recent-list" class="sim-recent-list">
-              <div class="sim-empty-row">Carregando suas pontuações...</div>
-            </div>
-          </article>
-
-          <article class="sim-panel sim-chart-panel sim-chart-panel-raised">
+            <article class="sim-panel sim-chart-panel sim-chart-panel-raised">
             <header><div><span class="sim-panel-icon sim-panel-icon-stats"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" >
   <path d="M5 19V9M10 19V5M15 19v-7M20 19V3"></path>
   <path d="m4 15 5-4 4 2 7-7"></path>
@@ -124,6 +125,7 @@
               </div>
             </div>
           </article>
+          </div>
         </section>
 
       </div>
