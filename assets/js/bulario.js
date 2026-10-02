@@ -91,8 +91,20 @@
     if(f){lines.push("APRESENTAÇÃO: "+(f.label||""), "Dose: "+(f.dose_text||"A confirmar"), "Intervalo: "+(f.interval_text||"A confirmar"), "Via: "+(f.route||"A confirmar"), "Duração: "+(f.duration_text||"A confirmar"));}
     return lines.join("\n").trim();
   }
-  function closeMobileDetail(){
+  function isMobilePwa(){
+    return document.documentElement.classList.contains('pwa-standalone')&&window.matchMedia('(max-width:760px)').matches;
+  }
+  function closeMobileDetail(fromHistory=false){
     document.body.classList.remove('bulario-detail-open');
+    if(!fromHistory&&history.state?.bularioDetail) history.back();
+  }
+  function openMobileDetail(){
+    if(!isMobilePwa())return;
+    if(!history.state?.bularioDetail){
+      history.pushState({...history.state,bularioDetail:true},'',location.href);
+    }
+    document.body.classList.add('bulario-detail-open');
+    detail.scrollTop=0;
   }
   function mobileDetailBar(row){
     return `<div class="bulario-mobile-detail-bar"><button type="button" data-bulario-mobile-close="1">← Voltar</button><strong>${esc(row?.active_ingredient||row?.name||'Bula')}</strong></div>`;
@@ -117,7 +129,7 @@
       <section class="rx-section"><div class="rx-section-head"><h3>Interações medicamentosas</h3></div>${clinicalList(d.drug_interactions||d.interactions||d.medication_interactions,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(d.leaflet_url||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
-    detail.querySelector('[data-bulario-mobile-close="1"]')?.addEventListener('click',closeMobileDetail);
+    detail.querySelector('[data-bulario-mobile-close="1"]')?.addEventListener('click',()=>closeMobileDetail(false));
     const activePresentation=detail.querySelector('#rx-active-presentation');
     detail.querySelectorAll('.rx-presentation-tab').forEach(tab=>tab.addEventListener('click',()=>{
       const index=Number(tab.dataset.formulationIndex);
@@ -172,12 +184,9 @@
     selected=Number(button.dataset.id);
     renderList();
     renderDetail(rows.find(row=>row.id===selected));
-    if(document.documentElement.classList.contains('pwa-standalone')&&window.matchMedia('(max-width:760px)').matches){
-      document.body.classList.add('bulario-detail-open');
-      detail.scrollTop=0;
-    }
+    openMobileDetail();
   });
-  window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(); });
+  window.addEventListener('popstate',()=>{ if(document.body.classList.contains('bulario-detail-open')) closeMobileDetail(true); });
   search.addEventListener('input',renderList);
   (async()=>{const [{data,error},{data:protocolRows}]=await Promise.all([
     window.supabaseClient.from('bulario_catalog').select('id,name,active_ingredient,therapeutic_class,pharmacological_class,data').order('name').limit(1000),
