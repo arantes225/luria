@@ -44,22 +44,15 @@ function commandCard(){
  const root=d.getElementById("dashboard-alternative");if(!root)return;
  const activityCard=root.querySelector(".dl-agenda-large,.dl-agenda,.dl-upcoming,.dl-card");
  if(!activityCard||activityCard.querySelector("[data-luria-study-now-inline]"))return;
- const head=activityCard.querySelector(".dl-card-heading")||activityCard.firstElementChild;
  const action=d.createElement("button");
  action.type="button";
- action.className="luria-intel-button primary";
+ action.className="luria-dashboard-study-now";
  action.dataset.luriaStudyNowInline="1";
- action.textContent="Estudar agora";
- action.style.marginLeft="auto";
+ action.innerHTML='<span>Estudar agora</span><strong>→</strong>';
  action.onclick=openSession;
- if(head){
-   head.style.display="flex";
-   head.style.alignItems="center";
-   head.style.gap="8px";
-   head.appendChild(action);
- }else{
-   activityCard.prepend(action);
- }
+ const timeline=activityCard.querySelector(".dl-timeline,.dl-empty");
+ if(timeline?.parentNode) timeline.parentNode.appendChild(action);
+ else activityCard.appendChild(action);
 }
 function enhanceQuestion(){
  const fb=d.getElementById("qr-feedback");if(!fb)return;
