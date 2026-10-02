@@ -62,6 +62,11 @@ return{styles:card.getAttribute("style"),cls:card.className,display:getComputedS
 if(rows.some(row=>!row.valid))console.error("ACTION ALIGNMENT",viewport.width,rows);
 if(rows.some(row=>!row.valid))failures.push("Action alignment "+viewport.width+": "+JSON.stringify(rows));
 }
+await goto("/dashboard/");
+await page.locator("#dashboard-alternative").waitFor({timeout:15000});
+await page.waitForFunction(()=>{const el=document.getElementById("dashboard-alternative");return !!el&&el.dataset.rendered==="true"&&el.innerHTML.trim().length>0;},{timeout:15000});
+assert.equal(await page.locator("#dashboard-fallback-shell:visible").count(),0,"Dashboard should render without fallback");
+console.log("PASS Dashboard renders "+viewport.width);
 await goto("/beta-testers/");
 await page.locator(".beta-feedback-card").waitFor();assert.match(await page.locator("#beta-feedback-list").innerText(),/Beta fixture/);
 assert.ok(await page.locator("#beta-testers-nav-link").count());
