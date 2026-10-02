@@ -1188,3 +1188,59 @@ body[data-page="estatisticas"] .heatmap-cell{
   background:var(--accent)!important;
   color:#fff!important;
 }
+
+
+/* stats-general-cleanup-v29 — Geral mais compacto e hierarquia simplificada */
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-summary-box{
+  margin-bottom:8px!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-summary-grid{
+  gap:7px!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-summary-card{
+  min-height:66px!important;
+  padding:8px 10px!important;
+  border-radius:8px!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-summary-card span{
+  font-size:7px!important;
+  line-height:1.15!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-summary-card strong{
+  margin-top:3px!important;
+  font-size:17px!important;
+  line-height:1.05!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-summary-card small{
+  margin-top:3px!important;
+  font-size:6.5px!important;
+  line-height:1.2!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-summary-viz{
+  display:none!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-block-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:10px!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-habit,
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap{
+  grid-column:auto!important;
+  min-width:0!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-habit .chart-box{
+  min-height:220px!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap{
+  display:flex!important;
+  flex-direction:column!important;
+}
+body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap #general-week-heatmap{
+  flex:1 1 auto!important;
+  min-height:220px!important;
+}
+@media(max-width:900px){
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-block-grid{
+    grid-template-columns:1fr!important;
+  }
+}
