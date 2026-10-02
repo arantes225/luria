@@ -4674,3 +4674,118 @@ body[data-page="dashboard"][data-dashboard-layout="2"] .dl-upcoming .dl-activity
   grid-column:3!important;
   justify-self:end!important;
 }
+
+
+/* =========================================================
+   LURIA STUDY NOW NATIVE PANELS
+   ========================================================= */
+.dl-study-now{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.dl-study-now-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.dl-study-now-head>div{
+  min-width:0;
+}
+.dl-study-now-head small{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.dl-study-now-head h3{
+  margin:2px 0 0;
+  color:var(--text);
+  font-size:17px;
+  line-height:1.1;
+}
+.dl-study-now>p{
+  margin:0;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.45;
+}
+.dl-study-time-options{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:7px;
+}
+.dl-study-time-options button{
+  min-height:36px;
+  padding:0 10px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:var(--surface-2);
+  color:var(--text);
+  font:700 11px/1 inherit;
+  cursor:pointer;
+}
+.dl-study-time-options button.active{
+  border-color:var(--accent);
+  background:var(--accent-soft);
+  color:var(--accent);
+}
+.dl-study-now .dl-study-now-start{
+  width:100%;
+  margin-top:auto;
+  border:0;
+  cursor:pointer;
+}
+.dl-agenda-study-split{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(240px,.72fr);
+  gap:16px;
+  align-items:stretch;
+}
+.dl-agenda-study-split .dl-agenda-pane{
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+}
+.dl-agenda-study-split>.dl-study-now{
+  min-width:0;
+  padding-left:16px;
+  border-left:1px solid var(--border);
+}
+.dl-layout-2 .dl-study-now-card{
+  display:flex;
+  flex-direction:column;
+}
+.dl-layout-2 .dl-study-now-card>.dl-study-now{
+  flex:1;
+}
+.dl-layout-2 .dl-study-now-card .dl-study-time-options{
+  grid-template-columns:1fr;
+}
+.dl-layout-2 .dl-study-now-card .dl-study-now>p{
+  max-width:28ch;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-split{
+  grid-template-columns:minmax(0,1fr) minmax(220px,.75fr)!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-split .dl-today-scroll{
+  min-height:0;
+  overflow:auto;
+}
+@media(max-width:980px){
+  .dl-agenda-study-split{
+    grid-template-columns:1fr!important;
+  }
+  .dl-agenda-study-split>.dl-study-now{
+    padding-left:0;
+    padding-top:14px;
+    border-left:0;
+    border-top:1px solid var(--border);
+  }
+  .dl-layout-2 .dl-study-now-card .dl-study-time-options{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
