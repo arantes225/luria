@@ -44,7 +44,7 @@ function commandCard(){
  const old=d.getElementById("luria-command-card");if(old)old.remove();
  if(d.body.dataset.page!=="dashboard")return;
  const root=d.getElementById("dashboard-alternative");if(!root)return;
- const activityCard=root.querySelector(".dl-agenda-large,.dl-agenda,.dl-upcoming,.dl-card");
+ const activityCard=root.querySelector(".dl-upcoming");
  if(!activityCard||activityCard.querySelector("[data-luria-study-now-inline]"))return;
  const action=d.createElement("button");
  action.type="button";
