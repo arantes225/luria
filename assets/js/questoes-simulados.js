@@ -7736,6 +7736,27 @@ async function loadQuestionOverview() {
       );
   }
 
+  const quickAccuracyValue =
+    weekAccuracy === null
+      ? 0
+      : Math.max(0, Math.min(100, weekAccuracy));
+  const quickAccuracyRing =
+    document.getElementById("qs-home-accuracy-ring");
+  const quickAccuracyBar =
+    document.getElementById("qs-home-accuracy-bar");
+
+  if (quickAccuracyRing) {
+    quickAccuracyRing.style.setProperty(
+      "--p",
+      String(quickAccuracyValue)
+    );
+  }
+
+  if (quickAccuracyBar) {
+    quickAccuracyBar.style.width =
+      `${quickAccuracyValue}%`;
+  }
+
 
   setText(
     "qs-total-questions",
