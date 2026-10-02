@@ -895,8 +895,8 @@
     table(
       "general-area-table",
       [
-        {label:"Área"},{label:"Progresso aulas"},{label:"Questões",num:true},{label:"Acerto",num:true},
-        {label:"Retenção FC",num:true},{label:"Pulos do Gato ativos",num:true},{label:"Tempo",num:true}
+        {label:"Área"},{label:"Aulas"},{label:"Questões",num:true},{label:"Acerto",num:true},
+        {label:"Retenção",num:true},{label:"Pulos do Gato",num:true},{label:"Tempo",num:true}
       ],
       rows.map(x=>[
         `<strong>${esc(x.a)}</strong>`,
