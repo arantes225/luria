@@ -2039,7 +2039,7 @@
 
   function setAdminView(view) {
     const next =
-      ["metrics", "factory", "editais", "plans", "plantao", "beta"].includes(view)
+      ["metrics", "factory", "editais", "plans", "plantao", "images", "beta"].includes(view)
         ? view
         : "metrics";
 
@@ -2088,6 +2088,12 @@
       );
     }
 
+    if (next === "images") {
+      loadClinicalImageReviewQueue().catch(error => {
+        console.warn("Não foi possível carregar a fila de imagens clínicas:", error);
+      });
+    }
+
     if (next === "factory") {
       requestAnimationFrame(() => {
         requestAnimationFrame(() => {
@@ -2123,7 +2129,7 @@
     let initial = location.hash === "#beta" ? "beta" : "metrics";
     try {
       const saved = sessionStorage.getItem("luria-admin-view");
-      if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "plantao"].includes(saved)) {
+      if (location.hash !== "#beta" && ["metrics", "factory", "editais", "plans", "plantao", "images"].includes(saved)) {
         initial = saved;
       }
     } catch (_) {}
