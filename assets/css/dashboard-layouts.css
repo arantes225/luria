@@ -4611,3 +4611,25 @@ body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
     flex:0 0 48px!important;
   }
 }
+
+
+/* Dashboard 2 v3 — fileira superior mais baixa + margem inferior do Progresso por área */
+@media(min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
+    grid-template-rows:minmax(220px,.72fr) auto auto!important;
+    padding-bottom:10px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2>.dl-card:not(.dl-areas):not(.dl-cat){
+    max-height:238px!important;
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2 .dl-ring{
+    width:96px!important;
+    height:96px!important;
+    flex-basis:96px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2 .dl-areas{
+    margin-bottom:10px!important;
+  }
+}
