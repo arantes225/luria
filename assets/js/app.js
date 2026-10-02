@@ -8169,3 +8169,108 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* PWA v37 — correção do rodapé: duas linhas fixas sem sobreposição. */
+(function ensurePwaSidebarFooterGridV37(){
+  if(document.getElementById("luria-pwa-sidebar-footer-grid-v37")) return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-sidebar-footer-grid-v37";
+  style.textContent=`
+    @media(max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        padding-bottom:calc(156px + env(safe-area-inset-bottom))!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{
+        position:absolute!important;
+        left:15px!important;
+        right:15px!important;
+        bottom:calc(12px + env(safe-area-inset-bottom))!important;
+        width:auto!important;
+        height:124px!important;
+        min-height:124px!important;
+        max-height:124px!important;
+        margin:0!important;
+        padding:0!important;
+        display:grid!important;
+        grid-template-columns:1fr!important;
+        grid-template-rows:58px 58px!important;
+        grid-auto-rows:58px!important;
+        gap:8px!important;
+        align-content:end!important;
+        background:transparent!important;
+        overflow:visible!important;
+        z-index:40!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .streak-mini,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        position:relative!important;
+        inset:auto!important;
+        left:auto!important;
+        right:auto!important;
+        top:auto!important;
+        bottom:auto!important;
+        width:100%!important;
+        min-width:100%!important;
+        max-width:100%!important;
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        margin:0!important;
+        box-sizing:border-box!important;
+        align-self:stretch!important;
+        transform:none!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .streak-mini{
+        grid-row:1!important;
+      }
+
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button{
+        grid-row:1!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        grid-row:2!important;
+        display:flex!important;
+        align-items:center!important;
+        justify-content:flex-start!important;
+        padding:6px 14px!important;
+        gap:10px!important;
+        border-radius:16px!important;
+      }
+
+      /* Conteúdo branco no claro e escuro, sem herdar cinza. */
+      html.pwa-standalone:root[data-theme="light"] body #sidebar.sidebar .luria-mode-footer-switch,
+      html.pwa-standalone:root[data-theme="light"] body #sidebar.sidebar .luria-mode-footer-switch *,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch *{
+        color:#fff!important;
+        -webkit-text-fill-color:#fff!important;
+        opacity:1!important;
+      }
+
+      html.pwa-standalone:root[data-theme="light"] body #sidebar.sidebar .luria-mode-footer-switch svg,
+      html.pwa-standalone:root[data-theme="light"] body #sidebar.sidebar .luria-mode-footer-switch svg *,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch svg,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch svg *{
+        stroke:#fff!important;
+        color:#fff!important;
+        fill:none!important;
+      }
+
+      html.pwa-standalone:root[data-theme="light"] body #sidebar.sidebar .luria-mode-footer-switch,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch{
+        background:#184888!important;
+        background-color:#184888!important;
+        border-color:#184888!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
