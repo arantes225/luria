@@ -4433,60 +4433,6 @@ function errorItemsOnDate(date) {
   );
 }
 
-function renderOverdueLessonsCard() {
-  const list = document.getElementById("agenda-overdue-list");
-  const count = document.getElementById("agenda-overdue-count");
-  const reinsert = document.getElementById("agenda-overdue-reinsert");
-  if (!list || !count || !reinsert) return;
-
-  const overdue = scheduleState.topics
-    .filter(isTopicOverdue)
-    .sort((a, b) => String(a.scheduled_date || "").localeCompare(String(b.scheduled_date || "")));
-
-  count.textContent = String(overdue.length);
-  reinsert.disabled = overdue.length === 0;
-
-  if (!overdue.length) {
-    list.innerHTML = '<div class="agenda-overdue-empty">Nenhuma aula atrasada. Seu cronograma está em dia.</div>';
-  } else {
-    const visible = overdue.slice(0, 6);
-    list.innerHTML = visible.map((topic) => {
-      const title = topic.theme || topic.materia || topic.area || "Aula";
-      const meta = [topic.area, topic.materia]
-        .filter(Boolean)
-        .filter((value, index, arr) => arr.indexOf(value) === index)
-        .join(" · ");
-      const date = topic.scheduled_date
-        ? formatDateLabelSchedule(topic.scheduled_date)
-        : "data anterior";
-      return `
-        <div class="agenda-overdue-item">
-          <div class="agenda-overdue-copy">
-            <strong title="${escapeScheduleHtml(title)}">${escapeScheduleHtml(title)}</strong>
-            <span>${escapeScheduleHtml(meta || "Aula")} · atrasada desde ${escapeScheduleHtml(date)}</span>
-          </div>
-          <button
-            class="agenda-overdue-to-deck"
-            type="button"
-            data-overdue-to-deck="${escapeScheduleHtml(topic.id)}"
-          >Mover para o deck</button>
-        </div>`;
-    }).join("") + (overdue.length > visible.length
-      ? `<div class="agenda-overdue-empty">+${overdue.length - visible.length} aula${overdue.length - visible.length === 1 ? "" : "s"} atrasada${overdue.length - visible.length === 1 ? "" : "s"}.</div>`
-      : "");
-  }
-
-  list.querySelectorAll("[data-overdue-to-deck]").forEach((button) => {
-    button.onclick = async () => {
-      button.disabled = true;
-      await returnTopicToDeck(button.dataset.overdueToDeck);
-    };
-  });
-
-  reinsert.onclick = openReorganizeOverdueDialog;
-}
-
-
 function renderSummary() {
   const deck = scheduleState.topics.filter(
     (topic) =>
@@ -4780,13 +4726,26 @@ function renderAgendaSide() {
       eventsOnDate(date).forEach(event=>sourceItems.push({source:"event",id:event.id,date:event.event_date||iso,kind:kindClass(event.event_type||event.title),title:event.title,meta:[event.area,event.materia].filter(Boolean).join(" · ")||scheduleKindLabel(event.event_type||"other"),completed:false,href:todayHref(kindClass(event.event_type||event.title),event.id),time:event.event_time?String(event.event_time).slice(0,5):"Hoje"}));
       errorItemsOnDate(date).forEach(item=>sourceItems.push({source:"error",id:item.id,date:item.due_date||iso,kind:"errors",title:item.theme||item.materia||item.area||"Caderno de erros",meta:[item.area,item.materia].filter(Boolean).join(" · ")||"Revisão do caderno de erros",completed:false,href:"/caderno-erros/",time:"Hoje"}));
     };
-    if(scheduleState.agendaScope==="today") addDateItems(today);
-    else {
-      const seen=new Set();
-      scheduleState.topics.forEach(t=>{const d=t.scheduled_date||t.original_date;if(d)seen.add(d)});
-      scheduleState.events.forEach(e=>{if(e.event_date)seen.add(e.event_date)});
-      scheduleState.errorItems.forEach(e=>{if(e.due_date)seen.add(e.due_date)});
-      [...seen].sort().forEach(iso=>{const d=parseISODateSchedule(iso);if(d)addDateItems(d)});
+    if(scheduleState.agendaScope==="today") {
+      addDateItems(today);
+    } else if(scheduleState.agendaScope==="overdue") {
+      scheduleState.topics
+        .filter(isTopicOverdue)
+        .sort((a,b)=>String(a.scheduled_date||"").localeCompare(String(b.scheduled_date||"")))
+        .forEach(topic=>{
+          const kind=kindClass(topic.type||"lesson");
+          sourceItems.push({
+            source:"topic",
+            id:topic.id,
+            date:topic.scheduled_date||topic.original_date||todayScheduleISO(),
+            kind,
+            title:topic.theme,
+            meta:topicMeta(topic)||"Aula",
+            completed:false,
+            href:todayHref(kind,topic.id),
+            time:"Atrasada"
+          });
+        });
     }
     sourceItems.forEach(item=>{
       if(item.source==="topic"){const t=scheduleState.topics.find(x=>String(x.id)===String(item.id));item.area=t?.area||"";item.theme=t?.theme||item.title;}
@@ -4799,20 +4758,24 @@ function renderAgendaSide() {
     const labelForKind=k=>({lesson:"Aula",questions:"Questões",review:"Revisão",flashcards:"Flashcards",errors:"Caderno de erros",simulation:"Simulado",other:"Outro"}[k]||"Atividade");
     const row=item=>{
       const key=item.source+":"+item.id, selected=scheduleState.agendaSelected.has(key);
-      const check=scheduleState.agendaScope==="all"?'<label class="agenda-bulk-check-wrap"><input class="agenda-bulk-check" type="checkbox" data-agenda-select="'+escapeScheduleHtml(key)+'" '+(selected?"checked":"")+'></label>':"";
-      return '<div class="agenda-today-row kind-'+item.kind+(scheduleState.agendaScope==="all"?" bulk-mode":"")+'">'+check
+      const check="";
+      return '<div class="agenda-today-row kind-'+item.kind+'">'+check
         +'<a class="agenda-today-open" '+(item.source==="topic"?'data-start-study-topic="'+escapeScheduleHtml(item.id)+'" ':"")+'href="'+item.href+'"><span class="agenda-today-main"><span class="agenda-today-time">'+escapeScheduleHtml(item.time)+'</span><strong>'+escapeScheduleHtml(item.title)+'</strong><small>'+escapeScheduleHtml(item.meta)+'</small></span><span class="agenda-today-kind">'+escapeScheduleHtml(labelForKind(item.kind))+'</span></a>'
         +todayMenu(item.source,item.id,item.date)+'</div>';
     };
-    if(scheduleState.agendaScope==="all"){
-      const groups=new Map(); visible.forEach(item=>{if(!groups.has(item.date))groups.set(item.date,[]);groups.get(item.date).push(item)});
-      list.innerHTML=[...groups.entries()].map(([date,items])=>'<section class="agenda-date-group"><div class="agenda-date-group-head">'+new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(parseISODateSchedule(date))+'</div>'+items.map(row).join("")+'</section>').join("")||'<p class="agenda-empty" style="padding:10px">Nenhuma atividade encontrada.</p>';
-    } else list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
-    const bulk=document.getElementById("agenda-bulk-tools"); if(bulk) bulk.hidden=scheduleState.agendaScope!=="all";
+    if(scheduleState.agendaScope==="overdue"){
+      list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">Nenhuma aula atrasada.</p>';
+    } else {
+      list.innerHTML=visible.length?visible.map(row).join(""):'<p class="agenda-empty" style="padding:10px">Nenhuma atividade para hoje.</p>';
+    }
+    const bulk=document.getElementById("agenda-bulk-tools"); if(bulk) bulk.hidden=true;
     const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
-    if(title) title.textContent=scheduleState.agendaScope==="all"?"Todas as atividades":"Atividades de hoje";
-    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="all"?"Todas as datas":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(today);
-    const countEl=document.getElementById("agenda-selected-count"); if(countEl) countEl.textContent=scheduleState.agendaSelected.size+" selecionadas";
+    if(title) title.textContent=scheduleState.agendaScope==="overdue"?"Aulas atrasadas":"Atividades de hoje";
+    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="overdue"
+      ? (visible.length?visible.length+" aula"+(visible.length===1?"":"s")+" pendente"+(visible.length===1?"":"s"):"Nenhuma pendência")
+      : new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(today);
+    if(count) count.textContent=String(visible.length);
+    const countEl=document.getElementById("agenda-selected-count"); if(countEl) countEl.textContent="0 selecionadas";
   }
 
   const weekStart = startOfWeekSchedule(today);
@@ -8380,7 +8343,6 @@ function renderSchedule() {
   }
 
   renderSummary();
-  renderOverdueLessonsCard();
   renderPlanner();
   renderDeck();
   renderThemeLibrary();
@@ -8587,8 +8549,8 @@ function wireDynamicInteractions() {
   document.querySelectorAll("[data-agenda-scope]").forEach(button=>button.addEventListener("click",()=>{
     scheduleState.agendaScope=button.dataset.agendaScope; scheduleState.agendaSelected.clear();
     const title=document.getElementById("agenda-activities-title"), dateLabel=document.getElementById("agenda-today-date");
-    if(title) title.textContent=scheduleState.agendaScope==="all"?"Todas as atividades":"Atividades de hoje";
-    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="all"?"Todas as datas":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(startOfDaySchedule(new Date()));
+    if(title) title.textContent=scheduleState.agendaScope==="overdue"?"Aulas atrasadas":"Atividades de hoje";
+    if(dateLabel) dateLabel.textContent=scheduleState.agendaScope==="overdue"?"Aulas pendentes":new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"2-digit",month:"long"}).format(startOfDaySchedule(new Date()));
     document.querySelectorAll("[data-agenda-scope]").forEach(b=>b.classList.toggle("active",b===button)); renderAgendaSide(); wireDynamicInteractions();
   }));
   const bindStructuredFilter=(id,stateKey)=>{const el=document.getElementById(id);if(!el)return;el.value=scheduleState[stateKey]||"all";el.onchange=()=>{scheduleState[stateKey]=el.value;scheduleState.agendaSelected.clear();renderAgendaSide();wireDynamicInteractions();};};
