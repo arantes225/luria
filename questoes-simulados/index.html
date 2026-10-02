@@ -2757,83 +2757,66 @@ body[data-page="questoes"] .qs-home-system{
 <link rel="stylesheet" href="/assets/css/study-layout.css?v=20260930">
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 
-<style id="qs-quick-metrics-match-errors-v65">
-@media(min-width:981px){
-  body[data-page="questoes"] .qs-home-week-compact{
-    height:272px!important;min-height:272px!important;max-height:272px!important;
-  }
-}
-body[data-page="questoes"] .qs-home-week-compact{
-  box-sizing:border-box!important;padding:16px!important;
-  border:1px solid var(--border)!important;border-radius:15px!important;
-  background:var(--surface)!important;
-  box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;
-  overflow:hidden!important;
-}
-body[data-page="questoes"] .qs-quick-metrics-head{margin:0 0 12px!important}
-body[data-page="questoes"] .qs-quick-metrics-head h2{
-  margin:0!important;font-size:16px!important;line-height:1.2!important;font-weight:600!important;color:var(--text)!important;
-}
-body[data-page="questoes"] .qs-home-week-grid{
-  display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
-  gap:9px!important;margin:0!important;
-}
-body[data-page="questoes"] .qs-home-week-grid .qs-home-metric{
-  min-height:72px!important;padding:11px!important;
-  border:1px solid var(--border)!important;border-radius:11px!important;
-  background:var(--surface-2)!important;
-  display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;
-  box-sizing:border-box!important;box-shadow:none!important;
-}
-body[data-page="questoes"] .qs-home-week-grid .qs-home-metric strong{
-  margin:7px 0 0!important;font-size:20px!important;line-height:1!important;font-weight:600!important;color:var(--text)!important;
-}
-body[data-page="questoes"] .qs-home-week-grid .qs-home-metric small{
-  order:-1!important;margin:0!important;font-size:8px!important;line-height:1.2!important;
-  letter-spacing:.045em!important;font-weight:400!important;color:var(--muted)!important;
-}
-body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.success,
-body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.danger,
-body[data-page="questoes"] .qs-home-week-grid .qs-home-metric.accent{
-  border-color:var(--border)!important;background:var(--surface-2)!important;
-}
-body[data-page="questoes"] .qs-home-accuracy-progress{
-  display:grid!important;grid-template-columns:72px minmax(0,1fr)!important;align-items:center!important;
-  gap:12px!important;margin-top:9px!important;padding:10px 12px!important;
-  border:1px solid var(--border)!important;border-radius:11px!important;background:var(--surface)!important;
+<style id="quick-metrics-identical-caderno-erros-v66">
+.error-side-card.error-quick-metrics{
   box-sizing:border-box!important;
+  height:272px!important;min-height:272px!important;max-height:272px!important;
+  padding:8px 16px!important;border:1px solid var(--border)!important;border-radius:15px!important;
+  background:var(--surface)!important;box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;overflow:hidden!important;
 }
-body[data-page="questoes"] .qs-home-accuracy-ring{
+.error-quick-metrics .error-side-head{margin-bottom:4px!important}
+.error-quick-metrics .error-side-head>div{display:flex!important;align-items:center!important;gap:8px!important}
+.error-quick-metrics .error-side-head>div>span{display:none!important}
+.error-quick-metrics .error-side-head h3{margin:0!important;font-size:16px!important;line-height:1.2!important;font-weight:600!important;color:var(--text)!important}
+.error-quick-metrics-body{display:grid!important;gap:6px!important}
+.error-metric-summary-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}
+.error-metric-summary-grid>div{
+  min-height:72px!important;padding:7px 13px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border))!important;border-radius:11px!important;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface))!important;
+}
+.error-metric-summary-grid span,.error-metric-summary-grid small{display:block!important}
+.error-metric-summary-grid span{
+  color:var(--muted)!important;font-size:8px!important;font-weight:800!important;
+  text-transform:uppercase!important;letter-spacing:.045em!important
+}
+.error-metric-summary-grid strong{
+  display:block!important;margin:7px 0 4px!important;color:var(--accent)!important;
+  font-size:20px!important;line-height:1!important
+}
+.error-metric-summary-grid small{color:var(--muted)!important;font-size:7.5px!important;line-height:1.35!important}
+.error-metric-progress{
+  display:grid!important;grid-template-columns:92px 1fr!important;align-items:center!important;
+  gap:14px!important;padding:6px 14px!important;border:1px solid var(--border)!important;border-radius:11px!important
+}
+.error-metric-ring{
   --p:0;position:relative!important;display:grid!important;place-items:center!important;
-  width:62px!important;height:62px!important;border-radius:50%!important;
-  background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--surface-2) 0)!important;
+  width:68px!important;height:68px!important;border-radius:50%!important;
+  background:conic-gradient(var(--accent) calc(var(--p)*1%),var(--surface-2) 0)!important
 }
-body[data-page="questoes"] .qs-home-accuracy-ring:after{
-  content:""!important;position:absolute!important;inset:7px!important;border-radius:50%!important;background:var(--surface)!important;
+.error-metric-ring:after{content:""!important;position:absolute!important;inset:9px!important;border-radius:50%!important;background:var(--surface)!important}
+.error-metric-ring strong,.error-metric-ring span{position:relative!important;z-index:1!important}
+.error-metric-ring strong{align-self:end!important;font-size:19px!important;color:var(--text)!important}
+.error-metric-ring span{align-self:start!important;color:var(--muted)!important;font-size:7.5px!important}
+.error-metric-progress>div:last-child>strong,.error-metric-progress>div:last-child>span{display:block!important}
+.error-metric-progress>div:last-child>strong{font-size:11px!important;color:var(--text)!important}
+.error-metric-progress>div:last-child>span{margin:4px 0 9px!important;color:var(--muted)!important;font-size:8px!important;line-height:1.35!important}
+.error-metric-track{height:7px!important;border-radius:99px!important;background:var(--surface-2)!important;overflow:hidden!important}
+.error-metric-track i{display:block!important;height:100%!important;border-radius:inherit!important;background:var(--accent)!important}
+.error-metric-mini-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:6px!important}
+.error-metric-mini-grid>div{
+  display:grid!important;grid-template-columns:32px 1fr!important;grid-template-rows:auto auto!important;
+  column-gap:9px!important;min-height:50px!important;padding:5px 12px!important;
+  border:1px solid var(--border)!important;border-radius:10px!important
 }
-body[data-page="questoes"] .qs-home-accuracy-ring strong,
-body[data-page="questoes"] .qs-home-accuracy-ring span{position:relative!important;z-index:1!important}
-body[data-page="questoes"] .qs-home-accuracy-ring strong{
-  align-self:end!important;font-size:14px!important;line-height:1!important;font-weight:600!important;color:var(--text)!important;
+.error-metric-mini-grid b{
+  grid-row:1/3!important;display:grid!important;place-items:center!important;width:32px!important;height:32px!important;
+  border-radius:9px!important;background:var(--accent-soft)!important;color:var(--accent)!important;font-size:14px!important
 }
-body[data-page="questoes"] .qs-home-accuracy-ring span{
-  align-self:start!important;font-size:6.5px!important;color:var(--muted)!important;
-}
-body[data-page="questoes"] .qs-home-accuracy-copy>strong{
-  display:block!important;font-size:10px!important;font-weight:600!important;color:var(--text)!important;
-}
-body[data-page="questoes"] .qs-home-accuracy-copy>span{
-  display:block!important;margin:3px 0 7px!important;font-size:7.5px!important;line-height:1.25!important;color:var(--muted)!important;
-}
-body[data-page="questoes"] .qs-home-accuracy-track{
-  height:5px!important;border-radius:99px!important;background:var(--surface-2)!important;overflow:hidden!important;
-}
-body[data-page="questoes"] .qs-home-accuracy-track i{
-  display:block!important;height:100%!important;border-radius:inherit!important;background:var(--accent)!important;
-}
+.error-metric-mini-grid strong{font-size:15px!important;color:var(--text)!important}
+.error-metric-mini-grid span{color:var(--muted)!important;font-size:7.8px!important;line-height:1.3!important}
 @media(max-width:980px){
-  body[data-page="questoes"] .qs-home-week-compact{padding:16px!important;border-radius:15px!important}
-  body[data-page="questoes"] .qs-home-week-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ .error-side-card.error-quick-metrics{height:auto!important;min-height:0!important;max-height:none!important}
 }
 </style>
   <script src="/assets/js/medical-icons.js?v=2.0"></script>
@@ -2897,36 +2880,27 @@ body[data-page="questoes"] .qs-home-accuracy-track i{
             </div>
 
             <aside class="qs-home-side-column" aria-label="Resumo e ações">
-              <article class="qs-home-week qs-home-week-compact">
-                <div class="qs-home-section-head qs-quick-metrics-head">
-                  <div>
-                    <h2>Métricas rápidas</h2>
+              <article class="qs-home-week qs-home-week-compact error-side-card error-quick-metrics">
+                <div class="error-side-head"><div><span>▥</span><h3>Métricas rápidas</h3></div></div>
+                <div class="error-quick-metrics-body">
+                  <div class="error-metric-summary-grid">
+                    <div><span>Questões</span><strong id="qs-week-questions">—</strong><small>respondidas na semana</small></div>
+                    <div><span>Erros</span><strong id="qs-week-wrong">0</strong><small>respostas incorretas</small></div>
+                    <div><span>Listas</span><strong id="qs-home-week-sims">0</strong><small>listas realizadas</small></div>
                   </div>
-                </div>
-
-                <div class="qs-home-week-grid">
-                  <div class="qs-home-metric">
-                    <strong id="qs-week-questions">—</strong>
-                    <small>Questões</small>
+                  <div class="error-metric-progress">
+                    <div class="error-metric-ring" id="qs-home-accuracy-ring" style="--p:0">
+                      <strong id="qs-week-accuracy">—</strong><span>acerto</span>
+                    </div>
+                    <div>
+                      <strong>Aproveitamento</strong>
+                      <span>percentual de respostas corretas na semana atual</span>
+                      <div class="error-metric-track"><i id="qs-home-accuracy-bar" style="width:0%"></i></div>
+                    </div>
                   </div>
-                  <div class="qs-home-metric danger">
-                    <strong id="qs-week-wrong">0</strong>
-                    <small>Erros</small>
-                  </div>
-                  <div class="qs-home-metric accent">
-                    <strong id="qs-home-week-sims">0</strong>
-                    <small>Listas</small>
-                  </div>
-                </div>
-                <div class="qs-home-accuracy-progress">
-                  <div class="qs-home-accuracy-ring" id="qs-home-accuracy-ring" style="--p:0">
-                    <strong id="qs-week-accuracy">—</strong>
-                    <span>acerto</span>
-                  </div>
-                  <div class="qs-home-accuracy-copy">
-                    <strong>Aproveitamento</strong>
-                    <span>percentual de respostas corretas na semana atual</span>
-                    <div class="qs-home-accuracy-track"><i id="qs-home-accuracy-bar" style="width:0%"></i></div>
+                  <div class="error-metric-mini-grid">
+                    <div><b>✓</b><strong id="qs-quick-correct-visible">0</strong><span>Acertos</span></div>
+                    <div><b>▥</b><strong id="qs-quick-lists-visible">0</strong><span>Listas</span></div>
                   </div>
                 </div>
               </article>
@@ -3401,6 +3375,20 @@ body[data-page="questoes"] .qs-home-accuracy-track i{
     .qs-manual-time-row small{font-weight:800;color:var(--muted)}
   </style>
   <script defer src="assets/js/pwa.js?v=3"></script>
+<script id="qs-quick-metrics-identical-sync-v66">
+(() => {
+  const sourceCorrect=document.getElementById("qs-week-correct");
+  const sourceLists=document.getElementById("qs-home-week-sims");
+  const targetCorrect=document.getElementById("qs-quick-correct-visible");
+  const targetLists=document.getElementById("qs-quick-lists-visible");
+  const sync=()=>{
+    if(sourceCorrect&&targetCorrect)targetCorrect.textContent=sourceCorrect.textContent||"0";
+    if(sourceLists&&targetLists)targetLists.textContent=sourceLists.textContent||"0";
+  };
+  [sourceCorrect,sourceLists].forEach(el=>el&&new MutationObserver(sync).observe(el,{childList:true,subtree:true,characterData:true}));
+  sync();
+})();
+</script>
 </body>
 </html>
 
