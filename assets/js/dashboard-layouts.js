@@ -396,6 +396,33 @@
       </div>`;
   }
 
+  function syncDashboard1StudyPairHeight(){
+    if(current!=="1") return;
+    const pair=root.querySelector(".dl-agenda-study-pair-1");
+    const side=root.querySelector(".dl-layout-1 > .dl-side");
+    if(!pair||!side) return;
+    const apply=()=>{
+      const h=Math.round(side.getBoundingClientRect().height);
+      if(h>0){
+        pair.style.setProperty("height",h+"px","important");
+        pair.style.setProperty("min-height",h+"px","important");
+        pair.style.setProperty("max-height",h+"px","important");
+        pair.querySelectorAll(":scope > .dl-card").forEach(card=>{
+          card.style.setProperty("height",h+"px","important");
+          card.style.setProperty("min-height",h+"px","important");
+          card.style.setProperty("max-height",h+"px","important");
+        });
+      }
+    };
+    apply();
+    requestAnimationFrame(apply);
+    if(window.ResizeObserver){
+      if(window.__luriaDashboard1HeightObserver) window.__luriaDashboard1HeightObserver.disconnect();
+      window.__luriaDashboard1HeightObserver=new ResizeObserver(apply);
+      window.__luriaDashboard1HeightObserver.observe(side);
+    }
+  }
+
   function render() {
     frame = 0;
     if (!allowed.has(current)) current = "1";
@@ -414,6 +441,7 @@
       syncDashboardHeading();
       root.hidden = false;
       root.dataset.rendered = "true";
+      syncDashboard1StudyPairHeight();
     } catch (error) {
       console.error("Falha ao renderizar layout do Dashboard:", error);
       root.hidden = false;
