@@ -39,8 +39,13 @@
 
         <section id="plantao-library" class="plantao-library">
 
-          <div class="plantao-practice-back-row">
-            <a class="button secondary luria-back-switch-btn plantao-practice-back" href="/plantao/" aria-label="Voltar para Prática Clínica">← Voltar para Prática Clínica</a>
+          <div class="plantao-native-switch-wrap plantao-primary-switch-wrap">
+            <nav class="plantao-ref-nav plantao-native-switch" aria-label="Módulos do simulador">
+              <button class="active" type="button" data-case-library-view="home" aria-current="page"><span>Início</span></button>
+              <button type="button" data-case-library-view="library"><span>Sala de Emergência</span></button>
+              <button id="plantao-osce-nav" type="button"><span>OSCE</span></button>
+              <button type="button" data-case-library-view="aph"><span>APH</span></button>
+            </nav>
           </div>
 
           <section class="plantao-quick-grid" aria-label="Ações rápidas">
@@ -66,15 +71,6 @@
               <button id="plantao-resume-case" class="button primary" type="button">Continuar →</button>
             </article>
           </section>
-
-          <div class="plantao-native-switch-wrap plantao-primary-switch-wrap">
-            <nav class="plantao-ref-nav plantao-native-switch" aria-label="Módulos do simulador">
-              <button class="active" type="button" data-case-library-view="home" aria-current="page"><span>Início</span></button>
-              <button type="button" data-case-library-view="library"><span>Sala de Emergência</span></button>
-              <button id="plantao-osce-nav" type="button"><span>OSCE</span></button>
-              <button type="button" data-case-library-view="aph"><span>APH</span></button>
-            </nav>
-          </div>
 
           <section class="plantao-library-inner-switch" aria-label="Filtrar casos por área">
             <div id="plantao-specialty-chips" class="plantao-specialty-chips plantao-specialty-native-switch" aria-label="Áreas"></div>
