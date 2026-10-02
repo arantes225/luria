@@ -1311,3 +1311,152 @@ body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap
     font-size:8px!important;
   }
 }
+
+
+/* =========================================================
+   SUBJECT TABLES + FLASHCARD FLOW V31
+   ========================================================= */
+
+/* Matérias do cronograma e Memória por matéria:
+   tabelas fixas dentro do card, sem rolagem horizontal. */
+[data-stats-panel="aulas"] #lesson-subject-table.stats-table-wrap,
+[data-stats-panel="flashcards"] #flash-subject-table.stats-table-wrap{
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  overflow-x:hidden!important;
+  overflow-y:visible!important;
+  margin-top:12px!important;
+}
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table,
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table{
+  width:100%!important;
+  min-width:0!important;
+  max-width:100%!important;
+  table-layout:fixed!important;
+  border-collapse:collapse!important;
+}
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table th,
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table td,
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th,
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td{
+  min-width:0!important;
+  padding:9px 6px!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  vertical-align:middle!important;
+}
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table th,
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th{
+  color:var(--muted)!important;
+  font-size:9px!important;
+  line-height:1.2!important;
+  font-weight:750!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table td,
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td{
+  font-size:9px!important;
+  line-height:1.28!important;
+}
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table .num,
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table .num{
+  text-align:right!important;
+  white-space:normal!important;
+}
+
+/* Matérias do cronograma — distribuição fixa das 7 colunas. */
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table th:nth-child(1),
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table td:nth-child(1){width:23%!important}
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table th:nth-child(2),
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table td:nth-child(2){width:17%!important}
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table th:nth-child(n+3),
+[data-stats-panel="aulas"] #lesson-subject-table .stats-table td:nth-child(n+3){width:12%!important}
+
+/* Memória por matéria — distribuição fixa das 8 colunas. */
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(1),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(1){width:22%!important}
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(2),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(2){width:9%!important}
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(3),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(3){width:11%!important}
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(4),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(4){width:10%!important}
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(5),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(5){width:11%!important}
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(6),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(6){width:13%!important}
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(7),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(7){width:12%!important}
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table th:nth-child(8),
+[data-stats-panel="flashcards"] #flash-subject-table .stats-table td:nth-child(8){width:12%!important}
+
+/* Flashcards — ordem desejada:
+   Carga futura | Memória | Estabilidade
+   Memória por matéria
+   Cards mais frágeis | Revisões por área
+   Insights */
+[data-stats-panel="flashcards"] .stats-block-grid{
+  display:grid!important;
+  grid-template-columns:repeat(12,minmax(0,1fr))!important;
+  gap:12px!important;
+  align-items:stretch!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-future-load,
+[data-stats-panel="flashcards"] .stats-flash-memory,
+[data-stats-panel="flashcards"] .stats-flash-stability{
+  order:10!important;
+  grid-column:span 4!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-subject-memory{
+  order:20!important;
+  grid-column:1 / -1!important;
+  width:100%!important;
+  max-width:none!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-fragile{
+  order:30!important;
+  grid-column:1 / span 6!important;
+  width:100%!important;
+  max-width:none!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-area-reviews{
+  order:30!important;
+  grid-column:7 / span 6!important;
+  width:100%!important;
+  max-width:none!important;
+}
+[data-stats-panel="flashcards"] .stats-flash-insights{
+  order:40!important;
+  grid-column:1 / -1!important;
+}
+
+/* Os dois blocos iniciais permanecem acima da nova sequência. */
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(1){order:1!important}
+[data-stats-panel="flashcards"] .stats-block-grid>.stats-block:nth-child(2){order:2!important}
+
+@media(max-width:900px){
+  [data-stats-panel="flashcards"] .stats-flash-future-load,
+  [data-stats-panel="flashcards"] .stats-flash-memory,
+  [data-stats-panel="flashcards"] .stats-flash-stability,
+  [data-stats-panel="flashcards"] .stats-flash-subject-memory,
+  [data-stats-panel="flashcards"] .stats-flash-fragile,
+  [data-stats-panel="flashcards"] .stats-flash-area-reviews,
+  [data-stats-panel="flashcards"] .stats-flash-insights{
+    grid-column:1 / -1!important;
+  }
+}
+@media(max-width:700px){
+  [data-stats-panel="aulas"] #lesson-subject-table .stats-table th,
+  [data-stats-panel="aulas"] #lesson-subject-table .stats-table td,
+  [data-stats-panel="flashcards"] #flash-subject-table .stats-table th,
+  [data-stats-panel="flashcards"] #flash-subject-table .stats-table td{
+    padding:7px 4px!important;
+    font-size:8px!important;
+  }
+}
