@@ -9,74 +9,90 @@
   <style>
     body[data-page="sessao_estudo"] .topbar .page-heading{display:none!important}
     .study-session-title-card{margin-bottom:14px!important}
-    .study-session-page{display:grid;gap:18px;padding-bottom:32px}
-    .study-session-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;padding:22px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 6%,var(--surface)),var(--surface));box-shadow:0 10px 28px color-mix(in srgb,var(--accent) 8%,transparent);position:relative;overflow:hidden}
-    .study-session-hero::after{content:"";position:absolute;right:-46px;top:-58px;width:170px;height:170px;border-radius:50%;border:1px solid color-mix(in srgb,var(--accent) 14%,transparent);box-shadow:0 0 0 34px color-mix(in srgb,var(--accent) 3%,transparent)}
-    .study-session-hero-main{position:relative;z-index:2}
-    .study-session-hero .eyebrow{display:inline-flex;margin-bottom:7px}
-    .study-session-hero h2{margin:0 0 6px;font-size:1.55rem;letter-spacing:-.03em}
-    .study-session-hero p{margin:0;color:var(--muted);max-width:680px;line-height:1.5}
-    .study-session-stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,minmax(74px,1fr));gap:8px;align-self:start}
-    .study-session-stat{display:grid;gap:2px;min-width:78px;padding:10px 11px;border:1px solid var(--border);border-radius:12px;background:color-mix(in srgb,var(--surface) 88%,transparent);backdrop-filter:blur(8px)}
-    .study-session-stat strong{font-size:1rem;color:var(--text)}
-    .study-session-stat small{font-size:.67rem;color:var(--muted);font-weight:800}
-    .study-session-stat.is-accent strong{color:var(--accent)}
-    .study-session-journey{display:grid;gap:12px;padding:16px 16px 14px;border:1px solid var(--border);border-radius:16px;background:var(--surface);position:relative;overflow:hidden}
-    .study-session-journey-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .study-session-journey-head strong{font-size:.92rem}
-    .study-session-journey-head small{color:var(--muted);font-size:.72rem}
-    .study-session-track-wrap{position:relative;padding:18px 8px 3px}
-    .study-session-track{position:absolute;left:34px;right:34px;top:37px;height:6px;border-radius:999px;background:var(--border);overflow:hidden}
-    .study-session-track-fill{height:100%;width:0%;border-radius:inherit;background:linear-gradient(90deg,var(--accent),color-mix(in srgb,var(--accent) 72%,#66a3ff));transition:width .55s cubic-bezier(.2,.8,.2,1)}
-    .study-session-mascot{position:absolute;top:-5px;left:0;width:62px;height:62px;z-index:5;transition:left .65s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 7px 9px rgba(0,0,0,.12));animation:mascotBob 2.2s ease-in-out infinite}
-    .study-session-mascot img{width:100%;height:100%;object-fit:contain}
-    .study-session-progress{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0}
-    .study-session-progress-step{position:relative;display:grid;justify-items:center;gap:6px;color:var(--muted);font-size:.69rem;font-weight:850}
-    .study-session-progress-step:not(:last-child)::after{display:none}
-    .study-session-progress-dot{position:relative;z-index:2;display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:2px solid var(--border);background:var(--surface);font-weight:900}
-    .study-session-progress-step.is-current{color:var(--accent)}
-    .study-session-progress-step.is-current .study-session-progress-dot{border-color:var(--accent);box-shadow:0 0 0 6px var(--accent-soft);animation:sessionPulse 1.8s ease-in-out infinite}
-    .study-session-progress-step.is-done{color:#18885c}
-    .study-session-progress-step.is-done .study-session-progress-dot{border-color:#18885c;background:#18885c;color:#fff}
-    .study-session-progress-step.is-finish{color:var(--muted)}.study-session-progress-step.is-finish .study-session-progress-dot{border-style:dashed}
-    .study-session-progress-step.is-done::after{background:#18885c}
-    .study-session-banner{display:none;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid color-mix(in srgb,#18885c 30%,var(--border));border-radius:13px;background:color-mix(in srgb,#18885c 8%,var(--surface));animation:sessionWin .45s ease both}
+    .study-session-page{display:grid;gap:14px;padding-bottom:32px}
+
+    .mission-board{position:relative;overflow:hidden;padding:24px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:20px;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 5%,var(--surface)),var(--surface) 56%);box-shadow:0 14px 34px color-mix(in srgb,var(--accent) 7%,transparent)}
+    .mission-board::before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;right:-130px;top:-150px;background:radial-gradient(circle,color-mix(in srgb,var(--accent) 10%,transparent),transparent 66%);pointer-events:none}
+    .mission-board-head{position:relative;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:22px}
+    .mission-kicker{display:inline-flex;align-items:center;gap:7px;margin-bottom:8px;color:var(--accent);font-size:.72rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
+    .mission-kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--accent-soft)}
+    .mission-board h2{margin:0 0 6px;font-size:1.65rem;line-height:1.08;letter-spacing:-.035em}
+    .mission-board-copy{margin:0;max-width:610px;color:var(--muted);font-size:.86rem;line-height:1.55}
+    .mission-summary{display:grid;grid-template-columns:repeat(3,minmax(82px,1fr));gap:8px}
+    .mission-summary-item{min-width:82px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--accent) 10%,var(--border));border-radius:12px;background:color-mix(in srgb,var(--surface) 92%,transparent)}
+    .mission-summary-item strong{display:block;font-size:1rem;line-height:1.05;color:var(--text)}
+    .mission-summary-item small{display:block;margin-top:3px;color:var(--muted);font-size:.64rem;font-weight:760}
+    .mission-summary-item.is-accent strong{color:var(--accent)}
+
+    .mission-route{position:relative;margin:25px 2px 20px;padding:20px 10px 3px}
+    .mission-route-line{position:absolute;left:6.5%;right:6.5%;top:39px;height:4px;border-radius:999px;background:var(--border);overflow:hidden}
+    .mission-route-fill{height:100%;width:0;border-radius:inherit;background:var(--accent);transition:width .55s cubic-bezier(.2,.8,.2,1)}
+    .mission-route-points{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr)}
+    .mission-point{display:grid;justify-items:center;gap:7px;color:var(--muted);font-size:.66rem;font-weight:800}
+    .mission-point-dot{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:2px solid var(--border);background:var(--surface);font-weight:900;transition:.2s ease}
+    .mission-point.is-current{color:var(--accent)}
+    .mission-point.is-current .mission-point-dot{border-color:var(--accent);box-shadow:0 0 0 6px var(--accent-soft)}
+    .mission-point.is-done{color:#18885c}
+    .mission-point.is-done .mission-point-dot{background:#18885c;border-color:#18885c;color:#fff}
+    .mission-point.is-finish .mission-point-dot{border-style:dashed}
+    .mission-mascot{position:absolute;top:-10px;left:0;width:50px;height:50px;z-index:4;transition:left .62s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 6px 8px rgba(0,0,0,.12));animation:mascotFloat 2.4s ease-in-out infinite}
+    .mission-mascot img{width:100%;height:100%;object-fit:contain}
+
+    .mission-progress-note{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:2px;padding:10px 12px;border-radius:11px;background:color-mix(in srgb,var(--accent) 5%,var(--surface));color:var(--muted);font-size:.74rem}
+    .mission-progress-note strong{color:var(--text);font-size:.76rem}
+
+    .study-session-banner{display:none;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;padding:11px 13px;border:1px solid color-mix(in srgb,#18885c 26%,var(--border));border-radius:12px;background:color-mix(in srgb,#18885c 7%,var(--surface));animation:sessionWin .35s ease both}
     .study-session-banner.is-visible{display:flex}
-    .study-session-banner strong{font-size:.9rem;color:#18885c}
-    .study-session-banner small{display:block;color:var(--muted);font-size:.75rem;margin-top:2px}
-    .study-session-list{display:grid;gap:10px}
-    .study-session-item{width:100%;display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:12px;padding:14px 15px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text);text-align:left;cursor:pointer;box-shadow:0 2px 7px rgba(0,0,0,.03);transition:.18s ease}
-    .study-session-item:hover:not(:disabled){transform:translateY(-1px);background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-color:color-mix(in srgb,var(--accent) 26%,var(--border))}
-    .study-session-item.is-current{border-color:color-mix(in srgb,var(--accent) 35%,var(--border));box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 10%,transparent)}
-    .study-session-item.is-done{border-color:color-mix(in srgb,#18885c 35%,var(--border));background:color-mix(in srgb,#18885c 5%,var(--surface))}
-    .study-session-item:disabled{opacity:.48;cursor:not-allowed;filter:saturate(.55)}
-    .study-session-index{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-weight:900}
-    .study-session-item.is-done .study-session-index{background:#18885c;color:#fff}
-    .study-session-copy{display:grid;gap:3px}
-    .study-session-copy strong{font-size:.96rem}
-    .study-session-copy small{font-size:.78rem;color:var(--muted);line-height:1.35}
-    .study-session-action{display:flex;align-items:center;gap:8px;color:var(--accent);font-weight:850;font-size:.78rem;white-space:nowrap}
-    .study-session-action::after{content:"→";font-size:1rem}
-    .study-session-item.is-done .study-session-action{color:#18885c}
-    .study-session-item.is-done .study-session-action::after{content:"✓"}
-    .study-session-finale{display:none;text-align:center;padding:26px 18px;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,var(--surface)),var(--surface));animation:sessionWin .55s ease both}
+    .study-session-banner strong{font-size:.84rem;color:#18885c}
+    .study-session-banner small{display:block;color:var(--muted);font-size:.7rem;margin-top:2px}
+
+    .study-session-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:2px}
+    .study-session-card{position:relative;display:flex;flex-direction:column;min-height:190px;padding:16px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 5px 16px rgba(15,35,65,.035);transition:.18s ease}
+    .study-session-card.is-current{border-color:color-mix(in srgb,var(--accent) 34%,var(--border));box-shadow:0 10px 24px color-mix(in srgb,var(--accent) 8%,transparent);background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface))}
+    .study-session-card.is-done{border-color:color-mix(in srgb,#18885c 26%,var(--border));background:linear-gradient(180deg,color-mix(in srgb,#18885c 4%,var(--surface)),var(--surface))}
+    .study-session-card.is-locked{opacity:.58}
+    .study-session-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .study-session-card-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--accent-soft);color:var(--accent)}
+    .study-session-card-icon svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .study-session-card.is-done .study-session-card-icon{background:color-mix(in srgb,#18885c 12%,var(--surface));color:#18885c}
+    .study-session-step-label{font-size:.66rem;font-weight:850;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+    .study-session-card h3{margin:14px 0 5px;font-size:1rem;letter-spacing:-.02em}
+    .study-session-card p{margin:0;color:var(--muted);font-size:.75rem;line-height:1.5}
+    .study-session-card-footer{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;padding-top:14px}
+    .study-session-card-meta{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:.68rem;font-weight:760}
+    .study-session-xp-chip{display:inline-flex;align-items:center;padding:5px 7px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.64rem;font-weight:900}
+    .study-session-card.is-done .study-session-xp-chip{background:color-mix(in srgb,#18885c 10%,var(--surface));color:#18885c}
+    .study-session-start{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:0 12px;border:0;border-radius:10px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:850;cursor:pointer;box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 20%,transparent)}
+    .study-session-start:hover{transform:translateY(-1px)}
+    .study-session-status{font-size:.68rem;font-weight:850;color:var(--muted)}
+    .study-session-card.is-done .study-session-status{color:#18885c}
+
+    .study-session-finale{display:none;text-align:center;padding:28px 18px;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));border-radius:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 7%,var(--surface)),var(--surface));animation:sessionWin .45s ease both}
     .study-session-finale.is-visible{display:block}
-    .study-session-finale .trophy{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 9px;border-radius:16px;background:var(--accent-soft);color:var(--accent);animation:sessionBounce .8s ease both}
-    .study-session-finale .trophy svg{width:30px;height:30px}
-    .study-session-finale h3{margin:0 0 5px;font-size:1.25rem}
+    .study-session-finale .trophy{display:grid;place-items:center;width:52px;height:52px;margin:0 auto 10px;border-radius:16px;background:var(--accent-soft);color:var(--accent)}
+    .study-session-finale .trophy svg{width:29px;height:29px}
+    .study-session-finale h3{margin:0 0 5px;font-size:1.2rem}
     .study-session-finale p{margin:0;color:var(--muted)}
-    @keyframes sessionPulse{0%,100%{box-shadow:0 0 0 4px var(--accent-soft)}50%{box-shadow:0 0 0 9px color-mix(in srgb,var(--accent) 8%,transparent)}}
-    @keyframes mascotBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-    @keyframes sessionWin{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
-    @keyframes sessionBounce{0%{transform:scale(.6) rotate(-8deg)}60%{transform:scale(1.15) rotate(4deg)}100%{transform:scale(1) rotate(0)}}
-    @media(max-width:760px){
-      .study-session-hero{grid-template-columns:1fr;padding:16px}
-      .study-session-stats{grid-template-columns:repeat(3,1fr)}
-      .study-session-item{grid-template-columns:40px minmax(0,1fr)}
-      .study-session-action{grid-column:2;justify-self:start}
-      .study-session-progress-step{font-size:.62rem}
-      .study-session-mascot{width:52px;height:52px;top:0}
-      .study-session-track{left:28px;right:28px}
+
+    @keyframes mascotFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    @keyframes sessionWin{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+
+    @media(max-width:860px){
+      .mission-board-head{display:grid}
+      .mission-summary{grid-template-columns:repeat(3,1fr)}
+      .study-session-list{grid-template-columns:1fr}
+      .study-session-card{min-height:154px}
+    }
+    @media(max-width:620px){
+      .mission-board{padding:17px}
+      .mission-summary{gap:6px}
+      .mission-summary-item{min-width:0;padding:9px 8px}
+      .mission-summary-item strong{font-size:.9rem}
+      .mission-route{margin:20px -2px 16px;padding-left:0;padding-right:0}
+      .mission-mascot{width:44px;height:44px;top:-4px}
+      .mission-route-line{left:7%;right:7%;top:37px}
+      .mission-point small{font-size:.58rem}
+      .study-session-card{padding:14px}
     }
   </style>
 </head>
@@ -103,33 +119,36 @@
         </section>
 
         <section class="study-session-page">
-          <header class="study-session-hero">
-            <div class="study-session-hero-main">
-              <span class="eyebrow">Missão do dia</span>
-              <h2>Complete suas 3 etapas</h2>
-              <p>Avance pela trilha, acumule XP e conclua sua missão de estudo de hoje.</p>
+          <section class="mission-board" aria-label="Missão de estudo do dia">
+            <div class="mission-board-head">
+              <div>
+                <span class="mission-kicker">Missão do dia</span>
+                <h2>Três etapas. Uma sessão.</h2>
+                <p class="mission-board-copy">Complete a sequência planejada para hoje. Cada etapa avança sua trilha e soma XP à sessão.</p>
+              </div>
+              <div class="mission-summary">
+                <div class="mission-summary-item"><strong id="study-session-minutes">—</strong><small>planejados</small></div>
+                <div class="mission-summary-item is-accent"><strong id="study-session-xp">0 XP</strong><small>na sessão</small></div>
+                <div class="mission-summary-item"><strong id="study-session-count">0/3</strong><small>concluídas</small></div>
+              </div>
             </div>
-            <div class="study-session-stats">
-              <div class="study-session-stat"><strong id="study-session-minutes">—</strong><small>tempo planejado</small></div>
-              <div class="study-session-stat is-accent"><strong id="study-session-xp">0 XP</strong><small>ganhos na sessão</small></div>
-              <div class="study-session-stat"><strong id="study-session-count">0/3</strong><small>etapas vencidas</small></div>
-            </div>
-          </header>
 
-          <section class="study-session-journey" aria-label="Jornada da missão">
-            <div class="study-session-journey-head">
-              <div><strong>Trilha da missão</strong><small id="study-session-journey-copy">Comece pela primeira etapa.</small></div>
-            </div>
-            <div class="study-session-track-wrap">
-              <div class="study-session-track"><div id="study-session-track-fill" class="study-session-track-fill"></div></div>
-              <div id="study-session-mascot" class="study-session-mascot" aria-hidden="true">
+            <div class="mission-route">
+              <div class="mission-route-line"><div id="study-session-track-fill" class="mission-route-fill"></div></div>
+              <div id="study-session-mascot" class="mission-mascot" aria-hidden="true">
                 <img id="study-session-mascot-img" src="/assets/img/pulo do gato/luria_gato_tema_claro.webp" alt="">
               </div>
-              <div id="study-session-progress" class="study-session-progress" aria-label="Progresso da sessão"></div>
+              <div id="study-session-progress" class="mission-route-points" aria-label="Progresso da sessão"></div>
             </div>
+
+            <div class="mission-progress-note">
+              <strong id="study-session-journey-copy">Comece pela primeira etapa.</strong>
+              <span id="study-session-progress-percent">0% concluído</span>
+            </div>
+
+            <div id="study-session-banner" class="study-session-banner" aria-live="polite"></div>
+            <div id="study-session-list" class="study-session-list"></div>
           </section>
-          <div id="study-session-banner" class="study-session-banner" aria-live="polite"></div>
-          <div id="study-session-list" class="study-session-list"></div>
 
           <div id="study-session-finale" class="study-session-finale">
             <span class="trophy" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4h8v3c0 3.3-1.8 5.7-4 6.5C9.8 12.7 8 10.3 8 7V4Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 6H5v1.2c0 2 1.2 3.5 3.2 3.8M16 6h3v1.2c0 2-1.2 3.5-3.2 3.8M12 13.5V17m-3 3h6m-5-3h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
@@ -162,6 +181,7 @@
       const mascot=document.getElementById("study-session-mascot");
       const mascotImg=document.getElementById("study-session-mascot-img");
       const journeyCopy=document.getElementById("study-session-journey-copy");
+      const progressPercent=document.getElementById("study-session-progress-percent");
       if(minutes)minutes.textContent=(Number(plan?.minutes)||0)+" min";
       const theme=document.documentElement.dataset.theme||"light";
       if(mascotImg){
@@ -200,7 +220,9 @@
       const xpValue=[0,20,40,70][completedCount]||0;
       if(xp)xp.textContent=xpValue+" XP";
       if(count)count.textContent=completedCount+"/3";
-      if(fill)fill.style.width=completedCount===0?"0%":completedCount===1?"33.33%":completedCount===2?"66.66%":"100%";
+      const pct=[0,33,67,100][completedCount]||0;
+      if(fill)fill.style.width=pct+"%";
+      if(progressPercent)progressPercent.textContent=pct+"% concluído";
       if(mascot){
         const left=completedCount===0?"0%":completedCount===1?"31%":completedCount===2?"64%":"calc(100% - 62px)";
         mascot.style.left=left;
@@ -209,18 +231,30 @@
       progress.innerHTML=[0,1,2,3].map(index=>{
         if(index===3){
           const finish=completedThrough>=steps.length-1;
-          return '<div class="study-session-progress-step is-finish '+(finish?"is-done":"")+'"><span class="study-session-progress-dot">'+(finish?"✓":"★")+'</span><small>Chegada</small></div>';
+          return '<div class="mission-point is-finish '+(finish?"is-done":"")+'"><span class="mission-point-dot">'+(finish?"✓":"★")+'</span><small>Chegada</small></div>';
         }
         const state=index<=completedThrough?" is-done":index===currentIndex?" is-current":"";
-        const label=index<=completedThrough?"Vencida":index===currentIndex?"Agora":"Depois";
-        return '<div class="study-session-progress-step'+state+'"><span class="study-session-progress-dot">'+(index<=completedThrough?"✓":(index+1))+'</span><small>Etapa '+(index+1)+' · '+label+'</small></div>';
+        const label=index<=completedThrough?"Concluída":index===currentIndex?"Agora":"Depois";
+        return '<div class="mission-point'+state+'"><span class="mission-point-dot">'+(index<=completedThrough?"✓":(index+1))+'</span><small>'+label+'</small></div>';
       }).join("");
 
+      const iconFor=(title)=>{
+        const value=String(title||"").toLowerCase();
+        if(value.includes("flash"))return '<svg viewBox="0 0 24 24"><path d="M6 4h12v16H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>';
+        if(value.includes("quest"))return '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.3 2.3 0 1 1 3.6 1.9c-.9.6-1.4 1.1-1.4 2.1M12 16.5h.01"/></svg>';
+        if(value.includes("erro"))return '<svg viewBox="0 0 24 24"><path d="M12 3 2.8 19h18.4L12 3Z"/><path d="M12 9v4M12 16.5h.01"/></svg>';
+        return '<svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>';
+      };
       list.innerHTML=steps.map((step,index)=>{
         const done=index<=completedThrough,current=index===currentIndex,locked=index>currentIndex;
-        const cls=done?" is-done":current?" is-current":"";
-        const action=done?"Vencida":current?"Começar":"Bloqueada";
-        return '<button class="study-session-item'+cls+'" type="button" data-session-index="'+index+'" '+(locked||done?"disabled":"")+'><span class="study-session-index">'+(done?"✓":(index+1))+'</span><span class="study-session-copy"><strong>'+esc(step.title||"Atividade")+'</strong><small>'+esc(step.detail||"Atividade planejada")+'</small></span><span class="study-session-action">'+action+' · '+(Number(step.min)||0)+' min</span></button>';
+        const cls=done?" is-done":current?" is-current":locked?" is-locked":"";
+        const reward=index===2?30:20;
+        const footer=done
+          ? '<span class="study-session-status">Concluída</span>'
+          : current
+            ? '<button class="study-session-start" type="button" data-session-index="'+index+'">Começar <span>→</span></button>'
+            : '<span class="study-session-status">Bloqueada</span>';
+        return '<article class="study-session-card'+cls+'"><div class="study-session-card-top"><span class="study-session-card-icon">'+iconFor(step.title)+'</span><span class="study-session-step-label">Etapa '+(index+1)+'</span></div><h3>'+esc(step.title||"Atividade")+'</h3><p>'+esc(step.detail||"Atividade planejada")+'</p><div class="study-session-card-footer"><div class="study-session-card-meta"><span>'+(Number(step.min)||0)+' min</span><span class="study-session-xp-chip">+'+reward+' XP</span></div>'+footer+'</div></article>';
       }).join("");
 
       if(completedThrough>=steps.length-1){
