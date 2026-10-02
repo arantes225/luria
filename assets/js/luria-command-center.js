@@ -48,11 +48,12 @@ function commandCard(){
  if(!activityCard||activityCard.querySelector("[data-luria-study-now-inline]"))return;
  const action=d.createElement("button");
  action.type="button";
- action.className="luria-dashboard-study-now";
+ action.className="dl-primary luria-dashboard-study-now";
  action.dataset.luriaStudyNowInline="1";
- action.innerHTML='<span>Estudar agora</span><strong>→</strong>';
+ action.textContent="Estudar agora";
  action.onclick=openSession;
  const timeline=activityCard.querySelector(".dl-timeline,.dl-empty");
+ activityCard.classList.add("luria-has-study-now");
  if(timeline?.parentNode) timeline.parentNode.appendChild(action);
  else activityCard.appendChild(action);
 }
