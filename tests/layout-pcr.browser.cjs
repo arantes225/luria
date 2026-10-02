@@ -124,8 +124,11 @@ await page.evaluate(()=>{
  ];localStorage.setItem("fixture-db",JSON.stringify(db));
 });
 for(const [url,noteId,content] of [["/caderno/?topic_id=topic-1","linked-note","Conteúdo vinculado preservado"],["/caderno/?note_id=free-note","free-note","Conteúdo livre preservado"]]){
- await goto(url);await page.locator("#notebook-inspector-move").waitFor();assert.ok(await page.locator("#notebook-inspector-move").isEnabled());
- await page.locator("#notebook-inspector-move").click();
+ await goto(url);
+ await page.locator("#notebook-right-outline-list").waitFor({state:"visible"});
+ assert.ok(await page.locator(".note-right-outline-card").isVisible(),"Right sidebar shows text structure");
+ assert.equal(await page.locator("#notebook-inspector-move").isVisible(),false,"Legacy move action stays hidden from the right sidebar");
+ await page.evaluate(()=>document.getElementById("notebook-inspector-move")?.click());
  await page.locator("#notebook-move-area").fill("Pediatria");await page.locator("#notebook-move-subject").fill("Crescimento e Desenvolvimento");
  await page.evaluate(()=>localStorage.setItem("fixture-note-fail","1"));
  await page.locator("#notebook-move-submit").click();await page.locator("#notebook-move-status").filter({hasText:"Não foi possível mover"}).waitFor();
