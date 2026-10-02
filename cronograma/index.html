@@ -3857,7 +3857,46 @@ body[data-page="cronograma"] .agenda-overdue-empty{
   body[data-page="cronograma"] .agenda-overdue-card{grid-column:1/-1!important}
 }
 </style>
-  <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
+  <style id="cronograma-reorganize-switch-v41">
+body[data-page="cronograma"] .agenda-reorganize-switch{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:4px!important;
+  min-height:50px!important;
+  padding:4px!important;
+  border:1px solid var(--border)!important;
+  border-radius:10px!important;
+  background:var(--surface)!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-switch button{
+  min-height:40px!important;
+  height:auto!important;
+  padding:7px 10px!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font-size:9px!important;
+  font-weight:600!important;
+  line-height:1.15!important;
+  cursor:pointer!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-switch button:hover{
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-switch button:active{
+  background:var(--accent)!important;
+  color:#fff!important;
+}
+body[data-page="cronograma"] .agenda-reorganize-card .manual-status{
+  display:block!important;
+  min-height:0!important;
+  margin:0!important;
+  font-size:8px!important;
+}
+</style>
+<link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="canonical" href="/cronograma/">
@@ -4249,7 +4288,7 @@ body[data-page="cronograma"] .agenda-overdue-empty{
                 </div>
                 <div class="agenda-activity-view-switch" role="group" aria-label="Período das atividades">
                   <button type="button" class="active" data-agenda-scope="today">Hoje</button>
-                  <button type="button" data-agenda-scope="all">Todas</button>
+                  <button type="button" data-agenda-scope="overdue">Atrasadas</button>
                 </div>
               </div>
               <div id="agenda-bulk-tools" class="agenda-bulk-tools" hidden>
@@ -4299,63 +4338,24 @@ body[data-page="cronograma"] .agenda-overdue-empty{
                   </div>
                 </div>
               </section>
-              <section class="agenda-insight-card agenda-overdue-card" aria-labelledby="agenda-overdue-title">
+              <section class="agenda-insight-card agenda-overdue-card agenda-reorganize-card" aria-labelledby="agenda-overdue-title">
                 <div class="agenda-overdue-head">
                   <div>
-                    <span class="agenda-overdue-kicker">PENDÊNCIAS</span>
-                    <h3 id="agenda-overdue-title">Aulas atrasadas</h3>
+                    <span class="agenda-overdue-kicker">CRONOGRAMA</span>
+                    <h3 id="agenda-overdue-title">Reorganizar aulas</h3>
                   </div>
-                  <strong id="agenda-overdue-count">0</strong>
                 </div>
-                <p class="agenda-overdue-help">Recoloque aulas atrasadas no Deck ou redistribua todas respeitando suas configurações atuais.</p>
-                <div id="agenda-overdue-list" class="agenda-overdue-list">
-                  <div class="agenda-overdue-empty">Nenhuma aula atrasada.</div>
+                <p class="agenda-overdue-help">Redistribua o cronograma usando as configurações atuais de dias e limite de aulas.</p>
+                <div class="agenda-reorganize-switch" role="group" aria-label="Reorganizar cronograma">
+                  <button id="reorganize-overdue" type="button">Reorganizar aulas atrasadas</button>
+                  <button id="reorganize-advanced" type="button">Reorganizar aulas adiantadas</button>
                 </div>
-                <button id="agenda-overdue-reinsert" class="agenda-overdue-reinsert" type="button">
-                  Reinserir aulas atrasadas
-                </button>
+                <span id="reorganize-overdue-status" class="manual-status" aria-live="polite"></span>
               </section>
             </aside>
 
 
           </div>
-
-          <section class="overdue-organizer">
-            <div>
-              <strong>Reorganizar aulas</strong>
-
-              <p>
-                Aulas atrasadas usam uma data limite. Aulas adiantadas são
-                compactadas para frente somente quando não existem atrasos,
-                usando no máximo 3 dias de aula por semana.
-              </p>
-            </div>
-
-            <div class="reorganize-actions">
-              <button
-                id="reorganize-overdue"
-                class="button secondary"
-                type="button"
-              >
-                Reorganizar aulas atrasadas
-              </button>
-
-              <button
-                id="reorganize-advanced"
-                class="button secondary"
-                type="button"
-              >
-                Reorganizar aulas adiantadas
-              </button>
-            </div>
-
-            <span
-              id="reorganize-overdue-status"
-              class="manual-status"
-              aria-live="polite"
-            ></span>
-          </section>
-
 
           <dialog
             id="reorganize-overdue-dialog"
