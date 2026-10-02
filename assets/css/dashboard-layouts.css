@@ -4651,3 +4651,26 @@ body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
     max-height:none!important;
   }
 }
+
+
+/* Dashboard 2 — Próximas atividades sem data: corrige a grade dos callouts */
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-upcoming .dl-activity.dl-activity-no-date{
+  grid-template-columns:12px minmax(0,1fr) auto!important;
+  gap:8px!important;
+  align-items:center!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-upcoming .dl-activity.dl-activity-no-date .dl-activity-dot{
+  grid-column:1!important;
+  justify-self:center!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-upcoming .dl-activity.dl-activity-no-date .dl-activity-info{
+  grid-column:2!important;
+  width:100%!important;
+  min-width:0!important;
+  padding:8px 10px!important;
+  box-sizing:border-box!important;
+}
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-upcoming .dl-activity.dl-activity-no-date .dl-start{
+  grid-column:3!important;
+  justify-self:end!important;
+}
