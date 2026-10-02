@@ -3835,6 +3835,7 @@ function ensureNotificationCenter() {
     if (stopwatchPause) stopwatchPause.disabled = !stopwatchInterval;
     if (stopwatchInterval && stopwatchCountdownSeconds !== null && currentTimerSeconds() <= 0) {
       clearInterval(stopwatchInterval); stopwatchInterval = null; stopwatchStartedAt = 0;
+      try { localStorage.removeItem("luria:guided-timer"); } catch {}
       if (pomodoroStatus) pomodoroStatus.textContent = "Tempo concluído.";
     }
   };
@@ -3915,6 +3916,7 @@ function ensureNotificationCenter() {
     stopwatchStartedAt = 0;
     stopwatchElapsedMs = 0;
     stopwatchCountdownSeconds = null;
+    try { localStorage.removeItem("luria:guided-timer"); } catch {}
     if (pomodoroStatus) pomodoroStatus.textContent = "";
     if (pomodoroStateLabel) {
       const raw = String(timerDurationInput?.value ?? "").trim();
@@ -3922,6 +3924,30 @@ function ensureNotificationCenter() {
     }
     renderStopwatch();
   });
+
+  function restoreGuidedStudyTimer() {
+    let guided = null;
+    try { guided = JSON.parse(localStorage.getItem("luria:guided-timer") || "null"); } catch {}
+    if (!guided?.active || !guided.startedAt || !guided.durationSeconds) return;
+
+    const elapsedMs = Math.max(0, Date.now() - Number(guided.startedAt));
+    const durationMs = Math.max(1000, Number(guided.durationSeconds) * 1000);
+    if (elapsedMs >= durationMs) {
+      try { localStorage.removeItem("luria:guided-timer"); } catch {}
+      return;
+    }
+
+    activeTimerView = "timer";
+    stopwatchCountdownSeconds = Math.round(durationMs / 1000);
+    stopwatchElapsedMs = elapsedMs;
+    stopwatchStartedAt = Date.now();
+    stopwatchInterval = setInterval(renderStopwatch, 250);
+    if (timerDurationInput) timerDurationInput.value = String(Math.max(1, Math.round(stopwatchCountdownSeconds / 60)));
+    if (pomodoroStateLabel) pomodoroStateLabel.textContent = "Estudar agora";
+    renderStopwatch();
+  }
+
+  restoreGuidedStudyTimer();
 
   pomodoroModes.forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.luriaPomodoroMode === pomodoroMode));
