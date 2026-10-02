@@ -34,7 +34,15 @@ function installSearch(){
  const bar=topbar();if(!bar||d.getElementById("luria-global-search"))return;
  const b=d.createElement("button");b.id="luria-global-search";b.className="luria-command-trigger";b.type="button";b.innerHTML='⌕ <span>Buscar</span>';b.setAttribute("aria-label","Busca global");
  const menu=bar.querySelector("#menu-open,.menu-open");
- if(menu?.nextSibling) bar.insertBefore(b,menu.nextSibling); else if(menu) bar.appendChild(b); else bar.prepend(b);
+ if(document.body?.dataset?.page==="dashboard"){
+   document.body.appendChild(b);
+ }else if(menu?.nextSibling){
+   bar.insertBefore(b,menu.nextSibling);
+ }else if(menu){
+   bar.appendChild(b);
+ }else{
+   bar.prepend(b);
+ }
  const open=()=>{const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');const input=$("#luria-search-input",o),list=$("#luria-search-list",o);
  const render=()=>{const raw=input.value.trim(),expanded=expandSearch(raw).map(normSearch),tokens=expanded.flatMap(x=>x.split(/\s+/)).filter(Boolean);const queryNorm=normSearch(raw);const matches=routes.filter(r=>{if(!queryNorm)return true;const hay=localSearchText(r);if(hay.includes(queryNorm)||initialsSearch(r[0])===queryNorm)return true;return expanded.some(x=>x&&hay.includes(x))}).slice(0,14);list.innerHTML=matches.length?matches.map(r=>'<a class="luria-search-item" href="'+r[2]+'"><span><strong>'+esc(r[0])+'</strong><small>'+esc(r[1])+'</small></span><span class="luria-search-kind">'+esc(r[3])+'</span></a>').join(""):'<div class="luria-search-item"><span><strong>Nenhum atalho encontrado</strong><small>Tente outro termo. A busca clínica será ampliada conforme os bancos forem indexados.</small></span></div>';};input.oninput=render;render();setTimeout(()=>input.focus(),40)};
  b.onclick=open;d.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();open()}});
