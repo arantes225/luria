@@ -4633,3 +4633,11 @@ body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
     margin-bottom:10px!important;
   }
 }
+
+
+/* Dashboard 2 v4 — reduz 5px da altura do Progresso por área pela base */
+@media(min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2 .dl-areas{
+    padding-bottom:5px!important;
+  }
+}
