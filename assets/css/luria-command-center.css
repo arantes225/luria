@@ -112,3 +112,16 @@ body[data-page="estatisticas"] #luria-stats-timeline .luria-timeline-col b{
     display:none!important;
   }
 }
+
+@media(min-width:981px){
+  .topbar .luria-notifications > #luria-global-search.luria-command-trigger-topbar{
+    width:150px!important;
+    min-width:150px!important;
+    height:var(--luria-top-control-size,52px)!important;
+    min-height:var(--luria-top-control-size,52px)!important;
+    padding:0 16px!important;
+    justify-content:flex-start!important;
+    text-align:left!important;
+    border-radius:12px!important;
+  }
+}
