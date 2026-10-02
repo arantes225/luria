@@ -7929,6 +7929,24 @@ iniciarApp();
         stroke:#fff!important;
       }
 
+      /* Ofensiva: fogo proporcional ao card de 58 px no PWA. */
+      html.pwa-standalone body #sidebar.sidebar .streak-mini-icon{
+        width:42px!important;
+        height:46px!important;
+        min-width:42px!important;
+        min-height:46px!important;
+        flex:0 0 42px!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .streak-mini-flame{
+        width:36px!important;
+        height:44px!important;
+        max-width:36px!important;
+        max-height:44px!important;
+        display:block!important;
+        margin:auto!important;
+      }
+
       /* A peça acima ocupa a mesma altura nos dois ambientes:
          Ofensiva em Estudos e PCR em Trabalho. */
       html.pwa-standalone body #sidebar.sidebar .streak-mini,
