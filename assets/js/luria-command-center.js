@@ -81,12 +81,14 @@ function preExam(){
 }
 function bindNativeStudyPanels(){
  const active=activeGuidedSession();
+ const state=active?"active":"idle";
  all("[data-luria-study-panel]").forEach(panel=>{
+   if(panel.dataset.luriaSessionState===state)return;
    let mins=30;
    const title=panel.querySelector("h3");
    const timeButtons=all("[data-luria-study-time]",panel);
    timeButtons.forEach(btn=>{
-     btn.hidden=!!active;
+     if(btn.hidden!==!!active)btn.hidden=!!active;
      btn.onclick=()=>{
        mins=Number(btn.dataset.luriaStudyTime)||30;
        timeButtons.forEach(x=>x.classList.toggle("active",x===btn));
@@ -95,14 +97,21 @@ function bindNativeStudyPanels(){
    const start=panel.querySelector("[data-luria-study-start]");
    if(active){
      panel.classList.add("has-active-session");
-     if(title)title.textContent="Voltar para a sessão";
-     if(start){start.textContent="Voltar para a sessão";start.onclick=()=>{location.href="/sessao-estudo/"}}
+     if(title&&title.textContent!=="Voltar para a sessão")title.textContent="Voltar para a sessão";
+     if(start){
+       if(start.textContent!=="Voltar para a sessão")start.textContent="Voltar para a sessão";
+       start.onclick=()=>{location.href="/sessao-estudo/"};
+     }
    }else{
      panel.classList.remove("has-active-session");
-     if(title)title.textContent="Estudar agora";
-     if(start){start.textContent="Estudar agora";start.onclick=()=>openSession(mins)}
+     if(title&&title.textContent!=="Estudar agora")title.textContent="Estudar agora";
+     if(start){
+       if(start.textContent!=="Estudar agora")start.textContent="Estudar agora";
+       start.onclick=()=>openSession(mins);
+     }
    }
    panel.dataset.luriaBound="1";
+   panel.dataset.luriaSessionState=state;
  });
 }
 function commandCard(){
