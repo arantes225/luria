@@ -1513,3 +1513,68 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     min-width:8px!important;
   }
 }
+
+
+/* v29 — Estatísticas alinhadas à borda inferior como Caderno de Erros */
+@media(min-width:961px){
+  html:has(body[data-page="plantao"]),
+  body[data-page="plantao"]{
+    height:100dvh!important;
+    min-height:100dvh!important;
+    max-height:100dvh!important;
+    overflow:hidden!important;
+  }
+  body[data-page="plantao"] .app-shell,
+  body[data-page="plantao"] .main,
+  body[data-page="plantao"] .sim-hub-page{
+    min-height:0!important;
+    max-height:100dvh!important;
+  }
+  body[data-page="plantao"] .sim-hub-page{
+    display:flex!important;
+    flex-direction:column!important;
+    overflow:hidden!important;
+  }
+  body[data-page="plantao"] .sim-hub-topbar,
+  body[data-page="plantao"] .luria-page-spotlight{
+    flex:0 0 auto!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    max-height:calc(100dvh - 220px)!important;
+    grid-template-rows:auto auto minmax(0,1fr)!important;
+    align-content:stretch!important;
+    overflow:hidden!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-chart-panel-raised{
+    grid-area:stats!important;
+    align-self:stretch!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+    overflow:hidden!important;
+  }
+  body[data-page="plantao"] .sim-chart-panel-raised>header{
+    flex:0 0 auto!important;
+  }
+  body[data-page="plantao"] .sim-chart-panel-raised .sim-chart-content{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    height:auto!important;
+    overflow:hidden!important;
+  }
+  body[data-page="plantao"] .sim-chart-panel-raised .sim-chart-content>div{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-recent-panel{
+    align-self:stretch!important;
+    min-height:0!important;
+    margin-bottom:0!important;
+  }
+}
