@@ -164,13 +164,16 @@ if(d.readyState==="loading")d.addEventListener("DOMContentLoaded",boot2);else bo
     if(document.body?.dataset?.page!=="dashboard")return;
     const search=document.getElementById("luria-global-search");
     const timer=document.querySelector("#luria-pomodoro-toggle,.luria-pomodoro-toggle,.dl-timer");
+    const titleCard=document.querySelector("#dashboard-alternative > .dl-dashboard-title-card,#dashboard-alternative > .luria-dashboard-spotlight");
     const main=document.querySelector("main.main,.main");
     if(!search||!timer||!main)return;
     const tr=timer.getBoundingClientRect(),mr=main.getBoundingClientRect();
-    const leftPad=window.innerWidth<=700?14:28;
+    const titleRect=titleCard?.getBoundingClientRect?.();
+    const fallbackLeft=mr.left+(window.innerWidth<=700?14:28);
+    const searchLeft=titleRect?.width?titleRect.left:fallbackLeft;
     search.style.setProperty("position","fixed","important");
     search.style.setProperty("top",Math.round(tr.top)+"px","important");
-    search.style.setProperty("left",Math.round(mr.left+leftPad)+"px","important");
+    search.style.setProperty("left",Math.round(searchLeft)+"px","important");
     search.style.setProperty("right","auto","important");
     search.style.setProperty("margin","0","important");
     search.style.setProperty("height",Math.round(tr.height)+"px","important");
