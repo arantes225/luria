@@ -118,6 +118,13 @@
     return `<svg class="dl-icon dl-icon-${name}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name] || iconPaths.file}</svg>`;
   }
 
+  function staticFireIcon() {
+    return `<svg class="dl-icon dl-static-fire" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12.2 2.2c.5 3.2-1.2 4.8-2.7 6.3C8 10 7 11.5 7 13.7 7 16.8 9.2 19 12 19s5-2.2 5-5.4c0-2.5-1.2-4.7-3-6.6.1 2-1 3.2-2.1 3.8.4-2.6-.2-5.4.3-8.6Z" fill="currentColor"/>
+      <path d="M12 21c-2 0-3.5-1.4-3.5-3.4 0-1.5.8-2.7 2.3-4 .1 1.2.7 1.9 1.4 2.3.7-1.3 1.2-2.4 1.1-3.7 1.6 1.5 2.3 3.2 2.3 5.1 0 2.1-1.4 3.7-3.6 3.7Z" fill="var(--gold-soft,#f6b73c)"/>
+    </svg>`;
+  }
+
   function heading(icon, title, href = "") {
     return `<div class="dl-card-heading"><h3><span class="dl-heading-icon" aria-hidden="true">${icon}</span> ${escape(title)}</h3>${href ? `<a href="${href}" aria-label="Ver ${escape(title)}">Ver mais ›</a>` : ""}</div>`;
   }
@@ -178,7 +185,7 @@
     const tier = streakTier(data.streak);
     const isDashboard4 = current === "4";
     const isDashboard1 = current === "1";
-    const headingFlame = (isDashboard4 || isDashboard1) ? icon("flame") : streakVisual(data.streak);
+    const headingFlame = isDashboard1 ? staticFireIcon() : (isDashboard4 ? icon("flame") : streakVisual(data.streak));
     const streakValue = isDashboard4
       ? `<div class="dl-streak-value dl-streak-value-hero">${streakVisual(data.streak)}<strong>${data.streak} dias seguidos</strong></div>`
       : isDashboard1
