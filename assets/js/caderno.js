@@ -19680,3 +19680,219 @@ results?.addEventListener("click",async e=>{const b=e.target.closest("[data-open
   }
   document.getElementById("notebook-inspector-move")?.addEventListener("click",open);
 })();
+
+
+/* =========================================================
+   CADERNO v25.4 — MENU "MAIS" ESTÁVEL
+   Unifica os submenus internos, corrige IDs de Espaçamento e
+   preserva a seleção do editor no desktop/PWA.
+   ========================================================= */
+(() => {
+  const moreToggle = document.getElementById("notebook-more-toggle");
+  const moreMenu = document.getElementById("notebook-more-menu");
+
+  if (!moreToggle || !moreMenu) return;
+
+  const items = {
+    template: {
+      toggle: "notebook-template",
+      menu: "notebook-template-menu"
+    },
+    divider: {
+      toggle: "notebook-divider",
+      menu: "notebook-divider-menu"
+    },
+    paper: {
+      toggle: "notebook-paper-toggle",
+      menu: "notebook-paper-menu"
+    },
+    spacing: {
+      toggle: "notebook-line-spacing",
+      menu: "notebook-spacing-menu"
+    },
+    emoji: {
+      toggle: "notebook-emoji-toggle",
+      menu: "notebook-emoji-menu"
+    }
+  };
+
+  const closeMoreChildren = (except = null) => {
+    Object.entries(items).forEach(([name, ids]) => {
+      if (name === except) return;
+
+      const menu = document.getElementById(ids.menu);
+      const toggle = document.getElementById(ids.toggle);
+
+      if (menu) menu.hidden = true;
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  };
+
+  const setMoreOpen = (open) => {
+    moreMenu.hidden = !open;
+    moreToggle.setAttribute("aria-expanded", open ? "true" : "false");
+
+    if (!open) closeMoreChildren();
+  };
+
+  // Corrige as funções legadas para que Espaçamento/Aparência
+  // façam parte do mesmo ciclo de abertura/fechamento.
+  window.notebookToolToggleId = function notebookToolToggleIdFixed(name) {
+    const map = {
+      list: "notebook-list-toggle",
+      template: "notebook-template",
+      divider: "notebook-divider",
+      table: "notebook-table-toggle",
+      image: "notebook-image-add",
+      align: "notebook-align-toggle",
+      callout: "notebook-callout-toggle",
+      spacing: "notebook-line-spacing",
+      paper: "notebook-paper-toggle"
+    };
+
+    return map[name] || `notebook-${name}-toggle`;
+  };
+
+  window.closeNotebookToolMenus = function closeNotebookToolMenusFixed(except = null) {
+    const map = {
+      list: ["notebook-list-toggle", "notebook-list-menu"],
+      template: ["notebook-template", "notebook-template-menu"],
+      divider: ["notebook-divider", "notebook-divider-menu"],
+      table: ["notebook-table-toggle", "notebook-table-menu"],
+      image: ["notebook-image-add", "notebook-image-menu"],
+      align: ["notebook-align-toggle", "notebook-align-menu"],
+      callout: ["notebook-callout-toggle", "notebook-callout-menu"],
+      spacing: ["notebook-line-spacing", "notebook-spacing-menu"],
+      paper: ["notebook-paper-toggle", "notebook-paper-menu"]
+    };
+
+    Object.entries(map).forEach(([name, ids]) => {
+      if (name === except) return;
+
+      const toggle = document.getElementById(ids[0]);
+      const menu = document.getElementById(ids[1]);
+
+      if (menu) menu.hidden = true;
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  };
+
+  window.toggleNotebookToolMenu = function toggleNotebookToolMenuFixed(name) {
+    const map = {
+      list: ["notebook-list-toggle", "notebook-list-menu"],
+      template: ["notebook-template", "notebook-template-menu"],
+      divider: ["notebook-divider", "notebook-divider-menu"],
+      table: ["notebook-table-toggle", "notebook-table-menu"],
+      image: ["notebook-image-add", "notebook-image-menu"],
+      align: ["notebook-align-toggle", "notebook-align-menu"],
+      callout: ["notebook-callout-toggle", "notebook-callout-menu"],
+      spacing: ["notebook-line-spacing", "notebook-spacing-menu"],
+      paper: ["notebook-paper-toggle", "notebook-paper-menu"]
+    };
+
+    const ids = map[name];
+    if (!ids) return;
+
+    const toggle = document.getElementById(ids[0]);
+    const menu = document.getElementById(ids[1]);
+
+    if (!toggle || !menu || toggle.disabled) return;
+
+    const opening = menu.hidden;
+
+    window.closeNotebookToolMenus(opening ? name : null);
+    if (typeof closeEmojiMenu === "function" && name !== "emoji") {
+      closeEmojiMenu();
+    }
+
+    menu.hidden = !opening;
+    toggle.setAttribute("aria-expanded", opening ? "true" : "false");
+  };
+
+  moreToggle.setAttribute("aria-haspopup", "menu");
+  moreToggle.setAttribute("aria-expanded", "false");
+
+  // Intercepta o clique antes do handler legado do documento.
+  moreToggle.addEventListener(
+    "click",
+    (event) => {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      if (moreToggle.disabled) return;
+
+      if (typeof saveSelection === "function") {
+        saveSelection();
+      }
+
+      setMoreOpen(moreMenu.hidden);
+    },
+    true
+  );
+
+  // Mantém a seleção do texto antes de qualquer interação no Mais.
+  moreMenu.addEventListener(
+    "pointerdown",
+    () => {
+      if (typeof saveSelection === "function") {
+        saveSelection();
+      }
+    },
+    true
+  );
+
+  // Controla os submenus internos como um acordeão estável.
+  moreMenu.addEventListener(
+    "click",
+    (event) => {
+      const entry = Object.entries(items).find(([, ids]) =>
+        event.target.closest("#" + ids.toggle)
+      );
+
+      if (!entry) return;
+
+      const [name, ids] = entry;
+      const toggle = document.getElementById(ids.toggle);
+      const menu = document.getElementById(ids.menu);
+
+      if (!toggle || !menu || toggle.disabled) return;
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      if (typeof saveSelection === "function") {
+        saveSelection();
+      }
+
+      const opening = menu.hidden;
+      closeMoreChildren(opening ? name : null);
+
+      menu.hidden = !opening;
+      toggle.setAttribute("aria-expanded", opening ? "true" : "false");
+
+      // O menu principal nunca deve desaparecer ao abrir um submenu.
+      moreMenu.hidden = false;
+      moreToggle.setAttribute("aria-expanded", "true");
+    },
+    true
+  );
+
+  document.addEventListener(
+    "click",
+    (event) => {
+      if (
+        !event.target.closest(".note-more-wrap") &&
+        !moreMenu.hidden
+      ) {
+        setMoreOpen(false);
+      }
+    },
+    true
+  );
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMoreOpen(false);
+    }
+  });
+})();
