@@ -25,7 +25,10 @@ jobs:
           tar -xzf .tmp/protocol-media-source.tgz -C /tmp/protocol-svg
           for f in /tmp/protocol-svg/*.svg; do
             name="$(basename "${f%.svg}")"
-            rsvg-convert -w 900 -h 600 "$f" | cwebp -quiet -q 72 -m 6 - -o "assets/img/protocolos/${name}.webp"
+            png="/tmp/${name}.png"
+            rsvg-convert -w 900 -h 600 -o "$png" "$f"
+            cwebp -quiet -q 72 -m 6 "$png" -o "assets/img/protocolos/${name}.webp"
+            rm -f "$png"
           done
           test "$(find assets/img/protocolos -name '*.webp' | wc -l)" -eq 52
           if find assets/img/protocolos -name '*.webp' -size +50k | grep -q .; then
