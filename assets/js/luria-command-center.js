@@ -34,7 +34,7 @@ function installSearch(){
  const bar=topbar();if(!bar||d.getElementById("luria-global-search"))return;
  const controls=bar.querySelector(".luria-notifications");
  if(!controls){setTimeout(installSearch,120);return}
- const b=d.createElement("button");b.id="luria-global-search";b.className="luria-command-trigger luria-command-trigger-topbar";b.type="button";b.innerHTML='⌕ <span>Buscar</span>';b.setAttribute("aria-label","Busca global");
+ const b=d.createElement("button");b.id="luria-global-search";b.className="luria-command-trigger luria-command-trigger-topbar";b.type="button";b.innerHTML='<svg class="luria-command-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="5.5"></circle><path d="M15.2 15.2L20 20"></path></svg><span>Buscar</span>';b.setAttribute("aria-label","Busca global");
  const timerWrap=controls.querySelector(".luria-pomodoro-top");
  if(timerWrap)controls.insertBefore(b,timerWrap);else controls.prepend(b);
  const open=()=>{const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');const input=$("#luria-search-input",o),list=$("#luria-search-list",o);
