@@ -7660,3 +7660,147 @@ iniciarApp();
   document.head.appendChild(script);
 })();
 
+
+
+/* PWA mode switch v221 — fixed size/position + theme-safe colors */
+(function ensurePwaModeSwitchV221(){
+  if(document.getElementById("luria-pwa-mode-switch-v221")) return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-mode-switch-v221";
+  style.textContent=`
+    @media (max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        display:flex!important;
+        align-items:center!important;
+        justify-content:flex-start!important;
+        width:100%!important;
+        height:48px!important;
+        min-height:48px!important;
+        max-height:48px!important;
+        flex:0 0 48px!important;
+        box-sizing:border-box!important;
+        padding:7px 9px!important;
+        gap:9px!important;
+        margin:0!important;
+        border:1px solid #D9E2EC!important;
+        border-radius:12px!important;
+        background:#E7EEF7!important;
+        color:#184888!important;
+        box-shadow:none!important;
+        opacity:1!important;
+        visibility:visible!important;
+        overflow:hidden!important;
+        transform:none!important;
+        filter:none!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch:hover,
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch:active,
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch:focus{
+        background:#E7EEF7!important;
+        color:#184888!important;
+        border-color:#D9E2EC!important;
+        box-shadow:none!important;
+        transform:none!important;
+        filter:none!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-avatar,
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+        display:grid!important;
+        place-items:center!important;
+        width:30px!important;
+        height:30px!important;
+        min-width:30px!important;
+        flex:0 0 30px!important;
+        margin:0!important;
+        border:0!important;
+        border-radius:9px!important;
+        background:rgba(24,72,136,.10)!important;
+        color:#184888!important;
+        opacity:1!important;
+        visibility:visible!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy{
+        display:grid!important;
+        align-content:center!important;
+        min-width:0!important;
+        margin:0!important;
+        opacity:1!important;
+        visibility:visible!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+        display:block!important;
+        margin:0!important;
+        color:#184888!important;
+        font-size:12px!important;
+        font-weight:850!important;
+        line-height:1.1!important;
+        opacity:1!important;
+        visibility:visible!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+        display:block!important;
+        margin-top:2px!important;
+        color:#5F6F82!important;
+        font-size:9.5px!important;
+        font-weight:700!important;
+        line-height:1.1!important;
+        opacity:1!important;
+        visibility:visible!important;
+      }
+
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch:hover,
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch:active{
+        background:#E7EEF7!important;
+        border-color:#D9E2EC!important;
+        color:#184888!important;
+      }
+
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+        background:rgba(24,72,136,.10)!important;
+        color:#184888!important;
+      }
+
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+        color:#184888!important;
+      }
+
+      html.pwa-standalone:root[data-theme="dark"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+        color:#5F6F82!important;
+      }
+
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch,
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch:hover,
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch:active{
+        background:var(--accent-soft)!important;
+        border-color:var(--border)!important;
+        color:var(--accent)!important;
+      }
+
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch .luria-mode-icon{
+        background:color-mix(in srgb,var(--accent) 12%,transparent)!important;
+        color:var(--accent)!important;
+      }
+
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy strong{
+        color:var(--accent)!important;
+      }
+
+      html.pwa-standalone:root[data-theme="leila-mood"] body #sidebar.sidebar .luria-mode-footer-switch .user-copy small{
+        color:var(--muted)!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study .luria-mode-footer-switch,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work .luria-mode-footer-switch{
+        position:relative!important;
+        inset:auto!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
