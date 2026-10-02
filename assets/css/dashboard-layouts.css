@@ -4513,3 +4513,19 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat .dashboard-cat-symbol{width:58px!important;height:58px!important;min-width:58px!important;flex:0 0 58px!important}
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat .dashboard-cat-symbol img{width:58px!important;height:58px!important;object-fit:contain!important}
 }
+
+
+/* Dashboard 2 v1 — containers mais próximos */
+body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
+  gap:10px!important;
+}
+@media(max-width:1100px){
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
+    gap:9px!important;
+  }
+}
+@media(max-width:700px){
+  body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
+    gap:8px!important;
+  }
+}
