@@ -7708,10 +7708,8 @@ async function loadQuestionOverview() {
   setText(
     "qs-week-accuracy",
     weekAccuracy === null
-      ? "—"
-      : `${weekAccuracy
-          .toFixed(1)
-          .replace(".", ",")}%`
+      ? "—%"
+      : `${Math.round(weekAccuracy)}%`
   );
 
 
