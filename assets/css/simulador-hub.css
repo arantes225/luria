@@ -1443,3 +1443,73 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     margin:0!important;
   }
 }
+
+
+/* v28 — estatísticas compactas para caber sem scroll */
+@media(min-width:961px){
+  body[data-page="plantao"] .sim-practice-grid{
+    grid-template-rows:auto auto auto!important;
+    align-content:start!important;
+  }
+  body[data-page="plantao"] .sim-chart-panel-raised{
+    height:auto!important;
+    min-height:0!important;
+    max-height:230px!important;
+    overflow:hidden!important;
+  }
+  body[data-page="plantao"] .sim-chart-panel-raised>header{
+    min-height:34px!important;
+    padding:8px 11px!important;
+  }
+  body[data-page="plantao"] .sim-chart-panel-raised h3{
+    font-size:10px!important;
+  }
+  body[data-page="plantao"] .sim-chart-content{
+    grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)!important;
+    gap:7px!important;
+    padding:8px!important;
+  }
+  body[data-page="plantao"] .sim-chart-content>div{
+    min-height:0!important;
+    height:178px!important;
+    padding:8px!important;
+    border-radius:9px!important;
+    overflow:hidden!important;
+  }
+  body[data-page="plantao"] .sim-chart-content h4{
+    margin:0 0 6px!important;
+    font-size:7.5px!important;
+  }
+  body[data-page="plantao"] .sim-donut{
+    width:82px!important;
+    height:82px!important;
+    margin:2px auto 4px!important;
+  }
+  body[data-page="plantao"] .sim-donut:after{
+    width:50px!important;
+    height:50px!important;
+  }
+  body[data-page="plantao"] .sim-donut strong{
+    font-size:13px!important;
+  }
+  body[data-page="plantao"] .sim-donut span{
+    font-size:6px!important;
+  }
+  body[data-page="plantao"] .sim-specialty-legend{
+    gap:2px!important;
+  }
+  body[data-page="plantao"] .sim-specialty-legend div{
+    gap:4px!important;
+    font-size:6px!important;
+    line-height:1.1!important;
+  }
+  body[data-page="plantao"] .sim-mini-bars{
+    height:118px!important;
+    gap:5px!important;
+    padding:5px 3px 2px!important;
+    background:repeating-linear-gradient(to top,transparent 0 23px,var(--border) 24px)!important;
+  }
+  body[data-page="plantao"] .sim-mini-bars i{
+    min-width:8px!important;
+  }
+}
