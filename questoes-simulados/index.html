@@ -2959,9 +2959,9 @@ body.theme-dark[data-page="questoes"] #qs-daily-card{
                   <h2>Questões do dia</h2>
                   <p>Resolva a seleção diária preparada pelo LURIA e mantenha sua sequência de estudos.</p>
                 </div>
-                <div class="qs-home-daily-action">
+                <div class="qs-home-daily-action review-launcher-action error-review-home-buttons">
                   <strong class="qs-home-daily-count" id="qs-home-daily-count">— questões</strong>
-                  <a class="button primary qs-home-primary" href="/resolver-questoes/?daily=1">
+                  <a id="qs-start-daily" class="button primary qs-home-primary" href="/resolver-questoes/?daily=1">
                     <span>Abrir questões do dia</span>
                   </a>
                 </div>
@@ -4127,67 +4127,81 @@ body[data-page="questoes"] [data-qs-section="library"] .qs-library-menu button{
 </style>
 
 
-<style id="qs-daily-button-exact-flash-v76">
-/* Questões do dia — dimensões reais do botão Iniciar revisão dos Flashcards */
-body[data-page="questoes"] #qs-daily-card .qs-home-daily-action{
-  width:220px!important;
-  min-width:220px!important;
-  max-width:220px!important;
+
+
+<style id="qs-daily-button-literal-flash-v77">
+/* Cópia literal da estrutura final do bloco Iniciar revisão dos Flashcards */
+body[data-page="questoes"] #qs-daily-card .qs-home-daily-action.review-launcher-action.error-review-home-buttons{
   display:flex!important;
+  width:auto!important;
+  min-width:0!important;
+  max-width:none!important;
   flex-direction:column!important;
-  align-items:stretch!important;
-  justify-content:center!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary{
-  display:flex!important;
   align-items:center!important;
-  justify-content:center!important;
+  justify-content:flex-start!important;
+  gap:8px!important;
+  flex:0 0 auto!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  text-align:left!important;
+}
+body[data-page="questoes"] #qs-daily-card .qs-home-daily-action.review-launcher-action.error-review-home-buttons .qs-home-daily-count{
+  margin:0!important;
+  color:#fff!important;
+  font-size:13px!important;
+  line-height:1.1!important;
+  font-weight:800!important;
+  text-align:center!important;
+}
+body[data-page="questoes"] #qs-daily-card #qs-start-daily{
   width:100%!important;
-  min-width:100%!important;
-  max-width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
   min-height:42px!important;
-  height:42px!important;
+  height:auto!important;
   padding:0 17px!important;
-  margin:10px 0 0!important;
+  margin:0!important;
   border:1px solid rgba(255,255,255,.92)!important;
   border-radius:12px!important;
   background:#fff!important;
   color:#184888!important;
   box-shadow:0 7px 18px rgba(0,0,0,.16)!important;
   font-family:inherit!important;
-  font-size:10px!important;
+  font-size:9px!important;
   line-height:1!important;
   font-weight:850!important;
   text-decoration:none!important;
   white-space:nowrap!important;
   box-sizing:border-box!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
   transform:none!important;
 }
-body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary:hover{
+body[data-page="questoes"] #qs-daily-card #qs-start-daily:hover{
   background:#fff!important;
   color:#184888!important;
   transform:none!important;
   box-shadow:0 7px 18px rgba(0,0,0,.16)!important;
 }
-:root[data-theme="dark"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary,
-body.theme-dark[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary{
+:root[data-theme="dark"] body[data-page="questoes"] #qs-daily-card #qs-start-daily,
+body.theme-dark[data-page="questoes"] #qs-daily-card #qs-start-daily{
   background:var(--surface)!important;
   color:var(--accent)!important;
   border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
 }
-:root[data-theme="leila-mood"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary,
-:root[data-theme="pink"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary,
-:root[data-theme="rosa"] body[data-page="questoes"] #qs-daily-card .qs-home-primary.button.primary{
-  background:#fff!important;
+:root[data-theme="leila-mood"] body[data-page="questoes"] #qs-daily-card #qs-start-daily,
+:root[data-theme="pink"] body[data-page="questoes"] #qs-daily-card #qs-start-daily,
+:root[data-theme="rosa"] body[data-page="questoes"] #qs-daily-card #qs-start-daily{
   color:var(--accent)!important;
 }
-@media(max-width:560px){
-  body[data-page="questoes"] #qs-daily-card .qs-home-daily-action{
-    width:min(220px,100%)!important;
-    min-width:0!important;
-    max-width:100%!important;
+@media(max-width:700px){
+  body[data-page="questoes"] #qs-daily-card .qs-home-daily-action.review-launcher-action.error-review-home-buttons{
+    width:100%!important;
+    flex-wrap:wrap!important;
   }
 }
 </style>
