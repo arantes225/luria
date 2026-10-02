@@ -24,3 +24,18 @@ body[data-page="dashboard"] .luria-has-study-now .luria-dashboard-study-now{
   width:100%!important;
   margin-top:auto!important;
 }
+
+/* luria-upcoming-study-now-lock-v2 */
+body[data-page="dashboard"] .dl-upcoming.luria-has-study-now{
+  display:flex!important;
+  flex-direction:column!important;
+}
+body[data-page="dashboard"] .dl-upcoming.luria-has-study-now .dl-timeline,
+body[data-page="dashboard"] .dl-upcoming.luria-has-study-now .dl-empty{
+  flex:0 0 auto!important;
+}
+body[data-page="dashboard"] .dl-upcoming.luria-has-study-now .luria-dashboard-study-now{
+  width:100%!important;
+  margin-top:auto!important;
+  flex:0 0 auto!important;
+}
