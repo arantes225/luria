@@ -1151,6 +1151,7 @@ const sb = window.supabaseClient;
 
 const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
+  sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
   caderno: { title: "Anotações", eyebrow: "Notas e materiais", helper: "Registre, organize e encontre o que importa." },
   flashcards: { title: "Flashcards", eyebrow: "Revisão ativa", helper: "Revise no ritmo certo e fortaleça a memória." },
