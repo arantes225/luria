@@ -3292,14 +3292,39 @@
 .notebook-library-list:not(.is-area-home) .notebook-library-row{
   border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px;background:var(--surface);
 }
-.notebook-paper.paper-lined{
-  background-color:#fff;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,#dbe5f0 32px);
+.notebook-paper.paper-lined,
+.note-page.paper-lined{
+  background-color:var(--surface)!important;
+  background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,color-mix(in srgb,var(--accent) 15%,var(--border)) 32px)!important;
 }
-.notebook-paper.paper-lined::before{content:"";position:absolute;top:0;bottom:0;left:68px;width:1px;background:#efb4b4;pointer-events:none}
-.notebook-paper.paper-dotted{background-color:#fff;background-image:radial-gradient(#c8d3df 1px,transparent 1px);background-size:20px 20px}
-.notebook-paper.paper-luria{background-color:#fff;background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 31px,#d9e3ee 32px)}
-.notebook-paper.paper-luria::after{content:"LURIA  •  LURIA  •  LURIA";display:block;text-align:center;color:color-mix(in srgb,var(--accent) 34%,transparent);letter-spacing:.22em;font-size:9px;margin:28px 0}
-.notebook-paper{position:relative}
+.notebook-paper.paper-lined::before,
+.note-page.paper-lined::before{
+  content:"";position:absolute;top:0;bottom:0;left:68px;width:1px;background:color-mix(in srgb,#efb4b4 70%,var(--border));pointer-events:none
+}
+.notebook-paper.paper-dotted,
+.note-page.paper-dotted{
+  background-color:var(--surface)!important;
+  background-image:radial-gradient(color-mix(in srgb,var(--accent) 22%,var(--border)) 1px,transparent 1px)!important;
+  background-size:20px 20px!important;
+}
+.notebook-paper.paper-luria,
+.note-page.paper-luria{
+  background-color:var(--surface)!important;
+  background-image:
+    linear-gradient(to right,transparent 0,transparent 67px,color-mix(in srgb,var(--accent) 13%,transparent) 68px,transparent 69px),
+    repeating-linear-gradient(to bottom,transparent 0,transparent 31px,color-mix(in srgb,var(--accent) 14%,var(--border)) 32px)!important;
+}
+.notebook-paper.paper-luria::after,
+.note-page.paper-luria::after{
+  content:"LURIA  •  LURIA  •  LURIA";display:block;text-align:center;color:color-mix(in srgb,var(--accent) 38%,transparent);letter-spacing:.22em;font-size:9px;margin:28px 0
+}
+.notebook-paper,
+.note-page{position:relative}
+.notebook-paper.paper-white,
+.note-page.paper-white{
+  background-color:var(--surface)!important;
+  background-image:none!important;
+}
 .notebook-editor .notebook-two-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:18px 0}
 .notebook-editor .notebook-column{min-width:0;padding:14px;border:1px dashed var(--border);border-radius:12px}
 .notebook-outline-panel,.notebook-quick-panel{position:sticky;top:12px;align-self:start;border:1px solid var(--border);border-radius:14px;background:var(--surface);padding:12px}
