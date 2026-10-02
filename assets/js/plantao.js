@@ -594,7 +594,7 @@
   }
 
   function setCaseLibraryView(view,{persist=true}={}){
-    const next=["library","aph"].includes(view) ? view : "home";
+    const next=["library","osce","aph"].includes(view) ? view : "home";
     state.libraryView=next;
     document.body.dataset.caseLibraryView=next;
     document.querySelectorAll("[data-case-library-view]").forEach(button=>{
@@ -617,11 +617,12 @@
     const query=normalizeLabel(state.filters.query || "");
     const aphCases=state.cases.filter(isAphCase);
     const emergencyCases=state.cases.filter(item=>!isAphCase(item));
-    const baseCases=state.libraryView==="aph" ? aphCases : emergencyCases;
+    const osceCases=emergencyCases.slice(0,60);
+    const baseCases=state.libraryView==="aph" ? aphCases : (state.libraryView==="osce" ? osceCases : emergencyCases);
     const sourceCases=state.libraryView==="home" ? weeklyFeaturedCases(baseCases) : baseCases;
     const visibleCases=sourceCases.filter(item=>{
-      const filterable=state.libraryView==="library" || state.libraryView==="aph";
-      if(state.libraryView==="library" && specialty && item.specialty!==specialty) return false;
+      const filterable=["library","osce","aph"].includes(state.libraryView);
+      if(["library","osce"].includes(state.libraryView) && specialty && item.specialty!==specialty) return false;
       if(filterable && difficulty && item.difficulty!==difficulty) return false;
       if(!filterable || !query) return true;
       const haystack=normalizeLabel([
@@ -640,25 +641,30 @@
     if(sessionEl) sessionEl.textContent=scopedSessions.length;
     if(visibleCount) visibleCount.textContent=state.libraryView==="home"
       ? visibleCases.length+" destaque"+(visibleCases.length===1?"":"s")
-      : visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
+      : state.libraryView==="osce"
+        ? visibleCases.length+" estaç"+(visibleCases.length===1?"ão":"ões")
+        : visibleCases.length+" caso"+(visibleCases.length===1?"":"s");
     const listTitle=$("plantao-case-list-title");
     if(listTitle) listTitle.textContent=state.libraryView==="home"
       ? "Casos em destaque da semana"
-      : (state.libraryView==="aph" ? "Casos de APH" : "Casos disponíveis");
+      : state.libraryView==="osce"
+        ? "Estações OSCE"
+        : (state.libraryView==="aph" ? "Casos de APH" : "Casos disponíveis");
 
+    const sideTitle=$("plantao-side-title");
     const sideCaseCount=$("plantao-side-case-count");
     const sideActiveCount=$("plantao-side-active-count");
     const sideAverageTime=$("plantao-side-average-time");
     const sideCompletionRate=$("plantao-side-completion-rate");
-    if(sideCaseCount) sideCaseCount.textContent=baseCases.length;
-    if(sideActiveCount) sideActiveCount.textContent=state.activeSession ? "1" : "0";
+    const sideCaseLabel=$("plantao-side-case-label");
+    const sideActiveLabel=$("plantao-side-active-label");
+    const sideAverageLabel=$("plantao-side-average-label");
+    const sideCompletionLabel=$("plantao-side-completion-label");
 
     const completedSessions=scopedSessions.filter(x=>x.status==="completed");
     const avgMinutes=completedSessions.length
       ? Math.round(completedSessions.reduce((sum,x)=>sum+Number(x.elapsed_minutes||0),0)/completedSessions.length)
       : 0;
-    if(sideAverageTime) sideAverageTime.textContent=(avgMinutes||20)+" min";
-
     const attemptedCaseIds=new Set([
       ...completedSessions.map(x=>String(x.case_id)),
       ...(state.activeSession?.case_id ? [String(state.activeSession.case_id)] : [])
@@ -666,7 +672,28 @@
     const completionRate=attemptedCaseIds.size
       ? Math.round((new Set(completedSessions.map(x=>String(x.case_id))).size/attemptedCaseIds.size)*100)
       : 0;
-    if(sideCompletionRate) sideCompletionRate.textContent=completionRate+"%";
+
+    if(state.libraryView==="osce"){
+      if(sideTitle) sideTitle.textContent="Seu OSCE";
+      if(sideCaseCount) sideCaseCount.textContent=baseCases.length;
+      if(sideActiveCount) sideActiveCount.textContent="8 min";
+      if(sideAverageTime) sideAverageTime.textContent="5";
+      if(sideCompletionRate) sideCompletionRate.textContent="Checklist";
+      if(sideCaseLabel) sideCaseLabel.textContent="Estações disponíveis";
+      if(sideActiveLabel) sideActiveLabel.textContent="Duração por estação";
+      if(sideAverageLabel) sideAverageLabel.textContent="Áreas clínicas";
+      if(sideCompletionLabel) sideCompletionLabel.textContent="Formato";
+    }else{
+      if(sideTitle) sideTitle.textContent="Seu plantão hoje";
+      if(sideCaseCount) sideCaseCount.textContent=baseCases.length;
+      if(sideActiveCount) sideActiveCount.textContent=state.activeSession ? "1" : "0";
+      if(sideAverageTime) sideAverageTime.textContent=(avgMinutes||20)+" min";
+      if(sideCompletionRate) sideCompletionRate.textContent=completionRate+"%";
+      if(sideCaseLabel) sideCaseLabel.textContent="Casos disponíveis";
+      if(sideActiveLabel) sideActiveLabel.textContent="Em andamento";
+      if(sideAverageLabel) sideAverageLabel.textContent="Tempo médio";
+      if(sideCompletionLabel) sideCompletionLabel.textContent="Taxa de conclusão";
+    }
 
     const normalizeDifficulty=(value)=>{
       const text=normalizeLabel(value||"");
@@ -704,9 +731,10 @@
       const preferred=[
         {label:"Todos",value:""},
         {label:"Clínica Médica",value:"Clínica Médica"},
-        {label:"Cirurgia",value:"Cirurgia Geral"},
         {label:"Pediatria",value:"Pediatria"},
-        {label:"GO",value:"Ginecologia e Obstetrícia"}
+        {label:"Cirurgia Geral",value:"Cirurgia Geral"},
+        {label:"GO",value:"Ginecologia e Obstetrícia"},
+        {label:"Preventiva",value:"Preventiva"}
       ];
       chips.innerHTML=preferred.map(tab=>`
         <button type="button" class="plantao-specialty-chip${tab.value===specialty?" active":""}" data-specialty-chip="${esc(tab.value)}">
@@ -717,15 +745,16 @@
 
     const featuredHost=$("plantao-featured-case");
     if(featuredHost){
+      const osceMode=state.libraryView==="osce";
       featuredHost.hidden=false;
       featuredHost.innerHTML=`
         <div class="plantao-featured-inner">
           <div class="plantao-featured-top">
-            <span class="plantao-featured-label">PRÁTICA CLÍNICA</span>
+            <span class="plantao-featured-label">${osceMode ? "OSCE" : "PRÁTICA CLÍNICA"}</span>
           </div>
           <div class="plantao-featured-copy">
-            <h2>Simulador de Emergência</h2>
-            <p>Pratique agora. Decida melhor no plantão.</p>
+            <h2>${osceMode ? "Treino de estações clínicas" : "Simulador de Emergência"}</h2>
+            <p>${osceMode ? "Estações objetivas com tempo, tarefas e checklist." : "Pratique agora. Decida melhor no plantão."}</p>
           </div>
         </div>
       `;
@@ -783,7 +812,7 @@
         <article class="plantao-case-card plantao-case-record" data-difficulty="${esc(diff)}">
           <div class="plantao-record-folder">
             <div class="plantao-record-paper">
-              ${best == null ? "" : `
+              ${state.libraryView==="osce" || best == null ? "" : `
                 <div class="plantao-record-score-callout" title="Melhor pontuação neste caso">
                   <span>Nota</span>
                   <strong>${Math.round(best)}/100</strong>
@@ -791,7 +820,7 @@
               `}
               <div class="plantao-record-paper-header">
                 <div class="plantao-record-title-wrap">
-                  <span class="plantao-record-kicker">PRONTUÁRIO DO PACIENTE</span>
+                  <span class="plantao-record-kicker">${state.libraryView==="osce" ? "ESTAÇÃO OSCE" : "PRONTUÁRIO DO PACIENTE"}</span>
                   <div class="plantao-record-patient">
                     <strong>${esc(patientName)}</strong>
                     <span class="plantao-record-patient-meta">${esc(patientAge)} · ${esc(patientSexLabel)}</span>
@@ -821,13 +850,13 @@
                 </div>
 
                 <div class="plantao-record-line">
-                  <strong>Setor:</strong>
-                  <span>${esc(item.setting || "Sala de emergência")}</span>
+                  <strong>${state.libraryView==="osce" ? "Formato:" : "Setor:"}</strong>
+                  <span>${state.libraryView==="osce" ? "Estação de 8 minutos" : esc(item.setting || "Sala de emergência")}</span>
                 </div>
               </div>
 
-              <button class="button plantao-record-button" type="button" data-start-case="${esc(item.id)}">
-                Selecionar caso ›
+              <button class="button plantao-record-button" type="button" ${state.libraryView==="osce" ? `data-start-osce="${esc(item.id)}"` : `data-start-case="${esc(item.id)}"`}>
+                ${state.libraryView==="osce" ? "Iniciar estação ›" : "Selecionar caso ›"}
               </button>
             </div>
           </div>
@@ -4936,6 +4965,14 @@
       event.preventDefault();
       event.stopPropagation();
       closeActions();
+      return;
+    }
+
+    const startOsce=event.target.closest("[data-start-osce]");
+    if(startOsce){
+      event.preventDefault();
+      event.stopPropagation();
+      window.location.assign("/mini-osce/?case="+encodeURIComponent(startOsce.dataset.startOsce));
       return;
     }
 
