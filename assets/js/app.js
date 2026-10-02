@@ -8333,3 +8333,58 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* PWA v38 — iOS: ancora o sidebar pelas bordas do viewport.
+   Evita 100dvh inconsistente que deixava PCR/troca de ambiente no meio da tela. */
+(function ensurePwaSidebarIosBottomLockV38(){
+  if(document.getElementById("luria-pwa-sidebar-ios-bottom-lock-v38")) return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-sidebar-ios-bottom-lock-v38";
+  style.textContent=`
+    @media(max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        position:fixed!important;
+        top:0!important;
+        bottom:0!important;
+        left:0!important;
+        height:auto!important;
+        min-height:0!important;
+        max-height:none!important;
+        overflow:hidden!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work{
+        position:absolute!important;
+        left:15px!important;
+        right:15px!important;
+        top:auto!important;
+        bottom:calc(12px + env(safe-area-inset-bottom))!important;
+        height:124px!important;
+        min-height:124px!important;
+        max-height:124px!important;
+        margin:0!important;
+        padding:0!important;
+        display:grid!important;
+        grid-template-rows:58px 58px!important;
+        gap:8px!important;
+        z-index:50!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .streak-mini,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
+      html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+        position:relative!important;
+        inset:auto!important;
+        width:100%!important;
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        margin:0!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
