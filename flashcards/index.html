@@ -730,7 +730,7 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
                 <strong id="review-launcher-count">0 flashcards</strong>
                 <button
                   id="start-review-session"
-                  class="button primary"
+                  class="button primary luria-daily-review-primary"
                   type="button"
                   disabled
                 >
@@ -2003,5 +2003,57 @@ body[data-page="questoes"] .metric-percent-center strong{
 body[data-page="flashcards"] .metric-percent-center span,
 body[data-page="questoes"] .metric-percent-center span{
   display:none!important;
+}
+</style>
+
+
+<style id="luria-daily-review-primary-shared-v78">
+body[data-page="flashcards"] #review-launcher .review-launcher-action,
+body[data-page="questoes"] #qs-daily-card .qs-home-daily-action{
+  width:100%!important;
+  max-width:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  text-align:center!important;
+}
+body[data-page="flashcards"] .luria-daily-review-primary,
+body[data-page="questoes"] .luria-daily-review-primary{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  min-width:100%!important;
+  max-width:100%!important;
+  height:42px!important;
+  min-height:42px!important;
+  padding:0 17px!important;
+  margin-top:10px!important;
+  border:1px solid rgba(255,255,255,.92)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  color:#184888!important;
+  box-shadow:0 7px 18px rgba(0,0,0,.16)!important;
+  font-family:inherit!important;
+  font-size:10px!important;
+  line-height:1!important;
+  font-weight:850!important;
+  text-decoration:none!important;
+  white-space:nowrap!important;
+  box-sizing:border-box!important;
+  transform:none!important;
+}
+body[data-page="flashcards"] .luria-daily-review-primary:hover,
+body[data-page="questoes"] .luria-daily-review-primary:hover{
+  transform:none!important;
+  box-shadow:0 7px 18px rgba(0,0,0,.16)!important;
+}
+:root[data-theme="dark"] body[data-page="flashcards"] .luria-daily-review-primary,
+:root[data-theme="dark"] body[data-page="questoes"] .luria-daily-review-primary,
+body.theme-dark[data-page="flashcards"] .luria-daily-review-primary,
+body.theme-dark[data-page="questoes"] .luria-daily-review-primary{
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  border-color:color-mix(in srgb,var(--accent) 24%,var(--border))!important;
 }
 </style>
