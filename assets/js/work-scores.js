@@ -24,26 +24,26 @@
 
   const scores = [
     {
-      id:"gcs", name:"Glasgow", category:"Emergência", aliases:"coma consciência trauma neuro",
-      desc:"Avaliação padronizada do nível de consciência.", tags:["Plantão","Neurologia"],
+      id:"gcs", name:"Escala de Coma de Glasgow", category:"Emergência", aliases:"coma consciência trauma neuro",
+      desc:"Avalia o nível de consciência pelas respostas ocular, verbal e motora.", tags:["Plantão","Neurologia"],
       questions:[
-        q("Abertura ocular",[opt("Espontânea",4),opt("À voz",3),opt("À pressão/dor",2),opt("Nenhuma",1)]),
-        q("Resposta verbal",[opt("Orientada",5),opt("Confusa",4),opt("Palavras",3),opt("Sons",2),opt("Nenhuma",1)]),
-        q("Resposta motora",[opt("Obedece comandos",6),opt("Localiza",5),opt("Flexão normal",4),opt("Flexão anormal",3),opt("Extensão",2),opt("Nenhuma",1)])
+        q("Abertura ocular",[opt("Espontânea",4),opt("À voz",3),opt("Ao estímulo doloroso",2),opt("Nenhuma",1)]),
+        q("Resposta verbal",[opt("Orientada",5),opt("Confusa",4),opt("Palavras inapropriadas",3),opt("Sons incompreensíveis",2),opt("Nenhuma",1)]),
+        q("Resposta motora",[opt("Obedece comandos",6),opt("Localiza o estímulo doloroso",5),opt("Flexão normal (retirada)",4),opt("Flexão anormal",3),opt("Extensão",2),opt("Nenhuma",1)])
       ],
-      interpret: sumInterpret([[3,8,"Comprometimento grave"],[9,12,"Comprometimento moderado"],[13,15,"Comprometimento leve / melhor resposta"]]),
+      interpret: sumInterpret([[3,8,"Comprometimento grave"],[9,12,"Comprometimento moderado"],[13,15,"Comprometimento leve ou ausente"]]),
       reference:"Teasdale G, Jennett B. Lancet. 1974."
     },
     {id:"news2",name:"NEWS2",category:"Emergência",aliases:"deterioração sinais vitais enfermaria",desc:"Detecção de deterioração clínica a partir de parâmetros fisiológicos.",tags:["Plantão","Enfermaria"],custom:"news2",reference:refs.news2},
     {
-      id:"qsofa",name:"qSOFA",category:"Emergência",aliases:"sepse infecção",desc:"Triagem prognóstica rápida em suspeita de infecção.",tags:["Plantão","Infectologia"],
+      id:"qsofa",name:"qSOFA",category:"Emergência",aliases:"sepse infecção",desc:"Triagem prognóstica rápida em pacientes com suspeita de infecção.",tags:["Plantão","Infectologia"],
       questions:[q("FR ≥ 22 irpm",yesno()),q("PAS ≤ 100 mmHg",yesno()),q("Alteração do estado mental (GCS < 15)",yesno())],
-      interpret:sumInterpret([[0,1,"0–1 critério"],[2,3,"≥2 critérios: maior risco; exige avaliação clínica completa"]]),
+      interpret:sumInterpret([[0,1,"0–1 critério: menor pontuação no qSOFA"],[2,3,"≥2 critérios: maior risco de desfecho desfavorável; requer avaliação clínica completa"]]),
       reference:"Singer M et al. JAMA. 2016;315:801–810."
     },
     {id:"sofa",name:"SOFA",category:"Emergência",aliases:"sepse disfunção orgânica UTI",desc:"Quantifica disfunção de seis sistemas orgânicos.",tags:["UTI","Infectologia"],custom:"sofa",reference:refs.sofa},
     {
-      id:"heart",name:"HEART",category:"Cardiologia",aliases:"dor torácica SCA troponina ECG",desc:"Estratificação de risco em dor torácica no pronto atendimento.",tags:["PS","Dor torácica"],
+      id:"heart",name:"HEART",category:"Cardiologia",aliases:"dor torácica SCA troponina ECG",desc:"Estratifica o risco de eventos cardíacos em pacientes com dor torácica.",tags:["PS","Dor torácica"],
       questions:[
         q("História",[opt("Pouco/nada suspeita",0),opt("Moderadamente suspeita",1),opt("Altamente suspeita",2)]),
         q("ECG",[opt("Normal",0),opt("Alteração inespecífica de repolarização",1),opt("Desvio significativo de ST",2)]),
@@ -51,7 +51,7 @@
         q("Fatores de risco",[opt("Nenhum",0),opt("1–2",1),opt("≥3 ou doença aterosclerótica conhecida",2)]),
         q("Troponina convencional",[opt("≤ limite superior",0),opt("1–3× limite superior",1),opt("≥3× limite superior",2)],"Para hs-cTn, usar protocolo específico do ensaio.")
       ],
-      interpret:sumInterpret([[0,3,"Faixa HEART baixa"],[4,6,"Faixa HEART intermediária"],[7,10,"Faixa HEART alta"]]),
+      interpret:sumInterpret([[0,3,"HEART 0–3: baixo risco"],[4,6,"HEART 4–6: risco intermediário"],[7,10,"HEART 7–10: alto risco"]]),
       reference:refs.heart
     },
     {
@@ -72,7 +72,7 @@
         q("AVC prévio",yesno()),q("Sangramento prévio/predisposição",yesno()),q("INR lábil",yesno()),
         q("Idade >65 anos",yesno()),q("Fármacos que aumentam sangramento",yesno()),q("Álcool",yesno())
       ],
-      interpret:(n)=> n>=3 ? "≥3: maior risco de sangramento; revisar fatores modificáveis e seguimento." : "0–2: menor pontuação no HAS-BLED.",
+      interpret:(n)=> n>=3 ? "HAS-BLED ≥3: maior risco de sangramento; revisar fatores modificáveis e intensificar o seguimento." : "HAS-BLED 0–2: abaixo do ponto de corte usual para alto risco.",
       reference:"Pisters R et al. Chest. 2010;138:1093–1100."
     },
     {
@@ -94,7 +94,7 @@
         q("Idade ≥50 anos",yesno()),q("FC ≥100 bpm",yesno()),q("SpO₂ <95%",yesno()),q("Edema unilateral de perna",yesno()),
         q("Hemoptise",yesno()),q("Cirurgia/trauma recente",yesno()),q("TEP/TVP prévia",yesno()),q("Uso de estrogênio",yesno())
       ],
-      interpret:(n)=> n===0 ? "PERC negativo (0 critérios) — somente aplicável se probabilidade clínica pré-teste for baixa." : `${n} critério(s) positivo(s): PERC não negativo.`,
+      interpret:(n)=> n===0 ? "PERC negativo (0 critérios) — somente aplicável se probabilidade clínica pré-teste for baixa." : `PERC positivo: ${n} critério(s). A regra não permite excluir TEP.`,
       reference:"Kline JA et al. J Thromb Haemost. 2004;2:1247–1255."
     },
     {
@@ -111,7 +111,7 @@
     {
       id:"spesi",name:"sPESI",category:"Tromboembolismo",aliases:"embolia pulmonar prognóstico TEP",desc:"Estratificação prognóstica simplificada após diagnóstico de TEP.",tags:["TEP","Prognóstico"],
       questions:[q("Idade >80 anos",yesno()),q("Câncer",yesno()),q("Doença cardiopulmonar crônica",yesno()),q("FC ≥110 bpm",yesno()),q("PAS <100 mmHg",yesno()),q("SpO₂ <90%",yesno())],
-      interpret:(n)=> n===0 ? "sPESI = 0: faixa de menor risco no modelo." : "sPESI ≥1: pelo menos um marcador de maior risco.",
+      interpret:(n)=> n===0 ? "sPESI = 0: baixo risco pelo modelo." : "sPESI ≥1: presença de pelo menos um marcador de maior risco.",
       reference:"Jiménez D et al. Arch Intern Med. 2010;170:1383–1389."
     },
     {
@@ -122,8 +122,8 @@
     },
     {id:"nihss",name:"NIHSS",category:"Neurologia",aliases:"AVC stroke déficit neurológico",desc:"Quantificação padronizada do déficit neurológico no AVC.",tags:["AVC","Neurologia"],questions:[
       q("1a. Nível de consciência",[opt("Alerta",0),opt("Sonolento",1),opt("Obnubilado",2),opt("Sem resposta/reflexa",3)]),
-      q("1b. Perguntas LOC",[opt("Ambas corretas",0),opt("Uma correta",1),opt("Nenhuma correta",2)]),
-      q("1c. Comandos LOC",[opt("Ambos",0),opt("Um",1),opt("Nenhum",2)]),
+      q("1b. Perguntas de orientação",[opt("Ambas corretas",0),opt("Uma correta",1),opt("Nenhuma correta",2)]),
+      q("1c. Comandos simples",[opt("Ambos",0),opt("Um",1),opt("Nenhum",2)]),
       q("2. Olhar conjugado",[opt("Normal",0),opt("Paralisia parcial",1),opt("Desvio forçado",2)]),
       q("3. Campos visuais",[opt("Sem perda",0),opt("Hemianopsia parcial",1),opt("Hemianopsia completa",2),opt("Cegueira bilateral",3)]),
       q("4. Paralisia facial",[opt("Normal",0),opt("Menor",1),opt("Parcial",2),opt("Completa",3)]),
@@ -135,7 +135,7 @@
       q("8. Sensibilidade",[opt("Normal",0),opt("Perda leve/moderada",1),opt("Perda grave/total",2)]),
       q("9. Linguagem",[opt("Sem afasia",0),opt("Afasia leve/moderada",1),opt("Afasia grave",2),opt("Mudo/afasia global",3)]),
       q("10. Disartria",[opt("Normal",0),opt("Leve/moderada",1),opt("Grave/ininteligível",2)]),
-      q("11. Extinção/inação",[opt("Ausente",0),opt("Desatenção em uma modalidade",1),opt("Desatenção profunda",2)])
+      q("11. Extinção/desatenção",[opt("Ausente",0),opt("Desatenção em uma modalidade",1),opt("Desatenção profunda",2)])
     ],interpret:(n)=>`NIHSS total: ${n}/42. Use a escala completa e as regras oficiais para itens não testáveis.`,reference:refs.nihss},
     {
       id:"abcd2",name:"ABCD²",category:"Neurologia",aliases:"AIT TIA AVC",desc:"Estratificação de risco após ataque isquêmico transitório.",tags:["AIT","Neurologia"],
@@ -144,11 +144,11 @@
         q("Características clínicas",[opt("Outros",0),opt("Alteração da fala sem fraqueza",1),opt("Fraqueza unilateral",2)]),
         q("Duração",[opt("<10 min",0),opt("10–59 min",1),opt("≥60 min",2)]),q("Diabetes",yesno())
       ],
-      interpret:sumInterpret([[0,3,"Faixa ABCD² 0–3"],[4,5,"Faixa ABCD² 4–5"],[6,7,"Faixa ABCD² 6–7"]]),
+      interpret:sumInterpret([[0,3,"ABCD² 0–3: menor pontuação"],[4,5,"ABCD² 4–5: pontuação intermediária"],[6,7,"ABCD² 6–7: maior pontuação"]]),
       reference:"Johnston SC et al. Lancet. 2007;369:283–292."
     },
     {
-      id:"childpugh",name:"Child-Pugh",category:"Gastro/Hepato",aliases:"cirrose fígado hepatopatia",desc:"Classificação prognóstica de doença hepática crônica.",tags:["Hepatologia","Cirrose"],
+      id:"childpugh",name:"Child-Pugh",category:"Gastro/Hepato",aliases:"cirrose fígado hepatopatia",desc:"Classifica a gravidade e o prognóstico da cirrose.",tags:["Hepatologia","Cirrose"],
       questions:[
         q("Bilirrubina total",[opt("<2 mg/dL",1),opt("2–3 mg/dL",2),opt(">3 mg/dL",3)]),
         q("Albumina",[opt(">3,5 g/dL",1),opt("2,8–3,5 g/dL",2),opt("<2,8 g/dL",3)]),
@@ -168,9 +168,9 @@
       reference:refs.bisap
     },
     {
-      id:"alvarado",name:"Alvarado",category:"Cirurgia",aliases:"apendicite MANTRELS",desc:"Apoio à estimativa clínica de apendicite aguda.",tags:["Cirurgia","Abdome agudo"],
+      id:"alvarado",name:"Alvarado",category:"Cirurgia",aliases:"apendicite MANTRELS",desc:"Estima a probabilidade clínica de apendicite aguda.",tags:["Cirurgia","Abdome agudo"],
       questions:[q("Migração da dor para FID",yesno()),q("Anorexia",yesno()),q("Náuseas/vômitos",yesno()),q("Dor à palpação em FID",yesno(2)),q("Descompressão dolorosa",yesno()),q("Febre",yesno()),q("Leucocitose",yesno(2)),q("Desvio à esquerda",yesno())],
-      interpret:sumInterpret([[0,4,"0–4: menor probabilidade pelo escore"],[5,6,"5–6: faixa intermediária"],[7,10,"7–10: faixa alta no escore"]]),
+      interpret:sumInterpret([[0,4,"Alvarado 0–4: menor probabilidade"],[5,6,"Alvarado 5–6: probabilidade intermediária"],[7,10,"Alvarado 7–10: maior probabilidade"]]),
       reference:"Alvarado A. Ann Emerg Med. 1986;15:557–564."
     },
     {
@@ -216,21 +216,21 @@
     {
       id:"mascc",name:"MASCC",category:"Infectologia",aliases:"neutropenia febril câncer",desc:"Estratificação de risco em neutropenia febril.",tags:["Oncologia","Infectologia"],
       questions:[
-        q("Carga da doença",[opt("Grave",0),opt("Moderada",3),opt("Leve ou ausente",5)]),
+        q("Intensidade dos sintomas da doença",[opt("Grave",0),opt("Moderada",3),opt("Leve ou ausente",5)]),
         q("Sem hipotensão",yesno(5)),q("Sem DPOC",yesno(4)),q("Tumor sólido/sem infecção fúngica prévia em neoplasia hematológica",yesno(4)),
-        q("Sem desidratação que necessite fluido EV",yesno(3)),q("Paciente ambulatorial ao início da febre",yesno(3)),q("Idade <60 anos",yesno(2))
+        q("Sem desidratação que exija hidratação intravenosa",yesno(3)),q("Paciente ambulatorial ao início da febre",yesno(3)),q("Idade <60 anos",yesno(2))
       ],
       interpret:(n)=>n>=21?"≥21: baixo risco pelo MASCC.":"<21: não classificado como baixo risco pelo MASCC.",
       reference:"Klastersky J et al. J Clin Oncol. 2000;18:3038–3051."
     },
     {
-      id:"stopbang",name:"STOP-BANG",category:"Respiratório",aliases:"apneia sono ronco",desc:"Triagem de risco para apneia obstrutiva do sono.",tags:["Sono","Pré-op"],
+      id:"stopbang",name:"STOP-BANG",category:"Respiratório",aliases:"apneia sono ronco",desc:"Rastreia risco de apneia obstrutiva do sono.",tags:["Sono","Pré-op"],
       questions:[q("Ronco alto",yesno()),q("Cansaço/sonolência diurna",yesno()),q("Apneia observada",yesno()),q("Hipertensão",yesno()),q("IMC >35 kg/m²",yesno()),q("Idade >50 anos",yesno()),q("Circunferência cervical >40 cm",yesno()),q("Sexo masculino",yesno())],
       interpret:sumInterpret([[0,2,"Baixo risco pelo STOP-BANG"],[3,4,"Risco intermediário"],[5,8,"Alto risco"]]),
       reference:"Chung F et al. Anesthesiology. 2008;108:812–821."
     },
     {
-      id:"grace",name:"GRACE",category:"Cardiologia",aliases:"SCA síndrome coronariana aguda IAM NSTEMI angina instável",desc:"Estratificação prognóstica na síndrome coronariana aguda.",tags:["SCA","PS"],custom:"grace",
+      id:"grace",name:"GRACE",category:"Cardiologia",aliases:"SCA síndrome coronariana aguda IAM NSTEMI angina instável",desc:"Estima o risco prognóstico na síndrome coronariana aguda.",tags:["SCA","PS"],custom:"grace",
       reference:"Fox KAA et al. BMJ. 2006;333:1091. Diretrizes brasileiras de SCA utilizam GRACE para estratificação."
     },
     {
@@ -464,7 +464,7 @@
         <aside class="score-result">
           <span class="score-result-label">Resultado</span><div class="score-result-value" id="score-value">—</div>
           <div class="score-result-text" id="score-text">Preencha os campos.</div>
-          <div class="score-result-note" id="score-note">Interprete sempre no contexto clínico.</div>
+          <div class="score-result-note" id="score-note">Use o resultado como apoio à decisão clínica.</div>
           <button class="score-copy" type="button" id="score-copy">Copiar interpretação</button>
           <button class="score-reset" type="button" id="score-reset">Limpar</button>
           <div class="score-reference"><strong>Referência:</strong><br>${esc(s.reference||"Referência original do escore.")}</div>
@@ -485,14 +485,14 @@
       <select data-q="${i}"><option value="">Selecione…</option>${qq.options.map(o=>`<option value="${o.value}">${esc(o.text)} (${o.value>0?"+":""}${o.value})</option>`).join("")}</select>
       ${qq.help?`<small>${esc(qq.help)}</small>`:""}</div>`).join("");
     $$("select",f).forEach(el=>el.onchange=()=>calculateGeneric(s));
-    setResult("—","Preencha os campos.","Interprete sempre no contexto clínico.");
+    setResult("—","Preencha os campos.","Use o resultado como apoio à decisão clínica.");
   }
 
   function calculateGeneric(s){
     const vals=$$("#score-form select").map(x=>x.value);
     if(vals.some(v=>v==="")){setResult("—","Preencha todos os campos.","");return;}
     const total=vals.reduce((a,v)=>a+Number(v),0);
-    setResult(formatNum(total),s.interpret(total),"Resultado calculado automaticamente a partir dos critérios selecionados.");
+    setResult(formatNum(total),s.interpret(total),"Pontuação calculada a partir dos critérios selecionados.");
   }
 
   function setResult(value,text,note=""){
@@ -507,11 +507,11 @@
       f.innerHTML=
         field("Frequência respiratória (irpm)","n_rr","number",'min="0"')+
         field("SpO₂ (%)","n_spo2","number",'min="0" max="100"')+
-        selectField("Escala de SpO₂","n_scale",[opt("Escala 1 (padrão)",1),opt("Escala 2 — alvo 88–92% por hipercapnia confirmada",2)])+
+        selectField("Escala de SpO₂","n_scale",[opt("Escala 1 — padrão",1),opt("Escala 2 — alvo de 88–92% em hipercapnia confirmada",2)])+
         selectField("Oxigênio suplementar","n_o2",[opt("Ar ambiente",0),opt("Sim",1)])+
         field("PAS (mmHg)","n_sbp","number",'min="0"')+
-        field("Pulso (bpm)","n_hr","number",'min="0"')+
-        selectField("Consciência","n_cns",[opt("Alerta",0),opt("Nova confusão / V / P / U",3)])+
+        field("Frequência cardíaca (bpm)","n_hr","number",'min="0"')+
+        selectField("Estado de consciência","n_cns",[opt("Alerta",0),opt("Nova confusão ou resposta apenas à voz/dor/sem resposta",3)])+
         field("Temperatura (°C)","n_temp","number",'step="0.1"');
       $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcNews2); setResult("—","Preencha os campos.");
     },
@@ -520,13 +520,13 @@
         selectField("Respiração (PaO₂/FiO₂)", "s_resp",[opt("≥400",0),opt("<400",1),opt("<300",2),opt("<200 com suporte respiratório",3),opt("<100 com suporte respiratório",4)])+
         selectField("Plaquetas (×10³/µL)","s_pl",[opt("≥150",0),opt("<150",1),opt("<100",2),opt("<50",3),opt("<20",4)])+
         selectField("Bilirrubina (mg/dL)","s_bili",[opt("<1,2",0),opt("1,2–1,9",1),opt("2,0–5,9",2),opt("6,0–11,9",3),opt("≥12",4)])+
-        selectField("Cardiovascular","s_cv",[opt("PAM ≥70",0),opt("PAM <70",1),opt("Dopamina ≤5 ou dobutamina qualquer dose",2),opt("Dopamina >5 ou epi/norepi ≤0,1 µg/kg/min",3),opt("Dopamina >15 ou epi/norepi >0,1 µg/kg/min",4)])+
+        selectField("Cardiovascular","s_cv",[opt("PAM ≥70",0),opt("PAM <70",1),opt("Dopamina ≤5 ou dobutamina qualquer dose",2),opt("Dopamina >5 ou epinefrina/norepinefrina ≤0,1 µg/kg/min",3),opt("Dopamina >15 ou epinefrina/norepinefrina >0,1 µg/kg/min",4)])+
         selectField("Glasgow","s_gcs",[opt("15",0),opt("13–14",1),opt("10–12",2),opt("6–9",3),opt("<6",4)])+
-        selectField("Renal","s_renal",[opt("Creat <1,2 mg/dL",0),opt("1,2–1,9",1),opt("2,0–3,4",2),opt("3,5–4,9 ou diurese <500 mL/d",3),opt(">5,0 ou diurese <200 mL/d",4)]);
-      $$("select",f).forEach(x=>x.onchange=()=>{const v=$$("select",f).map(x=>x.value);if(v.some(x=>x===""))return setResult("—","Preencha todos os sistemas.");const n=v.reduce((a,b)=>a+Number(b),0);setResult(String(n),`SOFA total: ${n}/24.`,"Variações devem ser avaliadas junto ao quadro clínico e ao tempo.");}); setResult("—","Preencha os campos.");
+        selectField("Renal","s_renal",[opt("Creatinina <1,2 mg/dL",0),opt("1,2–1,9",1),opt("2,0–3,4",2),opt("3,5–4,9 ou diurese <500 mL/d",3),opt(">5,0 ou diurese <200 mL/d",4)]);
+      $$("select",f).forEach(x=>x.onchange=()=>{const v=$$("select",f).map(x=>x.value);if(v.some(x=>x===""))return setResult("—","Preencha todos os sistemas.");const n=v.reduce((a,b)=>a+Number(b),0);setResult(String(n),`SOFA total: ${n}/24.`,"Avalie o valor absoluto e, quando disponível, a variação do SOFA ao longo do tempo.");}); setResult("—","Preencha os campos.");
     },
     meldna(f){
-      f.innerHTML=field("Bilirrubina total (mg/dL)","m_bili","number",'step="0.01" min="0"')+field("INR","m_inr","number",'step="0.01" min="0"')+field("Creatinina (mg/dL)","m_cr","number",'step="0.01" min="0"')+field("Sódio (mEq/L)","m_na","number",'step="0.1" min="100" max="180"')+selectField("Diálise ≥2× na última semana","m_dial",[opt("Não",0),opt("Sim",1)]);
+      f.innerHTML=field("Bilirrubina total (mg/dL)","m_bili","number",'step="0.01" min="0"')+field("INR","m_inr","number",'step="0.01" min="0"')+field("Creatinina (mg/dL)","m_cr","number",'step="0.01" min="0"')+field("Sódio (mEq/L)","m_na","number",'step="0.1" min="100" max="180"')+selectField("Diálise pelo menos 2 vezes na última semana","m_dial",[opt("Não",0),opt("Sim",1)]);
       $$("input,select",f).forEach(x=>x.oninput=x.onchange=calcMeld); setResult("—","Preencha os campos.");
     },
     gbs(f){
@@ -547,7 +547,7 @@
         selectField("Classe de Killip","gr_k",[opt("I",0),opt("II",20),opt("III",39),opt("IV",59)])+
         selectField("Parada cardíaca na admissão","gr_ca",yesno(39))+
         selectField("Desvio de ST","gr_st",yesno(28))+
-        selectField("Marcadores de necrose elevados","gr_bio",yesno(14));
+        selectField("Biomarcadores de necrose miocárdica elevados","gr_bio",yesno(14));
       $("input,select",f).forEach(x=>x.oninput=x.onchange=calcGrace); setResult("—","Preencha os campos.");
     },
     psi(f){
@@ -562,7 +562,7 @@
     },
     rts(f){
       f.innerHTML=
-        selectField("Glasgow",[opt("13–15",4),opt("9–12",3),opt("6–8",2),opt("4–5",1),opt("3",0)])+
+        selectField("Glasgow","r_gcs",[opt("13–15",4),opt("9–12",3),opt("6–8",2),opt("4–5",1),opt("3",0)])+
         selectField("PAS (mmHg)", "r_sbp",[opt(">89",4),opt("76–89",3),opt("50–75",2),opt("1–49",1),opt("0",0)])+
         selectField("FR (irpm)", "r_rr",[opt("10–29",4),opt(">29",3),opt("6–9",2),opt("1–5",1),opt("0",0)]);
       $("select",f).forEach(x=>x.onchange=calcRts); setResult("—","Preencha os campos.");
@@ -614,9 +614,9 @@
     const hrP=hr<=40?3:hr<=50?1:hr<=90?0:hr<=110?1:hr<=130?2:3;
     const tP=t<=35?3:t<=36?1:t<=38?0:t<=39?1:2;
     const n=rrP+spP+o2P+sbpP+hrP+cns+tP;
-    let txt=n<=4?"NEWS2 baixo (0–4), se nenhum parâmetro isolado =3.":n<=6?"NEWS2 5–6: risco clínico aumentado.":"NEWS2 ≥7: alto risco clínico.";
-    if(n<=4 && [rrP,spP,sbpP,hrP,cns,tP].some(x=>x===3)) txt="NEWS2 total baixo, porém há parâmetro isolado com 3 pontos.";
-    setResult(String(n),txt,"Escala 2 de SpO₂ deve ser usada apenas quando indicada para hipercapnia confirmada/alvo 88–92%.");
+    let txt=n<=4?"NEWS2 0–4: baixo risco, desde que nenhum parâmetro isolado tenha 3 pontos.":n<=6?"NEWS2 5–6: risco clínico aumentado.":"NEWS2 ≥7: alto risco clínico.";
+    if(n<=4 && [rrP,spP,sbpP,hrP,cns,tP].some(x=>x===3)) txt="NEWS2 total 0–4, mas há um parâmetro isolado com 3 pontos.";
+    setResult(String(n),txt,"Use a Escala 2 de SpO₂ apenas quando houver indicação clínica de alvo entre 88–92%, como em hipercapnia confirmada.");
   }
 
   function calcMeld(){
@@ -639,7 +639,7 @@
     if(sex==="m") n += hb<10?6:hb<12?3:hb<13?1:0; else n += hb<10?6:hb<12?1:0;
     n += sbp<90?3:sbp<100?2:sbp<110?1:0;
     n += +$("#g_hr").value + +$("#g_mel").value + +$("#g_syn").value + +$("#g_liv").value + +$("#g_hf").value;
-    setResult(String(n),n===0?"GBS 0: faixa de risco muito baixo no escore original.":`Glasgow-Blatchford: ${n}.`,"Usar em conjunto com avaliação clínica e protocolo local para HDA.");
+    setResult(String(n),n===0?"Glasgow-Blatchford 0: risco muito baixo pelo escore original.":`Glasgow-Blatchford: ${n}.`,"Interprete em conjunto com a avaliação clínica e o protocolo local para hemorragia digestiva alta.");
   }
 
   async function copyResult(s){
