@@ -401,11 +401,12 @@
     if (!allowed.has(current)) current = "1";
     try {
       const data = snap();
-      const html = current === "5"
+      const bodyHtml = current === "5"
         ? layout5(data)
         : current === "4"
           ? layout4(data)
-          : greeting() + ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
+          : ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
+      const html = greeting() + bodyHtml;
       if (html) root.innerHTML = html;
       document.querySelectorAll(".page > .luria-dashboard-spotlight").forEach(el => {
         if (!root.contains(el)) el.remove();
