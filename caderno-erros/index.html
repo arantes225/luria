@@ -591,7 +591,7 @@ body[data-page="erros"] .error-full-library-content .error-notebook-shelf{margin
           </div>
 
           <aside class="error-review-home-aside">
-            <section class="error-side-card error-quick-metrics">
+            <section class="qs-home-week qs-home-week-compact error-side-card error-quick-metrics">
               <div class="error-side-head"><div><span>▥</span><h3>Métricas rápidas</h3></div></div>
               <div id="error-review-home-quick-metrics" class="error-quick-metrics-body"></div>
             </section>
@@ -1022,6 +1022,44 @@ body[data-page="flashcards"] .error-metric-areas{display:none!important}
   body[data-page="questoes"] .error-quick-metrics-body,
   body[data-page="flashcards"] .error-quick-metrics-body,
   body[data-page="erros"] .error-quick-metrics-body{
+    grid-template-rows:auto!important;
+  }
+}
+</style>
+
+<style id="metrics-home-structure-lock-v69">
+body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics,
+body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics{
+  width:100%!important;
+  height:272px!important;
+  min-height:272px!important;
+  max-height:272px!important;
+  box-sizing:border-box!important;
+  padding:8px 16px!important;
+  margin:0!important;
+  border:1px solid var(--border)!important;
+  border-radius:15px!important;
+  background:var(--surface)!important;
+  box-shadow:0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent)!important;
+  overflow:hidden!important;
+}
+body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics .error-quick-metrics-body,
+body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics .error-quick-metrics-body{
+  display:grid!important;
+  grid-template-rows:72px 82px 50px!important;
+  gap:6px!important;
+  margin:0!important;
+  padding:0!important;
+}
+body[data-page="flashcards"] .flash-home-summary>h2,
+body[data-page="flashcards"] .flash-home-summary>span{display:none!important}
+@media(max-width:980px){
+  body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics,
+  body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics{
+    height:auto!important;min-height:0!important;max-height:none!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics .error-quick-metrics-body,
+  body[data-page="erros"] .error-review-home-aside>.error-side-card.error-quick-metrics .error-quick-metrics-body{
     grid-template-rows:auto!important;
   }
 }
