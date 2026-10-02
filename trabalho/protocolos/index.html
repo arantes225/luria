@@ -46,6 +46,13 @@
     .protocol-section.danger{background:#fff3f2}.protocol-section.notification{background:#fff9e7}
     .protocol-drugs{display:flex;gap:8px;flex-wrap:wrap}.protocol-drugs button{background:var(--surface-2);color:var(--theme,#184888);border:1px solid color-mix(in srgb,var(--theme,#184888) 25%,var(--border))}
     .protocol-drugs button span{margin-left:4px}.protocol-refs>div{display:flex;gap:8px;flex-wrap:wrap}.protocol-refs a{display:inline-flex;padding:8px 10px;border:1px solid var(--border);border-radius:10px;color:var(--theme,#184888);text-decoration:none;font-size:.78rem;font-weight:750}
+    .protocol-image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+    .protocol-image-card{margin:0;overflow:hidden;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}
+    .protocol-image-open{display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in}
+    .protocol-image-card img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;background:#fff}
+    .protocol-image-card figcaption{display:grid;gap:4px;padding:10px 12px;line-height:1.35}.protocol-image-card figcaption strong{font-size:.78rem}.protocol-image-card figcaption small{font-size:.68rem;color:var(--muted)}
+    .protocol-image-dialog{width:min(94vw,1100px);max-width:none;padding:46px 14px 14px;border:1px solid var(--border);border-radius:18px;background:var(--surface);color:var(--text)}
+    .protocol-image-dialog::backdrop{background:rgba(0,0,0,.72)}.protocol-image-dialog>button{position:absolute;right:12px;top:10px;width:32px;height:32px;border:0;border-radius:50%;background:var(--surface-2);color:var(--text);font-size:1.4rem;cursor:pointer}.protocol-image-dialog img{display:block;max-width:100%;max-height:82vh;margin:auto;object-fit:contain;background:#fff;border-radius:12px}
     .protocol-placeholder,.protocol-empty{padding:22px;text-align:center;color:var(--muted)}.protocol-empty{margin:12px;border:1px dashed var(--border);border-radius:12px}
     @media(max-width:900px){.protocol-controls{grid-template-columns:1fr 1fr}.protocol-controls input{grid-column:1/-1}.protocol-workspace{grid-template-columns:1fr}.protocol-list-panel{max-height:none}.protocol-detail{position:static;min-height:0}}
     @media(max-width:600px){.protocol-controls{grid-template-columns:1fr}.protocol-controls input{grid-column:auto}.protocol-detail-head{display:grid}.protocol-actions{justify-content:stretch}.protocol-actions button{flex:1}.protocol-detail{padding:15px}}
@@ -89,7 +96,7 @@
   <script src="/assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20260930-layout-pcr"></script>
   <script src="/assets/js/clinical-bridge.js?v=1"></script>
-  <script src="/assets/js/trabalho-protocolos.js?v=1"></script>
+  <script src="/assets/js/trabalho-protocolos.js?v=2-images"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
