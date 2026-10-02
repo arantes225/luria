@@ -5319,14 +5319,35 @@
     if (status) status.textContent = "Carregando fila de imagens...";
     const { data, error } = await sb
       .from("clinical_image_review_queue")
-      .select("id,protocol_id,target_kind,target_ref,image_kind,modality,proposed_asset,source_url,source_name,source_license,source_trust,review_status,created_at,clinical_protocols(title,category)")
+      .select("id,protocol_id,target_kind,target_ref,image_kind,modality,proposed_asset,source_url,source_name,source_license,source_trust,review_status,created_at")
       .eq("review_status", "pending")
       .order("created_at", { ascending: true });
     if (error) {
-      if (status) status.textContent = "Não foi possível carregar a fila de imagens.";
+      console.error("Fila de imagens clínicas:", error);
+      if (status) status.textContent = "Não foi possível carregar a fila de imagens: " + (error.message || "erro de leitura");
       throw error;
     }
-    clinicalImageReviewRows = Array.isArray(data) ? data : [];
+
+    const rows = Array.isArray(data) ? data : [];
+    const protocolIds = [...new Set(rows.map(row => Number(row.protocol_id)).filter(Boolean))];
+    let protocolMap = new Map();
+
+    if (protocolIds.length) {
+      const { data: protocols, error: protocolError } = await sb
+        .from("clinical_protocols")
+        .select("id,title,category")
+        .in("id", protocolIds);
+      if (protocolError) {
+        console.warn("Não foi possível resolver os nomes dos protocolos da fila:", protocolError);
+      } else {
+        protocolMap = new Map((protocols || []).map(protocol => [Number(protocol.id), protocol]));
+      }
+    }
+
+    clinicalImageReviewRows = rows.map(row => ({
+      ...row,
+      clinical_protocols: protocolMap.get(Number(row.protocol_id)) || null
+    }));
     renderClinicalImageReviewQueue(clinicalImageReviewRows);
   }
 
