@@ -34,6 +34,21 @@
       </article>`).join("")}</div></section>`;
   };
 
+  const renderImages = (items) => {
+    if (!Array.isArray(items) || !items.length) return "";
+    return `<section class="protocol-section protocol-images">
+      <h3>Imagens-chave</h3>
+      <div class="protocol-image-grid">${items.map((img) => `
+        <figure class="protocol-image-card">
+          <button type="button" class="protocol-image-open" data-image-src="${esc(img.src)}" aria-label="Ampliar imagem">
+            <img loading="lazy" decoding="async" src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "Imagem didática do protocolo")}">
+          </button>
+          ${img.caption ? `<figcaption><strong>${esc(img.caption)}</strong>${img.credit ? `<small>${esc(img.credit)}</small>` : ""}</figcaption>` : ""}
+        </figure>`).join("")}
+      </div>
+    </section>`;
+  };
+
   const renderRefs = (items) => {
     if (!Array.isArray(items) || !items.length) return "";
     return `<section class="protocol-section protocol-refs"><h3>Referências oficiais</h3><div>${items.map((r) => `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
@@ -120,6 +135,7 @@
       ${listSection("Quando suspeitar", r.suspicion)}
       ${listSection("Primeira conduta", r.initial_actions)}
       ${listSection("Exames iniciais", r.exams)}
+      ${renderImages(r.image_assets)}
       ${renderDecisionFlow(r.decision_flow)}
       ${listSection("Tratamento", r.treatment, "treatment")}
       ${drugs.length ? `<section class="protocol-section"><h3>Medicamentos relacionados</h3><div class="protocol-drugs">${drugs.map((d) => `<button type="button" data-drug="${esc(d)}">${esc(d)} <span>↗</span></button>`).join("")}</div></section>` : ""}
@@ -130,6 +146,17 @@
       ${renderRefs(r.source_refs)}
     `;
 
+    els.detail.querySelectorAll("[data-image-src]").forEach((b) => b.addEventListener("click", () => {
+      const src = b.dataset.imageSrc;
+      const dialog = document.createElement("dialog");
+      dialog.className = "protocol-image-dialog";
+      dialog.innerHTML = `<button type="button" aria-label="Fechar">×</button><img src="${esc(src)}" alt="Imagem ampliada do protocolo">`;
+      document.body.appendChild(dialog);
+      dialog.querySelector("button")?.addEventListener("click", () => dialog.close());
+      dialog.addEventListener("click", (ev) => { if (ev.target === dialog) dialog.close(); });
+      dialog.addEventListener("close", () => dialog.remove());
+      dialog.showModal();
+    }));
     els.detail.querySelectorAll("[data-drug]").forEach((b) => b.addEventListener("click", () => bridge?.openDrug(b.dataset.drug)));
     els.detail.querySelector("[data-open-recipe]")?.addEventListener("click", () => bridge?.openRecipe(recipes[0]));
     els.detail.querySelector("[data-send-note]")?.addEventListener("click", () => bridge?.toQuickChart({
