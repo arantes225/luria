@@ -1578,3 +1578,29 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     margin-bottom:0!important;
   }
 }
+
+
+/* v30 — folga inferior real para Estatísticas e Distribuição de pontuação */
+@media(min-width:961px){
+  body[data-page="plantao"] .sim-hub-page{
+    box-sizing:border-box!important;
+    padding-bottom:12px!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid{
+    box-sizing:border-box!important;
+    max-height:calc(100dvh - 232px)!important;
+    padding-bottom:2px!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-chart-panel-raised,
+  body[data-page="plantao"] .sim-practice-grid>.sim-recent-panel{
+    margin-bottom:2px!important;
+  }
+}
+@media(max-width:960px){
+  body[data-page="plantao"] .sim-hub-page{
+    padding-bottom:16px!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid{
+    padding-bottom:4px!important;
+  }
+}
