@@ -1388,3 +1388,58 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     gap:14px!important;
   }
 }
+
+
+/* v27 — estatísticas à direita do resumo */
+@media(min-width:961px){
+  body[data-page="plantao"] .sim-practice-grid{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-areas:
+      "emergency zap"
+      "summary stats"
+      "recent stats"!important;
+    gap:10px 14px!important;
+    align-items:start!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-hero-emergency{
+    grid-area:emergency!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-hero-zap{
+    grid-area:zap!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-stats-strip-compact{
+    grid-area:summary!important;
+    width:100%!important;
+    margin:0!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-chart-panel-raised{
+    grid-area:stats!important;
+    width:100%!important;
+    height:100%!important;
+    margin:0!important;
+    align-self:stretch!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-recent-panel{
+    grid-area:recent!important;
+    width:100%!important;
+    margin:0!important;
+  }
+  body[data-page="plantao"] .sim-two-column-layout,
+  body[data-page="plantao"] .sim-lower-grid,
+  body[data-page="plantao"] .sim-dashboard-grid{
+    display:none!important;
+  }
+}
+@media(max-width:960px){
+  body[data-page="plantao"] .sim-practice-grid{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+  }
+  body[data-page="plantao"] .sim-practice-grid>.sim-stats-strip-compact{
+    width:100%!important;
+    margin:0!important;
+  }
+}
