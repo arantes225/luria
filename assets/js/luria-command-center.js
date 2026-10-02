@@ -60,7 +60,7 @@ function openSession(initialMinutes=30){
    if(!steps.length)return;
    const planned=mins===999?steps.reduce((sum,x)=>sum+(Number(x.min)||0),0):mins;
    try{sessionStorage.setItem("luria:guided-study-plan",JSON.stringify({minutes:planned,requestedMinutes:mins,steps,createdAt:Date.now()}));}catch{}
-   location.href="/ambientacao/?study_session=1";
+   location.href="/sessao-estudo/";
  };
 }
 function preExam(){
