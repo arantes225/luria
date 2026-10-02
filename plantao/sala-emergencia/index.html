@@ -68,9 +68,10 @@
           </section>
 
           <div class="plantao-native-switch-wrap plantao-primary-switch-wrap">
-            <nav class="plantao-ref-nav plantao-native-switch" aria-label="Visão dos casos">
-              <button class="active" type="button" data-case-library-view="home" aria-current="page">⌂ <span>Início</span></button>
-              <button type="button" data-case-library-view="library">▤ <span>Biblioteca</span></button>
+            <nav class="plantao-ref-nav plantao-native-switch" aria-label="Módulos do simulador">
+              <button class="active" type="button" data-case-library-view="home" aria-current="page"><span>Início</span></button>
+              <button type="button" data-case-library-view="library"><span>Sala de Emergência</span></button>
+              <button id="plantao-osce-nav" type="button"><span>OSCE</span></button>
               <button type="button" data-case-library-view="aph"><span>APH</span></button>
             </nav>
           </div>
@@ -453,6 +454,12 @@
       if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",keepEmergencyLibraryVisible,{once:true});
       else keepEmergencyLibraryVisible();
       window.addEventListener("pageshow",keepEmergencyLibraryVisible);
+    })();
+  </script>
+  <script>
+    (function(){
+      var osceNav=document.getElementById("plantao-osce-nav");
+      if(osceNav) osceNav.addEventListener("click",function(){ location.href="/mini-osce/"; });
     })();
   </script>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
