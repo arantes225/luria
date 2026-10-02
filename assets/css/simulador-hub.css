@@ -1604,3 +1604,13 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     padding-bottom:4px!important;
   }
 }
+
+
+/* v31 — Estatísticas do Simulador 5px mais baixa apenas pela base */
+@media(min-width:961px){
+  body[data-page="plantao"] .sim-practice-grid>.sim-chart-panel-raised{
+    align-self:start!important;
+    height:calc(100% - 5px)!important;
+    max-height:calc(100% - 5px)!important;
+  }
+}
