@@ -7611,27 +7611,3 @@ iniciarApp();
   document.head.appendChild(script);
 })();
 
-/* Busca global: fixa visualmente no grupo esquerdo do header. */
-(function installLuriaSearchLeftFix(){
-  if (document.getElementById("luria-search-left-fix-v1")) return;
-  const style = document.createElement("style");
-  style.id = "luria-search-left-fix-v1";
-  style.textContent = `
-    body .topbar #menu-open,
-    body .topbar .menu-open{order:-30!important}
-    body .topbar #luria-global-search{
-      order:-20!important;
-      margin-left:0!important;
-      margin-right:0!important;
-      flex:0 0 auto!important;
-      position:relative!important;
-      left:auto!important;
-      right:auto!important;
-    }
-    body .topbar .page-heading{order:-10!important}
-    @media(min-width:981px){
-      body .topbar #luria-global-search{align-self:center!important}
-    }
-  `;
-  document.head.appendChild(style);
-})();
