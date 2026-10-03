@@ -16747,6 +16747,7 @@ async function deleteSelectedNotes() {
 const notionSourceState = {
   active: false,
   connected: false,
+  configured: false,
   workspaceName: "",
   pages: []
 };
@@ -16884,12 +16885,17 @@ async function refreshNotionSource() {
   try {
     const state = await invokeNotionFunction("notion-api", { action: "status" });
     notionSourceState.connected = Boolean(state?.connected);
+    notionSourceState.configured = Boolean(state?.configured);
     notionSourceState.workspaceName = state?.workspace_name || "";
     updateNotionConnectionUi();
 
     if (!notionSourceState.connected) {
       notionSourceState.pages = [];
       renderNotionPages([]);
+      const status = document.getElementById("notebook-notion-status");
+      if (status && !notionSourceState.configured) {
+        status.textContent = "Integração do Notion ainda não configurada pelo administrador.";
+      }
       return;
     }
 
@@ -16917,17 +16923,27 @@ async function refreshNotionSource() {
 
 async function connectNotion() {
   try {
+    if (!notionSourceState.configured) {
+      const state = await invokeNotionFunction("notion-api", { action: "status" });
+      notionSourceState.configured = Boolean(state?.configured);
+      if (!notionSourceState.configured) {
+        await window.LuriaDialog?.alert?.("Integração do Notion ainda não configurada pelo administrador.");
+        return;
+      }
+    }
+
     const redirectTo = window.location.origin + "/caderno/?view=library&source=notion";
     const result = await invokeNotionFunction("notion-auth", { redirect_to: redirectTo });
-    if (!result?.url) throw new Error("A integração com o Notion ainda não foi configurada.");
+    if (!result?.url) throw new Error("notion_not_configured");
     window.location.assign(result.url);
   } catch (error) {
     console.error("Notion connect:", error);
-    window.LuriaDialog?.alert?.(
-      error?.message?.includes("NOTION_CLIENT_ID")
-        ? "Falta cadastrar o Client ID e o Client Secret da integração pública do Notion no Supabase."
-        : (error?.message || "Não foi possível iniciar a conexão com o Notion.")
-    );
+    const message = String(error?.message || "");
+    const friendly =
+      /non-2xx|notion_not_configured|NOTION_CLIENT_ID|503/i.test(message)
+        ? "Integração do Notion ainda não configurada pelo administrador."
+        : (message || "Não foi possível iniciar a conexão com o Notion.");
+    window.LuriaDialog?.alert?.(friendly);
   }
 }
 
