@@ -2447,16 +2447,231 @@
 
           <div class="admin-qf-batch-actions admin-qf-batch-actions-clean">
             <button class="button secondary admin-qf-open-batch admin-qf-open-batch-wide" type="button" data-qf-batch="${Number(batch.batch_number)}">Ver questões</button>
+            <button class="button primary admin-qf-verify-lot" type="button" data-qf-verify-lot="${Number(batch.batch_number)}">Verificar lote completo</button>
             <button class="button secondary" type="button" data-qf-export="${Number(batch.batch_number)}:0:audit">Exportar lote completo</button>
             ${batch.final_review_chatgpt_status === "approved" && batch.final_review_perplexity_status === "approved" && batch.final_human_review_status !== "approved" ? `<button class="button primary" type="button" data-qf-final-approve="${Number(batch.batch_number)}">Aprovar lote final</button>` : ""}
             <button class="button secondary" type="button" data-qf-import-lot="${Number(batch.batch_number)}">Importar revisão final</button>
           </div>
+          <div class="admin-qf-lot-audit-result" data-qf-lot-audit-result="${Number(batch.batch_number)}" hidden></div>
         </article>
         </details>
       `;
     }).join("");
   }
 
+
+  function qfAuditIssue(label, count, critical = true) {
+    const n = Number(count || 0);
+    return {
+      label,
+      count: n,
+      critical: Boolean(critical),
+      ok: n === 0
+    };
+  }
+
+  function renderQuestionFactoryLotAudit(batchNumber, audit) {
+    const host = document.querySelector('[data-qf-lot-audit-result="' + Number(batchNumber) + '"]');
+    if (!host) return;
+
+    const issues = Array.isArray(audit?.issues) ? audit.issues : [];
+    const criticalIssues = issues.filter(item => item.critical && !item.ok);
+    const warningIssues = issues.filter(item => !item.critical && !item.ok);
+    const statusClass = criticalIssues.length ? "error" : warningIssues.length ? "warning" : "success";
+    const title = criticalIssues.length
+      ? "Lote com pendências"
+      : warningIssues.length
+        ? "Lote íntegro com alertas"
+        : "Lote íntegro";
+
+    const blockRows = Array.isArray(audit?.blocks) ? audit.blocks : [];
+    const key = audit?.keys || {};
+    const total = Number(audit?.total || 0);
+
+    host.hidden = false;
+    host.className = "admin-qf-lot-audit-result " + statusClass;
+    host.innerHTML = `
+      <div class="admin-qf-lot-audit-head">
+        <div>
+          <span class="eyebrow">Verificação do lote completo</span>
+          <strong>${esc(title)}</strong>
+          <small>${formatNumber(total)} questões verificadas agora · Lote ${String(Number(batchNumber)).padStart(3,"0")}</small>
+        </div>
+        <span class="admin-qf-lot-audit-badge">${criticalIssues.length ? criticalIssues.length + " falha(s)" : warningIssues.length ? warningIssues.length + " alerta(s)" : "Tudo certo"}</span>
+      </div>
+
+      <div class="admin-qf-lot-audit-metrics">
+        <article><span>Questões</span><strong>${formatNumber(total)}</strong><small>esperado: 1.000</small></article>
+        <article><span>Blocos completos</span><strong>${formatNumber(blockRows.filter(row => row.count === 200).length)}/5</strong><small>200 por bloco</small></article>
+        <article><span>Revisão aprovada</span><strong>${formatNumber(audit.approved)}</strong><small>status atual</small></article>
+        <article><span>Cega concordante</span><strong>${formatNumber(audit.blindMatches)}</strong><small>de ${formatNumber(total)}</small></article>
+        <article><span>Com imagem</span><strong>${formatNumber(audit.images)}</strong><small>imagens vinculadas</small></article>
+        <article><span>Gabaritos</span><strong>A ${formatNumber(key.A)} · B ${formatNumber(key.B)}</strong><small>C ${formatNumber(key.C)} · D ${formatNumber(key.D)}</small></article>
+      </div>
+
+      <div class="admin-qf-lot-audit-blocks">
+        ${blockRows.map(row => `
+          <span class="${row.count === 200 ? "ok" : "bad"}">
+            B${String(row.block).padStart(2,"0")} · <b>${formatNumber(row.count)}</b>/200
+          </span>
+        `).join("")}
+      </div>
+
+      <div class="admin-qf-lot-audit-checks">
+        ${issues.map(item => `
+          <div class="${item.ok ? "ok" : item.critical ? "bad" : "warn"}">
+            <span>${item.ok ? "✓" : item.critical ? "!" : "•"}</span>
+            <div>
+              <strong>${esc(item.label)}</strong>
+              <small>${item.ok ? "OK" : formatNumber(item.count) + " ocorrência(s)"}</small>
+            </div>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  async function verifyQuestionFactoryLot(batchNumber, button) {
+    const batch = Number(batchNumber);
+    if (!Number.isFinite(batch) || batch <= 0) return;
+
+    const host = document.querySelector('[data-qf-lot-audit-result="' + batch + '"]');
+    const original = button?.textContent || "Verificar lote completo";
+    if (button) {
+      button.disabled = true;
+      button.textContent = "Verificando...";
+    }
+    if (host) {
+      host.hidden = false;
+      host.className = "admin-qf-lot-audit-result loading";
+      host.innerHTML = '<div class="admin-factory-empty-wide">Verificando as questões do lote inteiro...</div>';
+    }
+
+    try {
+      const { data, error } = await sb.rpc("admin_export_question_factory", {
+        p_batch_number: batch,
+        p_block_number: null,
+        p_blind: false
+      });
+      if (error) throw error;
+
+      const questions = Array.isArray(data?.questions) ? data.questions : [];
+      const idSet = new Set();
+      const sequenceSet = new Set();
+      const blockCounts = new Map([[1,0],[2,0],[3,0],[4,0],[5,0]]);
+      const keys = {A:0,B:0,C:0,D:0};
+
+      let duplicateIds = 0;
+      let duplicateSequences = 0;
+      let missingStem = 0;
+      let missingOptions = 0;
+      let missingExplanations = 0;
+      let missingKeyMessage = 0;
+      let invalidKey = 0;
+      let missingAnswerSource = 0;
+      let notApproved = 0;
+      let missingBlind = 0;
+      let blindMismatch = 0;
+      let images = 0;
+      let imageMetadataIssues = 0;
+
+      questions.forEach(q => {
+        const id = String(q?.question_id || "");
+        if (idSet.has(id)) duplicateIds += 1;
+        if (id) idSet.add(id);
+
+        const seq = Number(q?.sequence_no);
+        if (Number.isFinite(seq)) {
+          if (sequenceSet.has(seq)) duplicateSequences += 1;
+          sequenceSet.add(seq);
+        }
+
+        const blockMatch = id.match(/-B(\d{2})-Q\d+$/i);
+        const block = blockMatch ? Number(blockMatch[1]) : 0;
+        if (blockCounts.has(block)) blockCounts.set(block, blockCounts.get(block) + 1);
+
+        if (!String(q?.enunciado || "").trim()) missingStem += 1;
+        if (["a","b","c","d"].some(letter => !String(q?.["alternativa_"+letter] || "").trim())) missingOptions += 1;
+        if (["a","b","c","d"].some(letter => !String(q?.["explicacao_"+letter] || "").trim())) missingExplanations += 1;
+        if (!String(q?.mensagem_chave || "").trim()) missingKeyMessage += 1;
+
+        const answer = String(q?.gabarito || "").toUpperCase();
+        if (Object.prototype.hasOwnProperty.call(keys, answer)) keys[answer] += 1;
+        else invalidKey += 1;
+
+        if (!String(q?.answer_source_institution || "").trim()
+          || !String(q?.answer_source_document || "").trim()
+          || !String(q?.answer_source_url || "").trim()) {
+          missingAnswerSource += 1;
+        }
+
+        if (String(q?.block_review_status || "") !== "approved") notApproved += 1;
+
+        const blind = q?.blind_resolution || null;
+        if (!blind || !String(blind?.independent_answer || "").trim()) {
+          missingBlind += 1;
+        } else if (String(blind.independent_answer).toUpperCase() !== answer) {
+          blindMismatch += 1;
+        }
+
+        if (String(q?.image_src || "").trim()) {
+          images += 1;
+          if (!String(q?.image_alt || "").trim() || !String(q?.image_source_url || "").trim()) {
+            imageMetadataIssues += 1;
+          }
+        }
+      });
+
+      const blocks = [...blockCounts.entries()].map(([block,count]) => ({block,count}));
+      const total = questions.length;
+      const approved = total - notApproved;
+      const blindMatches = Math.max(0, total - missingBlind - blindMismatch);
+      const lowKeyCount = Object.values(keys).filter(value => total > 0 && value / total < 0.15).length;
+      const highKeyCount = Object.values(keys).filter(value => total > 0 && value / total > 0.35).length;
+
+      const issues = [
+        qfAuditIssue("Total diferente de 1.000", total === 1000 ? 0 : Math.abs(1000-total), true),
+        qfAuditIssue("Blocos fora de 200 questões", blocks.filter(row => row.count !== 200).length, true),
+        qfAuditIssue("IDs duplicados", duplicateIds, true),
+        qfAuditIssue("Sequências duplicadas", duplicateSequences, true),
+        qfAuditIssue("Enunciados ausentes", missingStem, true),
+        qfAuditIssue("Alternativas A–D incompletas", missingOptions, true),
+        qfAuditIssue("Explicações A–D incompletas", missingExplanations, true),
+        qfAuditIssue("Pulo do Gato ausente", missingKeyMessage, true),
+        qfAuditIssue("Gabaritos inválidos", invalidKey, true),
+        qfAuditIssue("Fonte do gabarito incompleta", missingAnswerSource, true),
+        qfAuditIssue("Questões sem aprovação atual", notApproved, true),
+        qfAuditIssue("Questões sem resolução cega", missingBlind, true),
+        qfAuditIssue("Divergências entre cega e gabarito", blindMismatch, true),
+        qfAuditIssue("Imagens sem alt/fonte", imageMetadataIssues, false),
+        qfAuditIssue("Distribuição de gabarito muito concentrada", lowKeyCount + highKeyCount, false)
+      ];
+
+      renderQuestionFactoryLotAudit(batch, {
+        total,
+        approved,
+        blindMatches,
+        images,
+        keys,
+        blocks,
+        issues
+      });
+    } catch (error) {
+      console.error("Falha ao verificar lote completo:", error);
+      if (host) {
+        host.hidden = false;
+        host.className = "admin-qf-lot-audit-result error";
+        host.innerHTML = '<div class="admin-factory-empty-wide">Não foi possível verificar este lote: ' + esc(error?.message || "erro desconhecido") + '</div>';
+      } else {
+        window.alert(error?.message || "Não foi possível verificar este lote.");
+      }
+    } finally {
+      if (button) {
+        button.disabled = false;
+        button.textContent = original;
+      }
+    }
+  }
 
   async function refreshQuestionFactoryLive() {
     if (state.qfAutoRefreshBusy) return;
@@ -4751,6 +4966,12 @@
       const continueButton = event.target.closest("[data-qf-continue-batch]");
       if (continueButton) {
         await continueQuestionFactoryLot(continueButton.dataset.qfContinueBatch, continueButton);
+        return;
+      }
+
+      const verifyLotButton = event.target.closest("[data-qf-verify-lot]");
+      if (verifyLotButton) {
+        await verifyQuestionFactoryLot(verifyLotButton.dataset.qfVerifyLot, verifyLotButton);
         return;
       }
 
