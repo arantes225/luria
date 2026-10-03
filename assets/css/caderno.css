@@ -4316,3 +4316,115 @@ body[data-page="caderno"] .notebook-notion-card-actions button:hover{background:
   body[data-page="caderno"] .notebook-notion-card{grid-template-columns:1fr}
   body[data-page="caderno"] .notebook-notion-card-actions{flex-wrap:wrap}
 }
+
+
+/* LURIA — leitor nativo para páginas do Notion */
+body[data-page="caderno"] .notebook-notion-connect-actions{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+body[data-page="caderno"] .notebook-notion-reader-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:1600;
+  display:grid;
+  place-items:center;
+  padding:18px;
+  background:rgba(7,17,31,.42);
+  backdrop-filter:blur(5px);
+}
+body[data-page="caderno"] .notebook-notion-reader-backdrop[hidden]{display:none!important}
+body[data-page="caderno"] .notebook-notion-reader{
+  width:min(980px,96vw);
+  max-height:92dvh;
+  display:grid;
+  grid-template-rows:auto minmax(0,1fr);
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:var(--surface);
+  box-shadow:0 24px 80px rgba(7,17,31,.22);
+}
+body[data-page="caderno"] .notebook-notion-reader-head{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  padding:17px 18px 14px;
+  border-bottom:1px solid var(--border);
+}
+body[data-page="caderno"] .notebook-notion-reader-head small{
+  color:var(--accent);
+  font-size:9px;
+  letter-spacing:.08em;
+  font-weight:650;
+}
+body[data-page="caderno"] .notebook-notion-reader-head h2{
+  margin:3px 0 2px;
+  font-size:19px;
+  font-weight:650;
+}
+body[data-page="caderno"] #notebook-notion-reader-updated{
+  color:var(--muted);
+  font-size:10px;
+}
+body[data-page="caderno"] .notebook-notion-reader-actions{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+body[data-page="caderno"] .notebook-notion-reader-content{
+  overflow:auto;
+  padding:24px clamp(18px,4vw,54px) 42px;
+  color:var(--text);
+  line-height:1.62;
+}
+body[data-page="caderno"] .notebook-notion-reader-content h1,
+body[data-page="caderno"] .notebook-notion-reader-content h2,
+body[data-page="caderno"] .notebook-notion-reader-content h3{
+  margin:1.15em 0 .45em;
+  font-weight:650;
+  line-height:1.25;
+}
+body[data-page="caderno"] .notebook-notion-reader-content h1{font-size:24px}
+body[data-page="caderno"] .notebook-notion-reader-content h2{font-size:19px}
+body[data-page="caderno"] .notebook-notion-reader-content h3{font-size:16px}
+body[data-page="caderno"] .notebook-notion-reader-content p{margin:.55em 0}
+body[data-page="caderno"] .notebook-notion-reader-content blockquote{
+  margin:12px 0;
+  padding:11px 13px;
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  background:var(--surface-2);
+}
+body[data-page="caderno"] .notebook-notion-reader-content img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:16px auto;
+  border-radius:10px;
+  border:1px solid var(--border);
+}
+body[data-page="caderno"] .notebook-notion-reader-content pre{
+  overflow:auto;
+  padding:12px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  background:var(--surface-2);
+}
+@media(max-width:700px){
+  body[data-page="caderno"] .notebook-notion-connect-actions{width:100%}
+  body[data-page="caderno"] .notebook-notion-connect-actions .button{flex:1}
+  body[data-page="caderno"] .notebook-notion-reader-backdrop{padding:0}
+  body[data-page="caderno"] .notebook-notion-reader{
+    width:100vw;
+    height:100dvh;
+    max-height:none;
+    border-radius:0;
+    border:0;
+  }
+  body[data-page="caderno"] .notebook-notion-reader-head{padding:14px}
+  body[data-page="caderno"] .notebook-notion-reader-actions .button{display:none}
+  body[data-page="caderno"] .notebook-notion-reader-content{padding:18px 16px 32px}
+}
