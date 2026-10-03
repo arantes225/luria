@@ -16746,8 +16746,19 @@ async function deleteSelectedNotes() {
 
 const notionSourceState = {
   active: false,
+  connected: false,
+  workspaceName: "",
   pages: []
 };
+
+async function invokeNotionFunction(name, body = {}) {
+  const { data, error } = await notebookSb.functions.invoke(name, { body });
+  if (error) {
+    const message = error?.context?.body?.message || error?.message || "Falha na integração com o Notion.";
+    throw new Error(message);
+  }
+  return data || {};
+}
 
 function setNotebookSource(source = "luria") {
   const notion = source === "notion";
@@ -16776,8 +16787,19 @@ function setNotebookSource(source = "luria") {
   if (notion) refreshNotionSource();
 }
 
-function notionBridge() {
-  return window.LuriaNotionBridge || null;
+function updateNotionConnectionUi() {
+  const connect = document.getElementById("notebook-notion-connect");
+  const disconnect = document.getElementById("notebook-notion-disconnect");
+  const status = document.getElementById("notebook-notion-status");
+
+  if (connect) connect.hidden = notionSourceState.connected;
+  if (disconnect) disconnect.hidden = !notionSourceState.connected;
+
+  if (status) {
+    status.textContent = notionSourceState.connected
+      ? "Conectado" + (notionSourceState.workspaceName ? " · " + notionSourceState.workspaceName : "")
+      : "Conecte sua conta do Notion para ver os cadernos autorizados aqui.";
+  }
 }
 
 function renderNotionPages(pages = notionSourceState.pages) {
@@ -16789,8 +16811,13 @@ function renderNotionPages(pages = notionSourceState.pages) {
     !query || normalizeText([page.title, page.path].filter(Boolean).join(" ")).includes(query)
   );
 
+  if (!notionSourceState.connected) {
+    list.innerHTML = '<div class="notebook-notion-empty"><strong>Notion ainda não conectado</strong><span>Se você já usa Notion, conecte sua conta. Os cadernos nativos da LURIA continuam funcionando normalmente.</span></div>';
+    return;
+  }
+
   if (!visible.length) {
-    list.innerHTML = '<div class="notebook-notion-empty"><strong>Nenhuma página encontrada</strong><span>Quando a conta estiver conectada, as páginas autorizadas do Notion aparecerão aqui.</span></div>';
+    list.innerHTML = '<div class="notebook-notion-empty"><strong>Nenhuma página encontrada</strong><span>Autorize páginas no Notion ou ajuste sua pesquisa.</span></div>';
     return;
   }
 
@@ -16800,54 +16827,123 @@ function renderNotionPages(pages = notionSourceState.pages) {
       '<div class="notebook-notion-card-copy"><strong>'+escapeHtml(page.title || "Página sem título")+'</strong>'+
       '<span>'+escapeHtml(page.path || "Notion")+'</span></div>'+
       '<div class="notebook-notion-card-actions">'+
-      '<button type="button" data-notion-open="'+id+'">Abrir</button>'+
-      '<button type="button" data-notion-import="'+id+'">Usar na LURIA</button>'+
+      '<button type="button" data-notion-open="'+id+'">Abrir na LURIA</button>'+
       '</div></article>';
   }).join("");
 
   list.querySelectorAll("[data-notion-open]").forEach(button => button.addEventListener("click", async () => {
-    const bridge = notionBridge();
     const page = notionSourceState.pages.find(item => String(item.id || item.url) === button.dataset.notionOpen);
-    if (bridge?.openPage) {
-      await bridge.openPage(page);
-      return;
-    }
-    if (page?.url) window.open(page.url, "_blank", "noopener,noreferrer");
+    if (page) await openNotionPage(page);
   }));
+}
 
-  list.querySelectorAll("[data-notion-import]").forEach(button => button.addEventListener("click", async () => {
-    const bridge = notionBridge();
-    const page = notionSourceState.pages.find(item => String(item.id || item.url) === button.dataset.notionImport);
-    if (!bridge?.importPage) {
-      window.LuriaDialog?.alert?.("A interface do Notion já está pronta. Falta ativar a conexão OAuth da LURIA para importar páginas diretamente.");
-      return;
+async function openNotionPage(page) {
+  const modal = document.getElementById("notebook-notion-reader");
+  const title = document.getElementById("notebook-notion-reader-title");
+  const updated = document.getElementById("notebook-notion-reader-updated");
+  const content = document.getElementById("notebook-notion-reader-content");
+  const original = document.getElementById("notebook-notion-open-original");
+
+  if (!modal || !content) return;
+
+  modal.hidden = false;
+  if (title) title.textContent = page?.title || "Página do Notion";
+  if (updated) updated.textContent = "";
+  if (original) original.href = page?.url || "#";
+  content.innerHTML = '<div class="notebook-notion-empty"><strong>Carregando página...</strong><span>O conteúdo continua armazenado no Notion.</span></div>';
+
+  try {
+    const result = await invokeNotionFunction("notion-api", { action: "page", page_id: page.id });
+    const remote = result?.page;
+    if (!remote) throw new Error("Página não encontrada.");
+
+    if (title) title.textContent = remote.title || page.title || "Página do Notion";
+    if (updated) {
+      const dt = remote.last_edited_time ? new Date(remote.last_edited_time) : null;
+      updated.textContent = dt && !Number.isNaN(dt.getTime())
+        ? "Atualizado no Notion em " + dt.toLocaleString("pt-BR")
+        : "Conteúdo carregado diretamente do Notion";
     }
-    await bridge.importPage(page);
-  }));
+    if (original) original.href = remote.url || page.url || "#";
+
+    content.innerHTML = remote.html || '<div class="notebook-notion-empty"><strong>Página vazia</strong></div>';
+  } catch (error) {
+    console.error("Notion page:", error);
+    content.innerHTML = '<div class="notebook-notion-empty"><strong>Não foi possível abrir esta página</strong><span>'+escapeHtml(error?.message || "Tente novamente.")+'</span></div>';
+  }
+}
+
+function closeNotionReader() {
+  const modal = document.getElementById("notebook-notion-reader");
+  if (modal) modal.hidden = true;
 }
 
 async function refreshNotionSource() {
   const status = document.getElementById("notebook-notion-status");
-  const bridge = notionBridge();
-
-  if (!bridge?.listPages) {
-    notionSourceState.pages = [];
-    renderNotionPages([]);
-    if (status) status.textContent = "Integração visual pronta · aguardando conexão segura com o Notion.";
-    return;
-  }
 
   try {
+    const state = await invokeNotionFunction("notion-api", { action: "status" });
+    notionSourceState.connected = Boolean(state?.connected);
+    notionSourceState.workspaceName = state?.workspace_name || "";
+    updateNotionConnectionUi();
+
+    if (!notionSourceState.connected) {
+      notionSourceState.pages = [];
+      renderNotionPages([]);
+      return;
+    }
+
     if (status) status.textContent = "Sincronizando Notion...";
-    const pages = await bridge.listPages();
-    notionSourceState.pages = Array.isArray(pages) ? pages : [];
+    const result = await invokeNotionFunction("notion-api", {
+      action: "list",
+      query: document.getElementById("notebook-notion-search")?.value || ""
+    });
+
+    notionSourceState.pages = Array.isArray(result?.pages) ? result.pages : [];
     renderNotionPages();
-    if (status) status.textContent = notionSourceState.pages.length
-      ? notionSourceState.pages.length + " página" + (notionSourceState.pages.length === 1 ? "" : "s") + " sincronizada" + (notionSourceState.pages.length === 1 ? "" : "s")
-      : "Nenhuma página autorizada encontrada.";
+
+    if (status) status.textContent =
+      (notionSourceState.workspaceName ? "Conectado · " + notionSourceState.workspaceName + " · " : "") +
+      notionSourceState.pages.length + " página" + (notionSourceState.pages.length === 1 ? "" : "s");
   } catch (error) {
     console.error("Notion:", error);
-    if (status) status.textContent = "Não foi possível sincronizar o Notion.";
+    notionSourceState.connected = false;
+    notionSourceState.pages = [];
+    updateNotionConnectionUi();
+    renderNotionPages([]);
+    if (status) status.textContent = error?.message || "Não foi possível acessar o Notion.";
+  }
+}
+
+async function connectNotion() {
+  try {
+    const redirectTo = window.location.origin + "/caderno/?view=library&source=notion";
+    const result = await invokeNotionFunction("notion-auth", { redirect_to: redirectTo });
+    if (!result?.url) throw new Error("A integração com o Notion ainda não foi configurada.");
+    window.location.assign(result.url);
+  } catch (error) {
+    console.error("Notion connect:", error);
+    window.LuriaDialog?.alert?.(
+      error?.message?.includes("NOTION_CLIENT_ID")
+        ? "Falta cadastrar o Client ID e o Client Secret da integração pública do Notion no Supabase."
+        : (error?.message || "Não foi possível iniciar a conexão com o Notion.")
+    );
+  }
+}
+
+async function disconnectNotion() {
+  const ok = await window.LuriaDialog?.confirm?.("Desconectar o Notion desta conta?");
+  if (ok === false) return;
+
+  try {
+    await invokeNotionFunction("notion-api", { action: "disconnect" });
+    notionSourceState.connected = false;
+    notionSourceState.workspaceName = "";
+    notionSourceState.pages = [];
+    updateNotionConnectionUi();
+    renderNotionPages([]);
+  } catch (error) {
+    window.LuriaDialog?.alert?.(error?.message || "Não foi possível desconectar o Notion.");
   }
 }
 
@@ -16856,15 +16952,17 @@ function wireNotionSourceEvents() {
   document.getElementById("notebook-source-notion")?.addEventListener("click", () => setNotebookSource("notion"));
   document.getElementById("notebook-notion-refresh")?.addEventListener("click", refreshNotionSource);
   document.getElementById("notebook-notion-search")?.addEventListener("input", () => renderNotionPages());
-  document.getElementById("notebook-notion-connect")?.addEventListener("click", async () => {
-    const bridge = notionBridge();
-    if (bridge?.connect) {
-      await bridge.connect();
-      await refreshNotionSource();
-      return;
-    }
-    window.LuriaDialog?.alert?.("A tela do Notion já foi adicionada. Para conectar contas reais, falta cadastrar as credenciais OAuth do Notion no backend da LURIA.");
+  document.getElementById("notebook-notion-connect")?.addEventListener("click", connectNotion);
+  document.getElementById("notebook-notion-disconnect")?.addEventListener("click", disconnectNotion);
+  document.getElementById("notebook-notion-reader-close")?.addEventListener("click", closeNotionReader);
+  document.getElementById("notebook-notion-reader")?.addEventListener("click", event => {
+    if (event.target?.id === "notebook-notion-reader") closeNotionReader();
   });
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("source") === "notion" || params.get("notion") === "connected") {
+    queueMicrotask(() => setNotebookSource("notion"));
+  }
 }
 
 /* =========================================================
