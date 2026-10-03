@@ -5028,3 +5028,11 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     grid-template-rows:auto!important;
   }
 }
+
+
+/* PWA — ocultar Desafio diário apenas no Dashboard instalado. */
+@media(max-width:760px){
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-daily-challenge{
+    display:none!important;
+  }
+}
