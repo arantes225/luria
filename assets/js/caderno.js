@@ -16739,11 +16739,141 @@ async function deleteSelectedNotes() {
 }
 
 
+
+/* =========================================================
+   FONTES EXTERNAS — NOTION
+   ========================================================= */
+
+const notionSourceState = {
+  active: false,
+  pages: []
+};
+
+function setNotebookSource(source = "luria") {
+  const notion = source === "notion";
+  notionSourceState.active = notion;
+
+  const luriaTab = document.getElementById("notebook-source-luria");
+  const notionTab = document.getElementById("notebook-source-notion");
+  const notionPanel = document.getElementById("notebook-notion-panel");
+
+  luriaTab?.classList.toggle("active", !notion);
+  notionTab?.classList.toggle("active", notion);
+  luriaTab?.setAttribute("aria-selected", notion ? "false" : "true");
+  notionTab?.setAttribute("aria-selected", notion ? "true" : "false");
+
+  if (notionPanel) notionPanel.hidden = !notion;
+
+  [
+    ".notebook-library-search-controls",
+    ".notebook-library-actions",
+    "#notebook-library-list"
+  ].forEach(selector => {
+    const element = document.querySelector(selector);
+    if (element) element.hidden = notion;
+  });
+
+  if (notion) refreshNotionSource();
+}
+
+function notionBridge() {
+  return window.LuriaNotionBridge || null;
+}
+
+function renderNotionPages(pages = notionSourceState.pages) {
+  const list = document.getElementById("notebook-notion-list");
+  if (!list) return;
+
+  const query = normalizeText(document.getElementById("notebook-notion-search")?.value || "");
+  const visible = (Array.isArray(pages) ? pages : []).filter(page =>
+    !query || normalizeText([page.title, page.path].filter(Boolean).join(" ")).includes(query)
+  );
+
+  if (!visible.length) {
+    list.innerHTML = '<div class="notebook-notion-empty"><strong>Nenhuma página encontrada</strong><span>Quando a conta estiver conectada, as páginas autorizadas do Notion aparecerão aqui.</span></div>';
+    return;
+  }
+
+  list.innerHTML = visible.map(page => {
+    const id = escapeHtml(page.id || page.url || "");
+    return '<article class="notebook-notion-card" data-notion-page="'+id+'">'+
+      '<div class="notebook-notion-card-copy"><strong>'+escapeHtml(page.title || "Página sem título")+'</strong>'+
+      '<span>'+escapeHtml(page.path || "Notion")+'</span></div>'+
+      '<div class="notebook-notion-card-actions">'+
+      '<button type="button" data-notion-open="'+id+'">Abrir</button>'+
+      '<button type="button" data-notion-import="'+id+'">Usar na LURIA</button>'+
+      '</div></article>';
+  }).join("");
+
+  list.querySelectorAll("[data-notion-open]").forEach(button => button.addEventListener("click", async () => {
+    const bridge = notionBridge();
+    const page = notionSourceState.pages.find(item => String(item.id || item.url) === button.dataset.notionOpen);
+    if (bridge?.openPage) {
+      await bridge.openPage(page);
+      return;
+    }
+    if (page?.url) window.open(page.url, "_blank", "noopener,noreferrer");
+  }));
+
+  list.querySelectorAll("[data-notion-import]").forEach(button => button.addEventListener("click", async () => {
+    const bridge = notionBridge();
+    const page = notionSourceState.pages.find(item => String(item.id || item.url) === button.dataset.notionImport);
+    if (!bridge?.importPage) {
+      window.LuriaDialog?.alert?.("A interface do Notion já está pronta. Falta ativar a conexão OAuth da LURIA para importar páginas diretamente.");
+      return;
+    }
+    await bridge.importPage(page);
+  }));
+}
+
+async function refreshNotionSource() {
+  const status = document.getElementById("notebook-notion-status");
+  const bridge = notionBridge();
+
+  if (!bridge?.listPages) {
+    notionSourceState.pages = [];
+    renderNotionPages([]);
+    if (status) status.textContent = "Integração visual pronta · aguardando conexão segura com o Notion.";
+    return;
+  }
+
+  try {
+    if (status) status.textContent = "Sincronizando Notion...";
+    const pages = await bridge.listPages();
+    notionSourceState.pages = Array.isArray(pages) ? pages : [];
+    renderNotionPages();
+    if (status) status.textContent = notionSourceState.pages.length
+      ? notionSourceState.pages.length + " página" + (notionSourceState.pages.length === 1 ? "" : "s") + " sincronizada" + (notionSourceState.pages.length === 1 ? "" : "s")
+      : "Nenhuma página autorizada encontrada.";
+  } catch (error) {
+    console.error("Notion:", error);
+    if (status) status.textContent = "Não foi possível sincronizar o Notion.";
+  }
+}
+
+function wireNotionSourceEvents() {
+  document.getElementById("notebook-source-luria")?.addEventListener("click", () => setNotebookSource("luria"));
+  document.getElementById("notebook-source-notion")?.addEventListener("click", () => setNotebookSource("notion"));
+  document.getElementById("notebook-notion-refresh")?.addEventListener("click", refreshNotionSource);
+  document.getElementById("notebook-notion-search")?.addEventListener("input", () => renderNotionPages());
+  document.getElementById("notebook-notion-connect")?.addEventListener("click", async () => {
+    const bridge = notionBridge();
+    if (bridge?.connect) {
+      await bridge.connect();
+      await refreshNotionSource();
+      return;
+    }
+    window.LuriaDialog?.alert?.("A tela do Notion já foi adicionada. Para conectar contas reais, falta cadastrar as credenciais OAuth do Notion no backend da LURIA.");
+  });
+}
+
 /* =========================================================
    EVENTOS
    ========================================================= */
 
 function wireEvents() {
+  wireNotionSourceEvents();
+
 
   document
     .getElementById(
