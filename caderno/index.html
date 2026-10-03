@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=20261003-notion-source">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=20261003-notion-source-v2">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260928-anotacoes-size-v2">
@@ -135,7 +135,7 @@
                 <strong>Conecte seus cadernos do Notion</strong>
                 <span>Abra páginas e use o conteúdo na LURIA sem precisar exportar ou baixar arquivos.</span>
               </div>
-              <button id="notebook-notion-connect" class="button primary compact-button" type="button">Conectar Notion</button>
+              <div class="notebook-notion-connect-actions"><button id="notebook-notion-connect" class="button primary compact-button" type="button">Conectar Notion</button><button id="notebook-notion-disconnect" class="button secondary compact-button" type="button" hidden>Desconectar</button></div>
             </div>
 
             <div id="notebook-notion-status" class="notebook-notion-status" aria-live="polite"></div>
@@ -301,6 +301,25 @@
 
       </div>
     </main>
+  </div>
+
+  <div id="notebook-notion-reader" class="notebook-notion-reader-backdrop" hidden>
+    <section class="notebook-notion-reader" role="dialog" aria-modal="true" aria-labelledby="notebook-notion-reader-title">
+      <header class="notebook-notion-reader-head">
+        <div>
+          <small>NOTION · conectado à LURIA</small>
+          <h2 id="notebook-notion-reader-title">Página do Notion</h2>
+          <span id="notebook-notion-reader-updated"></span>
+        </div>
+        <div class="notebook-notion-reader-actions">
+          <a id="notebook-notion-open-original" class="button secondary compact-button" href="#" target="_blank" rel="noopener noreferrer">Abrir no Notion</a>
+          <button id="notebook-notion-reader-close" class="notebook-modal-close" type="button" aria-label="Fechar">×</button>
+        </div>
+      </header>
+      <div id="notebook-notion-reader-content" class="notebook-notion-reader-content">
+        <div class="notebook-notion-empty"><strong>Carregando página...</strong></div>
+      </div>
+    </section>
   </div>
 
   <div
