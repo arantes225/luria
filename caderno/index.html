@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="assets/css/image-lightbox.css?v=1">
-  <link rel="stylesheet" href="assets/css/caderno.css?v=20261003-notion-source-v2">
+  <link rel="stylesheet" href="assets/css/caderno.css?v=20261003-notion-editor">
   <link rel="canonical" href="/caderno/">
   <script>(function(){try{if(location.pathname.endsWith("/caderno.html"))history.replaceState(null,"","/caderno/"+location.search+location.hash);}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260928-anotacoes-size-v2">
@@ -312,6 +312,10 @@
           <span id="notebook-notion-reader-updated"></span>
         </div>
         <div class="notebook-notion-reader-actions">
+          <button id="notebook-notion-edit" class="button secondary compact-button" type="button">Editar</button>
+          <button id="notebook-notion-add-paragraph" class="button secondary compact-button" type="button" hidden>+ Parágrafo</button>
+          <button id="notebook-notion-save" class="button primary compact-button" type="button" hidden>Salvar</button>
+          <button id="notebook-notion-cancel-edit" class="button secondary compact-button" type="button" hidden>Cancelar</button>
           <a id="notebook-notion-open-original" class="button secondary compact-button" href="#" target="_blank" rel="noopener noreferrer">Abrir no Notion</a>
           <button id="notebook-notion-reader-close" class="notebook-modal-close" type="button" aria-label="Fechar">×</button>
         </div>
