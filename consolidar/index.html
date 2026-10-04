@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Consolidar · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <meta name="theme-color" content="#0A2342">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=66-fixed-top-controls">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="canonical" href="/consolidar/">
+  <style>
+    .study-hub{display:grid;gap:14px;padding-bottom:30px}
+    .study-spotlight{padding:19px 22px;border-radius:16px;background:linear-gradient(120deg,#184888,#2d6ab5);color:#fff;box-shadow:0 10px 28px rgba(24,72,136,.17)}
+    .study-spotlight h1{margin:0;font-size:24px;font-weight:500;letter-spacing:-.025em;color:#fff}
+    .study-spotlight p{margin:5px 0 0;font-size:13px;line-height:1.4;color:rgba(255,255,255,.84)}
+    .study-primary{display:grid;grid-template-columns:1.08fr 1fr 1fr 1fr;gap:12px}
+    .study-card{position:relative;min-height:184px;box-sizing:border-box;display:flex;flex-direction:column;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);text-decoration:none;overflow:hidden;transition:border-color .14s ease,transform .14s ease,box-shadow .14s ease}
+    .study-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 44%,var(--border));box-shadow:0 10px 26px rgba(15,35,66,.07)}
+    .study-card--featured{background:linear-gradient(145deg,color-mix(in srgb,var(--accent-soft) 70%,var(--surface)),var(--surface))}
+    .study-card-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:20px}
+    .study-card-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .study-card h2{margin:17px 0 6px;font-size:16px;font-weight:500;color:var(--text)}
+    .study-card p{margin:0;max-width:230px;color:var(--muted);font-size:12px;line-height:1.45}
+    .study-card-action{margin-top:auto;padding-top:16px;color:var(--accent);font-size:12px}
+    .study-lower{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(210px,.66fr) minmax(260px,.9fr);gap:12px}
+    .study-panel{min-height:150px;padding:17px 18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-sizing:border-box}
+    .study-panel h3{margin:0;font-size:14px;font-weight:500;color:var(--text)}
+    .study-panel small{display:block;margin-top:4px;color:var(--muted);font-size:10px}
+    .continue-row{display:flex;align-items:center;gap:12px;margin-top:18px;padding:13px;border-radius:12px;background:var(--surface-2);border:1px solid var(--border)}
+    .continue-icon{width:38px;height:38px;display:grid;place-items:center;flex:0 0 38px;border-radius:10px;background:var(--accent-soft);color:var(--accent)}
+    .continue-copy{min-width:0}.continue-copy strong{display:block;font-size:12px;font-weight:500;color:var(--text)}.continue-copy span{display:block;margin-top:3px;color:var(--muted);font-size:10px}
+    .study-progress{display:grid;place-items:center;margin-top:13px}
+    .study-ring{width:72px;height:72px;display:grid;place-items:center;border-radius:50%;background:conic-gradient(var(--accent) 0deg,var(--surface-2) 0deg);border:1px solid var(--border)}
+    .study-ring::after{content:"—";width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:var(--surface);color:var(--text);font-size:18px}
+    .recent-list{display:grid;gap:8px;margin-top:14px}.recent-empty{padding:18px 12px;border:1px dashed var(--border);border-radius:11px;color:var(--muted);font-size:11px;line-height:1.45;text-align:center}
+    @media(max-width:1180px){.study-primary{grid-template-columns:repeat(2,minmax(0,1fr))}.study-lower{grid-template-columns:1fr 1fr}.study-lower .study-panel:first-child{grid-column:1/-1}}
+    @media(max-width:760px){.study-primary,.study-lower{grid-template-columns:1fr}.study-lower .study-panel:first-child{grid-column:auto}.study-card{min-height:150px}.study-spotlight{padding:17px 18px}}
+  </style>
+</head>
+<body data-page="consolidar">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+
+        <section class="study-hub" aria-label="Central Consolidar">
+          <div class="study-spotlight">
+            <h1>Consolidar</h1>
+            <p>Revise, pratique e transforme o que você aprendeu em conhecimento que fica.</p>
+          </div>
+
+          <div class="study-primary">
+            <a class="study-card study-card--featured" href="/flashcards/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/></svg></span>
+              <h2>Flashcards</h2>
+              <p>Retome o conteúdo no momento certo e fortaleça sua memória.</p>
+              <span class="study-card-action">Revisar →</span>
+            </a>
+
+            <a class="study-card" href="/caderno-erros/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></span>
+              <h2>Caderno de erros</h2>
+              <p>Volte aos pontos que derrubaram seu desempenho e corrija padrões.</p>
+              <span class="study-card-action">Revisar erros →</span>
+            </a>
+
+            <a class="study-card" href="/questoes-simulados/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h8l5 5v14H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg></span>
+              <h2>Questões e Simulados</h2>
+              <p>Teste o que aprendeu, treine prova e acompanhe seu desempenho.</p>
+              <span class="study-card-action">Praticar →</span>
+            </a>
+
+            <a class="study-card" href="/plantao/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3v7a4 4 0 0 0 8 0V3M4 3h4m4 0h4m-6 11v2a4 4 0 0 0 8 0v-2"/><circle cx="18" cy="12" r="2"/></svg></span>
+              <h2>Prática clínica</h2>
+              <p>Aplique conhecimento em cenários e decisões clínicas realistas.</p>
+              <span class="study-card-action">Treinar →</span>
+            </a>
+          </div>
+
+          <div class="study-lower">
+            <section class="study-panel">
+              <h3>Continuar de onde parou</h3>
+              <small>Retome sua última atividade de consolidação.</small>
+              <div class="continue-row">
+                <span class="continue-icon" aria-hidden="true">↗</span>
+                <div class="continue-copy"><strong>Escolha uma forma de consolidar</strong><span>Sua última revisão, lista ou caso vai aparecer aqui automaticamente.</span></div>
+              </div>
+            </section>
+
+            <section class="study-panel">
+              <h3>Seu progresso</h3>
+              <small>Resumo da sua consolidação.</small>
+              <div class="study-progress"><div class="study-ring" aria-label="Progresso ainda não calculado"></div></div>
+            </section>
+
+            <section class="study-panel">
+              <h3>Atividades recentes</h3>
+              <small>O que você consolidou por último.</small>
+              <div class="recent-list"><div class="recent-empty">Quando você revisar ou praticar, suas atividades recentes aparecem aqui.</div></div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261004-aprender-consolidar"></script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
