@@ -6019,3 +6019,83 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background-clip:padding-box!important;
   }
 }
+
+
+/* DASHBOARD MASTER — TRUE THUMB-ONLY SCROLLBAR v19 — 2026-10-04 */
+/* Scrollbar do Dashboard: somente o thumb móvel.
+   Sem trilho, fundo, cantos ou botões/setas em nenhuma área rolável. */
+body[data-page="dashboard"],
+body[data-page="dashboard"] *,
+html:has(body[data-page="dashboard"]){
+  scrollbar-width:thin!important;
+  scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  scrollbar-gutter:auto!important;
+}
+
+html:has(body[data-page="dashboard"])::-webkit-scrollbar,
+body[data-page="dashboard"]::-webkit-scrollbar,
+body[data-page="dashboard"] *::-webkit-scrollbar{
+  width:8px!important;
+  height:8px!important;
+  background:transparent!important;
+}
+
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-track,
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-track-piece,
+body[data-page="dashboard"]::-webkit-scrollbar-track,
+body[data-page="dashboard"]::-webkit-scrollbar-track-piece,
+body[data-page="dashboard"] *::-webkit-scrollbar-track,
+body[data-page="dashboard"] *::-webkit-scrollbar-track-piece{
+  background:transparent!important;
+  background-color:transparent!important;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+}
+
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-button,
+body[data-page="dashboard"]::-webkit-scrollbar-button,
+body[data-page="dashboard"] *::-webkit-scrollbar-button,
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-button:single-button,
+body[data-page="dashboard"]::-webkit-scrollbar-button:single-button,
+body[data-page="dashboard"] *::-webkit-scrollbar-button:single-button,
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-button:double-button,
+body[data-page="dashboard"]::-webkit-scrollbar-button:double-button,
+body[data-page="dashboard"] *::-webkit-scrollbar-button:double-button{
+  display:none!important;
+  width:0!important;
+  height:0!important;
+  min-width:0!important;
+  min-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-corner,
+body[data-page="dashboard"]::-webkit-scrollbar-corner,
+body[data-page="dashboard"] *::-webkit-scrollbar-corner{
+  background:transparent!important;
+  border:0!important;
+}
+
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-thumb,
+body[data-page="dashboard"]::-webkit-scrollbar-thumb,
+body[data-page="dashboard"] *::-webkit-scrollbar-thumb{
+  background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+  background-color:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+  border:0!important;
+  border-radius:999px!important;
+  box-shadow:none!important;
+  min-height:34px!important;
+}
+
+html:has(body[data-page="dashboard"])::-webkit-scrollbar-thumb:hover,
+body[data-page="dashboard"]::-webkit-scrollbar-thumb:hover,
+body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
+  background:var(--accent)!important;
+  background-color:var(--accent)!important;
+}
