@@ -17052,20 +17052,8 @@ async function invokeNotionFunction(name, body = {}) {
   return data || {};
 }
 
-function setNotebookSource(source = "luria") {
-  const notion = source === "notion";
-  notionSourceState.active = notion;
-
-  const luriaTab = document.getElementById("notebook-source-luria");
-  const notionTab = document.getElementById("notebook-source-notion");
-  const notionPanel = document.getElementById("notebook-notion-panel");
-
-  luriaTab?.classList.toggle("active", !notion);
-  notionTab?.classList.toggle("active", notion);
-  luriaTab?.setAttribute("aria-selected", notion ? "false" : "true");
-  notionTab?.setAttribute("aria-selected", notion ? "true" : "false");
-
-  if (notionPanel) notionPanel.hidden = !notion;
+function setNotebookSource() {
+  notionSourceState.active = false;
 
   [
     ".notebook-library-search-controls",
@@ -17073,25 +17061,18 @@ function setNotebookSource(source = "luria") {
     "#notebook-library-list"
   ].forEach(selector => {
     const element = document.querySelector(selector);
-    if (element) element.hidden = notion;
+    if (element) element.hidden = false;
   });
 
-  if (notion) refreshNotionSource();
+  refreshNotionSource();
 }
 
 function updateNotionConnectionUi() {
   const connect = document.getElementById("notebook-notion-connect");
-  const disconnect = document.getElementById("notebook-notion-disconnect");
-  const status = document.getElementById("notebook-notion-status");
+  const firstConnect = document.getElementById("notebook-notion-first-connect");
 
   if (connect) connect.hidden = notionSourceState.connected;
-  if (disconnect) disconnect.hidden = !notionSourceState.connected;
-
-  if (status) {
-    status.textContent = notionSourceState.connected
-      ? "Conectado" + (notionSourceState.workspaceName ? " · " + notionSourceState.workspaceName : "")
-      : "Conecte sua conta do Notion para ver os cadernos autorizados aqui.";
-  }
+  if (firstConnect) firstConnect.hidden = notionSourceState.connected;
 }
 
 function renderNotionPages(pages = notionSourceState.pages) {
@@ -17341,7 +17322,7 @@ async function connectNotion() {
       }
     }
 
-    const redirectTo = window.location.origin + "/caderno/?view=library&source=notion";
+    const redirectTo = window.location.origin + "/caderno/?view=library&notion=connected";
     const result = await invokeNotionFunction("notion-auth", { redirect_to: redirectTo });
     if (!result?.url) throw new Error("notion_not_configured");
     window.location.assign(result.url);
@@ -17373,31 +17354,19 @@ async function disconnectNotion() {
 }
 
 function wireNotionSourceEvents() {
-  document.getElementById("notebook-source-luria")?.addEventListener("click", () => setNotebookSource("luria"));
-  document.getElementById("notebook-source-notion")?.addEventListener("click", () => setNotebookSource("notion"));
-  document.getElementById("notebook-notion-refresh")?.addEventListener("click", refreshNotionSource);
-  document.getElementById("notebook-notion-search")?.addEventListener("input", () => renderNotionPages());
   document.getElementById("notebook-notion-connect")?.addEventListener("click", connectNotion);
-  document.getElementById("notebook-notion-disconnect")?.addEventListener("click", disconnectNotion);
-  document.getElementById("notebook-notion-reader-close")?.addEventListener("click", closeNotionReader);
-  document.getElementById("notebook-notion-edit")?.addEventListener("click", beginNotionEdit);
-  document.getElementById("notebook-notion-save")?.addEventListener("click", saveNotionEdit);
-  document.getElementById("notebook-notion-cancel-edit")?.addEventListener("click", cancelNotionEdit);
-  document.getElementById("notebook-notion-add-paragraph")?.addEventListener("click", addNotionParagraph);
-  document.getElementById("notebook-notion-reader")?.addEventListener("click", event => {
-    if (event.target?.id === "notebook-notion-reader") closeNotionReader();
-  });
 
   const params = new URLSearchParams(window.location.search);
   if (params.get("notion") === "connected") {
     queueMicrotask(async () => {
       await refreshNotionSource();
-      setNotebookSource("luria");
       await switchView("library", true);
       renderLibrary();
+
+      const url = new URL(window.location.href);
+      url.searchParams.delete("notion");
+      window.history.replaceState({}, "", url);
     });
-  } else if (params.get("source") === "notion") {
-    queueMicrotask(() => setNotebookSource("notion"));
   }
 }
 
