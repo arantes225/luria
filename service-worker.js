@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v226-hostinger-shell";
+const CACHE_VERSION = "luria-pwa-v227-hostinger-dashboard-fix";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
