@@ -7541,3 +7541,29 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     min-height:20px!important;
   }
 }
+
+
+/* DASHBOARD 1 — PROGRESS CARD VIEWPORT FIT v39 — 2026-10-04 */
+@media (min-width:981px){
+  /* Ajuste isolado do Progresso por área: cabe inteiro na faixa inferior
+     sem ultrapassar o viewport e sem alterar os demais cards. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    height:174px!important;
+    min-height:174px!important;
+    max-height:174px!important;
+    align-self:stretch!important;
+    padding:12px 16px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin:0 0 7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    margin:4px 0!important;
+    min-height:18px!important;
+    line-height:1.1!important;
+  }
+}
