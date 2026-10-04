@@ -6242,3 +6242,79 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     top:-61px!important;
   }
 }
+
+
+/* DASHBOARD MASTER — TIMER LABELS + WHITE STACKED NUMBERS v23 — 2026-10-04 */
+@media (min-width:981px){
+  /* O painel do Timer/Pomodoro fica dentro da topbar; portanto precisa
+     desfazer a regra de texto branco aplicada aos controles do topo. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-panel{
+    color:var(--text)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-panel :is(
+    header strong,
+    .luria-pomodoro-time,
+    .luria-timer-switch button,
+    .luria-pomodoro-modes button,
+    .luria-pomodoro-actions button
+  ){
+    color:var(--text)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-panel :is(
+    header small,
+    .luria-stopwatch-note,
+    .luria-pomodoro-fields label,
+    .luria-pomodoro-fields label > span,
+    .luria-pomodoro-fields label > span:last-child
+  ){
+    color:var(--muted)!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+
+  /* Deixa os nomes Tempo, Foco e Pausa claramente legíveis. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-fields label > span:first-child{
+    display:inline-block!important;
+    color:var(--text)!important;
+    font-size:11px!important;
+    font-weight:750!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-fields input{
+    color:var(--text)!important;
+    background:var(--surface-2)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-timer-switch button[aria-pressed="true"],
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-modes button[aria-pressed="true"]{
+    color:#fff!important;
+  }
+
+  /* No callout compacto do timer, minutos E segundos ficam brancos. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-minutes,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-toggle .luria-timer-ms > #luria-timer-seconds{
+    color:#fff!important;
+  }
+}
