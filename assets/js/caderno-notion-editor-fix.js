@@ -1,165 +1,237 @@
 (() => {
-  const state = {
-    originals: new Map()
+  const originalOpenFreeNote = openFreeNote;
+  const originalOpenNotionPage = openNotionPage;
+  const originalSaveCurrentNotebookContent = saveCurrentNotebookContent;
+
+  const notionEditorState = {
+    page: null,
+    originalBlocks: new Map()
   };
 
-  const get = id => document.getElementById(id);
-
-  function blocks() {
-    return [...(get("notebook-notion-reader-content")?.querySelectorAll('[data-notion-editable="1"]') || [])];
+  async function invoke(body) {
+    const { data, error } = await notebookSb.functions.invoke("notion-api", { body });
+    if (error) throw error;
+    if (data?.error) throw new Error(data.message || data.error);
+    return data;
   }
 
-  function startEdit(event) {
-    event?.preventDefault?.();
-    event?.stopImmediatePropagation?.();
+  function normalizeBlockText(el, type) {
+    let text = String(el?.innerText || "").trimEnd();
+    if (type === "to_do") text = text.replace(/^\s*[☐☑]\s*/, "");
+    return text;
+  }
 
-    const content = get("notebook-notion-reader-content");
-    const reader = document.querySelector(".notebook-notion-reader");
-    if (!content || !reader) return;
-
-    state.originals.clear();
-
-    for (const block of blocks()) {
-      const id = block.dataset.notionBlockId;
-      const type = block.dataset.notionBlockType;
-      if (!id || !type) continue;
-
-      state.originals.set(id, {
-        html: block.innerHTML,
-        text: block.innerText || "",
-        checked: block.dataset.notionChecked || "0"
+  function captureOriginalBlocks(editor) {
+    notionEditorState.originalBlocks = new Map();
+    editor.querySelectorAll("[data-notion-block-id]").forEach(el => {
+      const id = el.dataset.notionBlockId;
+      const type = el.dataset.notionBlockType || "paragraph";
+      if (!id) return;
+      notionEditorState.originalBlocks.set(id, {
+        type,
+        text: normalizeBlockText(el, type),
+        checked: el.dataset.notionChecked === "1"
       });
-
-      let value = block.innerText || "";
-      if (type === "to_do") value = value.replace(/^\s*[☐☑]\s*/, "");
-
-      const textarea = document.createElement("textarea");
-      textarea.className = "notebook-notion-block-editor";
-      textarea.value = value;
-      textarea.rows = Math.max(2, Math.min(14, value.split("\n").length + 1));
-      textarea.dataset.blockId = id;
-
-      if (type === "to_do") {
-        const row = document.createElement("div");
-        row.className = "notebook-notion-todo-editor";
-
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.checked = block.dataset.notionChecked === "1";
-        checkbox.dataset.todoBlockId = id;
-
-        row.append(checkbox, textarea);
-        block.replaceChildren(row);
-      } else {
-        block.replaceChildren(textarea);
-      }
-
-      block.classList.add("is-notion-editing-block");
-    }
-
-    reader.classList.add("is-editing");
-    get("notebook-notion-edit")?.setAttribute("hidden", "");
-    get("notebook-notion-save")?.removeAttribute("hidden");
-    get("notebook-notion-cancel-edit")?.removeAttribute("hidden");
-    get("notebook-notion-add-paragraph")?.removeAttribute("hidden");
-
-    content.querySelector(".notebook-notion-block-editor")?.focus();
+    });
   }
 
-  function cancelEdit(event) {
-    event?.preventDefault?.();
-    event?.stopImmediatePropagation?.();
+  async function loadNotionIntoMainEditor(note) {
+    const editor = document.getElementById("notebook-editor");
+    if (!editor || !note?.notion_page_id) return;
 
-    for (const block of blocks()) {
-      const id = block.dataset.notionBlockId;
-      const original = state.originals.get(id);
-      if (!original) continue;
-      block.innerHTML = original.html;
-      block.dataset.notionChecked = original.checked;
-      block.classList.remove("is-notion-editing-block");
-    }
+    setSaveStatus("Carregando do Notion...", "saving");
 
-    document.querySelector(".notebook-notion-reader")?.classList.remove("is-editing");
-    get("notebook-notion-edit")?.removeAttribute("hidden");
-    get("notebook-notion-save")?.setAttribute("hidden", "");
-    get("notebook-notion-cancel-edit")?.setAttribute("hidden", "");
-    get("notebook-notion-add-paragraph")?.setAttribute("hidden", "");
+    const result = await invoke({ action: "page", page_id: note.notion_page_id });
+    const page = result?.page;
+    if (!page) throw new Error("Página do Notion não encontrada.");
+
+    notionEditorState.page = page;
+    note.notion_url = page.url || note.notion_url;
+    note.notion_last_edited_time = page.last_edited_time || note.notion_last_edited_time;
+    note.content_html = page.html || "<p><br></p>";
+
+    const title = document.getElementById("notebook-document-title");
+    const area = document.getElementById("notebook-document-area");
+    if (title) title.textContent = note.topic_title || page.title || "Página do Notion";
+    if (area) area.textContent = note.area || "Notion";
+
+    editor.innerHTML = page.html || "<p><br></p>";
+    captureOriginalBlocks(editor);
+
+    notebookState.editorDirty = false;
+    setNotebookEditMode(true);
+    renderTopicList();
+    refreshNotebookInspector();
+    setSaveStatus("Sincronizado com Notion", "saved");
   }
 
-  async function saveEdit(event) {
-    event?.preventDefault?.();
-    event?.stopImmediatePropagation?.();
+  async function openNotionNormalNote(noteId) {
+    const note = noteById(noteId);
+    if (!note) return;
 
-    const changed = [];
-
-    for (const block of blocks()) {
-      const id = block.dataset.notionBlockId;
-      const type = block.dataset.notionBlockType;
-      const textarea = block.querySelector(".notebook-notion-block-editor");
-      if (!id || !type || !textarea) continue;
-
-      const original = state.originals.get(id);
-      const text = textarea.value;
-      const oldText = String(original?.text || "").replace(/^\s*[☐☑]\s*/, "");
-      const checkbox = block.querySelector('input[type="checkbox"]');
-      const checked = type === "to_do" ? Boolean(checkbox?.checked) : undefined;
-      const oldChecked = original?.checked === "1";
-
-      if (oldText !== text || (type === "to_do" && oldChecked !== checked)) {
-        changed.push({ block_id: id, type, text, checked });
-      }
+    if (notebookState.editorDirty) {
+      await saveCurrentNotebook(true);
     }
 
-    const save = get("notebook-notion-save");
-    if (save) {
-      save.disabled = true;
-      save.textContent = changed.length ? "Salvando..." : "Nada para salvar";
+    notebookState.selectedType = "free";
+    notebookState.selectedTopicId = null;
+    notebookState.selectedNoteId = noteId;
+
+    await switchView("editor", true);
+    renderDocument();
+
+    await loadNotionIntoMainEditor(note);
+
+    const url = new URL(window.location.href);
+    url.searchParams.set("view", "editor");
+    url.searchParams.set("note_id", noteId);
+    url.searchParams.set("source", "notion");
+    url.searchParams.delete("topic_id");
+    window.history.replaceState({}, "", url);
+  }
+
+  openFreeNote = async function(noteId) {
+    const note = noteById(noteId);
+    if (note?.storage_source === "notion" && note?.notion_page_id) {
+      return openNotionNormalNote(noteId);
     }
+    return originalOpenFreeNote(noteId);
+  };
+
+  openNotionPage = async function(page) {
+    if (!page?.id) return originalOpenNotionPage(page);
 
     try {
-      for (const item of changed) {
-        await window.supabaseClient.functions.invoke("notion-api", {
-          body: { action: "update_block", ...item }
-        }).then(({ data, error }) => {
-          if (error) throw error;
-          if (data?.error) throw new Error(data.message || data.error);
-          return data;
+      let { data: note, error } = await notebookSb
+        .from("study_notes")
+        .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
+        .eq("user_id", notebookState.user.id)
+        .eq("notion_page_id", page.id)
+        .maybeSingle();
+
+      if (error) throw error;
+
+      if (!note) {
+        const inserted = await notebookSb
+          .from("study_notes")
+          .insert({
+            user_id: notebookState.user.id,
+            topic_id: null,
+            topic_title: page.title || "Página do Notion",
+            area: "Notion",
+            materia: null,
+            content_html: "",
+            storage_source: "notion",
+            notion_page_id: page.id,
+            notion_url: page.url || null
+          })
+          .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
+          .single();
+
+        if (inserted.error) throw inserted.error;
+        note = inserted.data;
+      }
+
+      notebookState.notesById.set(note.id, note);
+      closeNotionReader?.();
+      return openNotionNormalNote(note.id);
+    } catch (error) {
+      console.error("Notion normal editor:", error);
+      return originalOpenNotionPage(page);
+    }
+  };
+
+  function inferType(el) {
+    const tag = el.tagName?.toLowerCase();
+    if (tag === "h1") return "heading_1";
+    if (tag === "h2") return "heading_2";
+    if (tag === "h3") return "heading_3";
+    if (tag === "blockquote") return "quote";
+    if (tag === "li") {
+      return el.parentElement?.tagName?.toLowerCase() === "ol"
+        ? "numbered_list_item"
+        : "bulleted_list_item";
+    }
+    return "paragraph";
+  }
+
+  function collectNewBlocks(editor) {
+    const candidates = [...editor.querySelectorAll("p,h1,h2,h3,li,blockquote,div")];
+    const out = [];
+    const seen = new Set();
+
+    for (const el of candidates) {
+      if (el.closest("[data-notion-block-id]")) continue;
+      if (el.querySelector("[data-notion-block-id]")) continue;
+
+      const text = String(el.innerText || "").trim();
+      if (!text) continue;
+
+      const key = text + "|" + inferType(el);
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      out.push({ type: inferType(el), text });
+    }
+
+    return out;
+  }
+
+  saveCurrentNotebookContent = async function(silent = false) {
+    const current = getCurrentDocument();
+
+    if (current?.note?.storage_source !== "notion" || !current.note.notion_page_id) {
+      return originalSaveCurrentNotebookContent(silent);
+    }
+
+    const editor = document.getElementById("notebook-editor");
+    if (!editor) return;
+
+    if (!silent) setSaveStatus("Salvando no Notion...", "saving");
+
+    try {
+      const liveIds = new Set();
+
+      for (const el of editor.querySelectorAll("[data-notion-block-id]")) {
+        const id = el.dataset.notionBlockId;
+        const type = el.dataset.notionBlockType || "paragraph";
+        if (!id) continue;
+
+        liveIds.add(id);
+        const original = notionEditorState.originalBlocks.get(id);
+        const text = normalizeBlockText(el, type);
+        const checked = type === "to_do"
+          ? (el.dataset.notionChecked === "1" || /^\s*☑/.test(el.innerText || ""))
+          : undefined;
+
+        if (!original || original.text !== text || (type === "to_do" && original.checked !== checked)) {
+          await invoke({ action: "update_block", block_id: id, type, text, checked });
+        }
+      }
+
+      for (const [id] of notionEditorState.originalBlocks) {
+        if (!liveIds.has(id)) {
+          await invoke({ action: "delete_block", block_id: id });
+        }
+      }
+
+      for (const block of collectNewBlocks(editor)) {
+        await invoke({
+          action: "append_block",
+          page_id: current.note.notion_page_id,
+          type: block.type,
+          text: block.text
         });
       }
 
-      const current = window.notionSourceState?.currentPage;
-      if (current && typeof window.openNotionPage === "function") {
-        await window.openNotionPage(current);
-      } else {
-        cancelEdit();
-      }
-
-      const updated = get("notebook-notion-reader-updated");
-      if (updated && changed.length) updated.textContent = "Alterações salvas no Notion";
+      await loadNotionIntoMainEditor(current.note);
+      notebookState.editorDirty = false;
+      renderLibrary();
+      setSaveStatus("Salvo no Notion", "saved");
     } catch (error) {
-      console.error("Notion edit save:", error);
-      window.LuriaDialog?.alert?.(
-        String(error?.message || "").includes("permission")
-          ? "A conexão do Notion está sem permissão para editar conteúdo. Ative a permissão de atualização e reconecte a conta."
-          : (error?.message || "Não foi possível salvar no Notion.")
-      );
-    } finally {
-      if (save) {
-        save.disabled = false;
-        save.textContent = "Salvar";
-      }
+      console.error("Save Notion main editor:", error);
+      setSaveStatus("Erro ao salvar no Notion", "error");
+      window.LuriaDialog?.alert?.(error?.message || "Não foi possível salvar no Notion.");
     }
-  }
-
-  function attach() {
-    get("notebook-notion-edit")?.addEventListener("click", startEdit, true);
-    get("notebook-notion-save")?.addEventListener("click", saveEdit, true);
-    get("notebook-notion-cancel-edit")?.addEventListener("click", cancelEdit, true);
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", attach, { once: true });
-  } else {
-    attach();
-  }
+  };
 })();
