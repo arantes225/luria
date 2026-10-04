@@ -4871,3 +4871,16 @@ body *::-webkit-scrollbar-thumb{
   .luria-site-list>a,
   .luria-site-list>label{min-height:40px!important;padding:9px 10px!important}
 }
+
+
+/* LURIA v2026.10.04 — tipografia global mais leve em botões e callouts.
+   Exceções visuais: Flashcards, Questões e Simulados e Caderno de Erros mantêm
+   seus pesos próprios onde o destaque faz parte do design. */
+body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="erros"]) button,
+body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="erros"]) .button,
+body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="erros"]) [role="button"]{
+  font-weight:400!important;
+}
+body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="erros"]) :is(.metric-card,.panel,.feature-card,.callout,[class*="callout"]) :is(h1,h2,h3,h4,h5,h6,strong,b,.metric-label,.metric-value){
+  font-weight:400!important;
+}
