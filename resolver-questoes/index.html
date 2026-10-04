@@ -51,7 +51,21 @@
     .qr-card-tools{display:flex;align-items:center;gap:2px}
     .qr-tool{width:27px;height:27px;border:0;border-radius:7px;background:transparent;color:var(--muted);display:grid;place-items:center;cursor:pointer}
     .qr-tool:hover{background:var(--surface-2);color:var(--text)}
+    .qr-tool.active,.qr-tool[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
     .qr-tool svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+    .qr-tool-wrap{position:relative;display:flex;align-items:center}
+    .qr-popover{position:absolute;right:0;top:33px;z-index:40;padding:7px;border:1px solid var(--border);border-radius:9px;background:var(--surface);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+    .qr-popover[hidden]{display:none}
+    .qr-highlight-palette{display:flex;gap:6px}
+    .qr-color{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.12);cursor:pointer}
+    .qr-color[data-color="#fff1a8"]{background:#fff1a8}.qr-color[data-color="#ffd6df"]{background:#ffd6df}.qr-color[data-color="#cfe8ff"]{background:#cfe8ff}.qr-color[data-color="#d8f5d2"]{background:#d8f5d2}
+    .qr-font-menu{display:flex;align-items:center;gap:5px;white-space:nowrap}
+    .qr-font-control{height:28px;min-width:30px;padding:0 8px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;font-size:10px;cursor:pointer}
+    .qr-font-control:hover{background:var(--surface-2)}
+    .qr-font-reset{font-size:8px;color:var(--muted)}
+    .qr-stem{font-size:var(--qr-text-size,11px)}
+    .qr-option>span:last-child{font-size:var(--qr-text-size,11px)}
+    mark[data-qr-highlight]{border-radius:2px;padding:0 .04em}
     .qr-question-meta{margin:0;padding:12px 14px 0;gap:5px}
     .qr-pill{font-size:7.5px;padding:3px 7px;border-radius:999px;font-weight:650}
     .qr-stem{padding:11px 14px 3px;font-size:11px;line-height:1.58}
@@ -109,12 +123,29 @@
         <div class="qr-card-head">
           <span id="qr-card-question" class="qr-card-question">Questão 1</span>
           <div class="qr-card-tools" aria-label="Ferramentas da questão">
-            <button class="qr-tool" type="button" aria-label="Anotar"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>
-            <button class="qr-tool" type="button" aria-label="Gostei"><svg viewBox="0 0 24 24"><path d="M7 10v10H4V10h3Z"/><path d="M7 18c3 1 5 2 8 2h2a2 2 0 0 0 2-1.6l1-6A2 2 0 0 0 18 10h-5l1-4a2 2 0 0 0-2-2l-5 6"/></svg></button>
-            <button class="qr-tool" type="button" aria-label="Não gostei"><svg viewBox="0 0 24 24"><path d="M7 14V4H4v10h3Z"/><path d="M7 6c3-1 5-2 8-2h2a2 2 0 0 1 2 1.6l1 6A2 2 0 0 1 18 14h-5l1 4a2 2 0 0 1-2 2l-5-6"/></svg></button>
-            <button class="qr-tool" type="button" aria-label="Salvar"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4V4Z"/></svg></button>
-            <button class="qr-tool" type="button" aria-label="Sinalizar"><svg viewBox="0 0 24 24"><path d="M6 21V4"/><path d="M6 5h10l-2 4 2 4H6"/></svg></button>
-            <button class="qr-tool" type="button" aria-label="Mais opções"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button>
+            <div class="qr-tool-wrap">
+              <button id="qr-highlight-tool" class="qr-tool" type="button" aria-label="Grifar texto" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z"/></svg></button>
+              <div id="qr-highlight-popover" class="qr-popover" hidden>
+                <div class="qr-highlight-palette" aria-label="Cor do marca-texto">
+                  <button class="qr-color" type="button" data-color="#fff1a8" aria-label="Amarelo"></button>
+                  <button class="qr-color" type="button" data-color="#ffd6df" aria-label="Rosa"></button>
+                  <button class="qr-color" type="button" data-color="#cfe8ff" aria-label="Azul"></button>
+                  <button class="qr-color" type="button" data-color="#d8f5d2" aria-label="Verde"></button>
+                </div>
+              </div>
+            </div>
+            <button id="qr-favorite" class="qr-tool" type="button" aria-label="Favoritar questão" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4V4Z"/></svg></button>
+            <button id="qr-report-top" class="qr-tool" type="button" aria-label="Reportar problema"><svg viewBox="0 0 24 24"><path d="M6 21V4"/><path d="M6 5h10l-2 4 2 4H6"/></svg></button>
+            <div class="qr-tool-wrap">
+              <button id="qr-font-tool" class="qr-tool" type="button" aria-label="Tamanho da fonte" aria-expanded="false"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg></button>
+              <div id="qr-font-popover" class="qr-popover" hidden>
+                <div class="qr-font-menu">
+                  <button id="qr-font-down" class="qr-font-control" type="button" aria-label="Diminuir fonte">A−</button>
+                  <button id="qr-font-reset" class="qr-font-control qr-font-reset" type="button">Padrão</button>
+                  <button id="qr-font-up" class="qr-font-control" type="button" aria-label="Aumentar fonte">A+</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="qr-question-meta">
@@ -126,8 +157,7 @@
         <div id="qr-text" class="qr-stem"></div><img id="qr-image" class="qr-image" alt="Imagem da questão" hidden>
         <div id="qr-options" class="qr-options"></div>
         <div id="qr-feedback" class="qr-feedback" hidden></div>
-        <div class="qr-actions">
-          <div class="qr-action-group"><button id="qr-mark" class="qr-btn">☆ Favoritar</button><button id="qr-report" class="qr-btn">⚑ Reportar</button></div>
+        <div class="qr-actions" style="justify-content:flex-end">
           <div class="qr-action-group"><button id="qr-skip" class="qr-btn">▷ Pular questão</button><button id="qr-confirm" class="qr-btn primary">Ver próxima →</button></div>
         </div>
         <div id="qr-status" class="qr-status"></div>
@@ -154,7 +184,7 @@
  const sb=window.supabaseClient, p=new URLSearchParams(location.search), requested=p.get("set_id"), isDaily=p.get("daily")==="1";
  const DAILY_LIMIT=50, DAILY_PER_LOT=25;
  const DAILY_LOT_TITLES=["Lote 1 — questões aprovadas","Lote 2 — questões aprovadas"];
- const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),started:Date.now(),highlight:false};
+ const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),started:Date.now(),highlight:false,highlightColor:"#fff1a8",fontSize:11};
  const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
  function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
  function firstUnanswered(){const i=state.items.findIndex(x=>!state.attempts.has(x.id));return i<0?0:i}
@@ -168,7 +198,8 @@
   const os=opts(item);$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span>'+esc(o.t)+'</span></button>'}).join("");
   document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{state.selected.set(item.id,b.dataset.opt);render()});
   const fb=$("qr-feedback"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";fb.hidden=false;fb.innerHTML='<div class="qr-result '+(ok?"correct":"wrong")+'">'+(correct?(ok?"Resposta correta":"Resposta incorreta · gabarito: "+esc(correct)):"Resposta registrada")+'</div><div class="qr-justification"><strong>Justificativa</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div><div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div>'}else{fb.hidden=true;fb.innerHTML=""}
-  $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Próxima questão →":"Ver resposta →";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;$("qr-mark").textContent=(state.marked.has(item.id)?"★":"☆")+" Favoritar";
+  $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Próxima questão →":"Ver resposta →";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
+  $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
   const total=state.items.length;$("qr-progress-text").textContent="Questão "+(state.index+1)+" de "+total;$("qr-card-question").textContent="Questão "+(state.index+1);
   const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):78;$("qr-hits").textContent=hits||39;$("qr-errors").textContent=errs||11;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
  }
@@ -233,7 +264,38 @@
    state.index=firstUnanswered();
    $("qr-loading").hidden=true;$("qr-layout").hidden=false;render()
  }
- $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id)){state.index=Math.min(state.items.length-1,state.index+1);render();return}await confirm()};$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-skip").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-report").onclick=()=>status("Questão sinalizada para revisão.","success");$("qr-mark").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);render()};setInterval(tick,1000);init();
+ function closeToolPopovers(except=null){
+   [["qr-highlight-popover","qr-highlight-tool"],["qr-font-popover","qr-font-tool"]].forEach(([pop,btn])=>{
+     if(pop===except)return;
+     $(pop).hidden=true;$(btn).setAttribute("aria-expanded","false");
+   });
+ }
+ function togglePopover(popId,btnId){
+   const pop=$(popId),willOpen=pop.hidden;closeToolPopovers(willOpen?popId:null);pop.hidden=!willOpen;$(btnId).setAttribute("aria-expanded",willOpen?"true":"false");
+ }
+ function applyHighlight(){
+   if(!state.highlight)return;
+   const sel=window.getSelection(); if(!sel||sel.rangeCount===0||sel.isCollapsed)return;
+   const range=sel.getRangeAt(0),root=$("qr-text");
+   if(!root.contains(range.commonAncestorContainer))return;
+   const mark=document.createElement("mark");mark.dataset.qrHighlight="1";mark.style.background=state.highlightColor;
+   try{mark.appendChild(range.extractContents());range.insertNode(mark);sel.removeAllRanges()}catch(e){}
+ }
+ function setQuestionFont(px){
+   state.fontSize=Math.max(9,Math.min(16,px));document.documentElement.style.setProperty("--qr-text-size",state.fontSize+"px");
+ }
+ $("qr-highlight-tool").onclick=e=>{e.stopPropagation();togglePopover("qr-highlight-popover","qr-highlight-tool")};
+ document.querySelectorAll(".qr-color").forEach(btn=>btn.onclick=e=>{e.stopPropagation();state.highlightColor=btn.dataset.color;state.highlight=true;$("qr-highlight-tool").classList.add("active");$("qr-highlight-popover").hidden=true;$("qr-highlight-tool").setAttribute("aria-expanded","false");status("Marca-texto ativado. Selecione um trecho do enunciado para grifar.","success")});
+ $("qr-text").addEventListener("mouseup",()=>setTimeout(applyHighlight,0));
+ $("qr-text").addEventListener("touchend",()=>setTimeout(applyHighlight,80));
+ $("qr-favorite").onclick=()=>{const id=state.items[state.index]?.id;if(state.marked.has(id))state.marked.delete(id);else state.marked.add(id);$("qr-favorite").setAttribute("aria-pressed",state.marked.has(id)?"true":"false");status(state.marked.has(id)?"Questão favoritada.":"Questão removida dos favoritos.","success")};
+ $("qr-report-top").onclick=()=>{const reason=window.prompt("Descreva o problema encontrado nesta questão:");if(reason&&reason.trim())status("Problema reportado para revisão.","success")};
+ $("qr-font-tool").onclick=e=>{e.stopPropagation();togglePopover("qr-font-popover","qr-font-tool")};
+ $("qr-font-down").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize-1)};
+ $("qr-font-up").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize+1)};
+ $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
+ document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
+ $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id)){state.index=Math.min(state.items.length-1,state.index+1);render();return}await confirm()};$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-skip").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};setQuestionFont(state.fontSize);setInterval(tick,1000);init();
 })();
 </script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
