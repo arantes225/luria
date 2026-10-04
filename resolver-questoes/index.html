@@ -28,8 +28,8 @@
     .qr-side{display:grid;gap:8px}.qr-side-card{border-radius:10px;padding:11px}.qr-side-title{display:flex;align-items:center;gap:6px;font-size:9px;font-weight:900;color:var(--text);margin-bottom:8px}.qr-side-title svg{width:13px;height:13px;color:var(--accent)}
     .qr-performance{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:8px}.qr-ring{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--success) 0 78%,var(--surface-2) 78% 100%);position:relative}.qr-ring:after{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--surface)}.qr-ring-label{position:relative;z-index:1;text-align:center}.qr-ring-label strong{display:block;font-size:13px}.qr-ring-label small{display:block;font-size:7px;color:var(--muted)}
     .qr-perf-list{display:grid;gap:5px}.qr-perf-row{display:flex;justify-content:space-between;gap:6px;font-size:8px}.qr-perf-row span{color:var(--muted)}.qr-perf-row b{font-size:8px}
-    .qr-answer-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:10px}
-    .qr-answer-cell{aspect-ratio:1/1;min-width:0;border:1px solid var(--border);border-radius:6px;background:var(--surface-2);display:grid;place-items:center;font-size:8px;font-weight:800;color:var(--muted);cursor:pointer}
+    .qr-answer-grid{display:grid;grid-template-columns:repeat(5,28px);justify-content:start;gap:6px;margin-top:10px}
+    .qr-answer-cell{width:28px;height:28px;min-width:28px;border:1px solid var(--border);border-radius:6px;background:var(--surface-2);display:grid;place-items:center;font-size:7.5px;font-weight:800;color:var(--muted);cursor:pointer}
     .qr-answer-cell.current{outline:2px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:1px}
     .qr-answer-cell.correct{background:color-mix(in srgb,var(--success) 16%,var(--surface));border-color:color-mix(in srgb,var(--success) 55%,var(--border));color:var(--success)}
     .qr-answer-cell.wrong{background:color-mix(in srgb,var(--danger) 14%,var(--surface));border-color:color-mix(in srgb,var(--danger) 55%,var(--border));color:var(--danger)}
@@ -164,13 +164,13 @@
         </div>
       </div>
       <aside class="qr-side">
+        <article class="qr-side-card"><div class="qr-side-title">◷ Tempo estimado</div><div class="qr-time-grid"><div class="qr-time-item"><small>Seu tempo</small><strong id="qr-clock">1 min 30 s</strong></div><div class="qr-time-item good"><small>Seu tempo médio</small><strong>1 min 12 s</strong></div></div></article>
         <article class="qr-side-card">
           <div class="qr-side-title">◉ Meu desempenho neste simulado</div>
           <div class="qr-performance"><div class="qr-ring" id="qr-ring"><div class="qr-ring-label"><strong id="qr-accuracy">0%</strong><small>de acerto</small></div></div>
           <div class="qr-perf-list"><div class="qr-perf-row"><span>Acertos</span><b id="qr-hits">0</b></div><div class="qr-perf-row"><span>Erros</span><b id="qr-errors">0</b></div><div class="qr-perf-row"><span>Em branco</span><b id="qr-blank">0</b></div><div class="qr-perf-row"><span>Total</span><b id="qr-total">0</b></div></div></div>
           <div id="qr-answer-grid" class="qr-answer-grid" aria-label="Gabarito do simulado"></div>
         </article>
-        <article class="qr-side-card"><div class="qr-side-title">◷ Tempo estimado</div><div class="qr-time-grid"><div class="qr-time-item"><small>Seu tempo</small><strong id="qr-clock">1 min 30 s</strong></div><div class="qr-time-item good"><small>Seu tempo médio</small><strong>1 min 12 s</strong></div></div></article>
         <article class="qr-side-card"><div class="qr-side-title">◇ Tags da questão</div><div class="qr-tags" id="qr-tags"><span class="qr-tag">Infarto Agudo do Miocárdio</span><span class="qr-tag">IAM com Supra de ST</span><span class="qr-tag">Conduta inicial</span><span class="qr-tag">Reperfusão</span></div></article>
         <article class="qr-side-card"><div class="qr-side-title">▥ Seu histórico neste tema</div><div class="qr-history"><span class="qr-bar" style="height:18px"></span><span class="qr-bar" style="height:32px"></span><span class="qr-bar" style="height:25px"></span><span class="qr-bar" style="height:21px"></span><span class="qr-bar" style="height:40px"></span></div></article>
         <article class="qr-side-card"><div class="qr-side-title">▤ Últimas questões respondidas</div><div class="qr-recent"><div class="qr-recent-row"><span class="qr-dot"></span><span>Insuficiência cardíaca com fração de ejeção reduzida</span><b>2 min</b></div><div class="qr-recent-row"><span class="qr-dot bad"></span><span>Arritmias supraventriculares</span><b>1 min</b></div><div class="qr-recent-row"><span class="qr-dot"></span><span>Endocardite infecciosa</span><b>1 min</b></div><div class="qr-recent-row"><span class="qr-dot"></span><span>Valvopatias — estenose aórtica</span><b>2 min</b></div></div></article>
