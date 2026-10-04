@@ -889,3 +889,232 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   background-position:calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
   opacity:var(--luria-pattern-opacity)!important;
 }
+
+
+/* LURIA HOSTINGER-LIKE SHELL v1 — 2026-10-04 */
+:root{
+  --luria-shell-blue:#0f67ee;
+  --luria-shell-blue-2:#1379f5;
+  --luria-shell-radius:24px;
+  --luria-shell-edge:6px;
+  --luria-shell-top:70px;
+}
+
+/* Desktop/web: a aplicação inteira vira um shell, com cabeçalho azul cheio
+   e apenas um filete azul nas laterais e na base. */
+@media (min-width:981px){
+  html,body{background:var(--bg)!important}
+
+  body .app-shell{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:270px minmax(0,1fr)!important;
+    gap:0!important;
+    width:auto!important;
+    min-height:calc(100vh - 20px)!important;
+    margin:10px!important;
+    padding:var(--luria-shell-top) var(--luria-shell-edge) var(--luria-shell-edge)!important;
+    overflow:visible!important;
+    border-radius:var(--luria-shell-radius)!important;
+    background:linear-gradient(90deg,var(--luria-shell-blue),var(--luria-shell-blue-2))!important;
+    box-shadow:0 12px 34px rgba(15,103,238,.18)!important;
+  }
+
+  /* faixa superior azul contínua */
+  body .app-shell::before{
+    content:""!important;
+    position:absolute!important;
+    inset:0 0 auto 0!important;
+    height:calc(var(--luria-shell-top) + 8px)!important;
+    border-radius:var(--luria-shell-radius) var(--luria-shell-radius) 18px 18px!important;
+    background:linear-gradient(90deg,var(--luria-shell-blue),var(--luria-shell-blue-2))!important;
+    pointer-events:none!important;
+    z-index:0!important;
+  }
+
+  /* remove qualquer moldura/pseudo legado */
+  body .app-shell::after{content:none!important;display:none!important}
+
+  /* interior branco encaixado */
+  body #sidebar.sidebar{
+    position:relative!important;
+    top:auto!important;
+    left:auto!important;
+    transform:none!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+    z-index:2!important;
+    width:auto!important;
+    height:auto!important;
+    min-height:calc(100vh - 96px)!important;
+    margin:0!important;
+    padding:16px 14px 14px!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-right:1px solid var(--border)!important;
+    border-radius:18px 0 0 18px!important;
+    background:var(--sidebar)!important;
+    box-shadow:none!important;
+  }
+
+  body .main{
+    position:relative!important;
+    z-index:2!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:18px 24px 30px!important;
+    border-radius:0 18px 18px 0!important;
+    background:var(--surface)!important;
+    overflow:visible!important;
+  }
+
+  body .page{
+    max-width:none!important;
+    width:100%!important;
+    margin:0!important;
+  }
+
+  /* A logo passa a morar visualmente dentro da faixa azul superior. */
+  body #sidebar.sidebar .sidebar-top{
+    position:absolute!important;
+    top:calc(-1 * var(--luria-shell-top) + 8px)!important;
+    left:10px!important;
+    right:10px!important;
+    height:54px!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:center!important;
+    z-index:6!important;
+    background:transparent!important;
+    border:0!important;
+  }
+
+  body #sidebar.sidebar .brand{
+    min-width:0!important;
+    gap:9px!important;
+    color:#fff!important;
+  }
+  body #sidebar.sidebar .brand .luria-theme-logo{
+    width:46px!important;
+    height:46px!important;
+    flex:0 0 46px!important;
+    filter:brightness(0) invert(1)!important;
+  }
+  body #sidebar.sidebar .brand .brand-copy strong,
+  body #sidebar.sidebar .brand .brand-copy small{
+    color:#fff!important;
+  }
+  body #sidebar.sidebar .brand .brand-copy strong{
+    font-size:18px!important;
+    line-height:1!important;
+  }
+  body #sidebar.sidebar .brand .brand-copy small{
+    margin-top:3px!important;
+    font-size:9px!important;
+    opacity:.92!important;
+  }
+
+  /* Sem fechar/recolher menu no desktop. */
+  body #sidebar.sidebar .sidebar-close,
+  body .sidebar-desktop-toggle,
+  body .menu-open,
+  body #sidebar-backdrop,
+  body .sidebar-backdrop{
+    display:none!important;
+  }
+  body.sidebar-hidden .app-shell,
+  body.sidebar-collapsed .app-shell{
+    grid-template-columns:270px minmax(0,1fr)!important;
+  }
+  body.sidebar-hidden #sidebar.sidebar,
+  body.sidebar-collapsed #sidebar.sidebar{
+    transform:none!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+    width:auto!important;
+    padding:16px 14px 14px!important;
+  }
+  body.sidebar-collapsed #sidebar.sidebar .brand-copy,
+  body.sidebar-collapsed #sidebar.sidebar .nav-link > span:not(.nav-icon),
+  body.sidebar-collapsed #sidebar.sidebar .nav-group-label .nav-label-text,
+  body.sidebar-collapsed #sidebar.sidebar .nav-group-label .nav-group-chevron,
+  body.sidebar-collapsed #sidebar.sidebar .nav-submenu,
+  body.sidebar-collapsed #sidebar.sidebar .sidebar-footer{
+    display:initial!important;
+  }
+
+  /* Topbar flutuante dentro da faixa azul */
+  body .topbar,
+  body:not([data-page="dashboard"]) .topbar,
+  body[data-page="dashboard"] .topbar{
+    position:absolute!important;
+    top:calc(-1 * var(--luria-shell-top) + 7px)!important;
+    left:0!important;
+    right:0!important;
+    width:auto!important;
+    min-height:56px!important;
+    height:56px!important;
+    margin:0!important;
+    padding:0 14px!important;
+    display:flex!important;
+    align-items:center!important;
+    overflow:visible!important;
+    background:transparent!important;
+    border:0!important;
+    z-index:7!important;
+  }
+
+  body .topbar .page-heading{display:none!important}
+
+  body .topbar .luria-notifications,
+  body:not([data-page="dashboard"]) .topbar .luria-notifications,
+  body[data-page="dashboard"] .topbar .luria-notifications{
+    position:static!important;
+    inset:auto!important;
+    margin:0 0 0 auto!important;
+    transform:none!important;
+    translate:none!important;
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    z-index:8!important;
+  }
+
+  /* controles da faixa superior: aspecto translúcido como a referência */
+  body .topbar .luria-pomodoro-toggle,
+  body .topbar .luria-notification-toggle,
+  body .topbar .luria-profile-toggle,
+  body .topbar [data-global-search-trigger],
+  body .topbar .global-search-trigger,
+  body .topbar .luria-global-search-trigger{
+    border:1px solid rgba(255,255,255,.24)!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+    box-shadow:none!important;
+    backdrop-filter:blur(8px)!important;
+    -webkit-backdrop-filter:blur(8px)!important;
+  }
+  body .topbar .luria-pomodoro-toggle:hover,
+  body .topbar .luria-notification-toggle:hover,
+  body .topbar .luria-profile-toggle:hover{
+    background:rgba(255,255,255,.18)!important;
+    border-color:rgba(255,255,255,.38)!important;
+    color:#fff!important;
+  }
+  body .topbar .luria-pomodoro-copy strong,
+  body .topbar .luria-pomodoro-copy small,
+  body .topbar svg{color:#fff!important}
+  body .topbar svg{stroke:currentColor!important}
+
+  /* arredondamento do interior inferior, mantendo só o filete azul externo */
+  body #sidebar.sidebar,
+  body .main{
+    box-shadow:0 0 0 1px rgba(15,103,238,.04)!important;
+  }
+}
+
+/* PWA/mobile preservado: mantém o comportamento móvel existente. */
+@media (max-width:980px){
+  body .app-shell{margin:0!important}
+}
