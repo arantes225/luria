@@ -5407,3 +5407,26 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background-image:none!important;
   }
 }
+
+
+/* DASHBOARD — SOLID SHELL NO GRADIENT v8 — 2026-10-04 */
+:root,
+:root[data-theme="light"]{
+  --luria-shell-theme:#184888;
+}
+:root[data-theme="dark"]{
+  --luria-shell-theme:#142A44;
+}
+:root[data-theme="leila-mood"]{
+  --luria-shell-theme:#CB3F83;
+}
+@media (min-width:981px){
+  html:has(body[data-page="dashboard"][data-dashboard-layout]),
+  body[data-page="dashboard"][data-dashboard-layout],
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    background:var(--luria-shell-theme)!important;
+    background-color:var(--luria-shell-theme)!important;
+    background-image:none!important;
+  }
+}
