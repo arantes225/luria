@@ -5337,3 +5337,21 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     display:none!important;
   }
 }
+
+
+/* DASHBOARD — REMOVE OUTER WHITE RIM v5 — 2026-10-04 */
+@media (min-width:981px){
+  /* A área que sobra fora do callout deixa de ser branca.
+     Mantém a curva interna branca, mas tudo por fora dela é azul. */
+  html:has(body[data-page="dashboard"][data-dashboard-layout]){
+    background:#0f67ee!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]{
+    background:#0f67ee!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+  }
+}
