@@ -34,6 +34,102 @@ function cacheProfile(userId, profile) {
 }
 
 
+async function invokeSettingsNotionFunction(name, body = {}) {
+  const { data, error } = await settingsSb.functions.invoke(name, { body });
+  if (error) {
+    const message = error?.context?.body?.message || error?.message || "Falha na integração com o Notion.";
+    throw new Error(message);
+  }
+  if (data?.error) throw new Error(data.message || data.error);
+  return data || {};
+}
+
+async function refreshSettingsNotionConnection() {
+  const status = document.getElementById("settings-notion-status");
+  const connect = document.getElementById("settings-notion-connect");
+  const disconnect = document.getElementById("settings-notion-disconnect");
+
+  if (!status || !connect || !disconnect) return;
+
+  status.textContent = "Verificando conexão...";
+
+  try {
+    const state = await invokeSettingsNotionFunction("notion-api", { action:"status" });
+    const connected = Boolean(state?.connected);
+
+    connect.hidden = connected;
+    disconnect.hidden = !connected;
+
+    status.textContent = connected
+      ? "Conectado" + (state?.workspace_name ? " · " + state.workspace_name : "")
+      : "Nenhuma conta do Notion conectada.";
+  } catch (error) {
+    console.error("Notion settings:", error);
+    connect.hidden = false;
+    disconnect.hidden = true;
+    status.textContent = error?.message || "Não foi possível verificar a conexão.";
+  }
+}
+
+async function connectSettingsNotion() {
+  const button = document.getElementById("settings-notion-connect");
+  if (button) button.disabled = true;
+
+  try {
+    const redirectTo = window.location.origin + "/configuracoes/?section=perfil&notion=connected";
+    const result = await invokeSettingsNotionFunction("notion-auth", { redirect_to: redirectTo });
+    if (!result?.url) throw new Error("Não foi possível iniciar a conexão.");
+    window.location.assign(result.url);
+  } catch (error) {
+    console.error("Connect Notion settings:", error);
+    if (button) button.disabled = false;
+    window.LuriaDialog?.alert?.(error?.message || "Não foi possível conectar o Notion.");
+  }
+}
+
+async function disconnectSettingsNotion() {
+  const ok = await window.LuriaDialog?.confirm?.("Desconectar o Notion desta conta?");
+  if (ok === false) return;
+
+  const button = document.getElementById("settings-notion-disconnect");
+  if (button) button.disabled = true;
+
+  try {
+    await invokeSettingsNotionFunction("notion-api", { action:"disconnect" });
+    await refreshSettingsNotionConnection();
+  } catch (error) {
+    console.error("Disconnect Notion settings:", error);
+    window.LuriaDialog?.alert?.(error?.message || "Não foi possível desconectar o Notion.");
+  } finally {
+    if (button) button.disabled = false;
+  }
+}
+
+function wireSettingsNotionConnection() {
+  const connect = document.getElementById("settings-notion-connect");
+  const disconnect = document.getElementById("settings-notion-disconnect");
+
+  if (connect && connect.dataset.bound !== "1") {
+    connect.dataset.bound = "1";
+    connect.addEventListener("click", connectSettingsNotion);
+  }
+
+  if (disconnect && disconnect.dataset.bound !== "1") {
+    disconnect.dataset.bound = "1";
+    disconnect.addEventListener("click", disconnectSettingsNotion);
+  }
+
+  refreshSettingsNotionConnection();
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("notion") === "connected") {
+    const url = new URL(window.location.href);
+    url.searchParams.delete("notion");
+    window.history.replaceState({}, "", url);
+  }
+}
+
+
 function setProfileStatus(text, type = "") {
   const element = document.getElementById("profile-status");
   if (!element) return;
@@ -2008,11 +2104,15 @@ async function initStudySettings() {
 }
 
 if (window.docmapUser) {
+  wireSettingsNotionConnection();
   initStudySettings();
 } else {
   window.addEventListener(
     "docmap:ready",
-    initStudySettings,
+    () => {
+      wireSettingsNotionConnection();
+      initStudySettings();
+    },
     { once: true }
   );
 }
