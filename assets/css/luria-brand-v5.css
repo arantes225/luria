@@ -1169,3 +1169,27 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
   }
 }
+
+
+/* LURIA SHELL — EXACT COLOR MATCH v5 — 2026-10-04 */
+:root,
+:root[data-theme="light"]{
+  --luria-shell-theme:#184888;
+}
+:root[data-theme="dark"]{
+  --luria-shell-theme:#142A44;
+}
+:root[data-theme="leila-mood"]{
+  --luria-shell-theme:#CB3F83;
+}
+
+@media (min-width:981px){
+  html,
+  body,
+  body .app-shell,
+  body .app-shell::before{
+    background:var(--luria-shell-theme)!important;
+    background-color:var(--luria-shell-theme)!important;
+    background-image:none!important;
+  }
+}
