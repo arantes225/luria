@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Professor Alex · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="apple-touch-icon" href="/assets/img/logos/pwa-icon-180.png?v=pwa5">
+  <meta name="theme-color" content="#0A2342">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="LURIA">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.12-no-legacy-dashboard">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=59-content-aligned">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="canonical" href="/professor-alex/">
+  <style>
+    .alex-page{display:grid;gap:18px;padding-bottom:36px}
+    .alex-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;padding:24px 26px;border:1px solid var(--border);border-radius:18px;background:linear-gradient(125deg,var(--surface),color-mix(in srgb,var(--accent-soft) 44%,var(--surface)));box-shadow:0 8px 28px rgba(15,35,66,.06)}
+    .alex-hero-copy{min-width:0}.alex-kicker{margin:0 0 6px;color:var(--muted);font-size:13px}.alex-title{margin:0;color:var(--text);font-size:30px;font-weight:500;letter-spacing:-.035em}.alex-subtitle{max-width:680px;margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.55}
+    .alex-mode{display:flex;gap:4px;padding:4px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+    .alex-mode button{min-height:38px;padding:0 14px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:inherit;font-size:13px;cursor:pointer}
+    .alex-mode button[aria-pressed="true"]{background:var(--accent);color:#fff}
+    .alex-start-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .alex-start-card{min-height:148px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);text-align:left;cursor:pointer;transition:transform .14s ease,border-color .14s ease,box-shadow .14s ease}
+    .alex-start-card:hover,.alex-start-card.is-active{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 52%,var(--border));box-shadow:0 10px 25px rgba(15,35,66,.07)}
+    .alex-card-icon{width:38px;height:38px;display:grid;place-items:center;margin-bottom:15px;border-radius:11px;background:var(--accent-soft);color:var(--accent)}
+    .alex-card-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .alex-start-card strong{display:block;margin-bottom:5px;font-size:15px;font-weight:500}.alex-start-card span{display:block;color:var(--muted);font-size:12px;line-height:1.45}
+    .alex-workspace{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.75fr);gap:16px;align-items:start}
+    .alex-panel{border:1px solid var(--border);border-radius:18px;background:var(--surface);overflow:hidden}.alex-panel-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 18px;border-bottom:1px solid var(--border)}.alex-panel-head h2{margin:0;font-size:15px;font-weight:500;color:var(--text)}.alex-panel-head p{margin:3px 0 0;color:var(--muted);font-size:11px}
+    .alex-form{display:grid;gap:14px;padding:18px}.alex-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.alex-field{display:grid;gap:7px}.alex-field label{font-size:12px;color:var(--muted)}.alex-field select,.alex-field input,.alex-field textarea{width:100%;box-sizing:border-box;border:1px solid var(--border);border-radius:11px;background:var(--surface-2);color:var(--text);font:inherit;font-size:13px;outline:none}.alex-field select,.alex-field input{min-height:44px;padding:0 12px}.alex-field textarea{min-height:142px;padding:12px;resize:vertical;line-height:1.5}.alex-field select:focus,.alex-field input:focus,.alex-field textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+    .alex-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.alex-action{min-height:42px;padding:0 14px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);font:inherit;font-size:12px;cursor:pointer}.alex-action.primary{margin-left:auto;border-color:var(--accent);background:var(--accent);color:#fff;padding-inline:19px}.alex-action[disabled]{opacity:.5;cursor:not-allowed}.alex-file{display:none}.alex-file-state{color:var(--muted);font-size:11px}
+    .alex-output{display:none;padding:18px;border-top:1px solid var(--border)}.alex-output.is-visible{display:block}.alex-output-empty{padding:26px 18px;text-align:center;color:var(--muted);font-size:12px;line-height:1.55}.alex-output-card{padding:16px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}.alex-output-card h3{margin:0 0 8px;font-size:14px;font-weight:500}.alex-output-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.55}
+    .alex-lesson-map{display:grid;gap:8px;padding:16px}.alex-step{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;padding:11px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}.alex-step-num{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-size:11px}.alex-step strong{display:block;font-size:12px;font-weight:500}.alex-step span{display:block;margin-top:3px;color:var(--muted);font-size:10px;line-height:1.4}
+    .alex-tip{margin:0 16px 16px;padding:13px 14px;border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));border-radius:12px;background:var(--accent-soft)}.alex-tip strong{display:block;font-size:11px;font-weight:500;color:var(--accent)}.alex-tip span{display:block;margin-top:4px;color:var(--text);font-size:11px;line-height:1.45}
+    .alex-voice.is-listening{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+    @media(max-width:980px){.alex-hero{grid-template-columns:1fr}.alex-mode{width:max-content}.alex-workspace{grid-template-columns:1fr}.alex-start-grid{grid-template-columns:1fr}.alex-row{grid-template-columns:1fr}}
+    @media(max-width:620px){.alex-page{gap:12px}.alex-hero{padding:18px}.alex-title{font-size:25px}.alex-start-card{min-height:120px}.alex-panel-head{padding:14px}.alex-form{padding:14px}.alex-actions{align-items:stretch}.alex-action{flex:1}.alex-action.primary{width:100%;margin-left:0;flex-basis:100%}}
+  </style>
+</head>
+<body data-page="professor_alex">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+
+        <section class="alex-page" aria-labelledby="alex-title">
+          <div class="alex-hero">
+            <div class="alex-hero-copy">
+              <p class="alex-kicker">Seu professor dentro da LURIA</p>
+              <h1 class="alex-title" id="alex-title">Professor Alex</h1>
+              <p class="alex-subtitle">Aprenda um assunto do zero, destrave uma dúvida específica ou use seu próprio material como ponto de partida. A aula se adapta ao nível de detalhe que você quer.</p>
+            </div>
+            <div class="alex-mode" aria-label="Nível de detalhe">
+              <button type="button" data-alex-mode="normal" aria-pressed="true">Normal</button>
+              <button type="button" data-alex-mode="estourado" aria-pressed="false">Estourado</button>
+            </div>
+          </div>
+
+          <div class="alex-start-grid" aria-label="Como começar">
+            <button class="alex-start-card is-active" type="button" data-alex-intent="learn">
+              <span class="alex-card-icon"><svg viewBox="0 0 24 24"><path d="M3 5.5 12 2l9 3.5-9 3.5-9-3.5Z"/><path d="M6 8v6.2c0 1.9 2.7 3.8 6 3.8s6-1.9 6-3.8V8"/><path d="M21 6v7"/></svg></span>
+              <strong>Quero aprender um tema</strong>
+              <span>Escolha matéria e tema para uma explicação estruturada desde a base.</span>
+            </button>
+            <button class="alex-start-card" type="button" data-alex-intent="question">
+              <span class="alex-card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.7 9a2.5 2.5 0 1 1 3.9 2.1c-1 .7-1.6 1.1-1.6 2.4"/><path d="M12 17h.01"/></svg></span>
+              <strong>Tenho uma dúvida</strong>
+              <span>Vá direto no ponto e destrinche exatamente o que está confundindo.</span>
+            </button>
+            <button class="alex-start-card" type="button" data-alex-intent="material">
+              <span class="alex-card-icon"><svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M9 12h6M9 16h6"/></svg></span>
+              <strong>Usar meu material</strong>
+              <span>Parta de PDF ou anotação e transforme o conteúdo em uma aula guiada.</span>
+            </button>
+          </div>
+
+          <div class="alex-workspace">
+            <section class="alex-panel">
+              <div class="alex-panel-head">
+                <div><h2>O que vamos estudar?</h2><p>Defina o ponto de partida. Você pode ajustar isso a qualquer momento.</p></div>
+              </div>
+              <form class="alex-form" id="alex-form">
+                <div class="alex-row">
+                  <div class="alex-field">
+                    <label for="alex-area">Matéria</label>
+                    <select id="alex-area">
+                      <option value="">Escolher matéria</option>
+                      <option>Clínica Médica</option><option>Cirurgia Geral</option><option>Pediatria</option><option>Ginecologia e Obstetrícia</option><option>Medicina Preventiva / MFC</option>
+                    </select>
+                  </div>
+                  <div class="alex-field">
+                    <label for="alex-topic">Tema</label>
+                    <input id="alex-topic" type="text" autocomplete="off" placeholder="Ex.: insuficiência cardíaca, abdome agudo...">
+                  </div>
+                </div>
+                <div class="alex-field">
+                  <label for="alex-prompt">Conte para o Alex o que você precisa</label>
+                  <textarea id="alex-prompt" placeholder="Ex.: quero entender do zero por que a estenose aórtica causa síncope e como isso aparece na prova."></textarea>
+                </div>
+                <div class="alex-actions">
+                  <input class="alex-file" id="alex-file" type="file" accept=".pdf,.txt,.md,.doc,.docx">
+                  <button class="alex-action" type="button" id="alex-file-button">Anexar material</button>
+                  <button class="alex-action alex-voice" type="button" id="alex-voice-button">Falar</button>
+                  <span class="alex-file-state" id="alex-file-state">Nenhum material anexado</span>
+                  <button class="alex-action primary" type="submit">Começar aula</button>
+                </div>
+              </form>
+              <div class="alex-output" id="alex-output" aria-live="polite">
+                <div class="alex-output-card">
+                  <h3>A aula está pronta para ser conectada ao motor do Professor Alex</h3>
+                  <p id="alex-output-copy">A interface, contexto, modo e material já estão sendo capturados. A próxima etapa é ligar este envio ao backend de IA e devolver a aula em blocos estruturados.</p>
+                </div>
+              </div>
+            </section>
+
+            <aside class="alex-panel">
+              <div class="alex-panel-head"><div><h2>Como o Alex vai ensinar</h2><p>Estrutura padrão da resposta</p></div></div>
+              <div class="alex-lesson-map">
+                <div class="alex-step"><span class="alex-step-num">1</span><div><strong>Explicação</strong><span>Do conceito ao raciocínio que resolve a questão.</span></div></div>
+                <div class="alex-step"><span class="alex-step-num">2</span><div><strong>Esquema e comparação</strong><span>Organiza diferenças que costumam confundir.</span></div></div>
+                <div class="alex-step"><span class="alex-step-num">3</span><div><strong>Mini-checagem</strong><span>Perguntas curtas para confirmar se fixou.</span></div></div>
+                <div class="alex-step"><span class="alex-step-num">4</span><div><strong>Caso clínico</strong><span>Aplica o conceito em uma situação de prova ou prática.</span></div></div>
+                <div class="alex-step"><span class="alex-step-num">5</span><div><strong>Pulo do Gato</strong><span>Fecha com o discriminador decisivo que você precisa lembrar.</span></div></div>
+              </div>
+              <div class="alex-tip"><strong>Modo Estourado</strong><span>Mais profundidade, fisiopatologia, comparações e pegadinhas. O Normal fica direto e didático.</span></div>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261004-professor-alex"></script>
+  <script>
+    (() => {
+      const state = { intent: "learn", mode: "normal", file: null };
+      const cards = [...document.querySelectorAll("[data-alex-intent]")];
+      const modes = [...document.querySelectorAll("[data-alex-mode]")];
+      const prompt = document.getElementById("alex-prompt");
+      const topic = document.getElementById("alex-topic");
+      const fileInput = document.getElementById("alex-file");
+      const fileState = document.getElementById("alex-file-state");
+      const output = document.getElementById("alex-output");
+      const outputCopy = document.getElementById("alex-output-copy");
+
+      const placeholders = {
+        learn: "Ex.: quero entender do zero por que a estenose aórtica causa síncope e como isso aparece na prova.",
+        question: "Ex.: por que na tamponamento cardíaco a pressão de pulso pode diminuir? Explica sem pular etapas.",
+        material: "Diga o que você quer fazer com o material: aprender do zero, revisar, esclarecer um trecho ou testar depois."
+      };
+      cards.forEach(card => card.addEventListener("click", () => {
+        state.intent = card.dataset.alexIntent;
+        cards.forEach(x => x.classList.toggle("is-active", x === card));
+        prompt.placeholder = placeholders[state.intent];
+        if (state.intent === "material") fileInput.click();
+        prompt.focus();
+      }));
+      modes.forEach(button => button.addEventListener("click", () => {
+        state.mode = button.dataset.alexMode;
+        modes.forEach(x => x.setAttribute("aria-pressed", String(x === button)));
+      }));
+      document.getElementById("alex-file-button").addEventListener("click", () => fileInput.click());
+      fileInput.addEventListener("change", () => {
+        state.file = fileInput.files?.[0] || null;
+        fileState.textContent = state.file ? state.file.name : "Nenhum material anexado";
+      });
+
+      const voiceButton = document.getElementById("alex-voice-button");
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.lang = "pt-BR";
+        recognition.interimResults = false;
+        recognition.continuous = false;
+        recognition.addEventListener("start", () => { voiceButton.classList.add("is-listening"); voiceButton.textContent = "Ouvindo…"; });
+        recognition.addEventListener("end", () => { voiceButton.classList.remove("is-listening"); voiceButton.textContent = "Falar"; });
+        recognition.addEventListener("result", event => {
+          const text = event.results?.[0]?.[0]?.transcript || "";
+          prompt.value = [prompt.value.trim(), text].filter(Boolean).join(" ");
+        });
+        voiceButton.addEventListener("click", () => recognition.start());
+      } else {
+        voiceButton.disabled = true;
+        voiceButton.title = "Ditado por voz não disponível neste navegador.";
+      }
+
+      document.getElementById("alex-form").addEventListener("submit", event => {
+        event.preventDefault();
+        const details = [];
+        const area = document.getElementById("alex-area").value;
+        if (area) details.push(area);
+        if (topic.value.trim()) details.push(topic.value.trim());
+        outputCopy.textContent = `Contexto capturado${details.length ? " para " + details.join(" · ") : ""}, em modo ${state.mode === "estourado" ? "Estourado" : "Normal"}${state.file ? ", usando " + state.file.name : ""}. A próxima etapa é conectar este envio ao backend para gerar a aula em blocos.`;
+        output.classList.add("is-visible");
+        output.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+    })();
+  </script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
