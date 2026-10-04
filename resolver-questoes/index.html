@@ -194,10 +194,17 @@
  const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
  function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
  function firstUnanswered(){const i=state.items.findIndex(x=>!state.attempts.has(x.id));return i<0?0:i}
+ function navigateTo(index){
+   const max=Math.max(0,state.items.length-1);
+   state.index=Math.max(0,Math.min(max,Number(index)||0));
+   $("qr-card-question").textContent="Questão "+(state.index+1);
+   render();
+ }
  function status(t,type=""){$("qr-status").textContent=t;$("qr-status").style.color=type==="error"?"var(--danger)":type==="success"?"var(--success)":""}
  function tick(){const sec=Math.floor((Date.now()-state.started)/1000);const m=Math.floor(sec/60),r=sec%60;$("qr-clock").textContent=m+" min "+String(r).padStart(2,"0")+" s"}
  function render(){
   const item=state.items[state.index]; if(!item)return;
+  $("qr-card-question").textContent="Questão "+(state.index+1);
   state.started=Date.now(); const at=state.attempts.get(item.id), sel=state.selected.get(item.id)||String(at?.selected_option||"").toUpperCase(), confirmed=!!at, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
   $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Área não classificada";$("qr-materia").textContent=item.materia||item.subject||"Matéria não classificada";$("qr-difficulty").textContent=item.difficulty||"Não informada";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Sem tags"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
   const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url); if(hasQuestionImage){img.src=item.image_url;img.hidden=false}else{img.hidden=true;img.removeAttribute("src");img.style.display="none"} if(hasQuestionImage) img.style.removeProperty("display")
@@ -207,10 +214,10 @@
   const fb=$("qr-feedback"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";fb.hidden=false;fb.innerHTML='<div class="qr-result '+(ok?"correct":"wrong")+'">'+(correct?(ok?"Resposta correta":"Resposta incorreta · gabarito: "+esc(correct)):"Resposta registrada")+'</div><div class="qr-justification"><strong>Justificativa</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div><div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div>'}else{fb.hidden=true;fb.innerHTML=""}
   $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Respondida":"Responder";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
   $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
-  const total=state.items.length;$("qr-card-question").textContent="Questão "+(state.index+1);
+  const total=state.items.length;
   const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):0;$("qr-hits").textContent=hits;$("qr-errors").textContent=errs;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
   $("qr-answer-grid").innerHTML=state.items.map((q,i)=>{const a=state.attempts.get(q.id);let cl="qr-answer-cell";if(i===state.index)cl+=" current";if(a?.result==="correct")cl+=" correct";else if(a?.result==="wrong")cl+=" wrong";return '<button class="'+cl+'" type="button" data-jump="'+i+'" aria-label="Questão '+(i+1)+'">'+(i+1)+'</button>'}).join("");
-  document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{state.index=Number(b.dataset.jump)||0;render()});
+  document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>navigateTo(Number(b.dataset.jump)||0));
  }
  async function confirm(){const item=state.items[state.index],selected=state.selected.get(item.id);if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}const correct=String(item.official_answer||"").toUpperCase();const previous=state.attempts.get(item.id)||{};const row={user_id:state.user.id,question_item_id:item.id,selected_option:selected,result:correct?(selected===correct?"correct":"wrong"):"correct",area:previous.area||null,materia:previous.materia||null,correct_option:correct||null,ccq:previous.ccq||null,what_i_thought:previous.what_i_thought||null,sent_to_error:previous.sent_to_error||false,error_entry_id:previous.error_entry_id||null,answered_at:new Date().toISOString()};const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();if(error){status("Não foi possível salvar: "+error.message,"error");return}state.attempts.set(item.id,data||row);status("Resposta salva.","success");render()}
  async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
@@ -304,7 +311,7 @@
  $("qr-font-up").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize+1)};
  $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
  document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
- $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id))return;await confirm()};$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};setQuestionFont(state.fontSize);setInterval(tick,1000);init();
+ $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id))return;await confirm()};$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);init();
 })();
 </script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
