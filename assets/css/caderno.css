@@ -4527,3 +4527,62 @@ body[data-page="caderno"] .note-actions-card #notebook-inspector-edit:not(.is-sa
   flex:0 0 14px!important;
   stroke:currentColor!important;
 }
+
+
+/* ANOTAÇÕES — deck inicial de páginas do Notion */
+body[data-page="caderno"] .notebook-notion-inbox-deck{
+  margin:0 0 14px;
+  padding:13px;
+  border:1px solid color-mix(in srgb,var(--accent) 28%,var(--border));
+  border-radius:12px;
+  background:color-mix(in srgb,var(--accent) 3%,var(--surface));
+}
+body[data-page="caderno"] .notebook-notion-inbox-deck>header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-deck>header>div{
+  display:grid;
+  gap:3px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-deck>header strong{
+  font-size:12px;
+  font-weight:650;
+}
+body[data-page="caderno"] .notebook-notion-inbox-deck>header small{
+  color:var(--muted);
+  font-size:9px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-deck>header>span{
+  min-width:27px;
+  height:27px;
+  padding:0 8px;
+  display:grid;
+  place-items:center;
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  font-size:9px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  gap:8px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-page{
+  cursor:grab;
+  transition:opacity .15s ease,transform .15s ease,box-shadow .15s ease;
+}
+body[data-page="caderno"] .notebook-notion-inbox-page:active{cursor:grabbing}
+body[data-page="caderno"] .notebook-notion-inbox-page.is-dragging{
+  opacity:.5;
+  transform:scale(.985);
+}
+body[data-page="caderno"] .notebook-subject-card.is-notion-drop-target{
+  border-color:var(--accent)!important;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 15%,transparent),0 12px 26px rgba(24,72,136,.10)!important;
+  transform:translateY(-2px);
+}
