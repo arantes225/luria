@@ -7567,3 +7567,60 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     line-height:1.1!important;
   }
 }
+
+
+/* DASHBOARD TOPBAR — SEARCH/ALEX LEFT ALIGN v40 — 2026-10-04 */
+@media (min-width:981px){
+  /* Alinha o conjunto Busca + Alex à mesma lateral esquerda do card de título.
+     A topbar está no shell; 270px = sidebar, 28px = padding interno da main.
+     Em telas largas, soma o mesmo centramento usado pela page (max-width 1320px). */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar{
+    --dashboard-content-left:calc(
+      270px + 28px + max(0px, (100% - 270px - 56px - 1320px) / 2)
+    );
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-icon-only{
+    position:absolute!important;
+    left:var(--dashboard-content-left)!important;
+    right:auto!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    width:58px!important;
+    min-width:58px!important;
+    max-width:58px!important;
+    height:43px!important;
+    min-height:43px!important;
+    max-height:43px!important;
+    display:grid!important;
+    place-items:center!important;
+    padding:0!important;
+    margin:0!important;
+    z-index:2147482002!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-icon-only .luria-command-search-icon{
+    width:19px!important;
+    height:19px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-alex-topbar.luria-alex-topbar{
+    position:absolute!important;
+    left:calc(var(--dashboard-content-left) + 68px)!important;
+    right:auto!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    height:43px!important;
+    min-height:43px!important;
+    margin:0!important;
+    z-index:2147482002!important;
+  }
+}
