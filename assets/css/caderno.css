@@ -4586,3 +4586,53 @@ body[data-page="caderno"] .notebook-subject-card.is-notion-drop-target{
   box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 15%,transparent),0 12px 26px rgba(24,72,136,.10)!important;
   transform:translateY(-2px);
 }
+
+
+/* ANOTAÇÕES — menu de ações das páginas do Notion no deck */
+body[data-page="caderno"] .notebook-notion-inbox-page{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-main{
+  min-width:0;
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-main>div{
+  min-width:0;
+}
+body[data-page="caderno"] .notebook-notion-inbox-main strong,
+body[data-page="caderno"] .notebook-notion-inbox-main small{
+  display:block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+body[data-page="caderno"] .notebook-notion-inbox-actions{
+  position:relative;
+  flex:0 0 auto;
+}
+body[data-page="caderno"] .notebook-notion-inbox-actions .notebook-book-menu{
+  width:28px;
+  height:28px;
+  border-radius:7px;
+  font-size:18px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-menu{
+  top:31px;
+  right:0;
+  min-width:118px;
+}
+body[data-page="caderno"] .notebook-notion-inbox-menu button{
+  font-size:9px;
+  font-weight:650;
+}
+body[data-page="caderno"] .notebook-notion-move-dialog{
+  width:min(460px,calc(100vw - 28px));
+}
