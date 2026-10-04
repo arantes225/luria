@@ -31,31 +31,19 @@ function localSearchText(route){const text=normSearch(route.join(" "));return te
 function topbar(){return $(".topbar")}
 function modal(id,title,body){let o=d.getElementById(id);if(o)o.remove();o=d.createElement("div");o.id=id;o.className="luria-intel-overlay";o.innerHTML='<section class="luria-intel-modal" role="dialog" aria-modal="true"><header class="luria-intel-head"><h2>'+esc(title)+'</h2><button class="luria-intel-close" type="button" aria-label="Fechar">×</button></header>'+body+'</section>';d.body.appendChild(o);o.querySelector(".luria-intel-close").onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};return o}
 function installSearch(){
- const bar=topbar();if(!bar||d.getElementById("luria-global-search"))return;
+ const bar=topbar();if(!bar)return;
  const controls=bar.querySelector(".luria-notifications");
  if(!controls){setTimeout(installSearch,120);return}
 
- const search=d.createElement("label");
- search.id="luria-global-search";
- search.className="luria-command-trigger luria-command-trigger-topbar luria-search-field-topbar";
- search.setAttribute("aria-label","Busca global");
- search.innerHTML='<svg class="luria-command-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="5.5"></circle><path d="M15.2 15.2L20 20"></path></svg><input id="luria-global-search-field" type="search" inputmode="search" autocomplete="off" placeholder="Buscar" aria-label="Buscar no LURIA">';
-
- const alex=d.createElement("a");alex.id="luria-alex-topbar";alex.className="luria-alex-topbar";alex.href="/professor-alex/";alex.textContent="Alex";alex.setAttribute("aria-label","Abrir Professor Alex");
- const timerWrap=controls.querySelector(".luria-pomodoro-top");
- if(timerWrap){controls.insertBefore(search,timerWrap);controls.insertBefore(alex,timerWrap);}else{controls.prepend(alex);controls.prepend(search);}
-
- const field=d.getElementById("luria-global-search-field");
- if(field){
-   field.style.setProperty("background","transparent","important");
-   field.style.setProperty("background-color","transparent","important");
-   field.style.setProperty("background-image","none","important");
-   field.style.setProperty("border","0","important");
-   field.style.setProperty("box-shadow","none","important");
-   field.style.setProperty("outline","0","important");
-   field.style.setProperty("backdrop-filter","none","important");
-   field.style.setProperty("-webkit-backdrop-filter","none","important");
-   field.style.setProperty("border-radius","0","important");
+ if(!d.getElementById("luria-alex-topbar")){
+   const alex=d.createElement("a");
+   alex.id="luria-alex-topbar";
+   alex.className="luria-alex-topbar";
+   alex.href="/professor-alex/";
+   alex.textContent="Alex";
+   alex.setAttribute("aria-label","Abrir Professor Alex");
+   const timerWrap=controls.querySelector(".luria-pomodoro-top");
+   if(timerWrap)controls.insertBefore(alex,timerWrap);else controls.prepend(alex);
  }
 
  const open=(initialQuery="")=>{
@@ -70,21 +58,10 @@ function installSearch(){
    input.oninput=render;render();setTimeout(()=>{input.focus();input.setSelectionRange(input.value.length,input.value.length)},40);
  };
 
- field?.addEventListener("keydown",e=>{
-   if(e.key==="Enter"){e.preventDefault();open(field.value);}
- });
- field?.addEventListener("input",()=>{
-   if(field.value.trim().length===1) open(field.value);
- });
- field?.addEventListener("search",()=>{
-   if(field.value.trim()) open(field.value);
- });
-
  d.addEventListener("keydown",e=>{
    if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){
      e.preventDefault();
-     field?.focus();
-     field?.select();
+     open();
    }
  });
 }
