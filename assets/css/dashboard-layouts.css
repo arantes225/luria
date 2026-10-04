@@ -6843,3 +6843,55 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     opacity:.074!important;
   }
 }
+
+
+/* DASHBOARD MASTER — SCROLL THUMB ONLY NO ARROWS v32 — 2026-10-04 */
+@media (min-width:981px){
+  /* Scroll interno do Dashboard: somente o thumb, sem setas/botões. */
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:single-button,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:double-button,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:vertical:start:decrement,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:vertical:end:increment,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:horizontal:start:decrement,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:horizontal:end:increment{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    background:transparent!important;
+    background-image:none!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-track,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-track-piece,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+    box-shadow:none!important;
+    min-height:34px!important;
+  }
+}
