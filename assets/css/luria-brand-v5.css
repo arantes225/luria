@@ -893,8 +893,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 
 /* LURIA HOSTINGER-LIKE SHELL v1 — 2026-10-04 */
 :root{
-  --luria-shell-blue:#0f67ee;
-  --luria-shell-blue-2:#1379f5;
+  --luria-shell-blue:#184888;
+  --luria-shell-blue-2:#184888;
   --luria-shell-radius:24px;
   --luria-shell-edge:6px;
   --luria-shell-top:70px;
@@ -1126,7 +1126,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   body .app-shell{
     overflow:hidden!important;
     border-radius:24px!important;
-    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+    background:linear-gradient(90deg,#184888,#184888)!important;
   }
 
   body .app-shell::before{
@@ -1249,5 +1249,32 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background:rgba(255,255,255,.17)!important;
     border-color:rgba(255,255,255,.40)!important;
     color:#fff!important;
+  }
+}
+
+
+/* LURIA SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
+:root,
+:root[data-theme="light"]{
+  --luria-shell-theme:#184888;
+}
+:root[data-theme="dark"]{
+  --luria-shell-theme:#142A44;
+}
+:root[data-theme="leila-mood"]{
+  --luria-shell-theme:#CB3F83;
+}
+@media (min-width:981px){
+  html,
+  body,
+  body .app-shell,
+  body .app-shell::before,
+  html:has(body[data-page="dashboard"][data-dashboard-layout]),
+  body[data-page="dashboard"][data-dashboard-layout],
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    background:var(--luria-shell-theme)!important;
+    background-color:var(--luria-shell-theme)!important;
+    background-image:none!important;
   }
 }
