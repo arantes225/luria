@@ -1040,6 +1040,27 @@
       .settings-reference-card{padding:15px}
     }
 
+
+    .settings-notion-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:14px;
+      border:1px solid var(--border);
+      border-radius:12px;
+      background:var(--surface-2);
+    }
+    .settings-notion-copy{display:grid;gap:4px;min-width:0}
+    .settings-notion-copy strong{font-size:13px;font-weight:650}
+    .settings-notion-copy small{color:var(--muted);font-size:11px;line-height:1.45}
+    .settings-notion-actions{display:flex;gap:8px;flex:0 0 auto}
+    @media(max-width:620px){
+      .settings-notion-row{align-items:stretch;flex-direction:column}
+      .settings-notion-actions{width:100%}
+      .settings-notion-actions .button{flex:1}
+    }
+
 </style>
   <link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=59-content-aligned">
   <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=3-work-settings">
@@ -1081,6 +1102,31 @@
           <button type="button" class="settings-tab" data-settings-tab="aparencia">Aparência</button>
           <button type="button" class="settings-tab" data-settings-tab="privacidade">Privacidade</button>
         </nav>
+
+        <section class="settings-section" data-settings-view="perfil" hidden>
+          <div class="settings-reference-grid">
+            <article class="settings-reference-card interface-card">
+              <div class="settings-reference-head">
+                <span class="settings-reference-icon" aria-hidden="true">N</span>
+                <div>
+                  <h2>Conexão com Notion</h2>
+                  <p>Conecte sua conta para usar as páginas do Notion diretamente nas Anotações da LURIA.</p>
+                </div>
+              </div>
+
+              <div class="settings-notion-row">
+                <div class="settings-notion-copy">
+                  <strong id="settings-notion-title">Notion</strong>
+                  <small id="settings-notion-status">Verificando conexão...</small>
+                </div>
+                <div class="settings-notion-actions">
+                  <button id="settings-notion-connect" class="button primary" type="button" hidden>Conectar Notion</button>
+                  <button id="settings-notion-disconnect" class="button secondary" type="button" hidden>Desconectar</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
 
         <section class="settings-section" data-settings-view="personalizar">
           <div class="settings-reference-grid">
@@ -1250,14 +1296,27 @@
         try { localStorage.setItem("docmap:theme:preview", theme.value); } catch {}
       });
 
-      document.querySelectorAll(".settings-tab").forEach((tab) => {
-        tab.addEventListener("click", () => {
-          document.querySelectorAll(".settings-tab").forEach((item) => {
-            item.classList.toggle("active", item === tab);
-            item.toggleAttribute("aria-current", item === tab);
-          });
+      const activateSettingsTab = (name) => {
+        const requested = document.querySelector('[data-settings-view="' + name + '"]');
+        const target = requested || document.querySelector('[data-settings-view="personalizar"]');
+
+        document.querySelectorAll(".settings-tab").forEach((item) => {
+          const active = item.dataset.settingsTab === (requested ? name : "personalizar");
+          item.classList.toggle("active", active);
+          item.toggleAttribute("aria-current", active);
         });
+
+        document.querySelectorAll("[data-settings-view]").forEach((section) => {
+          section.hidden = section !== target;
+        });
+      };
+
+      document.querySelectorAll(".settings-tab").forEach((tab) => {
+        tab.addEventListener("click", () => activateSettingsTab(tab.dataset.settingsTab || "personalizar"));
       });
+
+      const params = new URLSearchParams(window.location.search);
+      activateSettingsTab(params.get("section") || "personalizar");
     })();
   </script>
 
@@ -1268,7 +1327,7 @@
   <script src="assets/js/exam-priority-data.js?v=1"></script>
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
-  <script src="assets/js/configuracoes.js?v=13.3-auth"></script>
+  <script src="assets/js/configuracoes.js?v=14-notion-account"></script>
   <script src="assets/js/dashboard-layout-settings.js?v=2-work"></script>
   <script defer src="assets/js/pwa.js?v=5"></script>
 </body>
