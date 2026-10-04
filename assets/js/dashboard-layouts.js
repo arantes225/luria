@@ -602,3 +602,45 @@
   `;
   document.head.appendChild(style);
 })();
+
+
+/* DASHBOARD MASTER SHELL CHROME v15 — 2026-10-04 */
+(() => {
+  if (document.body?.dataset?.page !== "dashboard") return;
+
+  function mountDashboardChrome() {
+    if (window.innerWidth < 981) return;
+
+    const shell = document.querySelector("body[data-page='dashboard'] .app-shell");
+    const topbar = document.querySelector("body[data-page='dashboard'] .topbar");
+    const sidebar = document.querySelector("body[data-page='dashboard'] #sidebar.sidebar");
+    if (!shell || !topbar || !sidebar) return;
+
+    // Move the actual functional topbar into the blue shell.
+    // We move, not clone, so Search/Timer/Notifications/Profile keep all listeners.
+    if (topbar.parentElement !== shell) {
+      shell.appendChild(topbar);
+    }
+    topbar.classList.add("dashboard-shell-topbar");
+
+    // The brand stays inside the sidebar but must be allowed to overflow upward
+    // into the shell header.
+    sidebar.classList.add("dashboard-shell-sidebar");
+  }
+
+  const boot = () => {
+    mountDashboardChrome();
+    setTimeout(mountDashboardChrome, 150);
+    setTimeout(mountDashboardChrome, 500);
+    setTimeout(mountDashboardChrome, 1200);
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot, { once:true });
+  } else {
+    boot();
+  }
+
+  new MutationObserver(() => mountDashboardChrome())
+    .observe(document.documentElement, { childList:true, subtree:true });
+})();
