@@ -4885,37 +4885,3 @@ body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="e
   font-weight:400!important;
 }
 
-
-/* LURIA GLOBAL BLUE CALLOUT FRAME — 2026-10-04 */
-:root {
-  --luria-shell-frame: #1267E8;
-  --luria-shell-frame-shadow: rgba(18, 103, 232, 0.20);
-}
-
-/*
-  Moldura global do app inspirada no callout azul aprovado.
-  É puramente visual: não altera medidas, grids, sidebar, topbar
-  nem a área útil das páginas.
-*/
-@media (min-width: 901px) {
-  .app-shell::after {
-    content: "";
-    position: fixed;
-    inset: 8px;
-    border: 10px solid var(--luria-shell-frame);
-    border-radius: 28px;
-    box-shadow:
-      inset 0 0 0 1px rgba(255, 255, 255, 0.50),
-      0 10px 30px var(--luria-shell-frame-shadow);
-    pointer-events: none;
-    z-index: 2147483000;
-  }
-}
-
-/* No PWA/mobile a moldura fica desligada para não consumir área útil. */
-@media (max-width: 900px) {
-  .app-shell::after {
-    content: none !important;
-    display: none !important;
-  }
-}
