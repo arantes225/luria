@@ -6895,3 +6895,172 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     min-height:34px!important;
   }
 }
+
+
+/* DASHBOARD MASTER — TOP CONTROLS INNER ALIGNMENT v33 — 2026-10-04 */
+@media (min-width:981px){
+  /* Centraliza de verdade todos os conteúdos dentro dos callouts do topo. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar{
+    align-items:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notifications{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    min-height:43px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-command-trigger-topbar,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-toggle{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:43px!important;
+    height:43px!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+    line-height:1!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Buscar: ícone e texto ficam no mesmo eixo visual. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-command-trigger-topbar{
+    justify-content:flex-start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  :is(#luria-global-search,.luria-command-trigger-topbar)
+  .luria-command-search-icon{
+    display:block!important;
+    width:18px!important;
+    height:18px!important;
+    flex:0 0 18px!important;
+    margin:0!important;
+    align-self:center!important;
+    transform:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  :is(#luria-global-search,.luria-command-trigger-topbar) > span{
+    display:flex!important;
+    align-items:center!important;
+    height:100%!important;
+    margin:0!important;
+    line-height:1!important;
+  }
+
+  /* Timer: cronômetro e números centralizados no mesmo eixo. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-toggle{
+    gap:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-icon{
+    display:grid!important;
+    place-items:center!important;
+    width:20px!important;
+    height:20px!important;
+    flex:0 0 20px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-icon svg{
+    display:block!important;
+    width:20px!important;
+    height:20px!important;
+    margin:0!important;
+    transform:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-timer-compact{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    height:32px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-timer-ms{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    height:32px!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-timer-ms > strong{
+    display:block!important;
+    margin:0!important;
+    padding:0!important;
+    text-align:center!important;
+  }
+
+  /* Sino e perfil exatamente centralizados dentro dos quadrados. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notification-toggle,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-toggle{
+    display:grid!important;
+    place-items:center!important;
+    width:43px!important;
+    height:43px!important;
+    min-width:43px!important;
+    min-height:43px!important;
+    padding:0!important;
+    margin:0!important;
+    line-height:1!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notification-toggle svg{
+    display:block!important;
+    width:19px!important;
+    height:19px!important;
+    margin:0!important;
+    transform:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-toggle{
+    text-align:center!important;
+    font-size:16px!important;
+    line-height:43px!important;
+  }
+}
