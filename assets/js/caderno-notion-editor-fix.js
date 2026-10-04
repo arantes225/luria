@@ -16,6 +16,15 @@
   }
 
   function normalizeBlockText(el, type) {
+    if (type === "callout") {
+      const content = el?.querySelector?.(":scope > .notebook-callout-content, :scope > div");
+      if (content) {
+        const clone = content.cloneNode(true);
+        clone.querySelectorAll(".notebook-study-block").forEach(child => child.remove());
+        return String(clone.innerText || "").trimEnd();
+      }
+    }
+
     let text = String(el?.innerText || "").trimEnd();
     if (type === "to_do") text = text.replace(/^\s*[☐☑]\s*/, "");
     return text;
@@ -150,9 +159,13 @@
         el.classList.contains("memory") ? "memory" :
         "important";
 
-      const title = String(el.querySelector(":scope > strong")?.innerText || "").trim();
-      const body = String(el.querySelector(":scope > div")?.innerText || "").trim();
-      const text = [title, body].filter(Boolean).join("\n");
+      const content = el.querySelector(":scope > .notebook-callout-content, :scope > div");
+      let text = "";
+      if (content) {
+        const clone = content.cloneNode(true);
+        clone.querySelectorAll(".notebook-study-block").forEach(child => child.remove());
+        text = String(clone.innerText || "").trim();
+      }
 
       return {
         type: "callout",
@@ -200,20 +213,28 @@
     const out = [];
 
     for (const el of editor.querySelectorAll(selector)) {
-      if (el.closest("[data-notion-block-id]")) continue;
+      if (el.hasAttribute("data-notion-block-id")) continue;
 
-      // Se estiver dentro de um callout novo, só o callout pai vira bloco Notion.
-      if (!el.classList?.contains("notebook-study-block") && el.closest(".notebook-study-block")) {
+      const parentCallout = el.parentElement?.closest?.(".notebook-study-block") || null;
+
+      // Conteúdo textual comum dentro de um callout pertence ao próprio bloco.
+      // Um callout dentro de outro callout é um bloco filho real do Notion.
+      if (
+        parentCallout
+        && !el.classList?.contains("notebook-study-block")
+      ) {
         continue;
       }
 
       const block = notionBlockFromElement(el);
       if (!block) continue;
+      if (block.type !== "divider" && !String(block.text || "").trim() && block.type !== "callout") continue;
 
-      // Parágrafos vazios são apenas espaçamento visual do editor.
-      if (block.type !== "divider" && !String(block.text || "").trim()) continue;
-
-      out.push(block);
+      out.push({
+        ...block,
+        element: el,
+        parentCallout
+      });
     }
 
     return out;
@@ -257,14 +278,30 @@
       // tentar editar um bloco já arquivado.
       // Exclusão sincronizada será tratada por ação explícita, não por diff de DOM.
 
+      const createdIds = new Map();
+
       for (const block of collectNewBlocks(editor)) {
-        await invoke({
+        let parentBlockId = null;
+
+        if (block.parentCallout) {
+          parentBlockId =
+            block.parentCallout.dataset.notionBlockId
+            || createdIds.get(block.parentCallout)
+            || null;
+        }
+
+        const result = await invoke({
           action: "append_block",
           page_id: current.note.notion_page_id,
+          parent_block_id: parentBlockId,
           type: block.type,
           text: block.text,
           variant: block.variant || null
         });
+
+        if (result?.block?.id) {
+          createdIds.set(block.element, result.block.id);
+        }
       }
 
       await loadNotionIntoMainEditor(current.note);
