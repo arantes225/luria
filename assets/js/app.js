@@ -1234,7 +1234,8 @@ const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
-  estudar: { title: "Estudar", eyebrow: "Central de estudos", helper: "Escolha como você quer estudar agora." },
+  aprender: { title: "Aprender", eyebrow: "Central de aprendizagem", helper: "Escolha como você quer aprender agora." },
+  consolidar: { title: "Consolidar", eyebrow: "Fixação e prática", helper: "Revise, pratique e transforme conteúdo em conhecimento utilizável." },
   caderno: { title: "Anotações", eyebrow: "Notas e materiais", helper: "Registre, organize e encontre o que importa." },
   professor_alex: { title: "Professor Alex", eyebrow: "Aula guiada", helper: "Aprenda, tire dúvidas e transforme seu material em uma aula." },
   flashcards: { title: "Flashcards", eyebrow: "Revisão ativa", helper: "Revise no ritmo certo e fortaleça a memória." },
@@ -1275,7 +1276,8 @@ const PAGE_INFO = {
 const PAGE_FEATURES = {
   dashboard: "dashboard",
   cronograma: "cronograma",
-  estudar: "dashboard",
+  aprender: "dashboard",
+  consolidar: "dashboard",
   caderno: "caderno",
   flashcards: "flashcards",
   erros: "error_notebook",
@@ -1528,28 +1530,16 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("calendar")}</span><span>Cronograma</span>
         </a>
 
-        <a class="nav-link ${page === "estudar" ? "active" : ""}" href="/estudar/">
-          <span class="nav-icon">${luriaIcon("book")}</span><span>Estudar</span>
+        <a class="nav-link ${page === "aprender" ? "active" : ""}" href="/aprender/">
+          <span class="nav-icon">${luriaIcon("book")}</span><span>Aprender</span>
+        </a>
+
+        <a class="nav-link ${page === "consolidar" ? "active" : ""}" href="/consolidar/">
+          <span class="nav-icon">${luriaIcon("cards")}</span><span>Consolidar</span>
         </a>
 
         <a class="nav-link ${page === "desafio" ? "active" : ""}" href="/desafio-diario/">
           <span class="nav-icon">${luriaIcon("target")}</span><span>Desafio Diário</span>
-        </a>
-
-        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
-          <span class="nav-icon">${luriaIcon("file")}</span><span>Questões e Simulados</span>
-        </a>
-
-        <a class="nav-link ${page === "flashcards" ? "active" : ""}" href="/flashcards/">
-          <span class="nav-icon">${luriaIcon("cards")}</span><span>Flashcards</span>
-        </a>
-
-        <a class="nav-link ${page === "erros" ? "active" : ""}" href="/caderno-erros/">
-          <span class="nav-icon">${luriaIcon("clipboard")}</span><span>Caderno de erros</span>
-        </a>
-
-        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/">
-          <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Prática clínica</span>
         </a>
 
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
