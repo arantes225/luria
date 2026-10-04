@@ -5921,3 +5921,68 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     color:#fff!important;
   }
 }
+
+
+/* DASHBOARD MASTER — INNER CONTENT REALIGN v16 — 2026-10-04 */
+@media (min-width:981px){
+  /* Corrige a expansão anterior sem empurrar os elementos para fora do painel branco. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    transform:none!important;
+    width:auto!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    margin-bottom:0!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    transform:none!important;
+    width:auto!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    margin-bottom:0!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+    padding-bottom:18px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .page,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Evita que cards e botões sejam cortados nas bordas do callout. */
+  body[data-page="dashboard"][data-dashboard-layout] .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-study-now,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-study-time-options,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-side,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-agenda-study-pair{
+    min-width:0!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] :is(
+    button,
+    .dl-primary,
+    .dl-start,
+    .dl-study-time-options button,
+    .dl-card a
+  ){
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Reserva uma folga real na direita e embaixo para nada encostar/cortar. */
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+    padding-right:2px!important;
+    padding-bottom:2px!important;
+  }
+}
