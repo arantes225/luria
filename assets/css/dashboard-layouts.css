@@ -7842,3 +7842,13 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     transition:background-color 9999s ease-out 0s!important;
   }
 }
+
+
+/* DASHBOARD TOPBAR — SEARCH REMOVED v44 — 2026-10-04 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search{
+    display:none!important;
+  }
+}
