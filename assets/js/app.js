@@ -1275,7 +1275,6 @@ const PAGE_FEATURES = {
   dashboard: "dashboard",
   cronograma: "cronograma",
   caderno: "caderno",
-  professor_alex: "ai",
   flashcards: "flashcards",
   erros: "error_notebook",
   questoes: "questions",
@@ -1535,11 +1534,12 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("notebook")}</span><span>Anotações</span>
         </a>
 
+        ${isAdmin ? `
         <a class="nav-link ${page === "professor_alex" ? "active" : ""}" href="/professor-alex/">
           <span class="nav-icon">${luriaIcon("book")}</span><span>Professor Alex</span>
         </a>
 
-        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
+        ` : ""}        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
           <span class="nav-icon">${luriaIcon("file")}</span><span>Questões e Simulados</span>
         </a>
 
@@ -6297,6 +6297,17 @@ async function iniciarApp() {
   const user =
     data.session.user;
 
+  // Professor Alex é recurso interno em desenvolvimento: acesso exclusivo de admin.
+  if (page === "professor_alex") {
+    const professorAlexAdmin =
+      await verificarAcessoAdmin();
+
+    if (professorAlexAdmin !== true) {
+      window.location.replace("/dashboard/");
+      return;
+    }
+  }
+
   // O ambiente Trabalho é liberado para Admin e planos Plus/Pro/Betatester.
   // Usa entitlements do servidor; em falha transitória, carregarEntitlements preserva
   // o último entitlement válido em cache sem rebaixar silenciosamente o usuário.
@@ -6636,7 +6647,10 @@ async function iniciarApp() {
             return;
           }
 
-          if (page === "admin") {
+          if (
+            page === "admin"
+            || page === "professor_alex"
+          ) {
             window.location.replace(
               "/dashboard/"
             );
