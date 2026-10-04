@@ -4443,3 +4443,42 @@ body[data-page="caderno"] .notebook-notion-reader.is-editing .notebook-notion-re
 body[data-page="caderno"] .notebook-notion-reader.is-editing .notebook-notion-reader-content [data-notion-editable="1"]:hover{
   background:var(--surface-2);
 }
+
+
+/* LURIA — correção final do botão Salvar em Ações rápidas */
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit,
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle{
+  width:100%!important;
+  height:31px!important;
+  min-height:31px!important;
+  max-height:31px!important;
+  margin:0!important;
+  padding:0 9px!important;
+  border-radius:6px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:8px!important;
+  box-sizing:border-box!important;
+  line-height:1!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit > span,
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle > span{
+  font-size:8px!important;
+  line-height:1!important;
+  font-weight:650!important;
+  letter-spacing:0!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit svg,
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle svg{
+  width:14px!important;
+  height:14px!important;
+  flex:0 0 14px!important;
+  margin:0!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle{
+  background:var(--accent)!important;
+  border:1px solid var(--accent)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
