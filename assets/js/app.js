@@ -1717,9 +1717,17 @@ function applyThemeSetting(setting) {
 
 async function carregarTema(userId) {
   const cachedTheme = readCachedTheme(userId);
+  const themeFetchedAtKey = `docmap:theme-fetched-at:${userId}`;
+  const themeFetchedAt = Number(localStorage.getItem(themeFetchedAtKey) || 0);
+  const themeCacheFresh = cachedTheme && (Date.now() - themeFetchedAt < 6 * 60 * 60 * 1000);
 
   if (cachedTheme) {
     applyThemeSetting(cachedTheme);
+  }
+
+  // Tema não é dado de autorização. Evita consultar user_settings a cada troca de página.
+  if (themeCacheFresh) {
+    return cachedTheme;
   }
 
   const { data, error } = await sb
@@ -1730,6 +1738,7 @@ async function carregarTema(userId) {
 
   if (!error && data?.theme) {
     writeCachedTheme(userId, data.theme);
+    localStorage.setItem(themeFetchedAtKey, String(Date.now()));
     applyThemeSetting(data.theme);
     return data.theme;
   }
@@ -1768,6 +1777,7 @@ async function salvarTema(theme) {
   const savedTheme = data?.theme || theme;
 
   writeCachedTheme(userId, savedTheme);
+  localStorage.setItem(`docmap:theme-fetched-at:${userId}`, String(Date.now()));
   applyThemeSetting(savedTheme);
 }
 
@@ -4124,6 +4134,23 @@ function ensureNotificationCenter() {
 
   const loadPomodoroConfig = async () => {
     if (!window.docmapUser?.id || !window.supabaseClient) return;
+
+    const cacheKey = `docmap:pomodoro-config:${window.docmapUser.id}`;
+    try {
+      const cached = JSON.parse(sessionStorage.getItem(cacheKey) || "null");
+      if (cached?.saved_at && Date.now() - Number(cached.saved_at) < 6 * 60 * 60 * 1000) {
+        pomodoroDurations.focus = Math.min(240, Math.max(1, Number(cached.focus) || 25));
+        pomodoroDurations.break = Math.min(120, Math.max(1, Number(cached.break) || 5));
+        if (pomodoroFocusInput) pomodoroFocusInput.value = pomodoroDurations.focus;
+        if (pomodoroBreakInput) pomodoroBreakInput.value = pomodoroDurations.break;
+        if (!pomodoroTimer) {
+          pomodoroRemaining = pomodoroDurations[pomodoroMode] * 60;
+          renderPomodoro();
+        }
+        return;
+      }
+    } catch {}
+
     const { data, error } = await window.supabaseClient
       .from("user_settings")
       .select("pomodoro_focus_minutes,pomodoro_break_minutes")
@@ -4137,6 +4164,13 @@ function ensureNotificationCenter() {
 
     pomodoroDurations.focus = Math.min(240, Math.max(1, Number(data?.pomodoro_focus_minutes) || 25));
     pomodoroDurations.break = Math.min(120, Math.max(1, Number(data?.pomodoro_break_minutes) || 5));
+    try {
+      sessionStorage.setItem(cacheKey, JSON.stringify({
+        focus: pomodoroDurations.focus,
+        break: pomodoroDurations.break,
+        saved_at: Date.now()
+      }));
+    } catch {}
     if (pomodoroFocusInput) pomodoroFocusInput.value = pomodoroDurations.focus;
     if (pomodoroBreakInput) pomodoroBreakInput.value = pomodoroDurations.break;
     if (!pomodoroTimer) {
@@ -7191,11 +7225,24 @@ iniciarApp();
 
   async function checkBetaFeedback() {
     if (checking || submitted || !window.supabaseClient || !window.docmapUser?.id) return;
+
+    const cacheKey = `docmap:beta-feedback-status:${window.docmapUser.id}`;
+    try {
+      const lastCheck = Number(sessionStorage.getItem(cacheKey) || 0);
+      if (lastCheck && Date.now() - lastCheck < 60 * 60 * 1000) return;
+    } catch {}
+
     checking = true;
     try {
       const { data, error } = await window.supabaseClient.rpc("beta_feedback_status");
       if (error) throw error;
-      if (!data?.is_beta_tester || !data?.due) return;
+
+      if (!data?.is_beta_tester || !data?.due) {
+        try {
+          sessionStorage.setItem(cacheKey, String(Date.now()));
+        } catch {}
+        return;
+      }
 
       const overlay = createModal();
       overlay.hidden = false;
