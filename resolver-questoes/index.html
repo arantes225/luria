@@ -63,22 +63,28 @@
     .qr-font-control{height:28px;min-width:30px;padding:0 8px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;font-size:10px;cursor:pointer}
     .qr-font-control:hover{background:var(--surface-2)}
     .qr-font-reset{font-size:8px;color:var(--muted)}
-    .qr-stem{font-size:var(--qr-text-size,11px)}
-    .qr-option>span:last-child{font-size:var(--qr-text-size,11px)}
+    .qr-stem{font-size:var(--qr-text-size,11px);text-align:left}
+    .qr-option-text{font-size:var(--qr-text-size,11px);text-align:left;line-height:1.58}
+    .qr-cut{width:28px;height:28px;display:grid;place-items:center;justify-self:end;align-self:center;border:0;border-radius:7px;background:transparent;color:var(--accent);cursor:pointer;flex:0 0 auto}
+    .qr-cut:hover{background:var(--accent-soft)}
+    .qr-cut svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .qr-option.eliminated .qr-option-text{text-decoration:line-through;opacity:.5}
+    .qr-option.eliminated .qr-letter{opacity:.45}
+    .qr-option.eliminated .qr-cut{opacity:.7}
     mark[data-qr-highlight]{border-radius:2px;padding:0 .04em}
     .qr-question-meta{margin:0;padding:12px 14px 0;gap:5px}
     .qr-pill{font-size:7.5px;padding:3px 7px;border-radius:999px;font-weight:650}
     .qr-stem{padding:11px 14px 3px;font-size:11px;line-height:1.58}
     .qr-image{margin:10px auto 4px}
     .qr-options{gap:0;margin-top:8px;padding:0 14px 8px}
-    .qr-option{width:100%;display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:flex-start;text-align:left;min-height:54px;padding:10px 4px;border:0;border-top:1px solid color-mix(in srgb,var(--border) 66%,transparent);border-radius:0;background:transparent;color:var(--text);font:inherit;cursor:pointer}
+    .qr-option{width:100%;display:grid;grid-template-columns:32px minmax(0,1fr) 32px;gap:10px;align-items:flex-start;text-align:left;min-height:54px;padding:10px 4px;border:0;border-top:1px solid color-mix(in srgb,var(--border) 66%,transparent);border-radius:0;background:transparent;color:var(--text);font:inherit;cursor:pointer}
     .qr-option:first-child{border-top:0}
     .qr-option:hover{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:var(--surface-2)}
     .qr-option.selected{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:var(--accent-soft)}
     .qr-option.correct{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:color-mix(in srgb,var(--success) 8%,var(--surface))}
     .qr-option.wrong{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}
     .qr-letter{width:24px;height:24px;min-width:24px;min-height:24px;aspect-ratio:1 / 1;box-sizing:border-box;display:grid;place-items:center;justify-self:start;align-self:flex-start;flex-shrink:0;border-radius:50%;border:1px solid color-mix(in srgb,var(--accent) 72%,var(--border));background:transparent;color:var(--accent);font-size:9px;font-weight:650;line-height:1}
-    .qr-option>span:last-child{display:block;width:100%;margin:0;text-align:left;line-height:1.45;padding-top:2px}
+    .qr-option-text{display:block;width:100%;margin:0;text-align:left;line-height:1.58;padding-top:2px}
     .qr-option.selected .qr-letter{background:var(--accent);border-color:var(--accent);color:#fff}
     .qr-actions{margin:0 14px;padding:10px 0 11px}
     .qr-feedback{margin:0 14px;padding-top:10px}
@@ -89,6 +95,7 @@
       .qr-tool{width:25px;height:25px}
       .qr-question-meta,.qr-stem{padding-left:11px;padding-right:11px}
       .qr-options{padding-left:11px;padding-right:11px}
+      .qr-option{grid-template-columns:30px minmax(0,1fr) 30px;gap:8px}
       .qr-actions,.qr-feedback,.qr-status{margin-left:11px;margin-right:11px}
     }
   </style>
@@ -184,7 +191,7 @@
  const sb=window.supabaseClient, p=new URLSearchParams(location.search), requested=p.get("set_id"), isDaily=p.get("daily")==="1";
  const DAILY_LIMIT=50, DAILY_PER_LOT=25;
  const DAILY_LOT_TITLES=["Lote 1 — questões aprovadas","Lote 2 — questões aprovadas"];
- const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),started:Date.now(),highlight:false,highlightColor:"#fff1a8",fontSize:11};
+ const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),eliminated:new Map(),started:Date.now(),highlight:false,highlightColor:"#fff1a8",fontSize:11};
  const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
  function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
  function firstUnanswered(){const i=state.items.findIndex(x=>!state.attempts.has(x.id));return i<0?0:i}
@@ -195,8 +202,9 @@
   state.started=Date.now(); const at=state.attempts.get(item.id), sel=state.selected.get(item.id)||String(at?.selected_option||"").toUpperCase(), confirmed=!!at, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
   $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Área não classificada";$("qr-materia").textContent=item.materia||item.subject||"Matéria não classificada";$("qr-difficulty").textContent=item.difficulty||"Não informada";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Sem tags"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
   const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url); if(hasQuestionImage){img.src=item.image_url;img.hidden=false}else{img.hidden=true;img.removeAttribute("src");img.style.display="none"} if(hasQuestionImage) img.style.removeProperty("display")
-  const os=opts(item);$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span>'+esc(o.t)+'</span></button>'}).join("");
-  document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=()=>{state.selected.set(item.id,b.dataset.opt);render()});
+  const os=opts(item),cutSet=state.eliminated.get(item.id)||new Set();$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(cutSet.has(o.k))cl+=" eliminated";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span class="qr-option-text">'+esc(o.t)+'</span><span class="qr-cut" data-cut="'+o.k+'" role="button" tabindex="0" aria-label="Eliminar alternativa '+o.k+'"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="m8.2 8.2 11.3 7.3"/><path d="m8.2 15.8 11.3-7.3"/></svg></span></button>'}).join("");
+  document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=e=>{if(e.target.closest("[data-cut]"))return;state.selected.set(item.id,b.dataset.opt);render()});
+  document.querySelectorAll("[data-cut]").forEach(c=>{c.onclick=e=>{e.stopPropagation();if(confirmed)return;const set=state.eliminated.get(item.id)||new Set();if(set.has(c.dataset.cut))set.delete(c.dataset.cut);else set.add(c.dataset.cut);state.eliminated.set(item.id,set);if(state.selected.get(item.id)===c.dataset.cut)state.selected.delete(item.id);render()};c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}}});
   const fb=$("qr-feedback"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";fb.hidden=false;fb.innerHTML='<div class="qr-result '+(ok?"correct":"wrong")+'">'+(correct?(ok?"Resposta correta":"Resposta incorreta · gabarito: "+esc(correct)):"Resposta registrada")+'</div><div class="qr-justification"><strong>Justificativa</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div><div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div>'}else{fb.hidden=true;fb.innerHTML=""}
   $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Próxima questão →":"Ver resposta →";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
   $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
