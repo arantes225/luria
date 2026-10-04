@@ -1234,7 +1234,7 @@ const PAGE_INFO = {
   dashboard: { title: "Dashboard", eyebrow: "Visão geral", helper: "Seu dia de estudos em um só lugar." },
   sessao_estudo: { title: "Sessão de estudo do dia", eyebrow: "Estudar agora", helper: "Complete as etapas planejadas para hoje no seu ritmo." },
   cronograma: { title: "Cronograma", eyebrow: "Aulas e compromissos", helper: "Organize o que estudar e quando revisar." },
-  caderno: { title: "Anotações", eyebrow: "Notas e materiais", helper: "Registre, organize e encontre o que importa." },
+  caderno: { title: "Anotações", eyebrow: "Notas e materiais", helper: "Registre, organize e encontre o que importa." },\n  professor_alex: { title: "Professor Alex", eyebrow: "Aula guiada", helper: "Aprenda, tire dúvidas e transforme seu material em uma aula." },
   flashcards: { title: "Flashcards", eyebrow: "Revisão ativa", helper: "Revise no ritmo certo e fortaleça a memória." },
   erros: { title: "Caderno de erros", eyebrow: "Estudar", helper: "Transforme seus erros em revisão direcionada." },
   questoes: { title: "Questões e Simulados", eyebrow: "Prática e provas", helper: "Treine, meça seu desempenho e evolua." },
@@ -1533,7 +1533,7 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("notebook")}</span><span>Anotações</span>
         </a>
 
-        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
+        <a class="nav-link ${page === "professor_alex" ? "active" : ""}" href="/professor-alex/">\n          <span class="nav-icon">${luriaIcon("book")}</span><span>Professor Alex</span>\n        </a>\n\n        <a class="nav-link ${page === "questoes" ? "active" : ""}" href="/questoes-simulados/">
           <span class="nav-icon">${luriaIcon("file")}</span><span>Questões e Simulados</span>
         </a>
 
