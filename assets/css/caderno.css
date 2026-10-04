@@ -4482,3 +4482,13 @@ body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-
   color:#fff!important;
   box-shadow:none!important;
 }
+
+
+/* ANOTAÇÕES — callouts aninhados como no Notion */
+body[data-page="caderno"] .notebook-study-block .notebook-study-block{
+  margin:10px 0 2px 14px!important;
+  border-radius:9px!important;
+}
+body[data-page="caderno"] .notebook-study-block .notebook-callout-content{
+  display:block;
+}
