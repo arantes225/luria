@@ -5430,3 +5430,99 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background-image:none!important;
   }
 }
+
+
+/* DASHBOARD — TOP CONTROLS ON BLUE + WIDER WHITE PANEL v9 — 2026-10-04 */
+@media (min-width:981px){
+  /* Faz o painel branco ganhar mais largura para os lados,
+     mantendo apenas um filete azul fino externo. */
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    padding-left:3px!important;
+    padding-right:3px!important;
+    padding-bottom:3px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    margin-left:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    margin-right:0!important;
+  }
+
+  /* Controles superiores ficam visualmente na faixa azul. */
+  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+    top:-59px!important;
+    left:0!important;
+    right:0!important;
+    height:54px!important;
+    min-height:54px!important;
+    max-height:54px!important;
+    padding:0 12px!important;
+    background:transparent!important;
+    z-index:10!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-topbar-controls,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-notifications,
+  body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-account{
+    position:relative!important;
+    z-index:11!important;
+  }
+
+  /* Busca, timer, sino e login/perfil: fundo translúcido sobre o azul */
+  body[data-page="dashboard"][data-dashboard-layout] .topbar :is(
+    .dl-pomodoro,
+    .luria-pomodoro-toggle,
+    .luria-notification-toggle,
+    .luria-profile-toggle,
+    .dl-avatar,
+    .dl-account,
+    .dl-timer-settings-toggle,
+    [data-global-search-trigger],
+    .global-search-trigger,
+    .luria-global-search-trigger,
+    .luria-global-search,
+    .global-search,
+    input[type="search"]
+  ){
+    border-color:rgba(255,255,255,.28)!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+    box-shadow:none!important;
+    backdrop-filter:blur(8px)!important;
+    -webkit-backdrop-filter:blur(8px)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .topbar :is(
+    .dl-pomodoro,
+    .luria-pomodoro-toggle,
+    .luria-notification-toggle,
+    .luria-profile-toggle,
+    .dl-avatar,
+    .dl-account,
+    .dl-timer-settings-toggle,
+    [data-global-search-trigger],
+    .global-search-trigger,
+    .luria-global-search-trigger,
+    .luria-global-search,
+    .global-search
+  ):hover{
+    background:rgba(255,255,255,.17)!important;
+    border-color:rgba(255,255,255,.40)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .topbar :is(
+    svg,
+    span,
+    strong,
+    small,
+    input[type="search"]
+  ){
+    color:#fff!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .topbar input[type="search"]::placeholder{
+    color:rgba(255,255,255,.82)!important;
+  }
+}
