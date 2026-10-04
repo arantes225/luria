@@ -17071,8 +17071,19 @@ function updateNotionConnectionUi() {
   const connect = document.getElementById("notebook-notion-connect");
   const firstConnect = document.getElementById("notebook-notion-first-connect");
 
-  if (connect) connect.hidden = notionSourceState.connected;
-  if (firstConnect) firstConnect.hidden = notionSourceState.connected;
+  if (notionSourceState.connected) {
+    try { localStorage.setItem("luria:notion:ever-connected", "1"); } catch {}
+  }
+
+  let everConnected = notionSourceState.connected;
+  try {
+    everConnected = everConnected || localStorage.getItem("luria:notion:ever-connected") === "1";
+  } catch {}
+
+  const showFirstConnection = !notionSourceState.connected && !everConnected;
+
+  if (connect) connect.hidden = !showFirstConnection;
+  if (firstConnect) firstConnect.hidden = !showFirstConnection;
 }
 
 function renderNotionPages(pages = notionSourceState.pages) {
