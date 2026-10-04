@@ -6473,3 +6473,54 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     min-height:34px!important;
   }
 }
+
+
+/* DASHBOARD MASTER — TOPBAR ICON ALIGNMENT v26 — 2026-10-04 */
+@media (min-width:981px){
+  /* Padroniza o alinhamento vertical dos callouts de notificações e perfil. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notification-toggle,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-toggle{
+    display:grid!important;
+    place-items:center!important;
+    align-items:center!important;
+    justify-items:center!important;
+    padding:0!important;
+    line-height:1!important;
+    vertical-align:middle!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notification-toggle > svg{
+    display:block!important;
+    width:19px!important;
+    height:19px!important;
+    margin:0!important;
+    padding:0!important;
+    transform:none!important;
+    align-self:center!important;
+    justify-self:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-toggle{
+    font-size:16px!important;
+    font-weight:850!important;
+    letter-spacing:-.02em!important;
+    text-align:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-top,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notifications{
+    align-items:center!important;
+  }
+}
