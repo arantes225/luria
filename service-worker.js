@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v225-global-blue-frame";
+const CACHE_VERSION = "luria-pwa-v226-hostinger-shell";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
