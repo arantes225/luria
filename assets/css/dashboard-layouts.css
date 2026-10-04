@@ -6318,3 +6318,84 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     color:#fff!important;
   }
 }
+
+
+/* DASHBOARD MASTER — SCROLL INSIDE WHITE PANEL v24 — 2026-10-04 */
+@media (min-width:981px){
+  /* O documento externo não rola mais; a rolagem fica inteiramente
+     dentro do painel branco do conteúdo. Assim o thumb nunca invade a faixa azul. */
+  html:has(body[data-page="dashboard"][data-dashboard-layout]),
+  body[data-page="dashboard"][data-dashboard-layout]{
+    height:100%!important;
+    min-height:100%!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    min-height:0!important;
+    height:100%!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain!important;
+    scrollbar-gutter:auto!important;
+    border-radius:0 18px 18px 0!important;
+  }
+
+  /* A página acompanha a altura natural do conteúdo; quem rola é .main. */
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+    height:auto!important;
+    min-height:100%!important;
+    overflow:visible!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+    height:auto!important;
+    min-height:100%!important;
+    overflow:visible!important;
+  }
+
+  /* Scroll do painel branco: só o thumb, sem trilho/fundo/setas. */
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar{
+    width:8px!important;
+    background:transparent!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar-track,
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar-track-piece,
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar-button,
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar-button:single-button,
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar-button:double-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    background:transparent!important;
+    background-image:none!important;
+    border:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+    box-shadow:none!important;
+    min-height:34px!important;
+  }
+}
