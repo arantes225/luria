@@ -6626,3 +6626,70 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     background-image:none!important;
   }
 }
+
+
+/* DASHBOARD MASTER — LOGO PATTERN INSIDE WHITE PANEL v29 — 2026-10-04 */
+@media (min-width:981px){
+  /* Fundo decorativo com várias logos somente dentro da área branca. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar,
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    position:relative!important;
+    isolation:isolate!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main::before{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:-12%!important;
+    z-index:0!important;
+    pointer-events:none!important;
+    background-image:url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v29")!important;
+    background-repeat:repeat!important;
+    background-size:132px 132px!important;
+    background-position:0 0!important;
+    opacity:.018!important;
+    transform:rotate(-8deg) scale(1.08)!important;
+    transform-origin:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after,
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:-12%!important;
+    z-index:0!important;
+    pointer-events:none!important;
+    background-image:url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v29")!important;
+    background-repeat:repeat!important;
+    background-size:132px 132px!important;
+    background-position:66px 66px!important;
+    opacity:.018!important;
+    transform:rotate(-8deg) scale(1.08)!important;
+    transform-origin:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar > *,
+  body[data-page="dashboard"][data-dashboard-layout] .main > *{
+    position:relative!important;
+    z-index:1!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v29")!important;
+    opacity:.026!important;
+  }
+
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v29")!important;
+    opacity:.022!important;
+  }
+}
