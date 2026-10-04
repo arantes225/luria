@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v228-blue-corners";
+const CACHE_VERSION = "luria-pwa-v229-force-shell-assets";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -18,11 +18,12 @@ const APP_SHELL = [
   "/questoes-simulados/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/css/style.css?v=20260929-crono-cachefix1",
-  "/assets/css/luria-brand-v5.css?v=77-cronograma-cachefix",
+  "/assets/css/style.css?v=20261004-shell-v3",
+  "/assets/css/luria-brand-v5.css?v=20261004-shell-v3",
+  "/assets/css/dashboard-layouts.css?v=20261004-shell-v3",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=20261002-mode-switch-theme",
+  "/assets/js/app.js?v=20261004-shell-v3",
   "/assets/js/luria-command-center.js?v=20261002-1",
   "/assets/css/luria-command-center.css?v=20261002-1",
   "/mini-osce/",
