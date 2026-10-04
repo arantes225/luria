@@ -14,10 +14,8 @@
     body[data-page="questoes"] .page{max-width:none;padding:0 18px 18px}
     body[data-page="questoes"] .main{min-width:0}
     .qr-topbar{display:none}
-    .qr-navrow{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;margin:2px 0 10px}
+    .qr-navrow{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:18px;margin:2px 0 10px}
     .qr-back{display:inline-flex;align-items:center;gap:7px;border:0;background:transparent;color:var(--text);font:inherit;font-size:10px;font-weight:750;cursor:pointer;text-decoration:none;white-space:nowrap}
-    .qr-tabs{justify-self:center;display:flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--border);border-radius:11px;background:var(--surface)}
-    .qr-tab{height:30px;padding:0 15px;border:0;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:9px;font-weight:800;cursor:pointer;display:flex;align-items:center;gap:7px}.qr-tab.active{background:var(--accent);color:#fff}.qr-tab svg{width:13px;height:13px}
     .qr-counter{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:9px;font-weight:750;white-space:nowrap}.qr-counter button{width:28px;height:28px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);cursor:pointer}
     .qr-layout{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:12px;align-items:start}
     .qr-card,.qr-side-card{border:1px solid var(--border);background:var(--surface);box-shadow:none}
@@ -31,14 +29,19 @@
     .qr-side{display:grid;gap:8px}.qr-side-card{border-radius:10px;padding:11px}.qr-side-title{display:flex;align-items:center;gap:6px;font-size:9px;font-weight:900;color:var(--text);margin-bottom:8px}.qr-side-title svg{width:13px;height:13px;color:var(--accent)}
     .qr-performance{display:grid;grid-template-columns:78px 1fr;align-items:center;gap:8px}.qr-ring{width:70px;height:70px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--success) 0 78%,var(--surface-2) 78% 100%);position:relative}.qr-ring:after{content:"";position:absolute;inset:7px;border-radius:50%;background:var(--surface)}.qr-ring-label{position:relative;z-index:1;text-align:center}.qr-ring-label strong{display:block;font-size:13px}.qr-ring-label small{display:block;font-size:7px;color:var(--muted)}
     .qr-perf-list{display:grid;gap:5px}.qr-perf-row{display:flex;justify-content:space-between;gap:6px;font-size:8px}.qr-perf-row span{color:var(--muted)}.qr-perf-row b{font-size:8px}
+    .qr-answer-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:10px}
+    .qr-answer-cell{aspect-ratio:1/1;min-width:0;border:1px solid var(--border);border-radius:6px;background:var(--surface-2);display:grid;place-items:center;font-size:8px;font-weight:800;color:var(--muted);cursor:pointer}
+    .qr-answer-cell.current{outline:2px solid color-mix(in srgb,var(--accent) 55%,transparent);outline-offset:1px}
+    .qr-answer-cell.correct{background:color-mix(in srgb,var(--success) 16%,var(--surface));border-color:color-mix(in srgb,var(--success) 55%,var(--border));color:var(--success)}
+    .qr-answer-cell.wrong{background:color-mix(in srgb,var(--danger) 14%,var(--surface));border-color:color-mix(in srgb,var(--danger) 55%,var(--border));color:var(--danger)}
     .qr-time-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.qr-time-item small{display:block;font-size:7px;color:var(--muted)}.qr-time-item strong{display:block;margin-top:3px;font-size:10px}.qr-time-item.good strong{color:var(--success)}
     .qr-tags{display:flex;flex-wrap:wrap;gap:5px}.qr-tag{padding:4px 6px;border-radius:6px;background:var(--surface-2);font-size:7px;font-weight:750;color:var(--muted)}
     .qr-history{height:58px;display:flex;align-items:end;gap:5px;padding:5px 2px 0;border-bottom:1px solid var(--border)}.qr-bar{flex:1;min-width:5px;border-radius:4px 4px 0 0;background:color-mix(in srgb,var(--accent) 72%,var(--surface));opacity:.9}
     .qr-recent{display:grid;gap:5px}.qr-recent-row{display:grid;grid-template-columns:8px 1fr auto;gap:6px;align-items:center;font-size:7px}.qr-dot{width:7px;height:7px;border-radius:50%;background:var(--success)}.qr-dot.bad{background:var(--danger)}.qr-recent-row span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}.qr-recent-row b{font-size:7px;color:var(--muted)}
     .qr-status{min-height:14px;margin-top:5px;color:var(--muted);font-size:8px}.qr-empty{padding:40px;text-align:center;color:var(--muted)}
     mark[data-qr-highlight]{background:#fff1a8;border-radius:2px}
-    @media(max-width:980px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:repeat(2,minmax(0,1fr))}.qr-navrow{grid-template-columns:auto 1fr}.qr-counter{grid-column:1/-1;justify-self:end}.qr-tabs{justify-self:end}}
-    @media(max-width:720px){body[data-page="questoes"] .page{padding:0 10px 12px}.qr-navrow{grid-template-columns:1fr auto}.qr-tabs{grid-column:1/-1;grid-row:2;justify-self:stretch;overflow:auto}.qr-tab{flex:1;justify-content:center;padding-inline:9px}.qr-counter{grid-column:2;grid-row:1}.qr-layout{display:block}.qr-side{display:none}.qr-card{padding:13px}.qr-option{padding:8px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr 1fr}.qr-btn{justify-content:center}.qr-btn.primary{width:100%}}
+    @media(max-width:980px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:repeat(2,minmax(0,1fr))}.qr-navrow{grid-template-columns:auto 1fr}.qr-counter{justify-self:end}}
+    @media(max-width:720px){body[data-page="questoes"] .page{padding:0 10px 12px}.qr-navrow{grid-template-columns:1fr auto}.qr-counter{grid-column:2;grid-row:1}.qr-layout{display:block}.qr-side{display:none}.qr-card{padding:13px}.qr-option{padding:8px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr 1fr}.qr-btn{justify-content:center}.qr-btn.primary{width:100%}}
 
     /* Referência visual do card — 2026-10-04 */
     .qr-card{border-radius:13px;padding:0;overflow:hidden;background:var(--surface)}
@@ -103,12 +106,6 @@
 
     <div class="qr-navrow">
       <a class="qr-back" href="/questoes-simulados/">‹ Voltar</a>
-      <nav class="qr-tabs" aria-label="Abas da questão">
-        <button class="qr-tab active" type="button">▣ Questão</button>
-        <button class="qr-tab" type="button">◯ Comentário</button>
-        <button class="qr-tab" type="button">▥ Estatísticas</button>
-        <button class="qr-tab" type="button">▤ Referências</button>
-      </nav>
       <div class="qr-counter"><span id="qr-progress-text">Questão 0 de 0</span><button id="qr-prev" type="button">‹</button><button id="qr-next" type="button">›</button></div>
     </div>
     <div id="qr-loading" class="qr-card qr-empty">Carregando questões...</div>
@@ -158,9 +155,10 @@
       </article>
       <aside class="qr-side">
         <article class="qr-side-card">
-          <div class="qr-side-title">◉ Meu desempenho neste tema</div>
-          <div class="qr-performance"><div class="qr-ring" id="qr-ring"><div class="qr-ring-label"><strong id="qr-accuracy">78%</strong><small>de acerto</small></div></div>
-          <div class="qr-perf-list"><div class="qr-perf-row"><span>Acertos</span><b id="qr-hits">39</b></div><div class="qr-perf-row"><span>Erros</span><b id="qr-errors">11</b></div><div class="qr-perf-row"><span>Em branco</span><b id="qr-blank">0</b></div><div class="qr-perf-row"><span>Total</span><b id="qr-total">50</b></div></div></div>
+          <div class="qr-side-title">◉ Meu desempenho neste simulado</div>
+          <div class="qr-performance"><div class="qr-ring" id="qr-ring"><div class="qr-ring-label"><strong id="qr-accuracy">0%</strong><small>de acerto</small></div></div>
+          <div class="qr-perf-list"><div class="qr-perf-row"><span>Acertos</span><b id="qr-hits">0</b></div><div class="qr-perf-row"><span>Erros</span><b id="qr-errors">0</b></div><div class="qr-perf-row"><span>Em branco</span><b id="qr-blank">0</b></div><div class="qr-perf-row"><span>Total</span><b id="qr-total">0</b></div></div></div>
+          <div id="qr-answer-grid" class="qr-answer-grid" aria-label="Gabarito do simulado"></div>
         </article>
         <article class="qr-side-card"><div class="qr-side-title">◷ Tempo estimado</div><div class="qr-time-grid"><div class="qr-time-item"><small>Seu tempo</small><strong id="qr-clock">1 min 30 s</strong></div><div class="qr-time-item good"><small>Seu tempo médio</small><strong>1 min 12 s</strong></div></div></article>
         <article class="qr-side-card"><div class="qr-side-title">◇ Tags da questão</div><div class="qr-tags" id="qr-tags"><span class="qr-tag">Infarto Agudo do Miocárdio</span><span class="qr-tag">IAM com Supra de ST</span><span class="qr-tag">Conduta inicial</span><span class="qr-tag">Reperfusão</span></div></article>
@@ -196,7 +194,9 @@
   $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Próxima questão →":"Ver resposta →";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
   $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
   const total=state.items.length;$("qr-progress-text").textContent="Questão "+(state.index+1)+" de "+total;$("qr-card-question").textContent="Questão "+(state.index+1);
-  const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):78;$("qr-hits").textContent=hits||39;$("qr-errors").textContent=errs||11;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
+  const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):0;$("qr-hits").textContent=hits;$("qr-errors").textContent=errs;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
+  $("qr-answer-grid").innerHTML=state.items.map((q,i)=>{const a=state.attempts.get(q.id);let cl="qr-answer-cell";if(i===state.index)cl+=" current";if(a?.result==="correct")cl+=" correct";else if(a?.result==="wrong")cl+=" wrong";return '<button class="'+cl+'" type="button" data-jump="'+i+'" aria-label="Questão '+(i+1)+'">'+(i+1)+'</button>'}).join("");
+  document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{state.index=Number(b.dataset.jump)||0;render()});
  }
  async function confirm(){const item=state.items[state.index],selected=state.selected.get(item.id);if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}const correct=String(item.official_answer||"").toUpperCase();const previous=state.attempts.get(item.id)||{};const row={user_id:state.user.id,question_item_id:item.id,selected_option:selected,result:correct?(selected===correct?"correct":"wrong"):"correct",area:previous.area||null,materia:previous.materia||null,correct_option:correct||null,ccq:previous.ccq||null,what_i_thought:previous.what_i_thought||null,sent_to_error:previous.sent_to_error||false,error_entry_id:previous.error_entry_id||null,answered_at:new Date().toISOString()};const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();if(error){status("Não foi possível salvar: "+error.message,"error");return}state.attempts.set(item.id,data||row);status("Resposta salva.","success");render()}
  async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
