@@ -4492,3 +4492,38 @@ body[data-page="caderno"] .notebook-study-block .notebook-study-block{
 body[data-page="caderno"] .notebook-study-block .notebook-callout-content{
   display:block;
 }
+
+
+/* ANOTAÇÕES — estado Editar igual às demais ações rápidas */
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit:not(.is-saving-toggle){
+  width:100%!important;
+  height:31px!important;
+  min-height:31px!important;
+  max-height:31px!important;
+  margin:0!important;
+  padding:0 9px!important;
+  border:1px solid var(--border)!important;
+  border-radius:6px!important;
+  background:var(--surface)!important;
+  color:var(--text)!important;
+  box-shadow:none!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  gap:8px!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit:not(.is-saving-toggle):hover{
+  background:var(--surface-2)!important;
+  color:var(--accent)!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit:not(.is-saving-toggle) > span{
+  font-size:8px!important;
+  font-weight:650!important;
+  line-height:1!important;
+}
+body[data-page="caderno"] .note-actions-card #notebook-inspector-edit:not(.is-saving-toggle) svg{
+  width:14px!important;
+  height:14px!important;
+  flex:0 0 14px!important;
+  stroke:currentColor!important;
+}
