@@ -7473,3 +7473,41 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     justify-self:center!important;
   }
 }
+
+
+/* DASHBOARD MASTER — PATTERN OPACITY FIX v37 — 2026-10-04 */
+@media (min-width:981px){
+  /* Mantém o pattern cobrindo toda a área, mas volta à intensidade visual sutil (~7%). */
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 93%,transparent),
+        color-mix(in srgb,var(--surface) 93%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v37"),
+      url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v37")!important;
+    background-repeat:no-repeat,repeat,repeat!important;
+    background-size:100% 100%,138px 138px,138px 138px!important;
+    background-position:0 0,0 0,69px 69px!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main{
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 92%,transparent),
+        color-mix(in srgb,var(--surface) 92%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37"),
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37")!important;
+  }
+
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main{
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 92.5%,transparent),
+        color-mix(in srgb,var(--surface) 92.5%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v37"),
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v37")!important;
+  }
+}
