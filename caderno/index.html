@@ -123,37 +123,13 @@
             </div>
           </div>
 
-          <div class="notebook-source-switch" role="tablist" aria-label="Fonte das anotações">
-            <button id="notebook-source-luria" class="notebook-source-tab active" type="button" role="tab" aria-selected="true">LURIA</button>
-            <button id="notebook-source-notion" class="notebook-source-tab" type="button" role="tab" aria-selected="false">Notion</button>
+          <div id="notebook-notion-first-connect" class="notebook-notion-first-connect" hidden>
+            <div class="notebook-notion-first-connect-copy">
+              <strong>Conectar Notion</strong>
+              <span>Conecte uma vez para trazer suas páginas para a biblioteca de Anotações.</span>
+            </div>
+            <button id="notebook-notion-connect" class="button primary compact-button" type="button">Conectar Notion</button>
           </div>
-
-          <section id="notebook-notion-panel" class="notebook-notion-panel" hidden>
-            <div class="notebook-notion-connect">
-              <div class="notebook-notion-mark" aria-hidden="true">N</div>
-              <div class="notebook-notion-connect-copy">
-                <strong>Conecte seus cadernos do Notion</strong>
-                <span>Abra páginas e use o conteúdo na LURIA sem precisar exportar ou baixar arquivos.</span>
-              </div>
-              <div class="notebook-notion-connect-actions"><button id="notebook-notion-connect" class="button primary compact-button" type="button">Conectar Notion</button><button id="notebook-notion-disconnect" class="button secondary compact-button" type="button" hidden>Desconectar</button></div>
-            </div>
-
-            <div id="notebook-notion-status" class="notebook-notion-status" aria-live="polite"></div>
-
-            <div class="notebook-notion-toolbar">
-              <div class="notebook-searchbar">
-                <input id="notebook-notion-search" type="search" placeholder="Pesquisar páginas do Notion..." autocomplete="off">
-              </div>
-              <button id="notebook-notion-refresh" class="button secondary compact-button" type="button">Atualizar</button>
-            </div>
-
-            <div id="notebook-notion-list" class="notebook-notion-list">
-              <div class="notebook-notion-empty">
-                <strong>Notion ainda não conectado</strong>
-                <span>Depois de conectar, seus cadernos e páginas autorizados aparecem aqui.</span>
-              </div>
-            </div>
-          </section>
 
           <div class="notebook-library-search-controls">
             <div class="notebook-searchbar">
