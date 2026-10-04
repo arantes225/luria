@@ -5056,7 +5056,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     padding:64px 6px 6px!important;
     overflow:visible!important;
     border-radius:24px!important;
-    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+    background:linear-gradient(90deg,#184888,#184888)!important;
     box-shadow:0 12px 34px rgba(15,103,238,.18)!important;
   }
 
@@ -5069,7 +5069,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     right:0!important;
     height:70px!important;
     border-radius:24px 24px 18px 18px!important;
-    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+    background:linear-gradient(90deg,#184888,#184888)!important;
     pointer-events:none!important;
     z-index:0!important;
   }
@@ -5285,7 +5285,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 @media (min-width:981px){
   /* O shell externo é completamente azul, inclusive atrás dos cantos arredondados internos. */
   body[data-page="dashboard"][data-dashboard-layout] .app-shell{
-    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+    background:linear-gradient(90deg,#184888,#184888)!important;
     overflow:hidden!important;
     border-radius:24px!important;
   }
@@ -5296,7 +5296,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     position:absolute!important;
     inset:0 0 auto 0!important;
     height:70px!important;
-    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+    background:linear-gradient(90deg,#184888,#184888)!important;
     border-radius:24px 24px 0 0!important;
     pointer-events:none!important;
     z-index:0!important;
@@ -5344,15 +5344,15 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   /* A área que sobra fora do callout deixa de ser branca.
      Mantém a curva interna branca, mas tudo por fora dela é azul. */
   html:has(body[data-page="dashboard"][data-dashboard-layout]){
-    background:#0f67ee!important;
+    background:#184888!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout]{
-    background:#0f67ee!important;
+    background:#184888!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .app-shell{
-    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+    background:linear-gradient(90deg,#184888,#184888)!important;
   }
 }
 
@@ -5524,5 +5524,32 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 
   body[data-page="dashboard"][data-dashboard-layout] .topbar input[type="search"]::placeholder{
     color:rgba(255,255,255,.82)!important;
+  }
+}
+
+
+/* LURIA SHELL — AUTHORITATIVE SAME-COLOR OVERRIDE v10 — 2026-10-04 */
+:root,
+:root[data-theme="light"]{
+  --luria-shell-theme:#184888;
+}
+:root[data-theme="dark"]{
+  --luria-shell-theme:#142A44;
+}
+:root[data-theme="leila-mood"]{
+  --luria-shell-theme:#CB3F83;
+}
+@media (min-width:981px){
+  html,
+  body,
+  body .app-shell,
+  body .app-shell::before,
+  html:has(body[data-page="dashboard"][data-dashboard-layout]),
+  body[data-page="dashboard"][data-dashboard-layout],
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    background:var(--luria-shell-theme)!important;
+    background-color:var(--luria-shell-theme)!important;
+    background-image:none!important;
   }
 }
