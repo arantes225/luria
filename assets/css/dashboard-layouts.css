@@ -7064,3 +7064,61 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     line-height:43px!important;
   }
 }
+
+
+/* DASHBOARD MASTER — RESTORE FINAL CAT CARD v34 — 2026-10-04 */
+@media (min-width:981px){
+  /* Garante os dois cards finais lado a lado: Progresso por área + Pulo do Gato. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-rows:minmax(340px,auto) minmax(154px,auto)!important;
+    column-gap:12px!important;
+    row-gap:12px!important;
+    align-items:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    position:relative!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:100%!important;
+    min-height:154px!important;
+    max-height:none!important;
+    margin:0!important;
+    transform:none!important;
+    align-self:stretch!important;
+    justify-self:stretch!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    grid-column:1/2!important;
+    grid-row:2!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    grid-column:2/3!important;
+    grid-row:2!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat .dl-card-heading{
+    margin-bottom:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    display:flex!important;
+    align-items:center!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:92px!important;
+    height:auto!important;
+    box-sizing:border-box!important;
+  }
+}
