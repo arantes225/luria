@@ -4499,7 +4499,7 @@ body[data-page="dashboard"] #dashboard-alternative > .luria-dashboard-spotlight.
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{position:relative!important;align-self:center!important;justify-self:center!important;width:92px!important;transform:translateY(1px)!important}
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{margin:0 auto!important;width:50px!important;height:57px!important}
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{font-size:11px!important;line-height:1!important;margin-top:5px!important;text-align:center!important}
- body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{grid-template-columns:repeat(4,minmax(48px,1fr))!important;grid-template-rows:repeat(2,auto)!important;grid-auto-flow:column!important;gap:11px 13px!important;transform:translateX(10px)!important;justify-self:stretch!important}
+ body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{grid-template-columns:repeat(4,minmax(48px,1fr))!important;grid-template-rows:repeat(2,auto)!important;grid-auto-flow:column!important;gap:11px 13px!important;transform:translateX(15px)!important;justify-self:stretch!important}
  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays span{justify-self:start!important}
 }
 
@@ -5760,9 +5760,9 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 }
 
 
-/* DASHBOARD MASTER — EXPAND WHITE PANEL 10PX v13 — 2026-10-04 */
+/* DASHBOARD MASTER — EXPAND WHITE PANEL 15PX v14 — 2026-10-04 */
 @media (min-width:981px){
-  /* Cresce a área branca do site em 10px para esquerda, direita e baixo.
+  /* Cresce a área branca do site em 15px para esquerda, direita e baixo.
      O topo permanece como está para preservar a faixa azul. */
   body[data-page="dashboard"][data-dashboard-layout] .app-shell{
     padding-left:0!important;
@@ -5771,23 +5771,23 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
-    transform:translateX(-10px)!important;
-    width:calc(100% + 10px)!important;
-    margin-bottom:-10px!important;
+    transform:translateX(-15px)!important;
+    width:calc(100% + 15px)!important;
+    margin-bottom:-15px!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .main{
-    transform:translateX(10px)!important;
-    width:calc(100% + 10px)!important;
-    margin-bottom:-10px!important;
+    transform:translateX(15px)!important;
+    width:calc(100% + 15px)!important;
+    margin-bottom:-15px!important;
   }
 
   /* Mantém o encaixe entre sidebar e conteúdo, sem abrir fresta no centro. */
   body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
-    margin-right:-10px!important;
+    margin-right:-15px!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout] .main{
-    margin-left:-10px!important;
+    margin-left:-15px!important;
   }
 }
