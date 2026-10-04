@@ -16749,7 +16749,10 @@ const notionSourceState = {
   connected: false,
   configured: false,
   workspaceName: "",
-  pages: []
+  pages: [],
+  currentPage: null,
+  editing: false,
+  originalBlocks: new Map()
 };
 
 async function invokeNotionFunction(name, body = {}) {
@@ -16847,6 +16850,10 @@ async function openNotionPage(page) {
 
   if (!modal || !content) return;
 
+  notionSourceState.currentPage = page;
+  notionSourceState.editing = false;
+  notionSourceState.originalBlocks = new Map();
+
   modal.hidden = false;
   if (title) title.textContent = page?.title || "Página do Notion";
   if (updated) updated.textContent = "";
@@ -16868,11 +16875,123 @@ async function openNotionPage(page) {
     if (original) original.href = remote.url || page.url || "#";
 
     content.innerHTML = remote.html || '<div class="notebook-notion-empty"><strong>Página vazia</strong></div>';
+    document.querySelector(".notebook-notion-reader")?.classList.remove("is-editing");
+    document.getElementById("notebook-notion-edit")?.removeAttribute("hidden");
+    document.getElementById("notebook-notion-save")?.setAttribute("hidden", "");
+    document.getElementById("notebook-notion-cancel-edit")?.setAttribute("hidden", "");
+    document.getElementById("notebook-notion-add-paragraph")?.setAttribute("hidden", "");
   } catch (error) {
     console.error("Notion page:", error);
     content.innerHTML = '<div class="notebook-notion-empty"><strong>Não foi possível abrir esta página</strong><span>'+escapeHtml(error?.message || "Tente novamente.")+'</span></div>';
   }
 }
+
+function beginNotionEdit() {
+  const reader = document.querySelector(".notebook-notion-reader");
+  const content = document.getElementById("notebook-notion-reader-content");
+  if (!reader || !content) return;
+
+  notionSourceState.editing = true;
+  notionSourceState.originalBlocks = new Map();
+
+  content.querySelectorAll('[data-notion-editable="1"]').forEach(block => {
+    const id = block.dataset.notionBlockId;
+    if (!id) return;
+    notionSourceState.originalBlocks.set(id, block.innerText);
+    block.setAttribute("contenteditable", "true");
+  });
+
+  reader.classList.add("is-editing");
+  document.getElementById("notebook-notion-edit")?.setAttribute("hidden", "");
+  document.getElementById("notebook-notion-save")?.removeAttribute("hidden");
+  document.getElementById("notebook-notion-cancel-edit")?.removeAttribute("hidden");
+  document.getElementById("notebook-notion-add-paragraph")?.removeAttribute("hidden");
+}
+
+function cancelNotionEdit() {
+  const reader = document.querySelector(".notebook-notion-reader");
+  const content = document.getElementById("notebook-notion-reader-content");
+  if (!reader || !content) return;
+
+  content.querySelectorAll('[data-notion-editable="1"]').forEach(block => {
+    const id = block.dataset.notionBlockId;
+    if (id && notionSourceState.originalBlocks.has(id)) {
+      block.innerText = notionSourceState.originalBlocks.get(id);
+    }
+    block.removeAttribute("contenteditable");
+  });
+
+  notionSourceState.editing = false;
+  reader.classList.remove("is-editing");
+  document.getElementById("notebook-notion-edit")?.removeAttribute("hidden");
+  document.getElementById("notebook-notion-save")?.setAttribute("hidden", "");
+  document.getElementById("notebook-notion-cancel-edit")?.setAttribute("hidden", "");
+  document.getElementById("notebook-notion-add-paragraph")?.setAttribute("hidden", "");
+}
+
+async function saveNotionEdit() {
+  const content = document.getElementById("notebook-notion-reader-content");
+  if (!content) return;
+
+  const changed = [];
+  content.querySelectorAll('[data-notion-editable="1"]').forEach(block => {
+    const id = block.dataset.notionBlockId;
+    const type = block.dataset.notionBlockType;
+    if (!id || !type) return;
+
+    let text = block.innerText || "";
+    let checked = block.dataset.notionChecked === "1";
+    if (type === "to_do") {
+      const match = text.match(/^\s*([☐☑])\s*/);
+      if (match) {
+        checked = match[1] === "☑";
+        text = text.replace(/^\s*[☐☑]\s*/, "");
+      }
+    }
+
+    if ((notionSourceState.originalBlocks.get(id) ?? "") !== block.innerText) {
+      changed.push({ block_id:id, type, text, checked });
+    }
+  });
+
+  const save = document.getElementById("notebook-notion-save");
+  if (save) { save.disabled = true; save.textContent = "Salvando..."; }
+
+  try {
+    for (const item of changed) {
+      await invokeNotionFunction("notion-api", { action:"update_block", ...item });
+    }
+
+    if (notionSourceState.currentPage) {
+      await openNotionPage(notionSourceState.currentPage);
+    }
+  } catch (error) {
+    console.error("Notion save:", error);
+    window.LuriaDialog?.alert?.(
+      /permission|capabilit|unauthor/i.test(String(error?.message || ""))
+        ? "A conexão do Notion precisa ter permissão para atualizar conteúdo."
+        : (error?.message || "Não foi possível salvar as alterações no Notion.")
+    );
+  } finally {
+    if (save) { save.disabled = false; save.textContent = "Salvar"; }
+  }
+}
+
+async function addNotionParagraph() {
+  if (!notionSourceState.currentPage?.id) return;
+  try {
+    await invokeNotionFunction("notion-api", {
+      action:"append_paragraph",
+      page_id:notionSourceState.currentPage.id,
+      text:""
+    });
+    await openNotionPage(notionSourceState.currentPage);
+    beginNotionEdit();
+  } catch (error) {
+    window.LuriaDialog?.alert?.(error?.message || "Não foi possível adicionar um parágrafo.");
+  }
+}
+
 
 function closeNotionReader() {
   const modal = document.getElementById("notebook-notion-reader");
@@ -16971,6 +17090,10 @@ function wireNotionSourceEvents() {
   document.getElementById("notebook-notion-connect")?.addEventListener("click", connectNotion);
   document.getElementById("notebook-notion-disconnect")?.addEventListener("click", disconnectNotion);
   document.getElementById("notebook-notion-reader-close")?.addEventListener("click", closeNotionReader);
+  document.getElementById("notebook-notion-edit")?.addEventListener("click", beginNotionEdit);
+  document.getElementById("notebook-notion-save")?.addEventListener("click", saveNotionEdit);
+  document.getElementById("notebook-notion-cancel-edit")?.addEventListener("click", cancelNotionEdit);
+  document.getElementById("notebook-notion-add-paragraph")?.addEventListener("click", addNotionParagraph);
   document.getElementById("notebook-notion-reader")?.addEventListener("click", event => {
     if (event.target?.id === "notebook-notion-reader") closeNotionReader();
   });
