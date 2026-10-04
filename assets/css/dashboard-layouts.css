@@ -6169,3 +6169,42 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-shadow:none!important;
   }
 }
+
+
+/* DASHBOARD MASTER — RESTORE RIGHT PANEL CURVE v21 — 2026-10-04 */
+@media (min-width:981px){
+  /* Agora que a topbar foi movida para o shell azul, a área branca pode voltar
+     a recortar o conteúdo pelas bordas arredondadas sem esconder os controles. */
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    border-radius:0 18px 18px 0!important;
+    overflow:hidden!important;
+    background-clip:padding-box!important;
+    clip-path:inset(0 round 0 18px 18px 0)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+    border-radius:0 18px 18px 0!important;
+    overflow:hidden!important;
+    min-width:0!important;
+    max-width:100%!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+    border-radius:0 18px 18px 0!important;
+    overflow:hidden!important;
+    min-width:0!important;
+    max-width:100%!important;
+  }
+
+  /* Nada do grid pode ultrapassar visualmente a curva direita. */
+  body[data-page="dashboard"][data-dashboard-layout] :is(
+    .dl-grid,
+    .dl-side,
+    .dl-card,
+    .dl-agenda-study-pair,
+    .dl-study-now-card
+  ){
+    min-width:0!important;
+    max-width:100%!important;
+  }
+}
