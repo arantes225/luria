@@ -34,13 +34,48 @@ function installSearch(){
  const bar=topbar();if(!bar||d.getElementById("luria-global-search"))return;
  const controls=bar.querySelector(".luria-notifications");
  if(!controls){setTimeout(installSearch,120);return}
- const b=d.createElement("button");b.id="luria-global-search";b.className="luria-command-trigger luria-command-trigger-topbar luria-search-icon-only";b.type="button";b.innerHTML='<svg class="luria-command-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="5.5"></circle><path d="M15.2 15.2L20 20"></path></svg>';b.setAttribute("aria-label","Busca global");b.setAttribute("title","Buscar");
+
+ const search=d.createElement("label");
+ search.id="luria-global-search";
+ search.className="luria-command-trigger luria-command-trigger-topbar luria-search-field-topbar";
+ search.setAttribute("aria-label","Busca global");
+ search.innerHTML='<svg class="luria-command-search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="5.5"></circle><path d="M15.2 15.2L20 20"></path></svg><input id="luria-global-search-field" type="search" inputmode="search" autocomplete="off" placeholder="Buscar" aria-label="Buscar no LURIA">';
+
  const alex=d.createElement("a");alex.id="luria-alex-topbar";alex.className="luria-alex-topbar";alex.href="/professor-alex/";alex.textContent="Alex";alex.setAttribute("aria-label","Abrir Professor Alex");
  const timerWrap=controls.querySelector(".luria-pomodoro-top");
- if(timerWrap){controls.insertBefore(b,timerWrap);controls.insertBefore(alex,timerWrap);}else{controls.prepend(alex);controls.prepend(b);}
- const open=()=>{const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');const input=$("#luria-search-input",o),list=$("#luria-search-list",o);
- const render=()=>{const raw=input.value.trim(),expanded=expandSearch(raw).map(normSearch),tokens=expanded.flatMap(x=>x.split(/\s+/)).filter(Boolean);const queryNorm=normSearch(raw);const matches=routes.filter(r=>{if(!queryNorm)return true;const hay=localSearchText(r);if(hay.includes(queryNorm)||initialsSearch(r[0])===queryNorm)return true;return expanded.some(x=>x&&hay.includes(x))}).slice(0,14);list.innerHTML=matches.length?matches.map(r=>'<a class="luria-search-item" href="'+r[2]+'"><span><strong>'+esc(r[0])+'</strong><small>'+esc(r[1])+'</small></span><span class="luria-search-kind">'+esc(r[3])+'</span></a>').join(""):'<div class="luria-search-item"><span><strong>Nenhum atalho encontrado</strong><small>Tente outro termo. A busca clínica será ampliada conforme os bancos forem indexados.</small></span></div>';};input.oninput=render;render();setTimeout(()=>input.focus(),40)};
- b.onclick=open;d.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();open()}});
+ if(timerWrap){controls.insertBefore(search,timerWrap);controls.insertBefore(alex,timerWrap);}else{controls.prepend(alex);controls.prepend(search);}
+
+ const field=d.getElementById("luria-global-search-field");
+
+ const open=(initialQuery="")=>{
+   const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');
+   const input=$("#luria-search-input",o),list=$("#luria-search-list",o);
+   input.value=String(initialQuery||"");
+   const render=()=>{
+     const raw=input.value.trim(),expanded=expandSearch(raw).map(normSearch),tokens=expanded.flatMap(x=>x.split(/\s+/)).filter(Boolean);const queryNorm=normSearch(raw);
+     const matches=routes.filter(r=>{if(!queryNorm)return true;const hay=localSearchText(r);if(hay.includes(queryNorm)||initialsSearch(r[0])===queryNorm)return true;return expanded.some(x=>x&&hay.includes(x))}).slice(0,14);
+     list.innerHTML=matches.length?matches.map(r=>'<a class="luria-search-item" href="'+r[2]+'"><span><strong>'+esc(r[0])+'</strong><small>'+esc(r[1])+'</small></span><span class="luria-search-kind">'+esc(r[3])+'</span></a>').join(""):'<div class="luria-search-item"><span><strong>Nenhum atalho encontrado</strong><small>Tente outro termo. A busca clínica será ampliada conforme os bancos forem indexados.</small></span></div>';
+   };
+   input.oninput=render;render();setTimeout(()=>{input.focus();input.setSelectionRange(input.value.length,input.value.length)},40);
+ };
+
+ field?.addEventListener("keydown",e=>{
+   if(e.key==="Enter"){e.preventDefault();open(field.value);}
+ });
+ field?.addEventListener("input",()=>{
+   if(field.value.trim().length===1) open(field.value);
+ });
+ field?.addEventListener("search",()=>{
+   if(field.value.trim()) open(field.value);
+ });
+
+ d.addEventListener("keydown",e=>{
+   if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){
+     e.preventDefault();
+     field?.focus();
+     field?.select();
+   }
+ });
 }
 function todayActivities(){
  const iso=new Date().toLocaleDateString("sv-SE");
