@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Estudar · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <meta name="theme-color" content="#0A2342">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=66-fixed-top-controls">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="canonical" href="/estudar/">
+  <style>
+    .study-hub{display:grid;gap:14px;padding-bottom:30px}
+    .study-spotlight{padding:19px 22px;border-radius:16px;background:linear-gradient(120deg,#184888,#2d6ab5);color:#fff;box-shadow:0 10px 28px rgba(24,72,136,.17)}
+    .study-spotlight h1{margin:0;font-size:24px;font-weight:500;letter-spacing:-.025em;color:#fff}
+    .study-spotlight p{margin:5px 0 0;font-size:13px;line-height:1.4;color:rgba(255,255,255,.84)}
+    .study-primary{display:grid;grid-template-columns:1.08fr 1fr 1fr 1fr;gap:12px}
+    .study-card{position:relative;min-height:184px;box-sizing:border-box;display:flex;flex-direction:column;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);text-decoration:none;overflow:hidden;transition:border-color .14s ease,transform .14s ease,box-shadow .14s ease}
+    .study-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 44%,var(--border));box-shadow:0 10px 26px rgba(15,35,66,.07)}
+    .study-card--featured{background:linear-gradient(145deg,color-mix(in srgb,var(--accent-soft) 70%,var(--surface)),var(--surface))}
+    .study-card-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:20px}
+    .study-card-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .study-card h2{margin:17px 0 6px;font-size:16px;font-weight:500;color:var(--text)}
+    .study-card p{margin:0;max-width:230px;color:var(--muted);font-size:12px;line-height:1.45}
+    .study-card-action{margin-top:auto;padding-top:16px;color:var(--accent);font-size:12px}
+    .study-card-badge{position:absolute;right:14px;top:14px;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:9px;letter-spacing:.04em;text-transform:uppercase}
+    .study-card.is-disabled{cursor:default}.study-card.is-disabled:hover{transform:none;box-shadow:none;border-color:var(--border)}
+    .study-card.is-disabled .study-card-action{color:var(--muted)}
+    .alex-actions-inline{display:flex;gap:7px;margin-top:auto;padding-top:14px}
+    .alex-actions-inline a{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:0 10px;border-radius:9px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:11px;text-decoration:none}
+    .alex-actions-inline a:first-child{background:var(--accent);border-color:var(--accent);color:#fff}
+    .study-lower{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(210px,.66fr) minmax(260px,.9fr);gap:12px}
+    .study-panel{min-height:150px;padding:17px 18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-sizing:border-box}
+    .study-panel h3{margin:0;font-size:14px;font-weight:500;color:var(--text)}
+    .study-panel small{display:block;margin-top:4px;color:var(--muted);font-size:10px}
+    .continue-row{display:flex;align-items:center;gap:12px;margin-top:18px;padding:13px;border-radius:12px;background:var(--surface-2);border:1px solid var(--border)}
+    .continue-icon{width:38px;height:38px;display:grid;place-items:center;flex:0 0 38px;border-radius:10px;background:var(--accent-soft);color:var(--accent)}
+    .continue-copy{min-width:0}.continue-copy strong{display:block;font-size:12px;font-weight:500;color:var(--text)}.continue-copy span{display:block;margin-top:3px;color:var(--muted);font-size:10px}
+    .continue-row a{margin-left:auto;color:var(--accent);font-size:11px;text-decoration:none}
+    .study-progress{display:grid;place-items:center;margin-top:13px}
+    .study-ring{width:72px;height:72px;display:grid;place-items:center;border-radius:50%;background:conic-gradient(var(--accent) 0deg,var(--surface-2) 0deg);border:1px solid var(--border)}
+    .study-ring::after{content:"—";width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:var(--surface);color:var(--text);font-size:18px}
+    .recent-list{display:grid;gap:8px;margin-top:14px}.recent-empty{padding:18px 12px;border:1px dashed var(--border);border-radius:11px;color:var(--muted);font-size:11px;line-height:1.45;text-align:center}
+    .study-secondary{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .study-mini{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text);text-decoration:none}
+    .study-mini .study-card-icon{width:36px;height:36px;flex:0 0 36px}.study-mini strong{display:block;font-size:12px;font-weight:500}.study-mini span{display:block;margin-top:2px;color:var(--muted);font-size:10px}
+    [data-admin-only][hidden]{display:none!important}
+    @media(max-width:1180px){.study-primary{grid-template-columns:repeat(2,minmax(0,1fr))}.study-lower{grid-template-columns:1fr 1fr}.study-lower .study-panel:first-child{grid-column:1/-1}}
+    @media(max-width:760px){.study-primary,.study-secondary,.study-lower{grid-template-columns:1fr}.study-lower .study-panel:first-child{grid-column:auto}.study-card{min-height:150px}.study-spotlight{padding:17px 18px}}
+  </style>
+</head>
+<body data-page="estudar">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main">
+      <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+        </header>
+
+        <section class="study-hub" aria-label="Central Estudar">
+          <div class="study-spotlight">
+            <h1>Estudar</h1>
+            <p>Seu jeito, no seu ritmo. Escolha o que quer fazer agora.</p>
+          </div>
+
+          <div class="study-primary">
+            <a class="study-card study-card--featured" href="/apostilas/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span>
+              <h2>Apostilas</h2>
+              <p>Conteúdo LURIA organizado por área e matéria.</p>
+              <span class="study-card-action">Explorar →</span>
+            </a>
+
+            <a class="study-card" href="/caderno/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 8h7M9 12h7M9 16h5M3 7h4M3 12h4M3 17h4"/></svg></span>
+              <h2>Minhas anotações</h2>
+              <p>Seus cadernos, resumos e materiais pessoais.</p>
+              <span class="study-card-action">Abrir →</span>
+            </a>
+
+            <div class="study-card" data-admin-only hidden>
+              <span class="study-card-badge">Admin</span>
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0M18 4l2-2m-14 2L4 2"/></svg></span>
+              <h2>Professor Alex</h2>
+              <p>Converse livremente ou entre no modo guiado do LuriaZap.</p>
+              <div class="alex-actions-inline">
+                <a href="/professor-alex/">Conversar</a>
+                <a href="/plantao/luriazap/">LuriaZap</a>
+              </div>
+            </div>
+
+            <a class="study-card" href="/flashcards/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/></svg></span>
+              <h2>Flashcards</h2>
+              <p>Revisão ativa para fortalecer memória e retenção.</p>
+              <span class="study-card-action">Revisar →</span>
+            </a>
+          </div>
+
+          <div class="study-secondary">
+            <a class="study-mini" href="/caderno-erros/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></span>
+              <div><strong>Caderno de erros</strong><span>Transforme erros em revisão direcionada.</span></div>
+            </a>
+            <a class="study-mini" href="/questoes-simulados/">
+              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h8l5 5v14H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg></span>
+              <div><strong>Questões e Simulados</strong><span>Treine e teste o que você estudou.</span></div>
+            </a>
+          </div>
+
+          <div class="study-lower">
+            <section class="study-panel">
+              <h3>Continuar de onde parou</h3>
+              <small>Volte rapidamente ao último recurso usado.</small>
+              <div class="continue-row">
+                <span class="continue-icon" aria-hidden="true">↗</span>
+                <div class="continue-copy"><strong>Escolha uma forma de estudar</strong><span>Seu último conteúdo vai aparecer aqui automaticamente.</span></div>
+              </div>
+            </section>
+
+            <section class="study-panel">
+              <h3>Seu progresso no estudo</h3>
+              <small>Resumo da sua atividade.</small>
+              <div class="study-progress"><div class="study-ring" aria-label="Progresso ainda não calculado"></div></div>
+            </section>
+
+            <section class="study-panel">
+              <h3>Estudados recentemente</h3>
+              <small>Os últimos conteúdos acessados.</small>
+              <div class="recent-list"><div class="recent-empty">Quando você começar a estudar, seus conteúdos recentes aparecem aqui.</div></div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261004-estudar-hub"></script>
+  <script>
+    (() => {
+      const applyAdminVisibility = (isAdmin) => {
+        document.querySelectorAll("[data-admin-only]").forEach(el => {
+          el.hidden = isAdmin !== true;
+        });
+      };
+      window.addEventListener("docmap:ready", (event) => applyAdminVisibility(event.detail?.isAdmin), { passive:true });
+      if (typeof window.docmapIsAdmin === "boolean") applyAdminVisibility(window.docmapIsAdmin);
+    })();
+  </script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
