@@ -16,18 +16,18 @@
   <link rel="canonical" href="/aprender/">
   <style>
     .learn-page{display:grid;gap:16px;padding-bottom:28px}
-    .learn-heading{padding:0 2px 4px}
-    .learn-heading h1{margin:0;color:var(--text);font-size:29px;font-weight:600;letter-spacing:-.035em}
-    .learn-heading p{margin:6px 0 0;color:var(--muted);font-size:12px}
+    .learn-heading{padding:18px 20px;border-radius:16px;background:linear-gradient(120deg,#184888,#2d6ab5);color:#fff;box-shadow:0 10px 28px rgba(24,72,136,.14)}
+    .learn-heading h1{margin:0;color:#fff;font-size:24px;font-weight:500;letter-spacing:-.025em}
+    .learn-heading p{margin:5px 0 0;color:rgba(255,255,255,.84);font-size:12px}
 
-    .alex-hero{position:relative;min-height:338px;border-radius:28px;overflow:hidden;border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border));background:
+    .alex-hero{position:relative;min-height:298px;border-radius:28px;overflow:hidden;border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border));background:
       radial-gradient(circle at 15% 10%,rgba(255,255,255,.92),transparent 24%),
       linear-gradient(135deg,#eef7ff 0%,#e3f1ff 50%,#edf7ff 100%);
       box-shadow:0 14px 34px rgba(24,72,136,.08);display:grid;grid-template-columns:36% 64%}
     [data-theme="dark"] .alex-hero{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 16%,var(--surface)),var(--surface))}
     .alex-visual{position:relative;display:flex;align-items:flex-end;justify-content:center;min-width:0}
     .alex-halo{position:absolute;left:50%;top:26px;transform:translateX(-50%);width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,#fff 0%,rgba(255,255,255,.78) 46%,rgba(255,255,255,0) 72%)}
-    .alex-figure{position:relative;width:250px;height:315px;z-index:1}
+    .alex-figure{position:relative;width:250px;height:275px;z-index:1}
     .alex-head{position:absolute;left:50%;top:18px;transform:translateX(-50%);width:92px;height:104px;border-radius:46% 46% 44% 44%;background:#e7b48a;box-shadow:inset 0 -6px 0 rgba(128,77,43,.09)}
     .alex-hair{position:absolute;left:50%;top:7px;transform:translateX(-50%);width:120px;height:66px;border-radius:54% 54% 40% 42%;background:#6d321d;z-index:2}
     .alex-hair:before,.alex-hair:after{content:"";position:absolute;background:#6d321d;border-radius:50%}
@@ -38,13 +38,13 @@
     .alex-glasses:before{left:0}.alex-glasses:after{right:0}
     .alex-glasses span{position:absolute;left:31px;top:9px;width:14px;height:4px;background:#1f2937;border-radius:3px}
     .alex-smile{position:absolute;left:50%;top:83px;transform:translateX(-50%);width:31px;height:13px;border-bottom:3px solid #7a3c30;border-radius:0 0 30px 30px;z-index:4}
-    .alex-body{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:214px;height:216px;border-radius:70px 70px 18px 18px;background:#f8fbff;border:1px solid rgba(24,72,136,.12);z-index:1}
-    .alex-scrubs{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:92px;height:166px;background:#153f70;clip-path:polygon(19% 0,50% 23%,81% 0,100% 100%,0 100%);z-index:2}
-    .alex-coat-left,.alex-coat-right{position:absolute;bottom:0;width:82px;height:176px;background:#fff;z-index:3}
+    .alex-body{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:214px;height:176px;border-radius:70px 70px 18px 18px;background:#f8fbff;border:1px solid rgba(24,72,136,.12);z-index:1}
+    .alex-scrubs{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:92px;height:136px;background:#153f70;clip-path:polygon(19% 0,50% 23%,81% 0,100% 100%,0 100%);z-index:2}
+    .alex-coat-left,.alex-coat-right{position:absolute;bottom:0;width:82px;height:146px;background:#fff;z-index:3}
     .alex-coat-left{left:17px;clip-path:polygon(0 0,100% 18%,64% 100%,0 100%)}.alex-coat-right{right:17px;clip-path:polygon(0 18%,100% 0,100% 100%,36% 100%)}
-    .alex-stetho{position:absolute;left:50%;top:132px;transform:translateX(-50%);width:116px;height:86px;border:4px solid #23344f;border-top:0;border-radius:0 0 60px 60px;z-index:5}
-    .alex-arm{position:absolute;right:0;bottom:58px;width:82px;height:32px;background:#fff;border-radius:18px;transform:rotate(-48deg);transform-origin:right center;z-index:4}
-    .alex-hand{position:absolute;right:-2px;bottom:148px;width:34px;height:58px;border-radius:20px;background:#e7b48a;z-index:5;transform:rotate(5deg)}
+    .alex-stetho{position:absolute;left:50%;top:118px;transform:translateX(-50%);width:116px;height:86px;border:4px solid #23344f;border-top:0;border-radius:0 0 60px 60px;z-index:5}
+    .alex-arm{position:absolute;right:0;bottom:45px;width:82px;height:32px;background:#fff;border-radius:18px;transform:rotate(-48deg);transform-origin:right center;z-index:4}
+    .alex-hand{position:absolute;right:-2px;bottom:118px;width:34px;height:58px;border-radius:20px;background:#e7b48a;z-index:5;transform:rotate(5deg)}
 
     .alex-content{padding:42px 44px 32px 24px;display:flex;flex-direction:column;justify-content:center}
     .alex-content h2{margin:0;color:#173f73;font-size:30px;font-weight:600;letter-spacing:-.035em}
