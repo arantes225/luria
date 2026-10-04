@@ -14385,6 +14385,119 @@ async function placeNotionPageInNotebook(pageId, area, materia) {
   return data;
 }
 
+function notebookDestinationPairs() {
+  const pairs = [];
+
+  getLibraryEntries().forEach(entry => {
+    const area = String(entry.area || "").trim();
+    const materia = String(entry.note?.materia || entry.topic?.materia || "Outros").trim();
+    if (area && materia) pairs.push([area, materia]);
+  });
+
+  notebookState.topics.forEach(topic => {
+    const area = String(topic.area || "").trim();
+    const materia = String(topic.materia || "Outros").trim();
+    if (area && materia) pairs.push([area, materia]);
+  });
+
+  return [...new Map(pairs.map(pair => [pair.join("|||"), pair])).values()];
+}
+
+async function chooseNotionPageDestination(pageId) {
+  const page = (notionSourceState.pages || []).find(item => String(item.id) === String(pageId));
+  if (!page) return;
+
+  const pairs = notebookDestinationPairs();
+  const areas = [...new Set(pairs.map(pair => pair[0]))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
+
+  const dialog = document.createElement("dialog");
+  dialog.className = "notebook-modal notebook-notion-move-dialog";
+  dialog.innerHTML =
+    '<form method="dialog" class="notebook-notion-move-form">'+
+      '<div class="notebook-modal-head"><div><span class="badge accent">Notion</span><h2>Mover página</h2></div><button type="button" class="notebook-modal-close" data-notion-move-cancel>×</button></div>'+
+      '<p class="notebook-move-copy">Escolha onde esta página deve aparecer dentro da LURIA.</p>'+
+      '<label class="notebook-modal-field"><span>Área</span><input id="notion-move-area" list="notion-move-areas" autocomplete="off" required><datalist id="notion-move-areas">'+areas.map(value=>'<option value="'+escapeHtml(value)+'"></option>').join("")+'</datalist></label>'+
+      '<label class="notebook-modal-field"><span>Caderno</span><input id="notion-move-subject" list="notion-move-subjects" autocomplete="off" required><datalist id="notion-move-subjects"></datalist></label>'+
+      '<div class="notebook-modal-actions"><button type="button" class="button secondary" data-notion-move-cancel>Cancelar</button><button type="submit" class="button primary">Mover</button></div>'+
+    '</form>';
+
+  document.body.appendChild(dialog);
+
+  const areaInput = dialog.querySelector("#notion-move-area");
+  const subjectInput = dialog.querySelector("#notion-move-subject");
+  const subjectList = dialog.querySelector("#notion-move-subjects");
+
+  const refreshSubjects = () => {
+    const names = [...new Set(pairs.filter(pair => pair[0] === areaInput.value.trim()).map(pair => pair[1]))]
+      .sort((a,b)=>a.localeCompare(b,"pt-BR"));
+    subjectList.innerHTML = names.map(value=>'<option value="'+escapeHtml(value)+'"></option>').join("");
+  };
+
+  areaInput.addEventListener("input", refreshSubjects);
+  dialog.querySelectorAll("[data-notion-move-cancel]").forEach(button=>button.addEventListener("click",()=>{
+    dialog.close();
+  }));
+
+  dialog.querySelector("form").addEventListener("submit", async event => {
+    event.preventDefault();
+    const area = areaInput.value.trim();
+    const materia = subjectInput.value.trim();
+    if (!area || !materia) return;
+
+    try {
+      await placeNotionPageInNotebook(pageId, area, materia);
+      dialog.close();
+      renderLibrary();
+      setSaveStatus("Página movida para "+area+" · "+materia,"saved");
+    } catch (error) {
+      console.error(error);
+      window.LuriaDialog?.alert?.("Não foi possível mover a página: "+(error?.message||"erro desconhecido"));
+    }
+  });
+
+  dialog.addEventListener("close",()=>dialog.remove(),{once:true});
+  dialog.showModal();
+  setTimeout(()=>areaInput.focus(),0);
+}
+
+async function hideNotionInboxPage(pageId) {
+  const page = (notionSourceState.pages || []).find(item => String(item.id) === String(pageId));
+  if (!page) return;
+
+  await invokeNotionFunction("notion-api", {
+    action:"hide_page_luria",
+    page_id:page.id,
+    title:page.title || "Página do Notion",
+    url:page.url || null
+  });
+
+  notionSourceState.pages = notionSourceState.pages.filter(item => String(item.id) !== String(pageId));
+  renderLibrary();
+}
+
+async function deleteNotionInboxPage(pageId) {
+  const page = (notionSourceState.pages || []).find(item => String(item.id) === String(pageId));
+  if (!page) return;
+
+  const ok = await window.LuriaDialog?.confirm?.(
+    'Apagar "'+(page.title || "esta página")+'" diretamente do Notion? Ela será enviada para a lixeira do Notion.'
+  );
+  if (ok === false) return;
+
+  await invokeNotionFunction("notion-api", {
+    action:"delete_page",
+    page_id:page.id
+  });
+
+  notionSourceState.pages = notionSourceState.pages.filter(item => String(item.id) !== String(pageId));
+
+  for (const [id,note] of notebookState.notesById) {
+    if (String(note?.notion_page_id || "") === String(pageId)) notebookState.notesById.delete(id);
+  }
+
+  renderLibrary();
+}
+
 async function ensureNotionLibraryPages() {
   if (notionSourceState.libraryLoaded || notionSourceState.libraryLoading) return;
   notionSourceState.libraryLoading = true;
@@ -14456,7 +14569,7 @@ function renderLibrary() {
 
   const notionInbox = unassignedNotionPages();
   const notionDeckHtml = notionInbox.length
-    ? '<section class="notebook-notion-inbox-deck"><header><div><strong>Páginas do Notion</strong><small>Arraste cada página para o caderno onde ela deve ficar.</small></div><span>'+notionInbox.length+'</span></header><div class="notebook-notion-inbox-grid">'+notionInbox.map(page=>'<article class="notebook-page-card notebook-notion-inbox-page" draggable="true" data-notion-drag-page="'+escapeHtml(page.id)+'"><div><strong>'+escapeHtml(page.title||"Página sem título")+'</strong><small>Notion · ainda sem caderno</small></div><button type="button" data-notion-inbox-open="'+escapeHtml(page.id)+'">Abrir</button></article>').join("")+'</div></section>'
+    ? '<section class="notebook-notion-inbox-deck"><header><div><strong>Páginas do Notion</strong><small>Arraste cada página para o caderno onde ela deve ficar.</small></div><span>'+notionInbox.length+'</span></header><div class="notebook-notion-inbox-grid">'+notionInbox.map(page=>'<article class="notebook-page-card notebook-notion-inbox-page" draggable="true" data-notion-drag-page="'+escapeHtml(page.id)+'"><div class="notebook-notion-inbox-main"><div><strong>'+escapeHtml(page.title||"Página sem título")+'</strong><small>Notion · ainda sem caderno</small></div><button type="button" data-notion-inbox-open="'+escapeHtml(page.id)+'">Abrir</button></div><div class="notebook-notion-inbox-actions"><button class="notebook-book-menu" type="button" data-notion-inbox-menu="'+escapeHtml(page.id)+'" aria-label="Opções da página" aria-expanded="false">⋯</button><div class="notebook-book-menu-popover notebook-notion-inbox-menu" data-notion-inbox-popover="'+escapeHtml(page.id)+'" hidden><button type="button" data-notion-inbox-move="'+escapeHtml(page.id)+'">Mover</button><button type="button" data-notion-inbox-hide="'+escapeHtml(page.id)+'">Ocultar</button><button type="button" class="danger" data-notion-inbox-delete="'+escapeHtml(page.id)+'">Apagar</button></div></div></article>').join("")+'</div></section>'
     : '';
 
   const weekHtml='<section class="notebook-week-shelf"><header><div><strong>Desta semana</strong><small>'+(weekEntries.length?weekEntries.length+' página'+(weekEntries.length===1?'':'s')+' vinculada'+(weekEntries.length===1?'':'s'):'Adicione um caderno para começar')+'</small></div></header><div class="notebook-week-grid">'+weekEntries.map(e=>'<article class="notebook-week-card"><span>'+areaIcon(e.area)+'</span><div><strong>'+escapeHtml(e.title)+'</strong><small>'+escapeHtml(e.area)+' · '+escapeHtml(subjectFor(e))+'</small></div><button type="button" data-open-note="'+escapeHtml(e.note.id)+'" aria-label="Abrir"></button></article>').join("")+plusCard+'</div></section>';
@@ -14478,6 +14591,57 @@ function renderLibrary() {
   list.querySelectorAll("[data-notion-inbox-open]").forEach(button=>button.addEventListener("click",async()=>{
     const page=notionSourceState.pages.find(item=>String(item.id)===String(button.dataset.notionInboxOpen));
     if(page)await openNotionPage(page);
+  }));
+
+  const closeNotionInboxMenus = () => {
+    list.querySelectorAll("[data-notion-inbox-popover]").forEach(menu=>menu.hidden=true);
+    list.querySelectorAll("[data-notion-inbox-menu]").forEach(button=>button.setAttribute("aria-expanded","false"));
+  };
+
+  list.querySelectorAll("[data-notion-inbox-menu]").forEach(button=>button.addEventListener("click",event=>{
+    event.preventDefault();
+    event.stopPropagation();
+    const id=button.dataset.notionInboxMenu;
+    const popover=list.querySelector('[data-notion-inbox-popover="'+CSS.escape(id)+'"]');
+    const wasOpen=popover && !popover.hidden;
+    closeNotionInboxMenus();
+    if(popover && !wasOpen){
+      popover.hidden=false;
+      button.setAttribute("aria-expanded","true");
+    }
+  }));
+
+  list.querySelectorAll("[data-notion-inbox-move]").forEach(button=>button.addEventListener("click",async event=>{
+    event.preventDefault();
+    event.stopPropagation();
+    closeNotionInboxMenus();
+    await chooseNotionPageDestination(button.dataset.notionInboxMove);
+  }));
+
+  list.querySelectorAll("[data-notion-inbox-hide]").forEach(button=>button.addEventListener("click",async event=>{
+    event.preventDefault();
+    event.stopPropagation();
+    closeNotionInboxMenus();
+    try{
+      await hideNotionInboxPage(button.dataset.notionInboxHide);
+      setSaveStatus("Página ocultada da LURIA","saved");
+    }catch(error){
+      console.error(error);
+      window.LuriaDialog?.alert?.("Não foi possível ocultar a página: "+(error?.message||"erro desconhecido"));
+    }
+  }));
+
+  list.querySelectorAll("[data-notion-inbox-delete]").forEach(button=>button.addEventListener("click",async event=>{
+    event.preventDefault();
+    event.stopPropagation();
+    closeNotionInboxMenus();
+    try{
+      await deleteNotionInboxPage(button.dataset.notionInboxDelete);
+      setSaveStatus("Página apagada do Notion","saved");
+    }catch(error){
+      console.error(error);
+      window.LuriaDialog?.alert?.("Não foi possível apagar a página: "+(error?.message||"erro desconhecido"));
+    }
   }));
 
   list.querySelectorAll("[data-notion-drag-page]").forEach(card=>{
@@ -17225,7 +17389,14 @@ function wireNotionSourceEvents() {
   });
 
   const params = new URLSearchParams(window.location.search);
-  if (params.get("source") === "notion" || params.get("notion") === "connected") {
+  if (params.get("notion") === "connected") {
+    queueMicrotask(async () => {
+      await refreshNotionSource();
+      setNotebookSource("luria");
+      await switchView("library", true);
+      renderLibrary();
+    });
+  } else if (params.get("source") === "notion") {
     queueMicrotask(() => setNotebookSource("notion"));
   }
 }
