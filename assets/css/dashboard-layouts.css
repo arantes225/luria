@@ -6208,3 +6208,37 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     max-width:100%!important;
   }
 }
+
+
+/* DASHBOARD MASTER — BRAND SCALE UP v22 — 2026-10-04 */
+@media (min-width:981px){
+  /* Logo +30% em relação ao tamanho aprovado anteriormente (44px -> ~57px). */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .luria-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar #luria-brand-logo{
+    width:57px!important;
+    height:57px!important;
+    flex:0 0 57px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand{
+    gap:12px!important;
+  }
+
+  /* Sobe dois níveis visuais de tipografia da marca. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .brand-copy strong{
+    font-size:22px!important;
+    line-height:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .brand-copy small{
+    font-size:12px!important;
+    line-height:1.15!important;
+    margin-top:3px!important;
+  }
+
+  /* Dá altura suficiente no topo azul para a marca maior respirar sem cortar. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .sidebar-top{
+    height:58px!important;
+    top:-61px!important;
+  }
+}
