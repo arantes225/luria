@@ -150,6 +150,10 @@
       const modes = [...document.querySelectorAll("[data-alex-mode]")];
       const prompt = document.getElementById("alex-prompt");
       const topic = document.getElementById("alex-topic");
+      const incomingQuery = new URLSearchParams(window.location.search).get("q");
+      if (incomingQuery && prompt) {
+        prompt.value = incomingQuery;
+      }
       const fileInput = document.getElementById("alex-file");
       const fileState = document.getElementById("alex-file-state");
       const output = document.getElementById("alex-output");
