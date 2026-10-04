@@ -46,6 +46,17 @@ function installSearch(){
  if(timerWrap){controls.insertBefore(search,timerWrap);controls.insertBefore(alex,timerWrap);}else{controls.prepend(alex);controls.prepend(search);}
 
  const field=d.getElementById("luria-global-search-field");
+ if(field){
+   field.style.setProperty("background","transparent","important");
+   field.style.setProperty("background-color","transparent","important");
+   field.style.setProperty("background-image","none","important");
+   field.style.setProperty("border","0","important");
+   field.style.setProperty("box-shadow","none","important");
+   field.style.setProperty("outline","0","important");
+   field.style.setProperty("backdrop-filter","none","important");
+   field.style.setProperty("-webkit-backdrop-filter","none","important");
+   field.style.setProperty("border-radius","0","important");
+ }
 
  const open=(initialQuery="")=>{
    const o=modal("luria-search-overlay","Busca global",'<input id="luria-search-input" class="luria-search-input" type="search" placeholder="Busque páginas, ferramentas, temas e conteúdos..." autofocus><div id="luria-search-list" class="luria-search-list"></div>');
