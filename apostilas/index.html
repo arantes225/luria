@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Apostilas · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <meta name="theme-color" content="#0A2342">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=66-fixed-top-controls">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="canonical" href="/apostilas/">
+  <style>
+    .books-page{display:grid;gap:14px;padding-bottom:30px}.books-head{display:flex;align-items:end;justify-content:space-between;gap:16px;padding:18px 20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+    .books-head h1{margin:0;font-size:22px;font-weight:500}.books-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.books-back{color:var(--accent);font-size:12px;text-decoration:none}
+    .books-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.book-area{min-height:180px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);display:flex;flex-direction:column;box-sizing:border-box}.book-area span{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:18px}.book-area h2{margin:18px 0 6px;font-size:14px;font-weight:500}.book-area p{margin:0;color:var(--muted);font-size:11px;line-height:1.45}.book-area small{margin-top:auto;padding-top:18px;color:var(--muted);font-size:10px}
+    .books-note{padding:15px 17px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:11px;background:var(--surface-2)}
+    @media(max-width:1100px){.books-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.books-grid{grid-template-columns:1fr}.books-head{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body data-page="estudar">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main"><div class="page">
+      <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo LURIA</span><h1>Apostilas</h1></div></header>
+      <section class="books-page">
+        <div class="books-head"><div><h1>Apostilas</h1><p>Conteúdo estruturado por área para leitura e revisão.</p></div><a class="books-back" href="/estudar/">← Voltar para Estudar</a></div>
+        <div class="books-grid">
+          <article class="book-area"><span>CM</span><h2>Clínica Médica</h2><p>Cardiologia, Pneumologia, Gastro, Nefro, Endócrino, Hemato e mais.</p><small>Biblioteca em preparação</small></article>
+          <article class="book-area"><span>CG</span><h2>Cirurgia Geral</h2><p>Trauma, abdome agudo, perioperatório e temas cirúrgicos essenciais.</p><small>Biblioteca em preparação</small></article>
+          <article class="book-area"><span>GO</span><h2>Ginecologia e Obstetrícia</h2><p>Pré-natal, urgências obstétricas, ginecologia e rastreamento.</p><small>Biblioteca em preparação</small></article>
+          <article class="book-area"><span>PD</span><h2>Pediatria</h2><p>Puericultura, neonatologia, infectologia, urgências e crescimento.</p><small>Biblioteca em preparação</small></article>
+          <article class="book-area"><span>MF</span><h2>Preventiva / MFC</h2><p>APS, epidemiologia, prevenção, rastreamento e políticas de saúde.</p><small>Biblioteca em preparação</small></article>
+        </div>
+        <div class="books-note">As apostilas entram aqui conforme forem publicadas. A estrutura já está pronta para receber o conteúdo sem criar novas camadas de navegação.</div>
+      </section>
+    </div></main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261004-estudar-hub"></script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+</body>
+</html>
