@@ -6202,6 +6202,70 @@ function aplicarEntitlementsNaNavegacao(
 }
 
 
+async function carregarBootstrap(userId) {
+  if (!userId) return null;
+
+  try {
+    const { data, error } = await sb.rpc("luria_bootstrap");
+    if (error || !data) {
+      if (error) console.warn("Não foi possível carregar o bootstrap da LURIA:", error.message);
+      return null;
+    }
+
+    const entitlements = data.entitlements || null;
+    const profile = data.profile || null;
+    const acessoAdmin = data.is_admin === true;
+    const theme = data.theme || null;
+
+    if (entitlements) {
+      writeTimedCache(entitlementsCacheKey(userId), entitlements);
+    }
+    writeTimedCache(adminCacheKey(userId), acessoAdmin);
+
+    if (profile) {
+      writeCachedProfile(userId, profile);
+    }
+
+    if (theme) {
+      writeCachedTheme(userId, theme);
+      try {
+        localStorage.setItem(`docmap:theme-fetched-at:${userId}`, String(Date.now()));
+      } catch {}
+      applyThemeSetting(theme);
+    }
+
+    return {
+      entitlements,
+      profile,
+      acessoAdmin,
+      theme
+    };
+  } catch (error) {
+    console.warn("Não foi possível carregar o bootstrap da LURIA:", error);
+    return null;
+  }
+}
+
+async function carregarEstadoRemoto(userId) {
+  const bootstrap = await carregarBootstrap(userId);
+  if (bootstrap) return bootstrap;
+
+  const [entitlements, profile, theme, acessoAdmin] = await Promise.all([
+    carregarEntitlements(),
+    carregarPerfil(userId),
+    carregarTema(userId),
+    verificarAcessoAdmin()
+  ]);
+
+  return {
+    entitlements,
+    profile,
+    acessoAdmin,
+    theme
+  };
+}
+
+
 async function verificarAcessoAdmin() {
   const userId =
     (await sb.auth.getSession())?.data?.session?.user?.id
@@ -6323,33 +6387,28 @@ async function iniciarApp() {
     data.session.user;
 
   // Professor Alex é recurso interno em desenvolvimento: acesso exclusivo de admin.
-  if (page === "professor_alex") {
-    const professorAlexAdmin =
-      await verificarAcessoAdmin();
+  let accessState = null;
 
-    if (professorAlexAdmin !== true) {
+  if (page === "professor_alex" || String(page).startsWith("trabalho_")) {
+    accessState = await carregarEstadoRemoto(user.id);
+  }
+
+  if (page === "professor_alex") {
+    if (accessState?.acessoAdmin !== true) {
       window.location.replace("/dashboard/");
       return;
     }
   }
 
   // O ambiente Trabalho é liberado para Admin e planos Plus/Pro/Betatester.
-  // Usa entitlements do servidor; em falha transitória, carregarEntitlements preserva
-  // o último entitlement válido em cache sem rebaixar silenciosamente o usuário.
   if (String(page).startsWith("trabalho_")) {
-    const [workAdmin, workEntitlements] =
-      await Promise.all([
-        verificarAcessoAdmin(),
-        carregarEntitlements()
-      ]);
-
     const workPlan =
-      String(workEntitlements?.plan || "")
+      String(accessState?.entitlements?.plan || "")
         .trim()
         .toLowerCase();
 
     const workAllowed =
-      workAdmin === true
+      accessState?.acessoAdmin === true
       || ["plus", "pro", "betatester"].includes(workPlan);
 
     if (!workAllowed) {
@@ -6591,20 +6650,15 @@ async function iniciarApp() {
     )
   );
 
-  // Tudo abaixo é atualização assíncrona e NÃO bloqueia a página.
-  Promise.all([
-    carregarEntitlements(),
-    carregarPerfil(user.id),
-    carregarTema(user.id),
-    verificarAcessoAdmin()
-  ])
+  // Atualização assíncrona: uma única RPC traz perfil, plano, admin e tema.
+  // Se o bootstrap falhar, carregarEstadoRemoto usa as chamadas legadas como fallback.
+  carregarEstadoRemoto(user.id)
     .then(
-      ([
+      ({
         entitlements,
         profile,
-        ,
         acessoAdmin
-      ]) => {
+      }) => {
         const finalEntitlements =
           entitlements
           || cachedEntitlements;
