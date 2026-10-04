@@ -15,43 +15,44 @@
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/aprender/">
   <style>
-    .study-hub{display:grid;gap:14px;padding-bottom:30px}
-    .study-spotlight{padding:19px 22px;border-radius:16px;background:linear-gradient(120deg,#184888,#2d6ab5);color:#fff;box-shadow:0 10px 28px rgba(24,72,136,.17)}
-    .study-spotlight h1{margin:0;font-size:24px;font-weight:500;letter-spacing:-.025em;color:#fff}
-    .study-spotlight p{margin:5px 0 0;font-size:13px;line-height:1.4;color:rgba(255,255,255,.84)}
-    .study-primary{display:grid;grid-template-columns:1.08fr 1fr 1fr 1fr;gap:12px}
-    .study-card{position:relative;min-height:184px;box-sizing:border-box;display:flex;flex-direction:column;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);text-decoration:none;overflow:hidden;transition:border-color .14s ease,transform .14s ease,box-shadow .14s ease}
-    .study-card:hover{transform:translateY(-1px);border-color:color-mix(in srgb,var(--accent) 44%,var(--border));box-shadow:0 10px 26px rgba(15,35,66,.07)}
-    .study-card--featured{background:linear-gradient(145deg,color-mix(in srgb,var(--accent-soft) 70%,var(--surface)),var(--surface))}
-    .study-card-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:20px}
-    .study-card-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-    .study-card h2{margin:17px 0 6px;font-size:16px;font-weight:500;color:var(--text)}
-    .study-card p{margin:0;max-width:230px;color:var(--muted);font-size:12px;line-height:1.45}
-    .study-card-action{margin-top:auto;padding-top:16px;color:var(--accent);font-size:12px}
-    .study-card-badge{position:absolute;right:14px;top:14px;padding:5px 8px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:9px;letter-spacing:.04em;text-transform:uppercase}
-    .study-card.is-disabled{cursor:default}.study-card.is-disabled:hover{transform:none;box-shadow:none;border-color:var(--border)}
-    .study-card.is-disabled .study-card-action{color:var(--muted)}
-    .alex-actions-inline{display:flex;gap:7px;margin-top:auto;padding-top:14px}
-    .alex-actions-inline a{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:0 10px;border-radius:9px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-size:11px;text-decoration:none}
-    .alex-actions-inline a:first-child{background:var(--accent);border-color:var(--accent);color:#fff}
-    .study-lower{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(210px,.66fr) minmax(260px,.9fr);gap:12px}
-    .study-panel{min-height:150px;padding:17px 18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-sizing:border-box}
-    .study-panel h3{margin:0;font-size:14px;font-weight:500;color:var(--text)}
-    .study-panel small{display:block;margin-top:4px;color:var(--muted);font-size:10px}
-    .continue-row{display:flex;align-items:center;gap:12px;margin-top:18px;padding:13px;border-radius:12px;background:var(--surface-2);border:1px solid var(--border)}
-    .continue-icon{width:38px;height:38px;display:grid;place-items:center;flex:0 0 38px;border-radius:10px;background:var(--accent-soft);color:var(--accent)}
-    .continue-copy{min-width:0}.continue-copy strong{display:block;font-size:12px;font-weight:500;color:var(--text)}.continue-copy span{display:block;margin-top:3px;color:var(--muted);font-size:10px}
-    .continue-row a{margin-left:auto;color:var(--accent);font-size:11px;text-decoration:none}
-    .study-progress{display:grid;place-items:center;margin-top:13px}
-    .study-ring{width:72px;height:72px;display:grid;place-items:center;border-radius:50%;background:conic-gradient(var(--accent) 0deg,var(--surface-2) 0deg);border:1px solid var(--border)}
-    .study-ring::after{content:"—";width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:var(--surface);color:var(--text);font-size:18px}
-    .recent-list{display:grid;gap:8px;margin-top:14px}.recent-empty{padding:18px 12px;border:1px dashed var(--border);border-radius:11px;color:var(--muted);font-size:11px;line-height:1.45;text-align:center}
-    .study-secondary{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .study-mini{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text);text-decoration:none}
-    .study-mini .study-card-icon{width:36px;height:36px;flex:0 0 36px}.study-mini strong{display:block;font-size:12px;font-weight:500}.study-mini span{display:block;margin-top:2px;color:var(--muted);font-size:10px}
+    .learn-page{display:grid;gap:16px;padding-bottom:28px}
+    .learn-heading{padding:2px 2px 0}
+    .learn-heading h1{margin:0;color:var(--text);font-size:26px;font-weight:500;letter-spacing:-.03em}
+    .learn-heading p{margin:5px 0 0;color:var(--muted);font-size:12px}
+    .learn-grid{display:grid;grid-template-columns:1.18fr 1fr 1fr 1fr;gap:14px}
+    .learn-card{position:relative;min-height:212px;padding:20px;border:1px solid color-mix(in srgb,var(--border) 88%,transparent);border-radius:22px;background:var(--surface);box-shadow:0 10px 28px rgba(15,35,66,.055);display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--text);transition:.16s ease}
+    .learn-card:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(15,35,66,.09);border-color:color-mix(in srgb,var(--accent) 35%,var(--border))}
+    .learn-card--hero{background:linear-gradient(145deg,#eaf3ff 0%,#f8fbff 68%,var(--surface) 100%)}
+    [data-theme="dark"] .learn-card--hero{background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 18%,var(--surface)),var(--surface))}
+    .learn-icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 10%,transparent)}
+    .learn-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .learn-card h2{margin:20px 0 7px;font-size:17px;font-weight:500;letter-spacing:-.015em;color:var(--text)}
+    .learn-card p{margin:0;max-width:245px;color:var(--muted);font-size:11px;line-height:1.55}
+    .learn-cta{margin-top:auto;padding-top:18px;color:var(--accent);font-size:11px}
+    .learn-zap-art{position:absolute;right:-10px;bottom:-18px;width:108px;height:108px;opacity:.95;object-fit:contain;pointer-events:none}
+    .learn-card--alex::after{content:"";position:absolute;right:-34px;top:-34px;width:125px;height:125px;border-radius:50%;background:var(--accent-soft);opacity:.62}
+    .alex-mini{position:absolute;right:17px;top:18px;width:54px;height:54px;border-radius:50%;background:linear-gradient(145deg,#dbeafe,#eef5ff);display:grid;place-items:center;color:#184888;z-index:1}
+    .alex-mini svg{width:35px;height:35px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .learn-bottom{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(220px,.78fr) minmax(270px,1fr);gap:14px}
+    .learn-panel{min-height:160px;padding:18px;border:1px solid color-mix(in srgb,var(--border) 90%,transparent);border-radius:20px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04)}
+    .learn-panel h3{margin:0;font-size:14px;font-weight:500;color:var(--text)}
+    .learn-panel>p,.learn-panel>small{display:block;margin:4px 0 0;color:var(--muted);font-size:10px}
+    .continue-item{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:12px;align-items:center;margin-top:16px;padding:12px;border-radius:14px;background:var(--surface-2);border:1px solid var(--border)}
+    .continue-thumb{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-size:11px}
+    .continue-copy strong{display:block;font-size:12px;font-weight:500;color:var(--text)}
+    .continue-copy span{display:block;margin-top:3px;color:var(--muted);font-size:10px}
+    .continue-item a{color:var(--accent);font-size:10px;text-decoration:none}
+    .progress-track{height:7px;border-radius:999px;background:var(--surface-2);overflow:hidden;margin-top:8px}
+    .progress-track span{display:block;height:100%;width:38%;border-radius:999px;background:var(--accent)}
+    .progress-wrap{display:grid;place-items:center;margin-top:14px;gap:8px}
+    .progress-ring{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--accent) 0 137deg,var(--accent-soft) 137deg 360deg);position:relative}
+    .progress-ring::after{content:"";position:absolute;width:60px;height:60px;border-radius:50%;background:var(--surface)}
+    .progress-ring strong{position:relative;z-index:1;font-size:16px;font-weight:500;color:var(--text)}
+    .progress-wrap span{font-size:10px;color:var(--muted)}
+    .recent-list{display:grid;gap:7px;margin-top:13px}.recent-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--border)}.recent-row:last-child{border-bottom:0}.recent-row strong{font-size:11px;font-weight:500;color:var(--text)}.recent-row span{font-size:9px;color:var(--muted)}
     [data-admin-only][hidden]{display:none!important}
-    @media(max-width:1180px){.study-primary{grid-template-columns:repeat(2,minmax(0,1fr))}.study-lower{grid-template-columns:1fr 1fr}.study-lower .study-panel:first-child{grid-column:1/-1}}
-    @media(max-width:760px){.study-primary,.study-secondary,.study-lower{grid-template-columns:1fr}.study-lower .study-panel:first-child{grid-column:auto}.study-card{min-height:150px}.study-spotlight{padding:17px 18px}}
+    @media(max-width:1180px){.learn-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.learn-bottom{grid-template-columns:1fr 1fr}.learn-bottom .learn-panel:first-child{grid-column:1/-1}}
+    @media(max-width:760px){.learn-grid,.learn-bottom{grid-template-columns:1fr}.learn-bottom .learn-panel:first-child{grid-column:auto}.learn-card{min-height:178px}.learn-heading h1{font-size:23px}}
   </style>
 </head>
 <body data-page="aprender">
@@ -65,95 +66,91 @@
           <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
 
-        <section class="study-hub" aria-label="Central Aprender">
-          <div class="study-spotlight">
+        <section class="learn-page" aria-label="Aprender">
+          <div class="learn-heading">
             <h1>Aprender</h1>
-            <p>Seu jeito, no seu ritmo. Escolha como você quer aprender agora.</p>
+            <p>Seu jeito, no seu ritmo.</p>
           </div>
 
-          <div class="study-primary">
-            <a class="study-card study-card--featured" href="/apostilas/">
-              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span>
+          <div class="learn-grid">
+            <a class="learn-card learn-card--hero" href="/apostilas/">
+              <span class="learn-icon"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span>
               <h2>Apostilas</h2>
-              <p>Conteúdo LURIA organizado por área e matéria.</p>
-              <span class="study-card-action">Explorar →</span>
+              <p>Conteúdo LURIA organizado por área, com leitura direta e estrutura para estudo.</p>
+              <span class="learn-cta">Explorar →</span>
             </a>
 
-            <a class="study-card" href="/caderno/">
-              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 8h7M9 12h7M9 16h5M3 7h4M3 12h4M3 17h4"/></svg></span>
+            <a class="learn-card" href="/caderno/">
+              <span class="learn-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 8h7M9 12h7M9 16h5M3 7h4M3 12h4M3 17h4"/></svg></span>
               <h2>Minhas anotações</h2>
-              <p>Seus cadernos, resumos e materiais pessoais.</p>
-              <span class="study-card-action">Abrir →</span>
+              <p>Seus cadernos, resumos e materiais pessoais em um só lugar.</p>
+              <span class="learn-cta">Abrir →</span>
             </a>
 
-            <div class="study-card" data-admin-only hidden>
-              <span class="study-card-badge">Admin</span>
-              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0M18 4l2-2m-14 2L4 2"/></svg></span>
+            <a class="learn-card learn-card--alex" href="/professor-alex/" data-admin-only hidden>
+              <span class="alex-mini"><svg viewBox="0 0 48 48"><circle cx="24" cy="17" r="8"/><path d="M11 42c1-10 7-15 13-15s12 5 13 15M17 16h-5m19 0h5M20 17h-5v-4h7m6 4h5v-4h-7"/><path d="M17 31v11m14-11v11M15 34h18"/></svg></span>
+              <span class="learn-icon"><svg viewBox="0 0 24 24"><path d="M4 18v-6a8 8 0 0 1 16 0v6"/><path d="M8 18v2H5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5Zm8 0v2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-3v5Z"/></svg></span>
               <h2>Professor Alex</h2>
-              <p>Converse livremente ou entre no modo guiado do LuriaZap.</p>
-              <div class="alex-actions-inline">
-                <a href="/professor-alex/">Conversar</a>
-                <a href="/plantao/luriazap/">LuriaZap</a>
-              </div>
-            </div>
+              <p>Pergunte, tire dúvidas e aprofunde qualquer tema em conversa livre.</p>
+              <span class="learn-cta">Conversar →</span>
+            </a>
 
-            <a class="study-card" href="/flashcards/">
-              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/></svg></span>
-              <h2>Flashcards</h2>
-              <p>Revisão ativa para fortalecer memória e retenção.</p>
-              <span class="study-card-action">Revisar →</span>
+            <a class="learn-card" href="/plantao/luriazap/">
+              <span class="learn-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h6"/></svg></span>
+              <h2>LuriaZap</h2>
+              <p>Estudo guiado, passo a passo, em uma conversa que continua com você.</p>
+              <span class="learn-cta">Começar →</span>
+              <img class="learn-zap-art" src="/assets/img/plantao/luriazap-card-bg.webp" alt="" aria-hidden="true">
             </a>
           </div>
 
-          <div class="study-secondary">
-            <a class="study-mini" href="/caderno-erros/">
-              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></span>
-              <div><strong>Caderno de erros</strong><span>Transforme erros em revisão direcionada.</span></div>
-            </a>
-            <a class="study-mini" href="/questoes-simulados/">
-              <span class="study-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h8l5 5v14H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg></span>
-              <div><strong>Questões e Simulados</strong><span>Treine e teste o que você estudou.</span></div>
-            </a>
-          </div>
-
-          <div class="study-lower">
-            <section class="study-panel">
+          <div class="learn-bottom">
+            <section class="learn-panel">
               <h3>Continuar de onde parou</h3>
-              <small>Volte rapidamente ao último recurso usado.</small>
-              <div class="continue-row">
-                <span class="continue-icon" aria-hidden="true">↗</span>
-                <div class="continue-copy"><strong>Escolha uma forma de aprender</strong><span>Seu último conteúdo de aprendizagem vai aparecer aqui automaticamente.</span></div>
+              <small>Retome rapidamente seu último conteúdo.</small>
+              <div class="continue-item">
+                <div class="continue-thumb">CM</div>
+                <div class="continue-copy">
+                  <strong>Cardiologia · Insuficiência cardíaca</strong>
+                  <span>Apostila LURIA · 38% concluído</span>
+                  <div class="progress-track"><span></span></div>
+                </div>
+                <a href="/apostilas/">Continuar →</a>
               </div>
             </section>
 
-            <section class="study-panel">
+            <section class="learn-panel">
               <h3>Seu progresso no aprendizado</h3>
-              <small>Resumo da sua atividade.</small>
-              <div class="study-progress"><div class="study-ring" aria-label="Progresso ainda não calculado"></div></div>
+              <small>Visão rápida desta semana.</small>
+              <div class="progress-wrap">
+                <div class="progress-ring"><strong>38%</strong></div>
+                <span>12 h 25 min esta semana</span>
+              </div>
             </section>
 
-            <section class="study-panel">
+            <section class="learn-panel">
               <h3>Estudados recentemente</h3>
-              <small>Os últimos conteúdos acessados.</small>
-              <div class="recent-list"><div class="recent-empty">Quando você começar a aprender, seus conteúdos recentes aparecem aqui.</div></div>
+              <small>Seus últimos acessos.</small>
+              <div class="recent-list">
+                <div class="recent-row"><strong>Pré-eclâmpsia</strong><span>Professor Alex</span></div>
+                <div class="recent-row"><strong>Sepse</strong><span>LuriaZap</span></div>
+                <div class="recent-row"><strong>IAM</strong><span>Apostila</span></div>
+              </div>
             </section>
           </div>
         </section>
       </div>
     </main>
   </div>
-
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js?v=auth4"></script>
-  <script src="/assets/js/app.js?v=20261004-aprender-consolidar"></script>
+  <script src="/assets/js/app.js?v=20261004-aprender-layout-v2"></script>
   <script>
     (() => {
       const applyAdminVisibility = (isAdmin) => {
-        document.querySelectorAll("[data-admin-only]").forEach(el => {
-          el.hidden = isAdmin !== true;
-        });
+        document.querySelectorAll("[data-admin-only]").forEach(el => { el.hidden = isAdmin !== true; });
       };
-      window.addEventListener("docmap:ready", (event) => applyAdminVisibility(event.detail?.isAdmin), { passive:true });
+      window.addEventListener("docmap:ready", e => applyAdminVisibility(e.detail?.isAdmin), { passive:true });
       if (typeof window.docmapIsAdmin === "boolean") applyAdminVisibility(window.docmapIsAdmin);
     })();
   </script>
