@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v235-topbar-blue-wider-panel";
+const CACHE_VERSION = "luria-pwa-v236-scrollbar-thumb-only";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -18,7 +18,7 @@ const APP_SHELL = [
   "/questoes-simulados/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/css/style.css?v=20261004-shell-v3",
+  "/assets/css/style.css?v=20261004-scrollbar-thumb-only",
   "/assets/css/luria-brand-v5.css?v=20261004-topbar-blue-v9",
   "/assets/css/dashboard-layouts.css?v=20261004-topbar-blue-v9",
   "/assets/js/supabase.js?v=auth4",
