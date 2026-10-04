@@ -22,7 +22,7 @@
     .qr-card,.qr-side-card{border:1px solid var(--border);background:var(--surface);box-shadow:none}
     .qr-card{border-radius:12px;padding:17px 18px 12px;min-width:0}
     .qr-question-meta{display:flex;align-items:center;gap:6px;margin-bottom:11px;flex-wrap:wrap}.qr-pill{padding:4px 8px;border-radius:7px;background:var(--accent-soft);color:var(--accent);font-size:8px;font-weight:850}.qr-pill.neutral{background:var(--surface-2);color:var(--muted)}.qr-difficulty{display:inline-flex;align-items:center;gap:4px}
-    .qr-stem{font-size:11px;line-height:1.58;color:var(--text);white-space:pre-wrap}.qr-image{display:block;max-width:min(100%,620px);max-height:300px;object-fit:contain;margin:12px auto;border-radius:9px;border:1px solid var(--border)}
+    .qr-stem{font-size:11px;line-height:1.58;color:var(--text);white-space:pre-wrap}.qr-image{display:block;max-width:min(100%,620px);max-height:300px;object-fit:contain;margin:12px auto;border-radius:9px;border:1px solid var(--border)}.qr-image[hidden]{display:none!important}
     .qr-options{display:grid;gap:6px;margin-top:14px}.qr-option{width:100%;display:grid;grid-template-columns:28px 1fr;gap:9px;align-items:center;text-align:left;padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;cursor:pointer;min-height:40px}.qr-option:hover{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));background:var(--surface-2)}.qr-option.selected{border-color:var(--accent);background:var(--accent-soft)}.qr-option.correct{border-color:var(--success);background:color-mix(in srgb,var(--success) 8%,var(--surface))}.qr-option.wrong{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}
     .qr-letter{width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:var(--surface-2);font-size:9px;font-weight:900}.qr-option.selected .qr-letter{background:var(--accent);color:#fff}
     .qr-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:11px;padding-top:10px;border-top:1px solid var(--border)}.qr-action-group{display:flex;gap:6px}.qr-comment-btn{margin-right:auto}.qr-reference-list{display:grid;gap:5px;margin-top:7px}.qr-reference-item{padding:7px 9px;border:1px solid var(--border);border-radius:7px;background:var(--surface-2);font-size:8.5px;line-height:1.45;color:var(--muted)}.qr-btn{min-height:31px;padding:0 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);font:inherit;font-size:8px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:5px}.qr-btn.primary{border-color:var(--accent);background:var(--accent);color:#fff;padding-inline:14px}.qr-btn:disabled{opacity:.45;cursor:not-allowed}
@@ -166,7 +166,7 @@
           <span class="qr-pill neutral qr-difficulty">▥ <span id="qr-difficulty">Média</span></span>
           <span id="qr-source" style="margin-left:auto;color:var(--muted);font-size:8px"></span>
         </div>
-        <div id="qr-text" class="qr-stem"></div><img id="qr-image" class="qr-image" alt="Imagem da questão" hidden>
+        <div id="qr-text" class="qr-stem"></div><img id="qr-image" class="qr-image" alt="" hidden style="display:none">
         <div id="qr-options" class="qr-options"></div>
         <div id="qr-feedback" class="qr-feedback" hidden></div>
         <div class="qr-actions">
@@ -222,13 +222,33 @@
    if(raw&&typeof raw==="object") return Object.values(raw).map(x=>typeof x==="string"?x:(x?.text||x?.title||x?.label||x?.reference||JSON.stringify(x))).filter(Boolean);
    return [];
  }
+ function explanationEntries(item){
+   const raw=item.alternative_explanations??item.explanations??item.explicacoes_alternativas??item.justificativas??{};
+   if(Array.isArray(raw)) return raw.map((x,i)=>({k:String(x?.k||x?.key||x?.letter||String.fromCharCode(65+i)).toUpperCase(),t:String(x?.t||x?.text||x?.explanation||x?.justification||"")})).filter(x=>x.t);
+   const out=[];
+   ["A","B","C","D","E"].forEach(k=>{
+     const v=(raw&&typeof raw==="object")?(raw[k]??raw[k.toLowerCase()]):null;
+     const direct=item["explanation_"+k.toLowerCase()]??item["explicacao_"+k.toLowerCase()]??item["justificativa_"+k.toLowerCase()];
+     const val=v??direct;
+     if(val) out.push({k,t:String(typeof val==="string"?val:(val.text||val.explanation||val.justification||""))});
+   });
+   return out.filter(x=>x.t);
+ }
+ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promise(resolve=>setTimeout(()=>resolve(fallback),ms))])}
  function tick(){const sec=Math.floor((Date.now()-state.started)/1000);const m=Math.floor(sec/60),r=sec%60;$("qr-clock").textContent=m+" min "+String(r).padStart(2,"0")+" s"}
  function render(){
   const item=state.items[state.index]; if(!item)return;
   $("qr-card-question").textContent="Questão "+(state.index+1);
   state.started=Date.now(); const at=state.attempts.get(item.id), sel=state.selected.get(item.id)||String(at?.selected_option||"").toUpperCase(), confirmed=!!at, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
   $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Área não classificada";$("qr-materia").textContent=item.materia||item.subject||"Matéria não classificada";$("qr-difficulty").textContent=item.difficulty||"Não informada";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Sem tags"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
-  const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url); if(hasQuestionImage){img.src=item.image_url;img.hidden=false}else{img.hidden=true;img.removeAttribute("src");img.style.display="none"} if(hasQuestionImage) img.style.removeProperty("display")
+  const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url);
+  img.onload=null;img.onerror=null;
+  if(hasQuestionImage){
+    img.hidden=true;img.style.display="none";
+    img.onload=()=>{img.hidden=false;img.style.removeProperty("display")};
+    img.onerror=()=>{img.hidden=true;img.style.display="none";img.removeAttribute("src")};
+    img.src=item.image_url;
+  }else{img.hidden=true;img.style.display="none";img.removeAttribute("src")}
   const os=opts(item),cutSet=state.eliminated.get(item.id)||new Set();$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(cutSet.has(o.k))cl+=" eliminated";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span class="qr-option-text">'+esc(o.t)+'</span><span class="qr-cut" data-cut="'+o.k+'" role="button" tabindex="0" aria-label="Eliminar alternativa '+o.k+'"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="m8.2 8.2 11.3 7.3"/><path d="m8.2 15.8 11.3-7.3"/></svg></span></button>'}).join("");
   document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=e=>{if(e.target.closest("[data-cut]"))return;const set=state.eliminated.get(item.id)||new Set();if(set.has(b.dataset.opt))return;state.selected.set(item.id,b.dataset.opt);render()});
   document.querySelectorAll("[data-cut]").forEach(c=>{c.onclick=e=>{e.stopPropagation();if(confirmed)return;const set=state.eliminated.get(item.id)||new Set();if(set.has(c.dataset.cut))set.delete(c.dataset.cut);else set.add(c.dataset.cut);state.eliminated.set(item.id,set);if(state.selected.get(item.id)===c.dataset.cut)state.selected.delete(item.id);render()};c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}}});
@@ -246,7 +266,7 @@
  function rotatingSlice(items,count,offset){if(!items.length||count<=0)return[];const out=[];for(let i=0;i<Math.min(count,items.length);i+=1)out.push(items[(offset+i)%items.length]);return out}
  function interleaveDaily(a,b){const out=[];const max=Math.max(a.length,b.length);for(let i=0;i<max;i+=1){if(a[i])out.push(a[i]);if(b[i])out.push(b[i])}return out.slice(0,DAILY_LIMIT)}
  async function loadDailyItems(user){
-   const {data:sets,error:setsError}=await sb.from("question_sets").select("*").eq("user_id",user.id).eq("status","ready").in("title",DAILY_LOT_TITLES);
+   const {data:sets,error:setsError}=await sb.from("question_sets").select("*").eq("status","ready").in("title",DAILY_LOT_TITLES);
    if(setsError)throw setsError;
    const byTitle=new Map((sets||[]).map(x=>[x.title,x]));
    const lot1=byTitle.get(DAILY_LOT_TITLES[0]), lot2=byTitle.get(DAILY_LOT_TITLES[1]);
@@ -275,7 +295,7 @@
      try{
        const daily=await loadDailyItems(user);
        set=daily.set;items=daily.items;
-       const attemptsResult=await sb.from("question_attempts").select("*");
+       const attemptsResult=await withTimeout(sb.from("question_attempts").select("*").eq("user_id",user.id),8000,{data:[],error:null});
        attempts=attemptsResult.data||[];
        if(attemptsResult.error)loadError=attemptsResult.error;
      }catch(error){loadError=error}
@@ -290,16 +310,22 @@
      const [{data:setData,error:se},{data:itemData,error:ie},{data:attemptData,error:ae}]=await Promise.all([
        sb.from("question_sets").select("*").eq("id",setId).single(),
        sb.from("question_items").select("*").eq("set_id",setId).order("order_index",{ascending:true}),
-       sb.from("question_attempts").select("*")
+       sb.from("question_attempts").select("*").eq("user_id",user.id)
      ]);
      set=setData;items=itemData||[];attempts=attemptData||[];loadError=se||ie||ae;
    }
    if(loadError||!set||!items.length){$("qr-loading").textContent=isDaily?"Não foi possível montar as 50 questões de hoje.":"Não foi possível carregar esta lista.";return}
-   state.set=set;state.items=await signedImages(items);
+   state.set=set;state.items=items.map(x=>({...x,image_url:null}));
    const ids=new Set(state.items.map(x=>x.id));
    attempts.filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));
    state.index=firstUnanswered();
-   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render()
+   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render();
+   withTimeout(signedImages(items),6000,null).then(signed=>{
+     if(!signed)return;
+     const urls=new Map(signed.map(x=>[x.id,x.image_url||null]));
+     state.items=state.items.map(x=>({...x,image_url:urls.get(x.id)||null}));
+     render();
+   }).catch(()=>{});
  }
  function closeToolPopovers(except=null){
    [["qr-highlight-popover","qr-highlight-tool"],["qr-font-popover","qr-font-tool"]].forEach(([pop,btn])=>{
@@ -333,7 +359,7 @@
  $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
  document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
  $("qr-comment-toggle").onclick=()=>{const fb=$("qr-feedback");fb.querySelectorAll(".luria-learning-actions,.luria-learning-box,.luria-related-links").forEach(el=>el.remove());fb.hidden=!fb.hidden;$("qr-comment-toggle").textContent=fb.hidden?"Comentário LURIA":"Fechar comentário"};
- $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id))return;await confirm()};$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);init();
+ $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id))return;await confirm()};$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);setTimeout(()=>{if(!$("qr-loading").hidden&&$("qr-loading").textContent.includes("Carregando"))$("qr-loading").textContent="O carregamento demorou mais que o esperado. Atualize a página para tentar novamente."},12000);init().catch(error=>{console.error(error);$("qr-loading").textContent="Não foi possível carregar as questões. Atualize a página para tentar novamente."});
 })();
 </script>
 <script>
