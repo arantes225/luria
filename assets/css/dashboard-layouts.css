@@ -5278,3 +5278,40 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     padding-top:0!important;
   }
 }
+
+
+/* DASHBOARD — BLUE CORNERS v3 — 2026-10-04 */
+@media (min-width:981px){
+  /* O azul passa a ocupar integralmente os cantos e as laterais do shell.
+     O painel branco interno deixa de desenhar a grande curva superior. */
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    padding-left:6px!important;
+    padding-right:6px!important;
+    padding-bottom:6px!important;
+    background:#0f67ee!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    left:0!important;
+    right:0!important;
+    border-radius:24px 24px 0 0!important;
+    background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
+  }
+
+  /* Cantos superiores internos retos: nada de meia-lua/círculo branco. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    border-radius:0 0 0 18px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    border-radius:0 0 18px 0!important;
+  }
+
+  /* Mantém o filete azul contínuo nas duas laterais e na base. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    margin-left:0!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    margin-right:0!important;
+  }
+}
