@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v224-topbar-search";
+const CACHE_VERSION = "luria-pwa-v225-global-blue-frame";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
