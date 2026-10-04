@@ -4428,3 +4428,17 @@ body[data-page="caderno"] .notebook-notion-reader-content pre{
   body[data-page="caderno"] .notebook-notion-reader-actions .button{display:none}
   body[data-page="caderno"] .notebook-notion-reader-content{padding:18px 16px 32px}
 }
+
+
+body[data-page="caderno"] .notebook-notion-reader-content [data-notion-editable="1"][contenteditable="true"]{
+  outline:1px solid var(--accent);
+  outline-offset:4px;
+  border-radius:6px;
+  background:var(--surface-2);
+}
+body[data-page="caderno"] .notebook-notion-reader.is-editing .notebook-notion-reader-content [data-notion-editable="1"]{
+  cursor:text;
+}
+body[data-page="caderno"] .notebook-notion-reader.is-editing .notebook-notion-reader-content [data-notion-editable="1"]:hover{
+  background:var(--surface-2);
+}
