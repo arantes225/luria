@@ -13811,20 +13811,15 @@ function insertStudyBlock(
   type
 ) {
 
-  const labels = {
-    important:
-      "★ Importante",
-
-    warning:
-      "⚠ Atenção",
-
-    memory:
-      "🧠 Decore"
-  };
+  const allowedTypes = new Set([
+    "important",
+    "warning",
+    "memory"
+  ]);
 
 
   if (
-    !labels[type]
+    !allowedTypes.has(type)
   ) {
 
     return;
@@ -13859,10 +13854,6 @@ function insertStudyBlock(
       <div
         class="notebook-study-block ${type}"
       >
-        <strong>
-          ${labels[type]}
-        </strong>
-
         <div>
           ${content}
         </div>
