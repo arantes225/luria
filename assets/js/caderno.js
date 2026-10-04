@@ -1250,7 +1250,7 @@ async function materializeNotebookImagesForShare(
           notebookState.user.id
         )
         .select(
-          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at"
+          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time"
         )
         .single();
 
@@ -3418,7 +3418,7 @@ async function renameCurrentNotebookTitle(nextTitle) {
           .update({ topic_title: title })
           .eq("id", current.note.id)
           .eq("user_id", notebookState.user.id)
-          .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at")
+          .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
           .single();
 
         if (noteResult.error) throw noteResult.error;
@@ -3432,7 +3432,7 @@ async function renameCurrentNotebookTitle(nextTitle) {
         .update({ topic_title: title })
         .eq("id", current.note.id)
         .eq("user_id", notebookState.user.id)
-        .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at")
+        .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
         .single();
 
       if (noteResult.error) throw noteResult.error;
@@ -3598,6 +3598,16 @@ async function openFreeNote(
     noteById(
       noteId
     );
+
+  if (note?.storage_source === "notion" && note?.notion_page_id) {
+    await openNotionPage({
+      id:note.notion_page_id,
+      title:note.topic_title || "Página do Notion",
+      url:note.notion_url || "",
+      path:"Notion"
+    });
+    return;
+  }
 
 
   if (
@@ -3769,152 +3779,146 @@ function closeFreePageModal() {
 }
 
 
+async function getNotionConnectionState(force = false) {
+  if (!force && notionSourceState.connected) {
+    return { connected:true, configured:notionSourceState.configured, workspace_name:notionSourceState.workspaceName };
+  }
+
+  try {
+    const state = await invokeNotionFunction("notion-api", { action:"status" });
+    notionSourceState.connected = Boolean(state?.connected);
+    notionSourceState.configured = Boolean(state?.configured);
+    notionSourceState.workspaceName = state?.workspace_name || "";
+    return state || {};
+  } catch (error) {
+    console.warn("Não foi possível verificar o Notion:", error);
+    return { connected:false };
+  }
+}
+
+async function createNotionBackedNote({ title, area, materia = null, topicId = null, initialText = "" }) {
+  const remote = await invokeNotionFunction("notion-api", {
+    action:"create_page",
+    title,
+    initial_text:initialText
+  });
+
+  if (!remote?.page?.id) {
+    throw new Error("O Notion não retornou a página criada.");
+  }
+
+  const { data, error } = await notebookSb
+    .from("study_notes")
+    .insert({
+      user_id:notebookState.user.id,
+      topic_id:topicId,
+      topic_title:title,
+      area:area || "Página livre",
+      materia,
+      content_html:"",
+      storage_source:"notion",
+      notion_page_id:remote.page.id,
+      notion_url:remote.page.url || null,
+      notion_last_edited_time:remote.page.last_edited_time || null
+    })
+    .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
+    .single();
+
+  if (error) throw error;
+
+  notebookState.notesById.set(data.id, data);
+  if (data.topic_id) notebookState.notesByTopic.set(data.topic_id, data);
+
+  return { note:data, page:remote.page };
+}
+
 async function createFreePage() {
+  const titleInput = document.getElementById("notebook-free-title");
+  const areaInput = document.getElementById("notebook-free-area");
+  const button = document.getElementById("notebook-free-create");
 
-  const titleInput =
-    document.getElementById(
-      "notebook-free-title"
-    );
+  const title = String(titleInput?.value || "").trim();
+  const area = String(areaInput?.value || "").trim();
+  const materia = document.getElementById("notebook-free-modal")?.dataset.subject || null;
 
-
-  const areaInput =
-    document.getElementById(
-      "notebook-free-area"
-    );
-
-
-  const button =
-    document.getElementById(
-      "notebook-free-create"
-    );
-
-
-  const title =
-    String(
-      titleInput?.value ||
-      ""
-    )
-      .trim();
-
-
-  const area =
-    String(
-      areaInput?.value ||
-      ""
-    )
-      .trim();
-
-
-  if (
-    !title
-  ) {
-
+  if (!title) {
     titleInput?.focus();
-
     return;
-
   }
 
-
-  if (
-    button
-  ) {
-
-    button.disabled =
-      true;
-
-
-    button.textContent =
-      "Criando...";
-
+  if (button) {
+    button.disabled = true;
+    button.textContent = "Criando...";
   }
 
+  try {
+    const notionState = await getNotionConnectionState(true);
 
-  const {
-    data,
-    error
-  } =
-    await notebookSb
-      .from(
-        "study_notes"
-      )
+    if (notionState?.connected) {
+      const created = await createNotionBackedNote({
+        title,
+        area:area || "Página livre",
+        materia
+      });
+
+      const freeModal = document.getElementById("notebook-free-modal");
+      if (freeModal) {
+        delete freeModal.dataset.subject;
+        delete freeModal.dataset.area;
+      }
+      closeFreePageModal();
+      renderLibrary();
+
+      notionSourceState.currentPage = {
+        id:created.page.id,
+        title,
+        url:created.page.url || created.note.notion_url || "",
+        path:"Notion"
+      };
+
+      await openNotionPage(notionSourceState.currentPage);
+      setSaveStatus("Criado e armazenado no Notion", "saved");
+      return;
+    }
+
+    const { data, error } = await notebookSb
+      .from("study_notes")
       .insert({
-        user_id:
-          notebookState.user.id,
-
-        topic_id:
-          null,
-
-        topic_title:
-          title,
-
-        area:
-          area ||
-          "Página livre",
-
-        materia:
-          document.getElementById("notebook-free-modal")?.dataset.subject || null,
-
-        content_html:
-          ""
+        user_id:notebookState.user.id,
+        topic_id:null,
+        topic_title:title,
+        area:area || "Página livre",
+        materia,
+        content_html:"",
+        storage_source:"luria"
       })
-      .select(
-        "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at"
-      )
+      .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
       .single();
 
+    if (error) throw error;
 
-  if (
-    button
-  ) {
+    notebookState.notesById.set(data.id, data);
 
-    button.disabled =
-      false;
+    const freeModal = document.getElementById("notebook-free-modal");
+    if (freeModal) {
+      delete freeModal.dataset.subject;
+      delete freeModal.dataset.area;
+    }
+    closeFreePageModal();
+    renderLibrary();
+    await openFreeNote(data.id);
 
-
-    button.textContent =
-      "Criar página";
-
-  }
-
-
-  if (
-    error
-  ) {
-
-    console.error(
-      error
-    );
-
-
+  } catch (error) {
+    console.error(error);
     window.LuriaDialog.alert(
-      `Não foi possível criar a página: ${error.message}`
+      `Não foi possível criar a página: ${error?.message || "erro desconhecido"}`
     );
-
-
-    return;
-
+  } finally {
+    if (button) {
+      button.disabled = false;
+      button.textContent = "Criar página";
+    }
   }
-
-
-  notebookState
-    .notesById
-    .set(
-      data.id,
-      data
-    );
-
-
-  const freeModal=document.getElementById("notebook-free-modal"); if(freeModal){delete freeModal.dataset.subject;delete freeModal.dataset.area;} closeFreePageModal();
-
-
-  renderLibrary();
-
-
-  await openFreeNote(
-    data.id
-  );
-
 }
 
 
@@ -4130,7 +4134,7 @@ async function saveCurrentNotebookContent(
             notebookState.user.id
           )
           .select(
-            "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at"
+            "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time"
           )
           .single();
 
@@ -4147,7 +4151,7 @@ async function saveCurrentNotebookContent(
             payload
           )
           .select(
-            "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at"
+            "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time"
           )
           .single();
 
@@ -4175,7 +4179,7 @@ async function saveCurrentNotebookContent(
           notebookState.user.id
         )
         .select(
-          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at"
+          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time"
         )
         .single();
 
@@ -19224,7 +19228,7 @@ async function loadData() {
           "study_notes"
         )
         .select(
-          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at"
+          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time"
         )
         .eq(
           "user_id",
@@ -19304,7 +19308,7 @@ async function loadData() {
           "study_notes"
         )
         .select(
-          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at"
+          "id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time"
         )
         .in(
           "id",
@@ -20087,7 +20091,7 @@ results?.addEventListener("click",async e=>{const b=e.target.closest("[data-open
 
 /* Move the note's library placement without changing the linked lesson. */
 (() => {
-  const fields="id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at";
+  const fields="id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time";
   let dialog,busy=false;
   const subject=doc=>doc?.note?.materia||doc?.topic?.materia||"Outros";
   function catalog(){
