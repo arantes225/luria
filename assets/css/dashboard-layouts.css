@@ -7511,3 +7511,33 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
       url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v37")!important;
   }
 }
+
+
+/* DASHBOARD 1 — PROGRESS CARD ONLY v38 — 2026-10-04 */
+@media (min-width:981px){
+  /* Ajuste isolado: somente o container "Progresso por área". */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+    min-height:224px!important;
+    align-self:start!important;
+    padding:16px 18px 18px!important;
+    margin:0!important;
+    overflow:visible!important;
+    background:var(--surface)!important;
+    border:1px solid var(--dl-border)!important;
+    border-radius:16px!important;
+    box-shadow:0 5px 16px rgba(26,79,117,.035)!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin:0 0 12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    margin:6px 0!important;
+    min-height:20px!important;
+  }
+}
