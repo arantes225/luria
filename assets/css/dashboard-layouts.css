@@ -5791,3 +5791,133 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     margin-left:-15px!important;
   }
 }
+
+
+/* DASHBOARD MASTER — PORTALED TOPBAR + WHITE BRAND v15 — 2026-10-04 */
+@media (min-width:981px){
+  /* Sidebar precisa deixar a marca ultrapassar o painel branco e entrar no topo azul. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar{
+    overflow:visible!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .sidebar-top{
+    position:absolute!important;
+    top:-58px!important;
+    left:10px!important;
+    right:auto!important;
+    height:52px!important;
+    display:flex!important;
+    align-items:center!important;
+    overflow:visible!important;
+    z-index:2147482600!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .luria-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar #luria-brand-logo{
+    filter:brightness(0) invert(1)!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .brand-copy strong,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar .brand .brand-copy small{
+    color:#fff!important;
+  }
+
+  /* A topbar agora é filha direta do shell azul: sem top negativo, sem clipping. */
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar{
+    position:absolute!important;
+    top:8px!important;
+    left:270px!important;
+    right:12px!important;
+    width:auto!important;
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    overflow:visible!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    pointer-events:auto!important;
+    z-index:2147482700!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .page-heading{
+    display:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-notifications{
+    position:static!important;
+    inset:auto!important;
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    align-items:center!important;
+    gap:10px!important;
+    margin:0!important;
+    transform:none!important;
+    pointer-events:auto!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar :is(
+    #luria-global-search,
+    .luria-command-trigger-topbar,
+    .luria-pomodoro-top,
+    .luria-pomodoro-toggle,
+    .luria-notification-toggle,
+    .luria-profile-top,
+    .luria-profile-toggle
+  ){
+    visibility:visible!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar #luria-global-search,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-command-trigger-topbar{
+    display:flex!important;
+    min-width:132px!important;
+    height:43px!important;
+    padding:0 14px!important;
+    align-items:center!important;
+    gap:8px!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    border-radius:12px!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-pomodoro-toggle{
+    display:flex!important;
+    min-width:78px!important;
+    height:43px!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-notification-toggle,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar .luria-profile-toggle{
+    display:grid!important;
+    place-items:center!important;
+    width:43px!important;
+    height:43px!important;
+    min-width:43px!important;
+    min-height:43px!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell > .topbar.dashboard-shell-topbar :is(svg,span,strong,small){
+    color:#fff!important;
+  }
+}
