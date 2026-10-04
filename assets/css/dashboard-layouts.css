@@ -7696,3 +7696,102 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     order:4!important;
   }
 }
+
+
+/* DASHBOARD TOPBAR — REAL SEARCH FIELD v42 — 2026-10-04 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-field-topbar{
+    position:absolute!important;
+    left:var(--dashboard-title-left)!important;
+    right:auto!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:9px!important;
+    width:236px!important;
+    min-width:236px!important;
+    max-width:236px!important;
+    height:43px!important;
+    min-height:43px!important;
+    max-height:43px!important;
+    padding:0 12px!important;
+    margin:0!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    border-radius:12px!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+    backdrop-filter:blur(8px)!important;
+    -webkit-backdrop-filter:blur(8px)!important;
+    z-index:2147482002!important;
+    cursor:text!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-field-topbar:focus-within{
+    background:rgba(255,255,255,.16)!important;
+    border-color:rgba(255,255,255,.46)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search .luria-command-search-icon{
+    display:block!important;
+    width:18px!important;
+    height:18px!important;
+    min-width:18px!important;
+    flex:0 0 18px!important;
+    margin:0!important;
+    padding:0!important;
+    fill:none!important;
+    stroke:currentColor!important;
+    stroke-width:2!important;
+    stroke-linecap:round!important;
+    stroke-linejoin:round!important;
+    color:#fff!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search-field{
+    display:block!important;
+    flex:1 1 auto!important;
+    width:100%!important;
+    min-width:0!important;
+    height:100%!important;
+    margin:0!important;
+    padding:0!important;
+    border:0!important;
+    outline:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    color:#fff!important;
+    -webkit-text-fill-color:#fff!important;
+    font-size:14px!important;
+    font-weight:500!important;
+    line-height:43px!important;
+    appearance:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search-field::placeholder{
+    color:rgba(255,255,255,.78)!important;
+    -webkit-text-fill-color:rgba(255,255,255,.78)!important;
+    opacity:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search-field::-webkit-search-cancel-button{
+    filter:brightness(0) invert(1)!important;
+    opacity:.75!important;
+    cursor:pointer!important;
+  }
+}
