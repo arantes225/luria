@@ -6582,3 +6582,47 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     min-width:0!important;
   }
 }
+
+
+/* DASHBOARD MASTER — EXTERNAL AREA MATCH SHELL v28 — 2026-10-04 */
+@media (min-width:981px){
+  /* A área externa ao callout/shell deve ser exatamente a mesma superfície:
+     sem pattern, sem halo, sem transparência e sem diferença de cor. */
+  body[data-page="dashboard"][data-dashboard-layout]::before,
+  body[data-page="dashboard"][data-dashboard-layout]::after{
+    content:none!important;
+    display:none!important;
+    opacity:0!important;
+    background:none!important;
+  }
+
+  html:has(body[data-page="dashboard"][data-dashboard-layout]),
+  body[data-page="dashboard"][data-dashboard-layout],
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    background:#184888!important;
+    background-color:#184888!important;
+    background-image:none!important;
+    border:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+  }
+
+  :root[data-theme="dark"]:has(body[data-page="dashboard"][data-dashboard-layout]),
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout],
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    background:#142A44!important;
+    background-color:#142A44!important;
+    background-image:none!important;
+  }
+
+  :root[data-theme="leila-mood"]:has(body[data-page="dashboard"][data-dashboard-layout]),
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout],
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    background:#CB3F83!important;
+    background-color:#CB3F83!important;
+    background-image:none!important;
+  }
+}
