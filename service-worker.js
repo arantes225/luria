@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v232-theme-shell-colors";
+const CACHE_VERSION = "luria-pwa-v233-exact-shell-color";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -19,8 +19,8 @@ const APP_SHELL = [
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/css/style.css?v=20261004-shell-v3",
-  "/assets/css/luria-brand-v5.css?v=20261004-shell-theme-v6",
-  "/assets/css/dashboard-layouts.css?v=20261004-shell-theme-v6",
+  "/assets/css/luria-brand-v5.css?v=20261004-shell-theme-v7",
+  "/assets/css/dashboard-layouts.css?v=20261004-shell-theme-v7",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=20261004-shell-v3",
