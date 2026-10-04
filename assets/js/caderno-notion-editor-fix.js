@@ -20,8 +20,14 @@
       const content = el?.querySelector?.(":scope > .notebook-callout-content, :scope > div");
       if (content) {
         const clone = content.cloneNode(true);
-        clone.querySelectorAll(".notebook-study-block").forEach(child => child.remove());
-        return String(clone.innerText || "").trimEnd();
+
+        // Tudo que for bloco-filho do callout precisa permanecer como bloco
+        // independente no Notion. O texto-base do callout inclui apenas o
+        // conteúdo direto, nunca títulos/listas/callouts filhos.
+        clone.querySelectorAll("[data-notion-block-id], .notebook-study-block, h1, h2, h3, blockquote, pre, ul, ol, hr, p")
+          .forEach(child => child.remove());
+
+        return String(clone.innerText || clone.textContent || "").trimEnd();
       }
     }
 
@@ -163,8 +169,13 @@
       let text = "";
       if (content) {
         const clone = content.cloneNode(true);
-        clone.querySelectorAll(".notebook-study-block").forEach(child => child.remove());
-        text = String(clone.innerText || "").trim();
+
+        // Títulos e demais blocos dentro do callout são filhos reais do callout
+        // no Notion e não devem ser fundidos ao texto do bloco-pai.
+        clone.querySelectorAll("[data-notion-block-id], .notebook-study-block, h1, h2, h3, blockquote, pre, ul, ol, hr, p")
+          .forEach(child => child.remove());
+
+        text = String(clone.innerText || clone.textContent || "").trim();
       }
 
       return {
@@ -217,15 +228,9 @@
 
       const parentCallout = el.parentElement?.closest?.(".notebook-study-block") || null;
 
-      // Conteúdo textual comum dentro de um callout pertence ao próprio bloco.
-      // Um callout dentro de outro callout é um bloco filho real do Notion.
-      if (
-        parentCallout
-        && !el.classList?.contains("notebook-study-block")
-      ) {
-        continue;
-      }
-
+      // Dentro de um callout, títulos, listas, citações, divisores e
+      // outros blocos continuam sendo blocos-filhos reais do Notion.
+      // Só o texto direto permanece no corpo do callout-pai.
       const block = notionBlockFromElement(el);
       if (!block) continue;
       if (block.type !== "divider" && !String(block.text || "").trim() && block.type !== "callout") continue;
