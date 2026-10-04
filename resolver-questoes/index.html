@@ -57,13 +57,14 @@
     .qr-stem{padding:11px 14px 3px;font-size:11px;line-height:1.58}
     .qr-image{margin:10px auto 4px}
     .qr-options{gap:0;margin-top:8px;padding:0 14px 8px}
-    .qr-option{grid-template-columns:30px 1fr;gap:10px;min-height:54px;padding:8px 4px;border:0;border-top:1px solid color-mix(in srgb,var(--border) 66%,transparent);border-radius:0;background:transparent}
+    .qr-option{width:100%;display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:flex-start;text-align:left;min-height:54px;padding:10px 4px;border:0;border-top:1px solid color-mix(in srgb,var(--border) 66%,transparent);border-radius:0;background:transparent;color:var(--text);font:inherit;cursor:pointer}
     .qr-option:first-child{border-top:0}
     .qr-option:hover{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:var(--surface-2)}
     .qr-option.selected{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:var(--accent-soft)}
     .qr-option.correct{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:color-mix(in srgb,var(--success) 8%,var(--surface))}
     .qr-option.wrong{border-color:color-mix(in srgb,var(--border) 66%,transparent);background:color-mix(in srgb,var(--danger) 7%,var(--surface))}
-    .qr-letter{width:25px;height:25px;border:1px solid color-mix(in srgb,var(--accent) 72%,var(--border));background:transparent;color:var(--accent);font-size:9px;font-weight:650}
+    .qr-letter{width:24px;height:24px;min-width:24px;min-height:24px;aspect-ratio:1 / 1;box-sizing:border-box;display:grid;place-items:center;justify-self:start;align-self:flex-start;flex-shrink:0;border-radius:50%;border:1px solid color-mix(in srgb,var(--accent) 72%,var(--border));background:transparent;color:var(--accent);font-size:9px;font-weight:650;line-height:1}
+    .qr-option>span:last-child{display:block;width:100%;margin:0;text-align:left;line-height:1.45;padding-top:2px}
     .qr-option.selected .qr-letter{background:var(--accent);border-color:var(--accent);color:#fff}
     .qr-actions{margin:0 14px;padding:10px 0 11px}
     .qr-feedback{margin:0 14px;padding-top:10px}
