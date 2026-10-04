@@ -6524,3 +6524,61 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     align-items:center!important;
   }
 }
+
+
+/* DASHBOARD MASTER — FIT PROGRESS BY AREA v27 — 2026-10-04 */
+@media (min-width:981px){
+  /* Faz o Progresso por área ocupar exatamente a metade esquerda da faixa inferior,
+     sem deslocamento residual nem estouro lateral. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    column-gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    grid-column:1/2!important;
+    grid-row:2!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    transform:none!important;
+    align-self:stretch!important;
+    justify-self:stretch!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    grid-column:2/3!important;
+    grid-row:2!important;
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    margin:0!important;
+    transform:none!important;
+    align-self:stretch!important;
+    justify-self:stretch!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin-bottom:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    width:100%!important;
+    min-width:0!important;
+    max-width:100%!important;
+    grid-template-columns:minmax(82px,118px) minmax(0,1fr) 36px!important;
+    gap:7px!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row > *{
+    min-width:0!important;
+  }
+}
