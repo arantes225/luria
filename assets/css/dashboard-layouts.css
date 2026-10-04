@@ -5758,3 +5758,36 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background-image:none!important;
   }
 }
+
+
+/* DASHBOARD MASTER — EXPAND WHITE PANEL 10PX v13 — 2026-10-04 */
+@media (min-width:981px){
+  /* Cresce a área branca do site em 10px para esquerda, direita e baixo.
+     O topo permanece como está para preservar a faixa azul. */
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    padding-left:0!important;
+    padding-right:0!important;
+    padding-bottom:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    transform:translateX(-10px)!important;
+    width:calc(100% + 10px)!important;
+    margin-bottom:-10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    transform:translateX(10px)!important;
+    width:calc(100% + 10px)!important;
+    margin-bottom:-10px!important;
+  }
+
+  /* Mantém o encaixe entre sidebar e conteúdo, sem abrir fresta no centro. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    margin-right:-10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    margin-left:-10px!important;
+  }
+}
