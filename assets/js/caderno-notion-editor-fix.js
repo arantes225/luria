@@ -141,37 +141,79 @@
     }
   };
 
-  function inferType(el) {
+  function notionBlockFromElement(el) {
     const tag = el.tagName?.toLowerCase();
-    if (tag === "h1") return "heading_1";
-    if (tag === "h2") return "heading_2";
-    if (tag === "h3") return "heading_3";
-    if (tag === "blockquote") return "quote";
-    if (tag === "li") {
-      return el.parentElement?.tagName?.toLowerCase() === "ol"
-        ? "numbered_list_item"
-        : "bulleted_list_item";
+
+    if (el.classList?.contains("notebook-study-block")) {
+      const variant =
+        el.classList.contains("warning") ? "warning" :
+        el.classList.contains("memory") ? "memory" :
+        "important";
+
+      const title = String(el.querySelector(":scope > strong")?.innerText || "").trim();
+      const body = String(el.querySelector(":scope > div")?.innerText || "").trim();
+      const text = [title, body].filter(Boolean).join("\n");
+
+      return {
+        type: "callout",
+        text,
+        variant
+      };
     }
-    return "paragraph";
+
+    if (tag === "hr") return { type:"divider", text:"" };
+    if (tag === "h1") return { type:"heading_1", text:String(el.innerText||"").trim() };
+    if (tag === "h2") return { type:"heading_2", text:String(el.innerText||"").trim() };
+    if (tag === "h3") return { type:"heading_3", text:String(el.innerText||"").trim() };
+    if (tag === "blockquote") return { type:"quote", text:String(el.innerText||"").trim() };
+    if (tag === "pre" || tag === "code") return { type:"code", text:String(el.innerText||"").trim() };
+
+    if (tag === "li") {
+      return {
+        type: el.parentElement?.tagName?.toLowerCase() === "ol"
+          ? "numbered_list_item"
+          : "bulleted_list_item",
+        text: String(el.innerText||"").trim()
+      };
+    }
+
+    if (tag === "p" || tag === "div") {
+      const text = String(el.innerText||"").trim();
+      return text ? { type:"paragraph", text } : null;
+    }
+
+    return null;
   }
 
   function collectNewBlocks(editor) {
-    const candidates = [...editor.querySelectorAll("p,h1,h2,h3,li,blockquote,div")];
+    const selector = [
+      ".notebook-study-block",
+      "hr",
+      "h1","h2","h3",
+      "blockquote",
+      "pre",
+      "ul > li",
+      "ol > li",
+      "p"
+    ].join(",");
+
     const out = [];
-    const seen = new Set();
 
-    for (const el of candidates) {
+    for (const el of editor.querySelectorAll(selector)) {
       if (el.closest("[data-notion-block-id]")) continue;
-      if (el.querySelector("[data-notion-block-id]")) continue;
 
-      const text = String(el.innerText || "").trim();
-      if (!text) continue;
+      // Se estiver dentro de um callout novo, só o callout pai vira bloco Notion.
+      if (!el.classList?.contains("notebook-study-block") && el.closest(".notebook-study-block")) {
+        continue;
+      }
 
-      const key = text + "|" + inferType(el);
-      if (seen.has(key)) continue;
-      seen.add(key);
+      const block = notionBlockFromElement(el);
+      if (!block) continue;
 
-      out.push({ type: inferType(el), text });
+      // Parágrafos vazios são apenas espaçamento visual do editor.
+      if (block.type !== "divider" && !String(block.text || "").trim()) continue;
+
+      out.push(block);
     }
 
     return out;
@@ -220,7 +262,8 @@
           action: "append_block",
           page_id: current.note.notion_page_id,
           type: block.type,
-          text: block.text
+          text: block.text,
+          variant: block.variant || null
         });
       }
 
