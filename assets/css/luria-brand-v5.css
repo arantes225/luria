@@ -1144,3 +1144,28 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     overflow:hidden!important;
   }
 }
+
+
+/* LURIA SHELL — THEME COLORS v4 — 2026-10-04 */
+:root,
+:root[data-theme="light"]{
+  --luria-shell-theme:#184888;
+  --luria-shell-theme-2:#123A70;
+}
+:root[data-theme="dark"]{
+  --luria-shell-theme:#142A44;
+  --luria-shell-theme-2:#0D1B30;
+}
+:root[data-theme="leila-mood"]{
+  --luria-shell-theme:#CB3F83;
+  --luria-shell-theme-2:#A92F6E;
+}
+
+@media (min-width:981px){
+  body .app-shell{
+    background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
+  }
+  body .app-shell::before{
+    background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
+  }
+}
