@@ -6000,3 +6000,22 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     height:calc(100dvh - 15px)!important;
   }
 }
+
+
+/* DASHBOARD MASTER — RESTORE ROUNDED WHITE TOP CORNERS v18 — 2026-10-04 */
+@media (min-width:981px){
+  /* O callout branco interno volta a ter os cantos superiores arredondados. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    border-radius:18px 0 0 18px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    border-radius:0 18px 18px 0!important;
+  }
+
+  /* Garante que a curva apareça limpa contra o shell azul. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar,
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    background-clip:padding-box!important;
+  }
+}
