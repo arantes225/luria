@@ -328,9 +328,12 @@
  $("qr-font-up").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize+1)};
  $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
  document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
- $("qr-comment-toggle").onclick=()=>{const fb=$("qr-feedback");fb.hidden=!fb.hidden;$("qr-comment-toggle").textContent=fb.hidden?"Comentário LURIA":"Fechar comentário"};
+ $("qr-comment-toggle").onclick=()=>{const fb=$("qr-feedback");fb.querySelectorAll(".luria-learning-actions,.luria-learning-box,.luria-related-links").forEach(el=>el.remove());fb.hidden=!fb.hidden;$("qr-comment-toggle").textContent=fb.hidden?"Comentário LURIA":"Fechar comentário"};
  $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id))return;await confirm()};$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);init();
 })();
+</script>
+<script>
+(()=>{const fb=document.getElementById("qr-feedback");if(!fb)return;const clean=()=>fb.querySelectorAll(".luria-learning-actions,.luria-learning-box,.luria-related-links").forEach(el=>el.remove());new MutationObserver(clean).observe(fb,{childList:true,subtree:true});clean()})();
 </script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
 </body></html>
