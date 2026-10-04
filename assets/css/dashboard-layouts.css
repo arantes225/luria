@@ -7122,3 +7122,184 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 }
+
+
+/* DASHBOARD MASTER — FINAL VISUAL FIXES v35 — 2026-10-04 */
+@media (min-width:981px){
+  /* 1) Pattern de logos: somente da sidebar para a direita e visível até o fim
+     de toda a área branca, sem blocos opacos cobrindo o fundo. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after{
+    background-image:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    background:var(--surface)!important;
+    position:relative!important;
+    isolation:isolate!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:-18%!important;
+    z-index:0!important;
+    pointer-events:none!important;
+    background-image:url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v35")!important;
+    background-repeat:repeat!important;
+    background-size:138px 138px!important;
+    opacity:.068!important;
+    transform:rotate(-8deg) scale(1.12)!important;
+    transform-origin:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::before{
+    background-position:0 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-position:69px 69px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-layout-1,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
+    background:transparent!important;
+    background-color:transparent!important;
+    background-image:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main > *{
+    position:relative!important;
+    z-index:1!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v35")!important;
+    opacity:.078!important;
+  }
+
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v35")!important;
+    opacity:.074!important;
+  }
+
+  /* 2) Progresso por área: altura suficiente para título + 5 linhas, sem cortar. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(340px,auto) minmax(224px,auto)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:auto!important;
+    min-height:224px!important;
+    max-height:none!important;
+    overflow:hidden!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding-bottom:16px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin-bottom:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    margin:7px 0!important;
+    min-height:20px!important;
+    line-height:1.2!important;
+  }
+
+  /* 3) Notificação e perfil: wrappers e conteúdo com a mesma caixa geométrica.
+     Remove line-height antigo que puxava as iniciais para fora do centro. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notifications{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    height:43px!important;
+    min-height:43px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-top{
+    position:relative!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:43px!important;
+    height:43px!important;
+    min-width:43px!important;
+    min-height:43px!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notification-toggle,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-toggle{
+    position:relative!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    width:43px!important;
+    height:43px!important;
+    min-width:43px!important;
+    min-height:43px!important;
+    margin:0!important;
+    padding:0!important;
+    line-height:1!important;
+    text-align:center!important;
+    box-sizing:border-box!important;
+    transform:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notification-toggle svg{
+    position:static!important;
+    display:block!important;
+    width:20px!important;
+    height:20px!important;
+    margin:0!important;
+    padding:0!important;
+    transform:translateY(0)!important;
+    flex:0 0 20px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-toggle{
+    font-size:16px!important;
+    font-weight:850!important;
+    letter-spacing:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notification-badge{
+    position:absolute!important;
+    top:5px!important;
+    right:5px!important;
+  }
+}
