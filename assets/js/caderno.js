@@ -14331,6 +14331,87 @@ function filteredLibraryEntries() {
 }
 
 
+function unassignedNotionPages() {
+  const linked = new Set(
+    Array.from(notebookState.notesById.values())
+      .map(note => String(note?.notion_page_id || "").trim())
+      .filter(Boolean)
+  );
+
+  return (notionSourceState.pages || [])
+    .filter(page => page?.id && !linked.has(String(page.id)));
+}
+
+async function placeNotionPageInNotebook(pageId, area, materia) {
+  const page = (notionSourceState.pages || []).find(item => String(item.id) === String(pageId));
+  if (!page) return;
+
+  const existing = Array.from(notebookState.notesById.values())
+    .find(note => String(note?.notion_page_id || "") === String(page.id));
+
+  if (existing) {
+    const { data, error } = await notebookSb
+      .from("study_notes")
+      .update({ area, materia, topic_title: page.title || existing.topic_title || "Página do Notion" })
+      .eq("id", existing.id)
+      .eq("user_id", notebookState.user.id)
+      .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
+      .single();
+
+    if (error) throw error;
+    notebookState.notesById.set(data.id, data);
+    return data;
+  }
+
+  const { data, error } = await notebookSb
+    .from("study_notes")
+    .insert({
+      user_id: notebookState.user.id,
+      topic_id: null,
+      topic_title: page.title || "Página do Notion",
+      area,
+      materia,
+      content_html: "",
+      storage_source: "notion",
+      notion_page_id: page.id,
+      notion_url: page.url || null,
+      notion_last_edited_time: page.last_edited_time || null
+    })
+    .select("id,user_id,topic_id,topic_title,area,materia,content_html,created_at,updated_at,storage_source,notion_page_id,notion_url,notion_last_edited_time")
+    .single();
+
+  if (error) throw error;
+  notebookState.notesById.set(data.id, data);
+  return data;
+}
+
+async function ensureNotionLibraryPages() {
+  if (notionSourceState.libraryLoaded || notionSourceState.libraryLoading) return;
+  notionSourceState.libraryLoading = true;
+
+  try {
+    const state = await invokeNotionFunction("notion-api", { action:"status" });
+    notionSourceState.connected = Boolean(state?.connected);
+    notionSourceState.configured = Boolean(state?.configured);
+    notionSourceState.workspaceName = state?.workspace_name || "";
+
+    if (!notionSourceState.connected) {
+      notionSourceState.libraryLoaded = true;
+      return;
+    }
+
+    const result = await invokeNotionFunction("notion-api", { action:"list", query:"" });
+    notionSourceState.pages = Array.isArray(result?.pages) ? result.pages : [];
+    notionSourceState.libraryLoaded = true;
+
+    if (notebookState.activeView === "library") renderLibrary();
+  } catch (error) {
+    console.warn("Não foi possível carregar o deck do Notion:", error);
+  } finally {
+    notionSourceState.libraryLoading = false;
+  }
+}
+
 function renderLibrary() {
   const list = document.getElementById("notebook-library-list");
   if (!list) return;
@@ -14373,6 +14454,11 @@ function renderLibrary() {
   const plusCard='<button class="notebook-add-book-card" type="button" data-notebook-add aria-label="Adicionar caderno"><span>＋</span></button>';
   const pageCard=e=>'<article class="notebook-page-card"><div><strong>'+escapeHtml(e.title)+'</strong><small>'+escapeHtml(formatDate(e.date)||"Página")+'</small></div><button type="button" data-open-note="'+escapeHtml(e.note.id)+'">Abrir</button></article>';
 
+  const notionInbox = unassignedNotionPages();
+  const notionDeckHtml = notionInbox.length
+    ? '<section class="notebook-notion-inbox-deck"><header><div><strong>Páginas do Notion</strong><small>Arraste cada página para o caderno onde ela deve ficar.</small></div><span>'+notionInbox.length+'</span></header><div class="notebook-notion-inbox-grid">'+notionInbox.map(page=>'<article class="notebook-page-card notebook-notion-inbox-page" draggable="true" data-notion-drag-page="'+escapeHtml(page.id)+'"><div><strong>'+escapeHtml(page.title||"Página sem título")+'</strong><small>Notion · ainda sem caderno</small></div><button type="button" data-notion-inbox-open="'+escapeHtml(page.id)+'">Abrir</button></article>').join("")+'</div></section>'
+    : '';
+
   const weekHtml='<section class="notebook-week-shelf"><header><div><strong>Desta semana</strong><small>'+(weekEntries.length?weekEntries.length+' página'+(weekEntries.length===1?'':'s')+' vinculada'+(weekEntries.length===1?'':'s'):'Adicione um caderno para começar')+'</small></div></header><div class="notebook-week-grid">'+weekEntries.map(e=>'<article class="notebook-week-card"><span>'+areaIcon(e.area)+'</span><div><strong>'+escapeHtml(e.title)+'</strong><small>'+escapeHtml(e.area)+' · '+escapeHtml(subjectFor(e))+'</small></div><button type="button" data-open-note="'+escapeHtml(e.note.id)+'" aria-label="Abrir"></button></article>').join("")+plusCard+'</div></section>';
 
   const areasHtml=[...catalog].map(([area,subjects])=>{
@@ -14385,9 +14471,50 @@ function renderLibrary() {
     }).join("")+'<button class="notebook-add-book-card notebook-add-subject-book" type="button" data-notebook-add-subject="'+addSubjectKey+'" aria-label="Criar caderno de matéria em '+escapeHtml(area)+'"><span>＋</span><small>Criar caderno de matéria</small></button></div></section>';
   }).join("");
 
-  list.innerHTML=weekHtml+areasHtml+'<section id="notebook-subject-pages" class="notebook-subject-pages" hidden></section>';
+  list.innerHTML=notionDeckHtml+weekHtml+areasHtml+'<section id="notebook-subject-pages" class="notebook-subject-pages" hidden></section>';
 
   const openEntry=id=>{const note=noteById(id);if(!note)return;if(note.topic_id&&!note.is_shared)openTopic(note.topic_id);else openFreeNote(note.id)};
+
+  list.querySelectorAll("[data-notion-inbox-open]").forEach(button=>button.addEventListener("click",async()=>{
+    const page=notionSourceState.pages.find(item=>String(item.id)===String(button.dataset.notionInboxOpen));
+    if(page)await openNotionPage(page);
+  }));
+
+  list.querySelectorAll("[data-notion-drag-page]").forEach(card=>{
+    card.addEventListener("dragstart",event=>{
+      event.dataTransfer.effectAllowed="move";
+      event.dataTransfer.setData("text/x-luria-notion-page",card.dataset.notionDragPage||"");
+      card.classList.add("is-dragging");
+    });
+    card.addEventListener("dragend",()=>card.classList.remove("is-dragging"));
+  });
+
+  list.querySelectorAll("[data-subject-card]").forEach(card=>{
+    card.addEventListener("dragover",event=>{
+      if(!event.dataTransfer.types.includes("text/x-luria-notion-page"))return;
+      event.preventDefault();
+      event.dataTransfer.dropEffect="move";
+      card.classList.add("is-notion-drop-target");
+    });
+    card.addEventListener("dragleave",event=>{
+      if(!card.contains(event.relatedTarget))card.classList.remove("is-notion-drop-target");
+    });
+    card.addEventListener("drop",async event=>{
+      event.preventDefault();
+      card.classList.remove("is-notion-drop-target");
+      const pageId=event.dataTransfer.getData("text/x-luria-notion-page");
+      if(!pageId)return;
+      const [area,subject]=decodeURIComponent(card.dataset.subjectCard||"").split("|||");
+      try{
+        await placeNotionPageInNotebook(pageId,area,subject);
+        renderLibrary();
+        setSaveStatus("Página do Notion organizada em "+subject,"saved");
+      }catch(error){
+        console.error(error);
+        window.LuriaDialog?.alert?.("Não foi possível mover a página do Notion: "+(error?.message||"erro desconhecido"));
+      }
+    });
+  });
   list.querySelectorAll("[data-open-note]").forEach(b=>b.addEventListener("click",()=>openEntry(b.dataset.openNote)));
 
   const closeBookMenus=()=>{
@@ -16747,7 +16874,9 @@ const notionSourceState = {
   pages: [],
   currentPage: null,
   editing: false,
-  originalBlocks: new Map()
+  originalBlocks: new Map(),
+  libraryLoaded: false,
+  libraryLoading: false
 };
 
 async function invokeNotionFunction(name, body = {}) {
@@ -17020,7 +17149,9 @@ async function refreshNotionSource() {
     });
 
     notionSourceState.pages = Array.isArray(result?.pages) ? result.pages : [];
+    notionSourceState.libraryLoaded = true;
     renderNotionPages();
+    if (notebookState.activeView === "library") renderLibrary();
 
     if (status) status.textContent =
       (notionSourceState.workspaceName ? "Conectado · " + notionSourceState.workspaceName + " · " : "") +
@@ -19851,6 +19982,7 @@ async function initNotebook() {
     renderTopicList();
 
     renderLibrary();
+    ensureNotionLibraryPages();
 
 
     const params =
