@@ -7795,3 +7795,50 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     cursor:pointer!important;
   }
 }
+
+
+/* DASHBOARD TOPBAR — SEARCH UNIFORM COLOR v43 — 2026-10-04 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-field-topbar{
+    background:rgba(255,255,255,.10)!important;
+    background-color:rgba(255,255,255,.10)!important;
+    background-image:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-field-topbar
+  #luria-global-search-field{
+    background:transparent!important;
+    background-color:transparent!important;
+    background-image:none!important;
+    border:0!important;
+    border-radius:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    filter:none!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-field-topbar
+  #luria-global-search-field:-webkit-autofill,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-field-topbar
+  #luria-global-search-field:-webkit-autofill:hover,
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-field-topbar
+  #luria-global-search-field:-webkit-autofill:focus{
+    -webkit-box-shadow:0 0 0 1000px transparent inset!important;
+    box-shadow:0 0 0 1000px transparent inset!important;
+    -webkit-text-fill-color:#fff!important;
+    background-color:transparent!important;
+    transition:background-color 9999s ease-out 0s!important;
+  }
+}
