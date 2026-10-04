@@ -5355,3 +5355,31 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background:linear-gradient(90deg,#0f67ee,#1379f5)!important;
   }
 }
+
+
+/* DASHBOARD — THEME-AWARE SHELL COLORS v6 — 2026-10-04 */
+:root,
+:root[data-theme="light"]{
+  --luria-shell-theme:#184888;
+  --luria-shell-theme-2:#123A70;
+}
+:root[data-theme="dark"]{
+  --luria-shell-theme:#142A44;
+  --luria-shell-theme-2:#0D1B30;
+}
+:root[data-theme="leila-mood"]{
+  --luria-shell-theme:#CB3F83;
+  --luria-shell-theme-2:#A92F6E;
+}
+
+@media (min-width:981px){
+  html:has(body[data-page="dashboard"][data-dashboard-layout]),
+  body[data-page="dashboard"][data-dashboard-layout]{
+    background:var(--luria-shell-theme)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+    background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
+  }
+}
