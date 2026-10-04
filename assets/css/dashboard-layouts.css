@@ -6099,3 +6099,73 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   background:var(--accent)!important;
   background-color:var(--accent)!important;
 }
+
+
+/* DASHBOARD DARK — SIDEBAR SCROLLBAR TRACK TRANSPARENT v20 — 2026-10-04 */
+@media (min-width:981px){
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-study,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-work{
+    scrollbar-width:thin!important;
+    scrollbar-color:#4F7FB8 transparent!important;
+    scrollbar-gutter:auto!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar::-webkit-scrollbar,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *::-webkit-scrollbar,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav::-webkit-scrollbar,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-study::-webkit-scrollbar,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-work::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+    background-color:transparent!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar::-webkit-scrollbar-track,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar::-webkit-scrollbar-track-piece,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *::-webkit-scrollbar-track,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *::-webkit-scrollbar-track-piece,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav::-webkit-scrollbar-track,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-study::-webkit-scrollbar-track,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-work::-webkit-scrollbar-track{
+    background:transparent!important;
+    background-color:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar::-webkit-scrollbar-button,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *::-webkit-scrollbar-button,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav::-webkit-scrollbar-button,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-study::-webkit-scrollbar-button,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-work::-webkit-scrollbar-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    background:transparent!important;
+    background-image:none!important;
+    border:0!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar::-webkit-scrollbar-corner,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *::-webkit-scrollbar-corner{
+    background:transparent!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar::-webkit-scrollbar-thumb,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *::-webkit-scrollbar-thumb,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav::-webkit-scrollbar-thumb,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-study::-webkit-scrollbar-thumb,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-work::-webkit-scrollbar-thumb{
+    background:#4F7FB8!important;
+    background-color:#4F7FB8!important;
+    border:0!important;
+    border-radius:999px!important;
+    box-shadow:none!important;
+  }
+}
