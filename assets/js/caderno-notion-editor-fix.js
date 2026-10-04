@@ -209,11 +209,11 @@
         }
       }
 
-      for (const [id] of notionEditorState.originalBlocks) {
-        if (!liveIds.has(id)) {
-          await invoke({ action: "delete_block", block_id: id });
-        }
-      }
+      // Não arquivamos blocos ausentes automaticamente. Durante a edição,
+      // o DOM do editor pode reorganizar/remover temporariamente nós que ainda
+      // pertencem à página do Notion. Arquivar aqui fazia o salvamento seguinte
+      // tentar editar um bloco já arquivado.
+      // Exclusão sincronizada será tratada por ação explícita, não por diff de DOM.
 
       for (const block of collectNewBlocks(editor)) {
         await invoke({
