@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v248-dashboard-right-curve";
+const CACHE_VERSION = "luria-pwa-v249-dashboard-brand-scale";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -20,7 +20,7 @@ const APP_SHELL = [
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/css/style.css?v=20261004-scrollbar-thumb-only",
   "/assets/css/luria-brand-v5.css?v=20261004-shell-color-v10",
-  "/assets/css/dashboard-layouts.css?v=20261004-dashboard-master-v21",
+  "/assets/css/dashboard-layouts.css?v=20261004-dashboard-master-v22",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=20261004-dashboard-master-v11",
