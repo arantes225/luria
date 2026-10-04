@@ -1216,3 +1216,38 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background-image:none!important;
   }
 }
+
+
+/* LURIA TOPBAR — CONTROLS ON SHELL BLUE v7 — 2026-10-04 */
+@media (min-width:981px){
+  body .topbar{
+    background:transparent!important;
+  }
+
+  body .topbar :is(
+    .luria-pomodoro-toggle,
+    .luria-notification-toggle,
+    .luria-profile-toggle,
+    [data-global-search-trigger],
+    .global-search-trigger,
+    .luria-global-search-trigger
+  ){
+    background:rgba(255,255,255,.10)!important;
+    border-color:rgba(255,255,255,.28)!important;
+    color:#fff!important;
+    box-shadow:none!important;
+  }
+
+  body .topbar :is(
+    .luria-pomodoro-toggle,
+    .luria-notification-toggle,
+    .luria-profile-toggle,
+    [data-global-search-trigger],
+    .global-search-trigger,
+    .luria-global-search-trigger
+  ):hover{
+    background:rgba(255,255,255,.17)!important;
+    border-color:rgba(255,255,255,.40)!important;
+    color:#fff!important;
+  }
+}
