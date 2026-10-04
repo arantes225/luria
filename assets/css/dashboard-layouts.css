@@ -6693,3 +6693,127 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     opacity:.022!important;
   }
 }
+
+
+/* DASHBOARD MASTER — PAGE-ONLY PATTERN + INSET SCROLL v30 — 2026-10-04 */
+@media (min-width:981px){
+  /* O menu lateral volta a ser totalmente chapado, sem pattern. */
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    background:var(--sidebar)!important;
+    background-image:none!important;
+    isolation:auto!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after{
+    content:none!important;
+    display:none!important;
+    background:none!important;
+    opacity:0!important;
+  }
+
+  /* O pattern existe somente na página, do menu para a direita. */
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    position:relative!important;
+    isolation:isolate!important;
+    overflow:hidden!important;
+    background:var(--surface)!important;
+    border-radius:0 18px 18px 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:-12%!important;
+    z-index:0!important;
+    pointer-events:none!important;
+    background-image:url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v30")!important;
+    background-repeat:repeat!important;
+    background-size:132px 132px!important;
+    opacity:.018!important;
+    transform:rotate(-8deg) scale(1.08)!important;
+    transform-origin:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::before{
+    background-position:0 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-position:66px 66px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main > *{
+    position:relative!important;
+    z-index:1!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v30")!important;
+    opacity:.026!important;
+  }
+
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v30")!important;
+    opacity:.022!important;
+  }
+
+  /* A borda branca direita fica fixa. O scroll acontece numa área mais estreita,
+     para o thumb nunca encostar nem comer a curva externa. */
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+    width:auto!important;
+    max-width:none!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    border-radius:0 16px 16px 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
+    width:calc(100% - 12px)!important;
+    max-width:calc(100% - 12px)!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0 12px 0 0!important;
+    padding-right:2px!important;
+    padding-bottom:2px!important;
+    box-sizing:border-box!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    border-radius:0 12px 12px 0!important;
+    scrollbar-gutter:auto!important;
+    overscroll-behavior:contain!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar{
+    width:7px!important;
+    background:transparent!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-track,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-track-piece,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:single-button,
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::-webkit-scrollbar-button:double-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    background:transparent!important;
+    background-image:none!important;
+    border:0!important;
+  }
+}
