@@ -7624,3 +7624,75 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     z-index:2147482002!important;
   }
 }
+
+
+/* DASHBOARD TOPBAR — SEARCH LEFT / ALEX RIGHT v41 — 2026-10-04 */
+@media (min-width:981px){
+  /* Busca: borda esquerda exatamente na mesma régua do card de título.
+     O card começa dentro da main em 28px + eventual centralização da page. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar{
+    --dashboard-title-left:calc(
+      270px + 28px + max(0px, (100% - 270px - 56px - 1320px) / 2)
+    );
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-global-search.luria-search-icon-only{
+    position:absolute!important;
+    left:var(--dashboard-title-left)!important;
+    right:auto!important;
+    top:50%!important;
+    transform:translateY(-50%)!important;
+    width:58px!important;
+    min-width:58px!important;
+    max-width:58px!important;
+    height:43px!important;
+    min-height:43px!important;
+    max-height:43px!important;
+    margin:0!important;
+  }
+
+  /* Alex volta para o grupo da direita, imediatamente antes do Timer. */
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-alex-topbar.luria-alex-topbar{
+    position:static!important;
+    inset:auto!important;
+    transform:none!important;
+    margin:0!important;
+    order:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-notifications{
+    margin-left:auto!important;
+    justify-content:flex-end!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-alex-topbar{
+    order:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-pomodoro-top{
+    order:2!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  #luria-notification-toggle{
+    order:3!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout]
+  .app-shell > .topbar.dashboard-shell-topbar
+  .luria-profile-top{
+    order:4!important;
+  }
+}
