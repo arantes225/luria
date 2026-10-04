@@ -4885,3 +4885,63 @@ body:not([data-page="flashcards"]):not([data-page="questoes"]):not([data-page="e
   font-weight:400!important;
 }
 
+
+
+/* LURIA SCROLLBAR — THUMB ONLY v1 — 2026-10-04 */
+/* Scrollbar global: sem setas, sem trilho/fundo — apenas a barra móvel. */
+*{
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in srgb,var(--accent) 70%,transparent) transparent;
+}
+
+*::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+  background:transparent;
+}
+
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track-piece,
+*::-webkit-scrollbar-corner{
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+
+*::-webkit-scrollbar-button{
+  display:none!important;
+  width:0!important;
+  height:0!important;
+}
+
+*::-webkit-scrollbar-thumb{
+  background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+  border:0!important;
+  border-radius:999px!important;
+  min-height:34px;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+  background:var(--accent)!important;
+}
+
+/* Mantém o padrão também nas listas internas do sidebar. */
+#sidebar .nav::-webkit-scrollbar,
+#sidebar .nav-study::-webkit-scrollbar,
+#sidebar .nav-work::-webkit-scrollbar{
+  width:7px!important;
+}
+
+#sidebar .nav::-webkit-scrollbar-track,
+#sidebar .nav-study::-webkit-scrollbar-track,
+#sidebar .nav-work::-webkit-scrollbar-track{
+  background:transparent!important;
+}
+
+#sidebar .nav::-webkit-scrollbar-button,
+#sidebar .nav-study::-webkit-scrollbar-button,
+#sidebar .nav-work::-webkit-scrollbar-button{
+  display:none!important;
+  width:0!important;
+  height:0!important;
+}
