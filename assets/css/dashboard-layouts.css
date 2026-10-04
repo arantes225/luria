@@ -6817,3 +6817,29 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     border:0!important;
   }
 }
+
+
+/* DASHBOARD MASTER — STRONGER PAGE LOGO PATTERN v31 — 2026-10-04 */
+@media (min-width:981px){
+  /* Mesmo padrão antigo, porém 5 pontos percentuais menos transparente
+     para ficar realmente perceptível dentro da página branca. */
+  body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-size:138px 138px!important;
+    opacity:.068!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    background-position:69px 69px!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    opacity:.078!important;
+  }
+
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    opacity:.074!important;
+  }
+}
