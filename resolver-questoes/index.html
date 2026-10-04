@@ -14,9 +14,8 @@
     body[data-page="questoes"] .page{max-width:none;padding:0 18px 18px}
     body[data-page="questoes"] .main{min-width:0}
     .qr-topbar{display:none}
-    .qr-navrow{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:18px;margin:2px 0 10px}
+    .qr-navrow{display:flex;align-items:center;gap:18px;margin:2px 0 10px}
     .qr-back{display:inline-flex;align-items:center;gap:7px;border:0;background:transparent;color:var(--text);font:inherit;font-size:10px;font-weight:750;cursor:pointer;text-decoration:none;white-space:nowrap}
-    .qr-counter{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:9px;font-weight:750;white-space:nowrap}.qr-counter button{width:28px;height:28px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);cursor:pointer}
     .qr-layout{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:12px;align-items:start}
     .qr-card,.qr-side-card{border:1px solid var(--border);background:var(--surface);box-shadow:none}
     .qr-card{border-radius:12px;padding:17px 18px 12px;min-width:0}
@@ -40,8 +39,8 @@
     .qr-recent{display:grid;gap:5px}.qr-recent-row{display:grid;grid-template-columns:8px 1fr auto;gap:6px;align-items:center;font-size:7px}.qr-dot{width:7px;height:7px;border-radius:50%;background:var(--success)}.qr-dot.bad{background:var(--danger)}.qr-recent-row span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}.qr-recent-row b{font-size:7px;color:var(--muted)}
     .qr-status{min-height:14px;margin-top:5px;color:var(--muted);font-size:8px}.qr-empty{padding:40px;text-align:center;color:var(--muted)}
     mark[data-qr-highlight]{background:#fff1a8;border-radius:2px}
-    @media(max-width:980px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:repeat(2,minmax(0,1fr))}.qr-navrow{grid-template-columns:auto 1fr}.qr-counter{justify-self:end}}
-    @media(max-width:720px){body[data-page="questoes"] .page{padding:0 10px 12px}.qr-navrow{grid-template-columns:1fr auto}.qr-counter{grid-column:2;grid-row:1}.qr-layout{display:block}.qr-side{display:none}.qr-card{padding:13px}.qr-option{padding:8px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr 1fr}.qr-btn{justify-content:center}.qr-btn.primary{width:100%}}
+    @media(max-width:980px){.qr-layout{grid-template-columns:1fr}.qr-side{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:720px){body[data-page="questoes"] .page{padding:0 10px 12px}.qr-layout{display:block}.qr-side{display:none}.qr-card{padding:13px}.qr-option{padding:8px}.qr-actions{align-items:stretch;flex-direction:column}.qr-action-group{display:grid;grid-template-columns:1fr}.qr-btn{justify-content:center}.qr-btn.primary{width:100%}}
 
     /* Referência visual do card — 2026-10-04 */
     .qr-card{border-radius:13px;padding:0;overflow:hidden;background:var(--surface)}
@@ -88,6 +87,12 @@
     .qr-actions{margin:0 14px;padding:10px 0 11px}
     .qr-feedback{margin:0 14px;padding-top:10px}
     .qr-status{margin:0 14px 7px}
+    .qr-bottom-nav{display:flex;justify-content:flex-end;margin-top:10px}
+    .qr-nav-switch{display:inline-flex;align-items:center;padding:3px;border:1px solid var(--border);border-radius:9px;background:var(--surface);gap:3px}
+    .qr-nav-switch button{height:30px;padding:0 14px;border:0;border-radius:7px;background:transparent;color:var(--muted);font:inherit;font-size:9px;font-weight:750;cursor:pointer}
+    .qr-nav-switch button:hover:not(:disabled){background:var(--surface-2);color:var(--text)}
+    .qr-nav-switch button.primary-nav{background:var(--accent);color:#fff}
+    .qr-nav-switch button:disabled{opacity:.4;cursor:not-allowed}
     @media(max-width:720px){
       .qr-card-head{padding-inline:11px}
       .qr-card-tools{gap:0}
@@ -106,7 +111,6 @@
 
     <div class="qr-navrow">
       <a class="qr-back" href="/questoes-simulados/">‹ Voltar</a>
-      <div class="qr-counter"><span id="qr-progress-text">Questão 0 de 0</span><button id="qr-prev" type="button">‹</button><button id="qr-next" type="button">›</button></div>
     </div>
     <div id="qr-loading" class="qr-card qr-empty">Carregando questões...</div>
     <section id="qr-layout" class="qr-layout" hidden>
@@ -149,10 +153,16 @@
         <div id="qr-options" class="qr-options"></div>
         <div id="qr-feedback" class="qr-feedback" hidden></div>
         <div class="qr-actions" style="justify-content:flex-end">
-          <div class="qr-action-group"><button id="qr-skip" class="qr-btn">▷ Pular questão</button><button id="qr-confirm" class="qr-btn primary">Ver próxima →</button></div>
+          <div class="qr-action-group"><button id="qr-confirm" class="qr-btn primary">Responder</button></div>
         </div>
         <div id="qr-status" class="qr-status"></div>
       </article>
+      <div class="qr-bottom-nav">
+        <div class="qr-nav-switch" aria-label="Navegação entre questões">
+          <button id="qr-prev" type="button">Anterior</button>
+          <button id="qr-next" class="primary-nav" type="button">Próximo</button>
+        </div>
+      </div>
       <aside class="qr-side">
         <article class="qr-side-card">
           <div class="qr-side-title">◉ Meu desempenho neste simulado</div>
@@ -191,9 +201,9 @@
   document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=e=>{if(e.target.closest("[data-cut]"))return;const set=state.eliminated.get(item.id)||new Set();if(set.has(b.dataset.opt))return;state.selected.set(item.id,b.dataset.opt);render()});
   document.querySelectorAll("[data-cut]").forEach(c=>{c.onclick=e=>{e.stopPropagation();if(confirmed)return;const set=state.eliminated.get(item.id)||new Set();if(set.has(c.dataset.cut))set.delete(c.dataset.cut);else set.add(c.dataset.cut);state.eliminated.set(item.id,set);if(state.selected.get(item.id)===c.dataset.cut)state.selected.delete(item.id);render()};c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}}});
   const fb=$("qr-feedback"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";fb.hidden=false;fb.innerHTML='<div class="qr-result '+(ok?"correct":"wrong")+'">'+(correct?(ok?"Resposta correta":"Resposta incorreta · gabarito: "+esc(correct)):"Resposta registrada")+'</div><div class="qr-justification"><strong>Justificativa</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div><div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div>'}else{fb.hidden=true;fb.innerHTML=""}
-  $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Próxima questão →":"Ver resposta →";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
+  $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Respondida":"Responder";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
   $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
-  const total=state.items.length;$("qr-progress-text").textContent="Questão "+(state.index+1)+" de "+total;$("qr-card-question").textContent="Questão "+(state.index+1);
+  const total=state.items.length;$("qr-card-question").textContent="Questão "+(state.index+1);
   const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):0;$("qr-hits").textContent=hits;$("qr-errors").textContent=errs;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
   $("qr-answer-grid").innerHTML=state.items.map((q,i)=>{const a=state.attempts.get(q.id);let cl="qr-answer-cell";if(i===state.index)cl+=" current";if(a?.result==="correct")cl+=" correct";else if(a?.result==="wrong")cl+=" wrong";return '<button class="'+cl+'" type="button" data-jump="'+i+'" aria-label="Questão '+(i+1)+'">'+(i+1)+'</button>'}).join("");
   document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>{state.index=Number(b.dataset.jump)||0;render()});
@@ -290,7 +300,7 @@
  $("qr-font-up").onclick=e=>{e.stopPropagation();setQuestionFont(state.fontSize+1)};
  $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
  document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
- $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id)){state.index=Math.min(state.items.length-1,state.index+1);render();return}await confirm()};$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};$("qr-skip").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};setQuestionFont(state.fontSize);setInterval(tick,1000);init();
+ $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id))return;await confirm()};$("qr-prev").onclick=()=>{state.index=Math.max(0,state.index-1);render()};$("qr-next").onclick=()=>{state.index=Math.min(state.items.length-1,state.index+1);render()};setQuestionFont(state.fontSize);setInterval(tick,1000);init();
 })();
 </script>
 <script defer src="/assets/js/pwa.js?v=3"></script>
