@@ -4636,3 +4636,38 @@ body[data-page="caderno"] .notebook-notion-inbox-menu button{
 body[data-page="caderno"] .notebook-notion-move-dialog{
   width:min(460px,calc(100vw - 28px));
 }
+
+
+/* ANOTAÇÕES — conexão inicial com Notion, sem abas de fonte */
+body[data-page="caderno"] .notebook-notion-first-connect{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin:0 0 14px;
+  padding:11px 12px;
+  border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));
+  border-radius:10px;
+  background:color-mix(in srgb,var(--accent) 3%,var(--surface));
+}
+body[data-page="caderno"] .notebook-notion-first-connect[hidden]{display:none!important}
+body[data-page="caderno"] .notebook-notion-first-connect-copy{
+  display:grid;
+  gap:2px;
+  min-width:0;
+}
+body[data-page="caderno"] .notebook-notion-first-connect-copy strong{
+  font-size:10px;
+  font-weight:650;
+}
+body[data-page="caderno"] .notebook-notion-first-connect-copy span{
+  color:var(--muted);
+  font-size:8px;
+  line-height:1.4;
+}
+@media(max-width:620px){
+  body[data-page="caderno"] .notebook-notion-first-connect{
+    align-items:stretch;
+    flex-direction:column;
+  }
+}
