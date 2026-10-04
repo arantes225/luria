@@ -4116,38 +4116,39 @@ body[data-page="caderno"] #notebook-more-menu .notebook-emoji-menu button {
 }
 
 
-/* LURIA — Editar/Salvar alinhado ao botão Adicionar tarefa */
+/* LURIA — Editar/Salvar das ações rápidas */
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit{
-  width:auto!important;
+  width:100%!important;
   min-width:0!important;
-  height:27px!important;
-  min-height:27px!important;
-  margin-top:0!important;
+  height:31px!important;
+  min-height:31px!important;
+  margin:0!important;
   padding:0 9px!important;
-  border:1px solid var(--border)!important;
-  border-radius:7px!important;
-  background:var(--surface)!important;
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border))!important;
+  border-radius:6px!important;
+  background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;
   color:var(--accent)!important;
-  display:inline-flex!important;
+  display:flex!important;
   align-items:center!important;
   justify-content:flex-start!important;
-  gap:6px!important;
-  font-size:7.5px!important;
+  gap:8px!important;
   line-height:1!important;
-  font-weight:700!important;
+  font-weight:650!important;
+  box-sizing:border-box!important;
 }
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit > span{
-  font-size:7.5px!important;
+  font-size:8px!important;
   line-height:1!important;
-  font-weight:700!important;
+  font-weight:650!important;
 }
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit svg{
-  width:13px!important;
-  height:13px!important;
-  flex:0 0 13px!important;
+  width:14px!important;
+  height:14px!important;
+  flex:0 0 14px!important;
+  stroke:currentColor!important;
 }
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit:hover{
-  background:var(--surface-2)!important;
+  background:color-mix(in srgb,var(--accent) 11%,var(--surface))!important;
 }
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle{
   background:var(--accent)!important;
@@ -4155,8 +4156,8 @@ body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-
   color:#fff!important;
 }
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle > span{
-  font-size:9px!important;
-  font-weight:800!important;
+  font-size:8px!important;
+  font-weight:650!important;
 }
 body[data-page="caderno"] .note-actions-card #notebook-inspector-edit.is-saving-toggle svg{
   stroke:#fff!important;
