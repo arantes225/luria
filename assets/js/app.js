@@ -8481,3 +8481,30 @@ iniciarApp();
   window.addEventListener("resize",mountGlobalChrome,{passive:true});
   new MutationObserver(mountGlobalChrome).observe(document.documentElement,{childList:true,subtree:true});
 })();
+
+
+/* LURIA GLOBAL MASTER CSS ENSURE v74 — 2026-10-04 */
+(() => {
+  if (window.__luriaGlobalMasterCssEnsure) return;
+  window.__luriaGlobalMasterCssEnsure = true;
+
+  const ensure = () => {
+    if (!document.querySelector(".app-shell")) return;
+    const href = "/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74";
+    let link = document.getElementById("luria-global-master-css");
+    if (!link) {
+      link = document.createElement("link");
+      link.id = "luria-global-master-css";
+      link.rel = "stylesheet";
+      document.head.appendChild(link);
+    }
+    if (link.getAttribute("href") !== href) link.setAttribute("href", href);
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ensure, { once: true });
+  } else {
+    ensure();
+  }
+  setTimeout(ensure, 250);
+})();
