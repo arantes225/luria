@@ -7877,3 +7877,16 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     line-height:1.15!important;
   }
 }
+
+
+/* DASHBOARD BRAND — LOGO +10% v46 — 2026-10-04 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout]
+  #sidebar.sidebar .brand .luria-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout]
+  #sidebar.sidebar #luria-brand-logo{
+    width:48.4px!important;
+    height:48.4px!important;
+    flex:0 0 48.4px!important;
+  }
+}
