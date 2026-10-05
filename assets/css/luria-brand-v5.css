@@ -2227,3 +2227,222 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     border-color:rgba(255,255,255,.40)!important;
   }
 }
+
+
+/* LURIA GLOBAL SHELL HARD LOCK v75 — 2026-10-04 */
+@media (min-width:981px){
+  body.luria-global-shell-mounted{
+    overflow:hidden!important;
+    background:var(--luria-master-shell,#184888)!important;
+  }
+
+  body.luria-global-shell-mounted > .app-shell,
+  body.luria-global-shell-mounted .app-shell{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:270px minmax(0,1fr)!important;
+    grid-template-rows:minmax(0,1fr)!important;
+    width:auto!important;
+    max-width:none!important;
+    height:calc(100dvh - 15px)!important;
+    min-height:0!important;
+    margin:10px 5px 5px!important;
+    padding:64px 3px 3px!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-radius:24px!important;
+    background:var(--luria-master-shell,#184888)!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+  }
+
+  body.luria-global-shell-mounted .app-shell::before{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:0 0 auto 0!important;
+    height:70px!important;
+    border-radius:24px 24px 0 0!important;
+    background:var(--luria-master-shell,#184888)!important;
+    background-image:none!important;
+    transform:none!important;
+    opacity:1!important;
+    pointer-events:none!important;
+    z-index:0!important;
+  }
+
+  body.luria-global-shell-mounted .app-shell::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  body.luria-global-shell-mounted #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar{
+    display:block!important;
+    position:relative!important;
+    inset:auto!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:16px 14px 14px!important;
+    transform:none!important;
+    translate:none!important;
+    opacity:1!important;
+    visibility:visible!important;
+    pointer-events:auto!important;
+    overflow:visible!important;
+    border:0!important;
+    border-right:1px solid var(--border)!important;
+    border-radius:18px 0 0 18px!important;
+    background:var(--sidebar)!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+    z-index:2!important;
+  }
+
+  body.luria-global-shell-mounted .main{
+    display:block!important;
+    position:relative!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:16px 6px 18px 18px!important;
+    transform:none!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-radius:0 18px 18px 0!important;
+    background:var(--surface)!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+    z-index:2!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page{
+    display:block!important;
+    width:calc(100% - 12px)!important;
+    max-width:calc(100% - 12px)!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0 12px 0 0!important;
+    padding-right:2px!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    background:transparent!important;
+    box-sizing:border-box!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+  }
+
+  body.luria-global-shell-mounted #sidebar.sidebar .sidebar-top{
+    display:flex!important;
+    position:absolute!important;
+    top:-58px!important;
+    left:10px!important;
+    right:auto!important;
+    width:auto!important;
+    height:52px!important;
+    margin:0!important;
+    padding:0!important;
+    align-items:center!important;
+    overflow:visible!important;
+    z-index:2147483000!important;
+  }
+
+  body.luria-global-shell-mounted #sidebar.sidebar .brand .luria-theme-logo,
+  body.luria-global-shell-mounted #sidebar.sidebar #luria-brand-logo{
+    display:block!important;
+    width:48.4px!important;
+    height:48.4px!important;
+    min-width:48.4px!important;
+    min-height:48.4px!important;
+    flex:0 0 48.4px!important;
+    filter:brightness(0) invert(1)!important;
+    opacity:1!important;
+    visibility:visible!important;
+  }
+
+  body.luria-global-shell-mounted .app-shell > .topbar.luria-global-shell-topbar,
+  body.luria-global-shell-mounted .app-shell > .topbar.dashboard-shell-topbar{
+    display:flex!important;
+    position:absolute!important;
+    top:8px!important;
+    left:270px!important;
+    right:12px!important;
+    bottom:auto!important;
+    width:auto!important;
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+    margin:0!important;
+    padding:0!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    overflow:visible!important;
+    visibility:visible!important;
+    opacity:1!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    transform:none!important;
+    z-index:2147483200!important;
+  }
+
+  body.luria-global-shell-mounted .app-shell > .topbar .page-heading{
+    display:none!important;
+  }
+
+  body.luria-global-shell-mounted .app-shell > .topbar .luria-notifications{
+    display:flex!important;
+    position:static!important;
+    inset:auto!important;
+    width:auto!important;
+    height:43px!important;
+    margin:0!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    transform:none!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+
+  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-toggle,
+  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-toggle *,
+  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-icon,
+  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-icon svg,
+  body.luria-global-shell-mounted .app-shell > .topbar .luria-pomodoro-icon svg *{
+    color:#fff!important;
+    stroke:#fff!important;
+  }
+}
