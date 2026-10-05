@@ -8238,3 +8238,50 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     display:none!important;
   }
 }
+
+
+
+/* Sala de Emergência v64 — OSCE sem espaço fantasma acima das estações. */
+body.plantao-module-entry[data-case-library-view="osce"] .plantao-quick-grid{
+  display:none!important;
+}
+
+@media(min-width:941px){
+  body.plantao-module-entry[data-case-library-view="osce"] #plantao-library{
+    grid-template-rows:auto auto!important;
+  }
+
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-primary-switch-wrap{
+    grid-column:1!important;
+    grid-row:1!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-main{
+    grid-column:1!important;
+    grid-row:2!important;
+    margin:0!important;
+    padding-top:0!important;
+    min-height:0!important;
+  }
+
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-side{
+    grid-column:2!important;
+    grid-row:1 / span 2!important;
+    align-self:start!important;
+    margin:0!important;
+    padding:0!important;
+    position:static!important;
+    top:auto!important;
+    transform:none!important;
+  }
+
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-toolbar,
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-library-inner-switch,
+  body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-head{
+    margin-top:0!important;
+    padding-top:0!important;
+  }
+}
+
