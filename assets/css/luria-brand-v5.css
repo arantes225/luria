@@ -3193,3 +3193,18 @@ body *::-webkit-scrollbar-button:end{
     border-radius:999px!important;
   }
 }
+
+
+/* LURIA v87 — logo única e compacta em todas as páginas */
+body #sidebar.sidebar .brand .luria-theme-logo,
+body #sidebar.sidebar .brand #luria-brand-logo,
+body #sidebar.sidebar #luria-brand-logo{
+  width:46px!important;
+  height:46px!important;
+  min-width:46px!important;
+  min-height:46px!important;
+  max-width:46px!important;
+  max-height:46px!important;
+  flex:0 0 46px!important;
+  object-fit:contain!important;
+}
