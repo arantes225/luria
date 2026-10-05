@@ -8563,3 +8563,39 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     padding-bottom:10px!important;
   }
 }
+
+
+/* DASHBOARD 1 — REMOVE LEGACY LOWER-ROW TRANSLATION v54 — 2026-10-05
+   A faixa "oculta" vinha de uma regra antiga (v63) que aplicava
+   transform: translateY(20px) em Progresso por área e Pulo do Gato.
+   Isso deslocava os dois cards para baixo sem mover a trilha do grid,
+   criando uma faixa vazia acima e cortando 20px da base. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    transform:none!important;
+    translate:none!important;
+    top:auto!important;
+    bottom:auto!important;
+    align-self:stretch!important;
+    justify-self:stretch!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    row-gap:14px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:178px!important;
+    min-height:178px!important;
+    max-height:178px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    padding-bottom:18px!important;
+  }
+}
