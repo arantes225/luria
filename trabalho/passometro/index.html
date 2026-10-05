@@ -72,6 +72,20 @@
     .pm-export-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 18px}.pm-export-summary div{padding:10px;border:1px solid #dce4ec;border-radius:8px}.pm-export-summary span{display:block;color:#718096;font-size:8px;text-transform:uppercase;font-weight:700}.pm-export-summary b{display:block;margin-top:3px;font-size:16px}
     .pm-export-patient{break-inside:avoid;margin:0 0 12px;padding:13px;border:1px solid #dce4ec;border-radius:9px}.pm-export-patient h2{margin:0 0 7px;font-size:14px}.pm-export-row{margin:4px 0;font-size:10px;line-height:1.4}.pm-export-row b{color:#184888}.pm-export-list{margin:4px 0 0;padding-left:16px;font-size:9.5px;line-height:1.4}
     .pm-export-foot{margin-top:16px;padding-top:10px;border-top:1px solid #dce4ec;color:#718096;font-size:8px;line-height:1.4}
+    .pm-view-dialog{width:min(980px,calc(100vw - 24px));max-height:92vh;padding:0;border:1px solid var(--border);border-radius:18px;background:#eef2f6;color:#14263c;box-shadow:0 28px 80px rgba(15,23,42,.28);overflow:hidden}
+    .pm-view-dialog::backdrop{background:rgba(8,20,35,.55);backdrop-filter:blur(2px)}
+    .pm-view-head{position:sticky;top:0;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-bottom:1px solid #d6dee8;background:rgba(255,255,255,.96);backdrop-filter:blur(8px)}
+    .pm-view-head strong{font-size:13px;color:#14263c}.pm-view-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .pm-view-body{padding:22px;overflow:auto;max-height:calc(92vh - 64px);-webkit-overflow-scrolling:touch}
+    .pm-view-paper{width:min(794px,100%);margin:0 auto;padding:34px;background:#fff;color:#14263c;box-shadow:0 10px 34px rgba(15,35,65,.12);font-family:Arial,sans-serif}
+    .pm-view-paper .pm-export-patient{cursor:default}
+    .pm-view-observation{margin-top:10px;padding-top:9px;border-top:1px solid #dce4ec}
+    .pm-view-observation label{display:block;margin-bottom:5px;color:#184888;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+    .pm-view-observation textarea{display:block;width:100%;min-height:74px;padding:9px 10px;border:1px solid #cfd9e4;border-radius:7px;background:#fbfcfe;color:#14263c;font:inherit;font-size:10px;line-height:1.45;resize:vertical;outline:none}
+    .pm-view-observation textarea:focus{border-color:#184888;box-shadow:0 0 0 2px rgba(24,72,136,.12)}
+    .pm-export-observation{margin-top:9px;padding-top:8px;border-top:1px solid #dce4ec;font-size:10px;line-height:1.45;white-space:pre-wrap}
+    .pm-export-observation b{color:#184888}
+    @media(max-width:700px){.pm-view-dialog{width:calc(100vw - 12px);max-height:96vh;border-radius:14px}.pm-view-body{padding:8px;max-height:calc(96vh - 62px)}.pm-view-paper{padding:18px 14px;box-shadow:none}.pm-view-head{align-items:flex-start}.pm-view-actions{justify-content:flex-end}.pm-view-head strong{padding-top:10px}}
     .pm-detail-title h2{margin:0 0 4px;font-size:24px;letter-spacing:-.025em}
     .pm-detail-title p{margin:0;color:var(--muted);font-size:11px}
     .pm-detail-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:15px}
@@ -1006,6 +1020,7 @@
                 <p id="pm-detail-subtitle"></p>
               </div>
               <div class="pm-detail-actions">
+                <button class="pm-export-btn" id="pm-view" type="button">Visualizar</button>
                 <button class="pm-export-btn" id="pm-print" type="button">Imprimir</button>
                 <button class="pm-export-btn primary" id="pm-share-pdf" type="button">Compartilhar PDF</button>
                 <button class="pm-new" id="pm-add-patient" type="button">+ Paciente</button>
@@ -1026,6 +1041,20 @@
       </div>
     </main>
   </div>
+
+  <dialog class="pm-view-dialog" id="pm-view-dialog">
+    <div class="pm-view-head">
+      <strong>Modo visualizar · Passômetro</strong>
+      <div class="pm-view-actions">
+        <button class="pm-export-btn" id="pm-view-print" type="button">Imprimir</button>
+        <button class="pm-export-btn primary" id="pm-view-pdf" type="button">Compartilhar PDF</button>
+        <button class="pm-export-btn" type="button" data-close-dialog="pm-view-dialog">Fechar</button>
+      </div>
+    </div>
+    <div class="pm-view-body">
+      <div class="pm-view-paper" id="pm-view-paper"></div>
+    </div>
+  </dialog>
 
   <dialog class="pm-dialog" id="pm-deck-dialog">
     <form id="pm-deck-form" method="dialog">
@@ -1566,12 +1595,63 @@
             '<div class="pm-export-row"><b>Impressão diagnóstica:</b> '+esc(displayValue(p.impression))+'</div>'+
             '<div class="pm-export-row"><b>Intercorrências 24h:</b> '+esc(p.switches?.events24h==="yes"?displayValue(p.events24hDetail):"Não")+'</div>'+
             '<div class="pm-export-row"><b>Pendências:</b> '+esc(p.switches?.pending==="yes"?displayValue(p.pendingDetail):"Não")+'</div>'+
+            '<div class="pm-export-observation"><b>OBS:</b> '+esc(displayValue(p.viewObservation,""))+'</div>'+
           '</article>';
         }).join("")+
         '<div class="pm-export-foot">Documento gerado pelo Passômetro LURIA. Pode conter dados clínicos sensíveis. Confirme o destinatário e siga as regras de privacidade e segurança da sua instituição.</div>'+
       '</section>';
       return stage.querySelector(".pm-export-sheet");
     }
+    function renderViewMode(deck){
+      const source=buildExportSheet(deck);
+      const paper=$("#pm-view-paper");
+      if(!paper) return;
+      paper.innerHTML=source.innerHTML;
+      const patients=deck.patients||[];
+      const cards=paper.querySelectorAll(".pm-export-patient");
+      cards.forEach((card,index)=>{
+        const p=patients[index]; if(!p) return;
+        const staticObs=card.querySelector(".pm-export-observation");
+        if(staticObs) staticObs.remove();
+        const wrap=document.createElement("div");
+        wrap.className="pm-view-observation";
+        const label=document.createElement("label");
+        label.textContent="OBS";
+        const textarea=document.createElement("textarea");
+        textarea.placeholder="Observações deste paciente...";
+        textarea.value=p.viewObservation||"";
+        textarea.dataset.patientObservation=p.id;
+        wrap.append(label,textarea);
+        card.appendChild(wrap);
+      });
+    }
+    function openViewMode(){
+      const d=activeDeck(); if(!d) return;
+      renderViewMode(d);
+      const dialog=$("#pm-view-dialog");
+      if(!dialog) return;
+      try{
+        if(typeof dialog.showModal==="function"){ if(!dialog.open) dialog.showModal(); }
+        else dialog.setAttribute("open","");
+      }catch{ dialog.setAttribute("open",""); }
+    }
+    function persistPatientObservation(target){
+      const id=target?.dataset?.patientObservation;
+      if(!id) return;
+      const d=activeDeck(); const p=(d?.patients||[]).find(x=>x.id===id);
+      if(!p) return;
+      p.viewObservation=String(target.value||"");
+      save();
+    }
+    function printViewMode(){
+      const d=activeDeck(); if(!d) return;
+      const sheet=buildExportSheet(d);
+      const w=window.open("","_blank","noopener,noreferrer");
+      if(!w){alert("Não foi possível abrir a janela de impressão.");return;}
+      w.document.write('<!doctype html><html><head><meta charset="utf-8"><title>Passômetro</title><style>body{font-family:Arial,sans-serif;color:#14263c;padding:24px}.pm-export-head{border-bottom:2px solid #184888;padding-bottom:14px;margin-bottom:18px}.pm-export-head h1{margin:0;font-size:22px;color:#184888}.pm-export-head p{margin:5px 0 0;color:#607084;font-size:11px}.pm-export-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:18px}.pm-export-summary div{padding:10px;border:1px solid #dce4ec;border-radius:8px}.pm-export-summary span{display:block;color:#718096;font-size:8px;text-transform:uppercase;font-weight:700}.pm-export-summary b{font-size:16px}.pm-export-patient{break-inside:avoid;margin:0 0 12px;padding:13px;border:1px solid #dce4ec;border-radius:9px}.pm-export-patient h2{margin:0 0 7px;font-size:14px}.pm-export-row{margin:4px 0;font-size:10px;line-height:1.4}.pm-export-row b,.pm-export-observation b{color:#184888}.pm-export-list{margin:4px 0 0;padding-left:16px;font-size:9.5px;line-height:1.4}.pm-export-observation{margin-top:9px;padding-top:8px;border-top:1px solid #dce4ec;font-size:10px;line-height:1.45;white-space:pre-wrap;min-height:42px}.pm-export-foot{margin-top:16px;padding-top:10px;border-top:1px solid #dce4ec;color:#718096;font-size:8px}@media print{body{padding:0}}</style></head><body>'+sheet.outerHTML+'</body></html>');
+      w.document.close();w.focus();setTimeout(()=>w.print(),120);
+    }
+
     function safeFileName(deck){
       return ('passometro-'+(deck.hospital||"hospital")+'-'+(deck.date||"")).normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-zA-Z0-9_-]+/g,"-").replace(/-+/g,"-").replace(/^-|-$/g,"").toLowerCase()+'.pdf';
     }
@@ -1661,6 +1741,11 @@
     });
     $("#pm-back").addEventListener("click",()=>{ $("#pm-detail").hidden=true; $("#pm-list").hidden=false; state.activeDeckId=null; renderDecks(); });
     $("#pm-search").addEventListener("input",renderDecks);
+    $("#pm-view").addEventListener("click",openViewMode);
+    $("#pm-view-paper").addEventListener("input",e=>{if(e.target.matches("[data-patient-observation]")) persistPatientObservation(e.target);});
+    $("#pm-view-paper").addEventListener("change",e=>{if(e.target.matches("[data-patient-observation]")) persistPatientObservation(e.target);});
+    $("#pm-view-print").addEventListener("click",printViewMode);
+    $("#pm-view-pdf").addEventListener("click",()=>$("#pm-share-pdf").click());
     $("#pm-print").addEventListener("click",()=>{
       const d=activeDeck(); if(!d) return;
       const sheet=buildExportSheet(d);
@@ -1812,7 +1897,8 @@
       e.preventDefault();
       const form=e.currentTarget; if(!form.reportValidity()) return;
       const fd=new FormData(form);
-      const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics")};
+      const existingPatient=state.editingPatientId?(activeDeck()?.patients||[]).find(x=>x.id===state.editingPatientId):null;
+      const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics"),viewObservation:existingPatient?.viewObservation||""};
       ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gpxa","previousPregnancyComplications","comorbidities","serologies","maternalBloodType","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
       const d=activeDeck(); if(!d) return;
       if(isGoDeck(d) && !p.estimatedDischarge) p.estimatedDischarge=calculateEstimatedDischarge(form);
