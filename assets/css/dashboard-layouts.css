@@ -8283,3 +8283,283 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     padding-bottom:24px!important;
   }
 }
+
+
+/* DASHBOARD 1 — COMPOSITION CLEANUP v53 — 2026-10-05
+   Recompõe a coluna Resumo/Ofensiva, elimina o recorte inferior e torna
+   Progresso/Pulo do Gato compactos, alinhados e resistentes a texto longo. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:330px 178px!important;
+    column-gap:14px!important;
+    row-gap:14px!important;
+    align-items:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1>.dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main{
+    height:330px!important;
+    min-height:330px!important;
+    max-height:330px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    height:330px!important;
+    min-height:330px!important;
+    max-height:330px!important;
+    grid-template-rows:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side>.dl-card{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    padding:12px 16px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading{
+    margin-bottom:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading h3{
+    font-size:16px!important;
+    line-height:1.2!important;
+    font-weight:650!important;
+  }
+
+  /* Resumo do dia */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    display:grid!important;
+    grid-template-columns:78px minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:14px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring{
+    width:72px!important;
+    height:72px!important;
+    flex-basis:72px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring:before{
+    inset:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring strong{
+    font-size:20px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring small{
+    max-width:58px!important;
+    font-size:9px!important;
+    line-height:1.05!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child{
+    min-width:0!important;
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:6px 8px!important;
+    align-content:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child strong{
+    grid-column:1/-1!important;
+    margin:0 0 1px!important;
+    font-size:14px!important;
+    line-height:1.15!important;
+    font-weight:650!important;
+    color:var(--text)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body>div:last-child span{
+    min-width:0!important;
+    padding:6px 8px!important;
+    border:1px solid var(--border)!important;
+    border-radius:8px!important;
+    background:var(--surface-2)!important;
+    color:var(--muted)!important;
+    font-size:10px!important;
+    line-height:1.15!important;
+    text-align:center!important;
+    white-space:normal!important;
+  }
+
+  /* Ofensiva: hierarquia vertical limpa e dias Seg–Dom em uma única linha. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-card-heading{
+    width:100%!important;
+    flex:0 0 auto!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:10px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{
+    width:42px!important;
+    height:50px!important;
+    min-width:42px!important;
+    flex:0 0 42px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{
+    margin:0!important;
+    color:var(--text)!important;
+    font-size:14px!important;
+    line-height:1.15!important;
+    font-weight:650!important;
+    text-align:left!important;
+    white-space:nowrap!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{
+    flex:0 0 auto!important;
+    width:100%!important;
+    display:grid!important;
+    grid-template-columns:repeat(7,minmax(0,1fr))!important;
+    gap:3px!important;
+    margin:4px 0 0!important;
+    padding:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays span{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:3px!important;
+    min-width:0!important;
+    color:var(--muted)!important;
+    font-size:9px!important;
+    line-height:1!important;
+    text-align:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays i{
+    width:10px!important;
+    height:10px!important;
+    margin:0!important;
+  }
+
+  /* Linha inferior */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    width:100%!important;
+    height:178px!important;
+    min-height:178px!important;
+    max-height:178px!important;
+    margin:0!important;
+    padding:12px 16px!important;
+    align-self:stretch!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat .dl-card-heading{
+    margin:0 0 8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    grid-template-columns:minmax(105px,145px) minmax(80px,1fr) 36px!important;
+    gap:9px!important;
+    min-height:18px!important;
+    margin:3px 0!important;
+    line-height:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row>span{
+    font-size:11px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row>strong{
+    font-size:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-track{
+    height:7px!important;
+    min-height:7px!important;
+  }
+
+  /* Pulo do Gato: gato e texto ficam centralizados; texto nunca estoura o card. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    width:100%!important;
+    height:119px!important;
+    min-height:119px!important;
+    display:grid!important;
+    grid-template-columns:58px minmax(0,1fr)!important;
+    align-items:center!important;
+    gap:14px!important;
+    padding:10px 12px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat-content .dashboard-cat-symbol{
+    width:54px!important;
+    height:54px!important;
+    flex:0 0 54px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat-content>div{
+    min-width:0!important;
+    max-width:100%!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat-content p{
+    display:-webkit-box!important;
+    -webkit-box-orient:vertical!important;
+    -webkit-line-clamp:3!important;
+    max-width:100%!important;
+    margin:0!important;
+    overflow:hidden!important;
+    overflow-wrap:anywhere!important;
+    word-break:break-word!important;
+    text-overflow:ellipsis!important;
+    color:var(--text)!important;
+    font-size:13px!important;
+    line-height:1.35!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat-content small{
+    margin-top:5px!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+    white-space:nowrap!important;
+    font-size:10px!important;
+  }
+
+  /* O conteúdo deve terminar antes da borda inferior do shell, sem faixa de corte. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    padding-bottom:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page{
+    padding-bottom:10px!important;
+  }
+}
