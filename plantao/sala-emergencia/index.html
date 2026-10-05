@@ -19,12 +19,41 @@
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-dashboard-pattern-v78">
   <link rel="stylesheet" href="assets/css/plantao.css?v=20261004-osce-layout-v64">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=11-monitor-fix">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-simulador-emergencia">
   <link rel="canonical" href="/plantao/sala-emergencia/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <script>(function(){try{if(location.pathname.endsWith("/plantao.html"))history.replaceState(null,"","/plantao/"+location.search+location.hash);}catch(e){}})();</script>
   <style>
     .plantao-module-entry .plantao-mode-menu{display:none!important}
     .plantao-module-back{display:none!important}
+    body[data-page="plantao"] .luria-page-spotlight-copy{
+      display:flex!important;
+      flex-direction:column!important;
+      align-items:flex-start!important;
+      justify-content:center!important;
+      gap:7px!important;
+    }
+    body[data-page="plantao"] .luria-page-spotlight-copy strong{
+      color:#fff!important;
+      font-weight:500!important;
+      letter-spacing:-.45px!important;
+    }
+    body[data-page="plantao"] .luria-page-spotlight-copy small{
+      display:block!important;
+      margin:0!important;
+      color:rgba(255,255,255,.82)!important;
+      font-size:13px!important;
+      line-height:1.35!important;
+      font-weight:400!important;
+      letter-spacing:0!important;
+    }
+    body[data-page="plantao"] .plantao-quick-grid:has(#plantao-resume-card[hidden]){
+      display:none!important;
+    }
+    @media(max-width:700px){
+      body[data-page="plantao"] .luria-page-spotlight-copy{gap:5px!important}
+      body[data-page="plantao"] .luria-page-spotlight-copy small{font-size:11px!important}
+    }
   </style>
 <style id="luria-page-font-lock-v57">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}</style></head>
 <body data-page="plantao" data-plantao-entry="emergency" class="plantao-module-entry">
@@ -36,6 +65,13 @@
         <header class="topbar plantao-standard-topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
         </header>
+
+        <section class="luria-page-spotlight" aria-label="Simulador de Emergência">
+          <div class="luria-page-spotlight-copy">
+            <strong>Simulador de Emergência</strong>
+            <small>Treine decisões clínicas em cenários realistas de urgência e emergência.</small>
+          </div>
+        </section>
 
         <section id="plantao-library" class="plantao-library">
 
@@ -49,17 +85,6 @@
           </div>
 
           <section class="plantao-quick-grid" aria-label="Ações rápidas">
-            <article id="plantao-featured-case" class="plantao-featured-case">
-              <div class="plantao-featured-inner">
-                <div class="plantao-featured-top">
-                  <span class="plantao-featured-label">SIMULAÇÃO CLÍNICA</span>
-                </div>
-                <div class="plantao-featured-copy">
-                  <h2>Simulador de Emergência</h2>
-                  <p>Pratique agora. Decida melhor no plantão.</p>
-                </div>
-              </div>
-            </article>
             <article id="plantao-resume-card" class="plantao-quick-card plantao-resume-card" hidden>
               <div class="plantao-quick-icon" aria-hidden="true">▶</div>
               <div class="plantao-quick-copy">
