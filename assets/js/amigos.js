@@ -1,3 +1,23 @@
+
+function refreshFriendsCommunityMetrics(){
+  const totalEl=document.getElementById("friends-metric-total");
+  const onlineEl=document.getElementById("friends-metric-online");
+  const challengesEl=document.getElementById("friends-metric-challenges");
+  const materialsEl=document.getElementById("friends-metric-materials");
+  if(totalEl) totalEl.textContent=String(friendsRowsCache.length||0);
+  if(onlineEl) onlineEl.textContent="—";
+  if(challengesEl){
+    try{
+      const sharedCount=Array.isArray(window.sharedStudyratsRows)?new Set(window.sharedStudyratsRows.map(x=>x.challenge_id)).size:0;
+      challengesEl.textContent=String(sharedCount||getStudyrats().length||0);
+    }catch{challengesEl.textContent="0";}
+  }
+  if(materialsEl){
+    const inbox=document.querySelectorAll("#friends-inbox .inbox-row").length;
+    materialsEl.textContent=String(inbox||0);
+  }
+}
+
 const friendsSb=window.supabaseClient;
 let friendsUser=null;
 let pendingFriendLookup=null;
@@ -66,7 +86,7 @@ async function loadFriends(){
     if(error){setFriendsStatus(error.message,"error");return;}
     await loadFriends();renderStudyratsFriendOptions();setFriendsStatus("Amigo removido.","success");
   }));
-  renderStudyratsFriendOptions();
+  renderStudyratsFriendOptions();refreshFriendsCommunityMetrics();
 }
 
 async function loadInbox(){
@@ -88,6 +108,7 @@ async function loadInbox(){
       </div>
     </div>`).join(""):'<div class="friends-empty">Nenhum material recebido.</div>';
 
+  refreshFriendsCommunityMetrics();
   host.querySelectorAll("[data-open-share]").forEach(btn=>btn.addEventListener("click",async()=>{
     btn.disabled=true;
     try{
@@ -216,7 +237,7 @@ function initStudyrats(){
   document.getElementById("studyrats-toggle-create")?.addEventListener("click",()=>{create.hidden=!create.hidden;});
   document.getElementById("studyrats-cancel")?.addEventListener("click",()=>{create.hidden=true;});
   document.getElementById("studyrats-start")?.addEventListener("click",startStudyratsChallenge);
-  renderStudyratsFriendOptions();renderStudyrats();
+  renderStudyratsFriendOptions();renderStudyrats();refreshFriendsCommunityMetrics();
 }
 
 async function initFriends(){
