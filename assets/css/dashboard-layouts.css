@@ -7993,3 +7993,30 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     max-width:none!important;
   }
 }
+
+
+/* DASHBOARD MASTER — USE GLOBAL APPROVED SHELL SIZE v49 — 2026-10-04 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    margin-top:10px!important;
+    margin-left:5px!important;
+    margin-right:5px!important;
+    margin-bottom:5px!important;
+    height:calc(100dvh - 15px)!important;
+    padding:64px 3px 3px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar.dashboard-shell-sidebar{
+    overflow:visible!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .brand .luria-theme-logo,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar #luria-brand-logo{
+    width:48.4px!important;
+    height:48.4px!important;
+    min-width:48.4px!important;
+    min-height:48.4px!important;
+    flex:0 0 48.4px!important;
+    filter:brightness(0) invert(1)!important;
+  }
+}
