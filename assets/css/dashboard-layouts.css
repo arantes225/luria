@@ -10050,3 +10050,26 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     align-self:stretch!important;
   }
 }
+
+
+/* DASHBOARD 1 — Resumo + Ofensiva -10px cada v80 — 2026-10-05 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:calc(100% - 20px)!important;
+    min-height:0!important;
+    max-height:calc(100% - 20px)!important;
+    block-size:calc(100% - 20px)!important;
+    align-self:start!important;
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    block-size:100%!important;
+    box-sizing:border-box!important;
+  }
+}
