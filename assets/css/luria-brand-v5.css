@@ -2515,3 +2515,93 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     color:var(--text)!important;
   }
 }
+
+
+/* LURIA DARK SHELL — STATIC EDGES + INNER LOGO PATTERN v77 — 2026-10-04 */
+@media (min-width:981px){
+  /* A moldura externa deve ser totalmente estática. */
+  body.luria-global-shell-mounted,
+  body.luria-global-shell-mounted .app-shell,
+  body.luria-global-shell-mounted .app-shell::before{
+    transform:none!important;
+    translate:none!important;
+    animation:none!important;
+    transition:none!important;
+    background-position:0 0!important;
+  }
+
+  body.luria-global-shell-mounted::before,
+  body.luria-global-shell-mounted::after{
+    content:none!important;
+    display:none!important;
+    animation:none!important;
+    transition:none!important;
+    transform:none!important;
+  }
+
+  :root[data-theme="dark"] body.luria-global-shell-mounted,
+  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell,
+  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell::before{
+    background:#142A44!important;
+    background-color:#142A44!important;
+    background-image:none!important;
+    border-color:transparent!important;
+    box-shadow:none!important;
+  }
+
+  /* O pattern passa a existir SOMENTE dentro do painel principal. */
+  body.luria-global-shell-mounted .main{
+    position:relative!important;
+    isolation:isolate!important;
+    overflow:hidden!important;
+    background:var(--surface)!important;
+    background-image:none!important;
+  }
+
+  body.luria-global-shell-mounted .main::before{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:0!important;
+    z-index:0!important;
+    pointer-events:none!important;
+    background-image:url("/assets/img/logos/logo-icone-original.png?v=inner-pattern-v77")!important;
+    background-repeat:repeat!important;
+    background-size:132px 132px!important;
+    background-position:0 0!important;
+    opacity:.018!important;
+    transform:none!important;
+    animation:none!important;
+    transition:none!important;
+  }
+
+  :root[data-theme="dark"] body.luria-global-shell-mounted .main::before{
+    background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=inner-pattern-v77")!important;
+    background-size:132px 132px!important;
+    background-position:0 0!important;
+    opacity:.038!important;
+  }
+
+  :root[data-theme="leila-mood"] body.luria-global-shell-mounted .main::before{
+    background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=inner-pattern-v77")!important;
+    background-size:132px 132px!important;
+    background-position:0 0!important;
+    opacity:.024!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page{
+    position:relative!important;
+    z-index:1!important;
+    background:transparent!important;
+  }
+
+  /* Nada pode animar a borda/cantos externos no tema escuro. */
+  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell,
+  :root[data-theme="dark"] body.luria-global-shell-mounted #sidebar.sidebar,
+  :root[data-theme="dark"] body.luria-global-shell-mounted .main{
+    outline:0!important;
+    box-shadow:none!important;
+    transition:none!important;
+    animation:none!important;
+  }
+}
