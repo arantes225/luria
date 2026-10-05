@@ -9306,3 +9306,181 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     max-height:82px!important;
   }
 }
+
+
+/* DASHBOARD 1 — COMPACT FIT + UNIFORM GAPS v70 — 2026-10-05 */
+@media (min-width:981px){
+  /* Faz o Dashboard 1 caber inteiro no viewport, sem scroll vertical. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main{
+    padding:18px 28px 16px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    height:calc(100dvh - 34px)!important;
+    min-height:0!important;
+    padding:0!important;
+    display:grid!important;
+    grid-template-rows:138px minmax(0,1fr)!important;
+    row-gap:8px!important;
+    overflow:hidden!important;
+  }
+
+  /* Distância única entre TODOS os callouts. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    height:100%!important;
+    min-height:0!important;
+    grid-template-rows:minmax(0,1fr) 118px!important;
+    column-gap:8px!important;
+    row-gap:8px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    block-size:100%!important;
+    max-block-size:100%!important;
+    align-self:stretch!important;
+    gap:8px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  /* Compacta verticalmente os quatro callouts superiores. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    padding:12px 14px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading{
+    margin-bottom:7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading h3{
+    font-size:16px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-card-heading h3 .dl-heading-icon{
+    width:25px!important;
+    height:25px!important;
+    flex-basis:25px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-heading-icon .dl-icon{
+    width:24px!important;
+    height:24px!important;
+  }
+
+  /* Estudar agora: mantém todos os botões visíveis em menor altura. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main > .dl-study-now{
+    gap:5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main .dl-study-now-head{
+    gap:7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main .dl-study-now > p{
+    margin:2px 0 4px!important;
+    line-height:1.25!important;
+    font-size:13px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main .dl-study-time-options{
+    gap:5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main .dl-study-time-options button{
+    min-height:34px!important;
+    height:34px!important;
+    padding:5px 7px!important;
+    font-size:13px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main .dl-study-now-start{
+    min-height:36px!important;
+    height:36px!important;
+    margin-top:2px!important;
+    padding:6px 10px!important;
+  }
+
+  /* Resumo do dia menor verticalmente. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-summary-body{
+    gap:10px!important;
+    min-height:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-summary-body .dl-ring{
+    width:82px!important;
+    height:82px!important;
+    flex-basis:82px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-summary-body > div:last-child{
+    gap:5px!important;
+  }
+
+  /* Ofensiva mais compacta sem perder o conteúdo. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1{
+    margin:0!important;
+    gap:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1 .dl-streak-visual{
+    transform:scale(.84)!important;
+    transform-origin:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-weekdays{
+    margin-top:2px!important;
+  }
+
+  /* Faixa inferior: sem sobreposição ou margem negativa; mesmo gap de 8px. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    margin:0!important;
+    align-self:stretch!important;
+    padding:8px 12px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat .dl-card-heading{
+    margin-bottom:4px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    min-height:16px!important;
+    margin:0!important;
+    gap:7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    height:68px!important;
+    min-height:68px!important;
+    max-height:68px!important;
+  }
+}
