@@ -24,7 +24,9 @@
     .book-main{display:grid;gap:14px;min-width:0}
 
     .book-outline{position:sticky;top:14px;align-self:start;max-height:calc(100dvh - 32px);padding:14px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04);overflow:auto;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 60%,transparent) transparent}
-    .book-outline-head{padding:2px 3px 10px;border-bottom:1px solid var(--border)}
+    .book-outline-back{display:flex;align-items:center;min-height:34px;margin:0 0 12px;padding:0 9px;border:1px solid var(--border);border-radius:9px;background:var(--surface-2);color:var(--accent);font-size:9.6px;font-weight:600;line-height:1;text-decoration:none}
+    .book-outline-back:hover{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 28%,var(--border))}
+    .book-outline-head{padding:4px 3px 10px;border-bottom:1px solid var(--border)}
     .book-outline-head small{display:block;color:var(--muted);font-size:8px;letter-spacing:.06em;text-transform:uppercase}
     .book-outline-head strong{display:block;margin-top:3px;font-size:12.5px;line-height:1.2;color:var(--text)}
     .book-outline-nav{display:grid;gap:3px;margin-top:10px}
@@ -110,6 +112,7 @@
       <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila LURIA</span><h1>Diabetes Mellitus Gestacional</h1></div></header>
       <section class="book-page">
         <aside class="book-outline" aria-label="Estrutura da apostila">
+          <a class="book-outline-back" href="/apostilas/">← Voltar para apostilas</a>
           <div class="book-outline-head">
             <small>Apostila atual</small>
             <strong>Estrutura do conteúdo</strong>
