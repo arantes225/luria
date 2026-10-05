@@ -8747,3 +8747,108 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Sidebar bottom dock v224 — estrutura estável sem salto após refresh */
+(function ensureSidebarBottomDockV224(){
+  if(document.getElementById("luria-sidebar-bottom-dock-v224")) return;
+  const style=document.createElement("style");
+  style.id="luria-sidebar-bottom-dock-v224";
+  style.textContent=`
+    /* Estrutura em grid: topo / navegação flexível / rodapé.
+       Assim o rodapé não depende da altura final da lista nem de JS tardio. */
+    #sidebar.sidebar{
+      display:grid!important;
+      grid-template-rows:auto minmax(0,1fr) auto!important;
+      height:100vh!important;
+      height:100dvh!important;
+      overflow:hidden!important;
+    }
+
+    #sidebar.sidebar .sidebar-top{
+      grid-row:1!important;
+      min-height:0!important;
+    }
+
+    #sidebar.sidebar .nav,
+    #sidebar.sidebar .nav-study,
+    #sidebar.sidebar .nav-work,
+    body[data-page^="trabalho_"] #sidebar.sidebar .nav{
+      grid-row:2!important;
+      min-height:0!important;
+      align-self:stretch!important;
+      overflow-y:auto!important;
+      overflow-x:hidden!important;
+      padding-bottom:8px!important;
+      scrollbar-width:none!important;
+    }
+
+    #sidebar.sidebar .nav::-webkit-scrollbar,
+    #sidebar.sidebar .nav-study::-webkit-scrollbar,
+    #sidebar.sidebar .nav-work::-webkit-scrollbar{
+      display:none!important;
+    }
+
+    #sidebar.sidebar .sidebar-footer,
+    #sidebar.sidebar .sidebar-footer-study,
+    #sidebar.sidebar .sidebar-footer-work,
+    body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+      grid-row:3!important;
+      position:static!important;
+      inset:auto!important;
+      align-self:end!important;
+      width:100%!important;
+      margin:0!important;
+      padding:8px 0 max(6px,env(safe-area-inset-bottom))!important;
+      display:flex!important;
+      flex-direction:column!important;
+      gap:7px!important;
+      background:var(--sidebar)!important;
+      z-index:40!important;
+      overflow:visible!important;
+      transform:none!important;
+      translate:none!important;
+    }
+
+    #sidebar.sidebar .streak-mini,
+    #sidebar.sidebar .luria-mode-footer-switch,
+    #sidebar.sidebar .work-pcr-button{
+      flex:0 0 auto!important;
+      margin:0!important;
+      transform:none;
+    }
+
+    @media(max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        display:grid!important;
+        grid-template-rows:auto minmax(0,1fr) auto!important;
+        height:100vh!important;
+        height:100dvh!important;
+        overflow:hidden!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+        position:static!important;
+        left:auto!important;
+        right:auto!important;
+        bottom:auto!important;
+        width:100%!important;
+        margin:0!important;
+        padding:7px 0 max(8px,env(safe-area-inset-bottom))!important;
+        align-self:end!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .nav,
+      html.pwa-standalone body #sidebar.sidebar .nav-study,
+      html.pwa-standalone body #sidebar.sidebar .nav-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav{
+        padding-bottom:6px!important;
+        min-height:0!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
