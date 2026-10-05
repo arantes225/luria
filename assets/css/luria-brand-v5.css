@@ -3149,3 +3149,47 @@ body *::-webkit-scrollbar-button:end{
     box-shadow:none!important;
   }
 }
+
+
+/* LURIA v86 — scrollbar interna ao painel branco
+   A barra fica alguns pixels para dentro da borda arredondada, nunca sobre o filete azul.
+   Trilho/canto continuam totalmente transparentes. */
+@media (min-width:981px){
+  body.luria-global-shell-mounted .main{
+    padding-right:6px!important;
+    background-color:var(--surface)!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page{
+    width:100%!important;
+    max-width:100%!important;
+    height:100%!important;
+    max-height:100%!important;
+    margin:0!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    box-sizing:border-box!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+    width:7px!important;
+    background:transparent!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+    background:transparent!important;
+    background-color:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+  }
+}
