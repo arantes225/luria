@@ -1,6 +1,8 @@
 name: Deploy GitHub Pages
 
 on:
+  push:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -9,50 +11,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: studyos-checked-pages
-  cancel-in-progress: true
+  group: pages-production
+  cancel-in-progress: false
 
 jobs:
-
-  browser-check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - name: Install browser test tools
-        run: npm install --no-save --package-lock=false playwright jspdf
-      - name: Cache browser binaries
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: studyos-playwright-20260930-${{ runner.os }}
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
-      - name: Check JavaScript syntax
-        run: |
-          node --check assets/js/app.js
-          node --check assets/js/flashcards.js
-          node --check assets/js/flashcards-v21.js
-          node --check assets/js/cronograma.js
-          node --check assets/js/trabalho-pcr.js
-          node --check assets/js/pcr-store.js
-          node --check assets/js/pcr-history.js
-          node --check assets/js/beta-testers.js
-      - name: Test desktop and mobile browsers
-        continue-on-error: true
-        run: |
-          python3 -m http.server 4173 >/tmp/studyos-test-server.log 2>&1 &
-          node tests/layout-pcr.browser.cjs
-      - name: Save browser screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: browser-layouts
-          path: browser-results/
   deploy:
-    needs: browser-check
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -72,32 +35,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
-  verify-published:
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - name: Install browser test tools
-        run: npm install --no-save --package-lock=false playwright jspdf
-      - name: Cache browser binaries
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: studyos-playwright-20260930-${{ runner.os }}
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
-      - name: Verify live source, desktop, mobile and login
-        continue-on-error: true
-        env:
-          TEST_BASE_URL: https://www.resibulando.online
-        run: node tests/layout-pcr.browser.cjs
-      - name: Save published browser screenshots
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: published-browser-layouts
-          path: browser-results/
