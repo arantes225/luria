@@ -3208,3 +3208,141 @@ body #sidebar.sidebar #luria-brand-logo{
   flex:0 0 46px!important;
   object-fit:contain!important;
 }
+
+
+/* LURIA v88 — rodapé da sidebar: geometria autoritativa */
+@media (min-width:981px){
+  body #sidebar.sidebar{
+    position:sticky!important;
+    top:0!important;
+    height:100dvh!important;
+    max-height:100dvh!important;
+    overflow:hidden!important;
+  }
+
+  body #sidebar.sidebar .sidebar-footer,
+  body #sidebar.sidebar .sidebar-footer-study,
+  body #sidebar.sidebar .sidebar-footer-work,
+  body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+    position:absolute!important;
+    left:18px!important;
+    right:18px!important;
+    bottom:8px!important;
+    top:auto!important;
+    inset-block-end:8px!important;
+    width:auto!important;
+    height:124px!important;
+    min-height:124px!important;
+    max-height:124px!important;
+    margin:0!important;
+    padding:0!important;
+    display:block!important;
+    align-self:auto!important;
+    background:transparent!important;
+    transform:none!important;
+    translate:none!important;
+    z-index:80!important;
+    overflow:visible!important;
+  }
+
+  body #sidebar.sidebar .luria-mode-footer-switch{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:0!important;
+    top:auto!important;
+    inset:auto 0 0 0!important;
+    width:100%!important;
+    height:58px!important;
+    min-height:58px!important;
+    max-height:58px!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  body #sidebar.sidebar .streak-mini,
+  body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:66px!important;
+    top:auto!important;
+    inset:auto 0 66px 0!important;
+    width:100%!important;
+    height:58px!important;
+    min-height:58px!important;
+    max-height:58px!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  body #sidebar.sidebar .nav,
+  body #sidebar.sidebar .nav-study,
+  body #sidebar.sidebar .nav-work,
+  body[data-page^="trabalho_"] #sidebar.sidebar .nav{
+    padding-bottom:140px!important;
+  }
+}
+
+@media(max-width:980px){
+  html.pwa-standalone body #sidebar.sidebar{
+    position:fixed!important;
+    top:0!important;
+    height:100dvh!important;
+    max-height:100dvh!important;
+    overflow:hidden!important;
+  }
+
+  html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+  html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+  html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work,
+  html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+    position:absolute!important;
+    left:15px!important;
+    right:15px!important;
+    bottom:calc(8px + env(safe-area-inset-bottom))!important;
+    top:auto!important;
+    width:auto!important;
+    height:124px!important;
+    min-height:124px!important;
+    max-height:124px!important;
+    margin:0!important;
+    padding:0!important;
+    display:block!important;
+    align-self:auto!important;
+    background:transparent!important;
+    transform:none!important;
+    translate:none!important;
+    z-index:80!important;
+    overflow:visible!important;
+  }
+
+  html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:0!important;
+    top:auto!important;
+    width:100%!important;
+    height:58px!important;
+    min-height:58px!important;
+    max-height:58px!important;
+    margin:0!important;
+  }
+
+  html.pwa-standalone body #sidebar.sidebar .streak-mini,
+  html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button{
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:66px!important;
+    top:auto!important;
+    width:100%!important;
+    height:58px!important;
+    min-height:58px!important;
+    max-height:58px!important;
+    margin:0!important;
+  }
+}
