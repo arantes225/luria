@@ -9575,3 +9575,240 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 }
+
+
+/* DASHBOARDS 3 + 4 — FINAL GEOMETRY RESET v72 — 2026-10-05 */
+@media (min-width:981px){
+  /* ===== Dashboard 3 =====
+     Remove patches antigos que criavam faixa morta / deslocamento artificial. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .main{
+    padding:18px 28px 16px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternative{
+    height:calc(100dvh - 34px)!important;
+    min-height:0!important;
+    padding:0!important;
+    margin:0!important;
+    display:grid!important;
+    grid-template-rows:138px minmax(0,1fr)!important;
+    row-gap:8px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3{
+    height:100%!important;
+    min-height:0!important;
+    width:100%!important;
+    padding:0!important;
+    margin:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-rows:minmax(0,.86fr) minmax(0,1.14fr)!important;
+    gap:8px!important;
+    align-content:stretch!important;
+    overflow:hidden!important;
+    transform:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > *{
+    min-height:0!important;
+    max-height:none!important;
+    height:100%!important;
+    margin:0!important;
+    transform:none!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-overview,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-streak,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-cat{
+    min-height:0!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-upcoming{
+    grid-column:1/2!important;
+    grid-row:2!important;
+    min-height:0!important;
+    height:100%!important;
+    overflow:hidden!important;
+    z-index:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-performance{
+    grid-column:2/4!important;
+    grid-row:2!important;
+    min-height:0!important;
+    height:100%!important;
+    overflow:hidden!important;
+    z-index:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-upcoming,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-performance{
+    position:relative!important;
+    top:auto!important;
+    bottom:auto!important;
+    margin-bottom:0!important;
+    transform:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3::before,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  /* ===== Dashboard 4 =====
+     Grade explícita: topo, área principal e faixa inferior sempre dentro da viewport. */
+  body[data-page="dashboard"][data-dashboard-layout="4"] .main{
+    padding:18px 28px 16px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] #dashboard-alternative{
+    height:calc(100dvh - 34px)!important;
+    min-height:0!important;
+    padding:0!important;
+    margin:0!important;
+    display:grid!important;
+    grid-template-rows:138px minmax(0,1fr)!important;
+    row-gap:8px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4{
+    height:100%!important;
+    min-height:0!important;
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-rows:96px minmax(0,1fr) 118px!important;
+    column-gap:8px!important;
+    row-gap:8px!important;
+    align-content:stretch!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metrics{
+    grid-column:1/-1!important;
+    grid-row:1!important;
+    height:96px!important;
+    min-height:96px!important;
+    max-height:96px!important;
+    gap:8px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-cluster,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-daily-challenge{
+    height:96px!important;
+    min-height:96px!important;
+    max-height:96px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-metric-mini{
+    padding:10px 12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-pair-4{
+    grid-column:1/2!important;
+    grid-row:2!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:8px!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-pair-4 > .dl-card{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    padding:12px 14px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 > .dl-streak{
+    grid-column:2/3!important;
+    grid-row:2!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    padding:12px 14px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 > .dl-areas{
+    grid-column:1/2!important;
+    grid-row:3!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 > .dl-cat{
+    grid-column:2/3!important;
+    grid-row:3!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 > .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 > .dl-cat{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    margin:0!important;
+    padding:8px 12px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 .dl-areas .dl-card-heading,
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 .dl-cat .dl-card-heading{
+    margin-bottom:4px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 .dl-areas .dl-area-row{
+    min-height:16px!important;
+    margin:0!important;
+    gap:7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4 .dl-cat-content{
+    height:68px!important;
+    min-height:68px!important;
+    max-height:68px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-study-now-card-main > .dl-study-now{
+    gap:5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-study-now-card-main .dl-study-time-options{
+    gap:5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-study-now-card-main .dl-study-time-options button{
+    min-height:32px!important;
+    height:32px!important;
+    padding:4px 6px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-study-now-card-main .dl-study-now-start{
+    min-height:34px!important;
+    height:34px!important;
+    margin-top:2px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll{
+    min-height:0!important;
+    max-height:calc(100% - 36px)!important;
+    overflow:auto!important;
+  }
+}
