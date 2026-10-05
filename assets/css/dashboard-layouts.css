@@ -7969,3 +7969,27 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     display:none!important;
   }
 }
+
+
+/* DASHBOARD MASTER — MATCH GLOBAL WHITE CONTAINER WIDTH v48 — 2026-10-04 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    margin:10px!important;
+    height:calc(100dvh - 20px)!important;
+    padding:64px 6px 6px!important;
+    width:auto!important;
+    max-width:none!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    margin:0!important;
+    width:auto!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    margin:0!important;
+    width:auto!important;
+    max-width:none!important;
+  }
+}
