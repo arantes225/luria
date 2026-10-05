@@ -8421,3 +8421,24 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* LURIA guided study — strict step completion v1 */
+(function installGuidedStudyCompletion(){
+  if(window.LuriaGuidedStudy?.completeActiveStep)return;
+  const api=window.LuriaGuidedStudy||{};
+  api.completeActiveStep=function(source){
+    try{
+      const active=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null");
+      if(!active?.plan?.createdAt||!Number.isInteger(active.activeIndex))return false;
+      sessionStorage.setItem("luria:guided-study-step-complete",JSON.stringify({
+        createdAt:active.plan.createdAt,
+        activeIndex:active.activeIndex,
+        source:String(source||"completed"),
+        completedAt:Date.now()
+      }));
+      return true;
+    }catch{return false}
+  };
+  window.LuriaGuidedStudy=api;
+})();
