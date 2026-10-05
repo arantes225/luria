@@ -43,6 +43,21 @@
     .luria-figure{margin:14px 0;padding:14px;border-radius:16px;background:var(--surface-2);border:1px solid var(--border)}.luria-figure .figure-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.luria-figure .figure-title strong{font-size:11px}.luria-figure .figure-title span{font-size:8px;color:var(--muted)}
     .flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.flow-step{padding:10px;border-radius:12px;background:var(--surface);border:1px solid var(--border);text-align:center}.flow-step b{display:block;font-size:11px}.flow-step small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
     .meal-flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.meal-flow span{padding:10px 6px;border-radius:10px;background:var(--surface);border:1px solid var(--border);font-size:9px;text-align:center}
+
+    .treatment-algorithm{padding:18px!important}
+    .treatment-algorithm .figure-title{margin-bottom:14px!important}
+    .treatment-algorithm .figure-title strong{font-size:13.5px!important}
+    .treatment-algorithm .figure-title span{font-size:9px!important}
+    .treatment-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .treatment-step{position:relative;display:grid;grid-template-columns:34px minmax(0,1fr);gap:11px;min-height:142px;padding:16px 17px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3.5%,var(--surface));box-sizing:border-box}
+    .treatment-step-number{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;line-height:1}
+    .treatment-step b{display:block;margin:1px 0 8px;font-size:13.2px;line-height:1.2;color:var(--text)}
+    .treatment-step ul{margin:0!important;padding-left:17px!important}
+    .treatment-step li{font-size:11.6px!important;line-height:1.45!important;color:var(--muted)}
+    .treatment-step li+li{margin-top:4px!important}
+    .treatment-step li strong{display:inline!important;margin:0!important;font-size:inherit!important;line-height:inherit!important;color:var(--text)}
+    @media(max-width:760px){.treatment-flow{grid-template-columns:1fr}.treatment-step{min-height:0}}
+
     .book-source{font-size:10px;color:var(--muted);line-height:1.5}.book-source a{color:var(--accent)}
     .mindmap-section{display:block!important;position:relative!important;clear:both!important;overflow:hidden!important;margin:0!important;padding:16px 22px!important;border:1px solid var(--border)!important;border-radius:18px!important;background:var(--surface)!important;box-shadow:0 8px 22px rgba(15,35,66,.04)!important;isolation:isolate!important}
     .mindmap-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:10px}
@@ -411,13 +426,61 @@
               <li>Preparar a paciente para reconhecer e manejar alterações glicêmicas.</li>
             </ul>
 
-            <div class="luria-figure">
-              <div class="figure-title"><strong>Algoritmo LURIA · tratamento</strong></div>
-              <div class="flow">
-                <div class="flow-step"><b>Diagnóstico</b><small>Educação + nutrição + atividade física + monitorização</small></div>
-                <div class="flow-step"><b>Reavaliar</b><small>7–14 dias ou antes se hiperglicemia importante</small></div>
-                <div class="flow-step"><b>Reconhecer padrão</b><small>Jejum? Pós-prandial? Descontrole global?</small></div>
-                <div class="flow-step"><b>Farmacoterapia</b><small>Insulina como referência; metformina em situações selecionadas</small></div>
+            <div class="luria-figure treatment-algorithm">
+              <div class="figure-title">
+                <strong>Algoritmo LURIA · tratamento</strong>
+                <span>Do início do cuidado ao ajuste terapêutico</span>
+              </div>
+              <div class="treatment-flow">
+                <div class="treatment-step">
+                  <span class="treatment-step-number">1</span>
+                  <div>
+                    <b>Começar o tratamento</b>
+                    <ul>
+                      <li>Educação e autocuidado.</li>
+                      <li>Terapia nutricional individualizada.</li>
+                      <li>Atividade física, se não houver contraindicação.</li>
+                      <li>Automonitorização glicêmica e definição de metas.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="treatment-step">
+                  <span class="treatment-step-number">2</span>
+                  <div>
+                    <b>Reavaliar controle</b>
+                    <ul>
+                      <li>Rever glicemias após 7–14 dias.</li>
+                      <li>Antecipar a avaliação se houver hiperglicemia importante.</li>
+                      <li>Checar técnica, adesão, alimentação e rotina antes de escalar.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="treatment-step">
+                  <span class="treatment-step-number">3</span>
+                  <div>
+                    <b>Identificar o padrão</b>
+                    <ul>
+                      <li><strong>Jejum alto:</strong> pensar em componente basal.</li>
+                      <li><strong>Pós-prandial alto:</strong> corrigir a refeição correspondente.</li>
+                      <li><strong>Vários horários altos:</strong> pensar em descontrole global.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="treatment-step">
+                  <span class="treatment-step-number">4</span>
+                  <div>
+                    <b>Escalonar e titular</b>
+                    <ul>
+                      <li>Manter medidas não farmacológicas.</li>
+                      <li>Insulina é a referência quando as metas não são atingidas.</li>
+                      <li>Metformina pode ser considerada em situações selecionadas.</li>
+                      <li>Ajustar o componente correspondente ao horário alterado.</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
