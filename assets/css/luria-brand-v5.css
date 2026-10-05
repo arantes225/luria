@@ -2665,23 +2665,28 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 }
 
 
-/* LURIA v79 — evita que o último callout fique sob o filete inferior do shell */
+
+/* LURIA v80 — conteúdo sempre acima da camada de pattern/logos */
 @media (min-width:981px){
+  body.luria-global-shell-mounted .main{
+    position:relative!important;
+    isolation:isolate!important;
+  }
+
+  body.luria-global-shell-mounted .main::before,
+  body.luria-global-shell-mounted .main::after{
+    z-index:0!important;
+    pointer-events:none!important;
+  }
+
   body.luria-global-shell-mounted .main > .page{
-    padding-bottom:28px!important;
-    scroll-padding-bottom:28px!important;
+    position:relative!important;
+    z-index:10!important;
+    isolation:isolate!important;
   }
 
-  /* O conteúdo deve sempre terminar acima da borda inferior arredondada. */
-  body.luria-global-shell-mounted .main > .page > :last-child{
+  body.luria-global-shell-mounted .main > .page > *{
     position:relative;
-    z-index:3;
-  }
-
-  /* Páginas que usam um container único também ganham respiro interno no final. */
-  body.luria-global-shell-mounted .main > .page > main:last-child,
-  body.luria-global-shell-mounted .main > .page > section:last-child,
-  body.luria-global-shell-mounted .main > .page > div:last-child{
-    margin-bottom:2px!important;
+    z-index:1;
   }
 }
