@@ -2927,3 +2927,130 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     height:0!important;
   }
 }
+
+
+/* LURIA v85 — restaura a moldura aprovada do site.
+   O azul é a janela fixa externa; o painel branco fica parado e SOMENTE
+   o conteúdo da .page rola por dentro. O pattern pertence ao painel,
+   não a uma segunda janela de conteúdo. */
+@media (min-width:981px){
+  body.luria-global-shell-mounted{
+    overflow:hidden!important;
+    background:var(--luria-master-shell,#184888)!important;
+  }
+
+  body.luria-global-shell-mounted > .app-shell,
+  body.luria-global-shell-mounted .app-shell{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:270px minmax(0,1fr)!important;
+    grid-template-rows:minmax(0,1fr)!important;
+    width:auto!important;
+    max-width:none!important;
+    height:calc(100dvh - 15px)!important;
+    min-height:0!important;
+    margin:10px 5px 5px!important;
+    padding:64px 3px 3px!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-radius:24px!important;
+    background:var(--luria-master-shell,#184888)!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+  }
+
+  /* filete azul igual dos dois lados e também na base */
+  body.luria-global-shell-mounted #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar,
+  body.luria-global-shell-mounted .main{
+    height:100%!important;
+    min-height:0!important;
+    align-self:stretch!important;
+    margin:0!important;
+  }
+
+  body.luria-global-shell-mounted #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar{
+    border-radius:18px 0 0 18px!important;
+  }
+
+  /* o container branco NÃO rola */
+  body.luria-global-shell-mounted .main{
+    position:relative!important;
+    isolation:isolate!important;
+    padding:0!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-radius:0 18px 18px 0!important;
+    background-color:var(--surface)!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+    z-index:2!important;
+  }
+
+  /* somente o conteúdo interno rola; sem criar uma segunda "janela" */
+  body.luria-global-shell-mounted .main > .page{
+    position:relative!important;
+    z-index:20!important;
+    display:block!important;
+    width:100%!important;
+    max-width:100%!important;
+    height:100%!important;
+    max-height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:16px 18px 18px!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    background:transparent!important;
+    border:0!important;
+    border-radius:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    clip-path:none!important;
+    -webkit-mask-image:none!important;
+    mask-image:none!important;
+    box-sizing:border-box!important;
+    overscroll-behavior:contain!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::before,
+  body.luria-global-shell-mounted .main > .page::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+  }
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+  }
+
+  /* v84 colocou o scroll no .main; desativa isso definitivamente. */
+  body.luria-global-shell-mounted .main::-webkit-scrollbar{
+    width:0!important;
+    height:0!important;
+    display:none!important;
+  }
+}
