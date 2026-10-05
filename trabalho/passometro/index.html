@@ -1038,6 +1038,15 @@
             </select>
           </div>
         </div>
+        <div class="pm-field">
+          <label for="deck-specialty">Modelo do passômetro</label>
+          <select id="deck-specialty" name="specialty">
+            <option value="general">Clínico geral</option>
+            <option value="go">Ginecologia e Obstetrícia</option>
+          </select>
+        </div>
+        <div class="pm-grid-2">
+        </div>
       </div>
       <div class="pm-dialog-actions">
         <button class="pm-secondary" type="button" data-close-dialog="pm-deck-dialog">Cancelar</button>
@@ -1096,6 +1105,63 @@
           <label>Antecedentes</label>
           <textarea name="history" placeholder="Comorbidades e antecedentes relevantes"></textarea>
         </div>
+
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Dados obstétricos</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Idade gestacional</label><input name="gestationalAge" placeholder="Ex.: 38s4d"></div>
+              <div class="pm-field"><label>GxPxAx</label><input name="gpxa" placeholder="Ex.: G3P2A0"></div>
+            </div>
+            <div class="pm-field"><label>Intercorrências em gestações anteriores</label><textarea name="previousPregnancyComplications" placeholder="Ex.: pré-eclâmpsia, prematuridade, hemorragia..."></textarea></div>
+            <div class="pm-field"><label>Comorbidades</label><textarea name="comorbidities" placeholder="Comorbidades maternas relevantes"></textarea></div>
+            <div class="pm-field"><label>Sorologias</label><textarea name="serologies" placeholder="HIV, sífilis, HBsAg, hepatite C e outras relevantes"></textarea></div>
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Tipagem sanguínea da mãe</label><input name="maternalBloodType" placeholder="Ex.: O positivo"></div>
+              <div class="pm-field"><label>Streptococcus do grupo B</label><select name="gbs"><option value="">Não informado</option><option>Negativo</option><option>Positivo</option><option>Desconhecido</option><option>Não se aplica</option></select></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Parto</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Tipo de parto</label><select name="deliveryType"><option value="">Não realizado / não informado</option><option value="vaginal">Parto vaginal</option><option value="cesarea">Cesárea</option></select></div>
+              <div class="pm-field"><label>Motivo / indicação</label><input name="deliveryReason" placeholder="Indicação ou motivo do parto"></div>
+            </div>
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Data do parto</label><input name="deliveryDate" type="date"></div>
+              <div class="pm-field"><label>Hora do parto</label><input name="deliveryTime" type="time"></div>
+            </div>
+            <div class="pm-field"><label>Intercorrências maternas no parto/puerpério</label><textarea name="maternalDeliveryComplications" placeholder="Se houver"></textarea></div>
+            <div class="pm-field"><label>Previsão de alta</label><input name="estimatedDischarge" type="date"><small class="pm-discharge-note">Calculada automaticamente: 24 h após parto vaginal ou 48 h após cesárea; se o horário calculado ultrapassar 15h, passa para o dia seguinte.</small></div>
+          </div>
+        </section>
+
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Recém-nascido</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-grid-3">
+              <div class="pm-field"><label>Sexo</label><select name="newbornSex"><option value="">Não informado</option><option>Feminino</option><option>Masculino</option></select></div>
+              <div class="pm-field"><label>Peso ao nascer</label><input name="newbornWeight" placeholder="Ex.: 3250 g"></div>
+              <div class="pm-field"><label>Tipagem sanguínea do bebê</label><input name="newbornBloodType" placeholder="Ex.: A positivo"></div>
+            </div>
+            <div class="pm-field"><label>Intercorrências com o RN</label><textarea name="newbornComplications" placeholder="Deixe em branco se não houve"></textarea></div>
+          </div>
+        </section>
+
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Passagem obstétrica</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-field"><label>Estado atual da paciente</label><textarea name="currentStatus" placeholder="Resumo clínico atual"></textarea></div>
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Exames pendentes</label><textarea name="pendingExams" placeholder="Exames aguardando resultado ou coleta"></textarea></div>
+              <div class="pm-field"><label>Avaliações pendentes</label><textarea name="pendingEvaluations" placeholder="Avaliações/pareceres pendentes"></textarea></div>
+            </div>
+            <div class="pm-field"><label>Alerta / atenção</label><textarea name="obstetricAlert" placeholder="Ex.: pré-eclâmpsia, hemorragia, sepse, prematuridade, placenta prévia/acretismo..."></textarea></div>
+          </div>
+        </section>
 
         <div class="pm-section" data-switch-section="allergies">
           <div class="pm-section-head">
@@ -1369,6 +1435,7 @@
       $("#pm-detail-title").textContent=`${d.hospital} · ${fmtDate(d.date)}`;
       $("#pm-detail-subtitle").textContent=[d.sector,d.shift].filter(Boolean).join(" · ") || "Passômetro";
       renderPatients();
+      syncGoFields();
     }
     function renderPatients(){
       const d=activeDeck(); const host=$("#pm-patients"); if(!d) return;
@@ -1387,6 +1454,7 @@
         if(p.switches?.oxygen==="yes") tags.push("O₂ / suporte");
         if(p.switches?.isolation==="yes") tags.push("Isolamento");
         if(p.switches?.pending==="yes") tags.push("Pendências");
+        if(isGoDeck(d) && p.estimatedDischarge) tags.push("Alta "+fmtDate(p.estimatedDischarge));
         return `<article class="pm-patient" data-patient-id="${p.id}" data-priority="${p.priority||"none"}">
           <div class="pm-patient-top"><h3>Leito ${esc(p.bed)} · ${esc(p.name)}</h3><small>${esc(p.age||"")}</small></div>
           <div class="pm-patient-summary">${esc(p.diagnosis || p.reason || "Sem resumo clínico")}</div>
@@ -1397,6 +1465,37 @@
 
 
     function displayValue(v,fallback="—"){const s=String(v??"").trim();return s||fallback}
+    function isGoDeck(deck=activeDeck()){return !!deck && (deck.specialty==="go" || /gine|obst/i.test(deck.sector||""))}
+    function syncGoFields(){
+      const go=isGoDeck();
+      $("[data-go-field]").forEach(el=>el.hidden=!go);
+    }
+    function addDaysLocal(dateStr,days){
+      if(!dateStr) return "";
+      const parts=dateStr.split("-").map(Number);
+      if(parts.length!==3||parts.some(Number.isNaN)) return "";
+      const d=new Date(parts[0],parts[1]-1,parts[2],12,0,0,0);
+      d.setDate(d.getDate()+days);
+      const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,"0"),day=String(d.getDate()).padStart(2,"0");
+      return y+"-"+m+"-"+day;
+    }
+    function calculateEstimatedDischarge(form=$("#pm-patient-form")){
+      if(!form) return "";
+      const type=form.elements.deliveryType?.value||"";
+      const date=form.elements.deliveryDate?.value||"";
+      const time=form.elements.deliveryTime?.value||"";
+      if(!type||!date||!time) return "";
+      let days=type==="cesarea"?2:type==="vaginal"?1:0;
+      if(!days) return "";
+      const [hh,mm]=time.split(":").map(Number);
+      if(Number.isFinite(hh) && Number.isFinite(mm) && (hh>15 || (hh===15 && mm>0))) days+=1;
+      return addDaysLocal(date,days);
+    }
+    function syncEstimatedDischarge(force=false){
+      const form=$("#pm-patient-form"); if(!form?.elements.estimatedDischarge) return;
+      const next=calculateEstimatedDischarge(form);
+      if(next && (force || !form.elements.estimatedDischarge.dataset.manual)) form.elements.estimatedDischarge.value=next;
+    }
     function patientPriorityLabel(p){return p.priority==="red"?"Crítico":p.priority==="yellow"?"Atenção":p.priority==="green"?"Estável":"Sem prioridade";}
     function patientMedicationList(items=[]){
       if(!items.length) return '<span>—</span>';
@@ -1423,6 +1522,20 @@
             '<div class="pm-export-row"><b>Diagnóstico:</b> '+esc(displayValue(p.diagnosis))+'</div>'+
             '<div class="pm-export-row"><b>Motivo da internação:</b> '+esc(displayValue(p.reason))+'</div>'+
             '<div class="pm-export-row"><b>Antecedentes:</b> '+esc(displayValue(p.history))+'</div>'+
+            (isGoDeck(deck)?'<div class="pm-export-row"><b>GxPxAx:</b> '+esc(displayValue(p.gpxa))+'</div>'+
+            '<div class="pm-export-row"><b>Intercorrências em gestações anteriores:</b> '+esc(displayValue(p.previousPregnancyComplications))+'</div>'+
+            '<div class="pm-export-row"><b>Comorbidades:</b> '+esc(displayValue(p.comorbidities))+'</div>'+
+            '<div class="pm-export-row"><b>Sorologias:</b> '+esc(displayValue(p.serologies))+'</div>'+
+            '<div class="pm-export-row"><b>Tipagem materna:</b> '+esc(displayValue(p.maternalBloodType))+'</div>'+
+            '<div class="pm-export-row"><b>Parto:</b> '+esc(displayValue(p.deliveryType==="cesarea"?"Cesárea":p.deliveryType==="vaginal"?"Parto vaginal":""))+' · '+esc(displayValue(p.deliveryReason))+'</div>'+
+            '<div class="pm-export-row"><b>Data/hora do parto:</b> '+esc([p.deliveryDate?fmtDate(p.deliveryDate):"",p.deliveryTime].filter(Boolean).join(" · ")||"—")+'</div>'+
+            '<div class="pm-export-row"><b>Previsão de alta:</b> '+esc(p.estimatedDischarge?fmtDate(p.estimatedDischarge):"—")+'</div>'+
+            '<div class="pm-export-row"><b>RN:</b> '+esc([p.newbornSex,p.newbornWeight,p.newbornBloodType].filter(Boolean).join(" · ")||"—")+'</div>'+
+            '<div class="pm-export-row"><b>Intercorrências RN:</b> '+esc(displayValue(p.newbornComplications,"Não"))+'</div>'+
+            '<div class="pm-export-row"><b>Estado atual:</b> '+esc(displayValue(p.currentStatus))+'</div>'+
+            '<div class="pm-export-row"><b>Exames pendentes:</b> '+esc(displayValue(p.pendingExams))+'</div>'+
+            '<div class="pm-export-row"><b>Avaliações pendentes:</b> '+esc(displayValue(p.pendingEvaluations))+'</div>'+
+            '<div class="pm-export-row"><b>Alerta/atenção:</b> '+esc(displayValue(p.obstetricAlert))+'</div>':"")+
             '<div class="pm-export-row"><b>Dieta:</b> '+esc(displayValue(diet))+'</div>'+
             '<div class="pm-export-row"><b>Alergias:</b> '+esc(p.switches?.allergies==="yes"?displayValue(p.allergiesDetail):"Não")+'</div>'+
             '<div class="pm-export-row"><b>Isolamento:</b> '+esc(p.switches?.isolation==="yes"?displayValue(isolation):"Não")+'</div>'+
@@ -1462,7 +1575,7 @@
     $("#pm-deck-form").addEventListener("submit",e=>{
       e.preventDefault();
       const fd=new FormData(e.currentTarget);
-      const values={hospital:String(fd.get("hospital")||"").trim(),date:String(fd.get("date")||""),sector:String(fd.get("sector")||"").trim(),shift:String(fd.get("shift")||"")};
+      const values={hospital:String(fd.get("hospital")||"").trim(),date:String(fd.get("date")||""),sector:String(fd.get("sector")||"").trim(),shift:String(fd.get("shift")||""),specialty:String(fd.get("specialty")||"general")};
       if(!values.hospital||!values.date) return;
       let d;
       if(state.editingDeckId){
@@ -1498,6 +1611,7 @@
         form.elements.date.value=d.date||"";
         form.elements.sector.value=d.sector||"";
         form.elements.shift.value=d.shift||"";
+        if(form.elements.specialty) form.elements.specialty.value=d.specialty||(/gine|obst/i.test(d.sector||"")?"go":"general");
         $("#pm-deck-dialog-title").textContent="Editar passômetro";
         $("#pm-deck-dialog").showModal();
         return;
@@ -1554,6 +1668,7 @@
       $$("[data-priority]").forEach(b=>b.classList.remove("active"));
       $("#pm-medications").innerHTML=""; $("#pm-antibiotics").innerHTML="";
       syncAllOtherFields(form);
+      syncGoFields();
       $("#pm-patient-dialog-title").textContent="Novo paciente";
     }
     function setSwitch(name,val){
@@ -1591,6 +1706,12 @@
         const other=row?.querySelector('[data-k="routeOther"]');
         if(other){const show=route.value==="Outra";other.hidden=!show;if(!show)other.value="";}
       }
+      if(e.target.matches('[name="deliveryType"],[name="deliveryDate"],[name="deliveryTime"]')){
+        const out=e.currentTarget.elements.estimatedDischarge;
+        if(out) delete out.dataset.manual;
+        syncEstimatedDischarge(true);
+      }
+      if(e.target.matches('[name="estimatedDischarge"]')) e.target.dataset.manual="1";
     });
 
     function addMedicationRow(v={}){
@@ -1629,7 +1750,7 @@
     function fillPatient(p){
       resetPatientForm(); state.editingPatientId=p.id; $("#pm-patient-dialog-title").textContent="Editar paciente";
       const form=$("#pm-patient-form");
-      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gpxa","previousPregnancyComplications","comorbidities","serologies","maternalBloodType","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
       syncAllOtherFields(form);
       Object.entries(p.switches||{}).forEach(([k,v])=>setSwitch(k,v));
       state.priority=p.priority||"none"; $$("[data-priority]").forEach(b=>b.classList.toggle("active",b.dataset.priority===state.priority));
@@ -1648,8 +1769,9 @@
       const form=e.currentTarget; if(!form.reportValidity()) return;
       const fd=new FormData(form);
       const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics")};
-      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
+      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gpxa","previousPregnancyComplications","comorbidities","serologies","maternalBloodType","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
       const d=activeDeck(); if(!d) return;
+      if(isGoDeck(d) && !p.estimatedDischarge) p.estimatedDischarge=calculateEstimatedDischarge(form);
       const idx=(d.patients||[]).findIndex(x=>x.id===p.id);
       if(idx>=0) d.patients[idx]=p; else d.patients.push(p);
       save(); closeDialog("pm-patient-dialog"); renderPatients();
