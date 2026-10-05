@@ -15,13 +15,27 @@
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/apostilas/diabetes-mellitus-gestacional/">
   <style>
-    .book-page{display:block;padding-bottom:36px}
+    .book-page{display:grid;grid-template-columns:196px minmax(0,1fr);gap:14px;align-items:start;padding-bottom:36px}
     .book-aside{position:sticky;top:8px;align-self:start;display:grid;gap:12px}
     .book-cover{position:relative;aspect-ratio:240/339;border-radius:18px;overflow:hidden;background:#184888;border:1px solid var(--border);box-shadow:0 12px 30px rgba(15,35,66,.10)}
     .book-cover img{width:100%;height:100%;object-fit:cover;display:block}.book-cover-copy{position:absolute;left:10%;right:10%;top:41.5%;display:grid;gap:5px;text-align:center;color:#fff;background:transparent!important;border:0!important;box-shadow:none!important;pointer-events:none}.book-cover-copy span,.book-cover-copy strong{display:block;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:0 1px 2px rgba(0,0,0,.16)}.book-cover-copy span{font-size:10px;font-weight:500;letter-spacing:.04em}.book-cover-copy strong{font-size:9px;font-weight:500;line-height:1.3;letter-spacing:.02em}
     
     .book-back{display:flex;align-items:center;justify-content:center;min-height:38px;border-radius:12px;border:1px solid var(--border);background:var(--surface);font-size:11px;color:var(--accent)}
     .book-main{display:grid;gap:14px;min-width:0}
+
+    .book-outline{position:sticky;top:14px;align-self:start;max-height:calc(100dvh - 32px);padding:14px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04);overflow:auto;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 60%,transparent) transparent}
+    .book-outline-head{padding:2px 3px 10px;border-bottom:1px solid var(--border)}
+    .book-outline-head small{display:block;color:var(--muted);font-size:8px;letter-spacing:.06em;text-transform:uppercase}
+    .book-outline-head strong{display:block;margin-top:3px;font-size:12.5px;line-height:1.2;color:var(--text)}
+    .book-outline-nav{display:grid;gap:3px;margin-top:10px}
+    .book-outline-link{display:flex;align-items:center;min-height:30px;padding:6px 8px;border:0;border-left:3px solid transparent;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:9.6px;line-height:1.2;text-align:left;text-decoration:none;cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease}
+    .book-outline-link:hover{background:var(--accent-soft);color:var(--accent)}
+    .book-outline-link.is-active{background:color-mix(in srgb,var(--accent) 9%,var(--surface));border-left-color:var(--accent);color:var(--accent);font-weight:600}
+    .book-main{scroll-margin-top:12px}
+    .book-section,.book-hero{scroll-margin-top:14px}
+    @media(max-width:1100px){.book-page{grid-template-columns:168px minmax(0,1fr)}.book-outline{padding:11px}.book-outline-link{font-size:9px;padding:5px 7px}}
+    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none;overflow:visible}.book-outline-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}.book-outline-link{flex:0 0 auto;white-space:nowrap;border-left:0;border-bottom:2px solid transparent}.book-outline-link.is-active{border-left:0;border-bottom-color:var(--accent)}}
+
     .book-hero{padding:24px 26px;border-radius:22px;background:linear-gradient(135deg,#184888,#2d6ab5);color:#fff;box-shadow:0 12px 30px rgba(24,72,136,.16)}
     .book-badge{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border-radius:999px;background:rgba(255,255,255,.14);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
     .book-hero h1{margin:12px 0 6px;font-size:30px;line-height:1.06;font-weight:600;color:#fff}.book-hero p{margin:0;color:rgba(255,255,255,.84);font-size:12px;line-height:1.5}.apostila-identity{position:relative;overflow:hidden}.apostila-identity:after{content:"";position:absolute;right:-70px;bottom:-100px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);pointer-events:none}.apostila-identity .book-meta-row{position:relative;z-index:1}
@@ -95,6 +109,29 @@
     <main class="main"><div class="page">
       <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila LURIA</span><h1>Diabetes Mellitus Gestacional</h1></div></header>
       <section class="book-page">
+        <aside class="book-outline" aria-label="Estrutura da apostila">
+          <div class="book-outline-head">
+            <small>Apostila atual</small>
+            <strong>Estrutura do conteúdo</strong>
+          </div>
+          <nav class="book-outline-nav">
+            <a class="book-outline-link" href="#resumo-prova">Resumo de prova</a>
+            <a class="book-outline-link" href="#mapa-mental">Mapa mental</a>
+            <a class="book-outline-link" href="#definicao">Definição</a>
+            <a class="book-outline-link" href="#fisiopatologia">Fisiopatologia</a>
+            <a class="book-outline-link" href="#quadro-clinico">Quadro clínico</a>
+            <a class="book-outline-link" href="#fatores-risco">Fatores de risco</a>
+            <a class="book-outline-link" href="#diagnostico">Diagnóstico</a>
+            <a class="book-outline-link" href="#monitorizacao">Monitorização</a>
+            <a class="book-outline-link" href="#tratamento">Tratamento</a>
+            <a class="book-outline-link" href="#avaliacao-fetal">Avaliação fetal</a>
+            <a class="book-outline-link" href="#complicacoes">Complicações</a>
+            <a class="book-outline-link" href="#hipoglicemia">Hipoglicemia</a>
+            <a class="book-outline-link" href="#parto-puerperio">Parto e puerpério</a>
+            <a class="book-outline-link" href="#referencias">Referências</a>
+          </nav>
+        </aside>
+
         <article class="book-main">
           <section class="book-hero apostila-identity" aria-label="Identificação da apostila">
             <span class="book-badge">Apostila LURIA</span>
@@ -107,7 +144,7 @@
             </div>
           </section>
 
-          <section class="book-section book-exam-summary">
+          <section id="resumo-prova" class="book-section book-exam-summary">
             <h2>Resumo de prova</h2>
             <ul class="clinical-list">
               <li><strong>Jejum na 1ª consulta:</strong> 92–125 mg/dL = DMG; ≥126 mg/dL = diabetes manifesto.</li>
@@ -121,7 +158,7 @@
             </ul>
           </section>
 
-          <section class="book-section mindmap-section">
+          <section id="mapa-mental" class="book-section mindmap-section">
             <div class="mindmap-head">
               <h2>Mapa mental</h2>
               <p>Entenda como as partes do tema se conectam.</p>
@@ -184,7 +221,7 @@
           </section>
 
           <section class="book-section">
-            <h2>1. Definição</h2>
+            <h2 id="definicao">1. Definição</h2>
             <p><strong>Diabetes mellitus gestacional (DMG)</strong> é a hiperglicemia reconhecida pela primeira vez durante a gestação em uma mulher que não preenche critérios de diabetes mellitus fora da gravidez. Em termos práticos, a gestação funciona como um “teste metabólico”: à medida que a placenta aumenta a resistência à insulina, o organismo materno precisa produzir mais insulina para manter a glicose normal. Quando essa compensação é insuficiente, surge o DMG.</p>
 
             <h3>1.1 DMG não é sinônimo de diabetes pré-gestacional</h3>
@@ -211,7 +248,7 @@
           
 
           <section class="book-section">
-            <h2>2. Fisiopatologia</h2>
+            <h2 id="fisiopatologia">2. Fisiopatologia</h2>
             <p>Para entender o DMG, primeiro é preciso entender o que acontece com o metabolismo de uma gestação normal. A gravidez exige que a mãe armazene energia no início e disponibilize energia ao feto de forma crescente na segunda metade.</p>
 
             <h3>2.1 Primeira metade da gestação: fase predominantemente anabólica</h3>
@@ -254,7 +291,7 @@
           </section>
 
           <section class="book-section">
-            <h2>3. Quadro clínico</h2>
+            <h2 id="quadro-clinico">3. Quadro clínico</h2>
             <p>O DMG é, na maioria das vezes, <strong>assintomático</strong>. Por isso, o diagnóstico não pode depender de sintomas ou de fatores de risco: o rastreamento é universal.</p>
 
             <h3>3.1 Quando há manifestações clínicas</h3>
@@ -295,7 +332,7 @@
           </section>
 
           <section class="book-section">
-            <h2>4. Fatores de risco</h2>
+            <h2 id="fatores-risco">4. Fatores de risco</h2>
             <p>Os fatores de risco ajudam a entender <strong>quem tem maior probabilidade</strong> de desenvolver DMG, mas não servem para selecionar quem será ou não rastreada, porque a estratégia é universal.</p>
 
             <div class="book-grid-2">
@@ -311,7 +348,7 @@
           </section>
 
           <section class="book-section">
-            <h2>5. Rastreamento e diagnóstico</h2>
+            <h2 id="diagnostico">5. Rastreamento e diagnóstico</h2>
             <p>O rastreamento do DMG é universal porque a maioria das pacientes não apresenta sintomas. A estratégia diagnóstica tem dois momentos: <strong>primeira consulta pré-natal</strong> e <strong>24–28 semanas</strong>.</p>
 
             <h3>5.1 Primeira consulta pré-natal</h3>
@@ -372,7 +409,7 @@
           </section>
 
           <section class="book-section">
-            <h2>6. Monitorização glicêmica</h2>
+            <h2 id="monitorizacao">6. Monitorização glicêmica</h2>
             <p>A monitorização é o instrumento que transforma o diagnóstico em uma conduta individualizada. Mais importante que olhar um valor isolado é reconhecer <strong>o padrão</strong>: jejum, pós-prandial de determinada refeição ou alteração difusa ao longo do dia.</p>
 
             <h3>6.1 Perfil sem tratamento farmacológico</h3>
@@ -414,7 +451,7 @@
           </section>
 
           <section class="book-section">
-            <h2>7. Tratamento</h2>
+            <h2 id="tratamento">7. Tratamento</h2>
             <p>O tratamento do DMG deve ser entendido como um processo progressivo, não como uma escolha binária entre “dieta” e “insulina”. O plano começa no momento do diagnóstico e combina educação, alimentação, atividade física, automonitorização e, quando necessário, farmacoterapia.</p>
 
             <h3>7.1 Objetivos do tratamento</h3>
@@ -542,7 +579,7 @@
           </section>
 
           <section class="book-section">
-            <h2>8. Avaliação fetal</h2>
+            <h2 id="avaliacao-fetal">8. Avaliação fetal</h2>
             <p>A avaliação fetal deve responder a três perguntas: <strong>o feto está crescendo demais? o líquido amniótico está alterado? há necessidade de vigilância de vitalidade mais intensa?</strong></p>
 
             <h3>8.1 Biometria</h3>
@@ -570,7 +607,7 @@
           </section>
 
           <section class="book-section">
-            <h2>9. Complicações</h2>
+            <h2 id="complicacoes">9. Complicações</h2>
             <p>O modo mais útil de memorizar as complicações é separar <strong>maternas/obstétricas</strong> de <strong>fetais/neonatais</strong> e relacionar cada grupo ao mecanismo fisiopatológico.</p>
 
             <h3>9.1 Complicações fetais e neonatais</h3>
@@ -605,7 +642,7 @@
           </section>
 
           <section class="book-section">
-            <h2>10. Hipoglicemia na gestação</h2>
+            <h2 id="hipoglicemia">10. Hipoglicemia na gestação</h2>
             <p>Hipoglicemia é uma das principais complicações do tratamento, especialmente em pacientes em uso de insulina. Deve ser reconhecida rapidamente e, depois de corrigida, a causa precisa ser identificada para evitar recorrência.</p>
 
             <h3>10.1 Definição</h3>
@@ -671,7 +708,7 @@
           </section>
 
           <section class="book-section">
-            <h2>11. Parto e puerpério</h2>
+            <h2 id="parto-puerperio">11. Parto e puerpério</h2>
             <p>O planejamento obstétrico deve integrar controle glicêmico, necessidade de medicação, crescimento fetal, vitalidade, líquido amniótico, doença hipertensiva e história obstétrica. <strong>O diagnóstico de DMG, sozinho, não define cesariana.</strong></p>
 
             <h3>11.1 Planejamento do parto</h3>
@@ -748,7 +785,7 @@
           </section>
 
           <section class="book-section">
-            <h2>Referências</h2>
+            <h2 id="referencias">Referências</h2>
             <ol class="reference-list">
               <li>Sociedade Brasileira de Diabetes. <strong>Rastreamento e diagnóstico da hiperglicemia na gestação.</strong> Diretriz SBD, edição 2026.</li>
               <li>Sociedade Brasileira de Diabetes. <strong>Planejamento, metas e monitorização do diabetes durante a gestação.</strong> Diretriz SBD, edição 2026.</li>
@@ -765,5 +802,28 @@
   <script src="/assets/js/supabase.js?v=auth4"></script>
   <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
+  <script>
+    (function(){
+      const links=[...document.querySelectorAll('.book-outline-link')];
+      const targets=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+      links.forEach(link=>{
+        link.addEventListener('click',event=>{
+          const target=document.querySelector(link.getAttribute('href'));
+          if(!target)return;
+          event.preventDefault();
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+          history.replaceState(null,'',link.getAttribute('href'));
+        });
+      });
+      if('IntersectionObserver' in window){
+        const observer=new IntersectionObserver(entries=>{
+          const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];
+          if(!visible)return;
+          links.forEach(link=>link.classList.toggle('is-active',link.getAttribute('href')==='#'+visible.target.id));
+        },{root:null,rootMargin:'-18% 0px -68% 0px',threshold:[0,.05,.2]});
+        targets.forEach(target=>observer.observe(target));
+      }
+    })();
+  </script>
 </body>
 </html>
