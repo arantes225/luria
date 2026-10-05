@@ -1487,7 +1487,7 @@
     function isGoDeck(deck=activeDeck()){return !!deck && (deck.specialty==="go" || /gine|obst/i.test(deck.sector||""))}
     function syncGoFields(){
       const go=isGoDeck();
-      $("[data-go-field]").forEach(el=>el.hidden=!go);
+      document.querySelectorAll("[data-go-field]").forEach(el=>{ el.hidden=!go; });
     }
     function addDaysLocal(dateStr,days){
       if(!dateStr) return "";
