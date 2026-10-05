@@ -2829,3 +2829,101 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     display:none!important;
   }
 }
+
+
+/* LURIA v84 — replica no site normal a lógica que resolveu o Dashboard 1.
+   A .page deixa de ser uma "janela" recortada; o scroll sobe um nível para .main.
+   Assim não existe faixa fixa superior/inferior atravessando os callouts. */
+@media (min-width:981px){
+  /* Restaura o shell normal: a alteração anterior na base não era a causa. */
+  body.luria-global-shell-mounted > .app-shell,
+  body.luria-global-shell-mounted .app-shell{
+    background:var(--luria-master-shell,#184888)!important;
+    overflow:hidden!important;
+  }
+
+  /* Mesmo princípio do Dashboard 1: a camada que contém os cards não os recorta. */
+  body.luria-global-shell-mounted .main{
+    position:relative!important;
+    isolation:isolate!important;
+    height:100%!important;
+    min-height:0!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain!important;
+    border-top:0!important;
+    border-bottom:0!important;
+    box-shadow:none!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  /* A página vira apenas conteúdo em fluxo normal, sem viewport próprio. */
+  body.luria-global-shell-mounted .main > .page{
+    display:block!important;
+    width:calc(100% - 12px)!important;
+    max-width:calc(100% - 12px)!important;
+    height:auto!important;
+    max-height:none!important;
+    min-height:100%!important;
+    margin:0 12px 0 0!important;
+    padding-top:16px!important;
+    padding-right:2px!important;
+    padding-bottom:18px!important;
+    overflow:visible!important;
+    border:0!important;
+    border-radius:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    clip-path:none!important;
+    -webkit-mask-image:none!important;
+    mask-image:none!important;
+    position:relative!important;
+    z-index:20!important;
+    isolation:isolate!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Igual ao Dashboard 1: decoração atrás, conteúdo sempre à frente. */
+  body.luria-global-shell-mounted .main::before,
+  body.luria-global-shell-mounted .main::after{
+    z-index:0!important;
+    pointer-events:none!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page > *{
+    position:relative;
+    z-index:1;
+  }
+
+  body.luria-global-shell-mounted .main > .page::before,
+  body.luria-global-shell-mounted .main > .page::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  body.luria-global-shell-mounted .main::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+  }
+  body.luria-global-shell-mounted .main::-webkit-scrollbar-track,
+  body.luria-global-shell-mounted .main::-webkit-scrollbar-track-piece,
+  body.luria-global-shell-mounted .main::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+  body.luria-global-shell-mounted .main::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+  }
+  body.luria-global-shell-mounted .main::-webkit-scrollbar-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+  }
+}
