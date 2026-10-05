@@ -9076,19 +9076,18 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 }
 
 
-/* DASHBOARD 1 — LOWER CARDS BOTTOM BORDER v63 — 2026-10-05 */
+/* DASHBOARD 1 — LOWER CARDS BOTTOM BORDER v65 — 2026-10-05 */
 @media (min-width:981px){
-  /* Reduz a faixa inferior para a borda de baixo dos dois cards
-     permanecer totalmente visível dentro do painel. */
+  /* Reduz em mais 20px a altura vertical de Progresso por área e Pulo do Gato. */
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
-    grid-template-rows:minmax(0,1fr) 160px!important;
+    grid-template-rows:minmax(0,1fr) 140px!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
-    height:160px!important;
-    min-height:160px!important;
-    max-height:160px!important;
+    height:140px!important;
+    min-height:140px!important;
+    max-height:140px!important;
     margin-top:-14px!important;
     margin-bottom:6px!important;
     align-self:start!important;
@@ -9115,9 +9114,9 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
-    height:110px!important;
-    min-height:110px!important;
-    max-height:110px!important;
+    height:90px!important;
+    min-height:90px!important;
+    max-height:90px!important;
   }
 }
 
