@@ -8442,3 +8442,42 @@ iniciarApp();
   };
   window.LuriaGuidedStudy=api;
 })();
+
+
+/* LURIA GLOBAL DESKTOP SHELL CHROME v1 — 2026-10-04 */
+(() => {
+  if (window.__luriaGlobalDesktopShellChrome) return;
+  window.__luriaGlobalDesktopShellChrome = true;
+
+  function mountGlobalChrome(){
+    if (window.innerWidth < 981) return;
+    const shell=document.querySelector(".app-shell");
+    const topbar=document.querySelector(".topbar");
+    const sidebar=document.querySelector("#sidebar.sidebar");
+    if(!shell||!topbar||!sidebar)return;
+
+    if(topbar.parentElement!==shell){
+      shell.appendChild(topbar);
+    }
+    topbar.classList.add("dashboard-shell-topbar","luria-global-shell-topbar");
+    sidebar.classList.add("dashboard-shell-sidebar","luria-global-shell-sidebar");
+    document.body.classList.add("luria-global-shell-mounted");
+  }
+
+  const boot=()=>{
+    mountGlobalChrome();
+    setTimeout(mountGlobalChrome,120);
+    setTimeout(mountGlobalChrome,400);
+    setTimeout(mountGlobalChrome,900);
+    setTimeout(mountGlobalChrome,1600);
+  };
+
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded",boot,{once:true});
+  }else{
+    boot();
+  }
+
+  window.addEventListener("resize",mountGlobalChrome,{passive:true});
+  new MutationObserver(mountGlobalChrome).observe(document.documentElement,{childList:true,subtree:true});
+})();
