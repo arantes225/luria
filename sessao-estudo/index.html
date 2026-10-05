@@ -204,13 +204,20 @@
         const saved=JSON.parse(sessionStorage.getItem("luria:guided-study-progress")||"null");
         if(saved?.createdAt===plan?.createdAt)completedThrough=Number(saved.completedThrough??-1);
         const active=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null");
-        if(active?.plan?.createdAt===plan?.createdAt&&Number.isInteger(active.activeIndex)){
+        const completion=JSON.parse(sessionStorage.getItem("luria:guided-study-step-complete")||"null");
+        if(
+          active?.plan?.createdAt===plan?.createdAt
+          && Number.isInteger(active.activeIndex)
+          && completion?.createdAt===plan?.createdAt
+          && Number(completion.activeIndex)===active.activeIndex
+        ){
           completedThrough=Math.max(completedThrough,active.activeIndex);
           sessionStorage.setItem("luria:guided-study-progress",JSON.stringify({createdAt:plan.createdAt,completedThrough}));
           sessionStorage.removeItem("luria:guided-study-active");
+          sessionStorage.removeItem("luria:guided-study-step-complete");
           if(banner){
             const reward=active.activeIndex===2?30:20;
-            banner.innerHTML='<div><strong>Etapa '+(active.activeIndex+1)+' vencida · +'+reward+' XP</strong><small>Boa. Seu progresso avançou na trilha.</small></div><span>✓</span>';
+            banner.innerHTML='<div><strong>Etapa '+(active.activeIndex+1)+' vencida · +'+reward+' XP</strong><small>Atividade concluída por inteiro. Seu progresso avançou na trilha.</small></div><span>✓</span>';
             banner.classList.add("is-visible");
           }
         }
@@ -250,10 +257,13 @@
         const done=index<=completedThrough,current=index===currentIndex,locked=index>currentIndex;
         const cls=done?" is-done":current?" is-current":locked?" is-locked":"";
         const reward=index===2?30:20;
+        let activeStep=null;
+        try{activeStep=JSON.parse(sessionStorage.getItem("luria:guided-study-active")||"null")}catch{}
+        const inProgress=current&&activeStep?.plan?.createdAt===plan?.createdAt&&Number(activeStep.activeIndex)===index;
         const footer=done
           ? '<span class="study-session-status">Concluída</span>'
           : current
-            ? '<button class="study-session-start" type="button" data-session-index="'+index+'">Começar <span>→</span></button>'
+            ? '<button class="study-session-start" type="button" data-session-index="'+index+'">'+(inProgress?"Continuar":"Começar")+' <span>→</span></button>'
             : '<span class="study-session-status">Bloqueada</span>';
         return '<article class="study-session-card'+cls+'"><div class="study-session-card-top"><span class="study-session-card-icon">'+iconFor(step.title)+'</span><span class="study-session-step-label">Etapa '+(index+1)+'</span></div><h3>'+esc(step.title||"Atividade")+'</h3><p>'+esc(step.detail||"Atividade planejada")+'</p><div class="study-session-card-footer"><div class="study-session-card-meta"><span>'+(Number(step.min)||0)+' min</span><span class="study-session-xp-chip">+'+reward+' XP</span></div>'+footer+'</div></article>';
       }).join("");
