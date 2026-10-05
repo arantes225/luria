@@ -8232,3 +8232,54 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     align-items:center!important;
   }
 }
+
+
+/* DASHBOARD 1 — FIX LOWER CARDS CLIPPING v52 — 2026-10-04
+   A linha inferior estava 190px com overflow:hidden. Cinco linhas de Progresso
+   + título + paddings ultrapassavam essa altura e eram cortadas pelo próprio card.
+   Também reservamos respiro real antes da borda inferior do painel principal. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(340px,auto) 214px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:214px!important;
+    min-height:214px!important;
+    max-height:214px!important;
+    align-self:stretch!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding:14px 16px 15px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin-bottom:9px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    min-height:22px!important;
+    margin:5px 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    padding:14px 16px 15px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    height:151px!important;
+    min-height:151px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+    padding-bottom:24px!important;
+    scroll-padding-bottom:24px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    padding-bottom:24px!important;
+  }
+}
