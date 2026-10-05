@@ -8789,3 +8789,121 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 }
+
+
+/* DASHBOARD 1 — PROGRESS CARD LEGIBILITY v58 — 2026-10-05 */
+@media (min-width:981px){
+  /* Prioridade: o card inferior precisa permanecer legível e inteiro.
+     Em telas mais baixas, reduzimos a faixa superior antes de comprimir Progresso/Pulo do Gato. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    grid-template-rows:clamp(92px,15vh,118px) minmax(0,1fr)!important;
+    row-gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+    height:auto!important;
+    min-height:92px!important;
+    max-height:118px!important;
+    padding:16px 22px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(240px,1fr) 176px!important;
+    row-gap:12px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:176px!important;
+    min-height:176px!important;
+    max-height:176px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding:10px 14px 11px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin:0 0 5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading h3{
+    font-size:15px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    grid-template-columns:minmax(132px,170px) minmax(90px,1fr) 34px!important;
+    gap:10px!important;
+    min-height:19px!important;
+    margin:2px 0!important;
+    line-height:1.05!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row > span{
+    font-size:11px!important;
+    line-height:1.05!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row > strong{
+    font-size:10px!important;
+    line-height:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-track{
+    height:7px!important;
+    min-height:7px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    padding:10px 14px 11px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    height:124px!important;
+    min-height:124px!important;
+    max-height:124px!important;
+  }
+}
+
+@media (min-width:981px) and (max-height:720px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    grid-template-rows:84px minmax(0,1fr)!important;
+    row-gap:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+    min-height:84px!important;
+    max-height:84px!important;
+    padding:12px 20px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(220px,1fr) 168px!important;
+    row-gap:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:168px!important;
+    min-height:168px!important;
+    max-height:168px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding:9px 13px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    min-height:18px!important;
+    margin:1px 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+  }
+}
