@@ -12,71 +12,55 @@
   <meta name="theme-color" content="#0A2342">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-apostilas-library">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/apostilas/">
   <style>
-    .books-page{display:grid;gap:16px;padding-bottom:30px}
-    .books-head{display:flex;align-items:end;justify-content:space-between;gap:16px;padding:18px 20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
-    .books-head h1{margin:0;font-size:22px;font-weight:500}.books-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.books-back{color:var(--accent);font-size:12px;text-decoration:none}
-    .covers-grid,.library-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
-    .cover-card,.book-card{position:relative;min-width:0;border:1px solid var(--border);border-radius:18px;background:var(--surface);overflow:hidden;box-shadow:0 8px 22px rgba(15,35,66,.045)}
-    .cover-thumb,.book-thumb{position:relative;aspect-ratio:240/339;background:#184888;overflow:hidden}
-    .cover-thumb img,.book-thumb img{display:block;width:100%;height:100%;object-fit:cover}.cover-copy{position:absolute;left:9%;right:9%;top:41.5%;display:grid;gap:3px;text-align:center;color:#fff;pointer-events:none;background:transparent!important;border:0!important;box-shadow:none!important}.cover-copy span,.cover-copy strong{display:block;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:0 1px 2px rgba(0,0,0,.16)}.cover-copy span{font-size:7px;font-weight:500;letter-spacing:.04em}.cover-copy strong{font-size:6.5px;font-weight:500;line-height:1.25;letter-spacing:.02em}
-    
-    .cover-meta,.book-meta{padding:12px 13px 13px}.cover-meta strong,.book-meta strong{display:block;font-size:12px;font-weight:600;color:var(--text)}.cover-meta small,.book-meta small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
-    .books-note{padding:15px 17px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:11px;background:var(--surface-2)}
-    .section-title{display:flex;align-items:center;justify-content:space-between;gap:12px}.section-title h2{margin:0;font-size:15px;font-weight:600}.section-title small{color:var(--muted);font-size:10px}
-    .admin-create{display:none;padding:18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
-    .admin-create.is-visible{display:grid;gap:14px}
-    .admin-create-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-    .admin-create label{display:grid;gap:6px;color:var(--muted);font-size:10px}.admin-create input,.admin-create select,.admin-create textarea{width:100%;min-height:40px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);padding:8px 10px;font:inherit}.admin-create textarea{min-height:76px;resize:vertical}
-    .admin-create-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.admin-status{color:var(--muted);font-size:10px}
-    .json-contract{padding:12px 14px;border-radius:12px;background:var(--surface-2);color:var(--muted);font-size:10px;line-height:1.5}.json-contract code{color:var(--text)}
-    .empty-library{grid-column:1/-1;padding:22px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:11px;text-align:center}
-    @media(max-width:1100px){.covers-grid,.library-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.covers-grid,.library-grid,.admin-create-grid{grid-template-columns:1fr}.books-head{align-items:flex-start;flex-direction:column}}
-  
-    /* Biblioteca de apostilas — mesmo padrão visual dos decks de Flashcards */
-    .covers-grid,#covers-grid,.section-title:has(+ #covers-grid){display:none!important}
-    .books-page{gap:14px}
-    .library-grid{
-      display:flex!important;gap:12px!important;overflow-x:auto!important;overflow-y:hidden!important;
-      max-width:100%!important;padding:4px 2px 14px!important;overscroll-behavior-x:contain;
-      scrollbar-width:thin;scrollbar-color:var(--accent) transparent;
-    }
-    .library-grid::-webkit-scrollbar{height:7px}
-    .library-grid::-webkit-scrollbar-track{background:transparent}
-    .library-grid::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent) 55%,transparent);border-radius:999px}
-    .book-card{
-      flex:0 0 198px!important;width:198px!important;min-height:185px!important;padding:17px!important;
-      box-sizing:border-box!important;position:relative!important;display:flex!important;flex-direction:column!important;
-      text-decoration:none!important;color:var(--text)!important;overflow:hidden!important;
-      background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%)!important;
-      border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;
-      border-left:5px solid var(--accent)!important;border-radius:13px!important;box-shadow:none!important;
-    }
-    .book-card:hover{transform:none!important;box-shadow:none!important}
-    .book-thumb,.cover-thumb,.cover-copy,.book-card img{display:none!important}
+    .books-page{display:grid;gap:14px;padding-bottom:30px}
+    .books-page>.luria-page-spotlight{margin:0!important}
+    .books-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface)}
+    .books-search{position:relative;flex:1 1 520px;max-width:620px}
+    .books-search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:16px;height:16px;fill:none;stroke:var(--muted);stroke-width:1.8;pointer-events:none}
+    .books-search input{width:100%;height:40px;padding:0 14px 0 38px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font:inherit;font-size:11px;outline:none;box-sizing:border-box}
+    .books-search input:focus{border-color:color-mix(in srgb,var(--accent) 55%,var(--border));box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 10%,transparent)}
+    .books-search-count{color:var(--muted);font-size:9px;white-space:nowrap}
+
+    .library-section{display:grid;gap:10px;padding:16px 18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);overflow:hidden}
+    .library-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+    .library-section-head>div{min-width:0}
+    .library-section-eyebrow{display:block;margin-bottom:3px;color:var(--accent);font-size:8.5px;letter-spacing:.07em;text-transform:uppercase}
+    .library-section h2{margin:0;font-size:16px;line-height:1.2;font-weight:500;color:var(--text)}
+    .library-section-head small{color:var(--muted);font-size:9px}
+    .library-empty{padding:18px;border:1px dashed var(--border);border-radius:11px;color:var(--muted);font-size:10px;text-align:center}
+
+    .books-row{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;max-width:100%;padding:3px 2px 8px;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 55%,transparent) transparent}
+    .books-row::-webkit-scrollbar{height:7px}.books-row::-webkit-scrollbar-track{background:transparent}.books-row::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent) 55%,transparent);border-radius:999px}
+    .book-card{flex:0 0 210px;width:210px;min-height:190px;padding:17px;box-sizing:border-box;position:relative;display:flex;flex-direction:column;text-decoration:none;color:var(--text);overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%);border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border));border-left:5px solid var(--accent);border-radius:13px;box-shadow:none}
+    .book-card:hover{border-color:color-mix(in srgb,var(--accent) 62%,var(--border));background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
     .book-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .book-card-icon{
-      width:34px;height:34px;min-width:34px;border-radius:9px;
-      display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 11%,var(--surface));
-      border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)
-    }
+    .book-card-icon{width:35px;height:35px;min-width:35px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 11%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}
     .book-card-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-    .book-meta{padding:0!important;margin-top:8px!important;display:flex;flex:1;flex-direction:column}
-    .book-meta .book-area{display:block;color:var(--muted);font-size:8.8px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .book-meta .book-subarea{display:block;margin-top:3px;color:var(--accent);font-size:9px;line-height:1.2;font-weight:500}
-    .book-meta strong{display:-webkit-box!important;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
-      margin:8px 0 0!important;color:var(--text)!important;font-size:14px!important;line-height:1.18!important;font-weight:600!important}
-    .book-meta small{margin-top:auto!important;padding-top:12px!important;color:var(--muted)!important;font-size:8.8px!important}
-    .library-shell{padding:16px 18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);overflow:hidden}
-    .library-shell .section-title{margin-bottom:10px}
-    .library-shell .section-title h2{font-size:16px;font-weight:500}
-    .library-shell .section-title small{font-size:9px}
+    .book-meta{display:flex;flex:1;flex-direction:column;margin-top:9px;padding:0}
+    .book-area{display:block;color:var(--muted);font-size:8.8px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .book-subarea{display:block;margin-top:3px;color:var(--accent);font-size:9px;line-height:1.2;font-weight:500}
+    .book-title{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin:8px 0 0;color:var(--text);font-size:14px;line-height:1.18;font-weight:600}
+    .book-foot{margin-top:auto;padding-top:12px;color:var(--muted);font-size:8.8px}
+
+    .area-block{display:grid;gap:10px}
+    .area-block+.area-block{margin-top:4px}
+    .area-title{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 2px}
+    .area-title h3{margin:0;font-size:13px;font-weight:500;color:var(--text)}
+    .area-title span{font-size:8.5px;color:var(--muted)}
+    .subarea-block{display:grid;gap:7px}
+    .subarea-label{margin:0 2px;color:var(--accent);font-size:9px;font-weight:600}
+    #area-library{display:grid;gap:14px}
+    .books-no-results{padding:24px;border:1px dashed var(--border);border-radius:13px;color:var(--muted);font-size:10px;text-align:center;background:var(--surface)}
+
     @media(max-width:700px){
-      .library-grid{display:flex!important}
-      .book-card{flex-basis:188px!important;width:188px!important}
-      .books-head{display:none}
+      .books-toolbar{align-items:stretch;flex-direction:column}
+      .books-search{max-width:none;flex-basis:auto}
+      .book-card{flex-basis:190px;width:190px}
+      .library-section{padding:14px}
     }
   </style>
 </head>
@@ -86,39 +70,36 @@
     <main class="main"><div class="page">
       <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo LURIA</span><h1>Apostilas</h1></div></header>
       <section class="books-page">
-        <div class="books-head"><div><h1>Apostilas</h1><p>Conteúdo estruturado por área para leitura e revisão.</p></div><a class="books-back" href="/aprender/">← Voltar para Aprender</a></div>
-<section class="admin-create" id="admin-create">
-          <div class="section-title"><h2>Criar apostila</h2><small>Organize a apostila em Área → Matéria → Tema.</small></div>
-          <div class="admin-create-grid">
-            <label>Área principal
-              <select id="book-area">
-                <option value="clinica_medica">Clínica Médica</option>
-                <option value="cirurgia_geral">Cirurgia Geral</option>
-                <option value="ginecologia_obstetricia">Ginecologia e Obstetrícia</option>
-                <option value="pediatria">Pediatria</option>
-                <option value="medicina_preventiva">Medicina Preventiva / MFC</option>
-              </select>
-            </label>
-            <label>Título<input id="book-title" placeholder="Ex.: Insuficiência cardíaca"></label>
-            <label>Matéria / subárea<input id="book-materia" placeholder="Ex.: Psiquiatria"></label>
-            <label>Tema específico<input id="book-tema" placeholder="Ex.: Transtorno de personalidade borderline"></label>
-            <label style="grid-column:1/-1">URL do conteúdo<input id="book-url" placeholder="/apostilas/... ou URL do PDF"></label>
-          </div>
-          <div class="json-contract">
-            <strong>Padrão editorial obrigatório:</strong> nível de aprofundamento <strong>ALTO</strong>. A apostila deve funcionar como material principal e autônomo de estudo, com conteúdo completo, didático e progressivo.
-          </div>
-          <div class="admin-create-actions">
-            <button class="button primary" id="create-book" type="button">Criar apostila</button>
-            <label style="display:flex;align-items:center;gap:7px"><input id="book-published" type="checkbox" style="width:auto;min-height:0"> Publicar agora</label>
-            <span class="admin-status" id="admin-status"></span>
+        <section class="luria-page-spotlight" aria-label="Apostilas">
+          <div class="luria-page-spotlight-copy">
+            <strong>Apostilas</strong>
+            <small>Biblioteca de estudo organizada por área, matéria e tema.</small>
           </div>
         </section>
 
-        <section class="library-shell"><div class="section-title"><div><span style="font-size:9px;color:var(--accent);text-transform:uppercase;letter-spacing:.07em">Apostilas</span><h2>Biblioteca</h2></div><small id="library-count">1 apostila</small></div>
-        <div class="library-grid" id="library-grid"><a class="book-card" id="pilot-dmg-card" href="/apostilas/diabetes-mellitus-gestacional/" data-static-pilot="dmg">
-          <div class="book-card-top"><span class="book-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span></div>
-          <div class="book-meta"><span class="book-area">Ginecologia e Obstetrícia</span><span class="book-subarea">Obstetrícia</span><strong>Diabetes Mellitus Gestacional</strong><small>Apostila LURIA</small></div>
-        </a></div></section>
+        <section class="books-toolbar" aria-label="Buscar apostilas">
+          <label class="books-search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+            <input id="books-search-input" type="search" placeholder="Buscar por tema, matéria ou área..." autocomplete="off">
+          </label>
+          <span class="books-search-count" id="books-search-count">Carregando...</span>
+        </section>
+
+        <section class="library-section" id="recent-section">
+          <div class="library-section-head">
+            <div><span class="library-section-eyebrow">Continuar estudando</span><h2>Últimas vistas</h2></div>
+            <small id="recent-count"></small>
+          </div>
+          <div class="books-row" id="recent-grid"></div>
+        </section>
+
+        <section class="library-section">
+          <div class="library-section-head">
+            <div><span class="library-section-eyebrow">Biblioteca</span><h2>Por área</h2></div>
+            <small id="library-count"></small>
+          </div>
+          <div id="area-library"></div>
+        </section>
       </section>
     </div></main>
   </div>
@@ -128,79 +109,136 @@
   <script>
   (()=>{"use strict";
     const sb=window.supabaseClient;
-    const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const pilot={
+      id:"pilot-dmg",
+      area:"Ginecologia e Obstetrícia",
+      materia:"Obstetrícia",
+      tema:"Diabetes Mellitus Gestacional",
+      titulo:"Diabetes Mellitus Gestacional",
+      content_url:"/apostilas/diabetes-mellitus-gestacional/",
+      created_at:"2026-10-05T00:00:00Z"
+    };
+    const areaOrder=["Clínica Médica","Cirurgia Geral","Ginecologia e Obstetrícia","Pediatria","Medicina Preventiva / MFC"];
+    const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
     const bookIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg>';
-    async function renderLibrary(){
-      const root=document.getElementById("library-grid");
-      const count=document.getElementById("library-count");
-      const pilotUrl="/apostilas/diabetes-mellitus-gestacional/";
-      document.getElementById("pilot-dmg-card")?.removeAttribute("hidden");
-      let remoteItems=[];
+    let books=[];
+
+    function card(book){
+      const a=document.createElement("a");
+      a.className="book-card";
+      a.href=book.content_url||"#";
+      a.dataset.search=norm([book.area,book.materia,book.tema,book.titulo].filter(Boolean).join(" "));
+      a.innerHTML='<div class="book-card-top"><span class="book-card-icon">'+bookIcon+'</span></div><div class="book-meta"><span class="book-area"></span><span class="book-subarea"></span><strong class="book-title"></strong><small class="book-foot">Apostila LURIA</small></div>';
+      a.querySelector(".book-area").textContent=book.area||"Sem área";
+      a.querySelector(".book-subarea").textContent=book.materia||"";
+      a.querySelector(".book-title").textContent=book.tema||book.titulo||"Apostila";
+      a.addEventListener("click",()=>rememberViewed(book));
+      return a;
+    }
+
+    function rememberViewed(book){
+      try{
+        const key="luria:apostilas:last-viewed";
+        const list=JSON.parse(localStorage.getItem(key)||"[]").filter(x=>x.content_url!==book.content_url);
+        list.unshift({id:book.id,area:book.area,materia:book.materia,tema:book.tema,titulo:book.titulo,content_url:book.content_url,viewed_at:Date.now()});
+        localStorage.setItem(key,JSON.stringify(list.slice(0,8)));
+      }catch{}
+    }
+
+    function recentBooks(){
+      try{
+        const saved=JSON.parse(localStorage.getItem("luria:apostilas:last-viewed")||"[]");
+        const mapped=saved.map(savedBook=>books.find(book=>book.content_url===savedBook.content_url)||savedBook).filter(book=>book?.content_url);
+        if(mapped.length)return mapped.slice(0,6);
+      }catch{}
+      return books.slice(0,6);
+    }
+
+    function renderRecent(query=""){
+      const root=document.getElementById("recent-grid");
+      const section=document.getElementById("recent-section");
+      const q=norm(query);
+      const items=recentBooks().filter(book=>!q||norm([book.area,book.materia,book.tema,book.titulo].join(" ")).includes(q));
+      root.innerHTML="";
+      if(!items.length){
+        section.hidden=!!q;
+        if(!q)root.innerHTML='<div class="library-empty">As apostilas abertas recentemente aparecerão aqui.</div>';
+      }else{
+        section.hidden=false;
+        items.forEach(book=>root.appendChild(card(book)));
+      }
+      document.getElementById("recent-count").textContent=items.length?items.length+" recente"+(items.length===1?"":"s"):"";
+    }
+
+    function renderAreas(query=""){
+      const root=document.getElementById("area-library");
+      const q=norm(query);
+      const filtered=books.filter(book=>!q||norm([book.area,book.materia,book.tema,book.titulo].join(" ")).includes(q));
+      root.innerHTML="";
+      if(!filtered.length){
+        root.innerHTML='<div class="books-no-results">Nenhuma apostila encontrada para essa busca.</div>';
+        return;
+      }
+      const grouped=new Map();
+      filtered.forEach(book=>{
+        const area=book.area||"Sem área";
+        const materia=book.materia||"Outros";
+        if(!grouped.has(area))grouped.set(area,new Map());
+        if(!grouped.get(area).has(materia))grouped.get(area).set(materia,[]);
+        grouped.get(area).get(materia).push(book);
+      });
+      [...grouped.keys()].sort((a,b)=>{
+        const ai=areaOrder.indexOf(a),bi=areaOrder.indexOf(b);
+        if(ai<0&&bi<0)return a.localeCompare(b,"pt-BR");
+        if(ai<0)return 1;if(bi<0)return -1;return ai-bi;
+      }).forEach(area=>{
+        const areaBlock=document.createElement("section");
+        areaBlock.className="area-block";
+        const count=[...grouped.get(area).values()].reduce((n,arr)=>n+arr.length,0);
+        areaBlock.innerHTML='<div class="area-title"><h3></h3><span></span></div>';
+        areaBlock.querySelector("h3").textContent=area;
+        areaBlock.querySelector("span").textContent=count+" apostila"+(count===1?"":"s");
+        [...grouped.get(area).keys()].sort((a,b)=>a.localeCompare(b,"pt-BR")).forEach(materia=>{
+          const sub=document.createElement("div");
+          sub.className="subarea-block";
+          const label=document.createElement("div");
+          label.className="subarea-label";
+          label.textContent=materia;
+          const row=document.createElement("div");
+          row.className="books-row";
+          grouped.get(area).get(materia).forEach(book=>row.appendChild(card(book)));
+          sub.append(label,row);
+          areaBlock.appendChild(sub);
+        });
+        root.appendChild(areaBlock);
+      });
+    }
+
+    function render(query=""){
+      renderRecent(query);
+      renderAreas(query);
+      const q=norm(query);
+      const total=books.filter(book=>!q||norm([book.area,book.materia,book.tema,book.titulo].join(" ")).includes(q)).length;
+      document.getElementById("library-count").textContent=books.length+" apostila"+(books.length===1?"":"s");
+      document.getElementById("books-search-count").textContent=q?(total+" resultado"+(total===1?"":"s")):(books.length+" apostila"+(books.length===1?"":"s"));
+    }
+
+    async function loadBooks(){
+      let remote=[];
       try{
         if(sb){
-          const {data,error}=await sb.from("apostilas")
-            .select("id,area,materia,tema,titulo,content_url,is_published,created_at")
-            .eq("is_published",true).order("created_at",{ascending:false});
-          if(!error&&Array.isArray(data)) remoteItems=data;
+          const {data,error}=await sb.from("apostilas").select("id,area,materia,tema,titulo,content_url,is_published,created_at").eq("is_published",true).order("created_at",{ascending:false});
+          if(!error&&Array.isArray(data))remote=data;
         }
       }catch{}
-      root.querySelectorAll("[data-dynamic-book='true']").forEach(el=>el.remove());
-      const extras=remoteItems.filter(book=>book.content_url!==pilotUrl);
-      for(const book of extras){
-        const el=document.createElement(book.content_url?"a":"article");
-        el.className="book-card"; el.dataset.dynamicBook="true";
-        if(book.content_url) el.href=book.content_url;
-        el.innerHTML='<div class="book-card-top"><span class="book-card-icon">'+bookIcon+'</span></div><div class="book-meta"><span class="book-area"></span><span class="book-subarea"></span><strong></strong><small>Apostila LURIA</small></div>';
-        el.querySelector(".book-area").textContent=book.area||"Sem área";
-        el.querySelector(".book-subarea").textContent=book.materia||"";
-        el.querySelector(".book-meta strong").textContent=book.tema||book.titulo||"Apostila";
-        root.appendChild(el);
-      }
-      const total=1+extras.length;
-      count.textContent=total+" apostila"+(total===1?"":"s");
+      const byUrl=new Map();
+      [pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
+      books=[...byUrl.values()];
+      render("");
     }
-    async function setupAdmin(){
-      try{
-        const {data}=await sb.rpc("is_admin");
-        if(!data)return;
-        document.getElementById("admin-create").classList.add("is-visible");
-        document.getElementById("create-book").addEventListener("click",async()=>{
-          const status=document.getElementById("admin-status");
-          const area=document.getElementById("book-area").value;
-          const titulo=document.getElementById("book-title").value.trim();
-          const materia=document.getElementById("book-materia").value.trim();
-          const tema=document.getElementById("book-tema").value.trim();
-          const content_url=document.getElementById("book-url").value.trim()||null;
-          const is_published=document.getElementById("book-published").checked;
-          if(!titulo){status.textContent="Informe o título.";return;}
-          status.textContent="Salvando...";
-          const areaLabel={clinica_medica:"Clínica Médica",cirurgia_geral:"Cirurgia Geral",ginecologia_obstetricia:"Ginecologia e Obstetrícia",pediatria:"Pediatria",medicina_preventiva:"Medicina Preventiva / MFC"}[area]||area;
-          const {error}=await sb.from("apostilas").insert({area:areaLabel,materia,tema,titulo,cover_key:area,content_url,is_published});
-          if(error){status.textContent="Erro: "+error.message;return;}
-          status.textContent="Apostila criada.";
-          document.getElementById("book-title").value="";
-          document.getElementById("book-materia").value="";
-          document.getElementById("book-tema").value="";
-          document.getElementById("book-url").value="";
-          await renderLibrary();
-        });
-      }catch{}
-    }
-    window.LuriaApostilaGenerationRules={
-      depth:"high",
-      soleSourceAssumption:true,
-      principles:[
-        "A apostila deve funcionar como material principal e autônomo de estudo.",
-        "Não presumir conhecimento externo para preencher lacunas essenciais.",
-        "Explicar mecanismos e raciocínio, não apenas listar fatos.",
-        "Desenvolver definição, fisiopatologia, quadro clínico, diagnóstico, diferenciais, tratamento, doses quando pertinentes, monitorização, complicações, prognóstico e seguimento conforme aplicável.",
-        "Organizar o conteúdo do básico ao avançado, com transições claras entre tópicos.",
-        "Usar tabelas, algoritmos e callouts apenas quando melhorarem a compreensão; nunca substituir explicação necessária por um bloco visual curto.",
-        "Referências devem aparecer em lista organizada e priorizar diretrizes e entidades brasileiras quando disponíveis.",
-        "Quando houver material interno da LURIA/Drive sobre o tema, usar sua estrutura e cobertura como referência, sem perpetuar conteúdo desatualizado quando houver diretriz mais recente."
-      ]
-    };
-    Promise.allSettled([renderLibrary(),setupAdmin()]);
+
+    document.getElementById("books-search-input")?.addEventListener("input",event=>render(event.target.value));
+    loadBooks();
   })();
   </script>
   <script defer src="/assets/js/pwa.js?v=6-apostilas-library-fix"></script>
