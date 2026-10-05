@@ -2446,3 +2446,72 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     stroke:#fff!important;
   }
 }
+
+
+/* LURIA TIMER — WHITE OUTSIDE, READABLE PANEL v76 — 2026-10-04 */
+@media (min-width:981px){
+  /* Botão fechado do Timer: absolutamente tudo branco sobre a faixa azul. */
+  body .topbar .luria-pomodoro-toggle,
+  body .app-shell > .topbar .luria-pomodoro-toggle{
+    color:#fff!important;
+  }
+
+  body .topbar .luria-pomodoro-toggle .luria-pomodoro-copy,
+  body .topbar .luria-pomodoro-toggle .luria-pomodoro-copy strong,
+  body .topbar .luria-pomodoro-toggle .luria-pomodoro-copy small,
+  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-copy,
+  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-copy strong,
+  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-copy small{
+    color:#fff!important;
+    opacity:1!important;
+  }
+
+  body .topbar .luria-pomodoro-toggle .luria-pomodoro-icon,
+  body .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg,
+  body .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg *,
+  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-icon,
+  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg,
+  body .app-shell > .topbar .luria-pomodoro-toggle .luria-pomodoro-icon svg *{
+    color:#fff!important;
+    stroke:#fff!important;
+    opacity:1!important;
+  }
+
+  /* Painel aberto: volta a obedecer as cores do tema e nunca herda branco do topo. */
+  body .luria-pomodoro-panel,
+  body .luria-pomodoro-panel *{
+    color:var(--text)!important;
+  }
+
+  body .luria-pomodoro-panel header strong,
+  body .luria-pomodoro-panel .luria-pomodoro-time{
+    color:var(--text)!important;
+  }
+
+  body .luria-pomodoro-panel header small,
+  body .luria-pomodoro-panel .luria-stopwatch-note,
+  body .luria-pomodoro-panel .luria-pomodoro-status,
+  body .luria-pomodoro-panel .luria-pomodoro-fields label,
+  body .luria-pomodoro-panel .luria-timer-switch button:not([aria-pressed="true"]),
+  body .luria-pomodoro-panel .luria-pomodoro-modes button:not([aria-pressed="true"]){
+    color:var(--muted)!important;
+  }
+
+  body .luria-pomodoro-panel .luria-timer-switch button[aria-pressed="true"]{
+    color:var(--accent)!important;
+  }
+
+  body .luria-pomodoro-panel .luria-pomodoro-modes button[aria-pressed="true"],
+  body .luria-pomodoro-panel .luria-pomodoro-save{
+    color:#fff!important;
+  }
+
+  body .luria-pomodoro-panel input{
+    color:var(--text)!important;
+    background:var(--surface)!important;
+  }
+
+  body .luria-pomodoro-panel button:not(.luria-pomodoro-save):not([aria-pressed="true"]){
+    color:var(--text)!important;
+  }
+}
