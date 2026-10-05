@@ -2785,3 +2785,47 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     margin-bottom:0!important;
   }
 }
+
+
+/* LURIA v83 — scrollport global sem faixas superior/inferior.
+   O recorte vinha do padding vertical do .main: a .page rolava dentro de uma
+   janela menor, deixando uma faixa fixa acima e abaixo. O scrollport agora
+   ocupa 100% da altura; o respiro passa para dentro da própria página. */
+@media (min-width:981px){
+  body.luria-global-shell-mounted .main{
+    padding-top:0!important;
+    padding-bottom:0!important;
+    border-top:0!important;
+    border-bottom:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page{
+    height:100%!important;
+    max-height:100%!important;
+    min-height:0!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
+    padding-top:16px!important;
+    padding-bottom:18px!important;
+    border:0!important;
+    border-top:0!important;
+    border-bottom:0!important;
+    border-radius:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    clip-path:none!important;
+    -webkit-mask-image:none!important;
+    mask-image:none!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::before,
+  body.luria-global-shell-mounted .main > .page::after{
+    content:none!important;
+    display:none!important;
+  }
+}
