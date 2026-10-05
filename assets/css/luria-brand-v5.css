@@ -3109,3 +3109,43 @@ body *::-webkit-scrollbar-button:end{
   outline:0!important;
   box-shadow:none!important;
 }
+
+
+/* LURIA v86 — scrollbar embutida no painel branco
+   Mantém a barra dentro do callout/painel branco, sem tocar a moldura azul.
+   O trilho fica totalmente transparente para não deformar a borda direita. */
+@media (min-width:981px){
+  body.luria-global-shell-mounted .main > .page{
+    width:calc(100% - 8px)!important;
+    max-width:calc(100% - 8px)!important;
+    margin:0 8px 0 0!important;
+    padding-right:10px!important;
+    background:transparent!important;
+    border-radius:0!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-track-piece,
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-corner{
+    background:transparent!important;
+    background-color:transparent!important;
+    border:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+    box-shadow:none!important;
+  }
+}
