@@ -9976,3 +9976,52 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     overflow:hidden!important;
   }
 }
+
+
+/* DASHBOARD 1 — COMPACTAÇÃO FINAL v78 — 2026-10-05
+   -20px na faixa superior inteira:
+   Atividades de hoje e Estudar agora ficam 20px menores;
+   Resumo do dia e Ofensiva, por dividirem a mesma faixa, ficam 10px menores cada.
+   Todos os vãos permanecem exatamente em 8px. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"]{
+    --dashboard-callout-gap:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    height:calc(100% - 20px)!important;
+    max-height:calc(100% - 20px)!important;
+    block-size:calc(100% - 20px)!important;
+    grid-template-rows:minmax(0,1fr) 118px!important;
+    column-gap:var(--dashboard-callout-gap)!important;
+    row-gap:var(--dashboard-callout-gap)!important;
+    align-self:start!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    block-size:100%!important;
+    gap:var(--dashboard-callout-gap)!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
+    row-gap:var(--dashboard-callout-gap)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
+    column-gap:var(--dashboard-callout-gap)!important;
+    row-gap:var(--dashboard-callout-gap)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > *,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side > .dl-card{
+    margin:0!important;
+  }
+}
