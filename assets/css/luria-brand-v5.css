@@ -1632,3 +1632,362 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     display:none!important;
   }
 }
+
+
+/* LURIA GLOBAL MASTER SHELL v69 — 2026-10-04 */
+:root,
+:root[data-theme="light"]{--luria-master-shell:#184888}
+:root[data-theme="dark"]{--luria-master-shell:#142A44}
+:root[data-theme="leila-mood"]{--luria-master-shell:#CB3F83}
+
+@media (min-width:981px){
+  html,
+  body{
+    width:100%!important;
+    min-height:100%!important;
+    margin:0!important;
+    background:var(--luria-master-shell)!important;
+    overflow:hidden!important;
+  }
+
+  body .app-shell{
+    position:relative!important;
+    display:grid!important;
+    grid-template-columns:270px minmax(0,1fr)!important;
+    grid-template-rows:minmax(0,1fr)!important;
+    gap:0!important;
+    width:auto!important;
+    max-width:none!important;
+    height:calc(100dvh - 20px)!important;
+    min-height:0!important;
+    margin:10px!important;
+    padding:64px 6px 6px!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-radius:24px!important;
+    outline:0!important;
+    background:var(--luria-master-shell)!important;
+    background-image:none!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+  }
+
+  body .app-shell::before{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    inset:0 0 auto 0!important;
+    width:auto!important;
+    height:70px!important;
+    border:0!important;
+    border-radius:24px 24px 0 0!important;
+    outline:0!important;
+    background:var(--luria-master-shell)!important;
+    background-image:none!important;
+    box-shadow:none!important;
+    pointer-events:none!important;
+    z-index:0!important;
+  }
+
+  body .app-shell::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  /* Sidebar fixa no shell: apenas o conteúdo principal rola. */
+  body #sidebar.sidebar,
+  body #sidebar.sidebar.luria-global-shell-sidebar{
+    position:relative!important;
+    inset:auto!important;
+    display:block!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:16px 14px 14px!important;
+    transform:none!important;
+    translate:none!important;
+    opacity:1!important;
+    visibility:visible!important;
+    pointer-events:auto!important;
+    overflow:hidden!important;
+    border:0!important;
+    border-right:1px solid var(--border)!important;
+    border-radius:18px 0 0 18px!important;
+    outline:0!important;
+    background:var(--sidebar)!important;
+    background-image:none!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+    z-index:2!important;
+  }
+
+  body.sidebar-hidden .app-shell,
+  body.sidebar-collapsed .app-shell{
+    grid-template-columns:270px minmax(0,1fr)!important;
+  }
+
+  body.sidebar-hidden #sidebar.sidebar,
+  body.sidebar-collapsed #sidebar.sidebar{
+    transform:none!important;
+    translate:none!important;
+    opacity:1!important;
+    visibility:visible!important;
+    pointer-events:auto!important;
+  }
+
+  body #sidebar.sidebar .sidebar-close,
+  body .sidebar-desktop-toggle,
+  body .menu-open,
+  body #sidebar-backdrop,
+  body .sidebar-backdrop{
+    display:none!important;
+  }
+
+  /* Marca na faixa superior, igual ao Dashboard aprovado. */
+  body #sidebar.sidebar .sidebar-top{
+    position:absolute!important;
+    top:-58px!important;
+    left:10px!important;
+    right:auto!important;
+    width:auto!important;
+    height:52px!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:center!important;
+    overflow:visible!important;
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+    z-index:2147482600!important;
+  }
+
+  body #sidebar.sidebar .brand{
+    display:flex!important;
+    align-items:center!important;
+    gap:9px!important;
+    color:#fff!important;
+    min-width:0!important;
+  }
+
+  body #sidebar.sidebar .brand .luria-theme-logo,
+  body #sidebar.sidebar #luria-brand-logo{
+    display:block!important;
+    width:48.4px!important;
+    height:48.4px!important;
+    min-width:48.4px!important;
+    min-height:48.4px!important;
+    flex:0 0 48.4px!important;
+    opacity:1!important;
+    visibility:visible!important;
+    filter:brightness(0) invert(1)!important;
+    object-fit:contain!important;
+  }
+
+  body #sidebar.sidebar .brand .brand-copy,
+  body #sidebar.sidebar .brand .brand-copy strong,
+  body #sidebar.sidebar .brand .brand-copy small{
+    color:#fff!important;
+  }
+
+  body #sidebar.sidebar .brand .brand-copy strong{
+    font-size:18px!important;
+    line-height:1!important;
+  }
+
+  body #sidebar.sidebar .brand .brand-copy small{
+    margin-top:2px!important;
+    font-size:9px!important;
+    line-height:1.15!important;
+    opacity:.92!important;
+  }
+
+  /* Conteúdo principal branco com a mesma moldura interna. */
+  body .main{
+    position:relative!important;
+    z-index:2!important;
+    width:auto!important;
+    max-width:none!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:16px 18px 18px!important;
+    transform:none!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain!important;
+    border:0!important;
+    border-radius:0 18px 18px 0!important;
+    outline:0!important;
+    background:var(--surface)!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+  }
+
+  body .main > .page,
+  body .page{
+    width:100%!important;
+    max-width:1320px!important;
+    min-width:0!important;
+    min-height:100%!important;
+    margin:0 auto!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Topbar portalizada na faixa azul, igual à do Dashboard. */
+  body .app-shell > .topbar,
+  body .app-shell > .topbar.dashboard-shell-topbar,
+  body .app-shell > .topbar.luria-global-shell-topbar{
+    position:absolute!important;
+    top:8px!important;
+    left:270px!important;
+    right:12px!important;
+    bottom:auto!important;
+    width:auto!important;
+    height:48px!important;
+    min-height:48px!important;
+    max-height:48px!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    overflow:visible!important;
+    visibility:visible!important;
+    opacity:1!important;
+    background:transparent!important;
+    border:0!important;
+    border-radius:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+    transform:none!important;
+    z-index:2147482700!important;
+  }
+
+  body .app-shell > .topbar .page-heading{
+    display:none!important;
+  }
+
+  body .app-shell > .topbar .luria-notifications{
+    position:static!important;
+    inset:auto!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    height:43px!important;
+    min-height:43px!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    visibility:visible!important;
+    opacity:1!important;
+    z-index:auto!important;
+  }
+
+  body .app-shell > .topbar .luria-alex-topbar{
+    order:1!important;
+  }
+  body .app-shell > .topbar .luria-pomodoro-top{
+    order:2!important;
+  }
+  body .app-shell > .topbar #luria-notification-toggle{
+    order:3!important;
+  }
+  body .app-shell > .topbar .luria-profile-top{
+    order:4!important;
+  }
+
+  body .app-shell > .topbar .luria-alex-topbar,
+  body .app-shell > .topbar .luria-pomodoro-toggle,
+  body .app-shell > .topbar .luria-notification-toggle,
+  body .app-shell > .topbar .luria-profile-toggle{
+    height:43px!important;
+    min-height:43px!important;
+    margin:0!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    border-radius:12px!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+    box-shadow:none!important;
+    box-sizing:border-box!important;
+    backdrop-filter:blur(8px)!important;
+    -webkit-backdrop-filter:blur(8px)!important;
+  }
+
+  body .app-shell > .topbar .luria-alex-topbar{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-width:74px!important;
+    padding:0 14px!important;
+    text-decoration:none!important;
+    font-size:15px!important;
+    font-weight:600!important;
+    line-height:1!important;
+  }
+
+  body .app-shell > .topbar .luria-pomodoro-toggle{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-width:78px!important;
+    padding:0 10px!important;
+  }
+
+  body .app-shell > .topbar .luria-notification-toggle,
+  body .app-shell > .topbar .luria-profile-toggle{
+    display:grid!important;
+    place-items:center!important;
+    width:43px!important;
+    min-width:43px!important;
+    max-width:43px!important;
+    padding:0!important;
+    line-height:1!important;
+  }
+
+  body .app-shell > .topbar .luria-notification-toggle svg{
+    display:block!important;
+    width:20px!important;
+    height:20px!important;
+    margin:0!important;
+    transform:none!important;
+  }
+
+  body .app-shell > .topbar .luria-profile-toggle{
+    font-size:16px!important;
+    text-align:center!important;
+  }
+
+  body .app-shell > .topbar :is(svg,span,strong,small){
+    color:#fff!important;
+  }
+
+  body .app-shell > .topbar .luria-alex-topbar:hover,
+  body .app-shell > .topbar .luria-pomodoro-toggle:hover,
+  body .app-shell > .topbar .luria-notification-toggle:hover,
+  body .app-shell > .topbar .luria-profile-toggle:hover{
+    background:rgba(255,255,255,.17)!important;
+    border-color:rgba(255,255,255,.40)!important;
+  }
+
+  /* Busca visual removida em todas as páginas; atalho permanece. */
+  body .app-shell > .topbar #luria-global-search,
+  body .app-shell > .topbar [data-global-search-trigger],
+  body .app-shell > .topbar .global-search-trigger,
+  body .app-shell > .topbar .luria-global-search-trigger{
+    display:none!important;
+  }
+}
+
+/* Mobile/PWA continua usando seu layout próprio. */
+@media (max-width:980px){
+  body .app-shell > .topbar.luria-global-shell-topbar{
+    position:sticky!important;
+    top:0!important;
+  }
+}
