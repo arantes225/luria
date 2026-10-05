@@ -9515,3 +9515,38 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     margin:0!important;
   }
 }
+
+
+/* DASHBOARD 4 — LOWER CARDS ABOVE BOTTOM STRIP v1 — 2026-10-05 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3{
+    position:relative!important;
+    isolation:isolate!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-upcoming,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-performance{
+    position:relative!important;
+    z-index:20!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .main::before,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .main::after,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3::before,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3::after{
+    z-index:0!important;
+    pointer-events:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .main > *,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > *{
+    position:relative!important;
+    z-index:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-upcoming,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-performance{
+    z-index:20!important;
+    box-shadow:0 8px 18px rgba(26,79,117,.08)!important;
+  }
+}
