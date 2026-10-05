@@ -9074,3 +9074,49 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     max-block-size:100%!important;
   }
 }
+
+
+/* DASHBOARD 1 — LOWER CARDS BOTTOM BORDER v63 — 2026-10-05 */
+@media (min-width:981px){
+  /* Reduz a faixa inferior para a borda de baixo dos dois cards
+     permanecer totalmente visível dentro do painel. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(0,1fr) 160px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:160px!important;
+    min-height:160px!important;
+    max-height:160px!important;
+    margin-top:-14px!important;
+    margin-bottom:6px!important;
+    align-self:start!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding:9px 14px 10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat .dl-card-heading{
+    margin-bottom:5px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    min-height:17px!important;
+    margin:1px 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    padding:9px 14px 10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    height:110px!important;
+    min-height:110px!important;
+    max-height:110px!important;
+  }
+}
