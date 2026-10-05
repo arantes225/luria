@@ -9906,3 +9906,26 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     margin-bottom:0!important;
   }
 }
+
+
+/* DASHBOARD 1 — RIGHT COLUMN BOTTOM ALIGN v74 — 2026-10-05
+   Ajuste fino: Resumo do dia + Ofensiva terminam exatamente
+   na mesma linha inferior de Atividades de hoje + Estudar agora. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:calc(100% - 16px)!important;
+    max-height:calc(100% - 16px)!important;
+    block-size:calc(100% - 16px)!important;
+    max-block-size:calc(100% - 16px)!important;
+    align-self:start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
+    min-height:0!important;
+    height:100%!important;
+    max-height:100%!important;
+    box-sizing:border-box!important;
+  }
+}
