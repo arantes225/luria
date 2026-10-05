@@ -1377,6 +1377,10 @@ async function renderCurrentReview() {
           ? "sessão concluída"
           : "nenhum card pendente";
 
+    if(reviewQueue.length){
+      window.LuriaGuidedStudy?.completeActiveStep?.("flashcards-review-complete");
+    }
+
     return;
   }
 
