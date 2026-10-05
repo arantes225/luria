@@ -52,6 +52,20 @@
     .mind-chip{display:inline-flex;align-items:center;min-height:23px;padding:0 8px;margin-bottom:8px;border-radius:999px;background:color-mix(in srgb,var(--accent) 9%,var(--surface));color:var(--accent);font-size:8.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
     @media(max-width:760px){.mindmap-head{align-items:flex-start;flex-direction:column}.mindmap-head p{text-align:left}.mindmap{grid-template-columns:1fr;grid-template-areas:"center" "a" "b" "c" "d";gap:10px}.mindmap:before,.mind-branch:before{display:none}.mind-center{width:100%}.mindmap-section{padding:18px!important}}
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}.mechanism-chain{grid-template-columns:1fr 1fr}.book-grid-2,.complication-grid{grid-template-columns:1fr}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
+  
+    /* apostila-light-blue-title-contrast */
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h1,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h2,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h3,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity p,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-badge,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
+      color:#fff!important;
+    }
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
+      border-color:rgba(255,255,255,.22)!important;
+    }
   </style>
 </head>
 <body data-page="aprender">
