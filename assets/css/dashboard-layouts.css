@@ -8722,3 +8722,19 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     row-gap:12px!important;
   }
 }
+
+
+/* DASHBOARD — REMOVE BOTTOM SHELL STRIP v56 — 2026-10-05
+   Remove a faixa azul inferior criada pelo padding-bottom de 3px do app-shell.
+   Essa faixa não é conteúdo e reduz a altura útil percebida do Dashboard. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+    padding-bottom:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    height:100%!important;
+    min-height:0!important;
+    margin-bottom:0!important;
+  }
+}
