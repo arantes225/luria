@@ -8169,3 +8169,66 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     grid-template-columns:minmax(0,1fr) minmax(220px,.9fr)!important;
   }
 }
+
+
+/* DASHBOARD 1 — RESUMO + OFENSIVA DIVIDEM TODA A ALTURA v51 — 2026-10-04
+   A coluna da direita passa a usar exatamente a altura real da faixa
+   Atividades/Sessão guiada e divide esse espaço em duas metades iguais. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(340px,auto) 190px!important;
+    align-items:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    height:100%!important;
+    min-height:340px!important;
+    max-height:none!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1>.dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main{
+    height:100%!important;
+    min-height:340px!important;
+    max-height:none!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    height:100%!important;
+    min-height:340px!important;
+    max-height:none!important;
+    align-self:stretch!important;
+    grid-template-rows:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side>.dl-card{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    align-self:stretch!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body{
+    flex:1 1 auto!important;
+    align-content:center!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    display:grid!important;
+    grid-template-columns:88px minmax(0,1fr)!important;
+    grid-template-rows:auto minmax(0,1fr)!important;
+    align-items:center!important;
+  }
+}
