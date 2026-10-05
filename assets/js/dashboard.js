@@ -3121,3 +3121,87 @@ if (window.docmapUser) {
 } else {
   window.addEventListener("docmap:ready", initDashboard, { once: true });
 }
+
+
+/* Dashboard 1: keep Atividades de hoje and Estudar agora exactly aligned
+   to the real bottom edge of Ofensiva. This avoids CSS height conflicts
+   from older dashboard rules and remains stable across zoom/viewport changes. */
+(function installDashboardOneTopRowAlignment(){
+  let rafId = 0;
+
+  function syncDashboardOneTopRow(){
+    if (
+      document.body?.dataset?.page !== "dashboard"
+      || document.body?.dataset?.dashboardLayout !== "1"
+    ) return;
+
+    const pair = document.querySelector(".dl-layout-1 .dl-agenda-study-pair-1");
+    const streak = document.querySelector(".dl-layout-1 .dl-streak");
+    if (!pair || !streak) return;
+
+    const pairRect = pair.getBoundingClientRect();
+    const streakRect = streak.getBoundingClientRect();
+    const targetHeight = Math.floor(streakRect.bottom - pairRect.top);
+
+    if (!Number.isFinite(targetHeight) || targetHeight < 220) return;
+
+    const px = `${targetHeight}px`;
+    pair.style.setProperty("height", px, "important");
+    pair.style.setProperty("min-height", px, "important");
+    pair.style.setProperty("max-height", px, "important");
+    pair.style.setProperty("block-size", px, "important");
+    pair.style.setProperty("min-block-size", px, "important");
+    pair.style.setProperty("max-block-size", px, "important");
+    pair.style.setProperty("align-self", "start", "important");
+
+    const cards = [
+      pair.querySelector(".dl-agenda-large"),
+      pair.querySelector(".dl-study-now-card-main")
+    ].filter(Boolean);
+
+    cards.forEach(card => {
+      card.style.setProperty("height", px, "important");
+      card.style.setProperty("min-height", px, "important");
+      card.style.setProperty("max-height", px, "important");
+      card.style.setProperty("block-size", px, "important");
+      card.style.setProperty("min-block-size", px, "important");
+      card.style.setProperty("max-block-size", px, "important");
+      card.style.setProperty("box-sizing", "border-box", "important");
+      card.style.setProperty("align-self", "start", "important");
+      card.style.setProperty("overflow", "hidden", "important");
+    });
+  }
+
+  function queueSync(){
+    cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(() => {
+      syncDashboardOneTopRow();
+      requestAnimationFrame(syncDashboardOneTopRow);
+    });
+  }
+
+  window.addEventListener("resize", queueSync, { passive:true });
+  window.addEventListener("load", queueSync, { once:true });
+  window.addEventListener("luria:dashboard-data", queueSync);
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", queueSync, { once:true });
+  } else {
+    queueSync();
+  }
+
+  if ("ResizeObserver" in window) {
+    const observer = new ResizeObserver(queueSync);
+    const observeWhenReady = () => {
+      const side = document.querySelector(".dl-layout-1 .dl-side");
+      const pair = document.querySelector(".dl-layout-1 .dl-agenda-study-pair-1");
+      if (side) observer.observe(side);
+      if (pair) observer.observe(pair);
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", observeWhenReady, { once:true });
+    } else {
+      observeWhenReady();
+    }
+  }
+})();
