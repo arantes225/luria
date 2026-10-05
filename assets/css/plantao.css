@@ -8285,3 +8285,68 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-quick-grid{
   }
 }
 
+
+
+/* === Simulador de Emergência · uniform record card height v65 ===
+   Todos os prontuários da mesma linha passam a ter exatamente a mesma altura,
+   independentemente de ser o primeiro card, da nota ou do tamanho do texto. */
+body.plantao-module-entry #plantao-case-grid{
+  align-items:stretch!important;
+  grid-auto-rows:1fr!important;
+}
+
+body.plantao-module-entry .plantao-case-record{
+  height:100%!important;
+  min-height:0!important;
+  align-self:stretch!important;
+}
+
+body.plantao-module-entry .plantao-record-folder{
+  height:100%!important;
+  min-height:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+}
+
+body.plantao-module-entry .plantao-record-paper{
+  flex:1 1 auto!important;
+  height:auto!important;
+  min-height:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  box-sizing:border-box!important;
+}
+
+/* Reserva a mesma área para a queixa principal em todos os cards. */
+body.plantao-module-entry .plantao-record-chief{
+  flex:0 0 auto!important;
+}
+body.plantao-module-entry .plantao-record-chief h3{
+  min-height:58px!important;
+  max-height:78px!important;
+  display:-webkit-box!important;
+  -webkit-box-orient:vertical!important;
+  -webkit-line-clamp:4!important;
+  overflow:hidden!important;
+}
+
+/* Metadados ocupam o corpo restante e o botão sempre termina na mesma linha. */
+body.plantao-module-entry .plantao-record-lines{
+  flex:1 1 auto!important;
+  align-content:start!important;
+}
+body.plantao-module-entry .plantao-record-button{
+  margin-top:auto!important;
+  flex:0 0 auto!important;
+}
+
+@media(max-width:820px){
+  body.plantao-module-entry #plantao-case-grid{
+    grid-auto-rows:auto!important;
+  }
+  body.plantao-module-entry .plantao-case-record,
+  body.plantao-module-entry .plantao-record-folder,
+  body.plantao-module-entry .plantao-record-paper{
+    height:auto!important;
+  }
+}
