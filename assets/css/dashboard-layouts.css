@@ -10055,3 +10055,29 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     overflow:hidden!important;
   }
 }
+
+
+/* DASHBOARD — largura útil igual ao Aprender v82 — 2026-10-05 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    padding-left:34px!important;
+    padding-right:34px!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+    width:100%!important;
+    max-width:1320px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
+  body[data-page="dashboard"][data-dashboard-layout] .luria-dashboard-spotlight,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
+    width:100%!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+  }
+}
