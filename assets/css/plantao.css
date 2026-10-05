@@ -8173,3 +8173,68 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     margin-top:0!important;
   }
 }
+
+
+/* PLANTAO — GLOBAL SHELL COMPATIBILITY v63 — 2026-10-04 */
+@media (min-width:981px){
+  body.plantao-module-entry.luria-global-shell-mounted > .app-shell{
+    display:grid!important;
+    grid-template-columns:270px minmax(0,1fr)!important;
+    height:calc(100dvh - 15px)!important;
+    min-height:0!important;
+    margin:10px 5px 5px!important;
+    padding:64px 3px 3px!important;
+    overflow:hidden!important;
+  }
+
+  body.plantao-module-entry.luria-global-shell-mounted #sidebar.sidebar{
+    display:block!important;
+    position:relative!important;
+    top:auto!important;
+    left:auto!important;
+    width:auto!important;
+    height:100%!important;
+    min-height:0!important;
+    padding:16px 14px 14px!important;
+    transform:none!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+    overflow:visible!important;
+  }
+
+  body.plantao-module-entry.luria-global-shell-mounted .main{
+    display:block!important;
+    width:auto!important;
+    max-width:none!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:16px 6px 18px 18px!important;
+    overflow:hidden!important;
+    background:var(--surface)!important;
+  }
+
+  body.plantao-module-entry.luria-global-shell-mounted .page.plantao-page{
+    display:block!important;
+    width:calc(100% - 12px)!important;
+    max-width:calc(100% - 12px)!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0 12px 0 0!important;
+    padding:0 2px 0 0!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    background:transparent!important;
+  }
+
+  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > .topbar,
+  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > header.topbar{
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+
+  body.plantao-module-entry.luria-global-shell-mounted .sidebar-desktop-toggle{
+    display:none!important;
+  }
+}
