@@ -2605,3 +2605,61 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     animation:none!important;
   }
 }
+
+
+/* LURIA GLOBAL CONTENT PATTERN — EXACT DASHBOARD v78 — 2026-10-04 */
+@media (min-width:981px){
+  /* Fora do Dashboard, replica EXATAMENTE o pattern aprovado da página inicial. */
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main{
+    position:relative!important;
+    isolation:isolate!important;
+    background-color:var(--surface)!important;
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 93%,transparent),
+        color-mix(in srgb,var(--surface) 93%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v37"),
+      url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v37")!important;
+    background-repeat:no-repeat,repeat,repeat!important;
+    background-size:100% 100%,138px 138px,138px 138px!important;
+    background-position:0 0,0 0,69px 69px!important;
+  }
+
+  :root[data-theme="dark"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main{
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 92%,transparent),
+        color-mix(in srgb,var(--surface) 92%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37"),
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37")!important;
+  }
+
+  :root[data-theme="leila-mood"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main{
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 92.5%,transparent),
+        color-mix(in srgb,var(--surface) 92.5%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v37"),
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v37")!important;
+  }
+
+  /* Remove o pattern alternativo que tinha sido colocado via pseudo-elemento. */
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main::before,
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main::after{
+    content:none!important;
+    display:none!important;
+    background:none!important;
+    opacity:0!important;
+    transform:none!important;
+  }
+
+  /* O conteúdo fica acima do fundo, como no Dashboard. */
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main > .page{
+    position:relative!important;
+    z-index:1!important;
+    background:transparent!important;
+  }
+}
