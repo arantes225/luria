@@ -2069,3 +2069,103 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     scrollbar-width:auto;
   }
 }
+
+
+/* LURIA GLOBAL SHELL — APPROVED SIZE + WHITE BRAND v72 — 2026-10-04 */
+@media (min-width:981px){
+  /* Tamanho aprovado do container: topo 10px, laterais/base 5px. */
+  body .app-shell{
+    width:auto!important;
+    max-width:none!important;
+    height:calc(100dvh - 15px)!important;
+    min-height:0!important;
+    margin-top:10px!important;
+    margin-left:5px!important;
+    margin-right:5px!important;
+    margin-bottom:5px!important;
+    padding:64px 3px 3px!important;
+    border-radius:24px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Mantém a área branca ocupando toda a largura interna disponível. */
+  body #sidebar.sidebar{
+    width:auto!important;
+    min-width:0!important;
+    height:100%!important;
+    margin:0!important;
+    border-radius:18px 0 0 18px!important;
+    overflow:visible!important;
+    background:var(--sidebar)!important;
+    background-clip:padding-box!important;
+  }
+
+  body .main{
+    width:auto!important;
+    max-width:none!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    border-radius:0 18px 18px 0!important;
+    background:var(--surface)!important;
+    background-clip:padding-box!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Marca correta na faixa azul: ícone LURIA branco + wordmark branco. */
+  body #sidebar.sidebar .sidebar-top{
+    position:absolute!important;
+    top:-58px!important;
+    left:10px!important;
+    right:auto!important;
+    height:52px!important;
+    display:flex!important;
+    align-items:center!important;
+    overflow:visible!important;
+    z-index:2147483000!important;
+  }
+
+  body #sidebar.sidebar .brand{
+    display:flex!important;
+    align-items:center!important;
+    gap:9px!important;
+    color:#fff!important;
+    overflow:visible!important;
+  }
+
+  body #sidebar.sidebar .brand .luria-theme-logo,
+  body #sidebar.sidebar #luria-brand-logo{
+    display:block!important;
+    width:48.4px!important;
+    height:48.4px!important;
+    min-width:48.4px!important;
+    min-height:48.4px!important;
+    flex:0 0 48.4px!important;
+    object-fit:contain!important;
+    opacity:1!important;
+    visibility:visible!important;
+    filter:brightness(0) invert(1)!important;
+  }
+
+  body #sidebar.sidebar .brand .brand-copy,
+  body #sidebar.sidebar .brand .brand-copy strong,
+  body #sidebar.sidebar .brand .brand-copy small{
+    display:block!important;
+    color:#fff!important;
+    visibility:visible!important;
+    opacity:1!important;
+  }
+
+  body #sidebar.sidebar .brand .brand-copy strong{
+    font-size:18px!important;
+    line-height:1!important;
+  }
+
+  body #sidebar.sidebar .brand .brand-copy small{
+    margin-top:2px!important;
+    font-size:9px!important;
+    line-height:1.15!important;
+    opacity:.92!important;
+  }
+}
