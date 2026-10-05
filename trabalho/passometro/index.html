@@ -145,6 +145,27 @@
     .pm-secondary{border:1px solid var(--border);background:var(--surface);color:var(--text)}
     .pm-primary{border:1px solid var(--accent);background:var(--accent);color:#fff}
     .pm-required{color:#d84b4b}
+    .pm-discharge-note{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
+    @media(max-width:700px){
+      html.pwa-standalone body.pm-dialog-open{overflow:hidden!important}
+      html.pwa-standalone .pm-dialog{
+        position:fixed!important;
+        inset:max(8px,env(safe-area-inset-top)) 8px max(8px,env(safe-area-inset-bottom)) 8px!important;
+        width:auto!important;
+        max-width:none!important;
+        height:auto!important;
+        max-height:none!important;
+        margin:0!important;
+        border-radius:16px!important;
+        z-index:1000!important;
+      }
+      html.pwa-standalone .pm-dialog>form{height:100%!important;max-height:100%!important}
+      html.pwa-standalone .pm-dialog .pm-form{min-height:0!important;overflow-y:auto!important;-webkit-overflow-scrolling:touch!important}
+      html.pwa-standalone .pm-dialog-fallback-open{display:block!important}
+      html.pwa-standalone .pm-dialog-fallback-open::before{
+        content:"";position:fixed;inset:0;background:rgba(8,20,35,.45);z-index:-1
+      }
+    }
     @media(max-width:980px){.pm-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.pm-detail-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:700px){
       .main{padding-left:12px!important;padding-right:12px!important}
@@ -1561,7 +1582,14 @@
       const pdf=await worker.get("pdf");
       return pdf.output("blob");
     }
-    function closeDialog(id){ const d=document.getElementById(id); if(d?.open) d.close(); }
+    function closeDialog(id){
+      const d=document.getElementById(id);
+      if(!d) return;
+      if(typeof d.close==="function" && d.open){ try{ d.close(); }catch{} }
+      d.removeAttribute("open");
+      d.classList.remove("pm-dialog-fallback-open");
+      document.body.classList.remove("pm-dialog-open");
+    }
     $$("[data-close-dialog]").forEach(b=>b.addEventListener("click",()=>closeDialog(b.dataset.closeDialog)));
     $("#pm-new").addEventListener("click",()=>{
       state.editingDeckId=null;
@@ -1756,7 +1784,25 @@
       $("#pm-antibiotics").innerHTML=""; (p.antibiotics||[]).forEach(addAntibioticRow);
     }
 
-    $("#pm-add-patient").addEventListener("click",()=>{ resetPatientForm(); $("#pm-patient-dialog").showModal(); });
+    function openPatientDialog(){
+      resetPatientForm();
+      const dialog=$("#pm-patient-dialog");
+      if(!dialog) return;
+      document.body.classList.add("pm-dialog-open");
+      try{
+        if(typeof dialog.showModal==="function"){
+          if(!dialog.open) dialog.showModal();
+        }else{
+          dialog.setAttribute("open","");
+          dialog.classList.add("pm-dialog-fallback-open");
+        }
+      }catch(err){
+        console.warn("Passômetro: fallback de abertura do paciente.",err);
+        dialog.setAttribute("open","");
+        dialog.classList.add("pm-dialog-fallback-open");
+      }
+    }
+    $("#pm-add-patient").addEventListener("click",openPatientDialog);
     $("#pm-patients").addEventListener("click",e=>{
       const card=e.target.closest("[data-patient-id]"); if(!card) return;
       const p=(activeDeck()?.patients||[]).find(x=>x.id===card.dataset.patientId); if(!p) return;
