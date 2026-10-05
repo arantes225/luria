@@ -15,11 +15,26 @@
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/apostilas/">
   <style>
-    .books-page{display:grid;gap:14px;padding-bottom:30px}.books-head{display:flex;align-items:end;justify-content:space-between;gap:16px;padding:18px 20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+    .books-page{display:grid;gap:16px;padding-bottom:30px}
+    .books-head{display:flex;align-items:end;justify-content:space-between;gap:16px;padding:18px 20px;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
     .books-head h1{margin:0;font-size:22px;font-weight:500}.books-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.books-back{color:var(--accent);font-size:12px;text-decoration:none}
-    .books-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.book-area{min-height:180px;padding:18px;border:1px solid var(--border);border-radius:16px;background:var(--surface);display:flex;flex-direction:column;box-sizing:border-box}.book-area span{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:var(--accent-soft);color:var(--accent);font-size:18px}.book-area h2{margin:18px 0 6px;font-size:14px;font-weight:500}.book-area p{margin:0;color:var(--muted);font-size:11px;line-height:1.45}.book-area small{margin-top:auto;padding-top:18px;color:var(--muted);font-size:10px}
+    .covers-grid,.library-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+    .cover-card,.book-card{position:relative;min-width:0;border:1px solid var(--border);border-radius:18px;background:var(--surface);overflow:hidden;box-shadow:0 8px 22px rgba(15,35,66,.045)}
+    .cover-thumb,.book-thumb{position:relative;aspect-ratio:240/339;background:#184888;overflow:hidden}
+    .cover-thumb img,.book-thumb img{display:block;width:100%;height:100%;object-fit:cover}
+    .cover-overlay{position:absolute;left:8%;right:8%;bottom:24%;padding:9px 10px;border-radius:10px;background:rgba(24,72,136,.93);color:#fff;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+    .cover-overlay strong{display:block;font-size:10px;font-weight:650;line-height:1.2;letter-spacing:.02em}.cover-overlay small{display:block;margin-top:3px;font-size:8px;line-height:1.2;color:rgba(255,255,255,.82)}
+    .cover-meta,.book-meta{padding:12px 13px 13px}.cover-meta strong,.book-meta strong{display:block;font-size:12px;font-weight:600;color:var(--text)}.cover-meta small,.book-meta small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
     .books-note{padding:15px 17px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:11px;background:var(--surface-2)}
-    @media(max-width:1100px){.books-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.books-grid{grid-template-columns:1fr}.books-head{align-items:flex-start;flex-direction:column}}
+    .section-title{display:flex;align-items:center;justify-content:space-between;gap:12px}.section-title h2{margin:0;font-size:15px;font-weight:600}.section-title small{color:var(--muted);font-size:10px}
+    .admin-create{display:none;padding:18px;border:1px solid var(--border);border-radius:18px;background:var(--surface)}
+    .admin-create.is-visible{display:grid;gap:14px}
+    .admin-create-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .admin-create label{display:grid;gap:6px;color:var(--muted);font-size:10px}.admin-create input,.admin-create select,.admin-create textarea{width:100%;min-height:40px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);padding:8px 10px;font:inherit}.admin-create textarea{min-height:76px;resize:vertical}
+    .admin-create-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.admin-status{color:var(--muted);font-size:10px}
+    .json-contract{padding:12px 14px;border-radius:12px;background:var(--surface-2);color:var(--muted);font-size:10px;line-height:1.5}.json-contract code{color:var(--text)}
+    .empty-library{grid-column:1/-1;padding:22px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:11px;text-align:center}
+    @media(max-width:1100px){.covers-grid,.library-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.covers-grid,.library-grid,.admin-create-grid{grid-template-columns:1fr}.books-head{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
 <body data-page="aprender">
@@ -29,20 +44,143 @@
       <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo LURIA</span><h1>Apostilas</h1></div></header>
       <section class="books-page">
         <div class="books-head"><div><h1>Apostilas</h1><p>Conteúdo estruturado por área para leitura e revisão.</p></div><a class="books-back" href="/aprender/">← Voltar para Aprender</a></div>
-        <div class="books-grid">
-          <article class="book-area"><span>CM</span><h2>Clínica Médica</h2><p>Cardiologia, Pneumologia, Gastro, Nefro, Endócrino, Hemato e mais.</p><small>Biblioteca em preparação</small></article>
-          <article class="book-area"><span>CG</span><h2>Cirurgia Geral</h2><p>Trauma, abdome agudo, perioperatório e temas cirúrgicos essenciais.</p><small>Biblioteca em preparação</small></article>
-          <article class="book-area"><span>GO</span><h2>Ginecologia e Obstetrícia</h2><p>Pré-natal, urgências obstétricas, ginecologia e rastreamento.</p><small>Biblioteca em preparação</small></article>
-          <article class="book-area"><span>PD</span><h2>Pediatria</h2><p>Puericultura, neonatologia, infectologia, urgências e crescimento.</p><small>Biblioteca em preparação</small></article>
-          <article class="book-area"><span>MF</span><h2>Preventiva / MFC</h2><p>APS, epidemiologia, prevenção, rastreamento e políticas de saúde.</p><small>Biblioteca em preparação</small></article>
-        </div>
-        <div class="books-note">As apostilas entram aqui conforme forem publicadas. A estrutura já está pronta para receber o conteúdo sem criar novas camadas de navegação.</div>
+
+        <div class="section-title"><h2>Capas oficiais</h2><small>WEBP otimizado · cada arquivo abaixo de 150 KB</small></div>
+        <div class="covers-grid" id="covers-grid"></div>
+
+        <section class="admin-create" id="admin-create">
+          <div class="section-title"><h2>Criar apostila</h2><small>A capa é escolhida automaticamente pela área.</small></div>
+          <div class="admin-create-grid">
+            <label>Área
+              <select id="book-area">
+                <option value="clinica_medica">Clínica Médica</option>
+                <option value="cirurgia_geral">Cirurgia Geral</option>
+                <option value="ginecologia_obstetricia">Ginecologia e Obstetrícia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="medicina_preventiva">Medicina Preventiva / MFC</option>
+              </select>
+            </label>
+            <label>Título<input id="book-title" placeholder="Ex.: Insuficiência cardíaca"></label>
+            <label>Matéria<input id="book-materia" placeholder="Ex.: Cardiologia"></label>
+            <label>Tema<input id="book-tema" placeholder="Ex.: Insuficiência cardíaca com fração de ejeção reduzida"></label>
+            <label style="grid-column:1/-1">URL do conteúdo<input id="book-url" placeholder="/apostilas/... ou URL do PDF"></label>
+          </div>
+          <div class="json-contract">
+            Ao gerar uma apostila por IA, o texto/JSON deve apontar para a capa com <code>cover_key</code>. Valores aceitos:
+            <code>clinica_medica</code>, <code>cirurgia_geral</code>, <code>ginecologia_obstetricia</code>, <code>pediatria</code> e <code>medicina_preventiva</code>.
+            Se <code>cover_key</code> vier ausente, o sistema resolve automaticamente a partir da área.
+          </div>
+          <div class="admin-create-actions">
+            <button class="button primary" id="create-book" type="button">Criar apostila</button>
+            <label style="display:flex;align-items:center;gap:7px"><input id="book-published" type="checkbox" style="width:auto;min-height:0"> Publicar agora</label>
+            <span class="admin-status" id="admin-status"></span>
+          </div>
+        </section>
+
+        <div class="section-title"><h2>Biblioteca</h2><small id="library-count">Carregando...</small></div>
+        <div class="library-grid" id="library-grid"><div class="empty-library">Carregando apostilas...</div></div>
+
+        <div class="books-note">As capas seguem os cinco modelos enviados: Cirurgia Geral, Pediatria, Medicina Preventiva, Ginecologia e Obstetrícia e Clínica Médica. O sistema não duplica a imagem em cada apostila: cada registro guarda apenas a <b>cover_key</b> e reutiliza o modelo correspondente.</div>
       </section>
     </div></main>
   </div>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
   <script src="/assets/js/supabase.js?v=auth4"></script>
   <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
+  <script>
+  (()=>{"use strict";
+    const sb=window.supabaseClient;
+    const manifest={
+      clinica_medica:{label:"Clínica Médica",file:"/assets/data/apostila-covers/clinica_medica.txt",bytes:4722},
+      cirurgia_geral:{label:"Cirurgia Geral",file:"/assets/data/apostila-covers/cirurgia_geral.txt",bytes:6436},
+      ginecologia_obstetricia:{label:"Ginecologia e Obstetrícia",file:"/assets/data/apostila-covers/ginecologia_obstetricia.txt",bytes:5020},
+      pediatria:{label:"Pediatria",file:"/assets/data/apostila-covers/pediatria.txt",bytes:3662},
+      medicina_preventiva:{label:"Medicina Preventiva / MFC",file:"/assets/data/apostila-covers/medicina_preventiva.txt",bytes:5502}
+    };
+    const cache={};
+    const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    function resolveCoverKey(value){
+      const s=norm(value);
+      if(s.includes("cirurg")) return "cirurgia_geral";
+      if(s.includes("pediatr")) return "pediatria";
+      if(s.includes("gine")||s.includes("obst")) return "ginecologia_obstetricia";
+      if(s.includes("prevent")||s.includes("mfc")||s.includes("famil")) return "medicina_preventiva";
+      return "clinica_medica";
+    }
+    async function coverSrc(key){
+      key=manifest[key]?key:resolveCoverKey(key);
+      if(cache[key]) return cache[key];
+      const text=await fetch(manifest[key].file,{cache:"force-cache"}).then(r=>r.text());
+      cache[key]=text.trim();
+      return cache[key];
+    }
+    async function renderOfficialCovers(){
+      const root=document.getElementById("covers-grid");
+      root.innerHTML="";
+      for(const [key,item] of Object.entries(manifest)){
+        const src=await coverSrc(key);
+        const card=document.createElement("article");
+        card.className="cover-card";
+        card.innerHTML='<div class="cover-thumb"><img alt="Capa '+item.label+'"><div class="cover-overlay"><strong>'+item.label+'</strong><small>Modelo automático da apostila</small></div></div><div class="cover-meta"><strong>'+item.label+'</strong><small>'+Math.ceil(item.bytes/1024)+' KB · WEBP</small></div>';
+        card.querySelector("img").src=src;
+        root.appendChild(card);
+      }
+    }
+    async function renderLibrary(){
+      const root=document.getElementById("library-grid");
+      const count=document.getElementById("library-count");
+      const {data,error}=await sb.from("apostilas").select("id,area,materia,tema,titulo,cover_key,content_url,is_published,created_at").order("created_at",{ascending:false});
+      if(error){root.innerHTML='<div class="empty-library">Não foi possível carregar a biblioteca.</div>';count.textContent="";return;}
+      const items=data||[];
+      count.textContent=items.length+" apostila"+(items.length===1?"":"s");
+      if(!items.length){root.innerHTML='<div class="empty-library">Nenhuma apostila publicada ainda.</div>';return;}
+      root.innerHTML="";
+      for(const book of items){
+        const key=manifest[book.cover_key]?book.cover_key:resolveCoverKey(book.area);
+        const src=await coverSrc(key);
+        const el=document.createElement(book.content_url?"a":"article");
+        el.className="book-card";
+        if(book.content_url){el.href=book.content_url;el.style.textDecoration="none";}
+        el.innerHTML='<div class="book-thumb"><img alt=""><div class="cover-overlay"><strong></strong><small></small></div></div><div class="book-meta"><strong></strong><small></small></div>';
+        el.querySelector("img").src=src;
+        el.querySelector("img").alt="Capa "+book.titulo;
+        el.querySelector(".cover-overlay strong").textContent=book.materia||manifest[key].label;
+        el.querySelector(".cover-overlay small").textContent=book.tema||book.titulo;
+        el.querySelector(".book-meta strong").textContent=book.titulo;
+        el.querySelector(".book-meta small").textContent=(book.materia||manifest[key].label)+(book.is_published?"":" · Rascunho");
+        root.appendChild(el);
+      }
+    }
+    async function setupAdmin(){
+      try{
+        const {data}=await sb.rpc("is_admin");
+        if(!data)return;
+        document.getElementById("admin-create").classList.add("is-visible");
+        document.getElementById("create-book").addEventListener("click",async()=>{
+          const status=document.getElementById("admin-status");
+          const area=document.getElementById("book-area").value;
+          const titulo=document.getElementById("book-title").value.trim();
+          const materia=document.getElementById("book-materia").value.trim();
+          const tema=document.getElementById("book-tema").value.trim();
+          const content_url=document.getElementById("book-url").value.trim()||null;
+          const is_published=document.getElementById("book-published").checked;
+          if(!titulo){status.textContent="Informe o título.";return;}
+          status.textContent="Salvando...";
+          const {error}=await sb.from("apostilas").insert({area:manifest[area]?.label||area,materia,tema,titulo,cover_key:area,content_url,is_published});
+          if(error){status.textContent="Erro: "+error.message;return;}
+          status.textContent="Apostila criada com a capa correta.";
+          document.getElementById("book-title").value="";
+          document.getElementById("book-materia").value="";
+          document.getElementById("book-tema").value="";
+          document.getElementById("book-url").value="";
+          await renderLibrary();
+        });
+      }catch{}
+    }
+    window.LuriaApostilaCover={manifest,resolveCoverKey,coverSrc};
+    Promise.all([renderOfficialCovers(),renderLibrary(),setupAdmin()]);
+  })();
+  </script>
   <script defer src="/assets/js/pwa.js?v=3"></script>
 </body>
 </html>
