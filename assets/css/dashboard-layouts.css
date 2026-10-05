@@ -8907,3 +8907,56 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     max-height:118px!important;
   }
 }
+
+
+/* DASHBOARD 1 — LOWER ROW OVERLAY FIX v59 — 2026-10-05 */
+@media (min-width:981px){
+  /* Os cards da faixa inferior precisam sobrepor a faixa visual intermediária.
+     O problema aqui é stacking/overflow, não altura do conteúdo. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page,
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    overflow:visible!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    position:relative!important;
+    isolation:isolate!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    position:relative!important;
+    z-index:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    position:relative!important;
+    z-index:20!important;
+    margin-top:-18px!important;
+    transform:none!important;
+    translate:none!important;
+    box-shadow:0 8px 18px rgba(26,79,117,.08)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main::before,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main::after,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1::before,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1::after{
+    z-index:0!important;
+    pointer-events:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main > *,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > *{
+    position:relative!important;
+    z-index:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    z-index:20!important;
+  }
+}
