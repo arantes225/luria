@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v270-dark-pattern";
+const CACHE_VERSION = "luria-pwa-v271-dashboard-pattern";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -19,11 +19,11 @@ const APP_SHELL = [
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/css/style.css?v=20261004-scrollbar-thumb-only",
-  "/assets/css/luria-brand-v5.css?v=20261004-dark-pattern-v77",
+  "/assets/css/luria-brand-v5.css?v=20261004-dashboard-pattern-v78",
   "/assets/css/dashboard-layouts.css?v=20261004-dashboard-master-v35",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=20261004-dark-pattern-v77",
+  "/assets/js/app.js?v=20261004-dashboard-pattern-v78",
   "/assets/js/dashboard-layouts.js?v=20261004-alex-session-v1",
   "/assets/js/luria-command-center.js?v=20261002-1",
   "/assets/css/luria-command-center.css?v=20261002-1",
