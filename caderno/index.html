@@ -26,6 +26,155 @@
   <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
 <style id="luria-page-font-lock-v56">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}html body :where(code,pre,kbd,samp),html body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}</style>  <script src="/assets/js/medical-icons.js?v=2.0"></script>
+<style id="notebook-apostila-outline-v1">
+@media (min-width:901px){
+  body[data-page="caderno"] .note-studio{
+    grid-template-columns:196px minmax(0,1fr)!important;
+    gap:14px!important;
+    align-items:start!important;
+  }
+  body[data-page="caderno"] .note-tree.note-outline-apostila{
+    position:sticky!important;
+    top:14px!important;
+    align-self:start!important;
+    width:auto!important;
+    max-height:calc(100dvh - 32px)!important;
+    padding:14px!important;
+    border:1px solid var(--border)!important;
+    border-radius:16px!important;
+    background:var(--surface)!important;
+    box-shadow:0 8px 22px rgba(15,35,66,.04)!important;
+    overflow:auto!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 60%,transparent) transparent!important;
+  }
+}
+body[data-page="caderno"] .note-outline-apostila .note-outline-back{
+  display:flex!important;
+  align-items:center!important;
+  width:100%!important;
+  min-height:34px!important;
+  margin:0 0 12px!important;
+  padding:0 9px!important;
+  border:1px solid var(--border)!important;
+  border-radius:9px!important;
+  background:var(--surface-2)!important;
+  color:var(--accent)!important;
+  font:inherit!important;
+  font-size:9.6px!important;
+  font-weight:600!important;
+  line-height:1!important;
+  text-align:left!important;
+  cursor:pointer!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-outline-back:hover{
+  background:var(--accent-soft)!important;
+  border-color:color-mix(in srgb,var(--accent) 28%,var(--border))!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-tree-head{
+  min-height:0!important;
+  margin:0!important;
+  padding:4px 3px 10px!important;
+  border:0!important;
+  border-bottom:1px solid var(--border)!important;
+  background:transparent!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-tree-head small{
+  display:block!important;
+  color:var(--muted)!important;
+  font-size:8px!important;
+  letter-spacing:.06em!important;
+  text-transform:uppercase!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-tree-head strong{
+  display:block!important;
+  margin-top:3px!important;
+  color:var(--text)!important;
+  font-size:12.5px!important;
+  line-height:1.2!important;
+  font-weight:600!important;
+}
+body[data-page="caderno"] .note-outline-apostila .note-outline-help{
+  margin:8px 3px 3px!important;
+  color:var(--muted)!important;
+  font-size:8.6px!important;
+  line-height:1.35!important;
+}
+body[data-page="caderno"] .note-outline-apostila #notebook-topic-list{
+  display:grid!important;
+  gap:3px!important;
+  margin-top:8px!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item,
+body[data-page="caderno"] .note-outline-apostila .note-outline-item,
+body[data-page="caderno"] .note-outline-apostila .notebook-outline-item{
+  display:flex!important;
+  align-items:center!important;
+  width:100%!important;
+  min-height:30px!important;
+  margin:0!important;
+  padding:6px 8px!important;
+  border:0!important;
+  border-left:3px solid transparent!important;
+  border-radius:8px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font:inherit!important;
+  font-size:9.6px!important;
+  line-height:1.2!important;
+  text-align:left!important;
+  box-shadow:none!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item:hover,
+body[data-page="caderno"] .note-outline-apostila .note-outline-item:hover,
+body[data-page="caderno"] .note-outline-apostila .notebook-outline-item:hover{
+  background:var(--accent-soft)!important;
+  color:var(--accent)!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item strong{
+  font-size:9.6px!important;
+  line-height:1.2!important;
+  font-weight:500!important;
+  color:inherit!important;
+}
+body[data-page="caderno"] .note-outline-apostila .notebook-topic-item small{
+  display:none!important;
+}
+body[data-page="caderno"] .note-outline-apostila #notebook-topic-panel-toggle{
+  width:24px!important;
+  height:24px!important;
+  min-width:24px!important;
+  border:0!important;
+  border-radius:7px!important;
+  background:var(--surface-2)!important;
+  color:var(--accent)!important;
+}
+@media(max-width:900px){
+  body[data-page="caderno"] .note-tree.note-outline-apostila{
+    position:relative!important;
+    top:auto!important;
+    max-height:none!important;
+    padding:12px!important;
+  }
+  body[data-page="caderno"] .note-outline-apostila #notebook-topic-list{
+    display:flex!important;
+    gap:6px!important;
+    overflow-x:auto!important;
+    padding-bottom:2px!important;
+  }
+  body[data-page="caderno"] .note-outline-apostila .notebook-topic-item,
+  body[data-page="caderno"] .note-outline-apostila .note-outline-item,
+  body[data-page="caderno"] .note-outline-apostila .notebook-outline-item{
+    flex:0 0 auto!important;
+    width:auto!important;
+    white-space:nowrap!important;
+    border-left:0!important;
+    border-bottom:2px solid transparent!important;
+  }
+}
+</style>
 </head>
 
 <body data-page="caderno">
@@ -46,8 +195,9 @@
 <section id="notebook-view-editor" class="notebook-view" hidden>
 <section class="luria-page-spotlight" aria-label="Anotações"><div class="luria-page-spotlight-copy"><strong>Anotações</strong></div></section>
 <div class="note-studio-wrap"><button id="notebook-back-library" class="note-back-library note-back-library-top" type="button" aria-label="Voltar para Meus Cadernos">← <span>Meus Cadernos</span></button><div class="note-studio">
-<aside class="note-tree">
- <div class="note-tree-head"><div><small>Anotação atual</small><strong>Estrutura do texto</strong></div><button id="notebook-topic-panel-toggle" type="button" aria-expanded="true"><span id="notebook-topic-panel-arrow">‹</span></button></div>
+<aside class="note-tree note-outline-apostila">
+ <button id="notebook-back-library" class="note-outline-back" type="button">← Voltar para a biblioteca</button>
+ <div class="note-tree-head"><div><small>Anotação atual</small><strong>Estrutura do conteúdo</strong></div><button id="notebook-topic-panel-toggle" type="button" aria-expanded="true"><span id="notebook-topic-panel-arrow">‹</span></button></div>
  <div class="note-outline-help">Navegue pelos títulos e subtítulos desta anotação.</div><input id="notebook-topic-search" type="search" hidden><button id="notebook-filter-toggle" type="button" hidden>⌁</button>
  <div id="notebook-filter-menu" class="notebook-filter-menu" hidden><button id="notebook-filter-close" type="button">×</button><select id="notebook-area-filter"><option value="">Todas as áreas</option></select><button id="notebook-filter-clear" type="button">Limpar</button><button id="notebook-filter-apply" type="button">Aplicar</button></div>
  <button id="notebook-new-free-page" class="note-new-page" type="button" hidden>＋ Nova página</button><span id="notebook-topic-count" hidden>0</span>
