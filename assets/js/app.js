@@ -8490,7 +8490,7 @@ iniciarApp();
 
   const ensure = () => {
     if (!document.querySelector(".app-shell")) return;
-    const href = "/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74";
+    const href = "/assets/css/luria-brand-v5.css?v=20261004-dark-pattern-v77";
     let link = document.getElementById("luria-global-master-css");
     if (!link) {
       link = document.createElement("link");
