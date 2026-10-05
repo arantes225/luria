@@ -38,10 +38,10 @@
     .flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.flow-step{padding:10px;border-radius:12px;background:var(--surface);border:1px solid var(--border);text-align:center}.flow-step b{display:block;font-size:11px}.flow-step small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
     .meal-flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.meal-flow span{padding:10px 6px;border-radius:10px;background:var(--surface);border:1px solid var(--border);font-size:9px;text-align:center}
     .book-source{font-size:10px;color:var(--muted);line-height:1.5}.book-source a{color:var(--accent)}
-    .mindmap-section{overflow:hidden}
+    .mindmap-section{display:block!important;position:relative!important;clear:both!important;overflow:hidden!important;margin:0!important;padding:24px 26px!important;border:1px solid var(--border)!important;border-radius:18px!important;background:var(--surface)!important;box-shadow:0 8px 22px rgba(15,35,66,.04)!important;isolation:isolate!important}
     .mindmap-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:18px}
     .mindmap-head h2{margin:0}.mindmap-head p{margin:0;max-width:540px;color:var(--muted);font-size:12px!important;line-height:1.45!important;text-align:right}
-    .mindmap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 210px minmax(0,1fr);grid-template-rows:auto auto;gap:18px 22px;align-items:stretch;padding:10px 0 2px}
+    .mindmap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) 210px minmax(0,1fr);grid-template-rows:auto auto;gap:18px 22px;align-items:stretch;padding:10px 0 2px}
     .mindmap:before,.mindmap:after{content:"";position:absolute;left:50%;top:50%;background:color-mix(in srgb,var(--accent) 34%,var(--border));z-index:0}
     .mindmap:before{width:2px;height:72%;transform:translate(-50%,-50%)}
     .mindmap:after{height:2px;width:70%;transform:translate(-50%,-50%)}
@@ -157,6 +157,31 @@
                 </ul>
               </div>
             </div>
+          <section class="book-section">
+            <h2>1. Definição</h2>
+            <p><strong>Diabetes mellitus gestacional (DMG)</strong> é a hiperglicemia reconhecida pela primeira vez durante a gestação em uma mulher que não preenche critérios de diabetes mellitus fora da gravidez. Em termos práticos, a gestação funciona como um “teste metabólico”: à medida que a placenta aumenta a resistência à insulina, o organismo materno precisa produzir mais insulina para manter a glicose normal. Quando essa compensação é insuficiente, surge o DMG.</p>
+
+            <h3>1.1 DMG não é sinônimo de diabetes pré-gestacional</h3>
+            <p>O <strong>diabetes pré-gestacional</strong> já existia antes da gravidez, ainda que não tivesse sido diagnosticado. Já o <strong>diabetes diagnosticado na gestação (overt diabetes)</strong> é identificado pela primeira vez no pré-natal, mas apresenta valores que atingem os critérios habituais de diabetes fora da gravidez. Essa distinção é importante porque o overt diabetes se aproxima, em risco e manejo, do diabetes pré-gestacional.</p>
+
+            <table class="book-table">
+              <thead><tr><th>Categoria</th><th>Ideia central</th><th>Exemplo</th></tr></thead>
+              <tbody>
+                <tr><td>DMG</td><td>Hiperglicemia própria da gestação, abaixo dos critérios de diabetes manifesto</td><td>Jejum de 102 mg/dL</td></tr>
+                <tr><td>Diabetes diagnosticado na gestação</td><td>Hiperglicemia já em faixa diagnóstica de diabetes fora da gravidez</td><td>Jejum de 132 mg/dL confirmado</td></tr>
+                <tr><td>Diabetes pré-gestacional</td><td>DM1 ou DM2 conhecido antes da concepção</td><td>Paciente com DM1 em uso prévio de insulina</td></tr>
+              </tbody>
+            </table>
+
+            <h3>1.2 Por que o DMG importa?</h3>
+            <p>A hiperglicemia materna atravessa a placenta e modifica o metabolismo fetal. O feto passa a produzir mais insulina, o que favorece crescimento excessivo, aumento da circunferência abdominal e uma série de complicações perinatais. Para a mãe, o DMG se associa a maior risco de doença hipertensiva, intervenções obstétricas e desenvolvimento futuro de DM2.</p>
+
+            <h3>1.3 Frequência</h3>
+            <p>A hiperglicemia é uma das alterações metabólicas mais frequentes da gestação. A Diretriz da Sociedade Brasileira de Diabetes cita estimativa de que cerca de <strong>16% dos nascidos vivos</strong> ocorram em mulheres que tiveram alguma forma de hiperglicemia durante a gravidez. Isso inclui DMG, diabetes prévio e diabetes diagnosticado durante a gestação.</p>
+
+            <div class="book-callout"><strong>Conceito-chave</strong>O DMG não é apenas “glicose um pouco alta”. É uma condição metabólica que modifica o ambiente intrauterino e exige acompanhamento materno-fetal até o parto e reclassificação metabólica no puerpério.</div>
+          </section>
+
           <section class="book-section">
             <h2>1. Definição</h2>
             <p><strong>Diabetes mellitus gestacional (DMG)</strong> é a hiperglicemia reconhecida pela primeira vez durante a gestação em uma mulher que não preenche critérios de diabetes mellitus fora da gravidez. Em termos práticos, a gestação funciona como um “teste metabólico”: à medida que a placenta aumenta a resistência à insulina, o organismo materno precisa produzir mais insulina para manter a glicose normal. Quando essa compensação é insuficiente, surge o DMG.</p>
