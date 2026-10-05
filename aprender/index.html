@@ -12,6 +12,7 @@
   <meta name="theme-color" content="#0A2342">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74">
+  <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
   <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/aprender/">
   <style>
@@ -95,6 +96,12 @@
       .continue-row{grid-template-columns:1fr}.continue-btn{grid-column:1/-1;width:100%}
     }
   </style>
+<style id="learn-spotlight-copy-v1">
+body[data-page="aprender"] .luria-page-spotlight-copy{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:7px!important}
+body[data-page="aprender"] .luria-page-spotlight-copy strong{color:#fff!important;font-weight:500!important;letter-spacing:-.45px!important}
+body[data-page="aprender"] .luria-page-spotlight-copy small{display:block!important;margin:0!important;color:rgba(255,255,255,.82)!important;font-size:13px!important;line-height:1.35!important;font-weight:400!important}
+@media(max-width:700px){body[data-page="aprender"] .luria-page-spotlight-copy{gap:5px!important}body[data-page="aprender"] .luria-page-spotlight-copy small{font-size:11px!important}}
+</style>
 </head>
 <body data-page="aprender">
   <div class="app-shell">
@@ -108,10 +115,12 @@
         </header>
 
         <section class="learn-page" aria-label="Aprender">
-          <div class="learn-heading">
-            <h1>Aprender</h1>
-            <p>Seu conteúdo, suas anotações e seu professor sempre com você.</p>
-          </div>
+          <section class="luria-page-spotlight" aria-label="Aprender">
+        <div class="luria-page-spotlight-copy">
+          <strong>Aprender</strong>
+          <small>Escolha como você quer aprender agora.</small>
+        </div>
+      </section>
 
           <section class="alex-hero" data-admin-only hidden>
             <div class="alex-visual" aria-hidden="true">
