@@ -8853,3 +8853,107 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* Sidebar bottom dock v225 — 8px reais da borda inferior */
+(function ensureSidebarBottomDockV225(){
+  if(document.getElementById("luria-sidebar-bottom-dock-v225")) return;
+  const style=document.createElement("style");
+  style.id="luria-sidebar-bottom-dock-v225";
+  style.textContent=`
+    #sidebar.sidebar{
+      position:sticky!important;
+      top:0!important;
+      height:100vh!important;
+      height:100dvh!important;
+      overflow:hidden!important;
+      display:flex!important;
+      flex-direction:column!important;
+    }
+
+    #sidebar.sidebar .sidebar-top{
+      flex:0 0 auto!important;
+    }
+
+    #sidebar.sidebar .nav,
+    #sidebar.sidebar .nav-study,
+    #sidebar.sidebar .nav-work,
+    body[data-page^="trabalho_"] #sidebar.sidebar .nav{
+      flex:1 1 auto!important;
+      min-height:0!important;
+      overflow-y:auto!important;
+      overflow-x:hidden!important;
+      padding-bottom:126px!important;
+      scrollbar-width:none!important;
+    }
+
+    #sidebar.sidebar .nav::-webkit-scrollbar,
+    #sidebar.sidebar .nav-study::-webkit-scrollbar,
+    #sidebar.sidebar .nav-work::-webkit-scrollbar{
+      display:none!important;
+    }
+
+    #sidebar.sidebar .sidebar-footer,
+    #sidebar.sidebar .sidebar-footer-study,
+    #sidebar.sidebar .sidebar-footer-work,
+    body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+      position:absolute!important;
+      left:18px!important;
+      right:18px!important;
+      bottom:8px!important;
+      inset-block-end:8px!important;
+      width:auto!important;
+      margin:0!important;
+      padding:0!important;
+      display:flex!important;
+      flex-direction:column!important;
+      gap:7px!important;
+      align-self:auto!important;
+      background:var(--sidebar)!important;
+      z-index:60!important;
+      transform:none!important;
+      translate:none!important;
+      box-sizing:border-box!important;
+    }
+
+    #sidebar.sidebar .streak-mini,
+    #sidebar.sidebar .luria-mode-footer-switch,
+    #sidebar.sidebar .work-pcr-button{
+      flex:0 0 auto!important;
+      margin:0!important;
+    }
+
+    @media(max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        position:fixed!important;
+        top:0!important;
+        bottom:auto!important;
+        height:100vh!important;
+        height:100dvh!important;
+        overflow:hidden!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+        position:absolute!important;
+        left:15px!important;
+        right:15px!important;
+        bottom:calc(8px + env(safe-area-inset-bottom))!important;
+        inset-block-end:calc(8px + env(safe-area-inset-bottom))!important;
+        width:auto!important;
+        margin:0!important;
+        padding:0!important;
+      }
+
+      html.pwa-standalone body #sidebar.sidebar .nav,
+      html.pwa-standalone body #sidebar.sidebar .nav-study,
+      html.pwa-standalone body #sidebar.sidebar .nav-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav{
+        padding-bottom:132px!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
