@@ -65,7 +65,7 @@
             <label style="grid-column:1/-1">URL do conteúdo<input id="book-url" placeholder="/apostilas/... ou URL do PDF"></label>
           </div>
           <div class="json-contract">
-            A capa-base é sempre crua. Ao gerar uma apostila, use <code>area</code> apenas para escolher o modelo, <code>materia</code> como subárea e <code>tema</code> como tema específico. O texto é aplicado sobre a arte com fundo totalmente transparente. O JSON também deve apontar para a capa com <code>cover_key</code>. Valores aceitos:
+            A capa-base é sempre crua. Ao gerar uma apostila, use <code>area</code> apenas para escolher o modelo, <code>materia</code> como subárea e <code>tema</code> como tema específico. O texto é aplicado sobre a arte com fundo totalmente transparente. O JSON também deve apontar para a capa com <code>cover_key</code>.<br><br><strong>Padrão editorial obrigatório:</strong> nível de aprofundamento <strong>ALTO</strong>. A apostila deve ser suficiente como material principal e autônomo de estudo, sem presumir que o leitor terá outra fonte para completar lacunas. Conceitos, fisiopatologia, diagnóstico, diferenciais, conduta, tratamento, doses quando pertinentes, monitorização, complicações, seguimento e raciocínio clínico devem ser explicados de forma completa, progressiva e didática. Não usar resumos telegráficos quando o tema exigir desenvolvimento. Valores aceitos:
             <code>clinica_medica</code>, <code>cirurgia_geral</code>, <code>ginecologia_obstetricia</code>, <code>pediatria</code> e <code>medicina_preventiva</code>.
             Se <code>cover_key</code> vier ausente, o sistema resolve automaticamente a partir da área.
           </div>
@@ -197,6 +197,20 @@
         });
       }catch{}
     }
+    window.LuriaApostilaGenerationRules={
+      depth:"high",
+      soleSourceAssumption:true,
+      principles:[
+        "A apostila deve funcionar como material principal e autônomo de estudo.",
+        "Não presumir conhecimento externo para preencher lacunas essenciais.",
+        "Explicar mecanismos e raciocínio, não apenas listar fatos.",
+        "Desenvolver definição, fisiopatologia, quadro clínico, diagnóstico, diferenciais, tratamento, doses quando pertinentes, monitorização, complicações, prognóstico e seguimento conforme aplicável.",
+        "Organizar o conteúdo do básico ao avançado, com transições claras entre tópicos.",
+        "Usar tabelas, algoritmos e callouts apenas quando melhorarem a compreensão; nunca substituir explicação necessária por um bloco visual curto.",
+        "Referências devem aparecer em lista organizada e priorizar diretrizes e entidades brasileiras quando disponíveis.",
+        "Quando houver material interno da LURIA/Drive sobre o tema, usar sua estrutura e cobertura como referência, sem perpetuar conteúdo desatualizado quando houver diretriz mais recente."
+      ]
+    };
     window.LuriaApostilaCover={manifest,resolveCoverKey,coverSrc};
     Promise.allSettled([renderOfficialCovers(),renderLibrary(),setupAdmin()]);
   })();
