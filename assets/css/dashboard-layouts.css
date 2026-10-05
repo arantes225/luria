@@ -9812,3 +9812,31 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     overflow:auto!important;
   }
 }
+
+
+/* Dashboard v80 — callouts acima da camada decorativa de logos */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout] .main{
+    position:relative!important;
+    isolation:isolate!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+    z-index:0!important;
+    pointer-events:none!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+    position:relative!important;
+    z-index:20!important;
+    isolation:isolate!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-grid,
+  body[data-page="dashboard"][data-dashboard-layout] .dl-card{
+    position:relative!important;
+    z-index:2!important;
+  }
+}
