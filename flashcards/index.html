@@ -519,6 +519,34 @@ body[data-page="flashcards"] .library-filter-picker[data-library-picker="library
   }
 }
 </style>
+<style id="flash-home-lower-row-compact-v20261005">
+@media(min-width:981px){
+  /* Reduz 10px da linha inferior inteira para Continue + ações permanecerem alinhados. */
+  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+    height:calc(100dvh - 250px)!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-decks,
+  body[data-page="flashcards"] .flash-home-actions{
+    min-height:0!important;
+    height:100%!important;
+    max-height:100%!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Ações laterais mais unidas, mantendo as três dentro da mesma altura do Continue. */
+  body[data-page="flashcards"] .flash-home-actions{
+    gap:6px!important;
+    grid-template-rows:repeat(3,minmax(0,1fr))!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-action{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
