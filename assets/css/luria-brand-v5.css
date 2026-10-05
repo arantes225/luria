@@ -2690,3 +2690,41 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:1;
   }
 }
+
+
+/* LURIA v81 — corrige a fita inferior global do shell.
+   O painel principal agora ocupa a base inteira; a borda azul não corta o último callout. */
+@media (min-width:981px){
+  body.luria-global-shell-mounted > .app-shell,
+  body.luria-global-shell-mounted .app-shell{
+    padding-bottom:0!important;
+  }
+
+  body.luria-global-shell-mounted #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar,
+  body.luria-global-shell-mounted .main{
+    height:100%!important;
+    min-height:0!important;
+  }
+
+  body.luria-global-shell-mounted .main{
+    border-radius:0 18px 21px 0!important;
+  }
+
+  body.luria-global-shell-mounted #sidebar.sidebar{
+    border-radius:18px 0 0 21px!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page{
+    position:relative!important;
+    z-index:20!important;
+    padding-bottom:18px!important;
+    scroll-padding-bottom:18px!important;
+  }
+
+  body.luria-global-shell-mounted .main > .page > *{
+    position:relative;
+    z-index:2;
+  }
+}
