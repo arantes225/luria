@@ -9026,3 +9026,81 @@ iniciarApp();
   setTimeout(schedule,400);
   setTimeout(schedule,1000);
 })();
+
+
+/* Sidebar bottom stack v227 — switch a 8px da base, ofensiva 8px acima */
+(function ensureSidebarBottomStackV227(){
+  if(document.getElementById("luria-sidebar-bottom-stack-v227")) return;
+  const style=document.createElement("style");
+  style.id="luria-sidebar-bottom-stack-v227";
+  style.textContent=`
+    #sidebar.sidebar .sidebar-footer,
+    #sidebar.sidebar .sidebar-footer-study,
+    #sidebar.sidebar .sidebar-footer-work,
+    body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+      position:absolute!important;
+      left:18px!important;
+      right:18px!important;
+      bottom:8px!important;
+      width:auto!important;
+      height:124px!important;
+      min-height:124px!important;
+      max-height:124px!important;
+      margin:0!important;
+      padding:0!important;
+      display:block!important;
+      background:transparent!important;
+      overflow:visible!important;
+      z-index:80!important;
+    }
+
+    #sidebar.sidebar .luria-mode-footer-switch{
+      position:absolute!important;
+      left:0!important;
+      right:0!important;
+      bottom:0!important;
+      top:auto!important;
+      width:100%!important;
+      height:58px!important;
+      min-height:58px!important;
+      max-height:58px!important;
+      margin:0!important;
+      box-sizing:border-box!important;
+      transform:none!important;
+      translate:none!important;
+    }
+
+    #sidebar.sidebar .streak-mini,
+    body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button{
+      position:absolute!important;
+      left:0!important;
+      right:0!important;
+      bottom:66px!important;
+      top:auto!important;
+      width:100%!important;
+      height:58px!important;
+      min-height:58px!important;
+      max-height:58px!important;
+      margin:0!important;
+      box-sizing:border-box!important;
+      transform:none!important;
+      translate:none!important;
+    }
+
+    @media(max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+        left:15px!important;
+        right:15px!important;
+        bottom:calc(8px + env(safe-area-inset-bottom))!important;
+        width:auto!important;
+        height:124px!important;
+        min-height:124px!important;
+        max-height:124px!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
