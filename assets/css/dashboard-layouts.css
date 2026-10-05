@@ -8020,3 +8020,152 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     filter:brightness(0) invert(1)!important;
   }
 }
+
+
+/* DASHBOARD 1 — CONTAINER BALANCE v50 — 2026-10-04
+   Corrige a faixa principal: o bloco Atividades + Estudar agora volta a ter
+   mais largura que Resumo + Ofensiva, e todos os cards alinham pelas bordas. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-columns:minmax(0,1.58fr) minmax(340px,.92fr)!important;
+    grid-template-rows:340px 190px!important;
+    column-gap:14px!important;
+    row-gap:14px!important;
+    align-items:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    grid-column:1!important;
+    grid-row:1!important;
+    grid-template-columns:minmax(0,1.08fr) minmax(250px,.92fr)!important;
+    gap:14px!important;
+    height:340px!important;
+    min-height:340px!important;
+    max-height:340px!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1>.dl-card{
+    height:340px!important;
+    min-height:340px!important;
+    max-height:340px!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large{
+    height:340px!important;
+    min-height:340px!important;
+    max-height:340px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    grid-column:2!important;
+    grid-row:1!important;
+    display:grid!important;
+    grid-template-rows:163px 163px!important;
+    gap:14px!important;
+    height:340px!important;
+    min-height:340px!important;
+    max-height:340px!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side>.dl-card{
+    height:163px!important;
+    min-height:163px!important;
+    max-height:163px!important;
+    margin:0!important;
+    padding:13px 16px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body{
+    min-height:0!important;
+    height:auto!important;
+    grid-template-columns:74px minmax(0,1fr)!important;
+    gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary .dl-summary-body .dl-ring{
+    width:74px!important;
+    height:74px!important;
+    flex-basis:74px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    grid-template-columns:88px minmax(0,1fr)!important;
+    column-gap:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>.dl-streak-visual{
+    width:58px!important;
+    height:68px!important;
+    min-width:58px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak-value-dashboard1>strong{
+    font-size:13px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak .dl-weekdays{
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:7px 4px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    grid-column:1!important;
+    grid-row:2!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    grid-column:2!important;
+    grid-row:2!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    width:100%!important;
+    height:190px!important;
+    min-height:190px!important;
+    max-height:190px!important;
+    margin:0!important;
+    align-self:stretch!important;
+    border-radius:16px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding:13px 16px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat .dl-card-heading{
+    margin:0 0 9px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    grid-template-columns:minmax(110px,145px) minmax(100px,1fr) 38px!important;
+    min-height:20px!important;
+    margin:4px 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    padding:13px 16px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    min-height:128px!important;
+    height:128px!important;
+    padding:12px!important;
+  }
+}
+
+@media (min-width:981px) and (max-width:1180px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-columns:minmax(0,1.45fr) minmax(300px,.95fr)!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    grid-template-columns:minmax(0,1fr) minmax(220px,.9fr)!important;
+  }
+}
