@@ -7852,3 +7852,28 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     display:none!important;
   }
 }
+
+
+/* DASHBOARD 1 — PROGRESS CARD CONTENT FIT v45 — 2026-10-04 */
+@media (min-width:981px){
+  /* Progresso por área acompanha o conteúdo real em vez de ocupar a faixa inteira. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    height:auto!important;
+    min-height:146px!important;
+    max-height:none!important;
+    align-self:start!important;
+    justify-self:stretch!important;
+    padding:14px 16px 15px!important;
+    overflow:visible!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin:0 0 10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    margin:6px 0!important;
+    min-height:20px!important;
+    line-height:1.15!important;
+  }
+}
