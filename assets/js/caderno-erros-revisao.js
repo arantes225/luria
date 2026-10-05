@@ -37,7 +37,16 @@ function renderSidebars(){
 function renderCurrent(){
   const wrap=document.getElementById("error-review-card-wrap");
   const empty=document.getElementById("error-review-empty");
-  if(reviewIndex>=reviewItems.length||!reviewItems.length){wrap.hidden=true;empty.hidden=false;document.getElementById("error-review-progress").textContent=`${reviewItems.length} de ${reviewItems.length}`;renderSidebars();return}
+  if(reviewIndex>=reviewItems.length||!reviewItems.length){
+    wrap.hidden=true;
+    empty.hidden=false;
+    document.getElementById("error-review-progress").textContent=`${reviewItems.length} de ${reviewItems.length}`;
+    renderSidebars();
+    if(reviewItems.length&&reviewCompleted>=reviewItems.length){
+      window.LuriaGuidedStudy?.completeActiveStep?.("error-review-complete");
+    }
+    return
+  }
   wrap.hidden=false;empty.hidden=true;
   const item=reviewItems[reviewIndex];
   document.getElementById("error-review-area").textContent=canonicalArea(item.area);
