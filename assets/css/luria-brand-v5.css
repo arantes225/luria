@@ -1542,3 +1542,93 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     text-decoration:none!important;
   }
 }
+
+
+/* LURIA GLOBAL HEADER — DASHBOARD SETTINGS EVERYWHERE v68 — 2026-10-04 */
+@media (min-width:981px){
+  /* Mesma escala de logo aprovada no Dashboard. */
+  body #sidebar.sidebar .brand .luria-theme-logo,
+  body #sidebar.sidebar #luria-brand-logo{
+    width:48.4px!important;
+    height:48.4px!important;
+    flex:0 0 48.4px!important;
+  }
+
+  /* Mesmo conjunto compacto de controles em todas as páginas. */
+  body .topbar .luria-notifications{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    margin-left:auto!important;
+  }
+
+  body .topbar .luria-pomodoro-toggle,
+  body .topbar .luria-notification-toggle,
+  body .topbar .luria-profile-toggle{
+    height:43px!important;
+    min-height:43px!important;
+    box-sizing:border-box!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    border-radius:12px!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+    box-shadow:none!important;
+    backdrop-filter:blur(8px)!important;
+    -webkit-backdrop-filter:blur(8px)!important;
+  }
+
+  body .topbar .luria-notification-toggle,
+  body .topbar .luria-profile-toggle{
+    width:43px!important;
+    min-width:43px!important;
+    max-width:43px!important;
+    display:grid!important;
+    place-items:center!important;
+    padding:0!important;
+    line-height:1!important;
+  }
+
+  body .topbar .luria-pomodoro-toggle:hover,
+  body .topbar .luria-notification-toggle:hover,
+  body .topbar .luria-profile-toggle:hover,
+  body .topbar .luria-alex-topbar:hover{
+    background:rgba(255,255,255,.17)!important;
+    border-color:rgba(255,255,255,.40)!important;
+  }
+
+  /* Alex fica no bloco da direita em todas as páginas. */
+  body .topbar .luria-alex-topbar{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    position:static!important;
+    inset:auto!important;
+    transform:none!important;
+    height:43px!important;
+    min-height:43px!important;
+    min-width:74px!important;
+    padding:0 14px!important;
+    margin:0!important;
+    border:1px solid rgba(255,255,255,.28)!important;
+    border-radius:12px!important;
+    background:rgba(255,255,255,.10)!important;
+    color:#fff!important;
+    text-decoration:none!important;
+    font-size:15px!important;
+    font-weight:600!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    box-sizing:border-box!important;
+    backdrop-filter:blur(8px)!important;
+    -webkit-backdrop-filter:blur(8px)!important;
+  }
+
+  /* A busca visual foi removida: Ctrl/Cmd + K continua disponível. */
+  body .topbar #luria-global-search,
+  body .topbar [data-global-search-trigger],
+  body .topbar .global-search-trigger,
+  body .topbar .luria-global-search-trigger{
+    display:none!important;
+  }
+}
