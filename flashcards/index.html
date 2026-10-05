@@ -455,6 +455,40 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
   }
 }
 </style>
+<style id="flash-home-density-v20261005">
+/* Continue de onde parou: título direto + decks maiores e mais legíveis */
+body[data-page="flashcards"] .flash-home-decks-head{margin-bottom:8px!important;align-items:center!important}
+body[data-page="flashcards"] .flash-home-decks-head h2{margin:0!important;font-size:17px!important;line-height:1.15!important;font-weight:500!important}
+body[data-page="flashcards"] .flash-home-decks-head span{display:none!important}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck{
+  flex:0 0 220px!important;width:220px!important;padding:16px!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck h3{
+  margin:8px 0 3px!important;font-size:15px!important;line-height:1.18!important;
+  -webkit-line-clamp:2!important;
+}
+body[data-page="flashcards"] .page .flash-review-hub .flash-home-deck-area{font-size:9.5px!important}
+
+/* Ações: ícones e títulos menores para respirar dentro do viewport */
+body[data-page="flashcards"] .flash-home-action{
+  grid-template-columns:44px minmax(0,1fr) 28px!important;gap:9px!important;padding:0 12px!important;
+}
+body[data-page="flashcards"] .flash-home-action>i{
+  width:36px!important;height:36px!important;border-radius:10px!important;font-size:18px!important;
+}
+body[data-page="flashcards"] .flash-home-action>span strong{
+  font-size:15px!important;line-height:1.05!important;font-weight:600!important;
+}
+body[data-page="flashcards"] .flash-home-action>span small{
+  margin-top:3px!important;font-size:9px!important;line-height:1.1!important;
+}
+body[data-page="flashcards"] .flash-home-action>b{
+  width:28px!important;height:28px!important;font-size:19px!important;
+}
+@media(max-width:700px){
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck{flex-basis:205px!important;width:205px!important}
+}
+</style>
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -751,7 +785,7 @@ body[data-page="flashcards"] #review-launcher .review-launcher-action strong{
               </div>
             </div>
             <article class="flash-home-decks">
-              <div class="flash-home-decks-head"><div><span>Meus decks</span><h2>Continue de onde parou</h2></div></div>
+              <div class="flash-home-decks-head"><div><h2>Continue de onde parou</h2></div></div>
               <div id="flash-home-decks-list"><div class="flash-empty">Carregando seus decks...</div></div>
             </article>
             <aside class="flash-home-summary qs-home-week qs-home-week-compact error-side-card error-quick-metrics" aria-label="Métricas rápidas">
