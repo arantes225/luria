@@ -9484,3 +9484,34 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     max-height:68px!important;
   }
 }
+
+
+/* DASHBOARD 1 — SINGLE CALLOUT GAP v71 — 2026-10-05 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"]{
+    --dashboard-callout-gap:8px;
+  }
+
+  /* A mesma distância passa a governar a grade principal e todas as grades internas. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    gap:var(--dashboard-callout-gap)!important;
+    column-gap:var(--dashboard-callout-gap)!important;
+    row-gap:var(--dashboard-callout-gap)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    gap:var(--dashboard-callout-gap)!important;
+    column-gap:var(--dashboard-callout-gap)!important;
+    row-gap:var(--dashboard-callout-gap)!important;
+  }
+
+  /* Remove qualquer espaçamento residual que altere visualmente o vão entre cards. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > *,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-cat{
+    margin:0!important;
+  }
+}
