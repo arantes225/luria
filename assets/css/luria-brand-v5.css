@@ -3054,3 +3054,58 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     display:none!important;
   }
 }
+
+
+/* LURIA SCROLLBAR — NO ARROW BUTTONS HARD LOCK v2026.10.05
+   Remove qualquer botão/seta nativa de scrollbar em TODA área rolável. */
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+body *::-webkit-scrollbar-button,
+html::-webkit-scrollbar-button:single-button,
+body::-webkit-scrollbar-button:single-button,
+body *::-webkit-scrollbar-button:single-button,
+html::-webkit-scrollbar-button:double-button,
+body::-webkit-scrollbar-button:double-button,
+body *::-webkit-scrollbar-button:double-button,
+html::-webkit-scrollbar-button:vertical,
+body::-webkit-scrollbar-button:vertical,
+body *::-webkit-scrollbar-button:vertical,
+html::-webkit-scrollbar-button:horizontal,
+body::-webkit-scrollbar-button:horizontal,
+body *::-webkit-scrollbar-button:horizontal,
+html::-webkit-scrollbar-button:vertical:decrement,
+html::-webkit-scrollbar-button:vertical:increment,
+body::-webkit-scrollbar-button:vertical:decrement,
+body::-webkit-scrollbar-button:vertical:increment,
+body *::-webkit-scrollbar-button:vertical:decrement,
+body *::-webkit-scrollbar-button:vertical:increment,
+html::-webkit-scrollbar-button:horizontal:decrement,
+html::-webkit-scrollbar-button:horizontal:increment,
+body::-webkit-scrollbar-button:horizontal:decrement,
+body::-webkit-scrollbar-button:horizontal:increment,
+body *::-webkit-scrollbar-button:horizontal:decrement,
+body *::-webkit-scrollbar-button:horizontal:increment,
+html::-webkit-scrollbar-button:start,
+html::-webkit-scrollbar-button:end,
+body::-webkit-scrollbar-button:start,
+body::-webkit-scrollbar-button:end,
+body *::-webkit-scrollbar-button:start,
+body *::-webkit-scrollbar-button:end{
+  -webkit-appearance:none!important;
+  appearance:none!important;
+  display:none!important;
+  width:0!important;
+  height:0!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:0!important;
+  max-height:0!important;
+  margin:0!important;
+  padding:0!important;
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  border:0!important;
+  outline:0!important;
+  box-shadow:none!important;
+}
