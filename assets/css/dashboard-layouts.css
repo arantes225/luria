@@ -8599,3 +8599,126 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     padding-bottom:18px!important;
   }
 }
+
+
+/* DASHBOARD 1 — VIEWPORT FIT / LOWER ROW FULLY VISIBLE v55 — 2026-10-05
+   O problema restante não era mais deslocamento: a composição total
+   (título + primeira faixa + segunda faixa + gaps) ultrapassava a altura útil
+   da .page. A segunda faixa ficava abaixo da dobra e parecia "comida".
+   Aqui o Dashboard 1 passa a caber na altura útil real da página. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page{
+    height:100%!important;
+    min-height:0!important;
+    overflow:hidden!important;
+    padding-bottom:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    height:100%!important;
+    min-height:0!important;
+    padding:0!important;
+    margin:0!important;
+    display:grid!important;
+    grid-template-rows:138px minmax(0,1fr)!important;
+    row-gap:14px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+    height:138px!important;
+    min-height:138px!important;
+    max-height:138px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    grid-template-columns:minmax(0,1.58fr) minmax(340px,.92fr)!important;
+    grid-template-rows:minmax(0,1.72fr) minmax(150px,.88fr)!important;
+    column-gap:14px!important;
+    row-gap:14px!important;
+    align-items:stretch!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1>.dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    transform:none!important;
+    translate:none!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    grid-template-rows:repeat(2,minmax(0,1fr))!important;
+    gap:14px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side>.dl-card{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    overflow:hidden!important;
+    align-self:stretch!important;
+  }
+
+  /* Mantém o Progresso legível mesmo quando a altura útil é menor. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    padding:11px 14px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat .dl-card-heading{
+    margin-bottom:6px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    min-height:16px!important;
+    margin:2px 0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    padding:11px 14px!important;
+  }
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat-content{
+    height:calc(100% - 32px)!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+}
+
+@media (min-width:981px) and (max-height:760px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    grid-template-rows:118px minmax(0,1fr)!important;
+    row-gap:12px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative > .luria-dashboard-spotlight.dl-dashboard-title-card{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    padding:18px 24px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    grid-template-rows:minmax(0,1.62fr) minmax(142px,.92fr)!important;
+    row-gap:12px!important;
+  }
+}
