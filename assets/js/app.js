@@ -1241,7 +1241,7 @@ const PAGE_INFO = {
   flashcards: { title: "Flashcards", eyebrow: "Revisão ativa", helper: "Revise no ritmo certo e fortaleça a memória." },
   erros: { title: "Caderno de erros", eyebrow: "Estudar", helper: "Transforme seus erros em revisão direcionada." },
   questoes: { title: "Questões e Simulados", eyebrow: "Prática e provas", helper: "Treine, meça seu desempenho e evolua." },
-  plantao: { title: "Simulador", eyebrow: "Prática clínica", helper: "Treine decisões clínicas em cenários realistas." },
+  plantao: { title: "Simulador de Emergência", eyebrow: "Simulação clínica", helper: "Treine decisões clínicas em cenários realistas de urgência e emergência." },
   desafio: { title: "Desafio Diário", eyebrow: "Caso do dia", helper: "Uma hipótese por dia para manter o raciocínio afiado." },
   estatisticas: { title: "Estatísticas", eyebrow: "Seu desempenho", helper: "Acompanhe sua evolução e ajuste sua estratégia." },
   editais: { title: "Editais / Provas", eyebrow: "Provas e editais", helper: "Centralize datas, provas e informações importantes." },
@@ -1291,6 +1291,7 @@ const PLUS_NAV_FEATURES = {
   "/questoes-simulados/": "questions",
   "/registrar-questoes/": "questions",
   "/plantao/": "plantao",
+  "/plantao/sala-emergencia/": "plantao",
   "/estatisticas/": "statistics_general"
 };
 
@@ -1542,8 +1543,8 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("target")}</span><span>Desafio Diário</span>
         </a>
 
-        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/">
-          <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador</span>
+        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/sala-emergencia/">
+          <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador de Emergência</span>
         </a>
 
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">
