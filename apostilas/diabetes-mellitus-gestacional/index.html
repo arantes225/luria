@@ -29,7 +29,13 @@
     .book-section{padding:24px 26px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04)}
     .book-section h2{margin:0 0 14px;font-size:21px;line-height:1.18;font-weight:600;letter-spacing:-.012em}.book-section h3{margin:22px 0 9px;font-size:15.5px;line-height:1.25;font-weight:600}.book-section p,.book-section li{font-size:13.2px;line-height:1.68}.book-section p{margin:0 0 12px}.book-section ul{margin:9px 0;padding-left:22px}.book-section li+li{margin-top:5px}
     .book-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:12px}.book-table th,.book-table td{padding:10px 11px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.5}.book-table th{background:var(--surface-2);font-weight:600}.book-table td:first-child{font-weight:500}.book-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:13px}.book-mini{padding:15px 16px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 3%,var(--surface-2))}.book-mini strong{display:block;margin-bottom:7px;font-size:12.8px;line-height:1.25;color:var(--text)}.book-mini p{margin:0!important;font-size:12px!important;line-height:1.58!important}.book-mini ul{margin:0!important;padding-left:18px!important}.book-mini li{font-size:12px!important;line-height:1.5!important}.mechanism-chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:13px}.mechanism-step{position:relative;padding:13px 10px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);text-align:center}.mechanism-step b{display:block;font-size:11.5px}.mechanism-step small{display:block;margin-top:5px;color:var(--muted);font-size:9.5px;line-height:1.4}.complication-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.complication-card{padding:12px 14px;border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 2.5%,var(--surface-2))}.complication-card strong{display:block;font-size:13px;line-height:1.25;margin-bottom:6px}.complication-card span{display:block;color:var(--muted);font-size:11.5px;line-height:1.58}.reference-list{margin:0;padding-left:20px}.reference-list li{margin-bottom:8px}.reference-list a{color:var(--accent);text-decoration:none}
-    .book-callout{margin:14px 0;padding:14px 16px;border-radius:14px;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));font-size:12.2px;line-height:1.58}.book-callout strong{display:block;margin-bottom:5px;font-size:12.8px;color:var(--accent)}
+    .book-callout{margin:18px 0;padding:19px 20px;border-radius:16px;background:color-mix(in srgb,var(--accent) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));font-size:13.6px;line-height:1.62;box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 7%,transparent)}
+    .book-callout:not(.book-alert) strong{display:flex;align-items:center;gap:9px;margin-bottom:9px;font-size:14.4px;line-height:1.15;color:var(--accent);font-weight:650}
+    .book-callout:not(.book-alert) strong:before{content:"";display:block;flex:0 0 27px;width:27px;height:27px;background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp");background-repeat:no-repeat;background-position:center;background-size:contain}
+    :root[data-theme="dark"] .book-callout:not(.book-alert) strong:before{background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp")}
+    .book-callout:not(.book-alert) p,.book-callout:not(.book-alert) li,.book-callout:not(.book-alert) span{font-size:13.6px!important;line-height:1.62!important}
+    .book-callout.book-alert{padding:16px 18px;font-size:12.8px;line-height:1.58}
+    .book-callout.book-alert strong{display:block;margin-bottom:6px;font-size:13.2px}
     .clinical-list{margin:8px 0 0!important;padding-left:20px!important}.clinical-list li{font-size:12.4px!important;line-height:1.55!important}.clinical-list li+li{margin-top:5px!important}
     .drive-block{margin-top:13px;padding:15px 16px;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
     .drive-block h4{margin:0 0 8px;font-size:13px;font-weight:600;color:var(--text)}.drive-block ul{margin:0;padding-left:19px}.drive-block li{font-size:12.4px;line-height:1.55}
@@ -184,7 +190,7 @@
             <h3>1.3 Frequência</h3>
             <p>A hiperglicemia é uma das alterações metabólicas mais frequentes da gestação. A Diretriz da Sociedade Brasileira de Diabetes cita estimativa de que cerca de <strong>16% dos nascidos vivos</strong> ocorram em mulheres que tiveram alguma forma de hiperglicemia durante a gravidez. Isso inclui DMG, diabetes prévio e diabetes diagnosticado durante a gestação.</p>
 
-            <div class="book-callout"><strong>Conceito-chave</strong>O DMG não é apenas “glicose um pouco alta”. É uma condição metabólica que modifica o ambiente intrauterino e exige acompanhamento materno-fetal até o parto e reclassificação metabólica no puerpério.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>O DMG não é apenas “glicose um pouco alta”. É uma condição metabólica que modifica o ambiente intrauterino e exige acompanhamento materno-fetal até o parto e reclassificação metabólica no puerpério.</div>
           </section>
 
           
@@ -229,7 +235,7 @@
             <h3>2.9 Hipóxia relativa, policitemia e hiperbilirrubinemia</h3>
             <p>A hiperinsulinemia fetal aumenta a atividade metabólica e o consumo de oxigênio. Em algumas situações, isso contribui para hipóxia relativa e estímulo à eritropoietina, levando a policitemia. Depois do nascimento, a maior massa eritrocitária aumenta a carga de bilirrubina e pode favorecer hiperbilirrubinemia.</p>
 
-            <div class="book-callout"><strong>Raciocínio central</strong>Quase todas as complicações fetais do DMG ficam mais fáceis de lembrar se você pensar em uma sequência: hiperglicemia materna → hiperglicemia fetal → hiperinsulinemia fetal.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Quase todas as complicações fetais do DMG ficam mais fáceis de lembrar se você pensar em uma sequência: hiperglicemia materna → hiperglicemia fetal → hiperinsulinemia fetal.</div>
           </section>
 
           <section class="book-section">
@@ -270,7 +276,7 @@
               <li>Ganho ponderal fetal acima do esperado.</li>
             </ul>
 
-            <div class="book-callout"><strong>Importante</strong>A ausência de sintomas não exclui DMG. Uma paciente pode estar completamente assintomática e ainda apresentar repercussão fetal.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>A ausência de sintomas não exclui DMG. Uma paciente pode estar completamente assintomática e ainda apresentar repercussão fetal.</div>
           </section>
 
           <section class="book-section">
@@ -286,7 +292,7 @@
 
             <h3>4.1 Como raciocinar sobre os fatores de risco?</h3>
             <p>Uma paciente com obesidade e DMG prévio tem probabilidade maior de desenvolver a doença novamente, mas uma gestante jovem, magra e sem antecedentes também pode ter DMG. Por isso, <strong>fatores de risco aumentam suspeita; a ausência deles não exclui doença</strong>.</p>
-            <div class="book-callout"><strong>Regra prática</strong>Use fatores de risco para aumentar vigilância e contextualizar a paciente, não para decidir quem merece rastreamento.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Use fatores de risco para aumentar vigilância e contextualizar a paciente, não para decidir quem merece rastreamento.</div>
           </section>
 
           <section class="book-section">
@@ -389,7 +395,7 @@
             <h3>6.7 O que registrar no diário?</h3>
             <p>Idealmente: horário, valor da glicemia, refeição associada, dose de insulina, atividade física, episódios de hipoglicemia e situações fora da rotina. Esse contexto ajuda muito mais que uma lista de números soltos.</p>
 
-            <div class="book-callout"><strong>Raciocínio terapêutico</strong>Jejum orienta componente basal; pós-prandial orienta componente da refeição. A monitorização serve para localizar o problema.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Jejum orienta componente basal; pós-prandial orienta componente da refeição. A monitorização serve para localizar o problema.</div>
           </section>
 
           <section class="book-section">
@@ -469,7 +475,7 @@
             <h3>7.15 Como julgar resposta ao tratamento?</h3>
             <p>Não olhe apenas para a média glicêmica. Integre: proporção de medidas fora da meta, padrão de horários, episódios de hipoglicemia, crescimento fetal, circunferência abdominal, líquido amniótico e adesão.</p>
 
-            <div class="book-callout"><strong>Exemplo didático</strong>Jejum normal + pós-jantar repetidamente alto não pede mais NPH noturna; pede revisão do jantar e, se necessário, estratégia prandial para aquela refeição.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Jejum normal + pós-jantar repetidamente alto não pede mais NPH noturna; pede revisão do jantar e, se necessário, estratégia prandial para aquela refeição.</div>
           </section>
 
           <section class="book-section">
@@ -497,7 +503,7 @@
             <h3>8.7 Por que não basta olhar o ultrassom?</h3>
             <p>O ultrassom mostra repercussão fetal, mas não substitui o controle metabólico. Um feto ainda com biometria normal pode estar exposto a hiperglicemia. Da mesma forma, um feto grande exige avaliação integrada, porque nem todo crescimento excessivo é causado por DMG.</p>
 
-            <div class="book-callout"><strong>Integração prática</strong>Perfil glicêmico mostra o ambiente materno; ultrassom mostra a repercussão fetal. A decisão melhora quando os dois são interpretados juntos.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Perfil glicêmico mostra o ambiente materno; ultrassom mostra a repercussão fetal. A decisão melhora quando os dois são interpretados juntos.</div>
           </section>
 
           <section class="book-section">
@@ -532,7 +538,7 @@
             <h3>9.3 Malformações congênitas</h3>
             <p>Malformações estruturais estão muito mais relacionadas à hiperglicemia presente durante a organogênese, como ocorre no <strong>diabetes pré-gestacional ou no overt diabetes precoce</strong>, do que no DMG típico diagnosticado mais tarde.</p>
 
-            <div class="book-callout"><strong>Raciocínio de prova</strong>DMG típico → pense principalmente em macrossomia, distócia, polidrâmnio e complicações metabólicas neonatais. Malformações importantes fazem pensar em hiperglicemia pré-existente ou muito precoce.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>DMG típico → pense principalmente em macrossomia, distócia, polidrâmnio e complicações metabólicas neonatais. Malformações importantes fazem pensar em hiperglicemia pré-existente ou muito precoce.</div>
           </section>
 
           <section class="book-section">
