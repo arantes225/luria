@@ -22,8 +22,7 @@
     .cover-card,.book-card{position:relative;min-width:0;border:1px solid var(--border);border-radius:18px;background:var(--surface);overflow:hidden;box-shadow:0 8px 22px rgba(15,35,66,.045)}
     .cover-thumb,.book-thumb{position:relative;aspect-ratio:240/339;background:#184888;overflow:hidden}
     .cover-thumb img,.book-thumb img{display:block;width:100%;height:100%;object-fit:cover}
-    .cover-overlay{position:absolute;left:5%;right:5%;top:30%;min-height:31%;padding:12px 10px;border-radius:12px;background:rgba(24,72,136,.96);color:#fff;text-align:center;box-shadow:0 4px 16px rgba(0,0,0,.12);display:flex;flex-direction:column;align-items:center;justify-content:center}
-    .cover-overlay strong{display:block;font-size:13px;font-weight:650;line-height:1.15;letter-spacing:.035em;text-transform:uppercase}.cover-overlay small{display:block;margin-top:7px;font-size:8.5px;line-height:1.25;color:rgba(255,255,255,.84)}
+    
     .cover-meta,.book-meta{padding:12px 13px 13px}.cover-meta strong,.book-meta strong{display:block;font-size:12px;font-weight:600;color:var(--text)}.cover-meta small,.book-meta small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
     .books-note{padding:15px 17px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:11px;background:var(--surface-2)}
     .section-title{display:flex;align-items:center;justify-content:space-between;gap:12px}.section-title h2{margin:0;font-size:15px;font-weight:600}.section-title small{color:var(--muted);font-size:10px}
@@ -121,7 +120,7 @@
         const src=await coverSrc(key);
         const card=document.createElement("article");
         card.className="cover-card";
-        card.innerHTML='<div class="cover-thumb"><img alt="Capa '+item.label+'"><div class="cover-overlay"><strong>'+item.label+'</strong><small>Modelo automático da apostila</small></div></div><div class="cover-meta"><strong>'+item.label+'</strong><small>'+Math.ceil(item.bytes/1024)+' KB · WEBP</small></div>';
+        card.innerHTML='<div class="cover-thumb"><img alt="Capa '+item.label+'"></div><div class="cover-meta"><strong>'+item.label+'</strong><small>'+Math.ceil(item.bytes/1024)+' KB · WEBP</small></div>';
         card.querySelector("img").src=src;
         root.appendChild(card);
       }
@@ -129,11 +128,26 @@
     async function renderLibrary(){
       const root=document.getElementById("library-grid");
       const count=document.getElementById("library-count");
-      const {data,error}=await sb.from("apostilas").select("id,area,materia,tema,titulo,cover_key,content_url,is_published,created_at").order("created_at",{ascending:false});
-      if(error){root.innerHTML='<div class="empty-library">Não foi possível carregar a biblioteca.</div>';count.textContent="";return;}
-      const items=data||[];
+      const pilot={
+        id:"pilot-dmg",
+        area:"Ginecologia e Obstetrícia",
+        materia:"Ginecologia e Obstetrícia",
+        tema:"Diabetes Mellitus Gestacional",
+        titulo:"Diabetes Mellitus Gestacional",
+        cover_key:"ginecologia_obstetricia",
+        content_url:"/apostilas/diabetes-mellitus-gestacional/",
+        is_published:true,
+        created_at:"2026-10-05T18:54:59Z"
+      };
+      let items=[pilot];
+      try{
+        const {data,error}=await sb.from("apostilas").select("id,area,materia,tema,titulo,cover_key,content_url,is_published,created_at").eq("is_published",true).order("created_at",{ascending:false});
+        if(!error && Array.isArray(data)){
+          items=data.slice();
+          if(!items.some(book=>book.content_url===pilot.content_url)) items.unshift(pilot);
+        }
+      }catch{}
       count.textContent=items.length+" apostila"+(items.length===1?"":"s");
-      if(!items.length){root.innerHTML='<div class="empty-library">Nenhuma apostila publicada ainda.</div>';return;}
       root.innerHTML="";
       for(const book of items){
         const key=manifest[book.cover_key]?book.cover_key:resolveCoverKey(book.area);
@@ -141,13 +155,11 @@
         const el=document.createElement(book.content_url?"a":"article");
         el.className="book-card";
         if(book.content_url){el.href=book.content_url;el.style.textDecoration="none";}
-        el.innerHTML='<div class="book-thumb"><img alt=""><div class="cover-overlay"><strong></strong><small></small></div></div><div class="book-meta"><strong></strong><small></small></div>';
+        el.innerHTML='<div class="book-thumb"><img alt=""></div><div class="book-meta"><strong></strong><small></small></div>';
         el.querySelector("img").src=src;
         el.querySelector("img").alt="Capa "+book.titulo;
-        el.querySelector(".cover-overlay strong").textContent=book.materia||manifest[key].label;
-        el.querySelector(".cover-overlay small").textContent=book.tema||book.titulo;
         el.querySelector(".book-meta strong").textContent=book.titulo;
-        el.querySelector(".book-meta small").textContent=(book.materia||manifest[key].label)+(book.is_published?"":" · Rascunho");
+        el.querySelector(".book-meta small").textContent=book.materia||manifest[key].label;
         root.appendChild(el);
       }
     }
