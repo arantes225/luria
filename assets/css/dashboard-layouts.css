@@ -9120,3 +9120,37 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     max-height:110px!important;
   }
 }
+
+
+/* DASHBOARD 1 — LEFT PAIR BOTTOM ALIGN v64 — 2026-10-05 */
+@media (min-width:981px){
+  /* Correção visual medida pelo alinhamento com a base da Ofensiva:
+     Atividades do dia + Estudar agora estavam descendo além da coluna da direita. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    height:calc(100% - 18px)!important;
+    min-height:0!important;
+    max-height:calc(100% - 18px)!important;
+    align-self:start!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    align-self:stretch!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Mantém a base da coluna da direita como referência de alinhamento. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    align-self:stretch!important;
+  }
+}
