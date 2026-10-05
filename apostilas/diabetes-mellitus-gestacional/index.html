@@ -28,14 +28,14 @@
     .book-meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.book-meta-row span{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.12);font-size:9px}
     .book-section{padding:20px 22px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04)}
     .book-section h2{margin:0 0 12px;font-size:18px;font-weight:600}.book-section h3{margin:18px 0 8px;font-size:14px;font-weight:600}.book-section p,.book-section li{font-size:12px;line-height:1.65}.book-section p{margin:0 0 10px}.book-section ul{margin:8px 0;padding-left:20px}.book-section li+li{margin-top:4px}
-    .book-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:11px}.book-table th,.book-table td{padding:9px 10px;border:1px solid var(--border);text-align:left;vertical-align:top}.book-table th{background:var(--surface-2);font-weight:600}
+    .book-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:11px}.book-table th,.book-table td{padding:9px 10px;border:1px solid var(--border);text-align:left;vertical-align:top}.book-table th{background:var(--surface-2);font-weight:600}.book-table td:first-child{font-weight:500}.book-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.book-mini{padding:13px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}.book-mini strong{display:block;margin-bottom:5px;font-size:11px;color:var(--text)}.book-mini p{margin:0!important;font-size:10.5px!important;line-height:1.5!important}.mechanism-chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin-top:12px}.mechanism-step{position:relative;padding:12px 9px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);text-align:center}.mechanism-step b{display:block;font-size:10.5px}.mechanism-step small{display:block;margin-top:4px;color:var(--muted);font-size:8.5px;line-height:1.35}.complication-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}.complication-card{padding:13px 14px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}.complication-card strong{display:block;font-size:11px;margin-bottom:4px}.complication-card span{display:block;color:var(--muted);font-size:9.5px;line-height:1.5}.reference-list{margin:0;padding-left:20px}.reference-list li{margin-bottom:8px}.reference-list a{color:var(--accent);text-decoration:none}
     .book-callout{margin:12px 0;padding:12px 14px;border-radius:14px;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));font-size:11px;line-height:1.5}.book-callout strong{display:block;margin-bottom:4px;color:var(--accent)}
     .book-alert{background:color-mix(in srgb,var(--danger) 8%,var(--surface));border-color:color-mix(in srgb,var(--danger) 26%,var(--border))}.book-alert strong{color:var(--danger)}
     .luria-figure{margin:14px 0;padding:14px;border-radius:16px;background:var(--surface-2);border:1px solid var(--border)}.luria-figure .figure-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.luria-figure .figure-title strong{font-size:11px}.luria-figure .figure-title span{font-size:8px;color:var(--muted)}
     .flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.flow-step{padding:10px;border-radius:12px;background:var(--surface);border:1px solid var(--border);text-align:center}.flow-step b{display:block;font-size:11px}.flow-step small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
     .meal-flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.meal-flow span{padding:10px 6px;border-radius:10px;background:var(--surface);border:1px solid var(--border);font-size:9px;text-align:center}
     .book-source{font-size:10px;color:var(--muted);line-height:1.5}.book-source a{color:var(--accent)}
-    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}.mechanism-chain{grid-template-columns:1fr 1fr}.book-grid-2,.complication-grid{grid-template-columns:1fr}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
   </style>
 </head>
 <body data-page="aprender">
@@ -55,154 +55,263 @@
           <header class="book-hero">
             <span class="book-badge">Piloto LURIA</span>
             <h1>Diabetes Mellitus Gestacional</h1>
-            <p>Rastreamento, diagnóstico, metas glicêmicas, tratamento e seguimento pós-parto em uma única apostila.</p>
+            <p>Rastreamento, diagnóstico, fisiopatologia, monitorização, tratamento, avaliação fetal, complicações e seguimento pós-parto.</p>
             <div class="book-meta-row"><span>Ginecologia e Obstetrícia</span><span>Nível intermediário</span><span>Atualizado 2026</span></div>
           </header>
 
           <section class="book-section">
-            <h2>Definição e fisiopatologia</h2>
-            <p><strong>Diabetes mellitus gestacional (DMG)</strong> é a hiperglicemia diagnosticada pela primeira vez durante a gestação, com níveis que não atingem os critérios diagnósticos de diabetes mellitus fora da gestação.</p>
-            <p>Quando a gestante atinge critérios usuais de diabetes, o quadro deve ser tratado como <strong>diabetes diagnosticado na gestação (overt diabetes)</strong>.</p>
-            <p>Na segunda metade da gestação ocorre aumento fisiológico da resistência à insulina, relacionado principalmente à ação de hormônios placentários. O DMG surge quando a secreção pancreática de insulina não consegue compensar adequadamente essa resistência.</p>
-            <div class="book-callout"><strong>Pulo do Gato</strong>DMG é frequentemente assintomático. O diagnóstico depende do rastreamento, não da presença de sintomas.</div>
+            <h2>1. Definição</h2>
+            <p><strong>Diabetes mellitus gestacional (DMG)</strong> é a hiperglicemia diagnosticada pela primeira vez durante a gestação, sem preencher critérios diagnósticos de diabetes mellitus fora da gravidez.</p>
+            <p>Quando a gestante atinge critérios diagnósticos usuais de diabetes, o quadro é classificado como <strong>diabetes diagnosticado na gestação (overt diabetes)</strong>, situação de maior risco e que deve ser conduzida como diabetes pré-gestacional.</p>
+            <div class="book-callout"><strong>Pulo do Gato</strong>DMG e overt diabetes não são sinônimos. O que separa os dois é a intensidade da hiperglicemia.</div>
           </section>
 
           <section class="book-section">
-            <h2>Fatores de risco</h2>
-            <ul>
-              <li>Sobrepeso ou obesidade pré-gestacional.</li>
-              <li>História prévia de DMG.</li>
-              <li>Macrossomia fetal em gestação anterior.</li>
-              <li>História familiar de diabetes em parente de primeiro grau.</li>
-              <li>Síndrome dos ovários policísticos.</li>
-              <li>Idade materna avançada e outros fatores metabólicos.</li>
-            </ul>
-            <div class="book-callout"><strong>Importante</strong>Embora fatores de risco aumentem a probabilidade, o rastreamento entre 24 e 28 semanas é universal nas gestantes ainda não diagnosticadas.</div>
+            <h2>2. Fisiopatologia</h2>
+            <p>A gestação normal é um estado de adaptação metabólica. No início, há tendência a maior armazenamento energético e a glicemia de jejum costuma diminuir. Com a progressão da gravidez, sobretudo a partir da segunda metade, a placenta passa a produzir hormônios e mediadores com efeito <strong>anti-insulínico</strong>, aumentando progressivamente a resistência periférica à insulina.</p>
+            <p>Entre os principais mediadores estão o <strong>lactogênio placentário humano</strong>, hormônio do crescimento placentário, progesterona, cortisol, prolactina e citocinas inflamatórias. Em uma gestação normal, as células beta pancreáticas aumentam a secreção de insulina para compensar essa resistência. O DMG aparece quando essa compensação é insuficiente.</p>
+
+            <div class="mechanism-chain">
+              <div class="mechanism-step"><b>Placenta cresce</b><small>↑ hormônios diabetogênicos</small></div>
+              <div class="mechanism-step"><b>Resistência à insulina</b><small>principalmente músculo e tecido adiposo</small></div>
+              <div class="mechanism-step"><b>Compensação pancreática</b><small>↑ secreção materna de insulina</small></div>
+              <div class="mechanism-step"><b>Compensação insuficiente</b><small>hiperglicemia materna</small></div>
+              <div class="mechanism-step"><b>Feto exposto à glicose</b><small>hiperinsulinemia fetal e crescimento excessivo</small></div>
+            </div>
+
+            <h3>Por que o feto cresce demais?</h3>
+            <p>A glicose materna atravessa a placenta, mas a insulina materna não. A hiperglicemia materna leva a hiperglicemia fetal; o pâncreas fetal responde com hiperinsulinemia. A insulina fetal tem efeito anabólico, favorecendo deposição de gordura, aumento da circunferência abdominal e maior risco de feto grande para a idade gestacional/macrossomia.</p>
+
+            <h3>Por que ocorre hipoglicemia neonatal?</h3>
+            <p>Ao nascer, a oferta transplacentária de glicose é interrompida abruptamente, mas o recém-nascido pode manter hiperinsulinemia por algum tempo. O resultado é queda rápida da glicemia nas primeiras horas de vida.</p>
+
+            <div class="book-grid-2">
+              <div class="book-mini"><strong>Primeira metade da gestação</strong><p>Maior tendência anabólica, glicemia de jejum fisiologicamente mais baixa e menor resistência insulínica.</p></div>
+              <div class="book-mini"><strong>Segunda metade</strong><p>Resistência insulínica crescente; é por isso que o rastreamento com TOTG se concentra entre 24 e 28 semanas.</p></div>
+            </div>
           </section>
 
           <section class="book-section">
-            <h2>Rastreamento e diagnóstico</h2>
+            <h2>3. Quadro clínico</h2>
+            <p>Na maioria dos casos, o DMG é <strong>assintomático</strong>. Por isso, o diagnóstico depende do rastreamento universal.</p>
+            <p>Quando a hiperglicemia é mais importante, podem aparecer poliúria, polidipsia, perda ponderal inadequada, candidíase recorrente ou infecções urinárias, mas esses achados não substituem a investigação laboratorial.</p>
+          </section>
+
+          <section class="book-section">
+            <h2>4. Fatores de risco</h2>
+            <div class="book-grid-2">
+              <div class="book-mini"><strong>Maternos/metabólicos</strong><p>Sobrepeso ou obesidade, idade materna avançada, síndrome dos ovários policísticos, hipertensão, hipertrigliceridemia, acantose nigricans e outras condições de resistência insulínica.</p></div>
+              <div class="book-mini"><strong>História familiar</strong><p>Diabetes em parente de primeiro grau.</p></div>
+              <div class="book-mini"><strong>História obstétrica</strong><p>DMG prévio, macrossomia, óbito fetal/neonatal, malformações ou abortamentos de repetição.</p></div>
+              <div class="book-mini"><strong>Gestação atual</strong><p>Ganho ponderal excessivo, crescimento fetal excessivo, polidrâmnio ou hipertensão/pré-eclâmpsia.</p></div>
+            </div>
+            <div class="book-callout"><strong>Importante</strong>A presença de fatores de risco aumenta a probabilidade de DMG, mas a ausência deles não exclui a doença. O rastreamento é universal.</div>
+          </section>
+
+          <section class="book-section">
+            <h2>5. Rastreamento e diagnóstico</h2>
             <h3>Primeira consulta de pré-natal</h3>
+            <p>Toda gestante sem diagnóstico prévio conhecido de diabetes deve realizar <strong>glicemia plasmática de jejum</strong> na primeira consulta.</p>
             <table class="book-table">
-              <thead><tr><th>Glicemia de jejum</th><th>Interpretação</th><th>Conduta</th></tr></thead>
+              <thead><tr><th>Glicemia</th><th>Interpretação</th><th>Conduta</th></tr></thead>
               <tbody>
-                <tr><td>&lt; 92 mg/dL</td><td>Sem DMG neste momento</td><td>TOTG-75 g entre 24–28 semanas</td></tr>
-                <tr><td>92–125 mg/dL</td><td>DMG</td><td>Diagnosticar e iniciar manejo</td></tr>
-                <tr><td>≥126 mg/dL</td><td>Diabetes diagnosticado na gestação</td><td>Confirmar conforme contexto e manejar como diabetes na gestação</td></tr>
+                <tr><td>&lt; 92 mg/dL</td><td>Sem diagnóstico de DMG naquele momento</td><td>Realizar TOTG-75 g entre 24–28 semanas.</td></tr>
+                <tr><td>92–125 mg/dL</td><td>DMG</td><td>Esse intervalo define DMG <strong>em qualquer momento da gestação</strong>.</td></tr>
+                <tr><td>≥126 mg/dL</td><td>Diabetes diagnosticado na gestação</td><td>Manejar como overt diabetes, conforme confirmação e contexto clínico.</td></tr>
               </tbody>
             </table>
+
             <div class="luria-figure">
               <div class="figure-title"><strong>Fluxograma LURIA · rastreamento inicial</strong><span>FIG_001</span></div>
               <div class="flow">
-                <div class="flow-step"><b>&lt;92 mg/dL</b><small>TOTG-75 g entre 24–28 semanas</small></div>
-                <div class="flow-step"><b>92–125 mg/dL</b><small>Diagnóstico de DMG</small></div>
-                <div class="flow-step"><b>≥126 mg/dL</b><small>Diabetes diagnosticado na gestação</small></div>
+                <div class="flow-step"><b>&lt;92 mg/dL</b><small>Sem DMG naquele momento → TOTG-75 g entre 24–28 semanas</small></div>
+                <div class="flow-step"><b>92–125 mg/dL</b><small>DMG em qualquer idade gestacional → iniciar manejo</small></div>
+                <div class="flow-step"><b>≥126 mg/dL</b><small>Diabetes diagnosticado na gestação → avaliação como DM pré-gestacional</small></div>
               </div>
             </div>
 
             <h3>TOTG-75 g entre 24 e 28 semanas</h3>
-            <p>Manter alimentação sem restrição de carboidratos nos dias anteriores e realizar jejum de aproximadamente 8 horas. Um único valor alterado confirma DMG.</p>
+            <p>O teste deve ser precedido por alimentação sem restrição de carboidratos, com pelo menos 150 g/dia nos três dias anteriores, e jejum de aproximadamente 8 horas. São medidas glicose em jejum, 1 hora e 2 horas após 75 g de glicose anidra.</p>
             <table class="book-table">
-              <thead><tr><th>Momento</th><th>Valor de corte</th></tr></thead>
-              <tbody><tr><td>Jejum</td><td>≥92 e &lt;126 mg/dL</td></tr><tr><td>1 hora</td><td>≥180 mg/dL</td></tr><tr><td>2 horas</td><td>≥153 e &lt;200 mg/dL</td></tr></tbody>
+              <thead><tr><th>Momento</th><th>Normal</th><th>DMG</th><th>Diabetes manifesto</th></tr></thead>
+              <tbody>
+                <tr><td>Jejum</td><td>&lt;92</td><td>92–125</td><td>≥126 mg/dL</td></tr>
+                <tr><td>1 hora</td><td>&lt;180</td><td>≥180</td><td>—</td></tr>
+                <tr><td>2 horas</td><td>&lt;153</td><td>153–199</td><td>≥200 mg/dL</td></tr>
+              </tbody>
             </table>
+            <div class="book-callout"><strong>Pulo do Gato</strong>No TOTG, <strong>um único valor alterado</strong> já é suficiente para o diagnóstico de DMG.</div>
           </section>
 
           <section class="book-section">
-            <h2>Monitorização e metas</h2>
-            <p>A automonitorização deve ser diária, desde o diagnóstico até o parto.</p>
-            <h3>Sem tratamento farmacológico</h3>
-            <ul><li>Jejum.</li><li>1 hora após café da manhã.</li><li>1 hora após almoço.</li><li>1 hora após jantar.</li></ul>
-            <h3>Com tratamento farmacológico</h3>
-            <ul><li>Jejum.</li><li>1 hora após café.</li><li>Pré-almoço e 1 hora após almoço.</li><li>Pré-jantar e 1 hora após jantar.</li></ul>
+            <h2>6. Monitorização glicêmica</h2>
+            <p>Após o diagnóstico, a automonitorização deve começar imediatamente e ser mantida diariamente até o parto.</p>
             <table class="book-table">
-              <thead><tr><th>Momento</th><th>Meta</th></tr></thead>
-              <tbody><tr><td>Pré-prandial</td><td>65–95 mg/dL</td></tr><tr><td>1 h pós-prandial</td><td>&lt;140 mg/dL</td></tr><tr><td>2 h pós-prandial</td><td>&lt;120 mg/dL</td></tr></tbody>
+              <thead><tr><th>Situação</th><th>Perfil recomendado</th></tr></thead>
+              <tbody>
+                <tr><td>Sem tratamento farmacológico</td><td>4 pontos: jejum + 1h após café + 1h após almoço + 1h após jantar.</td></tr>
+                <tr><td>Com tratamento farmacológico</td><td>6 pontos: jejum + 1h após café + pré-almoço + 1h após almoço + pré-jantar + 1h após jantar.</td></tr>
+              </tbody>
             </table>
-            <div class="book-callout"><strong>Monitorização</strong>A HbA1c não substitui a monitorização capilar diária no DMG.</div>
+
+            <h3>Metas glicêmicas</h3>
+            <table class="book-table">
+              <thead><tr><th>Momento</th><th>Meta</th><th>Como interpretar</th></tr></thead>
+              <tbody>
+                <tr><td>Pré-prandial</td><td>65–95 mg/dL</td><td>Ajuda a avaliar produção hepática de glicose e necessidade de componente basal.</td></tr>
+                <tr><td>1 h pós-prandial</td><td>&lt;140 mg/dL</td><td>É o principal marcador das excursões pós-refeição.</td></tr>
+                <tr><td>2 h pós-prandial</td><td>&lt;120 mg/dL</td><td>Alternativa quando o serviço utiliza medida de 2 horas.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>HbA1c e monitorização contínua</h3>
+            <p>A HbA1c não substitui a monitorização diária no DMG e não é o melhor parâmetro para ajustes rápidos da terapia. O monitoramento contínuo de glicose pode ser considerado em situações selecionadas, principalmente em gestantes em uso de insulina, grande variabilidade glicêmica, risco de hipoglicemia sem aviso ou crescimento fetal excessivo.</p>
+            <div class="book-callout"><strong>Se CGM marcar &lt;70 mg/dL sem sintomas</strong>Confirmar imediatamente com glicemia capilar antes de tomar decisões terapêuticas.</div>
           </section>
 
           <section class="book-section">
-            <h2>Tratamento</h2>
-            <p>O manejo começa com terapia nutricional individualizada, atividade física moderada quando não houver contraindicação obstétrica e automonitorização glicêmica.</p>
+            <h2>7. Tratamento</h2>
+            <p>O objetivo é manter a glicemia dentro das metas com segurança materna, reduzir exposição fetal à hiperglicemia e evitar tanto hiperglicemia quanto hipoglicemia.</p>
+
             <div class="luria-figure">
               <div class="figure-title"><strong>Algoritmo LURIA · tratamento</strong><span>FIG_003</span></div>
               <div class="flow">
-                <div class="flow-step"><b>1. Diagnóstico</b><small>Iniciar medidas não farmacológicas + monitorização</small></div>
-                <div class="flow-step"><b>2. Reavaliar</b><small>Metas atingidas? Manter e acompanhar</small></div>
-                <div class="flow-step"><b>3. Persistência</b><small>Se fora da meta, considerar insulinoterapia</small></div>
+                <div class="flow-step"><b>1. Diagnóstico</b><small>Terapia nutricional + atividade física + automonitorização</small></div>
+                <div class="flow-step"><b>2. Reavaliar 7–14 dias</b><small>Metas atingidas? Manter. Se persistirem alterações, escalar tratamento.</small></div>
+                <div class="flow-step"><b>3. Farmacoterapia</b><small>Insulina como primeira escolha; metformina em situações selecionadas</small></div>
               </div>
             </div>
 
-            <h3>Terapia nutricional</h3>
-            <ul><li>Fracionar as refeições.</li><li>Priorizar carboidratos complexos e alimentos ricos em fibras.</li><li>Evitar bebidas açucaradas e excesso de açúcares simples.</li><li>Garantir aporte nutricional adequado à gestação.</li></ul>
+            <h3>7.1 Terapia nutricional</h3>
+            <p>Deve ser individualizada, evitando restrição calórica inadequada. Priorizar alimentos in natura ou minimamente processados, fibras, proteínas adequadas e carboidratos de melhor qualidade, distribuídos ao longo do dia.</p>
             <div class="luria-figure">
               <div class="figure-title"><strong>Esquema LURIA · fracionamento alimentar</strong><span>FIG_002</span></div>
               <div class="meal-flow"><span>Café</span><span>Lanche</span><span>Almoço</span><span>Lanche</span><span>Jantar</span><span>Ceia</span></div>
             </div>
 
-            <h3>Insulina</h3>
-            <p>A insulina é o tratamento farmacológico de primeira escolha. O esquema deve ser individualizado conforme idade gestacional, padrão das glicemias, peso materno e resposta.</p>
-            <p>A dose total inicial pode situar-se, conforme o contexto clínico, em torno de <strong>0,3–1,0 UI/kg/dia</strong>. Alterações isoladas podem requerer doses menores, por exemplo <strong>0,1–0,2 UI/kg/dia</strong>.</p>
-            <ul><li>Jejum elevado: frequentemente considerar insulina basal, como NPH noturna.</li><li>Pós-prandial isolado: considerar insulina prandial na refeição correspondente.</li></ul>
+            <h3>7.2 Atividade física</h3>
+            <p>Na ausência de contraindicação obstétrica, estimular atividade física moderada e regular. Caminhada após refeições pode ajudar especialmente no controle das glicemias pós-prandiais.</p>
 
-            <h3>Metformina</h3>
-            <p>Pode ser considerada como alternativa quando a insulinoterapia não for viável. Evitar ou suspender em situações de restrição de crescimento fetal ou outros cenários em que seu uso não seja apropriado.</p>
+            <h3>7.3 Quando iniciar farmacoterapia?</h3>
+            <p>Pode ser considerada quando, após 7–14 dias de medidas não farmacológicas, duas ou mais medidas permanecem acima da meta ou quando aproximadamente 30–50% das medidas em sete dias estão alteradas. Crescimento fetal excessivo também pode influenciar a decisão.</p>
 
-            <h3>Glibenclamida</h3>
-            <div class="book-callout book-alert"><strong>Não recomendada</strong>Não deve ser utilizada como tratamento rotineiro do DMG por associação com maior risco de hipoglicemia neonatal e macrossomia.</div>
+            <h3>7.4 Insulina</h3>
+            <p>A <strong>insulina é a primeira escolha farmacológica</strong>. A dose não deve ser tratada como número fixo: ela depende da idade gestacional, do padrão da hiperglicemia, do peso materno e do perfil capilar.</p>
+            <table class="book-table">
+              <thead><tr><th>Padrão</th><th>Estratégia prática</th></tr></thead>
+              <tbody>
+                <tr><td>Hiperglicemia de jejum isolada</td><td>Considerar componente basal, frequentemente NPH noturna.</td></tr>
+                <tr><td>Elevação pós-prandial isolada</td><td>Considerar insulina prandial na refeição correspondente.</td></tr>
+                <tr><td>Múltiplos horários alterados</td><td>Esquema basal-prandial individualizado.</td></tr>
+              </tbody>
+            </table>
+            <div class="book-callout"><strong>Dose inicial</strong>A dose total pode variar aproximadamente de <strong>0,3 a 1,0 UI/kg/dia</strong>. Quando há alteração isolada, doses menores, como <strong>0,1–0,2 UI/kg/dia</strong>, podem ser suficientes. Ajustar pelo perfil glicêmico a cada 1–2 semanas ou antes, se necessário.</div>
+            <p>Podem ser utilizadas insulinas humanas como NPH e Regular e análogos aprovados para uso na gestação. Análogos rápidos/ultrarrápidos são especialmente úteis quando o problema predominante é a excursão pós-prandial.</p>
+
+            <h3>7.5 Metformina</h3>
+            <p>Pode ser usada como alternativa quando a insulinoterapia não é viável e não houver contraindicação. Parte das pacientes necessitará associação com insulina para atingir as metas.</p>
+            <p>Evitar ou suspender em cenários de restrição de crescimento fetal ou quando houver contraindicação clínica ao fármaco.</p>
+
+            <h3>7.6 Glibenclamida</h3>
+            <div class="book-callout book-alert"><strong>Não recomendada</strong>Está associada a maior risco de macrossomia e hipoglicemia neonatal e não deve ser utilizada como tratamento rotineiro do DMG.</div>
           </section>
 
           <section class="book-section">
-            <h2>Avaliação fetal</h2>
-            <p>A vigilância deve ser individualizada conforme controle glicêmico, necessidade de insulina, crescimento fetal, volume de líquido amniótico, comorbidades e complicações obstétricas.</p>
-            <p>Não há necessidade de um cronograma ultrassonográfico rígido e universal para todas as pacientes com DMG.</p>
+            <h2>8. Avaliação fetal</h2>
+            <p>A avaliação fetal deve ser organizada conforme o grau de controle metabólico e os achados obstétricos, e não como uma sequência rígida igual para todas as gestantes.</p>
+
+            <div class="book-grid-2">
+              <div class="book-mini"><strong>Crescimento fetal</strong><p>Ultrassonografia para biometria, com atenção especial à circunferência abdominal e ao peso fetal estimado.</p></div>
+              <div class="book-mini"><strong>Líquido amniótico</strong><p>Avaliar polidrâmnio, que pode refletir diurese fetal aumentada em contexto de hiperglicemia.</p></div>
+              <div class="book-mini"><strong>Vitalidade fetal</strong><p>Cardiotocografia e perfil biofísico podem ser utilizados conforme uso de medicação, controle glicêmico, comorbidades e evolução clínica.</p></div>
+              <div class="book-mini"><strong>Dopplervelocimetria</strong><p>Não é exame de rotina apenas por existir DMG; deve ser indicada por critérios obstétricos, como suspeita de insuficiência placentária ou restrição de crescimento.</p></div>
+            </div>
+
+            <div class="book-callout"><strong>Critério adicional</strong>Circunferência abdominal fetal ≥ percentil 75 entre 29 e 33 semanas pode ser considerada na decisão de iniciar insulinoterapia, mesmo quando as glicemias não parecem muito alteradas.</div>
           </section>
 
           <section class="book-section">
-            <h2>Complicações</h2>
-            <h3>Maternas</h3>
-            <ul><li>Maior risco de hipertensão e pré-eclâmpsia.</li><li>Maior chance de parto operatório em determinados contextos.</li><li>Recorrência de DMG.</li><li>Maior risco futuro de diabetes tipo 2.</li></ul>
-            <h3>Fetais e neonatais</h3>
-            <ul><li>GIG/macrossomia.</li><li>Distócia de ombro e tocotraumatismo.</li><li>Hipoglicemia neonatal.</li><li>Hiperbilirrubinemia.</li><li>Policitemia neonatal.</li><li>Alterações respiratórias e maior risco metabólico futuro.</li></ul>
+            <h2>9. Complicações e por que acontecem</h2>
+            <div class="complication-grid">
+              <div class="complication-card"><strong>Macrossomia / GIG</strong><span>Hiperglicemia materna → hiperglicemia fetal → hiperinsulinemia fetal → maior deposição de gordura e crescimento, sobretudo abdominal.</span></div>
+              <div class="complication-card"><strong>Distócia de ombro e tocotrauma</strong><span>Consequência do crescimento fetal excessivo e da desproporção entre tronco e cabeça.</span></div>
+              <div class="complication-card"><strong>Polidrâmnio</strong><span>Hiperglicemia fetal aumenta a diurese osmótica, elevando o volume de líquido amniótico.</span></div>
+              <div class="complication-card"><strong>Hipoglicemia neonatal</strong><span>Após o nascimento, a glicose materna deixa de chegar, mas a hiperinsulinemia fetal pode persistir.</span></div>
+              <div class="complication-card"><strong>Desconforto respiratório</strong><span>A hiperinsulinemia fetal pode interferir na maturação pulmonar e na produção de surfactante.</span></div>
+              <div class="complication-card"><strong>Policitemia / hiperbilirrubinemia</strong><span>Maior demanda metabólica e hipóxia fetal relativa estimulam eritropoiese; o aumento da massa eritrocitária favorece hiperbilirrubinemia após o nascimento.</span></div>
+              <div class="complication-card"><strong>Pré-eclâmpsia</strong><span>DMG compartilha fatores metabólicos e vasculares associados a disfunção endotelial e maior risco hipertensivo.</span></div>
+              <div class="complication-card"><strong>Cesárea</strong><span>O risco aumenta principalmente em contexto de macrossomia, indução, alterações de vitalidade ou outras complicações obstétricas.</span></div>
+            </div>
           </section>
 
           <section class="book-section">
-            <h2>Hipoglicemia na gestante</h2>
-            <p>Em paciente consciente com glicemia &lt;70 mg/dL, administrar aproximadamente 15 g de carboidrato de rápida absorção, repetir a glicemia após cerca de 15 minutos e repetir o tratamento se necessário.</p>
-            <div class="book-callout book-alert"><strong>Hipoglicemia grave</strong>Na presença de alteração de consciência, utilizar glicose intravenosa quando houver acesso venoso ou glucagon por via apropriada quando indicado e disponível.</div>
+            <h2>10. Hipoglicemia na gestação</h2>
+            <h3>Definição</h3>
+            <p>Considera-se hipoglicemia quando a glicose está <strong>&lt;70 mg/dL</strong>. Em gestantes com DMG, ela é mais comum após início de insulinoterapia, sobretudo quando existe jejum prolongado, redução da ingestão alimentar, vômitos, atividade física não planejada ou dose excessiva de insulina.</p>
+
+            <h3>Fisiopatologia</h3>
+            <p>A insulina reduz a glicemia ao aumentar a captação periférica de glicose e inibir a produção hepática. Quando a quantidade de insulina supera a disponibilidade de glicose, a concentração plasmática cai. O organismo responde com liberação de catecolaminas e outros hormônios contrarreguladores.</p>
+
+            <h3>Quadro clínico</h3>
+            <div class="book-grid-2">
+              <div class="book-mini"><strong>Sintomas autonômicos</strong><p>Tremor, palpitações, ansiedade, fome, sudorese e parestesias.</p></div>
+              <div class="book-mini"><strong>Sintomas neuroglicopênicos</strong><p>Tontura, visão turva, dificuldade de concentração, confusão, alteração de comportamento, convulsão ou perda de consciência em casos graves.</p></div>
+            </div>
+
+            <h3>Conduta</h3>
+            <p>Paciente consciente: administrar aproximadamente <strong>15 g de carboidrato de rápida absorção</strong>, repetir a glicemia após 15 minutos e repetir o tratamento se ainda estiver abaixo da meta.</p>
+            <div class="book-callout book-alert"><strong>Hipoglicemia grave</strong>Se houver alteração importante de consciência ou impossibilidade de ingestão oral, utilizar glicose intravenosa quando houver acesso venoso ou glucagon por via apropriada, se indicado e disponível.</div>
           </section>
 
           <section class="book-section">
-            <h2>Pós-parto</h2>
-            <p>Na maioria das mulheres com DMG, a farmacoterapia utilizada exclusivamente para o período gestacional pode ser suspensa após o parto, com monitorização inicial principalmente em quem utilizou tratamento farmacológico ou apresenta hiperglicemia persistente.</p>
+            <h2>11. Parto e puerpério</h2>
+            <p>O momento e a via de parto devem ser individualizados conforme controle glicêmico, crescimento e vitalidade fetal, uso de medicação, comorbidades e outras indicações obstétricas. DMG isoladamente não define cesariana.</p>
+            <p>Após o parto, na maioria das mulheres com DMG, a farmacoterapia utilizada exclusivamente durante a gestação pode ser suspensa, com monitorização inicial principalmente em quem usou medicação ou mantém hiperglicemia.</p>
+
             <h3>Rastreamento pós-parto</h3>
             <p>Realizar <strong>TOTG-75 g entre 4 e 12 semanas após o parto</strong>.</p>
             <table class="book-table">
               <thead><tr><th>Resultado</th><th>Classificação</th></tr></thead>
-              <tbody><tr><td>Jejum &lt;100 e 2h &lt;140</td><td>Normal</td></tr><tr><td>Jejum 100–125</td><td>Glicemia de jejum alterada</td></tr><tr><td>2h 140–199</td><td>Intolerância à glicose</td></tr><tr><td>Jejum ≥126 ou 2h ≥200</td><td>Diabetes</td></tr></tbody>
+              <tbody>
+                <tr><td>Jejum &lt;100 e 2h &lt;140</td><td>Normal</td></tr>
+                <tr><td>Jejum 100–125</td><td>Glicemia de jejum alterada</td></tr>
+                <tr><td>2h 140–199</td><td>Intolerância à glicose</td></tr>
+                <tr><td>Jejum ≥126 ou 2h ≥200</td><td>Diabetes</td></tr>
+              </tbody>
             </table>
-            <div class="book-callout"><strong>Pulo do Gato</strong>O fim da gestação não encerra o cuidado metabólico. História de DMG aumenta o risco futuro de diabetes tipo 2 e exige rastreamento periódico.</div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>O diagnóstico de DMG é um marcador de risco metabólico futuro. Mesmo com TOTG pós-parto normal, a paciente precisa de rastreamento periódico para DM2.</div>
           </section>
 
           <section class="book-section">
-            <h2>Resumo de prova</h2>
+            <h2>12. Resumo de prova</h2>
             <ul>
+              <li>DMG = hiperglicemia diagnosticada na gestação sem atingir critérios de diabetes manifesto.</li>
               <li>Primeira consulta: glicemia de jejum.</li>
-              <li>92–125 mg/dL: DMG; ≥126 mg/dL: diabetes diagnosticado na gestação.</li>
-              <li>TOTG-75 g: 92 / 180 / 153 mg/dL — um valor alterado basta.</li>
-              <li>Monitorização diária: 4 pontos sem fármaco e 6 pontos com tratamento farmacológico.</li>
+              <li>92–125 mg/dL em <strong>qualquer momento da gestação</strong> → DMG.</li>
+              <li>≥126 mg/dL em jejum → diabetes diagnosticado na gestação.</li>
+              <li>TOTG-75 g entre 24–28 semanas: 92 / 180 / 153 mg/dL.</li>
+              <li>Um valor alterado no TOTG basta.</li>
+              <li>Monitorização diária: 4 pontos sem fármaco; 6 pontos com tratamento farmacológico.</li>
               <li>Metas: 65–95 pré-prandial; &lt;140 em 1 h; &lt;120 em 2 h.</li>
               <li>Insulina é a primeira escolha farmacológica.</li>
-              <li>Metformina pode ser alternativa quando insulina não for viável.</li>
+              <li>Metformina pode ser alternativa quando a insulina não for viável.</li>
               <li>Glibenclamida não é recomendada.</li>
-              <li>TOTG-75 g pós-parto entre 4 e 12 semanas.</li>
+              <li>Circunferência abdominal fetal ≥P75 entre 29–33 semanas pode influenciar decisão terapêutica.</li>
+              <li>TOTG-75 g pós-parto: 4–12 semanas.</li>
             </ul>
           </section>
 
           <section class="book-section">
-            <h2>Referências principais</h2>
-            <p class="book-source">Sociedade Brasileira de Diabetes — rastreamento e diagnóstico da hiperglicemia na gestação; planejamento, metas e monitorização; tratamento farmacológico do diabetes na gestação. Ministério da Saúde — Linha de Cuidado Pré-Natal, cuidados obstétricos em diabetes mellitus gestacional e PCDT de Diabetes Mellitus tipo 2.</p>
+            <h2>13. Referências</h2>
+            <ol class="reference-list">
+              <li>Sociedade Brasileira de Diabetes. <strong>Rastreamento e diagnóstico da hiperglicemia na gestação.</strong> Diretriz SBD, edição 2026.</li>
+              <li>Sociedade Brasileira de Diabetes. <strong>Planejamento, metas e monitorização do diabetes durante a gestação.</strong> Diretriz SBD, edição 2026.</li>
+              <li>Sociedade Brasileira de Diabetes. <strong>Tratamento farmacológico do diabetes na gestação.</strong> Diretriz SBD, revisão de setembro de 2026.</li>
+              <li>Ministério da Saúde. <strong>Cuidados obstétricos em diabetes mellitus gestacional no Brasil.</strong></li>
+              <li>Ministério da Saúde / CONITEC. <strong>PCDT de Diabetes Mellitus tipo 2.</strong> Seguimento metabólico após DMG.</li>
+              <li>Material de apoio do Drive LURIA: <strong>01 - DIABETES NA GESTAÇÃO.pdf</strong> — utilizado como referência de organização didática, tópicos e encadeamento do conteúdo.</li>
+              <li>Material de apoio do Drive LURIA: <strong>01 - DIABETES - CLASSIFICAÇÃO, FISIOPATOLOGIA E DIAGNÓSTICO DO DM.pdf</strong> — utilizado como referência complementar de estrutura para fisiopatologia e raciocínio diagnóstico.</li>
+            </ol>
           </section>
         </article>
       </section>
