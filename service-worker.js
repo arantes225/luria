@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v271-dashboard-pattern";
+const CACHE_VERSION = "luria-pwa-v272-apostilas-pilot";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
