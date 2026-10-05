@@ -10025,3 +10025,28 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     margin:0!important;
   }
 }
+
+
+/* DASHBOARD 1 — REDUÇÃO DIRETA DOS DOIS CARDS v79 — 2026-10-05
+   Garante redução REAL de 20px em Atividades de hoje e Estudar agora,
+   sem depender da altura global do layout. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
+    height:calc(100% - 20px)!important;
+    min-height:0!important;
+    max-height:calc(100% - 20px)!important;
+    block-size:calc(100% - 20px)!important;
+    align-self:start!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    block-size:100%!important;
+    box-sizing:border-box!important;
+    align-self:stretch!important;
+  }
+}
