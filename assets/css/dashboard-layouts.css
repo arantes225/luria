@@ -9550,3 +9550,28 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-shadow:0 8px 18px rgba(26,79,117,.08)!important;
   }
 }
+
+
+/* DASHBOARD 4 — PHYSICAL LIFT ABOVE BOTTOM STRIP v2 — 2026-10-05 */
+@media (min-width:981px){
+  /* O problema é geométrico, não apenas de empilhamento:
+     a última linha precisa terminar antes da faixa inferior do shell. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] #dashboard-alternative,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3{
+    overflow:visible!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-upcoming,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-performance{
+    position:relative!important;
+    z-index:50!important;
+    transform:translateY(-20px)!important;
+    margin-bottom:-20px!important;
+  }
+
+  /* Reserva o respiro real entre os cards e a borda inferior do dashboard. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3{
+    padding-bottom:20px!important;
+    box-sizing:border-box!important;
+  }
+}
