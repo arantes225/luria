@@ -9842,137 +9842,53 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 }
 
 
-/* DASHBOARD 1 — FINAL RHYTHM ADJUST v73 — 2026-10-05
-   Reduz 10px dos cards superiores, iguala os vãos da coluna direita
-   e sobe Progresso por área + Pulo do Gato mantendo o mesmo gap global. */
+/* DASHBOARD 1 — CONSOLIDATED GEOMETRY v76 — 2026-10-05
+   Substitui v73/v74/v75: uma única regra controla a altura dos quatro cards
+   superiores e a subida da faixa inferior, evitando disputa de height/block-size
+   que causava o efeito de subir e descer. */
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout="1"]{
     --dashboard-callout-gap:8px;
-    --dashboard-upper-cut:10px;
+    --dashboard-top-cut:20px;
   }
 
-  /* Atividades de hoje + Estudar agora: 10px mais baixos. */
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
-    height:calc(100% - var(--dashboard-upper-cut))!important;
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:calc(100% - var(--dashboard-top-cut))!important;
     min-height:0!important;
-    max-height:calc(100% - var(--dashboard-upper-cut))!important;
-    block-size:calc(100% - var(--dashboard-upper-cut))!important;
-    max-block-size:calc(100% - var(--dashboard-upper-cut))!important;
+    max-height:calc(100% - var(--dashboard-top-cut))!important;
+    block-size:auto!important;
+    min-block-size:0!important;
+    max-block-size:none!important;
     align-self:start!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
+    gap:var(--dashboard-callout-gap)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    display:grid!important;
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
     gap:var(--dashboard-callout-gap)!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1 > .dl-card,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main{
-    height:100%!important;
-    min-height:0!important;
-    max-height:100%!important;
-    block-size:100%!important;
-    max-block-size:100%!important;
-    box-sizing:border-box!important;
-  }
-
-  /* Resumo do dia + Ofensiva usam o mesmo ritmo e terminam na mesma régua. */
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
-    height:calc(100% - var(--dashboard-upper-cut))!important;
-    min-height:0!important;
-    max-height:calc(100% - var(--dashboard-upper-cut))!important;
-    block-size:calc(100% - var(--dashboard-upper-cut))!important;
-    max-block-size:calc(100% - var(--dashboard-upper-cut))!important;
-    align-self:start!important;
-    display:grid!important;
-    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
-    gap:var(--dashboard-callout-gap)!important;
-    row-gap:var(--dashboard-callout-gap)!important;
-  }
-
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side > .dl-card,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
     height:100%!important;
     min-height:0!important;
     max-height:100%!important;
+    block-size:auto!important;
+    max-block-size:none!important;
     margin:0!important;
     box-sizing:border-box!important;
   }
 
-  /* A faixa inferior sobe os mesmos 10px.
-     Assim o vão visual continua exatamente 8px, como no resto do dashboard. */
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
-    transform:translateY(calc(-1 * var(--dashboard-upper-cut)))!important;
-    margin-top:0!important;
-    margin-bottom:0!important;
-  }
-}
-
-
-/* DASHBOARD 1 — RIGHT COLUMN BOTTOM ALIGN v74 — 2026-10-05
-   Ajuste fino: Resumo do dia + Ofensiva terminam exatamente
-   na mesma linha inferior de Atividades de hoje + Estudar agora. */
-@media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
-    height:calc(100% - 16px)!important;
-    max-height:calc(100% - 16px)!important;
-    block-size:calc(100% - 16px)!important;
-    max-block-size:calc(100% - 16px)!important;
-    align-self:start!important;
-  }
-
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side > .dl-card,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
-    min-height:0!important;
-    height:100%!important;
-    max-height:100%!important;
-    box-sizing:border-box!important;
-  }
-}
-
-
-/* DASHBOARD 1 — FINAL 10PX STEP v75 — 2026-10-05
-   Reduz mais 10px dos cards superiores, recalibra a coluna direita
-   e sobe a faixa inferior em mais 10px. */
-@media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="1"]{
-    --dashboard-callout-gap:8px;
-    --dashboard-upper-cut-final:20px;
-  }
-
-  /* Atividades de hoje + Estudar agora: mais 10px de redução em relação ao ajuste anterior. */
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
-    height:calc(100% - var(--dashboard-upper-cut-final))!important;
-    max-height:calc(100% - var(--dashboard-upper-cut-final))!important;
-    block-size:calc(100% - var(--dashboard-upper-cut-final))!important;
-    max-block-size:calc(100% - var(--dashboard-upper-cut-final))!important;
-    min-height:0!important;
-    align-self:start!important;
-  }
-
-  /* Resumo do dia + Ofensiva acompanham exatamente a nova régua inferior. */
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
-    height:calc(100% - var(--dashboard-upper-cut-final))!important;
-    max-height:calc(100% - var(--dashboard-upper-cut-final))!important;
-    block-size:calc(100% - var(--dashboard-upper-cut-final))!important;
-    max-block-size:calc(100% - var(--dashboard-upper-cut-final))!important;
-    min-height:0!important;
-    align-self:start!important;
-    display:grid!important;
-    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
-    gap:var(--dashboard-callout-gap)!important;
-  }
-
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side > .dl-card,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
-    height:100%!important;
-    min-height:0!important;
-    max-height:100%!important;
-    box-sizing:border-box!important;
-  }
-
-  /* Progresso por área + Pulo do Gato: mais 10px para cima. */
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
     transform:translateY(-20px)!important;
