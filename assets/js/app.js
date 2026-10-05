@@ -8508,3 +8508,139 @@ iniciarApp();
   }
   setTimeout(ensure, 250);
 })();
+
+
+/* Sidebar Estudos v222 — Ofensiva + Trocar ambiente iguais e presos ao rodapé. */
+(function ensureStudySidebarBottomPairV222(){
+  if(document.getElementById("luria-study-sidebar-bottom-pair-v222")) return;
+  const style=document.createElement("style");
+  style.id="luria-study-sidebar-bottom-pair-v222";
+  style.textContent=`
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar{
+      display:flex!important;
+      flex-direction:column!important;
+      min-height:0!important;
+      overflow:hidden!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .nav,
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .nav-study{
+      flex:1 1 0!important;
+      min-height:0!important;
+      overflow-y:auto!important;
+      overflow-x:hidden!important;
+      overscroll-behavior:contain!important;
+      -webkit-overflow-scrolling:touch!important;
+      padding-bottom:8px!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study{
+      position:static!important;
+      inset:auto!important;
+      flex:0 0 124px!important;
+      width:100%!important;
+      height:124px!important;
+      min-height:124px!important;
+      max-height:124px!important;
+      margin-top:8px!important;
+      padding:0!important;
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      grid-template-rows:58px 58px!important;
+      gap:8px!important;
+      align-content:end!important;
+      background:var(--sidebar)!important;
+      overflow:hidden!important;
+      z-index:40!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study > .streak-mini,
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study > .luria-mode-footer-switch{
+      position:relative!important;
+      inset:auto!important;
+      width:100%!important;
+      min-width:100%!important;
+      max-width:100%!important;
+      height:58px!important;
+      min-height:58px!important;
+      max-height:58px!important;
+      margin:0!important;
+      padding:7px 10px!important;
+      box-sizing:border-box!important;
+      align-self:stretch!important;
+      border-radius:12px!important;
+      overflow:hidden!important;
+      transform:none!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study > .streak-mini{
+      grid-row:1!important;
+      display:flex!important;
+      align-items:center!important;
+      gap:9px!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study > .luria-mode-footer-switch{
+      grid-row:2!important;
+      display:flex!important;
+      align-items:center!important;
+      justify-content:flex-start!important;
+      gap:9px!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .streak-mini-icon,
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .luria-mode-icon{
+      width:40px!important;
+      height:40px!important;
+      min-width:40px!important;
+      min-height:40px!important;
+      flex:0 0 40px!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .streak-mini-copy,
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .user-copy{
+      min-width:0!important;
+      overflow:hidden!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .streak-mini-copy strong,
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .user-copy strong{
+      font-size:12px!important;
+      line-height:1.15!important;
+      white-space:nowrap!important;
+      overflow:hidden!important;
+      text-overflow:ellipsis!important;
+    }
+
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .streak-mini-copy small,
+    body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study .user-copy small{
+      margin-top:2px!important;
+      font-size:9.5px!important;
+      line-height:1.15!important;
+      white-space:nowrap!important;
+      overflow:hidden!important;
+      text-overflow:ellipsis!important;
+    }
+
+    @media(max-width:980px){
+      html.pwa-standalone body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study{
+        flex-basis:124px!important;
+        height:124px!important;
+        min-height:124px!important;
+        max-height:124px!important;
+        margin-top:8px!important;
+        padding-bottom:0!important;
+      }
+
+      html.pwa-standalone body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study > .streak-mini,
+      html.pwa-standalone body:not([data-page^="trabalho_"]) #sidebar.sidebar .sidebar-footer-study > .luria-mode-footer-switch{
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        border-radius:12px!important;
+        padding:7px 10px!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
