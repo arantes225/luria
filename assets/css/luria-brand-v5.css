@@ -2169,3 +2169,61 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     opacity:.92!important;
   }
 }
+
+
+/* LURIA HEADER — WHITE LOGO + ALL-WHITE TIMER v73 — 2026-10-04 */
+@media (min-width:981px){
+  /* Logo sempre branca na faixa superior. */
+  body #sidebar.sidebar .brand .luria-theme-logo,
+  body #sidebar.sidebar #luria-brand-logo{
+    filter:brightness(0) invert(1)!important;
+    opacity:1!important;
+  }
+
+  /* Timer inteiro branco: ícone, título e tempo/subtítulo. */
+  body .app-shell > .topbar .luria-pomodoro-toggle,
+  body .topbar .luria-pomodoro-toggle{
+    color:#fff!important;
+    border-color:rgba(255,255,255,.28)!important;
+    background:rgba(255,255,255,.10)!important;
+  }
+
+  body .app-shell > .topbar .luria-pomodoro-toggle *,
+  body .topbar .luria-pomodoro-toggle *{
+    color:#fff!important;
+  }
+
+  body .app-shell > .topbar .luria-pomodoro-copy,
+  body .app-shell > .topbar .luria-pomodoro-copy strong,
+  body .app-shell > .topbar .luria-pomodoro-copy small,
+  body .topbar .luria-pomodoro-copy,
+  body .topbar .luria-pomodoro-copy strong,
+  body .topbar .luria-pomodoro-copy small{
+    color:#fff!important;
+    opacity:1!important;
+  }
+
+  body .app-shell > .topbar .luria-pomodoro-icon,
+  body .app-shell > .topbar .luria-pomodoro-icon svg,
+  body .topbar .luria-pomodoro-icon,
+  body .topbar .luria-pomodoro-icon svg{
+    color:#fff!important;
+    stroke:#fff!important;
+    fill:none!important;
+    opacity:1!important;
+  }
+
+  body .app-shell > .topbar .luria-pomodoro-icon svg *,
+  body .topbar .luria-pomodoro-icon svg *{
+    stroke:#fff!important;
+  }
+
+  body .app-shell > .topbar .luria-pomodoro-toggle:hover,
+  body .app-shell > .topbar .luria-pomodoro-toggle[aria-expanded="true"],
+  body .topbar .luria-pomodoro-toggle:hover,
+  body .topbar .luria-pomodoro-toggle[aria-expanded="true"]{
+    color:#fff!important;
+    background:rgba(255,255,255,.17)!important;
+    border-color:rgba(255,255,255,.40)!important;
+  }
+}
