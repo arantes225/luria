@@ -9896,3 +9896,83 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     margin-bottom:0!important;
   }
 }
+
+
+/* DASHBOARD 1 — FINAL 8PX GRID ALIGNMENT v77 — 2026-10-05
+   Regra única de geometria final:
+   - Progresso por área e Pulo do Gato ficam exatamente 8px abaixo da faixa superior;
+   - Resumo do dia + Ofensiva ocupam a mesma altura total de Atividades + Estudar agora;
+   - a borda inferior da Ofensiva coincide com a borda inferior de Estudar agora;
+   - remove deslocamentos/encurtamentos artificiais da v76. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"]{
+    --dashboard-callout-gap:8px;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    height:100%!important;
+    min-height:0!important;
+    display:grid!important;
+    grid-template-rows:minmax(0,1fr) 118px!important;
+    column-gap:var(--dashboard-callout-gap)!important;
+    row-gap:var(--dashboard-callout-gap)!important;
+    overflow:hidden!important;
+  }
+
+  /* As duas colunas superiores usam exatamente a mesma régua vertical. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    block-size:100%!important;
+    min-block-size:0!important;
+    max-block-size:100%!important;
+    align-self:stretch!important;
+    margin:0!important;
+    transform:none!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
+    gap:var(--dashboard-callout-gap)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    display:grid!important;
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:var(--dashboard-callout-gap)!important;
+  }
+
+  /* Cards superiores não podem crescer depois do carregamento. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    block-size:100%!important;
+    min-block-size:0!important;
+    max-block-size:100%!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  /* Faixa inferior: sem translate, sem margem negativa; o gap real é 8px. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    align-self:stretch!important;
+    margin:0!important;
+    transform:none!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+}
