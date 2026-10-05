@@ -9978,98 +9978,80 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 }
 
 
-/* DASHBOARD 1 — COMPACTAÇÃO FINAL v78 — 2026-10-05
-   -20px na faixa superior inteira:
-   Atividades de hoje e Estudar agora ficam 20px menores;
-   Resumo do dia e Ofensiva, por dividirem a mesma faixa, ficam 10px menores cada.
-   Todos os vãos permanecem exatamente em 8px. */
+
+
+
+
+/* DASHBOARD 1 — GEOMETRIA ESTÁVEL v81 — 2026-10-05
+   Uma única regra final. Preserva 100% da largura do dashboard e reduz apenas
+   a altura dos quatro cards superiores. Todos os vãos permanecem em 8px. */
 @media (min-width:981px){
   body[data-page="dashboard"][data-dashboard-layout="1"]{
     --dashboard-callout-gap:8px!important;
   }
 
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
-    height:calc(100% - 20px)!important;
-    max-height:calc(100% - 20px)!important;
-    block-size:calc(100% - 20px)!important;
+    width:100%!important;
+    max-width:100%!important;
+    height:100%!important;
+    min-height:0!important;
     grid-template-rows:minmax(0,1fr) 118px!important;
-    column-gap:var(--dashboard-callout-gap)!important;
-    row-gap:var(--dashboard-callout-gap)!important;
-    align-self:start!important;
+    column-gap:8px!important;
+    row-gap:8px!important;
     overflow:hidden!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
-    height:100%!important;
-    min-height:0!important;
-    max-height:100%!important;
-    block-size:100%!important;
-    gap:var(--dashboard-callout-gap)!important;
-    margin:0!important;
-  }
-
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
-    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
-    row-gap:var(--dashboard-callout-gap)!important;
-  }
-
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
-    column-gap:var(--dashboard-callout-gap)!important;
-    row-gap:var(--dashboard-callout-gap)!important;
-  }
-
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > *,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side > .dl-card{
-    margin:0!important;
-  }
-}
-
-
-/* DASHBOARD 1 — REDUÇÃO DIRETA DOS DOIS CARDS v79 — 2026-10-05
-   Garante redução REAL de 20px em Atividades de hoje e Estudar agora,
-   sem depender da altura global do layout. */
-@media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
+  /* Faixa superior: 20px menor, sem alterar largura. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    width:100%!important;
+    max-width:100%!important;
     height:calc(100% - 20px)!important;
-    min-height:0!important;
     max-height:calc(100% - 20px)!important;
-    block-size:calc(100% - 20px)!important;
-    align-self:start!important;
-  }
-
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1 > .dl-card,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main{
-    height:100%!important;
     min-height:0!important;
-    max-height:100%!important;
-    block-size:100%!important;
+    align-self:start!important;
+    margin:0!important;
     box-sizing:border-box!important;
-    align-self:stretch!important;
   }
-}
 
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    gap:8px!important;
+  }
 
-/* DASHBOARD 1 — Resumo + Ofensiva -10px cada v80 — 2026-10-05 */
-@media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
-    height:calc(100% - 20px)!important;
-    min-height:0!important;
-    max-height:calc(100% - 20px)!important;
-    block-size:calc(100% - 20px)!important;
-    align-self:start!important;
+  /* Resumo e Ofensiva dividem a faixa: -10px em cada um. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    display:grid!important;
     grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
     gap:8px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    width:100%!important;
+    max-width:100%!important;
     height:100%!important;
     min-height:0!important;
     max-height:100%!important;
-    block-size:100%!important;
+    margin:0!important;
     box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  /* Faixa inferior intacta e visível. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat{
+    width:100%!important;
+    max-width:100%!important;
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+    margin:0!important;
+    transform:none!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
   }
 }
