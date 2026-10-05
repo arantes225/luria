@@ -1101,3 +1101,141 @@ body[data-page="amigos"] .studyrats-challenge{border-radius:14px!important;overf
  body[data-page="amigos"] .friends-community-right{grid-template-columns:1fr}
  body[data-page="amigos"] .studyrats-home-grid{grid-template-columns:1fr!important}
 }
+
+
+
+/* Amigos · exact reference composition v41 — 2026-10-04 */
+body[data-page="amigos"] .friends-reference-page{
+  display:grid!important;gap:10px!important;width:100%!important;min-width:0!important;
+}
+body[data-page="amigos"] .friends-ref-hero{
+  position:relative;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);
+  min-height:126px;overflow:hidden;padding:18px 24px;border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border));
+  border-radius:15px;background:linear-gradient(115deg,color-mix(in srgb,var(--accent-soft) 80%,var(--surface)),color-mix(in srgb,var(--accent-soft) 48%,var(--surface)));
+}
+body[data-page="amigos"] .friends-ref-hero-copy{position:relative;z-index:2}
+body[data-page="amigos"] .friends-ref-eyebrow{display:block;color:var(--accent);font-size:8px;font-weight:800;letter-spacing:.15em}
+body[data-page="amigos"] .friends-ref-hero h1{margin:2px 0 2px;font-size:33px;line-height:1;font-weight:760;letter-spacing:-.04em}
+body[data-page="amigos"] .friends-ref-hero h2{margin:0;font-size:15px;font-weight:650}
+body[data-page="amigos"] .friends-ref-hero p{max-width:620px;margin:6px 0 0;color:var(--muted);font-size:9px;line-height:1.4}
+body[data-page="amigos"] .friends-ref-hero-art{position:relative;display:flex;align-items:center;justify-content:center;min-width:0}
+body[data-page="amigos"] .friends-ref-hero-art img{position:absolute;bottom:-29px;left:28%;width:135px;height:135px;object-fit:contain;filter:drop-shadow(0 7px 16px color-mix(in srgb,var(--accent) 19%,transparent))}
+body[data-page="amigos"] .friends-ref-bubble{position:absolute;left:58%;top:2px;padding:8px 11px;border-radius:18px 18px 18px 5px;background:rgba(255,255,255,.78);color:var(--accent);font-size:9px;line-height:1.22;font-weight:700;transform:rotate(-4deg)}
+body[data-page="amigos"] .friends-ref-script{position:absolute;right:5px;top:17px;color:var(--accent);font-size:13px;line-height:1.2;font-weight:700;font-style:italic;transform:rotate(-7deg);text-align:center}
+
+body[data-page="amigos"] .friends-ref-layout{display:grid;grid-template-columns:300px minmax(0,1fr);gap:10px;align-items:start;min-width:0}
+body[data-page="amigos"] .friends-ref-left{display:grid;gap:10px;min-width:0}
+body[data-page="amigos"] .friends-ref-main{display:grid;gap:10px;min-width:0}
+body[data-page="amigos"] .friends-card,
+body[data-page="amigos"] .studyrats-card{border:1px solid var(--border)!important;border-radius:14px!important;background:var(--surface)!important;box-shadow:0 4px 14px color-mix(in srgb,var(--accent) 4%,transparent)!important}
+body[data-page="amigos"] .friends-ref-left .friends-card,
+body[data-page="amigos"] .friends-ref-bottom-grid .friends-card,
+body[data-page="amigos"] .friends-ref-inbox-card{padding:12px!important}
+body[data-page="amigos"] .friends-ref-card-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px}
+body[data-page="amigos"] .friends-ref-card-head h2{margin:0!important;font-size:12px!important;font-weight:650!important}
+body[data-page="amigos"] .friends-ref-card-head h2 b{display:inline-grid;place-items:center;min-width:17px;height:17px;margin-left:4px;border-radius:50%;background:#ff4d63;color:#fff;font-size:9px}
+body[data-page="amigos"] .friends-ref-link{border:0;background:transparent;color:var(--accent);font-size:8px;font-weight:700;cursor:pointer;padding:0}
+
+body[data-page="amigos"] .friends-ref-add-panel{display:grid;gap:7px}
+body[data-page="amigos"] .friends-ref-add-panel .friends-add-row{grid-template-columns:minmax(0,1fr) 72px;margin-top:0}
+body[data-page="amigos"] .friends-ref-add-panel .friends-add-row input{min-height:34px;font-size:9px}
+body[data-page="amigos"] .friends-ref-add-panel .friends-add-row .button{min-height:34px;padding:0 9px;font-size:8px}
+body[data-page="amigos"] .friends-ref-own-id{padding-top:7px;border-top:1px solid var(--border)}
+body[data-page="amigos"] .friends-ref-own-id>span{display:block;margin-bottom:4px;color:var(--muted);font-size:7px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+body[data-page="amigos"] .friends-ref-own-id .friends-id-box{margin-top:0;padding:6px 8px}
+body[data-page="amigos"] .friends-ref-own-id .friends-id-box strong{font-size:12px}
+body[data-page="amigos"] .friends-ref-own-id .button{min-height:28px;font-size:7px;padding:0 7px}
+
+body[data-page="amigos"] .friends-ref-friends-card{min-height:286px}
+body[data-page="amigos"] .friends-list{gap:0;margin-top:0}
+body[data-page="amigos"] .friend-row{padding:7px 0!important;border:0!important;border-bottom:1px solid var(--border)!important;border-radius:0!important;background:transparent!important;flex-direction:row!important;align-items:center!important}
+body[data-page="amigos"] .friend-row:last-child{border-bottom:0!important}
+body[data-page="amigos"] .friend-avatar{width:31px;height:31px;flex:0 0 31px}
+body[data-page="amigos"] .friend-copy strong{font-size:9px!important}
+body[data-page="amigos"] .friend-copy small{font-size:7px!important}
+body[data-page="amigos"] .friend-row .friends-actions{margin-left:auto}
+body[data-page="amigos"] .friend-row .friends-actions .button{min-height:25px;padding:0 6px;font-size:7px}
+
+body[data-page="amigos"] .friends-ref-create-room{display:grid;gap:10px}
+body[data-page="amigos"] .friends-ref-room-copy{display:flex;gap:9px;align-items:flex-start}
+body[data-page="amigos"] .friends-ref-room-icon{width:28px;height:28px;display:grid;place-items:center;border-radius:9px;background:var(--accent-soft);color:var(--accent);font-size:14px}
+body[data-page="amigos"] .friends-ref-create-room h2{margin:0 0 3px!important;font-size:12px!important}
+body[data-page="amigos"] .friends-ref-create-room p{margin:0!important;font-size:8px!important;line-height:1.35!important}
+body[data-page="amigos"] .friends-ref-create-room .button{width:100%;min-height:34px;font-size:8px}
+
+body[data-page="amigos"] .friends-ref-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+body[data-page="amigos"] .friends-ref-metrics article{min-height:66px;display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--border);border-radius:13px;background:var(--surface)}
+body[data-page="amigos"] .friends-ref-metric-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:var(--accent-soft);color:var(--accent);font-size:16px}
+body[data-page="amigos"] .friends-ref-metric-icon.dot:before{content:"";width:10px;height:10px;border-radius:50%;background:#21b768;box-shadow:0 0 0 7px rgba(33,183,104,.12)}
+body[data-page="amigos"] .friends-ref-metric-icon.trophy{background:#fff6db;color:#d29a14}
+body[data-page="amigos"] .friends-ref-metrics strong{display:block;font-size:18px;line-height:1}
+body[data-page="amigos"] .friends-ref-metrics small{display:block;margin-top:3px;color:var(--muted);font-size:7.5px}
+
+body[data-page="amigos"] .friends-ref-studyrats{padding:12px!important;display:grid!important;gap:8px!important}
+body[data-page="amigos"] .friends-ref-studyrats-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+body[data-page="amigos"] .friends-ref-studyrats-brand{display:flex;align-items:center;gap:10px;min-width:0}
+body[data-page="amigos"] .friends-ref-studyrats-brand>img{width:48px;height:48px;object-fit:contain;flex:0 0 48px}
+body[data-page="amigos"] .friends-ref-studyrats-titleline{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+body[data-page="amigos"] .friends-ref-studyrats-titleline h2{margin:0!important;font-size:24px!important;letter-spacing:-.04em}
+body[data-page="amigos"] .friends-ref-studyrats-titleline span{padding:5px 8px;border-radius:999px;background:#eaf9f0;color:#219a5c;font-size:7px;font-weight:800}
+body[data-page="amigos"] .friends-ref-studyrats-brand p{margin:2px 0 0;max-width:470px;color:var(--muted);font-size:8px;line-height:1.35}
+body[data-page="amigos"] .friends-ref-studyrats-actions{display:flex;align-items:center;gap:7px;flex:0 0 auto}
+body[data-page="amigos"] .friends-ref-current-rat{display:flex;align-items:center;gap:5px;padding:4px 7px;border:1px solid var(--border);border-radius:10px;background:var(--surface-2)}
+body[data-page="amigos"] .friends-ref-current-rat>span{font-size:7px;font-weight:700;color:var(--muted)}
+body[data-page="amigos"] .friends-ref-current-rat .studyrats-home-preview-stage{width:70px!important;min-height:46px!important;height:46px!important}
+body[data-page="amigos"] .friends-ref-current-rat .studyrats-preview-composite{transform:scale(.88)!important}
+body[data-page="amigos"] .friends-ref-studyrats-actions .button{min-height:34px!important;padding:0 12px!important;font-size:8px!important;width:auto!important}
+body[data-page="amigos"] .friends-ref-studyrats-tabs{display:flex;gap:10px;border-top:1px solid var(--border);padding-top:7px}
+body[data-page="amigos"] .friends-ref-studyrats-tabs button{border:0;background:transparent;padding:4px 3px;color:var(--muted);font-size:8px;font-weight:700;border-bottom:2px solid transparent}
+body[data-page="amigos"] .friends-ref-studyrats-tabs button.active{color:var(--accent);border-bottom-color:var(--accent)}
+body[data-page="amigos"] .friends-ref-hidden-history{display:none!important}
+body[data-page="amigos"] .studyrats-list{display:grid;gap:8px}
+body[data-page="amigos"] .studyrats-challenge{border-radius:12px!important}
+body[data-page="amigos"] .studyrats-race-scene{min-height:185px!important;padding-top:32px!important;padding-bottom:17px!important}
+body[data-page="amigos"] .studyrats-lane{min-height:35px!important}
+body[data-page="amigos"] .studyrats-runner-card{padding-top:2px!important;padding-bottom:2px!important}
+body[data-page="amigos"] .studyrats-road{height:34px!important}
+body[data-page="amigos"] .studyrats-mouse{transform:translate(-34px,-50%) scale(.82)!important}
+body[data-page="amigos"] .studyrats-race-footer{padding:7px 10px!important;font-size:7px!important}
+
+body[data-page="amigos"] .friends-ref-bottom-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(250px,.7fr);gap:10px}
+body[data-page="amigos"] .friends-ref-room-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+body[data-page="amigos"] .friends-ref-room-grid article{display:grid;align-content:start;gap:5px;padding:9px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2)}
+body[data-page="amigos"] .friends-ref-room-grid .tag{justify-self:start;padding:3px 6px;border-radius:999px;font-size:6px;font-weight:800}
+body[data-page="amigos"] .friends-ref-room-grid .tag.live{background:#e8f8ee;color:#21a360}
+body[data-page="amigos"] .friends-ref-room-grid .tag.popular{background:#f2eaff;color:#8b4edb}
+body[data-page="amigos"] .friends-ref-room-grid .tag.progress{background:#eaf2ff;color:#2b6fd6}
+body[data-page="amigos"] .friends-ref-room-grid strong{font-size:9px;line-height:1.2}
+body[data-page="amigos"] .friends-ref-room-grid small{font-size:7px;color:var(--muted)}
+body[data-page="amigos"] .friends-ref-room-grid .button{min-height:27px;padding:0 6px;font-size:7px;margin-top:2px}
+body[data-page="amigos"] .friends-ref-activity-list{display:grid;gap:3px}
+body[data-page="amigos"] .friends-ref-activity-list>div{display:grid;grid-template-columns:20px minmax(0,1fr) auto;align-items:center;gap:6px;padding:5px 0;border-bottom:1px solid var(--border)}
+body[data-page="amigos"] .friends-ref-activity-list>div:last-child{border-bottom:0}
+body[data-page="amigos"] .activity-icon{width:20px;height:20px;display:grid;place-items:center;border-radius:7px;background:var(--accent-soft);color:var(--accent);font-size:9px}
+body[data-page="amigos"] .friends-ref-activity-list p{margin:0;font-size:7.2px;line-height:1.3;color:var(--muted)}
+body[data-page="amigos"] .friends-ref-activity-list p strong{color:var(--text)}
+body[data-page="amigos"] .friends-ref-activity-list time{color:var(--muted);font-size:6.5px}
+body[data-page="amigos"] .friends-ref-inbox-card{display:none}
+
+@media(max-width:1180px){
+  body[data-page="amigos"] .friends-ref-layout{grid-template-columns:260px minmax(0,1fr)}
+  body[data-page="amigos"] .friends-ref-bottom-grid{grid-template-columns:1fr}
+}
+@media(max-width:920px){
+  body[data-page="amigos"] .friends-ref-hero{grid-template-columns:1fr;min-height:118px}
+  body[data-page="amigos"] .friends-ref-hero-art{display:none}
+  body[data-page="amigos"] .friends-ref-layout{grid-template-columns:1fr}
+  body[data-page="amigos"] .friends-ref-left{grid-template-columns:1fr 1fr}
+  body[data-page="amigos"] .friends-ref-create-room{grid-column:1/-1}
+}
+@media(max-width:760px){
+  body[data-page="amigos"] .friends-ref-hero{padding:14px}
+  body[data-page="amigos"] .friends-ref-hero h1{font-size:28px}
+  body[data-page="amigos"] .friends-ref-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  body[data-page="amigos"] .friends-ref-left{grid-template-columns:1fr}
+  body[data-page="amigos"] .friends-ref-studyrats-head{align-items:flex-start;flex-direction:column}
+  body[data-page="amigos"] .friends-ref-studyrats-actions{width:100%;flex-wrap:wrap}
+  body[data-page="amigos"] .friends-ref-current-rat{flex:1 1 100%}
+  body[data-page="amigos"] .friends-ref-room-grid{grid-template-columns:1fr}
+}
+
