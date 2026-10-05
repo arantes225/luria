@@ -9209,3 +9209,20 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     padding:9px 12px!important;
   }
 }
+
+
+/* DASHBOARD 1 — CARD GAPS COMPACT v67 — 2026-10-05 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    column-gap:10px!important;
+    row-gap:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    gap:10px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    gap:10px!important;
+  }
+}
