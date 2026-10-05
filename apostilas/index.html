@@ -34,6 +34,50 @@
     .json-contract{padding:12px 14px;border-radius:12px;background:var(--surface-2);color:var(--muted);font-size:10px;line-height:1.5}.json-contract code{color:var(--text)}
     .empty-library{grid-column:1/-1;padding:22px;border:1px dashed var(--border);border-radius:14px;color:var(--muted);font-size:11px;text-align:center}
     @media(max-width:1100px){.covers-grid,.library-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.covers-grid,.library-grid,.admin-create-grid{grid-template-columns:1fr}.books-head{align-items:flex-start;flex-direction:column}}
+  
+    /* Biblioteca de apostilas — mesmo padrão visual dos decks de Flashcards */
+    .covers-grid,#covers-grid,.section-title:has(+ #covers-grid){display:none!important}
+    .books-page{gap:14px}
+    .library-grid{
+      display:flex!important;gap:12px!important;overflow-x:auto!important;overflow-y:hidden!important;
+      max-width:100%!important;padding:4px 2px 14px!important;overscroll-behavior-x:contain;
+      scrollbar-width:thin;scrollbar-color:var(--accent) transparent;
+    }
+    .library-grid::-webkit-scrollbar{height:7px}
+    .library-grid::-webkit-scrollbar-track{background:transparent}
+    .library-grid::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--accent) 55%,transparent);border-radius:999px}
+    .book-card{
+      flex:0 0 198px!important;width:198px!important;min-height:185px!important;padding:17px!important;
+      box-sizing:border-box!important;position:relative!important;display:flex!important;flex-direction:column!important;
+      text-decoration:none!important;color:var(--text)!important;overflow:hidden!important;
+      background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%)!important;
+      border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;
+      border-left:5px solid var(--accent)!important;border-radius:13px!important;box-shadow:none!important;
+    }
+    .book-card:hover{transform:none!important;box-shadow:none!important}
+    .book-thumb,.cover-thumb,.cover-copy,.book-card img{display:none!important}
+    .book-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .book-card-icon{
+      width:34px;height:34px;min-width:34px;border-radius:9px;
+      display:grid;place-items:center;background:color-mix(in srgb,var(--accent) 11%,var(--surface));
+      border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)
+    }
+    .book-card-icon svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .book-meta{padding:0!important;margin-top:8px!important;display:flex;flex:1;flex-direction:column}
+    .book-meta .book-area{display:block;color:var(--muted);font-size:8.8px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .book-meta .book-subarea{display:block;margin-top:3px;color:var(--accent);font-size:9px;line-height:1.2;font-weight:500}
+    .book-meta strong{display:-webkit-box!important;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+      margin:8px 0 0!important;color:var(--text)!important;font-size:14px!important;line-height:1.18!important;font-weight:600!important}
+    .book-meta small{margin-top:auto!important;padding-top:12px!important;color:var(--muted)!important;font-size:8.8px!important}
+    .library-shell{padding:16px 18px;border:1px solid var(--border);border-radius:15px;background:var(--surface);overflow:hidden}
+    .library-shell .section-title{margin-bottom:10px}
+    .library-shell .section-title h2{font-size:16px;font-weight:500}
+    .library-shell .section-title small{font-size:9px}
+    @media(max-width:700px){
+      .library-grid{display:flex!important}
+      .book-card{flex-basis:188px!important;width:188px!important}
+      .books-head{display:none}
+    }
   </style>
 </head>
 <body data-page="aprender">
@@ -43,12 +87,8 @@
       <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Conteúdo LURIA</span><h1>Apostilas</h1></div></header>
       <section class="books-page">
         <div class="books-head"><div><h1>Apostilas</h1><p>Conteúdo estruturado por área para leitura e revisão.</p></div><a class="books-back" href="/aprender/">← Voltar para Aprender</a></div>
-
-        <div class="section-title"><h2>Capas oficiais</h2><small>WEBP otimizado · cada arquivo abaixo de 150 KB</small></div>
-        <div class="covers-grid" id="covers-grid"></div>
-
-        <section class="admin-create" id="admin-create">
-          <div class="section-title"><h2>Criar apostila</h2><small>A capa é escolhida automaticamente pela área.</small></div>
+<section class="admin-create" id="admin-create">
+          <div class="section-title"><h2>Criar apostila</h2><small>Organize a apostila em Área → Matéria → Tema.</small></div>
           <div class="admin-create-grid">
             <label>Área principal
               <select id="book-area">
@@ -65,9 +105,7 @@
             <label style="grid-column:1/-1">URL do conteúdo<input id="book-url" placeholder="/apostilas/... ou URL do PDF"></label>
           </div>
           <div class="json-contract">
-            A capa-base é sempre crua. Ao gerar uma apostila, use <code>area</code> apenas para escolher o modelo, <code>materia</code> como subárea e <code>tema</code> como tema específico. O texto é aplicado sobre a arte com fundo totalmente transparente. O JSON também deve apontar para a capa com <code>cover_key</code>.<br><br><strong>Padrão editorial obrigatório:</strong> nível de aprofundamento <strong>ALTO</strong>. A apostila deve ser suficiente como material principal e autônomo de estudo, sem presumir que o leitor terá outra fonte para completar lacunas. Conceitos, fisiopatologia, diagnóstico, diferenciais, conduta, tratamento, doses quando pertinentes, monitorização, complicações, seguimento e raciocínio clínico devem ser explicados de forma completa, progressiva e didática. Não usar resumos telegráficos quando o tema exigir desenvolvimento. Valores aceitos:
-            <code>clinica_medica</code>, <code>cirurgia_geral</code>, <code>ginecologia_obstetricia</code>, <code>pediatria</code> e <code>medicina_preventiva</code>.
-            Se <code>cover_key</code> vier ausente, o sistema resolve automaticamente a partir da área.
+            <strong>Padrão editorial obrigatório:</strong> nível de aprofundamento <strong>ALTO</strong>. A apostila deve funcionar como material principal e autônomo de estudo, com conteúdo completo, didático e progressivo.
           </div>
           <div class="admin-create-actions">
             <button class="button primary" id="create-book" type="button">Criar apostila</button>
@@ -76,10 +114,13 @@
           </div>
         </section>
 
-        <div class="section-title"><h2>Biblioteca</h2><small id="library-count">1 apostila</small></div>
-        <div class="library-grid" id="library-grid"><a class="book-card" id="pilot-dmg-card" href="/apostilas/diabetes-mellitus-gestacional/" style="text-decoration:none" data-static-pilot="dmg"><div class="book-thumb"><img src="data:image/webp;base64,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" alt="Capa Diabetes Mellitus Gestacional"><div class="cover-copy"><span>OBSTETRÍCIA</span><strong>DIABETES MELLITUS GESTACIONAL</strong></div></div><div class="book-meta"><strong>Diabetes Mellitus Gestacional</strong><small>Obstetrícia</small></div></a></div>
+        <section class="library-shell"><div class="section-title"><div><span style="font-size:9px;color:var(--accent);text-transform:uppercase;letter-spacing:.07em">Apostilas</span><h2>Biblioteca</h2></div><small id="library-count">1 apostila</small></div>
+        <div class="library-grid" id="library-grid"><a class="book-card" id="pilot-dmg-card" href="/apostilas/diabetes-mellitus-gestacional/" data-static-pilot="dmg">
+          <div class="book-card-top"><span class="book-card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span></div>
+          <div class="book-meta"><span class="book-area">Ginecologia e Obstetrícia</span><span class="book-subarea">Obstetrícia</span><strong>Diabetes Mellitus Gestacional</strong><small>Apostila LURIA</small></div>
+        </a></div>
 
-        <div class="books-note">As capas seguem os cinco modelos enviados: Cirurgia Geral, Pediatria, Medicina Preventiva, Ginecologia e Obstetrícia e Clínica Médica. O sistema não duplica a imagem em cada apostila: cada registro guarda apenas a <b>cover_key</b> e reutiliza o modelo correspondente.</div>
+        <div class="books-note">As capas seguem os cinco modelos enviados: Cirurgia Geral, Pediatria, Medicina Preventiva, Ginecologia e Obstetrícia e Clínica Médica. O sistema não duplica a imagem em cada apostila: cada registro guarda apenas a <b>cover_key</b> e reutiliza o modelo correspondente.</div></section>
       </section>
     </div></main>
   </div>
@@ -89,85 +130,34 @@
   <script>
   (()=>{"use strict";
     const sb=window.supabaseClient;
-    const manifest={
-      clinica_medica:{label:"Clínica Médica",file:"/assets/data/apostila-covers/clinica_medica.txt",bytes:4722},
-      cirurgia_geral:{label:"Cirurgia Geral",file:"/assets/data/apostila-covers/cirurgia_geral.txt",bytes:6436},
-      ginecologia_obstetricia:{label:"Ginecologia e Obstetrícia",file:"/assets/data/apostila-covers/ginecologia_obstetricia.txt",bytes:5020},
-      pediatria:{label:"Pediatria",file:"/assets/data/apostila-covers/pediatria.txt",bytes:3662},
-      medicina_preventiva:{label:"Medicina Preventiva / MFC",file:"/assets/data/apostila-covers/medicina_preventiva.txt",bytes:5502}
-    };
-    const cache={};
     const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-    function resolveCoverKey(value){
-      const s=norm(value);
-      if(s.includes("cirurg")) return "cirurgia_geral";
-      if(s.includes("pediatr")) return "pediatria";
-      if(s.includes("gine")||s.includes("obst")) return "ginecologia_obstetricia";
-      if(s.includes("prevent")||s.includes("mfc")||s.includes("famil")) return "medicina_preventiva";
-      return "clinica_medica";
-    }
-    async function coverSrc(key){
-      key=manifest[key]?key:resolveCoverKey(key);
-      if(cache[key]) return cache[key];
-      const text=await fetch(manifest[key].file,{cache:"force-cache"}).then(r=>r.text());
-      cache[key]=text.trim();
-      return cache[key];
-    }
-    async function renderOfficialCovers(){
-      const root=document.getElementById("covers-grid");
-      root.innerHTML="";
-      for(const [key,item] of Object.entries(manifest)){
-        const src=await coverSrc(key);
-        const card=document.createElement("article");
-        card.className="cover-card";
-        card.innerHTML='<div class="cover-thumb"><img alt="Capa '+item.label+'"></div><div class="cover-meta"><strong>'+item.label+'</strong><small>'+Math.ceil(item.bytes/1024)+' KB · WEBP</small></div>';
-        card.querySelector("img").src=src;
-        root.appendChild(card);
-      }
-    }
+    const bookIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg>';
     async function renderLibrary(){
       const root=document.getElementById("library-grid");
       const count=document.getElementById("library-count");
       const pilotUrl="/apostilas/diabetes-mellitus-gestacional/";
-
-      // O piloto fica no HTML e nunca é removido por erro de rede/Supabase.
-      const pilotCard=document.getElementById("pilot-dmg-card");
-      if(pilotCard) pilotCard.hidden=false;
-
+      document.getElementById("pilot-dmg-card")?.removeAttribute("hidden");
       let remoteItems=[];
       try{
         if(sb){
-          const {data,error}=await sb
-            .from("apostilas")
-            .select("id,area,materia,tema,titulo,cover_key,content_url,is_published,created_at")
-            .eq("is_published",true)
-            .order("created_at",{ascending:false});
-          if(!error && Array.isArray(data)) remoteItems=data;
+          const {data,error}=await sb.from("apostilas")
+            .select("id,area,materia,tema,titulo,content_url,is_published,created_at")
+            .eq("is_published",true).order("created_at",{ascending:false});
+          if(!error&&Array.isArray(data)) remoteItems=data;
         }
       }catch{}
-
-      // Remove apenas cards dinâmicos antigos; mantém o piloto estático.
       root.querySelectorAll("[data-dynamic-book='true']").forEach(el=>el.remove());
-
       const extras=remoteItems.filter(book=>book.content_url!==pilotUrl);
       for(const book of extras){
-        const key=manifest[book.cover_key]?book.cover_key:resolveCoverKey(book.area);
-        let src="";
-        try{ src=await coverSrc(key); }catch{}
         const el=document.createElement(book.content_url?"a":"article");
-        el.className="book-card";
-        el.dataset.dynamicBook="true";
-        if(book.content_url){el.href=book.content_url;el.style.textDecoration="none";}
-        el.innerHTML='<div class="book-thumb"><img alt=""><div class="cover-copy"><span></span><strong></strong></div></div><div class="book-meta"><strong></strong><small></small></div>';
-        if(src) el.querySelector("img").src=src;
-        el.querySelector("img").alt="Capa "+(book.titulo||"Apostila");
-        el.querySelector(".cover-copy span").textContent=book.materia||"";
-        el.querySelector(".cover-copy strong").textContent=book.tema||book.titulo||"";
-        el.querySelector(".book-meta strong").textContent=book.titulo||"Apostila";
-        el.querySelector(".book-meta small").textContent=book.materia||manifest[key].label;
+        el.className="book-card"; el.dataset.dynamicBook="true";
+        if(book.content_url) el.href=book.content_url;
+        el.innerHTML='<div class="book-card-top"><span class="book-card-icon">'+bookIcon+'</span></div><div class="book-meta"><span class="book-area"></span><span class="book-subarea"></span><strong></strong><small>Apostila LURIA</small></div>';
+        el.querySelector(".book-area").textContent=book.area||"Sem área";
+        el.querySelector(".book-subarea").textContent=book.materia||"";
+        el.querySelector(".book-meta strong").textContent=book.tema||book.titulo||"Apostila";
         root.appendChild(el);
       }
-
       const total=1+extras.length;
       count.textContent=total+" apostila"+(total===1?"":"s");
     }
@@ -186,9 +176,10 @@
           const is_published=document.getElementById("book-published").checked;
           if(!titulo){status.textContent="Informe o título.";return;}
           status.textContent="Salvando...";
-          const {error}=await sb.from("apostilas").insert({area:manifest[area]?.label||area,materia,tema,titulo,cover_key:area,content_url,is_published});
+          const areaLabel={clinica_medica:"Clínica Médica",cirurgia_geral:"Cirurgia Geral",ginecologia_obstetricia:"Ginecologia e Obstetrícia",pediatria:"Pediatria",medicina_preventiva:"Medicina Preventiva / MFC"}[area]||area;
+          const {error}=await sb.from("apostilas").insert({area:areaLabel,materia,tema,titulo,cover_key:area,content_url,is_published});
           if(error){status.textContent="Erro: "+error.message;return;}
-          status.textContent="Apostila criada com a capa correta.";
+          status.textContent="Apostila criada.";
           document.getElementById("book-title").value="";
           document.getElementById("book-materia").value="";
           document.getElementById("book-tema").value="";
@@ -211,8 +202,7 @@
         "Quando houver material interno da LURIA/Drive sobre o tema, usar sua estrutura e cobertura como referência, sem perpetuar conteúdo desatualizado quando houver diretriz mais recente."
       ]
     };
-    window.LuriaApostilaCover={manifest,resolveCoverKey,coverSrc};
-    Promise.allSettled([renderOfficialCovers(),renderLibrary(),setupAdmin()]);
+    Promise.allSettled([renderLibrary(),setupAdmin()]);
   })();
   </script>
   <script defer src="/assets/js/pwa.js?v=6-apostilas-library-fix"></script>
