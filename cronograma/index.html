@@ -3896,7 +3896,7 @@ body[data-page="cronograma"] .agenda-reorganize-card .manual-status{
   font-size:8px!important;
 }
 </style>
-<link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=64-fine-left">
+<link rel="stylesheet" href="assets/css/luria-brand-v5.css?v=20261004-cronograma-scroll-v71">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20260930-layout-pcr">
   <link rel="canonical" href="/cronograma/">
@@ -3979,6 +3979,65 @@ body[data-page="cronograma"] .planner-today{
 }
 body[data-page="cronograma"] .planner-today:hover{
   background:var(--surface-2)!important;
+}
+</style>
+
+<style id="cronograma-scroll-inset-v46">
+@media(min-width:981px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main{
+    overflow:hidden!important;
+    padding-right:6px!important;
+    background:var(--surface)!important;
+    border-radius:0 18px 18px 0!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page{
+    width:calc(100% - 12px)!important;
+    max-width:calc(100% - 12px)!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0 12px 0 0!important;
+    padding-right:2px!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    box-sizing:border-box!important;
+    background:transparent!important;
+    scrollbar-width:thin!important;
+    scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
+    scrollbar-gutter:auto!important;
+    overscroll-behavior:contain!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar{
+    width:7px!important;
+    height:7px!important;
+    background:transparent!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-track,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-track-piece,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-corner{
+    background:transparent!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-thumb{
+    background:color-mix(in srgb,var(--accent) 72%,transparent)!important;
+    border:0!important;
+    border-radius:999px!important;
+    min-height:34px!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page::-webkit-scrollbar-button{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+    min-width:0!important;
+    min-height:0!important;
+    background:transparent!important;
+    border:0!important;
+  }
 }
 </style>
 </head>
