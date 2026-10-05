@@ -7890,3 +7890,82 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     flex:0 0 48.4px!important;
   }
 }
+
+
+/* DASHBOARD 1 — PROGRESS CARD REDESIGN v47 — 2026-10-04 */
+@media (min-width:981px){
+  /* Ajuste definitivo e isolado do card Progresso por área. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    align-self:start!important;
+    justify-self:stretch!important;
+    padding:14px 16px 14px!important;
+    overflow:hidden!important;
+    background:var(--surface)!important;
+    border:1px solid var(--dl-border)!important;
+    border-radius:16px!important;
+    box-shadow:0 4px 14px rgba(26,79,117,.035)!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-card-heading{
+    margin:0 0 11px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row{
+    display:grid!important;
+    grid-template-columns:minmax(120px,150px) minmax(120px,1fr) 40px!important;
+    align-items:center!important;
+    gap:10px!important;
+    width:100%!important;
+    min-height:24px!important;
+    margin:5px 0!important;
+    padding:0!important;
+    font-size:12px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row > span{
+    color:var(--text)!important;
+    font-size:12px!important;
+    font-weight:500!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-track{
+    display:block!important;
+    width:100%!important;
+    height:8px!important;
+    min-height:8px!important;
+    border-radius:999px!important;
+    border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+    background:color-mix(in srgb,var(--accent) 9%,var(--surface-2))!important;
+    overflow:hidden!important;
+    opacity:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-track > i{
+    display:block!important;
+    height:100%!important;
+    min-width:2px!important;
+    border-radius:999px!important;
+    background:var(--accent)!important;
+    opacity:1!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row > strong{
+    display:block!important;
+    color:var(--accent)!important;
+    font-size:11px!important;
+    font-weight:700!important;
+    text-align:right!important;
+    white-space:nowrap!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas .dl-area-row > small{
+    display:none!important;
+  }
+}
