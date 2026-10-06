@@ -1,5 +1,5 @@
 (() => {
-  const allowed = new Set(["1", "2", "3", "4", "5"]);
+  const allowed = new Set(["1", "2", "3", "5"]);
   const options = document.getElementById("dashboard-layout-options");
   const status = document.getElementById("dashboard-layout-status");
   if (!options) return;
