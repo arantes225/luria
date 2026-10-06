@@ -465,28 +465,36 @@ body[data-page="consolidar"] .learn-card--secondary{
 
 
 <style id="consolidar-card-side-finish-v8">
-/* Acabamento lateral contínuo, igual ao cartão de referência */
+/* Consolidar — faixa lateral contínua, sem lingueta */
+body[data-page="consolidar"] .learn-card{
+  position:relative!important;
+  overflow:hidden!important;
+  padding-left:30px!important;
+}
+body[data-page="consolidar"] .learn-card::after{
+  content:none!important;
+}
 body[data-page="consolidar"] .learn-card::before{
   content:""!important;
   position:absolute!important;
   left:0!important;
   top:0!important;
   bottom:0!important;
-  width:6px!important;
+  right:auto!important;
+  width:8px!important;
   height:auto!important;
-  transform:none!important;
   border-radius:22px 0 0 22px!important;
-  background:#184888!important;
-  box-shadow:3px 0 10px rgba(24,72,136,.18)!important;
+  background:var(--accent)!important;
+  box-shadow:none!important;
+  transform:none!important;
   opacity:1!important;
-  z-index:4!important;
+  z-index:5!important;
   pointer-events:none!important;
 }
-:root[data-theme="leila-mood"] body[data-page="consolidar"] .learn-card::before,
-:root[data-theme="pink"] body[data-page="consolidar"] .learn-card::before,
-:root[data-theme="rosa"] body[data-page="consolidar"] .learn-card::before{
-  background:var(--accent)!important;
-  box-shadow:3px 0 10px color-mix(in srgb,var(--accent) 20%,transparent)!important;
+@media(max-width:760px){
+  body[data-page="consolidar"] .learn-card{
+    padding-left:24px!important;
+  }
 }
 </style>
 
