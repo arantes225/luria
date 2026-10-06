@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://wwwn.cdc.gov https://phil.cdc.gov; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Vulvovaginites · LURIA</title>
+  <link rel="manifest" href="/manifest.webmanifest?v=5">
+  <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
+  <meta name="theme-color" content="#0A2342">
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261006-apostilas-theme-v91">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="canonical" href="/apostilas/vulvovaginites/">
+  <style>
+    .book-page{display:grid;grid-template-columns:196px minmax(0,1fr);gap:14px;align-items:start;padding-bottom:36px}
+    .book-aside{position:sticky;top:8px;align-self:start;display:grid;gap:12px}
+    .book-cover{position:relative;aspect-ratio:240/339;border-radius:18px;overflow:hidden;background:#184888;border:1px solid var(--border);box-shadow:0 12px 30px rgba(15,35,66,.10)}
+    .book-cover img{width:100%;height:100%;object-fit:cover;display:block}.book-cover-copy{position:absolute;left:10%;right:10%;top:41.5%;display:grid;gap:5px;text-align:center;color:#fff;background:transparent!important;border:0!important;box-shadow:none!important;pointer-events:none}.book-cover-copy span,.book-cover-copy strong{display:block;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:0 1px 2px rgba(0,0,0,.16)}.book-cover-copy span{font-size:10px;font-weight:500;letter-spacing:.04em}.book-cover-copy strong{font-size:9px;font-weight:500;line-height:1.3;letter-spacing:.02em}
+    
+    .book-back{display:flex;align-items:center;justify-content:center;min-height:38px;border-radius:12px;border:1px solid var(--border);background:var(--surface);font-size:11px;color:var(--accent)}
+    .book-main{display:grid;gap:14px;min-width:0}
+
+    .book-outline{position:sticky;top:14px;align-self:start;max-height:calc(100dvh - 32px);padding:14px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04);overflow:auto;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 60%,transparent) transparent}
+    .book-outline-back{display:inline-flex;align-items:center;gap:6px;height:32px;min-height:32px;margin:0 0 12px;padding:0 9px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--muted);font-size:8.5px;font-weight:650;line-height:1;text-decoration:none;box-shadow:none}
+    .book-outline-back:hover{background:var(--surface-2);color:var(--accent);border-color:var(--border)}
+    .book-outline-head{padding:4px 3px 10px;border-bottom:1px solid var(--border)}
+    .book-outline-head small{display:block;color:var(--muted);font-size:8px;letter-spacing:.06em;text-transform:uppercase}
+    .book-outline-head strong{display:block;margin-top:3px;font-size:12.5px;line-height:1.2;color:var(--text)}
+    .book-outline-nav{display:grid;gap:3px;margin-top:10px}
+    .book-outline-link{display:flex;align-items:center;min-height:30px;padding:6px 8px;border:0;border-left:3px solid transparent;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:9.6px;line-height:1.2;text-align:left;text-decoration:none;cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease}
+    .book-outline-link:hover{background:var(--accent-soft);color:var(--accent)}
+    .book-outline-link.is-active{background:color-mix(in srgb,var(--accent) 9%,var(--surface));border-left-color:var(--accent);color:var(--accent);font-weight:600}
+    .book-main{scroll-margin-top:12px}
+    .book-section,.book-hero{scroll-margin-top:14px}
+    @media(max-width:1100px){.book-page{grid-template-columns:168px minmax(0,1fr)}.book-outline{padding:11px}.book-outline-link{font-size:9px;padding:5px 7px}}
+    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none;overflow:visible}.book-outline-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}.book-outline-link{flex:0 0 auto;white-space:nowrap;border-left:0;border-bottom:2px solid transparent}.book-outline-link.is-active{border-left:0;border-bottom-color:var(--accent)}}
+
+    .book-hero{padding:24px 26px;border-radius:22px;background:linear-gradient(135deg,#184888,#2d6ab5);color:#fff;box-shadow:0 12px 30px rgba(24,72,136,.16)}
+    .book-badge{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border-radius:999px;background:rgba(255,255,255,.14);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+    .book-hero h1{margin:12px 0 6px;font-size:30px;line-height:1.06;font-weight:600;color:#fff}.book-hero p{margin:0;color:rgba(255,255,255,.84);font-size:12px;line-height:1.5}.apostila-identity{position:relative;overflow:hidden}.apostila-identity:after{content:"";position:absolute;right:-70px;bottom:-100px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);pointer-events:none}.apostila-identity .book-meta-row{position:relative;z-index:1}
+    .book-meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.book-meta-row span{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.12);font-size:9px}
+    .book-section{padding:24px 26px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04)}
+    .book-section h2{margin:0 0 14px;font-size:21px;line-height:1.18;font-weight:600;letter-spacing:-.012em}.book-section h3{margin:22px 0 9px;font-size:15.5px;line-height:1.25;font-weight:600}.book-section p,.book-section li{font-size:13.2px;line-height:1.68}.book-section p{margin:0 0 12px}.book-section ul{margin:9px 0;padding-left:22px}.book-section li+li{margin-top:5px}
+    .book-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:12px}.book-table th,.book-table td{padding:10px 11px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.5}.book-table th{background:var(--surface-2);font-weight:600}.book-table td:first-child{font-weight:500}.book-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:13px}.book-mini{padding:15px 16px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 3%,var(--surface-2))}.book-mini strong{display:block;margin-bottom:7px;font-size:12.8px;line-height:1.25;color:var(--text)}.book-mini p{margin:0!important;font-size:12px!important;line-height:1.58!important}.book-mini ul{margin:0!important;padding-left:18px!important}.book-mini li{font-size:12px!important;line-height:1.5!important}.mechanism-chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:13px}.mechanism-step{position:relative;padding:13px 10px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);text-align:center}.mechanism-step b{display:block;font-size:11.5px}.mechanism-step small{display:block;margin-top:5px;color:var(--muted);font-size:9.5px;line-height:1.4}.complication-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.complication-card{padding:12px 14px;border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 2.5%,var(--surface-2))}.complication-card strong{display:block;font-size:13px;line-height:1.25;margin-bottom:6px}.complication-card span{display:block;color:var(--muted);font-size:11.5px;line-height:1.58}.reference-list{margin:0;padding-left:20px}.reference-list li{margin-bottom:8px}.reference-list a{color:var(--accent);text-decoration:none}
+    .book-callout{margin:18px 0;padding:19px 20px;border-radius:16px;background:color-mix(in srgb,var(--accent) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));font-size:13.6px;line-height:1.62;box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 7%,transparent)}
+    .book-callout:not(.book-alert){position:relative;min-height:108px;padding:20px 22px 20px 102px}
+    .book-callout:not(.book-alert)::before{content:"";position:absolute;left:22px;top:50%;transform:translateY(-50%);width:60px;height:60px;background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp");background-repeat:no-repeat;background-position:center;background-size:contain;opacity:1}
+    :root[data-theme="dark"] .book-callout:not(.book-alert)::before{background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp")}
+    .book-callout:not(.book-alert) strong{display:block;margin:0 0 8px;font-size:15.2px;line-height:1.15;color:var(--accent);font-weight:700}
+    .book-callout:not(.book-alert) strong:before{content:none!important;display:none!important}
+    .book-callout:not(.book-alert) p,.book-callout:not(.book-alert) li,.book-callout:not(.book-alert) span{font-size:13.8px!important;line-height:1.64!important}
+    .book-callout.book-alert{padding:16px 18px;font-size:12.8px;line-height:1.58}
+    .book-callout.book-alert strong{display:block;margin-bottom:6px;font-size:13.2px}
+    @media(max-width:620px){.book-callout:not(.book-alert){min-height:0;padding:18px 18px 18px 82px}.book-callout:not(.book-alert)::before{left:17px;width:48px;height:48px}}
+    .clinical-list{margin:8px 0 0!important;padding-left:20px!important}.clinical-list li{font-size:12.4px!important;line-height:1.55!important}.clinical-list li+li{margin-top:5px!important}
+    .drive-block{margin-top:13px;padding:15px 16px;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .drive-block h4{margin:0 0 8px;font-size:13px;font-weight:600;color:var(--text)}.drive-block ul{margin:0;padding-left:19px}.drive-block li{font-size:12.4px;line-height:1.55}
+    .book-alert{background:color-mix(in srgb,var(--danger) 8%,var(--surface));border-color:color-mix(in srgb,var(--danger) 26%,var(--border))}.book-alert strong{color:var(--danger)}
+    .luria-figure{margin:14px 0;padding:14px;border-radius:16px;background:var(--surface-2);border:1px solid var(--border)}.luria-figure .figure-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.luria-figure .figure-title strong{font-size:11px}.luria-figure .figure-title span{font-size:8px;color:var(--muted)}
+    .flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.flow-step{padding:10px;border-radius:12px;background:var(--surface);border:1px solid var(--border);text-align:center}.flow-step b{display:block;font-size:11px}.flow-step small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
+    .meal-flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.meal-flow span{padding:10px 6px;border-radius:10px;background:var(--surface);border:1px solid var(--border);font-size:9px;text-align:center}
+
+    .treatment-algorithm{padding:18px!important}
+    .treatment-algorithm .figure-title{margin-bottom:14px!important}
+    .treatment-algorithm .figure-title strong{font-size:13.5px!important}
+    .treatment-algorithm .figure-title span{font-size:9px!important}
+    .treatment-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .treatment-step{position:relative;display:grid;grid-template-columns:34px minmax(0,1fr);gap:11px;min-height:142px;padding:16px 17px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3.5%,var(--surface));box-sizing:border-box}
+    .treatment-step-number{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;line-height:1}
+    .treatment-step b{display:block;margin:1px 0 8px;font-size:13.2px;line-height:1.2;color:var(--text)}
+    .treatment-step ul{margin:0!important;padding-left:17px!important}
+    .treatment-step li{font-size:11.6px!important;line-height:1.45!important;color:var(--muted)}
+    .treatment-step li+li{margin-top:4px!important}
+    .treatment-step li strong{display:inline!important;margin:0!important;font-size:inherit!important;line-height:inherit!important;color:var(--text)}
+    @media(max-width:760px){.treatment-flow{grid-template-columns:1fr}.treatment-step{min-height:0}}
+
+    .book-source{font-size:10px;color:var(--muted);line-height:1.5}.book-source a{color:var(--accent)}
+    .mindmap-section{display:block!important;position:relative!important;clear:both!important;overflow:hidden!important;margin:0!important;padding:16px 22px!important;border:1px solid var(--border)!important;border-radius:18px!important;background:var(--surface)!important;box-shadow:0 8px 22px rgba(15,35,66,.04)!important;isolation:isolate!important}
+    .mindmap-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:10px}
+    .mindmap-head h2{margin:0}.mindmap-head p{margin:0;max-width:540px;color:var(--muted);font-size:12px!important;line-height:1.45!important;text-align:right}
+    .mindmap{position:relative;width:100%;max-width:100%;min-width:0;box-sizing:border-box;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"center center" "a b" "c d";gap:9px 14px;padding:0}
+    .mindmap:before{content:none!important;display:none!important}
+    .mind-center{grid-area:center;justify-self:center;position:relative;z-index:3;width:min(100%,350px);min-width:0;min-height:104px;padding:13px 18px;border-radius:20px;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 90%,#0a2342),var(--accent));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 14px 30px color-mix(in srgb,var(--accent) 22%,transparent);border:1px solid color-mix(in srgb,#fff 18%,var(--accent))}
+    .mind-center span{font-size:9px;letter-spacing:.11em;text-transform:uppercase;opacity:.78}.mind-center strong{display:block;margin-top:4px;font-size:18px;line-height:1.12;color:#fff}.mind-center small{display:block;margin-top:5px;font-size:9.5px;line-height:1.3;opacity:.8}
+    .mind-branch{position:relative;z-index:2;min-width:0;width:100%;box-sizing:border-box;padding:16px 17px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 7px 18px rgba(15,35,66,.035);overflow:hidden}
+    .mind-branch:before{content:none!important;display:none!important}
+    .mind-branch h3{margin:0 0 6px!important;font-size:13.8px!important;line-height:1.2!important;color:var(--accent);overflow-wrap:anywhere}.mind-branch ul{margin:0!important;padding-left:18px!important;min-width:0}.mind-branch li{font-size:10.9px!important;line-height:1.36!important;overflow-wrap:anywhere}.mind-branch li+li{margin-top:2px!important}
+    .mind-a{grid-area:a;background:color-mix(in srgb,#7aa7ff 7%,var(--surface))}.mind-b{grid-area:b;background:color-mix(in srgb,#74c69d 7%,var(--surface))}.mind-c{grid-area:c;background:color-mix(in srgb,#f6bd60 8%,var(--surface))}.mind-d{grid-area:d;background:color-mix(in srgb,#c77dff 7%,var(--surface))}
+    .mind-chip{display:inline-flex;align-items:center;min-height:20px;padding:0 7px;margin-bottom:5px;border-radius:999px;background:color-mix(in srgb,var(--accent) 9%,var(--surface));color:var(--accent);font-size:8.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+    @media(max-width:760px){.mindmap-head{align-items:flex-start;flex-direction:column}.mindmap-head p{text-align:left}.mindmap{grid-template-columns:1fr;grid-template-areas:"center" "a" "b" "c" "d";gap:10px}.mindmap:before,.mind-branch:before{display:none}.mind-center{width:100%}.mindmap-section{padding:18px!important}}
+    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}.mechanism-chain{grid-template-columns:1fr 1fr}.book-grid-2,.complication-grid{grid-template-columns:1fr}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
+  
+    /* apostila-light-blue-title-contrast */
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h1,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h2,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h3,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity p,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-badge,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
+      color:#fff!important;
+    }
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
+      border-color:rgba(255,255,255,.22)!important;
+    }
+  
+    .fixation-list{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+    .fixation-item{padding:14px 15px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}
+    .fixation-question{font-size:12.6px;line-height:1.58;color:var(--text)}
+    .fixation-actions{margin-top:10px}
+    .fixation-toggle{min-height:32px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:10px;cursor:pointer}
+    .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
+    .fixation-answer[hidden]{display:none}
+  </style>
+</head>
+<body data-page="aprender">
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <main class="main"><div class="page">
+      <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila LURIA</span><h1>Vulvovaginites</h1></div></header>
+      <section class="book-page">
+        <aside class="book-outline" aria-label="Estrutura da apostila">
+          <a class="book-outline-back" href="/apostilas/">← Voltar para apostilas</a>
+          <div class="book-outline-head">
+            <small>Apostila atual</small>
+            <strong>Estrutura do conteúdo</strong>
+          </div>
+          
+          <nav class="book-outline-nav">
+            <a class="book-outline-link" href="#resumo-prova">Resumo de prova</a>
+            <a class="book-outline-link" href="#mapa-mental">Mapa mental</a>
+            <a class="book-outline-link" href="#conceitos">Conceitos</a>
+            <a class="book-outline-link" href="#microbiota">Microbiota e fisiologia</a>
+            <a class="book-outline-link" href="#candida">Candidíase</a>
+            <a class="book-outline-link" href="#vaginose">Vaginose bacteriana</a>
+            <a class="book-outline-link" href="#tricomoníase">Tricomoníase</a>
+            <a class="book-outline-link" href="#clinica-diagnostico">Clínica e diagnóstico</a>
+            <a class="book-outline-link" href="#diferenciais">Diferenciais</a>
+            <a class="book-outline-link" href="#tratamento">Tratamento</a>
+            <a class="book-outline-link" href="#situacoes-especiais">Situações especiais</a>
+            <a class="book-outline-link" href="#seguimento">Seguimento</a>
+            <a class="book-outline-link" href="#revisao">Revisão</a>
+            <a class="book-outline-link" href="#referencias">Referências</a>
+          </nav>
+        </aside>
+
+        
+        <article class="book-main">
+          <section class="book-hero apostila-identity" aria-label="Identificação da apostila">
+            <span class="book-badge">Apostila LURIA</span>
+            <h1>Vulvovaginites</h1>
+            <p>Ginecologia · Microbiota vaginal, raciocínio diagnóstico e tratamento</p>
+            <div class="book-meta-row">
+              <span>Área: Ginecologia e Obstetrícia</span>
+              <span>Matéria: Ginecologia</span>
+              <span>Tema: Vulvovaginites</span>
+            </div>
+          </section>
+
+          <section id="resumo-prova" class="book-section book-exam-summary">
+            <h2>Em 30 segundos</h2>
+            <p>Vulvovaginites são síndromes inflamatórias da vulva e/ou vagina, infecciosas ou não. Na abordagem do corrimento, os três eixos mais frequentes são candidíase vulvovaginal, vaginose bacteriana e tricomoníase. A vaginose é sobretudo uma <strong>disbiose</strong>, não uma vaginite intensamente inflamatória. Prurido e eritema favorecem candidíase; odor de peixe e corrimento homogêneo com pouca inflamação favorecem vaginose; inflamação, exposição sexual e corrimento com pH elevado exigem investigação de tricomoníase e cervicite.</p>
+            <ul class="clinical-list">
+              <li><strong>pH &lt;4,5:</strong> favorece candidíase quando há quadro compatível.</li>
+              <li><strong>pH &gt;4,5:</strong> é comum em vaginose, tricomoníase e hipoestrogenismo.</li>
+              <li><strong>Amsel:</strong> 3 de 4 critérios fecham diagnóstico clínico de vaginose.</li>
+              <li><strong>Microscopia negativa não exclui tricomoníase</strong>; testes moleculares são mais sensíveis.</li>
+              <li><strong>Candida em cultura sem sintomas pode ser colonização</strong> e não exige tratamento automático.</li>
+              <li><strong>Tricomoníase é IST:</strong> tratamento sistêmico e manejo das parcerias fazem parte da conduta.</li>
+            </ul>
+          </section>
+
+          <section id="mapa-mental" class="book-section mindmap-section">
+            <div class="mindmap-head"><h2>Mapa mental</h2><p>O objetivo é raciocinar a partir de inflamação, pH e origem da secreção.</p></div>
+            <div class="mindmap" aria-label="Mapa mental de vulvovaginites">
+              <div class="mind-branch mind-a"><h3>Microbiota</h3><ul><li>Lactobacilos e ácido lático;</li><li>pH vaginal ácido na idade reprodutiva;</li><li>sêmen, sangue e hipoestrogenismo podem elevar o pH.</li></ul></div>
+              <div class="mind-center"><span>Visão integrada</span><strong>Vulvovaginites</strong><small>Queixa → localizar → pH → inflamação → teste específico → tratamento etiológico</small></div>
+              <div class="mind-branch mind-b"><h3>Candidíase</h3><ul><li>Inflamação intensa;</li><li>pH geralmente preservado;</li><li>colonização ≠ doença.</li></ul></div>
+              <div class="mind-branch mind-c"><h3>Vaginose</h3><ul><li>Disbiose polimicrobiana;</li><li>aminas + biofilme;</li><li>pH elevado, pouca inflamação.</li></ul></div>
+              <div class="mind-branch mind-d"><h3>Tricomoníase</h3><ul><li>IST por protozoário;</li><li>inflamação e pH elevado;</li><li>parcerias devem ser tratadas.</li></ul></div>
+            </div>
+          </section>
+
+          <section id="conceitos" class="book-section">
+            <h2>1. Conceitos que não devem ser confundidos</h2>
+            <table class="book-table"><thead><tr><th>Termo</th><th>O que significa</th><th>Por que muda a conduta</th></tr></thead><tbody>
+              <tr><td>Vulvite</td><td>Inflamação predominantemente vulvar.</td><td>Pode ser dermatológica, irritativa ou infecciosa mesmo sem doença vaginal.</td></tr>
+              <tr><td>Vaginite</td><td>Inflamação da mucosa vaginal.</td><td>Exige avaliar causas infecciosas e não infecciosas.</td></tr>
+              <tr><td>Vulvovaginite</td><td>Acometimento simultâneo de vulva e vagina.</td><td>Explica associação de secreção, prurido, eritema e ardor.</td></tr>
+              <tr><td>Vaginose bacteriana</td><td>Disbiose com perda do predomínio de lactobacilos e expansão de anaeróbios associados.</td><td>O quadro costuma ter odor/corrimento com inflamação discreta.</td></tr>
+              <tr><td>Cervicite</td><td>Inflamação do colo.</td><td>Secreção cervical pode ser confundida com corrimento vaginal e requer investigação de IST.</td></tr>
+              <tr><td>Secreção fisiológica</td><td>Secreção normal variável com hormônios e ciclo.</td><td>Não requer antimicrobiano na ausência de doença.</td></tr>
+            </tbody></table>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Antes de escolher o “tipo de corrimento”, descubra <em>de onde ele vem</em>. Se a secreção nasce no colo, o raciocínio deixa de ser apenas vaginite e passa a incluir cervicite.</div>
+          </section>
+
+          <section id="microbiota" class="book-section">
+            <h2>2. Microbiota vaginal e fisiologia normal</h2>
+            <p>Na idade reprodutiva, o estrogênio estimula maturação do epitélio vaginal e acúmulo de glicogênio. A degradação desse substrato alimenta uma ecologia frequentemente dominada por <em>Lactobacillus</em>, cuja produção de ácido lático mantém o ambiente vaginal ácido. Esse ambiente reduz a aptidão de diversos microrganismos oportunistas e participa da integridade da barreira mucosa.</p>
+            <p>O ponto clinicamente útil é que o <strong>pH vaginal não é um “teste do agente”</strong>. Ele descreve o ambiente. Candidíase isolada geralmente preserva pH abaixo de 4,5; vaginose e tricomoníase frequentemente elevam o pH. Sangue menstrual, sêmen e hipoestrogenismo também podem alcalinizar o meio e gerar falso atalho diagnóstico.</p>
+            <h3>2.1 Comunidades vaginais</h3>
+            <p>Estudos de microbioma descrevem diferentes estados comunitários, alguns dominados por espécies como <em>L. crispatus</em> e outros por <em>L. iners</em> ou por comunidades mais diversas. Isso é útil para entender estabilidade e disbiose, mas <strong>não é um teste clínico rotineiro</strong>. O estudante deve evitar transformar classificação de microbioma em critério diagnóstico à beira do leito.</p>
+            <div class="luria-figure">
+              <div class="figure-title"><strong>Fluxo fisiológico</strong><span>Componente nativo LURIA</span></div>
+              <div class="flow">
+                <div class="flow-step"><b>Estrogênio</b><small>maturação epitelial e glicogênio</small></div>
+                <div class="flow-step"><b>Lactobacilos</b><small>produção de ácido lático</small></div>
+                <div class="flow-step"><b>pH ácido</b><small>barreira ecológica contra expansão de oportunistas</small></div>
+              </div>
+            </div>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Acidez vaginal não significa ausência de infecção: candidíase pode provocar inflamação intensa com pH preservado.</div>
+          </section>
+
+          <section id="candida" class="book-section">
+            <h2>3. Candidíase vulvovaginal</h2>
+            <h3>3.1 Colonização não é a mesma coisa que doença</h3>
+            <p><em>Candida</em> pode estar presente na vagina sem sintomas. A doença surge quando a interação entre fungo, epitélio e resposta do hospedeiro produz inflamação clinicamente relevante. Por isso, um teste positivo isolado não basta: é necessário demonstrar que o microrganismo explica a síndrome atual.</p>
+            <h3>3.2 Fisiopatologia em camadas</h3>
+            <div class="mechanism-chain">
+              <div class="mechanism-step"><b>Colonização</b><small>leveduras presentes sem doença obrigatória</small></div>
+              <div class="mechanism-step"><b>Virulência</b><small>adesão, transição morfológica e fatores lesivos</small></div>
+              <div class="mechanism-step"><b>Dano epitelial</b><small>interação hifa-epitélio e candidalisina</small></div>
+              <div class="mechanism-step"><b>Inflamação</b><small>citocinas e recrutamento de neutrófilos</small></div>
+              <div class="mechanism-step"><b>Sintomas</b><small>prurido, eritema, edema, fissuras e ardor</small></div>
+            </div>
+            <p>Em <em>C. albicans</em>, a transição de levedura para formas filamentosas favorece adesão e dano tecidual. A candidalisina, peptídeo secretado por hifas, participa da lesão epitelial e da ativação de vias inflamatórias. O epitélio reconhece o dano e desencadeia sinalização que recruta neutrófilos. Clinicamente, isso ajuda a entender por que a intensidade dos sintomas pode ser grande mesmo sem invasão profunda e por que pacientes com cargas fúngicas semelhantes podem apresentar quadros muito diferentes.</p>
+            <p>O recrutamento neutrofílico não garante eliminação eficiente do fungo. Na candidíase vulvovaginal, parte importante da sintomatologia é consequência da própria resposta inflamatória local. Isso diferencia a doença de uma simples “superpopulação de fungo” e explica por que colonização assintomática não deve ser tratada de forma automática.</p>
+            <h3>3.3 Tradução clínica</h3>
+            <ul class="clinical-list">
+              <li><strong>Prurido:</strong> resulta da inflamação de mucosa e pele vulvar.</li>
+              <li><strong>Disúria externa:</strong> pode ocorrer quando a urina toca tecido vulvar inflamado, sem infecção urinária.</li>
+              <li><strong>Fissuras e escoriações:</strong> refletem dano local somado à coçadura.</li>
+              <li><strong>Corrimento grumoso:</strong> é sugestivo, mas não obrigatório nem específico.</li>
+              <li><strong>pH:</strong> geralmente permanece &lt;4,5.</li>
+            </ul>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Se o laboratório “achou Candida”, a próxima pergunta não é “qual antifúngico?”. É: <strong>isso explica os sintomas?</strong></div>
+          </section>
+
+          <section id="vaginose" class="book-section">
+            <h2>4. Vaginose bacteriana</h2>
+            <p>A vaginose bacteriana é uma alteração ecológica polimicrobiana. Reduzi-la à expressão “infecção por <em>Gardnerella</em>” é conceitualmente errado: há perda do predomínio de lactobacilos e expansão de uma comunidade de anaeróbios e bactérias associadas à vaginose, frequentemente organizada em biofilme aderido ao epitélio.</p>
+            <h3>4.1 Por que o pH sobe e o odor aparece?</h3>
+            <p>Com menor acidificação, o ambiente vaginal torna-se mais alcalino. Bactérias associadas à vaginose metabolizam substratos e produzem aminas voláteis. Em pH mais alto, essas aminas volatilizam com mais facilidade, o que explica o odor “de peixe” e sua intensificação após contato com sêmen ou sangue menstrual.</p>
+            <h3>4.2 Biofilme e recorrência</h3>
+            <p>O biofilme bacteriano aderido ao epitélio contribui para persistência e recidiva, funcionando como uma comunidade estruturada e menos suscetível à simples perturbação transitória. Esse mecanismo ajuda a explicar por que a melhora clínica após antibiótico não significa necessariamente restauração imediata de uma microbiota estável.</p>
+            <h3>4.3 Clue cells</h3>
+            <p>As <em>clue cells</em> são células epiteliais vaginais recobertas por bactérias aderidas, com perda da nitidez dos contornos. Elas representam visualmente a mudança ecológica e compõem os critérios de Amsel.</p>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Odor intenso com pouca inflamação combina com vaginose. Odor + muitos leucócitos deve fazer você procurar tricomoníase, cervicite ou doença mista.</div>
+          </section>
+
+          <section id="tricomoníase" class="book-section">
+            <h2>5. Tricomoníase</h2>
+            <p><em>Trichomonas vaginalis</em> é um protozoário flagelado transmitido sexualmente. Adere ao epitélio urogenital, interage com a barreira mucosa e desencadeia resposta inflamatória. A inflamação explica ardor, disúria, eritema e sangramento ao contato; a alteração da ecologia vaginal frequentemente eleva o pH.</p>
+            <p>A infecção pode ser assintomática ou oligossintomática. O clássico “colo em morango” é um achado possível, mas sua ausência não exclui doença. A tricomoníase também pode coexistir com vaginose, misturando odor, inflamação e aspecto do corrimento.</p>
+            <h3>5.1 Por que o tratamento deve ser sistêmico?</h3>
+            <p>O protozoário pode ocupar diferentes sítios do trato urogenital. Uma formulação intravaginal fornece exposição predominantemente local e não garante concentração adequada em todos esses reservatórios. Por isso, <strong>metronidazol vaginal não substitui o tratamento sistêmico</strong> da tricomoníase.</p>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Na tricomoníase, tratar só a paciente sem tratar as parcerias atuais é deixar pronta a principal via de reinfecção.</div>
+          </section>
+
+          <section id="clinica-diagnostico" class="book-section">
+            <h2>6. Clínica e diagnóstico</h2>
+            <table class="book-table"><thead><tr><th>Característica</th><th>Candidíase</th><th>Vaginose</th><th>Tricomoníase</th></tr></thead><tbody>
+              <tr><td>Sintoma dominante</td><td>Prurido/ardor</td><td>Odor/corrimento</td><td>Corrimento e irritação; pode ser assintomática</td></tr>
+              <tr><td>Inflamação</td><td>Frequentemente importante</td><td>Geralmente discreta</td><td>Variável, às vezes intensa</td></tr>
+              <tr><td>pH habitual</td><td>&lt;4,5</td><td>&gt;4,5</td><td>Geralmente &gt;4,5</td></tr>
+              <tr><td>Microscopia</td><td>Leveduras/hifas/pseudohifas</td><td>Clue cells</td><td>Protozoários móveis + leucócitos</td></tr>
+              <tr><td>Natureza</td><td>Infecção fúngica; geralmente não adquirida sexualmente</td><td>Disbiose</td><td>IST</td></tr>
+            </tbody></table>
+            <h3>6.1 História que muda a conduta</h3>
+            <div class="book-grid-2">
+              <div class="book-mini"><strong>Localização e gravidade</strong><ul><li>dor externa ou pélvica?</li><li>febre ou repercussão sistêmica?</li><li>sangramento anormal?</li><li>lesões vulvares persistentes?</li></ul></div>
+              <div class="book-mini"><strong>Contexto</strong><ul><li>gestação?</li><li>antibióticos recentes?</li><li>diabetes/imunossupressão?</li><li>nova parceria ou relação sem preservativo?</li><li>irritantes/duchas/cremes novos?</li></ul></div>
+            </div>
+            <h3>6.2 Exame físico</h3>
+            <p>Inspecione a vulva antes de olhar a secreção. Procure eritema, edema, fissuras, escoriações, placas, erosões, úlceras e dermatoses. No exame especular, determine se a secreção vem da vagina ou do colo e avalie friabilidade cervical. Dor pélvica, dor à mobilização do colo e febre mudam o eixo para doença do trato genital superior.</p>
+            <h3>6.3 Amsel e Nugent</h3>
+            <p>O diagnóstico clínico de vaginose pelo Amsel exige <strong>3 de 4</strong>: corrimento fino homogêneo, pH &gt;4,5, teste das aminas positivo e clue cells. O Nugent usa a coloração de Gram para graduar morfotipos: 0–3 = predomínio de lactobacilos; 4–6 = intermediário; 7–10 = compatível com vaginose.</p>
+            <h3>6.4 Microscopia: como interpretar um negativo</h3>
+            <p>A microscopia direta para tricomonas é específica quando mostra o protozoário móvel, porém tem sensibilidade limitada e perde rendimento rapidamente após a coleta. Portanto, um fresco negativo não exclui tricomoníase. Testes de amplificação de ácidos nucleicos são mais sensíveis e devem ser considerados quando a suspeita permanece.</p>
+            <p>Na candidíase, KOH e microscopia ajudam a demonstrar leveduras e estruturas filamentosas, mas <em>C. glabrata</em> pode não formar pseudohifas típicas. Em doença persistente, recorrente ou complicada, cultura/identificação de espécie pode ser decisiva.</p>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Traduza desempenho de teste para decisão: baixa sensibilidade significa que um resultado negativo <strong>não serve para excluir</strong> a doença.</div>
+          </section>
+
+          <section id="diferenciais" class="book-section">
+            <h2>7. Diagnósticos diferenciais que evitam antifúngico em excesso</h2>
+            <table class="book-table"><thead><tr><th>Diagnóstico</th><th>O que favorece</th><th>Como diferenciar</th></tr></thead><tbody>
+              <tr><td>Secreção fisiológica</td><td>Sem prurido, odor desagradável ou inflamação.</td><td>História e exame sem sinais de doença.</td></tr>
+              <tr><td>Dermatite irritativa/alérgica</td><td>Sintomas vulvares após sabonetes, perfumes, protetores, medicamentos tópicos.</td><td>Relação temporal e exame cutâneo.</td></tr>
+              <tr><td>Cervicite</td><td>Secreção endocervical, friabilidade, sangramento ao contato.</td><td>Inspeção do colo + testes para IST.</td></tr>
+              <tr><td>DIP</td><td>Dor pélvica, febre, dor à mobilização cervical.</td><td>Avaliação do trato genital superior.</td></tr>
+              <tr><td>Síndrome geniturinária da menopausa</td><td>Secura, dispareunia, mucosa fina, pH elevado.</td><td>Contexto de hipoestrogenismo e exame.</td></tr>
+              <tr><td>Vaginite inflamatória descamativa / vaginite aeróbica</td><td>Inflamação importante, pH elevado, quadro persistente sem agente clássico.</td><td>Microscopia, exclusão das infecções principais e avaliação especializada.</td></tr>
+              <tr><td>Líquen escleroso/plano</td><td>Alteração arquitetural, placas, erosões ou sintomas crônicos.</td><td>Exame vulvar especializado e biópsia quando indicada.</td></tr>
+            </tbody></table>
+            <p>A chamada vaginose citolítica permanece um diagnóstico controverso, sem critérios universalmente padronizados. Não deve ser rotulada apenas pela presença de muitos lactobacilos nem tratada empiricamente com alcalinização sem contexto consistente.</p>
+          </section>
+
+          <section id="tratamento" class="book-section">
+            <h2>8. Tratamento</h2>
+            <h3>8.1 Candidíase não complicada</h3>
+            <table class="book-table"><thead><tr><th>Opção</th><th>Esquema</th><th>Observação</th></tr></thead><tbody>
+              <tr><td>Miconazol 2%</td><td>5 g intravaginais 1x/dia por 7 dias</td><td>Opção tópica.</td></tr>
+              <tr><td>Clotrimazol 1%</td><td>5 g intravaginais 1x/dia por 7–14 dias</td><td>Opção tópica.</td></tr>
+              <tr><td>Fluconazol</td><td>150 mg VO, dose única</td><td>Não usar na gestação.</td></tr>
+            </tbody></table>
+            <p>Azólicos interferem na síntese de ergosterol da membrana fúngica. O tratamento reduz a carga e interrompe o estímulo antigênico que mantém a inflamação. Formulações tópicas podem causar irritação e algumas comprometem produtos de látex; azólicos sistêmicos exigem atenção a interações e função hepática em uso prolongado.</p>
+            <h3>8.2 Candidíase grave e recorrente</h3>
+            <p>Quadro grave pode exigir azólico tópico por 7–14 dias ou, em não gestantes, fluconazol 150 mg em duas doses separadas por 72 horas. Na recorrência por <em>C. albicans</em>, um esquema clássico é indução com fluconazol nos dias 1, 4 e 7 seguida de 150 mg semanal por 6 meses, após confirmação diagnóstica e exclusão de gestação.</p>
+            <p>Recorrência, persistência, reinfecção e resistência não são sinônimos. Antes de repetir antifúngico: confirme o diagnóstico, verifique adesão e duração, identifique espécie quando necessário e procure diabetes, imunossupressão, irritantes ou doença vulvar concomitante.</p>
+            <h3>8.3 Vaginose bacteriana</h3>
+            <table class="book-table"><thead><tr><th>Opção</th><th>Esquema</th></tr></thead><tbody>
+              <tr><td>Metronidazol VO</td><td>500 mg a cada 12 h por 7 dias</td></tr>
+              <tr><td>Metronidazol gel 0,75%</td><td>5 g intravaginais 1x/dia por 5 dias</td></tr>
+              <tr><td>Clindamicina creme 2%</td><td>5 g intravaginais à noite por 7 dias</td></tr>
+            </tbody></table>
+            <p>Na recorrência múltipla, protocolos internacionais admitem estratégias supressivas, como metronidazol gel 0,75% duas vezes por semana por mais de 3 meses. Esses regimes devem ser individualizados e não são sinônimo de “tratamento padrão de toda recorrência”.</p>
+            <h3>8.4 Tricomoníase</h3>
+            <table class="book-table"><thead><tr><th>Situação</th><th>Esquema</th></tr></thead><tbody>
+              <tr><td>Mulher</td><td>Metronidazol 500 mg VO a cada 12 h por 7 dias</td></tr>
+              <tr><td>Alternativa internacional em não gestante</td><td>Tinidazol 2 g VO, dose única</td></tr>
+              <tr><td>Homem, conforme CDC</td><td>Metronidazol 2 g VO, dose única</td></tr>
+            </tbody></table>
+            <p>Todas as parcerias sexuais atuais devem ser tratadas, ainda que assintomáticas. Orientar abstinência até conclusão do tratamento por todos e resolução dos sintomas, além de rastrear outras IST conforme risco.</p>
+            <div class="book-callout"><strong>Pulo do Gato</strong>Falha terapêutica não significa resistência até prova em contrário: primeiro confira diagnóstico, adesão, dose, duração e reexposição.</div>
+          </section>
+
+          <section id="situacoes-especiais" class="book-section">
+            <h2>9. Situações especiais</h2>
+            <h3>9.1 Gestação</h3>
+            <table class="book-table"><thead><tr><th>Condição</th><th>Conduta principal</th></tr></thead><tbody>
+              <tr><td>Candidíase</td><td>Azólico tópico por 7 dias; evitar fluconazol oral.</td></tr>
+              <tr><td>Vaginose sintomática</td><td>Tratar com esquema apropriado à gestação.</td></tr>
+              <tr><td>Tricomoníase sintomática</td><td>Testar e tratar; metronidazol pode ser utilizado conforme diretriz.</td></tr>
+              <tr><td>Tinidazol</td><td>Evitar na gestação.</td></tr>
+              <tr><td>Ácido bórico</td><td>Evitar na gestação.</td></tr>
+            </tbody></table>
+            <p>Vaginose e tricomoníase se associam a desfechos obstétricos adversos, mas associação epidemiológica não significa que o rastreamento universal de gestantes assintomáticas previna prematuridade. Siga a diretriz aplicável ao cenário.</p>
+            <h3>9.2 Infância</h3>
+            <p>Na criança pré-púbere, irritantes, vulvovaginite inespecífica e corpo estranho ganham importância. Corrimento persistente, fétido ou sanguinolento exige investigação adequada à idade. Tricomoníase em criança requer avaliação especializada, inclusive de possível violência sexual.</p>
+            <h3>9.3 Pós-menopausa</h3>
+            <p>Hipoestrogenismo pode causar secura, dispareunia, mucosa fina, irritação e pH elevado. Nessa fase, o pH perde parte do poder discriminador. Antifúngico repetido não trata síndrome geniturinária da menopausa, líquen ou neoplasia.</p>
+          </section>
+
+          <section id="seguimento" class="book-section">
+            <h2>10. Seguimento, parcerias e falha terapêutica</h2>
+            <table class="book-table"><thead><tr><th>Condição</th><th>Seguimento</th></tr></thead><tbody>
+              <tr><td>Candidíase não complicada resolvida</td><td>Geralmente não exige teste de cura.</td></tr>
+              <tr><td>Candidíase persistente/recorrente</td><td>Reavaliar diagnóstico, espécie e fatores predisponentes.</td></tr>
+              <tr><td>Vaginose resolvida</td><td>Retorno se houver recorrência.</td></tr>
+              <tr><td>Tricomoníase em mulher sexualmente ativa</td><td>Reteste aproximadamente 3 meses após o tratamento.</td></tr>
+            </tbody></table>
+            <h3>10.1 Tratamento da parceria na vaginose: tema em atualização</h3>
+            <p>Diretrizes brasileiras tradicionais e o CDC de 2021 não recomendavam tratamento rotineiro da parceria. Evidência publicada em 2025 mostrou redução de recorrência em casais heterossexuais monogâmicos selecionados quando o parceiro masculino recebeu tratamento concomitante, e o ACOG passou a considerar essa estratégia em adultas com vaginose sintomática recorrente. Isso <strong>não significa incorporação universal ao SUS</strong> nem aplicação automática a todas as populações.</p>
+            <div class="book-callout"><strong>Pulo do Gato</strong>“Vaginose: nunca tratar parceiro” deixou de ser uma regra universal. Em prova, identifique a diretriz; na prática, reconheça que a recomendação está em transição.</div>
+          </section>
+
+          <section id="revisao" class="book-section">
+            <h2>11. Revisão de alto rendimento</h2>
+            <h3>Armadilhas de prova e prática</h3>
+            <table class="book-table"><thead><tr><th>Erro</th><th>Correção</th></tr></thead><tbody>
+              <tr><td>Corrimento branco = candidíase</td><td>Cor isolada não define etiologia.</td></tr>
+              <tr><td>pH alto = vaginose</td><td>Tricomoníase e hipoestrogenismo também podem elevar.</td></tr>
+              <tr><td>Candida positiva = tratar</td><td>Distinguir colonização de doença sintomática.</td></tr>
+              <tr><td>Fresco negativo exclui tricomoníase</td><td>O teste tem sensibilidade limitada; considerar NAAT.</td></tr>
+              <tr><td>Metronidazol vaginal trata tricomoníase</td><td>A IST exige tratamento sistêmico.</td></tr>
+              <tr><td>Falha = resistência</td><td>Rever diagnóstico, adesão, dose e reexposição antes.</td></tr>
+            </tbody></table>
+            <h3>O que não posso esquecer</h3>
+            <ol class="clinical-list">
+              <li>Vaginose é disbiose; candidíase e tricomoníase são entidades biologicamente diferentes.</li>
+              <li>Candidíase isolada geralmente mantém pH &lt;4,5.</li>
+              <li>Amsel exige pelo menos 3 de 4 critérios.</li>
+              <li>Nugent 7–10 é compatível com vaginose; 4–6 é intermediário.</li>
+              <li>Cultura positiva para Candida sem sintomas não significa tratamento obrigatório.</li>
+              <li><em>C. glabrata</em> pode não formar pseudohifas típicas.</li>
+              <li>Na gestação, candidíase é tratada com azólico tópico por 7 dias.</li>
+              <li>Na tricomoníase, tratar parcerias é parte do tratamento.</li>
+              <li>Microscopia negativa não exclui tricomoníase.</li>
+              <li>Dor pélvica, febre, sangramento ou lesão persistente mudam o diagnóstico diferencial.</li>
+            </ol>
+            <h3>Mini caso integrado</h3>
+            <p>Mulher de 28 anos, não gestante, com corrimento de odor mais forte após relações. Pouco prurido, sem dor pélvica. Secreção fina e homogênea, pH 5,2, teste das aminas positivo e clue cells. O conjunto preenche os quatro critérios de Amsel e favorece vaginose bacteriana. Se a mesma paciente apresentasse inflamação intensa e muitos leucócitos, o raciocínio deveria se abrir para tricomoníase, cervicite ou doença mista.</p>
+          </section>
+
+          <section class="book-section">
+            <h2 id="referencias">Referências</h2>
+            <ol class="reference-list">
+              <li>Ministério da Saúde. <strong>PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis.</strong> Versão vigente.</li>
+              <li>Brasil. <strong>Protocolo Brasileiro para Infecções que causam corrimento vaginal.</strong> Epidemiologia e Serviços de Saúde.</li>
+              <li>FEBRASGO. <strong>Vaginites e Vaginoses.</strong> Protocolos assistenciais.</li>
+              <li>CDC. <strong>Bacterial Vaginosis — STI Treatment Guidelines.</strong></li>
+              <li>CDC. <strong>Vulvovaginal Candidiasis — STI Treatment Guidelines.</strong></li>
+              <li>CDC. <strong>Trichomoniasis — STI Treatment Guidelines.</strong></li>
+              <li>ACOG. <strong>Concurrent sexual partner treatment for recurrent bacterial vaginosis.</strong> Atualização de 2025.</li>
+              <li>Vodstrcil LA et al. <strong>Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis.</strong> N Engl J Med. 2025.</li>
+              <li>Rosati D et al. <strong>Vulvovaginal Candidiasis: A Current Understanding and Burning Questions.</strong> J Fungi.</li>
+              <li>Scoping review of cytolytic vaginosis literature. <strong>PLOS One.</strong></li>
+            </ol>
+          </section>
+        </article>
+      </section>
+    </div></main>
+  </div>
+  <script src="/assets/vendor/supabase-2.110.6.js"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
+  <script defer src="/assets/js/pwa.js?v=3"></script>
+  <script>
+    (function(){
+      const links=[...document.querySelectorAll('.book-outline-link')];
+      const targets=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
+      links.forEach(link=>{
+        link.addEventListener('click',event=>{
+          const target=document.querySelector(link.getAttribute('href'));
+          if(!target)return;
+          event.preventDefault();
+          target.scrollIntoView({behavior:'smooth',block:'start'});
+          history.replaceState(null,'',link.getAttribute('href'));
+        });
+      });
+      if('IntersectionObserver' in window){
+        const observer=new IntersectionObserver(entries=>{
+          const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];
+          if(!visible)return;
+          links.forEach(link=>link.classList.toggle('is-active',link.getAttribute('href')==='#'+visible.target.id));
+        },{root:null,rootMargin:'-18% 0px -68% 0px',threshold:[0,.05,.2]});
+        targets.forEach(target=>observer.observe(target));
+      }
+    })();
+  </script>
+<script defer src="/assets/js/apostila-tools.js?v=3-image-curation"></script>
+<script>
+(function(){
+  if(document.documentElement.dataset.fixationToggleBound)return;
+  document.documentElement.dataset.fixationToggleBound="1";
+  document.addEventListener("click",event=>{
+    const button=event.target.closest(".fixation-toggle");
+    if(!button)return;
+    const item=button.closest(".fixation-item");
+    const answer=item?.querySelector(".fixation-answer");
+    if(!answer)return;
+    const willShow=answer.hidden;
+    answer.hidden=!willShow;
+    button.textContent=willShow?"Ocultar resposta":"Mostrar resposta";
+    button.setAttribute("aria-expanded",String(willShow));
+  });
+})();
+</script>
+</body>
+</html>
