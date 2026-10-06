@@ -257,6 +257,106 @@ body[data-page="consolidar"] .learn-bottom{display:none!important}
 }
 </style>
 
+
+<style id="consolidar-cards-aprender-v6">
+/* Consolidar — mesma linguagem visual dos cards da página Aprender */
+body[data-page="consolidar"] .learn-card{
+  --card-accent:var(--accent);
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  padding-left:22px!important;
+  border-radius:22px!important;
+  border:1px solid color-mix(in srgb,var(--card-accent) 18%,var(--border))!important;
+  background:
+    linear-gradient(180deg,color-mix(in srgb,var(--surface) 98%,var(--card-accent) 2%) 0%,var(--surface) 100%)!important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.72) inset,
+    0 10px 26px rgba(15,35,66,.055)!important;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease!important;
+}
+body[data-page="consolidar"] .learn-card--questions{--card-accent:#184888}
+body[data-page="consolidar"] .learn-card:nth-child(2){--card-accent:color-mix(in srgb,var(--accent) 78%,#6b7fa8)}
+body[data-page="consolidar"] .learn-card:nth-child(3){--card-accent:color-mix(in srgb,var(--accent) 84%,#4f93a6)}
+
+body[data-page="consolidar"] .learn-card::before{
+  content:""!important;
+  position:absolute!important;
+  left:-11px!important;
+  top:50%!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:17px!important;
+  height:64px!important;
+  transform:translateY(-50%)!important;
+  border-radius:0 18px 18px 0!important;
+  background:var(--card-accent)!important;
+  box-shadow:4px 0 12px color-mix(in srgb,var(--card-accent) 18%,transparent)!important;
+  opacity:1!important;
+  z-index:2!important;
+  pointer-events:none!important;
+}
+body[data-page="consolidar"] .learn-card::after{
+  content:""!important;
+  position:absolute!important;
+  right:-38px!important;
+  bottom:-58px!important;
+  width:170px!important;
+  height:170px!important;
+  border-radius:50%!important;
+  background:radial-gradient(circle,color-mix(in srgb,var(--card-accent) 12%,transparent) 0,transparent 68%)!important;
+  z-index:0!important;
+  pointer-events:none!important;
+}
+body[data-page="consolidar"] .learn-card:hover{
+  transform:translateY(-3px)!important;
+  border-color:color-mix(in srgb,var(--card-accent) 36%,var(--border))!important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.76) inset,
+    0 18px 38px color-mix(in srgb,var(--card-accent) 13%,transparent)!important;
+}
+body[data-page="consolidar"] .learn-icon{
+  position:relative!important;
+  z-index:3!important;
+  background:
+    linear-gradient(145deg,color-mix(in srgb,var(--card-accent) 16%,var(--surface)),color-mix(in srgb,var(--card-accent) 7%,var(--surface)))!important;
+  color:var(--card-accent)!important;
+  border:1px solid color-mix(in srgb,var(--card-accent) 18%,var(--border))!important;
+  box-shadow:0 7px 18px color-mix(in srgb,var(--card-accent) 10%,transparent)!important;
+}
+body[data-page="consolidar"] .learn-card h2,
+body[data-page="consolidar"] .learn-card p,
+body[data-page="consolidar"] .learn-cta{
+  position:relative!important;
+  z-index:3!important;
+}
+body[data-page="consolidar"] .learn-card h2{
+  font-weight:600!important;
+  letter-spacing:-.02em!important;
+}
+body[data-page="consolidar"] .learn-card p{
+  color:color-mix(in srgb,var(--muted) 92%,var(--text))!important;
+}
+body[data-page="consolidar"] .learn-cta{
+  display:flex!important;
+  align-items:center!important;
+  width:max-content!important;
+  gap:6px!important;
+  padding-top:8px!important;
+  color:var(--card-accent)!important;
+  font-weight:500!important;
+}
+body[data-page="consolidar"] .learn-card-deco{
+  display:none!important;
+}
+:root[data-theme="dark"] body[data-page="consolidar"] .learn-card,
+body.theme-dark[data-page="consolidar"] .learn-card{
+  background:
+    linear-gradient(180deg,color-mix(in srgb,var(--surface) 94%,var(--card-accent) 6%) 0%,var(--surface) 100%)!important;
+  box-shadow:0 14px 32px rgba(0,0,0,.18)!important;
+}
+</style>
+
 </head>
 <body data-page="consolidar">
   <div class="app-shell">
