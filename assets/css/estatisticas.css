@@ -1536,3 +1536,51 @@ body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap
     gap:12px!important;
   }
 }
+
+
+/* Estatísticas v33 — remove timeline inferior e sobe Ritmo/Hábito + Mapa de calor */
+@media (min-width:981px){
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-layout{
+    display:grid!important;
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+    grid-template-areas:
+      "habit habit habit habit habit habit heat heat heat heat heat heat"
+      "ins ins ins ins ins ins area area area area area area"!important;
+    gap:10px!important;
+    align-items:stretch!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-habit{
+    grid-area:habit!important;
+    grid-column:auto!important;
+    min-width:0!important;
+    min-height:250px!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap{
+    grid-area:heat!important;
+    grid-column:auto!important;
+    min-width:0!important;
+    min-height:250px!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-insights{
+    grid-area:ins!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-area{
+    grid-area:area!important;
+  }
+}
+
+@media(max-width:980px){
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-layout{
+    grid-template-areas:
+      "habit"
+      "heat"
+      "ins"
+      "area"!important;
+  }
+}
