@@ -1490,3 +1490,17 @@ body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-footer{
     overflow-x:auto!important;
   }
 }
+
+
+<style id="friends-study-room-title-v50">
+body[data-page="amigos"] .friends-ref-room-grid strong{
+  font-size:10px!important;
+  line-height:1.28!important;
+  font-weight:600!important;
+}
+@media(max-width:760px){
+  body[data-page="amigos"] .friends-ref-room-grid strong{
+    font-size:10.5px!important;
+  }
+}
+</style>
