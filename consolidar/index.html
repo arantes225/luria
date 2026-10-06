@@ -357,6 +357,112 @@ body.theme-dark[data-page="consolidar"] .learn-card{
 }
 </style>
 
+
+<style id="consolidar-card-header-v7">
+body[data-page="consolidar"] .learn-card{
+  display:grid!important;
+  grid-template-columns:72px minmax(0,1fr)!important;
+  grid-template-rows:auto auto 1fr auto!important;
+  column-gap:18px!important;
+  align-items:start!important;
+  padding:22px 24px 20px 30px!important;
+}
+
+/* detalhe lateral azul alinhado ao centro do ícone */
+body[data-page="consolidar"] .learn-card::before{
+  left:0!important;
+  top:22px!important;
+  width:5px!important;
+  height:60px!important;
+  transform:none!important;
+  border-radius:0 8px 8px 0!important;
+  background:#184888!important;
+  box-shadow:3px 0 10px rgba(24,72,136,.18)!important;
+}
+
+/* ícone +20% */
+body[data-page="consolidar"] .learn-icon{
+  grid-column:1!important;
+  grid-row:1 / span 2!important;
+  width:60px!important;
+  height:60px!important;
+  min-width:60px!important;
+  min-height:60px!important;
+  border-radius:17px!important;
+  align-self:start!important;
+  justify-self:start!important;
+  margin:0!important;
+}
+body[data-page="consolidar"] .learn-icon svg{
+  width:30px!important;
+  height:30px!important;
+}
+
+/* títulos mais à direita e um pouco maiores */
+body[data-page="consolidar"] .learn-card h2{
+  grid-column:2!important;
+  grid-row:1!important;
+  align-self:center!important;
+  margin:4px 0 6px!important;
+  padding-left:2px!important;
+  font-size:20px!important;
+  line-height:1.12!important;
+  font-weight:600!important;
+}
+body[data-page="consolidar"] .learn-card--questions h2{
+  font-size:27px!important;
+}
+
+body[data-page="consolidar"] .learn-card p{
+  grid-column:2!important;
+  grid-row:2!important;
+  margin:0!important;
+  padding-left:2px!important;
+  max-width:680px!important;
+  font-size:11.5px!important;
+  line-height:1.5!important;
+}
+
+body[data-page="consolidar"] .learn-cta{
+  grid-column:2!important;
+  grid-row:4!important;
+  align-self:end!important;
+  margin:0!important;
+  padding:12px 0 0 2px!important;
+  font-size:11.5px!important;
+}
+
+body[data-page="consolidar"] .learn-card--secondary{
+  min-height:178px!important;
+}
+
+@media(max-width:760px){
+  body[data-page="consolidar"] .learn-card{
+    grid-template-columns:62px minmax(0,1fr)!important;
+    column-gap:14px!important;
+    padding:18px 18px 18px 24px!important;
+  }
+  body[data-page="consolidar"] .learn-card::before{
+    top:18px!important;
+    height:54px!important;
+  }
+  body[data-page="consolidar"] .learn-icon{
+    width:54px!important;
+    height:54px!important;
+    min-width:54px!important;
+    min-height:54px!important;
+  }
+  body[data-page="consolidar"] .learn-icon svg{
+    width:27px!important;
+    height:27px!important;
+  }
+  body[data-page="consolidar"] .learn-card h2,
+  body[data-page="consolidar"] .learn-card--questions h2{
+    font-size:20px!important;
+  }
+}
+</style>
+
 </head>
 <body data-page="consolidar">
   <div class="app-shell">
