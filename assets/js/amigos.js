@@ -253,7 +253,53 @@ async function initFriends(){
     catch{await window.LuriaDialog.prompt("Copie seu ID LURIA:",id);}
   });
   window.initSharedStudyrats?.();
+  initFriendsStudyRooms();
   try{await Promise.all([loadOwnId(),loadFriends(),loadInbox()]);}
   catch(error){console.error(error);setFriendsStatus(error.message||"Não foi possível carregar Amigos.","error");}
 }
 if(window.docmapUser)initFriends();else window.addEventListener("docmap:ready",initFriends,{once:true});
+
+function initFriendsStudyRooms(){
+  const panel=document.getElementById("friends-create-room-panel");
+  const toggle=document.getElementById("friends-create-room-toggle");
+  const close=document.getElementById("friends-create-room-close");
+  const codeEl=document.getElementById("friends-room-code");
+  const nameEl=document.getElementById("friends-room-name");
+  const status=document.getElementById("friends-room-status");
+
+  const makeCode=()=>{
+    const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+    const bytes=new Uint32Array(6);
+    if(window.crypto?.getRandomValues)window.crypto.getRandomValues(bytes);
+    else for(let i=0;i<bytes.length;i++)bytes[i]=Math.floor(Math.random()*1e9);
+    return Array.from(bytes,n=>chars[n%chars.length]).join("");
+  };
+  const setCode=()=>{if(codeEl)codeEl.textContent=makeCode();};
+
+  toggle?.addEventListener("click",()=>{
+    if(!panel)return;
+    panel.hidden=false;
+    setCode();
+    nameEl?.focus();
+    panel.scrollIntoView({behavior:"smooth",block:"nearest"});
+  });
+  close?.addEventListener("click",()=>{if(panel)panel.hidden=true;});
+  document.getElementById("friends-room-code-regenerate")?.addEventListener("click",setCode);
+  document.getElementById("friends-room-code-copy")?.addEventListener("click",async()=>{
+    const code=codeEl?.textContent?.trim()||"";
+    if(!code)return;
+    try{await navigator.clipboard.writeText(code);if(status)status.textContent="Código copiado.";}
+    catch{if(status)status.textContent="Não foi possível copiar automaticamente.";}
+  });
+  document.getElementById("friends-room-create")?.addEventListener("click",()=>{
+    const name=(nameEl?.value||"").trim();
+    const code=codeEl?.textContent?.trim()||"";
+    if(!name){if(status)status.textContent="Digite um nome para a sala.";nameEl?.focus();return;}
+    const room={name,code,createdAt:new Date().toISOString()};
+    try{
+      const saved=JSON.parse(localStorage.getItem("luria:study-rooms")||"[]");
+      localStorage.setItem("luria:study-rooms",JSON.stringify([room,...saved].slice(0,10)));
+    }catch{}
+    if(status)status.textContent="Sala criada. Compartilhe o código "+code+".";
+  });
+}
