@@ -10049,3 +10049,92 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     overflow:hidden!important;
   }
 }
+
+
+/* DASHBOARD 1 — GRID 8PX ABSOLUTO v91 — 2026-10-05
+   Todos os containers obedecem exatamente 8px entre si. */
+@media (min-width:981px){
+  html body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative{
+    row-gap:8px!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.7fr) minmax(260px,.95fr)!important;
+    grid-template-rows:calc(100% - 146px) 118px!important;
+    gap:8px!important;
+    column-gap:8px!important;
+    row-gap:8px!important;
+    align-items:stretch!important;
+    align-content:start!important;
+    padding:0!important;
+    margin:0!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    grid-column:1!important;
+    grid-row:1!important;
+    gap:8px!important;
+    margin:0!important;
+    padding:0!important;
+    top:auto!important;
+    bottom:auto!important;
+    left:auto!important;
+    right:auto!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    grid-column:2!important;
+    grid-row:1!important;
+    gap:8px!important;
+    margin:0!important;
+    padding:0!important;
+    top:auto!important;
+    bottom:auto!important;
+    left:auto!important;
+    right:auto!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas{
+    grid-column:1!important;
+    grid-row:2!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    grid-column:2!important;
+    grid-row:2!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    position:relative!important;
+    top:auto!important;
+    bottom:auto!important;
+    left:auto!important;
+    right:auto!important;
+    margin:0!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
+    padding-top:8px!important;
+    transform:none!important;
+    translate:none!important;
+    align-self:stretch!important;
+    justify-self:stretch!important;
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side > .dl-card{
+    margin:0!important;
+    top:auto!important;
+    bottom:auto!important;
+    transform:none!important;
+    translate:none!important;
+  }
+}
