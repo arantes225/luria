@@ -3628,3 +3628,53 @@ html body .friends-ref-hero-copy > h2{
     --luria-title-sub-size:10px;
   }
 }
+
+
+/* Apostilas v91 — capa/hero segue o tema; título branco no tema claro */
+body[data-page="aprender"] .book-hero{
+  background:linear-gradient(135deg,#184888,#2d6ab5)!important;
+  border-color:color-mix(in srgb,#184888 82%,var(--border))!important;
+  color:#fff!important;
+}
+body[data-page="aprender"] .book-hero h1{
+  color:#fff!important;
+}
+body[data-page="aprender"] .book-hero :is(.book-badge,p,small,strong,.book-meta-row span){
+  color:#fff!important;
+}
+body[data-page="aprender"] .book-hero .book-meta-row span,
+body[data-page="aprender"] .book-hero .book-badge{
+  background:rgba(255,255,255,.12)!important;
+  border-color:rgba(255,255,255,.18)!important;
+}
+
+:root[data-theme="dark"] body[data-page="aprender"] .book-hero{
+  background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 28%,var(--surface)),color-mix(in srgb,var(--accent) 12%,var(--surface)))!important;
+  border-color:color-mix(in srgb,var(--accent) 35%,var(--border))!important;
+  color:var(--text)!important;
+}
+:root[data-theme="dark"] body[data-page="aprender"] .book-hero h1,
+:root[data-theme="dark"] body[data-page="aprender"] .book-hero :is(.book-badge,p,small,strong,.book-meta-row span){
+  color:var(--text)!important;
+}
+:root[data-theme="dark"] body[data-page="aprender"] .book-hero .book-meta-row span,
+:root[data-theme="dark"] body[data-page="aprender"] .book-hero .book-badge{
+  background:color-mix(in srgb,var(--accent) 12%,var(--surface))!important;
+  border-color:color-mix(in srgb,var(--accent) 26%,var(--border))!important;
+}
+
+:root[data-theme="leila-mood"] body[data-page="aprender"] .book-hero,
+:root[data-theme="pink"] body[data-page="aprender"] .book-hero,
+:root[data-theme="rosa"] body[data-page="aprender"] .book-hero{
+  background:linear-gradient(135deg,var(--accent),var(--accent-strong))!important;
+  border-color:var(--accent)!important;
+  color:#fff!important;
+}
+:root[data-theme="leila-mood"] body[data-page="aprender"] .book-hero h1,
+:root[data-theme="pink"] body[data-page="aprender"] .book-hero h1,
+:root[data-theme="rosa"] body[data-page="aprender"] .book-hero h1,
+:root[data-theme="leila-mood"] body[data-page="aprender"] .book-hero :is(.book-badge,p,small,strong,.book-meta-row span),
+:root[data-theme="pink"] body[data-page="aprender"] .book-hero :is(.book-badge,p,small,strong,.book-meta-row span),
+:root[data-theme="rosa"] body[data-page="aprender"] .book-hero :is(.book-badge,p,small,strong,.book-meta-row span){
+  color:#fff!important;
+}
