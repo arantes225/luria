@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <link rel="stylesheet" href="assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="assets/css/pwa-mobile.css?v=20260930-layout-pcr">
-  <link rel="stylesheet" href="assets/css/amigos.css?v=20261006-studyrats-stable-v48">
+  <link rel="stylesheet" href="assets/css/amigos.css?v=20261006-rooms-v55">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20261005-learning-hubs">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
@@ -92,8 +92,28 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
               <div class="friends-ref-room-grid">
                 <article><span class="tag live">AO VIVO</span><strong>Revisão de Direito Constitucional</strong><small>12 participantes · 2h 15min</small><button type="button" class="button primary" data-room-demo>Entrar na sala</button></article>
                 <article><span class="tag progress">EM ANDAMENTO</span><strong>Questões de Raciocínio Lógico</strong><small>8 participantes · 1h 40min</small><button type="button" class="button primary" data-room-demo>Entrar na sala</button></article>
-                <article><span class="tag popular">AGENDADA</span><strong>Simulado ENEM (área de Humanas)</strong><small>15 participantes · Hoje, 19h</small><button type="button" class="button secondary" data-room-demo>Lembrar-me</button></article>
+                <article class="friends-ref-create-room-card">
+                  <span class="friends-ref-create-room-icon" aria-hidden="true">＋</span>
+                  <strong>Criar nova sala</strong>
+                  <small>Gere um código e convide seus amigos para estudar junto.</small>
+                  <button id="friends-create-room-toggle" type="button" class="button secondary">Criar sala</button>
+                </article>
               </div>
+              <section id="friends-create-room-panel" class="friends-create-room-panel" hidden>
+                <div class="friends-create-room-panel-head">
+                  <div><strong>Nova sala de estudos</strong><small>Configure a sala e compartilhe o código de acesso.</small></div>
+                  <button id="friends-create-room-close" type="button" aria-label="Fechar">×</button>
+                </div>
+                <div class="friends-create-room-fields">
+                  <label><span>Nome da sala</span><input id="friends-room-name" type="text" maxlength="60" placeholder="Ex.: Revisão de Cardiologia"></label>
+                  <label><span>Código da sala</span><div class="friends-room-code-wrap"><strong id="friends-room-code">------</strong><button id="friends-room-code-copy" type="button">Copiar</button></div></label>
+                </div>
+                <div class="friends-create-room-actions">
+                  <button id="friends-room-code-regenerate" class="button secondary" type="button">Gerar outro código</button>
+                  <button id="friends-room-create" class="button primary" type="button">Criar sala</button>
+                </div>
+                <small id="friends-room-status" class="friends-room-status" aria-live="polite"></small>
+              </section>
             </section>
 
             <section class="friends-card friends-ref-suggestions-card"><div class="friends-ref-card-head"><h2>✦ &nbsp;Sugestões de amigos</h2><button type="button" class="friends-ref-link">Ver todas →</button></div><div class="friends-ref-suggestion-list"><div><span class="friend-avatar">GF</span><p><strong>Gabriela Ferreira</strong><small>Também estuda para ENEM</small></p><button class="button secondary" type="button">＋ Convidar</button></div><div><span class="friend-avatar">MO</span><p><strong>Mateus Oliveira</strong><small>Interesses em Raciocínio Lógico</small></p><button class="button secondary" type="button">＋ Convidar</button></div><div><span class="friend-avatar">CS</span><p><strong>Camila Santos</strong><small>Também estuda para Medicina</small></p><button class="button secondary" type="button">＋ Convidar</button></div></div></section>
@@ -168,7 +188,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
   <script src="assets/js/supabase.js"></script>
   <script src="/assets/js/app.js?v=20261004-dashboard-pattern-v78"></script>
   <script src="assets/js/studyrats.js?v=44-rat-logo"></script>
-  <script src="assets/js/amigos.js?v=42-reference-layout"></script>
+  <script src="assets/js/amigos.js?v=43-study-rooms"></script>
   <script defer src="assets/js/pwa.js?v=3"></script>
 </body>
 </html>
