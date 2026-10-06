@@ -463,6 +463,33 @@ body[data-page="consolidar"] .learn-card--secondary{
 }
 </style>
 
+
+<style id="consolidar-card-side-finish-v8">
+/* Acabamento lateral contínuo, igual ao cartão de referência */
+body[data-page="consolidar"] .learn-card::before{
+  content:""!important;
+  position:absolute!important;
+  left:0!important;
+  top:0!important;
+  bottom:0!important;
+  width:6px!important;
+  height:auto!important;
+  transform:none!important;
+  border-radius:22px 0 0 22px!important;
+  background:#184888!important;
+  box-shadow:3px 0 10px rgba(24,72,136,.18)!important;
+  opacity:1!important;
+  z-index:4!important;
+  pointer-events:none!important;
+}
+:root[data-theme="leila-mood"] body[data-page="consolidar"] .learn-card::before,
+:root[data-theme="pink"] body[data-page="consolidar"] .learn-card::before,
+:root[data-theme="rosa"] body[data-page="consolidar"] .learn-card::before{
+  background:var(--accent)!important;
+  box-shadow:3px 0 10px color-mix(in srgb,var(--accent) 20%,transparent)!important;
+}
+</style>
+
 </head>
 <body data-page="consolidar">
   <div class="app-shell">
