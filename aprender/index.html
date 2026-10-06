@@ -796,23 +796,68 @@ body.theme-dark[data-page="aprender"] .tool-card{
 </style>
 
 
-<style id="learn-tools-library-accent-v9">
+
+
+<style id="learn-tools-library-accent-v10">
+/* Correção estrutural: sobe os cards sem transform e sem quebrar o grid */
 @media (min-width:761px){
   body[data-page="aprender"] .learn-page{
-    grid-template-rows:auto 220px minmax(0,1fr)!important;
+    grid-template-rows:auto 200px minmax(0,1fr)!important;
+    gap:8px!important;
+  }
+  body[data-page="aprender"] .alex-hero{
+    height:200px!important;
+    min-height:200px!important;
+    max-height:200px!important;
+  }
+  body[data-page="aprender"] .alex-visual{
+    height:200px!important;
+    min-height:200px!important;
+  }
+  body[data-page="aprender"] .alex-content{
+    height:200px!important;
+    min-height:0!important;
+    padding-top:12px!important;
+    padding-bottom:12px!important;
   }
   body[data-page="aprender"] .learn-tools{
-    align-self:start!important;
-    transform:translateY(-20px)!important;
-  }
-  body[data-page="aprender"] .tool-card{
-    height:calc(100% - 20px)!important;
+    transform:none!important;
+    align-self:stretch!important;
     min-height:0!important;
   }
+  body[data-page="aprender"] .tool-card{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
 }
+
+/* Detalhe curvo azul lateral, inspirado na Biblioteca de Flashcards */
 body[data-page="aprender"] .tool-card{
   position:relative!important;
   overflow:hidden!important;
+  padding-left:22px!important;
+}
+body[data-page="aprender"] .tool-card::before{
+  content:""!important;
+  position:absolute!important;
+  left:-11px!important;
+  top:50%!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:17px!important;
+  height:64px!important;
+  transform:translateY(-50%)!important;
+  border-radius:0 18px 18px 0!important;
+  background:var(--accent)!important;
+  box-shadow:4px 0 12px color-mix(in srgb,var(--accent) 18%,transparent)!important;
+  opacity:1!important;
+  z-index:2!important;
+  pointer-events:none!important;
+}
+body[data-page="aprender"] .tool-card::after{
+  content:none!important;
+  display:none!important;
 }
 body[data-page="aprender"] .tool-card .tool-icon,
 body[data-page="aprender"] .tool-card h3,
@@ -821,44 +866,16 @@ body[data-page="aprender"] .tool-card .tool-cta{
   position:relative!important;
   z-index:3!important;
 }
-body[data-page="aprender"] .tool-card::before{
-  content:""!important;
-  position:absolute!important;
-  left:-18px!important;
-  top:50%!important;
-  transform:translateY(-50%)!important;
-  width:34px!important;
-  height:78px!important;
-  border-radius:0 28px 28px 0!important;
-  background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 88%,#fff),var(--accent))!important;
-  box-shadow:
-    0 0 0 1px color-mix(in srgb,var(--accent) 55%,transparent),
-    6px 0 18px color-mix(in srgb,var(--accent) 18%,transparent)!important;
-  z-index:2!important;
-  opacity:1!important;
-}
-body[data-page="aprender"] .tool-card::after{
-  content:""!important;
-  position:absolute!important;
-  left:2px!important;
-  top:50%!important;
-  transform:translateY(-50%)!important;
-  width:3px!important;
-  height:54px!important;
-  border-radius:999px!important;
-  background:rgba(255,255,255,.62)!important;
-  z-index:3!important;
-}
-:root[data-theme="dark"] body[data-page="aprender"] .tool-card::before,
-body.theme-dark[data-page="aprender"] .tool-card::before{
-  background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 84%,#fff 16%),var(--accent))!important;
-}
 @media(max-width:760px){
+  body[data-page="aprender"] .alex-hero,
+  body[data-page="aprender"] .alex-visual,
+  body[data-page="aprender"] .alex-content{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
   body[data-page="aprender"] .learn-tools{
     transform:none!important;
-  }
-  body[data-page="aprender"] .tool-card{
-    min-height:148px!important;
   }
 }
 </style>
