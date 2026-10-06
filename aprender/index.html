@@ -512,6 +512,126 @@ body.theme-dark[data-page="aprender"] .alex-open-tutoring{
 }
 </style>
 
+
+<style id="learn-tools-premium-v7">
+/* Aprender — cartões premium de Apostilas, Anotações e LuriaZap */
+body[data-page="aprender"] .learn-tools{
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:10px!important;
+}
+body[data-page="aprender"] .tool-card{
+  --tool-glow:color-mix(in srgb,var(--accent) 18%,transparent);
+  height:188px!important;
+  min-height:188px!important;
+  max-height:188px!important;
+  padding:18px 18px 16px!important;
+  border-radius:20px!important;
+  border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border))!important;
+  background:
+    radial-gradient(circle at 88% 10%,color-mix(in srgb,var(--accent) 12%,transparent) 0,transparent 32%),
+    linear-gradient(145deg,color-mix(in srgb,var(--surface) 96%,var(--accent) 4%),var(--surface))!important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.72) inset,
+    0 10px 28px color-mix(in srgb,var(--accent) 7%,transparent)!important;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease!important;
+}
+body[data-page="aprender"] .tool-card:before{
+  left:auto!important;
+  right:-42px!important;
+  bottom:-54px!important;
+  width:148px!important;
+  height:148px!important;
+  border-radius:50%!important;
+  background:radial-gradient(circle,color-mix(in srgb,var(--accent) 10%,transparent),transparent 67%)!important;
+  transform:none!important;
+  opacity:.9!important;
+}
+body[data-page="aprender"] .tool-card:after{
+  content:"↗"!important;
+  position:absolute!important;
+  top:16px!important;
+  right:16px!important;
+  width:28px!important;
+  height:28px!important;
+  border-radius:9px!important;
+  display:grid!important;
+  place-items:center!important;
+  color:color-mix(in srgb,var(--accent) 82%,var(--text))!important;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface))!important;
+  border:1px solid color-mix(in srgb,var(--accent) 14%,var(--border))!important;
+  font-size:13px!important;
+  line-height:1!important;
+  z-index:3!important;
+  transition:transform .2s ease,background .2s ease!important;
+}
+body[data-page="aprender"] .tool-card:hover{
+  transform:translateY(-3px)!important;
+  border-color:color-mix(in srgb,var(--accent) 38%,var(--border))!important;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.76) inset,
+    0 18px 38px color-mix(in srgb,var(--accent) 13%,transparent)!important;
+}
+body[data-page="aprender"] .tool-card:hover:after{
+  transform:translate(2px,-2px)!important;
+  background:color-mix(in srgb,var(--accent) 13%,var(--surface))!important;
+}
+body[data-page="aprender"] .tool-icon{
+  width:44px!important;
+  height:44px!important;
+  border-radius:13px!important;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 14%,var(--surface)),color-mix(in srgb,var(--accent) 6%,var(--surface)))!important;
+  border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border))!important;
+  box-shadow:0 6px 16px color-mix(in srgb,var(--accent) 8%,transparent)!important;
+}
+body[data-page="aprender"] .tool-icon svg{
+  width:22px!important;
+  height:22px!important;
+  stroke-width:1.75!important;
+}
+body[data-page="aprender"] .tool-card h3{
+  margin:16px 0 5px!important;
+  font-size:16px!important;
+  line-height:1.2!important;
+  font-weight:600!important;
+  letter-spacing:-.02em!important;
+}
+body[data-page="aprender"] .tool-card p{
+  max-width:78%!important;
+  font-size:10.5px!important;
+  line-height:1.45!important;
+  color:color-mix(in srgb,var(--muted) 92%,var(--text))!important;
+}
+body[data-page="aprender"] .tool-cta{
+  display:inline-flex!important;
+  align-items:center!important;
+  width:max-content!important;
+  margin-top:auto!important;
+  padding:7px 10px!important;
+  border-radius:999px!important;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface))!important;
+  border:1px solid color-mix(in srgb,var(--accent) 12%,var(--border))!important;
+  color:var(--accent)!important;
+  font-size:10px!important;
+  font-weight:500!important;
+  line-height:1!important;
+}
+:root[data-theme="dark"] body[data-page="aprender"] .tool-card,
+body.theme-dark[data-page="aprender"] .tool-card{
+  background:
+    radial-gradient(circle at 88% 10%,color-mix(in srgb,var(--accent) 13%,transparent) 0,transparent 33%),
+    linear-gradient(145deg,color-mix(in srgb,var(--surface) 94%,var(--accent) 6%),var(--surface))!important;
+  box-shadow:0 14px 34px rgba(0,0,0,.16)!important;
+}
+@media(max-width:760px){
+  body[data-page="aprender"] .learn-tools{grid-template-columns:1fr!important}
+  body[data-page="aprender"] .tool-card{
+    height:168px!important;
+    min-height:168px!important;
+    max-height:none!important;
+  }
+}
+</style>
+
 </head>
 <body data-page="aprender">
   <div class="app-shell">
