@@ -1534,3 +1534,52 @@ body[data-page="amigos"] .friends-ref-suggestion-list .button{
   }
 }
 </style>
+
+
+<style id="studyrats-race-compact-v52">
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-scene{
+  min-height:245px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-canvas{
+  min-height:245px!important;
+  padding:34px 46px 22px 14px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-lane{
+  min-height:56px!important;
+  height:56px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-road{
+  height:54px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-runner-card{
+  padding:4px 7px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-runner-copy strong{
+  font-size:10px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-runner-copy small{
+  font-size:7px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-rank{
+  width:20px!important;
+  height:20px!important;
+  font-size:7px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-progress-fill{
+  height:8px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-mouse{
+  width:116px!important;
+  height:82px!important;
+  transform:translate(-58px,-50%)!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-fitted{
+  transform:scale(calc(var(--runner-scale,1.25) * .88)) scale(1.6667)!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-finish{
+  height:calc(100% - 86px)!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-footer{
+  padding:7px 10px!important;
+}
+</style>
