@@ -114,6 +114,18 @@
     .fixation-toggle{min-height:32px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:10px;cursor:pointer}
     .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
     .fixation-answer[hidden]{display:none}
+  
+    .book-section table{width:100%;border-collapse:collapse;margin:14px 0 16px;font-size:12px;border:1px solid var(--border)}
+    .book-section th,.book-section td{padding:10px 11px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.5}
+    .book-section th{background:var(--surface-2);font-weight:600;color:var(--text)}
+    .book-section tbody tr:nth-child(even){background:color-mix(in srgb,var(--accent) 2.5%,var(--surface))}
+    .flowchart{display:flex;flex-direction:column;align-items:center;gap:6px;margin:16px auto;max-width:760px}
+    .flow-step{width:min(100%,640px);padding:10px 14px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2);text-align:center}
+    .flow-arrow{width:100%;text-align:center;font-size:18px;line-height:1;color:var(--accent);font-weight:600}
+    .cervicite-mindmap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
+    .cervicite-mindmap .book-mini{text-align:left}
+    @media(max-width:720px){.cervicite-mindmap{grid-template-columns:1fr}}
+
   </style>
 </head>
 <body data-page="aprender">
@@ -128,6 +140,7 @@
 <div class="book-outline-head"><small>Apostila atual</small><strong>Estrutura do conteúdo</strong></div>
 <nav class="book-outline-nav">
 <a class="book-outline-link" href="#resumo-prova">Em 30 segundos</a>
+<a class="book-outline-link" href="#mapa-mental">Mapa mental</a>
 <a class="book-outline-link" href="#fisiopatologia">Fisiopatologia</a>
 <a class="book-outline-link" href="#cervicite">Cervicite</a>
 <a class="book-outline-link" href="#diagnostico">Diagnóstico</a>
@@ -161,6 +174,19 @@
 <li>Esquema ambulatorial central: ceftriaxona + doxiciclina + metronidazol, com doxiciclina e metronidazol por 14 dias.</li>
 <li>Gestação, abscesso tubo-ovariano, gravidade, intolerância oral ou emergência cirúrgica possível indicam avaliação hospitalar.</li>
 </ul>
+</section>
+
+<section id="mapa-mental" class="book-section">
+<h2>Mapa mental</h2>
+<p>Use este mapa para separar <strong>infecção do trato inferior</strong> de <strong>doença ascendente</strong> e decidir quando o raciocínio deve migrar de cervicite para DIP.</p>
+<div class="cervicite-mindmap">
+  <div class="book-mini"><strong>1. Cervicite</strong><p>Mucopus endocervical e/ou friabilidade. Pense primeiro em clamídia e gonococo, sem esquecer tricomoníase, HSV e <em>M. genitalium</em>.</p></div>
+  <div class="book-mini"><strong>2. Pergunta-chave</strong><p>Há dor pélvica, dispareunia profunda, dor à mobilização do colo, uterina ou anexial? Se sim, investigue DIP.</p></div>
+  <div class="book-mini"><strong>3. DIP</strong><p>Infecção/inflamação do trato superior: endometrite → salpingite → extensão tubo-ovariana/peritoneal. Pode existir sem febre.</p></div>
+  <div class="book-mini"><strong>4. Não perder</strong><p>Gravidez ectópica, torção, apendicite, abscesso tubo-ovariano e outras causas de abdome agudo.</p></div>
+  <div class="book-mini"><strong>5. Tratamento</strong><p>Cervicite e DIP não usam o mesmo esquema. Na DIP ambulatorial: ceftriaxona + doxiciclina + metronidazol.</p></div>
+  <div class="book-mini"><strong>6. Seguimento</strong><p>Reavaliar DIP em até 72 h, manejar parcerias, revisar adesão e procurar abscesso/falha diagnóstica se não houver melhora.</p></div>
+</div>
 </section>
 
 <section id="fisiopatologia" class="book-section">
