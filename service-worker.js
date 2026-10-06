@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v275-passometro-cloud-sync";
+const CACHE_VERSION = "luria-pwa-v276-passometro-go-form";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
