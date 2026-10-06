@@ -1747,6 +1747,7 @@
 
     startQuestionFactoryAutoRefresh();
     wireClinicalImageReview();
+    wireApostilaImageReview();
 
     await Promise.all([
       load(),
@@ -1758,6 +1759,7 @@
       loadBadQuestionFolder(0),
       loadQuestionFactoryQuality(),
       loadClinicalImageReviewQueue(),
+      loadApostilaImageReviewQueue(),
       window.LuriaAdminEditais?.load?.() || Promise.resolve()
     ]);
   }
@@ -2089,8 +2091,11 @@
     }
 
     if (next === "images") {
-      loadClinicalImageReviewQueue().catch(error => {
-        console.warn("Não foi possível carregar a fila de imagens clínicas:", error);
+      Promise.all([
+        loadClinicalImageReviewQueue(),
+        loadApostilaImageReviewQueue()
+      ]).catch(error => {
+        console.warn("Não foi possível carregar uma das filas de imagens:", error);
       });
     }
 
@@ -5623,8 +5628,11 @@
     if (refresh && refresh.dataset.wired !== "1") {
       refresh.dataset.wired = "1";
       refresh.addEventListener("click", () => {
-        loadClinicalImageReviewQueue().catch(error => {
-          console.error("Falha ao atualizar imagens clínicas:", error);
+        Promise.all([
+          loadClinicalImageReviewQueue(),
+          loadApostilaImageReviewQueue()
+        ]).catch(error => {
+          console.error("Falha ao atualizar filas de imagens:", error);
         });
       });
     }
@@ -5648,6 +5656,134 @@
         }
       });
     }
+  }
+
+
+  let apostilaImageReviewRows = [];
+
+  function renderApostilaImageReviewQueue(rows) {
+    const list = $("admin-apostila-images-list");
+    const status = $("admin-apostila-images-status");
+    if (!list) return;
+    if (!rows.length) {
+      list.innerHTML = '<div class="admin-table-empty">Nenhuma imagem de apostila aguardando aprovação.</div>';
+      if (status) status.textContent = "Fila de apostilas revisada · nenhuma pendência.";
+      return;
+    }
+    list.innerHTML = rows.map(row => {
+      const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
+      const src = String(asset.src || "");
+      const preview = src
+        ? '<img src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '">'
+        : '<span>Prévia indisponível.</span>';
+      const source = row.source_url
+        ? '<a href="' + esc(row.source_url) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
+        : '<span>Fonte sem URL registrada</span>';
+      return `
+        <article class="admin-image-review-card" data-apostila-image-review-id="${Number(row.id)}">
+          <div class="admin-image-review-preview">${preview}</div>
+          <div class="admin-image-review-body">
+            <div class="admin-image-review-head">
+              <div>
+                <strong>${esc(row.apostila_title || "Apostila")}</strong>
+                <small>Seção: #${esc(row.target_section || "—")}</small>
+              </div>
+              <span class="admin-image-review-tag">apostila</span>
+            </div>
+            <div class="admin-image-review-source">
+              <strong>${esc(asset.title || asset.caption_title || row.source_name || "Imagem candidata")}</strong><br>
+              ${source}
+              ${row.source_license ? '<br><small>Licença: ' + esc(row.source_license) + '</small>' : ""}
+            </div>
+            ${asset.didactic_note ? '<small>' + esc(asset.didactic_note) + '</small>' : ""}
+            ${asset.caption ? '<small>' + esc(asset.caption) + '</small>' : ""}
+            <div class="admin-image-review-actions">
+              ${src ? '<button class="button secondary" type="button" data-apostila-image-expand="' + Number(row.id) + '">Expandir</button>' : ""}
+              <button class="button secondary" type="button" data-apostila-image-review-action="reject" data-apostila-image-review-id="${Number(row.id)}">Rejeitar</button>
+              <button class="button primary" type="button" data-apostila-image-review-action="approve" data-apostila-image-review-id="${Number(row.id)}">Aprovar</button>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join("");
+    if (status) status.textContent = rows.length + " imagem" + (rows.length === 1 ? "" : "s") + " de apostilas aguardando sua revisão.";
+  }
+
+  function ensureAdminImageLightbox() {
+    let modal = document.getElementById("admin-apostila-image-lightbox");
+    if (modal) return modal;
+    modal = document.createElement("div");
+    modal.id = "admin-apostila-image-lightbox";
+    modal.style.cssText = "position:fixed;inset:0;z-index:99999;display:none;place-items:center;padding:24px;background:rgba(7,17,31,.82)";
+    modal.innerHTML = '<div style="position:relative;width:min(980px,94vw);max-height:92vh;padding:14px;border-radius:16px;background:var(--surface);overflow:auto"><button type="button" data-admin-apostila-lightbox-close style="position:absolute;right:20px;top:20px;z-index:2;width:34px;height:34px;border:0;border-radius:50%;background:rgba(0,0,0,.68);color:#fff;font-size:20px">×</button><img alt="" style="display:block;width:100%;max-height:78vh;object-fit:contain;background:#fff;border-radius:10px"></div>';
+    document.body.appendChild(modal);
+    modal.addEventListener("click", event => {
+      if (event.target === modal || event.target.closest("[data-admin-apostila-lightbox-close]")) {
+        modal.style.display = "none";
+      }
+    });
+    return modal;
+  }
+
+  async function loadApostilaImageReviewQueue() {
+    const status = $("admin-apostila-images-status");
+    if (status) status.textContent = "Carregando imagens de apostilas...";
+    const { data, error } = await sb
+      .from("apostila_image_review_queue")
+      .select("id,apostila_path,apostila_title,candidate_key,target_section,target_selector,placement,proposed_asset,source_url,source_name,source_license,source_trust,review_status,created_at")
+      .eq("review_status", "pending")
+      .order("created_at", { ascending: true });
+    if (error) {
+      console.error("Fila de imagens de apostilas:", error);
+      if (status) status.textContent = "Não foi possível carregar as imagens das apostilas: " + (error.message || "erro de leitura");
+      throw error;
+    }
+    apostilaImageReviewRows = Array.isArray(data) ? data : [];
+    renderApostilaImageReviewQueue(apostilaImageReviewRows);
+  }
+
+  async function reviewApostilaImage(id, action) {
+    const { error } = await sb.rpc("admin_review_apostila_image", {
+      p_id: Number(id),
+      p_decision: action === "approve" ? "approved" : "rejected"
+    });
+    if (error) throw error;
+    await loadApostilaImageReviewQueue();
+  }
+
+  function wireApostilaImageReview() {
+    const list = $("admin-apostila-images-list");
+    if (!list || list.dataset.wired === "1") return;
+    list.dataset.wired = "1";
+    list.addEventListener("click", async event => {
+      const expand = event.target.closest("[data-apostila-image-expand]");
+      if (expand) {
+        const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(expand.dataset.apostilaImageExpand));
+        const src = row?.proposed_asset?.src;
+        if (src) {
+          const modal = ensureAdminImageLightbox();
+          const img = modal.querySelector("img");
+          img.src = src;
+          img.alt = row?.proposed_asset?.alt || row?.proposed_asset?.title || "Imagem candidata";
+          modal.style.display = "grid";
+        }
+        return;
+      }
+      const button = event.target.closest("[data-apostila-image-review-action]");
+      if (!button) return;
+      const id = Number(button.dataset.apostilaImageReviewId);
+      const action = button.dataset.apostilaImageReviewAction;
+      if (!id || !["approve","reject"].includes(action)) return;
+      button.disabled = true;
+      try {
+        await reviewApostilaImage(id, action);
+      } catch (error) {
+        console.error("Falha ao revisar imagem de apostila:", error);
+        const status = $("admin-apostila-images-status");
+        if (status) status.textContent = "Falha ao salvar sua decisão.";
+        button.disabled = false;
+      }
+    });
   }
 
   async function startAdminDashboard() {
