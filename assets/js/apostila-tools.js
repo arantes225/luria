@@ -334,15 +334,43 @@
   async function boot() {
     sb = window.supabaseClient;
     if (!sb) return;
+
     try {
-      const { data } = await sb.rpc("is_admin");
-      isAdmin = data === true;
+      if (window.docmapIsAdmin === true) {
+        isAdmin = true;
+      } else {
+        const { data: sessionData } = await sb.auth.getSession();
+        if (!sessionData?.session) {
+          isAdmin = false;
+          return;
+        }
+
+        const { data } = await sb.rpc("is_admin");
+        isAdmin = data === true;
+      }
     } catch {
-      isAdmin = false;
+      isAdmin = window.docmapIsAdmin === true;
     }
+
     await loadRows();
   }
 
-  if (window.supabaseClient) boot();
-  else window.addEventListener("docmap:ready", boot, { once: true });
+  function bootWhenReady() {
+    if (window.docmapUser || window.docmapSession) {
+      boot().catch(error => console.warn("Falha ao iniciar curadoria da apostila:", error));
+      return;
+    }
+
+    window.addEventListener("docmap:ready", () => {
+      boot().catch(error => console.warn("Falha ao iniciar curadoria da apostila:", error));
+    }, { once: true });
+
+    setTimeout(() => {
+      if (!rows.length) {
+        boot().catch(() => {});
+      }
+    }, 1800);
+  }
+
+  bootWhenReady();
 })();
