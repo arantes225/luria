@@ -79,3 +79,270 @@
     savePostits();setMode(null);note.querySelector('textarea')?.focus();
   });
 })();
+
+;(() => {
+  "use strict";
+
+  const path = (() => {
+    const clean = String(location.pathname || "/").replace(/\/+$/, "");
+    return (clean || "/") + "/";
+  })();
+
+  if (!/^\/apostilas\/[^/]+\/$/.test(path)) return;
+
+  const esc = value => String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+
+  const style = document.createElement("style");
+  style.id = "apostila-image-curation-style";
+  style.textContent = `
+    .apostila-image-curation{margin:0 0 14px;padding:16px;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));border-radius:16px;background:color-mix(in srgb,var(--accent) 4%,var(--surface));box-shadow:0 8px 22px rgba(15,35,66,.04)}
+    .apostila-image-curation-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:12px}
+    .apostila-image-curation-head h2{margin:3px 0 4px;font-size:16px;font-weight:600}
+    .apostila-image-curation-head p{margin:0;color:var(--muted);font-size:10px;line-height:1.45}
+    .apostila-image-curation-count{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-width:58px;height:30px;padding:0 9px;border-radius:999px;background:var(--surface);border:1px solid var(--border);color:var(--accent);font-size:10px;font-weight:600}
+    .apostila-image-curation-count.bad{color:var(--danger,#b42318);border-color:color-mix(in srgb,var(--danger,#b42318) 35%,var(--border));background:color-mix(in srgb,var(--danger,#b42318) 5%,var(--surface))}
+    .apostila-image-curation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .apostila-image-candidate{display:grid;grid-template-columns:118px minmax(0,1fr);gap:11px;min-height:136px;padding:10px;border:1px solid var(--border);border-radius:13px;background:var(--surface);overflow:hidden}
+    .apostila-image-candidate-preview{width:118px;height:116px;border-radius:10px;background:var(--surface-2);overflow:hidden;display:grid;place-items:center}
+    .apostila-image-candidate-preview img{width:100%;height:100%;object-fit:contain;background:#fff}
+    .apostila-image-candidate-body{min-width:0;display:flex;flex-direction:column}
+    .apostila-image-candidate-body strong{font-size:11px;line-height:1.25}
+    .apostila-image-candidate-body small{display:block;margin-top:3px;color:var(--muted);font-size:8.8px;line-height:1.35}
+    .apostila-image-candidate-target{margin-top:6px;color:var(--accent)!important}
+    .apostila-image-candidate-actions{display:flex;gap:6px;margin-top:auto;padding-top:8px;flex-wrap:wrap}
+    .apostila-image-candidate-actions button,.apostila-image-candidate-actions a{min-height:31px;padding:0 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;font-size:8.8px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+    .apostila-image-candidate-actions [data-apostila-image-action="approve"]{background:var(--accent);border-color:var(--accent);color:#fff}
+    .apostila-image-candidate-actions [data-apostila-image-action="reject"]{color:var(--danger,#b42318)}
+    .apostila-approved-figure{margin:16px 0 18px;padding:13px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}
+    .apostila-approved-figure img{display:block;width:100%;max-width:820px;max-height:560px;object-fit:contain;margin:0 auto;border-radius:10px;background:#fff}
+    .apostila-approved-figure figcaption{margin-top:9px;color:var(--muted);font-size:10.5px;line-height:1.5;text-align:left}
+    .apostila-approved-figure figcaption strong{color:var(--text);font-weight:600}
+    .apostila-approved-figure-source{display:inline-block;margin-top:5px;color:var(--accent);font-size:9px;text-decoration:none}
+    .apostila-image-lightbox{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:24px;background:rgba(7,17,31,.78)}
+    .apostila-image-lightbox[hidden]{display:none}
+    .apostila-image-lightbox-card{position:relative;width:min(980px,94vw);max-height:92vh;padding:14px;border-radius:16px;background:var(--surface);box-shadow:0 24px 70px rgba(0,0,0,.35);overflow:auto}
+    .apostila-image-lightbox-card img{display:block;width:100%;max-height:76vh;object-fit:contain;background:#fff;border-radius:10px}
+    .apostila-image-lightbox-close{position:absolute;right:20px;top:20px;width:34px;height:34px;border:0;border-radius:50%;background:rgba(0,0,0,.68);color:#fff;font-size:20px;cursor:pointer}
+    @media(max-width:820px){.apostila-image-curation-grid{grid-template-columns:1fr}.apostila-image-candidate{grid-template-columns:92px minmax(0,1fr)}.apostila-image-candidate-preview{width:92px;height:96px}}
+  `;
+  document.head.appendChild(style);
+
+  let rows = [];
+  let isAdmin = false;
+  let sb = null;
+
+  function getAsset(row) {
+    return row?.proposed_asset && typeof row.proposed_asset === "object"
+      ? row.proposed_asset
+      : {};
+  }
+
+  function createApprovedFigure(row) {
+    const asset = getAsset(row);
+    const src = String(asset.src || "").trim();
+    if (!src) return null;
+
+    const figure = document.createElement("figure");
+    figure.className = "apostila-approved-figure";
+    figure.dataset.apostilaApprovedImage = String(row.id);
+
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = String(asset.alt || asset.caption || "Imagem didática");
+    img.loading = "lazy";
+    figure.appendChild(img);
+
+    const caption = document.createElement("figcaption");
+    const title = asset.caption_title || asset.title || "";
+    const text = asset.caption || asset.didactic_note || "";
+    caption.innerHTML = (title ? "<strong>" + esc(title) + "</strong> " : "") + esc(text);
+    figure.appendChild(caption);
+
+    if (row.source_url) {
+      const source = document.createElement("a");
+      source.className = "apostila-approved-figure-source";
+      source.href = row.source_url;
+      source.target = "_blank";
+      source.rel = "noopener";
+      source.textContent = "Fonte: " + (row.source_name || "abrir fonte original") + " ↗";
+      caption.appendChild(document.createElement("br"));
+      caption.appendChild(source);
+    }
+
+    return figure;
+  }
+
+  function placeApprovedImage(row) {
+    if (document.querySelector('[data-apostila-approved-image="' + Number(row.id) + '"]')) return;
+    const target = document.getElementById(String(row.target_section || "").replace(/^#/, ""));
+    if (!target) return;
+
+    const asset = getAsset(row);
+    const selector = String(row.target_selector || asset.target_selector || "").trim();
+    let anchor = selector ? target.querySelector(selector) : null;
+    const figure = createApprovedFigure(row);
+    if (!figure) return;
+
+    const placement = String(row.placement || asset.placement || "append");
+    if (!anchor) {
+      target.appendChild(figure);
+      return;
+    }
+    if (placement === "before") anchor.insertAdjacentElement("beforebegin", figure);
+    else if (placement === "prepend") anchor.insertAdjacentElement("afterbegin", figure);
+    else if (placement === "append") anchor.insertAdjacentElement("beforeend", figure);
+    else anchor.insertAdjacentElement("afterend", figure);
+  }
+
+  function renderApproved() {
+    document.querySelectorAll(".apostila-approved-figure[data-apostila-approved-image]").forEach(node => node.remove());
+    rows.filter(row => row.review_status === "approved").forEach(placeApprovedImage);
+  }
+
+  function ensureLightbox() {
+    let modal = document.getElementById("apostila-image-lightbox");
+    if (modal) return modal;
+    modal = document.createElement("div");
+    modal.id = "apostila-image-lightbox";
+    modal.className = "apostila-image-lightbox";
+    modal.hidden = true;
+    modal.innerHTML = '<div class="apostila-image-lightbox-card"><button class="apostila-image-lightbox-close" type="button" aria-label="Fechar">×</button><img alt=""></div>';
+    document.body.appendChild(modal);
+    modal.addEventListener("click", event => {
+      if (event.target === modal || event.target.closest(".apostila-image-lightbox-close")) modal.hidden = true;
+    });
+    return modal;
+  }
+
+  function expandImage(src, alt) {
+    const modal = ensureLightbox();
+    const img = modal.querySelector("img");
+    img.src = src;
+    img.alt = alt || "Imagem candidata";
+    modal.hidden = false;
+  }
+
+  function renderReviewPanel() {
+    document.getElementById("apostila-image-curation")?.remove();
+    if (!isAdmin) return;
+
+    const pending = rows.filter(row => row.review_status === "pending");
+    if (!pending.length) return;
+
+    const hero = document.querySelector(".book-hero");
+    if (!hero) return;
+
+    const panel = document.createElement("section");
+    panel.id = "apostila-image-curation";
+    panel.className = "apostila-image-curation";
+    const total = rows.length;
+    const countClass = total < 10 ? " bad" : "";
+    panel.innerHTML = `
+      <div class="apostila-image-curation-head">
+        <div>
+          <span class="eyebrow">Curadoria editorial</span>
+          <h2>Imagens para aprovação</h2>
+          <p>Revise as candidatas antes de entrarem no texto. Aprovar encaixa a figura na seção prevista; rejeitar exclui a candidata da fila.</p>
+        </div>
+        <span class="apostila-image-curation-count${countClass}">${total}/10</span>
+      </div>
+      <div class="apostila-image-curation-grid"></div>
+    `;
+
+    const grid = panel.querySelector(".apostila-image-curation-grid");
+    pending.forEach(row => {
+      const asset = getAsset(row);
+      const card = document.createElement("article");
+      card.className = "apostila-image-candidate";
+      card.dataset.apostilaImageId = String(row.id);
+      card.innerHTML = `
+        <div class="apostila-image-candidate-preview">
+          ${asset.src ? '<img src="' + esc(asset.src) + '" alt="' + esc(asset.alt || asset.caption || "Imagem candidata") + '">' : "<span>Sem prévia</span>"}
+        </div>
+        <div class="apostila-image-candidate-body">
+          <strong>${esc(asset.title || asset.caption_title || row.source_name || "Imagem candidata")}</strong>
+          <small>${esc(asset.didactic_note || asset.caption || "Imagem proposta para complementar o conteúdo.")}</small>
+          <small class="apostila-image-candidate-target">Entraria em: #${esc(row.target_section || "—")}</small>
+          <small>${esc(row.source_name || "Fonte não informada")}${row.source_license ? " · " + esc(row.source_license) : ""}</small>
+          <div class="apostila-image-candidate-actions">
+            ${asset.src ? '<button type="button" data-apostila-image-expand="' + Number(row.id) + '">Expandir</button>' : ""}
+            ${row.source_url ? '<a href="' + esc(row.source_url) + '" target="_blank" rel="noopener">Fonte ↗</a>' : ""}
+            <button type="button" data-apostila-image-action="reject" data-apostila-image-id="${Number(row.id)}">Rejeitar</button>
+            <button type="button" data-apostila-image-action="approve" data-apostila-image-id="${Number(row.id)}">Aprovar</button>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    hero.insertAdjacentElement("afterend", panel);
+
+    panel.addEventListener("click", async event => {
+      const expand = event.target.closest("[data-apostila-image-expand]");
+      if (expand) {
+        const row = rows.find(item => Number(item.id) === Number(expand.dataset.apostilaImageExpand));
+        const asset = getAsset(row);
+        if (asset.src) expandImage(asset.src, asset.alt || asset.caption || "");
+        return;
+      }
+
+      const button = event.target.closest("[data-apostila-image-action]");
+      if (!button) return;
+      const id = Number(button.dataset.apostilaImageId);
+      const action = button.dataset.apostilaImageAction;
+      if (!id || !["approve","reject"].includes(action)) return;
+
+      button.disabled = true;
+      try {
+        const { error } = await sb.rpc("admin_review_apostila_image", {
+          p_id: id,
+          p_decision: action === "approve" ? "approved" : "rejected"
+        });
+        if (error) throw error;
+        await loadRows();
+      } catch (error) {
+        console.error("Falha na curadoria de imagem da apostila:", error);
+        button.disabled = false;
+        window.alert("Não foi possível salvar a decisão desta imagem.");
+      }
+    });
+  }
+
+  async function loadRows() {
+    if (!sb) return;
+    let query = sb
+      .from("apostila_image_review_queue")
+      .select("id,apostila_path,apostila_title,candidate_key,target_section,target_selector,placement,proposed_asset,source_url,source_name,source_license,source_trust,review_status,created_at")
+      .eq("apostila_path", path)
+      .order("created_at", { ascending: true });
+
+    const { data, error } = await query;
+    if (error) {
+      console.warn("Curadoria de imagens da apostila indisponível:", error);
+      return;
+    }
+    rows = Array.isArray(data) ? data : [];
+    renderApproved();
+    renderReviewPanel();
+  }
+
+  async function boot() {
+    sb = window.supabaseClient;
+    if (!sb) return;
+    try {
+      const { data } = await sb.rpc("is_admin");
+      isAdmin = data === true;
+    } catch {
+      isAdmin = false;
+    }
+    await loadRows();
+  }
+
+  if (window.supabaseClient) boot();
+  else window.addEventListener("docmap:ready", boot, { once: true });
+})();
