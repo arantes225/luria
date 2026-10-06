@@ -388,6 +388,82 @@ body.theme-dark[data-page="aprender"] .alex-hero{
 }
 </style>
 
+
+<style id="alex-controls-v5">
+/* Professor Alex — proporção e contraste dos controles */
+body[data-page="aprender"] .alex-ask{
+  min-height:0!important;
+  padding:6px!important;
+  grid-template-columns:34px minmax(0,1fr) 38px!important;
+  gap:7px!important;
+  border-radius:16px!important;
+}
+body[data-page="aprender"] .alex-ask input[type="text"]{
+  min-height:30px!important;
+  height:30px!important;
+  line-height:30px!important;
+  font-size:12px!important;
+}
+body[data-page="aprender"] .alex-attach{
+  width:32px!important;
+  height:32px!important;
+  border-radius:10px!important;
+}
+body[data-page="aprender"] .alex-send{
+  width:36px!important;
+  height:36px!important;
+  min-width:36px!important;
+  min-height:36px!important;
+}
+body[data-page="aprender"] .alex-entry-actions{
+  display:block!important;
+  width:100%!important;
+  margin-top:8px!important;
+}
+body[data-page="aprender"] .alex-open-tutoring{
+  display:flex!important;
+  width:100%!important;
+  min-height:48px!important;
+  height:48px!important;
+  padding:0 18px!important;
+  border-radius:14px!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+}
+body[data-page="aprender"] .alex-file-name{
+  display:none!important;
+}
+
+/* Claro: botão inferior branco com texto azul */
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"])
+body[data-page="aprender"] .alex-open-tutoring,
+:root[data-theme="light"] body[data-page="aprender"] .alex-open-tutoring{
+  background:#fff!important;
+  color:#184888!important;
+  border:1px solid rgba(255,255,255,.92)!important;
+  box-shadow:0 8px 20px rgba(0,0,0,.14)!important;
+}
+
+/* Rosa: mesmo contraste, respeitando o accent do tema */
+:root[data-theme="leila-mood"] body[data-page="aprender"] .alex-open-tutoring,
+:root[data-theme="pink"] body[data-page="aprender"] .alex-open-tutoring,
+:root[data-theme="rosa"] body[data-page="aprender"] .alex-open-tutoring{
+  background:#fff!important;
+  color:var(--accent)!important;
+  border:1px solid rgba(255,255,255,.92)!important;
+  box-shadow:0 8px 20px rgba(98,34,67,.14)!important;
+}
+
+/* Escuro mantém o contraste atual */
+:root[data-theme="dark"] body[data-page="aprender"] .alex-open-tutoring,
+body.theme-dark[data-page="aprender"] .alex-open-tutoring{
+  background:var(--accent)!important;
+  color:#fff!important;
+  border:1px solid color-mix(in srgb,var(--accent) 65%,var(--border))!important;
+}
+</style>
+
 </head>
 <body data-page="aprender">
   <div class="app-shell">
