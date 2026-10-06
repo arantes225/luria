@@ -1145,71 +1145,98 @@
           <label>Diagnóstico principal</label>
           <input name="diagnosis" placeholder="Diagnóstico principal">
         </div>
-        <div class="pm-field">
-          <label>Motivo da internação</label>
-          <textarea name="reason" placeholder="Resumo do motivo da internação"></textarea>
-        </div>
-        <div class="pm-field">
-          <label>Antecedentes</label>
-          <textarea name="history" placeholder="Comorbidades e antecedentes relevantes"></textarea>
-        </div>
 
         <section class="pm-section" data-go-field hidden>
           <div class="pm-section-head"><strong>Dados obstétricos</strong></div>
           <div class="pm-conditional" style="margin-top:12px">
-            <div class="pm-grid-2">
-              <div class="pm-field"><label>Idade gestacional</label><input name="gestationalAge" placeholder="Ex.: 38s4d"></div>
-              <div class="pm-field"><label>GxPxAx</label><input name="gpxa" placeholder="Ex.: G3P2A0"></div>
+            <div class="pm-field"><label>Idade gestacional</label><input name="gestationalAge" placeholder="Ex.: 38s4d"></div>
+            <div class="pm-grid-3">
+              <div class="pm-field"><label>G</label><input name="gravida" inputmode="numeric" placeholder="Ex.: 3"></div>
+              <div class="pm-field"><label>P</label><input name="para" inputmode="numeric" placeholder="Ex.: 2"></div>
+              <div class="pm-field"><label>A</label><input name="abortions" inputmode="numeric" placeholder="Ex.: 0"></div>
             </div>
-            <div class="pm-field"><label>Intercorrências em gestações anteriores</label><textarea name="previousPregnancyComplications" placeholder="Ex.: pré-eclâmpsia, prematuridade, hemorragia..."></textarea></div>
-            <div class="pm-field"><label>Comorbidades</label><textarea name="comorbidities" placeholder="Comorbidades maternas relevantes"></textarea></div>
-            <div class="pm-field"><label>Sorologias</label><textarea name="serologies" placeholder="HIV, sífilis, HBsAg, hepatite C e outras relevantes"></textarea></div>
-            <div class="pm-grid-2">
-              <div class="pm-field"><label>Tipagem sanguínea da mãe</label><input name="maternalBloodType" placeholder="Ex.: O positivo"></div>
+
+            <div class="pm-section" data-switch-section="previousPregnancyComplications">
+              <div class="pm-section-head">
+                <strong>Intercorrências em gestações anteriores</strong>
+                <div class="pm-toggle"><button type="button" data-switch="previousPregnancyComplications" data-value="no">Não</button><button type="button" data-switch="previousPregnancyComplications" data-value="yes">Sim</button></div>
+              </div>
+              <div class="pm-conditional" data-conditional="previousPregnancyComplications" hidden>
+                <div class="pm-field"><label>Quais?</label><textarea name="previousPregnancyComplications" placeholder="Ex.: pré-eclâmpsia, prematuridade, hemorragia..."></textarea></div>
+              </div>
+            </div>
+
+            <div class="pm-section" data-switch-section="history">
+              <div class="pm-section-head">
+                <strong>Antecedentes</strong>
+                <div class="pm-toggle"><button type="button" data-switch="history" data-value="no">Não</button><button type="button" data-switch="history" data-value="yes">Sim</button></div>
+              </div>
+              <div class="pm-conditional" data-conditional="history" hidden>
+                <div class="pm-field"><label>Quais?</label><textarea name="history" placeholder="Antecedentes maternos relevantes"></textarea></div>
+              </div>
+            </div>
+
+            <div class="pm-section">
+              <div class="pm-section-head"><strong>Sorologias realizadas</strong></div>
+              <div class="pm-conditional" style="margin-top:10px">
+                <div class="pm-grid-2">
+                  <div class="pm-section" data-switch-section="serologyHivDone">
+                    <div class="pm-section-head"><strong>HIV</strong><div class="pm-toggle"><button type="button" data-switch="serologyHivDone" data-value="no">Não</button><button type="button" data-switch="serologyHivDone" data-value="yes">Sim</button></div></div>
+                    <div class="pm-conditional" data-conditional="serologyHivDone" hidden><div class="pm-field"><label>Resultado</label><select name="serologyHivResult"><option value="">Selecione</option><option>Negativo</option><option>Positivo</option></select></div></div>
+                  </div>
+                  <div class="pm-section" data-switch-section="serologySyphilisDone">
+                    <div class="pm-section-head"><strong>Sífilis</strong><div class="pm-toggle"><button type="button" data-switch="serologySyphilisDone" data-value="no">Não</button><button type="button" data-switch="serologySyphilisDone" data-value="yes">Sim</button></div></div>
+                    <div class="pm-conditional" data-conditional="serologySyphilisDone" hidden><div class="pm-field"><label>Resultado</label><select name="serologySyphilisResult"><option value="">Selecione</option><option>Negativo</option><option>Positivo</option></select></div></div>
+                  </div>
+                  <div class="pm-section" data-switch-section="serologyHbsagDone">
+                    <div class="pm-section-head"><strong>HBsAg</strong><div class="pm-toggle"><button type="button" data-switch="serologyHbsagDone" data-value="no">Não</button><button type="button" data-switch="serologyHbsagDone" data-value="yes">Sim</button></div></div>
+                    <div class="pm-conditional" data-conditional="serologyHbsagDone" hidden><div class="pm-field"><label>Resultado</label><select name="serologyHbsagResult"><option value="">Selecione</option><option>Negativo</option><option>Positivo</option></select></div></div>
+                  </div>
+                  <div class="pm-section" data-switch-section="serologyHcvDone">
+                    <div class="pm-section-head"><strong>Hepatite C</strong><div class="pm-toggle"><button type="button" data-switch="serologyHcvDone" data-value="no">Não</button><button type="button" data-switch="serologyHcvDone" data-value="yes">Sim</button></div></div>
+                    <div class="pm-conditional" data-conditional="serologyHcvDone" hidden><div class="pm-field"><label>Resultado</label><select name="serologyHcvResult"><option value="">Selecione</option><option>Negativo</option><option>Positivo</option></select></div></div>
+                  </div>
+                </div>
+                <div class="pm-section" data-switch-section="serologyOtherDone">
+                  <div class="pm-section-head"><strong>Outras sorologias relevantes</strong><div class="pm-toggle"><button type="button" data-switch="serologyOtherDone" data-value="no">Não</button><button type="button" data-switch="serologyOtherDone" data-value="yes">Sim</button></div></div>
+                  <div class="pm-conditional" data-conditional="serologyOtherDone" hidden>
+                    <div class="pm-grid-2">
+                      <div class="pm-field"><label>Qual?</label><input name="serologyOtherName" placeholder="Ex.: toxoplasmose"></div>
+                      <div class="pm-field"><label>Resultado</label><select name="serologyOtherResult"><option value="">Selecione</option><option>Negativo</option><option>Positivo</option></select></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pm-grid-3">
+              <div class="pm-field"><label>ABO</label><select name="maternalABO"><option value="">Não informado</option><option>A</option><option>B</option><option>AB</option><option>O</option></select></div>
+              <div class="pm-field"><label>Rh</label><select name="maternalRh"><option value="">Não informado</option><option value="+">Positivo (+)</option><option value="-">Negativo (-)</option></select></div>
               <div class="pm-field"><label>Streptococcus do grupo B</label><select name="gbs"><option value="">Não informado</option><option>Negativo</option><option>Positivo</option><option>Desconhecido</option><option>Não se aplica</option></select></div>
             </div>
           </div>
         </section>
 
-        <section class="pm-section" data-go-field hidden>
-          <div class="pm-section-head"><strong>Parto</strong></div>
-          <div class="pm-conditional" style="margin-top:12px">
-            <div class="pm-grid-2">
-              <div class="pm-field"><label>Tipo de parto</label><select name="deliveryType"><option value="">Não realizado / não informado</option><option value="vaginal">Parto vaginal</option><option value="cesarea">Cesárea</option></select></div>
-              <div class="pm-field"><label>Motivo / indicação</label><input name="deliveryReason" placeholder="Indicação ou motivo do parto"></div>
-            </div>
-            <div class="pm-grid-2">
-              <div class="pm-field"><label>Data do parto</label><input name="deliveryDate" type="date"></div>
-              <div class="pm-field"><label>Hora do parto</label><input name="deliveryTime" type="time"></div>
-            </div>
-            <div class="pm-field"><label>Intercorrências maternas no parto/puerpério</label><textarea name="maternalDeliveryComplications" placeholder="Se houver"></textarea></div>
-            <div class="pm-field"><label>Previsão de alta</label><input name="estimatedDischarge" type="date"><small class="pm-discharge-note">Calculada automaticamente: 24 h após parto vaginal ou 48 h após cesárea; se o horário calculado ultrapassar 15h, passa para o dia seguinte.</small></div>
+        <div class="pm-section" data-switch-section="medications">
+          <div class="pm-section-head">
+            <strong>Medicações atuais</strong>
+            <div class="pm-toggle"><button type="button" data-switch="medications" data-value="no">Não</button><button type="button" data-switch="medications" data-value="yes">Sim</button></div>
           </div>
-        </section>
+          <div class="pm-conditional" data-conditional="medications" hidden>
+            <div id="pm-medications"></div>
+            <button class="pm-add-row" type="button" id="pm-add-medication">+ Adicionar medicamento</button>
+          </div>
+        </div>
 
-        <section class="pm-section" data-go-field hidden>
-          <div class="pm-section-head"><strong>Recém-nascido</strong></div>
-          <div class="pm-conditional" style="margin-top:12px">
-            <div class="pm-grid-3">
-              <div class="pm-field"><label>Sexo</label><select name="newbornSex"><option value="">Não informado</option><option>Feminino</option><option>Masculino</option></select></div>
-              <div class="pm-field"><label>Peso ao nascer</label><input name="newbornWeight" placeholder="Ex.: 3250 g"></div>
-              <div class="pm-field"><label>Tipagem sanguínea do bebê</label><input name="newbornBloodType" placeholder="Ex.: A positivo"></div>
-            </div>
-            <div class="pm-field"><label>Intercorrências com o RN</label><textarea name="newbornComplications" placeholder="Deixe em branco se não houve"></textarea></div>
+        <div class="pm-section" data-switch-section="exams">
+          <div class="pm-section-head">
+            <strong>Exames</strong>
+            <div class="pm-toggle"><button type="button" data-switch="exams" data-value="no">Não</button><button type="button" data-switch="exams" data-value="yes">Sim</button></div>
           </div>
-        </section>
-
-        <section class="pm-section" data-go-field hidden>
-          <div class="pm-section-head"><strong>Passagem obstétrica</strong></div>
-          <div class="pm-conditional" style="margin-top:12px">
-            <div class="pm-field"><label>Estado atual da paciente</label><textarea name="currentStatus" placeholder="Resumo clínico atual"></textarea></div>
-            <div class="pm-grid-2">
-              <div class="pm-field"><label>Exames pendentes</label><textarea name="pendingExams" placeholder="Exames aguardando resultado ou coleta"></textarea></div>
-              <div class="pm-field"><label>Avaliações pendentes</label><textarea name="pendingEvaluations" placeholder="Avaliações/pareceres pendentes"></textarea></div>
-            </div>
-            <div class="pm-field"><label>Alerta / atenção</label><textarea name="obstetricAlert" placeholder="Ex.: pré-eclâmpsia, hemorragia, sepse, prematuridade, placenta prévia/acretismo..."></textarea></div>
+          <div class="pm-conditional" data-conditional="exams" hidden>
+            <div class="pm-field"><label>Exames relevantes</label><textarea name="examsDetail" placeholder="Resultados relevantes para a passagem"></textarea></div>
           </div>
-        </section>
+        </div>
 
         <div class="pm-section" data-switch-section="allergies">
           <div class="pm-section-head">
@@ -1248,17 +1275,6 @@
           </div>
         </div>
 
-        <div class="pm-section" data-switch-section="medications">
-          <div class="pm-section-head">
-            <strong>Medicações atuais</strong>
-            <div class="pm-toggle"><button type="button" data-switch="medications" data-value="no">Não</button><button type="button" data-switch="medications" data-value="yes">Sim</button></div>
-          </div>
-          <div class="pm-conditional" data-conditional="medications" hidden>
-            <div id="pm-medications"></div>
-            <button class="pm-add-row" type="button" id="pm-add-medication">+ Adicionar medicamento</button>
-          </div>
-        </div>
-
         <div class="pm-section" data-switch-section="antibiotics">
           <div class="pm-section-head">
             <strong>Antibiótico</strong>
@@ -1280,15 +1296,33 @@
           </div>
         </div>
 
-        <div class="pm-section" data-switch-section="exams">
-          <div class="pm-section-head">
-            <strong>Exames</strong>
-            <div class="pm-toggle"><button type="button" data-switch="exams" data-value="no">Não</button><button type="button" data-switch="exams" data-value="yes">Sim</button></div>
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Parto</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Tipo de parto</label><select name="deliveryType"><option value="">Não realizado / não informado</option><option value="vaginal">Parto vaginal</option><option value="cesarea">Cesárea</option></select></div>
+              <div class="pm-field"><label>Motivo / indicação</label><input name="deliveryReason" placeholder="Indicação ou motivo do parto"></div>
+            </div>
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Data do parto</label><input name="deliveryDate" type="date"></div>
+              <div class="pm-field"><label>Hora do parto</label><input name="deliveryTime" type="time"></div>
+            </div>
+            <div class="pm-field"><label>Intercorrências maternas no parto/puerpério</label><textarea name="maternalDeliveryComplications" placeholder="Se houver"></textarea></div>
+            <div class="pm-field"><label>Previsão de alta</label><input name="estimatedDischarge" type="date"><small class="pm-discharge-note">Calculada automaticamente: 24 h após parto vaginal ou 48 h após cesárea; se o horário calculado ultrapassar 15h, passa para o dia seguinte.</small></div>
           </div>
-          <div class="pm-conditional" data-conditional="exams" hidden>
-            <div class="pm-field"><label>Exames relevantes</label><textarea name="examsDetail" placeholder="Resultados relevantes para a passagem"></textarea></div>
+        </section>
+
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Recém-nascido</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-grid-3">
+              <div class="pm-field"><label>Sexo</label><select name="newbornSex"><option value="">Não informado</option><option>Feminino</option><option>Masculino</option></select></div>
+              <div class="pm-field"><label>Peso ao nascer</label><input name="newbornWeight" placeholder="Ex.: 3250 g"></div>
+              <div class="pm-field"><label>Tipagem sanguínea do bebê</label><input name="newbornBloodType" placeholder="Ex.: A positivo"></div>
+            </div>
+            <div class="pm-field"><label>Intercorrências com o RN</label><textarea name="newbornComplications" placeholder="Deixe em branco se não houve"></textarea></div>
           </div>
-        </div>
+        </section>
 
         <div class="pm-field">
           <label>Impressão diagnóstica</label>
@@ -1314,6 +1348,18 @@
             <div class="pm-field"><label>Pendências</label><textarea name="pendingDetail" placeholder="Ex.: aguardar TC; repetir gasometria; avaliar alta..."></textarea></div>
           </div>
         </div>
+
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Passagem obstétrica</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-field"><label>Estado atual da paciente</label><textarea name="currentStatus" placeholder="Resumo clínico atual"></textarea></div>
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Exames pendentes</label><textarea name="pendingExams" placeholder="Exames aguardando resultado ou coleta"></textarea></div>
+              <div class="pm-field"><label>Avaliações pendentes</label><textarea name="pendingEvaluations" placeholder="Avaliações/pareceres pendentes"></textarea></div>
+            </div>
+            <div class="pm-field"><label>Alerta / atenção</label><textarea name="obstetricAlert" placeholder="Ex.: pré-eclâmpsia, hemorragia, sepse, prematuridade, placenta prévia/acretismo..."></textarea></div>
+          </div>
+        </section>
 
         <div class="pm-field">
           <label>Prioridade da passagem</label>
@@ -1559,6 +1605,15 @@
 
     function openDeck(id){
       state.activeDeckId=id;
+      p.gpxa=["G"+p.gravida,"P"+p.para,"A"+p.abortions].filter(x=>!/[GPA]$/.test(x)).join("");
+      p.maternalBloodType=[p.maternalABO,p.maternalRh].filter(Boolean).join("");
+      const serologySummary=[];
+      if(p.switches.serologyHivDone==="yes") serologySummary.push("HIV: "+(p.serologyHivResult||"realizado"));
+      if(p.switches.serologySyphilisDone==="yes") serologySummary.push("Sífilis: "+(p.serologySyphilisResult||"realizado"));
+      if(p.switches.serologyHbsagDone==="yes") serologySummary.push("HBsAg: "+(p.serologyHbsagResult||"realizado"));
+      if(p.switches.serologyHcvDone==="yes") serologySummary.push("Hepatite C: "+(p.serologyHcvResult||"realizado"));
+      if(p.switches.serologyOtherDone==="yes") serologySummary.push((p.serologyOtherName||"Outra")+": "+(p.serologyOtherResult||"realizado"));
+      p.serologies=serologySummary.join(" · ");
       const d=activeDeck(); if(!d) return;
       $("#pm-list").hidden=true; $("#pm-detail").hidden=false;
       $("#pm-detail-title").textContent=`${d.hospital} · ${fmtDate(d.date)}`;
@@ -1860,6 +1915,19 @@
       $$("[data-conditional]").forEach(x=>x.hidden=true);
       $$("[data-priority]").forEach(b=>b.classList.remove("active"));
       $("#pm-medications").innerHTML=""; $("#pm-antibiotics").innerHTML="";
+      if(!p.gravida&&!p.para&&!p.abortions&&p.gpxa){
+        const m=String(p.gpxa).match(/G\s*(\d+).*?P\s*(\d+).*?A\s*(\d+)/i);
+        if(m){form.elements.gravida.value=m[1];form.elements.para.value=m[2];form.elements.abortions.value=m[3];}
+      }
+      if((!p.maternalABO&&!p.maternalRh)&&p.maternalBloodType){
+        const m=String(p.maternalBloodType).match(/\b(AB|A|B|O)\b/i);
+        if(m) form.elements.maternalABO.value=m[1].toUpperCase();
+        if(/neg|\-/.test(String(p.maternalBloodType).toLowerCase())) form.elements.maternalRh.value="-";
+        else if(/pos|\+/.test(String(p.maternalBloodType).toLowerCase())) form.elements.maternalRh.value="+";
+      }
+      const inferredSwitches={...(p.switches||{})};
+      if(p.previousPregnancyComplications&&!inferredSwitches.previousPregnancyComplications) inferredSwitches.previousPregnancyComplications="yes";
+      if(p.history&&!inferredSwitches.history) inferredSwitches.history="yes";
       syncAllOtherFields(form);
       syncGoFields();
       $("#pm-patient-dialog-title").textContent="Novo paciente";
@@ -1943,9 +2011,9 @@
     function fillPatient(p){
       resetPatientForm(); state.editingPatientId=p.id; $("#pm-patient-dialog-title").textContent="Editar paciente";
       const form=$("#pm-patient-form");
-      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gpxa","previousPregnancyComplications","comorbidities","serologies","maternalBloodType","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
       syncAllOtherFields(form);
-      Object.entries(p.switches||{}).forEach(([k,v])=>setSwitch(k,v));
+      Object.entries(inferredSwitches).forEach(([k,v])=>setSwitch(k,v));
       state.priority=p.priority||"none"; $$("[data-priority]").forEach(b=>b.classList.toggle("active",b.dataset.priority===state.priority));
       $("#pm-medications").innerHTML=""; (p.medications||[]).forEach(addMedicationRow);
       $("#pm-antibiotics").innerHTML=""; (p.antibiotics||[]).forEach(addAntibioticRow);
@@ -1981,7 +2049,7 @@
       const fd=new FormData(form);
       const existingPatient=state.editingPatientId?(activeDeck()?.patients||[]).find(x=>x.id===state.editingPatientId):null;
       const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics"),viewObservation:existingPatient?.viewObservation||""};
-      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","reason","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gpxa","previousPregnancyComplications","comorbidities","serologies","maternalBloodType","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
+      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
       const d=activeDeck(); if(!d) return;
       if(isGoDeck(d) && !p.estimatedDischarge) p.estimatedDischarge=calculateEstimatedDischarge(form);
       const idx=(d.patients||[]).findIndex(x=>x.id===p.id);
