@@ -412,7 +412,7 @@
           ? layout4(data)
           : ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
       const html = greeting() + bodyHtml;
-      if (html) root.innerHTML = html;
+      if (html && root.innerHTML !== html) root.innerHTML = html;
       document.querySelectorAll(".page > .luria-dashboard-spotlight").forEach(el => {
         if (!root.contains(el)) el.remove();
       });
@@ -446,9 +446,9 @@
     document.body.dataset.dashboardLayout = current;
 
     // O legado já fica oculto pelo CSS desde o primeiro frame.
-    // Renderiza somente a experiência atual para evitar flash visual.
+    // Um único render no boot evita recriar os cards duas vezes seguidas
+    // e elimina o salto visual de Atividades de hoje / Estudar agora.
     render();
-    schedule();
   }
   function enhanceShell() {
     const topbar = page.querySelector(".topbar");
