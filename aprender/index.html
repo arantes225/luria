@@ -189,6 +189,52 @@ body[data-page="aprender"] .learn-page > .luria-page-spotlight + .alex-hero{
   margin-top:0!important;
 }
 </style>
+
+<style id="alex-character-image-v1">
+@media (min-width:761px){
+  body[data-page="aprender"] .alex-hero{
+    grid-template-columns:230px minmax(0,1fr)!important;
+  }
+  body[data-page="aprender"] .alex-visual{
+    display:flex!important;
+    height:250px!important;
+    min-height:250px!important;
+    align-items:flex-end!important;
+    justify-content:center!important;
+    overflow:hidden!important;
+  }
+  body[data-page="aprender"] .alex-character-img{
+    display:block!important;
+    width:220px!important;
+    height:240px!important;
+    max-width:100%!important;
+    object-fit:contain!important;
+    object-position:center bottom!important;
+    margin:0!important;
+  }
+  body[data-page="aprender"] .alex-content{
+    padding:18px 24px 18px 8px!important;
+  }
+}
+@media (max-width:760px){
+  body[data-page="aprender"] .alex-visual{
+    display:flex!important;
+    height:190px!important;
+    min-height:190px!important;
+    align-items:flex-end!important;
+    justify-content:center!important;
+    overflow:hidden!important;
+  }
+  body[data-page="aprender"] .alex-character-img{
+    display:block!important;
+    width:180px!important;
+    height:185px!important;
+    max-width:100%!important;
+    object-fit:contain!important;
+    object-position:center bottom!important;
+  }
+}
+</style>
 </head>
 <body data-page="aprender">
   <div class="app-shell">
@@ -211,20 +257,7 @@ body[data-page="aprender"] .learn-page > .luria-page-spotlight + .alex-hero{
 
           <section class="alex-hero" data-admin-only hidden>
             <div class="alex-visual" aria-hidden="true">
-              <div class="alex-halo"></div>
-              <div class="alex-figure">
-                <div class="alex-hair"></div>
-                <div class="alex-head"></div>
-                <div class="alex-glasses"><span></span></div>
-                <div class="alex-smile"></div>
-                <div class="alex-body"></div>
-                <div class="alex-scrubs"></div>
-                <div class="alex-coat-left"></div>
-                <div class="alex-coat-right"></div>
-                <div class="alex-stetho"></div>
-                <div class="alex-arm"></div>
-                <div class="alex-hand"></div>
-              </div>
+              <img class="alex-character-img" src="/assets/img/professor-alex/professor-alex-joinha.webp?v=1" alt="">
             </div>
             <div class="alex-content">
               <h2>Professor Alex</h2>
