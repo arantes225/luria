@@ -1373,28 +1373,9 @@ body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-create-actions
 }
 
 
-/* StudyRats v47 — corrida estável + personalização clássica */
-body[data-page="amigos"] .studyrats-race-fitted{
-  width:72px!important;
-  height:50px!important;
-  transform:scale(var(--runner-scale,1.25))!important;
-  transform-origin:center center!important;
-}
-body[data-page="amigos"] .studyrats-mouse{
-  width:112px!important;
-  height:78px!important;
-  transform:translate(-56px,-50%)!important;
-  overflow:visible!important;
-  z-index:8!important;
-}
-body[data-page="amigos"] .studyrats-road{
-  overflow:visible!important;
-}
-body[data-page="amigos"] .studyrats-race-canvas{
-  overflow:hidden!important;
-}
+/* StudyRats v48 — apenas personalização clássica; corrida preservada */
 body[data-page="amigos"] .studyrats-rat-picker-old{
-  grid-template-columns:minmax(250px,.8fr) minmax(0,1.65fr)!important;
+  grid-template-columns:minmax(270px,.85fr) minmax(0,1.65fr)!important;
   align-items:stretch!important;
   gap:18px!important;
   padding:16px!important;
@@ -1409,11 +1390,11 @@ body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-large{
   margin-top:12px!important;
   flex:1 1 auto!important;
   display:grid!important;
-  grid-template-rows:auto minmax(190px,1fr)!important;
+  grid-template-rows:auto minmax(200px,1fr)!important;
   gap:7px!important;
 }
 body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-large-stage{
-  min-height:210px!important;
+  min-height:220px!important;
   height:100%!important;
   border-radius:16px!important;
 }
@@ -1431,13 +1412,7 @@ body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-rat-picker-status{
   text-align:left!important;
 }
 @media(max-width:900px){
-  body[data-page="amigos"] .studyrats-rat-picker-old{
-    grid-template-columns:1fr!important;
-  }
-  body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-large-stage{
-    min-height:175px!important;
-  }
-  body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-composite{
-    transform:scale(2.55)!important;
-  }
+  body[data-page="amigos"] .studyrats-rat-picker-old{grid-template-columns:1fr!important}
+  body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-large-stage{min-height:175px!important}
+  body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-composite{transform:scale(2.55)!important}
 }
