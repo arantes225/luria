@@ -1,5 +1,5 @@
 (() => {
-  const allowed = new Set(["1", "2", "3", "4", "5"]);
+  const allowed = new Set(["1", "2", "3", "5"]);
   const page = document.querySelector('body[data-page="dashboard"] .page');
   if (!page) return;
   const root = document.createElement("div");
@@ -413,9 +413,7 @@
       const data = snap();
       const bodyHtml = current === "5"
         ? layout5(data)
-        : current === "4"
-          ? layout4(data)
-          : ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
+        : ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
       const html = greeting() + bodyHtml;
       if (html && root.innerHTML !== html) root.innerHTML = html;
       document.querySelectorAll(".page > .luria-dashboard-spotlight").forEach(el => {
@@ -444,7 +442,7 @@
     const standalonePwa = document.documentElement.classList.contains("pwa-standalone")
       || window.matchMedia?.("(display-mode: standalone)")?.matches
       || window.navigator.standalone === true;
-    const nextLayout = standalonePwa ? "4" : (allowed.has(selected) ? selected : "1");
+    const nextLayout = standalonePwa ? "1" : (allowed.has(selected) ? selected : "1");
     const sameLayout = dashboardAppliedOnce && current === nextLayout;
     current = nextLayout;
     if (!allowed.has(selected)) {
