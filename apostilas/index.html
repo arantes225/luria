@@ -85,7 +85,7 @@
 
         <section class="library-section" id="recent-section">
           <div class="library-section-head">
-            <div><span class="library-section-eyebrow">Continuar estudando</span><h2>Últimas vistas</h2></div>
+            <div><span class="library-section-eyebrow">Mais recentes</span><h2>Últimas criadas</h2></div>
             <small id="recent-count"></small>
           </div>
           <div class="books-row" id="recent-grid"></div>
@@ -148,26 +148,17 @@
       a.querySelector(".book-area").textContent=book.area||"Sem área";
       a.querySelector(".book-subarea").textContent=book.materia||"";
       a.querySelector(".book-title").textContent=book.tema||book.titulo||"Apostila";
-      a.addEventListener("click",()=>rememberViewed(book));
       return a;
     }
 
-    function rememberViewed(book){
-      try{
-        const key="luria:apostilas:last-viewed";
-        const list=JSON.parse(localStorage.getItem(key)||"[]").filter(x=>x.content_url!==book.content_url);
-        list.unshift({id:book.id,area:book.area,materia:book.materia,tema:book.tema,titulo:book.titulo,content_url:book.content_url,viewed_at:Date.now()});
-        localStorage.setItem(key,JSON.stringify(list.slice(0,8)));
-      }catch{}
-    }
-
     function recentBooks(){
-      try{
-        const saved=JSON.parse(localStorage.getItem("luria:apostilas:last-viewed")||"[]");
-        const mapped=saved.map(savedBook=>books.find(book=>book.content_url===savedBook.content_url)||savedBook).filter(book=>book?.content_url);
-        if(mapped.length)return mapped.slice(0,6);
-      }catch{}
-      return books.slice(0,6);
+      return [...books]
+        .sort((a,b)=>{
+          const ad=Date.parse(a.created_at||0)||0;
+          const bd=Date.parse(b.created_at||0)||0;
+          return bd-ad;
+        })
+        .slice(0,6);
     }
 
     function renderRecent(query=""){
@@ -178,12 +169,12 @@
       root.innerHTML="";
       if(!items.length){
         section.hidden=!!q;
-        if(!q)root.innerHTML='<div class="library-empty">As apostilas abertas recentemente aparecerão aqui.</div>';
+        if(!q)root.innerHTML='<div class="library-empty">As apostilas criadas mais recentemente aparecerão aqui.</div>';
       }else{
         section.hidden=false;
         items.forEach(book=>root.appendChild(card(book)));
       }
-      document.getElementById("recent-count").textContent=items.length?items.length+" recente"+(items.length===1?"":"s"):"";
+      document.getElementById("recent-count").textContent=items.length?items.length+" criada"+(items.length===1?"":"s"):"";
     }
 
     function renderAreas(query=""){
@@ -249,7 +240,7 @@
       }catch{}
       const byUrl=new Map();
       [parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
-      books=[...byUrl.values()];
+      books=[...byUrl.values()].sort((a,b)=>(Date.parse(b.created_at||0)||0)-(Date.parse(a.created_at||0)||0));
       render("");
     }
 
