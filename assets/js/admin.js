@@ -5742,6 +5742,22 @@
   }
 
   async function reviewApostilaImage(id, action) {
+    const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(id));
+    if (action === "approve") {
+      const size = Number(row?.proposed_asset?.size_bytes || 0);
+      if (!size || size > 112640) {
+        const status = $("admin-apostila-images-status");
+        if (status) status.textContent = "Otimizando imagem para o padrão máximo de 110 KB...";
+        const { data: optimized, error: optimizeError } = await sb.functions.invoke("optimize-apostila-image", {
+          body: { id: Number(id) }
+        });
+        if (optimizeError) throw optimizeError;
+        if (!optimized?.ok || Number(optimized?.size_bytes || 0) > 112640) {
+          throw new Error("Não foi possível otimizar a imagem para até 110 KB.");
+        }
+      }
+    }
+
     const { error } = await sb.rpc("admin_review_apostila_image", {
       p_id: Number(id),
       p_decision: action === "approve" ? "approved" : "rejected"
