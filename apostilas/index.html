@@ -116,6 +116,15 @@
       content_url:"/apostilas/diabetes-mellitus-gestacional/",
       created_at:"2026-10-05T00:00:00Z"
     };
+    const somp={
+      id:"somp-2026",
+      area:"Ginecologia e Obstetrícia",
+      materia:"Endocrinologia Ginecológica",
+      tema:"Síndrome Ovariana Metabólica Poliendócrina",
+      titulo:"Síndrome Ovariana Metabólica Poliendócrina",
+      content_url:"/apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/",
+      created_at:"2026-10-05T22:28:00-03:00"
+    };
     const areaOrder=["Clínica Médica","Cirurgia Geral","Ginecologia e Obstetrícia","Pediatria","Medicina Preventiva / MFC"];
     const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
     const bookIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg>';
@@ -230,7 +239,7 @@
         }
       }catch{}
       const byUrl=new Map();
-      [pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
+      [somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
       books=[...byUrl.values()];
       render("");
     }
