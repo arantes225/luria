@@ -4430,3 +4430,133 @@ body[data-page="cronograma"] .page #week-planner .week-dot{width:8px!important;h
 body[data-page="cronograma"] .page #week-planner[hidden]{display:none!important}
 body[data-page="cronograma"] .page #week-planner .week-matrix-cell{cursor:default!important}
 body[data-page="flashcards"].flash-review-session-active .page #review-launcher{display:none!important}
+
+
+/* LURIA PWA global normalization v35 */
+@media (max-width: 980px) {
+  .pwa-standalone body,
+  html.pwa-standalone body {
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+  }
+
+  .pwa-standalone body .app-shell,
+  html.pwa-standalone body .app-shell,
+  .pwa-standalone body .main,
+  html.pwa-standalone body .main,
+  .pwa-standalone body .page,
+  html.pwa-standalone body .page {
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    overflow:visible!important;
+    box-sizing:border-box!important;
+  }
+
+  .pwa-standalone body .page,
+  html.pwa-standalone body .page {
+    margin:0!important;
+  }
+
+  .pwa-standalone body .luria-page-spotlight,
+  html.pwa-standalone body .luria-page-spotlight {
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
+    min-height:72px!important;
+    margin-bottom:8px!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Never preserve desktop no-scroll layouts inside the installed app */
+  .pwa-standalone body[data-page="aprender"],
+  .pwa-standalone body[data-page="consolidar"],
+  .pwa-standalone body[data-page="amigos"],
+  .pwa-standalone body[data-page="flashcards"],
+  .pwa-standalone body[data-page="caderno-erros"],
+  .pwa-standalone body[data-page="questoes-simulados"],
+  html.pwa-standalone body[data-page="aprender"],
+  html.pwa-standalone body[data-page="consolidar"],
+  html.pwa-standalone body[data-page="amigos"],
+  html.pwa-standalone body[data-page="flashcards"],
+  html.pwa-standalone body[data-page="caderno-erros"],
+  html.pwa-standalone body[data-page="questoes-simulados"] {
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+  }
+
+  /* Amigos */
+  .pwa-standalone body[data-page="amigos"] .friends-ref-board,
+  html.pwa-standalone body[data-page="amigos"] .friends-ref-board {
+    grid-template-columns:1fr!important;
+    gap:8px!important;
+  }
+
+  .pwa-standalone body[data-page="amigos"] .friends-ref-board-main,
+  .pwa-standalone body[data-page="amigos"] .friends-ref-board-side,
+  html.pwa-standalone body[data-page="amigos"] .friends-ref-board-main,
+  html.pwa-standalone body[data-page="amigos"] .friends-ref-board-side {
+    width:100%!important;
+    min-width:0!important;
+  }
+
+  .pwa-standalone body[data-page="amigos"] .friends-ref-room-grid,
+  html.pwa-standalone body[data-page="amigos"] .friends-ref-room-grid {
+    grid-template-columns:1fr!important;
+  }
+
+  .pwa-standalone body[data-page="amigos"] .friends-ref-material-row,
+  html.pwa-standalone body[data-page="amigos"] .friends-ref-material-row {
+    grid-template-columns:32px minmax(0,1fr) 28px!important;
+  }
+
+  .pwa-standalone body[data-page="amigos"] .friends-ref-material-row time,
+  html.pwa-standalone body[data-page="amigos"] .friends-ref-material-row time {
+    display:none!important;
+  }
+
+  .pwa-standalone body[data-page="amigos"] .friends-ref-studyrats-actions,
+  html.pwa-standalone body[data-page="amigos"] .friends-ref-studyrats-actions {
+    flex-wrap:wrap!important;
+    width:100%!important;
+  }
+
+  .pwa-standalone body[data-page="amigos"] .studyrats-rat-picker-old,
+  html.pwa-standalone body[data-page="amigos"] .studyrats-rat-picker-old {
+    grid-template-columns:1fr!important;
+  }
+
+  /* Learning hubs */
+  .pwa-standalone body[data-page="aprender"] .learn-tools,
+  .pwa-standalone body[data-page="consolidar"] .learn-grid,
+  html.pwa-standalone body[data-page="aprender"] .learn-tools,
+  html.pwa-standalone body[data-page="consolidar"] .learn-grid {
+    grid-template-columns:1fr!important;
+    grid-template-rows:none!important;
+    height:auto!important;
+    min-height:0!important;
+  }
+
+  .pwa-standalone body[data-page="aprender"] .tool-card,
+  .pwa-standalone body[data-page="consolidar"] .learn-card,
+  html.pwa-standalone body[data-page="aprender"] .tool-card,
+  html.pwa-standalone body[data-page="consolidar"] .learn-card {
+    width:100%!important;
+    height:auto!important;
+    max-height:none!important;
+  }
+
+  /* generic responsive safety */
+  .pwa-standalone body :is(section,article,div,form),
+  html.pwa-standalone body :is(section,article,div,form) {
+    min-width:0;
+  }
+
+  .pwa-standalone body table,
+  html.pwa-standalone body table {
+    max-width:100%!important;
+  }
+}
