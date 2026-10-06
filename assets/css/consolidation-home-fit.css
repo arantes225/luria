@@ -137,3 +137,45 @@
   body[data-page="flashcards"] .flash-top-spotlight-timer{display:none!important;}
   body[data-page="flashcards"] .flash-home-decks-head h2{font-size:16px!important;font-weight:400!important;}
 }
+
+
+/* Flashcards v20261005-compact-8px
+   Revisões do dia e Métricas rápidas -8px; linha inferior sobe e todos os vãos ficam em 8px. */
+@media(min-width:981px){
+  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+    grid-template-rows:264px minmax(0,1fr)!important;
+    row-gap:8px!important;
+    column-gap:8px!important;
+    gap:8px!important;
+  }
+
+  body[data-page="flashcards"] #review-launcher{
+    height:264px!important;
+    min-height:264px!important;
+    max-height:264px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics,
+  body[data-page="flashcards"] .error-side-card.error-quick-metrics{
+    height:264px!important;
+    min-height:264px!important;
+    max-height:264px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-decks,
+  body[data-page="flashcards"] .flash-home-actions{
+    margin:0!important;
+    top:auto!important;
+    transform:none!important;
+    translate:none!important;
+    align-self:stretch!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-actions{
+    gap:8px!important;
+  }
+}
