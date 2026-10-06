@@ -26,12 +26,19 @@
     .book-hero .book-meta-row span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
     .book-badge{display:inline-block;margin-bottom:8px;color:var(--accent);font-size:9px;letter-spacing:.08em;text-transform:uppercase}.book-hero h1{margin:0;font-size:28px;line-height:1.08}.book-hero p{margin:8px 0 0;color:var(--muted);font-size:12px}.book-meta-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.book-meta-row span{padding:6px 8px;border-radius:8px;background:var(--surface-2);color:var(--muted);font-size:8.5px}
     .book-section h2,.mindmap-section h2{margin:0 0 12px;font-size:19px;font-weight:600}.book-section h3{margin:18px 0 8px;font-size:14px}.book-section p,.book-section li{font-size:12.4px;line-height:1.62}.book-section ul,.book-section ol{margin:8px 0 0;padding-left:20px}.book-section li+li{margin-top:5px}
-    .exam-list{margin:0!important}.book-callout{margin:14px 0;padding:15px 17px;border-radius:14px;background:color-mix(in srgb,var(--accent) 7%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));border-left:4px solid var(--accent)}.book-callout strong{color:var(--accent)}
-    .cat-tip{display:grid;grid-template-columns:54px minmax(0,1fr);gap:12px;align-items:center;margin:14px 0;padding:12px 15px;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
-    .cat-tip-icon{width:50px;height:50px;display:grid;place-items:center;overflow:hidden;border-radius:12px;background:color-mix(in srgb,var(--accent) 8%,var(--surface))}
-    .cat-tip-icon img{width:46px;height:46px;object-fit:contain;display:block}
-    .cat-tip-copy{min-width:0}.cat-tip-label{display:block;margin-bottom:3px;color:var(--accent);font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.cat-tip-text{margin:0!important;font-size:11.2px!important;line-height:1.45!important;color:var(--text)}
-    @media(max-width:620px){.cat-tip{grid-template-columns:46px minmax(0,1fr);padding:11px 12px}.cat-tip-icon{width:42px;height:42px}.cat-tip-icon img{width:39px;height:39px}}
+    .exam-list{margin:0!important}.book-callout{margin:18px 0;padding:19px 20px;border-radius:16px;background:color-mix(in srgb,var(--accent) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));font-size:13.6px;line-height:1.62;box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 7%,transparent)}
+    .book-callout:not(.book-alert){position:relative;min-height:108px;padding:20px 22px 20px 102px}
+    .book-callout:not(.book-alert)::before{content:"";position:absolute;left:22px;top:50%;transform:translateY(-50%);width:60px;height:60px;background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp");background-repeat:no-repeat;background-position:center;background-size:contain}
+    :root[data-theme="dark"] .book-callout:not(.book-alert)::before{background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp")}
+    .book-callout:not(.book-alert) strong{display:block;margin:0 0 8px;font-size:15.2px;line-height:1.15;color:var(--accent);font-weight:700}
+    .book-callout:not(.book-alert) p,.book-callout:not(.book-alert) li,.book-callout:not(.book-alert) span{font-size:13.8px!important;line-height:1.64!important}
+    .book-callout.book-alert{padding:16px 18px;font-size:12.8px;line-height:1.58;background:color-mix(in srgb,var(--danger) 8%,var(--surface));border-color:color-mix(in srgb,var(--danger) 26%,var(--border))}
+    .book-callout.book-alert strong{display:block;margin-bottom:6px;font-size:13.2px;color:var(--danger)}
+    .clinical-list{margin:8px 0 0!important;padding-left:20px!important}.clinical-list li{font-size:12.4px!important;line-height:1.55!important}.clinical-list li+li{margin-top:5px!important}
+    .drive-block{margin-top:13px;padding:15px 16px;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .drive-block h4{margin:0 0 8px;font-size:13px;font-weight:600;color:var(--text)}.drive-block ul{margin:0;padding-left:19px}.drive-block li{font-size:12.4px;line-height:1.55}
+    .highlight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.highlight-card{padding:12px 14px;border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 2.5%,var(--surface-2))}.highlight-card strong{display:block;font-size:13px;line-height:1.25;margin-bottom:6px}.highlight-card span{display:block;color:var(--muted);font-size:11.5px;line-height:1.58}
+    @media(max-width:620px){.book-callout:not(.book-alert){min-height:0;padding:18px 18px 18px 82px}.book-callout:not(.book-alert)::before{left:17px;width:48px;height:48px}.highlight-grid{grid-template-columns:1fr}}
     .book-alert{background:color-mix(in srgb,var(--danger) 7%,var(--surface));border-color:color-mix(in srgb,var(--danger) 25%,var(--border));border-left-color:var(--danger)}.book-alert strong{color:var(--danger)}
     .clinical-image{margin:15px 0;padding:12px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}.clinical-image img{display:block;width:min(100%,720px);height:auto;margin:0 auto;border-radius:10px}.clinical-image figcaption{margin:8px auto 0;max-width:720px;color:var(--muted);font-size:9px;line-height:1.45}
     .table-wrap{overflow:auto;margin:12px 0}.book-table{width:100%;border-collapse:collapse;font-size:10.5px}.book-table th,.book-table td{padding:9px 10px;border:1px solid var(--border);vertical-align:top}.book-table th{background:var(--surface-2);text-align:left}
@@ -81,7 +88,7 @@
 
         <section id="resumo" class="book-section">
           <h2>Em 30 segundos</h2>
-          <ul class="exam-list">
+          <ul class="clinical-list">
             <li><strong>SOMP/PMOS</strong> é a nomenclatura adotada em 2026 para a antiga SOP/PCOS; a mudança de nome não alterou os critérios clínicos da diretriz internacional de 2023.</li>
             <li>Em adultas, o diagnóstico exige <strong>2 de 3</strong>: hiperandrogenismo, disfunção ovulatória e PCOM por US ou AMH validado, sempre após excluir causas alternativas.</li>
             <li>Se há <strong>irregularidade menstrual + hiperandrogenismo</strong>, US e AMH não são necessários para fechar o diagnóstico.</li>
@@ -117,10 +124,7 @@
           <p>A resistência à insulina é frequente, mas não universal e não integra os critérios diagnósticos. A hiperinsulinemia compensatória potencializa a esteroidogênese nas células da teca, atua em sinergia com LH e reduz a síntese hepática de SHBG, elevando a fração livre de testosterona. Adiposidade visceral e inflamação de baixo grau podem amplificar esse circuito.</p>
           <h3>Eixo hipotálamo–hipófise–ovário</h3>
           <p>Alterações na pulsatilidade de GnRH favorecem secreção relativa de LH e produção ovariana de andrógenos. A relação LH/FSH pode estar elevada, porém <strong>não é critério diagnóstico</strong> e não deve ser usada para confirmar ou excluir SOMP.</p>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>LH/FSH alto não fecha diagnóstico.</strong> É um achado possível, mas não faz parte dos critérios.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>LH/FSH alto não fecha diagnóstico.</strong> É um achado possível, mas não faz parte dos critérios.</div>
           <h3>Disfunção folicular</h3>
           <p>O excesso androgênico e o ambiente metabólico alterado favorecem recrutamento folicular com falha de seleção de um folículo dominante. O resultado é oligo/anovulação e aumento do número de folículos antrais. O aspecto clássico periférico não é obrigatório e o termo “cistos” é impreciso: trata-se de folículos antrais.</p>
           <div class="path-flow" aria-label="Fluxograma fisiopatológico da SOMP">
@@ -155,24 +159,18 @@
             <div class="criteria-card"><span>2</span><strong>Disfunção ovulatória</strong><small>Oligo/anovulação persistente.</small></div>
             <div class="criteria-card"><span>3</span><strong>PCOM</strong><small>Ultrassonografia ou AMH validado em adultas.</small></div>
           </div>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>Irregularidade menstrual + hirsutismo</strong> em adulta, após excluir outras causas, dispensa US e AMH para fechar SOMP.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>Irregularidade menstrual + hirsutismo</strong> em adulta, após excluir outras causas, dispensa US e AMH para fechar SOMP.</div>
           <h3>Hiperandrogenismo bioquímico</h3>
           <p>Priorizar testosterona total e livre calculada/índice de andrógeno livre. Quando disponível, LC–MS/MS é o método preferível para testosterona total. Androstenediona e DHEA-S podem ser considerados quando testosterona não está elevada, reconhecendo menor especificidade.</p>
           <h3>Ultrassonografia e AMH</h3>
           <p>Com tecnologia ultrassonográfica adequada, o critério preferencial é <strong>FNPO ≥20 folículos em pelo menos um ovário</strong>. Quando a qualidade de imagem ou a tecnologia não permite contagem adequada do ovário inteiro, volume ovariano ≥10 mL ou FNPS ≥10 podem ser usados. O AMH em adultas pode substituir o ultrassom para definição de PCOM, mas não deve ser solicitado junto com US de rotina nem interpretado por um ponto de corte universal.</p>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>AMH e US não são exames para pedir juntos de rotina.</strong> Em adultas, um pode substituir o outro para PCOM.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>AMH e US não são exames para pedir juntos de rotina.</strong> Em adultas, um pode substituir o outro para PCOM.</div>
           <figure class="clinical-image">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Polycystic_ovary.jpg" alt="Ultrassonografia transvaginal de ovário com morfologia policística" loading="lazy">
             <figcaption><strong>Ultrassonografia transvaginal — morfologia ovariana policística.</strong> Imagem clínica real. Fonte: Wikimedia Commons, Schomynv, CC0 1.0. A distribuição periférica dos folículos pode ocorrer, mas não é requisito diagnóstico isolado.</figcaption>
           </figure>
           <h3>Adolescentes</h3>
-          <p>Exigem-se simultaneamente hiperandrogenismo e disfunção ovulatória persistente além do período esperado de imaturidade do eixo após a menarca. Ultrassonografia e AMH não são recomendados para diagnóstico nessa faixa etária.</p>
+          <div class="drive-block"><h4>Regra diagnóstica</h4><ul class="clinical-list"><li>Exigir hiperandrogenismo + disfunção ovulatória persistente.</li><li>Não usar ultrassonografia ou AMH como critério diagnóstico.</li><li>Considerar o tempo desde a menarca antes de classificar irregularidade menstrual como patológica.</li></ul></div>
           <h3>Avaliação laboratorial de exclusão</h3>
           <ul>
             <li>TSH e prolactina conforme contexto clínico.</li>
@@ -181,10 +179,7 @@
             <li>Investigação dirigida para Cushing ou tumor produtor de andrógeno se sinais clínicos sugerirem.</li>
           </ul>
           <p>Dosagem de insulina basal ou HOMA-IR <strong>não é recomendada rotineiramente</strong> para diagnosticar SOMP ou “documentar” resistência à insulina.</p>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>Não peça HOMA-IR para “confirmar” SOMP.</strong> Resistência à insulina é fisiopatológica, não critério diagnóstico.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>Não peça HOMA-IR para “confirmar” SOMP.</strong> Resistência à insulina é fisiopatológica, não critério diagnóstico.</div>
         </section>
 
         <section id="diferencial" class="book-section">
@@ -206,18 +201,12 @@
         <section id="metabolico" class="book-section">
           <h2>6. Risco metabólico e cardiovascular</h2>
           <p>A SOMP associa-se a maior frequência de disglicemia, DM2, dislipidemia, hipertensão, apneia obstrutiva do sono e doença hepática esteatótica associada à disfunção metabólica (MASLD; antiga NAFLD/DHGNA).</p>
-          <h3>Rastreamento</h3>
-          <ul>
+          <h3>Rastreamento</h3><div class="drive-block"><h4>O que avaliar na prática</h4><ul>
             <li><strong>Estado glicêmico ao diagnóstico:</strong> preferir TOTG 75 g. Glicemia de jejum e/ou HbA1c são alternativas quando o TOTG não é viável, com menor sensibilidade.</li>
             <li><strong>Perfil lipídico:</strong> avaliar ao diagnóstico; frequência posterior conforme risco e alterações encontradas.</li>
             <li><strong>Pressão arterial:</strong> pelo menos anualmente e nas consultas de rotina.</li>
-            <li><strong>Reavaliação glicêmica:</strong> em geral a cada 1–3 anos, individualizada pelo risco.</li>
-          </ul>
-          <p>Enzimas hepáticas e investigação de MASLD são orientadas por risco clínico e metabólico; não constituem monitorização obrigatória apenas por uso de metformina.</p>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>TOTG 75 g é o rastreio glicêmico preferido.</strong> Glicemia de jejum e HbA1c podem perder casos.</p></div>
-          </div>
+            <li><strong>Reavaliação glicêmica:</strong> em geral a cada 1–3 anos, individualizada pelo risco.</li></ul></div><p>Enzimas hepáticas e investigação de MASLD são orientadas por risco clínico e metabólico; não constituem monitorização obrigatória apenas por uso de metformina.</p>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>TOTG 75 g é o rastreio glicêmico preferido.</strong> Glicemia de jejum e HbA1c podem perder casos.</div>
         </section>
 
         <section id="tratamento" class="book-section">
@@ -228,16 +217,10 @@
           <p>São primeira linha farmacológica para irregularidade menstrual e/ou hirsutismo em quem não deseja gestação e não possui contraindicações. <strong>Não há progestagênio específico demonstrado como superior de forma geral.</strong> Preferir a menor dose estrogênica eficaz e individualizar conforme risco trombótico e cardiovascular. A combinação etinilestradiol 35 µg + acetato de ciproterona deve ser reservada a situações selecionadas, geralmente como segunda linha.</p>
           <h3>Proteção endometrial</h3>
           <p>Em amenorreia ou oligomenorreia importante sem uso de AHC, considerar progestagênio cíclico para evitar exposição endometrial prolongada a estrogênio não contraposto. Um esquema possível é medroxiprogesterona 10 mg/dia por 10–14 dias a cada 1–3 meses, individualizando contraindicações e contexto.</p>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>Amenorreia prolongada = pensar em endométrio.</strong> Se não usar AHC, garanta proteção progestagênica quando indicada.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>Amenorreia prolongada = pensar em endométrio.</strong> Se não usar AHC, garanta proteção progestagênica quando indicada.</div>
           <h3>Metformina</h3>
           <p>A indicação não depende de demonstrar “resistência à insulina” por insulinemia. Deve ser considerada principalmente em adultas com SOMP e IMC ≥25 kg/m² para desfechos metabólicos e antropométricos; em IMC <25 kg/m² também pode ser considerada, porém com evidência mais limitada.</p>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>Metformina não é “remédio para regular ciclo” por definição.</strong> Sua indicação principal é o perfil metabólico da paciente.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>Metformina não é “remédio para regular ciclo” por definição.</strong> Sua indicação principal é o perfil metabólico da paciente.</div>
           <ul>
             <li>Iniciar 500 mg/dia com refeição.</li>
             <li>Aumentar em incrementos de 500 mg a cada 1–2 semanas conforme tolerância.</li>
@@ -257,10 +240,7 @@
           <p>Antes da indução, investigar outros fatores relevantes de infertilidade, incluindo análise seminal do parceiro quando aplicável e avaliação de permeabilidade tubária conforme história e risco.</p>
           <h3>Letrozol: primeira linha</h3>
           <p>É o fármaco de primeira escolha para indução de ovulação em infertilidade anovulatória por SOMP na ausência de outros fatores significativos. Apresenta melhores taxas de ovulação, gravidez clínica e nascidos vivos que clomifeno, com menor risco de gestação múltipla.</p>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text"><strong>Letrozol é a primeira linha.</strong> Clomifeno deixou de ser a resposta automática para infertilidade anovulatória na SOMP.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong><strong>Letrozol é a primeira linha.</strong> Clomifeno deixou de ser a resposta automática para infertilidade anovulatória na SOMP.</div>
           <p>Um protocolo comum utiliza <strong>2,5–7,5 mg/dia por 5 dias no início da fase folicular</strong>. O esquema exato e a necessidade de monitorização ultrassonográfica devem seguir o protocolo do serviço e o perfil da paciente. Excluir gestação antes do uso.</p>
           <h3>Alternativas e escalonamento</h3>
           <ul>
@@ -269,21 +249,18 @@
             <li>FIV quando há outros fatores de infertilidade ou falha das estratégias anteriores.</li>
             <li>Drilling ovariano laparoscópico é opção restrita a casos selecionados.</li>
           </ul>
-          <div class="cat-tip">
-            <div class="cat-tip-icon"><img src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp" alt="" aria-hidden="true"></div>
-            <div class="cat-tip-copy"><span class="cat-tip-label">Pulo do Gato</span><p class="cat-tip-text">Desejo gestacional muda o eixo da conduta: <strong>não use AHC ou antiandrogênio</strong>; priorize otimização pré-concepcional e ovulação.</p></div>
-          </div>
+          <div class="book-callout"><strong>Pulo do Gato</strong>Desejo gestacional muda o eixo da conduta: <strong>não use AHC ou antiandrogênio</strong>; priorize otimização pré-concepcional e ovulação.</div>
         </section>
 
         <section id="seguimento" class="book-section">
           <h2>9. Complicações e seguimento</h2>
-          <ul>
-            <li>Infertilidade por anovulação.</li>
-            <li>Maior risco de hiperplasia e câncer endometrial em exposição prolongada a estrogênio não contraposto.</li>
-            <li>DM2 e outros desfechos cardiometabólicos.</li>
-            <li>MASLD e apneia obstrutiva do sono em grupos de risco.</li>
-            <li>Ansiedade, depressão, transtornos alimentares e impacto de imagem corporal.</li>
-          </ul>
+          <div class="highlight-grid">
+            <div class="highlight-card"><strong>Reprodutivo</strong><span>Infertilidade por anovulação e dificuldade para concepção.</span></div>
+            <div class="highlight-card"><strong>Endométrio</strong><span>Hiperplasia e maior risco de câncer endometrial com exposição prolongada a estrogênio não contraposto.</span></div>
+            <div class="highlight-card"><strong>Cardiometabólico</strong><span>DM2, dislipidemia, hipertensão e outros fatores de risco cardiometabólico.</span></div>
+            <div class="highlight-card"><strong>Metabólico sistêmico</strong><span>MASLD e apneia obstrutiva do sono em grupos de risco.</span></div>
+            <div class="highlight-card"><strong>Saúde mental</strong><span>Ansiedade, depressão, transtornos alimentares e impacto de imagem corporal.</span></div>
+          </div>
           <p>O seguimento é individualizado. Em fase de ajuste terapêutico, revisões em 3–6 meses são razoáveis; após estabilização, 6–12 meses conforme necessidades. Reavaliar padrão menstrual, hiperandrogenismo, peso/cintura quando apropriado, pressão arterial, risco glicêmico, lipídios, saúde mental e necessidade de proteção endometrial.</p>
         </section>
 
