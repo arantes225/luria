@@ -841,7 +841,12 @@
       { label:"Revisões teóricas", value:num(m.doneReviews.length), helper:`${m.scheduledReviews.length} agendadas`, progress:m.reviewRate }
     ]);
 
-    renderMetricStrip("general-habit-metrics", []);
+    renderMetricStrip("general-habit-metrics", [
+      { label:"Tempo estudado", value:hours(m.seconds), helper:compare(m.seconds,m.prevSeconds) },
+      { label:"Dias ativos", value:num(m.activeDays), helper:`${m.eligible} dias planejados` },
+      { label:"Consistência", value:percent(m.consistency), helper:"no período selecionado" },
+      { label:"Sessões", value:num(m.sessions.length), helper:"sessões registradas" }
+    ]);
     renderMetricStrip("general-progress-metrics", [
       { label:"Cronograma", value:percent(m.progress,1), helper:`${m.totalDone}/${m.totalTopics} aulas concluídas` },
       { label:"Flashcards", value:num(m.flashReviews.length), helper:`${percent(m.retention,1)} de retenção estimada` },
