@@ -28,10 +28,13 @@
     .luria-figure{margin:16px 0;padding:14px;border:1px solid var(--border);border-radius:16px;background:var(--surface-2)}.luria-figure img{width:100%;height:auto;display:block;border-radius:12px}.luria-figure figcaption{margin-top:8px;color:var(--muted);font-size:9px;line-height:1.45}
     .table-wrap{overflow:auto;margin:12px 0}.book-table{width:100%;border-collapse:collapse;font-size:10.5px}.book-table th,.book-table td{padding:9px 10px;border:1px solid var(--border);vertical-align:top}.book-table th{background:var(--surface-2);text-align:left}
     .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mini-card{padding:13px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}.mini-card strong{display:block;margin-bottom:5px;font-size:11.5px}.mini-card p{margin:0!important;font-size:10.7px!important}
+    .criteria-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0 14px}.criteria-card{padding:15px;border:1px solid color-mix(in srgb,var(--accent) 25%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 5%,var(--surface));min-height:110px}.criteria-card span{display:grid;place-items:center;width:27px;height:27px;margin-bottom:8px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;font-weight:700}.criteria-card strong{display:block;font-size:12px;color:var(--text)}.criteria-card small{display:block;margin-top:5px;color:var(--muted);font-size:9.5px;line-height:1.4}
+    .path-flow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;align-items:stretch;margin:16px 0}.path-step{position:relative;display:flex;align-items:center;justify-content:center;min-height:92px;padding:12px;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 5%,var(--surface));text-align:center}.path-step strong{font-size:10.8px;line-height:1.35}.path-step:not(:last-child)::after{content:"→";position:absolute;right:-16px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:20px;font-weight:700}.path-branch{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:8px 0 14px}.path-branch .mini-card{background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+
     .mindmap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.mind-center{grid-column:1/-1;padding:16px;border-radius:15px;background:var(--accent);color:white;text-align:center}.mind-branch{padding:13px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}.mind-branch h3{margin:0 0 6px;font-size:12px;color:var(--accent)}.mind-branch ul{margin:0;padding-left:18px}.mind-branch li{font-size:10px;line-height:1.4}
     .refs{padding-left:20px}.refs li{overflow-wrap:anywhere}.refs a{color:var(--accent)}
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:static;max-height:none}.book-outline-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media(max-width:620px){.book-hero,.book-section,.mindmap-section{padding:16px}.book-hero h1{font-size:23px}.grid-2,.mindmap{grid-template-columns:1fr}.book-outline-nav{grid-template-columns:1fr}}
+    @media(max-width:620px){.book-hero,.book-section,.mindmap-section{padding:16px}.book-hero h1{font-size:23px}.grid-2,.mindmap,.criteria-grid,.path-branch{grid-template-columns:1fr}.path-flow{grid-template-columns:1fr;gap:8px}.path-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-18px;transform:translateX(-50%)}.book-outline-nav{grid-template-columns:1fr}}
   </style>
 </head>
 <body data-page="aprender">
@@ -81,12 +84,23 @@
           </ul>
         </section>
 
+        <section id="mapa-mental" class="mindmap-section">
+          <h2>Mapa mental</h2>
+          <div class="mindmap">
+            <div class="mind-center"><strong>SOMP / PMOS</strong><div>hiperandrogenismo · disfunção ovulatória · PCOM</div></div>
+            <div class="mind-branch"><h3>Diagnóstico</h3><ul><li>2 de 3 em adultas</li><li>Excluir causas alternativas</li><li>Adolescente: HA + disfunção ovulatória</li><li>AMH ou US, não ambos de rotina</li></ul></div>
+            <div class="mind-branch"><h3>Metabólico</h3><ul><li>TOTG 75 g preferencial</li><li>Lipídios e PA</li><li>Não usar HOMA-IR rotineiramente</li><li>Risco de DM2 e MASLD</li></ul></div>
+            <div class="mind-branch"><h3>Sem desejo gestacional</h3><ul><li>Estilo de vida</li><li>AHC quando indicado</li><li>Proteção endometrial</li><li>Metformina por perfil metabólico</li></ul></div>
+            <div class="mind-branch"><h3>Com desejo gestacional</h3><ul><li>Avaliar outros fatores</li><li>Letrozol 1ª linha</li><li>Clomifeno / gonadotrofinas</li><li>FIV em casos selecionados</li></ul></div>
+          </div>
+        </section>
+
+
         <section id="conceito" class="book-section">
           <h2>1. Conceito e terminologia</h2>
           <p>A Síndrome Ovariana Metabólica Poliendócrina (SOMP), em inglês <em>Polyendocrine Metabolic Ovarian Syndrome</em> (PMOS), é um distúrbio endócrino-metabólico heterogêneo caracterizado pela combinação variável de hiperandrogenismo, disfunção ovulatória e morfologia ovariana policística. A nomenclatura substituiu PCOS/SOP em 2026 para reduzir o foco indevido no aspecto ultrassonográfico e refletir melhor a natureza hormonal e metabólica da síndrome.</p>
           <p><strong>Poliendócrina</strong> descreve a interação entre produção ovariana de andrógenos, eixo hipotálamo–hipófise–ovário, sinalização insulínica e, em algumas pacientes, contribuição adrenal. Tireoidopatias e hiperprolactinemia continuam sendo diagnósticos diferenciais, e não componentes obrigatórios da síndrome.</p>
           <p>A prevalência varia conforme o critério diagnóstico e a população estudada, em geral na faixa de aproximadamente 8–13% das mulheres em idade reprodutiva. A SOMP é uma das principais causas de infertilidade anovulatória.</p>
-          <figure class="luria-figure"><img src="/assets/img/apostilas/somp-triade-diagnostica.svg" alt="Tríade diagnóstica da SOMP"><figcaption>Figura 1. Critérios diagnósticos em adultas. O diagnóstico permanece de exclusão.</figcaption></figure>
         </section>
 
         <section id="fisiopatologia" class="book-section">
@@ -97,7 +111,17 @@
           <p>Alterações na pulsatilidade de GnRH favorecem secreção relativa de LH e produção ovariana de andrógenos. A relação LH/FSH pode estar elevada, porém <strong>não é critério diagnóstico</strong> e não deve ser usada para confirmar ou excluir SOMP.</p>
           <h3>Disfunção folicular</h3>
           <p>O excesso androgênico e o ambiente metabólico alterado favorecem recrutamento folicular com falha de seleção de um folículo dominante. O resultado é oligo/anovulação e aumento do número de folículos antrais. O aspecto clássico periférico não é obrigatório e o termo “cistos” é impreciso: trata-se de folículos antrais.</p>
-          <figure class="luria-figure"><img src="/assets/img/apostilas/somp-fisiopatologia.svg" alt="Fluxograma da fisiopatologia da SOMP"><figcaption>Figura 2. Integração entre resistência à insulina, hiperinsulinemia, hiperandrogenismo e disfunção ovulatória.</figcaption></figure>
+          <div class="path-flow" aria-label="Fluxograma fisiopatológico da SOMP">
+            <div class="path-step"><strong>Resistência à insulina</strong></div>
+            <div class="path-step"><strong>Hiperinsulinemia</strong></div>
+            <div class="path-step"><strong>↑ produção ovariana de andrógenos<br>+ ↓ SHBG</strong></div>
+            <div class="path-step"><strong>Hiperandrogenismo</strong></div>
+            <div class="path-step"><strong>Arresto folicular e oligo/anovulação</strong></div>
+          </div>
+          <div class="path-branch">
+            <div class="mini-card"><strong>Eixo ovariano</strong><p>A insulina atua em sinergia com LH nas células da teca e aumenta a esteroidogênese androgênica.</p></div>
+            <div class="mini-card"><strong>Eixo hepático</strong><p>A hiperinsulinemia reduz SHBG, aumentando a fração livre biologicamente ativa da testosterona.</p></div>
+          </div>
         </section>
 
         <section id="clinica" class="book-section">
@@ -114,17 +138,16 @@
         <section id="diagnostico" class="book-section">
           <h2>4. Diagnóstico</h2>
           <h3>Adultas: 2 de 3 critérios</h3>
-          <ol>
-            <li>Hiperandrogenismo clínico e/ou bioquímico.</li>
-            <li>Disfunção ovulatória.</li>
-            <li>Morfologia ovariana policística por ultrassonografia ou AMH com ponto de corte validado para o ensaio e a população.</li>
-          </ol>
+          <div class="criteria-grid" aria-label="Três critérios diagnósticos da SOMP">
+            <div class="criteria-card"><span>1</span><strong>Hiperandrogenismo</strong><small>Clínico e/ou bioquímico.</small></div>
+            <div class="criteria-card"><span>2</span><strong>Disfunção ovulatória</strong><small>Oligo/anovulação persistente.</small></div>
+            <div class="criteria-card"><span>3</span><strong>PCOM</strong><small>Ultrassonografia ou AMH validado em adultas.</small></div>
+          </div>
           <div class="book-callout"><strong>Pulo do Gato:</strong> irregularidade menstrual + hirsutismo em adulta, após exclusão de outras causas, já permite o diagnóstico. US e AMH não acrescentam necessidade diagnóstica nesse cenário.</div>
           <h3>Hiperandrogenismo bioquímico</h3>
           <p>Priorizar testosterona total e livre calculada/índice de andrógeno livre. Quando disponível, LC–MS/MS é o método preferível para testosterona total. Androstenediona e DHEA-S podem ser considerados quando testosterona não está elevada, reconhecendo menor especificidade.</p>
           <h3>Ultrassonografia e AMH</h3>
           <p>Com tecnologia ultrassonográfica adequada, o critério preferencial é <strong>FNPO ≥20 folículos em pelo menos um ovário</strong>. Quando a qualidade de imagem ou a tecnologia não permite contagem adequada do ovário inteiro, volume ovariano ≥10 mL ou FNPS ≥10 podem ser usados. O AMH em adultas pode substituir o ultrassom para definição de PCOM, mas não deve ser solicitado junto com US de rotina nem interpretado por um ponto de corte universal.</p>
-          <figure class="luria-figure"><img src="/assets/img/apostilas/somp-morfologia-ovariana.svg" alt="Esquema da morfologia ovariana policística e critérios atuais"><figcaption>Figura 3. Critérios de PCOM e limitações do uso de ultrassom em adolescentes.</figcaption></figure>
           <h3>Adolescentes</h3>
           <p>Exigem-se simultaneamente hiperandrogenismo e disfunção ovulatória persistente além do período esperado de imaturidade do eixo após a menarca. Ultrassonografia e AMH não são recomendados para diagnóstico nessa faixa etária.</p>
           <h3>Avaliação laboratorial de exclusão</h3>
@@ -216,17 +239,6 @@
             <li>Ansiedade, depressão, transtornos alimentares e impacto de imagem corporal.</li>
           </ul>
           <p>O seguimento é individualizado. Em fase de ajuste terapêutico, revisões em 3–6 meses são razoáveis; após estabilização, 6–12 meses conforme necessidades. Reavaliar padrão menstrual, hiperandrogenismo, peso/cintura quando apropriado, pressão arterial, risco glicêmico, lipídios, saúde mental e necessidade de proteção endometrial.</p>
-        </section>
-
-        <section id="mapa-mental" class="mindmap-section">
-          <h2>Mapa mental final</h2>
-          <div class="mindmap">
-            <div class="mind-center"><strong>SOMP / PMOS</strong><div>hiperandrogenismo · disfunção ovulatória · PCOM</div></div>
-            <div class="mind-branch"><h3>Diagnóstico</h3><ul><li>2 de 3 em adultas</li><li>Excluir causas alternativas</li><li>Adolescente: HA + disfunção ovulatória</li><li>AMH ou US, não ambos de rotina</li></ul></div>
-            <div class="mind-branch"><h3>Metabólico</h3><ul><li>TOTG 75 g preferencial</li><li>Lipídios e PA</li><li>Não usar HOMA-IR rotineiramente</li><li>Risco de DM2 e MASLD</li></ul></div>
-            <div class="mind-branch"><h3>Sem desejo gestacional</h3><ul><li>Estilo de vida</li><li>AHC quando indicado</li><li>Proteção endometrial</li><li>Metformina por perfil metabólico</li></ul></div>
-            <div class="mind-branch"><h3>Com desejo gestacional</h3><ul><li>Avaliar outros fatores</li><li>Letrozol 1ª linha</li><li>Clomifeno / gonadotrofinas</li><li>FIV em casos selecionados</li></ul></div>
-          </div>
         </section>
 
         <section id="questoes" class="book-section">
