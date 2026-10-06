@@ -184,16 +184,21 @@ function sharedStudyratsBindAccessoryDrag(){
 }
 
 function sharedStudyratsUpdateLargePreview(){
-  const host=document.getElementById('studyrats-preview-large-stage');
-  if(!host)return;
-  host.innerHTML=sharedStudyratComposite(
-    sharedStudyratsMyVariant,
-    sharedStudyratsMyAccessory,
-    'studyrats-rat-composite studyrats-preview-composite',
-    sharedStudyratsMyAccessoryX,
-    sharedStudyratsMyAccessoryY
-  );
-  sharedStudyratsBindImageFallbacks(host);
+  const hosts=[
+    document.getElementById('studyrats-preview-large-stage'),
+    document.getElementById('studyrats-home-preview-stage')
+  ].filter(Boolean);
+  if(!hosts.length)return;
+  hosts.forEach(function(host){
+    host.innerHTML=sharedStudyratComposite(
+      sharedStudyratsMyVariant,
+      sharedStudyratsMyAccessory,
+      'studyrats-rat-composite studyrats-preview-composite',
+      sharedStudyratsMyAccessoryX,
+      sharedStudyratsMyAccessoryY
+    );
+    sharedStudyratsBindImageFallbacks(host);
+  });
   const customizer=document.getElementById('studyrats-customizer');
   if(customizer&&!customizer.hidden&&!sharedStudyratsIsStandalone())sharedStudyratsBindAccessoryDrag();
 }
@@ -516,7 +521,7 @@ function sharedStudyratsRender(){
       const value=Number(p.value)||0;
       const performanceRatio=leaderValue>0?Math.max(0,Math.min(1,value/leaderValue)):0;
       const movementFactor=0.25+(0.75*performanceRatio);
-      const pct=Math.max(4,Math.min(93,4+(89*timeFraction*movementFactor)));
+      const pct=Math.max(6,Math.min(88,6+(82*timeFraction*movementFactor)));
       const score=Number.isInteger(value)?value:value.toFixed(1);
       const laneColor=sharedStudyratLaneColors[index%sharedStudyratLaneColors.length];
 
