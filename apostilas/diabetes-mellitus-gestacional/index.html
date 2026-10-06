@@ -106,6 +106,14 @@
     :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
       border-color:rgba(255,255,255,.22)!important;
     }
+  
+    .fixation-list{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+    .fixation-item{padding:14px 15px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}
+    .fixation-question{font-size:12.6px;line-height:1.58;color:var(--text)}
+    .fixation-actions{margin-top:10px}
+    .fixation-toggle{min-height:32px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:10px;cursor:pointer}
+    .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
+    .fixation-answer[hidden]{display:none}
   </style>
 </head>
 <body data-page="aprender">
@@ -832,5 +840,22 @@
     })();
   </script>
 <script defer src="/assets/js/apostila-tools.js?v=2"></script>
+<script>
+(function(){
+  if(document.documentElement.dataset.fixationToggleBound)return;
+  document.documentElement.dataset.fixationToggleBound="1";
+  document.addEventListener("click",event=>{
+    const button=event.target.closest(".fixation-toggle");
+    if(!button)return;
+    const item=button.closest(".fixation-item");
+    const answer=item?.querySelector(".fixation-answer");
+    if(!answer)return;
+    const willShow=answer.hidden;
+    answer.hidden=!willShow;
+    button.textContent=willShow?"Ocultar resposta":"Mostrar resposta";
+    button.setAttribute("aria-expanded",String(willShow));
+  });
+})();
+</script>
 </body>
 </html>
