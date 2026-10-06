@@ -60,6 +60,59 @@ body[data-page="consolidar"] .luria-page-spotlight-copy strong{color:#fff!import
 body[data-page="consolidar"] .luria-page-spotlight-copy small{display:block!important;margin:0!important;color:rgba(255,255,255,.82)!important;font-size:13px!important;line-height:1.35!important;font-weight:400!important}
 @media(max-width:700px){body[data-page="consolidar"] .luria-page-spotlight-copy{gap:5px!important}body[data-page="consolidar"] .luria-page-spotlight-copy small{font-size:11px!important}}
 </style>
+
+<style id="consolidar-layout-v2">
+body[data-page="consolidar"] .learn-grid{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  grid-template-rows:auto auto!important;
+  gap:14px!important;
+}
+body[data-page="consolidar"] .learn-card--questions{
+  grid-column:1 / -1!important;
+  min-height:250px!important;
+  padding:26px 28px!important;
+  border-radius:24px!important;
+  background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 14%,var(--surface)),var(--surface))!important;
+}
+body[data-page="consolidar"] .learn-card--questions .learn-icon{
+  width:58px!important;
+  height:58px!important;
+  border-radius:17px!important;
+}
+body[data-page="consolidar"] .learn-card--questions .learn-icon svg{
+  width:29px!important;
+  height:29px!important;
+}
+body[data-page="consolidar"] .learn-card--questions h2{
+  margin-top:22px!important;
+  font-size:24px!important;
+}
+body[data-page="consolidar"] .learn-card--questions p{
+  max-width:620px!important;
+  font-size:12px!important;
+}
+body[data-page="consolidar"] .learn-card--secondary{
+  min-height:185px!important;
+  padding:20px 22px!important;
+}
+body[data-page="consolidar"] .learn-bottom{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+}
+@media(max-width:760px){
+  body[data-page="consolidar"] .learn-grid{
+    grid-template-columns:1fr!important;
+  }
+  body[data-page="consolidar"] .learn-card--questions{
+    grid-column:auto!important;
+    min-height:210px!important;
+  }
+  body[data-page="consolidar"] .learn-bottom{
+    grid-template-columns:1fr!important;
+  }
+}
+</style>
+
 </head>
 <body data-page="consolidar">
   <div class="app-shell">
@@ -81,45 +134,30 @@ body[data-page="consolidar"] .luria-page-spotlight-copy small{display:block!impo
       </section>
 
           <div class="learn-grid">
-            <a class="learn-card learn-card--hero" href="/flashcards/">
+            <a class="learn-card learn-card--hero learn-card--questions" href="/questoes-simulados/">
+              <span class="learn-icon"><svg viewBox="0 0 24 24"><path d="M6 2h8l5 5v14H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg></span>
+              <h2>Questões e Simulados</h2>
+              <p>Teste o que aprendeu, treine prova e transforme conteúdo em decisão.</p>
+              <span class="learn-cta">Praticar →</span>
+              <span class="learn-card-deco" aria-hidden="true"></span>
+            </a>
+
+            <a class="learn-card learn-card--secondary" href="/flashcards/">
               <span class="learn-icon"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="14" height="15" rx="2"/><path d="M17 18v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2m3 2h8m-8 4h6"/></svg></span>
               <h2>Flashcards</h2>
               <p>Revise no momento certo, fortaleça a memória e acompanhe sua retenção.</p>
               <span class="learn-cta">Revisar →</span>
-              <span class="learn-card-deco" aria-hidden="true"></span>
             </a>
 
-            <a class="learn-card" href="/caderno-erros/">
+            <a class="learn-card learn-card--secondary" href="/caderno-erros/">
               <span class="learn-icon"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><rect x="9" y="2" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg></span>
               <h2>Caderno de erros</h2>
               <p>Volte aos pontos que mais derrubam seu desempenho e corrija padrões.</p>
               <span class="learn-cta">Revisar erros →</span>
             </a>
-
-            <a class="learn-card" href="/questoes-simulados/">
-              <span class="learn-icon"><svg viewBox="0 0 24 24"><path d="M6 2h8l5 5v14H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg></span>
-              <h2>Questões e Simulados</h2>
-              <p>Teste o que aprendeu, treine prova e transforme conteúdo em decisão.</p>
-              <span class="learn-cta">Praticar →</span>
-            </a>
           </div>
 
-          <div class="learn-bottom">
-            <section class="learn-panel">
-              <h3>Continuar de onde parou</h3>
-              <small>Retome sua última atividade de consolidação.</small>
-              <div class="continue-item">
-                <div class="continue-thumb">FC</div>
-                <div class="continue-copy">
-                  <strong>Cardiologia · Revisão do dia</strong>
-                  <span>Flashcards · 64% concluído</span>
-                  <div class="progress-track"><span></span></div>
-                </div>
-                <a href="/flashcards/">Continuar →</a>
-              </div>
-            </section>
-
-            <section class="learn-panel">
+          <div class="learn-bottom"><section class="learn-panel">
               <h3>Seu progresso</h3>
               <small>Visão rápida da consolidação.</small>
               <div class="progress-wrap">
