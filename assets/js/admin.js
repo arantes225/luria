@@ -5728,11 +5728,9 @@
   async function loadApostilaImageReviewQueue() {
     const status = $("admin-apostila-images-status");
     if (status) status.textContent = "Carregando imagens de apostilas...";
-    const { data, error } = await sb
-      .from("apostila_image_review_queue")
-      .select("id,apostila_path,apostila_title,candidate_key,target_section,target_selector,placement,proposed_asset,source_url,source_name,source_license,source_trust,review_status,created_at")
-      .eq("review_status", "pending")
-      .order("created_at", { ascending: true });
+    const { data, error } = await sb.rpc("admin_list_apostila_images", {
+      p_apostila_path: null
+    });
     if (error) {
       console.error("Fila de imagens de apostilas:", error);
       if (status) status.textContent = "Não foi possível carregar as imagens das apostilas: " + (error.message || "erro de leitura");
