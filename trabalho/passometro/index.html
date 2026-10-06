@@ -1341,7 +1341,8 @@
   (() => {
     const STORAGE_KEY = "luria:passometro:v1";
     const RETENTION_MS = 30 * 24 * 60 * 60 * 1000;
-    const state = { decks: [], activeDeckId: null, editingDeckId: null, editingPatientId: null, switches: {}, priority: "none" };
+    const SYNC_TABLE = "passometro_decks";
+    const state = { decks: [], activeDeckId: null, editingDeckId: null, editingPatientId: null, switches: {}, priority: "none", userId: null, syncTimer: null };
     const $ = (s, r=document) => r.querySelector(s);
     const $$ = (s, r=document) => [...r.querySelectorAll(s)];
     const esc = (v="") => String(v).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
@@ -1417,19 +1418,99 @@
     }
 
 
-    function load(){
-      try{ state.decks = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"); }catch{ state.decks=[]; }
-      const now = Date.now();
-      const before = state.decks.length;
-      state.decks = state.decks.filter(d => {
-        const createdAt = Number(d.createdAt || 0);
-        if (!createdAt) return true;
-        return (now - createdAt) < RETENTION_MS;
-      });
-      if (state.decks.length !== before) save();
-      renderDecks();
+    function localDecks(){
+      try{
+        const parsed=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");
+        return Array.isArray(parsed)?parsed:[];
+      }catch{return [];}
     }
-    function save(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(state.decks)); }
+    function persistLocal(){ localStorage.setItem(STORAGE_KEY,JSON.stringify(state.decks)); }
+    function pruneExpired(decks){
+      const now=Date.now();
+      return (decks||[]).filter(d=>{
+        const createdAt=Number(d.createdAt||0);
+        if(!createdAt) return true;
+        return (now-createdAt)<RETENTION_MS;
+      });
+    }
+    function deckStamp(deck){
+      return Number(deck?.updatedAt||deck?.createdAt||0);
+    }
+    async function currentUserId(){
+      if(state.userId) return state.userId;
+      try{
+        const {data}=await window.supabaseClient.auth.getSession();
+        state.userId=data?.session?.user?.id||null;
+      }catch(err){ console.warn("Passômetro: sessão indisponível para sincronização.",err); }
+      return state.userId;
+    }
+    async function upsertDeck(deck){
+      const userId=await currentUserId();
+      if(!userId||!deck?.id) return;
+      const payload={...deck,updatedAt:Number(deck.updatedAt||Date.now())};
+      const {error}=await window.supabaseClient
+        .from(SYNC_TABLE)
+        .upsert({user_id:userId,deck_id:String(deck.id),payload,updated_at:new Date(payload.updatedAt).toISOString()},{onConflict:"user_id,deck_id"});
+      if(error) throw error;
+    }
+    function queueDeckSync(deck){
+      if(!deck?.id) return;
+      clearTimeout(state.syncTimer);
+      const snapshot=JSON.parse(JSON.stringify(deck));
+      state.syncTimer=setTimeout(()=>upsertDeck(snapshot).catch(err=>console.warn("Passômetro: falha ao sincronizar.",err)),180);
+    }
+    async function deleteRemoteDeck(deckId){
+      const userId=await currentUserId();
+      if(!userId||!deckId) return;
+      const {error}=await window.supabaseClient.from(SYNC_TABLE).delete().eq("user_id",userId).eq("deck_id",String(deckId));
+      if(error) throw error;
+    }
+    async function refreshFromCloud({migrateLocal=false}={}){
+      const userId=await currentUserId();
+      if(!userId) return;
+      const {data,error}=await window.supabaseClient
+        .from(SYNC_TABLE)
+        .select("deck_id,payload,updated_at")
+        .eq("user_id",userId);
+      if(error) throw error;
+      const remote=(data||[]).map(row=>{
+        const d=(row.payload&&typeof row.payload==="object")?row.payload:{};
+        const serverStamp=Date.parse(row.updated_at||"")||0;
+        return {...d,id:d.id||row.deck_id,updatedAt:Math.max(Number(d.updatedAt||0),serverStamp)};
+      });
+      const merged=new Map();
+      for(const d of [...remote,...state.decks]){
+        if(!d?.id) continue;
+        const prev=merged.get(String(d.id));
+        if(!prev||deckStamp(d)>=deckStamp(prev)) merged.set(String(d.id),d);
+      }
+      state.decks=pruneExpired([...merged.values()]);
+      persistLocal();
+      renderDecks();
+      if(migrateLocal){
+        const remoteIds=new Set(remote.map(d=>String(d.id)));
+        const toUpload=state.decks.filter(d=>!remoteIds.has(String(d.id)));
+        for(const d of toUpload){
+          if(!d.updatedAt) d.updatedAt=Number(d.createdAt||Date.now());
+          try{ await upsertDeck(d); }catch(err){ console.warn("Passômetro: migração local pendente.",err); }
+        }
+      }
+    }
+    async function load(){
+      state.decks=pruneExpired(localDecks());
+      persistLocal();
+      renderDecks();
+      try{ await refreshFromCloud({migrateLocal:true}); }
+      catch(err){ console.warn("Passômetro: usando cache local; sincronização será retomada quando houver conexão.",err); }
+    }
+    function save(deckId){
+      const d=deckId?state.decks.find(x=>String(x.id)===String(deckId)):null;
+      if(d){
+        d.updatedAt=Date.now();
+        queueDeckSync(d);
+      }
+      persistLocal();
+    }
     function activeDeck(){ return state.decks.find(d=>d.id===state.activeDeckId); }
 
     function hospitalInitials(name){
@@ -1641,7 +1722,7 @@
       const d=activeDeck(); const p=(d?.patients||[]).find(x=>x.id===id);
       if(!p) return;
       p.viewObservation=String(target.value||"");
-      save();
+      save(d.id);
     }
     function printViewMode(){
       const d=activeDeck(); if(!d) return;
@@ -1693,7 +1774,7 @@
         state.decks.push(d);
       }
       state.editingDeckId=null;
-      save(); closeDialog("pm-deck-dialog"); renderDecks(); openDeck(d.id);
+      save(d.id); closeDialog("pm-deck-dialog"); renderDecks(); openDeck(d.id);
     });
     $("#pm-decks").addEventListener("click",e=>{
       const toggle=e.target.closest("[data-deck-menu-toggle]");
@@ -1728,7 +1809,8 @@
         const d=state.decks.find(x=>x.id===del.dataset.deckDelete); if(!d) return;
         if(!confirm('Excluir o passômetro de "'+d.hospital+'" e todos os pacientes nele?')) return;
         state.decks=state.decks.filter(x=>x.id!==d.id);
-        save(); renderDecks();
+        persistLocal(); renderDecks();
+        deleteRemoteDeck(d.id).catch(err=>console.warn("Passômetro: falha ao excluir na nuvem.",err));
         return;
       }
       if(e.target.closest(".pm-deck-actions")) return;
@@ -1904,11 +1986,15 @@
       if(isGoDeck(d) && !p.estimatedDischarge) p.estimatedDischarge=calculateEstimatedDischarge(form);
       const idx=(d.patients||[]).findIndex(x=>x.id===p.id);
       if(idx>=0) d.patients[idx]=p; else d.patients.push(p);
-      save(); closeDialog("pm-patient-dialog"); renderPatients();
+      save(d.id); closeDialog("pm-patient-dialog"); renderPatients();
     });
 
     loadDrugCatalog();
     load();
+    window.addEventListener("focus",()=>refreshFromCloud().catch(()=>{}));
+    document.addEventListener("visibilitychange",()=>{
+      if(document.visibilityState==="visible") refreshFromCloud().catch(()=>{});
+    });
   })();
   </script>
 </body>
