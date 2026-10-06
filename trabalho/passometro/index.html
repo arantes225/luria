@@ -3,7 +3,7 @@
 <head>
   <base href="/">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Passômetro · LURIA</title>
@@ -969,6 +969,22 @@
       font-weight:800!important;
     }
 
+
+    @media(max-width:760px){
+      html,body{width:100%;max-width:100%;overflow-x:hidden!important;overscroll-behavior-x:none;touch-action:pan-y}
+      body.pm-dialog-open{overflow:hidden!important;position:fixed!important;inset:0!important;width:100%!important}
+      .pm-page,.main,.page{min-width:0!important;max-width:100%!important;overflow-x:hidden!important}
+      .pm-dialog{width:calc(100vw - 12px)!important;max-width:calc(100vw - 12px)!important;max-height:calc(100dvh - 12px)!important;margin:auto!important;border-radius:14px!important}
+      .pm-dialog>form{max-height:calc(100dvh - 12px)!important}
+      .pm-form{overflow-y:auto!important;overflow-x:hidden!important;-webkit-overflow-scrolling:touch!important;overscroll-behavior-y:contain!important;scroll-behavior:auto!important;padding-bottom:calc(20px + env(safe-area-inset-bottom))!important}
+      .pm-field input,.pm-field select,.pm-field textarea,.pm-subfield input,.pm-subfield select,.pm-search input{font-size:16px!important;line-height:1.25!important}
+      .pm-field textarea{resize:none!important}
+      .pm-grid-2,.pm-grid-3{grid-template-columns:1fr!important}
+      .pm-med-row,.pm-antibiotic-row{grid-template-columns:1fr!important}
+      .pm-dialog-head,.pm-dialog-actions{flex:0 0 auto}
+      .pm-dialog-head{padding-top:max(12px,env(safe-area-inset-top))!important}
+      button,input,select,textarea{touch-action:manipulation}
+    }
   </style>
 <style id="luria-page-font-lock-v57">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}</style><link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/work-layout.css?v=20260930">
@@ -1488,22 +1504,27 @@
     function deckStamp(deck){
       return Number(deck?.updatedAt||deck?.createdAt||0);
     }
-    async function currentUserId(){
-      if(state.userId) return state.userId;
+    async function currentUserId({refresh=false}={}){
+      if(state.userId&&!refresh) return state.userId;
       try{
-        const {data}=await window.supabaseClient.auth.getSession();
+        const {data,error}=await window.supabaseClient.auth.getSession();
+        if(error) throw error;
         state.userId=data?.session?.user?.id||null;
-      }catch(err){ console.warn("Passômetro: sessão indisponível para sincronização.",err); }
+      }catch(err){
+        state.userId=null;
+        console.warn("Passômetro: sessão indisponível para sincronização.",err);
+      }
       return state.userId;
     }
     async function upsertDeck(deck){
       const userId=await currentUserId();
-      if(!userId||!deck?.id) return;
-      const payload={...deck,updatedAt:Number(deck.updatedAt||Date.now())};
+      if(!userId||!deck?.id) return false;
+      const payload={...deck,updatedAt:Number(deck.updatedAt||deck.createdAt||Date.now())};
       const {error}=await window.supabaseClient
         .from(SYNC_TABLE)
         .upsert({user_id:userId,deck_id:String(deck.id),payload,updated_at:new Date(payload.updatedAt).toISOString()},{onConflict:"user_id,deck_id"});
       if(error) throw error;
+      return true;
     }
     function queueDeckSync(deck){
       if(!deck?.id) return;
@@ -1518,42 +1539,59 @@
       if(error) throw error;
     }
     async function refreshFromCloud({migrateLocal=false}={}){
-      const userId=await currentUserId();
-      if(!userId) return;
+      const userId=await currentUserId({refresh:true});
+      if(!userId) return false;
       const {data,error}=await window.supabaseClient
         .from(SYNC_TABLE)
         .select("deck_id,payload,updated_at")
         .eq("user_id",userId);
       if(error) throw error;
+
       const remote=(data||[]).map(row=>{
         const d=(row.payload&&typeof row.payload==="object")?row.payload:{};
         const serverStamp=Date.parse(row.updated_at||"")||0;
         return {...d,id:d.id||row.deck_id,updatedAt:Math.max(Number(d.updatedAt||0),serverStamp)};
       });
+      const remoteById=new Map(remote.map(d=>[String(d.id),d]));
+      const localBefore=pruneExpired(localDecks());
+      const localById=new Map(localBefore.filter(d=>d?.id).map(d=>[String(d.id),d]));
+
       const merged=new Map();
-      for(const d of [...remote,...state.decks]){
+      for(const d of [...remote,...localBefore]){
         if(!d?.id) continue;
-        const prev=merged.get(String(d.id));
-        if(!prev||deckStamp(d)>=deckStamp(prev)) merged.set(String(d.id),d);
+        const key=String(d.id),prev=merged.get(key);
+        if(!prev||deckStamp(d)>=deckStamp(prev)) merged.set(key,d);
       }
       state.decks=pruneExpired([...merged.values()]);
       persistLocal();
       renderDecks();
+
       if(migrateLocal){
-        const remoteIds=new Set(remote.map(d=>String(d.id)));
-        const toUpload=state.decks.filter(d=>!remoteIds.has(String(d.id)));
-        for(const d of toUpload){
-          if(!d.updatedAt) d.updatedAt=Number(d.createdAt||Date.now());
-          try{ await upsertDeck(d); }catch(err){ console.warn("Passômetro: migração local pendente.",err); }
+        for(const [id,localDeck] of localById){
+          const remoteDeck=remoteById.get(id);
+          if(!remoteDeck||deckStamp(localDeck)>deckStamp(remoteDeck)){
+            if(!localDeck.updatedAt) localDeck.updatedAt=Number(localDeck.createdAt||Date.now());
+            try{ await upsertDeck(localDeck); }
+            catch(err){ console.warn("Passômetro: migração local pendente.",err); }
+          }
         }
+      }
+      return true;
+    }
+    async function syncWhenReady(){
+      try{
+        const ok=await refreshFromCloud({migrateLocal:true});
+        return !!ok;
+      }catch(err){
+        console.warn("Passômetro: sincronização será retomada automaticamente.",err);
+        return false;
       }
     }
     async function load(){
       state.decks=pruneExpired(localDecks());
       persistLocal();
       renderDecks();
-      try{ await refreshFromCloud({migrateLocal:true}); }
-      catch(err){ console.warn("Passômetro: usando cache local; sincronização será retomada quando houver conexão.",err); }
+      await syncWhenReady();
     }
     function save(deckId){
       const d=deckId?state.decks.find(x=>String(x.id)===String(deckId)):null;
@@ -2086,9 +2124,15 @@
 
     loadDrugCatalog();
     load();
-    window.addEventListener("focus",()=>refreshFromCloud().catch(()=>{}));
+    window.supabaseClient.auth.onAuthStateChange((event,session)=>{
+      state.userId=session?.user?.id||null;
+      if(session?.user) setTimeout(()=>syncWhenReady(),0);
+    });
+    window.addEventListener("focus",()=>syncWhenReady());
+    window.addEventListener("online",()=>syncWhenReady());
+    window.addEventListener("pageshow",()=>syncWhenReady());
     document.addEventListener("visibilitychange",()=>{
-      if(document.visibilityState==="visible") refreshFromCloud().catch(()=>{});
+      if(document.visibilityState==="visible") syncWhenReady();
     });
   })();
   </script>
