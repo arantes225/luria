@@ -37,20 +37,20 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
 </head>
 <body data-page="dashboard">
   <div class="app-shell">
-    <aside id="sidebar" class="sidebar dashboard-shell-sidebar"></aside>
+    <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
-
-    <header class="topbar dashboard-shell-topbar">
-      <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-
-      <div class="page-heading">
-        <span class="eyebrow" data-page-eyebrow></span>
-        <h1 data-page-title></h1>
-      </div>
-    </header>
 
     <main class="main">
       <div class="page">
+        <header class="topbar">
+          <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
+
+          <div class="page-heading">
+            <span class="eyebrow" data-page-eyebrow></span>
+            <h1 data-page-title></h1>
+          </div>
+        </header>
+
         <div id="dashboard-fallback-shell" hidden>
           <section class="luria-dashboard-spotlight">
             <div class="luria-page-spotlight-copy">
@@ -70,7 +70,7 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
   <script src="/assets/js/app.js?v=20261005-dashboard-shell-isolated-v97"></script>
   <script src="/assets/js/study-mode.js?v=12.1"></script>
   <script src="/assets/js/dashboard.js?v=31-today-sync"></script>
-  <script src="/assets/js/dashboard-layouts.js?v=20261005-static-shell-v99"></script>
+  <script src="/assets/js/dashboard-layouts.js?v=20261005-dashboard-stable-v95"></script>
   <script>
   (function(){
     var fallback=document.getElementById("dashboard-fallback-shell");
