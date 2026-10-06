@@ -52,6 +52,14 @@
     .refs{padding-left:20px}.refs li{overflow-wrap:anywhere}.refs a{color:var(--accent)}
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:static;max-height:none}.book-outline-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:620px){.book-hero,.book-section,.mindmap-section{padding:16px}.book-hero h1{font-size:23px}.grid-2,.mindmap,.criteria-grid,.path-branch{grid-template-columns:1fr}.path-flow{grid-template-columns:1fr;gap:8px}.path-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-18px;transform:translateX(-50%)}.book-outline-nav{grid-template-columns:1fr}}
+  
+    .fixation-list{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+    .fixation-item{padding:14px 15px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}
+    .fixation-question{font-size:12.6px;line-height:1.58;color:var(--text)}
+    .fixation-actions{margin-top:10px}
+    .fixation-toggle{min-height:32px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:10px;cursor:pointer}
+    .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
+    .fixation-answer[hidden]{display:none}
   </style>
 </head>
 <body data-page="aprender">
@@ -268,12 +276,12 @@
 
         <section id="questoes" class="book-section">
           <h2>Questões de fixação</h2>
-          <ol>
-            <li>Adulta com ciclos de 45–60 dias e hirsutismo, após exclusão de causas alternativas: é necessário US para confirmar? <strong>Não.</strong></li>
-            <li>Melhor teste para rastreio de disglicemia na SOMP? <strong>TOTG 75 g.</strong></li>
-            <li>Primeira linha farmacológica para infertilidade anovulatória? <strong>Letrozol.</strong></li>
-            <li>Insulinemia basal/HOMA-IR devem ser usados para “documentar” resistência à insulina antes de metformina? <strong>Não.</strong></li>
-            <li>Em adolescentes, PCOM ao US ou AMH deve ser usado para diagnóstico? <strong>Não.</strong></li>
+          <ol class="fixation-list">
+            <li class="fixation-item"><div class="fixation-question">Adulta com ciclos de 45–60 dias e hirsutismo, após exclusão de causas alternativas: é necessário US para confirmar?</div><div class="fixation-actions"><button type="button" class="fixation-toggle">Mostrar resposta</button></div><div class="fixation-answer" hidden><strong>Não.</strong> Em adulta com irregularidade menstrual e hiperandrogenismo, após exclusão das causas alternativas, ultrassonografia ou AMH não são necessários para fechar o diagnóstico.</div></li>
+            <li class="fixation-item"><div class="fixation-question">Melhor teste para rastreio de disglicemia na SOMP?</div><div class="fixation-actions"><button type="button" class="fixation-toggle">Mostrar resposta</button></div><div class="fixation-answer" hidden><strong>TOTG 75 g.</strong> É o teste preferido para avaliação glicêmica, quando disponível e apropriado.</div></li>
+            <li class="fixation-item"><div class="fixation-question">Primeira linha farmacológica para infertilidade anovulatória?</div><div class="fixation-actions"><button type="button" class="fixation-toggle">Mostrar resposta</button></div><div class="fixation-answer" hidden><strong>Letrozol.</strong> É a primeira linha para indução de ovulação na infertilidade anovulatória por SOMP, na ausência de outros fatores relevantes.</div></li>
+            <li class="fixation-item"><div class="fixation-question">Insulinemia basal/HOMA-IR devem ser usados para “documentar” resistência à insulina antes de metformina?</div><div class="fixation-actions"><button type="button" class="fixation-toggle">Mostrar resposta</button></div><div class="fixation-answer" hidden><strong>Não.</strong> Resistência à insulina faz parte da fisiopatologia, mas HOMA-IR não é critério diagnóstico nem pré-requisito para indicar metformina.</div></li>
+            <li class="fixation-item"><div class="fixation-question">Em adolescentes, PCOM ao US ou AMH deve ser usado para diagnóstico?</div><div class="fixation-actions"><button type="button" class="fixation-toggle">Mostrar resposta</button></div><div class="fixation-answer" hidden><strong>Não.</strong> Em adolescentes, o diagnóstico exige hiperandrogenismo e disfunção ovulatória persistente; ultrassonografia e AMH não devem ser usados como critérios diagnósticos.</div></li>
           </ol>
         </section>
 
@@ -297,5 +305,22 @@
 <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
 <script defer src="/assets/js/pwa.js?v=6-apostilas-library-fix"></script>
 <script defer src="/assets/js/apostila-tools.js?v=2"></script>
+<script>
+(function(){
+  if(document.documentElement.dataset.fixationToggleBound)return;
+  document.documentElement.dataset.fixationToggleBound="1";
+  document.addEventListener("click",event=>{
+    const button=event.target.closest(".fixation-toggle");
+    if(!button)return;
+    const item=button.closest(".fixation-item");
+    const answer=item?.querySelector(".fixation-answer");
+    if(!answer)return;
+    const willShow=answer.hidden;
+    answer.hidden=!willShow;
+    button.textContent=willShow?"Ocultar resposta":"Mostrar resposta";
+    button.setAttribute("aria-expanded",String(willShow));
+  });
+})();
+</script>
 </body>
 </html>
