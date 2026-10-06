@@ -3478,3 +3478,153 @@ body *::-webkit-scrollbar-button:end{
     background:transparent!important;
   }
 }
+
+
+/* =========================================================
+   LURIA v90 — TÍTULOS GLOBAIS IDÊNTICOS AO ESTATÍSTICAS
+   Estatísticas é a única régua visual dos cabeçalhos de página.
+   ========================================================= */
+:root{
+  --luria-title-card-h:138px;
+  --luria-title-card-py:24px;
+  --luria-title-card-px:28px;
+  --luria-title-card-radius:15px;
+  --luria-title-card-bottom:14px;
+  --luria-title-size:32px;
+  --luria-title-line:1.08;
+  --luria-title-weight:900;
+  --luria-title-tracking:-.8px;
+  --luria-title-kicker-size:9px;
+  --luria-title-sub-size:11px;
+  --luria-title-copy-gap:7px;
+}
+
+/* Todos os cards de título conhecidos usam exatamente a mesma caixa. */
+html body:not(.schedule-settings-embed) :is(
+  .luria-page-spotlight,
+  .schedule-top-spotlight,
+  .error-cat-spotlight,
+  .flash-top-spotlight,
+  .daily-hero,
+  .stats-hero
+){
+  position:relative!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  height:var(--luria-title-card-h)!important;
+  min-height:var(--luria-title-card-h)!important;
+  max-height:var(--luria-title-card-h)!important;
+  flex:0 0 var(--luria-title-card-h)!important;
+  margin:0 0 var(--luria-title-card-bottom) 0!important;
+  padding:var(--luria-title-card-py) var(--luria-title-card-px)!important;
+  box-sizing:border-box!important;
+  border-radius:var(--luria-title-card-radius)!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:20px!important;
+  overflow:hidden!important;
+  align-self:stretch!important;
+}
+
+/* Mesma régua interna do copy de Estatísticas. */
+html body:not(.schedule-settings-embed) :is(
+  .luria-page-spotlight-copy,
+  .schedule-top-spotlight-copy,
+  .error-cat-spotlight-copy,
+  .flash-top-spotlight-copy,
+  .daily-hero-copy,
+  .stats-hero-copy
+){
+  position:relative!important;
+  z-index:2!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  gap:0!important;
+}
+
+/* Título: mesma fonte, peso, tamanho, tracking e line-height. */
+html body:not(.schedule-settings-embed) :is(
+  .luria-page-spotlight-copy,
+  .schedule-top-spotlight-copy,
+  .error-cat-spotlight-copy,
+  .flash-top-spotlight-copy,
+  .daily-hero-copy,
+  .stats-hero-copy
+) > :is(strong,h1,h2),
+html body .page-heading h1,
+html body .friends-ref-hero-copy > h1{
+  margin:0!important;
+  padding:0!important;
+  font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
+  font-size:var(--luria-title-size)!important;
+  line-height:var(--luria-title-line)!important;
+  font-weight:var(--luria-title-weight)!important;
+  letter-spacing:var(--luria-title-tracking)!important;
+  text-transform:none!important;
+}
+
+/* Label/eyebrow: distância e tipografia únicas. */
+html body:not(.schedule-settings-embed) :is(
+  .luria-page-spotlight-copy,
+  .schedule-top-spotlight-copy,
+  .error-cat-spotlight-copy,
+  .flash-top-spotlight-copy,
+  .daily-hero-copy,
+  .stats-hero-copy
+) > :is(.eyebrow,[class*="label"],[class*="eyebrow"]){
+  display:block!important;
+  margin:0 0 6px!important;
+  padding:0!important;
+  font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
+  font-size:var(--luria-title-kicker-size)!important;
+  line-height:1.1!important;
+  font-weight:500!important;
+  letter-spacing:.09em!important;
+}
+
+/* Subtítulo/helper: mesma distância do título em qualquer página. */
+html body:not(.schedule-settings-embed) :is(
+  .luria-page-spotlight-copy,
+  .schedule-top-spotlight-copy,
+  .error-cat-spotlight-copy,
+  .flash-top-spotlight-copy,
+  .daily-hero-copy,
+  .stats-hero-copy
+) > :is(small,p,[class*="helper"],[class*="subtitle"]){
+  display:block!important;
+  margin:var(--luria-title-copy-gap) 0 0!important;
+  padding:0!important;
+  font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
+  font-size:var(--luria-title-sub-size)!important;
+  line-height:1.4!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+}
+
+/* Amigos: título/subtítulo seguem a mesma régua tipográfica mesmo no hero próprio. */
+html body .friends-ref-hero-copy > h2{
+  margin:var(--luria-title-copy-gap) 0 0!important;
+  font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;
+  font-size:var(--luria-title-sub-size)!important;
+  line-height:1.4!important;
+  font-weight:400!important;
+  letter-spacing:0!important;
+}
+
+/* Mobile mantém exatamente a mesma proporção usada em Estatísticas. */
+@media(max-width:700px){
+  :root{
+    --luria-title-card-h:118px;
+    --luria-title-card-py:20px;
+    --luria-title-card-px:20px;
+    --luria-title-size:25px;
+    --luria-title-sub-size:10px;
+  }
+}
