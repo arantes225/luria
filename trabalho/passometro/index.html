@@ -1605,15 +1605,6 @@
 
     function openDeck(id){
       state.activeDeckId=id;
-      p.gpxa=["G"+p.gravida,"P"+p.para,"A"+p.abortions].filter(x=>!/[GPA]$/.test(x)).join("");
-      p.maternalBloodType=[p.maternalABO,p.maternalRh].filter(Boolean).join("");
-      const serologySummary=[];
-      if(p.switches.serologyHivDone==="yes") serologySummary.push("HIV: "+(p.serologyHivResult||"realizado"));
-      if(p.switches.serologySyphilisDone==="yes") serologySummary.push("Sífilis: "+(p.serologySyphilisResult||"realizado"));
-      if(p.switches.serologyHbsagDone==="yes") serologySummary.push("HBsAg: "+(p.serologyHbsagResult||"realizado"));
-      if(p.switches.serologyHcvDone==="yes") serologySummary.push("Hepatite C: "+(p.serologyHcvResult||"realizado"));
-      if(p.switches.serologyOtherDone==="yes") serologySummary.push((p.serologyOtherName||"Outra")+": "+(p.serologyOtherResult||"realizado"));
-      p.serologies=serologySummary.join(" · ");
       const d=activeDeck(); if(!d) return;
       $("#pm-list").hidden=true; $("#pm-detail").hidden=false;
       $("#pm-detail-title").textContent=`${d.hospital} · ${fmtDate(d.date)}`;
@@ -1704,13 +1695,13 @@
             '<h2>Leito '+esc(displayValue(p.bed))+' · '+esc(displayValue(p.name))+' <small>('+esc(displayValue(p.age,"idade não informada"))+')</small></h2>'+
             '<div class="pm-export-row"><b>Prioridade:</b> '+esc(patientPriorityLabel(p))+'</div>'+
             '<div class="pm-export-row"><b>Diagnóstico:</b> '+esc(displayValue(p.diagnosis))+'</div>'+
-            '<div class="pm-export-row"><b>Motivo da internação:</b> '+esc(displayValue(p.reason))+'</div>'+
-            '<div class="pm-export-row"><b>Antecedentes:</b> '+esc(displayValue(p.history))+'</div>'+
-            (isGoDeck(deck)?'<div class="pm-export-row"><b>GxPxAx:</b> '+esc(displayValue(p.gpxa))+'</div>'+
-            '<div class="pm-export-row"><b>Intercorrências em gestações anteriores:</b> '+esc(displayValue(p.previousPregnancyComplications))+'</div>'+
-            '<div class="pm-export-row"><b>Comorbidades:</b> '+esc(displayValue(p.comorbidities))+'</div>'+
-            '<div class="pm-export-row"><b>Sorologias:</b> '+esc(displayValue(p.serologies))+'</div>'+
+            (isGoDeck(deck)?'<div class="pm-export-row"><b>Idade gestacional:</b> '+esc(displayValue(p.gestationalAge))+'</div>'+
+            '<div class="pm-export-row"><b>G/P/A:</b> '+esc(displayValue(p.gpxa))+'</div>'+
+            '<div class="pm-export-row"><b>Intercorrências em gestações anteriores:</b> '+esc(p.switches?.previousPregnancyComplications==="yes"?displayValue(p.previousPregnancyComplications):"Não")+'</div>'+
+            '<div class="pm-export-row"><b>Antecedentes:</b> '+esc(p.switches?.history==="yes"?displayValue(p.history):"Não")+'</div>'+
+            '<div class="pm-export-row"><b>Sorologias:</b> '+esc(displayValue(p.serologies,"Não informadas"))+'</div>'+
             '<div class="pm-export-row"><b>Tipagem materna:</b> '+esc(displayValue(p.maternalBloodType))+'</div>'+
+            '<div class="pm-export-row"><b>GBS:</b> '+esc(displayValue(p.gbs))+'</div>'+
             '<div class="pm-export-row"><b>Parto:</b> '+esc(displayValue(p.deliveryType==="cesarea"?"Cesárea":p.deliveryType==="vaginal"?"Parto vaginal":""))+' · '+esc(displayValue(p.deliveryReason))+'</div>'+
             '<div class="pm-export-row"><b>Data/hora do parto:</b> '+esc([p.deliveryDate?fmtDate(p.deliveryDate):"",p.deliveryTime].filter(Boolean).join(" · ")||"—")+'</div>'+
             '<div class="pm-export-row"><b>Previsão de alta:</b> '+esc(p.estimatedDischarge?fmtDate(p.estimatedDischarge):"—")+'</div>'+
@@ -1915,19 +1906,7 @@
       $$("[data-conditional]").forEach(x=>x.hidden=true);
       $$("[data-priority]").forEach(b=>b.classList.remove("active"));
       $("#pm-medications").innerHTML=""; $("#pm-antibiotics").innerHTML="";
-      if(!p.gravida&&!p.para&&!p.abortions&&p.gpxa){
-        const m=String(p.gpxa).match(/G\s*(\d+).*?P\s*(\d+).*?A\s*(\d+)/i);
-        if(m){form.elements.gravida.value=m[1];form.elements.para.value=m[2];form.elements.abortions.value=m[3];}
-      }
-      if((!p.maternalABO&&!p.maternalRh)&&p.maternalBloodType){
-        const m=String(p.maternalBloodType).match(/\b(AB|A|B|O)\b/i);
-        if(m) form.elements.maternalABO.value=m[1].toUpperCase();
-        if(/neg|\-/.test(String(p.maternalBloodType).toLowerCase())) form.elements.maternalRh.value="-";
-        else if(/pos|\+/.test(String(p.maternalBloodType).toLowerCase())) form.elements.maternalRh.value="+";
-      }
-      const inferredSwitches={...(p.switches||{})};
-      if(p.previousPregnancyComplications&&!inferredSwitches.previousPregnancyComplications) inferredSwitches.previousPregnancyComplications="yes";
-      if(p.history&&!inferredSwitches.history) inferredSwitches.history="yes";
+      ["previousPregnancyComplications","history","serologyHivDone","serologySyphilisDone","serologyHbsagDone","serologyHcvDone","serologyOtherDone"].forEach(k=>setSwitch(k,"no"));
       syncAllOtherFields(form);
       syncGoFields();
       $("#pm-patient-dialog-title").textContent="Novo paciente";
@@ -2012,6 +1991,36 @@
       resetPatientForm(); state.editingPatientId=p.id; $("#pm-patient-dialog-title").textContent="Editar paciente";
       const form=$("#pm-patient-form");
       ["bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+
+      if(!p.gravida&&!p.para&&!p.abortions&&p.gpxa){
+        const m=String(p.gpxa).match(/G\s*(\d+).*?P\s*(\d+).*?A\s*(\d+)/i);
+        if(m){form.elements.gravida.value=m[1];form.elements.para.value=m[2];form.elements.abortions.value=m[3];}
+      }
+      if((!p.maternalABO&&!p.maternalRh)&&p.maternalBloodType){
+        const m=String(p.maternalBloodType).match(/\b(AB|A|B|O)\b/i);
+        if(m) form.elements.maternalABO.value=m[1].toUpperCase();
+        if(/neg|\-/.test(String(p.maternalBloodType).toLowerCase())) form.elements.maternalRh.value="-";
+        else if(/pos|\+/.test(String(p.maternalBloodType).toLowerCase())) form.elements.maternalRh.value="+";
+      }
+
+      const inferredSwitches={...(p.switches||{})};
+      if(p.previousPregnancyComplications&&!inferredSwitches.previousPregnancyComplications) inferredSwitches.previousPregnancyComplications="yes";
+      if(p.history&&!inferredSwitches.history) inferredSwitches.history="yes";
+      if(p.serologies&&!["serologyHivDone","serologySyphilisDone","serologyHbsagDone","serologyHcvDone","serologyOtherDone"].some(k=>inferredSwitches[k])){
+        const legacy=String(p.serologies);
+        const infer=(label,key,resultName)=>{
+          const m=legacy.match(new RegExp(label+"\\s*[:=-]?\\s*(positivo|negativo)","i"));
+          if(m){ inferredSwitches[key]="yes"; if(form.elements[resultName]) form.elements[resultName].value=m[1][0].toUpperCase()+m[1].slice(1).toLowerCase(); }
+        };
+        infer("HIV","serologyHivDone","serologyHivResult");
+        infer("Sífilis|Sifilis","serologySyphilisDone","serologySyphilisResult");
+        infer("HBsAg","serologyHbsagDone","serologyHbsagResult");
+        infer("Hepatite C|HCV","serologyHcvDone","serologyHcvResult");
+      }
+      ["previousPregnancyComplications","history","serologyHivDone","serologySyphilisDone","serologyHbsagDone","serologyHcvDone","serologyOtherDone"].forEach(k=>{
+        if(!inferredSwitches[k]) inferredSwitches[k]="no";
+      });
+
       syncAllOtherFields(form);
       Object.entries(inferredSwitches).forEach(([k,v])=>setSwitch(k,v));
       state.priority=p.priority||"none"; $$("[data-priority]").forEach(b=>b.classList.toggle("active",b.dataset.priority===state.priority));
@@ -2050,6 +2059,17 @@
       const existingPatient=state.editingPatientId?(activeDeck()?.patients||[]).find(x=>x.id===state.editingPatientId):null;
       const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics"),viewObservation:existingPatient?.viewObservation||""};
       ["bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
+
+      p.gpxa=["G"+p.gravida,"P"+p.para,"A"+p.abortions].filter(x=>!/[GPA]$/.test(x)).join("");
+      p.maternalBloodType=[p.maternalABO,p.maternalRh].filter(Boolean).join("");
+      const serologySummary=[];
+      if(p.switches.serologyHivDone==="yes") serologySummary.push("HIV: "+(p.serologyHivResult||"realizado"));
+      if(p.switches.serologySyphilisDone==="yes") serologySummary.push("Sífilis: "+(p.serologySyphilisResult||"realizado"));
+      if(p.switches.serologyHbsagDone==="yes") serologySummary.push("HBsAg: "+(p.serologyHbsagResult||"realizado"));
+      if(p.switches.serologyHcvDone==="yes") serologySummary.push("Hepatite C: "+(p.serologyHcvResult||"realizado"));
+      if(p.switches.serologyOtherDone==="yes") serologySummary.push((p.serologyOtherName||"Outra")+": "+(p.serologyOtherResult||"realizado"));
+      p.serologies=serologySummary.join(" · ");
+
       const d=activeDeck(); if(!d) return;
       if(isGoDeck(d) && !p.estimatedDischarge) p.estimatedDischarge=calculateEstimatedDischarge(form);
       const idx=(d.patients||[]).findIndex(x=>x.id===p.id);
