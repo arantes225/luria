@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="t d">
+<title id="t">Tríade diagnóstica da SOMP</title><desc id="d">Diagrama dos três critérios diagnósticos da Síndrome Ovariana Metabólica Poliendócrina.</desc>
+<rect width="1200" height="700" rx="36" fill="#f7faff"/>
+<text x="600" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#0a2342">Diagnóstico da SOMP em adultas</text>
+<text x="600" y="120" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#52708f">2 de 3 critérios, após excluir diagnósticos alternativos</text>
+<g font-family="Arial,sans-serif">
+<circle cx="390" cy="310" r="170" fill="#e9f1ff" stroke="#184888" stroke-width="5"/>
+<circle cx="810" cy="310" r="170" fill="#eef8f4" stroke="#2f7d62" stroke-width="5"/>
+<circle cx="600" cy="505" r="170" fill="#fff6e8" stroke="#b67a13" stroke-width="5"/>
+<text x="390" y="285" text-anchor="middle" font-size="27" font-weight="700" fill="#184888">Hiperandrogenismo</text>
+<text x="390" y="325" text-anchor="middle" font-size="20" fill="#2d4866">clínico e/ou bioquímico</text>
+<text x="810" y="285" text-anchor="middle" font-size="27" font-weight="700" fill="#2f7d62">Disfunção ovulatória</text>
+<text x="810" y="325" text-anchor="middle" font-size="20" fill="#385b50">oligo/anovulação</text>
+<text x="600" y="485" text-anchor="middle" font-size="27" font-weight="700" fill="#9a650e">PCOM / AMH</text>
+<text x="600" y="525" text-anchor="middle" font-size="20" fill="#6f572d">US ou AMH validado em adultas</text>
+<rect x="370" y="600" width="460" height="58" rx="18" fill="#184888"/>
+<text x="600" y="637" text-anchor="middle" font-size="21" font-weight="700" fill="white">US/AMH dispensáveis se os 2 primeiros já estão presentes</text>
+</g></svg>
