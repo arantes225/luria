@@ -1110,9 +1110,13 @@
         <button class="pm-close" type="button" data-close-dialog="pm-patient-dialog">×</button>
       </div>
       <div class="pm-form">
-        <div class="pm-grid-2">
+        <div class="pm-grid-3">
           <div class="pm-field">
-            <label>ID / Leito <span class="pm-required">*</span></label>
+            <label>ID do paciente <span class="pm-required">*</span></label>
+            <input name="patientIdentifier" required placeholder="Ex.: 000123">
+          </div>
+          <div class="pm-field">
+            <label>Leito <span class="pm-required">*</span></label>
             <input name="bed" required placeholder="Ex.: 301A">
           </div>
           <div class="pm-field">
@@ -1217,6 +1221,34 @@
           </div>
         </section>
 
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Parto</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Tipo de parto</label><select name="deliveryType"><option value="">Não realizado / não informado</option><option value="vaginal">Parto vaginal</option><option value="cesarea">Cesárea</option></select></div>
+              <div class="pm-field"><label>Motivo / indicação</label><input name="deliveryReason" placeholder="Indicação ou motivo do parto"></div>
+            </div>
+            <div class="pm-grid-2">
+              <div class="pm-field"><label>Data do parto</label><input name="deliveryDate" type="date"></div>
+              <div class="pm-field"><label>Hora do parto</label><input name="deliveryTime" type="time"></div>
+            </div>
+            <div class="pm-field"><label>Intercorrências maternas no parto/puerpério</label><textarea name="maternalDeliveryComplications" placeholder="Se houver"></textarea></div>
+            <div class="pm-field"><label>Previsão de alta</label><input name="estimatedDischarge" type="date"><small class="pm-discharge-note">Calculada automaticamente: 24 h após parto vaginal ou 48 h após cesárea; se o horário calculado ultrapassar 15h, passa para o dia seguinte.</small></div>
+          </div>
+        </section>
+
+        <section class="pm-section" data-go-field hidden>
+          <div class="pm-section-head"><strong>Recém-nascido</strong></div>
+          <div class="pm-conditional" style="margin-top:12px">
+            <div class="pm-grid-3">
+              <div class="pm-field"><label>Sexo</label><select name="newbornSex"><option value="">Não informado</option><option>Feminino</option><option>Masculino</option></select></div>
+              <div class="pm-field"><label>Peso ao nascer</label><input name="newbornWeight" placeholder="Ex.: 3250 g"></div>
+              <div class="pm-field"><label>Tipagem sanguínea do bebê</label><input name="newbornBloodType" placeholder="Ex.: A positivo"></div>
+            </div>
+            <div class="pm-field"><label>Intercorrências com o RN</label><textarea name="newbornComplications" placeholder="Deixe em branco se não houve"></textarea></div>
+          </div>
+        </section>
+
         <div class="pm-section" data-switch-section="medications">
           <div class="pm-section-head">
             <strong>Medicações atuais</strong>
@@ -1296,33 +1328,7 @@
           </div>
         </div>
 
-        <section class="pm-section" data-go-field hidden>
-          <div class="pm-section-head"><strong>Parto</strong></div>
-          <div class="pm-conditional" style="margin-top:12px">
-            <div class="pm-grid-2">
-              <div class="pm-field"><label>Tipo de parto</label><select name="deliveryType"><option value="">Não realizado / não informado</option><option value="vaginal">Parto vaginal</option><option value="cesarea">Cesárea</option></select></div>
-              <div class="pm-field"><label>Motivo / indicação</label><input name="deliveryReason" placeholder="Indicação ou motivo do parto"></div>
-            </div>
-            <div class="pm-grid-2">
-              <div class="pm-field"><label>Data do parto</label><input name="deliveryDate" type="date"></div>
-              <div class="pm-field"><label>Hora do parto</label><input name="deliveryTime" type="time"></div>
-            </div>
-            <div class="pm-field"><label>Intercorrências maternas no parto/puerpério</label><textarea name="maternalDeliveryComplications" placeholder="Se houver"></textarea></div>
-            <div class="pm-field"><label>Previsão de alta</label><input name="estimatedDischarge" type="date"><small class="pm-discharge-note">Calculada automaticamente: 24 h após parto vaginal ou 48 h após cesárea; se o horário calculado ultrapassar 15h, passa para o dia seguinte.</small></div>
-          </div>
-        </section>
 
-        <section class="pm-section" data-go-field hidden>
-          <div class="pm-section-head"><strong>Recém-nascido</strong></div>
-          <div class="pm-conditional" style="margin-top:12px">
-            <div class="pm-grid-3">
-              <div class="pm-field"><label>Sexo</label><select name="newbornSex"><option value="">Não informado</option><option>Feminino</option><option>Masculino</option></select></div>
-              <div class="pm-field"><label>Peso ao nascer</label><input name="newbornWeight" placeholder="Ex.: 3250 g"></div>
-              <div class="pm-field"><label>Tipagem sanguínea do bebê</label><input name="newbornBloodType" placeholder="Ex.: A positivo"></div>
-            </div>
-            <div class="pm-field"><label>Intercorrências com o RN</label><textarea name="newbornComplications" placeholder="Deixe em branco se não houve"></textarea></div>
-          </div>
-        </section>
 
         <div class="pm-field">
           <label>Impressão diagnóstica</label>
@@ -1631,7 +1637,7 @@
         if(p.switches?.pending==="yes") tags.push("Pendências");
         if(isGoDeck(d) && p.estimatedDischarge) tags.push("Alta "+fmtDate(p.estimatedDischarge));
         return `<article class="pm-patient" data-patient-id="${p.id}" data-priority="${p.priority||"none"}">
-          <div class="pm-patient-top"><h3>Leito ${esc(p.bed)} · ${esc(p.name)}</h3><small>${esc(p.age||"")}</small></div>
+          <div class="pm-patient-top"><h3>${esc(p.patientIdentifier||"")} · Leito ${esc(p.bed)} · ${esc(p.name)}</h3><small>${esc(p.age||"")}</small></div>
           <div class="pm-patient-summary">${esc(p.diagnosis || p.reason || "Sem resumo clínico")}</div>
           <div class="pm-patient-tags">${tags.map(t=>`<span class="pm-tag">${t}</span>`).join("")}</div>
         </article>`;
@@ -1692,7 +1698,7 @@
           const diet=p.diet==="Outra"?(p.dietOther||"Outra"):p.diet;
           const isolation=p.isolationType==="Outro"?(p.isolationTypeOther||"Outro"):p.isolationType;
           return '<article class="pm-export-patient">'+
-            '<h2>Leito '+esc(displayValue(p.bed))+' · '+esc(displayValue(p.name))+' <small>('+esc(displayValue(p.age,"idade não informada"))+')</small></h2>'+
+            '<h2>'+esc(displayValue(p.patientIdentifier,"ID não informado"))+' · Leito '+esc(displayValue(p.bed))+' · '+esc(displayValue(p.name))+' <small>('+esc(displayValue(p.age,"idade não informada"))+')</small></h2>'+
             '<div class="pm-export-row"><b>Prioridade:</b> '+esc(patientPriorityLabel(p))+'</div>'+
             '<div class="pm-export-row"><b>Diagnóstico:</b> '+esc(displayValue(p.diagnosis))+'</div>'+
             (isGoDeck(deck)?'<div class="pm-export-row"><b>Idade gestacional:</b> '+esc(displayValue(p.gestationalAge))+'</div>'+
@@ -1990,7 +1996,8 @@
     function fillPatient(p){
       resetPatientForm(); state.editingPatientId=p.id; $("#pm-patient-dialog-title").textContent="Editar paciente";
       const form=$("#pm-patient-form");
-      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+      if(!p.patientIdentifier) p.patientIdentifier=p.id||"";
+      ["patientIdentifier","bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
 
       if(!p.gravida&&!p.para&&!p.abortions&&p.gpxa){
         const m=String(p.gpxa).match(/G\s*(\d+).*?P\s*(\d+).*?A\s*(\d+)/i);
@@ -2009,7 +2016,7 @@
       if(p.serologies&&!["serologyHivDone","serologySyphilisDone","serologyHbsagDone","serologyHcvDone","serologyOtherDone"].some(k=>inferredSwitches[k])){
         const legacy=String(p.serologies);
         const infer=(label,key,resultName)=>{
-          const m=legacy.match(new RegExp(label+"\\s*[:=-]?\\s*(positivo|negativo)","i"));
+          const m=legacy.match(new RegExp("(?:"+label+")\\s*[:=-]?\\s*(positivo|negativo)","i"));
           if(m){ inferredSwitches[key]="yes"; if(form.elements[resultName]) form.elements[resultName].value=m[1][0].toUpperCase()+m[1].slice(1).toLowerCase(); }
         };
         infer("HIV","serologyHivDone","serologyHivResult");
@@ -2058,7 +2065,7 @@
       const fd=new FormData(form);
       const existingPatient=state.editingPatientId?(activeDeck()?.patients||[]).find(x=>x.id===state.editingPatientId):null;
       const p={id:state.editingPatientId||uid(),switches:{...state.switches},priority:state.priority,medications:collectRows("#pm-medications"),antibiotics:collectRows("#pm-antibiotics"),viewObservation:existingPatient?.viewObservation||""};
-      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
+      ["patientIdentifier","bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>p[k]=String(fd.get(k)||"").trim());
 
       p.gpxa=["G"+p.gravida,"P"+p.para,"A"+p.abortions].filter(x=>!/[GPA]$/.test(x)).join("");
       p.maternalBloodType=[p.maternalABO,p.maternalRh].filter(Boolean).join("");
