@@ -4,7 +4,7 @@
   <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://upload.wikimedia.org; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob: https://bvsms.saude.gov.br https://www.gov.br; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://upload.wikimedia.org https://pdres.s3.amazonaws.com; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Assistência ao Parto, Vigilância Intraparto e Partograma · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
@@ -35,12 +35,10 @@
     .book-figure figcaption{margin-top:9px;color:var(--muted);font-size:10.5px;line-height:1.45;text-align:left}
     .book-figure figcaption strong{color:var(--text);font-weight:600}
     .book-source-figure{margin:18px 0;padding:14px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:16px;background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
-    .book-source-figure iframe{display:block;width:100%;height:760px;border:0;border-radius:11px;background:#fff}
+    .book-source-figure img{display:block;width:100%;max-width:820px;height:auto;margin:0 auto;border-radius:10px;background:#fff;object-fit:contain}
     .book-source-figure figcaption{margin-top:10px;color:var(--muted);font-size:10.5px;line-height:1.5}
     .book-source-figure figcaption strong{color:var(--text);font-weight:600}
-    .book-source-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}
-    .book-source-actions a{display:inline-flex;align-items:center;min-height:32px;padding:0 10px;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));border-radius:8px;color:var(--accent);background:var(--surface);text-decoration:none;font-size:9px}
-    @media(max-width:700px){.book-source-figure iframe{height:560px}}
+    @media(max-width:700px){}
   
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none}.book-outline-nav{display:flex;gap:6px;overflow-x:auto}.book-outline-link{flex:0 0 auto;white-space:nowrap}.book-grid-2,.mindmap{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.flow-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px}}
   </style>
@@ -408,45 +406,31 @@
 
 
           <h3>5.2 Antes de interpretar: veja um partograma de verdade</h3>
-          <p>Para aprender partograma, é importante enxergar o formulário real. Abaixo estão duas fontes brasileiras: primeiro, o <strong>modelo oficial disponibilizado pela ANS</strong>; depois, um <strong>exemplo preenchido do Ministério da Saúde</strong>. Observe como o instrumento reúne progressão do parto, condição fetal, dinâmica uterina e registros maternos no mesmo documento.</p>
+          <p>Antes de decorar símbolos e linhas, olhe o instrumento inteiro. A figura abaixo mostra um <strong>partograma do modelo utilizado em materiais do Ministério da Saúde</strong>, com dilatação cervical, descida da apresentação, linha de alerta/ação, FCF, dinâmica uterina e campos de registro.</p>
 
-          <figure class="book-source-figure" id="fig-partograma-ans">
-            <iframe
-              src="https://www.gov.br/ans/pt-br/arquivos/assuntos/consumidor/parto-na-saude-suplementar/parto-partograma-pdf#view=FitH"
-              title="Modelo oficial de partograma da ANS"
+          <figure class="book-source-figure" id="fig-partograma-ms">
+            <img
+              src="https://pdres.s3.amazonaws.com/imgs/93fda83a918b25e2f659651a2bb759a5dadff766.JPG"
+              alt="Partograma com curva de dilatação, descida da apresentação, linhas de alerta e ação, frequência cardíaca fetal e registro de contrações"
               loading="lazy"
-            ></iframe>
-            <figcaption><strong>Modelo de partograma — ANS, Anexo III da RN nº 368/2015.</strong> Use esta figura para reconhecer a estrutura do formulário antes de estudar o preenchimento.</figcaption>
-            <div class="book-source-actions">
-              <a href="https://www.gov.br/ans/pt-br/arquivos/assuntos/consumidor/parto-na-saude-suplementar/parto-partograma-pdf" target="_blank" rel="noopener">Abrir fonte oficial da ANS ↗</a>
-            </div>
-          </figure>
-
-          <figure class="book-source-figure" id="fig-partograma-ms-preenchido">
-            <iframe
-              src="https://bvsms.saude.gov.br/bvs/publicacoes/cd04_13.pdf#page=50&view=FitH"
-              title="Exemplo preenchido de partograma do Ministério da Saúde"
-              loading="lazy"
-            ></iframe>
-            <figcaption><strong>Exemplo preenchido — Ministério da Saúde, “Parto, aborto e puerpério: assistência humanizada à mulher”, Figura 4.</strong> Repare nos triângulos da dilatação, círculos da apresentação/variedade de posição, registros seriados da FCF e blocos que representam a duração das contrações. A publicação permite reprodução parcial ou total com citação da fonte.</figcaption>
-            <div class="book-source-actions">
-              <a href="https://bvsms.saude.gov.br/bvs/publicacoes/cd04_13.pdf#page=50" target="_blank" rel="noopener">Abrir figura na fonte do Ministério ↗</a>
-            </div>
+            >
+            <figcaption><strong>Partograma — modelo do Ministério da Saúde.</strong> Observe que a dilatação é marcada no gráfico ao longo das horas; a descida da apresentação é registrada no mesmo eixo temporal; abaixo ficam FCF, contrações e demais informações do acompanhamento.</figcaption>
           </figure>
 
           <div class="drive-block">
-            <h4>Como ler o exemplo preenchido, de cima para baixo</h4>
+            <h4>Como ler a imagem de cima para baixo</h4>
             <ol>
-              <li><strong>Dilatação cervical:</strong> é colocada no gráfico contra o tempo. No modelo do Ministério, o triângulo representa a dilatação.</li>
-              <li><strong>Descida e variedade de posição:</strong> aparecem junto da progressão; o círculo representa a apresentação e sua orientação.</li>
-              <li><strong>Hora real e hora de registro:</strong> impedem que a curva seja interpretada sem contexto temporal.</li>
-              <li><strong>FCF:</strong> cada avaliação é registrada em sequência, permitindo enxergar tendência e não apenas um valor isolado.</li>
-              <li><strong>Contrações:</strong> frequência e duração são registradas graficamente; blocos diferentes representam faixas de duração.</li>
-              <li><strong>Bolsa/líquido, ocitocina, medicamentos, fluidos, analgesia e observações:</strong> documentam fatores que podem explicar mudanças na evolução.</li>
+              <li><strong>Gráfico principal:</strong> cruza tempo no eixo horizontal com dilatação cervical no eixo vertical.</li>
+              <li><strong>Linhas diagonais:</strong> representam, no modelo clássico, linha de alerta e linha de ação.</li>
+              <li><strong>Apresentação/descida:</strong> acompanha a progressão da cabeça fetal em relação aos planos da pelve.</li>
+              <li><strong>Hora real e hora de registro:</strong> situam cada avaliação no tempo.</li>
+              <li><strong>FCF:</strong> registra os batimentos fetais em avaliações seriadas.</li>
+              <li><strong>Contrações:</strong> registra frequência e duração da dinâmica uterina.</li>
+              <li><strong>Demais campos:</strong> bolsa, líquido amniótico, ocitocina, medicamentos, analgesia e observações completam a leitura clínica.</li>
             </ol>
           </div>
 
-          <div class="book-callout"><strong>Pulo do Gato</strong>O partograma não é só a curva de dilatação. Em uma questão de prova ou no plantão, olhe o documento inteiro: <strong>dilatação + descida + posição + FCF + contrações + líquido + intervenções</strong>. É essa integração que permite entender por que o parto está evoluindo bem ou não.</div>
+          <div class="book-callout"><strong>Pulo do Gato</strong>O partograma não é só a curva de dilatação. Leia sempre o conjunto: <strong>dilatação + descida + posição + FCF + contrações + líquido + intervenções</strong>. É essa integração que permite entender se a evolução está coerente.</div>
 
           <h3>5.3 Por que a regra de “1 cm por hora” caiu?</h3>
           <p>Porque a progressão normal é mais variável do que se imaginava. Mulheres saudáveis podem avançar mais lentamente sem que isso, isoladamente, represente distócia. A OMS não recomenda usar a velocidade de <strong>1 cm/h como gatilho único</strong> para intervenção.</p>
