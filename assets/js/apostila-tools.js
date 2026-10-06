@@ -299,6 +299,23 @@
 
       button.disabled = true;
       try {
+        if (action === "approve") {
+          const row = rows.find(item => Number(item.id) === id);
+          const size = Number(getAsset(row)?.size_bytes || 0);
+          if (!size || size > 112640) {
+            const originalText = button.textContent;
+            button.textContent = "Otimizando...";
+            const { data: optimized, error: optimizeError } = await sb.functions.invoke("optimize-apostila-image", {
+              body: { id }
+            });
+            if (optimizeError) throw optimizeError;
+            if (!optimized?.ok || Number(optimized?.size_bytes || 0) > 112640) {
+              throw new Error("Não foi possível otimizar a imagem para até 110 KB.");
+            }
+            button.textContent = originalText;
+          }
+        }
+
         const { error } = await sb.rpc("admin_review_apostila_image", {
           p_id: id,
           p_decision: action === "approve" ? "approved" : "rejected"
