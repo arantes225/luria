@@ -1,0 +1,493 @@
+/* Home surfaces follow Flashcards: two aligned rows within the existing shell. */
+@media(min-width:981px){
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) > .app-shell > .main,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) > .app-shell > .main{
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  overflow:hidden!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) > .app-shell > .main > .page,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) > .app-shell > .main > .page{
+  display:flex!important;
+  flex-direction:column!important;
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  gap:8px!important;
+  overflow:hidden!important;
+  box-sizing:border-box!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .page > .luria-page-spotlight,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .page > .luria-page-spotlight{
+  flex:0 0 auto!important;
+  margin:0!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .page > .topbar,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .page > .topbar{
+  flex:0 0 0!important;
+  min-height:0!important;
+  height:0!important;
+  margin:0!important;
+  padding:0!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home.active{
+  display:flex!important;
+  flex-direction:column!important;
+  flex:1!important;
+  min-height:0!important;
+  height:auto!important;
+  max-height:100%!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-workspace{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr)!important;
+  grid-template-rows:minmax(0,1.08fr) minmax(0,.92fr)!important;
+  gap:8px!important;
+  flex:1!important;
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  overflow:hidden!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-main-column,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-side-column{
+  display:contents!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-daily-card{
+  grid-column:1!important;
+  grid-row:1!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  gap:12px!important;
+  padding:20px!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-week-compact{
+  grid-column:2!important;
+  grid-row:1!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists{
+  grid-column:1!important;
+  grid-row:2!important;
+  display:flex!important;
+  flex-direction:column!important;
+  padding:14px!important;
+  overflow:hidden!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-actions-compact{
+  grid-column:2!important;
+  grid-row:2!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-layout.review-mode:not([hidden]){
+  display:grid!important;
+  grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr)!important;
+  grid-template-rows:minmax(0,1.08fr) minmax(0,.92fr)!important;
+  gap:8px!important;
+  flex:1!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:100%!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-daily-review-card{
+  grid-column:1!important;
+  grid-row:1!important;
+  display:flex!important;
+  align-items:center!important;
+  gap:20px!important;
+  padding:20px!important;
+  overflow:auto!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-aside{
+  display:contents!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-aside > .error-quick-metrics{
+  grid-column:2!important;
+  grid-row:1!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-main{
+  grid-column:1!important;
+  grid-row:2!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:8px!important;
+  padding:14px!important;
+  overflow:hidden!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-actions{
+  grid-column:2!important;
+  grid-row:2!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-daily-card,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-week-compact,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-actions-compact{
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  border-radius:15px!important;
+  transform:none!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-daily-review-card,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-main,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-aside > .error-quick-metrics,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-actions{
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  border-radius:15px!important;
+  transform:none!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-actions,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-actions{
+  display:grid!important;
+  grid-template-rows:repeat(3,minmax(0,1fr))!important;
+  gap:8px!important;
+  padding:0!important;
+  overflow:hidden!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action{
+  display:grid!important;
+  grid-template-columns:36px minmax(0,1fr) 24px!important;
+  align-items:center!important;
+  gap:10px!important;
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  margin:0!important;
+  padding:8px 12px!important;
+  box-sizing:border-box!important;
+  border-radius:13px!important;
+  text-align:left!important;
+  overflow:hidden!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-icon,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-icon{
+  display:grid!important;
+  place-items:center!important;
+  width:36px!important;
+  height:36px!important;
+  min-width:36px!important;
+  min-height:36px!important;
+  border-radius:10px!important;
+  font-size:18px!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-icon img,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-icon svg,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-icon img,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-icon svg{
+  width:22px!important;
+  height:22px!important;
+  max-width:22px!important;
+  max-height:22px!important;
+  object-fit:contain!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-copy strong,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-copy strong{
+  display:block!important;
+  font-size:15px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-copy small,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-copy small{
+  display:block!important;
+  font-size:12px!important;
+  line-height:1.25!important;
+  margin-top:3px!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-arrow,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-arrow{
+  width:24px!important;
+  height:24px!important;
+  font-size:18px!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-quick-metrics,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-quick-metrics{
+  display:flex!important;
+  flex-direction:column!important;
+  padding:12px!important;
+  overflow:auto!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-side-head,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-side-head{
+  flex:0 0 auto!important;
+  margin:0 0 8px!important;
+  padding:0!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-side-head h3,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-side-head h3{
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.2!important;
+  margin:0!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-quick-metrics-body,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-quick-metrics-body{
+  display:grid!important;
+  grid-template-rows:minmax(58px,1fr) minmax(72px,1.15fr) minmax(42px,.75fr)!important;
+  gap:6px!important;
+  flex:1!important;
+  min-height:184px!important;
+  height:auto!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid > div,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-mini-grid > div,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid > div,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-mini-grid > div{
+  height:100%!important;
+  min-height:0!important;
+  max-height:100%!important;
+  padding:6px 8px!important;
+  box-sizing:border-box!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid span,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid small,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-mini-grid span,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid span,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid small,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-mini-grid span{
+  font-size:12px!important;
+  line-height:1.15!important;
+  letter-spacing:0!important;
+  text-transform:none!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid strong,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid strong{
+  margin:4px 0!important;
+  font-size:20px!important;
+  line-height:1!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress{
+  grid-template-columns:58px minmax(0,1fr)!important;
+  gap:10px!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-ring,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-ring{
+  width:56px!important;
+  height:56px!important;
+  min-width:56px!important;
+  min-height:56px!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-ring strong,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-ring strong{
+  align-self:center!important;
+  justify-self:center!important;
+  font-size:18px!important;
+  line-height:1!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress > div:last-child > strong,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress > div:last-child > strong{
+  font-size:14px!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress > div:last-child > span,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress > div:last-child > span{
+  font-size:12px!important;
+  line-height:1.2!important;
+  margin:3px 0!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-logo{
+  position:relative!important;
+  width:96px!important;
+  height:96px!important;
+  min-width:96px!important;
+  min-height:96px!important;
+  max-width:96px!important;
+  max-height:96px!important;
+  flex:0 0 96px!important;
+  margin:0!important;
+  transform:none!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-logo img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  transform:none!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-copy{
+  min-width:0!important;
+  min-height:0!important;
+  max-height:100%!important;
+  overflow:auto!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-copy strong{
+  font-size:16px!important;
+  line-height:1.45!important;
+  font-weight:400!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-label{
+  font-size:18px!important;
+  line-height:1.2!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-copy small{
+  font-size:12px!important;
+  line-height:1.3!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-content,
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-review-home-content{
+  flex:1!important;
+  min-height:0!important;
+  height:auto!important;
+  max-height:100%!important;
+  overflow:auto!important;
+  margin:0!important;
+  padding:0!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-main::before{
+  font-size:16px!important;
+  font-weight:400!important;
+  line-height:1.2!important;
+  margin:0!important;
+}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-library-nav{
+  flex:0 0 auto!important;
+  margin:0!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-system-copy{
+  flex:0 0 auto!important;
+  min-height:0!important;
+  padding:0!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-system-copy h2{
+  font-size:24px!important;
+  line-height:1.15!important;
+  margin:0 0 6px!important;
+  font-weight:400!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-system-copy p{
+  font-size:14px!important;
+  line-height:1.4!important;
+  margin:0!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-daily-action{
+  position:static!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  gap:8px!important;
+  width:100%!important;
+  padding:0!important;
+  margin:0!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-start-daily{
+  position:relative!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:100%!important;
+  height:48px!important;
+  min-height:48px!important;
+  max-height:48px!important;
+  padding:10px 16px!important;
+  margin:0!important;
+  font-size:16px!important;
+  box-sizing:border-box!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-home-daily-count{
+  font-size:18px!important;
+  line-height:1.2!important;
+  margin:0!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists-head{
+  flex:0 0 auto!important;
+  margin:0 0 8px!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists-head h2{
+  font-size:17px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  margin:0!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-home-my-lists-content{
+  display:flex!important;
+  flex:1!important;
+  align-items:stretch!important;
+  gap:10px!important;
+  min-height:0!important;
+  height:auto!important;
+  max-height:100%!important;
+  padding:2px 2px 8px!important;
+  margin:0!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card{
+  flex:0 0 220px!important;
+  width:220px!important;
+  height:100%!important;
+  min-height:0!important;
+  padding:12px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  gap:8px!important;
+  border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;
+  border-left:5px solid var(--accent)!important;
+  border-radius:13px!important;
+  box-shadow:none!important;
+  overflow:auto!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-head{
+  grid-template-columns:34px minmax(0,1fr)!important;
+  gap:8px!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-icon{
+  width:34px!important;
+  height:34px!important;
+  min-width:34px!important;
+  min-height:34px!important;
+  font-size:17px!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-icon svg,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-icon img{
+  width:22px!important;
+  height:22px!important;
+  object-fit:contain!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-main strong{
+  font-size:15px!important;
+  line-height:1.2!important;
+  font-weight:400!important;
+  white-space:normal!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-main small,
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-progress small{
+  font-size:12px!important;
+  line-height:1.2!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-progress{
+  grid-column:1 / -1!important;
+  text-align:left!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-progress strong{
+  font-size:14px!important;
+}
+html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-open{
+  font-size:14px!important;
+  min-height:34px!important;
+  margin-top:auto!important;
+}
+
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-library-panel{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;overflow:hidden!important;}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-library{flex:1!important;height:auto!important;min-height:0!important;max-height:100%!important;overflow:auto!important;}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-shelf{min-height:0!important;}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-area-mark{width:34px!important;height:34px!important;min-width:34px!important;font-size:18px!important;}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-area-mark img,html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-area-mark svg{width:22px!important;height:22px!important;object-fit:contain!important;}
+
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-icon{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;font-size:18px!important;}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-icon img,html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-icon svg{width:22px!important;height:22px!important;object-fit:contain!important;}
+html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-card{border-radius:13px!important;border-left:5px solid var(--accent)!important;box-shadow:none!important;}
+}
