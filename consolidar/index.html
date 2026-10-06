@@ -66,7 +66,7 @@ body[data-page="consolidar"] .learn-grid{
   display:grid!important;
   grid-template-columns:1fr 1fr!important;
   grid-template-rows:auto auto!important;
-  gap:14px!important;
+  gap:8px!important;
 }
 body[data-page="consolidar"] .learn-card--questions{
   grid-column:1 / -1!important;
@@ -113,6 +113,17 @@ body[data-page="consolidar"] .learn-bottom{
 }
 </style>
 
+
+<style id="consolidar-gap-clean-v3">
+body[data-page="consolidar"] .learn-shell,
+body[data-page="consolidar"] .learn-grid{
+  row-gap:8px!important;
+  column-gap:8px!important;
+  gap:8px!important;
+}
+body[data-page="consolidar"] .learn-bottom{display:none!important}
+</style>
+
 </head>
 <body data-page="consolidar">
   <div class="app-shell">
@@ -155,16 +166,7 @@ body[data-page="consolidar"] .learn-bottom{
               <p>Volte aos pontos que mais derrubam seu desempenho e corrija padrões.</p>
               <span class="learn-cta">Revisar erros →</span>
             </a>
-          </div>
-
-          <div class="learn-bottom"><section class="learn-panel">
-              <h3>Seu progresso</h3>
-              <small>Visão rápida da consolidação.</small>
-              <div class="progress-wrap">
-                <div class="progress-ring"><strong>64%</strong></div>
-                <span>Aproveitamento geral</span>
-              </div>
-            </section>
+          </div></section>
 
             <section class="learn-panel">
               <h3>Atividades recentes</h3>
