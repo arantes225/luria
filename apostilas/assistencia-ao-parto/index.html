@@ -4,7 +4,7 @@
   <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://upload.wikimedia.org; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://upload.wikimedia.org; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob: https://bvsms.saude.gov.br https://www.gov.br; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Assistência ao Parto, Vigilância Intraparto e Partograma · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
@@ -34,6 +34,13 @@
     .book-figure img{display:block;width:100%;max-width:760px;height:auto;margin:0 auto;border-radius:12px;background:#fff}
     .book-figure figcaption{margin-top:9px;color:var(--muted);font-size:10.5px;line-height:1.45;text-align:left}
     .book-figure figcaption strong{color:var(--text);font-weight:600}
+    .book-source-figure{margin:18px 0;padding:14px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:16px;background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
+    .book-source-figure iframe{display:block;width:100%;height:760px;border:0;border-radius:11px;background:#fff}
+    .book-source-figure figcaption{margin-top:10px;color:var(--muted);font-size:10.5px;line-height:1.5}
+    .book-source-figure figcaption strong{color:var(--text);font-weight:600}
+    .book-source-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}
+    .book-source-actions a{display:inline-flex;align-items:center;min-height:32px;padding:0 10px;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));border-radius:8px;color:var(--accent);background:var(--surface);text-decoration:none;font-size:9px}
+    @media(max-width:700px){.book-source-figure iframe{height:560px}}
   
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none}.book-outline-nav{display:flex;gap:6px;overflow-x:auto}.book-outline-link{flex:0 0 auto;white-space:nowrap}.book-grid-2,.mindmap{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.flow-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px}}
   </style>
@@ -399,11 +406,53 @@
             <div class="book-mini"><strong>WHO Labour Care Guide</strong><p>Substitui a lógica de uma velocidade única de dilatação por limites de tempo por centímetro e amplia o olhar para cuidado de suporte, condição materna, fetal, progressão e decisão compartilhada.</p></div>
           </div>
 
-          <h3>5.2 Por que a regra de “1 cm por hora” caiu?</h3>
+
+          <h3>5.2 Antes de interpretar: veja um partograma de verdade</h3>
+          <p>Para aprender partograma, é importante enxergar o formulário real. Abaixo estão duas fontes brasileiras: primeiro, o <strong>modelo oficial disponibilizado pela ANS</strong>; depois, um <strong>exemplo preenchido do Ministério da Saúde</strong>. Observe como o instrumento reúne progressão do parto, condição fetal, dinâmica uterina e registros maternos no mesmo documento.</p>
+
+          <figure class="book-source-figure" id="fig-partograma-ans">
+            <iframe
+              src="https://www.gov.br/ans/pt-br/arquivos/assuntos/consumidor/parto-na-saude-suplementar/parto-partograma-pdf#view=FitH"
+              title="Modelo oficial de partograma da ANS"
+              loading="lazy"
+            ></iframe>
+            <figcaption><strong>Modelo de partograma — ANS, Anexo III da RN nº 368/2015.</strong> Use esta figura para reconhecer a estrutura do formulário antes de estudar o preenchimento.</figcaption>
+            <div class="book-source-actions">
+              <a href="https://www.gov.br/ans/pt-br/arquivos/assuntos/consumidor/parto-na-saude-suplementar/parto-partograma-pdf" target="_blank" rel="noopener">Abrir fonte oficial da ANS ↗</a>
+            </div>
+          </figure>
+
+          <figure class="book-source-figure" id="fig-partograma-ms-preenchido">
+            <iframe
+              src="https://bvsms.saude.gov.br/bvs/publicacoes/cd04_13.pdf#page=50&view=FitH"
+              title="Exemplo preenchido de partograma do Ministério da Saúde"
+              loading="lazy"
+            ></iframe>
+            <figcaption><strong>Exemplo preenchido — Ministério da Saúde, “Parto, aborto e puerpério: assistência humanizada à mulher”, Figura 4.</strong> Repare nos triângulos da dilatação, círculos da apresentação/variedade de posição, registros seriados da FCF e blocos que representam a duração das contrações. A publicação permite reprodução parcial ou total com citação da fonte.</figcaption>
+            <div class="book-source-actions">
+              <a href="https://bvsms.saude.gov.br/bvs/publicacoes/cd04_13.pdf#page=50" target="_blank" rel="noopener">Abrir figura na fonte do Ministério ↗</a>
+            </div>
+          </figure>
+
+          <div class="drive-block">
+            <h4>Como ler o exemplo preenchido, de cima para baixo</h4>
+            <ol>
+              <li><strong>Dilatação cervical:</strong> é colocada no gráfico contra o tempo. No modelo do Ministério, o triângulo representa a dilatação.</li>
+              <li><strong>Descida e variedade de posição:</strong> aparecem junto da progressão; o círculo representa a apresentação e sua orientação.</li>
+              <li><strong>Hora real e hora de registro:</strong> impedem que a curva seja interpretada sem contexto temporal.</li>
+              <li><strong>FCF:</strong> cada avaliação é registrada em sequência, permitindo enxergar tendência e não apenas um valor isolado.</li>
+              <li><strong>Contrações:</strong> frequência e duração são registradas graficamente; blocos diferentes representam faixas de duração.</li>
+              <li><strong>Bolsa/líquido, ocitocina, medicamentos, fluidos, analgesia e observações:</strong> documentam fatores que podem explicar mudanças na evolução.</li>
+            </ol>
+          </div>
+
+          <div class="book-callout"><strong>Pulo do Gato</strong>O partograma não é só a curva de dilatação. Em uma questão de prova ou no plantão, olhe o documento inteiro: <strong>dilatação + descida + posição + FCF + contrações + líquido + intervenções</strong>. É essa integração que permite entender por que o parto está evoluindo bem ou não.</div>
+
+          <h3>5.3 Por que a regra de “1 cm por hora” caiu?</h3>
           <p>Porque a progressão normal é mais variável do que se imaginava. Mulheres saudáveis podem avançar mais lentamente sem que isso, isoladamente, represente distócia. A OMS não recomenda usar a velocidade de <strong>1 cm/h como gatilho único</strong> para intervenção.</p>
           <div class="book-callout"><strong>Pulo do Gato</strong>“A dilatação não subiu 1 cm na última hora” não é sinônimo de falha de progressão. Antes de intervir, pergunte: em que fase ela está? Como estão mãe e feto? Há progressão ao longo do tempo? Como estão contrações, descida, posição e variedade de posição?</div>
 
-          <h3>5.3 O que deve entrar no raciocínio do gráfico?</h3>
+          <h3>5.4 O que deve entrar no raciocínio do gráfico?</h3>
           <table class="book-table"><thead><tr><th>Domínio</th><th>Exemplos do que registrar/interpretar</th></tr></thead><tbody>
             <tr><td><strong>Feto</strong></td><td>FCF, líquido amniótico, posição/apresentação quando relevante.</td></tr>
             <tr><td><strong>Progressão</strong></td><td>Dilatação, descida/estação, contrações e evolução da apresentação.</td></tr>
@@ -412,7 +461,7 @@
             <tr><td><strong>Cuidado de suporte</strong></td><td>Acompanhante, mobilidade, posição, líquidos/alimentação quando apropriados e comunicação.</td></tr>
           </tbody></table>
 
-          <h3>5.4 Como ler a curva de dilatação sem decorar desenho?</h3>
+          <h3>5.5 Como ler a curva de dilatação sem decorar desenho?</h3>
           <ol>
             <li><strong>Localize o tempo.</strong> Entenda quando cada exame foi feito.</li>
             <li><strong>Veja a dilatação correspondente.</strong> Compare medidas seriadas, não um ponto isolado.</li>
@@ -421,13 +470,13 @@
             <li><strong>Integre mãe e feto.</strong> Um gráfico “lento” com ambos estáveis é diferente de um cenário com deterioração fetal ou materna.</li>
           </ol>
 
-          <h3>5.5 Linha de alerta e linha de ação: por que ainda preciso saber?</h3>
+          <h3>5.6 Linha de alerta e linha de ação: por que ainda preciso saber?</h3>
           <p>Porque aparecem em provas e em modelos tradicionais. Didaticamente, a linha de alerta sinalizava progressão mais lenta do que o padrão esperado; a linha de ação indicava necessidade de reavaliação/conduta no modelo clássico. <strong>Isso não significa que cruzar uma linha determine automaticamente ocitocina ou cesariana.</strong></p>
 
-          <h3>5.6 O que significa “parada de dilatação” ou “parada de descida”?</h3>
+          <h3>5.7 O que significa “parada de dilatação” ou “parada de descida”?</h3>
           <p>Esses termos descrevem ausência de progressão ao longo de um intervalo clinicamente relevante, mas a definição operacional depende do protocolo adotado, fase do parto, paridade, analgesia, atividade uterina e condições materno-fetais. O conceito importante para o aluno é que <strong>diagnóstico de distócia exige contexto e tempo suficiente para avaliação</strong>.</p>
 
-          <h3>5.7 Os 3 P da distócia: a forma mais simples de organizar o raciocínio</h3>
+          <h3>5.8 Os 3 P da distócia: a forma mais simples de organizar o raciocínio</h3>
           <table class="book-table"><thead><tr><th>P</th><th>Significado</th><th>Exemplos</th></tr></thead><tbody>
             <tr><td><strong>Power / potência</strong></td><td>Força propulsora.</td><td>Contrações inadequadas, esforço expulsivo insuficiente.</td></tr>
             <tr><td><strong>Passenger / passageiro</strong></td><td>Feto.</td><td>Macrossomia, apresentação anômala, deflexão, occípito-posterior persistente.</td></tr>
