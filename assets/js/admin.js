@@ -5736,7 +5736,8 @@
       if (status) status.textContent = "Não foi possível carregar as imagens das apostilas: " + (error.message || "erro de leitura");
       throw error;
     }
-    apostilaImageReviewRows = Array.isArray(data) ? data : [];
+    apostilaImageReviewRows = (Array.isArray(data) ? data : [])
+      .filter(row => row.review_status === "pending");
     renderApostilaImageReviewQueue(apostilaImageReviewRows);
   }
 
