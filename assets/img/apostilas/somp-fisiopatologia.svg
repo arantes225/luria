@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="t d">
+<title id="t">Fisiopatologia integrada da SOMP</title><desc id="d">Fluxograma mostrando resistência à insulina, hiperinsulinemia, produção de andrógenos, redução de SHBG e disfunção ovulatória.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#184888"/></marker></defs>
+<rect width="1400" height="760" rx="36" fill="#f7faff"/>
+<text x="700" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#0a2342">Fisiopatologia integrada da SOMP</text>
+<g font-family="Arial,sans-serif" font-size="22">
+<rect x="80" y="170" width="300" height="120" rx="24" fill="#e9f1ff" stroke="#184888" stroke-width="4"/>
+<text x="230" y="218" text-anchor="middle" font-weight="700" fill="#184888">Resistência à insulina</text><text x="230" y="255" text-anchor="middle" fill="#385674">± adiposidade visceral</text>
+<rect x="550" y="170" width="300" height="120" rx="24" fill="#e9f1ff" stroke="#184888" stroke-width="4"/>
+<text x="700" y="218" text-anchor="middle" font-weight="700" fill="#184888">Hiperinsulinemia</text><text x="700" y="255" text-anchor="middle" fill="#385674">compensatória</text>
+<rect x="1020" y="120" width="300" height="120" rx="24" fill="#eef8f4" stroke="#2f7d62" stroke-width="4"/>
+<text x="1170" y="168" text-anchor="middle" font-weight="700" fill="#2f7d62">↑ Andrógenos ovarianos</text><text x="1170" y="205" text-anchor="middle" fill="#3e6559">sinergia insulina + LH</text>
+<rect x="1020" y="300" width="300" height="120" rx="24" fill="#fff6e8" stroke="#b67a13" stroke-width="4"/>
+<text x="1170" y="348" text-anchor="middle" font-weight="700" fill="#9a650e">↓ SHBG hepática</text><text x="1170" y="385" text-anchor="middle" fill="#6f572d">↑ testosterona livre</text>
+<rect x="720" y="520" width="300" height="120" rx="24" fill="#fdeef4" stroke="#a64d78" stroke-width="4"/>
+<text x="870" y="568" text-anchor="middle" font-weight="700" fill="#913c68">Hiperandrogenismo</text><text x="870" y="605" text-anchor="middle" fill="#70435a">clínico / bioquímico</text>
+<rect x="1080" y="520" width="240" height="120" rx="24" fill="#f0efff" stroke="#6257a8" stroke-width="4"/>
+<text x="1200" y="568" text-anchor="middle" font-weight="700" fill="#564a9b">Arresto folicular</text><text x="1200" y="605" text-anchor="middle" fill="#584f7c">oligo/anovulação</text>
+<line x1="380" y1="230" x2="540" y2="230" stroke="#184888" stroke-width="6" marker-end="url(#a)"/>
+<line x1="850" y1="220" x2="1010" y2="180" stroke="#184888" stroke-width="6" marker-end="url(#a)"/>
+<line x1="850" y1="245" x2="1010" y2="350" stroke="#184888" stroke-width="6" marker-end="url(#a)"/>
+<line x1="1160" y1="242" x2="930" y2="510" stroke="#184888" stroke-width="6" marker-end="url(#a)"/>
+<line x1="1160" y1="422" x2="930" y2="510" stroke="#184888" stroke-width="6" marker-end="url(#a)"/>
+<line x1="1018" y1="580" x2="1070" y2="580" stroke="#184888" stroke-width="6" marker-end="url(#a)"/>
+</g>
+<text x="700" y="706" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#52708f">O ciclo se retroalimenta: hiperandrogenismo e adiposidade podem piorar a resistência à insulina.</text>
+</svg>
