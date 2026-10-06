@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v273-layout-rescue";
+const CACHE_VERSION = "luria-pwa-v274-apostila-route-lock";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -214,6 +214,49 @@ self.addEventListener("fetch", event => {
         if (cached) return cached;
         throw error;
       }
+    })());
+    return;
+  }
+
+
+  const apostilaMatch = url.pathname.match(/^\/apostilas\/([^/]+)\/?$/);
+  if (request.mode === "navigate" && apostilaMatch) {
+    event.respondWith((async () => {
+      const canonicalPath = "/apostilas/" + apostilaMatch[1] + "/";
+      const indexUrl = canonicalPath + "index.html";
+      const indexRequest = new Request(indexUrl, {
+        method: "GET",
+        headers: request.headers,
+        mode: "same-origin",
+        credentials: "same-origin",
+        redirect: "follow",
+        cache: "no-store"
+      });
+
+      try {
+        const response = await fetch(indexRequest, { cache: "no-store" });
+
+        if (response?.ok) {
+          const copy = response.clone();
+          const cache = await caches.open(RUNTIME_CACHE);
+          await cache.put(canonicalPath, copy.clone()).catch(() => {});
+          await cache.put(indexUrl, copy).catch(() => {});
+          trimCache(RUNTIME_CACHE, RUNTIME_MAX_ITEMS).catch(() => {});
+          return response;
+        }
+      } catch {}
+
+      const cached =
+        await caches.match(indexUrl)
+        || await caches.match(canonicalPath)
+        || await caches.match(request);
+
+      if (cached) return cached;
+
+      return new Response("Apostila indisponível no momento.", {
+        status: 503,
+        headers: { "Content-Type": "text/plain; charset=utf-8" }
+      });
     })());
     return;
   }
