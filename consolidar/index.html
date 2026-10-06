@@ -124,6 +124,114 @@ body[data-page="consolidar"] .learn-grid{
 body[data-page="consolidar"] .learn-bottom{display:none!important}
 </style>
 
+
+<style id="consolidar-fit-v4">
+@media (min-width:761px){
+  body[data-page="consolidar"]{
+    overflow:hidden!important;
+  }
+  body[data-page="consolidar"] .main{
+    height:100vh!important;
+    overflow:hidden!important;
+  }
+  body[data-page="consolidar"] .page{
+    height:100%!important;
+    min-height:0!important;
+    overflow:hidden!important;
+  }
+  body[data-page="consolidar"] .learn-page{
+    height:calc(100vh - 82px)!important;
+    min-height:0!important;
+    padding-bottom:0!important;
+    display:grid!important;
+    grid-template-rows:auto minmax(0,1fr)!important;
+    gap:8px!important;
+    overflow:hidden!important;
+  }
+  body[data-page="consolidar"] .learn-grid{
+    min-height:0!important;
+    height:100%!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    grid-template-rows:minmax(0,1.22fr) minmax(0,.9fr)!important;
+    gap:8px!important;
+  }
+  body[data-page="consolidar"] .learn-card{
+    min-height:0!important;
+    height:100%!important;
+    max-height:none!important;
+    box-sizing:border-box!important;
+  }
+  body[data-page="consolidar"] .learn-card--questions{
+    grid-column:1 / -1!important;
+    min-height:0!important;
+    height:100%!important;
+    padding:20px 22px!important;
+    border-radius:22px!important;
+  }
+  body[data-page="consolidar"] .learn-card--questions .learn-icon{
+    width:50px!important;
+    height:50px!important;
+    border-radius:15px!important;
+  }
+  body[data-page="consolidar"] .learn-card--questions .learn-icon svg{
+    width:25px!important;
+    height:25px!important;
+  }
+  body[data-page="consolidar"] .learn-card--questions h2{
+    margin:16px 0 6px!important;
+    font-size:20px!important;
+  }
+  body[data-page="consolidar"] .learn-card--questions p{
+    font-size:11px!important;
+    line-height:1.45!important;
+  }
+  body[data-page="consolidar"] .learn-card--secondary{
+    min-height:0!important;
+    height:100%!important;
+    padding:16px 18px!important;
+  }
+  body[data-page="consolidar"] .learn-card--secondary .learn-icon{
+    width:44px!important;
+    height:44px!important;
+    border-radius:13px!important;
+  }
+  body[data-page="consolidar"] .learn-card--secondary .learn-icon svg{
+    width:22px!important;
+    height:22px!important;
+  }
+  body[data-page="consolidar"] .learn-card--secondary h2{
+    margin:12px 0 5px!important;
+    font-size:15px!important;
+  }
+  body[data-page="consolidar"] .learn-card--secondary p{
+    font-size:10px!important;
+    line-height:1.4!important;
+  }
+  body[data-page="consolidar"] .learn-cta{
+    padding-top:8px!important;
+    font-size:10px!important;
+  }
+}
+@media(max-width:760px){
+  body[data-page="consolidar"]{overflow:auto!important}
+  body[data-page="consolidar"] .main,
+  body[data-page="consolidar"] .page,
+  body[data-page="consolidar"] .learn-page{
+    height:auto!important;
+    overflow:visible!important;
+  }
+  body[data-page="consolidar"] .learn-grid{
+    grid-template-columns:1fr!important;
+    grid-template-rows:none!important;
+    gap:8px!important;
+  }
+  body[data-page="consolidar"] .learn-card--questions{
+    grid-column:auto!important;
+  }
+}
+</style>
+
 </head>
 <body data-page="consolidar">
   <div class="app-shell">
@@ -167,18 +275,6 @@ body[data-page="consolidar"] .learn-bottom{display:none!important}
               <span class="learn-cta">Revisar erros →</span>
             </a>
           </div></section>
-
-            <section class="learn-panel">
-              <h3>Atividades recentes</h3>
-              <small>O que você consolidou por último.</small>
-              <div class="recent-list">
-                <div class="recent-row"><strong>Flashcards · Cardiologia</strong><span>hoje</span></div>
-                <div class="recent-row"><strong>Erros · Pediatria</strong><span>ontem</span></div>
-                <div class="recent-row"><strong>Questões · GO</strong><span>02/10</span></div>
-              </div>
-            </section>
-          </div>
-        </section>
       </div>
     </main>
   </div>
