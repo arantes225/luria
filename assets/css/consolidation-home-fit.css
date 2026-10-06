@@ -1,493 +1,139 @@
-/* Home surfaces follow Flashcards: two aligned rows within the existing shell. */
+/* Flashcards parity v2: homes use the same geometry, typography and metric scale as Flashcards. */
+@media (min-width:981px){
+  html body[data-page="erros"],
+  html body[data-page="questoes"]{overflow:hidden!important;height:100dvh!important;min-height:100dvh!important;max-height:100dvh!important;}
+  html body[data-page="erros"] .main,
+  html body[data-page="questoes"] .main{height:100dvh!important;min-height:0!important;max-height:100dvh!important;overflow:hidden!important;}
+  html body[data-page="erros"] .main > .page,
+  html body[data-page="questoes"] .main > .page{height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;box-sizing:border-box!important;}
+  html body[data-page="erros"] .page > .topbar,
+  html body[data-page="questoes"] .page > .topbar{flex:0 0 0!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;}
+  html body[data-page="erros"] .page > .luria-page-spotlight,
+  html body[data-page="questoes"] .page > .luria-page-spotlight{flex:0 0 auto!important;margin:0 0 12px!important;}
+  html body[data-page="erros"] .page > .error-home-layout.review-mode:not([hidden]),
+  html body[data-page="questoes"] .page > .qs-home.active{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.7fr) minmax(280px,.78fr)!important;
+    grid-template-rows:272px minmax(0,1fr)!important;
+    gap:12px!important;
+    flex:1 1 auto!important;
+    height:calc(100dvh - 240px)!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Flashcards-equivalent top highlight */
+  body[data-page="erros"] .error-ccq-home-card,
+  body[data-page="questoes"] #qs-daily-card{
+    grid-column:1!important;grid-row:1!important;
+    height:272px!important;min-height:272px!important;max-height:272px!important;
+    margin:0!important;padding:28px!important;
+    border:1px solid var(--border)!important;border-radius:15px!important;
+    background:#184888!important;
+    border-color:rgba(255,255,255,.18)!important;
+    color:#fff!important;
+    box-shadow:0 14px 32px color-mix(in srgb,var(--accent) 24%,transparent)!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+  body[data-page="erros"] .error-ccq-home-card{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;}
+  body[data-page="questoes"] #qs-daily-card{display:flex!important;flex-direction:column!important;justify-content:center!important;gap:12px!important;}
+  body[data-page="questoes"] #qs-daily-card .qs-home-system-copy{padding:0!important;min-height:0!important;}
+  body[data-page="questoes"] #qs-daily-card .qs-home-system-copy h2{font-size:22px!important;line-height:1.18!important;margin:5px 0 7px!important;font-weight:400!important;}
+  body[data-page="questoes"] #qs-daily-card .qs-home-system-copy p{font-size:11px!important;line-height:1.5!important;max-width:620px!important;margin:0!important;}
+  body[data-page="questoes"] #qs-daily-card .qs-home-eyebrow{font-size:9px!important;font-weight:400!important;}
+  body[data-page="questoes"] #qs-daily-card .qs-home-daily-action{position:static!important;display:flex!important;flex-direction:column!important;align-items:center!important;gap:8px!important;width:100%!important;padding:0!important;margin:0!important;}
+  body[data-page="questoes"] #qs-daily-card .qs-home-daily-count{font-size:17px!important;line-height:1.2!important;margin:0!important;}
+  body[data-page="questoes"] #qs-daily-card #qs-start-daily{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:48px!important;min-height:48px!important;max-height:48px!important;padding:10px 16px!important;margin:0!important;font-size:16px!important;box-sizing:border-box!important;}
+
+  /* Caderno uses the Flashcards launcher scale for the logo and text. */
+  body[data-page="erros"] .error-ccq-home-logo{position:relative!important;width:150px!important;height:118px!important;min-width:150px!important;min-height:118px!important;max-width:150px!important;max-height:118px!important;flex:0 0 150px!important;margin:0!important;transform:none!important;display:grid!important;place-items:center!important;}
+  body[data-page="erros"] .error-ccq-home-logo img{width:76px!important;height:76px!important;object-fit:contain!important;transform:none!important;}
+  body[data-page="erros"] .error-ccq-home-copy{position:relative!important;z-index:2!important;min-width:0!important;min-height:0!important;padding:22px 0 22px 5px!important;text-align:left!important;overflow:hidden!important;}
+  body[data-page="erros"] .error-ccq-home-label{display:inline-flex!important;padding:5px 8px!important;border-radius:7px!important;background:var(--accent-soft)!important;color:var(--accent)!important;font-size:9px!important;font-weight:400!important;letter-spacing:.6px!important;}
+  body[data-page="erros"] .error-ccq-home-copy strong{display:block!important;max-width:820px!important;margin-top:11px!important;font-size:22px!important;line-height:1.18!important;letter-spacing:-.4px!important;font-weight:400!important;}
+  body[data-page="erros"] .error-ccq-home-copy small{display:block!important;margin-top:9px!important;font-size:11px!important;line-height:1.4!important;color:var(--muted)!important;}
+
+  /* Same 272px metrics surface as Flashcards. */
+  body[data-page="erros"] .error-review-home-aside,
+  body[data-page="questoes"] .qs-home-week-compact{display:block!important;grid-column:2!important;grid-row:1!important;height:272px!important;min-height:272px!important;max-height:272px!important;margin:0!important;padding:16px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;overflow:hidden!important;box-sizing:border-box!important;}
+  body[data-page="erros"] .error-review-home-aside{display:contents!important;}
+  body[data-page="erros"] .error-review-home-aside > .error-quick-metrics{display:block!important;grid-column:2!important;grid-row:1!important;height:272px!important;min-height:272px!important;max-height:272px!important;padding:16px!important;margin:0!important;}
+  body[data-page="erros"] .error-side-head,
+  body[data-page="questoes"] .error-side-head{margin:0 0 11px!important;padding:0!important;border:0!important;}
+  body[data-page="erros"] .error-side-head h3,
+  body[data-page="questoes"] .error-side-head h3{font-size:16px!important;line-height:1.2!important;margin:5px 0 11px!important;font-weight:400!important;}
+  body[data-page="erros"] .error-quick-metrics-body{display:grid!important;grid-template-rows:auto auto auto!important;gap:7px!important;height:auto!important;min-height:0!important;}
+  body[data-page="questoes"] .error-quick-metrics-body{display:grid!important;grid-template-rows:auto auto auto!important;gap:7px!important;height:auto!important;min-height:0!important;}
+  body[data-page="erros"] .error-metric-summary-grid,
+  body[data-page="questoes"] .error-metric-summary-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;}
+  body[data-page="erros"] .error-metric-summary-grid > div,
+  body[data-page="questoes"] .error-metric-summary-grid > div{min-height:58px!important;height:auto!important;padding:9px!important;border:1px solid var(--border)!important;border-radius:11px!important;background:var(--surface-2)!important;box-sizing:border-box!important;}
+  body[data-page="erros"] .error-metric-summary-grid span,
+  body[data-page="erros"] .error-metric-summary-grid small,
+  body[data-page="questoes"] .error-metric-summary-grid span,
+  body[data-page="questoes"] .error-metric-summary-grid small{font-size:9px!important;font-weight:400!important;line-height:1.2!important;text-transform:none!important;}
+  body[data-page="erros"] .error-metric-summary-grid strong,
+  body[data-page="questoes"] .error-metric-summary-grid strong{font-size:20px!important;margin:5px 0 3px!important;line-height:1!important;}
+  body[data-page="erros"] .error-metric-progress,
+  body[data-page="questoes"] .error-metric-progress{margin-top:8px!important;padding:8px 0 0!important;border-top:1px solid var(--border)!important;display:grid!important;grid-template-columns:68px minmax(0,1fr)!important;gap:10px!important;align-items:center!important;}
+  body[data-page="erros"] .error-metric-ring,
+  body[data-page="questoes"] .error-metric-ring{width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important;}
+  body[data-page="erros"] .error-metric-detail,
+  body[data-page="questoes"] .error-metric-detail{display:none!important;}
+  body[data-page="erros"] .error-metric-progress > div:last-child > strong,
+  body[data-page="questoes"] .error-metric-progress > div:last-child > strong{font-size:13px!important;font-weight:400!important;}
+  body[data-page="erros"] .error-metric-progress > div:last-child > span,
+  body[data-page="questoes"] .error-metric-progress > div:last-child > span{font-size:9px!important;line-height:1.3!important;margin:3px 0 7px!important;}
+  body[data-page="erros"] .error-metric-mini-grid,
+  body[data-page="questoes"] .error-metric-mini-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;}
+  body[data-page="erros"] .error-metric-mini-grid > div,
+  body[data-page="questoes"] .error-metric-mini-grid > div{min-height:42px!important;height:auto!important;padding:6px 8px!important;border:1px solid var(--border)!important;border-radius:11px!important;}
+
+  /* Same lower row as Flashcards. */
+  body[data-page="erros"] .error-home-main,
+  body[data-page="questoes"] .qs-home-my-lists{grid-column:1!important;grid-row:2!important;height:100%!important;min-height:0!important;max-height:100%!important;margin:0!important;padding:16px 18px!important;border:1px solid var(--border)!important;border-radius:15px!important;background:var(--surface)!important;overflow:hidden!important;box-sizing:border-box!important;}
+  body[data-page="erros"] .error-home-main{display:flex!important;flex-direction:column!important;}
+  body[data-page="erros"] .error-home-main:before{font-size:16px!important;font-weight:400!important;line-height:1.2!important;margin:0 0 10px!important;}
+  body[data-page="erros"] .error-library-nav{flex:0 0 auto!important;margin:0 0 8px!important;}
+  body[data-page="erros"] .error-library-panel{display:flex!important;flex:1!important;min-height:0!important;overflow:hidden!important;}
+  body[data-page="erros"] #error-library{height:100%!important;min-height:0!important;max-height:100%!important;overflow:auto!important;}
+  body[data-page="questoes"] .qs-home-my-lists{display:flex!important;flex-direction:column!important;}
+  body[data-page="questoes"] .qs-home-my-lists-head{flex:0 0 auto!important;margin:0 0 10px!important;}
+  body[data-page="questoes"] .qs-home-my-lists-head h2{font-size:16px!important;line-height:1.2!important;font-weight:400!important;margin:5px 0 0!important;}
+  body[data-page="questoes"] #qs-home-my-lists-content{display:flex!important;flex:1!important;align-items:stretch!important;gap:12px!important;min-height:0!important;height:auto!important;overflow:auto!important;padding:2px 2px 10px!important;}
+  body[data-page="questoes"] .qs-home-user-card{flex:0 0 198px!important;width:198px!important;height:100%!important;min-height:0!important;padding:17px!important;border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;border-left:5px solid var(--accent)!important;border-radius:13px!important;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface) 58%)!important;box-shadow:none!important;overflow:hidden!important;box-sizing:border-box!important;}
+  body[data-page="questoes"] .qs-home-user-card-icon{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;font-size:17px!important;}
+  body[data-page="questoes"] .qs-home-user-card-icon svg,body[data-page="questoes"] .qs-home-user-card-icon img{width:22px!important;height:22px!important;object-fit:contain!important;}
+  body[data-page="questoes"] .qs-home-user-main strong{font-size:15px!important;font-weight:400!important;line-height:1.15!important;}
+  body[data-page="questoes"] .qs-home-user-main small{font-size:9px!important;line-height:1.2!important;}
+  body[data-page="questoes"] .qs-home-user-open{font-size:9px!important;min-height:34px!important;margin-top:auto!important;}
+  body[data-page="erros"] .error-home-actions,
+  body[data-page="questoes"] .qs-home-actions-compact{grid-column:2!important;grid-row:2!important;height:100%!important;min-height:0!important;max-height:100%!important;display:grid!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;gap:10px!important;margin:0!important;padding:0!important;overflow:hidden!important;}
+  body[data-page="erros"] .error-home-action,
+  body[data-page="questoes"] .error-home-action{position:relative!important;display:grid!important;grid-template-columns:56px minmax(0,1fr) 38px!important;align-items:center!important;gap:12px!important;height:auto!important;min-height:0!important;max-height:none!important;padding:0 15px!important;border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border))!important;border-radius:19px!important;background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;color:var(--accent)!important;text-align:left!important;box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 8%,transparent)!important;box-sizing:border-box!important;overflow:hidden!important;}
+  body[data-page="erros"] .error-home-action-icon,
+  body[data-page="questoes"] .error-home-action-icon{width:42px!important;height:42px!important;border-radius:11px!important;background:var(--accent-soft)!important;color:var(--accent)!important;display:flex!important;align-items:center!important;justify-content:center!important;font-style:normal!important;font-size:20px!important;}
+  body[data-page="erros"] .error-home-action-copy strong,
+  body[data-page="questoes"] .error-home-action-copy strong{display:block!important;font-size:13px!important;font-weight:500!important;line-height:1.2!important;}
+  body[data-page="erros"] .error-home-action-copy small,
+  body[data-page="questoes"] .error-home-action-copy small{display:block!important;margin-top:3px!important;font-size:9px!important;line-height:1.2!important;color:var(--muted)!important;}
+  body[data-page="erros"] .error-home-action-arrow,
+  body[data-page="questoes"] .error-home-action-arrow{font-size:16px!important;font-weight:400!important;text-align:center!important;}
+}
+@media(max-width:980px){
+  body[data-page="erros"] .error-home-layout.review-mode:not([hidden]),
+  body[data-page="questoes"] .qs-home.active{height:auto!important;max-height:none!important;display:block!important;overflow:visible!important;}
+}
+
 @media(min-width:981px){
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) > .app-shell > .main,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) > .app-shell > .main{
-  height:100%!important;
-  min-height:0!important;
-  max-height:100%!important;
-  overflow:hidden!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) > .app-shell > .main > .page,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) > .app-shell > .main > .page{
-  display:flex!important;
-  flex-direction:column!important;
-  height:100%!important;
-  min-height:0!important;
-  max-height:100%!important;
-  gap:8px!important;
-  overflow:hidden!important;
-  box-sizing:border-box!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .page > .luria-page-spotlight,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .page > .luria-page-spotlight{
-  flex:0 0 auto!important;
-  margin:0!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .page > .topbar,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .page > .topbar{
-  flex:0 0 0!important;
-  min-height:0!important;
-  height:0!important;
-  margin:0!important;
-  padding:0!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home.active{
-  display:flex!important;
-  flex-direction:column!important;
-  flex:1!important;
-  min-height:0!important;
-  height:auto!important;
-  max-height:100%!important;
-  margin:0!important;
-  padding:0!important;
-  overflow:hidden!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-workspace{
-  display:grid!important;
-  grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr)!important;
-  grid-template-rows:minmax(0,1.08fr) minmax(0,.92fr)!important;
-  gap:8px!important;
-  flex:1!important;
-  height:100%!important;
-  min-height:0!important;
-  max-height:100%!important;
-  overflow:hidden!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-main-column,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-side-column{
-  display:contents!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-daily-card{
-  grid-column:1!important;
-  grid-row:1!important;
-  display:flex!important;
-  flex-direction:column!important;
-  justify-content:center!important;
-  gap:12px!important;
-  padding:20px!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-week-compact{
-  grid-column:2!important;
-  grid-row:1!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists{
-  grid-column:1!important;
-  grid-row:2!important;
-  display:flex!important;
-  flex-direction:column!important;
-  padding:14px!important;
-  overflow:hidden!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-actions-compact{
-  grid-column:2!important;
-  grid-row:2!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-layout.review-mode:not([hidden]){
-  display:grid!important;
-  grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr)!important;
-  grid-template-rows:minmax(0,1.08fr) minmax(0,.92fr)!important;
-  gap:8px!important;
-  flex:1!important;
-  height:auto!important;
-  min-height:0!important;
-  max-height:100%!important;
-  margin:0!important;
-  padding:0!important;
-  overflow:hidden!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-daily-review-card{
-  grid-column:1!important;
-  grid-row:1!important;
-  display:flex!important;
-  align-items:center!important;
-  gap:20px!important;
-  padding:20px!important;
-  overflow:auto!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-aside{
-  display:contents!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-aside > .error-quick-metrics{
-  grid-column:2!important;
-  grid-row:1!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-main{
-  grid-column:1!important;
-  grid-row:2!important;
-  display:flex!important;
-  flex-direction:column!important;
-  gap:8px!important;
-  padding:14px!important;
-  overflow:hidden!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-actions{
-  grid-column:2!important;
-  grid-row:2!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-daily-card,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-week-compact,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-actions-compact{
-  height:100%!important;
-  min-height:0!important;
-  max-height:100%!important;
-  margin:0!important;
-  box-sizing:border-box!important;
-  border-radius:15px!important;
-  transform:none!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-daily-review-card,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-main,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-aside > .error-quick-metrics,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-actions{
-  height:100%!important;
-  min-height:0!important;
-  max-height:100%!important;
-  margin:0!important;
-  box-sizing:border-box!important;
-  border-radius:15px!important;
-  transform:none!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-actions,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-actions{
-  display:grid!important;
-  grid-template-rows:repeat(3,minmax(0,1fr))!important;
-  gap:8px!important;
-  padding:0!important;
-  overflow:hidden!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action{
-  display:grid!important;
-  grid-template-columns:36px minmax(0,1fr) 24px!important;
-  align-items:center!important;
-  gap:10px!important;
-  height:100%!important;
-  min-height:0!important;
-  max-height:100%!important;
-  margin:0!important;
-  padding:8px 12px!important;
-  box-sizing:border-box!important;
-  border-radius:13px!important;
-  text-align:left!important;
-  overflow:hidden!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-icon,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-icon{
-  display:grid!important;
-  place-items:center!important;
-  width:36px!important;
-  height:36px!important;
-  min-width:36px!important;
-  min-height:36px!important;
-  border-radius:10px!important;
-  font-size:18px!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-icon img,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-icon svg,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-icon img,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-icon svg{
-  width:22px!important;
-  height:22px!important;
-  max-width:22px!important;
-  max-height:22px!important;
-  object-fit:contain!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-copy strong,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-copy strong{
-  display:block!important;
-  font-size:15px!important;
-  line-height:1.2!important;
-  font-weight:400!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-copy small,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-copy small{
-  display:block!important;
-  font-size:12px!important;
-  line-height:1.25!important;
-  margin-top:3px!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-action-arrow,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-home-action-arrow{
-  width:24px!important;
-  height:24px!important;
-  font-size:18px!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-quick-metrics,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-quick-metrics{
-  display:flex!important;
-  flex-direction:column!important;
-  padding:12px!important;
-  overflow:auto!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-side-head,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-side-head{
-  flex:0 0 auto!important;
-  margin:0 0 8px!important;
-  padding:0!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-side-head h3,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-side-head h3{
-  font-size:16px!important;
-  font-weight:400!important;
-  line-height:1.2!important;
-  margin:0!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-quick-metrics-body,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-quick-metrics-body{
-  display:grid!important;
-  grid-template-rows:minmax(58px,1fr) minmax(72px,1.15fr) minmax(42px,.75fr)!important;
-  gap:6px!important;
-  flex:1!important;
-  min-height:184px!important;
-  height:auto!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid > div,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-mini-grid > div,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid > div,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-mini-grid > div{
-  height:100%!important;
-  min-height:0!important;
-  max-height:100%!important;
-  padding:6px 8px!important;
-  box-sizing:border-box!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid span,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid small,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-mini-grid span,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid span,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid small,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-mini-grid span{
-  font-size:12px!important;
-  line-height:1.15!important;
-  letter-spacing:0!important;
-  text-transform:none!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-summary-grid strong,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-summary-grid strong{
-  margin:4px 0!important;
-  font-size:20px!important;
-  line-height:1!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress{
-  grid-template-columns:58px minmax(0,1fr)!important;
-  gap:10px!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-ring,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-ring{
-  width:56px!important;
-  height:56px!important;
-  min-width:56px!important;
-  min-height:56px!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-ring strong,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-ring strong{
-  align-self:center!important;
-  justify-self:center!important;
-  font-size:18px!important;
-  line-height:1!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress > div:last-child > strong,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress > div:last-child > strong{
-  font-size:14px!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-metric-progress > div:last-child > span,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .error-metric-progress > div:last-child > span{
-  font-size:12px!important;
-  line-height:1.2!important;
-  margin:3px 0!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-logo{
-  position:relative!important;
-  width:96px!important;
-  height:96px!important;
-  min-width:96px!important;
-  min-height:96px!important;
-  max-width:96px!important;
-  max-height:96px!important;
-  flex:0 0 96px!important;
-  margin:0!important;
-  transform:none!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-logo img{
-  width:100%!important;
-  height:100%!important;
-  object-fit:contain!important;
-  transform:none!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-copy{
-  min-width:0!important;
-  min-height:0!important;
-  max-height:100%!important;
-  overflow:auto!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-copy strong{
-  font-size:16px!important;
-  line-height:1.45!important;
-  font-weight:400!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-label{
-  font-size:18px!important;
-  line-height:1.2!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-ccq-home-copy small{
-  font-size:12px!important;
-  line-height:1.3!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-review-home-content,
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-review-home-content{
-  flex:1!important;
-  min-height:0!important;
-  height:auto!important;
-  max-height:100%!important;
-  overflow:auto!important;
-  margin:0!important;
-  padding:0!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-home-main::before{
-  font-size:16px!important;
-  font-weight:400!important;
-  line-height:1.2!important;
-  margin:0!important;
-}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-library-nav{
-  flex:0 0 auto!important;
-  margin:0!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-system-copy{
-  flex:0 0 auto!important;
-  min-height:0!important;
-  padding:0!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-system-copy h2{
-  font-size:24px!important;
-  line-height:1.15!important;
-  margin:0 0 6px!important;
-  font-weight:400!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-system-copy p{
-  font-size:14px!important;
-  line-height:1.4!important;
-  margin:0!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-daily-action{
-  position:static!important;
-  display:flex!important;
-  flex-direction:column!important;
-  align-items:center!important;
-  gap:8px!important;
-  width:100%!important;
-  padding:0!important;
-  margin:0!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-start-daily{
-  position:relative!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  width:100%!important;
-  height:48px!important;
-  min-height:48px!important;
-  max-height:48px!important;
-  padding:10px 16px!important;
-  margin:0!important;
-  font-size:16px!important;
-  box-sizing:border-box!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-home-daily-count{
-  font-size:18px!important;
-  line-height:1.2!important;
-  margin:0!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists-head{
-  flex:0 0 auto!important;
-  margin:0 0 8px!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-my-lists-head h2{
-  font-size:17px!important;
-  line-height:1.2!important;
-  font-weight:400!important;
-  margin:0!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) #qs-home-my-lists-content{
-  display:flex!important;
-  flex:1!important;
-  align-items:stretch!important;
-  gap:10px!important;
-  min-height:0!important;
-  height:auto!important;
-  max-height:100%!important;
-  padding:2px 2px 8px!important;
-  margin:0!important;
-  overflow-x:auto!important;
-  overflow-y:hidden!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card{
-  flex:0 0 220px!important;
-  width:220px!important;
-  height:100%!important;
-  min-height:0!important;
-  padding:12px!important;
-  display:flex!important;
-  flex-direction:column!important;
-  gap:8px!important;
-  border:1.5px solid color-mix(in srgb,var(--accent) 44%,var(--border))!important;
-  border-left:5px solid var(--accent)!important;
-  border-radius:13px!important;
-  box-shadow:none!important;
-  overflow:auto!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-head{
-  grid-template-columns:34px minmax(0,1fr)!important;
-  gap:8px!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-icon{
-  width:34px!important;
-  height:34px!important;
-  min-width:34px!important;
-  min-height:34px!important;
-  font-size:17px!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-icon svg,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-card-icon img{
-  width:22px!important;
-  height:22px!important;
-  object-fit:contain!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-main strong{
-  font-size:15px!important;
-  line-height:1.2!important;
-  font-weight:400!important;
-  white-space:normal!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-main small,
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-progress small{
-  font-size:12px!important;
-  line-height:1.2!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-progress{
-  grid-column:1 / -1!important;
-  text-align:left!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-progress strong{
-  font-size:14px!important;
-}
-html body[data-page="questoes"]:has(.qs-home.active #qs-daily-card) .qs-home-user-open{
-  font-size:14px!important;
-  min-height:34px!important;
-  margin-top:auto!important;
-}
-
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-library-panel{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;overflow:hidden!important;}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) #error-library{flex:1!important;height:auto!important;min-height:0!important;max-height:100%!important;overflow:auto!important;}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-shelf{min-height:0!important;}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-area-mark{width:34px!important;height:34px!important;min-width:34px!important;font-size:18px!important;}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-area-mark img,html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-area-mark svg{width:22px!important;height:22px!important;object-fit:contain!important;}
-
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-icon{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important;font-size:18px!important;}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-icon img,html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-icon svg{width:22px!important;height:22px!important;object-fit:contain!important;}
-html body[data-page="erros"]:not(.error-library-open):has(.error-home-layout.review-mode:not([hidden]) #error-daily-review-card) .error-notebook-card{border-radius:13px!important;border-left:5px solid var(--accent)!important;box-shadow:none!important;}
+  body[data-page="flashcards"] .flash-top-spotlight,
+  body[data-page="flashcards"] .flash-top-spotlight-icon,
+  body[data-page="flashcards"] .flash-top-spotlight-copy,
+  body[data-page="flashcards"] .flash-top-spotlight-timer{display:none!important;}
+  body[data-page="flashcards"] .flash-home-decks-head h2{font-size:16px!important;font-weight:400!important;}
 }
