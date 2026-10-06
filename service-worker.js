@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v274-apostila-route-lock";
+const CACHE_VERSION = "luria-pwa-v275-passometro-cloud-sync";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
