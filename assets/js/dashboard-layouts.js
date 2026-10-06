@@ -5,7 +5,7 @@
   const root = document.createElement("div");
   root.id = "dashboard-alternative";
   root.setAttribute("aria-live", "off");
-  const topbar = page.querySelector(".topbar");
+  const topbar = document.querySelector('body[data-page="dashboard"] .topbar');
   if (topbar) topbar.after(root);
   else page.prepend(root);
   let current = "1";
@@ -460,7 +460,7 @@
     render();
   }
   function enhanceShell() {
-    const topbar = page.querySelector(".topbar");
+    const topbar = document.querySelector('body[data-page="dashboard"] .topbar');
     if (!topbar || document.getElementById("dl-topbar-controls")) {
       const avatar = topbar?.querySelector(".dl-avatar");
       if (avatar) {
@@ -613,43 +613,12 @@
 })();
 
 
-/* DASHBOARD MASTER SHELL CHROME v15 — 2026-10-04 */
+/* DASHBOARD MASTER SHELL CHROME v16 — 2026-10-05
+   O shell já nasce montado no HTML. Não mover DOM, não usar timers e não observar mutações. */
 (() => {
   if (document.body?.dataset?.page !== "dashboard") return;
-
-  function mountDashboardChrome() {
-    if (window.innerWidth < 981) return;
-
-    const shell = document.querySelector("body[data-page='dashboard'] .app-shell");
-    const topbar = document.querySelector("body[data-page='dashboard'] .topbar");
-    const sidebar = document.querySelector("body[data-page='dashboard'] #sidebar.sidebar");
-    if (!shell || !topbar || !sidebar) return;
-
-    // Move the actual functional topbar into the blue shell.
-    // We move, not clone, so Search/Timer/Notifications/Profile keep all listeners.
-    if (topbar.parentElement !== shell) {
-      shell.appendChild(topbar);
-    }
-    topbar.classList.add("dashboard-shell-topbar");
-
-    // The brand stays inside the sidebar but must be allowed to overflow upward
-    // into the shell header.
-    sidebar.classList.add("dashboard-shell-sidebar");
-  }
-
-  const boot = () => {
-    mountDashboardChrome();
-    setTimeout(mountDashboardChrome, 150);
-    setTimeout(mountDashboardChrome, 500);
-    setTimeout(mountDashboardChrome, 1200);
-  };
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", boot, { once:true });
-  } else {
-    boot();
-  }
-
-  new MutationObserver(() => mountDashboardChrome())
-    .observe(document.documentElement, { childList:true, subtree:true });
+  const topbar = document.querySelector("body[data-page='dashboard'] .topbar");
+  const sidebar = document.querySelector("body[data-page='dashboard'] #sidebar.sidebar");
+  topbar?.classList.add("dashboard-shell-topbar");
+  sidebar?.classList.add("dashboard-shell-sidebar");
 })();
