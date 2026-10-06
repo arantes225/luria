@@ -10327,3 +10327,69 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 }
+
+
+/* DASHBOARD 3 — REORGANIZAÇÃO DE BLOCOS v101 — 2026-10-05 */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-rows:minmax(0,.86fr) minmax(0,1.14fr)!important;
+    gap:8px!important;
+  }
+
+  /* Estudar agora ocupa o antigo lugar do Resumo do plano. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl3-study-now{
+    grid-column:1/2!important;
+    grid-row:1!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+
+  /* Ofensiva permanece no centro superior. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-streak{
+    grid-column:2/3!important;
+    grid-row:1!important;
+  }
+
+  /* Resumo do plano vai para o antigo lugar do Pulo do Gato. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl3-overview{
+    grid-column:3/4!important;
+    grid-row:1!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+
+  /* Atividades do dia permanece na coluna esquerda inferior, sem Estudar agora embutido. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-upcoming{
+    grid-column:1/2!important;
+    grid-row:2!important;
+    height:100%!important;
+    min-height:0!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+
+  /* Pulo do Gato ocupa o antigo lugar de Meu desempenho. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-cat{
+    grid-column:2/4!important;
+    grid-row:2!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    overflow:hidden!important;
+  }
+
+  /* Meu desempenho e Progresso por área deixam de existir no Dashboard 3. */
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 > .dl-performance,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3 .dl-areas{
+    display:none!important;
+  }
+}
