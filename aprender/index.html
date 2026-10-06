@@ -242,6 +242,108 @@ body[data-page="aprender"] .learn-page > .luria-page-spotlight + .alex-hero{
   }
 }
 </style>
+
+<style id="learn-tools-alex-theme-v4">
+/* Cards Aprender — mesmo efeito visual de Questões/Flashcards */
+body[data-page="aprender"] .tool-card{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border))!important;
+  background:color-mix(in srgb,var(--accent) 7%,var(--surface))!important;
+  box-shadow:0 8px 24px color-mix(in srgb,var(--accent) 8%,transparent)!important;
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease!important;
+}
+body[data-page="aprender"] .tool-card:before{
+  content:""!important;
+  position:absolute!important;
+  left:42%!important;
+  right:-8%!important;
+  bottom:-58%!important;
+  height:105%!important;
+  border-radius:50% 0 0 0!important;
+  background:color-mix(in srgb,var(--accent) 7.5%,transparent)!important;
+  transform:rotate(-8deg)!important;
+  z-index:-1!important;
+  pointer-events:none!important;
+}
+body[data-page="aprender"] .tool-card:hover{
+  transform:translateY(-2px)!important;
+  box-shadow:0 12px 28px color-mix(in srgb,var(--accent) 13%,transparent)!important;
+  border-color:color-mix(in srgb,var(--accent) 34%,var(--border))!important;
+}
+body[data-page="aprender"] .tool-card .tool-icon,
+body[data-page="aprender"] .tool-card h3,
+body[data-page="aprender"] .tool-card p,
+body[data-page="aprender"] .tool-card .tool-cta{
+  position:relative!important;
+  z-index:2!important;
+}
+body[data-page="aprender"] .zap-bg{display:none!important}
+
+/* Professor Alex — claro igual ao destaque superior */
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"])
+body[data-page="aprender"] .alex-hero,
+:root[data-theme="light"] body[data-page="aprender"] .alex-hero{
+  background:linear-gradient(120deg,#184888,#2d6ab5)!important;
+  border-color:#184888!important;
+  box-shadow:0 12px 30px rgba(24,72,136,.18)!important;
+}
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"])
+body[data-page="aprender"] .alex-content h2,
+:root[data-theme="light"] body[data-page="aprender"] .alex-content h2{
+  color:#fff!important;
+}
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"])
+body[data-page="aprender"] .alex-quote,
+:root[data-theme="light"] body[data-page="aprender"] .alex-quote{
+  color:#fff!important;
+  background:rgba(255,255,255,.11)!important;
+  border-color:rgba(255,255,255,.16)!important;
+}
+:root:not([data-theme="dark"]):not([data-theme="leila-mood"]):not([data-theme="pink"]):not([data-theme="rosa"])
+body[data-page="aprender"] .alex-file-name,
+:root[data-theme="light"] body[data-page="aprender"] .alex-file-name{
+  color:rgba(255,255,255,.76)!important;
+}
+
+/* Professor Alex — rosa acompanha o destaque superior */
+:root[data-theme="leila-mood"] body[data-page="aprender"] .alex-hero,
+:root[data-theme="pink"] body[data-page="aprender"] .alex-hero,
+:root[data-theme="rosa"] body[data-page="aprender"] .alex-hero{
+  background:linear-gradient(120deg,#e85d9e,#cb3f83)!important;
+  border-color:#e85d9e!important;
+  box-shadow:0 12px 30px rgba(193,75,128,.18)!important;
+}
+:root[data-theme="leila-mood"] body[data-page="aprender"] .alex-content h2,
+:root[data-theme="pink"] body[data-page="aprender"] .alex-content h2,
+:root[data-theme="rosa"] body[data-page="aprender"] .alex-content h2,
+:root[data-theme="leila-mood"] body[data-page="aprender"] .alex-quote,
+:root[data-theme="pink"] body[data-page="aprender"] .alex-quote,
+:root[data-theme="rosa"] body[data-page="aprender"] .alex-quote{
+  color:#fff!important;
+}
+:root[data-theme="leila-mood"] body[data-page="aprender"] .alex-quote,
+:root[data-theme="pink"] body[data-page="aprender"] .alex-quote,
+:root[data-theme="rosa"] body[data-page="aprender"] .alex-quote{
+  background:rgba(255,255,255,.12)!important;
+  border-color:rgba(255,255,255,.18)!important;
+}
+:root[data-theme="leila-mood"] body[data-page="aprender"] .alex-file-name,
+:root[data-theme="pink"] body[data-page="aprender"] .alex-file-name,
+:root[data-theme="rosa"] body[data-page="aprender"] .alex-file-name{
+  color:rgba(255,255,255,.78)!important;
+}
+
+/* Escuro permanece com o visual já existente */
+:root[data-theme="dark"] body[data-page="aprender"] .alex-hero,
+body.theme-dark[data-page="aprender"] .alex-hero{
+  background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 16%,var(--surface)),var(--surface))!important;
+  border-color:var(--border)!important;
+  box-shadow:0 14px 34px rgba(0,0,0,.14)!important;
+}
+</style>
+
 </head>
 <body data-page="aprender">
   <div class="app-shell">
@@ -304,8 +406,7 @@ body[data-page="aprender"] .learn-page > .luria-page-spotlight + .alex-hero{
               <h3>LuriaZap</h3>
               <p>Estudo guiado, passo a passo.</p>
               <span class="tool-cta">Começar →</span>
-              <img class="zap-bg" src="/assets/img/plantao/luriazap-card-bg.webp" alt="" aria-hidden="true">
-            </a>
+</a>
           </div></section>
       </div>
     </main>
