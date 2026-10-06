@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v272-apostilas-pilot";
+const CACHE_VERSION = "luria-pwa-v273-layout-rescue";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -20,10 +20,11 @@ const APP_SHELL = [
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/css/style.css?v=20261004-scrollbar-thumb-only",
   "/assets/css/luria-brand-v5.css?v=20261004-dashboard-pattern-v78",
+  "/assets/css/pwa-mobile.css?v=20261006-pwa-normalization-v35",
   "/assets/css/dashboard-layouts.css?v=20261004-dashboard-master-v35",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=20261004-dashboard-pattern-v78",
+  "/assets/js/app.js?v=20261006-pwa-layout-rescue-v34",
   "/assets/js/dashboard-layouts.js?v=20261004-alex-session-v1",
   "/assets/js/luria-command-center.js?v=20261002-1",
   "/assets/css/luria-command-center.css?v=20261002-1",
