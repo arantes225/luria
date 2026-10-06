@@ -464,6 +464,54 @@ body.theme-dark[data-page="aprender"] .alex-open-tutoring{
 }
 </style>
 
+
+<style id="alex-character-fit-v6">
+@media (min-width:761px){
+  body[data-page="aprender"] .alex-hero{
+    grid-template-columns:205px minmax(0,1fr)!important;
+  }
+  body[data-page="aprender"] .alex-visual{
+    position:relative!important;
+    display:flex!important;
+    align-items:flex-end!important;
+    justify-content:center!important;
+    height:250px!important;
+    min-height:250px!important;
+    overflow:hidden!important;
+    padding:0 10px!important;
+    box-sizing:border-box!important;
+  }
+  body[data-page="aprender"] .alex-character-img{
+    position:relative!important;
+    display:block!important;
+    width:151px!important;
+    height:auto!important;
+    max-width:none!important;
+    max-height:none!important;
+    object-fit:contain!important;
+    object-position:center bottom!important;
+    margin:0 0 -16px 0!important;
+    transform:none!important;
+    transform-origin:center bottom!important;
+  }
+}
+@media (max-width:760px){
+  body[data-page="aprender"] .alex-visual{
+    padding:0 8px!important;
+    overflow:hidden!important;
+  }
+  body[data-page="aprender"] .alex-character-img{
+    width:126px!important;
+    height:auto!important;
+    max-width:none!important;
+    max-height:none!important;
+    margin:0 0 -12px 0!important;
+    object-fit:contain!important;
+    object-position:center bottom!important;
+  }
+}
+</style>
+
 </head>
 <body data-page="aprender">
   <div class="app-shell">
