@@ -369,3 +369,234 @@
     font-size:20px!important;
   }
 }
+
+
+/* Flashcards v20261005-home-refit-v2
+   Home inteira sem scroll: topo menor, Continue mais fino e ações mais ergonômicas. */
+@media(min-width:981px){
+  body[data-page="flashcards"].flash-home-fixed .flash-section[data-flash-section="review"].active,
+  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.66fr) minmax(285px,.84fr)!important;
+    grid-template-rows:224px 176px!important;
+    gap:8px!important;
+    width:100%!important;
+    height:408px!important;
+    min-height:408px!important;
+    max-height:408px!important;
+    margin:0!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Revisões do dia — menor e mais compacto. */
+  body[data-page="flashcards"] #review-launcher{
+    grid-column:1!important;
+    grid-row:1!important;
+    width:100%!important;
+    height:224px!important;
+    min-height:224px!important;
+    max-height:224px!important;
+    padding:18px 22px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+  body[data-page="flashcards"] #review-launcher .review-launcher-copy{
+    max-width:64%!important;
+  }
+  body[data-page="flashcards"] #review-launcher .eyebrow{
+    padding:4px 8px!important;
+    font-size:8px!important;
+  }
+  body[data-page="flashcards"] #review-launcher h3{
+    margin:6px 0 4px!important;
+    font-size:24px!important;
+    line-height:1.05!important;
+  }
+  body[data-page="flashcards"] #review-launcher p{
+    font-size:10px!important;
+    line-height:1.35!important;
+    max-width:500px!important;
+  }
+  body[data-page="flashcards"] #review-launcher .review-launcher-action{
+    min-width:165px!important;
+    gap:6px!important;
+  }
+  body[data-page="flashcards"] #review-launcher #start-review-session{
+    min-height:38px!important;
+    height:38px!important;
+    padding:0 14px!important;
+    border-radius:10px!important;
+    font-size:10px!important;
+  }
+
+  /* Métricas acompanha a mesma altura do topo. */
+  body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics{
+    grid-column:2!important;
+    grid-row:1!important;
+    width:100%!important;
+    height:224px!important;
+    min-height:224px!important;
+    max-height:224px!important;
+    padding:8px 12px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-side-head{
+    margin-bottom:4px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-side-head h3{
+    font-size:14px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-quick-metrics-body{
+    grid-template-rows:54px 62px 36px!important;
+    gap:5px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-metric-summary-grid>div{
+    height:54px!important;
+    min-height:54px!important;
+    max-height:54px!important;
+    padding:5px 7px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-metric-summary-grid strong{
+    font-size:17px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-metric-summary-grid span,
+  body[data-page="flashcards"] .flash-home-summary .error-metric-summary-grid small{
+    font-size:8px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-metric-progress{
+    grid-template-columns:52px minmax(0,1fr)!important;
+    gap:8px!important;
+    padding-top:4px!important;
+    margin-top:2px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-metric-ring{
+    width:46px!important;
+    height:46px!important;
+    min-width:46px!important;
+    min-height:46px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .metric-percent-center strong{
+    font-size:14px!important;
+  }
+  body[data-page="flashcards"] .flash-home-summary .error-metric-mini-grid>div{
+    min-height:34px!important;
+    padding:4px 6px!important;
+  }
+
+  /* Continue de onde parou — propositalmente fino. */
+  body[data-page="flashcards"] .flash-home-decks{
+    grid-column:1!important;
+    grid-row:2!important;
+    width:100%!important;
+    height:176px!important;
+    min-height:176px!important;
+    max-height:176px!important;
+    margin:0!important;
+    padding:10px 12px!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+  body[data-page="flashcards"] .flash-home-decks-head{
+    margin:0 0 6px!important;
+    min-height:18px!important;
+  }
+  body[data-page="flashcards"] .flash-home-decks-head h2{
+    margin:0!important;
+    font-size:14px!important;
+    line-height:1.1!important;
+  }
+  body[data-page="flashcards"] #flash-home-decks-list,
+  body[data-page="flashcards"] .page .flash-review-hub{
+    height:132px!important;
+    min-height:132px!important;
+    max-height:132px!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards{
+    height:132px!important;
+    min-height:132px!important;
+    max-height:132px!important;
+    gap:8px!important;
+    padding:1px 1px 4px!important;
+    align-items:stretch!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck{
+    flex:0 0 172px!important;
+    width:172px!important;
+    height:126px!important;
+    min-height:126px!important;
+    max-height:126px!important;
+    padding:10px 11px!important;
+    border-radius:12px!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-top{
+    min-height:28px!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-icon{
+    width:28px!important;
+    height:28px!important;
+    min-width:28px!important;
+    min-height:28px!important;
+  }
+  body[data-page="flashcards"] .flash-home-decks .flash-ref-deck-top h3{
+    font-size:13px!important;
+    line-height:1.1!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-home-deck-area{
+    font-size:8px!important;
+    margin-top:2px!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-stats{
+    padding-top:5px!important;
+    gap:5px!important;
+  }
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-progress{
+    margin-top:4px!important;
+  }
+
+  /* Coluna direita — três botões baixos, claros e proporcionais. */
+  body[data-page="flashcards"] .flash-home-actions{
+    grid-column:2!important;
+    grid-row:2!important;
+    width:100%!important;
+    height:176px!important;
+    min-height:176px!important;
+    max-height:176px!important;
+    margin:0!important;
+    display:grid!important;
+    grid-template-rows:repeat(3,1fr)!important;
+    gap:6px!important;
+    overflow:hidden!important;
+  }
+  body[data-page="flashcards"] .flash-home-action{
+    height:54.66px!important;
+    min-height:54.66px!important;
+    max-height:54.66px!important;
+    padding:0 10px!important;
+    grid-template-columns:36px minmax(0,1fr) 26px!important;
+    gap:8px!important;
+    border-radius:13px!important;
+  }
+  body[data-page="flashcards"] .flash-home-action>i{
+    width:32px!important;
+    height:32px!important;
+    border-radius:9px!important;
+    font-size:17px!important;
+  }
+  body[data-page="flashcards"] .flash-home-action>span strong{
+    font-size:13px!important;
+    line-height:1.05!important;
+    font-weight:650!important;
+  }
+  body[data-page="flashcards"] .flash-home-action>span small{
+    margin-top:2px!important;
+    font-size:8.5px!important;
+    line-height:1.05!important;
+  }
+  body[data-page="flashcards"] .flash-home-action>b{
+    width:24px!important;
+    height:24px!important;
+    font-size:17px!important;
+  }
+}
