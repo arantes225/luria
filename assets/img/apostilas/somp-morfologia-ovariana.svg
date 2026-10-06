@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="t d">
+<title id="t">Morfologia ovariana policística</title><desc id="d">Esquema educacional de ovário com múltiplos folículos antrais e critérios ultrassonográficos atuais.</desc>
+<rect width="1200" height="700" rx="36" fill="#f7faff"/>
+<text x="600" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#0a2342">Morfologia ovariana policística (PCOM)</text>
+<g transform="translate(110 150)">
+<ellipse cx="315" cy="245" rx="260" ry="195" fill="#f7dbe7" stroke="#a64d78" stroke-width="6"/>
+<g fill="#fff" stroke="#a64d78" stroke-width="4">
+<circle cx="160" cy="145" r="28"/><circle cx="225" cy="102" r="25"/><circle cx="305" cy="90" r="27"/><circle cx="390" cy="110" r="25"/><circle cx="455" cy="160" r="28"/>
+<circle cx="505" cy="230" r="26"/><circle cx="480" cy="310" r="28"/><circle cx="410" cy="360" r="25"/><circle cx="330" cy="382" r="28"/><circle cx="245" cy="365" r="24"/>
+<circle cx="170" cy="320" r="27"/><circle cx="130" cy="245" r="25"/><circle cx="250" cy="210" r="23"/><circle cx="345" cy="205" r="25"/><circle cx="390" cy="275" r="24"/><circle cx="285" cy="295" r="25"/>
+</g>
+<text x="315" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#8f3e65">múltiplos folículos antrais</text>
+<text x="315" y="285" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#70435a">esquema — não representa US real</text>
+</g>
+<g font-family="Arial,sans-serif">
+<rect x="720" y="165" width="390" height="110" rx="22" fill="#e9f1ff" stroke="#184888" stroke-width="4"/>
+<text x="915" y="208" text-anchor="middle" font-size="25" font-weight="700" fill="#184888">Tecnologia adequada</text>
+<text x="915" y="245" text-anchor="middle" font-size="21" fill="#385674">FNPO ≥ 20 em ≥1 ovário</text>
+<rect x="720" y="315" width="390" height="135" rx="22" fill="#fff6e8" stroke="#b67a13" stroke-width="4"/>
+<text x="915" y="358" text-anchor="middle" font-size="25" font-weight="700" fill="#9a650e">Imagem limitada / tecnologia antiga</text>
+<text x="915" y="397" text-anchor="middle" font-size="20" fill="#6f572d">volume ovariano ≥10 mL</text>
+<text x="915" y="429" text-anchor="middle" font-size="20" fill="#6f572d">ou FNPS ≥10</text>
+<rect x="720" y="490" width="390" height="90" rx="22" fill="#eef8f4" stroke="#2f7d62" stroke-width="4"/>
+<text x="915" y="525" text-anchor="middle" font-size="22" font-weight="700" fill="#2f7d62">Adolescentes</text>
+<text x="915" y="558" text-anchor="middle" font-size="19" fill="#3e6559">não usar US/AMH para diagnóstico</text>
+</g></svg>
