@@ -8020,22 +8020,35 @@ iniciarApp();
 })();
 
 
-/* LURIA GLOBAL MASTER CSS ENSURE v74 — 2026-10-04 */
+/* LURIA GLOBAL MASTER CSS ENSURE v96 — 2026-10-05
+   Reutiliza a folha global já presente no <head>. Nunca injeta uma segunda
+   cópia depois do CSS específico da página, pois isso altera a cascata e causa layout shift. */
 (() => {
   if (window.__luriaGlobalMasterCssEnsure) return;
   window.__luriaGlobalMasterCssEnsure = true;
 
   const ensure = () => {
     if (!document.querySelector(".app-shell")) return;
-    const href = "/assets/css/luria-brand-v5.css?v=20261004-dashboard-pattern-v78";
-    let link = document.getElementById("luria-global-master-css");
+
+    const matches = Array.from(
+      document.querySelectorAll('link[rel="stylesheet"][href*="/assets/css/luria-brand-v5.css"]')
+    );
+
+    let link = document.getElementById("luria-global-master-css") || matches[0] || null;
+
     if (!link) {
       link = document.createElement("link");
       link.id = "luria-global-master-css";
       link.rel = "stylesheet";
+      link.href = "/assets/css/luria-brand-v5.css?v=20261005-global-v90";
       document.head.appendChild(link);
+    } else if (!link.id) {
+      link.id = "luria-global-master-css";
     }
-    if (link.getAttribute("href") !== href) link.setAttribute("href", href);
+
+    matches.forEach((item) => {
+      if (item !== link) item.remove();
+    });
   };
 
   if (document.readyState === "loading") {
