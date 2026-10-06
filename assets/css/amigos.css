@@ -1583,3 +1583,42 @@ body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-footer{
   padding:7px 10px!important;
 }
 </style>
+
+
+<style id="studyrats-block-compact-v53">
+body[data-page="amigos"] .friends-ref-studyrats-inline{
+  padding:8px!important;
+  gap:6px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .friends-ref-studyrats-head{
+  min-height:0!important;
+  padding:0!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .friends-ref-studyrats-brand p{
+  margin-top:1px!important;
+  line-height:1.25!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .friends-ref-current-rat{
+  padding:2px 5px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-list{
+  gap:4px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-scene{
+  min-height:220px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-canvas{
+  min-height:220px!important;
+  padding:28px 42px 18px 12px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-lane{
+  min-height:50px!important;
+  height:50px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-road{
+  height:48px!important;
+}
+body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-footer{
+  padding:6px 9px!important;
+}
+</style>
