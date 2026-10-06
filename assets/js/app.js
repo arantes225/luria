@@ -8069,3 +8069,312 @@ iniciarApp();
 
 
 
+
+
+/* PWA layout rescue v34 — normalização global após os refinamentos desktop */
+(function installLuriaPwaLayoutRescue(){
+  if(document.getElementById("luria-pwa-layout-rescue-v34")) return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-layout-rescue-v34";
+  style.textContent=`
+  @media(max-width:980px){
+    html.pwa-standalone,
+    html.pwa-standalone body{
+      width:100%!important;
+      max-width:100%!important;
+      min-height:100%!important;
+      overflow-x:hidden!important;
+      overflow-y:auto!important;
+    }
+    html.pwa-standalone body .app-shell{
+      width:100%!important;
+      max-width:100%!important;
+      height:auto!important;
+      min-height:100dvh!important;
+      overflow:visible!important;
+    }
+    html.pwa-standalone body .main{
+      width:100%!important;
+      max-width:100%!important;
+      height:auto!important;
+      min-height:100dvh!important;
+      margin:0!important;
+      padding:calc(env(safe-area-inset-top) + 8px) 10px calc(env(safe-area-inset-bottom) + 14px)!important;
+      overflow:visible!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body .page{
+      width:100%!important;
+      max-width:100%!important;
+      height:auto!important;
+      min-height:0!important;
+      margin:0!important;
+      padding:0!important;
+      overflow:visible!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body .topbar{
+      width:100%!important;
+      max-width:100%!important;
+      min-height:40px!important;
+      margin:0 0 8px!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body .luria-page-spotlight{
+      width:100%!important;
+      max-width:100%!important;
+      min-height:72px!important;
+      height:auto!important;
+      margin:0 0 8px!important;
+      padding:12px 14px!important;
+      box-sizing:border-box!important;
+      overflow:hidden!important;
+    }
+    html.pwa-standalone body .luria-page-spotlight-copy{
+      min-width:0!important;
+      max-width:100%!important;
+    }
+    html.pwa-standalone body .luria-page-spotlight-copy strong{
+      font-size:18px!important;
+      line-height:1.15!important;
+    }
+    html.pwa-standalone body .luria-page-spotlight-copy small{
+      font-size:10px!important;
+      line-height:1.35!important;
+      white-space:normal!important;
+    }
+
+    /* Remove travas de desktop em hubs recentes */
+    html.pwa-standalone body[data-page="aprender"],
+    html.pwa-standalone body[data-page="consolidar"],
+    html.pwa-standalone body[data-page="amigos"],
+    html.pwa-standalone body[data-page="flashcards"],
+    html.pwa-standalone body[data-page="caderno-erros"],
+    html.pwa-standalone body[data-page="questoes-simulados"]{
+      overflow-x:hidden!important;
+      overflow-y:auto!important;
+    }
+    html.pwa-standalone body[data-page="aprender"] :is(.main,.page,.learn-page),
+    html.pwa-standalone body[data-page="consolidar"] :is(.main,.page,.learn-page){
+      height:auto!important;
+      min-height:0!important;
+      max-height:none!important;
+      overflow:visible!important;
+    }
+
+    /* Aprender */
+    html.pwa-standalone body[data-page="aprender"] .learn-page{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      grid-template-rows:none!important;
+      gap:8px!important;
+      padding-bottom:0!important;
+    }
+    html.pwa-standalone body[data-page="aprender"] .alex-hero{
+      grid-template-columns:112px minmax(0,1fr)!important;
+      height:auto!important;
+      min-height:150px!important;
+      max-height:none!important;
+      border-radius:18px!important;
+    }
+    html.pwa-standalone body[data-page="aprender"] .alex-visual{
+      height:150px!important;
+      min-height:150px!important;
+      max-height:150px!important;
+    }
+    html.pwa-standalone body[data-page="aprender"] .alex-content{
+      height:auto!important;
+      min-height:150px!important;
+      padding:12px 12px 10px!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body[data-page="aprender"] .learn-tools{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      gap:8px!important;
+      transform:none!important;
+      min-height:0!important;
+    }
+    html.pwa-standalone body[data-page="aprender"] .tool-card{
+      width:100%!important;
+      height:auto!important;
+      min-height:132px!important;
+      max-height:none!important;
+      padding:14px 14px 12px 20px!important;
+      box-sizing:border-box!important;
+    }
+
+    /* Consolidar */
+    html.pwa-standalone body[data-page="consolidar"] .learn-page{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      grid-template-rows:none!important;
+      gap:8px!important;
+      padding-bottom:0!important;
+    }
+    html.pwa-standalone body[data-page="consolidar"] .learn-grid{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      grid-template-rows:none!important;
+      height:auto!important;
+      min-height:0!important;
+      gap:8px!important;
+    }
+    html.pwa-standalone body[data-page="consolidar"] .learn-card,
+    html.pwa-standalone body[data-page="consolidar"] .learn-card--questions,
+    html.pwa-standalone body[data-page="consolidar"] .learn-card--secondary{
+      grid-column:auto!important;
+      width:100%!important;
+      height:auto!important;
+      min-height:138px!important;
+      max-height:none!important;
+      padding:14px 14px 12px 20px!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body[data-page="consolidar"] .learn-card--questions{
+      min-height:158px!important;
+    }
+
+    /* Amigos */
+    html.pwa-standalone body[data-page="amigos"] .friends-reference-page{
+      width:100%!important;
+      max-width:100%!important;
+      display:block!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-board{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      gap:8px!important;
+      width:100%!important;
+      min-width:0!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-board-main,
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-board-side{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      gap:8px!important;
+      width:100%!important;
+      min-width:0!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-card,
+    html.pwa-standalone body[data-page="amigos"] #studyrats-card{
+      width:100%!important;
+      max-width:100%!important;
+      min-width:0!important;
+      box-sizing:border-box!important;
+      overflow:hidden!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-room-grid{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      gap:7px!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-room-grid article{
+      width:100%!important;
+      min-height:96px!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-friends-card .friends-list{
+      grid-template-columns:1fr!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-material-row{
+      grid-template-columns:32px minmax(0,1fr) 28px!important;
+      gap:7px!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-material-row time{
+      display:none!important;
+    }
+
+    /* StudyRats no PWA */
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-studyrats-head{
+      display:grid!important;
+      grid-template-columns:1fr!important;
+      gap:8px!important;
+      align-items:start!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-studyrats-actions{
+      width:100%!important;
+      display:grid!important;
+      grid-template-columns:minmax(0,1fr) auto auto!important;
+      gap:6px!important;
+      align-items:center!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-current-rat{
+      min-width:0!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-summary{
+      grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-race-scene{
+      width:100%!important;
+      min-height:210px!important;
+      overflow-x:auto!important;
+      overflow-y:hidden!important;
+      -webkit-overflow-scrolling:touch!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-race-canvas{
+      min-width:520px!important;
+      min-height:210px!important;
+      padding:26px 38px 16px 10px!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-lane{
+      grid-template-columns:105px minmax(0,1fr)!important;
+      min-height:48px!important;
+      height:48px!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-road{
+      height:46px!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-rat-picker-old{
+      grid-template-columns:1fr!important;
+      gap:10px!important;
+      padding:10px!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-large-stage{
+      min-height:165px!important;
+      height:165px!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .studyrats-rat-picker-old .studyrats-preview-composite{
+      transform:scale(2.35)!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-create-room-fields{
+      grid-template-columns:1fr!important;
+    }
+
+    /* Proteções genéricas contra overflow de grids/cards */
+    html.pwa-standalone body :is(.card,.panel,.widget,.learn-card,.tool-card,.friends-card){
+      max-width:100%!important;
+      box-sizing:border-box!important;
+    }
+    html.pwa-standalone body img,
+    html.pwa-standalone body svg{
+      max-width:100%;
+    }
+  }
+
+  @media(max-width:430px){
+    html.pwa-standalone body .main{
+      padding-left:8px!important;
+      padding-right:8px!important;
+    }
+    html.pwa-standalone body .topbar{
+      grid-template-columns:38px minmax(0,1fr) auto!important;
+      gap:6px!important;
+    }
+    html.pwa-standalone body .topbar .menu-open,
+    html.pwa-standalone body .luria-pomodoro-toggle,
+    html.pwa-standalone body .luria-notification-toggle,
+    html.pwa-standalone body .luria-profile-toggle{
+      width:38px!important;height:38px!important;min-width:38px!important;min-height:38px!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-studyrats-actions{
+      grid-template-columns:1fr 1fr!important;
+    }
+    html.pwa-standalone body[data-page="amigos"] .friends-ref-current-rat{
+      grid-column:1/-1!important;
+    }
+  }
+  `;
+  document.head.appendChild(style);
+})();
