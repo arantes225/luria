@@ -10327,3 +10327,105 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 }
+
+
+/* DASHBOARD 1 — FLAT MASTER GRID 8PX v93 — 2026-10-05 */
+@media (min-width:981px){
+  html body[data-page="dashboard"][data-dashboard-layout="1"]{
+    --dashboard-callout-gap:8px;
+  }
+
+  /* Uma única grade controla todas as distâncias entre bordas. */
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    display:grid!important;
+    grid-template-columns:minmax(0,.85fr) minmax(0,.85fr) minmax(260px,.95fr)!important;
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr) 118px!important;
+    gap:var(--dashboard-callout-gap)!important;
+    column-gap:var(--dashboard-callout-gap)!important;
+    row-gap:var(--dashboard-callout-gap)!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    padding:0!important;
+    align-content:stretch!important;
+    align-items:stretch!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Remove a geometria própria dos wrappers para todos os cards
+     participarem diretamente da mesma grade. */
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    display:contents!important;
+    margin:0!important;
+    padding:0!important;
+    gap:0!important;
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  /* Atividades e Estudar agora ocupam toda a altura das duas linhas superiores. */
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large{
+    grid-column:1!important;
+    grid-row:1 / 3!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main{
+    grid-column:2!important;
+    grid-row:1 / 3!important;
+  }
+
+  /* Resumo e Ofensiva usam exatamente 8px entre si. */
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary{
+    grid-column:3!important;
+    grid-row:1!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    grid-column:3!important;
+    grid-row:2!important;
+  }
+
+  /* Faixa inferior começa exatamente 8px abaixo de TODOS os cards superiores. */
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-areas{
+    grid-column:1 / 3!important;
+    grid-row:3!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-cat{
+    grid-column:3!important;
+    grid-row:3!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-areas,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-cat{
+    position:relative!important;
+    inset:auto!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    align-self:stretch!important;
+    justify-self:stretch!important;
+    box-sizing:border-box!important;
+  }
+
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-areas,
+  html body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 > .dl-cat{
+    height:118px!important;
+    min-height:118px!important;
+    max-height:118px!important;
+  }
+}
