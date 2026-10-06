@@ -179,3 +179,193 @@
     gap:8px!important;
   }
 }
+
+
+/* Flashcards v20261005-home-balanced
+   Composição final: tudo em uma tela, com respiro uniforme de 8px. */
+@media(min-width:981px){
+  body[data-page="flashcards"].flash-home-fixed .flash-section[data-flash-section="review"].active,
+  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.68fr) minmax(280px,.80fr)!important;
+    grid-template-rows:248px minmax(0,1fr)!important;
+    gap:8px!important;
+    width:100%!important;
+    height:calc(100dvh - 232px)!important;
+    min-height:0!important;
+    max-height:calc(100dvh - 232px)!important;
+    margin:0!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="flashcards"] #review-launcher{
+    grid-column:1!important;
+    grid-row:1!important;
+    width:100%!important;
+    height:248px!important;
+    min-height:248px!important;
+    max-height:248px!important;
+    padding:22px 24px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="flashcards"] #review-launcher .review-launcher-copy{
+    max-width:66%!important;
+  }
+
+  body[data-page="flashcards"] #review-launcher h3{
+    margin:7px 0 5px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary.error-side-card.error-quick-metrics{
+    grid-column:2!important;
+    grid-row:1!important;
+    width:100%!important;
+    height:248px!important;
+    min-height:248px!important;
+    max-height:248px!important;
+    padding:10px 14px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary .error-side-head{
+    margin-bottom:5px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary .error-quick-metrics-body{
+    grid-template-rows:62px 70px 42px!important;
+    gap:6px!important;
+    min-height:0!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary .error-metric-summary-grid>div{
+    height:62px!important;
+    min-height:62px!important;
+    max-height:62px!important;
+    padding:6px 9px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary .error-metric-progress{
+    min-height:0!important;
+    padding-top:6px!important;
+    margin-top:4px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary .error-metric-ring{
+    width:50px!important;
+    height:50px!important;
+    min-width:50px!important;
+    min-height:50px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-summary .error-metric-mini-grid>div{
+    min-height:38px!important;
+    padding:5px 7px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-decks{
+    grid-column:1!important;
+    grid-row:2!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    padding:13px 15px!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-decks-head{
+    flex:0 0 auto!important;
+    margin:0 0 7px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-decks-head h2{
+    margin:0!important;
+    font-size:15px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="flashcards"] #flash-home-decks-list{
+    flex:1 1 auto!important;
+    min-height:0!important;
+    height:auto!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards{
+    height:100%!important;
+    min-height:0!important;
+    gap:8px!important;
+    padding:2px 2px 6px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+  }
+
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck{
+    flex:0 0 184px!important;
+    width:184px!important;
+    height:100%!important;
+    min-height:0!important;
+    padding:13px!important;
+  }
+
+  body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck-icon{
+    width:32px!important;
+    height:32px!important;
+    min-width:32px!important;
+    min-height:32px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-actions{
+    grid-column:2!important;
+    grid-row:2!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    display:grid!important;
+    grid-template-rows:repeat(3,minmax(0,1fr))!important;
+    gap:8px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-action{
+    height:100%!important;
+    min-height:0!important;
+    max-height:none!important;
+    padding:0 13px!important;
+    grid-template-columns:48px minmax(0,1fr) 32px!important;
+    gap:10px!important;
+    border-radius:15px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-action>i{
+    width:42px!important;
+    height:42px!important;
+    font-size:20px!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-action>span strong{
+    font-size:16px!important;
+    line-height:1.1!important;
+    font-weight:650!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-action>span small{
+    margin-top:3px!important;
+    font-size:10px!important;
+    line-height:1.15!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-action>b{
+    width:30px!important;
+    height:30px!important;
+    font-size:20px!important;
+  }
+}
