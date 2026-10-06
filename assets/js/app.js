@@ -2976,6 +2976,7 @@ async function iniciarLofiGlobal(userId) {
 
 
 let ultimaOfensivaCarregada = null;
+let ultimaOfensivaDashboardNotificada = null;
 
 async function registrarAcessoDiario() {
   const userId =
@@ -3062,7 +3063,10 @@ function renderizarOfensivaGlobal() {
     );
 
   window.luriaCurrentStreak = currentDays;
-  window.dispatchEvent(new Event("luria:dashboard-data"));
+  if (ultimaOfensivaDashboardNotificada !== currentDays) {
+    ultimaOfensivaDashboardNotificada = currentDays;
+    window.dispatchEvent(new Event("luria:dashboard-data"));
+  }
 
   let status =
     "Esquentando";
