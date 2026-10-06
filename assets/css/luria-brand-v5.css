@@ -3400,3 +3400,81 @@ body *::-webkit-scrollbar-button:end{
   outline:0!important;
   box-shadow:none!important;
 }
+
+
+/* LURIA v90 — dashboard sidebar stable + cronograma shell parity — 2026-10-05 */
+@media (min-width:981px){
+  /* Dashboard: a sidebar deve medir o painel branco real, não 100dvh.
+     Isso impede Ofensiva + botão Estudos de descerem quando o chrome global monta. */
+  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+    position:relative!important;
+    top:auto!important;
+    bottom:auto!important;
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    align-self:stretch!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    overflow:hidden!important;
+  }
+
+  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .sidebar-footer,
+  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar .sidebar-footer-study{
+    position:absolute!important;
+    left:18px!important;
+    right:18px!important;
+    bottom:8px!important;
+    top:auto!important;
+    inset-block-end:8px!important;
+    height:124px!important;
+    min-height:124px!important;
+    max-height:124px!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  /* Cronograma: remove a exceção antiga que deixava a moldura externa transparente/branca.
+     Usa exatamente a mesma cor do shell global. */
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed){
+    background:var(--luria-shell-theme,#184888)!important;
+    background-color:var(--luria-shell-theme,#184888)!important;
+    background-image:none!important;
+  }
+
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell{
+    background:var(--luria-shell-theme,#184888)!important;
+    background-color:var(--luria-shell-theme,#184888)!important;
+    background-image:none!important;
+    border:0!important;
+    outline:0!important;
+    box-shadow:none!important;
+  }
+
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::before{
+    content:""!important;
+    display:block!important;
+    background:var(--luria-shell-theme,#184888)!important;
+    background-color:var(--luria-shell-theme,#184888)!important;
+    background-image:none!important;
+  }
+
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+    content:none!important;
+    display:none!important;
+  }
+
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) #sidebar.sidebar{
+    background:var(--sidebar)!important;
+  }
+
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main{
+    background-color:var(--surface)!important;
+  }
+
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page{
+    background:transparent!important;
+  }
+}
