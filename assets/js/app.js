@@ -7988,15 +7988,6 @@ iniciarApp();
 
   function mountGlobalChrome(){
     if (window.innerWidth < 981) return;
-
-    /* O Dashboard possui shell desktop próprio em dashboard-layouts.js.
-       Não montar o shell global aqui evita duas geometrias concorrentes
-       e o layout shift após o primeiro paint. */
-    if (document.body?.dataset?.page === "dashboard") {
-      document.body.classList.remove("luria-global-shell-mounted");
-      return;
-    }
-
     const shell=document.querySelector(".app-shell");
     const topbar=document.querySelector(".topbar");
     const sidebar=document.querySelector("#sidebar.sidebar");
