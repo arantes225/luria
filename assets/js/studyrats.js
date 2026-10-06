@@ -549,7 +549,6 @@ function sharedStudyratsRender(){
     return '<article class="studyrats-challenge">'+
       '<div class="studyrats-challenge-head">'+
         '<div class="studyrats-challenge-title">'+
-          '<span class="studyrats-race-badge">'+sharedStudyratsFineLineIcon()+'</span>'+
           '<span><strong>'+fEsc(ch.title||type.title)+'</strong><small>'+(finished?'Desafio encerrado':fEsc(type.title))+'</small></span>'+
         '</div>'+
         (canDelete?'<button class="studyrats-delete" type="button" aria-label="Apagar desafio" data-delete-studyrat="'+fEsc(ch.id)+'">×</button>':'')+
