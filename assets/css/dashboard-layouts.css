@@ -10171,3 +10171,68 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 }
+
+
+/* DASHBOARD 1 — COMPACTAÇÃO VERTICAL EXATA v85 — 2026-10-05
+   -20px em Atividades de hoje e Estudar agora;
+   -10px em Resumo do dia e Ofensiva;
+   8px reais entre todos os blocos. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"]{
+    --dashboard-callout-gap:8px!important;
+  }
+
+  /* Encurta a faixa superior em 20px e puxa a faixa inferior junto. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    height:calc(100% - 20px)!important;
+    max-height:calc(100% - 20px)!important;
+    min-height:0!important;
+    grid-template-rows:minmax(0,1fr) 118px!important;
+    column-gap:8px!important;
+    row-gap:8px!important;
+    align-self:start!important;
+    overflow:hidden!important;
+  }
+
+  /* Esquerda: os dois cards usam toda a nova faixa, portanto ficam 20px menores. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    align-self:stretch!important;
+    column-gap:8px!important;
+    row-gap:8px!important;
+    margin:0!important;
+  }
+
+  /* Direita: a faixa 20px menor é dividida igualmente => -10px em cada card. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    align-self:stretch!important;
+    display:grid!important;
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:8px!important;
+    margin:0!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-side > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-streak{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-cat{
+    margin:0!important;
+    transform:none!important;
+  }
+}
