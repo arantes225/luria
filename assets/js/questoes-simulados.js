@@ -9122,19 +9122,21 @@ function renderHomeDashboard() {
                 : 0;
 
             return `
-              <div class="qs-home-user-row">
-                <div class="qs-home-user-main">
-                  <strong>${qsEscape(set.title || "Lista sem título")}</strong>
-                  <small>
-                    ${total} questões · ${qsHomeDate(set.created_at)}
-                  </small>
+              <article class="qs-home-user-card">
+                <div class="qs-home-user-card-head">
+                  <span class="qs-home-user-card-icon" aria-hidden="true">▤</span>
+                  <div class="qs-home-user-main">
+                    <strong>${qsEscape(set.title || "Lista sem título")}</strong>
+                    <small>${total} questões · ${qsHomeDate(set.created_at)}</small>
+                  </div>
+                  <div class="qs-home-user-progress">
+                    <strong>${answered > 0 ? `${progress}%` : "Nova"}</strong>
+                    <small>${answered}/${total || 0}</small>
+                  </div>
                 </div>
-
-                <div class="qs-home-user-progress">
-                  <strong>${answered > 0 ? `${progress}%` : "Nova"}</strong>
-                  <small>${answered}/${total || 0} respondidas</small>
+                <div class="qs-home-user-card-progress" aria-hidden="true">
+                  <span style="width:${progress}%"></span>
                 </div>
-
                 <button
                   class="qs-home-user-open"
                   type="button"
@@ -9142,7 +9144,7 @@ function renderHomeDashboard() {
                 >
                   ${answered > 0 ? "Continuar" : "Abrir"}
                 </button>
-              </div>
+              </article>
             `;
           }
         ).join("");
