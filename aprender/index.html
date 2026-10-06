@@ -795,6 +795,74 @@ body.theme-dark[data-page="aprender"] .tool-card{
 }
 </style>
 
+
+<style id="learn-tools-library-accent-v9">
+@media (min-width:761px){
+  body[data-page="aprender"] .learn-page{
+    grid-template-rows:auto 220px minmax(0,1fr)!important;
+  }
+  body[data-page="aprender"] .learn-tools{
+    align-self:start!important;
+    transform:translateY(-20px)!important;
+  }
+  body[data-page="aprender"] .tool-card{
+    height:calc(100% - 20px)!important;
+    min-height:0!important;
+  }
+}
+body[data-page="aprender"] .tool-card{
+  position:relative!important;
+  overflow:hidden!important;
+}
+body[data-page="aprender"] .tool-card .tool-icon,
+body[data-page="aprender"] .tool-card h3,
+body[data-page="aprender"] .tool-card p,
+body[data-page="aprender"] .tool-card .tool-cta{
+  position:relative!important;
+  z-index:3!important;
+}
+body[data-page="aprender"] .tool-card::before{
+  content:""!important;
+  position:absolute!important;
+  left:-18px!important;
+  top:50%!important;
+  transform:translateY(-50%)!important;
+  width:34px!important;
+  height:78px!important;
+  border-radius:0 28px 28px 0!important;
+  background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 88%,#fff),var(--accent))!important;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb,var(--accent) 55%,transparent),
+    6px 0 18px color-mix(in srgb,var(--accent) 18%,transparent)!important;
+  z-index:2!important;
+  opacity:1!important;
+}
+body[data-page="aprender"] .tool-card::after{
+  content:""!important;
+  position:absolute!important;
+  left:2px!important;
+  top:50%!important;
+  transform:translateY(-50%)!important;
+  width:3px!important;
+  height:54px!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.62)!important;
+  z-index:3!important;
+}
+:root[data-theme="dark"] body[data-page="aprender"] .tool-card::before,
+body.theme-dark[data-page="aprender"] .tool-card::before{
+  background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 84%,#fff 16%),var(--accent))!important;
+}
+@media(max-width:760px){
+  body[data-page="aprender"] .learn-tools{
+    transform:none!important;
+  }
+  body[data-page="aprender"] .tool-card{
+    min-height:148px!important;
+  }
+}
+</style>
+
 </head>
 <body data-page="aprender">
   <div class="app-shell">
