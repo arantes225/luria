@@ -10236,3 +10236,63 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     transform:none!important;
   }
 }
+
+
+/* DASHBOARD 1 — CORREÇÃO VISUAL DIRETA v86 — 2026-10-05
+   Corrige disputa com v70:
+   esquerda -20px; direita = -10px por card; inferiores sobem 20px;
+   gap visual final = 8px. */
+@media (min-width:981px){
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
+    height:100%!important;
+    max-height:100%!important;
+    grid-template-rows:minmax(0,1fr) 118px!important;
+    column-gap:8px!important;
+    row-gap:8px!important;
+    overflow:hidden!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    height:calc(100% - 20px)!important;
+    min-height:0!important;
+    max-height:calc(100% - 20px)!important;
+    block-size:calc(100% - 20px)!important;
+    max-block-size:calc(100% - 20px)!important;
+    align-self:start!important;
+    margin:0!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1{
+    gap:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side{
+    display:grid!important;
+    grid-template-rows:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:8px!important;
+  }
+
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-study-pair-1 > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-agenda-large,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-study-now-card-main,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-side > .dl-card,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-day-summary,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-streak{
+    height:100%!important;
+    min-height:0!important;
+    max-height:100%!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+  }
+
+  /* A faixa inferior acompanha a redução para não abrir um vão de 28px. */
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-areas,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1 .dl-cat{
+    transform:translateY(-20px)!important;
+    margin:0!important;
+  }
+}
