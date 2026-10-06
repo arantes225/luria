@@ -12,6 +12,9 @@
   let selectedDate = new Date();
   let frame = 0;
   let dailyChallengeAccuracy = null;
+  let dailyChallengeAccuracyLoading = false;
+  let dailyChallengeAccuracyLoaded = false;
+  let dashboardAppliedOnce = false;
 
   const escape = (value) => String(value ?? "")
     .replaceAll("&", "&amp;").replaceAll("<", "&lt;")
@@ -246,6 +249,8 @@
   }
 
   async function loadDailyChallengeAccuracy() {
+    if (dailyChallengeAccuracyLoaded || dailyChallengeAccuracyLoading) return;
+    dailyChallengeAccuracyLoading = true;
     try {
       const sb = window.supabaseClient;
       if (!sb) return;
@@ -439,15 +444,19 @@
     const standalonePwa = document.documentElement.classList.contains("pwa-standalone")
       || window.matchMedia?.("(display-mode: standalone)")?.matches
       || window.navigator.standalone === true;
-    current = standalonePwa ? "4" : (allowed.has(selected) ? selected : "1");
+    const nextLayout = standalonePwa ? "4" : (allowed.has(selected) ? selected : "1");
+    const sameLayout = dashboardAppliedOnce && current === nextLayout;
+    current = nextLayout;
     if (!allowed.has(selected)) {
       try { localStorage.setItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`, "1"); } catch {}
     }
     document.body.dataset.dashboardLayout = current;
 
+    // Evita recriar todo o Dashboard quando docmap:ready chega sem mudança de layout.
+    if (sameLayout && root.dataset.rendered === "true") return;
+    dashboardAppliedOnce = true;
+
     // O legado já fica oculto pelo CSS desde o primeiro frame.
-    // Um único render no boot evita recriar os cards duas vezes seguidas
-    // e elimina o salto visual de Atividades de hoje / Estudar agora.
     render();
   }
   function enhanceShell() {
