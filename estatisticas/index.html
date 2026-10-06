@@ -73,11 +73,15 @@
               <div id="general-summary" class="stats-summary-grid"></div>
             </section>
 
-            <div class="stats-block-grid">
+            <div class="stats-block-grid stats-general-layout">
+              <article class="stats-block stats-general-timeline">
+                <div class="stats-section-head"><div><h3>Linha do tempo</h3><p>Evolução do tempo estudado ao longo do período selecionado.</p></div></div>
+                <div class="chart-box"><canvas id="chart-general-study"></canvas></div>
+              </article>
+
               <article class="stats-block stats-general-habit">
                 <div class="stats-section-head"><div><h3>Ritmo e hábito</h3><p>Tempo estudado, frequência e sessões.</p></div></div>
                 <div id="general-habit-metrics" class="metric-strip"></div>
-                <div class="chart-box"><canvas id="chart-general-study"></canvas></div>
               </article>
 
               <article class="stats-block stats-general-heatmap">
@@ -85,14 +89,14 @@
                 <div id="general-week-heatmap" class="stats-heatmap"></div>
               </article>
 
-              <article class="stats-block wide">
-                <div class="stats-section-head"><div><h3>Visão por área</h3><p>Aulas, questões, memória, Pulos do Gato e tempo no mesmo quadro.</p></div></div>
-                <div id="general-area-table" class="stats-table-wrap"></div>
-              </article>
-
-              <article class="stats-block wide">
+              <article class="stats-block stats-general-insights">
                 <div class="stats-section-head"><div><h3>Insights</h3><p>Pontos de atenção e mudanças relevantes.</p></div></div>
                 <div id="general-insights"></div>
+              </article>
+
+              <article class="stats-block stats-general-area">
+                <div class="stats-section-head"><div><h3>Visão por área</h3><p>Aulas, questões, memória, Pulos do Gato e tempo no mesmo quadro.</p></div></div>
+                <div id="general-area-table" class="stats-table-wrap"></div>
               </article>
             </div>
           </div>
