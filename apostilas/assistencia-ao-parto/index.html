@@ -4,7 +4,7 @@
   <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://upload.wikimedia.org; font-src 'self' data: https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Assistência ao Parto, Vigilância Intraparto e Partograma · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
@@ -30,6 +30,11 @@
     .flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-top:12px}.flow-step{position:relative;padding:12px 9px;border-radius:12px;background:var(--surface-2);border:1px solid var(--border);text-align:center;font-size:10.5px;line-height:1.35}.flow-step:not(:last-child)::after{content:"→";position:absolute;right:-10px;top:50%;transform:translateY(-50%);color:var(--accent);font-weight:700}
     .mindmap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.mind-center{grid-column:1/-1;padding:16px;border-radius:15px;background:var(--accent);color:#fff;text-align:center}.mind-branch{padding:13px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}.mind-branch h3{margin:0 0 6px;font-size:12px;color:var(--accent)}.mind-branch li{font-size:10px;line-height:1.4}
     .fixation-list{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}.fixation-item{padding:14px 15px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}.fixation-question{font-size:12.6px;line-height:1.58}.fixation-actions{margin-top:10px}.fixation-toggle{min-height:32px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:10px;cursor:pointer}.fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}.fixation-answer[hidden]{display:none}
+    .book-figure{margin:16px 0 18px;padding:14px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:16px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}
+    .book-figure img{display:block;width:100%;max-width:760px;height:auto;margin:0 auto;border-radius:12px;background:#fff}
+    .book-figure figcaption{margin-top:9px;color:var(--muted);font-size:10.5px;line-height:1.45;text-align:left}
+    .book-figure figcaption strong{color:var(--text);font-weight:600}
+  
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none}.book-outline-nav{display:flex;gap:6px;overflow-x:auto}.book-outline-link{flex:0 0 auto;white-space:nowrap}.book-grid-2,.mindmap{grid-template-columns:1fr}.flow{grid-template-columns:1fr}.flow-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px}}
   </style>
 </head>
@@ -149,6 +154,15 @@
 
           <div class="book-callout"><strong>Pulo do Gato</strong>Quando a prova diz “apresentação cefálica”, ainda falta uma informação: <em>como a cabeça está fletida?</em> A apresentação cefálica de vértice é a mais favorável porque a flexão permite oferecer à pelve um diâmetro cefálico menor.</div>
 
+          <figure class="book-figure" id="fig-apresentacao-cefalica">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/25/Cephalic_presentation.svg"
+              alt="Esquema de apresentação cefálica fetal em relação à pelve materna"
+              loading="lazy"
+            >
+            <figcaption><strong>Apresentação cefálica.</strong> Use a figura para visualizar a diferença entre “a cabeça estar para baixo” e a orientação específica da cabeça dentro da pelve. Fonte: Mikael Häggström, Wikimedia Commons, domínio público.</figcaption>
+          </figure>
+
           <h3>2.3 Atitude fetal: o feto está fletido ou estendido?</h3>
           <p><strong>Atitude</strong> é a relação das partes fetais entre si. Na atitude fisiológica predominam flexão da cabeça sobre o tórax, flexão dos braços e flexão das pernas. Para a cabeça, a atitude é especialmente importante porque modifica qual diâmetro cefálico será apresentado à pelve.</p>
           <p>Quanto melhor a flexão da cabeça, mais o <strong>occipício</strong> se torna o ponto de referência da apresentação de vértice. À medida que a cabeça se deflete, passam a predominar outros pontos de referência, como bregma, fronte ou mento.</p>
@@ -181,6 +195,15 @@
               <tr><td><strong>OP</strong></td><td>Occípito-posterior direta</td><td>Occipício em direção ao sacro materno.</td></tr>
             </tbody>
           </table>
+
+          <figure class="book-figure" id="fig-variedades-occipitais">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Cephalic_presentations_overview.png"
+              alt="Variedades de posição cefálica vistas pela pelve materna, incluindo posições occípito-anteriores, transversas e posteriores"
+              loading="lazy"
+            >
+            <figcaption><strong>Variedades de posição na apresentação cefálica.</strong> O que muda entre os quadros é a orientação do occipício em relação à pelve materna. Compare especialmente as posições anteriores, transversas e posteriores. Fonte: Mikael Häggström, Wikimedia Commons, domínio público.</figcaption>
+          </figure>
 
           <div class="drive-block">
             <h4>Como reconhecer no toque vaginal?</h4>
