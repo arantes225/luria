@@ -315,14 +315,33 @@
 
   async function loadRows() {
     if (!sb) return;
-    const { data, error } = await sb.rpc("admin_list_apostila_images", {
-      p_apostila_path: path
-    });
-    if (error) {
-      console.warn("Curadoria de imagens da apostila indisponível:", error);
-      return;
+
+    let pending = [];
+    let approved = [];
+
+    if (isAdmin) {
+      const { data: adminData, error: adminError } = await sb.rpc("admin_list_apostila_images", {
+        p_apostila_path: path
+      });
+      if (adminError) {
+        console.warn("Curadoria administrativa da apostila indisponível:", adminError);
+      } else {
+        const all = Array.isArray(adminData) ? adminData : [];
+        pending = all.filter(row => row.review_status === "pending");
+        approved = all.filter(row => row.review_status === "approved");
+      }
+    } else {
+      const { data: approvedData, error: approvedError } = await sb.rpc("list_approved_apostila_images", {
+        p_apostila_path: path
+      });
+      if (approvedError) {
+        console.warn("Imagens aprovadas da apostila indisponíveis:", approvedError);
+        return;
+      }
+      approved = Array.isArray(approvedData) ? approvedData : [];
     }
-    rows = Array.isArray(data) ? data : [];
+
+    rows = [...approved, ...pending];
     renderApproved();
     renderReviewPanel();
   }
