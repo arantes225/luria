@@ -1460,3 +1460,79 @@ body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap
     font-size:8px!important;
   }
 }
+
+
+/* Estatísticas v32 — composição final da aba Geral */
+@media (min-width:981px){
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-layout{
+    display:grid!important;
+    grid-template-columns:repeat(12,minmax(0,1fr))!important;
+    grid-template-areas:
+      "timeline timeline timeline timeline timeline timeline timeline timeline timeline timeline timeline timeline"
+      "habit habit habit habit habit habit heat heat heat heat heat heat"
+      "ins ins ins ins ins ins area area area area area area"!important;
+    gap:14px!important;
+    align-items:stretch!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-timeline{
+    grid-area:timeline!important;
+    grid-column:auto!important;
+    min-height:280px!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-habit{
+    grid-area:habit!important;
+    grid-column:auto!important;
+    min-height:250px!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-heatmap{
+    grid-area:heat!important;
+    grid-column:auto!important;
+    min-height:250px!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-insights{
+    grid-area:ins!important;
+    grid-column:auto!important;
+    min-height:250px!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-area{
+    grid-area:area!important;
+    grid-column:auto!important;
+    min-height:250px!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-timeline .chart-box{
+    min-height:220px!important;
+    height:220px!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-habit #general-habit-metrics{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+    margin-top:12px!important;
+  }
+
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-insights,
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-area{
+    height:100%!important;
+  }
+}
+
+@media(max-width:980px){
+  body[data-page="estatisticas"] [data-stats-panel="geral"] .stats-general-layout{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    grid-template-areas:
+      "timeline"
+      "habit"
+      "heat"
+      "ins"
+      "area"!important;
+    gap:12px!important;
+  }
+}
