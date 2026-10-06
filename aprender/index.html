@@ -257,14 +257,13 @@ body[data-page="aprender"] .tool-card{
 body[data-page="aprender"] .tool-card:before{
   content:""!important;
   position:absolute!important;
-  left:42%!important;
-  right:-8%!important;
-  bottom:-58%!important;
-  height:105%!important;
-  border-radius:50% 0 0 0!important;
-  background:color-mix(in srgb,var(--accent) 7.5%,transparent)!important;
-  transform:rotate(-8deg)!important;
-  z-index:-1!important;
+  left:0!important;top:0!important;bottom:0!important;right:auto!important;
+  width:8px!important;height:auto!important;
+  border-radius:22px 0 0 22px!important;
+  background:var(--accent)!important;
+  transform:none!important;
+  box-shadow:none!important;
+  z-index:5!important;
   pointer-events:none!important;
 }
 body[data-page="aprender"] .tool-card:hover{
@@ -893,23 +892,30 @@ body[data-page="aprender"] .tool-card .tool-cta{
 
 
 <style id="learn-card-side-finish-v5">
-/* Acabamento lateral contínuo, no padrão visual das Apostilas */
+/* Aprender — faixa lateral contínua, sem lingueta */
 body[data-page="aprender"] .tool-card{
+  position:relative!important;
+  overflow:hidden!important;
   padding-left:26px!important;
 }
 body[data-page="aprender"] .tool-card::after{
+  content:none!important;
+}
+body[data-page="aprender"] .tool-card::before{
   content:""!important;
   position:absolute!important;
   left:0!important;
   top:0!important;
   bottom:0!important;
-  width:6px!important;
+  right:auto!important;
+  width:8px!important;
   height:auto!important;
   border-radius:22px 0 0 22px!important;
   background:var(--accent)!important;
-  box-shadow:3px 0 10px color-mix(in srgb,var(--accent) 20%,transparent)!important;
+  box-shadow:none!important;
+  transform:none!important;
   opacity:1!important;
-  z-index:4!important;
+  z-index:5!important;
   pointer-events:none!important;
 }
 @media(max-width:760px){
