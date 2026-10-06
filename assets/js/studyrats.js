@@ -521,7 +521,7 @@ function sharedStudyratsRender(){
       const value=Number(p.value)||0;
       const performanceRatio=leaderValue>0?Math.max(0,Math.min(1,value/leaderValue)):0;
       const movementFactor=0.25+(0.75*performanceRatio);
-      const pct=Math.max(6,Math.min(88,6+(82*timeFraction*movementFactor)));
+      const pct=Math.max(4,Math.min(93,4+(89*timeFraction*movementFactor)));
       const score=Number.isInteger(value)?value:value.toFixed(1);
       const laneColor=sharedStudyratLaneColors[index%sharedStudyratLaneColors.length];
 
