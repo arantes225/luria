@@ -158,7 +158,23 @@
   .curation-item[data-state="approved"]::after{content:"Aprovada para inserção — aguardando processamento da mídia";display:block;margin-top:8px;font-size:8.5px;color:var(--accent)}
   @media(max-width:760px){.ist-spectrum,.curation-grid{grid-template-columns:1fr}}
 </style>
-</head>
+<style>
+.book-outline{overflow:hidden!important;display:flex!important;flex-direction:column!important;gap:8px!important;max-height:calc(100dvh - 34px)!important}
+.book-outline-back{display:flex!important;width:100%!important;min-height:36px!important;margin:0!important;flex:none!important}
+.book-outline-head{padding:5px 2px!important;flex:none!important}
+.book-outline-head small{display:none!important}
+.book-outline-nav{display:grid!important;grid-template-columns:1fr!important;gap:1px!important;min-height:0!important;overflow:auto!important;scrollbar-width:none!important;margin:0!important}
+.book-outline-nav::-webkit-scrollbar{display:none}
+.book-outline-link{min-height:0!important;padding:4px 7px!important;font-size:10px!important;line-height:1.25!important}
+.ist-image-group{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:12px;margin:16px 0}
+.ist-image{margin:0!important;padding:12px;background:var(--surface,#fff);border:1px solid var(--border,#d9e4ef);border-radius:12px}
+.ist-image img{display:block;width:100%;max-height:290px;object-fit:contain;border-radius:8px}
+.ist-image figcaption{font-size:12px;line-height:1.4;margin-top:8px}
+.ist-image-error{display:none!important;font-size:12px}
+.ist-image-unavailable img{display:none}
+.ist-image-unavailable .ist-image-error{display:block!important}
+@media(max-width:900px){.book-outline{max-height:none!important;position:relative!important}.book-outline-nav{max-height:180px}}
+</style></head>
 <body data-page="aprender">
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -201,13 +217,7 @@
 <div class="book-meta-row"><span>Área: Ginecologia e Obstetrícia</span><span>Matéria: Ginecologia</span><span>Tema: IST</span></div>
 </section>
 
-<section id="curadoria-imagens" class="curation-box" aria-label="Curadoria de imagens">
-<h2>Curadoria de imagens</h2>
-<p>As imagens abaixo são apenas candidatas. Nenhuma é exibida no conteúdo do aluno antes da aprovação. Foram priorizadas fotografias clínicas reais e material institucional.</p>
-<div class="curation-grid">
-<article class="curation-item" data-curation-id="ist-1" data-state="pending"><strong>Sífilis secundária — lesões palmares</strong><p><b>Seção:</b> Sífilis · Reconhecer o padrão palmo-plantar da sífilis secundária.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://www.cdc.gov/syphilis/media/images/palmar-1-thumb.jpg" target="_blank" rel="noopener">Expandir</a><a href="https://www.cdc.gov/syphilis/hcp/images/index.html" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-2" data-state="pending"><strong>Sífilis secundária — lesões plantares</strong><p><b>Seção:</b> Sífilis · Complementar a morfologia clássica em plantas.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://www.cdc.gov/syphilis/media/images/plantar-2-thumb.jpg" target="_blank" rel="noopener">Expandir</a><a href="https://www.cdc.gov/syphilis/hcp/images/index.html" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-3" data-state="pending"><strong>Treponema pallidum em campo escuro</strong><p><b>Seção:</b> Sífilis · Relacionar agente e diagnóstico direto em lesão.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://www.cdc.gov/syphilis/media/images/darkfield-1-thumb.jpg" target="_blank" rel="noopener">Expandir</a><a href="https://www.cdc.gov/syphilis/hcp/images/index.html" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-4" data-state="pending"><strong>Sífilis secundária — exantema em dorso</strong><p><b>Seção:</b> Sífilis · Mostrar que a fase secundária não se limita a palmas e plantas.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://www.cdc.gov/syphilis/media/images/back-thumb.jpg" target="_blank" rel="noopener">Expandir</a><a href="https://www.cdc.gov/syphilis/hcp/images/index.html" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-5" data-state="pending"><strong>Sífilis primária — cancro lingual</strong><p><b>Seção:</b> Úlcera genital/extragenital · Reforçar apresentações extragenitais após sexo oral.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://www.cdc.gov/syphilis/media/images/chancre-oral-1-thumb.jpg" target="_blank" rel="noopener">Expandir</a><a href="https://www.cdc.gov/syphilis/hcp/images/index.html" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-6" data-state="pending"><strong>Sífilis primária — cancro peniano</strong><p><b>Seção:</b> Úlcera genital · Morfologia clínica do cancro duro.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://www.cdc.gov/syphilis/media/images/chancre-penile-1-thumb.jpg" target="_blank" rel="noopener">Expandir</a><a href="https://www.cdc.gov/syphilis/hcp/images/index.html" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-7" data-state="pending"><strong>Herpes genital — vesículas/úlceras</strong><p><b>Seção:</b> Herpes · Diferenciar vesículas agrupadas e ulceração dolorosa.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://phil.cdc.gov/Details.aspx?pid=6477" target="_blank" rel="noopener">Expandir</a><a href="https://phil.cdc.gov/Details.aspx?pid=6477" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-8" data-state="pending"><strong>Condiloma acuminado</strong><p><b>Seção:</b> HPV · Reconhecer verrugas anogenitais típicas.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://phil.cdc.gov/Details.aspx?pid=16414" target="_blank" rel="noopener">Expandir</a><a href="https://phil.cdc.gov/Details.aspx?pid=16414" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-9" data-state="pending"><strong>Diplococos Gram-negativos intracelulares</strong><p><b>Seção:</b> Gonorreia · Correlacionar Gram de secreção uretral com gonococo.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://phil.cdc.gov/Details.aspx?pid=21362" target="_blank" rel="noopener">Expandir</a><a href="https://phil.cdc.gov/Details.aspx?pid=21362" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article><article class="curation-item" data-curation-id="ist-10" data-state="pending"><strong>Cancroide — úlceras múltiplas</strong><p><b>Seção:</b> Úlcera genital · Comparar úlcera dolorosa e irregular com sífilis/herpes.<br><b>Fonte/licença:</b> CDC/PHIL; uso educacional, com atribuição conforme página-fonte.</p><div class="curation-actions"><a href="https://phil.cdc.gov/Details.aspx?pid=3698" target="_blank" rel="noopener">Expandir</a><a href="https://phil.cdc.gov/Details.aspx?pid=3698" target="_blank" rel="noopener">Fonte</a><button type="button" data-curation-action="reject">Rejeitar</button><button type="button" data-curation-action="approve">Aprovar</button></div></article>
-</div>
-</section>
+
 
 <section id="resumo-prova" class="book-section book-exam-summary">
 <h2>Em 30 segundos</h2>
@@ -348,7 +358,7 @@
 </section>
 
 <section id="sifilis" class="book-section">
-<h2>6. Sífilis: da lesão primária à doença sistêmica</h2>
+<h2>6. Sífilis: da lesão primária à doença sistêmica</h2><div class="ist-image-group" aria-label="Imagens clínicas aprovadas"><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-13.webp" alt="Sífilis secundária: lesões palmares" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Sífilis secundária: lesões palmares</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=16749" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-14.webp" alt="Sífilis primária: cancro vulvar" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Sífilis primária: cancro vulvar</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=17054" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure></div>
 <div class="book-callout book-clinical-callout" role="note"><strong>Sífilis: interpretação diagnóstica</strong><ol><li>Realize teste treponêmico ou teste rápido conforme algoritmo</li><li>Associe teste não treponêmico, como VDRL ou RPR, com titulação</li><li>Correlacione resultados com tratamento prévio e estágio clínico</li><li>Acompanhe títulos não treponêmicos quando indicado</li></ol></div>
 <div class="book-callout book-clinical-callout" role="note"><strong>Sífilis: evolução clínica</strong><ol><li>Primária: cancro duro, por vezes não percebido</li><li>Secundária: exantema, lesões mucosas e manifestações sistêmicas</li><li>Latente: ausência de sinais e sintomas, com sorologia reativa</li><li>Terciária: possíveis lesões gomosas, cardiovasculares ou neurológicas</li></ol></div>
 <p>A sífilis é causada por <i>Treponema pallidum</i>. A fase primária costuma apresentar cancro duro, classicamente úlcera indolor, de base limpa e endurecida, acompanhada ou não de linfadenopatia regional. A fase secundária representa disseminação sistêmica e pode cursar com exantema, inclusive palmo-plantar, placas mucosas, condiloma plano, alopecia e sintomas constitucionais. A fase latente é sorológica, sem manifestações clínicas; a terciária pode acometer sistema cardiovascular e formar gomas. Comprometimento neurológico, ocular ou otológico pode ocorrer em diferentes estágios e deve ser tratado como entidade específica.</p>
@@ -427,7 +437,7 @@
 </section>
 
 <section id="herpes" class="book-section">
-<h2>9. Herpes genital</h2>
+<h2>9. Herpes genital</h2><div class="ist-image-group" aria-label="Imagens clínicas aprovadas"><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-15.webp" alt="Herpes genital feminino" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Herpes genital feminino</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=15820" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-16.webp" alt="Herpes genital: lesões vulvares" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Herpes genital: lesões vulvares</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=30265" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure></div>
 <div class="book-callout book-clinical-callout" role="note"><strong>Herpes genital</strong><ol><li>Vesículas, fissuras ou úlceras dolorosas podem ocorrer</li><li>PCR de lesão é útil quando indicado e disponível</li><li>Antivirais reduzem intensidade e duração do episódio</li><li>O vírus persiste em latência e pode causar recorrências</li></ol></div>
 <p>HSV-1 e HSV-2 podem causar doença genital. O primeiro episódio costuma ser mais exuberante: vesículas agrupadas que evoluem para erosões ou úlceras dolorosas, ardor, disúria, adenopatia e, por vezes, febre e mal-estar. Recorrências tendem a ser mais curtas. Eliminação viral assintomática explica transmissão sem lesão visível.</p>
 <table class="book-table dose-table"><thead><tr><th>Cenário</th><th>Esquema PCDT</th><th>Meta</th></tr></thead><tbody>
@@ -449,7 +459,7 @@
 
 
 <section id="outras-ulceras" class="book-section">
-<h2>10. Outras úlceras: cancroide, LGV e donovanose</h2>
+<h2>10. Outras úlceras: cancroide, LGV e donovanose</h2><div class="ist-image-group" aria-label="Imagens clínicas aprovadas"><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-19.webp" alt="Cancro mole" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Cancro mole</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=32192" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-20.webp" alt="Cancro mole com bubão inguinal" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Cancro mole com bubão inguinal</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=3691" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure></div>
 <div class="book-callout book-clinical-callout" role="note"><strong>Úlcera genital: diferenciais</strong><ol><li>Sífilis: úlcera classicamente indolor, mas apresentação variável</li><li>Herpes: vesículas ou úlceras dolorosas, frequentemente agrupadas</li><li>Cancro mole: úlceras habitualmente dolorosas e irregulares</li><li>LGV: lesão inicial discreta, adenopatia e possível proctite</li></ol></div>
 <p>Embora menos frequentes que sífilis e herpes em muitos cenários brasileiros, essas infecções entram no diferencial de úlcera, adenopatia e doença anorretal. Morfologia ajuda, mas não deve ser usada como teste perfeito.</p>
 <table class="book-table"><thead><tr><th>Infecção</th><th>Padrão clínico clássico</th><th>Tratamento de referência</th></tr></thead><tbody>
@@ -472,7 +482,7 @@
 </section>
 
 <section id="hpv" class="book-section">
-<h2>11. HPV e verrugas anogenitais</h2>
+<h2>11. HPV e verrugas anogenitais</h2><div class="ist-image-group" aria-label="Imagens clínicas aprovadas"><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-17.webp" alt="Condiloma acuminado" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Condiloma acuminado</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=4151" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure><figure class="ist-image"><img loading="lazy" decoding="async" src="https://sxdsfklllilhdyuamvvg.supabase.co/storage/v1/object/public/apostila-media/apostilas-infeccoes-sexualmente-transmissiveis/ist-18.webp" alt="Condiloma perianal" onerror="this.closest('figure').classList.add('ist-image-unavailable')"><figcaption><strong>Condiloma perianal</strong> · <a href="https://wwwn.cdc.gov/phil/Details.aspx?pid=16733" target="_blank" rel="noopener noreferrer">Fonte clínica</a></figcaption><p class="ist-image-error">Imagem temporariamente indisponível; consulte a fonte clínica.</p></figure></div>
 <div class="book-callout book-clinical-callout" role="note"><strong>HPV e condiloma</strong><ol><li>Tipos de baixo risco são frequentemente associados a verrugas</li><li>Tipos oncogênicos exigem prevenção e rastreamento conforme diretriz</li><li>A vacinação é medida de prevenção primária</li><li>Tratamento de verrugas remove lesões visíveis, não garante eliminação viral</li></ol></div>
 <p>HPV é extremamente prevalente. Tipos de baixo risco, especialmente 6 e 11, estão associados à maioria das verrugas anogenitais, enquanto tipos oncogênicos sustentam a carcinogênese cervical e de outros sítios. A presença de verruga não indica necessariamente infecção recente nem permite inferir fidelidade ou momento de aquisição.</p>
 <h3>Diagnóstico e quando biopsiar</h3>
@@ -735,25 +745,6 @@
 })();
 </script>
 
-<script>
-(function(){
-  const box=document.getElementById("curadoria-imagens");
-  if(box){
-    const params=new URLSearchParams(location.search);
-    const adminMode=params.get("curadoria")==="1" || sessionStorage.getItem("luria-image-curation")==="1";
-    if(adminMode)box.classList.add("is-visible");
-    box.addEventListener("click",e=>{
-      const btn=e.target.closest("[data-curation-action]");
-      if(!btn)return;
-      const item=btn.closest(".curation-item"); if(!item)return;
-      item.dataset.state=btn.dataset.curationAction==="reject"?"rejected":"approved";
-      try{localStorage.setItem("luria-curation-"+item.dataset.curationId,item.dataset.state)}catch{}
-    });
-    box.querySelectorAll(".curation-item").forEach(item=>{
-      try{const s=localStorage.getItem("luria-curation-"+item.dataset.curationId);if(s)item.dataset.state=s}catch{}
-    });
-  }
-})();
-</script>
+
 </body>
 </html>
