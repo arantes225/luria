@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" rx="30" fill="#f7f9fc"/>
+<text x="600" y="65" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#184888">Endométrio, estrogênio e proteção progestagênica</text>
+<g font-family="Arial,sans-serif">
+<rect x="85" y="130" width="310" height="460" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<text x="240" y="180" text-anchor="middle" font-size="26" font-weight="700" fill="#184888">Estrogênio</text>
+<path d="M160 255 C190 215 290 215 320 255 L320 475 C290 525 190 525 160 475Z" fill="#f4b1c0" stroke="#bb6c7f" stroke-width="4"/>
+<path d="M205 285 C220 260 260 260 275 285 L275 445 C260 470 220 470 205 445Z" fill="#fff4f6" stroke="#d78ba0" stroke-width="4"/>
+<text x="240" y="540" text-anchor="middle" font-size="20" fill="#4d5c70">estimula proliferação</text>
+<path d="M395 360 H515" stroke="#184888" stroke-width="8" marker-end="url(#a)"/>
+<rect x="515" y="130" width="310" height="460" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<text x="670" y="180" text-anchor="middle" font-size="26" font-weight="700" fill="#184888">Progestagênio</text>
+<path d="M590 255 C620 215 720 215 750 255 L750 475 C720 525 620 525 590 475Z" fill="#efb7c4" stroke="#bb6c7f" stroke-width="4"/>
+<path d="M625 300 C650 270 690 270 715 300 L715 430 C690 460 650 460 625 430Z" fill="#fff" stroke="#d78ba0" stroke-width="4"/>
+<text x="670" y="525" text-anchor="middle" font-size="19" fill="#4d5c70">modula e protege</text>
+<text x="670" y="552" text-anchor="middle" font-size="19" fill="#4d5c70">o endométrio</text>
+<path d="M825 360 H945" stroke="#184888" stroke-width="8" marker-end="url(#a)"/>
+<rect x="945" y="165" width="190" height="390" rx="26" fill="#eaf2fb" stroke="#8bb2df" stroke-width="3"/>
+<text x="1040" y="225" text-anchor="middle" font-size="24" font-weight="700" fill="#184888">Útero intacto</text>
+<text x="1040" y="285" text-anchor="middle" font-size="20" fill="#46566c">estrogênio</text>
+<text x="1040" y="320" text-anchor="middle" font-size="20" fill="#46566c">sistêmico</text>
+<text x="1040" y="365" text-anchor="middle" font-size="32" font-weight="700" fill="#184888">+</text>
+<text x="1040" y="410" text-anchor="middle" font-size="20" fill="#46566c">proteção</text>
+<text x="1040" y="445" text-anchor="middle" font-size="20" fill="#46566c">progestagênica</text>
+<text x="600" y="655" text-anchor="middle" font-size="22" fill="#5a6779">Na terapia hormonal sistêmica, a necessidade de progestagênio depende da presença de endométrio e do esquema utilizado.</text>
+</g>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#184888"/></marker></defs></svg>
