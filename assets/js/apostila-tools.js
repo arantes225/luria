@@ -123,6 +123,9 @@
     .apostila-approved-figure figcaption{margin-top:9px;color:var(--muted);font-size:10.5px;line-height:1.5;text-align:left}
     .apostila-approved-figure figcaption strong{color:var(--text);font-weight:600}
     .apostila-approved-figure-source{display:inline-block;margin-top:5px;color:var(--accent);font-size:9px;text-decoration:none}
+    .apostila-approved-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;margin:16px 0 18px}
+    .apostila-approved-pair .apostila-approved-figure{width:100%;max-width:none;margin:0}
+    .apostila-approved-pair .apostila-approved-figure img{max-width:100%}
     .apostila-image-lightbox{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;padding:24px;background:rgba(7,17,31,.78)}
     .apostila-image-lightbox[hidden]{display:none}
     .apostila-image-lightbox-card{position:relative;width:min(980px,94vw);max-height:92vh;padding:14px;border-radius:16px;background:var(--surface);box-shadow:0 24px 70px rgba(0,0,0,.35);overflow:auto}
@@ -199,9 +202,40 @@
     else anchor.insertAdjacentElement("afterend", figure);
   }
 
+  function pairAdjacentApprovedFigures() {
+    document.querySelectorAll(".apostila-approved-pair").forEach(pair => {
+      const parent = pair.parentElement;
+      [...pair.children].forEach(child => parent?.insertBefore(child, pair));
+      pair.remove();
+    });
+
+    document.querySelectorAll(".book-section").forEach(section => {
+      let node = section.firstElementChild;
+      while (node) {
+        if (!node.classList?.contains("apostila-approved-figure")) {
+          node = node.nextElementSibling;
+          continue;
+        }
+        const next = node.nextElementSibling;
+        if (!next?.classList?.contains("apostila-approved-figure")) {
+          node = node.nextElementSibling;
+          continue;
+        }
+        const pair = document.createElement("div");
+        pair.className = "apostila-approved-pair";
+        section.insertBefore(pair, node);
+        pair.appendChild(node);
+        pair.appendChild(next);
+        node = pair.nextElementSibling;
+      }
+    });
+  }
+
   function renderApproved() {
+    document.querySelectorAll(".apostila-approved-pair").forEach(node => node.remove());
     document.querySelectorAll(".apostila-approved-figure[data-apostila-approved-image]").forEach(node => node.remove());
     rows.filter(row => row.review_status === "approved").forEach(placeApprovedImage);
+    pairAdjacentApprovedFigures();
   }
 
   function ensureLightbox() {
