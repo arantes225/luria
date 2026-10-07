@@ -446,6 +446,11 @@
   }
 
   async function boot() {
+    if (document.body?.getAttribute("data-apostila-images") === "off") {
+      document.getElementById("apostila-image-curation")?.remove();
+      document.querySelectorAll(".apostila-approved-pair,.apostila-approved-figure[data-apostila-approved-image]").forEach(node => node.remove());
+      return;
+    }
     sb = window.supabaseClient;
     if (!sb) return;
 
