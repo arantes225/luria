@@ -50,6 +50,10 @@
       .google-calendar-secondary{border:1px solid var(--border);background:var(--surface);color:var(--text)}
       .google-calendar-mark{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--surface);border:1px solid var(--border);font-weight:800}
       .google-calendar-row{display:flex;align-items:center;gap:9px}
+      .google-calendar-cronograma-side{margin:0 0 8px}
+      .google-calendar-cronograma-side .google-calendar-card{align-items:stretch;flex-direction:column;padding:12px}
+      .google-calendar-cronograma-side .google-calendar-actions{width:100%}
+      .google-calendar-cronograma-side .google-calendar-actions button{flex:1}
       @media(max-width:720px){.google-calendar-card{align-items:stretch;flex-direction:column}.google-calendar-actions{width:100%}.google-calendar-actions button{flex:1}}
     `;
     document.head.appendChild(style);
@@ -77,13 +81,22 @@
   function mountCronograma(){
     if (!document.body.matches('[data-page="cronograma"],[data-page="schedule"]')) return;
     if (document.getElementById("google-calendar-integration")) return;
+
+    const host = document.createElement("div");
+    host.id = "google-calendar-integration";
+    host.innerHTML = cardHtml();
+
+    const studyTimeCard = document.querySelector(".agenda-study-time-card");
+    if (studyTimeCard?.parentElement) {
+      host.classList.add("google-calendar-cronograma-side");
+      studyTimeCard.parentElement.insertBefore(host, studyTimeCard);
+      return;
+    }
+
     const panel = document.querySelector(".planner-panel");
     const header = panel?.querySelector(".planner-header");
     if (!panel || !header) return;
-    const host = document.createElement("div");
-    host.id = "google-calendar-integration";
     host.style.marginTop = "12px";
-    host.innerHTML = cardHtml();
     header.insertAdjacentElement("afterend",host);
   }
 
