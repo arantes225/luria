@@ -532,8 +532,8 @@
       ["Clínica Médica", ["clinica medica","clínica médica","clinica","clínica"]],
       ["Pediatria", ["pediatria"]],
       ["Cirurgia Geral", ["cirurgia geral","cirurgia"]],
-      ["Preventiva", ["preventiva","medicina preventiva","saude coletiva","saúde coletiva"]],
-      ["GO", ["go","ginecologia e obstetricia","ginecologia e obstetrícia","ginecologia","obstetricia","obstetrícia"]]
+      ["Medicina Preventiva", ["preventiva","medicina preventiva","saude coletiva","saúde coletiva"]],
+      ["Ginecologia e Obstetrícia", ["go","ginecologia e obstetricia","ginecologia e obstetrícia","ginecologia","obstetricia","obstetrícia"]]
     ];
     const norm = value => String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
     const end = startDay(state.bounds?.end || new Date());
