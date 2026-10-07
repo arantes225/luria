@@ -2393,7 +2393,7 @@ function parsePdfCourseArea(
       )
     )
   ) {
-    return "Preventiva";
+    return "Medicina Preventiva";
   }
 
   if (
