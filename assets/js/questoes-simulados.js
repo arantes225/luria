@@ -80,7 +80,7 @@ let AREA_OPTIONS =
     "Pediatria",
     "Ginecologia e Obstetrícia",
     "Cirurgia Geral",
-    "Preventiva"
+    "Medicina Preventiva"
   ];
 
 
