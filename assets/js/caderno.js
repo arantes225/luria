@@ -17075,15 +17075,27 @@ function updateNotionConnectionUi() {
     try { localStorage.setItem("luria:notion:ever-connected", "1"); } catch {}
   }
 
-  let everConnected = notionSourceState.connected;
+  let everConnected = false;
   try {
-    everConnected = everConnected || localStorage.getItem("luria:notion:ever-connected") === "1";
+    everConnected = localStorage.getItem("luria:notion:ever-connected") === "1";
   } catch {}
 
-  const showFirstConnection = !notionSourceState.connected && !everConnected;
+  const shouldShowConnect = !notionSourceState.connected;
 
-  if (connect) connect.hidden = !showFirstConnection;
-  if (firstConnect) firstConnect.hidden = !showFirstConnection;
+  if (connect) {
+    connect.hidden = !shouldShowConnect;
+    connect.textContent = everConnected ? "Reconectar Notion" : "Conectar Notion";
+  }
+
+  if (firstConnect) {
+    firstConnect.hidden = !shouldShowConnect;
+    const title = firstConnect.querySelector(".notebook-notion-first-connect-copy strong");
+    const copy = firstConnect.querySelector(".notebook-notion-first-connect-copy span");
+    if (title) title.textContent = everConnected ? "Reconectar Notion" : "Conectar Notion";
+    if (copy) copy.textContent = everConnected
+      ? "A conexão anterior não está ativa. Reconecte para voltar a exibir e editar suas páginas do Notion."
+      : "Conecte uma vez para trazer suas páginas para a biblioteca de Anotações.";
+  }
 }
 
 function renderNotionPages(pages = notionSourceState.pages) {
