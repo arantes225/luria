@@ -359,7 +359,7 @@
       } catch (error) {
         console.error("Falha na curadoria de imagem da apostila:", error);
         button.disabled = false;
-        window.alert("Não foi possível salvar a decisão desta imagem.");
+        window.alert("Não foi possível salvar a decisão desta imagem: " + (error?.message || "erro desconhecido"));
       }
     });
   }
