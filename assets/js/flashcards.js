@@ -2224,7 +2224,7 @@ const FLASHCARD_SUBJECTS_BY_AREA = {
     "Transplantes"
   ],
 
-  "Preventiva": [
+  "Medicina Preventiva": [
     "Epidemiologia",
     "Bioestatística",
     "Medicina Baseada em Evidências",
@@ -2293,13 +2293,13 @@ function normalizeFlashAreaName(value) {
     "cirurgia geral":
       "Cirurgia Geral",
     "preventiva":
-      "Preventiva",
+      "Medicina Preventiva",
     "medicina preventiva":
-      "Preventiva",
+      "Medicina Preventiva",
     "medicina preventiva e social":
-      "Preventiva",
+      "Medicina Preventiva",
     "saude coletiva":
-      "Preventiva"
+      "Medicina Preventiva"
   };
 
   return aliases[normalized]
@@ -2311,7 +2311,7 @@ const FLASHCARD_AREAS = [
   "Pediatria",
   "Ginecologia e Obstetrícia",
   "Cirurgia Geral",
-  "Preventiva"
+  "Medicina Preventiva"
 ];
 
 function wireCreateAreaPicker() {
