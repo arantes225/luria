@@ -118,8 +118,8 @@
     .apostila-image-candidate-actions button,.apostila-image-candidate-actions a{min-height:31px;padding:0 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;font-size:8.8px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
     .apostila-image-candidate-actions [data-apostila-image-action="approve"]{background:var(--accent);border-color:var(--accent);color:#fff}
     .apostila-image-candidate-actions [data-apostila-image-action="reject"]{color:var(--danger,#b42318)}
-    .apostila-approved-figure{margin:16px 0 18px;padding:13px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}
-    .apostila-approved-figure img{display:block;width:100%;max-width:820px;max-height:560px;object-fit:contain;margin:0 auto;border-radius:10px;background:#fff}
+    .apostila-approved-figure{width:min(52%,460px);margin:16px auto 18px;padding:13px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}
+    .apostila-approved-figure img{display:block;width:100%;max-width:440px;max-height:360px;object-fit:contain;margin:0 auto;border-radius:10px;background:#fff}
     .apostila-approved-figure figcaption{margin-top:9px;color:var(--muted);font-size:10.5px;line-height:1.5;text-align:left}
     .apostila-approved-figure figcaption strong{color:var(--text);font-weight:600}
     .apostila-approved-figure-source{display:inline-block;margin-top:5px;color:var(--accent);font-size:9px;text-decoration:none}
