@@ -78,26 +78,27 @@
     `;
   }
 
-  function mountCronograma(){
+  function mountCronograma(attempt=0){
     if (!document.body.matches('[data-page="cronograma"],[data-page="schedule"]')) return;
-    if (document.getElementById("google-calendar-integration")) return;
 
-    const host = document.createElement("div");
-    host.id = "google-calendar-integration";
-    host.innerHTML = cardHtml();
+    const side = document.querySelector(".agenda-side.agenda-summary-side, .agenda-insights-side");
+    const studyTimeCard = side?.querySelector(".agenda-study-time-card");
 
-    const studyTimeCard = document.querySelector(".agenda-study-time-card");
-    if (studyTimeCard?.parentElement) {
-      host.classList.add("google-calendar-cronograma-side");
-      studyTimeCard.parentElement.insertBefore(host, studyTimeCard);
+    if (!side || !studyTimeCard) {
+      if (attempt < 20) window.setTimeout(() => mountCronograma(attempt + 1), 100);
       return;
     }
 
-    const panel = document.querySelector(".planner-panel");
-    const header = panel?.querySelector(".planner-header");
-    if (!panel || !header) return;
-    host.style.marginTop = "12px";
-    header.insertAdjacentElement("afterend",host);
+    let host = document.getElementById("google-calendar-integration");
+    if (!host) {
+      host = document.createElement("div");
+      host.id = "google-calendar-integration";
+      host.innerHTML = cardHtml();
+    }
+
+    host.classList.add("google-calendar-cronograma-side");
+    host.style.marginTop = "";
+    side.insertBefore(host, studyTimeCard);
   }
 
   function mountSettings(){
