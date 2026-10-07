@@ -179,6 +179,15 @@
       content_url:"/apostilas/cancer-colo-utero-hpv/",
       created_at:"2026-10-07T15:18:00-03:00"
     };
+    const cicloHho={
+      id:"ciclo-menstrual-hho-2026",
+      area:"Ginecologia e Obstetrícia",
+      materia:"Endocrinologia Ginecológica",
+      tema:"Ciclo Menstrual e Eixo Hipotálamo-Hipófise-Ovário",
+      titulo:"Ciclo Menstrual e Eixo Hipotálamo-Hipófise-Ovário",
+      content_url:"/apostilas/ciclo-menstrual-eixo-hho/",
+      created_at:"2026-10-07T15:27:00-03:00"
+    };
     const areaOrder=["Clínica Médica","Cirurgia Geral","Ginecologia e Obstetrícia","Pediatria","Medicina Preventiva / MFC"];
     const norm=v=>String(v||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
     const bookIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg>';
@@ -284,7 +293,7 @@
         }
       }catch{}
       const byUrl=new Map();
-      [climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
+      [cicloHho,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
       books=[...byUrl.values()].sort((a,b)=>(Date.parse(b.created_at||0)||0)-(Date.parse(a.created_at||0)||0));
       render("");
     }
