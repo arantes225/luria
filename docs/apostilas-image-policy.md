@@ -4,18 +4,20 @@
 Toda imagem precisa acelerar a compreensão clínica. A imagem não pode obrigar o estudante a traduzir texto, decifrar legendas estrangeiras ou interromper o fluxo da apostila.
 
 ## Regra de idioma
-1. **Esquemas, fluxogramas, algoritmos, tabelas visuais e diagramas didáticos devem estar em português.**
-2. Imagens com texto estrutural em inglês não devem ser aprovadas para publicação.
-3. Se a melhor fonte técnica estiver em inglês, ela pode servir como **referência para reconstrução autoral LURIA em português**, preservando a atribuição científica/licença quando aplicável.
-4. Imagem clínica real, exame, histologia, ultrassom, ECG, RX, TC, colposcopia ou fotografia pode ser usada mesmo sendo de fonte estrangeira, desde que o achado visual seja o foco e não dependa de rótulos em inglês.
-5. Se uma imagem real tiver pequenos rótulos indispensáveis em inglês, preferir uma versão sem rótulos ou com legenda externa em português. Se o texto em inglês dominar a compreensão, substituir.
+1. **Dar preferência a esquemas, fluxogramas, algoritmos, tabelas visuais e diagramas didáticos em português.**
+2. Se não houver uma boa opção em português, uma imagem em inglês pode ser usada normalmente quando for tecnicamente boa, visualmente clara e realmente útil.
+3. O idioma, sozinho, **não reprova** uma imagem.
+4. Quando houver duas imagens de qualidade semelhante, priorizar a versão em português.
+5. Imagens clínicas reais, exames, histologia, ultrassom, ECG, RX, TC, colposcopia e fotografias podem ser usadas independentemente do idioma da fonte, desde que o foco principal seja o achado visual.
+6. Se uma imagem em inglês for claramente superior às opções em português, ela pode ser aprovada e publicada.
+7. Quando fizer sentido, pode-se futuramente criar uma adaptação LURIA em português, mas isso não é requisito para usar a imagem original.
 
 ## Hierarquia de preferência
 1. Esquema/algoritmo em português de fonte brasileira confiável.
 2. Esquema autoral LURIA em português baseado em fontes confiáveis.
 3. Imagem clínica real ou exame de alta qualidade.
 4. Esquema estrangeiro sem texto ou com símbolos universalmente compreensíveis.
-5. Esquema em inglês: **não publicar**; usar apenas como referência para adaptação.
+5. Esquema em inglês de alta qualidade, quando não houver alternativa em português equivalente ou superior.
 
 ## Integração no texto
 Toda figura aprovada deve ter:
@@ -39,15 +41,15 @@ Não inserir imagem apenas porque é bonita. A figura deve cumprir pelo menos um
 ## Aprovação retroativa
 Ao revisar apostilas publicadas:
 - **manter** imagens clínicas reais úteis e sem dependência de texto estrangeiro;
-- **traduzir/reconstruir** esquemas bons que estejam em inglês;
+- **procurar primeiro alternativa em português** para esquemas em inglês; se não houver opção equivalente ou melhor, manter o esquema em inglês;
 - **substituir** por esquema em português quando houver opção equivalente;
 - **remover** imagens redundantes, decorativas ou pouco didáticas.
 
 ## Fila de aprovação
-Antes de entrar na apostila, cada candidato deve ser revisado no Admin. Candidatos em inglês não devem receber aprovação final como esquema didático. Quando houver versão LURIA traduzida/adaptada, o registro deve apontar para o arquivo em português e manter a fonte original no campo de origem.
+Antes de entrar na apostila, cada candidato deve ser revisado no Admin. Candidatos em inglês podem receber aprovação final normalmente; o sistema deve apenas priorizar opções em português quando houver alternativas de qualidade semelhante.
 
 ## Regra curta
-**Se o aluno precisa traduzir a imagem para entendê-la, a imagem ainda não está pronta para a LURIA.**
+**Português é preferível; qualidade didática é obrigatória. Uma boa imagem em inglês é melhor do que uma imagem pior em português.**
 
 
 ## Proteção de imagens já aprovadas
