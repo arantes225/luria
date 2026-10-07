@@ -58,3 +58,10 @@ Antes de entrar na apostila, cada candidato deve ser revisado no Admin. Candidat
 - A imagem aprovada continua ativa até que o usuário aprove explicitamente a substituição.
 - Se não houver alternativa claramente melhor, mantém-se a imagem aprovada, mesmo que ela contenha texto em inglês.
 - A regra de preferência por português vale principalmente para **novas candidatas e futuras aprovações**; não invalida decisões editoriais já tomadas.
+
+
+## Quantidade de candidatas
+- Para cada nova apostila, buscar **pelo menos 20 imagens candidatas** para revisão no Admin.
+- A meta de 20 é geral, não uma obrigação de distribuir imagens artificialmente por todas as seções.
+- Se determinada parte do conteúdo não se beneficia de imagem, não inserir figura apenas para cumprir quantidade.
+- A busca deve oferecer variedade suficiente para escolha editorial: esquemas, fluxogramas, imagens clínicas reais e exames, quando aplicáveis.
