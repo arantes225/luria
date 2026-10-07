@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" rx="30" fill="#f7f9fc"/><g font-family="Arial">
+<text x="600" y="62" text-anchor="middle" font-size="38" font-weight="700" fill="#184888">Modelo das duas células e duas gonadotrofinas</text>
+<rect x="90" y="130" width="420" height="480" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<rect x="690" y="130" width="420" height="480" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<text x="300" y="180" text-anchor="middle" font-size="30" font-weight="700" fill="#184888">Célula da teca</text>
+<text x="900" y="180" text-anchor="middle" font-size="30" font-weight="700" fill="#184888">Célula da granulosa</text>
+<circle cx="300" cy="270" r="58" fill="#eaf2fb" stroke="#8bb2df" stroke-width="3"/>
+<text x="300" y="278" text-anchor="middle" font-size="28" font-weight="700" fill="#184888">LH</text>
+<text x="160" y="385" font-size="23" fill="#3f5065">Colesterol</text><text x="285" y="385" font-size="30" fill="#184888">→</text><text x="330" y="385" font-size="23" fill="#3f5065">Androgênios</text>
+<path d="M510 395 H690" stroke="#184888" stroke-width="8" marker-end="url(#a)"/>
+<circle cx="900" cy="270" r="58" fill="#eef7f2" stroke="#83b99a" stroke-width="3"/>
+<text x="900" y="278" text-anchor="middle" font-size="28" font-weight="700" fill="#2f6f4d">FSH</text>
+<text x="760" y="385" font-size="23" fill="#3f5065">Androgênios</text><text x="915" y="385" font-size="30" fill="#184888">→</text><text x="960" y="385" font-size="23" fill="#3f5065">Estradiol</text>
+<text x="900" y="445" text-anchor="middle" font-size="22" fill="#3f5065">FSH aumenta aromatase</text>
+<text x="600" y="555" text-anchor="middle" font-size="23" fill="#384a61">Teca produz androgênios sob estímulo de LH; granulosa converte-os em estradiol sob estímulo de FSH.</text>
+<text x="600" y="675" text-anchor="middle" font-size="22" fill="#5a6779">O modelo simplifica a esteroidogênese folicular e facilita o raciocínio sobre hiperandrogenismo e ovulação.</text>
+</g><defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#184888"/></marker></defs></svg>
