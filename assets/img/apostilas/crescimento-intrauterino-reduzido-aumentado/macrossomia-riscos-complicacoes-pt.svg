@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" rx="30" fill="#f7f9fc"/>
+<text x="600" y="64" text-anchor="middle" font-family="Arial" font-size="38" font-weight="700" fill="#184888">Macrossomia fetal: fatores de risco e consequências</text>
+<g font-family="Arial">
+<rect x="70" y="125" width="330" height="500" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<text x="235" y="175" text-anchor="middle" font-size="27" font-weight="700" fill="#184888">Fatores maternos</text>
+<text x="105" y="235" font-size="22" fill="#384a61">• Diabetes prévio ou gestacional</text>
+<text x="105" y="285" font-size="22" fill="#384a61">• Obesidade</text>
+<text x="105" y="335" font-size="22" fill="#384a61">• Ganho ponderal excessivo</text>
+<text x="105" y="385" font-size="22" fill="#384a61">• Pós-datismo</text>
+<text x="105" y="435" font-size="22" fill="#384a61">• Macrossomia prévia</text>
+<path d="M400 375 H515" stroke="#184888" stroke-width="8" marker-end="url(#a)"/>
+<rect x="515" y="230" width="220" height="290" rx="28" fill="#eaf2fb" stroke="#8bb2df" stroke-width="3"/>
+<text x="625" y="300" text-anchor="middle" font-size="28" font-weight="700" fill="#184888">Crescimento</text>
+<text x="625" y="340" text-anchor="middle" font-size="28" font-weight="700" fill="#184888">fetal</text>
+<text x="625" y="405" text-anchor="middle" font-size="23" fill="#40546c">PFE elevado</text>
+<text x="625" y="445" text-anchor="middle" font-size="23" fill="#40546c">GIG / macrossomia</text>
+<path d="M735 375 H850" stroke="#184888" stroke-width="8" marker-end="url(#a)"/>
+<rect x="850" y="125" width="280" height="500" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<text x="990" y="175" text-anchor="middle" font-size="27" font-weight="700" fill="#184888">Riscos</text>
+<text x="885" y="235" font-size="22" fill="#384a61">• Distocia de ombro</text>
+<text x="885" y="285" font-size="22" fill="#384a61">• Trauma de parto</text>
+<text x="885" y="335" font-size="22" fill="#384a61">• Cesárea</text>
+<text x="885" y="385" font-size="22" fill="#384a61">• Hemorragia pós-parto</text>
+<text x="885" y="435" font-size="22" fill="#384a61">• Hipoglicemia neonatal</text>
+<text x="885" y="485" font-size="22" fill="#384a61">• Complicações metabólicas</text>
+<text x="600" y="690" text-anchor="middle" font-size="22" fill="#5a6779">O peso fetal estimado tem margem de erro; a conduta depende do contexto clínico e obstétrico.</text>
+</g><defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#184888"/></marker></defs></svg>
