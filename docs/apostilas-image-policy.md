@@ -48,3 +48,11 @@ Antes de entrar na apostila, cada candidato deve ser revisado no Admin. Candidat
 
 ## Regra curta
 **Se o aluno precisa traduzir a imagem para entendê-la, a imagem ainda não está pronta para a LURIA.**
+
+
+## Proteção de imagens já aprovadas
+- Uma imagem com status **approved** representa decisão editorial humana e não pode ser substituída, reprovada, apagada ou alterada automaticamente.
+- A revisão retroativa pode procurar uma alternativa superior em português, mas essa alternativa entra apenas como **nova candidata pendente**.
+- A imagem aprovada continua ativa até que o usuário aprove explicitamente a substituição.
+- Se não houver alternativa claramente melhor, mantém-se a imagem aprovada, mesmo que ela contenha texto em inglês.
+- A regra de preferência por português vale principalmente para **novas candidatas e futuras aprovações**; não invalida decisões editoriais já tomadas.
