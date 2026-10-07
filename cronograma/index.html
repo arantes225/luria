@@ -4159,6 +4159,70 @@ body[data-page="cronograma"] .planner-today:hover{
   }
 }
 </style>
+
+<style id="cronograma-shell-parity-v48">
+@media(min-width:981px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main{
+    background-color:var(--surface)!important;
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 93%,transparent),
+        color-mix(in srgb,var(--surface) 93%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-original.png?v=cronograma-pattern-v48"),
+      url("/assets/img/logos/logo-icone-original.png?v=cronograma-pattern-v48")!important;
+    background-repeat:no-repeat,repeat,repeat!important;
+    background-size:100% 100%,138px 138px,138px 138px!important;
+    background-position:0 0,0 0,69px 69px!important;
+  }
+
+  :root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed) .main{
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 92%,transparent),
+        color-mix(in srgb,var(--surface) 92%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=cronograma-pattern-v48"),
+      url("/assets/img/logos/logo-icone-azul-claro.png?v=cronograma-pattern-v48")!important;
+  }
+
+  :root[data-theme="leila-mood"] body[data-page="cronograma"]:not(.schedule-settings-embed) .main{
+    background-image:
+      linear-gradient(
+        color-mix(in srgb,var(--surface) 92.5%,transparent),
+        color-mix(in srgb,var(--surface) 92.5%,transparent)
+      ),
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=cronograma-pattern-v48"),
+      url("/assets/img/logos/logo-icone-rosa-escuro.png?v=cronograma-pattern-v48")!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    top:9px!important;
+    left:15px!important;
+    width:46px!important;
+    height:46px!important;
+    z-index:2147483000!important;
+    pointer-events:none!important;
+    background:url("/assets/img/logos/logo-icone-original.png?v=cronograma-header-v48") center/contain no-repeat!important;
+    filter:brightness(0) invert(1)!important;
+    opacity:1!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) #sidebar.sidebar .sidebar-top{
+    visibility:hidden!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page{
+    position:relative!important;
+    z-index:1!important;
+    background:transparent!important;
+  }
+}
+</style>
+
 </head>
 <body data-page="cronograma">
 <div class="app-shell">
@@ -5047,6 +5111,7 @@ body[data-page="cronograma"] .planner-today:hover{
   <script src="/assets/js/exam-priority.js?v=3"></script>
   <script src="/assets/js/cronograma-base-data.js?v=12.6"></script>
   <script src="/assets/js/cronograma.js?v=20260930-layout-pcr"></script>
-  <script src="/assets/js/google-calendar.js?v=1"></script>\n  <script defer src="/assets/js/pwa.js?v=5-cronograma-refresh"></script>
+  <script src="/assets/js/google-calendar.js?v=2-cronograma-position"></script>
+  <script defer src="/assets/js/pwa.js?v=5-cronograma-refresh"></script>
 </body>
 </html>
