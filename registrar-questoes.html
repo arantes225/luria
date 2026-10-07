@@ -481,20 +481,14 @@
 
                   <label class="question-field">
                     <span>Área</span>
-                    <input
-                      id="question-area"
-                      type="text"
-                      maxlength="100"
-                      list="area-options"
-                      placeholder="Ex.: Clínica Médica"
-                    >
-                    <datalist id="area-options">
-                      <option value="Clínica Médica">
-                      <option value="Pediatria">
-                      <option value="Ginecologia e Obstetrícia">
-                      <option value="Cirurgia Geral">
-                      <option value="Preventiva">
-                    </datalist>
+                    <select id="question-area" data-luria-general-area-select data-blank-label="Selecione a área">
+                      <option value="">Selecione a área</option>
+                      <option value="Clínica Médica">Clínica Médica</option>
+                      <option value="Cirurgia Geral">Cirurgia Geral</option>
+                      <option value="Ginecologia e Obstetrícia">Ginecologia e Obstetrícia</option>
+                      <option value="Pediatria">Pediatria</option>
+                      <option value="Medicina Preventiva">Medicina Preventiva</option>
+                    </select>
                   </label>
 
                   <label class="question-field">
