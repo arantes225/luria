@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" rx="30" fill="#f7f9fc"/><g font-family="Arial">
+<text x="600" y="60" text-anchor="middle" font-size="38" font-weight="700" fill="#184888">Foliculogênese: do folículo primordial à ovulação</text>
+<line x1="120" y1="370" x2="1080" y2="370" stroke="#b6c6d8" stroke-width="8"/>
+<circle cx="150" cy="370" r="36" fill="#f5d7df" stroke="#b76b7d" stroke-width="4"/>
+<circle cx="330" cy="370" r="54" fill="#f5d7df" stroke="#b76b7d" stroke-width="4"/>
+<circle cx="530" cy="370" r="72" fill="#f5d7df" stroke="#b76b7d" stroke-width="4"/>
+<circle cx="760" cy="370" r="94" fill="#f5d7df" stroke="#b76b7d" stroke-width="4"/><circle cx="785" cy="350" r="44" fill="#fff" stroke="#c8a2ac" stroke-width="3"/>
+<circle cx="1010" cy="370" r="112" fill="#f5d7df" stroke="#b76b7d" stroke-width="4"/><circle cx="1040" cy="340" r="60" fill="#fff" stroke="#c8a2ac" stroke-width="3"/>
+<text x="150" y="485" text-anchor="middle" font-size="22" font-weight="700" fill="#184888">Primordial</text>
+<text x="330" y="485" text-anchor="middle" font-size="22" font-weight="700" fill="#184888">Primário</text>
+<text x="530" y="485" text-anchor="middle" font-size="22" font-weight="700" fill="#184888">Secundário</text>
+<text x="760" y="500" text-anchor="middle" font-size="22" font-weight="700" fill="#184888">Antral</text>
+<text x="1010" y="515" text-anchor="middle" font-size="22" font-weight="700" fill="#184888">Pré-ovulatório</text>
+<text x="600" y="590" text-anchor="middle" font-size="22" fill="#384a61">Recrutamento inicial é amplamente gonadotrofina-independente; a seleção do folículo dominante depende progressivamente de FSH/LH.</text>
+<text x="600" y="650" text-anchor="middle" font-size="21" fill="#5a6779">Após o pico de LH, ocorre ovulação e formação do corpo lúteo.</text>
+</g></svg>
