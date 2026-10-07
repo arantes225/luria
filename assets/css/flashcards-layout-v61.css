@@ -1,0 +1,355 @@
+/* LURIA Flashcards v61 — revisão estrutural da página
+   Camada final e isolada para impedir sobreposição entre regras históricas. */
+
+body[data-page="flashcards"] .page{
+  width:100%!important;
+  max-width:1320px!important;
+  min-width:0!important;
+  padding-bottom:28px!important;
+}
+
+body[data-page="flashcards"] .topbar{
+  margin-bottom:14px!important;
+}
+
+/* navegação + métricas: blocos independentes, com respiro real */
+body[data-page="flashcards"] .flash-control-row{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(320px,390px)!important;
+  align-items:start!important;
+  gap:18px!important;
+  width:100%!important;
+  margin:0 0 20px!important;
+  min-width:0!important;
+}
+
+body[data-page="flashcards"] .flash-control-row .flash-tabs{
+  position:static!important;
+  width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  display:grid!important;
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:5px!important;
+  margin:0!important;
+  padding:4px!important;
+  border:1px solid var(--border)!important;
+  border-radius:12px!important;
+  background:var(--surface-2)!important;
+  overflow:visible!important;
+  box-sizing:border-box!important;
+}
+
+body[data-page="flashcards"] .flash-control-row .flash-tab{
+  min-width:0!important;
+  min-height:38px!important;
+  padding:0 10px!important;
+  border-radius:9px!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  font-size:10px!important;
+  line-height:1.1!important;
+}
+
+body[data-page="flashcards"] .flash-control-row .flash-tab.active{
+  background:var(--accent)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
+
+body[data-page="flashcards"] .flash-control-row .flash-tab.active::after{
+  content:none!important;
+}
+
+/* painel de métricas: deixa de comprimir o conteúdo ao lado */
+body[data-page="flashcards"] .flash-quick-metrics{
+  width:100%!important;
+  min-width:0!important;
+  max-width:390px!important;
+  box-sizing:border-box!important;
+  align-self:start!important;
+  display:grid!important;
+  grid-template-columns:1fr!important;
+  gap:10px!important;
+  padding:16px!important;
+  margin:0!important;
+  border:1px solid var(--border)!important;
+  border-radius:14px!important;
+  background:var(--surface)!important;
+  box-shadow:0 4px 14px rgba(22,56,92,.035)!important;
+  overflow:hidden!important;
+}
+
+body[data-page="flashcards"] .flash-quick-metrics-title{
+  display:block!important;
+  margin:0 0 2px!important;
+  padding:0!important;
+  border:0!important;
+}
+body[data-page="flashcards"] .flash-quick-metrics-title span{
+  font-size:13px!important;
+  line-height:1.25!important;
+}
+
+body[data-page="flashcards"] .flash-metric-summary-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:8px!important;
+}
+body[data-page="flashcards"] .flash-metric-summary-grid>div{
+  min-width:0!important;
+  min-height:76px!important;
+  padding:10px!important;
+  overflow:hidden!important;
+}
+body[data-page="flashcards"] .flash-metric-summary-grid span,
+body[data-page="flashcards"] .flash-metric-summary-grid small{
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+}
+
+body[data-page="flashcards"] .flash-metric-progress{
+  grid-template-columns:74px minmax(0,1fr)!important;
+  gap:12px!important;
+  padding:11px!important;
+  min-width:0!important;
+}
+body[data-page="flashcards"] .flash-metric-ring{
+  width:68px!important;
+  height:68px!important;
+}
+body[data-page="flashcards"] .flash-metric-detail{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:8px!important;
+}
+body[data-page="flashcards"] .flash-metric-detail>div{
+  min-width:0!important;
+  min-height:58px!important;
+  padding:9px 10px!important;
+}
+
+/* conteúdo principal: sempre separado do seletor/métricas */
+body[data-page="flashcards"] .flash-section.active{
+  clear:both!important;
+  width:100%!important;
+  min-width:0!important;
+  margin-top:0!important;
+}
+
+body[data-page="flashcards"] .flash-section[data-flash-section="review"] .flash-review-panel{
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+}
+
+/* revisão inicial / decks */
+body[data-page="flashcards"] .flash-home-decks{
+  width:100%!important;
+  min-width:0!important;
+  height:auto!important;
+  min-height:0!important;
+  margin-top:0!important;
+  padding:18px!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+  border:1px solid var(--border)!important;
+  border-radius:16px!important;
+  background:var(--surface)!important;
+}
+
+body[data-page="flashcards"] #flash-home-decks-list,
+body[data-page="flashcards"] .flash-review-hub{
+  width:100%!important;
+  min-width:0!important;
+  height:auto!important;
+  min-height:0!important;
+  overflow:visible!important;
+}
+
+body[data-page="flashcards"] .flash-review-hub .flash-deck-cards{
+  display:flex!important;
+  align-items:stretch!important;
+  gap:12px!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  padding:2px 2px 10px!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+}
+
+body[data-page="flashcards"] .flash-review-hub .flash-ref-deck{
+  flex:0 0 205px!important;
+  width:205px!important;
+  height:auto!important;
+  min-height:190px!important;
+  max-height:none!important;
+  padding:16px!important;
+}
+
+/* formulário, biblioteca e importação */
+body[data-page="flashcards"] .flash-section .panel{
+  min-width:0!important;
+  box-sizing:border-box!important;
+}
+
+body[data-page="flashcards"] .flash-form-grid,
+body[data-page="flashcards"] .library-filters,
+body[data-page="flashcards"] .import-upload-box{
+  min-width:0!important;
+  gap:14px!important;
+}
+
+body[data-page="flashcards"] .flash-section[data-flash-section="create"]>.panel,
+body[data-page="flashcards"] .flash-section[data-flash-section="import"]>.panel,
+body[data-page="flashcards"] .flash-section[data-flash-section="library"]>.panel{
+  margin-top:0!important;
+}
+
+body[data-page="flashcards"] .flash-actions{
+  gap:10px!important;
+  margin-top:18px!important;
+}
+
+body[data-page="flashcards"] .flash-library-hero,
+body[data-page="flashcards"] .library-scope-tabs,
+body[data-page="flashcards"] .library-filters,
+body[data-page="flashcards"] .flash-area-shelf{
+  min-width:0!important;
+}
+
+body[data-page="flashcards"] .flash-area-shelf{
+  margin-bottom:24px!important;
+}
+
+/* revisão ativa */
+body[data-page="flashcards"] .review-stage{
+  width:100%!important;
+  max-width:940px!important;
+  gap:16px!important;
+  margin:16px auto 0!important;
+}
+body[data-page="flashcards"] .review-card{
+  min-width:0!important;
+  box-sizing:border-box!important;
+}
+body[data-page="flashcards"] .rating-actions{
+  gap:10px!important;
+}
+
+/* tablet */
+@media(max-width:1050px){
+  body[data-page="flashcards"] .flash-control-row{
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+  }
+  body[data-page="flashcards"] .flash-quick-metrics{
+    max-width:none!important;
+  }
+}
+
+/* mobile / PWA */
+@media(max-width:700px){
+  body[data-page="flashcards"] .page{
+    padding-left:12px!important;
+    padding-right:12px!important;
+    padding-bottom:22px!important;
+  }
+
+  body[data-page="flashcards"] .topbar{
+    margin-bottom:10px!important;
+  }
+
+  body[data-page="flashcards"] .flash-control-row{
+    gap:12px!important;
+    margin-bottom:14px!important;
+  }
+
+  body[data-page="flashcards"] .flash-control-row .flash-tabs{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:5px!important;
+  }
+
+  body[data-page="flashcards"] .flash-control-row .flash-tab{
+    width:100%!important;
+    min-height:40px!important;
+    font-size:10px!important;
+  }
+
+  body[data-page="flashcards"] .flash-quick-metrics{
+    padding:13px!important;
+    border-radius:13px!important;
+  }
+
+  body[data-page="flashcards"] .flash-metric-summary-grid{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:6px!important;
+  }
+
+  body[data-page="flashcards"] .flash-metric-summary-grid>div{
+    min-height:70px!important;
+    padding:8px!important;
+  }
+
+  body[data-page="flashcards"] .flash-metric-summary-grid strong{
+    font-size:17px!important;
+  }
+
+  body[data-page="flashcards"] .flash-metric-progress{
+    grid-template-columns:62px minmax(0,1fr)!important;
+    gap:9px!important;
+    padding:9px!important;
+  }
+
+  body[data-page="flashcards"] .flash-metric-ring{
+    width:58px!important;
+    height:58px!important;
+  }
+
+  body[data-page="flashcards"] .flash-metric-detail{
+    grid-template-columns:1fr!important;
+  }
+
+  body[data-page="flashcards"] .flash-home-decks{
+    padding:13px!important;
+    border-radius:14px!important;
+  }
+
+  body[data-page="flashcards"] .flash-review-hub .flash-deck-cards{
+    gap:10px!important;
+  }
+
+  body[data-page="flashcards"] .flash-review-hub .flash-ref-deck{
+    flex-basis:178px!important;
+    width:178px!important;
+    min-height:176px!important;
+    padding:14px!important;
+  }
+
+  body[data-page="flashcards"] .review-card{
+    min-height:300px!important;
+    padding:28px 18px!important;
+  }
+
+  body[data-page="flashcards"] .rating-actions{
+    grid-template-columns:1fr!important;
+  }
+}
+
+@media(max-width:430px){
+  body[data-page="flashcards"] .flash-metric-summary-grid{
+    grid-template-columns:1fr!important;
+  }
+  body[data-page="flashcards"] .flash-metric-summary-grid>div{
+    min-height:0!important;
+  }
+  body[data-page="flashcards"] .flash-metric-progress{
+    grid-template-columns:1fr!important;
+  }
+  body[data-page="flashcards"] .flash-metric-ring{
+    margin:0 auto!important;
+  }
+}
