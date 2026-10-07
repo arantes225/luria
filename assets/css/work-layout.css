@@ -31,3 +31,123 @@ html body[data-page="trabalho_prontuario_externo"]{font-family:var(--font-ui,Int
 html body[data-page="trabalho_prontuario_externo"] .external-chart{max-width:1320px;margin:auto;box-sizing:border-box;padding:24px;min-width:0}
 html body[data-page="trabalho_prontuario_externo"] :is(.external-editor,.external-error){border-radius:16px;box-shadow:0 4px 14px rgba(15,40,75,.05)}
 @media(max-width:760px){html body[data-page="trabalho_prontuario_externo"] .external-chart{padding:12px}}
+
+
+/* Passômetro mobile — modal/form layout hardening (iOS/PWA) */
+@media(max-width:760px){
+  html body[data-page="trabalho_passometro"] .pm-dialog{
+    box-sizing:border-box!important;
+    width:calc(100vw - 16px)!important;
+    max-width:calc(100vw - 16px)!important;
+    max-height:calc(100dvh - 16px)!important;
+    overflow:hidden!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-dialog>form{
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    max-height:calc(100dvh - 16px)!important;
+    overflow:hidden!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-form{
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    padding:14px!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-form>*,
+  html body[data-page="trabalho_passometro"] .pm-section,
+  html body[data-page="trabalho_passometro"] .pm-conditional,
+  html body[data-page="trabalho_passometro"] .pm-field{
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-grid-2,
+  html body[data-page="trabalho_passometro"] .pm-grid-3{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:12px!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-field input,
+  html body[data-page="trabalho_passometro"] .pm-field select,
+  html body[data-page="trabalho_passometro"] .pm-field textarea,
+  html body[data-page="trabalho_passometro"] .pm-subfield input,
+  html body[data-page="trabalho_passometro"] .pm-subfield select{
+    display:block!important;
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    min-height:46px!important;
+    height:auto!important;
+    padding:10px 38px 10px 12px!important;
+    font-size:16px!important;
+    line-height:1.25!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-field textarea{
+    min-height:86px!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-field label,
+  html body[data-page="trabalho_passometro"] .pm-label,
+  html body[data-page="trabalho_passometro"] .pm-section-head strong{
+    min-width:0!important;
+    overflow-wrap:anywhere!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-section{
+    padding:12px!important;
+    overflow:hidden!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-section-head{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:space-between!important;
+    gap:10px!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-section-head>strong{
+    flex:1 1 auto!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-toggle{
+    display:inline-flex!important;
+    flex:0 0 auto!important;
+    max-width:100%!important;
+    min-width:0!important;
+    padding:3px!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-toggle button{
+    box-sizing:border-box!important;
+    min-width:48px!important;
+    height:34px!important;
+    padding:0 10px!important;
+    white-space:nowrap!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-dialog-head,
+  html body[data-page="trabalho_passometro"] .pm-dialog-actions{
+    box-sizing:border-box!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-dialog-actions{
+    padding:11px 14px calc(11px + env(safe-area-inset-bottom))!important;
+    flex-wrap:nowrap!important;
+  }
+  html body[data-page="trabalho_passometro"] .pm-dialog-actions button{
+    flex:1 1 0!important;
+    min-width:0!important;
+    min-height:46px!important;
+    padding-left:10px!important;
+    padding-right:10px!important;
+  }
+}
