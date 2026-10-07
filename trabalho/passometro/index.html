@@ -1671,7 +1671,7 @@
         if(p.switches?.pending==="yes") tags.push("Pendências");
         if(isGoDeck(d) && p.estimatedDischarge) tags.push("Alta "+fmtDate(p.estimatedDischarge));
         return `<article class="pm-patient" data-patient-id="${p.id}" data-priority="${p.priority||"none"}">
-          <div class="pm-patient-top"><h3>${esc(p.patientIdentifier||"")} · Leito ${esc(p.bed)} · ${esc(p.name)}</h3><small>${esc(p.age||"")}</small></div>
+          <div class="pm-patient-top"><h3>Leito ${esc(p.bed)} · ${esc(p.name)}</h3><small>${esc(p.age||"")}</small></div>
           <div class="pm-patient-summary">${esc(p.diagnosis || p.reason || "Sem resumo clínico")}</div>
           <div class="pm-patient-tags">${tags.map(t=>`<span class="pm-tag">${t}</span>`).join("")}</div>
         </article>`;
@@ -1732,7 +1732,7 @@
           const diet=p.diet==="Outra"?(p.dietOther||"Outra"):p.diet;
           const isolation=p.isolationType==="Outro"?(p.isolationTypeOther||"Outro"):p.isolationType;
           return '<article class="pm-export-patient">'+
-            '<h2>'+esc(displayValue(p.patientIdentifier,"ID não informado"))+' · Leito '+esc(displayValue(p.bed))+' · '+esc(displayValue(p.name))+' <small>('+esc(displayValue(p.age,"idade não informada"))+')</small></h2>'+
+            '<h2>Leito '+esc(displayValue(p.bed))+' · '+esc(displayValue(p.name))+' <small>('+esc(displayValue(p.age,"idade não informada"))+')</small></h2>'+
             '<div class="pm-export-row"><b>Prioridade:</b> '+esc(patientPriorityLabel(p))+'</div>'+
             '<div class="pm-export-row"><b>Diagnóstico:</b> '+esc(displayValue(p.diagnosis))+'</div>'+
             (isGoDeck(deck)?'<div class="pm-export-row"><b>Idade gestacional:</b> '+esc(displayValue(p.gestationalAge))+'</div>'+
@@ -2031,7 +2031,7 @@
       resetPatientForm(); state.editingPatientId=p.id; $("#pm-patient-dialog-title").textContent="Editar paciente";
       const form=$("#pm-patient-form");
       if(!p.patientIdentifier) p.patientIdentifier=p.id||"";
-      ["patientIdentifier","bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
+      ["bed","name","age","admissionDate","diet","dietOther","diagnosis","history","allergiesDetail","isolationType","isolationTypeOther","oxygenType","oxygenParams","devicesDetail","examsDetail","impression","events24hDetail","pendingDetail","gestationalAge","gravida","para","abortions","previousPregnancyComplications","serologyHivResult","serologySyphilisResult","serologyHbsagResult","serologyHcvResult","serologyOtherName","serologyOtherResult","maternalABO","maternalRh","gbs","deliveryType","deliveryReason","deliveryDate","deliveryTime","maternalDeliveryComplications","estimatedDischarge","newbornSex","newbornWeight","newbornBloodType","newbornComplications","currentStatus","pendingExams","pendingEvaluations","obstetricAlert"].forEach(k=>{ if(form.elements[k]) form.elements[k].value=p[k]||""; });
 
       if(!p.gravida&&!p.para&&!p.abortions&&p.gpxa){
         const m=String(p.gpxa).match(/G\s*(\d+).*?P\s*(\d+).*?A\s*(\d+)/i);
