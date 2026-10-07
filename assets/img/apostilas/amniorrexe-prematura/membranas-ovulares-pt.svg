@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" rx="30" fill="#f7f9fc"/><g font-family="Arial">
+<text x="600" y="62" text-anchor="middle" font-size="38" font-weight="700" fill="#184888">Membranas ovulares: âmnio e córion</text>
+<ellipse cx="600" cy="370" rx="370" ry="240" fill="#f7d9df" stroke="#b76b7d" stroke-width="10"/>
+<ellipse cx="600" cy="370" rx="315" ry="195" fill="#dbeeff" stroke="#6ea0d6" stroke-width="8"/>
+<ellipse cx="600" cy="370" rx="245" ry="145" fill="#f9fcff" stroke="#b8cee4" stroke-width="5"/>
+<circle cx="600" cy="370" r="70" fill="#e7d3b9" stroke="#a98a64" stroke-width="4"/>
+<text x="170" y="270" font-size="28" font-weight="700" fill="#184888">Córion</text>
+<line x1="270" y1="275" x2="330" y2="300" stroke="#184888" stroke-width="5"/>
+<text x="170" y="430" font-size="28" font-weight="700" fill="#184888">Âmnio</text>
+<line x1="270" y1="425" x2="355" y2="400" stroke="#184888" stroke-width="5"/>
+<text x="865" y="315" font-size="26" font-weight="700" fill="#184888">Cavidade amniótica</text>
+<line x1="850" y1="325" x2="760" y2="340" stroke="#184888" stroke-width="5"/>
+<text x="600" y="640" text-anchor="middle" font-size="22" fill="#4d5c70">Na RPM, a continuidade dessas membranas é perdida antes do início do trabalho de parto.</text>
+</g></svg>
