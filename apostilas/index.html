@@ -294,7 +294,12 @@
       }catch{}
       const byUrl=new Map();
       [cicloHho,sexualidade,ist,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
-      books=[...byUrl.values()].sort((a,b)=>(Date.parse(b.created_at||0)||0)-(Date.parse(a.created_at||0)||0));
+      books=[...byUrl.values()].map(book=>{
+        const taxonomy=window.LuriaMedicalTaxonomy;
+        if(!taxonomy)return book;
+        const fixed=taxonomy.normalizeClassification(book.area,book.materia);
+        return {...book,area:fixed.area||book.area,materia:fixed.materia||book.materia};
+      }).sort((a,b)=>(Date.parse(b.created_at||0)||0)-(Date.parse(a.created_at||0)||0));
       render("");
     }
 
@@ -302,6 +307,7 @@
     loadBooks();
   })();
   </script>
+  <script src="/assets/js/study-mode.js?v=20261007-taxonomy5"></script>
   <script defer src="/assets/js/pwa.js?v=6-apostilas-library-fix"></script>
 </body>
 </html>
