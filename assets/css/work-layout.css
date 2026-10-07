@@ -151,3 +151,57 @@ html body[data-page="trabalho_prontuario_externo"] :is(.external-editor,.externa
     padding-right:10px!important;
   }
 }
+
+
+/* Passômetro mobile v2 — evita campos ocultos visíveis e sobreposição no formulário */
+@media(max-width:760px){
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog [hidden]{
+    display:none!important;
+  }
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog .pm-form{
+    display:flex!important;
+    flex-direction:column!important;
+    gap:12px!important;
+    position:relative!important;
+  }
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog .pm-form > *{
+    position:relative!important;
+    inset:auto!important;
+    transform:none!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+  }
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog .pm-section{
+    position:relative!important;
+    display:block!important;
+    min-height:0!important;
+    height:auto!important;
+    margin:0!important;
+    overflow:visible!important;
+  }
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog .pm-section-head{
+    position:relative!important;
+    inset:auto!important;
+    transform:none!important;
+    min-height:38px!important;
+  }
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog .pm-conditional{
+    position:relative!important;
+    inset:auto!important;
+    transform:none!important;
+    height:auto!important;
+  }
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog .pm-field{
+    position:relative!important;
+    inset:auto!important;
+    transform:none!important;
+    height:auto!important;
+  }
+  html body[data-page="trabalho_passometro"] #pm-patient-dialog .pm-priority{
+    position:relative!important;
+    inset:auto!important;
+    transform:none!important;
+    width:100%!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+}
