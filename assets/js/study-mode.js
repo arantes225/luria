@@ -1,98 +1,98 @@
 (() => {
   "use strict";
 
-  const AREAS = {
-    medicine: [
-      "Alergia e Imunologia",
-      "Anestesiologia",
-      "Angiologia",
-      "Cardiologia",
-      "Cirurgia Cardiovascular",
-      "Cirurgia da Mão",
-      "Cirurgia de Cabeça e Pescoço",
-      "Cirurgia do Aparelho Digestivo",
-      "Cirurgia Geral",
-      "Cirurgia Oncológica",
-      "Cirurgia Pediátrica",
-      "Cirurgia Plástica",
-      "Cirurgia Torácica",
-      "Cirurgia Vascular",
-      "Clínica Médica",
-      "Coloproctologia",
-      "Dermatologia",
-      "Endocrinologia e Metabologia",
-      "Endoscopia",
-      "Gastroenterologia",
-      "Genética Médica",
-      "Geriatria",
-      "Ginecologia e Obstetrícia",
-      "Hematologia e Hemoterapia",
-      "Homeopatia",
-      "Infectologia",
-      "Mastologia",
-      "Medicina de Emergência",
-      "Medicina de Família e Comunidade",
-      "Medicina do Esporte",
-      "Medicina do Trabalho",
-      "Medicina Física e Reabilitação",
-      "Medicina Intensiva",
-      "Medicina Legal e Perícia Médica",
-      "Medicina Nuclear",
-      "Medicina Preventiva",
-      "Nefrologia",
-      "Neurocirurgia",
-      "Neurologia",
-      "Nutrologia",
-      "Oftalmologia",
-      "Oncologia Clínica",
-      "Ortopedia e Traumatologia",
-      "Otorrinolaringologia",
-      "Patologia",
-      "Patologia Clínica / Medicina Laboratorial",
-      "Pediatria",
-      "Pneumologia",
-      "Psiquiatria",
-      "Radiologia e Diagnóstico por Imagem",
-      "Radioterapia",
-      "Reumatologia",
-      "Urologia"
-    ],
+  const AREAS = [
+    "Clínica Médica",
+    "Cirurgia Geral",
+    "Ginecologia e Obstetrícia",
+    "Pediatria",
+    "Medicina Preventiva"
+  ];
 
+  const SUBJECTS_BY_AREA = {
+    "Clínica Médica": [
+      "Alergia e Imunologia","Cardiologia","Dermatologia","Endocrinologia e Metabologia",
+      "Gastroenterologia","Genética Médica","Geriatria","Hematologia e Hemoterapia",
+      "Infectologia","Medicina de Emergência","Medicina Intensiva","Nefrologia",
+      "Neurologia","Nutrologia","Oncologia Clínica","Pneumologia","Psiquiatria",
+      "Reumatologia","Toxicologia","Cuidados Paliativos"
+    ],
+    "Cirurgia Geral": [
+      "Anestesiologia","Angiologia","Cirurgia Cardiovascular","Cirurgia da Mão",
+      "Cirurgia de Cabeça e Pescoço","Cirurgia do Aparelho Digestivo","Cirurgia Oncológica",
+      "Cirurgia Pediátrica","Cirurgia Plástica","Cirurgia Torácica","Cirurgia Vascular",
+      "Coloproctologia","Endoscopia","Mastologia","Neurocirurgia","Oftalmologia",
+      "Ortopedia e Traumatologia","Otorrinolaringologia","Urologia","Trauma"
+    ],
+    "Ginecologia e Obstetrícia": [
+      "Ginecologia","Obstetrícia","Medicina Fetal","Endocrinologia Ginecológica",
+      "Reprodução Humana","Oncologia Ginecológica","Uroginecologia","Patologia Mamária"
+    ],
+    "Pediatria": [
+      "Neonatologia","Puericultura","Infectologia Pediátrica","Pneumologia Pediátrica",
+      "Cardiologia Pediátrica","Gastroenterologia Pediátrica","Nefrologia Pediátrica",
+      "Endocrinologia Pediátrica","Neurologia Pediátrica","Hematologia Pediátrica",
+      "Oncologia Pediátrica","Emergências Pediátricas","Cirurgia Pediátrica"
+    ],
+    "Medicina Preventiva": [
+      "Bioestatística","Epidemiologia","Medicina Baseada em Evidências",
+      "Medicina de Família e Comunidade","Medicina do Trabalho","Medicina Legal e Perícia Médica",
+      "Saúde Coletiva","Atenção Primária à Saúde","SUS","Vigilância em Saúde",
+      "Ética Médica","Bioética","Gestão em Saúde","Políticas de Saúde"
+    ]
   };
 
-  const GENERAL_AREAS = {
-    medicine: [
-      "Clínica Médica",
-      "Ginecologia e Obstetrícia",
-      "Cirurgia Geral",
-      "Pediatria",
-      "Medicina Preventiva"
-    ],
+  const norm = value => String(value || "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
 
+  const AREA_ALIASES = new Map([
+    ["clinica", "Clínica Médica"],["clinica medica", "Clínica Médica"],
+    ["cirurgia", "Cirurgia Geral"],["cirurgia geral", "Cirurgia Geral"],
+    ["go", "Ginecologia e Obstetrícia"],["g.o.", "Ginecologia e Obstetrícia"],
+    ["ginecologia", "Ginecologia e Obstetrícia"],["obstetricia", "Ginecologia e Obstetrícia"],
+    ["ginecologia e obstetricia", "Ginecologia e Obstetrícia"],
+    ["ginecologia obstetricia", "Ginecologia e Obstetrícia"],
+    ["pediatria", "Pediatria"],
+    ["preventiva", "Medicina Preventiva"],["medicina preventiva", "Medicina Preventiva"],
+    ["medicina preventiva e social", "Medicina Preventiva"],["saude coletiva", "Medicina Preventiva"]
+  ]);
+
+  const SUBJECT_TO_AREA = new Map();
+  Object.entries(SUBJECTS_BY_AREA).forEach(([area, subjects]) => {
+    subjects.forEach(subject => SUBJECT_TO_AREA.set(norm(subject), area));
+  });
+
+  const canonicalArea = value => {
+    const key = norm(value);
+    if (!key) return "";
+    return AREA_ALIASES.get(key) || SUBJECT_TO_AREA.get(key) || "";
   };
 
-  function normalizeMode() {
-    return "medicine";
-  }
+  const isArea = value => AREAS.includes(canonicalArea(value));
 
-  function modeLabel() {
-    return "Medicina";
-  }
+  function normalizeClassification(area, materia = "") {
+    const rawArea = String(area || "").trim();
+    const rawMateria = String(materia || "").trim();
+    const areaFromArea = canonicalArea(rawArea);
 
-  function areasFor(mode) {
-    return [
-      ...AREAS[
-        normalizeMode(mode)
-      ]
-    ];
-  }
+    if (areaFromArea) {
+      const areaWasSubject =
+        rawArea && !AREA_ALIASES.has(norm(rawArea)) && SUBJECT_TO_AREA.has(norm(rawArea));
+      return {
+        area: areaFromArea,
+        materia: rawMateria || (areaWasSubject ? rawArea : "")
+      };
+    }
 
-  function generalAreasFor(mode) {
-    return [
-      ...GENERAL_AREAS[
-        normalizeMode(mode)
-      ]
-    ];
+    const areaFromMateria = canonicalArea(rawMateria);
+    return {
+      area: areaFromMateria || "",
+      materia: rawMateria || rawArea
+    };
   }
 
   function escapeOption(value) {
@@ -103,246 +103,61 @@
       .replaceAll(">", "&gt;");
   }
 
-  function fillAreaDatalists(mode) {
-    const areas =
-      areasFor(mode);
-
-    document
-      .querySelectorAll(
-        "[data-luria-area-list]"
-      )
-      .forEach(
-        (list) => {
-          list.innerHTML =
-            areas
-              .map(
-                (area) =>
-                  `<option value="${escapeOption(area)}"></option>`
-              )
-              .join("");
-        }
-      );
+  function fill(selector, tag = "option") {
+    document.querySelectorAll(selector).forEach(element => {
+      const previous = canonicalArea(element.value || "");
+      if (element.tagName === "DATALIST") {
+        element.innerHTML = AREAS.map(area => `<option value="${escapeOption(area)}"></option>`).join("");
+        return;
+      }
+      const blankLabel = element.dataset.blankLabel || "Todas as áreas";
+      element.innerHTML =
+        `<option value="">${escapeOption(blankLabel)}</option>`
+        + AREAS.map(area => `<option value="${escapeOption(area)}">${escapeOption(area)}</option>`).join("");
+      if (previous) element.value = previous;
+    });
   }
 
-  function fillGeneralAreaDatalists(mode) {
-    const areas =
-      generalAreasFor(mode);
+  function apply() {
+    window.luriaStudyMode = "medicine";
+    document.documentElement.dataset.studyMode = "medicine";
 
-    document
-      .querySelectorAll(
-        "[data-luria-general-area-list]"
-      )
-      .forEach(
-        (list) => {
-          list.innerHTML =
-            areas
-              .map(
-                (area) =>
-                  `<option value="${escapeOption(area)}"></option>`
-              )
-              .join("");
-        }
-      );
+    fill("[data-luria-area-list], [data-luria-general-area-list]");
+    fill("[data-luria-area-select], [data-luria-general-area-select]");
+
+    document.querySelectorAll(
+      'input[list][data-luria-area-input],input[list][data-luria-general-area-input],input[list="medical-areas"],input[list="error-medical-areas"],input[list="manual-area-options"]'
+    ).forEach(input => { input.placeholder = "Ex.: Clínica Médica"; });
+
+    document.querySelectorAll("[data-study-mode-label]")
+      .forEach(element => { element.textContent = "Medicina"; });
+
+    window.dispatchEvent(new CustomEvent("luria:study-mode", {
+      detail: { mode: "medicine", areas: [...AREAS], generalAreas: [...AREAS] }
+    }));
+
+    return "medicine";
   }
 
-  function fillGeneralAreaSelects(mode) {
-    const areas =
-      generalAreasFor(mode);
-
-    document
-      .querySelectorAll(
-        "[data-luria-general-area-select]"
-      )
-      .forEach(
-        (select) => {
-          const previous =
-            select.value;
-
-          const blankLabel =
-            select.dataset
-              .blankLabel
-            || "Todas as áreas";
-
-          select.innerHTML =
-            `<option value="">${escapeOption(blankLabel)}</option>`
-            + areas
-                .map(
-                  (area) => `
-                    <option value="${escapeOption(area)}">
-                      ${escapeOption(area)}
-                    </option>
-                  `
-                )
-                .join("");
-
-          if (
-            previous
-            && areas.includes(
-              previous
-            )
-          ) {
-            select.value =
-              previous;
-          }
-        }
-      );
-  }
-
-  function fillAreaSelects(mode) {
-    const areas =
-      areasFor(mode);
-
-    document
-      .querySelectorAll(
-        "[data-luria-area-select]"
-      )
-      .forEach(
-        (select) => {
-          const previous =
-            select.value;
-
-          const blankLabel =
-            select.dataset
-              .blankLabel
-            || "Todas as áreas";
-
-          select.innerHTML =
-            `<option value="">${escapeOption(blankLabel)}</option>`
-            + areas
-                .map(
-                  (area) => `
-                    <option value="${escapeOption(area)}">
-                      ${escapeOption(area)}
-                    </option>
-                  `
-                )
-                .join("");
-
-          if (
-            previous
-            && areas.includes(
-              previous
-            )
-          ) {
-            select.value =
-              previous;
-          }
-        }
-      );
-  }
-
-  function updateAreaPlaceholders(mode) {
-
-    document
-      .querySelectorAll(
-        'input[list][data-luria-area-input], input[list][data-luria-general-area-input], input[list="medical-areas"], input[list="error-medical-areas"], input[list="manual-area-options"]'
-      )
-      .forEach(
-        (input) => {
-          input.placeholder =
-            "Ex.: Clínica Médica";
-        }
-      );
-  }
-
-  function apply(mode) {
-    const resolved =
-      normalizeMode(mode);
-
-    window.luriaStudyMode =
-      resolved;
-
-    document.documentElement
-      .dataset.studyMode =
-        resolved;
-
-    fillAreaDatalists(
-      resolved
-    );
-
-    fillAreaSelects(
-      resolved
-    );
-
-    fillGeneralAreaDatalists(
-      resolved
-    );
-
-    fillGeneralAreaSelects(
-      resolved
-    );
-
-    updateAreaPlaceholders(
-      resolved
-    );
-
-    document
-      .querySelectorAll(
-        "[data-study-mode-label]"
-      )
-      .forEach(
-        (element) => {
-          element.textContent =
-            modeLabel(
-              resolved
-            );
-        }
-      );
-
-    const detail = {
-      mode:
-        resolved,
-
-      areas:
-        areasFor(
-          resolved
-        ),
-
-      generalAreas:
-        generalAreasFor(
-          resolved
-        )
-    };
-
-    window.dispatchEvent(
-      new CustomEvent(
-        "luria:study-mode",
-        {
-          detail
-        }
-      )
-    );
-
-    return resolved;
-  }
-
-  async function load() {
-    return apply("medicine");
-  }
-
-  window.LuriaStudyMode = {
-    AREAS,
-    GENERAL_AREAS,
-    normalizeMode,
-    modeLabel,
-    areasFor,
-    generalAreasFor,
-    apply,
-    load
+  window.LuriaMedicalTaxonomy = {
+    AREAS: [...AREAS],
+    SUBJECTS_BY_AREA,
+    canonicalArea,
+    isArea,
+    normalizeClassification
   };
 
-  if (
-    window.docmapUser
-  ) {
-    load();
-  } else {
-    window.addEventListener(
-      "docmap:ready",
-      load,
-      {
-        once:
-          true
-      }
-    );
-  }
+  window.LuriaStudyMode = {
+    AREAS: { medicine: [...AREAS] },
+    GENERAL_AREAS: { medicine: [...AREAS] },
+    normalizeMode: () => "medicine",
+    modeLabel: () => "Medicina",
+    areasFor: () => [...AREAS],
+    generalAreasFor: () => [...AREAS],
+    apply,
+    load: async () => apply()
+  };
+
+  if (window.docmapUser) apply();
+  else window.addEventListener("docmap:ready", apply, { once: true });
 })();
