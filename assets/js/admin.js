@@ -5651,7 +5651,7 @@
         } catch (error) {
           console.error("Falha ao revisar imagem clínica:", error);
           const status = $("admin-images-status");
-          if (status) status.textContent = "Falha ao salvar sua decisão.";
+          if (status) status.textContent = "Falha ao salvar sua decisão: " + (error?.message || "erro desconhecido");
           button.disabled = false;
         }
       });
