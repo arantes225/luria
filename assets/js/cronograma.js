@@ -7367,6 +7367,19 @@ async function saveEditedScheduleEvent(
     return;
   }
 
+  if (window.LuriaGoogleCalendar?.pushEvent) {
+    try {
+      await window.LuriaGoogleCalendar.pushEvent(
+        eventId
+      );
+    } catch (googleError) {
+      console.error(googleError);
+      window.LuriaDialog.alert(
+        "O evento foi salvo na LURIA, mas não foi possível atualizar o Google Agenda agora. Use “Sincronizar agora” para tentar novamente."
+      );
+    }
+  }
+
   closeEventEditDialog();
   await loadTopics();
   switchScheduleLibraryTab(
@@ -8996,6 +9009,23 @@ async function deleteScheduleEvent(
     return;
   }
 
+
+  if (
+    event?.metadata?.google_event_id
+    && window.LuriaGoogleCalendar?.deleteLinkedEvent
+  ) {
+    try {
+      await window.LuriaGoogleCalendar.deleteLinkedEvent(
+        event.metadata.google_event_id
+      );
+    } catch (googleError) {
+      console.error(googleError);
+      window.LuriaDialog.alert(
+        "Não foi possível excluir este evento do Google Agenda. A exclusão na LURIA foi cancelada para evitar dessincronização."
+      );
+      return;
+    }
+  }
 
   const {
     error
