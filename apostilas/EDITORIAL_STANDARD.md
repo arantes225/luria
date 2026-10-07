@@ -72,3 +72,31 @@ Se a resposta for não, o conteúdo ainda está insuficiente.
 22. Sempre preferir a **figura útil isolada** ao PDF/documento inteiro incorporado. Se a fonte for um PDF, extrair/recortar apenas a figura necessária e preservar a referência da publicação original.
 
 23. Ao registrar uma candidata, garantir que o domínio da imagem esteja contemplado no `img-src` da Content-Security-Policy da apostila; ao aprovar uma nova fonte, atualizar o CSP se necessário para que a imagem realmente carregue.
+
+
+## Piso de profundidade obrigatório
+
+A partir de outubro de 2026, nenhuma apostila pode ser considerada concluída apenas por conter definição, diagnóstico e tratamento. O conteúdo deve atingir profundidade suficiente para funcionar como material principal de estudo.
+
+### Camadas mínimas por tema
+1. **Base conceitual:** definição, terminologia e classificação.
+2. **Mecanismo:** fisiologia/fisiopatologia explicada causalmente.
+3. **Reconhecimento clínico:** apresentação típica, atípica e sinais de gravidade.
+4. **Diagnóstico:** critérios, limitações dos exames, interpretação e armadilhas.
+5. **Diagnósticos diferenciais:** como separar entidades parecidas na prática.
+6. **Conduta:** o que fazer, quando fazer, por que fazer e quando não fazer.
+7. **Situações especiais:** gestação, puerpério, adolescência, comorbidades, imunossupressão, urgência e falha terapêutica quando aplicáveis.
+8. **Complicações:** mecanismo, prevenção, reconhecimento e resposta.
+9. **Seguimento e prognóstico:** o que acontece depois da conduta inicial.
+10. **Integração:** casos clínicos, fluxos mentais e erros frequentes de prova/prática.
+
+### Regra contra superficialidade
+- Se um subtópico puder ser resumido em uma única frase sem explicar mecanismo, interpretação ou decisão clínica, ele deve ser revisto.
+- Listas de condutas devem ser acompanhadas do raciocínio que diferencia uma opção da outra.
+- Exames devem incluir **o que significam, o que não significam e quando enganam**.
+- Tratamentos farmacológicos devem incluir objetivo, escolha, contraindicações/limitações e monitorização quando relevantes.
+- Condutas divergentes entre fontes devem ser explicitadas, com prioridade para Ministério da Saúde, FEBRASGO, sociedades brasileiras e protocolos nacionais vigentes.
+- A extensão não é meta por si só: profundidade deve vir de densidade clínica, não de repetição.
+
+### Auditoria de densidade
+Antes de publicar, comparar a apostila com as mais completas da biblioteca. Conteúdos muito abaixo da densidade média devem receber uma camada adicional de fisiopatologia, diagnóstico diferencial, decisão clínica e situações especiais antes da publicação.
