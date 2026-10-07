@@ -124,7 +124,15 @@
     .flow-arrow{width:100%;text-align:center;font-size:18px;line-height:1;color:var(--accent);font-weight:600}
     .cervicite-mindmap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:14px}
     .cervicite-mindmap .book-mini{text-align:left}
-    @media(max-width:720px){.cervicite-mindmap{grid-template-columns:1fr}}
+    .clinical-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}
+    .clinical-card{padding:18px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:16px;background:color-mix(in srgb,var(--accent) 4%,var(--surface));box-shadow:0 7px 20px rgba(15,35,66,.035)}
+    .clinical-card .card-kicker{display:inline-flex;align-items:center;min-height:22px;padding:0 8px;margin-bottom:8px;border-radius:999px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+    .clinical-card h3{margin:0 0 9px!important;font-size:14.5px!important;line-height:1.2!important;color:var(--text)}
+    .clinical-card p{font-size:12.5px!important;line-height:1.6!important}
+    .clinical-card ul{margin:0!important;padding-left:19px!important}
+    .clinical-card li{font-size:12.3px!important;line-height:1.55!important}
+    .clinical-card li+li{margin-top:5px!important}
+    @media(max-width:720px){.cervicite-mindmap,.clinical-cards{grid-template-columns:1fr}}
 
   </style>
 </head>
@@ -214,10 +222,30 @@
 <section id="reconhecimento" class="book-section">
 <h2>2. Reconhecimento clínico</h2>
 <p>A consulta deve começar com três variáveis que mudam quase tudo: <strong>idade feminina, tempo de tentativa e história reprodutiva prévia</strong>. Depois vêm padrão menstrual, dor pélvica, cirurgias, IST/DIP prévia, frequência sexual, medicamentos, tabagismo, uso de anabolizantes e o que já foi investigado no parceiro.</p>
-<h3>Suspeitar</h3>
-<ul class="clinical-list"><li>12 meses sem gestação em casal jovem sem fator conhecido;</li><li>6 meses a partir dos 35 anos;</li><li>imediatamente se houver amenorreia/oligomenorreia, endometriose relevante, doença tubária, quimio/radioterapia, fator masculino conhecido, vasectomia, criptorquidia ou outra causa evidente.</li></ul>
-<h3>Não perder</h3>
-<ul class="clinical-list"><li>gestação já instalada, inclusive ectópica, antes de HSG ou indução;</li><li>hiperprolactinemia, hipotireoidismo e insuficiência ovariana primária mascaradas por um rótulo de “SOP”;</li><li>fator masculino grave — não espere terminar toda a propedêutica feminina para pedir espermograma;</li><li>endometriose em paciente com dor progressiva mesmo com ultrassom comum normal.</li></ul>
+<div class="clinical-cards">
+  <div class="clinical-card">
+    <span class="card-kicker">Suspeitar</span>
+    <h3>Quando a espera deixa de ser razoável?</h3>
+    <ul>
+      <li><strong>12 meses</strong> sem gestação em casal jovem sem fator conhecido.</li>
+      <li><strong>6 meses</strong> a partir dos 35 anos, porque o custo biológico do tempo passa a pesar mais.</li>
+      <li><strong>Imediatamente</strong> quando já existe amenorreia/oligomenorreia, endometriose relevante, doença tubária, quimioterapia/radioterapia, vasectomia, criptorquidia ou outro fator conhecido.</li>
+    </ul>
+    <p>O ponto central é que o tempo de tentativa não vale a mesma coisa para todos. Em quem já tem um elo claramente comprometido, esperar apenas para “cumprir 12 meses” não acrescenta informação e pode reduzir a chance de sucesso.</p>
+  </div>
+
+  <div class="clinical-card">
+    <span class="card-kicker">Não perder</span>
+    <h3>O que muda completamente a investigação?</h3>
+    <ul>
+      <li><strong>Gestação já instalada</strong>, inclusive ectópica, antes de HSG ou indução.</li>
+      <li><strong>Hiperprolactinemia, hipotireoidismo e insuficiência ovariana primária</strong> escondidas sob um rótulo precipitado de SOP.</li>
+      <li><strong>Fator masculino grave</strong>: não terminar toda a investigação feminina antes de pedir o espermograma.</li>
+      <li><strong>Endometriose clinicamente relevante</strong> mesmo quando o ultrassom pélvico comum é normal.</li>
+    </ul>
+    <p>Essas situações não são detalhes: elas mudam o eixo da investigação, o tipo de exame e, em alguns casos, a urgência de encaminhamento ou tratamento.</p>
+  </div>
+</div>
 <p>A frequência de duas a três relações por semana geralmente cobre a janela fértil. Tornar o sexo obrigatório em um único “dia perfeito” aumenta ansiedade e disfunção sexual sem benefício proporcional.</p>
 </section>
 
