@@ -1,0 +1,356 @@
+/* Cronograma v62 — modernização visual + grid estrutural de 8px */
+body[data-page="cronograma"]:not(.schedule-settings-embed){
+  --schedule-gap:8px;
+  --schedule-panel:color-mix(in srgb,var(--accent) 2.8%,var(--surface));
+  --schedule-panel-strong:color-mix(in srgb,var(--accent) 5.5%,var(--surface));
+  --schedule-panel-soft:color-mix(in srgb,var(--accent) 7.5%,var(--surface));
+  --schedule-border:color-mix(in srgb,var(--accent) 16%,var(--border));
+  --schedule-shadow:0 8px 24px rgba(22,56,92,.055);
+}
+
+/* espaçamento estrutural: 8px vertical e horizontal */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-summary,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-main-grid,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-bottom-grid,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-dashboard-grid,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-insight-grid,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-add-grid,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .import-grid,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .deck-list{
+  gap:var(--schedule-gap)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack{
+  margin-top:0!important;
+}
+
+/* título e bloco superior */
+@media(min-width:981px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .page>.topbar{
+    margin-bottom:8px!important;
+  }
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .luria-page-spotlight{
+    margin-bottom:8px!important;
+  }
+}
+
+/* cards-resumo: deixam de ser caixas brancas soltas */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-summary{
+  grid-template-columns:repeat(5,minmax(0,1fr))!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .summary-card{
+  position:relative!important;
+  overflow:hidden!important;
+  min-width:0!important;
+  padding:15px 16px!important;
+  border:1px solid var(--schedule-border)!important;
+  border-radius:14px!important;
+  background:
+    linear-gradient(145deg,
+      color-mix(in srgb,var(--accent) 7%,var(--surface)),
+      var(--schedule-panel) 56%,
+      var(--surface)
+    )!important;
+  box-shadow:var(--schedule-shadow)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .summary-card::after{
+  content:""!important;
+  position:absolute!important;
+  inset:auto -24px -32px auto!important;
+  width:88px!important;
+  height:88px!important;
+  border-radius:50%!important;
+  background:color-mix(in srgb,var(--accent) 7%,transparent)!important;
+  pointer-events:none!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .summary-card span{
+  position:relative!important;
+  z-index:1!important;
+  color:var(--muted)!important;
+  font-size:9px!important;
+  font-weight:700!important;
+  letter-spacing:.045em!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .summary-card strong{
+  position:relative!important;
+  z-index:1!important;
+  margin-top:7px!important;
+  color:var(--text)!important;
+  font-size:24px!important;
+  line-height:1!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .summary-card.overdue-summary-card{
+  border-color:color-mix(in srgb,var(--danger) 26%,var(--border))!important;
+  background:
+    linear-gradient(145deg,
+      color-mix(in srgb,var(--danger) 6%,var(--surface)),
+      var(--schedule-panel) 62%
+    )!important;
+}
+
+/* grandes containers */
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+  .import-box,
+  .planner-panel,
+  .deck-panel,
+  .schedule-add-hub,
+  .theme-library-panel,
+  .agenda-today-card,
+  .agenda-side-card,
+  .agenda-week-summary-card,
+  .agenda-week-goal-banner,
+  .schedule-calendar-panel
+){
+  border:1px solid var(--schedule-border)!important;
+  background:var(--schedule-panel)!important;
+  box-shadow:var(--schedule-shadow)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+  .import-box,
+  .planner-panel,
+  .deck-panel,
+  .schedule-add-hub,
+  .theme-library-panel,
+  .agenda-today-card,
+  .agenda-side-card,
+  .agenda-week-summary-card,
+  .schedule-calendar-panel
+){
+  border-radius:16px!important;
+}
+
+/* cabeçalhos internos com hierarquia visual */
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+  .planner-header,
+  .deck-header,
+  .theme-library-head,
+  .agenda-today-head,
+  .schedule-add-hub-head
+){
+  border-color:var(--schedule-border)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+  .planner-header h2,
+  .deck-header h2,
+  .theme-library-head h2,
+  .agenda-today-head h2,
+  .schedule-add-hub-head h2
+){
+  color:var(--text)!important;
+  letter-spacing:-.025em!important;
+}
+
+/* switches e filtros */
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+  .planner-nav,
+  .planner-view-toggle,
+  .agenda-scope-toggle,
+  .agenda-view-toggle,
+  .agenda-insight-tabs,
+  .schedule-add-tabs
+){
+  border:1px solid var(--schedule-border)!important;
+  background:color-mix(in srgb,var(--accent) 4%,var(--surface-2))!important;
+  box-shadow:inset 0 1px 0 color-mix(in srgb,#fff 40%,transparent)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+  .planner-nav,
+  .planner-view-toggle,
+  .agenda-scope-toggle,
+  .agenda-view-toggle,
+  .agenda-insight-tabs,
+  .schedule-add-tabs
+) button.active{
+  background:var(--surface)!important;
+  color:var(--accent)!important;
+  box-shadow:0 2px 7px rgba(22,56,92,.08)!important;
+}
+
+/* calendário mensal */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-planner{
+  margin-top:8px!important;
+  gap:1px!important;
+  border-color:var(--schedule-border)!important;
+  background:var(--schedule-border)!important;
+  border-radius:14px!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-weekday{
+  background:var(--schedule-panel-strong)!important;
+  color:var(--muted)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-day{
+  background:color-mix(in srgb,var(--accent) 1.5%,var(--surface))!important;
+  transition:background .16s ease,box-shadow .16s ease!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-day:hover{
+  background:var(--schedule-panel-strong)!important;
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 16%,transparent)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-day.outside-month{
+  background:color-mix(in srgb,var(--surface-2) 80%,var(--surface))!important;
+  opacity:.62!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-day.today{
+  background:linear-gradient(160deg,
+    color-mix(in srgb,var(--accent) 8%,var(--surface)),
+    color-mix(in srgb,var(--accent) 2%,var(--surface))
+  )!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-topic{
+  border-left:3px solid var(--accent)!important;
+  background:color-mix(in srgb,var(--accent) 9%,var(--surface))!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .month-event{
+  border-left-color:color-mix(in srgb,var(--accent) 45%,#7f8da6)!important;
+  background:color-mix(in srgb,var(--accent) 3%,var(--surface-2))!important;
+}
+
+/* visão semanal */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .week-planner{
+  margin-top:8px!important;
+  border-color:var(--schedule-border)!important;
+  background:var(--schedule-border)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .planner-day{
+  background:color-mix(in srgb,var(--accent) 1.5%,var(--surface))!important;
+  border-color:var(--schedule-border)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .planner-day-header{
+  background:var(--schedule-panel-strong)!important;
+  border-color:var(--schedule-border)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .planner-day-body{
+  gap:8px!important;
+  padding:8px!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .topic-card{
+  border:1px solid var(--schedule-border)!important;
+  border-left:4px solid var(--accent)!important;
+  background:var(--surface)!important;
+  box-shadow:0 3px 10px rgba(22,56,92,.035)!important;
+}
+
+/* atividades / agenda */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-row{
+  border-color:color-mix(in srgb,var(--activity-color,var(--accent)) 36%,var(--schedule-border))!important;
+  background:color-mix(in srgb,var(--activity-color,var(--accent)) 7%,var(--surface))!important;
+  box-shadow:0 3px 12px rgba(22,56,92,.04)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-today-row:hover{
+  box-shadow:0 7px 18px rgba(22,56,92,.075)!important;
+  transform:translateY(-1px)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .agenda-week-goal-banner{
+  background:
+    linear-gradient(135deg,
+      color-mix(in srgb,var(--accent) 11%,var(--surface)),
+      color-mix(in srgb,var(--accent) 3%,var(--surface))
+    )!important;
+}
+
+/* adicionar / importar / biblioteca */
+body[data-page="cronograma"]:not(.schedule-settings-embed) .drop-file,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .deck-dropzone{
+  border-color:color-mix(in srgb,var(--accent) 25%,var(--border))!important;
+  background:color-mix(in srgb,var(--accent) 4%,var(--surface-2))!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .mode-option span,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .deck-card{
+  border-color:var(--schedule-border)!important;
+  background:var(--surface)!important;
+}
+
+body[data-page="cronograma"]:not(.schedule-settings-embed) .mode-option input:checked+span{
+  border-color:var(--accent)!important;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface))!important;
+}
+
+/* inputs menos chapados */
+body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+  input[type="search"],
+  input[type="date"],
+  input[type="text"],
+  select
+){
+  border-color:var(--schedule-border)!important;
+  background:color-mix(in srgb,var(--accent) 1.5%,var(--surface))!important;
+}
+
+/* dark e rosa: mantém a mesma linguagem sem branco artificial */
+:root[data-theme="dark"] body[data-page="cronograma"]:not(.schedule-settings-embed),
+body.theme-dark[data-page="cronograma"]:not(.schedule-settings-embed){
+  --schedule-panel:color-mix(in srgb,var(--accent) 3%,var(--surface));
+  --schedule-panel-strong:color-mix(in srgb,var(--accent) 7%,var(--surface));
+  --schedule-panel-soft:color-mix(in srgb,var(--accent) 9%,var(--surface));
+  --schedule-shadow:0 8px 24px rgba(0,0,0,.16);
+}
+
+/* responsivo */
+@media(max-width:1120px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-summary{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+}
+
+@media(max-width:700px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack{
+    gap:8px!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-summary{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:8px!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .summary-card{
+    padding:13px!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) :is(
+    .import-box,
+    .planner-panel,
+    .deck-panel,
+    .schedule-add-hub,
+    .theme-library-panel,
+    .agenda-today-card,
+    .agenda-side-card,
+    .agenda-week-summary-card
+  ){
+    border-radius:13px!important;
+  }
+
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .month-planner,
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .week-planner{
+    margin-top:8px!important;
+  }
+}
+
+@media(max-width:430px){
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-summary{
+    grid-template-columns:1fr 1fr!important;
+  }
+}
