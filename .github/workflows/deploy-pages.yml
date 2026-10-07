@@ -2,6 +2,9 @@ name: Deploy GitHub Pages
 # trigger: pages-source-enabled
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
