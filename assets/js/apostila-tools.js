@@ -132,9 +132,9 @@
     .apostila-image-candidate-actions button,.apostila-image-candidate-actions a{min-height:31px;padding:0 9px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);font:inherit;font-size:8.8px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
     .apostila-image-candidate-actions [data-apostila-image-action="approve"]{background:var(--accent);border-color:var(--accent);color:#fff}
     .apostila-image-candidate-actions [data-apostila-image-action="reject"]{color:var(--danger,#b42318)}
-    .apostila-approved-figure{width:min(52%,460px);margin:16px auto 18px;padding:13px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}
+    .apostila-approved-figure{width:min(58%,520px);margin:18px auto 20px;padding:14px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}.apostila-approved-figure-intro{margin:0 0 11px;padding:10px 11px;border-left:3px solid var(--accent);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));text-align:left}.apostila-approved-figure-intro span{display:block;margin-bottom:4px;color:var(--accent);font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.apostila-approved-figure-intro p{margin:0!important;color:var(--text);font-size:11.2px!important;line-height:1.55!important}.apostila-approved-figure-focus{margin-top:8px;padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--accent) 20%,var(--border));color:var(--text);font-size:10.2px;line-height:1.48;text-align:left}.apostila-approved-figure-focus strong{color:var(--accent);font-weight:650}
     .apostila-approved-figure img{display:block;width:100%;max-width:440px;max-height:360px;object-fit:contain;margin:0 auto;border-radius:10px;background:#fff}
-    .apostila-approved-figure figcaption{margin-top:9px;color:var(--muted);font-size:10.5px;line-height:1.5;text-align:left}
+    .apostila-approved-figure figcaption{margin-top:10px;color:var(--muted);font-size:10.5px;line-height:1.52;text-align:left}
     .apostila-approved-figure figcaption strong{color:var(--text);font-weight:600}
     .apostila-approved-figure-source{display:inline-block;margin-top:5px;color:var(--accent);font-size:9px;text-decoration:none}
     .apostila-approved-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;margin:16px 0 18px}
@@ -168,16 +168,50 @@
     figure.className = "apostila-approved-figure";
     figure.dataset.apostilaApprovedImage = String(row.id);
 
+    const title = String(asset.caption_title || asset.title || "Imagem didática").trim();
+    const didactic = String(asset.didactic_note || "").trim();
+    const captionText = String(asset.caption || "").trim();
+    const introText = String(
+      asset.intro_text ||
+      asset.lead_in ||
+      didactic ||
+      ("Antes de seguir, observe " + title.toLowerCase() + ". Use a imagem para reconhecer o padrão visual e relacioná-lo ao raciocínio clínico desta seção.")
+    ).trim();
+    const visualFocus = String(
+      asset.visual_focus ||
+      asset.what_to_look_for ||
+      captionText ||
+      ""
+    ).trim();
+    const clinicalLink = String(asset.clinical_link || asset.clinical_pearl || "").trim();
+
+    const intro = document.createElement("div");
+    intro.className = "apostila-approved-figure-intro";
+    intro.innerHTML = '<span>Leitura guiada</span><p>' + esc(introText) + '</p>';
+    figure.appendChild(intro);
+
     const img = document.createElement("img");
     img.src = src;
-    img.alt = String(asset.alt || asset.caption || "Imagem didática");
+    img.alt = String(asset.alt || captionText || "Imagem didática");
     img.loading = "lazy";
     figure.appendChild(img);
 
+    if (visualFocus) {
+      const focus = document.createElement("div");
+      focus.className = "apostila-approved-figure-focus";
+      focus.innerHTML = "<strong>O que observar:</strong> " + esc(visualFocus);
+      figure.appendChild(focus);
+    }
+
     const caption = document.createElement("figcaption");
-    const title = asset.caption_title || asset.title || "";
-    const text = asset.caption || asset.didactic_note || "";
+    const text = captionText || didactic || "";
     caption.innerHTML = (title ? "<strong>" + esc(title) + "</strong> " : "") + esc(text);
+    if (clinicalLink) {
+      caption.appendChild(document.createElement("br"));
+      const clinical = document.createElement("span");
+      clinical.innerHTML = "<strong>Conexão clínica:</strong> " + esc(clinicalLink);
+      caption.appendChild(clinical);
+    }
     figure.appendChild(caption);
 
     if (row.source_url) {
@@ -314,7 +348,7 @@
         </div>
         <div class="apostila-image-candidate-body">
           <strong>${esc(asset.title || asset.caption_title || row.source_name || "Imagem candidata")}</strong>
-          <small>${esc(asset.didactic_note || asset.caption || "Imagem proposta para complementar o conteúdo.")}</small>
+          <small>${esc(asset.intro_text || asset.lead_in || asset.didactic_note || asset.caption || "Imagem proposta para complementar o conteúdo.")}</small>
           <small class="apostila-image-candidate-target">Entraria em: #${esc(row.target_section || "—")}</small>
           <small>${esc(row.source_name || "Fonte não informada")}${row.source_license ? " · " + esc(row.source_license) : ""}</small>
           <div class="apostila-image-candidate-actions">
