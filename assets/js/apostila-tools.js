@@ -6,23 +6,23 @@
   if(!main||!outlineHead)return;
 
   const style=document.createElement('style');
-  style.textContent='.book-tools{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}.book-tool-btn{min-height:34px;padding:0 8px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font:inherit;font-size:9.5px;cursor:pointer}.book-tool-btn:hover{background:var(--surface-2);color:var(--accent)}.book-tool-btn.is-active{background:color-mix(in srgb,var(--accent) 10%,var(--surface));border-color:color-mix(in srgb,var(--accent) 40%,var(--border));color:var(--accent)}.book-highlight-palette{grid-column:1/-1;display:flex;align-items:center;gap:6px;padding-top:2px}.book-highlight-palette[hidden]{display:none}.book-color-dot{width:22px;height:22px;padding:0;border:2px solid transparent;border-radius:50%;cursor:pointer}.book-color-dot.is-active{border-color:var(--accent);box-shadow:0 0 0 2px var(--surface) inset}.book-highlight{background:var(--book-highlight-color,#fff09a);color:inherit;border-radius:2px;padding:0 .03em}.book-main{position:relative}.book-postit-layer{position:absolute;inset:0;z-index:40;pointer-events:none}.book-postit{position:absolute;width:160px;height:118px;min-width:110px;min-height:88px;max-width:min(420px,80vw);max-height:520px;padding:14px 12px 10px;box-sizing:border-box;border:1px solid rgba(94,82,20,.20);border-radius:10px;background:#fff2a6;box-shadow:0 12px 28px rgba(0,0,0,.18);pointer-events:auto;cursor:grab;resize:both;overflow:auto}.book-postit:after{content:"";position:absolute;right:3px;bottom:3px;width:12px;height:12px;border-right:2px solid rgba(80,70,25,.45);border-bottom:2px solid rgba(80,70,25,.45);pointer-events:none}.book-postit textarea{display:block;width:100%;height:100%;min-height:54px;box-sizing:border-box;resize:none;border:0;background:transparent;color:#403a1f;font:500 12px/1.45 inherit;outline:none}.book-postit-close{position:absolute;top:4px;right:6px;width:26px;height:26px;border:0;background:transparent;color:#6c622d;font-size:18px;line-height:1;cursor:pointer}@media(max-width:900px){.book-tools{grid-template-columns:repeat(2,minmax(110px,1fr))}.book-postit{max-width:72vw}}';
+  style.textContent='.book-tools{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}.book-tool-btn{min-height:34px;padding:0 8px;border:1px solid #184888;border-radius:9px;background:#184888;color:#fff;font:inherit;font-size:9.5px;font-weight:600;cursor:pointer}.book-tool-btn:hover{background:#123b72;color:#fff}.book-tool-btn.is-active{background:#0f3465;border-color:#0f3465;color:#fff;box-shadow:0 0 0 2px color-mix(in srgb,#184888 18%,transparent)}.book-highlight-palette,.book-postit-palette{grid-column:1/-1;display:flex;align-items:center;gap:6px;padding-top:2px;flex-wrap:wrap}.book-highlight-palette[hidden],.book-postit-palette[hidden]{display:none}.book-tool-mini{display:inline-grid;place-items:center;min-width:28px;height:28px;padding:0 8px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:11px;cursor:pointer}.book-tool-mini:hover{background:var(--surface-2)}.book-tool-mini.is-active{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}.book-color-dot{width:22px;height:22px;padding:0;border:2px solid transparent;border-radius:50%;cursor:pointer}.book-color-dot.is-active{border-color:var(--accent);box-shadow:0 0 0 2px var(--surface) inset}.book-highlight{background:var(--book-highlight-color,#fff09a);color:inherit;border-radius:2px;padding:0 .03em}.book-main{position:relative}.book-postit-layer{position:absolute;inset:0;z-index:40;pointer-events:none}.book-postit{position:absolute;width:160px;height:118px;min-width:110px;min-height:88px;max-width:min(420px,80vw);max-height:520px;padding:14px 12px 10px;box-sizing:border-box;border:1px solid rgba(94,82,20,.20);border-radius:10px;background:#fff2a6;box-shadow:0 12px 28px rgba(0,0,0,.18);pointer-events:auto;cursor:grab;resize:none;overflow:visible}.book-postit-resize{position:absolute;right:-5px;bottom:-5px;width:18px;height:18px;border:1px solid rgba(80,70,25,.35);border-radius:5px;background:#fff9d6;cursor:nwse-resize;touch-action:none}.book-postit-resize:before{content:"";position:absolute;right:4px;bottom:4px;width:7px;height:7px;border-right:2px solid rgba(80,70,25,.5);border-bottom:2px solid rgba(80,70,25,.5)}.book-postit.is-pointer-left:before{content:"";position:absolute;left:-18px;top:28px;width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;border-right:18px solid #fff2a6;filter:drop-shadow(-1px 0 0 rgba(94,82,20,.2))}.book-postit.is-pointer-left{border-top-left-radius:5px}.book-postit textarea{display:block;width:100%;height:100%;min-height:54px;box-sizing:border-box;resize:none;border:0;background:transparent;color:#403a1f;font:500 12px/1.45 inherit;outline:none}.book-postit-close{position:absolute;top:4px;right:6px;width:26px;height:26px;border:0;background:transparent;color:#6c622d;font-size:18px;line-height:1;cursor:pointer}@media(max-width:900px){.book-tools{grid-template-columns:repeat(2,minmax(110px,1fr))}.book-postit{max-width:72vw}}';
   document.head.appendChild(style);
 
   const tools=document.createElement('div');
   tools.className='book-tools';
-  tools.innerHTML='<button type="button" class="book-tool-btn" data-apostila-highlight>Grifar</button><button type="button" class="book-tool-btn" data-apostila-postit>Post-it</button><div class="book-highlight-palette" data-highlight-palette hidden><button type="button" class="book-color-dot is-active" data-highlight-color="#fff09a" style="background:#fff09a" aria-label="Amarelo"></button><button type="button" class="book-color-dot" data-highlight-color="#bff3c8" style="background:#bff3c8" aria-label="Verde"></button><button type="button" class="book-color-dot" data-highlight-color="#bfe1ff" style="background:#bfe1ff" aria-label="Azul"></button><button type="button" class="book-color-dot" data-highlight-color="#ffc8df" style="background:#ffc8df" aria-label="Rosa"></button><button type="button" class="book-color-dot" data-highlight-color="#e6ccff" style="background:#e6ccff" aria-label="Roxo"></button></div>';
+  tools.innerHTML='<button type="button" class="book-tool-btn" data-apostila-highlight>Grifar</button><button type="button" class="book-tool-btn" data-apostila-postit>Post-it</button><div class="book-highlight-palette" data-highlight-palette hidden><button type="button" class="book-tool-mini" data-highlight-undo title="Desfazer último grifo" aria-label="Desfazer último grifo">↶</button><button type="button" class="book-color-dot is-active" data-highlight-color="#fff09a" style="background:#fff09a" aria-label="Amarelo"></button><button type="button" class="book-color-dot" data-highlight-color="#bff3c8" style="background:#bff3c8" aria-label="Verde"></button><button type="button" class="book-color-dot" data-highlight-color="#bfe1ff" style="background:#bfe1ff" aria-label="Azul"></button><button type="button" class="book-color-dot" data-highlight-color="#ffc8df" style="background:#ffc8df" aria-label="Rosa"></button><button type="button" class="book-color-dot" data-highlight-color="#e6ccff" style="background:#e6ccff" aria-label="Roxo"></button></div><div class="book-postit-palette" data-postit-palette hidden><button type="button" class="book-tool-mini is-active" data-postit-shape="square">▭ Normal</button><button type="button" class="book-tool-mini" data-postit-shape="pointer-left">◀ Apontador</button></div>';
   outlineHead.insertAdjacentElement('afterend',tools);
 
   const highlightBtn=tools.querySelector('[data-apostila-highlight]');
-  const postitBtn=tools.querySelector('[data-apostila-postit]');const palette=tools.querySelector('[data-highlight-palette]');let highlightColor='#fff09a';
+  const postitBtn=tools.querySelector('[data-apostila-postit]');const palette=tools.querySelector('[data-highlight-palette]');const postitPalette=tools.querySelector('[data-postit-palette]');let highlightColor='#fff09a';let postitShape='square';
   const base='luria:apostila:'+location.pathname.replace(/\/+$/,'');
   const highlightKey=base+':highlights:v1';
   const postitKey=base+':postits:v1';
   let mode=null;
-  const setMode=next=>{mode=mode===next?null:next;highlightBtn.classList.toggle('is-active',mode==='highlight');postitBtn.classList.toggle('is-active',mode==='postit');palette.hidden=mode!=='highlight'};
+  const setMode=next=>{mode=mode===next?null:next;highlightBtn.classList.toggle('is-active',mode==='highlight');postitBtn.classList.toggle('is-active',mode==='postit');palette.hidden=mode!=='highlight';postitPalette.hidden=mode!=='postit'};
   highlightBtn.addEventListener('click',()=>setMode('highlight'));
-  postitBtn.addEventListener('click',()=>setMode('postit'));palette.querySelectorAll('[data-highlight-color]').forEach(btn=>btn.addEventListener('click',()=>{highlightColor=btn.dataset.highlightColor||'#fff09a';palette.querySelectorAll('.book-color-dot').forEach(x=>x.classList.toggle('is-active',x===btn))}));
+  postitBtn.addEventListener('click',()=>setMode('postit'));palette.querySelectorAll('[data-highlight-color]').forEach(btn=>btn.addEventListener('click',()=>{highlightColor=btn.dataset.highlightColor||'#fff09a';palette.querySelectorAll('.book-color-dot').forEach(x=>x.classList.toggle('is-active',x===btn))}));postitPalette.querySelectorAll('[data-postit-shape]').forEach(btn=>btn.addEventListener('click',()=>{postitShape=btn.dataset.postitShape||'square';postitPalette.querySelectorAll('[data-postit-shape]').forEach(x=>x.classList.toggle('is-active',x===btn))}));
 
   const read=(k,d=[])=>{try{return JSON.parse(localStorage.getItem(k)||JSON.stringify(d))}catch{return d}};
   const write=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}};
@@ -42,6 +42,12 @@
     return false;
   };
   read(highlightKey).forEach(item=>wrapText(item.section?document.getElementById(item.section)?.closest('.book-section,.mindmap-section,.book-hero')||main:main,item.text,item.color||'#fff09a'));
+  const undoHighlight=()=>{
+    const marks=[...main.querySelectorAll('mark.book-highlight')];
+    const m=marks.at(-1);if(!m)return;
+    const p=m.parentNode;while(m.firstChild)p.insertBefore(m.firstChild,m);m.remove();p?.normalize?.();saveHighlights();
+  };
+  tools.querySelector('[data-highlight-undo]')?.addEventListener('click',undoHighlight);
 
   document.addEventListener('mouseup',()=>{
     if(mode!=='highlight')return;
@@ -58,24 +64,32 @@
   });
 
   const layer=document.createElement('div');layer.className='book-postit-layer';main.appendChild(layer);
-  const savePostits=()=>write(postitKey,[...layer.querySelectorAll('.book-postit')].map(n=>({x:parseFloat(n.style.left)||0,y:parseFloat(n.style.top)||0,w:n.offsetWidth,h:n.offsetHeight,text:n.querySelector('textarea')?.value||''})));
+  const savePostits=()=>write(postitKey,[...layer.querySelectorAll('.book-postit')].map(n=>({x:parseFloat(n.style.left)||0,y:parseFloat(n.style.top)||0,w:n.offsetWidth,h:n.offsetHeight,text:n.querySelector('textarea')?.value||'',shape:n.dataset.shape||'square'})));
 
-  const createPostit=(x,y,text='',w=160,h=118)=>{
-    const note=document.createElement('div');note.className='book-postit';note.style.left=Math.max(0,x)+'px';note.style.top=Math.max(0,y)+'px';note.style.width=Math.max(110,w||160)+'px';note.style.height=Math.max(88,h||118)+'px';
-    note.innerHTML='<button type="button" class="book-postit-close" aria-label="Apagar post-it">×</button><textarea placeholder="Digite sua anotação..."></textarea>';
+  const createPostit=(x,y,text='',w=160,h=118,shape='square')=>{
+    const note=document.createElement('div');note.className='book-postit';note.dataset.shape=shape||'square';note.classList.toggle('is-pointer-left',note.dataset.shape==='pointer-left');note.style.left=Math.max(0,x)+'px';note.style.top=Math.max(0,y)+'px';note.style.width=Math.max(110,w||160)+'px';note.style.height=Math.max(88,h||118)+'px';
+    note.innerHTML='<button type="button" class="book-postit-close" aria-label="Apagar post-it">×</button><textarea placeholder="Digite sua anotação..."></textarea><span class="book-postit-resize" role="button" aria-label="Redimensionar post-it" title="Arraste para redimensionar"></span>';
     const ta=note.querySelector('textarea');ta.value=text;ta.addEventListener('input',savePostits);
     note.querySelector('.book-postit-close').addEventListener('click',()=>{note.remove();savePostits()});
+
     let drag=false,dx=0,dy=0;
-    note.addEventListener('pointerdown',e=>{if(e.target.closest('textarea,button'))return;drag=true;note.setPointerCapture(e.pointerId);const r=note.getBoundingClientRect();dx=e.clientX-r.left;dy=e.clientY-r.top});
+    note.addEventListener('pointerdown',e=>{if(e.target.closest('textarea,button,.book-postit-resize'))return;drag=true;note.setPointerCapture(e.pointerId);const r=note.getBoundingClientRect();dx=e.clientX-r.left;dy=e.clientY-r.top});
     note.addEventListener('pointermove',e=>{if(!drag)return;const r=main.getBoundingClientRect();note.style.left=Math.max(0,e.clientX-r.left-dx)+'px';note.style.top=Math.max(0,e.clientY-r.top-dy+main.scrollTop)+'px'});
-    note.addEventListener('pointerup',()=>{if(drag){drag=false;savePostits()}});new ResizeObserver(savePostits).observe(note);
+    note.addEventListener('pointerup',()=>{if(drag){drag=false;savePostits()}});
+
+    const handle=note.querySelector('.book-postit-resize');let resizing=false,startX=0,startY=0,startW=0,startH=0;
+    handle.addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();resizing=true;handle.setPointerCapture(e.pointerId);startX=e.clientX;startY=e.clientY;startW=note.offsetWidth;startH=note.offsetHeight});
+    handle.addEventListener('pointermove',e=>{if(!resizing)return;e.preventDefault();const maxW=Math.min(420,window.innerWidth*.8);const maxH=520;note.style.width=Math.max(110,Math.min(maxW,startW+(e.clientX-startX)))+'px';note.style.height=Math.max(88,Math.min(maxH,startH+(e.clientY-startY)))+'px'});
+    handle.addEventListener('pointerup',e=>{if(!resizing)return;resizing=false;try{handle.releasePointerCapture(e.pointerId)}catch{}savePostits()});
+    handle.addEventListener('pointercancel',()=>{resizing=false;savePostits()});
+
     layer.appendChild(note);return note;
   };
 
-  read(postitKey).forEach(n=>createPostit(n.x,n.y,n.text,n.w,n.h));
+  read(postitKey).forEach(n=>createPostit(n.x,n.y,n.text,n.w,n.h,n.shape||'square'));
   main.addEventListener('click',e=>{
     if(mode!=='postit'||e.target.closest('.book-postit'))return;
-    const r=main.getBoundingClientRect(),note=createPostit(e.clientX-r.left-40,e.clientY-r.top+main.scrollTop-20,'');
+    const r=main.getBoundingClientRect(),note=createPostit(e.clientX-r.left-40,e.clientY-r.top+main.scrollTop-20,'',160,118,postitShape);
     savePostits();setMode(null);note.querySelector('textarea')?.focus();
   });
 })();
