@@ -293,7 +293,7 @@
         }
       }catch{}
       const byUrl=new Map();
-      [cicloHho,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
+      [cicloHho,sexualidade,ist,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
       books=[...byUrl.values()].sort((a,b)=>(Date.parse(b.created_at||0)||0)-(Date.parse(a.created_at||0)||0));
       render("");
     }
