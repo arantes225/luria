@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="1200" height="700" rx="30" fill="#f7f9fc"/>
+<text x="600" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#184888">Canal vaginal: antes e após a menopausa</text>
+<g font-family="Arial,sans-serif">
+<rect x="80" y="120" width="480" height="500" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<rect x="640" y="120" width="480" height="500" rx="26" fill="#fff" stroke="#d7e0ec" stroke-width="3"/>
+<text x="320" y="170" text-anchor="middle" font-size="28" font-weight="700" fill="#184888">Pré-menopausa</text>
+<text x="880" y="170" text-anchor="middle" font-size="28" font-weight="700" fill="#184888">Pós-menopausa / SGM</text>
+<path d="M220 230 C170 300 170 460 220 530 C260 570 380 570 420 530 C470 460 470 300 420 230 C380 190 260 190 220 230Z" fill="#f3a6b9" stroke="#b95f79" stroke-width="5"/>
+<path d="M270 255 C240 320 240 440 270 505 C290 530 350 530 370 505 C400 440 400 320 370 255 C350 230 290 230 270 255Z" fill="#fff3f6" stroke="#d77c94" stroke-width="4"/>
+<path d="M760 240 C730 305 730 455 760 520 C790 550 970 550 1000 520 C1030 455 1030 305 1000 240 C970 210 790 210 760 240Z" fill="#efc8d1" stroke="#b98694" stroke-width="5"/>
+<path d="M825 275 C810 330 810 430 825 485 C845 510 915 510 935 485 C950 430 950 330 935 275 C915 250 845 250 825 275Z" fill="#fff" stroke="#c7a1ac" stroke-width="4"/>
+<text x="320" y="590" text-anchor="middle" font-size="22" fill="#36465d">Epitélio mais espesso · pregas preservadas · melhor lubrificação</text>
+<text x="880" y="580" text-anchor="middle" font-size="22" fill="#36465d">Epitélio mais fino · menos pregas · maior secura e fragilidade</text>
+</g></svg>
