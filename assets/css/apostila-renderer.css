@@ -77,6 +77,16 @@
     @media(max-width:760px){.mindmap-head{align-items:flex-start;flex-direction:column}.mindmap-head p{text-align:left}.mindmap{grid-template-columns:1fr;grid-template-areas:"center" "a" "b" "c" "d";gap:10px}.mindmap:before,.mind-branch:before{display:none}.mind-center{width:100%}.mindmap-section{padding:18px!important}}
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}.mechanism-chain{grid-template-columns:1fr 1fr}.book-grid-2,.complication-grid{grid-template-columns:1fr}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
   
+
+/* LURIA — leitura contínua e sumário acessível sem empurrar as últimas seções para fora da tela */
+.book-outline{top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}
+.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}
+.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}
+.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}
+.apostila-approved-figure{width:min(78%,620px)}
+.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}
+@media(max-width:1100px){.book-page{grid-template-columns:174px minmax(0,1fr)}.book-outline-link{font-size:8.4px;padding:3px 5px;min-height:24px}}
+@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}
     /* apostila-light-blue-title-contrast */
     :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity,
     :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h1,
@@ -128,3 +138,4 @@
 .algo-val{padding:10px 12px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2);font-size:12px;line-height:1.55}
 @media(max-width:900px){.book-grid-3{grid-template-columns:1fr 1fr}.algo-row{grid-template-columns:1fr}}
 @media(max-width:620px){.book-grid-3{grid-template-columns:1fr}}
+
