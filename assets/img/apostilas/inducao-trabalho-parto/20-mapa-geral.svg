@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+ <rect width="800" height="500" rx="32" fill="#f7f9fc"/>
+ <rect x="48" y="46" width="704" height="408" rx="28" fill="#ffffff" stroke="#184888" stroke-width="3"/>
+ <circle cx="96" cy="96" r="22" fill="#184888"/>
+ <path d="M88 96h16M96 88v16" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+ <text x="136" y="105" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#184888">Mapa geral da indução</text>
+ <line x1="80" y1="132" x2="720" y2="132" stroke="#dbe4f0" stroke-width="2"/>
+ <text x="80" y="186" font-family="Arial,Helvetica,sans-serif" font-size="20" fill="#1f2937">Indicação → contraindicações → Bishop → método → monitorização → parto ou reavaliação</text>
+ <rect x="80" y="230" width="190" height="90" rx="18" fill="#eef4fb" stroke="#b9cce5"/>
+ <rect x="305" y="230" width="190" height="90" rx="18" fill="#eef4fb" stroke="#b9cce5"/>
+ <rect x="530" y="230" width="190" height="90" rx="18" fill="#eef4fb" stroke="#b9cce5"/>
+ <path d="M270 275h35M495 275h35" stroke="#184888" stroke-width="3" stroke-linecap="round"/>
+ <path d="M295 267l10 8-10 8M520 267l10 8-10 8" fill="none" stroke="#184888" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="175" y="282" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#184888">Avaliar</text>
+ <text x="400" y="282" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#184888">Decidir</text>
+ <text x="625" y="282" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#184888">Monitorar</text>
+ <text x="80" y="390" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#667085">Esquema didático LURIA • usar junto ao texto e ao protocolo institucional</text>
+ </svg>
