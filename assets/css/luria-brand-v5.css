@@ -3678,3 +3678,73 @@ body[data-page="aprender"] .book-hero .book-badge{
 :root[data-theme="rosa"] body[data-page="aprender"] .book-hero :is(.book-badge,p,small,strong,.book-meta-row span){
   color:#fff!important;
 }
+
+
+/* LURIA apostilas: mobile overflow repair 2026-10-08 */
+@media (max-width: 900px) {
+  body[data-page="aprender"]:has(.book-page) {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+  body[data-page="aprender"] .app-shell:has(.book-page),
+  body[data-page="aprender"] .main:has(.book-page),
+  body[data-page="aprender"] .page:has(.book-page),
+  body[data-page="aprender"] .book-page,
+  body[data-page="aprender"] .book-main,
+  body[data-page="aprender"] .book-main > *,
+  body[data-page="aprender"] .book-section,
+  body[data-page="aprender"] .book-hero,
+  body[data-page="aprender"] .book-outline {
+    box-sizing: border-box;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  body[data-page="aprender"] .book-page {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+  }
+  body[data-page="aprender"] .book-main {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+  }
+  body[data-page="aprender"] .book-main :is(p, li, h1, h2, h3, h4, a, strong, span, blockquote, pre, code) {
+    overflow-wrap: anywhere;
+  }
+  body[data-page="aprender"] .book-main :is(img, svg, video, iframe, canvas, figure) {
+    max-width: 100% !important;
+    height: auto;
+  }
+  body[data-page="aprender"] .book-main :is(.book-grid-2, .book-grid-3, .flow, .axis, .algo-row, .clinical-cards, .cervicite-mindmap) {
+    min-width: 0;
+    max-width: 100%;
+  }
+  body[data-page="aprender"] .book-main :is(.book-mini, .flow-step, .axis-card, .algo-key, .algo-val, .book-callout, .book-alert) {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  body[data-page="aprender"] .book-section :is(table, .book-table) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media (max-width: 620px) {
+  body[data-page="aprender"] .book-main :is(.book-grid-2, .book-grid-3, .flow, .clinical-cards, .cervicite-mindmap) {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  body[data-page="aprender"] .book-main .algo-row,
+  body[data-page="aprender"] .book-main .axis {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  body[data-page="aprender"] .book-section { padding: 18px 15px !important; }
+  body[data-page="aprender"] .book-hero { padding: 20px 16px !important; }
+  body[data-page="aprender"] .book-hero h1 { font-size: clamp(21px, 6vw, 27px) !important; }
+  body[data-page="aprender"] .book-callout { padding: 16px 16px 16px 74px !important; }
+  body[data-page="aprender"] .book-callout::before { left: 12px !important; width: 46px !important; height: 46px !important; }
+}
