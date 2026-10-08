@@ -33,7 +33,7 @@
     .algorithm{display:grid;gap:8px;margin-top:12px}.algorithm-row{display:grid;grid-template-columns:170px 1fr;gap:8px}.algorithm-key{display:flex;align-items:center;justify-content:center;padding:11px;border-radius:11px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));font-size:11px;font-weight:700;text-align:center}.algorithm-value{padding:11px 13px;border:1px solid var(--border);border-radius:11px;background:var(--surface-2);font-size:12px;line-height:1.55}
     .reference-list{margin:0;padding-left:20px}.reference-list li{margin-bottom:8px}.reference-list a{color:var(--accent);text-decoration:none}
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none}.book-outline-nav{display:flex;gap:5px;overflow-x:auto;padding-bottom:4px}.book-outline-link{flex:0 0 auto;white-space:nowrap;border-left:0;border-bottom:2px solid transparent}.book-outline-link.is-active{border-bottom-color:var(--accent)}.book-grid-2,.book-grid-3,.flow{grid-template-columns:1fr}.algorithm-row{grid-template-columns:1fr}.flow-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px}}
-  </style>
+  .book-clinical-figure{margin:18px 0;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}.book-clinical-figure img{display:block;max-width:100%;width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:8px}.book-clinical-figure figcaption{font-size:12px;line-height:1.6;margin-top:9px;color:var(--muted)}.book-clinical-figure a{color:var(--accent)} </style>
 </head>
 <body data-page="aprender" data-apostila-images="off">
 <div class="app-shell">
@@ -114,24 +114,30 @@
           <p>Também devem ser avaliados status das membranas, paridade, exame cervical, disponibilidade de monitorização e capacidade de realizar cesárea de urgência se necessária.</p>
         </section>
 
-        <section id="bishop" class="book-section">
-          <h2>3. Índice de Bishop</h2>
-          <p>O Bishop resume quão “pronto” o colo está para responder à indução. Não é uma profecia: ele ajuda a escolher o método inicial.</p>
-          <table class="book-table"><thead><tr><th>Parâmetro</th><th>0</th><th>1</th><th>2</th><th>3</th></tr></thead><tbody>
-            <tr><td>Dilatação</td><td>0 cm</td><td>1–2 cm</td><td>3–4 cm</td><td>≥5 cm</td></tr>
-            <tr><td>Apagamento</td><td>0–30%</td><td>40–50%</td><td>60–70%</td><td>≥80%</td></tr>
-            <tr><td>Estação</td><td>−3</td><td>−2</td><td>−1 / 0</td><td>+1 / +2</td></tr>
-            <tr><td>Consistência</td><td>firme</td><td>média</td><td>amolecida</td><td>—</td></tr>
-            <tr><td>Posição</td><td>posterior</td><td>média</td><td>anterior</td><td>—</td></tr>
-          </tbody></table>
-          <div class="algorithm">
-            <div class="algorithm-row"><div class="algorithm-key">Bishop baixo/desfavorável</div><div class="algorithm-value">Fazer preparo cervical com prostaglandina, quando não houver contraindicação, ou método mecânico.</div></div>
-            <div class="algorithm-row"><div class="algorithm-key">Bishop favorável</div><div class="algorithm-value">Ocitocina e/ou amniotomia tornam-se estratégias mais eficientes.</div></div>
-          </div>
-          <div class="book-callout"><strong>Pulo do Gato</strong>Não decore apenas “Bishop 6”. Protocolos usam cortes ligeiramente diferentes. O princípio é reconhecer se o colo ainda precisa amadurecer.</div>
-        </section>
+        <section id="bishop" class="book-section"><h2>3. Índice de Bishop: como calcular e interpretar</h2>
+<p>O <strong>índice de Bishop</strong> estima o grau de amadurecimento do colo uterino antes da indução. Um colo fechado, longo, firme e posterior tende a responder pior à indução direta; um colo dilatado, apagado, amolecido e anterior já apresenta condições mais próximas das observadas no trabalho de parto. A pontuação <strong>não mede sofrimento fetal</strong> e não é, isoladamente, indicação de cesárea.</p>
+<h3>Como calcular? Some cinco achados do toque vaginal</h3>
+<p>Para cada linha, escolha <strong>uma única coluna</strong> correspondente ao exame e some os pontos. Dilatação, apagamento e estação podem receber de 0 a 3; posição e consistência recebem de 0 a 2. O resultado vai de <strong>0 a 13 pontos</strong>.</p>
+<table class="book-table"><thead><tr><th>Parâmetro</th><th>0 ponto</th><th>1 ponto</th><th>2 pontos</th><th>3 pontos</th></tr></thead><tbody>
+<tr><td>Dilatação do colo</td><td>Fechado</td><td>1–2 cm</td><td>3–4 cm</td><td>≥5 cm</td></tr>
+<tr><td>Apagamento do colo</td><td>0–30%</td><td>40–50%</td><td>60–70%</td><td>≥80%</td></tr>
+<tr><td>Estação da apresentação (De Lee)</td><td>−3</td><td>−2</td><td>−1 ou 0</td><td>+1 ou +2</td></tr>
+<tr><td>Consistência cervical</td><td>Firme</td><td>Intermediária</td><td>Amolecida</td><td>—</td></tr>
+<tr><td>Posição cervical</td><td>Posterior</td><td>Intermediária</td><td>Anterior</td><td>—</td></tr>
+</tbody></table>
+<h3>O que significam os parâmetros?</h3>
+<p><strong>Dilatação</strong> é a abertura do orifício cervical, medida em centímetros. <strong>Apagamento</strong> é o encurtamento/afinamento do colo, expresso em porcentagem; 0% significa colo não apagado e 100% apagamento completo. <strong>Estação</strong> informa a altura da apresentação fetal em relação às espinhas isquiáticas da pelve: 0 está ao nível das espinhas, valores negativos indicam apresentação mais alta e positivos indicam progressão para baixo. <strong>Consistência</strong> descreve se o colo está firme ou macio, e <strong>posição</strong> indica se está voltado posteriormente, em posição intermediária ou anterior.</p>
+<h3>Qual é o Bishop baixo e qual é o alto?</h3>
+<table class="book-table"><thead><tr><th>Pontuação total (Bishop completo)</th><th>Interpretação clínica usual</th><th>Implicação prática</th></tr></thead><tbody>
+<tr><td><strong>0–5</strong></td><td>Desfavorável: colo ainda pouco amadurecido</td><td>Frequentemente exige maturação cervical antes de ocitocina/amniotomia</td></tr>
+<tr><td><strong>6–8</strong></td><td>Intermediário: condição em transição; alguns protocolos já chamam ≥6 de favorável</td><td>Individualizar conforme paridade, membranas, indicação e protocolo local</td></tr>
+<tr><td><strong>9–13</strong></td><td>Favorável: colo amadurecido</td><td>Maior chance de resposta à indução com ocitocina e/ou amniotomia, quando apropriadas</td></tr>
+</tbody></table>
+<p><strong>Atenção à diferença entre protocolos:</strong> alguns usam Bishop ≥6 como limiar prático de colo favorável; o Bishop completo <strong>&gt;8</strong> indica maior probabilidade de sucesso semelhante ao trabalho espontâneo. Não confunda esse escore completo (0–13) com versões simplificadas ou modificadas, que têm escalas e pontos de corte diferentes.</p>
+<div class="book-mini"><strong>Exemplo resolvido, sem pular etapas</strong><p>Gestante a termo: dilatação de <strong>2 cm</strong> (1 ponto), apagamento de <strong>50%</strong> (1), estação <strong>−2</strong> (1), colo <strong>amolecido</strong> (2) e <strong>posterior</strong> (0). Soma: <strong>1 + 1 + 1 + 2 + 0 = Bishop 5/13.</strong> Interpretação: colo desfavorável; se houver indicação de indução e possibilidade de parto vaginal, considerar primeiro amadurecimento cervical. O número não determina sozinho o método ou a via de parto.</p></div>
+<div class="book-callout"><strong>Pulo do Gato</strong>Bishop baixo não significa indicação de cesárea. Significa que o colo tem menor maturidade e que vale pensar em preparo cervical antes de exigir resposta à ocitocina. É a tendência do quadro clínico e o contexto materno-fetal que determinam a conduta.</div></section>
 
-        <section id="indicacoes" class="book-section">
+<section id="indicacoes" class="book-section">
           <h2>4. Indicações: quando terminar é mais seguro que esperar</h2>
           <table class="book-table"><thead><tr><th>Cenário</th><th>Lógica</th></tr></thead><tbody>
             <tr><td>Gestação a partir de 41 semanas</td><td>Risco perinatal aumenta com prolongamento da gestação; OMS recomenda oferecer indução a partir de 41 semanas em gestação bem datada.</td></tr>
@@ -188,15 +194,23 @@
           <div class="danger-block"><h4>Cesárea prévia</h4><p>Não use misoprostol para indução do trabalho de parto em gestante com cesariana anterior. O aumento do risco de ruptura uterina torna essa estratégia inadequada.</p></div>
         </section>
 
-        <section id="balao" class="book-section">
-          <h2>8. Métodos mecânicos: Foley ou balão duplo</h2>
-          <p>O balão atravessa o canal cervical e exerce pressão local, favorecendo liberação endógena de prostaglandinas e dilatação. É particularmente valioso quando se deseja <strong>menor risco de taquissistolia</strong> ou quando prostaglandinas são contraindicadas.</p>
-          <h3>Princípios da técnica</h3>
-          <ul><li>inserção transcervical com técnica limpa/asséptica conforme protocolo;</li><li>volume de insuflação definido pelo dispositivo/protocolo;</li><li>tração leve quando adotada;</li><li>retirada após expulsão, tempo máximo institucional ou evolução do trabalho de parto.</li></ul>
-          <p>Na paciente com cesárea segmentar transversa prévia candidata a trabalho de parto, o método mecânico é frequentemente o método de amadurecimento preferido.</p>
-        </section>
+        <section id="balao" class="book-section"><h2>8. Métodos mecânicos: Foley e balão duplo</h2>
+<p><strong>O que é um balão cervical?</strong> É um cateter flexível introduzido através do colo, com um ou dois balões que são preenchidos com solução salina. A pressão exercida sobre o colo estimula alterações locais e a liberação endógena de prostaglandinas, favorecendo apagamento e dilatação. Não é o mesmo que uma sonda vesical destinada a drenar urina, embora o método de Foley utilize esse tipo de cateter com finalidade cervical.</p>
+<h3>Como reconhecer os dispositivos?</h3>
+<figure class="book-clinical-figure"><img src="https://images.squarespace-cdn.com/content/v1/582b4655ff7c50df9a7a7e0a/8c96e8db-5982-4551-9d5d-17c3704ed496/Catheters.png" alt="Fotografias comparativas: à esquerda, cateter Foley com um balão; à direita, cateter de Cook com dois balões" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><p hidden>Imagem não carregada. <a href="https://www.ncbi.nlm.nih.gov/books/NBK615337/figure/ch10.fig48/" target="_blank" rel="noopener">Ver comparação de cateteres no NCBI Bookshelf</a>.</p><figcaption><strong>Foley versus balão duplo.</strong> Foley: um balão posiciona-se acima do orifício interno e pode receber tração suave conforme protocolo. Balão duplo: um balão fica acima e o outro abaixo do colo, promovendo compressão dos dois lados. Fotografia comparativa: High Country Doulas; <a href="https://www.ncbi.nlm.nih.gov/books/NBK615337/figure/ch10.fig48/" target="_blank" rel="noopener">comparação didática alternativa no NCBI Bookshelf (CC BY 4.0)</a>.</figcaption></figure>
+<h3>Foley de balão único: passo a passo conceitual</h3><p>O profissional posiciona a extremidade além do orifício cervical interno, insufla o balão de acordo com o dispositivo e protocolo, e mantém sua ação mecânica sobre o colo. A dilatação e o amadurecimento podem resultar na expulsão espontânea do cateter. A manipulação deve ser feita por equipe treinada e com avaliação prévia de apresentação, membranas, sangramento, infecção e bem-estar fetal.</p>
+<h3>Balão duplo (Cook): o que muda?</h3><p>Há <strong>dois compartimentos independentes</strong>: o balão uterino fica acima do colo e o vaginal fica abaixo dele. Isso permite pressão bilateral sem depender necessariamente de tração externa. A capacidade, sequência de insuflação e tempo de permanência dependem do modelo e do protocolo institucional, não de um volume universal aplicável a todas as pacientes.</p>
+<table class="book-table"><thead><tr><th>Aspecto</th><th>Foley</th><th>Balão duplo</th></tr></thead><tbody>
+<tr><td>Estrutura</td><td>Um balão</td><td>Dois balões independentes</td></tr>
+<tr><td>Local de ação</td><td>Predominantemente no orifício cervical interno</td><td>Acima e abaixo do colo</td></tr>
+<tr><td>Principal objetivo</td><td>Amadurecer colo desfavorável</td><td>Amadurecer colo desfavorável</td></tr>
+<tr><td>Risco de taquissistolia</td><td>Em geral menor que com prostaglandinas</td><td>Em geral menor que com prostaglandinas</td></tr>
+</tbody></table>
+<p><strong>Quando considerar?</strong> Em colo desfavorável, especialmente quando se busca menor risco de hiperestimulação ou quando prostaglandinas não são apropriadas, como em determinadas candidatas a trabalho de parto após cesárea segmentar transversa. O uso exige protocolo, consentimento, monitorização e capacidade de resposta obstétrica.</p>
+<p><strong>Cuidados e limitações:</strong> pode haver desconforto, sangramento discreto, ruptura inadvertida das membranas ou suspeita de infecção. Sangramento importante, alteração persistente da FCF, dor anormal ou sinais de infecção exigem reavaliação imediata. Nenhum balão torna segura a indução quando o parto vaginal está contraindicado.</p>
+</section>
 
-        <section id="ocitocina" class="book-section">
+<section id="ocitocina" class="book-section">
           <h2>9. Ocitocina</h2>
           <p>A ocitocina estimula contrações uterinas e deve ser administrada em bomba de infusão com titulação progressiva. A resposta é individual: <strong>a dose correta é a menor dose que produz atividade uterina adequada sem comprometer o feto</strong>.</p>
           <h3>Estratégia de baixa dose</h3>
@@ -243,9 +257,9 @@
           <ol><li>suspender ou reduzir ocitocina;</li><li>não administrar nova dose de prostaglandina;</li><li>reposicionar a paciente;</li><li>corrigir hipotensão/hipovolemia quando presentes;</li><li>considerar tocolítico se persistente e clinicamente relevante;</li><li>avaliar FCF e necessidade de resolução rápida.</li></ol>
           <div class="book-callout"><strong>Pulo do Gato</strong>Oxigênio suplementar não deve ser reflexo automático para toda alteração de FCF. Use quando houver hipoxemia materna ou indicação clínica específica; o essencial é corrigir a causa da hipoperfusão/hiperestimulação.</div>
           <h3>13.2 Ruptura uterina</h3>
-          <p>É rara, mas o risco é maior em útero cicatricial. Bradicardia fetal súbita é um dos sinais mais frequentes. Outros sinais incluem dor abdominal atípica, sangramento, perda da estação/apresentação e instabilidade materna. É emergência obstétrica.</p>
+          <p>É uma ruptura da parede uterina, potencialmente completa, que pode produzir hemorragia materna e comprometimento fetal agudo. O risco é mais elevado em útero com cicatriz, especialmente após incisões de alto risco ou uso inadequado de uterotônicos. <strong>A alteração mais frequente pode ser bradicardia fetal súbita ou traçado fetal anormal</strong>; dor abdominal intensa, sangramento vaginal, perda de estação fetal e instabilidade hemodinâmica podem ocorrer, mas sua ausência não exclui ruptura. Diante da suspeita, interromper uterotônicos, acionar imediatamente a equipe obstétrica/anestésica e organizar intervenção cirúrgica emergencial com ressuscitação materna.</p><p><strong>Como visualizar:</strong> na ruptura completa, há solução de continuidade em toda a espessura uterina, podendo haver exteriorização de partes fetais para a cavidade abdominal. <a href="https://www.alodokter.com/ruptur-uteri" target="_blank" rel="noopener">Ver ilustração anatômica de útero íntegro versus ruptura</a>.</p>
           <h3>13.3 Prolapso de cordão</h3>
-          <p>Risco especialmente após amniotomia com apresentação alta. Exige alívio da compressão e resolução obstétrica imediata conforme viabilidade e contexto.</p>
+          <p>Ocorre quando o cordão umbilical passa à frente da apresentação fetal através do colo, podendo ser comprimido entre o feto e a pelve. É especialmente preocupante após rotura de membranas com apresentação alta ou móvel, podendo causar bradicardia súbita e hipóxia grave. Confirmada a suspeita, chamar ajuda, <strong>aliviar manualmente a compressão elevando a apresentação</strong> quando indicado e adotar posição materna apropriada enquanto se providencia parto imediato pela via mais rápida e segura; evitar manipular excessivamente o cordão. <strong>Não tentar recolocar o cordão na cavidade uterina.</strong></p><p><strong>Como reconhecer:</strong> o cordão pode ser visível na vagina ou palpável ao toque abaixo da apresentação, embora às vezes a primeira pista seja a alteração abrupta da FCF. <a href="https://medical.uworld.com/library/obstetrics/158/preterm-prelabor-rupture-of-membranes/" target="_blank" rel="noopener">Ver ilustração clínica do prolapso de cordão</a>.</p>
         </section>
 
         <section id="falha" class="book-section">
