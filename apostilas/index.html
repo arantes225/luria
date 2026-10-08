@@ -143,6 +143,15 @@
       content_url:"/apostilas/infeccoes-sexualmente-transmissiveis/",
       created_at:"2026-10-07T15:18:00-03:00"
     };
+    const trabalhoPartoPrematuro={
+      id:"trabalho-parto-prematuro-2026",
+      area:"Ginecologia e Obstetrícia",
+      materia:"Obstetrícia",
+      tema:"Trabalho de Parto Prematuro",
+      titulo:"Trabalho de Parto Prematuro",
+      content_url:"/apostilas/trabalho-parto-prematuro/",
+      created_at:"2026-10-07T23:15:00-03:00"
+    };
     const hipertensaoGestacao={
       id:"sindromes-hipertensivas-gestacao-2026",
       area:"Ginecologia e Obstetrícia",
@@ -294,7 +303,7 @@
         }
       }catch{}
       const byUrl=new Map();
-      [cicloHho,sexualidade,ist,cancerMama,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
+      [trabalhoPartoPrematuro,cicloHho,sexualidade,ist,cancerMama,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
       books=[...byUrl.values()].map(book=>{
         const taxonomy=window.LuriaMedicalTaxonomy;
         if(!taxonomy)return book;
