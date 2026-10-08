@@ -8378,3 +8378,90 @@ iniciarApp();
   `;
   document.head.appendChild(style);
 })();
+
+
+/* LURIA PWA SIDEBAR FOOTER FIX v37 — 2026-10-08 */
+(function installLuriaPwaSidebarFooterFixV37(){
+  if(document.getElementById("luria-pwa-sidebar-footer-fix-v37"))return;
+  const style=document.createElement("style");
+  style.id="luria-pwa-sidebar-footer-fix-v37";
+  style.textContent=`
+    @media (max-width:980px){
+      html.pwa-standalone body #sidebar.sidebar{
+        box-sizing:border-box!important;
+        display:flex!important;
+        flex-direction:column!important;
+        height:100dvh!important;
+        min-height:0!important;
+        overflow:hidden!important;
+        padding-bottom:calc(148px + env(safe-area-inset-bottom))!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav,
+      html.pwa-standalone body #sidebar.sidebar .nav-study,
+      html.pwa-standalone body #sidebar.sidebar .nav-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .nav{
+        flex:1 1 auto!important;
+        min-height:0!important;
+        max-height:100%!important;
+        overflow-y:auto!important;
+        overflow-x:hidden!important;
+        overscroll-behavior:contain!important;
+        -webkit-overflow-scrolling:touch!important;
+        scrollbar-width:none!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .nav::-webkit-scrollbar{
+        display:none!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-study,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer-work,
+      html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .sidebar-footer{
+        position:absolute!important;
+        inset:auto 15px calc(12px + env(safe-area-inset-bottom)) 15px!important;
+        width:auto!important;
+        height:auto!important;
+        min-height:0!important;
+        margin:0!important;
+        padding:0!important;
+        display:flex!important;
+        flex-direction:column!important;
+        gap:8px!important;
+        align-items:stretch!important;
+        background:var(--sidebar)!important;
+        z-index:35!important;
+        overflow:visible!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .streak-mini,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .work-pcr-button,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .luria-mode-footer-switch{
+        position:relative!important;
+        inset:auto!important;
+        display:flex!important;
+        flex:0 0 auto!important;
+        width:100%!important;
+        min-width:0!important;
+        max-width:100%!important;
+        margin:0!important;
+        box-sizing:border-box!important;
+        transform:none!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .streak-mini,
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .work-pcr-button{
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        order:0!important;
+      }
+      html.pwa-standalone body #sidebar.sidebar .sidebar-footer .luria-mode-footer-switch{
+        height:58px!important;
+        min-height:58px!important;
+        max-height:58px!important;
+        order:1!important;
+        border:1px solid transparent!important;
+        box-shadow:0 8px 22px rgba(24,72,136,.14)!important;
+        background-clip:padding-box!important;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+})();
