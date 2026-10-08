@@ -35,7 +35,7 @@
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none}.book-outline-nav{display:flex;gap:5px;overflow-x:auto;padding-bottom:4px}.book-outline-link{flex:0 0 auto;white-space:nowrap;border-left:0;border-bottom:2px solid transparent}.book-outline-link.is-active{border-bottom-color:var(--accent)}.book-grid-2,.book-grid-3,.flow{grid-template-columns:1fr}.algorithm-row{grid-template-columns:1fr}.flow-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-14px}}
   .book-clinical-figure{margin:18px 0;padding:14px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}.book-clinical-figure img{display:block;max-width:100%;width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:8px}.book-clinical-figure figcaption{font-size:12px;line-height:1.6;margin-top:9px;color:var(--muted)}.book-clinical-figure a{color:var(--accent)} </style>
 </head>
-<body data-page="aprender" data-apostila-images="off">
+<body data-page="aprender">
 <div class="app-shell">
   <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
   <main class="main"><div class="page">
@@ -335,5 +335,6 @@
 (()=>{"use strict";const links=[...document.querySelectorAll(".book-outline-link")];const sections=links.map(a=>document.querySelector(a.getAttribute("href"))).filter(Boolean);const io=new IntersectionObserver(es=>{const v=es.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!v)return;links.forEach(a=>a.classList.toggle("is-active",a.getAttribute("href")==="#"+v.target.id));},{rootMargin:"-12% 0px -75% 0px",threshold:[0,.1,.25,.5]});sections.forEach(s=>io.observe(s));})();
 </script>
 <script defer src="/assets/js/pwa.js?v=6-apostilas-library-fix"></script>
+<script defer src="/assets/js/apostila-tools.js?v=20261007-gallery-nav-fix"></script>
 </body>
 </html>
