@@ -170,6 +170,7 @@
       content_url:"/apostilas/climaterio-menopausa/",
       created_at:"2026-10-07T15:18:00-03:00"
     };
+    const cancerMama={id:"cancer-mama-2026",area:"Ginecologia e Obstetrícia",materia:"Mastologia",tema:"Câncer de mama",titulo:"Câncer de mama",content_url:"/apostilas/cancer-de-mama/",created_at:"2026-10-07T22:40:00-03:00"};
     const cancerColo={
       id:"cancer-colo-hpv-2026",
       area:"Ginecologia e Obstetrícia",
@@ -293,7 +294,7 @@
         }
       }catch{}
       const byUrl=new Map();
-      [cicloHho,sexualidade,ist,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
+      [cicloHho,sexualidade,ist,cancerMama,cancerColo,climaterioMenopausa,hipertensaoGestacao,parto,somp,pilot,...remote].forEach(book=>{if(book.content_url&&!byUrl.has(book.content_url))byUrl.set(book.content_url,book)});
       books=[...byUrl.values()].map(book=>{
         const taxonomy=window.LuriaMedicalTaxonomy;
         if(!taxonomy)return book;
