@@ -423,14 +423,19 @@
             const { data: optimized, error: optimizeError } = await sb.functions.invoke("optimize-apostila-image", {
               body: { id }
             });
-            if (optimizeError) throw optimizeError;
+            if (optimizeError) {
+              let details = optimizeError.message || "Falha ao otimizar imagem";
+              try { const body = await optimizeError.context?.json?.(); details = body?.error || body?.message || details; } catch {}
+              throw new Error(details);
+            }
             if (!optimized?.ok || Number(optimized?.size_bytes || 0) > 112640) {
-              throw new Error("Não foi possível otimizar a imagem para até 110 KB.");
+              throw new Error(optimized?.error || "Não foi possível otimizar a imagem para até 110 KB.");
             }
             button.textContent = originalText;
           }
         }
 
+        button.textContent = action === "approve" ? "Salvando..." : "Rejeitando...";
         const { error } = await sb.rpc("admin_review_apostila_image", {
           p_id: id,
           p_decision: action === "approve" ? "approved" : "rejected"
@@ -440,6 +445,7 @@
       } catch (error) {
         console.error("Falha na curadoria de imagem da apostila:", error);
         button.disabled = false;
+        button.textContent = action === "approve" ? "Aprovar" : "Rejeitar";
         window.alert("Não foi possível salvar a decisão desta imagem: " + (error?.message || "erro desconhecido"));
       }
     });
