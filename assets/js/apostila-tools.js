@@ -22,17 +22,19 @@
     const pad=(parseFloat(cs.paddingTop)||0)+(parseFloat(cs.paddingBottom)||0);
     const fixed=(head?.offsetHeight||0)+(back?.offsetHeight||0)+(tools?.offsetHeight||0)+pad+6;
     const available=Math.max(120,outline.clientHeight-fixed);
-    const per=Math.max(12,Math.min(22,available/links.length));
-    nav.style.gridTemplateRows='repeat('+links.length+', minmax(0,1fr))';
+    const per=Math.max(18,Math.min(27,available/links.length));
+    nav.style.gridTemplateRows='none';nav.style.alignContent='start';nav.style.overflowY=links.length*per>available?'auto':'hidden';
     links.forEach(link=>{
       link.style.height=per+'px';
       link.style.minHeight='0';
-      link.style.fontSize=(per<15?'6.7':per<18?'7.2':per<20?'7.6':'8.1')+'px';
+      link.style.fontSize='9px';
       link.style.padding=per<16?'0 3px':'1px 4px';
     });
   };
 
   const outlineNav=document.querySelector('.book-outline-nav');
+  if(outlineNav){const max=20;const all=[...outlineNav.querySelectorAll('.book-outline-link')];if(all.length>max){all.filter((el,i)=>i>=max&&i<all.length-1).forEach(el=>{el.dataset.subnav='true';el.style.display='none';});}}
+
   if(outlineNav){
     const count=outlineNav.querySelectorAll('.book-outline-link').length||1;
     outlineNav.style.setProperty('--apostila-outline-count',String(count));
@@ -375,7 +377,7 @@
       card.dataset.apostilaImageId = String(row.id);
       card.innerHTML = `
         <div class="apostila-image-candidate-preview">
-          ${asset.src ? '<img src="' + esc(asset.src) + '" alt="' + esc(asset.alt || asset.caption || "Imagem candidata") + '">' : "<span>Sem prévia</span>"}
+          ${asset.src ? '<img loading="lazy" src="' + esc(asset.src) + '" alt="' + esc(asset.alt || asset.caption || "Imagem candidata") + '" onerror="this.style.display=\'none\';this.parentElement.insertAdjacentText(\'beforeend\',\'Imagem indisponível\')">' : "<span>Sem prévia</span>"}
         </div>
         <div class="apostila-image-candidate-body">
           <strong>${esc(asset.title || asset.caption_title || row.source_name || "Imagem candidata")}</strong>
@@ -477,13 +479,13 @@
   }
 
   async function boot() {
-    if (document.body?.getAttribute("data-apostila-images") === "off") {
+    if (document.body?.getAttribute("data-apostila-images") === "disabled-by-admin") {
       document.getElementById("apostila-image-curation")?.remove();
       document.querySelectorAll(".apostila-approved-pair,.apostila-approved-figure[data-apostila-approved-image]").forEach(node => node.remove());
       return;
     }
     sb = window.supabaseClient;
-    if (!sb) return;
+    if (!sb) { setTimeout(() => { sb = window.supabaseClient; if(sb) boot().catch(console.warn); }, 1200); return; }
 
     try {
       if (window.docmapIsAdmin === true) {
@@ -492,6 +494,7 @@
         const { data: sessionData } = await sb.auth.getSession();
         if (!sessionData?.session) {
           isAdmin = false;
+          await loadRows();
           return;
         }
 
