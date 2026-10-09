@@ -3,8 +3,8 @@
    library, import and creation remain governed by their existing styles. */
 @media (min-width:981px){
  body[data-page="flashcards"]:not(.flash-review-session-active) .luria-page-spotlight{
-   min-height:76px!important;height:76px!important;max-height:76px!important;
-   padding:14px 24px!important;margin-bottom:8px!important;
+   min-height:138px!important;height:138px!important;max-height:138px!important;
+   padding:24px 28px!important;margin-bottom:14px!important;
    border-radius:15px!important;box-sizing:border-box!important;
  }
  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
