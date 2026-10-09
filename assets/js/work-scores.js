@@ -626,9 +626,26 @@
   };
 
 
+  function validateScoreInputs(ids){
+    const fields=ids.map(id=>$("#"+id));
+    if(fields.some(field=>!field||field.value.trim()==="")){
+      setResult("—","Preencha todos os campos.","");return false;
+    }
+    const invalid=fields.some(field=>{
+      if(field.validity&& !field.validity.valid)return true;
+      if(field.type!=="number")return false;
+      const value=Number(field.value);
+      return !Number.isFinite(value)
+        || (field.min!==""&&field.min!=null&&value<Number(field.min))
+        || (field.max!==""&&field.max!=null&&value>Number(field.max));
+    });
+    if(invalid){setResult("—","Valores fora da faixa válida dos campos.","");return false;}
+    return true;
+  }
+
   function calcHints(){
     const ids=["h_avs","h_nys","h_hit","h_ntype","h_skew"];
-    if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.","");
+    if(!validateScoreInputs(ids)) return;
     if(+$("#h_avs").value!==1 || +$("#h_nys").value!==1){
       return setResult("Não aplicável","O HINTS não deve ser interpretado fora da síndrome vestibular aguda contínua com nistagmo espontâneo.","Use outro raciocínio diagnóstico para vertigem episódica, posicional ou sem nistagmo espontâneo.");
     }
@@ -641,7 +658,7 @@
 
   function calcFramingham(){
     const ids=["f_age","f_sex","f_tc","f_hdl","f_sbp","f_tx","f_smoke","f_dm"];
-    if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.","");
+    if(!validateScoreInputs(ids)) return;
     const age=+$("#f_age").value, sex=$("#f_sex").value, tc=+$("#f_tc").value, hdl=+$("#f_hdl").value, sbp=+$("#f_sbp").value;
     if(age<30||age>74||tc<=0||hdl<=0||sbp<=0) return setResult("—","Valores fora da faixa válida do modelo.","Framingham 2008 foi derivado para adultos de 30–74 anos.");
     const tx=+$("#f_tx").value, smoke=+$("#f_smoke").value, dm=+$("#f_dm").value;
@@ -660,7 +677,7 @@
   }
 
   function calcGrace(){
-    const ids=["gr_age","gr_hr","gr_sbp","gr_cr","gr_k","gr_ca","gr_st","gr_bio"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
+    const ids=["gr_age","gr_hr","gr_sbp","gr_cr","gr_k","gr_ca","gr_st","gr_bio"]; if(!validateScoreInputs(ids)) return;
     const age=+$("#gr_age").value, hr=+$("#gr_hr").value, sbp=+$("#gr_sbp").value, cr=+$("#gr_cr").value;
     const ageP=age<30?0:age<40?8:age<50?25:age<60?41:age<70?58:age<80?75:age<90?91:100;
     const hrP=hr<50?0:hr<70?3:hr<90?9:hr<110?15:hr<150?24:hr<200?38:46;
@@ -673,7 +690,7 @@
 
   function calcPsi(){
     const ids=["p_age","p_sex","p_nh","p_ca","p_liv","p_hf","p_cvd","p_renal","p_ams","p_rr","p_sbp","p_temp","p_hr","p_ph","p_bun","p_na","p_glu","p_hct","p_o2","p_eff"];
-    if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
+    if(!validateScoreInputs(ids)) return;
     let n=+$("#p_age").value;
     if($("#p_sex").value==="f") n-=10;
     for(const id of ids.slice(2)) n+=Number($("#"+id).value);
@@ -688,7 +705,7 @@
   }
 
   function calcNews2(){
-    const ids=["n_rr","n_spo2","n_scale","n_o2","n_sbp","n_hr","n_cns","n_temp"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
+    const ids=["n_rr","n_spo2","n_scale","n_o2","n_sbp","n_hr","n_cns","n_temp"]; if(!validateScoreInputs(ids)) return;
     const rr=+$("#n_rr").value, sp=+$("#n_spo2").value, scale=+$("#n_scale").value, o2=+$("#n_o2").value, sbp=+$("#n_sbp").value, hr=+$("#n_hr").value, cns=+$("#n_cns").value, t=+$("#n_temp").value;
     const rrP=rr<=8?3:rr<=11?1:rr<=20?0:rr<=24?2:3;
     let spP=0;
@@ -708,7 +725,7 @@
   }
 
   function calcMeld(){
-    const ids=["m_bili","m_inr","m_cr","m_na","m_dial"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
+    const ids=["m_bili","m_inr","m_cr","m_na","m_dial"]; if(!validateScoreInputs(ids)) return;
     let bili=Math.max(1,+$("#m_bili").value), inr=Math.max(1,+$("#m_inr").value), cr=Math.max(1,+$("#m_cr").value);
     if(+$("#m_dial").value===1) cr=4; cr=Math.min(4,cr);
     let meld=10*(0.957*Math.log(cr)+0.378*Math.log(bili)+1.120*Math.log(inr)+0.643);
@@ -720,7 +737,7 @@
   }
 
   function calcGBS(){
-    const ids=["g_bun","g_sex","g_hb","g_sbp","g_hr","g_mel","g_syn","g_liv","g_hf"]; if(ids.some(id=>$("#"+id).value==="")) return setResult("—","Preencha todos os campos.");
+    const ids=["g_bun","g_sex","g_hb","g_sbp","g_hr","g_mel","g_syn","g_liv","g_hf"]; if(!validateScoreInputs(ids)) return;
     const bun=+$("#g_bun").value, sex=$("#g_sex").value, hb=+$("#g_hb").value, sbp=+$("#g_sbp").value;
     let n=0;
     n += bun>=70?6:bun>=28?4:bun>=22.4?3:bun>=18.2?2:0;

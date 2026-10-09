@@ -792,7 +792,7 @@
         throw new Error("Leitor de PDF não carregado.");
       }
 
-      const doc=await window.pdfjsLib.getDocument({data:bytes.slice()}).promise;
+      const doc=await window.pdfjsLib.getDocument({isEvalSupported: false,data:bytes.slice()}).promise;
       const pages=host.querySelector("[data-onboarding-pdf-pages]");
       pages.innerHTML="";
 

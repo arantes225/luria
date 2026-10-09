@@ -4439,6 +4439,7 @@ async function extractQuestionsFromPdf(
   const pdf =
     await window.pdfjsLib
       .getDocument({
+        isEvalSupported: false,
         data: buffer
       })
       .promise;
@@ -9411,6 +9412,7 @@ async function extractOfficialAnswerKeyFromPdfBlob(
   const pdf =
     await window.pdfjsLib
       .getDocument({
+        isEvalSupported: false,
         data: buffer
       })
       .promise;

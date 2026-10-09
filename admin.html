@@ -566,17 +566,82 @@
               <div class="admin-qf-prompt-wrap">
                 <button class="button secondary admin-qf-copy" type="button" data-copy-target="qf-prompt-generate">Copiar prompt</button>
                 <pre id="qf-prompt-generate" class="admin-qf-prompt">CONTRATO LURIA 3.8
-REVISÃO CEGA OBRIGATÓRIA: ignore completamente memória do modelo, conversas anteriores, pareceres, scores e conclusões de outras etapas. Avalie somente a versão atual e fontes verificáveis; priorize Ministério da Saúde e sociedades brasileiras pertinentes.
 Exatamente quatro alternativas A-D em TODAS as bancas; nunca penalizar essa adaptação.
 Uma única melhor resposta; dados suficientes; contexto coerente; conteúdo autoral.
-Todas as explicações A-D devem justificar especificamente a opção. Distratores do mesmo eixo, baseados em erros plausíveis e elimináveis pelos dados.
-Dificuldade depende do raciocínio exigido e da competição entre alternativas. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
+PULO DO GATO OBRIGATÓRIO: toda questão deve conter mensagem_chave preenchida como o “Pulo do Gato” — UMA frase curta, específica e memorável que, se o aluno tivesse acabado de ouvir antes da prova, seria suficiente para levá-lo à resposta correta daquela questão. Não escrever resumo genérico, definição ampla, repetição do gabarito ou conselho vago; capturar exatamente o discriminador decisivo do item.
+EXPLICAÇÃO OBRIGATÓRIA DAS ALTERNATIVAS: explicar individualmente por que a alternativa correta está certa E por que cada uma das outras três está errada naquele caso. As explicações A-D devem ser específicas para a vinheta, o comando e a alternativa, deixando claro o dado que confirma a correta e o erro clínico/conceitual de cada distrator. “Incorreta”, “não é a melhor” ou justificativa genérica não são aceitas.
+HARD REJECT 10 — PULO DO GATO / EXPLICAÇÕES INCOMPLETAS: se mensagem_chave estiver vazia, genérica, não permitiria acertar o item após ser ouvida, ou se qualquer uma das explicações A-D não disser concretamente por que aquela opção está certa/errada, o item não pode ser aprovado e deve voltar para correção.
+RELATÓRIO QUESTÃO POR QUESTÃO OBRIGATÓRIO: toda etapa de revisão, auditoria, reauditoria ou revisão final deve produzir também uma seção humana sequencial, um item por linha/bloco, sem agrupar questões. Formato mínimo: “42 — REJEITADA — motivo: ...”, “43 — APROVADA — motivo: ...” ou “44 — REVISAR — motivo: ...”. Sempre usar número/ID da questão, status explícito e motivo concreto. Não aceitar apenas totais agregados. Mesmo quando o JSON estruturado já contiver reviews[], repetir um resumo legível questão por questão para facilitar conferência humana.
+STATUS PADRÃO DO RELATÓRIO POR ITEM: APROVADA | REVISAR | REJEITADA. Se REJEITADA, indicar o hard reject ou falha principal; se REVISAR, dizer exatamente o que precisa mudar; se APROVADA, registrar brevemente por que passou.
+Distratores devem permanecer no mesmo eixo decisório e representar erros médicos reais, próximos e plausíveis; não fabricar uma resposta madura contra três caricaturas.
+CONCORRENTE FORTE OBRIGATÓRIO: em item médio/difícil, pelo menos um distrator deve continuar defensável após a leitura completa até que um dado discriminativo específico o derrube. Associação apenas temática não conta.
+REGRA DE SOBREVIVÊNCIA MÍNIMA: além da correta, pelo menos DOIS distratores devem permanecer plausíveis após leitura superficial de comando + alternativas e só devem cair após uso de um dado funcional específico da vinheta. Se apenas um concorrente sobrevive e dois distratores morrem cedo, REJEITAR e regenerar as alternativas.
+GATE DE DISTRATORES: antes de aceitar o item, verificar se pelo menos dois incorretos poderiam ser considerados por candidato parcialmente preparado e só caem por dado, indicação, timing, prioridade, contraindicação, sequência ou nuance técnica. Se 2–3 opções caem por absurdo, negligência, categoria incompatível ou linguagem denunciadora, REESCREVER.
+TESTE CEGO DAS ALTERNATIVAS: antes de ler a vinheta, o revisor deve tentar prever a chave apenas pelo comando + opções. Se a forma, sofisticação, prudência ou completude apontar a correta com confiança média/alta, rejeitar automaticamente.
+BLIND-OPTIONS HARD REJECT: o teste comando + alternativas sem vinheta é eliminatório. Se a chave puder ser prevista com confiança média/alta por completude, prudência, condicionalidade, número de ações, tecnicidade ou sofisticação textual, o item é REJECTED; não registrar como mera observação de estilo.
+PASSE CEGO OBRIGATÓRIO DAS OPÇÕES: apresentar ao revisor apenas comando + alternativas, sem vinheta. Se ele conseguir prever a chave com confiança alta por sofisticação, extensão, prudência, cautela ou completude textual, REJEITAR e regenerar SOMENTE as alternativas.
+HARD REJECT 1 — SURFACE GUESS: o revisor independente deve examinar comando + alternativas sem usar a vinheta. Se surface_guess_without_vignette == gabarito com confiança média ou alta, o item é REJECTED, não apenas needs_revision. Regenerar as alternativas do zero e submeter novamente à revisão.
+VALIDADOR DE ASSIMETRIA ESTRUTURAL: rejeitar automaticamente quando a correta for a única alternativa com linguagem de avaliação/consideração/monitorização/individualização, ressalva condicional, combinação de duas ações ou maior completude técnica, enquanto os distratores forem mais curtos, absolutos ou unidimensionais.
+HARD REJECT 2 — ASSIMETRIA LEXICAL: se lexical_asymmetry == FAIL, o item é REJECTED. Não corrigir apenas trocando uma palavra; regenerar o conjunto de alternativas preservando o eixo clínico. Exceção somente quando o absoluto for exatamente o conhecimento científico avaliado e o revisor registrar justificativa explícita.
+HARD REJECT 5 — ELIMINAÇÃO SUPERFICIAL: se DUAS OU MAIS alternativas puderem ser descartadas sem uso material dos dados funcionais da vinheta, por absurdo, categoria errada, negligência, extremismo, incompletude grosseira ou tom formal, o item é REJECTED e deve ser regenerado. Exceção: item fácil deliberadamente direto, desde que as quatro alternativas permaneçam clinicamente homogêneas e sem caricaturas.
+HARD REJECT 6 — ASSIMETRIA DE SOFISTICAÇÃO: comparar correta versus distratores em comprimento, cautela, condicionalidade, tecnicidade, completude e número de ações. Se a chave for a única alternativa claramente mais madura, individualizada, protetora ou tecnicamente completa, o item é REJECTED e as alternativas devem ser regeneradas.
+GATE DE ESPECIFICIDADE: quando os dados permitem decisão concreta, não aceitar chave protetora/genérica como &#x27;tratamento adequado&#x27;, &#x27;reversão apropriada&#x27;, &#x27;avaliar e tratar conforme gravidade&#x27; ou &#x27;escalonar conforme controle&#x27;. Cobrar a decisão discriminativa.
+DISTRATORES DO MESMO NÓ DECISÓRIO: priorizar erros de limiar, timing, indicação parcialmente satisfeita, prioridade invertida, interpretação errada de dado funcional ou sequência terapêutica incorreta. Evitar condutas genericamente ruins ou apenas tematicamente relacionadas.
+HARD REJECT 3 — CONTRAFACTUAL: em item médio/difícil, se o melhor distrator só se tornar correto mediante mudança do diagnóstico inteiro, alteração da própria alternativa ou cenário distante, o item é REJECTED. Exigir pequena mudança clinicamente plausível da vinheta que torne o melhor distrator correto ou claramente mais defensável.
+HARD REJECT 7 — SBA INDEPENDENTE: um segundo resolvedor independente deve responder sem conhecer a chave. Se independent_answer != gabarito, suspender automaticamente o item para revisão científica/SBA; nunca assumir que o resolvedor errou. Se houver mais de uma estratégia clinicamente aceita sem dado de desempate explícito, REJECTED.
+FUNCTIONAL_KILLER OBRIGATÓRIO: para os dois melhores distratores, registrar explicitamente functional_killer_1 e functional_killer_2 no parecer. Cada campo deve citar um dado concreto da vinheta e completar a frase “esta alternativa seria defensável, exceto porque a vinheta informa ___”. Campo vazio, genérico ou baseado apenas em regra abstrata = REJECTED.
+HARD REJECT 8 — DADO DE ELIMINAÇÃO DOS DOIS MELHORES DISTRATORES: para cada um dos dois melhores distratores, o revisor deve completar “esta alternativa só cai porque a vinheta informa ___”. Se não houver dado específico e funcional para ambos, REJECTED.
+HARD REJECT 9 — MÚLTIPLAS CORRETAS: se a defesa da chave depender apenas de “mais usual”, “mais completa”, “em geral preferível” ou preferência entre estratégias aceitas, REJECTED; fechar melhor o cenário antes de nova revisão.
+HARD REJECT 4 — DEPENDÊNCIA DA VINHETA: em item médio/difícil, se vignette_dependency == FAIL ou se nenhum dado concreto explicar por que a chave vence o melhor distrator, o item é REJECTED. Cada dado destacado deve apoiar/afastar diagnóstico ou mudar gravidade, prioridade, indicação, contraindicação, timing, sequência, cálculo ou decisão.
+GATE DE PADRÃO CLÁSSICO: item moderado/difícil não pode se resumir a achado clássico → resposta clássica contra três absurdos. A dificuldade deve emergir de alternativas concorrentes e contexto, não do nome do tema.
+GATE DE LOTE: depois da validação individual, um revisor deve procurar padrões transversais de quadro clássico + conduta óbvia, correta madura contra três extremos, universalizadores concentrados nos distratores, mesma operação cognitiva, mesmo nível de atenção e esqueleto semântico repetido. Se o padrão aparecer em série, reescrever os itens responsáveis mesmo que isoladamente sejam aceitáveis. Não usar quotas universais.
+GATE DE POSIÇÃO: a letra correta é atributo de apresentação, não identidade editorial. Em LOTES DE CALIBRAÇÃO com 15 itens, depois de fechar integralmente conteúdo e alternativas, reordenar SOMENTE as posições para que o gabarito siga exatamente A-B-C-D-A-B-C-D-A-B-C-D-A-B-C. Nunca alterar o conteúdo médico para fabricar a letra. No site, as questões poderão ser misturadas posteriormente.
+Dificuldade depende do raciocínio exigido e da competição entre alternativas, e deve ser atribuída/revalidada somente após o item completo. Não usar tema, gravidade, quantidade de dados ou contagem rígida de &#x27;etapas cognitivas&#x27; como proxy. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
 Estilo vem de cadernos oficiais do processo-alvo; ciência vem de fontes científicas independentes. Edital sozinho não demonstra arquitetura dos itens.
 Não inventar documento, edição, URL, seção, dados de corpus ou característica de banca. Falta de acesso = SOURCE_VERIFICATION_PENDING; falta de corpus = NEEDS_MORE_PRIMARY_STYLE_DATA; ambas impedem declarar aprovação correspondente.
 Usar fonte atual aplicável à pergunta e ao cenário brasileiro. Fonte internacional adequada não perde pontos por nacionalidade. Conflitos entre recomendações exigem contexto explícito que assegure resposta única.
-CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=94/100 na saída bruta inédita, antes de correções; não confundir com style_score.
-QUESTÃO FINAL: quality_score &gt;=95/100, style &gt;=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
+CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=84/100 na saída bruta inédita, antes de correções; não confundir com style_score.
+ROTEAMENTO FINAL SIMPLIFICADO: use a menor nota entre resolução cega e revisão independente do bloco. Nota &gt;86 e sem erro clínico = entra direto no lote; nota entre 50 e 86, inclusive, ou qualquer pendência clínica = nova revisão; nota &lt;50 = exclusão direta com arquivamento. Hard fail, ambiguidade e inconsistência de gabarito devem reduzir a nota e nunca ser mascarados por pontuação artificial.
 Feedback sobre distratores, clareza e segurança pode melhorar regras gerais; só alterar a identidade da banca com evidência primária documentada.
+MODOS DE EXECUÇÃO DAS ETAPAS CHATGPT:
+- MODO OPERACIONAL POR ENDEREÇO: quando o prompt trouxer ENDEREÇO OPERACIONAL com lote/bloco concretos e instruir acesso ao Admin/Supabase autorizado, a FONTE DE VERDADE é a versão ATUAL lida nesse endereço. O ChatGPT deve entrar no workspace indicado, localizar exatamente batch_code + block_code e trabalhar somente nas questões/item_version vigentes e pendentes daquela etapa.
+- MODO MANUAL POR JSON: somente quando o prompt trouxer explicitamente INPUT_JSON, INPUT_JSON_CEGO ou pacote manual colado, a FONTE DE VERDADE passa a ser exclusivamente esse JSON. Nesse modo, não buscar complementos no Admin/Supabase.
+- Nunca misturar os dois modos na mesma execução.
+- Em qualquer modo, NÃO usar memória, snippets, anexos antigos, arquivos anteriores ou histórico da conversa como substituto da fonte de verdade atual.
+- Antes de auditar, confirmar batch_code, block_code, question_id e item_version/version da fonte escolhida.
+- Preserve exatamente question_id + item_version/version recebidos/lidos.
+- Se o modo operacional estiver sem acesso autorizado, informe ACCESS_REQUIRED; nunca peça senha, token, anon key, service_role, JWT ou credencial.
+- Se o modo manual estiver truncado/estruturalmente inválido, informe JSON_INPUT_INVALID com o problema concreto.
+- O resultado de etapa manual deve ser devolvido como um único JSON completo, pronto para “Colar JSON de resposta”.
+- stage_metrics, totais agregados e relatório textual NÃO substituem reviews individuais exigidos pela etapa.
+- Nunca invente persistência, receipt_id, coverage ou conclusão administrativa.
+TELEMETRIA OBRIGATÓRIA POR ETAPA: toda saída JSON deve incluir um objeto top-level stage_metrics. Ele é lido pelo Admin e persistido no Supabase para atualizar o dashboard automaticamente. Preencher com dados REAIS da etapa; nunca estimar contagens. Estrutura obrigatória:
+stage_metrics = {
+  exam_style: banca atual,
+  batch_number: lote atual ou null,
+  batch_code: ID humano do lote no formato L001 quando houver lote,
+  block_number: bloco atual ou null,
+  block_code: ID humano do bloco no formato L001-B01 quando houver bloco,
+  stage: nome exato da etapa,
+  provider: ChatGPT | revisor independente | Human,
+  run_label: identificador curto opcional da rodada/parte,
+  total_count: quantidade realmente processada nesta resposta,
+  approved_count: quantidade aprovada nesta etapa,
+  needs_revision_count: quantidade que precisa revisão,
+  rejected_count: quantidade rejeitada,
+  hard_reject_count: quantidade com hard reject,
+  agreement_count: quantidade em que resposta independente concordou com o gabarito quando aplicável,
+  score: nota agregada REAL da etapa quando existir, senão null,
+  status: estado agregado da etapa,
+  metrics: objeto livre com métricas adicionais úteis,
+  notes: resumo operacional curto
+}.
+TELEMETRIA / DESTINO:
+- Se provider=revisor independente, incluir stage_metrics no MESMO JSON final devolvido ao usuário.
+- Para revisor independente, NÃO tentar gravar stage_metrics nem reviews no Supabase e NÃO gerar bridge_write/receipt_id. A resposta deve ser apenas o JSON completo pronto para colar no Admin.
+- Se provider=ChatGPT e o ambiente administrativo tiver acesso autorizado ao Supabase, a telemetria pode continuar usando SOMENTE a função controlada private.qf_record_stage_metrics(...), conforme o fluxo interno.
+- Nunca fazer INSERT/UPDATE/DELETE direto para telemetria ou reviews fora dos importadores administrativos autorizados.
+- Nunca pedir, imprimir, armazenar ou inventar service_role, senha, token, anon key, publishable key, JWT ou chave do Supabase.
 JSON válido é o contrato máquina-a-máquina. Não preencher aprovações, fontes verificadas ou notas sem executar a avaliação. IDs são imutáveis; toda revisão informa item_version e toda correção informa expected_version.
 
 BANCA: INFORMAR BANCA CADASTRADA
@@ -592,25 +657,81 @@ FONTES CIENTÍFICAS
 Documento primário atual que sustente a decisão exata, incluindo seção quando verificável.
 PONTO DE PARTIDA PARA CORPUS (não equivale a prova analisada): a localizar
 CORPUS VERIFICADO: []
-Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade. Campos históricos de extensão, incidência e dificuldade só viram regras após conferência no corpus.
-Antes de gerar: registrar edição, URL oficial, IDs/páginas dos itens analisados, n amostrado, comprimento em palavras, formatos, operações cognitivas, alternativas e limites da amostra. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes. Se insuficiente, retornar pendência de calibração, sem prometer fidelidade.
-TAREFA: gerar bloco administrativo de EXATAMENTE 200 questões em UMA ÚNICA EXECUÇÃO E UMA ÚNICA SAÍDA. É PROIBIDO fracionar em partes de 20, partes menores, continuações ou respostas sucessivas. A resposta só é considerada concluída quando contiver as 200 questões completas, com IDs, sequência 1–200, campos obrigatórios e validação final do bloco.
-Antes da produção, exigir relatório de calibração bruta FINAL_PROMPT_SCORE &gt;=94 e corpus documentado. Se ausente, realizar calibração ou informar exatamente o que falta; não substituir por nota de questão corrigida.
+ESTADO DE CALIBRAÇÃO: {}
+Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade.
+Se prompt_calibration.status == &quot;CALIBRATED_FROZEN&quot; OU prompt_calibration.identity_status == &quot;FROZEN&quot; OU (prompt_calibration.decision == &quot;PROMPT_APPROVED&quot; e final_prompt_score &gt;=84), o perfil já é canônico para produção: NÃO reabrir calibração, NÃO exigir novo corpus antes de gerar e NÃO alterar identidade editorial por resultados do lote em produção. O corpus pode ser enriquecido depois sem bloquear produção.
+Somente perfis ainda não aprovados devem registrar edição, URL oficial, IDs/páginas, n amostrado, formatos e limites da amostra antes de declarar fidelidade. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes.
+ENDEREÇO OPERACIONAL — OBRIGATÓRIO E IMUTÁVEL
+Workspace/site: https://www.resibulando.online/admin/
+Endereço operacional: NÃO VINCULADO — PROMPT MODELO; NÃO EXECUTAR
+Lote: NÃO VINCULADO
+Bloco: NÃO APLICÁVEL
+Etapa: generation
+
+TRAVA DE ESCOPO:
+- Você está autorizado a atuar EXCLUSIVAMENTE no endereço operacional acima.
+- Prompt-modelo sem lote/bloco vinculado: não executar nem persistir até receber endereço operacional concreto.
+- Sem destino operacional: não gravar nada.
+- IDs, lote, bloco e versões presentes no JSON/ambiente atual prevalecem sobre exemplos do prompt.
+- Nunca invente leitura, gravação, versão, receipt_id ou confirmação.
+
+PERSISTÊNCIA DESTA ETAPA:
+- Persistir no destino próprio da etapa sem misturar parecer independente com conteúdo canônico.
+- Pareceres externos não podem sobrescrever a questão principal sem adjudicação explícita do ChatGPT.
+
+TAREFA: gerar o bloco administrativo COMPLETO de 200 questões em uma única execução. Não dividir em partes de 20, não fracionar a entrega e não encerrar antes de produzir e validar as 200 questões. Preservar IDs, sequência 1–200, cobertura planejada e conferência final integral do bloco.
+Antes da produção, verificar o estado do perfil. Se estiver CALIBRATED_FROZEN/PROMPT_APPROVED com FINAL_PROMPT_SCORE &gt;=84, usar o perfil congelado e iniciar produção sem reabrir calibração. Só exigir nova calibração/corpus quando a banca ainda não estiver aprovada.
 Definir matriz de cobertura a partir da prova-alvo; não impor sete áreas ENAMED nem quotas universais a outras bancas. Frequências observadas orientam o conjunto, sem criar sequência temática artificial.
-Gerar problema completo, alternativas e explicações A-D. Incluir mensagem-chave, área, tema, subtema e dificuldade justificada. Fonte geral e fonte específica do gabarito: instituição, documento, ano, URL real, seção quando disponível e nota de suporte.
+MÉTODO DE CONSTRUÇÃO ADAPTATIVO:
+1. Primeiro definir a operação cognitiva e a dificuldade pretendida conforme o perfil da banca.
+2. Item fácil/direto pode cobrar conhecimento técnico legítimo sem fabricar disputa artificial; ainda assim, alternativas devem ser homogêneas e não caricatas.
+3. Item médio/difícil deve conter uma disputa real entre pelo menos duas alternativas plausíveis do mesmo eixo.
+4. Nos itens médios/difíceis, definir 2–3 dados funcionalmente necessários que façam a correta superar o melhor distrator; evitar um único marcador praticamente determinístico.
+5. Criar os demais distratores no mesmo eixo, baseados em erros médicos reais.
+6. Rodar teste contrafactual do melhor distrator nos itens médios/difíceis.
+7. Rodar teste adversarial sem vinheta; se a chave for previsível por forma, reescrever alternativas antes da saída.
+8. Classificar a dificuldade somente depois do item completo, pela integração exigida e pela competição entre alternativas.
+Gerar então problema completo, alternativas e explicações A-D. Para cada item:
+- mensagem_chave = PULO DO GATO: uma única frase curta que contém o ponto discriminativo que faria o aluno acertar a questão se tivesse acabado de ouvi-la;
+- explicacao da alternativa correta: dizer por que está certa com base na vinheta;
+- explicacao de cada alternativa incorreta: dizer por que está errada especificamente naquele caso e qual detalhe impediria escolhê-la.
+Incluir também área, tema, subtema e dificuldade justificada. Fonte geral e fonte específica do gabarito: instituição, documento, ano, URL real, seção quando disponível e nota de suporte.
 Identificar duplicatas por decisão/conceito e cenário, além de similaridade lexical; não apenas trocar idade ou nomes.
+DIVERSIDADE TEMÁTICA OBRIGATÓRIA DO BLOCO: as 200 questões devem variar de forma real entre áreas, temas, subtemas, cenários, decisões clínicas e operações cognitivas compatíveis com o perfil da banca. É proibido concentrar o bloco em poucos assuntos quando o perfil/corpus da banca tiver maior amplitude.
+- Construir antes da geração uma matriz de cobertura temática do bloco.
+- Evitar repetição sequencial do mesmo tema/subtema.
+- Não reutilizar a mesma doença, decisão clínica, armadilha, estrutura de caso ou eixo terapêutico em série.
+- Nenhum tema deve dominar o bloco sem justificativa explícita no perfil da banca/corpus primário.
+- Quando houver múltiplas áreas oficiais ou recorrentes na prova-alvo, todas devem aparecer em proporção compatível com a evidência disponível.
+- Dentro de uma mesma área, variar entre diagnóstico, conduta, prevenção, rastreamento, interpretação de exames, complicações, farmacologia, seguimento e raciocínio prognóstico quando aplicável.
+- Repetir um assunto só é aceitável se a banca realmente o cobra com alta frequência E se os itens exigirem decisões clínicas diferentes.
+- Se a matriz final revelar concentração excessiva, repetição de subtema ou blocos temáticos em sequência, o lote FALHA e deve ser rebalanceado antes da entrega.
+Gerar cada questão de forma independente. Não reutilizar caso-base, esqueleto semântico, conjunto de alternativas ou transformação mecânica entre bancas ou dentro do lote.
+Antes de entregar cada item, o GERADOR executa apenas uma pré-checagem. A aprovação depende de REVISÃO ADVERSARIAL INDEPENDENTE: o revisor não recebe a justificativa interna do gerador como autoridade e testa formal cueing, assimetria lexical, melhor distrator, contrafactual, dependência da vinheta, single-best-answer e dificuldade observada. Qualquer HARD REJECT impede entrada no lote. A versão rejeitada não pode ser exportada para auditoria externa. Regenerar o conjunto de alternativas e, se necessário, a vinheta; a nova versão volta a uma nova revisão adversarial. Só entra no lote quando surface_guess não acerta a chave com confiança média/alta, lexical_asymmetry=PASS, contrafactual=PASS e vignette_dependency=PASS (para médio/difícil), além de single-best-answer=PASS.
+Após fechar o conteúdo, embaralhar a posição da alternativa correta sem alterar seu texto.
+PRÉ-FLIGHT DE LOTE antes da saída:
+- validar diversidade temática real das 200 questões contra a matriz de cobertura planejada;
+- contar distribuição por área, tema e subtema e detectar concentração excessiva;
+- reprovar o bloco se houver repetição mecânica do mesmo assunto, cenário, doença, decisão clínica ou estrutura de caso;
+- confirmar que questões consecutivas não formam sequências artificiais do mesmo tema, salvo se isso reproduzir explicitamente o perfil da prova-alvo;
+- para lote de calibração com 15 itens, aplicar exatamente A-B-C-D-A-B-C-D-A-B-C-D-A-B-C por reordenação das alternativas após fechamento semântico;
+- validar automaticamente essa sequência antes da saída; se houver divergência, corrigir SOMENTE a posição das opções;
+- verificar se o lote contém variedade real de dificuldade compatível com o perfil; se a banca prevê parte intermediária-alta e todos os itens forem fáceis/baixa-média, o lote FALHA;
+- verificar se itens médios/difíceis têm pelo menos um concorrente forte e 2–3 dados funcionais; se não, regenerar esses itens;
+- em MBE quantitativa, quando o perfil exigir aplicação, preferir cálculo + interpretação de magnitude/implicação, não mera aritmética.
 SAÍDA (preencher os dados reais; null em lote/bloco exige identificação antes de importar):
 {
   &quot;schema_version&quot;: &quot;2.0&quot;,
   &quot;batch&quot;: {
     &quot;schema_version&quot;: &quot;2.0&quot;,
     &quot;batch_number&quot;: null,
+    &quot;batch_code&quot;: null,
     &quot;block_number&quot;: null,
+    &quot;block_code&quot;: null,
+    &quot;operational_address&quot;: null,
     &quot;exam_style&quot;: null,
     &quot;question_count&quot;: 200,
-    &quot;part_number&quot;: 1,
-    &quot;part_count&quot;: 1,
-    &quot;profile_version&quot;: &quot;2.0&quot;,
+    &quot;profile_version&quot;: &quot;3.8&quot;,
     &quot;reference_exam_years&quot;: [],
     &quot;generation_status&quot;: &quot;generated&quot;
   },
@@ -656,6 +777,26 @@ SAÍDA (preencher os dados reais; null em lote/bloco exige identificação antes
     &quot;expected&quot;: 200,
     &quot;delivered&quot;: 0,
     &quot;complete&quot;: false
+  },
+  &quot;stage_metrics&quot;: {
+    &quot;exam_style&quot;: null,
+    &quot;batch_number&quot;: null,
+    &quot;block_number&quot;: null,
+    &quot;stage&quot;: &quot;generation&quot;,
+    &quot;provider&quot;: &quot;ChatGPT&quot;,
+    &quot;run_label&quot;: &quot;bloco-completo-200&quot;,
+    &quot;total_count&quot;: 0,
+    &quot;approved_count&quot;: 0,
+    &quot;needs_revision_count&quot;: 0,
+    &quot;rejected_count&quot;: 0,
+    &quot;hard_reject_count&quot;: 0,
+    &quot;agreement_count&quot;: 0,
+    &quot;score&quot;: null,
+    &quot;status&quot;: &quot;generated_complete&quot;,
+    &quot;metrics&quot;: {
+      &quot;expected_count&quot;: 200
+    },
+    &quot;notes&quot;: &quot;&quot;
   }
 }
 Validar quantidade, IDs, sequências 1–200 e posição global, A-D, campos obrigatórios, fontes, coerência e duplicatas. Nunca preencher status approved/published. Excel apenas quando solicitado para revisão humana.</pre>
@@ -667,17 +808,82 @@ Validar quantidade, IDs, sequências 1–200 e posição global, A-D, campos obr
               <div class="admin-qf-prompt-wrap">
                 <button class="button secondary admin-qf-copy" type="button" data-copy-target="qf-prompt-perplexity-block">Copiar prompt</button>
                 <pre id="qf-prompt-perplexity-block" class="admin-qf-prompt">CONTRATO LURIA 3.8
-REVISÃO CEGA OBRIGATÓRIA: ignore completamente memória do modelo, memória da conta, conversas anteriores, pareceres, scores, correções, status e conclusões de outras etapas. Avalie somente a versão atual como inédita. A memória do modelo não é fonte; dúvidas científicas devem ser verificadas em fontes atuais, priorizando Ministério da Saúde e sociedades brasileiras pertinentes.
 Exatamente quatro alternativas A-D em TODAS as bancas; nunca penalizar essa adaptação.
 Uma única melhor resposta; dados suficientes; contexto coerente; conteúdo autoral.
-Todas as explicações A-D devem justificar especificamente a opção. Distratores do mesmo eixo, baseados em erros plausíveis e elimináveis pelos dados.
-Dificuldade depende do raciocínio exigido e da competição entre alternativas. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
+PULO DO GATO OBRIGATÓRIO: toda questão deve conter mensagem_chave preenchida como o “Pulo do Gato” — UMA frase curta, específica e memorável que, se o aluno tivesse acabado de ouvir antes da prova, seria suficiente para levá-lo à resposta correta daquela questão. Não escrever resumo genérico, definição ampla, repetição do gabarito ou conselho vago; capturar exatamente o discriminador decisivo do item.
+EXPLICAÇÃO OBRIGATÓRIA DAS ALTERNATIVAS: explicar individualmente por que a alternativa correta está certa E por que cada uma das outras três está errada naquele caso. As explicações A-D devem ser específicas para a vinheta, o comando e a alternativa, deixando claro o dado que confirma a correta e o erro clínico/conceitual de cada distrator. “Incorreta”, “não é a melhor” ou justificativa genérica não são aceitas.
+HARD REJECT 10 — PULO DO GATO / EXPLICAÇÕES INCOMPLETAS: se mensagem_chave estiver vazia, genérica, não permitiria acertar o item após ser ouvida, ou se qualquer uma das explicações A-D não disser concretamente por que aquela opção está certa/errada, o item não pode ser aprovado e deve voltar para correção.
+RELATÓRIO QUESTÃO POR QUESTÃO OBRIGATÓRIO: toda etapa de revisão, auditoria, reauditoria ou revisão final deve produzir também uma seção humana sequencial, um item por linha/bloco, sem agrupar questões. Formato mínimo: “42 — REJEITADA — motivo: ...”, “43 — APROVADA — motivo: ...” ou “44 — REVISAR — motivo: ...”. Sempre usar número/ID da questão, status explícito e motivo concreto. Não aceitar apenas totais agregados. Mesmo quando o JSON estruturado já contiver reviews[], repetir um resumo legível questão por questão para facilitar conferência humana.
+STATUS PADRÃO DO RELATÓRIO POR ITEM: APROVADA | REVISAR | REJEITADA. Se REJEITADA, indicar o hard reject ou falha principal; se REVISAR, dizer exatamente o que precisa mudar; se APROVADA, registrar brevemente por que passou.
+Distratores devem permanecer no mesmo eixo decisório e representar erros médicos reais, próximos e plausíveis; não fabricar uma resposta madura contra três caricaturas.
+CONCORRENTE FORTE OBRIGATÓRIO: em item médio/difícil, pelo menos um distrator deve continuar defensável após a leitura completa até que um dado discriminativo específico o derrube. Associação apenas temática não conta.
+REGRA DE SOBREVIVÊNCIA MÍNIMA: além da correta, pelo menos DOIS distratores devem permanecer plausíveis após leitura superficial de comando + alternativas e só devem cair após uso de um dado funcional específico da vinheta. Se apenas um concorrente sobrevive e dois distratores morrem cedo, REJEITAR e regenerar as alternativas.
+GATE DE DISTRATORES: antes de aceitar o item, verificar se pelo menos dois incorretos poderiam ser considerados por candidato parcialmente preparado e só caem por dado, indicação, timing, prioridade, contraindicação, sequência ou nuance técnica. Se 2–3 opções caem por absurdo, negligência, categoria incompatível ou linguagem denunciadora, REESCREVER.
+TESTE CEGO DAS ALTERNATIVAS: antes de ler a vinheta, o revisor deve tentar prever a chave apenas pelo comando + opções. Se a forma, sofisticação, prudência ou completude apontar a correta com confiança média/alta, rejeitar automaticamente.
+BLIND-OPTIONS HARD REJECT: o teste comando + alternativas sem vinheta é eliminatório. Se a chave puder ser prevista com confiança média/alta por completude, prudência, condicionalidade, número de ações, tecnicidade ou sofisticação textual, o item é REJECTED; não registrar como mera observação de estilo.
+PASSE CEGO OBRIGATÓRIO DAS OPÇÕES: apresentar ao revisor apenas comando + alternativas, sem vinheta. Se ele conseguir prever a chave com confiança alta por sofisticação, extensão, prudência, cautela ou completude textual, REJEITAR e regenerar SOMENTE as alternativas.
+HARD REJECT 1 — SURFACE GUESS: o revisor independente deve examinar comando + alternativas sem usar a vinheta. Se surface_guess_without_vignette == gabarito com confiança média ou alta, o item é REJECTED, não apenas needs_revision. Regenerar as alternativas do zero e submeter novamente à revisão.
+VALIDADOR DE ASSIMETRIA ESTRUTURAL: rejeitar automaticamente quando a correta for a única alternativa com linguagem de avaliação/consideração/monitorização/individualização, ressalva condicional, combinação de duas ações ou maior completude técnica, enquanto os distratores forem mais curtos, absolutos ou unidimensionais.
+HARD REJECT 2 — ASSIMETRIA LEXICAL: se lexical_asymmetry == FAIL, o item é REJECTED. Não corrigir apenas trocando uma palavra; regenerar o conjunto de alternativas preservando o eixo clínico. Exceção somente quando o absoluto for exatamente o conhecimento científico avaliado e o revisor registrar justificativa explícita.
+HARD REJECT 5 — ELIMINAÇÃO SUPERFICIAL: se DUAS OU MAIS alternativas puderem ser descartadas sem uso material dos dados funcionais da vinheta, por absurdo, categoria errada, negligência, extremismo, incompletude grosseira ou tom formal, o item é REJECTED e deve ser regenerado. Exceção: item fácil deliberadamente direto, desde que as quatro alternativas permaneçam clinicamente homogêneas e sem caricaturas.
+HARD REJECT 6 — ASSIMETRIA DE SOFISTICAÇÃO: comparar correta versus distratores em comprimento, cautela, condicionalidade, tecnicidade, completude e número de ações. Se a chave for a única alternativa claramente mais madura, individualizada, protetora ou tecnicamente completa, o item é REJECTED e as alternativas devem ser regeneradas.
+GATE DE ESPECIFICIDADE: quando os dados permitem decisão concreta, não aceitar chave protetora/genérica como &#x27;tratamento adequado&#x27;, &#x27;reversão apropriada&#x27;, &#x27;avaliar e tratar conforme gravidade&#x27; ou &#x27;escalonar conforme controle&#x27;. Cobrar a decisão discriminativa.
+DISTRATORES DO MESMO NÓ DECISÓRIO: priorizar erros de limiar, timing, indicação parcialmente satisfeita, prioridade invertida, interpretação errada de dado funcional ou sequência terapêutica incorreta. Evitar condutas genericamente ruins ou apenas tematicamente relacionadas.
+HARD REJECT 3 — CONTRAFACTUAL: em item médio/difícil, se o melhor distrator só se tornar correto mediante mudança do diagnóstico inteiro, alteração da própria alternativa ou cenário distante, o item é REJECTED. Exigir pequena mudança clinicamente plausível da vinheta que torne o melhor distrator correto ou claramente mais defensável.
+HARD REJECT 7 — SBA INDEPENDENTE: um segundo resolvedor independente deve responder sem conhecer a chave. Se independent_answer != gabarito, suspender automaticamente o item para revisão científica/SBA; nunca assumir que o resolvedor errou. Se houver mais de uma estratégia clinicamente aceita sem dado de desempate explícito, REJECTED.
+FUNCTIONAL_KILLER OBRIGATÓRIO: para os dois melhores distratores, registrar explicitamente functional_killer_1 e functional_killer_2 no parecer. Cada campo deve citar um dado concreto da vinheta e completar a frase “esta alternativa seria defensável, exceto porque a vinheta informa ___”. Campo vazio, genérico ou baseado apenas em regra abstrata = REJECTED.
+HARD REJECT 8 — DADO DE ELIMINAÇÃO DOS DOIS MELHORES DISTRATORES: para cada um dos dois melhores distratores, o revisor deve completar “esta alternativa só cai porque a vinheta informa ___”. Se não houver dado específico e funcional para ambos, REJECTED.
+HARD REJECT 9 — MÚLTIPLAS CORRETAS: se a defesa da chave depender apenas de “mais usual”, “mais completa”, “em geral preferível” ou preferência entre estratégias aceitas, REJECTED; fechar melhor o cenário antes de nova revisão.
+HARD REJECT 4 — DEPENDÊNCIA DA VINHETA: em item médio/difícil, se vignette_dependency == FAIL ou se nenhum dado concreto explicar por que a chave vence o melhor distrator, o item é REJECTED. Cada dado destacado deve apoiar/afastar diagnóstico ou mudar gravidade, prioridade, indicação, contraindicação, timing, sequência, cálculo ou decisão.
+GATE DE PADRÃO CLÁSSICO: item moderado/difícil não pode se resumir a achado clássico → resposta clássica contra três absurdos. A dificuldade deve emergir de alternativas concorrentes e contexto, não do nome do tema.
+GATE DE LOTE: depois da validação individual, um revisor deve procurar padrões transversais de quadro clássico + conduta óbvia, correta madura contra três extremos, universalizadores concentrados nos distratores, mesma operação cognitiva, mesmo nível de atenção e esqueleto semântico repetido. Se o padrão aparecer em série, reescrever os itens responsáveis mesmo que isoladamente sejam aceitáveis. Não usar quotas universais.
+GATE DE POSIÇÃO: a letra correta é atributo de apresentação, não identidade editorial. Em LOTES DE CALIBRAÇÃO com 15 itens, depois de fechar integralmente conteúdo e alternativas, reordenar SOMENTE as posições para que o gabarito siga exatamente A-B-C-D-A-B-C-D-A-B-C-D-A-B-C. Nunca alterar o conteúdo médico para fabricar a letra. No site, as questões poderão ser misturadas posteriormente.
+Dificuldade depende do raciocínio exigido e da competição entre alternativas, e deve ser atribuída/revalidada somente após o item completo. Não usar tema, gravidade, quantidade de dados ou contagem rígida de &#x27;etapas cognitivas&#x27; como proxy. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
 Estilo vem de cadernos oficiais do processo-alvo; ciência vem de fontes científicas independentes. Edital sozinho não demonstra arquitetura dos itens.
 Não inventar documento, edição, URL, seção, dados de corpus ou característica de banca. Falta de acesso = SOURCE_VERIFICATION_PENDING; falta de corpus = NEEDS_MORE_PRIMARY_STYLE_DATA; ambas impedem declarar aprovação correspondente.
 Usar fonte atual aplicável à pergunta e ao cenário brasileiro. Fonte internacional adequada não perde pontos por nacionalidade. Conflitos entre recomendações exigem contexto explícito que assegure resposta única.
-CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=94/100 na saída bruta inédita, antes de correções; não confundir com style_score.
-QUESTÃO FINAL: quality_score &gt;=95/100, style &gt;=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
+CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=84/100 na saída bruta inédita, antes de correções; não confundir com style_score.
+ROTEAMENTO FINAL SIMPLIFICADO: use a menor nota entre resolução cega e revisão independente do bloco. Nota &gt;86 e sem erro clínico = entra direto no lote; nota entre 50 e 86, inclusive, ou qualquer pendência clínica = nova revisão; nota &lt;50 = exclusão direta com arquivamento. Hard fail, ambiguidade e inconsistência de gabarito devem reduzir a nota e nunca ser mascarados por pontuação artificial.
 Feedback sobre distratores, clareza e segurança pode melhorar regras gerais; só alterar a identidade da banca com evidência primária documentada.
+MODOS DE EXECUÇÃO DAS ETAPAS CHATGPT:
+- MODO OPERACIONAL POR ENDEREÇO: quando o prompt trouxer ENDEREÇO OPERACIONAL com lote/bloco concretos e instruir acesso ao Admin/Supabase autorizado, a FONTE DE VERDADE é a versão ATUAL lida nesse endereço. O ChatGPT deve entrar no workspace indicado, localizar exatamente batch_code + block_code e trabalhar somente nas questões/item_version vigentes e pendentes daquela etapa.
+- MODO MANUAL POR JSON: somente quando o prompt trouxer explicitamente INPUT_JSON, INPUT_JSON_CEGO ou pacote manual colado, a FONTE DE VERDADE passa a ser exclusivamente esse JSON. Nesse modo, não buscar complementos no Admin/Supabase.
+- Nunca misturar os dois modos na mesma execução.
+- Em qualquer modo, NÃO usar memória, snippets, anexos antigos, arquivos anteriores ou histórico da conversa como substituto da fonte de verdade atual.
+- Antes de auditar, confirmar batch_code, block_code, question_id e item_version/version da fonte escolhida.
+- Preserve exatamente question_id + item_version/version recebidos/lidos.
+- Se o modo operacional estiver sem acesso autorizado, informe ACCESS_REQUIRED; nunca peça senha, token, anon key, service_role, JWT ou credencial.
+- Se o modo manual estiver truncado/estruturalmente inválido, informe JSON_INPUT_INVALID com o problema concreto.
+- O resultado de etapa manual deve ser devolvido como um único JSON completo, pronto para “Colar JSON de resposta”.
+- stage_metrics, totais agregados e relatório textual NÃO substituem reviews individuais exigidos pela etapa.
+- Nunca invente persistência, receipt_id, coverage ou conclusão administrativa.
+TELEMETRIA OBRIGATÓRIA POR ETAPA: toda saída JSON deve incluir um objeto top-level stage_metrics. Ele é lido pelo Admin e persistido no Supabase para atualizar o dashboard automaticamente. Preencher com dados REAIS da etapa; nunca estimar contagens. Estrutura obrigatória:
+stage_metrics = {
+  exam_style: banca atual,
+  batch_number: lote atual ou null,
+  batch_code: ID humano do lote no formato L001 quando houver lote,
+  block_number: bloco atual ou null,
+  block_code: ID humano do bloco no formato L001-B01 quando houver bloco,
+  stage: nome exato da etapa,
+  provider: ChatGPT | revisor independente | Human,
+  run_label: identificador curto opcional da rodada/parte,
+  total_count: quantidade realmente processada nesta resposta,
+  approved_count: quantidade aprovada nesta etapa,
+  needs_revision_count: quantidade que precisa revisão,
+  rejected_count: quantidade rejeitada,
+  hard_reject_count: quantidade com hard reject,
+  agreement_count: quantidade em que resposta independente concordou com o gabarito quando aplicável,
+  score: nota agregada REAL da etapa quando existir, senão null,
+  status: estado agregado da etapa,
+  metrics: objeto livre com métricas adicionais úteis,
+  notes: resumo operacional curto
+}.
+TELEMETRIA / DESTINO:
+- Se provider=revisor independente, incluir stage_metrics no MESMO JSON final devolvido ao usuário.
+- Para revisor independente, NÃO tentar gravar stage_metrics nem reviews no Supabase e NÃO gerar bridge_write/receipt_id. A resposta deve ser apenas o JSON completo pronto para colar no Admin.
+- Se provider=ChatGPT e o ambiente administrativo tiver acesso autorizado ao Supabase, a telemetria pode continuar usando SOMENTE a função controlada private.qf_record_stage_metrics(...), conforme o fluxo interno.
+- Nunca fazer INSERT/UPDATE/DELETE direto para telemetria ou reviews fora dos importadores administrativos autorizados.
+- Nunca pedir, imprimir, armazenar ou inventar service_role, senha, token, anon key, publishable key, JWT ou chave do Supabase.
 JSON válido é o contrato máquina-a-máquina. Não preencher aprovações, fontes verificadas ou notas sem executar a avaliação. IDs são imutáveis; toda revisão informa item_version e toda correção informa expected_version.
 
 BANCA: INFORMAR BANCA CADASTRADA
@@ -693,8 +899,31 @@ FONTES CIENTÍFICAS
 Documento primário atual que sustente a decisão exata, incluindo seção quando verificável.
 PONTO DE PARTIDA PARA CORPUS (não equivale a prova analisada): a localizar
 CORPUS VERIFICADO: []
-Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade. Campos históricos de extensão, incidência e dificuldade só viram regras após conferência no corpus.
-Antes de gerar: registrar edição, URL oficial, IDs/páginas dos itens analisados, n amostrado, comprimento em palavras, formatos, operações cognitivas, alternativas e limites da amostra. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes. Se insuficiente, retornar pendência de calibração, sem prometer fidelidade.
+ESTADO DE CALIBRAÇÃO: {}
+Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade.
+Se prompt_calibration.status == &quot;CALIBRATED_FROZEN&quot; OU prompt_calibration.identity_status == &quot;FROZEN&quot; OU (prompt_calibration.decision == &quot;PROMPT_APPROVED&quot; e final_prompt_score &gt;=84), o perfil já é canônico para produção: NÃO reabrir calibração, NÃO exigir novo corpus antes de gerar e NÃO alterar identidade editorial por resultados do lote em produção. O corpus pode ser enriquecido depois sem bloquear produção.
+Somente perfis ainda não aprovados devem registrar edição, URL oficial, IDs/páginas, n amostrado, formatos e limites da amostra antes de declarar fidelidade. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes.
+ENDEREÇO OPERACIONAL — OBRIGATÓRIO E IMUTÁVEL
+Workspace/site: https://www.resibulando.online/admin/
+Endereço operacional: NÃO VINCULADO — PROMPT MODELO; NÃO EXECUTAR
+Lote: NÃO VINCULADO
+Bloco: NÃO APLICÁVEL
+Etapa: perplexity_initial
+
+TRAVA DE ESCOPO:
+- Você está autorizado a atuar EXCLUSIVAMENTE no endereço operacional acima.
+- Prompt-modelo sem lote/bloco vinculado: não executar nem persistir até receber endereço operacional concreto.
+- Sem destino operacional: não gravar nada.
+- IDs, lote, bloco e versões presentes no JSON/ambiente atual prevalecem sobre exemplos do prompt.
+- Nunca invente leitura, gravação, versão, receipt_id ou confirmação.
+
+PERSISTÊNCIA DESTA ETAPA — CHATGPT / REVISÃO INDEPENDENTE 2:
+- IGNORE MEMÓRIA, parecer da revisão 1, scores, status e correções anteriores.
+- Trabalhe na versão atual e confronte o gabarito somente DEPOIS de preservar a resposta cega.
+- Audite ciência, SBA, distratores, explicações, Pulo do Gato, estilo e fontes.
+- Priorize fontes brasileiras oficiais/sociedades; use busca externa em itens sinalizados ou sensíveis a atualização.
+- proposed_change é apenas recomendação; não altere a questão principal nesta etapa.
+- Grave o parecer separado na etapa técnica perplexity_initial (nome legado interno do banco).
 
 RUBRICA FINAL (pesos máximos; soma exata = quality_score):
 {
@@ -707,20 +936,34 @@ RUBRICA FINAL (pesos máximos; soma exata = quality_score):
   &quot;writing&quot;: 5,
   &quot;difficulty&quot;: 5
 }
-scientific: exatidão e atualização; answer_key: gabarito e univocidade; answer_source: suporte documental específico; distractors: plausibilidade/discriminação; explanations: justificativas A-D; style: aderência demonstrada ao corpus; writing: clareza; difficulty: adequação ao perfil.
+scientific: exatidão e atualização; answer_key: gabarito e univocidade; answer_source: suporte documental específico; distractors: plausibilidade/discriminação; explanations: justificativas A-D completas + Pulo do Gato discriminativo; style: aderência demonstrada ao corpus; writing: clareza; difficulty: adequação ao perfil.
 Cada perda precisa de motivo observável; respeitar os tetos. Sem corpus suficiente, style=null, quality_score=null e status=needs_revision; registrar a pendência sem inventar nota baixa de fidelidade.
 Hard fail: gabarito errado, múltiplas respostas defensáveis, dado essencial ausente, conduta insegura, dose/cutoff incorreto, recomendação desatualizada, fonte falsa ou incompatível, explicação contraditória, erro matemático relevante, cópia reconhecível.
 Fonte ampla ou temporariamente inacessível bloqueia aprovação, mas não é automaticamente fonte falsa.
+HIERARQUIA DE FONTE NO CONTEXTO BRASILEIRO: priorizar Ministério da Saúde/CONITEC/PCDT, ANVISA quando pertinente e sociedades brasileiras reconhecidas da área. Para conteúdo não coberto ou quando necessário para atualização/contraste, usar diretrizes internacionais e literatura primária de alta qualidade. A memória do modelo nunca conta como fonte.
 Requisitos finais adicionais: distractor_quality GOOD ou EXCELLENT (pelo menos dois distratores competitivos, sem opção caricata); alternative_granularity PASS (opções respondem ao mesmo comando e nível de decisão); difficulty_alignment PASS (classificação sustentada pela tarefa e corpus).
-TAREFA: Auditoria científica e editorial independente de TODOS os itens recebidos. Usar a resposta cega já registrada para a MESMA versão. Não alterá-la para coincidir com o gabarito.
+TAREFA: REVISÃO CEGA E INDEPENDENTE de TODOS os itens. IGNORE COMPLETAMENTE memória, contexto, pareceres, notas, status e conclusões de etapas anteriores. Avalie a versão atual como inédita. Antes de confrontar o gabarito, preserve a independent_answer da resolução cega; não altere essa resposta para coincidir com o gabarito. A memória do modelo não é fonte. Para dúvida científica ou conteúdo atualizável, verificar fonte aberta nesta etapa, priorizando Ministério da Saúde/CONITEC/PCDT, ANVISA quando pertinente e sociedades brasileiras da especialidade (FEBRASGO, SBP, SBC, CBC, AMB etc.).
 
 Abrir fontes e comparar a recomendação exata. verified_sources exige institution, document, year, url e section/note quando disponíveis. Relatar falha de acesso como pendência.
-Não modificar itens. Para todo needs_revision/rejected, propor substituições completas APENAS de campos necessários em proposed_change.exact_replacement; não inventar correção quando faltarem evidências. Campos permitidos: enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, gabarito, explicacao_a, explicacao_b, explicacao_c, explicacao_d, mensagem_chave, area, tema, subtema, dificuldade, fonte_instituicao, fonte_documento, fonte_ano, fonte_url, answer_source_institution, answer_source_document, answer_source_year, answer_source_url, answer_source_section, answer_source_note.
+Antes de aprovar cada item, validar também:
+1. mensagem_chave realmente funciona como Pulo do Gato: se o aluno a tivesse acabado de ouvir, teria informação suficiente para reconhecer a resposta correta;
+2. a explicação da alternativa correta diz por que está certa;
+3. as três explicações restantes dizem individualmente por que cada alternativa está errada naquele caso.
+Falha em qualquer um desses quatro componentes = needs_revision; ausência, genericidade ou explicação vazia = HARD REJECT 10.
+Não modificar itens nesta revisão independente. quality_score é obrigatório e deve refletir a rubrica completa. O destino é AUTOMÁTICO, usando a MENOR nota entre esta revisão e a resolução cega da mesma versão: &gt;=95 = direto para o lote; 50–94,99 = nova revisão adversarial + autocorreção; &lt;50 = exclusão do pipeline ativo com arquivamento em Questões ruins. proposed_change pode registrar recomendação editorial, mas não existe mais etapa obrigatória de adjudicação/reauditoria para decidir o destino. Campos permitidos: enunciado, alternativa_a, alternativa_b, alternativa_c, alternativa_d, gabarito, explicacao_a, explicacao_b, explicacao_c, explicacao_d, mensagem_chave, area, tema, subtema, dificuldade, fonte_instituicao, fonte_documento, fonte_ano, fonte_url, answer_source_institution, answer_source_document, answer_source_year, answer_source_url, answer_source_section, answer_source_note.
 Informar cobertura; trabalhar em partes identificadas se necessário, sem marcar bloco completo até revisar todos os IDs. Recalcular soma/estatísticas por código quando disponível. Números no exemplo são tetos, não notas pré-atribuídas.
+Ao final, emitir obrigatoriamente “RELATÓRIO QUESTÃO POR QUESTÃO”, preservando a ordem dos IDs recebidos. Exemplo:
+42 — REJEITADA — motivo: hard reject por duas respostas defensáveis.
+43 — APROVADA — motivo: SBA clara, dois distratores funcionais e fontes verificadas.
+44 — REVISAR — motivo: Pulo do Gato genérico; reescrever mensagem_chave.
+Não omitir nenhuma questão processada.
 {
   &quot;schema_version&quot;: &quot;2.0&quot;,
   &quot;batch_number&quot;: null,
+  &quot;batch_code&quot;: null,
   &quot;block_number&quot;: null,
+  &quot;block_code&quot;: null,
+  &quot;operational_address&quot;: null,
   &quot;exam_style&quot;: null,
   &quot;review_stage&quot;: &quot;perplexity_initial&quot;,
   &quot;reviewer&quot;: &quot;ChatGPT&quot;,
@@ -741,24 +984,79 @@ Informar cobertura; trabalhar em partes identificadas se necessário, sem marcar
       },
       &quot;independent_answer&quot;: &quot;A&quot;,
       &quot;original_answer&quot;: &quot;A&quot;,
-      &quot;status&quot;: &quot;needs_revision&quot;,
+      &quot;answer_agreement&quot;: &quot;agree&quot;,
+      &quot;status&quot;: &quot;rejected&quot;,
       &quot;confidence&quot;: &quot;high&quot;,
       &quot;ambiguity&quot;: false,
       &quot;single_best_answer&quot;: true,
       &quot;hard_fail&quot;: false,
       &quot;hard_fail_reasons&quot;: [],
-      &quot;answer_source_issue&quot;: null,
       &quot;source_verification_status&quot;: &quot;SOURCE_VERIFICATION_PENDING&quot;,
       &quot;style_evidence_status&quot;: &quot;NEEDS_MORE_PRIMARY_STYLE_DATA&quot;,
+      &quot;verified_sources&quot;: [],
+      &quot;source_checks&quot;: [
+        {
+          &quot;institution&quot;: &quot;INSTITUICAO_A_VERIFICAR&quot;,
+          &quot;document&quot;: &quot;DOCUMENTO_A_VERIFICAR&quot;,
+          &quot;year&quot;: &quot;2026&quot;,
+          &quot;url&quot;: &quot;https://example.org/a-verificar&quot;,
+          &quot;section&quot;: &quot;&quot;,
+          &quot;verification_status&quot;: &quot;PENDING&quot;,
+          &quot;url_reachable&quot;: false,
+          &quot;title_match&quot;: false,
+          &quot;year_match&quot;: false,
+          &quot;section_found&quot;: false,
+          &quot;supports_answer&quot;: false,
+          &quot;note&quot;: &quot;Substituir por fonte real aberta e verificada.&quot;
+        }
+      ],
+      &quot;surface_guess_without_vignette&quot;: null,
+      &quot;surface_guess_confidence&quot;: &quot;low&quot;,
+      &quot;lexical_asymmetry&quot;: &quot;PASS&quot;,
+      &quot;best_distractor&quot;: &quot;B&quot;,
+      &quot;best_distractor_rationale&quot;: &quot;Explicar por que este é o concorrente mais plausível.&quot;,
+      &quot;counterfactual_change&quot;: &quot;Descrever pequena mudança clínica que tornaria o distrator defensável.&quot;,
+      &quot;functional_killer_1_option&quot;: &quot;B&quot;,
+      &quot;functional_killer_1&quot;: &quot;Dado concreto da vinheta que elimina B.&quot;,
+      &quot;functional_killer_2_option&quot;: &quot;C&quot;,
+      &quot;functional_killer_2&quot;: &quot;Dado concreto da vinheta que elimina C.&quot;,
+      &quot;vignette_dependency&quot;: &quot;PASS&quot;,
       &quot;distractor_quality&quot;: &quot;GOOD&quot;,
       &quot;alternative_granularity&quot;: &quot;PASS&quot;,
       &quot;difficulty_alignment&quot;: &quot;PASS&quot;,
+      &quot;explanation_checks&quot;: {
+        &quot;A&quot;: {
+          &quot;status&quot;: &quot;PASS&quot;,
+          &quot;reason&quot;: &quot;Justificativa específica da alternativa A.&quot;
+        },
+        &quot;B&quot;: {
+          &quot;status&quot;: &quot;PASS&quot;,
+          &quot;reason&quot;: &quot;Justificativa específica da alternativa B.&quot;
+        },
+        &quot;C&quot;: {
+          &quot;status&quot;: &quot;PASS&quot;,
+          &quot;reason&quot;: &quot;Justificativa específica da alternativa C.&quot;
+        },
+        &quot;D&quot;: {
+          &quot;status&quot;: &quot;PASS&quot;,
+          &quot;reason&quot;: &quot;Justificativa específica da alternativa D.&quot;
+        }
+      },
+      &quot;message_key_check&quot;: {
+        &quot;status&quot;: &quot;PASS&quot;,
+        &quot;reason&quot;: &quot;É específica e discriminativa.&quot;,
+        &quot;decisive_feature&quot;: &quot;Dado decisivo da questão.&quot;
+      },
       &quot;points_lost&quot;: [],
       &quot;scientific_issue&quot;: null,
-      &quot;style_issue&quot;: null,
+      &quot;source_issue&quot;: &quot;Fonte ainda não verificada.&quot;,
+      &quot;answer_source_issue&quot;: &quot;Fonte ainda não verificada.&quot;,
       &quot;explanation_issue&quot;: null,
+      &quot;distractor_issue&quot;: null,
+      &quot;style_issue&quot;: null,
+      &quot;wording_issue&quot;: null,
+      &quot;difficulty_issue&quot;: null,
       &quot;suggested_correction&quot;: null,
-      &quot;verified_sources&quot;: [],
       &quot;proposed_change&quot;: {
         &quot;change_required&quot;: false,
         &quot;exact_replacement&quot;: {},
@@ -770,6 +1068,24 @@ Informar cobertura; trabalhar em partes identificadas se necessário, sem marcar
     &quot;reviewed_ids&quot;: [],
     &quot;pending_ids&quot;: [],
     &quot;complete&quot;: false
+  },
+  &quot;stage_metrics&quot;: {
+    &quot;exam_style&quot;: null,
+    &quot;batch_number&quot;: null,
+    &quot;block_number&quot;: null,
+    &quot;stage&quot;: &quot;perplexity_initial&quot;,
+    &quot;provider&quot;: &quot;ChatGPT&quot;,
+    &quot;run_label&quot;: null,
+    &quot;total_count&quot;: 0,
+    &quot;approved_count&quot;: 0,
+    &quot;needs_revision_count&quot;: 0,
+    &quot;rejected_count&quot;: 0,
+    &quot;hard_reject_count&quot;: 0,
+    &quot;agreement_count&quot;: 0,
+    &quot;score&quot;: null,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;metrics&quot;: {},
+    &quot;notes&quot;: &quot;&quot;
   }
 }</pre>
               </div>
@@ -780,17 +1096,82 @@ Informar cobertura; trabalhar em partes identificadas se necessário, sem marcar
               <div class="admin-qf-prompt-wrap">
                 <button class="button secondary admin-qf-copy" type="button" data-copy-target="qf-prompt-correction">Copiar prompt</button>
                 <pre id="qf-prompt-correction" class="admin-qf-prompt">CONTRATO LURIA 3.8
-REVISÃO CEGA OBRIGATÓRIA: ignore completamente memória do modelo, memória da conta, conversas anteriores, pareceres, scores, correções, status e conclusões de outras etapas. Avalie somente a versão atual como inédita. A memória do modelo não é fonte; dúvidas científicas devem ser verificadas em fontes atuais, priorizando Ministério da Saúde e sociedades brasileiras pertinentes.
 Exatamente quatro alternativas A-D em TODAS as bancas; nunca penalizar essa adaptação.
 Uma única melhor resposta; dados suficientes; contexto coerente; conteúdo autoral.
-Todas as explicações A-D devem justificar especificamente a opção. Distratores do mesmo eixo, baseados em erros plausíveis e elimináveis pelos dados.
-Dificuldade depende do raciocínio exigido e da competição entre alternativas. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
+PULO DO GATO OBRIGATÓRIO: toda questão deve conter mensagem_chave preenchida como o “Pulo do Gato” — UMA frase curta, específica e memorável que, se o aluno tivesse acabado de ouvir antes da prova, seria suficiente para levá-lo à resposta correta daquela questão. Não escrever resumo genérico, definição ampla, repetição do gabarito ou conselho vago; capturar exatamente o discriminador decisivo do item.
+EXPLICAÇÃO OBRIGATÓRIA DAS ALTERNATIVAS: explicar individualmente por que a alternativa correta está certa E por que cada uma das outras três está errada naquele caso. As explicações A-D devem ser específicas para a vinheta, o comando e a alternativa, deixando claro o dado que confirma a correta e o erro clínico/conceitual de cada distrator. “Incorreta”, “não é a melhor” ou justificativa genérica não são aceitas.
+HARD REJECT 10 — PULO DO GATO / EXPLICAÇÕES INCOMPLETAS: se mensagem_chave estiver vazia, genérica, não permitiria acertar o item após ser ouvida, ou se qualquer uma das explicações A-D não disser concretamente por que aquela opção está certa/errada, o item não pode ser aprovado e deve voltar para correção.
+RELATÓRIO QUESTÃO POR QUESTÃO OBRIGATÓRIO: toda etapa de revisão, auditoria, reauditoria ou revisão final deve produzir também uma seção humana sequencial, um item por linha/bloco, sem agrupar questões. Formato mínimo: “42 — REJEITADA — motivo: ...”, “43 — APROVADA — motivo: ...” ou “44 — REVISAR — motivo: ...”. Sempre usar número/ID da questão, status explícito e motivo concreto. Não aceitar apenas totais agregados. Mesmo quando o JSON estruturado já contiver reviews[], repetir um resumo legível questão por questão para facilitar conferência humana.
+STATUS PADRÃO DO RELATÓRIO POR ITEM: APROVADA | REVISAR | REJEITADA. Se REJEITADA, indicar o hard reject ou falha principal; se REVISAR, dizer exatamente o que precisa mudar; se APROVADA, registrar brevemente por que passou.
+Distratores devem permanecer no mesmo eixo decisório e representar erros médicos reais, próximos e plausíveis; não fabricar uma resposta madura contra três caricaturas.
+CONCORRENTE FORTE OBRIGATÓRIO: em item médio/difícil, pelo menos um distrator deve continuar defensável após a leitura completa até que um dado discriminativo específico o derrube. Associação apenas temática não conta.
+REGRA DE SOBREVIVÊNCIA MÍNIMA: além da correta, pelo menos DOIS distratores devem permanecer plausíveis após leitura superficial de comando + alternativas e só devem cair após uso de um dado funcional específico da vinheta. Se apenas um concorrente sobrevive e dois distratores morrem cedo, REJEITAR e regenerar as alternativas.
+GATE DE DISTRATORES: antes de aceitar o item, verificar se pelo menos dois incorretos poderiam ser considerados por candidato parcialmente preparado e só caem por dado, indicação, timing, prioridade, contraindicação, sequência ou nuance técnica. Se 2–3 opções caem por absurdo, negligência, categoria incompatível ou linguagem denunciadora, REESCREVER.
+TESTE CEGO DAS ALTERNATIVAS: antes de ler a vinheta, o revisor deve tentar prever a chave apenas pelo comando + opções. Se a forma, sofisticação, prudência ou completude apontar a correta com confiança média/alta, rejeitar automaticamente.
+BLIND-OPTIONS HARD REJECT: o teste comando + alternativas sem vinheta é eliminatório. Se a chave puder ser prevista com confiança média/alta por completude, prudência, condicionalidade, número de ações, tecnicidade ou sofisticação textual, o item é REJECTED; não registrar como mera observação de estilo.
+PASSE CEGO OBRIGATÓRIO DAS OPÇÕES: apresentar ao revisor apenas comando + alternativas, sem vinheta. Se ele conseguir prever a chave com confiança alta por sofisticação, extensão, prudência, cautela ou completude textual, REJEITAR e regenerar SOMENTE as alternativas.
+HARD REJECT 1 — SURFACE GUESS: o revisor independente deve examinar comando + alternativas sem usar a vinheta. Se surface_guess_without_vignette == gabarito com confiança média ou alta, o item é REJECTED, não apenas needs_revision. Regenerar as alternativas do zero e submeter novamente à revisão.
+VALIDADOR DE ASSIMETRIA ESTRUTURAL: rejeitar automaticamente quando a correta for a única alternativa com linguagem de avaliação/consideração/monitorização/individualização, ressalva condicional, combinação de duas ações ou maior completude técnica, enquanto os distratores forem mais curtos, absolutos ou unidimensionais.
+HARD REJECT 2 — ASSIMETRIA LEXICAL: se lexical_asymmetry == FAIL, o item é REJECTED. Não corrigir apenas trocando uma palavra; regenerar o conjunto de alternativas preservando o eixo clínico. Exceção somente quando o absoluto for exatamente o conhecimento científico avaliado e o revisor registrar justificativa explícita.
+HARD REJECT 5 — ELIMINAÇÃO SUPERFICIAL: se DUAS OU MAIS alternativas puderem ser descartadas sem uso material dos dados funcionais da vinheta, por absurdo, categoria errada, negligência, extremismo, incompletude grosseira ou tom formal, o item é REJECTED e deve ser regenerado. Exceção: item fácil deliberadamente direto, desde que as quatro alternativas permaneçam clinicamente homogêneas e sem caricaturas.
+HARD REJECT 6 — ASSIMETRIA DE SOFISTICAÇÃO: comparar correta versus distratores em comprimento, cautela, condicionalidade, tecnicidade, completude e número de ações. Se a chave for a única alternativa claramente mais madura, individualizada, protetora ou tecnicamente completa, o item é REJECTED e as alternativas devem ser regeneradas.
+GATE DE ESPECIFICIDADE: quando os dados permitem decisão concreta, não aceitar chave protetora/genérica como &#x27;tratamento adequado&#x27;, &#x27;reversão apropriada&#x27;, &#x27;avaliar e tratar conforme gravidade&#x27; ou &#x27;escalonar conforme controle&#x27;. Cobrar a decisão discriminativa.
+DISTRATORES DO MESMO NÓ DECISÓRIO: priorizar erros de limiar, timing, indicação parcialmente satisfeita, prioridade invertida, interpretação errada de dado funcional ou sequência terapêutica incorreta. Evitar condutas genericamente ruins ou apenas tematicamente relacionadas.
+HARD REJECT 3 — CONTRAFACTUAL: em item médio/difícil, se o melhor distrator só se tornar correto mediante mudança do diagnóstico inteiro, alteração da própria alternativa ou cenário distante, o item é REJECTED. Exigir pequena mudança clinicamente plausível da vinheta que torne o melhor distrator correto ou claramente mais defensável.
+HARD REJECT 7 — SBA INDEPENDENTE: um segundo resolvedor independente deve responder sem conhecer a chave. Se independent_answer != gabarito, suspender automaticamente o item para revisão científica/SBA; nunca assumir que o resolvedor errou. Se houver mais de uma estratégia clinicamente aceita sem dado de desempate explícito, REJECTED.
+FUNCTIONAL_KILLER OBRIGATÓRIO: para os dois melhores distratores, registrar explicitamente functional_killer_1 e functional_killer_2 no parecer. Cada campo deve citar um dado concreto da vinheta e completar a frase “esta alternativa seria defensável, exceto porque a vinheta informa ___”. Campo vazio, genérico ou baseado apenas em regra abstrata = REJECTED.
+HARD REJECT 8 — DADO DE ELIMINAÇÃO DOS DOIS MELHORES DISTRATORES: para cada um dos dois melhores distratores, o revisor deve completar “esta alternativa só cai porque a vinheta informa ___”. Se não houver dado específico e funcional para ambos, REJECTED.
+HARD REJECT 9 — MÚLTIPLAS CORRETAS: se a defesa da chave depender apenas de “mais usual”, “mais completa”, “em geral preferível” ou preferência entre estratégias aceitas, REJECTED; fechar melhor o cenário antes de nova revisão.
+HARD REJECT 4 — DEPENDÊNCIA DA VINHETA: em item médio/difícil, se vignette_dependency == FAIL ou se nenhum dado concreto explicar por que a chave vence o melhor distrator, o item é REJECTED. Cada dado destacado deve apoiar/afastar diagnóstico ou mudar gravidade, prioridade, indicação, contraindicação, timing, sequência, cálculo ou decisão.
+GATE DE PADRÃO CLÁSSICO: item moderado/difícil não pode se resumir a achado clássico → resposta clássica contra três absurdos. A dificuldade deve emergir de alternativas concorrentes e contexto, não do nome do tema.
+GATE DE LOTE: depois da validação individual, um revisor deve procurar padrões transversais de quadro clássico + conduta óbvia, correta madura contra três extremos, universalizadores concentrados nos distratores, mesma operação cognitiva, mesmo nível de atenção e esqueleto semântico repetido. Se o padrão aparecer em série, reescrever os itens responsáveis mesmo que isoladamente sejam aceitáveis. Não usar quotas universais.
+GATE DE POSIÇÃO: a letra correta é atributo de apresentação, não identidade editorial. Em LOTES DE CALIBRAÇÃO com 15 itens, depois de fechar integralmente conteúdo e alternativas, reordenar SOMENTE as posições para que o gabarito siga exatamente A-B-C-D-A-B-C-D-A-B-C-D-A-B-C. Nunca alterar o conteúdo médico para fabricar a letra. No site, as questões poderão ser misturadas posteriormente.
+Dificuldade depende do raciocínio exigido e da competição entre alternativas, e deve ser atribuída/revalidada somente após o item completo. Não usar tema, gravidade, quantidade de dados ou contagem rígida de &#x27;etapas cognitivas&#x27; como proxy. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
 Estilo vem de cadernos oficiais do processo-alvo; ciência vem de fontes científicas independentes. Edital sozinho não demonstra arquitetura dos itens.
 Não inventar documento, edição, URL, seção, dados de corpus ou característica de banca. Falta de acesso = SOURCE_VERIFICATION_PENDING; falta de corpus = NEEDS_MORE_PRIMARY_STYLE_DATA; ambas impedem declarar aprovação correspondente.
 Usar fonte atual aplicável à pergunta e ao cenário brasileiro. Fonte internacional adequada não perde pontos por nacionalidade. Conflitos entre recomendações exigem contexto explícito que assegure resposta única.
-CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=94/100 na saída bruta inédita, antes de correções; não confundir com style_score.
-QUESTÃO FINAL: quality_score &gt;=95/100, style &gt;=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
+CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=84/100 na saída bruta inédita, antes de correções; não confundir com style_score.
+ROTEAMENTO FINAL SIMPLIFICADO: use a menor nota entre resolução cega e revisão independente do bloco. Nota &gt;86 e sem erro clínico = entra direto no lote; nota entre 50 e 86, inclusive, ou qualquer pendência clínica = nova revisão; nota &lt;50 = exclusão direta com arquivamento. Hard fail, ambiguidade e inconsistência de gabarito devem reduzir a nota e nunca ser mascarados por pontuação artificial.
 Feedback sobre distratores, clareza e segurança pode melhorar regras gerais; só alterar a identidade da banca com evidência primária documentada.
+MODOS DE EXECUÇÃO DAS ETAPAS CHATGPT:
+- MODO OPERACIONAL POR ENDEREÇO: quando o prompt trouxer ENDEREÇO OPERACIONAL com lote/bloco concretos e instruir acesso ao Admin/Supabase autorizado, a FONTE DE VERDADE é a versão ATUAL lida nesse endereço. O ChatGPT deve entrar no workspace indicado, localizar exatamente batch_code + block_code e trabalhar somente nas questões/item_version vigentes e pendentes daquela etapa.
+- MODO MANUAL POR JSON: somente quando o prompt trouxer explicitamente INPUT_JSON, INPUT_JSON_CEGO ou pacote manual colado, a FONTE DE VERDADE passa a ser exclusivamente esse JSON. Nesse modo, não buscar complementos no Admin/Supabase.
+- Nunca misturar os dois modos na mesma execução.
+- Em qualquer modo, NÃO usar memória, snippets, anexos antigos, arquivos anteriores ou histórico da conversa como substituto da fonte de verdade atual.
+- Antes de auditar, confirmar batch_code, block_code, question_id e item_version/version da fonte escolhida.
+- Preserve exatamente question_id + item_version/version recebidos/lidos.
+- Se o modo operacional estiver sem acesso autorizado, informe ACCESS_REQUIRED; nunca peça senha, token, anon key, service_role, JWT ou credencial.
+- Se o modo manual estiver truncado/estruturalmente inválido, informe JSON_INPUT_INVALID com o problema concreto.
+- O resultado de etapa manual deve ser devolvido como um único JSON completo, pronto para “Colar JSON de resposta”.
+- stage_metrics, totais agregados e relatório textual NÃO substituem reviews individuais exigidos pela etapa.
+- Nunca invente persistência, receipt_id, coverage ou conclusão administrativa.
+TELEMETRIA OBRIGATÓRIA POR ETAPA: toda saída JSON deve incluir um objeto top-level stage_metrics. Ele é lido pelo Admin e persistido no Supabase para atualizar o dashboard automaticamente. Preencher com dados REAIS da etapa; nunca estimar contagens. Estrutura obrigatória:
+stage_metrics = {
+  exam_style: banca atual,
+  batch_number: lote atual ou null,
+  batch_code: ID humano do lote no formato L001 quando houver lote,
+  block_number: bloco atual ou null,
+  block_code: ID humano do bloco no formato L001-B01 quando houver bloco,
+  stage: nome exato da etapa,
+  provider: ChatGPT | revisor independente | Human,
+  run_label: identificador curto opcional da rodada/parte,
+  total_count: quantidade realmente processada nesta resposta,
+  approved_count: quantidade aprovada nesta etapa,
+  needs_revision_count: quantidade que precisa revisão,
+  rejected_count: quantidade rejeitada,
+  hard_reject_count: quantidade com hard reject,
+  agreement_count: quantidade em que resposta independente concordou com o gabarito quando aplicável,
+  score: nota agregada REAL da etapa quando existir, senão null,
+  status: estado agregado da etapa,
+  metrics: objeto livre com métricas adicionais úteis,
+  notes: resumo operacional curto
+}.
+TELEMETRIA / DESTINO:
+- Se provider=revisor independente, incluir stage_metrics no MESMO JSON final devolvido ao usuário.
+- Para revisor independente, NÃO tentar gravar stage_metrics nem reviews no Supabase e NÃO gerar bridge_write/receipt_id. A resposta deve ser apenas o JSON completo pronto para colar no Admin.
+- Se provider=ChatGPT e o ambiente administrativo tiver acesso autorizado ao Supabase, a telemetria pode continuar usando SOMENTE a função controlada private.qf_record_stage_metrics(...), conforme o fluxo interno.
+- Nunca fazer INSERT/UPDATE/DELETE direto para telemetria ou reviews fora dos importadores administrativos autorizados.
+- Nunca pedir, imprimir, armazenar ou inventar service_role, senha, token, anon key, publishable key, JWT ou chave do Supabase.
 JSON válido é o contrato máquina-a-máquina. Não preencher aprovações, fontes verificadas ou notas sem executar a avaliação. IDs são imutáveis; toda revisão informa item_version e toda correção informa expected_version.
 
 BANCA: INFORMAR BANCA CADASTRADA
@@ -806,15 +1187,39 @@ FONTES CIENTÍFICAS
 Documento primário atual que sustente a decisão exata, incluindo seção quando verificável.
 PONTO DE PARTIDA PARA CORPUS (não equivale a prova analisada): a localizar
 CORPUS VERIFICADO: []
-Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade. Campos históricos de extensão, incidência e dificuldade só viram regras após conferência no corpus.
-Antes de gerar: registrar edição, URL oficial, IDs/páginas dos itens analisados, n amostrado, comprimento em palavras, formatos, operações cognitivas, alternativas e limites da amostra. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes. Se insuficiente, retornar pendência de calibração, sem prometer fidelidade.
+ESTADO DE CALIBRAÇÃO: {}
+Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade.
+Se prompt_calibration.status == &quot;CALIBRATED_FROZEN&quot; OU prompt_calibration.identity_status == &quot;FROZEN&quot; OU (prompt_calibration.decision == &quot;PROMPT_APPROVED&quot; e final_prompt_score &gt;=84), o perfil já é canônico para produção: NÃO reabrir calibração, NÃO exigir novo corpus antes de gerar e NÃO alterar identidade editorial por resultados do lote em produção. O corpus pode ser enriquecido depois sem bloquear produção.
+Somente perfis ainda não aprovados devem registrar edição, URL oficial, IDs/páginas, n amostrado, formatos e limites da amostra antes de declarar fidelidade. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes.
+ENDEREÇO OPERACIONAL — OBRIGATÓRIO E IMUTÁVEL
+Workspace/site: https://www.resibulando.online/admin/
+Endereço operacional: NÃO VINCULADO — PROMPT MODELO; NÃO EXECUTAR
+Lote: NÃO VINCULADO
+Bloco: NÃO APLICÁVEL
+Etapa: chatgpt_correction
+
+TRAVA DE ESCOPO:
+- Você está autorizado a atuar EXCLUSIVAMENTE no endereço operacional acima.
+- Prompt-modelo sem lote/bloco vinculado: não executar nem persistir até receber endereço operacional concreto.
+- Sem destino operacional: não gravar nada.
+- IDs, lote, bloco e versões presentes no JSON/ambiente atual prevalecem sobre exemplos do prompt.
+- Nunca invente leitura, gravação, versão, receipt_id ou confirmação.
+
+PERSISTÊNCIA DESTA ETAPA — CHATGPT / CORREÇÃO:
+- Aplicar na QUESTÃO PRINCIPAL somente approved_patch previamente autorizado na adjudicação da MESMA item_version e review_id.
+- Se a adjudicação for disagree, não alterar a questão.
+- Ao aplicar mudança, preservar question_id, criar/incrementar a nova versão pelo mecanismo do backend e manter histórico da versão anterior.
+- Após a correção, limpar aprovações incompatíveis com a versão antiga e encaminhar a nova versão para nova resolução/reauditoria conforme o pipeline.
 
 Aplicar somente approved_patch da adjudicação da MESMA versão e review_id. agree/partially_agree autorizam apenas os valores explícitos. disagree ou ausência de adjudicação impedem alteração. Não modificar itens publicados.
 Preservar ID/banca; expected_version deve corresponder à versão recebida. O backend incrementa versão, limpa aprovações e exige nova resolução cega e reauditoria. Não aumentar versão manualmente. Campos não alterados não entram no patch.
 {
   &quot;schema_version&quot;: &quot;2.0&quot;,
   &quot;batch_number&quot;: null,
+  &quot;batch_code&quot;: null,
   &quot;block_number&quot;: null,
+  &quot;block_code&quot;: null,
+  &quot;operational_address&quot;: null,
   &quot;exam_style&quot;: null,
   &quot;review_stage&quot;: &quot;chatgpt_correction_review&quot;,
   &quot;questions&quot;: [
@@ -824,7 +1229,25 @@ Preservar ID/banca; expected_version deve corresponder à versão recebida. O ba
       &quot;review_id&quot;: &quot;UUID_DO_PARECER_EXPORTADO&quot;,
       &quot;patch&quot;: {}
     }
-  ]
+  ],
+  &quot;stage_metrics&quot;: {
+    &quot;exam_style&quot;: null,
+    &quot;batch_number&quot;: null,
+    &quot;block_number&quot;: null,
+    &quot;stage&quot;: &quot;chatgpt_correction&quot;,
+    &quot;provider&quot;: &quot;ChatGPT&quot;,
+    &quot;run_label&quot;: null,
+    &quot;total_count&quot;: 0,
+    &quot;approved_count&quot;: 0,
+    &quot;needs_revision_count&quot;: 0,
+    &quot;rejected_count&quot;: 0,
+    &quot;hard_reject_count&quot;: 0,
+    &quot;agreement_count&quot;: 0,
+    &quot;score&quot;: null,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;metrics&quot;: {},
+    &quot;notes&quot;: &quot;&quot;
+  }
 }</pre>
               </div>
             </details>
@@ -834,17 +1257,82 @@ Preservar ID/banca; expected_version deve corresponder à versão recebida. O ba
               <div class="admin-qf-prompt-wrap">
                 <button class="button secondary admin-qf-copy" type="button" data-copy-target="qf-prompt-chatgpt-final">Copiar prompt</button>
                 <pre id="qf-prompt-chatgpt-final" class="admin-qf-prompt">CONTRATO LURIA 3.8
-REVISÃO CEGA OBRIGATÓRIA: ignore completamente memória do modelo, memória da conta, conversas anteriores, pareceres, scores, correções, status e conclusões de outras etapas. Avalie somente a versão atual como inédita. A memória do modelo não é fonte; dúvidas científicas devem ser verificadas em fontes atuais, priorizando Ministério da Saúde e sociedades brasileiras pertinentes.
 Exatamente quatro alternativas A-D em TODAS as bancas; nunca penalizar essa adaptação.
 Uma única melhor resposta; dados suficientes; contexto coerente; conteúdo autoral.
-Todas as explicações A-D devem justificar especificamente a opção. Distratores do mesmo eixo, baseados em erros plausíveis e elimináveis pelos dados.
-Dificuldade depende do raciocínio exigido e da competição entre alternativas. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
+PULO DO GATO OBRIGATÓRIO: toda questão deve conter mensagem_chave preenchida como o “Pulo do Gato” — UMA frase curta, específica e memorável que, se o aluno tivesse acabado de ouvir antes da prova, seria suficiente para levá-lo à resposta correta daquela questão. Não escrever resumo genérico, definição ampla, repetição do gabarito ou conselho vago; capturar exatamente o discriminador decisivo do item.
+EXPLICAÇÃO OBRIGATÓRIA DAS ALTERNATIVAS: explicar individualmente por que a alternativa correta está certa E por que cada uma das outras três está errada naquele caso. As explicações A-D devem ser específicas para a vinheta, o comando e a alternativa, deixando claro o dado que confirma a correta e o erro clínico/conceitual de cada distrator. “Incorreta”, “não é a melhor” ou justificativa genérica não são aceitas.
+HARD REJECT 10 — PULO DO GATO / EXPLICAÇÕES INCOMPLETAS: se mensagem_chave estiver vazia, genérica, não permitiria acertar o item após ser ouvida, ou se qualquer uma das explicações A-D não disser concretamente por que aquela opção está certa/errada, o item não pode ser aprovado e deve voltar para correção.
+RELATÓRIO QUESTÃO POR QUESTÃO OBRIGATÓRIO: toda etapa de revisão, auditoria, reauditoria ou revisão final deve produzir também uma seção humana sequencial, um item por linha/bloco, sem agrupar questões. Formato mínimo: “42 — REJEITADA — motivo: ...”, “43 — APROVADA — motivo: ...” ou “44 — REVISAR — motivo: ...”. Sempre usar número/ID da questão, status explícito e motivo concreto. Não aceitar apenas totais agregados. Mesmo quando o JSON estruturado já contiver reviews[], repetir um resumo legível questão por questão para facilitar conferência humana.
+STATUS PADRÃO DO RELATÓRIO POR ITEM: APROVADA | REVISAR | REJEITADA. Se REJEITADA, indicar o hard reject ou falha principal; se REVISAR, dizer exatamente o que precisa mudar; se APROVADA, registrar brevemente por que passou.
+Distratores devem permanecer no mesmo eixo decisório e representar erros médicos reais, próximos e plausíveis; não fabricar uma resposta madura contra três caricaturas.
+CONCORRENTE FORTE OBRIGATÓRIO: em item médio/difícil, pelo menos um distrator deve continuar defensável após a leitura completa até que um dado discriminativo específico o derrube. Associação apenas temática não conta.
+REGRA DE SOBREVIVÊNCIA MÍNIMA: além da correta, pelo menos DOIS distratores devem permanecer plausíveis após leitura superficial de comando + alternativas e só devem cair após uso de um dado funcional específico da vinheta. Se apenas um concorrente sobrevive e dois distratores morrem cedo, REJEITAR e regenerar as alternativas.
+GATE DE DISTRATORES: antes de aceitar o item, verificar se pelo menos dois incorretos poderiam ser considerados por candidato parcialmente preparado e só caem por dado, indicação, timing, prioridade, contraindicação, sequência ou nuance técnica. Se 2–3 opções caem por absurdo, negligência, categoria incompatível ou linguagem denunciadora, REESCREVER.
+TESTE CEGO DAS ALTERNATIVAS: antes de ler a vinheta, o revisor deve tentar prever a chave apenas pelo comando + opções. Se a forma, sofisticação, prudência ou completude apontar a correta com confiança média/alta, rejeitar automaticamente.
+BLIND-OPTIONS HARD REJECT: o teste comando + alternativas sem vinheta é eliminatório. Se a chave puder ser prevista com confiança média/alta por completude, prudência, condicionalidade, número de ações, tecnicidade ou sofisticação textual, o item é REJECTED; não registrar como mera observação de estilo.
+PASSE CEGO OBRIGATÓRIO DAS OPÇÕES: apresentar ao revisor apenas comando + alternativas, sem vinheta. Se ele conseguir prever a chave com confiança alta por sofisticação, extensão, prudência, cautela ou completude textual, REJEITAR e regenerar SOMENTE as alternativas.
+HARD REJECT 1 — SURFACE GUESS: o revisor independente deve examinar comando + alternativas sem usar a vinheta. Se surface_guess_without_vignette == gabarito com confiança média ou alta, o item é REJECTED, não apenas needs_revision. Regenerar as alternativas do zero e submeter novamente à revisão.
+VALIDADOR DE ASSIMETRIA ESTRUTURAL: rejeitar automaticamente quando a correta for a única alternativa com linguagem de avaliação/consideração/monitorização/individualização, ressalva condicional, combinação de duas ações ou maior completude técnica, enquanto os distratores forem mais curtos, absolutos ou unidimensionais.
+HARD REJECT 2 — ASSIMETRIA LEXICAL: se lexical_asymmetry == FAIL, o item é REJECTED. Não corrigir apenas trocando uma palavra; regenerar o conjunto de alternativas preservando o eixo clínico. Exceção somente quando o absoluto for exatamente o conhecimento científico avaliado e o revisor registrar justificativa explícita.
+HARD REJECT 5 — ELIMINAÇÃO SUPERFICIAL: se DUAS OU MAIS alternativas puderem ser descartadas sem uso material dos dados funcionais da vinheta, por absurdo, categoria errada, negligência, extremismo, incompletude grosseira ou tom formal, o item é REJECTED e deve ser regenerado. Exceção: item fácil deliberadamente direto, desde que as quatro alternativas permaneçam clinicamente homogêneas e sem caricaturas.
+HARD REJECT 6 — ASSIMETRIA DE SOFISTICAÇÃO: comparar correta versus distratores em comprimento, cautela, condicionalidade, tecnicidade, completude e número de ações. Se a chave for a única alternativa claramente mais madura, individualizada, protetora ou tecnicamente completa, o item é REJECTED e as alternativas devem ser regeneradas.
+GATE DE ESPECIFICIDADE: quando os dados permitem decisão concreta, não aceitar chave protetora/genérica como &#x27;tratamento adequado&#x27;, &#x27;reversão apropriada&#x27;, &#x27;avaliar e tratar conforme gravidade&#x27; ou &#x27;escalonar conforme controle&#x27;. Cobrar a decisão discriminativa.
+DISTRATORES DO MESMO NÓ DECISÓRIO: priorizar erros de limiar, timing, indicação parcialmente satisfeita, prioridade invertida, interpretação errada de dado funcional ou sequência terapêutica incorreta. Evitar condutas genericamente ruins ou apenas tematicamente relacionadas.
+HARD REJECT 3 — CONTRAFACTUAL: em item médio/difícil, se o melhor distrator só se tornar correto mediante mudança do diagnóstico inteiro, alteração da própria alternativa ou cenário distante, o item é REJECTED. Exigir pequena mudança clinicamente plausível da vinheta que torne o melhor distrator correto ou claramente mais defensável.
+HARD REJECT 7 — SBA INDEPENDENTE: um segundo resolvedor independente deve responder sem conhecer a chave. Se independent_answer != gabarito, suspender automaticamente o item para revisão científica/SBA; nunca assumir que o resolvedor errou. Se houver mais de uma estratégia clinicamente aceita sem dado de desempate explícito, REJECTED.
+FUNCTIONAL_KILLER OBRIGATÓRIO: para os dois melhores distratores, registrar explicitamente functional_killer_1 e functional_killer_2 no parecer. Cada campo deve citar um dado concreto da vinheta e completar a frase “esta alternativa seria defensável, exceto porque a vinheta informa ___”. Campo vazio, genérico ou baseado apenas em regra abstrata = REJECTED.
+HARD REJECT 8 — DADO DE ELIMINAÇÃO DOS DOIS MELHORES DISTRATORES: para cada um dos dois melhores distratores, o revisor deve completar “esta alternativa só cai porque a vinheta informa ___”. Se não houver dado específico e funcional para ambos, REJECTED.
+HARD REJECT 9 — MÚLTIPLAS CORRETAS: se a defesa da chave depender apenas de “mais usual”, “mais completa”, “em geral preferível” ou preferência entre estratégias aceitas, REJECTED; fechar melhor o cenário antes de nova revisão.
+HARD REJECT 4 — DEPENDÊNCIA DA VINHETA: em item médio/difícil, se vignette_dependency == FAIL ou se nenhum dado concreto explicar por que a chave vence o melhor distrator, o item é REJECTED. Cada dado destacado deve apoiar/afastar diagnóstico ou mudar gravidade, prioridade, indicação, contraindicação, timing, sequência, cálculo ou decisão.
+GATE DE PADRÃO CLÁSSICO: item moderado/difícil não pode se resumir a achado clássico → resposta clássica contra três absurdos. A dificuldade deve emergir de alternativas concorrentes e contexto, não do nome do tema.
+GATE DE LOTE: depois da validação individual, um revisor deve procurar padrões transversais de quadro clássico + conduta óbvia, correta madura contra três extremos, universalizadores concentrados nos distratores, mesma operação cognitiva, mesmo nível de atenção e esqueleto semântico repetido. Se o padrão aparecer em série, reescrever os itens responsáveis mesmo que isoladamente sejam aceitáveis. Não usar quotas universais.
+GATE DE POSIÇÃO: a letra correta é atributo de apresentação, não identidade editorial. Em LOTES DE CALIBRAÇÃO com 15 itens, depois de fechar integralmente conteúdo e alternativas, reordenar SOMENTE as posições para que o gabarito siga exatamente A-B-C-D-A-B-C-D-A-B-C-D-A-B-C. Nunca alterar o conteúdo médico para fabricar a letra. No site, as questões poderão ser misturadas posteriormente.
+Dificuldade depende do raciocínio exigido e da competição entre alternativas, e deve ser atribuída/revalidada somente após o item completo. Não usar tema, gravidade, quantidade de dados ou contagem rígida de &#x27;etapas cognitivas&#x27; como proxy. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
 Estilo vem de cadernos oficiais do processo-alvo; ciência vem de fontes científicas independentes. Edital sozinho não demonstra arquitetura dos itens.
 Não inventar documento, edição, URL, seção, dados de corpus ou característica de banca. Falta de acesso = SOURCE_VERIFICATION_PENDING; falta de corpus = NEEDS_MORE_PRIMARY_STYLE_DATA; ambas impedem declarar aprovação correspondente.
 Usar fonte atual aplicável à pergunta e ao cenário brasileiro. Fonte internacional adequada não perde pontos por nacionalidade. Conflitos entre recomendações exigem contexto explícito que assegure resposta única.
-CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=94/100 na saída bruta inédita, antes de correções; não confundir com style_score.
-QUESTÃO FINAL: quality_score &gt;=95/100, style &gt;=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
+CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=84/100 na saída bruta inédita, antes de correções; não confundir com style_score.
+ROTEAMENTO FINAL SIMPLIFICADO: use a menor nota entre resolução cega e revisão independente do bloco. Nota &gt;86 e sem erro clínico = entra direto no lote; nota entre 50 e 86, inclusive, ou qualquer pendência clínica = nova revisão; nota &lt;50 = exclusão direta com arquivamento. Hard fail, ambiguidade e inconsistência de gabarito devem reduzir a nota e nunca ser mascarados por pontuação artificial.
 Feedback sobre distratores, clareza e segurança pode melhorar regras gerais; só alterar a identidade da banca com evidência primária documentada.
+MODOS DE EXECUÇÃO DAS ETAPAS CHATGPT:
+- MODO OPERACIONAL POR ENDEREÇO: quando o prompt trouxer ENDEREÇO OPERACIONAL com lote/bloco concretos e instruir acesso ao Admin/Supabase autorizado, a FONTE DE VERDADE é a versão ATUAL lida nesse endereço. O ChatGPT deve entrar no workspace indicado, localizar exatamente batch_code + block_code e trabalhar somente nas questões/item_version vigentes e pendentes daquela etapa.
+- MODO MANUAL POR JSON: somente quando o prompt trouxer explicitamente INPUT_JSON, INPUT_JSON_CEGO ou pacote manual colado, a FONTE DE VERDADE passa a ser exclusivamente esse JSON. Nesse modo, não buscar complementos no Admin/Supabase.
+- Nunca misturar os dois modos na mesma execução.
+- Em qualquer modo, NÃO usar memória, snippets, anexos antigos, arquivos anteriores ou histórico da conversa como substituto da fonte de verdade atual.
+- Antes de auditar, confirmar batch_code, block_code, question_id e item_version/version da fonte escolhida.
+- Preserve exatamente question_id + item_version/version recebidos/lidos.
+- Se o modo operacional estiver sem acesso autorizado, informe ACCESS_REQUIRED; nunca peça senha, token, anon key, service_role, JWT ou credencial.
+- Se o modo manual estiver truncado/estruturalmente inválido, informe JSON_INPUT_INVALID com o problema concreto.
+- O resultado de etapa manual deve ser devolvido como um único JSON completo, pronto para “Colar JSON de resposta”.
+- stage_metrics, totais agregados e relatório textual NÃO substituem reviews individuais exigidos pela etapa.
+- Nunca invente persistência, receipt_id, coverage ou conclusão administrativa.
+TELEMETRIA OBRIGATÓRIA POR ETAPA: toda saída JSON deve incluir um objeto top-level stage_metrics. Ele é lido pelo Admin e persistido no Supabase para atualizar o dashboard automaticamente. Preencher com dados REAIS da etapa; nunca estimar contagens. Estrutura obrigatória:
+stage_metrics = {
+  exam_style: banca atual,
+  batch_number: lote atual ou null,
+  batch_code: ID humano do lote no formato L001 quando houver lote,
+  block_number: bloco atual ou null,
+  block_code: ID humano do bloco no formato L001-B01 quando houver bloco,
+  stage: nome exato da etapa,
+  provider: ChatGPT | revisor independente | Human,
+  run_label: identificador curto opcional da rodada/parte,
+  total_count: quantidade realmente processada nesta resposta,
+  approved_count: quantidade aprovada nesta etapa,
+  needs_revision_count: quantidade que precisa revisão,
+  rejected_count: quantidade rejeitada,
+  hard_reject_count: quantidade com hard reject,
+  agreement_count: quantidade em que resposta independente concordou com o gabarito quando aplicável,
+  score: nota agregada REAL da etapa quando existir, senão null,
+  status: estado agregado da etapa,
+  metrics: objeto livre com métricas adicionais úteis,
+  notes: resumo operacional curto
+}.
+TELEMETRIA / DESTINO:
+- Se provider=revisor independente, incluir stage_metrics no MESMO JSON final devolvido ao usuário.
+- Para revisor independente, NÃO tentar gravar stage_metrics nem reviews no Supabase e NÃO gerar bridge_write/receipt_id. A resposta deve ser apenas o JSON completo pronto para colar no Admin.
+- Se provider=ChatGPT e o ambiente administrativo tiver acesso autorizado ao Supabase, a telemetria pode continuar usando SOMENTE a função controlada private.qf_record_stage_metrics(...), conforme o fluxo interno.
+- Nunca fazer INSERT/UPDATE/DELETE direto para telemetria ou reviews fora dos importadores administrativos autorizados.
+- Nunca pedir, imprimir, armazenar ou inventar service_role, senha, token, anon key, publishable key, JWT ou chave do Supabase.
 JSON válido é o contrato máquina-a-máquina. Não preencher aprovações, fontes verificadas ou notas sem executar a avaliação. IDs são imutáveis; toda revisão informa item_version e toda correção informa expected_version.
 
 BANCA: INFORMAR BANCA CADASTRADA
@@ -860,17 +1348,40 @@ FONTES CIENTÍFICAS
 Documento primário atual que sustente a decisão exata, incluindo seção quando verificável.
 PONTO DE PARTIDA PARA CORPUS (não equivale a prova analisada): a localizar
 CORPUS VERIFICADO: []
-Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade. Campos históricos de extensão, incidência e dificuldade só viram regras após conferência no corpus.
-Antes de gerar: registrar edição, URL oficial, IDs/páginas dos itens analisados, n amostrado, comprimento em palavras, formatos, operações cognitivas, alternativas e limites da amostra. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes. Se insuficiente, retornar pendência de calibração, sem prometer fidelidade.
+ESTADO DE CALIBRAÇÃO: {}
+Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade.
+Se prompt_calibration.status == &quot;CALIBRATED_FROZEN&quot; OU prompt_calibration.identity_status == &quot;FROZEN&quot; OU (prompt_calibration.decision == &quot;PROMPT_APPROVED&quot; e final_prompt_score &gt;=84), o perfil já é canônico para produção: NÃO reabrir calibração, NÃO exigir novo corpus antes de gerar e NÃO alterar identidade editorial por resultados do lote em produção. O corpus pode ser enriquecido depois sem bloquear produção.
+Somente perfis ainda não aprovados devem registrar edição, URL oficial, IDs/páginas, n amostrado, formatos e limites da amostra antes de declarar fidelidade. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes.
+ENDEREÇO OPERACIONAL — OBRIGATÓRIO E IMUTÁVEL
+Workspace/site: https://www.resibulando.online/admin/
+Endereço operacional: NÃO VINCULADO — PROMPT MODELO; NÃO EXECUTAR
+Lote: NÃO VINCULADO
+Bloco: NÃO APLICÁVEL
+Etapa: lot_chatgpt_final
+
+TRAVA DE ESCOPO:
+- Você está autorizado a atuar EXCLUSIVAMENTE no endereço operacional acima.
+- Prompt-modelo sem lote/bloco vinculado: não executar nem persistir até receber endereço operacional concreto.
+- Sem destino operacional: não gravar nada.
+- IDs, lote, bloco e versões presentes no JSON/ambiente atual prevalecem sobre exemplos do prompt.
+- Nunca invente leitura, gravação, versão, receipt_id ou confirmação.
+
+PERSISTÊNCIA DESTA ETAPA:
+- Persistir no destino próprio da etapa sem misturar parecer independente com conteúdo canônico.
+- Pareceres externos não podem sobrescrever a questão principal sem adjudicação explícita do ChatGPT.
 
 AUDITORIA GLOBAL DAS 1.000. Revisar todas para duplicação semântica, padrão de letras, concentração temática, pistas formais, cobertura da prova-alvo e consistência editorial. Não presumir sete áreas universais.
 Rechecagem científica: todos os itens com version&gt;1, todas as questões antes sinalizadas, todas as doses/cutoffs/alto risco e uma amostra adicional de pelo menos 20% das restantes, estratificada por bloco, área e dificuldade, com semente/método registrados. Se não houver classificação de risco confiável, reexaminar todos. Registrar IDs rechecados e cobertura; nunca apresentar amostragem como revisão científica integral.
-Revisão independente: não receber conclusão dos outros revisores como autoridade.
+Revisão independente: IGNORE MEMÓRIA, histórico, notas e conclusão da outra passada. Avalie como se o lote fosse novo. A memória do modelo não é fonte.
 Copiar integralmente version_manifest do pacote. Se qualquer versão mudar, todas as revisões finais e aprovação humana precisam ser renovadas. Cada questão sinalizada deve identificar ID/versão e motivo; mudanças seguem adjudicação, correção e reauditoria. Arrays de achados não podem coexistir com approved.
+Além dos agregados, produzir relatório humano questão por questão para TODOS os itens efetivamente revisados, no formato “ID — APROVADA/REVISAR/REJEITADA — motivo: ...”. Nenhum item revisado pode desaparecer no resumo.
 {
   &quot;schema_version&quot;: &quot;2.0&quot;,
   &quot;batch_number&quot;: null,
+  &quot;batch_code&quot;: null,
   &quot;block_number&quot;: null,
+  &quot;block_code&quot;: null,
+  &quot;operational_address&quot;: null,
   &quot;exam_style&quot;: null,
   &quot;review_stage&quot;: &quot;lot_chatgpt_final&quot;,
   &quot;reviewer&quot;: &quot;ChatGPT&quot;,
@@ -886,7 +1397,25 @@ Copiar integralmente version_manifest do pacote. Se qualquer versão mudar, toda
   &quot;duplicate_clusters&quot;: [],
   &quot;answer_source_problems&quot;: [],
   &quot;coverage_gaps&quot;: [],
-  &quot;comments&quot;: []
+  &quot;comments&quot;: [],
+  &quot;stage_metrics&quot;: {
+    &quot;exam_style&quot;: null,
+    &quot;batch_number&quot;: null,
+    &quot;block_number&quot;: null,
+    &quot;stage&quot;: &quot;lot_chatgpt_final&quot;,
+    &quot;provider&quot;: &quot;ChatGPT&quot;,
+    &quot;run_label&quot;: null,
+    &quot;total_count&quot;: 0,
+    &quot;approved_count&quot;: 0,
+    &quot;needs_revision_count&quot;: 0,
+    &quot;rejected_count&quot;: 0,
+    &quot;hard_reject_count&quot;: 0,
+    &quot;agreement_count&quot;: 0,
+    &quot;score&quot;: null,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;metrics&quot;: {},
+    &quot;notes&quot;: &quot;&quot;
+  }
 }
 Após as três aprovações da versão atual, aguardar aprovação humana final no admin. Não publicar.</pre>
               </div>
@@ -897,17 +1426,82 @@ Após as três aprovações da versão atual, aguardar aprovação humana final 
               <div class="admin-qf-prompt-wrap">
                 <button class="button secondary admin-qf-copy" type="button" data-copy-target="qf-prompt-perplexity-final">Copiar prompt</button>
                 <pre id="qf-prompt-perplexity-final" class="admin-qf-prompt">CONTRATO LURIA 3.8
-REVISÃO CEGA OBRIGATÓRIA: ignore completamente memória do modelo, memória da conta, conversas anteriores, pareceres, scores, correções, status e conclusões de outras etapas. Avalie somente a versão atual como inédita. A memória do modelo não é fonte; dúvidas científicas devem ser verificadas em fontes atuais, priorizando Ministério da Saúde e sociedades brasileiras pertinentes.
 Exatamente quatro alternativas A-D em TODAS as bancas; nunca penalizar essa adaptação.
 Uma única melhor resposta; dados suficientes; contexto coerente; conteúdo autoral.
-Todas as explicações A-D devem justificar especificamente a opção. Distratores do mesmo eixo, baseados em erros plausíveis e elimináveis pelos dados.
-Dificuldade depende do raciocínio exigido e da competição entre alternativas. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
+PULO DO GATO OBRIGATÓRIO: toda questão deve conter mensagem_chave preenchida como o “Pulo do Gato” — UMA frase curta, específica e memorável que, se o aluno tivesse acabado de ouvir antes da prova, seria suficiente para levá-lo à resposta correta daquela questão. Não escrever resumo genérico, definição ampla, repetição do gabarito ou conselho vago; capturar exatamente o discriminador decisivo do item.
+EXPLICAÇÃO OBRIGATÓRIA DAS ALTERNATIVAS: explicar individualmente por que a alternativa correta está certa E por que cada uma das outras três está errada naquele caso. As explicações A-D devem ser específicas para a vinheta, o comando e a alternativa, deixando claro o dado que confirma a correta e o erro clínico/conceitual de cada distrator. “Incorreta”, “não é a melhor” ou justificativa genérica não são aceitas.
+HARD REJECT 10 — PULO DO GATO / EXPLICAÇÕES INCOMPLETAS: se mensagem_chave estiver vazia, genérica, não permitiria acertar o item após ser ouvida, ou se qualquer uma das explicações A-D não disser concretamente por que aquela opção está certa/errada, o item não pode ser aprovado e deve voltar para correção.
+RELATÓRIO QUESTÃO POR QUESTÃO OBRIGATÓRIO: toda etapa de revisão, auditoria, reauditoria ou revisão final deve produzir também uma seção humana sequencial, um item por linha/bloco, sem agrupar questões. Formato mínimo: “42 — REJEITADA — motivo: ...”, “43 — APROVADA — motivo: ...” ou “44 — REVISAR — motivo: ...”. Sempre usar número/ID da questão, status explícito e motivo concreto. Não aceitar apenas totais agregados. Mesmo quando o JSON estruturado já contiver reviews[], repetir um resumo legível questão por questão para facilitar conferência humana.
+STATUS PADRÃO DO RELATÓRIO POR ITEM: APROVADA | REVISAR | REJEITADA. Se REJEITADA, indicar o hard reject ou falha principal; se REVISAR, dizer exatamente o que precisa mudar; se APROVADA, registrar brevemente por que passou.
+Distratores devem permanecer no mesmo eixo decisório e representar erros médicos reais, próximos e plausíveis; não fabricar uma resposta madura contra três caricaturas.
+CONCORRENTE FORTE OBRIGATÓRIO: em item médio/difícil, pelo menos um distrator deve continuar defensável após a leitura completa até que um dado discriminativo específico o derrube. Associação apenas temática não conta.
+REGRA DE SOBREVIVÊNCIA MÍNIMA: além da correta, pelo menos DOIS distratores devem permanecer plausíveis após leitura superficial de comando + alternativas e só devem cair após uso de um dado funcional específico da vinheta. Se apenas um concorrente sobrevive e dois distratores morrem cedo, REJEITAR e regenerar as alternativas.
+GATE DE DISTRATORES: antes de aceitar o item, verificar se pelo menos dois incorretos poderiam ser considerados por candidato parcialmente preparado e só caem por dado, indicação, timing, prioridade, contraindicação, sequência ou nuance técnica. Se 2–3 opções caem por absurdo, negligência, categoria incompatível ou linguagem denunciadora, REESCREVER.
+TESTE CEGO DAS ALTERNATIVAS: antes de ler a vinheta, o revisor deve tentar prever a chave apenas pelo comando + opções. Se a forma, sofisticação, prudência ou completude apontar a correta com confiança média/alta, rejeitar automaticamente.
+BLIND-OPTIONS HARD REJECT: o teste comando + alternativas sem vinheta é eliminatório. Se a chave puder ser prevista com confiança média/alta por completude, prudência, condicionalidade, número de ações, tecnicidade ou sofisticação textual, o item é REJECTED; não registrar como mera observação de estilo.
+PASSE CEGO OBRIGATÓRIO DAS OPÇÕES: apresentar ao revisor apenas comando + alternativas, sem vinheta. Se ele conseguir prever a chave com confiança alta por sofisticação, extensão, prudência, cautela ou completude textual, REJEITAR e regenerar SOMENTE as alternativas.
+HARD REJECT 1 — SURFACE GUESS: o revisor independente deve examinar comando + alternativas sem usar a vinheta. Se surface_guess_without_vignette == gabarito com confiança média ou alta, o item é REJECTED, não apenas needs_revision. Regenerar as alternativas do zero e submeter novamente à revisão.
+VALIDADOR DE ASSIMETRIA ESTRUTURAL: rejeitar automaticamente quando a correta for a única alternativa com linguagem de avaliação/consideração/monitorização/individualização, ressalva condicional, combinação de duas ações ou maior completude técnica, enquanto os distratores forem mais curtos, absolutos ou unidimensionais.
+HARD REJECT 2 — ASSIMETRIA LEXICAL: se lexical_asymmetry == FAIL, o item é REJECTED. Não corrigir apenas trocando uma palavra; regenerar o conjunto de alternativas preservando o eixo clínico. Exceção somente quando o absoluto for exatamente o conhecimento científico avaliado e o revisor registrar justificativa explícita.
+HARD REJECT 5 — ELIMINAÇÃO SUPERFICIAL: se DUAS OU MAIS alternativas puderem ser descartadas sem uso material dos dados funcionais da vinheta, por absurdo, categoria errada, negligência, extremismo, incompletude grosseira ou tom formal, o item é REJECTED e deve ser regenerado. Exceção: item fácil deliberadamente direto, desde que as quatro alternativas permaneçam clinicamente homogêneas e sem caricaturas.
+HARD REJECT 6 — ASSIMETRIA DE SOFISTICAÇÃO: comparar correta versus distratores em comprimento, cautela, condicionalidade, tecnicidade, completude e número de ações. Se a chave for a única alternativa claramente mais madura, individualizada, protetora ou tecnicamente completa, o item é REJECTED e as alternativas devem ser regeneradas.
+GATE DE ESPECIFICIDADE: quando os dados permitem decisão concreta, não aceitar chave protetora/genérica como &#x27;tratamento adequado&#x27;, &#x27;reversão apropriada&#x27;, &#x27;avaliar e tratar conforme gravidade&#x27; ou &#x27;escalonar conforme controle&#x27;. Cobrar a decisão discriminativa.
+DISTRATORES DO MESMO NÓ DECISÓRIO: priorizar erros de limiar, timing, indicação parcialmente satisfeita, prioridade invertida, interpretação errada de dado funcional ou sequência terapêutica incorreta. Evitar condutas genericamente ruins ou apenas tematicamente relacionadas.
+HARD REJECT 3 — CONTRAFACTUAL: em item médio/difícil, se o melhor distrator só se tornar correto mediante mudança do diagnóstico inteiro, alteração da própria alternativa ou cenário distante, o item é REJECTED. Exigir pequena mudança clinicamente plausível da vinheta que torne o melhor distrator correto ou claramente mais defensável.
+HARD REJECT 7 — SBA INDEPENDENTE: um segundo resolvedor independente deve responder sem conhecer a chave. Se independent_answer != gabarito, suspender automaticamente o item para revisão científica/SBA; nunca assumir que o resolvedor errou. Se houver mais de uma estratégia clinicamente aceita sem dado de desempate explícito, REJECTED.
+FUNCTIONAL_KILLER OBRIGATÓRIO: para os dois melhores distratores, registrar explicitamente functional_killer_1 e functional_killer_2 no parecer. Cada campo deve citar um dado concreto da vinheta e completar a frase “esta alternativa seria defensável, exceto porque a vinheta informa ___”. Campo vazio, genérico ou baseado apenas em regra abstrata = REJECTED.
+HARD REJECT 8 — DADO DE ELIMINAÇÃO DOS DOIS MELHORES DISTRATORES: para cada um dos dois melhores distratores, o revisor deve completar “esta alternativa só cai porque a vinheta informa ___”. Se não houver dado específico e funcional para ambos, REJECTED.
+HARD REJECT 9 — MÚLTIPLAS CORRETAS: se a defesa da chave depender apenas de “mais usual”, “mais completa”, “em geral preferível” ou preferência entre estratégias aceitas, REJECTED; fechar melhor o cenário antes de nova revisão.
+HARD REJECT 4 — DEPENDÊNCIA DA VINHETA: em item médio/difícil, se vignette_dependency == FAIL ou se nenhum dado concreto explicar por que a chave vence o melhor distrator, o item é REJECTED. Cada dado destacado deve apoiar/afastar diagnóstico ou mudar gravidade, prioridade, indicação, contraindicação, timing, sequência, cálculo ou decisão.
+GATE DE PADRÃO CLÁSSICO: item moderado/difícil não pode se resumir a achado clássico → resposta clássica contra três absurdos. A dificuldade deve emergir de alternativas concorrentes e contexto, não do nome do tema.
+GATE DE LOTE: depois da validação individual, um revisor deve procurar padrões transversais de quadro clássico + conduta óbvia, correta madura contra três extremos, universalizadores concentrados nos distratores, mesma operação cognitiva, mesmo nível de atenção e esqueleto semântico repetido. Se o padrão aparecer em série, reescrever os itens responsáveis mesmo que isoladamente sejam aceitáveis. Não usar quotas universais.
+GATE DE POSIÇÃO: a letra correta é atributo de apresentação, não identidade editorial. Em LOTES DE CALIBRAÇÃO com 15 itens, depois de fechar integralmente conteúdo e alternativas, reordenar SOMENTE as posições para que o gabarito siga exatamente A-B-C-D-A-B-C-D-A-B-C-D-A-B-C. Nunca alterar o conteúdo médico para fabricar a letra. No site, as questões poderão ser misturadas posteriormente.
+Dificuldade depende do raciocínio exigido e da competição entre alternativas, e deve ser atribuída/revalidada somente após o item completo. Não usar tema, gravidade, quantidade de dados ou contagem rígida de &#x27;etapas cognitivas&#x27; como proxy. Evitar pistas de comprimento, absolutos denunciadores, repetição de moldes e rotação mecânica de gabarito.
 Estilo vem de cadernos oficiais do processo-alvo; ciência vem de fontes científicas independentes. Edital sozinho não demonstra arquitetura dos itens.
 Não inventar documento, edição, URL, seção, dados de corpus ou característica de banca. Falta de acesso = SOURCE_VERIFICATION_PENDING; falta de corpus = NEEDS_MORE_PRIMARY_STYLE_DATA; ambas impedem declarar aprovação correspondente.
 Usar fonte atual aplicável à pergunta e ao cenário brasileiro. Fonte internacional adequada não perde pontos por nacionalidade. Conflitos entre recomendações exigem contexto explícito que assegure resposta única.
-CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=94/100 na saída bruta inédita, antes de correções; não confundir com style_score.
-QUESTÃO FINAL: quality_score &gt;=95/100, style &gt;=9.7/10, rubrica completa, fontes verificadas, sem hard fail, sem ambiguidade e com única melhor resposta. Nota alta não compensa falha eliminatória.
+CALIBRAÇÃO DO PROMPT: FINAL_PROMPT_SCORE &gt;=84/100 na saída bruta inédita, antes de correções; não confundir com style_score.
+ROTEAMENTO FINAL SIMPLIFICADO: use a menor nota entre resolução cega e revisão independente do bloco. Nota &gt;86 e sem erro clínico = entra direto no lote; nota entre 50 e 86, inclusive, ou qualquer pendência clínica = nova revisão; nota &lt;50 = exclusão direta com arquivamento. Hard fail, ambiguidade e inconsistência de gabarito devem reduzir a nota e nunca ser mascarados por pontuação artificial.
 Feedback sobre distratores, clareza e segurança pode melhorar regras gerais; só alterar a identidade da banca com evidência primária documentada.
+MODOS DE EXECUÇÃO DAS ETAPAS CHATGPT:
+- MODO OPERACIONAL POR ENDEREÇO: quando o prompt trouxer ENDEREÇO OPERACIONAL com lote/bloco concretos e instruir acesso ao Admin/Supabase autorizado, a FONTE DE VERDADE é a versão ATUAL lida nesse endereço. O ChatGPT deve entrar no workspace indicado, localizar exatamente batch_code + block_code e trabalhar somente nas questões/item_version vigentes e pendentes daquela etapa.
+- MODO MANUAL POR JSON: somente quando o prompt trouxer explicitamente INPUT_JSON, INPUT_JSON_CEGO ou pacote manual colado, a FONTE DE VERDADE passa a ser exclusivamente esse JSON. Nesse modo, não buscar complementos no Admin/Supabase.
+- Nunca misturar os dois modos na mesma execução.
+- Em qualquer modo, NÃO usar memória, snippets, anexos antigos, arquivos anteriores ou histórico da conversa como substituto da fonte de verdade atual.
+- Antes de auditar, confirmar batch_code, block_code, question_id e item_version/version da fonte escolhida.
+- Preserve exatamente question_id + item_version/version recebidos/lidos.
+- Se o modo operacional estiver sem acesso autorizado, informe ACCESS_REQUIRED; nunca peça senha, token, anon key, service_role, JWT ou credencial.
+- Se o modo manual estiver truncado/estruturalmente inválido, informe JSON_INPUT_INVALID com o problema concreto.
+- O resultado de etapa manual deve ser devolvido como um único JSON completo, pronto para “Colar JSON de resposta”.
+- stage_metrics, totais agregados e relatório textual NÃO substituem reviews individuais exigidos pela etapa.
+- Nunca invente persistência, receipt_id, coverage ou conclusão administrativa.
+TELEMETRIA OBRIGATÓRIA POR ETAPA: toda saída JSON deve incluir um objeto top-level stage_metrics. Ele é lido pelo Admin e persistido no Supabase para atualizar o dashboard automaticamente. Preencher com dados REAIS da etapa; nunca estimar contagens. Estrutura obrigatória:
+stage_metrics = {
+  exam_style: banca atual,
+  batch_number: lote atual ou null,
+  batch_code: ID humano do lote no formato L001 quando houver lote,
+  block_number: bloco atual ou null,
+  block_code: ID humano do bloco no formato L001-B01 quando houver bloco,
+  stage: nome exato da etapa,
+  provider: ChatGPT | revisor independente | Human,
+  run_label: identificador curto opcional da rodada/parte,
+  total_count: quantidade realmente processada nesta resposta,
+  approved_count: quantidade aprovada nesta etapa,
+  needs_revision_count: quantidade que precisa revisão,
+  rejected_count: quantidade rejeitada,
+  hard_reject_count: quantidade com hard reject,
+  agreement_count: quantidade em que resposta independente concordou com o gabarito quando aplicável,
+  score: nota agregada REAL da etapa quando existir, senão null,
+  status: estado agregado da etapa,
+  metrics: objeto livre com métricas adicionais úteis,
+  notes: resumo operacional curto
+}.
+TELEMETRIA / DESTINO:
+- Se provider=revisor independente, incluir stage_metrics no MESMO JSON final devolvido ao usuário.
+- Para revisor independente, NÃO tentar gravar stage_metrics nem reviews no Supabase e NÃO gerar bridge_write/receipt_id. A resposta deve ser apenas o JSON completo pronto para colar no Admin.
+- Se provider=ChatGPT e o ambiente administrativo tiver acesso autorizado ao Supabase, a telemetria pode continuar usando SOMENTE a função controlada private.qf_record_stage_metrics(...), conforme o fluxo interno.
+- Nunca fazer INSERT/UPDATE/DELETE direto para telemetria ou reviews fora dos importadores administrativos autorizados.
+- Nunca pedir, imprimir, armazenar ou inventar service_role, senha, token, anon key, publishable key, JWT ou chave do Supabase.
 JSON válido é o contrato máquina-a-máquina. Não preencher aprovações, fontes verificadas ou notas sem executar a avaliação. IDs são imutáveis; toda revisão informa item_version e toda correção informa expected_version.
 
 BANCA: INFORMAR BANCA CADASTRADA
@@ -923,17 +1517,42 @@ FONTES CIENTÍFICAS
 Documento primário atual que sustente a decisão exata, incluindo seção quando verificável.
 PONTO DE PARTIDA PARA CORPUS (não equivale a prova analisada): a localizar
 CORPUS VERIFICADO: []
-Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade. Campos históricos de extensão, incidência e dificuldade só viram regras após conferência no corpus.
-Antes de gerar: registrar edição, URL oficial, IDs/páginas dos itens analisados, n amostrado, comprimento em palavras, formatos, operações cognitivas, alternativas e limites da amostra. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes. Se insuficiente, retornar pendência de calibração, sem prometer fidelidade.
+ESTADO DE CALIBRAÇÃO: {}
+Não incorporar calibration_notes, style_score_note ou resultados de lotes anteriores à identidade.
+Se prompt_calibration.status == &quot;CALIBRATED_FROZEN&quot; OU prompt_calibration.identity_status == &quot;FROZEN&quot; OU (prompt_calibration.decision == &quot;PROMPT_APPROVED&quot; e final_prompt_score &gt;=84), o perfil já é canônico para produção: NÃO reabrir calibração, NÃO exigir novo corpus antes de gerar e NÃO alterar identidade editorial por resultados do lote em produção. O corpus pode ser enriquecido depois sem bloquear produção.
+Somente perfis ainda não aprovados devem registrar edição, URL oficial, IDs/páginas, n amostrado, formatos e limites da amostra antes de declarar fidelidade. Preferir &gt;=20 itens e 2–3 edições quando disponíveis; não inventar edições inexistentes.
+ENDEREÇO OPERACIONAL — OBRIGATÓRIO E IMUTÁVEL
+Workspace/site: https://www.resibulando.online/admin/
+Endereço operacional: NÃO VINCULADO — PROMPT MODELO; NÃO EXECUTAR
+Lote: NÃO VINCULADO
+Bloco: NÃO APLICÁVEL
+Etapa: lot_perplexity_final
+
+TRAVA DE ESCOPO:
+- Você está autorizado a atuar EXCLUSIVAMENTE no endereço operacional acima.
+- Prompt-modelo sem lote/bloco vinculado: não executar nem persistir até receber endereço operacional concreto.
+- Sem destino operacional: não gravar nada.
+- IDs, lote, bloco e versões presentes no JSON/ambiente atual prevalecem sobre exemplos do prompt.
+- Nunca invente leitura, gravação, versão, receipt_id ou confirmação.
+
+PERSISTÊNCIA DESTA ETAPA — CHATGPT / REVISÃO FINAL INDEPENDENTE B:
+- IGNORE MEMÓRIA e o resultado da revisão final A.
+- Reavalie o lote atual de modo independente, usando o version_manifest atual.
+- Não altere diretamente questões; registre achados separados.
+- O nome técnico lot_perplexity_final é legado interno do banco; o revisor operacional é ChatGPT.
 
 AUDITORIA GLOBAL DAS 1.000. Revisar todas para duplicação semântica, padrão de letras, concentração temática, pistas formais, cobertura da prova-alvo e consistência editorial. Não presumir sete áreas universais.
 Rechecagem científica: todos os itens com version&gt;1, todas as questões antes sinalizadas, todas as doses/cutoffs/alto risco e uma amostra adicional de pelo menos 20% das restantes, estratificada por bloco, área e dificuldade, com semente/método registrados. Se não houver classificação de risco confiável, reexaminar todos. Registrar IDs rechecados e cobertura; nunca apresentar amostragem como revisão científica integral.
-Revisão independente: não receber conclusão dos outros revisores como autoridade.
+Revisão independente: IGNORE MEMÓRIA, histórico, notas e conclusão da outra passada. Avalie como se o lote fosse novo. A memória do modelo não é fonte.
 Copiar integralmente version_manifest do pacote. Se qualquer versão mudar, todas as revisões finais e aprovação humana precisam ser renovadas. Cada questão sinalizada deve identificar ID/versão e motivo; mudanças seguem adjudicação, correção e reauditoria. Arrays de achados não podem coexistir com approved.
+Além dos agregados, produzir relatório humano questão por questão para TODOS os itens efetivamente revisados, no formato “ID — APROVADA/REVISAR/REJEITADA — motivo: ...”. Nenhum item revisado pode desaparecer no resumo.
 {
   &quot;schema_version&quot;: &quot;2.0&quot;,
   &quot;batch_number&quot;: null,
+  &quot;batch_code&quot;: null,
   &quot;block_number&quot;: null,
+  &quot;block_code&quot;: null,
+  &quot;operational_address&quot;: null,
   &quot;exam_style&quot;: null,
   &quot;review_stage&quot;: &quot;lot_perplexity_final&quot;,
   &quot;reviewer&quot;: &quot;ChatGPT&quot;,
@@ -949,7 +1568,25 @@ Copiar integralmente version_manifest do pacote. Se qualquer versão mudar, toda
   &quot;duplicate_clusters&quot;: [],
   &quot;answer_source_problems&quot;: [],
   &quot;coverage_gaps&quot;: [],
-  &quot;comments&quot;: []
+  &quot;comments&quot;: [],
+  &quot;stage_metrics&quot;: {
+    &quot;exam_style&quot;: null,
+    &quot;batch_number&quot;: null,
+    &quot;block_number&quot;: null,
+    &quot;stage&quot;: &quot;lot_perplexity_final&quot;,
+    &quot;provider&quot;: &quot;ChatGPT&quot;,
+    &quot;run_label&quot;: null,
+    &quot;total_count&quot;: 0,
+    &quot;approved_count&quot;: 0,
+    &quot;needs_revision_count&quot;: 0,
+    &quot;rejected_count&quot;: 0,
+    &quot;hard_reject_count&quot;: 0,
+    &quot;agreement_count&quot;: 0,
+    &quot;score&quot;: null,
+    &quot;status&quot;: &quot;completed&quot;,
+    &quot;metrics&quot;: {},
+    &quot;notes&quot;: &quot;&quot;
+  }
 }
 Após as três aprovações da versão atual, aguardar aprovação humana final no admin. Não publicar.</pre>
               </div>

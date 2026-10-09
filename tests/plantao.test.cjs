@@ -1,6 +1,7 @@
 const assert=require('node:assert/strict');
 const E=require('../assets/js/plantao-engine.js');
 const cases=require('../data/plantao-cases-v2.json');
+require('node:test').test('clinical scoring retains penalties and diagnosis/disposition contributions',()=>{
 for(const c of cases){
  const ids=c.actions.map(a=>a.id);assert.equal(new Set(ids).size,ids.length);
  for(const a of c.actions){assert(Number.isFinite(a.points));assert(Number.isFinite(a.time_min));for(const id of a.requires_all||[])assert(ids.includes(id));}
@@ -9,7 +10,9 @@ for(const c of cases){
  const state={performed:[...new Set([...rules.required_actions,...rules.recommended_actions])],outcomes:rules.success_outcomes,penalties:0,criticalElapsed:0,diagnosis:{correct:true},disposition:{correct:true}};
  assert.equal(E.score(c,state).total,100);
  assert.equal(E.score(c,{...state,penalties:20}).total,80,'Positive actions must never erase a harmful-action penalty');
- assert.equal(E.score(c,{...state,diagnosis:{correct:false},disposition:{correct:false},penalties:26}).total,49);
+ const noClinical={...state,diagnosis:{correct:false},disposition:{correct:false}};
+ assert.equal(E.score(c,noClinical).raw-E.score(c,{...noClinical,penalties:26}).raw,26,'Penalty must remain independent of diagnosis/disposition bonuses');
+ assert.equal(E.score(c,state).earned-E.score(c,noClinical).earned,30,'Current diagnosis and disposition bonuses total 30');
  assert.equal(E.score(c,{...state,criticalElapsed:rules.max_minutes+5}).total,95);
  const empty={performed:[],outcomes:[],penalties:0,criticalElapsed:0};
  assert.equal(E.score(c,empty).total,0);
@@ -23,3 +26,5 @@ const ana=cases.find(c=>c.slug==='anaphylaxis-ed'),a=ana.actions.find(a=>a.id===
 assert(E.resolve(ana,{performed:[],outcomes:[]},a).points<0);
 assert(E.resolve(ana,{performed:['epi_im'],outcomes:['responding']},a).points>0);
 console.log('PASS: four cases, six groups, 213 unique case actions, contextual penalties, equivalent therapies, diagnosis and disposition scoring.');
+
+});

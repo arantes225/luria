@@ -1,0 +1,12 @@
+{
+  "name": "luria-client-checks",
+  "private": true,
+  "scripts": {
+    "test": "node --test --test-isolation=none tests/*.test.cjs",
+    "check:syntax": "node scripts/check-syntax.cjs",
+    "check:prompts": "node scripts/sync-admin-prompts.cjs",
+    "check": "npm run check:syntax && npm run check:prompts && npm test"
+  },
+  "engines": { "node": ">=24.0.0" },
+  "devDependencies": { "jsdom": "29.0.1" }
+}

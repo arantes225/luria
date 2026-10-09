@@ -6578,31 +6578,74 @@ iniciarApp();
 (function installLuriaStudyTimer(){
   if (window.LuriaStudyTimer) return;
   const KEY="luria:active-study-session:v1", IDLE_MS=15*60*1000;
-  let state=null, idleHandle=null;
-  const read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||"null")}catch{return null}};
-  const write=()=>{try{state?localStorage.setItem(KEY,JSON.stringify(state)):localStorage.removeItem(KEY)}catch{}};
+  const owned=window.LuriaLocalOwnerStore, flights=new Map(), unpersisted=new Set(), completed=new Set();
+  let state=null, idleHandle=null, starts=Promise.resolve();
   const now=()=>Date.now();
-  const elapsed=()=>state ? Math.max(0,Math.floor(((state.accumulatedMs||0)+(state.running?now()-state.segmentStartedAt:0))/1000)) : 0;
-  async function flush(reason="paused"){
-    if(!state||!window.supabaseClient||!window.docmapUser?.id) return;
-    const seconds=elapsed(); if(seconds<1) return;
-    const payload={user_id:window.docmapUser.id,activity_kind:state.kind||"study",area:state.area||null,materia:state.materia||null,started_at:new Date(state.startedAt).toISOString(),ended_at:new Date().toISOString(),duration_seconds:seconds};
-    if(state.sourceId && /^[0-9a-f-]{36}$/i.test(state.sourceId)) payload.source_id=state.sourceId;
-    const {error}=await window.supabaseClient.from("study_sessions").insert(payload);
-    if(error) console.warn("LURIA: não foi possível registrar tempo de estudo",error);
-    else { state=null; write(); window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason,seconds}})); }
+  const read=()=>{try{const value=JSON.parse(owned?.read(KEY)||"null");return value?.ownerId===owned?.ownerId?value:null}catch{return null}};
+  function write(){
+    try{if(state){const key=owned?.key(KEY,state.ownerId);if(key){localStorage.setItem(key,JSON.stringify(state));unpersisted.delete(state.sessionId);}}}catch(error){unpersisted.add(state.sessionId);console.warn("LURIA: falha ao guardar sessão local",error);}
   }
+  const elapsed=()=>state ? Math.max(0,Math.floor(((state.accumulatedMs||0)+(state.running?now()-state.segmentStartedAt:0))/1000)) : 0;
+  function notify(reason,detail={}){window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason,...detail}}));}
   function pause(reason="manual"){
     if(!state?.running) return;
-    state.accumulatedMs=(state.accumulatedMs||0)+Math.max(0,now()-state.segmentStartedAt); state.running=false; state.pausedReason=reason; write();
-    window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason,state}}));
+    state.accumulatedMs=(state.accumulatedMs||0)+Math.max(0,now()-state.segmentStartedAt);
+    state.running=false;state.pausedReason=reason;write();clearTimeout(idleHandle);notify(reason,{state});
   }
-  function resume(){if(!state||state.running)return; state.running=true;state.segmentStartedAt=now();state.lastInteractionAt=now();state.pausedReason=null;write();scheduleIdle();}
-  function scheduleIdle(){clearTimeout(idleHandle);if(!state?.running||state.allowIdle)return;const wait=Math.max(0,IDLE_MS-(now()-(state.lastInteractionAt||now())));idleHandle=setTimeout(()=>pause("idle_15m"),wait+50)}
-  function touch(){if(!state?.running||state.allowIdle)return;state.lastInteractionAt=now();write();scheduleIdle()}
-  async function start(kind="study",opts={}){if(state) await flush("activity_changed"); const t=now();state={kind,sourceId:opts.sourceId||null,area:opts.area||null,materia:opts.materia||null,allowIdle:!!opts.allowIdle,startedAt:t,segmentStartedAt:t,lastInteractionAt:t,accumulatedMs:0,running:true};write();scheduleIdle();window.dispatchEvent(new CustomEvent("luria:study-timer",{detail:{reason:"started",state}}));return state}
-  function setExternalQuestions(active=true){if(!state&&active)return start("external_questions",{allowIdle:true});if(state){state.allowIdle=!!active;if(active)state.kind="external_questions";write();scheduleIdle()}}
-  state=read(); if(state?.running){state.segmentStartedAt=now();state.lastInteractionAt=now();write();scheduleIdle()}
+  async function flush(reason="paused"){
+    if(!state||!window.supabaseClient||state.ownerId!==owned?.ownerId) return false;
+    if(flights.has(state.sessionId)) return flights.get(state.sessionId);
+    pause(reason);
+    const snapshot={...state},seconds=elapsed(),epoch=owned.epoch;
+    const run=async()=>{
+      if(owned.ownerId!==snapshot.ownerId||owned.epoch!==epoch)return false;
+      const key=owned.key(KEY,snapshot.ownerId);
+      const cached=JSON.parse(localStorage.getItem(key)||"null");
+      if(unpersisted.has(snapshot.sessionId)&&cached?.sessionId!==snapshot.sessionId)throw new Error("Sessão ainda não foi guardada localmente.");
+      if(cached&&cached.sessionId!==snapshot.sessionId)return false;
+      // Another tab can have completed this same session while this tab waited.
+      if(cached?.sessionId===snapshot.sessionId && seconds>=1 && !completed.has(snapshot.sessionId)){
+        const payload={user_id:snapshot.ownerId,activity_kind:snapshot.kind||"study",area:snapshot.area||null,materia:snapshot.materia||null,started_at:new Date(snapshot.startedAt).toISOString(),ended_at:new Date().toISOString(),duration_seconds:seconds};
+        if(snapshot.sourceId&&/^[0-9a-f-]{36}$/i.test(snapshot.sourceId))payload.source_id=snapshot.sourceId;
+        const {error}=await window.supabaseClient.from("study_sessions").insert(payload);
+        if(error)throw error;
+        completed.add(snapshot.sessionId);
+      }
+      const latest=JSON.parse(localStorage.getItem(key)||"null");
+      if(latest?.sessionId===snapshot.sessionId)localStorage.removeItem(key);
+      completed.delete(snapshot.sessionId);unpersisted.delete(snapshot.sessionId);
+      if(state?.sessionId===snapshot.sessionId&&state.ownerId===snapshot.ownerId){state=null;clearTimeout(idleHandle);notify(reason,{seconds});}
+      return true;
+    };
+    const promise=Promise.resolve().then(()=>window.navigator?.locks
+      ? window.navigator.locks.request("luria:study:"+snapshot.ownerId,run) : run())
+      .catch(error=>{console.warn("LURIA: não foi possível registrar tempo de estudo",error);notify("persist_failed");return false;})
+      .finally(()=>flights.delete(snapshot.sessionId));
+    flights.set(snapshot.sessionId,promise);return promise;
+  }
+  function resume(){if(!state||state.running||flights.has(state.sessionId))return;state.running=true;state.segmentStartedAt=now();state.lastInteractionAt=now();state.pausedReason=null;write();scheduleIdle();}
+  function scheduleIdle(){clearTimeout(idleHandle);if(!state?.running||state.allowIdle)return;const wait=Math.max(0,IDLE_MS-(now()-(state.lastInteractionAt||now())));idleHandle=setTimeout(()=>pause("idle_15m"),wait+50);}
+  function touch(){if(!state?.running||state.allowIdle)return;state.lastInteractionAt=now();write();scheduleIdle();}
+  async function start(kind="study",opts={}){
+    await owned?.ready;
+    const ownerId=owned?.ownerId,epoch=owned?.epoch;
+    if(!ownerId)return null;
+    const run=async()=>{
+      if(owned.ownerId!==ownerId||owned.epoch!==epoch)return null;
+      if(state&&!await flush("activity_changed"))return state;
+      if(owned.ownerId!==ownerId||owned.epoch!==epoch)return null;
+      const t=now();state={sessionId:crypto.randomUUID(),ownerId,kind,sourceId:opts.sourceId||null,area:opts.area||null,materia:opts.materia||null,allowIdle:!!opts.allowIdle,startedAt:t,segmentStartedAt:t,lastInteractionAt:t,accumulatedMs:0,running:true};
+      write();scheduleIdle();notify("started",{state});return state;
+    };
+    const result=starts.then(run,run);starts=result.catch(()=>{});return result;
+  }
+  function setExternalQuestions(active=true){if(!state&&active)return start("external_questions",{allowIdle:true});if(state&&!flights.has(state.sessionId)){state.allowIdle=!!active;if(active)state.kind="external_questions";write();scheduleIdle();}}
+  function restore(){
+    clearTimeout(idleHandle);state=read();
+    if(state){if(!state.sessionId){state.sessionId=crypto.randomUUID();write();}if(state.running)scheduleIdle();}
+  }
+  restore();owned?.ready.then(restore);window.addEventListener("luria:owner-changed",restore);
+  window.addEventListener("storage",event=>{if(event.key===owned?.key(KEY))restore();});
   ["pointerdown","keydown","touchstart","input","change"].forEach(ev=>document.addEventListener(ev,touch,{passive:true,capture:true}));
   window.LuriaStudyTimer={start,pause,resume,finish:flush,touch,setExternalQuestions,getState:()=>state,getElapsedSeconds:elapsed};
 })();

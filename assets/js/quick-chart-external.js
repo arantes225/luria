@@ -17,17 +17,23 @@
   let saveTimer=null;
   let loading=true;
   let lastSerialized="";
+  let operations=Promise.resolve(), generation=0;
+  function enqueue(operation){
+    const pending=operations.then(operation,operation);
+    operations=pending.catch(()=>{});
+    return pending;
+  }
 
   const fields=()=>[...document.querySelectorAll("[data-chart-field]")];
   const read=()=>Object.fromEntries(fields().map(el=>[el.dataset.chartField,el.value]));
   const fill=(content={})=>fields().forEach(el=>{el.value=String(content?.[el.dataset.chartField]||"")});
   const serialized=()=>JSON.stringify(read());
 
-  async function call(body){
+  async function call(body,credentials={username,pin}){
     const res=await fetch(ENDPOINT,{
       method:"POST",
       headers:{"Content-Type":"application/json","apikey":APIKEY},
-      body:JSON.stringify({username,pin,...body})
+      body:JSON.stringify({...credentials,...body})
     });
     const data=await res.json().catch(()=>({}));
     if(!res.ok) throw new Error(data.error||"Não foi possível acessar o caderno.");
@@ -57,10 +63,14 @@
       return;
     }
 
+    const version=++generation;
     enterBtn.disabled=true;
     enterBtn.textContent="Abrindo…";
     try{
-      const data=await call({action:"load"});
+      clearTimeout(saveTimer);
+      const credentials={username,pin};
+      const data=await enqueue(()=>version===generation?call({action:"load"},credentials):null);
+      if(version!==generation)return;
       fill(data.chart.content||{});
       lastSerialized=serialized();
       updateExpiry(data.chart.expires_at);
@@ -73,30 +83,33 @@
       history.replaceState(null,"","/trabalho/prontuario/");
       fields().forEach(el=>el.addEventListener("input",queueSave));
     }catch(e){
-      pin="";
-      gateError.textContent=e.message;
-      gateError.hidden=false;
+      if(version===generation){pin="";gateError.textContent=e.message;gateError.hidden=false;}
     }finally{
-      enterBtn.disabled=false;
-      enterBtn.textContent="Abrir caderno";
+      if(version===generation){enterBtn.disabled=false;enterBtn.textContent="Abrir caderno";}
     }
   }
 
   async function save(){
     if(loading||!username||!pin) return;
+    clearTimeout(saveTimer);
+    const version=generation,credentials={username,pin},content=read();
     const now=serialized();
-    if(now===lastSerialized){saveState.textContent="Salvo";return;}
-    saveState.textContent="Salvando…";
-    try{
-      const data=await call({action:"save",content:read()});
-      lastSerialized=now;
-      updateExpiry(data.expires_at);
-      saveState.textContent="Salvo agora";
-      status.textContent="Sincronizado";
-    }catch(e){
-      saveState.textContent="Falha ao salvar";
-      status.textContent="Sem sincronizar";
-    }
+    return enqueue(async()=>{
+      if(version!==generation)return;
+      if(now===lastSerialized){saveState.textContent=serialized()===now?"Salvo":"Alterações pendentes";return;}
+      saveState.textContent="Salvando…";
+      try{
+        const data=await call({action:"save",content},credentials);
+        if(version!==generation)return;
+        lastSerialized=now;
+        updateExpiry(data.expires_at);
+        const current=serialized()===now;
+        saveState.textContent=current?"Salvo agora":"Alterações pendentes";
+        status.textContent=current?"Sincronizado":"Sem sincronizar";
+      }catch(e){
+        if(version===generation){saveState.textContent="Falha ao salvar";status.textContent="Sem sincronizar";}
+      }
+    });
   }
 
   function queueSave(){
@@ -108,15 +121,22 @@
   async function clearAll(){
     if(!username||!pin) return;
     if(!confirm("Limpar todo o conteúdo deste caderno temporário?")) return;
-    try{
-      await call({action:"clear"});
-      fill({});
-      lastSerialized=serialized();
-      updateExpiry(null);
-      saveState.textContent="Conteúdo limpo";
-    }catch(e){
-      saveState.textContent="Não foi possível limpar";
-    }
+    clearTimeout(saveTimer);
+    const version=++generation,credentials={username,pin},previous=read();
+    fill({});const empty=serialized();
+    saveState.textContent="Limpando…";
+    return enqueue(async()=>{
+      if(version!==generation)return;
+      try{
+        await call({action:"clear"},credentials);
+        if(version!==generation)return;
+        lastSerialized=empty;
+        updateExpiry(null);
+        saveState.textContent=serialized()===empty?"Conteúdo limpo":"Alterações pendentes";
+      }catch(e){
+        if(version===generation){if(serialized()===empty)fill(previous);saveState.textContent="Não foi possível limpar";}
+      }
+    });
   }
 
   enterBtn.addEventListener("click",openPortal);

@@ -86,3 +86,38 @@ window.supabaseClient = window.supabase.createClient(
     }
   }
 );
+
+// Ownership is established by Auth, never by an unscoped legacy draft.
+(() => {
+  let ownerId = null, epoch = 0, authRevision = 0;
+  const setOwner = id => {
+    if (ownerId === id) return;
+    const previousId = ownerId;
+    ownerId = id;
+    epoch += 1;
+    window.dispatchEvent(new CustomEvent("luria:owner-changed", {detail:{ownerId,previousId,epoch}}));
+  };
+  const key = (base, id = ownerId) => id ? base + ":" + encodeURIComponent(id) : null;
+  const api = {
+    get ownerId() { return ownerId; },
+    get epoch() { return epoch; },
+    key,
+    read(base, storage = localStorage) {
+      try { const k = key(base); return k ? storage.getItem(k) : null; } catch (_) { return null; }
+    },
+    write(base, value, storage = localStorage) {
+      const k = key(base);
+      if (!k) return false;
+      storage.setItem(k, value);
+      return true;
+    },
+    remove(base, storage = localStorage) { const k = key(base); if (k) storage.removeItem(k); }
+  };
+  window.LuriaLocalOwnerStore = api;
+  window.supabaseClient.auth.onAuthStateChange((_event, session) => { authRevision += 1; setOwner(session?.user?.id || null); });
+  const initialRevision = authRevision;
+  api.ready = window.supabaseClient.auth.getSession().then(({data,error}) => {
+    if (!error && authRevision === initialRevision) setOwner(data?.session?.user?.id || null);
+    return ownerId;
+  }).catch(() => ownerId);
+})();
