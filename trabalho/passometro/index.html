@@ -1448,39 +1448,74 @@
       if(r.includes("intranas")) return "IN";
       return "";
     }
-    function doseParts(text){
-      const m=String(text||"").match(/(?:iniciar\s+)?(\d+(?:[.,]\d+)?)(?:\s*[–-]\s*(\d+(?:[.,]\d+)?))?\s*(mg|g|mcg|UI|mL)/i);
-      if(!m) return null;
-      return {dose:m[2]?m[1]+"–"+m[2]:m[1],unit:m[3]};
+    function parseDrugEntry(text){
+      const raw=String(text||"").trim();
+      const match=raw.match(/^(.*?)\s+(\d+(?:[.,]\d+)?)\s*(mg|mcg|µg|g|ui|ml)\s*$/i);
+      if(!match)return {name:raw,dose:null,unit:null};
+      const name=match[1].trim();
+      return {name,dose:match[2],unit:({ "µg":"mcg","ui":"UI","ml":"mL" })[match[3].toLowerCase()]||match[3]};
     }
     function applyDrugSuggestion(row,input){
-      const wrap=input.closest(".pm-med-row,.pm-antibiotic-row"); if(!wrap) return;
-      const formData=row.data||{}, formulations=Array.isArray(formData.formulations)?formData.formulations:[];
-      const f=formulations[0];
+      const wrap=input.closest(".pm-med-row,.pm-antibiotic-row");if(!wrap)return;
+      const parsed=parseDrugEntry(input.value);
       input.value=row.active_ingredient||row.name;
-      if(!f) return;
-      const parts=doseParts(f.dose_text);
-      if(parts){
-        const dose=wrap.querySelector('[data-k="dose"]'), unit=wrap.querySelector('[data-k="unit"]');
-        if(dose&&!dose.value) dose.value=parts.dose;
-        if(unit&&!unit.value) unit.value=parts.unit;
+      const dose=wrap.querySelector('[data-k="dose"]'),unit=wrap.querySelector('[data-k="unit"]');
+      if(parsed.dose&&dose&&!dose.value)dose.value=parsed.dose;
+      if(parsed.unit&&unit&&!unit.value){
+        const option=[...unit.options].find(o=>o.value.toLowerCase()===parsed.unit.toLowerCase());
+        if(option)unit.value=option.value;
       }
-      const route=wrap.querySelector('[data-k="route"]'), code=routeToCode(f.route);
-      if(route&&code&&!route.value&&[...route.options].some(o=>o.value===code||o.text===code)) route.value=code;
-      const schedule=wrap.querySelector('[data-k="schedule"]');
-      if(schedule&&!schedule.value) schedule.value=f.interval_text||"";
+      /* A força de uma apresentação e a primeira dose da bula NÃO são
+         necessariamente a dose prescrita. Nunca deduzir automaticamente. */
+      const verified=row.data?.status==="posology_verified";
+      const forms=Array.isArray(row.data?.formulations)?row.data.formulations:[];
+      const field=input.closest(".pm-drug-field");
+      let note=field.querySelector(".pm-drug-confirmation");
+      if(!note){note=document.createElement("small");note.className="pm-drug-confirmation";field.appendChild(note);}
+      note.textContent=verified
+        ? "Bulário vinculado: "+forms.length+" apresentação(ões). Confirme dose, via e intervalo conforme prescrição clínica."
+        : "Medicamento identificado no Bulário. Posologia não verificada: preencha a dose prescrita.";
+      note.style.cssText="display:block;color:var(--muted);font-size:10px;line-height:1.4;margin-top:5px";
+      input.parentElement.querySelector(".pm-drug-suggestions").hidden=true;
     }
     function renderDrugSuggestions(input){
       const box=input.parentElement.querySelector(".pm-drug-suggestions"),type=input.dataset.drugInput;
-      const rows=bestDrugMatches(input.value,type);
+      const parsed=parseDrugEntry(input.value);
+      const rows=bestDrugMatches(parsed.name,type);
       if(!rows.length){box.hidden=true;box.innerHTML="";return;}
       box.innerHTML=rows.map(row=>{
         const verified=row.data?.status==="posology_verified";
-        return '<button type="button" class="pm-drug-option" data-drug-id="'+row.id+'"><strong>'+esc(row.active_ingredient||row.name)+'</strong><small>'+esc(row.name!==row.active_ingredient?row.name+" · ":"")+esc(row.pharmacological_class||row.therapeutic_class||"")+'</small><span class="pm-drug-source">'+(verified?"Posologia conferida · preencher sugestão":"Cadastrado · preencher nome")+'</span></button>';
+        const forms=Array.isArray(row.data?.formulations)?row.data.formulations:[];
+        const labels=forms.slice(0,3).map(f=>f.label).filter(Boolean).join(" · ");
+        return '<button type="button" class="pm-drug-option" data-drug-id="'+esc(row.id)+'"><strong>'+esc(row.active_ingredient||row.name)+'</strong><small>'+esc(labels||row.pharmacological_class||row.therapeutic_class||"")+'</small><span class="pm-drug-source">'+(verified?"Ficha conferida · confirmar dose":"Cadastro sem posologia verificada")+'</span></button>';
       }).join("");
       box.hidden=false;
     }
-
+    document.addEventListener("input",event=>{
+      const input=event.target.closest('input[data-drug-input]');
+      if(input)renderDrugSuggestions(input);
+    });
+    document.addEventListener("click",event=>{
+      const option=event.target.closest(".pm-drug-option");
+      if(option){
+        const input=option.closest(".pm-drug-field")?.querySelector('input[data-drug-input]');
+        const row=drugCatalog.find(x=>String(x.id)===option.dataset.drugId);
+        if(input&&row)applyDrugSuggestion(row,input);
+        return;
+      }
+      if(!event.target.closest(".pm-drug-field"))
+        document.querySelectorAll(".pm-drug-suggestions").forEach(box=>box.hidden=true);
+    });
+    document.addEventListener("focusout",event=>{
+      const input=event.target.closest('input[data-drug-input]');
+      if(!input)return;
+      setTimeout(()=>{
+        if(input.closest(".pm-drug-field")?.contains(document.activeElement))return;
+        const parsed=parseDrugEntry(input.value);
+        const exact=drugCatalog.filter(row=>norm(row.name)===norm(parsed.name)||norm(row.active_ingredient)===norm(parsed.name));
+        if(exact.length===1)applyDrugSuggestion(exact[0],input);
+      },150);
+    });
 
     function localDecks(){
       try{
