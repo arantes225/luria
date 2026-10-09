@@ -252,3 +252,19 @@
    margin-left:8px!important;
  }
 }
+
+/* Shared column geometry: match both upper/lower left edges exactly. */
+@media(min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   box-sizing:border-box!important;
+   padding-left:8px!important;
+   padding-right:0!important;
+   grid-template-columns:calc((100% - 16px)*0.647) minmax(0,1fr)!important;
+   column-gap:8px!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active #review-launcher{
+   width:100%!important;
+   margin-left:0!important;
+   justify-self:stretch!important;
+ }
+}
