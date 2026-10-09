@@ -240,3 +240,15 @@
    overflow:hidden!important;
  }
 }
+
+/* Match the review card's horizontal bounds to Continue de onde parou. */
+@media(min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active #review-launcher{
+   box-sizing:border-box!important;
+   width:calc((100% - 24px)*0.647)!important;
+   max-width:none!important;
+   min-width:0!important;
+   justify-self:start!important;
+   margin-left:8px!important;
+ }
+}
