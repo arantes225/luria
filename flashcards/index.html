@@ -1744,26 +1744,37 @@ document.addEventListener("DOMContentLoaded",()=>{
  new MutationObserver(sync).observe(document.querySelector(".page")||body,{subtree:true,attributes:true,attributeFilter:["class"]});
 });
 </script>
-<script id="flash-home-bottom-anchor-v4">
+<script id="flash-home-bottom-anchor-v5">
 (function(){
-  function alignFlashHome(){
-    if(window.innerWidth<981)return;
+  function alignBottom(){
     const page=document.querySelector('body[data-page="flashcards"] .page');
     const section=document.querySelector('body[data-page="flashcards"] .flash-section[data-flash-section="review"].active');
-    if(!page||!section)return;
-    const pageBottom=page.getBoundingClientRect().bottom;
-    const sectionTop=section.getBoundingClientRect().top;
-    const target=Math.floor(pageBottom-sectionTop-8);
-    if(target>=356)section.style.setProperty('--flash-home-available-height',target+'px');
+    const decks=section&&section.querySelector('.flash-home-decks');
+    const actions=section&&section.querySelector('.flash-home-actions');
+    if(!page||!section||!decks||!actions)return;
+    decks.style.removeProperty('transform');
+    actions.style.removeProperty('transform');
+    if(window.innerWidth<981||document.body.classList.contains('flash-review-session-active'))return;
+    /* Measure against the visible page's bottom, not a guessed viewport offset.
+       Moving the lower row must not increase the upper row or alter its position. */
+    const bottom=page.getBoundingClientRect().bottom;
+    const rowBottom=Math.max(decks.getBoundingClientRect().bottom,actions.getBoundingClientRect().bottom);
+    const delta=Math.round(bottom-8-rowBottom);
+    if(delta>1&&delta<600){
+      decks.style.setProperty('transform','translateY('+delta+'px)','important');
+      actions.style.setProperty('transform','translateY('+delta+'px)','important');
+    }
   }
-  window.addEventListener('resize',alignFlashHome,{passive:true});
-  window.addEventListener('load',alignFlashHome);
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',alignFlashHome);
-  else alignFlashHome();
-  if(typeof ResizeObserver!=='undefined'){
+  let queued=false;
+  function schedule(){if(queued)return;queued=true;requestAnimationFrame(function(){queued=false;alignBottom()})}
+  window.addEventListener('resize',schedule,{passive:true});
+  window.addEventListener('load',schedule);
+  document.addEventListener('DOMContentLoaded',function(){
+    schedule();
     const page=document.querySelector('body[data-page="flashcards"] .page');
-    if(page)new ResizeObserver(alignFlashHome).observe(page);
-  }
+    if(page&&typeof ResizeObserver!=='undefined')new ResizeObserver(schedule).observe(page);
+  });
+  schedule();
 })();
 </script>
 </body>
