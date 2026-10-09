@@ -118,3 +118,58 @@
  body[data-page="flashcards"] .flash-home-action{min-height:64px!important;padding:10px 12px!important}
  body[data-page="flashcards"] #flash-home-decks-list{max-height:360px!important;overflow-y:auto!important}
 }
+
+/* Second pass: decks should use the available row, never render as a tiny,
+   clipped strip with a vacant block underneath. */
+@media (min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   grid-template-rows:minmax(172px,auto) minmax(190px,1fr)!important;
+ }
+ body[data-page="flashcards"] #flash-home-decks-list{
+   display:flex!important;flex-direction:column!important;
+   flex:1 1 auto!important;height:100%!important;min-height:0!important;
+   overflow:hidden!important;
+ }
+ body[data-page="flashcards"] .page .flash-review-hub .flash-deck-cards,
+ body[data-page="flashcards"] #flash-home-decks-list .flash-deck-cards{
+   flex:1 1 auto!important;
+   display:flex!important;
+   align-items:stretch!important;
+   min-height:0!important;height:100%!important;
+   overflow-x:auto!important;overflow-y:hidden!important;
+   gap:8px!important;padding:2px 3px 8px!important;
+   scroll-snap-type:x proximity!important;
+ }
+ body[data-page="flashcards"] .page .flash-review-hub .flash-ref-deck,
+ body[data-page="flashcards"] #flash-home-decks-list .flash-ref-deck{
+   flex:0 0 clamp(154px,22%,190px)!important;
+   width:clamp(154px,22%,190px)!important;
+   height:100%!important;min-height:130px!important;
+   box-sizing:border-box!important;padding:14px!important;
+   scroll-snap-align:start!important;
+   display:flex!important;flex-direction:column!important;
+   justify-content:space-between!important;
+ }
+ body[data-page="flashcards"] .flash-home-decks .flash-ref-deck-top h3{
+   font-size:13px!important;line-height:1.25!important;
+ }
+ body[data-page="flashcards"] .flash-home-decks .flash-ref-deck-stats{
+   font-size:11px!important;
+ }
+ body[data-page="flashcards"] .flash-home-decks-head h2{
+   font-size:16px!important;font-weight:500!important;
+ }
+ body[data-page="flashcards"] .flash-home-action>span strong{
+   font-size:13px!important;
+ }
+}
+@media (max-width:980px){
+ body[data-page="flashcards"] #flash-home-decks-list .flash-deck-cards{
+   display:flex!important;gap:8px!important;overflow-x:auto!important;
+   scroll-snap-type:x proximity!important;
+ }
+ body[data-page="flashcards"] #flash-home-decks-list .flash-ref-deck{
+   flex:0 0 165px!important;min-height:150px!important;
+   scroll-snap-align:start!important;
+ }
+}
