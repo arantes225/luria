@@ -1773,6 +1773,40 @@ document.addEventListener("DOMContentLoaded",()=>{
   if(document.readyState!=='loading')requestAlign();
 })();
 </script>
+
+<script id="flash-review-width-match-20261009">
+/* The lower card is page-anchored; the upper one is grid-anchored.
+   Match their actual rendered horizontal bounds, without changing height. */
+(function(){
+ const launcher=document.getElementById('review-launcher');
+ const decks=document.querySelector('.flash-section[data-flash-section="review"] .flash-home-decks');
+ const review=document.querySelector('.flash-section[data-flash-section="review"]');
+ if(!launcher||!decks||!review)return;
+ let queued=false;
+ function sync(){
+   queued=false;
+   if(window.innerWidth<=980||!review.classList.contains('active')){
+     launcher.style.removeProperty('width');
+     launcher.style.removeProperty('left');
+     return;
+   }
+   launcher.style.setProperty('left','0px','important');
+   const target=decks.getBoundingClientRect();
+   const source=launcher.getBoundingClientRect();
+   if(!target.width||!source.width)return;
+   launcher.style.setProperty('width',target.width+'px','important');
+   launcher.style.setProperty('left',(target.left-source.left)+'px','important');
+ }
+ function schedule(){if(!queued){queued=true;requestAnimationFrame(sync);}}
+ const observer=new ResizeObserver(schedule);
+ observer.observe(decks);
+ observer.observe(review);
+ window.addEventListener('resize',schedule,{passive:true});
+ const state=new MutationObserver(schedule);
+ state.observe(review,{attributes:true,attributeFilter:['class']});
+ schedule();
+})();
+</script>
 </body>
 </html>
 
