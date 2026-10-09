@@ -217,3 +217,29 @@
    will-change:transform;
  }
 }
+
+/* v6 – position both bottom cards WITHIN the grid, never translate them outside. */
+@media(min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   height:var(--flash-home-available-height,408px)!important;
+   max-height:none!important;min-height:356px!important;
+   grid-template-rows:172px 176px!important;
+   row-gap:8px!important;column-gap:8px!important;
+   align-content:space-between!important;
+   overflow:visible!important;
+ }
+ body[data-page="flashcards"] .flash-home-decks,
+ body[data-page="flashcards"] .flash-home-actions{
+   transform:none!important;position:relative!important;
+   grid-row:2!important;height:176px!important;
+   min-height:176px!important;max-height:176px!important;
+   align-self:end!important;margin:0!important;
+ }
+ body[data-page="flashcards"] .flash-home-actions{
+   grid-template-rows:repeat(3,minmax(0,1fr))!important;
+   gap:8px!important;
+ }
+ body[data-page="flashcards"] .flash-home-action{
+   height:100%!important;min-height:0!important;max-height:none!important;
+ }
+}
