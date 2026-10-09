@@ -572,7 +572,7 @@ body[data-page="flashcards"] .flash-home-decks .flash-ref-deck-top .flash-ref-de
 </style>
 
 <link rel="stylesheet" href="/assets/css/consolidation-home-fit.css?v=20261005-flashcards-home-refit-v2">
-<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=8-restore">
+<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=9-page-anchor">
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -1745,6 +1745,42 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 </script>
 
+<script id="flash-bottom-page-anchor-v9">
+(function(){
+  function positionBottomCards(){
+    const page=document.querySelector('body[data-page="flashcards"] .page');
+    const section=document.querySelector('body[data-page="flashcards"] .flash-section[data-flash-section="review"].active');
+    if(!page)return;
+    if(window.innerWidth<=980||!section||document.body.classList.contains('flash-review-session-active')){
+      ['--flash-bottom-left','--flash-bottom-width','--flash-actions-left','--flash-actions-width'].forEach(k=>page.style.removeProperty(k));
+      return;
+    }
+    const main=section.querySelector('#review-launcher');
+    const metrics=section.querySelector('.flash-home-summary');
+    const decks=section.querySelector('.flash-home-decks');
+    const actions=section.querySelector('.flash-home-actions');
+    if(!main||!metrics||!decks||!actions)return;
+    const pageRect=page.getBoundingClientRect(),a=main.getBoundingClientRect(),b=metrics.getBoundingClientRect();
+    if(a.width<100||b.width<100)return;
+    const px=n=>Math.round(n*100)/100+'px';
+    page.style.setProperty('--flash-bottom-left',px(a.left-pageRect.left));
+    page.style.setProperty('--flash-bottom-width',px(a.width));
+    page.style.setProperty('--flash-actions-left',px(b.left-pageRect.left));
+    page.style.setProperty('--flash-actions-width',px(b.width));
+  }
+  let pending=false;
+  function schedule(){
+    if(pending)return;
+    pending=true;
+    requestAnimationFrame(()=>{pending=false;positionBottomCards();});
+  }
+  window.addEventListener('resize',schedule,{passive:true});
+  window.addEventListener('load',schedule);
+  document.addEventListener('DOMContentLoaded',schedule);
+  document.addEventListener('click',schedule);
+  schedule();
+})();
+</script>
 </body>
 </html>
 
