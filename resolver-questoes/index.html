@@ -235,7 +235,27 @@
    });
    return out.filter(x=>x.t);
  }
- function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promise(resolve=>setTimeout(()=>resolve(fallback),ms))])}
+ async function hydrateReferences(){
+ const linked=state.items.filter(x=>x.question_bank_id),banks=new Map();
+ for(let i=0;i<linked.length;i+=150){
+  const {data,error}=await sb.from("question_bank").select("id,answer_source_id,source_id").in("id",linked.slice(i,i+150).map(x=>x.question_bank_id));
+  if(error){console.warn("Referências não acessíveis",error.message);return}
+  (data||[]).forEach(x=>banks.set(x.id,x));
+ }
+ const ids=[...new Set([...banks.values()].flatMap(x=>[x.answer_source_id,x.source_id]).filter(Boolean))],sources=new Map();
+ for(let i=0;i<ids.length;i+=150){
+  const {data,error}=await sb.from("question_sources").select("id,institution,document,source_year,url,section,note").in("id",ids.slice(i,i+150));
+  if(error){console.warn("Fontes não acessíveis",error.message);return}
+  (data||[]).forEach(x=>sources.set(x.id,x));
+ }
+ state.items=state.items.map(item=>{
+  const bank=banks.get(item.question_bank_id);if(!bank)return item;
+  const refs=[bank.answer_source_id,bank.source_id].map(id=>sources.get(id)).filter(Boolean);
+  return {...item,references:[...new Set(refs.map(x=>[x.institution,x.document,x.source_year,x.section,x.url].filter(Boolean).join(" · ")))]};
+ });
+ render();
+}
+function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promise(resolve=>setTimeout(()=>resolve(fallback),ms))])}
  function tick(){const sec=Math.floor((Date.now()-state.started)/1000);const m=Math.floor(sec/60),r=sec%60;$("qr-clock").textContent=m+" min "+String(r).padStart(2,"0")+" s"}
  function render(){
   const item=state.items[state.index]; if(!item)return;
@@ -253,7 +273,7 @@
   const os=opts(item),cutSet=state.eliminated.get(item.id)||new Set();$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(cutSet.has(o.k))cl+=" eliminated";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span class="qr-option-text">'+esc(o.t)+'</span><span class="qr-cut" data-cut="'+o.k+'" role="button" tabindex="0" aria-label="Eliminar alternativa '+o.k+'"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="m8.2 8.2 11.3 7.3"/><path d="m8.2 15.8 11.3-7.3"/></svg></span></button>'}).join("");
   document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=e=>{if(e.target.closest("[data-cut]"))return;const set=state.eliminated.get(item.id)||new Set();if(set.has(b.dataset.opt))return;state.selected.set(item.id,b.dataset.opt);render()});
   document.querySelectorAll("[data-cut]").forEach(c=>{c.onclick=e=>{e.stopPropagation();if(confirmed)return;const set=state.eliminated.get(item.id)||new Set();if(set.has(c.dataset.cut))set.delete(c.dataset.cut);else set.add(c.dataset.cut);state.eliminated.set(item.id,set);if(state.selected.get(item.id)===c.dataset.cut)state.selected.delete(item.id);render()};c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}}});
-  const fb=$("qr-feedback"),commentBtn=$("qr-comment-toggle"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel),refs=referenceEntries(item);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";const refsHtml='<div class="qr-justification"><strong>Referências</strong>'+(refs.length?'<div class="qr-reference-list">'+refs.map((r,i)=>'<div class="qr-reference-item">'+(i+1)+'. '+esc(r)+'</div>').join("")+'</div>':'<p>As referências desta questão ainda não foram preenchidas no banco.</p>')+'</div>';commentBtn.hidden=false;commentBtn.textContent="Comentário LURIA";commentBtn.setAttribute("aria-expanded","false");fb.hidden=true;fb.innerHTML='<div class="qr-justification"><strong>Comentário LURIA</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div>'+refsHtml+'<div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div><a class="qr-btn primary qr-talk-alex" href="/professor-alex/?question_id='+encodeURIComponent(item.id)+'">Falar com Alex</a>'}else{commentBtn.hidden=true;fb.hidden=true;fb.innerHTML=""}
+  const result=$("qr-answer-result");result.hidden=!confirmed;result.className="qr-answer-result"+(confirmed?(correct&&sel===correct?" correct":" wrong"):"");result.textContent=confirmed?(correct?(sel===correct?"Resposta correta!":"Resposta incorreta. Gabarito: "+correct):"Resposta registrada."):"";const fb=$("qr-feedback"),commentBtn=$("qr-comment-toggle"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel),refs=referenceEntries(item);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";const refsHtml='<div class="qr-justification"><strong>Referências</strong>'+(refs.length?'<div class="qr-reference-list">'+refs.map((r,i)=>'<div class="qr-reference-item">'+(i+1)+'. '+esc(r)+'</div>').join("")+'</div>':'<p>As referências desta questão ainda não foram preenchidas no banco.</p>')+'</div>';commentBtn.hidden=false;commentBtn.textContent="Comentário LURIA";commentBtn.setAttribute("aria-expanded","false");fb.hidden=true;fb.innerHTML='<div class="qr-justification"><strong>Comentário LURIA</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div>'+refsHtml+'<div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div><a class="qr-btn primary qr-talk-alex" href="/professor-alex/?question_id='+encodeURIComponent(item.id)+'">Falar com Alex</a>'}else{commentBtn.hidden=true;fb.hidden=true;fb.innerHTML=""}
   $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Respondida":"Responder";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
   $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
   const total=state.items.length;
@@ -324,7 +344,7 @@
    const ids=new Set(state.items.map(x=>x.id));
    attempts.filter(x=>ids.has(x.question_item_id)).forEach(x=>state.attempts.set(x.question_item_id,x));
    state.index=firstUnanswered();
-   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render();
+   $("qr-loading").hidden=true;$("qr-layout").hidden=false;render();hydrateReferences().catch(console.error);
    withTimeout(signedImages(items),6000,null).then(signed=>{
      if(!signed)return;
      const urls=new Map(signed.map(x=>[x.id,x.image_url||null]));
