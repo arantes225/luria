@@ -205,3 +205,15 @@
  }
  body[data-page="flashcards"] .flash-home-action{height:100%!important;min-height:0!important;max-height:none!important}
 }
+
+/* Bottom alignment v5: let the translated lower row remain visible. */
+@media (min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   overflow:visible!important;
+ }
+ body[data-page="flashcards"] .flash-home-decks,
+ body[data-page="flashcards"] .flash-home-actions{
+   position:relative!important;
+   will-change:transform;
+ }
+}
