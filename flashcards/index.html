@@ -572,7 +572,7 @@ body[data-page="flashcards"] .flash-home-decks .flash-ref-deck-top .flash-ref-de
 </style>
 
 <link rel="stylesheet" href="/assets/css/consolidation-home-fit.css?v=20261005-flashcards-home-refit-v2">
-<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=7">
+<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=8-restore">
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -1744,31 +1744,7 @@ document.addEventListener("DOMContentLoaded",()=>{
  new MutationObserver(sync).observe(document.querySelector(".page")||body,{subtree:true,attributes:true,attributeFilter:["class"]});
 });
 </script>
-<script id="flash-home-bottom-anchor-v6">
-(function(){
-  function align(){
-    const section=document.querySelector('body[data-page="flashcards"] .flash-section[data-flash-section="review"].active');
-    const page=document.querySelector('body[data-page="flashcards"] .page');
-    if(!section||!page)return;
-    const decks=section.querySelector('.flash-home-decks'),actions=section.querySelector('.flash-home-actions');
-    [decks,actions].forEach(el=>el&&el.style.removeProperty('transform'));
-    if(innerWidth<981||document.body.classList.contains('flash-review-session-active')){
-      section.style.removeProperty('--flash-home-available-height');return;
-    }
-    const rect=page.getBoundingClientRect();
-    const bottom=Math.min(rect.bottom,innerHeight);
-    const top=section.getBoundingClientRect().top;
-    const available=Math.floor(bottom-top-8);
-    if(available>=356)section.style.setProperty('--flash-home-available-height',available+'px');
-  }
-  let queued=false;
-  function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;align()})}
-  window.addEventListener('resize',schedule,{passive:true});
-  window.addEventListener('load',schedule);
-  document.addEventListener('DOMContentLoaded',schedule);
-  schedule();
-})();
-</script>
+
 </body>
 </html>
 
