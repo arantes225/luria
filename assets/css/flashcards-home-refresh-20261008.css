@@ -173,3 +173,17 @@
    scroll-snap-align:start!important;
  }
 }
+
+/* Lower cards align close to the bottom boundary (8px inset) on desktop. */
+@media (min-width:981px) and (min-height:741px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   height:calc(100dvh - 160px)!important;
+   padding-bottom:0!important;
+   box-sizing:border-box!important;
+ }
+ body[data-page="flashcards"] .flash-home-decks,
+ body[data-page="flashcards"] .flash-home-actions{
+   align-self:stretch!important;
+   margin-bottom:0!important;
+ }
+}
