@@ -268,3 +268,15 @@
    justify-self:stretch!important;
  }
 }
+
+/* Align Revisões do dia with Continue de onde parou (same horizontal edges). */
+@media (min-width:981px) {
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-decks {
+   left:8px!important;
+   width:calc((100% - 16px)*0.647)!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-actions {
+   left:calc(16px + (100% - 16px)*0.647)!important;
+   width:calc((100% - 16px)*0.353 - 8px)!important;
+ }
+}
