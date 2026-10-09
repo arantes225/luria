@@ -243,3 +243,29 @@
    height:100%!important;min-height:0!important;max-height:none!important;
  }
 }
+
+/* v7: explicit spacer track. No transform, no implicit grid rows. */
+@media(min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   display:grid!important;
+   grid-template-rows:172px minmax(0,1fr) 176px!important;
+   grid-template-columns:minmax(0,1.65fr) minmax(300px,.9fr)!important;
+   gap:0 8px!important;
+   height:var(--flash-home-available-height,408px)!important;
+   min-height:356px!important;
+   max-height:none!important;
+   align-content:stretch!important;
+   overflow:visible!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active #review-launcher,
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-summary{
+   grid-row:1!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-decks,
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-actions{
+   grid-row:3!important;
+   margin:0!important;
+   transform:none!important;
+   height:176px!important;min-height:176px!important;max-height:176px!important;
+ }
+}
