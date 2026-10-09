@@ -175,33 +175,54 @@
 }
 
 
-/* Anchor lower cards to the actual white page box, 8px from its bottom.
-   Positioned elements are outside the review grid flow and drawn above it. */
-@media(min-width:981px){
- body[data-page="flashcards"] .page{position:relative!important;}
+/* v10: deterministic layout, independent of JavaScript variables.
+   The .page is the containing block. The two lower panels stay fully sized
+   and end 8px above its lower edge, with the same desktop column proportions. */
+@media (min-width:981px) {
+ body[data-page="flashcards"] .page{
+   position:relative!important;
+   isolation:isolate!important;
+ }
  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
-   position:static!important;overflow:visible!important;
+   position:static!important;
+   overflow:visible!important;
  }
  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-decks,
  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-actions{
+   box-sizing:border-box!important;
    position:absolute!important;
-   bottom:8px!important;top:auto!important;right:auto!important;
-   left:var(--flash-bottom-left,0px)!important;
-   width:var(--flash-bottom-width,0px)!important;
-   height:176px!important;min-height:176px!important;max-height:176px!important;
-   margin:0!important;transform:none!important;
-   z-index:90!important;visibility:visible!important;opacity:1!important;
+   top:auto!important;
+   right:auto!important;
+   bottom:8px!important;
+   transform:none!important;
+   width:auto!important;
+   height:176px!important;
+   min-height:176px!important;
+   max-height:176px!important;
+   opacity:1!important;
+   visibility:visible!important;
+   z-index:100!important;
+   margin:0!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-decks{
+   left:8px!important;
+   width:calc((100% - 24px)*0.647)!important;
+   overflow:hidden!important;
  }
  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-actions{
-   left:var(--flash-actions-left,0px)!important;
-   width:var(--flash-actions-width,0px)!important;
-   display:grid!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;
+   left:calc(8px + (100% - 24px)*0.647 + 8px)!important;
+   width:calc((100% - 24px)*0.353)!important;
+   display:grid!important;
+   grid-template-rows:repeat(3,minmax(0,1fr))!important;
    gap:8px!important;
  }
  body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-action{
-   height:100%!important;min-height:0!important;max-height:none!important;
+   min-height:0!important;
+   max-height:none!important;
+   height:100%!important;
  }
- body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-decks{
-   overflow:hidden!important;
+ body[data-page="flashcards"] .flash-home-decks #flash-home-decks-list{
+   width:100%!important;
+   min-width:0!important;
  }
 }
