@@ -174,3 +174,34 @@
  }
 }
 
+
+/* Anchor lower cards to the actual white page box, 8px from its bottom.
+   Positioned elements are outside the review grid flow and drawn above it. */
+@media(min-width:981px){
+ body[data-page="flashcards"] .page{position:relative!important;}
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   position:static!important;overflow:visible!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-decks,
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-actions{
+   position:absolute!important;
+   bottom:8px!important;top:auto!important;right:auto!important;
+   left:var(--flash-bottom-left,0px)!important;
+   width:var(--flash-bottom-width,0px)!important;
+   height:176px!important;min-height:176px!important;max-height:176px!important;
+   margin:0!important;transform:none!important;
+   z-index:90!important;visibility:visible!important;opacity:1!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-actions{
+   left:var(--flash-actions-left,0px)!important;
+   width:var(--flash-actions-width,0px)!important;
+   display:grid!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;
+   gap:8px!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-action{
+   height:100%!important;min-height:0!important;max-height:none!important;
+ }
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-decks{
+   overflow:hidden!important;
+ }
+}
