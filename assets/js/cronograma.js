@@ -2888,6 +2888,7 @@ async function parsePdfFile(
     await window
       .pdfjsLib
       .getDocument({
+        isEvalSupported: false,
         data:
           buffer
       })

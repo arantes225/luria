@@ -93,7 +93,8 @@ if(!BLOCKS.includes(currentBlock)) currentBlock="L001-B01";
 let currentData=null;
 
 function headers(){return {"Content-Type":"application/json","apikey":ANON,"Authorization":"Bearer "+ANON}}
-function batchNumber(){return Number(currentBlock.slice(1,4))}\nfunction blockNumber(){return Number(currentBlock.slice(-2))}
+function batchNumber(){return Number(currentBlock.slice(1,4))}
+function blockNumber(){return Number(currentBlock.slice(-2))}
 function renderBlocks(){
   const n=document.getElementById("blocks"); n.innerHTML="";
   for(const b of BLOCKS){

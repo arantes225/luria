@@ -1519,11 +1519,39 @@
 
     function localDecks(){
       try{
-        const parsed=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");
+        const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY,state.userId);
+        const parsed=JSON.parse((key?localStorage.getItem(key):null)||"[]");
         return Array.isArray(parsed)?parsed:[];
       }catch{return [];}
     }
-    function persistLocal(){ localStorage.setItem(STORAGE_KEY,JSON.stringify(state.decks)); }
+    function persistLocal(){
+      const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY,state.userId);
+      if(key) localStorage.setItem(key,JSON.stringify(state.decks));
+    }
+    function syncMeta(owner=state.userId){
+      try{
+        const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY+":sync",owner);
+        const value=JSON.parse((key?localStorage.getItem(key):null)||"{}");
+        return {dirty:value.dirty||{},deleted:value.deleted||{},known:value.known||{}};
+      }catch{return {dirty:{},deleted:{},known:{}};}
+    }
+    function persistSyncMeta(meta,owner=state.userId){
+      const key=window.LuriaLocalOwnerStore.key(STORAGE_KEY+":sync",owner);
+      if(key)localStorage.setItem(key,JSON.stringify(meta));
+    }
+    function serializeDeck(id,owner,operation){
+      const epoch=window.LuriaLocalOwnerStore.epoch;
+      state.syncWrites ||= new Map();
+      const key=owner+":"+id;
+      const previous=state.syncWrites.get(key)||Promise.resolve();
+      const pending=previous.catch(()=>{}).then(async()=>{
+        if(window.LuriaLocalOwnerStore.ownerId!==owner||window.LuriaLocalOwnerStore.epoch!==epoch)return false;
+        return operation();
+      });
+      state.syncWrites.set(key,pending);
+      pending.finally(()=>{if(state.syncWrites.get(key)===pending)state.syncWrites.delete(key);}).catch(()=>{});
+      return pending;
+    }
     function pruneExpired(decks){
       const now=Date.now();
       return (decks||[]).filter(d=>{
@@ -1536,47 +1564,58 @@
       return Number(deck?.updatedAt||deck?.createdAt||0);
     }
     async function currentUserId({refresh=false}={}){
-      if(state.userId&&!refresh) return state.userId;
-      try{
-        const {data,error}=await window.supabaseClient.auth.getSession();
-        if(error) throw error;
-        state.userId=data?.session?.user?.id||null;
-      }catch(err){
-        state.userId=null;
-        console.warn("Passômetro: sessão indisponível para sincronização.",err);
-      }
-      return state.userId;
+      await window.LuriaLocalOwnerStore.ready;
+      return window.LuriaLocalOwnerStore.ownerId;
     }
-    async function upsertDeck(deck){
+    async function upsertDeck(deck,expectedUserId=state.userId){
       const userId=await currentUserId();
-      if(!userId||!deck?.id) return false;
+      if(!userId||userId!==expectedUserId||!deck?.id||syncMeta(userId).deleted[deck.id]) return false;
       const payload={...deck,updatedAt:Number(deck.updatedAt||deck.createdAt||Date.now())};
       const {error}=await window.supabaseClient
         .from(SYNC_TABLE)
         .upsert({user_id:userId,deck_id:String(deck.id),payload,updated_at:new Date(payload.updatedAt).toISOString()},{onConflict:"user_id,deck_id"});
       if(error) throw error;
+      const meta=syncMeta(userId);
+      meta.known[deck.id]=true;
+      if(meta.dirty[deck.id]===payload.updatedAt)delete meta.dirty[deck.id];
+      persistSyncMeta(meta,userId);
       return true;
     }
     function queueDeckSync(deck){
       if(!deck?.id) return;
-      clearTimeout(state.syncTimer);
+      if(!state.userId)return;
+      state.syncTimers ||= new Map();
+      clearTimeout(state.syncTimers.get(deck.id));
       const snapshot=JSON.parse(JSON.stringify(deck));
-      state.syncTimer=setTimeout(()=>upsertDeck(snapshot).catch(err=>console.warn("Passômetro: falha ao sincronizar.",err)),180);
+      const owner=state.userId;
+      const meta=syncMeta(owner);meta.dirty[deck.id]=snapshot.updatedAt;persistSyncMeta(meta,owner);
+      state.syncTimers.set(deck.id,setTimeout(()=>{
+        state.syncTimers.delete(deck.id);
+        return serializeDeck(deck.id,owner,()=>syncMeta(owner).deleted[deck.id]?false:upsertDeck(snapshot,owner))
+          .catch(err=>console.warn("Passômetro: falha ao sincronizar.",err));
+      },180));
     }
-    async function deleteRemoteDeck(deckId){
+    async function deleteRemoteDeck(deckId,expectedOwner=state.userId){
+      const meta=syncMeta(expectedOwner);
+      meta.deleted[deckId]=Date.now();delete meta.dirty[deckId];persistSyncMeta(meta,expectedOwner);
+      clearTimeout(state.syncTimers?.get(deckId));state.syncTimers?.delete(deckId);
       const userId=await currentUserId();
-      if(!userId||!deckId) return;
-      const {error}=await window.supabaseClient.from(SYNC_TABLE).delete().eq("user_id",userId).eq("deck_id",String(deckId));
-      if(error) throw error;
+      if(!userId||userId!==expectedOwner||!deckId) return;
+      return serializeDeck(deckId,userId,async()=>{
+        const {error}=await window.supabaseClient.from(SYNC_TABLE).delete().eq("user_id",userId).eq("deck_id",String(deckId));
+        if(error) throw error;
+      });
     }
     async function refreshFromCloud({migrateLocal=false}={}){
       const userId=await currentUserId({refresh:true});
-      if(!userId) return false;
+      if(!userId||state.userId!==userId) return false;
+      const epoch=window.LuriaLocalOwnerStore.epoch;
       const {data,error}=await window.supabaseClient
         .from(SYNC_TABLE)
         .select("deck_id,payload,updated_at")
         .eq("user_id",userId);
       if(error) throw error;
+      if(window.LuriaLocalOwnerStore.ownerId!==userId||window.LuriaLocalOwnerStore.epoch!==epoch) return false;
 
       const remote=(data||[]).map(row=>{
         const d=(row.payload&&typeof row.payload==="object")?row.payload:{};
@@ -1586,11 +1625,15 @@
       const remoteById=new Map(remote.map(d=>[String(d.id),d]));
       const localBefore=pruneExpired(localDecks());
       const localById=new Map(localBefore.filter(d=>d?.id).map(d=>[String(d.id),d]));
+      const meta=syncMeta(userId);
 
       const merged=new Map();
       for(const d of [...remote,...localBefore]){
         if(!d?.id) continue;
         const key=String(d.id),prev=merged.get(key);
+        if(meta.deleted[key])continue;
+        // A clean copy previously seen on the server must not undo a remote deletion.
+        if(meta.known[key]&&!remoteById.has(key)&&!meta.dirty[key])continue;
         if(!prev||deckStamp(d)>=deckStamp(prev)) merged.set(key,d);
       }
       state.decks=pruneExpired([...merged.values()]);
@@ -1598,14 +1641,23 @@
       renderDecks();
 
       if(migrateLocal){
+        for(const id of Object.keys(meta.deleted)){
+          if(remoteById.has(id))await deleteRemoteDeck(id,userId);
+        }
         for(const [id,localDeck] of localById){
+          if(meta.deleted[id]||(meta.known[id]&&!remoteById.has(id)&&!meta.dirty[id]))continue;
           const remoteDeck=remoteById.get(id);
           if(!remoteDeck||deckStamp(localDeck)>deckStamp(remoteDeck)){
             if(!localDeck.updatedAt) localDeck.updatedAt=Number(localDeck.createdAt||Date.now());
-            try{ await upsertDeck(localDeck); }
+            try{ await serializeDeck(id,userId,()=>upsertDeck(localDeck,userId)); }
             catch(err){ console.warn("Passômetro: migração local pendente.",err); }
           }
         }
+      }
+      if(window.LuriaLocalOwnerStore.ownerId===userId){
+        const latest=syncMeta(userId);
+        for(const d of remote){latest.known[d.id]=true;}
+        persistSyncMeta(latest,userId);
       }
       return true;
     }
@@ -1619,6 +1671,8 @@
       }
     }
     async function load(){
+      await window.LuriaLocalOwnerStore.ready;
+      state.userId=window.LuriaLocalOwnerStore.ownerId;
       state.decks=pruneExpired(localDecks());
       persistLocal();
       renderDecks();
@@ -1627,7 +1681,7 @@
     function save(deckId){
       const d=deckId?state.decks.find(x=>String(x.id)===String(deckId)):null;
       if(d){
-        d.updatedAt=Date.now();
+        d.updatedAt=Math.max(Date.now(),Number(d.updatedAt||0)+1);
         queueDeckSync(d);
       }
       persistLocal();
@@ -2155,9 +2209,24 @@
 
     loadDrugCatalog();
     load();
-    window.supabaseClient.auth.onAuthStateChange((event,session)=>{
-      state.userId=session?.user?.id||null;
-      if(session?.user) setTimeout(()=>syncWhenReady(),0);
+    window.addEventListener("luria:owner-changed",()=>{
+      clearTimeout(state.syncTimer);
+      for(const timer of state.syncTimers?.values()||[])clearTimeout(timer);
+      state.syncTimers?.clear();
+      state.userId=window.LuriaLocalOwnerStore.ownerId;
+      state.activeDeckId=null;
+      state.editingDeckId=null;
+      state.editingPatientId=null;
+      ["pm-view-dialog","pm-deck-dialog","pm-patient-dialog"].forEach(closeDialog);
+      $("#pm-deck-form").reset();resetPatientForm();
+      $("#pm-search").value="";
+      ["#pm-patients","#pm-view-paper","#pm-export-stage"].forEach(id=>$(id)?.replaceChildren());
+      ["#pm-detail-title","#pm-detail-subtitle"].forEach(id=>{if($(id))$(id).textContent="";});
+      state.decks=pruneExpired(localDecks());
+      $("#pm-detail").hidden=true;
+      $("#pm-list").hidden=false;
+      renderDecks();
+      if(state.userId) setTimeout(()=>syncWhenReady(),0);
     });
     window.addEventListener("focus",()=>syncWhenReady());
     window.addEventListener("online",()=>syncWhenReady());

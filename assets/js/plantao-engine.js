@@ -21,7 +21,7 @@
   }
   function isTraumaCase(item){
     const t=String([item?.title,item?.debrief?.diagnosis,item?.summary,item?.presentation?.opening,item?.presentation?.chief_complaint].filter(Boolean).join(" "))
-      .normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+      .normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
     return /trauma|atropel|acidente|queda|ferimento|arma de fogo|arma branca|fratura|luxacao|hemotorax traum|pneumotorax traum|tce|traumatismo|politrauma|hemorragia arterial de extremidade/.test(t);
   }
   function requiredActions(item){
@@ -30,7 +30,7 @@
       ? configuredRaw.filter(id=>id!=="abcde")
       : configuredRaw;
     if(configured.length) return [...new Set(configured)];
-    const t=String([item.title,item.debrief?.diagnosis,item.summary,item.presentation?.opening].filter(Boolean).join(" ")).normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+    const t=String([item.title,item.debrief?.diagnosis,item.summary,item.presentation?.opening].filter(Boolean).join(" ")).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
     const ids=[];
     const add=(...xs)=>ids.push(...xs);
     const trauma=isTraumaCase(item);

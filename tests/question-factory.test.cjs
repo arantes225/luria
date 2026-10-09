@@ -26,16 +26,32 @@ test('cópias estáticas das duas rotas coincidem com módulo',()=>{
  const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#x27;');
  for(const path of ['admin.html','admin/index.html']){
   const s=fs.readFileSync(require('node:path').join(__dirname,'..',path),'utf8');
-  assert.ok(s.indexOf('question-factory-prompts.js?v=3.2')<s.indexOf('admin.js?v=5.8'));
+  const scripts=[...s.matchAll(/<script[^>]+src="([^"]+)"/g)].map(m=>m[1]);
+  const prompts=scripts.findIndex(src=>/\/question-factory-prompts\.js(?:\?|$)/.test(src));
+  const admin=scripts.findIndex(src=>/\/admin\.js(?:\?|$)/.test(src));
+  assert.ok(prompts>=0 && admin>prompts,'canonical prompts must load before admin');
   assert.ok(s.includes('admin-qf-import-calibration'));
   for(const [key,text] of Object.entries(map)){const start=`<pre id="qf-prompt-${key}" class="admin-qf-prompt">`;assert.equal(s.split(start)[1].split('</pre>')[0],escape(text));}
  }
 });
-test('todos os caminhos do admin usam construtor e roteiam adjudicação/final',()=>{
- const s=fs.readFileSync(require('node:path').join(__dirname,'../assets/js/admin.js'),'utf8');
- assert.ok(!s.includes('full_generation_brief ||'));
- assert.ok(s.includes('admin_import_question_factory_adjudication'));
- assert.ok(!s.includes('payload.batch_number = state'));
+test('admin routes adjudication/final and rejects mismatched import scope',async()=>{
+ const vm=require('node:vm');
+ const source=fs.readFileSync(require('node:path').join(__dirname,'../assets/js/admin.js'),'utf8');
+ const code=source.slice(source.indexOf('  function normalizeQuestionFactoryImportPayload('),source.indexOf('  async function setHumanBlockReview('));
+ assert.ok(code.includes('async function submitReviewImport()'));
+ for(const stage of ['chatgpt_adjudication','lot_chatgpt_final']){
+  for(const mismatch of [false,true]){
+   const payload={review_stage:stage,batch_number:mismatch?9:1,block_number:2};
+   const box={value:JSON.stringify(payload)},message={textContent:''},calls=[];
+   const noop=async()=>{};
+   const ctx={state:{qfReviewImportBatch:1,qfReviewImportBlock:2},$:id=>id==='admin-qf-review-import-json'?box:message,
+    sb:{rpc:async(name,args)=>{calls.push({name,args});return {data:{result:{}},error:null}}},
+    loadQuestionFactory:noop,loadQuestionFactoryStyles:noop,loadQuestionFactoryBlockTracker:noop,loadQuestionFactoryQuality:noop,loadBadQuestionFolder:noop,console};
+   vm.createContext(ctx);vm.runInContext(code,ctx);await ctx.submitReviewImport();
+   if(mismatch){assert.equal(calls.length,0);assert.match(message.textContent,/Nenhum dado foi alterado/)}
+   else{assert.equal(calls.length,1);assert.equal(calls[0].name,'admin_import_question_factory_stage');assert.equal(calls[0].args.p_payload.review_stage,stage)}
+  }
+ }
 });
 
 test('admin usa roteador universal de importação por etapa e geração tem migration dedicada',()=>{

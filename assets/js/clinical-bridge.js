@@ -2,16 +2,17 @@
   "use strict";
   const KEY = "luria-clinical-transfer-v1";
   const PRESCRIPTION_KEY = "luria-prescription-draft-v1";
+  const owned = window.LuriaLocalOwnerStore;
   const safe = (v) => String(v ?? "").trim();
   const write = (payload) => {
-    try { sessionStorage.setItem(KEY, JSON.stringify({ ...payload, created_at: new Date().toISOString() })); return true; }
+    try { return !!owned?.write(KEY, JSON.stringify({ ...payload, created_at: new Date().toISOString() }), sessionStorage); }
     catch (_) { return false; }
   };
   const read = () => {
-    try { const raw = sessionStorage.getItem(KEY); return raw ? JSON.parse(raw) : null; }
+    try { const raw = owned?.read(KEY, sessionStorage); return raw ? JSON.parse(raw) : null; }
     catch (_) { return null; }
   };
-  const clear = () => { try { sessionStorage.removeItem(KEY); } catch (_) {} };
+  const clear = () => { try { owned?.remove(KEY, sessionStorage); } catch (_) {} };
   const qs = (value) => encodeURIComponent(safe(value));
   const inPrescriptionFlow = () => {
     try { return new URLSearchParams(location.search).get("prescription") === "1"; }
@@ -19,15 +20,15 @@
   };
   const appendPrescription = (payload) => {
     const text = safe(payload?.text || payload?.title);
-    if (!text) return false;
+    if (!text || !owned?.ownerId) return false;
     try {
-      const current = localStorage.getItem(PRESCRIPTION_KEY) || "";
+      const current = owned.read(PRESCRIPTION_KEY) || "";
       const title = safe(payload?.title);
       const block = title && !text.toLowerCase().startsWith(title.toLowerCase())
         ? title.toUpperCase() + "\n" + text
         : text;
       const next = current.trim() ? current.trimEnd() + "\n\n" + block.trim() : block.trim();
-      localStorage.setItem(PRESCRIPTION_KEY, next);
+      owned.write(PRESCRIPTION_KEY, next);
       window.dispatchEvent(new CustomEvent("luria:prescription-draft-updated", { detail: { text: next } }));
       return true;
     } catch (_) { return false; }
@@ -43,7 +44,7 @@
     inPrescriptionFlow,
     toQuickChart(payload) {
       if (inPrescriptionFlow()) return appendPrescription(payload || {});
-      write(payload || {});
+      if (!write(payload || {})) return false;
       location.href = "/trabalho/prontuario-rapido/?import=1";
       return true;
     },

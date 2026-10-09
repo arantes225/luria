@@ -258,14 +258,15 @@
   <script>
     (() => {
       const KEY = "luria-prescription-draft-v1";
+      const owned = window.LuriaLocalOwnerStore;
       const note = document.getElementById("prescription-mini-note");
       const copy = document.getElementById("prescription-mini-copy");
       const clear = document.getElementById("prescription-mini-clear");
       const status = document.getElementById("prescription-mini-status");
       if (!note) return;
 
-      const read = () => { try { return localStorage.getItem(KEY) || ""; } catch (_) { return ""; } };
-      const write = (value) => { try { localStorage.setItem(KEY, value); } catch (_) {} };
+      const read = () => owned?.read(KEY) || "";
+      const write = (value) => { try { return owned?.write(KEY, value); } catch (_) { return false; } };
       const setStatus = (value) => {
         if (!status) return;
         status.textContent = value;
@@ -274,7 +275,9 @@
       };
 
       note.value = read();
-      note.addEventListener("input", () => { write(note.value); setStatus("Salvo"); });
+      owned?.ready.then(() => { note.value = read(); });
+      window.addEventListener("luria:owner-changed", () => { note.value = read(); });
+      note.addEventListener("input", () => { setStatus(write(note.value) ? "Salvo" : "Entre na sua conta para salvar"); });
 
       copy?.addEventListener("click", async () => {
         const value = note.value.trim();
@@ -295,7 +298,7 @@
       });
 
       window.addEventListener("storage", (event) => {
-        if (event.key === KEY && event.newValue !== note.value) note.value = event.newValue || "";
+        if (event.key === owned?.key(KEY) && event.newValue !== note.value) note.value = event.newValue || "";
       });
     })();
   </script>
