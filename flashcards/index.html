@@ -572,7 +572,7 @@ body[data-page="flashcards"] .flash-home-decks .flash-ref-deck-top .flash-ref-de
 </style>
 
 <link rel="stylesheet" href="/assets/css/consolidation-home-fit.css?v=20261005-flashcards-home-refit-v2">
-<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=11-standard-title">
+<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=12-metrics-align">
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -1746,6 +1746,32 @@ document.addEventListener("DOMContentLoaded",()=>{
 </script>
 
 
+<script id="flash-metrics-bottom-align-v1">
+(function(){
+  function alignMetrics(){
+    const section=document.querySelector('body[data-page="flashcards"] .flash-section[data-flash-section="review"].active');
+    const metrics=section&&section.querySelector('.flash-home-summary.error-side-card.error-quick-metrics');
+    const create=section&&section.querySelector('.flash-home-actions .flash-home-action');
+    if(!metrics)return;
+    if(window.innerWidth<981||document.body.classList.contains('flash-review-session-active')){
+      metrics.style.removeProperty('--flash-metrics-target-height');return;
+    }
+    if(!create)return;
+    const target=Math.round(create.getBoundingClientRect().top-metrics.getBoundingClientRect().top-8);
+    if(target>160&&target<900)metrics.style.setProperty('--flash-metrics-target-height',target+'px');
+  }
+  let scheduled=false;
+  function requestAlign(){
+    if(scheduled)return;
+    scheduled=true;
+    requestAnimationFrame(function(){scheduled=false;alignMetrics();});
+  }
+  document.addEventListener('DOMContentLoaded',requestAlign);
+  window.addEventListener('load',requestAlign);
+  window.addEventListener('resize',requestAlign,{passive:true});
+  if(document.readyState!=='loading')requestAlign();
+})();
+</script>
 </body>
 </html>
 
