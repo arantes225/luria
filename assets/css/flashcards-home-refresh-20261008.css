@@ -226,3 +226,17 @@
    min-width:0!important;
  }
 }
+
+/* Metrics extends toward the top edge of Create flashcard, leaving 8px. */
+@media(min-width:981px){
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active .flash-home-summary.error-side-card.error-quick-metrics{
+   position:relative!important;
+   z-index:10!important;
+   align-self:start!important;
+   height:var(--flash-metrics-target-height,224px)!important;
+   min-height:0!important;
+   max-height:none!important;
+   box-sizing:border-box!important;
+   overflow:hidden!important;
+ }
+}
