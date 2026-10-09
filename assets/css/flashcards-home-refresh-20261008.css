@@ -187,3 +187,21 @@
    margin-bottom:0!important;
  }
 }
+
+/* Precise bottom anchoring: first row stays put; lower row ends 8px
+   inside the page boundary. The JS supplies the actual container height. */
+@media (min-width:981px) {
+ body[data-page="flashcards"] .flash-section[data-flash-section="review"].active{
+   height:var(--flash-home-available-height,calc(100dvh - 160px))!important;
+   min-height:0!important;max-height:none!important;
+   grid-template-rows:172px 176px!important;
+   align-content:space-between!important;
+   padding:0!important;
+ }
+ body[data-page="flashcards"] .flash-home-decks,
+ body[data-page="flashcards"] .flash-home-actions{
+   height:176px!important;min-height:176px!important;max-height:176px!important;
+   align-self:end!important;
+ }
+ body[data-page="flashcards"] .flash-home-action{height:100%!important;min-height:0!important;max-height:none!important}
+}
