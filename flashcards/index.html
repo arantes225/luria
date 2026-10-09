@@ -572,7 +572,7 @@ body[data-page="flashcards"] .flash-home-decks .flash-ref-deck-top .flash-ref-de
 </style>
 
 <link rel="stylesheet" href="/assets/css/consolidation-home-fit.css?v=20261005-flashcards-home-refit-v2">
-<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=5">
+<link rel="stylesheet" href="/assets/css/flashcards-home-refresh-20261008.css?v=6">
 </head>
 
 <body data-page="flashcards" class="flash-v21-booting">
@@ -1744,36 +1744,28 @@ document.addEventListener("DOMContentLoaded",()=>{
  new MutationObserver(sync).observe(document.querySelector(".page")||body,{subtree:true,attributes:true,attributeFilter:["class"]});
 });
 </script>
-<script id="flash-home-bottom-anchor-v5">
+<script id="flash-home-bottom-anchor-v6">
 (function(){
-  function alignBottom(){
-    const page=document.querySelector('body[data-page="flashcards"] .page');
+  function align(){
     const section=document.querySelector('body[data-page="flashcards"] .flash-section[data-flash-section="review"].active');
-    const decks=section&&section.querySelector('.flash-home-decks');
-    const actions=section&&section.querySelector('.flash-home-actions');
-    if(!page||!section||!decks||!actions)return;
-    decks.style.removeProperty('transform');
-    actions.style.removeProperty('transform');
-    if(window.innerWidth<981||document.body.classList.contains('flash-review-session-active'))return;
-    /* Measure against the visible page's bottom, not a guessed viewport offset.
-       Moving the lower row must not increase the upper row or alter its position. */
-    const bottom=page.getBoundingClientRect().bottom;
-    const rowBottom=Math.max(decks.getBoundingClientRect().bottom,actions.getBoundingClientRect().bottom);
-    const delta=Math.round(bottom-8-rowBottom);
-    if(delta>1&&delta<600){
-      decks.style.setProperty('transform','translateY('+delta+'px)','important');
-      actions.style.setProperty('transform','translateY('+delta+'px)','important');
+    const page=document.querySelector('body[data-page="flashcards"] .page');
+    if(!section||!page)return;
+    const decks=section.querySelector('.flash-home-decks'),actions=section.querySelector('.flash-home-actions');
+    [decks,actions].forEach(el=>el&&el.style.removeProperty('transform'));
+    if(innerWidth<981||document.body.classList.contains('flash-review-session-active')){
+      section.style.removeProperty('--flash-home-available-height');return;
     }
+    const rect=page.getBoundingClientRect();
+    const bottom=Math.min(rect.bottom,innerHeight);
+    const top=section.getBoundingClientRect().top;
+    const available=Math.floor(bottom-top-8);
+    if(available>=356)section.style.setProperty('--flash-home-available-height',available+'px');
   }
   let queued=false;
-  function schedule(){if(queued)return;queued=true;requestAnimationFrame(function(){queued=false;alignBottom()})}
+  function schedule(){if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;align()})}
   window.addEventListener('resize',schedule,{passive:true});
   window.addEventListener('load',schedule);
-  document.addEventListener('DOMContentLoaded',function(){
-    schedule();
-    const page=document.querySelector('body[data-page="flashcards"] .page');
-    if(page&&typeof ResizeObserver!=='undefined')new ResizeObserver(schedule).observe(page);
-  });
+  document.addEventListener('DOMContentLoaded',schedule);
   schedule();
 })();
 </script>
