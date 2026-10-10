@@ -84,3 +84,32 @@ test('service worker preloads v2 assets and matches versioned offline code by pa
   }
   assert.match(sw, /ignoreSearch: true/);
 });
+
+test('dashboard layout choice is not replaced by layout 1 in installed mode', () => {
+  const js = fs.readFileSync('assets/js/dashboard-layouts.js', 'utf8');
+  assert.match(js, /const nextLayout = allowed\.has\(selected\) \? selected : "1"/);
+  assert.doesNotMatch(js, /standalonePwa\s*\?\s*"1"/);
+});
+
+test('every redesigned core page loads the current PWA updater', () => {
+  const paths = [
+    'dashboard/index.html', 'aprender/index.html', 'consolidar/index.html',
+    'cronograma/index.html', 'flashcards/index.html',
+    'questoes-simulados/index.html', 'resolver-questoes/index.html',
+    'caderno/index.html', 'caderno-erros/index.html', 'estatisticas/index.html',
+    'amigos/index.html', 'apostilas/index.html'
+  ];
+  for (const page of paths) {
+    const markup = fs.readFileSync(page, 'utf8');
+    assert.match(markup, /pwa\.js\?v=20261010-pwa279/, page);
+    assert.match(markup, /data-ui-nav="v2"/, page);
+  }
+});
+
+test('installed PWA actively checks and offers current service worker on resume', () => {
+  assert.match(pwaSource, /controllerchange/);
+  assert.match(pwaSource, /luria-pwa-update-action/);
+  assert.match(pwaSource, /updateViaCache:\s*"none"/);
+  const worker = fs.readFileSync('service-worker.js', 'utf8');
+  assert.match(worker, /luria-pwa-v279-installed-client-refresh/);
+});
