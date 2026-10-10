@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v279-installed-client-refresh";
+const CACHE_VERSION = "luria-pwa-v280-touch-unlock";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -70,25 +70,27 @@ async function cacheShellSafely() {
 }
 
 self.addEventListener("install", event => {
-  event.waitUntil(
-    cacheShellSafely()
-      .then(() => self.skipWaiting())
-  );
+  // A failed/slow request among dozens of precache URLs must never prevent a
+  // broken iOS PWA from receiving the new worker and its navigation repairs.
+  event.waitUntil(self.skipWaiting());
 });
 
 self.addEventListener("activate", event => {
-  event.waitUntil(
-    caches.keys()
-      .then(keys => Promise.all(
-        keys
-          .filter(key =>
-            key.startsWith("luria-pwa-")
-            && ![STATIC_CACHE, RUNTIME_CACHE].includes(key)
-          )
-          .map(key => caches.delete(key))
-      ))
-      .then(() => self.clients.claim())
-  );
+  event.waitUntil((async () => {
+    await caches.keys().then(keys => Promise.all(
+      keys.filter(key =>
+        key.startsWith("luria-pwa-") &&
+        ![STATIC_CACHE, RUNTIME_CACHE].includes(key)
+      ).map(key => caches.delete(key))
+    ));
+    await self.clients.claim();
+    // Warm the offline shell only after claiming installed pages, with a bound
+    // so content/CDN errors do not hold the worker's activation indefinitely.
+    await Promise.race([
+      cacheShellSafely(),
+      new Promise(resolve => setTimeout(resolve, 4000))
+    ]);
+  })());
 });
 
 self.addEventListener("message", event => {
