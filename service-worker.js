@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v278-web-v2-mobile-sync";
+const CACHE_VERSION = "luria-pwa-v279-installed-client-refresh";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -29,10 +29,10 @@ const APP_SHELL = [
   "/assets/js/luria-command-center.js?v=20261002-1",
   "/assets/css/luria-command-center.css?v=20261002-1",
   "/mini-osce/",
-  "/assets/js/pwa.js",
+  "/assets/js/pwa.js?v=20261010-pwa279",
   "/assets/js/app.js",
-  "/assets/js/ui-navigation-v2.js",
-  "/assets/js/ui-theme-v2.js",
+  "/assets/js/ui-navigation-v2.js?v=20261010-pwa279",
+  "/assets/js/ui-theme-v2.js?v=20261010-pwa279",
   "/assets/js/dashboard-ui-v2.js",
   "/assets/css/ui-v2-foundations.css",
   "/assets/css/ui-navigation-v2.css",
