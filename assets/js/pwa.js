@@ -59,7 +59,6 @@
 
   const release = "20261010-pwa279";
   const refreshKey = "luria:pwa:activated:" + release;
-  const hadController = !!navigator.serviceWorker.controller;
   let interacted = false;
   let reloadPending = false;
   document.addEventListener("pointerdown", () => { interacted = true; }, { capture: true, once: true });
@@ -90,7 +89,7 @@
     document.body.append(notice);
   }
 
-  if (hadController) {
+  if (standalone) {
     navigator.serviceWorker.addEventListener("controllerchange", () => {
       let alreadyRefreshed = false;
       try { alreadyRefreshed = sessionStorage.getItem(refreshKey) === "1"; } catch {}
