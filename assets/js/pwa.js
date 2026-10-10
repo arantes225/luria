@@ -57,7 +57,7 @@
 
   if (!("serviceWorker" in navigator)) return;
 
-  const release = "20261010-pwa279";
+  const release = "20261010-pwa280";
   const refreshKey = "luria:pwa:activated:" + release;
   let interacted = false;
   let reloadPending = false;
