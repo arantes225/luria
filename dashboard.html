@@ -15,29 +15,51 @@
   <meta name="apple-mobile-web-app-title" content="LURIA">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
-  
-  <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-dark-pattern-v77">
-  <link rel="stylesheet" href="assets/css/dashboard-layouts.css?v=20261006-dashboard3-fit">
-  <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
+  <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
+
+  <link id="luria-global-master-css" rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
+  <link rel="stylesheet" href="/assets/css/dashboard-layouts.css?v=20261006-dashboard3-fit">
+  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/dashboard/">
   <script>(function(){try{if(location.pathname.endsWith("/dashboard.html"))history.replaceState(null,"","/dashboard/"+location.search+location.hash);}catch(e){}})();</script>
-  <style>
-    /* Impede o cabeçalho legado de aparecer durante hard refresh antes do JS. */
-    /* O Dashboard atual não usa o título legado da topbar. Esconde desde o primeiro paint,
-       inclusive depois que scripts alterarem classes do body durante o boot. */
-    body[data-page="dashboard"] .topbar .page-heading{display:none!important;visibility:hidden!important}
-    body[data-page="dashboard"] .topbar .page-heading [data-page-eyebrow],
-    body[data-page="dashboard"] .topbar .page-heading [data-page-title]{display:none!important}
-  </style>
+<style id="luria-page-font-lock-v56">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}html body :where(code,pre,kbd,samp),html body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}</style>  <script src="/assets/js/medical-icons.js?v=2.0"></script>
+
+<style id="dashboard-inline-heading-lock-v1">
+body[data-page="dashboard"] .topbar .page-heading{
+  display:none!important;
+  visibility:hidden!important;
+}
+body[data-page="dashboard"] .topbar .page-heading [data-page-eyebrow],
+body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
+  display:none!important;
+}
+</style>
+  <link rel="preload" href="/assets/fonts/inter/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
+  <link rel="stylesheet" href="/assets/css/dashboard-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
-<body data-page="dashboard" class="dashboard-preboot">
+<body data-ui-nav="v2" data-ui-context="study" id="luria-dashboard" data-page="dashboard" data-ui="v2">
+  <script src="/assets/js/ui-theme-v2.js?v=2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=2"></script>
+  <a class="ui-skip-link" href="/dashboard/#dashboard-content">Ir para o conteúdo</a>
+  <script src="/assets/js/dashboard-ui-v2.js?v=2"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
 
-    <main class="main">
+    <main id="dashboard-content" class="main" tabindex="-1">
       <div class="page">
+
+        <header class="ui-page-header">
+          <div><p class="ui-eyebrow">SEU PAINEL DE ESTUDOS</p><h1>Dashboard educacional</h1><p>Seu próximo passo, seu ritmo, seu progresso.</p></div>
+          <div class="ui-theme-controls" aria-label="Personalização do Dashboard">
+            <fieldset><legend>Aparência</legend><div class="ui-segmented"><button type="button" data-ui-theme-control="appearance" value="light" aria-pressed="true">Claro</button><button type="button" data-ui-theme-control="appearance" value="dark" aria-pressed="false">Escuro</button></div></fieldset>
+            <fieldset><legend>Cor do tema</legend><div class="ui-segmented"><button type="button" data-ui-theme-control="identity" value="blue" aria-pressed="true"><i class="ui-swatch is-blue" aria-hidden="true"></i>Azul</button><button type="button" data-ui-theme-control="identity" value="pink" aria-pressed="false"><i class="ui-swatch is-pink" aria-hidden="true"></i>Rosa</button></div></fieldset>
+            <p id="ui-theme-status" class="ui-visually-hidden" role="status"></p>
+          </div>
+        </header>
         <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
 
@@ -47,16 +69,38 @@
           </div>
         </header>
 
-              </div>
+        <section id="ui-review-summary" class="ui-review-summary" aria-label="Indicadores rápidos"><p id="ui-review-copy" class="ui-visually-hidden" role="status">Aguardando os dados das suas revisões.</p><a class="ui-quick-metric" href="/flashcards/"><span>Flashcards pendentes</span><strong id="ui-review-flashcards">—</strong><small>Revisar flashcards <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/cronograma/"><span>Aulas de hoje concluídas</span><strong id="ui-review-lessons">—</strong><small>Ver cronograma <span aria-hidden="true">↗</span></small></a><a class="ui-quick-metric" href="/caderno-erros/"><span>Erros ativos</span><strong id="ui-review-errors">—</strong><small>Abrir caderno <span aria-hidden="true">↗</span></small></a></section>
+        <div id="dashboard-fallback-shell" hidden><p class="ui-feedback" data-state="warning" role="status">O Dashboard está demorando para carregar. Se a espera continuar, <a href="/dashboard/">tente novamente</a>.</p></div>
+      </div>
     </main>
   </div>
 
   <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="assets/js/supabase.js?v=auth4"></script>
-  <script src="/assets/js/app.js?v=20261004-dark-pattern-v77"></script>
-  <script src="assets/js/study-mode.js?v=12.1"></script>
-  <script src="assets/js/dashboard.js?v=20261006-css-owned-height"></script>
-  <script src="assets/js/dashboard-layouts.js?v=20261004-dashboard-master-v15"></script>
-  <script defer src="assets/js/pwa.js?v=3"></script>
+  <script src="/assets/js/supabase.js?v=auth4"></script>
+  <script src="/assets/js/app.js?v=20261005-menu-restored-v100"></script>
+  <script src="/assets/js/study-mode.js?v=12.1"></script>
+  <script src="/assets/js/dashboard.js?v=20261006-css-owned-height"></script>
+  <script src="/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101"></script>
+  <script>
+  (function(){
+    var fallback=document.getElementById("dashboard-fallback-shell");
+    var timer=setTimeout(function(){
+      var root=document.getElementById("dashboard-alternative");
+      if((!root||!root.innerHTML.trim())&&fallback) fallback.hidden=false;
+    },2500);
+    window.addEventListener("error",function(event){
+      if(fallback&&String(event.filename||"").includes("dashboard")) fallback.hidden=false;
+    });
+    window.addEventListener("unhandledrejection",function(){
+      var root=document.getElementById("dashboard-alternative");
+      if((!root||!root.innerHTML.trim())&&fallback) fallback.hidden=false;
+    });
+    window.addEventListener("luria:dashboard-data",function(){
+      clearTimeout(timer);
+      if(fallback) fallback.hidden=true;
+    });
+  })();
+  </script>
+  <script defer src="/assets/js/pwa.js?v=4-doubletap-lock"></script>
 </body>
 </html>
