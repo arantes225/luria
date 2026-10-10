@@ -104,20 +104,32 @@
     if (label.textContent !== unit) label.textContent = unit;
     set(indicator, "aria-label", value === "—" ? "Ofensiva: aguardando dados" : `Ofensiva: ${value} ${unit}`);
   }
+  // Release only the inert state owned by the navigation drawer. In particular,
+  // a hidden or persistent search overlay must not leave all page buttons disabled.
+  function setDrawerInert(node, blocked) {
+    if (!node) return;
+    if (blocked && !node.inert) {
+      node.inert = true;
+      node.dataset.uiDrawerInert = "true";
+    } else if (!blocked && node.dataset.uiDrawerInert === "true") {
+      node.inert = false;
+      delete node.dataset.uiDrawerInert;
+    }
+  }
   function syncDrawer() {
     const sidebar = document.getElementById("sidebar");
     const main = document.querySelector("main.main");
     const bar = document.querySelector(".topbar");
     const trigger = document.getElementById("menu-open");
     const open = narrow.matches && body.classList.contains("sidebar-open");
-    const modal = !!document.querySelector("#luria-session-overlay, #luria-search-overlay");
+
     if (sidebar) {
       if (sidebar.inert !== (narrow.matches && !open)) sidebar.inert = narrow.matches && !open;
       if (narrow.matches) { set(sidebar, "role", "dialog"); set(sidebar, "aria-modal", "true"); set(sidebar, "aria-label", "Navegação"); }
       else { for (const attr of ["role", "aria-modal", "aria-label"]) if (sidebar.hasAttribute(attr)) sidebar.removeAttribute(attr); }
     }
-    if (main && !modal && (open || drawerOpen) && main.inert !== open) main.inert = open;
-    if (bar && !modal && (open || drawerOpen) && bar.inert !== open) bar.inert = open;
+    setDrawerInert(main, open);
+    setDrawerInert(bar, open);
     set(trigger, "aria-expanded", narrow.matches ? open : body.dataset.uiSidebar !== "collapsed");
     set(trigger, "aria-controls", "sidebar");
     set(trigger, "aria-label", narrow.matches ? (open ? "Fechar navegação" : "Abrir navegação") : (body.dataset.uiSidebar === "collapsed" ? "Expandir navegação" : "Recolher navegação"));
