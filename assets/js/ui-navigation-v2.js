@@ -205,6 +205,20 @@
     else if (!event.shiftKey && document.activeElement === controls.at(-1)) { event.preventDefault(); controls[0]?.focus(); }
   });
   narrow.addEventListener("change", () => { body.classList.remove("sidebar-open"); enhance(); });
+  // iOS installed apps can restore a previous page from the back-forward cache
+  // with the drawer's inert state still attached. Always return to a usable
+  // closed menu when the page resumes.
+  window.addEventListener("pageshow", () => {
+    body.classList.remove("sidebar-open");
+    drawerOpen = false;
+    for (const node of [document.querySelector("main.main"), document.querySelector(".topbar")]) {
+      if (node?.dataset.uiDrawerInert === "true") {
+        node.inert = false;
+        delete node.dataset.uiDrawerInert;
+      }
+    }
+    schedule();
+  });
   window.addEventListener("docmap:ready", enhance);
   window.addEventListener("luria:dashboard-data", schedule);
   document.addEventListener("DOMContentLoaded", enhance, {once:true});
