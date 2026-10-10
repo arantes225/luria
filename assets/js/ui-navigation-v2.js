@@ -104,15 +104,13 @@
     if (label.textContent !== unit) label.textContent = unit;
     set(indicator, "aria-label", value === "—" ? "Ofensiva: aguardando dados" : `Ofensiva: ${value} ${unit}`);
   }
-  // Release only the inert state owned by the navigation drawer. In particular,
-  // a hidden or persistent search overlay must not leave all page buttons disabled.
-  function setDrawerInert(node, blocked) {
-    if (!node) return;
-    if (blocked && !node.inert) {
-      node.inert = true;
-      node.dataset.uiDrawerInert = "true";
-    } else if (!blocked && node.dataset.uiDrawerInert === "true") {
-      node.inert = false;
+  // The mobile backdrop intercepts taps outside the drawer. Do not mark main
+  // or topbar inert: WebKit can preserve that state when an installed PWA resumes,
+  // leaving the entire interface unclickable after the drawer closes.
+  function restorePageInteraction() {
+    for (const node of [document.querySelector("main.main"), document.querySelector(".topbar")]) {
+      if (!node) continue;
+      if (node.inert) node.inert = false;
       delete node.dataset.uiDrawerInert;
     }
   }
@@ -128,8 +126,7 @@
       if (narrow.matches) { set(sidebar, "role", "dialog"); set(sidebar, "aria-modal", "true"); set(sidebar, "aria-label", "Navegação"); }
       else { for (const attr of ["role", "aria-modal", "aria-label"]) if (sidebar.hasAttribute(attr)) sidebar.removeAttribute(attr); }
     }
-    setDrawerInert(main, open);
-    setDrawerInert(bar, open);
+    restorePageInteraction();
     set(trigger, "aria-expanded", narrow.matches ? open : body.dataset.uiSidebar !== "collapsed");
     set(trigger, "aria-controls", "sidebar");
     set(trigger, "aria-label", narrow.matches ? (open ? "Fechar navegação" : "Abrir navegação") : (body.dataset.uiSidebar === "collapsed" ? "Expandir navegação" : "Recolher navegação"));
@@ -211,12 +208,7 @@
   window.addEventListener("pageshow", () => {
     body.classList.remove("sidebar-open");
     drawerOpen = false;
-    for (const node of [document.querySelector("main.main"), document.querySelector(".topbar")]) {
-      if (node?.dataset.uiDrawerInert === "true") {
-        node.inert = false;
-        delete node.dataset.uiDrawerInert;
-      }
-    }
+    restorePageInteraction();
     schedule();
   });
   window.addEventListener("docmap:ready", enhance);
