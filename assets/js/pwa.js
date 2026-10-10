@@ -111,6 +111,19 @@
     }
   }
 
-  if (document.readyState === "complete") registerLatestWorker();
-  else window.addEventListener("load", registerLatestWorker, { once: true });
+  // An installed iOS PWA frequently resumes without dispatching another load.
+  // Recheck on pageshow/foreground so long-lived standalone sessions are updated.
+  let lastCheck = 0;
+  function checkOnResume() {
+    const now = Date.now();
+    if (now - lastCheck < 30000) return;
+    lastCheck = now;
+    registerLatestWorker();
+  }
+  window.addEventListener("pageshow", checkOnResume);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") checkOnResume();
+  });
+  if (document.readyState === "complete") checkOnResume();
+  else window.addEventListener("load", checkOnResume, { once: true });
 })();
