@@ -40,6 +40,24 @@
         status.className = "ui-sr-only"; status.setAttribute("role", "status"); menu.append(status);
       }
     }
+    const accountItems = [
+      ['a[href="/configuracoes/#perfil"]', '<circle cx="12" cy="8" r="3"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>'],
+      ['[data-restart-onboarding]', '<path d="M4 10a8 8 0 1 1 1 9M4 4v6h6"/>'],
+      ['a[href="/configuracoes/"]', '<path d="M4 6h16M4 12h16M4 18h16"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/>'],
+      ['#luria-profile-logout', '<path d="M9 4H4v16h5M13 8l4 4-4 4M8 12h13"/>']
+    ];
+    for (const [selector, paths] of accountItems) {
+      const item = menu.querySelector(selector);
+      if (!item || item.classList.contains("ui-profile-account-item")) continue;
+      item.classList.add("ui-profile-account-item");
+      const visual = document.createElement("span");
+      visual.className = "ui-profile-item-icon"; visual.innerHTML = icon(paths);
+      item.prepend(visual);
+    }
+    if (!menu.querySelector(".ui-profile-account-label")) {
+      const first = menu.querySelector(".ui-profile-account-item");
+      if (first) {const title = document.createElement("span"); title.className = "ui-profile-account-label"; title.textContent = "Conta"; first.before(title);}
+    }
     const name = menu.querySelector(".ui-profile-name");
     const displayName = window.docmapProfile?.display_name || "Sua conta";
     if (name.textContent !== displayName) name.textContent = displayName;
@@ -113,7 +131,7 @@
     if (bar) {
       const shell = document.querySelector(".app-shell");
       const heading = bar.querySelector(".page-heading");
-      if (!work && body.dataset.page !== "dashboard" && heading && heading.textContent.trim() && !document.querySelector("main .luria-page-spotlight, main .book-hero, main .settings-page-head")) {
+      if (!work && body.dataset.page !== "dashboard" && body.dataset.uiHeading !== "provided" && heading && heading.textContent.trim() && !document.querySelector("main .luria-page-spotlight, main .book-hero, main .settings-page-head")) {
         heading.classList.add("ui-page-heading"); document.querySelector("main.main > .page")?.prepend(heading);
       }
       if (shell && bar.parentElement !== shell) shell.prepend(bar);

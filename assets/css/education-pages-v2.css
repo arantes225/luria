@@ -1,0 +1,128 @@
+/* Page layouts replace legacy viewport locks. Loaded only by the migrated pages. */
+@layer luria-ui-education {
+  body[data-ui="v2"][data-ui-context="study"] .main .luria-page-spotlight-copy::before {color:var(--color-text-secondary)!important;font-size:.8125rem!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-ui-context="study"]:is([data-page="aprender"],[data-page="consolidar"]) .learn-page {display:grid!important;grid-template-rows:none!important;gap:1.5rem!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;}
+  body[data-ui="v2"][data-ui-context="study"]:is([data-page="aprender"],[data-page="consolidar"]) .learn-page > .luria-page-spotlight {margin:0!important;}
+  body[data-ui="v2"][data-page="aprender"] .alex-hero {display:grid;grid-template-columns:180px minmax(0,1fr);gap:2rem;align-items:center;padding:1.5rem 2rem;background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;}
+  body[data-ui="v2"][data-page="aprender"] .alex-visual {display:flex;align-items:end;justify-content:center;}
+  body[data-ui="v2"][data-page="aprender"] .alex-character-img {display:block;width:100%;max-width:180px;height:auto;}
+  body[data-ui="v2"][data-page="aprender"] .alex-content {min-width:0;display:grid;gap:1rem;}
+  body[data-ui="v2"][data-page="aprender"] .alex-content h2 {margin:0;}
+  body[data-ui="v2"][data-page="aprender"] .alex-quote {color:var(--color-text-secondary);}
+  body[data-ui="v2"][data-page="aprender"] .alex-ask {display:grid;grid-template-columns:44px minmax(0,1fr) 44px;gap:.5rem;align-items:center;margin:0;}
+  body[data-ui="v2"][data-page="aprender"] .alex-attach-input {display:none;}
+  body[data-ui="v2"][data-page="aprender"] .alex-ask button {display:grid;place-items:center;padding:.5rem!important;min-width:44px;border:1px solid var(--color-border-interactive);border-radius:8px;}
+  body[data-ui="v2"][data-page="aprender"] .alex-attach {background:var(--color-surface);color:var(--color-primary-text);}
+  body[data-ui="v2"][data-page="aprender"] .alex-attach svg {width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;}
+  body[data-ui="v2"][data-page="aprender"] .alex-send {background:var(--color-primary);color:var(--color-primary-foreground);}
+  body[data-ui="v2"][data-page="aprender"] .alex-entry-actions {display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem;font-size:.875rem;}
+  body[data-ui="v2"][data-page="aprender"] .alex-file-name {color:var(--color-text-secondary);overflow-wrap:anywhere;}
+  body[data-ui="v2"][data-page="aprender"] .learn-tools {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;align-items:stretch;}
+  body[data-ui="v2"][data-page="aprender"] .tool-card {display:flex;flex-direction:column;align-items:start;gap:.75rem;}
+  body[data-ui="v2"][data-page="aprender"] .tool-card :is(h3,p) {margin:0;}
+  body[data-ui="v2"][data-page="aprender"] .tool-card p {color:var(--color-text-secondary);}
+  body[data-ui="v2"][data-page="aprender"] .tool-cta {margin-top:auto;padding-top:.5rem;}
+  body[data-ui="v2"][data-page="aprender"] .tool-icon, body[data-ui="v2"][data-page="consolidar"] .learn-icon {display:grid;place-items:center;width:48px;height:48px;flex:none;border:1px solid var(--color-border);border-radius:12px;}
+  body[data-ui="v2"][data-page="aprender"] .tool-icon svg, body[data-ui="v2"][data-page="consolidar"] .learn-icon svg {width:24px;height:24px;stroke:currentColor;stroke-width:1.8;fill:none;}
+  body[data-ui="v2"][data-page="consolidar"] .learn-grid {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;gap:1rem!important;align-items:stretch!important;height:auto!important;min-height:0!important;overflow:visible!important;}
+  body[data-ui="v2"][data-page="consolidar"] .learn-card {display:grid!important;grid-template-columns:48px minmax(0,1fr)!important;grid-template-rows:auto auto auto!important;column-gap:1rem!important;row-gap:.5rem!important;align-content:start!important;}
+  body[data-ui="v2"][data-page="consolidar"] .learn-card--hero {grid-column:1/-1;}
+  body[data-ui="v2"][data-page="consolidar"] .learn-icon {grid-column:1;grid-row:1/4;}
+  body[data-ui="v2"][data-page="consolidar"] .learn-card :is(h2,p,.learn-cta) {grid-column:2;margin:0!important;}
+  body[data-ui="v2"][data-page="consolidar"] .learn-card p {color:var(--color-text-secondary);}
+  body[data-ui="v2"][data-page="consolidar"] .learn-cta {padding-top:.5rem;}
+
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .agenda-reference-layout {display:grid!important;grid-template-columns:minmax(0,1fr) 280px!important;gap:1.5rem!important;align-items:start!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .agenda-reference-layout > .agenda-bottom-grid {grid-column:1!important;grid-row:2!important;margin:0!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .agenda-insights-side {grid-column:2!important;grid-row:1/3!important;display:grid!important;gap:1rem!important;height:auto!important;max-height:none!important;overflow:visible!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-panel,.agenda-side-card,.agenda-insight-card,.google-calendar-card) {background:var(--color-surface)!important;border:1px solid var(--color-border)!important;border-radius:12px!important;padding:1.25rem!important;height:auto!important;max-height:none!important;overflow:visible!important;box-shadow:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-header,.planner-header-left,.planner-tools) {display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:.75rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .planner-header {margin-bottom:1rem!important;justify-content:space-between!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main #planner-range {font-size:1.375rem!important;margin:0!important;line-height:1.3!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-filter-tools {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:.5rem!important;margin-bottom:1rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-filter-trigger {display:grid!important;grid-template-columns:1fr auto!important;gap:.125rem .5rem!important;align-items:center!important;text-align:left!important;padding:.625rem .75rem!important;height:auto!important;min-height:60px!important;background:var(--color-surface)!important;border-color:var(--color-border-interactive)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-filter-trigger span {grid-column:1;font-size:.8125rem!important;color:var(--color-text-secondary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-filter-trigger strong {grid-column:1;font-size:.875rem!important;white-space:normal!important;overflow-wrap:anywhere!important;color:var(--color-text-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-filter-trigger i {grid-column:2;grid-row:1/3;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.month-filter-list,.month-filter-option) {font-size:.875rem!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day {min-width:0!important;min-height:90px!important;height:auto!important;padding:.5rem!important;background:var(--color-surface)!important;border-color:var(--color-border)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-planner {grid-template-columns:repeat(7,minmax(0,1fr))!important;overflow:visible!important;background:var(--color-border)!important;border-color:var(--color-border)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.month-weekday,.month-day-number,.month-day-count) {font-size:.8125rem!important;color:var(--color-text-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day.today {box-shadow:inset 0 0 0 2px var(--color-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day.today .month-day-number {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day.outside-month {background:var(--color-surface-elevated)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.month-item,.month-event,.agenda-study-bar-label,.agenda-study-bar-value,.agenda-today-date,.agenda-empty,.agenda-goal-day span,.agenda-goal-day small,.agenda-study-total span) {font-size:.8125rem!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-view-toggle,.planner-nav,.agenda-insight-tabs) {background:var(--color-surface-elevated)!important;border-color:var(--color-border)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.planner-view-toggle,.agenda-insight-tabs) button.active {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] .stats-controls-row {overflow:visible!important;min-width:0!important;display:flex!important;align-items:start!important;justify-content:space-between!important;flex-wrap:wrap!important;gap:1rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tabs-shell,.stats-range) {height:auto!important;max-height:none!important;width:auto!important;max-width:100%!important;flex:0 1 auto!important;min-width:0!important;overflow:visible!important;background:var(--color-surface)!important;border-color:var(--color-border)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tabs,.stats-range) {display:flex!important;flex-wrap:wrap!important;min-width:0!important;gap:.25rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tab,.stats-range button) {font-size:.875rem!important;padding:.625rem .75rem!important;color:var(--color-text-secondary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-tab,.stats-range button).active {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-grid,.metric-strip) {grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:1rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-card,.metric-mini) {height:auto!important;min-height:0!important;padding:1rem!important;border:1px solid var(--color-border)!important;border-radius:12px!important;background:var(--color-surface)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-card,.metric-mini) span {font-size:.875rem!important;font-weight:500!important;text-transform:none!important;letter-spacing:0!important;color:var(--color-text-secondary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-card,.metric-mini) strong {display:block!important;font-size:1.75rem!important;line-height:1.3!important;margin:.5rem 0!important;color:var(--color-text-primary)!important;font-variant-numeric:tabular-nums!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-card,.metric-mini) small {font-size:.8125rem!important;line-height:1.5!important;color:var(--color-text-secondary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] #general-summary > :nth-child(-n+3) {background:var(--color-primary-subtle)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-status,.stats-empty,.progress-row strong,.progress-value,.insight,.heatmap-head,.heatmap-row-label,.heatmap-cell strong,.heatmap-legend) {font-size:.875rem!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.progress-row small,.heatmap-cell small) {font-size:.8125rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-block,.stats-summary-box) {margin-top:1rem!important;}
+
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .ed-approved-hero {position:static!important;display:block!important;padding:0!important;margin:0 0 1.5rem!important;height:auto!important;min-height:0!important;background:transparent!important;border:0!important;box-shadow:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .ed-approved-art {display:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.ed-approved-hero,.exam-metric-card)::before, body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.ed-approved-hero,.exam-metric-card)::after {content:none!important;display:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.exam-filters label > span,.exam-empty,#exam-selected-count,.ed-add-row,.ed-add-row small) {font-size:.8125rem!important;line-height:1.5!important;color:var(--color-text-secondary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .ed-catalog-link {position:static!important;margin:0 0 1.5rem!important;float:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main :is(.exam-metrics,.exam-card-info) {display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:1rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.exam-metric-card,.exam-card) {height:auto!important;min-height:0!important;padding:1.25rem!important;background:var(--color-surface)!important;border:1px solid var(--color-border)!important;border-radius:12px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .exam-metric-card strong {display:block!important;font-size:2rem!important;line-height:1.3!important;margin:.5rem 0!important;color:var(--color-text-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.exam-metric-card span,.exam-metric-card small,.exam-card-info span,.exam-card-info strong,.ed-approved-breadcrumb) {font-size:.875rem!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.exam-create-head,.exam-filters,.exam-card-head,.exam-card-actions,.exam-bulk-toolbar) {position:static!important;display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:1rem!important;height:auto!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .exam-filters > label {flex:1 1 180px!important;min-width:0!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.exam-search,.ed-sort-control) input, body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .exam-filters select {width:100%!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] :is(.ed-new-exam,.ed-primary-action) {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;border-color:var(--color-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] #exam-dialog {width:min(680px,calc(100vw - 32px))!important;max-height:calc(100dvh - 32px)!important;overflow:auto!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;border:1px solid var(--color-border)!important;border-radius:16px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] #exam-dialog :is(input,select,textarea) {background:var(--color-surface)!important;color:var(--color-text-primary)!important;border-color:var(--color-border-interactive)!important;min-height:44px!important;font-size:1rem!important;max-width:100%!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.month-topic,.month-event,.month-error) {font-size:.8125rem!important;line-height:1.5!important;white-space:normal!important;overflow-wrap:anywhere!important;height:auto!important;max-height:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .summary-card {min-height:0!important;height:auto!important;text-align:left!important;padding:1rem!important;width:auto!important;max-width:none!important;margin:0!important;justify-self:stretch!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .summary-card span {font-size:.8125rem!important;line-height:1.5!important;letter-spacing:0!important;text-transform:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .summary-card strong {font-size:1.75rem!important;line-height:1.3!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .planner-nav-arrows {display:flex!important;flex:0 0 auto!important;width:auto!important;justify-content:flex-start!important;gap:.5rem!important;padding:0!important;border:0!important;background:transparent!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .planner-nav-arrows button {display:grid!important;place-items:center!important;flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;padding:0!important;background:var(--color-surface-elevated)!important;color:var(--color-text-primary)!important;border:1px solid var(--color-border-interactive)!important;border-radius:8px!important;font-size:1.25rem!important;line-height:1!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .planner-nav-arrows button:hover {background:var(--color-primary-subtle)!important;color:var(--color-primary-text)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] .main .stats-summary-box {padding:1rem!important;margin-top:1.5rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main .exam-bulk-toolbar {padding:.75rem!important;margin:1rem 0!important;background:var(--color-surface-elevated)!important;border:1px solid var(--color-border)!important;border-radius:8px!important;gap:.75rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main .exam-bulk-check {display:inline-flex!important;align-items:center!important;gap:.5rem!important;min-height:44px!important;font-size:.875rem!important;cursor:pointer;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main :is(.exam-bulk-check,.exam-card-select) input[type="checkbox"] {appearance:auto!important;width:20px!important;height:20px!important;min-width:20px!important;min-height:20px!important;margin:0!important;accent-color:var(--color-primary);}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main #exam-delete-selected {margin-left:auto!important;padding:.625rem 1rem!important;background:var(--color-surface)!important;color:var(--color-danger)!important;border:1px solid var(--color-border-interactive)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main #exam-delete-selected:not(:disabled):hover {background:color-mix(in srgb,var(--color-danger) 10%,var(--color-surface))!important;border-color:var(--color-danger)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main .ed-list-button {display:grid!important;place-items:center!important;flex:0 0 44px!important;min-width:44px!important;min-height:44px!important;padding:.5rem!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;border:1px solid var(--color-border-interactive)!important;border-radius:8px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main .ed-add-row {display:grid!important;grid-template-columns:40px minmax(0,1fr)!important;align-items:center!important;gap:.75rem!important;width:100%!important;height:auto!important;min-height:76px!important;padding:1rem!important;margin-top:1rem!important;text-align:left!important;background:var(--color-surface-elevated)!important;color:var(--color-text-primary)!important;border:1px dashed var(--color-border-interactive)!important;border-radius:8px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main .ed-add-row > span {display:grid!important;justify-items:start!important;gap:.25rem!important;text-align:left!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main .ed-add-row :is(b,small) {font-size:.875rem!important;line-height:1.5!important;color:var(--color-text-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main .ed-add-row .ed-add-plus {display:grid!important;place-items:center!important;width:40px!important;height:40px!important;background:var(--color-surface)!important;color:var(--color-primary-text)!important;font-style:normal!important;font-size:1.25rem!important;border-radius:8px!important;}
+  @media(max-width:1199px) {
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .agenda-reference-layout {grid-template-columns:minmax(0,1fr)!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .agenda-insights-side {grid-column:1!important;grid-row:3!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  }
+  @media(max-width:767px) {
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .schedule-summary {grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .summary-card:last-child {grid-column:1/-1!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .main .month-planner {grid-template-columns:repeat(7,minmax(84px,1fr))!important;overflow-x:auto!important;overflow-y:hidden!important;max-width:100%!important;}
+    body[data-ui="v2"][data-page="aprender"] .alex-hero {grid-template-columns:72px minmax(0,1fr);padding:1rem;gap:1rem;align-items:start;}
+    body[data-ui="v2"][data-page="aprender"] .alex-content {display:contents;}
+    body[data-ui="v2"][data-page="aprender"] .alex-content h2 {align-self:center;}
+    body[data-ui="v2"][data-page="aprender"] :is(.alex-quote,.alex-ask,.alex-entry-actions) {grid-column:1/-1;}
+    body[data-ui="v2"][data-page="aprender"] .learn-tools, body[data-ui="v2"][data-page="consolidar"] .learn-grid {grid-template-columns:minmax(0,1fr)!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] :is(.agenda-insights-side,.month-filter-tools) {grid-template-columns:minmax(0,1fr)!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="cronograma"] .month-day {padding:.25rem!important;min-height:80px!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-grid,.metric-strip) {grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .main :is(.exam-metrics,.exam-card-info) {grid-template-columns:repeat(2,minmax(0,1fr))!important;}
+  }
+  @media(max-width:420px) {
+    body[data-ui="v2"][data-ui-context="study"][data-page="estatisticas"] :is(.stats-summary-grid,.metric-strip) {grid-template-columns:minmax(0,1fr)!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="editais"] .exam-form-grid {grid-template-columns:minmax(0,1fr)!important;}
+  }
+}

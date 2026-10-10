@@ -3,6 +3,7 @@
 
   const sb = window.supabaseClient;
   const charts = new Map();
+  const chartPalettes = new WeakMap();
 
   const state = {
     initialized: false,
@@ -38,7 +39,28 @@
   };
 
   const $ = id => document.getElementById(id);
-  const css = (name, fallback) => getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback;
+  const css = (name, fallback) => getComputedStyle(document.body.dataset.ui === "v2" ? document.body : document.documentElement).getPropertyValue(name).trim() || fallback;
+  const chartPalette = () => ["--accent","--success","--warning","--danger","--surface"].map(name => css(name, ""));
+  // Repaint existing charts on a visual preference change; no queries or metric recalculation.
+  if (document.body.dataset.ui === "v2") new MutationObserver(() => {
+    const next = chartPalette();
+    for (const graph of charts.values()) {
+      const previous = chartPalettes.get(graph);
+      if (!previous) continue;
+      const recolor = value => Array.isArray(value) ? value.map(recolor) : typeof value === "string" ? previous.reduce((color, old, i) => old && color.startsWith(old) ? next[i] + color.slice(old.length) : color, value) : value;
+      for (const series of graph.data.datasets) {
+        series.backgroundColor = recolor(series.backgroundColor);
+        series.borderColor = recolor(series.borderColor);
+      }
+      graph.options.plugins.legend.labels.color = css("--muted", "#7b8190");
+      for (const [axis, scale] of Object.entries(graph.options.scales || {})) {
+        scale.ticks.color = css("--muted", "#7b8190");
+        if (axis === "y") scale.grid.color = css("--border", "#e0e3e8");
+      }
+      chartPalettes.set(graph, next);
+      graph.update("none");
+    }
+  }).observe(document.body, {attributes:true, attributeFilter:["data-ui-appearance","data-ui-identity"]});
 
   function esc(v) {
     return String(v ?? "")
@@ -683,16 +705,17 @@
         maintainAspectRatio: false,
         interaction: { intersect: false, mode: "index" },
         plugins: {
-          legend: { display: datasets.length > 1 || type === "doughnut", labels: { color: muted, boxWidth: 10, font: { size: 9 } } },
-          tooltip: { padding: 9, titleFont: { size: 10 }, bodyFont: { size: 10 } }
+          legend: { display: datasets.length > 1 || type === "doughnut", labels: { color: muted, boxWidth: 12, font: { size: 13, family: css("--font-ui", "Inter, sans-serif") } } },
+          tooltip: { padding: 12, titleFont: { size: 13 }, bodyFont: { size: 13 } }
         },
         scales: type === "doughnut" ? undefined : {
-          x: { ticks: { color: muted, font: { size: 8 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 12 }, grid: { display: false } },
-          y: { beginAtZero: options.beginAtZero !== false, suggestedMax: options.suggestedMax, max: options.max, ticks: { color: muted, font: { size: 8 } }, grid: { color: border } }
+          x: { ticks: { color: muted, font: { size: 13, family: css("--font-ui", "Inter, sans-serif") }, maxRotation: 0, autoSkip: true, maxTicksLimit: 12 }, grid: { display: false } },
+          y: { beginAtZero: options.beginAtZero !== false, suggestedMax: options.suggestedMax, max: options.max, ticks: { color: muted, font: { size: 13, family: css("--font-ui", "Inter, sans-serif") } }, grid: { color: border } }
         },
         ...options.extra
       }
     }));
+    chartPalettes.set(charts.get(id), chartPalette());
   }
 
   function progressList(id, rows, formatter = v => percent(v, 1), max = 100) {
