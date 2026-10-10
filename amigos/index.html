@@ -28,39 +28,37 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
 @media(max-width:700px){body[data-page="amigos"] .luria-page-spotlight-copy{gap:5px!important}body[data-page="amigos"] .luria-page-spotlight-copy small{font-size:11px!important}}
 </style>
 
+  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
+  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/community-ui-v2.css?v=1">
 </head>
-<body data-page="amigos">
+<body data-ui-heading="provided" data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="amigos">
+  <script src="/assets/js/ui-theme-v2.js?v=2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=2"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
     <main class="main">
-      <div class="page friends-page friends-reference-page">
-        <header class="topbar">
+      <div class="page friends-page community-page"><header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
+          <div class="page-heading"><span class="eyebrow" data-page-eyebrow=""></span><h1 data-page-title=""></h1></div>
         </header>
-<section class="luria-page-spotlight" aria-label="Amigos">
-          <div class="luria-page-spotlight-copy">
-            <strong>Amigos</strong>
-            <small class="luria-page-spotlight-helper">Comunidade LURIA · Estude junto com quem eleva sua aprovação.</small>
-          </div>
-        </section>
-
-        <div class="friends-ref-board">
-          <div class="friends-ref-board-main">
-<section id="studyrats-card" class="studyrats-card friends-ref-studyrats friends-ref-studyrats-inline" aria-labelledby="studyrats-title">
+<header class="community-header"><div><span class="community-kicker">SUA REDE DE ESTUDOS</span><h1>Amigos</h1><p>Estude junto, compartilhe materiais e acompanhe os desafios da sua turma.</p></div><a href="/amigos/#community-friends" class="button primary" id="friends-ref-add-toggle">Adicionar amigo</a></header>
+<nav class="community-nav" aria-label="Seções da comunidade"><a href="/amigos/#community-overview">Visão geral</a><a href="/amigos/#community-friends">Amigos</a><a href="/amigos/#studyrats-card">Desafios</a><a href="/amigos/#community-rooms">Salas</a><a href="/amigos/#community-groups">Grupos</a></nav>
+<div class="community-grid" id="community-overview"><div class="community-primary"><section id="studyrats-card" class="studyrats-card friends-ref-studyrats friends-ref-studyrats-inline" aria-labelledby="studyrats-title">
   <div class="friends-ref-studyrats-head">
     <div class="friends-ref-studyrats-brand"><span class="friends-ref-studyrats-mark" aria-hidden="true">
     <svg viewBox="0 0 48 48" focusable="false">
-      <path d="M9.5 28.5c0-7.1 5.8-12.8 13-12.8 7.8 0 14 5.3 14 12.1 0 6.2-5.2 10.7-12.5 10.7-8.1 0-14.5-3.7-14.5-10Z"/>
-      <path d="M18.2 16.6c-1.9-4.2.2-7.8 3.6-7.8 3 0 4.8 2.5 4.4 6.4M31 17.4c1.5-3.6 4.2-5.2 6.6-3.5 2.2 1.6 1.7 4.8-.8 7.2"/>
-      <circle cx="30.9" cy="25.1" r="1.1"/>
-      <path d="M36.5 29.1c3.9.3 6.1 2 6 4.2-.1 2.5-3.1 4.1-6.9 3.2M39.2 26.3l5.2-1.3M39.5 29.2l5.5.7M13 24.8c-4.8-1.5-8.1.1-8.8 3.1-.8 3.5 2.7 6.2 7.3 5.5"/>
+      <path d="M9.5 28.5c0-7.1 5.8-12.8 13-12.8 7.8 0 14 5.3 14 12.1 0 6.2-5.2 10.7-12.5 10.7-8.1 0-14.5-3.7-14.5-10Z"></path>
+      <path d="M18.2 16.6c-1.9-4.2.2-7.8 3.6-7.8 3 0 4.8 2.5 4.4 6.4M31 17.4c1.5-3.6 4.2-5.2 6.6-3.5 2.2 1.6 1.7 4.8-.8 7.2"></path>
+      <circle cx="30.9" cy="25.1" r="1.1"></circle>
+      <path d="M36.5 29.1c3.9.3 6.1 2 6 4.2-.1 2.5-3.1 4.1-6.9 3.2M39.2 26.3l5.2-1.3M39.5 29.2l5.5.7M13 24.8c-4.8-1.5-8.1.1-8.8 3.1-.8 3.5 2.7 6.2 7.3 5.5"></path>
     </svg>
   </span><div><div class="friends-ref-studyrats-titleline"><h2 id="studyrats-title">StudyRats</h2><span>Desafie seus amigos!</span></div><p>Crie desafios de estudo, acompanhe o progresso em tempo real e avance junto com sua turma.</p></div></div>
     <div class="friends-ref-studyrats-actions"><div class="friends-ref-current-rat"><span>Seu rato</span><div id="studyrats-home-preview-stage" class="studyrats-preview-large-stage studyrats-home-preview-stage"></div></div><button id="studyrats-toggle-customize" class="button secondary studyrats-customize-button" type="button">Personalizar</button><button id="studyrats-toggle-create" class="button primary studyrats-new-challenge-button" type="button">＋ Novo desafio</button></div>
   </div>
-  <section id="studyrats-customizer" class="studyrats-rat-picker studyrats-rat-picker-old" aria-labelledby="studyrats-rat-picker-title" hidden>
+  <section id="studyrats-customizer" class="studyrats-rat-picker studyrats-rat-picker-old" aria-labelledby="studyrats-rat-picker-title" hidden="">
     <div class="studyrats-rat-picker-copy">
       <span class="studyrats-kicker">SEU CORREDOR</span>
       <strong id="studyrats-rat-picker-title">Personalize seu ratinho</strong>
@@ -82,16 +80,14 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
       <small id="studyrats-rat-picker-status" class="studyrats-rat-picker-status" aria-live="polite"></small>
     </div>
   </section>
-  <div id="studyrats-create" class="studyrats-create" hidden><div class="studyrats-fields"><label><span>Título do desafio</span><input id="studyrats-challenge-title" type="text" maxlength="80" placeholder="Ex.: Semana sem atrasar nenhuma aula"></label><label><span>Modalidade</span><select id="studyrats-type"><option value="flashcards">Mais flashcards</option><option value="study_days">Mais dias de estudo</option><option value="retention">Maior retenção</option><option value="classes">Mais aulas vistas</option><option value="ccqs">Mais CCQs respondidos</option></select></label><label><span>Data limite</span><input id="studyrats-deadline" type="date"></label></div><div class="studyrats-people-block"><div class="studyrats-section-title"><strong>Participantes</strong><small>Você já entra automaticamente.</small></div><div id="studyrats-friends" class="studyrats-friends"></div></div><div class="studyrats-create-actions"><button id="studyrats-cancel" class="button secondary" type="button">Cancelar</button><button id="studyrats-start" class="button primary" type="button">Iniciar desafio</button></div></div>
+  <div id="studyrats-create" class="studyrats-create" hidden=""><div class="studyrats-fields"><label><span>Título do desafio</span><input id="studyrats-challenge-title" type="text" maxlength="80" placeholder="Ex.: Semana sem atrasar nenhuma aula"></label><label><span>Modalidade</span><select id="studyrats-type"><option value="flashcards">Mais flashcards</option><option value="study_days">Mais dias de estudo</option><option value="retention">Maior retenção</option><option value="classes">Mais aulas vistas</option><option value="ccqs">Mais CCQs respondidos</option></select></label><label><span>Data limite</span><input id="studyrats-deadline" type="date"></label></div><div class="studyrats-people-block"><div class="studyrats-section-title"><strong>Participantes</strong><small>Você já entra automaticamente.</small></div><div id="studyrats-friends" class="studyrats-friends"></div></div><div class="studyrats-create-actions"><button id="studyrats-cancel" class="button secondary" type="button">Cancelar</button><button id="studyrats-start" class="button primary" type="button">Iniciar desafio</button></div></div>
   <div id="studyrats-list" class="studyrats-list"></div><div id="studyrats-recent-ranking" class="studyrats-recent-ranking"></div>
 
-</section>
-
-            <section class="friends-card friends-ref-rooms-card">
-              <div class="friends-ref-card-head"><h2>▣ &nbsp;Salas de estudo</h2><button type="button" class="friends-ref-link">Ver todas →</button></div>
+</section><section class="friends-card friends-ref-rooms-card" id="community-rooms">
+              <div class="friends-ref-card-head"><h2>Salas de estudo</h2><span class="community-preview-label">Prévia</span></div>
               <div class="friends-ref-room-grid">
-                <article><span class="tag live">AO VIVO</span><strong>Revisão de Direito Constitucional</strong><small>12 participantes · 2h 15min</small><button type="button" class="button primary" data-room-demo>Entrar na sala</button></article>
-                <article><span class="tag progress">EM ANDAMENTO</span><strong>Questões de Raciocínio Lógico</strong><small>8 participantes · 1h 40min</small><button type="button" class="button primary" data-room-demo>Entrar na sala</button></article>
+                <article><span class="tag live">AO VIVO</span><strong>Revisão de Direito Constitucional</strong><small>12 participantes · 2h 15min</small><button type="button" class="button primary" data-room-demo="">Entrar na sala</button></article>
+                <article><span class="tag progress">EM ANDAMENTO</span><strong>Questões de Raciocínio Lógico</strong><small>8 participantes · 1h 40min</small><button type="button" class="button primary" data-room-demo="">Entrar na sala</button></article>
                 <article class="friends-ref-create-room-card">
                   <span class="friends-ref-create-room-icon" aria-hidden="true">＋</span>
                   <strong>Criar nova sala</strong>
@@ -99,7 +95,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
                   <button id="friends-create-room-toggle" type="button" class="button secondary">Criar sala</button>
                 </article>
               </div>
-              <section id="friends-create-room-panel" class="friends-create-room-panel" hidden>
+              <section id="friends-create-room-panel" class="friends-create-room-panel" hidden="">
                 <div class="friends-create-room-panel-head">
                   <div><strong>Nova sala de estudos</strong><small>Configure a sala e compartilhe o código de acesso.</small></div>
                   <button id="friends-create-room-close" type="button" aria-label="Fechar">×</button>
@@ -114,74 +110,48 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
                 </div>
                 <small id="friends-room-status" class="friends-room-status" aria-live="polite"></small>
               </section>
-            </section>
-
-            <section class="friends-card friends-ref-suggestions-card"><div class="friends-ref-card-head"><h2>✦ &nbsp;Sugestões de amigos</h2><button type="button" class="friends-ref-link">Ver todas →</button></div><div class="friends-ref-suggestion-list"><div><span class="friend-avatar">GF</span><p><strong>Gabriela Ferreira</strong><small>Também estuda para ENEM</small></p><button class="button secondary" type="button">＋ Convidar</button></div><div><span class="friend-avatar">MO</span><p><strong>Mateus Oliveira</strong><small>Interesses em Raciocínio Lógico</small></p><button class="button secondary" type="button">＋ Convidar</button></div><div><span class="friend-avatar">CS</span><p><strong>Camila Santos</strong><small>Também estuda para Medicina</small></p><button class="button secondary" type="button">＋ Convidar</button></div></div></section>
-          </div>
-          <aside class="friends-ref-board-side">
-            <section class="friends-card friends-ref-invite-card">
-              <div class="friends-ref-card-head"><h2>✉ &nbsp;Convites pendentes <b>2</b></h2><button type="button" id="friends-ref-add-toggle" class="friends-ref-link">Ver todos →</button></div>
-              <div id="friends-ref-add-panel" class="friends-ref-add-panel" hidden><div class="friends-add-row"><input id="friend-id-input" type="text" maxlength="8" placeholder="Digite o ID LURIA..." autocapitalize="characters"><button id="add-friend" class="button primary" type="button">Adicionar</button></div><div id="friend-add-preview" class="friend-add-preview" hidden></div><div id="friends-status" class="friends-status" aria-live="polite"></div><div class="friends-ref-own-id"><span>Seu ID LURIA</span><div class="friends-id-box"><strong id="my-luria-id">—</strong><button id="copy-my-id" class="button secondary" type="button">Copiar</button></div></div></div>
-              <div class="friends-ref-pending-list"><div class="inbox-row"><div class="inbox-main"><span class="friend-avatar">CM</span><span class="friend-copy"><strong>Carla Monteiro</strong><small>Quer ser seu amigo</small></span></div><div class="friends-actions"><button class="button primary" type="button">Aceitar</button><button class="button secondary" type="button">Recusar</button></div></div><div class="inbox-row"><div class="inbox-main"><span class="friend-avatar">TR</span><span class="friend-copy"><strong>Thiago Rocha</strong><small>Quer ser seu amigo</small></span></div><div class="friends-actions"><button class="button primary" type="button">Aceitar</button><button class="button secondary" type="button">Recusar</button></div></div></div>
-            </section>
-            <section class="friends-card friends-ref-friends-card">
-              <div class="friends-ref-card-head"><h2>♙ &nbsp;Meus amigos</h2><button type="button" class="friends-ref-link">Ver todos (24) →</button></div>
-              <div id="friends-list" class="friends-list"></div>
-            </section>
-            <section class="friends-card friends-ref-groups-card"><div class="friends-ref-card-head"><h2>♟ &nbsp;Grupos de estudo</h2><button type="button" class="friends-ref-link">Ver todos →</button></div><div class="friends-ref-group-list"><div><span class="friends-ref-group-icon">◆</span><p><strong>ENEM 2024 – Humanas</strong><small>124 membros · Grupo público</small></p><button class="button secondary" type="button">Participar</button></div><div><span class="friends-ref-group-icon">✚</span><p><strong>Medicina – Geral</strong><small>312 membros · Grupo público</small></p><button class="button secondary" type="button">Participar</button></div><div><span class="friends-ref-group-icon">⚖</span><p><strong>Direito – Discursivas</strong><small>87 membros · Grupo privado</small></p><button class="button secondary" type="button">Solicitar</button></div></div></section>
-
-            <section class="friends-card friends-ref-materials-card">
-              <div class="friends-ref-card-head">
-                <h2><span class="friends-ref-materials-head-icon" aria-hidden="true">⌁</span>&nbsp; Materiais recebidos</h2>
-                <button type="button" class="friends-ref-link">Ver todos →</button>
-              </div>
-              <div class="friends-ref-materials-list">
+            </section><section class="friends-card community-materials" aria-labelledby="community-materials-title"><div class="community-card-head"><h2 id="community-materials-title">Materiais recebidos</h2></div><div id="friends-inbox"></div><details class="community-preview"><summary>Prévia de materiais compartilhados</summary><div class="friends-ref-materials-list">
                 <article class="friends-ref-material-row">
                   <span class="friends-ref-material-icon is-pdf" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M8.5 14h7M8.5 17h5"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="M8.5 14h7M8.5 17h5"></path></svg>
                   </span>
                   <span class="friends-ref-material-copy"><strong>Resumo de Funções.pdf</strong><small>De Mariana Costa</small></span>
                   <time>há 2 dias</time>
                   <button class="friends-ref-download" type="button" aria-label="Baixar Resumo de Funções.pdf">
-                    <svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="m8 10 4 4 4-4"/><path d="M5 18v3h14v-3"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 3v11"></path><path d="m8 10 4 4 4-4"></path><path d="M5 18v3h14v-3"></path></svg>
                   </button>
                 </article>
                 <article class="friends-ref-material-row">
                   <span class="friends-ref-material-icon is-note" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><circle cx="10" cy="14" r="2.4"/><path d="M12 14h3.5"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><circle cx="10" cy="14" r="2.4"></circle><path d="M12 14h3.5"></path></svg>
                   </span>
                   <span class="friends-ref-material-copy"><strong>Mapa Mental - Direito Penal</strong><small>De Rafael Souza</small></span>
                   <time>há 3 dias</time>
                   <button class="friends-ref-download" type="button" aria-label="Baixar Mapa Mental - Direito Penal">
-                    <svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="m8 10 4 4 4-4"/><path d="M5 18v3h14v-3"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 3v11"></path><path d="m8 10 4 4 4-4"></path><path d="M5 18v3h14v-3"></path></svg>
                   </button>
                 </article>
                 <article class="friends-ref-material-row">
                   <span class="friends-ref-material-icon is-flash" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"/><path d="M8 9h8M8 13h5M8 17h7"/></svg>
+                    <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="2"></rect><path d="M8 9h8M8 13h5M8 17h7"></path></svg>
                   </span>
                   <span class="friends-ref-material-copy"><strong>Flashcards - Bioquímica</strong><small>De Lucas Almeida</small></span>
                   <time>há 5 dias</time>
                   <button class="friends-ref-download" type="button" aria-label="Baixar Flashcards - Bioquímica">
-                    <svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="m8 10 4 4 4-4"/><path d="M5 18v3h14v-3"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 3v11"></path><path d="m8 10 4 4 4-4"></path><path d="M5 18v3h14v-3"></path></svg>
                   </button>
                 </article>
                 <article class="friends-ref-material-row">
                   <span class="friends-ref-material-icon is-list" aria-hidden="true">
-                    <svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M9 12h6M9 15h6M9 18h4"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="M9 12h6M9 15h6M9 18h4"></path></svg>
                   </span>
                   <span class="friends-ref-material-copy"><strong>Lista de Questões - ENEM</strong><small>De Juliana Mendes</small></span>
                   <time>há 1 semana</time>
                   <button class="friends-ref-download" type="button" aria-label="Baixar Lista de Questões - ENEM">
-                    <svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="m8 10 4 4 4-4"/><path d="M5 18v3h14v-3"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 3v11"></path><path d="m8 10 4 4 4-4"></path><path d="M5 18v3h14v-3"></path></svg>
                   </button>
                 </article>
-              </div>
-            </section>
-          </aside>
-        </div>
-<div id="friends-inbox" hidden></div>
-      </div>
+              </div></details></section></div><aside class="community-secondary"><section class="friends-card community-friends" id="community-friends"><div class="community-card-head"><h2>Meus amigos</h2></div><div id="friends-ref-add-panel" class="friends-ref-add-panel"><div class="friends-add-row"><input id="friend-id-input" type="text" maxlength="8" placeholder="Digite o ID LURIA..." autocapitalize="characters" aria-label="ID LURIA do amigo"><button id="add-friend" class="button primary" type="button">Adicionar</button></div><div id="friend-add-preview" class="friend-add-preview" hidden=""></div><div id="friends-status" class="friends-status" aria-live="polite"></div><div class="friends-ref-own-id"><span>Seu ID LURIA</span><div class="friends-id-box"><strong id="my-luria-id">—</strong><button id="copy-my-id" class="button secondary" type="button">Copiar</button></div></div></div><div id="friends-list" class="friends-list"></div><details class="community-preview"><summary>Prévia de convites pendentes</summary><div class="friends-ref-pending-list"><div class="inbox-row"><div class="inbox-main"><span class="friend-avatar">CM</span><span class="friend-copy"><strong>Carla Monteiro</strong><small>Quer ser seu amigo</small></span></div><div class="friends-actions"><button class="button primary" type="button">Aceitar</button><button class="button secondary" type="button">Recusar</button></div></div><div class="inbox-row"><div class="inbox-main"><span class="friend-avatar">TR</span><span class="friend-copy"><strong>Thiago Rocha</strong><small>Quer ser seu amigo</small></span></div><div class="friends-actions"><button class="button primary" type="button">Aceitar</button><button class="button secondary" type="button">Recusar</button></div></div></div></details><details class="community-preview"><summary>Prévia de sugestões de amigos</summary><div class="friends-ref-suggestion-list"><div><span class="friend-avatar">GF</span><p><strong>Gabriela Ferreira</strong><small>Também estuda para ENEM</small></p><button class="button secondary" type="button">＋ Convidar</button></div><div><span class="friend-avatar">MO</span><p><strong>Mateus Oliveira</strong><small>Interesses em Raciocínio Lógico</small></p><button class="button secondary" type="button">＋ Convidar</button></div><div><span class="friend-avatar">CS</span><p><strong>Camila Santos</strong><small>Também estuda para Medicina</small></p><button class="button secondary" type="button">＋ Convidar</button></div></div></details></section><section class="friends-card friends-ref-groups-card" id="community-groups"><div class="friends-ref-card-head"><h2>Grupos de estudo</h2><span class="community-preview-label">Prévia</span></div><div class="friends-ref-group-list"><div><span class="friends-ref-group-icon">◆</span><p><strong>ENEM 2024 – Humanas</strong><small>124 membros · Grupo público</small></p><button class="button secondary" type="button">Participar</button></div><div><span class="friends-ref-group-icon">✚</span><p><strong>Medicina – Geral</strong><small>312 membros · Grupo público</small></p><button class="button secondary" type="button">Participar</button></div><div><span class="friends-ref-group-icon">⚖</span><p><strong>Direito – Discursivas</strong><small>87 membros · Grupo privado</small></p><button class="button secondary" type="button">Solicitar</button></div></div></section></aside></div></div>
     </main>
   </div>
   <script src="/assets/vendor/supabase-2.110.6.js"></script>

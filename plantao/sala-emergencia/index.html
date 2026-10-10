@@ -63,8 +63,13 @@
     a[href="/mini-osce"],
     [data-start-osce] { display: none !important; }
   </style>
+  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
+  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/plantao-ui-v2.css?v=1">
 </head>
-<body data-page="plantao" data-plantao-entry="emergency" class="plantao-module-entry">
+<body data-ui="v2" data-ui-nav="v2" data-ui-context="study" data-page="plantao" data-plantao-entry="emergency" class="plantao-module-entry">
+  <script src="/assets/js/ui-theme-v2.js?v=2"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=2"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -77,7 +82,7 @@
         <section class="luria-page-spotlight" aria-label="Simulador de Emergência">
           <div class="luria-page-spotlight-copy">
             <strong>Simulador de Emergência</strong>
-            <small>Treine decisões clínicas em cenários realistas de urgência e emergência.</small>
+            <small class="luria-page-spotlight-helper">Treine decisões clínicas em cenários realistas de urgência e emergência.</small>
           </div>
         </section>
 
@@ -157,13 +162,14 @@
             </div>
           </div>
           <div id="plantao-case-grid" class="plantao-case-grid" aria-live="polite"></div>
+          <div id="plantao-empty" class="plantao-empty" role="status" hidden>Nenhum caso disponível para estes filtros.</div>
               </section>
 
               <aside class="plantao-library-side" aria-label="Resumo do plantão">
                 <article class="plantao-side-card plantao-today-card">
                   <div class="plantao-side-card-head">
                     <h3 id="plantao-side-title">Seu plantão hoje</h3>
-                    <a href="#plantao-emergencia">Ver todos</a>
+                    <a href="/plantao/sala-emergencia/#plantao-emergencia">Ver todos</a>
                   </div>
                   <div class="plantao-today-grid">
                     <div class="plantao-today-metric">

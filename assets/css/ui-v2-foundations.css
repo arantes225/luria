@@ -1,0 +1,86 @@
+/* Foundations are opt-in. The unique font name cannot replace legacy Inter. */
+@font-face {
+  font-family: "Luria Inter";
+  src: url("/assets/fonts/inter/InterVariable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+body[data-ui="v2"], body[data-ui-shell="v2"] {
+  --ui-font-family: "Luria Inter", Inter, system-ui, sans-serif;
+  --ui-space-1: .25rem; --ui-space-2: .5rem; --ui-space-3: .75rem;
+  --ui-space-4: 1rem; --ui-space-6: 1.5rem; --ui-space-8: 2rem; --ui-space-12: 3rem;
+  --ui-radius-control: .5rem; --ui-radius-card: .75rem; --ui-radius-dialog: 1rem;
+  --ui-sidebar: 264px; --ui-topbar: 64px; --ui-content: 1280px; --ui-control: 2.75rem;
+  --ui-display: 2.5rem; --ui-h1: 2.25rem; --ui-h2: 1.75rem; --ui-h3: 1.375rem;
+  --ui-card-title: 1.125rem; --ui-body: 1rem; --ui-secondary: .875rem;
+  --ui-caption: .8125rem; --ui-metric: 2rem;
+  --color-background: #F7F8FA; --color-surface: #FFFFFF; --color-surface-elevated: #F0F3F7;
+  --color-text-primary: #172033; --color-text-secondary: #596579;
+  --color-primary: #5275AD; --color-primary-hover: #46689E; --color-primary-foreground: #FFFFFF;
+  --color-primary-subtle: #E8EFF8;
+  --color-primary-text: #4C6DA3;
+  --color-accent: #B06A82; --color-border: #E3E7ED; --color-border-interactive: #748397;
+  --color-success: #236A4C; --color-success-surface: #E9F5EF;
+  --color-info: #315E83; --color-info-surface: #E1EFF8;
+  --color-warning: #785214; --color-warning-surface: #FFF3D8;
+  --color-danger: #A52E41; --color-danger-surface: #FDECEF;
+  --color-disabled: #576B80; --color-disabled-surface: #E8EDF2;
+  --color-focus-ring: var(--color-primary);
+  --ui-shadow: 0 1px 3px rgb(15 23 42 / 3%);
+
+}
+body[data-ui="v2"][data-ui-identity="pink"], body[data-ui-shell="v2"][data-ui-identity="pink"] {
+  --color-background: #FAF8F9; --color-surface-elevated: #F6F0F3;
+  --color-text-primary: #211820; --color-text-secondary: #695D65;
+  --color-primary: #B2577D; --color-primary-hover: #9F476C;
+  --color-primary-subtle: #F6E8EE;
+  --color-primary-text: #A34970;
+  --color-accent: #5275AD; --color-border: #E9DFE4; --color-border-interactive: #967383;
+}
+body[data-ui="v2"][data-ui-appearance="dark"], body[data-ui-shell="v2"][data-ui-appearance="dark"] {
+  --color-background: #0B0C0F; --color-surface: #17191E; --color-surface-elevated: #20232A;
+  --color-text-primary: #F5F5F6; --color-text-secondary: #ADB3BE;
+  --color-primary: #879DCE; --color-primary-hover: #9DB1DC; --color-primary-foreground: #0B0C0F;
+  --color-primary-subtle: #242D3D; --color-focus-ring: #8FA6D6;
+  --color-primary-text: var(--color-primary);
+  --color-accent: #D58EAC; --color-border: #30343C; --color-border-interactive: #8498AC;
+  --color-success: #9DD7B5; --color-success-surface: #223E34;
+  --color-info: #92BCDB; --color-info-surface: #344355;
+  --color-warning: #F4D089; --color-warning-surface: #443921;
+  --color-danger: #F4ACB8; --color-danger-surface: #472F3A;
+  --color-disabled: #ADB3BE; --color-disabled-surface: #20232A;
+  --ui-shadow: none;
+
+}
+body[data-ui="v2"][data-ui-appearance="dark"][data-ui-identity="pink"], body[data-ui-shell="v2"][data-ui-appearance="dark"][data-ui-identity="pink"] {
+  --color-background: #0B0C0F; --color-surface: #17191E; --color-surface-elevated: #20232A;
+  --color-text-primary: #F5F5F6; --color-text-secondary: #ADB3BE;
+  --color-primary: #D58EAC; --color-primary-hover: #E2A4BD; --color-primary-foreground: #0B0C0F;
+  --color-primary-subtle: #382731; --color-focus-ring: #D69AB0;
+  --color-accent: #879DCE; --color-border: #30343C; --color-border-interactive: #AC8CA0;
+  --color-disabled: #ADB3BE; --color-disabled-surface: #20232A;
+}
+@media (max-width: 767px) {
+  body[data-ui="v2"], body[data-ui-shell="v2"] {
+    --ui-display: 2rem; --ui-h1: 1.75rem; --ui-h2: 1.5rem; --ui-h3: 1.25rem;
+    --ui-card-title: 1rem; --ui-metric: 1.75rem;
+  }
+}
+
+/* Legacy aliases apply only to the educational content, never work tools. */
+body[data-ui="v2"] {
+  --font-ui: var(--ui-font-family) !important;
+  --bg: var(--color-background) !important; --surface: var(--color-surface) !important;
+  --surface-2: var(--color-surface-elevated) !important;
+  --text: var(--color-text-primary) !important; --muted: var(--color-text-secondary) !important;
+  --border: var(--color-border) !important; --accent: var(--color-primary) !important;
+  --accent-strong: var(--color-primary-hover) !important; --accent-soft: var(--color-surface-elevated) !important;
+  --success: var(--color-success) !important; --danger: var(--color-danger) !important;
+  --sidebar: var(--color-surface) !important;
+  --dl-blue: var(--color-primary); --dl-deep: var(--color-text-primary);
+  --dl-muted: var(--color-text-secondary); --dl-border: var(--color-border);
+}
+
+body[data-ui="v2"] {color-scheme:light;}
+body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
