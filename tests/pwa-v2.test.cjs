@@ -67,7 +67,8 @@ test('mobile drawer restores button interaction even with a hidden persistent ov
   w.document.getElementById('menu-open').click();
   await settle();
   assert.equal(body.classList.contains('sidebar-open'), true);
-  assert.equal(main.inert, true);
+  // Backdrop handles taps; do not freeze the main document on iOS.
+  assert.equal(main.inert, false);
   w.document.getElementById('sidebar-close').click();
   await settle();
   assert.equal(body.classList.contains('sidebar-open'), false);
@@ -101,7 +102,7 @@ test('every redesigned core page loads the current PWA updater', () => {
   ];
   for (const page of paths) {
     const markup = fs.readFileSync(page, 'utf8');
-    assert.match(markup, /pwa\.js\?v=20261010-pwa279/, page);
+    assert.match(markup, /pwa\.js\?v=20261010-pwa280/, page);
     assert.match(markup, /data-ui-nav="v2"/, page);
   }
 });
@@ -111,5 +112,20 @@ test('installed PWA actively checks and offers current service worker on resume'
   assert.match(pwaSource, /luria-pwa-update-action/);
   assert.match(pwaSource, /updateViaCache:\s*"none"/);
   const worker = fs.readFileSync('service-worker.js', 'utf8');
-  assert.match(worker, /luria-pwa-v279-installed-client-refresh/);
+  assert.match(worker, /luria-pwa-v280-touch-unlock/);
+});
+
+test('hidden search overlays cannot hold the dashboard inert', () => {
+  const dashboard = fs.readFileSync('assets/js/dashboard-ui-v2.js', 'utf8');
+  assert.match(dashboard, /!node\.hidden/);
+  assert.match(dashboard, /getComputedStyle\(node\)\.display !== "none"/);
+  assert.match(dashboard, /shell\.inert !== !!overlay/);
+  assert.match(dashboard, /window\.addEventListener\("pageshow", syncDialog\)/);
+});
+
+test('worker activation does not wait for slow precache requests before claiming clients', () => {
+  const sw = fs.readFileSync('service-worker.js', 'utf8');
+  const install = sw.split('self.addEventListener("install"')[1].split('self.addEventListener("activate"')[0];
+  assert.match(install, /event\.waitUntil\(self\.skipWaiting\(\)\)/);
+  assert.doesNotMatch(install, /cacheShellSafely/);
 });
