@@ -2,6 +2,16 @@
 (() => {
   const body = document.body;
   if (body?.dataset.uiNav !== "v2") return;
+  // This script runs at the top of each v2 page, before legacy app.js.
+  // Make installed iOS/Android use the exact same responsive shell as the web
+  // without waiting for the deferred PWA registration script.
+  const installed = window.matchMedia?.("(display-mode: standalone)")?.matches
+    || window.navigator.standalone === true;
+  if (installed) {
+    document.documentElement.classList.remove("pwa-standalone");
+    document.documentElement.classList.add("pwa-v2-standalone");
+    document.documentElement.dataset.pwa = "standalone";
+  }
   const preferenceKey = "luria:dashboard-ui:v2";
   let preference = null;
   const media = window.matchMedia("(prefers-color-scheme: dark)");
