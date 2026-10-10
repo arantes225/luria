@@ -57,12 +57,61 @@
 
   if (!("serviceWorker" in navigator)) return;
 
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("/service-worker.js", { scope: "/", updateViaCache: "none" })
-      .then(registration => registration.update())
-      .catch(error => {
-        console.warn("Não foi possível ativar o modo PWA do LURIA:", error);
-      });
-  });
+  const release = "20261010-pwa279";
+  const refreshKey = "luria:pwa:activated:" + release;
+  const hadController = !!navigator.serviceWorker.controller;
+  let interacted = false;
+  let reloadPending = false;
+  document.addEventListener("pointerdown", () => { interacted = true; }, { capture: true, once: true });
+  document.addEventListener("keydown", () => { interacted = true; }, { capture: true, once: true });
+
+  function refreshNow() {
+    if (reloadPending) return;
+    reloadPending = true;
+    try { sessionStorage.setItem(refreshKey, "1"); } catch {}
+    window.location.reload();
+  }
+
+  function showUpdateAction() {
+    if (document.getElementById("luria-pwa-update-action")) return;
+    const notice = document.createElement("aside");
+    notice.id = "luria-pwa-update-action";
+    notice.setAttribute("role", "status");
+    notice.setAttribute("aria-live", "polite");
+    notice.style.cssText = "position:fixed;bottom:max(12px,env(safe-area-inset-bottom));left:12px;right:12px;z-index:2147483646;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-radius:12px;background:#172033;color:#fff;box-shadow:0 8px 32px #0004;font:14px system-ui";
+    const message = document.createElement("span");
+    message.textContent = "Atualização do LURIA disponível.";
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = "Atualizar agora";
+    button.style.cssText = "min-height:42px;padding:0 12px;border:0;border-radius:8px;background:#fff;color:#172033;font:600 14px system-ui;cursor:pointer";
+    button.addEventListener("click", refreshNow);
+    notice.append(message, button);
+    document.body.append(notice);
+  }
+
+  if (hadController) {
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      let alreadyRefreshed = false;
+      try { alreadyRefreshed = sessionStorage.getItem(refreshKey) === "1"; } catch {}
+      if (alreadyRefreshed || reloadPending) return;
+      if (!interacted && document.visibilityState === "visible") refreshNow();
+      else showUpdateAction();
+    });
+  }
+
+  async function registerLatestWorker() {
+    try {
+      const registration = await navigator.serviceWorker.register(
+        "/service-worker.js?v=" + release,
+        { scope: "/", updateViaCache: "none" }
+      );
+      await registration.update();
+    } catch (error) {
+      console.warn("Não foi possível atualizar o PWA do LURIA:", error);
+    }
+  }
+
+  if (document.readyState === "complete") registerLatestWorker();
+  else window.addEventListener("load", registerLatestWorker, { once: true });
 })();
