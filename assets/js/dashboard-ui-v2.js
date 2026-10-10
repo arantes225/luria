@@ -176,12 +176,18 @@
 
   function syncDialog() {
     if (typeof document === "undefined" || !body.isConnected) return;
-    const overlay = [...document.querySelectorAll("#luria-session-overlay, #luria-search-overlay")].at(-1) || null;
-    if (activeDialog === overlay) return;
+    // Closed overlays can remain in the DOM; only a visible modal may disable
+    // the application. Always repair stale inert state, even when activeDialog
+    // and overlay are both null (common after iOS back-forward restoration).
+    const overlay = [...document.querySelectorAll("#luria-session-overlay, #luria-search-overlay")]
+      .filter(node => node.isConnected && !node.hidden && !node.closest("[hidden]") &&
+        getComputedStyle(node).display !== "none" &&
+        getComputedStyle(node).visibility !== "hidden").at(-1) || null;
     const shell = document.querySelector(".app-shell");
     const skip = document.querySelector(".ui-skip-link");
-    if (shell) shell.inert = !!overlay;
-    if (skip) skip.inert = !!overlay;
+    if (shell && shell.inert !== !!overlay) shell.inert = !!overlay;
+    if (skip && skip.inert !== !!overlay) skip.inert = !!overlay;
+    if (activeDialog === overlay) return;
     if (!overlay) {
       activeDialog = null;
       if (dialogReturnFocus?.isConnected) dialogReturnFocus.focus();
@@ -197,7 +203,13 @@
     if (search) search.setAttribute("aria-label", "Buscar páginas e ferramentas");
     (search || overlay.querySelector(".luria-intel-close"))?.focus();
   }
-  new MutationObserver(syncDialog).observe(body, {childList: true});
+  new MutationObserver(syncDialog).observe(body, {
+    childList: true, subtree: true, attributes: true, attributeFilter: ["hidden", "style"]
+  });
+  window.addEventListener("pageshow", syncDialog);
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") syncDialog();
+  });
 
   function syncNavigation() {
     if (body.dataset.uiNav === "v2") return;
