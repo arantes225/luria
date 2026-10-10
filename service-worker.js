@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v277-passometro-keyboard-sync";
+const CACHE_VERSION = "luria-pwa-v278-web-v2-mobile-sync";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -29,7 +29,17 @@ const APP_SHELL = [
   "/assets/js/luria-command-center.js?v=20261002-1",
   "/assets/css/luria-command-center.css?v=20261002-1",
   "/mini-osce/",
-  "/assets/js/pwa.js?v=4-force-refresh",
+  "/assets/js/pwa.js",
+  "/assets/js/app.js",
+  "/assets/js/ui-navigation-v2.js",
+  "/assets/js/ui-theme-v2.js",
+  "/assets/js/dashboard-ui-v2.js",
+  "/assets/css/ui-v2-foundations.css",
+  "/assets/css/ui-navigation-v2.css",
+  "/assets/css/education-ui-v2.css",
+  "/assets/css/education-pages-v2.css",
+  "/assets/css/dashboard-ui-v2.css",
+  "/assets/css/flashcards-ui-v2.css",
   "/assets/js/weekly-content.js?v=1",
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
   "/assets/img/logos/pwa-icon-512.png?v=pwa5",
@@ -283,7 +293,10 @@ self.addEventListener("fetch", event => {
           return response;
         })
         .catch(async () => {
-          const cached = await caches.match(request);
+          // Cache-busting query versions differ between pages. The shell stores
+          // the canonical asset pathname, so an offline request must find it too.
+          const cached = await caches.match(request)
+            || (isAppCode && await caches.match(request, { ignoreSearch: true }));
           if (cached) return cached;
 
           if (request.mode === "navigate") {
