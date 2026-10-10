@@ -68,11 +68,11 @@ test('mobile drawer restores button interaction even with a hidden persistent ov
   await settle();
   assert.equal(body.classList.contains('sidebar-open'), true);
   // Backdrop handles taps; do not freeze the main document on iOS.
-  assert.equal(main.inert, false);
+  assert.equal(Boolean(main.inert), false);
   w.document.getElementById('sidebar-close').click();
   await settle();
   assert.equal(body.classList.contains('sidebar-open'), false);
-  assert.equal(main.inert, false);
+  assert.equal(Boolean(main.inert), false);
   w.document.getElementById('important-action').click();
   assert.equal(actions, 1);
   dom.window.close();
