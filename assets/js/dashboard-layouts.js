@@ -439,10 +439,9 @@
   function apply() {
     let selected = "1";
     try { selected = localStorage.getItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`) || "1"; } catch {}
-    const standalonePwa = document.documentElement.classList.contains("pwa-standalone")
-      || window.matchMedia?.("(display-mode: standalone)")?.matches
-      || window.navigator.standalone === true;
-    const nextLayout = standalonePwa ? "1" : (allowed.has(selected) ? selected : "1");
+    // A versão instalada compartilha a escolha de layout com a versão web.
+    // O CSS responsivo ajusta os cards; o modo standalone não altera o painel.
+    const nextLayout = allowed.has(selected) ? selected : "1";
     const sameLayout = dashboardAppliedOnce && current === nextLayout;
     current = nextLayout;
     if (!allowed.has(selected)) {
