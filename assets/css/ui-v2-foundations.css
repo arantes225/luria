@@ -17,9 +17,9 @@ body[data-ui="v2"], body[data-ui-shell="v2"] {
   --ui-caption: .8125rem; --ui-metric: 2rem;
   --color-background: #F7F8FA; --color-surface: #FFFFFF; --color-surface-elevated: #F0F3F7;
   --color-text-primary: #172033; --color-text-secondary: #596579;
-  --color-primary: #5275AD; --color-primary-hover: #46689E; --color-primary-foreground: #FFFFFF;
+  --color-primary: #184888; --color-primary-hover: #123A70; --color-primary-foreground: #FFFFFF;
   --color-primary-subtle: #E8EFF8;
-  --color-primary-text: #4C6DA3;
+  --color-primary-text: #184888;
   --color-accent: #B06A82; --color-border: #E3E7ED; --color-border-interactive: #748397;
   --color-success: #236A4C; --color-success-surface: #E9F5EF;
   --color-info: #315E83; --color-info-surface: #E1EFF8;
@@ -36,13 +36,13 @@ body[data-ui="v2"][data-ui-identity="pink"], body[data-ui-shell="v2"][data-ui-id
   --color-primary: #B2577D; --color-primary-hover: #9F476C;
   --color-primary-subtle: #F6E8EE;
   --color-primary-text: #A34970;
-  --color-accent: #5275AD; --color-border: #E9DFE4; --color-border-interactive: #967383;
+  --color-accent: #184888; --color-border: #E9DFE4; --color-border-interactive: #967383;
 }
 body[data-ui="v2"][data-ui-appearance="dark"], body[data-ui-shell="v2"][data-ui-appearance="dark"] {
   --color-background: #0B0C0F; --color-surface: #17191E; --color-surface-elevated: #20232A;
   --color-text-primary: #F5F5F6; --color-text-secondary: #ADB3BE;
-  --color-primary: #879DCE; --color-primary-hover: #9DB1DC; --color-primary-foreground: #0B0C0F;
-  --color-primary-subtle: #242D3D; --color-focus-ring: #8FA6D6;
+  --color-primary: #94B9ED; --color-primary-hover: #ADCDF7; --color-primary-foreground: #0B0C0F;
+  --color-primary-subtle: #202F47; --color-focus-ring: var(--color-primary);
   --color-primary-text: var(--color-primary);
   --color-accent: #D58EAC; --color-border: #30343C; --color-border-interactive: #8498AC;
   --color-success: #9DD7B5; --color-success-surface: #223E34;
@@ -58,7 +58,7 @@ body[data-ui="v2"][data-ui-appearance="dark"][data-ui-identity="pink"], body[dat
   --color-text-primary: #F5F5F6; --color-text-secondary: #ADB3BE;
   --color-primary: #D58EAC; --color-primary-hover: #E2A4BD; --color-primary-foreground: #0B0C0F;
   --color-primary-subtle: #382731; --color-focus-ring: #D69AB0;
-  --color-accent: #879DCE; --color-border: #30343C; --color-border-interactive: #AC8CA0;
+  --color-accent: #94B9ED; --color-border: #30343C; --color-border-interactive: #AC8CA0;
   --color-disabled: #ADB3BE; --color-disabled-surface: #20232A;
 }
 @media (max-width: 767px) {
