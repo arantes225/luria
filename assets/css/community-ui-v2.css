@@ -75,4 +75,17 @@
     body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] :is(.studyrats-fields,.friends-create-room-fields,.studyrats-rat-picker) {grid-template-columns:minmax(0,1fr)!important;}
     body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .community-nav a {flex:1 1 auto;justify-content:center;}
   }
+
+  /* Friendly competition, only using the status and progress rendered by StudyRats. */
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] #studyrats-card .friends-ref-studyrats-mark {background:var(--color-warning-surface)!important;color:var(--color-warning)!important;border-radius:12px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .studyrats-empty {background:var(--color-primary-subtle)!important;border-style:solid!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .studyrats-road {background:var(--color-surface)!important;border-color:var(--color-border)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .studyrats-progress-fill {background:var(--color-primary-subtle)!important;transition:width 220ms;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .studyrats-mouse {transition:left 220ms;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .studyrats-rank.is-first {background:var(--color-warning-surface)!important;color:var(--color-warning)!important;border:1px solid var(--color-warning)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .studyrats-status-dot.is-finished {background:var(--color-success)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] :is(.friends-ref-current-rat,.studyrats-challenge,.community-nav a) {transition:background-color 160ms,border-color 160ms;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] .friends-ref-current-rat:hover {background:var(--color-primary-subtle)!important;border-color:var(--color-primary)!important;}
+  @media(prefers-reduced-motion:reduce) { body[data-ui="v2"][data-ui-context="study"][data-page="amigos"] :is(.studyrats-progress-fill,.studyrats-mouse,.friends-ref-current-rat,.studyrats-challenge,.community-nav a) {transition:none!important;} }
+
 }

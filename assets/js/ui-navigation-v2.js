@@ -114,12 +114,29 @@
       delete node.dataset.uiDrawerInert;
     }
   }
+  // Move the existing nodes; IDs, links and their event handlers remain intact.
+  function placeStudyNavigation(sidebar, bar) {
+    if (body.dataset.uiContext !== 'study' || !sidebar || !bar) return;
+    const top = sidebar.querySelector('.sidebar-top');
+    const brand = sidebar.querySelector('.brand');
+    const previousBrand = bar.querySelector('.ui-topbar-brand');
+    if (brand) {
+      previousBrand?.remove();
+      brand.classList.add('ui-topbar-brand');
+      bar.prepend(brand);
+    }
+    const trigger = document.getElementById('menu-open');
+    const host = narrow.matches && !body.classList.contains('sidebar-open') ? bar : top;
+    if (host && trigger && (trigger.parentElement !== host || trigger !== host.firstElementChild)) host.prepend(trigger);
+  }
   function syncDrawer() {
     const sidebar = document.getElementById("sidebar");
     const main = document.querySelector("main.main");
     const bar = document.querySelector(".topbar");
     const trigger = document.getElementById("menu-open");
     const open = narrow.matches && body.classList.contains("sidebar-open");
+
+    placeStudyNavigation(sidebar, bar);
 
     if (sidebar) {
       if (sidebar.inert !== (narrow.matches && !open)) sidebar.inert = narrow.matches && !open;
@@ -149,7 +166,9 @@
       if (!trigger.dataset.uiControl) { trigger.innerHTML = menuIcon; trigger.dataset.uiControl = "true"; }
       if (!bar.querySelector(".ui-context-label")) {
         const context = document.createElement("span"); context.className = "ui-context-label";
-        context.textContent = work ? "Trabalho" : "Estudos"; trigger.after(context);
+        context.textContent = work ? "Trabalho" : "Estudos";
+        if (work) trigger.after(context);
+        else bar.insertBefore(context, bar.querySelector('.luria-notifications'));
       }
     }
     sidebar?.querySelectorAll("nav a[href]").forEach(link => {

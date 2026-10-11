@@ -80,19 +80,26 @@ test('compact metrics keep existing counts; streak grammar and weekly labels do 
   f.w.luriaDashboardMetrics={'metric-flashcards':'1.234 pendentes'};
   f.w.dispatchEvent(new f.w.Event('luria:dashboard-data'));await settle();
   assert.equal(f.w.document.getElementById('ui-review-flashcards').textContent,'1.234');
-  for(const count of [1,2]) {
+  for(const count of [0,1,2]) {
     const streak=f.w.document.createElement('section');streak.className='dl-streak';
-    streak.innerHTML='<div class="dl-streak-value"><strong>'+count+' dias seguidos</strong></div><div class="dl-weekdays">'+['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].map((day,index)=>'<span class="'+(index<2?(count===1?'active':'on'):'')+'"><i></i>'+day+'</span>').join('')+'</div>';
+    streak.innerHTML='<h3>Ofensiva</h3><div class="dl-streak-value"><strong>'+count+' dias seguidos</strong></div><div class="dl-weekdays">'+['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].map((day,index)=>'<span class="'+(index<2?(count===1?'active':'on'):'')+'"><i></i>'+day+'</span>').join('')+'</div>';
     f.root.append(streak);await settle();
     assert.equal(streak.querySelector('.ui-streak-number').textContent,String(count));
     assert.equal(streak.querySelector('.ui-streak-label').textContent,count===1?'dia seguido':'dias seguidos');
     assert.equal(streak.querySelectorAll('[aria-current="date"]').length,1);
     assert.equal(streak.querySelectorAll('.dl-weekdays > span').length,7);
     assert.deepEqual([...streak.querySelectorAll('.dl-weekdays i')].map(n=>n.textContent),['S','T','Q','Q','S','S','D']);
-    assert.equal(streak.querySelectorAll('.ui-week-marked').length,2);
+    assert.equal(streak.querySelectorAll('.ui-week-marked,.dl-weekdays > .active,.dl-weekdays > .on').length,0);
+    assert.match(streak.querySelector('.dl-weekdays').getAttribute('aria-label'),/histórico diário.*indisponível/);
+    const today=(new f.w.Date().getDay()+6)%7;
+    assert.equal(streak.querySelectorAll('.ui-week-future').length,6-today);
     assert.equal(streak.querySelector('.dl-weekdays > span').textContent,'S');
-    assert.equal(streak.querySelectorAll('.ui-streak-note').length,0);
+    assert.equal(streak.querySelectorAll('.ui-streak-note').length,1);
+    assert.equal(streak.querySelector('h2,h3').textContent,'Sua ofensiva');
+    assert.match(streak.querySelector('.ui-streak-note').textContent,count===0?/Comece sua sequência/:/Continue construindo/);
   }
+  // Detach the observed UI before jsdom tears down its browsing context.
+  f.w.document.body.remove(); await settle();
   f.dom.window.close();
 });
 test('summary preserves lesson/agenda counts and percent meaning when separating its labels', async () => {
