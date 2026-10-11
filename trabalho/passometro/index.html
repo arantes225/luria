@@ -1920,7 +1920,7 @@
     async function makePassometroPdf(deck){
       const sheet=buildExportSheet(deck);
       if(!window.html2pdf) throw new Error("Gerador de PDF indisponível");
-      const worker=window.html2pdf().set({margin:[8,8,8,8],filename:safeFileName(deck),image:{type:"jpeg",quality:.96},html2canvas:{scale:2,useCORS:true,backgroundColor:"#ffffff",onclone:doc=>doc.body.style.setProperty("background-color","#ffffff","important")},jsPDF:{unit:"mm",format:"a4",orientation:"portrait"},pagebreak:{mode:["css","legacy"]}}).from(sheet).toPdf();
+      const worker=window.html2pdf().set({margin:[8,8,8,8],filename:safeFileName(deck),image:{type:"jpeg",quality:.96},html2canvas:{scale:2,useCORS:true,backgroundColor:"#ffffff"},jsPDF:{unit:"mm",format:"a4",orientation:"portrait"},pagebreak:{mode:["css","legacy"]}}).from(sheet).toPdf();
       const pdf=await worker.get("pdf");
       return pdf.output("blob");
     }

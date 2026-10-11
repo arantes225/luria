@@ -54,13 +54,21 @@ body[data-ui="v2"][data-ui-appearance="dark"], body[data-ui-shell="v2"][data-ui-
 
 }
 body[data-ui="v2"][data-ui-appearance="dark"][data-ui-identity="pink"], body[data-ui-shell="v2"][data-ui-appearance="dark"][data-ui-identity="pink"] {
-  --color-background: #0B0C0F; --color-surface: #17191E; --color-surface-elevated: #20232A;
-  --color-text-primary: #F5F5F6; --color-text-secondary: #ADB3BE;
-  --color-primary: #D58EAC; --color-primary-hover: #E2A4BD; --color-primary-foreground: #0B0C0F;
+  --color-primary: #D58EAC; --color-primary-hover: #E2A4BD;
   --color-primary-subtle: #382731; --color-focus-ring: #D69AB0;
-  --color-accent: #94B9ED; --color-border: #30343C; --color-border-interactive: #AC8CA0;
-  --color-disabled: #ADB3BE; --color-disabled-surface: #20232A;
+  --color-accent: #94B9ED; --color-border-interactive: #AC8CA0;
+
 }
+/* Shell surfaces and interactive tokens live with the approved palettes. */
+body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) {--color-shell-surface:#DEE6F1;--color-shell-highlight:var(--color-primary-subtle);--color-shell-control:var(--color-surface-elevated);--color-shell-control-border:var(--color-border);}
+body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]):where([data-ui-identity="pink"]) {--color-shell-surface:#EADDE4;}
+body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"] {--color-shell-surface:#131720;}
+body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"]:where([data-ui-identity="pink"]) {--color-shell-surface:#19151B;}
+@supports (color:color-mix(in srgb,black,white)) {
+  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) {--color-shell-surface:color-mix(in srgb,var(--color-surface) 84%,var(--color-primary-text));--color-shell-control:color-mix(in srgb,var(--color-surface) 75%,var(--color-shell-surface));--color-shell-control-border:color-mix(in srgb,var(--color-shell-surface) 55%,var(--color-border-interactive));}
+  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"] {--color-shell-surface:color-mix(in srgb,var(--color-background) 94%,var(--color-primary-text));--color-shell-control-border:var(--color-border);}
+}
+
 @media (max-width: 767px) {
   body[data-ui="v2"], body[data-ui-shell="v2"] {
     --ui-display: 2rem; --ui-h1: 1.75rem; --ui-h2: 1.5rem; --ui-h3: 1.25rem;
@@ -68,7 +76,7 @@ body[data-ui="v2"][data-ui-appearance="dark"][data-ui-identity="pink"], body[dat
   }
 }
 
-/* Legacy aliases apply only to the educational content, never work tools. */
+/* Legacy aliases bridge opted-in content; page-specific styles stay scoped. */
 body[data-ui="v2"] {
   --font-ui: var(--ui-font-family) !important;
   --bg: var(--color-background) !important; --surface: var(--color-surface) !important;
@@ -77,6 +85,7 @@ body[data-ui="v2"] {
   --border: var(--color-border) !important; --accent: var(--color-primary) !important;
   --accent-strong: var(--color-primary-hover) !important; --accent-soft: var(--color-surface-elevated) !important;
   --success: var(--color-success) !important; --danger: var(--color-danger) !important;
+  --warning: var(--color-warning) !important;
   --sidebar: var(--color-surface) !important;
   --dl-blue: var(--color-primary); --dl-deep: var(--color-text-primary);
   --dl-muted: var(--color-text-secondary); --dl-border: var(--color-border);

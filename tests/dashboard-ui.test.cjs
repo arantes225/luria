@@ -4,10 +4,18 @@ const fs = require('node:fs');
 const {JSDOM} = require('jsdom');
 const code = fs.readFileSync('assets/js/dashboard-ui-v2.js', 'utf8');
 const html = fs.readFileSync('dashboard/index.html', 'utf8');
-const settle = () => new Promise(resolve => setImmediate(resolve));
+// The navigation adapter schedules repairs through requestAnimationFrame.
+const settle = () => new Promise(resolve => setTimeout(resolve, 50));
 function fixture(theme = 'light', saved = null, mobile = false) {
   const dom = new JSDOM(html, {url:'http://localhost/dashboard/', runScripts:'outside-only', pretendToBeVisual:true});
   const w = dom.window;
+  // jsdom has no inert reflection, and its RAF teardown can race a closed window.
+  Object.defineProperty(w.HTMLElement.prototype, "inert", {
+    get(){return this.hasAttribute("inert");},
+    set(value){this.toggleAttribute("inert", Boolean(value));}, configurable:true
+  });
+  w.requestAnimationFrame = callback => w.setTimeout(callback, 0);
+  w.cancelAnimationFrame = id => w.clearTimeout(id);
   const profile = w.document.createElement('div'); profile.id = 'luria-profile-menu';
   w.document.querySelector('.topbar').append(profile);
   w.document.documentElement.dataset.theme = theme;
@@ -136,11 +144,11 @@ test('dashboard relocates rendered streak and cat nodes once and refreshes them 
     grid.replaceChildren(); await settle();
   }
 });
-test('mobile sidebar is inert when closed; Escape restores the trigger', async () => {
+test('mobile sidebar is inert when closed; page remains usable and Escape restores the trigger', async () => {
   const f=fixture('light',null,true);await settle();
   const sidebar=f.w.document.getElementById('sidebar');const main=f.w.document.getElementById('dashboard-content');
   assert.equal(sidebar.inert,true);f.w.document.getElementById('menu-open').click();await settle();
-  assert.equal(sidebar.inert,false);assert.equal(main.inert,true);
+  assert.equal(sidebar.inert,false);assert.equal(main.inert,false);
   f.w.document.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Escape'}));await settle();
   assert.equal(sidebar.inert,true);assert.equal(main.inert,false);assert.equal(f.w.document.activeElement.id,'menu-open');
   f.dom.window.close();
@@ -160,7 +168,7 @@ test('a failed render has visible recovery links without changing activities', a
 });
 test('all new style rules are opt-in, including media queries; protected entries do not load them', () => {
   const dom=new JSDOM('<html><head></head><body></body></html>');
-  for (const file of ['ui-v2-foundations.css','dashboard-ui-v2.css']) {
+  for (const file of ['ui-v2-foundations.css','dashboard-ui-v2.css','ui-navigation-v2.css','education-ui-v2.css','work-ui-v2.css','admin-ui-v2.css','pcr-ui-v2.css']) {
     const style=dom.window.document.createElement('style');style.textContent=fs.readFileSync('assets/css/'+file,'utf8');dom.window.document.head.append(style);
     assert.ok(style.sheet,'CSS must parse');let rules=0;
     const selectors=text=>{
@@ -168,10 +176,10 @@ test('all new style rules are opt-in, including media queries; protected entries
       for(let i=0;i<text.length;i++){if('(['.includes(text[i]))depth++;else if(')]'.includes(text[i]))depth--;else if(text[i]===','&&depth===0){result.push(text.slice(start,i));start=i+1;}}
       return [...result,text.slice(start)];
     };
-    const inspect=list=>{for(const rule of list){if(rule.selectorText){rules++;for(const selector of selectors(rule.selectorText))assert.ok(selector.includes('[data-ui="v2"]'),selector);}else if(rule.cssRules)inspect(rule.cssRules);else if(rule.style?.getPropertyValue('font-family'))assert.equal(rule.style.getPropertyValue('font-family'),'"Luria Inter"');}};
+    const inspect=list=>{for(const rule of list){if(rule.selectorText){rules++;for(const selector of selectors(rule.selectorText))assert.ok(/\[data-ui(?:-shell|-nav|-work|-admin|-pcr)?="v2"\]/.test(selector),selector);}else if(rule.cssRules)inspect(rule.cssRules);else if(rule.style?.getPropertyValue('font-family'))assert.equal(rule.style.getPropertyValue('font-family'),'"Luria Inter"');}};
     inspect(style.sheet.cssRules);assert.ok(rules>0);
   }
-  for(const file of ['index.html','plantao/sala-emergencia/index.html','mini-osce/index.html','plantao/luriazap/index.html']) {
+  for(const file of ['index.html','mini-osce/index.html','plantao/luriazap/index.html']) {
     assert.doesNotMatch(fs.readFileSync(file,'utf8'),/ui-v2|data-ui="v2"/);
   }
   dom.window.close();
@@ -187,4 +195,20 @@ test('existing study dialog gets a name, isolates background and returns focus a
   f.w.document.dispatchEvent(new f.w.KeyboardEvent('keydown',{key:'Escape'}));await settle();
   assert.equal(f.w.document.querySelector('.app-shell').inert,false);assert.equal(f.w.document.activeElement,opener);
   f.dom.window.close();
+});
+
+
+test("migrated modules load foundations once and keep PCR priority ahead of the work bridge", () => {
+  const paths = ["dashboard","cronograma","aprender","consolidar","flashcards","caderno-erros","questoes-simulados","estatisticas","desafio-diario","editais","amigos","plantao/sala-emergencia","trabalho","trabalho/passometro","trabalho/prontuario-rapido","trabalho/prescricao","trabalho/calculadora","trabalho/scores","trabalho/diagnostico","trabalho/fluidos-eletrólitos","trabalho/gestor-plantoes","trabalho/pcr","trabalho/pcr/executar","trabalho/pcr/historico","admin"];
+  for (const path of paths) {
+    // This guard inspects link order; legacy inline styles are outside its scope.
+    const html = fs.readFileSync(path+"/index.html", "utf8").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
+    const dom = new JSDOM(html);
+    const styles = [...dom.window.document.querySelectorAll("link[rel=stylesheet]")].map(node => node.getAttribute("href").split("?")[0].split("/").pop());
+    assert.equal(styles.filter(name => name === "ui-v2-foundations.css").length, 1, path);
+    const foundation = styles.indexOf("ui-v2-foundations.css");
+    for (const name of styles.filter(name => /^(ui-navigation|education|dashboard|flashcards|community|plantao|work|admin|pcr)-.*v2\.css$/.test(name))) assert.ok(styles.indexOf(name) > foundation, path+": "+name);
+    if (styles.includes("pcr-ui-v2.css")) assert.ok(styles.indexOf("pcr-ui-v2.css") < styles.indexOf("work-ui-v2.css"), path);
+    dom.window.close();
+  }
 });

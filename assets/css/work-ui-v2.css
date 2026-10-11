@@ -15,7 +15,7 @@ body[data-ui-work="v2"] .main :is(input:not([type="checkbox"]):not([type="radio"
   min-width: 0;
 }
 body[data-ui-work="v2"] .main :is(button,.button) {
-  min-height: 44px;
+  min-height: var(--ui-control);
   white-space: normal;
 }
 body[data-ui-work="v2"] .main :is(button,.button):disabled {
@@ -78,7 +78,7 @@ body[data-ui-work="v2"] .work-empty {
   gap: 4px;
 }
 body[data-ui-work="v2"] .work-empty a {
-  min-height: 44px;
+  min-height: var(--ui-control);
   font-size: 14px;
   color: var(--color-primary-foreground);
 }
@@ -188,7 +188,7 @@ body[data-ui-work="v2"] .temp-note-paper textarea {
   line-height: 1.7;
 }
 body[data-ui-work="v2"] :is(.temp-note-top-actions button,.temp-note-top-actions a,.temp-note-savebar button,.quick-chart-pin-setup button) {
-  min-height: 44px;
+  min-height: var(--ui-control);
   font-size: 14px;
 }
 body[data-ui-work="v2"] :is(.temp-note-top-actions a,.temp-note-savebar .primary,.quick-chart-pin-setup button,.gm-security-action) {
@@ -235,10 +235,6 @@ body[data-ui-work="v2"] .pm-detail-metric :is(span,small) {
 body[data-ui-work="v2"] :is(.calc-toolbar,.score-toolbar) {
   gap: 16px;
 }
-body[data-ui-work="v2"] :is(.calc-list,.score-grid) {
-  grid-template-columns: repeat(auto-fit,minmax(min(100%,360px),1fr));
-  gap: 16px;
-}
 body[data-ui-work="v2"] :is(.chips,.score-tabs,.abx-tabs) {
   display: flex;
   flex-wrap: wrap;
@@ -246,7 +242,7 @@ body[data-ui-work="v2"] :is(.chips,.score-tabs,.abx-tabs) {
   gap: 8px;
 }
 body[data-ui-work="v2"] :is(.chip,.score-tab,.abx-tab) {
-  min-height: 44px;
+  min-height: var(--ui-control);
   font-size: 14px;
 }
 body[data-ui-work="v2"] :is(.chip,.score-tab,.abx-tab).active {
@@ -258,7 +254,7 @@ body[data-ui-work="v2"] :is(.calc-code,.score-code) {
   color: var(--color-primary-text);
   font-size: 13px;
   min-width: 44px;
-  min-height: 44px;
+  min-height: var(--ui-control);
 }
 body[data-ui-work="v2"] :is(.calc-badge,.score-tag,.calc-shelf-head p,.score-shelf-head p,.score-count,.calc-toolbar-count,.score-toolbar-count) {
   font-size: 13px;
@@ -385,7 +381,7 @@ body[data-ui-work="v2"] :is(.calc-modal-card,.score-modal,.pm-dialog,.pm-view-di
 body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) :is(input,select,textarea) {
   max-width: 100%;
   min-width: 0;
-  min-height: 44px;
+  min-height: var(--ui-control);
   font-size: 16px;
   color: var(--color-text-primary);
   background-color: var(--color-surface);
@@ -395,7 +391,7 @@ body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,
   outline-offset: 3px;
 }
 body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) button {
-  min-height: 44px;
+  min-height: var(--ui-control);
   font-size: 14px;
 }
 body[data-ui-work="v2"] :is(.field label,.score-field label,.pm-field label,.pm-section-head,.pcr-history-form label) {
@@ -503,7 +499,7 @@ body[data-ui-work="v2"] .gm-security-copy :is(strong,p,small) {
   line-height: 1.6;
 }
 body[data-ui-work="v2"] .gm-security-action {
-  min-height: 44px;
+  min-height: var(--ui-control);
   font-size: 14px;
 }
 body[data-ui-work="v2"] .work-shell .work-grid {
@@ -587,7 +583,7 @@ body[data-ui-work="v2"] .pcr-record-event>div {
 }
 body[data-ui-work="v2"] .pcr-record-menu summary {
   min-width: 44px;
-  min-height: 44px;
+  min-height: var(--ui-control);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -627,6 +623,11 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
 
 /* Layered resets defeat legacy injected locks only on migrated components. */
 @layer luria-work-resets {
+  /* Legacy grid locks must not compress clinical labels on narrow containers. */
+  body[data-ui-work="v2"] :is(.calc-list,.score-grid) {
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,360px),1fr)) !important;
+    gap: 16px !important;
+  }
   body[data-ui-work="v2"] .main :is(h1,h2,h3,h4) {
     color: var(--color-text-primary) !important;
   }
@@ -641,7 +642,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     border-color: var(--color-border-interactive) !important;
   }
   body[data-ui-work="v2"] .main :is(input,select) {
-    min-height: 44px !important;
+    min-height: var(--ui-control) !important;
   }
   body[data-ui-work="v2"] .main :is(button,.button) {
     font-size: 14px !important;
@@ -868,7 +869,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     width: 44px !important;
     height: 44px !important;
     min-width: 44px !important;
-    min-height: 44px !important;
+    min-height: var(--ui-control) !important;
     right: 16px !important;
     top: 8px !important;
     padding: 0 !important;
@@ -948,7 +949,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
   }
   body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pcr-history-dialog) :is(button,.button) {
     font-size: 14px !important;
-    min-height: 44px !important;
+    min-height: var(--ui-control) !important;
   }
   @media (max-width:760px) {
     body[data-ui-work="v2"] .luria-page-spotlight :is(strong,h1) {
@@ -984,7 +985,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     line-height: 1.6 !important;
   }
   body[data-ui-work="v2"] :is(.gsm-primary,.gsm-secondary,.gsm-close) {
-    min-height: 44px !important;
+    min-height: var(--ui-control) !important;
   }
   body[data-ui-work="v2"] .gsm-primary {
     background: var(--color-primary) !important;
@@ -1008,14 +1009,12 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     font-size: 14px !important;
     line-height: 1.6 !important;
   }
-}
 
-@layer luria-work-resets {
- body[data-ui-work="v2"] .pcr-history-actions .button,body[data-ui-work="v2"] .pcr-patient-card .button {display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:10px 16px!important;min-height:44px!important;border-radius:8px!important;font-size:14px!important;line-height:1.5!important;}
+  /* PCR history retains its scoped controls within the same legacy bridge. */
+ body[data-ui-work="v2"] .pcr-history-actions .button,body[data-ui-work="v2"] .pcr-patient-card .button {display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:10px 16px!important;min-height:var(--ui-control)!important;border-radius:8px!important;font-size:14px!important;line-height:1.5!important;}
  body[data-ui-work="v2"] .pcr-history-actions .primary {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;border-color:var(--color-primary)!important;}
  body[data-ui-work="v2"] .pcr-history-actions input {padding:10px 12px!important;border:1px solid var(--color-border-interactive)!important;border-radius:8px!important;}
-}
 
-@layer luria-work-resets {
+
  body[data-ui-work="v2"] :is(.pcr-history-actions,.pcr-patient-card,.pcr-history-dialog) .secondary {background:var(--color-surface-elevated)!important;color:var(--color-text-primary)!important;border-color:var(--color-border-interactive)!important;}
 }

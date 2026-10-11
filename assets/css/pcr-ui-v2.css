@@ -1,6 +1,6 @@
 /* Opt-in visual layer outranks legacy locks; business and clinical states retain their existing owners. */
 @layer luria-pcr-ui {
- body[data-ui-pcr="v2"]{--pcr-critical:#B40000;--surface:var(--color-surface);--surface-2:var(--color-surface-elevated);--text:var(--color-text-primary);--muted:var(--color-text-secondary);--border:var(--color-border);font-family:var(--ui-font-family)!important}
+ body[data-ui-pcr="v2"]{--pcr-critical:#B40000;font-family:var(--ui-font-family)!important}
  body[data-ui-pcr="v2"] :is(.pcr-page,.pcr-entry,.pcr-history-page,.pcr-column,.pcr-column>*,.pcr-controlbar>*,.pcr-statusbar>*){min-width:0!important;box-sizing:border-box!important}
  body[data-ui-pcr="v2"] .pcr-page{display:grid!important;grid-template-rows:none!important;gap:16px!important}
  body[data-ui-pcr="v2"] :is(.pcr-column,.pcr-log-panel,.pcr-controlbar,.pcr-statusbar,.pcr-patient-details){border:1px solid var(--color-border)!important;border-radius:12px!important;background:var(--color-surface)!important;padding:16px!important;box-shadow:none!important}
@@ -9,7 +9,7 @@
  body[data-ui-pcr="v2"] .pcr-time-card small{font-size:12px!important;line-height:1.4!important;letter-spacing:.06em!important}
  body[data-ui-pcr="v2"] .pcr-time-card strong{font-size:36px!important;line-height:1.1!important;font-variant-numeric:tabular-nums!important}
  body[data-ui-pcr="v2"] .pcr-time-card span{font-size:14px!important;line-height:1.4!important;margin:0!important}
- body[data-ui-pcr="v2"] :is(.pcr-page,.pcr-entry,.pcr-dialog) :is(button,.button){font-family:var(--ui-font-family)!important;font-size:14px!important;line-height:1.4!important;min-height:44px!important;white-space:normal!important}
+ body[data-ui-pcr="v2"] :is(.pcr-page,.pcr-entry,.pcr-dialog) :is(button,.button){font-family:var(--ui-font-family)!important;font-size:14px!important;line-height:1.4!important;min-height:var(--ui-control)!important;white-space:normal!important}
  body[data-ui-pcr="v2"] :is(button,a,input,textarea,select,summary):focus-visible{outline:3px solid var(--color-focus-ring)!important;outline-offset:3px!important}
  body[data-ui-pcr="v2"] :is(.pcr-cause-button,.pcr-state.shock){background:var(--color-danger-surface)!important;color:var(--color-danger)!important;border-color:var(--color-danger)!important}
  body[data-ui-pcr="v2"] .pcr-quick-action.success{background:var(--color-success-surface)!important;color:var(--color-success)!important;border-color:var(--color-success)!important}
@@ -37,7 +37,7 @@
  body[data-ui-pcr="v2"] .pcr-metronome small{font-size:12px!important;line-height:1.5!important}
  body[data-ui-pcr="v2"] .pcr-weight{flex-wrap:wrap!important}
  body[data-ui-pcr="v2"] .pcr-weight :is(span,small){font-size:14px!important}
- body[data-ui-pcr="v2"] .pcr-weight input{width:72px!important;min-width:0!important;font-size:16px!important;min-height:44px!important}
+ body[data-ui-pcr="v2"] .pcr-weight input{width:72px!important;min-width:0!important;font-size:16px!important;min-height:var(--ui-control)!important}
  body[data-ui-pcr="v2"] :is(.pcr-patient-fields,.pcr-history-form) :is(label,input,textarea,select){font-size:16px!important;line-height:1.5!important}
  body[data-ui-pcr="v2"] :is(.pcr-save-status,.pcr-disclaimer,.pcr-log-empty,.pcr-log-item,.pcr-log-item time,.pcr-log-item small,.pcr-log-item strong,.pcr-dialog header span){font-size:14px!important;line-height:1.5!important}
  body[data-ui-pcr="v2"] .pcr-log-item{grid-template-columns:72px 64px minmax(0,1fr)!important;align-items:start!important;overflow-wrap:anywhere!important}
@@ -50,11 +50,10 @@
  body[data-ui-pcr="v2"] .pcr-entry-main{padding:32px 24px!important}
  body[data-ui-pcr="v2"] .pcr-entry-action{padding:24px!important}
  body[data-ui-pcr="v2"] .pcr-entry-icon{width:72px!important;height:72px!important}
- body[data-ui-pcr="v2"] .pcr-record-menu button{min-height:44px!important}
+ body[data-ui-pcr="v2"] .pcr-record-menu button{min-height:var(--ui-control)!important}
  body[data-ui-pcr="v2"] .pcr-record-menu[open]>div{max-width:calc(100vw - 48px)!important;box-sizing:border-box!important}
  @media (max-width:1200px) {
   body[data-ui-pcr="v2"] .pcr-workspace{grid-template-columns:minmax(0,1fr)!important}
-  body[data-ui-pcr="v2"] .pcr-team-map{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important;min-height:0!important;padding:12px!important;overflow:visible!important}
   body[data-ui-pcr="v2"] .patient-figure{display:none!important}
   body[data-ui-pcr="v2"] .team-position{position:static!important;transform:none!important;max-width:none!important;min-height:56px!important;display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important}
   body[data-ui-pcr="v2"] .compression-guide{display:grid!important;position:static!important;transform:none!important;width:auto!important;grid-column:1/-1!important;padding:12px!important}
