@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v280-touch-unlock";
+const CACHE_VERSION = "luria-pwa-v281-mobile-flow";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
@@ -16,6 +16,15 @@ const APP_SHELL = [
   "/dashboard/",
   "/flashcards/",
   "/questoes-simulados/",
+  "/aprender/",
+  "/consolidar/",
+  "/cronograma/",
+  "/caderno/",
+  "/caderno-erros/",
+  "/estatisticas/",
+  "/amigos/",
+  "/apostilas/",
+  "/trabalho/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
   "/assets/css/style.css?v=20261004-scrollbar-thumb-only",
@@ -29,10 +38,10 @@ const APP_SHELL = [
   "/assets/js/luria-command-center.js?v=20261002-1",
   "/assets/css/luria-command-center.css?v=20261002-1",
   "/mini-osce/",
-  "/assets/js/pwa.js?v=20261010-pwa280",
+  "/assets/js/pwa.js?v=20261011-pwa281",
   "/assets/js/app.js",
-  "/assets/js/ui-navigation-v2.js?v=20261010-pwa280",
-  "/assets/js/ui-theme-v2.js?v=20261010-pwa280",
+  "/assets/js/ui-navigation-v2.js?v=20261011-pwa281",
+  "/assets/js/ui-theme-v2.js?v=20261011-pwa281",
   "/assets/js/dashboard-ui-v2.js",
   "/assets/css/ui-v2-foundations.css",
   "/assets/css/ui-navigation-v2.css",
@@ -280,21 +289,32 @@ self.addEventListener("fetch", event => {
     || url.pathname.endsWith(".webmanifest");
 
   if (request.mode === "navigate" || isAppCode) {
+    // Exact URLs only for the fast path: never mix cache-busting releases.
+    // Keep background writes alive; navigate uses the network with a bounded
+    // wait so a stalled connection does not freeze a previously visited page.
+    const network = fetch(request, { cache: "no-cache" }).then(async response => {
+      if (response?.status === 200) {
+        const cache = await caches.open(RUNTIME_CACHE);
+        await cache.put(request, response.clone()).catch(() => {});
+        await trimCache(RUNTIME_CACHE, RUNTIME_MAX_ITEMS).catch(() => {});
+      }
+      return response;
+    });
+    event.waitUntil(network.then(() => {}, () => {}));
     event.respondWith(
-      fetch(request, { cache: "no-store" })
-        .then(response => {
-          if (response?.status === 200) {
-            const copy = response.clone();
-
-            caches.open(RUNTIME_CACHE)
-              .then(cache => cache.put(request, copy))
-              .then(() => trimCache(RUNTIME_CACHE, RUNTIME_MAX_ITEMS))
-              .catch(() => {});
+      (async () => {
+        const exact = await caches.match(request);
+        if (exact && request.mode !== "navigate" && !url.pathname.endsWith(".html")) return exact;
+        let timer;
+        try {
+          if (exact && request.mode === "navigate") {
+            return await Promise.race([
+              network.then(response => response.ok ? response : exact),
+              new Promise(resolve => { timer = setTimeout(() => resolve(exact), 2500); })
+            ]);
           }
-
-          return response;
-        })
-        .catch(async () => {
+          return await network;
+        } catch {
           // Cache-busting query versions differ between pages. The shell stores
           // the canonical asset pathname, so an offline request must find it too.
           const cached = await caches.match(request)
@@ -306,11 +326,12 @@ self.addEventListener("fetch", event => {
               await caches.match("/dashboard/")
             ) || (
               await caches.match("/login/")
-            );
+            ) || new Response("Sem conexão. Abra uma página já visitada ou tente novamente quando a conexão voltar.", {status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
           }
 
           return new Response("Recurso indisponível offline.", { status: 503 });
-        })
+        } finally { clearTimeout(timer); }
+      })()
     );
 
     return;

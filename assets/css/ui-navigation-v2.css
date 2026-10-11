@@ -191,4 +191,25 @@
   @media(prefers-reduced-motion:reduce) {
     body[data-ui-nav="v2"] :is(.main,.topbar,#sidebar,.luria-profile-menu,.luria-notification-panel,.luria-pomodoro-panel), body[data-ui-nav="v2"] .topbar :is(button,a) {transition:none!important;animation:none!important;}
   }
+  /* Installed mobile shell: predictable thumb navigation and comfortable cards. */
+  body[data-ui-nav="v2"] .ui-mobile-navigation {display:none!important;}
+  @media(max-width:980px) {
+    html.pwa-v2-standalone:has(body[data-ui-nav="v2"][data-ui-mobile-navigation="true"]) {scroll-padding-top:calc(var(--ui-nav-height,64px) + 16px);scroll-padding-bottom:calc(88px + env(safe-area-inset-bottom,0px));}
+    html.pwa-v2-standalone body[data-ui-nav="v2"] .topbar {padding-top:calc(8px + env(safe-area-inset-top,0px))!important;padding-left:max(8px,env(safe-area-inset-left,0px))!important;padding-right:max(8px,env(safe-area-inset-right,0px))!important;}
+    html.pwa-v2-standalone body[data-ui-nav="v2"] #sidebar.sidebar {padding-top:calc(12px + env(safe-area-inset-top,0px))!important;padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))!important;}
+    html.pwa-v2-standalone body[data-ui-nav="v2"][data-ui-mobile-navigation="true"] {--ui-bottom-navigation:calc(72px + env(safe-area-inset-bottom,0px));}
+    html.pwa-v2-standalone body[data-ui-nav="v2"][data-ui-mobile-navigation="true"] .main > .page {padding-bottom:calc(var(--ui-bottom-navigation) + 24px)!important;}
+    body[data-ui-nav="v2"] .ui-mobile-navigation {position:fixed!important;inset:auto 0 0!important;z-index:75!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:4px!important;box-sizing:border-box!important;padding:8px max(8px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px))!important;background:var(--color-surface)!important;border-top:1px solid var(--color-border)!important;box-shadow:0 -4px 20px rgb(15 35 66 / 5%)!important;}
+    body[data-ui-nav="v2"] .ui-mobile-navigation :is(a,button) {display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:4px!important;min-width:0!important;min-height:56px!important;padding:6px 2px!important;border:0!important;border-radius:14px!important;background:transparent!important;color:var(--color-text-secondary)!important;font:600 12px/1.2 var(--ui-font-family)!important;text-decoration:none!important;touch-action:manipulation;}
+    body[data-ui-nav="v2"] .ui-mobile-navigation svg {width:22px!important;height:22px!important;}
+    body[data-ui-nav="v2"] .ui-mobile-navigation :is([aria-current="page"],[aria-expanded="true"]) {background:var(--color-primary-subtle)!important;color:var(--color-primary-text)!important;}
+    body[data-ui-nav="v2"] .ui-mobile-navigation :is(a,button):focus-visible {outline:3px solid var(--color-focus-ring)!important;outline-offset:-3px!important;}
+    body[data-ui-nav="v2"] .ui-mobile-navigation :is(a,button):active {opacity:.75;}
+    body[data-ui-nav="v2"] #sidebar-close {min-height:44px!important;min-width:44px!important;width:44px!important;height:44px!important;}
+    body[data-ui-nav="v2"] #sidebar.sidebar {overscroll-behavior-y:contain;}
+    body[data-ui-nav="v2"] .main :is(.panel,.stats-block,.planner-panel,.note-side-card,.settings-section,.qr-card,.qr-side-card,.work-panel) {border-radius:var(--ui-radius-card)!important;}
+    body[data-ui-nav="v2"] .main :is(.stats-tabs-shell,.stats-range,.flash-tabs,.qs-mode-tabs,.schedule-add-tabs) {scrollbar-width:none;overscroll-behavior-x:contain;}
+    body[data-ui-nav="v2"] .main :is(input,select,textarea) {font-size:max(16px,1em)!important;scroll-margin-block:100px;}
+    body[data-ui-nav="v2"] :is(.luria-profile-menu,.luria-notification-panel,.luria-pomodoro-panel) {max-height:calc(100dvh - var(--ui-nav-height) - var(--ui-bottom-navigation,0px) - 24px)!important;overscroll-behavior-y:contain;}
+  }
 }
