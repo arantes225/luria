@@ -6,13 +6,18 @@
   "start_url": "/dashboard/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait-primary",
+  "orientation": "any",
   "background_color": "#184888",
   "theme_color": "#184888",
   "lang": "pt-BR",
   "categories": [
     "education",
     "productivity"
+  ],
+  "shortcuts": [
+    { "name": "Meu painel", "short_name": "Painel", "url": "/dashboard/" },
+    { "name": "Meu cronograma", "short_name": "Cronograma", "url": "/cronograma/" },
+    { "name": "Revisar flashcards", "short_name": "Revisar", "url": "/flashcards/" }
   ],
   "icons": [
     {

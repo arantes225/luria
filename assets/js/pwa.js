@@ -57,12 +57,10 @@
 
   if (!("serviceWorker" in navigator)) return;
 
-  const release = "20261010-pwa280";
+  const release = "20261011-pwa281";
   const refreshKey = "luria:pwa:activated:" + release;
-  let interacted = false;
   let reloadPending = false;
-  document.addEventListener("pointerdown", () => { interacted = true; }, { capture: true, once: true });
-  document.addEventListener("keydown", () => { interacted = true; }, { capture: true, once: true });
+  const hadController = !!navigator.serviceWorker.controller;
 
   function refreshNow() {
     if (reloadPending) return;
@@ -77,7 +75,7 @@
     notice.id = "luria-pwa-update-action";
     notice.setAttribute("role", "status");
     notice.setAttribute("aria-live", "polite");
-    notice.style.cssText = "position:fixed;bottom:max(12px,env(safe-area-inset-bottom));left:12px;right:12px;z-index:2147483646;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-radius:12px;background:#172033;color:#fff;box-shadow:0 8px 32px #0004;font:14px system-ui";
+    notice.style.cssText = "position:fixed;bottom:calc(var(--ui-bottom-navigation,env(safe-area-inset-bottom,0px)) + 12px);left:12px;right:12px;z-index:2147483646;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-radius:16px;background:#172033;color:#fff;box-shadow:0 8px 32px #0004;font:14px system-ui";
     const message = document.createElement("span");
     message.textContent = "Atualização do LURIA disponível.";
     const button = document.createElement("button");
@@ -93,20 +91,23 @@
     navigator.serviceWorker.addEventListener("controllerchange", () => {
       let alreadyRefreshed = false;
       try { alreadyRefreshed = sessionStorage.getItem(refreshKey) === "1"; } catch {}
-      if (alreadyRefreshed || reloadPending) return;
-      if (!interacted && document.visibilityState === "visible") refreshNow();
-      else showUpdateAction();
+      if (!hadController || alreadyRefreshed || reloadPending) return;
+      // Never reload notes, forms or an active study session automatically.
+      showUpdateAction();
     });
   }
 
+  let registrationPromise;
   async function registerLatestWorker() {
     try {
-      const registration = await navigator.serviceWorker.register(
+      registrationPromise ||= navigator.serviceWorker.register(
         "/service-worker.js?v=" + release,
         { scope: "/", updateViaCache: "none" }
       );
+      const registration = await registrationPromise;
       await registration.update();
     } catch (error) {
+      registrationPromise = null;
       console.warn("Não foi possível atualizar o PWA do LURIA:", error);
     }
   }
@@ -116,11 +117,12 @@
   let lastCheck = 0;
   function checkOnResume() {
     const now = Date.now();
-    if (now - lastCheck < 30000) return;
+    if (navigator.onLine === false || now - lastCheck < 300000) return;
     lastCheck = now;
     registerLatestWorker();
   }
   window.addEventListener("pageshow", checkOnResume);
+  window.addEventListener("online", () => { lastCheck = 0; checkOnResume(); });
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") checkOnResume();
   });
