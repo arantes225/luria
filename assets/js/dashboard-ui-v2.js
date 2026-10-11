@@ -63,7 +63,15 @@
       track.setAttribute("aria-valuemin", "0"); track.setAttribute("aria-valuemax", "100");
       track.setAttribute("aria-valuenow", percentage);
     });
-    refineCards(root);
+    const streakSlot = document.querySelector(".ui-header-streak");
+    const streakCard = root.querySelector(".dl-streak, .dl5-streak");
+    if (streakSlot && streakCard) {
+      const catCard = root.querySelector(".dl-cat, .dl5-cat");
+      // Move the rendered nodes, preserving their data and attached handlers.
+      if (catCard) streakCard.replaceWith(catCard);
+      streakSlot.replaceChildren(streakCard);
+    }
+    refineCards(root.parentElement);
     syncReviews();
   }
   function refineCards(root) {

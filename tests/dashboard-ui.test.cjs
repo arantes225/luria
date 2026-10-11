@@ -8,6 +8,8 @@ const settle = () => new Promise(resolve => setImmediate(resolve));
 function fixture(theme = 'light', saved = null, mobile = false) {
   const dom = new JSDOM(html, {url:'http://localhost/dashboard/', runScripts:'outside-only', pretendToBeVisual:true});
   const w = dom.window;
+  const profile = w.document.createElement('div'); profile.id = 'luria-profile-menu';
+  w.document.querySelector('.topbar').append(profile);
   w.document.documentElement.dataset.theme = theme;
   w.matchMedia = query => ({matches:query.includes('980') ? mobile : false, addEventListener(){}});
   let owner = 'A'; const storage = new Map();
@@ -106,6 +108,26 @@ test('summary preserves lesson/agenda counts and percent meaning when separating
   f.w.dispatchEvent(new f.w.Event('luria:dashboard-data'));await settle();
   assert.equal(summary.querySelectorAll('.ui-summary-stat').length,2);
   f.dom.window.close();
+});
+
+test('dashboard relocates rendered streak and cat nodes once and refreshes them on rerender', async t => {
+  const f = fixture(); t.after(() => f.w.close()); await settle();
+  assert.equal(f.w.document.querySelector('.ui-theme-controls'), null);
+  assert.equal(f.w.document.querySelectorAll('#luria-profile-menu [data-ui-theme-control]').length, 4);
+  for (const days of [1, 2]) {
+    const grid = f.root.querySelector('.dl-grid');
+    const streak = f.w.document.createElement('section'); streak.className = 'dl-streak';
+    streak.innerHTML = '<div class="dl-streak-value"><strong>'+days+' dias seguidos</strong></div>';
+    const cat = f.w.document.createElement('section'); cat.className = 'dl-cat';
+    cat.innerHTML = '<a href="/caderno-erros/">Pulo</a>';
+    grid.append(streak, cat); await settle();
+    assert.equal(f.w.document.querySelector('.ui-header-streak').firstElementChild, streak);
+    assert.equal(grid.lastElementChild, cat);
+    assert.equal(f.w.document.querySelectorAll('.dl-streak').length, 1);
+    assert.equal(f.w.document.querySelectorAll('.dl-cat').length, 1);
+    assert.equal(streak.querySelector('.ui-streak-number').textContent, String(days));
+    grid.replaceChildren(); await settle();
+  }
 });
 test('mobile sidebar is inert when closed; Escape restores the trigger', async () => {
   const f=fixture('light',null,true);await settle();
