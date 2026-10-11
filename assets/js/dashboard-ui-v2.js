@@ -1,7 +1,7 @@
 /* Dashboard presentation adapter: no shared controller, RPC or business-state writes. */
 (() => {
   const body = document.body;
-  if (body?.dataset.ui !== "v2" || body.dataset.page !== "dashboard") return;
+  if (body?.dataset.ui !== "v2" || body.dataset.page !== "dashboard" || body.dataset.uiContext !== "study") return;
   let reviewSection = null;
   let failedRender = false;
   let activeDialog = null;
@@ -104,6 +104,14 @@
       if (/^(Flashcards pendentes|Erros ativos|Caderno de erros)/.test(row.textContent.trim())) row.hidden = true;
     });
     root.querySelectorAll(".dl-streak, .dl5-streak").forEach(card => {
+      const heading = card.querySelector("h2, h3");
+      if (heading && !heading.dataset.uiStreakHeading) {
+        const flame = document.createElement("span"); flame.className = "ui-streak-emblem";
+        flame.setAttribute("aria-hidden", "true");
+        flame.innerHTML = '<svg viewBox="0 0 64 80" fill="currentColor"><path d="M34 3C35 15 26 19 26 29C26 35 30 38 33 40C27 40 22 35 21 29C13 37 8 46 8 56C8 69 18 77 32 77C46 77 56 68 56 54C56 41 48 30 40 22C39 30 36 34 32 36C35 27 43 18 34 3Z"/><path class="ui-streak-core" d="M33 40C27 47 23 52 23 59C23 67 27 71 33 71C40 71 44 66 44 59C44 52 39 47 35 43C35 48 33 51 30 53C31 48 34 45 33 40Z"/></svg>';
+        heading.replaceChildren(flame, document.createTextNode("Sua ofensiva"));
+        heading.dataset.uiStreakHeading = "true";
+      }
       const value = card.querySelector(".dl-streak-value strong, .dl5-streak-copy strong");
       if (value && !value.dataset.uiStreak) {
         const days = value.textContent.trim().match(/^\d+/)?.[0];
@@ -120,23 +128,29 @@
       const week = card.querySelector(".dl-weekdays, .dl5-week");
       if (!week || week.dataset.uiWeek) return;
       week.dataset.uiWeek = "true"; week.setAttribute("role", "list");
-      week.setAttribute("aria-label", "Semana atual; marcações da ofensiva existente");
+      week.setAttribute("aria-label", "Semana atual; histórico diário de atividade indisponível");
       const today = (new Date().getDay() + 6) % 7;
       const names = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"];
       const initials = ["S", "T", "Q", "Q", "S", "S", "D"];
       [...week.children].forEach((day, index) => {
-        const marked = day.classList.contains("active") || day.classList.contains("on");
+        // Legacy active/on classes are inferred from the count, not daily activity.
+        // The current contract exposes only the aggregate streak: do not claim completion.
+        day.classList.remove("active", "on", "ui-week-marked");
         day.classList.toggle("ui-week-today", index === today);
-        day.classList.toggle("ui-week-marked", marked);
+        day.classList.toggle("ui-week-future", index > today);
         day.setAttribute("role", "listitem");
-        day.setAttribute("aria-label", `${names[index]}${index === today ? ", hoje" : ""}; ${marked ? "marcado" : "não marcado"} na ofensiva`);
-        day.title = `${names[index]}${index === today ? " · Hoje" : ""}`;
+        const state = index > today ? "dia futuro" : "atividade não confirmada pelo histórico disponível";
+        day.setAttribute("aria-label", `${names[index]}${index === today ? ", hoje" : ""}; ${state}`);
+        day.title = `${names[index]}${index === today ? " · Hoje" : ""} · ${state}`;
         if (index === today) day.setAttribute("aria-current", "date");
         for (const node of day.childNodes) if (node.nodeType === 3) node.textContent = "";
         const indicator = day.querySelector("i");
         if (indicator) { indicator.textContent = initials[index]; indicator.setAttribute("aria-hidden", "true"); }
       });
-
+      const note = document.createElement("p"); note.className = "ui-streak-note";
+      note.textContent = Number(value?.querySelector(".ui-streak-number")?.textContent) > 0
+        ? "Continue construindo sua sequência!" : "Um dia de cada vez. Comece sua sequência.";
+      card.append(note);
     });
   }
   function syncReviews() {

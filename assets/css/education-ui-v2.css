@@ -127,4 +127,29 @@
   @media(prefers-reduced-motion:reduce) {
     body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .main :is(button,a) {transition:none!important;}
   }
+
+  /* Moderate progress feedback; result classes are supplied by existing controllers. */
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-home-eyebrow {display:inline-flex!important;justify-self:start;padding:.375rem .75rem!important;border-radius:999px!important;background:var(--color-surface)!important;color:var(--color-primary-text)!important;font-weight:600!important;font-size:.8125rem!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main #qs-daily-card {box-shadow:none!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-home-my-lists .qs-empty {font-size:.875rem!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main :is(.qs-home-user-card,.qs-resolution-option) {transition:border-color 160ms,background-color 160ms;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-home-user-card:hover {border-color:var(--color-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-home-user-card-progress span {transition:width 220ms;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-resolution-result.correct {background:var(--color-success-surface)!important;color:var(--color-success)!important;border-left:3px solid var(--color-success)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-resolution-result.wrong {background:var(--color-danger-surface)!important;color:var(--color-danger)!important;border-left:3px solid var(--color-danger)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-resolution-result {padding:1rem!important;border-radius:8px!important;line-height:1.5!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .error-metric-progress-bar span {transition:width 220ms;}
+  body[data-ui="v2"][data-ui-context="study"]:is([data-page="estatisticas"],[data-page="editais"]) .main :is(.stats-summary-card,.exam-metric-card) {border-top:2px solid var(--color-primary-subtle)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-hero {display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:1.5rem!important;padding:1.5rem!important;background:var(--color-primary-subtle)!important;border-radius:16px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-hero-copy {flex:1 1 22rem;min-width:0;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-mentor-image {width:88px;height:100px;object-fit:contain;flex:none;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-mode {margin-left:auto;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-start-card {display:grid!important;grid-template-columns:40px minmax(0,1fr)!important;gap:.5rem .75rem!important;text-align:left!important;align-content:start!important;min-height:0!important;padding:1rem!important;box-shadow:none!important;transition:border-color 180ms,background-color 180ms;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-start-card .alex-card-icon {grid-column:1;grid-row:1/3;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-start-card :is(strong,span:not(.alex-card-icon)) {grid-column:2;line-height:1.5!important;margin:0!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-mode button[aria-pressed="true"] {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-start-card.is-active {background:var(--color-primary-subtle)!important;border-color:var(--color-primary)!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="professor_alex"] .main .alex-step-num {background:var(--color-primary-subtle)!important;color:var(--color-primary-text)!important;border:1px solid var(--color-primary)!important;border-radius:50%!important;}
+  @media(prefers-reduced-motion:reduce) { body[data-ui="v2"][data-ui-context="study"]:is([data-page="questoes"],[data-page="professor_alex"]) .main :is(.qs-home-user-card,.qs-home-user-card-progress span,.qs-resolution-option,.error-metric-progress-bar span,.alex-start-card) {transition:none!important;transform:none!important;} }
+
 }

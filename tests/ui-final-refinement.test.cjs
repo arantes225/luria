@@ -1,0 +1,56 @@
+const {test} = require('node:test');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const {JSDOM} = require('jsdom');
+const settle = w => new Promise(resolve => w.setTimeout(resolve, 50));
+
+test('study shell moves the original logo and trigger across drawer states without duplicates', async t => {
+  const dom = new JSDOM('<body data-ui-nav="v2" data-ui-context="study"><div class="app-shell"><aside id="sidebar"><div class="sidebar-top"><a class="brand" href="/dashboard/"><img id="luria-brand-logo"></a><button id="sidebar-close">Close</button></div></aside><header class="topbar"><button id="menu-open">Menu</button></header><main class="main"></main></div></body>', {runScripts:'outside-only',pretendToBeVisual:true,url:'http://fixture.invalid/'});
+  const w=dom.window,d=w.document; t.after(()=>w.close());
+  let mobile=false, change;
+  w.matchMedia=()=>({get matches(){return mobile;},addEventListener(_, fn){change=fn;}});
+  const brand=d.querySelector('.brand'), trigger=d.getElementById('menu-open');
+  w.eval(fs.readFileSync('assets/js/ui-navigation-v2.js','utf8'));
+  await settle(w);
+  assert.equal(brand.parentElement,d.querySelector('.topbar'));
+  assert.equal(trigger.parentElement,d.querySelector('.sidebar-top'));
+  trigger.click(); assert.equal(d.body.dataset.uiSidebar,'collapsed');
+  trigger.click(); assert.equal(d.body.dataset.uiSidebar,'expanded');
+  mobile=true; change();
+  assert.equal(trigger.parentElement,d.querySelector('.topbar'));
+  assert.equal(d.getElementById('sidebar').inert,true);
+  trigger.click();
+  assert.equal(trigger.parentElement,d.querySelector('.sidebar-top'));
+  assert.equal(trigger.getAttribute('aria-expanded'),'true');
+  assert.equal(d.getElementById('sidebar').inert,false);
+  d.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));
+  assert.equal(trigger.parentElement,d.querySelector('.topbar'));
+  assert.equal(trigger.getAttribute('aria-label'),'Abrir navegação');
+  assert.equal(d.querySelectorAll('#menu-open').length,1);
+  assert.equal(d.querySelectorAll('#luria-brand-logo').length,1);
+  assert.equal(d.querySelector('.ui-topbar-brand'),brand);
+});
+
+test('deck carousel preserves nodes and actions, pages all decks and adapts to container width', async t => {
+  const dom=new JSDOM('<body data-ui="v2" data-ui-context="study" data-page="flashcards"><div class="flash-home-decks-head"></div><div id="flash-home-decks-list"><div class="flash-deck-cards">'+Array.from({length:7},(_,i)=>`<article class="flash-ref-deck"><button>Deck ${i}</button></article>`).join('')+'</div></div></body>',{runScripts:'outside-only',url:'http://fixture.invalid/'});
+  const w=dom.window,d=w.document; t.after(()=>w.close());
+  let width=600, resize, selected;
+  w.HTMLElement.prototype.getBoundingClientRect=()=>({width});
+  w.ResizeObserver=class {constructor(fn){resize=fn;}observe(){}disconnect(){}};
+  const cards=[...d.querySelectorAll('.flash-ref-deck')];
+  cards.forEach((card,i)=>card.querySelector('button').addEventListener('click',()=>{selected=i;}));
+  w.eval(fs.readFileSync('assets/js/flashcards-ui-v2.js','utf8'));
+  const [previous,next]=d.querySelectorAll('.ui-deck-navigation button');
+  const visible=()=>cards.filter(card=>!card.hidden);
+  assert.deepEqual(visible(),cards.slice(0,2)); assert.equal(previous.disabled,true);
+  next.click(); assert.deepEqual(visible(),cards.slice(2,4));
+  cards[2].querySelector('button').click(); assert.equal(selected,2);
+  next.click(); next.click(); assert.deepEqual(visible(),cards.slice(5)); assert.equal(next.disabled,true);
+  width=320; resize(); assert.equal(visible().length,1);
+  next.click(); assert.equal(visible()[0],cards[6]);
+  previous.click(); assert.equal(visible()[0],cards[5]);
+  d.getElementById('flash-home-decks-list').innerHTML='<div class="flash-deck-cards"><article class="flash-ref-deck"><button>New deck</button></article></div>';
+  await settle(w);
+  assert.equal(d.querySelector('.ui-deck-navigation').hidden,true);
+  assert.equal(d.querySelector('.flash-ref-deck').hidden,false);
+});
