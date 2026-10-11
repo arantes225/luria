@@ -84,7 +84,7 @@
     window.LuriaUITheme?.refresh();
   }
   function enhanceStreak(sidebar, center) {
-    if (work || !center) return;
+    if (work || body.dataset.uiAdmin === "v2" || !center) return;
     let indicator = document.getElementById("ui-topbar-streak");
     if (!indicator) {
       indicator = document.createElement("span"); indicator.id = "ui-topbar-streak";
@@ -116,7 +116,7 @@
   }
   // Move the existing nodes; IDs, links and their event handlers remain intact.
   function placeStudyNavigation(sidebar, bar) {
-    if (body.dataset.uiContext !== 'study' || !sidebar || !bar) return;
+    if ((body.dataset.uiContext !== 'study' && body.dataset.uiWork !== 'v2' && body.dataset.uiAdmin !== 'v2') || !sidebar || !bar) return;
     const top = sidebar.querySelector('.sidebar-top');
     const brand = sidebar.querySelector('.brand');
     const previousBrand = bar.querySelector('.ui-topbar-brand');
@@ -157,8 +157,13 @@
     if (bar) {
       const shell = document.querySelector(".app-shell");
       const heading = bar.querySelector(".page-heading");
-      if (!work && body.dataset.page !== "dashboard" && body.dataset.uiHeading !== "provided" && heading && heading.textContent.trim() && !document.querySelector("main .luria-page-spotlight, main .book-hero, main .settings-page-head")) {
+      if ((!work || body.dataset.uiWork === "v2") && !["dashboard", "trabalho_dashboard"].includes(body.dataset.page) && body.dataset.uiHeading !== "provided" && heading && heading.textContent.trim() && !document.querySelector("main .luria-page-spotlight, main .book-hero, main .settings-page-head")) {
         heading.classList.add("ui-page-heading"); document.querySelector("main.main > .page")?.prepend(heading);
+      }
+      if (body.dataset.uiAdmin === "v2") {
+        const range = bar.querySelector(".admin-range");
+        const title = document.querySelector(".ui-page-heading");
+        if (range && title) title.append(range);
       }
       if (shell && bar.parentElement !== shell) shell.prepend(bar);
       let trigger = document.getElementById("menu-open");
@@ -166,7 +171,7 @@
       if (!trigger.dataset.uiControl) { trigger.innerHTML = menuIcon; trigger.dataset.uiControl = "true"; }
       if (!bar.querySelector(".ui-context-label")) {
         const context = document.createElement("span"); context.className = "ui-context-label";
-        context.textContent = work ? "Trabalho" : "Estudos";
+        context.textContent = body.dataset.uiAdmin === "v2" ? "Admin" : work ? "Trabalho" : "Estudos";
         if (work) trigger.after(context);
         else bar.insertBefore(context, bar.querySelector('.luria-notifications'));
       }
@@ -182,6 +187,10 @@
     if (alex && !alex.dataset.uiIcon) {
       const visual = document.createElement("span"); visual.className = "ui-alex-icon"; visual.innerHTML = sparkles;
       alex.prepend(visual); alex.dataset.uiIcon = "true";
+    }
+    if (body.dataset.uiWork === "v2") {
+      const title = document.querySelector("main .luria-page-spotlight-copy strong[data-page-title]");
+      set(title, "role", "heading"); set(title, "aria-level", "1");
     }
     enhanceProfile(sidebar);
     enhanceStreak(sidebar, document.getElementById("luria-notifications"));
