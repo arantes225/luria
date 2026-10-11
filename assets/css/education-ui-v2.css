@@ -99,6 +99,11 @@
   body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main #qs-daily-card .qs-home-eyebrow {color:var(--color-primary-text)!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="questoes"] .main .qs-home-my-lists-content {display:grid!important;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr))!important;height:auto!important;max-height:none!important;gap:1rem!important;overflow:visible!important;}
   body[data-ui="v2"][data-ui-context="study"]:is([data-page="erros"],[data-page="questoes"]) .main .error-review-home-aside {max-height:none!important;overflow:visible!important;}
+  /* Caderno controls wrap instead of inheriting fixed, scrollable legacy bars. */
+  @media(max-width:767px) {
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main :is(.error-state-switch,.error-review-action-switch) {box-sizing:border-box!important;flex-wrap:wrap!important;height:auto!important;min-height:var(--ui-control)!important;max-height:none!important;overflow:visible!important;}
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main :is(.error-state-switch,.error-review-action-switch) > button {flex:1 1 auto!important;min-width:0!important;white-space:normal!important;}
+  }
   /* Shared quick metrics: content defines height; columns follow the card width. */
   body[data-ui="v2"][data-ui-context="study"]:is([data-page="erros"],[data-page="questoes"]) .main .error-quick-metrics {height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;padding:1rem!important;align-self:start!important;}
   body[data-ui="v2"][data-ui-context="study"]:is([data-page="erros"],[data-page="questoes"]) .main .error-quick-metrics-body {display:grid!important;grid-template-rows:none!important;gap:1rem!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;}

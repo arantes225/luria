@@ -3,7 +3,7 @@
 @layer luria-ui-navigation {
   html:has(body[data-ui-nav="v2"]) {background:#fff!important;height:auto!important;min-height:100%!important;overflow-x:clip!important;overflow-y:auto!important;}
   html:has(body[data-ui-nav="v2"][data-ui-appearance="dark"]) {background:#17191e!important;}
-  body[data-ui-nav="v2"] {--ui-nav-width:264px;--ui-sidebar:var(--ui-nav-width);--ui-nav-height:64px;background:var(--color-shell-surface,var(--color-surface))!important;height:auto!important;min-height:100dvh!important;max-height:none!important;}
+  body[data-ui-nav="v2"] {--ui-nav-width:264px;--ui-sidebar:var(--ui-nav-width);--ui-nav-height:64px;background:var(--color-background)!important;height:auto!important;min-height:100dvh!important;max-height:none!important;}
   /* The document owns scrolling; explicit dialog/drawer body locks still apply. */
   body[data-ui-nav="v2"]:not([style*="overflow: hidden"]):not(.sidebar-open):not(.luria-beta-feedback-locked):not(.admin-pin-locked) {overflow:visible!important;}
   body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] {--ui-nav-width:76px;}
@@ -12,18 +12,9 @@
   body[data-ui-admin="v2"] #admin-app[hidden], body[data-ui-admin="v2"].admin-pin-locked #admin-app {display:none!important;}
   /* Retire the legacy brand strip beneath the rounded main (brand-v5 shell). */
   body[data-ui-nav="v2"] .app-shell::before {content:none!important;display:none!important;}
-  body[data-ui-nav="v2"] .main {width:auto!important;max-width:none!important;min-width:0!important;margin:var(--ui-nav-height) 0 0 var(--ui-nav-width)!important;padding:0!important;border-radius:18px 18px 0 0!important;overflow:visible!important;transition:margin-left 240ms ease;}
-  body[data-ui-nav="v2"] .main {background:var(--color-background)!important;min-height:calc(100dvh - var(--ui-nav-height))!important;height:auto!important;max-height:none!important;}
+  body[data-ui-nav="v2"] .main {width:auto!important;max-width:none!important;min-width:0!important;margin:var(--ui-nav-height) 0 0 var(--ui-nav-width)!important;padding:0!important;border-radius:18px 18px 0 0!important;overflow:visible!important;transition:margin-left 240ms ease;background:var(--color-background)!important;min-height:calc(100dvh - var(--ui-nav-height))!important;height:auto!important;max-height:none!important;}
   body[data-ui-nav="v2"] .main > .page {width:100%!important;max-width:var(--ui-content)!important;box-sizing:border-box!important;margin:0 auto!important;padding:2rem!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;}
   body[data-ui-nav="v2"] .topbar {position:fixed!important;inset:0 0 auto var(--ui-nav-width)!important;display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:.75rem!important;width:auto!important;min-width:0!important;height:var(--ui-nav-height)!important;min-height:var(--ui-nav-height)!important;max-height:none!important;margin:0!important;padding:.5rem 1.5rem!important;box-sizing:border-box!important;background:var(--color-shell-surface,var(--color-surface))!important;color:var(--color-text-primary)!important;border:0!important;border-radius:0!important;box-shadow:none!important;transform:none!important;z-index:70!important;flex-wrap:nowrap!important;transition:left 240ms ease;}
-  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) {--color-shell-surface:#DEE6F1;--color-shell-highlight:var(--color-primary-subtle);--color-shell-control:var(--color-surface-elevated);--color-shell-control-border:var(--color-border);}
-  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]):where([data-ui-identity="pink"]) {--color-shell-surface:#EADDE4;}
-  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"] {--color-shell-surface:#131720;}
-  body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"]:where([data-ui-identity="pink"]) {--color-shell-surface:#19151B;}
-  @supports (color:color-mix(in srgb,black,white)) {
-    body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) {--color-shell-surface:color-mix(in srgb,var(--color-surface) 84%,var(--color-primary-text));--color-shell-control:color-mix(in srgb,var(--color-surface) 75%,var(--color-shell-surface));--color-shell-control-border:color-mix(in srgb,var(--color-shell-surface) 55%,var(--color-border-interactive));}
-    body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"])[data-ui-appearance="dark"] {--color-shell-surface:color-mix(in srgb,var(--color-background) 94%,var(--color-primary-text));--color-shell-control-border:var(--color-border);}
-  }
   /* Same frame for each right-hand item; retain the existing controls and popups. */
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .topbar :is(#luria-alex-topbar,#luria-pomodoro-toggle,#luria-notification-toggle,#luria-profile-toggle), body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-streak {box-sizing:border-box!important;border:1px solid var(--color-shell-control-border)!important;background:var(--color-shell-control)!important;border-radius:10px!important;}
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .topbar :is(#luria-alex-topbar,#luria-pomodoro-toggle,#luria-notification-toggle,#luria-profile-toggle):hover {background:var(--color-primary-subtle)!important;border-color:var(--color-primary-text)!important;color:var(--color-primary-text)!important;}
@@ -86,10 +77,10 @@
   body[data-ui-nav="v2"] .topbar svg, body[data-ui-nav="v2"] .topbar svg * {color:inherit!important;stroke:currentColor!important;fill:none!important;}
   body[data-ui-nav="v2"] .topbar button span, body[data-ui-nav="v2"] .ui-topbar-streak > span {color:inherit!important;}
   body[data-ui-nav="v2"] .ui-alex-icon svg, body[data-ui-nav="v2"] .topbar > button svg, body[data-ui-nav="v2"] .ui-topbar-streak svg {width:20px!important;height:20px!important;flex:none!important;}
-  body[data-ui-nav="v2"] #luria-pomodoro-toggle {font-variant-numeric:tabular-nums!important;letter-spacing:.025em!important;}
+  body[data-ui-nav="v2"] #luria-pomodoro-toggle {flex:0 0 auto!important;overflow:visible!important;font-variant-numeric:tabular-nums!important;letter-spacing:.025em!important;}
   body[data-ui-nav="v2"] .luria-pomodoro-icon {display:flex!important;width:20px!important;height:20px!important;flex:0 0 20px!important;}
   body[data-ui-nav="v2"] .luria-pomodoro-icon svg {width:20px!important;height:20px!important;}
-  body[data-ui-nav="v2"] .luria-pomodoro-copy {display:inline-flex!important;width:auto!important;height:auto!important;}
+  body[data-ui-nav="v2"] .luria-pomodoro-copy {display:inline-flex!important;flex:none!important;width:auto!important;height:auto!important;}
   body[data-ui-nav="v2"] .luria-timer-ms {display:inline-flex!important;flex-direction:row!important;flex-wrap:nowrap!important;align-items:center!important;gap:.125rem!important;width:auto!important;height:auto!important;}
   body[data-ui-nav="v2"] .luria-timer-ms strong {display:inline!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;font-size:.875rem!important;font-weight:600!important;line-height:1!important;color:inherit!important;}
   body[data-ui-nav="v2"] .luria-timer-ms strong:first-child::after {content:":"!important;position:static!important;margin-left:.125rem!important;color:inherit!important;}
