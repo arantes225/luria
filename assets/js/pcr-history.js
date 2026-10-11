@@ -5,6 +5,14 @@
   const esc = value => String(value ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
   const fmt = value => value ? new Date(value).toLocaleString("pt-BR") : "Não informado";
   let owner, patients = [], records = [], editing = null, busy = false;
+  let generation = 0;
+  const current = (version, id) => version === generation && owner?.id === id
+    && (!window.LuriaLocalOwnerStore || window.LuriaLocalOwnerStore.ownerId === id);
+  async function sessionCurrent(version, id) {
+    if (!current(version, id)) return false;
+    const user = await store.user();
+    return current(version, id) && user.id === id;
+  }
   function status(message) { $("pcr-history-status").textContent = message; }
   const menu = (type,id) => '<details class="pcr-record-menu"><summary aria-label="Opções do '+(type==="patient"?"paciente":"registro de PCR")+'">⋯</summary><div><button type="button" data-edit-'+type+'="'+id+'">Editar '+(type==="patient"?"paciente":"PCR")+'</button><button type="button" class="danger" data-delete-'+type+'="'+id+'">Apagar '+(type==="patient"?"paciente e PCRs":"PCR")+'</button></div></details>';
   function render() {
@@ -18,6 +26,7 @@
     renderDraft();
   }
   function renderDraft() {
+    if (!owner) return;
     const draft = store.readDraft(owner.id);
     $("pcr-pending").hidden = !draft;
     if (!draft) return;
@@ -25,15 +34,19 @@
     $("pcr-pending-retry").hidden = !draft.ended_at;
   }
   async function load() {
+    if (!owner) return;
+    const version = generation, id = owner.id;
     const [p,r] = await Promise.all([
-      sb.from("pcr_patients").select("*").eq("user_id",owner.id).order("created_at",{ascending:false}),
-      sb.from("pcr_records").select("*").eq("user_id",owner.id).order("started_at",{ascending:false})
+      sb.from("pcr_patients").select("*").eq("user_id",id).order("created_at",{ascending:false}),
+      sb.from("pcr_records").select("*").eq("user_id",id).order("started_at",{ascending:false})
     ]);
+    if (!current(version, id)) return;
     if (p.error) throw p.error; if (r.error) throw r.error;
     patients = p.data || []; records = r.data || [];
     render(); status(records.length + " atendimento(s) salvo(s).");
   }
   function edit(type,id) {
+    if (!owner) return;
     const item = (type==="patient"?patients:records).find(row=>row.id===id);
     if (!item) return;
     editing = {type,item};
@@ -45,13 +58,18 @@
     $("pcr-edit-error").textContent = ""; $("pcr-edit-dialog").showModal();
   }
   async function remove(type,id) {
+    const version = generation, ownerId = owner?.id;
     const description = type==="patient"?"Apagar este paciente e todos os seus registros de PCR?":"Apagar este registro de PCR?";
     if (!confirm(description)) return;
-    const {error} = await sb.from(type==="patient"?"pcr_patients":"pcr_records").delete().eq("id",id).eq("user_id",owner.id);
+    if (!await sessionCurrent(version, ownerId)) return;
+    const {error} = await sb.from(type==="patient"?"pcr_patients":"pcr_records").delete().eq("id",id).eq("user_id",ownerId);
+    if (!current(version, ownerId)) return;
     if (error) throw error;
     await load();
   }
   async function newPCR(patient) {
+    const version = generation, id = owner?.id;
+    if (!patient || !await sessionCurrent(version, id)) return;
     if (store.readDraft(owner.id)) {
       status("Há uma PCR aguardando conclusão. Retome o atendimento no bloco acima antes de iniciar outro.");
       $("pcr-pending").scrollIntoView({block:"center"});
@@ -68,23 +86,30 @@
   $("pcr-edit-form").addEventListener("submit",async event=>{
     event.preventDefault();
     if (busy || !editing) return;
+    const version = generation, id = owner?.id;
     busy = true; $("pcr-edit-save").disabled = true;
     try {
       const form = new FormData(event.currentTarget), {type,item} = editing;
       const values = type==="patient"
         ? {initials:String(form.get("initials")||"").trim().toUpperCase(),birth_date:form.get("birth_date")||null}
         : {mode:form.get("mode"),weight:form.get("weight")?Number(form.get("weight")):null,shock_count:Number(form.get("shock_count")),rhythm:form.get("rhythm")||null,care_info:form.get("care_info")||"",events:[...(item.events||[])].reverse().map((entry,i)=>({...entry,action:$("pcr-edit-fields").querySelector('[data-event-action="'+i+'"]').value.trim(),detail:$("pcr-edit-fields").querySelector('[data-event-detail="'+i+'"]').value.trim()})).reverse()};
-      const {error} = await sb.from(type==="patient"?"pcr_patients":"pcr_records").update(values).eq("id",item.id).eq("user_id",owner.id);
+      if (!await sessionCurrent(version, id)) return;
+      const {error} = await sb.from(type==="patient"?"pcr_patients":"pcr_records").update(values).eq("id",item.id).eq("user_id",id);
+      if (!current(version, id)) return;
       if (error) throw error;
       $("pcr-edit-dialog").close(); await load();
-    } catch(error) { $("pcr-edit-error").textContent = "Não foi possível salvar: "+error.message; }
-    finally { busy = false; $("pcr-edit-save").disabled = false; }
+    } catch(error) { if (current(version, id)) $("pcr-edit-error").textContent = "Não foi possível salvar: "+error.message; }
+    finally { if (current(version, id)) { busy = false; $("pcr-edit-save").disabled = false; } }
   });
   $("pcr-edit-cancel").addEventListener("click",()=>$("pcr-edit-dialog").close());
-  $("pcr-history-search").addEventListener("input",render);
-  $("pcr-history-refresh").addEventListener("click",()=>load().catch(error=>status(error.message)));
+  $("pcr-history-search").addEventListener("input",()=>{if(owner)render();});
+  $("pcr-history-refresh").addEventListener("click",()=>{
+    const version=generation,id=owner?.id;
+    load().catch(error=>{if(current(version,id))status(error.message);});
+  });
   $("pcr-history-list").addEventListener("click",async event=>{
-    const button = event.target.closest("button"); if (!button || busy) return;
+    const button = event.target.closest("button"); if (!button || busy || !owner) return;
+    const version=generation,id=owner.id;
     try {
       if (button.dataset.editPatient) edit("patient",button.dataset.editPatient);
       else if (button.dataset.editRecord) edit("record",button.dataset.editRecord);
@@ -94,15 +119,44 @@
         const record = records.find(r=>r.id===button.dataset.pdf);
         store.pdf(record,patients.find(p=>p.id===record.patient_id));
       } else if (button.dataset.newPcr) await newPCR(patients.find(p=>p.id===button.dataset.newPcr));
-    } catch(error) { status("Não foi possível concluir: "+error.message); }
+    } catch(error) { if(current(version,id))status("Não foi possível concluir: "+error.message); }
   });
   $("pcr-pending-retry").addEventListener("click",async()=>{
-    const draft = store.readDraft(owner.id); if (!draft || busy) return;
+    if (!owner) return;
+    const version=generation,id=owner.id;
+    const draft = store.readDraft(id); if (!draft || busy) return;
     busy = true; $("pcr-pending-retry").disabled = true;
-    try { await store.save(draft); await load(); }
-    catch(error) { status("Não foi possível salvar: "+error.message+". Seu atendimento continua guardado para tentar novamente."); }
-    finally { busy=false; $("pcr-pending-retry").disabled=false; }
+    try { await store.save(draft); if(current(version,id))await load(); }
+    catch(error) { if(current(version,id))status("Não foi possível salvar: "+error.message+". Seu atendimento continua guardado para tentar novamente."); }
+    finally { if(current(version,id)){busy=false; $("pcr-pending-retry").disabled=false;} }
   });
-  store.user().then(async user => {owner=user;renderDraft();await load();})
-    .catch(error=>{status(error.message);if(!owner)location.replace("/login/?next="+encodeURIComponent("/trabalho/pcr/historico/"));});
+  async function activate(initial = false) {
+    const version = ++generation;
+    owner = null; patients = []; records = []; editing = null; busy = false;
+    $("pcr-history-list").replaceChildren(); $("pcr-history-search").value = "";
+    $("pcr-pending").hidden = true; $("pcr-pending-copy").textContent = "";
+    $("pcr-edit-fields").replaceChildren(); $("pcr-edit-error").textContent = "";
+    if ($("pcr-edit-dialog").open) $("pcr-edit-dialog").close();
+    $("pcr-edit-save").disabled = false; $("pcr-pending-retry").disabled = false;
+    status("Carregando sua sessão…");
+    try {
+      const user = await store.user();
+      if (version !== generation) return;
+      owner = user; renderDraft(); await load();
+    } catch(error) {
+      if(version !== generation)return;
+      status(error.message);
+      if(initial && !owner)location.replace("/login/?next="+encodeURIComponent("/trabalho/pcr/historico/"));
+    }
+  }
+  window.addEventListener("luria:owner-changed",()=>{activate();});
+  window.addEventListener("pagehide",()=>{
+    generation += 1; owner=null; patients=[]; records=[]; editing=null;
+    $("pcr-history-list").replaceChildren(); $("pcr-edit-fields").replaceChildren();
+    $("pcr-history-search").value=""; status(""); $("pcr-edit-error").textContent="";
+    $("pcr-pending").hidden=true; $("pcr-pending-copy").textContent="";
+    if($("pcr-edit-dialog").open)$("pcr-edit-dialog").close();
+  });
+  window.addEventListener("pageshow",event=>{if(event.persisted)activate();});
+  activate(true);
 })();

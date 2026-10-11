@@ -1,11 +1,22 @@
 (() => {
   "use strict";
   const sb = window.supabaseClient;
+  let ownerGeneration = 0;
+  window.addEventListener("luria:owner-changed", () => { ownerGeneration += 1; });
+  function assertSession(generation, ownerId) {
+    const owned = window.LuriaLocalOwnerStore;
+    if (generation !== ownerGeneration || (owned && ownerId && owned.ownerId !== ownerId)) {
+      throw new Error("A sessão mudou. Retome a PCR na conta correspondente.");
+    }
+  }
   const key = userId => "luria_pcr_draft_v1_" + userId;
   async function user() {
+    const generation = ownerGeneration;
+    await window.LuriaLocalOwnerStore?.ready;
     const { data, error } = await sb.auth.getSession();
     if (error) throw error;
     if (!data?.session?.user?.id) throw new Error("Entre na sua conta para salvar a PCR.");
+    assertSession(generation, data.session.user.id);
     return data.session.user;
   }
   function readDraft(userId) {
@@ -15,6 +26,7 @@
     } catch { return null; }
   }
   function writeDraft(userId, payload) {
+    assertSession(ownerGeneration, userId);
     if (payload.user_id !== userId) throw new Error("A PCR pertence a outra conta.");
     localStorage.setItem(key(userId), JSON.stringify(payload));
   }
@@ -22,9 +34,12 @@
     if (readDraft(userId)?.id === recordId) localStorage.removeItem(key(userId));
   }
   async function save(payload) {
+    const generation = ownerGeneration;
     const owner = await user();
+    assertSession(generation, owner.id);
     if (payload.user_id !== owner.id) throw new Error("A PCR pertence a outra conta.");
     const {data, error} = await sb.rpc("save_pcr_record", {payload});
+    assertSession(generation, owner.id);
     if (error) throw error;
     if (data !== payload.id) throw new Error("O servidor não confirmou o salvamento.");
     removeDraft(owner.id, payload.id);

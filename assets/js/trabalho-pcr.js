@@ -1,10 +1,51 @@
-(async () => {
+(() => {
   const store = window.LuriaPCRStore;
-  let owner;
-  try { owner = await store.user(); } catch {
-    location.replace("/login/?next=" + encodeURIComponent("/trabalho/pcr/executar/"));
-    return;
+  let generation = 0, stopSession = () => {};
+  const $ = id => document.getElementById(id);
+  // Clone the static causes panel once, before owner-scoped listeners are bound.
+  document.querySelector(".pcr-pwa-causes-host").appendChild(
+    $("pcr-causes-dialog").querySelector(".pcr-causes-grid").cloneNode(true)
+  );
+  $("pcr-pwa-peds-cause-note").textContent = $("pcr-peds-cause-note").textContent;
+  const controls = [...document.querySelectorAll(".pcr-page button,.pcr-page input,.pcr-page textarea,#pcr-causes-dialog button,#pcr-note-dialog button,#pcr-note-text")]
+    .filter(node => !node.closest(".topbar"))
+    .map(node => ({node, disabled:node.disabled, className:node.className, value:node.value, pressed:node.getAttribute("aria-pressed"), expanded:node.getAttribute("aria-expanded")}));
+  const texts = ["pcr-log","pcr-drugs","pcr-timer","pcr-cycle","pcr-rhythm-state","pcr-selected-rhythm-label","pcr-energy","pcr-energy-note","pcr-shock-count","pcr-dose-mode","pcr-ventilation-copy","pcr-save-status","pcr-rosc"]
+    .map(id => ({node:$(id), text:$(id).textContent, className:$(id).className}));
+  function resetView(loading) {
+    ["pcr-causes-dialog","pcr-note-dialog"].forEach(id => { if ($(id).open) $(id).close(); });
+    texts.forEach(({node,text,className}) => { node.textContent = text; node.className = className; });
+    controls.forEach(({node,disabled,className,value,pressed,expanded}) => {
+      node.disabled = loading || disabled; node.className = className;
+      if (node.matches("input,textarea")) node.value = value;
+      for (const [name,v] of [["aria-pressed",pressed],["aria-expanded",expanded]]) {
+        if (v === null) node.removeAttribute(name); else node.setAttribute(name,v);
+      }
+    });
+    $("pcr-metronome").querySelector("small").textContent = "110 bpm · toque para ativar som";
+    document.querySelector(".pcr-workspace").dataset.pwaPanel = "closed";
+    $("pcr-peds-cause-note").hidden = true; $("pcr-pwa-peds-cause-note").hidden = true;
   }
+  async function activate(initial = false) {
+    const version = ++generation;
+    stopSession(); stopSession = () => {};
+    resetView(true);
+    $("pcr-save-status").textContent = "Carregando sua sessão…";
+    try {
+      const owner = await store.user();
+      if (version !== generation) return;
+      resetView(false);
+      startSession(owner, version);
+    } catch (error) {
+      if (version !== generation) return;
+      $("pcr-save-status").textContent = error.message;
+      if (initial) location.replace("/login/?next=" + encodeURIComponent("/trabalho/pcr/executar/"));
+    }
+  }
+  window.addEventListener("luria:owner-changed", () => { activate(); });
+  window.addEventListener("pagehide", () => { generation += 1; stopSession(); resetView(true); });
+  window.addEventListener("pageshow", event => { if (event.persisted) activate(); });
+  function startSession(owner, version) {
   const draft = store.readDraft(owner.id);
   const recordId = draft?.id || crypto.randomUUID();
   const patientId = draft?.patient_id || crypto.randomUUID();
@@ -22,10 +63,30 @@
   let audioEl = null;
   let audioUnlocked = false;
   let beatTimer = null;
+  let cycleTimer = null;
   let lastCycle = 1;
   const BPM = 110;
   const timelineEntries = draft?.events ? [...draft.events] : [];
   const beatMs = Math.round(60000 / BPM);
+  const listeners = new AbortController();
+  const pendingTimers = new Set();
+  const current = () => version === generation && (!window.LuriaLocalOwnerStore || window.LuriaLocalOwnerStore.ownerId === owner.id);
+  function listen(target, type, handler) {
+    target.addEventListener(type, (...args) => { if (current()) return handler(...args); }, {signal:listeners.signal});
+  }
+  function later(action, delay) {
+    const id = setTimeout(() => { pendingTimers.delete(id); if (current()) action(); }, delay);
+    pendingTimers.add(id);
+    return id;
+  }
+  stopSession = () => {
+    listeners.abort();
+    clearInterval(beatTimer); clearInterval(cycleTimer);
+    pendingTimers.forEach(clearTimeout); pendingTimers.clear();
+    metronomeOn = false; audioReady = false;
+    audioEl?.pause();
+    if (audioCtx && audioCtx.state !== "closed") audioCtx.close().catch(() => {});
+  };
 
   const $ = (id) => document.getElementById(id);
   const timerEl = $("pcr-timer");
@@ -47,10 +108,6 @@
   const noteDialog = $("pcr-note-dialog");
   const pedsCauseNote = $("pcr-peds-cause-note");
   const pwaCauseNote = $("pcr-pwa-peds-cause-note");
-  document.querySelector(".pcr-pwa-causes-host").appendChild(
-    causesDialog.querySelector(".pcr-causes-grid").cloneNode(true)
-  );
-  pwaCauseNote.textContent = pedsCauseNote.textContent;
 
   function elapsedSeconds() {
     const end = stoppedAt || Date.now();
@@ -101,6 +158,7 @@
   }
 
   function persistDraft() {
+    if (!current()) return false;
     try { store.writeDraft(owner.id, payload()); return true; }
     catch (error) {
       $("pcr-save-status").textContent = "Não foi possível guardar uma cópia no aparelho. Mantenha esta página aberta e tente salvar novamente.";
@@ -110,6 +168,7 @@
   }
 
   function addLog(action, detail = "") {
+    if (!current()) return;
     if (stoppedAt && action !== "RCE / ROSC" && action !== "Linha do tempo exportada") return;
     const entry = {clock:clockNow(),elapsed:"+"+mmss(elapsedSeconds()),action,detail};
     timelineEntries.unshift(entry); renderEntry(entry); persistDraft();
@@ -128,11 +187,13 @@
     persistDraft();
     try {
       await store.save(payload());
+      if (!current()) return;
       location.assign("/trabalho/pcr/historico/?record=" + encodeURIComponent(recordId));
     } catch (error) {
+      if (!current()) return;
       $("pcr-save-status").textContent = "Não foi possível salvar: " + error.message + ". A linha do tempo continua nesta página. Tente novamente.";
       btn.disabled = false; btn.textContent = "Tentar salvar novamente";
-    } finally { saving = false; }
+    } finally { if (current()) saving = false; }
   }
 
   function safeWeight() {
@@ -219,7 +280,7 @@
       const btn = document.createElement("button");
       btn.type = "button";
       btn.textContent = "Administrar / registrar";
-      btn.addEventListener("click", () => {
+      listen(btn, "click", () => {
         addLog(drug.action, drug.dose);
         if (mode === "adult" && drug.action === "Amiodarona") {
           if (adultAmiodaroneDoses === 0) {
@@ -260,6 +321,7 @@
   }
 
   function updateTimer() {
+    if (!current()) return;
     const elapsed = elapsedSeconds();
     timerEl.textContent = mmss(elapsed);
 
@@ -273,8 +335,8 @@
       addLog("Reavaliar ritmo / trocar compressor", "Novo ciclo de 2 minutos");
       if (audioReady && metronomeOn) {
         beep(880, 0.08);
-        setTimeout(() => beep(880, 0.08), 130);
-        setTimeout(() => beep(880, 0.08), 260);
+        later(() => beep(880, 0.08), 130);
+        later(() => beep(880, 0.08), 260);
       }
     }
   }
@@ -331,6 +393,7 @@
     } catch {}
     try {
       await el.play();
+      if (!current()) { el.pause(); return false; }
       audioUnlocked = true;
       return true;
     } catch (error) {
@@ -340,7 +403,7 @@
   }
 
   function beep(freq = 760, duration = 0.05) {
-    if (stoppedAt) return;
+    if (!current() || stoppedAt) return;
     if (audioUnlocked && audioEl) {
       try {
         audioEl.currentTime = 0;
@@ -365,9 +428,9 @@
   }
 
   function tickMetronome() {
-    if (!metronomeOn || stoppedAt) return;
+    if (!current() || !metronomeOn || stoppedAt) return;
     metroBtn.classList.add("tick");
-    setTimeout(() => metroBtn.classList.remove("tick"), 100);
+    later(() => metroBtn.classList.remove("tick"), 100);
     if (audioReady) beep(620, 0.03);
   }
 
@@ -387,6 +450,8 @@
       htmlOk = await playHtmlBeep();
     } catch {}
 
+    if (!current()) return false;
+
     // Keep WebAudio as secondary fallback.
     try {
       const Ctx = window.AudioContext || window.webkitAudioContext;
@@ -399,6 +464,11 @@
       console.warn("WebAudio indisponível:", error);
     }
 
+    if (!current()) {
+      audioEl?.pause();
+      if (audioCtx && audioCtx.state !== "closed") audioCtx.close().catch(() => {});
+      return false;
+    }
     audioReady = htmlOk || ctxOk;
 
     if (stoppedAt) { audioEl?.pause(); return false; }
@@ -406,7 +476,7 @@
       metroBtn.querySelector("small").textContent = "110 bpm · som ativo";
       if (htmlOk) {
         // second immediate audible confirmation
-        setTimeout(() => {
+        later(() => {
           if (stoppedAt) return;
           try {
             audioEl.currentTime = 0;
@@ -415,7 +485,7 @@
         }, 140);
       } else {
         beep(760, 0.06);
-        setTimeout(() => beep(620, 0.05), 140);
+        later(() => beep(620, 0.05), 140);
       }
     }
 
@@ -460,34 +530,34 @@
   }
 
   document.querySelectorAll("[data-pcr-panel]").forEach((button) => {
-    button.addEventListener("click", () => {
+    listen(button, "click", () => {
       setPwaPanel(pwaWorkspace.dataset.pwaPanel === button.dataset.pcrPanel ? "closed" : button.dataset.pcrPanel);
     });
   });
 
   document.querySelectorAll("[data-pcr-mode]").forEach((button) => {
-    button.addEventListener("click", () => setMode(button.dataset.pcrMode));
+    listen(button, "click", () => setMode(button.dataset.pcrMode));
   });
 
   document.querySelectorAll(".pcr-rhythm").forEach((button) => {
-    button.addEventListener("click", () => selectRhythm(button));
+    listen(button, "click", () => selectRhythm(button));
   });
 
   document.querySelectorAll(".team-position").forEach((button) => {
-    button.addEventListener("click", () => addLog("Posição / tarefa", button.dataset.action));
+    listen(button, "click", () => addLog("Posição / tarefa", button.dataset.action));
   });
 
   document.querySelectorAll("[data-log-action]").forEach((button) => {
-    button.addEventListener("click", () => addLog(button.dataset.logAction));
+    listen(button, "click", () => addLog(button.dataset.logAction));
   });
 
-  weightEl.addEventListener("input", () => {
+  listen(weightEl, "input", () => {
     renderDrugs();
     updateEnergy();
   });
 
   shockBtn.disabled = true;
-  shockBtn.addEventListener("click", () => {
+  listen(shockBtn, "click", () => {
     if (!shockable) return;
     const energy = energyEl.textContent;
     shockCount += 1;
@@ -497,7 +567,7 @@
     renderDrugs();
   });
 
-  metroBtn.addEventListener("click", async () => {
+  listen(metroBtn, "click", async () => {
     if (stoppedAt) return;
     if (!audioReady) {
       metronomeOn = true;
@@ -506,6 +576,7 @@
       metroBtn.querySelector("small").textContent = "Ativando áudio do iPhone…";
 
       const ok = await unlockAudio();
+      if (!current()) return;
 
       if (ok) {
         tickMetronome();
@@ -527,6 +598,7 @@
     if (metronomeOn) {
       if (audioCtx?.state === "suspended") {
         try { await audioCtx.resume(); } catch {}
+        if (!current()) return;
       }
       tickMetronome();
     }
@@ -534,8 +606,8 @@
     addLog("Metrônomo", metronomeOn ? "110 bpm ativado" : "Pausado");
   });
 
-  $("pcr-log-cpr").addEventListener("click", () => addLog("Troca de compressor", "Novo compressor assumiu RCP"));
-  $("pcr-rosc").addEventListener("click", async () => {
+  listen($("pcr-log-cpr"), "click", () => addLog("Troca de compressor", "Novo compressor assumiu RCP"));
+  listen($("pcr-rosc"), "click", async () => {
     if (!stoppedAt) {
       stoppedAt = Date.now();
       freezeControls();
@@ -552,9 +624,9 @@
     await saveAndOpenHistory();
   });
 
-  $("pcr-causes").addEventListener("click", () => causesDialog.showModal());
+  listen($("pcr-causes"), "click", () => causesDialog.showModal());
   document.querySelectorAll("[data-cause]").forEach((button) => {
-    button.addEventListener("click", () => {
+    listen(button, "click", () => {
       const checked = !button.classList.contains("checked");
       document.querySelectorAll("[data-cause]").forEach((causeButton) => {
         if (causeButton.dataset.cause === button.dataset.cause) {
@@ -566,8 +638,8 @@
     });
   });
 
-  $("pcr-add-note").addEventListener("click", () => noteDialog.showModal());
-  $("pcr-note-save").addEventListener("click", (event) => {
+  listen($("pcr-add-note"), "click", () => noteDialog.showModal());
+  listen($("pcr-note-save"), "click", (event) => {
     const text = $("pcr-note-text").value.trim();
     if (!text) {
       event.preventDefault();
@@ -577,14 +649,14 @@
     $("pcr-note-text").value = "";
   });
 
-  $("pcr-clear-log").addEventListener("click", () => {
+  listen($("pcr-clear-log"), "click", () => {
     if (stoppedAt || !confirm("Limpar os eventos da linha do tempo?")) return;
     timelineEntries.length = 0;
     persistDraft();
     logEl.innerHTML = '<div class="pcr-log-empty">Nenhum evento registrado após a limpeza.</div>';
   });
 
-  $("pcr-export-log").addEventListener("click", () => {
+  listen($("pcr-export-log"), "click", () => {
     try {
       const record = payload();
       store.pdf(record, record);
@@ -595,7 +667,7 @@
   $("pcr-patient-birth").value = draft?.birth_date || "";
   $("pcr-care-info").value = draft?.care_info || "";
   weightEl.value = draft?.weight || "";
-  ["pcr-patient-initials","pcr-patient-birth","pcr-care-info","pcr-weight"].forEach(id => $(id).addEventListener("input", persistDraft));
+  ["pcr-patient-initials","pcr-patient-birth","pcr-care-info","pcr-weight"].forEach(id => listen($(id), "input", persistDraft));
   if (draft) [...timelineEntries].reverse().forEach(renderEntry);
   document.querySelectorAll("[data-pcr-mode]").forEach(btn => btn.classList.toggle("active", btn.dataset.pcrMode === mode));
   pedsCauseNote.hidden = mode !== "pediatric"; pwaCauseNote.hidden = mode !== "pediatric";
@@ -622,8 +694,10 @@
   updateEnergy();
   if (!draft || !timelineEntries.length) addLog("Início da PCR", "Cronômetro iniciado automaticamente");
   updateTimer();
-  setInterval(updateTimer, 1000);
+  cycleTimer = setInterval(updateTimer, 1000);
   metroBtn.querySelector("small").textContent = stoppedAt ? "Pausado após RCE / ROSC" : "110 bpm · toque para ativar som";
   if (!stoppedAt) startMetronomeLoop();
   persistDraft();
+  }
+  activate(true);
 })();
