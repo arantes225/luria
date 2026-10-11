@@ -243,7 +243,7 @@
       <section class="recipe-detail-section">
         <h3>Referências de validação</h3>
         <div class="recipe-refs">
-          ${refs.map((ref) => `<a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.label || "Fonte")}</a>`).join("")}
+          ${refs.map((ref) => `<a href="${esc(luriaSafeContentUrl(ref.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(ref.label || "Fonte")}</a>`).join("")}
         </div>
       </section>
     `;

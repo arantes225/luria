@@ -40,8 +40,8 @@
       <h3>Imagens-chave</h3>
       <div class="protocol-image-grid">${items.map((img) => `
         <figure class="protocol-image-card">
-          <button type="button" class="protocol-image-open" data-image-src="${esc(img.src)}" aria-label="Ampliar imagem">
-            <img loading="lazy" decoding="async" src="${esc(img.src)}" alt="${esc(img.alt || img.caption || "Imagem didática do protocolo")}">
+          <button type="button" class="protocol-image-open" data-image-src="${esc(luriaSafeContentUrl(img.src, {relative:true}))}" aria-label="Ampliar imagem">
+            <img loading="lazy" decoding="async" src="${esc(luriaSafeContentUrl(img.src, {relative:true}))}" alt="${esc(img.alt || img.caption || "Imagem didática do protocolo")}">
           </button>
           ${img.caption ? `<figcaption><strong>${esc(img.caption)}</strong>${img.credit ? `<small>${esc(img.credit)}</small>` : ""}</figcaption>` : ""}
         </figure>`).join("")}
@@ -51,7 +51,7 @@
 
   const renderRefs = (items) => {
     if (!Array.isArray(items) || !items.length) return "";
-    return `<section class="protocol-section protocol-refs"><h3>Referências oficiais</h3><div>${items.map((r) => `<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
+    return `<section class="protocol-section protocol-refs"><h3>Referências oficiais</h3><div>${items.map((r) => `<a href="${esc(luriaSafeContentUrl(r.url) || '#')}" target="_blank" rel="noopener noreferrer">${esc(r.label || "Fonte oficial")}</a>`).join("")}</div></section>`;
   };
 
   const filtered = () => {

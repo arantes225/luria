@@ -224,7 +224,7 @@
     figure.appendChild(intro);
 
     const img = document.createElement("img");
-    img.src = src;
+    img.src = luriaSafeContentUrl(src, {relative:true}) || "";
     img.alt = String(asset.alt || captionText || "Imagem didática");
     img.loading = "lazy";
     figure.appendChild(img);
@@ -250,7 +250,7 @@
     if (row.source_url) {
       const source = document.createElement("a");
       source.className = "apostila-approved-figure-source";
-      source.href = row.source_url;
+      source.href = luriaSafeContentUrl(row.source_url) || "#";
       source.target = "_blank";
       source.rel = "noopener";
       source.textContent = "Fonte: " + (row.source_name || "abrir fonte original") + " ↗";
@@ -337,7 +337,7 @@
   function expandImage(src, alt) {
     const modal = ensureLightbox();
     const img = modal.querySelector("img");
-    img.src = src;
+    img.src = luriaSafeContentUrl(src, {relative:true}) || "";
     img.alt = alt || "Imagem candidata";
     modal.hidden = false;
   }
@@ -377,7 +377,7 @@
       card.dataset.apostilaImageId = String(row.id);
       card.innerHTML = `
         <div class="apostila-image-candidate-preview">
-          ${asset.src ? '<img loading="lazy" src="' + esc(asset.src) + '" alt="' + esc(asset.alt || asset.caption || "Imagem candidata") + '" onerror="this.style.display=\'none\';this.parentElement.insertAdjacentText(\'beforeend\',\'Imagem indisponível\')">' : "<span>Sem prévia</span>"}
+          ${asset.src ? '<img loading="lazy" src="' + esc(luriaSafeContentUrl(asset.src, {relative:true})) + '" alt="' + esc(asset.alt || asset.caption || "Imagem candidata") + '" onerror="this.style.display=\'none\';this.parentElement.insertAdjacentText(\'beforeend\',\'Imagem indisponível\')">' : "<span>Sem prévia</span>"}
         </div>
         <div class="apostila-image-candidate-body">
           <strong>${esc(asset.title || asset.caption_title || row.source_name || "Imagem candidata")}</strong>
@@ -386,7 +386,7 @@
           <small>${esc(row.source_name || "Fonte não informada")}${row.source_license ? " · " + esc(row.source_license) : ""}</small>
           <div class="apostila-image-candidate-actions">
             ${asset.src ? '<button type="button" data-apostila-image-expand="' + Number(row.id) + '">Expandir</button>' : ""}
-            ${row.source_url ? '<a href="' + esc(row.source_url) + '" target="_blank" rel="noopener">Fonte ↗</a>' : ""}
+            ${row.source_url ? '<a href="' + esc(luriaSafeContentUrl(row.source_url) || '#') + '" target="_blank" rel="noopener">Fonte ↗</a>' : ""}
             <button type="button" data-apostila-image-action="reject" data-apostila-image-id="${Number(row.id)}">Rejeitar</button>
             <button type="button" data-apostila-image-action="approve" data-apostila-image-id="${Number(row.id)}">Aprovar</button>
           </div>
