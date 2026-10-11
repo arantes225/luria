@@ -5498,14 +5498,15 @@
     }
     list.innerHTML = rows.map(row => {
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
-      const src = String(asset.src || "");
+      const src = luriaSafeContentUrl(asset.src, {relative:true});
       const safePreview = src && (/^\/assets\//.test(src) || /^https:\/\/sxdsfklllilhdyuamvvg\.supabase\.co\//.test(src) || /^https:\/\/upload\.wikimedia\.org\//.test(src) || /^https:\/\/commons\.wikimedia\.org\//.test(src) || /^https:\/\/wwwn\.cdc\.gov\//.test(src) || /^https:\/\/media\.springernature\.com\//.test(src));
       const preview = safePreview
         ? '<img src="' + esc(src) + '" alt="' + esc(asset.alt || row.modality || "Imagem clínica") + '">'
         : '<span>Prévia indisponível no Admin. Abra a fonte original para revisar.</span>';
       const protocol = row.clinical_protocols;
-      const source = row.source_url
-        ? '<a href="' + esc(row.source_url) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
+      const sourceUrl = luriaSafeContentUrl(row.source_url);
+      const source = sourceUrl
+        ? '<a href="' + esc(sourceUrl) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
         : '<span>Fonte sem URL registrada</span>';
       return `
         <article class="admin-image-review-card" data-image-review-id="${Number(row.id)}">
@@ -5672,12 +5673,13 @@
     }
     list.innerHTML = rows.map(row => {
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
-      const src = String(asset.src || "");
+      const src = luriaSafeContentUrl(asset.src, {relative:true});
       const preview = src
         ? '<img src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '">'
         : '<span>Prévia indisponível.</span>';
-      const source = row.source_url
-        ? '<a href="' + esc(row.source_url) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
+      const sourceUrl = luriaSafeContentUrl(row.source_url);
+      const source = sourceUrl
+        ? '<a href="' + esc(sourceUrl) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
         : '<span>Fonte sem URL registrada</span>';
       return `
         <article class="admin-image-review-card" data-apostila-image-review-id="${Number(row.id)}">
@@ -5774,7 +5776,7 @@
       const expand = event.target.closest("[data-apostila-image-expand]");
       if (expand) {
         const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(expand.dataset.apostilaImageExpand));
-        const src = row?.proposed_asset?.src;
+        const src = luriaSafeContentUrl(row?.proposed_asset?.src, {relative:true});
         if (src) {
           const modal = ensureAdminImageLightbox();
           const img = modal.querySelector("img");

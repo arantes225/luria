@@ -44,7 +44,7 @@
   function calculator(formulation,index){
     const c=formulation.calculator;
     if(!c)return '';
-    const renalControls=c.renal_gate?'<label>Função renal<select class="rx-renal"><option value="">Selecione</option><option value="normal">&gt;30 mL/min conforme bula</option><option value="reduced">≤30 mL/min ou desconhecida</option></select></label><label>Escolha mg/kg/dia<input class="rx-rate" type="number" min="'+c.min_mg_kg_day+'" max="'+c.max_mg_kg_day+'" step="1" value="'+(c.default_mg_kg_day||c.min_mg_kg_day)+'"></label>':'';
+    const renalControls=c.renal_gate?'<label>Função renal<select class="rx-renal"><option value="">Selecione</option><option value="normal">&gt;30 mL/min conforme bula</option><option value="reduced">≤30 mL/min ou desconhecida</option></select></label><label>Escolha mg/kg/dia<input class="rx-rate" type="number" min="'+esc(c.min_mg_kg_day)+'" max="'+esc(c.max_mg_kg_day)+'" step="1" value="'+esc(c.default_mg_kg_day||c.min_mg_kg_day)+'"></label>':'';
     return `<section class="rx-card rx-calculator" data-calculator="${esc(c.type)}" data-formulation-index="${index}"><h3>Cálculo por peso</h3><div class="rx-controls"><label>Peso (kg)<input class="rx-weight" type="number" min="0.1" max="300" step="0.1" inputmode="decimal" placeholder="Ex.: 18"></label><label>Idade (anos)<input class="rx-age" type="number" min="0" max="120" step="0.1" inputmode="decimal" placeholder="Ex.: 5"></label>${renalControls}}</div><div class="rx-result" aria-live="polite">Informe os dados para calcular.</div><p class="rx-note">Cálculo restrito à apresentação acima. Confirme idade, alergias, função renal, outros medicamentos e indicação clínica.</p></section>`;
   }
   function presentationPicker(formulations){
@@ -70,7 +70,7 @@
       </section>
       <p class="rx-alert"><strong>Conferir antes de prescrever:</strong> ${esc(f.cautions)}</p>
       ${calculator(f,i)}
-      <a href="${esc(f.source_url)}" target="_blank" rel="noopener noreferrer">Bula desta apresentação ↗</a>
+      <a href="${esc(luriaSafeContentUrl(f.source_url) || "#")}" target="_blank" rel="noopener noreferrer">Bula desta apresentação ↗</a>
     </section>`;
   }
   function bindPresentationCalculator(container,formulations){
@@ -128,7 +128,7 @@
       <section class="rx-section"><div class="rx-section-head"><h3>Reações adversas</h3></div>${clinicalList(d.adverse_reactions||d.adverse_effects,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Interações medicamentosas</h3></div>${clinicalList(d.drug_interactions||d.interactions||d.medication_interactions,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>
-      <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(d.leaflet_url||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
+      <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(luriaSafeContentUrl(d.leaflet_url)||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
     detail.querySelector('[data-bulario-mobile-close="1"]')?.addEventListener('click',()=>closeMobileDetail(false));
     const activePresentation=detail.querySelector('#rx-active-presentation');
     detail.querySelectorAll('.rx-presentation-tab').forEach(tab=>tab.addEventListener('click',()=>{

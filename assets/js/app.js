@@ -1246,6 +1246,22 @@ function writeCachedTheme(userId, theme) {
   } catch {}
 }
 
+// Validate navigation/resource URLs before escaping them in HTML templates.
+// Shared through the existing shell dependency; no dynamic loader is needed.
+function luriaSafeContentUrl(value, {relative = false, mailto = false} = {}) {
+  const raw = String(value ?? "").trim();
+  if (!raw || /[\u0000-\u001f\u007f\\]/.test(raw)) return "";
+  const local = relative && (/^\/(?!\/)/.test(raw) || /^[#?]/.test(raw));
+  if (!local && !/^https?:\/\//i.test(raw) && !(mailto && /^mailto:/i.test(raw))) return "";
+  try {
+    const url = new URL(raw, window.location.href);
+    if (url.username || url.password) return "";
+    if (!["http:", "https:", ...(mailto ? ["mailto:"] : [])].includes(url.protocol)) return "";
+    if (local && url.origin !== window.location.origin) return "";
+    return raw;
+  } catch { return ""; }
+}
+
 function escapeHtml(text) {
   return String(text ?? "")
     .replaceAll("&", "&amp;")
@@ -4312,7 +4328,7 @@ async function loadNotifications() {
         item => `
           <a
             class="luria-notification-item ${item.read_at ? "" : "unread"}"
-            href="${escapeHtml(item.href || "/amigos/")}"
+            href="${escapeHtml(luriaSafeContentUrl(item.href, {relative:true}) || "/amigos/")}"
             data-notification-id="${escapeHtml(item.id)}"
           >
             <span class="luria-notification-icon">

@@ -63,14 +63,14 @@
     notionEditorState.page = page;
     note.notion_url = page.url || note.notion_url;
     note.notion_last_edited_time = page.last_edited_time || note.notion_last_edited_time;
-    note.content_html = page.html || "<p><br></p>";
+    note.content_html = sanitizeHtml(page.html || "<p><br></p>", {notion:true});
 
     const title = document.getElementById("notebook-document-title");
     const area = document.getElementById("notebook-document-area");
     if (title) title.textContent = note.topic_title || page.title || "Página do Notion";
     if (area) area.textContent = note.area || "Notion";
 
-    editor.innerHTML = page.html || "<p><br></p>";
+    editor.innerHTML = note.content_html;
     captureOriginalBlocks(editor);
 
     notebookState.editorDirty = false;

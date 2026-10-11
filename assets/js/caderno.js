@@ -1660,8 +1660,12 @@ async function redeemNotebookShareFromUrl() {
    ========================================================= */
 
 function sanitizeHtml(
-  html
+  html,
+  {notion = false} = {}
 ) {
+  const allowedTags = notion
+    ? new Set([...ALLOWED_TAGS, "A", "PRE", "CODE", "S", "DEL", "MARK", "H4", "H5", "H6"])
+    : ALLOWED_TAGS;
 
   const template =
     document.createElement(
@@ -1713,14 +1717,21 @@ function sanitizeHtml(
       }
 
 
+      // Discard active containers and foreign namespaces while still inert.
+      if (child.namespaceURI !== "http://www.w3.org/1999/xhtml"
+        || ["SCRIPT", "STYLE", "IFRAME", "OBJECT", "EMBED", "TEMPLATE", "NOSCRIPT"].includes(child.tagName)) {
+        child.remove();
+        continue;
+      }
+
       if (
-        !ALLOWED_TAGS.has(
+        !allowedTags.has(
           child.tagName
         )
       ) {
 
         const fragment =
-          document.createDocumentFragment();
+          node.ownerDocument.createDocumentFragment();
 
 
         while (
@@ -1766,6 +1777,17 @@ function sanitizeHtml(
 
       let keepImageAssetId =
         "";
+      const notionAttributes = [];
+      let keepHref = "";
+      const keepLinkTarget = child.getAttribute("target") === "_blank" ? "_blank" : "";
+      if (notion) {
+        for (const name of ["data-notion-block-id", "data-notion-block-type", "data-notion-editable", "data-notion-checked"]) {
+          const value = child.getAttribute(name);
+          if (value !== null && /^[a-z0-9_-]{1,100}$/i.test(value)) notionAttributes.push([name,value]);
+        }
+        if (child.tagName === "A") keepHref = luriaSafeContentUrl(child.getAttribute("href"), {relative:true,mailto:true});
+        keepClass = [...child.classList].filter(name => ["notebook-callout-content", "notebook-callout-icon", "notebook-study-block", "important", "warning", "memory"].includes(name)).join(" ");
+      }
 
       if (
         child.tagName ===
@@ -2053,6 +2075,7 @@ function sanitizeHtml(
               src
             );
 
+        const validNotionImage = notion && Boolean(luriaSafeContentUrl(src, {relative:true}));
         const validInternalImage =
           /^\/assets\/img\/[a-z0-9_\-./% ]+\.(?:png|jpe?g|webp|gif|svg)(?:\?.*)?$/i
             .test(
@@ -2075,9 +2098,11 @@ function sanitizeHtml(
             !validSharedImage
             &&
             !validInternalImage
+            &&
+            !validNotionImage
           )
           ||
-          keptImages >= 2
+          (!notion && keptImages >= 2)
         ) {
           child.remove();
           continue;
@@ -2127,6 +2152,12 @@ function sanitizeHtml(
 
       }
 
+      notionAttributes.forEach(([name,value]) => child.setAttribute(name,value));
+      if (keepHref) {
+        child.setAttribute("href", keepHref);
+        if (keepLinkTarget) child.setAttribute("target", keepLinkTarget);
+        child.setAttribute("rel", "noopener noreferrer");
+      }
       if (
         keepStyle
       ) {
@@ -2627,10 +2658,10 @@ function renderTopicList() {
   const current=getCurrentDocument();
   const editor=document.getElementById("notebook-editor");
   const sourceHtml=editor?.innerHTML || current?.note?.content_html || "";
-  const parser=document.createElement("div");
+  const parser=document.createElement("template");
   parser.innerHTML=sourceHtml;
 
-  const headings=[...parser.querySelectorAll("h1,h2,h3,h4")].map((heading,index)=>({
+  const headings=[...parser.content.querySelectorAll("h1,h2,h3,h4")].map((heading,index)=>({
     index,
     level:Number(heading.tagName.slice(1))||2,
     text:String(heading.textContent||"").trim()||"Seção"
@@ -17149,7 +17180,7 @@ async function openNotionPage(page) {
   modal.hidden = false;
   if (title) title.textContent = page?.title || "Página do Notion";
   if (updated) updated.textContent = "";
-  if (original) original.href = page?.url || "#";
+  if (original) original.href = luriaSafeContentUrl(page?.url) || "#";
   content.innerHTML = '<div class="notebook-notion-empty"><strong>Carregando página...</strong><span>O conteúdo continua armazenado no Notion.</span></div>';
 
   try {
@@ -17164,9 +17195,9 @@ async function openNotionPage(page) {
         ? "Atualizado no Notion em " + dt.toLocaleString("pt-BR")
         : "Conteúdo carregado diretamente do Notion";
     }
-    if (original) original.href = remote.url || page.url || "#";
+    if (original) original.href = luriaSafeContentUrl(remote.url || page.url) || "#";
 
-    content.innerHTML = remote.html || '<div class="notebook-notion-empty"><strong>Página vazia</strong></div>';
+    content.innerHTML = remote.html ? sanitizeHtml(remote.html, {notion:true}) : '<div class="notebook-notion-empty"><strong>Página vazia</strong></div>';
     document.querySelector(".notebook-notion-reader")?.classList.remove("is-editing");
     document.getElementById("notebook-notion-edit")?.removeAttribute("hidden");
     document.getElementById("notebook-notion-save")?.setAttribute("hidden", "");

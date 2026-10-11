@@ -16,6 +16,10 @@ async function fixture(){
  Object.assign(win,{supabaseClient:sb,PlantaoEngine:E,PlantaoMonitor:{update(){},react(){}},scrollTo(){},confirm:()=>true,alert:msg=>{throw Error(msg)}});
  win.setInterval=()=>1;
  win.HTMLElement.prototype.scrollIntoView=function(){};
+ // The real page loads app.js before plantao.js. Load its URL utility here too.
+ const shellSource=fs.readFileSync(require.resolve('../assets/js/app.js'),'utf8');
+ const urlStart=shellSource.indexOf('function luriaSafeContentUrl(');
+ win.eval(shellSource.slice(urlStart,shellSource.indexOf('\nfunction escapeHtml(',urlStart)));
  win.eval(fs.readFileSync(require.resolve('../assets/js/plantao.js'),'utf8'));
  await new Promise(r=>setTimeout(r,0));
  let activeCaseId;

@@ -981,7 +981,7 @@ function renderExams() {
                       <a
                         class="exam-link-button"
                         href="${examEscape(
-                          exam.edital_url
+                          luriaSafeContentUrl(exam.edital_url) || '#'
                         )}"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -999,7 +999,7 @@ function renderExams() {
                       <a
                         class="exam-link-button"
                         href="${examEscape(
-                          exam.registration_url
+                          luriaSafeContentUrl(exam.registration_url) || '#'
                         )}"
                         target="_blank"
                         rel="noopener noreferrer"
