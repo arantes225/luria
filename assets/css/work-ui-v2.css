@@ -1,0 +1,1021 @@
+/* Work pages opt into the approved Design System. Clinical content, controls,
+   result visibility and export templates remain owned by their existing code. */
+body[data-ui-work="v2"] .main {
+  color: var(--color-text-primary);
+}
+body[data-ui-work="v2"] .main :is(h1,h2,h3,h4) {
+  line-height: 1.3;
+}
+body[data-ui-work="v2"] .main :is(p,li) {
+  line-height: 1.55;
+}
+body[data-ui-work="v2"] .main :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea) {
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+}
+body[data-ui-work="v2"] .main :is(button,.button) {
+  min-height: 44px;
+  white-space: normal;
+}
+body[data-ui-work="v2"] .main :is(button,.button):disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+body[data-ui-work="v2"] .main>.page {
+  display: grid;
+}
+body[data-ui-work="v2"] .luria-page-spotlight-copy strong {
+  letter-spacing: -.025em;
+}
+body[data-ui-work="v2"] .work-detail>.work-card {
+  min-height: 0;
+}
+body[data-ui-work="v2"] .work-card {
+  padding: 20px;
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  box-shadow: none;
+}
+body[data-ui-work="v2"] .work-metric {
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+  gap: 8px;
+}
+body[data-ui-work="v2"] .work-metric-label {
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: .025em;
+}
+body[data-ui-work="v2"] .work-metric-value {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+body[data-ui-work="v2"] .work-metric-help {
+  margin: 0;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] .work-card-heading {
+  flex-wrap: wrap;
+  align-items: center;
+}
+body[data-ui-work="v2"] .work-card-heading h3 {
+  font-size: 18px;
+}
+body[data-ui-work="v2"] .work-card-heading a {
+  font-size: 14px;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+}
+body[data-ui-work="v2"] .work-empty {
+  min-height: 0;
+  padding: 20px;
+  font-size: 14px;
+  gap: 4px;
+}
+body[data-ui-work="v2"] .work-empty a {
+  min-height: 44px;
+  font-size: 14px;
+  color: var(--color-primary-foreground);
+}
+body[data-ui-work="v2"] :is(.work-action-row,.work-shift-summary,.work-quick-grid) {
+  gap: 12px;
+}
+body[data-ui-work="v2"] .work-quick-grid {
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,220px),1fr));
+}
+body[data-ui-work="v2"] :is(.work-tool strong,.work-shift-summary strong,.work-finance-row strong,.work-action-row a) {
+  font-size: 15px;
+  line-height: 1.4;
+}
+body[data-ui-work="v2"] :is(.work-tool small,.work-shift-summary small,.work-finance-row small,.work-finance-row span) {
+  font-size: 13px;
+  line-height: 1.5;
+}
+body[data-ui-work="v2"] .work-finance-row>div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+body[data-ui-work="v2"] .work-action-row a:first-child {
+  color: var(--color-primary-foreground);
+}
+body[data-ui-work="v2"] .work-simple-next {
+  min-height: 0;
+}
+body[data-ui-work="v2"] .work-simple-status :is(span,strong) {
+  font-size: 14px;
+}
+body[data-ui-work="v2"] .work-simple-actions-grid a {
+  min-height: 96px;
+  font-size: 15px;
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .work-card {
+    padding: 16px;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .work-detail {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .work-finance-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+body[data-ui-work="v2"] .work-detail {
+  align-items: start;
+}
+body[data-ui-work="v2"] :is(.pm-page,.prescription-hub,.score-page,.temp-note-shell,.dx-shell,.gm-shell,.work-shell,.shift-shell,.finance-shell,.work-tool-shell,.tool-shell,.lab-shell,.bulario,.recipe-shell,.protocol-shell,.abx-page) {
+  min-width: 0;
+  max-width: 100%;
+  gap: 24px;
+}
+body[data-ui-work="v2"] :is(.prescription-hero,.dx-hero,.gm-hero,.work-hero,.shift-hero,.finance-hero,.work-tool-hero,.tool-hero,.lab-hero,.recipe-hero,.protocol-hero) h2 {
+  margin: 0 0 8px;
+}
+body[data-ui-work="v2"] :is(.prescription-hero,.prescription-card)::after {
+  content: none;
+}
+body[data-ui-work="v2"] :is(.prescription-grid,.dx-grid,.gm-grid) {
+  display: grid;
+}
+body[data-ui-work="v2"] :is(.prescription-card,.dx-card,.gm-card) {
+  min-width: 0;
+}
+body[data-ui-work="v2"] :is(.prescription-section-head,.prescription-mini-note-head,.prescription-mini-note-foot,.temp-note-topbar,.temp-note-savebar,.gm-security-row,.gm-security-actions) {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+body[data-ui-work="v2"] :is(.prescription-mini-copy,.prescription-mini-clear) {
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+}
+body[data-ui-work="v2"] .prescription-mini-paper {
+  background: var(--color-surface);
+}
+body[data-ui-work="v2"] #prescription-mini-note {
+  min-height: 160px;
+  padding: 16px;
+  line-height: 1.6;
+  resize: vertical;
+}
+body[data-ui-work="v2"] .temp-note-shell {
+  width: min(100%,1180px);
+  box-sizing: border-box;
+}
+body[data-ui-work="v2"] .temp-note-top-actions {
+  flex: 1 1 360px;
+  min-width: 0;
+}
+body[data-ui-work="v2"] .temp-note-top-actions code {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+body[data-ui-work="v2"] .temp-note-paper,body[data-ui-work="v2"] .temp-note-paper textarea {
+  min-height: 360px;
+}
+body[data-ui-work="v2"] .temp-note-paper textarea {
+  padding: 24px;
+  line-height: 1.7;
+}
+body[data-ui-work="v2"] :is(.temp-note-top-actions button,.temp-note-top-actions a,.temp-note-savebar button,.quick-chart-pin-setup button) {
+  min-height: 44px;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] :is(.temp-note-top-actions a,.temp-note-savebar .primary,.quick-chart-pin-setup button,.gm-security-action) {
+  color: var(--color-primary-foreground);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+body[data-ui-work="v2"] .pm-overview {
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,180px),1fr));
+  gap: 12px;
+}
+body[data-ui-work="v2"] :is(.pm-toolbar,.pm-subbar,.pm-detail-head,.pm-detail-actions,.pm-deck-head,.pm-deck-actions) {
+  gap: 12px;
+  flex-wrap: wrap;
+}
+body[data-ui-work="v2"] :is(.pm-new,.pm-primary,.pm-export-btn.primary) {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+body[data-ui-work="v2"] .pm-empty {
+  min-height: 128px;
+  padding: 24px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+body[data-ui-work="v2"] :is(.pm-deck,.pm-patient,.pm-detail-hero) {
+  border-radius: 16px;
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  padding: 20px;
+}
+body[data-ui-work="v2"] .pm-detail-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,140px),1fr));
+  gap: 12px;
+}
+body[data-ui-work="v2"] .pm-detail-metric {
+  min-height: 0;
+  padding: 16px;
+}
+body[data-ui-work="v2"] .pm-detail-metric :is(span,small) {
+  font-size: 13px;
+}
+body[data-ui-work="v2"] :is(.calc-toolbar,.score-toolbar) {
+  gap: 16px;
+}
+body[data-ui-work="v2"] :is(.calc-list,.score-grid) {
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,360px),1fr));
+  gap: 16px;
+}
+body[data-ui-work="v2"] :is(.chips,.score-tabs,.abx-tabs) {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: visible;
+  gap: 8px;
+}
+body[data-ui-work="v2"] :is(.chip,.score-tab,.abx-tab) {
+  min-height: 44px;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] :is(.chip,.score-tab,.abx-tab).active {
+  color: var(--color-primary-text);
+  background: var(--color-primary-subtle);
+}
+body[data-ui-work="v2"] :is(.calc-code,.score-code) {
+  background: var(--color-primary-subtle);
+  color: var(--color-primary-text);
+  font-size: 13px;
+  min-width: 44px;
+  min-height: 44px;
+}
+body[data-ui-work="v2"] :is(.calc-badge,.score-tag,.calc-shelf-head p,.score-shelf-head p,.score-count,.calc-toolbar-count,.score-toolbar-count) {
+  font-size: 13px;
+  line-height: 1.5;
+}
+body[data-ui-work="v2"] :is(.fav-btn,.score-fav).active {
+  color: var(--color-primary-text);
+}
+body[data-ui-work="v2"] :is(.calc-search-clear,.score-search-clear) {
+  width: 40px;
+  height: 40px;
+}
+body[data-ui-work="v2"] :is(.calc-search input,.score-search input) {
+  padding-right: 52px;
+}
+body[data-ui-work="v2"] :is(.bulario-head,.recipe-controls,.protocol-controls,.abx-head) {
+  gap: 16px;
+  flex-wrap: wrap;
+}
+body[data-ui-work="v2"] :is(.drug-row,.recipe-item,.protocol-item) {
+  text-align: left;
+  min-height: 64px;
+  padding: 16px;
+  white-space: normal;
+}
+body[data-ui-work="v2"] :is(.drug-row,.recipe-item,.protocol-item) :is(strong,small) {
+  display: block;
+  line-height: 1.5;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] :is(.drug-detail,.recipe-detail,.protocol-detail) {
+  min-width: 0;
+  padding: 24px;
+  border-radius: 16px;
+}
+body[data-ui-work="v2"] :is(.recipe-list-panel,.recipe-detail,.protocol-detail,.drug-detail):has(.recipe-empty,.recipe-detail-placeholder,.protocol-placeholder,.empty) {
+  min-height: 0;
+  align-content: start;
+}
+body[data-ui-work="v2"] :is(.recipe-detail-section.warn,.protocol-section.notification) {
+  background: var(--color-warning-surface);
+}
+body[data-ui-work="v2"] :is(.recipe-detail-section.danger,.protocol-section.danger) {
+  background: var(--color-danger-surface);
+}
+body[data-ui-work="v2"] .recipe-detail-section.info {
+  background: var(--color-primary-subtle);
+}
+body[data-ui-work="v2"] :is(.recipe-status,.recipe-status-note,.protocol-row em,.protocol-chips span).ok {
+  background: var(--color-success-surface);
+  color: var(--color-success);
+}
+body[data-ui-work="v2"] :is(.recipe-status,.recipe-status-note,.protocol-row em,.protocol-chips span).warn {
+  background: var(--color-warning-surface);
+  color: var(--color-warning);
+}
+body[data-ui-work="v2"] :is(.recipe-status,.recipe-status-note).danger {
+  background: var(--color-danger-surface);
+  color: var(--color-danger);
+}
+body[data-ui-work="v2"] :is(.recipe-status,.recipe-status-note).info {
+  background: var(--color-primary-subtle);
+  color: var(--color-primary-text);
+}
+body[data-ui-work="v2"] .rx-field b {
+  font-size: 15px;
+  line-height: 1.6;
+  white-space: normal;
+}
+body[data-ui-work="v2"] .rx-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,180px),1fr));
+  gap: 16px;
+}
+body[data-ui-work="v2"] :is(.rx-controls label,.rx-field>span) {
+  font-size: 14px;
+  line-height: 1.5;
+}
+body[data-ui-work="v2"] :is(.rx-presentation-tabs,.agents,.abx-tabs) {
+  flex-wrap: wrap;
+}
+body[data-ui-work="v2"] :is(.focus-grid,.germ-grid,.class-grid,.concept-grid) {
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,280px),1fr));
+  gap: 16px;
+}
+body[data-ui-work="v2"] :is(.focus-card,.germ-card,.class-card,.concept) {
+  min-width: 0;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--color-surface);
+}
+body[data-ui-work="v2"] .focus-grid {
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,440px),1fr));
+  align-items: start;
+}
+body[data-ui-work="v2"] .focus-body {
+  padding: 0;
+  overflow-x: auto;
+}
+body[data-ui-work="v2"] .micro-table {
+  min-width: 420px;
+}
+body[data-ui-work="v2"] .micro-table :is(th,td,b,small) {
+  font-size: 14px;
+  line-height: 1.5;
+}
+body[data-ui-work="v2"] .micro-table :is(th,td):nth-child(2) {
+  display: table-cell;
+}
+body[data-ui-work="v2"] :is(.drug-popover-card) {
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+}
+body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) {
+  color: var(--color-text-primary);
+}
+body[data-ui-work="v2"] :is(.calc-modal-card,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) :is(input,select,textarea) {
+  max-width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  font-size: 16px;
+  color: var(--color-text-primary);
+  background-color: var(--color-surface);
+}
+body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) :is(button,a,input,select,textarea):focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 3px;
+}
+body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) button {
+  min-height: 44px;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] :is(.field label,.score-field label,.pm-field label,.pm-section-head,.pcr-history-form label) {
+  line-height: 1.5;
+}
+body[data-ui-work="v2"] :is(.result,.score-result) {
+  border-color: var(--color-border-interactive);
+  background: var(--color-primary-subtle);
+  color: var(--color-text-primary);
+}
+body[data-ui-work="v2"] :is(.result-label,.score-result-label) {
+  font-size: 13px;
+  line-height: 1.5;
+}
+body[data-ui-work="v2"] .result small {
+  font-size: 14px;
+  line-height: 1.6;
+}
+body[data-ui-work="v2"] :is(.go,.score-copy,.pm-primary,.pm-export-btn.primary) {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+body[data-ui-work="v2"] .score-result-value {
+  color: var(--color-primary-text);
+}
+body[data-ui-work="v2"] .field select {
+  background-image: linear-gradient(45deg,transparent 50%,var(--color-primary-text) 50%),linear-gradient(135deg,var(--color-primary-text) 50%,transparent 50%);
+}
+body[data-ui-work="v2"] .err {
+  color: var(--color-danger);
+}
+body[data-ui-work="v2"] .pm-dialog-actions {
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] :is(.pm-toolbar,.pm-detail-head,.temp-note-topbar,.gm-security-row,.bulario-head,.prescription-hero,.abx-head) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] :is(.pm-search,.bulario-search,.abx-search) {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] :is(.prescription-hero-meta,.temp-note-top-actions,.temp-note-savebar) {
+    justify-content: flex-start;
+  }
+  body[data-ui-work="v2"] .temp-note-top-actions {
+    flex-basis: auto;
+    width: 100%;
+  }
+  body[data-ui-work="v2"] .temp-note-top-actions code {
+    flex-basis: 100%;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .score-result {
+    position: static;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] :is(.calc-modal-title,.calc-modal-head,.score-modal-head,.pm-dialog-head) {
+    min-width: 0;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] :is(.modal-close,.score-close,.pm-close) {
+    flex: 0 0 44px;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .bulario-layout .drug-list {
+    max-height: 320px;
+    overflow: auto;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .prescription-section-head p {
+    display: block;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] :is(.prescription-mini-note-head,.prescription-mini-note-foot) {
+    padding: 16px;
+  }
+}
+body[data-ui-work="v2"] .score-form {
+  align-content: start;
+}
+body[data-ui-work="v2"] .score-field {
+  align-content: start;
+}
+body[data-ui-work="v2"] .gm-security-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+}
+body[data-ui-work="v2"] .gm-security-copy :is(strong,p,small) {
+  font-size: 14px;
+  line-height: 1.6;
+}
+body[data-ui-work="v2"] .gm-security-action {
+  min-height: 44px;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] .work-shell .work-grid {
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr));
+  gap: 16px;
+}
+body[data-ui-work="v2"] .work-shell .work-card :is(strong,h3) {
+  font-size: 18px;
+}
+body[data-ui-work="v2"] .work-shell .work-card p {
+  font-size: 15px;
+}
+body[data-ui-work="v2"] .pcr-history-actions {
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+body[data-ui-work="v2"] .pcr-history-actions label {
+  display: grid;
+  gap: 8px;
+  flex: 1 1 280px;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] .pcr-history-actions input {
+  width: 100%;
+}
+body[data-ui-work="v2"] :is(.pcr-history-actions .primary,.pcr-history-form .primary) {
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border-color: var(--color-primary);
+}
+body[data-ui-work="v2"] .pcr-patient-card {
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 15px;
+}
+body[data-ui-work="v2"] #pcr-history-list {
+  display: grid;
+  gap: 16px;
+}
+body[data-ui-work="v2"] :is(.pcr-patient-card,.pcr-history-record) header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+}
+body[data-ui-work="v2"] .pcr-history-record {
+  padding: 20px;
+  margin-top: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-surface-elevated);
+}
+body[data-ui-work="v2"] .pcr-record-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+}
+body[data-ui-work="v2"] :is(.pcr-patient-card small,.pcr-record-info,.pcr-record-event,.pcr-save-status) {
+  font-size: 14px;
+  line-height: 1.6;
+}
+body[data-ui-work="v2"] .pcr-record-events {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+body[data-ui-work="v2"] .pcr-record-event {
+  display: grid;
+  grid-template-columns: 72px 64px minmax(0,1fr);
+  gap: 12px;
+}
+body[data-ui-work="v2"] .pcr-record-event>div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+body[data-ui-work="v2"] .pcr-record-menu summary {
+  min-width: 44px;
+  min-height: 44px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+body[data-ui-work="v2"] .pcr-history-form {
+  gap: 16px;
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .pcr-patient-card {
+    padding: 16px;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .pcr-history-record {
+    padding: 16px;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .pcr-record-event {
+    grid-template-columns: 64px minmax(0,1fr);
+    gap: 8px;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .pcr-record-event>div {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width:760px) {
+  body[data-ui-work="v2"] .pcr-history-actions>label {
+    flex-basis: 100%;
+  }
+}
+body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.dx-hero,.gm-hero,.work-hero,.shift-hero,.finance-hero,.work-tool-hero,.tool-hero,.lab-hero) h2 {
+  display: none;
+}
+
+/* Layered resets defeat legacy injected locks only on migrated components. */
+@layer luria-work-resets {
+  body[data-ui-work="v2"] .main :is(h1,h2,h3,h4) {
+    color: var(--color-text-primary) !important;
+  }
+  body[data-ui-work="v2"] .main :is(a,button,input,select,textarea,summary):focus-visible {
+    outline: 3px solid var(--color-focus-ring) !important;
+    outline-offset: 3px !important;
+  }
+  body[data-ui-work="v2"] .main :is(input:not([type="checkbox"]):not([type="radio"]),select,textarea) {
+    font-size: 16px !important;
+    color: var(--color-text-primary) !important;
+    background-color: var(--color-surface) !important;
+    border-color: var(--color-border-interactive) !important;
+  }
+  body[data-ui-work="v2"] .main :is(input,select) {
+    min-height: 44px !important;
+  }
+  body[data-ui-work="v2"] .main :is(button,.button) {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+  body[data-ui-work="v2"] .main>.page {
+    gap: 24px !important;
+    display: grid !important;
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    min-height: 0 !important;
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight-copy {
+    gap: 8px !important;
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight-copy strong {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    color: var(--color-text-primary) !important;
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight-copy :is(span,small) {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: var(--color-text-secondary) !important;
+  }
+  body[data-ui-work="v2"] .work-dashboard-head {
+    margin: 0 0 24px !important;
+    padding: 0 !important;
+  }
+  body[data-ui-work="v2"] .work-dashboard-head h2 {
+    font-size: 32px !important;
+  }
+  body[data-ui-work="v2"] .work-dashboard-head p {
+    font-size: 16px !important;
+    color: var(--color-text-secondary) !important;
+  }
+  @media (max-width:760px) {
+    body[data-ui-work="v2"] .luria-page-spotlight-copy strong,body[data-ui-work="v2"] .work-dashboard-head h2 {
+      font-size: 28px !important;
+    }
+  }
+  body[data-ui-work="v2"] #sidebar .work-pcr-button {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 12px !important;
+    box-shadow: none !important;
+    position: relative !important;
+    inset: auto !important;
+    flex: 0 0 auto !important;
+    height: auto !important;
+    min-height: 64px !important;
+  }
+  body[data-ui-work="v2"] #sidebar .work-pcr-copy small {
+    white-space: normal !important;
+    line-height: 1.4 !important;
+  }
+  body[data-ui-work="v2"][data-ui-sidebar="collapsed"] #sidebar .work-pcr-button {
+    padding: 4px !important;
+    justify-content: center !important;
+  }
+  body[data-ui-work="v2"][data-ui-sidebar="collapsed"] #sidebar .work-pcr-icon {
+    width: 40px !important;
+    height: 40px !important;
+    flex-basis: 40px !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-hero,.dx-hero,.gm-hero,.work-hero,.shift-hero,.finance-hero,.work-tool-hero,.tool-hero,.lab-hero,.recipe-hero,.protocol-hero) {
+    min-height: 0 !important;
+    padding: 20px !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 16px !important;
+    background: var(--color-surface) !important;
+    box-shadow: none !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-hero,.dx-hero,.gm-hero,.work-hero,.shift-hero,.finance-hero,.work-tool-hero,.tool-hero,.lab-hero,.recipe-hero,.protocol-hero) h2 {
+    font-size: 22px !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-hero,.dx-hero,.gm-hero,.work-hero,.shift-hero,.finance-hero,.work-tool-hero,.tool-hero,.lab-hero,.recipe-hero,.protocol-hero) p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    color: var(--color-text-secondary) !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-grid,.dx-grid,.gm-grid) {
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr)) !important;
+    gap: 16px !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-card,.dx-card,.gm-card) {
+    min-height: 0 !important;
+    padding: 20px !important;
+    border-radius: 16px !important;
+    border-color: var(--color-border) !important;
+    background: var(--color-surface) !important;
+    box-shadow: none !important;
+    gap: 16px !important;
+    height: auto !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-card,.dx-card,.gm-card) :is(strong,h3) {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-card,.dx-card,.gm-card) :is(small,p) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-card,.dx-card,.gm-card):hover {
+    border-color: var(--color-primary) !important;
+    transform: none !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-card-tags span,.prescription-kicker,.prescription-section-head small,.prescription-hero-meta span,.prescription-mini-note-title small,#prescription-mini-status,.temp-note-kicker,.temp-note-topbar strong,.temp-note-top-actions code,.temp-note-savebar span,.temp-note-access summary,.temp-note-access-grid p) {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+  body[data-ui-work="v2"] :is(.prescription-section-head p,.prescription-mini-note-title strong) {
+    font-size: 15px !important;
+  }
+  body[data-ui-work="v2"] :is(.work-tool-placeholder,.shift-placeholder,.finance-placeholder,.lab-placeholder) {
+    padding: 24px !important;
+    min-height: 0 !important;
+    border: 1px dashed var(--color-border-interactive) !important;
+    border-radius: 16px !important;
+    background: var(--color-surface) !important;
+    color: var(--color-text-secondary) !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] .pm-overview-card {
+    min-height: 0 !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+    background: var(--color-surface) !important;
+    color: var(--color-text-primary) !important;
+  }
+  body[data-ui-work="v2"] .pm-overview-card :is(span,small) {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+  body[data-ui-work="v2"] .pm-overview-card strong {
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+  }
+  body[data-ui-work="v2"] :is(.pm-meta,.pm-chip,.pm-tag,.pm-deck-date,.pm-subbar,.pm-patient-summary,.pm-patient-tags) {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+  body[data-ui-work="v2"] :is(.calc-copy strong,.score-card-copy strong) {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+  }
+  body[data-ui-work="v2"] :is(.calc-copy>span,.calc-purpose,.score-card-copy p,.calc-intro,.score-intro,.score-warning) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] :is(.calc-search-clear,.score-search-clear) {
+    min-height: 40px !important;
+  }
+  body[data-ui-work="v2"] :is(.rx-field,.rx-controls,.rx-clinical-item,.rx-note,.recipe-stat,.protocol-placeholder,.recipe-detail-placeholder,.abx-note,.drug-popover-note) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] :is(.focus-body,.drugline,.agent,.meta,.ctx,.label,.fundamental-box,.micro-table) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] #sidebar .sidebar-footer-work {
+    position: static !important;
+    inset: auto !important;
+    background: transparent !important;
+  }
+  body[data-ui-work="v2"] #sidebar .sidebar-footer-work::before,body[data-ui-work="v2"] #sidebar .sidebar-footer-work::after {
+    content: none !important;
+  }
+  body[data-ui-work="v2"] .score-card-main {
+    grid-template-columns: 44px minmax(0,1fr) 44px !important;
+    padding: 16px !important;
+    text-align: left !important;
+  }
+  body[data-ui-work="v2"] .score-arrow {
+    align-self: end !important;
+    justify-self: center !important;
+  }
+  /* The legacy card locks turn the icon into a block and shrink button text. */
+  body[data-ui-work="v2"] .calc-card-main {
+    grid-template-columns: 44px minmax(0,1fr) 44px !important;
+    align-items: center !important;
+    gap: 12px !important;
+    min-height: 132px !important;
+    padding: 16px !important;
+    text-align: left !important;
+  }
+  body[data-ui-work="v2"] .calc-card-main .calc-code {
+    display: grid !important;
+    place-items: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    line-height: 1 !important;
+  }
+  body[data-ui-work="v2"] .calc-copy {
+    padding: 0 !important;
+  }
+  body[data-ui-work="v2"] .calc-copy .calc-meta {
+    display: flex !important;
+    gap: 6px !important;
+    flex-wrap: wrap !important;
+  }
+  body[data-ui-work="v2"] .calc-copy .calc-badge {
+    display: inline-flex !important;
+    width: fit-content !important;
+  }
+  body[data-ui-work="v2"] .calc-arrow {
+    align-self: end !important;
+    justify-self: center !important;
+  }
+  body[data-ui-work="v2"] :is(.calc-card > .fav-btn,.score-card > .score-fav) {
+    display: grid !important;
+    place-items: center !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    right: 16px !important;
+    top: 8px !important;
+    padding: 0 !important;
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+  body[data-ui-work="v2"] :is(.calc-copy,.score-card-copy) {
+    min-width: 0 !important;
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+  body[data-ui-work="v2"] :is(.field label,.score-field label,.pm-field label,.pm-section-head,.pcr-history-form label) {
+    font-size: 14px !important;
+  }
+  body[data-ui-work="v2"] :is(.formula,.note,.calc-purpose-box,.score-purpose-box,.score-field small,.score-result-text,.score-result-note,.score-reference,.score-modal-head p,.pm-discharge-note) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  @media (max-width:760px) {
+    body[data-ui-work="v2"] :is(.pm-toolbar,.pm-detail-head,.temp-note-topbar,.gm-security-row,.bulario-head,.prescription-hero,.abx-head) {
+      align-items: stretch !important;
+    }
+  }
+  @media (max-width:760px) {
+    body[data-ui-work="v2"] :is(.pm-grid-2,.pm-grid-3,.fields,.score-modal-body,.bulario-layout,.recipe-workspace,.protocol-workspace,.quick-chart-pin-setup) {
+      grid-template-columns: minmax(0,1fr) !important;
+    }
+  }
+  body[data-ui-work="v2"] .ui-page-heading {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  body[data-ui-work="v2"] .ui-page-heading h1 {
+    font-size: 32px !important;
+    margin: 4px 0 0 !important;
+    color: var(--color-text-primary) !important;
+    line-height: 1.2 !important;
+  }
+  body[data-ui-work="v2"] .ui-page-heading .eyebrow {
+    font-size: 13px !important;
+    color: var(--color-primary-text) !important;
+  }
+  body[data-ui-work="v2"] .pm-empty {
+    min-height: 128px !important;
+  }
+  body[data-ui-work="v2"] .pm-empty :is(strong,small) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] .pm-subbar :is(span,strong) {
+    font-size: 14px !important;
+  }
+  @media (max-width:760px) {
+    body[data-ui-work="v2"] .ui-page-heading h1 {
+      font-size: 28px !important;
+    }
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight :is(strong,h1) {
+    color: var(--color-text-primary) !important;
+    font-size: 32px !important;
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight :is(span,small) {
+    color: var(--color-text-secondary) !important;
+    font-size: 14px !important;
+  }
+  body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pm-view-dialog,.pcr-history-dialog) :is(input,select,textarea) {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    background-color: var(--color-surface) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border-interactive) !important;
+  }
+  body[data-ui-work="v2"] :is(.pm-dialog,.pm-view-dialog,.pcr-history-dialog) {
+    border-radius: 16px !important;
+    background: var(--color-surface) !important;
+    color: var(--color-text-primary) !important;
+  }
+  body[data-ui-work="v2"] :is(.calc-modal,.score-modal,.pm-dialog,.pcr-history-dialog) :is(button,.button) {
+    font-size: 14px !important;
+    min-height: 44px !important;
+  }
+  @media (max-width:760px) {
+    body[data-ui-work="v2"] .luria-page-spotlight :is(strong,h1) {
+      font-size: 28px !important;
+    }
+  }
+  body[data-ui-work="v2"] :is(.dx-open,.gm-open,.pm-meta,.pm-chip,.pm-tag) {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight::before,body[data-ui-work="v2"] .luria-page-spotlight::after {
+    content: none !important;
+  }
+  body[data-ui-work="v2"] .gm-security-copy :is(strong,p,small,span) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] :is(.gsm-config-card,.gsm-gate-card) {
+    background: var(--color-surface) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+    max-height: calc(100dvh - 32px) !important;
+    overflow: auto !important;
+    border-radius: 16px !important;
+  }
+  body[data-ui-work="v2"] :is(.gsm-config-card,.gsm-gate-card) h2 {
+    color: var(--color-text-primary) !important;
+    font-size: 20px !important;
+    line-height: 1.4 !important;
+  }
+  body[data-ui-work="v2"] :is(.gsm-config-card,.gsm-gate-card) :is(p,small,span,strong,label,button) {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] :is(.gsm-primary,.gsm-secondary,.gsm-close) {
+    min-height: 44px !important;
+  }
+  body[data-ui-work="v2"] .gsm-primary {
+    background: var(--color-primary) !important;
+    color: var(--color-primary-foreground) !important;
+  }
+  body[data-ui-work="v2"] .gsm-option:has(input:checked) {
+    background: var(--color-primary-subtle) !important;
+    border-color: var(--color-primary-text) !important;
+  }
+  body[data-ui-work="v2"] .luria-page-spotlight-copy::before,body[data-ui-work="v2"] .luria-page-spotlight-copy::after {
+    content: none !important;
+  }
+  body[data-ui-work="v2"] .gm-security-copy>div {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  body[data-ui-work="v2"] .work-shell .work-card {
+    min-height: 0 !important;
+  }
+  body[data-ui-work="v2"] .gsm-option small {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+}
+
+@layer luria-work-resets {
+ body[data-ui-work="v2"] .pcr-history-actions .button,body[data-ui-work="v2"] .pcr-patient-card .button {display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:10px 16px!important;min-height:44px!important;border-radius:8px!important;font-size:14px!important;line-height:1.5!important;}
+ body[data-ui-work="v2"] .pcr-history-actions .primary {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;border-color:var(--color-primary)!important;}
+ body[data-ui-work="v2"] .pcr-history-actions input {padding:10px 12px!important;border:1px solid var(--color-border-interactive)!important;border-radius:8px!important;}
+}
+
+@layer luria-work-resets {
+ body[data-ui-work="v2"] :is(.pcr-history-actions,.pcr-patient-card,.pcr-history-dialog) .secondary {background:var(--color-surface-elevated)!important;color:var(--color-text-primary)!important;border-color:var(--color-border-interactive)!important;}
+}

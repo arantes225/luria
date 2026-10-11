@@ -1,0 +1,81 @@
+/* Opt-in visual layer outranks legacy locks; business and clinical states retain their existing owners. */
+@layer luria-admin-ui {
+ body[data-ui-admin="v2"]{font-family:var(--ui-font-family)!important;color:var(--color-text-primary)!important;--surface:var(--color-surface);--surface-2:var(--color-surface-elevated);--text:var(--color-text-primary);--muted:var(--color-text-secondary);--border:var(--color-border);--accent:var(--color-primary);--danger:var(--color-danger);--success:var(--color-success);--warning:var(--color-warning);--accent-soft:var(--color-primary-subtle)}
+ body[data-ui-admin="v2"] :is(.admin-page,.admin-page section,.admin-page form,.admin-page [class*="grid"]>*,.admin-section-head>*){min-width:0!important;box-sizing:border-box!important}
+ body[data-ui-admin="v2"] .admin-page{gap:24px!important}
+ body[data-ui-admin="v2"] .ui-page-heading{display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:16px!important}
+ body[data-ui-admin="v2"] .ui-page-heading h1{margin:0!important;font-size:var(--ui-h1)!important;line-height:1.2!important}
+ body[data-ui-admin="v2"] .ui-page-heading .eyebrow{flex-basis:100%!important}
+ body[data-ui-admin="v2"] .admin-range{margin-left:auto!important;gap:6px!important}
+ body[data-ui-admin="v2"] .admin-range label{font-size:14px!important;text-transform:none!important;letter-spacing:normal!important}
+ body[data-ui-admin="v2"] :is(.admin-page,.admin-pin-gate,dialog) :is(input:not([type="checkbox"]):not([type="radio"]):not(.admin-price-input input),select,textarea){box-sizing:border-box!important;min-width:0!important;max-width:100%!important;min-height:44px!important;padding:10px 12px!important;border:1px solid var(--color-border-interactive)!important;border-radius:8px!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;font-family:var(--ui-font-family)!important;font-size:16px!important;line-height:1.5!important}
+ body[data-ui-admin="v2"] .admin-plan-price-card label{gap:8px!important}
+ body[data-ui-admin="v2"] .admin-price-input{display:flex!important;align-items:center!important;min-width:0!important;min-height:44px!important;padding:0 12px!important;gap:10px!important;border:1px solid var(--color-border-interactive)!important;border-radius:8px!important;background:var(--color-surface)!important}
+ body[data-ui-admin="v2"] .admin-price-input b{flex:0 0 auto!important;color:var(--color-text-secondary)!important;font-size:14px!important;line-height:1.5!important}
+ body[data-ui-admin="v2"] .admin-price-input input{box-sizing:border-box!important;flex:1 1 0!important;width:100%!important;min-width:0!important;height:auto!important;min-height:44px!important;padding:10px 0!important;border:0!important;border-radius:0!important;background:transparent!important;color:var(--color-text-primary)!important;font:600 16px/1.5 var(--ui-font-family)!important;font-variant-numeric:tabular-nums!important}
+ body[data-ui-admin="v2"] .admin-price-input:focus-within{border-color:var(--color-primary)!important;outline:3px solid var(--color-focus-ring)!important;outline-offset:2px!important}
+ body[data-ui-admin="v2"] .admin-price-input input:focus-visible{outline:none!important}
+ body[data-ui-admin="v2"] :is(.admin-page,dialog,.admin-pin-gate) button{min-height:44px!important;font-family:var(--ui-font-family)!important;font-size:14px!important;line-height:1.4!important;white-space:normal!important}
+ body[data-ui-admin="v2"] :is(button,input,select,textarea,a,summary):focus-visible{outline:3px solid var(--color-focus-ring)!important;outline-offset:3px!important}
+ body[data-ui-admin="v2"] .admin-view-menu{display:grid!important;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))!important;width:100%!important;max-width:none!important;padding:6px!important;gap:6px!important;margin:0!important;border:1px solid var(--color-border)!important;border-radius:12px!important;background:var(--color-surface-elevated)!important}
+ body[data-ui-admin="v2"] .admin-view-tab{padding:10px 12px!important;border-radius:8px!important;color:var(--color-text-secondary)!important;background:transparent!important}
+ body[data-ui-admin="v2"] .admin-view-tab[aria-selected="true"]{background:var(--color-primary-subtle)!important;color:var(--color-primary-text)!important;box-shadow:inset 0 0 0 1px var(--color-border)!important}
+ body[data-ui-admin="v2"] :is(.admin-plan-grid,.admin-metrics-grid,.admin-feature-grid,.admin-infra-grid,.admin-finance-grid,.admin-plan-price-grid){display:grid!important;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))!important;gap:16px!important}
+ body[data-ui-admin="v2"] :is(.admin-plan-card,.admin-metric-card,.admin-feature-card,.admin-infra-card,.admin-finance-card,.admin-section){background:var(--color-surface)!important;border:1px solid var(--color-border)!important;border-radius:12px!important;padding:20px!important;min-height:0!important;box-shadow:var(--ui-shadow)!important}
+ body[data-ui-admin="v2"] :is(.admin-plan-card,.admin-metric-card,.admin-feature-card,.admin-infra-card,.admin-finance-card)>span{font-size:14px!important;line-height:1.5!important;letter-spacing:normal!important;text-transform:none!important;color:var(--color-text-secondary)!important}
+ body[data-ui-admin="v2"] :is(.admin-plan-card,.admin-metric-card,.admin-feature-card,.admin-infra-card,.admin-finance-card)>strong{display:block!important;margin:8px 0!important;font-size:28px!important;line-height:1.2!important;font-variant-numeric:tabular-nums!important;overflow-wrap:anywhere!important}
+ body[data-ui-admin="v2"] :is(.admin-page,dialog) :is(small,.admin-status,.admin-empty,.admin-metric-secondary){font-size:13px!important;line-height:1.5!important}
+ body[data-ui-admin="v2"] :is(.admin-section-head,.admin-customer-head,.admin-customer-tools){gap:16px!important;flex-wrap:wrap!important;align-items:center!important}
+ body[data-ui-admin="v2"] .admin-page h2{font-size:22px!important;line-height:1.3!important}
+ body[data-ui-admin="v2"] .admin-page h3{font-size:18px!important;line-height:1.4!important}
+ body[data-ui-admin="v2"] .admin-page label{font-size:14px!important;line-height:1.5!important}
+ body[data-ui-admin="v2"] .admin-customer-tools{display:flex!important;min-width:0!important}
+ body[data-ui-admin="v2"] #admin-customer-search{flex:1 1 220px!important;width:auto!important}
+ body[data-ui-admin="v2"] .admin-table-wrap{width:100%!important;overflow-x:auto!important;border:1px solid var(--color-border)!important;border-radius:10px!important}
+ body[data-ui-admin="v2"] .admin-customer-table :is(th,td){padding:12px 14px!important;font-size:14px!important;line-height:1.5!important;border-color:var(--color-border)!important}
+ body[data-ui-admin="v2"] .admin-customer-table th{background:var(--color-surface-elevated)!important;color:var(--color-text-secondary)!important;text-align:left!important}
+ body[data-ui-admin="v2"] .admin-customer-table tbody tr:hover{background:var(--color-primary-subtle)!important}
+ body[data-ui-admin="v2"] :is(.admin-page,dialog,.admin-pin-gate) :is(.button.primary,button.primary,.admin-primary-button){background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;border-color:var(--color-primary)!important}
+ body[data-ui-admin="v2"] :is(.admin-page,dialog) :is(.button.secondary,button.secondary){background:var(--color-surface)!important;color:var(--color-text-primary)!important;border-color:var(--color-border-interactive)!important}
+ body[data-ui-admin="v2"] :is(.admin-qf-dialog,.admin-cost-dialog){position:fixed!important;inset:0!important;margin:auto!important;width:min(960px,calc(100vw - 24px))!important;max-width:calc(100vw - 24px)!important;max-height:calc(100dvh - 32px)!important;height:auto!important;overflow:auto!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;border:1px solid var(--color-border)!important;border-radius:16px!important;padding:20px!important;box-sizing:border-box!important}
+ body[data-ui-admin="v2"] dialog::backdrop{background:rgb(0 0 0/55%)!important}
+ body[data-ui-admin="v2"] :is(.admin-qf-dialog-head,.admin-cost-dialog-head){gap:16px!important;align-items:flex-start!important}
+ body[data-ui-admin="v2"] .admin-pin-gate{background:var(--color-background)!important}
+ body[data-ui-admin="v2"] .admin-pin-card{background:var(--color-surface)!important;color:var(--color-text-primary)!important;border:1px solid var(--color-border)!important;border-radius:16px!important;width:min(440px,calc(100% - 32px))!important;padding:24px!important;box-sizing:border-box!important}
+ body[data-ui-admin="v2"] [data-sidebar-streak-card]{display:none!important}
+ @media (max-width:640px) {
+  body[data-ui-admin="v2"] .admin-range{width:100%!important;margin:0!important}
+  body[data-ui-admin="v2"] .admin-view-menu{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body[data-ui-admin="v2"] :is(.admin-section,.admin-plan-card,.admin-metric-card,.admin-feature-card){padding:16px!important}
+  body[data-ui-admin="v2"] .admin-page :is(.admin-qf-manual-grid,.admin-qf-config-grid,.admin-customer-filter-panel,.admin-plan-price-grid,.admin-cost-editor-row,.admin-cost-editor-head){grid-template-columns:minmax(0,1fr)!important}
+  body[data-ui-admin="v2"] .admin-customer-tools{width:100%!important}
+ }
+ body[data-ui-admin="v2"] .admin-page{display:grid!important}
+ body[data-ui-admin="v2"] [hidden]{display:none!important}
+ body[data-ui-admin="v2"] :is(.admin-qf-dialog,.admin-cost-dialog,.admin-qf-dialog-shell){min-height:0!important;height:fit-content!important}
+ body[data-ui-admin="v2"] .admin-qf-dialog-shell{grid-template-rows:auto minmax(0,1fr) auto!important}
+ body[data-ui-admin="v2"] .admin-qf-review-import-body label{font-size:14px!important}
+ body[data-ui-admin="v2"] .admin-qf-review-import-body textarea{min-height:200px!important}
+ body[data-ui-admin="v2"] [data-admin-view="factory"] :is(p,span,small,em,.admin-qf-empty){font-size:14px!important;line-height:1.5!important}
+ body[data-ui-admin="v2"] [data-admin-view="factory"] strong{font-size:16px!important;line-height:1.4!important}
+ body[data-ui-admin="v2"] :is(.admin-qf-manual-grid,.admin-qf-method-grid,.admin-qf-reference-grid){grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))!important;gap:16px!important}
+ body[data-ui-admin="v2"] :is(.admin-qf-manual-note,.admin-qf-flow-note){background:var(--color-primary-subtle)!important;color:var(--color-text-primary)!important}
+ @media (max-width:640px) {
+  body[data-ui-admin="v2"] :is(.admin-qf-pipeline,.admin-qf-production-flow,.admin-cost-editor-grid-head,.admin-cost-editor-row){grid-template-columns:minmax(0,1fr)!important}
+ }
+ body[data-ui-admin="v2"] .topbar{flex-direction:row!important}
+ body[data-ui-admin="v2"] .admin-page :is(p,.admin-editais-status,.admin-editais-empty,.admin-editais-count,.admin-edital-card-meta>span,.admin-plan-feature-name span){font-size:14px!important;line-height:1.5!important}
+ body[data-ui-admin="v2"] :is(.admin-editais-toolbar label>span,.admin-edital-grid label>span){font-size:14px!important}
+ body[data-ui-admin="v2"] .admin-editais-notice{background:var(--color-warning-surface)!important;color:var(--color-warning)!important;border-color:var(--color-warning)!important}
+ body[data-ui-admin="v2"] .admin-tab-badge{background:var(--color-danger-surface)!important;color:var(--color-danger)!important;border:1px solid var(--color-danger)!important}
+ body[data-ui-admin="v2"] :is(.ui-page-heading h1,.admin-page h2,.admin-page h3,dialog h2){color:var(--color-text-primary)!important}
+ body[data-ui-admin="v2"] .admin-range label{display:block!important}
+ @media (max-width:640px) {
+  body[data-ui-admin="v2"] .admin-range select{width:100%!important}
+ }
+ body[data-ui-admin="v2"] :is(.admin-cost-dialog form,.admin-qf-dialog-shell,.admin-qf-dialog-head,.admin-qf-review-import-body){padding:0!important}
+ body[data-ui-admin="v2"] dialog .dialog-close{min-width:44px!important;flex-shrink:0!important;background:var(--color-surface-elevated)!important;color:var(--color-text-primary)!important}
+ body[data-ui-admin="v2"] :is(.admin-factory-empty,.admin-factory-empty-wide,.admin-qf-bad-empty-chip,.admin-table-empty){font-size:14px!important;line-height:1.5!important;padding:20px!important;color:var(--color-text-secondary)!important}
+ body[data-ui-admin="v2"] #admin-qf-review-import-json{min-height:200px!important;resize:vertical!important}
+ body[data-ui-admin="v2"] :is(.admin-page,dialog) label>span{font-size:14px!important;line-height:1.5!important}
+}
