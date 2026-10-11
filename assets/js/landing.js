@@ -22,6 +22,15 @@
     link.addEventListener("click", closeMobileNav);
   });
 
+  // The disclosure keeps its existing click behavior and can be dismissed by keyboard.
+  function dismissMobileNav(event) {
+    if (event.key !== "Escape" || !toggle || !mobileNav || mobileNav.hidden) return;
+    closeMobileNav();
+    toggle.focus();
+  }
+  toggle?.addEventListener("keydown", dismissMobileNav);
+  mobileNav?.addEventListener("keydown", dismissMobileNav);
+
   document.getElementById("footer-year").textContent =
     String(new Date().getFullYear());
 
