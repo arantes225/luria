@@ -2968,24 +2968,22 @@ function stripAnkiHtml(
     typeof document
       !== "undefined"
   ) {
+    // Template contents are parsed in an inert document: no resource loads or
+    // event handlers. Never attach/clone these nodes into the live document;
+    // only the extracted string may leave this conversion step.
     const element =
       document.createElement(
-        "div"
+        "template"
       );
 
     element.innerHTML =
       text;
 
-    text =
-      element.textContent
-      || element.innerText
-      || "";
+    element.content.querySelectorAll("script,style,iframe,object,embed,template").forEach(node => node.remove());
+    text = element.content.textContent || "";
   } else {
-    text =
-      text.replace(
-        /<[^>]+>/g,
-        ""
-      );
+    // Do not silently fall back to a regex HTML parser in an unsupported host.
+    throw new Error("A conversão Anki requer um parser HTML inerte.");
   }
 
 
