@@ -541,37 +541,22 @@ async function loadMetrics() {
         )
       : null;
 
-  document
-    .getElementById(
-      "metric-due"
-    )
-    .textContent =
-      due;
+  // Settings can import cards without displaying the review metrics.
+  const metricValues = {
+    "metric-due": due,
+    "metric-overdue": overdue,
+    "metric-reviewed": reviews.length,
+    "metric-accuracy": accuracy === null
+      ? "—"
+      : `${Math.round(accuracy)}%`
+  };
 
-  document
-    .getElementById(
-      "metric-overdue"
-    )
-    .textContent =
-      overdue;
-
-  document
-    .getElementById(
-      "metric-reviewed"
-    )
-    .textContent =
-      reviews.length;
-
-  document
-    .getElementById(
-      "metric-accuracy"
-    )
-    .textContent =
-      accuracy === null
-        ? "—"
-        : `${Math.round(
-            accuracy
-          )}%`;
+  Object.entries(metricValues).forEach(([id, value]) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.textContent = value;
+    }
+  });
 
   const dueBase =
     Math.max(
@@ -6380,13 +6365,15 @@ async function deleteSelectedFlashcards() {
 }
 
 function renderLibrary() {
-  const cards =
-    filteredLibraryCards();
-
   const list =
     document.getElementById(
       "library-list"
     );
+
+  if (!list) return;
+
+  const cards =
+    filteredLibraryCards();
 
   const empty =
     document.getElementById(
