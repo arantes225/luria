@@ -1,0 +1,218 @@
+/* LURIA — Sala de Emergência em paisagem, revisão dos menus iOS.
+   Ativo apenas durante um caso aberto; Biblioteca/Debriefing não são alterados. */
+
+/* O shell V2 declara !important dentro de @layer luria-ui-navigation.
+   As regras de ocultação precisam fazer parte DA MESMA layer. */
+@layer luria-ui-navigation {
+  @media (orientation: landscape) and (max-height: 620px) and (max-width: 1150px) {
+    html:has(body.luria-case-landscape) {
+      height:100%!important;
+      min-height:100%!important;
+      overflow:hidden!important;
+      scroll-padding:0!important;
+    }
+    body[data-ui-nav="v2"].luria-case-landscape {
+      --ui-bottom-navigation:0px!important;
+      --ui-nav-height:0px!important;
+      overflow:hidden!important;
+      height:100dvh!important;
+      min-height:100dvh!important;
+    }
+    body[data-ui-nav="v2"].luria-case-landscape #ui-mobile-navigation,
+    body[data-ui-nav="v2"].luria-case-landscape .ui-mobile-navigation,
+    body[data-ui-nav="v2"].luria-case-landscape .topbar,
+    body[data-ui-nav="v2"].luria-case-landscape #sidebar,
+    body[data-ui-nav="v2"].luria-case-landscape #sidebar-backdrop {
+      display:none!important;
+      visibility:hidden!important;
+      pointer-events:none!important;
+    }
+    body[data-ui-nav="v2"].luria-case-landscape .app-shell {
+      margin:0!important;
+      padding:0!important;
+      width:100vw!important;
+      height:100dvh!important;
+      min-height:0!important;
+      overflow:hidden!important;
+    }
+    body[data-ui-nav="v2"].luria-case-landscape .main {
+      margin:0!important;
+      padding:0!important;
+      width:100%!important;
+      height:100dvh!important;
+      min-height:0!important;
+      border-radius:0!important;
+      overflow:hidden!important;
+    }
+    body[data-ui-nav="v2"].luria-case-landscape .main>.page {
+      margin:0!important;
+      padding:0!important;
+      padding-bottom:0!important;
+      width:100%!important;
+      max-width:none!important;
+      height:100dvh!important;
+      min-height:0!important;
+      overflow:hidden!important;
+    }
+  }
+}
+@media(orientation:landscape) and (max-height:620px) and (max-width:1150px) {
+  /* Evita a barra escura global cobrindo o jogo, também no shell antigo. */
+  body.luria-case-landscape .ui-mobile-navigation,
+  body.luria-case-landscape #ui-mobile-navigation,
+  body.luria-case-landscape>.app-shell .topbar {
+    display:none!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) {
+    --luria-rail-w:clamp(148px,20vw,174px);
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-rail {
+    left:0!important;
+    right:auto!important;
+    top:0!important;
+    bottom:0!important;
+    width:var(--luria-rail-w)!important;
+    max-width:var(--luria-rail-w)!important;
+    min-width:var(--luria-rail-w)!important;
+    padding:6px 7px 6px max(7px,env(safe-area-inset-left))!important;
+    gap:0!important;
+    display:flex!important;
+    flex-direction:column!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab {
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:7px!important;
+    flex:0 0 36px!important;
+    width:100%!important;
+    min-width:0!important;
+    height:36px!important;
+    min-height:36px!important;
+    max-height:36px!important;
+    margin:0 0 5px!important;
+    padding:4px 7px!important;
+    border:1px solid rgba(151,203,244,.45)!important;
+    border-radius:10px!important;
+    font-size:11px!important;
+    line-height:1.1!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs {
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr)!important;
+    grid-template-rows:none!important;
+    grid-auto-flow:row!important;
+    grid-auto-rows:minmax(35px,1fr)!important;
+    flex:1 1 auto!important;
+    min-height:0!important;
+    height:auto!important;
+    max-height:none!important;
+    width:100%!important;
+    gap:4px!important;
+    padding:0!important;
+    margin:0!important;
+    overflow-x:hidden!important;
+    overflow-y:auto!important;
+    scrollbar-width:none;
+    align-content:stretch!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs::-webkit-scrollbar {display:none}
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab {
+    position:relative!important;
+    inset:auto!important;
+    top:auto!important;
+    bottom:auto!important;
+    left:auto!important;
+    right:auto!important;
+    transform:none!important;
+    grid-column:auto!important;
+    grid-row:auto!important;
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:7px!important;
+    min-width:0!important;
+    width:100%!important;
+    height:100%!important;
+    min-height:35px!important;
+    max-height:none!important;
+    margin:0!important;
+    padding:5px 8px!important;
+    overflow:hidden!important;
+    border-radius:10px!important;
+    background:#153554!important;
+    border:1px solid rgba(140,189,233,.38)!important;
+    color:#e4f4ff!important;
+    text-align:left!important;
+    font-size:11px!important;
+    line-height:1.13!important;
+    font-weight:500!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    overflow-wrap:normal!important;
+    box-sizing:border-box!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab:where(:hover,:focus-visible,[aria-expanded="true"],.active) {
+    background:#1c5b94!important;
+    border-color:#90c4f3!important;
+    color:#fff!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab>span:first-child {
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    flex:0 0 21px!important;
+    min-width:21px!important;
+    width:21px!important;
+    font-size:21px!important;
+    line-height:1!important;
+    text-align:center!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab>span:last-child {
+    display:block!important;
+    flex:1 1 auto!important;
+    min-width:0!important;
+    width:auto!important;
+    max-width:100%!important;
+    color:inherit!important;
+    font-size:10.5px!important;
+    line-height:1.13!important;
+    text-align:left!important;
+    white-space:normal!important;
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+    hyphens:auto!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene {
+    left:var(--luria-rail-w)!important;
+    width:calc(100% - var(--luria-rail-w))!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor {
+    z-index:8!important;
+  }
+  /* O drawer continua funcional, acima do cenário e sem barra global. */
+  body.luria-case-landscape #plantao-action-drawer:not([hidden]){
+    max-height:calc(100dvh - 55px)!important;
+  }
+}
+@media(orientation:landscape) and (max-height:355px) and (max-width:1150px){
+  body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
+    flex-basis:30px!important;
+    min-height:30px!important;
+    height:30px!important;
+    max-height:30px!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs{
+    grid-auto-rows:minmax(31px,1fr)!important;
+    gap:3px!important;
+  }
+  body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-action-tabs .plantao-action-tab{
+    min-height:31px!important;
+    padding:3px 6px!important;
+  }
+}
