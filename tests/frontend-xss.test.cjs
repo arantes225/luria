@@ -258,8 +258,10 @@ test('Apostila approved figures, review cards and lightbox share the URL protect
   const source=read('assets/js/apostila-tools.js');for(const name of ['getAsset','createApprovedFigure','expandImage','renderReviewPanel'])w.eval(declaration(source,name,'  '));
   let figure=w.createApprovedFigure(w.rows[0]);assertSafe(figure);assert.equal(figure.querySelector('a').getAttribute('href'),'#');assert.equal(figure.querySelector('img').getAttribute('src'),'');
   w.renderReviewPanel();const panel=w.document.getElementById('apostila-image-curation');assert.equal(panel.querySelector('a').getAttribute('href'),'#');assert.equal(panel.querySelector('img').getAttribute('src'),'');
-  // This trusted, constant fallback handler is preserved for the later CSP stage.
-  assert.ok(panel.querySelector('img').getAttribute('onerror').includes('Imagem indisponível'));assert.equal(panel.querySelector('img').hasAttribute('onmouseover'),false);
+  w.eval(read('assets/js/apostila-image-fallback.js'));
+  assert.equal(panel.querySelector('img').hasAttribute('onerror'),false);assert.equal(panel.querySelector('img').hasAttribute('onmouseover'),false);
+  panel.querySelector('img').dispatchEvent(new w.Event('error'));
+  assert.equal(panel.querySelector('img').style.display,'none');assert.ok(panel.textContent.includes('Imagem indisponível'));
   panel.querySelector('[data-apostila-image-expand]').click();assert.equal(w.document.getElementById('lightbox').hidden,false);assert.equal(w.document.querySelector('#lightbox img').getAttribute('src'),'');
   w.rows[0].source_url='https://example.org/fonte';w.rows[0].proposed_asset.src='/assets/img/demo.webp';
   figure=w.createApprovedFigure(w.rows[0]);assert.equal(figure.querySelector('a').href,w.rows[0].source_url);assert.equal(figure.querySelector('img').getAttribute('src'),w.rows[0].proposed_asset.src);

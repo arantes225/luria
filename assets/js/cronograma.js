@@ -9739,4 +9739,15 @@ if (window.docmapUser) {
   );
 }
 
+function bindBaseScheduleButton() {
+  document.getElementById("apply-base-schedule")?.addEventListener("click", () => {
+    window.applyLuriaGenericSchedule && window.applyLuriaGenericSchedule();
+  });
+}
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", bindBaseScheduleButton, {once: true});
+} else {
+  bindBaseScheduleButton();
+}
+
 if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", bindReferenceCalendarControls); else bindReferenceCalendarControls();

@@ -377,7 +377,7 @@
       card.dataset.apostilaImageId = String(row.id);
       card.innerHTML = `
         <div class="apostila-image-candidate-preview">
-          ${asset.src ? '<img loading="lazy" src="' + esc(luriaSafeContentUrl(asset.src, {relative:true})) + '" alt="' + esc(asset.alt || asset.caption || "Imagem candidata") + '" onerror="this.style.display=\'none\';this.parentElement.insertAdjacentText(\'beforeend\',\'Imagem indisponível\')">' : "<span>Sem prévia</span>"}
+          ${asset.src ? '<img loading="lazy" src="' + esc(luriaSafeContentUrl(asset.src, {relative:true})) + '" alt="' + esc(asset.alt || asset.caption || "Imagem candidata") + '" data-apostila-image-fallback="candidate">' : "<span>Sem prévia</span>"}
         </div>
         <div class="apostila-image-candidate-body">
           <strong>${esc(asset.title || asset.caption_title || row.source_name || "Imagem candidata")}</strong>

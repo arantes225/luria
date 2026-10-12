@@ -14,6 +14,7 @@ function fixture(t) {
   const dom=new JSDOM('<div id="import-summary"></div><div id="import-preview-wrap"><table><tbody id="import-preview-body"></tbody></table></div><button id="import-cards"></button><div id="review-front"></div>',{url:'http://fixture.invalid/',runScripts:'outside-only',resources:{interceptors:[requestInterceptor(request=>{requests.push(request.url);return new Response('');})]}});
   t.after(()=>dom.window.close());
   const w=dom.window;
+  w.ankiDeckAreaMap=new Map();w.ankiDeckSubjectMap=new Map();w.ankiDeckThemeMap=new Map();
   for(const name of ['stripAnkiHtml','ankiMediaReferenceCount','replaceClozeForFront','replaceClozeForBack','fieldsToFlashcard','escapeFlashHtml','truncateText'])w.eval(declaration(name));
   return {w,requests};
 }
@@ -28,6 +29,55 @@ for(const [name,input,expected] of [
   const {w,requests}=fixture(t);
   assert.equal(w.stripAnkiHtml(input),expected);
   assert.deepEqual(requests,[]);
+});
+
+function mappingFixture(t) {
+  const f=fixture(t),w=f.w;
+  w.document.body.insertAdjacentHTML('beforeend','<section id="anki-deck-map"><div id="anki-deck-map-list"></div></section><span id="anki-import-format"></span><p id="anki-media-note"></p><input id="import-file" type="file">');
+  w.importFileKind='anki';w.ankiImportStats={packageFormat:'Anki legado',sourceDecks:['Root::Deck A','Root::Deck B'],mediaReferences:2};
+  w.importRows=w.ankiImportStats.sourceDecks.map(source_deck=>({source_deck,front_text:'Frente',back_text:'Verso',area:'Clínica',materia:'',theme:null}));
+  w.ankiDeckAreaMap=new Map(w.ankiImportStats.sourceDecks.map(deck=>[deck,'Clínica']));
+  w.FLASHCARD_SUBJECTS_BY_AREA={'Clínica':['Matéria']};w.normalizeFlashAreaName=value=>value;
+  for(const name of ['sourceDeckDefaultArea','renderAnkiDeckMap','renderImportPreview','resetImportUi'])w.eval(declaration(name));
+  const change=(selector,value)=>{const el=w.document.querySelector(selector);el.value=value;el.dispatchEvent(new w.Event('change',{bubbles:true}));};
+  return {...f,change};
+}
+
+test('Anki preview keeps per-deck themes through taxonomy changes and safely clears them',t=>{
+  const {w,change,requests}=mappingFixture(t);w.renderImportPreview();
+  assert.equal(w.document.querySelector('[data-anki-deck-theme="0"]').value,'');
+  const theme='<img src=x onerror=alert(1)> & tema';
+  change('[data-anki-deck-theme="0"]',theme);
+  change('[data-anki-deck-subject="0"]','Matéria');
+  change('[data-anki-deck-area="0"]','Clínica');
+  assert.equal(w.importRows[0].theme,theme);assert.equal(w.importRows[1].theme,null);
+  assert.equal(w.document.querySelector('[data-anki-deck-theme="0"]').value,theme);
+  assert.equal(w.document.querySelectorAll('#anki-deck-map img, #anki-deck-map script').length,0);
+  change('[data-anki-deck-theme="0"]','  ');
+  assert.equal(w.importRows[0].theme,null);
+  w.resetImportUi();assert.equal(w.ankiDeckThemeMap.size,0);assert.equal(w.ankiDeckSubjectMap.size,0);
+  assert.deepEqual(requests,[]);
+});
+
+test('Anki import sends the selected theme and null for an unthemed deck through the existing RPC',async t=>{
+  const {w,change}=mappingFixture(t);w.renderImportPreview();
+  change('[data-anki-deck-theme="0"]','Tema personalizado');
+  const calls=[];w.flashUser={id:'fixture-owner'};
+  w.flashSb={from:()=>({insert:()=>({select:()=>({single:async()=>({data:{id:'fixture-import'},error:null})})})}),rpc:async(name,args)=>{calls.push({name,args});return{data:2,error:null};}};
+  w.setFlashStatus=()=>{};for(const name of ['loadMetrics','loadReviewQueue','loadLibrary'])w[name]=async()=>{};
+  w.eval(declaration('wireImport'));w.wireImport();w.document.getElementById('import-cards').click();
+  for(let i=0;i<8;i++)await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(calls.length,1);assert.equal(calls[0].name,'bulk_create_flashcards');
+  assert.equal(calls[0].args.p_cards[0].theme,'Tema personalizado');assert.equal(calls[0].args.p_cards[1].theme,null);
+  assert.equal(calls[0].args.p_cards[0].front_text,'Frente');assert.equal(w.ankiDeckThemeMap.size,0);
+});
+
+test('Anki starts each package with fresh subject and theme mappings before building its preview',async t=>{
+  const {w}=mappingFixture(t);w.ankiDeckThemeMap.set('Root::Deck A','Anterior');w.ankiDeckSubjectMap.set('Root::Deck A','Anterior');
+  w.isAnkiPackageFile=()=>true;let parsed=false,preview=false;
+  w.parseAnkiPackage=async()=>{parsed=true;assert.equal(w.ankiDeckThemeMap.size,0);assert.equal(w.ankiDeckSubjectMap.size,0);return[];};
+  w.renderImportPreview=()=>{preview=true;};w.eval(declaration('parseImportFile'));
+  await w.parseImportFile({name:'next.apkg'});assert.ok(parsed&&preview);
 });
 test('Anki malicious handlers, URLs and embedded documents remain inert',async t=>{
   const {w,requests}=fixture(t);

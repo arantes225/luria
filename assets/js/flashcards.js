@@ -28,6 +28,9 @@ let ankiDeckAreaMap =
 let ankiDeckSubjectMap =
   new Map();
 
+let ankiDeckThemeMap =
+  new Map();
+
 let ankiImportStats = {
   packageFormat: null,
   sourceDecks: [],
@@ -3679,7 +3682,8 @@ async function parseAnkiPackage(
           )
           || "",
 
-        theme: null,
+        theme:
+          ankiDeckThemeMap.get(sourceDeck) || null,
 
         front_text:
           converted.front,
@@ -4041,6 +4045,17 @@ function renderAnkiDeckMap() {
 
 
 
+  document.querySelectorAll("[data-anki-deck-theme]").forEach((input) => {
+    input.addEventListener("change", () => {
+      const deck = ankiImportStats.sourceDecks[Number(input.dataset.ankiDeckTheme)];
+      if (!deck) return;
+      const theme = input.value.trim();
+      ankiDeckThemeMap.set(deck, theme);
+      importRows = importRows.map(row => row.source_deck === deck ? {...row, theme: theme || null} : row);
+      renderImportPreview(false);
+    });
+  });
+
   if (mediaNote) {
     const media =
       Number(
@@ -4285,6 +4300,9 @@ async function parseSpreadsheetImport(
   ankiDeckSubjectMap =
     new Map();
 
+  ankiDeckThemeMap =
+    new Map();
+
   ankiImportStats = {
     packageFormat:
       null,
@@ -4313,6 +4331,12 @@ async function parseImportFile(
       "anki";
 
     ankiDeckAreaMap =
+      new Map();
+
+    ankiDeckSubjectMap =
+      new Map();
+
+    ankiDeckThemeMap =
       new Map();
 
     ankiImportStats = {
@@ -4356,6 +4380,9 @@ function resetImportUi() {
     new Map();
 
   ankiDeckSubjectMap =
+    new Map();
+
+  ankiDeckThemeMap =
     new Map();
 
   ankiImportStats = {
@@ -4665,7 +4692,10 @@ function wireImport() {
                         || null
                       ),
 
-              theme: null,
+              theme:
+                importFileKind === "anki"
+                  ? (ankiDeckThemeMap.get(row.source_deck) || row.theme || null)
+                  : null,
 
               front_text:
                 row.front_text,
