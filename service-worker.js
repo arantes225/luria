@@ -1,8 +1,8 @@
-const CACHE_VERSION = "luria-pwa-v281-mobile-flow";
+const CACHE_VERSION = "luria-pwa-v282-cache-security";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
-const WEEKLY_CONTENT_CACHE = "luria-weekly-content-v1";
-const PLANTAO_IMAGE_CACHE = "luria-plantao-images-v3";
+const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
+const PLANTAO_IMAGE_CACHE = CACHE_VERSION + "-images";
 
 const PLANTAO_IMAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 const RUNTIME_MAX_ITEMS = 90;
@@ -26,339 +26,240 @@ const APP_SHELL = [
   "/apostilas/",
   "/trabalho/",
   "/manifest.webmanifest?v=5",
+  "/mini-osce/",
+  "/assets/img/logos/pwa-icon-180.png?v=pwa5",
+  "/assets/img/logos/logo-principal.png?v=luria7",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/css/style.css?v=20261004-scrollbar-thumb-only",
-  "/assets/css/luria-brand-v5.css?v=20261004-dashboard-pattern-v78",
-  "/assets/css/pwa-mobile.css?v=20261006-pwa-normalization-v35",
-  "/assets/css/dashboard-layouts.css?v=20261004-dashboard-master-v35",
+  "/assets/js/pwa.js?v=20261011-pwa281",
+  "/assets/css/style.css?v=16.14-font-unified",
+  "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
+  "/assets/css/dashboard-layouts.css?v=20261006-dashboard3-fit",
+  "/assets/css/ui-v2-foundations.css?v=2",
+  "/assets/css/dashboard-ui-v2.css?v=1",
+  "/assets/css/ui-navigation-v2.css?v=2",
+  "/assets/css/education-ui-v2.css?v=2",
+  "/assets/js/ui-theme-v2.js?v=20261011-pwa281",
+  "/assets/js/ui-navigation-v2.js?v=20261011-pwa281",
+  "/assets/js/dashboard-ui-v2.js?v=20261011-pwa281",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=20261006-pwa-layout-rescue-v34",
-  "/assets/js/dashboard-layouts.js?v=20261004-alex-session-v1",
-  "/assets/js/luria-command-center.js?v=20261002-1",
-  "/assets/css/luria-command-center.css?v=20261002-1",
-  "/mini-osce/",
-  "/assets/js/pwa.js?v=20261011-pwa281",
-  "/assets/js/app.js",
-  "/assets/js/ui-navigation-v2.js?v=20261011-pwa281",
-  "/assets/js/ui-theme-v2.js?v=20261011-pwa281",
-  "/assets/js/dashboard-ui-v2.js",
-  "/assets/css/ui-v2-foundations.css",
-  "/assets/css/ui-navigation-v2.css",
-  "/assets/css/education-ui-v2.css",
-  "/assets/css/education-pages-v2.css",
-  "/assets/css/dashboard-ui-v2.css",
-  "/assets/css/flashcards-ui-v2.css",
+  "/assets/js/app.js?v=20261005-menu-restored-v100",
+  "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",
+  "/assets/css/pwa-mobile.css?v=20260930-layout-pcr",
+  "/assets/css/flashcards-ui-v2.css?v=1",
   "/assets/js/weekly-content.js?v=1",
-  "/assets/img/logos/pwa-icon-180.png?v=pwa5",
-  "/assets/img/logos/pwa-icon-512.png?v=pwa5",
-  "/assets/img/logos/logo-principal.png"
+  "/assets/js/app.js?v=20261004-dashboard-pattern-v78",
+  "/assets/img/logos/pwa-icon-180.png?v=3",
+  "/assets/js/supabase.js",
+  "/assets/css/education-pages-v2.css?v=1",
+  "/assets/js/app.js?v=20261004-global-shell-v74",
+  "/assets/js/app.js?v=20261005-sidebar-v228",
+  "/assets/css/style.css?v=16.12-no-legacy-dashboard",
+  "/assets/fonts/inter/InterVariable.woff2",
+  "/assets/js/dashboard.js?v=20261006-css-owned-height",
+  "/assets/js/study-mode.js?v=12.1",
+  "/assets/js/luria-brand-v5.js?v=12",
+  "/assets/img/logos/pwa-icon-192.png?v=pwa5",
+  "/assets/img/logos/pwa-icon-512.png?v=pwa5"
 ];
+
+const ACTIVE_CACHES = [STATIC_CACHE, RUNTIME_CACHE, WEEKLY_CONTENT_CACHE, PLANTAO_IMAGE_CACHE];
+const PUBLIC_PAGES = new Set(APP_SHELL.filter(path => path.endsWith("/") || path === "/index.html"));
+
+function publicResource(request) {
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin || request.method !== "GET"
+      || (request.credentials === "include" && request.mode !== "navigate") || request.cache === "no-store"
+      || /(?:^|,)\s*no-store(?:\s*(?:,|$)|\s*=)/i.test(request.headers.get("Cache-Control") || "")
+      || ["authorization", "proxy-authorization", "apikey", "x-api-key", "cookie", "range"]
+        .some(header => request.headers.has(header))) return false;
+  // Only explicit version parameters are cacheable. Unknown parameters may carry
+  // tokens, signatures or personal identifiers, even on a static-looking URL.
+  if ([...url.searchParams.keys()].some(key => key !== "v") || url.searchParams.getAll("v").length > 1) return false;
+  if (url.username || url.password) return false;
+  const path = url.pathname;
+  // Encoded separators can be decoded differently by the server/router.
+  if (/%(?:2f|5c)/i.test(path)) return false;
+  return PUBLIC_PAGES.has(path)
+    || /^\/apostilas\/[a-z0-9-]+\/(?:index\.html|content\.json)?$/.test(path)
+    || path === "/manifest.webmanifest"
+    || /^\/content\/weekly\/[a-zA-Z0-9/_-]+\.json$/.test(path)
+    || /^\/assets\/(?:js|css|vendor|fonts|img)\/[a-zA-Z0-9/_%. -]+\.(?:js|css|wasm|woff2?|ttf|otf|png|jpe?g|svg|webp|gif|ico)$/.test(path);
+}
+
+function cacheableResponse(request, response) {
+  if (!publicResource(request) || !response || response.status !== 200
+      || response.redirected || ["opaque", "opaqueredirect", "error"].includes(response.type)) return false;
+  if (response.url && new URL(response.url).origin !== self.location.origin) return false;
+  const headers = response.headers;
+  if (["authorization", "proxy-authorization", "set-cookie"].some(header => headers.has(header))) return false;
+  const directives = (headers.get("Cache-Control") || "").split(",").map(value => value.trim().split("=")[0].toLowerCase());
+  if (["private", "no-store", "no-cache", "must-revalidate", "proxy-revalidate"].some(value => directives.includes(value))) return false;
+  const vary = (headers.get("Vary") || "").toLowerCase().split(",").map(value => value.trim()).filter(Boolean);
+  if (vary.some(value => !["accept", "accept-encoding", "origin"].includes(value))) return false;
+  const path = new URL(request.url).pathname;
+  const type = (headers.get("Content-Type") || "").split(";")[0].toLowerCase().trim();
+  if (path.endsWith(".js")) return ["text/javascript", "application/javascript"].includes(type);
+  if (path.endsWith(".css")) return type === "text/css";
+  if (path.endsWith(".json")) return type === "application/json";
+  if (path.endsWith(".webmanifest")) return ["application/manifest+json", "application/json"].includes(type);
+  if (/\.(?:png|jpe?g|svg|webp|gif|ico)$/.test(path)) return type.startsWith("image/");
+  if (/\.(?:woff2?|ttf|otf)$/.test(path)) return type.startsWith("font/") || type === "application/octet-stream";
+  if (path.endsWith(".wasm")) return type === "application/wasm";
+  return type === "text/html";
+}
+
+function cacheNames(request) {
+  const path = new URL(request.url).pathname;
+  if (path.startsWith("/content/weekly/")) return [WEEKLY_CONTENT_CACHE];
+  if (/^\/assets\/img\/plantao(?:\/|%20pwa\/| pwa\/)/.test(path)) return [PLANTAO_IMAGE_CACHE];
+  return [RUNTIME_CACHE, STATIC_CACHE];
+}
+
+async function exactCached(request) {
+  for (const name of cacheNames(request)) {
+    try {
+      const cache = await caches.open(name);
+      const response = await cache.match(request);
+      if (response && cacheableResponse(request, response)) return response;
+      if (response) await cache.delete(request);
+    } catch {}
+  }
+  return null;
+}
 
 async function trimCache(cacheName, maxItems) {
   const cache = await caches.open(cacheName);
   const keys = await cache.keys();
+  await Promise.all(keys.slice(0, Math.max(0, keys.length - maxItems)).map(key => cache.delete(key)));
+}
 
-  if (keys.length <= maxItems) return;
+async function storePublic(request, response, name = cacheNames(request)[0]) {
+  try {
+    if (!cacheableResponse(request, response)) {
+      // Revoke newly private content and access denials, but don't destroy a
+      // valid offline copy just because the server is temporarily unavailable.
+      if (response?.status === 200 || [401, 403].includes(response?.status) || response?.redirected) {
+        for (const cacheName of cacheNames(request)) await (await caches.open(cacheName)).delete(request);
+      }
+      return;
+    }
+    let copy = response.clone();
+    if (name === PLANTAO_IMAGE_CACHE) {
+      const headers = new Headers(copy.headers);
+      headers.set("sw-cached-at", String(Date.now()));
+      copy = new Response(copy.body, { status: copy.status, statusText: copy.statusText, headers });
+    }
+    await (await caches.open(name)).put(request, copy);
+    if (name !== STATIC_CACHE) await trimCache(name,
+      name === WEEKLY_CONTENT_CACHE ? WEEKLY_MAX_ITEMS : name === PLANTAO_IMAGE_CACHE ? PLANTAO_MAX_ITEMS : RUNTIME_MAX_ITEMS);
+  } catch {} // A quota/storage failure must not discard a successful online response.
+}
 
-  const overflow = keys.slice(0, keys.length - maxItems);
-  await Promise.all(overflow.map(key => cache.delete(key)));
+async function fetchPublic(request, cacheName) {
+  // Static shells/resources are fetched anonymously. same-origin is the browser
+  // default, not evidence of privacy. Navigation defaults to include, but known
+  // public shells are fetched anonymously; other include/Authorization bypass SW.
+  const response = await fetch(new Request(request, { credentials: "omit" }), { cache: "no-cache" });
+  await storePublic(request, response, cacheName);
+  return response;
 }
 
 async function cacheShellSafely() {
-  const cache = await caches.open(STATIC_CACHE);
-
-  await Promise.allSettled(
-    APP_SHELL.map(async url => {
-      const response = await fetch(url, { cache: "no-cache" });
-      if (response?.ok) {
-        await cache.put(url, response.clone());
-      }
-    })
-  );
+  await Promise.allSettled(APP_SHELL.map(path => {
+    const request = new Request(new URL(path, self.location.origin), { credentials: "omit" });
+    return fetchPublic(request, STATIC_CACHE);
+  }));
 }
 
 self.addEventListener("install", event => {
-  // A failed/slow request among dozens of precache URLs must never prevent a
-  // broken iOS PWA from receiving the new worker and its navigation repairs.
+  // Preserve the existing immediate update policy; no automatic page reload.
   event.waitUntil(self.skipWaiting());
 });
 
 self.addEventListener("activate", event => {
   event.waitUntil((async () => {
-    await caches.keys().then(keys => Promise.all(
-      keys.filter(key =>
-        key.startsWith("luria-pwa-") &&
-        ![STATIC_CACHE, RUNTIME_CACHE].includes(key)
-      ).map(key => caches.delete(key))
-    ));
+    const keys = await caches.keys();
+    await Promise.all(keys.filter(key =>
+      /^(?:luria-pwa-|luria-weekly-content-|luria-plantao-images-)/.test(key)
+      && !ACTIVE_CACHES.includes(key)
+    ).map(key => caches.delete(key)));
     await self.clients.claim();
-    // Warm the offline shell only after claiming installed pages, with a bound
-    // so content/CDN errors do not hold the worker's activation indefinitely.
-    await Promise.race([
-      cacheShellSafely(),
-      new Promise(resolve => setTimeout(resolve, 4000))
-    ]);
+    await Promise.race([cacheShellSafely(), new Promise(resolve => setTimeout(resolve, 4000))]);
   })());
 });
 
 self.addEventListener("message", event => {
   const data = event.data || {};
-
   if (data.type !== "LURIA_PREFETCH_WEEKLY_CONTENT") return;
-
-  const urls = (Array.isArray(data.urls) ? data.urls : [])
-    .slice(0, 12)
-    .filter(value => {
-      try {
-        const url = new URL(value, self.location.origin);
-        return (
-          url.origin === self.location.origin
-          && url.pathname.startsWith("/content/weekly/")
-        );
-      } catch {
-        return false;
-      }
-    });
-
-  if (!urls.length) return;
-
+  // Only a same-origin client can ask for the existing public weekly packages.
+  if (!event.source?.url || new URL(event.source.url).origin !== self.location.origin) return;
+  const requests = (Array.isArray(data.urls) ? data.urls : []).slice(0, 12).flatMap(value => {
+    try {
+      if (typeof value !== "string") return [];
+      const request = new Request(new URL(value, self.location.origin), { credentials: "omit" });
+      return publicResource(request) && new URL(request.url).pathname.startsWith("/content/weekly/") ? [request] : [];
+    } catch { return []; }
+  });
+  if (!requests.length) return;
   event.waitUntil((async () => {
-    const cache = await caches.open(WEEKLY_CONTENT_CACHE);
-
-    for (const value of urls) {
-      const request = new Request(value, { credentials: "same-origin" });
-      const existing = await cache.match(request);
-      if (existing) continue;
-
-      try {
-        const response = await fetch(request);
-        if (response?.ok) {
-          await cache.put(request, response.clone());
-        }
-      } catch {}
+    for (const request of requests) {
+      if (await exactCached(request)) continue;
+      try { await fetchPublic(request); } catch {}
     }
-
-    await trimCache(WEEKLY_CONTENT_CACHE, WEEKLY_MAX_ITEMS);
   })());
 });
 
+function offlineResponse(request) {
+  const path = new URL(request.url).pathname;
+  return new Response(path.endsWith(".json") ? "{}" : request.mode === "navigate"
+    ? "Sem conexão. Abra uma página já visitada ou tente novamente quando a conexão voltar."
+    : "Recurso indisponível offline.", {
+    status: 503,
+    headers: { "Content-Type": path.endsWith(".json") ? "application/json" : "text/plain; charset=utf-8", "Cache-Control": "no-store" },
+  });
+}
+
 self.addEventListener("fetch", event => {
   const request = event.request;
-
-  if (request.method !== "GET") return;
-
+  if (!publicResource(request)) return; // APIs/private requests keep the native network path, with no public fallback.
   const url = new URL(request.url);
-  if (url.origin !== self.location.origin) return;
-
-  if (url.pathname === "/content/weekly/manifest.json") {
-    event.respondWith((async () => {
-      const cache = await caches.open(WEEKLY_CONTENT_CACHE);
-
-      try {
-        const response = await fetch(request, { cache: "no-cache" });
-        if (response?.ok) {
-          await cache.put(request, response.clone());
-          return response;
-        }
-      } catch {}
-
-      return (await cache.match(request))
-        || new Response("{}", {
-          status: 503,
-          headers: { "Content-Type": "application/json" }
-        });
-    })());
-    return;
-  }
-
-  if (url.pathname.startsWith("/content/weekly/")) {
-    event.respondWith((async () => {
-      const cache = await caches.open(WEEKLY_CONTENT_CACHE);
-      const cached = await cache.match(request);
-
-      if (cached) return cached;
-
-      const response = await fetch(request);
-
-      if (response?.ok) {
-        await cache.put(request, response.clone());
-        trimCache(WEEKLY_CONTENT_CACHE, WEEKLY_MAX_ITEMS).catch(() => {});
-      }
-
-      return response;
-    })());
-    return;
-  }
-
-  if (
-    url.pathname.startsWith("/assets/img/plantao/")
-    || url.pathname.startsWith("/assets/img/plantao%20pwa/")
-    || url.pathname.startsWith("/assets/img/plantao pwa/")
-  ) {
-    event.respondWith((async () => {
-      const cache = await caches.open(PLANTAO_IMAGE_CACHE);
-      const cached = await cache.match(request);
-
-      if (cached) {
-        const cachedAt = Number(cached.headers.get("sw-cached-at") || 0);
-        if (
-          cachedAt
-          && (Date.now() - cachedAt) < PLANTAO_IMAGE_MAX_AGE_MS
-        ) {
-          return cached;
-        }
-      }
-
-      try {
-        const response = await fetch(request);
-
-        if (response?.ok) {
-          const body = await response.clone().blob();
-          const headers = new Headers(response.headers);
-          headers.set("sw-cached-at", String(Date.now()));
-
-          await cache.put(
-            request,
-            new Response(body, {
-              status: response.status,
-              statusText: response.statusText,
-              headers
-            })
-          );
-
-          trimCache(PLANTAO_IMAGE_CACHE, PLANTAO_MAX_ITEMS).catch(() => {});
-        }
-
-        return response;
-      } catch (error) {
-        if (cached) return cached;
-        throw error;
-      }
-    })());
-    return;
-  }
-
-
-  const apostilaMatch = url.pathname.match(/^\/apostilas\/([^/]+)\/?$/);
-  if (request.mode === "navigate" && apostilaMatch) {
-    event.respondWith((async () => {
-      const canonicalPath = "/apostilas/" + apostilaMatch[1] + "/";
-      const indexUrl = canonicalPath + "index.html";
-      const indexRequest = new Request(indexUrl, {
-        method: "GET",
-        headers: request.headers,
-        mode: "same-origin",
-        credentials: "same-origin",
-        redirect: "follow",
-        cache: "no-store"
-      });
-
-      try {
-        const response = await fetch(indexRequest, { cache: "no-store" });
-
-        if (response?.ok) {
-          const copy = response.clone();
-          const cache = await caches.open(RUNTIME_CACHE);
-          await cache.put(canonicalPath, copy.clone()).catch(() => {});
-          await cache.put(indexUrl, copy).catch(() => {});
-          trimCache(RUNTIME_CACHE, RUNTIME_MAX_ITEMS).catch(() => {});
-          return response;
-        }
-      } catch {}
-
-      const cached =
-        await caches.match(indexUrl)
-        || await caches.match(canonicalPath)
-        || await caches.match(request);
-
-      if (cached) return cached;
-
-      return new Response("Apostila indisponível no momento.", {
-        status: 503,
-        headers: { "Content-Type": "text/plain; charset=utf-8" }
-      });
-    })());
-    return;
-  }
-
-  const isAppCode =
-    url.pathname.endsWith(".js")
-    || url.pathname.endsWith(".css")
-    || url.pathname.endsWith(".html")
-    || url.pathname.endsWith(".webmanifest");
-
-  if (request.mode === "navigate" || isAppCode) {
-    // Exact URLs only for the fast path: never mix cache-busting releases.
-    // Keep background writes alive; navigate uses the network with a bounded
-    // wait so a stalled connection does not freeze a previously visited page.
-    const network = fetch(request, { cache: "no-cache" }).then(async response => {
-      if (response?.status === 200) {
-        const cache = await caches.open(RUNTIME_CACHE);
-        await cache.put(request, response.clone()).catch(() => {});
-        await trimCache(RUNTIME_CACHE, RUNTIME_MAX_ITEMS).catch(() => {});
-      }
+  const path = url.pathname;
+  const navigate = request.mode === "navigate" || path.endsWith(".html") || PUBLIC_PAGES.has(path);
+  const manifest = path === "/content/weekly/manifest.json";
+  const image = cacheNames(request)[0] === PLANTAO_IMAGE_CACHE;
+  const weekly = path.startsWith("/content/weekly/") && !manifest;
+  const apostila = request.mode === "navigate" && /^\/apostilas\/[a-z0-9-]+\/$/.test(path);
+  // Preserve the existing apostila index fetch, with the full query identity.
+  const networkRequest = apostila ? new Request(new URL(path + "index.html" + url.search, self.location.origin), {
+    headers: request.headers, credentials: "omit",
+  }) : request;
+  let network;
+  function startNetwork() {
+    network ||= fetchPublic(networkRequest).then(async response => {
+      if (apostila) await storePublic(request, response);
       return response;
     });
-    event.waitUntil(network.then(() => {}, () => {}));
-    event.respondWith(
-      (async () => {
-        const exact = await caches.match(request);
-        if (exact && request.mode !== "navigate" && !url.pathname.endsWith(".html")) return exact;
-        let timer;
-        try {
-          if (exact && request.mode === "navigate") {
-            return await Promise.race([
-              network.then(response => response.ok ? response : exact),
-              new Promise(resolve => { timer = setTimeout(() => resolve(exact), 2500); })
-            ]);
-          }
-          return await network;
-        } catch {
-          // Cache-busting query versions differ between pages. The shell stores
-          // the canonical asset pathname, so an offline request must find it too.
-          const cached = await caches.match(request)
-            || (isAppCode && await caches.match(request, { ignoreSearch: true }));
-          if (cached) return cached;
-
-          if (request.mode === "navigate") {
-            return (
-              await caches.match("/dashboard/")
-            ) || (
-              await caches.match("/login/")
-            ) || new Response("Sem conexão. Abra uma página já visitada ou tente novamente quando a conexão voltar.", {status:503,headers:{"Content-Type":"text/plain; charset=utf-8"}});
-          }
-
-          return new Response("Recurso indisponível offline.", { status: 503 });
-        } finally { clearTimeout(timer); }
-      })()
-    );
-
-    return;
+    return network;
   }
-
-  event.respondWith(
-    caches.match(request).then(cached => {
-      if (cached) return cached;
-
-      return fetch(request).then(response => {
-        if (
-          !response
-          || response.status !== 200
-          || response.type !== "basic"
-        ) {
-          return response;
-        }
-
-        const copy = response.clone();
-
-        caches.open(RUNTIME_CACHE)
-          .then(cache => cache.put(request, copy))
-          .then(() => trimCache(RUNTIME_CACHE, RUNTIME_MAX_ITEMS))
-          .catch(() => {});
-
-        return response;
-      });
-    })
-  );
+  // Keep background refreshes alive on cached code and bounded navigation waits.
+  if (!weekly && !image) event.waitUntil(startNetwork().then(() => {}, () => {}));
+  event.respondWith((async () => {
+    const exact = await exactCached(request);
+    if (exact && !navigate && !manifest) {
+      if (!image || Date.now() - Number(exact.headers.get("sw-cached-at") || 0) < PLANTAO_IMAGE_MAX_AGE_MS) return exact;
+    }
+    let timer;
+    try {
+      const usableNetwork = response => response.ok || [401, 403].includes(response.status) ? response : exact;
+      if (exact && manifest) return await startNetwork().then(usableNetwork);
+      if (exact && navigate) return await Promise.race([
+        startNetwork().then(usableNetwork),
+        new Promise(resolve => { timer = setTimeout(() => resolve(exact), 2500); }),
+      ]);
+      return await startNetwork();
+    } catch {
+      return exact || offlineResponse(request);
+    } finally { clearTimeout(timer); }
+  })());
 });

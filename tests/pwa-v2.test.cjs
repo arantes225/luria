@@ -78,12 +78,12 @@ test('mobile drawer restores button interaction even with a hidden persistent ov
   dom.window.close();
 });
 
-test('service worker preloads v2 assets and matches versioned offline code by pathname', () => {
+test('service worker preloads v2 assets without discarding version query identity', () => {
   const sw = fs.readFileSync('service-worker.js', 'utf8');
   for (const asset of ['ui-v2-foundations.css', 'ui-navigation-v2.css', 'education-ui-v2.css', 'ui-navigation-v2.js', 'pwa.js']) {
     assert.ok(sw.includes('/assets/' + (asset.endsWith('.js') ? 'js/' : 'css/') + asset));
   }
-  assert.match(sw, /ignoreSearch: true/);
+  assert.doesNotMatch(sw, /ignoreSearch:\s*true/);
 });
 
 test('dashboard layout choice is not replaced by layout 1 in installed mode', () => {
@@ -112,7 +112,7 @@ test('installed PWA actively checks and offers current service worker on resume'
   assert.match(pwaSource, /luria-pwa-update-action/);
   assert.match(pwaSource, /updateViaCache:\s*"none"/);
   const worker = fs.readFileSync('service-worker.js', 'utf8');
-  assert.match(worker, /luria-pwa-v281-mobile-flow/);
+  assert.match(worker, /luria-pwa-v282-cache-security/);
 });
 
 test('hidden search overlays cannot hold the dashboard inert', () => {
