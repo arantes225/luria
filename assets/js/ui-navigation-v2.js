@@ -5,6 +5,7 @@
   const work = body.dataset.uiContext === "work";
   const narrow = matchMedia("(max-width: 980px)");
   let drawerOpen = false;
+  let drawerTrigger;
   let profileOpen = false;
   let scheduled = false;
   const set = (node, name, value) => {
@@ -16,6 +17,41 @@
   const flame = icon('<path d="M12 3c1 4-3 5-3 8 0 1 .5 2 1.5 2.5C11 11 13 10 13 8c4 3 6 5 6 8a7 7 0 0 1-14 0c0-3 2-5 4-7-.5 2 0 3 1 4"/>');
   const focusable = root => [...(root?.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled])') || [])]
     .filter(node => !node.hidden && node.getClientRects().length && !node.closest('[inert]'));
+
+  function enhanceMobileNavigation(sidebar) {
+    const installed = document.documentElement.dataset.pwa === "standalone";
+    if (!installed || body.dataset.uiAdmin === "v2" || !sidebar) return;
+    const entries = work
+      ? [["/trabalho/", "Início", '<path d="m3 10 9-7 9 7v10H3Z"/>'], ["/trabalho/passometro/", "Passômetro", '<path d="M4 4h16v16H4Z"/><path d="M8 8h8M8 12h8M8 16h5"/>'], ["/trabalho/gestor-plantoes/", "Plantões", '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/>']]
+      : [["/dashboard/", "Início", '<path d="m3 10 9-7 9 7v10H3Z"/>'], ["/aprender/", "Estudar", '<path d="M3 4h7l2 2 2-2h7v16h-7l-2 2-2-2H3Z"/><path d="M12 6v16"/>'], ["/consolidar/", "Revisar", '<path d="M4 10a8 8 0 1 1 1 9M4 4v6h6"/>']];
+    // Reuse only links already granted to this account by the existing sidebar.
+    const sources = entries.map(([href]) => sidebar.querySelector(`nav a[href="${href}"]`));
+    if (sources.some(source => !source || source.hidden)) {
+      document.getElementById("ui-mobile-navigation")?.remove(); delete body.dataset.uiMobileNavigation; return;
+    }
+    let rail = document.getElementById("ui-mobile-navigation");
+    if (!rail) {
+      rail = document.createElement("nav"); rail.id = "ui-mobile-navigation";
+      rail.className = "ui-mobile-navigation"; rail.setAttribute("aria-label", "Navegação principal");
+      entries.forEach(([href, label, paths]) => {
+        const link = document.createElement("a"); link.href = href;
+        link.innerHTML = icon(paths) + `<span>${label}</span>`; rail.append(link);
+      });
+      const more = document.createElement("button"); more.type = "button";
+      more.id = "ui-mobile-more"; more.setAttribute("aria-controls", "sidebar");
+      more.innerHTML = menuIcon + '<span>Mais</span>'; rail.append(more);
+      document.body.append(rail);
+    }
+    const activePath = sidebar.querySelector('nav a[aria-current="page"],nav a.active')?.getAttribute("href");
+    const studySection = ["cronograma", "caderno", "apostilas", "professor_alex"].includes(body.dataset.page) ? "/aprender/"
+      : ["flashcards", "questoes", "resolver_questoes", "caderno_erros"].includes(body.dataset.page) ? "/consolidar/" : activePath;
+    rail.querySelectorAll("a").forEach(link => {
+      if (link.getAttribute("href") === studySection) set(link, "aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+    set(rail.querySelector("button"), "aria-expanded", drawerOpen);
+    body.dataset.uiMobileNavigation = "true";
+  }
 
   function themes() {
     const node = document.createElement("div");
@@ -148,8 +184,9 @@
     set(trigger, "aria-controls", "sidebar");
     set(trigger, "aria-label", narrow.matches ? (open ? "Fechar navegação" : "Abrir navegação") : (body.dataset.uiSidebar === "collapsed" ? "Expandir navegação" : "Recolher navegação"));
     if (open && !drawerOpen) focusable(sidebar)[0]?.focus();
-    if (!open && drawerOpen) trigger?.focus();
+    if (!open && drawerOpen) (drawerTrigger?.isConnected ? drawerTrigger : trigger)?.focus();
     drawerOpen = open;
+    set(document.getElementById("ui-mobile-more"), "aria-expanded", open);
   }
   function enhance() {
     const sidebar = document.getElementById("sidebar");
@@ -195,6 +232,7 @@
     enhanceProfile(sidebar);
     enhanceStreak(sidebar, document.getElementById("luria-notifications"));
     syncDrawer();
+    enhanceMobileNavigation(sidebar);
     const menu = document.getElementById("luria-profile-menu");
     const open = !!menu && !menu.hidden;
     if (open && !profileOpen) focusable(menu)[0]?.focus();
@@ -206,17 +244,18 @@
     requestAnimationFrame(() => { scheduled = false; enhance(); });
   }
   document.addEventListener("click", event => {
-    const trigger = event.target.closest("#menu-open, #sidebar-close, #sidebar-backdrop");
+    const trigger = event.target.closest("#menu-open, #ui-mobile-more, #sidebar-close, #sidebar-backdrop");
     if (!trigger) return;
     event.preventDefault(); event.stopImmediatePropagation();
+    if (["menu-open", "ui-mobile-more"].includes(trigger.id) && !drawerOpen) drawerTrigger = trigger;
     if (trigger.id === "menu-open" && !narrow.matches) {
       body.dataset.uiSidebar = body.dataset.uiSidebar === "collapsed" ? "expanded" : "collapsed";
       body.classList.remove("sidebar-open");
-    } else body.classList.toggle("sidebar-open", trigger.id === "menu-open" && !body.classList.contains("sidebar-open"));
+    } else body.classList.toggle("sidebar-open", ["menu-open", "ui-mobile-more"].includes(trigger.id) && !body.classList.contains("sidebar-open"));
     syncDrawer();
   }, true);
   document.addEventListener("keydown", event => {
-    if (document.querySelector("#luria-session-overlay, #luria-search-overlay")) return;
+    if ([...document.querySelectorAll("#luria-session-overlay, #luria-search-overlay")].some(panel => !panel.hidden && panel.getClientRects().length)) return;
     if (event.key === "Escape") {
       if (drawerOpen) { event.preventDefault(); body.classList.remove("sidebar-open"); syncDrawer(); return; }
       for (const [panel, trigger] of [["luria-profile-menu", "luria-profile-toggle"], ["luria-pomodoro-panel", "luria-pomodoro-toggle"], ["luria-notification-panel", "luria-notification-toggle"]]) {
@@ -242,6 +281,11 @@
   window.addEventListener("docmap:ready", enhance);
   window.addEventListener("luria:dashboard-data", schedule);
   document.addEventListener("DOMContentLoaded", enhance, {once:true});
-  new MutationObserver(schedule).observe(body, {subtree:true, childList:true, attributes:true, attributeFilter:["class", "hidden"]});
+  // Updating question or notebook content should not rebuild the navigation.
+  const shellRegion = "#sidebar,.topbar,#luria-profile-menu,#luria-notifications";
+  new MutationObserver(records => {
+    if (records.some(record => record.target === body || record.target.closest?.(shellRegion)
+      || [...record.addedNodes].some(node => node.nodeType === 1 && (node.matches(shellRegion) || node.querySelector(shellRegion))))) schedule();
+  }).observe(body, {subtree:true, childList:true, attributes:true, attributeFilter:["class", "hidden"]});
   if (document.readyState !== "loading") enhance();
 })();
