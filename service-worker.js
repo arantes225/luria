@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v283-calculator-modal";
+const CACHE_VERSION = "luria-pwa-v284-calculator-dates";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -48,7 +48,8 @@ const APP_SHELL = [
   "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",
   "/assets/css/pwa-mobile.css?v=20260930-layout-pcr",
   "/assets/css/flashcards-ui-v2.css?v=1",
-  "/assets/css/calculadora-pwa-fix.css?v=20261012-pwa-calcs-1",
+  "/assets/css/calculadora-pwa-fix.css?v=20261012-pwa-calcs-2",
+  "/assets/js/calculadora-pwa-dates.js?v=20261012-pwa-calcs-2",
   "/assets/js/weekly-content.js?v=1",
   "/assets/js/app.js?v=20261004-dashboard-pattern-v78",
   "/assets/img/logos/pwa-icon-180.png?v=3",
