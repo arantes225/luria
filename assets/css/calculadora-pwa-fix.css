@@ -1,0 +1,216 @@
+/* LURIA · Calculadoras — dialog responsivo e seguro para iOS PWA
+   Isolado na pagina: nao altera os demais modais do Trabalho. */
+body[data-page="trabalho_calculadora"] .calc-modal,
+body[data-page="trabalho_calculadora"] .calc-modal *,
+body[data-page="trabalho_calculadora"] .calc-modal *::before,
+body[data-page="trabalho_calculadora"] .calc-modal *::after {
+  box-sizing: border-box;
+}
+body[data-page="trabalho_calculadora"] .calc-modal {
+  max-width: 100vw;
+  max-height: 100dvh;
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-card {
+  min-width: 0;
+  max-width: min(680px, 100%);
+  max-height: min(760px, calc(100dvh - 28px));
+}
+body[data-page="trabalho_calculadora"] .calc-modal-title,
+body[data-page="trabalho_calculadora"] .calc-modal-title > div,
+body[data-page="trabalho_calculadora"] .calc-modal-body,
+body[data-page="trabalho_calculadora"] .calc-modal-body form,
+body[data-page="trabalho_calculadora"] .calc-modal-body .fields,
+body[data-page="trabalho_calculadora"] .calc-modal-body .field {
+  min-width: 0;
+  max-width: 100%;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-title h3 {
+  color: var(--color-text-primary, var(--text)) !important;
+  overflow-wrap: anywhere;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-head .calc-code {
+  flex-shrink: 0;
+  display: grid !important;
+  place-items: center;
+  background: var(--color-primary-subtle, var(--surface-2)) !important;
+  color: var(--color-primary-text, var(--text)) !important;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body :is(.calc-purpose-box,.formula,.result,.note) {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body .fields {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body .field :is(input,select) {
+  display: block;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 9px 12px !important;
+  margin: 0 !important;
+  font-size: 16px !important;
+  font-family: inherit;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body .field select {
+  padding-right: 34px !important;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body .field input[type="date"] {
+  min-width: 0 !important;
+  width: 100% !important;
+  padding-inline: 12px 8px !important;
+  text-align: left;
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body .field input[type="date"]::-webkit-date-and-time-value {
+  min-width: 0;
+  text-align: left;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body .result b {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+@media (max-width: 700px) {
+  body[data-page="trabalho_calculadora"] .calc-modal {
+    inset: 0 !important;
+    width: 100vw;
+    height: 100dvh;
+    padding: max(12px, env(safe-area-inset-top, 0px))
+      10px max(12px, env(safe-area-inset-bottom, 0px)) !important;
+    align-items: center;
+    justify-content: center;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-card {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 1 auto;
+    width: 100% !important;
+    height: auto;
+    max-height: calc(100dvh - max(12px, env(safe-area-inset-top, 0px)) - max(12px, env(safe-area-inset-bottom, 0px))) !important;
+    margin: 0 auto;
+    overflow: hidden !important;
+    border-radius: 18px !important;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-head {
+    position: relative !important;
+    flex: 0 0 auto;
+    display: flex;
+    gap: 12px;
+    padding: 14px !important;
+    background: var(--color-surface, var(--surface)) !important;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-head .calc-modal-title {
+    flex: 1 1 auto;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-title h3 {
+    margin: 0;
+    font-size: 17px !important;
+    line-height: 1.25;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-title p {
+    margin-top: 4px;
+    color: var(--color-text-secondary, var(--muted)) !important;
+    font-size: 12px !important;
+    line-height: 1.35;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-head .calc-code {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-head .modal-close {
+    flex: 0 0 40px !important;
+    width: 40px;
+    height: 40px;
+    padding: 0 !important;
+    font-size: 23px !important;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    width: 100%;
+    padding: 14px 15px max(24px, env(safe-area-inset-bottom, 0px)) !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .fields {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .field {
+    width: 100%;
+    min-width: 0;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .field label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 12px !important;
+    line-height: 1.35;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .field :is(input,select) {
+    min-height: 48px !important;
+    line-height: 1.3 !important;
+    border-radius: 12px;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .calc-purpose-box {
+    margin-bottom: 10px;
+    padding: 10px 12px;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .formula {
+    margin-bottom: 14px;
+    padding: 11px 12px;
+    line-height: 1.45;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .actions {
+    position: static !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 0;
+    background: transparent !important;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .actions button {
+    min-width: 100px;
+    min-height: 44px !important;
+    padding: 10px 14px;
+    font-size: 14px !important;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .result {
+    margin-top: 16px;
+    padding: 14px !important;
+    border-radius: 14px;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .result b {
+    font-size: clamp(19px, 5.5vw, 25px) !important;
+    line-height: 1.24;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .result small,
+  body[data-page="trabalho_calculadora"] .calc-modal-body .note {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+}
+@media (max-width: 360px) {
+  body[data-page="trabalho_calculadora"] .calc-modal-head {
+    padding: 12px !important;
+    gap: 8px;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body {
+    padding-inline: 12px !important;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-title h3 {
+    font-size: 16px !important;
+  }
+}
