@@ -1,7 +1,7 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
-const vm=require('node:vm');
+const {workerFixture,resource}=require('./fixtures/service-worker.cjs');
 const {JSDOM}=require('jsdom');
 const navigation=fs.readFileSync('assets/js/ui-navigation-v2.js','utf8');
 const settle=()=>new Promise(resolve=>setTimeout(resolve,35));
@@ -25,20 +25,20 @@ test('no bottom navigation is invented for missing or hidden account routes',asy
  const close=trackObservers(dom.window);dom.window.matchMedia=()=>({matches:true,addEventListener(){}});dom.window.eval(navigation);dom.window.document.dispatchEvent(new dom.window.Event('DOMContentLoaded'));await settle();assert.equal(dom.window.document.getElementById('ui-mobile-navigation'),null);close();
 });
 
-function workerFixture({cached,fetch,timeout}={}) {
- const listeners={},writes=[];let timer;
- const context={URL,Request,Response,Promise,console,clearTimeout:()=>{},setTimeout:fn=>{timer=fn;return 1},fetch:fetch||(()=>new Promise(()=>{})),caches:{match:async()=>cached?.clone(),open:async()=>({put:async(req,response)=>writes.push(await response.text()),keys:async()=>[],match:async()=>cached?.clone()})},self:{location:{origin:'https://example.test'},addEventListener:(name,fn)=>listeners[name]=fn}};
- vm.runInNewContext(fs.readFileSync('service-worker.js','utf8'),context);
- return {writes,run:async(path,mode='cors')=>{let response;const pending=[];listeners.fetch({request:{method:'GET',url:'https://example.test'+path,mode},respondWith:p=>response=p,waitUntil:p=>pending.push(p)});await new Promise(resolve=>setImmediate(resolve));if(timeout)timer?.();return {response:await response,pending}}};
-}
 test('cached script renders without waiting for a stalled connection',async()=>{
- const f=workerFixture({cached:new Response('cached script')});const {response}=await f.run('/assets/js/app.js?v=release');assert.equal(await response.text(),'cached script');
+ const f=workerFixture({fetch:()=>new Promise(()=>{})});
+ await f.seed(f.RUNTIME_CACHE,'/assets/js/app.js?v=release',resource('/assets/js/app.js','cached script'));
+ const {response}=await f.run('/assets/js/app.js?v=release');assert.equal(await response.text(),'cached script');
 });
 test('cached page falls back after bounded network wait and refresh completes in background',async()=>{
- let complete;const f=workerFixture({cached:new Response('cached page'),fetch:()=>new Promise(resolve=>complete=resolve),timeout:true});const {response,pending}=await f.run('/dashboard/','navigate');assert.equal(await response.text(),'cached page');complete(new Response('fresh page'));await Promise.all(pending);assert.deepEqual(f.writes,['fresh page']);
+ let complete;const f=workerFixture({fetch:()=>new Promise(resolve=>complete=resolve)});
+ await f.seed(f.RUNTIME_CACHE,'/dashboard/',resource('/dashboard/','cached page'));f.writes.length=0;
+ const pending=f.run('/dashboard/',{mode:'navigate'});await new Promise(resolve=>setImmediate(resolve));f.timeout(2500);
+ const {response,pending:background}=await pending;assert.equal(await response.text(),'cached page');
+ complete(resource('/dashboard/','fresh page'));await Promise.all(background);assert.deepEqual(f.writes.map(write=>write.text),['fresh page']);
 });
-test('uncached offline navigation returns a usable response instead of undefined',async()=>{
- const f=workerFixture({fetch:async()=>{throw new Error('offline')}});const {response}=await f.run('/unknown/','navigate');assert.equal(response.status,503);assert.match(await response.text(),/Sem conexão/);
+test('uncached offline public navigation returns a usable response instead of undefined',async()=>{
+ const f=workerFixture();const {response}=await f.run('/flashcards/',{mode:'navigate'});assert.equal(response.status,503);assert.match(await response.text(),/Sem conexão/);
 });
 
 test('PWA update leaves editing uninterrupted and reuses worker registration',async()=>{
