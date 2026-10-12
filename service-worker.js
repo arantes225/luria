@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v287-adult-patient-v7-rig";
+const CACHE_VERSION = "luria-pwa-v288-simulador-paisagem";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

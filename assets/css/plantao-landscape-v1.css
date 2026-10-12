@@ -1,0 +1,147 @@
+/* LURIA · Sala de Emergencia: entrada guiada em paisagem no PWA móvel. */
+#luria-landscape-hint[hidden]{display:none!important}
+#luria-landscape-hint{
+  position:fixed!important;inset:0!important;z-index:2147483000!important;
+  display:flex!important;align-items:center;justify-content:center;
+  box-sizing:border-box;padding:max(26px,env(safe-area-inset-top)) max(25px,env(safe-area-inset-right)) max(26px,env(safe-area-inset-bottom)) max(25px,env(safe-area-inset-left));
+  background:rgba(3,15,29,.93);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  color:#fff;text-align:center;
+}
+#luria-landscape-hint .luria-rotate-panel{width:min(100%,380px);display:flex;align-items:center;flex-direction:column;gap:13px}
+#luria-landscape-hint .luria-rotate-brand{font:700 12px/1.3 ui-sans-serif,system-ui,sans-serif;letter-spacing:.2em;color:#8fc2f5}
+#luria-landscape-hint .luria-rotate-graphic{position:relative;width:128px;height:120px;margin:10px auto;display:grid;place-items:center}
+#luria-landscape-hint .luria-rotate-phone{width:52px;height:91px;border:4px solid #c9e5ff;border-radius:13px;position:relative;box-shadow:0 0 0 9px rgba(69,145,229,.10);animation:luria-turn-hint 3s ease-in-out infinite}
+#luria-landscape-hint .luria-rotate-phone::before{content:"";position:absolute;width:15px;height:4px;top:6px;left:50%;transform:translateX(-50%);border-radius:4px;background:#8fc2f5}
+#luria-landscape-hint .luria-rotate-phone::after{content:"";position:absolute;bottom:6px;left:50%;width:8px;height:8px;border:2px solid #8fc2f5;border-radius:50%;transform:translateX(-50%)}
+#luria-landscape-hint h2{font:700 clamp(24px,6vw,32px)/1.14 ui-sans-serif,system-ui,sans-serif;margin:4px 0 0;color:#fff;letter-spacing:-.035em}
+#luria-landscape-hint p{font:400 14px/1.5 ui-sans-serif,system-ui,sans-serif;margin:0;max-width:300px;color:#b7d0e8}
+#luria-landscape-hint .luria-rotate-tip{font-size:12px;color:#8caac7}
+#luria-landscape-hint button{margin-top:14px;border:1px solid rgba(176,208,242,.42);border-radius:12px;background:rgba(255,255,255,.08);color:#fff;font:600 13px/1 ui-sans-serif,system-ui,sans-serif;min-height:44px;padding:12px 22px}
+@keyframes luria-turn-hint{0%,18%,85%,100%{transform:rotate(0)}42%,66%{transform:rotate(-90deg)}}
+@media(prefers-reduced-motion:reduce){#luria-landscape-hint .luria-rotate-phone{animation:none;transform:rotate(-90deg)}}
+
+/* Para outros módulos e para navegadores desktop: estilo original intacto. */
+@media(orientation:landscape) and (max-height:620px) and (max-width:1150px){
+ body.luria-case-landscape{overflow:hidden!important;overscroll-behavior:none!important;background:#06182d!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]){
+  position:fixed!important;inset:0!important;z-index:11000!important;
+  display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:45px minmax(0,1fr)!important;
+  width:100vw!important;height:100dvh!important;min-height:0!important;max-height:100dvh!important;
+  padding:0!important;margin:0!important;gap:0!important;overflow:hidden!important;border:0!important;background:#06182d!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden])>.plantao-patient-card{display:none!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden])>.plantao-sim-top{
+  position:relative!important;inset:auto!important;z-index:20!important;
+  display:grid!important;grid-template-columns:auto minmax(0,1fr) auto auto!important;align-items:center!important;
+  grid-row:1!important;grid-column:1!important;min-height:45px!important;height:45px!important;
+  width:100%!important;max-height:45px!important;margin:0!important;padding:3px max(12px,env(safe-area-inset-right)) 3px max(12px,env(safe-area-inset-left))!important;
+  border:0!important;border-bottom:1px solid rgba(146,201,250,.22)!important;border-radius:0!important;
+  background:#071c35!important;gap:12px!important;box-sizing:border-box!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-sim-top #plantao-back{
+  display:block!important;grid-column:1!important;position:static!important;transform:none!important;
+  padding:7px 12px!important;height:34px!important;min-height:34px!important;width:auto!important;
+  border-radius:10px!important;font-size:11px!important;white-space:nowrap!important;color:#fff!important;
+  text-indent:0!important;background:#15365b!important
+ }
+ body.luria-case-landscape #plantao-back::after{display:none!important;content:none!important}
+ body.luria-case-landscape .plantao-sim-top .plantao-pwa-case-summary{
+  display:flex!important;flex-direction:row!important;gap:7px!important;align-items:center!important;
+  grid-column:2!important;min-width:0!important;margin:0!important;color:#e6f3ff!important;overflow:hidden!important
+ }
+ body.luria-case-landscape .plantao-sim-top .plantao-pwa-case-summary span{font-size:10px!important;flex:none}
+ body.luria-case-landscape .plantao-sim-top .plantao-pwa-case-summary strong{display:block!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;font-size:12px!important}
+ body.luria-case-landscape .plantao-sim-top .plantao-clock{
+  grid-column:3!important;grid-row:1!important;display:flex!important;gap:6px!important;align-items:center!important;color:#fff!important;margin:0!important;white-space:nowrap!important
+ }
+ body.luria-case-landscape .plantao-sim-top .plantao-clock span{display:none!important}
+ body.luria-case-landscape .plantao-sim-top .plantao-clock strong{margin:0!important;font-size:17px!important;color:#fff!important}
+ body.luria-case-landscape .plantao-sim-top .plantao-pwa-live{grid-column:4!important;font-size:10px!important;white-space:nowrap!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-bedside{
+  grid-row:2!important;grid-column:1!important;display:block!important;position:relative!important;
+  width:100%!important;height:100%!important;min-height:0!important;max-height:none!important;
+  padding:0!important;margin:0!important;overflow:hidden!important;background:#071a30!important;border:0!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-rail{
+  position:absolute!important;inset:0 auto 0 0!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;
+  width:138px!important;height:100%!important;max-width:138px!important;min-width:0!important;
+  box-sizing:border-box!important;margin:0!important;padding:6px 5px 7px max(5px,env(safe-area-inset-left))!important;
+  border:0!important;border-right:1px solid rgba(142,197,240,.30)!important;z-index:14!important;background:#091e37!important;overflow:hidden!important;
+  pointer-events:auto!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-score-live{display:none!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-pwa-patient-tab{
+  position:relative!important;inset:auto!important;display:block!important;transform:none!important;
+  flex:0 0 30px!important;width:100%!important;min-width:0!important;height:30px!important;min-height:30px!important;max-height:30px!important;
+  padding:2px 6px!important;margin:0 0 5px!important;border-radius:9px!important;font-size:11px!important;
+  color:#fff!important;background:#214d79!important;z-index:2!important;pointer-events:auto!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tabs{
+  position:relative!important;inset:auto!important;transform:none!important;
+  flex:1 1 auto!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  grid-template-rows:repeat(3,minmax(0,1fr))!important;gap:5px!important;
+  min-height:0!important;width:100%!important;height:auto!important;padding:0!important;margin:0!important;
+  overflow-y:auto!important;overflow-x:hidden!important;pointer-events:auto!important;align-content:stretch!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tabs .plantao-action-tab{
+  position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
+  grid-column:auto!important;grid-row:auto!important;transform:none!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;
+  gap:3px!important;width:100%!important;min-width:0!important;max-width:none!important;
+  height:100%!important;min-height:0!important;max-height:none!important;margin:0!important;padding:4px 2px!important;
+  border-radius:9px!important;background:#153554!important;color:#e4f4ff!important;border:1px solid rgba(140,189,233,.38)!important;
+  white-space:normal!important;text-align:center!important;font-size:9px!important;line-height:1.13!important;pointer-events:auto!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-tab>span:first-child{font-size:19px!important;line-height:1!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene{
+  position:absolute!important;top:0!important;right:0!important;bottom:0!important;left:138px!important;
+  width:auto!important;height:100%!important;min-height:0!important;max-height:none!important;
+  padding:0!important;margin:0!important;border:0!important;border-radius:0!important;overflow:hidden!important;background:#102d49!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene>img#plantao-patient-image{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-height:none!important;
+  display:block!important;object-fit:cover!important;object-position:43% 50%!important;aspect-ratio:auto!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-scene>.plantao-monitor-dock{
+  position:absolute!important;inset:6px max(7px,env(safe-area-inset-right)) 6px auto!important;
+  z-index:8!important;display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:5px!important;
+  width:clamp(204px,32%,254px)!important;min-width:0!important;max-width:254px!important;height:auto!important;min-height:0!important;
+  padding:0!important;margin:0!important;overflow:visible!important;box-sizing:border-box!important;background:transparent!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor{
+  position:relative!important;inset:auto!important;transform:none!important;flex:0 0 min(58%,211px)!important;
+  display:grid!important;grid-template-columns:minmax(0,1fr) 56px!important;grid-template-rows:repeat(3,minmax(0,1fr)) 19px!important;
+  width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;max-width:none!important;min-width:0!important;
+  margin:0!important;padding:5px!important;gap:2px!important;aspect-ratio:auto!important;
+  border:3px solid #93c4e9!important;border-radius:12px!important;background:#051624!important;box-shadow:0 6px 18px rgba(0,0,0,.34)!important;
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-feed{
+  position:relative!important;inset:auto!important;transform:none!important;flex:1 1 auto!important;
+  display:block!important;width:100%!important;height:auto!important;min-height:0!important;max-height:none!important;
+  overflow-y:auto!important;overscroll-behavior:contain!important;-webkit-overflow-scrolling:touch;
+  padding:7px 9px!important;margin:0!important;border:1px solid rgba(134,195,239,.34)!important;border-radius:11px!important;
+  background:rgba(5,20,36,.95)!important;color:#e8f4ff!important
+ }
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed .plantao-section-head h2{font-size:11px!important;color:#d8edff!important;margin:0!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-list{max-height:none!important;margin-top:5px!important;gap:4px!important;overflow:visible!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-item{padding:5px 6px!important;font-size:10px!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-feed-item p{font-size:10px!important;line-height:1.25!important;margin:3px 0 0!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) #plantao-patient-image{z-index:0!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .luria-v7-rig{z-index:1!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock{z-index:8!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-action-drawer:not([hidden]),
+ body.luria-case-landscape #plantao-action-drawer.plantao-action-drawer-pwa-portal:not([hidden]){
+  position:fixed!important;z-index:30000!important;top:48px!important;left:max(7px,env(safe-area-inset-left))!important;
+  right:max(7px,env(safe-area-inset-right))!important;bottom:7px!important;display:flex!important;flex-direction:column!important;
+  width:auto!important;height:auto!important;max-width:none!important;min-height:0!important;max-height:none!important;overflow:hidden!important;
+  padding:10px!important;border-radius:16px!important;background:#101e31!important;color:#fff!important
+ }
+ body.luria-case-landscape #plantao-action-drawer[hidden]{display:none!important}
+ body.luria-case-landscape #plantao-action-drawer .plantao-actions{min-height:0!important;overflow-y:auto!important;flex:1 1 auto!important}
+ body.luria-case-landscape #plantao-action-drawer .plantao-drawer-head{flex:0 0 auto!important}
+}
+@media(orientation:landscape) and (max-height:375px) and (max-width:1150px){
+ body.luria-case-landscape #plantao-simulator:not([hidden]){grid-template-rows:39px minmax(0,1fr)!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden])>.plantao-sim-top{height:39px!important;min-height:39px!important;max-height:39px!important}
+ body.luria-case-landscape #plantao-simulator:not([hidden]) .plantao-monitor-dock>.plantao-monitor{flex-basis:57%!important}
+}
