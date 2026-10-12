@@ -1,5 +1,15 @@
 const qsSb = window.supabaseClient;
 
+let qsOpenRevision = 0, qsLoadRevision = 0, qsSavingAnswerKey = false;
+function qsRequestContext() {
+  return {userId: qsState.user?.id, epoch: window.LuriaLocalOwnerStore?.epoch};
+}
+function qsContextIsCurrent(context) {
+  const owner = window.LuriaLocalOwnerStore;
+  return !!context.userId && qsState.user?.id === context.userId
+    && (!owner || (owner.ownerId === context.userId && owner.epoch === context.epoch));
+}
+
 const qsState = {
   user: null,
   file: null,
@@ -7892,6 +7902,10 @@ async function loadQuestionOverview() {
 }
 
 async function loadSets() {
+  const revision = ++qsLoadRevision;
+  await window.LuriaLocalOwnerStore?.ready;
+  const context = qsRequestContext();
+  if (revision !== qsLoadRevision || !qsContextIsCurrent(context)) return;
   const [
     setsResult,
     itemsResult,
@@ -7910,14 +7924,17 @@ async function loadSets() {
 
     qsSb
       .from("question_attempts")
-      .select("question_item_id,result,sent_to_error"),
+      .select("question_item_id,result,sent_to_error")
+      .eq("user_id", context.userId),
 
     qsSb
       .from("question_image_candidates")
       .select("*")
       .order("question_number", { ascending: true })
       .order("candidate_index", { ascending: true })
-  ]);
+  ]).catch(error => [{error}, {}, {}, {}]);
+
+  if (revision !== qsLoadRevision || !qsContextIsCurrent(context)) return;
 
   if (setsResult.error) {
     console.error(setsResult.error);
@@ -7928,12 +7945,9 @@ async function loadSets() {
     return;
   }
 
-  if (itemsResult.error) {
-    console.error(itemsResult.error);
-  }
-
-  if (attemptsResult.error) {
-    console.error(attemptsResult.error);
+  if (itemsResult.error || attemptsResult.error) {
+    setImportStatus("Não foi possível confirmar as questões e os resultados dos simulados.", "error");
+    return;
   }
 
   // Na biblioteca, imagens não são necessárias para calcular métricas.
@@ -9614,6 +9628,11 @@ async function ensureOfficialAnswerKey() {
 
 
 async function openSet(setId) {
+  const revision = ++qsOpenRevision;
+  await window.LuriaLocalOwnerStore?.ready;
+  const context = qsRequestContext();
+  if (revision !== qsOpenRevision || !qsContextIsCurrent(context)) return;
+  const isCurrent = () => revision === qsOpenRevision && qsContextIsCurrent(context);
   const set =
     qsState.sets.find(
       (item) => item.id === setId
@@ -9636,7 +9655,8 @@ async function openSet(setId) {
 
     qsSb
       .from("question_attempts")
-      .select("*"),
+      .select("*")
+      .eq("user_id", context.userId),
 
     qsSb
       .from("question_image_candidates")
@@ -9644,7 +9664,9 @@ async function openSet(setId) {
       .eq("set_id", setId)
       .order("question_number", { ascending: true })
       .order("candidate_index", { ascending: true })
-  ]);
+  ]).catch(error => [{error}, {}, {}]);
+
+  if (!isCurrent()) return;
 
   if (itemsResult.error) {
     console.error(itemsResult.error);
@@ -9656,7 +9678,8 @@ async function openSet(setId) {
   }
 
   if (attemptsResult.error) {
-    console.error(attemptsResult.error);
+    setAnswerStatus("Não foi possível confirmar o histórico de respostas. Tente abrir a lista novamente.", "error");
+    return;
   }
 
   const changingSet =
@@ -9664,12 +9687,9 @@ async function openSet(setId) {
     && qsState.currentSet.id
       !== setId;
 
-  if (changingSet) {
-    qsState.imageSelections.clear();
-    clearAnswerScreenshotMemory();
-  }
-
-  const items =
+  let items, gallery;
+  try {
+    items =
     await attachQuestionImageUrls(
       itemsResult.data || []
     );
@@ -9682,16 +9702,25 @@ async function openSet(setId) {
       galleryResult.error
     );
 
-    qsState.imageGallery =
-      [];
+    gallery = [];
 
   } else {
-    qsState.imageGallery =
+    gallery =
       await attachGalleryImageUrls(
         galleryResult?.data
         || []
       );
   }
+  } catch (error) {
+    if (isCurrent()) setAnswerStatus(`Não foi possível carregar as imagens: ${error.message}`, "error");
+    return;
+  }
+  if (!isCurrent()) return;
+  if (changingSet) {
+    qsState.imageSelections.clear();
+    clearAnswerScreenshotMemory();
+  }
+  qsState.imageGallery = gallery;
 
   const itemIds = new Set(
     items.map((item) => item.id)
@@ -15812,7 +15841,13 @@ function readWrongMetadata(itemId) {
 }
 
 async function saveAnswerKey() {
-  if (!qsState.currentSet) return;
+  if (!qsState.currentSet || qsSavingAnswerKey) return;
+  const context = qsRequestContext(), setId = qsState.currentSet.id, revision = qsOpenRevision;
+  if (!qsContextIsCurrent(context)) {
+    setAnswerStatus("Sua sessão mudou. Atualize a página antes de salvar.", "error");
+    return;
+  }
+  const isCurrent = () => qsContextIsCurrent(context) && qsState.currentSet?.id === setId && revision === qsOpenRevision;
 
   const wrongIds =
     new Set(currentWrongIds());
@@ -15896,8 +15931,13 @@ async function saveAnswerKey() {
     document.getElementById("qs-save-key");
 
   button.disabled = true;
+  qsSavingAnswerKey = true;
+  const controls = Array.from(document.querySelectorAll("#qs-question-list input, #qs-question-list select, #qs-question-list textarea"))
+    .filter(control => !control.disabled);
+  controls.forEach(control => { control.disabled = true; });
   setAnswerStatus("Salvando gabarito...");
 
+  try {
   const { error } = await qsSb
     .from("question_attempts")
     .upsert(
@@ -15908,18 +15948,8 @@ async function saveAnswerKey() {
       }
     );
 
-  button.disabled = false;
-
-  if (error) {
-    console.error(error);
-
-    setAnswerStatus(
-      `Não foi possível salvar: ${error.message}`,
-      "error"
-    );
-
-    return;
-  }
+  if (error) throw error;
+  if (!isCurrent()) return;
 
   setAnswerStatus(
     "Gabarito salvo.",
@@ -15927,9 +15957,14 @@ async function saveAnswerKey() {
   );
 
   await loadSets();
-  await openSet(
-    qsState.currentSet.id
-  );
+  if (isCurrent()) await openSet(setId);
+  } catch (error) {
+    if (isCurrent()) setAnswerStatus(`Não foi possível salvar: ${error.message}`, "error");
+  } finally {
+    qsSavingAnswerKey = false;
+    button.disabled = false;
+    controls.forEach(control => { control.disabled = false; });
+  }
 }
 
 async function compressNotebookGalleryBlob(
@@ -16869,6 +16904,7 @@ async function deleteSet(setId) {
 }
 
 function closeCurrentSet() {
+  qsOpenRevision += 1;
   clearAnswerScreenshotMemory();
 
   qsState.pendingNewSetId = null;

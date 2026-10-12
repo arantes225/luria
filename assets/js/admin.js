@@ -735,9 +735,29 @@
     grid.innerHTML = state.planPrices.map(item => `<article class="admin-plan-price-card" data-plan="${esc(item.plan_slug)}"><strong>Plano ${esc(labels[item.plan_slug]||item.plan_slug)}</strong><label><span>Mensal</span><div class="admin-price-input"><b>R$</b><input data-price="monthly_price_cents" inputmode="decimal" value="${(Number(item.monthly_price_cents||0)/100).toFixed(2).replace(".",",")}"></div></label><label><span>Anual à vista</span><div class="admin-price-input"><b>R$</b><input data-price="annual_cash_price_cents" inputmode="decimal" value="${(Number(item.annual_cash_price_cents||0)/100).toFixed(2).replace(".",",")}"></div></label><label><span>Anual parcelado</span><div class="admin-price-input"><b>R$</b><input data-price="annual_installment_price_cents" inputmode="decimal" value="${(Number(item.annual_installment_price_cents||0)/100).toFixed(2).replace(".",",")}"></div></label><label><span>Parcelas</span><input class="admin-installments-input" data-price="annual_installments" type="number" min="1" max="24" value="${Number(item.annual_installments||12)}"></label></article>`).join("");
   }
 
-  function moneyInputToCents(value) {
-    const normalized=String(value||"0").replace(/\s/g,"").replace(/\./g,"").replace(",",".");
-    return Math.max(0,Math.round((Number(normalized)||0)*100));
+  function moneyInputToCents(value, format="br") {
+    const text=String(value??"").trim();
+    const pattern=format==="number" ? /^\d+(?:\.\d{1,2})?$/ : /^(?:\d+|\d{1,3}(?:\.\d{3})+)(?:,\d{1,2})?$/;
+    if(!pattern.test(text)) throw new Error("Informe um valor válido, como "+(format==="number" ? "1234.56" : "1.234,56")+". Para zero, digite 0.");
+    const normalized=format==="number" ? text : text.replace(/\./g,"").replace(",",".");
+    const [whole,fraction=""]=normalized.split(".");
+    const cents=Number(whole)*100+Number(fraction.padEnd(2,"0"));
+    if(!Number.isSafeInteger(cents) || cents<0) throw new Error("O valor informado está fora do intervalo numérico permitido.");
+    return cents;
+  }
+
+  function readAdminMoneyInput(input, format="br") {
+    if(!input) throw new Error("Campo monetário não encontrado.");
+    input.setCustomValidity("");
+    try{
+      const cents=moneyInputToCents(input.value,format);
+      if(!input.checkValidity()) throw new Error(input.validationMessage);
+      return cents;
+    }catch(error){
+      input.setCustomValidity(error.message);
+      input.reportValidity();input.focus();
+      throw error;
+    }
   }
 
   function renderLogistics(logistics, metrics) {
@@ -5197,13 +5217,15 @@
 
     $("admin-save-plan-prices")?.addEventListener("click", async () => {
       const button=$("admin-save-plan-prices");
-      const items=Array.from(document.querySelectorAll(".admin-plan-price-card")).map(card=>({
+      if(button?.disabled) return;
+      let items;
+      try{items=Array.from(document.querySelectorAll(".admin-plan-price-card")).map(card=>({
         plan_slug:card.dataset.plan,
-        monthly_price_cents:moneyInputToCents(card.querySelector('[data-price="monthly_price_cents"]')?.value),
-        annual_cash_price_cents:moneyInputToCents(card.querySelector('[data-price="annual_cash_price_cents"]')?.value),
-        annual_installment_price_cents:moneyInputToCents(card.querySelector('[data-price="annual_installment_price_cents"]')?.value),
+        monthly_price_cents:readAdminMoneyInput(card.querySelector('[data-price="monthly_price_cents"]')),
+        annual_cash_price_cents:readAdminMoneyInput(card.querySelector('[data-price="annual_cash_price_cents"]')),
+        annual_installment_price_cents:readAdminMoneyInput(card.querySelector('[data-price="annual_installment_price_cents"]')),
         annual_installments:Math.max(1,Number(card.querySelector('[data-price="annual_installments"]')?.value||12))
-      }));
+      }));}catch(error){return;}
       if(button){button.disabled=true;button.textContent="Salvando...";}
       try{
         const {data,error}=await sb.rpc("admin_save_plan_prices",{p_items:items});
@@ -5256,28 +5278,16 @@
               )
             );
 
-          const items =
-            rows.map(row => {
+          let items;
+          try{items = rows.map(row => {
               const key =
                 row.dataset.costKey;
 
-              const amount =
-                Number(
-                  row.querySelector(
-                    '[data-cost-field="amount"]'
-                  )?.value
-                  || 0
-                );
+              const amountCents = readAdminMoneyInput(row.querySelector('[data-cost-field="amount"]'),"number");
 
               return {
                 key,
-                amount_cents:
-                  Math.max(
-                    0,
-                    Math.round(
-                      amount * 100
-                    )
-                  ),
+                amount_cents: amountCents,
                 cadence:
                   row.querySelector(
                     '[data-cost-field="cadence"]'
@@ -5289,7 +5299,11 @@
                   )?.value
                   || "general"
               };
-            });
+            });}catch(error){
+              const message=$("admin-cost-editor-message");
+              if(message) message.textContent=error.message;
+              return;
+            }
 
           const save =
             $("admin-cost-save");

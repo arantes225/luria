@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-eT+LFwsBjF4dxd5HooPe4IpEaq1oVI0aXNou7sX/4w4=' 'sha256-vGQq2RsuzkF3dHP+ZH83tvmA9uqZU5OJnSkukyr+/kU='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-DwsxDnl2C1ldVFmOHNX2w5Luq2ApL+qyLEc4JTCUUKo=' 'sha256-vGQq2RsuzkF3dHP+ZH83tvmA9uqZU5OJnSkukyr+/kU='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Resolver questões · LURIA</title>
@@ -212,6 +212,8 @@
  const DAILY_LIMIT=50, DAILY_PER_LOT=25;
  const DAILY_LOT_TITLES=["Lote 1 — questões aprovadas","Lote 2 — questões aprovadas"];
  const state={user:null,set:null,items:[],attempts:new Map(),index:0,selected:new Map(),marked:new Set(),eliminated:new Map(),started:Date.now(),highlight:false,highlightColor:"#fff1a8",fontSize:11};
+ let pendingAnswer=null,completed=false,ownerEpoch=null;
+ function readerIsCurrent(){const owner=window.LuriaLocalOwnerStore;return !!state.user&&(!owner||(owner.ownerId===state.user.id&&owner.epoch===ownerEpoch))}
  const $=id=>document.getElementById(id), esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
  function opts(item){const a=item.alternatives||{};return ["A","B","C","D","E"].map(k=>({k,t:typeof a[k]==="string"?a[k]:typeof a[k?.toLowerCase?.()]==="string"?a[k.toLowerCase()]:""})).filter(x=>x.t)}
  function firstUnanswered(){const i=state.items.findIndex(x=>!state.attempts.has(x.id));return i<0?0:i}
@@ -254,6 +256,7 @@
   if(error){console.warn("Fontes não acessíveis",error.message);return}
   (data||[]).forEach(x=>sources.set(x.id,x));
  }
+ if(!readerIsCurrent())return;
  state.items=state.items.map(item=>{
   const bank=banks.get(item.question_bank_id);if(!bank)return item;
   const refs=[bank.answer_source_id,bank.source_id].map(id=>sources.get(id)).filter(Boolean);
@@ -266,7 +269,7 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
  function render(){
   const item=state.items[state.index]; if(!item)return;
   $("qr-card-question").textContent="Questão "+(state.index+1);
-  state.started=Date.now(); const at=state.attempts.get(item.id), sel=state.selected.get(item.id)||String(at?.selected_option||"").toUpperCase(), confirmed=!!at, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
+  state.started=Date.now(); const at=state.attempts.get(item.id), sel=at?String(at.selected_option||"").toUpperCase():state.selected.get(item.id), confirmed=!!at, locked=confirmed||pendingAnswer===item.id, correct=String(item.official_answer||at?.correct_option||"").toUpperCase();
   $("qr-source").textContent=item.source_label||"LURIA";$("qr-text").textContent=item.stem||item.raw_text||"Enunciado indisponível.";$("qr-area").textContent=item.area||"Área não classificada";$("qr-materia").textContent=item.materia||item.subject||"Matéria não classificada";$("qr-difficulty").textContent=item.difficulty||"Não informada";const tagSource=[item.topic,item.subtopic,item.area,item.materia].filter(Boolean);$("qr-tags").innerHTML=(tagSource.length?tagSource:["Sem tags"]).slice(0,5).map(t=>'<span class="qr-tag">'+esc(t)+'</span>').join("");
   const img=$("qr-image"); const hasQuestionImage=Boolean(item.image_path && item.image_url);
   img.onload=null;img.onerror=null;
@@ -277,21 +280,39 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
     img.src=item.image_url;
   }else{img.hidden=true;img.style.display="none";img.removeAttribute("src")}
   const os=opts(item),cutSet=state.eliminated.get(item.id)||new Set();$("qr-options").innerHTML=(os.length?os:[{k:"A",t:"Alternativa A"},{k:"B",t:"Alternativa B"},{k:"C",t:"Alternativa C"},{k:"D",t:"Alternativa D"}]).map(o=>{let cl="qr-option";if(sel===o.k)cl+=" selected";if(cutSet.has(o.k))cl+=" eliminated";if(confirmed&&correct){if(o.k===correct)cl+=" correct";if(sel===o.k&&o.k!==correct)cl+=" wrong"}return '<button class="'+cl+'" data-opt="'+o.k+'" '+(confirmed?"disabled":"")+'><span class="qr-letter">'+o.k+'</span><span class="qr-option-text">'+esc(o.t)+'</span><span class="qr-cut" data-cut="'+o.k+'" role="button" tabindex="0" aria-label="Eliminar alternativa '+o.k+'"><svg viewBox="0 0 24 24"><circle cx="6" cy="7" r="2.5"/><circle cx="6" cy="17" r="2.5"/><path d="m8.2 8.2 11.3 7.3"/><path d="m8.2 15.8 11.3-7.3"/></svg></span></button>'}).join("");
-  document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=e=>{if(e.target.closest("[data-cut]"))return;const set=state.eliminated.get(item.id)||new Set();if(set.has(b.dataset.opt))return;state.selected.set(item.id,b.dataset.opt);render()});
-  document.querySelectorAll("[data-cut]").forEach(c=>{c.onclick=e=>{e.stopPropagation();if(confirmed)return;const set=state.eliminated.get(item.id)||new Set();if(set.has(c.dataset.cut))set.delete(c.dataset.cut);else set.add(c.dataset.cut);state.eliminated.set(item.id,set);if(state.selected.get(item.id)===c.dataset.cut)state.selected.delete(item.id);render()};c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}}});
+  document.querySelectorAll("[data-opt]").forEach(b=>b.onclick=e=>{if(locked||e.target.closest("[data-cut]"))return;const set=state.eliminated.get(item.id)||new Set();if(set.has(b.dataset.opt))return;state.selected.set(item.id,b.dataset.opt);render()});
+  document.querySelectorAll("[data-cut]").forEach(c=>{c.onclick=e=>{e.stopPropagation();if(locked)return;const set=state.eliminated.get(item.id)||new Set();if(set.has(c.dataset.cut))set.delete(c.dataset.cut);else set.add(c.dataset.cut);state.eliminated.set(item.id,set);if(state.selected.get(item.id)===c.dataset.cut)state.selected.delete(item.id);render()};c.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();c.click()}}});
   const result=$("qr-answer-result");result.hidden=!confirmed;result.className="qr-answer-result"+(confirmed?(correct&&sel===correct?" correct":" wrong"):"");result.textContent=confirmed?(correct?(sel===correct?"Resposta correta!":"Resposta incorreta. Gabarito: "+correct):"Resposta registrada."):"";const fb=$("qr-feedback"),commentBtn=$("qr-comment-toggle"); if(confirmed){const ok=correct&&sel===correct,exps=explanationEntries(item),correctExp=exps.find(x=>x.k===correct),selectedExp=exps.find(x=>x.k===sel),refs=referenceEntries(item);const mainExp=correctExp?.t||selectedExp?.t||"";const allExps=exps.length?'<div class="qr-alt-explanations">'+exps.map(x=>'<div class="qr-alt-explanation '+(x.k===correct?"correct":"")+'"><b>'+esc(x.k)+'.</b> '+esc(x.t)+'</div>').join("")+'</div>':"";const refsHtml='<div class="qr-justification"><strong>Referências</strong>'+(refs.length?'<div class="qr-reference-list">'+refs.map((r,i)=>'<div class="qr-reference-item">'+(i+1)+'. '+esc(r)+'</div>').join("")+'</div>':'<p>As referências desta questão ainda não foram preenchidas no banco.</p>')+'</div>';commentBtn.hidden=false;commentBtn.textContent="Comentário LURIA";commentBtn.setAttribute("aria-expanded","false");fb.hidden=true;fb.innerHTML='<div class="qr-justification"><strong>Comentário LURIA</strong><p>'+(mainExp?esc(mainExp):"A justificativa desta questão ainda não foi preenchida no banco.")+'</p>'+allExps+'</div>'+refsHtml+'<div class="qr-pulo"><strong>Pulo do Gato</strong><p>'+esc(item.pulo_do_gato||"O Pulo do Gato desta questão ainda não foi preenchido no banco.")+'</p></div><a class="qr-btn primary qr-talk-alex" href="/professor-alex/?q='+encodeURIComponent("Explique esta questão da LURIA, o raciocínio para o gabarito e por que cada alternativa está correta ou incorreta:\n"+(item.stem||item.raw_text||"")+"\nAlternativas:\n"+opts(item).map(x=>x.k+") "+x.t).join("\n")+"\nGabarito: "+(correct||"não informado"))+'">Falar com Alex</a>'}else{commentBtn.hidden=true;fb.hidden=true;fb.innerHTML=""}
-  $("qr-confirm").disabled=false;$("qr-confirm").textContent=confirmed?"Respondida":"Responder";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
+  document.querySelectorAll("[data-opt]").forEach(b=>{b.disabled=locked});
+  $("qr-confirm").disabled=!!pendingAnswer;$("qr-confirm").textContent=confirmed?"Respondida":"Responder";$("qr-prev").disabled=state.index===0;$("qr-next").disabled=state.index===state.items.length-1;
   $("qr-favorite").setAttribute("aria-pressed",state.marked.has(item.id)?"true":"false");
   const total=state.items.length;
   const attemptsArr=[...state.attempts.values()],hits=attemptsArr.filter(a=>a.result==="correct").length,errs=attemptsArr.filter(a=>a.result==="wrong").length,answered=hits+errs,acc=answered?Math.round(hits/answered*100):0;$("qr-hits").textContent=hits;$("qr-errors").textContent=errs;$("qr-blank").textContent=Math.max(0,total-answered);$("qr-total").textContent=total;$("qr-accuracy").textContent=acc+"%";$("qr-ring").style.background="conic-gradient(var(--success) 0 "+acc+"%,var(--surface-2) "+acc+"% 100%)";
   $("qr-answer-grid").innerHTML=state.items.map((q,i)=>{const a=state.attempts.get(q.id);let cl="qr-answer-cell";if(i===state.index)cl+=" current";if(a?.result==="correct")cl+=" correct";else if(a?.result==="wrong")cl+=" wrong";return '<button class="'+cl+'" type="button" data-jump="'+i+'" aria-label="Questão '+(i+1)+'">'+(i+1)+'</button>'}).join("");
   document.querySelectorAll("[data-jump]").forEach(b=>b.onclick=()=>navigateTo(Number(b.dataset.jump)||0));
  }
- async function confirm(){const item=state.items[state.index],selected=state.selected.get(item.id);if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}const correct=String(item.official_answer||"").toUpperCase();const previous=state.attempts.get(item.id)||{};const row={user_id:state.user.id,question_item_id:item.id,selected_option:selected,result:correct?(selected===correct?"correct":"wrong"):"correct",area:previous.area||null,materia:previous.materia||null,correct_option:correct||null,ccq:previous.ccq||null,what_i_thought:previous.what_i_thought||null,sent_to_error:previous.sent_to_error||false,error_entry_id:previous.error_entry_id||null,answered_at:new Date().toISOString()};const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();if(error){status("Não foi possível salvar: "+error.message,"error");return}state.attempts.set(item.id,data||row);
- if(state.items.length>0&&state.items.every(q=>state.attempts.has(q.id))){
-   window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
+ async function confirm(){
+   const item=state.items[state.index];
+   if(!item||!readerIsCurrent()||pendingAnswer||state.attempts.has(item.id))return;
+   const selected=state.selected.get(item.id),correct=String(item.official_answer||"").trim().toUpperCase();
+   if(!selected){status("Escolha uma alternativa antes de confirmar.","error");return}
+   if(!opts(item).some(o=>o.k===correct)){status("Esta questão não possui um gabarito válido para correção.","error");return}
+   const userId=state.user.id,epoch=ownerEpoch;
+   const row={user_id:userId,question_item_id:item.id,selected_option:selected,result:selected===correct?"correct":"wrong",area:null,materia:null,correct_option:correct,ccq:null,what_i_thought:null,sent_to_error:false,error_entry_id:null,answered_at:new Date().toISOString()};
+   pendingAnswer=item.id;render();
+   try{
+     const {data,error}=await sb.from("question_attempts").upsert(row,{onConflict:"user_id,question_item_id"}).select("*").single();
+     if(!readerIsCurrent()||state.user.id!==userId||ownerEpoch!==epoch)return;
+     if(error)throw error;
+     if(!data)throw new Error("O salvamento não foi confirmado. Verifique sua conexão e tente novamente.");
+     state.attempts.set(item.id,data);
+     if(!completed&&state.items.length>0&&state.items.every(q=>state.attempts.has(q.id))){
+       completed=true;window.LuriaGuidedStudy?.completeActiveStep?.("questions-set-complete");
+     }
+     status("Resposta salva.","success");
+   }catch(error){if(readerIsCurrent()&&ownerEpoch===epoch)status("Não foi possível salvar: "+error.message,"error")}
+   finally{pendingAnswer=null;if(readerIsCurrent())render()}
  }
- status("Resposta salva.","success");render()}
  async function signedImages(items){const paths=[...new Set(items.map(x=>x.image_path).filter(Boolean))];if(!paths.length)return items;const {data}=await sb.storage.from("docmap").createSignedUrls(paths,300);const map=new Map((data||[]).map(x=>[x.path,x.signedUrl]));return items.map(x=>({...x,image_url:map.get(x.image_path)||null}))}
  function dailyDaySerial(){const d=new Date();return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/86400000)}
  function rotatingSlice(items,count,offset){if(!items.length||count<=0)return[];const out=[];for(let i=0;i<Math.min(count,items.length);i+=1)out.push(items[(offset+i)%items.length]);return out}
@@ -318,15 +339,18 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
    return{set:{title:"Questões do dia",total_questions:mixed.length,status:"ready"},items:mixed.slice(0,DAILY_LIMIT)};
  }
  async function init(){
+   await window.LuriaLocalOwnerStore?.ready;
+   const epoch=window.LuriaLocalOwnerStore?.epoch??null;
    const {data:{user}}=await sb.auth.getUser();
    if(!user){location.href="/login/";return}
-   state.user=user;
+   if(window.LuriaLocalOwnerStore&&(window.LuriaLocalOwnerStore.ownerId!==user.id||window.LuriaLocalOwnerStore.epoch!==epoch))return;
+   state.user=user;ownerEpoch=epoch;
    let set=null,items=[],attempts=[],loadError=null;
    if(isDaily){
      try{
        const daily=await loadDailyItems(user);
        set=daily.set;items=daily.items;
-       const attemptsResult=await withTimeout(sb.from("question_attempts").select("*").eq("user_id",user.id),8000,{data:[],error:null});
+       const attemptsResult=await withTimeout(sb.from("question_attempts").select("*").eq("user_id",user.id),8000,{data:null,error:{message:"Não foi possível confirmar o histórico de respostas."}});
        attempts=attemptsResult.data||[];
        if(attemptsResult.error)loadError=attemptsResult.error;
      }catch(error){loadError=error}
@@ -345,6 +369,7 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
      ]);
      set=setData;items=itemData||[];attempts=attemptData||[];loadError=se||ie||ae;
    }
+   if(!readerIsCurrent())return;
    if(loadError||!set||!items.length){$("qr-loading").textContent=isDaily?"Não foi possível montar as 50 questões de hoje.":"Não foi possível carregar esta lista.";return}
    state.set=set;state.items=items.map(x=>({...x,image_url:null}));
    const ids=new Set(state.items.map(x=>x.id));
@@ -352,12 +377,18 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
    state.index=firstUnanswered();
    $("qr-loading").hidden=true;$("qr-layout").hidden=false;render();hydrateReferences().catch(console.error);
    withTimeout(signedImages(items),6000,null).then(signed=>{
-     if(!signed)return;
+     if(!signed||!readerIsCurrent())return;
      const urls=new Map(signed.map(x=>[x.id,x.image_url||null]));
      state.items=state.items.map(x=>({...x,image_url:urls.get(x.id)||null}));
      render();
    }).catch(()=>{});
  }
+ window.addEventListener("luria:owner-changed",()=>{
+   if(!state.user||readerIsCurrent())return;
+   state.user=null;state.items=[];state.attempts.clear();state.selected.clear();
+   $("qr-layout").hidden=true;$("qr-loading").hidden=false;
+   $("qr-loading").textContent="Sua sessão mudou. Atualize a página para continuar.";
+ });
  function closeToolPopovers(except=null){
    [["qr-highlight-popover","qr-highlight-tool"],["qr-font-popover","qr-font-tool"]].forEach(([pop,btn])=>{
      if(pop===except)return;
@@ -390,7 +421,7 @@ function withTimeout(promise,ms,fallback){return Promise.race([promise,new Promi
  $("qr-font-reset").onclick=e=>{e.stopPropagation();setQuestionFont(11)};
  document.addEventListener("click",e=>{if(!e.target.closest(".qr-tool-wrap"))closeToolPopovers()});
  $("qr-comment-toggle").onclick=()=>{const fb=$("qr-feedback");fb.querySelectorAll(".luria-learning-actions,.luria-learning-box,.luria-related-links").forEach(el=>el.remove());fb.hidden=!fb.hidden;$("qr-comment-toggle").textContent=fb.hidden?"Comentário LURIA":"Fechar comentário";$("qr-comment-toggle").setAttribute("aria-expanded",String(!fb.hidden))};
- $("qr-confirm").onclick=async()=>{const item=state.items[state.index];if(state.attempts.has(item.id))return;await confirm()};$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);setTimeout(()=>{if(!$("qr-loading").hidden&&$("qr-loading").textContent.includes("Carregando"))$("qr-loading").textContent="O carregamento demorou mais que o esperado. Atualize a página para tentar novamente."},12000);init().catch(error=>{console.error(error);$("qr-loading").textContent="Não foi possível carregar as questões. Atualize a página para tentar novamente."});
+ $("qr-confirm").onclick=confirm;$("qr-prev").onclick=()=>navigateTo(state.index-1);$("qr-next").onclick=()=>navigateTo(state.index+1);setQuestionFont(state.fontSize);setInterval(tick,1000);setTimeout(()=>{if(!$("qr-loading").hidden&&$("qr-loading").textContent.includes("Carregando"))$("qr-loading").textContent="O carregamento demorou mais que o esperado. Atualize a página para tentar novamente."},12000);init().catch(error=>{console.error(error);$("qr-loading").textContent="Não foi possível carregar as questões. Atualize a página para tentar novamente."});
 })();
 </script>
 <script>

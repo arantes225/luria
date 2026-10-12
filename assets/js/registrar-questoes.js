@@ -1,4 +1,10 @@
 const questionsSb = window.supabaseClient;
+let questionSessionSaving = false;
+function questionOwnerIsCurrent(userId, epoch) {
+  const owner = window.LuriaLocalOwnerStore;
+  return questionsState.user?.id === userId
+    && (!owner || (owner.ownerId === userId && owner.epoch === epoch));
+}
 
 const questionsState = {
   user: null,
@@ -141,12 +147,18 @@ function renderQuestionDayBanner() {
 }
 
 async function loadQuestionSessions() {
+  await window.LuriaLocalOwnerStore?.ready;
+  const userId = questionsState.user?.id, epoch = window.LuriaLocalOwnerStore?.epoch;
+  if (!userId || !questionOwnerIsCurrent(userId, epoch)) return;
   const { data, error } = await questionsSb
     .from("question_sessions")
     .select("*")
+    .eq("user_id", userId)
     .order("session_date", { ascending: false })
     .order("created_at", { ascending: false })
     .limit(500);
+
+  if (!questionOwnerIsCurrent(userId, epoch)) return;
 
   if (error) {
     console.error(error);
@@ -354,6 +366,12 @@ function renderHistory() {
 
 async function saveQuestionSession(event) {
   event.preventDefault();
+  if (questionSessionSaving) return;
+  const userId = questionsState.user?.id, epoch = window.LuriaLocalOwnerStore?.epoch;
+  if (!userId || !questionOwnerIsCurrent(userId, epoch)) {
+    setQuestionStatus("Sua sessão mudou. Atualize a página antes de registrar.", "error");
+    return;
+  }
 
   const total = readInteger("question-total");
   const correct = readInteger("question-correct");
@@ -425,34 +443,32 @@ async function saveQuestionSession(event) {
     document.getElementById("save-question-session");
 
   button.disabled = true;
+  questionSessionSaving = true;
+  const controls = Array.from(document.querySelectorAll("#question-form input, #question-form select, #question-form textarea"))
+    .filter(control => !control.disabled);
+  controls.forEach(control => { control.disabled = true; });
   setQuestionStatus("Salvando...");
 
+  try {
   const { data: savedSession, error } = await questionsSb
     .from("question_sessions")
     .insert(payload)
     .select("id")
     .single();
 
-  button.disabled = false;
+  if (!questionOwnerIsCurrent(userId, epoch)) return;
+  if (error) throw error;
+  if (!savedSession?.id) throw new Error("O registro não foi confirmado. Verifique sua conexão antes de tentar novamente.");
 
-  if (error) {
-    console.error(error);
-
-    setQuestionStatus(
-      `Não foi possível registrar: ${error.message}`,
-      "error"
-    );
-
-    return;
-  }
-
+  let timingSaved = true;
+  try {
   if (durationMinutes !== null && durationMinutes > 0 && window.LuriaStudyTimer) {
     const active = window.LuriaStudyTimer.getState?.();
     if (active?.kind === "external_questions") {
-      await window.LuriaStudyTimer.finish("external_questions_registered");
+      timingSaved = await window.LuriaStudyTimer.finish("external_questions_registered") !== false;
     } else {
-      await questionsSb.from("study_sessions").insert({
-        user_id: questionsState.user.id,
+      const {error: timingError} = await questionsSb.from("study_sessions").insert({
+        user_id: userId,
         activity_kind: "external_questions",
         source_id: savedSession?.id || null,
         started_at: new Date(Date.now() - durationMinutes * 60000).toISOString(),
@@ -461,12 +477,15 @@ async function saveQuestionSession(event) {
         area: payload.area,
         materia: payload.materia
       });
+      if (timingError) throw timingError;
     }
   }
+  } catch (_) { timingSaved = false; }
+  if (!questionOwnerIsCurrent(userId, epoch)) return;
 
   setQuestionStatus(
-    "Sessão registrada.",
-    "success"
+    timingSaved ? "Sessão registrada." : "Sessão registrada, mas não foi possível confirmar o registro do tempo de estudo.",
+    timingSaved ? "success" : "error"
   );
 
   const form = document.getElementById("question-form");
@@ -478,7 +497,15 @@ async function saveQuestionSession(event) {
   updateLiveResult();
   wireExternalQuestionsTimer();
 
-  await loadQuestionSessions();
+  try { await loadQuestionSessions(); }
+  catch (_) { if (questionOwnerIsCurrent(userId, epoch)) setQuestionStatus("Sessão registrada. Não foi possível atualizar o histórico; recarregue a página para consultá-lo.", "error"); }
+  } catch (error) {
+    if (questionOwnerIsCurrent(userId, epoch)) setQuestionStatus(`Não foi possível registrar: ${error.message}`, "error");
+  } finally {
+    questionSessionSaving = false;
+    button.disabled = false;
+    controls.forEach(control => { control.disabled = false; });
+  }
 }
 
 async function deleteQuestionSession(sessionId) {
@@ -520,6 +547,7 @@ async function deleteQuestionSession(sessionId) {
 }
 
 function wireQuestionForm() {
+  wireExternalQuestionsTimer();
   document.getElementById("question-date").value =
     localISODate();
 
@@ -562,7 +590,8 @@ if (window.docmapUser) {
 
 function wireExternalQuestionsTimer() {
   const button = document.getElementById("toggle-external-questions-timer");
-  if (!button) return;
+  if (!button || button.dataset.externalTimerWired === "1") return;
+  button.dataset.externalTimerWired = "1";
   const render = () => {
     const active = window.LuriaStudyTimer?.getState?.();
     const on = active?.kind === "external_questions" && active?.running;

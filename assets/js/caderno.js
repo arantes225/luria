@@ -17428,6 +17428,17 @@ function wireNotionSourceEvents() {
    EVENTOS
    ========================================================= */
 
+function wireNotebookLibraryReturns() {
+  document.querySelectorAll("#notebook-back-library, #notebook-back-library-outline").forEach(button => {
+    if (button.dataset.libraryBackWired === "1") return;
+    button.dataset.libraryBackWired = "1";
+    button.addEventListener("click", async () => {
+      setNotebookEditMode(false);
+      await switchView("library");
+    });
+  });
+}
+
 function wireEvents() {
   wireNotionSourceEvents();
 
@@ -19056,10 +19067,7 @@ function wireEvents() {
     });
   });
 
-  document.getElementById("notebook-back-library")?.addEventListener("click", async () => {
-    setNotebookEditMode(false);
-    await switchView("library");
-  });
+  wireNotebookLibraryReturns();
 
   document.getElementById("notebook-inspector-share")?.addEventListener("click", async () => {
     try {

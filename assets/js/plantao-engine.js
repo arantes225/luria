@@ -62,7 +62,9 @@
     const timePenalty=Math.max(0,(state.criticalElapsed||0)-Number(rules.max_minutes||30));
     const penalties=Number(state.penalties||0)+timePenalty;
     const dead=!!state.dead || (state.clinicalEvents||[]).some(x=>x.level==="mortal");
-    const raw=dead ? 0 : Math.round((earned-penalties)*10)/10;
+    // Limit positive credit before deducting existing penalties: surplus bonuses
+    // cannot cancel an error. Keep the configured amounts and deduct them once.
+    const raw=dead ? 0 : Math.round((Math.min(100,earned)-penalties)*10)/10;
     return {
       earned:Math.round(earned*10)/10,
       beneficialBonus,
