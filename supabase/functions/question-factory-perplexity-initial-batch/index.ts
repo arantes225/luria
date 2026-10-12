@@ -1,13 +1,8 @@
 
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 import { createClient } from "jsr:@supabase/supabase-js@2.110.6";
-
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-  "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Content-Type": "application/json",
-};
+import { withCors } from "../_shared/cors.ts";
+import { urlReachable } from "../_shared/source-verifier.ts";
 
 const RUBRIC = {
   scientific: 25,
@@ -30,7 +25,7 @@ const EDITABLE_FIELDS = new Set([
 ]);
 
 function json(data: unknown, status = 200) {
-  return new Response(JSON.stringify(data), { status, headers: CORS });
+  return new Response(JSON.stringify(data), { status, headers: { "Content-Type": "application/json" } });
 }
 
 function getPublishableKey() {
@@ -158,30 +153,6 @@ async function fetchWithTimeout(url: string, init: RequestInit, ms: number) {
     return await fetch(url, { ...init, signal: controller.signal });
   } finally {
     clearTimeout(timer);
-  }
-}
-
-async function urlReachable(url: string) {
-  if (!/^https?:\/\//i.test(url)) return false;
-  try {
-    let res = await fetchWithTimeout(url, {
-      method: "HEAD",
-      redirect: "follow",
-      headers: { "User-Agent": "LURIA-Source-Verifier/1.0" },
-    }, 8000);
-    if (res.status === 405 || res.status === 501) {
-      res = await fetchWithTimeout(url, {
-        method: "GET",
-        redirect: "follow",
-        headers: {
-          "User-Agent": "LURIA-Source-Verifier/1.0",
-          "Range": "bytes=0-4095",
-        },
-      }, 10000);
-    }
-    return res.status >= 200 && res.status < 500 && res.status !== 404 && res.status !== 410;
-  } catch (_) {
-    return false;
   }
 }
 
@@ -918,8 +889,7 @@ async function generateOneInitialReview(apiKey:string,item:any,styleProfile:any)
 }
 
 
-Deno.serve(async (req) => {
-  if (req.method === "OPTIONS") return new Response("ok",{headers:CORS});
+Deno.serve(withCors(async (req) => {
   if (req.method !== "POST") return json({ok:false,error:"METHOD_NOT_ALLOWED"},405);
 
   try {
@@ -1191,4 +1161,4 @@ Deno.serve(async (req) => {
       message:error instanceof Error ? error.message : String(error),
     },500);
   }
-});
+}));
