@@ -235,6 +235,8 @@ function syncProfilePickerLabels() {
 }
 
 async function loadProfileSettings() {
+  // The compact preferences alias does not include the profile form.
+  if (!document.getElementById("profile-name")) return;
   const { data, error } = await settingsSb
     .from("profiles")
     .select("display_name, username, gender, medical_school, is_graduated")
@@ -688,11 +690,10 @@ async function loadStudySettings() {
     setSelectedDays(field, settings[field]);
   });
 
-  document.getElementById("max-lessons-per-day").value =
-    settings.max_lessons_per_day ?? 1;
-
-  document.getElementById("max-subject-reviews").value =
-    settings.max_subject_reviews_per_day ?? 3;
+  const maxLessons = document.getElementById("max-lessons-per-day");
+  const maxReviews = document.getElementById("max-subject-reviews");
+  if (maxLessons) maxLessons.value = settings.max_lessons_per_day ?? 1;
+  if (maxReviews) maxReviews.value = settings.max_subject_reviews_per_day ?? 3;
 
   setIntervalInputs(
     "flashcard_intervals_hard",
@@ -2020,7 +2021,7 @@ async function initStudySettings() {
 
   document
     .getElementById("save-study-days")
-    .addEventListener("click", saveStudySettings);
+    ?.addEventListener("click", saveStudySettings);
 
   document.getElementById("restore-pomodoro-settings")
     ?.addEventListener("click", restorePomodoroDefaults);

@@ -2699,6 +2699,8 @@
     return [...generic,...extras];
   }
   function resolveSpecialAction(action){
+    if(action.id==="sync_cardioversion")
+      return caseActions().find(a=>a.equivalent_to==="sync_cardioversion") || action;
     if(action.id!=="defibrillate") return action;
     const sequence=["shock1","shock2","shock3"];
     const next=sequence.find(id=>!done(id));
@@ -4127,8 +4129,14 @@
       return {actionIds:["magnesium"],label:"Sulfato de magnésio",deadline:3,fatal:"O sulfato de magnésio foi atrasado na emergência obstétrica."};
     if(t.includes("intoxicacao por opioide"))
       return {actionIds:["bvm","naloxone"],label:"Ventilar / naloxona",deadline:1,fatal:"O suporte ventilatório foi atrasado na depressão respiratória grave."};
-    if(/choque septico|meningococcemia|neutropenia febril/.test(t))
-      return {actionIds:["ceftriaxone","piperacillin_tazo","vancomycin","cefepime","meropenem"],label:"Antimicrobiano",deadline:10,fatal:"O antimicrobiano foi atrasado de forma crítica na sepse grave."};
+    if(/choque septico|meningococcemia|neutropenia febril/.test(t)){
+      // Prefer the case's antibiotic contract (including its explicit equivalents).
+      // Cases without that contract retain their existing medication identifiers.
+      const actionIds=caseActions().some(a=>a.id==="antibiotic")
+        ? ["antibiotic"]
+        : ["ceftriaxone","piperacillin_tazo","vancomycin","cefepime","meropenem"];
+      return {actionIds,label:"Antimicrobiano",deadline:10,fatal:"O antimicrobiano foi atrasado de forma crítica na sepse grave."};
+    }
     return null;
   }
 

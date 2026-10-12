@@ -28,3 +28,45 @@ assert(E.resolve(ana,{performed:['epi_im'],outcomes:['responding']},a).points>0)
 console.log('PASS: four cases, six groups, 213 unique case actions, contextual penalties, equivalent therapies, diagnosis and disposition scoring.');
 
 });
+
+require('node:test').test('surplus benefits never erase configured penalties or count them twice',()=>{
+ const c=cases.find(c=>c.slug==='anaphylaxis-ed');
+ const state={performed:c.completion_rules.required_actions,outcomes:[],criticalElapsed:0,penalties:0,diagnosis:{correct:true},disposition:{correct:true},clinicalEvents:Array.from({length:40},()=>({level:'benefica'}))};
+ assert.equal(E.score(c,state).earned,70+15+15+40*2);
+ assert.equal(E.score(c,state).total,100,'Correct care can retain the maximum');
+ // Current catalog wrong diagnosis = 4. Local wrong diagnoses retain their
+ // configured magnitude of 6; other severity amounts come from existing data.
+ const penalties=new Set([4,...c.actions.filter(a=>a.points<0).map(a=>Math.abs(a.points))]);
+ for(const penalty of penalties){
+  const result=E.score(c,{...state,penalties:penalty});
+  assert.equal(result.penalties,penalty);
+  assert.equal(result.total,100-penalty);
+  assert.equal(result.raw,100-penalty);
+  assert.equal(E.score(c,{...state,diagnosis:{correct:false},penalties:penalty}).total,100-penalty,'Incorrect diagnosis plus high bonuses cannot reach 100');
+ }
+ assert.equal(E.score(c,{...state,penalties:26,criticalElapsed:c.completion_rules.max_minutes+5}).total,100-26-5);
+ assert.equal(E.score(c,{...state,penalties:200}).total,0);
+ assert.equal(E.score(c,{...state,dead:true}).total,0);
+ assert.equal(E.score(c,{...state,clinicalEvents:[...state.clinicalEvents,{level:'mortal'}]}).total,0);
+ const noBonus={...state,clinicalEvents:[],diagnosis:null};
+ assert.equal(E.score(c,noBonus).earned,70+15,'Absent diagnosis loses its existing 15 credit, without inventing a penalty');
+ assert.equal(E.score(c,noBonus).penalties,0);
+});
+
+require('node:test').test('only explicit registered electrical and antimicrobial equivalents count',()=>{
+ const af=cases.find(c=>c.slug==='af-unstable-ed');
+ assert(E.done(af,['cardioversion'],'sync_cardioversion'));
+ assert(E.done(af,['sync_cardioversion'],'cardioversion'));
+ for(const id of ['unsync_shock','defibrillate','shock1']){
+  assert.equal(E.done(af,[id],'sync_cardioversion'),false);
+  assert.equal(E.done(af,[id],'cardioversion'),false);
+ }
+ const sepsis=cases.find(c=>c.slug==='septic-shock-ed');
+ for(const id of ['antibiotic','amp_sulbactam']){
+  const action=sepsis.actions.find(a=>a.id===id);
+  assert(E.done(sepsis,[id],'antibiotic'));
+  assert.equal(action.effects.outcome,'treated');
+  assert.equal(action.time_min,1);
+ }
+ for(const id of ['vancomycin','ceftriaxone','cefepime','meropenem','piperacillin_tazo'])assert.equal(E.done(sepsis,[id],'antibiotic'),false,'No new pharmacological equivalence: '+id);
+});

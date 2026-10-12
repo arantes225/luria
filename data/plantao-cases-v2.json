@@ -62,6 +62,7 @@
       {
         "id": "cardioversion",
         "label": "Cardioversão elétrica sincronizada",
+        "equivalent_to": "sync_cardioversion",
         "points": 32,
         "result": "Choque sincronizado restaura ritmo sinusal e melhora perfusão.",
         "effects": {

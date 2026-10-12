@@ -917,12 +917,13 @@ function clearReviewSessionHeartbeat() {
 
 async function closeAbandonedReviewSession() {
   if (!flashUser) return;
+  const storageKey = reviewSessionStorageKey();
 
   let stored = null;
 
   try {
     stored = JSON.parse(
-      localStorage.getItem(reviewSessionStorageKey()) || "null"
+      localStorage.getItem(storageKey) || "null"
     );
   } catch {}
 
@@ -945,21 +946,27 @@ async function closeAbandonedReviewSession() {
     );
 
   try {
-    await flashSb.rpc(
+    const { error } = await flashSb.rpc(
       "finish_study_session_v2",
       {
         p_session_id: stored.sessionId,
         p_duration_seconds: seconds
       }
     );
+    if (error) throw error;
   } catch (error) {
     console.warn(
       "Não foi possível encerrar a sessão anterior de flashcards:",
       error
     );
+    return;
   }
 
-  clearReviewSessionHeartbeat();
+  // A newer review (possibly in another tab) must keep its own heartbeat.
+  try {
+    const latest = JSON.parse(localStorage.getItem(storageKey) || "null");
+    if (latest?.sessionId === stored.sessionId) localStorage.removeItem(storageKey);
+  } catch (_) {}
 }
 
 function commonReviewValue(field) {
@@ -1668,6 +1675,8 @@ async function loadReviewQueue() {
 
 
 function wireReview() {
+  // Creation/import settings reuse this module without a review surface.
+  if (!document.getElementById("show-answer")) return;
   document
     .getElementById(
       "start-review-session"
@@ -7915,12 +7924,13 @@ async function initFlashcards() {
   await closeAbandonedReviewSession();
   await redeemFlashcardShareFromUrl();
 
-  renderReviewPomodoro();
-
-  await Promise.all([
-    loadMetrics(),
-    loadReviewQueue()
-  ]);
+  if (document.getElementById("show-answer")) {
+    renderReviewPomodoro();
+    await Promise.all([
+      loadMetrics(),
+      loadReviewQueue()
+    ]);
+  }
 }
 
 if (window.docmapUser) {
