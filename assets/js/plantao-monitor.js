@@ -89,7 +89,16 @@
     const src = unconscious ? caseContext.unconscious_image : caseContext.patient_image;
     if (img && src && img.getAttribute('src') !== src) img.src = src;
     if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
-    if (img) img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
+    if (img) {
+      img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
+      if (/luria-homem-adulto-v7-aberto\.webp/.test(img.getAttribute('src')||'')) {
+        img.dataset.luriaEyes=unconscious?"closed":"auto";
+        img.dataset.luriaRr=String(vitals.rr??"");
+      } else {
+        delete img.dataset.luriaEyes;
+        delete img.dataset.luriaRr;
+      }
+    }
     const badge = document.getElementById('plantao-consciousness');
     if (badge) {
       badge.textContent = '';

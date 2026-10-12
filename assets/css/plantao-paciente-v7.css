@@ -1,0 +1,24 @@
+/* LURIA V7: paciente masculino adulto estável, apenas tórax e olhos animados */
+.plantao-scene.luria-adult-v7{isolation:isolate}
+.plantao-scene.luria-adult-v7 > .luria-adult-v7-patch{
+ position:absolute;display:block;pointer-events:none;user-select:none;-webkit-user-select:none;
+ object-fit:fill;max-width:none;max-height:none;aspect-ratio:auto;border:0;margin:0;padding:0;filter:none;
+}
+.plantao-scene.luria-adult-v7 > .luria-adult-v7-torax{
+ z-index:1;transform-origin:50% 55%;animation:luriaV7Breath 3.5s ease-in-out infinite;will-change:transform;
+}
+@keyframes luriaV7Breath{0%,100%{transform:scale(1)}48%{transform:scale(1.007,1.025)}}
+.plantao-scene.luria-adult-v7[data-luria-breath="stopped"] > .luria-adult-v7-torax{animation:none}
+.plantao-scene.luria-adult-v7 > .luria-adult-v7-olhos{
+ z-index:2;opacity:0;animation:luriaV7Blink 5.7s linear infinite;
+}
+@keyframes luriaV7Blink{0%,45%,49%,100%{opacity:0}46%,47.6%{opacity:1}}
+.plantao-scene.luria-adult-v7[data-luria-eyes="closed"] > .luria-adult-v7-olhos{
+ animation:none!important;opacity:1!important;
+}
+.plantao-scene.luria-adult-v7 .plantao-monitor-dock{z-index:6}
+.plantao-scene.luria-adult-v7 .plantao-consciousness{z-index:7}
+@media(prefers-reduced-motion:reduce){
+ .plantao-scene.luria-adult-v7 > .luria-adult-v7-torax,
+ .plantao-scene.luria-adult-v7 > .luria-adult-v7-olhos{animation:none}
+}

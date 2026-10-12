@@ -523,14 +523,15 @@
       return female ? "/assets/img/plantao/02-mulher-idosa-acordada.webp" : "/assets/img/plantao/10-homem-idoso-acordado.webp";
     }
     if(specialty.includes("cirurg") || title.includes("trauma") || title.includes("abdominal")) {
-      return "/assets/img/plantao/plantao-homem-adulto-acordado-v2-1600x900.webp";
+      return "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
     }
-    return index%2 ? "/assets/img/plantao/04-mulher-adulta-acordada.webp" : "/assets/img/plantao/plantao-homem-adulto-acordado-v2-1600x900.webp";
+    return index%2 ? "/assets/img/plantao/04-mulher-adulta-acordada.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
   }
 
   function plantaoReferenceFaceCrop(src){
     const file=String(src||"").split("/").pop();
     const presets={
+      "luria-homem-adulto-v7-aberto.webp":{x:50,y:24,scale:2.05},
       "plantao-homem-adulto-acordado-v2-1600x900.webp":{x:50,y:24,scale:2.05},
       "04-mulher-adulta-acordada.webp":{x:50,y:22,scale:2.08},
       "02-mulher-idosa-acordada.webp":{x:50,y:23,scale:2.0},
@@ -2793,7 +2794,7 @@
     boy:{awake:"assets/img/plantao pwa/13-menino-acordado.webp",closed:"assets/img/plantao pwa/09-menino-olhos-fechados.webp"},
     pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/02-gestante-olhos-fechados.webp"},
     woman:{awake:"assets/img/plantao pwa/05-mulher-adulta-negra-acordada.webp",closed:"assets/img/plantao pwa/04-mulher-adulta-negra-olhos-fechados.webp"},
-    man:{awake:"assets/img/plantao pwa/03-homem-adulto-acordado.webp",closed:"assets/img/plantao pwa/06-homem-adulto-olhos-fechados.webp"},
+    man:{awake:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"},
     elderlyWoman:{
       awake:"assets/img/plantao pwa/16-mulher-idosa-acordada.webp",
       closed:"assets/img/plantao pwa/07-mulher-idosa-olhos-fechados.webp",
@@ -2874,6 +2875,15 @@
           ? "/assets/img/plantao/01-mulher-idosa-olhos-fechados.webp"
           : "/assets/img/plantao/09-homem-idoso-olhos-fechados.webp"
       };
+    }
+
+    // Imagem única V7 para homem adulto; inconsciência controla somente olhos.
+    const sex=normalizeLabel(state.current?.presentation?.sex||"");
+    const specifiedMale=sex==="m" || sex.startsWith("masc");
+    const oldMaleImage=/homem-adulto/.test(String(state.current?.presentation?.patient_image||""));
+    const isPediatric=normalizeLabel(state.current?.specialty||"").includes("pedi");
+    if((specifiedMale || oldMaleImage) && !isPediatric && (!Number.isFinite(age) || age>=13)){
+      return {patient_image:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",unconscious_image:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"};
     }
 
     const pwaPair=pwaPatientImagePair();
