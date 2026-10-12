@@ -214,3 +214,87 @@ body[data-page="trabalho_calculadora"] .calc-modal-body .result b {
     font-size: 16px !important;
   }
 }
+
+/* iOS WebKit date fields: the native <input type=date> has an intrinsic
+   minimum width even with min-width:0. Keep the picker but render the
+   chosen date inside a width-constrained visible surface. */
+body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-control {
+  position: relative;
+  display: block;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-value {
+  display: none;
+}
+@media (max-width: 760px) {
+  body[data-page="trabalho_calculadora"] .calc-modal-body .fields,
+  body[data-page="trabalho_calculadora"] .calc-modal-body .field {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-control {
+    height: 48px !important;
+    min-height: 48px !important;
+    overflow: hidden;
+    border: 1px solid var(--color-border-interactive, var(--border));
+    border-radius: 12px;
+    background: var(--color-surface, var(--surface));
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-control:focus-within {
+    border-color: var(--color-primary-text, #184888);
+    box-shadow: 0 0 0 2px var(--color-focus-ring, rgba(24,72,136,.25));
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-value {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 46px;
+    width: 100%;
+    padding: 0 14px;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 1.25;
+    color: var(--color-text-secondary, var(--muted));
+    background: transparent;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-control.has-value .calc-date-value {
+    color: var(--color-text-primary, var(--text));
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .calc-date-value::after {
+    content: "▦";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    flex: 0 0 24px;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--color-text-secondary, var(--muted));
+  }
+  body[data-page="trabalho_calculadora"] .calc-modal-body .field .calc-date-control input[type="date"] {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    outline: 0 !important;
+    opacity: 0 !important;
+    cursor: pointer;
+  }
+}
