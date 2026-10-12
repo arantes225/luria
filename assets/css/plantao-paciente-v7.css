@@ -22,3 +22,37 @@
  .plantao-scene.luria-adult-v7 > .luria-adult-v7-torax,
  .plantao-scene.luria-adult-v7 > .luria-adult-v7-olhos{animation:none}
 }
+
+/* Correção PWA v7.1: não permitir que a regra genérica >img de tela cheia
+   estique ou recorte os patches independentes de olhos/tórax. */
+#plantao-simulator .plantao-scene > img.luria-adult-v7-patch[hidden] {
+  display: none !important;
+}
+#plantao-simulator .plantao-scene.luria-adult-v7 > img.luria-adult-v7-patch:not([hidden]) {
+  position: absolute !important;
+  display: block !important;
+  right: auto !important;
+  bottom: auto !important;
+  inset-block-end: auto !important;
+  inset-inline-end: auto !important;
+  object-fit: fill !important;
+  object-position: 50% 50% !important;
+  aspect-ratio: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+.pwa-standalone #plantao-simulator:not([hidden]) .plantao-scene.luria-adult-v7 > img.luria-adult-v7-patch:not([hidden]) {
+  filter: saturate(.98) contrast(1.02) !important;
+}
+.pwa-standalone #plantao-simulator:not([hidden]) #plantao-patient-image[src*="luria-homem-adulto-v7-aberto"] {
+  /* A foto é horizontal e o PWA vertical: 50% cortava o rosto. */
+  object-position: 30% 49% !important;
+}

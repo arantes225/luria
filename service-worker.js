@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v285-adult-patient-v7";
+const CACHE_VERSION = "luria-pwa-v286-adult-patient-v7-pwa-crop";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
