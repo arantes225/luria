@@ -100,3 +100,46 @@ A partir de outubro de 2026, nenhuma apostila pode ser considerada concluída ap
 
 ### Auditoria de densidade
 Antes de publicar, comparar a apostila com as mais completas da biblioteca. Conteúdos muito abaixo da densidade média devem receber uma camada adicional de fisiopatologia, diagnóstico diferencial, decisão clínica e situações especiais antes da publicação.
+
+
+---
+
+## Padrão Livro-Texto 40K — revisão global da biblioteca (12/10/2026)
+
+**Escopo:** aplica-se a **todos os cadernos/apostilas já existentes**, publicados ou não, e a quaisquer materiais futuros, independentemente de estarem em \`index.html\` ou em \`content.json\`. Não basta mudar a instrução de criação: cada conteúdo precisa ser efetivamente revisado, reescrito, expandido e validado.
+
+### Mínimo editorial objetivo
+- **Pelo menos 40.000 caracteres de conteúdo didático realmente legível por apostila**; excluem-se código HTML, CSS, JavaScript, JSON estrutural, tags, navegação, menus, capa/hero, sumário, nomes de campos, bibliografia e repetições artificiais. A contagem deve ser feita sobre os textos desenvolvidos dos capítulos. O mínimo **não** funciona como teto.
+- Não adicionar parágrafos genéricos apenas para alcançar a contagem: conferir coerência científica, ausência de duplicações, explicações completas, fontes e utilidade clínica.
+- Todas as entidades abordadas no tema devem ser explicadas em sequência causal: **base anatômica/fisiológica → gatilho/etiologia → mecanismos celulares e sistêmicos → repercussão funcional → manifestação → exame/diagnóstico → decisão e tratamento → acompanhamento**.
+- Se houver apresentações, síndromes ou categorias independentes, aprofundar cada uma por completo, sem misturar subtópicos de maneira que confunda a comparação.
+- Escrever em **prosa didática desenvolvida**, com parágrafos relacionados. Tabelas, classificações, caixas e listas devem ajudar a navegar no material, jamais substituí-lo.
+- Integrar anatomia, embriologia, histologia, bioquímica, farmacologia e epidemiologia conforme a pertinência clínica, e explicar o que cada achado indica e **por quê**.
+- Fórmulas: significado/unidade de todas as variáveis, fundamento, limitações, interpretação e cálculo comentado quando pertinente.
+- Imagens e exames: o que observar, sinais específicos, significado clínico, limitações e legenda funcional.
+- Terapias: indicação, mecanismo, escolha, contraindicações, riscos, doses **quando verificadas**, ajustes/monitorização, falha, alternativas e seguimento.
+- Acrescentar casos clínicos comentados e diferenciais quando forem didáticos; não confundir hipótese de prova com protocolo clínico.
+- Revisar diretrizes oficiais e consensos atuais, com preferência pelo contexto brasileiro; descrever divergências relevantes de forma transparente.
+- Cada caderno deve ter seções/subseções lógicas e índice funcional. **Preservar URLs, IDs de seções relevantes, o renderer, a identidade LURIA, a interface responsiva e os recursos de leitura/estudo.** Não modificar a autoria/atribuição original sem orientação expressa.
+- Não marcar o caderno como "40K revisado" antes da verificação objetiva da extensão **e** de uma revisão clínica e pedagógica humana/editorial.
+
+### Continuidade rigorosa do fluxo de imagens estabelecido
+1. **Reutilizar inicialmente as imagens já aprovadas no acervo LURIA**, mantendo seus vínculos e posicionamento; não descartar aprovações anteriores por causa da revisão textual.
+2. Identificar lacunas didáticas por capítulo e pesquisar candidatas em **fontes reais rastreáveis** (sociedades médicas, governo, universidades, atlas de licença compatível). Priorizar esquemas técnicos fiéis para processos; **fotografias clínicas reais**, e não esquemas inventados, quando aparência macroscópica/lesão/dispositivo for o objeto do aprendizado.
+3. Não criar radiografias, ECGs, fotos clínicas ou exames artificiais fingindo serem achados reais. Não usar imagens decorativas ou documentos inteiros quando a figura isolada basta.
+4. Candidatas novas → \`apostila_image_review_queue\` do Supabase, com URL, autoria/origem, licença, legenda, texto alternativo, seção exata e justificativa. Buscar ao menos 10 candidatas por caderno, sem obrigatoriedade de publicar 10.
+5. Status \`pending\`: **não inserir no corpo público**. Aprovar/rejeitar através do Admin; somente as aprovadas podem ser exibidas no trecho correspondente.
+6. Após aprovação, validar URL/arquivo, otimizar em **WebP** respeitando os limites de mídia definidos para o site (preferencialmente 80–100 KB para ilustrações comuns e até 120 KB para ECG/radiologia/exames), preservar proporções e garantir que a imagem abra no PWA.
+7. Incluir legenda interpretativa, fonte/licença e acessibilidade \`alt\` com significado clínico; verificar CSP de \`img-src\`, tamanhos e responsividade.
+8. Na revisão de um caderno **não** remover ou trocar imagens aprovadas sem justificativa técnica e verificação visual. Pendências da fila seguem pendentes até ação administrativa; nunca aprovar automaticamente em lote.
+
+### Critérios mínimos de aceitação por apostila
+- [ ] Conteúdo realmente desenvolvido com >= 40.000 caracteres úteis aferidos.
+- [ ] Revisão item a item de cobertura, lacunas, lógica fisiopatológica, diagnóstico, conduta e atualização.
+- [ ] Referências pertinentes, verificáveis, incluídas junto às recomendações e na bibliografia.
+- [ ] Capítulos completos, índice/âncoras e layout LURIA/PWA preservados.
+- [ ] Imagens aprovadas preservadas; candidatas adicionais curadas pelo Admin, não publicadas automaticamente.
+- [ ] Teste de abertura do arquivo principal, CSS/JS, índice e imagens no desktop e PWA.
+- [ ] Revisão clínica antes de carimbar a edição como concluída.
+
+**Inventário inicial das 25 pastas e suas lacunas:** consultar \`apostilas/AUDITORIA_LIVRO_TEXTO_2026-10-12.md\`. Contagem de caracteres, sozinha, não equivale a revisão clínica nem a publicação de uma versão reescrita.
