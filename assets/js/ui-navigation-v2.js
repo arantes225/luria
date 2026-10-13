@@ -3,6 +3,7 @@
   const body = document.body;
   if (body?.dataset.uiNav !== "v2") return;
   const work = body.dataset.uiContext === "work";
+  const workHub = work && body.dataset.uiWorkNavigation === "hub";
   const narrow = matchMedia("(max-width: 980px)");
   let drawerOpen = false;
   let drawerTrigger;
@@ -19,6 +20,7 @@
     .filter(node => !node.hidden && node.getClientRects().length && !node.closest('[inert]'));
 
   function enhanceMobileNavigation(sidebar) {
+    if (workHub) return;
     const installed = document.documentElement.dataset.pwa === "standalone";
     if (!installed || body.dataset.uiAdmin === "v2" || !sidebar) return;
     const entries = work
@@ -162,6 +164,7 @@
       bar.prepend(brand);
     }
     const trigger = document.getElementById('menu-open');
+    if (workHub) return;
     const host = narrow.matches && !body.classList.contains('sidebar-open') ? bar : top;
     if (host && trigger && (trigger.parentElement !== host || trigger !== host.firstElementChild)) host.prepend(trigger);
   }
@@ -173,6 +176,21 @@
     const open = narrow.matches && body.classList.contains("sidebar-open");
 
     placeStudyNavigation(sidebar, bar);
+
+    if (workHub) {
+      // Keep the permission-owned links available to the profile adapter only.
+      // The Work hub replaces the drawer, including on installed mobile apps.
+      if (body.classList.contains("sidebar-open")) body.classList.remove("sidebar-open");
+      if (sidebar) {
+        sidebar.inert = true;
+        set(sidebar, "aria-hidden", "true");
+        for (const attr of ["role", "aria-modal"]) sidebar.removeAttribute(attr);
+      }
+      if (trigger && !trigger.hidden) trigger.hidden = true;
+      drawerOpen = false;
+      restorePageInteraction();
+      return;
+    }
 
     if (sidebar) {
       if (sidebar.inert !== (narrow.matches && !open)) sidebar.inert = narrow.matches && !open;
@@ -187,6 +205,55 @@
     if (!open && drawerOpen) (drawerTrigger?.isConnected ? drawerTrigger : trigger)?.focus();
     drawerOpen = open;
     set(document.getElementById("ui-mobile-more"), "aria-expanded", open);
+  }
+  function enhanceWorkHub(sidebar, bar) {
+    if (!workHub || !bar) return;
+    const brand = bar.querySelector(".ui-topbar-brand");
+    set(brand, "href", "/trabalho/");
+    set(brand, "aria-label", "LURIA — Central do Trabalho");
+    let links = bar.querySelector(".work-hub-navigation");
+    if (!links) {
+      links = document.createElement("nav");
+      links.className = "work-hub-navigation";
+      links.setAttribute("aria-label", "Navegação do Trabalho");
+      const back = document.createElement("a");
+      back.className = "work-hub-return"; back.href = "/trabalho/";
+      back.innerHTML = icon('<path d="m10 5-7 7 7 7M3 12h18"/>') + '<span>Central do Trabalho</span>';
+      back.hidden = body.dataset.page === "trabalho_dashboard";
+      links.append(back);
+      bar.append(links);
+    }
+    const notifications = bar.querySelector(".luria-notifications");
+    if (notifications && links.nextElementSibling !== notifications) bar.insertBefore(links, notifications);
+    // Reuse the real, permission-owned PCR destination, rather than inventing a route.
+    const pcrSource = sidebar?.querySelector(".work-pcr-button[href]");
+    if (pcrSource && !links.querySelector(".work-hub-pcr")) {
+      const pcr = document.createElement("a");
+      pcr.className = "work-hub-pcr"; pcr.href = pcrSource.getAttribute("href");
+      pcr.setAttribute("aria-label", "Abrir Parada Cardiorrespiratória");
+      pcr.innerHTML = icon('<path d="M12 5v14M5 12h14"/>') + '<span>Abrir PCR</span>';
+      links.append(pcr);
+    }
+    const menu = document.getElementById("luria-profile-menu");
+    if (!menu) return;
+    for (const id of ["admin-nav-link", "beta-testers-nav-link"]) {
+      const source = sidebar?.querySelector(`#${id}`);
+      let item = menu.querySelector(`[data-work-account="${id}"]`);
+      if (!source || source.hidden) { item?.remove(); continue; }
+      if (!item) {
+        item = document.createElement("a");
+        item.className = "ui-profile-account-item";
+        item.dataset.workAccount = id;
+        const visual = document.createElement("span");
+        visual.className = "ui-profile-item-icon";
+        visual.innerHTML = icon(id === "admin-nav-link" ? '<path d="m12 3 9 9-9 9-9-9Z"/>' : '<circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M17 5a3 3 0 0 1 0 6M21 21v-2a6 6 0 0 0-4-5"/>');
+        item.append(visual, document.createTextNode(source.textContent.replace(/◆/g, "").trim()));
+        const logout = menu.querySelector("#luria-profile-logout");
+        if (logout) logout.before(item);
+        else menu.append(item);
+      }
+      set(item, "href", source.getAttribute("href"));
+    }
   }
   function enhance() {
     const sidebar = document.getElementById("sidebar");
@@ -232,6 +299,7 @@
     enhanceProfile(sidebar);
     enhanceStreak(sidebar, document.getElementById("luria-notifications"));
     syncDrawer();
+    enhanceWorkHub(sidebar, bar);
     enhanceMobileNavigation(sidebar);
     const menu = document.getElementById("luria-profile-menu");
     const open = !!menu && !menu.hidden;
@@ -247,6 +315,7 @@
     const trigger = event.target.closest("#menu-open, #ui-mobile-more, #sidebar-close, #sidebar-backdrop");
     if (!trigger) return;
     event.preventDefault(); event.stopImmediatePropagation();
+    if (workHub) { syncDrawer(); return; }
     if (["menu-open", "ui-mobile-more"].includes(trigger.id) && !drawerOpen) drawerTrigger = trigger;
     if (trigger.id === "menu-open" && !narrow.matches) {
       body.dataset.uiSidebar = body.dataset.uiSidebar === "collapsed" ? "expanded" : "collapsed";
