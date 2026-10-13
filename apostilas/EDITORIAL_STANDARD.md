@@ -1,5 +1,14 @@
 # Padrão editorial das Apostilas LURIA
 
+## Regra operacional a partir de 13/10/2026: produção em lote e imagens no Admin
+
+- **Produzir, revisar e publicar apostilas por lote**, não pelo rito manual de abrir cada página para curadoria. Adotar a revisão de conteúdo e o controle de qualidade para todos os temas do lote; não confundir automação com redução da profundidade.
+- **Todas as imagens clínicas inéditas são candidatas para o Admin**, não figuras publicadas de forma direta. Registrar origem, licença, legenda, propósito didático e seção de destino no manifesto. Revisar exclusivamente em `/admin/`, com filtros por apostila e aprovação ou rejeição de itens selecionados.
+- **Apenas imagens já aprovadas podem aparecer no conteúdo público.** Itens previamente aprovados podem ser reutilizados sem nova cópia. As imagens presentes em apostilas antigas devem ser preservadas e auditadas separadamente, sem despublicação automática.
+- **Texto e imagens têm etapas independentes:** publicar capítulos aprofundados não exige que a imagem candidata esteja aprovada. A revisão das imagens ocorre posteriormente, em lote no Admin.
+- **Ferramentas:** `scripts/build-apostilas-batch.cjs` recebe conteúdo profundo estruturado em JSON, cria novos arquivos HTML e exporta o manifesto; `scripts/audit-apostilas-batch.cjs` percorre a biblioteca inteira e sinaliza lacunas. Consulte `apostilas/PRODUCAO_EM_LOTE.md` para os campos, limites, segurança e sequência recomendada.
+- **Exigir profundidade real** antes de marcar conteúdo como concluído: fisiopatologia explicada, critérios diagnósticos e armadilhas, tratamentos com particularidades, complicações, seguimento, situações especiais e casos de prova. Uma métrica de caracteres não é certificação de qualidade.
+
 ## Regra central
 **Nível de aprofundamento: ALTO.**
 
