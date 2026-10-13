@@ -36,7 +36,7 @@ jobs:
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
       - name: Run deterministic frontend regressions
-        run: node --test --test-isolation=none tests/stage77-functional.test.cjs tests/stage77-questions.test.cjs tests/stage77-integrity.test.cjs tests/client-persistence.test.cjs tests/quick-chart.test.cjs
+        run: node --test --test-isolation=none tests/stage77-functional.test.cjs tests/stage77-questions.test.cjs tests/stage77-integrity.test.cjs tests/client-persistence.test.cjs tests/quick-chart.test.cjs tests/lazy-vendors.test.cjs
   deploy:
     needs: quality
     environment:
