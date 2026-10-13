@@ -288,3 +288,23 @@ Comparação feita com os PDFs de referência da pasta do responsável ("02 - CO
 - Tratamento editorial: preservar texto com causalidade clínica e mecanismos necessários; retirar definições repetidas entre apresentação, clínica e diagnóstico e substituir, quando pertinente, por interpretações de exames, diferenciais e condutas explicadas.
 
 **Verificação:** validar navegação, headings H2/H3/H4, notas duplicadas, semântica da legenda, vínculos de referências, sintaxe CSS/JS, PWA e formato de impressão. Não declarar testes gráficos reais se não houve acesso a um navegador da página publicada.
+
+
+
+## Critério de suficiência para questões — estudo por material único
+
+**Obrigatório nas revisões médicas da LURIA:** o caderno deve permitir ao estudante compreender o tema sem consultar outro material de base. Não basta alcançar 40.000 caracteres ou citar uma doença: o ensino deve conectar mecanismo, manifestações, interpretação dos testes, escolhas terapêuticas e consequências, incluindo recorrência e complicações quando forem relevantes.
+
+A qualidade deve ser avaliada por perguntas clínicas reais que o material permite responder, e não por número de páginas. Antes da publicação, conferir:
+- se a fisiologia e as definições necessárias ao raciocínio estão presentes, sem blocos vazios e sem repetir a mesma explicação;
+- se cada doença principal tem quadro clínico, diagnósticos diferenciais, critérios, interpretação de exames com limitações, esquemas de tratamento (dose, via e duração quando pertinentes), exceções, contraindicações, gestação e outros grupos especiais conforme o tema;
+- se complicações, falha de tratamento, recidiva, recorrência, resistência e seguimento foram abordados com profundidade proporcional à importância clínica;
+- se o conteúdo diferencia recomendações do Ministério da Saúde/PCDT, FEBRASGO e diretrizes internacionais quando houver divergências relevantes para provas;
+- se casos comentados e questões de fixação exigem raciocínio, explicam por que uma escolha é correta e protegem contra pegadinhas, sem transformar o livro em um banco de questões disfarçado;
+- se imagens são reais, relevantes, únicas e situadas no ponto adequado; quadros só entram quando a informação ganha com a forma visual;
+- se os parágrafos mantêm comprimento confortável, títulos seguem ordem didática, exemplos aparecem após fundamentos e a bibliografia é verificável;
+- se a leitura em computador e PWA não exige fonte pequena, largura excessiva, galerias repetidas ou deslocamento lateral de toda a página.
+
+**Referência dos cursinhos do Drive**: estudar a hierarquia de capítulos, tabelas resumidas de decisão, recursos visuais oportunos, quantidade de explicação por assunto e espaçamentos. Recriar linguagem e figuras originais e adaptar para leitura digital. Não copiar seu texto, páginas, design proprietário ou imagens sem licença.
+
+**Critério de aprovação:** selecionar um conjunto diverso de questões representativas da residência para cada capítulo; só considerar o caderno autossuficiente quando a maior parte das respostas puder ser fundamentada por trechos do próprio caderno, sem depender de conhecimento não ensinado. A revisão permanece aberta até esse teste; a contagem de caracteres, isoladamente, não prova suficiência.
