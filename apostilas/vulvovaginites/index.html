@@ -142,6 +142,50 @@
     .luria-disease-unit h3:not(.luria-disease-unit-title){font-size:13.2px!important;margin-top:12px!important;color:var(--text)}
     .luria-disease-unit figure{break-inside:avoid;margin:14px auto 20px!important}
     @media(max-width:560px){.luria-disease-unit{padding:12px 0}.luria-disease-unit-title{font-size:15px!important}}
+
+/* Editorial LURIA — um vocabulário visual por função, não um card por frase */
+#candida{--luria-chapter-tone:#b95780;--luria-chapter-soft:#f9edf2}
+#vaginose{--luria-chapter-tone:#138a88;--luria-chapter-soft:#eaf8f5}
+#tricomoníase{--luria-chapter-tone:#7962bd;--luria-chapter-soft:#f2eefb}
+#clinica-diagnostico{--luria-chapter-tone:#2664a8;--luria-chapter-soft:#eaf2fc}
+#microbiota{--luria-chapter-tone:#138a88;--luria-chapter-soft:#eaf8f5}
+.book-section:is(#candida,#vaginose,#tricomoníase,#clinica-diagnostico,#microbiota)>h2{border-left:4px solid var(--luria-chapter-tone);padding-left:13px}
+:is(#candida,#vaginose,#tricomoníase) .luria-disease-unit-title{color:var(--luria-chapter-tone)!important;background:color-mix(in srgb,var(--luria-chapter-tone) 9%,var(--surface));padding:11px 13px;border-left:3px solid var(--luria-chapter-tone);border-radius:0 9px 9px 0}
+:is(#candida,#vaginose,#tricomoníase) .book-mini{background:var(--surface);border-color:color-mix(in srgb,var(--luria-chapter-tone) 18%,var(--border));border-left:3px solid color-mix(in srgb,var(--luria-chapter-tone) 66%,var(--border))}
+:is(#candida,#vaginose,#tricomoníase) .book-mini strong{color:var(--luria-chapter-tone)}
+.book-section .book-callout:not(.pulo-do-gato):not(.book-alert){min-height:0;padding:13px 16px 13px 18px;border-left:4px solid var(--accent);box-shadow:none}
+.book-section .book-callout:not(.pulo-do-gato):not(.book-alert)::before{display:none}
+.book-section .book-callout:not(.pulo-do-gato):not(.book-alert) strong{font-size:13.5px}
+:is(#candida,#vaginose,#tricomoníase) .book-callout:not(.pulo-do-gato){border-left-color:var(--luria-chapter-tone)}
+.book-section .book-table th{font-size:11.5px;line-height:1.42}
+.luria-final-comparison{border-top:3px solid #184888}
+.luria-editorial-deck{max-width:760px;color:var(--muted)}
+.luria-comparison-scroll{overflow-x:auto;scrollbar-width:thin}
+.luria-master-table{table-layout:fixed;min-width:610px;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:13px;overflow:hidden}
+.luria-master-table th,.luria-master-table td{padding:12px 12px;border:0;border-bottom:1px solid var(--border);border-right:1px solid var(--border);text-align:left}
+.luria-master-table thead th{background:#184888!important;color:#fff!important;font-size:11.7px}
+.luria-master-table thead th:nth-child(2){background:#9f446e!important}
+.luria-master-table thead th:nth-child(3){background:#147d7b!important}
+.luria-master-table thead th:nth-child(4){background:#6f59aa!important}
+.luria-master-table tbody tr:nth-child(even){background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
+.luria-master-table tbody th{font-weight:700;color:var(--text);background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
+.luria-master-table tr:last-child td,.luria-master-table tr:last-child th{border-bottom:0}
+.luria-master-table td:last-child,.luria-master-table th:last-child{border-right:0}
+.luria-comparison-foot{margin:12px 0 0!important;font-size:11.8px!important;color:var(--muted)}
+.luria-comparison-foot strong{color:var(--text)}
+.luria-key-summary{margin:22px 0;border:1px solid color-mix(in srgb,#e5a740 42%,var(--border));border-radius:17px;overflow:hidden;background:var(--surface)}
+.luria-key-summary-head{display:flex;align-items:center;gap:11px;padding:16px 18px;background:color-mix(in srgb,#efb553 15%,var(--surface));border-bottom:1px solid color-mix(in srgb,#e5a740 28%,var(--border))}
+.luria-key-summary-mark{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:11px;background:#b87b20;color:white;font-size:19px}
+.luria-key-kicker{display:block;color:#ad741c;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.luria-key-summary-head h3{margin:2px 0 0!important;font-size:17px!important;color:var(--text)}
+.luria-key-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px;padding:5px 18px 9px}
+.luria-key-line{display:flex;align-items:flex-start;gap:10px;padding:13px 0;border-bottom:1px solid var(--border)}
+.luria-key-line:nth-last-child(-n+2){border-bottom:0}
+.luria-key-number{flex:0 0 28px;font-size:11px;font-weight:800;color:#b87b20;padding-top:2px}
+.luria-key-line p{margin:0!important;font-size:12.5px!important;line-height:1.5!important}
+.luria-key-line strong{color:var(--text)}
+@media(max-width:720px){.luria-key-grid{grid-template-columns:1fr}.luria-key-line:nth-last-child(2){border-bottom:1px solid var(--border)}.luria-key-summary-head{padding:13px 14px}.luria-key-grid{padding:4px 15px 7px}}
+@media print{.luria-key-line,.luria-master-table tr{break-inside:avoid}.luria-comparison-scroll{overflow:visible}.luria-master-table{min-width:0}}
 </style>
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
@@ -467,64 +511,38 @@
               <tr><td>Metronidazol vaginal trata tricomoníase</td><td>A IST exige tratamento sistêmico.</td></tr>
               <tr><td>Falha = resistência</td><td>Rever diagnóstico, adesão, dose e reexposição antes.</td></tr>
             </tbody></table>
-            <h3>O que não posso esquecer</h3>
-            <ol class="clinical-list">
-              <li>Vaginose é disbiose; candidíase e tricomoníase são entidades biologicamente diferentes.</li>
-              <li>Candidíase isolada geralmente mantém pH &lt;4,5.</li>
-              <li>Amsel exige pelo menos 3 de 4 critérios.</li>
-              <li>Nugent 7–10 é compatível com vaginose; 4–6 é intermediário.</li>
-              <li>Cultura positiva para Candida sem sintomas não significa tratamento obrigatório.</li>
-              <li><em>C. glabrata</em> pode não formar pseudohifas típicas.</li>
-              <li>Na gestação, candidíase é tratada com azólico tópico por 7 dias.</li>
-              <li>Na tricomoníase, tratar parcerias é parte do tratamento.</li>
-              <li>Microscopia negativa não exclui tricomoníase.</li>
-              <li>Dor pélvica, febre, sangramento ou lesão persistente mudam o diagnóstico diferencial.</li>
-            </ol>
+            <section class="luria-key-summary" aria-labelledby="luria-key-summary-title">
+<div class="luria-key-summary-head"><span class="luria-key-summary-mark" aria-hidden="true">✦</span><div><span class="luria-key-kicker">Revisão para fixar</span><h3 id="luria-key-summary-title">O que não posso esquecer</h3></div></div>
+<div class="luria-key-grid">
+<div class="luria-key-line"><span class="luria-key-number">01</span><p><strong>Três mecanismos distintos.</strong> Candidíase é infecção fúngica inflamatória; vaginose, disbiose; tricomoníase, IST.</p></div>
+<div class="luria-key-line"><span class="luria-key-number">02</span><p><strong>pH orienta, não confirma.</strong> Na candidíase isolada costuma ser ≤ 4,5; nas demais, frequentemente é mais alto.</p></div>
+<div class="luria-key-line"><span class="luria-key-number">03</span><p><strong>Amsel exige três de quatro.</strong> Nugent 7–10 favorece vaginose; 4–6 é intermediário.</p></div>
+<div class="luria-key-line"><span class="luria-key-number">04</span><p><strong>Colonização não é candidíase.</strong> Uma cultura positiva sem sintomas não exige antifúngico automático.</p></div>
+<div class="luria-key-line"><span class="luria-key-number">05</span><p><strong>Espécie importa na recorrência.</strong> <em>C. glabrata</em> pode não formar pseudohifas evidentes.</p></div>
+<div class="luria-key-line"><span class="luria-key-number">06</span><p><strong>Gestação exige atenção.</strong> Para candidíase, a preferência é azólico tópico durante sete dias.</p></div>
+<div class="luria-key-line"><span class="luria-key-number">07</span><p><strong>Tricomoníase exige via sistêmica.</strong> Tratar as parcerias atuais e lembrar que o fresco negativo não exclui.</p></div>
+<div class="luria-key-line"><span class="luria-key-number">08</span><p><strong>Reconheça os sinais de alerta.</strong> Dor pélvica, febre, sangramento ou lesões persistentes mudam a investigação.</p></div>
+</div></section>
             <h3>Mini caso integrado</h3>
             <p>Mulher de 28 anos, não gestante, com corrimento de odor mais forte após relações. Pouco prurido, sem dor pélvica. Secreção fina e homogênea, pH 5,2, teste das aminas positivo e clue cells. O conjunto preenche os quatro critérios de Amsel e favorece vaginose bacteriana. Se a mesma paciente apresentasse inflamação intensa e muitos leucócitos, o raciocínio deveria se abrir para tricomoníase, cervicite ou doença mista.</p>
           </section>
-<section id="luria-quadro-visual-vaginites" class="book-section luria-visual-module">
-<h2>Comparação final: candidíase × vaginose × tricomoníase</h2>
-<p class="luria-visual-intro">Painel de leitura rápida que complementa, sem substituir, a explicação detalhada dos capítulos. A história e o exame orientam a escolha dos testes; sintomas isolados não confirmam a etiologia.</p>
-<div class="luria-study-cols">
-  <div class="luria-study-box">
-    <h3>Roteiro diagnóstico com interpretação</h3>
-    <ol class="luria-study-steps">
-    <li><div><strong>1. Localize a origem</strong><span>Vulva, vagina e colo podem produzir queixas semelhantes; observe lesões, inflamação e secreção cervical.</span></div></li>
-    <li><div><strong>2. Diferencie os padrões</strong><span>Prurido, odor, características do corrimento, dor pélvica e exposição a IST modificam as hipóteses.</span></div></li>
-    <li><div><strong>3. Selecione exames</strong><span>pH vaginal, microscopia e testes específicos oferecem informações complementares com sensibilidades diferentes.</span></div></li>
-    <li><div><strong>4. Trate a etiologia</strong><span>Antifúngico, antibiótico e manejo das parcerias não são intercambiáveis.</span></div></li>
-    </ol>
-  </div>
-  <div class="luria-study-box">
-    <h3>Fisiologia do pH em quatro etapas</h3>
-    <ol class="luria-study-steps">
-    <li><div><strong>1. Maturação do epitélio</strong><span>O ambiente hormonal influencia a maturação celular e a disponibilidade de substratos.</span></div></li>
-    <li><div><strong>2. Lactobacilos</strong><span>A produção de ácido lático contribui para o pH baixo em muitos perfis de idade reprodutiva.</span></div></li>
-    <li><div><strong>3. Mudança da microbiota</strong><span>Redução relativa de lactobacilos e expansão de anaeróbios associam-se à vaginose e à elevação do pH.</span></div></li>
-    <li><div><strong>4. Evite a conclusão automática</strong><span>pH elevado não confirma vaginose; candidíase pode ocorrer com pH preservado.</span></div></li>
-    </ol>
-  </div>
+<section id="luria-quadro-visual-vaginites" class="book-section luria-final-comparison">
+<h2>Quadro comparativo final</h2>
+<p class="luria-editorial-deck">Depois de estudar as três doenças, use esta tabela para revisar as diferenças que realmente orientam o diagnóstico e a conduta. Ela não substitui os critérios descritos em cada capítulo.</p>
+<div class="luria-comparison-scroll" role="region" aria-label="Comparação entre candidíase, vaginose e tricomoníase" tabindex="0">
+<table class="book-table luria-master-table">
+<thead><tr><th scope="col">Ponto-chave</th><th scope="col">Candidíase</th><th scope="col">Vaginose bacteriana</th><th scope="col">Tricomoníase</th></tr></thead>
+<tbody>
+<tr><th scope="row">Natureza</th><td>Vaginite fúngica inflamatória</td><td>Disbiose com biofilme</td><td>IST por protozoário</td></tr>
+<tr><th scope="row">Pista clínica</th><td>Prurido e eritema vulvar</td><td>Odor e secreção fina homogênea</td><td>Exposição sexual e inflamação variável; pode ser assintomática</td></tr>
+<tr><th scope="row">pH habitual</th><td>Geralmente ≤ 4,5</td><td>Frequentemente &gt; 4,5</td><td>Frequentemente &gt; 4,5</td></tr>
+<tr><th scope="row">Confirmação</th><td>Microscopia/KOH; cultura ou identificação em situações complicadas</td><td>Amsel (3/4), Nugent ou ensaio validado</td><td>NAAT quando disponível; fresco positivo apoia, negativo não exclui</td></tr>
+<tr><th scope="row">Tratamento principal</th><td>Azólico; tópico por sete dias na gestação</td><td>Metronidazol ou clindamicina, conforme contexto</td><td>Nitroimidazólico sistêmico e tratamento das parcerias</td></tr>
+<tr><th scope="row">Atenção no retorno</th><td>Confirmar espécie e afastar dermatoses se recorrente</td><td>Reavaliar disbiose e estratégias para recorrência</td><td>Considerar reinfecção; reteste em mulheres sexualmente ativas</td></tr>
+</tbody></table>
 </div>
-<h3>Três hipóteses que merecem comparação lado a lado</h3>
-<div class="luria-compare">
-  <div class="luria-compare-card"><h3>Candidíase</h3><p class="luria-compare-label">Fungo + inflamação</p><p><strong>Pistas:</strong> prurido, eritema, ardor; o aspecto grumoso pode ocorrer, mas não é obrigatório.</p><p><strong>pH:</strong> costuma permanecer ≤ 4,5.</p><p><strong>Teste:</strong> microscopia/testes específicos; recorrência exige investigação adequada.</p></div>
-  <div class="luria-compare-card"><h3>Vaginose bacteriana</h3><p class="luria-compare-label">Disbiose + biofilme</p><p><strong>Pistas:</strong> odor e corrimento homogêneo, frequentemente com pouca inflamação.</p><p><strong>pH:</strong> frequentemente acima de 4,5.</p><p><strong>Teste:</strong> Amsel, Nugent ou teste validado conforme o cenário.</p></div>
-  <div class="luria-compare-card"><h3>Tricomoníase</h3><p class="luria-compare-label">Protozoário + IST</p><p><strong>Pistas:</strong> corrimento e inflamação variáveis, com muitos casos assintomáticos.</p><p><strong>pH:</strong> pode estar elevado, sem especificidade.</p><p><strong>Teste:</strong> preferir teste sensível quando disponível; avaliar parcerias.</p></div>
-</div>
-<div class="luria-visual-note"><strong>Pulo do Gato:</strong> pH e aparência do corrimento ajudam a orientar o raciocínio, mas não confirmam o diagnóstico isoladamente. Se houver dor pélvica, febre, secreção mucopurulenta cervical ou colo friável, ampliar a investigação para cervicite e doença inflamatória pélvica quando pertinentes.</div>
-<h3>Quadro-síntese de exames e sintomas</h3><table class="book-table"><thead><tr><th>Característica</th><th>Candidíase</th><th>Vaginose</th><th>Tricomoníase</th></tr></thead><tbody>
-              <tr><td>Sintoma dominante</td><td>Prurido/ardor</td><td>Odor/corrimento</td><td>Corrimento e irritação; pode ser assintomática</td></tr>
-              <tr><td>Inflamação</td><td>Frequentemente importante</td><td>Geralmente discreta</td><td>Variável, às vezes intensa</td></tr>
-              <tr><td>pH habitual</td><td>&lt;4,5</td><td>&gt;4,5</td><td>Geralmente &gt;4,5</td></tr>
-              <tr><td>Microscopia</td><td>Leveduras/hifas/pseudohifas</td><td>Clue cells</td><td>Protozoários móveis + leucócitos</td></tr>
-              <tr><td>Natureza</td><td>Infecção fúngica; geralmente não adquirida sexualmente</td><td>Disbiose</td><td>IST</td></tr>
-            </tbody></table><p>O quadro é usado após o estudo de cada etiologia, não para substituir diagnóstico e tratamento específicos.</p><h3>Interpretação de resultados discordantes</h3><table class="book-table"><thead><tr><th>Combinação</th><th>Por que pode ocorrer</th><th>Conduta intelectual</th></tr></thead><tbody>
-<tr><td>Prurido com pH alto e fungo em cultura</td><td>Coinfecção, interferência na coleta ou colonização fúngica coexistindo com outra causa.</td><td>Reavaliar sinais e não tratar isoladamente a cultura.</td></tr>
-<tr><td>Odor típico, mas ausência de clue cells</td><td>Amostra ou técnica não ideais, outra causa de odor ou resultados intermediários.</td><td>Verificar critérios completos e necessidade de teste validado.</td></tr>
-<tr><td>Suspeita de tricomoníase com fresco negativo</td><td>Baixa sensibilidade e dependência de leitura rápida.</td><td>Utilizar teste molecular quando indicado e disponível.</td></tr>
-<tr><td>Secreção persistente com testes negativos</td><td>Dermatose, vaginite inflamatória, hipoestrogenismo, corpo estranho ou cervicite não investigada.</td><td>Retomar exame e diferencial, não acrescentar antibióticos ao acaso.</td></tr>
-</tbody></table></section>
+<p class="luria-comparison-foot"><strong>Atenção:</strong> dor pélvica, febre, secreção cervical ou lesão persistente exigem investigação além das três síndromes.</p>
+</section>
 <section class="book-section"><h2 id="referencias">Referências</h2>
             <ol class="reference-list">
               <li>Ministério da Saúde. <strong>PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis.</strong> Versão vigente.</li>
