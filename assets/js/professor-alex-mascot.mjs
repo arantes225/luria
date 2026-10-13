@@ -120,7 +120,7 @@ export class ProfessorAlexMascot extends HTMLElement {
     const global=document.documentElement.dataset.theme,body=document.body?.dataset;
     this._theme=this.theme==='auto' ? (body?.uiIdentity==='pink'||['leila-mood','pink','rosa'].includes(global)?'pink':body?.uiAppearance==='dark'||global==='dark'?'dark':'light') : ({claro:'light',escuro:'dark',rosa:'pink'}[this.theme]||this.theme);
     this._color=this._theme==='pink'?'#ff87c6':'#50d8ff';
-    if(this.lightMaterial){this._syncAccents();this.whiteMaterial.color.set(this._theme==='light'?'#729ac7':this._theme==='dark'?'#e6edf8':'#ffffff');}
+    if(this.lightMaterial){this._syncAccents();this.whiteMaterial.color.set(this._theme==='light'?'#729ac7':this._theme==='dark'?'#e6edf8':this._theme==='pink'&&!(this.theme==='auto'&&(body?.uiAppearance==='dark'||global==='dark'))?'#c586ad':'#ffffff');}
   }
   _syncAccents() {
     const signature=[this._fromFace,this._currentFace,this._faceMix.toFixed(2),this._color].join('|');
