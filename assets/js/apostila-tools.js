@@ -236,7 +236,12 @@
 
     // Alguns links originais (DermNet/Scientific Archives) apontam para arquivos
     // descontinuados ou bloqueiam exibição fora do site. Não renderizar <img> quebrada.
-    const directImageUnavailable = asset.render_mode === "source_link";
+    // Direito de republicação pendente (auditoria editorial 2026-10-13).
+    // Enquanto a licença das seis figuras não for comprovada, manter apenas
+    // acesso à publicação de origem, sem incorporar o arquivo de terceiros.
+    const pendingReuseRights = new Set([78, 94, 96, 98, 315, 319]);
+    const directImageUnavailable = asset.render_mode === "source_link" ||
+      pendingReuseRights.has(Number(row.id));
     if (directImageUnavailable) {
       const original = luriaSafeContentUrl(row.source_url);
       if (!original) return null;
