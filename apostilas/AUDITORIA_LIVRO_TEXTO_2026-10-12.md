@@ -66,3 +66,12 @@
 ### Infraestrutura editorial
 - \`apostilas/EDITORIAL_STANDARD.md\`: padrão Livro-Texto 40K, critérios clínicos, preservação de renderer e curadoria de imagens adicionados.
 - \`scripts/audit-apostilas-40k.mjs\`: auditoria preliminar automatizada de conteúdo didático das 25 pastas, com exclusão de HTML estrutural e compatibilidade com páginas HTML/JSON; não confundir resultado de triagem com certificação clínica.
+
+
+### Síndromes hipertensivas da gestação — expansão textual aplicada no código
+- Arquivo \`apostilas/sindromes-hipertensivas-da-gestacao/index.html\` atualizado na branch \`main\`, commit de conteúdo \`5d596909035e6fa0e6f7a20d9e0239b271d36a48\` e sumário integrado no commit \`19f939000af21be489234a117061ef894daa1c26\`.
+- Criado **capítulo 20** com nove blocos desenvolvidos de fisiologia vascular, placentação, desequilíbrio angiogênico, lesão renal, HELLP, diagnóstico diferencial de microangiopatias, neurofisiopatologia/eclâmpsia, edema pulmonar, interpretação fetal, puerpério e casos integradores.
+- Fundamentação atualizada com RBEHG 2025, Diretriz Brasileira de Hipertensão 2025 e FEBRASGO HELLP 2024; distinção entre critérios laboratoriais, sinais clínicos e decisões no serviço.
+- Contagem preliminar do artigo principal passou de **31.083 para 49.831 caracteres** (antes de exclusões mais estritas); revisão visual/PWA e validação clínica integral ainda pendentes.
+- **10 candidatas de imagem continuam pendentes no Admin**; nenhuma foi aprovada automaticamente e o fluxo de curadoria não foi alterado.
+
