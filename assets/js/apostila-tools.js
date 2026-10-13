@@ -261,62 +261,113 @@
     return figure;
   }
 
-  function placeApprovedImage(row) {
+  // A imagem complementa o raciocínio do capítulo: não cria galerias para somar páginas.
+  function normalizedImageIdentity(raw) {
+    const input = String(raw || "").trim();
+    if (!input) return "";
+    try {
+      const url = new URL(input, location.href);
+      return (url.hostname.toLowerCase() + decodeURIComponent(url.pathname))
+        .replace(/\/{2,}/g, "/").toLowerCase();
+    } catch {
+      return input.split(/[?#]/)[0].replace(/\/{2,}/g, "/").toLowerCase();
+    }
+  }
+
+  function figureKind(text) {
+    const s = String(text || "").toLowerCase();
+    if (/microsc|esfrega|fotomicro|gram|clue cell|levedura|pseudohifa|bacilo|histopat/.test(s)) return "microscopy";
+    if (/fotografia|imagem cl[íi]nica|vulva|colo em morango|les[aã]o|corrimento|dermnet|secre[cç][aã]o/.test(s)) return "clinical";
+    if (/fluxograma|esquema|diagrama|gr[aá]fico/.test(s)) return "diagram";
+    return "other";
+  }
+
+  function imageNoveltyScore(row, kinds) {
+    const asset = getAsset(row);
+    const description = [asset.title, asset.alt, asset.caption, row.candidate_key].join(" ");
+    const kind = figureKind(description);
+    const licensed = String(row.source_license || "").toLowerCase();
+    let score = 10;
+    if (kinds.includes(kind)) score -= 8;
+    else score += 9;
+    if (/dom[íi]nio p[úu]blico|cc by/.test(licensed)) score += 3;
+    if (/condicionad|conferir|verificar/.test(licensed)) score -= 2;
+    if (kind === "clinical" && kinds.includes("microscopy")) score += 5;
+    return score;
+  }
+
+  function afterReadingAnchor(target, index, total) {
+    const headings = [...target.children].filter(element => /^H[34]$/.test(element.tagName));
+    if (headings.length) {
+      const heading = headings[Math.min(headings.length - 1, Math.floor((index + 1) * headings.length / (total + 1)))];
+      let next = heading.nextElementSibling;
+      while (next && !/^H[234]$/.test(next.tagName)) {
+        if (next.tagName === "P" || next.tagName === "UL" || next.tagName === "OL") return next;
+        next = next.nextElementSibling;
+      }
+      return heading;
+    }
+    const paragraphs = [...target.children].filter(element => element.tagName === "P" && element.textContent.trim().length > 60);
+    return paragraphs[Math.min(paragraphs.length - 1, Math.floor((index + 1) * paragraphs.length / (total + 1)))] || target.querySelector("h2");
+  }
+
+  function placeApprovedImage(row, slotIndex, slotTotal) {
     if (document.querySelector('[data-apostila-approved-image="' + Number(row.id) + '"]')) return;
     const target = document.getElementById(String(row.target_section || "").replace(/^#/, ""));
     if (!target) return;
-
-    const asset = getAsset(row);
-    const selector = String(row.target_selector || asset.target_selector || "").trim();
-    let anchor = selector ? target.querySelector(selector) : null;
     const figure = createApprovedFigure(row);
     if (!figure) return;
-
-    const placement = String(row.placement || asset.placement || "append");
-    if (!anchor) {
+    const asset = getAsset(row);
+    const selector = String(row.target_selector || asset.target_selector || "").trim();
+    const anchor = selector ? target.querySelector(selector) : afterReadingAnchor(target, slotIndex, slotTotal);
+    if (!anchor || anchor === target) {
       target.appendChild(figure);
       return;
     }
-    if (placement === "before") anchor.insertAdjacentElement("beforebegin", figure);
-    else if (placement === "prepend") anchor.insertAdjacentElement("afterbegin", figure);
-    else if (placement === "append") anchor.insertAdjacentElement("beforeend", figure);
+    if (selector && String(row.placement || asset.placement) === "before") anchor.insertAdjacentElement("beforebegin", figure);
     else anchor.insertAdjacentElement("afterend", figure);
   }
 
-  function pairAdjacentApprovedFigures() {
-    document.querySelectorAll(".apostila-approved-pair").forEach(pair => {
-      const parent = pair.parentElement;
-      [...pair.children].forEach(child => parent?.insertBefore(child, pair));
-      pair.remove();
-    });
-
-    document.querySelectorAll(".book-section").forEach(section => {
-      let node = section.firstElementChild;
-      while (node) {
-        if (!node.classList?.contains("apostila-approved-figure")) {
-          node = node.nextElementSibling;
-          continue;
-        }
-        const next = node.nextElementSibling;
-        if (!next?.classList?.contains("apostila-approved-figure")) {
-          node = node.nextElementSibling;
-          continue;
-        }
-        const pair = document.createElement("div");
-        pair.className = "apostila-approved-pair";
-        section.insertBefore(pair, node);
-        pair.appendChild(node);
-        pair.appendChild(next);
-        node = pair.nextElementSibling;
-      }
-    });
-  }
-
   function renderApproved() {
+    // Remove agrupamentos antigos; nenhum par ou mosaico de quatro imagens é recriado.
     document.querySelectorAll(".apostila-approved-pair").forEach(node => node.remove());
     document.querySelectorAll(".apostila-approved-figure[data-apostila-approved-image]").forEach(node => node.remove());
-    rows.filter(row => row.review_status === "approved").forEach(placeApprovedImage);
-    pairAdjacentApprovedFigures();
+
+    const grouped = new Map();
+    rows.filter(row => row.review_status === "approved").forEach(row => {
+      const key = String(row.target_section || "");
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(row);
+    });
+
+    grouped.forEach((candidates, sectionId) => {
+      const section = document.getElementById(sectionId.replace(/^#/, ""));
+      if (!section) return;
+      const authoredImages = [...section.querySelectorAll("img")];
+      const used = new Set(authoredImages.map(img => normalizedImageIdentity(img.getAttribute("src"))).filter(Boolean));
+      const authoredKinds = authoredImages.map(img =>
+        figureKind([img.alt, img.closest("figure")?.querySelector("figcaption")?.textContent || ""].join(" "))
+      );
+      const ranked = candidates
+        .filter(row => {
+          const asset = getAsset(row);
+          const identities = [asset.src, asset.original_src, asset.resolved_src].map(normalizedImageIdentity).filter(Boolean);
+          if (!identities.length || identities.some(id => used.has(id))) return false;
+          identities.forEach(id => used.add(id)); // evita mesmo arquivo aprovado duas vezes
+          return true;
+        })
+        .map(row => ({row, score:imageNoveltyScore(row, authoredKinds)}))
+        .sort((a,b) => b.score - a.score || Number(a.row.id) - Number(b.row.id));
+
+      // Uma imagem principal já presente é mantida; no máximo um complemento visual
+      // realmente distinto por seção. Sem principal, no máximo duas em seção extensa.
+      const subsectionCount = [...section.children].filter(el => /^H[34]$/.test(el.tagName)).length;
+      const maxAdditional = authoredImages.length ? 1 : (subsectionCount >= 4 ? 2 : 1);
+      const chosen = ranked.filter(item => item.score >= (authoredImages.length ? 12 : 0))
+        .slice(0,maxAdditional)
+        .map(item => item.row);
+      chosen.forEach((row, index) => placeApprovedImage(row,index,chosen.length));
+    });
   }
 
   function ensureLightbox() {
