@@ -42,6 +42,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Pendências:** completar teste de autossuficiência para todas as situações comuns e exceções, conferir exaustividade do texto (estimativa anterior abaixo de 60 mil caracteres didáticos úteis), validar todas as afirmações e fontes, rever figuras em navegador desktop e PWA e testar perguntas representativas contra o conteúdo.
 - **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Testes e deploy automáticos não suprem revisão médica/editorial integral.
 
+## 2026-10-13 — Avaliação da vitalidade fetal
+
+- **Apostila LURIA:** `apostilas/avaliacao-vitalidade-fetal/index.html`.
+- **Benchmark lido no Google Drive:** `01 - SOFRIMENTO FETAL AGUDO.pdf`, título e conteúdo sobre CTG anteparto e intraparto, perfil biofísico, Doppler, padrão basal/variabilidade/acelerações/desacelerações e condutas. Comparação **parcial**, pois o PDF integra avaliação anteparto com sofrimento fetal agudo, não é tratado autônomo de vitalidade fetal. **Autoria Estratégia MED não demonstrada**; não presumir.
+- **Comparação técnica:** PDF resume 3 categorias intraparto, 10×10 antes de 32 semanas, 15×15 depois, PBF e abordagem de hipóxia. A LURIA já cobre estas bases, mas requer casos graduados com resultados discordantes e revisão da comunicação das fontes/imagens. A sugestão do PDF de oxigênio de rotina não é adotada na LURIA: diretriz NICE NG229 reserva oxigênio para hipoxemia materna ou indicação anestésica.
+- **Figura real presente:** `CTG_Output.jpg`, autor PhantomSteve, Wikimedia Commons, CC BY-SA 3.0. Ficheiro e página original verificados; manter imagem clínica real com crédito e ampliação e retirar texto de prévia "imagem indisponível" quando imagem funcional.
+- **Fontes clínicas contrastadas:** ACOG Committee Opinion 828 (2021), SMFM Consult Series 52 (2020, reafirmada 2024), ACOG Clinical Practice Guideline 10 (2025), NICE NG229 (2022), ACOG Special Tests FAQ (revisada em 2026).
+- **Melhorias planejadas:** interpretação do PBF com líquido inadequado apesar de escore alto; prematuridade e reatividade 10×10; hierarquia Doppler umbilical/CTG em restrição de crescimento; casos de monitorização intraparto/taquissistolia e documentação de conduta.
+- **Certificação:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Falta revisão integral de profundidade/60K caracteres úteis, matriz completa de rastreabilidade clínica, teste de compreensão, revisão de fontes nacionais específicas, inspeção visual desktop/PWA e confirmação de todas as imagens aprovadas renderizadas.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
