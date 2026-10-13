@@ -4,14 +4,14 @@ if(local) {
   const {EXPRESSIONS,ANIMATIONS}=await import('../../assets/js/professor-alex-mascot.mjs');
   const $=id=>document.getElementById(id),alex=$('alex');$('lab').hidden=false;$('restricted').hidden=true;
   const labels=['Feliz','Atento','Pensativo','Surpreso','Confuso','Animado','Piscando','Estourado'];
-  const motionLabels=['Acenar','Comemorar','Pensar','Explicar','Digitar','Ler','Demonstrar dúvida','Modo estourado','Repousar','Despertar'];
-  const icons=['↗','✧','⋯','≋','⌨','▤','?','!','☾','☀'];
+  const motionLabels=['Acenar','Comemorar','Pensar','Explicar','Digitar','Ler','Demonstrar dúvida','Modo estourado','Repousar','Despertar','Cena de empolgação','Cena estourado'];
+  const icons=['↗','✧','⋯','≋','⌨','▤','?','!','☾','☀','✦','♨'];
   const faces=[
     '<path d="M9 15 Q16 3 23 15 M35 15 Q42 3 49 15"/><path d="M24 21 Q29 29 34 21"/>',
     '<ellipse cx="16" cy="12" rx="4" ry="7"/><ellipse cx="42" cy="12" rx="4" ry="7"/><path d="M27 24h4"/>',
     '<path d="M9 12q7 9 14 0 M35 15q7-10 14 0 M26 24q3-3 6 0"/>',
     '<circle cx="16" cy="12" r="6"/><circle cx="42" cy="12" r="6"/><circle cx="29" cy="25" r="2"/>',
-    '<path d="m9 4 13 3 m13-3 13-3 M25 24l8-2"/><ellipse cx="16" cy="14" rx="3" ry="5"/><ellipse cx="42" cy="14" rx="3" ry="5"/>',
+    '<path d="M9 5q7-5 14 0 M35 3q7-5 14 0 M26 24q3 3 6 0"/><ellipse cx="16" cy="14" rx="3" ry="5"/><ellipse cx="42" cy="14" rx="3" ry="6"/>',
     '<path d="m9 8 13 6-13 4 m40-10-13 6 13 4 M23 23q6 9 12 0"/>',
     '<ellipse cx="16" cy="12" rx="4" ry="7"/><path d="M35 15q7-10 14 0 M27 24h4"/>',
     '<path d="m8 7 15 7-4 4-8-1z m42 0-15 7 4 4 8-1z M24 26q5-7 10 0"/>'

@@ -25,9 +25,21 @@ A arquitetura existente é HTML/CSS/JavaScript estático. O Web Component funcio
 
 O módulo exporta `ProfessorAlexMascot`, `EXPRESSIONS` e `ANIMATIONS`. Propriedades JavaScript refletem atributos. `size` aceita pixels (80–900), `small`, `medium`, `large`. `intensity` aceita 0–2; zero congela os movimentos. `theme` aceita `auto`, `light`, `dark`, `pink` (também claro/escuro/rosa). Em `auto`, observa `html[data-theme]` e as preferências v2 `body[data-ui-appearance]` / `body[data-ui-identity]`, incluindo `leila-mood`.
 
-Expressões: `happy`, `attentive`, `thoughtful`, `surprised`, `confused`, `excited`, `wink`, `angry`. Também aceita os oito nomes em português, sem acentos. A face luminosamente vermelha é exclusiva de `angry`; o restante segue o tema.
+Expressões: `happy`, `attentive`, `thoughtful`, `surprised`, `confused`, `excited`, `wink`, `angry`. Também aceita os oito nomes em português, sem acentos. Em `angry`, rosto, botão inferior, encaixes, anéis e bases dos membros ficam vermelhos, com transição suave. Ao sair desse modo, retornam ao tema selecionado. Nos temas azuis, os detalhes usam azul claro neon, com emissão e halos suaves. A dúvida usa olhos redondos e sobrancelhas arqueadas, sem as diagonais irritadas do modo estourado; pensar tem um olho semicerrado e uma sobrancelha levantada.
 
-Movimentos: `wave`, `celebrate`, `thinking`, `explaining`, `typing`, `reading`, `confused`, `angry`, `sleep`, `wake`. São eventos temporários, com entrada/saída suaves e retorno à expressão selecionada. `sleep` demonstra um ciclo de repouso e também retorna ao idle. Para repetir o mesmo gesto:
+O botão inferior central tem moldura cinza, encaixe escuro e barra luminosa horizontal, conforme a referência do robô flutuante. Os braços têm mais volume, encaixe escuro com centro luminoso na extremidade voltada ao corpo e anel azul na extremidade externa. As pernas são afuniladas, com bases mais largas, pequenas aberturas luminosas superiores e solas azuis visíveis. Todos os membros permanecem desconectados do corpo.
+
+O corpo usa uma superfície curva com normais suaves; o visor é um quadrado arredondado com lados curvos, mais alto e menos retangular. Os braços começam numa altura próxima dos círculos laterais, um pouco abaixo deles. O eixo de cada braço fica no encaixe próximo ao corpo, e o socket/LED acompanha a carcaça nesse mesmo pivô, sem se destacar durante a rotação. No aceno, a mão sobe moderadamente e faz dois balanços amplos pela ponta.
+
+Na digitação, as mãos alternam toques sobre um teclado sólido branco com teclas escuras em relevo. Na leitura, seguram uma folha bege opaca com quatro linhas em zigue-zague, em moldura escura e mais afastada do corpo. O alcance é limitado para evitar cruzamento das mãos na intensidade máxima. Ao pensar, é a extremidade externa do braço que chega ao rosto. Explicar combina gestos alternados com animação demonstrativa de boca, sem áudio.
+
+O laboratório usa um fundo azul com contraste suficiente para a carcaça branca, com variantes coerentes nos temas escuro e rosa. Uma sombra suave no canvas melhora a leitura da silhueta quando o componente é usado sobre branco; o fundo do componente continua transparente.
+
+Movimentos: `wave`, `celebrate`, `thinking`, `explaining`, `typing`, `reading`, `confused`, `angry`, `sleep`, `wake`. São eventos temporários, com entrada/saída suaves e retorno à expressão selecionada. `sleep` demonstra um ciclo de repouso e também retorna ao idle.
+
+Há duas cenas adicionais: `celebrateScene` (6,5 s), com três pulos diferentes, deslocamento lateral, giro, confetes e movimentos independentes dos braços e pernas; e `angryScene` (6 s), com dois giros, expressão de raiva intensificada, agitação dos membros, fogo estilizado e fumaça. A câmera abre temporariamente para aproveitar o cenário e volta ao enquadramento original. Efeitos são gerados localmente, sem assets externos. Movimento reduzido e intensidade zero suprimem os efeitos dinâmicos.
+
+Para repetir o mesmo gesto:
 
 ```js
 const alex = document.querySelector('professor-alex-mascot');
@@ -43,7 +55,7 @@ Eventos: `alex-ready`, `alex-error`, `alex-react`, `alex-animation-end` (`detail
 
 ## Renderização e desempenho
 
-Three.js 0.180.0, licença MIT, distribuído localmente em dois módulos minificados (~720 KB sem compressão). Nenhum download de modelo, textura ou CDN em execução. Textura facial e iluminação de estúdio são geradas em memória. São aproximadamente 15.660 triângulos e 22 chamadas de desenho no repouso, sem pós-processamento ou mapas de sombra. A biblioteca é carregada somente ao importar o mascote.
+Three.js 0.180.0, licença MIT, distribuído localmente em dois módulos minificados (~720 KB sem compressão). Nenhum download de modelo, textura ou CDN em execução. Textura facial e iluminação de estúdio são geradas em memória. São aproximadamente 21.924 triângulos e 35 chamadas de desenho no repouso, sem pós-processamento ou mapas de sombra. A biblioteca é carregada somente ao importar o mascote.
 
 Limite de 30 fps e DPR 1,5; renderização pausa fora da tela e em aba oculta. `prefers-reduced-motion` desativa flutuação, piscadas, perseguição do cursor e demonstração dinâmica de fala. Ainda permite selecionar expressões e executar a sequência estática dos gestos. Ao remover o componente, cancela o loop, desconecta os observadores e libera geometria, materiais, texturas e contexto. WebGL 2 é necessário; a falha exibe uma mensagem em vez de substituir por outro personagem.
 
@@ -63,7 +75,7 @@ Nenhum arquivo original da plataforma foi modificado.
 
 ## Validação
 
-Os testes WebGL passam no Chrome headless, em desktop e em viewport mobile de 390×844. Foram verificados oito rostos, dez gestos, três temas, movimento reduzido, fala demonstrativa, teclado, membros independentes, pausa fora da tela e reconexão do componente. O teste de cache verifica arquivos reais, sem exigir acesso externo. A instalação de PWA e o desempenho em iOS/Android físicos não foram validados neste ambiente.
+Os testes WebGL passam no Chrome headless, em desktop e em viewport mobile de 390×844. Foram verificados oito rostos, dez gestos, duas cenas, três temas, movimento reduzido, fala demonstrativa, teclado, membros independentes, pausa fora da tela e reconexão do componente. A fixação e o alinhamento dos encaixes dos ombros são verificados em todos os 12 movimentos; há validação do retorno das cores e do enquadramento das cenas. O teste de cache verifica arquivos reais, sem exigir acesso externo. A instalação de PWA e o desempenho em iOS/Android físicos não foram validados neste ambiente.
 
 ```sh
 node --check assets/js/professor-alex-mascot.mjs
