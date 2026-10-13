@@ -52,7 +52,7 @@ test("Imagens candidatas são exportadas apenas para revisão administrativa",()
 });
 test("Gerador rejeita texto superficial e figuras clínicas embutidas",()=>{
   const shallow=book();
-  shallow.sections[0].body_html="<p>Raso</p>";
+  for (const section of shallow.sections) section.body_html="<p>Raso</p>";
   assert.throws(()=>buildBook(template,shallow),/conteúdo insuficiente/);
   const image=book();
   image.sections[0].body_html+='<img src="https://example.com/nao-aprovada.png">';
