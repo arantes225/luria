@@ -5139,7 +5139,8 @@
     state.disaster=null;
     setDisasterShell(false);
     clearPlantaoClinicalView();
-    renderLibrary();
+    if (ENTRY_MODE === "emergency" && state.libraryView === "home") setCaseLibraryView("library");
+    else renderLibrary();
     $("plantao-action-drawer").hidden=true;
     $("plantao-action-tabs").inert=false;
     show("plantao-library");

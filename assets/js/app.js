@@ -913,6 +913,41 @@
       box-shadow:0 1px 5px rgba(15,23,42,.10)!important;
     }
 
+    /* Keep the shared timer readable even when page-specific styles target descendants. */
+    body #luria-pomodoro-panel {
+      border-color:var(--color-border,var(--border))!important;
+      background:var(--color-surface,var(--surface))!important;
+      color:var(--color-text-primary,var(--text))!important;
+    }
+    body #luria-pomodoro-panel :is(header strong,.luria-pomodoro-time) {
+      color:var(--color-text-primary,var(--text))!important;
+    }
+    body #luria-pomodoro-panel :is(header small,.luria-stopwatch-note,.luria-pomodoro-status,.luria-pomodoro-fields label,.luria-timer-switch button:not([aria-pressed="true"]),.luria-pomodoro-modes button:not([aria-pressed="true"])) {
+      color:var(--color-text-secondary,var(--muted))!important;
+    }
+    body #luria-pomodoro-panel .luria-pomodoro-fields label > span:first-child {
+      color:var(--color-text-primary,var(--text))!important;
+    }
+    body #luria-pomodoro-panel :is(input,.luria-pomodoro-actions button) {
+      border-color:var(--color-border-interactive,var(--border))!important;
+      background:var(--color-surface-elevated,var(--surface-2))!important;
+      color:var(--color-text-primary,var(--text))!important;
+    }
+    body #luria-pomodoro-panel .luria-pomodoro-modes button:not([aria-pressed="true"]) {
+      border-color:var(--color-border-interactive,var(--border))!important;
+      background:var(--color-surface-elevated,var(--surface-2))!important;
+      color:var(--color-text-secondary,var(--muted))!important;
+    }
+    body #luria-pomodoro-panel .luria-timer-switch button[aria-pressed="true"] {
+      background:var(--color-surface,var(--surface))!important;
+      color:var(--color-primary-text,var(--accent))!important;
+    }
+    body #luria-pomodoro-panel :is(.luria-pomodoro-modes button[aria-pressed="true"],.luria-pomodoro-save,#luria-stopwatch-start,#luria-pomodoro-start) {
+      border-color:var(--color-primary,var(--accent))!important;
+      background:var(--color-primary,var(--accent))!important;
+      color:var(--color-primary-foreground,var(--text))!important;
+    }
+
     /* Keep the trigger row itself above page stacking contexts. */
     .topbar {
       z-index:2147482000!important;
