@@ -157,3 +157,47 @@ test("Fallback do CDC tenta URL histórica quando a rota canônica falha",()=>{
     assert.equal(img.nextElementSibling.hidden,false);
   } finally {dom.window.close();}
 });
+
+
+test("Auditoria de imagens: src permitido na CSP e assets locais existentes em todas as apostilas",()=>{
+  const dir=path.join(root,"apostilas");
+  const folders=fs.readdirSync(dir,{withFileTypes:true}).filter(x=>x.isDirectory());
+  let pages=0,images=0;
+  for(const folder of folders){
+    const rel="apostilas/"+folder.name+"/index.html";
+    if(!fs.existsSync(path.join(root,rel)))continue;
+    pages++;
+    const html=read(rel);
+    const csp=html.match(/<meta\\s+http-equiv="Content-Security-Policy"\\s+content="([^"]+)"/i)?.[1]||"";
+    const imageDirective=csp.match(/(?:^|;)\\s*img-src\\s+([^;]+)/i)?.[1]||"";
+    assert.ok(imageDirective,rel+": política de imagens ausente");
+    const imgTags=[...html.matchAll(/<img\\b[^>]*>/gi)].map(m=>m[0]);
+    for(const tag of imgTags){
+      const src=tag.match(/\\bsrc=(["'])(.*?)\\1/i)?.[2];
+      if(!src)continue;
+      images++;
+      if(src.startsWith("http:"))assert.fail(rel+": imagem via HTTP sem TLS: "+src);
+      if(src.startsWith("https://")){
+        const origin=src.match(/^https:\\/\\/[^/]+/)?.[0];
+        assert.ok(origin && imageDirective.split(/\\s+/).includes(origin),rel+": CSP bloqueia imagem "+src);
+      }else if(src.startsWith("/assets/")){
+        const local=src.split("?")[0];
+        assert.ok(fs.existsSync(path.join(root,local.slice(1))),rel+": imagem local ausente: "+local);
+      }
+    }
+    if(imgTags.some(t=>t.includes("data-apostila-image-fallback")))
+      assert.match(html,/src="\\/assets\\/js\\/apostila-image-fallback\\.js"/,rel+": sem controlador de fallback");
+    const content=html.match(/data-apostila-content="(\\/apostilas\\/[^"]+\\.json)"/)?.[1];
+    if(content){
+      const jsonPath=content.slice(1);
+      assert.ok(fs.existsSync(path.join(root,jsonPath)),rel+": livro JSON ausente: "+jsonPath);
+      const data=JSON.parse(read(jsonPath));
+      const rendered=new Set((data.q||[]).map(a=>a[0]));
+      for(const item of data.o||[]){
+        assert.ok(rendered.has(item[0]),rel+": sumário aponta para seção inexistente "+item[0]);
+      }
+    }
+  }
+  assert.ok(pages>=25);
+  assert.ok(images>=20);
+});
