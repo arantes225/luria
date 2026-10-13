@@ -45,7 +45,7 @@
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-review-all-badge {grid-column:2!important;justify-self:start!important;font-size:.75rem!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-home-deck-area {font-size:.8125rem!important;color:var(--color-text-secondary)!important;white-space:normal!important;overflow:visible!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-stats {display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:.75rem!important;padding:0!important;margin:0!important;}
-  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-stat {display:grid!important;gap:.25rem!important;min-width:0!important;}
+  body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-stat {display:grid!important;gap:.1875rem!important;min-width:0!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-stat b {font-size:1rem!important;color:var(--color-text-primary)!important;font-variant-numeric:tabular-nums!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-stat small {font-size:.8125rem!important;line-height:1.5!important;white-space:normal!important;color:var(--color-text-secondary)!important;}
   body[data-ui="v2"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-progress {display:flex!important;align-items:center!important;gap:.5rem!important;height:auto!important;max-height:none!important;overflow:visible!important;margin-top:auto!important;}
@@ -130,6 +130,14 @@
   body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"] .main #review-answer:not([hidden]) {padding:1rem!important;border-left:3px solid var(--color-info)!important;background:var(--color-info-surface)!important;color:var(--color-text-primary)!important;border-radius:8px!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"] .main :is(#review-position,#review-session-copy) {font-variant-numeric:tabular-nums;color:var(--color-primary-text)!important;}
   body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"] .main :is(#show-answer,.rating-actions button) {transition:background-color 160ms,border-color 160ms;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck {gap:.625rem!important;align-content:start!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-top {align-items:start!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck > h3 {min-height:2.4em!important;margin:0!important;line-height:1.2!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-stats {margin:.25rem 0 0!important;gap:.5rem!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-deck-stat {gap:0!important;text-align:left!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-progress {width:78%!important;box-sizing:border-box!important;flex:0 0 auto!important;gap:.5rem!important;margin:0 auto!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-track {height:11px!important;flex:1 1 auto!important;border-radius:999px!important;}
+  body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-ref-progress > span {flex:0 0 auto!important;font-size:.8125rem!important;line-height:1.4!important;font-variant-numeric:tabular-nums!important;}
   @media(min-width:1200px) { body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"]:not(.flash-review-session-active) .main .flash-section[data-flash-section="review"].active {grid-template-columns:minmax(0,1fr) 416px!important;} }
   @media(prefers-reduced-motion:reduce) { body[data-ui="v2"][data-ui-context="study"][data-page="flashcards"] .main :is(.flash-ref-deck,#quick-metric-retention-bar,.error-metric-progress-bar span,#show-answer,.rating-actions button) {transition:none!important;} }
 
