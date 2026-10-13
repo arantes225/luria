@@ -70,7 +70,7 @@ test("Gerador impede repetição de um parágrafo longo entre capítulos",()=>{
 test("Gerador exige o piso editorial de 60 mil caracteres",()=>{
   const incomplete=book();
   for(const section of incomplete.sections){
-    section.body_html=section.body_html.replace(/<p>/g,"<div>").replace(/<\\/p>/g,"</div>").slice(0,700);
+    section.body_html=section.body_html.slice(0,700);
   }
   assert.throws(()=>buildBook(template,incomplete),/conteúdo insuficiente.*60.000/);
 });
