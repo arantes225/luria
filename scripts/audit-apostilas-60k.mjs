@@ -21,6 +21,7 @@ function removeTagBlocks(x) {
     .replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/gi, " ")
     .replace(/<aside\b[^>]*>[\s\S]*?<\/aside>/gi, " ")
     .replace(/<section\b[^>]*id=["']referencias["'][^>]*>[\s\S]*?<\/section>/gi, " ")
+    .replace(/<section\b[^>]*id=["'](?:resumo|sumario|resumo-prova)["'][^>]*>[\s\S]*?<\/section>/gi, " ")
     .replace(/<section\b[^>]*class=["'][^"']*book-hero[^"']*["'][^>]*>[\s\S]*?<\/section>/gi, " ");
 }
 function visible(s) {
