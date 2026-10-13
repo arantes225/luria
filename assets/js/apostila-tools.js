@@ -206,7 +206,37 @@
       : {};
   }
 
-  function createApprovedFigure(row) {
+  // Fontes reais, licença e identidade clínica verificadas por arquivo.
+  // Casos sem substituta equivalente não geram imagem nem bloco de "prévia".
+  const removedUnlicensed = new Set([78, 94, 315, 319]);
+  const safeClinicalReplacements = {
+    96: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Positive_Fern_Test.jpg/500px-Positive_Fern_Test.jpg",
+      alt: "Fotomicrografia real da cristalização do líquido amniótico (teste de ferning positivo).",
+      title: "Cristalização do líquido amniótico — imagem real",
+      caption: "Padrão arborizado em samambaia após secagem em lâmina; correlacionar com anamnese e exame especular.",
+      source_name: "Paul_012 / Wikimedia Commons",
+      source_url: "https://commons.wikimedia.org/wiki/File:Positive_Fern_Test.jpg",
+      source_license: "CC BY-SA 2.0 — https://creativecommons.org/licenses/by-sa/2.0/"
+    },
+    98: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Histopathology_of_acute_choriodeciduitis_%28original%29.jpg/960px-Histopathology_of_acute_choriodeciduitis_%28original%29.jpg",
+      alt: "Fotomicrografia H&E real de coriodeciduite aguda, com infiltrado neutrofílico no córion e decídua.",
+      title: "Coriodeciduite aguda — lâmina histológica real",
+      caption: "Inflamação com neutrófilos no córion e na decídua; esta lâmina mostra coriodeciduite, não prova, isoladamente, funisite.",
+      source_name: "Mikael Häggström, MD / Wikimedia Commons",
+      source_url: "https://commons.wikimedia.org/wiki/File:Histopathology_of_acute_choriodeciduitis_(original).jpg",
+      source_license: "CC0 1.0 — https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  };
+
+  function createApprovedFigure(originalRow) {
+    if (removedUnlicensed.has(Number(originalRow.id))) return null;
+    const replacement = safeClinicalReplacements[Number(originalRow.id)];
+    const row = replacement ? {...originalRow, source_name: replacement.source_name,
+      source_url: replacement.source_url, source_license: replacement.source_license,
+      proposed_asset: {...getAsset(originalRow), ...replacement,
+        render_mode: "image", original_src: replacement.src, resolved_src: replacement.src}} : originalRow;
     const asset = getAsset(row);
     const src = String(asset.src || "").trim();
     if (!src) return null;
@@ -239,7 +269,7 @@
     // Direito de republicação pendente (auditoria editorial 2026-10-13).
     // Enquanto a licença das seis figuras não for comprovada, manter apenas
     // acesso à publicação de origem, sem incorporar o arquivo de terceiros.
-    const pendingReuseRights = new Set([78, 94, 96, 98, 315, 319]);
+    const pendingReuseRights = new Set([78, 94, 315, 319]);
     const directImageUnavailable = asset.render_mode === "source_link" ||
       pendingReuseRights.has(Number(row.id));
     if (directImageUnavailable) {
@@ -401,7 +431,7 @@
     document.querySelectorAll(".apostila-approved-figure[data-apostila-approved-image]").forEach(node => node.remove());
 
     const grouped = new Map();
-    rows.filter(row => row.review_status === "approved").forEach(row => {
+    rows.filter(row => row.review_status === "approved" && !removedUnlicensed.has(Number(row.id))).forEach(row => {
       const key = String(row.target_section || "");
       if (!grouped.has(key)) grouped.set(key, []);
       grouped.get(key).push(row);
