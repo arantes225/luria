@@ -5838,6 +5838,7 @@
     const list = $("admin-apostila-images-list");
     if (!list || list.dataset.wired === "1") return;
     list.dataset.wired = "1";
+    wireApostilaBatchReview();
     list.addEventListener("click", async event => {
       const expand = event.target.closest("[data-apostila-image-expand]");
       if (expand) {
@@ -5865,6 +5866,159 @@
         const status = $("admin-apostila-images-status");
         if (status) status.textContent = "Falha ao salvar sua decisão.";
         button.disabled = false;
+      }
+    });
+  }
+
+
+  function validateApostilaBatchCandidate(raw, index) {
+    if (!raw || typeof raw !== "object" || Array.isArray(raw)) throw Error("Candidata " + index + ": registro inválido.");
+    const path = String(raw.apostila_path || "").trim();
+    if (!/^\/apostilas\/[a-z0-9-]+\/$/.test(path)) throw Error("Candidata " + index + ": apostila_path inválido.");
+    const key = String(raw.candidate_key || "").trim();
+    if (!/^[a-zA-Z0-9_.-]{3,100}$/.test(key)) throw Error("Candidata " + index + ": candidate_key inválida.");
+    const section = String(raw.target_section || "").trim();
+    if (!/^[a-zA-Z][a-zA-Z0-9_-]{0,90}$/.test(section)) throw Error("Candidata " + index + ": target_section inválida.");
+    const asset = raw.proposed_asset;
+    if (!asset || typeof asset !== "object" || Array.isArray(asset)) throw Error("Candidata " + index + ": proposed_asset ausente.");
+    const src = luriaSafeContentUrl(String(asset.src || "").trim(), {relative:true});
+    const original = luriaSafeContentUrl(String(raw.source_url || "").trim());
+    if (!src || !original || !String(asset.alt || "").trim()
+      || !String(raw.source_name || "").trim() || !String(raw.source_license || "").trim()) {
+      throw Error("Candidata " + index + ": informe imagem, alt, URL, nome e licença da fonte.");
+    }
+    const selector = raw.target_selector ? String(raw.target_selector).trim() : null;
+    if (selector && (selector.length > 130 || !/^[#.][a-zA-Z0-9_#.: -]+$/.test(selector))) {
+      throw Error("Candidata " + index + ": target_selector inválido.");
+    }
+    const size = Number(asset.size_bytes);
+    return {
+      apostila_path: path,
+      apostila_title: String(raw.apostila_title || path).trim().slice(0,180),
+      candidate_key: key,
+      target_section: section,
+      target_selector: selector,
+      placement: ["after","before","append","prepend"].includes(raw.placement) ? raw.placement : "after",
+      proposed_asset: {
+        src: src,
+        alt: String(asset.alt).trim().slice(0,320),
+        title: String(asset.title || asset.alt).trim().slice(0,180),
+        caption: String(asset.caption || "").trim().slice(0,700),
+        didactic_note: String(asset.didactic_note || "").trim().slice(0,700),
+        ...(Number.isInteger(size) && size > 0 && size <= 112640 ? {size_bytes:size} : {})
+      },
+      source_url: original,
+      source_name: String(raw.source_name).trim().slice(0,180),
+      source_license: String(raw.source_license).trim().slice(0,200),
+      source_trust: "unverified",
+      review_status: "pending"
+    };
+  }
+
+  async function importApostilaImageBatch() {
+    const input = $("admin-apostila-images-json");
+    const btn = $("admin-apostila-images-import");
+    const message = $("admin-apostila-images-import-status");
+    const file = input?.files?.[0];
+    if (!file) return;
+    if (file.size > 300000) throw Error("Limite de 300 KB para o manifesto de candidatas.");
+    if (btn) btn.disabled = true;
+    try {
+      const parsed = JSON.parse(await file.text());
+      const rows = Array.isArray(parsed) ? parsed : parsed?.images;
+      if (!Array.isArray(rows) || rows.length < 1 || rows.length > 100) throw Error("Envie um array com 1 a 100 imagens.");
+      const known = new Set(apostilaImageAllRows.map(row => row.apostila_path + ":" + row.candidate_key));
+      const candidates = [];
+      let duplicates = 0;
+      for (let i = 0; i < rows.length; i++) {
+        const row = validateApostilaBatchCandidate(rows[i], i + 1);
+        const key = row.apostila_path + ":" + row.candidate_key;
+        if (known.has(key)) { duplicates++; continue; }
+        known.add(key);
+        candidates.push(row);
+      }
+      if (!candidates.length) {
+        if (message) message.textContent = "Nenhuma candidata nova; " + duplicates + " duplicatas ignoradas.";
+        return;
+      }
+      if (!window.confirm("Enviar " + candidates.length + " candidatas para aprovação no Admin?")) return;
+      let saved = 0;
+      for (let i = 0; i < candidates.length; i += 20) {
+        const { error } = await sb.from("apostila_image_review_queue").insert(candidates.slice(i, i + 20));
+        if (error) throw Error(saved + " enviadas antes da falha: " + error.message);
+        saved += Math.min(20, candidates.length - i);
+        if (message) message.textContent = "Enviadas " + saved + "/" + candidates.length + " candidatas...";
+      }
+      input.value = "";
+      await loadApostilaImageReviewQueue();
+      if (message) message.textContent = saved + " imagens enviadas; " + duplicates + " repetidas ignoradas.";
+    } finally {
+      if (btn) btn.disabled = !input?.files?.length;
+    }
+  }
+
+  async function reviewSelectedApostilaImages(action) {
+    const ids = [...apostilaImageSelection].filter(id => apostilaImageReviewRows.some(row => Number(row.id) === id));
+    if (!ids.length) return;
+    if (ids.length > 25) {window.alert("Revise no máximo 25 imagens por operação.");return;}
+    const verb = action === "approve" ? "Aprovar" : "Rejeitar";
+    if (!window.confirm(verb + " " + ids.length + " imagens selecionadas? Confira qualidade médica, fonte e licença de cada uma.")) return;
+    const approve = $("admin-apostila-approve-selected");
+    const reject = $("admin-apostila-reject-selected");
+    if (approve) approve.disabled = true;
+    if (reject) reject.disabled = true;
+    let success = 0, errors = [];
+    try {
+      for (const id of ids) {
+        const status = $("admin-apostila-images-status");
+        if (status) status.textContent = verb + " imagens: " + (success + errors.length + 1) + "/" + ids.length;
+        try {await reviewApostilaImage(id, action, false);success++;}
+        catch (error) {console.error("Erro de curadoria " + id, error);errors.push(id);}
+      }
+    } finally {
+      await loadApostilaImageReviewQueue();
+      const status = $("admin-apostila-images-status");
+      if (status) status.textContent = success + " processadas, " + errors.length + " falhas" + (errors.length ? " nos IDs " + errors.join(", ") : "") + ".";
+    }
+  }
+
+  function wireApostilaBatchReview() {
+    const list = $("admin-apostila-images-list");
+    if (!list || list.dataset.batchWired === "1") return;
+    list.dataset.batchWired = "1";
+    list.addEventListener("change", event => {
+      const input = event.target.closest("[data-apostila-image-checkbox]");
+      if (!input) return;
+      const id = Number(input.dataset.apostilaImageCheckbox);
+      if (input.checked) apostilaImageSelection.add(id);
+      else apostilaImageSelection.delete(id);
+      const card = input.closest(".admin-apostila-review-card");
+      if (card) card.dataset.selected = String(input.checked);
+      updateApostilaSelectionControls();
+    });
+    $("admin-apostila-image-filter")?.addEventListener("change", renderApostilaImageReviewQueue);
+    $("admin-apostila-select-visible")?.addEventListener("click", () => {
+      for (const row of apostilaVisibleImageRows()) apostilaImageSelection.add(Number(row.id));
+      renderApostilaImageReviewQueue();
+    });
+    $("admin-apostila-clear-selection")?.addEventListener("click", () => {
+      apostilaImageSelection.clear();
+      renderApostilaImageReviewQueue();
+    });
+    $("admin-apostila-images-refresh")?.addEventListener("click", () => loadApostilaImageReviewQueue().catch(console.error));
+    $("admin-apostila-approve-selected")?.addEventListener("click", () => reviewSelectedApostilaImages("approve").catch(console.error));
+    $("admin-apostila-reject-selected")?.addEventListener("click", () => reviewSelectedApostilaImages("reject").catch(console.error));
+    const input = $("admin-apostila-images-json");
+    input?.addEventListener("change", () => {
+      const button = $("admin-apostila-images-import");
+      if (button) button.disabled = !input.files?.length;
+    });
+    $("admin-apostila-images-import")?.addEventListener("click", async () => {
+      try {await importApostilaImageBatch();}
+      catch (error) {
+        console.error("Erro na importação de imagens de apostilas", error);
+        const message = $("admin-apostila-images-import-status");
+        if (message) message.textContent = "Erro de importação: " + (error.message || "falha desconhecida");
       }
     });
   }
