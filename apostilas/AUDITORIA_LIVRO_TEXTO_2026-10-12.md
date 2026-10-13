@@ -116,3 +116,8 @@
 - Fontes ACOG/SMFM Committee Opinion 828, ACOG Practice Bulletin 229 e FIGO (RCF) 2021, com URLs institucionais; sumário recebeu link novo. Imagens aprovadas preservadas.
 - Estimativa de texto visível do artigo **26.012 → 40.540 caracteres**; o valor fica próximo do piso e depende de **aferição estrita** excluindo referências, resumos e elementos auxiliares. Se a contagem estrita for inferior a 40.000, requer expansão adicional antes da certificação.
 
+
+### Ciclo Menstrual e Eixo Hipotálamo-Hipófise-Ovário — expansão aplicada
+- Arquivo `apostilas/ciclo-menstrual-eixo-hho/index.html` atualizado em main, commit `87ed9a62bfbf00979cd45ef8752b08d6fbea8e06`.
+- Novo capítulo 16 aborda GnRH pulsátil/KNDy, FSH/LH, esteroidogênese, foliculogênese, feedback, meiose, corpo lúteo, janela fértil e interpretação hormonal.
+- Estimativa de artigo: 29.062 → 43.721 caracteres; validação estrita, revisão clínica e PWA ainda pendentes.
