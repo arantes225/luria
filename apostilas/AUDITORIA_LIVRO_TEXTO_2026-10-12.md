@@ -160,3 +160,28 @@ Em 12/10/2026, após orientação de evitar “textões”, foram inspecionados 
 
 ### Regra para seguir revisando os outros cadernos
 O aprofundamento deve acontecer **junto dos fluxogramas, imagens e capítulos originais**, com realce gráfico dos conceitos. Os grandes blocos finais de aprofundamento já adicionados em materiais anteriores devem ser redistribuídos futuramente para os capítulos corretos, preservando o conteúdo válido e aumentando a legibilidade.
+
+
+## Correção editorial — organização e mídia (Vulvovaginites)
+
+Após rejeição da repetição de figuras, mosaicos de quatro imagens e blocos textuais desorganizados, foram executadas as seguintes correções diretamente no repositório:
+
+1. \`assets/js/apostila-tools.js\`:
+   - removida a geração automática de \`apostila-approved-pair\`;
+   - adicionada deduplicação de URLs e origens equivalentes antes de posicionar imagens aprovadas;
+   - limitada a inserção complementar por capítulo, privilegiando informação visual diferente da figura fixa;
+   - escolhida inserção após parágrafos/subtópicos para impedir pilhas no fim das seções;
+   - dimensões usuais de 480–520 px de largura e 320–340 px de altura máxima, respeitando proporção e adaptação mobile.
+   - Commits: \`9f240aaafcc62133fda8223db7dc9e946b81634c\` e \`4c412242ef1ed1588262f64fe3318a72fa1e2d4b\`.
+2. \`apostilas/vulvovaginites/index.html\`:
+   - quadro visual recolocado na sequência didática após microbiota;
+   - dois apêndices repetitivos após a bibliografia removidos;
+   - aprofundamento organizado nos próprios capítulos de microbiota, candidíase, vaginose, tricomoníase, avaliação clínica, diferenciais, terapêutica, situações especiais e seguimento;
+   - conteúdo adicional distribuído entre explicações clínicas curtas, quadros comparativos, mapas de decisão, cardzinhos e tabelas — sem imagens extras para aumentar altura;
+   - removida ainda a seção 12 que repetia as mesmas etiologias; referências voltaram a ser a última parte.
+   - Commits: \`cf552a79cfd13ed0a64265423d7a14a4a68ea2ed\`, \`29558d69d1619fd1ac7fed92f7e7c21d5b6d9524\`, \`66b2fe45e1ecdd3be2db50f848353ea73b5018e9\`, \`2a6d856377170dda8ca5e73890b22ce301373241\`.
+3. **Leitura pós-alteração:** aproximadamente **43.560 caracteres de conteúdo extraído do artigo** (ainda estimativa, inclui alguns elementos de revisão e referências), 4 imagens fixas distintas sem URLs repetidas, 12 tabelas, 10 callouts. Todos os IDs de seções e links internos da apostila testados por inspeção do arquivo; o script comum e os scripts inline passaram na verificação sintática.
+4. **Limitação relevante:** nenhuma renderização final desktop/PWA nem auditoria clínica independente foi concluída; navegador/headless browser não estava disponível neste ambiente e o domínio publicado não pôde ser resolvido aqui. Não carimbar visualmente como concluído sem inspecionar screenshots reais.
+5. Os 9 itens marcados como \`approved\` na fila de Vulvovaginites **permanecem aprovados no Supabase**. O front-end agora faz seleção editorial para evitar exibição duplicada/agrupada sem alterar as aprovações originais nem excluir arquivos da fila.
+
+**Aplicação aos demais 24 cadernos:** regra de renderização de imagens é global; a revisão da organização textual ainda precisa ser replicada em cada caderno, com auditoria individual e sem remoção indiscriminada de imagens e esquemas úteis.
