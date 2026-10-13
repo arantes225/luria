@@ -16,3 +16,14 @@ Esta auditoria distingue **imagem aprovada para revisão editorial** de **autori
 **Processo recomendado:** (1) encontrar fonte e licença por imagem; (2) verificar autoria e termos de uso comercial e adaptações WebP; (3) conferir correspondência clínica entre figura, legenda e diagnóstico; (4) substituir por arquivo de uso autorizado ou criar esquema autoral quando apropriado; (5) verificar destino no capítulo, CSP, carregamento e layout em desktop e PWA.
 
 **Referência comparativa de conteúdo:** o registro `REGISTRO_COMPARATIVOS_DRIVE.md` continua indicando comparação incompleta da RPM. Nenhuma revisão científica integral desta apostila é afirmada por este relatório.
+
+
+## Implementação efetiva em 13/10/2026
+
+- Identificadores **78, 94, 315 e 319**: não renderizados nas apostilas, sem cartões substitutos ou aviso de prévia; manter pendência de substituição por exame equivalente licenciado.
+- ID **96**: substituição por `Positive Fern Test.jpg`, fotomicrografia real de teste de cristalização amniótica, Paul_012, Wikimedia Commons, licença CC BY-SA 2.0.
+- ID **98**: substituição por `Histopathology of acute choriodeciduitis (original).jpg`, Mikael Häggström, MD, CC0. Legenda distingue explicitamente coriodeciduite de funisite.
+- Climatério: fluxo conceitual de fogacho/KNDy criado como texto estruturado original na seção de fisiopatologia.
+- RPM: fluxo clínico por segurança materno-fetal/idade gestacional estruturado originalmente na apostila.
+
+**Limite:** foram excluídas da renderização, não excluídos os objetos históricos do Storage. Os registros originais e o histórico de revisão permanecem no banco. Não afirmar que todos os previews de todas as apostilas foram visualmente testados em navegador.
