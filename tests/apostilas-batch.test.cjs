@@ -201,3 +201,17 @@ test("Auditoria de imagens: src permitido na CSP e assets locais existentes em t
   assert.ok(pages>=25);
   assert.ok(images>=20);
 });
+
+
+test("Imagens sem licenca nao aparecem e exames reais licenciados substituem somente o mesmo achado",()=>{
+  const tools=read("assets/js/apostila-tools.js");
+  assert.match(tools,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
+  assert.match(tools,/if \(removedUnlicensed\.has\(Number\(originalRow\.id\)\)\) return null/);
+  assert.match(tools,/Positive_Fern_Test\.jpg/);
+  assert.match(tools,/Histopathology_of_acute_choriodeciduitis_/);
+  assert.match(tools,/Coriodeciduite aguda/);
+  assert.ok(!tools.includes("Fluxograma em português de manejo da rotura prematura de membranas ovulares"));
+  const clim=JSON.parse(read("apostilas/climaterio-menopausa/content.json"));
+  const fs=clim.q.find(x=>x[0]==="fisiopatologia");
+  assert.ok(fs?.[2]?.some(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral LURIA")));
+});
