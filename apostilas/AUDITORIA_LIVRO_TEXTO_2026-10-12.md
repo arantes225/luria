@@ -143,3 +143,20 @@
 - Arquivo `apostilas/cervicites-doenca-inflamatoria-pelvica/index.html`, commit `ae2891cf4eaea963cf93ba8faf782b97ac381023`.
 - Capítulo 13 aprofundou mecanismos de clamídia, gonococo, M. genitalium, diagnóstico da DIP, antibióticos de amplo espectro, abscesso tubo-ovariano, seguimento e casos. Referências CDC e PCDT brasileiro.
 - Texto estimado do artigo: 33.427 → 44.083 caracteres; requer contagem estrita, revisão clínica e PWA. Imagens aprovadas preservadas.
+
+
+## Atualização do método — referência do Drive e piloto visual
+
+Em 12/10/2026, após orientação de evitar “textões”, foram inspecionados visualmente dois PDFs do Drive para identificar padrões editoriais genéricos de cursinhos: \`02 - CORRIMENTOS VAGINAIS .pdf\` (**10 páginas**) e \`02 - ASSISTENCIA AO PRE-NATAL.pdf\` (**8 páginas**). Ambos combinam duas colunas por página, grande densidade didática, figuras de exame/ilustrações, diagramas, tabelas e blocos pequenos com títulos fortes. Outros exemplos inspecionados tinham 4–10 páginas; não se deve atribuir 40 páginas a esses arquivos, embora **40–60 páginas A4 relevantes** seja um objetivo desejado para cadernos completos da LURIA, conforme complexidade.
+
+**Correção da abordagem:** não aumentar o tamanho por meio de muitos parágrafos consecutivos ou apêndices massivos. Preservar e aprofundar visualmente todo mapa mental, fluxo, callout, gráfico e tabela existente; acrescentar, onde houver benefício, cartões comparativos, quadros de tomada de decisão, pequenos textos de interpretação e diagramas originais. Alvo de 40.000 caracteres didáticos **distribuídos ao longo dos capítulos**, sem conversão a longos blocos de prosa. O modelo do cursinho serve de inspiração estrutural, sem reprodução literal de textos/arte/propriedade intelectual de terceiros.
+
+### Piloto implementado em Vulvovaginites
+- Arquivo \`apostilas/vulvovaginites/index.html\` atualizado no GitHub em \`main\`, commit \`928dd59d0ebde1ff8f72530cea596cc7e592892b\`.
+- Acrescentado quadro visual original, com **dois roteiros de quatro etapas** (raciocínio diagnóstico e fisiologia do pH), **três cards comparativos** (candidíase, vaginose, tricomoníase) e bloco interpretativo clínico.
+- CSS adicional usa as cores do próprio tema LURIA, com layout de **duas colunas em telas amplas e uma coluna no PWA**, além de regras básicas para impressão, sem substituir layout geral existente.
+- Contagem de elementos visuais antes e depois: **4 figuras/imagens, 9 tabelas, 9 callouts e 1 mapa mental** preservados integralmente; nova seção e link de sumário confirmados na leitura pós-escrita.
+- O piloto **não** é a conclusão da expansão para >= 40.000 caracteres, nem uma validação final de 40–60 páginas impressas. Falta testar a renderização visual desktop/PWA e expandir o restante do tema conforme a nova orientação.
+
+### Regra para seguir revisando os outros cadernos
+O aprofundamento deve acontecer **junto dos fluxogramas, imagens e capítulos originais**, com realce gráfico dos conceitos. Os grandes blocos finais de aprofundamento já adicionados em materiais anteriores devem ser redistribuídos futuramente para os capítulos corretos, preservando o conteúdo válido e aumentando a legibilidade.
