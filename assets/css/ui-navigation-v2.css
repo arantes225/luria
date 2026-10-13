@@ -1,3 +1,5 @@
+warning: in the working copy of 'admin.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'admin/index.html', LF will be replaced by CRLF the next time Git touches it
 /* Layered important rules outrank legacy injected locks without changing their files.
    Everything is opt-in; work tools receive shell styles, not educational content styles. */
 @layer luria-ui-navigation {
@@ -215,8 +217,10 @@
       border-radius:0!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior-y:contain;
       scrollbar-gutter:stable;scroll-padding-block:2rem;transition:none!important;
     }
+    body[data-ui-nav="v2"] .main > .page {max-width:1440px!important;}
     body[data-ui-nav="v2"]:is([style*="overflow: hidden"],.luria-beta-feedback-locked,.admin-pin-locked) :is(.main,#sidebar.sidebar) {overflow:hidden!important;}
     body[data-ui-nav="v2"] .topbar {left:0!important;background:var(--ui-frame-color)!important;color:var(--ui-frame-text)!important;border-bottom:0!important;}
+    body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .topbar {border-bottom:0!important;}
     body[data-ui-nav="v2"] .topbar .ui-topbar-brand :is(strong,.brand-copy), body[data-ui-nav="v2"] .topbar .ui-context-label {color:var(--ui-frame-text)!important;}
     body[data-ui-nav="v2"] .topbar .ui-topbar-brand #luria-brand-logo {filter:grayscale(1) brightness(0) invert(1)!important;}
     body[data-ui-nav="v2"] :is(.main,#sidebar.sidebar) {scrollbar-width:thin;scrollbar-color:var(--ui-scrollbar-thumb) transparent!important;}
