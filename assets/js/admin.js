@@ -5675,54 +5675,103 @@
 
 
   let apostilaImageReviewRows = [];
+  let apostilaImageAllRows = [];
+  const apostilaImageSelection = new Set();
 
-  function renderApostilaImageReviewQueue(rows) {
-    const list = $("admin-apostila-images-list");
+  function apostilaVisibleImageRows() {
+    const path = $("admin-apostila-image-filter")?.value || "";
+    return apostilaImageReviewRows.filter(row => !path || row.apostila_path === path);
+  }
+
+  function updateApostilaSelectionControls() {
+    const selected = apostilaImageSelection.size;
+    for (const id of ["admin-apostila-approve-selected", "admin-apostila-reject-selected"]) {
+      const button = $(id);
+      if (button) button.disabled = selected === 0;
+    }
     const status = $("admin-apostila-images-status");
+    if (status) {
+      const visible = apostilaVisibleImageRows().length;
+      const total = apostilaImageReviewRows.length;
+      const groups = new Set(apostilaImageReviewRows.map(row => row.apostila_path)).size;
+      status.textContent = total + " imagem" + (total === 1 ? "" : "s") +
+        " pendente" + (total === 1 ? "" : "s") + " de " + groups + " apostila" +
+        (groups === 1 ? "" : "s") + " · " + visible + " visíveis · " +
+        selected + " selecionadas.";
+    }
+  }
+
+  function renderApostilaImageReviewQueue() {
+    const list = $("admin-apostila-images-list");
     if (!list) return;
+    const filter = $("admin-apostila-image-filter");
+    if (filter) {
+      const current = filter.value;
+      const groups = new Map();
+      for (const row of apostilaImageReviewRows) {
+        if (!groups.has(row.apostila_path)) groups.set(row.apostila_path, {
+          title: row.apostila_title || row.apostila_path,
+          count: 0
+        });
+        groups.get(row.apostila_path).count++;
+      }
+      filter.replaceChildren(new Option("Todas as apostilas (" + apostilaImageReviewRows.length + ")", ""));
+      for (const [path, group] of [...groups].sort((a,b) => a[1].title.localeCompare(b[1].title, "pt-BR"))) {
+        filter.add(new Option(group.title + " (" + group.count + ")", path));
+      }
+      filter.value = groups.has(current) ? current : "";
+    }
+    const rows = apostilaVisibleImageRows();
     if (!rows.length) {
-      list.innerHTML = '<div class="admin-table-empty">Nenhuma imagem de apostila aguardando aprovação.</div>';
-      if (status) status.textContent = "Fila de apostilas revisada · nenhuma pendência.";
+      list.innerHTML = '<div class="admin-table-empty">Nenhuma imagem pendente neste filtro.</div>';
+      updateApostilaSelectionControls();
       return;
     }
     list.innerHTML = rows.map(row => {
       const asset = row.proposed_asset && typeof row.proposed_asset === "object" ? row.proposed_asset : {};
       const src = luriaSafeContentUrl(asset.src, {relative:true});
       const preview = src
-        ? '<img src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '">'
+        ? '<img loading="lazy" src="' + esc(src) + '" alt="' + esc(asset.alt || asset.title || "Imagem candidata") + '">'
         : '<span>Prévia indisponível.</span>';
       const sourceUrl = luriaSafeContentUrl(row.source_url);
       const source = sourceUrl
         ? '<a href="' + esc(sourceUrl) + '" target="_blank" rel="noopener">Abrir fonte original</a>'
         : '<span>Fonte sem URL registrada</span>';
+      const id = Number(row.id);
+      const checked = apostilaImageSelection.has(id);
+      const trusted = String(row.source_trust || "unverified");
       return `
-        <article class="admin-image-review-card" data-apostila-image-review-id="${Number(row.id)}">
+        <article class="admin-image-review-card admin-apostila-review-card" data-selected="${checked}" data-apostila-image-review-id="${id}">
+          <label class="admin-apostila-select" title="Selecionar para revisão em lote">
+            <input type="checkbox" data-apostila-image-checkbox="${id}" aria-label="Selecionar imagem ${id}" ${checked ? "checked" : ""}>
+          </label>
           <div class="admin-image-review-preview">${preview}</div>
           <div class="admin-image-review-body">
             <div class="admin-image-review-head">
               <div>
-                <strong>${esc(row.apostila_title || "Apostila")}</strong>
-                <small>Seção: #${esc(row.target_section || "—")}</small>
+                <strong>${esc(row.apostila_title || row.apostila_path || "Apostila")}</strong>
+                <small>Seção: #${esc(row.target_section || "—")} · Chave: ${esc(row.candidate_key || "—")}</small>
               </div>
-              <span class="admin-image-review-tag">apostila</span>
+              <span class="admin-image-review-tag">Pendente</span>
             </div>
             <div class="admin-image-review-source">
               <strong>${esc(asset.title || asset.caption_title || row.source_name || "Imagem candidata")}</strong><br>
               ${source}
               ${row.source_license ? '<br><small>Licença: ' + esc(row.source_license) + '</small>' : ""}
+              <br><small>Verificação da fonte: ${esc(trusted)}</small>
             </div>
             ${asset.didactic_note ? '<small>' + esc(asset.didactic_note) + '</small>' : ""}
             ${asset.caption ? '<small>' + esc(asset.caption) + '</small>' : ""}
             <div class="admin-image-review-actions">
-              ${src ? '<button class="button secondary" type="button" data-apostila-image-expand="' + Number(row.id) + '">Expandir</button>' : ""}
-              <button class="button secondary" type="button" data-apostila-image-review-action="reject" data-apostila-image-review-id="${Number(row.id)}">Rejeitar</button>
-              <button class="button primary" type="button" data-apostila-image-review-action="approve" data-apostila-image-review-id="${Number(row.id)}">Aprovar</button>
+              ${src ? '<button class="button secondary" type="button" data-apostila-image-expand="' + id + '">Expandir</button>' : ""}
+              <button class="button secondary" type="button" data-apostila-image-review-action="reject" data-apostila-image-review-id="${id}">Rejeitar</button>
+              <button class="button primary" type="button" data-apostila-image-review-action="approve" data-apostila-image-review-id="${id}">Aprovar</button>
             </div>
           </div>
         </article>
       `;
     }).join("");
-    if (status) status.textContent = rows.length + " imagem" + (rows.length === 1 ? "" : "s") + " de apostilas aguardando sua revisão.";
+    updateApostilaSelectionControls();
   }
 
   function ensureAdminImageLightbox() {
@@ -5752,12 +5801,14 @@
       if (status) status.textContent = "Não foi possível carregar as imagens das apostilas: " + (error.message || "erro de leitura");
       throw error;
     }
-    apostilaImageReviewRows = (Array.isArray(data) ? data : [])
-      .filter(row => row.review_status === "pending");
-    renderApostilaImageReviewQueue(apostilaImageReviewRows);
+    apostilaImageAllRows = Array.isArray(data) ? data : [];
+    apostilaImageReviewRows = apostilaImageAllRows.filter(row => row.review_status === "pending");
+    const pendingIds = new Set(apostilaImageReviewRows.map(row => Number(row.id)));
+    for (const id of apostilaImageSelection) if (!pendingIds.has(id)) apostilaImageSelection.delete(id);
+    renderApostilaImageReviewQueue();
   }
 
-  async function reviewApostilaImage(id, action) {
+  async function reviewApostilaImage(id, action, reload = true) {
     const row = apostilaImageReviewRows.find(item => Number(item.id) === Number(id));
     if (action === "approve") {
       const size = Number(row?.proposed_asset?.size_bytes || 0);
@@ -5779,7 +5830,8 @@
       p_decision: action === "approve" ? "approved" : "rejected"
     });
     if (error) throw error;
-    await loadApostilaImageReviewQueue();
+    apostilaImageSelection.delete(Number(id));
+    if (reload) await loadApostilaImageReviewQueue();
   }
 
   function wireApostilaImageReview() {
