@@ -61,12 +61,12 @@ function copyPublic(from, to, rel) {
   if (!stat.isFile()) throw new Error("Unexpected source entry: " + rel);
   fs.mkdirSync(path.dirname(to), { recursive: true });
   // Fail closed if a privileged Supabase key is accidentally committed to a public asset.
-  if (/\\.(?:html?|js|mjs|json|css|txt)$/i.test(rel)) {
+  if (/\.(?:html?|js|mjs|json|css|txt)$/i.test(rel)) {
     const body = fs.readFileSync(from, "utf8");
     if (/sb_secret_[A-Za-z0-9_-]+/.test(body)) {
       throw new Error("Supabase secret key detected in public file: " + rel);
     }
-    const tokens = body.match(/eyJ[A-Za-z0-9_-]+\\.eyJ[A-Za-z0-9_-]+\\.[A-Za-z0-9_-]+/g) || [];
+    const tokens = body.match(/eyJ[A-Za-z0-9_-]+\.eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+/g) || [];
     for (const token of tokens) {
       try {
         const claim = JSON.parse(Buffer.from(token.split(".")[1], "base64url").toString("utf8"));
