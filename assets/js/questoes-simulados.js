@@ -3826,6 +3826,8 @@ async function ocrQuestionLineRecordsFromCanvas(
   canvas,
   pageNumber
 ) {
+  await window.LuriaLazyVendors.ensure("tesseract");
+
   if (
     !window.Tesseract
   ) {
@@ -4427,6 +4429,8 @@ async function extractQuestionsFromPdf(
   file,
   options = {}
 ) {
+  await window.LuriaLazyVendors.ensure("pdfjs");
+
   if (!window.pdfjsLib) {
     throw new Error(
       "Leitor de PDF não carregou. Atualize a página e tente novamente."
@@ -9449,6 +9453,8 @@ async function attachGalleryImageUrls(
 async function extractOfficialAnswerKeyFromPdfBlob(
   blob
 ) {
+  await window.LuriaLazyVendors.ensure("pdfjs");
+
   if (!window.pdfjsLib) {
     return {};
   }
@@ -12835,6 +12841,8 @@ function parseAnswerDigitText(
 
 
 async function createAnswerDigitWorker() {
+  await window.LuriaLazyVendors.ensure("tesseract");
+
   if (
     !window.Tesseract
   ) {
@@ -13160,6 +13168,8 @@ async function recognizeAnswerGridByNumber(
   fileCount,
   sequenceStartIndex = 0
 ) {
+  await window.LuriaLazyVendors.ensure("tesseract");
+
   if (
     !window.Tesseract
   ) {
