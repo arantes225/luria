@@ -48,9 +48,9 @@ function buildBook(template,entry){
   // Bloqueia cópias literais de parágrafos longos; paráfrases redundantes ainda exigem revisão editorial.
   const seenParagraphs=new Set();
   for(const section of entry.sections){
-    const matches=String(section.body_html).matchAll(/<p\\b[^>]*>([\\s\\S]*?)<\\/p>/gi);
+    const matches=String(section.body_html).matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/gi);
     for(const match of matches){
-      const normalized=match[1].replace(/<[^>]+>/g," ").replace(/&(?:nbsp|amp|lt|gt|quot);/gi," ").replace(/\\s+/g," ").trim().toLowerCase();
+      const normalized=match[1].replace(/<[^>]+>/g," ").replace(/&(?:nbsp|amp|lt|gt|quot);/gi," ").replace(/\s+/g," ").trim().toLowerCase();
       if(normalized.length<180)continue;
       if(seenParagraphs.has(normalized))
         throw Error(slug+": parágrafo didático longo repetido em "+section.id+"; consolidar a explicação em vez de inflar a contagem");
