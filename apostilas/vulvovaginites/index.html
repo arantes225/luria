@@ -344,6 +344,20 @@
 #diferenciais>.luria-differential-heading+p{margin-top:4px}
 @media(max-width:560px){.luria-evidence-note{padding:12px}.luria-clinical-case{padding:16px 14px;margin:20px 0}.luria-clinical-case h4{font-size:14.8px!important}.luria-clinical-case p{font-size:13.5px!important}}
 @media print{.luria-clinical-case,.luria-evidence-note{break-inside:avoid}}
+
+/* Revisão ativa sem cartões pesados ou respostas expostas */
+.luria-checkpoints{display:grid;gap:0;margin:16px 0 5px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.luria-checkpoint{border-bottom:1px solid var(--border);background:transparent}
+.luria-checkpoint:last-child{border-bottom:0}
+.luria-checkpoint summary{display:flex;gap:13px;align-items:flex-start;cursor:pointer;list-style:none;padding:16px 4px;font-size:13.8px;line-height:1.55;font-weight:580;color:var(--text)}
+.luria-checkpoint summary::-webkit-details-marker{display:none}
+.luria-checkpoint summary>span{display:grid;place-items:center;flex:none;width:29px;height:29px;border-radius:8px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font-weight:750;font-size:10.5px}
+.luria-checkpoint[open] summary{padding-bottom:8px}
+.luria-checkpoint>div{margin:0 2px 13px 46px;padding:12px 14px;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+.luria-checkpoint>div>strong{font-size:13px;color:var(--accent)}
+.luria-checkpoint>div p{font-size:13.4px!important;line-height:1.6!important;margin:7px 0 0!important}
+@media(max-width:560px){.luria-checkpoint summary{font-size:13.3px;padding:13px 0}.luria-checkpoint>div{margin-left:38px;padding:10px}}
+@media print{.luria-checkpoint{break-inside:avoid}.luria-checkpoint>div{display:block!important}}
 </style>
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
@@ -750,6 +764,16 @@
 <div class="luria-key-line"><span class="luria-key-number">06</span><p><strong>Gestação exige atenção.</strong> Para candidíase, a preferência é azólico tópico durante sete dias.</p></div>
 <div class="luria-key-line"><span class="luria-key-number">07</span><p><strong>Tricomoníase exige via sistêmica.</strong> Tratar as parcerias atuais e lembrar que o fresco negativo não exclui.</p></div>
 <div class="luria-key-line"><span class="luria-key-number">08</span><p><strong>Reconheça os sinais de alerta.</strong> Dor pélvica, febre, sangramento ou lesões persistentes mudam a investigação.</p></div>
+</div>
+<h3>Casos para treinar as decisões</h3>
+<p>Leia o enunciado, escolha mentalmente a conduta e só então abra a análise. Esses exemplos reproduzem o tipo de mudança de contexto que diferencia provas de simples memorização.</p>
+<div class="luria-checkpoints">
+<details class="luria-checkpoint"><summary><span>01</span> Uma paciente assintomática apresenta cultura vaginal com <em>Candida albicans</em>. É necessário tratar?</summary><div><strong>Resposta: não automaticamente.</strong><p>Sem síndrome inflamatória compatível, o resultado pode indicar colonização. O tratamento se dirige à candidíase sintomática, não ao achado laboratorial isolado. A presença de gestação ou de fatores predisponentes não transforma toda cultura positiva em doença.</p></div></details>
+<details class="luria-checkpoint"><summary><span>02</span> Prurido de repetição, quatro episódios no ano, melhora após azólico e cultura com <em>C. albicans</em>: repetir dose única?</summary><div><strong>Resposta: o raciocínio é de candidíase recorrente documentada.</strong><p>Avalie fatores do hospedeiro, confirme a espécie e considere indução prolongada para alcançar remissão, seguida de manutenção adequada quando indicada. Uma nova dose única isolada não contempla o problema longitudinal. Exclua gestação antes de empregar fluconazol oral.</p></div></details>
+<details class="luria-checkpoint"><summary><span>03</span> Corrimento homogêneo, pH 5,2, aminas positivas e <em>clue cells</em>. O diagnóstico depende da cor?</summary><div><strong>Resposta: não; há quatro critérios de Amsel.</strong><p>Três seriam suficientes para a definição clínica. O diagnóstico decorre do conjunto de critérios, não da impressão de corrimento “branco”. Nugent entre 4 e 6 seria microbiota intermediária, não confirmação automática de vaginose.</p></div></details>
+<details class="luria-checkpoint"><summary><span>04</span> Gestante sem queixa tem pH elevado. Deve receber metronidazol para prevenir prematuridade?</summary><div><strong>Resposta: não com base apenas no pH.</strong><p>O pH é inespecífico e muda com o estado hormonal e condições da amostra. Mesmo a vaginose assintomática não justifica rastreamento e tratamento universais para prevenir prematuridade. Já a gestante com vaginose sintomática confirmada deve ser avaliada e tratada adequadamente.</p></div></details>
+<details class="luria-checkpoint"><summary><span>05</span> Há suspeita de tricomoníase, mas a microscopia a fresco é negativa. Está excluída?</summary><div><strong>Resposta: não.</strong><p>A baixa sensibilidade do exame direto e a perda rápida de motilidade podem gerar falso negativo. Teste molecular validado é preferível quando disponível. Se confirmar tricomoníase, trate parcerias; nas mulheres, o CDC recomenda metronidazol oral por sete dias.</p></div></details>
+<details class="luria-checkpoint"><summary><span>06</span> Corrimento persistente, pH 5,7, muitos leucócitos e células parabasais, sem fungos e protozoários. É vaginose clássica?</summary><div><strong>Resposta: o padrão exige outro diferencial.</strong><p>Considere vaginite inflamatória descamativa, vaginite aeróbia e hipoestrogenismo, após excluir infecções específicas e causas cervicais. A inflamação exuberante é atípica para vaginose isolada e deve direcionar avaliação especializada.</p></div></details>
 </div></section>
             <h3>Mini caso integrado</h3>
             <p>Mulher de 28 anos, não gestante, com corrimento de odor mais forte após relações. Pouco prurido, sem dor pélvica. Secreção fina e homogênea, pH 5,2, teste das aminas positivo e clue cells. O conjunto preenche os quatro critérios de Amsel e favorece vaginose bacteriana. Se a mesma paciente apresentasse inflamação intensa e muitos leucócitos, o raciocínio deveria se abrir para tricomoníase, cervicite ou doença mista.</p>
