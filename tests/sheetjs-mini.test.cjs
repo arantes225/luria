@@ -55,3 +55,25 @@ test('The complete reader remains available for CSV and legacy files', () => {
   assert.equal(rows.length, 3);
   assert.equal(rows[1][0], 'Medicina');
 });
+
+test('SheetJS mini reports effective compressed sizes for hosting projections', () => {
+  const zlib = require('node:zlib');
+  const full = fs.readFileSync(path.join(root, 'assets/vendor/xlsx-0.20.3.js'));
+  const mini = fs.readFileSync(path.join(root, 'assets/vendor/xlsx-0.20.3-mini.js'));
+  const gzip = data => zlib.gzipSync(data, { level: 9 }).length;
+  const brotli = data => zlib.brotliCompressSync(data, {
+    params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 9 }
+  }).length;
+  const measurements = {
+    originalRaw: full.length,
+    miniRaw: mini.length,
+    originalGzip: gzip(full),
+    miniGzip: gzip(mini),
+    originalBrotli: brotli(full),
+    miniBrotli: brotli(mini)
+  };
+  assert.ok(mini.length < full.length * 0.40);
+  assert.ok(measurements.miniGzip < measurements.originalGzip);
+  assert.ok(measurements.miniBrotli < measurements.originalBrotli);
+  console.log('SHEETJS_SIZE_AUDIT=' + JSON.stringify(measurements));
+});
