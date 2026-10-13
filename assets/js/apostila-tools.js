@@ -331,7 +331,16 @@
     return score;
   }
 
-  function afterReadingAnchor(target, index, total) {
+  function afterReadingAnchor(target, index, total, row) {
+    // Dentro de capítulos por doença: foto clínica próxima ao quadro clínico,
+    // microscopia próxima do diagnóstico, sem aglomeração após o título.
+    const asset = getAsset(row);
+    const kind = figureKind([asset.title, asset.alt, asset.caption, row.candidate_key].join(" "));
+    const unit = target.querySelector('.luria-disease-unit[data-unit="' + (kind === "clinical" ? "3" : "4") + '"]');
+    if (unit) {
+      const paragraph = unit.querySelector("p");
+      return paragraph || unit.querySelector(".luria-disease-unit-title");
+    }
     const headings = [...target.children].filter(element => /^H[34]$/.test(element.tagName));
     if (headings.length) {
       const heading = headings[Math.min(headings.length - 1, Math.floor((index + 1) * headings.length / (total + 1)))];
@@ -354,7 +363,7 @@
     if (!figure) return;
     const asset = getAsset(row);
     const selector = String(row.target_selector || asset.target_selector || "").trim();
-    const anchor = selector ? target.querySelector(selector) : afterReadingAnchor(target, slotIndex, slotTotal);
+    const anchor = selector ? target.querySelector(selector) : afterReadingAnchor(target, slotIndex, slotTotal, row);
     if (!anchor || anchor === target) {
       target.appendChild(figure);
       return;
