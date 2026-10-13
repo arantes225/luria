@@ -10,7 +10,6 @@
     & .luriazap-eyebrow {color:var(--color-primary-text)!important;font-size:var(--ui-secondary)!important;font-weight:600!important;letter-spacing:.08em!important;text-transform:uppercase!important;}
     & .luriazap-heading h1 {font-size:var(--ui-h1)!important;line-height:1.2!important;letter-spacing:-.035em!important;font-weight:700!important;color:var(--color-text-primary)!important;margin:.5rem 0 .75rem!important;}
     & .luriazap-heading p {font-size:var(--ui-body)!important;line-height:1.5!important;color:var(--color-text-secondary)!important;margin:0!important;}
-    & .plantao-module-back {position:static!important;display:inline-flex!important;align-items:center!important;gap:.5rem!important;min-height:var(--ui-control)!important;margin:0 0 1rem!important;padding:.625rem 1rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface)!important;color:var(--color-primary-text)!important;font-size:var(--ui-secondary)!important;font-weight:600!important;box-shadow:none!important;}
     & #plantao-library {display:block!important;width:100%!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important;}
     & #plantao-telefone {display:block!important;position:static!important;inset:auto!important;z-index:auto!important;width:100%!important;min-height:0!important;height:auto!important;max-height:none!important;margin:0!important;padding:0!important;background:transparent!important;overflow:visible!important;}
     & .plantao-phone-layout,
@@ -96,7 +95,7 @@
     & .plantao-phone-resume-card button {width:auto!important;}
     & #luriazap-learning-trail {display:flex!important;flex-wrap:wrap!important;gap:.5rem!important;padding:.875rem 1.25rem!important;overflow:visible!important;border-bottom:1px solid var(--color-border)!important;background:var(--color-surface)!important;}
     & #luriazap-learning-trail [data-lz-stage] {font-size:var(--ui-caption)!important;line-height:1.4!important;padding:.375rem .625rem!important;border-radius:var(--ui-radius-control)!important;}
-    & :is(.plantao-module-back,.plantao-phone-conversation,.plantao-phone-choice-group button,.plantao-phone-chat-head button,#plantao-phone-search-close,.plantao-phone-resume-button):hover {background:var(--color-primary-subtle)!important;border-color:var(--color-primary-text)!important;}
+    & :is(.plantao-phone-conversation,.plantao-phone-choice-group button,.plantao-phone-chat-head button,#plantao-phone-search-close,.plantao-phone-resume-button):hover {background:var(--color-primary-subtle)!important;border-color:var(--color-primary-text)!important;}
     & :is(#plantao-phone-new-chat,#plantao-phone-compose-send):enabled:hover {background:var(--color-primary-hover)!important;color:var(--color-primary-foreground)!important;}
     & :is(button,a,input):focus-visible {outline:2px solid var(--color-focus-ring)!important;outline-offset:3px!important;}
     & #plantao-phone-exit {display:none!important;}
