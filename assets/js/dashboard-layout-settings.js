@@ -1,20 +1,11 @@
 (() => {
-  const allowed = new Set(["1", "2", "3", "5"]);
+  const allowed = new Set(["classic", "cards"]);
   const options = document.getElementById("dashboard-layout-options");
   const status = document.getElementById("dashboard-layout-status");
   if (!options) return;
 
-  function key() {
-    return `luria:dashboard-layout:${window.docmapUser?.id || "guest"}`;
-  }
-
   function load() {
-    let selected = "1";
-    try { selected = localStorage.getItem(key()) || "1"; } catch {}
-    if (!allowed.has(selected)) {
-      selected = "1";
-      try { localStorage.setItem(key(), selected); } catch {}
-    }
+    const selected = window.LuriaDashboardPreference?.read() || "classic";
     const input = options.querySelector(`input[value="${selected}"]`);
     if (input) input.checked = true;
   }
@@ -22,16 +13,21 @@
   options.addEventListener("change", (event) => {
     const value = event.target?.value;
     if (!allowed.has(value)) return;
-    try {
-      localStorage.setItem(key(), value);
-      status.textContent = "Layout selecionado. Abra o dashboard para visualizar.";
-    } catch {
-      status.textContent = "Não foi possível salvar a escolha neste dispositivo.";
-    }
+    const saved = window.LuriaDashboardPreference?.write(value) === true;
+    if (!saved) load();
+    if (status) status.textContent = saved ? "Layout selecionado. Abra o dashboard para visualizar."
+      : "Não foi possível salvar a escolha neste dispositivo.";
   });
 
   load();
-  window.addEventListener("docmap:ready", load, { once: true });
+  window.addEventListener("docmap:ready", load);
+  window.addEventListener("luria:owner-changed", load);
+  window.addEventListener("luria:dashboard-layout-changed", load);
+  window.addEventListener("pageshow", load);
+  window.addEventListener("storage", event => {
+    if (event.key === null || event.key === window.LuriaDashboardPreference?.key()) load();
+  });
+  window.LuriaLocalOwnerStore?.ready?.then(load);
 })();
 
 

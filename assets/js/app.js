@@ -1175,6 +1175,7 @@ const PLUS_NAV_FEATURES = {
   "/registrar-questoes/": "questions",
   "/plantao/": "plantao",
   "/plantao/sala-emergencia/": "plantao",
+  "/plantao/luriazap/": "plantao",
   "/estatisticas/": "statistics_general"
 };
 
@@ -1339,6 +1340,7 @@ function updateLuriaProfileInitials(user = window.docmapUser, profile = window.d
 }
 
 function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = null) {
+  const isLuriaZap = page === "plantao" && document.body.dataset.plantaoEntry === "phone";
   const sidebarPlan = String(entitlements?.plan || window.docmapPlan || "").trim().toLowerCase();
   const canAccessWork = isAdmin === true || ["plus", "pro", "betatester"].includes(sidebarPlan);
   const fallbackName = user.email
@@ -1442,8 +1444,12 @@ function sidebarMarkup(user, profile = null, isAdmin = false, entitlements = nul
           <span class="nav-icon">${luriaIcon("target")}</span><span>Desafio Diário</span>
         </a>
 
-        <a class="nav-link ${page === "plantao" ? "active" : ""}" href="/plantao/sala-emergencia/">
+        <a class="nav-link ${page === "plantao" && !isLuriaZap ? "active" : ""}" href="/plantao/sala-emergencia/">
           <span class="nav-icon">${luriaIcon("stethoscope")}</span><span>Simulador de Emergência</span>
+        </a>
+
+        <a class="nav-link ${isLuriaZap ? "active" : ""}" href="/plantao/luriazap/">
+          <span class="nav-icon"><svg class="luria-ui-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/></svg></span><span>LuriaZap</span>
         </a>
 
         <a class="nav-link ${page === "estatisticas" ? "active" : ""}" href="/estatisticas/">

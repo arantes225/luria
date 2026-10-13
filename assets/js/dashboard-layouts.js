@@ -1,5 +1,4 @@
 (() => {
-  const allowed = new Set(["1", "2", "3", "5"]);
   const page = document.querySelector('body[data-page="dashboard"] .page');
   if (!page) return;
   const root = document.createElement("div");
@@ -8,7 +7,7 @@
   const topbar = page.querySelector(".topbar");
   if (topbar) topbar.after(root);
   else page.prepend(root);
-  let current = "1";
+  const current = "1";
   let selectedDate = new Date();
   let frame = 0;
   let dailyChallengeAccuracy = null;
@@ -238,16 +237,6 @@
     return `<div class="dl-grid dl-layout-1"><div class="dl-agenda-study-pair dl-agenda-study-pair-1"><section class="dl-card dl-agenda-large">${heading(icon("calendar"), "Atividades de hoje", "/cronograma/")}${activityList(todayItems, 10, false)}</section><section class="dl-card dl-study-now-card dl-study-now-card-main">${studyNowPanel()}</section></div><div class="dl-side"><section class="dl-card dl-day-summary">${heading(icon("clipboard"), "Resumo do dia")}<div class="dl-summary-body">${ring(pct, `${pct}%`, "aulas concluídas")}<div><strong>${total} aula${total === 1 ? "" : "s"} hoje</strong><span>${done} concluída${done === 1 ? "" : "s"}</span><span>${todayItems.length} atividade${todayItems.length === 1 ? "" : "s"} na agenda</span></div></div></section>${streak(data)}</div>${areas(data)}${cat(data, true)}</div>`;
   }
 
-  function layout2(data) {
-    return `<div class="dl-grid dl-layout-2"><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Próximas atividades", "/cronograma/")}${activityList(upcoming(3), 3, false)}</section><section class="dl-card dl-study-now-card">${studyNowPanel(true)}</section><section class="dl-card dl-progress">${heading(icon("target"), "Seu progresso", "/estatisticas/")}${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Erros ativos <strong>${data.errors}</strong></span></div></section>${streak(data)}${areas(data)}</div>`;
-  }
-
-  function layout3(data) {
-    const todayISO = dayISO(new Date());
-    const todayItems = items().filter((item) => item.activity_date === todayISO);
-    return `<div class="dl-grid dl-layout-3"><section class="dl-card dl-study-now-card dl-study-now-card-main dl3-study-now">${studyNowPanel(true)}</section>${streak(data)}<section class="dl-card dl-progress dl-overview dl3-overview">${heading(icon("calendar"), "Resumo do plano", "/estatisticas/")}<div class="dl-overview-body">${ring(data.progress, `${data.progress}%`, "das aulas")}<div class="dl-mini-list"><span>Aulas concluídas <strong>${data.done}/${data.total}</strong></span><span>Flashcards pendentes <strong>${data.flashcards}</strong></span><span>Caderno de erros <strong>${data.errors} ativos</strong></span><span>Horas estudadas <strong>${escape(data.hours)}</strong></span></div></div></section><section class="dl-card dl-upcoming">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}${activityList(todayItems, 4, false)}</section>${cat(data)}</div>`;
-  }
-
   async function loadDailyChallengeAccuracy() {
     if (dailyChallengeAccuracyLoaded || dailyChallengeAccuracyLoading) return;
     dailyChallengeAccuracyLoading = true;
@@ -277,143 +266,11 @@
     }
   }
 
-  function layout4(data) {
-    const summaryMetrics = [
-      ["calendar", "Horas de aula", data.hours, "/estatisticas/"],
-      ["book", "Aulas concluídas", `${data.done}/${data.total}`, "/cronograma/"],
-      ["simulation", "Simulados", data.simulationsCount || data.simulations || "—", "/questoes-simulados/"],
-      ["cards", "Flashcards pendentes", String(data.flashcards), "/flashcards/"]
-    ];
-    const challengeValue = Number.isFinite(data.challengeAccuracy) ? `${data.challengeAccuracy}%` : "Novo";
-    const challengeCaption = Number.isFinite(data.challengeAccuracy) ? "taxa de acerto ›" : "Jogar hoje ›";
-    const todayActivities = upcomingItems().filter((item) => item?.activity_date === dayISO(new Date())).sort((a, b) => String(a.activity_time || "").localeCompare(String(b.activity_time || "")) || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR"));
-    return `<div class="dl-grid dl-layout-4"><div class="dl-metrics"><section class="dl-card dl-metric-cluster">${summaryMetrics.map(([iconName, label, value, href]) => `<a class="dl-metric-mini" href="${href}"><span class="dl-metric-icon">${icon(iconName)}</span><span><small>${label}</small><strong>${escape(value)}</strong></span></a>`).join("")}</section><a class="dl-card dl-daily-challenge" href="/desafio-diario/"><span class="dl-challenge-icon">${icon("target")}</span><span class="dl-challenge-copy"><small>Desafio diário</small><strong>${escape(challengeValue)}</strong><em>${escape(challengeCaption)}</em></span></a></div><div class="dl-agenda-study-pair dl-agenda-study-pair-4"><section class="dl-card dl-upcoming dl-today-activities">${heading(icon("calendar"), "Atividades do dia", "/cronograma/")}<div class="dl-today-scroll">${activityList(todayActivities, todayActivities.length || 1)}</div></section><section class="dl-card dl-study-now-card dl-study-now-card-main">${studyNowPanel(true)}</section></div>${streak(data)}${areas(data)}${cat(data, true)}</div>`;
-  }
-
-
-
-  function dashboard5UpcomingItems() {
-    const today = dayISO(new Date());
-    const source = Array.isArray(window.luriaDashboardUpcomingAgenda)
-      ? window.luriaDashboardUpcomingAgenda
-      : [];
-
-    return source
-      .filter((item) => item?.activity_date === today)
-      .sort((a, b) =>
-        String(a.activity_time || "").localeCompare(String(b.activity_time || ""))
-        || (a.kind === "lesson" ? -1 : b.kind === "lesson" ? 1 : 0)
-        || String(a.title || "").localeCompare(String(b.title || ""), "pt-BR")
-      );
-  }
-
-  function dashboard5ActivityHref(item) {
-    if (!item) return "/cronograma/";
-    if (typeof activityCanStart === "function" && activityCanStart(item)) {
-      return buildAmbientacaoUrl(item);
-    }
-    if (item.kind === "exam" || item.kind === "registration_deadline") return "/editais/";
-    return "/cronograma/";
-  }
-
-  function layout5(data) {
-    const nextItems = dashboard5UpcomingItems();
-    const next = nextItems[0] || null;
-    const nextHref = dashboard5ActivityHref(next);
-    const rows = (data.areas || []).slice(0, 5);
-    const weekday = (new Date().getDay() + 6) % 7;
-    const recent = [
-      ["Simulado mais recente", data.simulations, "Resultado geral"],
-      ["Questões e Simulados", data.simulations, "Desempenho recente"],
-      ["Revisão de desempenho", data.retention, "Retenção"]
-    ];
-    return `
-      <div class="dl5-shell">
-        <div class="dl5-hero">
-          <div>
-            <h2>${greeting().match(/<h2>(.*?)<\/h2>/)?.[1] || "Olá!"}</h2>
-            <p>Vamos em frente hoje? Consistência é o que transforma.</p>
-          </div>
-        </div>
-
-        <div class="dl5-metrics">
-          <a class="dl5-metric" href="/cronograma/"><span class="dl5-metric-icon is-blue">${icon("book")}</span><div><small>Aulas concluídas</small><strong>${data.done}</strong><em>↗ progresso do cronograma</em></div></a>
-          <a class="dl5-metric" href="/questoes-simulados/"><span class="dl5-metric-icon is-orange">${icon("file")}</span><div><small>Questões resolvidas</small><strong>${data.questions || "—"}</strong><em>↗ desempenho em questões</em></div></a>
-          <a class="dl5-metric" href="/questoes-simulados/"><span class="dl5-metric-icon is-green">${icon("simulation")}</span><div><small>Simulados feitos</small><strong>${data.simulationsCount || "—"}</strong><em>↗ histórico de simulados</em></div></a>
-          <a class="dl5-metric" href="/estatisticas/"><span class="dl5-metric-icon is-purple">◷</span><div><small>Horas de estudo</small><strong>${escape(data.hours)}</strong><em>esta semana</em></div></a>
-        </div>
-
-        <div class="dl5-mid">
-          <section class="dl5-card dl5-next">
-            <div class="dl5-title"><h3>${icon("calendar")} Atividades de hoje</h3><a href="/cronograma/">›</a></div>
-            <div class="dl5-next-list">
-              ${nextItems.length ? nextItems.map((item, index) => {
-                const label = typeof kindMeta === "function" ? kindMeta(item.kind).label : "Atividade";
-                const href = dashboard5ActivityHref(item);
-                return `<a class="dl5-next-item" href="${escape(href)}">
-                  <span class="dl5-timeline-dot" aria-hidden="true"></span>
-                  <div>
-                    <small>${escape(shortDate(item.activity_date))}</small>
-                    <strong>${escape(item.title || "Atividade")}</strong>
-                    <span>${escape(label)}${item.area ? ` · ${escape(item.area)}` : ""}</span>
-                  </div>
-                  <em>›</em>
-                </a>`;
-              }).join("") : `<div class="dl5-next-empty"><strong>Nenhuma atividade para hoje</strong><span>Confira ou ajuste seu cronograma.</span></div>`}
-            </div>
-            <a class="dl5-start" href="${escape(nextHref)}">▶ &nbsp; ${next ? "Iniciar atividade" : "Abrir cronograma"}</a>
-            ${studyNowPanel(true)}
-          </section>
-
-          <section class="dl5-card dl5-streak">
-            <div class="dl5-title"><h3><span class="dl5-title-flame" aria-hidden="true">${icon("flame")}</span> Ofensiva</h3><a href="/estatisticas/">›</a></div>
-            <div class="dl5-streak-stack">
-              <span class="dl5-streak-hero" aria-hidden="true">${streakVisual(data.streak)}</span>
-              <div class="dl5-streak-copy"><strong>${data.streak} dias seguidos</strong></div>
-            </div>
-            <div class="dl5-week">${["Segunda","Terça","Quarta","Quinta","Sexta","Sábado","Domingo"].map((d,i)=>{ const daysBack = weekday - i; const active = daysBack >= 0 && daysBack < data.streak; return `<span class="${active ? "on":""}"><i></i>${d}</span>`; }).join("")}</div>
-          </section>
-
-          <section class="dl5-card dl5-areas">
-            <div class="dl5-title"><h3>${icon("chart")} Desempenho por área</h3><a href="/estatisticas/">›</a></div>
-            <div class="dl5-area-list">
-              ${rows.length ? rows.map((entry)=>{
-                const pct=entry.total ? Math.round(entry.completed/entry.total*100) : 0;
-                return `<div><span>${escape(entry.area)}</span><i><b style="width:${pct}%"></b></i><strong>${pct}%</strong></div>`;
-              }).join("") : '<p class="dl-empty">Sem dados por área ainda.</p>'}
-            </div>
-          </section>
-        </div>
-
-        <div class="dl5-bottom">
-          <section class="dl5-card dl5-sims">
-            <div class="dl5-title"><h3>${icon("simulation")} Últimos simulados</h3><a href="/questoes-simulados/">›</a></div>
-            <div class="dl5-sim-list">
-              ${recent.map((item,i)=>`<a href="/questoes-simulados/"><div><strong>${escape(item[0])}</strong><small>${escape(item[2])}</small></div><span>${escape(item[1] || "—")}</span><em>›</em></a>`).join("")}
-            </div>
-          </section>
-
-          <section class="dl5-card dl5-cat">
-            <div class="dl5-title"><h3>${icon("cat")} Pulo do Gato do dia</h3><a href="/dashboard/">›</a></div>
-            <div class="dl5-cat-body">
-              <span class="dashboard-cat-symbol" aria-hidden="true"><img class="cat-symbol-light" src="/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp?v=20260924d" alt=""><img class="cat-symbol-dark" src="/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp?v=20260924d" alt=""><img class="cat-symbol-pink" src="/assets/img/pulo%20do%20gato/luria_gato_tema_rosa.webp?v=20260924d" alt=""></span>
-              <div><strong>${escape(data.ccqArea || "Dica clínica")}</strong><p>${escape(data.ccq)}</p><a href="/dashboard/">Ver explicação completa →</a></div>
-            </div>
-          </section>
-        </div>
-      </div>`;
-  }
-
-
-
   function render() {
     frame = 0;
-    if (!allowed.has(current)) current = "1";
     try {
       const data = snap();
-      const bodyHtml = current === "5"
-        ? layout5(data)
-        : ({ "1": layout1, "2": layout2, "3": layout3 }[current])(data);
+      const bodyHtml = layout1(data);
       const html = greeting() + bodyHtml;
       if (html && root.innerHTML !== html) root.innerHTML = html;
       document.querySelectorAll(".page > .luria-dashboard-spotlight").forEach(el => {
@@ -437,16 +294,7 @@
   }
   function schedule() { if (!frame) frame = requestAnimationFrame(render); }
   function apply() {
-    let selected = "1";
-    try { selected = localStorage.getItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`) || "1"; } catch {}
-    // A versão instalada compartilha a escolha de layout com a versão web.
-    // O CSS responsivo ajusta os cards; o modo standalone não altera o painel.
-    const nextLayout = allowed.has(selected) ? selected : "1";
-    const sameLayout = dashboardAppliedOnce && current === nextLayout;
-    current = nextLayout;
-    if (!allowed.has(selected)) {
-      try { localStorage.setItem(`luria:dashboard-layout:${window.docmapUser?.id || "guest"}`, "1"); } catch {}
-    }
+    const sameLayout = dashboardAppliedOnce;
     document.body.dataset.dashboardLayout = current;
 
     // Evita recriar todo o Dashboard quando docmap:ready chega sem mudança de layout.

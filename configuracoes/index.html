@@ -800,6 +800,7 @@
   <script>(function(){try{if(location.pathname.endsWith("/configuracoes.html"))history.replaceState(null,"","/configuracoes/"+location.search+location.hash);}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
   <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/dashboard-cards.css?v=2">
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
 
@@ -995,29 +996,17 @@
           <article class="setting-row dashboard-layout-setting">
             <div>
               <h2>Layout do dashboard</h2>
-              <p>Escolha como os seus dados aparecem na página inicial.</p>
+              <p>Escolha a visão geral dos estudos ou o acesso rápido aos aplicativos.</p>
             </div>
             <fieldset id="dashboard-layout-options" class="dashboard-layout-options">
               <legend class="sr-only">Escolha o layout do dashboard</legend>
-              
               <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="1">
-                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-1.webp" alt="Prévia da agenda em destaque" loading="lazy"><strong>Opção 1 · Agenda</strong><small>Dia em primeiro plano</small></span>
+                <input type="radio" name="dashboard-layout" value="classic" checked>
+                <span class="dashboard-layout-choice-body"><span class="dashboard-layout-preview preview-classic" aria-hidden="true"><span class="preview-heading"></span><span class="preview-overview"><span class="preview-agenda"><b>Agenda</b><i></i><i></i><i></i></span><span class="preview-summary"><b>Ofensiva</b><i></i><i></i></span></span><span class="preview-metrics"><i></i><i></i><i></i></span></span><strong>Opção 1 — Clássica</strong><small>Visão geral dos estudos, agenda e progresso.</small><span class="dashboard-layout-selected">Selecionado</span></span>
               </label>
               <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="2">
-                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-2.webp" alt="Prévia dos indicadores em colunas" loading="lazy"><strong>Opção 2 · Indicadores</strong><small>Progresso em colunas</small></span>
-              </label>
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="3">
-                <span class="dashboard-layout-choice-body"><img src="/assets/img/dashboard-layouts/opcao-3.webp" alt="Prévia do painel completo" loading="lazy"><strong>Opção 3 · Painel completo</strong><small>Inclui o Pulo do Gato</small></span>
-              </label>
-              <label class="dashboard-layout-choice">
-                <input type="radio" name="dashboard-layout" value="5">
-                <span class="dashboard-layout-choice-body dashboard-layout-static-preview">
-                  <span class="dashboard-layout-static-icon" aria-hidden="true">▦</span>
-                  <strong>Opção 5 · Painel LURIA</strong><small>Indicadores, atividade, ofensiva, áreas e Pulo do Gato</small>
-                </span>
+                <input type="radio" name="dashboard-layout" value="cards">
+                <span class="dashboard-layout-choice-body"><span class="dashboard-layout-preview preview-apps" aria-hidden="true"><span class="preview-heading"></span><span class="preview-category"></span><span class="preview-app-row"><i></i><i></i><i></i></span><span class="preview-category"></span><span class="preview-app-row"><i></i><i></i><i></i></span></span><strong>Opção 2 — Cards</strong><small>Acesso rápido aos aplicativos por categoria.</small><span class="dashboard-layout-selected">Selecionado</span></span>
               </label>
             </fieldset>
             <div id="dashboard-layout-status" class="inline-status" role="status" aria-live="polite"></div>
@@ -1848,7 +1837,8 @@
   <script src="assets/js/exam-priority-extra.js?v=1"></script>
   <script src="assets/js/exam-priority.js?v=3"></script>
   <script src="assets/js/configuracoes.js?v=13.9-profile-save-session-fix"></script>
-  <script src="assets/js/dashboard-layout-settings.js?v=20261005-no-dashboard4"></script>
+  <script src="/assets/js/dashboard-preferences.js?v=1"></script>
+  <script src="assets/js/dashboard-layout-settings.js?v=20261012-two-layouts"></script>
   <script src="/assets/js/google-calendar.js?v=1"></script>\n  <script defer src="/assets/js/pwa.js?v=20261011-pwa281"></script>
 </body>
 </html>
