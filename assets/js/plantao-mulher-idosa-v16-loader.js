@@ -9,7 +9,7 @@
   if(requested || !images.test(img.getAttribute("src")||""))return;
   requested=true;
   const script=document.createElement("script");
-  script.src="/assets/js/plantao-mulher-idosa-v16.js?v=20261013-v16b";
+  script.src="/assets/js/plantao-mulher-idosa-v16.js?v=20261013-v16-publicado";
   script.async=true;
   script.onerror=()=>{requested=false;console.warn("LURIA: não foi possível carregar a mulher idosa V16.")};
   document.head.appendChild(script);
