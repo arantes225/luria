@@ -48,11 +48,11 @@ function draw(v){
  if(mix>0&&frames[high].complete&&frames[high].naturalWidth){ctx.globalAlpha=mix;ctx.drawImage(frames[high],0,0,217,72)}
  ctx.globalAlpha=1;
 }
-function stop(){clearTimeout(timer);cancelAnimationFrame(raf);token++;}
+function stop(){clearTimeout(timer);cancelAnimationFrame(raf);timer=0;raf=0;token++;}
 function schedule(){
  clearTimeout(timer);
  if(!ready||!visible||mode!=="auto"||document.hidden||scene.closest("[hidden]"))return;
- timer=setTimeout(()=>{if(mode==="auto"&&visible&&!document.hidden)blink()},3600+Math.random()*1700);
+ timer=setTimeout(()=>{timer=0;if(mode==="auto"&&visible&&!document.hidden)blink()},3600+Math.random()*1700);
 }
 const ease=t=>{const x=Math.max(0,Math.min(1,t));return x*x*(3-2*x)};
 function blink(){
@@ -63,7 +63,7 @@ function blink(){
   if(id!==token||!visible||mode!=="auto")return;
   if(origin===undefined)origin=now;
   const elapsed=now-origin;
-  if(elapsed>=total){draw(0);schedule();return}
+  if(elapsed>=total){raf=0;draw(0);schedule();return}
   let position;
   if(elapsed<=closeMs)position=maxStage*ease(elapsed/closeMs);
   else if(elapsed<=closeMs+holdMs)position=maxStage;
