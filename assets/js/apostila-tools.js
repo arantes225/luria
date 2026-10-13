@@ -585,7 +585,8 @@
 
     rows = [...approved, ...pending];
     renderApproved();
-    renderReviewPanel();
+    // Revisão de candidatas acontece somente em /admin/ para permitir lotes.
+    // A página de leitura exibe exclusivamente as imagens aprovadas.
   }
 
   async function boot() {
