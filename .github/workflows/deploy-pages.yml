@@ -72,6 +72,7 @@ jobs:
             --exclude='/.gitignore' \
             --exclude='/.env*' \
             --exclude='/db/' \
+            --exclude='/docs/' \
             --exclude='/supabase/' \
             --exclude='/tests/' \
             --exclude='/scripts/' \
@@ -87,7 +88,7 @@ jobs:
           test -s .pages-dist/assets/js/app.js
           test -s .pages-dist/apostilas/index.html
           test -f .pages-dist/CNAME
-          for folder in db supabase tests scripts tools tmp .tmp .github; do
+          for folder in db docs supabase tests scripts tools tmp .tmp .github; do
             test ! -e ".pages-dist/$folder" || { echo "Private directory leaked: $folder"; exit 1; }
           done
           if find .pages-dist -maxdepth 1 -type d -name 'qf-*' | grep -q .; then
