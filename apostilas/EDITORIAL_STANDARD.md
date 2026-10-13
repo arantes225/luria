@@ -1,5 +1,22 @@
 # Padrão editorial das Apostilas LURIA
 
+## Etapa zero obrigatória: benchmark no Drive (prioridade Estratégia MED)
+
+**ANTES de criar, ampliar ou editar conteúdo médico de qualquer apostila LURIA, buscar, abrir e ler uma apostila semelhante no Google Drive conectado. Priorizar materiais do Estratégia MED quando a autoria for verificável.** Esta regra também vale ao continuar revisões previamente iniciadas. Localizar o nome de um arquivo na busca, sem examinar o conteúdo, não satisfaz a etapa.
+
+**Roteiro de execução obrigatório:**
+1. Pesquisar o nome exato, sinônimos, siglas e condições correlatas no Drive; preferir apostila completa do Estratégia MED com tema equivalente. Confirmar a instituição por elementos do arquivo, não apenas deduzir pelo nome ou pelo padrão numérico.
+2. Abrir e inspecionar efetivamente o material: sumário, cobertura de tópicos, profundidade, sequenciamento pedagógico, tabelas, fluxogramas, diagramas, casos, imagens clínicas e questões.
+3. Comparar a apostila existente da LURIA com o material do Drive e diretrizes científicas atuais. Elaborar matriz de lacunas por capítulo: presente e bom / superficial / ausente / redundante / possivelmente desatualizado; localizar exatamente onde cada melhoria deve entrar.
+4. **Criar conteúdo inteiramente original.** Usar o cursinho como referência de cobertura e didática, jamais copiar ou parafrasear de perto seus textos, questões, figuras, tabelas, imagens ou projeto gráfico protegido. Para fatos médicos, doses e condutas, confirmar nas diretrizes oficiais e bibliografia científica vigente. Preservar o visual próprio da LURIA.
+5. Se não houver referência exatamente equivalente, examinar o material mais próximo e declarar quais tópicos ele não cobre. Se não for possível abrir nenhum comparável adequado, registrar a lacuna e **não certificar** a revisão como finalizada; trabalho preparatório ainda pode prosseguir desde que seja identificado como parcial.
+6. Ao fim, conferir que o estudante aprende integralmente com **somente a apostila LURIA**, dentro do padrão de 60.000 caracteres didáticos úteis, sem redundâncias nem transformar tabelas, esquemas e fluxos em textos longos.
+7. Registrar no controle editorial o nome da referência, data, se foi de fato aberta/lida, tópicos comparados, matriz de lacunas, mudanças realizadas e pendências. Não colocar identificadores ou URLs de documentos privados do Drive no GitHub público.
+
+**Exceção restrita:** ajustes puramente técnicos (CSS, scripts e links sem alteração médica) podem reutilizar a comparação já registrada para a mesma apostila. Qualquer mudança substantiva de conteúdo exige repetir a etapa zero.
+
+---
+
 ## Pré-requisito obrigatório — comparação com material do Google Drive antes de qualquer edição
 
 **Não criar, reescrever, ampliar, revisar conteúdo ou reformular a apresentação de apostila sem primeiro abrir e examinar um material semelhante disponível no Google Drive do projeto.** Essa consulta é parte do trabalho, e não uma sugestão para uma etapa futura. Aplicar a regra também a ajustes individuais, a revisões em lote e a materiais já publicados.
