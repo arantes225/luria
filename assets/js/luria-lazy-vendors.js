@@ -5,10 +5,17 @@
 (() => {
   "use strict";
 
+  const loadedVendors = new Set();
   const resources = Object.freeze({
     xlsx: {
+      // XLSX/XLSM: SheetJS mini, no legacy codepage and old-format parsers.
+      src: "/assets/vendor/xlsx-0.20.3-mini.js",
+      loaded: () => !!window.XLSX?.read && !!window.XLSX?.utils?.sheet_to_json
+    },
+    "xlsx-full": {
+      // CSV / XLS / XLSB / ODS and other legacy formats keep full compatibility.
       src: "/assets/vendor/xlsx-0.20.3.js",
-      loaded: () => !!window.XLSX?.read
+      loaded: () => loadedVendors.has("xlsx-full")
     },
     pdfjs: {
       src: "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js",
@@ -49,6 +56,9 @@
       script.async = true;
       script.dataset.luriaOptionalLibrary = name;
       script.onload = () => {
+        if (name === "xlsx-full" && window.XLSX?.read && window.XLSX?.utils?.sheet_to_json) {
+          loadedVendors.add("xlsx-full");
+        }
         if (resource.loaded()) {
           resolve();
         } else {
@@ -73,6 +83,19 @@
     ensure(names) {
       const list = Array.isArray(names) ? names : [names];
       return Promise.all(list.map(load)).then(() => undefined);
+    },
+    ensureSpreadsheet(filename = "") {
+      const file = String(filename || "").trim().split(/[?#]/)[0];
+      // Mini deliberately omits XLS/B, legacy codepages and some CSV parsing.
+      const fullRequired = /\.(?:xls|xlsb|csv|txt|ods|fods|dif|slk|sylk)$/i.test(file);
+      if (fullRequired) {
+        // Avoid the lightweight script overwriting the complete API in a race.
+        return (pending.get("xlsx") || Promise.resolve())
+          .catch(() => undefined)
+          .then(() => load("xlsx-full"));
+      }
+      // If the small build is inaccessible, the local full build remains a fallback.
+      return load("xlsx").catch(() => load("xlsx-full"));
     }
   });
 })();
