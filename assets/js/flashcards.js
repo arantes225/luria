@@ -3408,6 +3408,8 @@ function readAnkiDeckMap(
 async function openAnkiDatabase(
   file
 ) {
+  await window.LuriaLazyVendors.ensure(["jszip", "sqljs", "fzstd"]);
+
   if (
     !window.JSZip
     || !window.initSqlJs
@@ -4226,6 +4228,8 @@ function renderImportPreview(
 async function parseSpreadsheetImport(
   file
 ) {
+  await window.LuriaLazyVendors.ensure("xlsx");
+
   const buffer =
     await file.arrayBuffer();
 
@@ -5981,6 +5985,8 @@ function flashPdfAddBlock(doc, label, value, state) {
 
 
 async function exportSelectedFlashcardsPdf() {
+  try { await window.LuriaLazyVendors.ensure("jspdf"); } catch (error) { setLibraryStatus(error.message || "Não foi possível carregar o gerador de PDF.", "error"); return; }
+
   const ids = Array.from(selectedFlashcardIds);
   if (!ids.length) return;
 
