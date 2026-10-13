@@ -1311,6 +1311,33 @@ async function loadStudyHours() {
   setDashboardText("summary-hours", formatted);
 }
 
+async function loadDashboardWeekActivity() {
+  const start = startOfWeek(startOfDay(new Date()));
+  const end = addDays(start, 7);
+  const { data, error } = await dashboardSb
+    .from("study_sessions")
+    .select("started_at,ended_at,duration_seconds")
+    .not("ended_at", "is", null)
+    .not("duration_seconds", "is", null)
+    .gte("started_at", start.toISOString())
+    .lt("started_at", end.toISOString());
+
+  if (error) {
+    console.warn("LURIA: não foi possível carregar o histórico semanal de estudo", error);
+    window.luriaDashboardWeekActivity = { status: "unavailable", dates: [] };
+    return;
+  }
+
+  const dates = new Set();
+  (data || []).forEach((row) => {
+    const startedAt = new Date(row.started_at);
+    const duration = Number(row.duration_seconds);
+    if (!Number.isFinite(startedAt.getTime()) || !Number.isFinite(duration) || duration <= 0) return;
+    dates.add(toISODate(startedAt));
+  });
+  window.luriaDashboardWeekActivity = { status: "available", dates: [...dates] };
+}
+
 
 async function loadRetention() {
   const start30 = addDays(startOfDay(new Date()), -29);
@@ -1747,6 +1774,7 @@ async function loadDashboardPassiveCcq() {
 async function loadDashboardMetrics() {
   await Promise.all([
     loadStudyHours(),
+    loadDashboardWeekActivity(),
     loadLessonMetrics(),
     loadRetention(),
     loadFlashcardMetrics(),

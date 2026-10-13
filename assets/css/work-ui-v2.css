@@ -1010,7 +1010,350 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     line-height: 1.6 !important;
   }
 
-  /* PCR history retains its scoped controls within the same legacy bridge. */
+   html body[data-page="trabalho_bulario"] .drug-list {
+     display: grid !important;
+     align-content: start !important;
+     gap: 7px !important;
+     max-height: min(38vh, 350px) !important;
+     min-height: 0 !important;
+     overflow-x: hidden !important;
+     overflow-y: auto !important;
+     padding: 2px 5px 5px 2px !important;
+     overscroll-behavior: contain !important;
+     scrollbar-width: thin !important;
+     scrollbar-color: var(--color-border-interactive) transparent !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-list::-webkit-scrollbar {
+     width: 8px;
+   }
+   html body[data-page="trabalho_bulario"] .drug-list::-webkit-scrollbar-thumb {
+     border: 2px solid transparent;
+     border-radius: 999px;
+     background: var(--color-border-interactive);
+     background-clip: padding-box;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row {
+     display: flex !important;
+     align-items: center !important;
+     justify-content: flex-start !important;
+     width: 100% !important;
+     min-width: 0 !important;
+     min-height: 56px !important;
+     height: auto !important;
+     padding: 9px 13px !important;
+     border: 1px solid var(--color-border) !important;
+     border-radius: 11px !important;
+     background: var(--color-surface) !important;
+     color: var(--color-text-primary) !important;
+     text-align: left !important;
+     white-space: normal !important;
+     box-shadow: none !important;
+     transition: background-color .15s ease,border-color .15s ease,box-shadow .15s ease !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row:hover {
+     border-color: var(--color-border-interactive) !important;
+     background: var(--color-surface-elevated) !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row[aria-current="true"] {
+     border-color: var(--color-primary) !important;
+     background: var(--color-primary-subtle) !important;
+     box-shadow: inset 3px 0 var(--color-primary) !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row:focus-visible {
+     outline: 3px solid var(--color-focus-ring) !important;
+     outline-offset: 2px !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row-content {
+     display: grid !important;
+     justify-items: start !important;
+     gap: 3px !important;
+     width: 100% !important;
+     min-width: 0 !important;
+     text-align: left !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row-content>strong {
+     display: block !important;
+     min-width: 0 !important;
+     color: var(--color-text-primary) !important;
+     font-size: 14px !important;
+     font-weight: 650 !important;
+     line-height: 1.35 !important;
+     text-align: left !important;
+     overflow-wrap: anywhere !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row-content>small {
+     display: flex !important;
+     flex-wrap: wrap !important;
+     align-items: baseline !important;
+     gap: 2px 9px !important;
+     min-width: 0 !important;
+     margin: 0 !important;
+     color: var(--color-text-secondary) !important;
+     font-size: 12px !important;
+     font-weight: 400 !important;
+     line-height: 1.4 !important;
+     text-align: left !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-row-description,
+   html body[data-page="trabalho_bulario"] .drug-row-presentations {
+     display: inline-block !important;
+     min-width: 0 !important;
+   }
+   html body[data-page="trabalho_bulario"] .bulario-mobile-detail-bar {
+     display: flex !important;
+     align-items: center !important;
+     justify-content: space-between !important;
+     flex-wrap: wrap !important;
+     gap: 10px !important;
+     padding-bottom: 12px !important;
+     border-bottom: 1px solid var(--color-border) !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-back-button {
+     display: inline-flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     gap: 8px !important;
+     min-width: 0 !important;
+     min-height: 40px !important;
+     height: auto !important;
+     padding: 7px 12px !important;
+     border: 1px solid var(--color-border-interactive) !important;
+     border-radius: 9px !important;
+     background: var(--color-surface-elevated) !important;
+     color: var(--color-text-primary) !important;
+     font: inherit !important;
+     font-size: 14px !important;
+     font-weight: 600 !important;
+     line-height: 1.3 !important;
+     cursor: pointer !important;
+     transition: background-color .15s ease,border-color .15s ease,box-shadow .15s ease !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-back-button:hover {
+     border-color: var(--color-primary) !important;
+     background: var(--color-primary-subtle) !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-back-button:focus-visible {
+     outline: 3px solid var(--color-focus-ring) !important;
+     outline-offset: 2px !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-back-button svg {
+     display: block !important;
+     width: 18px !important;
+     height: 18px !important;
+     flex: 0 0 18px !important;
+     fill: none !important;
+     stroke: currentColor !important;
+     stroke-width: 1.8 !important;
+     stroke-linecap: round !important;
+     stroke-linejoin: round !important;
+   }
+   html body[data-page="trabalho_bulario"] .bulario-mobile-detail-bar>strong {
+     min-width: 0 !important;
+     color: var(--color-text-primary) !important;
+     font-size: 14px !important;
+     line-height: 1.4 !important;
+     overflow-wrap: anywhere !important;
+   }
+   html body[data-page="trabalho_bulario"] .drug-detail {
+     align-content: start !important;
+     gap: 18px !important;
+     min-width: 0 !important;
+     padding: 22px !important;
+     border-color: var(--color-border) !important;
+     background: var(--color-surface) !important;
+     color: var(--color-text-primary) !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-detail-head {
+     display: grid !important;
+     gap: 6px !important;
+     min-width: 0 !important;
+     padding-bottom: 14px !important;
+     border-bottom: 1px solid var(--color-border) !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-detail-head .drug-kicker {
+     font-size: 12px !important;
+     line-height: 1.4 !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-detail-head h2 {
+     margin: 0 !important;
+     color: var(--color-text-primary) !important;
+     font-size: clamp(22px,2.2vw,30px) !important;
+     font-weight: 700 !important;
+     line-height: 1.2 !important;
+     letter-spacing: -.02em !important;
+     overflow-wrap: anywhere !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-detail-head .drug-sub {
+     margin: 0 !important;
+     color: var(--color-text-secondary) !important;
+     font-size: 14px !important;
+     line-height: 1.5 !important;
+     overflow-wrap: anywhere !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-bridge-actions {
+     display: flex !important;
+     align-items: center !important;
+     gap: 10px !important;
+     margin: 0 !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-bridge-actions button {
+     display: inline-flex !important;
+     align-items: center !important;
+     justify-content: center !important;
+     min-width: 0 !important;
+     min-height: 42px !important;
+     height: auto !important;
+     padding: 9px 13px !important;
+     border: 1px solid var(--color-border-interactive) !important;
+     border-radius: 9px !important;
+     background: var(--color-primary-subtle) !important;
+     color: var(--color-primary-text) !important;
+     font-size: 14px !important;
+     font-weight: 600 !important;
+     line-height: 1.4 !important;
+     text-align: center !important;
+     overflow-wrap: anywhere !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-bridge-actions button.secondary {
+     border-color: var(--color-border-interactive) !important;
+     background: var(--color-surface-elevated) !important;
+     color: var(--color-text-primary) !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-bridge-actions button:focus-visible {
+     outline: 3px solid var(--color-focus-ring) !important;
+     outline-offset: 2px !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-section {
+     gap: 10px !important;
+     min-width: 0 !important;
+     padding-top: 16px !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-section-head h3,
+   html body[data-page="trabalho_bulario"] .rx-presentations-head h3 {
+     color: var(--color-text-primary) !important;
+     font-size: 18px !important;
+     line-height: 1.3 !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-section-head span,
+   html body[data-page="trabalho_bulario"] .rx-presentations-head span {
+     color: var(--color-text-secondary) !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-card,
+   html body[data-page="trabalho_bulario"] .rx-posology,
+   html body[data-page="trabalho_bulario"] .rx-field {
+     min-width: 0 !important;
+     max-width: 100% !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-presentation-layout {
+     display: grid !important;
+     grid-template-columns: minmax(0, 1fr) !important;
+     grid-auto-rows: max-content !important;
+     align-content: start !important;
+     gap: 12px !important;
+     width: 100% !important;
+     min-width: 0 !important;
+     min-height: 0 !important;
+     height: auto !important;
+     overflow: visible !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-presentation-layout > .rx-section {
+     display: grid !important;
+     grid-template-columns: minmax(0, 1fr) !important;
+     grid-auto-rows: max-content !important;
+     align-content: start !important;
+     min-height: 0 !important;
+     height: auto !important;
+     overflow: visible !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-presentation-tabs {
+     display: grid !important;
+     grid-template-columns: minmax(0, 1fr) !important;
+     grid-auto-rows: max-content !important;
+     align-content: start !important;
+     gap: 7px !important;
+     min-width: 0 !important;
+     min-height: 0 !important;
+     height: auto !important;
+     overflow: visible !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-presentation-tab {
+     position: relative !important;
+     box-sizing: border-box !important;
+     align-items: center !important;
+     min-width: 0 !important;
+     min-height: 44px !important;
+     height: auto !important;
+     margin: 0 !important;
+   }
+   html body[data-page="trabalho_bulario"] .rx-presentation-tab span {
+     flex: 1 1 auto !important;
+     min-width: 0 !important;
+     line-height: 1.4 !important;
+     overflow-wrap: anywhere !important;
+   }
+   html body[data-page="trabalho_bulario"] #rx-active-presentation {
+     display: block !important;
+     position: relative !important;
+     align-self: start !important;
+     width: 100% !important;
+     min-width: 0 !important;
+     min-height: 0 !important;
+     height: auto !important;
+     margin: 0 !important;
+     overflow: visible !important;
+   }
+   html body[data-page="trabalho_bulario"] #rx-active-presentation > .rx-presentation {
+     display: grid !important;
+     grid-template-columns: minmax(0, 1fr) !important;
+     grid-auto-rows: max-content !important;
+     align-content: start !important;
+     min-width: 0 !important;
+     min-height: 0 !important;
+     height: auto !important;
+     margin: 0 !important;
+     overflow: visible !important;
+   }
+   @media (max-width:760px) {
+     html body[data-page="trabalho_bulario"] .drug-list {
+       max-height: min(34vh,280px) !important;
+     }
+     html.pwa-standalone body[data-page="trabalho_bulario"] .drug-list {
+       max-height: none !important;
+       overflow: visible !important;
+     }
+     html body[data-page="trabalho_bulario"] .drug-row {
+       min-height: 52px !important;
+       padding: 8px 10px !important;
+     }
+     html body[data-page="trabalho_bulario"] .drug-row-content>strong {
+       font-size: 13px !important;
+     }
+     html body[data-page="trabalho_bulario"] .drug-row-content>small {
+       font-size: 11px !important;
+     }
+     html body[data-page="trabalho_bulario"] .drug-detail {
+       gap: 14px !important;
+       padding: 16px !important;
+     }
+     html.pwa-standalone body[data-page="trabalho_bulario"] .drug-detail {
+       background: var(--bg) !important;
+     }
+     html body[data-page="trabalho_bulario"] .rx-detail-head {
+       padding-bottom: 12px !important;
+     }
+     html body[data-page="trabalho_bulario"] .rx-detail-head h2 {
+       font-size: 23px !important;
+     }
+     html body[data-page="trabalho_bulario"] .rx-bridge-actions {
+       align-items: stretch !important;
+       flex-direction: column !important;
+     }
+     html body[data-page="trabalho_bulario"] .rx-bridge-actions button {
+       width: 100% !important;
+     }
+   }
+
+   /* PCR history retains its scoped controls within the same legacy bridge. */
  body[data-ui-work="v2"] .pcr-history-actions .button,body[data-ui-work="v2"] .pcr-patient-card .button {display:inline-flex!important;align-items:center!important;justify-content:center!important;padding:10px 16px!important;min-height:var(--ui-control)!important;border-radius:8px!important;font-size:14px!important;line-height:1.5!important;}
  body[data-ui-work="v2"] .pcr-history-actions .primary {background:var(--color-primary)!important;color:var(--color-primary-foreground)!important;border-color:var(--color-primary)!important;}
  body[data-ui-work="v2"] .pcr-history-actions input {padding:10px 12px!important;border:1px solid var(--color-border-interactive)!important;border-radius:8px!important;}

@@ -197,15 +197,84 @@ test('Bulario full load and presentation selection escape attributes without cha
   const formulation={label:'Apresentação & çã',source_url:'javascript:window.auditExecuted=1',strength_mg_ml:10,calculator};
   const row={id:363,name:'Nome',active_ingredient:'Princípio ativo',data:{status:'posology_verified',leaflet_url:'data:text/html,<script>1</script>',formulations:[formulation,{...formulation,label:'Hostil',calculator:{...calculator,min_mg_kg_day:hostile,max_mg_kg_day:hostile,default_mg_kg_day:hostile}}]}};
   mockTables(w,{bulario_catalog:[row]});w.eval(read('assets/js/bulario.js'));await tick();
-  const detail=w.document.getElementById('drug-detail');assertSafe(detail);
+  const detail=w.document.getElementById('drug-detail');
+  const assertSafeBulario=()=>{const safe=detail.cloneNode(true);safe.querySelectorAll('.rx-back-button svg').forEach(icon=>icon.remove());assertSafe(safe);};
+  assertSafeBulario();
   assert.equal(detail.querySelector('.rx-presentation a').getAttribute('href'),'#');assert.equal([...detail.querySelectorAll('a')].at(-1).href,'https://consultas.anvisa.gov.br/#/bulario/');
   detail.querySelector('.rx-weight').value='10';detail.querySelector('.rx-age').value='5';detail.querySelector('.rx-renal').value='normal';
   detail.querySelector('.rx-rate').dispatchEvent(new w.Event('input',{bubbles:true}));
   assert.match(detail.querySelector('.rx-result').textContent,/200 mg\/dia/);
-  detail.querySelectorAll('.rx-presentation-tab')[1].click();assertSafe(detail);
+  detail.querySelectorAll('.rx-presentation-tab')[1].click();assertSafeBulario();
   assert.equal(detail.querySelector('.rx-rate').getAttribute('min'),hostile);assert.equal(detail.querySelector('[autofocus]'),null);
   detail.querySelectorAll('.rx-presentation-tab')[0].click();assert.equal(detail.querySelector('.rx-rate').value,'20');
   assert.equal(w.auditExecuted,undefined);assert.deepEqual(errors,[]);
+});
+
+test('Bulario list separates labels, supports active-ingredient search and preserves back action',async t=>{
+  const {w,errors}=fixture(t,'<input id="drug-search"><div id="drug-list"></div><div id="drug-detail"></div><span id="drug-count"></span>');
+  const rows=[
+    {id:363,name:'Amoxicilina comercial',active_ingredient:'amoxicilina',data:{status:'posology_verified',formulations:[{label:'Suspensão'},{label:'Cápsula'},{label:'Comprimido'}]}},
+    {id:2,name:'Ciclopirox',active_ingredient:'ciclopirox',data:{status:'verified'}},
+    {id:3,name:'Acarbose',active_ingredient:'acarbose',data:{status:'posology_verified',formulations:[{label:'Comprimido'}]}}
+  ];
+  mockTables(w,{bulario_catalog:rows,clinical_protocols:[]});
+  w.eval(read('assets/js/bulario.js'));await tick();
+  const list=w.document.getElementById('drug-list'),first=list.querySelector('[data-id="363"]');
+  assert.equal(first.querySelector('.drug-row-content>strong').textContent,'amoxicilina');
+  assert.equal(first.querySelector('.drug-row-presentations').textContent,'3 apresentações');
+  assert.equal(first.querySelector('.drug-row-description').textContent,'Nome comercial/referência: Amoxicilina comercial');
+  assert.equal(list.querySelector('[data-id="3"] .drug-row-presentations').textContent,'1 apresentação');
+  first.click();
+  assert.equal(first.getAttribute('aria-current'),'true');
+  const back=w.document.querySelector('[data-bulario-mobile-close="1"]');
+  assert.ok(back.querySelector('svg'));assert.equal(back.querySelector('span').textContent,'Voltar');
+  w.document.body.classList.add('bulario-detail-open');back.click();
+  assert.equal(w.document.body.classList.contains('bulario-detail-open'),false);
+  const search=w.document.getElementById('drug-search');search.value='ciclopirox';search.dispatchEvent(new w.Event('input'));
+  assert.equal(list.querySelectorAll('[data-id]').length,1);
+  assert.equal(list.querySelector('[data-id]').dataset.id,'2');
+  assert.deepEqual(errors,[]);
+});
+
+test('Bulario presentation list and active detail stay in vertical flow for multiple selections',async t=>{
+  const {w,errors}=fixture(t,'<input id="drug-search"><div id="drug-list"></div><div id="drug-detail"></div><span id="drug-count"></span>');
+  const formulations=Array.from({length:4},(_,i)=>({
+    label:`Apresentação ${i+1} com nome longo para testar quebra natural e largura responsiva`,
+    dose_text:`Dose da apresentação ${i+1}`,
+    interval_text:'A cada 8 horas',
+    route:'Via oral',
+    duration_text:'Conforme avaliação',
+    max_daily_text:'A confirmar',
+    administration:'Administrar conforme orientação',
+    cautions:'Conferir antes de prescrever',
+    prescription_type:'Simples'
+  }));
+  const rows=Array.from({length:4},(_,i)=>({id:i+1,name:`Medicamento ${i+1}`,active_ingredient:`princípio ativo ${i+1}`,data:{status:'posology_verified',formulations:formulations.slice(0,i+1)}}));
+  mockTables(w,{bulario_catalog:rows,clinical_protocols:[]});
+  w.eval(read('assets/js/bulario.js'));await tick();
+  const detail=w.document.getElementById('drug-detail');
+  for(let count=1;count<=4;count++){
+    w.document.querySelector(`.drug-row[data-id="${count}"]`).click();
+    const group=detail.querySelector('.rx-presentation-layout');
+    const tabs=group.querySelector('.rx-presentation-tabs');
+    const active=group.querySelector('#rx-active-presentation');
+    assert.ok(group);
+    assert.equal(group.children[0].classList.contains('rx-section'),true);
+    assert.equal(group.children[1],active);
+    assert.equal(tabs.querySelectorAll('.rx-presentation-tab').length,count);
+    for(const [index,tab] of [...tabs.querySelectorAll('.rx-presentation-tab')].entries()){
+      tab.click();
+      assert.equal(tab.getAttribute('aria-selected'),'true');
+      assert.equal(tabs.querySelectorAll('.rx-presentation-tab[aria-selected="true"]').length,1);
+      assert.equal(active.querySelector('.rx-presentation').dataset.formulationIndex,String(index));
+      assert.equal(active.querySelector('.rx-presentation h3').textContent,formulations[index].label);
+    }
+  }
+  const workCss=read('assets/css/work-ui-v2.css');
+  assert.match(workCss,/\.rx-presentation-layout\s*\{[^}]*grid-auto-rows:\s*max-content\s*!important/s);
+  assert.match(workCss,/\.rx-presentation-tabs\s*\{[^}]*display:\s*grid\s*!important/s);
+  assert.match(workCss,/#rx-active-presentation\s*\{[^}]*height:\s*auto\s*!important/s);
+  assert.deepEqual(errors,[]);
 });
 
 test('Recipe full mocked load preserves list selection and rejects executable source links',async t=>{

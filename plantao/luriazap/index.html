@@ -6,7 +6,7 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Plantão · LURIA</title>
+  <title>LuriaZap · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=4">
   <link rel="apple-touch-icon" href="/assets/img/logos/logo-icone-original.png?v=pwa4">
   <meta name="theme-color" content="#0A2342">
@@ -19,14 +19,13 @@
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="assets/css/plantao.css?v=20261004-shell-compat-v63">
   <link rel="stylesheet" href="assets/css/plantao-pwa-game.css?v=9">
+  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
+  <link rel="stylesheet" href="/assets/css/luriazap-ui-v2.css?v=1">
+  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
   <link rel="canonical" href="/plantao/luriazap/">
   <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
   <script>(function(){try{if(location.pathname.endsWith("/plantao.html"))history.replaceState(null,"","/plantao/"+location.search+location.hash);}catch(e){}})();</script>
   <style>
-    .plantao-module-entry .plantao-mode-menu{display:none!important}
-    .plantao-module-back{display:inline-flex;align-items:center;gap:7px;margin:0 0 12px;padding:8px 11px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font-size:9px;font-weight:800;text-decoration:none}
-    .plantao-module-back:hover{background:var(--surface-2)}
-
     /* LuriaZap standalone: nenhum conteúdo da Sala/OSCE pode aparecer atrás. */
     body[data-plantao-entry="phone"] .plantao-hero,
     body[data-plantao-entry="phone"] .plantao-mode-menu,
@@ -40,29 +39,6 @@
     body[data-plantao-entry="phone"] .plantao-quick-grid {
       display:none!important;
     }
-    body[data-plantao-entry="phone"] #plantao-library{
-      display:block!important;
-      width:100%!important;
-      min-height:calc(100dvh - 60px)!important;
-      padding:0!important;
-      margin:0!important;
-      background:transparent!important;
-    }
-    body[data-plantao-entry="phone"] #plantao-telefone{
-      display:grid!important;
-      visibility:visible!important;
-      opacity:1!important;
-      width:100%!important;
-      min-height:calc(100dvh - 60px)!important;
-      margin:0!important;
-      position:relative!important;
-      z-index:2!important;
-    }
-    body[data-plantao-entry="phone"] .plantao-module-back{
-      position:relative!important;
-      z-index:100!important;
-      pointer-events:auto!important;
-    }
   </style>
 <style id="luria-page-font-lock-v57">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}</style>
   <style id="hide-mini-osce-card">
@@ -73,7 +49,9 @@
     [data-start-osce] { display: none !important; }
   </style>
 </head>
-<body data-page="plantao" data-plantao-entry="phone" class="plantao-module-entry plantao-phone-mode">
+<body data-ui="v2" data-ui-nav="v2" data-ui-context="study" data-page="plantao" data-plantao-entry="phone" class="plantao-module-entry plantao-phone-mode">
+  <script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
+  <script defer src="/assets/js/ui-navigation-v2.js?v=20261011-pwa281"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -81,10 +59,14 @@
       <div class="page plantao-page">
         <header class="topbar">
           <button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button>
-          <div class="page-heading"><span class="eyebrow" data-page-eyebrow></span><h1 data-page-title></h1></div>
         </header>
 
-        <a id="luriazap-back-simulator" class="plantao-module-back" href="/plantao/sala-emergencia/">← Voltar ao Simulador</a>
+        <section class="luriazap-heading" aria-labelledby="luriazap-heading-title">
+          <span class="luriazap-eyebrow">Prática em conversa</span>
+          <h1 id="luriazap-heading-title">LuriaZap</h1>
+          <p>Explore interconsultas e pratique suas respostas.</p>
+        </section>
+        <a id="luriazap-back-simulator" class="plantao-module-back" href="/plantao/sala-emergencia/">Voltar ao Simulador</a>
 
         <section id="plantao-library" class="plantao-library">
           <article class="plantao-hero panel">
@@ -174,10 +156,11 @@
                           <img class="plantao-phone-brand-logo plantao-phone-brand-logo-dark" src="assets/img/logos/logo-icone-azul-claro.png?v=luriazap1" alt="">
                           <img class="plantao-phone-brand-logo plantao-phone-brand-logo-pink" src="assets/img/logos/logo-icone-rosa-escuro.png?v=luriazap1" alt="">
                         </span>
-                        <strong id="plantao-phone-title" class="plantao-phone-brand-name">LuriaZap</strong>
+                        <strong id="plantao-phone-title" class="plantao-phone-brand-name">Conversas</strong>
                       </div>
                       <div class="plantao-phone-inbox-actions">
-                        <button id="plantao-phone-search-toggle" type="button" aria-label="Pesquisar conversas" aria-expanded="false">⌕</button>
+                        <button id="plantao-phone-search-toggle" type="button" aria-label="Pesquisar conversas" aria-expanded="false" aria-controls="plantao-phone-search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button>
+                        <button id="plantao-phone-new-chat" class="plantao-phone-new-chat-fab" type="button" aria-label="Criar nova aula com IA" title="Criar nova aula com IA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Nova conversa</span></button>
                         
                       </div>
                     </header>
@@ -191,20 +174,19 @@
                       <small>Escolha uma interconsulta para atender</small>
                     </div>
                     <div id="plantao-phone-case-list" class="plantao-phone-case-list" aria-live="polite"></div>
-                    <button id="plantao-phone-new-chat" class="plantao-phone-new-chat-fab" type="button" aria-label="Criar nova aula com IA" title="Criar nova aula com IA">+</button>
                   </section>
 
                   <section id="plantao-phone-station" class="plantao-phone-chat-view" hidden>
                     <header class="plantao-phone-chat-head">
                       <button id="plantao-phone-back" type="button" aria-label="Voltar para conversas">‹</button>
                       <div class="plantao-phone-contact-wrap"><span class="plantao-phone-contact-avatar" aria-hidden="true"><span class="plantao-phone-person-icon"></span></span><div class="plantao-phone-contact-copy"><strong id="plantao-phone-requester">R1 de Clínica Médica</strong><small id="plantao-phone-context">Caso clínico</small></div></div>
-                      <span aria-hidden="true">•••</span>
+                      <span class="luriazap-chat-decoration" aria-hidden="true">•••</span>
                     </header>
                     <div id="plantao-phone-chat-body" class="plantao-phone-chat-body" aria-live="polite"></div>
                     <div id="plantao-phone-choices" class="plantao-phone-choices" aria-label="Opções de resposta"></div>
                     <form id="plantao-phone-compose-form" class="plantao-phone-compose-form" autocomplete="off">
                       <input id="plantao-phone-compose-input" type="text" placeholder="Mensagem" aria-label="Digite uma mensagem">
-                      <button id="plantao-phone-compose-send" type="submit" aria-label="Enviar mensagem">➤</button>
+                      <button id="plantao-phone-compose-send" type="submit" aria-label="Enviar mensagem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7M12 5v14"/></svg></button>
                     </form>
                   </section>
                 </div>

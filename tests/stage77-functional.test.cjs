@@ -39,6 +39,56 @@ test('Review-only answer control still reveals the answer on the review page',t=
  assert.equal(d.getElementById('show-answer').hidden,true);
 });
 
+test('Synthetic flashcard review reveals, records a rating, advances and finishes',async t=>{
+ const {w,d,errors}=page(t,'flashcards/index.html'),calls=[];
+ w.reviewQueue=[
+  {id:'card-1',front_text:'Pergunta 1',back_text:'Resposta 1'},
+  {id:'card-2',front_text:'Pergunta 2',back_text:'Resposta 2'}
+ ];
+ w.reviewIndex=0;w.reviewMode='scheduled';w.flashSb={rpc:async(name,args)=>{calls.push({name,args});return{error:null}}};
+ w.setFlashStatus=()=>{};w.loadMetrics=async()=>{};
+ w.renderCurrentReview=async()=>{
+  const card=w.reviewQueue[w.reviewIndex];
+  d.getElementById('review-front').textContent=card.front_text;
+  d.getElementById('review-back').textContent=card.back_text;
+  d.getElementById('review-answer').hidden=true;
+  d.getElementById('rating-actions').hidden=true;
+  d.getElementById('show-answer').hidden=false;
+ };
+ w.startReviewSession=()=>{
+  d.body.classList.add('flash-review-session-active');
+  d.getElementById('review-focus-toolbar').hidden=false;
+  d.getElementById('review-stage').hidden=false;
+  d.getElementById('review-launcher').hidden=true;
+  d.getElementById('review-front').textContent=w.reviewQueue[0].front_text;
+  d.getElementById('review-back').textContent=w.reviewQueue[0].back_text;
+ };
+ w.finishReviewSession=()=>{
+  d.body.classList.remove('flash-review-session-active');
+  d.getElementById('review-focus-toolbar').hidden=true;
+  d.getElementById('review-stage').hidden=true;
+  d.getElementById('review-launcher').hidden=false;
+ };
+ w.toggleReviewPomodoro=()=>{};
+ w.eval(declaration(read('assets/js/flashcards.js'),'wireReview'));w.wireReview();
+ d.getElementById('start-review-session').disabled=false;
+ d.getElementById('start-review-session').click();
+ assert(d.body.classList.contains('flash-review-session-active'));
+ assert.equal(d.getElementById('review-front').textContent,'Pergunta 1');
+ d.getElementById('show-answer').click();
+ assert.equal(d.getElementById('review-answer').hidden,false);
+ assert.equal(d.getElementById('rating-actions').hidden,false);
+ d.querySelector('[data-rating="medium"]').click();await settle();await settle();
+ assert.equal(calls.length,1);assert.equal(calls[0].name,'review_flashcard');
+ assert.equal(calls[0].args.p_flashcard_id,'card-1');assert.equal(calls[0].args.p_rating,'medium');assert.equal(calls[0].args.p_was_correct,true);
+ assert.equal(w.reviewIndex,1);assert.equal(d.getElementById('review-front').textContent,'Pergunta 2');
+ assert.equal(d.getElementById('show-answer').hidden,false);
+ d.getElementById('finish-review-session').click();
+ assert.equal(d.body.classList.contains('flash-review-session-active'),false);
+ assert.equal(d.querySelectorAll('.flash-home-actions [data-flash-home-tab]').length,3);
+ assert.deepEqual(errors,[]);
+});
+
 for(const file of ['configuracoes.html','configuracoes/index.html'])test(file+' initializes its actual controls',async t=>{
  const {w,d,errors}=page(t,file);
  w.eval(read('tests/fixtures/supabase-browser.js'));

@@ -31,7 +31,7 @@ function renderSidebars(){
   list.querySelectorAll("[data-jump]").forEach(b=>b.addEventListener("click",()=>{reviewIndex=Number(b.dataset.jump);renderCurrent()}));
 
   const areas={};reviewItems.forEach(x=>{const a=canonicalArea(x.area);areas[a]=(areas[a]||0)+1});
-  document.getElementById("error-review-area-bars").innerHTML=Object.entries(areas).map(([a,n])=>`<div><span>${esc(a)}</span><i><b style="width:${Math.round(n/Math.max(1,total)*100)}%"></b></i><strong>${n}</strong></div>`).join("");
+  document.getElementById("error-review-area-bars").innerHTML=Object.entries(areas).map(([a,n])=>`<div><span>${esc(a)}</span><i><b style="width:${Math.round(n/Math.max(1,total)*100)}%"></b></i><strong>${n}</strong></div>`).join("")||'<p class="error-review-area-empty">Nenhum erro por área nesta revisão.</p>';
 }
 
 function renderCurrent(){
@@ -40,6 +40,15 @@ function renderCurrent(){
   if(reviewIndex>=reviewItems.length||!reviewItems.length){
     wrap.hidden=true;
     empty.hidden=false;
+    const emptyTitle=document.getElementById("error-review-empty-title");
+    const emptyCopy=document.getElementById("error-review-empty-copy");
+    if(!reviewItems.length){
+      emptyTitle.textContent="Nenhum item disponível para revisar";
+      emptyCopy.textContent="Não há itens pendentes no momento. Volte ao Caderno de Erros para consultar seus registros.";
+    }else{
+      emptyTitle.textContent="Revisão concluída";
+      emptyCopy.textContent="Missão cumprida. Agora é deixar o tempo consolidar.";
+    }
     document.getElementById("error-review-progress").textContent=`${reviewItems.length} de ${reviewItems.length}`;
     renderSidebars();
     if(reviewItems.length&&reviewCompleted>=reviewItems.length){

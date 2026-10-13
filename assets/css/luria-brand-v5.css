@@ -2480,12 +2480,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   /* Painel aberto: volta a obedecer as cores do tema e nunca herda branco do topo. */
   body .luria-pomodoro-panel,
   body .luria-pomodoro-panel *{
-    color:var(--text)!important;
+    color:var(--color-text-primary,var(--text))!important;
   }
 
   body .luria-pomodoro-panel header strong,
   body .luria-pomodoro-panel .luria-pomodoro-time{
-    color:var(--text)!important;
+    color:var(--color-text-primary,var(--text))!important;
   }
 
   body .luria-pomodoro-panel header small,
@@ -2494,7 +2494,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   body .luria-pomodoro-panel .luria-pomodoro-fields label,
   body .luria-pomodoro-panel .luria-timer-switch button:not([aria-pressed="true"]),
   body .luria-pomodoro-panel .luria-pomodoro-modes button:not([aria-pressed="true"]){
-    color:var(--muted)!important;
+    color:var(--color-text-secondary,var(--muted))!important;
   }
 
   body .luria-pomodoro-panel .luria-timer-switch button[aria-pressed="true"]{

@@ -1,0 +1,124 @@
+/* LuriaZap only. This bridge layer precedes navigation and defeats the legacy
+   phone locks without changing shared Plantão styles or script-owned states. */
+@layer luria-ui-luriazap {
+  body[data-plantao-entry="phone"][data-ui="v2"] {
+    & .page, & .page * {font-family:var(--ui-font-family)!important;}
+    & .plantao-phone-screen button {transform:none!important;}
+    & .topbar {pointer-events:auto!important;}
+    & .topbar .luria-notifications {display:flex!important;}
+    & .luriazap-heading {margin:0 0 1.5rem!important;}
+    & .luriazap-eyebrow {color:var(--color-primary-text)!important;font-size:var(--ui-secondary)!important;font-weight:600!important;letter-spacing:.08em!important;text-transform:uppercase!important;}
+    & .luriazap-heading h1 {font-size:var(--ui-h1)!important;line-height:1.2!important;letter-spacing:-.035em!important;font-weight:700!important;color:var(--color-text-primary)!important;margin:.5rem 0 .75rem!important;}
+    & .luriazap-heading p {font-size:var(--ui-body)!important;line-height:1.5!important;color:var(--color-text-secondary)!important;margin:0!important;}
+    & .plantao-module-back {position:static!important;display:inline-flex!important;align-items:center!important;gap:.5rem!important;min-height:var(--ui-control)!important;margin:0 0 1rem!important;padding:.625rem 1rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface)!important;color:var(--color-primary-text)!important;font-size:var(--ui-secondary)!important;font-weight:600!important;box-shadow:none!important;}
+    & #plantao-library {display:block!important;width:100%!important;min-height:0!important;margin:0!important;padding:0!important;background:transparent!important;}
+    & #plantao-telefone {display:block!important;position:static!important;inset:auto!important;z-index:auto!important;width:100%!important;min-height:0!important;height:auto!important;max-height:none!important;margin:0!important;padding:0!important;background:transparent!important;overflow:visible!important;}
+    & .plantao-phone-layout,
+    & .plantao-phone-layout > .plantao-phone-station,
+    & .plantao-phone-device,
+    & .plantao-phone-screen {position:static!important;inset:auto!important;display:block!important;width:100%!important;max-width:none!important;min-width:0!important;min-height:0!important;height:auto!important;max-height:none!important;margin:0!important;padding:0!important;aspect-ratio:auto!important;transform:none!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;}
+    & .plantao-phone-layout > .plantao-phone-station::before,
+    & .plantao-phone-layout > .plantao-phone-station::after,
+    & .plantao-phone-device::before,
+    & .plantao-phone-device::after,
+    & .plantao-phone-notch,
+    & .plantao-phone-statusbar,
+    & .plantao-phone-page-back,
+    & #plantao-phone-exit,
+    & .luriazap-chat-decoration {display:none!important;}
+    & :is(.plantao-phone-inbox,.plantao-phone-chat-view) {position:relative!important;display:flex!important;flex-direction:column!important;min-width:0!important;min-height:0!important;height:auto!important;max-height:none!important;overflow:hidden!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-card)!important;background:var(--color-surface)!important;box-shadow:var(--ui-shadow)!important;color:var(--color-text-primary)!important;}
+    & :is(.plantao-phone-inbox,.plantao-phone-chat-view,.plantao-phone-search-wrap,.plantao-phone-choices)[hidden] {display:none!important;}
+    & .plantao-phone-chat-head {display:flex!important;align-items:center!important;gap:.75rem!important;min-height:76px!important;padding:1rem 1.25rem!important;background:var(--color-surface)!important;border:0!important;border-bottom:1px solid var(--color-border)!important;box-shadow:none!important;color:var(--color-text-primary)!important;}
+    & .plantao-phone-brand {display:flex!important;align-items:center!important;gap:.75rem!important;min-width:0!important;margin:0!important;}
+    & .plantao-phone-brand-symbol {width:36px!important;height:36px!important;flex:0 0 36px!important;background:var(--color-primary-subtle)!important;border-radius:var(--ui-radius-control)!important;box-shadow:none!important;}
+    & .plantao-phone-brand-logo {width:36px!important;height:36px!important;padding:7px!important;filter:none!important;}
+    & .plantao-phone-brand-logo-light {display:block!important;}
+    & :is(.plantao-phone-brand-logo-dark,.plantao-phone-brand-logo-pink) {display:none!important;}
+    &[data-ui-identity="pink"] .plantao-phone-brand-logo-light {display:none!important;}
+    &[data-ui-identity="pink"] .plantao-phone-brand-logo-pink {display:block!important;}
+    &[data-ui-appearance="dark"] :is(.plantao-phone-brand-logo-light,.plantao-phone-brand-logo-pink) {display:none!important;}
+    &[data-ui-appearance="dark"] .plantao-phone-brand-logo-dark {display:block!important;}
+    & .plantao-phone-brand-name {font-size:var(--ui-card-title)!important;font-weight:600!important;line-height:1.4!important;color:var(--color-text-primary)!important;}
+    & .plantao-phone-inbox-actions {display:flex!important;align-items:center!important;gap:.5rem!important;margin-left:auto!important;}
+    & :is(.plantao-phone-chat-head button,#plantao-phone-search-close,#plantao-phone-compose-send) {display:inline-flex!important;align-items:center!important;justify-content:center!important;flex-shrink:0!important;min-width:var(--ui-control)!important;width:var(--ui-control)!important;height:var(--ui-control)!important;padding:.625rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface)!important;color:var(--color-primary-text)!important;box-shadow:none!important;font-size:1.5rem!important;font-weight:500!important;cursor:pointer!important;}
+    & button svg {width:20px!important;height:20px!important;flex:0 0 20px!important;}
+    & #plantao-phone-new-chat {position:static!important;inset:auto!important;transform:none!important;width:auto!important;min-width:var(--ui-control)!important;gap:.5rem!important;padding:.625rem .875rem!important;background:var(--color-primary)!important;border-color:var(--color-primary)!important;color:var(--color-primary-foreground)!important;font-size:var(--ui-secondary)!important;font-weight:600!important;}
+    & .plantao-phone-search-wrap {display:flex!important;align-items:center!important;flex-wrap:wrap!important;gap:.5rem!important;padding:1rem 1.25rem!important;margin:0!important;background:var(--color-surface-elevated)!important;border:0!important;border-bottom:1px solid var(--color-border)!important;}
+    & .plantao-phone-search-wrap > span {display:none!important;}
+    & :is(#plantao-phone-search,#plantao-phone-compose-input) {box-sizing:border-box!important;flex:1 1 0!important;width:100%!important;min-width:0!important;min-height:var(--ui-control)!important;height:var(--ui-control)!important;margin:0!important;padding:.625rem .875rem!important;border:1px solid var(--color-border-interactive)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;font-size:var(--ui-body)!important;font-weight:400!important;line-height:1.5!important;box-shadow:none!important;}
+    & input::placeholder {color:var(--color-text-secondary)!important;opacity:1!important;}
+    & .plantao-phone-inbox-toolbar {display:flex!important;flex-wrap:wrap!important;gap:.375rem 1rem!important;align-items:center!important;margin:0!important;padding:1rem 1.25rem!important;background:transparent!important;border:0!important;}
+    & .plantao-phone-inbox-toolbar strong {display:none!important;}
+    & .plantao-phone-inbox-toolbar small {font-size:var(--ui-secondary)!important;line-height:1.5!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-case-list {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;align-content:start!important;gap:.875rem!important;min-height:0!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:0 1.25rem 1.25rem!important;background:transparent!important;}
+    & .plantao-phone-conversation {display:grid!important;grid-template-columns:48px minmax(0,1fr) 20px!important;align-items:center!important;gap:.875rem!important;width:100%!important;min-width:0!important;margin:0!important;padding:1rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface)!important;color:var(--color-text-primary)!important;box-shadow:none!important;text-align:left!important;cursor:pointer!important;}
+    & :is(.plantao-phone-conversation-avatar,.plantao-phone-contact-avatar) {display:grid!important;place-items:center!important;width:48px!important;height:48px!important;min-width:0!important;padding:0!important;border:1px solid var(--color-border)!important;border-radius:50%!important;background:var(--color-primary-subtle)!important;box-shadow:none!important;overflow:hidden!important;}
+    & .plantao-phone-profile-avatar {width:100%!important;height:100%!important;min-width:0!important;border:0!important;border-radius:50%!important;background:transparent!important;box-shadow:none!important;color:var(--color-primary-text)!important;}
+    & .plantao-phone-profile-avatar svg {width:28px!important;height:28px!important;}
+    & .plantao-phone-profile-avatar img {width:100%!important;height:100%!important;object-fit:cover!important;}
+    & .plantao-phone-conversation-main {display:flex!important;flex-direction:column!important;gap:.375rem!important;min-width:0!important;text-align:left!important;}
+    & .plantao-phone-conversation-main * {text-align:left!important;}
+    & .plantao-phone-conversation-top {display:flex!important;align-items:baseline!important;justify-content:space-between!important;gap:.5rem!important;}
+    & .plantao-phone-conversation-top strong {font-size:var(--ui-secondary)!important;font-weight:600!important;color:var(--color-primary-text)!important;line-height:1.4!important;white-space:normal!important;overflow-wrap:anywhere!important;}
+    & .plantao-phone-conversation-top small {flex-shrink:0!important;font-size:var(--ui-caption)!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-conversation-title {display:block!important;font-size:var(--ui-body)!important;font-weight:600!important;line-height:1.45!important;white-space:normal!important;overflow:visible!important;overflow-wrap:anywhere!important;color:var(--color-text-primary)!important;}
+    & .plantao-phone-conversation-preview {display:block!important;font-size:var(--ui-secondary)!important;line-height:1.5!important;white-space:normal!important;overflow:visible!important;overflow-wrap:anywhere!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-conversation-chevron {font-size:1.5rem!important;color:var(--color-primary-text)!important;}
+    & :is(.plantao-phone-empty,.plantao-phone-new-chat-empty) {grid-column:1/-1!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;box-sizing:border-box!important;width:100%!important;max-width:none!important;margin:0!important;gap:.75rem!important;min-height:240px!important;padding:2rem 1.25rem!important;border:1px dashed var(--color-border)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface-elevated)!important;color:var(--color-text-secondary)!important;font-size:var(--ui-body)!important;line-height:1.6!important;text-align:center!important;}
+    & .plantao-phone-new-chat-empty strong {font-size:var(--ui-card-title)!important;color:var(--color-text-primary)!important;}
+    & .plantao-phone-new-chat-empty span {font-size:var(--ui-secondary)!important;max-width:44ch!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-contact-wrap {display:flex!important;align-items:center!important;gap:.875rem!important;min-width:0!important;flex:1!important;}
+    & .plantao-phone-contact-avatar {flex-shrink:0!important;}
+    & .plantao-phone-contact-copy {min-width:0!important;}
+    & .plantao-phone-contact-copy * {text-align:left!important;}
+    & .plantao-phone-contact-copy strong {font-size:var(--ui-body)!important;line-height:1.4!important;white-space:normal!important;color:var(--color-text-primary)!important;}
+    & .plantao-phone-contact-copy small {font-size:var(--ui-secondary)!important;line-height:1.5!important;white-space:normal!important;margin-top:.25rem!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-chat-body {display:flex!important;flex-direction:column!important;gap:1rem!important;flex:none!important;min-height:240px!important;height:auto!important;max-height:52dvh!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain!important;padding:1.5rem!important;background:var(--color-background)!important;}
+    & .plantao-phone-bubble {flex-shrink:0!important;width:fit-content!important;max-width:min(85%,68ch)!important;margin:0!important;padding:1rem!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-card)!important;background:var(--color-surface)!important;box-shadow:none!important;color:var(--color-text-primary)!important;font-size:var(--ui-body)!important;line-height:1.6!important;overflow-wrap:anywhere!important;}
+    & .plantao-phone-bubble.incoming {align-self:flex-start!important;}
+    & .plantao-phone-bubble.outgoing {align-self:flex-end!important;background:var(--color-primary-subtle)!important;}
+    & .plantao-phone-bubble strong {display:block!important;margin:0 0 .5rem!important;color:var(--color-primary-text)!important;font-size:var(--ui-secondary)!important;line-height:1.4!important;}
+    & .plantao-phone-bubble span {font-size:inherit!important;line-height:inherit!important;color:inherit!important;}
+    & .plantao-phone-bubble small {font-size:var(--ui-caption)!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-choices {display:grid!important;gap:1rem!important;flex:none!important;min-height:0!important;max-height:36dvh!important;overflow:auto!important;margin:0!important;padding:1.25rem!important;border:0!important;border-top:1px solid var(--color-border)!important;border-radius:0!important;background:var(--color-surface)!important;box-shadow:none!important;}
+    & .plantao-phone-choices:empty {display:none!important;}
+    & .plantao-phone-choice-group > strong {display:block!important;margin:0 0 .625rem!important;font-size:var(--ui-secondary)!important;font-weight:600!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-choice-group > div {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:.625rem!important;}
+    & :is(.plantao-phone-choice-group button,.plantao-phone-resume-button) {min-height:var(--ui-control)!important;width:100%!important;padding:.75rem 1rem!important;border:1px solid var(--color-border-interactive)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-surface)!important;color:var(--color-primary-text)!important;font-size:var(--ui-secondary)!important;font-weight:500!important;line-height:1.5!important;white-space:normal!important;text-align:left!important;box-shadow:none!important;cursor:pointer!important;}
+    & .plantao-phone-choice-done {font-size:var(--ui-secondary)!important;color:var(--color-text-secondary)!important;}
+    & .plantao-phone-compose-form {display:flex!important;align-items:center!important;gap:.75rem!important;flex:none!important;position:static!important;margin:0!important;padding:1rem 1.25rem!important;border:0!important;border-top:1px solid var(--color-border)!important;background:var(--color-surface)!important;}
+    & #plantao-phone-compose-send {background:var(--color-primary)!important;border-color:var(--color-primary)!important;color:var(--color-primary-foreground)!important;}
+    & #plantao-phone-compose-send:disabled {opacity:1!important;background:var(--color-disabled-surface)!important;color:var(--color-disabled)!important;border-color:var(--color-border)!important;cursor:not-allowed!important;}
+    & .plantao-phone-resume-card {grid-column:1/-1!important;display:flex!important;flex-wrap:wrap!important;align-items:center!important;gap:1rem!important;padding:1rem!important;margin:0!important;border:1px solid var(--color-border)!important;border-radius:var(--ui-radius-control)!important;background:var(--color-primary-subtle)!important;}
+    & .plantao-phone-resume-copy {flex:1 1 220px!important;min-width:0!important;}
+    & .plantao-phone-resume-copy :is(strong,small,span) {display:block!important;color:var(--color-text-primary)!important;font-size:var(--ui-secondary)!important;line-height:1.5!important;white-space:normal!important;}
+    & .plantao-phone-resume-copy strong {font-size:var(--ui-body)!important;}
+    & .plantao-phone-resume-card button {width:auto!important;}
+    & #luriazap-learning-trail {display:flex!important;flex-wrap:wrap!important;gap:.5rem!important;padding:.875rem 1.25rem!important;overflow:visible!important;border-bottom:1px solid var(--color-border)!important;background:var(--color-surface)!important;}
+    & #luriazap-learning-trail [data-lz-stage] {font-size:var(--ui-caption)!important;line-height:1.4!important;padding:.375rem .625rem!important;border-radius:var(--ui-radius-control)!important;}
+    & :is(.plantao-module-back,.plantao-phone-conversation,.plantao-phone-choice-group button,.plantao-phone-chat-head button,#plantao-phone-search-close,.plantao-phone-resume-button):hover {background:var(--color-primary-subtle)!important;border-color:var(--color-primary-text)!important;}
+    & :is(#plantao-phone-new-chat,#plantao-phone-compose-send):enabled:hover {background:var(--color-primary-hover)!important;color:var(--color-primary-foreground)!important;}
+    & :is(button,a,input):focus-visible {outline:2px solid var(--color-focus-ring)!important;outline-offset:3px!important;}
+    & #plantao-phone-exit {display:none!important;}
+    @media(max-width:1100px) {
+      & .plantao-phone-case-list {grid-template-columns:1fr!important;}
+    }
+    @media(max-width:600px) {
+      & .luriazap-heading {margin-bottom:1.25rem!important;}
+      & .luriazap-heading h1 {font-size:1.875rem!important;}
+      & .plantao-phone-chat-head {min-height:68px!important;padding:.75rem!important;gap:.5rem!important;}
+      & #plantao-phone-new-chat span {display:none!important;}
+      & #plantao-phone-new-chat {padding:.625rem!important;}
+      & :is(.plantao-phone-inbox-toolbar,.plantao-phone-search-wrap,.plantao-phone-compose-form) {padding:.875rem!important;}
+      & .plantao-phone-case-list {padding:0 .75rem .75rem!important;gap:.75rem!important;}
+      & .plantao-phone-conversation {grid-template-columns:40px minmax(0,1fr) 16px!important;padding:.875rem .75rem!important;gap:.625rem!important;}
+      & :is(.plantao-phone-conversation-avatar,.plantao-phone-contact-avatar) {width:40px!important;height:40px!important;}
+      & .plantao-phone-conversation-top {flex-wrap:wrap!important;gap:.25rem .5rem!important;}
+      & .plantao-phone-chat-body {padding:1rem!important;max-height:50dvh!important;}
+      & .plantao-phone-bubble {max-width:94%!important;padding:.875rem!important;}
+      & .plantao-phone-choices {padding:.875rem!important;}
+      & .plantao-phone-choice-group > div {grid-template-columns:1fr!important;}
+      & #luriazap-learning-trail {padding:.75rem!important;}
+    }
+  }
+}

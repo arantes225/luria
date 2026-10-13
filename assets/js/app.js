@@ -867,16 +867,16 @@
     }
 
     .luria-pomodoro-panel {
-      color:var(--text)!important;
+      color:var(--color-text-primary,var(--text))!important;
     }
     .luria-pomodoro-panel header strong,
     .luria-pomodoro-time {
-      color:var(--text)!important;
+      color:var(--color-text-primary,var(--text))!important;
     }
     .luria-pomodoro-panel header small,
     .luria-stopwatch-note,
     .luria-pomodoro-fields label {
-      color:var(--muted)!important;
+      color:var(--color-text-secondary,var(--muted))!important;
     }
     .luria-pomodoro-panel input {
       border-color:var(--border)!important;

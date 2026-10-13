@@ -187,7 +187,7 @@ function commandCard(){
  else activityCard.appendChild(action);
 }
 function enhanceQuestion(){
- const fb=d.getElementById("qr-feedback");if(!fb)return;
+ const fb=d.getElementById("qr-feedback");if(!fb||fb.dataset.questionExtras==="off"||fb.dataset.learningEnhanced==="1")return;fb.dataset.learningEnhanced="1";
  const apply=()=>{if(fb.hidden||!$(".qr-result.wrong",fb)||$(".luria-learning-actions",fb))return;const actions=d.createElement("div");actions.className="luria-learning-actions";actions.innerHTML='<button class="luria-intel-button primary" data-learn-error>Aprender com meu erro</button><button class="luria-intel-button" data-similar>Questão semelhante</button>';fb.appendChild(actions);
  $("[data-learn-error]",actions).onclick=()=>{let box=$(".luria-learning-box",fb);if(box){box.remove();return}const justification=$(".qr-justification p",fb)?.textContent||"",tip=$(".qr-pulo p",fb)?.textContent||"",tags=all("#qr-tags .qr-tag").map(x=>x.textContent).slice(0,3).join(" · ");box=d.createElement("div");box.className="luria-learning-box";box.innerHTML='<strong>Fechando este erro</strong><p><b>Conceito:</b> '+esc(justification)+'</p><p><b>Pulo do Gato:</b> '+esc(tip)+'</p>'+(tags?'<p><b>Revisar:</b> '+esc(tags)+'</p>':"");actions.after(box)};
  $("[data-similar]",actions).onclick=()=>{const mat=d.getElementById("qr-materia")?.textContent||"",area=d.getElementById("qr-area")?.textContent||"";try{sessionStorage.setItem("luria:similar-question",JSON.stringify({mat,area,tags:all("#qr-tags .qr-tag").map(x=>x.textContent)}))}catch{}const next=d.getElementById("qr-next");if(next&&!next.disabled)next.click();else location.href="/resolver-questoes/?daily=1"};
@@ -222,7 +222,7 @@ async function liveSearch(input){
 d.addEventListener("input",e=>{if(e.target?.id!=="luria-search-input")return;clearTimeout(searchTimer);searchTimer=setTimeout(()=>liveSearch(e.target),220)},true);
 
 function relatedQuestionLinks(){
- const fb=d.getElementById("qr-feedback");if(!fb||fb.hidden||$(".luria-related-links",fb))return;
+ const fb=d.getElementById("qr-feedback");if(!fb||fb.dataset.questionExtras==="off"||fb.hidden||$(".luria-related-links",fb))return;
  const topic=(d.getElementById("qr-materia")?.textContent||all("#qr-tags .qr-tag").map(x=>x.textContent)[0]||"").trim();if(!topic)return;
  const wrap=d.createElement("div");wrap.className="luria-learning-actions luria-related-links";const q=encodeURIComponent(topic);
  wrap.innerHTML='<a class="luria-intel-button" href="/flashcards/?q='+q+'" style="text-decoration:none">Flashcards relacionados</a><a class="luria-intel-button" href="/caderno/?q='+q+'" style="text-decoration:none">Resumo / anotações</a><a class="luria-intel-button" href="/protocolos/?q='+q+'" style="text-decoration:none">Protocolos</a><a class="luria-intel-button" href="/plantao/?q='+q+'" style="text-decoration:none">Caso clínico</a>';

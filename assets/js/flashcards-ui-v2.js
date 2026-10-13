@@ -2,6 +2,19 @@
 (() => {
   const body = document.body;
   if (body?.dataset.ui !== 'v2' || body.dataset.uiContext !== 'study' || body.dataset.page !== 'flashcards') return;
+  const back = document.createElement('button');
+  back.type = 'button'; back.className = 'button secondary ui-flash-back';
+  back.textContent = '← Voltar aos flashcards'; back.hidden = true;
+  document.querySelector('[data-flash-section]')?.before(back);
+  back.addEventListener('click', () => window.luriaFlashShow?.('review'));
+  function syncBack() {
+    back.hidden = body.classList.contains('flash-review-session-active')
+      || !document.querySelector('[data-flash-section]:is([data-flash-section="create"],[data-flash-section="import"],[data-flash-section="library"]).active');
+  }
+  document.querySelectorAll('[data-flash-section]').forEach(section =>
+    new MutationObserver(syncBack).observe(section, {attributes:true,attributeFilter:['class']}));
+  new MutationObserver(syncBack).observe(body, {attributes:true,attributeFilter:['class']});
+  syncBack();
   const host = document.getElementById('flash-home-decks-list');
   const heading = document.querySelector('.flash-home-decks-head');
   if (!host || !heading) return;
