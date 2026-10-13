@@ -37,6 +37,16 @@
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+
+<style id="luria-autoteste-interativo">
+.luria-autoteste-grid{display:grid;gap:10px;margin:16px 0}
+.luria-autoteste-item{border:1px solid var(--border);border-radius:12px;background:var(--surface-2);overflow:hidden}
+.luria-autoteste-item summary{padding:13px 15px;cursor:pointer;line-height:1.5;font-size:12px;color:var(--text);list-style-position:inside}
+.luria-autoteste-item[open] summary{border-bottom:1px solid var(--border);color:var(--accent)}
+.luria-autoteste-item>p{padding:13px 15px;margin:0!important;font-size:12.6px;line-height:1.6}
+.luria-autoteste-item a{color:var(--accent);font-weight:600}
+@media(max-width:650px){.luria-autoteste-item summary,.luria-autoteste-item>p{padding:11px 12px}}
+</style>
 </head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="aprender">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -65,6 +75,7 @@
 <a class="book-outline-link" href="#diferencial">Fisiológico × doença</a>
 <a class="book-outline-link" href="#casos">Casos clínicos</a>
 <a class="book-outline-link" href="#revisao">Revisão</a>
+<a class="book-outline-link" href="#autoteste-integrador">Autoteste integrador</a>
 <a class="book-outline-link" href="#referencias">Referências</a>
 </nav></aside>
 <article class="book-main">
@@ -539,6 +550,21 @@
 </tbody></table>
 </section>
 
+
+<section id="autoteste-integrador" class="book-section">
+<h2>19. Autoteste clínico — aprender sem consultar outra apostila</h2>
+<p>Responda primeiro e abra a justificativa apenas depois. Cada questão retoma um mecanismo explicado anteriormente, para verificar se o capítulo ensina o raciocínio necessário à resolução.</p>
+<div class="luria-autoteste-grid">
+<details class="luria-autoteste-item"><summary><strong>1. Gasometria.</strong> Gestante com 29 semanas, sem sintomas e com saturação de 98%, apresenta pH 7,44, PaCO₂ de 30 mmHg e HCO₃⁻ de 20 mEq/L. Qual é a melhor interpretação?</summary><p><strong>Resposta:</strong> alcalose respiratória crônica fisiológica compensada. A progesterona estimula ventilação alveolar e os rins eliminam bicarbonato; a interpretação é dependente do quadro clínico. Uma PaCO₂ em torno de 40 mmHg numa gestante com esforço respiratório pode ser sinal de ventilação inadequada, embora seja comum em adultos não gestantes. <a href="#respiratorio">Rever sistema respiratório ↗</a></p></details>
+<details class="luria-autoteste-item"><summary><strong>2. Função renal.</strong> Gestante com 33 semanas apresenta creatinina de 1,0 mg/dL, PA de 150/96 mmHg e cefaleia recente. A referência do laboratório para mulheres não grávidas considera a creatinina normal. O que fazer?</summary><p><strong>Resposta:</strong> não tranquilizar com base no intervalo geral. A gestação aumenta a filtração e reduz a creatinina; esse valor pode indicar alteração relativa, especialmente se houve elevação basal. Hipertensão e sintomas neurológicos exigem investigação obstétrica de pré-eclâmpsia e outros diagnósticos. <a href="#renal">Rever sistema renal ↗</a> e <a href="#diferencial">fisiológico × doença ↗</a>.</p></details>
+<details class="luria-autoteste-item"><summary><strong>3. Anemia.</strong> No segundo trimestre, Hb de 10,2 g/dL, VCM de 74 fL e ferritina baixa podem ser explicados simplesmente por hemodiluição?</summary><p><strong>Resposta:</strong> não. Segundo critérios da OMS de 2024, Hb inferior a 10,5 g/dL no segundo trimestre define anemia; microcitose e ferritina baixa apoiam deficiência de ferro. Hemodiluição fisiológica e ferropenia podem coexistir, mas uma não dispensa investigação e tratamento da outra. <a href="#hematologico">Rever sistema hematológico ↗</a>.</p></details>
+<details class="luria-autoteste-item"><summary><strong>4. Plaquetas.</strong> Gestante assintomática e normotensa com 36 semanas tem plaquetas de 128 mil/µL, sem alteração hepática. Isso confirma HELLP?</summary><p><strong>Resposta:</strong> não. Trombocitopenia gestacional leve, tardia e isolada é uma possibilidade; ainda assim, comparar tendências e investigar sinais clínicos e laboratoriais. HELLP não pode ser diagnosticada apenas com plaquetas abaixo de 150 mil/µL. <a href="#hematologico">Rever plaquetas e gestação ↗</a>.</p></details>
+<details class="luria-autoteste-item"><summary><strong>5. Pele.</strong> Em 31 semanas, prurido noturno intenso em palmas e plantas, sem lesões primárias, deve ser atribuído à distensão da pele?</summary><p><strong>Resposta:</strong> não. É necessário investigar colestase intra-hepática da gestação e diferenciais, com avaliação clínica e exames pertinentes (incluindo ácidos biliares e função hepática quando indicados). A ausência de lesão primária não é tranquilizadora. <a href="#pele">Rever alterações cutâneas ↗</a>.</p></details>
+<details class="luria-autoteste-item"><summary><strong>6. Hemodinâmica.</strong> Gestante de 34 semanas fica pálida e hipotensa em decúbito dorsal; melhora ao ser colocada em posição lateral esquerda. Qual mecanismo explica e que cuidado permanece?</summary><p><strong>Resposta:</strong> compressão aortocaval, particularmente da veia cava inferior, com redução do retorno venoso e do débito cardíaco. O alívio postural favorece o diagnóstico funcional, mas sintomas persistentes, sangramento, hipóxia ou instabilidade obrigam investigação imediata de outras causas. <a href="#cardiovascular">Rever sistema cardiovascular ↗</a>.</p></details>
+</div>
+<p><strong>Como avaliar seu aprendizado:</strong> para cada resposta incorreta, volte ao subtópico indicado, explique em voz alta o mecanismo e diferencie o achado normal de um sinal de risco. Um acerto por reconhecimento de palavras não demonstra compreensão.</p>
+</section>
+
 <section id="referencias" class="book-section"><h2>Referências essenciais</h2><ol class="references">
 <li>Brasil. Ministério da Saúde. Atenção ao pré-natal de baixo risco e materiais de pré-natal/puerpério.</li>
 <li>FEBRASGO. Diretrizes e recomendações em obstetrícia.</li>
@@ -554,7 +580,9 @@
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11999002/" target="_blank" rel="noopener noreferrer">Understanding hepcidin for iron management in pregnancy (2025).</a></li>
 <li><a href="https://pubmed.ncbi.nlm.nih.gov/36527666/" target="_blank" rel="noopener noreferrer">Blood Flow and Respiratory Gas Exchange in the Human Placenta at Term (2022/2023).</a></li>
 <li><a href="https://pubmed.ncbi.nlm.nih.gov/7858729/" target="_blank" rel="noopener noreferrer">Osmoregulation, secretion and metabolism of vasopressin during pregnancy (1995).</a></li>
-<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK148970/" target="_blank" rel="noopener noreferrer">OMS. The physiological basis of breastfeeding.</a></li></ol></section>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK148970/" target="_blank" rel="noopener noreferrer">OMS. The physiological basis of breastfeeding.</a></li>
+<li><a href="https://www.merckmanuals.com/professional/gynecology-and-obstetrics/approach-to-the-pregnant-woman-and-prenatal-care/physiology-of-pregnancy" target="_blank" rel="noopener noreferrer">Merck Manual Professional, Physiology of Pregnancy (revisado em 2024). Alterações hemodinâmicas, respiratórias, hematológicas e renais.</a></li>
+<li><a href="https://www.who.int/publications-detail-redirect/9789240088542" target="_blank" rel="noopener noreferrer">OMS. Guideline on haemoglobin cutoffs to define anaemia in individuals and populations. 2024. Critérios de Hb por trimestre.</a></li></ol></section>
 </article></section></div></main></div>
 <script src="/assets/vendor/supabase-2.110.6.js"></script><script src="/assets/js/supabase.js?v=auth4"></script><script src="/assets/js/app.js?v=20261013-frame1"></script><script defer src="/assets/js/pwa.js?v=20261013-width2"></script>
 <script>(function(){const links=[...document.querySelectorAll('.book-outline-link')];const targets=links.map(l=>document.querySelector(l.getAttribute('href'))).filter(Boolean);links.forEach(l=>l.addEventListener('click',e=>{const t=document.querySelector(l.getAttribute('href'));if(!t)return;e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'',l.getAttribute('href'));}));if('IntersectionObserver' in window){const o=new IntersectionObserver(es=>{const v=es.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top)[0];if(!v)return;links.forEach(l=>l.classList.toggle('is-active',l.getAttribute('href')==='#'+v.target.id));},{rootMargin:'-18% 0px -68% 0px',threshold:[0,.05,.2]});targets.forEach(t=>o.observe(t));}})();</script>
