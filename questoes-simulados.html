@@ -17,11 +17,13 @@
   <meta name="apple-mobile-web-app-title" content="LURIA">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria2">
+<script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=1">
   <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74">
   <link rel="stylesheet" href="assets/css/questoes-simulados-v17.css?v=19.2-title-theme-bg">
 
-  <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
+<script defer src="assets/js/luria-brand-v5.js?v=12"></script>
 
   <style>
     /* =====================================================
@@ -1237,7 +1239,7 @@
     }
   </style>
   <link rel="canonical" href="/questoes-simulados/">
-  <script>(function(){try{if(location.pathname.endsWith("/questoes-simulados.html"))location.replace("/questoes-simulados/"+location.search+location.hash);}catch(e){}})();</script>
+<script>(function(){try{if(location.pathname.endsWith("/questoes-simulados.html"))location.replace("/questoes-simulados/"+location.search+location.hash);}catch(e){}})();</script>
 
 <style id="qs-home-actions-two-button-height-v2">
   /* Criar novo + Enviar novo + Biblioteca: três cards na altura aproximada de dois */
@@ -1451,14 +1453,13 @@
 
   <link rel="stylesheet" href="/assets/css/qs-error-actions.css?v=1">
 <link rel="stylesheet" href="/assets/css/consolidation-home-fit.css?v=20261006-flashcards-exact">
-  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
-  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
 
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="questoes">
-  <script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
-  <script defer src="/assets/js/ui-navigation-v2.js?v=20261011-pwa281"></script>
+<script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-css1"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -1503,19 +1504,19 @@
             <button class="qs-home-action error-home-action" type="button" data-qs-mode="add" data-action="create">
               <span class="error-home-action-icon" aria-hidden="true">＋</span>
               <span class="error-home-action-copy"><strong>Criar novo</strong><small>Monte seu próprio simulado</small></span>
-              
+
               <span class="error-home-action-arrow" aria-hidden="true">→</span>
             </button>
             <button class="qs-home-action error-home-action" type="button" data-qs-mode="add" data-action="send">
               <span class="error-home-action-icon" aria-hidden="true">↑</span>
               <span class="error-home-action-copy"><strong>Enviar novo</strong><small>Importe uma prova em PDF</small></span>
-              
+
               <span class="error-home-action-arrow" aria-hidden="true">→</span>
             </button>
             <button class="qs-home-action error-home-action" type="button" data-qs-mode="library" data-action="library">
               <span class="error-home-action-icon" aria-hidden="true">▥</span>
               <span class="error-home-action-copy"><strong>Biblioteca</strong><small>Veja suas listas e simulados</small></span>
-              
+
               <span class="error-home-action-arrow" aria-hidden="true">→</span>
             </button>
           </div>
@@ -1964,17 +1965,17 @@
     </form>
   </dialog>
 
-  <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  
-  
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
 
-  <script src="assets/js/supabase.js"></script>
-  <script src="/assets/js/weekly-content.js?v=1"></script>\n  <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
-  <script src="assets/js/study-mode.js?v=13.0"></script>
-  <script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
-  <script src="assets/js/questoes-simulados.js?v=19.4"></script>
 
-  <script>
+
+<script src="assets/js/supabase.js"></script>
+<script src="/assets/js/weekly-content.js?v=1"></script>\n<script src="/assets/js/app.js?v=20261013-css1"></script>
+<script src="assets/js/study-mode.js?v=13.0"></script>
+<script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
+<script src="assets/js/questoes-simulados.js?v=19.4"></script>
+
+<script>
     (() => {
       const openButton = document.getElementById("qs-help-open");
       const dialog = document.getElementById("qs-help-dialog");
@@ -1995,7 +1996,7 @@
     })();
   </script>
 
-  <script>
+<script>
     /* O JS principal já calcula a taxa de acerto semanal.
        Este bloco transforma esse valor na taxa de erro do terceiro card. */
     (() => {
@@ -2031,7 +2032,7 @@
       syncError();
     })();
   </script>
-  <script defer src="/assets/js/pwa.js?v=20261011-pwa281"></script>
+<script defer src="/assets/js/pwa.js?v=20261013-css1"></script>
 <script id="qs-home-actions-routing-v5">
   document.addEventListener("click", function(event){
     const action=event.target.closest(".qs-home-actions-compact .qs-home-action");

@@ -1,0 +1,56 @@
+const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
+const {chromium}=require('playwright');
+const root=path.resolve(__dirname,'..');
+const paths=[];
+function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['.git','node_modules','docs','browser-results'].includes(e.name))continue;const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.html')&&/<body[^>]*data-ui-nav="v2"/.test(fs.readFileSync(p,'utf8')))paths.push(path.relative(root,p).replaceAll('\\','/'));}}
+walk(root);
+const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript','.woff2':'font/woff2','.svg':'image/svg+xml','.png':'image/png','.json':'application/json'};
+const server=http.createServer((req,res)=>{let file=path.join(root,decodeURIComponent(req.url.split('?')[0]));if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');if(!fs.existsSync(file)){res.writeHead(404);return res.end();}res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');fs.createReadStream(file).pipe(res);});
+const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js'),'utf8')
+ .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="luria_bootstrap")return{data:null,error:null};if(name==="admin_pin_status")return{data:{has_pin:true},error:null};')
+ .replace('if(name==="is_admin")return{data:false,error:null};','if(name==="is_admin")return{data:true,error:null};');
+const failures=[],results=[];
+const targetDir=process.env.CSS_BROWSER_RESULTS||path.join(root,'browser-results/css-system');
+fs.mkdirSync(targetDir,{recursive:true});
+(async()=>{
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+const base='http://127.0.0.1:'+server.address().port;
+const browser=await chromium.launch(process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{});
+try{
+ const context=await browser.newContext({viewport:{width:1440,height:900},serviceWorkers:'block'});
+ await context.addInitScript(()=>localStorage.setItem('luria-admin-pin-unlocked-until',String(Date.now()+300000)));
+ await context.route('**/assets/js/supabase.js*',r=>r.fulfill({contentType:'application/javascript',body:fixture}));
+ await context.route('**/assets/js/onboarding.js*',r=>r.fulfill({contentType:'application/javascript',body:''}));
+ const page=await context.newPage();let missing=[];
+ page.on('response',r=>{if(r.status()>=400&&r.url().includes('/assets/css/'))missing.push(r.url())});
+ async function visit(url){missing=[];await page.goto(base+url,{waitUntil:'domcontentloaded'});await page.locator('body.app-ready').waitFor({timeout:4000}).catch(()=>{});await page.waitForTimeout(200);assert.deepEqual(missing,[],url+' CSS requests');}
+ async function bounds(label){const m=await page.evaluate(()=>{const bar=document.querySelector('.topbar'),main=document.querySelector('.main'),s=getComputedStyle(document.body);return{width:document.documentElement.scrollWidth,viewport:innerWidth,barHeight:bar?.getBoundingClientRect().height,font:getComputedStyle(bar||document.body).fontFamily,padding:main?getComputedStyle(main.querySelector('.page')||main).padding:null,base:[...document.querySelectorAll('link[rel=stylesheet]')].filter(x=>x.href.includes('/ui-app.css?')).length,text:s.getPropertyValue('--text').trim(),themeText:s.getPropertyValue('--color-text-primary').trim()};});assert(m.width<=m.viewport+2,label+' horizontal overflow');assert.equal(m.base,1,label+' CSS base');assert(m.font.includes('Luria Inter'),label+' common font');assert.equal(m.text,m.themeText,label+' themed legacy tokens');return m;}
+ for(const file of paths){try{await visit('/'+file.replace(/index\.html$/,''));const metrics=await bounds(file);results.push({file,...metrics});}catch(error){failures.push({file,error:error.message})}if((results.length+failures.length)%10===0)console.log('CSS pages',results.length+failures.length,'/',paths.length);}
+ // Representative interactions and four palette combinations. Real application
+ // handlers run against an isolated synthetic account, with no production writes.
+ for(const viewport of [{width:1920,height:900},{width:390,height:844},{width:320,height:700}]){
+  await page.setViewportSize(viewport);
+  for(const url of ['/dashboard/','/cronograma/','/flashcards/','/caderno/','/plantao/luriazap/','/plantao/sala-emergencia/','/trabalho/','/trabalho/pcr/']){
+   try{await visit(url);await bounds(url+' '+viewport.width);
+    for(const [appearance,identity]of [['light','blue'],['dark','blue'],['light','pink'],['dark','pink']]){
+     await page.evaluate(({appearance,identity})=>{document.body.dataset.uiAppearance=appearance;document.body.dataset.uiIdentity=identity},{appearance,identity});await bounds(url+' '+appearance+' '+identity);
+    }
+    await page.evaluate(()=>{document.body.dataset.uiAppearance='light';document.body.dataset.uiIdentity='blue'});
+    const trigger=page.locator('#menu-open');
+    if(await trigger.isVisible()){
+     await trigger.click();await page.waitForTimeout(270);
+     if(viewport.width<981){assert(await page.locator('body').evaluate(e=>e.classList.contains('sidebar-open')));await page.keyboard.press('Escape');assert(!(await page.locator('body').evaluate(e=>e.classList.contains('sidebar-open'))));}
+     else{assert.equal(await page.locator('body').getAttribute('data-ui-sidebar'),'collapsed');await trigger.click();await page.waitForTimeout(270);}
+    }
+    await page.locator('#luria-profile-toggle').click();await page.locator('#luria-profile-menu').waitFor({state:'visible'});await bounds(url+' profile');await page.keyboard.press('Escape');
+    if(viewport.width===1920&&url==='/dashboard/')await page.screenshot({path:path.join(targetDir,'dashboard-desktop.png')});
+    if(viewport.width===390&&url==='/dashboard/')await page.screenshot({path:path.join(targetDir,'dashboard-mobile.png')});
+   }catch(error){failures.push({file:url,viewport,error:error.message})}
+  }
+ }
+ await page.setViewportSize({width:844,height:390});await visit('/plantao/sala-emergencia/');await page.evaluate(()=>document.body.classList.add('luria-case-landscape'));assert.equal(await page.locator('.topbar').evaluate(e=>getComputedStyle(e).display),'none','landscape case keeps immersive navigation');
+ fs.writeFileSync(path.join(targetDir,'results.json'),JSON.stringify({pages:paths.length,results,failures},null,2));
+ assert.deepEqual(failures,[]);console.log('PASS',paths.length,'pages, 3 responsive sizes, four palettes, drawer/profile controls and emergency landscape');
+ await context.close();
+}finally{await browser.close();server.close();}
+})().catch(error=>{console.error(error);server.close();process.exitCode=1});

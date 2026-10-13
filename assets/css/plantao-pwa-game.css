@@ -7,15 +7,15 @@
     background:#06182d;
   }
 
-  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .sidebar,
+  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   .pwa-standalone body:has(#plantao-simulator:not([hidden])) .sidebar-backdrop,
-  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .topbar,
+  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   .pwa-standalone body:has(#plantao-simulator:not([hidden])) .plantao-patient-card{
     display:none!important;
   }
 
-  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .app-shell,
-  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .main,
+  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  .pwa-standalone body:has(#plantao-simulator:not([hidden])) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   .pwa-standalone body:has(#plantao-simulator:not([hidden])) .page.plantao-page{
     width:100%!important;
     max-width:none!important;

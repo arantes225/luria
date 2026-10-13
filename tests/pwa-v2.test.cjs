@@ -25,8 +25,8 @@ test('installed v2 uses web responsive CSS instead of obsolete standalone overri
   assert.equal(document.documentElement.classList.contains('pwa-v2-standalone'), true);
   assert.equal(document.documentElement.classList.contains('pwa-standalone'), false);
   assert.equal(document.documentElement.dataset.pwa, 'standalone');
-  assert.ok(document.getElementById('luria-pwa-v2-safe-area'));
-  assert.match(document.getElementById('luria-pwa-v2-safe-area').textContent, /safe-area-inset-top/);
+  assert.equal(document.getElementById('luria-pwa-v2-safe-area'),null);
+  assert.match(fs.readFileSync('assets/css/ui-v2-foundations.css','utf8'), /safe-area-inset-top/);
   assert.doesNotMatch(document.querySelector('meta[name="viewport"]').content, /user-scalable=no|maximum-scale=1/);
   const click = new dom.window.MouseEvent('dblclick', { bubbles: true, cancelable: true });
   document.getElementById('action').dispatchEvent(click);
@@ -102,7 +102,7 @@ test('every redesigned core page loads the current PWA updater', () => {
   ];
   for (const page of paths) {
     const markup = fs.readFileSync(page, 'utf8');
-    assert.match(markup, /pwa\.js\?v=20261011-pwa281/, page);
+    assert.match(markup, /pwa\.js\?v=20261013-css1/, page);
     assert.match(markup, /data-ui-nav="v2"/, page);
   }
 });
@@ -112,7 +112,7 @@ test('installed PWA actively checks and offers current service worker on resume'
   assert.match(pwaSource, /luria-pwa-update-action/);
   assert.match(pwaSource, /updateViaCache:\s*"none"/);
   const worker = fs.readFileSync('service-worker.js', 'utf8');
-  assert.match(worker, /luria-pwa-v282-cache-security/);
+  assert.match(worker, /luria-pwa-css-unified-20261013/);
 });
 
 test('hidden search overlays cannot hold the dashboard inert', () => {

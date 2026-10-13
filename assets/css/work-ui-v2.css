@@ -1010,7 +1010,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
     line-height: 1.6 !important;
   }
 
-   html body[data-page="trabalho_bulario"] .drug-list {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-list {
      display: grid !important;
      align-content: start !important;
      gap: 7px !important;
@@ -1023,16 +1023,16 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      scrollbar-width: thin !important;
      scrollbar-color: var(--color-border-interactive) transparent !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-list::-webkit-scrollbar {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-list::-webkit-scrollbar {
      width: 8px;
    }
-   html body[data-page="trabalho_bulario"] .drug-list::-webkit-scrollbar-thumb {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-list::-webkit-scrollbar-thumb {
      border: 2px solid transparent;
      border-radius: 999px;
      background: var(--color-border-interactive);
      background-clip: padding-box;
    }
-   html body[data-page="trabalho_bulario"] .drug-row {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row {
      display: flex !important;
      align-items: center !important;
      justify-content: flex-start !important;
@@ -1050,20 +1050,20 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      box-shadow: none !important;
      transition: background-color .15s ease,border-color .15s ease,box-shadow .15s ease !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-row:hover {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row:hover {
      border-color: var(--color-border-interactive) !important;
      background: var(--color-surface-elevated) !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-row[aria-current="true"] {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row[aria-current="true"] {
      border-color: var(--color-primary) !important;
      background: var(--color-primary-subtle) !important;
      box-shadow: inset 3px 0 var(--color-primary) !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-row:focus-visible {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row:focus-visible {
      outline: 3px solid var(--color-focus-ring) !important;
      outline-offset: 2px !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-row-content {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row-content {
      display: grid !important;
      justify-items: start !important;
      gap: 3px !important;
@@ -1071,7 +1071,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      min-width: 0 !important;
      text-align: left !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-row-content>strong {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row-content>strong {
      display: block !important;
      min-width: 0 !important;
      color: var(--color-text-primary) !important;
@@ -1081,7 +1081,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      text-align: left !important;
      overflow-wrap: anywhere !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-row-content>small {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row-content>small {
      display: flex !important;
      flex-wrap: wrap !important;
      align-items: baseline !important;
@@ -1094,12 +1094,12 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      line-height: 1.4 !important;
      text-align: left !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-row-description,
-   html body[data-page="trabalho_bulario"] .drug-row-presentations {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row-description,
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row-presentations {
      display: inline-block !important;
      min-width: 0 !important;
    }
-   html body[data-page="trabalho_bulario"] .bulario-mobile-detail-bar {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .bulario-mobile-detail-bar {
      display: flex !important;
      align-items: center !important;
      justify-content: space-between !important;
@@ -1108,7 +1108,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      padding-bottom: 12px !important;
      border-bottom: 1px solid var(--color-border) !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-back-button {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-back-button {
      display: inline-flex !important;
      align-items: center !important;
      justify-content: center !important;
@@ -1128,15 +1128,15 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      cursor: pointer !important;
      transition: background-color .15s ease,border-color .15s ease,box-shadow .15s ease !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-back-button:hover {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-back-button:hover {
      border-color: var(--color-primary) !important;
      background: var(--color-primary-subtle) !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-back-button:focus-visible {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-back-button:focus-visible {
      outline: 3px solid var(--color-focus-ring) !important;
      outline-offset: 2px !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-back-button svg {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-back-button svg {
      display: block !important;
      width: 18px !important;
      height: 18px !important;
@@ -1147,14 +1147,14 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      stroke-linecap: round !important;
      stroke-linejoin: round !important;
    }
-   html body[data-page="trabalho_bulario"] .bulario-mobile-detail-bar>strong {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .bulario-mobile-detail-bar>strong {
      min-width: 0 !important;
      color: var(--color-text-primary) !important;
      font-size: 14px !important;
      line-height: 1.4 !important;
      overflow-wrap: anywhere !important;
    }
-   html body[data-page="trabalho_bulario"] .drug-detail {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-detail {
      align-content: start !important;
      gap: 18px !important;
      min-width: 0 !important;
@@ -1163,18 +1163,18 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      background: var(--color-surface) !important;
      color: var(--color-text-primary) !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-detail-head {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-detail-head {
      display: grid !important;
      gap: 6px !important;
      min-width: 0 !important;
      padding-bottom: 14px !important;
      border-bottom: 1px solid var(--color-border) !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-detail-head .drug-kicker {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-detail-head .drug-kicker {
      font-size: 12px !important;
      line-height: 1.4 !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-detail-head h2 {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-detail-head h2 {
      margin: 0 !important;
      color: var(--color-text-primary) !important;
      font-size: clamp(22px,2.2vw,30px) !important;
@@ -1183,20 +1183,20 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      letter-spacing: -.02em !important;
      overflow-wrap: anywhere !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-detail-head .drug-sub {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-detail-head .drug-sub {
      margin: 0 !important;
      color: var(--color-text-secondary) !important;
      font-size: 14px !important;
      line-height: 1.5 !important;
      overflow-wrap: anywhere !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-bridge-actions {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-bridge-actions {
      display: flex !important;
      align-items: center !important;
      gap: 10px !important;
      margin: 0 !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-bridge-actions button {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-bridge-actions button {
      display: inline-flex !important;
      align-items: center !important;
      justify-content: center !important;
@@ -1214,37 +1214,37 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      text-align: center !important;
      overflow-wrap: anywhere !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-bridge-actions button.secondary {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-bridge-actions button.secondary {
      border-color: var(--color-border-interactive) !important;
      background: var(--color-surface-elevated) !important;
      color: var(--color-text-primary) !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-bridge-actions button:focus-visible {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-bridge-actions button:focus-visible {
      outline: 3px solid var(--color-focus-ring) !important;
      outline-offset: 2px !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-section {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-section {
      gap: 10px !important;
      min-width: 0 !important;
      padding-top: 16px !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-section-head h3,
-   html body[data-page="trabalho_bulario"] .rx-presentations-head h3 {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-section-head h3,
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-presentations-head h3 {
      color: var(--color-text-primary) !important;
      font-size: 18px !important;
      line-height: 1.3 !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-section-head span,
-   html body[data-page="trabalho_bulario"] .rx-presentations-head span {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-section-head span,
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-presentations-head span {
      color: var(--color-text-secondary) !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-card,
-   html body[data-page="trabalho_bulario"] .rx-posology,
-   html body[data-page="trabalho_bulario"] .rx-field {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-card,
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-posology,
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-field {
      min-width: 0 !important;
      max-width: 100% !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-presentation-layout {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-presentation-layout {
      display: grid !important;
      grid-template-columns: minmax(0, 1fr) !important;
      grid-auto-rows: max-content !important;
@@ -1256,7 +1256,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      height: auto !important;
      overflow: visible !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-presentation-layout > .rx-section {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-presentation-layout > .rx-section {
      display: grid !important;
      grid-template-columns: minmax(0, 1fr) !important;
      grid-auto-rows: max-content !important;
@@ -1265,7 +1265,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      height: auto !important;
      overflow: visible !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-presentation-tabs {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-presentation-tabs {
      display: grid !important;
      grid-template-columns: minmax(0, 1fr) !important;
      grid-auto-rows: max-content !important;
@@ -1276,7 +1276,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      height: auto !important;
      overflow: visible !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-presentation-tab {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-presentation-tab {
      position: relative !important;
      box-sizing: border-box !important;
      align-items: center !important;
@@ -1285,13 +1285,13 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      height: auto !important;
      margin: 0 !important;
    }
-   html body[data-page="trabalho_bulario"] .rx-presentation-tab span {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-presentation-tab span {
      flex: 1 1 auto !important;
      min-width: 0 !important;
      line-height: 1.4 !important;
      overflow-wrap: anywhere !important;
    }
-   html body[data-page="trabalho_bulario"] #rx-active-presentation {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] #rx-active-presentation {
      display: block !important;
      position: relative !important;
      align-self: start !important;
@@ -1302,7 +1302,7 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      margin: 0 !important;
      overflow: visible !important;
    }
-   html body[data-page="trabalho_bulario"] #rx-active-presentation > .rx-presentation {
+   html body[data-ui-work="v2"][data-page="trabalho_bulario"] #rx-active-presentation > .rx-presentation {
      display: grid !important;
      grid-template-columns: minmax(0, 1fr) !important;
      grid-auto-rows: max-content !important;
@@ -1314,41 +1314,41 @@ body[data-ui-work="v2"] .main:has(.ui-page-heading,.luria-page-spotlight) :is(.d
      overflow: visible !important;
    }
    @media (max-width:760px) {
-     html body[data-page="trabalho_bulario"] .drug-list {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-list {
        max-height: min(34vh,280px) !important;
      }
-     html.pwa-standalone body[data-page="trabalho_bulario"] .drug-list {
+     html.pwa-standalone body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-list {
        max-height: none !important;
        overflow: visible !important;
      }
-     html body[data-page="trabalho_bulario"] .drug-row {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row {
        min-height: 52px !important;
        padding: 8px 10px !important;
      }
-     html body[data-page="trabalho_bulario"] .drug-row-content>strong {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row-content>strong {
        font-size: 13px !important;
      }
-     html body[data-page="trabalho_bulario"] .drug-row-content>small {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-row-content>small {
        font-size: 11px !important;
      }
-     html body[data-page="trabalho_bulario"] .drug-detail {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-detail {
        gap: 14px !important;
        padding: 16px !important;
      }
-     html.pwa-standalone body[data-page="trabalho_bulario"] .drug-detail {
+     html.pwa-standalone body[data-ui-work="v2"][data-page="trabalho_bulario"] .drug-detail {
        background: var(--bg) !important;
      }
-     html body[data-page="trabalho_bulario"] .rx-detail-head {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-detail-head {
        padding-bottom: 12px !important;
      }
-     html body[data-page="trabalho_bulario"] .rx-detail-head h2 {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-detail-head h2 {
        font-size: 23px !important;
      }
-     html body[data-page="trabalho_bulario"] .rx-bridge-actions {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-bridge-actions {
        align-items: stretch !important;
        flex-direction: column !important;
      }
-     html body[data-page="trabalho_bulario"] .rx-bridge-actions button {
+     html body[data-ui-work="v2"][data-page="trabalho_bulario"] .rx-bridge-actions button {
        width: 100% !important;
      }
    }

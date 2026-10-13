@@ -72,7 +72,8 @@ test('all authenticated Work pages share the hub adapter and preserve the public
  for(const path of paths) {
   const html=fs.readFileSync(path,'utf8');
   assert.match(html,/data-ui-work-navigation="hub"/);
-  assert.ok(html.indexOf('work-navigation.css')<html.indexOf('ui-navigation-v2.css'));
+  const css=require('../scripts/check-css.cjs').stylesForPage(path);
+  assert.ok(css.findIndex(href=>href.includes('/work-navigation.css'))<css.findIndex(href=>href.includes('/ui-navigation-v2.css')));
  }
  assert.doesNotMatch(fs.readFileSync('trabalho/prontuario/index.html','utf8'),/work-navigation|data-ui-work-navigation/);
 });

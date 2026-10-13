@@ -1,14 +1,14 @@
 /* LURIA Flashcards v61 — revisão estrutural da página
    Camada final e isolada para impedir sobreposição entre regras históricas. */
 
-body[data-page="flashcards"] .page{
+body[data-page="flashcards"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   width:100%!important;
   max-width:1320px!important;
   min-width:0!important;
   padding-bottom:28px!important;
 }
 
-body[data-page="flashcards"] .topbar{
+body[data-page="flashcards"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   margin-bottom:14px!important;
 }
 
@@ -253,13 +253,13 @@ body[data-page="flashcards"] .rating-actions{
 
 /* mobile / PWA */
 @media(max-width:700px){
-  body[data-page="flashcards"] .page{
+  body[data-page="flashcards"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-left:12px!important;
     padding-right:12px!important;
     padding-bottom:22px!important;
   }
 
-  body[data-page="flashcards"] .topbar{
+  body[data-page="flashcards"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-bottom:10px!important;
   }
 

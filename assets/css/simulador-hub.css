@@ -1524,8 +1524,8 @@ html[data-theme="leila-mood"] .sim-hub-page .sim-hero-zap{
     max-height:100dvh!important;
     overflow:hidden!important;
   }
-  body[data-page="plantao"] .app-shell,
-  body[data-page="plantao"] .main,
+  body[data-page="plantao"] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="plantao"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="plantao"] .sim-hub-page{
     min-height:0!important;
     max-height:100dvh!important;

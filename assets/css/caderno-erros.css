@@ -3417,7 +3417,7 @@ body[data-page="erros"] .error-metric-card{
 
 /* v18.19 — Caderno de Erros alinhado ao espaçamento do Dashboard */
 @media(min-width:981px){
-  body[data-page="erros"] .topbar{
+  body[data-page="erros"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:48px!important;
     height:48px!important;
     max-height:48px!important;
@@ -3436,7 +3436,7 @@ body[data-page="erros"] .error-metric-card{
 
 /* v18.20 — respiro do topo igual ao Dashboard */
 @media(min-width:981px){
-  body[data-page="erros"] .topbar{
+  body[data-page="erros"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:48px!important;
     height:48px!important;
     max-height:48px!important;
@@ -3448,7 +3448,7 @@ body[data-page="erros"] .error-metric-card{
 
 /* v18.21 — regra final real: espaço visual Dashboard */
 @media(min-width:981px){
-  body[data-page="erros"] .page > .topbar{
+  body[data-page="erros"] .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:48px!important;
     min-height:48px!important;
     max-height:48px!important;
@@ -3463,10 +3463,10 @@ body[data-page="erros"] .error-metric-card{
 
 /* v18.22 — topo autoritativo igual ao Dashboard */
 @media(min-width:981px){
-  body[data-page="erros"] .page{
+  body[data-page="erros"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:62px!important;
   }
-  body[data-page="erros"] .page > .topbar{
+  body[data-page="erros"] .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:absolute!important;
     top:0!important;
     height:48px!important;
@@ -3483,10 +3483,10 @@ body[data-page="erros"] .error-metric-card{
 
 /* v18.23 — topo final conforme referência visual */
 @media(min-width:981px){
-  body[data-page="erros"] .page{
+  body[data-page="erros"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:0!important;
   }
-  body[data-page="erros"] .page > .topbar{
+  body[data-page="erros"] .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     inset:auto!important;
     height:72px!important;

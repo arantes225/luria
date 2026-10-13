@@ -134,7 +134,7 @@
 
 /* LURIA v58 — topbar estático e uniforme */
 @media (min-width:981px){
-  body:not([data-page="dashboard"]) .topbar{
+  body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:60px!important;
     height:auto!important;
     margin:0 0 16px!important;
@@ -211,7 +211,7 @@ body[data-page="caderno"] .notebook-save-status{
   margin:0!important;
   pointer-events:none!important;
 }
-body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
+body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   margin:0 0 16px!important;
 }
 
@@ -297,7 +297,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .topbar{
 }
 
 /* O cabeçalho é o elemento fixado; o bloco pertence a ele. */
-.topbar{
+.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:sticky!important;
   top:0!important;
   z-index:240!important;
@@ -353,8 +353,8 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 /* Desktop: altura real do cabeçalho comporta os controles sem sobreposição. */
 @media(min-width:981px){
-  body .topbar,
-  body:not([data-page="dashboard"]) .topbar{
+  body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:60px!important;
     height:auto!important;
     margin:0 0 16px!important;
@@ -364,8 +364,8 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 /* Mobile/PWA: segue integrado ao topo, sem translate ou posição flutuante. */
 @media(max-width:980px){
-  .topbar,
-  html.pwa-standalone body .topbar{
+  .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  html.pwa-standalone body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:sticky!important;
     top:0!important;
     min-height:58px!important;
@@ -394,7 +394,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
     --luria-top-controls-right:max(34px, calc((100vw - 1320px) / 2));
   }
 
-  .topbar{
+  .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     top:auto!important;
     z-index:240!important;
@@ -428,9 +428,9 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    Timer + notificações + perfil permanecem presos ao cabeçalho.
    ========================================================= */
 @media(min-width:981px){
-  body .topbar,
-  body:not([data-page="dashboard"]) .topbar,
-  body[data-page="dashboard"] .topbar{
+  body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:sticky!important;
     top:0!important;
     z-index:240!important;
@@ -450,8 +450,8 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 }
 
 @media(max-width:980px){
-  body .topbar,
-  html.pwa-standalone body .topbar{
+  body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  html.pwa-standalone body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:sticky!important;
     top:0!important;
     z-index:240!important;
@@ -543,7 +543,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    Card começa em 90px (28 + 48 + 14)
    ========================================================= */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .topbar{
+  body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:48px!important;
     height:48px!important;
     max-height:48px!important;
@@ -564,7 +564,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    Card inicia a 104px do topo da área principal.
    ========================================================= */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .topbar{
+  body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:48px!important;
     height:48px!important;
     max-height:48px!important;
@@ -576,7 +576,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 /* v70 — regra final de distância desktop */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .page > .topbar{
+  body:not([data-page="dashboard"]) .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:48px!important;
     min-height:48px!important;
     max-height:48px!important;
@@ -596,16 +596,16 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    card: 14px abaixo => início em 90px
    ========================================================= */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .main{
+  body:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
   }
 
-  body:not([data-page="dashboard"]) .page{
+  body:not([data-page="dashboard"]) .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     padding-top:62px!important; /* 48px controles + 14px gap */
   }
 
-  body:not([data-page="dashboard"]) .page > .topbar{
+  body:not([data-page="dashboard"]) .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:absolute!important;
     top:0!important;
     left:0!important;
@@ -656,11 +656,11 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    Controles no fluxo, acima do card, sem flutuar.
    ========================================================= */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .page{
+  body:not([data-page="dashboard"]) .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:0!important;
   }
 
-  body:not([data-page="dashboard"]) .page > .topbar{
+  body:not([data-page="dashboard"]) .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     inset:auto!important;
     display:flex!important;
@@ -751,11 +751,11 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    Mantém tamanhos e alinhamento horizontal já aprovados.
    ========================================================= */
 @media(min-width:981px){
-  body:not([data-page="dashboard"]) .main{
+  body:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:18px!important;
   }
 
-  body:not([data-page="dashboard"]) .page > .topbar{
+  body:not([data-page="dashboard"]) .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     inset:auto!important;
     height:60px!important;
@@ -810,7 +810,7 @@ body[data-page="dashboard"] .topbar .luria-notifications{
    Remove superfícies brancas estruturais para revelar o pattern global.
    ========================================================= */
 @media(min-width:981px){
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .page > .topbar{
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     top:auto!important;
     right:auto!important;
@@ -848,9 +848,9 @@ body[data-page="dashboard"] .topbar .luria-notifications{
 
 /* O Cronograma não cria uma folha branca sobre o fundo global da LURIA. */
 body[data-page="cronograma"]:not(.schedule-settings-embed),
-body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell,
-body[data-page="cronograma"]:not(.schedule-settings-embed) .main,
-body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-page="cronograma"]:not(.schedule-settings-embed) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-page="cronograma"]:not(.schedule-settings-embed) .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   background-color:transparent!important;
   background-image:none!important;
 }
@@ -860,16 +860,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
 body[data-page="cronograma"]:not(.schedule-settings-embed){
   background:var(--bg)!important;
 }
-body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell,
-body[data-page="cronograma"]:not(.schedule-settings-embed) .main,
-body[data-page="cronograma"]:not(.schedule-settings-embed) .page{
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-page="cronograma"]:not(.schedule-settings-embed) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-page="cronograma"]:not(.schedule-settings-embed) .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   background:transparent!important;
 }
 
 /* Replica no shell do Cronograma o MESMO pattern global da LURIA.
    Necessário porque o app-shell fica acima dos pseudo-elementos do body. */
-body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::before,
-body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
   content:""!important;
   position:fixed!important;
   inset:-14%!important;
@@ -881,11 +881,11 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   transform:rotate(-8deg) scale(1.08)!important;
   transform-origin:center!important;
 }
-body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::before{
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
   background-position:0 0!important;
   opacity:var(--luria-pattern-opacity)!important;
 }
-body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
   background-position:calc(var(--luria-pattern-size) / 2) calc(var(--luria-pattern-size) / 2)!important;
   opacity:var(--luria-pattern-opacity)!important;
 }
@@ -905,7 +905,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 @media (min-width:981px){
   html,body{background:var(--bg)!important}
 
-  body .app-shell{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
@@ -921,7 +921,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* faixa superior azul contínua */
-  body .app-shell::before{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     position:absolute!important;
     inset:0 0 auto 0!important;
@@ -933,10 +933,10 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* remove qualquer moldura/pseudo legado */
-  body .app-shell::after{content:none!important;display:none!important}
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{content:none!important;display:none!important}
 
   /* interior branco encaixado */
-  body #sidebar.sidebar{
+  body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     top:auto!important;
     left:auto!important;
@@ -957,7 +957,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     box-shadow:none!important;
   }
 
-  body .main{
+  body .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:2!important;
     min-width:0!important;
@@ -968,7 +968,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     overflow:visible!important;
   }
 
-  body .page{
+  body .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     max-width:none!important;
     width:100%!important;
     margin:0!important;
@@ -1023,12 +1023,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   body .sidebar-backdrop{
     display:none!important;
   }
-  body.sidebar-hidden .app-shell,
-  body.sidebar-collapsed .app-shell{
+  body.sidebar-hidden .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.sidebar-collapsed .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     grid-template-columns:270px minmax(0,1fr)!important;
   }
-  body.sidebar-hidden #sidebar.sidebar,
-  body.sidebar-collapsed #sidebar.sidebar{
+  body.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:none!important;
     opacity:1!important;
     pointer-events:auto!important;
@@ -1045,9 +1045,9 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* Topbar flutuante dentro da faixa azul */
-  body .topbar,
-  body:not([data-page="dashboard"]) .topbar,
-  body[data-page="dashboard"] .topbar{
+  body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body:not([data-page="dashboard"]) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:absolute!important;
     top:calc(-1 * var(--luria-shell-top) + 7px)!important;
     left:0!important;
@@ -1108,38 +1108,38 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   body .topbar svg{stroke:currentColor!important}
 
   /* arredondamento do interior inferior, mantendo só o filete azul externo */
-  body #sidebar.sidebar,
-  body .main{
+  body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     box-shadow:0 0 0 1px rgba(15,103,238,.04)!important;
   }
 }
 
 /* PWA/mobile preservado: mantém o comportamento móvel existente. */
 @media (max-width:980px){
-  body .app-shell{margin:0!important}
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){margin:0!important}
 }
 
 
 
 /* LURIA HOSTINGER SHELL — EXTERNAL BLUE FILL v3 — 2026-10-04 */
 @media (min-width:981px){
-  body .app-shell{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:hidden!important;
     border-radius:24px!important;
     background:linear-gradient(90deg,#184888,#184888)!important;
   }
 
-  body .app-shell::before{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     border-radius:24px 24px 0 0!important;
   }
 
   /* Restaura a curva branca interna; o azul fica apenas por trás dela. */
-  body #sidebar.sidebar{
+  body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 18px!important;
     overflow:hidden!important;
   }
 
-  body .main{
+  body .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:0 18px 18px 0!important;
     overflow:hidden!important;
   }
@@ -1162,10 +1162,10 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 }
 
 @media (min-width:981px){
-  body .app-shell{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
   }
-  body .app-shell::before{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
   }
 }
@@ -1186,8 +1186,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 @media (min-width:981px){
   html,
   body,
-  body .app-shell,
-  body .app-shell::before{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:var(--luria-shell-theme)!important;
     background-color:var(--luria-shell-theme)!important;
     background-image:none!important;
@@ -1209,8 +1209,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 @media (min-width:981px){
   html,
   body,
-  body .app-shell,
-  body .app-shell::before{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:var(--luria-shell-theme)!important;
     background-color:var(--luria-shell-theme)!important;
     background-image:none!important;
@@ -1220,7 +1220,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 
 /* LURIA TOPBAR — CONTROLS ON SHELL BLUE v7 — 2026-10-04 */
 @media (min-width:981px){
-  body .topbar{
+  body .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:transparent!important;
   }
 
@@ -1267,12 +1267,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 @media (min-width:981px){
   html,
   body,
-  body .app-shell,
-  body .app-shell::before,
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout],
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:var(--luria-shell-theme)!important;
     background-color:var(--luria-shell-theme)!important;
     background-image:none!important;
@@ -1650,7 +1650,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     overflow:hidden!important;
   }
 
-  body .app-shell{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
@@ -1672,7 +1672,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     box-sizing:border-box!important;
   }
 
-  body .app-shell::before{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -1689,13 +1689,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:0!important;
   }
 
-  body .app-shell::after{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
   /* Sidebar fixa no shell: apenas o conteúdo principal rola. */
-  body #sidebar.sidebar,
+  body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body #sidebar.sidebar.luria-global-shell-sidebar{
     position:relative!important;
     inset:auto!important;
@@ -1724,13 +1724,13 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:2!important;
   }
 
-  body.sidebar-hidden .app-shell,
-  body.sidebar-collapsed .app-shell{
+  body.sidebar-hidden .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.sidebar-collapsed .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     grid-template-columns:270px minmax(0,1fr)!important;
   }
 
-  body.sidebar-hidden #sidebar.sidebar,
-  body.sidebar-collapsed #sidebar.sidebar{
+  body.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:none!important;
     translate:none!important;
     opacity:1!important;
@@ -1806,7 +1806,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* Conteúdo principal branco com a mesma moldura interna. */
-  body .main{
+  body .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:2!important;
     width:auto!important;
@@ -1827,8 +1827,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     box-sizing:border-box!important;
   }
 
-  body .main > .page,
-  body .page{
+  body .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:1320px!important;
     min-width:0!important;
@@ -1838,7 +1838,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* Topbar portalizada na faixa azul, igual à do Dashboard. */
-  body .app-shell > .topbar,
+  body .app-shell > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body .app-shell > .topbar.dashboard-shell-topbar,
   body .app-shell > .topbar.luria-global-shell-topbar{
     position:absolute!important;
@@ -1997,12 +1997,12 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 @media (min-width:981px){
   /* A borda branca externa não rola. O scroll acontece dentro da página,
      recuado da curva direita, igual ao padrão aprovado no Dashboard. */
-  body .main{
+  body .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:hidden!important;
     padding-right:6px!important;
   }
 
-  body .main > .page{
+  body .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:calc(100% - 12px)!important;
     max-width:calc(100% - 12px)!important;
     height:100%!important;
@@ -2017,7 +2017,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* Somente o thumb: sem trilho, fundo, setas ou canto. */
-  body .main > .page{
+  body .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     scrollbar-width:thin!important;
     scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
   }
@@ -2065,7 +2065,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 
 /* No mobile/PWA, mantém o comportamento nativo para não alterar gestos. */
 @media (max-width:980px){
-  body .main > .page{
+  body .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     scrollbar-width:auto;
   }
 }
@@ -2074,7 +2074,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 /* LURIA GLOBAL SHELL — APPROVED SIZE + WHITE BRAND v72 — 2026-10-04 */
 @media (min-width:981px){
   /* Tamanho aprovado do container: topo 10px, laterais/base 5px. */
-  body .app-shell{
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:auto!important;
     max-width:none!important;
     height:calc(100dvh - 15px)!important;
@@ -2090,7 +2090,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* Mantém a área branca ocupando toda a largura interna disponível. */
-  body #sidebar.sidebar{
+  body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:auto!important;
     min-width:0!important;
     height:100%!important;
@@ -2101,7 +2101,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background-clip:padding-box!important;
   }
 
-  body .main{
+  body .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:auto!important;
     max-width:none!important;
     height:100%!important;
@@ -2236,8 +2236,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background:var(--luria-master-shell,#184888)!important;
   }
 
-  body.luria-global-shell-mounted > .app-shell,
-  body.luria-global-shell-mounted .app-shell{
+  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
@@ -2256,7 +2256,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     box-sizing:border-box!important;
   }
 
-  body.luria-global-shell-mounted .app-shell::before{
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -2271,14 +2271,14 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:0!important;
   }
 
-  body.luria-global-shell-mounted .app-shell::after{
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar{
+  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     position:relative!important;
     inset:auto!important;
@@ -2304,7 +2304,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:2!important;
   }
 
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     position:relative!important;
     width:auto!important;
@@ -2324,7 +2324,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:2!important;
   }
 
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     width:calc(100% - 12px)!important;
     max-width:calc(100% - 12px)!important;
@@ -2521,8 +2521,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 @media (min-width:981px){
   /* A moldura externa deve ser totalmente estática. */
   body.luria-global-shell-mounted,
-  body.luria-global-shell-mounted .app-shell,
-  body.luria-global-shell-mounted .app-shell::before{
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     transform:none!important;
     translate:none!important;
     animation:none!important;
@@ -2540,8 +2540,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   :root[data-theme="dark"] body.luria-global-shell-mounted,
-  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell,
-  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell::before{
+  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:#142A44!important;
     background-color:#142A44!important;
     background-image:none!important;
@@ -2550,7 +2550,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* O pattern passa a existir SOMENTE dentro do painel principal. */
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     overflow:hidden!important;
@@ -2558,7 +2558,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background-image:none!important;
   }
 
-  body.luria-global-shell-mounted .main::before{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -2575,30 +2575,30 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     transition:none!important;
   }
 
-  :root[data-theme="dark"] body.luria-global-shell-mounted .main::before{
+  :root[data-theme="dark"] body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=inner-pattern-v77")!important;
     background-size:132px 132px!important;
     background-position:0 0!important;
     opacity:.038!important;
   }
 
-  :root[data-theme="leila-mood"] body.luria-global-shell-mounted .main::before{
+  :root[data-theme="leila-mood"] body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=inner-pattern-v77")!important;
     background-size:132px 132px!important;
     background-position:0 0!important;
     opacity:.024!important;
   }
 
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:1!important;
     background:transparent!important;
   }
 
   /* Nada pode animar a borda/cantos externos no tema escuro. */
-  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell,
-  :root[data-theme="dark"] body.luria-global-shell-mounted #sidebar.sidebar,
-  :root[data-theme="dark"] body.luria-global-shell-mounted .main{
+  :root[data-theme="dark"] body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     outline:0!important;
     box-shadow:none!important;
     transition:none!important;
@@ -2610,7 +2610,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 /* LURIA GLOBAL CONTENT PATTERN — EXACT DASHBOARD v78 — 2026-10-04 */
 @media (min-width:981px){
   /* Fora do Dashboard, replica EXATAMENTE o pattern aprovado da página inicial. */
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main{
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     background-color:var(--surface)!important;
@@ -2626,7 +2626,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background-position:0 0,0 0,69px 69px!important;
   }
 
-  :root[data-theme="dark"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main{
+  :root[data-theme="dark"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       linear-gradient(
         color-mix(in srgb,var(--surface) 92%,transparent),
@@ -2636,7 +2636,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
       url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37")!important;
   }
 
-  :root[data-theme="leila-mood"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main{
+  :root[data-theme="leila-mood"] body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       linear-gradient(
         color-mix(in srgb,var(--surface) 92.5%,transparent),
@@ -2647,8 +2647,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* Remove o pattern alternativo que tinha sido colocado via pseudo-elemento. */
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main::before,
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main::after{
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
     background:none!important;
@@ -2657,7 +2657,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* O conteúdo fica acima do fundo, como no Dashboard. */
-  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main > .page{
+  body.luria-global-shell-mounted:not([data-page="dashboard"]) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:1!important;
     background:transparent!important;
@@ -2668,18 +2668,18 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 
 /* LURIA v80 — conteúdo sempre acima da camada de pattern/logos */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
   }
 
-  body.luria-global-shell-mounted .main::before,
-  body.luria-global-shell-mounted .main::after{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     z-index:0!important;
     pointer-events:none!important;
   }
 
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:10!important;
     isolation:isolate!important;
@@ -2695,28 +2695,28 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
 /* LURIA v81 — corrige a fita inferior global do shell.
    O painel principal agora ocupa a base inteira; a borda azul não corta o último callout. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted > .app-shell,
-  body.luria-global-shell-mounted .app-shell{
+  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-bottom:0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar,
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
   }
 
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:0 18px 21px 0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar{
+  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 21px!important;
   }
 
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:20!important;
     padding-bottom:18px!important;
@@ -2734,23 +2734,23 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
    A faixa azul inferior deixa de recortar o conteúdo: o painel branco cobre a base
    e a rolagem acontece dentro da página, acima do fundo decorativo. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted > .app-shell,
-  body.luria-global-shell-mounted .app-shell{
+  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     /* azul só no topo; não existe mais pintura azul na base do shell */
     background:transparent!important;
     padding-bottom:0!important;
     overflow:visible!important;
   }
 
-  body.luria-global-shell-mounted .app-shell::before{
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     /* mantém apenas a faixa azul superior */
     z-index:0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar,
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     /* os painéis internos passam a ocupar até a borda inferior real */
     align-self:stretch!important;
     height:auto!important;
@@ -2759,16 +2759,16 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:2!important;
   }
 
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:hidden!important;
     border-radius:0 18px 24px 0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar{
+  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 24px!important;
   }
 
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     max-height:100%!important;
     min-height:0!important;
@@ -2792,7 +2792,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
    janela menor, deixando uma faixa fixa acima e abaixo. O scrollport agora
    ocupa 100% da altura; o respiro passa para dentro da própria página. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:0!important;
     padding-bottom:0!important;
     border-top:0!important;
@@ -2801,7 +2801,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     box-shadow:none!important;
   }
 
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     max-height:100%!important;
     min-height:0!important;
@@ -2823,8 +2823,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     box-sizing:border-box!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::before,
-  body.luria-global-shell-mounted .main > .page::after{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
@@ -2836,14 +2836,14 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
    Assim não existe faixa fixa superior/inferior atravessando os callouts. */
 @media (min-width:981px){
   /* Restaura o shell normal: a alteração anterior na base não era a causa. */
-  body.luria-global-shell-mounted > .app-shell,
-  body.luria-global-shell-mounted .app-shell{
+  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:var(--luria-master-shell,#184888)!important;
     overflow:hidden!important;
   }
 
   /* Mesmo princípio do Dashboard 1: a camada que contém os cards não os recorta. */
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     height:100%!important;
@@ -2861,7 +2861,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* A página vira apenas conteúdo em fluxo normal, sem viewport próprio. */
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     width:calc(100% - 12px)!important;
     max-width:calc(100% - 12px)!important;
@@ -2887,8 +2887,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* Igual ao Dashboard 1: decoração atrás, conteúdo sempre à frente. */
-  body.luria-global-shell-mounted .main::before,
-  body.luria-global-shell-mounted .main::after{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     z-index:0!important;
     pointer-events:none!important;
   }
@@ -2898,8 +2898,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     z-index:1;
   }
 
-  body.luria-global-shell-mounted .main > .page::before,
-  body.luria-global-shell-mounted .main > .page::after{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
@@ -2939,8 +2939,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     background:var(--luria-master-shell,#184888)!important;
   }
 
-  body.luria-global-shell-mounted > .app-shell,
-  body.luria-global-shell-mounted .app-shell{
+  body.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
@@ -2960,24 +2960,24 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* filete azul igual dos dois lados e também na base */
-  body.luria-global-shell-mounted #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar,
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
     align-self:stretch!important;
     margin:0!important;
   }
 
-  body.luria-global-shell-mounted #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar,
-  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar{
+  body.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.luria-global-shell-mounted.sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 18px!important;
   }
 
   /* o container branco NÃO rola */
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     padding:0!important;
@@ -2991,7 +2991,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
   }
 
   /* somente o conteúdo interno rola; sem criar uma segunda "janela" */
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:20!important;
     display:block!important;
@@ -3018,8 +3018,8 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
     scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
   }
 
-  body.luria-global-shell-mounted .main > .page::before,
-  body.luria-global-shell-mounted .main > .page::after{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
@@ -3115,7 +3115,7 @@ body *::-webkit-scrollbar-button:end{
    Mantém a barra dentro do callout/painel branco, sem tocar a moldura azul.
    O trilho fica totalmente transparente para não deformar a borda direita. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:calc(100% - 8px)!important;
     max-width:calc(100% - 8px)!important;
     margin:0 8px 0 0!important;
@@ -3155,14 +3155,14 @@ body *::-webkit-scrollbar-button:end{
    A barra fica alguns pixels para dentro da borda arredondada, nunca sobre o filete azul.
    Trilho/canto continuam totalmente transparentes. */
 @media (min-width:981px){
-  body.luria-global-shell-mounted .main{
+  body.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-right:6px!important;
     background-color:var(--surface)!important;
     overflow:hidden!important;
     box-sizing:border-box!important;
   }
 
-  body.luria-global-shell-mounted .main > .page{
+  body.luria-global-shell-mounted .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:100%!important;
     height:100%!important;
@@ -3212,7 +3212,7 @@ body #sidebar.sidebar #luria-brand-logo{
 
 /* LURIA v88 — rodapé da sidebar: geometria autoritativa */
 @media (min-width:981px){
-  body #sidebar.sidebar{
+  body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:sticky!important;
     top:0!important;
     height:100dvh!important;
@@ -3287,7 +3287,7 @@ body #sidebar.sidebar #luria-brand-logo{
 }
 
 @media(max-width:980px){
-  html.pwa-standalone body #sidebar.sidebar{
+  html.pwa-standalone body #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:fixed!important;
     top:0!important;
     height:100dvh!important;
@@ -3406,7 +3406,7 @@ body *::-webkit-scrollbar-button:end{
 @media (min-width:981px){
   /* Dashboard: a sidebar deve medir o painel branco real, não 100dvh.
      Isso impede Ofensiva + botão Estudos de descerem quando o chrome global monta. */
-  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body.luria-global-shell-mounted[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     top:auto!important;
     bottom:auto!important;
@@ -3444,7 +3444,7 @@ body *::-webkit-scrollbar-button:end{
     background-image:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell{
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:var(--luria-shell-theme,#184888)!important;
     background-color:var(--luria-shell-theme,#184888)!important;
     background-image:none!important;
@@ -3453,7 +3453,7 @@ body *::-webkit-scrollbar-button:end{
     box-shadow:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::before{
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     background:var(--luria-shell-theme,#184888)!important;
@@ -3461,20 +3461,20 @@ body *::-webkit-scrollbar-button:end{
     background-image:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell::after{
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) #sidebar.sidebar{
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:var(--sidebar)!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main{
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-color:var(--surface)!important;
   }
 
-  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page{
+  body.luria-global-shell-mounted[data-page="cronograma"]:not(.schedule-settings-embed) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:transparent!important;
   }
 }
@@ -3558,8 +3558,8 @@ html body:not(.schedule-settings-embed) :is(
   .daily-hero-copy,
   .stats-hero-copy
 ) > :is(strong,h1,h2),
-html body .page-heading h1,
-html body .friends-ref-hero-copy > h1{
+  html body .page-heading h1,
+  html body .friends-ref-hero-copy > h1{
   margin:0!important;
   padding:0!important;
   font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important;

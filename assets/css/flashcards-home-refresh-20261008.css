@@ -91,9 +91,9 @@
  html:has(body[data-page="flashcards"].flash-home-fixed){
    height:auto!important;min-height:100dvh!important;max-height:none!important;overflow-y:auto!important;
  }
- body[data-page="flashcards"].flash-home-fixed .app-shell,
- body[data-page="flashcards"].flash-home-fixed .main,
- body[data-page="flashcards"].flash-home-fixed .page{
+ body[data-page="flashcards"].flash-home-fixed .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+ body[data-page="flashcards"].flash-home-fixed .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+ body[data-page="flashcards"].flash-home-fixed .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
    max-height:none!important;overflow:visible!important;
  }
 }
@@ -179,7 +179,7 @@
    The .page is the containing block. The two lower panels stay fully sized
    and end 8px above its lower edge, with the same desktop column proportions. */
 @media (min-width:981px) {
- body[data-page="flashcards"]:not(.flash-review-session-active) .page{
+ body[data-page="flashcards"]:not(.flash-review-session-active) .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
    position:relative!important;
    isolation:isolate!important;
  }

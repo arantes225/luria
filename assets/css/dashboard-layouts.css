@@ -57,7 +57,7 @@ body[data-dashboard-layout]{
   touch-action:pan-y;
   background:var(--bg);
 }
-body[data-dashboard-layout] .app-shell{
+body[data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   width:100%;
   max-width:100vw;
   height:100vh;
@@ -65,7 +65,7 @@ body[data-dashboard-layout] .app-shell{
   min-height:0;
   overflow:hidden;
 }
-body[data-dashboard-layout] .main{
+body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   min-width:0;
   width:100%;
   max-width:100%;
@@ -78,32 +78,32 @@ body[data-dashboard-layout] .main{
   -webkit-overflow-scrolling:touch;
   touch-action:pan-y;
 }
-body[data-dashboard-layout] .page,
+body[data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body[data-dashboard-layout] #dashboard-alternative,
 body[data-dashboard-layout] .dl-grid,
 body[data-dashboard-layout] .dl-card{
   min-width:0;
   max-width:100%;
 }
-body[data-dashboard-layout] .main::before,
-body[data-dashboard-layout] .main::after{
+body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
   overflow:hidden;
   clip-path:inset(0);
 }
 
-body[data-dashboard-layout] .main{
+body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:relative;
   isolation:isolate;
   padding:28px 28px 40px;
   background:transparent;
 }
-body[data-dashboard-layout] .main::before,
-body[data-dashboard-layout] .main::after{
+body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
   content:none!important;
   display:none!important;
 }
-body[data-dashboard-layout] .page{max-width:1500px}
-body[data-dashboard-layout] .topbar{
+body[data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){max-width:1500px}
+body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:relative;
   height:0;
   min-height:0;
@@ -283,8 +283,8 @@ body[data-dashboard-layout] .dl-greeting{
 .dl-layout-4 .dl-upcoming,.dl-layout-4 .dl-streak{min-height:280px}
 .dl-layout-4 .dl-areas,.dl-layout-4 .dl-cat{grid-column:1/-1}
 @media(max-width:1100px){.dl-layout-2{grid-template-columns:repeat(2,minmax(0,1fr))}.dl-layout-2 .dl-areas,.dl-layout-2 .dl-cat{grid-column:1/-1}.dl-layout-3{grid-template-columns:repeat(2,minmax(0,1fr))}.dl-layout-3 .dl-overview{grid-column:span 2}.dl-layout-3 .dl-performance{grid-column:span 1}.dl-metrics{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:980px){body[data-dashboard-layout] .app-shell{grid-template-columns:1fr}body[data-dashboard-layout] .sidebar{position:fixed;box-shadow:0 12px 35px #092a4644}body[data-dashboard-layout] .topbar .menu-open{display:grid;place-items:center}}
-@media(max-width:700px){body[data-dashboard-layout] .main{padding:0 14px 30px}body[data-dashboard-layout] .topbar{margin:0 -14px;padding:0 14px;height:62px;min-height:62px}.dl-topbar-controls{gap:6px}.dl-stopwatch{display:none}.dl-pomodoro{height:39px;padding:0 6px;gap:4px}.dl-pomodoro-settings{right:-30px}.dl-avatar{display:none}#dashboard-alternative{padding-top:16px}.dl-greeting{margin:0 1px 16px}.dl-greeting p{font-size:13px}.dl-greeting time{display:none}.dl-card{padding:16px}.dl-layout-1,.dl-layout-2,.dl-layout-3,.dl-layout-4{grid-template-columns:1fr}.dl-layout-1 .dl-areas,.dl-layout-1 .dl-cat,.dl-layout-2 .dl-areas,.dl-layout-2 .dl-cat,.dl-layout-3 .dl-overview,.dl-layout-3 .dl-performance,.dl-layout-4 .dl-areas,.dl-layout-4 .dl-cat,.dl-metrics{grid-column:1}.dl-layout-1 .dl-side{grid-template-rows:auto auto}.dl-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.dl-metric{min-height:95px}.dl-area-row{grid-template-columns:minmax(85px,120px) minmax(0,1fr) 36px;gap:7px}.dl-area-row small{display:none}.dl-overview-body{flex-wrap:wrap}.dl-performance-grid{grid-template-columns:repeat(2,1fr)}.dl-activity{grid-template-columns:43px 9px minmax(0,1fr) 35px;gap:6px}.dl-start span{display:none}.dashboard-layout-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:980px){body[data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){grid-template-columns:1fr}body[data-dashboard-layout] .sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){position:fixed;box-shadow:0 12px 35px #092a4644}body[data-dashboard-layout] .topbar .menu-open{display:grid;place-items:center}}
+@media(max-width:700px){body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){padding:0 14px 30px}body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){margin:0 -14px;padding:0 14px;height:62px;min-height:62px}.dl-topbar-controls{gap:6px}.dl-stopwatch{display:none}.dl-pomodoro{height:39px;padding:0 6px;gap:4px}.dl-pomodoro-settings{right:-30px}.dl-avatar{display:none}#dashboard-alternative{padding-top:16px}.dl-greeting{margin:0 1px 16px}.dl-greeting p{font-size:13px}.dl-greeting time{display:none}.dl-card{padding:16px}.dl-layout-1,.dl-layout-2,.dl-layout-3,.dl-layout-4{grid-template-columns:1fr}.dl-layout-1 .dl-areas,.dl-layout-1 .dl-cat,.dl-layout-2 .dl-areas,.dl-layout-2 .dl-cat,.dl-layout-3 .dl-overview,.dl-layout-3 .dl-performance,.dl-layout-4 .dl-areas,.dl-layout-4 .dl-cat,.dl-metrics{grid-column:1}.dl-layout-1 .dl-side{grid-template-rows:auto auto}.dl-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.dl-metric{min-height:95px}.dl-area-row{grid-template-columns:minmax(85px,120px) minmax(0,1fr) 36px;gap:7px}.dl-area-row small{display:none}.dl-overview-body{flex-wrap:wrap}.dl-performance-grid{grid-template-columns:repeat(2,1fr)}.dl-activity{grid-template-columns:43px 9px minmax(0,1fr) 35px;gap:6px}.dl-start span{display:none}.dashboard-layout-options{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 
 /* =========================================================
@@ -299,20 +299,20 @@ body[data-dashboard-layout] *::after{
   box-sizing:border-box;
 }
 
-body[data-dashboard-layout] .app-shell{
+body[data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   width:100%;
   max-width:100%;
   overflow:hidden!important;
 }
 
-body[data-dashboard-layout] .main{
+body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   width:auto!important;
   min-width:0!important;
   max-width:100%!important;
   overflow-x:hidden!important;
 }
 
-body[data-dashboard-layout] .page,
+body[data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body[data-dashboard-layout] #dashboard-alternative,
 body[data-dashboard-layout] .dl-grid,
 body[data-dashboard-layout] .dl-layout-1,
@@ -328,7 +328,7 @@ body[data-dashboard-layout] .dl-performance-grid{
   max-width:100%!important;
 }
 
-body[data-dashboard-layout] .topbar{
+body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:relative!important;
   height:0!important;
   min-height:0!important;
@@ -349,27 +349,27 @@ body[data-dashboard-layout] .topbar .dl-avatar{
 }
 
 @media (min-width:981px){
-  body[data-dashboard-layout] .app-shell{
+  body[data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     grid-template-columns:270px minmax(0,1fr)!important;
   }
-  body[data-dashboard-layout] .main{
+  body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:auto!important;
     max-width:none!important;
   }
 }
 
 @media (max-width:980px){
-  body[data-dashboard-layout] .app-shell{
+  body[data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     grid-template-columns:minmax(0,1fr)!important;
   }
-  body[data-dashboard-layout] .main{
+  body[data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:100vw!important;
   }
 }
 
 @media (max-width:700px){
-  body[data-dashboard-layout] .topbar{
+  body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:0!important;
     min-height:0!important;
     max-height:0!important;
@@ -383,7 +383,7 @@ body[data-dashboard-layout] .topbar .dl-avatar{
 
 
 /* Dashboard Estudos — faixa compacta de controles: Pomodoro, notificações e conta. */
-body[data-dashboard-layout] .topbar{
+body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:flex!important;
   align-items:center!important;
   justify-content:flex-end!important;
@@ -426,7 +426,7 @@ body[data-dashboard-layout="4"] .topbar .page-heading .dl-heading-subtitle{
   line-height:1.35!important;
   font-weight:500!important;
 }
-body[data-dashboard-layout="4"] .topbar{
+body[data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   height:70px!important;
   min-height:70px!important;
   max-height:70px!important;
@@ -500,7 +500,7 @@ body[data-dashboard-layout] #dashboard-alternative{
   color:var(--danger);
 }
 @media(max-width:700px){
-  body[data-dashboard-layout] .topbar{
+  body[data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:58px!important;
     min-height:58px!important;
     max-height:58px!important;
@@ -519,11 +519,11 @@ body[data-dashboard-layout] #dashboard-alternative{
 
 
 /* Dashboard Estudos — cabeçalho flutuante sem faixa de fundo. */
-body[data-dashboard-layout="1"] .topbar,
-body[data-dashboard-layout="2"] .topbar,
-body[data-dashboard-layout="3"] .topbar,
-body[data-dashboard-layout="4"] .topbar,
-body[data-dashboard-layout="5"] .topbar{
+body[data-dashboard-layout="1"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="2"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="3"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="5"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   background:transparent!important;
   background-color:transparent!important;
   border:0!important;
@@ -532,25 +532,25 @@ body[data-dashboard-layout="5"] .topbar{
   -webkit-backdrop-filter:none!important;
 }
 
-body[data-dashboard-layout="1"] .topbar::before,
-body[data-dashboard-layout="1"] .topbar::after,
-body[data-dashboard-layout="2"] .topbar::before,
-body[data-dashboard-layout="2"] .topbar::after,
-body[data-dashboard-layout="3"] .topbar::before,
-body[data-dashboard-layout="3"] .topbar::after,
-body[data-dashboard-layout="4"] .topbar,
-body[data-dashboard-layout="5"] .topbar::before,
-body[data-dashboard-layout="4"] .topbar,
-body[data-dashboard-layout="5"] .topbar::after{
+body[data-dashboard-layout="1"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="1"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+body[data-dashboard-layout="2"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="2"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+body[data-dashboard-layout="3"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="3"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+body[data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="5"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="5"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
   content:none!important;
   display:none!important;
 }
 
-body[data-dashboard-layout="1"] .topbar,
-body[data-dashboard-layout="2"] .topbar,
-body[data-dashboard-layout="3"] .topbar,
-body[data-dashboard-layout="4"] .topbar,
-body[data-dashboard-layout="5"] .topbar{
+body[data-dashboard-layout="1"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="2"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="3"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="5"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   justify-content:flex-end!important;
 }
 
@@ -597,34 +597,34 @@ body[data-dashboard-layout="5"] .dl-pomodoro{
 
 
 /* Dashboard Estudos — cobertura total do padrão nos cantos após rotação. */
-body[data-dashboard-layout="1"] .main::before,
-body[data-dashboard-layout="1"] .main::after,
-body[data-dashboard-layout="2"] .main::before,
-body[data-dashboard-layout="2"] .main::after,
-body[data-dashboard-layout="3"] .main::before,
-body[data-dashboard-layout="3"] .main::after,
-body[data-dashboard-layout="4"] .main::before,
-body[data-dashboard-layout="4"] .main::after,
-body[data-dashboard-layout="5"] .main::before,
-body[data-dashboard-layout="5"] .main::after{
+body[data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+body[data-dashboard-layout="2"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="2"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+body[data-dashboard-layout="3"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="3"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+body[data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+body[data-dashboard-layout="5"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-dashboard-layout="5"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
   inset:-14%!important;
   transform:rotate(-8deg) scale(1.18)!important;
   clip-path:none!important;
 }
 
-body[data-dashboard-layout="1"] .main,
-body[data-dashboard-layout="2"] .main,
-body[data-dashboard-layout="3"] .main,
-body[data-dashboard-layout="4"] .main,
-body[data-dashboard-layout="5"] .main{
+body[data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="2"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="3"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="5"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   background:transparent!important;
   background-image:none!important;
 }
 
-body[data-dashboard-layout="1"] .page,
-body[data-dashboard-layout="2"] .page,
-body[data-dashboard-layout="3"] .page,
-body[data-dashboard-layout="4"] .page{
+body[data-dashboard-layout="1"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="2"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="3"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="4"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:relative;
   z-index:0;
 }
@@ -634,7 +634,7 @@ body[data-dashboard-layout="4"] .page{
 body[data-dashboard-layout="1"] .topbar .luria-notifications,
 body[data-dashboard-layout="2"] .topbar .luria-notifications,
 body[data-dashboard-layout="3"] .topbar .luria-notifications,
-body[data-dashboard-layout="4"] .topbar,
+body[data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body[data-dashboard-layout="5"] .topbar .luria-notifications{
   margin-right:8px!important;
 }
@@ -744,11 +744,11 @@ body[data-dashboard-layout="5"] .dl-account .dl-avatar{
 
 
 /* Dashboard Estudos — acabamento final sem background próprio. */
-body[data-dashboard-layout="1"] .main,
-body[data-dashboard-layout="2"] .main,
-body[data-dashboard-layout="3"] .main,
-body[data-dashboard-layout="4"] .main,
-body[data-dashboard-layout="5"] .main{
+body[data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="2"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="3"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-dashboard-layout="5"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   padding-bottom:16px!important;
   overscroll-behavior-y:none!important;
 }
@@ -769,15 +769,15 @@ body[data-dashboard-layout="4"] .dl-grid{
 
 /* Nenhum layout alternativo desenha pattern próprio.
    O fundo é exclusivamente o global de style.css, igual ao Cronograma. */
-body[data-page="dashboard"][data-dashboard-layout] .main,
-body[data-page="dashboard"][data-dashboard-layout] .page,
+body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   background:transparent!important;
   background-image:none!important;
 }
 
-body[data-page="dashboard"][data-dashboard-layout] .main::before,
-body[data-page="dashboard"][data-dashboard-layout] .main::after,
+body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
 body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::before,
 body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::after{
   content:none!important;
@@ -790,10 +790,10 @@ body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::after
    DASHBOARD OPTION 5 — REFERÊNCIA
    Composição fiel à referência enviada pelo usuário.
    ========================================================= */
-body[data-dashboard-layout="5"] .main{
+body[data-dashboard-layout="5"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   padding-bottom:16px!important;
 }
-body[data-dashboard-layout="5"] .page{max-width:none!important}
+body[data-dashboard-layout="5"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){max-width:none!important}
 body[data-dashboard-layout="5"] #dashboard-alternative{padding:0!important}
 
 .dl5-shell{
@@ -1034,18 +1034,18 @@ body[data-dashboard-layout="5"]{
   height:100%;
   overflow:hidden!important;
 }
-body[data-dashboard-layout="5"] .app-shell{
+body[data-dashboard-layout="5"] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   height:100vh!important;
   height:100dvh!important;
   overflow:hidden!important;
 }
-body[data-dashboard-layout="5"] .main{
+body[data-dashboard-layout="5"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   height:100vh!important;
   height:100dvh!important;
   overflow:hidden!important;
   overscroll-behavior:none!important;
 }
-body[data-dashboard-layout="5"] .page,
+body[data-dashboard-layout="5"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body[data-dashboard-layout="5"] #dashboard-alternative{
   height:100%!important;
   min-height:0!important;
@@ -1086,7 +1086,7 @@ body[data-dashboard-layout="5"] .dl5-bottom > .dl5-card{min-height:0;overflow:hi
 
 
 /* Dashboard 5 — ajuste fino do topo e encaixe exato da faixa inferior. */
-body[data-dashboard-layout="5"] .topbar{
+body[data-dashboard-layout="5"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   height:46px!important;
   min-height:46px!important;
   max-height:46px!important;
@@ -1569,7 +1569,7 @@ body[data-dashboard-layout="4"] .dl-layout-4 .dl-cat-content{
 
 
 /* Dashboards — usar exclusivamente o cabeçalho global LURIA (Timer + sino + L). */
-body[data-page="dashboard"][data-dashboard-layout] .topbar{
+body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:flex!important;
   visibility:visible!important;
   opacity:1!important;
@@ -1635,14 +1635,14 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
     height:100dvh!important;
     overflow:hidden!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout="4"] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout="4"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="4"] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100vh!important;
     height:100dvh!important;
     min-height:0!important;
     overflow:hidden!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout="4"] .page{
+  body[data-page="dashboard"][data-dashboard-layout="4"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
     overflow:hidden!important;
@@ -1721,7 +1721,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .menu-open{
   }
 }
 @media(max-width:700px){
-  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:58px!important;
     min-height:58px!important;
     max-height:58px!important;
@@ -2077,14 +2077,14 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-to
     overflow:hidden !important;
   }
 
-  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .app-shell {
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) {
     height:100vh !important;
     height:100dvh !important;
     min-height:0 !important;
     overflow:hidden !important;
   }
 
-  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .main {
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) {
     height:100vh !important;
     height:100dvh !important;
     min-height:0 !important;
@@ -2095,7 +2095,7 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-to
       max(8px, env(safe-area-inset-bottom)) !important;
   }
 
-  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .page {
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) {
     height:100% !important;
     min-height:0 !important;
     max-width:100% !important;
@@ -2107,7 +2107,7 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .topbar .luria-profile-to
     padding-bottom:max(16px, env(safe-area-inset-bottom)) !important;
   }
 
-  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar {
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) {
     position:sticky !important;
     top:0 !important;
     z-index:240 !important;
@@ -2464,10 +2464,10 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>str
 /* Dashboard 4 — respiro vertical do cabeçalho e conteúdo.
    Mantém o eyebrow totalmente visível e separa a frase dos callouts. */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="4"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:42px!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout="4"] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:88px!important;
     min-height:88px!important;
     max-height:88px!important;
@@ -2488,10 +2488,10 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-streak-value-hero>str
   }
 }
 @media (max-width:980px){
-  body[data-page="dashboard"][data-dashboard-layout="4"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:24px!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout="4"] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:auto!important;
     min-height:104px!important;
     max-height:none!important;
@@ -2551,9 +2551,9 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-today-scroll .dl-acti
 
 /* v39 — PWA dashboard 4: geometria mobile estabilizada */
 @media (max-width:760px){
-  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .main{width:100%!important;min-width:0!important;padding:calc(env(safe-area-inset-top) + 8px) 10px calc(env(safe-area-inset-bottom) + 18px)!important;overflow-x:hidden!important}
-  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .page{width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:0!important}
-  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .topbar{position:relative!important;width:100%!important;min-width:0!important;min-height:58px!important;height:auto!important;padding:4px 0 8px!important;gap:8px!important}
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){width:100%!important;min-width:0!important;padding:calc(env(safe-area-inset-top) + 8px) 10px calc(env(safe-area-inset-bottom) + 18px)!important;overflow-x:hidden!important}
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:0!important}
+  html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){position:relative!important;width:100%!important;min-width:0!important;min-height:58px!important;height:auto!important;padding:4px 0 8px!important;gap:8px!important}
   html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] #dashboard-alternative{width:100%!important;max-width:100%!important;min-width:0!important;padding:8px 0 0!important;margin:0!important;overflow:visible!important}
   html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4,
   html.pwa-standalone body[data-page="dashboard"][data-dashboard-layout="4"] .dl-layout-4>*,
@@ -3529,7 +3529,7 @@ body[data-page="dashboard"] .dl-cat .dl-card-heading h3{
 
 
 /* Dashboard v55 — controles do topo presos ao cabeçalho, sem flutuar */
-body[data-page="dashboard"][data-dashboard-layout] .topbar{
+body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:relative!important;
   top:auto!important;
   height:60px!important;
@@ -3566,7 +3566,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
   display:none!important;
 }
 @media(max-width:980px){
-  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:58px!important;
     height:58px!important;
     padding:5px 0!important;
@@ -3583,10 +3583,10 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
 
 /* Dashboard v56 — sobe o conjunto inteiro da página */
 @media(min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:18px!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-top:-6px!important;
     margin-bottom:10px!important;
   }
@@ -3598,10 +3598,10 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
   }
 }
 @media(max-width:980px){
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-top:8px!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-top:-4px!important;
     margin-bottom:8px!important;
   }
@@ -3794,7 +3794,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
 
 /* Dashboard 1 v58 — ergonomia compacta e viewport sem scroll */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow-y:hidden!important;
     padding-bottom:12px!important;
   }
@@ -4031,7 +4031,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .dl-avatar{
 
 
 /* Dashboard v60 — controles superiores ancorados; nunca flutuantes */
-body[data-page="dashboard"][data-dashboard-layout] .topbar{
+body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:relative!important;
   top:auto!important;
   right:auto!important;
@@ -4338,7 +4338,7 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
 
 /* Dashboard v61 — mesma largura útil das demais páginas */
 @media (min-width:981px){
-  body[data-page="dashboard"] .page{
+  body[data-page="dashboard"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:1320px!important;
     margin-left:auto!important;
@@ -4358,10 +4358,10 @@ body[data-page="dashboard"][data-dashboard-layout] .topbar .luria-profile-toggle
 
 /* Dashboard v62 — trava a largura após a ativação tardia do layout */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-width:0!important;
   }
-  body[data-page="dashboard"][data-dashboard-layout] .page{
+  body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:auto!important;
     max-width:1320px!important;
     margin-left:auto!important;
@@ -4533,7 +4533,7 @@ body[data-page="dashboard"][data-dashboard-layout="2"] .dl-layout-2{
 
 /* Dashboard 2 v2 — cabe inteiro na viewport desktop sem rolagem */
 @media(min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="2"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="2"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow-y:hidden!important;
   }
   body[data-page="dashboard"][data-dashboard-layout="2"] #dashboard-alternative{
@@ -4992,8 +4992,8 @@ body[data-page="dashboard"][data-dashboard-layout="4"] .dl-agenda-study-split{
 #dashboard-alternative .dl5-next>.dl-study-now{
   margin:16px;
 }
-html body[data-page="dashboard"][data-dashboard-layout="2"] .main,
-html body[data-page="dashboard"][data-dashboard-layout="5"] .main{
+html body[data-page="dashboard"][data-dashboard-layout="2"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+html body[data-page="dashboard"][data-dashboard-layout="5"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   overflow-y:auto!important;
 }
 body[data-dashboard-layout="2"] #dashboard-alternative,
@@ -5011,10 +5011,10 @@ body[data-dashboard-layout="5"] #dashboard-alternative,
 }
 
 /* Allow enlarged controls to remain reachable on short screens. */
-html body[data-page="dashboard"][data-dashboard-layout] .main{
+html body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   overflow-y:auto!important;
 }
-html body[data-page="dashboard"][data-dashboard-layout] .page,
+html body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   height:auto!important;
   max-height:none!important;
@@ -5044,7 +5044,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background:var(--bg)!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
@@ -5060,7 +5060,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     box-shadow:0 12px 34px rgba(15,103,238,.18)!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -5074,12 +5074,12 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     z-index:0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::after{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     top:auto!important;
     left:auto!important;
@@ -5100,7 +5100,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     box-shadow:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:2!important;
     width:auto!important;
@@ -5116,13 +5116,13 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     box-shadow:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .page{
+  body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:static!important;
     width:100%!important;
     max-width:none!important;
@@ -5145,7 +5145,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   /* Faixa superior flutuante, sem criar espaço azul extra */
-  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:absolute!important;
     top:-58px!important;
     left:0!important;
@@ -5260,13 +5260,13 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     display:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout].sidebar-hidden .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout].sidebar-collapsed .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout].sidebar-hidden .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout].sidebar-collapsed .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     grid-template-columns:270px minmax(0,1fr)!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout].sidebar-hidden #sidebar.sidebar,
-  body[data-page="dashboard"][data-dashboard-layout].sidebar-collapsed #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout].sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout].sidebar-collapsed #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:none!important;
     opacity:1!important;
     pointer-events:auto!important;
@@ -5284,13 +5284,13 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* DASHBOARD — EXTERNAL BLUE FILL / INTERNAL ROUNDED v4 — 2026-10-04 */
 @media (min-width:981px){
   /* O shell externo é completamente azul, inclusive atrás dos cantos arredondados internos. */
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:linear-gradient(90deg,#184888,#184888)!important;
     overflow:hidden!important;
     border-radius:24px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -5303,13 +5303,13 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   /* Mantém os cantos internos do conteúdo arredondados. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 18px!important;
     overflow:hidden!important;
     background:var(--sidebar)!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:0 18px 18px 0!important;
     overflow:hidden!important;
     background:var(--surface)!important;
@@ -5327,10 +5327,10 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   /* Garante que nenhum pseudo-elemento do conteúdo pinte por fora da curva interna. */
-  body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after,
-  body[data-page="dashboard"][data-dashboard-layout] .page::before,
-  body[data-page="dashboard"][data-dashboard-layout] .page::after,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+  body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
   body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::before,
   body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative::after{
     content:none!important;
@@ -5351,7 +5351,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background:#184888!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:linear-gradient(90deg,#184888,#184888)!important;
   }
 }
@@ -5378,8 +5378,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     background:var(--luria-shell-theme)!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:linear-gradient(90deg,var(--luria-shell-theme),var(--luria-shell-theme-2))!important;
   }
 }
@@ -5400,8 +5400,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 @media (min-width:981px){
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout],
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:var(--luria-shell-theme)!important;
     background-color:var(--luria-shell-theme)!important;
     background-image:none!important;
@@ -5423,8 +5423,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 @media (min-width:981px){
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout],
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:var(--luria-shell-theme)!important;
     background-color:var(--luria-shell-theme)!important;
     background-image:none!important;
@@ -5436,22 +5436,22 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 @media (min-width:981px){
   /* Faz o painel branco ganhar mais largura para os lados,
      mantendo apenas um filete azul fino externo. */
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-left:3px!important;
     padding-right:3px!important;
     padding-bottom:3px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-left:0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-right:0!important;
   }
 
   /* Controles superiores ficam visualmente na faixa azul. */
-  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     top:-59px!important;
     left:0!important;
     right:0!important;
@@ -5542,12 +5542,12 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 @media (min-width:981px){
   html,
   body,
-  body .app-shell,
-  body .app-shell::before,
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout],
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:var(--luria-shell-theme)!important;
     background-color:var(--luria-shell-theme)!important;
     background-image:none!important;
@@ -5558,11 +5558,11 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* DASHBOARD MASTER — TOPBAR VISIBLE + WHITE LOGO v11 — 2026-10-04 */
 @media (min-width:981px){
   /* O topo fica fora da área branca sem ser cortado. */
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:visible!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .page{
+  body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:visible!important;
   }
 
@@ -5572,7 +5572,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   /* Topbar definitivamente visível na faixa azul. */
-  body[data-page="dashboard"][data-dashboard-layout] .topbar{
+  body[data-page="dashboard"][data-dashboard-layout] .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:flex!important;
     visibility:visible!important;
     opacity:1!important;
@@ -5699,39 +5699,39 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   /* Uma única superfície azul contínua, sem borda/sombra entre área externa e shell. */
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout],
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:#184888!important;
     background-color:#184888!important;
     background-image:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border:0!important;
     outline:0!important;
     box-shadow:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     border:0!important;
     outline:0!important;
     box-shadow:none!important;
   }
 
   /* Remove halos/linhas de 1px que estavam denunciando a junção. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar,
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     box-shadow:none!important;
     outline:0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-top:0!important;
     border-left:0!important;
     border-bottom:0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-top:0!important;
     border-right:0!important;
     border-bottom:0!important;
@@ -5741,8 +5741,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* Mesmo princípio nos demais temas do Dashboard master, sem gradiente nem halo. */
 @media (min-width:981px){
   :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout],
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
   :root[data-theme="dark"]:has(body[data-page="dashboard"][data-dashboard-layout]){
     background:#142A44!important;
     background-color:#142A44!important;
@@ -5750,8 +5750,8 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
   }
 
   :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout],
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
   :root[data-theme="leila-mood"]:has(body[data-page="dashboard"][data-dashboard-layout]){
     background:#CB3F83!important;
     background-color:#CB3F83!important;
@@ -5764,30 +5764,30 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 @media (min-width:981px){
   /* Cresce a área branca do site em 15px para esquerda, direita e baixo.
      O topo permanece como está para preservar a faixa azul. */
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-left:0!important;
     padding-right:0!important;
     padding-bottom:0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:translateX(-15px)!important;
     width:calc(100% + 15px)!important;
     margin-bottom:-15px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:translateX(15px)!important;
     width:calc(100% + 15px)!important;
     margin-bottom:-15px!important;
   }
 
   /* Mantém o encaixe entre sidebar e conteúdo, sem abrir fresta no centro. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-right:-15px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-left:-15px!important;
   }
 }
@@ -5926,7 +5926,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* DASHBOARD MASTER — INNER CONTENT REALIGN v16 — 2026-10-04 */
 @media (min-width:981px){
   /* Corrige a expansão anterior sem empurrar os elementos para fora do painel branco. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:none!important;
     width:auto!important;
     margin-left:0!important;
@@ -5936,7 +5936,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     box-sizing:border-box!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:none!important;
     width:auto!important;
     margin-left:0!important;
@@ -5949,7 +5949,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
     padding-bottom:18px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .page,
+  body[data-page="dashboard"][data-dashboard-layout] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
   body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
     width:100%!important;
@@ -5992,7 +5992,7 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 @media (min-width:981px){
   /* Reduz 5px das bordas azuis externas esquerda, direita e inferior.
      Mantém o topo exatamente como está. */
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-top:10px!important;
     margin-left:5px!important;
     margin-right:5px!important;
@@ -6005,17 +6005,17 @@ html body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative{
 /* DASHBOARD MASTER — RESTORE ROUNDED WHITE TOP CORNERS v18 — 2026-10-04 */
 @media (min-width:981px){
   /* O callout branco interno volta a ter os cantos superiores arredondados. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:18px 0 0 18px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:0 18px 18px 0!important;
   }
 
   /* Garante que a curva apareça limpa contra o shell azul. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar,
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-clip:padding-box!important;
   }
 }
@@ -6103,7 +6103,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* DASHBOARD DARK — SIDEBAR SCROLLBAR TRACK TRANSPARENT v20 — 2026-10-04 */
 @media (min-width:981px){
-  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar,
+  :root[data-theme="dark"] body[data-page="dashboard"] #sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   :root[data-theme="dark"] body[data-page="dashboard"] #sidebar *,
   :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav,
   :root[data-theme="dark"] body[data-page="dashboard"] #sidebar .nav-study,
@@ -6175,14 +6175,14 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   /* Agora que a topbar foi movida para o shell azul, a área branca pode voltar
      a recortar o conteúdo pelas bordas arredondadas sem esconder os controles. */
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:0 18px 18px 0!important;
     overflow:hidden!important;
     background-clip:padding-box!important;
     clip-path:inset(0 round 0 18px 18px 0)!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     border-radius:0 18px 18px 0!important;
     overflow:hidden!important;
     min-width:0!important;
@@ -6331,12 +6331,12 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     overflow:hidden!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     box-sizing:border-box!important;
     overflow:hidden!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     min-height:0!important;
     height:100%!important;
     overflow-x:hidden!important;
@@ -6347,7 +6347,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   /* A página acompanha a altura natural do conteúdo; quem rola é .main. */
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:auto!important;
     min-height:100%!important;
     overflow:visible!important;
@@ -6360,7 +6360,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   /* Scroll do painel branco: só o thumb, sem trilho/fundo/setas. */
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     scrollbar-width:thin!important;
     scrollbar-color:color-mix(in srgb,var(--accent) 72%,transparent) transparent!important;
   }
@@ -6404,14 +6404,14 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 /* DASHBOARD MASTER — INSET SCROLL / PRESERVE RIGHT CURVE v25 — 2026-10-04 */
 @media (min-width:981px){
   /* A borda branca externa não rola. Isso preserva o arredondamento direito inteiro. */
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:hidden!important;
     border-radius:0 18px 18px 0!important;
     clip-path:none!important;
     padding-right:10px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
     overflow:hidden!important;
@@ -6598,8 +6598,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   html:has(body[data-page="dashboard"][data-dashboard-layout]),
   body[data-page="dashboard"][data-dashboard-layout],
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:#184888!important;
     background-color:#184888!important;
     background-image:none!important;
@@ -6610,8 +6610,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   :root[data-theme="dark"]:has(body[data-page="dashboard"][data-dashboard-layout]),
   :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout],
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:#142A44!important;
     background-color:#142A44!important;
     background-image:none!important;
@@ -6619,8 +6619,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   :root[data-theme="leila-mood"]:has(body[data-page="dashboard"][data-dashboard-layout]),
   :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout],
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell::before{
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background:#CB3F83!important;
     background-color:#CB3F83!important;
     background-image:none!important;
@@ -6631,14 +6631,14 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 /* DASHBOARD MASTER — LOGO PATTERN INSIDE WHITE PANEL v29 — 2026-10-04 */
 @media (min-width:981px){
   /* Fundo decorativo com várias logos somente dentro da área branca. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar,
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::before{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -6654,8 +6654,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     transform-origin:center!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -6677,18 +6677,18 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     z-index:1!important;
   }
 
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v29")!important;
     opacity:.026!important;
   }
 
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v29")!important;
     opacity:.022!important;
   }
@@ -6698,14 +6698,14 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 /* DASHBOARD MASTER — PAGE-ONLY PATTERN + INSET SCROLL v30 — 2026-10-04 */
 @media (min-width:981px){
   /* O menu lateral volta a ser totalmente chapado, sem pattern. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:var(--sidebar)!important;
     background-image:none!important;
     isolation:auto!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
     background:none!important;
@@ -6713,7 +6713,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
   }
 
   /* O pattern existe somente na página, do menu para a direita. */
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
     overflow:hidden!important;
@@ -6721,8 +6721,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     border-radius:0 18px 18px 0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -6737,11 +6737,11 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     transform-origin:center!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::before{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background-position:0 0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-position:66px 66px!important;
   }
 
@@ -6750,21 +6750,21 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     z-index:1!important;
   }
 
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v30")!important;
     opacity:.026!important;
   }
 
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v30")!important;
     opacity:.022!important;
   }
 
   /* A borda branca direita fica fixa. O scroll acontece numa área mais estreita,
      para o thumb nunca encostar nem comer a curva externa. */
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:auto!important;
     max-width:none!important;
     height:100%!important;
@@ -6823,23 +6823,23 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   /* Mesmo padrão antigo, porém 5 pontos percentuais menos transparente
      para ficar realmente perceptível dentro da página branca. */
-  body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-size:138px 138px!important;
     opacity:.068!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-position:69px 69px!important;
   }
 
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     opacity:.078!important;
   }
 
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     opacity:.074!important;
   }
 }
@@ -7128,26 +7128,26 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   /* 1) Pattern de logos: somente da sidebar para a direita e visível até o fim
      de toda a área branca, sem blocos opacos cobrindo o fundo. */
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-image:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::before,
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar::after{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background:var(--surface)!important;
     position:relative!important;
     isolation:isolate!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:""!important;
     display:block!important;
     position:absolute!important;
@@ -7162,15 +7162,15 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     transform-origin:center!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::before{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before{
     background-position:0 0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-position:69px 69px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page,
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
   body[data-page="dashboard"][data-dashboard-layout] .dl-layout-1,
   body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
@@ -7184,14 +7184,14 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     z-index:1!important;
   }
 
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-image:url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v35")!important;
     opacity:.078!important;
   }
 
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     background-image:url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v35")!important;
     opacity:.074!important;
   }
@@ -7309,7 +7309,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   /* O pattern pertence ao próprio painel branco. Assim ele pinta a área inteira
      até a borda inferior, sem depender de pseudo-elemento com altura de viewport. */
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-color:var(--surface)!important;
     background-image:
       url("/assets/img/logos/logo-icone-original.png?v=dashboard-pattern-v36"),
@@ -7320,27 +7320,27 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     background-attachment:local,local!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     content:none!important;
     display:none!important;
     background:none!important;
   }
 
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main{
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v36"),
       url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v36")!important;
   }
 
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main{
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v36"),
       url("/assets/img/logos/logo-icone-rosa-escuro.png?v=dashboard-pattern-v36")!important;
   }
 
   /* O conteúdo continua transparente para revelar o pattern; os cards, não. */
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page,
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout] #dashboard-alternative,
   body[data-page="dashboard"][data-dashboard-layout] .dl-layout-1,
   body[data-page="dashboard"][data-dashboard-layout] .dl-grid{
@@ -7478,7 +7478,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 /* DASHBOARD MASTER — PATTERN OPACITY FIX v37 — 2026-10-04 */
 @media (min-width:981px){
   /* Mantém o pattern cobrindo toda a área, mas volta à intensidade visual sutil (~7%). */
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       linear-gradient(
         color-mix(in srgb,var(--surface) 93%,transparent),
@@ -7491,7 +7491,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     background-position:0 0,0 0,69px 69px!important;
   }
 
-  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main{
+  :root[data-theme="dark"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       linear-gradient(
         color-mix(in srgb,var(--surface) 92%,transparent),
@@ -7501,7 +7501,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
       url("/assets/img/logos/logo-icone-azul-claro.png?v=dashboard-pattern-v37")!important;
   }
 
-  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main{
+  :root[data-theme="leila-mood"] body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     background-image:
       linear-gradient(
         color-mix(in srgb,var(--surface) 92.5%,transparent),
@@ -7973,7 +7973,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* DASHBOARD MASTER — MATCH GLOBAL WHITE CONTAINER WIDTH v48 — 2026-10-04 */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin:10px!important;
     height:calc(100dvh - 20px)!important;
     padding:64px 6px 6px!important;
@@ -7982,12 +7982,12 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-sizing:border-box!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar{
+  body[data-page="dashboard"][data-dashboard-layout] #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin:0!important;
     width:auto!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin:0!important;
     width:auto!important;
     max-width:none!important;
@@ -7997,7 +7997,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* DASHBOARD MASTER — USE GLOBAL APPROVED SHELL SIZE v49 — 2026-10-04 */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-top:10px!important;
     margin-left:5px!important;
     margin-right:5px!important;
@@ -8274,7 +8274,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     min-height:151px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-bottom:24px!important;
     scroll-padding-bottom:24px!important;
   }
@@ -8559,7 +8559,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     padding-bottom:10px!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-bottom:10px!important;
   }
 }
@@ -8607,7 +8607,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
    da .page. A segunda faixa ficava abaixo da dobra e parecia "comida".
    Aqui o Dashboard 1 passa a caber na altura útil real da página. */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
     overflow:hidden!important;
@@ -8728,11 +8728,11 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
    Remove a faixa azul inferior criada pelo padding-bottom de 3px do app-shell.
    Essa faixa não é conteúdo e reduz a altura útil percebida do Dashboard. */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .app-shell{
+  body[data-page="dashboard"][data-dashboard-layout] .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-bottom:0!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     height:100%!important;
     min-height:0!important;
     margin-bottom:0!important;
@@ -8913,8 +8913,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   /* Os cards da faixa inferior precisam sobrepor a faixa visual intermediária.
      O problema aqui é stacking/overflow, não altura do conteúdo. */
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
   body[data-page="dashboard"][data-dashboard-layout="1"] #dashboard-alternative,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1{
     overflow:visible!important;
@@ -8941,8 +8941,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     box-shadow:0 8px 18px rgba(26,79,117,.08)!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main::after,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1::before,
   body[data-page="dashboard"][data-dashboard-layout="1"] .dl-layout-1::after{
     z-index:0!important;
@@ -9311,7 +9311,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 /* DASHBOARD 1 — COMPACT FIT + UNIFORM GAPS v70 — 2026-10-05 */
 @media (min-width:981px){
   /* Faz o Dashboard 1 caber inteiro no viewport, sem scroll vertical. */
-  body[data-page="dashboard"][data-dashboard-layout="1"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="1"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding:18px 28px 16px!important;
     overflow:hidden!important;
   }
@@ -9530,8 +9530,8 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
     z-index:20!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout="3"] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout="3"] .main::after,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout="3"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after,
   body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3::before,
   body[data-page="dashboard"][data-dashboard-layout="3"] .dl-layout-3::after{
     z-index:0!important;
@@ -9581,7 +9581,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 @media (min-width:981px){
   /* ===== Dashboard 3 =====
      Remove patches antigos que criavam faixa morta / deslocamento artificial. */
-  body[data-page="dashboard"][data-dashboard-layout="3"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="3"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding:18px 28px 16px!important;
     overflow:hidden!important;
   }
@@ -9663,7 +9663,7 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
   /* ===== Dashboard 4 =====
      Grade explícita: topo, área principal e faixa inferior sempre dentro da viewport. */
-  body[data-page="dashboard"][data-dashboard-layout="4"] .main{
+  body[data-page="dashboard"][data-dashboard-layout="4"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding:18px 28px 16px!important;
     overflow:hidden!important;
   }
@@ -9816,18 +9816,18 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* Dashboard v80 — callouts acima da camada decorativa de logos */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     isolation:isolate!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main::before,
-  body[data-page="dashboard"][data-dashboard-layout] .main::after{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::before,
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *))::after{
     z-index:0!important;
     pointer-events:none!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:relative!important;
     z-index:20!important;
     isolation:isolate!important;
@@ -9847,13 +9847,13 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* DASHBOARD — largura útil igual ao Aprender v82 — 2026-10-05 */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-left:34px!important;
     padding-right:34px!important;
     box-sizing:border-box!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:1320px!important;
     margin-left:auto!important;
@@ -9873,13 +9873,13 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* DASHBOARD — scrollbar interna ao callout branco v83 — 2026-10-05 */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     overflow:hidden!important;
     padding-right:34px!important;
     box-sizing:border-box!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:1320px!important;
     height:100%!important;
@@ -9921,13 +9921,13 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* DASHBOARD — MESMA RÉGUA EXATA DO APRENDER v84 — 2026-10-05 */
 @media (min-width:981px){
-  body[data-page="dashboard"][data-dashboard-layout] .main{
+  body[data-page="dashboard"][data-dashboard-layout] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding:0 6px 0 0!important;
     overflow:hidden!important;
     box-sizing:border-box!important;
   }
 
-  body[data-page="dashboard"][data-dashboard-layout] .main > .page{
+  body[data-page="dashboard"][data-dashboard-layout] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:100%!important;
     max-width:100%!important;
     height:100%!important;
@@ -10396,9 +10396,9 @@ body[data-page="dashboard"] *::-webkit-scrollbar-thumb:hover{
 
 /* Dashboards 1/2/3: grade ajustada ao painel real; listas longas rolam dentro dos cards. */
 @media(min-width:981px){
-html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .main{height:100%!important;min-height:0!important;max-height:100%!important;}
-html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .main > .page{height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;padding:16px 18px 18px!important;box-sizing:border-box!important;}
-html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .page > .topbar{flex:0 0 0!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;}
+html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){height:100%!important;min-height:0!important;max-height:100%!important;}
+html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;padding:16px 18px 18px!important;box-sizing:border-box!important;}
+html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){flex:0 0 0!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative{display:grid!important;grid-template-rows:138px minmax(0,1fr)!important;gap:8px!important;flex:1!important;min-height:0!important;height:100%!important;max-height:100%!important;padding:0!important;margin:0!important;overflow:hidden!important;box-sizing:border-box!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative > .luria-dashboard-spotlight{height:138px!important;min-height:138px!important;max-height:138px!important;margin:0!important;box-sizing:border-box!important;}
 html body[data-page="dashboard"]:is([data-dashboard-layout="1"],[data-dashboard-layout="2"],[data-dashboard-layout="3"]) #dashboard-alternative > .dl-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:minmax(0,1.2fr) minmax(0,1fr)!important;gap:8px!important;height:100%!important;min-height:0!important;max-height:100%!important;margin:0!important;padding:0!important;align-content:stretch!important;overflow:hidden!important;}

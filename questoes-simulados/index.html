@@ -17,11 +17,13 @@
   <meta name="apple-mobile-web-app-title" content="LURIA">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="/assets/img/logos/favicon.png?v=luria2">
+<script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=1">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261005-global-v90">
   <link rel="stylesheet" href="/assets/css/questoes-simulados-v17.css?v=19.0">
 
-  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+<script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
 
   <style>
     /* =====================================================
@@ -1540,7 +1542,7 @@
       .qs-home-action .qs-home-card-art{width:43%;opacity:.42}
     }
 
-  
+
     /* Central de resolução: sistema + listas do usuário */
     .qs-home-workspace{
       display:grid;
@@ -1793,7 +1795,7 @@
     }
 </style>
   <link rel="canonical" href="/questoes-simulados/">
-  <script>(function(){try{if(location.pathname.endsWith("/questoes-simulados.html"))history.replaceState(null,"","/questoes-simulados/"+location.search+location.hash);}catch(e){}})();</script>
+<script>(function(){try{if(location.pathname.endsWith("/questoes-simulados.html"))history.replaceState(null,"","/questoes-simulados/"+location.search+location.hash);}catch(e){}})();</script>
   <link rel="stylesheet" href="/assets/css/page-spotlight.css?v=20260929-qs-cards-v8">
 
 <style id="qs-home-actions-two-button-height-v2">
@@ -2560,9 +2562,7 @@ body[data-page="questoes"] .qs-page-spotlight .luria-page-spotlight-copy strong{
    max-height:100dvh!important;
    overflow:hidden!important;
  }
- body[data-page="questoes"] .app-shell,
- body[data-page="questoes"] .main-content,
- body[data-page="questoes"] main{
+ body[data-page="questoes"] .main-content, body[data-page="questoes"] main{
    min-height:0!important;
    max-height:100dvh!important;
  }
@@ -2753,7 +2753,7 @@ body[data-page="questoes"] .qs-home-system{
   box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 15%,transparent),inset 0 1px 0 rgba(255,255,255,.08)!important;
 }
 </style>
-<style id="luria-page-font-lock-v56">html body,html body *{font-family:var(--font-ui,Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif)!important}html body :where(code,pre,kbd,samp),html body :where(code,pre,kbd,samp) *{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace!important}</style>  <link rel="stylesheet" href="/assets/css/qs-error-actions.css?v=20260930-layout-pcr">
+  <link rel="stylesheet" href="/assets/css/qs-error-actions.css?v=20260930-layout-pcr">
 <link rel="stylesheet" href="/assets/css/study-layout.css?v=20260930">
 <link rel="stylesheet" href="/assets/css/pwa-mobile.css?v=20260930-layout-pcr">
 
@@ -2819,7 +2819,7 @@ body[data-page="questoes"] .qs-home-system{
  .error-side-card.error-quick-metrics{height:auto!important;min-height:0!important;max-height:none!important}
 }
 </style>
-  <script src="/assets/js/medical-icons.js?v=2.0"></script>
+<script src="/assets/js/medical-icons.js?v=2.0"></script>
 <style id="qs-daily-identical-flashcards-v68">
 /* Questões do dia — estrutura e acabamento idênticos a Revisões do dia dos Flashcards. */
 body[data-page="questoes"] #qs-daily-card{
@@ -2985,12 +2985,7 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
     max-height:100dvh!important;
     overflow:hidden!important;
   }
-  body[data-page="questoes"] .main,
-  body[data-page="questoes"] .page{
-    height:100dvh!important;
-    min-height:0!important;
-    max-height:100dvh!important;
-    overflow:hidden!important;
+  body[data-page="questoes"] .main, body[data-page="questoes"] .page{
     box-sizing:border-box!important;
   }
   body[data-page="questoes"] .page{
@@ -3177,14 +3172,13 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
 </style>
 
 <link rel="stylesheet" href="/assets/css/consolidation-home-fit.css?v=20261006-flashcards-exact">
-  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
-  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
 
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="questoes">
-  <script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
-  <script defer src="/assets/js/ui-navigation-v2.js?v=20261011-pwa281"></script>
+<script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-css1"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -3202,7 +3196,7 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
 
         <section class="luria-page-spotlight qs-page-spotlight" aria-label="Questões e Simulados">
           <div class="luria-page-spotlight-copy">
-            
+
             <strong>Questões e Simulados</strong>
           </div>
         </section>
@@ -3691,17 +3685,17 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
     </form>
   </dialog>
 
-  <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  
-  
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
 
-  <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/weekly-content.js?v=1"></script>\n  <script src="/assets/js/app.js?v=20261005-menu-restored-v100"></script>
-  <script src="/assets/js/study-mode.js?v=13.0"></script>
-    <script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
+
+
+<script src="/assets/js/supabase.js"></script>
+<script src="/assets/js/weekly-content.js?v=1"></script>\n<script src="/assets/js/app.js?v=20261013-css1"></script>
+<script src="/assets/js/study-mode.js?v=13.0"></script>
+<script src="/assets/js/luria-lazy-vendors.js?v=1"></script>
 <script src="/assets/js/questoes-simulados.js?v=20261005-home-cards-v69"></script>
 
-  <script>
+<script>
     /* O JS principal já calcula a taxa de acerto semanal.
        Este bloco transforma esse valor na taxa de erro do terceiro card. */
     (() => {
@@ -3742,7 +3736,7 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
     .qs-manual-time-row input{width:82px!important;flex:0 0 82px}
     .qs-manual-time-row small{font-weight:800;color:var(--muted)}
   </style>
-  <script defer src="/assets/js/pwa.js?v=20261011-pwa281"></script>
+<script defer src="/assets/js/pwa.js?v=20261013-css1"></script>
 <script id="qs-quick-metrics-identical-sync-v66">
 (() => {
   const sourceCorrect=document.getElementById("qs-week-correct");

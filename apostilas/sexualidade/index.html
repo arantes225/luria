@@ -5,22 +5,24 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-no2b0CrPpx2l3mav3i4y4s2jILpkr5doX6gB6R9i770=' 'sha256-+Ffsa2z1Z6dfXsWa30Dm/tEse23gy1TKWNc7a3lCsmk='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co https://media.springernature.com https://commons.wikimedia.org https://upload.wikimedia.org https://pdres.s3.amazonaws.com https://www.cookmedical.com https://www.ncbi.nlm.nih.gov; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob:; frame-src 'self' blob:; upgrade-insecure-requests">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/assets/js/apostila-image-fallback.js"></script>
+<script src="/assets/js/apostila-image-fallback.js"></script>
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Sexualidade · LURIA</title>
   <link rel="manifest" href="/manifest.webmanifest?v=5">
   <link rel="icon" type="image/png" href="/assets/img/logos/logo-icone-original.png?v=favicon2">
   <meta name="theme-color" content="#0A2342">
+<script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=1">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261006-apostilas-theme-v91">
-  <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
+<script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/apostilas/sexualidade/">
   <style>
     .book-page{display:grid;grid-template-columns:196px minmax(0,1fr);gap:14px;align-items:start;padding-bottom:36px}
     .book-aside{position:sticky;top:8px;align-self:start;display:grid;gap:12px}
     .book-cover{position:relative;aspect-ratio:240/339;border-radius:18px;overflow:hidden;background:#184888;border:1px solid var(--border);box-shadow:0 12px 30px rgba(15,35,66,.10)}
     .book-cover img{width:100%;height:100%;object-fit:cover;display:block}.book-cover-copy{position:absolute;left:10%;right:10%;top:41.5%;display:grid;gap:5px;text-align:center;color:#fff;background:transparent!important;border:0!important;box-shadow:none!important;pointer-events:none}.book-cover-copy span,.book-cover-copy strong{display:block;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:0 1px 2px rgba(0,0,0,.16)}.book-cover-copy span{font-size:10px;font-weight:500;letter-spacing:.04em}.book-cover-copy strong{font-size:9px;font-weight:500;line-height:1.3;letter-spacing:.02em}
-    
+
     .book-back{display:flex;align-items:center;justify-content:center;min-height:38px;border-radius:12px;border:1px solid var(--border);background:var(--surface);font-size:11px;color:var(--accent)}
     .book-main{display:grid;gap:14px;min-width:0}
 
@@ -93,7 +95,7 @@
     .mind-chip{display:inline-flex;align-items:center;min-height:20px;padding:0 7px;margin-bottom:5px;border-radius:999px;background:color-mix(in srgb,var(--accent) 9%,var(--surface));color:var(--accent);font-size:8.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
     @media(max-width:760px){.mindmap-head{align-items:flex-start;flex-direction:column}.mindmap-head p{text-align:left}.mindmap{grid-template-columns:1fr;grid-template-areas:"center" "a" "b" "c" "d";gap:10px}.mindmap:before,.mind-branch:before{display:none}.mind-center{width:100%}.mindmap-section{padding:18px!important}}
     @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}.mechanism-chain{grid-template-columns:1fr 1fr}.book-grid-2,.complication-grid{grid-template-columns:1fr}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
-  
+
     /* apostila-light-blue-title-contrast */
     :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity,
     :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h1,
@@ -107,7 +109,7 @@
     :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
       border-color:rgba(255,255,255,.22)!important;
     }
-  
+
     .fixation-list{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
     .fixation-item{padding:14px 15px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}
     .fixation-question{font-size:12.6px;line-height:1.58;color:var(--text)}
@@ -115,7 +117,7 @@
     .fixation-toggle{min-height:32px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:10px;cursor:pointer}
     .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
     .fixation-answer[hidden]{display:none}
-  
+
     .book-section table{width:100%;border-collapse:collapse;margin:14px 0 16px;font-size:12px;border:1px solid var(--border)}
     .book-section th,.book-section td{padding:10px 11px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.5}
     .book-section th{background:var(--surface-2);font-weight:600;color:var(--text)}
@@ -137,16 +139,15 @@
 
   </style>
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
-  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
-  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="aprender">
-  <script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
-  <script defer src="/assets/js/ui-navigation-v2.js?v=20261011-pwa281"></script>
+<script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-css1"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div>
-    
+
 <main class="main"><div class="page">
 <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila LURIA</span><h1>Sexualidade</h1></div></header>
 <section class="book-page">
@@ -500,11 +501,11 @@
       </section>
     </div></main>
   </div>
-  <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="/assets/js/supabase.js?v=auth4"></script>
-  <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
-  <script defer src="/assets/js/pwa.js?v=20261011-pwa281"></script>
-  <script>
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="/assets/js/supabase.js?v=auth4"></script>
+<script src="/assets/js/app.js?v=20261013-css1"></script>
+<script defer src="/assets/js/pwa.js?v=20261013-css1"></script>
+<script>
     (function(){
       const links=[...document.querySelectorAll('.book-outline-link')];
       const targets=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);

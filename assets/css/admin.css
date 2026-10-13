@@ -1186,7 +1186,7 @@ body.admin-unlocked #admin-app {
    ADMIN PWA PREMIUM MOBILE
    ========================================================= */
 @media (max-width: 760px) {
-  .pwa-standalone body[data-page="admin"] .main {
+  .pwa-standalone body[data-page="admin"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)) {
     padding: 12px 10px 28px !important;
   }
 

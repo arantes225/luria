@@ -5,6 +5,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; script-src 'self' 'sha256-bCXOKoQ/NsLLmvM0Yh5pgUAGtkhXG9D1WUIFNDNDmqQ='; script-src-attr 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; font-src 'self' data:; connect-src 'self' https://sxdsfklllilhdyuamvvg.supabase.co wss://sxdsfklllilhdyuamvvg.supabase.co; worker-src 'self' blob:; media-src 'self' data: blob: https://sxdsfklllilhdyuamvvg.supabase.co; frame-src 'self' blob:; upgrade-insecure-requests">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sessão de estudo · LURIA</title>
+<script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=1">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="canonical" href="/sessao-estudo/">
   <style>
@@ -97,13 +99,12 @@
       .study-session-card{padding:14px}
     }
   </style>
-  <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
-  <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
+
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="sessao_estudo">
-  <script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
-  <script defer src="/assets/js/ui-navigation-v2.js?v=20261011-pwa281"></script>
+<script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-css1"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -167,10 +168,10 @@
     </main>
   </div>
 
-  <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="/assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
-  <script>
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="/assets/js/supabase.js"></script>
+<script src="/assets/js/app.js?v=20261013-css1"></script>
+<script>
   (function(){
     const esc=value=>String(value??"").replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[char]));
     function render(){
@@ -300,6 +301,6 @@
     window.addEventListener("pageshow",render);
   })();
   </script>
-  <script defer src="/assets/js/pwa.js?v=20261011-pwa281"></script>
+<script defer src="/assets/js/pwa.js?v=20261013-css1"></script>
 </body>
 </html>

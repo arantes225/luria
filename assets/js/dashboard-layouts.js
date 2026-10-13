@@ -454,7 +454,7 @@
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 

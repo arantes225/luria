@@ -1143,7 +1143,7 @@
     }
   `;
 
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 const sb = window.supabaseClient;
@@ -6732,7 +6732,7 @@ iniciarApp();
     html.pwa-standalone body .luria-notification-panel,html.pwa-standalone body .luria-pomodoro-panel,html.pwa-standalone body .luria-profile-menu{position:fixed!important;top:calc(env(safe-area-inset-top) + 56px)!important;right:8px!important;left:auto!important;max-width:calc(100vw - 16px)!important;z-index:2147483000!important}
   }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 /* PWA sidebar anchors v31 — streak/mode fixed; Trabalho PCR/mode fixed */
@@ -6751,7 +6751,7 @@ iniciarApp();
   html.pwa-standalone body #sidebar.sidebar .luria-mode-footer-switch{flex-shrink:0!important}
   html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .work-pcr-button,
   html.pwa-standalone body[data-page^="trabalho_"] #sidebar.sidebar .luria-mode-footer-switch{flex-shrink:0!important}
- }`;document.head.appendChild(style);
+ }`;if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 /* PWA topbar v32 — menu exatamente alinhado aos controles da direita */
@@ -6769,7 +6769,7 @@ iniciarApp();
   }
   html.pwa-standalone body .topbar .menu-open{position:relative!important;top:auto!important;bottom:auto!important}
   html.pwa-standalone body .topbar .luria-notifications{align-self:center!important;height:40px!important;align-items:center!important}
- }`;document.head.appendChild(style);
+ }`;if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -6820,7 +6820,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -6879,7 +6879,7 @@ iniciarApp();
       border-color:color-mix(in srgb,var(--danger,#e56464) 55%,var(--border))!important;
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -6998,7 +6998,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7245,7 +7245,7 @@ iniciarApp();
       pointer-events:none!important;
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7306,7 +7306,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7330,7 +7330,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7415,7 +7415,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7463,7 +7463,7 @@ iniciarApp();
       transform:none!important;
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7486,7 +7486,7 @@ iniciarApp();
       color:var(--muted)!important;
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7530,7 +7530,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7608,7 +7608,7 @@ iniciarApp();
     }
   `;
 
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7656,7 +7656,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -7843,7 +7843,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -8052,7 +8052,7 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -8476,7 +8476,7 @@ iniciarApp();
     }
   }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
 
 
@@ -8563,5 +8563,5 @@ iniciarApp();
       }
     }
   `;
-  document.head.appendChild(style);
+  if (document.body?.dataset.uiNav !== "v2") document.head.appendChild(style);
 })();
