@@ -53,3 +53,25 @@ test("stops build on synthetic service_role JWT",()=>{
   assert.match(result.stderr,/Service-role JWT detected/);
  }finally{cleanup(root)}
 });
+
+test("never publishes dotfiles, database dumps, local backups or source maps", () => {
+ const root=makeProject();
+ try {
+  for(const p of ["assets/.env","assets/.env.local","assets/admin/backup.sql","assets/js/debug.js.map","assets/db/dump.sqlite","assets/public/notes.md","assets/private/.credentials"]) {
+   const file=path.join(root,p);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,"fixture");
+  }
+  const result=build(root);assert.equal(result.status,0,result.stderr);
+  for(const p of ["assets/.env","assets/.env.local","assets/admin/backup.sql","assets/js/debug.js.map","assets/db/dump.sqlite","assets/public/notes.md","assets/private/.credentials"]) {
+   assert.equal(fs.existsSync(path.join(root,".pages-dist",p)),false,p);
+  }
+ }finally{cleanup(root)}
+});
+test("refuses symbolic links inside public folders", {skip:process.platform==="win32"}, () => {
+ const root=makeProject();
+ try {
+  const secret=path.join(root,"db","secret.txt");fs.mkdirSync(path.dirname(secret),{recursive:true});fs.writeFileSync(secret,"fixture");
+  fs.symlinkSync(secret,path.join(root,"assets","safe-looking.txt"));
+  const result=build(root);assert.notEqual(result.status,0);
+  assert.match(result.stderr,/Refusing symlink/);
+ }finally{cleanup(root)}
+});
