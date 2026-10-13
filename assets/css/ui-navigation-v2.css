@@ -1,10 +1,12 @@
+warning: in the working copy of 'admin.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'admin/index.html', LF will be replaced by CRLF the next time Git touches it
 /* Layered important rules outrank legacy injected locks without changing their files.
    Everything is opt-in; work tools receive shell styles, not educational content styles. */
 @layer luria-ui-navigation {
   html:has(body[data-ui-nav="v2"]) {background:#fff!important;height:auto!important;min-height:100%!important;overflow-x:clip!important;overflow-y:auto!important;}
   html:has(body[data-ui-nav="v2"][data-ui-appearance="dark"]) {background:#17191e!important;}
   body[data-ui-nav="v2"] {--ui-nav-width:264px;--ui-sidebar:var(--ui-nav-width);--ui-nav-height:64px;background:var(--color-background)!important;height:auto!important;min-height:100dvh!important;max-height:none!important;}
-  /* The document owns scrolling; explicit dialog/drawer body locks still apply. */
+  /* Mobile keeps document scrolling; desktop uses the framed scroll regions below. */
   body[data-ui-nav="v2"]:not([style*="overflow: hidden"]):not(.sidebar-open):not(.luria-beta-feedback-locked):not(.admin-pin-locked) {overflow:visible!important;}
   body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] {--ui-nav-width:76px;}
   body[data-ui-nav="v2"] .app-shell {display:flow-root!important;grid-template-columns:none!important;border-radius:0!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;width:100%!important;max-width:100%!important;height:auto!important;min-height:100dvh!important;max-height:none!important;overflow:visible!important;background:var(--color-shell-surface,var(--color-surface))!important;}
@@ -188,7 +190,47 @@
     body[data-ui-nav="v2"] .ui-topbar-streak-unit {display:none!important;}
     body[data-ui-nav="v2"] .luria-pomodoro-icon {display:none!important;}
   }
+  /* Desktop frame: one rounded surface contains both navigation and content.
+     The small outer gutter keeps the theme visible along the sides and bottom. */
+  @media(min-width:981px) {
+    html:has(body[data-ui-nav="v2"]) {height:100%!important;overflow:hidden!important;}
+    body[data-ui-nav="v2"] {
+      --ui-frame-gutter:8px;--ui-frame-bottom:6px;--ui-frame-radius:28px;
+      --ui-frame-color:var(--color-primary-hover);--ui-frame-text:#fff;
+      height:100dvh!important;min-height:0!important;background:var(--ui-frame-color)!important;overflow:hidden!important;
+    }
+    body[data-ui-nav="v2"][data-ui-appearance="dark"] {--ui-frame-color:color-mix(in srgb,var(--color-background) 78%,var(--color-primary));}
+    body[data-ui-nav="v2"]:not([style*="overflow: hidden"]):not(.sidebar-open):not(.luria-beta-feedback-locked):not(.admin-pin-locked) {overflow:hidden!important;}
+    body[data-ui-nav="v2"] .app-shell {
+      position:fixed!important;inset:var(--ui-nav-height) var(--ui-frame-gutter) var(--ui-frame-bottom)!important;
+      display:grid!important;grid-template-columns:var(--ui-nav-width) minmax(0,1fr)!important;grid-template-rows:minmax(0,1fr)!important;
+      width:auto!important;max-width:none!important;height:auto!important;min-height:0!important;
+      border-radius:var(--ui-frame-radius)!important;overflow:hidden!important;
+      background:var(--color-background)!important;transition:grid-template-columns 240ms ease;
+    }
+    body[data-ui-nav="v2"] #sidebar.sidebar {
+      position:absolute!important;inset:0 auto 0 0!important;height:100%!important;max-height:100%!important;
+      border-radius:0!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior-y:contain;
+    }
+    body[data-ui-nav="v2"] .main {
+      grid-column:2!important;grid-row:1!important;margin:0!important;min-height:0!important;height:100%!important;max-height:100%!important;
+      border-radius:0!important;overflow-x:hidden!important;overflow-y:auto!important;overscroll-behavior-y:contain;
+      scrollbar-gutter:stable;scroll-padding-block:2rem;transition:none!important;
+    }
+    body[data-ui-nav="v2"] .main > .page {max-width:1440px!important;}
+    body[data-ui-nav="v2"]:is([style*="overflow: hidden"],.luria-beta-feedback-locked,.admin-pin-locked) :is(.main,#sidebar.sidebar) {overflow:hidden!important;}
+    body[data-ui-nav="v2"] .topbar {left:0!important;background:var(--ui-frame-color)!important;color:var(--ui-frame-text)!important;border-bottom:0!important;}
+    body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .topbar {border-bottom:0!important;}
+    body[data-ui-nav="v2"] .topbar .ui-topbar-brand :is(strong,.brand-copy), body[data-ui-nav="v2"] .topbar .ui-context-label {color:var(--ui-frame-text)!important;}
+    body[data-ui-nav="v2"] .topbar .ui-topbar-brand #luria-brand-logo {filter:grayscale(1) brightness(0) invert(1)!important;}
+    body[data-ui-nav="v2"] :is(.main,#sidebar.sidebar) {scrollbar-width:thin;scrollbar-color:var(--ui-scrollbar-thumb) transparent!important;}
+    body[data-ui-nav="v2"] :is(.main,#sidebar.sidebar)::-webkit-scrollbar {width:8px!important;background:transparent!important;}
+    body[data-ui-nav="v2"] :is(.main,#sidebar.sidebar)::-webkit-scrollbar-track {background:transparent!important;box-shadow:none!important;}
+    body[data-ui-nav="v2"] :is(.main,#sidebar.sidebar)::-webkit-scrollbar-thumb {border:2px solid transparent!important;border-radius:999px!important;background-clip:padding-box!important;}
+    body[data-ui-nav="v2"] :is(.main,#sidebar.sidebar)::-webkit-scrollbar-button {display:none!important;width:0!important;height:0!important;}
+  }
   @media(prefers-reduced-motion:reduce) {
+    body[data-ui-nav="v2"] .app-shell {transition:none!important;}
     body[data-ui-nav="v2"] :is(.main,.topbar,#sidebar,.luria-profile-menu,.luria-notification-panel,.luria-pomodoro-panel), body[data-ui-nav="v2"] .topbar :is(button,a) {transition:none!important;animation:none!important;}
   }
   /* Installed mobile shell: predictable thumb navigation and comfortable cards. */
