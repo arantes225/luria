@@ -143,3 +143,127 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 - [ ] Revisão clínica antes de carimbar a edição como concluída.
 
 **Inventário inicial das 25 pastas e suas lacunas:** consultar \`apostilas/AUDITORIA_LIVRO_TEXTO_2026-10-12.md\`. Contagem de caracteres, sozinha, não equivale a revisão clínica nem a publicação de uma versão reescrita.
+
+
+---
+
+## Diretriz irrevogável — aprofundar SEM desmontar os recursos visuais
+
+**Correção expressa do escopo feita pelo responsável pela LURIA em 12/10/2026: a exigência mínima de 40.000 caracteres significa ADICIONAR aprofundamento ao material existente, nunca trocar seus esquemas por texto corrido. Quanto mais visual, melhor, desde que seja didaticamente correto e legível.**
+
+### Regra de preservação visual (obrigatória para os 25 cadernos e todos os futuros)
+1. **Não excluir, simplificar ou transformar em parágrafos** os mapas mentais, esquemas anatômicos, esquemas fisiológicos/fisiopatológicos, fluxogramas, algoritmos clínicos, gráficos, tabelas, quadros comparativos, caixas de atenção, callouts, cards, pulo do gato, recursos interativos e figuras que já existem. Preservar também os estilos CSS, IDs, interações, cores, composição responsiva e disposição visual desses componentes.
+2. A revisão editorial deve ser **aditiva**: manter o componente visual e **aprofundar o texto explicativo junto a ele** (antes, depois ou em um bloco complementar integrado). Sempre que possível, enriquecer o próprio esquema visual com rótulos legíveis, etapas intermediárias, legendas clínicas, relações causais ou detalhes importantes, sem torná-lo visualmente carregado.
+3. Quando um gráfico ou fluxograma mostrar uma seta ou relação causal, explicar o que ocorre em cada transição, por que acontece, quais exceções são relevantes e como interpretar clinicamente. Não substituir fluxos por listas.
+4. Quando uma tabela comparar doenças, mecanismos, exames ou tratamentos, preservar a tabela, podendo **acrescentar colunas/linhas úteis e ampliar o comentário interpretativo**. Nunca remover a tabela sob o pretexto de tornar o texto mais acadêmico.
+5. Quando um callout, destaque ou **Pulo do Gato** já existir, mantê-lo e enriquecer a explicação ao redor. Não converter callouts em parágrafos sem identidade visual. Evitar simplesmente repetir o callout em uma nova seção textual.
+6. Preservar os **mapas mentais** e, quando houver lacunas, adicionar ramificações relevantes e uma leitura guiada do mapa. Não substituí-los por sumários em texto.
+7. Preservar toda imagem já aprovada, incluindo o local de inserção, salvo correção de erro comprovado; imagens adicionais seguem rigorosamente o fluxo de curadoria/aprovação do Admin, com preferência por esquemas reais, técnicos e fotos clínicas reais quando pertinentes.
+8. Adicionar **novos elementos visuais** quando houver ganho didático real: sequências de mecanismo, mapas conceituais, diagramas de decisão, tabelas de diferenciais, comparações lado a lado, gráficos de tendências e esquemas de exames. Elementos HTML/CSS/SVG desenhados no site devem ser acessíveis, ter bom contraste, continuar legíveis no PWA e obedecer ao padrão visual LURIA.
+9. **Contagem de caracteres**: os 40.000 caracteres mínimos vêm exclusivamente de aprofundamento didático substancial; **não** é necessário nem desejável aumentar o número de caracteres às custas do conteúdo visual. Tampouco contar classes, tags, JS ou SVG como caracteres didáticos para atingir a meta.
+10. Antes e depois de cada alteração, registrar/verificar um inventário dos componentes visuais: quantidade, tipo, âncora, funcionamento, renderização em tela larga e no PWA. Fazer comparação visual para garantir que os elementos foram mantidos e que não apareceram overflow, imagens quebradas, callouts ocultos ou alterações de proporção.
+11. Só remover ou substituir um esquema existente quando for **objetivamente incorreto, inseguro ou duplicado**, justificando a mudança e, preferencialmente, corrigindo-o **na mesma linguagem visual**, preservando a experiência do estudante. Nunca fazer remoções em massa como parte de uma conversão para formato de livro.
+12. A expansão deve ocorrer **junto aos capítulos e esquemas correspondentes**, não apenas pelo acréscimo repetitivo de um grande bloco de "aprofundamento" ao final do arquivo. Para materiais já expandidos, uma segunda passada deve integrar parágrafos novos às seções visuais originais e enriquecer as figuras, evitando trechos deslocados.
+
+### Definição de conclusão — conteúdo + visual
+Uma apostila revisada só pode ser considerada concluída se:
+- tiver pelo menos 40.000 caracteres de explicação didática **real**, revisada e cientificamente correta;
+- preservar 100% dos componentes visuais úteis da versão anterior e seu funcionamento;
+- ampliar o aprofundamento **dos esquemas já existentes** e introduzir visualizações novas onde agreguem aprendizado;
+- manter o fluxo de aprovação de imagens e conferir fontes, legendas e acessibilidade;
+- passar por inspeção de layout no desktop e no PWA.
+
+**Princípio final: não é "texto no lugar de esquemas"; é "mais conteúdo explicando e complementando MAIS recursos visuais".**
+
+
+---
+
+## Referência visual de cursinho — Drive, auditoria de 12/10/2026
+
+A pedido do responsável pela LURIA, foram examinados diretamente os PDFs disponibilizados no Drive:
+- \`02 - CORRIMENTOS VAGINAIS .pdf\`: **10 páginas**, composição em **duas colunas**, hierarquia cromática viva, quadro inicial com fluxograma diagnóstico, texto curto em blocos, gráficos, esquemas de microbiota e epitélio, imagem de microscopia real, comparativos e pequenos destaques.
+- \`02 - ASSISTENCIA AO PRE-NATAL.pdf\`: **8 páginas**, duas colunas, visão de alto rendimento na abertura, tabelas compactas, ilustrações clínicas, esquemas, caixas realçadas e subtítulos frequentes.
+- Como controle, outras três referências consultadas (\`01 - IAMCSST.pdf\`, \`01 - CIRURGIA CARDIACA - DOENCA DA AORTA.pdf\`, \`12 - ABDOME AGUDO OBSTRUTIVO.pdf\`) tinham 9, 10 e 4 páginas. **Não afirmar que essas referências específicas possuem 40–60 páginas**, pois não possuem.
+
+**O que se deve emular:** princípios gerais de linguagem editorial de cursinho de medicina — fragmentação pedagógica, duas colunas em páginas impressas quando couber, ótima densidade informativa, figuras orientadas por raciocínio, quadros de prova, distinção clínica e algoritmos reais. **Não copiar texto, ilustrações proprietárias, logotipos, assinatura de marca, composição idêntica ou elementos gráficos protegidos dos arquivos externos.** Manter identidade azul/rosa/escuro e visual LURIA.
+
+### Formato digital e impressão
+1. O site LURIA é **responsivo e de rolagem contínua**, portanto **não converter todo o conteúdo em cartões enormes nem fixar dimensões A4 na tela do PWA**. Na versão desktop, usar ocasionalmente duas colunas internas quando isso melhora leituras comparativas; em telas estreitas, empilhar em uma coluna sem reduzir legibilidade.
+2. No modo impressão/PDF, contemplar **paginação A4 com aproximadamente 40–60 páginas para temas completos que justifiquem essa extensão**, nunca fabricar folhas vazias, divisões forçadas ou letra ampliada artificialmente apenas para aumentar o contador. O número de páginas é consequência de texto científico consistente + diagramas, imagens, tabelas e espaços de leitura.
+3. **Preservar mapas mentais, callouts, Pulo do Gato, gráficos, tabelas, fluxos e imagens** antes de qualquer ajuste. Exemplo de capítulo: breve conceito desenvolvido, **esquema causal**, quadro de diferencial, leitura da imagem, algoritmo de decisão comentado e um caso comentado.
+4. **Evitar "textões":** apresentar preferencialmente dois ou três parágrafos articulados e então o recurso visual adequado. O requisito mínimo de 40.000 caracteres continua válido para o caderno integral, mas o material deve distribuí-los ao longo das seções e **nunca cumpri-lo com blocos massivos ao final**.
+5. Em temas com entidades diferentes, **capítulos separados para cada uma** e seção posterior de comparação lado a lado. Em ginecologia, por exemplo, candidíase, vaginose e tricomoníase devem receber explicações próprias antes do quadro comparativo.
+6. Tabelas e fluxogramas devem ser acompanhados de legendas com **o que observar, significado e consequência prática**. Sempre que um fluxograma contiver ponto de decisão, explique brevemente no local por que o ramo importa.
+7. Ícones, cores e caixas de atenção têm semântica consistente, alto contraste e devem ser legíveis tanto em light quanto dark e PWA. Não fazer um "mar de caixas": mesclar quadros, diagramas e leitura fluida.
+8. Realçar os principais critérios, limiares e armadilhas no próprio fluxo da página, sem criar ilustrações fictícias de exames. Fontes de imagens e aprovação no Admin seguem inalteradas.
+9. **Aprovação editorial final requer comparação visual de antes/depois**, manutenção dos elementos originais e avaliação de uma amostra de tela mobile + desktop + exportação/print.
+10. O nível de aprofundamento não será medido por total de páginas isoladamente, mas também pela completude, legibilidade, valor pedagógico e fidelidade às diretrizes atuais.
+
+**Meta de percepção:** parecer uma apostila de cursinho premium com identidade própria da LURIA, não um artigo científico corrido, não um livro tradicional de colunas imensas de texto, nem uma cópia do material de terceiros.
+
+
+---
+
+## Correção de QA — 12/10/2026: não inflar páginas com imagens nem com apêndices
+
+O responsável rejeitou expressamente a repetição de imagens para aumentar páginas, o empilhamento de quatro figuras e o acúmulo de aprofundamentos no fim da apostila. Essas práticas são **falhas editoriais**, mesmo que a meta quantitativa seja atingida.
+
+**Novos critérios de revisão obrigatória:**
+1. **Uma função pedagógica por figura.** Nunca duplicar em HTML uma imagem já injetada pela fila de aprovadas; reconhecer URL de origem e equivalentes otimizados. Não inserir imagens de mesmo significado repetidamente apenas para alongar a página.
+2. **Sem galerias, pares automáticos ou quatro imagens agrupadas.** Figuras devem ser posicionadas junto ao parágrafo, subtópico ou exame que explicam, com legenda que ensine o que observar. Figura complementar no máximo uma por seção que já contenha figura, salvo exceção justificada por tópicos distintos.
+3. **Dimensões padrão LURIA**: figura clínica em largura usual de cerca de 480–520 px no desktop, altura proporcional, limite aproximado de 320–340 px na visualização comum, e 100% responsiva no PWA; maior apenas quando necessária para leitura de detalhes. A imagem original é expansível, não deve ser esticada ou achatada.
+4. **Aprofundamento integrado, não anexado em camadas.** Não acumular seções repetidas no fim sob títulos genéricos como "Capítulos aprofundados", "Estudo etiológico" e "Aprofundamento". Cada explicação entra no capítulo da sua entidade, respeitando a sequência conceito → mecanismo → clínica → diagnóstico → diferencial → tratamento → complicação → seguimento. Referências devem encerrar o caderno.
+5. **Texto e recursos visuais complementares.** Intercalar explicações com tabelas, diagramas, fluxos, cards e callouts originais, evitando longos blocos contínuos. Tabelas precisam ter relevância e interpretação, não são tabelas decorativas.
+6. **A contagem de 40.000 caracteres é piso de texto útil, não meta de altura.** Excluir repetições textuais, CSS/JS, sumário, referências e artifícios gráficos. Nunca criar páginas ou imagens para completar uma métrica.
+7. **Verificação antes/depois:** auditar URLs de imagens repetidas, imagens agrupadas, quantidade de visuais, capítulos após a bibliografia, títulos repetidos, links de sumário, tabelas, layout PWA e legibilidade das legendas.
+8. **Não remover as imagens da fila do Admin por conveniência visual.** Aprovação original permanece registrada; o renderer escolhe inserções pedagógicas sem duplicar ou transformar a seção em galeria.
+9. **Qualidade do texto:** evitar páragrafos repetindo explicações anteriores; aprofundar fisiopatologia e raciocínio com distinções clínicas, resultados discordantes e situações especiais objetivas. Quando um tópico fica extenso, subdividir com subtítulos relevantes.
+10. **Finalização significa revisão substantiva e visual**, não somente atender caracteres. Validar pelo menos uma renderização real desktop/mobile e registrar limitações quando não houver navegador de teste disponível.
+
+
+---
+
+## Regra de organização por doença — bloco clínico completo
+
+Diretriz expressa do responsável (12/10/2026): **não fragmentar diagnóstico, tratamento, prevenção e seguimento em capítulos genéricos quando a apostila cobre doenças diferentes**.
+
+**Sequência editorial sugerida por doença (usar apenas os tópicos que acrescentem conteúdo real):**
+1. Conceito e epidemiologia (frequência, contextos e fatores de risco).
+2. Etiologia e fisiopatologia, com esquema causal original ou sequência visual quando útil.
+3. Quadro clínico e exame físico, com imagens reais aprovadas próximas à descrição clínica.
+4. Diagnóstico, critérios, exames, limitações e diagnósticos diferenciais **daquela doença**, com imagem de microscopia/exame junto à interpretação.
+5. Tratamento da doença, classificando gravidade, primeira linha, alternativas, contraindicações, situações especiais e quando encaminhar; quadro de posologia quando adequado.
+6. Profilaxia, aconselhamento e medidas preventivas **específicas**, incluindo parcerias quando pertinente.
+7. Complicações, seguimento e manejo de falha/recorrência, integrados ao mesmo bloco.
+8. Pulo do Gato, algoritmo e caso comentado associados à etiologia, de forma compacta.
+
+**Regra de pertinência:** não criar seções vazias ou artificiais para uniformizar visualmente os capítulos. Fisiopatologia, epidemiologia, profilaxia, complicações, fluxograma e caso comentado só recebem um bloco próprio quando houver matéria substancial e didática a explicar. Se a informação for breve, incorporá-la ao contexto clínico ou etiológico já existente. Uma sequência editorial ajuda a orientar, não deve impor seis caixas idênticas a todas as doenças. Aprofundamento é qualidade explicativa, não preenchimento de espaços.
+
+**Abertura de apostila multidoenças:** separar nitidamente conceitos do sítio anatômico, fisiologia normal e abordagem inicial do paciente; usar um único recurso visual dominante por explicação, sem empilhar mapa mental, diversos cards, tabelas e fluxos com a mesma mensagem. Colocar mapa mental de integração junto à revisão final quando a abertura estiver carregada. Preservar imagens aprovadas e respeitar o tamanho padrão.
+
+**Não fazer:** abrir três doenças, depois um capítulo único misturando os diagnósticos, depois outro com todos os tratamentos e depois um terceiro com todas as profilaxias. Blocos comuns somente para fundamentos de fisiologia/triagem inicial, diagnósticos transversais não pertencentes às doenças principais, e **quadro comparativo final** após todos os blocos completos.
+
+**Regra de imagens clínicas:** nenhuma imagem remota inacessível deve aparecer como imagem quebrada. Se o arquivo não puder ser validado ou hospedado corretamente com licença, substituir a tentativa inline por link funcional à fonte científica com contexto didático, deixando claro que a fotografia está na publicação externa. A solução definitiva ideal é imagem clínica real, conferida, otimizada, com permissões verificadas e hospedagem estável; não usar imagem gerada para fingir um achado médico real. Não mexer automaticamente no status de aprovação da fila do Admin.
+
+**Conferência obrigatória:** em cada caderno, validar a ordem das seções e do índice, eliminar headings repetidos, confirmar que cada imagem é única e está próxima do texto relevante, manter callouts/esquemas/fluxos, e encerrar com referências. Aplicar esta diretriz às outras apostilas à medida que forem revisadas; não assumir que todas já foram migradas.
+
+
+
+## Padrão editorial de cores e composição — outubro de 2026
+
+A apostila deve ter identidade gráfica consistente, leitura agradável e **relação clara entre tipo de bloco e função didática**. Não é permitido inflar comprimento com repetição visual.
+
+**Paleta editorial LURIA**: azul de marca como cor estrutural (`#184888`); rosa suave para candidíase (`#b95780`), verde-azulado para vaginose (`#138a88`), violeta para tricomoníase (`#7962bd`), âmbar como destaque exclusivo da revisão de fixação. Usar combinações acessíveis no escuro e no PWA, evitando depender da cor como única forma de distinção.
+
+**Hierarquia**
+- Título de capítulo e faixa de subtópico devem comunicar onde o leitor está.
+- Texto-base em parágrafos didáticos com subtítulos; quadros somente quando houver comparação ou raciocínio que ganhe com o formato.
+- Tabelas para matrizes diagnósticas, diferenças de esquemas e critérios; nunca duplicar a mesma comparação no card logo seguinte.
+- Figuras clínicas originais junto do quadro clínico; microscopia junto do diagnóstico. Legenda fiel à imagem real; nunca substituir por foto de outro sinal clínico mantendo uma legenda antiga.
+- **Pulo do Gato** é reservado a dicas de alto impacto, com sua identidade de mascote; outras observações ficam em notas discretas sem mascote.
+- **O que não posso esquecer** é um único painel de fechamento, com itens curtos e numerados e hierarquia visual clara. Não deve aparecer como mera lista anônima.
+- **Quadro final** de múltiplas doenças: uma única tabela comparativa mais um alerta pertinente. Não empilhar dois fluxos, três cards, dois quadros e um callout repetindo a mesma informação.
+
+**Foto externa quebrada:** recuperar fotografia verdadeira com licença de reutilização confiável; quando a fotografia exata não estiver disponível, uma alternativa real só pode ser usada com legenda corrigida que indique **precisamente** o que mostra. Preferir imagem real de domínio público/CC0 e CDN verificável, ou hospedagem própria quando viável, preservando atribuição. Nunca substituir foto do colo em morango por secreção cervical dizendo que é petéquia. Validação no site/PWA é obrigatória antes de afirmar que uma foto está renderizada.
+
+**Revisão editorial**: checar, por capítulo, densidade de cards, frequência de callouts, variedade de recursos visuais com propósito, contraste de cores, composição mobile e foco didático. Se dois blocos informarem a mesma coisa sem adicionar aprendizado, consolidá-los.

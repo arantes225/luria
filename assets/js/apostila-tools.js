@@ -166,10 +166,24 @@
     .apostila-image-candidate-actions [data-apostila-image-action="approve"]{background:var(--accent);border-color:var(--accent);color:#fff}
     .apostila-image-candidate-actions [data-apostila-image-action="reject"]{color:var(--danger,#b42318)}
     .apostila-approved-figure{width:min(58%,520px);margin:18px auto 20px;padding:14px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}.apostila-approved-figure-intro{margin:0 0 11px;padding:10px 11px;border-left:3px solid var(--accent);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));text-align:left}.apostila-approved-figure-intro span{display:block;margin-bottom:4px;color:var(--accent);font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.apostila-approved-figure-intro p{margin:0!important;color:var(--text);font-size:11.2px!important;line-height:1.55!important}.apostila-approved-figure-focus{margin-top:8px;padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--accent) 20%,var(--border));color:var(--text);font-size:10.2px;line-height:1.48;text-align:left}.apostila-approved-figure-focus strong{color:var(--accent);font-weight:650}
+    .apostila-approved-figure{background:var(--surface);box-shadow:none!important;border:1px solid var(--border)!important;padding:12px!important}
+    .apostila-approved-figure-focus{background:color-mix(in srgb,var(--accent) 4%,var(--surface));padding:10px 11px;margin:12px 0 0;border:0;border-left:3px solid var(--accent);border-radius:0 7px 7px 0}
+    .apostila-approved-figure figcaption{font-size:10.8px;line-height:1.5;padding:0 3px}
     .apostila-approved-figure img{display:block;width:100%;max-width:440px;max-height:360px;object-fit:contain;margin:0 auto;border-radius:10px;background:#fff}
     .apostila-approved-figure figcaption{margin-top:10px;color:var(--muted);font-size:10.5px;line-height:1.52;text-align:left}
     .apostila-approved-figure figcaption strong{color:var(--text);font-weight:600}
     .apostila-approved-figure-source{display:inline-block;margin-top:5px;color:var(--accent);font-size:9px;text-decoration:none}
+    /* Tamanho clínico LURIA: nunca usar altura de imagem para inflar a apostila. */
+    .book-curated-clinical-image{width:min(100%,520px)!important;max-width:520px!important;box-sizing:border-box;margin:16px auto 22px!important}
+    .book-curated-clinical-image img{max-height:340px!important;object-fit:contain!important}
+    .apostila-approved-figure{width:min(100%,480px)!important;max-width:480px!important;box-sizing:border-box;margin:18px auto 22px!important}
+    .apostila-approved-figure img{max-height:320px!important;object-fit:contain!important}
+    @media(max-width:600px){.book-curated-clinical-image,.apostila-approved-figure{width:100%!important;max-width:100%!important}.apostila-approved-figure img,.book-curated-clinical-image img{max-height:300px!important}}
+    @media print{.book-curated-clinical-image,.apostila-approved-figure{break-inside:avoid;page-break-inside:avoid}}
+    .apostila-approved-source-notice{padding:13px;border:1px dashed color-mix(in srgb,var(--accent) 40%,var(--border));border-radius:11px;background:var(--surface-2);text-align:left}
+    .apostila-approved-source-notice p{font-size:11.6px!important;line-height:1.6!important;margin:0 0 10px!important;color:var(--text)}
+    .apostila-approved-source-notice a{display:inline-flex;align-items:center;min-height:38px;padding:8px 12px;background:var(--accent);border-radius:8px;color:#fff!important;text-decoration:none;font-size:11px;font-weight:600}
+    .apostila-approved-figure-source-only{width:min(100%,450px)!important}
     .apostila-approved-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;margin:16px 0 18px}
     .apostila-approved-pair .apostila-approved-figure{width:100%;max-width:none;margin:0}
     .apostila-approved-pair .apostila-approved-figure img{max-width:100%}
@@ -204,12 +218,7 @@
     const title = String(asset.caption_title || asset.title || "Imagem didática").trim();
     const didactic = String(asset.didactic_note || "").trim();
     const captionText = String(asset.caption || "").trim();
-    const introText = String(
-      asset.intro_text ||
-      asset.lead_in ||
-      didactic ||
-      ("Antes de seguir, observe " + title.toLowerCase() + ". Use a imagem para reconhecer o padrão visual e relacioná-lo ao raciocínio clínico desta seção.")
-    ).trim();
+    const introText = String(asset.intro_text || asset.lead_in || "").trim();
     const visualFocus = String(
       asset.visual_focus ||
       asset.what_to_look_for ||
@@ -218,16 +227,51 @@
     ).trim();
     const clinicalLink = String(asset.clinical_link || asset.clinical_pearl || "").trim();
 
-    const intro = document.createElement("div");
-    intro.className = "apostila-approved-figure-intro";
-    intro.innerHTML = '<span>Leitura guiada</span><p>' + esc(introText) + '</p>';
-    figure.appendChild(intro);
+    if (introText) {
+      const intro = document.createElement("div");
+      intro.className = "apostila-approved-figure-intro";
+      intro.innerHTML = '<span>O que observar</span><p>' + esc(introText) + '</p>';
+      figure.appendChild(intro);
+    }
 
-    const img = document.createElement("img");
-    img.src = luriaSafeContentUrl(src, {relative:true}) || "";
-    img.alt = String(asset.alt || captionText || "Imagem didática");
-    img.loading = "lazy";
-    figure.appendChild(img);
+    // Alguns links originais (DermNet/Scientific Archives) apontam para arquivos
+    // descontinuados ou bloqueiam exibição fora do site. Não renderizar <img> quebrada.
+    const directImageUnavailable = asset.render_mode === "source_link";
+    if (directImageUnavailable) {
+      const original = luriaSafeContentUrl(row.source_url);
+      if (!original) return null;
+      figure.classList.add("apostila-approved-figure-source-only");
+      const notice = document.createElement("div");
+      notice.className = "apostila-approved-source-notice";
+      const explanation = document.createElement("p");
+      explanation.textContent = "A imagem clínica está disponível na publicação original. O arquivo externo não possui acesso direto confiável para incorporação nesta apostila.";
+      notice.appendChild(explanation);
+      const link = document.createElement("a");
+      link.href = original;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Abrir fotografia clínica na fonte ↗";
+      link.setAttribute("aria-label", "Abrir " + title + " na fonte original");
+      notice.appendChild(link);
+      figure.appendChild(notice);
+    } else {
+      const img = document.createElement("img");
+      img.src = luriaSafeContentUrl(src, {relative:true}) || "";
+      img.alt = String(asset.alt || captionText || "Imagem didática");
+      img.loading = "lazy";
+      img.dataset.apostilaImageFallback = "approved-source";
+      img.dataset.apostilaImageSourceUrl = luriaSafeContentUrl(row.source_url) || "";
+      // Redirecionamento alternativo do repositório de arquivos públicos.
+      // Se o CDN falhar, tentar a URL canônica antes de mostrar erro.
+      try {
+        const media = new URL(src, location.href);
+        if (media.hostname === "upload.wikimedia.org") {
+          const filename = decodeURIComponent(media.pathname.split("/").pop() || "");
+          if (filename) img.dataset.apostilaFallbackUrl = "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(filename);
+        }
+      } catch {}
+      figure.appendChild(img);
+    }
 
     if (visualFocus) {
       const focus = document.createElement("div");
@@ -261,62 +305,122 @@
     return figure;
   }
 
-  function placeApprovedImage(row) {
+  // A imagem complementa o raciocínio do capítulo: não cria galerias para somar páginas.
+  function normalizedImageIdentity(raw) {
+    const input = String(raw || "").trim();
+    if (!input) return "";
+    try {
+      const url = new URL(input, location.href);
+      return (url.hostname.toLowerCase() + decodeURIComponent(url.pathname))
+        .replace(/\/{2,}/g, "/").toLowerCase();
+    } catch {
+      return input.split(/[?#]/)[0].replace(/\/{2,}/g, "/").toLowerCase();
+    }
+  }
+
+  function figureKind(text) {
+    const s = String(text || "").toLowerCase();
+    if (/microsc|esfrega|fotomicro|gram|clue cell|levedura|pseudohifa|bacilo|histopat/.test(s)) return "microscopy";
+    if (/fotografia|imagem cl[íi]nica|vulva|colo em morango|les[aã]o|corrimento|dermnet|secre[cç][aã]o/.test(s)) return "clinical";
+    if (/fluxograma|esquema|diagrama|gr[aá]fico/.test(s)) return "diagram";
+    return "other";
+  }
+
+  function imageNoveltyScore(row, kinds) {
+    const asset = getAsset(row);
+    const description = [asset.title, asset.alt, asset.caption, row.candidate_key].join(" ");
+    const kind = figureKind(description);
+    const licensed = String(row.source_license || "").toLowerCase();
+    let score = 10;
+    if (kinds.includes(kind)) score -= 8;
+    else score += 9;
+    if (/dom[íi]nio p[úu]blico|cc by/.test(licensed)) score += 3;
+    if (/condicionad|conferir|verificar/.test(licensed)) score -= 2;
+    if (kind === "clinical" && kinds.includes("microscopy")) score += 5;
+    return score;
+  }
+
+  function afterReadingAnchor(target, index, total, row) {
+    // Dentro de capítulos por doença: foto clínica próxima ao quadro clínico,
+    // microscopia próxima do diagnóstico, sem aglomeração após o título.
+    const asset = getAsset(row);
+    const kind = figureKind([asset.title, asset.alt, asset.caption, row.candidate_key].join(" "));
+    const unit = target.querySelector('.luria-disease-unit[data-unit="' + (kind === "clinical" ? "3" : "4") + '"]');
+    if (unit) {
+      const paragraph = unit.querySelector("p");
+      return paragraph || unit.querySelector(".luria-disease-unit-title");
+    }
+    const headings = [...target.children].filter(element => /^H[34]$/.test(element.tagName));
+    if (headings.length) {
+      const heading = headings[Math.min(headings.length - 1, Math.floor((index + 1) * headings.length / (total + 1)))];
+      let next = heading.nextElementSibling;
+      while (next && !/^H[234]$/.test(next.tagName)) {
+        if (next.tagName === "P" || next.tagName === "UL" || next.tagName === "OL") return next;
+        next = next.nextElementSibling;
+      }
+      return heading;
+    }
+    const paragraphs = [...target.children].filter(element => element.tagName === "P" && element.textContent.trim().length > 60);
+    return paragraphs[Math.min(paragraphs.length - 1, Math.floor((index + 1) * paragraphs.length / (total + 1)))] || target.querySelector("h2");
+  }
+
+  function placeApprovedImage(row, slotIndex, slotTotal) {
     if (document.querySelector('[data-apostila-approved-image="' + Number(row.id) + '"]')) return;
     const target = document.getElementById(String(row.target_section || "").replace(/^#/, ""));
     if (!target) return;
-
-    const asset = getAsset(row);
-    const selector = String(row.target_selector || asset.target_selector || "").trim();
-    let anchor = selector ? target.querySelector(selector) : null;
     const figure = createApprovedFigure(row);
     if (!figure) return;
-
-    const placement = String(row.placement || asset.placement || "append");
-    if (!anchor) {
+    const asset = getAsset(row);
+    const selector = String(row.target_selector || asset.target_selector || "").trim();
+    const anchor = selector ? target.querySelector(selector) : afterReadingAnchor(target, slotIndex, slotTotal, row);
+    if (!anchor || anchor === target) {
       target.appendChild(figure);
       return;
     }
-    if (placement === "before") anchor.insertAdjacentElement("beforebegin", figure);
-    else if (placement === "prepend") anchor.insertAdjacentElement("afterbegin", figure);
-    else if (placement === "append") anchor.insertAdjacentElement("beforeend", figure);
+    if (selector && String(row.placement || asset.placement) === "before") anchor.insertAdjacentElement("beforebegin", figure);
     else anchor.insertAdjacentElement("afterend", figure);
   }
 
-  function pairAdjacentApprovedFigures() {
-    document.querySelectorAll(".apostila-approved-pair").forEach(pair => {
-      const parent = pair.parentElement;
-      [...pair.children].forEach(child => parent?.insertBefore(child, pair));
-      pair.remove();
-    });
-
-    document.querySelectorAll(".book-section").forEach(section => {
-      let node = section.firstElementChild;
-      while (node) {
-        if (!node.classList?.contains("apostila-approved-figure")) {
-          node = node.nextElementSibling;
-          continue;
-        }
-        const next = node.nextElementSibling;
-        if (!next?.classList?.contains("apostila-approved-figure")) {
-          node = node.nextElementSibling;
-          continue;
-        }
-        const pair = document.createElement("div");
-        pair.className = "apostila-approved-pair";
-        section.insertBefore(pair, node);
-        pair.appendChild(node);
-        pair.appendChild(next);
-        node = pair.nextElementSibling;
-      }
-    });
-  }
-
   function renderApproved() {
+    // Remove agrupamentos antigos; nenhum par ou mosaico de quatro imagens é recriado.
     document.querySelectorAll(".apostila-approved-pair").forEach(node => node.remove());
     document.querySelectorAll(".apostila-approved-figure[data-apostila-approved-image]").forEach(node => node.remove());
-    rows.filter(row => row.review_status === "approved").forEach(placeApprovedImage);
-    pairAdjacentApprovedFigures();
+
+    const grouped = new Map();
+    rows.filter(row => row.review_status === "approved").forEach(row => {
+      const key = String(row.target_section || "");
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key).push(row);
+    });
+
+    grouped.forEach((candidates, sectionId) => {
+      const section = document.getElementById(sectionId.replace(/^#/, ""));
+      if (!section) return;
+      const authoredImages = [...section.querySelectorAll("img")];
+      const used = new Set(authoredImages.map(img => normalizedImageIdentity(img.getAttribute("src"))).filter(Boolean));
+      const authoredKinds = authoredImages.map(img =>
+        figureKind([img.alt, img.closest("figure")?.querySelector("figcaption")?.textContent || ""].join(" "))
+      );
+      const ranked = candidates
+        .filter(row => {
+          const asset = getAsset(row);
+          const identities = [asset.src, asset.original_src, asset.resolved_src].map(normalizedImageIdentity).filter(Boolean);
+          if (!identities.length || identities.some(id => used.has(id))) return false;
+          identities.forEach(id => used.add(id)); // evita mesmo arquivo aprovado duas vezes
+          return true;
+        })
+        .map(row => ({row, score:imageNoveltyScore(row, authoredKinds)}))
+        .sort((a,b) => b.score - a.score || Number(a.row.id) - Number(b.row.id));
+
+      // Uma imagem principal já presente é mantida; no máximo um complemento visual
+      // realmente distinto por seção. Sem principal, no máximo duas em seção extensa.
+      const subsectionCount = [...section.children].filter(el => /^H[34]$/.test(el.tagName)).length;
+      const maxAdditional = authoredImages.length ? 1 : (subsectionCount >= 4 ? 2 : 1);
+      const chosen = ranked.filter(item => item.score >= (authoredImages.length ? 12 : 0))
+        .slice(0,maxAdditional)
+        .map(item => item.row);
+      chosen.forEach((row, index) => placeApprovedImage(row,index,chosen.length));
+    });
   }
 
   function ensureLightbox() {

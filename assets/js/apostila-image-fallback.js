@@ -18,6 +18,28 @@
       case 'ist-figure':
         image.closest('figure')?.classList.add('ist-image-unavailable');
         break;
+      case 'approved-source': {
+        // Tenta o endereço canônico alternativo antes de declarar a imagem indisponível.
+        const alternative = image.dataset.apostilaFallbackUrl;
+        if (alternative && image.dataset.apostilaImageTriedFallback !== 'yes' && alternative !== image.src) {
+          image.dataset.apostilaImageTriedFallback = 'yes';
+          image.src = alternative;
+          break;
+        }
+        image.hidden = true;
+        const figure = image.closest('figure');
+        const url = image.dataset.apostilaImageSourceUrl;
+        if (url && figure && !figure.querySelector('.image-source-retry')) {
+          const a = document.createElement('a');
+          a.className = 'image-source-retry';
+          a.href = url;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.textContent = 'Abrir imagem na fonte original ↗';
+          image.insertAdjacentElement('afterend', a);
+        }
+        break;
+      }
       case 'candidate':
         image.style.display = 'none';
         image.parentElement?.insertAdjacentText('beforeend', 'Imagem indisponível');

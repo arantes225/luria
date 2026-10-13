@@ -91,7 +91,7 @@
     if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
     if (img) {
       img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
-      if (/luria-homem-adulto-v7-aberto\.webp/.test(img.getAttribute('src')||'')) {
+      if (/luria-(?:homem-adulto-v7|mulher-adulta-v5)-aberto\.webp/.test(img.getAttribute('src')||'')) {
         img.dataset.luriaEyes=unconscious?"closed":"auto";
         img.dataset.luriaRr=String(vitals.rr??"");
       } else {

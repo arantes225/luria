@@ -523,15 +523,16 @@
       return female ? "/assets/img/plantao/02-mulher-idosa-acordada.webp" : "/assets/img/plantao/10-homem-idoso-acordado.webp";
     }
     if(specialty.includes("cirurg") || title.includes("trauma") || title.includes("abdominal")) {
-      return "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
+      return female ? "/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
     }
-    return index%2 ? "/assets/img/plantao/04-mulher-adulta-acordada.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
+    return female || index%2 ? "/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
   }
 
   function plantaoReferenceFaceCrop(src){
     const file=String(src||"").split("/").pop();
     const presets={
       "luria-homem-adulto-v7-aberto.webp":{x:50,y:24,scale:2.05},
+      "luria-mulher-adulta-v5-aberto.webp":{x:43,y:24,scale:2.08},
       "plantao-homem-adulto-acordado-v2-1600x900.webp":{x:50,y:24,scale:2.05},
       "04-mulher-adulta-acordada.webp":{x:50,y:22,scale:2.08},
       "02-mulher-idosa-acordada.webp":{x:50,y:23,scale:2.0},
@@ -2795,7 +2796,7 @@
     girl:{awake:"assets/img/plantao pwa/10-menina-acordada.webp",closed:"assets/img/plantao pwa/08-menina-olhos-fechados.webp"},
     boy:{awake:"assets/img/plantao pwa/13-menino-acordado.webp",closed:"assets/img/plantao pwa/09-menino-olhos-fechados.webp"},
     pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/02-gestante-olhos-fechados.webp"},
-    woman:{awake:"assets/img/plantao pwa/05-mulher-adulta-negra-acordada.webp",closed:"assets/img/plantao pwa/04-mulher-adulta-negra-olhos-fechados.webp"},
+    woman:{awake:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp",closed:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp"},
     man:{awake:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"},
     elderlyWoman:{
       awake:"assets/img/plantao pwa/16-mulher-idosa-acordada.webp",
@@ -2886,6 +2887,24 @@
     const isPediatric=normalizeLabel(state.current?.specialty||"").includes("pedi");
     if((specifiedMale || oldMaleImage) && !isPediatric && (!Number.isFinite(age) || age>=13)){
       return {patient_image:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",unconscious_image:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"};
+    }
+
+    // Mulher adulta V5 aprovada: foto fixa, olhos/respiração via overlays sincronizados.
+    // Não interfere em crianças, gestantes, idosas, APH ou desastre.
+    const femaleSex=sex==="f" || sex.startsWith("fem");
+    const specifiedWomanImage=/mulher-adulta/.test(String(state.current?.presentation?.patient_image||""));
+    const isWomanPediatric=isPediatric || (Number.isFinite(age) && age<18);
+    const clinicalText=normalizeLabel([
+      state.current?.title,
+      state.current?.summary,
+      state.current?.presentation?.opening,
+      state.current?.presentation?.chief_complaint
+    ].filter(Boolean).join(" "));
+    const pregnantWoman=/gravidez|gestante|gestacao|eclampsia|pre-eclampsia|trabalho de parto/.test(clinicalText)
+      && !/pos-parto|puerper/.test(clinicalText);
+    if((femaleSex||specifiedWomanImage) && !isWomanPediatric && !pregnantWoman
+       && !isDisasterCase(state.current)){
+      return {patient_image:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp",unconscious_image:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp"};
     }
 
     const pwaPair=pwaPatientImagePair();
