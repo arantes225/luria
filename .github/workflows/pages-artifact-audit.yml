@@ -9,6 +9,8 @@ on:
       - "scripts/build-public-pages.cjs"
       - "apostilas/**"
       - "assets/**"
+      - "tests/pages-artifact-security.test.cjs"
+      - "content/weekly/**"
 
 permissions:
   contents: read
