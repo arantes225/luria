@@ -1,5 +1,21 @@
 # Padrão editorial das Apostilas LURIA
 
+## Norma vigente — mínimo de 60.000 caracteres didáticos úteis (13/10/2026)
+
+**A partir desta data, o piso editorial obrigatório é 60.000 caracteres reais por apostila, sem teto fixo.** Esta norma substitui o piso anterior de 60.000, inclusive em apostilas antigas já expandidas ou ainda pendentes de revisão. A referência quantitativa é o texto instrutivo único dos capítulos, descontando HTML, CSS, JavaScript, JSON estrutural, navegação, capa, sumário, referências, enunciados decorativos e trechos repetidos. A ferramenta de auditoria é *triagem*, não certificação clínica nem prova de que todas as palavras são únicas.
+
+**Regra editorial mais importante: não reexplicar e não converter elementos didáticos em textões.** Atingir 60 mil não autoriza reciclar fisiopatologia, repetir a mesma ideia em introdução, diagnóstico e revisão, ou adicionar blocos extensos, deslocados e sem nexo. Cada conceito fundamental é ensinado uma única vez, no ponto lógico; menções posteriores devem acrescentar uma implicação, distinção ou remissão breve ao trecho original. Antes de inserir texto novo, localizar o que já é ensinado e desenvolver apenas lacunas identificáveis.
+
+- **Aprofundamento aditivo e localizado:** ampliar causas, mecanismos, sinais, diagnóstico diferencial, interpretação de exames, escolhas de conduta, exceções, complicações e seguimento no capítulo da doença ou sistema correspondente; nunca despejar apêndice genérico ao final.
+- **Os visuais continuam ensinando:** manter e, quando cabível, aprofundar tabelas, algoritmos, fluxogramas, esquemas, mapas mentais, callouts, quadros e imagens aprovadas. Explicações breves e causais acompanham a figura ou o ponto de decisão; não substituir a figura por várias páginas de prosa nem escrever por extenso tudo que a tabela já comunica.
+- **Leitura como cursinho premium:** alternar parágrafos enxutos e conectados, subtítulos informativos e recursos visuais pertinentes; utilizar casos, comparação de entidades, valores de exames e decisões clínicas para ensinar fatos novos. Cortar redundância mesmo quando isso reduzir a contagem — depois completar com ciência útil, não enchimento.
+- **Revisão de repetição:** verificar se dois blocos, tabelas ou casos transmitem a mesma conclusão sem ganho real. Consolidar o redundante, preservar o melhor recurso e preencher lacunas em outro ponto. Novos blocos precisam responder uma pergunta ainda não respondida na apostila.
+- **Condição de conclusão:** >=60.000 caracteres úteis *e* revisão clínica, de redundância, fontes/doses, layout desktop/PWA, imagens, navegação e valor para questões. Bater o número não gera selo automático.
+
+**Scripts:** usar `node scripts/audit-apostilas-60k.mjs --json` para triagem geral; o antigo `audit-apostilas-40k.mjs` permanece como alias de compatibilidade, mas passa a aplicar o piso de 60 mil. O gerador de apostilas e a auditoria em lote também devem obedecer a esse piso.
+
+---
+
 ## Regra operacional a partir de 13/10/2026: produção em lote e imagens no Admin
 
 - **Produzir, revisar e publicar apostilas por lote**, não pelo rito manual de abrir cada página para curadoria. Adotar a revisão de conteúdo e o controle de qualidade para todos os temas do lote; não confundir automação com redução da profundidade.
@@ -113,12 +129,12 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 
 ---
 
-## Padrão Livro-Texto 40K — revisão global da biblioteca (12/10/2026)
+## Padrão Livro-Texto 60K — atualização de 13/10/2026 do padrão iniciado em 12/10/2026
 
 **Escopo:** aplica-se a **todos os cadernos/apostilas já existentes**, publicados ou não, e a quaisquer materiais futuros, independentemente de estarem em \`index.html\` ou em \`content.json\`. Não basta mudar a instrução de criação: cada conteúdo precisa ser efetivamente revisado, reescrito, expandido e validado.
 
 ### Mínimo editorial objetivo
-- **Pelo menos 40.000 caracteres de conteúdo didático realmente legível por apostila**; excluem-se código HTML, CSS, JavaScript, JSON estrutural, tags, navegação, menus, capa/hero, sumário, nomes de campos, bibliografia e repetições artificiais. A contagem deve ser feita sobre os textos desenvolvidos dos capítulos. O mínimo **não** funciona como teto.
+- **Pelo menos 60.000 caracteres de conteúdo didático realmente legível por apostila**; excluem-se código HTML, CSS, JavaScript, JSON estrutural, tags, navegação, menus, capa/hero, sumário, nomes de campos, bibliografia e repetições artificiais. A contagem deve ser feita sobre os textos desenvolvidos dos capítulos. O mínimo **não** funciona como teto.
 - Não adicionar parágrafos genéricos apenas para alcançar a contagem: conferir coerência científica, ausência de duplicações, explicações completas, fontes e utilidade clínica.
 - Todas as entidades abordadas no tema devem ser explicadas em sequência causal: **base anatômica/fisiológica → gatilho/etiologia → mecanismos celulares e sistêmicos → repercussão funcional → manifestação → exame/diagnóstico → decisão e tratamento → acompanhamento**.
 - Se houver apresentações, síndromes ou categorias independentes, aprofundar cada uma por completo, sem misturar subtópicos de maneira que confunda a comparação.
@@ -130,7 +146,7 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 - Acrescentar casos clínicos comentados e diferenciais quando forem didáticos; não confundir hipótese de prova com protocolo clínico.
 - Revisar diretrizes oficiais e consensos atuais, com preferência pelo contexto brasileiro; descrever divergências relevantes de forma transparente.
 - Cada caderno deve ter seções/subseções lógicas e índice funcional. **Preservar URLs, IDs de seções relevantes, o renderer, a identidade LURIA, a interface responsiva e os recursos de leitura/estudo.** Não modificar a autoria/atribuição original sem orientação expressa.
-- Não marcar o caderno como "40K revisado" antes da verificação objetiva da extensão **e** de uma revisão clínica e pedagógica humana/editorial.
+- Não marcar o caderno como "60K revisado" antes da verificação objetiva da extensão **e** de uma revisão clínica e pedagógica humana/editorial.
 
 ### Continuidade rigorosa do fluxo de imagens estabelecido
 1. **Reutilizar inicialmente as imagens já aprovadas no acervo LURIA**, mantendo seus vínculos e posicionamento; não descartar aprovações anteriores por causa da revisão textual.
@@ -143,7 +159,7 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 8. Na revisão de um caderno **não** remover ou trocar imagens aprovadas sem justificativa técnica e verificação visual. Pendências da fila seguem pendentes até ação administrativa; nunca aprovar automaticamente em lote.
 
 ### Critérios mínimos de aceitação por apostila
-- [ ] Conteúdo realmente desenvolvido com >= 40.000 caracteres úteis aferidos.
+- [ ] Conteúdo realmente desenvolvido com >= 60.000 caracteres úteis aferidos.
 - [ ] Revisão item a item de cobertura, lacunas, lógica fisiopatológica, diagnóstico, conduta e atualização.
 - [ ] Referências pertinentes, verificáveis, incluídas junto às recomendações e na bibliografia.
 - [ ] Capítulos completos, índice/âncoras e layout LURIA/PWA preservados.
@@ -158,7 +174,7 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 
 ## Diretriz irrevogável — aprofundar SEM desmontar os recursos visuais
 
-**Correção expressa do escopo feita pelo responsável pela LURIA em 12/10/2026: a exigência mínima de 40.000 caracteres significa ADICIONAR aprofundamento ao material existente, nunca trocar seus esquemas por texto corrido. Quanto mais visual, melhor, desde que seja didaticamente correto e legível.**
+**Correção expressa do escopo feita pelo responsável pela LURIA em 12/10/2026: o mínimo vigente de 60.000 caracteres significa ADICIONAR aprofundamento ao material existente, nunca trocar seus esquemas por texto corrido. Quanto mais visual, melhor, desde que seja didaticamente correto e legível.**
 
 ### Regra de preservação visual (obrigatória para os 25 cadernos e todos os futuros)
 1. **Não excluir, simplificar ou transformar em parágrafos** os mapas mentais, esquemas anatômicos, esquemas fisiológicos/fisiopatológicos, fluxogramas, algoritmos clínicos, gráficos, tabelas, quadros comparativos, caixas de atenção, callouts, cards, pulo do gato, recursos interativos e figuras que já existem. Preservar também os estilos CSS, IDs, interações, cores, composição responsiva e disposição visual desses componentes.
@@ -169,14 +185,14 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 6. Preservar os **mapas mentais** e, quando houver lacunas, adicionar ramificações relevantes e uma leitura guiada do mapa. Não substituí-los por sumários em texto.
 7. Preservar toda imagem já aprovada, incluindo o local de inserção, salvo correção de erro comprovado; imagens adicionais seguem rigorosamente o fluxo de curadoria/aprovação do Admin, com preferência por esquemas reais, técnicos e fotos clínicas reais quando pertinentes.
 8. Adicionar **novos elementos visuais** quando houver ganho didático real: sequências de mecanismo, mapas conceituais, diagramas de decisão, tabelas de diferenciais, comparações lado a lado, gráficos de tendências e esquemas de exames. Elementos HTML/CSS/SVG desenhados no site devem ser acessíveis, ter bom contraste, continuar legíveis no PWA e obedecer ao padrão visual LURIA.
-9. **Contagem de caracteres**: os 40.000 caracteres mínimos vêm exclusivamente de aprofundamento didático substancial; **não** é necessário nem desejável aumentar o número de caracteres às custas do conteúdo visual. Tampouco contar classes, tags, JS ou SVG como caracteres didáticos para atingir a meta.
+9. **Contagem de caracteres**: os 60.000 caracteres mínimos vêm exclusivamente de aprofundamento didático substancial; **não** é necessário nem desejável aumentar o número de caracteres às custas do conteúdo visual. Tampouco contar classes, tags, JS ou SVG como caracteres didáticos para atingir a meta.
 10. Antes e depois de cada alteração, registrar/verificar um inventário dos componentes visuais: quantidade, tipo, âncora, funcionamento, renderização em tela larga e no PWA. Fazer comparação visual para garantir que os elementos foram mantidos e que não apareceram overflow, imagens quebradas, callouts ocultos ou alterações de proporção.
 11. Só remover ou substituir um esquema existente quando for **objetivamente incorreto, inseguro ou duplicado**, justificando a mudança e, preferencialmente, corrigindo-o **na mesma linguagem visual**, preservando a experiência do estudante. Nunca fazer remoções em massa como parte de uma conversão para formato de livro.
 12. A expansão deve ocorrer **junto aos capítulos e esquemas correspondentes**, não apenas pelo acréscimo repetitivo de um grande bloco de "aprofundamento" ao final do arquivo. Para materiais já expandidos, uma segunda passada deve integrar parágrafos novos às seções visuais originais e enriquecer as figuras, evitando trechos deslocados.
 
 ### Definição de conclusão — conteúdo + visual
 Uma apostila revisada só pode ser considerada concluída se:
-- tiver pelo menos 40.000 caracteres de explicação didática **real**, revisada e cientificamente correta;
+- tiver pelo menos 60.000 caracteres de explicação didática **real**, revisada e cientificamente correta;
 - preservar 100% dos componentes visuais úteis da versão anterior e seu funcionamento;
 - ampliar o aprofundamento **dos esquemas já existentes** e introduzir visualizações novas onde agreguem aprendizado;
 - manter o fluxo de aprovação de imagens e conferir fontes, legendas e acessibilidade;
@@ -200,7 +216,7 @@ A pedido do responsável pela LURIA, foram examinados diretamente os PDFs dispon
 1. O site LURIA é **responsivo e de rolagem contínua**, portanto **não converter todo o conteúdo em cartões enormes nem fixar dimensões A4 na tela do PWA**. Na versão desktop, usar ocasionalmente duas colunas internas quando isso melhora leituras comparativas; em telas estreitas, empilhar em uma coluna sem reduzir legibilidade.
 2. No modo impressão/PDF, contemplar **paginação A4 com aproximadamente 40–60 páginas para temas completos que justifiquem essa extensão**, nunca fabricar folhas vazias, divisões forçadas ou letra ampliada artificialmente apenas para aumentar o contador. O número de páginas é consequência de texto científico consistente + diagramas, imagens, tabelas e espaços de leitura.
 3. **Preservar mapas mentais, callouts, Pulo do Gato, gráficos, tabelas, fluxos e imagens** antes de qualquer ajuste. Exemplo de capítulo: breve conceito desenvolvido, **esquema causal**, quadro de diferencial, leitura da imagem, algoritmo de decisão comentado e um caso comentado.
-4. **Evitar "textões":** apresentar preferencialmente dois ou três parágrafos articulados e então o recurso visual adequado. O requisito mínimo de 40.000 caracteres continua válido para o caderno integral, mas o material deve distribuí-los ao longo das seções e **nunca cumpri-lo com blocos massivos ao final**.
+4. **Evitar "textões":** apresentar preferencialmente dois ou três parágrafos articulados e então o recurso visual adequado. O requisito mínimo de 60.000 caracteres continua válido para o caderno integral, mas o material deve distribuí-los ao longo das seções e **nunca cumpri-lo com blocos massivos ao final**.
 5. Em temas com entidades diferentes, **capítulos separados para cada uma** e seção posterior de comparação lado a lado. Em ginecologia, por exemplo, candidíase, vaginose e tricomoníase devem receber explicações próprias antes do quadro comparativo.
 6. Tabelas e fluxogramas devem ser acompanhados de legendas com **o que observar, significado e consequência prática**. Sempre que um fluxograma contiver ponto de decisão, explique brevemente no local por que o ramo importa.
 7. Ícones, cores e caixas de atenção têm semântica consistente, alto contraste e devem ser legíveis tanto em light quanto dark e PWA. Não fazer um "mar de caixas": mesclar quadros, diagramas e leitura fluida.
@@ -223,7 +239,7 @@ O responsável rejeitou expressamente a repetição de imagens para aumentar pá
 3. **Dimensões padrão LURIA**: figura clínica em largura usual de cerca de 480–520 px no desktop, altura proporcional, limite aproximado de 320–340 px na visualização comum, e 100% responsiva no PWA; maior apenas quando necessária para leitura de detalhes. A imagem original é expansível, não deve ser esticada ou achatada.
 4. **Aprofundamento integrado, não anexado em camadas.** Não acumular seções repetidas no fim sob títulos genéricos como "Capítulos aprofundados", "Estudo etiológico" e "Aprofundamento". Cada explicação entra no capítulo da sua entidade, respeitando a sequência conceito → mecanismo → clínica → diagnóstico → diferencial → tratamento → complicação → seguimento. Referências devem encerrar o caderno.
 5. **Texto e recursos visuais complementares.** Intercalar explicações com tabelas, diagramas, fluxos, cards e callouts originais, evitando longos blocos contínuos. Tabelas precisam ter relevância e interpretação, não são tabelas decorativas.
-6. **A contagem de 40.000 caracteres é piso de texto útil, não meta de altura.** Excluir repetições textuais, CSS/JS, sumário, referências e artifícios gráficos. Nunca criar páginas ou imagens para completar uma métrica.
+6. **A contagem de 60.000 caracteres é piso de texto útil, não meta de altura.** Excluir repetições textuais, CSS/JS, sumário, referências e artifícios gráficos. Nunca criar páginas ou imagens para completar uma métrica.
 7. **Verificação antes/depois:** auditar URLs de imagens repetidas, imagens agrupadas, quantidade de visuais, capítulos após a bibliografia, títulos repetidos, links de sumário, tabelas, layout PWA e legibilidade das legendas.
 8. **Não remover as imagens da fila do Admin por conveniência visual.** Aprovação original permanece registrada; o renderer escolhe inserções pedagógicas sem duplicar ou transformar a seção em galeria.
 9. **Qualidade do texto:** evitar páragrafos repetindo explicações anteriores; aprofundar fisiopatologia e raciocínio com distinções clínicas, resultados discordantes e situações especiais objetivas. Quando um tópico fica extenso, subdividir com subtítulos relevantes.
@@ -302,7 +318,7 @@ Comparação feita com os PDFs de referência da pasta do responsável ("02 - CO
 
 ## Critério de suficiência para questões — estudo por material único
 
-**Obrigatório nas revisões médicas da LURIA:** o caderno deve permitir ao estudante compreender o tema sem consultar outro material de base. Não basta alcançar 40.000 caracteres ou citar uma doença: o ensino deve conectar mecanismo, manifestações, interpretação dos testes, escolhas terapêuticas e consequências, incluindo recorrência e complicações quando forem relevantes.
+**Obrigatório nas revisões médicas da LURIA:** o caderno deve permitir ao estudante compreender o tema sem consultar outro material de base. Não basta alcançar 60.000 caracteres ou citar uma doença: o ensino deve conectar mecanismo, manifestações, interpretação dos testes, escolhas terapêuticas e consequências, incluindo recorrência e complicações quando forem relevantes.
 
 A qualidade deve ser avaliada por perguntas clínicas reais que o material permite responder, e não por número de páginas. Antes da publicação, conferir:
 - se a fisiologia e as definições necessárias ao raciocínio estão presentes, sem blocos vazios e sem repetir a mesma explicação;
@@ -321,7 +337,7 @@ A qualidade deve ser avaliada por perguntas clínicas reais que o material permi
 
 ## Eficiência e escala da biblioteca — CSS compartilhado e carregamento sob demanda
 
-Ao ampliar todas as apostilas para cerca de 70 mil caracteres didáticos (ou mais, quando necessário), **não sacrificar profundidade clínica para economizar bytes**. O conteúdo útil permanece no HTML, com estrutura semântica; peso e latência devem ser otimizados por recursos compartilhados, compressão e cache.
+Ao ampliar todas as apostilas para no mínimo 60 mil caracteres didáticos (e mais, quando necessário), **não sacrificar profundidade clínica para economizar bytes**. O conteúdo útil permanece no HTML, com estrutura semântica; peso e latência devem ser otimizados por recursos compartilhados, compressão e cache.
 
 - **Não repetir CSS extenso em cada HTML.** Utilizar `/assets/css/apostila-luria-book.css` como folha comum para as páginas que adotarem o template editorial LURIA. O caminho foi introduzido em Vulvovaginites em 13/10/2026. Verificar compatibilidade de seletores antes de migrar outras apostilas. Atualizar `?v=` ao alterar regras que afetam leitores com cache.
 - **Manter a página HTML autossuficiente em conteúdo**, mas não em folhas de estilo repetidas. Os arquivos de CSS/JS externos devem ser reutilizados por todas as apostilas. Não duplicar bibliotecas em cada capítulo.
