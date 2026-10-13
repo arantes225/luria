@@ -83,3 +83,11 @@
 - Referências: FEBRASGO 2026 e FIGO; capítulo e âncora adicionados ao sumário; imagens aprovadas mantidas.
 - Contagem preliminar do artigo (sem scripts/estilos) passou de **36.601 a 54.567 caracteres**; contagem estrita, revisão clínica final e teste PWA ainda pendentes.
 
+
+
+### Trabalho de Parto Prematuro — expansão aplicada no renderer JSON
+- Arquivo \`apostilas/trabalho-parto-prematuro/content.json\` atualizado na branch \`main\`, commit \`5b96dc113ee7966cb4db09e58e31f2758681839e\`.
+- Novo **capítulo 19**, com nove seções aprofundadas em quiescência miometrial, remodelamento cervical, mecanismos inflamatórios, diagnóstico e probabilidade de parto nas próximas 48 horas, tocólise, corticoterapia antenatal, neuroproteção fetal, ruptura de membranas e casos clínicos.
+- Fontes complementares NICE NG25 e FEBRASGO para uso racional de tocólise. Foi preservado o formato compacto do renderer \`content.json\` e a estrutura de índice \`o\`, com novo item antes de referências. Dados de figuras/curadoria já presentes no JSON foram mantidos.
+- Contagem **preliminar** (blocos de texto incluindo marcações e rótulos) após expansão superior a 52 mil caracteres; falta executar o auditor estrito e revisar qualidade/layout/links na página servida.
+
