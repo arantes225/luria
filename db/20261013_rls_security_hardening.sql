@@ -63,3 +63,37 @@ begin
   return result;
 end;
 $function$;
+
+
+-- 5) Redact administrative/editorial metadata from the public approved-image RPC.
+-- The return type stays unchanged to preserve existing reader integrations.
+-- This intentionally remains callable by anon for public apostila images.
+CREATE OR REPLACE FUNCTION public.list_approved_apostila_images(p_apostila_path text)
+RETURNS SETOF public.apostila_image_review_queue
+LANGUAGE sql
+SECURITY DEFINER
+SET search_path TO ''
+AS $function$
+  SELECT
+    q.id,
+    q.apostila_path,
+    q.apostila_title,
+    q.candidate_key,
+    q.target_section,
+    q.target_selector,
+    q.placement,
+    (q.proposed_asset - 'editorial_note' - 'replacement_note') AS proposed_asset,
+    q.source_url,
+    q.source_name,
+    q.source_license,
+    NULL::text AS source_trust,
+    q.review_status,
+    NULL::uuid AS reviewed_by,
+    q.reviewed_at,
+    q.created_at,
+    q.updated_at
+  FROM public.apostila_image_review_queue AS q
+  WHERE q.apostila_path = p_apostila_path
+    AND q.review_status = 'approved'
+  ORDER BY q.reviewed_at NULLS LAST, q.created_at ASC;
+$function$;
