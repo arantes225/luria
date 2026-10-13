@@ -138,3 +138,8 @@
 - Criado capítulo 17 com oito seções de fisiopatologia ovariana, fogachos, síndrome geniturinária, estrogênio/progestagênio, vias oral e transdérmica, metabolismo ósseo, alternativas não hormonais e caso clínico. Fontes FEBRASGO Diretriz Brasileira 2024 e The Menopause Society 2022.
 - Conteúdo textual JSON estimado em **42.828 caracteres** na triagem preliminar, ainda sujeito a exclusão estrita de tags/estruturas e revisão clínica/visual. Renderer e sumário mantidos.
 
+
+### Cervicites e Doença Inflamatória Pélvica — expansão aplicada
+- Arquivo `apostilas/cervicites-doenca-inflamatoria-pelvica/index.html`, commit `ae2891cf4eaea963cf93ba8faf782b97ac381023`.
+- Capítulo 13 aprofundou mecanismos de clamídia, gonococo, M. genitalium, diagnóstico da DIP, antibióticos de amplo espectro, abscesso tubo-ovariano, seguimento e casos. Referências CDC e PCDT brasileiro.
+- Texto estimado do artigo: 33.427 → 44.083 caracteres; requer contagem estrita, revisão clínica e PWA. Imagens aprovadas preservadas.
