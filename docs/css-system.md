@@ -71,7 +71,7 @@ Os CSS ativos foram reduzidos de **73 para 55**, sem mudar as regras ou sua orde
 
 Estilos com consumidores ou prioridades diferentes permanecem separados. Por exemplo, o CSS público do prontuário não recebe regras internas da aplicação; impressão, livros e módulos clínicos também conservam suas responsabilidades. Não agrupar estilos atravessando outro stylesheet ou bloco inline: isso altera a cascata.
 
-O cache PWA e todas as páginas usam `ui-app.css?v=3`. Os testes verificam a base consolidada, as prioridades internas e a existência dos stylesheets das telas públicas também. O teste de navegador atende todas as requisições com arquivos locais e conta sintética.
+O cache PWA e todas as páginas usam `ui-app.css?v=4`. Os testes verificam a base consolidada, as prioridades internas e a existência dos stylesheets das telas públicas também. O teste de navegador atende todas as requisições com arquivos locais e conta sintética.
 
 ## Moldura da aplicação
 
@@ -80,3 +80,5 @@ A área externa e o header usam a cor primária do tema. A app-shell fica abaixo
 A largura máxima de conteúdo é 1440px. A topbar não tem borda inferior; seu fundo é contínuo com a moldura. As barras de rolagem usam cores do tema e trilho transparente. Plantão e onboarding rolam a main nas telas v2. A navegação instalada mantém a reserva de espaço inferior e a emergência em paisagem conserva seu modo imersivo.
 
 A abertura usa um estado de carregamento com link nativo de recuperação até Auth, tema da conta, navegação e montagem inicial estarem prontos. O Dashboard também aguarda seu modelo escolhido ou uma mensagem de recuperação. Não revelar templates intermediários usando um timer fixo. A apresentação é liberada após as condições de prontidão e os adapters completarem suas alterações no DOM.
+
+O botão de recolher/expandir fica no topo da sidebar no desktop, também quando recolhida. No celular o controle volta à sidebar enquanto o drawer está aberto; o acesso de abertura permanece disponível quando a sidebar está escondida.

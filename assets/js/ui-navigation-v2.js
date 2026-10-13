@@ -165,7 +165,7 @@
     }
     const trigger = document.getElementById('menu-open');
     if (workHub) return;
-    const host = narrow.matches && body.classList.contains('sidebar-open') ? top : bar;
+    const host = narrow.matches && !body.classList.contains('sidebar-open') ? bar : top;
     if (host && trigger && (trigger.parentElement !== host || trigger !== host.firstElementChild)) host.prepend(trigger);
   }
   function syncDrawer() {
