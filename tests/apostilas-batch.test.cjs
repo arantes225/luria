@@ -230,3 +230,24 @@ test("Vitalidade fetal preserva exame real licenciado e raciocinio clinico conte
   assert.match(html,/Oxigênio suplementar não deve ser usado rotineiramente/);
   assert.match(html,/acog\.org\/clinical\/clinical-guidance\/committee-opinion\/articles\/2021\/06\/indications/);
 });
+
+
+test("Câncer do colo: algoritmo DNA-HPV, FIGO e exceções têm navegação e justificativa",()=>{
+  const data=JSON.parse(read("apostilas/cancer-colo-utero-hpv/content.json"));
+  const sections=new Map(data.q.map(x=>[x[0],JSON.stringify(x[2])]));
+  for(const id of ["hpv-algoritmo-aplicado","colposcopia-lesoes-avancado","figo-conduta-integrada-2026","seguimento-situacoes-especiais-casos"]){
+    assert.ok(sections.has(id),"Capítulo ausente: "+id);
+    assert.ok(data.o.some(x=>x[0]===id),"Capítulo não navegável: "+id);
+    assert.ok(sections.get(id).length>4500,"Capítulo ainda superficial: "+id);
+  }
+  assert.match(sections.get("hpv-algoritmo-aplicado"),/citologia reflexa insatisfatória/);
+  assert.match(sections.get("hpv-algoritmo-aplicado"),/24 meses/);
+  assert.match(sections.get("hpv-algoritmo-aplicado"),/25 e 64 anos/);
+  assert.match(sections.get("colposcopia-lesoes-avancado"),/Curetagem endocervical/);
+  assert.match(sections.get("figo-conduta-integrada-2026"),/IIIC1/);
+  assert.match(sections.get("seguimento-situacoes-especiais-casos"),/imunossupressão/);
+  const all=JSON.stringify(data);
+  assert.ok(!all.includes("o SUS passou a priorizar a vacinação"));
+  assert.match(all,/Nota Técnica nº 32\/2026/);
+  assert.equal(new Set(data.q.map(x=>x[0])).size,data.q.length,"Há IDs repetidos de capítulo");
+});
