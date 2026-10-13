@@ -301,6 +301,15 @@
       caption.appendChild(document.createElement("br"));
       caption.appendChild(source);
     }
+    // A fonte e a licença pertencem à imagem, não ao conteúdo científico do capítulo.
+    // Sempre exibir a licença registrada, especialmente em imagens adaptadas para WebP.
+    if (row.source_license) {
+      const license = document.createElement("span");
+      license.className = "apostila-approved-figure-license";
+      license.textContent = "Licença: " + String(row.source_license);
+      license.style.cssText = "display:block;margin-top:4px;font-size:9px;line-height:1.4;color:var(--muted)";
+      caption.appendChild(license);
+    }
 
     return figure;
   }
