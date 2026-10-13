@@ -60,12 +60,45 @@ jobs:
         run: |
           python -m pip install Pillow==11.3.0
           python scripts/optimize-static-images.py --root .
+      # GitHub Pages serves the upload as publicly accessible static files.
+      # Never publish SQL, server functions, test fixtures, or internal question factory data.
+      - name: Prepare public-only Pages artifact
+        run: |
+          mkdir -p .pages-dist
+          rsync -a --prune-empty-dirs \
+            --exclude='/.pages-dist/' \
+            --exclude='/.git/' \
+            --exclude='/.github/' \
+            --exclude='/.gitignore' \
+            --exclude='/.env*' \
+            --exclude='/db/' \
+            --exclude='/supabase/' \
+            --exclude='/tests/' \
+            --exclude='/scripts/' \
+            --exclude='/tools/' \
+            --exclude='/tmp/' \
+            --exclude='/.tmp/' \
+            --exclude='/qf-*/' \
+            --exclude='/package.json' \
+            --exclude='/package-lock.json' \
+            --exclude='/README*' \
+            ./ .pages-dist/
+          test -s .pages-dist/index.html
+          test -s .pages-dist/assets/js/app.js
+          test -s .pages-dist/apostilas/index.html
+          test -f .pages-dist/CNAME
+          for folder in db supabase tests scripts tools tmp .tmp .github; do
+            test ! -e ".pages-dist/$folder" || { echo "Private directory leaked: $folder"; exit 1; }
+          done
+          if find .pages-dist -maxdepth 1 -type d -name 'qf-*' | grep -q .; then
+            echo "Internal question factory directory leaked"; exit 1
+          fi
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: .pages-dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
