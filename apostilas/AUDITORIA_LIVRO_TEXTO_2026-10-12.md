@@ -185,3 +185,15 @@ Após rejeição da repetição de figuras, mosaicos de quatro imagens e blocos 
 5. Os 9 itens marcados como \`approved\` na fila de Vulvovaginites **permanecem aprovados no Supabase**. O front-end agora faz seleção editorial para evitar exibição duplicada/agrupada sem alterar as aprovações originais nem excluir arquivos da fila.
 
 **Aplicação aos demais 24 cadernos:** regra de renderização de imagens é global; a revisão da organização textual ainda precisa ser replicada em cada caderno, com auditoria individual e sem remoção indiscriminada de imagens e esquemas úteis.
+
+
+### Reorganização clínica por doença e tratamento das três figuras externas
+
+**Pedido expresso**: cada doença deve ser ensinada integralmente em um único bloco (epidemiologia, fisiopatologia, clínica, diagnóstico, tratamento, prevenção e seguimento) e não por eixos gerais misturando candidíase, vaginose e tricomoníase.
+
+- **Vulvovaginites, commit \`676061015f55be0c1930fd0cc739d56eff0aefed\`**: retirados os antigos blocos genéricos de tratamentos, situações especiais e seguimento, consolidando os esquemas e as explicações relevantes dentro de cada doença. Avaliação inicial (princípios gerais) antes das três, quadro comparativo depois delas, referências ao final.
+- **Commit \`ca4fcb3e9f50c0dcbd09a3f4b4febebd5e2760fe\`**: sub-blocos reorganizados por doença em conceito/epidemiologia → fisiopatologia → quadro clínico → diagnóstico → tratamento → prevenção/seguimento; removidos trechos diagnósticos transversais repetidos.
+- **Commit \`ef8df6d8a5e1bd87a8168854128f41447ab45cc4\`**: cada fotomicrografia fixa transferida para perto do bloco de diagnóstico, mantendo 4 imagens inline únicas no arquivo e 1 para cada etiologia.
+- **JS de curadoria, commits \`ca43117537f1ad8191b2a7fb52f695b3bf0937a9\` e \`318ed7cee99e08905569b0d69fe08959598fac65\`**: imagens clínicas aprovadas inseridas perto de quadro clínico; images de microscopia perto de diagnóstico; fallback de origem para assets inacessíveis. Correção extra no script global de fallback \`93c4cddbae8fc41b126efea3dac8d13d99dc1698\`.
+- **Imagens clínicas #13 (DermNet candidíase), #15 (DermNet vaginose), #17 (Scientific Archives colo em morango)**: as URLs diretas de imagem não foram acessíveis/estáveis. Os registros **continuam aprovados**, mas o JSONB \`render_mode\` passou a \`source_link\`: o usuário vê descrição didática e link explícito à fonte original, sem imagem quebrada. O #17 passou a apontar diretamente para PDF oficial CC BY na página que contém a figura. **Não declarar que as fotografias estejam hospedadas inline na LURIA**; isso requer cópia local autorizada e realmente verificada.
+- QA estrutural pós-edição: 3 doenças, cada uma com exatamente seis unidades editoriais, índice sem links quebrados/IDs duplicados, 4 imagens HTML distintas, referências no final, extração de texto aproximada em 42.500 caracteres no artigo. Código JavaScript compartilhado e fallback passaram em avaliação sintática; **teste renderizado no desktop/PWA ainda não realizado**.
