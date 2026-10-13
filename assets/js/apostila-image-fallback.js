@@ -16,6 +16,12 @@
       url.pathname = url.pathname.replace(/\/phil\/{2,}PHIL_Images\//i, '/phil/PHIL_Images/');
       return url.href;
     }
+    // The CDC PHIL still serves some archival files only through its original
+    // triple-slash route. Retain a single reciprocal fallback for either variant.
+    if (url.hostname === 'wwwn.cdc.gov' && /^\/phil\/PHIL_Images\//i.test(url.pathname)) {
+      url.pathname = url.pathname.replace(/^\/phil\/PHIL_Images\//i, '/phil///PHIL_Images/');
+      return url.href;
+    }
     if (url.hostname === 'commons.wikimedia.org' && /\/wiki\/Special:Redirect\/file\//i.test(url.pathname)) {
       url.pathname = url.pathname.replace(/\/wiki\/Special:Redirect\/file\//i, '/wiki/Special:FilePath/');
       return url.href;
