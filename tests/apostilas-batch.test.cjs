@@ -94,3 +94,35 @@ test("Auditoria editorial lê a biblioteca inteira por CLI",()=>{
   assert.ok(result.metrics.some(book=>book.apostila==="amenorreia"));
   assert.ok(result.metrics.every(book=>Array.isArray(book.warnings)));
 });
+
+test("Fallback recupera URL canonica do CDC antes de mostrar imagem indisponivel",()=>{
+  const {JSDOM}=require("jsdom");
+  const dom=new JSDOM('<figure><img data-apostila-image-fallback="hidden-sibling" src="https://wwwn.cdc.gov/phil///PHIL_Images/2933/2933_lores.jpg"><p hidden role="note">Fonte externa</p></figure>',{url:"https://resibulando.online/apostilas/vulvovaginites/",runScripts:"outside-only"});
+  try {
+    dom.window.eval(read("assets/js/apostila-image-fallback.js"));
+    const img=dom.window.document.querySelector("img");
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.equal(img.dataset.apostilaImageRetryDone,"yes");
+    assert.match(img.src,/\/phil\/PHIL_Images\/2933\/2933_lores\.jpg$/);
+    assert.equal(img.nextElementSibling.hidden,true);
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.equal(img.hidden,true);
+    assert.equal(img.nextElementSibling.hidden,false);
+  } finally {dom.window.close();}
+});
+test("Fallback tenta a rota alternativa do mesmo arquivo no Wikimedia Commons",()=>{
+  const {JSDOM}=require("jsdom");
+  const dom=new JSDOM('<figure><img data-apostila-image-fallback="approved-source" data-apostila-image-source-url="https://commons.wikimedia.org/wiki/File:CTG_Output.jpg" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/CTG_Output.jpg"></figure>',{url:"https://resibulando.online/apostilas/amenorreia/",runScripts:"outside-only"});
+  try {
+    dom.window.eval(read("assets/js/apostila-image-fallback.js"));
+    const img=dom.window.document.querySelector("img");
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.match(img.src,/Special:FilePath\/CTG_Output\.jpg$/);
+    assert.equal(img.hidden,false);
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.equal(img.hidden,true);
+    const link=dom.window.document.querySelector("a.image-source-retry");
+    assert.ok(link);
+    assert.equal(link.getAttribute("rel"),"noopener noreferrer");
+  } finally {dom.window.close();}
+});
