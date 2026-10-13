@@ -242,3 +242,24 @@ Diretriz expressa do responsável (12/10/2026): **não fragmentar diagnóstico, 
 **Regra de imagens clínicas:** nenhuma imagem remota inacessível deve aparecer como imagem quebrada. Se o arquivo não puder ser validado ou hospedado corretamente com licença, substituir a tentativa inline por link funcional à fonte científica com contexto didático, deixando claro que a fotografia está na publicação externa. A solução definitiva ideal é imagem clínica real, conferida, otimizada, com permissões verificadas e hospedagem estável; não usar imagem gerada para fingir um achado médico real. Não mexer automaticamente no status de aprovação da fila do Admin.
 
 **Conferência obrigatória:** em cada caderno, validar a ordem das seções e do índice, eliminar headings repetidos, confirmar que cada imagem é única e está próxima do texto relevante, manter callouts/esquemas/fluxos, e encerrar com referências. Aplicar esta diretriz às outras apostilas à medida que forem revisadas; não assumir que todas já foram migradas.
+
+
+
+## Padrão editorial de cores e composição — outubro de 2026
+
+A apostila deve ter identidade gráfica consistente, leitura agradável e **relação clara entre tipo de bloco e função didática**. Não é permitido inflar comprimento com repetição visual.
+
+**Paleta editorial LURIA**: azul de marca como cor estrutural (`#184888`); rosa suave para candidíase (`#b95780`), verde-azulado para vaginose (`#138a88`), violeta para tricomoníase (`#7962bd`), âmbar como destaque exclusivo da revisão de fixação. Usar combinações acessíveis no escuro e no PWA, evitando depender da cor como única forma de distinção.
+
+**Hierarquia**
+- Título de capítulo e faixa de subtópico devem comunicar onde o leitor está.
+- Texto-base em parágrafos didáticos com subtítulos; quadros somente quando houver comparação ou raciocínio que ganhe com o formato.
+- Tabelas para matrizes diagnósticas, diferenças de esquemas e critérios; nunca duplicar a mesma comparação no card logo seguinte.
+- Figuras clínicas originais junto do quadro clínico; microscopia junto do diagnóstico. Legenda fiel à imagem real; nunca substituir por foto de outro sinal clínico mantendo uma legenda antiga.
+- **Pulo do Gato** é reservado a dicas de alto impacto, com sua identidade de mascote; outras observações ficam em notas discretas sem mascote.
+- **O que não posso esquecer** é um único painel de fechamento, com itens curtos e numerados e hierarquia visual clara. Não deve aparecer como mera lista anônima.
+- **Quadro final** de múltiplas doenças: uma única tabela comparativa mais um alerta pertinente. Não empilhar dois fluxos, três cards, dois quadros e um callout repetindo a mesma informação.
+
+**Foto externa quebrada:** recuperar fotografia verdadeira com licença de reutilização confiável; quando a fotografia exata não estiver disponível, uma alternativa real só pode ser usada com legenda corrigida que indique **precisamente** o que mostra. Preferir imagem real de domínio público/CC0 e CDN verificável, ou hospedagem própria quando viável, preservando atribuição. Nunca substituir foto do colo em morango por secreção cervical dizendo que é petéquia. Validação no site/PWA é obrigatória antes de afirmar que uma foto está renderizada.
+
+**Revisão editorial**: checar, por capítulo, densidade de cards, frequência de callouts, variedade de recursos visuais com propósito, contraste de cores, composição mobile e foco didático. Se dois blocos informarem a mesma coisa sem adicionar aprendizado, consolidá-los.
