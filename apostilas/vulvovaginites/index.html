@@ -315,6 +315,18 @@
   .book-section .book-table td,.book-section .book-table th{font-size:8.8pt;line-height:1.35;padding:6px 7px}
   .book-section .book-curated-clinical-image{max-width:440px!important}
 }
+
+/* Afinação editorial das notas secundárias e referências */
+.luria-foundation-row p,.luria-life-row p,.luria-anamnesis li{font-size:13.6px!important;line-height:1.62!important}
+.luria-foundation-row strong,.luria-anamnesis strong{font-size:13.6px}
+.luria-editorial-note,.luria-warning-strip span{font-size:13px!important;line-height:1.59!important}
+.luria-key-summary-head h3{font-size:17px!important}
+.reference-list{display:grid;gap:5px;margin:14px 0 0!important;padding-left:23px!important}
+.reference-list li{font-size:12.8px!important;line-height:1.55!important;margin:0!important;padding:4px 0;overflow-wrap:anywhere}
+.reference-list a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.luria-disease-unit .book-callout.pulo-do-gato + .luria-med-subhead{margin-top:21px}
+.book-section .book-table tbody tr:nth-child(even):not(.luria-master-table tr){background:color-mix(in srgb,var(--accent) 1.5%,var(--surface))}
+@media(max-width:560px){.luria-foundation-row p,.luria-life-row p,.luria-anamnesis li{font-size:13.4px!important;line-height:1.62!important}.reference-list li{font-size:12.4px!important}}
 </style>
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
@@ -577,7 +589,7 @@
           
 <h4 class="luria-med-subhead">Por que o tratamento deve ser sistêmico?</h4>
             <p>O protozoário pode ocupar diferentes sítios do trato urogenital. Uma formulação intravaginal fornece exposição predominantemente local e não garante concentração adequada em todos esses reservatórios. Por isso, <strong>metronidazol vaginal não substitui o tratamento sistêmico</strong> da tricomoníase.</p>
-            <div class="book-callout pulo-do-gato"><strong>Pulo do Gato</strong>Na tricomoníase, tratar só a paciente sem tratar as parcerias atuais é deixar pronta a principal via de reinfecção.</div>
+            
           
 </div>
 <div class="luria-disease-unit" data-unit="6"><h3 class="luria-disease-unit-title">Prevenção e seguimento</h3><p>É importante diferenciar <strong>reteste programado</strong> de investigação de falha. O reteste em torno de três meses procura sobretudo reinfecção. Quando há sintomas persistentes ou novo exame positivo logo após a terapia, a avaliação deve considerar tratamento incompleto, exposição a parceria não tratada e possível persistência do agente. Se um teste molecular for usado para investigar persistência, o CDC orienta aguardar pelo menos três semanas após a conclusão terapêutica para evitar interpretação de material genético residual como infecção ativa.</p><p>O tratamento para mulheres recomendado pelo CDC utiliza metronidazol oral 500 mg duas vezes ao dia por sete dias. Metronidazol intravaginal isolado não é adequado para tratar tricomoníase. As parcerias sexuais atuais devem receber tratamento apropriado, e recomenda-se evitar relações até a conclusão dos esquemas e o desaparecimento dos sintomas.</p><p>Uso correto de preservativos reduz a transmissão. Gestantes sintomáticas devem ser avaliadas e tratadas conforme o protocolo pertinente. Mulheres sexualmente ativas devem ser retestadas aproximadamente três meses depois do tratamento devido ao risco de reinfecção. Se o teste voltar positivo ou o quadro persistir, verifique adesão e reexposição antes de investigar resistência e indicar manejo especializado.</p><h4 class="luria-med-subhead">Reinfecção, persistência e resistência: problemas distintos</h4>
@@ -662,14 +674,14 @@
 </section>
 <section class="book-section"><h2 id="referencias">Referências</h2>
             <ol class="reference-list">
-              <li>Ministério da Saúde. <strong>PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis.</strong> Versão vigente.</li>
-              <li>Brasil. <strong>Protocolo Brasileiro para Infecções que causam corrimento vaginal.</strong> Epidemiologia e Serviços de Saúde.</li>
+              <li>Ministério da Saúde. <strong><a href="https://www.gov.br/saude/pt-br/assuntos/pcdt/a/atencao-integral-as-pessoas-com-infeccoes-sexualmente-transmissiveis/view" target="_blank" rel="noopener noreferrer">PCDT para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis.</a></strong> Ministério da Saúde, atualização consultável no portal oficial.</li>
+              <li>Brasil. <strong><a href="https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2021/epidemiologia-e-servicos-de-saude/@@download/file/041_ress_ist.pdf" target="_blank" rel="noopener noreferrer">Protocolo Brasileiro para Infecções que Causam Corrimento Vaginal.</a></strong> Epidemiologia e Serviços de Saúde, 2021.</li>
               <li>FEBRASGO. <strong>Vaginites e Vaginoses.</strong> Protocolos assistenciais.</li>
-              <li>CDC. <strong>Bacterial Vaginosis — STI Treatment Guidelines.</strong></li>
-              <li>CDC. <strong>Vulvovaginal Candidiasis — STI Treatment Guidelines.</strong></li>
-              <li>CDC. <strong>Trichomoniasis — STI Treatment Guidelines.</strong></li>
-              <li>ACOG. <strong>Concurrent sexual partner treatment for recurrent bacterial vaginosis.</strong> Atualização de 2025.</li>
-              <li>Vodstrcil LA et al. <strong>Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis.</strong> N Engl J Med. 2025.</li>
+              <li>CDC. <strong><a href="https://www.cdc.gov/std/treatment-guidelines/bv.htm" target="_blank" rel="noopener noreferrer">Bacterial Vaginosis — STI Treatment Guidelines.</a></strong></li>
+              <li>CDC. <strong><a href="https://www.cdc.gov/std/treatment-guidelines/candidiasis.htm" target="_blank" rel="noopener noreferrer">Vulvovaginal Candidiasis — STI Treatment Guidelines.</a></strong></li>
+              <li>CDC. <strong><a href="https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm" target="_blank" rel="noopener noreferrer">Trichomoniasis — STI Treatment Guidelines.</a></strong></li>
+              <li>ACOG. <strong><a href="https://www.acog.org/news/news-releases/2025/10/acog-recommends-concurrent-sexual-partner-treatment-recurrent-bacterial-vaginosis-first-time" target="_blank" rel="noopener noreferrer">Concurrent Sexual Partner Therapy to Prevent Bacterial Vaginosis Recurrence.</a></strong> Clinical Practice Update, 2025.</li>
+              <li>Vodstrcil LA et al. <strong><a href="https://pubmed.ncbi.nlm.nih.gov/40043236/" target="_blank" rel="noopener noreferrer">Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis.</a></strong> N Engl J Med. 2025;392:947–957. DOI: 10.1056/NEJMoa2405404.</li>
               <li>Rosati D et al. <strong>Vulvovaginal Candidiasis: A Current Understanding and Burning Questions.</strong> J Fungi.</li>
               <li>Scoping review of cytolytic vaginosis literature. <strong>PLOS One.</strong></li>
             </ol>
