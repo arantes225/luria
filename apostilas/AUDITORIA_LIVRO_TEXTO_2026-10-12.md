@@ -121,3 +121,8 @@
 - Arquivo `apostilas/ciclo-menstrual-eixo-hho/index.html` atualizado em main, commit `87ed9a62bfbf00979cd45ef8752b08d6fbea8e06`.
 - Novo capítulo 16 aborda GnRH pulsátil/KNDy, FSH/LH, esteroidogênese, foliculogênese, feedback, meiose, corpo lúteo, janela fértil e interpretação hormonal.
 - Estimativa de artigo: 29.062 → 43.721 caracteres; validação estrita, revisão clínica e PWA ainda pendentes.
+
+### Hemorragias do Primeiro e Terceiro Trimestre — expansão aplicada
+- Arquivo `apostilas/hemorragias-primeiro-terceiro-trimestre/index.html`, commit `c6059d1bdc11096659dcd30506f1fd2382f1b7e9`.
+- Dois capítulos separados: hemorragias iniciais (gestação de localização desconhecida, ectópica, critérios de perda e condutas) e hemorragias tardias (prévia/acretismo, DPP, vasa prévia, rotura e ressuscitação).
+- Estimativa de texto do artigo: 36.677 → 50.501 caracteres. Requer revisão clínica, aferição estrita e validação visual/PWA.
