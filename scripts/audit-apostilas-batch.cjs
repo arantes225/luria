@@ -24,7 +24,8 @@ const metrics=dirs.map(folder=>{
     try{return decodeURIComponent(m[1]);}catch{return m[1];}
   });
   const warnings=[];
-  if(text.length<35000)warnings.push("aprofundamento_a_auditar");
+  // Triagem apenas: conteúdo pode incluir resumos/elementos não didáticos; não certifica 60K.
+  if(text.length<60000)warnings.push("conteudo_abaixo_60k_triagem");
   if(headings<8)warnings.push("poucos_titulos");
   if(!/reference-list/.test(source))warnings.push("referencias_nao_padronizadas");
   if(!/(caso|vinheta|fixa[cç]|quest[aã]o)/i.test(text))warnings.push("sem_casos_explicitos");
@@ -45,5 +46,5 @@ else{
   console.log("Auditoria LURIA em lote",totals);
   for(const item of metrics)console.log(item.apostila.padEnd(50),String(item.contentChars).padStart(7),
     item.format,item.warnings.length?item.warnings.join(", "):"sem alertas");
-  console.log("As métricas sugerem revisão, não certificam qualidade médica.");
+  console.log("Mínimo editorial vigente: 60.000 caracteres úteis por caderno. As métricas são triagem e não certificam qualidade médica ou ausência de repetição.");
 }
