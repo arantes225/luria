@@ -19,6 +19,13 @@
         image.closest('figure')?.classList.add('ist-image-unavailable');
         break;
       case 'approved-source': {
+        // Tenta o endereço canônico alternativo antes de declarar a imagem indisponível.
+        const alternative = image.dataset.apostilaFallbackUrl;
+        if (alternative && image.dataset.apostilaImageTriedFallback !== 'yes' && alternative !== image.src) {
+          image.dataset.apostilaImageTriedFallback = 'yes';
+          image.src = alternative;
+          break;
+        }
         image.hidden = true;
         const figure = image.closest('figure');
         const url = image.dataset.apostilaImageSourceUrl;
