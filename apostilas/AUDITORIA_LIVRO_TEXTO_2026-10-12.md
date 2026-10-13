@@ -75,3 +75,11 @@
 - Contagem preliminar do artigo principal passou de **31.083 para 49.831 caracteres** (antes de exclusões mais estritas); revisão visual/PWA e validação clínica integral ainda pendentes.
 - **10 candidatas de imagem continuam pendentes no Admin**; nenhuma foi aprovada automaticamente e o fluxo de curadoria não foi alterado.
 
+
+
+### Sangramento Uterino Anormal — expansão textual aplicada no código
+- Arquivo \`apostilas/sangramento-uterino-anormal/index.html\` atualizado em \`main\`, commit \`19e39e76be7e0b1fe23156ad5eb11962f7a13add\`.
+- Adicionado **capítulo 17** desenvolvendo hemostasia menstrual normal, anovulação, Sistemas 1 e 2 FIGO, miomas por topografia, pólipos, adenomiose, coagulopatias, interpretação de ultrassonografia e amostragem endometrial, mecanismo dos tratamentos, anemia e casos integradores.
+- Referências: FEBRASGO 2026 e FIGO; capítulo e âncora adicionados ao sumário; imagens aprovadas mantidas.
+- Contagem preliminar do artigo (sem scripts/estilos) passou de **36.601 a 54.567 caracteres**; contagem estrita, revisão clínica final e teste PWA ainda pendentes.
+
