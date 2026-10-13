@@ -75,7 +75,9 @@ Limite de 30 fps e DPR 1,5; renderização pausa fora da tela e em aba oculta. `
 - `tests/professor-alex.browser.cjs`: verificação real de WebGL, expressões, gestos, temas, fala, acessibilidade, tamanho mobile, pausa e descarte.
 - `tests/professor-alex-offline.test.cjs`: instalação do cache, recursos 3D offline e preservação dos caches existentes.
 
-Nenhum arquivo original da plataforma foi modificado.
+A página `professor-alex/index.html` usa o novo mascote no cabeçalho, com fundo azul suave. `assets/js/professor-alex-page.mjs` conecta os gestos às escolhas do formulário: dúvida → pensar, material → ler, envio → explicar, modo Estourado → cena de raiva. O componente e o adaptador da página são separados para permitir novas integrações depois. A biblioteca 3D só é importada nessa aba; as outras páginas mantêm os personagens atuais e as regras de acesso existentes.
+
+`tests/professor-alex-page.browser.cjs` verifica a página real com CSP, formulário, material, cores do modo Estourado, viewport mobile e movimento reduzido. A autenticação é substituída apenas na fixture do teste, sem contas reais; a página publicada conserva a autorização Admin já existente.
 
 ## Validação
 
@@ -93,4 +95,4 @@ Para o teste de navegador, forneça um Playwright instalado por `ALEX_PLAYWRIGHT
 
 A suíte ampla do repositório apresenta falhas anteriores em preferências do dashboard/PWA, seletores de estilos, cópias estáticas de prompts e navegação de comunidade. `check:prompts` também apresenta divergências existentes. Essas áreas não foram alteradas para esta etapa. O CSP das 96 páginas existentes e os testes selecionados pelo workflow de produção continuam validados separadamente.
 
-Não integrar com IA/voz, substituir o personagem existente nem publicar em produção antes da aprovação visual.
+Publicação na aba Professor Alex autorizada pelo usuário em 13/10/2026. A integração com IA/voz e a inclusão em outras páginas ficam para as próximas etapas.

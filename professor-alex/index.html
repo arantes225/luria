@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
   <link rel="stylesheet" href="/assets/css/ui-navigation-v2.css?v=2">
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
+  <link rel="stylesheet" href="/assets/css/professor-alex-page.css?v=20261013-1">
 </head>
 <body data-ui-heading="provided" data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="professor_alex">
   <script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
@@ -62,7 +63,10 @@
 
         <section class="alex-page" aria-labelledby="alex-title">
           <div class="alex-hero">
-            <img class="alex-mentor-image" src="/assets/img/professor-alex/professor-alex-joinha.webp?v=4" alt="" width="88" height="100">
+            <div class="alex-mascot-stage">
+              <professor-alex-mascot id="alex-mascot" size="240" theme="auto" expression="happy" interactive="true"></professor-alex-mascot>
+              <span class="alex-mascot-hint">Toque no Alex para cumprimentar</span>
+            </div>
             <div class="alex-hero-copy">
               <p class="alex-kicker">Seu professor dentro da LURIA</p>
               <h1 class="alex-title" id="alex-title">Professor Alex</h1>
@@ -220,5 +224,6 @@
     })();
   </script>
   <script defer src="/assets/js/pwa.js?v=20261011-pwa281"></script>
+  <script type="module" src="/assets/js/professor-alex-page.mjs?v=20261013-1"></script>
 </body>
 </html>
