@@ -108,3 +108,11 @@
 - Fontes complementares FIGO 2021 (DOI 10.1002/ijgo.13522) e ACOG Macrosomia PB 216, reafirmado em 2026. Novas âncoras do índice incluídas; materiais de curadoria e **2 imagens aprovadas / 8 pendentes** foram preservados sem mudança de estado.
 - Texto visível do artigo estimado **27.128 → 46.471 caracteres**, com verificação editorial estrita e testes PWA ainda pendentes.
 
+
+
+### Avaliação da Vitalidade Fetal — expansão aplicada no HTML
+- Arquivo \`apostilas/avaliacao-vitalidade-fetal/index.html\` atualizado na branch \`main\`, commit \`82fa0280b95fb201a38a67fdd8db93c2f05df726\`.
+- Adicionado **capítulo 16** com oito subcapítulos sobre transporte de oxigênio, fisiologia da cardiotocografia, desacelerações, PBF, líquido amniótico, Doppler umbilical/cerebral/ducto venoso, limites de previsibilidade e dois casos integradores. A interpretação anteparto e intraparto foi explicitamente diferenciada.
+- Fontes ACOG/SMFM Committee Opinion 828, ACOG Practice Bulletin 229 e FIGO (RCF) 2021, com URLs institucionais; sumário recebeu link novo. Imagens aprovadas preservadas.
+- Estimativa de texto visível do artigo **26.012 → 40.540 caracteres**; o valor fica próximo do piso e depende de **aferição estrita** excluindo referências, resumos e elementos auxiliares. Se a contagem estrita for inferior a 40.000, requer expansão adicional antes da certificação.
+
