@@ -16,7 +16,7 @@ body[data-ui="v2"], body[data-ui-shell="v2"] {
   --ui-space-1: .25rem; --ui-space-2: .5rem; --ui-space-3: .75rem;
   --ui-space-4: 1rem; --ui-space-6: 1.5rem; --ui-space-8: 2rem; --ui-space-12: 3rem;
   --ui-radius-control: .625rem; --ui-radius-card: 1rem; --ui-radius-dialog: 1.25rem;
-  --ui-sidebar: 264px; --ui-topbar: 64px; --ui-content: 1600px; --ui-control: 2.75rem;
+  --ui-sidebar: 264px; --ui-topbar: 64px; --ui-content: 1520px; --ui-control: 2.75rem;
   --ui-display: 2.5rem; --ui-h1: 2.25rem; --ui-h2: 1.75rem; --ui-h3: 1.375rem;
   --ui-card-title: 1.125rem; --ui-body: 1rem; --ui-secondary: .875rem;
   --ui-caption: .8125rem; --ui-metric: 2rem;

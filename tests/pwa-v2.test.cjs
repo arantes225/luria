@@ -102,7 +102,7 @@ test('every redesigned core page loads the current PWA updater', () => {
   ];
   for (const page of paths) {
     const markup = fs.readFileSync(page, 'utf8');
-    assert.match(markup, /pwa\.js\?v=20261013-button1/, page);
+    assert.match(markup, /pwa\.js\?v=20261013-width2/, page);
     assert.match(markup, /data-ui-nav="v2"/, page);
   }
 });
@@ -112,7 +112,7 @@ test('installed PWA actively checks and offers current service worker on resume'
   assert.match(pwaSource, /luria-pwa-update-action/);
   assert.match(pwaSource, /updateViaCache:\s*"none"/);
   const worker = fs.readFileSync('service-worker.js', 'utf8');
-  assert.match(worker, /luria-pwa-sidebar-button-20261013/);
+  assert.match(worker, /luria-pwa-balanced-width-20261013/);
 });
 
 test('hidden search overlays cannot hold the dashboard inert', () => {
