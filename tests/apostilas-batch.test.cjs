@@ -141,3 +141,19 @@ test("Fallback de exame clínico usa segunda resolução do mesmo arquivo antes 
     assert.equal(img.nextElementSibling.hidden,false);
   } finally {dom.window.close();}
 });
+
+
+test("Fallback do CDC tenta URL histórica quando a rota canônica falha",()=>{
+  const {JSDOM}=require("jsdom");
+  const dom=new JSDOM('<figure><img data-apostila-image-fallback="hidden-sibling" src="https://wwwn.cdc.gov/phil/PHIL_Images/16824/16824_lores.jpg"><p hidden role="note">Fonte CDC</p></figure>',{url:"https://resibulando.online/apostilas/vulvovaginites/",runScripts:"outside-only"});
+  try {
+    dom.window.eval(read("assets/js/apostila-image-fallback.js"));
+    const img=dom.window.document.querySelector("img");
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.equal(img.src,"https://wwwn.cdc.gov/phil///PHIL_Images/16824/16824_lores.jpg");
+    assert.equal(img.dataset.apostilaImageRetryDone,"yes");
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.equal(img.hidden,true);
+    assert.equal(img.nextElementSibling.hidden,false);
+  } finally {dom.window.close();}
+});
