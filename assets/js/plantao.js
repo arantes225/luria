@@ -6,6 +6,11 @@
   if (!sb) return;
 
   const $ = (id) => document.getElementById(id);
+  function scrollPageToTop(behavior) {
+    const scroller = document.body?.dataset.uiNav === "v2" ? document.querySelector("main.main") || window : window;
+    if (typeof scroller.scrollTo === "function") scroller.scrollTo({top:0,behavior});
+    else scroller.scrollTop = 0;
+  }
   const ENTRY_MODE = String(document.body?.dataset?.plantaoEntry || "").trim().toLowerCase();
   const esc = (value) => String(value ?? "")
     .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;")
@@ -263,7 +268,7 @@
         clinicalCaseId:state.current?.id||null
       });
     }
-    window.scrollTo({top:0,behavior:"smooth"});
+    scrollPageToTop("smooth");
   }
 
   async function load() {
@@ -911,9 +916,9 @@
         $("plantao-phone-station").hidden=true;
         $("plantao-phone-inbox").hidden=false;
       }
-      window.scrollTo({top:0,behavior:"instant"});
+      scrollPageToTop("instant");
     }else{
-      window.scrollTo({top:0,behavior:"instant"});
+      scrollPageToTop("instant");
     }
   }
 

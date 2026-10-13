@@ -13,7 +13,7 @@ test('study shell moves the original logo and trigger across drawer states witho
   w.eval(fs.readFileSync('assets/js/ui-navigation-v2.js','utf8'));
   await settle(w);
   assert.equal(brand.parentElement,d.querySelector('.topbar'));
-  assert.equal(trigger.parentElement,d.querySelector('.sidebar-top'));
+  assert.equal(trigger.parentElement,d.querySelector('.topbar'));
   trigger.click(); assert.equal(d.body.dataset.uiSidebar,'collapsed');
   trigger.click(); assert.equal(d.body.dataset.uiSidebar,'expanded');
   mobile=true; change();

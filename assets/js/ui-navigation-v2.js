@@ -165,7 +165,7 @@
     }
     const trigger = document.getElementById('menu-open');
     if (workHub) return;
-    const host = narrow.matches && !body.classList.contains('sidebar-open') ? bar : top;
+    const host = narrow.matches && body.classList.contains('sidebar-open') ? top : bar;
     if (host && trigger && (trigger.parentElement !== host || trigger !== host.firstElementChild)) host.prepend(trigger);
   }
   function syncDrawer() {
@@ -305,6 +305,10 @@
     const open = !!menu && !menu.hidden;
     if (open && !profileOpen) focusable(menu)[0]?.focus();
     profileOpen = open;
+    if (body.classList.contains("app-ready") && bar && (workHub || sidebar?.querySelector("nav a")) && body.dataset.uiNavigationReady !== "true") {
+      body.dataset.uiNavigationReady = "true";
+      window.dispatchEvent(new Event("luria:ui-navigation-ready"));
+    }
   }
   function schedule() {
     if (scheduled) return;
