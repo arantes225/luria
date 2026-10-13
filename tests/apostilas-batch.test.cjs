@@ -5,7 +5,10 @@ const root=path.join(__dirname,"..");
 const read=file=>fs.readFileSync(path.join(root,file),"utf8");
 const template=read("apostilas/vulvovaginites/index.html");
 function book(){
-  const description="Texto didático simulado que testa exclusivamente os validadores editoriais e o formato da publicação.";
+  // Esta fixture é sintética: valida estrutura e extensão, sem simular conteúdo médico real.
+  // Cada parágrafo tem identificação própria para não contradizer a proteção antirrepetição.
+  const description="Este trecho técnico verifica criação de capítulos, índice, estilos compartilhados, navegação e referências. A fixture não representa conteúdo médico aprovado e não deve ser publicada como apostila de estudo.";
+  const syntheticParagraph=(chapter,segment)=>"<p>Unidade técnica "+chapter+"."+segment+". "+description+" Marcador exclusivo deste segmento para testar a integridade editorial, a serialização do HTML e a organização das seções no gerador.</p>";
   return {
     slug:"tema-de-teste",
     title:"Tema de teste",
@@ -14,7 +17,8 @@ function book(){
     sections:Array.from({length:7},(_,i)=>({
       id:"capitulo-"+(i+1),
       title:(i+1)+". Capítulo",
-      body_html:"<p>"+description.repeat(52)+"</p>"+(i===5?"<h3>Caso clínico comentado</h3><p>Questão comentada de teste.</p>":"")
+      body_html:Array.from({length:45},(_,j)=>syntheticParagraph(i+1,j+1)).join("")+
+        (i===5?"<h3>Caso clínico comentado</h3><p>Questão comentada de teste.</p>":"")
     })),
     references:[
       {label:"Referência A",url:"https://example.com/a"},
@@ -33,7 +37,7 @@ function book(){
 }
 test("Gerador de lote cria apostila extensa com navegação, referências e estilos compartilhados",()=>{
   const output=buildBook(template,book());
-  assert.ok(output.characters>30000);
+  assert.ok(output.characters>=60000);
   assert.ok(output.html.includes('<title>Tema de teste · LURIA</title>'));
   assert.ok(output.html.includes('href="/apostilas/tema-de-teste/"'));
   assert.ok(output.html.includes('href="#capitulo-7"'));
@@ -57,6 +61,18 @@ test("Gerador rejeita texto superficial e figuras clínicas embutidas",()=>{
   const image=book();
   image.sections[0].body_html+='<img src="https://example.com/nao-aprovada.png">';
   assert.throws(()=>buildBook(template,image),/imagens vão ao Admin/);
+});
+test("Gerador impede repetição de um parágrafo longo entre capítulos",()=>{
+  const duplicated=book();
+  duplicated.sections[1].body_html=duplicated.sections[0].body_html;
+  assert.throws(()=>buildBook(template,duplicated),/parágrafo didático longo repetido/);
+});
+test("Gerador exige o piso editorial de 60 mil caracteres",()=>{
+  const incomplete=book();
+  for(const section of incomplete.sections){
+    section.body_html=section.body_html.replace(/<p>/g,"<div>").replace(/<\\/p>/g,"</div>").slice(0,700);
+  }
+  assert.throws(()=>buildBook(template,incomplete),/conteúdo insuficiente.*60.000/);
 });
 test("Fila de imagens só aparece no Admin e suporta revisão em lote",()=>{
   const admin=read("assets/js/admin.js"),page=read("admin/index.html"),renderer=read("assets/js/apostila-tools.js");
