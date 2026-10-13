@@ -368,6 +368,14 @@
 .luria-disease-unit{scroll-margin-top:22px}
 @media(max-width:560px){.luria-chapter-nav{gap:9px 12px;margin-bottom:8px}.luria-chapter-nav>span{flex:0 0 100%}.luria-chapter-nav>a{font-size:11.6px}}
 @media print{.luria-chapter-nav{display:none}}
+
+/* Tabelas de consulta: textos legíveis no PWA, com rolagem horizontal sem quebrar o container */
+.luria-table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin;margin:16px 0 22px}
+.luria-table-scroll .book-table{margin:0!important;min-width:600px}
+.luria-table-scroll[data-cols="2"] .book-table{min-width:470px}
+.luria-table-scroll-hint{display:none}
+@media(max-width:640px){.luria-table-scroll-hint{display:block;margin-bottom:7px;font-size:10.8px;color:var(--muted);line-height:1.3}.luria-table-scroll .book-table th,.luria-table-scroll .book-table td{padding:9px 11px}}
+@media print{.luria-table-scroll{overflow:visible;margin:10px 0}.luria-table-scroll .book-table{min-width:0}.luria-table-scroll-hint{display:none!important}}
 </style>
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
@@ -585,11 +593,11 @@
 <p>As diretrizes classificam como complicada a apresentação <strong>recorrente, grave, por espécies não <em>albicans</em> ou em hospedeira com condições relevantes</strong>, como imunossupressão ou diabetes sem controle adequado. A forma grave pode apresentar eritema extenso, edema, escoriações e fissuras vulvares, com maior chance de resposta inadequada a esquemas muito curtos. A presença de edema e fissuras não deve ser confundida automaticamente com celulite, nem a gravidade deve ser medida pela quantidade de corrimento.</p>
 </div>
 <div id="candida-unit-5" class="luria-disease-unit" data-unit="5"><h3 class="luria-disease-unit-title">Tratamento</h3><h4 class="luria-med-subhead">Tratamento — episódios não complicados</h4><p><strong>O tratamento não é determinado apenas pela aparência do corrimento.</strong> Em casos não complicados, diferentes apresentações tópicas têm eficácia clínica e podem ser escolhidas conforme adesão, tolerância, disponibilidade e preferência da paciente. Antes de utilizar um azólico oral, verifique gestação, interações e contraindicações. Se o prurido e as fissuras persistirem apesar de terapia adequada, avalie a possibilidade de dermatite irritativa, líquen ou agente não <em>albicans</em> antes de prolongar empiricamente a mesma medicação.</p>
-            <table class="book-table"><thead><tr><th>Opção</th><th>Esquema</th><th>Observação</th></tr></thead><tbody>
+            <div class="luria-table-scroll" data-cols="3" role="region" tabindex="0" aria-label="Tabela de candidíase"><span class="luria-table-scroll-hint" aria-hidden="true">Deslize a tabela para ver as colunas <span aria-hidden="true">→</span></span><table class="book-table"><thead><tr><th>Opção</th><th>Esquema</th><th>Observação</th></tr></thead><tbody>
               <tr><td>Miconazol 2%</td><td>5 g intravaginais 1x/dia por 7 dias</td><td>Opção tópica.</td></tr>
               <tr><td>Clotrimazol 1%</td><td>5 g intravaginais 1x/dia por 7–14 dias</td><td>Opção tópica.</td></tr>
               <tr><td>Fluconazol</td><td>150 mg VO, dose única</td><td>Não usar na gestação.</td></tr>
-            </tbody></table>
+            </tbody></table></div>
             <p>Azólicos interferem na síntese de ergosterol da membrana fúngica. O tratamento reduz a carga e interrompe o estímulo antigênico que mantém a inflamação. Formulações tópicas podem causar irritação e algumas comprometem produtos de látex; azólicos sistêmicos exigem atenção a interações e função hepática em uso prolongado.</p>
             <h4 class="luria-med-subhead">Episódio grave: tratamento inicial</h4>
 <p>Quando há eritema vulvar extenso, edema importante, escoriações ou fissuras profundas, os tratamentos muito curtos têm menor probabilidade de êxito. O CDC recomenda azólico tópico por 7–14 dias ou, em mulheres não gestantes quando apropriado, fluconazol oral 150 mg em duas doses separadas por 72 horas. Antes de definir um regime sistêmico, confirme gestação, alergias, interações e outras condições clínicas. A estratégia específica da forma <strong>recorrente</strong> é apresentada abaixo e envolve indução seguida de manutenção, não apenas repetir a dose do episódio simples.</p>
@@ -640,11 +648,11 @@
 <p>Em casos repetidos, reconfirme critérios e procure tricomoníase ou cervicite associadas quando o contexto sugerir. O encontro isolado de <em>Gardnerella</em> em cultura não substitui diagnóstico de vaginose, assim como o pH elevado não justifica antimicrobiano indiscriminado.</p>
 </div>
 <div id="vaginose-unit-5" class="luria-disease-unit" data-unit="5"><h3 class="luria-disease-unit-title">Tratamento</h3><p>O objetivo do tratamento é melhorar sintomas atribuídos à vaginose e reduzir riscos clínicos pertinentes, não esterilizar a vagina. A escolha entre esquema oral e intravaginal deve incorporar disponibilidade, tolerância, contraindicações e adesão. É importante explicar que o desaparecimento do odor não garante retorno imediato a uma microbiota estável e que novas queixas exigem reavaliação antes de repetir esquemas sucessivamente.</p>
-            <table class="book-table"><thead><tr><th>Opção</th><th>Esquema</th></tr></thead><tbody>
+            <div class="luria-table-scroll" data-cols="2" role="region" tabindex="0" aria-label="Tabela de vaginose bacteriana"><span class="luria-table-scroll-hint" aria-hidden="true">Deslize a tabela para ver as colunas <span aria-hidden="true">→</span></span><table class="book-table"><thead><tr><th>Opção</th><th>Esquema</th></tr></thead><tbody>
               <tr><td>Metronidazol VO</td><td>500 mg a cada 12 h por 7 dias</td></tr>
               <tr><td>Metronidazol gel 0,75%</td><td>5 g intravaginais 1x/dia por 5 dias</td></tr>
               <tr><td>Clindamicina creme 2%</td><td>5 g intravaginais à noite por 7 dias</td></tr>
-            </tbody></table>
+            </tbody></table></div>
             <p>Na recorrência múltipla, protocolos internacionais admitem estratégias supressivas, como metronidazol gel 0,75% duas vezes por semana por mais de 3 meses. Esses regimes devem ser individualizados e não são sinônimo de “tratamento padrão de toda recorrência”.</p>
             
 <h4 class="luria-med-subhead">Quando a vaginose retorna: primeiro episódio versus múltiplas recorrências</h4>
@@ -700,11 +708,11 @@
 <div class="luria-evidence-note"><strong>Para resolver a questão</strong><p>Se a banca relata exposição sexual de risco, colo friável e exame a fresco negativo, <strong>não exclua tricomoníase</strong>. Peça teste molecular quando disponível e avalie outras IST. [CDC, Trichomoniasis Treatment Guidelines]</p></div>
 </div>
 <div id="tricomoníase-unit-5" class="luria-disease-unit" data-unit="5"><h3 class="luria-disease-unit-title">Tratamento</h3><p>Na mulher, o esquema oral de sete dias tem melhor desempenho que a dose única de metronidazol em evidências que fundamentam a recomendação do CDC. A via vaginal isolada não atinge adequadamente reservatórios uretrais e glândulas periuretrais; por esse motivo não é uma alternativa equivalente. A prescrição precisa ser acompanhada por avaliação de outras IST e orientação sobre tratamento das parcerias, pois a melhora da paciente sem interrupção da transmissão favorece novos episódios.</p>
-            <table class="book-table"><thead><tr><th>Situação</th><th>Esquema</th></tr></thead><tbody>
+            <div class="luria-table-scroll" data-cols="2" role="region" tabindex="0" aria-label="Tabela de tricomoníase"><span class="luria-table-scroll-hint" aria-hidden="true">Deslize a tabela para ver as colunas <span aria-hidden="true">→</span></span><table class="book-table"><thead><tr><th>Situação</th><th>Esquema</th></tr></thead><tbody>
               <tr><td>Mulher</td><td>Metronidazol 500 mg VO a cada 12 h por 7 dias</td></tr>
               <tr><td>Alternativa internacional em não gestante</td><td>Tinidazol 2 g VO, dose única</td></tr>
               <tr><td>Homem, conforme CDC</td><td>Metronidazol 2 g VO, dose única</td></tr>
-            </tbody></table>
+            </tbody></table></div>
             <p>Todas as parcerias sexuais atuais devem ser tratadas, ainda que assintomáticas. Orientar abstinência até conclusão do tratamento por todos e resolução dos sintomas, além de rastrear outras IST conforme risco.</p>
             <div class="book-callout pulo-do-gato"><strong>Pulo do Gato</strong>Falha terapêutica não significa resistência até prova em contrário: primeiro confira diagnóstico, adesão, dose, duração e reexposição.</div>
           
@@ -736,7 +744,7 @@
 </div></section>
 <section id="diferenciais" class="book-section">
             <h2>7. Causas não infecciosas e diferenciais</h2>
-            <table class="book-table"><thead><tr><th>Diagnóstico</th><th>O que favorece</th><th>Como diferenciar</th></tr></thead><tbody>
+            <div class="luria-table-scroll" data-cols="3" role="region" tabindex="0" aria-label="Tabela de diagnósticos diferenciais"><span class="luria-table-scroll-hint" aria-hidden="true">Deslize a tabela para ver as colunas <span aria-hidden="true">→</span></span><table class="book-table"><thead><tr><th>Diagnóstico</th><th>O que favorece</th><th>Como diferenciar</th></tr></thead><tbody>
               <tr><td>Secreção fisiológica</td><td>Sem prurido, odor desagradável ou inflamação.</td><td>História e exame sem sinais de doença.</td></tr>
               <tr><td>Dermatite irritativa/alérgica</td><td>Sintomas vulvares após sabonetes, perfumes, protetores, medicamentos tópicos.</td><td>Relação temporal e exame cutâneo.</td></tr>
               <tr><td>Cervicite</td><td>Secreção endocervical, friabilidade, sangramento ao contato.</td><td>Inspeção do colo + testes para IST.</td></tr>
@@ -744,7 +752,7 @@
               <tr><td>Síndrome geniturinária da menopausa</td><td>Secura, dispareunia, mucosa fina, pH elevado.</td><td>Contexto de hipoestrogenismo e exame.</td></tr>
               <tr><td>Vaginite inflamatória descamativa / vaginite aeróbica</td><td>Inflamação importante, pH elevado, quadro persistente sem agente clássico.</td><td>Microscopia, exclusão das infecções principais e avaliação especializada.</td></tr>
               <tr><td>Líquen escleroso/plano</td><td>Alteração arquitetural, placas, erosões ou sintomas crônicos.</td><td>Exame vulvar especializado e biópsia quando indicada.</td></tr>
-            </tbody></table>
+            </tbody></table></div>
             <p>A chamada vaginose citolítica permanece um diagnóstico controverso, sem critérios universalmente padronizados. Não deve ser rotulada apenas pela presença de muitos lactobacilos nem tratada empiricamente com alcalinização sem contexto consistente.</p>
           
 <h3>Quando a inflamação existe, mas o agente habitual não aparece</h3>
@@ -779,14 +787,14 @@
 <section id="revisao" class="book-section">
             <h2>8. Revisão clínica e casos</h2>
             <h3>Armadilhas de prova e prática</h3>
-            <table class="book-table"><thead><tr><th>Erro</th><th>Correção</th></tr></thead><tbody>
+            <div class="luria-table-scroll" data-cols="2" role="region" tabindex="0" aria-label="Tabela de revisão de prova"><span class="luria-table-scroll-hint" aria-hidden="true">Deslize a tabela para ver as colunas <span aria-hidden="true">→</span></span><table class="book-table"><thead><tr><th>Erro</th><th>Correção</th></tr></thead><tbody>
               <tr><td>Corrimento branco = candidíase</td><td>Cor isolada não define etiologia.</td></tr>
               <tr><td>pH alto = vaginose</td><td>Tricomoníase e hipoestrogenismo também podem elevar.</td></tr>
               <tr><td>Candida positiva = tratar</td><td>Distinguir colonização de doença sintomática.</td></tr>
               <tr><td>Fresco negativo exclui tricomoníase</td><td>O teste tem sensibilidade limitada; considerar NAAT.</td></tr>
               <tr><td>Metronidazol vaginal trata tricomoníase</td><td>A IST exige tratamento sistêmico.</td></tr>
               <tr><td>Falha = resistência</td><td>Rever diagnóstico, adesão, dose e reexposição antes.</td></tr>
-            </tbody></table>
+            </tbody></table></div>
             <section class="luria-key-summary" aria-labelledby="luria-key-summary-title">
 <div class="luria-key-summary-head"><span class="luria-key-summary-mark" aria-hidden="true">✦</span><div><span class="luria-key-kicker">Revisão para fixar</span><h3 id="luria-key-summary-title">O que não posso esquecer</h3></div></div>
 <div class="luria-key-grid">
