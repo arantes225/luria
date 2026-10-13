@@ -308,3 +308,16 @@ A qualidade deve ser avaliada por perguntas clínicas reais que o material permi
 **Referência dos cursinhos do Drive**: estudar a hierarquia de capítulos, tabelas resumidas de decisão, recursos visuais oportunos, quantidade de explicação por assunto e espaçamentos. Recriar linguagem e figuras originais e adaptar para leitura digital. Não copiar seu texto, páginas, design proprietário ou imagens sem licença.
 
 **Critério de aprovação:** selecionar um conjunto diverso de questões representativas da residência para cada capítulo; só considerar o caderno autossuficiente quando a maior parte das respostas puder ser fundamentada por trechos do próprio caderno, sem depender de conhecimento não ensinado. A revisão permanece aberta até esse teste; a contagem de caracteres, isoladamente, não prova suficiência.
+
+
+## Eficiência e escala da biblioteca — CSS compartilhado e carregamento sob demanda
+
+Ao ampliar todas as apostilas para cerca de 70 mil caracteres didáticos (ou mais, quando necessário), **não sacrificar profundidade clínica para economizar bytes**. O conteúdo útil permanece no HTML, com estrutura semântica; peso e latência devem ser otimizados por recursos compartilhados, compressão e cache.
+
+- **Não repetir CSS extenso em cada HTML.** Utilizar `/assets/css/apostila-luria-book.css` como folha comum para as páginas que adotarem o template editorial LURIA. O caminho foi introduzido em Vulvovaginites em 13/10/2026. Verificar compatibilidade de seletores antes de migrar outras apostilas. Atualizar `?v=` ao alterar regras que afetam leitores com cache.
+- **Manter a página HTML autossuficiente em conteúdo**, mas não em folhas de estilo repetidas. Os arquivos de CSS/JS externos devem ser reutilizados por todas as apostilas. Não duplicar bibliotecas em cada capítulo.
+- **Abrir sob demanda.** O aluno baixa o HTML da apostila que abriu, e não toda a biblioteca. Nunca colocar centenas de capítulos no `APP_SHELL` do service worker para instalação do PWA. O cache de navegação pode manter as últimas páginas visitadas dentro de limites; um eventual modo de leitura offline em lote precisa ser seletivo, explícito e mostrar o tamanho estimado.
+- **Imagens são normalmente o maior fator de crescimento.** Preferir WebP com o limite já estabelecido e `loading="lazy"`, exceto imagens críticas acima da dobra; não incorporar base64 no HTML nem baixar antecipadamente uma galeria de conteúdo ainda não vista. Preservar atribuição e fidelidade clínica.
+- **Para verificar o peso**, registrar separadamente HTML bruto, CSS compartilhado, peso das imagens, total das solicitações na primeira visita, tamanho transferido após compressão do servidor e comportamento em abertura com cache. A soma do HTML e do CSS externo na primeira visita pode ser semelhante à versão inline; o ganho de escala decorre da reutilização.
+- **Infraestrutura e custos:** controlar peso total do site, volume de mídia e tráfego mensal. Os limites e as condições comerciais de GitHub Pages devem ser reavaliados ao escalar, especialmente por se tratar de plataforma SaaS com assinaturas.
+- **Testes antes do rollout:** conferir URLs e CSS no desktop, PWA e impressão; validar sintaxe, índice, navegação, imagens, CSP e cache do service worker. Não declarar resultado do navegador se somente a estrutura do código foi verificada.
