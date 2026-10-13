@@ -36,6 +36,7 @@ function excluded(relativePath) {
   const normalized = relativePath.replace(/\\/g, "/").toLowerCase();
   const parts = normalized.split("/");
   if (base.startsWith(".") || base === "node_modules" || base === "__pycache__") return true;
+  if (parts.some(part => /^qf[-_]/.test(part) || part === "private" || part === "secrets" || part === "backups")) return true;
   if (parts.some(part => part === ".git" || part === ".github" || part === "node_modules" || part === "__pycache__")) return true;
   if (EXCLUDED_FILE_ENDINGS.some(ext => normalized.endsWith(ext))) return true;
   if (/(^|\/)\.env(?:$|\.)/.test(normalized)) return true;
