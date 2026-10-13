@@ -261,6 +261,15 @@
       img.loading = "lazy";
       img.dataset.apostilaImageFallback = "approved-source";
       img.dataset.apostilaImageSourceUrl = luriaSafeContentUrl(row.source_url) || "";
+      // Redirecionamento alternativo do repositório de arquivos públicos.
+      // Se o CDN falhar, tentar a URL canônica antes de mostrar erro.
+      try {
+        const media = new URL(src, location.href);
+        if (media.hostname === "upload.wikimedia.org") {
+          const filename = decodeURIComponent(media.pathname.split("/").pop() || "");
+          if (filename) img.dataset.apostilaFallbackUrl = "https://commons.wikimedia.org/wiki/Special:FilePath/" + encodeURIComponent(filename);
+        }
+      } catch {}
       figure.appendChild(img);
     }
 
