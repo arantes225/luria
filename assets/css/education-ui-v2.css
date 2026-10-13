@@ -2,7 +2,6 @@
 @layer luria-ui-education {
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) {background:var(--color-surface)!important;color:var(--color-text-primary)!important;font-family:var(--ui-font-family)!important;font-size:var(--ui-body)!important;line-height:1.5!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"])::before, body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"])::after {display:none!important;}
-  body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .main::before, body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .page::before {display:none!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) [hidden] {display:none!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) :where(.page,.page > *,section,article,form) {min-width:0!important;box-sizing:border-box!important;}
   body[data-ui="v2"][data-ui-context="study"]:not([data-page="dashboard"]) .main :where(button,input,textarea,select) {font-family:var(--ui-font-family)!important;box-sizing:border-box!important;}

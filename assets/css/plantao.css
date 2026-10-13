@@ -1001,11 +1001,11 @@ body.plantao-phone-mode #plantao-library{
   width:auto;
   justify-self:auto;
 }
-body.plantao-phone-mode .topbar{
+body.plantao-phone-mode .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:none;
 }
 @media(max-width:680px){
-  body.plantao-phone-mode .main{
+  body.plantao-phone-mode .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding:0 !important;
   }
   body.plantao-phone-mode .page.plantao-page{
@@ -2384,7 +2384,7 @@ body.plantao-phone-mode .plantao-phone-page-back{
   overflow:hidden;
   background:var(--surface);
 }
-.pwa-standalone body.plantao-phone-mode .main,
+.pwa-standalone body.plantao-phone-mode .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 .pwa-standalone body.plantao-phone-mode .page.plantao-page,
 .pwa-standalone body.plantao-phone-mode #plantao-library,
 .pwa-standalone body.plantao-phone-mode #plantao-telefone.plantao-phone-preview,
@@ -3608,7 +3608,7 @@ html:not(.pwa-standalone) .plantao-patient-sheet-hda p{
 
 
 /* v9.0 — LuriaZap must never block global navigation */
-body.plantao-phone-mode .sidebar{
+body.plantao-phone-mode .sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   z-index:130!important;
 }
 body.plantao-phone-mode .sidebar-backdrop{
@@ -3620,7 +3620,7 @@ body.plantao-phone-mode .sidebar-desktop-toggle{
 
 @media(max-width:980px){
   /* Keep only the hamburger available above the full-screen phone UI. */
-  body.plantao-phone-mode .topbar{
+  body.plantao-phone-mode .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:flex!important;
     position:fixed!important;
     top:max(12px,env(safe-area-inset-top))!important;
@@ -4105,12 +4105,12 @@ body[data-page="plantao"] .plantao-module-back:hover::before{
 
 
 /* === Sala de Emergência · reference exact v3 === */
-.plantao-module-entry>.app-shell{display:block!important}
-.plantao-module-entry #sidebar,
+.plantao-module-entry>.app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){display:block!important}
+.plantao-module-entry #sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 .plantao-module-entry #sidebar-backdrop,
-.plantao-module-entry>.app-shell>.main>.plantao-page>.topbar,
+.plantao-module-entry>.app-shell>.main>.plantao-page>.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 .plantao-module-entry .plantao-module-back{display:none!important}
-.plantao-module-entry .main{margin:0!important;width:100%!important;max-width:none!important;padding:0!important}
+.plantao-module-entry .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){margin:0!important;width:100%!important;max-width:none!important;padding:0!important}
 .plantao-module-entry .page.plantao-page{display:block!important;max-width:none!important;width:100%!important;padding:0!important;background:#f7faff!important}
 .plantao-module-entry #plantao-library{display:block!important;min-height:100vh;background:#f7faff}
 .plantao-ref-header{height:58px;display:grid;grid-template-columns:180px minmax(0,1fr) auto;align-items:center;gap:16px;padding:0 30px;border-bottom:1px solid #e3eaf2;background:#fff;position:sticky;top:0;z-index:70}
@@ -4308,7 +4308,7 @@ body.theme-dark.plantao-module-entry .plantao-cases-section-head h2,
 
 /* === Sala de Emergência · sidebar overlay fix v6 === */
 /* O menu lateral da Sala de Emergência fica sobre a página, sem empurrar o redesign. */
-body.plantao-module-entry #sidebar.sidebar{
+body.plantao-module-entry #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:flex!important;
   position:fixed!important;
   top:0!important;
@@ -4326,7 +4326,7 @@ body.plantao-module-entry #sidebar.sidebar{
   pointer-events:auto!important;
   transition:transform .20s ease,opacity .20s ease!important;
 }
-body.plantao-module-entry.sidebar-hidden #sidebar.sidebar{
+body.plantao-module-entry.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   transform:translateX(-105%)!important;
   opacity:0!important;
   pointer-events:none!important;
@@ -4352,13 +4352,13 @@ body.plantao-module-entry.sidebar-hidden #sidebar .sidebar-top{
 
 /* Em telas menores, volta ao comportamento drawer do site. */
 @media(max-width:980px){
-  body.plantao-module-entry #sidebar.sidebar{
+  body.plantao-module-entry #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     width:min(86vw,290px)!important;
     transform:translateX(-105%)!important;
     opacity:1!important;
     pointer-events:auto!important;
   }
-  body.plantao-module-entry.sidebar-open #sidebar.sidebar{
+  body.plantao-module-entry.sidebar-open #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:translateX(0)!important;
   }
   body.plantao-module-entry #sidebar-backdrop{
@@ -4381,12 +4381,12 @@ body.plantao-module-entry .sidebar-desktop-toggle{
   display:grid!important;
   pointer-events:auto!important;
 }
-body.plantao-module-entry.sidebar-hidden #sidebar.sidebar{
+body.plantao-module-entry.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   transform:translateX(-105%)!important;
   opacity:0!important;
   pointer-events:none!important;
 }
-body.plantao-module-entry:not(.sidebar-hidden) #sidebar.sidebar{
+body.plantao-module-entry:not(.sidebar-hidden) #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   transform:translateX(0)!important;
   opacity:1!important;
   pointer-events:auto!important;
@@ -4396,10 +4396,10 @@ body.plantao-module-entry:not(.sidebar-hidden) #sidebar.sidebar{
     display:grid!important;
     left:12px!important;
   }
-  body.plantao-module-entry #sidebar.sidebar{
+  body.plantao-module-entry #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:translateX(-105%)!important;
   }
-  body.plantao-module-entry.sidebar-open #sidebar.sidebar{
+  body.plantao-module-entry.sidebar-open #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:translateX(0)!important;
   }
 }
@@ -4407,15 +4407,15 @@ body.plantao-module-entry:not(.sidebar-hidden) #sidebar.sidebar{
 
 /* === Sala de Emergência · native LURIA shell v9 === */
 /* Volta a usar a mesma estrutura do restante do site. */
-body.plantao-module-entry .app-shell{
+body.plantao-module-entry .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:grid!important;
   grid-template-columns:270px minmax(0,1fr)!important;
   min-height:100vh!important;
 }
-body.plantao-module-entry.sidebar-hidden .app-shell{
+body.plantao-module-entry.sidebar-hidden .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   grid-template-columns:0 minmax(0,1fr)!important;
 }
-body.plantao-module-entry .main{
+body.plantao-module-entry .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   display:block!important;
   width:auto!important;
   max-width:none!important;
@@ -4445,7 +4445,7 @@ body.plantao-module-entry #plantao-debrief[hidden]{
 }
 
 /* Sidebar idêntico ao padrão: participa do grid e empurra o conteúdo. */
-body.plantao-module-entry #sidebar.sidebar{
+body.plantao-module-entry #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:sticky!important;
   top:0!important;
   left:auto!important;
@@ -4459,7 +4459,7 @@ body.plantao-module-entry #sidebar.sidebar{
   box-shadow:none!important;
   overflow-y:auto!important;
 }
-body.plantao-module-entry.sidebar-hidden #sidebar.sidebar{
+body.plantao-module-entry.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   transform:translateX(-100%)!important;
   opacity:0!important;
   pointer-events:none!important;
@@ -4511,14 +4511,14 @@ body.plantao-module-entry #plantao-case-grid{
 
 /* Mobile continua usando o drawer global. */
 @media(max-width:980px){
-  body.plantao-module-entry .app-shell,
-  body.plantao-module-entry.sidebar-hidden .app-shell{
+  body.plantao-module-entry .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.plantao-module-entry.sidebar-hidden .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     grid-template-columns:1fr!important;
   }
-  body.plantao-module-entry .main{
+  body.plantao-module-entry .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding:22px 20px 40px!important;
   }
-  body.plantao-module-entry #sidebar.sidebar{
+  body.plantao-module-entry #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     position:fixed!important;
     left:0!important;
     top:0!important;
@@ -4529,10 +4529,10 @@ body.plantao-module-entry #plantao-case-grid{
     box-shadow:var(--shadow)!important;
     z-index:140!important;
   }
-  body.plantao-module-entry.sidebar-open #sidebar.sidebar{
+  body.plantao-module-entry.sidebar-open #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:translateX(0)!important;
   }
-  body.plantao-module-entry.sidebar-hidden #sidebar.sidebar{
+  body.plantao-module-entry.sidebar-hidden #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     opacity:1!important;
     pointer-events:auto!important;
   }
@@ -4550,7 +4550,7 @@ body.plantao-module-entry #plantao-case-grid{
   }
 }
 @media(max-width:680px){
-  body.plantao-module-entry .main{
+  body.plantao-module-entry .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     padding-left:16px!important;
     padding-right:16px!important;
   }
@@ -7369,8 +7369,8 @@ body.plantao-module-entry #plantao-empty{
 
 /* Sala de Emergência v50 — fundo nativo idêntico ao Caderno de Erros */
 body.plantao-module-entry,
-body.plantao-module-entry .app-shell,
-body.plantao-module-entry .main,
+body.plantao-module-entry .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.plantao-module-entry .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body.plantao-module-entry .page.plantao-page,
 body.plantao-module-entry #plantao-library{
   background:var(--bg)!important;
@@ -7488,14 +7488,14 @@ html[data-theme="pink"] body.plantao-module-entry .plantao-featured-case{
 body.plantao-module-entry{
   background:var(--bg)!important;
 }
-body.plantao-module-entry .app-shell,
-body.plantao-module-entry .main,
+body.plantao-module-entry .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.plantao-module-entry .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body.plantao-module-entry .page.plantao-page,
 body.plantao-module-entry #plantao-library{
   background:transparent!important;
 }
-body.plantao-module-entry .app-shell,
-body.plantao-module-entry .main,
+body.plantao-module-entry .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.plantao-module-entry .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body.plantao-module-entry .page.plantao-page,
 body.plantao-module-entry #plantao-library{
   position:relative!important;
@@ -7877,7 +7877,7 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
 /* === Sala de Emergência · PWA sidebar scroll fix v214 ===
    Mantém o drawer móvel rolável e evita travamento de toque no PWA. */
 @media (max-width:980px){
-  html.pwa-standalone body.plantao-module-entry #sidebar.sidebar{
+  html.pwa-standalone body.plantao-module-entry #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:flex!important;
     flex-direction:column!important;
     width:min(86vw,290px)!important;
@@ -7892,7 +7892,7 @@ body[data-page="plantao"]:has(#plantao-simulator:not([hidden])) .topbar .page-he
     pointer-events:auto!important;
   }
 
-  html.pwa-standalone body.plantao-module-entry.sidebar-open #sidebar.sidebar{
+  html.pwa-standalone body.plantao-module-entry.sidebar-open #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     transform:translateX(0)!important;
     overflow-y:auto!important;
     touch-action:pan-y!important;
@@ -8177,7 +8177,7 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
 
 /* PLANTAO — GLOBAL SHELL COMPATIBILITY v63 — 2026-10-04 */
 @media (min-width:981px){
-  body.plantao-module-entry.luria-global-shell-mounted > .app-shell{
+  body.plantao-module-entry.luria-global-shell-mounted > .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:grid!important;
     grid-template-columns:270px minmax(0,1fr)!important;
     height:calc(100dvh - 15px)!important;
@@ -8187,7 +8187,7 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     overflow:hidden!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted #sidebar.sidebar{
+  body.plantao-module-entry.luria-global-shell-mounted #sidebar.sidebar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     position:relative!important;
     top:auto!important;
@@ -8202,7 +8202,7 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     overflow:visible!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted .main{
+  body.plantao-module-entry.luria-global-shell-mounted .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:block!important;
     width:auto!important;
     max-width:none!important;
@@ -8227,8 +8227,8 @@ body.plantao-module-entry[data-case-library-view="osce"] .plantao-cases-section-
     background:transparent!important;
   }
 
-  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > .topbar,
-  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > header.topbar{
+  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  body.plantao-module-entry.luria-global-shell-mounted > .app-shell > header.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     display:flex!important;
     visibility:visible!important;
     opacity:1!important;

@@ -9,7 +9,7 @@ body[data-page="editais"]{
   --ed-soft:#f5f9ff;
   --ed-card:#ffffff;
 }
-body[data-page="editais"] .page{
+body[data-page="editais"] .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   position:relative;
 }
 body[data-page="editais"] .topbar .page-heading,

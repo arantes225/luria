@@ -1,0 +1,8 @@
+/* One entry point for every application shell. Earlier layers win !important;
+   declare the order here so individual page link order cannot change priority. */
+@layer luria-work-navigation, luria-ui-tokens, luria-ui-navigation, luria-pcr-ui, luria-ui-flashcards, luria-ui-emergency, luria-ui-luriazap, luria-ui-education, luria-dashboard-cards, luria-work-dashboard, luria-admin-ui, luria-work-resets, luria-ui-components;
+@import url("./ui-v2-foundations.css?v=3");
+@import url("./ui-shell-controls.css?v=1");
+@import url("./work-navigation.css?v=2");
+@import url("./ui-navigation-v2.css?v=3");
+@import url("./ui-components-v2.css?v=1");

@@ -83,7 +83,7 @@ body:not(.schedule-settings-embed) .page > .luria-page-spotlight{
 }
 
 /* Topbar global: mantém a mesma altura de referência entre páginas. */
-body:not(.schedule-settings-embed) .topbar{
+body:not(.schedule-settings-embed) .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
   min-height:52px!important;
   height:52px;
   box-sizing:border-box;

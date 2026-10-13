@@ -33,6 +33,10 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Check JavaScript syntax
         run: node scripts/check-syntax.cjs
+      - name: Check shared CSS and application routes
+        run: node scripts/check-css.cjs
+      - name: Test CSS ownership and legacy route aliases
+        run: node --test tests/css-system.test.cjs tests/ui-routes.test.cjs
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
       - name: Audit all apostilas without blocking legacy books

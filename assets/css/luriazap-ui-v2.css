@@ -2,7 +2,8 @@
    phone locks without changing shared Plantão styles or script-owned states. */
 @layer luria-ui-luriazap {
   body[data-plantao-entry="phone"][data-ui="v2"] {
-    & .page, & .page * {font-family:var(--ui-font-family)!important;}
+    & .page * {font-family:var(--ui-font-family)!important;}
+    & .page {font-family:var(--ui-font-family)!important;}
     & .plantao-phone-screen button {transform:none!important;}
     & .topbar {pointer-events:auto!important;}
     & .topbar .luria-notifications {display:flex!important;}

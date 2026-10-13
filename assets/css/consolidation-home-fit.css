@@ -2,12 +2,12 @@
 @media (min-width:981px){
   html body[data-page="erros"],
   html body[data-page="questoes"]{overflow:hidden!important;height:100dvh!important;min-height:100dvh!important;max-height:100dvh!important;}
-  html body[data-page="erros"] .main,
-  html body[data-page="questoes"] .main{height:100dvh!important;min-height:0!important;max-height:100dvh!important;overflow:hidden!important;}
-  html body[data-page="erros"] .main > .page,
-  html body[data-page="questoes"] .main > .page{height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;box-sizing:border-box!important;}
-  html body[data-page="erros"] .page > .topbar,
-  html body[data-page="questoes"] .page > .topbar{flex:0 0 0!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;}
+  html body[data-page="erros"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  html body[data-page="questoes"] .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){height:100dvh!important;min-height:0!important;max-height:100dvh!important;overflow:hidden!important;}
+  html body[data-page="erros"] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  html body[data-page="questoes"] .main > .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){height:100%!important;min-height:0!important;max-height:100%!important;display:flex!important;flex-direction:column!important;overflow:hidden!important;box-sizing:border-box!important;}
+  html body[data-page="erros"] .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+  html body[data-page="questoes"] .page > .topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){flex:0 0 0!important;height:0!important;min-height:0!important;margin:0!important;padding:0!important;}
   html body[data-page="erros"] .page > .luria-page-spotlight,
   html body[data-page="questoes"] .page > .luria-page-spotlight{flex:0 0 auto!important;margin:0 0 12px!important;}
   html body[data-page="erros"] .page > .error-home-layout.review-mode:not([hidden]),

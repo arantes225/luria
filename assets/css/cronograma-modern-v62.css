@@ -27,7 +27,7 @@ body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-stack{
 
 /* título e bloco superior */
 @media(min-width:981px){
-  body[data-page="cronograma"]:not(.schedule-settings-embed) .page>.topbar{
+  body[data-page="cronograma"]:not(.schedule-settings-embed) .page>.topbar:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)){
     margin-bottom:8px!important;
   }
   body[data-page="cronograma"]:not(.schedule-settings-embed) .schedule-top-spotlight,

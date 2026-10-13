@@ -1492,7 +1492,7 @@ body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-footer{
 }
 
 
-<style id="friends-study-room-title-v50">
+
 body[data-page="amigos"] .friends-ref-room-grid strong{
   font-size:10px!important;
   line-height:1.28!important;
@@ -1503,10 +1503,10 @@ body[data-page="amigos"] .friends-ref-room-grid strong{
     font-size:10.5px!important;
   }
 }
-</style>
 
 
-<style id="friends-side-buttons-v51">
+
+
 body[data-page="amigos"] .friends-ref-group-list .button,
 body[data-page="amigos"] .friends-ref-suggestion-list .button,
 body[data-page="amigos"] .friends-ref-pending-list .button{
@@ -1533,10 +1533,10 @@ body[data-page="amigos"] .friends-ref-suggestion-list .button{
     font-size:7px!important;
   }
 }
-</style>
 
 
-<style id="studyrats-race-compact-v52">
+
+
 body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-scene{
   min-height:245px!important;
 }
@@ -1582,10 +1582,10 @@ body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-finish{
 body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-footer{
   padding:7px 10px!important;
 }
-</style>
 
 
-<style id="studyrats-block-compact-v53">
+
+
 body[data-page="amigos"] .friends-ref-studyrats-inline{
   padding:8px!important;
   gap:6px!important;
@@ -1621,10 +1621,10 @@ body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-road{
 body[data-page="amigos"] .friends-ref-studyrats-inline .studyrats-race-footer{
   padding:6px 9px!important;
 }
-</style>
 
 
-<style id="friends-materials-v54">
+
+
 body[data-page="amigos"] .friends-ref-materials-card{padding:10px!important}
 body[data-page="amigos"] .friends-ref-materials-head-icon{display:inline-grid;place-items:center;width:21px;height:21px;border-radius:7px;background:var(--accent);color:#fff;font-size:11px;vertical-align:middle}
 body[data-page="amigos"] .friends-ref-materials-list{display:grid;gap:0}
@@ -1647,10 +1647,10 @@ body[data-page="amigos"] .friends-ref-download:hover{background:color-mix(in srg
   body[data-page="amigos"] .friends-ref-material-row{grid-template-columns:34px minmax(0,1fr) 28px}
   body[data-page="amigos"] .friends-ref-material-row time{display:none}
 }
-</style>
 
 
-<style id="friends-study-rooms-v55">
+
+
 body[data-page="amigos"] .friends-ref-create-room-card{
   display:grid!important;
   grid-template-columns:32px minmax(0,1fr)!important;
@@ -1693,4 +1693,3 @@ body[data-page="amigos"] .friends-room-status{display:block;min-height:12px;marg
 @media(max-width:760px){
   body[data-page="amigos"] .friends-create-room-fields{grid-template-columns:1fr}
 }
-</style>

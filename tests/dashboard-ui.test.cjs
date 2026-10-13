@@ -274,7 +274,7 @@ test('all new style rules are opt-in, including media queries; protected entries
     const inspect=list=>{for(const rule of list){if(rule.selectorText){rules++;for(const selector of selectors(rule.selectorText))assert.ok(/\[data-ui(?:-shell|-nav|-work|-admin|-pcr)?="v2"\]/.test(selector),selector);}else if(rule.cssRules)inspect(rule.cssRules);else if(rule.style?.getPropertyValue('font-family'))assert.equal(rule.style.getPropertyValue('font-family'),'"Luria Inter"');}};
     inspect(style.sheet.cssRules);assert.ok(rules>0);
   }
-  for(const file of ['index.html','mini-osce/index.html','plantao/luriazap/index.html']) {
+  for(const file of ['index.html','login/index.html','trabalho/prontuario/index.html']) {
     assert.doesNotMatch(fs.readFileSync(file,'utf8'),/ui-v2|data-ui="v2"/);
   }
   dom.window.close();
@@ -299,7 +299,7 @@ test("migrated modules load foundations once and keep PCR priority ahead of the 
     // This guard inspects link order; legacy inline styles are outside its scope.
     const html = fs.readFileSync(path+"/index.html", "utf8").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
     const dom = new JSDOM(html);
-    const styles = [...dom.window.document.querySelectorAll("link[rel=stylesheet]")].map(node => node.getAttribute("href").split("?")[0].split("/").pop());
+    const styles = require("../scripts/check-css.cjs").stylesForPage(path+"/index.html").map(href=>href.split("?")[0].split("/").pop());
     assert.equal(styles.filter(name => name === "ui-v2-foundations.css").length, 1, path);
     const foundation = styles.indexOf("ui-v2-foundations.css");
     for (const name of styles.filter(name => /^(ui-navigation|education|dashboard|flashcards|community|plantao|work|admin|pcr)-.*v2\.css$/.test(name))) assert.ok(styles.indexOf(name) > foundation, path+": "+name);

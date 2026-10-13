@@ -15,9 +15,11 @@
   <meta name="apple-mobile-web-app-title" content="LURIA">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/png" href="assets/img/logos/favicon.png?v=luria2">
+<script src="/assets/js/ui-routes.js?v=1"></script>
+  <link rel="stylesheet" href="/assets/css/ui-app.css?v=1">
   <link rel="stylesheet" href="assets/css/style.css?v=20261005-thumb-only-global">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261004-global-shell-v74">
-  <script defer src="assets/js/luria-brand-v5.js?v=12"></script>
+<script defer src="assets/js/luria-brand-v5.js?v=12"></script>
 
   <style>
     /* Aula mais discreta */
@@ -109,11 +111,13 @@
     @media(max-width:650px){.guided-study-head{padding:16px}.guided-study-item{grid-template-columns:40px minmax(0,1fr);}.guided-study-action{grid-column:2;justify-self:start}.guided-study-progress-step{font-size:.62rem}}
   </style>
   <link rel="canonical" href="/ambientacao/">
-  <script>(function(){try{if(location.pathname.endsWith("/ambientacao.html"))history.replaceState(null,"","/ambientacao/"+location.search+location.hash);}catch(e){}})();</script>
-  <script src="/assets/js/medical-icons.js?v=2.0"></script>
+<script>(function(){try{if(location.pathname.endsWith("/ambientacao.html"))history.replaceState(null,"","/ambientacao/"+location.search+location.hash);}catch(e){}})();</script>
+<script src="/assets/js/medical-icons.js?v=2.0"></script>
 </head>
 
-<body data-page="ambientacao">
+<body data-ui="v2" data-ui-nav="v2" data-ui-context="study" data-page="ambientacao">
+<script src="/assets/js/ui-theme-v2.js?v=20261013-css1"></script>
+<script defer src="/assets/js/ui-navigation-v2.js?v=20261013-css1"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
@@ -341,7 +345,7 @@
 
           </article>
 
-          
+
         </section>
 
         <section id="ambientacao-workspace" class="panel ambientacao-workspace" hidden>
@@ -384,12 +388,12 @@
     </main>
   </div>
 
-  <script src="/assets/vendor/supabase-2.110.6.js"></script>
-  <script src="assets/js/supabase.js"></script>
-  <script src="/assets/js/app.js?v=20261004-global-shell-v74"></script>
-  <script src="assets/js/study-mode.js?v=12.1"></script>
+<script src="/assets/vendor/supabase-2.110.6.js"></script>
+<script src="assets/js/supabase.js"></script>
+<script src="/assets/js/app.js?v=20261013-css1"></script>
+<script src="assets/js/study-mode.js?v=12.1"></script>
 
-  <script>
+<script>
     (function () {
       function isUuid(value) {
         return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i
@@ -654,6 +658,6 @@
       }
     })();
   </script>
-  <script defer src="assets/js/pwa.js?v=3"></script>
+<script defer src="assets/js/pwa.js?v=20261013-css1"></script>
 </body>
 </html>

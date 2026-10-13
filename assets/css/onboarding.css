@@ -163,9 +163,9 @@ body.luria-onboarding-exploring .luria-onboarding-target{
   filter:none!important;
   opacity:1!important;
 }
-body.luria-onboarding-exploring .app-shell,
-body.luria-onboarding-exploring .main,
-body.luria-onboarding-exploring .page,
+body.luria-onboarding-exploring .app-shell:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.luria-onboarding-exploring .main:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
+body.luria-onboarding-exploring .page:where(:not(body[data-ui-nav="v2"], body[data-ui-nav="v2"] *)),
 body.luria-onboarding-exploring .settings-page{
   opacity:1!important;
   filter:none!important;

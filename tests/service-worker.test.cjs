@@ -7,7 +7,7 @@ const { workerFixture, resource } = require('./fixtures/service-worker.cjs');
 test('public resources are fetched anonymously, stored and recovered offline by exact URL', async () => {
   let online = true;
   const f = workerFixture({ fetch: async req => { if (!online) throw Error('offline'); return resource(req, 'current public bytes'); } });
-  for (const url of ['/assets/css/ui-v2-foundations.css?v=2', '/assets/js/app.js?v=release',
+  for (const url of ['/assets/css/ui-v2-foundations.css?v=3', '/assets/js/app.js?v=release',
     '/assets/fonts/inter/InterVariable.woff2', '/assets/vendor/library.wasm', '/manifest.webmanifest?v=5']) {
     let result = await f.run(url); await result.done();
     assert.equal(await result.response.text(), 'current public bytes');
@@ -270,7 +270,8 @@ test('APP_SHELL contains existing public files and exact current foundational CS
     assert.ok(fs.existsSync(path.resolve(__dirname, '..', file)), file);
     assert.equal(f.context.publicResource(f.request(url)), true, url);
   }
-  assert.ok(f.APP_SHELL.includes('/assets/css/ui-v2-foundations.css?v=2'));
+  assert.ok(f.APP_SHELL.includes('/assets/css/ui-v2-foundations.css?v=3'));
+  assert.ok(f.APP_SHELL.includes('/assets/css/ui-app.css?v=1'));
   assert.ok(!f.APP_SHELL.includes('/assets/css/ui-v2-foundations.css'));
   assert.ok(!f.APP_SHELL.includes('/assets/js/app.js'));
 });
