@@ -1,8 +1,28 @@
 # Padrão editorial das Apostilas LURIA
 
+## Regra inegociável — autossuficiência integral para estudo de residência
+
+**Um estudante que comece sem conhecer a matéria deve conseguir aprendê-la do básico à profundidade exigida nas provas de residência médica usando somente esta apostila.** A apostila LURIA é o material principal e suficiente de estudo do tema; o aluno não deve precisar comprar cursinho, consultar livro-texto, pesquisar na internet ou abrir outra apostila para completar fundamentos, entender mecanismos, interpretar exames ou justificar uma conduta. Referências científicas permanecem obrigatórias para rastreabilidade e atualização editorial, não como substitutas de explicações ausentes.
+
+### O que a autossuficiência exige na prática
+1. **Ensinar pré-requisitos no momento em que forem necessários.** Explicar termos, anatomia, fisiologia, exames e farmacologia indispensáveis antes de utilizá-los em decisões clínicas; conceitos transversais podem receber remissão interna funcional somente se já tiverem sido efetivamente ensinados nesta mesma apostila.
+2. **Raciocínio completo, não verbetes.** Para cada doença, síndrome ou situação importante do tema, cobrir conceito, mecanismo causal, fatores de risco, quadro típico e atípico, classificação, critérios diagnósticos, diferenciais, armadilhas de exames, gravidade, terapêutica e sua justificativa, contraindicações, falhas, recorrência, complicações e seguimento conforme pertinência clínica.
+3. **Aplicação em prova e prática.** Ensinar ao estudante *por que* uma alternativa é correta e *por que* outras são inadequadas, incluindo situações especiais, condutas divergentes entre diretrizes, interpretação de dados, decisões escalonadas e critérios de encaminhamento.
+4. **Tornar o conteúdo visual autossuficiente.** Fluxos, tabelas, mapas e imagens devem conter rótulos legíveis, legendas interpretativas e explicações breves apenas nos pontos necessários. Não converter material visual didático em parágrafos gigantes, nem repetir em texto tudo que o esquema já ensinou.
+5. **Nunca remeter o aprendizado essencial para fora.** São insuficientes frases como “estude os critérios no livro”, “conforme o protocolo” sem explicar critérios e condutas, “pesquisar tratamento” ou “veja outra apostila”. Links e referências servem para conferência e aprofundamento opcional, não para suprir lacunas.
+6. **Não duplicar para atingir a extensão.** A suficiência é medida pela cobertura integral e pela capacidade de resolução, junto ao piso de 60.000 caracteres didáticos úteis; novos caracteres precisam ensinar algo novo e estar no capítulo apropriado.
+
+### Teste obrigatório de encerramento: o aluno consegue estudar só por aqui?
+- **Matriz de cobertura:** relacionar cada assunto e entidade clínica prevista no escopo a seus objetivos de aprendizagem e localizar no próprio caderno onde cada um é realmente ensinado. Lacuna essencial ou explicação apenas nominal reprova.
+- **Questões representativas de residência:** selecionar questões diversas por grandes capítulos, inclusive casos, diagnósticos diferenciais, exames, tratamento, exceções e pegadinhas. Resolver e justificar as alternativas com citações internas à própria apostila, sem recorrer a fontes externas durante o teste. Toda questão reveladora de conteúdo essencial faltante gera correção no capítulo de origem e novo teste.
+- **Leitura do zero:** conferir se siglas, expressões, mecanismos e passos de fluxos são compreensíveis a quem não viu previamente o tema; explicações clínicas podem ser concisas, mas não podem depender de conhecimento omitido.
+- **Critério de aprovação:** **não marcar como concluída ou “60K revisada”** enquanto permanecer qualquer lacuna central que obrigue estudo complementar, mesmo que a página já ultrapasse 60 mil caracteres. Registrar o teste e suas limitações; revisão médica e visual desktop/PWA continuam necessárias.
+
+---
+
 ## Norma vigente — mínimo de 60.000 caracteres didáticos úteis (13/10/2026)
 
-**A partir desta data, o piso editorial obrigatório é 60.000 caracteres reais por apostila, sem teto fixo.** Esta norma substitui o piso anterior de 60.000, inclusive em apostilas antigas já expandidas ou ainda pendentes de revisão. A referência quantitativa é o texto instrutivo único dos capítulos, descontando HTML, CSS, JavaScript, JSON estrutural, navegação, capa, sumário, referências, enunciados decorativos e trechos repetidos. A ferramenta de auditoria é *triagem*, não certificação clínica nem prova de que todas as palavras são únicas.
+**A partir desta data, o piso editorial obrigatório é 60.000 caracteres reais por apostila, sem teto fixo.** Esta norma substitui o piso anterior de 40.000, inclusive em apostilas antigas já expandidas ou ainda pendentes de revisão. A referência quantitativa é o texto instrutivo único dos capítulos, descontando HTML, CSS, JavaScript, JSON estrutural, navegação, capa, sumário, referências, enunciados decorativos e trechos repetidos. A ferramenta de auditoria é *triagem*, não certificação clínica nem prova de que todas as palavras são únicas.
 
 **Regra editorial mais importante: não reexplicar e não converter elementos didáticos em textões.** Atingir 60 mil não autoriza reciclar fisiopatologia, repetir a mesma ideia em introdução, diagnóstico e revisão, ou adicionar blocos extensos, deslocados e sem nexo. Cada conceito fundamental é ensinado uma única vez, no ponto lógico; menções posteriores devem acrescentar uma implicação, distinção ou remissão breve ao trecho original. Antes de inserir texto novo, localizar o que já é ensinado e desenvolver apenas lacunas identificáveis.
 
@@ -10,7 +30,7 @@
 - **Os visuais continuam ensinando:** manter e, quando cabível, aprofundar tabelas, algoritmos, fluxogramas, esquemas, mapas mentais, callouts, quadros e imagens aprovadas. Explicações breves e causais acompanham a figura ou o ponto de decisão; não substituir a figura por várias páginas de prosa nem escrever por extenso tudo que a tabela já comunica.
 - **Leitura como cursinho premium:** alternar parágrafos enxutos e conectados, subtítulos informativos e recursos visuais pertinentes; utilizar casos, comparação de entidades, valores de exames e decisões clínicas para ensinar fatos novos. Cortar redundância mesmo quando isso reduzir a contagem — depois completar com ciência útil, não enchimento.
 - **Revisão de repetição:** verificar se dois blocos, tabelas ou casos transmitem a mesma conclusão sem ganho real. Consolidar o redundante, preservar o melhor recurso e preencher lacunas em outro ponto. Novos blocos precisam responder uma pergunta ainda não respondida na apostila.
-- **Condição de conclusão:** >=60.000 caracteres úteis *e* revisão clínica, de redundância, fontes/doses, layout desktop/PWA, imagens, navegação e valor para questões. Bater o número não gera selo automático.
+- **Condição de conclusão:** >=60.000 caracteres úteis *e* autossuficiência demonstrada em matriz de cobertura e teste de questões, revisão clínica, de redundância, fontes/doses, layout desktop/PWA, imagens e navegação. Bater o número não gera selo automático.
 
 **Scripts:** usar `node scripts/audit-apostilas-60k.mjs --json` para triagem geral; o antigo `audit-apostilas-40k.mjs` permanece como alias de compatibilidade, mas passa a aplicar o piso de 60 mil. O gerador de apostilas e a auditoria em lote também devem obedecer a esse piso.
 
