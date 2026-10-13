@@ -267,3 +267,24 @@ A apostila deve ter identidade gráfica consistente, leitura agradável e **rela
 **Foto externa quebrada:** recuperar fotografia verdadeira com licença de reutilização confiável; quando a fotografia exata não estiver disponível, uma alternativa real só pode ser usada com legenda corrigida que indique **precisamente** o que mostra. Preferir imagem real de domínio público/CC0 e CDN verificável, ou hospedagem própria quando viável, preservando atribuição. Nunca substituir foto do colo em morango por secreção cervical dizendo que é petéquia. Validação no site/PWA é obrigatória antes de afirmar que uma foto está renderizada.
 
 **Revisão editorial**: checar, por capítulo, densidade de cards, frequência de callouts, variedade de recursos visuais com propósito, contraste de cores, composição mobile e foco didático. Se dois blocos informarem a mesma coisa sem adicionar aprendizado, consolidá-los.
+
+
+
+## Ajuste final de legibilidade — referência visual de cursinhos
+
+Comparação feita com os PDFs de referência da pasta do responsável ("02 - CORRIMENTOS VAGINAIS .pdf" e "02 - ASSISTENCIA AO PRE-NATAL.pdf") e o padrão de apostila extensa + ficha de revisão de preparatórios para residência. **São inspirações para hierarquia, não autorização para copiar textos, imagens, identidade visual ou diagramação proprietária.**
+
+**O que aproveitar dos materiais de referência:** títulos hierárquicos e regulares, destaque visual seletivo, tabelas apenas para comparação, figura clínica junto da explicação, seções que começam com premissa e terminam com consequência prática, densidade de informação real e referências completas.
+
+**O que NÃO replicar literalmente:** corpo de texto de aproximadamente 9 pt em duas colunas do PDF impresso (pequeno para leitura no PWA), uso repetitivo de um mesmo destaque colorido em blocos contíguos, páginas criadas artificialmente ou quatro imagens na mesma faixa.
+
+**Escala para leitura digital na LURIA (desktop):**
+- Texto-base: referência 14–14,5 px, entrelinhas ~1,68–1,72 e linhas preferencialmente até ~82 caracteres; evitar parágrafos intermináveis.
+- H2: ~22 px, H3 da unidade clínica: ~16–17 px, H4 interno: ~14–14,5 px. Não duplicar subtítulos como "Tratamento" imediatamente seguido de "Tratamento — esquemas" sem motivo clínico.
+- Respiração vertical: aproximadamente 15 px após parágrafos, 20–23 px entre unidades clínicas e cerca de 24–28 px de margem interna nos blocos brancos. Um elemento visual deve apoiar a explicação, não impor espaços vazios.
+- Tabelas: célula de aproximadamente 13 px, espaçamento interno suficiente para consulta; quadro comparativo final único e fontes vinculadas.
+- PWA: manter corpo 14 px com entrelinhas 1,68, cards secundários mais discretos e imagens responsivas sem desproporção nem grupos.
+- Callouts: usar o Pulo do Gato apenas para insights não redundantes; não colocar outro callout com a mesma informação junto dele.
+- Tratamento editorial: preservar texto com causalidade clínica e mecanismos necessários; retirar definições repetidas entre apresentação, clínica e diagnóstico e substituir, quando pertinente, por interpretações de exames, diferenciais e condutas explicadas.
+
+**Verificação:** validar navegação, headings H2/H3/H4, notas duplicadas, semântica da legenda, vínculos de referências, sintaxe CSS/JS, PWA e formato de impressão. Não declarar testes gráficos reais se não houve acesso a um navegador da página publicada.
