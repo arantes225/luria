@@ -52,3 +52,17 @@
 
 ## Critério de encerramento da migração
 **Nenhum dos 25 cadernos está automaticamente certificado como revisado pelo novo padrão.** A atualização da norma editorial e esta auditoria são a preparação do trabalho, não uma declaração de que as 25 obras já foram reescritas. Só marcar uma pasta como concluída depois de realizar a expansão e os testes. Os aprovados da fila de imagens permanecem aprovados; itens pendentes dependem de curadoria administrativa.
+
+
+## Registro de implementação — 12/10/2026
+
+### Diabetes Mellitus Gestacional — expansão textual aplicada no código
+- Arquivo \`apostilas/diabetes-mellitus-gestacional/index.html\` atualizado na branch \`main\`, commit \`bbe9a1991346e4cbb25b409d1bf8586c060d8cc9\`.
+- A seção **9.2 Complicações maternas e obstétricas** recebeu aprofundamento estruturado em seis novos subcapítulos: relação com pré-eclâmpsia, infecções sem sobrediagnóstico, crescimento fetal/decisão obstétrica, leitura da avaliação fetal, adaptação metabólica neonatal e seguimento do puerpério.
+- Inseridos mecanismos, diferenciação entre associação e causalidade, alertas de aplicação clínica, um caso integrado e referência verificável às **ADA Standards of Care 2026** (DOI 10.2337/dc26-S015).
+- A contagem aproximada do **artigo central** (sem scripts e estilos) foi de 38.330 para **51.030 caracteres**, antes da exclusão definitiva de sumário e referências. Contagem estrita e revisão visual/PWA ainda são requisitos para certificar a obra. Não foram modificadas imagens já aprovadas nem aprovadas candidatas novas.
+- A linha da tabela acima representa a **situação inicial da auditoria**, não a medição após essa revisão.
+
+### Infraestrutura editorial
+- \`apostilas/EDITORIAL_STANDARD.md\`: padrão Livro-Texto 40K, critérios clínicos, preservação de renderer e curadoria de imagens adicionados.
+- \`scripts/audit-apostilas-40k.mjs\`: auditoria preliminar automatizada de conteúdo didático das 25 pastas, com exclusão de HTML estrutural e compatibilidade com páginas HTML/JSON; não confundir resultado de triagem com certificação clínica.
