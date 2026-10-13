@@ -15,42 +15,12 @@
   <link rel="stylesheet" href="/assets/css/ui-app.css?v=7">
   <link rel="stylesheet" href="/assets/css/style.css?v=16.14-font-unified">
   <link rel="stylesheet" href="/assets/css/luria-brand-v5.css?v=20261006-apostilas-theme-v91">
+  <link rel="stylesheet" href="/assets/css/apostila-luria-book.css?v=20261013-1">
 <script defer src="/assets/js/luria-brand-v5.js?v=12"></script>
   <link rel="canonical" href="/apostilas/amenorreia/">
-  <style>
-    .book-page{display:grid;grid-template-columns:196px minmax(0,1fr);gap:14px;align-items:start;padding-bottom:36px}
-    .book-outline{position:sticky;top:8px;align-self:start;height:calc(100dvh - 16px);padding:9px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04);overflow:hidden}
-    .book-outline-head{padding:2px 2px 6px;border-bottom:1px solid var(--border)}.book-outline-head small{display:block;color:var(--muted);font-size:7px;letter-spacing:.06em;text-transform:uppercase}.book-outline-head strong{display:block;margin-top:2px;font-size:11px;color:var(--text)}
-    .book-outline-nav{display:grid;gap:1px;margin-top:5px}.book-outline-link{display:flex;align-items:center;padding:2px 5px;border-left:3px solid transparent;border-radius:6px;color:var(--muted);font-size:8.4px;line-height:1.05;text-decoration:none}.book-outline-link:hover,.book-outline-link.is-active{background:var(--accent-soft);color:var(--accent);border-left-color:var(--accent)}
-    .book-main{display:grid;gap:14px;min-width:0;position:relative}.book-hero{padding:24px 26px;border-radius:22px;background:linear-gradient(135deg,#184888,#2d6ab5);color:#fff;box-shadow:0 12px 30px rgba(24,72,136,.16)}.book-hero h1{margin:12px 0 6px;font-size:30px;color:#fff}.book-hero p{margin:0;color:rgba(255,255,255,.84);font-size:12px}.book-badge{display:inline-flex;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.14);font-size:9px;text-transform:uppercase}.book-meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.book-meta-row span{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.12);font-size:9px}
-    .book-section,.mindmap-section{padding:24px 26px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04)}.book-section h2,.mindmap-section h2{margin:0 0 14px;font-size:21px;font-weight:600}.book-section h3{margin:22px 0 9px;font-size:15.5px}.book-section p,.book-section li{font-size:13.2px;line-height:1.68}.book-section ul{padding-left:22px}.book-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:12px}.book-table th,.book-table td{padding:10px 11px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.5}.book-table th{background:var(--surface-2);font-weight:600}
-    .book-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:13px}.book-mini{padding:15px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface-2)}.book-mini strong{display:block;margin-bottom:7px;font-size:12.8px}.book-mini p,.book-mini li{font-size:12px!important;line-height:1.55!important}
-    .book-callout{margin:18px 0;padding:19px 20px;border-radius:16px;background:color-mix(in srgb,var(--accent) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));font-size:13.6px;line-height:1.62}.danger-block{margin:16px 0;padding:15px 16px;border-left:4px solid var(--danger);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--danger) 6%,var(--surface));border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}.danger-block h4{margin:0 0 8px;font-size:13px;color:var(--danger)}
-    .drive-block{margin-top:13px;padding:15px 16px;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}.drive-block h4{margin:0 0 8px;font-size:13px}.clinical-list{margin:8px 0 0!important;padding-left:20px!important}.clinical-list li{font-size:12.4px!important;line-height:1.55!important}
-    .mindmap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mind-center{grid-column:1/-1;padding:14px;border-radius:12px;background:var(--accent);color:#fff;font-size:12px;text-align:center}.mind-branch{padding:13px;border:1px solid var(--border);border-radius:12px;background:var(--surface-2)}.mind-branch h3{margin:0 0 7px;font-size:12px}.mind-branch li{font-size:11px;line-height:1.45}
-    .reference-list li{margin-bottom:9px}.reference-list a{color:var(--accent)}
-    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;height:auto;max-height:none}.book-outline-nav{display:flex;overflow-x:auto;gap:5px}.book-outline-link{flex:0 0 auto;white-space:nowrap}.book-grid-2,.mindmap{grid-template-columns:1fr}}
-  
-/* Texto clínico longo com ritmo editorial, sem card para cada etiologia. */
-.book-main .book-section p,.book-main .book-section>ul li,.book-main .book-section>ol li{font-size:15px;line-height:1.72}
-.book-main .book-section h3{font-size:17.5px;line-height:1.34;letter-spacing:-.008em}
-.book-main .book-section h2{font-size:22px;line-height:1.32}
-.book-main .book-section p{max-width:78ch}
-.book-main .luria-etiology-chapter-boundary{margin:30px 0 17px;padding-top:14px;border-top:1px solid var(--border)}
-.book-main .luria-etiology-chapter-boundary h3{font-size:16.8px;margin:0 0 8px}
-.book-main .luria-etiology-detail{margin:24px 0 25px;padding:0;max-width:100%;background:transparent;border:0;box-shadow:none}
-.book-main .luria-etiology-detail .luria-etiology-head{font-size:16.5px;margin:22px 0 10px}
-.book-main .luria-etiology-detail p{margin:0 0 13px}
-.book-main .luria-etiology-detail .luria-clinical-note{font-size:13.5px;line-height:1.58;color:var(--muted);margin:12px 0 19px;padding:10px 14px;border-left:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 4%,var(--surface));border-radius:0 8px 8px 0}
-.book-main .luria-etiology-detail .luria-clinical-note strong{color:var(--accent)}
-.book-outline-nav .book-outline-link{font-size:10.5px;line-height:1.28;min-height:28px}
-.book-main .book-section .clinical-list li{font-size:14px!important;line-height:1.6!important}
-.book-main .book-section table{min-width:520px}
-.book-main .book-section{overflow-wrap:break-word}
-.book-main .book-section .book-table{display:table}
-@media(max-width:620px){.book-main .book-section p,.book-main .book-section>ul li,.book-main .book-section>ol li{font-size:14.6px;line-height:1.68}.book-main .book-section h2{font-size:20px}.book-main .book-section h3{font-size:16.2px}.book-main .book-section{padding:19px 15px}.book-main .luria-etiology-detail .luria-etiology-head{font-size:15.6px}.book-main .luria-etiology-detail .luria-clinical-note{font-size:12.9px}}
-@media print{.luria-etiology-detail,.luria-etiology-chapter-boundary{break-inside:avoid}.book-outline{display:none!important}}
-
+  <style id="luria-amenorreia-specific">
+/* Estilos exclusivos da amenorreia; grid, tipografia, menu e superfícies vêm do CSS compartilhado. */
+.danger-block{margin:16px 0;padding:15px 16px;border-left:4px solid var(--danger);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--danger) 6%,var(--surface));border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}.danger-block h4{margin:0 0 8px;font-size:13px;color:var(--danger)}
 /* Revisão clínica progressiva e acessível */
 .luria-case-checkpoints{display:grid;gap:0;margin:17px 0 6px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .luria-checkpoint{border-bottom:1px solid var(--border)}
@@ -64,12 +34,6 @@
 .luria-checkpoint>div p{margin:7px 0 0!important;font-size:14px!important;line-height:1.63!important}
 @media(max-width:620px){.luria-checkpoint summary{font-size:13.6px;padding:14px 3px}.luria-checkpoint>div{padding:11px 12px;margin:0 2px 14px}.luria-checkpoint>div p{font-size:13.5px!important}}
 
-/* Tabelas de estudo mantêm largura e leitura confortáveis no celular. */
-.book-main .luria-table-scroll,.book-main .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;overscroll-behavior-x:contain;margin:15px 0 22px}
-.book-main .luria-table-scroll .book-table,.book-main .table-wrap .book-table{min-width:590px;margin-top:0}
-.book-main .book-table th,.book-main .book-table td{font-size:13.4px;line-height:1.5;padding:10px 12px}
-@media(max-width:620px){.book-main .book-table th,.book-main .book-table td{font-size:12.8px;padding:9px 11px}}
-@media print{.book-main .luria-table-scroll,.book-main .table-wrap{overflow:visible}.book-main .luria-table-scroll .book-table,.book-main .table-wrap .book-table{min-width:0}}
 
 /* Resumo visual: algoritmo clínico sem imagens externas e com leitura no PWA */
 .amenor-decision-map{margin:21px 0 25px;padding:18px;border:1px solid var(--border);border-radius:15px;background:color-mix(in srgb,var(--accent) 2%,var(--surface))}
@@ -87,21 +51,53 @@
 .amenor-decision-map .amenor-decision-note{font-size:12.4px!important;line-height:1.6!important;margin:14px 0 0!important;color:var(--muted);max-width:none!important}
 @media(max-width:580px){.amenor-decision-map{padding:12px}.amenor-decision-branches{grid-template-columns:1fr}.amenor-decision-start strong,.amenor-decision-base strong{font-size:14px}.amenor-decision-branches strong{font-size:13px}}
 @media print{.amenor-decision-map,.amenor-decision-branches>div{break-inside:avoid}}
+
+/* Corrige o grande vazio lateral gerado pelo limite antigo de 78 caracteres por linha. */
+body[data-apostila="amenorreia"] .book-main .book-section p{max-width:100%}
+body[data-apostila="amenorreia"] .book-page{grid-template-columns:minmax(180px,206px) minmax(0,1fr);gap:14px}
+body[data-apostila="amenorreia"] .book-main{min-width:0;width:100%}
+body[data-apostila="amenorreia"] .book-main .book-section,
+body[data-apostila="amenorreia"] .book-main .book-hero,
+body[data-apostila="amenorreia"] .book-main .mindmap-section{width:100%;min-width:0}
+body[data-apostila="amenorreia"] .book-outline{max-height:calc(100dvh - 16px);height:auto;overflow-y:auto;scrollbar-width:thin}
+body[data-apostila="amenorreia"] .book-outline-nav{min-width:0}
+body[data-apostila="amenorreia"] .book-outline-link{overflow-wrap:anywhere}
+body[data-apostila="amenorreia"] .book-section .luria-table-scroll{width:100%;max-width:100%;overflow-x:auto}
+body[data-apostila="amenorreia"] .book-section .luria-table-scroll .book-table,
+body[data-apostila="amenorreia"] .book-section .table-wrap .book-table{min-width:590px!important;table-layout:auto!important}
+body[data-apostila="amenorreia"] .book-section .book-grid-2{min-width:0}
+@media(max-width:900px){
+ body[data-apostila="amenorreia"] .book-page{grid-template-columns:minmax(0,1fr)}
+ body[data-apostila="amenorreia"] .book-outline{position:relative;top:auto;height:auto;max-height:none;overflow:visible}
+ body[data-apostila="amenorreia"] .book-outline-nav{display:flex;flex-wrap:nowrap;gap:6px;overflow-x:auto;scrollbar-width:thin}
+ body[data-apostila="amenorreia"] .book-outline-link{flex:0 0 auto;min-height:34px;white-space:nowrap;overflow-wrap:normal}
+ body[data-apostila="amenorreia"] .book-main .book-grid-2,
+ body[data-apostila="amenorreia"] .mindmap{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:560px){
+ body[data-apostila="amenorreia"] .book-section{padding:18px 16px}
+ body[data-apostila="amenorreia"] .book-main .book-section p{max-width:100%}
+ body[data-apostila="amenorreia"] .book-section .luria-table-scroll .book-table{min-width:520px!important}
+}
+@media print{
+ body[data-apostila="amenorreia"] .book-outline{display:none!important}
+ body[data-apostila="amenorreia"] .book-page{display:block}
+}
 </style>
-<style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
+
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
-<body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="aprender">
+<body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="aprender" data-apostila="amenorreia">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
 <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
 <div class="app-shell"><aside id="sidebar" class="sidebar"></aside><div id="sidebar-backdrop" class="sidebar-backdrop"></div><main class="main"><div class="page">
 <header class="topbar"><button id="menu-open" class="menu-open" type="button" aria-label="Abrir menu">☰</button><div class="page-heading"><span class="eyebrow">Apostila LURIA</span><h1>Amenorreia</h1></div></header>
-<div class="book-page">
-<aside class="book-outline"><div class="book-outline-head"><small>Estrutura do conteúdo</small><strong>Amenorreia</strong></div><nav class="book-outline-nav">
+<section class="book-page">
+<aside class="book-outline" aria-label="Estrutura da apostila"><a class="book-outline-back" href="/apostilas/" aria-label="Voltar para apostilas"><span aria-hidden="true">←</span> Voltar</a><div class="book-outline-head"><small>Estrutura do conteúdo</small><strong>Amenorreia</strong></div><nav class="book-outline-nav">
 <a class="book-outline-link" href="/apostilas/amenorreia/#resumo">Em 30 segundos</a><a class="book-outline-link" href="/apostilas/amenorreia/#conceitos">Conceitos</a><a class="book-outline-link" href="/apostilas/amenorreia/#primaria">Amenorreia primária</a><a class="book-outline-link" href="/apostilas/amenorreia/#secundaria">Amenorreia secundária</a><a class="book-outline-link" href="/apostilas/amenorreia/#algoritmo">Algoritmo diagnóstico</a><a class="book-outline-link" href="/apostilas/amenorreia/#prolactina">Hiperprolactinemia</a><a class="book-outline-link" href="/apostilas/amenorreia/#ahf">Amenorreia hipotalâmica</a><a class="book-outline-link" href="/apostilas/amenorreia/#iop">Insuficiência ovariana</a><a class="book-outline-link" href="/apostilas/amenorreia/#sop">SOP e hiperandrogenismo</a><a class="book-outline-link" href="/apostilas/amenorreia/#anatomicas">Causas anatômicas</a><a class="book-outline-link" href="/apostilas/amenorreia/#testes">Testes hormonais</a><a class="book-outline-link" href="/apostilas/amenorreia/#tratamento">Tratamento</a><a class="book-outline-link" href="/apostilas/amenorreia/#erros">Erros frequentes</a><a class="book-outline-link" href="/apostilas/amenorreia/#casos">Casos</a><a class="book-outline-link" href="/apostilas/amenorreia/#questoes">Fixação</a><a class="book-outline-link" href="/apostilas/amenorreia/#mapa">Mapa mental</a><a class="book-outline-link" href="/apostilas/amenorreia/#referencias">Referências</a></nav></aside>
 <article class="book-main">
-<section class="book-hero"><span class="book-badge">Apostila LURIA</span><h1>Amenorreia</h1><p>Raciocínio clínico · amenorreia primária e secundária · eixo HHO · causas anatômicas e endócrinas</p><div class="book-meta-row"><span>Área: Ginecologia e Obstetrícia</span><span>Matéria: Endocrinologia Ginecológica</span><span>Tema: Amenorreia</span></div></section>
+<section class="book-hero apostila-identity" aria-label="Identificação da apostila"><span class="book-badge">Apostila LURIA</span><h1>Amenorreia</h1><p>Raciocínio clínico · amenorreia primária e secundária · eixo HHO · causas anatômicas e endócrinas</p><div class="book-meta-row"><span>Área: Ginecologia e Obstetrícia</span><span>Matéria: Endocrinologia Ginecológica</span><span>Tema: Amenorreia</span></div></section>
 
 <section id="resumo" class="book-section"><h2>Em 30 segundos</h2><div class="drive-block"><h4>O que você precisa lembrar</h4><ul class="clinical-list">
 <li><strong>Amenorreia é um sintoma, não um diagnóstico.</strong></li>
@@ -393,7 +389,7 @@
 <li><a href="https://academic.oup.com/ejendo/article/190/6/G53/7674241" target="_blank" rel="noopener noreferrer">Gravholt et al. Clinical practice guidelines for Turner syndrome. European Journal of Endocrinology, 2024.</a></li>
 <li><a href="https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/01/mullerian-agenesis-diagnosis-management-and-treatment" target="_blank" rel="noopener noreferrer">ACOG. Müllerian Agenesis: Diagnosis, Management, and Treatment. Committee Opinion 728, 2018.</a></li>
 </ol></section>
-</article></div></div></main></div>
+</article></section></div></main></div>
 <script src="/assets/vendor/supabase-2.110.6.js"></script><script src="/assets/js/supabase.js?v=auth4"></script><script src="/assets/js/app.js?v=20261013-frame1"></script><script src="/assets/js/apostila-tools.js?v=8-fit-sidebar-tools"></script><script src="/assets/js/pwa.js?v=20261013-width2"></script>
 
 </body></html>
