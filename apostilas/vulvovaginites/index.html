@@ -186,6 +186,51 @@
 .luria-key-line strong{color:var(--text)}
 @media(max-width:720px){.luria-key-grid{grid-template-columns:1fr}.luria-key-line:nth-last-child(2){border-bottom:1px solid var(--border)}.luria-key-summary-head{padding:13px 14px}.luria-key-grid{padding:4px 15px 7px}}
 @media print{.luria-key-line,.luria-master-table tr{break-inside:avoid}.luria-comparison-scroll{overflow:visible}.luria-master-table{min-width:0}}
+
+/* Abertura editorial: uma ideia principal por bloco e progressão contínua */
+.luria-opening-summary{padding-top:20px;padding-bottom:20px}
+.luria-opening-summary>p{max-width:760px}
+.luria-opening-points{list-style:none;margin:15px 0!important;padding:0!important;border-top:1px solid var(--border)}
+.luria-opening-points li{margin:0!important;padding:11px 0;border-bottom:1px solid var(--border);line-height:1.56!important}
+.luria-opening-points strong{color:var(--accent)}
+.luria-opening-bridge{margin:15px 0 0!important;color:var(--muted);font-size:11.9px!important}
+.luria-foundations>h2{border-left:4px solid var(--luria-chapter-tone,#184888);padding-left:13px;margin-bottom:17px}
+.luria-foundations>h3{margin:27px 0 9px!important;font-size:16px!important;color:var(--text)}
+.luria-foundations>h3:first-of-type{margin-top:21px!important}
+.luria-foundation-rail{border:1px solid var(--border);border-radius:13px;padding:2px 16px;margin:15px 0 18px;background:var(--surface)}
+.luria-foundation-row{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.luria-foundation-row:last-child{border-bottom:0}
+.luria-foundation-index{font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.025em;padding-top:2px}
+.luria-foundation-row strong{font-size:12.9px;font-weight:650;color:var(--text)}
+.luria-foundation-row p{font-size:12.6px!important;line-height:1.58!important;margin:6px 0 0!important}
+.luria-editorial-note{padding:11px 14px;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));font-size:12.2px!important;line-height:1.62!important;margin:17px 0 0!important}
+.luria-editorial-note strong{color:var(--accent)}
+.luria-foundations>.luria-figure{margin:16px auto 9px}
+.luria-editorial-caption{margin:6px 0 23px!important;font-size:11.2px!important;color:var(--muted);line-height:1.5!important}
+.luria-life-course{margin:12px 0 20px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.luria-life-row{display:grid;grid-template-columns:minmax(120px,27%) 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.luria-life-row:last-child{border-bottom:0}
+.luria-life-row strong{color:var(--accent);font-size:12.4px;line-height:1.4}
+.luria-life-row p{margin:0!important;font-size:12.8px!important;line-height:1.57!important}
+.luria-anamnesis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:13px 0 20px;padding:16px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.luria-anamnesis strong{display:block;margin-bottom:8px;color:var(--accent);font-size:13px}
+.luria-anamnesis ul{margin:0!important;padding-left:20px!important}
+.luria-anamnesis li{font-size:12.5px!important;line-height:1.57!important}
+.luria-consult-steps{counter-reset:consult;list-style:none;margin:12px 0 16px!important;padding:0!important}
+.luria-consult-steps li{position:relative;margin:0!important;padding:13px 0 13px 43px;border-bottom:1px solid var(--border)}
+.luria-consult-steps li::before{counter-increment:consult;content:counter(consult);position:absolute;left:0;top:12px;width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:color-mix(in srgb,var(--accent) 11%,var(--surface));color:var(--accent);font-size:11px;font-weight:750}
+.luria-consult-steps li strong{color:var(--text)}
+.luria-warning-strip{display:flex;gap:16px;align-items:flex-start;background:color-mix(in srgb,#cb8133 8%,var(--surface));border:1px solid color-mix(in srgb,#cb8133 33%,var(--border));border-radius:12px;padding:13px 15px;margin:19px 0 14px}
+.luria-warning-strip strong{font-size:12.8px;color:var(--text);flex:0 0 130px}
+.luria-warning-strip span{font-size:12.4px;line-height:1.55;color:var(--text)}
+@media(max-width:680px){
+  .luria-life-row{grid-template-columns:1fr;gap:5px}
+  .luria-anamnesis{grid-template-columns:1fr;gap:16px}
+  .luria-foundation-row{grid-template-columns:59px 1fr;gap:9px}
+  .luria-warning-strip{display:block}
+  .luria-warning-strip strong{display:block;margin-bottom:5px}
+}
+@media print{.luria-foundation-row,.luria-life-row,.luria-consult-steps li{break-inside:avoid}}
 </style>
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
