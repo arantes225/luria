@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v291-homem-idoso-v7";
+const CACHE_VERSION = "luria-pwa-v292-mulher-adulta-v8";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
