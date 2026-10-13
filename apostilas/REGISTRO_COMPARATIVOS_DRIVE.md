@@ -21,6 +21,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Limite:** ainda não foi encontrado material especificamente de rotura prematura de membranas no Drive acessível por busca de nome, siglas e termos relacionados. A comparação pedagógica específica permanece **pendente**.
 - **Condição:** não certificar a apostila como comparada integralmente, autossuficiente ou concluída até leitura de uma referência efetivamente específica de RPM, idealmente do Estratégia MED, além das conferências científicas atuais.
 
+## 2026-10-13 — Alterações fisiológicas da gestação
+
+- **Apostila LURIA:** `apostilas/alteracoes-fisiologicas-da-gestacao/index.html`.
+- **Materiais do Drive efetivamente abertos:** `Pré-Natal.pdf` e `02 - ASSISTENCIA AO PRE-NATAL.pdf`, comparados pela leitura textual; **autoria de Estratégia MED não verificada**.
+- **Limite do benchmark:** ambos tratam de acompanhamento pré-natal, sinais de gestação, exames, suplementação e vigilância. Nenhum apresenta um tratado sistemático das adaptações cardiovascular, respiratória, renal, hematológica e metabólica. Portanto a comparação é **parcial, não equivalente**; a etapa zero foi tentada de maneira verificável, mas não autoriza certificação integral.
+- **Cobertura LURIA examinada:** 20 seções (incluindo sistemas orgânicos, fisiológico × patológico, urgência/anestesia, farmacocinética, casos, revisão e referências). Achados positivos: parâmetros aproximados, alertas de segurança e casos em vários sistemas. Lacunas: ausência de autoteste com justificativa rastreável a cada capítulo; algumas referências genéricas sem identificação bibliográfica; comparação não específica do Drive; inspeção visual PWA ainda pendente.
+- **Plano autoral:** adicionar questões próprias com resolução e localização da explicação na apostila; ampliar precisão das fontes primárias e medidas de interpretação; sem reproduzir material comparativo e sem criar contagem artificial de texto.
+- **Fontes clínicas de conferência:** Merck Manual Professional, *Physiology of Pregnancy* (revisão 2024); OMS, critérios de anemia (2024); diretrizes nacionais específicas a cotejar antes da conclusão.
+- **Estado:** **EM REVISÃO / NÃO CERTIFICADA**. Faltam benchmark específico, leitura pedagógica completa, auditoria visual desktop/PWA, checagem por questão e revisão final de todas as referências.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
