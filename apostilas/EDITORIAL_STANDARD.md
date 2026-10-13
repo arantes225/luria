@@ -219,3 +219,26 @@ O responsável rejeitou expressamente a repetição de imagens para aumentar pá
 8. **Não remover as imagens da fila do Admin por conveniência visual.** Aprovação original permanece registrada; o renderer escolhe inserções pedagógicas sem duplicar ou transformar a seção em galeria.
 9. **Qualidade do texto:** evitar páragrafos repetindo explicações anteriores; aprofundar fisiopatologia e raciocínio com distinções clínicas, resultados discordantes e situações especiais objetivas. Quando um tópico fica extenso, subdividir com subtítulos relevantes.
 10. **Finalização significa revisão substantiva e visual**, não somente atender caracteres. Validar pelo menos uma renderização real desktop/mobile e registrar limitações quando não houver navegador de teste disponível.
+
+
+---
+
+## Regra de organização por doença — bloco clínico completo
+
+Diretriz expressa do responsável (12/10/2026): **não fragmentar diagnóstico, tratamento, prevenção e seguimento em capítulos genéricos quando a apostila cobre doenças diferentes**.
+
+**Estrutura obrigatória de cada doença ou síndrome:**
+1. Conceito e epidemiologia (frequência, contextos e fatores de risco).
+2. Etiologia e fisiopatologia, com esquema causal original ou sequência visual quando útil.
+3. Quadro clínico e exame físico, com imagens reais aprovadas próximas à descrição clínica.
+4. Diagnóstico, critérios, exames, limitações e diagnósticos diferenciais **daquela doença**, com imagem de microscopia/exame junto à interpretação.
+5. Tratamento da doença, classificando gravidade, primeira linha, alternativas, contraindicações, situações especiais e quando encaminhar; quadro de posologia quando adequado.
+6. Profilaxia, aconselhamento e medidas preventivas **específicas**, incluindo parcerias quando pertinente.
+7. Complicações, seguimento e manejo de falha/recorrência, integrados ao mesmo bloco.
+8. Pulo do Gato, algoritmo e caso comentado associados à etiologia, de forma compacta.
+
+**Não fazer:** abrir três doenças, depois um capítulo único misturando os diagnósticos, depois outro com todos os tratamentos e depois um terceiro com todas as profilaxias. Blocos comuns somente para fundamentos de fisiologia/triagem inicial, diagnósticos transversais não pertencentes às doenças principais, e **quadro comparativo final** após todos os blocos completos.
+
+**Regra de imagens clínicas:** nenhuma imagem remota inacessível deve aparecer como imagem quebrada. Se o arquivo não puder ser validado ou hospedado corretamente com licença, substituir a tentativa inline por link funcional à fonte científica com contexto didático, deixando claro que a fotografia está na publicação externa. A solução definitiva ideal é imagem clínica real, conferida, otimizada, com permissões verificadas e hospedagem estável; não usar imagem gerada para fingir um achado médico real. Não mexer automaticamente no status de aprovação da fila do Admin.
+
+**Conferência obrigatória:** em cada caderno, validar a ordem das seções e do índice, eliminar headings repetidos, confirmar que cada imagem é única e está próxima do texto relevante, manter callouts/esquemas/fluxos, e encerrar com referências. Aplicar esta diretriz às outras apostilas à medida que forem revisadas; não assumir que todas já foram migradas.
