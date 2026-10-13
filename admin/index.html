@@ -174,9 +174,32 @@
             <strong>Apostilas</strong>
             <span>As imagens candidatas das apostilas também aparecem aqui antes de entrarem no texto.</span>
           </div>
+          <div class="admin-apostila-review-toolbar">
+            <label for="admin-apostila-image-filter">Filtrar apostila
+              <select id="admin-apostila-image-filter"><option value="">Todas as apostilas</option></select>
+            </label>
+            <div class="admin-apostila-review-buttons">
+              <button class="button secondary" type="button" id="admin-apostila-select-visible">Selecionar visíveis</button>
+              <button class="button secondary" type="button" id="admin-apostila-clear-selection">Limpar seleção</button>
+              <button class="button primary" type="button" id="admin-apostila-approve-selected" disabled>Aprovar selecionadas</button>
+              <button class="button secondary" type="button" id="admin-apostila-reject-selected" disabled>Rejeitar selecionadas</button>
+              <button class="button secondary" type="button" id="admin-apostila-images-refresh">Atualizar fila</button>
+            </div>
+          </div>
           <div id="admin-apostila-images-status" class="admin-status" aria-live="polite">Carregando imagens de apostilas...</div>
           <div id="admin-apostila-images-list" class="admin-image-review-list">
             <div class="admin-table-empty">Nenhuma imagem de apostila pendente.</div>
+          </div>
+          <div class="admin-apostila-batch-import">
+            <div>
+              <strong>Receber imagens de várias apostilas</strong>
+              <p>Importe um JSON de candidatas de diferentes temas. Todas entram na fila como pendentes; nenhuma é aprovada na importação.</p>
+            </div>
+            <label for="admin-apostila-images-json">Arquivo JSON de candidatas
+              <input id="admin-apostila-images-json" type="file" accept=".json,application/json">
+            </label>
+            <button id="admin-apostila-images-import" type="button" class="button primary" disabled>Enviar candidatas ao Admin</button>
+            <div id="admin-apostila-images-import-status" class="admin-status" aria-live="polite">Selecione um arquivo JSON.</div>
           </div>
         </section>
 
