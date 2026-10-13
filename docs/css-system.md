@@ -9,18 +9,13 @@ mantêm seus layouts próprios.
 
 | Arquivo | Responsabilidade |
 | --- | --- |
-| `ui-app.css` | Entry point e ordem explícita da cascade |
-| `ui-v2-foundations.css` | Fonte, paletas azul/rosa e clara/escura, dimensões e aliases legados |
-| `ui-navigation-v2.css` | Sidebar, topbar, shell, largura/padding do conteúdo, drawers, scrollbars e navegação móvel |
-| `work-navigation.css` | Exceção explícita do hub de Trabalho, sem drawer lateral |
-| `ui-components-v2.css` | Tipografia, controles, foco e superfícies reutilizáveis |
-| `ui-shell-controls.css` | Estilos de controles/popups antes injetados pelo JavaScript |
+| `ui-app.css` | Base única: layers, fonte, paletas, tokens, navegação, shell, controles e safe area |
 | CSS de cada módulo | Grades internas, componentes específicos e estados de conteúdo |
 
 ## Como manter uniforme
 
 - Não adicionar links separados para foundations/navigation/work-navigation.
-  O entry point já importa esses arquivos com versões consistentes.
+  Essas regras já estão reunidas no entry point; não recriar os arquivos separados.
 - Não definir dimensões, posição, margem, padding ou rolagem de `.app-shell`,
   `.main`, `.topbar`, `#sidebar` ou da `.main > .page` no CSS de uma página.
   Alterações comuns pertencem a `ui-navigation-v2.css`.
@@ -63,3 +58,18 @@ endereço aparente tenham templates e folhas de estilo diferentes.
 
 Esta migração conserva a rolagem do documento e o layout restaurado, sem
 reintroduzir a moldura externa proposta anteriormente.
+
+## Consolidação dos arquivos
+
+Os CSS ativos foram reduzidos de **73 para 55**, sem mudar as regras ou sua ordem nas 96 páginas HTML. A base compartilhada é carregada por uma única URL, sem cinco downloads adicionais por imports.
+
+- `ui-app.css`: incorpora foundations, controles, navegação de Trabalho, navegação da aplicação e componentes comuns. As seções internas mantêm a ordem das layers.
+- `plantao.css`: base compartilhada do Plantão e comportamento PWA, usada pela emergência e pelo LuriaZap.
+- `emergency-case.css`: paciente, paisagem e variantes de mulher adulta/homem idoso, em sua ordem original.
+- `admin.css`: administração e gerenciamento administrativo de editais.
+- `editais-provas.css`: apresentação de provas e catálogo.
+- Seis CSS sem carregamento atual ficam em `docs/archive/css/` para consulta histórica: fase3, simulador-hub, caderno-recursos, caderno-notion-editor-fix, editais-v15 e flashcards-central-v18. Não são parte da aplicação.
+
+Estilos com consumidores ou prioridades diferentes permanecem separados. Por exemplo, o CSS público do prontuário não recebe regras internas da aplicação; impressão, livros e módulos clínicos também conservam suas responsabilidades. Não agrupar estilos atravessando outro stylesheet ou bloco inline: isso altera a cascata.
+
+O cache PWA e todas as páginas usam `ui-app.css?v=2`. Os testes verificam a base consolidada, as prioridades internas e a existência dos stylesheets das telas públicas também. O teste de navegador atende todas as requisições com arquivos locais e conta sintética.

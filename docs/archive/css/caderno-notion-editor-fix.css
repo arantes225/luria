@@ -1,0 +1,29 @@
+
+body[data-page="caderno"] .notebook-notion-block-editor{
+  width:100%;
+  min-height:56px;
+  resize:vertical;
+  padding:10px 11px;
+  border:1px solid var(--accent);
+  border-radius:8px;
+  background:var(--surface);
+  color:var(--text);
+  font:inherit;
+  line-height:1.5;
+  outline:none;
+}
+body[data-page="caderno"] .notebook-notion-block-editor:focus{
+  box-shadow:0 0 0 3px rgba(24,72,136,.12);
+}
+body[data-page="caderno"] .is-notion-editing-block{
+  margin:8px 0;
+}
+body[data-page="caderno"] .notebook-notion-todo-editor{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr);
+  align-items:start;
+  gap:8px;
+}
+body[data-page="caderno"] .notebook-notion-todo-editor input[type="checkbox"]{
+  margin-top:12px;
+}

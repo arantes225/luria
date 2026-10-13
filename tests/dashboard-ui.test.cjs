@@ -1,3 +1,12 @@
+function sharedCss(name) {
+  const text=fs.readFileSync("assets/css/ui-app.css","utf8");
+  const marker="/* "+name+" — base compartilhada */";
+  const start=text.indexOf(marker);
+  assert(start>=0,name+" shared section");
+  // Source files also contain comments: use the next section boundary.
+  const next=text.indexOf(" — base compartilhada */",start+marker.length);
+  return text.slice(start,next<0?undefined:text.lastIndexOf("/* ",next));
+}
 const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -264,7 +273,7 @@ test('a failed render has visible recovery links without changing activities', a
 test('all new style rules are opt-in, including media queries; protected entries do not load them', () => {
   const dom=new JSDOM('<html><head></head><body></body></html>');
   for (const file of ['ui-v2-foundations.css','dashboard-ui-v2.css','ui-navigation-v2.css','education-ui-v2.css','work-ui-v2.css','admin-ui-v2.css','pcr-ui-v2.css']) {
-    const style=dom.window.document.createElement('style');style.textContent=fs.readFileSync('assets/css/'+file,'utf8');dom.window.document.head.append(style);
+    const style=dom.window.document.createElement('style');style.textContent=(["ui-v2-foundations.css","ui-navigation-v2.css"].includes(file)?sharedCss(file):fs.readFileSync('assets/css/'+file,'utf8'));dom.window.document.head.append(style);
     assert.ok(style.sheet,'CSS must parse');let rules=0;
     const selectors=text=>{
       let depth=0,start=0;const result=[];
@@ -300,8 +309,8 @@ test("migrated modules load foundations once and keep PCR priority ahead of the 
     const html = fs.readFileSync(path+"/index.html", "utf8").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
     const dom = new JSDOM(html);
     const styles = require("../scripts/check-css.cjs").stylesForPage(path+"/index.html").map(href=>href.split("?")[0].split("/").pop());
-    assert.equal(styles.filter(name => name === "ui-v2-foundations.css").length, 1, path);
-    const foundation = styles.indexOf("ui-v2-foundations.css");
+    assert.equal(styles.filter(name => name === "ui-app.css").length, 1, path);
+    const foundation = styles.indexOf("ui-app.css");
     for (const name of styles.filter(name => /^(ui-navigation|education|dashboard|flashcards|community|plantao|work|admin|pcr)-.*v2\.css$/.test(name))) assert.ok(styles.indexOf(name) > foundation, path+": "+name);
     if (styles.includes("pcr-ui-v2.css")) assert.ok(styles.indexOf("pcr-ui-v2.css") < styles.indexOf("work-ui-v2.css"), path);
     dom.window.close();

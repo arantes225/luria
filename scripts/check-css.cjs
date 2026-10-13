@@ -57,8 +57,8 @@ function checkCss() {
       for (const style of d.querySelectorAll('style')) {
         try {postcss.parse(style.textContent,{from:file});} catch(error) {errors.push(path.relative(root,file)+': '+error.message);}
       }
-      try {stylesForPage(path.relative(root,file).replaceAll('\\','/'));} catch(error) {errors.push(path.relative(root,file)+': '+error.message);}
     }
+    try {stylesForPage(path.relative(root,file).replaceAll('\\','/'));} catch(error) {errors.push(path.relative(root,file)+': '+error.message);}
     dom.window.close();
   }
   return {pages,styles:sheets.length,errors};
