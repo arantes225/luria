@@ -320,3 +320,50 @@
     }
   };
 })();
+
+/* Stage 8.1: relocate existing nodes, preserving selection and all editor handlers. */
+(() => {
+  function mountEditingPanel() {
+    const studio = document.querySelector('#notebook-view-editor .note-studio');
+    const toolbar = document.getElementById('notebook-toolbar');
+    if (!studio || !toolbar || studio.querySelector('.note-editing-panel')) return;
+    const panel = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = 'Estrutura e ações da anotação'; panel.append(summary);
+    panel.className = 'note-editing-panel'; panel.setAttribute('aria-label', 'Ferramentas de edição');
+    studio.append(panel); panel.append(toolbar);
+    for (const selector of ['.note-tree', '.note-info']) {
+      const node = studio.querySelector(selector); if (node) panel.append(node);
+    }
+    const mobile = matchMedia('(max-width:900px)');
+    function arrangeTools() {
+      panel.open = !mobile.matches;
+      if (mobile.matches) studio.querySelector('.note-editor-identity').after(toolbar);
+      else panel.insertBefore(toolbar, summary.nextSibling);
+    }
+    mobile.addEventListener('change', arrangeTools); arrangeTools();
+    // One return control remains above the document; the outline no longer repeats it.
+    document.getElementById('notebook-back-library-outline')?.setAttribute('hidden', '');
+    function placeMenus() {
+      for (const menu of studio.querySelectorAll('.notebook-tool-menu,.notebook-color-palette,.note-more-menu')) {
+        if (menu.hidden || menu.closest('#notebook-more-menu') !== menu && menu.closest('#notebook-more-menu')) continue;
+        menu.style.removeProperty('--study-menu-left'); menu.style.removeProperty('--study-menu-top');
+        const anchor = menu.parentElement.getBoundingClientRect();
+        const rect = menu.getBoundingClientRect();
+        const boundary = mobile.matches ? {left:12,right:innerWidth-12,top:12,bottom:innerHeight-12} : panel.getBoundingClientRect();
+        const left = Math.max(12, boundary.left + 4), right = Math.min(innerWidth - 12, boundary.right - 4);
+        menu.style.setProperty('--study-menu-left', Math.max(left - anchor.left, Math.min(0, right - anchor.left - rect.width)) + 'px');
+        const below = Math.min(innerHeight - 12, boundary.bottom) - anchor.bottom;
+        const above = anchor.top - Math.max(boundary.top, 12);
+        const upward = below < Math.min(rect.height, 160) && above > below;
+        menu.style.setProperty('--study-menu-top', upward ? Math.max(-rect.height, -above) + 'px' : '100%');
+        menu.style.setProperty('--study-menu-height', Math.max(80, upward ? above : below) + 'px');
+      }
+    }
+    new MutationObserver(placeMenus).observe(studio, {subtree:true,attributes:true,attributeFilter:['hidden']});
+    window.addEventListener('resize', placeMenus);
+    panel.addEventListener('scroll', placeMenus);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', mountEditingPanel, {once:true});
+  else mountEditingPanel();
+})();

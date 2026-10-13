@@ -291,3 +291,221 @@ body.theme-leila-mood .error-review-cat-logo-pinktheme{
 .error-review-result-actions .button{
   min-height:40px;
 }
+
+@layer luria-ui-education {
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-grid{
+    grid-template-areas:"center center" "next metrics"!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:20px!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-next{grid-area:next}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-center{grid-area:center}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-metrics{grid-area:metrics}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-side{
+    padding:20px!important;
+    border-radius:var(--ui-radius-card)!important;
+    box-sizing:border-box!important;
+    position:static!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-section-head{
+    gap:12px;
+    min-width:0;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-section-head>div{
+    display:grid!important;
+    grid-template-columns:24px minmax(0,1fr)!important;
+    align-items:start!important;
+    gap:10px!important;
+    min-width:0!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-section-head>div>span{
+    display:grid!important;
+    place-items:center!important;
+    width:24px!important;
+    min-height:28px!important;
+    color:var(--color-primary)!important;
+    font-size:1.125rem!important;
+    line-height:1!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-section-head h2{
+    margin:0!important;
+    color:var(--color-text-primary)!important;
+    font-size:var(--ui-card-title)!important;
+    font-weight:650!important;
+    line-height:1.35!important;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-side.error-review-page-next>p{
+    margin:10px 0 16px!important;
+    color:var(--color-text-secondary)!important;
+    font-size:var(--ui-secondary)!important;
+    line-height:1.5!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-next-list button{
+    grid-template-columns:32px minmax(0,1fr) 16px!important;
+    gap:10px!important;
+    min-width:0!important;
+    padding:12px!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-next-list button>div{min-width:0}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-next-list button>span{
+    width:32px!important;
+    height:32px!important;
+    font-size:.8125rem!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-next-list strong{
+    font-size:.875rem!important;
+    line-height:1.4!important;
+    overflow-wrap:anywhere;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-next-list small{
+    color:var(--color-text-secondary)!important;
+    font-size:.75rem!important;
+    line-height:1.4!important;
+    overflow-wrap:anywhere;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-center{min-width:0}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-card-wrap{padding:20px!important}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-empty{
+    display:grid;
+    justify-items:center!important;
+    align-content:center!important;
+    gap:12px!important;
+    min-height:300px!important;
+    padding:32px 24px!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-empty strong{
+    color:var(--color-text-primary);
+    font-size:clamp(1.375rem,2vw,1.75rem)!important;
+    line-height:1.25!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-empty p{
+    max-width:38rem;
+    margin:0 0 8px!important;
+    color:var(--color-text-secondary)!important;
+    font-size:var(--ui-body)!important;
+    line-height:1.55!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main #error-review-empty .error-review-finish-back{
+    color:var(--color-primary-foreground)!important;
+    font-size:.875rem;
+    font-weight:700;
+    text-align:center;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring{
+    width:clamp(148px,13vw,176px)!important;
+    height:clamp(148px,13vw,176px)!important;
+    margin:20px auto!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring>div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:2px;
+    min-width:0;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring strong{
+    color:var(--color-text-primary);
+    font-size:2rem!important;
+    font-variant-numeric:tabular-nums;
+    line-height:1.1;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring small{
+    display:flex!important;
+    align-items:baseline!important;
+    gap:4px!important;
+    color:var(--color-text-secondary)!important;
+    font-size:.75rem!important;
+    line-height:1.35!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring small span{
+    display:inline!important;
+    color:inherit;
+    font-size:inherit;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring>div>span{
+    display:block!important;
+    color:var(--color-text-secondary);
+    font-size:.75rem!important;
+    line-height:1.4;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-pair{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-pair>div{
+    display:grid!important;
+    justify-items:center!important;
+    align-content:start!important;
+    gap:4px!important;
+    min-width:0!important;
+    padding:12px 8px!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-pair>div>span{
+    color:var(--color-primary);
+    line-height:1;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-pair strong{
+    color:var(--color-text-primary);
+    font-size:1.25rem!important;
+    line-height:1.2!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-pair small{
+    color:var(--color-text-secondary)!important;
+    font-size:.75rem!important;
+    line-height:1.4!important;
+    text-align:center;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-metrics h3{
+    margin:20px 0 12px!important;
+    color:var(--color-text-primary)!important;
+    font-size:var(--ui-card-title)!important;
+    line-height:1.35!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-area-bars{gap:10px!important}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-area-bars>div{
+    grid-template-columns:minmax(0,1fr) minmax(56px,1.1fr) auto!important;
+    gap:10px!important;
+    min-width:0!important;
+    color:var(--color-text-secondary)!important;
+    font-size:.75rem!important;
+    line-height:1.4!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-area-bars>div>span{
+    min-width:0;
+    overflow-wrap:anywhere;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-area-bars i{height:7px!important}
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-area-bars>div>strong{
+    color:var(--color-text-primary);
+    font-variant-numeric:tabular-nums;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-area-empty{
+    margin:0!important;
+    padding:12px;
+    border:1px dashed var(--color-border);
+    border-radius:10px;
+    color:var(--color-text-secondary)!important;
+    font-size:var(--ui-secondary)!important;
+    line-height:1.5!important;
+  }
+  body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-metrics{
+    display:block!important;
+  }
+  @media(max-width:760px){
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-grid{
+      grid-template-areas:"center" "next" "metrics"!important;
+      grid-template-columns:minmax(0,1fr)!important;
+      gap:14px!important;
+    }
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-side,
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-card-wrap{padding:16px!important}
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-empty{min-height:250px!important;padding:28px 18px!important}
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-topbar{grid-template-columns:auto 1fr!important;gap:10px!important}
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-topline{gap:10px!important}
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-page-back{max-width:100%;white-space:normal}
+    body[data-ui="v2"][data-ui-context="study"][data-page="erros"] .main .error-review-metric-ring{margin:16px auto!important}
+  }
+}

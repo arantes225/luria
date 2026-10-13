@@ -72,6 +72,7 @@
       streakSlot.replaceChildren(streakCard);
     }
     refineCards(root.parentElement);
+    enhanceStreaks(document);
     syncReviews();
   }
   function refineCards(root) {
@@ -103,6 +104,69 @@
       // These exact rows repeat the same metrics exposed by the quick links.
       if (/^(Flashcards pendentes|Erros ativos|Caderno de erros)/.test(row.textContent.trim())) row.hidden = true;
     });
+  }
+  function syncStreakActivity(card) {
+    const week = card.querySelector(".dl-weekdays, .dl5-week");
+    if (!week) return;
+    const history = window.luriaDashboardWeekActivity;
+    const hasHistory = history?.status === "available" && Array.isArray(history.dates);
+    if (!week.dataset.uiWeek) {
+      week.dataset.uiWeek = "true";
+      week.setAttribute("role", "list");
+    }
+    const today = (new Date().getDay() + 6) % 7;
+    const weekStart = new Date();
+    weekStart.setHours(0, 0, 0, 0);
+    weekStart.setDate(weekStart.getDate() - today);
+    const names = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"];
+    const initials = ["S", "T", "Q", "Q", "S", "S", "D"];
+    week.setAttribute("aria-label", hasHistory
+      ? "Semana atual; atividade baseada nas sessões de estudo registradas"
+      : "Semana atual; histórico diário de atividade indisponível");
+    [...week.children].forEach((day, index) => {
+      const date = new Date(weekStart);
+      date.setDate(date.getDate() + index);
+      const dateKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+      const isToday = index === today;
+      const isFuture = index > today;
+      const isMarked = hasHistory && history.dates.includes(dateKey);
+      day.classList.remove("active", "on");
+      day.classList.toggle("ui-week-marked", isMarked);
+      day.classList.toggle("ui-week-empty", hasHistory && !isMarked && !isFuture);
+      day.classList.toggle("ui-week-today", isToday);
+      day.classList.toggle("ui-week-future", isFuture);
+      day.setAttribute("role", "listitem");
+      const state = isFuture ? "dia futuro"
+        : !hasHistory ? "histórico indisponível"
+          : isMarked ? "atividade registrada"
+            : "sem atividade registrada";
+      const label = `${names[index]}${isToday ? ", hoje" : ""}; ${state}`;
+      if (day.getAttribute("aria-label") !== label) day.setAttribute("aria-label", label);
+      const title = `${names[index]}${isToday ? " · Hoje" : ""} · ${state}`;
+      if (day.title !== title) day.title = title;
+      if (isToday) day.setAttribute("aria-current", "date");
+      else day.removeAttribute("aria-current");
+      for (const node of day.childNodes) {
+        if (node.nodeType === 3 && node.textContent) node.textContent = "";
+      }
+      const indicator = day.querySelector("i");
+      if (indicator) {
+        if (indicator.textContent !== initials[index]) indicator.textContent = initials[index];
+        indicator.setAttribute("aria-hidden", "true");
+      }
+    });
+    let legend = card.querySelector(".ui-streak-legend");
+    if (!legend) {
+      legend = document.createElement("div");
+      legend.className = "ui-streak-legend";
+      week.after(legend);
+    }
+    const legendMarkup = hasHistory
+      ? '<span class="ui-streak-legend-item is-marked"><i aria-hidden="true"></i>Atividade registrada</span><span class="ui-streak-legend-item is-empty"><i aria-hidden="true"></i>Sem atividade</span><span class="ui-streak-legend-item is-today"><i aria-hidden="true"></i>Hoje</span>'
+      : '<span class="ui-streak-legend-note">Histórico diário indisponível; dias sem marcação não confirmam ausência de atividade.</span><span class="ui-streak-legend-item is-today"><i aria-hidden="true"></i>Hoje</span>';
+    if (legend.innerHTML !== legendMarkup) legend.innerHTML = legendMarkup;
+  }
+  function enhanceStreaks(root) {
     root.querySelectorAll(".dl-streak, .dl5-streak").forEach(card => {
       const heading = card.querySelector("h2, h3");
       if (heading && !heading.dataset.uiStreakHeading) {
@@ -125,33 +189,15 @@
           if (sibling?.textContent.trim() === "dias seguidos") sibling.remove();
         }
       }
-      const week = card.querySelector(".dl-weekdays, .dl5-week");
-      if (!week || week.dataset.uiWeek) return;
-      week.dataset.uiWeek = "true"; week.setAttribute("role", "list");
-      week.setAttribute("aria-label", "Semana atual; histórico diário de atividade indisponível");
-      const today = (new Date().getDay() + 6) % 7;
-      const names = ["Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado", "Domingo"];
-      const initials = ["S", "T", "Q", "Q", "S", "S", "D"];
-      [...week.children].forEach((day, index) => {
-        // Legacy active/on classes are inferred from the count, not daily activity.
-        // The current contract exposes only the aggregate streak: do not claim completion.
-        day.classList.remove("active", "on", "ui-week-marked");
-        day.classList.toggle("ui-week-today", index === today);
-        day.classList.toggle("ui-week-future", index > today);
-        day.setAttribute("role", "listitem");
-        const state = index > today ? "dia futuro" : "atividade não confirmada pelo histórico disponível";
-        day.setAttribute("aria-label", `${names[index]}${index === today ? ", hoje" : ""}; ${state}`);
-        day.title = `${names[index]}${index === today ? " · Hoje" : ""} · ${state}`;
-        if (index === today) day.setAttribute("aria-current", "date");
-        for (const node of day.childNodes) if (node.nodeType === 3) node.textContent = "";
-        const indicator = day.querySelector("i");
-        if (indicator) { indicator.textContent = initials[index]; indicator.setAttribute("aria-hidden", "true"); }
-      });
+      syncStreakActivity(card);
       const note = document.createElement("p"); note.className = "ui-streak-note";
       note.textContent = Number(value?.querySelector(".ui-streak-number")?.textContent) > 0
         ? "Continue construindo sua sequência!" : "Um dia de cada vez. Comece sua sequência.";
-      card.append(note);
+      if (!card.querySelector(".ui-streak-note")) card.append(note);
     });
+  }
+  function syncStreaks() {
+    document.querySelectorAll("#dashboard-alternative .dl-streak, #dashboard-alternative .dl5-streak, .ui-header-streak .dl-streak, .ui-header-streak .dl5-streak").forEach(syncStreakActivity);
   }
   function syncReviews() {
     const review = document.getElementById("ui-review-summary");
@@ -194,7 +240,10 @@
   }
   document.addEventListener("DOMContentLoaded", observeContent, {once: true});
   if (document.readyState !== "loading") observeContent();
-  window.addEventListener("luria:dashboard-data", syncReviews);
+  window.addEventListener("luria:dashboard-data", () => {
+    syncReviews();
+    syncStreaks();
+  });
 
   function syncDialog() {
     if (typeof document === "undefined" || !body.isConnected) return;

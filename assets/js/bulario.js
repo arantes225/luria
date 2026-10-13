@@ -39,7 +39,7 @@
     const matches=rows.filter(row=>[row.name,row.active_ingredient,row.therapeutic_class,row.pharmacological_class,...(row.data?.diseases||[])].some(value=>String(value||'').toLocaleLowerCase('pt-BR').includes(term)));
     matches.sort((a,b)=>status(b)-status(a)||a.name.localeCompare(b.name,'pt-BR'));
     count.textContent=`${matches.length} medicamento${matches.length===1?'':'s'}`;
-    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${row.id===selected}"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`Nome comercial/referência: ${esc(row.name)} · `:''}${status(row)===2?`${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}`:status(row)===1?'Resumo da bula':''}</small></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
+    list.innerHTML=matches.map(row=>`<button type="button" class="drug-row" data-id="${row.id}" aria-current="${row.id===selected}"><span class="drug-row-content"><strong>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</strong><small>${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<span class="drug-row-description">Nome comercial/referência: ${esc(row.name)}</span>`:''}${status(row)===2?`<span class="drug-row-presentations">${row.data.formulations?.length||0} apresentaç${row.data.formulations?.length===1?'ão':'ões'}</span>`:status(row)===1?'<span class="drug-row-description">Resumo da bula</span>':''}</small></span></button>`).join('')||'<div class="empty">Nenhum medicamento encontrado.</div>';
   }
   function calculator(formulation,index){
     const c=formulation.calculator;
@@ -107,7 +107,7 @@
     detail.scrollTop=0;
   }
   function mobileDetailBar(row){
-    return `<div class="bulario-mobile-detail-bar"><button type="button" data-bulario-mobile-close="1">← Voltar</button><strong>${esc(row?.active_ingredient||row?.name||'Bula')}</strong></div>`;
+    return `<div class="bulario-mobile-detail-bar"><button class="rx-back-button" type="button" data-bulario-mobile-close="1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg><span>Voltar</span></button><strong>${esc(row?.active_ingredient||row?.name||'Bula')}</strong></div>`;
   }
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
@@ -123,8 +123,7 @@
       </div>
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Nomes e produtos</h3></div>${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:`<p class="rx-note">${esc(row.name)}${row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?` · princípio ativo: ${esc(row.active_ingredient)}`:''}. Outras marcas e genéricos ainda não vinculados.</p>`}</section>
-      ${ready?presentationPicker(formulations):''}
-      ${ready?`<div id="rx-active-presentation">${formulations.length?formulationCard(formulations[0],0):''}</div>`:`<section class="rx-card"><h3>Prescrição</h3><p class="rx-note">Dose, intervalo, via, limite diário e ajustes desta apresentação ainda não foram conferidos. Consulte a bula antes de prescrever.</p>${d.indication?`<div class="rx-field"><span>Indicação resumida</span><b>${esc(d.indication)}</b></div>`:''}${d.presentation?`<div class="rx-field"><span>Apresentação</span><b>${esc(d.presentation)}</b></div>`:''}</section>`}
+      ${ready?`<div class="rx-presentation-layout">${presentationPicker(formulations)}<div id="rx-active-presentation">${formulations.length?formulationCard(formulations[0],0):''}</div></div>`:`<section class="rx-card"><h3>Prescrição</h3><p class="rx-note">Dose, intervalo, via, limite diário e ajustes desta apresentação ainda não foram conferidos. Consulte a bula antes de prescrever.</p>${d.indication?`<div class="rx-field"><span>Indicação resumida</span><b>${esc(d.indication)}</b></div>`:''}${d.presentation?`<div class="rx-field"><span>Apresentação</span><b>${esc(d.presentation)}</b></div>`:''}</section>`}
       <section class="rx-section"><div class="rx-section-head"><h3>Reações adversas</h3></div>${clinicalList(d.adverse_reactions||d.adverse_effects,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Interações medicamentosas</h3></div>${clinicalList(d.drug_interactions||d.interactions||d.medication_interactions,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>

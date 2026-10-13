@@ -1786,6 +1786,41 @@ async function uploadErrorImage(
    ADICIONAR NOVO ERRO
    ========================================================= */
 
+/* One native dialog hosts the existing form; closing never discards its draft. */
+let errorCreateOpener = null;
+function wireErrorCreateDialog() {
+  const panel = document.querySelector('.error-create-panel');
+  if (!panel || document.getElementById('error-create-dialog')) return;
+  const dialog = document.createElement('dialog');
+  dialog.id = 'error-create-dialog'; dialog.setAttribute('aria-labelledby', 'error-create-dialog-title');
+  panel.querySelector('h2').id = 'error-create-dialog-title';
+  const close = panel.querySelector('[data-error-home-back]');
+  close.removeAttribute('data-error-home-back'); close.setAttribute('aria-label', 'Fechar criação de erro');
+  close.textContent = 'Fechar'; close.addEventListener('click', closeErrorCreateDialog);
+  panel.before(dialog); dialog.append(panel); panel.hidden = true;
+  dialog.addEventListener('cancel', event => { event.preventDefault(); closeErrorCreateDialog(); });
+  dialog.addEventListener('close', () => {
+    if (dialog.open) return;
+    panel.hidden = true; panel.classList.remove('active');
+    errorCreateOpener?.focus();
+  });
+}
+function openErrorCreateDialog() {
+  wireErrorCreateDialog();
+  const dialog = document.getElementById('error-create-dialog');
+  if (!dialog || dialog.open) return;
+  errorCreateOpener = document.activeElement;
+  const panel = dialog.querySelector('.error-create-panel');
+  panel.hidden = false; panel.classList.add('active'); toggleNewErrorForm(true);
+  dialog.showModal();
+  document.getElementById('new-error-area-toggle')?.focus();
+}
+function closeErrorCreateDialog() {
+  const dialog = document.getElementById('error-create-dialog');
+  if (!dialog?.open || document.getElementById('save-new-error')?.disabled) return;
+  dialog.close();
+}
+
 function toggleNewErrorForm(
   forceOpen = null
 ) {
@@ -2421,11 +2456,7 @@ function wireNewError() {
     ?.addEventListener(
       "click",
       () => {
-        clearNewErrorForm();
-
-        toggleNewErrorForm(
-          false
-        );
+        closeErrorCreateDialog();
       }
     );
 
@@ -3785,6 +3816,8 @@ async function deleteErrorFromLibrary(
 function switchErrorTab(
   name
 ) {
+  if (name === "create") { openErrorCreateDialog(); return; }
+  closeErrorCreateDialog();
   document
     .querySelectorAll(
       "[data-error-tab]"
@@ -3813,7 +3846,6 @@ function switchErrorTab(
     );
 
 
-  if (name === "create") { toggleNewErrorForm(true); }
   const showHome = name === "library";
   document.querySelector(".error-home-head")?.toggleAttribute("hidden", !showHome);
   document.querySelector(".error-cat-spotlight")?.toggleAttribute("hidden", !showHome);
@@ -5849,6 +5881,7 @@ async function initErrorNotebook() {
   }
   document.documentElement.dataset.errorNotebookInitialized = "1";
 
+  wireErrorCreateDialog();
   wireNewError();
 
   wireErrorReview();
@@ -5876,6 +5909,7 @@ async function initErrorNotebook() {
 
   switchErrorTab("library");
   setErrorHomeMode("review-home");
+  if (new URLSearchParams(location.search).get("tab") === "create") openErrorCreateDialog();
 }
 
 

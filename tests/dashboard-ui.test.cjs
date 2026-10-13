@@ -3,12 +3,16 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const {JSDOM} = require('jsdom');
 const code = fs.readFileSync('assets/js/dashboard-ui-v2.js', 'utf8');
+const dashboardCode = fs.readFileSync('assets/js/dashboard.js', 'utf8');
+const dashboardCss = fs.readFileSync('assets/css/dashboard-ui-v2.css', 'utf8');
 const html = fs.readFileSync('dashboard/index.html', 'utf8');
 // The navigation adapter schedules repairs through requestAnimationFrame.
 const settle = () => new Promise(resolve => setTimeout(resolve, 50));
+const dateKey = date => `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
 function fixture(theme = 'light', saved = null, mobile = false) {
   const dom = new JSDOM(html, {url:'http://localhost/dashboard/', runScripts:'outside-only', pretendToBeVisual:true});
   const w = dom.window;
+  Object.defineProperty(w, 'innerWidth', {value:mobile ? 390 : 1440, configurable:true});
   // jsdom has no inert reflection, and its RAF teardown can race a closed window.
   Object.defineProperty(w.HTMLElement.prototype, "inert", {
     get(){return this.hasAttribute("inert");},
@@ -108,6 +112,97 @@ test('compact metrics keep existing counts; streak grammar and weekly labels do 
   }
   // Detach the observed UI before jsdom tears down its browsing context.
   f.w.document.body.remove(); await settle();
+  f.dom.window.close();
+});
+test('streak days distinguish logged activity, no recorded activity, today and unavailable history on desktop and mobile', async () => {
+  for (const mobile of [false,true]) {
+    const f=fixture('light',null,mobile);await settle();
+    const streak=f.w.document.createElement('section');streak.className='dl-streak';
+    streak.innerHTML='<h3>Ofensiva</h3><div class="dl-streak-value"><strong>5 dias seguidos</strong></div><div class="dl-weekdays">'+['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].map(day=>'<span><i></i>'+day+'</span>').join('')+'</div>';
+    f.root.querySelector('.dl-grid').append(streak);await settle();
+    const today=(new f.w.Date().getDay()+6)%7, monday=new f.w.Date();monday.setHours(0,0,0,0);monday.setDate(monday.getDate()-today);
+    const recordedIndexes=[Math.max(0,today-1),today];
+    const recordedDates=recordedIndexes.map(index=>{const date=new f.w.Date(monday);date.setDate(date.getDate()+index);return dateKey(date);});
+    f.w.luriaDashboardWeekActivity={status:'available',dates:recordedDates};
+    f.w.dispatchEvent(new f.w.Event('luria:dashboard-data'));await settle();
+    const days=[...streak.querySelectorAll('.dl-weekdays > span')];
+    assert.deepEqual(days.map((day,index)=>day.classList.contains('ui-week-marked')?index:null).filter(index=>index!==null),[...new Set(recordedIndexes)]);
+    assert.equal(days.filter(day=>day.classList.contains('ui-week-today')).length,1);
+    assert.match(streak.querySelector('.ui-streak-legend').textContent,/Atividade registrada.*Sem atividade.*Hoje/);
+    for(const appearance of ['light','dark'])for(const identity of ['blue','pink']){
+      f.click('appearance',appearance);f.click('identity',identity);
+      assert.equal(f.w.document.body.dataset.uiAppearance,appearance);
+      assert.equal(f.w.document.body.dataset.uiIdentity,identity);
+      assert.equal(streak.querySelectorAll('.ui-week-marked').length,new Set(recordedIndexes).size);
+    }
+
+    f.w.luriaDashboardWeekActivity={status:'available',dates:[]};
+    f.w.dispatchEvent(new f.w.Event('luria:dashboard-data'));await settle();
+    assert.equal(streak.querySelectorAll('.ui-week-marked').length,0);
+    assert.equal(streak.querySelectorAll('.ui-week-empty').length,today+1);
+    assert.equal(streak.querySelectorAll('.ui-week-future').length,6-today);
+    assert.ok(days.slice(0,today+1).every(day=>/sem atividade registrada/.test(day.getAttribute('aria-label'))));
+
+    f.w.luriaDashboardWeekActivity={status:'unavailable',dates:[]};
+    f.w.dispatchEvent(new f.w.Event('luria:dashboard-data'));await settle();
+    assert.equal(streak.querySelectorAll('.ui-week-marked,.ui-week-empty').length,0);
+    assert.ok(days.slice(0,today+1).every(day=>/histórico indisponível/.test(day.getAttribute('aria-label'))));
+    assert.match(streak.querySelector('.ui-streak-legend').textContent,/dias sem marcação não confirmam ausência/);
+    f.w.document.body.remove();await settle();f.dom.window.close();
+  }
+});
+test('weekly streak activity reads only positive-duration study sessions and preserves unavailable state on query error', async () => {
+  const f=fixture();await settle();
+  const start=f.w.Date ? new f.w.Date() : new Date();start.setHours(0,0,0,0);
+  const delta=start.getDay()===0?-6:1-start.getDay();start.setDate(start.getDate()+delta);
+  const first=new f.w.Date(start);const second=new f.w.Date(start);second.setDate(second.getDate()+2);
+  const rows=[
+    {started_at:new f.w.Date(first.setHours(12)).toISOString(),ended_at:new f.w.Date(first).toISOString(),duration_seconds:60},
+    {started_at:new f.w.Date(second.setHours(12)).toISOString(),ended_at:new f.w.Date(second).toISOString(),duration_seconds:'120'},
+    {started_at:new f.w.Date(start).toISOString(),ended_at:new f.w.Date(start).toISOString(),duration_seconds:0},
+    {started_at:new f.w.Date(start).toISOString(),ended_at:new f.w.Date(start).toISOString(),duration_seconds:null},
+    {started_at:'invalid-date',ended_at:'invalid-date',duration_seconds:60}
+  ];
+  const ranges=[],filters=[],warnings=[];
+  const builder={
+    select(columns){assert.equal(columns,'started_at,ended_at,duration_seconds');return this;},
+    not(...filter){filters.push(filter);return this;},
+    gte(field,value){ranges.push([field,value]);return this;},
+    lt(field,value){ranges.push([field,value]);return Promise.resolve({data:rows,error:null});}
+  };
+  f.w.dashboardSb={from(table){assert.equal(table,'study_sessions');return builder;}};
+  f.w.console.warn=(...args)=>warnings.push(args);
+  const loader=dashboardCode.slice(dashboardCode.indexOf('async function loadDashboardWeekActivity() {'),dashboardCode.indexOf('\n}',dashboardCode.indexOf('async function loadDashboardWeekActivity() {'))+2).replace('async function loadDashboardWeekActivity()', 'async function ()');
+  f.w.eval(`
+    function startOfDay(date){return new Date(date.getFullYear(),date.getMonth(),date.getDate());}
+    function addDays(date,amount){const result=startOfDay(date);result.setDate(result.getDate()+amount);return result;}
+    function startOfWeek(date){const day=date.getDay();return addDays(date,day===0?-6:1-day);}
+    function toISODate(date){return date.getFullYear()+"-"+String(date.getMonth()+1).padStart(2,"0")+"-"+String(date.getDate()).padStart(2,"0");}
+    window.loadDashboardWeekActivity=${loader};
+  `);
+  await f.w.loadDashboardWeekActivity();
+  assert.equal(f.w.luriaDashboardWeekActivity.status,'available');
+  assert.deepEqual(Array.from(f.w.luriaDashboardWeekActivity.dates),[dateKey(first),dateKey(second)]);
+  assert.deepEqual(ranges.map(([field])=>field),['started_at','started_at']);
+  assert.deepEqual(filters,[['ended_at','is',null],['duration_seconds','is',null]]);
+  const nextMonday=new f.w.Date(start);nextMonday.setDate(nextMonday.getDate()+7);
+  assert.equal(ranges[0][1],start.toISOString());assert.equal(ranges[1][1],nextMonday.toISOString());
+  f.w.dashboardSb={from:()=>({select(){return this;},not(){return this;},gte(){return this;},lt(){return Promise.resolve({data:null,error:new Error('offline')});}})};
+  await f.w.loadDashboardWeekActivity();
+  assert.equal(f.w.luriaDashboardWeekActivity.status,'unavailable');
+  assert.deepEqual(Array.from(f.w.luriaDashboardWeekActivity.dates),[]);
+  assert.match(warnings[0][0],/histórico semanal de estudo/);
+  f.dom.window.close();
+});
+test('streak colors follow shared primary theme tokens in all appearance and identity combinations', () => {
+  assert.match(dashboardCss,/--ui-streak-color:var\(--color-primary\)/);
+  assert.match(dashboardCss,/--ui-streak-surface:var\(--color-primary-subtle\)/);
+  assert.doesNotMatch(dashboardCss,/data-ui-appearance="dark"\] :is\(\.dl-streak,.dl5-streak\)/);
+  assert.doesNotMatch(dashboardCss,/--ui-streak-(?:color|surface):#[0-9A-Fa-f]{3,8}/);
+  const f=fixture();for(const appearance of ['light','dark'])for(const identity of ['blue','pink']){
+    f.click('appearance',appearance);f.click('identity',identity);
+    assert.equal(f.w.document.body.dataset.uiAppearance,appearance);assert.equal(f.w.document.body.dataset.uiIdentity,identity);
+  }
   f.dom.window.close();
 });
 test('summary preserves lesson/agenda counts and percent meaning when separating its labels', async () => {

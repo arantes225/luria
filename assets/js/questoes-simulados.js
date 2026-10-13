@@ -19,6 +19,9 @@ const qsState = {
   selectedSetIds:
     new Set(),
 
+  deletingSelectedSets:
+    false,
+
   pageMode:
     "mine",
 
@@ -7905,7 +7908,7 @@ async function loadSets() {
   const revision = ++qsLoadRevision;
   await window.LuriaLocalOwnerStore?.ready;
   const context = qsRequestContext();
-  if (revision !== qsLoadRevision || !qsContextIsCurrent(context)) return;
+  if (revision !== qsLoadRevision || !qsContextIsCurrent(context)) return false;
   const [
     setsResult,
     itemsResult,
@@ -7934,7 +7937,7 @@ async function loadSets() {
       .order("candidate_index", { ascending: true })
   ]).catch(error => [{error}, {}, {}, {}]);
 
-  if (revision !== qsLoadRevision || !qsContextIsCurrent(context)) return;
+  if (revision !== qsLoadRevision || !qsContextIsCurrent(context)) return false;
 
   if (setsResult.error) {
     console.error(setsResult.error);
@@ -7942,12 +7945,12 @@ async function loadSets() {
       `Não foi possível carregar seus simulados: ${setsResult.error.message}`,
       "error"
     );
-    return;
+    return false;
   }
 
   if (itemsResult.error || attemptsResult.error) {
     setImportStatus("Não foi possível confirmar as questões e os resultados dos simulados.", "error");
-    return;
+    return false;
   }
 
   // Na biblioteca, imagens não são necessárias para calcular métricas.
@@ -8020,10 +8023,16 @@ async function loadSets() {
     }
   }));
 
+  const availableSetIds = new Set(qsState.sets.map((set) => set.id));
+  for (const id of qsState.selectedSetIds) {
+    if (!availableSetIds.has(id)) qsState.selectedSetIds.delete(id);
+  }
+
   renderSetHistory();
   renderHomeDashboard();
 
   await loadQuestionOverview();
+  return true;
 }
 
 
@@ -8055,7 +8064,16 @@ function renderSimulationLibrary() {
     !qsState.sets.length
   ) {
     container.innerHTML =
-      '<div class="qs-empty">Nenhuma lista na biblioteca.</div>';
+      '<div class="qs-empty qs-library-empty"><strong>Sua biblioteca está vazia</strong><span>Crie uma lista de questões ou importe um PDF para começar.</span><div class="qs-library-empty-actions"><button class="button primary" type="button" data-qs-empty-add="manual">Criar lista</button><button class="button" type="button" data-qs-empty-add="automatic">Importar PDF</button></div></div>';
+
+    container
+      .querySelectorAll("[data-qs-empty-add]")
+      .forEach((button) => {
+        button.addEventListener("click", () => {
+          switchQsMode("add");
+          switchQsAddMode(button.dataset.qsEmptyAdd);
+        });
+      });
 
     updateSetBulkToolbar();
 
@@ -8130,6 +8148,8 @@ function renderSimulationLibrary() {
 
                 </div>
               </div>
+            </div>
+
             </div>
 
             <div class="qs-library-main">
@@ -8485,6 +8505,9 @@ async function saveSimulationEdit() {
 
 
 function updateSetBulkToolbar() {
+  const toolbar = document.querySelector(
+    '[data-qs-section="library"] .qs-bulk-toolbar'
+  );
   const visible =
     qsState.sets
       .map(
@@ -8522,19 +8545,25 @@ function updateSetBulkToolbar() {
     );
 
 
-  if (count) {
-    count.textContent =
-      `${qsState.selectedSetIds.size} selecionado${qsState.selectedSetIds.size === 1 ? "" : "s"}`;
+  if (toolbar) {
+    toolbar.hidden = visible.length === 0;
   }
 
+  if (count) {
+    count.textContent =
+      `${selectedVisible} selecionado${selectedVisible === 1 ? "" : "s"}`;
+  }
 
   if (button) {
     button.disabled =
-      qsState.selectedSetIds.size === 0;
+      selectedVisible === 0
+      || qsState.deletingSelectedSets;
   }
 
-
   if (selectAll) {
+    selectAll.disabled =
+      visible.length === 0
+      || qsState.deletingSelectedSets;
     selectAll.checked =
       visible.length > 0
       && selectedVisible === visible.length;
@@ -8543,160 +8572,164 @@ function updateSetBulkToolbar() {
       selectedVisible > 0
       && selectedVisible < visible.length;
   }
+
+  document
+    .querySelectorAll(
+      '[data-qs-section="library"] [data-select-set]'
+    )
+    .forEach((input) => {
+      input.disabled = qsState.deletingSelectedSets;
+    });
+}
+
+
+function setLibraryDeleteStatus(message, type = "") {
+  const status = document.getElementById("qs-library-status");
+  if (!status) return;
+  status.textContent = message;
+  status.className = `qs-status ${type}`.trim();
 }
 
 
 async function deleteSelectedSets() {
-  const ids =
-    Array.from(
-      qsState
-        .selectedSetIds
+  if (qsState.deletingSelectedSets) return;
+
+  const selected = qsState.sets.filter((set) =>
+    qsState.selectedSetIds.has(set.id)
+  );
+  const ids = selected.map((set) => set.id);
+  if (!ids.length) return;
+
+  qsState.deletingSelectedSets = true;
+  setLibraryDeleteStatus("");
+  updateSetBulkToolbar();
+
+  try {
+    const confirmed = await window.LuriaDialog.confirm(
+      `Excluir ${ids.length} lista${ids.length === 1 ? "" : "s"} e suas questões?`
     );
+    if (!confirmed) return;
 
+    const [imageResult, candidateResult] = await Promise.all([
+      qsSb
+        .from("question_items")
+        .select("set_id,image_path")
+        .in("set_id", ids),
+      qsSb
+        .from("question_image_candidates")
+        .select("set_id,image_path")
+        .in("set_id", ids)
+    ]);
 
-  if (!ids.length) {
-    return;
-  }
-
-
-  const confirmed =
-    await window.LuriaDialog.confirm(
-      `Excluir ${ids.length} simulado${ids.length === 1 ? "" : "s"} e seus gabaritos?`
-    );
-
-
-  if (!confirmed) {
-    return;
-  }
-
-
-  const selected =
-    qsState.sets.filter(
-      (set) =>
-        qsState
-          .selectedSetIds
-          .has(
-            set.id
-          )
-    );
-
-
-  const {
-    data:
-      imageRows
-  } =
-    await qsSb
-      .from(
-        "question_items"
-      )
-      .select(
-        "image_path"
-      )
-      .in(
-        "set_id",
-        ids
+    if (imageResult.error || candidateResult.error) {
+      const error = imageResult.error || candidateResult.error;
+      console.error("Não foi possível consultar os arquivos das listas selecionadas.", error);
+      setLibraryDeleteStatus(
+        `Não foi possível preparar a exclusão: ${error.message}`,
+        "error"
       );
+      return;
+    }
 
+    const { data: deletedRows, error } = await qsSb
+      .from("question_sets")
+      .delete()
+      .in("id", ids)
+      .select("id");
 
-  const paths = [
-    ...selected
-      .map(
-        (set) =>
-          set.source_file_path
-      )
-      .filter(
-        Boolean
-      ),
+    if (error) {
+      console.error("Não foi possível excluir as listas selecionadas.", error);
+      setLibraryDeleteStatus(`Não foi possível excluir as listas: ${error.message}`, "error");
+      return;
+    }
 
-    ...(imageRows || [])
-      .map(
-        item =>
-          item.image_path
-      ),
-    ...(candidateRows || [])
-      .map(
-        item =>
-          item.image_path
-      )
-      .filter(
-        Boolean
-      )
-  ];
+    const deletedIds = new Set((deletedRows || []).map((row) => row.id));
+    if (!deletedIds.size) {
+      setLibraryDeleteStatus(
+        "Nenhuma lista foi excluída. Verifique suas permissões e tente novamente.",
+        "error"
+      );
+      return;
+    }
 
+    const deletedSets = selected.filter((set) => deletedIds.has(set.id));
+    qsState.sets = qsState.sets.filter((set) => !deletedIds.has(set.id));
+    for (const id of deletedIds) qsState.selectedSetIds.delete(id);
+    if (deletedIds.has(qsState.currentSet?.id)) closeCurrentSet();
+    updateSetBulkToolbar();
+    renderSimulationLibrary();
 
-  if (paths.length) {
-    const {
-      error:
-        storageError
-    } =
-      await qsSb
-        .storage
-        .from(
-          "docmap"
-        )
-        .remove(
-          paths
-        );
+    const paths = [...new Set([
+      ...deletedSets.map((set) => set.source_file_path),
+      ...(imageResult.data || [])
+        .filter((row) => deletedIds.has(row.set_id))
+        .map((row) => row.image_path),
+      ...(candidateResult.data || [])
+        .filter((row) => deletedIds.has(row.set_id))
+        .map((row) => row.image_path)
+    ].filter(Boolean))];
 
+    let storageError = null;
+    if (paths.length) {
+      try {
+        const result = await qsSb.storage.from("docmap").remove(paths);
+        storageError = result.error;
+      } catch (error) {
+        storageError = error;
+      }
+    }
+
+    let refreshError = null;
+    try {
+      if (!await loadSets()) {
+        refreshError = new Error("A consulta da biblioteca falhou.");
+      }
+      renderSimulationLibrary();
+    } catch (error) {
+      refreshError = error;
+      console.error("As listas foram excluídas, mas a biblioteca não pôde ser atualizada.", error);
+    }
 
     if (storageError) {
-      console.warn(
-        storageError
+      console.error("As listas foram excluídas, mas alguns arquivos associados não puderam ser removidos.", storageError);
+    }
+
+    const failures = [];
+    if (deletedIds.size < ids.length) {
+      failures.push(
+        `Exclusão parcial: ${deletedIds.size} de ${ids.length} listas foram excluídas; as demais continuam selecionadas.`
       );
     }
-  }
-
-
-  const {
-    error
-  } =
-    await qsSb
-      .from(
-        "question_sets"
-      )
-      .delete()
-      .in(
-        "id",
-        ids
+    if (storageError) {
+      failures.push(
+        `Falha ao remover arquivos associados: ${storageError.message || "erro inesperado."}`
       );
+    }
+    if (refreshError) {
+      failures.push("A biblioteca não pôde ser atualizada; recarregue a página.");
+    }
 
-
-  if (error) {
-    console.error(
-      error
-    );
-
-
-    setImportStatus(
-      `Não foi possível excluir: ${error.message}`,
+    if (failures.length) {
+      setLibraryDeleteStatus(
+        `A exclusão não foi concluída integralmente. ${failures.join(" ")}`,
+        "error"
+      );
+    } else {
+      setLibraryDeleteStatus(
+        `${deletedIds.size} ${deletedIds.size === 1 ? "lista excluída" : "listas excluídas"}.`,
+        "success"
+      );
+    }
+  } catch (error) {
+    console.error("Falha inesperada ao excluir as listas selecionadas.", error);
+    setLibraryDeleteStatus(
+      `Não foi possível concluir a exclusão: ${error.message || "erro inesperado."}`,
       "error"
     );
-
-    return;
+  } finally {
+    qsState.deletingSelectedSets = false;
+    updateSetBulkToolbar();
   }
-
-
-  if (
-    qsState.currentSet
-    && qsState
-      .selectedSetIds
-      .has(
-        qsState.currentSet.id
-      )
-  ) {
-    closeCurrentSet();
-  }
-
-
-  qsState
-    .selectedSetIds
-    .clear();
-
-
-  await Promise.all([
-    loadSets(),
-    loadQuestionOverview()
-  ]);
 }
 
 

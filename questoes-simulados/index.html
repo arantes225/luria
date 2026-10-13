@@ -2112,7 +2112,7 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-action{
 }
 </style>
 <style id="qs-library-luria-compact-v13">
-body[data-page="questoes"] [data-qs-section="library"].qs-panel{padding:16px 18px!important;border-radius:14px!important}
+body[data-page="questoes"] [data-qs-section="library"] .qs-library-panel{padding:16px 18px!important;border-radius:14px!important}
 body[data-page="questoes"] [data-qs-section="library"] .qs-head{align-items:flex-start!important;gap:12px!important;margin-bottom:12px!important}
 body[data-page="questoes"] [data-qs-section="library"] .qs-inner-back{font-weight:400!important;font-size:10px!important;min-height:28px!important;padding:0 9px!important;margin-bottom:8px!important}
 body[data-page="questoes"] [data-qs-section="library"] .badge,
@@ -3468,15 +3468,16 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
           </section>
 
           <!-- BIBLIOTECA -->
-          <section class="qs-panel qs-mode-section" data-qs-section="library">
-            <div class="qs-library-hero">
-              <div>
-                <button class="qs-inner-back" type="button" data-qs-mode="mine">← Visão geral</button>
-                <h2>Biblioteca</h2>
-                <p>Acesse suas listas de questões e continue de onde parou.</p>
+          <div class="qs-mode-section qs-library-mode" data-qs-section="library">
+            <button class="qs-inner-back qs-library-back" type="button" data-qs-mode="mine">← Visão geral</button>
+            <section class="qs-panel qs-library-panel">
+              <div class="qs-library-hero">
+                <div>
+                  <h2>Biblioteca</h2>
+                  <p>Acesse suas listas de questões e continue de onde parou.</p>
+                </div>
+                <span id="qs-library-count" class="badge accent">0 listas</span>
               </div>
-              <span id="qs-library-count" class="badge accent">0 listas</span>
-            </div>
 
             <div class="qs-bulk-toolbar">
               <label class="qs-bulk-check">
@@ -3496,8 +3497,11 @@ body[data-page="questoes"] .qs-home-actions-compact .qs-home-card-art{
               </button>
             </div>
 
+            <div id="qs-library-status" class="qs-status" aria-live="polite"></div>
+
             <div id="qs-library" class="qs-library"></div>
-          </section>
+            </section>
+          </div>
 
           <!-- GABARITO -->
           <section
@@ -4196,7 +4200,7 @@ body[data-page="questoes"] .metric-percent-center span{
 
 <style id="qs-library-match-flashcards-v75">
 /* Biblioteca de Questões e Simulados no padrão visual da Biblioteca de Flashcards */
-body[data-page="questoes"] [data-qs-section="library"].qs-panel{
+body[data-page="questoes"] [data-qs-section="library"] .qs-library-panel{
   padding:0!important;
   border:0!important;
   background:transparent!important;
