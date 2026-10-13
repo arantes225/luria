@@ -126,3 +126,15 @@
 - Arquivo `apostilas/hemorragias-primeiro-terceiro-trimestre/index.html`, commit `c6059d1bdc11096659dcd30506f1fd2382f1b7e9`.
 - Dois capítulos separados: hemorragias iniciais (gestação de localização desconhecida, ectópica, critérios de perda e condutas) e hemorragias tardias (prévia/acretismo, DPP, vasa prévia, rotura e ressuscitação).
 - Estimativa de texto do artigo: 36.677 → 50.501 caracteres. Requer revisão clínica, aferição estrita e validação visual/PWA.
+
+
+### Infertilidade Conjugal — expansão do raciocínio etiológico
+- Arquivo \`apostilas/infertilidade-conjugal/index.html\` atualizado em main, commit \`f8140073c10a1fa94a230b9b5636a1ab5840acac\`.
+- Criado capítulo 14 com avaliação de ambos os parceiros, função ovulatória, reserva ovariana versus qualidade, permeabilidade e função tubária, investigação masculina, FIV/ICSI e casos explicados. Fonte ASRM 2021 DOI 10.1016/j.fertnstert.2021.08.038.
+- Texto visível do artigo estimado **35.790 → 45.839 caracteres**; imagens e navegação preservadas. Necessários validação estrita e teste PWA.
+
+### Climatério e Menopausa — expansão em JSON
+- Arquivo \`apostilas/climaterio-menopausa/content.json\` atualizado, commit \`6a9e89915c3953705dc236e77fd3e4d031446fbe\`.
+- Criado capítulo 17 com oito seções de fisiopatologia ovariana, fogachos, síndrome geniturinária, estrogênio/progestagênio, vias oral e transdérmica, metabolismo ósseo, alternativas não hormonais e caso clínico. Fontes FEBRASGO Diretriz Brasileira 2024 e The Menopause Society 2022.
+- Conteúdo textual JSON estimado em **42.828 caracteres** na triagem preliminar, ainda sujeito a exclusão estrita de tags/estruturas e revisão clínica/visual. Renderer e sumário mantidos.
+
