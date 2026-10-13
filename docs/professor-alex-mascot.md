@@ -29,7 +29,11 @@ Expressões: `happy`, `attentive`, `thoughtful`, `surprised`, `confused`, `excit
 
 O botão inferior central tem moldura cinza, encaixe escuro e barra luminosa horizontal, conforme a referência do robô flutuante. Os braços têm mais volume, encaixe escuro com centro luminoso na extremidade voltada ao corpo e anel azul na extremidade externa. As pernas são afuniladas, com bases mais largas, pequenas aberturas luminosas superiores e solas azuis visíveis. Todos os membros permanecem desconectados do corpo.
 
-O corpo usa uma superfície curva com normais suaves; o visor é um quadrado arredondado com lados curvos, mais alto e menos retangular. Os braços começam numa altura próxima dos círculos laterais, um pouco abaixo deles. O eixo de cada braço fica no encaixe próximo ao corpo, e o socket/LED acompanha a carcaça nesse mesmo pivô, sem se destacar durante a rotação. No aceno, a mão sobe moderadamente e faz dois balanços amplos pela ponta.
+As faixas dos membros têm 32 pequenos LEDs instanciados em cada anel; encaixes e solas usam uma textura de pontos luminosos gerada localmente. Núcleos claros e halos ciano dão o acabamento de luz neon. O enquadramento padrão evita que a perspectiva vertical faça um braço parecer mais alto que o outro.
+
+O corpo usa uma superfície curva com normais suaves; o visor é um quadrado arredondado com lados curvos, mais alto e menos retangular. Os braços começam numa altura próxima dos círculos laterais, um pouco abaixo deles, com altura igual e ângulos espelhados. O eixo de cada braço fica no encaixe próximo ao corpo, e o socket/LED acompanha a carcaça nesse mesmo pivô, sem se destacar durante a rotação. No aceno, o ombro mantém a altura e a extremidade gira para ficar aproximadamente 30° acima da horizontal. Despertar é uma sequência diferente, com olhos abrindo, alongamento suave e pequeno cumprimento com a cabeça.
+
+Animado usa olhos `><` e os dois braços voltados para cima. Confuso tem um pequeno redemoinho de desenho animado acima da cabeça, com rotação suave (estático quando a preferência de movimento reduzido está ativa).
 
 Na digitação, as mãos alternam toques sobre um teclado sólido branco com teclas escuras em relevo. Na leitura, seguram uma folha bege opaca com quatro linhas em zigue-zague, em moldura escura e mais afastada do corpo. O alcance é limitado para evitar cruzamento das mãos na intensidade máxima. Ao pensar, é a extremidade externa do braço que chega ao rosto. Explicar combina gestos alternados com animação demonstrativa de boca, sem áudio.
 
@@ -55,7 +59,7 @@ Eventos: `alex-ready`, `alex-error`, `alex-react`, `alex-animation-end` (`detail
 
 ## Renderização e desempenho
 
-Three.js 0.180.0, licença MIT, distribuído localmente em dois módulos minificados (~720 KB sem compressão). Nenhum download de modelo, textura ou CDN em execução. Textura facial e iluminação de estúdio são geradas em memória. São aproximadamente 21.924 triângulos e 35 chamadas de desenho no repouso, sem pós-processamento ou mapas de sombra. A biblioteca é carregada somente ao importar o mascote.
+Three.js 0.180.0, licença MIT, distribuído localmente em dois módulos minificados (~720 KB sem compressão). Nenhum download de modelo, textura ou CDN em execução. Textura facial e iluminação de estúdio são geradas em memória. São aproximadamente 23.460 triângulos e 39 chamadas de desenho no repouso, sem pós-processamento ou mapas de sombra. A biblioteca é carregada somente ao importar o mascote. Os quatro arquivos de runtime somam 760.442 bytes (cerca de 0,76 MB), ou 193.249 bytes com gzip (cerca de 0,19 MB); o ZIP de entrega também contém referências e laboratório e, portanto, é maior.
 
 Limite de 30 fps e DPR 1,5; renderização pausa fora da tela e em aba oculta. `prefers-reduced-motion` desativa flutuação, piscadas, perseguição do cursor e demonstração dinâmica de fala. Ainda permite selecionar expressões e executar a sequência estática dos gestos. Ao remover o componente, cancela o loop, desconecta os observadores e libera geometria, materiais, texturas e contexto. WebGL 2 é necessário; a falha exibe uma mensagem em vez de substituir por outro personagem.
 

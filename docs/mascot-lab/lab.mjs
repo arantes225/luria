@@ -20,14 +20,14 @@ if(local) {
   ANIMATIONS.forEach((name,i)=>{const b=document.createElement('button');b.dataset.animation=name;b.innerHTML='<span class="symbol" aria-hidden="true">'+icons[i]+'</span>'+motionLabels[i];b.onclick=()=>{alex.playAnimation(name);$('status').textContent=motionLabels[i]+'…';};$('animations').append(b);});
   alex.addEventListener('alex-ready',()=>{$('status').textContent='Feliz · Em repouso';});
   if(alex.renderer)$('status').textContent='Feliz · Em repouso';
-  alex.setView(-Math.PI/6,.06);
+  alex.setView(-Math.PI/6,0);
   alex.addEventListener('alex-animation-end',()=>{$('status').textContent=labels[EXPRESSIONS.indexOf(alex.expression)]+' · Em repouso';});
   alex.addEventListener('alex-react',()=>{$('status').textContent='Olá! · Acenando';});
   alex.addEventListener('alex-error',()=>{$('status').textContent='WebGL 2 indisponível neste navegador';});
   $('reset').onclick=()=>{alex.animation='idle';$('status').textContent=labels[EXPRESSIONS.indexOf(alex.expression)]+' · Em repouso';};
   document.querySelectorAll('[data-device]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-device]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));$('stage').classList.toggle('mobile',b.dataset.device==='mobile');});
   document.querySelectorAll('button[data-theme]').forEach(b=>b.onclick=()=>{const theme=b.dataset.theme;document.documentElement.dataset.theme=theme==='pink'?'leila-mood':theme;document.body.dataset.uiAppearance=theme==='dark'?'dark':'light';document.body.dataset.uiIdentity=theme==='pink'?'pink':'blue';document.querySelectorAll('button[data-theme]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));});
-  const rotate=deg=>{alex.setView(deg*Math.PI/180,.06);$('yaw').value=deg;$('yaw-value').textContent=deg+'°';};
+  const rotate=deg=>{alex.setView(deg*Math.PI/180,0);$('yaw').value=deg;$('yaw-value').textContent=deg+'°';};
   document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{rotate(Number(b.dataset.view));document.querySelectorAll('[data-view]').forEach(x=>x.classList.toggle('selected',x===b));});
   $('yaw').oninput=e=>{rotate(Number(e.target.value));document.querySelectorAll('[data-view]').forEach(x=>x.classList.remove('selected'));};
   $('intensity').oninput=e=>{alex.intensity=e.target.value;$('intensity-value').textContent=Math.round(alex.intensity*100)+'%';};

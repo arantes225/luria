@@ -19,6 +19,7 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
    await page.locator('[data-expression="'+expression+'"]').click();await page.waitForTimeout(370);
    assert.equal(await page.evaluate(()=>document.querySelector('#alex')._currentFace),expression);
    assert.equal(await page.locator('[data-expression="'+expression+'"]').getAttribute('aria-pressed'),'true');
+   if(expression==='excited')await page.locator('#stage').screenshot({path:path.join(results,'alex-excited.png')});
   }
   const limbsBefore=await page.evaluate(()=>document.querySelector('#alex').limbs.map(g=>g.position.y));await page.waitForTimeout(180);
   const limbsAfter=await page.evaluate(()=>document.querySelector('#alex').limbs.map(g=>g.position.y));assert(limbsAfter.every((v,i)=>Math.abs(v-limbsBefore[i])>.00001));
@@ -48,7 +49,7 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
    await page.locator('#stage').screenshot({path:path.join(results,'alex-'+mode+'.png')});
    await page.evaluate(()=>{const a=document.querySelector('#alex');a.animation='idle';a.intensity=1;});
   }
-  for(const mode of ['wave','thinking','confused','explaining','celebrateScene','angryScene']){
+  for(const mode of ['wave','wake','thinking','confused','explaining','celebrateScene','angryScene']){
    await page.evaluate(mode=>{const a=document.querySelector('#alex');a.playAnimation(mode);a._gesture.start=a._elapsed-.85;a._blinkAt=a._elapsed+100;},mode);
    await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.waitForTimeout(370);
    if(mode==='wave')assert(await page.evaluate(()=>{const a=document.querySelector('#alex');return a.limbs.every(g=>g.position.y-g.userData.base.y<.30)&&a.limbs[1].userData.tipPivot.position.y===.351;}), 'Arm gestures pivot at the shoulder with moderate lift');
