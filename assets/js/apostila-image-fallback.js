@@ -20,13 +20,16 @@
       url.pathname = url.pathname.replace(/\/wiki\/Special:Redirect\/file\//i, '/wiki/Special:FilePath/');
       return url.href;
     }
-    const explicitlyApproved = image.dataset.apostilaFallbackUrl;
-    if (image.dataset.apostilaImageFallback === 'approved-source' && explicitlyApproved) {
+    const explicitAlternative = image.dataset.apostilaFallbackUrl;
+    if (explicitAlternative) {
       try {
-        const fallback = new URL(explicitlyApproved, location.href);
-        // Accept only HTTPS or same-origin resources; never arbitrary external scripts.
-        if ((fallback.protocol === 'https:' || fallback.origin === location.origin) &&
-          fallback.href !== image.src) return fallback.href;
+        const fallback = new URL(explicitAlternative, location.href);
+        const approvedDynamic = image.dataset.apostilaImageFallback === 'approved-source';
+        // Static clinical images may retry only on the same verified domain.
+        // Dynamically approved assets retain the previously reviewed HTTPS fallback.
+        const accepted = fallback.protocol === 'https:' &&
+          (approvedDynamic || fallback.hostname === url.hostname);
+        if (accepted && fallback.href !== image.src) return fallback.href;
       } catch {}
     }
     return '';
