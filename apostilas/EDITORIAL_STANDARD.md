@@ -227,7 +227,7 @@ O responsável rejeitou expressamente a repetição de imagens para aumentar pá
 
 Diretriz expressa do responsável (12/10/2026): **não fragmentar diagnóstico, tratamento, prevenção e seguimento em capítulos genéricos quando a apostila cobre doenças diferentes**.
 
-**Estrutura obrigatória de cada doença ou síndrome:**
+**Sequência editorial sugerida por doença (usar apenas os tópicos que acrescentem conteúdo real):**
 1. Conceito e epidemiologia (frequência, contextos e fatores de risco).
 2. Etiologia e fisiopatologia, com esquema causal original ou sequência visual quando útil.
 3. Quadro clínico e exame físico, com imagens reais aprovadas próximas à descrição clínica.
@@ -236,6 +236,10 @@ Diretriz expressa do responsável (12/10/2026): **não fragmentar diagnóstico, 
 6. Profilaxia, aconselhamento e medidas preventivas **específicas**, incluindo parcerias quando pertinente.
 7. Complicações, seguimento e manejo de falha/recorrência, integrados ao mesmo bloco.
 8. Pulo do Gato, algoritmo e caso comentado associados à etiologia, de forma compacta.
+
+**Regra de pertinência:** não criar seções vazias ou artificiais para uniformizar visualmente os capítulos. Fisiopatologia, epidemiologia, profilaxia, complicações, fluxograma e caso comentado só recebem um bloco próprio quando houver matéria substancial e didática a explicar. Se a informação for breve, incorporá-la ao contexto clínico ou etiológico já existente. Uma sequência editorial ajuda a orientar, não deve impor seis caixas idênticas a todas as doenças. Aprofundamento é qualidade explicativa, não preenchimento de espaços.
+
+**Abertura de apostila multidoenças:** separar nitidamente conceitos do sítio anatômico, fisiologia normal e abordagem inicial do paciente; usar um único recurso visual dominante por explicação, sem empilhar mapa mental, diversos cards, tabelas e fluxos com a mesma mensagem. Colocar mapa mental de integração junto à revisão final quando a abertura estiver carregada. Preservar imagens aprovadas e respeitar o tamanho padrão.
 
 **Não fazer:** abrir três doenças, depois um capítulo único misturando os diagnósticos, depois outro com todos os tratamentos e depois um terceiro com todas as profilaxias. Blocos comuns somente para fundamentos de fisiologia/triagem inicial, diagnósticos transversais não pertencentes às doenças principais, e **quadro comparativo final** após todos os blocos completos.
 
