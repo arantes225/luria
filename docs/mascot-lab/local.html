@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'">
+  <meta name="theme-color" content="#edf6fc">
+  <title>Professor Alex 3D • Laboratório LURIA</title>
+  <link rel="stylesheet" href="lab.css"><script defer src="local.bundle.js?v=8266759e504e"></script>
+</head>
+<body data-ui-appearance="light" data-ui-identity="blue">
+  <p id="restricted">Laboratório disponível somente em localhost, para aprovação visual.</p>
+  <main id="lab" hidden>
+    <header class="masthead"><a class="brand" href="#lab" aria-label="LURIA laboratório">LURIA<span>ESTÚDIO DE PERSONAGENS</span></a><span class="dev-badge"><i></i> Prévia local · Etapa 01</span></header>
+    <div class="intro"><div><p class="eyebrow">UM NOVO COMPANHEIRO DE JORNADA</p><h1>Conheça o Professor Alex<span>.</span></h1><p>Inteligente, acolhedor e agora em 3D. Explore suas expressões e dê vida a cada movimento.</p></div><span class="version">ALEX / 2.0<br><small>Em validação visual</small></span></div>
+    <div class="workspace">
+      <section class="preview-card" aria-label="Prévia tridimensional">
+        <div class="preview-top"><span><i class="live-dot"></i> MODELO 3D INTERATIVO</span><div class="segments" aria-label="Tamanho da prévia"><button data-device="desktop" aria-pressed="true">Desktop</button><button data-device="mobile" aria-pressed="false">Mobile</button></div></div>
+        <div id="stage" class="stage"><div class="halo"></div><div class="ground-shadow"></div><professor-alex-mascot id="alex" size="520" theme="auto" expression="happy" interactive="true" intensity="1"></professor-alex-mascot><span class="stage-label">PROFESSOR <strong>ALEX</strong></span></div>
+        <div class="preview-caption"><p id="status" role="status" aria-live="polite">Preparando o modelo…</p><span>Clique ou toque para cumprimentar</span></div>
+        <div class="views" aria-label="Ângulos do modelo"><span>Explore o volume</span><button data-view="0">Frente</button><button data-view="-30" class="selected">¾</button><button data-view="-90">Lado</button><button data-view="180">Costas</button></div>
+        <label class="rotation">Rotação 3D <input id="yaw" type="range" min="-180" max="180" value="-30"><output id="yaw-value">−30°</output></label>
+      </section>
+      <aside class="controls" aria-label="Controles do mascote">
+        <section><div class="section-heading"><h2>Expressões</h2><span>01 / ROSTO</span></div><p class="help">Oito jeitos de se conectar com você.</p><div id="expressions" class="expression-grid"></div></section>
+        <section><div class="section-heading"><h2>Movimentos</h2><span>02 / CORPO</span></div><p class="help">Cada gesto retorna suavemente ao repouso.</p><div id="animations" class="motion-grid"></div><button id="reset" class="reset">Voltar ao repouso</button></section>
+        <section><div class="section-heading"><h2>Personalidade visual</h2><span>03 / AJUSTES</span></div><div class="theme-options"><button data-theme="light" aria-pressed="true"><i class="swatch blue"></i>Claro</button><button data-theme="dark" aria-pressed="false"><i class="swatch dark"></i>Escuro</button><button data-theme="pink" aria-pressed="false"><i class="swatch pink"></i>Rosa</button></div><p class="help theme-help">Alex acompanha automaticamente o tema da página.</p>
+          <label class="setting">Intensidade <output id="intensity-value">100%</output><input id="intensity" type="range" min="0" max="2" step=".05" value="1"></label>
+          <label class="setting">Tamanho <output id="size-value">520 px</output><input id="size" type="range" min="120" max="600" step="10" value="520"></label>
+          <label class="toggle"><span>Demonstrar fala<small>Movimento de boca, sem áudio</small></span><input id="speaking" type="checkbox" role="switch"></label>
+          <label class="toggle"><span>Permitir interação<small>Cursor, clique, teclado e toque</small></span><input id="interactive" type="checkbox" role="switch" checked></label>
+          <p id="motion-preference" class="preference" hidden>Movimento reduzido ativado no dispositivo.</p>
+        </section>
+      </aside>
+    </div>
+    <details class="reference"><summary>Referências de identidade visual <span>Comparar o modelo com as imagens originais</span></summary><div class="reference-images"><figure><img src="reference-robot.png" alt="Referência original: robô branco flutuante com sorriso ciano" loading="lazy"><figcaption>Volume, brilho e membros flutuantes</figcaption></figure><figure><img src="reference-guide.png" alt="Guia visual oficial LURIA Alex, vistas, expressões e movimentos" loading="lazy"><figcaption>Guia de expressões e identidade LURIA</figcaption></figure></div></details>
+    <footer><span>LURIA · Professor Alex 2.0</span><span>Modelo procedural 3D · WebGL · Sem serviços externos</span><button id="offline">Preparar teste offline/PWA</button><span id="offline-status" role="status"></span></footer>
+  </main>
+</body></html>
