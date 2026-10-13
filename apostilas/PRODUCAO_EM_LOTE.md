@@ -4,7 +4,7 @@ Atualizado em 13/10/2026.
 
 ## Decisão editorial
 
-As apostilas passam a ser criadas e revisadas **em lotes**, com padrão de livro-texto e visual semelhante ao material de cursinhos. Não limitar a profundidade a uma meta artificial de caracteres. O conteúdo precisa permitir resolver questões de residência sem recorrer obrigatoriamente a outra apostila.
+As apostilas passam a ser criadas e revisadas **em lotes**, com padrão de livro-texto e visual semelhante ao material de cursinhos. Exigir no mínimo **60.000 caracteres didáticos úteis por apostila**, sem tratar a metragem como prova de qualidade. Não duplicar explicações nem trocar recursos visuais por texto corrido para atingir esse piso. O conteúdo precisa permitir resolver questões de residência sem recorrer obrigatoriamente a outra apostila.
 
 O fluxo de imagens é **centralizado no Admin**. Não incluir novas imagens clínicas diretamente no HTML, não inserir links de imagens ainda não aprovadas dentro dos capítulos, nem exigir que o administrador visite cada apostila separadamente.
 
@@ -16,7 +16,7 @@ O fluxo de imagens é **centralizado no Admin**. Não incluir novas imagens clí
 4. Gerar um **manifesto único das candidatas de imagem**: `apostilas/_imagens-candidatas-ultimo-lote.json`. Cada registro informa apostila, seção, chave única, fonte, licença, legenda e URL de prévia. Uma candidata de imagem não é conteúdo publicado.
 5. Abrir **Admin → Imagens para aprovação → Apostilas**; selecionar o arquivo JSON, importar, filtrar por apostila e aprovar ou rejeitar candidatas em grupos de até 25. Conferir autoria, licença, fidelidade clínica, legibilidade e tamanho antes de aprovar.
 6. A imagem inédita só aparece na apostila **após a aprovação** pelo fluxo existente. Na aprovação, o backend otimiza para no máximo **110 KiB** e coloca o item na seção selecionada. Imagem que já recebeu aprovação anterior pode reutilizar o arquivo previamente validado (regra existente da fila).
-7. Rodar `node scripts/audit-apostilas-batch.cjs --json` e `node scripts/check-syntax.cjs` para auditar o lote completo. A auditoria de comprimento e marcadores **não substitui revisão médica**; verificar indicações, doses, contraindicações e diretrizes caso a caso.
+7. Rodar `node scripts/audit-apostilas-60k.mjs --json`, `node scripts/audit-apostilas-batch.cjs --json` e `node scripts/check-syntax.cjs` para auditar o lote completo. A auditoria de comprimento e marcadores **não substitui revisão médica**; verificar indicações, doses, contraindicações e diretrizes caso a caso.
 8. Evitar alterações globais sem revisar CSS/PWA: `assets/css/apostila-luria-book.css` é compartilhado, e os conteúdos aprovados devem continuar acessíveis e legíveis no celular.
 
 ## Entrada JSON do gerador
@@ -52,7 +52,7 @@ O fluxo de imagens é **centralizado no Admin**. Não incluir novas imagens clí
 }
 ```
 
-O exemplo ilustra o **formato**, não a profundidade exigida: a geração real exige ao menos sete seções, quatro referências e texto desenvolvido de pelo menos 30 mil caracteres verificáveis, com casos clínicos comentados. Os 30 mil caracteres são apenas um piso de prevenção a resumos excessivos, **não uma recomendação para parar de escrever**.
+O exemplo ilustra apenas o **formato**. Na geração real, são necessários pelo menos sete capítulos substantivos, quatro referências rastreáveis, casos clínicos comentados e **60.000 caracteres de conteúdo didático útil sem repetição**. É proibido inflar a contagem com explicações reescritas, blocos desconexos ou transformação de tabelas/fluxogramas/esquemas em textão.
 
 ## Regras de qualidade de imagem
 
@@ -65,3 +65,11 @@ O exemplo ilustra o **formato**, não a profundidade exigida: a geração real e
 O controle de acesso no Supabase está protegido por RLS para inserção/revisão administrativa. Não expor chaves de serviço no frontend. As aprovações usam `admin_review_apostila_image`, enquanto o Admin importa candidatas em `apostila_image_review_queue`. Cada candidata tem chave única por `apostila_path + candidate_key`, reduzindo duplicações em execuções por lote.
 
 A geração de textos e a aprovação de imagens são **etapas independentes**. Textos não são automaticamente certificados como completos por terem sido gerados ou por passarem na validação sintática. Verificar qualidade de fontes, critérios clínicos e cobertura de questões de provas antes de considerar um lote finalizado.
+
+## Revisão capítulo a capítulo sem reexplicações
+
+- Mapear conceitos e afirmações já cobertos antes de editar. Cada novo parágrafo precisa trazer um dado, mecanismo, diferencial ou implicação clínica **novo**.
+- Preservar esquemas, tabelas, algoritmos, mapas mentais, callouts e fotografias aprovadas. Ampliar os próprios recursos quando isso ensina melhor do que prosa.
+- Inserir aprofundamento na seção correspondente, ao lado do elemento didático relacionado. Não criar capítulo final genérico apenas para fechar 60 mil caracteres.
+- Evitar parágrafos extensos sem ligação causal, repetições literais ou paráfrases, cabeçalhos duplicados e exercícios que repetem a mesma explicação.
+- A aprovação exige triagem de extensão >=60.000, revisão de ausência de redundância, checagem de atualidade das recomendações e inspeção visual desktop/PWA. A triagem automática **não** garante esses critérios qualitativos.
