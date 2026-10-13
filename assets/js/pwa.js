@@ -27,7 +27,7 @@
 
   if (!("serviceWorker" in navigator)) return;
 
-  const release = "20261013-css1";
+  const release = "20261013-frame2";
   const refreshKey = "luria:pwa:activated:" + release;
   let reloadPending = false;
   const hadController = !!navigator.serviceWorker.controller;

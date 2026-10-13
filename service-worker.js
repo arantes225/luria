@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-css-consolidated-20261013";
+const CACHE_VERSION = "luria-pwa-contained-frame-20261013";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -31,20 +31,20 @@ const APP_SHELL = [
   "/assets/img/logos/pwa-icon-180.png?v=pwa5",
   "/assets/img/logos/logo-principal.png?v=luria7",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261013-css1",
+  "/assets/js/pwa.js?v=20261013-frame2",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/css/dashboard-layouts.css?v=20261006-dashboard3-fit",
   "/assets/js/ui-routes.js?v=1",
-  "/assets/css/ui-app.css?v=2",
+  "/assets/css/ui-app.css?v=3",
   "/assets/css/dashboard-ui-v2.css?v=1",
   "/assets/css/education-ui-v2.css?v=2",
-  "/assets/js/ui-theme-v2.js?v=20261011-pwa281",
-  "/assets/js/ui-navigation-v2.js?v=20261013-css1",
+  "/assets/js/ui-theme-v2.js?v=20261013-frame2",
+  "/assets/js/ui-navigation-v2.js?v=20261013-frame1",
   "/assets/js/dashboard-ui-v2.js?v=20261013-boot1",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
-  "/assets/js/app.js?v=20261013-css1",
+  "/assets/js/app.js?v=20261013-frame1",
   "/assets/js/dashboard-layouts.js?v=20261005-dashboard3-v101",
   "/assets/css/pwa-mobile.css?v=20260930-layout-pcr",
   "/assets/css/flashcards-ui-v2.css?v=1",
@@ -74,16 +74,16 @@ const INSTALL_PRECACHE = new Set([
   "/apostilas/",
   "/manifest.webmanifest?v=5",
   "/assets/vendor/supabase-2.110.6.js",
-  "/assets/js/pwa.js?v=20261013-css1",
+  "/assets/js/pwa.js?v=20261013-frame2",
   "/assets/css/style.css?v=16.14-font-unified",
   "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
   "/assets/js/ui-routes.js?v=1",
-  "/assets/css/ui-app.css?v=2",
+  "/assets/css/ui-app.css?v=3",
   "/assets/css/education-ui-v2.css?v=2",
-  "/assets/js/ui-theme-v2.js?v=20261011-pwa281",
-  "/assets/js/ui-navigation-v2.js?v=20261013-css1",
+  "/assets/js/ui-theme-v2.js?v=20261013-frame2",
+  "/assets/js/ui-navigation-v2.js?v=20261013-frame1",
   "/assets/js/supabase.js?v=auth4",
-  "/assets/js/app.js?v=20261013-css1",
+  "/assets/js/app.js?v=20261013-frame1",
   "/assets/fonts/inter/InterVariable.woff2",
   "/assets/js/luria-brand-v5.js?v=12"
 ]);

@@ -6182,7 +6182,7 @@ function carregarOnboardingGlobal() {
       "luria-onboarding-script";
 
     script.src =
-      "/assets/js/onboarding.js?v=3.2";
+      "/assets/js/onboarding.js?v=20261013-frame1";
 
     script.onload =
       () => resolve();
@@ -6451,7 +6451,7 @@ async function iniciarApp() {
     );
   }
 
-  // A página fica visível imediatamente.
+  // Auth está pronto; a base v2 expõe a página após preparar tema e navegação.
   document.body.classList.add(
     "app-ready"
   );

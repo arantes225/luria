@@ -1496,13 +1496,11 @@
     }
 
     const target=resolveTarget(step.target) || document.querySelector(".main") || document.body;
+    const pageScroller = document.body?.dataset.uiNav === "v2" ? document.querySelector("main.main") || window : window;
     if(step.scrollPageDown){
       requestAnimationFrame(()=>{
-        window.scrollTo({
-          top:Math.max(
-            document.documentElement.scrollHeight,
-            document.body.scrollHeight
-          ),
+        pageScroller.scrollTo({
+          top:pageScroller === window ? Math.max(document.documentElement.scrollHeight,document.body.scrollHeight) : pageScroller.scrollHeight,
           left:0,
           behavior:"smooth"
         });
@@ -1516,7 +1514,7 @@
         }
       });
     }else if(step.noScroll){
-      window.scrollTo({top:0,left:0,behavior:"auto"});
+      pageScroller.scrollTo({top:0,left:0,behavior:"auto"});
     }else{
       target.scrollIntoView({behavior:"smooth",block:step.top?"start":"center"});
     }

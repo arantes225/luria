@@ -12,6 +12,20 @@
     document.documentElement.classList.add("pwa-v2-standalone");
     document.documentElement.dataset.pwa = "standalone";
   }
+  body.dataset.uiStartup = "pending";
+  const startup = document.createElement("section");
+  startup.className = "ui-startup";
+  startup.setAttribute("role", "status");
+  startup.setAttribute("aria-live", "polite");
+  const startupTitle = document.createElement("strong");
+  startupTitle.textContent = "Carregando sua página…";
+  const startupCopy = document.createElement("p");
+  startupCopy.textContent = "Preparando seu tema e sua navegação.";
+  const retry = document.createElement("a");
+  retry.href = location.pathname + location.search + location.hash;
+  retry.textContent = "Recarregar página";
+  startup.append(startupTitle, startupCopy, retry);
+  body.append(startup);
   const preferenceKey = "luria:dashboard-ui:v2";
   let preference = null;
   const media = window.matchMedia("(prefers-color-scheme: dark)");
@@ -39,7 +53,7 @@
     } catch { /* Unavailable/malformed storage keeps the account theme. */ }
     syncTheme();
   }
-  syncTheme();
+  restoreTheme();
   new MutationObserver(syncTheme).observe(document.documentElement, {attributes: true, attributeFilter: ["data-theme"]});
   media.addEventListener("change", syncTheme);
   window.addEventListener("luria:owner-changed", restoreTheme);
@@ -64,5 +78,33 @@
   }
   body.addEventListener("click", chooseTheme);
   window.LuriaUITheme = Object.freeze({refresh:syncTheme});
+  let showing = false;
+  function canShowPage() {
+    if (!body.isConnected || document.readyState === "loading" || !body.classList.contains("app-ready") || body.dataset.uiNavigationReady !== "true") return false;
+    if (body.id === "luria-dashboard" && body.dataset.dashboardView === "pending") {
+      const fallback = document.getElementById("dashboard-fallback-shell");
+      if (!fallback || fallback.hidden) return false;
+    }
+    return true;
+  }
+  function completeStartup() {
+    if (body.dataset.uiStartup === "ready" || showing || !canShowPage()) return;
+    restoreTheme();
+    showing = true;
+    // Let module adapters finish their DOM changes before exposing the first frame.
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      showing = false;
+      if (!canShowPage()) return;
+      body.dataset.uiStartup = "ready";
+      startup.remove();
+      startupObserver.disconnect();
+    }));
+  }
+  const startupObserver = new MutationObserver(completeStartup);
+  startupObserver.observe(body, {subtree:true,childList:true,attributes:true,attributeFilter:["class","hidden","data-dashboard-view"]});
+  window.addEventListener("luria:ui-navigation-ready", completeStartup);
+  window.addEventListener("docmap:ready", completeStartup);
+  document.addEventListener("DOMContentLoaded", completeStartup, {once:true});
+  if (document.readyState !== "loading") completeStartup();
 
 })();
