@@ -166,6 +166,9 @@
     .apostila-image-candidate-actions [data-apostila-image-action="approve"]{background:var(--accent);border-color:var(--accent);color:#fff}
     .apostila-image-candidate-actions [data-apostila-image-action="reject"]{color:var(--danger,#b42318)}
     .apostila-approved-figure{width:min(58%,520px);margin:18px auto 20px;padding:14px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3%,var(--surface));text-align:center}.apostila-approved-figure-intro{margin:0 0 11px;padding:10px 11px;border-left:3px solid var(--accent);border-radius:0 10px 10px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));text-align:left}.apostila-approved-figure-intro span{display:block;margin-bottom:4px;color:var(--accent);font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}.apostila-approved-figure-intro p{margin:0!important;color:var(--text);font-size:11.2px!important;line-height:1.55!important}.apostila-approved-figure-focus{margin-top:8px;padding-top:8px;border-top:1px dashed color-mix(in srgb,var(--accent) 20%,var(--border));color:var(--text);font-size:10.2px;line-height:1.48;text-align:left}.apostila-approved-figure-focus strong{color:var(--accent);font-weight:650}
+    .apostila-approved-figure{background:var(--surface);box-shadow:none!important;border:1px solid var(--border)!important;padding:12px!important}
+    .apostila-approved-figure-focus{background:color-mix(in srgb,var(--accent) 4%,var(--surface));padding:10px 11px;margin:12px 0 0;border:0;border-left:3px solid var(--accent);border-radius:0 7px 7px 0}
+    .apostila-approved-figure figcaption{font-size:10.8px;line-height:1.5;padding:0 3px}
     .apostila-approved-figure img{display:block;width:100%;max-width:440px;max-height:360px;object-fit:contain;margin:0 auto;border-radius:10px;background:#fff}
     .apostila-approved-figure figcaption{margin-top:10px;color:var(--muted);font-size:10.5px;line-height:1.52;text-align:left}
     .apostila-approved-figure figcaption strong{color:var(--text);font-weight:600}
@@ -215,12 +218,7 @@
     const title = String(asset.caption_title || asset.title || "Imagem didática").trim();
     const didactic = String(asset.didactic_note || "").trim();
     const captionText = String(asset.caption || "").trim();
-    const introText = String(
-      asset.intro_text ||
-      asset.lead_in ||
-      didactic ||
-      ("Antes de seguir, observe " + title.toLowerCase() + ". Use a imagem para reconhecer o padrão visual e relacioná-lo ao raciocínio clínico desta seção.")
-    ).trim();
+    const introText = String(asset.intro_text || asset.lead_in || "").trim();
     const visualFocus = String(
       asset.visual_focus ||
       asset.what_to_look_for ||
@@ -229,10 +227,12 @@
     ).trim();
     const clinicalLink = String(asset.clinical_link || asset.clinical_pearl || "").trim();
 
-    const intro = document.createElement("div");
-    intro.className = "apostila-approved-figure-intro";
-    intro.innerHTML = '<span>Leitura guiada</span><p>' + esc(introText) + '</p>';
-    figure.appendChild(intro);
+    if (introText) {
+      const intro = document.createElement("div");
+      intro.className = "apostila-approved-figure-intro";
+      intro.innerHTML = '<span>O que observar</span><p>' + esc(introText) + '</p>';
+      figure.appendChild(intro);
+    }
 
     // Alguns links originais (DermNet/Scientific Archives) apontam para arquivos
     // descontinuados ou bloqueiam exibição fora do site. Não renderizar <img> quebrada.
