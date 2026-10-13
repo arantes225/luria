@@ -5013,3 +5013,23 @@ body.admin-unlocked #admin-app {
   .admin-qf-lot-audit-checks{grid-template-columns:1fr}
   .admin-qf-verify-lot{width:100%}
 }
+
+
+/* Apostilas — revisão de imagens em massa centralizada no Admin */
+.admin-apostila-review-toolbar{display:grid;gap:10px;margin:15px 0 11px;padding:15px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}
+.admin-apostila-review-toolbar>label,.admin-apostila-batch-import>label{display:grid;gap:6px;font-size:12px;color:var(--muted);font-weight:600;max-width:420px}
+.admin-apostila-review-toolbar select,.admin-apostila-batch-import input{min-height:38px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);font:inherit;padding:8px 11px;width:100%;max-width:100%}
+.admin-apostila-review-buttons{display:flex;gap:7px;flex-wrap:wrap}
+.admin-apostila-review-buttons .button{min-height:34px;font-size:11px}
+.admin-apostila-review-buttons .button:disabled{opacity:.45;cursor:not-allowed}
+.admin-apostila-review-card{position:relative}
+.admin-apostila-review-card>.admin-apostila-select{position:absolute;left:10px;top:10px;z-index:2;display:grid;place-items:center;width:30px;height:30px;border:1px solid var(--border);background:var(--surface);border-radius:8px}
+.admin-apostila-review-card>.admin-apostila-select input{width:17px;height:17px;accent-color:var(--accent)}
+.admin-apostila-review-card[data-selected="true"]{outline:2px solid var(--accent);outline-offset:-2px}
+.admin-apostila-batch-import{display:flex;align-items:start;gap:12px;flex-wrap:wrap;margin:20px 0 10px;padding:16px;border:1px solid var(--border);border-radius:13px}
+.admin-apostila-batch-import>div:first-child{flex:1 1 100%}
+.admin-apostila-batch-import strong{font-size:13px}
+.admin-apostila-batch-import p{font-size:11px;margin:5px 0 0;line-height:1.5;color:var(--muted)}
+.admin-apostila-batch-import .admin-status{flex:1 1 100%}
+.admin-apostila-review-card .admin-image-review-preview{padding:7px 7px 7px 29px}
+@media(max-width:760px){.admin-apostila-review-buttons .button{flex:1 1 45%}.admin-apostila-batch-import>label{flex:1 1 100%}}
