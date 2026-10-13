@@ -177,6 +177,10 @@
     .apostila-approved-figure img{max-height:320px!important;object-fit:contain!important}
     @media(max-width:600px){.book-curated-clinical-image,.apostila-approved-figure{width:100%!important;max-width:100%!important}.apostila-approved-figure img,.book-curated-clinical-image img{max-height:300px!important}}
     @media print{.book-curated-clinical-image,.apostila-approved-figure{break-inside:avoid;page-break-inside:avoid}}
+    .apostila-approved-source-notice{padding:13px;border:1px dashed color-mix(in srgb,var(--accent) 40%,var(--border));border-radius:11px;background:var(--surface-2);text-align:left}
+    .apostila-approved-source-notice p{font-size:11.6px!important;line-height:1.6!important;margin:0 0 10px!important;color:var(--text)}
+    .apostila-approved-source-notice a{display:inline-flex;align-items:center;min-height:38px;padding:8px 12px;background:var(--accent);border-radius:8px;color:#fff!important;text-decoration:none;font-size:11px;font-weight:600}
+    .apostila-approved-figure-source-only{width:min(100%,450px)!important}
     .apostila-approved-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:start;margin:16px 0 18px}
     .apostila-approved-pair .apostila-approved-figure{width:100%;max-width:none;margin:0}
     .apostila-approved-pair .apostila-approved-figure img{max-width:100%}
@@ -230,11 +234,35 @@
     intro.innerHTML = '<span>Leitura guiada</span><p>' + esc(introText) + '</p>';
     figure.appendChild(intro);
 
-    const img = document.createElement("img");
-    img.src = luriaSafeContentUrl(src, {relative:true}) || "";
-    img.alt = String(asset.alt || captionText || "Imagem didática");
-    img.loading = "lazy";
-    figure.appendChild(img);
+    // Alguns links originais (DermNet/Scientific Archives) apontam para arquivos
+    // descontinuados ou bloqueiam exibição fora do site. Não renderizar <img> quebrada.
+    const directImageUnavailable = asset.render_mode === "source_link";
+    if (directImageUnavailable) {
+      const original = luriaSafeContentUrl(row.source_url);
+      if (!original) return null;
+      figure.classList.add("apostila-approved-figure-source-only");
+      const notice = document.createElement("div");
+      notice.className = "apostila-approved-source-notice";
+      const explanation = document.createElement("p");
+      explanation.textContent = "A imagem clínica está disponível na publicação original. O arquivo externo não possui acesso direto confiável para incorporação nesta apostila.";
+      notice.appendChild(explanation);
+      const link = document.createElement("a");
+      link.href = original;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Abrir fotografia clínica na fonte ↗";
+      link.setAttribute("aria-label", "Abrir " + title + " na fonte original");
+      notice.appendChild(link);
+      figure.appendChild(notice);
+    } else {
+      const img = document.createElement("img");
+      img.src = luriaSafeContentUrl(src, {relative:true}) || "";
+      img.alt = String(asset.alt || captionText || "Imagem didática");
+      img.loading = "lazy";
+      img.dataset.apostilaImageFallback = "approved-source";
+      img.dataset.apostilaImageSourceUrl = luriaSafeContentUrl(row.source_url) || "";
+      figure.appendChild(img);
+    }
 
     if (visualFocus) {
       const focus = document.createElement("div");
