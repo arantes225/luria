@@ -1,3 +1,9 @@
 node_modules/
 browser-results/
 .audit-artifacts/
+.pages-dist/
+.env
+.env.*
+*.pem
+*.p12
+*.key

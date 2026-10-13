@@ -1,0 +1,54 @@
+name: Audit public Pages artifact
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/deploy-pages.yml"
+      - ".github/workflows/pages-artifact-audit.yml"
+      - "scripts/build-public-pages.cjs"
+      - "apostilas/**"
+      - "assets/**"
+      - "tests/pages-artifact-security.test.cjs"
+      - "content/weekly/**"
+
+permissions:
+  contents: read
+
+jobs:
+  audit-public-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout proposed changes
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Test public artifact security with synthetic fixtures
+        run: node --test tests/pages-artifact-security.test.cjs
+      - name: Build public artifact (no deployment)
+        run: node scripts/build-public-pages.cjs
+      - name: Verify nothing internal is published
+        shell: bash
+        run: |
+          test -f .pages-dist/index.html
+          test -f .pages-dist/CNAME
+          test -f .pages-dist/service-worker.js
+          test -f .pages-dist/apostilas/index.html
+          test ! -d .pages-dist/db
+          test ! -d .pages-dist/docs
+          test ! -d .pages-dist/supabase
+          test ! -d .pages-dist/tests
+          test ! -d .pages-dist/scripts
+          test ! -d .pages-dist/tools
+          test ! -d .pages-dist/.github
+          if find .pages-dist -type f \( -name "*.sql" -o -name "*.md" -o -name "*.pem" -o -name "*.key" -o -name "*.cjs" \) | grep -q .; then
+            echo "Refusing to publish internal file types"
+            exit 1
+          fi
+          if find .pages-dist -type d -name 'qf-*' | grep -q .; then
+            echo "Refusing to publish question-factory files"
+            exit 1
+          fi
+          echo "Public artifact audit passed"
