@@ -46,6 +46,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Prepare optimized UI images
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reencode safe UI PNGs for the published artifact
+        run: |
+          python -m pip install Pillow==11.3.0
+          python scripts/optimize-static-images.py --root .
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
