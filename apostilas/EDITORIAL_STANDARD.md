@@ -200,3 +200,22 @@ A pedido do responsável pela LURIA, foram examinados diretamente os PDFs dispon
 10. O nível de aprofundamento não será medido por total de páginas isoladamente, mas também pela completude, legibilidade, valor pedagógico e fidelidade às diretrizes atuais.
 
 **Meta de percepção:** parecer uma apostila de cursinho premium com identidade própria da LURIA, não um artigo científico corrido, não um livro tradicional de colunas imensas de texto, nem uma cópia do material de terceiros.
+
+
+---
+
+## Correção de QA — 12/10/2026: não inflar páginas com imagens nem com apêndices
+
+O responsável rejeitou expressamente a repetição de imagens para aumentar páginas, o empilhamento de quatro figuras e o acúmulo de aprofundamentos no fim da apostila. Essas práticas são **falhas editoriais**, mesmo que a meta quantitativa seja atingida.
+
+**Novos critérios de revisão obrigatória:**
+1. **Uma função pedagógica por figura.** Nunca duplicar em HTML uma imagem já injetada pela fila de aprovadas; reconhecer URL de origem e equivalentes otimizados. Não inserir imagens de mesmo significado repetidamente apenas para alongar a página.
+2. **Sem galerias, pares automáticos ou quatro imagens agrupadas.** Figuras devem ser posicionadas junto ao parágrafo, subtópico ou exame que explicam, com legenda que ensine o que observar. Figura complementar no máximo uma por seção que já contenha figura, salvo exceção justificada por tópicos distintos.
+3. **Dimensões padrão LURIA**: figura clínica em largura usual de cerca de 480–520 px no desktop, altura proporcional, limite aproximado de 320–340 px na visualização comum, e 100% responsiva no PWA; maior apenas quando necessária para leitura de detalhes. A imagem original é expansível, não deve ser esticada ou achatada.
+4. **Aprofundamento integrado, não anexado em camadas.** Não acumular seções repetidas no fim sob títulos genéricos como "Capítulos aprofundados", "Estudo etiológico" e "Aprofundamento". Cada explicação entra no capítulo da sua entidade, respeitando a sequência conceito → mecanismo → clínica → diagnóstico → diferencial → tratamento → complicação → seguimento. Referências devem encerrar o caderno.
+5. **Texto e recursos visuais complementares.** Intercalar explicações com tabelas, diagramas, fluxos, cards e callouts originais, evitando longos blocos contínuos. Tabelas precisam ter relevância e interpretação, não são tabelas decorativas.
+6. **A contagem de 40.000 caracteres é piso de texto útil, não meta de altura.** Excluir repetições textuais, CSS/JS, sumário, referências e artifícios gráficos. Nunca criar páginas ou imagens para completar uma métrica.
+7. **Verificação antes/depois:** auditar URLs de imagens repetidas, imagens agrupadas, quantidade de visuais, capítulos após a bibliografia, títulos repetidos, links de sumário, tabelas, layout PWA e legibilidade das legendas.
+8. **Não remover as imagens da fila do Admin por conveniência visual.** Aprovação original permanece registrada; o renderer escolhe inserções pedagógicas sem duplicar ou transformar a seção em galeria.
+9. **Qualidade do texto:** evitar páragrafos repetindo explicações anteriores; aprofundar fisiopatologia e raciocínio com distinções clínicas, resultados discordantes e situações especiais objetivas. Quando um tópico fica extenso, subdividir com subtítulos relevantes.
+10. **Finalização significa revisão substantiva e visual**, não somente atender caracteres. Validar pelo menos uma renderização real desktop/mobile e registrar limitações quando não houver navegador de teste disponível.
