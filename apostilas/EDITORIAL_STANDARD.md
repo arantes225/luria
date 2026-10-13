@@ -143,3 +143,34 @@ Antes de publicar, comparar a apostila com as mais completas da biblioteca. Cont
 - [ ] Revisão clínica antes de carimbar a edição como concluída.
 
 **Inventário inicial das 25 pastas e suas lacunas:** consultar \`apostilas/AUDITORIA_LIVRO_TEXTO_2026-10-12.md\`. Contagem de caracteres, sozinha, não equivale a revisão clínica nem a publicação de uma versão reescrita.
+
+
+---
+
+## Diretriz irrevogável — aprofundar SEM desmontar os recursos visuais
+
+**Correção expressa do escopo feita pelo responsável pela LURIA em 12/10/2026: a exigência mínima de 40.000 caracteres significa ADICIONAR aprofundamento ao material existente, nunca trocar seus esquemas por texto corrido. Quanto mais visual, melhor, desde que seja didaticamente correto e legível.**
+
+### Regra de preservação visual (obrigatória para os 25 cadernos e todos os futuros)
+1. **Não excluir, simplificar ou transformar em parágrafos** os mapas mentais, esquemas anatômicos, esquemas fisiológicos/fisiopatológicos, fluxogramas, algoritmos clínicos, gráficos, tabelas, quadros comparativos, caixas de atenção, callouts, cards, pulo do gato, recursos interativos e figuras que já existem. Preservar também os estilos CSS, IDs, interações, cores, composição responsiva e disposição visual desses componentes.
+2. A revisão editorial deve ser **aditiva**: manter o componente visual e **aprofundar o texto explicativo junto a ele** (antes, depois ou em um bloco complementar integrado). Sempre que possível, enriquecer o próprio esquema visual com rótulos legíveis, etapas intermediárias, legendas clínicas, relações causais ou detalhes importantes, sem torná-lo visualmente carregado.
+3. Quando um gráfico ou fluxograma mostrar uma seta ou relação causal, explicar o que ocorre em cada transição, por que acontece, quais exceções são relevantes e como interpretar clinicamente. Não substituir fluxos por listas.
+4. Quando uma tabela comparar doenças, mecanismos, exames ou tratamentos, preservar a tabela, podendo **acrescentar colunas/linhas úteis e ampliar o comentário interpretativo**. Nunca remover a tabela sob o pretexto de tornar o texto mais acadêmico.
+5. Quando um callout, destaque ou **Pulo do Gato** já existir, mantê-lo e enriquecer a explicação ao redor. Não converter callouts em parágrafos sem identidade visual. Evitar simplesmente repetir o callout em uma nova seção textual.
+6. Preservar os **mapas mentais** e, quando houver lacunas, adicionar ramificações relevantes e uma leitura guiada do mapa. Não substituí-los por sumários em texto.
+7. Preservar toda imagem já aprovada, incluindo o local de inserção, salvo correção de erro comprovado; imagens adicionais seguem rigorosamente o fluxo de curadoria/aprovação do Admin, com preferência por esquemas reais, técnicos e fotos clínicas reais quando pertinentes.
+8. Adicionar **novos elementos visuais** quando houver ganho didático real: sequências de mecanismo, mapas conceituais, diagramas de decisão, tabelas de diferenciais, comparações lado a lado, gráficos de tendências e esquemas de exames. Elementos HTML/CSS/SVG desenhados no site devem ser acessíveis, ter bom contraste, continuar legíveis no PWA e obedecer ao padrão visual LURIA.
+9. **Contagem de caracteres**: os 40.000 caracteres mínimos vêm exclusivamente de aprofundamento didático substancial; **não** é necessário nem desejável aumentar o número de caracteres às custas do conteúdo visual. Tampouco contar classes, tags, JS ou SVG como caracteres didáticos para atingir a meta.
+10. Antes e depois de cada alteração, registrar/verificar um inventário dos componentes visuais: quantidade, tipo, âncora, funcionamento, renderização em tela larga e no PWA. Fazer comparação visual para garantir que os elementos foram mantidos e que não apareceram overflow, imagens quebradas, callouts ocultos ou alterações de proporção.
+11. Só remover ou substituir um esquema existente quando for **objetivamente incorreto, inseguro ou duplicado**, justificando a mudança e, preferencialmente, corrigindo-o **na mesma linguagem visual**, preservando a experiência do estudante. Nunca fazer remoções em massa como parte de uma conversão para formato de livro.
+12. A expansão deve ocorrer **junto aos capítulos e esquemas correspondentes**, não apenas pelo acréscimo repetitivo de um grande bloco de "aprofundamento" ao final do arquivo. Para materiais já expandidos, uma segunda passada deve integrar parágrafos novos às seções visuais originais e enriquecer as figuras, evitando trechos deslocados.
+
+### Definição de conclusão — conteúdo + visual
+Uma apostila revisada só pode ser considerada concluída se:
+- tiver pelo menos 40.000 caracteres de explicação didática **real**, revisada e cientificamente correta;
+- preservar 100% dos componentes visuais úteis da versão anterior e seu funcionamento;
+- ampliar o aprofundamento **dos esquemas já existentes** e introduzir visualizações novas onde agreguem aprendizado;
+- manter o fluxo de aprovação de imagens e conferir fontes, legendas e acessibilidade;
+- passar por inspeção de layout no desktop e no PWA.
+
+**Princípio final: não é "texto no lugar de esquemas"; é "mais conteúdo explicando e complementando MAIS recursos visuais".**
