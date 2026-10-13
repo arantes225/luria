@@ -1,4 +1,4 @@
-body[data-page="professor_alex"] .alex-mascot-stage{flex:0 0 240px;display:grid;justify-items:center;align-content:center;max-width:100%;border-radius:24px;background:radial-gradient(ellipse at 50% 45%,rgba(92,189,255,.40),rgba(79,163,240,.13) 62%,transparent 76%)}
+body[data-page="professor_alex"] .alex-mascot-stage{flex:0 0 240px;display:grid;justify-items:center;align-content:center;max-width:100%;border-radius:24px;background:transparent}
 body[data-page="professor_alex"] .alex-mascot-stage professor-alex-mascot{display:block}
 body[data-page="professor_alex"] .alex-mascot-hint{margin:-6px 0 12px;font-size:11px;line-height:1.4;color:var(--muted);text-align:center}
 @media(max-width:620px){body[data-page="professor_alex"] .alex-mascot-stage{flex-basis:100%;width:100%}body[data-page="professor_alex"] .alex-mascot-stage professor-alex-mascot{width:210px}}
