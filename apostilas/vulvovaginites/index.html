@@ -327,6 +327,23 @@
 .luria-disease-unit .book-callout.pulo-do-gato + .luria-med-subhead{margin-top:21px}
 .book-section .book-table tbody tr:nth-child(even):not(.luria-master-table tr){background:color-mix(in srgb,var(--accent) 1.5%,var(--surface))}
 @media(max-width:560px){.luria-foundation-row p,.luria-life-row p,.luria-anamnesis li{font-size:13.4px!important;line-height:1.62!important}.reference-list li{font-size:12.4px!important}}
+
+/* Profundidade clínica guiada */
+.luria-evidence-note{margin:18px 0 20px;padding:13px 17px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
+.luria-evidence-note>strong{display:block;margin-bottom:6px;font-size:13px;line-height:1.35;color:var(--accent)}
+.luria-evidence-note p{margin:0!important;font-size:13.5px!important;line-height:1.62!important}
+:is(#candida,#vaginose,#tricomoníase) .luria-evidence-note{border-left-color:var(--luria-chapter-tone);background:color-mix(in srgb,var(--luria-chapter-tone) 5%,var(--surface))}
+:is(#candida,#vaginose,#tricomoníase) .luria-evidence-note>strong{color:var(--luria-chapter-tone)}
+.luria-clinical-case{margin:23px 0 18px;padding:19px 21px;border-radius:12px;border:1px solid color-mix(in srgb,var(--accent) 19%,var(--border));border-top:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
+.luria-case-kicker{display:block;margin-bottom:6px;color:var(--accent);font-size:10.5px;font-weight:760;letter-spacing:.065em;text-transform:uppercase}
+.luria-clinical-case h4{margin:0 0 10px!important;font-size:15.4px!important;line-height:1.35!important;color:var(--text)}
+.luria-clinical-case p{margin:0!important;line-height:1.65!important;font-size:13.8px!important;max-width:80ch}
+:is(#candida,#vaginose,#tricomoníase) .luria-clinical-case{border-top-color:var(--luria-chapter-tone)}
+:is(#candida,#vaginose,#tricomoníase) .luria-case-kicker{color:var(--luria-chapter-tone)}
+#diferenciais>.luria-differential-heading{margin:27px 0 11px!important;padding-bottom:9px;border-bottom:1px solid var(--border);font-size:16px!important}
+#diferenciais>.luria-differential-heading+p{margin-top:4px}
+@media(max-width:560px){.luria-evidence-note{padding:12px}.luria-clinical-case{padding:16px 14px;margin:20px 0}.luria-clinical-case h4{font-size:14.8px!important}.luria-clinical-case p{font-size:13.5px!important}}
+@media print{.luria-clinical-case,.luria-evidence-note{break-inside:avoid}}
 </style>
 <style id="luria-apostila-navigation-fix">.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}</style>
   <link rel="stylesheet" href="/assets/css/ui-v2-foundations.css?v=2">
@@ -774,8 +791,9 @@
               <li>CDC. <strong><a href="https://www.cdc.gov/std/treatment-guidelines/trichomoniasis.htm" target="_blank" rel="noopener noreferrer">Trichomoniasis — STI Treatment Guidelines.</a></strong></li>
               <li>ACOG. <strong><a href="https://www.acog.org/news/news-releases/2025/10/acog-recommends-concurrent-sexual-partner-treatment-recurrent-bacterial-vaginosis-first-time" target="_blank" rel="noopener noreferrer">Concurrent Sexual Partner Therapy to Prevent Bacterial Vaginosis Recurrence.</a></strong> Clinical Practice Update, 2025.</li>
               <li>Vodstrcil LA et al. <strong><a href="https://pubmed.ncbi.nlm.nih.gov/40043236/" target="_blank" rel="noopener noreferrer">Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis.</a></strong> N Engl J Med. 2025;392:947–957. DOI: 10.1056/NEJMoa2405404.</li>
+              <li>Reichman O, Sobel JD. <strong><a href="https://pubmed.ncbi.nlm.nih.gov/25132275/" target="_blank" rel="noopener noreferrer">Desquamative inflammatory vaginitis.</a></strong> Best Pract Res Clin Obstet Gynaecol. 2014.</li>
               <li>Rosati D et al. <strong>Vulvovaginal Candidiasis: A Current Understanding and Burning Questions.</strong> J Fungi.</li>
-              <li>Scoping review of cytolytic vaginosis literature. <strong>PLOS One.</strong></li>
+              <li>Kraut R et al. <strong><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0280954" target="_blank" rel="noopener noreferrer">Scoping review of cytolytic vaginosis literature.</a></strong> PLOS ONE. 2023;18:e0280954.</li>
             </ol>
           </section>
         </article>
