@@ -1,5 +1,23 @@
 # Padrão editorial das Apostilas LURIA
 
+## Pré-requisito obrigatório — comparação com material do Google Drive antes de qualquer edição
+
+**Não criar, reescrever, ampliar, revisar conteúdo ou reformular a apresentação de apostila sem primeiro abrir e examinar um material semelhante disponível no Google Drive do projeto.** Essa consulta é parte do trabalho, e não uma sugestão para uma etapa futura. Aplicar a regra também a ajustes individuais, a revisões em lote e a materiais já publicados.
+
+**Ordem de prioridade:** (1) apostila da mesma matéria produzida pelo **Estratégia MED**, quando identificada de forma verificável no Drive; (2) outro material do Estratégia MED da especialidade ou dos mesmos sistemas; (3) outra apostila de residência do Drive sobre a matéria; (4) material próximo que permita comparação parcial. Não presumir que um PDF pertence ao Estratégia MED só por conter termos médicos: confirmar capa, identificação institucional ou metadados. Quando nenhum material correlato estiver acessível, **interromper a revisão e solicitar acesso/referência**, em vez de declarar a checagem realizada.
+
+### Passos obrigatórios antes de começar a editar
+1. Buscar no Drive pelo tema exato, sinônimos, siglas, doenças fundamentais e especialidade; identificar um documento correspondente. Abrir o arquivo e **examinar efetivamente seu conteúdo**, não apenas nome, miniatura ou resultado de pesquisa. Se necessário, conferir páginas e elementos visuais para compreender a estrutura didática.
+2. Levantar sumário, sequência de raciocínio, tópicos, nível de aprofundamento, tabelas, mapas, imagens diagnósticas, algoritmos, casos clínicos e aplicação em prova. Comparar com a apostila LURIA existente e registrar **lacunas concretas e pontos fortes a preservar**.
+3. Usar a comparação como **benchmark de escopo e experiência de aprendizagem**, não como licença para copiar: escrever texto, tabelas, casos, diagramas e elementos gráficos originais da LURIA; não transcrever, parafrasear de perto, replicar ilustrações ou publicar imagens de terceiros sem licença e aprovação.
+4. Atualizar decisões clínicas com documentos científicos primários e diretrizes vigentes, prioritariamente FEBRASGO, Ministério da Saúde e sociedades relevantes. Material de cursinho serve para comparação pedagógica; não substitui conferência técnica.
+5. Registrar para rastreabilidade: nome e link do(s) documento(s) consultado(s), origem editorial confirmada ou não, data da consulta, escopo efetivamente examinado, lacunas identificadas e medidas aplicadas. **Não marcar a apostila como revisada sem referência comparativa do Drive registrada.**
+6. Preservar o padrão de design LURIA: conferir primeiro apostila semelhante **já padronizada no próprio site**, além do benchmark do Drive, para garantir menus, tipografia, espaçamentos, tabelas, diagramas, identidade visual e responsividade desktop/PWA. O livro de terceiros nunca deve ser reproduzido visualmente de modo a confundir a identidade das marcas.
+
+**Teste de saída:** matriz de cobertura e questões respondíveis somente com a LURIA, pelo menos 60.000 caracteres úteis e não repetitivos, fontes e doses revisadas, visuais de ensino adequados, imagens aprovadas, layout responsivo e registro do Drive. Extensão não suprime nenhuma dessas exigências.
+
+---
+
 ## Regra inegociável — autossuficiência integral para estudo de residência
 
 **Um estudante que comece sem conhecer a matéria deve conseguir aprendê-la do básico à profundidade exigida nas provas de residência médica usando somente esta apostila.** A apostila LURIA é o material principal e suficiente de estudo do tema; o aluno não deve precisar comprar cursinho, consultar livro-texto, pesquisar na internet ou abrir outra apostila para completar fundamentos, entender mecanismos, interpretar exames ou justificar uma conduta. Referências científicas permanecem obrigatórias para rastreabilidade e atualização editorial, não como substitutas de explicações ausentes.
