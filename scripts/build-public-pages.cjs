@@ -126,5 +126,41 @@ const rootDirectories = fs.readdirSync(DIST, { withFileTypes: true })
 for (const name of rootDirectories) {
   if (!PUBLIC_DIRS.includes(name)) throw new Error("Non-allowlisted directory: " + name);
 }
+// Transitional audit: weekly question packs are intentionally still public.
+// Warn about this exposure until they are served through an authorized backend.
+const WEEKLY = path.join(DIST, "content", "weekly");
+if (fs.existsSync(WEEKLY)) {
+  const manifestPath = path.join(WEEKLY, "manifest.json");
+  if (fs.existsSync(manifestPath)) {
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+    const questionUrls = (manifest.groups || []).flatMap(group =>
+      (group.questions || []).map(item => typeof item === "string" ? item : item.url)
+    );
+    const leakedAnswers = [];
+    for (const url of questionUrls) {
+      if (!url || !url.startsWith("/content/weekly/")) {
+        throw new Error("Unexpected weekly pack location in manifest");
+      }
+      const absolute = path.resolve(DIST, "." + url);
+      if (!absolute.startsWith(WEEKLY + path.sep)) {
+        throw new Error("Weekly manifest path escapes public content folder");
+      }
+      if (!fs.existsSync(absolute)) {
+        throw new Error("Weekly pack referenced but not published: " + url);
+      }
+      const payload = JSON.parse(fs.readFileSync(absolute, "utf8"));
+      if (Array.isArray(payload.items) && payload.items.some(item =>
+        item && (Object.hasOwn(item, "gabarito") ||
+          Object.hasOwn(item, "correct_answer")))) {
+        leakedAnswers.push(url);
+      }
+    }
+    if (leakedAnswers.length) {
+      console.warn("SECURITY WARNING: " + leakedAnswers.length +
+        " weekly question packs include answer keys in public Pages files. " +
+        "Requires migration to authorized backend; deployment remains compatible.");
+    }
+  }
+}
 console.log("Pages artifact prepared: " + fileCount + " public files, " +
   rootDirectories.length + " approved directories.");
