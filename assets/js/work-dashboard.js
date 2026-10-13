@@ -1,9 +1,7 @@
+/* Work hub presentation only. Tools and their contracts remain independent. */
 (() => {
-  const page=document.querySelector('body[data-page="trabalho_dashboard"] .page');
-  if(!page) return;
-
-  const $=id=>document.getElementById(id);
-  const esc=value=>String(value??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");
+  const root = document.querySelector('body[data-page="trabalho_dashboard"] #work-dashboard-content');
+  if (!root) return;
   const icon=(name)=>{
     const paths={
       calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',
@@ -24,151 +22,25 @@
     };
     return `<svg class="work-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]||paths.file}</svg>`;
   };
-  const heading=(i,title,href="")=>`<div class="work-card-heading"><h3><span class="work-heading-icon">${icon(i)}</span>${esc(title)}</h3>${href?`<a href="${href}">Abrir →</a>`:""}</div>`;
 
-  function userName(){
-    return (
-      window.docmapProfile?.display_name||
-      window.docmapUser?.user_metadata?.display_name||
-      window.docmapUser?.email?.split("@")[0]||
-      "Doutor"
-    ).trim();
-  }
-  function greeting(){
-    const h=new Date().getHours();
-    return h<12?"Bom dia":h<18?"Boa tarde":"Boa noite";
-  }
-  function formatDate(){
-    return new Intl.DateTimeFormat("pt-BR",{weekday:"long",day:"numeric",month:"long"}).format(new Date());
-  }
-  function toolsGrid(){
-    const items=[
-      ["rx","Bulário","Consultar medicamentos","/trabalho/bulario/"],
-      ["calc","Calculadoras","Ferramentas clínicas","/trabalho/calculadora/"],
-      ["cid","CID","Buscar códigos","/trabalho/cid/"],
-      ["file","Prescrição","Apoio à prescrição","/trabalho/prescricao/"],
-      ["lab","Diagnóstico","Sintomas, exames, laboratório e ECG","/trabalho/diagnostico/"],
-      ["droplet","Fluidos e eletrólitos","Reposição e correções","/trabalho/fluidos-eletrólitos/"],
-      ["protocol","Protocolos","Protocolos clínicos","/trabalho/protocolos/"]
-    ];
-    return `<div class="work-quick-grid">${items.map(([i,t,s,h])=>`<a class="work-tool" href="${h}"><span class="work-tool-icon">${icon(i)}</span><span><strong>${esc(t)}</strong><small>${esc(s)}</small></span></a>`).join("")}</div>`;
-  }
-  function detailed(){
-    return `
-      <div class="work-grid work-detail">
-        <section class="work-card work-metric">
-          <span class="work-metric-label">Próximo plantão</span>
-          <strong class="work-metric-value">—</strong>
-          <small class="work-metric-help">Nenhum plantão configurado</small>
-        </section>
-        <section class="work-card work-metric">
-          <span class="work-metric-label">Plantões no mês</span>
-          <strong class="work-metric-value">0</strong>
-          <small class="work-metric-help">A escala ainda não possui registros</small>
-        </section>
-        <section class="work-card work-metric">
-          <span class="work-metric-label">Horas previstas</span>
-          <strong class="work-metric-value">0h</strong>
-          <small class="work-metric-help">Será calculado pela sua escala</small>
-        </section>
-        <section class="work-card work-metric">
-          <span class="work-metric-label">Recebimentos previstos</span>
-          <strong class="work-metric-value">R$ —</strong>
-          <small class="work-metric-help">Será calculado pelo Financeiro</small>
-        </section>
-
-        <section class="work-card work-span-2">
-          ${heading("calendar","Agenda de trabalho","/trabalho/gestor-plantoes/")}
-          <div class="work-empty"><div><strong>Sua escala ainda está vazia</strong>Quando você cadastrar plantões, o próximo turno, horário, local e duração aparecem aqui.<br><a href="/trabalho/gestor-plantoes/">Abrir gestor</a></div></div>
-        </section>
-
-        <section class="work-card work-span-2">
-          ${heading("briefcase","Gestor de Plantões")}
-          <div class="work-shift-summary">
-            <a href="/trabalho/gestor-plantoes/"><small>Escala</small><strong>Organizar plantões</strong></a>
-            <a href="/trabalho/gestor-plantoes/"><small>Divisão</small><strong>Divisor de plantão</strong></a>
-            <a href="/trabalho/gestor-plantoes/"><small>Financeiro</small><strong>Pagamentos e repasses</strong></a>
-          </div>
-        </section>
-
-        <section class="work-card work-span-2">
-          ${heading("steth","Atendimento")}
-          <div class="work-action-row">
-            <a href="/trabalho/prontuario-rapido/">Prontuário rápido</a>
-            <a href="/trabalho/diagnostico/">Apoio diagnóstico</a>
-            <a href="/trabalho/pcr/">Registro de PCR</a>
-          </div>
-        </section>
-
-        <section class="work-card work-span-2">
-          ${heading("money","Resumo financeiro","/trabalho/financeiro/")}
-          <div class="work-finance-list">
-            <div class="work-finance-row"><div><strong>Recebido no mês</strong><small>Pagamentos já confirmados</small></div><span>Sem registros</span></div>
-            <div class="work-finance-row"><div><strong>A receber</strong><small>Plantões pendentes de pagamento</small></div><span>Sem registros</span></div>
-            <div class="work-finance-row"><div><strong>Valor médio por hora</strong><small>Calculado a partir dos plantões pagos</small></div><span>—</span></div>
-          </div>
-        </section>
-
-        <section class="work-card work-span-4">
-          ${heading("calc","Ferramentas rápidas")}
-          ${toolsGrid()}
-        </section>
-      </div>`;
-  }
-  function simple(){
-    return `
-      <div class="work-grid work-simple">
-        <section class="work-card work-simple-next">
-          ${heading("calendar","Próximo plantão","/trabalho/gestor-plantoes/")}
-          <div class="work-empty"><div><strong>Nenhum plantão configurado</strong>Cadastre sua escala para ver o próximo turno diretamente no dashboard.<br><a href="/trabalho/gestor-plantoes/">Abrir gestor</a></div></div>
-        </section>
-        <section class="work-card">
-          ${heading("briefcase","Resumo do mês")}
-          <div class="work-simple-status">
-            <div><span>Plantões</span><strong>0</strong></div>
-            <div><span>Horas previstas</span><strong>0h</strong></div>
-            <div><span>A receber</span><strong>R$ —</strong></div>
-          </div>
-        </section>
-        <section class="work-card work-simple-actions">
-          ${heading("steth","Acesso rápido")}
-          <div class="work-simple-actions-grid">
-            <a href="/trabalho/prontuario-rapido/"><span class="work-tool-icon">${icon("steth")}</span>Prontuário rápido</a>
-            <a href="/trabalho/prescricao/"><span class="work-tool-icon">${icon("rx")}</span>Prescrição</a>
-            <a href="/trabalho/calculadora/"><span class="work-tool-icon">${icon("calc")}</span>Calculadoras</a>
-            <a href="/trabalho/protocolos/"><span class="work-tool-icon">${icon("protocol")}</span>Protocolos</a>
-          </div>
-        </section>
-      </div>`;
-  }
-
-  function cleanWorkTopbar(){
-    const topbar=document.querySelector('body[data-page="trabalho_dashboard"] .topbar');
-    if(!topbar) return;
-    [...topbar.childNodes].forEach(node=>{
-      if(node.nodeType===Node.TEXT_NODE && node.textContent.trim()) node.remove();
-    });
-    topbar.querySelectorAll('[data-work-dashboard-stray="1"]').forEach(el=>el.remove());
-  }
-
-  const root=$("work-dashboard-content");
-  const buttons=[...document.querySelectorAll("[data-work-layout]")];
-  function storageKey(){return `luria:work-dashboard-layout:${window.docmapUser?.id||"guest"}`;}
-  function readLayout(){try{return localStorage.getItem(storageKey())||"detailed";}catch{return "detailed";}}
-  function render(layout){
-    const value=layout==="simple"?"simple":"detailed";
-    document.body.dataset.workDashboardLayout=value;
-    buttons.forEach(btn=>{const active=btn.dataset.workLayout===value;btn.classList.toggle("active",active);btn.setAttribute("aria-pressed",String(active));});
-    if(root) root.innerHTML=value==="simple"?simple():detailed();
-  }
-  buttons.forEach(btn=>btn.addEventListener("click",()=>render(btn.dataset.workLayout)));
-  const nameEl=$("work-dashboard-name");
-  if(nameEl) nameEl.textContent=`${greeting()}, ${userName()}`;
-  cleanWorkTopbar();
-  render(readLayout());
-  window.addEventListener("docmap:ready",()=>{
-    cleanWorkTopbar();
-    if(nameEl) nameEl.textContent=`${greeting()}, ${userName()}`;
-    render(readLayout());
-  },{once:true});
+  const groups = [
+    ['Consulta e prescrição', [
+      ['rx', 'Bulário', 'Consulte medicamentos e apresentações.', 'bulario/', 'blue'],
+      ['file', 'Prescrição', 'Organize suas prescrições.', 'prescricao/', 'green'],
+      ['protocol', 'Cola rápida', 'Anotações com acesso temporário.', 'prontuario-rapido/', 'violet']
+    ]],
+    ['Avaliação e apoio clínico', [
+      ['calc', 'Calculadoras', 'Acesse as calculadoras clínicas.', 'calculadora/', 'orange'],
+      ['shield', 'Scores', 'Consulte escores e classificações.', 'scores/', 'cyan'],
+      ['steth', 'Diagnóstico por Sintomas', 'Explore o apoio ao raciocínio clínico.', 'diagnostico/', 'teal'],
+      ['droplet', 'Fluidos e Eletrólitos', 'Acesse ferramentas de fluidos e eletrólitos.', 'fluidos-eletrólitos/', 'indigo']
+    ]],
+    ['Rotina e acompanhamento', [
+      ['users', 'Passômetro', 'Organize a passagem de casos.', 'passometro/', 'rose'],
+      ['calendar', 'Gestor de Plantões', 'Gerencie sua rotina de plantões.', 'gestor-plantoes/', 'amber'],
+      ['clock', 'Histórico de PCR', 'Consulte registros de atendimentos.', 'pcr/historico/', 'slate']
+    ]]
+  ];
+  root.innerHTML = '<a class="work-hub-emergency" href="/trabalho/pcr/"><span class="work-hub-emergency-icon" aria-hidden="true">' + icon('ecg') + '</span><span class="work-hub-emergency-copy"><strong>Parada Cardiorrespiratória</strong><span>Acesso rápido à ferramenta de PCR.</span></span><span class="work-hub-emergency-action">Abrir PCR <span aria-hidden="true">→</span></span></a>'
+    + groups.map(([title, tools], i) => '<section class="work-hub-category" aria-labelledby="work-category-' + i + '"><h2 id="work-category-' + i + '">' + title + '</h2><div class="work-hub-grid">' + tools.map(([visual, name, description, route, color]) => '<a class="work-hub-card" href="/trabalho/' + route + '"><span class="work-hub-icon" data-work-color="' + color + '">' + icon(visual) + '</span><span class="work-hub-copy"><strong>' + name + '</strong><span>' + description + '</span></span><span class="work-hub-arrow" aria-hidden="true">→</span></a>').join('') + '</div></section>').join('');
 })();
