@@ -12,7 +12,7 @@ const failures=[],results=[];
 const targetDir=process.env.CSS_BROWSER_RESULTS||path.join(root,'browser-results/css-system');
 fs.mkdirSync(targetDir,{recursive:true});
 (async()=>{
-const base='http://luria.test';
+const base='https://luria.test';
 const browser=await chromium.launch(process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{});
 try{
  const context=await browser.newContext({viewport:{width:1440,height:900},serviceWorkers:'block'});
@@ -31,6 +31,7 @@ try{
  await context.route('**/assets/js/onboarding.js*',r=>r.fulfill({contentType:'application/javascript',body:''}));
  const page=await context.newPage();let missing=[];
  page.on('response',r=>{if(r.status()>=400&&r.url().includes('/assets/css/'))missing.push(r.url())});
+ page.on('requestfailed',r=>{if(r.url().includes('/assets/css/'))missing.push(r.url()+': '+r.failure()?.errorText)});
  async function visit(url){missing=[];await page.goto(base+url,{waitUntil:'domcontentloaded'});await page.locator('body.app-ready').waitFor({timeout:4000}).catch(()=>{});await page.waitForTimeout(200);assert.deepEqual(missing,[],url+' CSS requests');}
  async function bounds(label){const m=await page.evaluate(()=>{const bar=document.querySelector('.topbar'),main=document.querySelector('.main'),s=getComputedStyle(document.body);return{width:document.documentElement.scrollWidth,viewport:innerWidth,barHeight:bar?.getBoundingClientRect().height,font:getComputedStyle(bar||document.body).fontFamily,padding:main?getComputedStyle(main.querySelector('.page')||main).padding:null,base:[...document.querySelectorAll('link[rel=stylesheet]')].filter(x=>x.href.includes('/ui-app.css?')).length,text:s.getPropertyValue('--text').trim(),themeText:s.getPropertyValue('--color-text-primary').trim()};});assert(m.width<=m.viewport+2,label+' horizontal overflow');assert.equal(m.base,1,label+' CSS base');assert(m.font.includes('Luria Inter'),label+' common font');assert.equal(m.text,m.themeText,label+' themed legacy tokens');return m;}
  for(const file of paths){try{await visit('/'+file.replace(/index\.html$/,''));const metrics=await bounds(file);results.push({file,...metrics});}catch(error){failures.push({file,error:error.message})}if((results.length+failures.length)%10===0)console.log('CSS pages',results.length+failures.length,'/',paths.length);}
