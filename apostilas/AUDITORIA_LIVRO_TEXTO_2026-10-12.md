@@ -212,3 +212,12 @@ Solicitação: tornar o caderno **Vulvovaginites** autossuficiente para estudar 
 - Editorial: notas de evidência e casos com estilo padronizado, sem galerias novas nem multiplicação artificial de figuras; índice e bibliografia preservados.
 - **Bug de HTML corrigido:** fechamento faltante na div do fluxograma da fisiologia. HTML validado por pilha de tags após correção; estrutura está balanceada.
 - Pendência: teste de renderização real em site/PWA e teste sistemático contra questões de residência antes de chamar o material de "suficiente".
+
+
+## Adendo de norma editorial — 13/10/2026
+
+**O piso atual sobe de 40.000 para 60.000 caracteres didáticos úteis por apostila.** Os valores, metas e status anteriores deste relatório representam uma fotografia histórica de 12/10/2026 e **não** certificam uma apostila contra o novo padrão. Também não se deve concluir que uma apostila com 60.000 caracteres preliminares esteja finalizada: a contagem estrita precisa descontar estruturas, referências e repetições, seguida de verificação científica, redação sem redundância e teste visual desktop/PWA.
+
+**Não inflar para cumprir o novo piso:** a expansão precisa preencher lacunas reais de conteúdo, por doença ou sistema, mantendo tabelas, fluxogramas, mapas, callouts e imagens aprovadas. Não converter recursos didáticos em texto corrido, repetir mecanismos já ensinados, acrescentar apêndices desconexos ou duplicar explicações com paráfrases. A contagem de 60 mil é um piso de profundidade real, não uma meta de comprimento visual.
+
+Auditoria atualizada: `node scripts/audit-apostilas-60k.mjs --json`. A antiga auditoria 40K permanece disponível como alias, mas aplica o limiar vigente de 60K. A tabela histórica de lacunas não foi recalculada retroativamente; executar nova triagem antes de registrar metas faltantes por caderno.
