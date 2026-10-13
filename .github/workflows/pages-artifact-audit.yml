@@ -23,6 +23,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "24"
+      - name: Test public artifact security with synthetic fixtures
+        run: node --test tests/pages-artifact-security.test.cjs
       - name: Build public artifact (no deployment)
         run: node scripts/build-public-pages.cjs
       - name: Verify nothing internal is published
