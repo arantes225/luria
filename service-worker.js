@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-v292-mulher-adulta-v8";
+const CACHE_VERSION = "luria-pwa-v293-lean-shell-20261013";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -65,6 +65,32 @@ const APP_SHELL = [
   "/assets/img/logos/pwa-icon-192.png?v=pwa5",
   "/assets/img/logos/pwa-icon-512.png?v=pwa5"
 ];
+
+// APP_SHELL permanece como lista de rotas públicas reconhecidas pelo service worker.
+// No primeiro acesso, somente os recursos fundamentais abaixo são pré-carregados:
+// o restante é solicitado e guardado em cache conforme a página for visitada.
+// Isso evita baixar a biblioteca inteira, variações antigas de JS e PNGs de ~1 MB.
+const INSTALL_PRECACHE = new Set([
+  "/",
+  "/login/",
+  "/dashboard/",
+  "/apostilas/",
+  "/manifest.webmanifest?v=5",
+  "/assets/vendor/supabase-2.110.6.js",
+  "/assets/js/pwa.js?v=20261011-pwa281",
+  "/assets/css/style.css?v=16.14-font-unified",
+  "/assets/css/luria-brand-v5.css?v=20261005-global-v90",
+  "/assets/css/ui-v2-foundations.css?v=2",
+  "/assets/css/ui-navigation-v2.css?v=2",
+  "/assets/css/education-ui-v2.css?v=2",
+  "/assets/js/ui-theme-v2.js?v=20261011-pwa281",
+  "/assets/js/ui-navigation-v2.js?v=20261011-pwa281",
+  "/assets/js/supabase.js?v=auth4",
+  "/assets/js/app.js?v=20261005-menu-restored-v100",
+  "/assets/fonts/inter/InterVariable.woff2",
+  "/assets/js/luria-brand-v5.js?v=12"
+]);
+
 
 const ACTIVE_CACHES = [STATIC_CACHE, RUNTIME_CACHE, WEEKLY_CONTENT_CACHE, PLANTAO_IMAGE_CACHE];
 const PUBLIC_PAGES = new Set(APP_SHELL.filter(path => path.endsWith("/") || path === "/index.html"));
@@ -169,7 +195,7 @@ async function fetchPublic(request, cacheName) {
 }
 
 async function cacheShellSafely() {
-  await Promise.allSettled(APP_SHELL.map(path => {
+  await Promise.allSettled(APP_SHELL.filter(path => INSTALL_PRECACHE.has(path)).map(path => {
     const request = new Request(new URL(path, self.location.origin), { credentials: "omit" });
     return fetchPublic(request, STATIC_CACHE);
   }));
