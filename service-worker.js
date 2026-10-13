@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-css-unified-20261013";
+const CACHE_VERSION = "luria-pwa-dashboard-boot-20261013";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -46,7 +46,7 @@ const APP_SHELL = [
   "/assets/css/education-ui-v2.css?v=2",
   "/assets/js/ui-theme-v2.js?v=20261011-pwa281",
   "/assets/js/ui-navigation-v2.js?v=20261013-css1",
-  "/assets/js/dashboard-ui-v2.js?v=20261011-pwa281",
+  "/assets/js/dashboard-ui-v2.js?v=20261013-boot1",
   "/assets/js/supabase.js?v=auth4",
   "/assets/js/auth.js?v=auth4",
   "/assets/js/app.js?v=20261013-css1",

@@ -2,6 +2,12 @@
    No classic card styles or shared Design System tokens are changed. */
 @layer luria-dashboard-cards {
   body#luria-dashboard {
+    &[data-dashboard-view="pending"] :is(.ui-page-header,#dashboard-alternative,#ui-review-summary,#dashboard-apps) {display:none!important;}
+    & .dashboard-loading {display:grid!important;gap:.75rem!important;min-height:180px!important;align-content:center!important;color:var(--color-text-secondary)!important;}
+    & .dashboard-loading strong {font-size:var(--ui-card-title)!important;color:var(--color-text-primary)!important;}
+    & .dashboard-loading p {margin:0!important;line-height:1.5!important;}
+    & .dashboard-loading a {color:var(--color-primary-text)!important;}
+    & .dashboard-loading[hidden] {display:none!important;}
     &[data-dashboard-view="cards"] :is(.ui-page-header,#dashboard-alternative,#ui-review-summary,#dashboard-fallback-shell) {display:none!important;}
     & .dashboard-apps {display:block!important;margin:0!important;padding:0!important;}
     & .dashboard-apps[hidden] {display:none!important;}

@@ -13,6 +13,7 @@ const preference='luria:dashboard-layout';
 function fixture({owner='A',storage=new Map(),failure=false,entitlements=null,admin=false}={}) {
   const dom=new JSDOM(html,{runScripts:'outside-only',pretendToBeVisual:true,url:'http://fixture.invalid/dashboard/'});
   const w=dom.window,d=w.document;let id=owner;
+  d.body.dataset.dashboardPresentationReady='true';
   w.docmapUser=owner?{id:owner}:null;w.docmapEntitlements=entitlements;w.docmapIsAdmin=admin;
   w.LuriaLocalOwnerStore={
     get ownerId(){return id;},key:base=>id?base+':'+id:null,

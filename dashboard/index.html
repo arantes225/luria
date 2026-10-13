@@ -39,23 +39,28 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
 }
 </style>
   <link rel="preload" href="/assets/fonts/inter/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/dashboard-cards.css?v=2">
+  <link rel="stylesheet" href="/assets/css/dashboard-cards.css?v=3">
   <link rel="stylesheet" href="/assets/css/dashboard-ui-v2.css?v=1">
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
 </head>
-<body data-ui-nav="v2" data-ui-context="study" id="luria-dashboard" data-page="dashboard" data-ui="v2" data-dashboard-view="classic">
+<body data-ui-nav="v2" data-ui-context="study" id="luria-dashboard" data-page="dashboard" data-ui="v2" data-dashboard-view="pending">
 <script src="/assets/js/ui-theme-v2.js?v=20261011-pwa281"></script>
 <script defer src="/assets/js/ui-navigation-v2.js?v=20261013-css1"></script>
   <a class="ui-skip-link" href="/dashboard/#dashboard-content">Ir para o conteúdo</a>
-<script src="/assets/js/dashboard-ui-v2.js?v=20261011-pwa281"></script>
+<script src="/assets/js/dashboard-ui-v2.js?v=20261013-boot1"></script>
   <div class="app-shell">
     <aside id="sidebar" class="sidebar"></aside>
     <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
 
-    <main id="dashboard-content" class="main" tabindex="-1">
+    <main id="dashboard-content" class="main" tabindex="-1" aria-busy="true">
       <div class="page">
 
+        <section id="dashboard-loading" class="dashboard-loading" role="status" aria-live="polite">
+          <strong>Carregando seu painel…</strong>
+          <p>Preparando o modelo escolhido para sua conta.</p>
+          <a href="/dashboard/">Recarregar painel</a>
+        </section>
         <p id="dashboard-apps-status" class="ui-visually-hidden" role="status"></p>
         <section id="dashboard-apps" class="dashboard-apps" aria-labelledby="dashboard-apps-title" hidden>
           <header class="dashboard-apps-heading"><h1 id="dashboard-apps-title">Seus aplicativos</h1><p>Acesse as ferramentas do LURIA e organize sua rotina de estudos.</p></header>
@@ -197,7 +202,7 @@ body[data-page="dashboard"] .topbar .page-heading [data-page-title]{
     });
   })();
   </script>
-<script defer src="/assets/js/dashboard-cards.js?v=2"></script>
+<script defer src="/assets/js/dashboard-cards.js?v=3"></script>
 <script defer src="/assets/js/pwa.js?v=20261013-css1"></script>
 </body>
 </html>

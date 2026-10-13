@@ -6,13 +6,34 @@
   const cards = [...panel.querySelectorAll("[data-dashboard-app]")];
   const status = document.getElementById("dashboard-apps-status");
   const valid = value => value === "classic" || value === "cards";
+  const ownerStore = window.LuriaLocalOwnerStore;
+  let ownerReady = !ownerStore?.ready || !!ownerStore.ownerId;
+  const loading = document.getElementById("dashboard-loading");
+  const main = document.getElementById("dashboard-content");
+
+  function pending() {
+    body.dataset.dashboardView = "pending";
+    panel.hidden = true;
+    if (loading) loading.hidden = false;
+    main?.setAttribute("aria-busy", "true");
+  }
 
   function show(view) {
     const selected = valid(view) ? view : "classic";
+    // The classic renderer and presentation adapter finish independently.
+    // Do not expose the static/default layout before both have prepared it.
+    if (selected === "classic" && body.dataset.dashboardPresentationReady !== "true") {
+      pending();
+      return;
+    }
     body.dataset.dashboardView = selected;
     panel.hidden = selected !== "cards";
+    if (loading) loading.hidden = true;
+    main?.setAttribute("aria-busy", "false");
   }
   function restore() {
+    // A missing owner during Auth initialization is not a Classic preference.
+    if (!ownerReady && !ownerStore?.ownerId) { pending(); return; }
     show(window.LuriaDashboardPreference?.read());
     if (status) status.textContent = "";
   }
@@ -48,11 +69,12 @@
   window.addEventListener("docmap:access-updated", updateAccess);
   window.addEventListener("luria:owner-changed", () => { restore(); updateAccess(); });
   window.addEventListener("luria:dashboard-layout-changed", restore);
+  window.addEventListener("luria:dashboard-presentation-ready", restore);
   window.addEventListener("pageshow", () => { restore(); updateAccess(); });
   window.addEventListener("storage", event => {
     if (event.key === null || event.key === window.LuriaDashboardPreference?.key()) restore();
   });
   restore();
   updateAccess();
-  window.LuriaLocalOwnerStore?.ready?.then(() => { restore(); updateAccess(); });
+  ownerStore?.ready?.then(() => { ownerReady = true; restore(); updateAccess(); });
 })();

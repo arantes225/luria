@@ -74,6 +74,10 @@
     refineCards(root.parentElement);
     enhanceStreaks(document);
     syncReviews();
+    if (root.dataset.rendered === "true" && body.dataset.dashboardPresentationReady !== "true") {
+      body.dataset.dashboardPresentationReady = "true";
+      window.dispatchEvent(new Event("luria:dashboard-presentation-ready"));
+    }
   }
   function refineCards(root) {
     const agenda = root.querySelector(".dl-agenda-large, .dl-upcoming");
