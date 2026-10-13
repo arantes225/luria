@@ -8,6 +8,14 @@ As apostilas passam a ser criadas e revisadas **em lotes**, com padrão de livro
 
 O fluxo de imagens é **centralizado no Admin**. Não incluir novas imagens clínicas diretamente no HTML, não inserir links de imagens ainda não aprovadas dentro dos capítulos, nem exigir que o administrador visite cada apostila separadamente.
 
+## Gate de autossuficiência antes da publicação
+
+Uma apostila só está pronta quando **um aluno que nunca estudou o assunto consegue aprendê-lo integralmente e enfrentar questões de residência apenas com este caderno**. Não depender de outros livros, cursos, apostilas ou buscas para completar explicações essenciais; bibliografia e links são fontes de verificação e leitura adicional facultativa.
+
+Para cada tema, exigir **matriz de cobertura com âncoras internas** (conceitos necessários, fisiopatologia, sinais clínicos, diagnóstico e interpretação de testes, diferenciais, condutas com justificativa e alternativas, riscos, complicações e seguimento) e **teste com questões representativas**. O revisor deve conseguir justificar cada resposta pelo texto e pelos esquemas da própria apostila. Se uma pergunta importante exigir conteúdo externo, preencher a lacuna no ponto correspondente e repetir o teste. Não aprovar só porque há 60.000 caracteres; proibir reexplicações redundantes e preservar recursos visuais didáticos.
+
+A avaliação de autossuficiência requer julgamento clínico/editorial e não pode ser certificada apenas pelo validador automático de extensão.
+
 ## Fluxo
 
 1. Preparar um **lote de 5 a 10 apostilas** em JSON, cada uma com definição, mecanismo, classificação, diagnóstico completo, diferenciais, tratamento, complicações, seguimento e situações especiais relevantes. Haverá temas mais curtos e temas muito extensos. Preferir fontes nacionais vigentes, sociedades médicas e atualizações internacionais.
@@ -16,7 +24,7 @@ O fluxo de imagens é **centralizado no Admin**. Não incluir novas imagens clí
 4. Gerar um **manifesto único das candidatas de imagem**: `apostilas/_imagens-candidatas-ultimo-lote.json`. Cada registro informa apostila, seção, chave única, fonte, licença, legenda e URL de prévia. Uma candidata de imagem não é conteúdo publicado.
 5. Abrir **Admin → Imagens para aprovação → Apostilas**; selecionar o arquivo JSON, importar, filtrar por apostila e aprovar ou rejeitar candidatas em grupos de até 25. Conferir autoria, licença, fidelidade clínica, legibilidade e tamanho antes de aprovar.
 6. A imagem inédita só aparece na apostila **após a aprovação** pelo fluxo existente. Na aprovação, o backend otimiza para no máximo **110 KiB** e coloca o item na seção selecionada. Imagem que já recebeu aprovação anterior pode reutilizar o arquivo previamente validado (regra existente da fila).
-7. Rodar `node scripts/audit-apostilas-60k.mjs --json`, `node scripts/audit-apostilas-batch.cjs --json` e `node scripts/check-syntax.cjs` para auditar o lote completo. A auditoria de comprimento e marcadores **não substitui revisão médica**; verificar indicações, doses, contraindicações e diretrizes caso a caso.
+7. Rodar `node scripts/audit-apostilas-60k.mjs --json`, `node scripts/audit-apostilas-batch.cjs --json` e `node scripts/check-syntax.cjs` para auditar o lote completo. Depois aplicar a **matriz de cobertura e o teste de resolução por conteúdo interno** definidos acima; a auditoria de comprimento e marcadores **não substitui revisão médica** nem comprova autossuficiência.
 8. Evitar alterações globais sem revisar CSS/PWA: `assets/css/apostila-luria-book.css` é compartilhado, e os conteúdos aprovados devem continuar acessíveis e legíveis no celular.
 
 ## Entrada JSON do gerador
