@@ -14,6 +14,9 @@
   };
   const icon = (paths) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
   const menuIcon = icon('<path d="M4 6h16M4 12h16M4 18h16"/>');
+  const closeIcon = icon('<path d="m6 6 12 12M18 6 6 18"/>');
+  const collapseIcon = icon('<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 3v18m7-12-3 3 3 3"/>');
+  const expandIcon = icon('<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 3v18m4-12 3 3-3 3"/>');
   const sparkles = icon('<path d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"/><path d="m20 2 .6 1.4L22 4l-1.4.6L20 6l-.6-1.4L18 4l1.4-.6L20 2Z"/>');
   const flame = icon('<path d="M12 3c1 4-3 5-3 8 0 1 .5 2 1.5 2.5C11 11 13 10 13 8c4 3 6 5 6 8a7 7 0 0 1-14 0c0-3 2-5 4-7-.5 2 0 3 1 4"/>');
   const focusable = root => [...(root?.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled])') || [])]
@@ -166,7 +169,13 @@
     const trigger = document.getElementById('menu-open');
     if (workHub) return;
     const host = narrow.matches && !body.classList.contains('sidebar-open') ? bar : top;
-    if (host && trigger && (trigger.parentElement !== host || trigger !== host.firstElementChild)) host.prepend(trigger);
+    if (host === top && top && trigger) {
+      let label = top.querySelector(".ui-sidebar-label");
+      if (!label) { label = document.createElement("span"); label.className = "ui-sidebar-label"; label.textContent = "Menu"; }
+      label.hidden = !narrow.matches && body.dataset.uiSidebar === "collapsed";
+      if (top.firstElementChild !== label) top.prepend(label);
+      if (trigger.parentElement !== top || top.lastElementChild !== trigger) top.append(trigger);
+    } else if (host && trigger && (trigger.parentElement !== host || trigger !== host.firstElementChild)) host.prepend(trigger);
   }
   function syncDrawer() {
     const sidebar = document.getElementById("sidebar");
@@ -200,7 +209,13 @@
     restorePageInteraction();
     set(trigger, "aria-expanded", narrow.matches ? open : body.dataset.uiSidebar !== "collapsed");
     set(trigger, "aria-controls", "sidebar");
+    const toggleState = narrow.matches ? (open ? "close" : "menu") : (body.dataset.uiSidebar === "collapsed" ? "expand" : "collapse");
+    if (trigger && trigger.dataset.uiToggleState !== toggleState) {
+      trigger.innerHTML = {menu:menuIcon,close:closeIcon,expand:expandIcon,collapse:collapseIcon}[toggleState];
+      trigger.dataset.uiToggleState = toggleState;
+    }
     set(trigger, "aria-label", narrow.matches ? (open ? "Fechar navegação" : "Abrir navegação") : (body.dataset.uiSidebar === "collapsed" ? "Expandir navegação" : "Recolher navegação"));
+    set(trigger, "title", trigger?.getAttribute("aria-label") || "Menu");
     if (open && !drawerOpen) focusable(sidebar)[0]?.focus();
     if (!open && drawerOpen) (drawerTrigger?.isConnected ? drawerTrigger : trigger)?.focus();
     drawerOpen = open;
