@@ -4229,7 +4229,7 @@ function renderImportPreview(
 async function parseSpreadsheetImport(
   file
 ) {
-  await window.LuriaLazyVendors.ensure("xlsx");
+  await window.LuriaLazyVendors.ensureSpreadsheet(file?.name);
 
   const buffer =
     await file.arrayBuffer();
