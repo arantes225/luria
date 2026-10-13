@@ -2605,7 +2605,6 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   body[data-ui-nav="v2"] .main::-webkit-scrollbar {width:8px!important;}
   body[data-ui-nav="v2"] .main::-webkit-scrollbar-track {background:transparent!important;}
   body[data-ui-nav="v2"] .main::-webkit-scrollbar-thumb {border:2px solid transparent!important;background-clip:padding-box!important;border-radius:999px!important;}
-  @media(min-width:981px) {body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) #sidebar .sidebar-top {display:none!important;}}
   @media(max-width:980px) {body[data-ui-nav="v2"] {--ui-frame-gap:4px;--ui-frame-radius:18px;--ui-nav-height:64px;}}
   /* Same frame for each right-hand item; retain the existing controls and popups. */
   body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .topbar :is(#luria-alex-topbar,#luria-pomodoro-toggle,#luria-notification-toggle,#luria-profile-toggle), body[data-ui-nav="v2"]:is([data-ui-context="study"],[data-ui-work="v2"],[data-ui-admin="v2"]) .ui-topbar-streak {box-sizing:border-box!important;border:1px solid var(--color-shell-control-border)!important;background:var(--color-shell-control)!important;border-radius:10px!important;}
@@ -2659,6 +2658,7 @@ body[data-ui="v2"][data-ui-appearance="dark"] {color-scheme:dark;}
   body[data-ui-nav="v2"] #sidebar [data-sidebar-streak-card], body[data-ui-nav="v2"] #sidebar .luria-mode-footer-switch {display:none!important;}
   body[data-ui-nav="v2"] #sidebar .sidebar-footer {height:auto!important;min-height:0!important;padding-top:.75rem!important;}
   body[data-ui-nav="v2"] #sidebar-close {display:none!important;}
+  body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] #sidebar .sidebar-top {justify-content:center!important;}
   body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] #sidebar .brand-copy, body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] #sidebar nav a > span:not(.nav-icon), body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] #sidebar .work-pcr-copy {display:none!important;}
   body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] #sidebar .brand, body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] #sidebar nav a {justify-content:center!important;padding:.625rem 0!important;gap:0!important;}
   body[data-ui-nav="v2"][data-ui-sidebar="collapsed"] #sidebar .nav-group-label {font-size:0!important;}
