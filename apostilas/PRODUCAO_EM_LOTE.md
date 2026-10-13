@@ -16,9 +16,27 @@ Para cada tema, exigir **matriz de cobertura com âncoras internas** (conceitos 
 
 A avaliação de autossuficiência requer julgamento clínico/editorial e não pode ser certificada apenas pelo validador automático de extensão.
 
+## Etapa zero — leitura comparativa no Google Drive (obrigatória)
+
+**Antes de qualquer produção ou edição de apostila, pesquisar e abrir ao menos uma apostila correlata no Google Drive, priorizando materiais do Estratégia MED com autoria realmente identificada.** Conferir sumário, abrangência, profundidade, fluxogramas, quadros, imagens, casos e técnica de exposição. Abrir também uma apostila LURIA já padronizada, para não quebrar a identidade visual da plataforma. Se nenhum material semelhante estiver acessível, interromper e solicitar acesso; não assumir que a busca por nome equivale a ter lido a fonte.
+
+Preencher o registro comparativo antes de alterar o HTML:
+
+| Campo | Registro exigido |
+| --- | --- |
+| Apostila LURIA | Tema e caminho do arquivo |
+| Material do Drive consultado | Nome, link e autoria institucional confirmada (ou não identificada) |
+| Consulta | Data e partes realmente examinadas |
+| Estrutura pedagógica | Tópicos, tabelas, imagens, fluxos, casos e extensão relativa |
+| Lacunas da LURIA | Conceitos ausentes, ensino insuficiente, diagnóstico, condutas, exceções e referências |
+| Aplicação original | O que será incluído/melhorado sem cópia de texto, imagens, tabelas ou identidade de terceiros |
+| Verificação de saída | 60K úteis; autossuficiência; deduplicação; diretrizes atuais; testes e layout desktop/PWA |
+
+O comparativo serve para **não esquecer matérias e entregar qualidade superior**, nunca como autorização para reproduzir material protegido por direitos autorais. Material do Drive é benchmarking; validação clínica exige fontes primárias atuais. Novas imagens clínicas só entram após revisão e aprovação no Admin.
+
 ## Fluxo
 
-1. Preparar um **lote de 5 a 10 apostilas** em JSON, cada uma com definição, mecanismo, classificação, diagnóstico completo, diferenciais, tratamento, complicações, seguimento e situações especiais relevantes. Haverá temas mais curtos e temas muito extensos. Preferir fontes nacionais vigentes, sociedades médicas e atualizações internacionais.
+1. Após a **etapa zero registrada para cada tema**, preparar um **lote de 5 a 10 apostilas** em JSON, cada uma com definição, mecanismo, classificação, diagnóstico completo, diferenciais, tratamento, complicações, seguimento e situações especiais relevantes. Haverá temas mais curtos e temas muito extensos. Preferir fontes nacionais vigentes, sociedades médicas e atualizações internacionais.
 2. Para os novos livros, usar `scripts/build-apostilas-batch.cjs --input lote.json --dry-run`. O validador não aceita capítulos sem desenvolvimento clínico, poucos capítulos, ausência de referências ou imagens embutidas.
 3. Publicar os textos aprovados por um lote único (`node scripts/build-apostilas-batch.cjs --input lote.json`). A execução não sobrescreve apostilas existentes; `--overwrite` é explícito e exige cuidado para não perder conteúdo já revisado.
 4. Gerar um **manifesto único das candidatas de imagem**: `apostilas/_imagens-candidatas-ultimo-lote.json`. Cada registro informa apostila, seção, chave única, fonte, licença, legenda e URL de prévia. Uma candidata de imagem não é conteúdo publicado.
