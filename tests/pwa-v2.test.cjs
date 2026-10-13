@@ -26,7 +26,7 @@ test('installed v2 uses web responsive CSS instead of obsolete standalone overri
   assert.equal(document.documentElement.classList.contains('pwa-standalone'), false);
   assert.equal(document.documentElement.dataset.pwa, 'standalone');
   assert.equal(document.getElementById('luria-pwa-v2-safe-area'),null);
-  assert.match(fs.readFileSync('assets/css/ui-v2-foundations.css','utf8'), /safe-area-inset-top/);
+  assert.match(fs.readFileSync('assets/css/ui-app.css','utf8'), /safe-area-inset-top/);
   assert.doesNotMatch(document.querySelector('meta[name="viewport"]').content, /user-scalable=no|maximum-scale=1/);
   const click = new dom.window.MouseEvent('dblclick', { bubbles: true, cancelable: true });
   document.getElementById('action').dispatchEvent(click);
@@ -80,7 +80,7 @@ test('mobile drawer restores button interaction even with a hidden persistent ov
 
 test('service worker preloads v2 assets without discarding version query identity', () => {
   const sw = fs.readFileSync('service-worker.js', 'utf8');
-  for (const asset of ['ui-v2-foundations.css', 'ui-navigation-v2.css', 'education-ui-v2.css', 'ui-navigation-v2.js', 'pwa.js']) {
+  for (const asset of ['ui-app.css', 'education-ui-v2.css', 'ui-navigation-v2.js', 'pwa.js']) {
     assert.ok(sw.includes('/assets/' + (asset.endsWith('.js') ? 'js/' : 'css/') + asset));
   }
   assert.doesNotMatch(sw, /ignoreSearch:\s*true/);
@@ -112,7 +112,7 @@ test('installed PWA actively checks and offers current service worker on resume'
   assert.match(pwaSource, /luria-pwa-update-action/);
   assert.match(pwaSource, /updateViaCache:\s*"none"/);
   const worker = fs.readFileSync('service-worker.js', 'utf8');
-  assert.match(worker, /luria-pwa-css-unified-20261013/);
+  assert.match(worker, /luria-pwa-css-consolidated-20261013/);
 });
 
 test('hidden search overlays cannot hold the dashboard inert', () => {

@@ -7,7 +7,7 @@ const { workerFixture, resource } = require('./fixtures/service-worker.cjs');
 test('public resources are fetched anonymously, stored and recovered offline by exact URL', async () => {
   let online = true;
   const f = workerFixture({ fetch: async req => { if (!online) throw Error('offline'); return resource(req, 'current public bytes'); } });
-  for (const url of ['/assets/css/ui-v2-foundations.css?v=3', '/assets/js/app.js?v=release',
+  for (const url of ['/assets/css/ui-app.css?v=2', '/assets/js/app.js?v=release',
     '/assets/fonts/inter/InterVariable.woff2', '/assets/vendor/library.wasm', '/manifest.webmanifest?v=5']) {
     let result = await f.run(url); await result.done();
     assert.equal(await result.response.text(), 'current public bytes');
@@ -80,7 +80,7 @@ for (const headers of [
   { Vary: 'Authorization' }, { Vary: 'Cookie' }, { Vary: '*' }, { 'Content-Type': 'application/json' },
 ]) {
   test(`non-cacheable response is returned online but never stored: ${JSON.stringify(headers)}`, async () => {
-    const url = '/assets/css/ui-v2-foundations.css?v=2';
+    const url = '/assets/css/ui-app.css?v=2';
     const f = workerFixture({ fetch: async req => resource(req, 'network body', headers) });
     const result = await f.run(url); await result.done();
     assert.equal(await result.response.text(), 'network body');
@@ -122,7 +122,7 @@ test('temporary server failure preserves exact offline copy, access denial does 
 
 test('F01: old static plain URL/new runtime v2 cannot satisfy a different offline version', async () => {
   const f = workerFixture();
-  const base = '/assets/css/ui-v2-foundations.css';
+  const base = '/assets/css/ui-app.css';
   await f.seed(f.STATIC_CACHE, base, resource(base, 'old static'));
   await f.seed(f.RUNTIME_CACHE, base + '?v=2', resource(base, 'new runtime'));
   for (const suffix of ['?v=3', '?v=1', '?v=2&extra=1']) {
@@ -270,8 +270,8 @@ test('APP_SHELL contains existing public files and exact current foundational CS
     assert.ok(fs.existsSync(path.resolve(__dirname, '..', file)), file);
     assert.equal(f.context.publicResource(f.request(url)), true, url);
   }
-  assert.ok(f.APP_SHELL.includes('/assets/css/ui-v2-foundations.css?v=3'));
-  assert.ok(f.APP_SHELL.includes('/assets/css/ui-app.css?v=1'));
-  assert.ok(!f.APP_SHELL.includes('/assets/css/ui-v2-foundations.css'));
+  assert.ok(f.APP_SHELL.includes('/assets/css/ui-app.css?v=2'));
+  assert.ok(!f.APP_SHELL.some(url=>/ui-v2-foundations|ui-navigation-v2\.css|work-navigation\.css|ui-shell-controls|ui-components-v2/.test(url)));
+  assert.ok(!f.APP_SHELL.includes('/assets/css/ui-app.css'));
   assert.ok(!f.APP_SHELL.includes('/assets/js/app.js'));
 });

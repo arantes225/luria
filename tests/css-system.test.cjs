@@ -13,10 +13,11 @@ test('all application pages share a valid CSS entrypoint and imports resolve',()
 test('common foundation loads once and work/PCR priorities are explicit',()=>{
   for(const page of ['dashboard/index.html','flashcards/index.html','mini-osce/index.html','admin.html','trabalho/pcr/index.html']){
     const styles=stylesForPage(page);
-    assert.equal(styles.filter(p=>p.includes('/ui-v2-foundations.css?')).length,1,page);
-    assert.equal(styles.filter(p=>p.includes('/ui-navigation-v2.css?')).length,1,page);
+    assert.equal(styles.filter(p=>p.includes('/ui-app.css?')).length,1,page);
+    assert.equal(styles.filter(p=>/ui-v2-foundations|ui-navigation-v2|work-navigation/.test(p)).length,0,page);
   }
   const entry=postcss.parse(fs.readFileSync('assets/css/ui-app.css','utf8'));
+  assert.equal(entry.nodes.filter(n=>n.type==='atrule'&&n.name==='import').length,0,'shared base must not request separate stylesheets');
   const layers=entry.nodes.find(n=>n.type==='atrule'&&n.name==='layer'&&!n.nodes).params.split(',').map(x=>x.trim());
   assert(layers.indexOf('luria-work-navigation')<layers.indexOf('luria-ui-navigation'));
   assert(layers.indexOf('luria-pcr-ui')<layers.indexOf('luria-work-resets'));
@@ -35,5 +36,5 @@ test('page UI styles do not own generic application shell geometry',()=>{
 test('installed safe-area styles are static, detection keeps JS free of layout CSS',()=>{
   const pwa=fs.readFileSync('assets/js/pwa.js','utf8');
   assert.doesNotMatch(pwa,/createElement\(["']style["']\)/);
-  assert.match(fs.readFileSync('assets/css/ui-v2-foundations.css','utf8'),/safe-area-inset-top/);
+  assert.match(fs.readFileSync('assets/css/ui-app.css','utf8'),/safe-area-inset-top/);
 });

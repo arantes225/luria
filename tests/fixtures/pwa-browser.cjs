@@ -20,7 +20,7 @@ async function controlledFailure(value){await fetch('/__pwa_control?failure='+va
 let registration;
 document.querySelector('#register').addEventListener('click',async()=>{try{
   output.textContent='Registrando';
-  await write('luria-pwa-v281-mobile-flow-static','/assets/css/ui-v2-foundations.css?v=stage75','legacy');
+  await write('luria-pwa-v281-mobile-flow-static','/assets/css/ui-app.css?v=stage75','legacy');
   await write('luria-weekly-content-v1','/content/weekly/old.json','{}','application/json');
   registration=await navigator.serviceWorker.register('/service-worker.js',{scope:'/',updateViaCache:'none'});
   await navigator.serviceWorker.ready;await waitForController(()=>!!navigator.serviceWorker.controller);
@@ -31,21 +31,21 @@ document.querySelector('#register').addEventListener('click',async()=>{try{
   document.querySelector('#run').disabled=false;
 }catch(error){output.textContent+='\\nFAIL: '+error.message;}});
 document.querySelector('#run').addEventListener('click',async()=>{try{
-  const css='/assets/css/ui-v2-foundations.css?v=stage75';
+  const css='/assets/css/ui-app.css?v=stage75';
   assert((await fetch(css)).status===200,'PASS: CSS público online');
   const js='/assets/js/weekly-content.js?v=stage75';
   assert((await fetch(js)).status===200,'PASS: JavaScript público online');
   const page=await fetch('/flashcards/');assert(page.status===200&&await page.text(),'PASS: HTML público online');
   const current='luria-pwa-v282-cache-security';
-  await write(current+'-static','/assets/css/ui-v2-foundations.css','old');
-  await write(current+'-runtime','/assets/css/ui-v2-foundations.css?v=stage75-new','new');
+  await write(current+'-static','/assets/css/ui-app.css','old');
+  await write(current+'-runtime','/assets/css/ui-app.css?v=stage75-new','new');
   // Disable HTTP cache for synthetic account requests: this suite isolates the
   // worker's Cache Storage, not the server/browser's separate HTTP cache.
-  assert(await (await fetch('/assets/css/ui-v2-foundations.css?v=stage75',{cache:'no-store',headers:{Authorization:'Bearer synthetic-A'}})).text()==='synthetic-A','PASS: resposta autenticada A preservada online');
-  assert(await (await fetch('/assets/css/ui-v2-foundations.css?v=stage75',{cache:'no-store',headers:{Authorization:'Bearer synthetic-B'}})).text()==='synthetic-B','PASS: usuário B não recebe resposta A');
-  await fetch('/assets/css/ui-v2-foundations.css?token=synthetic');
-  await fetch('/assets/css/ui-v2-foundations.css?v=stage75-private');
-  await fetch('/assets/css/ui-v2-foundations.css?v=stage75-no-store');
+  assert(await (await fetch('/assets/css/ui-app.css?v=stage75',{cache:'no-store',headers:{Authorization:'Bearer synthetic-A'}})).text()==='synthetic-A','PASS: resposta autenticada A preservada online');
+  assert(await (await fetch('/assets/css/ui-app.css?v=stage75',{cache:'no-store',headers:{Authorization:'Bearer synthetic-B'}})).text()==='synthetic-B','PASS: usuário B não recebe resposta A');
+  await fetch('/assets/css/ui-app.css?token=synthetic');
+  await fetch('/assets/css/ui-app.css?v=stage75-private');
+  await fetch('/assets/css/ui-app.css?v=stage75-no-store');
   await fetch('/admin/');await fetch('/api/private.json');
   let keys=await allKeys();
   assert(!keys.some(item=>['token=','stage75-private','stage75-no-store','/admin/','/api/'].some(value=>item.url.includes(value))),'PASS: tokens, Admin, API, private e no-store ausentes do Cache Storage');
@@ -55,13 +55,13 @@ document.querySelector('#run').addEventListener('click',async()=>{try{
   assert((await fetch(css)).status===200,'PASS: CSS exato após falha de rede');
   assert((await fetch(js)).status===200,'PASS: JavaScript exato após falha de rede');
   assert((await fetch('/flashcards/')).status===200,'PASS: HTML exato após falha de rede');
-  assert(await (await fetch('/assets/css/ui-v2-foundations.css?v=stage75-new')).text()==='new','PASS: versão runtime exata preservada');
-  assert((await fetch('/assets/css/ui-v2-foundations.css?v=stage75-other')).status===503,'PASS: F01 — versão ausente não usa CSS antigo');
+  assert(await (await fetch('/assets/css/ui-app.css?v=stage75-new')).text()==='new','PASS: versão runtime exata preservada');
+  assert((await fetch('/assets/css/ui-app.css?v=stage75-other')).status===503,'PASS: F01 — versão ausente não usa CSS antigo');
   assert((await fetch('/assets/js/missing-stage75.js')).status===503,'PASS: recurso ausente recebe erro controlado');
   let privateOffline=false;try{await fetch(css,{cache:'no-store',headers:{Authorization:'Bearer synthetic-B'}});}catch{privateOffline=true;}
   assert(privateOffline,'PASS: requisição privada offline não recebe fallback público');
   await controlledFailure(false);
-  assert((await fetch('/assets/css/ui-v2-foundations.css?v=stage75-recovery')).status===200,'PASS: recuperação da rede');
+  assert((await fetch('/assets/css/ui-app.css?v=stage75-recovery')).status===200,'PASS: recuperação da rede');
   assert(!document.body.dataset.cspError,'PASS: sem violações CSP no harness com política copiada do Dashboard');
   document.querySelector('#update').disabled=false;
 }catch(error){output.textContent+='\\nFAIL: '+error.message;await controlledFailure(false);}});

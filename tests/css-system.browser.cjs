@@ -1,11 +1,10 @@
-const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict');
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require('playwright');
 const root=path.resolve(__dirname,'..');
 const paths=[];
 function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){if(['.git','node_modules','docs','browser-results'].includes(e.name))continue;const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.html')&&/<body[^>]*data-ui-nav="v2"/.test(fs.readFileSync(p,'utf8')))paths.push(path.relative(root,p).replaceAll('\\','/'));}}
 walk(root);
 const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript','.woff2':'font/woff2','.svg':'image/svg+xml','.png':'image/png','.json':'application/json'};
-const server=http.createServer((req,res)=>{let file=path.join(root,decodeURIComponent(req.url.split('?')[0]));if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');if(!fs.existsSync(file)){res.writeHead(404);return res.end();}res.setHeader('Content-Type',mime[path.extname(file)]||'application/octet-stream');fs.createReadStream(file).pipe(res);});
 const fixture=fs.readFileSync(path.join(root,'tests/fixtures/supabase-browser.js'),'utf8')
  .replace('rpc:async(name,args={})=>{','rpc:async(name,args={})=>{if(name==="luria_bootstrap")return{data:null,error:null};if(name==="admin_pin_status")return{data:{has_pin:true},error:null};')
  .replace('if(name==="is_admin")return{data:false,error:null};','if(name==="is_admin")return{data:true,error:null};');
@@ -13,16 +12,26 @@ const failures=[],results=[];
 const targetDir=process.env.CSS_BROWSER_RESULTS||path.join(root,'browser-results/css-system');
 fs.mkdirSync(targetDir,{recursive:true});
 (async()=>{
-await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
-const base='http://127.0.0.1:'+server.address().port;
+const base='https://luria.test';
 const browser=await chromium.launch(process.env.PLAYWRIGHT_EXECUTABLE_PATH?{executablePath:process.env.PLAYWRIGHT_EXECUTABLE_PATH}:{});
 try{
  const context=await browser.newContext({viewport:{width:1440,height:900},serviceWorkers:'block'});
+ // All requests use local source files; no application or Auth traffic leaves the test.
+ await context.route('**/*',async route=>{
+  const url=new URL(route.request().url());
+  if(url.origin!==base)return route.abort();
+  let file=path.resolve(root,'.'+decodeURIComponent(url.pathname));
+  if(!file.startsWith(root+path.sep))return route.fulfill({status:403,body:''});
+  if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');
+  if(!fs.existsSync(file))return route.fulfill({status:404,body:''});
+  return route.fulfill({contentType:mime[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});
+ });
  await context.addInitScript(()=>localStorage.setItem('luria-admin-pin-unlocked-until',String(Date.now()+300000)));
  await context.route('**/assets/js/supabase.js*',r=>r.fulfill({contentType:'application/javascript',body:fixture}));
  await context.route('**/assets/js/onboarding.js*',r=>r.fulfill({contentType:'application/javascript',body:''}));
  const page=await context.newPage();let missing=[];
  page.on('response',r=>{if(r.status()>=400&&r.url().includes('/assets/css/'))missing.push(r.url())});
+ page.on('requestfailed',r=>{if(r.url().includes('/assets/css/'))missing.push(r.url()+': '+r.failure()?.errorText)});
  async function visit(url){missing=[];await page.goto(base+url,{waitUntil:'domcontentloaded'});await page.locator('body.app-ready').waitFor({timeout:4000}).catch(()=>{});await page.waitForTimeout(200);assert.deepEqual(missing,[],url+' CSS requests');}
  async function bounds(label){const m=await page.evaluate(()=>{const bar=document.querySelector('.topbar'),main=document.querySelector('.main'),s=getComputedStyle(document.body);return{width:document.documentElement.scrollWidth,viewport:innerWidth,barHeight:bar?.getBoundingClientRect().height,font:getComputedStyle(bar||document.body).fontFamily,padding:main?getComputedStyle(main.querySelector('.page')||main).padding:null,base:[...document.querySelectorAll('link[rel=stylesheet]')].filter(x=>x.href.includes('/ui-app.css?')).length,text:s.getPropertyValue('--text').trim(),themeText:s.getPropertyValue('--color-text-primary').trim()};});assert(m.width<=m.viewport+2,label+' horizontal overflow');assert.equal(m.base,1,label+' CSS base');assert(m.font.includes('Luria Inter'),label+' common font');assert.equal(m.text,m.themeText,label+' themed legacy tokens');return m;}
  for(const file of paths){try{await visit('/'+file.replace(/index\.html$/,''));const metrics=await bounds(file);results.push({file,...metrics});}catch(error){failures.push({file,error:error.message})}if((results.length+failures.length)%10===0)console.log('CSS pages',results.length+failures.length,'/',paths.length);}
@@ -52,5 +61,5 @@ try{
  fs.writeFileSync(path.join(targetDir,'results.json'),JSON.stringify({pages:paths.length,results,failures},null,2));
  assert.deepEqual(failures,[]);console.log('PASS',paths.length,'pages, 3 responsive sizes, four palettes, drawer/profile controls and emergency landscape');
  await context.close();
-}finally{await browser.close();server.close();}
-})().catch(error=>{console.error(error);server.close();process.exitCode=1});
+}finally{await browser.close();}
+})().catch(error=>{console.error(error);process.exitCode=1});
