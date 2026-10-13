@@ -100,3 +100,11 @@
 - Mantida a formatação LURIA e acrescentado item de navegação; nenhuma imagem previamente aprovada foi removida.
 - Estimativa de texto visível do artigo: **38.579 → 53.170 caracteres**, ainda sujeita a validação estrita, conferência científica e testes PWA. Registro inicialmente não localizado na tabela \`public.apostilas\`; atualização no GitHub não garante visibilidade no catálogo.
 
+
+
+### Crescimento intrauterino reduzido e aumentado — expansão em capítulos separados
+- Arquivo \`apostilas/crescimento-intrauterino-reduzido-aumentado/index.html\` atualizado na branch \`main\`, commit \`ad77bc3bf532bf3a64891deae5b4b8861ba1728d\`.
+- Dois blocos completos e separados: **16. RCF/PIG**, com datação, Doppler, etiologia e manejo diferencial de RCF precoce/tardia; **17. GIG/macrossomia**, com crescimento metabólico, erro na estimativa ultrassonográfica, distócia de ombro, decisões intraparto e adaptação neonatal.
+- Fontes complementares FIGO 2021 (DOI 10.1002/ijgo.13522) e ACOG Macrosomia PB 216, reafirmado em 2026. Novas âncoras do índice incluídas; materiais de curadoria e **2 imagens aprovadas / 8 pendentes** foram preservados sem mudança de estado.
+- Texto visível do artigo estimado **27.128 → 46.471 caracteres**, com verificação editorial estrita e testes PWA ainda pendentes.
+
