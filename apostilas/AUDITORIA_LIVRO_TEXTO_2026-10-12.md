@@ -91,3 +91,12 @@
 - Fontes complementares NICE NG25 e FEBRASGO para uso racional de tocólise. Foi preservado o formato compacto do renderer \`content.json\` e a estrutura de índice \`o\`, com novo item antes de referências. Dados de figuras/curadoria já presentes no JSON foram mantidos.
 - Contagem **preliminar** (blocos de texto incluindo marcações e rótulos) após expansão superior a 52 mil caracteres; falta executar o auditor estrito e revisar qualidade/layout/links na página servida.
 
+
+
+### Câncer de Mama — expansão aplicada no HTML
+- Arquivo \`apostilas/cancer-de-mama/index.html\` atualizado na branch \`main\`, commit \`bbb1ded8899f2d99032c768b4376b720aa0590b6\`.
+- Novo módulo integrador com oito seções didáticas: unidade ductolobular e invasão, receptores hormonais/HER2, concordância tripla, diferença entre rastreamento e diagnóstico, conservação da mama e radioterapia, avaliação axilar, neoadjuvância/adjuvância e caso comparativo.
+- Atualizado e reforçado o **rastreamento bienal de 50 a 74 anos** conforme Ministério da Saúde (2025), com referência ao **PCDT de câncer de mama atualizado em maio de 2026**.
+- Mantida a formatação LURIA e acrescentado item de navegação; nenhuma imagem previamente aprovada foi removida.
+- Estimativa de texto visível do artigo: **38.579 → 53.170 caracteres**, ainda sujeita a validação estrita, conferência científica e testes PWA. Registro inicialmente não localizado na tabela \`public.apostilas\`; atualização no GitHub não garante visibilidade no catálogo.
+
