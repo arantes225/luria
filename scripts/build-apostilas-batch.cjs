@@ -45,9 +45,21 @@ function buildBook(template,entry){
     sections.push('<section class="book-section" id="'+esc(id)+'"><h2>'+esc(title)+'</h2>'+
       section.body_html+'</section>');
   }
+  // Bloqueia cópias literais de parágrafos longos; paráfrases redundantes ainda exigem revisão editorial.
+  const seenParagraphs=new Set();
+  for(const section of entry.sections){
+    const matches=String(section.body_html).matchAll(/<p\\b[^>]*>([\\s\\S]*?)<\\/p>/gi);
+    for(const match of matches){
+      const normalized=match[1].replace(/<[^>]+>/g," ").replace(/&(?:nbsp|amp|lt|gt|quot);/gi," ").replace(/\\s+/g," ").trim().toLowerCase();
+      if(normalized.length<180)continue;
+      if(seenParagraphs.has(normalized))
+        throw Error(slug+": parágrafo didático longo repetido em "+section.id+"; consolidar a explicação em vez de inflar a contagem");
+      seenParagraphs.add(normalized);
+    }
+  }
   const visible=textParts.join(" ");
-  if(visible.length<30000)
-    throw Error(slug+": conteúdo insuficiente ("+visible.length+" caracteres úteis; mínimo editorial 30.000)");
+  if(visible.length<60000)
+    throw Error(slug+": conteúdo insuficiente ("+visible.length+" caracteres úteis; mínimo editorial 60.000)");
   if(!/(caso cl[ií]nico|quest[aã]o comentada|caso integrador|vinheta cl[ií]nica)/i.test(visible))
     throw Error(slug+": incluir casos clínicos e respostas comentadas no conteúdo");
   const references=entry.references.map(ref=>{
