@@ -215,3 +215,18 @@ test("Imagens sem licenca nao aparecem e exames reais licenciados substituem som
   const fs=clim.q.find(x=>x[0]==="fisiopatologia");
   assert.ok(fs?.[2]?.some(x=>x[0]==="x"&&x[1].includes("Fluxo fisiopatológico autoral LURIA")));
 });
+
+test("Vitalidade fetal preserva exame real licenciado e raciocinio clinico contextualizado",()=>{
+  const html=read("apostilas/avaliacao-vitalidade-fetal/index.html");
+  assert.match(html,/<img[^>]*CTG_Output\.jpg/);
+  assert.match(html,/PhantomSteve/);
+  assert.match(html,/creativecommons\.org\/licenses\/by-sa\/3\.0/);
+  assert.ok(!html.includes("Imagem indisponível."));
+  assert.match(html,/id="decisoes-resolvidas-vitalidade"/);
+  assert.match(html,/href="#decisoes-resolvidas-vitalidade"/);
+  assert.match(html,/10 × 10/);
+  assert.match(html,/8\/10/);
+  assert.match(html,/fluxo diastólico reverso/);
+  assert.match(html,/Oxigênio suplementar não deve ser usado rotineiramente/);
+  assert.match(html,/acog\.org\/clinical\/clinical-guidance\/committee-opinion\/articles\/2021\/06\/indications/);
+});
