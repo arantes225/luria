@@ -520,7 +520,7 @@
     const sexRaw=normalizeLabel(item?.presentation?.sex||"");
     const female=sexRaw==="f" || sexRaw.startsWith("fem");
     if((Number.isFinite(age) && age>=50) || title.includes("idos") || specialty.includes("geri")) {
-      return female ? "/assets/img/plantao/02-mulher-idosa-acordada.webp" : "/assets/img/plantao/10-homem-idoso-acordado.webp";
+      return female ? "/assets/img/plantao/02-mulher-idosa-acordada.webp" : "/assets/img/plantao/luria-homem-idoso-v7-aberto.webp";
     }
     if(specialty.includes("cirurg") || title.includes("trauma") || title.includes("abdominal")) {
       return female ? "/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp" : "/assets/img/plantao/luria-homem-adulto-v7-aberto.webp";
@@ -536,6 +536,7 @@
       "plantao-homem-adulto-acordado-v2-1600x900.webp":{x:50,y:24,scale:2.05},
       "04-mulher-adulta-acordada.webp":{x:50,y:22,scale:2.08},
       "02-mulher-idosa-acordada.webp":{x:50,y:23,scale:2.0},
+      "luria-homem-idoso-v7-aberto.webp":{x:50,y:24,scale:2.02},
       "10-homem-idoso-acordado.webp":{x:50,y:23,scale:2.02},
       "06-menina-acordada.webp":{x:50,y:25,scale:2.12},
       "08-menino-acordado.webp":{x:50,y:25,scale:2.12},
@@ -2804,7 +2805,7 @@
       blinkHalf:"assets/img/plantao pwa/16-mulher-idosa-acordada.webp",
       blinkClosed:"assets/img/plantao pwa/07-mulher-idosa-olhos-fechados.webp"
     },
-    elderlyMan:{awake:"assets/img/plantao pwa/11-homem-idoso-acordado.webp",closed:"assets/img/plantao pwa/12-homem-idoso-olhos-fechados.webp"}
+    elderlyMan:{awake:"/assets/img/plantao/luria-homem-idoso-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-idoso-v7-aberto.webp"}
   };
 
   function isStandalonePwa(){
@@ -2861,6 +2862,7 @@
       const sexRaw=normalizeLabel(state.current?.presentation?.sex||"");
       const female=sexRaw==="f" || sexRaw.startsWith("fem");
 
+      // Idoso V7: foto estável e pálpebras controladas pelo monitor no PWA e web.
       // PWA usa o conjunto vertical próprio; hospital/web usa os assets normais.
       if(isStandalonePwa()){
         const elderlyPair=female ? PWA_PATIENT_IMAGES.elderlyWoman : PWA_PATIENT_IMAGES.elderlyMan;
@@ -2873,10 +2875,10 @@
       return {
         patient_image:female
           ? "/assets/img/plantao/02-mulher-idosa-acordada.webp"
-          : "/assets/img/plantao/10-homem-idoso-acordado.webp",
+          : "/assets/img/plantao/luria-homem-idoso-v7-aberto.webp",
         unconscious_image:female
           ? "/assets/img/plantao/01-mulher-idosa-olhos-fechados.webp"
-          : "/assets/img/plantao/09-homem-idoso-olhos-fechados.webp"
+          : "/assets/img/plantao/luria-homem-idoso-v7-aberto.webp"
       };
     }
 

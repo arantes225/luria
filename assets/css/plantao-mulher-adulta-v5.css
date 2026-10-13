@@ -1,4 +1,4 @@
-/* LURIA · Mulher adulta V5 aprovada: a foto e a cama ficam imóveis.
+/* LURIA · Mulher adulta: imagem V5 aprovada, piscada V8 mais macia: a foto e a cama ficam imóveis.
    Apenas o recorte real dos olhos pisca suavemente e o tórax respira. */
 #plantao-simulator .plantao-scene.luria-woman-v5{position:relative;isolation:isolate;overflow:hidden}
 #plantao-simulator .plantao-scene > .luria-woman-v5-rig[hidden]{display:none!important}
@@ -27,13 +27,18 @@
 #plantao-simulator .luria-woman-v5-rig .luria-woman-v5-eyes{
   left:33.492823%!important;top:11.689692%!important;
   width:17.344498%!important;height:20.191286%!important;
-  opacity:0;animation:luriaWomanV5Blink 5.7s ease-in-out infinite;
+  opacity:0;animation:luriaWomanV5Blink 6.1s ease-in-out infinite;
+  transition:opacity 590ms cubic-bezier(.42,0,.58,1);
 }
 @keyframes luriaWomanV5Blink{
-  0%,44.6%,48.7%,100%{opacity:0}
-  45.3%{opacity:.45}
-  45.9%,47%{opacity:1}
-  47.8%{opacity:.45}
+  0%,42.7%,52.2%,100%{opacity:0}
+  44.3%{opacity:.08}
+  45.5%{opacity:.24}
+  46.6%{opacity:.54}
+  47.5%{opacity:1}
+  48.4%{opacity:.54}
+  49.5%{opacity:.24}
+  50.7%{opacity:.08}
 }
 #plantao-simulator .plantao-scene.luria-woman-v5[data-luria-eyes="closed"] .luria-woman-v5-eyes{
   opacity:1!important;animation:none!important;
