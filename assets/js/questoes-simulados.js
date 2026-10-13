@@ -3826,7 +3826,7 @@ async function ocrQuestionLineRecordsFromCanvas(
   canvas,
   pageNumber
 ) {
-  await window.LuriaLazyVendors.ensure("tesseract");
+  try { await window.LuriaLazyVendors.ensure("tesseract"); } catch { return []; }
 
   if (
     !window.Tesseract
@@ -12841,7 +12841,7 @@ function parseAnswerDigitText(
 
 
 async function createAnswerDigitWorker() {
-  await window.LuriaLazyVendors.ensure("tesseract");
+  try { await window.LuriaLazyVendors.ensure("tesseract"); } catch { return null; }
 
   if (
     !window.Tesseract
