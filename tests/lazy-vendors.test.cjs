@@ -101,7 +101,7 @@ test('All supported page entrypoints defer optional libraries to their import/ex
   ]) {
     const js = source(file);
     for (const name of functions) {
-      const re = new RegExp('async function ' + name + '\\s*\\([\\s\\S]{0,260}?\\)\\s*\\{\\s*await window\\.LuriaLazyVendors\\.ensure');
+      const re = new RegExp('async function ' + name + '\\s*\\([\\s\\S]{0,260}?\\)\\s*\\{\\s*(?:try\\s*\\{\\s*)?await window\\.LuriaLazyVendors\\.ensure');
       assert.match(js, re, file + ': missing on-demand check in ' + name);
     }
   }
