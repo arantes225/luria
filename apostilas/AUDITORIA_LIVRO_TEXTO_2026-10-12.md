@@ -197,3 +197,18 @@ Após rejeição da repetição de figuras, mosaicos de quatro imagens e blocos 
 - **JS de curadoria, commits \`ca43117537f1ad8191b2a7fb52f695b3bf0937a9\` e \`318ed7cee99e08905569b0d69fe08959598fac65\`**: imagens clínicas aprovadas inseridas perto de quadro clínico; images de microscopia perto de diagnóstico; fallback de origem para assets inacessíveis. Correção extra no script global de fallback \`93c4cddbae8fc41b126efea3dac8d13d99dc1698\`.
 - **Imagens clínicas #13 (DermNet candidíase), #15 (DermNet vaginose), #17 (Scientific Archives colo em morango)**: as URLs diretas de imagem não foram acessíveis/estáveis. Os registros **continuam aprovados**, mas o JSONB \`render_mode\` passou a \`source_link\`: o usuário vê descrição didática e link explícito à fonte original, sem imagem quebrada. O #17 passou a apontar diretamente para PDF oficial CC BY na página que contém a figura. **Não declarar que as fotografias estejam hospedadas inline na LURIA**; isso requer cópia local autorizada e realmente verificada.
 - QA estrutural pós-edição: 3 doenças, cada uma com exatamente seis unidades editoriais, índice sem links quebrados/IDs duplicados, 4 imagens HTML distintas, referências no final, extração de texto aproximada em 42.500 caracteres no artigo. Código JavaScript compartilhado e fallback passaram em avaliação sintática; **teste renderizado no desktop/PWA ainda não realizado**.
+
+
+
+### Revisão do conteúdo para prova — 13/10/2026
+
+Solicitação: tornar o caderno **Vulvovaginites** autossuficiente para estudar e fazer questões, no padrão de aprofundamento dos cursinhos do Drive, mantendo leitura digital organizada. O total extraído do artigo está em torno de 67 mil caracteres, incluindo revisão e referências; não usar esse número como validação isolada de qualidade.
+
+- Candidíase: recorrência e classificação complicada (CDC x referências brasileiras), identificação de espécie, <em>C. glabrata</em>, indução/manutenção, manejo de falha e orientações na gestação, complicações locais e caso clínico.
+- Vaginose: interpretação de Amsel e Nugent, recorrência, supressão, gravidez e prematuridade, complicações, distinção PCDT/ACOG 2025, evidência do StepUp e caso de gestante.
+- Tricomoníase: diagnóstico molecular versus microscopia, diferenças CDC/PCDT de doses, gestação/HIV, reinfecção, resistência, reteste e caso de falha por parceria não tratada.
+- Diferenciais: DIV, vaginite aeróbia, síndrome geniturinária da menopausa, dermatoses, vaginose citolítica (evidência controversa) e coexistência de causas.
+- Aprendizado ativo: 6 questões comentadas em painéis expansíveis no fechamento, 4 casos integrados nos capítulos, navegação interna discreta por unidade.
+- Editorial: notas de evidência e casos com estilo padronizado, sem galerias novas nem multiplicação artificial de figuras; índice e bibliografia preservados.
+- **Bug de HTML corrigido:** fechamento faltante na div do fluxograma da fisiologia. HTML validado por pilha de tags após correção; estrutura está balanceada.
+- Pendência: teste de renderização real em site/PWA e teste sistemático contra questões de residência antes de chamar o material de "suficiente".
