@@ -126,3 +126,18 @@ test("Fallback tenta a rota alternativa do mesmo arquivo no Wikimedia Commons",(
     assert.equal(link.getAttribute("rel"),"noopener noreferrer");
   } finally {dom.window.close();}
 });
+
+test("Fallback de exame clínico usa segunda resolução do mesmo arquivo antes do aviso",()=>{
+  const {JSDOM}=require("jsdom");
+  const dom=new JSDOM('<figure><img data-apostila-image-fallback="display-sibling" src="https://media.springernature.com/lw1200/test.png" data-apostila-fallback-url="https://media.springernature.com/lw685/test.png"><p hidden>Prévia indisponível</p></figure>',{url:"https://resibulando.online/apostilas/amenorreia/",runScripts:"outside-only"});
+  try {
+    dom.window.eval(read("assets/js/apostila-image-fallback.js"));
+    const img=dom.window.document.querySelector("img");
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.equal(img.src,"https://media.springernature.com/lw685/test.png");
+    assert.equal(img.nextElementSibling.hidden,true);
+    img.dispatchEvent(new dom.window.Event("error"));
+    assert.equal(img.style.display,"none");
+    assert.equal(img.nextElementSibling.hidden,false);
+  } finally {dom.window.close();}
+});
