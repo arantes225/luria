@@ -31,6 +31,17 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Fontes clínicas de conferência:** Merck Manual Professional, *Physiology of Pregnancy* (revisão 2024); OMS, critérios de anemia (2024); diretrizes nacionais específicas a cotejar antes da conclusão.
 - **Estado:** **EM REVISÃO / NÃO CERTIFICADA**. Faltam benchmark específico, leitura pedagógica completa, auditoria visual desktop/PWA, checagem por questão e revisão final de todas as referências.
 
+## 2026-10-13 — Assistência ao parto, vigilância intraparto e partograma
+
+- **Apostila LURIA:** `apostilas/assistencia-ao-parto/index.html`.
+- **Benchmark efetivamente aberto e lido no Drive:** `Parto.pdf` (mecanismo do parto, planos da pelve, posição e apresentação, períodos clínicos e fórceps) e `Partograma.pdf` (modelo clássico, distócias, linha de alerta e ação). Ambos são resumos breves, **não equivalem a um tratado de parto**.
+- **Procedência:** textos mencionam Maysa Mismetti, mas não há comprovação documental de que sejam publicados por Estratégia MED. Não atribuir essa procedência.
+- **Matriz de diferenças:** a LURIA já aprofunda avaliação materno-fetal, dinâmica, apresentação, mecânica, Labour Care Guide, distócias e questões de fixação. O material comparativo privilegia conceitos curtos e partograma clássico; havia uma figura de partograma hospedada em domínio de terceiros sem direitos documentados, além de explicação que dependia da imagem.
+- **Correção autoral:** excluída a incorporação da figura sem licença. Criados gráfico vetorial original de evolução cervical, tabela temporal com dilatação, estação, dinâmica e FCF, explicação completa com acessibilidade, e distinção explícita entre fase ativa da OMS (~5 cm, Labour Care Guide) e ACOG 2024 (6 cm, critérios de parada com 4/6 h e membranas rotas). Duas imagens de apresentação cefálica do Wikimedia Commons foram verificadas individualmente como domínio público, autoria Mikael Häggström.
+- **Referências clínicas:** OMS, `WHO Labour Care Guide: user's manual` (2020/2021); ACOG, `First and Second Stage Labor Management` (Clinical Practice Guideline nº 8, 2024).
+- **Pendências:** completar teste de autossuficiência para todas as situações comuns e exceções, conferir exaustividade do texto (estimativa anterior abaixo de 60 mil caracteres didáticos úteis), validar todas as afirmações e fontes, rever figuras em navegador desktop e PWA e testar perguntas representativas contra o conteúdo.
+- **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Testes e deploy automáticos não suprem revisão médica/editorial integral.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
