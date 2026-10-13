@@ -39,12 +39,47 @@ test('Concurrent calls for one vendor share a single request', async () => {
   const first = f.window.LuriaLazyVendors.ensure('xlsx');
   const second = f.window.LuriaLazyVendors.ensure(['xlsx']);
   assert.equal(f.scripts.length, 1);
-  assert.equal(f.scripts[0].src, '/assets/vendor/xlsx-0.20.3.js');
-  f.window.XLSX = { read() {} };
+  assert.equal(f.scripts[0].src, '/assets/vendor/xlsx-0.20.3-mini.js');
+  f.window.XLSX = { read() {}, utils: { sheet_to_json() {} } };
   f.scripts[0].onload();
   await Promise.all([first, second]);
   await f.window.LuriaLazyVendors.ensure('xlsx');
   assert.equal(f.scripts.length, 1, 'already-loaded library should be reused');
+});
+
+
+test('SheetJS mini is selected for XLSX, with full parser reserved for legacy XLS/CSV', async () => {
+  const f = fixture();
+  const lightweight = f.window.LuriaLazyVendors.ensureSpreadsheet('Plano Medicina.xlsx');
+  assert.equal(f.scripts.length, 1);
+  assert.equal(f.scripts[0].src, '/assets/vendor/xlsx-0.20.3-mini.js');
+  f.window.XLSX = { read() {}, utils: { sheet_to_json() {} } };
+  f.scripts[0].onload();
+  await lightweight;
+  await f.window.LuriaLazyVendors.ensureSpreadsheet('revisao.XLSX');
+  assert.equal(f.scripts.length, 1);
+  const legacy = f.window.LuriaLazyVendors.ensureSpreadsheet('cronograma_antigo.xls');
+  await Promise.resolve();
+  await Promise.resolve();
+  assert.equal(f.scripts.length, 2);
+  assert.equal(f.scripts[1].src, '/assets/vendor/xlsx-0.20.3.js');
+  f.scripts[1].onload();
+  await legacy;
+  await f.window.LuriaLazyVendors.ensureSpreadsheet('lista.csv');
+  assert.equal(f.scripts.length, 2);
+});
+
+test('If the mini asset fails, full SheetJS is used as fallback', async () => {
+  const f = fixture();
+  const pending = f.window.LuriaLazyVendors.ensureSpreadsheet('teste.xlsx');
+  f.scripts[0].onerror();
+  await Promise.resolve();
+  await Promise.resolve();
+  assert.equal(f.scripts.length, 2);
+  assert.equal(f.scripts[1].src, '/assets/vendor/xlsx-0.20.3.js');
+  f.window.XLSX = { read() {}, utils: { sheet_to_json() {} } };
+  f.scripts[1].onload();
+  await pending;
 });
 
 test('Independent vendor imports stay independent and work with CDN scripts', async () => {
