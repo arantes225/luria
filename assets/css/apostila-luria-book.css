@@ -1,0 +1,362 @@
+.book-page{display:grid;grid-template-columns:196px minmax(0,1fr);gap:14px;align-items:start;padding-bottom:36px}
+    .book-aside{position:sticky;top:8px;align-self:start;display:grid;gap:12px}
+    .book-cover{position:relative;aspect-ratio:240/339;border-radius:18px;overflow:hidden;background:#184888;border:1px solid var(--border);box-shadow:0 12px 30px rgba(15,35,66,.10)}
+    .book-cover img{width:100%;height:100%;object-fit:cover;display:block}.book-cover-copy{position:absolute;left:10%;right:10%;top:41.5%;display:grid;gap:5px;text-align:center;color:#fff;background:transparent!important;border:0!important;box-shadow:none!important;pointer-events:none}.book-cover-copy span,.book-cover-copy strong{display:block;background:transparent!important;border:0!important;box-shadow:none!important;text-shadow:0 1px 2px rgba(0,0,0,.16)}.book-cover-copy span{font-size:10px;font-weight:500;letter-spacing:.04em}.book-cover-copy strong{font-size:9px;font-weight:500;line-height:1.3;letter-spacing:.02em}
+    
+    .book-back{display:flex;align-items:center;justify-content:center;min-height:38px;border-radius:12px;border:1px solid var(--border);background:var(--surface);font-size:11px;color:var(--accent)}
+    .book-main{display:grid;gap:14px;min-width:0}
+
+    .book-outline{position:sticky;top:14px;align-self:start;max-height:calc(100dvh - 32px);padding:14px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04);overflow:auto;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--accent) 60%,transparent) transparent}
+    .book-outline-back{display:inline-flex;align-items:center;justify-content:center;gap:7px;width:max-content;max-width:100%;height:34px;min-height:34px;margin:0 0 12px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:9px;background:var(--surface);color:var(--accent);font-size:9px;font-weight:650;line-height:1;text-decoration:none;white-space:nowrap;transition:.16s ease}
+    .book-outline-back:hover{background:color-mix(in srgb,var(--accent) 7%,var(--surface));color:var(--accent);border-color:color-mix(in srgb,var(--accent) 34%,var(--border));transform:translateX(-1px)}
+    .book-outline-head{padding:4px 3px 10px;border-bottom:1px solid var(--border)}
+    .book-outline-head small{display:block;color:var(--muted);font-size:8px;letter-spacing:.06em;text-transform:uppercase}
+    .book-outline-head strong{display:block;margin-top:3px;font-size:12.5px;line-height:1.2;color:var(--text)}
+    .book-outline-nav{display:grid;gap:3px;margin-top:10px}
+    .book-outline-link{display:flex;align-items:center;min-height:30px;padding:6px 8px;border:0;border-left:3px solid transparent;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:9.6px;line-height:1.2;text-align:left;text-decoration:none;cursor:pointer;transition:background .15s ease,color .15s ease,border-color .15s ease}
+    .book-outline-link:hover{background:var(--accent-soft);color:var(--accent)}
+    .book-outline-link.is-active{background:color-mix(in srgb,var(--accent) 9%,var(--surface));border-left-color:var(--accent);color:var(--accent);font-weight:600}
+    .book-main{scroll-margin-top:12px}
+    .book-section,.book-hero{scroll-margin-top:14px}
+    @media(max-width:1100px){.book-page{grid-template-columns:168px minmax(0,1fr)}.book-outline{padding:11px}.book-outline-link{font-size:9px;padding:5px 7px}}
+    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-outline{position:relative;top:auto;max-height:none;overflow:visible}.book-outline-nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}.book-outline-link{flex:0 0 auto;white-space:nowrap;border-left:0;border-bottom:2px solid transparent}.book-outline-link.is-active{border-left:0;border-bottom-color:var(--accent)}}
+
+    .book-hero{padding:24px 26px;border-radius:22px;background:linear-gradient(135deg,#184888,#2d6ab5);color:#fff;box-shadow:0 12px 30px rgba(24,72,136,.16)}
+    .book-badge{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border-radius:999px;background:rgba(255,255,255,.14);font-size:9px;letter-spacing:.08em;text-transform:uppercase}
+    .book-hero h1{margin:12px 0 6px;font-size:30px;line-height:1.06;font-weight:600;color:#fff}.book-hero p{margin:0;color:rgba(255,255,255,.84);font-size:12px;line-height:1.5}.apostila-identity{position:relative;overflow:hidden}.apostila-identity:after{content:"";position:absolute;right:-70px;bottom:-100px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.06);pointer-events:none}.apostila-identity .book-meta-row{position:relative;z-index:1}
+    .book-meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.book-meta-row span{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.12);font-size:9px}
+    .book-section{padding:24px 26px;border:1px solid var(--border);border-radius:18px;background:var(--surface);box-shadow:0 8px 22px rgba(15,35,66,.04)}
+    .book-section h2{margin:0 0 14px;font-size:21px;line-height:1.18;font-weight:600;letter-spacing:-.012em}.book-section h3{margin:22px 0 9px;font-size:15.5px;line-height:1.25;font-weight:600}.book-section p,.book-section li{font-size:13.2px;line-height:1.68}.book-section p{margin:0 0 12px}.book-section ul{margin:9px 0;padding-left:22px}.book-section li+li{margin-top:5px}
+    .book-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:12px}.book-table th,.book-table td{padding:10px 11px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.5}.book-table th{background:var(--surface-2);font-weight:600}.book-table td:first-child{font-weight:500}.book-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:13px}.book-mini{padding:15px 16px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 3%,var(--surface-2))}.book-mini strong{display:block;margin-bottom:7px;font-size:12.8px;line-height:1.25;color:var(--text)}.book-mini p{margin:0!important;font-size:12px!important;line-height:1.58!important}.book-mini ul{margin:0!important;padding-left:18px!important}.book-mini li{font-size:12px!important;line-height:1.5!important}.mechanism-chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:13px}.mechanism-step{position:relative;padding:13px 10px;border-radius:12px;border:1px solid var(--border);background:var(--surface-2);text-align:center}.mechanism-step b{display:block;font-size:11.5px}.mechanism-step small{display:block;margin-top:5px;color:var(--muted);font-size:9.5px;line-height:1.4}.complication-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}.complication-card{padding:12px 14px;border:1px solid color-mix(in srgb,var(--accent) 15%,var(--border));border-radius:14px;background:color-mix(in srgb,var(--accent) 2.5%,var(--surface-2))}.complication-card strong{display:block;font-size:13px;line-height:1.25;margin-bottom:6px}.complication-card span{display:block;color:var(--muted);font-size:11.5px;line-height:1.58}.reference-list{margin:0;padding-left:20px}.reference-list li{margin-bottom:8px}.reference-list a{color:var(--accent);text-decoration:none}
+    .book-callout{margin:18px 0;padding:19px 20px;border-radius:16px;background:color-mix(in srgb,var(--accent) 8%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));font-size:13.6px;line-height:1.62;box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 7%,transparent)}
+    .book-callout:not(.book-alert){position:relative;min-height:108px;padding:20px 22px 20px 102px}
+    .book-callout:not(.book-alert)::before{content:"";position:absolute;left:22px;top:50%;transform:translateY(-50%);width:60px;height:60px;background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_claro.webp");background-repeat:no-repeat;background-position:center;background-size:contain;opacity:1}
+    :root[data-theme="dark"] .book-callout:not(.book-alert)::before{background-image:url("/assets/img/pulo%20do%20gato/luria_gato_tema_escuro.webp")}
+    .book-callout:not(.book-alert) strong{display:block;margin:0 0 8px;font-size:15.2px;line-height:1.15;color:var(--accent);font-weight:700}
+    .book-callout:not(.book-alert) strong:before{content:none!important;display:none!important}
+    .book-callout:not(.book-alert) p,.book-callout:not(.book-alert) li,.book-callout:not(.book-alert) span{font-size:13.8px!important;line-height:1.64!important}
+    .book-callout.book-alert{padding:16px 18px;font-size:12.8px;line-height:1.58}
+    .book-callout.book-alert strong{display:block;margin-bottom:6px;font-size:13.2px}
+    @media(max-width:620px){.book-callout:not(.book-alert){min-height:0;padding:18px 18px 18px 82px}.book-callout:not(.book-alert)::before{left:17px;width:48px;height:48px}}
+    .clinical-list{margin:8px 0 0!important;padding-left:20px!important}.clinical-list li{font-size:12.4px!important;line-height:1.55!important}.clinical-list li+li{margin-top:5px!important}
+    .drive-block{margin-top:13px;padding:15px 16px;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .drive-block h4{margin:0 0 8px;font-size:13px;font-weight:600;color:var(--text)}.drive-block ul{margin:0;padding-left:19px}.drive-block li{font-size:12.4px;line-height:1.55}
+    .book-alert{background:color-mix(in srgb,var(--danger) 8%,var(--surface));border-color:color-mix(in srgb,var(--danger) 26%,var(--border))}.book-alert strong{color:var(--danger)}
+    .luria-figure{margin:14px 0;padding:14px;border-radius:16px;background:var(--surface-2);border:1px solid var(--border)}.luria-figure .figure-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.luria-figure .figure-title strong{font-size:11px}.luria-figure .figure-title span{font-size:8px;color:var(--muted)}
+    .flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.flow-step{padding:10px;border-radius:12px;background:var(--surface);border:1px solid var(--border);text-align:center}.flow-step b{display:block;font-size:11px}.flow-step small{display:block;margin-top:4px;color:var(--muted);font-size:9px;line-height:1.35}
+    .meal-flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.meal-flow span{padding:10px 6px;border-radius:10px;background:var(--surface);border:1px solid var(--border);font-size:9px;text-align:center}
+
+    .treatment-algorithm{padding:18px!important}
+    .treatment-algorithm .figure-title{margin-bottom:14px!important}
+    .treatment-algorithm .figure-title strong{font-size:13.5px!important}
+    .treatment-algorithm .figure-title span{font-size:9px!important}
+    .treatment-flow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .treatment-step{position:relative;display:grid;grid-template-columns:34px minmax(0,1fr);gap:11px;min-height:142px;padding:16px 17px;border:1px solid color-mix(in srgb,var(--accent) 18%,var(--border));border-radius:15px;background:color-mix(in srgb,var(--accent) 3.5%,var(--surface));box-sizing:border-box}
+    .treatment-step-number{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:700;line-height:1}
+    .treatment-step b{display:block;margin:1px 0 8px;font-size:13.2px;line-height:1.2;color:var(--text)}
+    .treatment-step ul{margin:0!important;padding-left:17px!important}
+    .treatment-step li{font-size:11.6px!important;line-height:1.45!important;color:var(--muted)}
+    .treatment-step li+li{margin-top:4px!important}
+    .treatment-step li strong{display:inline!important;margin:0!important;font-size:inherit!important;line-height:inherit!important;color:var(--text)}
+    @media(max-width:760px){.treatment-flow{grid-template-columns:1fr}.treatment-step{min-height:0}}
+
+    .book-source{font-size:10px;color:var(--muted);line-height:1.5}.book-source a{color:var(--accent)}
+    .mindmap-section{display:block!important;position:relative!important;clear:both!important;overflow:hidden!important;margin:0!important;padding:16px 22px!important;border:1px solid var(--border)!important;border-radius:18px!important;background:var(--surface)!important;box-shadow:0 8px 22px rgba(15,35,66,.04)!important;isolation:isolate!important}
+    .mindmap-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:10px}
+    .mindmap-head h2{margin:0}.mindmap-head p{margin:0;max-width:540px;color:var(--muted);font-size:12px!important;line-height:1.45!important;text-align:right}
+    .mindmap{position:relative;width:100%;max-width:100%;min-width:0;box-sizing:border-box;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"center center" "a b" "c d";gap:9px 14px;padding:0}
+    .mindmap:before{content:none!important;display:none!important}
+    .mind-center{grid-area:center;justify-self:center;position:relative;z-index:3;width:min(100%,350px);min-width:0;min-height:104px;padding:13px 18px;border-radius:20px;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 90%,#0a2342),var(--accent));color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 14px 30px color-mix(in srgb,var(--accent) 22%,transparent);border:1px solid color-mix(in srgb,#fff 18%,var(--accent))}
+    .mind-center span{font-size:9px;letter-spacing:.11em;text-transform:uppercase;opacity:.78}.mind-center strong{display:block;margin-top:4px;font-size:18px;line-height:1.12;color:#fff}.mind-center small{display:block;margin-top:5px;font-size:9.5px;line-height:1.3;opacity:.8}
+    .mind-branch{position:relative;z-index:2;min-width:0;width:100%;box-sizing:border-box;padding:16px 17px;border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:0 7px 18px rgba(15,35,66,.035);overflow:hidden}
+    .mind-branch:before{content:none!important;display:none!important}
+    .mind-branch h3{margin:0 0 6px!important;font-size:13.8px!important;line-height:1.2!important;color:var(--accent);overflow-wrap:anywhere}.mind-branch ul{margin:0!important;padding-left:18px!important;min-width:0}.mind-branch li{font-size:10.9px!important;line-height:1.36!important;overflow-wrap:anywhere}.mind-branch li+li{margin-top:2px!important}
+    .mind-a{grid-area:a;background:color-mix(in srgb,#7aa7ff 7%,var(--surface))}.mind-b{grid-area:b;background:color-mix(in srgb,#74c69d 7%,var(--surface))}.mind-c{grid-area:c;background:color-mix(in srgb,#f6bd60 8%,var(--surface))}.mind-d{grid-area:d;background:color-mix(in srgb,#c77dff 7%,var(--surface))}
+    .mind-chip{display:inline-flex;align-items:center;min-height:20px;padding:0 7px;margin-bottom:5px;border-radius:999px;background:color-mix(in srgb,var(--accent) 9%,var(--surface));color:var(--accent);font-size:8.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+    @media(max-width:760px){.mindmap-head{align-items:flex-start;flex-direction:column}.mindmap-head p{text-align:left}.mindmap{grid-template-columns:1fr;grid-template-areas:"center" "a" "b" "c" "d";gap:10px}.mindmap:before,.mind-branch:before{display:none}.mind-center{width:100%}.mindmap-section{padding:18px!important}}
+    @media(max-width:900px){.book-page{grid-template-columns:1fr}.book-aside{position:static;grid-template-columns:120px minmax(0,1fr);align-items:start}.book-cover{width:120px}.book-back{align-self:start}.flow{grid-template-columns:1fr}.meal-flow{grid-template-columns:repeat(3,1fr)}.mechanism-chain{grid-template-columns:1fr 1fr}.book-grid-2,.complication-grid{grid-template-columns:1fr}}@media(max-width:560px){.book-aside{grid-template-columns:1fr}.book-cover{width:150px}.book-hero h1{font-size:25px}.book-section{padding:16px}.meal-flow{grid-template-columns:repeat(2,1fr)}}
+  
+    /* apostila-light-blue-title-contrast */
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h1,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h2,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity h3,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity p,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-badge,
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
+      color:#fff!important;
+    }
+    :root:not([data-theme="dark"]) body[data-page="aprender"] .apostila-identity .book-meta-row span{
+      border-color:rgba(255,255,255,.22)!important;
+    }
+  
+    .fixation-list{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+    .fixation-item{padding:14px 15px;border:1px solid var(--border);border-radius:13px;background:var(--surface-2)}
+    .fixation-question{font-size:12.6px;line-height:1.58;color:var(--text)}
+    .fixation-actions{margin-top:10px}
+    .fixation-toggle{min-height:32px;padding:0 11px;border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));border-radius:8px;background:var(--surface);color:var(--accent);font:inherit;font-size:10px;cursor:pointer}
+    .fixation-answer{margin-top:10px;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));font-size:12.2px;line-height:1.55}
+    .fixation-answer[hidden]{display:none}
+  
+/* Cursinho LURIA: quadro visual complementar, responsivo e imprimível */
+.luria-visual-module{border-top:4px solid var(--accent)}
+.luria-visual-intro{font-size:12.6px!important;color:var(--muted)}
+.luria-study-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}
+.luria-study-box{min-width:0;padding:14px;background:var(--surface-2);border:1px solid var(--border);border-radius:12px}
+.luria-study-box h3,.luria-compare-card h3{margin:0 0 10px!important;color:var(--accent);font-size:14px!important}
+.luria-study-steps{margin:0;padding:0;list-style:none;counter-reset:step;display:grid;gap:7px}
+.luria-study-steps li{display:flex;gap:9px;align-items:flex-start;margin:0!important;padding:9px;border:1px solid var(--border);background:var(--surface);border-radius:9px;font-size:11.6px!important;line-height:1.43!important}
+.luria-study-steps li:before{content:counter(step);counter-increment:step;flex:none;display:grid;place-items:center;width:21px;height:21px;border-radius:50%;color:#fff;background:var(--accent);font-size:10px;font-weight:700}
+.luria-study-steps strong{display:block;font-size:12px}
+.luria-study-steps span{display:block;color:var(--muted)}
+.luria-compare{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:12px 0}
+.luria-compare-card{min-width:0;padding:12px;border:1px solid var(--border);border-top:3px solid var(--accent);background:var(--surface);border-radius:11px}
+.luria-compare-card p{font-size:11.7px!important;line-height:1.5!important;margin-bottom:7px!important}
+.luria-compare-label{font-weight:700;font-size:10px;color:var(--accent)}
+.luria-visual-note{padding:11px 13px;background:color-mix(in srgb,var(--accent) 7%,var(--surface));border-left:4px solid var(--accent);border-radius:9px;font-size:12px;line-height:1.55}
+@media(max-width:780px){.luria-study-cols,.luria-compare{grid-template-columns:1fr}}
+@media print{.luria-study-box,.luria-compare-card,.luria-study-steps li{break-inside:avoid}.luria-study-cols{grid-template-columns:repeat(2,minmax(0,1fr))}.luria-compare{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+
+    .luria-disease-unit{padding:13px 0;border-bottom:1px solid var(--border)}
+    .luria-disease-unit:last-child{border-bottom:0}
+    .luria-disease-unit-title{margin:0 0 12px!important;color:var(--accent);font-size:17px!important;line-height:1.3}
+    .luria-disease-unit h3:not(.luria-disease-unit-title){font-size:13.2px!important;margin-top:12px!important;color:var(--text)}
+    .luria-disease-unit figure{break-inside:avoid;margin:14px auto 20px!important}
+    @media(max-width:560px){.luria-disease-unit{padding:12px 0}.luria-disease-unit-title{font-size:15px!important}}
+
+/* Editorial LURIA — um vocabulário visual por função, não um card por frase */
+#candida{--luria-chapter-tone:#b95780;--luria-chapter-soft:#f9edf2}
+#vaginose{--luria-chapter-tone:#138a88;--luria-chapter-soft:#eaf8f5}
+#tricomoníase{--luria-chapter-tone:#7962bd;--luria-chapter-soft:#f2eefb}
+#clinica-diagnostico{--luria-chapter-tone:#2664a8;--luria-chapter-soft:#eaf2fc}
+#microbiota{--luria-chapter-tone:#138a88;--luria-chapter-soft:#eaf8f5}
+.book-section:is(#candida,#vaginose,#tricomoníase,#clinica-diagnostico,#microbiota)>h2{border-left:4px solid var(--luria-chapter-tone);padding-left:13px}
+:is(#candida,#vaginose,#tricomoníase) .luria-disease-unit-title{color:var(--luria-chapter-tone)!important;background:color-mix(in srgb,var(--luria-chapter-tone) 9%,var(--surface));padding:11px 13px;border-left:3px solid var(--luria-chapter-tone);border-radius:0 9px 9px 0}
+:is(#candida,#vaginose,#tricomoníase) .book-mini{background:var(--surface);border-color:color-mix(in srgb,var(--luria-chapter-tone) 18%,var(--border));border-left:3px solid color-mix(in srgb,var(--luria-chapter-tone) 66%,var(--border))}
+:is(#candida,#vaginose,#tricomoníase) .book-mini strong{color:var(--luria-chapter-tone)}
+.book-section .book-callout:not(.pulo-do-gato):not(.book-alert){min-height:0;padding:13px 16px 13px 18px;border-left:4px solid var(--accent);box-shadow:none}
+.book-section .book-callout:not(.pulo-do-gato):not(.book-alert)::before{display:none}
+.book-section .book-callout:not(.pulo-do-gato):not(.book-alert) strong{font-size:13.5px}
+:is(#candida,#vaginose,#tricomoníase) .book-callout:not(.pulo-do-gato){border-left-color:var(--luria-chapter-tone)}
+.book-section .book-table th{font-size:11.5px;line-height:1.42}
+.luria-final-comparison{border-top:3px solid #184888}
+.luria-editorial-deck{max-width:760px;color:var(--muted)}
+.luria-comparison-scroll{overflow-x:auto;scrollbar-width:thin}
+.luria-master-table{table-layout:fixed;min-width:610px;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:13px;overflow:hidden}
+.luria-master-table th,.luria-master-table td{padding:12px 12px;border:0;border-bottom:1px solid var(--border);border-right:1px solid var(--border);text-align:left}
+.luria-master-table thead th{background:#184888!important;color:#fff!important;font-size:11.7px}
+.luria-master-table thead th:nth-child(2){background:#9f446e!important}
+.luria-master-table thead th:nth-child(3){background:#147d7b!important}
+.luria-master-table thead th:nth-child(4){background:#6f59aa!important}
+.luria-master-table tbody tr:nth-child(even){background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
+.luria-master-table tbody th{font-weight:700;color:var(--text);background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
+.luria-master-table tr:last-child td,.luria-master-table tr:last-child th{border-bottom:0}
+.luria-master-table td:last-child,.luria-master-table th:last-child{border-right:0}
+.luria-comparison-foot{margin:12px 0 0!important;font-size:11.8px!important;color:var(--muted)}
+.luria-comparison-foot strong{color:var(--text)}
+.luria-key-summary{margin:22px 0;border:1px solid color-mix(in srgb,#e5a740 42%,var(--border));border-radius:17px;overflow:hidden;background:var(--surface)}
+.luria-key-summary-head{display:flex;align-items:center;gap:11px;padding:16px 18px;background:color-mix(in srgb,#efb553 15%,var(--surface));border-bottom:1px solid color-mix(in srgb,#e5a740 28%,var(--border))}
+.luria-key-summary-mark{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:11px;background:#b87b20;color:white;font-size:19px}
+.luria-key-kicker{display:block;color:#ad741c;font-size:10px;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
+.luria-key-summary-head h3{margin:2px 0 0!important;font-size:17px!important;color:var(--text)}
+.luria-key-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 18px;padding:5px 18px 9px}
+.luria-key-line{display:flex;align-items:flex-start;gap:10px;padding:13px 0;border-bottom:1px solid var(--border)}
+.luria-key-line:nth-last-child(-n+2){border-bottom:0}
+.luria-key-number{flex:0 0 28px;font-size:11px;font-weight:800;color:#b87b20;padding-top:2px}
+.luria-key-line p{margin:0!important;font-size:12.5px!important;line-height:1.5!important}
+.luria-key-line strong{color:var(--text)}
+@media(max-width:720px){.luria-key-grid{grid-template-columns:1fr}.luria-key-line:nth-last-child(2){border-bottom:1px solid var(--border)}.luria-key-summary-head{padding:13px 14px}.luria-key-grid{padding:4px 15px 7px}}
+@media print{.luria-key-line,.luria-master-table tr{break-inside:avoid}.luria-comparison-scroll{overflow:visible}.luria-master-table{min-width:0}}
+
+/* Abertura editorial: uma ideia principal por bloco e progressão contínua */
+.luria-opening-summary{padding-top:20px;padding-bottom:20px}
+.luria-opening-summary>p{max-width:760px}
+.luria-opening-points{list-style:none;margin:15px 0!important;padding:0!important;border-top:1px solid var(--border)}
+.luria-opening-points li{margin:0!important;padding:11px 0;border-bottom:1px solid var(--border);line-height:1.56!important}
+.luria-opening-points strong{color:var(--accent)}
+.luria-opening-bridge{margin:15px 0 0!important;color:var(--muted);font-size:11.9px!important}
+.luria-foundations>h2{border-left:4px solid var(--luria-chapter-tone,#184888);padding-left:13px;margin-bottom:17px}
+.luria-foundations>h3{margin:27px 0 9px!important;font-size:16px!important;color:var(--text)}
+.luria-foundations>h3:first-of-type{margin-top:21px!important}
+.luria-foundation-rail{border:1px solid var(--border);border-radius:13px;padding:2px 16px;margin:15px 0 18px;background:var(--surface)}
+.luria-foundation-row{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.luria-foundation-row:last-child{border-bottom:0}
+.luria-foundation-index{font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.025em;padding-top:2px}
+.luria-foundation-row strong{font-size:12.9px;font-weight:650;color:var(--text)}
+.luria-foundation-row p{font-size:12.6px!important;line-height:1.58!important;margin:6px 0 0!important}
+.luria-editorial-note{padding:11px 14px;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface));font-size:12.2px!important;line-height:1.62!important;margin:17px 0 0!important}
+.luria-editorial-note strong{color:var(--accent)}
+.luria-foundations>.luria-figure{margin:16px auto 9px}
+.luria-editorial-caption{margin:6px 0 23px!important;font-size:11.2px!important;color:var(--muted);line-height:1.5!important}
+.luria-life-course{margin:12px 0 20px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.luria-life-row{display:grid;grid-template-columns:minmax(120px,27%) 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.luria-life-row:last-child{border-bottom:0}
+.luria-life-row strong{color:var(--accent);font-size:12.4px;line-height:1.4}
+.luria-life-row p{margin:0!important;font-size:12.8px!important;line-height:1.57!important}
+.luria-anamnesis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:13px 0 20px;padding:16px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.luria-anamnesis strong{display:block;margin-bottom:8px;color:var(--accent);font-size:13px}
+.luria-anamnesis ul{margin:0!important;padding-left:20px!important}
+.luria-anamnesis li{font-size:12.5px!important;line-height:1.57!important}
+.luria-consult-steps{counter-reset:consult;list-style:none;margin:12px 0 16px!important;padding:0!important}
+.luria-consult-steps li{position:relative;margin:0!important;padding:13px 0 13px 43px;border-bottom:1px solid var(--border)}
+.luria-consult-steps li::before{counter-increment:consult;content:counter(consult);position:absolute;left:0;top:12px;width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:color-mix(in srgb,var(--accent) 11%,var(--surface));color:var(--accent);font-size:11px;font-weight:750}
+.luria-consult-steps li strong{color:var(--text)}
+.luria-warning-strip{display:flex;gap:16px;align-items:flex-start;background:color-mix(in srgb,#cb8133 8%,var(--surface));border:1px solid color-mix(in srgb,#cb8133 33%,var(--border));border-radius:12px;padding:13px 15px;margin:19px 0 14px}
+.luria-warning-strip strong{font-size:12.8px;color:var(--text);flex:0 0 130px}
+.luria-warning-strip span{font-size:12.4px;line-height:1.55;color:var(--text)}
+@media(max-width:680px){
+  .luria-life-row{grid-template-columns:1fr;gap:5px}
+  .luria-anamnesis{grid-template-columns:1fr;gap:16px}
+  .luria-foundation-row{grid-template-columns:59px 1fr;gap:9px}
+  .luria-warning-strip{display:block}
+  .luria-warning-strip strong{display:block;margin-bottom:5px}
+}
+@media print{.luria-foundation-row,.luria-life-row,.luria-consult-steps li{break-inside:avoid}}
+
+/* Revisão tipográfica final LURIA — ritmo de leitura 2026-10-13 */
+.book-main{gap:16px}
+.book-section{padding:26px 30px 28px}
+.book-section h2{font-size:22px;line-height:1.31;margin:0 0 18px;font-weight:660;letter-spacing:-.014em}
+.book-section h3{font-size:16px;line-height:1.35;margin:26px 0 11px;font-weight:640}
+.book-section p,.book-section li{font-size:14.3px;line-height:1.70}
+.book-section p{margin:0 0 15px;max-width:82ch}
+.book-section p:last-child{margin-bottom:0}
+.book-section>h2 + p{margin-top:3px}
+.book-section ul,.book-section ol{margin:12px 0 17px}
+.book-section li + li{margin-top:7px}
+.book-section :is(strong,b){font-weight:650}
+.book-section h2,.luria-disease-unit-title,.luria-med-subhead{overflow-wrap:break-word}
+.luria-disease-unit{padding:21px 0 23px;border-bottom:1px solid var(--border)}
+.luria-disease-unit:first-of-type{padding-top:10px}
+.luria-disease-unit:last-child{border-bottom:0;padding-bottom:4px}
+:is(#candida,#vaginose,#tricomoníase) .luria-disease-unit-title{font-size:16.8px!important;line-height:1.3!important;margin:0 0 15px!important;padding:12px 15px}
+.luria-disease-unit .luria-med-subhead{font-size:14.5px!important;line-height:1.42!important;margin:22px 0 9px;font-weight:680;color:var(--text)}
+.luria-disease-unit .luria-med-subhead + p{margin-top:1px}
+.luria-disease-unit p{max-width:82ch}
+.luria-disease-unit .book-grid-2{gap:0 24px;margin:18px 0 22px}
+.luria-disease-unit .book-grid-2>.book-mini{padding:16px 0!important;border:0!important;border-bottom:1px solid var(--border)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.luria-disease-unit .book-grid-2>.book-mini strong{display:block;margin-bottom:8px;font-size:13.6px;line-height:1.35}
+.luria-disease-unit .book-grid-2>.book-mini p{font-size:13.5px!important;line-height:1.63!important}
+.book-section .book-table{font-size:13px;line-height:1.5;margin:18px 0 22px}
+.book-section .book-table th,.book-section .book-table td{padding:12px 13px;line-height:1.54}
+.book-section .book-table th{font-size:12.2px;letter-spacing:0}
+.book-section .book-table td{font-size:13px}
+.book-section .table-wrap{max-width:100%;overflow-x:auto;margin:16px 0 22px}
+.book-section .table-wrap .book-table{margin:0}
+.book-section .table-wrap + p{margin-top:13px}
+.mechanism-chain{grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:10px;margin:18px 0 19px}
+.mechanism-step{padding:14px 11px;border-radius:10px}
+.mechanism-step b{font-size:12.3px;line-height:1.28}
+.mechanism-step small{font-size:10.8px;line-height:1.5}
+.book-section .luria-figure{margin:20px 0 18px}
+.book-section .flow-step b{font-size:12.4px}
+.book-section .flow-step small{font-size:10.8px;line-height:1.45}
+.book-section .book-curated-clinical-image{margin:19px auto 23px!important}
+.book-curated-clinical-image figcaption{font-size:12px;line-height:1.55;margin-top:11px}
+.luria-disease-unit .book-callout{margin:21px 0 19px}
+.book-section .book-callout.pulo-do-gato{min-height:90px;padding:18px 21px 18px 88px;border-radius:14px;box-shadow:none}
+.book-section .book-callout.pulo-do-gato::before{width:49px;height:49px;left:19px}
+.book-section .book-callout.pulo-do-gato strong{font-size:14.3px;line-height:1.2}
+.book-section .book-callout:not(.pulo-do-gato){margin:19px 0;padding:14px 17px}
+.book-section .luria-key-line p{font-size:13px!important;line-height:1.56!important;max-width:none}
+.book-section .luria-key-line strong{font-weight:710}
+.luria-final-comparison .luria-editorial-deck{max-width:82ch}
+.luria-final-comparison .luria-master-table th{font-size:12.3px}
+.luria-final-comparison .luria-master-table td{font-size:12.8px}
+.book-outline-link{font-size:10.3px;line-height:1.32}
+@media(max-width:900px){
+  .book-section{padding:22px 22px 24px}
+  .book-section p,.book-section li{font-size:14px;line-height:1.68}
+  .book-section .book-grid-2{gap:2px 15px}
+  .luria-disease-unit{padding:19px 0 21px}
+  .luria-disease-unit .book-grid-2{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .book-main{gap:12px}
+  .book-section{padding:19px 16px 21px;border-radius:15px}
+  .book-section h2{font-size:20px;line-height:1.28;margin-bottom:16px}
+  .book-section h3{font-size:15.2px;margin:22px 0 10px}
+  .book-section p,.book-section li{font-size:14px;line-height:1.68}
+  :is(#candida,#vaginose,#tricomoníase) .luria-disease-unit-title{font-size:15.6px!important;padding:11px 12px}
+  .luria-disease-unit .luria-med-subhead{font-size:14px!important;margin-top:19px}
+  .luria-disease-unit .book-grid-2>.book-mini p{font-size:13.4px!important}
+  .book-section .book-callout.pulo-do-gato{padding:15px 15px 15px 72px;min-height:72px}
+  .book-section .book-callout.pulo-do-gato::before{left:14px;width:43px;height:43px}
+  .book-section .book-table th,.book-section .book-table td{padding:10px}
+  .book-section .luria-life-row p{font-size:13.2px!important}
+  .book-section .luria-editorial-note{font-size:12.6px!important}
+}
+@media print{
+  .book-main{gap:10px}
+  .book-section{box-shadow:none;padding:12px 14px;border-radius:6px;break-inside:auto;page-break-inside:auto}
+  .book-section p,.book-section li{font-size:10pt;line-height:1.45}
+  .book-section h2{font-size:16pt;break-after:avoid}
+  .book-section h3,.luria-med-subhead,.luria-disease-unit-title{break-after:avoid}
+  .luria-disease-unit{padding:12px 0}
+  .book-section .book-table td,.book-section .book-table th{font-size:8.8pt;line-height:1.35;padding:6px 7px}
+  .book-section .book-curated-clinical-image{max-width:440px!important}
+}
+
+/* Afinação editorial das notas secundárias e referências */
+.luria-foundation-row p,.luria-life-row p,.luria-anamnesis li{font-size:13.6px!important;line-height:1.62!important}
+.luria-foundation-row strong,.luria-anamnesis strong{font-size:13.6px}
+.luria-editorial-note,.luria-warning-strip span{font-size:13px!important;line-height:1.59!important}
+.luria-key-summary-head h3{font-size:17px!important}
+.reference-list{display:grid;gap:5px;margin:14px 0 0!important;padding-left:23px!important}
+.reference-list li{font-size:12.8px!important;line-height:1.55!important;margin:0!important;padding:4px 0;overflow-wrap:anywhere}
+.reference-list a{color:var(--accent);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.luria-disease-unit .book-callout.pulo-do-gato + .luria-med-subhead{margin-top:21px}
+.book-section .book-table tbody tr:nth-child(even):not(.luria-master-table tr){background:color-mix(in srgb,var(--accent) 1.5%,var(--surface))}
+@media(max-width:560px){.luria-foundation-row p,.luria-life-row p,.luria-anamnesis li{font-size:13.4px!important;line-height:1.62!important}.reference-list li{font-size:12.4px!important}}
+
+/* Profundidade clínica guiada */
+.luria-evidence-note{margin:18px 0 20px;padding:13px 17px;border-left:3px solid var(--accent);border-radius:0 9px 9px 0;background:color-mix(in srgb,var(--accent) 5%,var(--surface))}
+.luria-evidence-note>strong{display:block;margin-bottom:6px;font-size:13px;line-height:1.35;color:var(--accent)}
+.luria-evidence-note p{margin:0!important;font-size:13.5px!important;line-height:1.62!important}
+:is(#candida,#vaginose,#tricomoníase) .luria-evidence-note{border-left-color:var(--luria-chapter-tone);background:color-mix(in srgb,var(--luria-chapter-tone) 5%,var(--surface))}
+:is(#candida,#vaginose,#tricomoníase) .luria-evidence-note>strong{color:var(--luria-chapter-tone)}
+.luria-clinical-case{margin:23px 0 18px;padding:19px 21px;border-radius:12px;border:1px solid color-mix(in srgb,var(--accent) 19%,var(--border));border-top:3px solid var(--accent);background:color-mix(in srgb,var(--accent) 3%,var(--surface))}
+.luria-case-kicker{display:block;margin-bottom:6px;color:var(--accent);font-size:10.5px;font-weight:760;letter-spacing:.065em;text-transform:uppercase}
+.luria-clinical-case h4{margin:0 0 10px!important;font-size:15.4px!important;line-height:1.35!important;color:var(--text)}
+.luria-clinical-case p{margin:0!important;line-height:1.65!important;font-size:13.8px!important;max-width:80ch}
+:is(#candida,#vaginose,#tricomoníase) .luria-clinical-case{border-top-color:var(--luria-chapter-tone)}
+:is(#candida,#vaginose,#tricomoníase) .luria-case-kicker{color:var(--luria-chapter-tone)}
+#diferenciais>.luria-differential-heading{margin:27px 0 11px!important;padding-bottom:9px;border-bottom:1px solid var(--border);font-size:16px!important}
+#diferenciais>.luria-differential-heading+p{margin-top:4px}
+@media(max-width:560px){.luria-evidence-note{padding:12px}.luria-clinical-case{padding:16px 14px;margin:20px 0}.luria-clinical-case h4{font-size:14.8px!important}.luria-clinical-case p{font-size:13.5px!important}}
+@media print{.luria-clinical-case,.luria-evidence-note{break-inside:avoid}}
+
+/* Revisão ativa sem cartões pesados ou respostas expostas */
+.luria-checkpoints{display:grid;gap:0;margin:16px 0 5px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.luria-checkpoint{border-bottom:1px solid var(--border);background:transparent}
+.luria-checkpoint:last-child{border-bottom:0}
+.luria-checkpoint summary{display:flex;gap:13px;align-items:flex-start;cursor:pointer;list-style:none;padding:16px 4px;font-size:13.8px;line-height:1.55;font-weight:580;color:var(--text)}
+.luria-checkpoint summary::-webkit-details-marker{display:none}
+.luria-checkpoint summary>span{display:grid;place-items:center;flex:none;width:29px;height:29px;border-radius:8px;background:color-mix(in srgb,var(--accent) 10%,var(--surface));color:var(--accent);font-weight:750;font-size:10.5px}
+.luria-checkpoint[open] summary{padding-bottom:8px}
+.luria-checkpoint>div{margin:0 2px 13px 46px;padding:12px 14px;border-left:3px solid var(--accent);border-radius:0 8px 8px 0;background:color-mix(in srgb,var(--accent) 4%,var(--surface))}
+.luria-checkpoint>div>strong{font-size:13px;color:var(--accent)}
+.luria-checkpoint>div p{font-size:13.4px!important;line-height:1.6!important;margin:7px 0 0!important}
+@media(max-width:560px){.luria-checkpoint summary{font-size:13.3px;padding:13px 0}.luria-checkpoint>div{margin-left:38px;padding:10px}}
+@media print{.luria-checkpoint{break-inside:avoid}.luria-checkpoint>div{display:block!important}}
+
+/* Navegação discreta dos capítulos extensos */
+.luria-chapter-nav{display:flex;align-items:center;flex-wrap:wrap;gap:8px 13px;padding:0 0 17px;margin:0 0 5px;border-bottom:1px solid var(--border)}
+.luria-chapter-nav>span{font-size:10.5px;font-weight:700;letter-spacing:.045em;text-transform:uppercase;color:var(--muted);margin-right:5px}
+.luria-chapter-nav>a{color:var(--accent);font-size:11.5px;font-weight:600;text-decoration:none;line-height:1.4}
+.luria-chapter-nav>a:hover{text-decoration:underline;text-underline-offset:3px}
+:is(#candida,#vaginose,#tricomoníase) .luria-chapter-nav>a{color:var(--luria-chapter-tone)}
+.luria-disease-unit{scroll-margin-top:22px}
+@media(max-width:560px){.luria-chapter-nav{gap:9px 12px;margin-bottom:8px}.luria-chapter-nav>span{flex:0 0 100%}.luria-chapter-nav>a{font-size:11.6px}}
+@media print{.luria-chapter-nav{display:none}}
+
+/* Tabelas de consulta: textos legíveis no PWA, com rolagem horizontal sem quebrar o container */
+.luria-table-scroll{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:thin;margin:16px 0 22px}
+.luria-table-scroll .book-table{margin:0!important;min-width:600px}
+.luria-table-scroll[data-cols="2"] .book-table{min-width:470px}
+.luria-table-scroll-hint{display:none}
+@media(max-width:640px){.luria-table-scroll-hint{display:block;margin-bottom:7px;font-size:10.8px;color:var(--muted);line-height:1.3}.luria-table-scroll .book-table th,.luria-table-scroll .book-table td{padding:9px 11px}}
+@media print{.luria-table-scroll{overflow:visible;margin:10px 0}.luria-table-scroll .book-table{min-width:0}.luria-table-scroll-hint{display:none!important}}
+
+.book-outline{position:sticky;top:8px;max-height:calc(100dvh - 16px);padding:10px;overflow-y:auto;overscroll-behavior:contain}.book-outline-back{width:100%;height:32px;min-height:32px;margin-bottom:7px;padding:0 8px;font-size:9px}.book-outline-head{padding:3px 3px 7px}.book-outline-head small{font-size:7px}.book-outline-head strong{font-size:10.5px}.book-outline-nav{gap:1px;margin-top:6px}.book-outline-link{min-height:25px;padding:4px 6px;font-size:8.7px;line-height:1.12}@media(max-width:900px){.book-outline{top:auto;max-height:185px;overflow-y:auto}.book-outline-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.book-outline-link{white-space:normal;min-height:28px}}.apostila-approved-figure{width:min(78%,620px)}.apostila-approved-figure-intro p{font-size:12px!important}.apostila-approved-figure-focus{font-size:11px}
