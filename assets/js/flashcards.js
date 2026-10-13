@@ -3408,7 +3408,7 @@ function readAnkiDeckMap(
 async function openAnkiDatabase(
   file
 ) {
-  await window.LuriaLazyVendors.ensure(["jszip", "sqljs", "fzstd"]);
+  await window.LuriaLazyVendors.ensure(["jszip", "sqljs"]);
 
   if (
     !window.JSZip
@@ -3496,6 +3496,7 @@ async function openAnkiDatabase(
   if (
     candidate.compressed
   ) {
+    await window.LuriaLazyVendors.ensure("fzstd");
     if (
       !window.fzstd
       ?.decompress
@@ -5985,10 +5986,11 @@ function flashPdfAddBlock(doc, label, value, state) {
 
 
 async function exportSelectedFlashcardsPdf() {
-  try { await window.LuriaLazyVendors.ensure("jspdf"); } catch (error) { setLibraryStatus(error.message || "Não foi possível carregar o gerador de PDF.", "error"); return; }
+  
 
   const ids = Array.from(selectedFlashcardIds);
   if (!ids.length) return;
+  try { await window.LuriaLazyVendors.ensure("jspdf"); } catch (error) { setLibraryStatus(error.message || "Não foi possível carregar o gerador de PDF.", "error"); return; }
 
   if (!window.jspdf?.jsPDF) {
     setLibraryStatus("Gerador de PDF não carregou. Atualize a página.", "error");
