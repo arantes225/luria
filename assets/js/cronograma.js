@@ -2865,6 +2865,8 @@ function parseGenericPdfLines({
 async function parsePdfFile(
   file
 ) {
+  await window.LuriaLazyVendors.ensure("pdfjs");
+
   if (
     !window.pdfjsLib
   ) {
@@ -3145,6 +3147,8 @@ async function parsePdfFile(
 async function parseWorkbookFile(
   file
 ) {
+  await window.LuriaLazyVendors.ensure("xlsx");
+
   const buffer =
     await file
       .arrayBuffer();
