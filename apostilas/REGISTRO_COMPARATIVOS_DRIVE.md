@@ -90,6 +90,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Imagens:** manter recurso original KNDy e qualquer imagem clínica já aprovada; não usar imagem sem licença em temas clínicos. Esta revisão não removeu nem substituiu fotografias reais.
 - **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Pendentes conferência integral, auditoria visual desktop/PWA, identificação individual de fontes e qualidade das demais ilustrações, ≥60 mil caracteres úteis e teste pedagógico final.
 
+## 2026-10-13 — Crescimento intrauterino reduzido/aumentado
+
+- **Obra LURIA:** `apostilas/crescimento-intrauterino-reduzido-aumentado/index.html`.
+- **Drive efetivamente consultado:** `01 - SOFRIMENTO FETAL AGUDO.pdf` (7.294 caracteres extraídos; menciona RCF na lista de vigilância e CTG, mas não ensina diagnóstico por biometria/Doppler), `01 - DIABETES NA GESTACAO.pdf` (7.290 caracteres extraídos; associa diabetes a macrossomia, distocia de ombro e insuficiência placentária). São **materiais parciais**, não uma apostila específica de RCF/macro; procedência Estratégia MED não demonstrada, sem reprodução de imagens ou texto.
+- **Lacunas e correções autorais:** capítulo aplicado com sete decisões (PIG constitucional versus RCF operacional SMFM; FGR precoce Delphi; FGR tardia com PFE > p10 e CA < p10; diástole presente/ausente/reversa; CTG reativa com Doppler de alto risco; macrossomia com/sem diabetes; distocia de ombro), incluindo matriz de vigilância e limiares de parto SMFM. Ressalva que diretrizes SMFM e ISUOG não são intercambiáveis, que estimativa ultrassonográfica de peso tem erro relevante e que pressão fúndica não é manobra indicada.
+- **Imagem nova verificada:** Doppler espectral umbilical real de Nevit Dilmen, `Ultrasound Scan ND 0111105746 1103050.png`, Wikimedia Commons, CC BY-SA 3.0, arquivo original inalterado, legenda restrita a observação anatômica sem inferir diagnóstico. A CSP da página autoriza Wikimedia; fallback para fonte se indisponível. **Imagens clínicas existentes aprovadas foram preservadas:** IDs 56 (pressão suprapúbica, CC BY 4.0), 57 (manobra interna, CC BY 4.0), na fila Supabase de ilustrações de distocia; ID 55 continua pendente, não publicado.
+- **Base científica primária:** SMFM Consult Series 52 (2020, reafirmado em 2024; critérios e timing de parto); ISUOG Practice Guidelines, FGR/SGA (2020; definições Delphi); ACOG Practice Bulletin 216 (macrossomia, 2020). Respeitar atualizações posteriores específicas e diretrizes institucionais.
+- **Status editorial:** EM REVISÃO, **NÃO CERTIFICADA pelo Prompt Magno**. Falta comprovar 60 mil caracteres didáticos úteis sem redundância, auditar exibição real em navegador desktop/PWA, verificar todas as imagens aprovadas, fontes e matriz pedagógica integral. Benchmark externo é insuficiente para comparação abrangente.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
