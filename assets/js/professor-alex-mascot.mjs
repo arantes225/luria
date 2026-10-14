@@ -141,8 +141,9 @@ export class ProfessorAlexMascot extends HTMLElement {
   _createScene() {
     this.renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.15;
     this.button.prepend(this.renderer.domElement);this.renderer.domElement.setAttribute('aria-hidden','true');
-    this.renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();cancelAnimationFrame(this._frame);this._frame=0;this._contextLost=true;this.message.hidden=false;this.message.textContent='Restaurando a renderização 3D…';});
-    this.renderer.domElement.addEventListener('webglcontextrestored',()=>{this._contextLost=false;this._last=0;this.message.hidden=true;this._schedule();});
+    const activeRenderer=this.renderer;this._contextLost=false;
+    this.renderer.domElement.addEventListener('webglcontextlost',event=>{if(this.renderer!==activeRenderer)return;event.preventDefault();cancelAnimationFrame(this._frame);this._frame=0;this._contextLost=true;this.message.hidden=false;this.message.textContent='Restaurando a renderização 3D…';});
+    this.renderer.domElement.addEventListener('webglcontextrestored',()=>{if(this.renderer!==activeRenderer)return;this._contextLost=false;this._last=0;this.message.hidden=true;this._schedule();});
     this.scene=new THREE.Scene();this.camera=new THREE.OrthographicCamera(-2.4,2.4,2.4,-2.4,.1,30);this.camera.position.set(0,-.12,8);this.camera.lookAt(0,-.12,0);
     this._environment=studioEnvironment(this.renderer);this.scene.environment=this._environment.texture;
     this.scene.add(new THREE.HemisphereLight(0xe6f2ff,0x6b7290,1.8));

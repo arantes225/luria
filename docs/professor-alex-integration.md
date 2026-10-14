@@ -2,7 +2,9 @@
 
 O robô tem 21 movimentos. Os nove novos são `nod` (confirmação), `shakeHead` (tentar novamente sem raiva), `point` (dica), `search` (procurar), `loading` (aguardar), `listening` (escutar), `encourage` (incentivo), `stretch` (pausa) e `bow` (agradecimento).
 
-Nas páginas Aprender e Professor Alex, a integração já está carregada. As demais podem montar o componente no local escolhido e importar o adaptador quando precisarem. Ele não injeta o robô, não importa o motor 3D e não acessa dados, áudio ou serviços. Evite vários robôs na mesma página; se houver mais de um, envie `target` com o ID do destinatário.
+Nas páginas internas com navegação v2, o companheiro flutuante é carregado após `docmap:ready` informar o usuário autenticado. Ele permite arraste por toque/mouse ou setas do teclado, minimização, restauração e ajuda contextual. Posição e estado minimizado são salvos separadamente por usuário; nenhum token ou conteúdo pessoal é armazenado. A tutoria permanece visível apenas para admin. O layout acompanha o viewport e o teclado; minimizar libera o contexto 3D. Nas páginas Aprender e Professor Alex, o mesmo robô é transferido para o widget, evitando uma segunda renderização.
+
+O adaptador de eventos não importa o motor 3D e não acessa dados, áudio ou serviços. O carregador compartilhado monta o widget; integrações específicas podem apenas enviar os eventos abaixo. `bindAlex` reutiliza a ligação existente do mesmo componente, evitando eventos duplicados. Se houver mais de um componente, envie `target` com o ID do destinatário.
 
 ```js
 import './professor-alex-mascot.mjs?v=20261014-actions1';

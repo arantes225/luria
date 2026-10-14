@@ -1,0 +1,39 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {chromium}=require(process.env.ALEX_PLAYWRIGHT_MODULE||'playwright');
+const root=path.resolve(__dirname,'../build/pages');
+const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript','.css':'text/css','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.woff2':'font/woff2'};
+(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});try{
+ const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:3,serviceWorkers:'block'});
+ await context.route('**/*',async route=>{const url=new URL(route.request().url());
+  if(url.origin!=='http://127.0.0.1:4173'||/^\/assets\/js\/(app|supabase|pwa)\.js$/.test(url.pathname)||url.pathname.includes('supabase-2.')){await route.fulfill({status:200,contentType:'text/javascript',body:''});return;}
+  let file=path.resolve(root,'.'+decodeURIComponent(url.pathname));if(url.pathname.endsWith('/'))file=path.join(file,'index.html');
+  if(!file.startsWith(root+path.sep)||!fs.existsSync(file)){await route.fulfill({status:404,body:''});return;}
+  await route.fulfill({status:200,contentType:types[path.extname(file)]||'application/octet-stream',body:fs.readFileSync(file)});
+ });
+ const page=await context.newPage(),errors=[];page.on('pageerror',error=>errors.push(error.message));
+ const authenticate=()=>page.evaluate(()=>{document.body.classList.add('app-ready');document.body.dataset.uiStartup='ready';window.dispatchEvent(new CustomEvent('docmap:ready',{detail:{user:{id:'fixture-a'},isAdmin:true}}));});
+ await page.goto('http://127.0.0.1:4173/aprender/');assert.equal(await page.locator('luria-alex-companion').count(),0);
+ await authenticate();await page.waitForFunction(()=>!!document.querySelector('luria-alex-companion')?.shadowRoot.querySelector('professor-alex-mascot')?.renderer);
+ const host=page.locator('luria-alex-companion'),grip=host.locator('.grip');
+ await page.waitForFunction(()=>getComputedStyle(document.querySelector('luria-alex-companion')).position==='fixed');
+ assert((await host.boundingBox()).x>1000,'Default placement is at the right edge after styles load');
+ assert.equal(await page.locator('professor-alex-mascot').count(),1,'Single mascot including shadow DOM');
+ await host.locator('.alex-surface').click();assert(await host.locator('.help').isVisible());assert.match(await host.locator('.help h2').textContent(),/aprender/i);
+ assert(await host.locator('.tutoring').isVisible());await page.keyboard.press('Escape');assert(!(await host.locator('.help').isVisible()));
+ const before=await host.boundingBox(),handle=await grip.boundingBox(),shift=before.x<400?300:-300;await page.mouse.move(handle.x+handle.width/2,handle.y+handle.height/2);await page.mouse.down();await page.mouse.move(handle.x+shift,handle.y-180,{steps:8});await page.mouse.up();
+ const after=await host.boundingBox();assert(Math.abs(after.x-before.x)>100&&after.y<before.y-100,JSON.stringify({before,after,handle}));
+ await grip.focus();await page.keyboard.press('ArrowLeft');assert((await host.boundingBox()).x<after.x);
+ await page.evaluate(()=>window.retiredCanvas=document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot').renderer.domElement);
+ await host.locator('.minimize').click();assert(await host.locator('.restore').isVisible());assert.equal(await page.evaluate(()=>document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot')),null);
+ await host.locator('.restore').click();await page.waitForTimeout(200);await page.evaluate(()=>window.retiredCanvas.dispatchEvent(new Event('webglcontextlost',{cancelable:true})));assert(await page.evaluate(()=>!document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot')._contextLost),'Retired context cannot disable the restored renderer');
+ await host.locator('.minimize').click();
+ await page.reload();await authenticate();await page.waitForSelector('luria-alex-companion');assert(await host.locator('.restore').isVisible(),'Minimized preference survives navigation');
+ await host.locator('.restore').click();await page.waitForFunction(()=>!!document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot')?.renderer);
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(200);let box=await host.boundingBox();assert(box.x>=0&&box.y>=0&&box.x+box.width<=390&&box.y+box.height<=844);
+ await host.locator('.alex-surface').click();await page.waitForTimeout(300);assert(await page.evaluate(()=>{const a=document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot');return a.renderer.info.render.calls>0&&a.renderer.domElement.width>0;}),'Robot actually renders');await page.screenshot({path:path.resolve(root,'../alex-companion-mobile.png')});
+ await page.evaluate(()=>window.dispatchEvent(new CustomEvent('docmap:ready',{detail:{user:{id:'fixture-a'},isAdmin:false}})));assert(!(await host.locator('.tutoring').isVisible()));
+ await page.evaluate(()=>document.dispatchEvent(new CustomEvent('luria:alex',{detail:{action:'success'}})));assert.equal(await page.evaluate(()=>document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot')._gesture.name),'nod');
+ await page.setViewportSize({width:390,height:400});await page.waitForTimeout(100);box=await host.boundingBox();assert(box.y+box.height<=400,'Keyboard-sized viewport remains usable');const helpBox=await host.locator('.help').boundingBox();assert(helpBox.y>=0&&helpBox.y+helpBox.height<=400,'Help fits above the keyboard');
+ await page.evaluate(()=>window.dispatchEvent(new CustomEvent('docmap:ready',{detail:{user:{id:'fixture-b'},isAdmin:false}})));await page.waitForTimeout(200);assert.equal(await host.count(),1);
+ assert.deepEqual(errors,[]);console.log('Companion: authentication gate, single renderer, context help, role guard, mouse/keyboard drag, per-account persistence, minimize/restore, mobile bounds and event reactions passed');
+}finally{await browser.close();}})().catch(error=>{console.error(error);process.exitCode=1;});

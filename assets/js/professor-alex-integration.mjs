@@ -7,10 +7,12 @@ export const ALEX_ACTIONS = Object.freeze({
 });
 const continuous=new Set(['loading','listening','search']);
 const terminal=new Set(['success','error','complete','achievement']);
+const bindings=new WeakMap();
 
 /** Bind one mascot to explicit application events; returns a disposable adapter. */
 export function bindAlex(alex,{root=document,cooldown=1200}={}) {
   if(!alex)throw new TypeError('Alex component is required');
+  if(bindings.has(alex))return bindings.get(alex);
   const abort=new AbortController(),options={signal:abort.signal};
   const motion=matchMedia('(prefers-reduced-motion: reduce)');
   let state=null,pending=null,lastAction=null,lastAt=-Infinity,destroyed=false;
@@ -43,5 +45,6 @@ export function bindAlex(alex,{root=document,cooldown=1200}={}) {
     if(trigger.dataset.alexTarget&&trigger.dataset.alexTarget!==alex.id)return;
     react(trigger.dataset.alexAction);
   },options);
-  return {react,get state(){return state;},destroy(){if(destroyed)return;destroyed=true;pending=null;abort.abort();reset();}};
+  const binding={react,get state(){return state;},destroy(){if(destroyed)return;destroyed=true;pending=null;abort.abort();reset();bindings.delete(alex);}};
+  bindings.set(alex,binding);return binding;
 }
