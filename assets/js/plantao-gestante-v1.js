@@ -61,7 +61,7 @@
       currentVariant=key;
       currentSource=src;
       rig.dataset.variant=key;
-      breathingImage.src=base.currentSrc||base.src;
+      breathingImage.src=base.src;
       closedImage.src=variants[key].closed;
     }
 
