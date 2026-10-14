@@ -24,7 +24,7 @@ async function fixture(t){
   from:()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{luria_id:'OWNER001',studyrat_variant:'blue'},error:null})}),
   channel:(name,config)=>{const c={name,config,handlers:[],on(type,filter,handler){this.handlers.push({type,filter,handler});return this;},subscribe(handler){this.subscriber=handler;return this;},track:async()=>{},presenceState:()=>({}),send:async()=>{}};channels.push(c);return c;},removeChannel:async()=>{}
  };
- w.eval(read('assets/js/studyrats.js'));w.eval(read('assets/js/amigos.js'));w.eval(read('assets/js/community-navigation.js'));w.eval(read('assets/js/social-rooms.js'));
+ w.eval(read('assets/js/studyrats.js'));w.eval(read('assets/js/amigos.js'));w.eval(read('assets/js/community-navigation.js'));w.eval(read('assets/js/social-rooms.js'));w.eval(read('assets/js/social-view.js'));
  await tick();await queue;await tick();
  return {w,d,errors,f,calls,channels,settle:async()=>{await tick();await queue;await tick();},fail:value=>{fails=value;}};
 }
@@ -59,6 +59,27 @@ test('social UI preserves failed drafts and isolates them by account and room',a
  x.fail(false);d.getElementById('social-message-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
  const sends=x.calls.filter(c=>c.name==='social_command'&&c.args.p_action==='send_message');assert.equal(sends.length,2);assert.equal(sends[0].args.p_payload.client_id,sends[1].args.p_payload.client_id);assert.equal(input.value,'');
  w.LuriaLocalOwnerStore={ownerId:B};w.dispatchEvent(new w.Event('luria:owner-changed'));await x.settle();assert.equal(w.LuriaSocial.getState(),null);assert.equal(d.getElementById('social-messages').textContent,'');
+});
+
+test('visual mode controls and modal agenda preserve the room channel and confirmed persisted state',async t=>{
+ const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'Sala de revisão visual',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
+ const count=x.channels.length;let voiceLeaves=0;w.LuriaVoice.leave=async()=>{voiceLeaves++;};
+ assert.equal(d.body.classList.contains('social-in-room'),true);assert.equal(d.querySelector('.social-chat .social-voice'),null);
+ d.querySelector('[data-study-mode="focus"]').click();await x.settle();assert.equal(w.LuriaSocial.getState().room.mode,'focus');assert.equal(d.getElementById('social-room').dataset.mode,'focus');assert.equal(x.channels.length,count);assert.equal(voiceLeaves,0);
+ d.querySelector('[data-open-dialog="social-agenda-dialog"]').click();assert.equal(d.getElementById('social-agenda-dialog').open,true);
+ d.getElementById('social-checklist-text').value='Revisar atividade';d.getElementById('social-checklist-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();assert.equal(d.getElementById('social-agenda-dialog').open,false);assert.equal(w.LuriaSocial.getState().checklist.length,1);
+ d.querySelector('[data-agenda-edit]').click();await x.settle();assert.equal(d.getElementById('social-agenda-dialog').open,true);assert.equal(d.getElementById('social-checklist-text').value,'Revisar atividade');
+ w.LuriaSocialView.close('social-agenda-dialog');d.getElementById('social-session-start').click();await x.settle();assert.equal(w.LuriaSocial.getState().session.mode,'focus');assert.equal(d.querySelector('[data-study-mode="review"]').disabled,true);assert.equal(x.channels.length,count);assert.equal(voiceLeaves,0);
+ d.getElementById('social-chat-toggle').click();assert.equal(d.getElementById('social-chat-toggle').getAttribute('aria-expanded'),'true');
+ d.getElementById('social-leave').click();await x.settle();assert.equal(d.body.classList.contains('social-in-room'),false);assert.deepEqual(x.errors,[]);
+});
+
+test('official Spotify embed persists across room refreshes and only closes on explicit dismissal or room exit',async t=>{
+ const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'QA de player oficial',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
+ d.getElementById('social-spotify-url').value='https://open.spotify.com/playlist/QATest';d.getElementById('social-spotify-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
+ Array.from(d.querySelectorAll('#social-spotify button')).find(b=>b.textContent==='Ouvir aqui').click();const frame=d.querySelector('#social-spotify iframe');assert.equal(frame.src,'https://open.spotify.com/embed/playlist/QATest');assert.equal(d.querySelector('.sv-player')!==null,true);
+ d.querySelector('[data-study-mode="review"]').click();await x.settle();assert.equal(d.querySelector('#social-spotify iframe'),frame);assert.equal(w.LuriaSocial.getState().room.mode,'review');
+ d.querySelector('.sv-player button').click();assert.equal(d.querySelector('#social-spotify iframe'),null);Array.from(d.querySelectorAll('#social-spotify button')).find(b=>b.textContent==='Ouvir aqui').click();await w.LuriaSocial.leave();assert.equal(d.querySelector('#social-spotify iframe'),null);assert.deepEqual(x.errors,[]);
 });
 test('social UI sends invitations, renders real groups and filters existing friends without inventing presence',async t=>{
  const x=await fixture(t),{w,d}=x;

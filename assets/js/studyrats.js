@@ -535,8 +535,8 @@ function sharedStudyratsRender(){
           '<span class="sr-person-copy"><strong>'+fEsc(p.name)+'</strong><small>'+fEsc(score)+' '+fEsc(type.unit)+'</small></span>'+
         '</div>'+
         '<div class="sr-road" aria-label="Posição visual de '+fEsc(p.name)+'">'+
-          '<span class="sr-route" aria-hidden="true"></span><span class="sr-progress" style="transform:scaleX('+(pct/100)+')"></span>'+
-          '<span class="sr-carriage" data-runner-key="'+fEsc(key)+'" data-position="'+pct+'" style="transform:translateX('+(Number.isFinite(from)&&previous.has(key)?from:pct)+'%)"><span class="sr-sprite">'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite studyrats-race-fitted',p.accessoryX,p.accessoryY)+'</span></span>'+
+          '<svg class="sr-trajectory" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path class="sr-rail" d="M0 60C120 60 130 20 250 20S380 60 500 60S630 100 750 100S880 60 1000 60"/><path class="sr-center" d="M0 60C120 60 130 20 250 20S380 60 500 60S630 100 750 100S880 60 1000 60"/></svg><span class="sr-route" aria-hidden="true"></span><span class="sr-progress" style="transform:scaleX('+(pct/100)+')"></span>'+
+          '<span class="sr-carriage" data-runner-key="'+fEsc(key)+'" data-position="'+pct+'" style="--runner-y:'+(-Math.sin(pct/100*Math.PI*2)*8).toFixed(2)+'px;transform:translateX('+(Number.isFinite(from)&&previous.has(key)?from:pct)+'%)"><span class="sr-sprite">'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite studyrats-race-fitted',p.accessoryX,p.accessoryY)+'</span></span>'+
         '</div>'+
       '</div>';
     }).join('');

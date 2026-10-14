@@ -93,9 +93,9 @@ function renderFriendsList(){
       </div>
       <div class="friends-actions">
         <button class="button secondary" type="button" data-study-friend="${fEsc(friend.user_id)}">Estudar junto</button>
-        <button class="button secondary" type="button" data-profile-friend="${fEsc(friend.user_id)}">Perfil</button>
+        <details class="sv-friend-options"><summary aria-label="Opções do amigo">⋯</summary><div class="sv-friend-menu"><button class="button secondary" type="button" data-profile-friend="${fEsc(friend.user_id)}">Perfil</button>
         <button class="button secondary" type="button" data-remove-friend="${fEsc(friend.user_id)}">Remover</button>
-        <button class="button secondary" type="button" data-block-friend="${fEsc(friend.user_id)}">Bloquear</button>
+        <button class="button secondary" type="button" data-block-friend="${fEsc(friend.user_id)}">Bloquear</button></div></details>
       </div>
     </div>`).join(""):`<div class="friends-empty">${query?'Nenhum amigo encontrado.':'Adicione sua turma pelo ID LURIA.'}</div>`;
 
