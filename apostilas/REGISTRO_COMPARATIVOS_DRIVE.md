@@ -118,6 +118,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Aprofundamento autoral:** seis vinhetas de decisão (TOLAC, risco de prolapso em apresentação alta, balão versus prostaglandina, taquissistolia, falha de indução, suspeita de infecção intra-amniótica), quadro de emergências e diferenciação explícita do problema clínico antes da escolha farmacológica.
 - **Estado editorial:** **EM REVISÃO; NÃO CERTIFICADA**. Benchmark do Drive insuficiente para o mesmo tema; falta leitura de uma apostila comparável, checagem item a item das 20+ seções, verificação visual desktop e PWA, auditoria integral de 60 mil caracteres didáticos úteis e renderização in situ de todos os recursos. Testes CI não substituem essa auditoria.
 
+## 2026-10-13 — Infecções na gestação e transmissão vertical
+
+- **Apostila:** `apostilas/infeccoes-gestacao-transmissao-vertical/index.html`.
+- **Benchmark acessado no Drive:** `03 - RESUMO - INFECCOES E GRAVIDEZ.pdf` (`1_1sIY_VD_A_uKrAyFkrOJxNhIAsRw7Tr`, aproximadamente 16,3 mil caracteres). Descreve sífilis, toxoplasmose e HIV, com destaque para sorologia, tratamento e via de parto. **Não é comparativo integral** para hepatites B/C, CMV, rubéola, varicela, EGB e demais capítulos. A origem Estrategia MED não foi verificada.
+- **Matriz de diferenças:** o PDF resume a resposta e algumas doses, mas deixa menos explícitas decisões sobre tratamento interrompido de sífilis, documentação neonatal, testes discordantes e manejo brasileiro do aleitamento após exposição ao HIV. A apostila LURIA já contém capítulos por agente e foi reforçada com cinco casos comentados, ligação explícita entre infecção materna/fetal/neonatal e referências nacionais.
+- **Segurança clínica:** Ministério da Saúde, PCDT de prevenção da transmissão vertical HIV/sífilis/hepatites (anexo atualizado julho 2024); orientação MS de sífilis em gestantes (máximo de nove dias entre doses; tratamento adequado iniciado pelo menos 30 dias antes do parto) e transmissão vertical HIV (aleitamento não recomendado no Brasil). Recomendações brasileiras prevalecem sobre material de Drive possivelmente anterior.
+- **Imagens reais:** mantida foto de lesões palmares de sífilis congênita, CDC, domínio público, `Congenital_syphilis_rash_on_palm.jpg`; retirada retinografia `congenital__toxo.jpg` do StatPearls (CC BY-NC-ND 4.0, incompatível com incorporação comercial). Substituída por **retinografia real de cicatriz macular curada após toxoplasmose congênita**, autores Sudharshan, Ganesh e Biswas, *Indian J Ophthalmol.* 2010, Wikimedia Commons `PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar.png`, **CC BY 2.0**. A legenda não a apresenta como infecção ativa.
+- **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Falta auditoria médica completa de todos os agentes, checagem visual em desktop/PWA, fontes brasileiras para cada posologia, teste de autossuficiência e revisão global de extensão didática não repetitiva.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
