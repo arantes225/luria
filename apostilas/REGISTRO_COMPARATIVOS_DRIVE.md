@@ -52,6 +52,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Melhorias planejadas:** interpretação do PBF com líquido inadequado apesar de escore alto; prematuridade e reatividade 10×10; hierarquia Doppler umbilical/CTG em restrição de crescimento; casos de monitorização intraparto/taquissistolia e documentação de conduta.
 - **Certificação:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Falta revisão integral de profundidade/60K caracteres úteis, matriz completa de rastreabilidade clínica, teste de compreensão, revisão de fontes nacionais específicas, inspeção visual desktop/PWA e confirmação de todas as imagens aprovadas renderizadas.
 
+## 2026-10-13 — Câncer de mama
+
+- **Apostila LURIA:** `apostilas/cancer-de-mama/index.html`, capítulo novo `capitulo-concordancia-mamaria-2026`.
+- **Documento do Drive efetivamente aberto:** `MASTOLOGIA.pdf` (aprox. 2,7 mil caracteres de texto extraído), resumo de fatores de risco, BI-RADS, fluxo papilar, nódulos, histologia, estadiamento e terapia. Não há comprovação da autoria da Estratégia MED.
+- **Diferenças relevantes:** o resumo do Drive ensina mamografia do antigo intervalo 50–69 anos; desde setembro de 2025, a recomendação prioritária de rastreamento no SUS/INCA é **50–74 anos, bienal**. No resumo comparativo, a biópsia por agulha fina e a conduta axilar são simplificadas; a apostila LURIA já explica que biópsia tecidual, subtipos e decisão axilar dependem de cenário e histologia.
+- **Correção autoral realizada:** acrescentado capítulo de concordância clínico-radiológico-patológica com seis situações comentadas (massa suspeita com mamografia negativa, microcalcificações, biópsia benigna discordante, descarga papilar patológica, massa na gestação/lactação e mudança de categoria BI-RADS 3). Sumário atualizado, mantendo os seis esquemas SVG originais preexistentes e sem copiar ilustrações do Drive.
+- **Fontes públicas verificadas:** INCA, Detecção Precoce e versão para profissionais (atualizadas com a faixa 50–74); ACR Appropriateness Criteria, Palpable Breast Masses; NCI, Breast Cancer Treatment (PDQ). As recomendações de sociedades sobre rastreamento devem ser identificadas separadamente da política do SUS.
+- **Pendências do Prompt Magno:** auditoria detalhada das fontes de cada capítulo, exames reais de mamografia/USG/histopatologia com licença e renderização verificadas, leitura pedagógica total, contagem de 60 mil caracteres de prosa médica original, teste de conhecimento por sistema e revisão visual desktop/PWA. **EM REVISÃO, NÃO CERTIFICADA.**
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
