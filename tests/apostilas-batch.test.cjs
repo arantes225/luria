@@ -382,3 +382,20 @@ test("Indução de parto conserva exame verdadeiro e alerta para situações de 
   assert.match(h,/OMS, métodos mecânicos/);
   assert.match(h,/NICE NG207/);
 });
+
+
+test("Transmissão vertical conserva imagem CDC e usa retinografia licenciada",()=>{
+  const h=read("apostilas/infeccoes-gestacao-transmissao-vertical/index.html");
+  assert.match(h,/Congenital_syphilis_rash_on_palm\.jpg/);
+  assert.match(h,/id="fig-cicatriz-ocular-toxoplasmose"/);
+  assert.match(h,/PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar\.png/);
+  assert.match(h,/creativecommons\.org\/licenses\/by\/2\.0/);
+  assert.doesNotMatch(h,/congenital__toxo\.jpg/,
+    "Fotografia StatPearls com licença NC-ND não deve ser incorporada ao produto comercial");
+  assert.match(h,/id="casos-transmissao-vertical-diretriz-2026"/);
+  assert.match(h,/href="#casos-transmissao-vertical-diretriz-2026"/);
+  assert.match(h,/não ultrapasse nove dias/);
+  assert.match(h,/pelo menos 30 dias antes do parto/);
+  assert.match(h,/não se recomenda amamentação/);
+  assert.match(h,/coriorretiniana de toxoplasmose congênita após a fase ativa/);
+});
