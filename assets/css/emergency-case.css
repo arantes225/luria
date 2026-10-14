@@ -554,19 +554,14 @@
 }
 #plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-eyes{
   opacity:0;
-  animation:luriaPregnantV1Blink 5.8s linear infinite;
+  animation:luriaPregnantV1Blink 5.8s cubic-bezier(.42,0,.58,1) infinite;
   will-change:opacity;
 }
-/* Fechamento ~120 ms, abertura ~180 ms, sem transition concorrente:
-   elimina a tremida/catraca na ultima etapa da piscada. */
+/* Uma curva continua para fechar e outra para abrir, sem interpolacoes
+   adicionais, transitions paralelas ou tremida no fim da piscada. */
 @keyframes luriaPregnantV1Blink{
-  0%,42%,50.2%,100%{opacity:0}
-  43%{opacity:.15}
-  44%{opacity:.58}
-  44.8%,46.4%{opacity:1}
-  47.3%{opacity:.8}
-  48.3%{opacity:.34}
-  49.2%{opacity:.08}
+  0%,42.2%,50%,100%{opacity:0}
+  45%,46.5%{opacity:1}
 }
 #plantao-simulator .plantao-scene.luria-pregnant-v1[data-luria-eyes="closed"] .luria-pregnant-v1-eyes{
   opacity:1!important;animation:none!important;
