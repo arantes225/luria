@@ -198,6 +198,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Imagens:** a apostila não possuía `img` estático no HTML analisado. Não inserir figura clínica artificial como substituto de fotografia/exame real. Continua necessária curadoria de exames reais adequados com licença documentada.
 - **Estado:** EM REVISÃO, NÃO CERTIFICADA PELO PROMPT MAGNO. Pendem avaliação de autossuficiência integral, auditoria de 60 mil caracteres didáticos sem repetições, revisão clínica farmacológica completa, imagens reais, conferência visual desktop/PWA e validação de testes e deploy.
 
+## 2026-10-14 — Síndrome ovariana metabólica poliendócrina (SOMP/PMOS)
+
+- **Apostila:** `apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html`.
+- **Benchmark lido do Drive:** `01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf` (aprox. 10,5 mil caracteres extraídos). Apresenta fisiopatologia ovariana/metabólica, Rotterdam, fenótipo, exames, terapia hormonal e infertilidade. Material de circulação `Medicina livre`; não há comprovação da autoria institucional de Estratégia MED.
+- **Diferenças essenciais:** o resumo comparativo usa algumas abordagens tradicionais de SOP/PCOS e reduz avaliação de adolescentes a idades fixas; a diretriz internacional de 2023, atualizada apenas na terminologia para PMOS/SOMP em 2026, recomenda avaliação por **tempo desde a menarca**, sem ultrassom e sem AMH para adolescentes; orienta que contraceptivos combinados alteram a dosagem bioquímica de andrógenos e que TOTG 75 g é a forma preferida de avaliar status glicêmico, inclusive sem obesidade.
+- **Correção autoral realizada:** seção `casos-decisao-somp-2026` desenvolvendo cinco casos clínicos com raciocínio (adolescência, andrógenos na vigência de anticoncepcional, anovulação apesar de ciclos regulares, risco glicêmico em IMC normal e infertilidade anovulatória), matriz da irregularidade por anos desde a menarca e avaliação de saúde mental, sono e endométrio. Foi **preservada**, e não substituída, a ultrassonografia clínica real `Polycystic_ovary.jpg` de Schomynv (Wikimedia Commons, CC0 1.0), agora com acesso ampliável ao original.
+- **Referências conferidas:** ASRM, recomendações internacionais PMOS/PCOS 2023 atualizadas; Monash, terminologia 2026; Endocrine Society, anúncio de renomeação em 2026; Wikimedia Commons, ficha do arquivo clínico real e CC0.
+- **Estado:** EM REVISÃO, NÃO CERTIFICADA PELO PROMPT MAGNO. Verificar 60K caracteres de prosa útil, leitura integral e casos representativos, rastreabilidade das afirmações, possível expansão de exames reais licenciados e inspeção visual desktop/PWA. A substituição de figura real por esquema sintético não foi realizada.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
