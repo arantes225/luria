@@ -207,6 +207,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Referências conferidas:** ASRM, recomendações internacionais PMOS/PCOS 2023 atualizadas; Monash, terminologia 2026; Endocrine Society, anúncio de renomeação em 2026; Wikimedia Commons, ficha do arquivo clínico real e CC0.
 - **Estado:** EM REVISÃO, NÃO CERTIFICADA PELO PROMPT MAGNO. Verificar 60K caracteres de prosa útil, leitura integral e casos representativos, rastreabilidade das afirmações, possível expansão de exames reais licenciados e inspeção visual desktop/PWA. A substituição de figura real por esquema sintético não foi realizada.
 
+## 2026-10-14 — Trabalho de Parto Prematuro
+
+- **Apostila LURIA:** `apostilas/trabalho-parto-prematuro/content.json` (carregada pela página `index.html`).
+- **Etapa zero — comparação efetiva com Drive:** buscas por `trabalho de parto prematuro`, `tocolise`, `prematuridade`, `parto prematuro` e `cervicometria` não encontraram apostila equivalente. Foram abertos e lidos `Pré-Natal.pdf` (inclui somente cervicometria na morfológica), `03 - SANGRAMENTO DE SEGUNDA METADE.pdf` (DPP, prévia e diagnóstico diferencial de emergência) e `Desconforto Respiratório do Recém Nascido.pdf` (repercussões neonatais e indicação geral de corticoterapia antenatal). Nenhum desenvolve o diagnóstico e a farmacologia do TPP: benchmark **parcial, não equivalente**. Não atribuir autoria Estratégia MED sem prova.
+- **Matriz de cobertura:** já existentes diagnóstico clínico e evolutivo, corticoide, tocólise, magnésio, RPMO, EGB, periviabilidade, complicações, casos e manual avançado. Lacuna crítica: misturar valor preventivo de colo curto no segundo trimestre com limiar de triagem do nascimento iminente na paciente sintomática. Cobertura do material do Drive: prevenção muito breve e diferenciais de DPP/hemorragia; faltam condutas detalhadas.
+- **Aprofundamento original incorporado:** novo capítulo `prevencao-vs-tpp-diagnostico-2026`, com tabela contextual e quatro casos completos. Distingue recomendação SMFM nº 70/2024 de ≤25 mm (prevenção de prematuridade, progesterona vaginal ≤20 mm em assintomática sem parto prematuro prévio) e NICE NG25 (>15 mm vs ≤15 mm na suspeita sintomática a partir de 30 semanas, estimativa em 48 horas). Acrescenta critérios de tocólise com nifedipino da OMS 2022, contraindicações clínicas, transferência antenatal e função do magnésio na neuroproteção. Os limiares de NICE/SMFM não são descritos como diretrizes brasileiras.
+- **Fontes primárias públicas:** Society for Maternal-Fetal Medicine, Consult Series nº 70, 2024; NICE NG25, Preterm labour and birth; OMS, Recommendation on tocolytic therapy for improving preterm birth outcomes, 2022. Conteúdo não foi reproduzido dos PDFs do Drive.
+- **Imagens:** não foi removido nenhum exame clínico aprovado. Revisão completa do acervo de imagens do Admin, licenças e renderização PWA ainda necessária.
+- **Estado:** EM REVISÃO, **NÃO CERTIFICADA PELO PROMPT MAGNO**. O Drive não trouxe um benchmark de profundidade equivalente; pendem revisão integral de 60.000 caracteres didáticos úteis sem repetições, checagem exaustiva dos tratamentos, prova pedagógica por capítulo e inspeção visual real em desktop/PWA.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
