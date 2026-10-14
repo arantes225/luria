@@ -33,10 +33,11 @@ for(const file of files){
  const ext=path.extname(file).toLowerCase();let data=fs.readFileSync(path.join(root,file));
  if(textExtensions.has(ext)){
   let text=data.toString('utf8').replaceAll(new URL(productionUrl).hostname.split('.')[0],targetUrl.hostname.split('.')[0]).replaceAll(productionKey,config.supabasePublishableKey);
-  if(file==='assets/js/social-voice.js'&&voiceOrigin)text=text.replace("const endpoint='/api/study-voice';",'const endpoint='+JSON.stringify(voiceOrigin.origin+'/api/study-voice')+';');
+  if(file==='assets/js/social-voice.js')text=text.replace(/const endpoint='[^']+';/,"const endpoint='"+(voiceOrigin?voiceOrigin.origin:'/api/study-voice').replace(/\/$/,'')+(voiceOrigin?'/api/study-voice':'')+"';");
   if(file==='service-worker.js')text=text.replace(/const CACHE_VERSION = "([^"]+)";/,'const CACHE_VERSION = "$1-staging-'+buildTag+'";');
   if(ext==='.webmanifest'){const manifest=JSON.parse(text);manifest.name+=' — Homologação';manifest.short_name='LURIA Teste';text=JSON.stringify(manifest,null,2)+'\n';}
   if(ext==='.html'){
+   text=text.replaceAll(' https://luria-study-voice.lfab225.workers.dev','');
    const dom=new JSDOM(text);const policy=dom.window.document.querySelector('meta[http-equiv="Content-Security-Policy"]');
    if(policy){
     const hashes=[...new Set([...dom.window.document.scripts].filter(s=>!s.hasAttribute('src')&&s.textContent.trim()&&!/^(application\/(?:ld\+)?json)$/i.test(s.type)).map(s=>"'sha256-"+crypto.createHash('sha256').update(s.textContent,'utf8').digest('base64')+"'"))];

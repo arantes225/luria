@@ -7,4 +7,5 @@ browser-results/
 .wrangler-home/
 .npm-cache/
 build/staging/
+build/pages/
 build/staging*.zip

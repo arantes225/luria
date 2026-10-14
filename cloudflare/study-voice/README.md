@@ -1,4 +1,6 @@
-# Voz das salas LURIA — publicado somente em homologação
+# Voz das salas LURIA
+
+Atualização de 14/10/2026: publicação em produção autorizada pelo usuário. O serviço separado `luria-study-voice` usa `wrangler.production.toml` e o Supabase oficial; ver [registro de produção](../../docs/social-production.md). As seções abaixo registram a preparação e os testes anteriores em homologação.
 
 Este Worker faz apenas sinalização e autorização. O áudio trafega diretamente pelo Cloudflare Realtime SFU via WebRTC. Supabase mantém identidade, participação e permissões; não transporta áudio.
 

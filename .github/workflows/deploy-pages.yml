@@ -40,7 +40,7 @@ jobs:
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
       - name: Validate social room permissions, client behavior and voice authorization
-        run: node --test --test-isolation=none tests/social-database.test.cjs tests/social-ui.test.cjs tests/social-voice.test.cjs tests/social-voice-client.test.cjs tests/social-pwa.test.cjs tests/stage82-ui.test.cjs tests/ui-stage22.test.cjs
+        run: node --test --test-isolation=none tests/social-database.test.cjs tests/social-room-features.test.cjs tests/social-voice-usage.test.cjs tests/social-ui.test.cjs tests/social-voice.test.cjs tests/social-voice-client.test.cjs tests/social-voice-site.test.cjs tests/social-pwa.test.cjs tests/social-production.test.cjs tests/stage82-ui.test.cjs tests/ui-stage22.test.cjs
       - name: Audit all apostilas without blocking legacy books
         run: node scripts/audit-apostilas-batch.cjs
       - name: Run deterministic frontend regressions
@@ -54,6 +54,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node for public artifact
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Prepare public assets only
+        run: node scripts/build-pages.cjs
       - name: Prepare optimized UI images
         uses: actions/setup-python@v5
         with:
@@ -61,13 +67,13 @@ jobs:
       - name: Reencode safe UI PNGs for the published artifact
         run: |
           python -m pip install Pillow==11.3.0
-          python scripts/optimize-static-images.py --root .
+          python scripts/optimize-static-images.py --root build/pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: build/pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

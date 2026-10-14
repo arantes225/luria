@@ -3,8 +3,8 @@
  if(window.LuriaVoice)return;
  let pc=null,stream=null,room=null,clientId=null,broadcast=null,heartbeat=null,queue=Promise.resolve(),subscribed=new Set(),muted=false,generation=0,joining=false,iceExpiresAt=0;
  const $=id=>document.getElementById(id);
- // A same-origin /api/study-voice route avoids adding broad CSP permissions.
- const endpoint='/api/study-voice';
+ // GitHub Pages has no server routes; staging builds use their same-origin proxy.
+ const endpoint='https://luria-study-voice.lfab225.workers.dev/api/study-voice';
  const status=text=>{if($('social-voice-status'))$('social-voice-status').textContent=text;};
  let lastAuthorization=null,activeContext=null;
  let uplink=null,listeningMuted=false,pushToTalk=false,statsTimer=null,quotaTimer=null,voiceQuota=null,quotaExpires=0,quotaRecorded=0,quotaRemaining=0;
