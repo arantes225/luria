@@ -17,7 +17,7 @@ test('staging artifact isolates API and websocket endpoints without changing pro
  for(const page of ['amigos.html','amigos/index.html','login/index.html','dashboard/index.html']){
   const html=text(page);assert.ok(html.includes(new URL(config.supabaseUrl).hostname));assert.ok(!html.includes('sxdsfklllilhdyuamvvg'));
  }
- assert.match(text('service-worker.js'),/luria-pwa-social-rooms-20261014-staging/);
+ const sourceVersion=fs.readFileSync(path.join(root,'service-worker.js'),'utf8').match(/const CACHE_VERSION = "([^"]+)"/)[1];assert.ok(text('service-worker.js').includes(sourceVersion+'-staging-'));
  assert.match(text('manifest.webmanifest'),/Homologação/);
  assert.match(text('assets/js/social-voice.js'),/const endpoint='\/api\/study-voice';/);
  assert.equal(config.voiceOrigin,null);

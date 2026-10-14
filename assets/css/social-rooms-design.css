@@ -1,0 +1,76 @@
+/* Stage 4 — rooms presentation, preserving session and media controllers. */
+@layer luria-ui-education {
+body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
+ &.social-in-room .community-nav {display:none!important;}
+ #community-rooms>.social-card-head {padding:16px;border:1px solid var(--color-border);border-radius:14px;background:color-mix(in srgb,var(--sf-teal) 6%,var(--color-surface));gap:12px;margin-bottom:12px;}
+ #community-rooms>.social-card-head h2 {font-size:23px!important;}
+ #community-rooms>.social-card-head p {font-size:14px;line-height:1.5;}
+ #friends-create-room-toggle {border-radius:10px;min-height:40px!important;}
+ #social-join-form {background:var(--color-surface);border-radius:12px;padding:10px;max-width:100%;}
+ #social-join-form label>span {font-size:12px;}
+ #social-join-form input {font-size:14px;min-height:38px!important;}
+ .social-filters {padding:12px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface-elevated);margin:12px 0;gap:10px;}
+ .social-filters label>span {font-size:12px;}
+ .social-filters :is(input,select) {font-size:14px;border-radius:9px;min-height:40px;}
+ #social-rooms {grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+ #social-rooms .sl-room-card {--sl-tone:var(--color-primary-text);padding:0 14px 14px!important;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;gap:10px;}
+ #social-rooms .sl-room-card[data-room-mode="focus"] {--sl-tone:var(--sf-teal);}
+ #social-rooms .sl-room-card[data-room-mode="review"] {--sl-tone:var(--sf-violet);}
+ #social-rooms .sl-room-card[data-room-mode="together"] {--sl-tone:var(--sf-warm);}
+ .sl-room-cover {display:flex;align-items:center;gap:10px;padding:14px;margin:0 -14px 2px;background:color-mix(in srgb,var(--sl-tone) 9%,var(--color-surface));color:var(--sl-tone);border-bottom:1px solid color-mix(in srgb,var(--sl-tone) 20%,var(--color-border));font-size:12px;}
+ .sl-room-cover .social-icon {width:25px;height:25px;}
+ #social-rooms .sl-room-card h3 {font-size:17px!important;line-height:1.4;}
+ #social-rooms .sl-room-card p {font-size:13px;line-height:1.55;margin:0;}
+ #social-rooms .sl-room-card>.button {margin-top:auto;min-height:40px!important;border-radius:9px;}
+ #social-rooms .social-room-meta {font-size:12px;gap:7px;}
+ #social-rooms .social-room-meta:nth-last-of-type(1) {padding-bottom:4px;}
+ .sl-jam-wall {margin-top:16px!important;}
+ #social-room .social-room-header {padding:12px 14px;border:1px solid var(--color-border);border-left:3px solid var(--sf-teal);border-radius:13px;background:var(--color-surface);}
+ #social-room .social-room-header h2 {font-size:22px!important;}
+ #social-room .social-room-header p {font-size:13px!important;line-height:1.5;}
+ #social-room .sv-social-strip {padding:3px 10px;border:1px solid var(--color-border);border-radius:12px;background:var(--color-surface-elevated);}
+ #social-room .sv-voice-bar {border-radius:12px;background:color-mix(in srgb,var(--sf-teal) 5%,var(--color-surface));border-color:color-mix(in srgb,var(--sf-teal) 20%,var(--color-border));padding:7px 10px;}
+ #social-room.sv-room {min-height:690px;}
+ #social-room .social-room-layout {grid-template-columns:minmax(0,2.2fr) minmax(280px,1fr);gap:8px;}
+ #social-room .sv-modes {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;border:0;padding:0;background:transparent;}
+ #social-room .sv-modes button {--sl-mode:var(--color-primary-text);display:grid!important;grid-template-columns:22px 1fr;align-content:center;gap:5px 8px;min-width:0;min-height:82px;padding:10px;border:1px solid var(--color-border);border-top:3px solid color-mix(in srgb,var(--sl-mode) 45%,var(--color-border));border-radius:11px;background:var(--color-surface);text-align:left;color:var(--color-text-primary);}
+ #social-room .sv-modes button[data-study-mode="focus"] {--sl-mode:var(--sf-teal);}
+ #social-room .sv-modes button[data-study-mode="review"] {--sl-mode:var(--sf-violet);}
+ #social-room .sv-modes button[data-study-mode="together"] {--sl-mode:var(--sf-warm);}
+ #social-room .sv-modes button .social-icon {width:22px;height:22px;color:var(--sl-mode);}
+ #social-room .sv-modes button>span {font-size:12px;line-height:1.4;font-weight:500;}
+ #social-room .sv-modes button>small {grid-column:1/-1;font-size:12px!important;line-height:1.5!important;color:var(--color-text-secondary);}
+ #social-room .sv-modes button[aria-pressed="true"] {background:color-mix(in srgb,var(--sl-mode) 9%,var(--color-surface));border-color:color-mix(in srgb,var(--sl-mode) 50%,var(--color-border));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--sl-mode) 20%,transparent);}
+ #social-room .sv-modes button:disabled {opacity:.65;cursor:not-allowed;}
+ #social-room .sv-modes button:not(:disabled):hover {border-color:var(--sl-mode);}
+ #social-rooms .sl-room-card {transition:border-color .18s,box-shadow .18s;}
+ #social-rooms .sl-room-card:hover {border-color:color-mix(in srgb,var(--sl-tone) 45%,var(--color-border));box-shadow:var(--shadow-sm);}
+ #social-room .social-focus {border-color:color-mix(in srgb,var(--sf-teal) 25%,var(--color-border));background:color-mix(in srgb,var(--sf-teal) 5%,var(--color-surface));border-radius:13px;}
+ #social-room .social-focus output {font-variant-numeric:tabular-nums;letter-spacing:-.03em;}
+ #social-room .sv-objective {border-radius:13px;border-top:3px solid color-mix(in srgb,var(--sf-warm) 45%,var(--color-border));}
+ #social-room .sv-library {border-top:3px solid color-mix(in srgb,var(--sf-violet) 40%,var(--color-border));}
+ #social-room .social-chat {border-radius:13px;padding:14px!important;background:var(--color-surface);}
+ #social-room .social-chat .social-card-head {min-height:30px;}
+ #social-room #social-messages {align-items:flex-start;}
+ #social-room #social-messages .social-message {align-self:flex-start;margin-left:0;margin-right:auto;max-width:86%;width:fit-content;padding:10px 12px;}
+ #social-room #social-messages .social-message.is-mine {align-self:flex-end;margin-left:auto;margin-right:0;background:var(--color-primary-subtle);}
+ #social-room .social-message p {font-size:13px!important;line-height:1.55!important;overflow-wrap:anywhere;}
+ #social-room .social-message header strong {font-size:12px;}
+ #social-room .sv-composer {padding-top:10px;}
+ #social-room #social-message-text {font-size:14px!important;line-height:20px!important;border-radius:10px;}
+ #social-room .social-answer {border-radius:11px;padding:13px;font-size:14px;line-height:1.55;}
+ #social-room .social-answer[aria-pressed="true"] {border-color:var(--color-primary);background:var(--color-primary-subtle);}
+ #social-dialog {width:min(680px,calc(100% - 24px));padding:22px;}
+ #social-dialog .sl-fields {min-width:0;padding:14px;margin:0;border:1px solid var(--color-border);border-radius:12px;}
+ #social-dialog .sl-fields legend {padding:0 6px;font-size:13px;color:var(--color-primary-text);font-weight:500;}
+ #social-dialog .sl-fields label {font-size:12px;gap:6px;}
+ #social-dialog .sl-fields :is(input:not([type="checkbox"]),select,textarea) {font-size:14px;border-radius:9px;}
+ #social-dialog .sl-fields:has(.social-form-grid):not(:has(label:not([hidden]))) {display:none;}
+ #social-dialog #friends-room-create {justify-self:end;min-height:40px;}
+ #social-dialog #friends-room-status {font-size:12px;line-height:1.5;}
+ @media(max-width:1150px) {#social-rooms {grid-template-columns:repeat(2,minmax(0,1fr));}#social-room .sv-modes {grid-template-columns:repeat(2,minmax(0,1fr));}#social-room .sv-modes button {min-height:70px;}}
+ @media(max-width:900px) {#social-room .social-room-layout {grid-template-columns:1fr;}#social-room .sv-room-identity {align-items:start;}#social-room .social-room-header {flex-wrap:wrap;}#social-room.sv-room {height:auto;min-height:0;}}
+ @media(max-width:520px) {#social-rooms {grid-template-columns:1fr;}#community-rooms>.social-card-head {padding:14px;}#community-rooms>.social-card-head h2 {font-size:20px!important;}.social-filters {grid-template-columns:1fr;}#social-room .sv-modes button {grid-template-columns:1fr;justify-items:start;min-height:96px;}#social-room .sv-modes button>small {font-size:11px!important;}#social-dialog {padding:16px;}#social-dialog .social-form-grid {grid-template-columns:1fr;}#social-room .social-room-header h2 {font-size:19px!important;}#social-room #social-message-text {font-size:16px!important;}#social-room .sv-chat-dock.is-open {padding-bottom:env(safe-area-inset-bottom,0px);}}
+ @media(prefers-reduced-motion:reduce) {#social-room :is(button,.social-message) {transition:none;}}
+}
+}

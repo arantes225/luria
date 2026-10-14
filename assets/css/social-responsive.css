@@ -1,0 +1,37 @@
+/* Cross-theme compact/PWA refinements. No global shell or account state changes. */
+@layer luria-ui-education {
+body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
+ :is(.social-row-copy,.friend-copy,.sg-title,.social-room-card,.sv-room-identity)>:is(strong,h3,p) {overflow-wrap:anywhere;}
+ :is(.sv-dialog,#social-dialog) {max-width:calc(100vw - 24px);max-height:calc(100dvh - 32px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));overscroll-behavior:contain;scroll-padding-block:16px;}
+ :is(.social-row,.social-room-meta,.sg-tools) {min-width:0;}
+ :is(.social-badge,.social-room-meta,.sg-meta,.sr-standing-copy) {font-variant-numeric:tabular-nums;}
+ :is(button,a,summary):focus-visible {outline:2px solid var(--color-primary);outline-offset:3px;}
+ @media(max-width:900px) {
+  :is(.community-panel,#sf-add-dialog,#social-dialog,.sv-dialog) :is(input:not([type="checkbox"]),select,textarea) {font-size:16px!important;}
+  #social-room #social-message-text {font-size:16px!important;}
+  .sv-chat-dock.is-open #social-chat-panel {top:calc(var(--sl-visible-top,0px) + 84px);bottom:auto;height:calc(var(--sl-visible-height,100dvh) - 154px - env(safe-area-inset-bottom,0px));max-height:calc(var(--sl-visible-height,100dvh) - 24px);min-height:0;overscroll-behavior:contain;}
+  &.sl-short-viewport .sv-chat-dock.is-open #social-chat-panel {top:calc(var(--sl-visible-top,0px) + 54px);height:calc(var(--sl-visible-height,100dvh) - 68px);}
+  #social-room .sv-chat-dock.is-open #social-chat-toggle {top:calc(var(--sl-visible-top,0px) + 90px);bottom:auto!important;right:24px;min-height:40px!important;height:40px;z-index:26;}
+  &.sl-short-viewport #social-room .sv-chat-dock.is-open #social-chat-toggle {top:calc(var(--sl-visible-top,0px) + 60px);}
+  #social-room .sv-chat-dock.is-open .social-chat .social-card-head {padding-right:90px;min-height:42px;box-sizing:border-box;}
+  #social-room .sv-chat-dock.is-open .social-chat {padding:10px!important;overflow:hidden;}
+  #social-room .sv-chat-dock.is-open .social-messages {min-height:0;overscroll-behavior:contain;overflow-anchor:none;}
+  #social-room .sv-chat-dock.is-open .sv-composer {position:relative;flex-shrink:0;}
+  #social-room {padding-bottom:calc(64px + env(safe-area-inset-bottom,0px));}
+ }
+ @media(pointer:coarse) {
+  :is(.community-panel,#sf-add-dialog,#social-dialog,.sv-dialog) :is(.button,summary) {min-height:44px!important;box-sizing:border-box;}
+  #community-friends .sv-friend-options>summary {min-width:44px;}
+ }
+ @media(max-width:520px) {
+  :is(.sg-tools,.social-actions) {gap:8px;}
+  :is(.sf-add-dialog,#social-dialog,.sv-dialog) .button {min-height:40px!important;}
+  #community-friends .sf-person-card .friends-actions>.button {min-height:40px!important;}
+  #social-room .social-room-header>.social-actions {justify-content:flex-start;}
+  #social-room .sv-social-strip {padding:6px;}
+  #social-room .sv-modes button {min-height:100px;}
+  #social-room .sv-music-top .social-actions {flex-wrap:wrap;}
+ }
+ @media(prefers-reduced-motion:reduce) {scroll-behavior:auto;:is(.sf-person-card,.sg-card,.sg-details>summary,.sl-room-card,.sr-carriage,.sr-sprite) {transition:none!important;}}
+}
+}

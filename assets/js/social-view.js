@@ -1,0 +1,32 @@
+/* Visual controls reuse the existing social client. No API, media or Realtime connection here. */
+(() => {
+ 'use strict';if(window.LuriaSocialView)return;
+ const $=id=>document.getElementById(id);let restoreFocus=null;
+ const paths={mic:'<rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3"/>',leave:'<path d="M9 4H4v16h5M10 12h11m-4-4 4 4-4 4"/>',speaker:'<path d="M4 9h4l5-4v14l-5-4H4zM16 8a6 6 0 0 1 0 8M19 5a10 10 0 0 1 0 14"/>',play:'<path d="m8 4 12 8-12 8V4Z"/>',send:'<path d="m3 3 18 9-18 9 4-9-4-9Zm4 9h14"/>',attach:'<path d="m8 12 6-6a3 3 0 0 1 4 4l-8 8a5 5 0 0 1-7-7l8-8"/>',settings:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="3"/><circle cx="15" cy="17" r="3"/>'};
+ const svg=name=>`<svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${paths[name]}</svg>`;
+ function open(id){const dialog=$(id);if(!dialog)return;restoreFocus=document.activeElement;if(dialog.showModal)dialog.showModal();else dialog.setAttribute('open','');dialog.querySelector('input:not([type="hidden"]),select')?.focus();}
+ function close(id){const dialog=$(id);if(dialog?.close)dialog.close();else dialog?.removeAttribute('open');restoreFocus?.focus();}
+ document.querySelectorAll('[data-open-dialog]').forEach(button=>button.addEventListener('click',()=>open(button.dataset.openDialog)));
+ document.querySelectorAll('[data-close-dialog]').forEach(button=>button.addEventListener('click',()=>close(button.dataset.closeDialog)));
+ document.querySelectorAll('.sv-dialog').forEach(dialog=>dialog.addEventListener('close',()=>restoreFocus?.focus()));
+ document.querySelectorAll('[data-study-mode]').forEach(button=>button.addEventListener('click',()=>{const select=$('social-session-mode');if(select.disabled)return;select.value=button.dataset.studyMode;select.dispatchEvent(new Event('change',{bubbles:true}));}));
+ function modes(){const select=$('social-session-mode');document.querySelectorAll('[data-study-mode]').forEach(button=>{button.setAttribute('aria-pressed',String(button.dataset.studyMode===select.value));button.disabled=select.disabled;button.title=select.disabled&&button.dataset.studyMode!==select.value?'O administrador pode trocar o modo após encerrar a sessão.':button.textContent.trim();});}
+ $('social-goal-edit')?.addEventListener('click',()=>{$('social-room-settings').click();$('social-dialog-form').elements.objective.focus();});
+ $('social-strip-invite')?.addEventListener('click',()=>$('social-invite').click());
+ $('social-chat-toggle')?.addEventListener('click',e=>{const dock=e.currentTarget.closest('.sv-chat-dock'),show=!dock.classList.contains('is-open');dock.classList.toggle('is-open',show);e.currentTarget.setAttribute('aria-expanded',String(show));e.currentTarget.textContent=show?'Fechar chat':'Abrir chat';if(show)$('social-message-text').focus();});
+ const textarea=$('social-message-text'),resize=()=>{if(!textarea)return;textarea.style.height='auto';textarea.style.height=Math.min(110,Math.max(36,textarea.scrollHeight))+'px';};
+ textarea?.addEventListener('input',resize);textarea?.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey&&!e.isComposing){e.preventDefault();$('social-message-form').requestSubmit();}});
+ function controls(){const voice=window.LuriaVoice?.getState?.()||{};for(const[id,name]of Object.entries({'social-voice-mute':'mic','social-voice-leave':'leave','social-voice-listen':'speaker','social-voice-play':'play'})){const button=$(id);if(!button)continue;const label=id==='social-voice-mute'?(voice.muted?'Ativar microfone':'Silenciar microfone'):id==='social-voice-listen'?(voice.listeningMuted?'Ouvir áudio':'Silenciar áudio'):id==='social-voice-leave'?'Sair da voz':'Ouvir a turma';button.setAttribute('aria-label',label);button.title=label;button.innerHTML=svg(name);button.classList.add('sv-icon-control');if(id==='social-voice-mute'||id==='social-voice-listen')button.setAttribute('aria-pressed',String(id==='social-voice-mute'?!!voice.muted:!!voice.listeningMuted));}
+  const options=$('social-voice-options')?.querySelector('summary');if(options&&!options.querySelector('svg')){options.setAttribute('aria-label','Configurações de áudio');options.title='Configurações de áudio';options.innerHTML=svg('settings');}
+ }
+ const actions=$('social-message-form')?.querySelector('.social-actions');if(actions){const attach=actions.querySelector('label');const input=attach.querySelector('input');attach.setAttribute('aria-label','Anexar arquivo');attach.title='Anexar arquivo';attach.replaceChildren();attach.insertAdjacentHTML('beforeend',svg('attach'));attach.append(input);const send=actions.querySelector('button[type="submit"]');send.setAttribute('aria-label','Enviar mensagem');send.title='Enviar mensagem';send.innerHTML=svg('send');}
+ window.addEventListener('luria:room-rendered',()=>{modes();controls();resize();});window.addEventListener('luria:voice-state',controls);
+ window.addEventListener('luria:visual-close',e=>close(e.detail));window.addEventListener('luria:visual-open',e=>open(e.detail));
+ window.addEventListener('luria:community-tab',e=>{const heading=document.querySelector('.luria-page-spotlight-copy strong');if(heading)heading.textContent=e.detail.area==='rooms'?'Salas':e.detail.area==='groups'?'Grupos':'Amigos';});
+ // Keep the compact chat inside the visible viewport when the mobile keyboard opens.
+ const viewport=window.visualViewport;let viewportFrame=0,viewportKey='';
+ function measureViewport(){viewportFrame=0;const height=Math.max(0,Math.round(viewport?.height||window.innerHeight)),top=Math.max(0,Math.round(viewport?.offsetTop||0));const key=height+':'+top;if(key===viewportKey)return;viewportKey=key;document.body.style.setProperty('--sl-visible-height',height+'px');document.body.style.setProperty('--sl-visible-top',top+'px');document.body.classList.toggle('sl-short-viewport',height<420);}
+ function queueViewport(){if(!viewportFrame)viewportFrame=requestAnimationFrame(measureViewport);}
+ viewport?.addEventListener('resize',queueViewport,{passive:true});viewport?.addEventListener('scroll',queueViewport,{passive:true});window.addEventListener('resize',queueViewport,{passive:true});measureViewport();
+ window.LuriaSocialView={open,close};modes();controls();
+})();
