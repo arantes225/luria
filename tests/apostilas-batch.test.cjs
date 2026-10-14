@@ -414,3 +414,16 @@ test("Apostila IST ensina diferencial de ulceras sem perder fotos clinicas",()=>
  }
  assert.equal((html.match(/ist-\d+\.webp/g)||[]).length,8,"Devem permanecer as oito fotos originais");
 });
+
+
+test("Infertilidade mostra HSG real CC0 e raciocinio por casal",()=>{
+ const html=read("apostilas/infertilidade-conjugal/index.html");
+ assert.ok(html.includes('id="fig-histerossalpingografia-real-cc0"'));
+ assert.ok(html.includes('src="https://upload.wikimedia.org/wikipedia/commons/4/45/Hysterosalpingography.png"'));
+ assert.ok(html.includes('creativecommons.org/publicdomain/zero/1.0/'));
+ assert.ok(html.includes('Drhan9394'));
+ assert.ok(html.includes('id="infertilidade-casos-decisao-2026"'));
+ assert.ok(html.includes('href="#infertilidade-casos-decisao-2026"'));
+ assert.ok(html.includes('Espermograma muito alterado em homem que usa testosterona'));
+ assert.ok(html.includes('HSG com interrupção proximal'));
+});
