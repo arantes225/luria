@@ -75,7 +75,7 @@ function blink(){
 function render(){
  pending=false;
  const src=base.getAttribute("src")||"";
- const active=/(?:02-mulher-idosa-acordada|01-mulher-idosa-olhos-fechados|16-mulher-idosa-acordada|07-mulher-idosa-olhos-fechados)\.webp(?:\?|$)/.test(src);
+ const active=/luria-mulher-idosa-v16-base\.webp(?:\?|$)/.test(src);
  const box=base.getBoundingClientRect(),parent=scene.getBoundingClientRect();
  visible=active&&box.width>0&&box.height>0&&!scene.closest("[hidden]");
  scene.classList.toggle("luria-elderly-woman-v16",visible);

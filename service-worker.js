@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-balanced-width-20261013";
+const CACHE_VERSION = "luria-pwa-balanced-width-20261013-v16-cleanup";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
