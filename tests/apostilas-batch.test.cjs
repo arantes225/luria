@@ -427,3 +427,20 @@ test("Infertilidade mostra HSG real CC0 e raciocinio por casal",()=>{
  assert.ok(html.includes('Espermograma muito alterado em homem que usa testosterona'));
  assert.ok(html.includes('HSG com interrupção proximal'));
 });
+
+
+test("Contracepção: decisões avançadas mantêm navegação e diferenciações clínicas",()=>{
+  const html=read("apostilas/planejamento-reprodutivo-contracepcao/index.html");
+  assert.match(html,/id="decisoes-avancadas-contracepcao-2026"/);
+  assert.match(html,/href="#decisoes-avancadas-contracepcao-2026"/);
+  assert.match(html,/Ulipristal versus levonorgestrel/);
+  assert.match(html,/ao menos cinco dias/);
+  assert.match(html,/secreção mucopurulenta cervical/);
+  assert.match(html,/21 anos com capacidade civil plena OU pelo menos dois filhos vivos/);
+  assert.match(html,/Sepse puerperal é contraindicação/);
+  assert.match(html,/who\.int\/publications\/i\/item\/9789240115583/);
+  assert.match(html,/cdc\.gov\/contraception\/hcp\/usspr\/emergency-contraception/);
+  assert.match(html,/Lei 14\.443\/2022/);
+  assert.match(html,/\bid="diu-cobre"/);
+  assert.match(html,/\bid="siu-lng"/);
+});
