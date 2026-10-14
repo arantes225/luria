@@ -474,3 +474,18 @@ test("SUA: fotografia real de pólipo usa fonte licenciada e não revive figura 
   const renderer=read("assets/js/apostila-tools.js");
   assert.match(renderer,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
 });
+
+
+test("Síndromes hipertensivas: microangiopatias, diretrizes de cálcio e rastreabilidade",()=>{
+  const html=read("apostilas/sindromes-hipertensivas-da-gestacao/index.html");
+  assert.match(html,/id="microangiopatias-gestacao-puerperio-2026"/);
+  assert.match(html,/href="\/apostilas\/sindromes-hipertensivas-da-gestacao\/#microangiopatias-gestacao-puerperio-2026"/);
+  assert.match(html,/atividade de ADAMTS13/);
+  assert.match(html,/injúria renal progressiva/);
+  assert.match(html,/RBEHG e CNE\/FEBRASGO/);
+  assert.match(html,/OMS \(recomendação vigente consultada em 2026\)/);
+  assert.match(html,/48–72 horas/);
+  assert.match(html,/NICE NG133/);
+  assert.match(html,/pubmed\.ncbi\.nlm\.nih\.gov\/32808006/);
+  assert.ok(!html.includes("Imagem indisponível."),"Não deixar placeholders de imagem");
+});
