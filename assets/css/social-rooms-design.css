@@ -48,7 +48,9 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #social-room .sv-library {border-top:3px solid color-mix(in srgb,var(--sf-violet) 40%,var(--color-border));}
  #social-room .social-chat {border-radius:13px;padding:14px!important;background:var(--color-surface);}
  #social-room .social-chat .social-card-head {min-height:30px;}
- #social-room .social-message {max-width:92%;padding:10px 12px;}
+ #social-room #social-messages {align-items:flex-start;}
+ #social-room #social-messages .social-message {align-self:flex-start;margin-left:0;margin-right:auto;max-width:86%;width:fit-content;padding:10px 12px;}
+ #social-room #social-messages .social-message.is-mine {align-self:flex-end;margin-left:auto;margin-right:0;background:var(--color-primary-subtle);}
  #social-room .social-message p {font-size:13px!important;line-height:1.55!important;overflow-wrap:anywhere;}
  #social-room .social-message header strong {font-size:11px;}
  #social-room .sv-composer {padding-top:10px;}

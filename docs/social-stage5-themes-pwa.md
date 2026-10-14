@@ -37,3 +37,7 @@ Essas limitações não bloqueiam a entrega dos ajustes visuais em homologação
 ## Publicação
 
 Publicação autorizada pelo usuário na homologação. Versão final 81a15066-2550-473e-9395-e2ef9ddd8127. CSS social-responsive v3 e social-view stage5 conferidos no site real. Sem publicação em produção, push, migração ou mudança de infraestrutura/custos.
+
+## Ajuste solicitado — alinhamento do chat
+Mensagens recebidas explicitamente à esquerda; mensagens da conta atual à direita, com largura máxima de 86%. Regras de autoria existentes preservadas. CSS e teste de cache aprovados. Conferência real confirmou as duas mensagens da conta à direita; o histórico disponível não tinha mensagens de outros participantes. Captura: browser-results/social-stage5/chat-alignment.png. Homologação: f98bf672-a1b3-4b93-8498-c79290b4de43.
+
