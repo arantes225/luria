@@ -319,3 +319,20 @@ test("Ciclo menstrual preserva diagrama completo em português com licença rast
   assert.match(html,/ovulação ocorra invariavelmente no dia 14/);
   assert.match(html,/fase folicular pode variar bastante/);
 });
+
+
+test("Climatério aplica atualização ACOG 2026 sem reduzir sangramento a 4mm",()=>{
+  const d=JSON.parse(read("apostilas/climaterio-menopausa/content.json"));
+  const sections=new Map(d.q.map(s=>[s[0],JSON.stringify(s[2])]));
+  const id="sangramento-pos-menopausa-2026";
+  assert.ok(sections.has(id));
+  assert.ok(d.o.some(s=>s[0]===id));
+  const chapter=sections.get(id);
+  assert.match(chapter,/ACOG 2026/);
+  assert.match(chapter,/≤4 mm/);
+  assert.match(chapter,/ultrassonografia transvaginal associada à amostragem endometrial/);
+  assert.match(chapter,/persistência ou recorrência/);
+  assert.match(chapter,/não obriga automaticamente biópsia/);
+  assert.match(chapter,/10\.1097\/AOG\.0000000000006275/);
+  assert.equal(new Set(d.q.map(x=>x[0])).size,d.q.length);
+});
