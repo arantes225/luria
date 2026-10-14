@@ -71,6 +71,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Atualização em código:** capítulo `casos-decisoes-urgencia-2026` com navegação, sete vinhetas e referências; créditos de foto específicos inseridos nas legendas. Testes de proteção adicionados.
 - **Estado:** **EM REVISÃO — não certificada pelo Prompt Magno**. Necessário conferir integralidade e utilidade dos ≥60 mil caracteres, revisão farmacoterapêutica por diretriz e cenário, resultados de todas as imagens em desktop/PWA e questão-resposta de tópicos ainda não explorados.
 
+## 2026-10-13 — Ciclo menstrual e eixo HHO
+
+- **Apostila LURIA:** `apostilas/ciclo-menstrual-eixo-hho/index.html`.
+- **Referência efetivamente aberta no Google Drive:** `fisiologia menstrual.pdf` (aprox. 1,3 mil caracteres no texto extraído). O material resume teca/granulosa, GnRH, FSH, LH, feedback de estradiol e progesterona, desenvolvimento folicular e endométrio; atribuição nominal a Maysa Mismetti. **Não foi confirmada procedência institucional Estratégia MED.** O resumo é comparativo, não suficiente para assegurar abrangência do Prompt Magno.
+- **Achado de conteúdo:** a LURIA já desenvolve fisiologia, esteroidogênese, KNDy, foliculogênese, ovulação, janela fértil e quatro casos de endocrinologia. A fonte comparativa referencia o diagrama original `MenstrualCycle2 en.svg`; localizamos uma versão em **português**, editada por Polyethylen a partir de obra de Isometrik, com liberação específica CC BY-SA 3.0. Preservada como ilustração científica externa, não como imagem clínica real ou desenho autoral.
+- **Imagem incorporada:** `MenstrualCycle2_pt.svg`, Wikimedia Commons, thumbnail PNG de 960 px, com créditos Isometrik/Polyethylen e licença CC BY-SA 3.0 no capítulo do eixo HHO. Arquivo original e licença disponíveis em `https://commons.wikimedia.org/wiki/File:MenstrualCycle2_pt.svg`; a representação é esquemática e **não** estabelece ovulação obrigatória no dia 14.
+- **Critério de correção:** não copiar esquemas sem licença nem substituir ultrassonografia real por desenho. Manter explicação didática sobre variabilidade da fase folicular, fase lútea, feedback de estradiol e progesterona e limitações dos marcadores de ovulação.
+- **Estado:** **EM REVISÃO — NÃO CERTIFICADA**. Pendentes validação visual desktop/PWA do gráfico e demais recursos, auditoria completa de profundidade e referências, confirmação de ≥60 mil caracteres pedagógicos úteis, verificação de navegação e aplicação de questões independentes.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
