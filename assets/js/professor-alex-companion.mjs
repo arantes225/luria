@@ -1,5 +1,5 @@
-import './professor-alex-mascot.mjs?v=20261014-drag1';
-import {bindAlex} from './professor-alex-integration.mjs?v=20261014-drag1';
+import './professor-alex-mascot.mjs?v=20261014-ready2';
+import {bindAlex} from './professor-alex-integration.mjs?v=20261014-ready2';
 
 const contexts={
  dashboard:['Seu dia na LURIA','Escolha uma atividade ou confira seu progresso.','/aprender/','Explorar formas de aprender'],
@@ -16,7 +16,7 @@ export function mountAlexCompanion({userId,isAdmin=false}={}) {
  const host=document.createElement('luria-alex-companion'),shadow=host.attachShadow({mode:'open'});
  const abort=new AbortController(),opts={signal:abort.signal},key='luria:alex:companion:'+userId;
  let prefs={x:1,y:1,minimized:false};try{const saved=JSON.parse(localStorage.getItem(key));if(saved&&Number.isFinite(saved.x)&&Number.isFinite(saved.y))prefs={x:Math.max(0,Math.min(1,saved.x)),y:Math.max(0,Math.min(1,saved.y)),minimized:saved.minimized===true};}catch{}
- const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('../css/professor-alex-companion.css?v=20261014-drag1',import.meta.url).href;
+ const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('../css/professor-alex-companion.css?v=20261014-ready2',import.meta.url).href;
  shadow.append(css);shadow.innerHTML+='<div class="help" hidden role="region" aria-label="Ajuda do Alex"><button class="close" aria-label="Fechar ajuda">×</button><h2></h2><button class="minimize">Minimizar Alex</button><p></p><a class="context-link"></a><p><a class="tutoring" href="/professor-alex/" hidden>Abrir tutoria com o Alex</a></p></div><div class="robot"></div><button class="restore" hidden aria-label="Restaurar Alex">Alex</button>';
  const robot=shadow.querySelector('.robot'),help=shadow.querySelector('.help'),restore=shadow.querySelector('.restore'),grip=robot;
  const source=document.querySelector('professor-alex-mascot'),parent=source?.parentElement,next=source?.nextSibling;
@@ -32,18 +32,19 @@ export function mountAlexCompanion({userId,isAdmin=false}={}) {
  }
  function minimize(value){prefs.minimized=value;help.hidden=true;robot.hidden=value;restore.hidden=!value;host.style.width=value?'64px':'';if(value)alex.remove();else robot.append(alex);position();save();}
  function setAccess(value){shadow.querySelector('.tutoring').hidden=value!==true;}
- function toggleHelp(){help.hidden=!help.hidden;position();if(!help.hidden)integration.react('hint');}
+ let taps=[];
+ function toggleHelp(){const now=performance.now();taps=taps.filter(time=>now-time<1600);taps.push(now);if(taps.length>=3){help.hidden=true;integration.react('affection');return;}help.hidden=!help.hidden;position();if(!help.hidden)integration.react('hint');}
  const context=contexts[document.body.dataset.page]||['Estou por aqui','Use esta página para seguir sua atividade. Você pode mover ou minimizar o Alex a qualquer momento.','/dashboard/','Abrir meu painel'];
  help.querySelector('h2').textContent=context[0];help.querySelector('p').textContent=context[1];const link=help.querySelector('.context-link');link.href=context[2];link.textContent=context[3];
  alex.addEventListener('alex-react',toggleHelp,opts);
  shadow.querySelector('.close').addEventListener('click',()=>{help.hidden=true;alex.button?.focus();},opts);
  shadow.querySelector('.minimize').addEventListener('click',()=>{minimize(true);restore.focus();},opts);
  restore.addEventListener('click',()=>{minimize(false);alex.button?.focus();},opts);
- grip.style.touchAction='none';
+ grip.style.touchAction='none';grip.addEventListener('dragstart',event=>event.preventDefault(),opts);
  let suppressClickUntil=0;
- grip.addEventListener('pointerdown',event=>{if(event.button!==0||event.isPrimary===false)return;drag={id:event.pointerId,x:event.clientX,y:event.clientY,lastX:event.clientX,lastY:event.clientY,left:parseFloat(host.style.left),top:parseFloat(host.style.top),moved:false};alex.button.setPointerCapture(event.pointerId);},opts);
- grip.addEventListener('pointermove',event=>{if(!drag||event.pointerId!==drag.id)return;const dx=event.clientX-drag.x,dy=event.clientY-drag.y;if(!drag.moved&&Math.hypot(dx,dy)<6)return;drag.moved=true;help.hidden=true;event.preventDefault();alex.setDragMotion(true,(event.clientX-drag.lastX)/18,(event.clientY-drag.lastY)/18);drag.lastX=event.clientX;drag.lastY=event.clientY;const b=bounds();prefs.x=(Math.max(b.left,Math.min(b.right,drag.left+dx))-b.left)/(b.right-b.left||1);prefs.y=(Math.max(b.top,Math.min(b.bottom,drag.top+dy))-b.top)/(b.bottom-b.top||1);position();},opts);
- const stop=event=>{if(!drag||event.pointerId!==drag.id)return;if(drag.moved){suppressClickUntil=performance.now()+500;save();}drag=null;alex.setDragMotion(false);};grip.addEventListener('pointerup',stop,opts);grip.addEventListener('pointercancel',stop,opts);grip.addEventListener('lostpointercapture',stop,opts);
+ grip.addEventListener('pointerdown',event=>{if(event.button!==0||event.isPrimary===false)return;event.preventDefault();alex.button.focus({preventScroll:true});drag={id:event.pointerId,x:event.clientX,y:event.clientY,lastX:event.clientX,lastY:event.clientY,left:parseFloat(host.style.left),top:parseFloat(host.style.top),moved:false,angle:null,turn:0};alex.button.setPointerCapture(event.pointerId);},opts);
+ grip.addEventListener('pointermove',event=>{if(!drag||event.pointerId!==drag.id)return;const dx=event.clientX-drag.x,dy=event.clientY-drag.y;if(!drag.moved&&Math.hypot(dx,dy)<6)return;drag.moved=true;taps=[];help.hidden=true;const velocityX=(event.clientX-drag.lastX)/18,velocityY=(event.clientY-drag.lastY)/18;const samples=event.getCoalescedEvents?.()||[];for(const point of samples.length?samples:[event]){const stepX=point.clientX-drag.lastX,stepY=point.clientY-drag.lastY;if(Math.hypot(stepX,stepY)>3){const angle=Math.atan2(stepY,stepX);if(drag.angle!==null){let delta=angle-drag.angle;delta=Math.atan2(Math.sin(delta),Math.cos(delta));drag.turn+=delta;}drag.angle=angle;drag.lastX=point.clientX;drag.lastY=point.clientY;}}event.preventDefault();alex.setDragMotion(true,velocityX,velocityY);drag.lastX=event.clientX;drag.lastY=event.clientY;const b=bounds();prefs.x=(Math.max(b.left,Math.min(b.right,drag.left+dx))-b.left)/(b.right-b.left||1);prefs.y=(Math.max(b.top,Math.min(b.bottom,drag.top+dy))-b.top)/(b.bottom-b.top||1);position();},opts);
+ const stop=event=>{if(!drag||event.pointerId!==drag.id)return;const dizzy=drag.moved&&Math.abs(drag.turn)>Math.PI*2.5;if(drag.moved){suppressClickUntil=performance.now()+500;save();host.dispatchEvent(new CustomEvent('alex-drag-end',{detail:{turn:drag.turn,dizzy},bubbles:true}));}drag=null;alex.setDragMotion(false);if(dizzy)integration.react('dizzy');};grip.addEventListener('pointerup',stop,opts);grip.addEventListener('pointercancel',stop,opts);grip.addEventListener('lostpointercapture',stop,opts);
  grip.addEventListener('click',event=>{if(performance.now()<suppressClickUntil){event.preventDefault();event.stopImmediatePropagation();}}, {...opts,capture:true});
  grip.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(event.key))return;event.preventDefault();const b=bounds();prefs.x=Math.max(0,Math.min(1,prefs.x+({ArrowLeft:-20,ArrowRight:20}[event.key]||0)/(b.right-b.left||1)));prefs.y=Math.max(0,Math.min(1,prefs.y+({ArrowUp:-20,ArrowDown:20}[event.key]||0)/(b.bottom-b.top||1)));position();save();},opts);
  shadow.addEventListener('keydown',event=>{if(event.key==='Escape'){help.hidden=true;alex.button?.focus();}},opts);

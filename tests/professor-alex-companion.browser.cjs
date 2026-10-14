@@ -41,5 +41,12 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
  await page.evaluate(()=>document.dispatchEvent(new CustomEvent('luria:alex',{detail:{action:'success'}})));assert.equal(await page.evaluate(()=>document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot')._gesture.name),'nod');
  await page.setViewportSize({width:390,height:400});await page.waitForTimeout(100);box=await host.boundingBox();assert(box.y+box.height<=400,'Keyboard-sized viewport remains usable');const helpBox=await host.locator('.help').boundingBox();assert(helpBox.y>=0&&helpBox.y+helpBox.height<=400,'Help fits above the keyboard');
  await page.evaluate(()=>window.dispatchEvent(new CustomEvent('docmap:ready',{detail:{user:{id:'fixture-b'},isAdmin:false}})));await page.waitForTimeout(200);assert.equal(await host.count(),1);
+ await page.waitForTimeout(1700);for(let i=0;i<3;i++)await host.locator('.alex-surface').click();
+ assert.equal(await page.evaluate(()=>document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot')._gesture.name),'pet','Repeated taps are affection');
+ const circle=await host.boundingBox(),cx=200,cy=210,baseX=circle.x+circle.width/2,baseY=circle.y+circle.height/2;
+ await page.evaluate(()=>document.querySelector('luria-alex-companion').addEventListener('alex-drag-end',event=>window.lastDrag=event.detail));
+ await page.mouse.move(baseX,baseY);await page.mouse.down();
+ for(let i=0;i<=40;i++){const angle=i/40*Math.PI*4;await page.mouse.move(cx+35*Math.cos(angle),cy+35*Math.sin(angle));await page.waitForTimeout(25);}
+ await page.mouse.up();assert.equal(await page.evaluate(()=>document.querySelector('luria-alex-companion').shadowRoot.querySelector('professor-alex-mascot')._gesture.name),'dizzy',JSON.stringify(await page.evaluate(()=>window.lastDrag)));
  assert.deepEqual(errors,[]);console.log('Companion: authentication gate, single renderer, context help, role guard, mouse/keyboard drag, per-account persistence, minimize/restore, mobile bounds and event reactions passed');
 }finally{await browser.close();}})().catch(error=>{console.error(error);process.exitCode=1;});

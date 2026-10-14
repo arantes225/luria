@@ -3,7 +3,7 @@ export const ALEX_ACTIONS = Object.freeze({
   welcome:'wake',success:'nod',error:'shakeHead',hint:'point',search:'search',
   loading:'loading',listening:'listening',encourage:'encourage',break:'stretch',
   thanks:'bow',complete:'celebrate',achievement:'celebrateScene',
-  question:'thinking',material:'reading',explain:'explaining'
+  question:'thinking',material:'reading',explain:'explaining',affection:'pet',dizzy:'dizzy'
 });
 const continuous=new Set(['loading','listening','search']);
 const terminal=new Set(['success','error','complete','achievement']);

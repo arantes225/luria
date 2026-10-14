@@ -1,10 +1,11 @@
 import * as THREE from '../vendor/three.module.min.mjs';
 
 export const EXPRESSIONS = ['happy','attentive','thoughtful','surprised','confused','excited','wink','angry'];
-export const ANIMATIONS = ['wave','celebrate','thinking','explaining','typing','reading','confused','angry','sleep','wake','celebrateScene','angryScene','nod','shakeHead','point','search','loading','listening','encourage','stretch','bow'];
+export const ANIMATIONS = ['wave','celebrate','thinking','explaining','typing','reading','confused','angry','sleep','wake','celebrateScene','angryScene','nod','shakeHead','point','search','loading','listening','encourage','stretch','bow','pet','dizzy'];
 const DURATIONS = {wave:2800,celebrate:2600,thinking:3200,explaining:3600,typing:3400,reading:3000,confused:2600,angry:2600,sleep:4000,wake:2800,celebrateScene:6500,angryScene:6000,nod:1800,shakeHead:2000,point:2400,search:3000,loading:2600,listening:3000,encourage:2600,stretch:3600,bow:2400};
 const GESTURE_FACE = {wave:'happy',celebrate:'excited',thinking:'thoughtful',explaining:'attentive',typing:'attentive',reading:'attentive',confused:'confused',angry:'angry',wake:'happy',celebrateScene:'excited',angryScene:'angry',nod:'happy',shakeHead:'attentive',point:'wink',search:'thoughtful',loading:'attentive',listening:'attentive',encourage:'happy',stretch:'happy',bow:'happy'};
 const ALIASES = {feliz:'happy',atento:'attentive',pensativo:'thoughtful',surpreso:'surprised',confuso:'confused',animado:'excited',piscando:'wink',estourado:'angry'};
+DURATIONS.pet=3000;DURATIONS.dizzy=3400;GESTURE_FACE.pet='happy';GESTURE_FACE.dizzy='confused';
 const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const smooth = v => v*v*(3-2*v);
 
@@ -71,7 +72,7 @@ export class ProfessorAlexMascot extends HTMLElement {
     this._visibility=()=>{this._last=0;this._schedule();};
     this._viewportResize=()=>{this._resize();this._schedule();};
     this._tick=this._tick.bind(this);
-    this.button.addEventListener('click',()=>{if(this.interactive){this.playAnimation('wave');this.dispatchEvent(new CustomEvent('alex-react',{bubbles:true,composed:true}));}});
+    this.button.addEventListener('click',()=>{if(this.interactive){if(!this.hasAttribute('draggable-companion'))this.playAnimation('wave');this.dispatchEvent(new CustomEvent('alex-react',{bubbles:true,composed:true}));}});
     this.button.addEventListener('pointermove',e=>{if(!this.interactive||this._reduced||e.pointerType==='touch')return;const b=this.button.getBoundingClientRect();this._pointer={x:clamp((e.clientX-b.left)/b.width*2-1,-1,1),y:clamp((e.clientY-b.top)/b.height*2-1,-1,1)};});
     this.button.addEventListener('pointerleave',()=>{this._pointer={x:0,y:0};});
   }
@@ -294,6 +295,8 @@ export class ProfessorAlexMascot extends HTMLElement {
   _pose(name,e,t) {
     const [left,right,lf,rf]=this.limbs;
     const lp=left.userData.tipPivot,rp=right.userData.tipPivot;
+    if(name==='pet'){this.robot.rotation.z+=Math.sin(t*2.8)*e*.09;this.robot.position.y+=Math.sin(t*3)*e*.05;this.body.scale.y*=1-e*.025;lp.rotation.z-=e*.25;rp.rotation.z+=e*.25;this._look.y=-e*.2;}
+    if(name==='dizzy'){this.robot.rotation.z+=Math.sin(t*5)*e*.12;this.robot.rotation.y+=Math.sin(t*3)*e*.15;lp.rotation.z-=e*.32;rp.rotation.z+=e*.32;this._look.x=Math.sin(t*5)*e*.5;}
     if(name==='nod'){this.robot.rotation.x+=Math.sin(t*6)*e*.14;rp.rotation.z+=e*.18;}
     if(name==='shakeHead'){this.robot.rotation.y+=Math.sin(t*7)*e*.20;lp.rotation.z-=e*.20;rp.rotation.z+=e*.20;}
     if(name==='point'){const anchor=right.position.clone().add(rp.position.clone().applyQuaternion(right.quaternion));this._handPose(right,anchor.toArray(),[0,0,1.48],clamp(e,0,1));this._look.x=e*.30;this.robot.rotation.z-=e*.025;}

@@ -1,5 +1,5 @@
-import './professor-alex-mascot.mjs?v=20261014-drag1';
-import {bindAlex} from './professor-alex-integration.mjs?v=20261014-drag1';
+import './professor-alex-mascot.mjs?v=20261014-ready2';
+import {bindAlex} from './professor-alex-integration.mjs?v=20261014-ready2';
 
 // Page adapter: keep the reusable 3D component independent of the lesson form.
 const alex = document.getElementById('alex-mascot');

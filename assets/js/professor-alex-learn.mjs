@@ -1,5 +1,5 @@
-import './professor-alex-mascot.mjs?v=20261014-drag1';
-import {bindAlex} from './professor-alex-integration.mjs?v=20261014-drag1';
+import './professor-alex-mascot.mjs?v=20261014-ready2';
+import {bindAlex} from './professor-alex-integration.mjs?v=20261014-ready2';
 
 const alex=document.querySelector('.alex-visual professor-alex-mascot');
 if(alex){

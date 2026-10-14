@@ -3,12 +3,18 @@
 (() => {
   if(document.body?.dataset.uiNav!=="v2")return;
   let companion=null,currentUser=null,revision=0;
-  window.addEventListener("docmap:ready",async event=>{
+  const start=async event=>{
     const userId=event.detail?.user?.id;if(!userId)return;
     if(currentUser===userId&&companion){companion.setAccess(event.detail.isAdmin);return;}
     const ticket=++revision;currentUser=userId;companion?.destroy();companion=null;
-    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261014-drag1');if(ticket!==revision)return;companion=mountAlexCompanion({userId,isAdmin:event.detail.isAdmin});}catch(error){console.warn('Alex indisponível',error);}
-  });
+    try{const {mountAlexCompanion}=await import('/assets/js/professor-alex-companion.mjs?v=20261014-ready2');if(ticket!==revision)return;companion=mountAlexCompanion({userId,isAdmin:event.detail.isAdmin});}catch(error){console.warn('Alex indisponível',error);}
+  };
+  window.addEventListener('docmap:ready',start);
+  window.addEventListener('docmap:access-updated',start);
+  // Deferred navigation can execute after a fast cached login already emitted ready.
+  const resume=()=>{if(document.body.classList.contains('app-ready')&&window.docmapUser?.id&&window.docmapSession?.user?.id===window.docmapUser.id)start({detail:{user:window.docmapUser,isAdmin:window.docmapIsAdmin}});};
+  window.addEventListener('pageshow',resume);
+  resume();
   document.addEventListener('click',event=>{if(event.target.closest?.('#logout,#luria-profile-logout')){revision++;currentUser=null;companion?.destroy();companion=null;}});
 })();
 (() => {
