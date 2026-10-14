@@ -32,11 +32,11 @@ function floatingPod(arm) {
   const profile=arm?[[0,-.395],[.12,-.375],[.205,-.335],[.25,-.28],[.28,-.15],[.284,-.02],[.272,.13],[.23,.265],[.17,.335],[.13,.355],[.10,.337],[0,.33]]
     :[[0,-.37],[.18,-.37],[.244,-.345],[.272,-.29],[.275,-.18],[.255,-.035],[.218,.13],[.167,.265],[.125,.315],[.09,.30],[0,.28]];
   const curve=new THREE.SplineCurve(profile.map(([r,y])=>new THREE.Vector2(r,y)));
-  const points=curve.getPoints(32);points.forEach(p=>p.x=Math.max(0,p.x));
-  return new THREE.LatheGeometry(points,28);
+  const points=curve.getPoints(64);points.forEach(p=>p.x=Math.max(0,p.x));
+  return new THREE.LatheGeometry(points,40);
 }
 function softShell() {
-  const geometry=new THREE.SphereGeometry(1,56,36),positions=geometry.attributes.position,normals=geometry.attributes.normal;
+  const geometry=new THREE.SphereGeometry(1,112,72),positions=geometry.attributes.position,normals=geometry.attributes.normal;
   const axes=[1.24,1.14,.54],exponent=.56,power=2/exponent;
   for(let i=0;i<positions.count;i++){
     const values=[positions.getX(i),positions.getY(i),positions.getZ(i)].map((v,j)=>Math.sign(v)*Math.pow(Math.abs(v),exponent)*axes[j]);
@@ -62,7 +62,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   static observedAttributes=['expression','animation','size','theme','interactive','speaking','intensity'];
   constructor() {
     super();this.attachShadow({mode:'open'});
-    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css',import.meta.url).href;
+    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css?v=20261014-smooth2',import.meta.url).href;
     this.button=document.createElement('button');this.button.type='button';this.button.className='alex-surface';this.button.setAttribute('aria-label','Professor Alex: tocar para cumprimentar');
     this.message=document.createElement('span');this.message.className='alex-fallback';this.message.textContent='Carregando Professor Alex 3D…';
     this.button.append(this.message);this.shadowRoot.append(link,this.button);
@@ -233,7 +233,7 @@ export class ProfessorAlexMascot extends HTMLElement {
     // Render at the screen's physical resolution, including PWA pinch zoom.
     // Bound the backing buffer to 1536px per side to contain mobile GPU memory.
     const density=(window.devicePixelRatio||1)*Math.max(1,window.visualViewport?.scale||1);
-    const pixelRatio=Math.min(density,4,1536/Math.max(box.width,box.height));
+    const pixelRatio=Math.min(density,1536/Math.max(box.width,box.height));
     if(this.renderer.getPixelRatio()!==pixelRatio)this.renderer.setPixelRatio(pixelRatio);
     this.renderer.setSize(box.width,box.height,false);const ratio=box.width/box.height;this.camera.left=-2.3*ratio;this.camera.right=2.3*ratio;this.camera.top=2.3;this.camera.bottom=-2.3;this.camera.updateProjectionMatrix();
   }

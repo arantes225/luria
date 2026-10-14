@@ -47,7 +47,11 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile must not overflow horizontally');
   await page.screenshot({path:path.resolve(root,'../alex-integrado-mobile.png')});
   await page.evaluate(()=>{Object.defineProperty(window.visualViewport,'scale',{configurable:true,value:2});window.visualViewport.dispatchEvent(new Event('resize'));});
-  assert(await page.evaluate(()=>{const a=document.getElementById('alex-mascot');return a.renderer.domElement.width>a.button.clientWidth*3;}),'Pinch zoom increases rendering resolution');
+  assert(await page.evaluate(()=>{const a=document.getElementById('alex-mascot');return a.renderer.domElement.width>=a.button.clientWidth*6;}),'2x pinch zoom on a 3x screen must retain physical resolution');
+  assert.equal(await page.evaluate(()=>getComputedStyle(document.getElementById('alex-mascot').renderer.domElement).filter),'none','Canvas stays out of CSS filter rasterization');
+  await page.waitForTimeout(200);
+  const zoomRender=await page.evaluate(()=>{const a=document.getElementById('alex-mascot');a.renderer.render(a.scene,a.camera);return a.renderer.domElement.toDataURL('image/png');});
+  fs.writeFileSync(path.resolve(root,'../alex-zoom.png'),Buffer.from(zoomRender.split(',')[1],'base64'));
   await page.evaluate(()=>{const a=document.getElementById('alex-mascot');a.size=900;a.style.width='900px';a.style.maxWidth='none';});await page.waitForTimeout(200);
   assert(await page.evaluate(()=>{const c=document.getElementById('alex-mascot').renderer.domElement;return c.width<=1536&&c.height<=1536;}),'Large zoomed canvases stay within the mobile memory budget');
   await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(100);

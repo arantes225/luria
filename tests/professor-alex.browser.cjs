@@ -14,7 +14,7 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
   assert.equal(await page.evaluate(()=>document.querySelector('#alex').limbs.length),4);
   assert(await page.evaluate(()=>{const a=document.querySelector('#alex');a.scene.updateMatrixWorld(true);const center=a.body.getWorldPosition(a.body.position.clone());return a.limbs.slice(0,2).every(arm=>{const socket=arm.localToWorld(arm.position.clone().set(0,.35,0));const outer=arm.localToWorld(arm.position.clone().set(0,-.29,0));return socket.distanceTo(center)<outer.distanceTo(center);});}),'Both arm sockets must face the body, not the outer tips');
   const vertexCount=await page.evaluate(()=>{const a=document.querySelector('#alex');return {triangles:a.renderer.info.render.triangles,calls:a.renderer.info.render.calls};});
-  assert(vertexCount.triangles<25000);
+  assert(vertexCount.triangles<60000);
   for(const expression of ['happy','attentive','thoughtful','surprised','confused','excited','wink','angry']){
    await page.locator('[data-expression="'+expression+'"]').click();await page.waitForTimeout(370);
    assert.equal(await page.evaluate(()=>document.querySelector('#alex')._currentFace),expression);
