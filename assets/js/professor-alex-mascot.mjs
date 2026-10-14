@@ -69,6 +69,7 @@ export class ProfessorAlexMascot extends HTMLElement {
     this._elapsed=0;this._last=0;this._visible=true;this._frame=0;this._gesture=null;this._faceMix=1;this._currentFace='happy';this._fromFace='happy';this._blinkAt=2+Math.random()*3;this._blinkStart=-10;this._pointer={x:0,y:0};this._look={x:0,y:0};this._openness=null;this._view={yaw:-.18,pitch:0};
     this._motion=()=>{this._reduced=this._media.matches;this._last=0;this._schedule();};
     this._visibility=()=>{this._last=0;this._schedule();};
+    this._viewportResize=()=>{this._resize();this._schedule();};
     this._tick=this._tick.bind(this);
     this.button.addEventListener('click',()=>{if(this.interactive){this.playAnimation('wave');this.dispatchEvent(new CustomEvent('alex-react',{bubbles:true,composed:true}));}});
     this.button.addEventListener('pointermove',e=>{if(!this.interactive||this._reduced||e.pointerType==='touch')return;const b=this.button.getBoundingClientRect();this._pointer={x:clamp((e.clientX-b.left)/b.width*2-1,-1,1),y:clamp((e.clientY-b.top)/b.height*2-1,-1,1)};});
@@ -77,6 +78,8 @@ export class ProfessorAlexMascot extends HTMLElement {
   connectedCallback() {
     this._media=matchMedia('(prefers-reduced-motion: reduce)');this._reduced=this._media.matches;this._media.addEventListener('change',this._motion);
     document.addEventListener('visibilitychange',this._visibility);
+    window.addEventListener('resize',this._viewportResize);
+    window.visualViewport?.addEventListener('resize',this._viewportResize);
     this._themes=new MutationObserver(()=>{this._syncTheme();this._schedule();});
     this._themes.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
     if(document.body)this._themes.observe(document.body,{attributes:true,attributeFilter:['data-ui-appearance','data-ui-identity']});
@@ -87,6 +90,8 @@ export class ProfessorAlexMascot extends HTMLElement {
   }
   disconnectedCallback() {
     cancelAnimationFrame(this._frame);this._frame=0;this._media?.removeEventListener('change',this._motion);document.removeEventListener('visibilitychange',this._visibility);
+    window.removeEventListener('resize',this._viewportResize);
+    window.visualViewport?.removeEventListener('resize',this._viewportResize);
     this._themes?.disconnect();this._resizeObserver?.disconnect();this._intersection?.disconnect();this._dispose();
   }
   attributeChangedCallback(name,old,value) {
@@ -134,7 +139,7 @@ export class ProfessorAlexMascot extends HTMLElement {
     this._panelMaterials?.forEach(material=>material.color.copy(accent));
   }
   _createScene() {
-    this.renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});this.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.15;
+    this.renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.15;
     this.button.prepend(this.renderer.domElement);this.renderer.domElement.setAttribute('aria-hidden','true');
     this.renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();cancelAnimationFrame(this._frame);this._frame=0;this._contextLost=true;this.message.hidden=false;this.message.textContent='Restaurando a renderização 3D…';});
     this.renderer.domElement.addEventListener('webglcontextrestored',()=>{this._contextLost=false;this._last=0;this.message.hidden=true;this._schedule();});
@@ -225,6 +230,11 @@ export class ProfessorAlexMascot extends HTMLElement {
   }
   _resize() {
     if(!this.renderer)return;const box=this.button.getBoundingClientRect();if(!box.width||!box.height)return;
+    // Render at the screen's physical resolution, including PWA pinch zoom.
+    // Bound the backing buffer to 1536px per side to contain mobile GPU memory.
+    const density=(window.devicePixelRatio||1)*Math.max(1,window.visualViewport?.scale||1);
+    const pixelRatio=Math.min(density,4,1536/Math.max(box.width,box.height));
+    if(this.renderer.getPixelRatio()!==pixelRatio)this.renderer.setPixelRatio(pixelRatio);
     this.renderer.setSize(box.width,box.height,false);const ratio=box.width/box.height;this.camera.left=-2.3*ratio;this.camera.right=2.3*ratio;this.camera.top=2.3;this.camera.bottom=-2.3;this.camera.updateProjectionMatrix();
   }
   _schedule() {

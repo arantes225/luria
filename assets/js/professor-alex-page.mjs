@@ -1,4 +1,4 @@
-import './professor-alex-mascot.mjs?v=20261013-pink1';
+import './professor-alex-mascot.mjs?v=20261014-retina1';
 
 // Page adapter: keep the reusable 3D component independent of the lesson form.
 const alex = document.getElementById('alex-mascot');

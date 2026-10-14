@@ -5,7 +5,7 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
 (async()=>{
  const browser=await chromium.launch({headless:true,channel:'chrome'});
  try {
-  const context=await browser.newContext({viewport:{width:1440,height:1100},serviceWorkers:'block'});
+  const context=await browser.newContext({viewport:{width:1440,height:1100},deviceScaleFactor:3,serviceWorkers:'block'});
   await context.route('**/*',async route=>{
    const url=new URL(route.request().url());
    // Auth/backend are covered by platform tests; this fixture exercises the real
@@ -23,6 +23,7 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
   await page.evaluate(()=>{document.body.classList.add('app-ready');document.body.dataset.uiStartup='ready';});
   await page.waitForFunction(()=>!!document.getElementById('alex-mascot').renderer);
   assert(await page.locator('#alex-mascot').isVisible());
+  assert(await page.evaluate(()=>{const a=document.getElementById('alex-mascot'),canvas=a.renderer.domElement;return canvas.width>=a.button.clientWidth*3&&canvas.height>=a.button.clientHeight*3;}),'Retina display must render at its physical resolution');
   assert.equal(await page.evaluate(()=>document.getElementById('alex-mascot')._gesture?.name),'wake');
   await page.locator('[data-alex-intent="question"]').click();
   assert.equal(await page.evaluate(()=>document.getElementById('alex-mascot')._gesture.name),'thinking');
@@ -41,8 +42,14 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
   await page.waitForTimeout(400);
   await page.screenshot({path:path.resolve(root,'../alex-integrado-desktop.png')});
   await page.setViewportSize({width:390,height:844});await page.waitForTimeout(200);
+  await page.evaluate(()=>document.documentElement.classList.add('pwa-standalone'));await page.waitForTimeout(200);
+  assert(await page.evaluate(()=>{const a=document.getElementById('alex-mascot'),canvas=a.renderer.domElement;return canvas.width>=a.button.clientWidth*3&&canvas.height>=a.button.clientHeight*3;}),'Standalone mobile retains native 3x resolution');
   assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Mobile must not overflow horizontally');
   await page.screenshot({path:path.resolve(root,'../alex-integrado-mobile.png')});
+  await page.evaluate(()=>{Object.defineProperty(window.visualViewport,'scale',{configurable:true,value:2});window.visualViewport.dispatchEvent(new Event('resize'));});
+  assert(await page.evaluate(()=>{const a=document.getElementById('alex-mascot');return a.renderer.domElement.width>a.button.clientWidth*3;}),'Pinch zoom increases rendering resolution');
+  await page.evaluate(()=>{const a=document.getElementById('alex-mascot');a.size=900;a.style.width='900px';a.style.maxWidth='none';});await page.waitForTimeout(200);
+  assert(await page.evaluate(()=>{const c=document.getElementById('alex-mascot').renderer.domElement;return c.width<=1536&&c.height<=1536;}),'Large zoomed canvases stay within the mobile memory budget');
   await page.emulateMedia({reducedMotion:'reduce'});await page.waitForTimeout(100);
   assert(await page.evaluate(()=>document.getElementById('alex-mascot')._reduced));
   assert.deepEqual(errors,[]);assert.deepEqual(violations,[]);
