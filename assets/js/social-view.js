@@ -23,5 +23,10 @@
  window.addEventListener('luria:room-rendered',()=>{modes();controls();resize();});window.addEventListener('luria:voice-state',controls);
  window.addEventListener('luria:visual-close',e=>close(e.detail));window.addEventListener('luria:visual-open',e=>open(e.detail));
  window.addEventListener('luria:community-tab',e=>{const heading=document.querySelector('.luria-page-spotlight-copy strong');if(heading)heading.textContent=e.detail.area==='rooms'?'Salas':e.detail.area==='groups'?'Grupos':'Amigos';});
+ // Keep the compact chat inside the visible viewport when the mobile keyboard opens.
+ const viewport=window.visualViewport;let viewportFrame=0,viewportKey='';
+ function measureViewport(){viewportFrame=0;const height=Math.max(0,Math.round(viewport?.height||window.innerHeight)),top=Math.max(0,Math.round(viewport?.offsetTop||0));const key=height+':'+top;if(key===viewportKey)return;viewportKey=key;document.body.style.setProperty('--sl-visible-height',height+'px');document.body.style.setProperty('--sl-visible-top',top+'px');document.body.classList.toggle('sl-short-viewport',height<420);}
+ function queueViewport(){if(!viewportFrame)viewportFrame=requestAnimationFrame(measureViewport);}
+ viewport?.addEventListener('resize',queueViewport,{passive:true});viewport?.addEventListener('scroll',queueViewport,{passive:true});window.addEventListener('resize',queueViewport,{passive:true});measureViewport();
  window.LuriaSocialView={open,close};modes();controls();
 })();
