@@ -460,3 +460,17 @@ test("Pré-natal: casos 2026 têm rastreio de bacteriúria, sífilis e VSR e est
   assert.ok(html.includes('acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections'));
   assert.ok(html.includes('calendario-nacional-de-vacinacao-gestante'));
 });
+
+
+test("SUA: fotografia real de pólipo usa fonte licenciada e não revive figura restrita",()=>{
+  const html=read("apostilas/sangramento-uterino-anormal/index.html");
+  assert.ok(html.includes('id="sua-polipo-histeroscopia-real"'));
+  assert.ok(html.includes('05a_Corpuspolyp_01_vor_Abtragung_01.a.jpg'));
+  assert.ok(html.includes('Dr. Andreas Ott'));
+  assert.ok(html.includes('creativecommons.org/licenses/by-sa/2.0/de/'));
+  assert.ok(html.includes('data-apostila-image-source-url='));
+  assert.ok(html.includes('id="estrutural"'));
+  assert.ok(!html.includes('polipo-1221-l.alonso.jpg'));
+  const renderer=read("assets/js/apostila-tools.js");
+  assert.match(renderer,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
+});
