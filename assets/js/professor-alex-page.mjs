@@ -1,8 +1,10 @@
-import './professor-alex-mascot.mjs?v=20261014-smooth2';
+import './professor-alex-mascot.mjs?v=20261014-actions1';
+import {bindAlex} from './professor-alex-integration.mjs?v=20261014-actions1';
 
 // Page adapter: keep the reusable 3D component independent of the lesson form.
 const alex = document.getElementById('alex-mascot');
 if (alex) {
+  const integration=bindAlex(alex);
   const modes = [...document.querySelectorAll('[data-alex-mode]')];
   const cards = [...document.querySelectorAll('[data-alex-intent]')];
   const isAngry = () => modes.some(button => button.dataset.alexMode === 'estourado' && button.getAttribute('aria-pressed') === 'true');
@@ -11,7 +13,7 @@ if (alex) {
     alex.expression = isAngry() ? 'angry' : face;
     alex.playAnimation(isAngry() ? 'angry' : gesture);
   };
-  const welcome = () => alex.playAnimation('wake');
+  const welcome = () => integration.react('welcome');
   if (alex.renderer) welcome();
   else alex.addEventListener('alex-ready', welcome, {once:true});
   modes.forEach(button => button.addEventListener('click', () => {

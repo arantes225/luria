@@ -14,7 +14,7 @@ test('production artifact retains official data and domain while excluding backe
  assert.ok(fs.existsSync(path.join(output,'.nojekyll')));
  // The 3D mascot uses native ES modules. Verify the published artifact, not
  // just the source tree, so missing modules cannot silently hide Alex again.
- for(const file of ['professor-alex/index.html','assets/js/professor-alex-page.mjs','assets/js/professor-alex-mascot.mjs','assets/vendor/three.module.min.mjs','assets/vendor/three.core.min.mjs','assets/css/professor-alex-mascot.css','assets/css/professor-alex-page.css']){
+ for(const file of ['professor-alex/index.html','assets/js/professor-alex-page.mjs','assets/js/professor-alex-mascot.mjs','assets/js/professor-alex-integration.mjs','assets/js/professor-alex-learn.mjs','assets/vendor/three.module.min.mjs','assets/vendor/three.core.min.mjs','assets/css/professor-alex-mascot.css','assets/css/professor-alex-page.css']){
   assert.equal(read(file),fs.readFileSync(path.join(root,file),'utf8'),file);
  }
 });

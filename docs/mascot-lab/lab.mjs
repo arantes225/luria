@@ -4,8 +4,8 @@ if(local) {
   const {EXPRESSIONS,ANIMATIONS}=await import('../../assets/js/professor-alex-mascot.mjs');
   const $=id=>document.getElementById(id),alex=$('alex');$('lab').hidden=false;$('restricted').hidden=true;
   const labels=['Feliz','Atento','Pensativo','Surpreso','Confuso','Animado','Piscando','Estourado'];
-  const motionLabels=['Acenar','Comemorar','Pensar','Explicar','Digitar','Ler','Demonstrar dúvida','Modo estourado','Repousar','Despertar','Cena de empolgação','Cena estourado'];
-  const icons=['↗','✧','⋯','≋','⌨','▤','?','!','☾','☀','✦','♨'];
+  const motionLabels=['Acenar','Comemorar','Pensar','Explicar','Digitar','Ler','Demonstrar dúvida','Modo estourado','Repousar','Despertar','Cena de empolgação','Cena estourado','Confirmar','Tentar de novo','Indicar dica','Procurar','Aguardar','Escutar','Incentivar','Alongar','Agradecer'];
+  const icons=['↗','✧','⋯','≋','⌨','▤','?','!','☾','☀','✦','♨','✓','↔','→','⌕','◌','◖','♡','↟','⌄'];
   const faces=[
     '<path d="M9 15 Q16 3 23 15 M35 15 Q42 3 49 15"/><path d="M24 21 Q29 29 34 21"/>',
     '<ellipse cx="16" cy="12" rx="4" ry="7"/><ellipse cx="42" cy="12" rx="4" ry="7"/><path d="M27 24h4"/>',

@@ -24,7 +24,7 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
   const limbsBefore=await page.evaluate(()=>document.querySelector('#alex').limbs.map(g=>g.position.y));await page.waitForTimeout(180);
   const limbsAfter=await page.evaluate(()=>document.querySelector('#alex').limbs.map(g=>g.position.y));assert(limbsAfter.every((v,i)=>Math.abs(v-limbsBefore[i])>.00001));
   const completed=[];
-  for(const animation of ['wave','celebrate','thinking','explaining','typing','reading','confused','angry','sleep','wake','celebrateScene','angryScene']){
+  for(const animation of await page.locator('[data-animation]').evaluateAll(buttons=>buttons.map(button=>button.dataset.animation))){
    await page.locator('[data-animation="'+animation+'"]').click();assert.equal(await page.evaluate(()=>document.querySelector('#alex')._gesture.name),animation);
    await page.evaluate(()=>{const a=document.querySelector('#alex');a._gesture.start=a._elapsed-.9;});await page.waitForTimeout(90);
    assert(await page.evaluate(()=>{const a=document.querySelector('#alex');a.scene.updateMatrixWorld(true);return a.limbs.slice(0,2).every(arm=>{const socket=arm.userData.socket,port=arm.userData.port;const cap=socket.localToWorld(socket.position.clone().set(0,.010,0)),led=port.getWorldPosition(port.position.clone());const capNormal=socket.position.clone().set(0,1,0).applyQuaternion(socket.getWorldQuaternion(socket.quaternion.clone())),ledNormal=port.position.clone().set(0,0,1).applyQuaternion(port.getWorldQuaternion(port.quaternion.clone()));return cap.distanceTo(led)<.006&&capNormal.dot(ledNormal)>.9999;});}), 'Shoulder LED must stay flush and aligned in '+animation);

@@ -1,9 +1,9 @@
 import * as THREE from '../vendor/three.module.min.mjs';
 
 export const EXPRESSIONS = ['happy','attentive','thoughtful','surprised','confused','excited','wink','angry'];
-export const ANIMATIONS = ['wave','celebrate','thinking','explaining','typing','reading','confused','angry','sleep','wake','celebrateScene','angryScene'];
-const DURATIONS = {wave:2800,celebrate:2600,thinking:3200,explaining:3600,typing:3400,reading:3000,confused:2600,angry:2600,sleep:4000,wake:2800,celebrateScene:6500,angryScene:6000};
-const GESTURE_FACE = {wave:'happy',celebrate:'excited',thinking:'thoughtful',explaining:'attentive',typing:'attentive',reading:'attentive',confused:'confused',angry:'angry',wake:'happy',celebrateScene:'excited',angryScene:'angry'};
+export const ANIMATIONS = ['wave','celebrate','thinking','explaining','typing','reading','confused','angry','sleep','wake','celebrateScene','angryScene','nod','shakeHead','point','search','loading','listening','encourage','stretch','bow'];
+const DURATIONS = {wave:2800,celebrate:2600,thinking:3200,explaining:3600,typing:3400,reading:3000,confused:2600,angry:2600,sleep:4000,wake:2800,celebrateScene:6500,angryScene:6000,nod:1800,shakeHead:2000,point:2400,search:3000,loading:2600,listening:3000,encourage:2600,stretch:3600,bow:2400};
+const GESTURE_FACE = {wave:'happy',celebrate:'excited',thinking:'thoughtful',explaining:'attentive',typing:'attentive',reading:'attentive',confused:'confused',angry:'angry',wake:'happy',celebrateScene:'excited',angryScene:'angry',nod:'happy',shakeHead:'attentive',point:'wink',search:'thoughtful',loading:'attentive',listening:'attentive',encourage:'happy',stretch:'happy',bow:'happy'};
 const ALIASES = {feliz:'happy',atento:'attentive',pensativo:'thoughtful',surpreso:'surprised',confuso:'confused',animado:'excited',piscando:'wink',estourado:'angry'};
 const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const smooth = v => v*v*(3-2*v);
@@ -288,6 +288,15 @@ export class ProfessorAlexMascot extends HTMLElement {
   _pose(name,e,t) {
     const [left,right,lf,rf]=this.limbs;
     const lp=left.userData.tipPivot,rp=right.userData.tipPivot;
+    if(name==='nod'){this.robot.rotation.x+=Math.sin(t*6)*e*.14;rp.rotation.z+=e*.18;}
+    if(name==='shakeHead'){this.robot.rotation.y+=Math.sin(t*7)*e*.20;lp.rotation.z-=e*.20;rp.rotation.z+=e*.20;}
+    if(name==='point'){const anchor=right.position.clone().add(rp.position.clone().applyQuaternion(right.quaternion));this._handPose(right,anchor.toArray(),[0,0,1.48],clamp(e,0,1));this._look.x=e*.30;this.robot.rotation.z-=e*.025;}
+    if(name==='search'){this.robot.rotation.y+=Math.sin(t*2.8)*e*.26;this._look.x=Math.sin(t*2.8)*e*.55;lp.rotation.z-=e*.22;rp.rotation.z+=e*.22;}
+    if(name==='loading'){lp.rotation.x+=Math.sin(t*4)*e*.24;rp.rotation.x-=Math.sin(t*4)*e*.24;left.position.y+=Math.sin(t*4)*e*.05;right.position.y-=Math.sin(t*4)*e*.05;this.body.scale.setScalar(1+Math.sin(t*3)*e*.018);}
+    if(name==='listening'){this.robot.rotation.z+=e*.06;rp.rotation.z+=e*.48;rp.rotation.x-=e*.24;this._look.x=e*.20;this.robot.rotation.x-=e*.035;}
+    if(name==='encourage'){lp.rotation.z-=e*.28;rp.rotation.z+=e*.38;left.position.y+=e*.04;right.position.y+=e*.04;this.robot.position.y+=Math.sin(t*3)*e*.07;}
+    if(name==='stretch'){lp.rotation.z-=e*.74;rp.rotation.z+=e*.74;lf.rotation.z-=e*.18;rf.rotation.z+=e*.18;this.body.scale.y*=1+e*.04;this.robot.position.y+=e*.08;}
+    if(name==='bow'){this.robot.rotation.x+=e*.22;this.robot.position.y-=e*.07;lp.rotation.z+=e*.10;rp.rotation.z-=e*.10;}
     if(name==='wave'){
       const reach=clamp(e,0,1),phase=clamp((t-.48)/1.38,0,1),sweep=Math.sin(phase*Math.PI*4)*Math.sin(phase*Math.PI);
       const anchor=right.position.clone().add(rp.position.clone().applyQuaternion(right.quaternion));this._handPose(right,anchor.toArray(),[0,right.userData.base.ry,2.10+sweep*.08],reach);this.robot.rotation.z-=reach*.012;this._sceneZoom=1/(1+reach*.07);
