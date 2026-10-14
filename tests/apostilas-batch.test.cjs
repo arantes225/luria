@@ -562,3 +562,28 @@ test("Sexualidade feminina e masculina sao apostilas independentes e pesquisavei
     assert.ok(ids.includes(dest),"Seção masculina inexistente no sumário: "+dest);
   }
 });
+
+
+test("Sexualidade Masculina separada ensina hipotestosteronemia e urgencias sem confundir com unidade feminina",()=>{
+  const html=read("apostilas/sexualidade-masculina/index.html");
+  for(const id of [
+    "medicina-sexual-masculina-2026",
+    "avaliacao-de-medicina-sexual-2026",
+    "tratamento-de-medicina-sexual-2026",
+    "eixo-hormonal-e-urgencias-masculinas-2026",
+    "consultas-masculinas-2026"
+  ]){
+    assert.match(html,new RegExp('id="'+id+'"'),"Falta seção "+id);
+    assert.match(html,new RegExp('href="#'+id+'"'),"Falta navegação "+id);
+  }
+  assert.ok(!html.includes("Embora a maior parte desta apostila se concentre em sexualidade feminina"));
+  assert.match(html,/testosterona total deve ser medida/);
+  assert.match(html,/desejo de paternidade/);
+  assert.match(html,/nitratos orgânicos ou doadores de óxido nítrico/);
+  assert.match(html,/riociguate/);
+  assert.match(html,/priapismo isquêmico/);
+  assert.match(html,/uroweb.org\/guidelines\/sexual-and-reproductive-health\/chapter\/male-hypogonadism/);
+  assert.match(html,/CC BY-SA 3.0|prótese peniana/);
+  const female=read("apostilas/sexualidade/index.html");
+  assert.match(female,/Sexualidade Feminina/);
+});
