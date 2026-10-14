@@ -2801,7 +2801,7 @@
     baby:{awake:"assets/img/plantao pwa/15-bebe-acordado.webp",closed:"assets/img/plantao pwa/01-bebe-dormindo.webp"},
     girl:{awake:"assets/img/plantao pwa/10-menina-acordada.webp",closed:"assets/img/plantao pwa/08-menina-olhos-fechados.webp"},
     boy:{awake:"assets/img/plantao pwa/13-menino-acordado.webp",closed:"assets/img/plantao pwa/09-menino-olhos-fechados.webp"},
-    pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/02-gestante-olhos-fechados.webp"},
+    pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/14-gestante-acordada.webp"},
     woman:{awake:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp",closed:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp"},
     man:{awake:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"},
     elderlyWoman:{
