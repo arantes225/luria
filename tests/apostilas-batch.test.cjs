@@ -504,3 +504,24 @@ test("SOMP/PMOS preserva US real e aprofunda raciocinio adolescente e androgenos
   assert.match(html,/hiperandrogenismo/);
   assert.match(html,/2026/);
 });
+
+test("TPP diferencia prevenção com colo curto de triagem sintomática",()=>{
+  const d=JSON.parse(read("apostilas/trabalho-parto-prematuro/content.json"));
+  const chapter=d.q.find(x=>x[0]==="prevencao-vs-tpp-diagnostico-2026");
+  assert.ok(chapter,"falta capítulo diferenciando prevenção e diagnóstico");
+  assert.ok(d.o.some(x=>x[0]===chapter[0]),"falta acesso pelo sumário");
+  const text=JSON.stringify(chapter[2]);
+  assert.ok(text.length>6500,"desenvolvimento insuficiente");
+  assert.match(text,/20 mm ou menos antes de 24 semanas/);
+  assert.match(text,/21 e 25 mm/);
+  assert.match(text,/30\+0 semanas/);
+  assert.match(text,/15 mm ou menos/);
+  assert.match(text,/48 horas/);
+  assert.match(text,/nifedipino/);
+  assert.match(text,/descolamento|DPP/);
+  assert.match(text,/publications\.smfm\.org/);
+  assert.match(text,/www\.nice\.org\.uk\/guidance\/ng25/);
+  const ids=d.q.map(x=>x[0]);
+  assert.equal(new Set(ids).size,ids.length,"seções duplicadas");
+  assert.equal(d.o.filter(x=>!ids.includes(x[0])).length,0,"sumário aponta para capítulo ausente");
+});
