@@ -63,3 +63,31 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  @media(prefers-reduced-motion:reduce) {.sg-card {transition:none;}}
 }
 }
+
+/* Reference composition: community surfaces, preserving existing controls. */
+@layer luria-ui-education {
+body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
+
+ #community-groups {padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;}
+ #community-groups>.social-card-head {padding:20px 0 12px;margin-bottom:10px;align-items:center;}
+ #community-groups>.social-card-head h2 {font-size:25px!important;line-height:1.25!important;max-width:28ch;}
+ #community-groups>.social-card-head p {max-width:60ch;line-height:1.6!important;}
+ #social-groups {gap:16px;grid-template-columns:repeat(3,minmax(0,1fr));}
+ .sg-card {border-radius:18px;box-shadow:var(--shadow-sm);}
+ .sg-cover {min-height:115px;align-items:flex-end;padding:18px;border-radius:17px 17px 0 0;background:color-mix(in srgb,var(--sf-teal) 14%,var(--color-surface));}
+ .sg-cover::after {width:150px;height:150px;right:-30px;top:-60px;opacity:.25;border-width:18px;box-shadow:0 0 0 22px color-mix(in srgb,currentColor 9%,transparent);}
+ .sg-emblem {width:52px;height:52px;flex-basis:52px;border-radius:16px;background:var(--color-surface);box-shadow:var(--shadow-sm);}
+ .sg-emblem .social-icon {width:30px;height:30px;}
+ .sg-type {align-self:center;max-width:12ch;line-height:1.5;}
+ .sg-card-body {padding:18px;}
+ .sg-title {display:block;}.sg-title .social-badge {margin-top:8px;}
+ .sg-details>summary {min-height:24px;border:0;border-radius:10px;}
+ .sg-card:has(.sg-details[open]) {display:grid;grid-template-columns:220px minmax(0,1fr);}
+ .sg-card:has(.sg-details[open]) .sg-cover {border-radius:17px 0 0 17px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;border-bottom:0;border-right:1px solid var(--color-border);}
+ .sg-card:has(.sg-details[open]) .sg-type {align-self:auto;max-width:none;}
+ .sg-interior {padding-top:4px;}.sg-objective {background:color-mix(in srgb,var(--sf-teal) 8%,var(--color-surface));border:0;border-radius:14px;}
+ @media(max-width:1150px) {#social-groups {grid-template-columns:repeat(2,minmax(0,1fr));}}
+ @media(max-width:650px) {#social-groups {grid-template-columns:1fr;}.sg-card:has(.sg-details[open]) {display:block;}.sg-card:has(.sg-details[open]) .sg-cover {border-radius:17px 17px 0 0;flex-direction:row;justify-content:flex-start;align-items:center;min-height:90px;border-right:0;}.sg-type {max-width:none;}#community-groups>.social-card-head h2 {font-size:22px!important;}}
+
+}
+}

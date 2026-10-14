@@ -51,3 +51,40 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  @media(prefers-reduced-motion:reduce) {#studyrats-card :is(.sr-carriage,.sr-sprite,.sr-progress) {transition:none!important;}}
 }
 }
+
+/* Reference composition: community surfaces, preserving existing controls. */
+@layer luria-ui-education {
+body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1.social-composition {
+
+ #studyrats-card {grid-column:1/-1;grid-row:3;padding:22px!important;border:1px solid var(--color-border)!important;border-radius:20px!important;background:var(--color-surface)!important;box-shadow:none!important;}
+ #studyrats-card .friends-ref-studyrats-head {margin-bottom:18px;}
+ #studyrats-card .friends-ref-studyrats-titleline h2 {font-size:25px!important;}
+ #studyrats-card .friends-ref-studyrats-mark {width:50px!important;height:50px!important;background:color-mix(in srgb,var(--sf-violet) 13%,var(--color-surface))!important;color:var(--sf-violet)!important;border-radius:16px;}
+ #studyrats-card .studyrats-challenge {display:grid;grid-template-columns:minmax(0,1fr) 240px;border:0;border-radius:16px;overflow:hidden;background:var(--color-surface-elevated);}
+ #studyrats-card .studyrats-challenge-head {grid-column:1/-1;background:transparent;padding:16px 18px;border-bottom:1px solid var(--color-border);}
+ #studyrats-card .studyrats-summary {grid-column:1/-1;padding:12px 18px;background:transparent;gap:16px;}
+ #studyrats-card .studyrats-summary-item {padding:0;border:0;background:transparent;}
+ #studyrats-card .sr-circuit {grid-column:1;padding:18px;border-radius:0;background:color-mix(in srgb,var(--sf-teal) 12%,var(--color-surface));position:relative;isolation:isolate;}
+ #studyrats-card .sr-scenery {position:absolute;right:8px;top:0;width:48%;height:72px;pointer-events:none;z-index:-1;}
+ #studyrats-card .sr-circuit::before {content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 10% 0%,color-mix(in srgb,var(--sf-warm) 14%,transparent),transparent 65%);pointer-events:none;}
+ #studyrats-card .sr-circuit-heading {font-size:11px;margin-bottom:14px;}
+ #studyrats-card .sr-lanes {gap:0;border-radius:15px;border:1px solid color-mix(in srgb,var(--sf-teal) 20%,var(--color-border));overflow:visible;background:color-mix(in srgb,var(--color-surface) 55%,transparent);}
+ #studyrats-card .sr-lane {border:0;border-bottom:1px dashed color-mix(in srgb,var(--sf-teal) 25%,var(--color-border));border-radius:0;grid-template-columns:125px minmax(0,1fr);background:transparent;min-height:110px;}
+ #studyrats-card .sr-lane:last-child {border-bottom:0;}
+ #studyrats-card .sr-road {height:110px;margin-left:45px;margin-right:60px;}
+ #studyrats-card .sr-trajectory {top:33px;height:45px;}
+ #studyrats-card .sr-rail {stroke:color-mix(in srgb,var(--sf-teal) 65%,var(--color-surface));stroke-width:33;opacity:.6;}
+ #studyrats-card .sr-center {stroke:var(--color-surface);stroke-width:2;opacity:.9;}
+ #studyrats-card .sr-progress {top:55px;opacity:.45;}
+ #studyrats-card .sr-road::after {top:34px;height:48px;width:14px;right:-27px;opacity:.9;}
+ #studyrats-card .sr-standings {grid-column:2;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:18px;background:var(--color-surface);border-left:1px solid var(--color-border);}
+ #studyrats-card .sr-standings::before {content:'CLASSIFICAÇÃO';font-size:10px;letter-spacing:.1em;color:var(--color-text-secondary);margin-bottom:5px;}
+ .sr-standing {border:0;border-radius:12px;padding:12px 8px;background:var(--color-surface-elevated);}
+ .sr-standing:first-child {background:color-mix(in srgb,var(--sf-warm) 12%,var(--color-surface));}
+ #studyrats-card .studyrats-race-footer {grid-column:1/-1;background:transparent;padding:12px 18px;}
+ @media(max-width:1000px) {#studyrats-card .studyrats-challenge {grid-template-columns:1fr;}#studyrats-card .sr-standings {grid-column:1;flex-direction:row;flex-wrap:wrap;border-left:0;}.sr-standing {flex:1 1 150px;}#studyrats-card .sr-standings::before {width:100%;}#studyrats-card .sr-lane {grid-template-columns:120px minmax(0,1fr);}}
+ @media(max-width:760px) {#studyrats-card {grid-row:4;padding:16px!important;}}
+ @media(max-width:650px) {#studyrats-card .sr-lane {display:block;min-height:145px;}#studyrats-card .sr-person {padding:10px 12px 0;}#studyrats-card .sr-road {height:110px;margin-inline:65px;}#studyrats-card .sr-circuit {padding:12px;}#studyrats-card .studyrats-summary {gap:12px;}#studyrats-card .friends-ref-studyrats-head {gap:12px;}#studyrats-card .friends-ref-studyrats-titleline h2 {font-size:22px!important;}}
+
+}
+}

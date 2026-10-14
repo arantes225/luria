@@ -21,10 +21,11 @@ test('staging artifact isolates API and websocket endpoints without changing pro
  assert.match(text('manifest.webmanifest'),/Homologação/);
  assert.match(text('assets/js/social-voice.js'),/const endpoint='\/api\/study-voice';/);
  assert.equal(config.voiceOrigin,null);
+ for(const file of ['assets/js/professor-alex-companion.mjs','assets/js/professor-alex-mascot.mjs','assets/vendor/three.module.min.mjs'])assert.ok(fs.existsSync(path.join(output,file)),file);
 });
 test('staging artifact excludes database definitions, secrets, tooling and Git metadata',()=>{
  for(const forbidden of ['.git','.dev.vars','db','supabase','cloudflare','tests','scripts','docs','package.json','package-lock.json','CNAME'])assert.equal(fs.existsSync(path.join(output,forbidden)),false,forbidden);
- const visit=directory=>{for(const item of fs.readdirSync(directory,{withFileTypes:true})){const file=path.join(directory,item.name);if(item.isDirectory())visit(file);else if(/\.(?:js|html|css|json|txt|svg|xml|webmanifest)$/.test(file)){const content=fs.readFileSync(file,'utf8');assert.ok(!content.includes('sxdsfklllilhdyuamvvg'),file);assert.ok(!/SFU_APP_SECRET\s*=|\bsb_secret_[A-Za-z0-9_-]+/.test(content),file);}}};
+ const visit=directory=>{for(const item of fs.readdirSync(directory,{withFileTypes:true})){const file=path.join(directory,item.name);if(item.isDirectory())visit(file);else if(/\.(?:m?js|html|css|json|txt|svg|xml|webmanifest)$/.test(file)){const content=fs.readFileSync(file,'utf8');assert.ok(!content.includes('sxdsfklllilhdyuamvvg'),file);assert.ok(!/SFU_APP_SECRET\s*=|\bsb_secret_[A-Za-z0-9_-]+/.test(content),file);}}};
  visit(output);
 });
 test('staging inline scripts still match the CSP hashes',()=>{

@@ -67,7 +67,7 @@ async function community(t, hash = '') {
 test('community: three accessible areas, deep links and keyboard navigation', async t => {
   const {w,d,errors}=await community(t,'#studyrats-card');
   const friends=d.getElementById('community-tab-friends'),rooms=d.getElementById('community-tab-rooms');
-  assert.equal(d.querySelectorAll('[role="tab"]').length,3);
+  assert.equal(d.querySelectorAll('.community-nav [role="tab"]').length,3);
   assert.equal(d.getElementById('community-friends-panel').hidden,false);
   assert.equal(d.getElementById('community-rooms-panel').hidden,true);
   assert.equal(d.getElementById('friends-ref-add-toggle').hidden,false);

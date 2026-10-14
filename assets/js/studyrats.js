@@ -545,6 +545,7 @@ function sharedStudyratsRender(){
         '<div class="studyrats-summary-item"><span><small>Participantes</small><strong>'+ch.participants.length+'</strong><em>Seu ritmo também importa</em></span></div>'+
       '</div>'+
       '<div class="sr-circuit '+(finished?'is-finished':'')+'">'+
+      '<svg class="sr-scenery" viewBox="0 0 420 96" aria-hidden="true" focusable="false"><g fill="none" stroke="var(--sf-teal)" stroke-width="1.5" opacity=".45"><path d="M8 84h402M55 83V45m0 12-17-17m17 28 19-17M38 41c-18-8-17-28-1-29 12-14 32-5 27 11 17 11 8 32-9 28M330 83V40m0 22-15-15m15 23 16-12M317 45c-15-12-11-28 4-30 13-9 28 2 24 15 15 15-3 28-15 22"/><path d="M120 83V43l46 12v28m0-28 47-12v40m-79-26 20 5m-20 5 20 5m25-10 20-5m-20 15 20-5"/><path d="M246 83V52h34v31m-26-23h17m-17 9h17M242 51l21-19 21 19M82 84l12-17 13 17"/></g><circle cx="270" cy="18" r="11" fill="var(--sf-warm)" opacity=".2"/><circle cx="376" cy="64" r="18" fill="var(--sf-violet)" opacity=".1"/></svg>'+
         '<div class="sr-circuit-heading"><span>SEU CIRCUITO DE ESTUDOS</span><span>Progresso em companhia</span></div>'+
         '<div class="sr-lanes">'+lanes+'</div>'+
         '<div class="sr-circuit-scale" aria-hidden="true"><span>Largada</span><span>Cada passo conta</span><span>Chegada</span></div>'+
