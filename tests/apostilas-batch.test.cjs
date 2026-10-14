@@ -251,3 +251,25 @@ test("Câncer do colo: algoritmo DNA-HPV, FIGO e exceções têm navegação e j
   assert.match(all,/Nota Técnica nº 32\/2026/);
   assert.equal(new Set(data.q.map(x=>x[0])).size,data.q.length,"Há IDs repetidos de capítulo");
 });
+
+test("Cancer de mama: preservar figuras e investigar discordancias antes da alta",()=>{
+  const html=read("apostilas/cancer-de-mama/index.html");
+  assert.match(html,/id="capitulo-concordancia-mamaria-2026"/);
+  assert.match(html,/href="#capitulo-concordancia-mamaria-2026"/);
+  assert.match(html,/mamografia anterior negativa/);
+  assert.match(html,/microcalcificações suspeitas/);
+  assert.match(html,/biópsia “benigna”/);
+  assert.match(html,/gestação ou lactação/);
+  assert.match(html,/BI-RADS 3 sob seguimento/);
+  assert.match(html,/50–74 anos/);
+  const diagrams=[
+    "01-progressao.svg","02-birads.svg","03-investigacao.svg",
+    "04-perfis.svg","05-tratamento.svg","06-tumor-axila.svg"
+  ];
+  for(const file of diagrams){
+    assert.ok(html.includes("/assets/img/apostilas/cancer-de-mama/"+file),
+      "Esquema pré-existente não pode desaparecer: "+file);
+  }
+  const section=html.match(/<section class="book-section" id="capitulo-concordancia-mamaria-2026">([\s\S]*?)<\/section>/)?.[1]||"";
+  assert.ok(section.replace(/<[^>]+>/g," ").length>5000,"Conteúdo clínico muito superficial");
+});
