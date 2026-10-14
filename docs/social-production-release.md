@@ -18,6 +18,6 @@ Publicação em produção e integração da versão atual autorizadas explicita
 - Comprovação: browser-results/production-release/deploy-success.png.
 
 ## Limitações
-A aba automatizada do domínio oficial continuou no login; não se afirma uma nova validação visual autenticada em produção. Capturas visuais e quatro temas foram conferidos em homologação. Testes físicos iPhone/Android/PWA continuam pendentes.
+Após o usuário entrar na conta oficial, a interface autenticada foi conferida em produção: abas Amigos/Grupos/Salas, abertura e fechamento do modal Adicionar amigo, dados reais do Study Rats e acessórios carregados. Capturas em browser-results/production-release/{amigos,grupos,salas}-live.png. CSS das seis folhas confirmado nas versões publicadas; viewport 614 × 528 sem overflow horizontal. Nenhum pedido enviado, sala criada ou configuração alterada. Quatro temas conferidos em homologação; testes físicos iPhone/Android/PWA continuam pendentes.
 O teste adicional antigo de escolha de layout do Dashboard ainda falha na base anterior e está fora desta tarefa; seu código não foi alterado. A expectativa fixa do nome de cache no teste PWA foi atualizada para aceitar uma versão válida.
 A verificação CSS local encontrou um experimento não versionado em tools/youtube-music-poc; esse arquivo não foi enviado nem incluído no artefato. A verificação CSS do checkout limpo no GitHub passou.
