@@ -175,6 +175,13 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Revisões pendentes:** confirmar carregamento real do arquivo no desktop/PWA, verificar as demais figuras aprovadas na página, localizar e incorporar uma versão funcional da Figura 2 licenciada, leitura médico-editorial completa, avaliação de autossuficiência e 60 mil caracteres didáticos úteis.
 - **Status:** **EM REVISÃO / NÃO CERTIFICADA**; testes técnicos e deploy não bastam como certificação editorial.
 
+## 2026-10-14 — Câncer de Mama
+- Fonte comparativa efetivamente aberta no Drive: `MASTOLOGIA.pdf` (resumo curto de fatores de risco, BI-RADS, diagnóstico e tratamento). A autoria editorial não foi confirmada. O material ainda cita a faixa histórica 50–69 anos, já alterada pela Nota Técnica MS nº 626/2025.
+- Apostila LURIA: `apostilas/cancer-de-mama/index.html`. Verificadas 25 seções e imagens clínicas reais de microcalcificações mamográficas (Jmarchn, CC BY-SA 3.0) e carcinoma invasivo em histologia (Mikael Häggström, CC0), além de esquemas autorais complementares.
+- Ajuste aplicado: quadro comparativo entre rastreamento de risco habitual do SUS (50–74, bienal, acesso oportunístico fora da faixa) e SBM/CBR/FEBRASGO (40–74, anual), com vinheta clínica diferenciando rastreamento de investigação diagnóstica.
+- Fontes primárias: MS, NT 626/2025; INCA, comunicado de setembro/2025; Comissão Nacional de Mamografia, NT janeiro/2025; Wikimedia Commons, páginas dos arquivos clínicos.
+- Estado: **em revisão, não certificada**. Faltam conferência visual em navegador e PWA, validação dos links de imagem no dispositivo real, checagem de todo o tratamento sistêmico e avaliação da autossuficiência/60 mil caracteres úteis.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
