@@ -188,6 +188,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - Figura original preservada: `MenstrualCycle2_pt.svg`, licença CC BY-SA 3.0, Wikimedia Commons.
 - Estado: em revisão; falta auditoria visual e certificação integral de autossuficiência.
 
+## 2026-10-14 — Síndromes hipertensivas da gestação
+
+- **Apostila:** `apostilas/sindromes-hipertensivas-da-gestacao/index.html`.
+- **Benchmark efetivamente lido no Drive:** `Síndromes Hipertensivas na Gestação.pdf` (aprox. 3.086 caracteres extraídos), com diagnóstico de PE e sobreposição, HELLP, MgSO4, prevenção e interrupção. Trata-se de resumo compacto. A autoria institucional Estratégia MED não foi demonstrada; o texto menciona Maysa Mismetti e foi usado somente como fonte de comparação editorial, nunca copiado.
+- **Principais lacunas do benchmark:** recomendações de cálcio e evolução puerperal anteriores à divergência científica de 2026; orientação categórica sobre via de parto/raquianestesia em HELLP, sem as nuances clínicas necessárias; diferenciais de trombocitopenia, hemólise e injúria renal pós-parto não desenvolvidos.
+- **Implementação autoral:** criada seção `microangiopatias-gestacao-puerperio-2026` com tabela comparativa HELLP/PTT/SHUa, três casos comentados, indicação de avaliação urgente de ADAMTS13 diante de suspeita de PTT, reavaliação de injúria renal/hemólise persistente após parto e planejamento de alta baseado em NICE NG133. Adicionada comparação entre RBEHG/CNE-FEBRASGO (não recomenda cálcio para prevenção da PE em março de 2026) e OMS 2025 (recomenda 1,5–2 g/dia de cálcio elementar em populações com baixa ingestão), com crédito às duas fontes; sem transformar a divergência em falsa equivalência.
+- **Fontes abertas e conferidas:** RBEHG, `Recomendação para reposição de cálcio em gestantes`, 28/03/2026; OMS, diretrizes maternas 2025; NICE NG133 (versão atualizada em 2023); revisão `HELLP Syndrome and Differential Diagnosis with Other Thrombotic Microangiopathies in Pregnancy` (2024); relatório internacional sobre microangiopatias na gravidez e no puerpério (2020).
+- **Imagens:** a apostila não possuía `img` estático no HTML analisado. Não inserir figura clínica artificial como substituto de fotografia/exame real. Continua necessária curadoria de exames reais adequados com licença documentada.
+- **Estado:** EM REVISÃO, NÃO CERTIFICADA PELO PROMPT MAGNO. Pendem avaliação de autossuficiência integral, auditoria de 60 mil caracteres didáticos sem repetições, revisão clínica farmacológica completa, imagens reais, conferência visual desktop/PWA e validação de testes e deploy.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
