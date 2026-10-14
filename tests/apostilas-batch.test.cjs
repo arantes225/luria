@@ -444,3 +444,19 @@ test("Contracepção: decisões avançadas mantêm navegação e diferenciaçõe
   assert.match(html,/\bid="diu-cobre"/);
   assert.match(html,/\bid="siu-lng"/);
 });
+
+
+test("Pré-natal: casos 2026 têm rastreio de bacteriúria, sífilis e VSR e estão navegáveis",()=>{
+  const html=read("apostilas/pre-natal-baixo-risco/index.html");
+  const id="pre-natal-infeccoes-urinarias-vacinas-2026";
+  assert.ok(html.includes('id="'+id+'"'));
+  assert.ok(html.includes('href="#'+id+'"'));
+  assert.ok(html.includes('Bacteriúria assintomática') || html.includes('bacteriúria assintomática'));
+  assert.ok(html.includes('100.000 UFC/mL'));
+  assert.ok(html.includes('suspeita de pielonefrite') || html.includes('Suspeita de pielonefrite'));
+  assert.ok(html.includes('terceiro trimestre'));
+  assert.ok(html.includes('dTpa a partir de 20 semanas'));
+  assert.ok(html.includes('VSR a partir de 28 semanas'));
+  assert.ok(html.includes('acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections'));
+  assert.ok(html.includes('calendario-nacional-de-vacinacao-gestante'));
+});
