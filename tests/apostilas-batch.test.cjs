@@ -308,3 +308,14 @@ test("Cervicite e DIP: imagens CDC permanecem e casos são navegáveis",()=>{
   assert.match(html,/antimicrobianos parenterais/);
   assert.match(html,/PCDT de IST/);
 });
+
+test("Ciclo menstrual preserva diagrama completo em português com licença rastreável",()=>{
+  const html=read("apostilas/ciclo-menstrual-eixo-hho/index.html");
+  assert.match(html,/id="fig-ciclo-menstrual-licenciado"/);
+  assert.match(html,/MenstrualCycle2_pt\.svg\/960px-MenstrualCycle2_pt\.svg\.png/);
+  assert.match(html,/Isometrik/);
+  assert.match(html,/Polyethylen/);
+  assert.match(html,/creativecommons\.org\/licenses\/by-sa\/3\.0/);
+  assert.match(html,/ovulação ocorra invariavelmente no dia 14/);
+  assert.match(html,/fase folicular pode variar bastante/);
+});
