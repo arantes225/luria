@@ -525,3 +525,15 @@ test("TPP diferencia prevenção com colo curto de triagem sintomática",()=>{
   assert.equal(new Set(ids).size,ids.length,"seções duplicadas");
   assert.equal(d.o.filter(x=>!ids.includes(x[0])).length,0,"sumário aponta para capítulo ausente");
 });
+
+test("Vulvovaginites mantém as quatro lâminas CDC e suas atribuições",()=>{
+  const html=read("apostilas/vulvovaginites/index.html");
+  const ids=["16824","2933","3720","14500"];
+  for(const id of ids){
+    assert.match(html,new RegExp("PHIL_Images/"+id+"/"+id+"_lores\\.jpg"),"exame clínico CDC ausente: "+id);
+    assert.match(html,new RegExp("pid="+id),"fonte original CDC ausente: "+id);
+  }
+  for(const author of ["Joe Miller","Stuart Brown","M. Rein"])assert.ok(html.includes(author),"crédito ausente: "+author);
+  assert.equal((html.match(/<img\\b/g)||[]).length,4,"não substituir ou acrescentar imagens sem auditoria");
+  assert.ok(html.includes("obra em domínio público")||html.includes("Obra em domínio público"));
+});
