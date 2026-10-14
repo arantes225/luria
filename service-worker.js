@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-social-stage5-20261014";
+const CACHE_VERSION = "luria-pwa-social-stage6-20261014";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -47,9 +47,9 @@ const APP_SHELL = [
   "/assets/css/social-rooms-design.css?v=4",
   "/assets/css/social-responsive.css?v=3",
   "/assets/js/social-view.js?v=stage5",
-  "/assets/js/amigos.js?v=47-friends",
+  "/assets/js/amigos.js?v=48-friends",
   "/assets/js/studyrats.js?v=47-consistent",
-  "/assets/js/social-rooms.js?v=15",
+  "/assets/js/social-rooms.js?v=16",
   "/assets/js/social-voice.js?v=8",
   "/assets/js/social-presence.js?v=1",
   "/assets/js/community-navigation.js?v=stage1",
