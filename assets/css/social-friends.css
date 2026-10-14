@@ -2,6 +2,7 @@
 @layer luria-ui-education {
 body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
  --sf-teal:light-dark(#167d79,#64c8ba);--sf-violet:light-dark(#7560ad,#baa1e1);--sf-warm:light-dark(#a96836,#d4ac78);
+ &[data-ui-appearance="dark"] :is(#friends-ref-add-toggle,#sf-add-dialog #add-friend) {color:var(--color-surface-elevated)!important;}
  --sf-tint:color-mix(in srgb,var(--sf-teal) 8%,var(--color-surface));
  .social-heading {float:none;margin:0 0 16px;}
  .social-heading p {display:block;font-size:14px;line-height:1.5;color:var(--color-text-secondary);}

@@ -41,3 +41,7 @@ Produção não alterada.
 ## Revisão complementar — 14/10/2026
 
 Página Amigos conferida novamente na homologação nas quatro combinações: azul claro, azul escuro, rosa claro e rosa escuro. Capturas reais em browser-results/social-stage6/friends-{blue,pink}-{light,dark}.png. Viewport real 614 × 528; sem overflow horizontal observado na medição final. Botão Adicionar amigo, busca, navegação e nome acessível do menu do contato presentes. Tema azul escuro restaurado ao terminar. Nenhuma alteração de código ou nova publicação nesta revisão. Testes em aparelhos físicos continuam pendentes.
+
+## Correção complementar de contraste
+
+Revisão desktop identificou texto branco sobre azul claro nos controles Adicionar amigo e Enviar pedido em tema escuro. Regra isolada em social-friends.css usa a superfície elevada do tema como cor do texto somente nesses controles no modo escuro. Rotas e cache atualizados para social-friends.css v4. CSS analisado com PostCSS, teste PWA e três testes do build aprovados. Verificação no navegador confirmou texto rgb(32,35,42) sobre fundos rgb(148,185,237) e rgb(173,205,247). Modal abriu e fechou com restauração do foco; nenhum pedido enviado. Captura: browser-results/social-stage6/invite-contrast-dark.png. Homologação: 6bf67165-5bc2-4cf1-ae10-099d744512dc. Produção preservada.
