@@ -399,3 +399,18 @@ test("Transmissão vertical conserva imagem CDC e usa retinografia licenciada",(
   assert.match(h,/não se recomenda amamentação/);
   assert.match(h,/coriorretiniana de toxoplasmose congênita após a fase ativa/);
 });
+
+
+test("Apostila IST ensina diferencial de ulceras sem perder fotos clinicas",()=>{
+ const html=read("apostilas/infeccoes-sexualmente-transmissiveis/index.html");
+ assert.match(html,/id="ulceras-genitais-decisoes-2026"/);
+ assert.match(html,/href="#ulceras-genitais-decisoes-2026"/);
+ assert.match(html,/úlcera indolor não confirma sífilis/);
+ assert.match(html,/proctite grave depois de sexo anal receptivo/i);
+ assert.match(html,/biópsia de lesão persistente/i);
+ assert.match(html,/anexo alterado em 2024/);
+ for(const id of [13,14,15,16,17,18,19,20]) {
+   assert.match(html,new RegExp("ist-"+id+"\\.webp"),"Imagem clínica "+id+" foi perdida");
+ }
+ assert.equal((html.match(/ist-\\d+\\.webp/g)||[]).length,8,"Devem permanecer as oito fotos originais");
+});
