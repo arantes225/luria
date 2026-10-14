@@ -137,6 +137,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Fontes clínicas:** Ministério da Saúde, PCDT IST (anexo 2024); CDC, `Diseases Characterized by Genital, Anal, or Perianal Ulcers` e `Genital Herpes`, 2021.
 - **Estado:** EM REVISÃO, ainda não certificada pelo Prompt Magno. Pendências: verificação individual das oito imagens em dispositivo real, fontes clínicas adicionais, leitura integral, rastreabilidade das doses e protocolos, teste de compreensão independente e validação de layout desktop/PWA.
 
+## 2026-10-13 — Infertilidade conjugal
+
+- **Apostila LURIA:** `apostilas/infertilidade-conjugal/index.html`.
+- **Comparativos do Drive lidos:** `02 - HIPERPROLACTINEMIA.pdf` (9,2 mil caracteres textuais, causas da anovulação, prolactina, galactorreia e tratamento) e `01 - RESUMO - SINDROME DOS OVARIOS POLICISTICOS.pdf` (10,5 mil caracteres; resistência insulínica, anovulação e letrozol). Referências **parciais** do fator feminino; não são apostila geral de infertilidade nem substituem avaliação de fator masculino/tubas. Autoria institucional específica não confirmada.
+- **Cobertura LURIA:** o livro já tratava da investigação em paralelo do casal, reserva, ovulação, tubas, fator masculino, endometriose, IUI, FIV/ICSI e casos. A lacuna principal era a ausência de um exame real de HSG e casos de dificuldade progressiva com documentação da incerteza e de efeitos de medicamentos.
+- **Correções autorais:** adicionada imagem clínica de histerossalpingografia, arquivo original de 69 KB, autor Drhan9394, Wikimedia Commons, licença **CC0 1.0**; link e mídia original verificadas, com créditos e alternativa para ampliar. O exame mostra opacificação da cavidade uterina e trajeto das tubas; interpretar com laudo clínico. Adicionados cinco casos sobre SOP, hiperprolactinemia, azoospermia por testosterona, obstrução proximal aparente e idade avançada.
+- **Fontes de conferência:** ASRM, `Fertility evaluation of infertile women` (2021); Diretriz internacional de SOP (2023); OMS, `Laboratory manual for examination and processing of human semen`, 6a ed. (2021). As divergências entre off-label de letrozol e recomendação clínica foram preservadas.
+- **Pendências:** leitura integral de autossuficiência, verificação do carregamento da HSG e layout em navegador/PWA, análise de atualizações éticas do CFM e revisão de referências nacionais específicas. **Não certificada pelo Prompt Magno**.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
