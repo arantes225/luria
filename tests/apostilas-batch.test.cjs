@@ -353,3 +353,15 @@ test("RCF e GIG mantém Doppler real licenciado e casos estruturados",()=>{
   assert.match(html,/5\.000 g/);
   assert.match(html,/Pressão fúndica/);
 });
+
+test("Hemorragias obstetricas mantem fluxos clinicos sem amniotomia automatica",()=>{
+  const html=read("apostilas/hemorragias-primeiro-terceiro-trimestre/index.html");
+  assert.match(html,/id="decisoes-hemorragicas-2026"/);
+  assert.match(html,/href="#decisoes-hemorragicas-2026"/);
+  assert.match(html,/Não transformar amniotomia em primeiro passo universal/);
+  assert.match(html,/Toque vaginal digital deve ser evitado/);
+  assert.match(html,/mantendo a placenta in situ/);
+  assert.match(html,/vasa prévia/);
+  assert.match(html,/CCN ≥7 mm/);
+  assert.match(html,/NICE NG126/);
+});
