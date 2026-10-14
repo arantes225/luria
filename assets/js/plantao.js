@@ -2922,9 +2922,12 @@
 
     const patientImage=state.current?.presentation?.patient_image;
     const unconsciousImage=state.current?.presentation?.unconscious_image;
+    // A foto da gestante nao troca ao perder a consciencia:
+    // o rig local fecha as palpebras sem mover o rosto ou o leito.
+    const animatedPregnant=/gestante_acordada_triste_1300x900_100kb\.webp/.test(String(patientImage||""));
     return {
       patient_image:patientImage,
-      unconscious_image:unconsciousImage
+      unconscious_image:animatedPregnant?patientImage:unconsciousImage
     };
   }
 
