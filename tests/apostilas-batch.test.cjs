@@ -412,5 +412,5 @@ test("Apostila IST ensina diferencial de ulceras sem perder fotos clinicas",()=>
  for(const id of [13,14,15,16,17,18,19,20]) {
    assert.match(html,new RegExp("ist-"+id+"\\.webp"),"Imagem clínica "+id+" foi perdida");
  }
- assert.equal((html.match(/ist-\\d+\\.webp/g)||[]).length,8,"Devem permanecer as oito fotos originais");
+ assert.equal((html.match(/ist-\d+\.webp/g)||[]).length,8,"Devem permanecer as oito fotos originais");
 });
