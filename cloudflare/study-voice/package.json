@@ -1,0 +1,11 @@
+{
+  "name": "luria-study-voice-worker",
+  "private": true,
+  "scripts": {
+    "deploy:staging": "wrangler deploy --config wrangler.staging.toml",
+    "check:staging": "wrangler deploy --config wrangler.staging.toml --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.150.0"
+  }
+}

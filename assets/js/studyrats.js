@@ -37,6 +37,7 @@ const sharedStudyratAccessories=[
   {id:'crown',label:'Coroa',kind:'head',src:'/assets/img/studyrats/acessórios/cabeça/cabeça/crown.webp?v=16'},
   {id:'gamer-headset',label:'Headset gamer',kind:'head',src:'/assets/img/studyrats/acessórios/cabeça/cabeça/gamer-headset.webp?v=17'},
   {id:'magic-top-hat',label:'Cartola mágica',kind:'head',src:'/assets/img/studyrats/acessórios/cabeça/cabeça/magic-top-hat.webp?v=16'},
+  {id:'mouse-ears',label:'Tiara de orelhas',kind:'head',src:'/assets/img/studyrats/acessórios/cabeça/cabeça/mouse-ears-headband.webp?v=16'},
   {id:'pink-bow-hat',label:'Chapéu rosa',kind:'head',src:'/assets/img/studyrats/acessórios/cabeça/cabeça/pink-bow-hat.webp?v=16'},
   {id:'santa-hat',label:'Papai Noel',kind:'head',src:'/assets/img/studyrats/acessórios/cabeça/cabeça/santa-hat.webp?v=16'},
   {id:'unicorn-headband',label:'Tiara unicórnio',kind:'head',src:'/assets/img/studyrats/acessórios/cabeça/cabeça/unicorn-headband.webp?v=16'},
@@ -200,7 +201,7 @@ function sharedStudyratsUpdateLargePreview(){
     sharedStudyratsBindImageFallbacks(host);
   });
   const customizer=document.getElementById('studyrats-customizer');
-  if(customizer&&!customizer.hidden&&!sharedStudyratsIsStandalone())sharedStudyratsBindAccessoryDrag();
+  if(customizer&&!customizer.hidden)sharedStudyratsBindAccessoryDrag();
 }
 
 function sharedStudyratsApplyAccessorySelection(){
@@ -503,6 +504,7 @@ async function sharedStudyratsLoad(){
 function sharedStudyratsRender(){
   const host=document.getElementById('studyrats-list');
   if(!host)return;
+  const previous=new Map(Array.from(host.querySelectorAll('[data-runner-key]')).map(el=>[el.dataset.runnerKey,el.dataset.position]));
   const challenges=sharedStudyratsGroup(sharedStudyratsRows);
 
   if(!challenges.length){
@@ -525,24 +527,20 @@ function sharedStudyratsRender(){
       const score=Number.isInteger(value)?value:value.toFixed(1);
       const laneColor=sharedStudyratLaneColors[index%sharedStudyratLaneColors.length];
 
-      return '<div class="studyrats-lane" style="--lane-color:'+laneColor+'">'+
-        '<div class="studyrats-runner-card">'+
-          '<span class="studyrats-rank '+(index===0?'is-first':'')+'">'+(index+1)+'</span>'+
-          '<span class="studyrats-runner-copy"><strong>'+fEsc(p.name)+'</strong><small>'+fEsc(score)+' '+fEsc(type.unit)+'</small></span>'+
+      const key=ch.id+':'+p.id;
+      const from=Number(previous.get(key));
+      return '<div class="sr-lane" style="--lane-color:'+laneColor+'">'+
+        '<div class="sr-person">'+
+          '<span class="sr-rank '+(index===0?'is-first':'')+'">'+(index+1)+'</span>'+
+          '<span class="sr-person-copy"><strong>'+fEsc(p.name)+'</strong><small>'+fEsc(score)+' '+fEsc(type.unit)+'</small></span>'+
         '</div>'+
-        '<div class="studyrats-road">'+
-          '<span class="studyrats-road-dash"></span>'+
-          '<span class="studyrats-progress-fill" style="width:'+pct+'%"></span>'+
-          '<span class="studyrats-mouse" style="left:'+pct+'%">'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite studyrats-race-fitted',p.accessoryX,p.accessoryY)+'</span>'+
+        '<div class="sr-road" aria-label="Posição visual de '+fEsc(p.name)+'">'+
+          '<span class="sr-route" aria-hidden="true"></span><span class="sr-progress" style="transform:scaleX('+(pct/100)+')"></span>'+
+          '<span class="sr-carriage" data-runner-key="'+fEsc(key)+'" data-position="'+pct+'" style="transform:translateX('+(Number.isFinite(from)&&previous.has(key)?from:pct)+'%)"><span class="sr-sprite">'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite studyrats-race-fitted',p.accessoryX,p.accessoryY)+'</span></span>'+
         '</div>'+
       '</div>';
     }).join('');
 
-    const participantCount=Math.max(1,ch.participants.length);
-    const shrink=Math.max(0.85,1-Math.max(0,participantCount-3)*0.05);
-    const runnerScale=(1.25*shrink).toFixed(3);
-    const laneHeight=Math.round(82*shrink);
-    const raceHeight=Math.max(400,150+(participantCount*laneHeight));
     const canDelete=ch.creator_user_id===window.docmapUser.id;
     const finished=ch.status==='finished';
 
@@ -555,23 +553,21 @@ function sharedStudyratsRender(){
       '</div>'+
       '<div class="studyrats-summary">'+
         '<div class="studyrats-summary-item"><span class="studyrats-status-dot '+(finished?'is-finished':'')+'"></span><span><small>Status</small><strong>'+(finished?'Encerrado':'Desafio ativo')+'</strong></span></div>'+
-        '<div class="studyrats-summary-item"><span class="studyrats-summary-icon">↗</span><span><small>Modalidade</small><strong>'+fEsc(type.title)+'</strong></span></div>'+
-        '<div class="studyrats-summary-item"><span class="studyrats-summary-icon">▣</span><span><small>Prazo</small><strong>'+formatStudyratsDate(ch.deadline)+'</strong><em>'+sharedStudyratsDeadlineText(ch.deadline)+'</em></span></div>'+
-        '<div class="studyrats-summary-item"><span class="studyrats-summary-icon">●●</span><span><small>Participantes</small><strong>'+ch.participants.length+'</strong><em>Boa sorte, ratos de estudo!</em></span></div>'+
+        '<div class="studyrats-summary-item"><span><small>Modalidade</small><strong>'+fEsc(type.title)+'</strong></span></div>'+
+        '<div class="studyrats-summary-item"><span><small>Prazo</small><strong>'+formatStudyratsDate(ch.deadline)+'</strong><em>'+sharedStudyratsDeadlineText(ch.deadline)+'</em></span></div>'+
+        '<div class="studyrats-summary-item"><span><small>Participantes</small><strong>'+ch.participants.length+'</strong><em>Seu ritmo também importa</em></span></div>'+
       '</div>'+
-      '<div class="studyrats-race-scene" style="--runner-scale:'+runnerScale+';--lane-height:'+laneHeight+'px;height:'+raceHeight+'px;min-height:'+raceHeight+'px">'+
-        '<div class="studyrats-race-canvas">'+
-          '<div class="studyrats-skyline"><i></i><i></i><i></i><i></i></div>'+
-          '<div class="studyrats-lanes">'+lanes+'</div>'+
-          '<div class="studyrats-finish"><span>CHEGADA</span><i></i></div>'+
-          '<div class="studyrats-bush studyrats-bush-left"></div><div class="studyrats-bush studyrats-bush-right"></div>'+
-        '</div>'+
+      '<div class="sr-circuit '+(finished?'is-finished':'')+'">'+
+        '<div class="sr-circuit-heading"><span>SEU CIRCUITO DE ESTUDOS</span><span>Progresso em companhia</span></div>'+
+        '<div class="sr-lanes">'+lanes+'</div>'+
+        '<div class="sr-circuit-scale" aria-hidden="true"><span>Largada</span><span>Cada passo conta</span><span>Chegada</span></div>'+
       '</div>'+
       '<div class="studyrats-race-footer"><span>Os ratinhos avançam com o tempo e com o desempenho relativo de cada participante.</span><strong>'+fEsc(type.title)+' · até '+formatStudyratsDate(ch.deadline)+'</strong></div>'+
     '</article>';
   }).join('');
 
   sharedStudyratsBindImageFallbacks(host);
+  requestAnimationFrame(function(){host.querySelectorAll('[data-runner-key]').forEach(function(el){el.style.transform='translateX('+el.dataset.position+'%)';});});
 
   host.querySelectorAll('[data-delete-studyrat]').forEach(function(btn){
     btn.addEventListener('click',async function(){
@@ -650,12 +646,7 @@ window.initSharedStudyrats=function(){
 
   const customizer=document.getElementById('studyrats-customizer');
   const customizeButton=document.getElementById('studyrats-toggle-customize');
-  if(sharedStudyratsIsStandalone()){
-    if(customizer)customizer.hidden=true;
-    if(customizeButton)customizeButton.hidden=true;
-  }
   customizeButton?.addEventListener('click',function(){
-    if(sharedStudyratsIsStandalone())return;
     if(!customizer)return;
     const opening=customizer.hidden;
     customizer.hidden=!opening;
@@ -684,6 +675,8 @@ window.initSharedStudyrats=function(){
     .subscribe();
 
   clearInterval(sharedStudyratsTimer);
-  sharedStudyratsTimer=setInterval(function(){if(!document.hidden)sharedStudyratsLoad();},30000);
-  document.addEventListener('visibilitychange',function(){if(!document.hidden)sharedStudyratsLoad();});
+  function refreshVisibleRace(){if(!document.hidden&&!document.getElementById('community-friends-panel')?.hidden)sharedStudyratsLoad();}
+  sharedStudyratsTimer=setInterval(refreshVisibleRace,30000);
+  document.addEventListener('visibilitychange',refreshVisibleRace);
+  window.addEventListener('luria:community-tab',function(event){if(event.detail.area==='friends')refreshVisibleRace();});
 };

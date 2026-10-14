@@ -12,6 +12,7 @@
     "node": ">=24.0.0"
   },
   "devDependencies": {
+    "@electric-sql/pglite": "0.3.14",
     "jsdom": "29.0.1",
     "postcss": "8.5.30"
   }

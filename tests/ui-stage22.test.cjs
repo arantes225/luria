@@ -52,12 +52,9 @@ test('community layout keeps friend lookup/addition and challenge, customization
   assert.equal(d.getElementById('studyrats-customizer').hidden,false);
   d.getElementById('studyrats-toggle-customize').click();
   assert.equal(d.getElementById('studyrats-customizer').hidden,true);
-  d.getElementById('friends-create-room-toggle').click();
-  assert.equal(d.getElementById('friends-create-room-panel').hidden,false);
-  assert.match(d.getElementById('friends-room-code').textContent,/^[A-Z2-9]{6}$/);
-  assert.equal(d.activeElement.id,'friends-room-name');
-  d.getElementById('friends-create-room-close').click();
-  assert.equal(d.getElementById('friends-create-room-panel').hidden,true);
+  // Persisted room dialogs are exercised with PostgreSQL in social-ui.test.cjs.
+  assert.equal(d.getElementById('friends-create-room-toggle').textContent,'Criar sala');
+  assert.equal(d.getElementById('social-dialog').open,false);
   assert.equal(d.querySelector('.community-nav a').pathname,'/amigos/');
 });
 

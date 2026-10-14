@@ -6632,6 +6632,16 @@ iniciarApp();
 
 
 /* Sessão global de estudo: persiste entre páginas e pausa após 15 min sem interação. */
+// Optional social presence uses the shared study timer and authenticated private channels.
+(function loadStudyPresence(){
+  if(document.querySelector('script[data-luria-study-presence]'))return;
+  const script=document.createElement('script');
+  script.src='/assets/js/social-presence.js?v=1';
+  script.dataset.luriaStudyPresence='true';
+  script.defer=true;
+  document.head.appendChild(script);
+})();
+
 (function installLuriaStudyTimer(){
   if (window.LuriaStudyTimer) return;
   const KEY="luria:active-study-session:v1", IDLE_MS=15*60*1000;

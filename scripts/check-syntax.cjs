@@ -8,7 +8,7 @@ function check(code,file,line=1){
 }
 function walk(dir){
   for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
-    if(['.git','node_modules','vendor','browser-results','.audit-artifacts','.tmp'].includes(entry.name))continue;
+    if(['.git','node_modules','vendor','browser-results','.audit-artifacts','.tmp','.wrangler','.wrangler-home','build'].includes(entry.name))continue;
     const full=path.join(dir,entry.name),file=path.relative(root,full);
     if(entry.isDirectory()){walk(full);continue;}
     if(/\.(js|cjs)$/.test(file))check(fs.readFileSync(full,'utf8'),file);

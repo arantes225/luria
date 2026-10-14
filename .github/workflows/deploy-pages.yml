@@ -39,6 +39,8 @@ jobs:
         run: node --test tests/css-system.test.cjs tests/ui-routes.test.cjs tests/ui-startup.test.cjs tests/ui-final-refinement.test.cjs
       - name: Check CSP generation
         run: node scripts/sync-csp.cjs
+      - name: Validate social room permissions, client behavior and voice authorization
+        run: node --test --test-isolation=none tests/social-database.test.cjs tests/social-ui.test.cjs tests/social-voice.test.cjs tests/social-voice-client.test.cjs tests/social-pwa.test.cjs tests/stage82-ui.test.cjs tests/ui-stage22.test.cjs
       - name: Audit all apostilas without blocking legacy books
         run: node scripts/audit-apostilas-batch.cjs
       - name: Run deterministic frontend regressions

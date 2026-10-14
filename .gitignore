@@ -1,3 +1,10 @@
 node_modules/
 browser-results/
 .audit-artifacts/
+.dev.vars
+.dev.vars.*
+.wrangler/
+.wrangler-home/
+.npm-cache/
+build/staging/
+build/staging*.zip

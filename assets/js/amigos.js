@@ -25,6 +25,10 @@ let friendLookupTimer=null;
 let friendsRowsCache=[];
 
 function fEsc(v){return String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");}
+function friendAvatar(friend){
+  let url='';try{const parsed=new URL(friend.avatar_url);if(parsed.protocol==='https:')url=parsed.href;}catch{}
+  return `<span class="friend-avatar">${url?`<img src="${fEsc(url)}" alt="" loading="lazy">`:fEsc((friend.display_name||"U").charAt(0).toUpperCase())}</span>`;
+}
 function setFriendsStatus(text,type=""){const el=document.getElementById("friends-status");if(!el)return;el.textContent=text;el.className="friends-status "+type;}
 
 function renderFriendPreview(friend=null,message=""){
@@ -66,19 +70,34 @@ async function loadFriends(){
   const host=document.getElementById("friends-list");
   const rows=data||[];
   friendsRowsCache=rows;
+  renderFriendsList();
+  renderStudyratsFriendOptions();refreshFriendsCommunityMetrics();
+  window.dispatchEvent(new CustomEvent('luria:friends-loaded',{detail:{rows}}));
+}
+
+function renderFriendsList(){
+  const host=document.getElementById('friends-list');
+  if(!host)return;
+  const query=(document.getElementById('friends-search')?.value||'').trim().toLocaleLowerCase('pt-BR');
+  const rows=friendsRowsCache.filter(friend=>`${friend.display_name||''} ${friend.luria_id||''}`.toLocaleLowerCase('pt-BR').includes(query));
+  const count=document.getElementById('social-friend-count');if(count)count.textContent=String(friendsRowsCache.length);
   host.innerHTML=rows.length?rows.map(friend=>`
-    <div class="friend-row">
+    <div class="friend-row" data-friend-user="${fEsc(friend.user_id)}">
       <div class="friend-main">
-        <span class="friend-avatar">${fEsc((friend.display_name||"U").charAt(0).toUpperCase())}</span>
+        ${friendAvatar(friend)}
         <span class="friend-copy">
           <strong>${fEsc(friend.display_name||"Usuário LURIA")}</strong>
           <small>ID ${fEsc(friend.luria_id||"")}</small>
+          <small data-friend-presence="${fEsc(friend.user_id)}">Status privado</small>
         </span>
       </div>
       <div class="friends-actions">
+        <button class="button secondary" type="button" data-study-friend="${fEsc(friend.user_id)}">Estudar junto</button>
+        <button class="button secondary" type="button" data-profile-friend="${fEsc(friend.user_id)}">Perfil</button>
         <button class="button secondary" type="button" data-remove-friend="${fEsc(friend.user_id)}">Remover</button>
+        <button class="button secondary" type="button" data-block-friend="${fEsc(friend.user_id)}">Bloquear</button>
       </div>
-    </div>`).join(""):'<div class="friends-empty">Nenhum amigo adicionado ainda.</div>';
+    </div>`).join(""):`<div class="friends-empty">${query?'Nenhum amigo encontrado.':'Adicione sua turma pelo ID LURIA.'}</div>`;
 
   host.querySelectorAll("[data-remove-friend]").forEach(btn=>btn.addEventListener("click",async()=>{
     if(!await window.LuriaDialog.confirm("Remover esta pessoa da sua lista de amigos?"))return;
@@ -86,7 +105,10 @@ async function loadFriends(){
     if(error){setFriendsStatus(error.message,"error");return;}
     await loadFriends();renderStudyratsFriendOptions();setFriendsStatus("Amigo removido.","success");
   }));
-  renderStudyratsFriendOptions();refreshFriendsCommunityMetrics();
+  host.querySelectorAll('[data-study-friend]').forEach(btn=>btn.addEventListener('click',()=>window.LuriaSocial?.inviteFriend(btn.dataset.studyFriend)));
+  host.querySelectorAll('[data-profile-friend]').forEach(btn=>btn.addEventListener('click',()=>window.LuriaSocial?.showProfile(btn.dataset.profileFriend)));
+  host.querySelectorAll('[data-block-friend]').forEach(btn=>btn.addEventListener('click',()=>window.LuriaSocial?.block(btn.dataset.blockFriend)));
+  window.LuriaSocial?.updateFriendPresence();
 }
 
 async function loadInbox(){
@@ -136,7 +158,8 @@ async function addFriend(){
     if(!friend)throw new Error("ID LURIA não encontrado.");
     const {error}=await friendsSb.rpc("add_friend_by_luria_id",{p_luria_id:value});if(error)throw error;
     input.value="";pendingFriendLookup=null;renderFriendPreview();await loadFriends();
-    setFriendsStatus(`${friend.display_name||"Usuário LURIA"} foi adicionado aos seus amigos.`,"success");
+    setFriendsStatus(`Solicitação enviada para ${friend.display_name||"Usuário LURIA"}.`,"success");
+    window.LuriaSocial?.refreshSocial();
   }catch(error){console.error(error);setFriendsStatus(error.message||"Não foi possível adicionar.","error");}
   finally{button.disabled=false;}
 }
@@ -244,6 +267,7 @@ async function initFriends(){
   friendsUser=window.docmapUser;
   if(!friendsUser)return;
   document.getElementById("add-friend")?.addEventListener("click",addFriend);
+  document.getElementById('friends-search')?.addEventListener('input',renderFriendsList);
   const friendInput=document.getElementById("friend-id-input");
   friendInput?.addEventListener("input",e=>{e.target.value=e.target.value.toUpperCase();scheduleFriendLookup(e.target.value);});
   friendInput?.addEventListener("keydown",e=>{if(e.key==="Enter")addFriend();});
@@ -253,53 +277,7 @@ async function initFriends(){
     catch{await window.LuriaDialog.prompt("Copie seu ID LURIA:",id);}
   });
   window.initSharedStudyrats?.();
-  initFriendsStudyRooms();
   try{await Promise.all([loadOwnId(),loadFriends(),loadInbox()]);}
   catch(error){console.error(error);setFriendsStatus(error.message||"Não foi possível carregar Amigos.","error");}
 }
 if(window.docmapUser)initFriends();else window.addEventListener("docmap:ready",initFriends,{once:true});
-
-function initFriendsStudyRooms(){
-  const panel=document.getElementById("friends-create-room-panel");
-  const toggle=document.getElementById("friends-create-room-toggle");
-  const close=document.getElementById("friends-create-room-close");
-  const codeEl=document.getElementById("friends-room-code");
-  const nameEl=document.getElementById("friends-room-name");
-  const status=document.getElementById("friends-room-status");
-
-  const makeCode=()=>{
-    const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-    const bytes=new Uint32Array(6);
-    if(window.crypto?.getRandomValues)window.crypto.getRandomValues(bytes);
-    else for(let i=0;i<bytes.length;i++)bytes[i]=Math.floor(Math.random()*1e9);
-    return Array.from(bytes,n=>chars[n%chars.length]).join("");
-  };
-  const setCode=()=>{if(codeEl)codeEl.textContent=makeCode();};
-
-  toggle?.addEventListener("click",()=>{
-    if(!panel)return;
-    panel.hidden=false;
-    setCode();
-    nameEl?.focus();
-    panel.scrollIntoView({behavior:"smooth",block:"nearest"});
-  });
-  close?.addEventListener("click",()=>{if(panel)panel.hidden=true;});
-  document.getElementById("friends-room-code-regenerate")?.addEventListener("click",setCode);
-  document.getElementById("friends-room-code-copy")?.addEventListener("click",async()=>{
-    const code=codeEl?.textContent?.trim()||"";
-    if(!code)return;
-    try{await navigator.clipboard.writeText(code);if(status)status.textContent="Código copiado.";}
-    catch{if(status)status.textContent="Não foi possível copiar automaticamente.";}
-  });
-  document.getElementById("friends-room-create")?.addEventListener("click",()=>{
-    const name=(nameEl?.value||"").trim();
-    const code=codeEl?.textContent?.trim()||"";
-    if(!name){if(status)status.textContent="Digite um nome para a sala.";nameEl?.focus();return;}
-    const room={name,code,createdAt:new Date().toISOString()};
-    try{
-      const saved=JSON.parse(localStorage.getItem("luria:study-rooms")||"[]");
-      localStorage.setItem("luria:study-rooms",JSON.stringify([room,...saved].slice(0,10)));
-    }catch{}
-    if(status)status.textContent="Sala criada. Compartilhe o código "+code+".";
-  });
-}
