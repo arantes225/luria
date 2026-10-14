@@ -146,6 +146,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Fontes de conferência:** ASRM, `Fertility evaluation of infertile women` (2021); Diretriz internacional de SOP (2023); OMS, `Laboratory manual for examination and processing of human semen`, 6a ed. (2021). As divergências entre off-label de letrozol e recomendação clínica foram preservadas.
 - **Pendências:** leitura integral de autossuficiência, verificação do carregamento da HSG e layout em navegador/PWA, análise de atualizações éticas do CFM e revisão de referências nacionais específicas. **Não certificada pelo Prompt Magno**.
 
+## 2026-10-14 — Planejamento reprodutivo e contracepção
+
+- **Apostila LURIA:** `apostilas/planejamento-reprodutivo-contracepcao/index.html`.
+- **Documento do Google Drive efetivamente aberto e lido:** `Planejamento familiar.pdf` (aprox. 3 mil caracteres extraídos). Apresenta contracepção de emergência, mecanismos de anticoncepção, DIU, LARC, contraindicações hormonais e esterilização. Documento breve, não equivalente a livro ou diretriz; créditos textuais indicam Maysa Mismetti, sem comprovação de autoria do Estratégia MED.
+- **Análise crítica:** material do Drive conserva informação legislativa anterior à Lei 14.443/2022, como consentimento conjugal e idade mínima de 25 anos, que **não são aplicáveis à esterilização voluntária pela lei vigente**. A apostila da LURIA já aborda corretamente 21 anos OU dois filhos vivos, 60 dias e dispensa de anuência conjugal; possui capítulos específicos para métodos. A lacuna concreta detectada foi a pouca aplicação clínica integrada de emergência, método regular, DIU e IST, puerpério e discordâncias entre risco/segurança/adesão.
+- **Correção realizada no repositório:** capítulo original `decisoes-avancadas-contracepcao-2026`, com seis casos aprofundados, algoritmo comparativo de levonorgestrel/ulipristal/DIU de cobre, início do método regular e proteção adicional, DIU e triagem de IST, enxaqueca com aura, DIU pós-parto, esterilização legal e risco de gravidez recente. A navegação lateral recebeu link específico. Nenhuma fotografia clínica existente foi removida ou alterada.
+- **Fontes primárias oficiais consultadas:** OMS, `Medical eligibility criteria for contraceptive use`, 6ª ed. (2025), e `Selected practice recommendations`, 4ª ed. (2025); CDC `U.S. SPR` (2024), capítulos emergência e DIU; Ministério da Saúde, nota técnica de esterilização e Lei 14.443/2022. Orientações de disponibilidade e prazo de registro do implante variam por país e exigem atenção às autorizações locais.
+- **Pontos em aberto:** exame e licenças individuais de figuras de revisão no banco, comparação visual com material amplo equivalente, avaliação editorial integral sem redundâncias, profundidade dos capítulos curtos de métodos, 60 mil caracteres **úteis** comprovados, auditoria de apresentação desktop/PWA e teste clínico sistemático de autossuficiência.
+- **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. O capítulo novo foi gravado, mas a publicação e o checklist final dependem do CI e auditorias complementares.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
