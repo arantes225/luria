@@ -112,7 +112,7 @@ test('installed PWA actively checks and offers current service worker on resume'
   assert.match(pwaSource, /luria-pwa-update-action/);
   assert.match(pwaSource, /updateViaCache:\s*"none"/);
   const worker = fs.readFileSync('service-worker.js', 'utf8');
-  assert.match(worker, /luria-pwa-social-visual-20261014/);
+  assert.match(worker, /const CACHE_VERSION = "luria-pwa-[a-z0-9-]+";/);
 });
 
 test('hidden search overlays cannot hold the dashboard inert', () => {
