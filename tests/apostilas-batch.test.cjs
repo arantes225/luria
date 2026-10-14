@@ -287,3 +287,24 @@ test("Cancer de mama: exames clinicos reais com licenca nao substituem esquemas 
   const figures=[...html.matchAll(/<img[^>]+(?:microcalcifications_in_carcinoma_in_situ|Histopathology_of_invasive_ductal_carcinoma_of_the_breast)[^>]*>/g)];
   assert.equal(figures.length,2,"Faltam as duas fotografias clínicas reais");
 });
+
+
+test("Cervicite e DIP: imagens CDC permanecem e casos são navegáveis",()=>{
+  const html=read("apostilas/cervicites-doenca-inflamatoria-pelvica/index.html");
+  const imageIds=["19141","18956","17367"];
+  for(const id of imageIds){
+    assert.match(html,new RegExp("PHIL_Images/"+id+"/"+id+"_lores\\.jpg"),"Imagem clínica CDC perdida: "+id);
+    assert.match(html,new RegExp("Details\\.aspx\\?pid="+id),"Crédito CDC perdido: "+id);
+  }
+  assert.match(html,/CDC \/ Dr\. Wiesner/);
+  assert.match(html,/CDC \/ N\. J\. Fiumara/);
+  assert.match(html,/CDC \/ Dr\. Curran/);
+  assert.match(html,/id="casos-decisoes-urgencia-2026"/);
+  assert.match(html,/href="#casos-decisoes-urgencia-2026"/);
+  assert.match(html,/gestação ectópica/);
+  assert.match(html,/72 horas/);
+  assert.match(html,/48–72 horas/);
+  assert.match(html,/60 dias/);
+  assert.match(html,/antimicrobianos parenterais/);
+  assert.match(html,/PCDT de IST/);
+});
