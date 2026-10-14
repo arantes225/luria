@@ -109,6 +109,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Fontes para conduta:** ACOG, Placenta Accreta Spectrum, Obstetric Care Consensus No. 7; RCOG, Placenta praevia/accreta/vasa praevia, orientação de revisão; NICE NG126, perda gestacional e ectópica, atualização junho/2026. Normas nacionais prevalecem na prática local.
 - **Estado:** revisão clínica em andamento, **NÃO CERTIFICADA** pelo Prompt Magno até inspeção integral de fontes e texto, checagem visual PWA/desktop, imagens e cobertura didática.
 
+## 2026-10-13 — Indução do trabalho de parto
+
+- **Apostila:** `apostilas/inducao-do-trabalho-de-parto/index.html`. Conteúdo já aborda Bishop, métodos farmacológicos/mecânicos, ocitocina, amniotomia, cesárea prévia, segurança e critérios de falha.
+- **Benchmark do Drive efetivamente consultado:** `Parto.pdf` (arquivo `1aQsBCMwvKjVQcF2JfxBl2bUPkRIPqR8i`), cerca de 2.046 caracteres, concentrado em estática fetal, mecanismo de parto, planos pélvicos e fórceps. **Não aborda indução, misoprostol, amniotomia ou ocitocina**, portanto **não é comparativo de tema equivalente**, nem pode justificar diagnóstico de cobertura integral ou atribuição a Estratégia MED.
+- **Revisão factual independente:** OMS `WHO recommendations on mechanical methods for induction of labour` (2022) recomenda balão cervical e associação com ocitocina, reconhecendo evidência de certeza baixa; NICE NG207 (2021) diferencia maturação com Bishop até 6 e amniotomia/ocitocina se Bishop acima de 6, respeitando riscos; ACOG `First and Second Stage Labor Management` (2024) diferencia fase latente e parada de fase ativa.
+- **Figura preexistente inadequada:** produto do fabricante Cook Medical incorporado por hotlink, com aviso "imagem não carregada", e sem comprovação de direitos de republicação. Retirada a incorporação. **Substituição real licenciada:** ultrassonografia de balão intrauterino da Figura 4 de Wen et al., *BMC Pregnancy and Childbirth* 2022, DOI `10.1186/s12884-022-05035-w`, **CC BY 4.0**; ampliação e atribuição na legenda. A figura corresponde a um dispositivo mecânico em estudo e **não representa orientação de volume padronizado**. A fotografia do fabricante permanece apenas como referência externa.
+- **Aprofundamento autoral:** seis vinhetas de decisão (TOLAC, risco de prolapso em apresentação alta, balão versus prostaglandina, taquissistolia, falha de indução, suspeita de infecção intra-amniótica), quadro de emergências e diferenciação explícita do problema clínico antes da escolha farmacológica.
+- **Estado editorial:** **EM REVISÃO; NÃO CERTIFICADA**. Benchmark do Drive insuficiente para o mesmo tema; falta leitura de uma apostila comparável, checagem item a item das 20+ seções, verificação visual desktop e PWA, auditoria integral de 60 mil caracteres didáticos úteis e renderização in situ de todos os recursos. Testes CI não substituem essa auditoria.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
