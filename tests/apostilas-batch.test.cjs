@@ -365,3 +365,20 @@ test("Hemorragias obstetricas mantem fluxos clinicos sem amniotomia automatica",
   assert.match(html,/CCN ≥7 mm/);
   assert.match(html,/NICE NG126/);
 });
+
+
+test("Indução de parto conserva exame verdadeiro e alerta para situações de risco",()=>{
+  const h=read("apostilas/inducao-do-trabalho-de-parto/index.html");
+  assert.match(h,/id="fig-balao-cervical-usg-real"/);
+  assert.match(h,/12884_2022_5035_Fig4_HTML\.png/);
+  assert.match(h,/creativecommons\.org\/licenses\/by\/4\.0/);
+  assert.doesNotMatch(h,/<img[^>]+src="https:\/\/www\.cookmedical\.com/i,
+    "Imagem de fabricante com direitos não demonstrados não deve estar incorporada");
+  assert.match(h,/id="inducoes-casos-avancados-2026"/);
+  assert.match(h,/href="#inducoes-casos-avancados-2026"/);
+  assert.match(h,/Colo favorável não equivale a amniotomia segura/);
+  assert.match(h,/gestante normoxêmica/);
+  assert.match(h,/12–18 horas/);
+  assert.match(h,/OMS, métodos mecânicos/);
+  assert.match(h,/NICE NG207/);
+});
