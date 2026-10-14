@@ -156,6 +156,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Pontos em aberto:** exame e licenças individuais de figuras de revisão no banco, comparação visual com material amplo equivalente, avaliação editorial integral sem redundâncias, profundidade dos capítulos curtos de métodos, 60 mil caracteres **úteis** comprovados, auditoria de apresentação desktop/PWA e teste clínico sistemático de autossuficiência.
 - **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. O capítulo novo foi gravado, mas a publicação e o checklist final dependem do CI e auditorias complementares.
 
+## 2026-10-14 — Pré-natal de baixo risco
+
+- **Apostila LURIA:** `apostilas/pre-natal-baixo-risco/index.html`.
+- **Benchmarks do Drive efetivamente abertos:** `02 - ASSISTENCIA AO PRE-NATAL.pdf` (25,3 mil caracteres de texto extraído) e `Pré-Natal.pdf` (1,6 mil caracteres). A autoria por Estratégia MED não pôde ser comprovada; são materiais para análise de cobertura, não fontes científicas normativas nem imagens reproduzíveis.
+- **Matriz de lacunas:** LURIA já possuía linha do tempo, exames iniciais, TOTG, vacina VSR 2026, orientações por trimestre e fluxos de avaliação de risco. Os materiais do Drive expõem itens de consulta, sinais, exames e vacinações em listas, mas oferecem pouco raciocínio para cultura positiva assintomática versus pielonefrite, sífilis adquirida ao longo da gestação e coadministração vacinal. Uma diferença de protocolo importante: a linha de cuidado brasileira prevê repetição de urocultura em situações específicas, enquanto ACOG 2023 registra evidência insuficiente para repetição universal após cultura inicial negativa. A LURIA deve identificar a fonte de cada orientação.
+- **Correção aplicada:** capítulo original `pre-natal-infeccoes-urinarias-vacinas-2026` contendo distinção entre bacteriúria, cistite e pielonefrite, respostas terapêuticas em termos gerais, cultura/contaminação, sífilis em início/terceiro trimestre/parto, vacina dTpa a partir de 20 semanas, VSR a partir de 28 semanas e aplicação concomitante segundo PNI, mais quatro perguntas respondidas. Link acrescentado ao menu de prática e revisão. Nenhuma figura clínica existente foi substituída ou removida.
+- **Documentação primária conferida:** Ministério da Saúde, Linha de Cuidado de Pré-Natal de Baixo Risco; Calendário Nacional de Vacinação da Gestante 2026; calendário e FAQ de VSR; Ministério da Saúde, sífilis em gestantes; ACOG, `Urinary Tract Infections in Pregnant Individuals`, Clinical Consensus 4 (2023).
+- **Não certificado:** apesar do conteúdo extenso, falta ainda aferir autonomia pedagógica de cada bloco, atualização de todas as doses, curadoria e renderização de imagens em tela desktop/PWA, quadro de questões e fontes por capítulo, análise integral de repetição e finalização da revisão das recomendações obstétricas específicas. Não confundir testes técnicos com revisão médico-editorial completa.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
