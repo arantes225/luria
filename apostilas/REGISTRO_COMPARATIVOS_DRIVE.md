@@ -227,6 +227,15 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Fontes públicas:** CDC PHIL PID 16824, 2933, 3720, 14500; CDC STI Treatment Guidelines (candidíase, vaginose, tricomoníase); Vodstrcil et al., `Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis`, NEJM 2025 (PMID 40043236).
 - **Pendências do Prompt Magno:** testar carregamento real das quatro imagens no site/PWA, validação científica linha a linha, auditoria de terapêuticas em gestação e recorrências, revisão pedagogicamente autossuficiente sem repetições, comprovar 60.000 caracteres didáticos úteis e inspeção visual em desktop. **EM REVISÃO; NÃO CERTIFICADA.**
 
+## 2026-10-14 — Separação editorial de Medicina Sexual
+
+- **Solicitação:** evitar reunir sexualidade masculina e feminina em uma única apostila classificada em Obstetrícia/Ginecologia, tornando a pesquisa por área mais coerente.
+- **Material de comparação realmente lido:** `13 - UROLOGIA - MEDICINA SEXUAL.pdf` (Drive; cerca de 6,3 mil caracteres), abordando disfunção erétil, ejaculação precoce e doença de Peyronie. O texto é resumo circulado sob identificação `Medicina livre`, **sem procedência institucional Estratégia MED comprovada**. Não foram copiadas figuras nem passagens do PDF.
+- **Mudança na LURIA:** a apostila legada `/apostilas/sexualidade/` foi preservada para manter links antigos e passou a se chamar **Sexualidade Feminina**, na área Ginecologia e Obstetrícia, matéria Ginecologia. A nova `/apostilas/sexualidade-masculina/` ficou em **Cirurgia Geral → Urologia**, usando texto já criado originalmente pela LURIA, mais casos aplicados e referência EAU 2026.
+- **Busca e navegação:** dois registros independentes no catálogo estático; ambos possuem a tag textual `Medicina Sexual` para busca global na biblioteca, além de navegação cruzada entre as duas apostilas. A matéria Urologia já consta na taxonomia existente; não criar nova grande área por capricho. A página antiga não incorpora mais integralmente o capítulo masculino.
+- **Conteúdo feminino:** preservados conceitos de resposta sexual, dor, consulta, tratamentos, menopausa, violência sexual e assistência pós-violência. **Conteúdo masculino:** disfunção erétil, segurança dos inibidores PDE5, ejaculação precoce, Peyronie, casos comentados e fonte EAU.
+- **Estado:** separação estrutural **IMPLEMENTADA**, mas **nenhuma das duas foi certificada pelo Prompt Magno**. A nova apostila masculina é curta e demanda ampliação antes de aprovação editorial integral. Permanecem pendentes revisão médica em profundidade, controle de versão para futuras atualizações do conteúdo e validação visual desktop/PWA.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
