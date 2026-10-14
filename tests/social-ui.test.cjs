@@ -74,13 +74,17 @@ test('visual mode controls and modal agenda preserve the room channel and confir
  d.getElementById('social-leave').click();await x.settle();assert.equal(d.body.classList.contains('social-in-room'),false);assert.deepEqual(x.errors,[]);
 });
 
-test('official Spotify embed persists across room refreshes and only closes on explicit dismissal or room exit',async t=>{
- const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'QA de player oficial',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
- d.getElementById('social-spotify-url').value='https://open.spotify.com/playlist/QATest';d.getElementById('social-spotify-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
- Array.from(d.querySelectorAll('#social-spotify button')).find(b=>b.textContent==='Ouvir aqui').click();const frame=d.querySelector('#social-spotify iframe');assert.equal(frame.src,'https://open.spotify.com/embed/playlist/QATest');assert.equal(d.querySelector('.sv-player')!==null,true);
- d.querySelector('[data-study-mode="review"]').click();await x.settle();assert.equal(d.querySelector('#social-spotify iframe'),frame);assert.equal(w.LuriaSocial.getState().room.mode,'review');
- d.querySelector('.sv-player button').click();assert.equal(d.querySelector('#social-spotify iframe'),null);Array.from(d.querySelectorAll('#social-spotify button')).find(b=>b.textContent==='Ouvir aqui').click();await w.LuriaSocial.leave();assert.equal(d.querySelector('#social-spotify iframe'),null);assert.deepEqual(x.errors,[]);
+test('room music shares only Jam links without an embedded player',async t=>{
+ const x=await fixture(t),{w,d}=x;const created=await w.LuriaSocial.command('create_room',{name:'Jam da turma',visibility:'private'});await w.LuriaSocial.enter({room_id:created.id});
+ assert.equal(d.getElementById('social-spotify-form'),null);assert.equal(d.querySelector('.sv-music iframe'),null);
+ d.getElementById('social-jam-url').value='https://spotify.link/abc123';d.getElementById('social-jam-form').dispatchEvent(new w.Event('submit',{cancelable:true,bubbles:true}));await x.settle();
+ assert.equal(d.querySelector('#social-jam a').href,'https://spotify.link/abc123');
+ d.querySelector('[data-study-mode="review"]').click();await x.settle();assert.equal(d.querySelector('#social-jam a').href,'https://spotify.link/abc123');
+ await w.LuriaSocial.leave();assert.match(d.getElementById('social-jam-wall').textContent,/Jam da turma/);assert.equal(d.querySelector('#social-jam-wall a').href,'https://spotify.link/abc123');await w.LuriaSocial.enter({room_id:created.id});
+ d.getElementById('social-jam-clear').click();await x.settle();assert.equal(d.querySelector('#social-jam a'),null);
+ await w.LuriaSocial.leave();assert.deepEqual(x.errors,[]);
 });
+
 test('social UI sends invitations, renders real groups and filters existing friends without inventing presence',async t=>{
  const x=await fixture(t),{w,d}=x;
  d.getElementById('friend-id-input').value='FRIEND02';d.getElementById('add-friend').click();await x.settle();assert.match(d.getElementById('social-requests').textContent,/Aguardando aceite/);assert.doesNotMatch(d.getElementById('friends-list').textContent,/Bruno/);

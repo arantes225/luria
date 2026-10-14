@@ -142,7 +142,8 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3 {
  #social-spotify {margin-top:2px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
  #social-spotify>a {font-size:11px!important;}
  #social-spotify:empty {display:none;}
- .social-spotify-embed {width:100%;margin:4px 0 0;}
+ .social-spotify-embed {display:block;flex:1 1 100%;width:100%;height:152px;border:0;border-radius:12px;margin:4px 0 0;}
+ #social-spotify {grid-column:1/-1;}
  .sv-history {font-size:11px;color:var(--color-text-secondary);}
  .sv-history summary {cursor:pointer;min-height:28px;}
  #social-room-admin {display:flex;gap:8px;justify-content:flex-end;}

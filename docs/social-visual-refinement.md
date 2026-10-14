@@ -1,5 +1,7 @@
 # Revisão visual social — 14/10/2026
 
+Atualização Spotify: o player oficial agora abre automaticamente dentro do card, assim que uma faixa, álbum ou playlist é selecionada. Substitui o popover opcional descrito na revisão inicial; mantém o iframe durante atualizações e mudanças de modo e o remove na saída. Sem conteúdo selecionado, mostra “Escolher música”, sem playlist fictícia. Homologação atualizada para `7cbb63c0-5512-4eb3-a3c0-ba4310f8f259`; teste de persistência do player, interface e PWA passaram. Reprodução de conteúdo real continua pendente.
+
 ## Base e publicação
 
 Branch: `codex/social-visual-refinement`. Base reversível: `754cd7d9`, com árvore equivalente à versão de produção `572efe450feb23805d502d64e3bf11f0f1dd7c43`.
@@ -30,3 +32,10 @@ Site estático com shell, temas, timer global, fontes e ícones compartilhados. 
 Inspeção no navegador: estudo livre, foco, todos juntos e revisão nas dimensões 1440×900, 1366×768, 1920×1080, 390×844 e 375×812; sem overflow horizontal. Amigos e hall também inspecionados nas cinco dimensões. Capturas finais, métricas e imagens rosa/escuro estão em `browser-results/social-visual/`. Chat móvel, abertura/fechamento dos três diálogos e versão dos assets publicados conferidos. Preferência original escuro/azul restaurada; modo original livre da sala Oi preservado.
 
 Limites da validação: áudio real nos aparelhos com os novos botões ainda não foi testado pelo usuário. Jam/reprodução com conteúdo real e uma sessão coletiva de questões com lista real também precisam de validação integrada. A conta possui um desafio real ativo com dois ratinhos; não foram criados participantes ou resultados fictícios nem removido esse desafio para forçar uma captura vazia. Estados sem conteúdo permanecem cobertos pela interface e pelos testes locais. A continuidade de voz entre navegações completas do site não foi adicionada; sair da sala continua desligando a chamada.
+
+## Ajuste de música — decisão do usuário
+A interface passa a oferecer somente o convite oficial do Spotify Jam. Formulário de playlist e player incorporado removidos; dados musicais anteriores permanecem no banco. Administradores compartilham/removem o convite, participantes abrem ou copiam. Testes de interface e funcionalidades (9), PWA (1) e sintaxe (263 blocos) aprovados. Alteração local, ainda sem publicação desta etapa.
+
+
+Mural de Jams adicionado ao hall, reutilizando somente os convites das salas retornadas pelo fluxo autorizado. Anúncios visíveis por quatro horas; não representam confirmação de sessão ativa. Teste integrado aprovado e publicação em homologação 88f50629-39d0-4058-a543-854c0125fc20 aceita pelo Wrangler; a conferência HTTP ainda retornou a versão anterior, portanto a disponibilidade pública permanece pendente. Nenhuma migração de banco necessária.
+
