@@ -99,6 +99,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Base científica primária:** SMFM Consult Series 52 (2020, reafirmado em 2024; critérios e timing de parto); ISUOG Practice Guidelines, FGR/SGA (2020; definições Delphi); ACOG Practice Bulletin 216 (macrossomia, 2020). Respeitar atualizações posteriores específicas e diretrizes institucionais.
 - **Status editorial:** EM REVISÃO, **NÃO CERTIFICADA pelo Prompt Magno**. Falta comprovar 60 mil caracteres didáticos úteis sem redundância, auditar exibição real em navegador desktop/PWA, verificar todas as imagens aprovadas, fontes e matriz pedagógica integral. Benchmark externo é insuficiente para comparação abrangente.
 
+## 2026-10-13 — Hemorragias do primeiro e terceiro trimestres
+
+- **Livro LURIA:** `apostilas/hemorragias-primeiro-terceiro-trimestre/index.html`, com capítulos sobre perda gestacional precoce, gestação ectópica, doença trofoblástica, placenta prévia, descolamento, vasa prévia, rotura uterina e manejo de hemorragia.
+- **Comparadores de Drive lidos:** `02 - SANGRAMENTO DA PRIMEIRA METADE.pdf` (13.965 caracteres extraídos; critérios ultrassonográficos, ectópica, abortamento, doença trofoblástica e seguimento) e `03 - SANGRAMENTO DE SEGUNDA METADE.pdf` (9.637 caracteres extraídos; DPP, placenta prévia, acretismo, vasa prévia, rotura). Procedência Estratégia MED não comprovada; o material contém reprodução/citações de ilustrações terceirizadas que NÃO foram copiadas.
+- **Achado importante:** um comparador apresenta amniotomia como “1º passo” no DPP, formulação que não deve ser ensinada como conduta automática. Na LURIA, DPP é avaliação clínica de emergência, com estabilização, avaliação de perfusão/coagulopatia, estado fetal e decisão individual de parto; amniotomia não substitui essas decisões.
+- **Outras diferenças:** o comparador trata placenta prévia com sinais clínicos estereotipados; a LURIA já valoriza sangramento atípico, ultrassonografia transvaginal e proibição de toque digital antes de excluir implantação baixa. Critérios de falência gestacional precoce são tratados de forma conservadora para evitar falso diagnóstico; ectópica/PUL exige acompanhamento até localização/resolução.
+- **Licenças comprovadas no Wikimedia Commons e metadados corrigidos no Supabase:** ID 44, ultrassonografia `Blob sign of ectopic pregnancy.png`, Mikael Häggström, **CC0 1.0** (antes descrita incorretamente como CC BY); ID 51, desenho `Marginal and concealed placental abruption.jpg`, Bonnie Urquhart Gruenberg, **CC BY-SA 4.0** (antes não especificado). Ambas aprovadas, preservadas. Outras aprovações da fila ID 46 (mola, CC0), 48 (placenta prévia, CC BY-SA 4.0), 52 (vasa prévia, CC BY 3.0/GFDL) ainda precisam de conferência visual em navegador.
+- **Fontes para conduta:** ACOG, Placenta Accreta Spectrum, Obstetric Care Consensus No. 7; RCOG, Placenta praevia/accreta/vasa praevia, orientação de revisão; NICE NG126, perda gestacional e ectópica, atualização junho/2026. Normas nacionais prevalecem na prática local.
+- **Estado:** revisão clínica em andamento, **NÃO CERTIFICADA** pelo Prompt Magno até inspeção integral de fontes e texto, checagem visual PWA/desktop, imagens e cobertura didática.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
