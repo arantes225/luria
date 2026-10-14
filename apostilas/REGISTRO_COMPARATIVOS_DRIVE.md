@@ -236,6 +236,17 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Conteúdo feminino:** preservados conceitos de resposta sexual, dor, consulta, tratamentos, menopausa, violência sexual e assistência pós-violência. **Conteúdo masculino:** disfunção erétil, segurança dos inibidores PDE5, ejaculação precoce, Peyronie, casos comentados e fonte EAU.
 - **Estado:** separação estrutural **IMPLEMENTADA**, mas **nenhuma das duas foi certificada pelo Prompt Magno**. A nova apostila masculina é curta e demanda ampliação antes de aprovação editorial integral. Permanecem pendentes revisão médica em profundidade, controle de versão para futuras atualizações do conteúdo e validação visual desktop/PWA.
 
+
+## 2026-10-14 — Sexualidade Masculina: aprofundamento da unidade independente
+
+- **Apostila:** `apostilas/sexualidade-masculina/index.html`, preservada como capítulo independente em Cirurgia Geral → Urologia. **Não alterada** a apostila feminina.
+- **Benchmark do Drive efetivamente reaberto:** `13 - UROLOGIA - MEDICINA SEXUAL.pdf` (cerca de 6,3 mil caracteres) — disfunção erétil, vias de sinalização NO–GMPc, inibidores PDE5, injetáveis, próteses, ejaculação precoce e Peyronie. A fonte contém sinais de distribuição `Medicina livre`, sem atribuição institucional comprovada; **nenhum texto nem imagem protegido foi reproduzido**.
+- **Verificação e correção:** removida referência incorreta ao foco principal em sexualidade feminina, herdada da separação editorial. Acrescentados capítulos próprios sobre avaliação clínica sem pressupor práticas sexuais ou heterossexualidade, estratificação cardiometabólica, exames dirigidos, opções terapêuticas e segurança com nitratos/riociguate, interpretação de falha de PDE5 e alternativas.
+- **Aprofundamentos:** hipogonadismo com testosterona matinal repetida, LH/FSH, causas reversíveis e fertilidade; ejaculação precoce ao longo da vida versus adquirida; Peyronie ativa versus estável; priapismo isquêmico como emergência com necessidade de atendimento imediato; reabilitação sexual após prostatectomia. Incluídos quadros, contraindicações e casos com decisões justificadas.
+- **Fontes primárias confrontadas:** EAU Sexual and Reproductive Health Guidelines 2026, capítulos Management of Erectile Dysfunction, Male Hypogonadism, Disorders of Ejaculation, Penile Curvature e Priapism; AUA Erectile Dysfunction Guideline. Reproduzidas apenas recomendações por paráfrase; disponibilidade/regulação de terapias varia entre países.
+- **Medição objetiva inicial:** arquivo HTML aproximadamente 68 mil caracteres, mas **texto extraído do artigo ~36 mil caracteres**; não cumpre ainda a meta de 60 mil caracteres **de conteúdo útil**, sem contagem de HTML, navegação, referências ou repetição. Falta ampliar com conteúdos originais de alta utilidade, conferir farmacologia e registros locais, avaliação integral de autossuficiência, questões de residência e inspeção visual desktop/PWA.
+- **Certificação:** EM REVISÃO / NÃO CERTIFICADA PELO PROMPT MAGNO. Os novos capítulos são progresso real, não aprovação de toda a apostila.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
