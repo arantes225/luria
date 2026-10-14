@@ -113,3 +113,13 @@ test('friends stage opens the original invitation flow in a dialog and navigates
  d.querySelector('[data-close-dialog="sf-add-dialog"]').click();assert.equal(d.getElementById('sf-add-dialog').open,false);assert.equal(d.activeElement,add);
  d.getElementById('community-tab-friends').dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));assert.equal(d.getElementById('community-tab-groups').getAttribute('aria-selected'),'true');assert.equal(d.getElementById('community-groups-panel').hidden,false);assert.equal(d.getElementById('community-friends-panel').inert,true);assert.deepEqual(errors,[]);
 });
+
+test('group cards use real members, searchable names and the existing history and member operations',async t=>{
+ const x=await fixture(t),{w,d}=x;const g=await w.LuriaSocial.command('create_group',{name:'Cardio <teste>',area:'Clínica médica',objective:'Revisar diretrizes'});await w.LuriaSocial.refreshSocial();
+ d.getElementById('community-tab-groups').click();const card=d.querySelector('.sg-card');assert.match(card.textContent,/Cardio <teste>/);assert.equal(card.querySelector('teste'),null);assert.match(card.textContent,/1 membro/);
+ const search=d.getElementById('sg-search');search.value='Outro';search.dispatchEvent(new w.Event('input'));await x.settle();assert.equal(card.hidden,true);assert.equal(d.getElementById('sg-search-empty').hidden,false);
+ search.value='Cardio';search.dispatchEvent(new w.Event('input'));await x.settle();assert.equal(card.hidden,false);card.querySelector('details').open=true;
+ card.querySelector('[data-group-members]').click();await x.settle();assert.match(d.getElementById('social-group-members-'+g.id).textContent,/Administrador/);assert(x.calls.some(c=>c.args?.p_action==='group_members'));
+ card.querySelector('[data-group-history]').click();await x.settle();assert.match(d.getElementById('social-group-members-'+g.id).textContent,/Nenhuma sessão/);
+ await w.LuriaSocial.refreshSocial();assert.equal(d.querySelector('.sg-details').open,true);assert.deepEqual(x.errors,[]);
+});

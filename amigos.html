@@ -34,7 +34,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
   <link rel="stylesheet" href="/assets/css/community-ui-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/social-v3.css?v=2">
   <link rel="stylesheet" href="/assets/css/social-v4.css?v=9">
-<link rel="stylesheet" href="/assets/css/social-friends.css?v=3"></head>
+<link rel="stylesheet" href="/assets/css/social-friends.css?v=3"><link rel="stylesheet" href="/assets/css/social-groups.css?v=2"></head>
 <body class="social-v3 friends-stage1" data-ui-heading="provided" data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="amigos">
 <dialog id="sf-add-dialog" class="sv-dialog sf-add-dialog" aria-labelledby="sf-add-title"><div class="social-card-head"><div><h2 id="sf-add-title">Encontre sua turma</h2><p>Use o ID LURIA para enviar um pedido de amizade.</p></div><button type="button" class="button secondary" data-close-dialog="sf-add-dialog" aria-label="Fechar convite">Fechar</button></div><div id="friends-ref-add-panel" class="sf-add-content"><div class="friends-add-row"><input id="friend-id-input" type="text" maxlength="8" placeholder="ID LURIA" autocapitalize="characters" aria-label="ID LURIA do amigo"><button id="add-friend" class="button primary" type="button">Enviar pedido</button></div><div id="friend-add-preview" class="friend-add-preview" hidden=""></div><div class="friends-ref-own-id"><span>Seu ID LURIA</span><div class="friends-id-box"><strong id="my-luria-id">—</strong><button id="copy-my-id" class="button secondary" type="button">Copiar</button></div></div></div><div id="friends-status" class="friends-status" aria-live="polite"></div></dialog><script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
 <script defer="" src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
@@ -110,7 +110,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
    </aside>
   </div>
  </section>
- <section id="community-groups-panel" class="community-panel" hidden="" aria-labelledby="community-tab-groups"><section class="friends-card" id="community-groups"><div class="social-card-head"><div><h2>Grupos de estudo</h2><p>Sua comunidade, além de uma sessão.</p></div><button type="button" class="button secondary" id="social-group-create">Criar grupo</button></div><div id="social-groups" class="social-list"></div></section></section><section id="community-rooms-panel" class="community-panel" aria-labelledby="community-tab-rooms" hidden="">
+ <section id="community-groups-panel" class="community-panel" hidden="" aria-labelledby="community-tab-groups"><section class="friends-card" id="community-groups"><div class="social-card-head"><div><h2>Grupos de estudo</h2><p>Sua comunidade, além de uma sessão.</p></div><button type="button" class="button secondary" id="social-group-create">Criar grupo</button></div><label class="social-search sg-search"><span>Buscar nos meus grupos</span><input id="sg-search" type="search" placeholder="Nome do grupo" maxlength="80"></label><p id="sg-search-empty" class="friends-empty" hidden>Nenhum grupo corresponde à busca.</p><div id="social-groups" class="social-list"></div></section></section><section id="community-rooms-panel" class="community-panel" aria-labelledby="community-tab-rooms" hidden="">
   <section id="community-rooms" class="social-hall">
    <div class="social-card-head"><div><h2>Estude em companhia</h2><p>Encontre sua turma e comece uma sessão.</p></div><button id="friends-create-room-toggle" class="button primary" type="button">Criar sala</button></div>
    <section id="social-current-room" class="social-room-card" hidden="" aria-label="Minha sessão"></section><form id="social-join-form" class="social-join"><label><span>Entrar com código</span><input id="social-join-code" required="" maxlength="32" autocapitalize="characters" autocomplete="off" placeholder="Código de convite"></label><button class="button secondary" type="submit">Entrar</button></form>
@@ -153,7 +153,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
 <script defer="" src="/assets/js/community-navigation.js?v=stage1"></script>
 <script src="/assets/js/amigos.js?v=47-friends"></script>
 <script src="/assets/js/social-voice.js?v=8"></script>
-<script src="/assets/js/social-rooms.js?v=11"></script>
+<script src="/assets/js/social-rooms.js?v=12"></script>
 <script src="/assets/js/social-view.js?v=stage1"></script>
 <script defer="" src="/assets/js/pwa.js?v=20261013-width2"></script>
 

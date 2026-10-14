@@ -1,0 +1,64 @@
+/* Stage 2 — group presentation only, using existing group operations. */
+@layer luria-ui-education {
+body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friends-stage1 {
+ #community-groups {padding:20px!important;}
+ #community-groups>.social-card-head {align-items:center;margin-bottom:20px;gap:12px;}
+ #community-groups>.social-card-head h2 {font-size:22px!important;}
+ #community-groups>.social-card-head p {font-size:14px!important;margin-top:6px!important;}
+ #community-groups #social-group-create {min-height:40px!important;border-radius:10px;}
+ .sg-search {max-width:420px;margin-bottom:20px;gap:7px;font-size:12px;color:var(--color-text-secondary);}
+ .sg-search input {background:var(--color-surface-elevated);font-size:14px;border-radius:10px;}
+ #social-groups {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:12px;}
+ .sg-card {border:1px solid var(--color-border);border-radius:15px;min-width:0;background:var(--color-surface);box-shadow:0 3px 12px color-mix(in srgb,var(--color-text-primary) 4%,transparent);transition:border-color .18s,box-shadow .18s;}
+ .sg-card:hover {border-color:color-mix(in srgb,var(--color-primary) 35%,var(--color-border));box-shadow:var(--shadow-sm);}
+ .sg-card[hidden] {display:none;}
+ .sg-cover {display:flex;align-items:center;gap:12px;min-height:72px;padding:16px;box-sizing:border-box;border-radius:14px 14px 0 0;border-bottom:1px solid var(--color-border);background:color-mix(in srgb,var(--sf-teal) 10%,var(--color-surface));color:var(--sf-teal);position:relative;overflow:hidden;}
+ .sg-cover::after {content:'';position:absolute;right:-15px;top:-30px;width:130px;height:130px;border:1px solid currentColor;border-radius:50%;opacity:.13;box-shadow:0 0 0 20px color-mix(in srgb,currentColor 18%,transparent);pointer-events:none;}
+ .sg-cover[data-tone="1"] {background:color-mix(in srgb,var(--sf-violet) 10%,var(--color-surface));color:var(--sf-violet);}
+ .sg-cover[data-tone="2"] {background:color-mix(in srgb,var(--sf-warm) 10%,var(--color-surface));color:var(--sf-warm);}
+ .sg-emblem {display:grid;place-items:center;width:44px;height:44px;flex:0 0 44px;border:1px solid color-mix(in srgb,currentColor 18%,transparent);border-radius:14px;background:color-mix(in srgb,var(--color-surface) 75%,transparent);color:inherit;}
+ .sg-emblem .social-icon {width:26px;height:26px;}
+ .sg-type {font-size:12px;font-weight:500;}
+ .sg-card-body {padding:18px;}
+ .sg-title {display:flex;align-items:start;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+ #community-groups .sg-title h3 {font-size:18px!important;line-height:1.4!important;overflow-wrap:anywhere;max-width:100%;}
+ .sg-title .social-badge {font-size:11px;min-height:22px;max-width:100%;box-sizing:border-box;overflow-wrap:anywhere;}
+ #community-groups .sg-description {font-size:13px!important;line-height:1.6!important;margin:10px 0 14px!important;overflow-wrap:anywhere;}
+ .sg-meta {display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;color:var(--color-text-secondary);font-size:12px;margin-bottom:16px;}
+ .sg-meta>span {display:flex;align-items:center;gap:5px;}
+ .sg-meta .social-icon {width:16px;height:16px;}
+ .sg-details>summary {display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;min-height:20px;list-style:none;border:1px solid var(--color-border);border-radius:10px;background:var(--color-primary-subtle);color:var(--color-primary-text);font-size:13px;cursor:pointer;}
+ .sg-details>summary::-webkit-details-marker {display:none;}
+ .sg-details[open]>summary {margin-bottom:16px;}
+ .sg-details[open]>summary span {transform:rotate(90deg);}
+ .sg-card:has(.sg-details[open]) {grid-column:1/-1;}
+ .sg-interior {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;}
+ .sg-objective {grid-column:1;grid-row:1/3;}
+ .sg-section-heading {grid-column:2;grid-row:1;}
+ .sg-room-actions {grid-column:2;grid-row:2;align-content:start;}
+ .sg-tools,.sg-content {grid-column:1/-1;}
+ .sg-objective {border:1px solid var(--color-border);border-left:3px solid var(--sf-teal);border-radius:10px;padding:14px;background:color-mix(in srgb,var(--sf-teal) 5%,var(--color-surface));}
+ .sg-objective small {font-size:11px;color:var(--sf-teal);}
+ #community-groups .sg-objective p {margin:8px 0 12px!important;font-size:14px!important;line-height:1.6!important;overflow-wrap:anywhere;}
+ .sg-section-heading h4 {font-size:14px;font-weight:500;margin:0 0 4px;}
+ #community-groups .sg-section-heading p {font-size:12px!important;margin:0!important;}
+ .sg-room-actions,.sg-tools {display:flex;flex-wrap:wrap;gap:8px;}
+ .sg-tools {border-top:1px solid var(--color-border);padding-top:14px;}
+ #community-groups .sg-tools .button {font-size:12px!important;gap:6px;border-radius:9px;}
+ .sg-content {border-top:1px solid var(--color-border);padding-top:12px;min-width:0;}
+ .sg-content[hidden] {display:none;}
+ .sg-content .social-row {padding:10px 0;}
+ .sg-member .friend-avatar {border-radius:12px;background:var(--color-primary-subtle);font-size:14px;}
+ .sg-member .social-row-copy {font-size:13px;}
+ .sg-member .button {font-size:11px!important;}
+ .sg-empty {grid-column:1/-1;display:grid;justify-items:center;text-align:center;gap:14px;padding:32px 20px;background:var(--color-surface-elevated);border:1px dashed var(--color-border);border-radius:14px;color:var(--color-text-secondary);}
+ .sg-empty .sg-emblem {color:var(--sf-teal);}
+ .sg-empty p {max-width:46ch;}
+ #social-group-join {grid-column:1/-1;justify-self:start;margin-top:4px;border-radius:10px;}
+ #community-groups :is(summary,button,input):focus-visible {outline:2px solid var(--color-primary);outline-offset:3px;}
+ @media(max-width:950px) {#social-groups {grid-template-columns:1fr;}}
+ @media(max-width:650px) {.sg-interior {grid-template-columns:1fr;}.sg-objective,.sg-section-heading,.sg-room-actions {grid-column:1;grid-row:auto;}}
+ @media(max-width:520px) {#community-groups {padding:14px!important;}#community-groups>.social-card-head h2 {font-size:19px!important;}.sg-card-body {padding:14px;}.sg-room-actions .button {flex:1 1 130px;}.sg-tools .button {width:100%;justify-content:flex-start;}.sg-cover {min-height:70px;}}
+ @media(prefers-reduced-motion:reduce) {.sg-card {transition:none;}}
+}
+}
