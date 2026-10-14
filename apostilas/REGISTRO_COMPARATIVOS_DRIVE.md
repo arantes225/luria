@@ -165,6 +165,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Documentação primária conferida:** Ministério da Saúde, Linha de Cuidado de Pré-Natal de Baixo Risco; Calendário Nacional de Vacinação da Gestante 2026; calendário e FAQ de VSR; Ministério da Saúde, sífilis em gestantes; ACOG, `Urinary Tract Infections in Pregnant Individuals`, Clinical Consensus 4 (2023).
 - **Não certificado:** apesar do conteúdo extenso, falta ainda aferir autonomia pedagógica de cada bloco, atualização de todas as doses, curadoria e renderização de imagens em tela desktop/PWA, quadro de questões e fontes por capítulo, análise integral de repetição e finalização da revisão das recomendações obstétricas específicas. Não confundir testes técnicos com revisão médico-editorial completa.
 
+## 2026-10-14 — Sangramento uterino anormal: restauração de exame real
+
+- **Apostila LURIA:** `apostilas/sangramento-uterino-anormal/index.html`.
+- **Benchmark efetivamente examinado no Google Drive:** `02 - CANCER DE ENDOMETRIO.pdf` (aprox. 9,6 mil caracteres extraídos). É referência **parcial**, voltada à hiperplasia, câncer, sangramento pós-menopausa, US transvaginal e biópsia endometrial, sem cobertura equivalente de todo PALM-COEIN. Instituição Estratégia MED não confirmada.
+- **Problema anterior:** imagem de pólipo por histeroscopia ID 315 da fila aprovada tinha licença não demonstrada e fora suprimida do renderizador; imagem de malformação arteriovenosa ao Doppler ID 319 também suprimida. Não considerar o antigo arquivo aprovado como licenciado só porque existe no Storage.
+- **Correção aplicada:** fotografia endoscópica real de pólipo do corpo uterino antes da remoção, arquivo `05a Corpuspolyp 01 vor Abtragung 01.a.jpg`, Dr. Andreas Ott, Freiburg (2007), disponibilizado no Wikimedia Commons com licença **CC BY-SA 2.0 Alemanha** que admite reutilização comercial com crédito e condição ShareAlike. Reprodução sem modificações, legenda clínica, crédito, acesso para ampliar e fallback; inserida na seção `estrutural`, sem apagar arquivos históricos do banco e sem substituir exames reais por desenhos.
+- **Doppler da MAV — pesquisa documental sem publicação:** o artigo `Uterine Arteriovenous Malformation: Diagnostic and Therapeutic Challenges`, Clavero Bertomeu et al., *Diagnostics* 2024, 14(11):1084, contém Figura 2 clínica (Doppler colorido e espectral) e licença CC BY 4.0. **Ainda não foi verificada URL direta de imagem funcional** compatível com CSP e PWA, portanto não foi incorporada. Outro artigo de MAV publicado sob CC BY-NC-ND 4.0 foi rejeitado para reutilização em produto comercial. Diferenciar AVM verdadeira de vascularização miometrial acentuada associada a gestação e produtos retidos ao selecionar imagens.
+- **Revisões pendentes:** confirmar carregamento real do arquivo no desktop/PWA, verificar as demais figuras aprovadas na página, localizar e incorporar uma versão funcional da Figura 2 licenciada, leitura médico-editorial completa, avaliação de autossuficiência e 60 mil caracteres didáticos úteis.
+- **Status:** **EM REVISÃO / NÃO CERTIFICADA**; testes técnicos e deploy não bastam como certificação editorial.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
