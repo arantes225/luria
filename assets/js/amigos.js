@@ -82,7 +82,7 @@ function renderFriendsList(){
   const rows=friendsRowsCache.filter(friend=>`${friend.display_name||''} ${friend.luria_id||''}`.toLocaleLowerCase('pt-BR').includes(query));
   const count=document.getElementById('social-friend-count');if(count)count.textContent=String(friendsRowsCache.length);
   host.innerHTML=rows.length?rows.map(friend=>`
-    <div class="friend-row" data-friend-user="${fEsc(friend.user_id)}">
+    <div class="friend-row sf-person-card" data-friend-user="${fEsc(friend.user_id)}">
       <div class="friend-main">
         ${friendAvatar(friend)}
         <span class="friend-copy">
@@ -92,7 +92,7 @@ function renderFriendsList(){
         </span>
       </div>
       <div class="friends-actions">
-        <button class="button secondary" type="button" data-study-friend="${fEsc(friend.user_id)}">Estudar junto</button>
+        <button class="button secondary" type="button" data-study-friend="${fEsc(friend.user_id)}"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h7l2 2 2-2h7v15h-7l-2 2-2-2H3V5Zm9 2v15"/></svg>Estudar junto</button>
         <details class="sv-friend-options"><summary aria-label="Opções do amigo">⋯</summary><div class="sv-friend-menu"><button class="button secondary" type="button" data-profile-friend="${fEsc(friend.user_id)}">Perfil</button>
         <button class="button secondary" type="button" data-remove-friend="${fEsc(friend.user_id)}">Remover</button>
         <button class="button secondary" type="button" data-block-friend="${fEsc(friend.user_id)}">Bloquear</button></div></details>

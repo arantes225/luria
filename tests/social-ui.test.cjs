@@ -30,7 +30,7 @@ async function fixture(t){
 }
 test('social UI persists actual rooms and messages through RPCs, never local demo data',async t=>{
  const x=await fixture(t),{w,d,f}=x;
- assert.equal(d.querySelectorAll('[data-community-tab]').length,2);assert.equal(d.getElementById('studyrats-card').closest('[role="tabpanel"]').id,'community-friends-panel');
+ assert.equal(d.querySelectorAll('[data-community-tab]').length,3);assert.equal(d.getElementById('studyrats-card').closest('[role="tabpanel"]').id,'community-friends-panel');
  assert.doesNotMatch(d.body.textContent,/Carla Monteiro|ENEM 2024|Mariana Costa/);
  d.getElementById('friends-create-room-toggle').click();await x.settle();assert.equal(d.getElementById('social-dialog').open,true);
  const form=d.getElementById('social-dialog-form');form.elements.name.value='Turma <script>alert(1)</script>';form.elements.visibility.value='public';form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();
@@ -106,4 +106,10 @@ test('leaving for the hall stops voice before releasing participation and tab na
  d.getElementById('community-tab-rooms').click();assert.equal(stopped,true);assert.equal(d.getElementById('social-room').hidden,true);assert.equal(x.calls.filter(c=>c.args?.p_action==='leave_room').length,before);
  w.LuriaVoice.leave=async()=>{};resolveVoice();await x.settle();assert.equal(w.LuriaSocial.getState(),null);assert.equal(x.calls.filter(c=>c.args?.p_action==='leave_room').length,before+1);assert.equal(w.location.hash,'#community-rooms');
  await w.LuriaSocial.enter({room_id:created.id});d.getElementById('community-tab-friends').click();await x.settle();assert.equal(w.LuriaSocial.getState(),null);assert.equal(w.location.hash,'#community-friends');assert.deepEqual(x.errors,[]);
+});
+
+test('friends stage opens the original invitation flow in a dialog and navigates three areas by keyboard',async t=>{
+ const {w,d,errors}=await fixture(t);const viewScript=[...d.scripts].find(s=>s.src.includes('/social-view.js'));assert(d.getElementById('sf-add-dialog').compareDocumentPosition(viewScript)&w.Node.DOCUMENT_POSITION_FOLLOWING);const add=d.getElementById('friends-ref-add-toggle');add.focus();add.click();assert.equal(d.getElementById('sf-add-dialog').open,true);assert.equal(d.activeElement.id,'friend-id-input');
+ d.querySelector('[data-close-dialog="sf-add-dialog"]').click();assert.equal(d.getElementById('sf-add-dialog').open,false);assert.equal(d.activeElement,add);
+ d.getElementById('community-tab-friends').dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true}));assert.equal(d.getElementById('community-tab-groups').getAttribute('aria-selected'),'true');assert.equal(d.getElementById('community-groups-panel').hidden,false);assert.equal(d.getElementById('community-friends-panel').inert,true);assert.deepEqual(errors,[]);
 });

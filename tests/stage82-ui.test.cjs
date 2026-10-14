@@ -64,16 +64,16 @@ async function community(t, hash = '') {
   await settle();await tick();
   return {...f,calls};
 }
-test('community: two accessible areas, deep links and keyboard navigation', async t => {
+test('community: three accessible areas, deep links and keyboard navigation', async t => {
   const {w,d,errors}=await community(t,'#studyrats-card');
   const friends=d.getElementById('community-tab-friends'),rooms=d.getElementById('community-tab-rooms');
-  assert.equal(d.querySelectorAll('[role="tab"]').length,2);
+  assert.equal(d.querySelectorAll('[role="tab"]').length,3);
   assert.equal(d.getElementById('community-friends-panel').hidden,false);
   assert.equal(d.getElementById('community-rooms-panel').hidden,true);
   assert.equal(d.getElementById('friends-ref-add-toggle').hidden,false);
   rooms.click();
   assert.equal(d.getElementById('community-rooms-panel').hidden,false);
-  rooms.dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true,cancelable:true}));
+  rooms.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Home',bubbles:true,cancelable:true}));
   await tick();
   assert.equal(d.activeElement,friends);
   assert.equal(friends.getAttribute('aria-selected'),'true');

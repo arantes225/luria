@@ -22,6 +22,6 @@
  const actions=$('social-message-form')?.querySelector('.social-actions');if(actions){const attach=actions.querySelector('label');const input=attach.querySelector('input');attach.setAttribute('aria-label','Anexar arquivo');attach.title='Anexar arquivo';attach.replaceChildren();attach.insertAdjacentHTML('beforeend',svg('attach'));attach.append(input);const send=actions.querySelector('button[type="submit"]');send.setAttribute('aria-label','Enviar mensagem');send.title='Enviar mensagem';send.innerHTML=svg('send');}
  window.addEventListener('luria:room-rendered',()=>{modes();controls();resize();});window.addEventListener('luria:voice-state',controls);
  window.addEventListener('luria:visual-close',e=>close(e.detail));window.addEventListener('luria:visual-open',e=>open(e.detail));
- window.addEventListener('luria:community-tab',e=>{const heading=document.querySelector('.luria-page-spotlight-copy strong');if(heading)heading.textContent=e.detail.area==='rooms'?'Salas':'Amigos';});
+ window.addEventListener('luria:community-tab',e=>{const heading=document.querySelector('.luria-page-spotlight-copy strong');if(heading)heading.textContent=e.detail.area==='rooms'?'Salas':e.detail.area==='groups'?'Grupos':'Amigos';});
  window.LuriaSocialView={open,close};modes();controls();
 })();
