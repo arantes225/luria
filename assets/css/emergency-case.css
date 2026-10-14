@@ -522,3 +522,65 @@
   #plantao-simulator .luria-elderly-man-v7-rig .luria-elderly-man-v7-chest,
   #plantao-simulator .luria-elderly-man-v7-rig .luria-elderly-man-v7-eyes{animation:none!important}
 }
+
+
+/* LURIA · Gestante V1: mesma foto no leito; somente abdomen e palpebras animam.
+   A camada de olhos e sintetizada a partir da propria foto (web e PWA). */
+#plantao-simulator .plantao-scene.luria-pregnant-v1{position:relative;isolation:isolate;overflow:hidden}
+#plantao-simulator .plantao-scene>.luria-pregnant-v1-rig[hidden]{display:none!important}
+#plantao-simulator .plantao-scene.luria-pregnant-v1>.luria-pregnant-v1-rig{
+  display:block!important;position:absolute!important;z-index:2!important;
+  overflow:visible!important;pointer-events:none!important;border:0!important;
+  margin:0!important;padding:0!important;max-width:none!important;transform:none!important;
+}
+#plantao-simulator .luria-pregnant-v1-rig>img{
+  position:absolute!important;inset:0!important;width:100%!important;height:100%!important;
+  display:block!important;object-fit:fill!important;object-position:center!important;
+  max-width:none!important;max-height:none!important;aspect-ratio:auto!important;
+  border:0!important;border-radius:0!important;box-shadow:none!important;
+  margin:0!important;padding:0!important;pointer-events:none!important;
+  user-select:none!important;-webkit-user-drag:none!important;
+}
+#plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-chest{
+  transform-origin:54% 69%;
+  -webkit-mask-image:radial-gradient(ellipse 26% 26% at 54% 69%,#000 24%,transparent 100%);
+  mask-image:radial-gradient(ellipse 26% 26% at 54% 69%,#000 24%,transparent 100%);
+  animation:luriaPregnantV1Breathe 3.8s ease-in-out infinite;
+  will-change:transform;
+}
+@keyframes luriaPregnantV1Breathe{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.006,1.018)}
+}
+#plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-eyes{
+  opacity:0;
+  animation:luriaPregnantV1Blink 5.8s cubic-bezier(.42,0,.58,1) infinite;
+  will-change:opacity;
+}
+/* Uma curva continua para fechar e outra para abrir, sem interpolacoes
+   adicionais, transitions paralelas ou tremida no fim da piscada. */
+@keyframes luriaPregnantV1Blink{
+  0%,42.2%,50%,100%{opacity:0}
+  45%,46.5%{opacity:1}
+}
+#plantao-simulator .plantao-scene.luria-pregnant-v1[data-luria-eyes="closed"] .luria-pregnant-v1-eyes{
+  opacity:1!important;animation:none!important;
+}
+#plantao-simulator .plantao-scene.luria-pregnant-v1[data-luria-breath="stopped"] .luria-pregnant-v1-chest{
+  animation:none!important;transform:none!important;
+}
+#plantao-simulator .plantao-scene.luria-pregnant-v1-pwa .luria-pregnant-v1-chest{
+  transform-origin:56% 63%;
+  -webkit-mask-image:radial-gradient(ellipse 28% 22% at 56% 63%,#000 24%,transparent 100%);
+  mask-image:radial-gradient(ellipse 28% 22% at 56% 63%,#000 24%,transparent 100%);
+}
+#plantao-simulator .plantao-scene.luria-pregnant-v1 .plantao-monitor-dock{z-index:8}
+#plantao-simulator .plantao-scene.luria-pregnant-v1 .plantao-consciousness{z-index:9}
+#plantao-simulator.patient-dead .luria-pregnant-v1-rig,
+#plantao-simulator .patient-dead .luria-pregnant-v1-rig{filter:grayscale(1) brightness(.72)}
+@media(prefers-reduced-motion:reduce){
+  #plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-chest,
+  #plantao-simulator .luria-pregnant-v1-rig .luria-pregnant-v1-eyes{
+    animation:none!important;will-change:auto!important;
+  }
+}

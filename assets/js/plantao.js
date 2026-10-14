@@ -2801,7 +2801,7 @@
     baby:{awake:"assets/img/plantao pwa/15-bebe-acordado.webp",closed:"assets/img/plantao pwa/01-bebe-dormindo.webp"},
     girl:{awake:"assets/img/plantao pwa/10-menina-acordada.webp",closed:"assets/img/plantao pwa/08-menina-olhos-fechados.webp"},
     boy:{awake:"assets/img/plantao pwa/13-menino-acordado.webp",closed:"assets/img/plantao pwa/09-menino-olhos-fechados.webp"},
-    pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/02-gestante-olhos-fechados.webp"},
+    pregnant:{awake:"assets/img/plantao pwa/14-gestante-acordada.webp",closed:"assets/img/plantao pwa/14-gestante-acordada.webp"},
     woman:{awake:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp",closed:"/assets/img/plantao/luria-mulher-adulta-v5-aberto.webp"},
     man:{awake:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp",closed:"/assets/img/plantao/luria-homem-adulto-v7-aberto.webp"},
     elderlyWoman:{
@@ -2922,9 +2922,12 @@
 
     const patientImage=state.current?.presentation?.patient_image;
     const unconsciousImage=state.current?.presentation?.unconscious_image;
+    // A foto da gestante nao troca ao perder a consciencia:
+    // o rig local fecha as palpebras sem mover o rosto ou o leito.
+    const animatedPregnant=/gestante_acordada_triste_1300x900_100kb\.webp/.test(String(patientImage||""));
     return {
       patient_image:patientImage,
-      unconscious_image:unconsciousImage
+      unconscious_image:animatedPregnant?patientImage:unconsciousImage
     };
   }
 
