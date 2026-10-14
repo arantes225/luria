@@ -537,3 +537,28 @@ test("Vulvovaginites mantém as quatro lâminas CDC e suas atribuições",()=>{
   assert.equal((html.match(/<img\b/g)||[]).length,4,"não substituir ou acrescentar imagens sem auditoria");
   assert.ok(html.includes("obra em domínio público")||html.includes("Obra em domínio público"));
 });
+
+
+test("Sexualidade feminina e masculina sao apostilas independentes e pesquisaveis por Medicina Sexual",()=>{
+  const female=read("apostilas/sexualidade/index.html");
+  const male=read("apostilas/sexualidade-masculina/index.html");
+  const library=read("apostilas/index.html");
+  assert.match(female,/<title>Sexualidade Feminina · LURIA<\/title>/);
+  assert.match(male,/<title>Sexualidade Masculina · LURIA<\/title>/);
+  assert.doesNotMatch(female,/id="medicina-sexual-masculina-2026"/,
+    "A apostila feminina não deve embutir o conteúdo masculino");
+  assert.match(female,/href="\/apostilas\/sexualidade-masculina\/"/);
+  assert.match(male,/href="\/apostilas\/sexualidade\/"/);
+  assert.match(male,/Área: Cirurgia Geral/);
+  assert.match(male,/Matéria: Urologia/);
+  assert.match(female,/Área: Ginecologia e Obstetrícia/);
+  assert.match(male,/Contraindicação farmacológica crítica/);
+  assert.match(female,/id="atendimento-pos-violencia-sexual"/);
+  assert.match(library,/titulo:"Sexualidade Feminina"/);
+  assert.match(library,/titulo:"Sexualidade Masculina"/);
+  assert.match(library,/Medicina Sexual · Sexualidade Masculina/);
+  const ids=[...male.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(x=>x[1]);
+  for(const [,dest] of male.matchAll(/class="book-outline-link" href="#([^"]+)"/g)){
+    assert.ok(ids.includes(dest),"Seção masculina inexistente no sumário: "+dest);
+  }
+});
