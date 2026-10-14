@@ -534,6 +534,6 @@ test("Vulvovaginites mantém as quatro lâminas CDC e suas atribuições",()=>{
     assert.match(html,new RegExp("pid="+id),"fonte original CDC ausente: "+id);
   }
   for(const author of ["Joe Miller","Stuart Brown","M. Rein"])assert.ok(html.includes(author),"crédito ausente: "+author);
-  assert.equal((html.match(/<img\\b/g)||[]).length,4,"não substituir ou acrescentar imagens sem auditoria");
+  assert.equal((html.match(/<img\b/g)||[]).length,4,"não substituir ou acrescentar imagens sem auditoria");
   assert.ok(html.includes("obra em domínio público")||html.includes("Obra em domínio público"));
 });
