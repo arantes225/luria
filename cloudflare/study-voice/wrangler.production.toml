@@ -1,0 +1,24 @@
+name = "luria-study-voice"
+main = "worker.mjs"
+compatibility_date = "2026-10-13"
+account_id = "5231bc3378a345f2622a18a00ffb29cd"
+workers_dev = true
+preview_urls = false
+
+[observability]
+enabled = true
+
+[vars]
+VOICE_ENABLED = "true"
+ALLOWED_ORIGINS = "https://www.resibulando.online,https://resibulando.online"
+SUPABASE_URL = "https://sxdsfklllilhdyuamvvg.supabase.co"
+SUPABASE_PUBLISHABLE_KEY = "sb_publishable_AQ5-Pn1knmBhSFyt5aMtjQ_XQynLJ_L"
+SFU_APP_ID = "23ac9f8fa0c0b9195757247d07f2a96d"
+
+[[durable_objects.bindings]]
+name = "ROOM_VOICE"
+class_name = "RoomVoice"
+
+[exports.RoomVoice]
+type = "durable-object"
+storage = "sqlite"

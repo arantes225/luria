@@ -66,30 +66,32 @@ async function community(t, hash = '') {
 }
 test('community: two accessible areas, deep links and keyboard navigation', async t => {
   const {w,d,errors}=await community(t,'#studyrats-card');
-  const friends=d.getElementById('community-tab-friends'),challenges=d.getElementById('community-tab-challenges');
+  const friends=d.getElementById('community-tab-friends'),rooms=d.getElementById('community-tab-rooms');
   assert.equal(d.querySelectorAll('[role="tab"]').length,2);
-  assert.equal(d.getElementById('community-friends-panel').hidden,true);
-  assert.equal(d.getElementById('community-challenges-panel').hidden,false);
-  assert.equal(d.getElementById('friends-ref-add-toggle').hidden,true);
-  challenges.dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true,cancelable:true}));
+  assert.equal(d.getElementById('community-friends-panel').hidden,false);
+  assert.equal(d.getElementById('community-rooms-panel').hidden,true);
+  assert.equal(d.getElementById('friends-ref-add-toggle').hidden,false);
+  rooms.click();
+  assert.equal(d.getElementById('community-rooms-panel').hidden,false);
+  rooms.dispatchEvent(new w.KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true,cancelable:true}));
   await tick();
   assert.equal(d.activeElement,friends);
   assert.equal(friends.getAttribute('aria-selected'),'true');
-  assert.equal(d.getElementById('community-challenges-panel').hidden,true);
+  assert.equal(d.getElementById('community-rooms-panel').hidden,true);
   w.history.replaceState(null,'','/amigos/#community-rooms');
   w.dispatchEvent(new w.HashChangeEvent('hashchange'));
-  assert.equal(d.getElementById('community-friends-panel').hidden,false);
+  assert.equal(d.getElementById('community-friends-panel').hidden,true);
   assert.deepEqual(errors,[]);
 });
 test('community: existing challenge draft survives tab switches; cancel still works', async t => {
   const {w,d,errors}=await community(t);
   const title=d.getElementById('studyrats-challenge-title');
-  d.getElementById('community-tab-challenges').click();await tick();
+  d.getElementById('community-tab-friends').click();await tick();
   d.getElementById('studyrats-toggle-create').click();
   assert.equal(d.getElementById('studyrats-create').hidden,false);
   title.value='Rascunho preservado';
+  d.getElementById('community-tab-rooms').click();await tick();
   d.getElementById('community-tab-friends').click();await tick();
-  d.getElementById('community-tab-challenges').click();await tick();
   assert.equal(d.getElementById('studyrats-challenge-title'),title);
   assert.equal(title.value,'Rascunho preservado');
   assert.equal(d.getElementById('studyrats-create').hidden,false);
@@ -107,7 +109,7 @@ test('community: existing add/remove and challenge submission retain their RPC p
   d.querySelector('[data-remove-friend="friend-2"]').click();await tick();
   assert.equal(calls.filter(c=>c.name==='remove_friend').length,1);
   assert.doesNotMatch(d.getElementById('friends-list').textContent,/Novo amigo/);
-  d.getElementById('community-tab-challenges').click();await tick();
+  d.getElementById('community-tab-rooms').click();await tick();
   d.getElementById('studyrats-toggle-create').click();
   d.getElementById('studyrats-challenge-title').value='Semana de revisão';
   d.querySelector('#studyrats-friends input[value="friend-1"]').checked=true;
@@ -124,7 +126,7 @@ test('community: no duplicate component IDs and initialization remains single', 
   assert.equal(new Set(ids).size,ids.length);
   const list=d.getElementById('friends-list');
   w.eval(read('assets/js/community-navigation.js'));
-  d.getElementById('community-tab-challenges').click();await tick();
+  d.getElementById('community-tab-rooms').click();await tick();
   d.getElementById('community-tab-friends').click();await tick();
   assert.equal(d.getElementById('friends-list'),list);
   assert.equal(d.getElementById('community-tab-friends').getAttribute('aria-selected'),'true');
@@ -134,9 +136,9 @@ test('community: no duplicate component IDs and initialization remains single', 
 test('community: switching tabs preserves query parameters despite the root base URL', async t => {
   const {w,d,errors}=await community(t);
   w.history.replaceState(null,'','/amigos/?reference=kept');
-  d.getElementById('community-tab-challenges').click();
+  d.getElementById('community-tab-rooms').click();
   assert.equal(w.location.pathname,'/amigos/');assert.equal(w.location.search,'?reference=kept');
-  assert.equal(w.location.hash,'#studyrats-card');
+  assert.equal(w.location.hash,'#community-rooms');
   d.getElementById('community-tab-friends').click();
   assert.equal(w.location.search,'?reference=kept');
   assert.equal(w.location.hash,'#community-friends');

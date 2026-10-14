@@ -20,18 +20,23 @@
         panels[index].inert = !active;
       });
       if (addFriend) addFriend.hidden = area !== "friends";
+      window.dispatchEvent(new CustomEvent('luria:community-tab',{detail:{area}}));
     }
-    const fromHash = () => activate(location.hash === "#studyrats-card" ? "challenges" : "friends");
-    function navigate(area) {
+    const fromHash = () => {
+      if(!location.hash.startsWith('#room='))window.dispatchEvent(new CustomEvent('luria:room-exit'));
+      activate(location.hash === "#community-rooms" || location.hash.startsWith("#room=") ? "rooms" : "friends");
+    };
+    function navigate(area, leaveRoom = false) {
+      if(leaveRoom)window.dispatchEvent(new CustomEvent('luria:room-exit'));
       activate(area);
-      const hash = area === "challenges" ? "#studyrats-card" : "#community-friends";
+      const hash = area === "rooms" ? "#community-rooms" : "#community-friends";
       // The page has <base href="/">; bare fragments would otherwise open the root.
       if (location.hash !== hash) history.pushState(null, "", location.pathname + location.search + hash);
     }
     tabs.forEach((tab, index) => {
       tab.addEventListener("click", event => {
         event.preventDefault();
-        navigate(tab.dataset.communityTab);
+        navigate(tab.dataset.communityTab, true);
       });
       tab.addEventListener("keydown", event => {
         let next;
@@ -47,9 +52,13 @@
     });
     window.addEventListener("hashchange", fromHash);
     window.addEventListener("popstate", fromHash);
+    window.addEventListener("luria:open-rooms", () => navigate("rooms"));
+    document.querySelectorAll("[data-open-rooms]").forEach(button => button.addEventListener("click", () => navigate("rooms", true)));
     if (addFriend) addFriend.addEventListener("click", event => {
       event.preventDefault();
-      navigate("friends");
+      navigate("friends", true);
+      const panel = document.getElementById("friends-ref-add-panel");
+      if (panel) panel.open = true;
       document.getElementById("community-friends")?.scrollIntoView({ behavior: "smooth", block: "start" });
       document.getElementById("friend-id-input")?.focus({ preventScroll: true });
     });

@@ -1,0 +1,20 @@
+name = "luria-study-voice"
+main = "worker.mjs"
+compatibility_date = "2026-10-13"
+
+[vars]
+VOICE_ENABLED = "true"
+# Set the staging site origin and Supabase staging URL before deployment.
+ALLOWED_ORIGINS = ""
+SUPABASE_URL = ""
+SUPABASE_PUBLISHABLE_KEY = ""
+SFU_APP_ID = ""
+# SFU_APP_SECRET is a Worker secret, never a frontend variable.
+
+[[durable_objects.bindings]]
+name = "ROOM_VOICE"
+class_name = "RoomVoice"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["RoomVoice"]
