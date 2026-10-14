@@ -217,6 +217,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Imagens:** não foi removido nenhum exame clínico aprovado. Revisão completa do acervo de imagens do Admin, licenças e renderização PWA ainda necessária.
 - **Estado:** EM REVISÃO, **NÃO CERTIFICADA PELO PROMPT MAGNO**. O Drive não trouxe um benchmark de profundidade equivalente; pendem revisão integral de 60.000 caracteres didáticos úteis sem repetições, checagem exaustiva dos tratamentos, prova pedagógica por capítulo e inspeção visual real em desktop/PWA.
 
+## 2026-10-14 — Vulvovaginites
+
+- **Apostila LURIA:** `apostilas/vulvovaginites/index.html`.
+- **Benchmark efetivamente aberto e analisado no Drive:** `02 - CORRIMENTOS VAGINAIS .pdf`, com aproximadamente 20,5 mil caracteres extraídos. Aborda microbiota, diferenciação por pH, vaginose bacteriana, candidíase, tricomoníase e vaginite inflamatória/descamativa. O material não foi confirmado como apostila oficial da Estratégia MED.
+- **Matriz de cobertura:** a LURIA já apresenta capítulos independentes com conceito, fisiopatologia, diagnóstico, tratamento, recorrência, caso aplicado, microbiologia e diferenciais; inclui vaginite aeróbia, DIV, dermatoses vulvares, hipoestrogenismo, infecções mistas e ressalva sobre diagnóstico controverso de vaginose citolítica. Benchmark já contempla pH e fluxograma de corrimento, mas não deve ser copiado. Não foi identificado grande capítulo ausente nessa revisão focal; ainda falta verificação didática de todo o texto e atualização contínua dos tratamentos.
+- **Evidência nova relevante já contemplada:** CDC STI Guidelines 2021 ainda descreve tratamento rotineiro do parceiro na vaginose como não recomendado, enquanto ensaio StepUp publicado em 2025 mostrou menor recorrência entre casais com terapia combinada do parceiro masculino; o texto LURIA já registra essa diferença e ressalva que não é recomendação universal.
+- **Auditoria real de imagens:** quatro fotomicrografias CDC Public Health Image Library foram verificadas **individualmente** na fonte primária: PID 16824 (microbiota, autor Joe Miller), PID 2933 (`Candida albicans`, Dr. Stuart Brown), PID 3720 (`clue cells`, M. Rein), PID 14500 (`Trichomonas vaginalis`, Joe Miller). Correspondência anatômica/diagnóstica conferida nas legendas originais. CDC informa domínio público e exige atribuição; os quatro créditos individuais foram acrescentados preservando todas as imagens e URLs, sem desenhos substitutos.
+- **Fontes públicas:** CDC PHIL PID 16824, 2933, 3720, 14500; CDC STI Treatment Guidelines (candidíase, vaginose, tricomoníase); Vodstrcil et al., `Male-Partner Treatment to Prevent Recurrence of Bacterial Vaginosis`, NEJM 2025 (PMID 40043236).
+- **Pendências do Prompt Magno:** testar carregamento real das quatro imagens no site/PWA, validação científica linha a linha, auditoria de terapêuticas em gestação e recorrências, revisão pedagogicamente autossuficiente sem repetições, comprovar 60.000 caracteres didáticos úteis e inspeção visual em desktop. **EM REVISÃO; NÃO CERTIFICADA.**
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
