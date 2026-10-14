@@ -86,12 +86,19 @@
     const unconscious = /inconsciente|desacordad|nao responsiv|nao responde|arresponsiv|coma|irresponsiv/.test(mental);
     const img = document.getElementById('plantao-patient-image');
     const motionImg = document.getElementById('plantao-patient-motion');
-    const src = unconscious ? caseContext.unconscious_image : caseContext.patient_image;
+    // Gestante V1: manter o mesmo quadro ao perder a consciencia;
+    // o rig fecha apenas os olhos, evitando pular entre enquadramentos distintos.
+    const pregnantRig=/(?:gestante_acordada_triste_1300x900_100kb|14-gestante-acordada)\.webp(?:\?|$)/.test(
+      String(caseContext.patient_image||"")
+    );
+    const src = pregnantRig
+      ? caseContext.patient_image
+      : (unconscious ? caseContext.unconscious_image : caseContext.patient_image);
     if (img && src && img.getAttribute('src') !== src) img.src = src;
     if (motionImg && src && motionImg.getAttribute('src') !== src) motionImg.src = src;
     if (img) {
       img.alt = `Ilustração do paciente ${unconscious ? 'desacordado' : 'acordado'} no leito`;
-      if (/(?:luria-(?:homem-adulto-v7|mulher-adulta-v5|homem-idoso-v7)-aberto|luria-mulher-idosa-v16-base)\.webp/.test(img.getAttribute('src')||'')) {
+      if (/(?:luria-(?:homem-adulto-v7|mulher-adulta-v5|homem-idoso-v7)-aberto|luria-mulher-idosa-v16-base|gestante_acordada_triste_1300x900_100kb|14-gestante-acordada)\.webp/.test(img.getAttribute('src')||'')) {
         img.dataset.luriaEyes=unconscious?"closed":"auto";
         img.dataset.luriaRr=String(vitals.rr??"");
       } else {
