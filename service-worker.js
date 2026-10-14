@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-alex-companion-20261014";
+const CACHE_VERSION = "luria-pwa-alex-drag-20261014";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

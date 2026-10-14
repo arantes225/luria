@@ -62,7 +62,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   static observedAttributes=['expression','animation','size','theme','interactive','speaking','intensity'];
   constructor() {
     super();this.attachShadow({mode:'open'});
-    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css?v=20261014-smooth2',import.meta.url).href;
+    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css?v=20261014-drag1',import.meta.url).href;
     this.button=document.createElement('button');this.button.type='button';this.button.className='alex-surface';this.button.setAttribute('aria-label','Professor Alex: tocar para cumprimentar');
     this.message=document.createElement('span');this.message.className='alex-fallback';this.message.textContent='Carregando Professor Alex 3D…';
     this.button.append(this.message);this.shadowRoot.append(link,this.button);
@@ -111,6 +111,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   // Audio adapters may feed normalized mouth openness; null resumes the built-in demo.
   setMouthOpenness(value){this._openness=value==null?null:clamp(Number(value)||0,0,1);this._schedule();}
   setView(yaw=-.18,pitch=0){this._view={yaw:clamp(Number(yaw)||0,-Math.PI,Math.PI),pitch:clamp(Number(pitch)||0,-.45,.45)};this._schedule();}
+  setDragMotion(active,x=0,y=0){this._dragTarget={active:!!active,x:clamp(Number(x)||0,-1,1),y:clamp(Number(y)||0,-1,1)};this._schedule();}
   playAnimation(name) {
     if(!ANIMATIONS.includes(name)||!this.renderer)return false;
     this._gesture={name,start:this._elapsed,duration:DURATIONS[name]/1000};this._schedule();return true;
@@ -118,7 +119,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   _syncProps() {
     const names={small:160,medium:320,large:520},size=names[this.size]||Number(this.size)||320;
     this.style.setProperty('--alex-size',clamp(size,80,900)+'px');
-    this.button.disabled=!this.interactive;this.button.setAttribute('aria-label',this.interactive?'Professor Alex: tocar para cumprimentar':'Professor Alex, mascote 3D');
+    this.button.disabled=!this.interactive;this.button.setAttribute('aria-label',this.hasAttribute('draggable-companion')?'Alex: toque para ajuda, arraste para mover ou use as setas do teclado':this.interactive?'Professor Alex: tocar para cumprimentar':'Professor Alex, mascote 3D');
     if(!this.interactive)this._pointer={x:0,y:0};this._syncTheme();
   }
   _syncTheme() {
@@ -276,6 +277,10 @@ export class ProfessorAlexMascot extends HTMLElement {
     const signature=[this._currentFace,this._fromFace,this._faceMix.toFixed(2),blink.toFixed(2),sleep.toFixed(2),speech.toFixed(2),this._color,this._look.x.toFixed(2),this._look.y.toFixed(2),gesture?.name==='angryScene'].join('|');
     if(signature!==this._faceSignature){this._drawFace(this._fromFace,this._currentFace,this._faceMix,Math.max(blink,sleep*.95),speech);this._faceSignature=signature;}
     this.dizzySwirl.visible=desired==='confused';if(this.dizzySwirl.visible)this.dizzySwirl.rotation.y=this._reduced?0:t*3.4;
+    const drag=this._dragTarget||{active:false,x:0,y:0};
+    this._dragBlend=(this._dragBlend||0)+((drag.active?1:0)-(this._dragBlend||0))*.18;
+    this._dragLean=this._dragLean||{x:0,y:0};this._dragLean.x+=(drag.x-this._dragLean.x)*.18;this._dragLean.y+=(drag.y-this._dragLean.y)*.18;
+    if(moving){const d=this._dragBlend;this.robot.rotation.z-=this._dragLean.x*d*.18;this.robot.rotation.x+=this._dragLean.y*d*.10;this.limbs[0].userData.tipPivot.rotation.z-=d*.48;this.limbs[1].userData.tipPivot.rotation.z+=d*.48;this.limbs[2].rotation.z-=d*.14;this.limbs[3].rotation.z+=d*.14;this.robot.position.y+=d*.04;}
     this.renderer.render(this.scene,this.camera);
     if(moving||gesture||this._faceMix<1)this._schedule();
   }
