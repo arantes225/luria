@@ -336,3 +336,20 @@ test("Climatério aplica atualização ACOG 2026 sem reduzir sangramento a 4mm",
   assert.match(chapter,/10\.1097\/AOG\.0000000000006275/);
   assert.equal(new Set(d.q.map(x=>x[0])).size,d.q.length);
 });
+
+
+test("RCF e GIG mantém Doppler real licenciado e casos estruturados",()=>{
+  const html=read("apostilas/crescimento-intrauterino-reduzido-aumentado/index.html");
+  assert.match(html,/id="doppler-umbilical-real-licenciado"/);
+  assert.match(html,/Ultrasound_Scan_ND_0111105746_1103050\.png/);
+  assert.match(html,/creativecommons\.org\/licenses\/by-sa\/3\.0/);
+  assert.match(html,/Nevit Dilmen/);
+  assert.match(html,/data-apostila-image-fallback="approved-source"/);
+  assert.match(html,/id="decisoes-seriadas-rcf-gig-2026"/);
+  assert.match(html,/href="#decisoes-seriadas-rcf-gig-2026"/);
+  assert.match(html,/SMFM, PFE\/CA/);
+  assert.match(html,/diástole reversa/);
+  assert.match(html,/4\.500 g/);
+  assert.match(html,/5\.000 g/);
+  assert.match(html,/Pressão fúndica/);
+});
