@@ -273,3 +273,17 @@ test("Cancer de mama: preservar figuras e investigar discordancias antes da alta
   const section=html.match(/<section class="book-section" id="capitulo-concordancia-mamaria-2026">([\s\S]*?)<\/section>/)?.[1]||"";
   assert.ok(section.replace(/<[^>]+>/g," ").length>5000,"Conteúdo clínico muito superficial");
 });
+
+test("Cancer de mama: exames clinicos reais com licenca nao substituem esquemas existentes",()=>{
+  const html=read("apostilas/cancer-de-mama/index.html");
+  assert.match(html,/id="fig-mama-calcificacoes-reais"/);
+  assert.match(html,/id="fig-mama-histologia-invasiva-real"/);
+  assert.match(html,/Jmarchn/);
+  assert.match(html,/Mikael Häggström/);
+  assert.match(html,/creativecommons\.org\/licenses\/by-sa\/3\.0/);
+  assert.match(html,/creativecommons\.org\/publicdomain\/zero\/1\.0/);
+  assert.match(html,/data-apostila-image-fallback="ist-figure"/);
+  assert.match(html,/img-src [^;]*https:\/\/thumb\.wikimedia\.org/);
+  const figures=[...html.matchAll(/<img[^>]+(?:microcalcifications_in_carcinoma_in_situ|Histopathology_of_invasive_ductal_carcinoma_of_the_breast)[^>]*>/g)];
+  assert.equal(figures.length,2,"Faltam as duas fotografias clínicas reais");
+});
