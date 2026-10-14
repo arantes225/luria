@@ -127,6 +127,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Imagens reais:** mantida foto de lesões palmares de sífilis congênita, CDC, domínio público, `Congenital_syphilis_rash_on_palm.jpg`; retirada retinografia `congenital__toxo.jpg` do StatPearls (CC BY-NC-ND 4.0, incompatível com incorporação comercial). Substituída por **retinografia real de cicatriz macular curada após toxoplasmose congênita**, autores Sudharshan, Ganesh e Biswas, *Indian J Ophthalmol.* 2010, Wikimedia Commons `PMID20029144_01_congenital_toxoplasmosis_-_chorioretinal_scar.png`, **CC BY 2.0**. A legenda não a apresenta como infecção ativa.
 - **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Falta auditoria médica completa de todos os agentes, checagem visual em desktop/PWA, fontes brasileiras para cada posologia, teste de autossuficiência e revisão global de extensão didática não repetitiva.
 
+## 2026-10-13 — Infecções Sexualmente Transmissíveis
+
+- **Apostila avaliada:** `apostilas/infeccoes-sexualmente-transmissiveis/index.html`.
+- **Benchmark efetivamente aberto no Drive:** `03 - ULCERAS GENITAIS.pdf`, cerca de 21,7 mil caracteres de texto extraído. Conteúdo: sífilis, herpes, cancroide, LGV e donovanose; quadros comparativos, imagens com fontes editoriais diversas, doses e gestação. Trata especificamente úlceras genitais, e não todo o espectro de IST. Autor institucional **Estratégia MED não comprovado**.
+- **Comparação e lacuna:** a apostila LURIA cobre síndromes, etiologia, testes por sítio, complicações, sífilis, herpes, cancroide, HPV, DIP e prevenção. A tabela fenotípica de úlceras do PDF é útil como referência de cobertura, mas pode estimular reconhecimento baseado exclusivamente em morfologia. Faltavam casos complexos para sífilis precoce com sorologia negativa, herpes sem vesículas, cancroide/LGV com adenopatia e proctite, câncer como diferencial e sífilis gestacional.
+- **Intervenção autoral:** capítulo com seis casos clinicamente distintos, roteiro de coleta/testagem etiológica, coinfecção e diferenciais não infecciosos, tratamento presuntivo orientado por gravidade e revisão do papel da biópsia para lesão persistente. Menus atualizados. O PCDT de IST da referência bibliográfica foi atualizado para a versão com anexo alterado em 2024 (portal atualizado em janeiro de 2025), em vez de tratá-lo como edição imutável de 2022.
+- **Imagens:** oito fotografias reais originais permanecem no HTML, com créditos e links clínicos do CDC PHIL. Os objetos estão no bucket público do Supabase. **A licença individual de reutilização e a efetiva renderização em navegador/PWA de cada arquivo ainda exigem auditoria.** Não reproduzir imagens do comparativo.
+- **Fontes clínicas:** Ministério da Saúde, PCDT IST (anexo 2024); CDC, `Diseases Characterized by Genital, Anal, or Perianal Ulcers` e `Genital Herpes`, 2021.
+- **Estado:** EM REVISÃO, ainda não certificada pelo Prompt Magno. Pendências: verificação individual das oito imagens em dispositivo real, fontes clínicas adicionais, leitura integral, rastreabilidade das doses e protocolos, teste de compreensão independente e validação de layout desktop/PWA.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
