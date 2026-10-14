@@ -37,3 +37,7 @@ Produção não alterada.
 - Validação física do PWA, teclado de iPhone/Android, rotação e suspensão ainda pendente. Capturas compactas não equivalem a testes em aparelhos físicos.
 - Matriz visual completa de acessórios e teste de áudio entre aparelhos não repetidos nesta etapa; infraestrutura preservada.
 - Nenhuma regressão observada nas verificações executadas; não se afirma validação de todos os dispositivos ou funcionalidades.
+
+## Revisão complementar — 14/10/2026
+
+Página Amigos conferida novamente na homologação nas quatro combinações: azul claro, azul escuro, rosa claro e rosa escuro. Capturas reais em browser-results/social-stage6/friends-{blue,pink}-{light,dark}.png. Viewport real 614 × 528; sem overflow horizontal observado na medição final. Botão Adicionar amigo, busca, navegação e nome acessível do menu do contato presentes. Tema azul escuro restaurado ao terminar. Nenhuma alteração de código ou nova publicação nesta revisão. Testes em aparelhos físicos continuam pendentes.
