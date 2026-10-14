@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gestante animada — prévia LURIA</title>
+<link rel="stylesheet" href="/assets/css/emergency-case.css?v=20261014-pregnant1">
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f0f5fc;color:#163858}
+*{box-sizing:border-box}
+body{margin:0;padding:20px}
+main{max-width:1150px;margin:0 auto}
+header{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+h1{font-size:1.2rem;font-weight:650;margin:0}
+small{color:#5a728e}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+button{background:white;border:1px solid #b1c9e5;border-radius:9px;padding:10px 14px;color:#184888;font-size:14px;cursor:pointer}
+button:hover{background:#e9f2fe}
+button[aria-pressed=true]{background:#184888;color:white;border-color:#184888}
+#plantao-simulator{position:relative;width:100%;overflow:visible}
+#plantao-simulator .plantao-scene{position:relative;width:100%;aspect-ratio:1300/900;overflow:hidden;border-radius:16px;isolation:isolate;box-shadow:0 10px 28px #18395a24;background:#87b9e8}
+#plantao-simulator .plantao-scene>img#plantao-patient-image{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;max-width:none!important}
+#plantao-simulator .plantao-scene.portrait{max-width:480px;aspect-ratio:941/1672;margin:0 auto}
+.help{margin-top:14px;font-size:13px;line-height:1.5;color:#53677f}
+</style>
+</head>
+<body>
+<main>
+<header><h1>LURIA · Gestante animada — prévia V1</h1><small>Respiração + piscada localizada</small></header>
+<div class="controls" role="group" aria-label="Controles da paciente">
+<button type="button" id="eyes-auto" aria-pressed="true">Piscada automática</button>
+<button type="button" id="eyes-closed" aria-pressed="false">Olhos fechados</button>
+<button type="button" id="rr-normal" aria-pressed="true">Respiração 16 irpm</button>
+<button type="button" id="rr-fast" aria-pressed="false">Respiração 26 irpm</button>
+<button type="button" id="rr-stop" aria-pressed="false">Parar respiração</button>
+<button type="button" id="mode" aria-pressed="false">Testar imagem do PWA</button>
+</div>
+<div id="plantao-simulator">
+  <section class="plantao-scene" aria-label="Gestante no leito">
+    <img id="plantao-patient-image" src="/assets/img/plantao/gestante_acordada_triste_1300x900_100kb.webp" data-luria-eyes="auto" data-luria-rr="16" alt="Gestante acordada no leito" width="1300" height="900">
+  </section>
+</div>
+<p class="help">A imagem principal fica parada. Somente a região dos olhos e o tórax/abdômen recebem movimento. Os botões simulam a consciência e a frequência respiratória do atendimento.</p>
+</main>
+<script src="/assets/js/plantao-gestante-v1.js?v=20261014-pregnant1"></script>
+<script>
+(()=>{
+const img=document.getElementById("plantao-patient-image");
+const scene=img.closest(".plantao-scene");
+function setGroup(ids,selected){ids.forEach(id=>document.getElementById(id).setAttribute("aria-pressed",String(id===selected)))}
+document.getElementById("eyes-auto").onclick=()=>{img.dataset.luriaEyes="auto";setGroup(["eyes-auto","eyes-closed"],"eyes-auto")};
+document.getElementById("eyes-closed").onclick=()=>{img.dataset.luriaEyes="closed";setGroup(["eyes-auto","eyes-closed"],"eyes-closed")};
+for(const [id,rr] of [["rr-normal",16],["rr-fast",26],["rr-stop",0]]) {
+ document.getElementById(id).onclick=()=>{img.dataset.luriaRr=String(rr);setGroup(["rr-normal","rr-fast","rr-stop"],id)}
+}
+document.getElementById("mode").onclick=e=>{
+ const portrait=e.currentTarget.getAttribute("aria-pressed")!=="true";
+ e.currentTarget.setAttribute("aria-pressed",String(portrait));
+ scene.classList.toggle("portrait",portrait);
+ img.src=portrait?"/assets/img/plantao pwa/14-gestante-acordada.webp":"/assets/img/plantao/gestante_acordada_triste_1300x900_100kb.webp";
+};
+})();
+</script>
+</body>
+</html>

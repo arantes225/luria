@@ -3,7 +3,7 @@
  "use strict";
  const img=document.getElementById("plantao-patient-image");
  if(!img)return;
- const images=/(?:02-mulher-idosa-acordada|01-mulher-idosa-olhos-fechados|16-mulher-idosa-acordada|07-mulher-idosa-olhos-fechados)\.webp(?:\?|$)/;
+ const images=/(?:luria-mulher-idosa-v16-base|02-mulher-idosa-acordada|01-mulher-idosa-olhos-fechados|16-mulher-idosa-acordada|07-mulher-idosa-olhos-fechados)\.webp(?:\?|$)/;
  let requested=false;
  function detect(){
   if(requested || !images.test(img.getAttribute("src")||""))return;

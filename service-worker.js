@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-social-batch-20261014";
+const CACHE_VERSION = "luria-pwa-social-batch-alex-ready2-20261014";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

@@ -474,3 +474,116 @@ test("SUA: fotografia real de pólipo usa fonte licenciada e não revive figura 
   const renderer=read("assets/js/apostila-tools.js");
   assert.match(renderer,/removedUnlicensed = new Set\(\[78, 94, 315, 319\]\)/);
 });
+
+
+test("Síndromes hipertensivas: microangiopatias, diretrizes de cálcio e rastreabilidade",()=>{
+  const html=read("apostilas/sindromes-hipertensivas-da-gestacao/index.html");
+  assert.match(html,/id="microangiopatias-gestacao-puerperio-2026"/);
+  assert.match(html,/href="\/apostilas\/sindromes-hipertensivas-da-gestacao\/#microangiopatias-gestacao-puerperio-2026"/);
+  assert.match(html,/atividade de ADAMTS13/);
+  assert.match(html,/injúria renal progressiva/);
+  assert.match(html,/RBEHG e CNE\/FEBRASGO/);
+  assert.match(html,/OMS \(recomendação vigente consultada em 2026\)/);
+  assert.match(html,/48–72 horas/);
+  assert.match(html,/NICE NG133/);
+  assert.match(html,/pubmed\.ncbi\.nlm\.nih\.gov\/32808006/);
+  assert.ok(!html.includes("Imagem indisponível."),"Não deixar placeholders de imagem");
+});
+
+
+test("SOMP/PMOS preserva US real e aprofunda raciocinio adolescente e androgenos",()=>{
+  const html=read("apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html");
+  assert.match(html,/id="casos-decisao-somp-2026"/);
+  assert.match(html,/href="\/apostilas\/sindrome-ovariana-metabolica-poliendocrina-somp\/#casos-decisao-somp-2026"/);
+  assert.match(html,/Polycystic_ovary\.jpg/);
+  assert.match(html,/Schomynv, CC0 1\.0/);
+  assert.match(html,/aria-label="Abrir ultrassonografia real em resolução original"/);
+  assert.match(html,/pelo menos três meses/);
+  assert.match(html,/primeira linha farmacológica/);
+  assert.match(html,/apneia obstrutiva do sono/);
+  assert.match(html,/hiperandrogenismo/);
+  assert.match(html,/2026/);
+});
+
+test("TPP diferencia prevenção com colo curto de triagem sintomática",()=>{
+  const d=JSON.parse(read("apostilas/trabalho-parto-prematuro/content.json"));
+  const chapter=d.q.find(x=>x[0]==="prevencao-vs-tpp-diagnostico-2026");
+  assert.ok(chapter,"falta capítulo diferenciando prevenção e diagnóstico");
+  assert.ok(d.o.some(x=>x[0]===chapter[0]),"falta acesso pelo sumário");
+  const text=JSON.stringify(chapter[2]);
+  assert.ok(text.length>6500,"desenvolvimento insuficiente");
+  assert.match(text,/20 mm ou menos antes de 24 semanas/);
+  assert.match(text,/21 e 25 mm/);
+  assert.match(text,/30\+0 semanas/);
+  assert.match(text,/15 mm ou menos/);
+  assert.match(text,/48 horas/);
+  assert.match(text,/nifedipino/);
+  assert.match(text,/descolamento|DPP/);
+  assert.match(text,/publications\.smfm\.org/);
+  assert.match(text,/www\.nice\.org\.uk\/guidance\/ng25/);
+  const ids=d.q.map(x=>x[0]);
+  assert.equal(new Set(ids).size,ids.length,"seções duplicadas");
+  assert.equal(d.o.filter(x=>!ids.includes(x[0])).length,0,"sumário aponta para capítulo ausente");
+});
+
+test("Vulvovaginites mantém as quatro lâminas CDC e suas atribuições",()=>{
+  const html=read("apostilas/vulvovaginites/index.html");
+  const ids=["16824","2933","3720","14500"];
+  for(const id of ids){
+    assert.match(html,new RegExp("PHIL_Images/"+id+"/"+id+"_lores\\.jpg"),"exame clínico CDC ausente: "+id);
+    assert.match(html,new RegExp("pid="+id),"fonte original CDC ausente: "+id);
+  }
+  for(const author of ["Joe Miller","Stuart Brown","M. Rein"])assert.ok(html.includes(author),"crédito ausente: "+author);
+  assert.equal((html.match(/<img\b/g)||[]).length,4,"não substituir ou acrescentar imagens sem auditoria");
+  assert.ok(html.includes("obra em domínio público")||html.includes("Obra em domínio público"));
+});
+
+
+test("Sexualidade feminina e masculina sao apostilas independentes e pesquisaveis por Medicina Sexual",()=>{
+  const female=read("apostilas/sexualidade/index.html");
+  const male=read("apostilas/sexualidade-masculina/index.html");
+  const library=read("apostilas/index.html");
+  assert.match(female,/<title>Sexualidade Feminina · LURIA<\/title>/);
+  assert.match(male,/<title>Sexualidade Masculina · LURIA<\/title>/);
+  assert.doesNotMatch(female,/id="medicina-sexual-masculina-2026"/,
+    "A apostila feminina não deve embutir o conteúdo masculino");
+  assert.match(female,/href="\/apostilas\/sexualidade-masculina\/"/);
+  assert.match(male,/href="\/apostilas\/sexualidade\/"/);
+  assert.match(male,/Área: Cirurgia Geral/);
+  assert.match(male,/Matéria: Urologia/);
+  assert.match(female,/Área: Ginecologia e Obstetrícia/);
+  assert.match(male,/Contraindicação farmacológica crítica/);
+  assert.match(female,/id="atendimento-pos-violencia-sexual"/);
+  assert.match(library,/titulo:"Sexualidade Feminina"/);
+  assert.match(library,/titulo:"Sexualidade Masculina"/);
+  assert.match(library,/Medicina Sexual · Sexualidade Masculina/);
+  const ids=[...male.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(x=>x[1]);
+  for(const [,dest] of male.matchAll(/class="book-outline-link" href="#([^"]+)"/g)){
+    assert.ok(ids.includes(dest),"Seção masculina inexistente no sumário: "+dest);
+  }
+});
+
+
+test("Sexualidade Masculina separada ensina hipotestosteronemia e urgencias sem confundir com unidade feminina",()=>{
+  const html=read("apostilas/sexualidade-masculina/index.html");
+  for(const id of [
+    "medicina-sexual-masculina-2026",
+    "avaliacao-de-medicina-sexual-2026",
+    "tratamento-de-medicina-sexual-2026",
+    "eixo-hormonal-e-urgencias-masculinas-2026",
+    "consultas-masculinas-2026"
+  ]){
+    assert.match(html,new RegExp('id="'+id+'"'),"Falta seção "+id);
+    assert.match(html,new RegExp('href="#'+id+'"'),"Falta navegação "+id);
+  }
+  assert.ok(!html.includes("Embora a maior parte desta apostila se concentre em sexualidade feminina"));
+  assert.match(html,/testosterona total deve ser medida/);
+  assert.match(html,/desejo de paternidade/);
+  assert.match(html,/nitratos orgânicos ou doadores de óxido nítrico/);
+  assert.match(html,/riociguate/);
+  assert.match(html,/priapismo isquêmico/);
+  assert.match(html,/uroweb.org\/guidelines\/sexual-and-reproductive-health\/chapter\/male-hypogonadism/);
+  assert.match(html,/CC BY-SA 3.0|prótese peniana/);
+  const female=read("apostilas/sexualidade/index.html");
+  assert.match(female,/Sexualidade Feminina/);
+});

@@ -1,10 +1,11 @@
 import * as THREE from '../vendor/three.module.min.mjs';
 
 export const EXPRESSIONS = ['happy','attentive','thoughtful','surprised','confused','excited','wink','angry'];
-export const ANIMATIONS = ['wave','celebrate','thinking','explaining','typing','reading','confused','angry','sleep','wake','celebrateScene','angryScene'];
-const DURATIONS = {wave:2800,celebrate:2600,thinking:3200,explaining:3600,typing:3400,reading:3000,confused:2600,angry:2600,sleep:4000,wake:2800,celebrateScene:6500,angryScene:6000};
-const GESTURE_FACE = {wave:'happy',celebrate:'excited',thinking:'thoughtful',explaining:'attentive',typing:'attentive',reading:'attentive',confused:'confused',angry:'angry',wake:'happy',celebrateScene:'excited',angryScene:'angry'};
+export const ANIMATIONS = ['wave','celebrate','thinking','explaining','typing','reading','confused','angry','sleep','wake','celebrateScene','angryScene','nod','shakeHead','point','search','loading','listening','encourage','stretch','bow','pet','dizzy'];
+const DURATIONS = {wave:2800,celebrate:2600,thinking:3200,explaining:3600,typing:3400,reading:3000,confused:2600,angry:2600,sleep:4000,wake:2800,celebrateScene:6500,angryScene:6000,nod:1800,shakeHead:2000,point:2400,search:3000,loading:2600,listening:3000,encourage:2600,stretch:3600,bow:2400};
+const GESTURE_FACE = {wave:'happy',celebrate:'excited',thinking:'thoughtful',explaining:'attentive',typing:'attentive',reading:'attentive',confused:'confused',angry:'angry',wake:'happy',celebrateScene:'excited',angryScene:'angry',nod:'happy',shakeHead:'attentive',point:'wink',search:'thoughtful',loading:'attentive',listening:'attentive',encourage:'happy',stretch:'happy',bow:'happy'};
 const ALIASES = {feliz:'happy',atento:'attentive',pensativo:'thoughtful',surpreso:'surprised',confuso:'confused',animado:'excited',piscando:'wink',estourado:'angry'};
+DURATIONS.pet=3000;DURATIONS.dizzy=3400;GESTURE_FACE.pet='happy';GESTURE_FACE.dizzy='confused';
 const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
 const smooth = v => v*v*(3-2*v);
 
@@ -32,11 +33,11 @@ function floatingPod(arm) {
   const profile=arm?[[0,-.395],[.12,-.375],[.205,-.335],[.25,-.28],[.28,-.15],[.284,-.02],[.272,.13],[.23,.265],[.17,.335],[.13,.355],[.10,.337],[0,.33]]
     :[[0,-.37],[.18,-.37],[.244,-.345],[.272,-.29],[.275,-.18],[.255,-.035],[.218,.13],[.167,.265],[.125,.315],[.09,.30],[0,.28]];
   const curve=new THREE.SplineCurve(profile.map(([r,y])=>new THREE.Vector2(r,y)));
-  const points=curve.getPoints(32);points.forEach(p=>p.x=Math.max(0,p.x));
-  return new THREE.LatheGeometry(points,28);
+  const points=curve.getPoints(64);points.forEach(p=>p.x=Math.max(0,p.x));
+  return new THREE.LatheGeometry(points,40);
 }
 function softShell() {
-  const geometry=new THREE.SphereGeometry(1,56,36),positions=geometry.attributes.position,normals=geometry.attributes.normal;
+  const geometry=new THREE.SphereGeometry(1,112,72),positions=geometry.attributes.position,normals=geometry.attributes.normal;
   const axes=[1.24,1.14,.54],exponent=.56,power=2/exponent;
   for(let i=0;i<positions.count;i++){
     const values=[positions.getX(i),positions.getY(i),positions.getZ(i)].map((v,j)=>Math.sign(v)*Math.pow(Math.abs(v),exponent)*axes[j]);
@@ -62,21 +63,24 @@ export class ProfessorAlexMascot extends HTMLElement {
   static observedAttributes=['expression','animation','size','theme','interactive','speaking','intensity'];
   constructor() {
     super();this.attachShadow({mode:'open'});
-    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css',import.meta.url).href;
+    const link=document.createElement('link');link.rel='stylesheet';link.href=new URL('../css/professor-alex-mascot.css?v=20261014-drag1',import.meta.url).href;
     this.button=document.createElement('button');this.button.type='button';this.button.className='alex-surface';this.button.setAttribute('aria-label','Professor Alex: tocar para cumprimentar');
     this.message=document.createElement('span');this.message.className='alex-fallback';this.message.textContent='Carregando Professor Alex 3D…';
     this.button.append(this.message);this.shadowRoot.append(link,this.button);
     this._elapsed=0;this._last=0;this._visible=true;this._frame=0;this._gesture=null;this._faceMix=1;this._currentFace='happy';this._fromFace='happy';this._blinkAt=2+Math.random()*3;this._blinkStart=-10;this._pointer={x:0,y:0};this._look={x:0,y:0};this._openness=null;this._view={yaw:-.18,pitch:0};
     this._motion=()=>{this._reduced=this._media.matches;this._last=0;this._schedule();};
     this._visibility=()=>{this._last=0;this._schedule();};
+    this._viewportResize=()=>{this._resize();this._schedule();};
     this._tick=this._tick.bind(this);
-    this.button.addEventListener('click',()=>{if(this.interactive){this.playAnimation('wave');this.dispatchEvent(new CustomEvent('alex-react',{bubbles:true,composed:true}));}});
+    this.button.addEventListener('click',()=>{if(this.interactive){if(!this.hasAttribute('draggable-companion'))this.playAnimation('wave');this.dispatchEvent(new CustomEvent('alex-react',{bubbles:true,composed:true}));}});
     this.button.addEventListener('pointermove',e=>{if(!this.interactive||this._reduced||e.pointerType==='touch')return;const b=this.button.getBoundingClientRect();this._pointer={x:clamp((e.clientX-b.left)/b.width*2-1,-1,1),y:clamp((e.clientY-b.top)/b.height*2-1,-1,1)};});
     this.button.addEventListener('pointerleave',()=>{this._pointer={x:0,y:0};});
   }
   connectedCallback() {
     this._media=matchMedia('(prefers-reduced-motion: reduce)');this._reduced=this._media.matches;this._media.addEventListener('change',this._motion);
     document.addEventListener('visibilitychange',this._visibility);
+    window.addEventListener('resize',this._viewportResize);
+    window.visualViewport?.addEventListener('resize',this._viewportResize);
     this._themes=new MutationObserver(()=>{this._syncTheme();this._schedule();});
     this._themes.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
     if(document.body)this._themes.observe(document.body,{attributes:true,attributeFilter:['data-ui-appearance','data-ui-identity']});
@@ -87,6 +91,8 @@ export class ProfessorAlexMascot extends HTMLElement {
   }
   disconnectedCallback() {
     cancelAnimationFrame(this._frame);this._frame=0;this._media?.removeEventListener('change',this._motion);document.removeEventListener('visibilitychange',this._visibility);
+    window.removeEventListener('resize',this._viewportResize);
+    window.visualViewport?.removeEventListener('resize',this._viewportResize);
     this._themes?.disconnect();this._resizeObserver?.disconnect();this._intersection?.disconnect();this._dispose();
   }
   attributeChangedCallback(name,old,value) {
@@ -106,6 +112,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   // Audio adapters may feed normalized mouth openness; null resumes the built-in demo.
   setMouthOpenness(value){this._openness=value==null?null:clamp(Number(value)||0,0,1);this._schedule();}
   setView(yaw=-.18,pitch=0){this._view={yaw:clamp(Number(yaw)||0,-Math.PI,Math.PI),pitch:clamp(Number(pitch)||0,-.45,.45)};this._schedule();}
+  setDragMotion(active,x=0,y=0){this._dragTarget={active:!!active,x:clamp(Number(x)||0,-1,1),y:clamp(Number(y)||0,-1,1)};this._schedule();}
   playAnimation(name) {
     if(!ANIMATIONS.includes(name)||!this.renderer)return false;
     this._gesture={name,start:this._elapsed,duration:DURATIONS[name]/1000};this._schedule();return true;
@@ -113,7 +120,7 @@ export class ProfessorAlexMascot extends HTMLElement {
   _syncProps() {
     const names={small:160,medium:320,large:520},size=names[this.size]||Number(this.size)||320;
     this.style.setProperty('--alex-size',clamp(size,80,900)+'px');
-    this.button.disabled=!this.interactive;this.button.setAttribute('aria-label',this.interactive?'Professor Alex: tocar para cumprimentar':'Professor Alex, mascote 3D');
+    this.button.disabled=!this.interactive;this.button.setAttribute('aria-label',this.hasAttribute('draggable-companion')?'Alex: toque para ajuda, arraste para mover ou use as setas do teclado':this.interactive?'Professor Alex: tocar para cumprimentar':'Professor Alex, mascote 3D');
     if(!this.interactive)this._pointer={x:0,y:0};this._syncTheme();
   }
   _syncTheme() {
@@ -134,10 +141,11 @@ export class ProfessorAlexMascot extends HTMLElement {
     this._panelMaterials?.forEach(material=>material.color.copy(accent));
   }
   _createScene() {
-    this.renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});this.renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.5));this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.15;
+    this.renderer=new THREE.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.15;
     this.button.prepend(this.renderer.domElement);this.renderer.domElement.setAttribute('aria-hidden','true');
-    this.renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();cancelAnimationFrame(this._frame);this._frame=0;this._contextLost=true;this.message.hidden=false;this.message.textContent='Restaurando a renderização 3D…';});
-    this.renderer.domElement.addEventListener('webglcontextrestored',()=>{this._contextLost=false;this._last=0;this.message.hidden=true;this._schedule();});
+    const activeRenderer=this.renderer;this._contextLost=false;
+    this.renderer.domElement.addEventListener('webglcontextlost',event=>{if(this.renderer!==activeRenderer)return;event.preventDefault();cancelAnimationFrame(this._frame);this._frame=0;this._contextLost=true;this.message.hidden=false;this.message.textContent='Restaurando a renderização 3D…';});
+    this.renderer.domElement.addEventListener('webglcontextrestored',()=>{if(this.renderer!==activeRenderer)return;this._contextLost=false;this._last=0;this.message.hidden=true;this._schedule();});
     this.scene=new THREE.Scene();this.camera=new THREE.OrthographicCamera(-2.4,2.4,2.4,-2.4,.1,30);this.camera.position.set(0,-.12,8);this.camera.lookAt(0,-.12,0);
     this._environment=studioEnvironment(this.renderer);this.scene.environment=this._environment.texture;
     this.scene.add(new THREE.HemisphereLight(0xe6f2ff,0x6b7290,1.8));
@@ -225,6 +233,11 @@ export class ProfessorAlexMascot extends HTMLElement {
   }
   _resize() {
     if(!this.renderer)return;const box=this.button.getBoundingClientRect();if(!box.width||!box.height)return;
+    // Render at the screen's physical resolution, including PWA pinch zoom.
+    // Bound the backing buffer to 1536px per side to contain mobile GPU memory.
+    const density=(window.devicePixelRatio||1)*Math.max(1,window.visualViewport?.scale||1);
+    const pixelRatio=Math.min(density,1536/Math.max(box.width,box.height));
+    if(this.renderer.getPixelRatio()!==pixelRatio)this.renderer.setPixelRatio(pixelRatio);
     this.renderer.setSize(box.width,box.height,false);const ratio=box.width/box.height;this.camera.left=-2.3*ratio;this.camera.right=2.3*ratio;this.camera.top=2.3;this.camera.bottom=-2.3;this.camera.updateProjectionMatrix();
   }
   _schedule() {
@@ -265,6 +278,10 @@ export class ProfessorAlexMascot extends HTMLElement {
     const signature=[this._currentFace,this._fromFace,this._faceMix.toFixed(2),blink.toFixed(2),sleep.toFixed(2),speech.toFixed(2),this._color,this._look.x.toFixed(2),this._look.y.toFixed(2),gesture?.name==='angryScene'].join('|');
     if(signature!==this._faceSignature){this._drawFace(this._fromFace,this._currentFace,this._faceMix,Math.max(blink,sleep*.95),speech);this._faceSignature=signature;}
     this.dizzySwirl.visible=desired==='confused';if(this.dizzySwirl.visible)this.dizzySwirl.rotation.y=this._reduced?0:t*3.4;
+    const drag=this._dragTarget||{active:false,x:0,y:0};
+    this._dragBlend=(this._dragBlend||0)+((drag.active?1:0)-(this._dragBlend||0))*.18;
+    this._dragLean=this._dragLean||{x:0,y:0};this._dragLean.x+=(drag.x-this._dragLean.x)*.18;this._dragLean.y+=(drag.y-this._dragLean.y)*.18;
+    if(moving){const d=this._dragBlend;this.robot.rotation.z-=this._dragLean.x*d*.18;this.robot.rotation.x+=this._dragLean.y*d*.10;this.limbs[0].userData.tipPivot.rotation.z-=d*.48;this.limbs[1].userData.tipPivot.rotation.z+=d*.48;this.limbs[2].rotation.z-=d*.14;this.limbs[3].rotation.z+=d*.14;this.robot.position.y+=d*.04;}
     this.renderer.render(this.scene,this.camera);
     if(moving||gesture||this._faceMix<1)this._schedule();
   }
@@ -278,6 +295,17 @@ export class ProfessorAlexMascot extends HTMLElement {
   _pose(name,e,t) {
     const [left,right,lf,rf]=this.limbs;
     const lp=left.userData.tipPivot,rp=right.userData.tipPivot;
+    if(name==='pet'){this.robot.rotation.z+=Math.sin(t*2.8)*e*.09;this.robot.position.y+=Math.sin(t*3)*e*.05;this.body.scale.y*=1-e*.025;lp.rotation.z-=e*.25;rp.rotation.z+=e*.25;this._look.y=-e*.2;}
+    if(name==='dizzy'){this.robot.rotation.z+=Math.sin(t*5)*e*.12;this.robot.rotation.y+=Math.sin(t*3)*e*.15;lp.rotation.z-=e*.32;rp.rotation.z+=e*.32;this._look.x=Math.sin(t*5)*e*.5;}
+    if(name==='nod'){this.robot.rotation.x+=Math.sin(t*6)*e*.14;rp.rotation.z+=e*.18;}
+    if(name==='shakeHead'){this.robot.rotation.y+=Math.sin(t*7)*e*.20;lp.rotation.z-=e*.20;rp.rotation.z+=e*.20;}
+    if(name==='point'){const anchor=right.position.clone().add(rp.position.clone().applyQuaternion(right.quaternion));this._handPose(right,anchor.toArray(),[0,0,1.48],clamp(e,0,1));this._look.x=e*.30;this.robot.rotation.z-=e*.025;}
+    if(name==='search'){this.robot.rotation.y+=Math.sin(t*2.8)*e*.26;this._look.x=Math.sin(t*2.8)*e*.55;lp.rotation.z-=e*.22;rp.rotation.z+=e*.22;}
+    if(name==='loading'){lp.rotation.x+=Math.sin(t*4)*e*.24;rp.rotation.x-=Math.sin(t*4)*e*.24;left.position.y+=Math.sin(t*4)*e*.05;right.position.y-=Math.sin(t*4)*e*.05;this.body.scale.setScalar(1+Math.sin(t*3)*e*.018);}
+    if(name==='listening'){this.robot.rotation.z+=e*.06;rp.rotation.z+=e*.48;rp.rotation.x-=e*.24;this._look.x=e*.20;this.robot.rotation.x-=e*.035;}
+    if(name==='encourage'){lp.rotation.z-=e*.28;rp.rotation.z+=e*.38;left.position.y+=e*.04;right.position.y+=e*.04;this.robot.position.y+=Math.sin(t*3)*e*.07;}
+    if(name==='stretch'){lp.rotation.z-=e*.74;rp.rotation.z+=e*.74;lf.rotation.z-=e*.18;rf.rotation.z+=e*.18;this.body.scale.y*=1+e*.04;this.robot.position.y+=e*.08;}
+    if(name==='bow'){this.robot.rotation.x+=e*.22;this.robot.position.y-=e*.07;lp.rotation.z+=e*.10;rp.rotation.z-=e*.10;}
     if(name==='wave'){
       const reach=clamp(e,0,1),phase=clamp((t-.48)/1.38,0,1),sweep=Math.sin(phase*Math.PI*4)*Math.sin(phase*Math.PI);
       const anchor=right.position.clone().add(rp.position.clone().applyQuaternion(right.quaternion));this._handPose(right,anchor.toArray(),[0,right.userData.base.ry,2.10+sweep*.08],reach);this.robot.rotation.z-=reach*.012;this._sceneZoom=1/(1+reach*.07);
