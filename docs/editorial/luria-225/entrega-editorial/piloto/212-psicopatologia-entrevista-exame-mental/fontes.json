@@ -1,0 +1,40 @@
+{
+  "topic_id": 212,
+  "status": "pesquisa_pendente",
+  "references": [],
+  "research_targets": [
+    {
+      "label": "OMS: ICD-11 e recursos clínicos oficiais pertinentes",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Ministério da Saúde: saúde mental e atenção psicossocial, documentos vigentes",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "CFM: normas de ética e documentação clínica pertinentes",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Referência de semiologia psicopatológica com autoria/edição verificadas",
+      "url": null,
+      "opened": false,
+      "verified": false
+    }
+  ],
+  "verification_requirements": [
+    "título, autoria, edição e data",
+    "URL real ou identificador bibliográfico",
+    "trecho que sustenta recomendação",
+    "vigência e divergências",
+    "data de consulta",
+    "dose/via/duração e situações especiais quando pertinentes"
+  ],
+  "invented_references": false
+}

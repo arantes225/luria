@@ -1,0 +1,54 @@
+{
+  "topic_id": 5,
+  "status": "planejamento_sem_candidatas_verificadas",
+  "images": [],
+  "visual_needs": [
+    {
+      "key": "principios-diretrizes-sus-planejamento-1",
+      "description": "Linha do tempo original com eventos verificados",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "principios-diretrizes-sus-planejamento-2",
+      "description": "Mapa original de princípios aplicado a cenários",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "principios-diretrizes-sus-planejamento-3",
+      "description": "Fluxo original de rede assistencial",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "principios-diretrizes-sus-planejamento-4",
+      "description": "Tabela original de responsabilidades federativas",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    }
+  ],
+  "admin_importable": false,
+  "notes": [
+    "Necessidades não são candidatas prontas para o Admin.",
+    "Buscar recursos aprovados antes de solicitar imagens novas.",
+    "Não inserir clínica/exames sem licença, proveniência e aprovação.",
+    "Aplicar teto operacional do fluxo de lote: 110 KiB após aprovação; resolver divergência histórica com outros limites antes de otimizar."
+  ]
+}

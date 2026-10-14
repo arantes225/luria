@@ -1,0 +1,229 @@
+{
+  "slug": "climaterio-menopausa",
+  "source": "content.json",
+  "chars": 47498,
+  "deficit": 12502,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/climaterio-menopausa/content.json",
+  "sha256": "d68dc32d62fa683793cc822666e918dbf46cf417407133b3ac84ce4280ec98a1",
+  "html_sha256": "7714620de7ebb69a54b2132fdcb8c799a3152d0f65f6a2571e3579a60da23257",
+  "headings": [
+    {
+      "id": "resumo-prova",
+      "title": "book-exam-summary"
+    },
+    {
+      "id": "mapa-mental",
+      "title": "mindmap-section"
+    },
+    {
+      "id": "conceitos",
+      "title": 0
+    },
+    {
+      "id": "fisiopatologia",
+      "title": 0
+    },
+    {
+      "id": "clinica",
+      "title": 0
+    },
+    {
+      "id": "diagnostico",
+      "title": 0
+    },
+    {
+      "id": "sangramento",
+      "title": 0
+    },
+    {
+      "id": "sangramento-pos-menopausa-2026",
+      "title": 0
+    },
+    {
+      "id": "contracepcao",
+      "title": 0
+    },
+    {
+      "id": "avaliacao-global",
+      "title": 0
+    },
+    {
+      "id": "th",
+      "title": 0
+    },
+    {
+      "id": "esquemas",
+      "title": 0
+    },
+    {
+      "id": "sgm",
+      "title": 0
+    },
+    {
+      "id": "nao-hormonal",
+      "title": 0
+    },
+    {
+      "id": "situacoes-especiais",
+      "title": 0
+    },
+    {
+      "id": "osso-cv",
+      "title": 0
+    },
+    {
+      "id": "seguimento",
+      "title": 0
+    },
+    {
+      "id": "casos",
+      "title": 0
+    },
+    {
+      "id": "revisao",
+      "title": 0
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": 0
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "book-section"
+    },
+    {
+      "id": "tratado-climaterio-40k",
+      "title": 0
+    },
+    {
+      "id": "referencias",
+      "title": 0
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "book-exam-summary",
+      "chars": 1523
+    },
+    {
+      "id": "mapa-mental",
+      "title": "mindmap-section",
+      "chars": 574
+    },
+    {
+      "id": "conceitos",
+      "title": 0,
+      "chars": 2530
+    },
+    {
+      "id": "fisiopatologia",
+      "title": 0,
+      "chars": 2637
+    },
+    {
+      "id": "clinica",
+      "title": 0,
+      "chars": 1863
+    },
+    {
+      "id": "diagnostico",
+      "title": 0,
+      "chars": 1618
+    },
+    {
+      "id": "sangramento",
+      "title": 0,
+      "chars": 1680
+    },
+    {
+      "id": "sangramento-pos-menopausa-2026",
+      "title": 0,
+      "chars": 5509
+    },
+    {
+      "id": "contracepcao",
+      "title": 0,
+      "chars": 885
+    },
+    {
+      "id": "avaliacao-global",
+      "title": 0,
+      "chars": 785
+    },
+    {
+      "id": "th",
+      "title": 0,
+      "chars": 1787
+    },
+    {
+      "id": "esquemas",
+      "title": 0,
+      "chars": 3522
+    },
+    {
+      "id": "sgm",
+      "title": 0,
+      "chars": 954
+    },
+    {
+      "id": "nao-hormonal",
+      "title": 0,
+      "chars": 2543
+    },
+    {
+      "id": "situacoes-especiais",
+      "title": 0,
+      "chars": 1700
+    },
+    {
+      "id": "osso-cv",
+      "title": 0,
+      "chars": 1100
+    },
+    {
+      "id": "seguimento",
+      "title": 0,
+      "chars": 2053
+    },
+    {
+      "id": "casos",
+      "title": 0,
+      "chars": 1388
+    },
+    {
+      "id": "revisao",
+      "title": 0,
+      "chars": 941
+    },
+    {
+      "id": "aprofundamento-2026",
+      "title": 0,
+      "chars": 3317
+    },
+    {
+      "id": "editorial-depth-2026",
+      "title": "book-section",
+      "chars": 1281
+    },
+    {
+      "id": "tratado-climaterio-40k",
+      "title": 0,
+      "chars": 11318
+    },
+    {
+      "id": "referencias",
+      "title": 0,
+      "chars": 922
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

@@ -1,0 +1,385 @@
+{
+  "slug": "avaliacao-vitalidade-fetal",
+  "source": "index.html",
+  "chars": 43695,
+  "deficit": 16305,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/avaliacao-vitalidade-fetal/index.html",
+  "sha256": "ac553e7dabe446f490a0a4c3cb58f4f653baebad3e595ce65c97f5cacddfb535",
+  "html_sha256": "ac553e7dabe446f490a0a4c3cb58f4f653baebad3e595ce65c97f5cacddfb535",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "1. Princípios fisiológicos"
+    },
+    {
+      "title": "O que cada método enxerga?"
+    },
+    {
+      "title": "2. Quem deve receber vigilância anteparto?"
+    },
+    {
+      "title": "3. Movimentos fetais"
+    },
+    {
+      "title": "O que importa de verdade"
+    },
+    {
+      "title": "Contagem estruturada"
+    },
+    {
+      "title": "Conduta"
+    },
+    {
+      "title": "4. Cardiotocografia anteparto / Nonstress test"
+    },
+    {
+      "title": "O que o exame registra?"
+    },
+    {
+      "title": "Leitura sistemática em cinco passos"
+    },
+    {
+      "title": "Reatividade"
+    },
+    {
+      "title": "Reativa × não reativa"
+    },
+    {
+      "title": "5. Como ler os parâmetros da FCF"
+    },
+    {
+      "title": "Linha de base"
+    },
+    {
+      "title": "Variabilidade"
+    },
+    {
+      "title": "Acelerações"
+    },
+    {
+      "title": "Desacelerações"
+    },
+    {
+      "title": "Roteiro de leitura do traçado"
+    },
+    {
+      "title": "6. Perfil Biofísico Fetal"
+    },
+    {
+      "title": "Interpretação"
+    },
+    {
+      "title": "PBF modificado"
+    },
+    {
+      "title": "Como pontuar e interpretar um exame real"
+    },
+    {
+      "title": "7. Líquido amniótico"
+    },
+    {
+      "title": "Fisiologia"
+    },
+    {
+      "title": "Como medir"
+    },
+    {
+      "title": "Oligodrâmnio"
+    },
+    {
+      "title": "Polidrâmnio"
+    },
+    {
+      "title": "8. Dopplervelocimetria obstétrica"
+    },
+    {
+      "title": "Artéria umbilical"
+    },
+    {
+      "title": "Artéria cerebral média"
+    },
+    {
+      "title": "Relação cerebroplacentária"
+    },
+    {
+      "title": "Ducto venoso"
+    },
+    {
+      "title": "Técnica importa"
+    },
+    {
+      "title": "9. RCF: como o Doppler muda a vigilância"
+    },
+    {
+      "title": "10. Situações especiais"
+    },
+    {
+      "title": "Pré-eclâmpsia e hipertensão"
+    },
+    {
+      "title": "Diabetes"
+    },
+    {
+      "title": "Gestação múltipla"
+    },
+    {
+      "title": "Pós-datismo"
+    },
+    {
+      "title": "Redução de movimentos"
+    },
+    {
+      "title": "11. CTG intraparto: um capítulo diferente"
+    },
+    {
+      "title": "Comece pelas contrações"
+    },
+    {
+      "title": "Desacelerações: a relação com as contrações"
+    },
+    {
+      "title": "Desaceleração precoce"
+    },
+    {
+      "title": "Desaceleração tardia"
+    },
+    {
+      "title": "Desaceleração variável"
+    },
+    {
+      "title": "Classificação em três categorias"
+    },
+    {
+      "title": "Medidas intrauterinas"
+    },
+    {
+      "title": "12. Integração dos métodos"
+    },
+    {
+      "title": "Teste alterado: como escolher o próximo passo"
+    },
+    {
+      "title": "13. Armadilhas frequentes"
+    },
+    {
+      "title": "14. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — Redução de movimentos, CTG não reativa"
+    },
+    {
+      "title": "Caso 2 — RCF com AU alterada"
+    },
+    {
+      "title": "Caso 3 — RCF com diástole reversa"
+    },
+    {
+      "title": "Caso 4 — PBF 6/10"
+    },
+    {
+      "title": "Caso 5 — Polidrâmnio leve idiopático"
+    },
+    {
+      "title": "Caso 6 — CTG intraparto com tardias recorrentes"
+    },
+    {
+      "title": "Interpretação aplicada — cinco decisões que mudam a conduta"
+    },
+    {
+      "title": "1. Prematuridade: duas acelerações de 10 × 10"
+    },
+    {
+      "title": "2. Perfil biofísico: dois resultados 8/10, significados diferentes"
+    },
+    {
+      "title": "3. Restrição de crescimento: CTG reativa não apaga Doppler grave"
+    },
+    {
+      "title": "4. Intraparto: taquissistolia com desacelerações tardias"
+    },
+    {
+      "title": "5. Testes discordantes: primeiro confirme a pergunta e a qualidade do sinal"
+    },
+    {
+      "title": "15. Revisão de alto rendimento"
+    },
+    {
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "CTG: interpretar todos os parâmetros"
+    },
+    {
+      "title": "Doppler e perfil biofísico"
+    },
+    {
+      "title": "16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade"
+    },
+    {
+      "title": "16.1 Do oxigênio materno ao metabolismo fetal: onde pode ocorrer falha"
+    },
+    {
+      "title": "16.2 Cardiotocografia anteparto: atividade neural e reatividade"
+    },
+    {
+      "title": "16.3 Desacelerações: a forma não substitui o contexto"
+    },
+    {
+      "title": "16.4 Perfil biofísico fetal: comportamento, oxigenação e temporalidade"
+    },
+    {
+      "title": "16.5 Líquido amniótico: por que o volume informa algo, mas não explica tudo"
+    },
+    {
+      "title": "16.6 Doppler: três territórios e três perguntas fisiológicas"
+    },
+    {
+      "title": "16.7 Testes normais e anormais: limites da previsibilidade"
+    },
+    {
+      "title": "16.8 Um caso com dois testes aparentemente contraditórios"
+    },
+    {
+      "title": "Referências prioritárias"
+    },
+    {
+      "title": "Raciocínio avançado e situações de risco"
+    },
+    {
+      "title": "Cardiotocografia: cinco perguntas obrigatórias"
+    },
+    {
+      "title": "Perfil biofísico e líquido amniótico"
+    },
+    {
+      "title": "Doppler em crescimento restrito"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1639
+    },
+    {
+      "id": "principio",
+      "title": "1. Princípios fisiológicos",
+      "chars": 1240
+    },
+    {
+      "id": "indicacoes",
+      "title": "2. Quem deve receber vigilância anteparto?",
+      "chars": 1004
+    },
+    {
+      "id": "movimentos",
+      "title": "3. Movimentos fetais",
+      "chars": 1151
+    },
+    {
+      "id": "ctg-anteparto",
+      "title": "4. Cardiotocografia anteparto / Nonstress test",
+      "chars": 2310
+    },
+    {
+      "id": "ctg-parametros",
+      "title": "5. Como ler os parâmetros da FCF",
+      "chars": 1696
+    },
+    {
+      "id": "pbf",
+      "title": "6. Perfil Biofísico Fetal",
+      "chars": 2489
+    },
+    {
+      "id": "liquido",
+      "title": "7. Líquido amniótico",
+      "chars": 1074
+    },
+    {
+      "id": "doppler",
+      "title": "8. Dopplervelocimetria obstétrica",
+      "chars": 1616
+    },
+    {
+      "id": "rcf",
+      "title": "9. RCF: como o Doppler muda a vigilância",
+      "chars": 795
+    },
+    {
+      "id": "situacoes",
+      "title": "10. Situações especiais",
+      "chars": 972
+    },
+    {
+      "id": "intraparto",
+      "title": "11. CTG intraparto: um capítulo diferente",
+      "chars": 2219
+    },
+    {
+      "id": "integracao",
+      "title": "12. Integração dos métodos",
+      "chars": 1451
+    },
+    {
+      "id": "armadilhas",
+      "title": "13. Armadilhas frequentes",
+      "chars": 751
+    },
+    {
+      "id": "casos",
+      "title": "14. Casos clínicos integradores",
+      "chars": 1479
+    },
+    {
+      "id": "decisoes-resolvidas-vitalidade",
+      "title": "Interpretação aplicada — cinco decisões que mudam a conduta",
+      "chars": 5908
+    },
+    {
+      "id": "revisao",
+      "title": "15. Revisão de alto rendimento",
+      "chars": 835
+    },
+    {
+      "id": "editorial-depth-avaliacao-vitalidade-fetal",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 733
+    },
+    {
+      "id": "vitalidade-livro-40k",
+      "title": "16. Integração fisiológica dos exames de vitalidade fetal — raciocínio em profundidade",
+      "chars": 14527
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 943
+    },
+    {
+      "id": "raciocinio-avancado-avaliacao-vitalidade-fetal",
+      "title": "Raciocínio avançado e situações de risco",
+      "chars": 1420
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://upload.wikimedia.org/wikipedia/commons/a/a5/CTG_Output.jpg",
+    "https://commons.wikimedia.org/wiki/File:CTG_Output.jpg",
+    "https://creativecommons.org/licenses/by-sa/3.0/",
+    "https://www.acog.org/womens-health/faqs/special-tests-for-monitoring-fetal-well-being",
+    "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/06/indications-for-outpatient-antenatal-fetal-surveillance",
+    "https://publications.smfm.org/publications/289-society-for-maternal-fetal-medicine-consult-series-52/",
+    "https://www.nice.org.uk/guidance/ng229/chapter/recommendations",
+    "https://www.acog.org/clinical/clinical-guidance/clinical-practice-guideline/articles/2025/10/intrapartum-fetal-heart-rate-monitoring-interpretation-and-management"
+  ],
+  "listed_in_local_catalog_source": false,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

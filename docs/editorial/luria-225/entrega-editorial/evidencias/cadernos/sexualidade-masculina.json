@@ -1,0 +1,158 @@
+{
+  "slug": "sexualidade-masculina",
+  "source": "index.html",
+  "chars": 35007,
+  "deficit": 24993,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/sexualidade-masculina/index.html",
+  "sha256": "a17205f7c7b5cf70ebae9691cfeb1a99ad349901fbc7ddd0f7970fb711cd2115",
+  "html_sha256": "a17205f7c7b5cf70ebae9691cfeb1a99ad349901fbc7ddd0f7970fb711cd2115",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Saúde sexual masculina: abordagem integrada para o atendimento generalista"
+    },
+    {
+      "title": "Disfunção erétil: sintoma sexual e possível marcador sistêmico"
+    },
+    {
+      "title": "Quando o inibidor de PDE5 parece ter falhado"
+    },
+    {
+      "title": "Ejaculação precoce: tempo não é o único critério"
+    },
+    {
+      "title": "Peyronie: diferenciar fase ativa, estabilidade e incapacidade funcional"
+    },
+    {
+      "title": "Três perguntas aplicadas"
+    },
+    {
+      "title": "Avaliação clínica estruturada da queixa sexual masculina"
+    },
+    {
+      "title": "1. Entrevista sem julgamento e com hipóteses verificáveis"
+    },
+    {
+      "title": "2. Exame físico direcionado e avaliação sistêmica"
+    },
+    {
+      "title": "3. Hipótese etiológica: multifatorial por padrão, não psicogênica por exclusão apressada"
+    },
+    {
+      "title": "4. Quando investigar com Doppler peniano e testes especializados?"
+    },
+    {
+      "title": "Tratamento da disfunção erétil: escolher com segurança e explicar a falha terapêutica"
+    },
+    {
+      "title": "1. Antes de prescrever: é seguro retomar ou realizar atividade sexual?"
+    },
+    {
+      "title": "2. Inibidores da PDE5: mecanismo, uso e limites reais"
+    },
+    {
+      "title": "3. Falha de PDE5: diferenciar uso inadequado de refratariedade verdadeira"
+    },
+    {
+      "title": "4. Dispositivo de vácuo e terapia local: opções reais, não meros degraus de fracasso"
+    },
+    {
+      "title": "5. Prótese peniana: consentimento realmente informado"
+    },
+    {
+      "title": "Hipogonadismo, fertilidade, ejaculação e urgências de medicina sexual"
+    },
+    {
+      "title": "1. Quando a testosterona baixa é doença — e quando é apenas um número"
+    },
+    {
+      "title": "2. Fertilidade: por que testosterona exógena pode causar dano previsível"
+    },
+    {
+      "title": "3. Ejaculação precoce: diferenciar forma ao longo da vida e adquirida"
+    },
+    {
+      "title": "4. Doença de Peyronie: deformidade adquirida, função e preferência"
+    },
+    {
+      "title": "5. Priapismo: reconhecer a emergência antes de prescrever qualquer solução"
+    },
+    {
+      "title": "6. Pós-prostatectomia: função sexual não se resume à ereção"
+    },
+    {
+      "title": "Casos clínicos resolvidos"
+    },
+    {
+      "title": "Caso 1 — sildenafil e nitrato"
+    },
+    {
+      "title": "Caso 2 — disfunção erétil e diabetes ainda não reconhecido"
+    },
+    {
+      "title": "Caso 3 — ejaculação precoce adquirida e perda de rigidez"
+    },
+    {
+      "title": "Caso 4 — curvatura peniana progressiva com dor"
+    },
+    {
+      "title": "Referências e atualização"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 706
+    },
+    {
+      "id": "medicina-sexual-masculina-2026",
+      "title": "Saúde sexual masculina: abordagem integrada para o atendimento generalista",
+      "chars": 7160
+    },
+    {
+      "id": "avaliacao-de-medicina-sexual-2026",
+      "title": "Avaliação clínica estruturada da queixa sexual masculina",
+      "chars": 6112
+    },
+    {
+      "id": "tratamento-de-medicina-sexual-2026",
+      "title": "Tratamento da disfunção erétil: escolher com segurança e explicar a falha terapêutica",
+      "chars": 7848
+    },
+    {
+      "id": "eixo-hormonal-e-urgencias-masculinas-2026",
+      "title": "Hipogonadismo, fertilidade, ejaculação e urgências de medicina sexual",
+      "chars": 12167
+    },
+    {
+      "id": "consultas-masculinas-2026",
+      "title": "Casos clínicos resolvidos",
+      "chars": 1716
+    },
+    {
+      "id": "referencias",
+      "title": "Referências e atualização",
+      "chars": 1018
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://uroweb.org/guidelines/sexual-and-reproductive-health",
+    "https://uroweb.org/guidelines/sexual-and-reproductive-health/chapter/management-of-erectile-dysfunction",
+    "https://www.auanet.org/guidelines-and-quality/guidelines/erectile-dysfunction-(ed)-guideline",
+    "https://uroweb.org/guidelines/sexual-and-reproductive-health/chapter/male-hypogonadism",
+    "https://uroweb.org/guidelines/sexual-and-reproductive-health-2022/chapter/disorders-of-ejaculation",
+    "https://uroweb.org/guidelines/sexual-and-reproductive-health/chapter/penile-curvature",
+    "https://uroweb.org/guidelines/sexual-and-reproductive-health/chapter/priapism"
+  ],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

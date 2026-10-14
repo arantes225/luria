@@ -1,0 +1,103 @@
+[
+  {
+    "ids": [
+      97,
+      141
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      127,
+      132,
+      136
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      167,
+      169
+    ],
+    "decision": "Mesmo caderno candidato para 167 e 169; confirmar cobertura benigna e oncológica antes de habilitar ambos",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      159,
+      164
+    ],
+    "decision": "Mesmo caderno candidato; conservar unidades distintas para rastreamento, lesões precursoras e doença invasiva",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      3,
+      8
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      145,
+      149,
+      154
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      155,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      160,
+      218
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      67,
+      195,
+      196,
+      197
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      70,
+      165,
+      225
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  },
+  {
+    "ids": [
+      150,
+      183,
+      223
+    ],
+    "decision": "Não consolidar automaticamente. Produzir matriz de objetivos e capítulos; preservar diferenças de contexto e idade.",
+    "consolidated": false
+  }
+]

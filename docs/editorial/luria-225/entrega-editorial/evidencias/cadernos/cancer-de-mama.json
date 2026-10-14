@@ -1,0 +1,424 @@
+{
+  "slug": "cancer-de-mama",
+  "source": "index.html",
+  "chars": 61310,
+  "deficit": 0,
+  "status": "passou na triagem de extensão",
+  "note": "",
+  "path": "apostilas/cancer-de-mama/index.html",
+  "sha256": "b363e860009ede1d90f2c96277abcff2a815d9d90cf5311d31cdab433851cc83",
+  "html_sha256": "b363e860009ede1d90f2c96277abcff2a815d9d90cf5311d31cdab433851cc83",
+  "headings": [
+    {
+      "title": "Visão geral e mapa clínico"
+    },
+    {
+      "title": "Anatomia, histologia e progressão"
+    },
+    {
+      "title": "O que a lâmina histológica responde?"
+    },
+    {
+      "title": "Fatores de risco e prevenção"
+    },
+    {
+      "title": "Não modificáveis"
+    },
+    {
+      "title": "Modificáveis ou parcialmente modificáveis"
+    },
+    {
+      "title": "Quando suspeitar de predisposição hereditária?"
+    },
+    {
+      "title": "Patologias benignas da mama e lesões de alto risco"
+    },
+    {
+      "title": "1. Classificação que realmente importa"
+    },
+    {
+      "title": "2. Nódulo palpável: abordagem por idade e concordância"
+    },
+    {
+      "title": "3. Fibroadenoma"
+    },
+    {
+      "title": "4. Cistos: simples, complicados e císticos com componente sólido"
+    },
+    {
+      "title": "5. Alterações fibrocísticas e mastalgia"
+    },
+    {
+      "title": "6. Descarga papilar: fisiológica, galactorreia e descarga patológica"
+    },
+    {
+      "title": "7. Papiloma intraductal e ectasia ductal"
+    },
+    {
+      "title": "8. Mastite puerperal, abscesso e mastite não puerperal"
+    },
+    {
+      "title": "9. Galactocele e necrose gordurosa"
+    },
+    {
+      "title": "10. Tumor filoide: não chamar de “fibroadenoma grande”"
+    },
+    {
+      "title": "11. Lesões de alto risco: HDA, HLA, cicatriz radial e LCIS"
+    },
+    {
+      "title": "12. BI-RADS aplicado às lesões benignas"
+    },
+    {
+      "title": "13. Sinais de alarme: quando parar de chamar de “benigno”"
+    },
+    {
+      "title": "Manifestações clínicas e exame físico"
+    },
+    {
+      "title": "Três situações que não podem ser banalizadas"
+    },
+    {
+      "title": "Rastreamento no Brasil"
+    },
+    {
+      "title": "Investigação por imagem: qual exame pedir?"
+    },
+    {
+      "title": "O que reconhecer na imagem?"
+    },
+    {
+      "title": "BI-RADS: interpretação e conduta"
+    },
+    {
+      "title": "Biópsia e concordância tripla"
+    },
+    {
+      "title": "HER2 equívoco"
+    },
+    {
+      "title": "Concordância: quando um resultado benigno não encerra a investigação"
+    },
+    {
+      "title": "Concordância clínica, imagem e biópsia: como evitar atrasos diagnósticos"
+    },
+    {
+      "title": "Caso 1 — nódulo palpável com mamografia anterior negativa"
+    },
+    {
+      "title": "Caso 2 — microcalcificações suspeitas, mas ultrassom sem massa"
+    },
+    {
+      "title": "Caso 3 — BI-RADS 5 e biópsia “benigna”"
+    },
+    {
+      "title": "Caso 4 — saída de sangue espontânea pelo mamilo"
+    },
+    {
+      "title": "Caso 5 — nódulo persistente na gestação ou lactação"
+    },
+    {
+      "title": "Caso 6 — BI-RADS 3 sob seguimento e mudança do quadro"
+    },
+    {
+      "title": "Autoteste integrado — resposta orientada pela lógica"
+    },
+    {
+      "title": "Tipos histológicos e perfis moleculares"
+    },
+    {
+      "title": "Estadiamento TNM e avaliação sistêmica"
+    },
+    {
+      "title": "Tratamento: mapa de decisão"
+    },
+    {
+      "title": "Cirurgia conservadora, mastectomia e oncoplastia"
+    },
+    {
+      "title": "Cirurgia conservadora"
+    },
+    {
+      "title": "Mastectomia e técnicas poupadoras"
+    },
+    {
+      "title": "Oncoplastia e reconstrução mamária"
+    },
+    {
+      "title": "Margens"
+    },
+    {
+      "title": "Axila e linfonodo sentinela"
+    },
+    {
+      "title": "Tratamento sistêmico por perfil"
+    },
+    {
+      "title": "RH positivo / HER2 negativo"
+    },
+    {
+      "title": "HER2 positivo"
+    },
+    {
+      "title": "Triplo-negativo"
+    },
+    {
+      "title": "Neoadjuvância, adjuvância e resposta patológica"
+    },
+    {
+      "title": "Radioterapia"
+    },
+    {
+      "title": "Situações especiais"
+    },
+    {
+      "title": "Gestação"
+    },
+    {
+      "title": "Lactação"
+    },
+    {
+      "title": "Homens"
+    },
+    {
+      "title": "Idosas e pacientes frágeis"
+    },
+    {
+      "title": "Doença metastática"
+    },
+    {
+      "title": "Seguimento, reabilitação e cuidados paliativos"
+    },
+    {
+      "title": "O seguimento tem objetivos distintos"
+    },
+    {
+      "title": "Casos clínicos comentados"
+    },
+    {
+      "title": "Erros frequentes e revisão final"
+    },
+    {
+      "title": "Aprofundamento integrador — da lesão mamária à estratégia oncológica individualizada"
+    },
+    {
+      "title": "1. A unidade ductolobular terminal e a heterogeneidade das neoplasias"
+    },
+    {
+      "title": "2. O papel dos receptores hormonais e do HER2 na decisão terapêutica"
+    },
+    {
+      "title": "3. Concordância clínico-radiológica-patológica: o raciocínio para não perder um câncer"
+    },
+    {
+      "title": "4. Por que o rastreamento não substitui a investigação de sintomas"
+    },
+    {
+      "title": "5. Cirurgia conservadora, margens e radioterapia como tratamento coordenado"
+    },
+    {
+      "title": "6. Avaliação axilar e linfonodo sentinela: estadiar com menor morbidade"
+    },
+    {
+      "title": "7. Neoadjuvância e resposta patológica: por que tratar antes de operar?"
+    },
+    {
+      "title": "8. Caso integrador comentado: duas mulheres com nódulos semelhantes"
+    },
+    {
+      "title": "Referências e imagens para curadoria"
+    },
+    {
+      "title": "Aprofundamento etiológico e decisões clínicas"
+    },
+    {
+      "title": "Benigno, lesão de risco e malignidade"
+    },
+    {
+      "title": "Subtipos e tratamento"
+    },
+    {
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta"
+    },
+    {
+      "title": "Nódulo palpável: discordância tripla"
+    },
+    {
+      "title": "Patologias benignas que exigem decisões diferentes"
+    },
+    {
+      "title": "Da patologia ao tratamento oncológico"
+    },
+    {
+      "title": "Rastreamento e risco familiar"
+    },
+    {
+      "title": "Raciocínio por entidade clínica"
+    },
+    {
+      "title": "Tríplice concordância"
+    },
+    {
+      "title": "Lesões benignas e alto risco"
+    },
+    {
+      "title": "Subtipos e tratamento"
+    }
+  ],
+  "sections": [
+    {
+      "id": "chapter-1",
+      "title": "Visão geral e mapa clínico",
+      "chars": 1302
+    },
+    {
+      "id": "chapter-2",
+      "title": "Anatomia, histologia e progressão",
+      "chars": 1047
+    },
+    {
+      "id": "chapter-3",
+      "title": "Fatores de risco e prevenção",
+      "chars": 1166
+    },
+    {
+      "id": "chapter-4",
+      "title": "Patologias benignas da mama e lesões de alto risco",
+      "chars": 10803
+    },
+    {
+      "id": "chapter-5",
+      "title": "Manifestações clínicas e exame físico",
+      "chars": 1368
+    },
+    {
+      "id": "chapter-6",
+      "title": "Rastreamento no Brasil",
+      "chars": 2281
+    },
+    {
+      "id": "chapter-7",
+      "title": "Investigação por imagem: qual exame pedir?",
+      "chars": 1554
+    },
+    {
+      "id": "chapter-8",
+      "title": "BI-RADS: interpretação e conduta",
+      "chars": 908
+    },
+    {
+      "id": "chapter-9",
+      "title": "Biópsia e concordância tripla",
+      "chars": 2152
+    },
+    {
+      "id": "capitulo-concordancia-mamaria-2026",
+      "title": "Concordância clínica, imagem e biópsia: como evitar atrasos diagnósticos",
+      "chars": 6841
+    },
+    {
+      "id": "chapter-10",
+      "title": "Tipos histológicos e perfis moleculares",
+      "chars": 1719
+    },
+    {
+      "id": "chapter-11",
+      "title": "Estadiamento TNM e avaliação sistêmica",
+      "chars": 924
+    },
+    {
+      "id": "chapter-12",
+      "title": "Tratamento: mapa de decisão",
+      "chars": 675
+    },
+    {
+      "id": "chapter-13",
+      "title": "Cirurgia conservadora, mastectomia e oncoplastia",
+      "chars": 1608
+    },
+    {
+      "id": "chapter-14",
+      "title": "Axila e linfonodo sentinela",
+      "chars": 1106
+    },
+    {
+      "id": "chapter-15",
+      "title": "Tratamento sistêmico por perfil",
+      "chars": 1264
+    },
+    {
+      "id": "chapter-16",
+      "title": "Neoadjuvância, adjuvância e resposta patológica",
+      "chars": 856
+    },
+    {
+      "id": "chapter-17",
+      "title": "Situações especiais",
+      "chars": 1092
+    },
+    {
+      "id": "chapter-18",
+      "title": "Seguimento, reabilitação e cuidados paliativos",
+      "chars": 1290
+    },
+    {
+      "id": "chapter-19",
+      "title": "Casos clínicos comentados",
+      "chars": 1076
+    },
+    {
+      "id": "chapter-20",
+      "title": "Erros frequentes e revisão final",
+      "chars": 807
+    },
+    {
+      "id": "capitulo-integracao-mama-40k",
+      "title": "Aprofundamento integrador — da lesão mamária à estratégia oncológica individualizada",
+      "chars": 14590
+    },
+    {
+      "id": "chapter-21",
+      "title": "Referências e imagens para curadoria",
+      "chars": 880
+    },
+    {
+      "id": "editorial-depth-cancer-de-mama",
+      "title": "Aprofundamento etiológico e decisões clínicas",
+      "chars": 636
+    },
+    {
+      "id": "luria-livro-etiologias-cancer-de-mama",
+      "title": "Capítulos clínicos aprofundados — etiologia, diagnóstico e conduta",
+      "chars": 2418
+    },
+    {
+      "id": "capitulos-livro-cancer-de-mama",
+      "title": "Raciocínio por entidade clínica",
+      "chars": 919
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/deteccao-precoce",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf",
+    "https://cbr.org.br/wp-content/uploads/2025/01/Nota-tecnica-da-Comissao-Nacional-de-Mamografia-sobre-o-rastreamento-do-Cancer-de-Mama-no-Brasil.pdf",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2025/nota-tecnica-no-626-2025-cgcan-decan-saes-ms.pdf/@@download/file",
+    "https://commons.wikimedia.org/wiki/File:Mammogram_microcalcifications_in_carcinoma_in_situ,_MLO,_details.png",
+    "https://creativecommons.org/licenses/by-sa/3.0/",
+    "https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude",
+    "https://acsearch.acr.org/docs/69495/Narrative",
+    "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+    "https://commons.wikimedia.org/wiki/File:Histopathology_of_invasive_ductal_carcinoma_of_the_breast.jpg",
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://www.gov.br/saude/pt-br/assuntos/pcdt/c/cancer-de-mama/view",
+    "https://linhasdecuidado.saude.gov.br/portal/cancer-de-mama/unidade-de-atencao-primaria/rastreamento-diagnostico/exame-clinico-mamas/",
+    "https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-de-mama/acoes/tratamento/",
+    "https://commons.wikimedia.org/wiki/Category:Mammography",
+    "https://www.mdpi.com/2075-4418/15/13/1687"
+  ],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

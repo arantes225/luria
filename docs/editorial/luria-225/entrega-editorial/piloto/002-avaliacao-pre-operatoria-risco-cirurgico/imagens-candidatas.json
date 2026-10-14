@@ -1,0 +1,54 @@
+{
+  "topic_id": 2,
+  "status": "planejamento_sem_candidatas_verificadas",
+  "images": [],
+  "visual_needs": [
+    {
+      "key": "avaliacao-pre-operatoria-risco-cirurgico-planejamento-1",
+      "description": "Fluxo original de avaliação cardiovascular",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "avaliacao-pre-operatoria-risco-cirurgico-planejamento-2",
+      "description": "Tabela de exames seletivos e consequência do resultado",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "avaliacao-pre-operatoria-risco-cirurgico-planejamento-3",
+      "description": "Mapa de decisões de medicamentos por risco",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "avaliacao-pre-operatoria-risco-cirurgico-planejamento-4",
+      "description": "Esquema de reserva fisiológica",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    }
+  ],
+  "admin_importable": false,
+  "notes": [
+    "Necessidades não são candidatas prontas para o Admin.",
+    "Buscar recursos aprovados antes de solicitar imagens novas.",
+    "Não inserir clínica/exames sem licença, proveniência e aprovação.",
+    "Aplicar teto operacional do fluxo de lote: 110 KiB após aprovação; resolver divergência histórica com outros limites antes de otimizar."
+  ]
+}

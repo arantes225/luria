@@ -1,0 +1,54 @@
+{
+  "topic_id": 1,
+  "status": "planejamento_sem_candidatas_verificadas",
+  "images": [],
+  "visual_needs": [
+    {
+      "key": "sindromes-coronarianas-agudas-planejamento-1",
+      "description": "Territórios coronarianos e derivações, esquema original",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "sindromes-coronarianas-agudas-planejamento-2",
+      "description": "ECG real com licença explícita para os padrões ensinados",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "sindromes-coronarianas-agudas-planejamento-3",
+      "description": "Curva temporal didática de biomarcadores",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    },
+    {
+      "key": "sindromes-coronarianas-agudas-planejamento-4",
+      "description": "Algoritmo original de dor torácica/reperfusão",
+      "target_section": null,
+      "source_url": null,
+      "license": null,
+      "caption": null,
+      "observation_note": null,
+      "approval": "não solicitado"
+    }
+  ],
+  "admin_importable": false,
+  "notes": [
+    "Necessidades não são candidatas prontas para o Admin.",
+    "Buscar recursos aprovados antes de solicitar imagens novas.",
+    "Não inserir clínica/exames sem licença, proveniência e aprovação.",
+    "Aplicar teto operacional do fluxo de lote: 110 KiB após aprovação; resolver divergência histórica com outros limites antes de otimizar."
+  ]
+}

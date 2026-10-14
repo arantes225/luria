@@ -1,0 +1,40 @@
+{
+  "topic_id": 1,
+  "status": "pesquisa_pendente",
+  "references": [],
+  "research_targets": [
+    {
+      "label": "Diretrizes SBC pertinentes, edição vigente",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Diretriz ESC para síndromes coronarianas, versão vigente",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Diretriz ACC/AHA para síndromes coronarianas, versão vigente",
+      "url": null,
+      "opened": false,
+      "verified": false
+    },
+    {
+      "label": "Definição universal de infarto e documentos de biomarcadores",
+      "url": null,
+      "opened": false,
+      "verified": false
+    }
+  ],
+  "verification_requirements": [
+    "título, autoria, edição e data",
+    "URL real ou identificador bibliográfico",
+    "trecho que sustenta recomendação",
+    "vigência e divergências",
+    "data de consulta",
+    "dose/via/duração e situações especiais quando pertinentes"
+  ],
+  "invented_references": false
+}

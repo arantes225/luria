@@ -1,0 +1,392 @@
+{
+  "slug": "amniorrexe-prematura",
+  "source": "index.html",
+  "chars": 68032,
+  "deficit": 0,
+  "status": "passou na triagem de extensão",
+  "note": "",
+  "path": "apostilas/amniorrexe-prematura/index.html",
+  "sha256": "a5830443718eac22cadbdaab44e74de8248f5e83907cc70c6fe6ada48455e9d1",
+  "html_sha256": "a5830443718eac22cadbdaab44e74de8248f5e83907cc70c6fe6ada48455e9d1",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "O que você precisa lembrar"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "1. Confirmar"
+    },
+    {
+      "title": "2. Procurar perigo"
+    },
+    {
+      "title": "3. Se estável e pré-termo"
+    },
+    {
+      "title": "4. Separar conceitos"
+    },
+    {
+      "title": "1. Conceitos e classificação"
+    },
+    {
+      "title": "Dois relógios distintos: semanas de gestação e tempo desde a rotura"
+    },
+    {
+      "title": "Por que o termo “prematura” pode confundir a prova?"
+    },
+    {
+      "title": "2. Fisiopatologia e fatores de risco"
+    },
+    {
+      "title": "Fatores associados"
+    },
+    {
+      "title": "Como uma membrana resistente se torna vulnerável"
+    },
+    {
+      "title": "Qual a consequência da perda de líquido sobre o pulmão fetal?"
+    },
+    {
+      "title": "Fatores de risco não são testes diagnósticos"
+    },
+    {
+      "title": "3. Diagnóstico: passo a passo"
+    },
+    {
+      "title": "História clínica"
+    },
+    {
+      "title": "Exame especular estéril"
+    },
+    {
+      "title": "Evite toque vaginal digital de rotina"
+    },
+    {
+      "title": "Teste de cristalização"
+    },
+    {
+      "title": "Teste de pH"
+    },
+    {
+      "title": "Testes imunocromatográficos"
+    },
+    {
+      "title": "Ultrassonografia"
+    },
+    {
+      "title": "Amostra, momento e contaminação: por que os testes falham"
+    },
+    {
+      "title": "Exame especular, em sequência clínica segura"
+    },
+    {
+      "title": "Três histórias em que o diagnóstico fica incerto"
+    },
+    {
+      "title": "4. Diagnósticos diferenciais"
+    },
+    {
+      "title": "Corrimento, urina, sangue e líquido amniótico não são sinônimos"
+    },
+    {
+      "title": "5. Avaliação após confirmar a rotura"
+    },
+    {
+      "title": "O que constitui estabilidade para uma conduta expectante?"
+    },
+    {
+      "title": "6. Conduta por idade gestacional"
+    },
+    {
+      "title": "Fluxo de decisão LURIA — primeiro segurança, depois idade gestacional"
+    },
+    {
+      "title": "Por que 34 semanas não é uma resposta universal?"
+    },
+    {
+      "title": "Decisão em camadas: primeiro contraindicações, depois semanas"
+    },
+    {
+      "title": "O que a escolha entre 34 e 37 semanas realmente envolve?"
+    },
+    {
+      "title": "Condições logísticas fazem parte da medicina"
+    },
+    {
+      "title": "7. Antibióticos de latência"
+    },
+    {
+      "title": "Esquema clássico de 7 dias"
+    },
+    {
+      "title": "Não confunda objetivos"
+    },
+    {
+      "title": "Três objetivos antibióticos que não podem ser misturados"
+    },
+    {
+      "title": "De onde vem o regime ampicilina–amoxicilina com macrolídeo?"
+    },
+    {
+      "title": "Como medir benefício sem perseguir dias a qualquer preço"
+    },
+    {
+      "title": "8. Corticoterapia antenatal"
+    },
+    {
+      "title": "O que o corticoide muda no feto — e o que ele não pode justificar"
+    },
+    {
+      "title": "Repetir o curso não é uma rotina de calendário"
+    },
+    {
+      "title": "9. Sulfato de magnésio para neuroproteção"
+    },
+    {
+      "title": "Por que neuroproteção e tocólise não são a mesma conduta"
+    },
+    {
+      "title": "Quando a indicação deixa de valer"
+    },
+    {
+      "title": "10. Tocólise"
+    },
+    {
+      "title": "Qual é a única pergunta que justifica considerar tocólise?"
+    },
+    {
+      "title": "11. Estreptococo do grupo B"
+    },
+    {
+      "title": "Decidir profilaxia de EGB sem confundir cultura, rotura e antibióticos prévios"
+    },
+    {
+      "title": "12. Infecção intra-amniótica / corioamnionite"
+    },
+    {
+      "title": "Sinais de alerta"
+    },
+    {
+      "title": "Suspeita forte de infecção = antibiótico terapêutico + resolução"
+    },
+    {
+      "title": "O dado que muda a conduta expectante"
+    },
+    {
+      "title": "Os critérios de febre ajudam, mas uma paciente afebril também pode estar grave"
+    },
+    {
+      "title": "Por que antibiótico sem parto pode não controlar a fonte?"
+    },
+    {
+      "title": "Como conversar com a neonatologia"
+    },
+    {
+      "title": "13. Quando interromper independentemente da idade gestacional"
+    },
+    {
+      "title": "Um checklist de segurança que precede qualquer cálculo de latência"
+    },
+    {
+      "title": "14. Via de parto e indução"
+    },
+    {
+      "title": "Rotura, indução e cesárea respondem a perguntas diferentes"
+    },
+    {
+      "title": "15. RPM pré-viável e periviável"
+    },
+    {
+      "title": "O aconselhamento deve explicar riscos distintos, não apenas taxas de sobrevida"
+    },
+    {
+      "title": "Antibióticos e maturação fetal antes de 24 semanas não seguem a mesma regra"
+    },
+    {
+      "title": "Cerclagem, amnioinfusão e tentativas de selar membranas"
+    },
+    {
+      "title": "16. Complicações"
+    },
+    {
+      "title": "Complicações maternas: reconhecer mecanismo e tempo de evolução"
+    },
+    {
+      "title": "Complicações fetais e neonatais: mecanismos que se somam"
+    },
+    {
+      "title": "Por que uma cardiotocografia normal hoje não resolve a vigilância de amanhã?"
+    },
+    {
+      "title": "Após a alta ou o parto: o tema ainda não terminou"
+    },
+    {
+      "title": "17. Casos integradores"
+    },
+    {
+      "title": "Casos comentados de decisão clínica — além da idade gestacional"
+    },
+    {
+      "title": "Caso 5 — Perda líquida, pH elevado e vaginose: o teste decide?"
+    },
+    {
+      "title": "Caso 6 — Rotura há cinco dias e PCR elevada: interromper imediatamente?"
+    },
+    {
+      "title": "Caso 7 — 26 semanas, antibiótico de latência concluído e trabalho de parto"
+    },
+    {
+      "title": "Caso 8 — 31 semanas, afebril, mas dor uterina e secreção purulenta"
+    },
+    {
+      "title": "Caso 9 — 35 semanas, estabilidade e alternativas legítimas de conduta"
+    },
+    {
+      "title": "Caso 10 — Rotura periviável com oligoâmnio importante"
+    },
+    {
+      "title": "Caso 11 — 29 semanas com desacelerações variáveis recorrentes"
+    },
+    {
+      "title": "Caso 12 — RPM a termo, EGB desconhecido e 19 horas de bolsa rota"
+    },
+    {
+      "title": "Fixação de erros de prova: responda sem memorizar uma frase isolada"
+    },
+    {
+      "title": "18. Questões de fixação"
+    },
+    {
+      "title": "Referências prioritárias"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo",
+      "title": "Em 30 segundos",
+      "chars": 1459
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 538
+    },
+    {
+      "id": "conceitos",
+      "title": "1. Conceitos e classificação",
+      "chars": 3301
+    },
+    {
+      "id": "fisiopatologia",
+      "title": "2. Fisiopatologia e fatores de risco",
+      "chars": 4096
+    },
+    {
+      "id": "diagnostico",
+      "title": "3. Diagnóstico: passo a passo",
+      "chars": 5877
+    },
+    {
+      "id": "diferenciais",
+      "title": "4. Diagnósticos diferenciais",
+      "chars": 2264
+    },
+    {
+      "id": "avaliacao",
+      "title": "5. Avaliação após confirmar a rotura",
+      "chars": 3337
+    },
+    {
+      "id": "conduta",
+      "title": "6. Conduta por idade gestacional",
+      "chars": 6737
+    },
+    {
+      "id": "latencia",
+      "title": "7. Antibióticos de latência",
+      "chars": 4200
+    },
+    {
+      "id": "corticoide",
+      "title": "8. Corticoterapia antenatal",
+      "chars": 3190
+    },
+    {
+      "id": "magnesio",
+      "title": "9. Sulfato de magnésio para neuroproteção",
+      "chars": 3089
+    },
+    {
+      "id": "tocolise",
+      "title": "10. Tocólise",
+      "chars": 2030
+    },
+    {
+      "id": "egb",
+      "title": "11. Estreptococo do grupo B",
+      "chars": 3254
+    },
+    {
+      "id": "infeccao",
+      "title": "12. Infecção intra-amniótica / corioamnionite",
+      "chars": 5111
+    },
+    {
+      "id": "interromper",
+      "title": "13. Quando interromper independentemente da idade gestacional",
+      "chars": 1600
+    },
+    {
+      "id": "parto",
+      "title": "14. Via de parto e indução",
+      "chars": 1829
+    },
+    {
+      "id": "previavel",
+      "title": "15. RPM pré-viável e periviável",
+      "chars": 4164
+    },
+    {
+      "id": "complicacoes",
+      "title": "16. Complicações",
+      "chars": 4001
+    },
+    {
+      "id": "casos",
+      "title": "17. Casos integradores",
+      "chars": 7981
+    },
+    {
+      "id": "questoes",
+      "title": "18. Questões de fixação",
+      "chars": 1413
+    },
+    {
+      "id": "referencias",
+      "title": "Referências prioritárias",
+      "chars": 1566
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://www.febrasgo.org.br/images/pec/CNE_pdfs/fps2024/Protocolos%20cole%C3%A7%C3%A3o%202024-2025/n18%20-%20O%20-%20Rotura%20prematura%20de%20membranas%20ovulares.pdf",
+    "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/03/prelabor-rupture-of-membranes",
+    "https://www.rcog.org.uk/guidance/browse-all-guidance/green-top-guidelines/care-of-women-presenting-with-suspected-preterm-prelabour-rupture-of-membranes-from-24plus0-weeks-of-gestation-green-top-guideline-no-73/",
+    "https://www.febrasgo.org.br/wp-content/uploads/2026/05/Ruptura-prematura-de-membranas-ovulares.pdf",
+    "https://www.nice.org.uk/guidance/ng25/chapter/Recommendations",
+    "https://pubmed.ncbi.nlm.nih.gov/39025459/",
+    "https://publications.smfm.org/publications/555-acog-clinical-practice-update-update-on-criteria-for/",
+    "https://www.acog.org/clinical/clinical-guidance/practice-advisory/articles/2025/05/increased-risk-of-maternal-morbidity-associated-with-previable-and-periviable-preterm-prelabor-rupture-of-membranes",
+    "https://www.cochrane.org/evidence/CD001058_antibiotics-preterm-rupture-membranes"
+  ],
+  "listed_in_local_catalog_source": false,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}

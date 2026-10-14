@@ -1,0 +1,440 @@
+{
+  "slug": "planejamento-reprodutivo-contracepcao",
+  "source": "index.html",
+  "chars": 39065,
+  "deficit": 20935,
+  "status": "precisa expandir",
+  "note": "",
+  "path": "apostilas/planejamento-reprodutivo-contracepcao/index.html",
+  "sha256": "6f4f846d4d0648cf5a7bb628f2364aee43011b3865419639b7a4af650d2a66cf",
+  "html_sha256": "6f4f846d4d0648cf5a7bb628f2364aee43011b3865419639b7a4af650d2a66cf",
+  "headings": [
+    {
+      "title": "Em 30 segundos"
+    },
+    {
+      "title": "Mapa mental"
+    },
+    {
+      "title": "1. Princípios do planejamento reprodutivo"
+    },
+    {
+      "title": "2. Eficácia, uso típico e mecanismo"
+    },
+    {
+      "title": "3. Critérios Médicos de Elegibilidade — OMS 2025"
+    },
+    {
+      "title": "4. Pílula anticoncepcional combinada"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "5. Adesivo contraceptivo combinado"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "6. Anel vaginal combinado"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "7. Anticoncepcional injetável combinado"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "8. Pílula apenas de progestagênio (minipílula)"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "9. Injetável trimestral de medroxiprogesterona (DMPA)"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "10. Implante subdérmico de etonogestrel"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "11. DIU de cobre: dispositivo, ação e acompanhamento"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "13. Preservativos externo e interno"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "14. Diafragma e espermicidas"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "15. Métodos comportamentais e reconhecimento da fertilidade"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "16. Métodos definitivos: laqueadura e vasectomia"
+    },
+    {
+      "title": "O que é e como funciona"
+    },
+    {
+      "title": "Uso real, vantagens, limitações e segurança"
+    },
+    {
+      "title": "7. Contracepção de emergência"
+    },
+    {
+      "title": "8. Início rápido, troca e razoável certeza de não gravidez"
+    },
+    {
+      "title": "Início rápido e proteção adicional: transforme a tabela em decisão"
+    },
+    {
+      "title": "9. Puerpério, lactação e pós-aborto"
+    },
+    {
+      "title": "10. Situações especiais"
+    },
+    {
+      "title": "Adolescência"
+    },
+    {
+      "title": "Obesidade"
+    },
+    {
+      "title": "Enxaqueca"
+    },
+    {
+      "title": "Epilepsia e indutores enzimáticos"
+    },
+    {
+      "title": "Câncer de mama"
+    },
+    {
+      "title": "Endometriose/adenomiose/sangramento intenso"
+    },
+    {
+      "title": "11. Esterilização voluntária no Brasil"
+    },
+    {
+      "title": "Vasectomia"
+    },
+    {
+      "title": "Laqueadura"
+    },
+    {
+      "title": "12. Falhas, sangramento, efeitos adversos e interações"
+    },
+    {
+      "title": "Sangramento irregular"
+    },
+    {
+      "title": "Dor com DIU"
+    },
+    {
+      "title": "Interações"
+    },
+    {
+      "title": "ACHES"
+    },
+    {
+      "title": "Como corrigir a repetição genérica"
+    },
+    {
+      "title": "15. Decisões integradas: emergência, início, DIU e segurança"
+    },
+    {
+      "title": "15.1 Ulipristal versus levonorgestrel: o anticoncepcional do dia seguinte muda o início do método regular"
+    },
+    {
+      "title": "15.2 Um DIU na mesma consulta com teste para IST: quando é seguro?"
+    },
+    {
+      "title": "15.3 Enxaqueca com aura e desejo de amenorreia"
+    },
+    {
+      "title": "15.4 Pós-parto imediato: momento do DIU e risco de expulsão"
+    },
+    {
+      "title": "15.5 Pedido de laqueadura durante o pré-natal"
+    },
+    {
+      "title": "15.6 Método regular esquecido ou iniciando no meio do ciclo"
+    },
+    {
+      "title": "13. Casos clínicos integradores"
+    },
+    {
+      "title": "Caso 1 — enxaqueca com aura"
+    },
+    {
+      "title": "Caso 2 — puérpera lactante"
+    },
+    {
+      "title": "Caso 3 — relação desprotegida há 96 horas"
+    },
+    {
+      "title": "Caso 4 — sangramento no implante"
+    },
+    {
+      "title": "Caso 5 — esterilização no parto"
+    },
+    {
+      "title": "14. Revisão de alto rendimento"
+    },
+    {
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta"
+    },
+    {
+      "title": "Métodos combinados: segurança antes da prescrição"
+    },
+    {
+      "title": "DIU de cobre, SIU-LNG e implante"
+    },
+    {
+      "title": "Emergência, puerpério e esterilização"
+    },
+    {
+      "title": "Referências"
+    },
+    {
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta"
+    },
+    {
+      "title": "Elegibilidade não é eficácia: como decidir método"
+    },
+    {
+      "title": "Contracepção de emergência: a sequência muda a escolha"
+    },
+    {
+      "title": "Pós-parto e LARC: aconselhamento realista"
+    }
+  ],
+  "sections": [
+    {
+      "id": "resumo-prova",
+      "title": "Em 30 segundos",
+      "chars": 1700
+    },
+    {
+      "id": "mapa-mental",
+      "title": "Mapa mental",
+      "chars": 649
+    },
+    {
+      "id": "principios",
+      "title": "1. Princípios do planejamento reprodutivo",
+      "chars": 936
+    },
+    {
+      "id": "eficacia",
+      "title": "2. Eficácia, uso típico e mecanismo",
+      "chars": 1489
+    },
+    {
+      "id": "mec",
+      "title": "3. Critérios Médicos de Elegibilidade — OMS 2025",
+      "chars": 1172
+    },
+    {
+      "id": "combinados",
+      "title": "4. Pílula anticoncepcional combinada",
+      "chars": 1238
+    },
+    {
+      "id": "adesivo",
+      "title": "5. Adesivo contraceptivo combinado",
+      "chars": 902
+    },
+    {
+      "id": "anel",
+      "title": "6. Anel vaginal combinado",
+      "chars": 751
+    },
+    {
+      "id": "injetavel-combinado",
+      "title": "7. Anticoncepcional injetável combinado",
+      "chars": 734
+    },
+    {
+      "id": "pop",
+      "title": "8. Pílula apenas de progestagênio (minipílula)",
+      "chars": 823
+    },
+    {
+      "id": "dmpa",
+      "title": "9. Injetável trimestral de medroxiprogesterona (DMPA)",
+      "chars": 813
+    },
+    {
+      "id": "implante",
+      "title": "10. Implante subdérmico de etonogestrel",
+      "chars": 1188
+    },
+    {
+      "id": "diu-cobre",
+      "title": "11. DIU de cobre: dispositivo, ação e acompanhamento",
+      "chars": 1254
+    },
+    {
+      "id": "siu-lng",
+      "title": "12. SIU com levonorgestrel: diferenças em relação ao DIU de cobre",
+      "chars": 1259
+    },
+    {
+      "id": "preservativos",
+      "title": "13. Preservativos externo e interno",
+      "chars": 1156
+    },
+    {
+      "id": "barreira",
+      "title": "14. Diafragma e espermicidas",
+      "chars": 965
+    },
+    {
+      "id": "comportamentais",
+      "title": "15. Métodos comportamentais e reconhecimento da fertilidade",
+      "chars": 1029
+    },
+    {
+      "id": "definitivos",
+      "title": "16. Métodos definitivos: laqueadura e vasectomia",
+      "chars": 841
+    },
+    {
+      "id": "emergencia",
+      "title": "7. Contracepção de emergência",
+      "chars": 958
+    },
+    {
+      "id": "inicio",
+      "title": "8. Início rápido, troca e razoável certeza de não gravidez",
+      "chars": 1641
+    },
+    {
+      "id": "puerperio",
+      "title": "9. Puerpério, lactação e pós-aborto",
+      "chars": 732
+    },
+    {
+      "id": "situacoes",
+      "title": "10. Situações especiais",
+      "chars": 1016
+    },
+    {
+      "id": "esterilizacao",
+      "title": "11. Esterilização voluntária no Brasil",
+      "chars": 989
+    },
+    {
+      "id": "falhas",
+      "title": "12. Falhas, sangramento, efeitos adversos e interações",
+      "chars": 1430
+    },
+    {
+      "id": "decisoes-avancadas-contracepcao-2026",
+      "title": "15. Decisões integradas: emergência, início, DIU e segurança",
+      "chars": 9459
+    },
+    {
+      "id": "casos",
+      "title": "13. Casos clínicos integradores",
+      "chars": 1270
+    },
+    {
+      "id": "revisao",
+      "title": "14. Revisão de alto rendimento",
+      "chars": 1328
+    },
+    {
+      "id": "editorial-depth-planejamento-reprodutivo-contracepcao",
+      "title": "Aprofundamento: mecanismos, diferenciais e conduta",
+      "chars": 1157
+    },
+    {
+      "id": "referencias",
+      "title": "Referências",
+      "chars": 871
+    },
+    {
+      "id": "clinica-etiologia-2026-planejamento-reprodutivo-contracepcao",
+      "title": "Raciocínio clínico aprofundado: situações que mudam a conduta",
+      "chars": 1858
+    }
+  ],
+  "structural_warnings": [],
+  "reference_links": [
+    "https://www.cdc.gov/contraception/hcp/usspr/when-contraceptive-methods.html",
+    "https://www.who.int/publications/i/item/9789240115583",
+    "https://www.who.int/publications/i/item/9789240115606",
+    "https://www.cdc.gov/contraception/hcp/usspr/emergency-contraception.html",
+    "https://www.cdc.gov/contraception/hcp/usspr/intrauterine-contraception.html",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2023/sei_ms-0033574409-nota-tecnica-laqueadura-vasectomia.pdf"
+  ],
+  "listed_in_local_catalog_source": true,
+  "publication_state": "não consultado no banco/site",
+  "bibliography": "URLs extraídas; conteúdo, vigência e doses não verificados",
+  "images_status": "aprovações atuais não consultadas; conferir Admin e auditoria histórica",
+  "clinical_validation": "pendente"
+}
