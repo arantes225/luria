@@ -80,6 +80,16 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - **Critério de correção:** não copiar esquemas sem licença nem substituir ultrassonografia real por desenho. Manter explicação didática sobre variabilidade da fase folicular, fase lútea, feedback de estradiol e progesterona e limitações dos marcadores de ovulação.
 - **Estado:** **EM REVISÃO — NÃO CERTIFICADA**. Pendentes validação visual desktop/PWA do gráfico e demais recursos, auditoria completa de profundidade e referências, confirmação de ≥60 mil caracteres pedagógicos úteis, verificação de navegação e aplicação de questões independentes.
 
+## 2026-10-13 — Climatério e menopausa
+
+- **Apostila LURIA:** `apostilas/climaterio-menopausa/content.json` e `index.html`.
+- **Benchmark efetivamente aberto no Drive:** `Menopausa e Climatério.pdf`, resumo esquemático com aprox. 1,6 mil caracteres, contendo diagnóstico clínico, amenorreia de 12 meses, vasomotores, terapias oral/transdérmica/vaginal, contraindicações e benefícios/riscos. A capa textual cita Maysa Mismetti, **sem comprovação de procedência Estratégia MED**. É comparação de cobertura parcial, não tratado equivalente.
+- **Achado editorial:** a LURIA já aborda TH sistêmica, proteção endometrial, sintomas geniturinários, tratamentos não hormonais e IOP, mas o trecho de sangramento pós-menopausa não explicitava a **atualização ACOG de 2026**, que mudou a abordagem usual centrada na ultrassonografia isolada.
+- **Correção realizada:** seção `sangramento-pos-menopausa-2026`, com navegação, cinco situações clínicas, distinção de primeiro episódio de baixo risco e endométrio integralmente visualizado ≤4 mm versus casos de risco/recorrência, amostragem endometrial, exames incompletos e sangramento durante TH. O parágrafo principal foi corrigido para separar a ACOG 2026 do fluxo brasileiro/local.
+- **Fontes confrontadas:** ACOG Clinical Practice Update 2026, DOI `10.1097/AOG.0000000000006275`; NICE NG23 atualizado em 2026; BMS guideline sobre sangramento sob TH, 2024. ACOG, em 2026, recomenda USG transvaginal **e** amostragem endometrial na avaliação inicial da maioria, reservando uso isolado de USG a subgrupo selecionado de primeiro episódio, baixo risco, espessura ≤4 mm claramente visualizada e retorno seguro.
+- **Imagens:** manter recurso original KNDy e qualquer imagem clínica já aprovada; não usar imagem sem licença em temas clínicos. Esta revisão não removeu nem substituiu fotografias reais.
+- **Estado:** **EM REVISÃO — NÃO CERTIFICADA PELO PROMPT MAGNO**. Pendentes conferência integral, auditoria visual desktop/PWA, identificação individual de fontes e qualidade das demais ilustrações, ≥60 mil caracteres úteis e teste pedagógico final.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
