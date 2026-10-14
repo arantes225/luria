@@ -1,6 +1,6 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
 const {chromium}=require(process.env.ALEX_PLAYWRIGHT_MODULE||'playwright');
-const root=path.resolve(__dirname,'..');
+const root=path.resolve(__dirname,'..',process.env.ALEX_SITE_ROOT||'.');
 const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript','.css':'text/css','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.woff2':'font/woff2'};
 (async()=>{
  const browser=await chromium.launch({headless:true,channel:'chrome'});
@@ -20,7 +20,7 @@ const types={'.html':'text/html','.mjs':'text/javascript','.js':'text/javascript
   await page.addInitScript(()=>document.addEventListener('securitypolicyviolation',event=>console.error('CSP: '+event.blockedURI)));
   page.on('console',msg=>{if(msg.text().startsWith('CSP:'))violations.push(msg.text());});
   await page.goto('http://127.0.0.1:4173/professor-alex/');
-  await page.evaluate(()=>document.body.classList.add('app-ready'));
+  await page.evaluate(()=>{document.body.classList.add('app-ready');document.body.dataset.uiStartup='ready';});
   await page.waitForFunction(()=>!!document.getElementById('alex-mascot').renderer);
   assert(await page.locator('#alex-mascot').isVisible());
   assert.equal(await page.evaluate(()=>document.getElementById('alex-mascot')._gesture?.name),'wake');
