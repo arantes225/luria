@@ -17,13 +17,13 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #studyrats-card .studyrats-summary-item {padding:8px;border:1px solid var(--color-border);border-radius:9px;background:var(--color-surface-elevated);}
  #studyrats-card .studyrats-summary-item strong {font-size:12px!important;}
  #studyrats-card .sr-circuit {padding:16px;background:color-mix(in srgb,var(--sf-teal) 7%,var(--color-surface));border-radius:0;}
- #studyrats-card .sr-circuit-heading {font-size:10px;letter-spacing:.06em;color:var(--sf-teal);display:flex;justify-content:space-between;gap:8px;margin-bottom:14px;}
+ #studyrats-card .sr-circuit-heading {font-size:12px;letter-spacing:.04em;color:var(--sf-teal);display:flex;justify-content:space-between;gap:8px;margin-bottom:14px;}
  #studyrats-card .sr-lanes {gap:10px;}
  #studyrats-card .sr-lane {grid-template-columns:135px minmax(0,1fr);border:1px solid color-mix(in srgb,var(--sf-violet) 20%,var(--color-border));border-left:3px solid var(--sf-violet);border-radius:12px;min-height:104px;background:color-mix(in srgb,var(--color-surface) 90%,transparent);}
  #studyrats-card .sr-lane:nth-child(even) {border-left-color:var(--sf-teal);}
  #studyrats-card .sr-person {padding:10px;gap:8px;}
  #studyrats-card .sr-person-copy strong {font-size:13px!important;line-height:1.4;overflow-wrap:anywhere;}
- #studyrats-card .sr-person-copy small {font-size:11px!important;line-height:1.5;}
+ #studyrats-card .sr-person-copy small {font-size:12px!important;line-height:1.5;}
  #studyrats-card .sr-rank {border-radius:9px;background:color-mix(in srgb,var(--sf-violet) 12%,var(--color-surface));color:var(--sf-violet);}
  #studyrats-card .sr-rank.is-first {background:color-mix(in srgb,var(--sf-warm) 15%,var(--color-surface));color:var(--sf-warm);}
  #studyrats-card .sr-road {height:104px;margin-left:50px;margin-right:60px;}
@@ -32,17 +32,17 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #studyrats-card .sr-center {stroke:var(--color-text-secondary);stroke-dasharray:5 13;opacity:.45;}
  #studyrats-card .sr-road::after {top:32px;height:40px;width:13px;right:-30px;opacity:.7;}
  #studyrats-card .sr-progress {background:var(--sf-teal);opacity:.3;top:49px;}
- #studyrats-card .sr-circuit-scale {font-size:10px;color:var(--color-text-secondary);padding-top:12px;}
+ #studyrats-card .sr-circuit-scale {font-size:12px;color:var(--color-text-secondary);padding-top:12px;}
  #studyrats-card .sr-standings {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:12px 16px;background:var(--color-surface);}
  .sr-standing {display:flex;align-items:center;gap:8px;min-width:0;padding:10px 8px;border:1px solid var(--color-border);border-radius:11px;background:var(--color-surface-elevated);}
  .sr-standing-place {font-size:13px;color:var(--sf-violet);flex:0 0 auto;}
  .sr-standing:first-child {border-color:color-mix(in srgb,var(--sf-warm) 35%,var(--color-border));}
  .sr-standing-copy {min-width:0;display:grid;gap:4px;}
  .sr-standing-copy strong {font-size:12px;overflow-wrap:anywhere;}
- .sr-standing-copy small {font-size:11px;color:var(--color-text-secondary);}
+ .sr-standing-copy small {font-size:12px;color:var(--color-text-secondary);}
  .sr-standing-rat {position:relative;display:inline-block;width:72px!important;height:50px!important;flex:0 0 72px;transform:scale(.7)!important;margin-inline:-10px;}
  .sr-standing-rat .studyrats-rat-img {position:absolute;width:72px!important;height:50px!important;inset:0;object-fit:contain;}
- #studyrats-card .studyrats-race-footer {padding:12px 16px;font-size:11px;line-height:1.6;border-top:1px solid var(--color-border);}
+ #studyrats-card .studyrats-race-footer {padding:12px 16px;font-size:12px;line-height:1.6;border-top:1px solid var(--color-border);}
  #studyrats-customizer {border:1px solid color-mix(in srgb,var(--sf-violet) 25%,var(--color-border));border-radius:14px;background:var(--color-surface-elevated);padding:16px;margin-bottom:16px;}
  #studyrats-customizer[hidden] {display:none!important;}
  #studyrats-customizer .studyrats-rat-picker-copy>small {font-size:12px;line-height:1.6;}

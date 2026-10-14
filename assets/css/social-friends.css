@@ -4,7 +4,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  --sf-teal:light-dark(#167d79,#64c8ba);--sf-violet:light-dark(#7560ad,#baa1e1);--sf-warm:light-dark(#a96836,#d4ac78);
  &[data-ui-appearance="dark"] :is(#friends-ref-add-toggle,#sf-add-dialog #add-friend) {color:var(--color-surface-elevated)!important;}
  --sf-tint:color-mix(in srgb,var(--sf-teal) 8%,var(--color-surface));
- .social-heading {float:none;margin:0 0 16px;}
+ .social-heading {float:none;margin:0 0 12px;}
  .social-heading p {display:block;font-size:14px;line-height:1.5;color:var(--color-text-secondary);}
  .community-nav {display:flex!important;width:100%;padding:5px;box-sizing:border-box;background:var(--color-surface-elevated);border:1px solid var(--color-border);border-radius:13px;gap:4px;margin-bottom:16px;}
  .community-nav a {flex:1;min-height:40px;display:flex;justify-content:center;align-items:center;border-radius:9px;text-decoration:none;font-size:14px;}
@@ -30,8 +30,8 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #community-friends .friend-copy strong {font-size:15px!important;overflow-wrap:anywhere;}
  #community-friends [data-friend-presence] {font-size:12px!important;line-height:1.5;color:var(--color-text-secondary);}
  #community-friends .friends-actions {display:flex;width:100%;gap:8px;}
- #community-friends .friends-actions>.button {flex:1;justify-content:center;background:var(--sf-tint)!important;color:var(--sf-teal)!important;border-color:color-mix(in srgb,var(--sf-teal) 20%,var(--color-border))!important;font-size:12px!important;min-height:36px!important;border-radius:9px;}
- #community-friends .sv-friend-options>summary {height:34px;min-width:34px;}
+ #community-friends .friends-actions>.button {flex:1;justify-content:center;background:var(--sf-tint)!important;color:var(--sf-teal)!important;border-color:color-mix(in srgb,var(--sf-teal) 20%,var(--color-border))!important;font-size:12px!important;min-height:40px!important;border-radius:9px;}
+ #community-friends .sv-friend-options>summary {height:40px;min-width:40px;display:grid;place-items:center;}
  #community-friends .social-add {margin-top:18px;padding-top:12px;}
  #sf-requests {border-top:3px solid color-mix(in srgb,var(--sf-warm) 45%,var(--color-border))!important;}
  #sf-requests h2,#community-friends-panel .social-side h2 {font-size:16px;}
@@ -44,7 +44,7 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #social-suggestions .button {border-radius:9px;color:var(--sf-violet);background:color-mix(in srgb,var(--sf-violet) 9%,var(--color-surface));}
  #community-friends-panel .friends-empty {border:1px dashed var(--color-border);border-radius:12px;padding:18px!important;background:var(--color-surface-elevated);color:var(--color-text-secondary);font-size:13px!important;line-height:1.65!important;}
  #friends-list>.friends-empty {grid-column:1/-1;min-height:100px;display:grid;align-content:center;}
- #community-friends-panel .social-side .friends-empty::before {content:'';display:block;width:24px;height:4px;border-radius:3px;background:color-mix(in srgb,var(--sf-violet) 55%,var(--color-surface));margin-bottom:12px;}
+ #community-friends-panel .social-side .friends-empty::before {content:'';display:block;width:24px;height:24px;border-radius:8px;border:1px solid color-mix(in srgb,var(--sf-violet) 35%,var(--color-border));box-shadow:inset 0 0 0 6px var(--color-surface-elevated);background:color-mix(in srgb,var(--sf-violet) 55%,var(--color-surface));margin-bottom:12px;}
  #community-friends-panel .community-materials {background:var(--color-surface-elevated)!important;}
  .sf-add-dialog {width:min(480px,calc(100% - 24px));padding:24px;}
  .sf-add-dialog .social-card-head {align-items:start;gap:12px;}
