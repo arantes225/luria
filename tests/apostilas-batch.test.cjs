@@ -489,3 +489,18 @@ test("Síndromes hipertensivas: microangiopatias, diretrizes de cálcio e rastre
   assert.match(html,/pubmed\.ncbi\.nlm\.nih\.gov\/32808006/);
   assert.ok(!html.includes("Imagem indisponível."),"Não deixar placeholders de imagem");
 });
+
+
+test("SOMP/PMOS preserva US real e aprofunda raciocinio adolescente e androgenos",()=>{
+  const html=read("apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html");
+  assert.match(html,/id="casos-decisao-somp-2026"/);
+  assert.match(html,/href="\/apostilas\/sindrome-ovariana-metabolica-poliendocrina-somp\/#casos-decisao-somp-2026"/);
+  assert.match(html,/Polycystic_ovary\.jpg/);
+  assert.match(html,/Schomynv, CC0 1\.0/);
+  assert.match(html,/aria-label="Abrir ultrassonografia real em resolução original"/);
+  assert.match(html,/pelo menos três meses/);
+  assert.match(html,/primeira linha farmacológica/);
+  assert.match(html,/apneia obstrutiva do sono/);
+  assert.match(html,/hiperandrogenismo/);
+  assert.match(html,/2026/);
+});
