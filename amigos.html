@@ -34,7 +34,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
   <link rel="stylesheet" href="/assets/css/community-ui-v2.css?v=1">
   <link rel="stylesheet" href="/assets/css/social-v3.css?v=2">
   <link rel="stylesheet" href="/assets/css/social-v4.css?v=9">
-<link rel="stylesheet" href="/assets/css/social-friends.css?v=3"><link rel="stylesheet" href="/assets/css/social-groups.css?v=2"></head>
+<link rel="stylesheet" href="/assets/css/social-friends.css?v=3"><link rel="stylesheet" href="/assets/css/social-groups.css?v=2"><link rel="stylesheet" href="/assets/css/social-rats.css?v=2"></head>
 <body class="social-v3 friends-stage1" data-ui-heading="provided" data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="amigos">
 <dialog id="sf-add-dialog" class="sv-dialog sf-add-dialog" aria-labelledby="sf-add-title"><div class="social-card-head"><div><h2 id="sf-add-title">Encontre sua turma</h2><p>Use o ID LURIA para enviar um pedido de amizade.</p></div><button type="button" class="button secondary" data-close-dialog="sf-add-dialog" aria-label="Fechar convite">Fechar</button></div><div id="friends-ref-add-panel" class="sf-add-content"><div class="friends-add-row"><input id="friend-id-input" type="text" maxlength="8" placeholder="ID LURIA" autocapitalize="characters" aria-label="ID LURIA do amigo"><button id="add-friend" class="button primary" type="button">Enviar pedido</button></div><div id="friend-add-preview" class="friend-add-preview" hidden=""></div><div class="friends-ref-own-id"><span>Seu ID LURIA</span><div class="friends-id-box"><strong id="my-luria-id">—</strong><button id="copy-my-id" class="button secondary" type="button">Copiar</button></div></div></div><div id="friends-status" class="friends-status" aria-live="polite"></div></dialog><script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
 <script defer="" src="/assets/js/ui-navigation-v2.js?v=20261013-button1"></script>
@@ -79,7 +79,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
     <div class="studyrats-rat-picker-copy">
       <span class="studyrats-kicker">SEU CORREDOR</span>
       <strong id="studyrats-rat-picker-title">Personalize seu ratinho</strong>
-      <small>Escolha o ratinho, o acessório e ajuste a posição do acessório diretamente no preview.</small>
+      <small>Ajuste seu ratinho e seus acessórios na prévia. Sua seleção salva é preservada; as opções para troca seguem o seu plano.</small>
       <div class="studyrats-preview-large" aria-label="Preview do seu ratinho">
         <span class="studyrats-preview-large-label">PREVIEW</span>
         <div id="studyrats-preview-large-stage" class="studyrats-preview-large-stage"></div>
@@ -98,7 +98,7 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
     </div>
   </section>
   <div id="studyrats-create" class="studyrats-create" hidden=""><div class="studyrats-fields"><label><span>Título do desafio</span><input id="studyrats-challenge-title" type="text" maxlength="80" placeholder="Ex.: Semana sem atrasar nenhuma aula"></label><label><span>Modalidade</span><select id="studyrats-type"><option value="flashcards">Mais flashcards</option><option value="study_days">Mais dias de estudo</option><option value="retention">Maior retenção</option><option value="classes">Mais aulas vistas</option><option value="ccqs">Mais CCQs respondidos</option></select></label><label><span>Data limite</span><input id="studyrats-deadline" type="date"></label></div><div class="studyrats-people-block"><div class="studyrats-section-title"><strong>Participantes</strong><small>Você já entra automaticamente.</small></div><div id="studyrats-friends" class="studyrats-friends"></div></div><div class="studyrats-create-actions"><button id="studyrats-cancel" class="button secondary" type="button">Cancelar</button><button id="studyrats-start" class="button primary" type="button">Iniciar desafio</button></div></div>
-  <div class="social-room-entry"><span><strong>Melhor quando estudamos juntos</strong><small>Abra uma sala, convide sua turma e mantenha o foco.</small></span><button class="button secondary" type="button" data-open-rooms="">Criar ou entrar em sala</button></div><div id="social-rat-rooms"></div><div id="studyrats-list" class="studyrats-list"></div><div id="studyrats-recent-ranking" class="studyrats-recent-ranking"></div>
+  <div id="studyrats-list" class="studyrats-list"></div><div id="studyrats-recent-ranking" class="studyrats-recent-ranking"></div>
 
 </section>
 
@@ -149,11 +149,11 @@ body[data-page="amigos"] .luria-page-spotlight{margin:0 0 8px!important}
 <script src="/assets/vendor/supabase-2.110.6.js"></script>
 <script src="assets/js/supabase.js"></script>
 <script src="/assets/js/app.js?v=20261013-frame1"></script>
-<script src="assets/js/studyrats.js?v=46-circuit"></script>
+<script src="assets/js/studyrats.js?v=47-consistent"></script>
 <script defer="" src="/assets/js/community-navigation.js?v=stage1"></script>
 <script src="/assets/js/amigos.js?v=47-friends"></script>
 <script src="/assets/js/social-voice.js?v=8"></script>
-<script src="/assets/js/social-rooms.js?v=12"></script>
+<script src="/assets/js/social-rooms.js?v=13"></script>
 <script src="/assets/js/social-view.js?v=stage1"></script>
 <script defer="" src="/assets/js/pwa.js?v=20261013-width2"></script>
 

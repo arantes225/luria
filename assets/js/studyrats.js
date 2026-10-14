@@ -2,6 +2,7 @@ let sharedStudyratsRows=[];
 let sharedStudyratsChannel=null;
 let sharedStudyratsTimer=null;
 let sharedStudyratsMyVariant='blue';
+let sharedStudyratsProfileOwner=null;
 let sharedStudyratsMyAccessory='none';
 let sharedStudyratsAccessoryOffsets={};
 let sharedStudyratsMyAccessoryX=0;
@@ -290,24 +291,10 @@ async function sharedStudyratsLoadMyVariant(){
     .maybeSingle();
 
   if(!result.error&&result.data){
-    const variantsAllowed =
-      window.LuriaEntitlements?.enabled('studyrats_variants') === true;
-    const accessoriesAllowed =
-      window.LuriaEntitlements?.enabled('studyrats_accessories') === true;
-
-    if(result.data.studyrat_variant){
-      sharedStudyratsMyVariant =
-        variantsAllowed
-          ? sharedStudyratVariant(result.data.studyrat_variant).id
-          : 'blue';
-    }
-
-    if(result.data.studyrat_accessory){
-      sharedStudyratsMyAccessory =
-        accessoriesAllowed
-          ? sharedStudyratAccessory(result.data.studyrat_accessory).id
-          : 'none';
-    }
+    // Saved appearance is the display source of truth. Entitlements still gate changes.
+    sharedStudyratsMyVariant=sharedStudyratVariant(result.data.studyrat_variant||'blue').id;
+    sharedStudyratsMyAccessory=sharedStudyratAccessory(result.data.studyrat_accessory||'none').id;
+    sharedStudyratsProfileOwner=window.docmapUser.id;
     sharedStudyratsAccessoryOffsets=result.data.studyrat_accessory_offsets||{};
     const offset=sharedStudyratsCurrentAccessoryOffset(sharedStudyratsMyAccessory);
     sharedStudyratsMyAccessoryX=offset.x;
@@ -423,10 +410,10 @@ function sharedStudyratsGroup(rows){
     map.get(row.challenge_id).participants.push({
       id:row.participant_user_id,
       name:row.participant_name||'Usuário LURIA',
-      variant:sharedStudyratVariant(row.studyrat_variant||'brown').id,
-      accessory:sharedStudyratAccessory(row.studyrat_accessory||'none').id,
-      accessoryX:Number(row.studyrat_accessory_x)||0,
-      accessoryY:Number(row.studyrat_accessory_y)||0,
+      variant:row.participant_user_id===sharedStudyratsProfileOwner?sharedStudyratsMyVariant:sharedStudyratVariant(row.studyrat_variant||'blue').id,
+      accessory:row.participant_user_id===sharedStudyratsProfileOwner?sharedStudyratsMyAccessory:sharedStudyratAccessory(row.studyrat_accessory||'none').id,
+      accessoryX:row.participant_user_id===sharedStudyratsProfileOwner?sharedStudyratsMyAccessoryX:Number(row.studyrat_accessory_x)||0,
+      accessoryY:row.participant_user_id===sharedStudyratsProfileOwner?sharedStudyratsMyAccessoryY:Number(row.studyrat_accessory_y)||0,
       value:Number(row.progress)||0
     });
   });
@@ -562,6 +549,7 @@ function sharedStudyratsRender(){
         '<div class="sr-lanes">'+lanes+'</div>'+
         '<div class="sr-circuit-scale" aria-hidden="true"><span>Largada</span><span>Cada passo conta</span><span>Chegada</span></div>'+
       '</div>'+
+      '<div class="sr-standings" aria-label="Classificação do desafio">'+ordered.slice(0,3).map(function(p,index){const value=Number(p.value)||0;return '<div class="sr-standing"><span class="sr-standing-place">'+(index+1)+'º</span>'+sharedStudyratComposite(p.variant,p.accessory,'studyrats-rat-composite sr-standing-rat',p.accessoryX,p.accessoryY)+'<span class="sr-standing-copy"><strong>'+fEsc(p.name)+'</strong><small>'+fEsc(Number.isInteger(value)?value:value.toFixed(1))+' '+fEsc(type.unit)+'</small></span></div>';}).join('')+'</div>'+
       '<div class="studyrats-race-footer"><span>Os ratinhos avançam com o tempo e com o desempenho relativo de cada participante.</span><strong>'+fEsc(type.title)+' · até '+formatStudyratsDate(ch.deadline)+'</strong></div>'+
     '</article>';
   }).join('');

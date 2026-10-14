@@ -116,8 +116,6 @@
   const current=$('social-current-room');current.hidden=!hall.current_room;
   if(hall.current_room){current.innerHTML=`<h3>Voltar à minha sala</h3><p>${esc(hall.current_room.name)} · ${esc(modes[hall.current_room.mode])} · ${hall.current_room.status==='paused'?'Pausada':'Sessão em andamento'}</p><button class="button primary" type="button" data-current-room="${esc(hall.current_room.id)}">Voltar à sala</button>`;wire(current,'data-current-room',id=>enter({room_id:id}));}
   host.querySelectorAll('[data-room-enter]').forEach(button=>{const r=rooms.find(r=>r.id===button.dataset.roomEnter);if(Number(r?.unread)>0){const badge=document.createElement('span');badge.className='social-badge';badge.textContent=`${Number(r.unread)} não lida(s)`;button.closest('article').querySelector('.social-room-meta').append(badge);}});
-  $('social-rat-rooms').innerHTML=rooms.filter(r=>r.last_joined||r.friend_room).slice(0,3).map(r=>`<button class="button secondary" data-rat-room="${esc(r.id)}" type="button">${icon('room')} ${esc(r.name)}</button>`).join('');
-  wire($('social-rat-rooms'),'data-rat-room',id=>enter({room_id:id}));
  }
  function draftKey(id=roomId){return owner&&id?`luria:social-draft:${owner.id}:${id}`:null;}
  function saveDraft(){const k=draftKey();if(k)try{sessionStorage.setItem(k,$('social-message-text').value);}catch{}}

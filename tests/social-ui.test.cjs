@@ -123,3 +123,9 @@ test('group cards use real members, searchable names and the existing history an
  card.querySelector('[data-group-history]').click();await x.settle();assert.match(d.getElementById('social-group-members-'+g.id).textContent,/Nenhuma sessão/);
  await w.LuriaSocial.refreshSocial();assert.equal(d.querySelector('.sg-details').open,true);assert.deepEqual(x.errors,[]);
 });
+
+test('saved rat appearance stays consistent across preview and race even when item changes are locked',async t=>{
+ const {w,d}=await fixture(t);w.LuriaEntitlements={enabled:()=>false};w.supabaseClient.from=()=>({select(){return this;},eq(){return this;},maybeSingle:async()=>({data:{studyrat_variant:'pink',studyrat_accessory:'wizard-hat',studyrat_accessory_offsets:{'wizard-hat':{x:.12,y:-.08,v:2}}},error:null})});
+ await w.sharedStudyratsLoadMyVariant();const grouped=w.sharedStudyratsGroup([{challenge_id:'test',participant_user_id:A,participant_name:'Ana',studyrat_variant:'brown',progress:0}]);const rat=grouped[0].participants[0];assert.equal(rat.variant,'pink');assert.equal(rat.accessory,'wizard-hat');assert.equal(rat.accessoryX,.12);assert.equal(rat.accessoryY,-.08);assert.match(d.getElementById('studyrats-home-preview-stage').innerHTML,/ratinho_rosa_choque/);
+ await w.sharedStudyratsSaveVariant('green');assert.match(d.getElementById('studyrats-home-preview-stage').innerHTML,/ratinho_rosa_choque/);
+});
