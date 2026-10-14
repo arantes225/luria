@@ -182,6 +182,12 @@ Este arquivo registra **materiais efetivamente abertos** no Google Drive antes d
 - Fontes primárias: MS, NT 626/2025; INCA, comunicado de setembro/2025; Comissão Nacional de Mamografia, NT janeiro/2025; Wikimedia Commons, páginas dos arquivos clínicos.
 - Estado: **em revisão, não certificada**. Faltam conferência visual em navegador e PWA, validação dos links de imagem no dispositivo real, checagem de todo o tratamento sistêmico e avaliação da autossuficiência/60 mil caracteres úteis.
 
+## 2026-10-14 — Ciclo menstrual e eixo HHO
+- Benchmark lido: `fisiologia menstrual.pdf` (resumo, 1,3 mil caracteres), autoria institucional não comprovada.
+- Apostila: `apostilas/ciclo-menstrual-eixo-hho/index.html`. Ampliada com casos de janela fértil e interpretação de testes hormonais, fonte ASRM 2022/2024.
+- Figura original preservada: `MenstrualCycle2_pt.svg`, licença CC BY-SA 3.0, Wikimedia Commons.
+- Estado: em revisão; falta auditoria visual e certificação integral de autossuficiência.
+
 ## Modelo para novas consultas
 
 - **Data, tema e caminho da LURIA:**
