@@ -402,3 +402,86 @@ Entrevista pode aprofundar biografia, trajetória de sintomas, funcionamentos pr
 
 O prontuário de qualidade separa fatos e hipóteses, descreve reavaliação e explicita o plano de segurança.
 
+
+## 13. Casos clínicos originais comentados — oito trajetórias de raciocínio
+
+### Caso 1 — A idosa “deprimida” que não conseguia acompanhar perguntas
+
+Mulher de 78 anos, previamente independente e capaz de conversar longamente, é internada por pneumonia. No terceiro dia passa a ficar sonolenta pela manhã, evita contato e come pouco. À noite, tenta sair da cama alegando que precisa buscar os filhos na escola. Uma residente sugere “depressão grave porque está apática”. Há hipoxemia leve, constipação, uso recente de opioide e benzodiazepínico para dormir.
+
+**Hipótese sindrômica prioritária:** **delirium com alternância de manifestações hipoativas e hiperativas**, precipitado por doença clínica e possivelmente por medicações e privação de sono. O diagnóstico formal requer avaliação médica, comparação com basal e exclusão de outras emergências.
+
+**Raciocínio passo a passo:** (1) mudança em **horas/dias**, ao contrário da trajetória usual de semanas de síndrome depressiva; (2) dificuldade de **atenção** e oscilação durante o dia; (3) desorientação temporal e comportamento noturno anômalo; (4) gatilhos médicos plausíveis; (5) não há relato longitudinal de humor deprimido e anedonia que sustente diagnóstico depressivo como explicação suficiente.
+
+**Exame inicial e interpretação:** sinais vitais, oximetria, glicemia conforme cenário, exame neurológico, revisão das doses e horários dos fármacos, avaliação de hidratação/eliminações, exames laboratoriais dirigidos; **4AT** no leito clínico conforme NICE e avaliação de causas. Instrumento positivo não substitui julgamento médico.
+
+**Conduta:** tratar hipóxia, pneumonia e fatores precipitantes, manejar dor sem sedação desnecessária, rever medicamentos, promover mobilização e sono, reorientação/auxílios sensoriais e segurança com familiar/equipe. Se houver risco de retirada de dispositivos/queda, implementar medidas proporcionais, evitando contenção de rotina. **Por que importa:** delirium hipoativo é subdiagnosticado quando apatia é tratada como diagnóstico psiquiátrico primário.
+
+### Caso 2 — Três noites “sem precisar dormir” e fala acelerada
+
+Homem de 31 anos chega acompanhado porque passou cinco dias dormindo cerca de duas horas por noite, diz sentir-se descansado e iniciou projetos dispendiosos sem planejamento. Fala rápido, interrompe outras pessoas, troca de assunto por associações superficiais, alterna euforia e irritação; relata sentir-se especialmente poderoso. Não está desorientado. Faz uso recente de corticosteroide sistêmico por doença inflamatória, em dose elevada, e tem história familiar de transtorno bipolar.
+
+**Hipótese sindrômica:** **síndrome maníaca**, com necessidade de distinguir episódio bipolar de quadro induzido por substância/medicação. **Raciocínio:** redução **da necessidade de sono**, aumento anormal de energia e atividade, fala pressionada, fuga de ideias e gasto impulsivo formam quadro coerente; não é mero “estar ansioso e dormir mal”. Temporalidade do corticosteroide é dado etiológico indispensável.
+
+**Exames/avaliação:** segurança financeira e comportamental, risco de autoagressão/violência, substâncias estimulantes, prescrições e história de episódios prévios. Exame físico, sinais vitais e testes dirigidos a doença endócrina/metabólica ou outras condições se houver suspeita. Confirmar quadro com entrevista longitudinal e fontes colaterais, sem assumir transtorno bipolar apenas pela fotografia atual.
+
+**Conduta:** avaliação psiquiátrica oportuna ou urgente se incapaz de autocuidado/alto risco, proteger decisões de grande consequência, revisar corticosteroide com equipe que o prescreveu **sem suspensão abrupta autônoma**, organizar ambiente de repouso e suporte. Tratamento farmacológico fica na aula 212/215. **Por que importa:** semiologia identifica mania, mas etiologia e gravidade dependem de tempo, contexto e medicamentos.
+
+### Caso 3 — Vozes ao adormecer e medo de ter esquizofrenia
+
+Estudante de 23 anos relata ouvir seu nome ser chamado algumas vezes quando está quase dormindo. As experiências duram segundos, terminam ao despertar completamente e não ocorrem durante atividades diurnas. Ele reconhece que pode ser fenômeno do sono, continua estudando normalmente e não apresenta declínio funcional, delírios ou pensamento desorganizado. Tem privação crônica de sono.
+
+**Hipótese:** fenômenos perceptivos **hipnagógicos**, associados ao início do sono, mais prováveis que síndrome psicótica primária pelos dados atuais. **Raciocínio:** o **estado de consciência** no início do fenômeno muda a interpretação; ouvir voz não é, isoladamente, diagnóstico de esquizofrenia. Fenômenos hipnopômpicos ocorrem ao acordar.
+
+**Investigação:** detalhar vigília, frequência, qualidade do sono, substâncias/medicações, história neurológica, sonolência diurna e presença de cataplexia/paralisia do sono se houver suspeita de transtorno do sono. Examinar risco se ocorrerem experiências de comando ou outros sintomas. Não solicitar exames extensos sem indicação apenas porque a palavra “voz” foi usada.
+
+**Conduta:** orientar regularização de sono, acompanhamento se persistir ou causar sofrimento, ampliar investigação caso surjam experiências em vigília, deterioração funcional, déficit neurológico ou risco. **Por que importa:** não patologizar fenômenos relacionados ao sono evita estigma e intervenções iatrogênicas.
+
+### Caso 4 — Pensamento intrusivo de ferir alguém e vergonha de contar
+
+Mulher de 26 anos relata imagens mentais repetitivas e indesejadas de machucar alguém que ama. Sente repulsa e medo dessas imagens, evita objetos domésticos que lhe lembram o pensamento, pede repetidamente confirmação de que nunca faria isso. Afirma **não desejar nem planejar** agressão, e as imagens são experimentadas como contrárias a seus valores. Está lúcida, com pensamento organizado e preserva crítica.
+
+**Hipótese:** fenômeno **obsessivo egodistônico**, compatível com síndrome obsessivo-compulsiva a investigar, e não automaticamente intenção violenta ou delírio. **Raciocínio:** intrusão involuntária, angústia, resistência e busca de neutralização são características úteis; conteúdos violentos não definem perigosidade por si. Ainda assim, avaliação de risco real depende de comportamento, intenção, impulsividade, contexto e outros sintomas, sem dispensá-la por rótulo de TOC.
+
+**Exames:** entrevista de sintomas obsessivos/compulsões, frequência, tempo consumido, prejuízo, crítica, substâncias e comorbidades; avaliar necessidade de emergência apenas se intenção, plano, perda de controle ou outras ameaças concretas surgirem. Não há biomarcador que “prove TOC” no atendimento comum.
+
+**Conduta:** acolher sem julgamento, explicar distinção entre pensamento intrusivo e intenção, encaminhar para avaliação especializada e abordagem baseada em evidências conforme aula 213. **Por que importa:** confundir obsessão com desejo de agir leva a estigma, segredo, atraso diagnóstico e cuidado inadequado.
+
+### Caso 5 — Fala incompreensível iniciada de repente
+
+Homem de 69 anos, hipertenso, começa subitamente a dizer palavras sem sentido aparente durante o almoço. Consegue mover ambos os membros, mas troca nomes de objetos e parece não entender comandos. Familiares contam que conversava normalmente minutos antes; está acordado, porém frustrado por não conseguir se expressar. Um conhecido sugere “psicose porque fala incoerentemente”.
+
+**Hipótese prioritária:** **síndrome neurológica aguda com possível afasia por AVC**, até prova em contrário. **Raciocínio:** início **súbito**, alterações de nomeação/compreensão e linha de base normal minutos antes favorecem emergência focal, e não pensamento desorganizado de transtorno psiquiátrico crônico. A fala incoerente pode decorrer de **linguagem alterada**, não necessariamente de forma do pensamento.
+
+**Exames/conduta:** ativar protocolo de AVC/neurologia, registrar hora em que foi visto bem pela última vez, aferir glicemia, sinais vitais e realizar avaliação neurológica/imagenologia conforme rede de emergência, sem atrasar decisão tempo-dependente. A semiologia psiquiátrica deve registrar limitação de comunicação e não atribuir juízo de realidade ausente por exame linguístico inválido.
+
+**Por que importa:** um diagnóstico psiquiátrico precipitado pode atrasar reperfusão e causar incapacidade permanente.
+
+### Caso 6 — Desrealização em crise de pânico, mas sem perder juízo de realidade
+
+Pessoa de 28 anos relata crises abruptas de taquicardia, tremor, falta de ar e sensação de que o ambiente “virou cenário de filme”. Durante o episódio diz “sei que é o lugar real, mas parece distante”. O exame após resolução mostra orientação e linguagem preservadas. É a primeira crise, e há dor torácica associada.
+
+**Hipóteses:** episódio com sintomas autonômicos e **desrealização**, possivelmente ataque de pânico, com necessidade de **excluir causas cardiopulmonares/metabólicas pertinentes**. **Raciocínio:** na desrealização, a pessoa pode reconhecer a irrealidade da sensação, diferentemente de crença delirante inflexível de que o mundo foi de fato substituído. Entretanto, palpitações e dor torácica não podem ser consideradas exclusivamente psiquiátricas sem avaliação inicial apropriada.
+
+**Exames:** sinais vitais, ECG e investigação dirigida por probabilidade clínica, uso de substâncias/energéticos, antecedentes, sinais de tromboembolismo, arritmia, hipoglicemia ou outras doenças conforme exame; depois caracterizar recorrência, evitação e impacto. **Conduta:** primeiro garantir estabilidade e excluir emergência plausível; após isso, acolher e propor seguimento/abordagens de pânico se indicado.
+
+**Por que importa:** o diagnóstico diferencial é bidirecional — nem toda sensação irreal é psicose e nem toda crise autonômica é pânico.
+
+### Caso 7 — Ideação suicida com plano e recusa de ajuda
+
+Paciente de 40 anos procura serviço após semanas de desesperança e isolamento. Relata pensamentos recorrentes de morrer, intenção atual e um **plano com acesso a meio potencialmente letal**, sem que seja necessário detalhar método no material didático. Está lúcido, triste, ainda consegue conversar e insiste em ir embora sozinho para “não dar trabalho”. Tem histórico de tentativa anterior e relata pouca rede de suporte.
+
+**Hipótese:** sofrimento intenso com **risco agudo significativo**, independentemente do diagnóstico final de transtorno depressivo, bipolaridade ou outro. **Raciocínio:** a pergunta sobre segurança não espera a classificação CID. Plano, intenção, acesso, tentativa prévia e dificuldade em manter segurança imediata exigem avaliação presencial urgente. Uma resposta negativa a uma escala ou promessa verbal de “não fazer nada” **não elimina** risco.
+
+**Exames/conduta:** avaliação médica/psiquiátrica imediata no serviço, proteção proporcional e contínua conforme normas locais, não liberar desacompanhado antes de avaliação e plano seguro, avaliar intoxicação e comorbidades; acionar apoio e rede de maneira legal/ética. A **NICE NG225** recomenda **não usar escores ou estratos baixo/médio/alto** como ferramenta para prever suicídio ou determinar alta; a formulação deve orientar necessidades e segurança. **Por que importa:** é um problema de proteção clínica, não de adivinhar probabilidade individual com tabela.
+
+### Caso 8 — Mutismo, postura mantida e instabilidade autonômica
+
+Mulher de 34 anos com semanas de alteração afetiva progressiva chega ao pronto-socorro sem falar, mantém posição corporal incomum por longo período, resiste a movimentos em certas situações e apresenta episódios de agitação não dirigida. Nos últimos dois dias teve febre e taquicardia; familiares relatam ingesta hídrica reduzida. Há prescrição recente de antipsicótico.
+
+**Hipóteses prioritárias:** **síndrome catatônica**, possivelmente grave, com necessidade de excluir **catatonia maligna, síndrome neuroléptica maligna, encefalite, infecção, intoxicações e outras emergências**. **Raciocínio:** mutismo e postura mantida são alterações psicomotoras específicas, não “teimosia”; febre e disfunção autonômica impõem urgência e diferencial clínico. Uso de antipsicótico aumenta necessidade de avaliação de efeitos adversos graves.
+
+**Exames:** estabilização clínica, sinais vitais seriados, hidratação, exames dirigidos (p. ex. eletrólitos, função renal, CK, hemograma, inflamação conforme hipótese), exame neurológico e investigação infecciosa/autoimune quando indicada; avaliar trombose e rabdomiólise. **Conduta:** avaliação multidisciplinar urgente, suporte clínico, prevenção de complicações por imobilidade e tratamento específico sob protocolos especializados; evitar intensificar antipsicótico sem esclarecer possível síndrome maligna.
+
+**Por que importa:** um exame do estado mental capaz de identificar catatonia pode prevenir complicações orgânicas graves e terapêutica inadequada.
+
