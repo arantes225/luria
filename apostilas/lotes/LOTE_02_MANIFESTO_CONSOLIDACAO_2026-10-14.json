@@ -1,6 +1,6 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 12,
+  "version": 13,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
   "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
@@ -85,10 +85,10 @@
       "source_path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
       "source_sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
-      "consolidated_sha": "d7ccf8dd1513b7984d8370040f1201f746e045ac",
+      "consolidated_sha": "e48aa108123478dca6f8234c0d56ec86a0d89901",
       "source_raw_characters": 78323,
-      "consolidated_raw_characters": 111611,
-      "consolidated_approximate_plain_characters": 106963,
+      "consolidated_raw_characters": 120451,
+      "consolidated_approximate_plain_characters": null,
       "chapter_count": 9,
       "chapters": [
         {
@@ -128,13 +128,15 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 17,
-      "question_count": 23,
+      "case_count": 18,
+      "question_count": 24,
       "source_numbered_chapter_count": 28,
-      "preflight_warnings": [],
-      "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
-      "json_visible_estimate": 106963,
-      "json_table_count": 10
+      "preflight_warnings": [
+        "Conteúdo sobre DAAT exige verificação médica individual da avaliação familiar/hepática, critério de reposição e disponibilidade brasileira."
+      ],
+      "next_gate": "Revisão clínica independente de DAAT e DPOC, farmacologia/doses, imagens/Admin e testes Node/desktop/PWA antes de publicar.",
+      "json_visible_estimate": null,
+      "json_table_count": 11
     },
     {
       "id": "DIABETES_MELLITUS",
@@ -324,11 +326,11 @@
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "177d8aecf9949cb070a831a32936c1fd2eaeb5c7",
+  "input_json_sha": "e4112d4ffdc570d1e1dce993137f799106828cdc",
   "last_update_scope": [
-    "GINA completa 2026 até cinco anos: diferença entre SABA de alívio no pré-escolar e CI diário por recorrência/gravidade, evitando transpor AIR/MART escolar; novo Caso 20 e Questão 25 em Asma",
-    "Tuberculose neonatal: distinguir TB doença, exposição a caso-fonte bacilífero, tratamento preventivo primário e decisão sobre BCG; novo Caso 22 e Questão 32",
-    "Material comparativo do Drive relido; recomendações prioritariamente respaldadas por diretrizes GINA e Ministério da Saúde e conteúdo autoral; nenhuma figura protegida copiada"
+    "DPOC: nova subseção 2.4 sobre suspeita e testes para deficiência de alfa-1-antitripsina, método sérico versus genotipagem/fenotipagem e vigilância familiar/hepática",
+    "DPOC: Caso 18 e Questão 24 autorais; sincronização Markdown + JSON; benchmark Drive estável/exacerbação e diretrizes JBP 2024, Alpha-1 Foundation 2016 e GOLD 2026",
+    "Mantidos 5 livros isolados em pré-publicação e nenhuma imagem nova, merge/deploy ou alegação de certificação"
   ],
   "last_revision": "2026-10-15"
 }
