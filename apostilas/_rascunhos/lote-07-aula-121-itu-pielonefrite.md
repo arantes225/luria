@@ -369,6 +369,57 @@ A idade determina a apresentação. No lactente, febre isolada, recusa alimentar
 
 **Antibioticoterapia pediátrica:** não copiar dose fixa de adulto nem converter linearmente sem considerar peso, idade, função renal e dose máxima. A escolha varia entre recém-nascido com possível sepse, lactente febril, criança maior estável e criança com refluxo/obstrução. Prescrição pediátrica só deverá ser publicada com revisão da apresentação em mg/mL, mg/kg/dose versus mg/kg/dia, frequência, dose máxima, função renal e vias. A ausência dessa tabela validada mantém o material em revisão.
 
+
+### 18.2A. Imagem após ITU pediátrica: decisão por idade, atipia e recorrência
+
+A pergunta correta não é “qual exame fazer depois de uma ITU?”, mas “**que alteração anatômica ou lesão renal este exame identificará e que decisão mudará?**”. Há três objetivos distintos: (1) ultrassonografia identifica dilatação, obstrução e anomalias macroscópicas; (2) cintilografia renal com DMSA pode identificar defeitos parenquimatosos tardios em subgrupos; (3) uretrocistografia miccional investiga refluxo vesicoureteral e algumas anomalias do trato urinário inferior. Esses exames **não são intercambiáveis** e sua indicação é seletiva.
+
+**Comparação clínica com fonte primária:** a NICE NG224 (Reino Unido) traz uma matriz explícita de imagem em menores de 16 anos. As faixas e os tempos abaixo são **NICE**, não uma afirmação de que SUS/SBP adotem literalmente os mesmos prazos. O resumo de hidronefrose e refluxo vesicoureteral lido no Drive contém a simplificação “UCM diagnóstica e classificatória → define tratamento/profilaxia”, mas isso **não** autoriza uretrocistografia em toda criança após uma primeira ITU, nem profilaxia universal pelo simples achado de refluxo.
+
+| População conforme NICE NG224 | Primeira ITU com boa resposta em 48 h | ITU atípica | ITU recorrente |
+| --- | --- | --- | --- |
+| Menor de 6 meses | Ultrassom em até 6 semanas | Ultrassom durante infecção; DMSA tardia e avaliação para UCM conforme tabela/risco | Ultrassom durante infecção, DMSA tardia e avaliar UCM |
+| 6 meses a menos de 3 anos | Sem US de rotina quando quadro típico e resposta adequada | US durante infecção; DMSA tardia em situações indicadas | US em até 6 semanas e DMSA tardia |
+| 3 anos ou mais | Sem US rotineiro após primeiro episódio típico respondedor | US na fase aguda se atípica | US em até 6 semanas e DMSA tardia conforme tabela |
+| UCM / cistouretrografia | **Não é exame universal** de primeira ITU, sobretudo em maiores | Considerar situações específicas, idade, ultrassom, fluxo urinário, agente não *E. coli*, contexto familiar e protocolo | Maior plausibilidade em subgrupos de risco, sem automatismo |
+
+*DMSA tardia* na NICE significa tipicamente **4–6 meses após a infecção**, quando indicada, para pesquisar defeitos do parênquima renal; não se deve pedir cintilografia durante a primeira consulta de toda criança apenas para “comprovar pielonefrite”.
+
+A NICE caracteriza **ITU atípica** por elementos como criança gravemente doente, fluxo urinário ruim, massa abdominal/vesical, creatinina elevada, septicemia, ausência de resposta a antibiótico apropriado em **48 horas** ou infecção por agente não *E. coli*. O conceito de **recorrência** combina episódios de ITU alta/baixa, e não a repetição de cultura positiva isolada. A indicação de imagem durante episódio agudo em criança com atipia busca **obstrução ou anomalia que exigirá conduta imediata**.
+
+**Ponto de prova:** uma criança de 4 meses, primeira ITU febril, boa resposta, não é equivalente a uma criança de 5 anos com primeira cistite típica nem a um menino de 2 anos com ITU febril por agente não *E. coli* e jato urinário fraco. Na primeira, existe indicação de US de seguimento segundo NICE; na segunda, geralmente não há imagem rotineira; na terceira, procurar anomalia/obstrução muda a segurança do manejo.
+
+**Ponto clínico brasileiro:** diretriz internacional tem excelente função de mostrar *como raciocinar*, mas a conduta deve ser conciliada com recomendações da SBP, disponibilidade de imagem/nefrologia e histórico obstétrico/urológico. Menino com suspeita de válvula uretral posterior, anúria, sepse ou obstrução não espera exame “de rotina em seis semanas”. Criança com disfunção vesicointestinal exige atenção à constipação e aos hábitos miccionais; terapia ou profilaxia antimicrobiana continuada precisa de indicação individual, não apenas de cultura anterior.
+
+### 18.2B. Se uma criança febril não melhora: sequência de cinco decisões
+
+**Primeira decisão — confirmar que se trata de resposta insatisfatória real.** Reavaliar curva febril, hidratação, perfusão, dor, diurese, aceitação oral e administração correta do antibiótico. Febre residual muito precoce não basta, isoladamente, para diagnosticar resistência, mas **ausência de melhora após cerca de 48 horas**, piora a qualquer momento, oligúria ou hipotensão são sinais de reexame imediato.
+
+**Segunda — confirmar material microbiológico.** Urina coletada por saco e cultura positiva sem quadro compatível não tem o mesmo valor de cultura de amostra apropriadamente colhida. Revisar método, crescimento de organismo único versus flora mista, presença de piúria, antibiograma e exposição farmacológica. Se antimicrobiano começou antes da coleta, cultura negativa não exclui infecção de forma absoluta.
+
+**Terceira — procurar foco não drenado ou diagnóstico alternativo.** Ultrassom para hidronefrose, cálculo, dilatação ou retenção; imagem adicional apenas quando pertinente. Considerar apendicite, infecção osteoarticular, vulvovaginite/uretrite, nefrite intersticial ou outras causas de febre. Em suspeita de obstrução infectada, acionar urologia e discutir **descompressão**, sem tratar antibiótico como substituto mecânico.
+
+**Quarta — verificar o esquema efetivo, não só o “espectro do antibiótico”.** Sensibilidade do isolado, exposição no parênquima, dose pediátrica correta, intervalo, vias, função renal, biodisponibilidade, vômitos e adesão modificam resposta. Nitrofurantoína e fosfomicina oral de dose única não substituem tratamento de pielonefrite; a opção mais “ampla” não é necessariamente a melhor se não alcança tecido ou aumenta toxicidade.
+
+**Quinta — registrar reavaliação e plano de retorno.** Alta só faz sentido em paciente estável, com ingestão adequada, cuidador capaz de observar, culturas acompanhadas e possibilidade de retorno. Se bacteremia, desidratação grave, febre no lactente muito jovem, suspeita de anomalia importante ou choque estiverem presentes, avaliação hospitalar e protocolo pediátrico específico se sobrepõem ao fluxo ambulatorial.
+
+**Erros que a LURIA deve evitar no futuro Bulário/Modo Trabalho:** copiar esquema oral de cistite para pielonefrite febril; trocar 48 horas de evolução por ordem automática de trocar antibiótico sem avaliar foco; prescrever profilaxia recorrente sem contextualizar refluxo/grau, idade e disfunção miccional; utilizar uma dose por “criança padrão” sem peso e função renal.
+
+### 18.2C. Matriz de validação obrigatória de tratamento pediátrico e obstétrico no Brasil
+
+Uma tabela didática com nomes de antibióticos **não** se torna prescrição segura sem verificações farmacêuticas por apresentação, idade e sistema orgânico. Para cada fármaco contemplado futuramente na LURIA, abrir uma ficha com campos que **ainda não estão certificados**:
+
+| Campo | O que verificar | Erro prevenido |
+|---|---|---|
+| Síndrome | Cistite localizada, pielonefrite, bacteremia, prostatite, obstrução infectada, gestação, neonatal | Antibiótico com concentração urinária mas inadequado para parênquima ou sangue |
+| Paciente | Peso atual, idade pós-natal/corrigida, gestação/trimestre, alergia verdadeira, TFG/IRA, função hepática | Aplicar dose de adulto, ou dose inadequada à depuração |
+| Produto brasileiro | Marca/apresentação, sal, mg por comprimido, mg/mL **após reconstituição**, registro/estoque no serviço | Confundir frascos ou concentrações |
+| Posologia rastreável | mg/kg/**dose** vs mg/kg/**dia**, teto por dose/dia, frequência, intervalo conforme função renal, duração e dia inicial de terapia efetiva | Superdose, subdose, duração insuficiente ou prolongada |
+| Administração | VO versus IV; diluente, compatibilidade, volume e velocidade de infusão; necessidade de monitorização | Reação por administração inadequada |
+| Evidência | Guia de idade/paciente, cultura/antibiograma, resposta, necessidade de controle de foco | Reproduzir dose internacional não aprovada/indisponível no Brasil |
+
+**Portão editorial:** até preencher fichas nacionais com fontes completas e farmacologia validada por profissional responsável, os regimes adultos já presentes na seção 17 são *exemplos vinculados às diretrizes citadas*, e não devem ser convertidos automaticamente em botão “Copiar prescrição”. Gestação com pielonefrite e criança com sinais sistêmicos exigem cuidado mais rigoroso; não inferir duração pediátrica de estudos IDSA predominantemente adultos.
+
 ### 18.3. Homens: próstata, obstrução e resistência
 Em um homem com disúria e polaciúria, a avaliação inclui síndrome urinária localizada, sinais sistêmicos, anomalia do trato, cálculo, retenção e comprometimento prostático. O diagnóstico de cistite estritamente localizada em homem jovem pode ocorrer, mas não deve ser presumido em homem febril. Na presença de febre, calafrios, dor pélvica/perineal ou retenção, considerar prostatite aguda e colher cultura; se houver instabilidade, avaliar internação e abscesso em paciente sem resposta.
 
@@ -532,6 +583,31 @@ Episódios de pielonefrite podem estar associados a cicatrizes renais em crianç
 **Conduta:** avaliação pediátrica, antibioticoterapia e destino de acordo com risco, cultura e possibilidades de seguimento. Não dar alta apenas por boa aparência sem cumprir critérios, nem diagnosticar ITU definitiva com cultura de saco.
 **Por que importa:** conecta dois capítulos e ensina que qualidade da coleta e risco etário são tão importantes quanto a bactéria isolada.
 
+
+### Caso 7 — lactente de quatro meses com primeira ITU febril e boa resposta
+
+Uma criança de quatro meses previamente hígida apresentou 38,8 °C, redução de apetite e urocultura positiva em amostra colhida adequadamente, com inflamação urinária compatível. Evoluiu estável e melhorou após tratamento apropriado, sem sinais de obstrução.
+
+**Hipótese:** primeira ITU febril, provavelmente acometimento alto pelo quadro sistêmico. **Raciocínio:** confirmação microbiológica e resposta favorável tornam menos provável foco urinário não drenado; isso não elimina avaliação anatômica baseada em idade. **Exame de seguimento:** segundo a NICE NG224, ultrassonografia renal/urinária em até seis semanas em menores de seis meses após primeiro episódio com boa resposta; conciliar com equipe pediátrica e recomendações brasileiras. **Conduta:** completar esquema efetivo individualizado, acompanhar cultura/resposta, orientar retorno por nova febre, letargia, oligúria e intolerância oral. **Por que importa:** US seletivo por idade não equivale à uretrocistografia universal.
+
+### Caso 8 — criança de cinco anos, primeiro episódio de cistite com boa evolução
+
+Menina continente de cinco anos com disúria e polaciúria, sem febre ou dor no flanco; cultura adequadamente colhida e quadro clínico compatível, com melhora rápida após conduta orientada.
+
+**Hipótese:** ITU baixa localizada. **Raciocínio:** sem critérios de atipia, recorrência ou comprometimento sistêmico, ultrassonografia/uretrocistografia/cintilografia universais oferecem baixo valor de rotina segundo a NICE. **Exames:** não pedir imagem automaticamente; reconsiderar se surgirem sinais de recorrência, alteração do fluxo, febre sistêmica ou resposta insatisfatória. **Conduta:** completar manejo individualizado, incentivar hábitos urinários e investigar constipação se presente. **Por que importa:** impedir uma cascata diagnóstica desnecessária é medicina de qualidade.
+
+### Caso 9 — menino de dois anos, febre persistente, bactéria não E. coli e jato urinário reduzido
+
+Menino de 26 meses mantém febre e prostração após 48 horas de tratamento aparentemente apropriado, com urocultura de coleta confiável identificando agente não *E. coli*. Responsável percebe jato urinário fraco desde os primeiros meses.
+
+**Hipótese:** ITU atípica com possibilidade de anomalia obstrutiva. **Raciocínio:** resposta insatisfatória, agente não usual e alteração do fluxo são três sinais de atipia na NICE. **Exames:** revisar função renal, inflamação, microbiologia e solicitar ultrassom durante a infecção para avaliar vias urinárias; discutir exames adicionais e avaliação urológica conforme resultados, sem assumir que UCM é primeira medida em todo paciente. **Conduta:** reavaliar hemodinâmica e antibiótico ativo, envolver pediatria/urologia e assegurar manejo de eventual obstrução. **Por que importa:** falha terapêutica pode decorrer de foco anatômico, não apenas de resistência.
+
+### Caso 10 — pielonefrite em adulta com melhora clínica, mas acesso oral duvidoso
+
+Mulher de 36 anos, não gestante, com pielonefrite confirmada, recebeu antimicrobiano IV ativo, está afebril e hemodinamicamente estável, porém apresenta vômitos importantes e urocultura com isolado suscetível a um agente oral.
+
+**Hipótese:** pielonefrite respondendo a tratamento, sem comprovação de segurança da transição para VO. **Raciocínio:** IDSA 2025 pede melhora, opção com exposição apropriada, capacidade de ingerir/absorver e fonte controlada, quando aplicável. O antibiograma favorável não resolve vômitos nem questões de biodisponibilidade. **Conduta:** manter via parenteral/observação até reavaliar capacidade oral e quadro clínico; procurar obstrução ou complicação se deteriorar. **Por que importa:** “existe antibiótico oral sensível” não é sinônimo de “alta obrigatória”.
+
 ## 24. Questões autorais estilo residência — oito itens com comentário de cada alternativa
 
 ### Questão 1 — localização anatômica e escolha do medicamento
@@ -606,6 +682,73 @@ D. Presumir pielonefrite crônica em toda mulher com recorrência.
 
 **Gabarito B.** A prevenção deve ser individualizada e proporcional; mulheres pós-menopausa podem se beneficiar de estratégias locais. **A** promove resistência. **C** trata colonização e exames isolados. **D** transforma cistite recorrente em doença renal sem evidência. **Conceito:** recorrência exige plano longitudinal e documentação, não exposição antibiótica ilimitada.
 
+
+### Questão 9 — imagem no lactente menor de seis meses
+
+Lactente de quatro meses, primeira ITU febril confirmada, responde adequadamente ao tratamento nas primeiras 48 horas. Segundo NICE NG224, o melhor plano de imagem é:
+
+A. Uretrocistografia para todos, durante o quadro agudo.
+B. Ultrassom de rins e vias urinárias em até seis semanas após o episódio, com avaliação clínica.
+C. Cintilografia DMSA obrigatória em 24 horas para todos.
+D. Nenhum exame de imagem é permitido em menores de seis meses.
+
+**Gabarito: B.** **A:** errada; UCM não é rotina universal após a primeira ITU. **B:** correta dentro da população e do calendário NICE; aplicação brasileira precisa da equipe local. **C:** errada; DMSA tardia é seletiva e não exame universal imediato. **D:** errada; há indicações reais de US. **Mini-revisão:** idade, atipia e recorrência definem os ramos da investigação.
+
+### Questão 10 — critérios de ITU atípica
+
+Menino de dois anos com ITU febril por bactéria não *E. coli*, jato urinário fraco e febre persistente após 48 horas de antimicrobiano adequado. Qual afirmação é mais apropriada?
+
+A. São características de ITU atípica; ultrassonografia durante a infecção e avaliação de obstrução são prioridades.
+B. O crescimento não *E. coli* demonstra contaminação e descarta infecção.
+C. A ausência de disúria elimina hipótese de pielonefrite em criança pequena.
+D. A uretrocistografia obrigatória sem avaliação clínica resolve qualquer obstrução.
+
+**Gabarito: A.** **A:** correta, por resposta inadequada, fluxo reduzido e agente não usual. **B:** errada, pois amostra adequada deve ser interpretada no contexto. **C:** errada, disúria pode estar ausente em pequenos. **D:** errada, imagem depende de objetivo e estabilidade; intervenção urgente pode ser necessária. **Mini-revisão:** reconhecer quem precisa de imagem durante a doença, e não apenas em retorno.
+
+### Questão 11 — cultura e coleta
+
+Um lactente com febre tem saco coletor positivo, mas não apresenta outros dados que definam ITU. Qual princípio é mais seguro?
+
+A. Saco coletor positivo sempre confirma pielonefrite.
+B. Bactéria cultivada em qualquer amostra obriga profilaxia contínua.
+C. Confirmar diagnóstico com amostra apropriada para cultura, associando sinais clínicos e inflamação urinária antes de classificar a infecção.
+D. Suspender qualquer investigação de infecção invasiva na criança muito jovem.
+
+**Gabarito: C.** **A:** errada, há alto risco de contaminação. **B:** errada, cultura isolada não determina profilaxia. **C:** correta; técnica da amostra e quadro clínico importam. **D:** errada, lactente pequeno febril requer avaliação própria de infecção invasiva. **Mini-revisão:** coleta é parte da validade do teste.
+
+### Questão 12 — antibioticoterapia efetiva e troca de via
+
+Paciente com pielonefrite melhorou de perfusão e febre após tratamento IV, com cultura suscetível a antimicrobiano VO, mas continua vomitando. Qual opção é correta?
+
+A. Trocar obrigatoriamente para VO porque a cultura informa sensibilidade.
+B. Considerar via oral apenas quando houver melhora, absorção/tolerância, agente efetivo com exposição adequada e segurança clínica.
+C. Dar nitrofurantoína por atingir grande concentração urinária.
+D. Contar sete dias a partir da primeira dose inefetiva e dar alta sem reavaliar.
+
+**Gabarito: B.** **A:** errada, vômitos prejudicam absorção. **B:** correta, segundo critérios condicionais IDSA 2025. **C:** errada, nitrofurantoína não trata pielonefrite. **D:** errada, a contagem começa da terapia efetiva; complicações exigem avaliação. **Mini-revisão:** VO é decisão farmacocinética e clínica, não um prêmio por cultura positiva.
+
+### Questão 13 — refluxo vesicoureteral
+
+Após investigação por ITU febril, identifica-se RVU. Qual raciocínio é preferível?
+
+A. Toda criança com refluxo deve receber antibiótico contínuo indefinidamente.
+B. O grau do refluxo e episódios anteriores não influenciam seguimento.
+C. Toda criança com RVU precisa de cirurgia imediata.
+D. Estratificar por idade, grau, ITU febril recorrente, cicatrizes, função renal, constipação e risco individual; discutir prevenção e eventual profilaxia com especialista.
+
+**Gabarito: D.** **A:** errada por excesso terapêutico. **B:** errada, risco é heterogêneo. **C:** errada, cirurgia não é padrão universal. **D:** correta; há múltiplos fatores para controle e prevenção. **Mini-revisão:** anomalia anatômica não substitui estratificação clínica.
+
+### Questão 14 — diretriz e população
+
+Uma pessoa pretende usar em criança de 18 meses o limite IDSA 2025 de sete dias para toda ITU complicada adulta, independentemente de foco, agente, obstrução, função renal e resposta. A crítica correta é:
+
+A. Toda recomendação IDSA 2025 serve automaticamente à infância.
+B. Diretriz de adultos pode ser transferida sem ajuste se a criança pesar mais de 10 kg.
+C. Duração e medicamento pediátricos exigem diretriz apropriada à idade e avaliação individual; não transpor indiscriminadamente estudo de adultos.
+D. Em pediatria, antibiograma e cultura nunca influenciam tratamento.
+
+**Gabarito: C.** **A/B:** incorretas, população e farmacologia diferem. **C:** correta; preservar escopo da evidência. **D:** errada, cultura dirigida pode ser essencial. **Mini-revisão:** sempre anotar população, denominador e limites de generalização de um guideline.
+
 ## 25. Pulo do Gato LURIA — revisão de alta utilidade
 
 **1. Infecção localizada e sistêmica são síndromes diferentes.** A EAU 2026 enfatiza sinais sistêmicos; “ter bactéria na urina” não define a topografia nem a gravidade. Disúria isolada e febre com dor lombar exigem estratégias terapêuticas distintas.
@@ -662,6 +805,17 @@ Estas candidatas são especificações de busca e aprovação, não imagens enco
 8. Nicolle LE et al. *Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria: 2019 Update by the IDSA*. Clin Infect Dis 2019;68(10):e83–e110. https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/
 
 **Nota sobre referências:** não afirmar que “o Brasil recomenda exatamente a mesma duração” apenas por diretriz IDSA/EAU; selecionar protocolo do serviço para posologia assistencial. O material de benchmark do Drive é **comparação pedagógica**, nunca fonte de recomendações mais forte que diretrizes atuais, nem autorização de copiar seu conteúdo. Informações epidemiológicas sem fonte nacional precisa não foram expressas em taxas fixas.
+
+
+### 27A. Fontes conferidas e limites deste aprofundamento (15/10/2026)
+
+- **NICE NG224**, *Urinary tract infection in under 16s: diagnosis and management*, seção 1.3 e tabelas 4–6. Diretriz estrangeira para estratificar imagem por idade/atipia/recorrência; não é regra automaticamente nacional. https://www.nice.org.uk/guidance/ng224/chapter/Recommendations
+- **Sociedade Brasileira de Pediatria**, *Infecção urinária: diagnóstico, investigação e prevenção* (13/09/2023), e orientação de maio/2023 para famílias: fundamento brasileiro de diagnóstico, gravidade e necessidade de avaliar estruturas quando apropriado; não atribuir a esse material exatamente as tabelas de tempo britânicas. https://www.sbp.com.br/infeccao-urinaria-diagnostico-investigacao-e-prevencao/ e https://www.sbp.com.br/pediatria-para-familias/doencas/infeccao-urinaria-na-crianca/
+- **EAU**, *Guidelines on Urological Infections*, 2026. Localização da infecção, imagem seletiva, exclusão de nitrofurantoína e fosfomicina oral na pielonefrite e necessidade de controle de foco. https://uroweb.org/guidelines/urological-infections/chapter/the-guideline
+- **IDSA**, *2025 Guideline on Management and Treatment of Complicated Urinary Tract Infections*. Troca IV→VO e duração em população selecionada predominantemente adulta, com ressalvas explícitas sobre obstrução, choque, disfunção renal, cateter e prostatite. https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/
+- **Drive comparativo realmente relido**: “03 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf” (20.932 caracteres extraídos; benchmark de anomalias estruturais, não uma apostila equivalente de ITU) e rascunho LURIA 121 em branch. Fonte de circulação “Medicina livre”; sem comprovação de autoria institucional Estratégia MED. **Não houve reprodução textual ou de imagem.**
+
+**Teste parcial por conteúdo interno:** questões 9–14 são respondidas por §§17.5, 17.9–17.12 e 18.2A–18.2C; casos 7–10 exercitam exame por idade, uso racional de imagem, controle de foco e troca de via. **Bloqueios:** ainda falta confronto com protocolo brasileiro completo de doses pediátricas/gestacionais, revisão médica independente, autorização de imagens, teste externo de questões e transformação HTML/PWA. Esta rodada **não certifica posologia pediátrica**.
 
 ## 28. Matriz de cobertura e teste de autossuficiência
 
