@@ -337,3 +337,38 @@ Conferidos diretamente a partir dos arquivos GitHub após os commits: cinco livr
 O `LOTE_02_INPUT_PREPUBLICACAO.json` foi sincronizado e o manifesto atualizado para **v6**; conferidos no momento do salvamento a sequência de casos/questões, fechamento de tabelas e nenhuma imagem não aprovada (`images: []`). **Nenhuma certificação de dose ou de conteúdo útil decorre automaticamente destas contagens.** O script Node de preflight e dry-run do gerador **não foram executados em checkout completo**; ainda faltam revisão clínica/farmacêutica integral, licenças de imagens reais, layout no leitor/PWA e publicação aprovada.
 
 **Estado: 5 edições contínuas em revisão, 0 publicadas, 0 merges e 0 deploys.**
+
+
+## Etapa 15 — correção pediátrica de Asma (GINA 2026) e Tuberculose (SUS) · 15/10/2026
+
+**Procedimento de etapa zero:** `lead_apostilas` conferido integralmente antes de iniciar. Foram lidos no Drive `Asma.pdf`, `Crise Asmática.pdf` e `02 - INFECTOLOGIA - TUBERCULOSE.pdf` **apenas como material comparativo de cobertura**, preservando autoria, sem reutilizar quadros, redação ou imagens. A decisão clínica foi construída a partir das fontes **primárias oficiais**: GINA 2026 Summary Guide, páginas impressas 28–29, conferidas textualmente e visualmente; e Ministério da Saúde, Nota nº 5/2024 sobre TB pediátrica, páginas 1–3, conferidas textualmente e visualmente; página oficial do MS de TB atualizada em março/2026.
+
+### 15.1 Asma — conteúdo novo realmente gravado
+- Na seção **8**, acrescentadas **8.3 Asma entre 6 e 11 anos** e **8.4 Pré-escolares**.
+- Alteração científica relevante: **GINA 2026 passou a admitir CI-formoterol em baixa dose conforme necessidade na etapa inicial de 6–11 anos**, alternativamente a CI em associação ao SABA na estratégia de alívio anti-inflamatório. A apostila esclarece a diferença em relação à orientação do ano anterior, distingue escalonamento de controle diário, explicita que **SABA isolado não é estratégia completa**, que LABA isolado é inadequado e que formulação/idade/bula/PCDT brasileiro precisam ser checados. **Não extrapolar o fluxograma de 6–11 para crianças ≤5 anos**.
+- Acrescentados **Casos 11–12** e **Questões 16–17** com raciocínio, diferencial e comentário por alternativa.
+- Fonte: https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf ; relatório completo https://ginasthma.org/2026-gina-strategy-report/ .
+- **Licenciamento:** as figuras do documento GINA são protegidas; **nenhuma reprodução foi incorporada**, somente texto e quadro pedagógico autorais, com atribuição científica.
+
+### 15.2 Tuberculose — conteúdo novo realmente gravado
+- Na seção **7**, acrescentadas **7.4 Tuberculose pediátrica e diagnóstico paucibacilar** e **7.5 Quando indicar quatro versus seis meses no SUS**.
+- O esquema encurtado de **4 meses (2RHZ(E)/2RH)** é alternativa para **TB sensível não grave com elegibilidade expressa e sem suspeita de resistência**. A Nota MS 5/2024 distingue menores de dez anos (fase inicial RHZ) de adolescentes a partir de dez (RHZE), peso <4 kg ou idade ≤3 meses (não elegíveis), doença disseminada/miliar, formas graves e necessidade de reavaliação mensal. TB meníngea/osteoarticular grave segue duração especial de 12 meses conforme forma clínica; crianças com HIV necessitam avaliação e seguimento próprios. **A tabela adulta de DFC RHZE não é aplicável indiscriminadamente à pediatria.**
+- Acrescentados **Casos 13–14** e **Questões 22–23** com diferenciação de doença leve/forma grave, exame clínico, imagem, teste molecular e prevenção.
+- Fontes: https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@download/file ; https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf .
+
+### 15.3 Controle de sincronização e pré-publicação
+
+| Livro | Caracteres Markdown brutos | Texto legível estimado no JSON | Casos | Questões | Tabelas HTML |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| **Asma** | **90.608** | **87.011** | **12** | **17** | **9** |
+| DPOC | 111.611 | 106.963 | 17 | 23 | 10 |
+| Diabetes | 103.938 | 99.415 | 14 | 23 | 13 |
+| Pneumonia | 96.147 | 91.723 | 16 | 23 | 12 |
+| **Tuberculose** | **121.300** | **115.877** | **14** | **23** | **15** |
+| **Total** | **523.604** | **500.989** | **73** | **109** | **59** |
+
+**Nota de contagem:** total da coluna de caracteres legíveis precisa ser calculado automaticamente do manifesto atualizado; números individuais foram aferidos do JSON salvo. Estimativa legível não certifica 60 mil caracteres didáticos úteis.
+
+Os seis novos blocos (dois capítulos clínicos com seus subtópicos, seções de casos e questões para cada apostila) foram convertidos em HTML com escape e sincronizados no arquivo `LOTE_02_INPUT_PREPUBLICACAO.json`. A validação em memória e leitura de volta de conteúdo do GitHub verificou sequência 1…N de casos/questões, tabelas balanceadas, cinco livros com mais de 60 mil caracteres estimados e **nenhuma imagem adicionada**. `LOTE_02_MANIFESTO_CONSOLIDACAO_2026-10-14.json` atualizado para **versão 7**.
+
+**Persistem bloqueios:** esquemas pediátricos ainda exigem conferência de apresentações e normas regulatórias brasileiras na liberação clínica; revisão farmacológica integral dos cinco livros; imagens médicas com licença e liberação no Admin; benchmark de PAC adulta no Drive; redução de possíveis redundâncias semânticas; testes reais Node do gerador, desktop e PWA. **Sem publicação, merge ou deploy**.
