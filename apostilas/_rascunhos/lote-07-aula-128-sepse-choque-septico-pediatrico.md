@@ -297,6 +297,37 @@ A SSC pediátrica 2026 formula **sugestão condicional** de titular oxigênio su
 
 **Limite de publicação e Modo Trabalho:** esta seção consolida verificação científica do processo de prescrição; **não contém doses clínicas pediátricas validadas de antibióticos, vasopressores ou sedativos**. Criar ficha farmacológica para uso assistencial exige validação conjunta de pediatria/UTI/farmácia clínica, bula/RENAME/registro brasileiro, apresentação real e protocolo institucional.
 
+
+### 6.15. A transferência não pausa o relógio da sepse — passagem estruturada de cuidado
+
+Existe um intervalo frequentemente invisível nos protocolos: a criança é reconhecida como potencialmente grave, a unidade solicita vaga de UTI, mas a equipe deixa de executar ações possíveis enquanto aguarda transporte. **Solicitar transferência não equivale a tratar nem a estabilizar.** Em suspeita de choque séptico, a SSC 2026 orienta antibiótico o mais rápido possível, idealmente até uma hora, além de ressuscitação contextualizada. Culturas devem anteceder a primeira dose **se isso não a atrasar substancialmente**.
+
+**Checklist com dupla checagem para primeira unidade e transporte:**
+
+| Elemento transmitido | Informação mínima verificável | Erro que evita |
+|---|---|---|
+| Identificação e horário | Peso utilizado, idade, comorbidades, hora de reconhecimento da disfunção, primeira dose realmente administrada | Confundir prescrição com administração; dose em peso incorreto |
+| Estado clínico | Via aérea, ventilação, SpO₂ com qualidade do sinal, consciência, perfusão, PA por faixa etária, pulsos e diurese | Transferir quadro em deterioração sem reavaliação |
+| Fluido | Tipo, volume **de cada bolus** e volume total mL/kg, resposta, ausculta, hepatomegalia, edema/crepitações, balanço | Repetir bolus que já causaram sobrecarga ou assumir “faltam 60 mL/kg” |
+| Antimicrobiano | Hipótese de foco, alergias, nome, dose/denominador, concentração, via, horários, coleta de culturas, antibiograma prévio | Perder janela terapêutica; erro de reconstituição/dose |
+| Vasoativo | Concentração final, dose e unidades de infusão, bomba, acesso utilizado, meta clínica e vigilância de extravasamento | Confundir mcg/kg/min e mL/h ou interromper na troca de bomba |
+| Fonte | Suspeita de coleção, via aérea, meningite, abdome, obstrução urinária ou cateter; consultas e procedimentos pendentes | Tratar sepse como problema exclusivamente farmacológico |
+| Próximas decisões | Critérios de reavaliação, acesso a UTI, tempo estimado para remoção, quem reavalia, sinais para escalada | “Paciente estabilizado” sem parâmetros verificáveis |
+
+**Decisão condicionada por capacidade:** SSC 2026 recomenda *contra* bolus rotineiro na **sepse sem hipotensão em sistema sem disponibilidade de UTI**; sugere bolus titulados em hipotensão nesse cenário. Já em sistema com UTI disponível, para choque séptico, considera bolus de 10–20 mL/kg até um teto potencial de 40–60 mL/kg **na primeira hora**, sempre parando após resolução de hipoperfusão ou aparecimento de sobrecarga. Não é adequado utilizar “quantos mL já foram feitos” como único objetivo. A classificação *com/sem UTI disponível* diz respeito à **capacidade real do sistema em prover cuidado intensivo e resgate**, não apenas à presença de uma placa com o nome “UTI” no hospital.
+
+**Vasoativo periférico quando necessário:** na persistência do choque, a diretriz sugere não atrasar início aguardando cateter central. Isso não dispensa escolher veia apropriada, monitorar perfusão distal e extravasamento, usar bomba e concentrações padronizadas pelo hospital, seguir procedimento de resgate em infiltração e obter acesso definitivo assim que indicado e seguro. Há **evidência insuficiente** para recomendar epinefrina universalmente superior à norepinefrina, ou um limiar obrigatório de volume de 40 mL/kg antes da primeira droga.
+
+### 6.16. Interpretação segura de oxigênio, via aérea e momento terapêutico
+
+Um alvo isolado de SpO₂ nunca substitui avaliação da entrega de oxigênio, perfusão e acidose. A **SSC 2026** sugere alvo conservador de **SpO₂ de 88–92% após a ressuscitação**, comparado com meta liberal acima de 94%, mas a recomendação é **condicional** e o momento é especificado. Não há base para usar essa faixa como ordem universal durante ressuscitação de criança hipoxêmica/instável ou em cardiopatia cianótica, anemia importante ou condições que tenham metas próprias.
+
+Em choque com alteração de consciência, hipoventilação ou insuficiência respiratória, a prioridade é equipe experiente em via aérea pediátrica, otimização da hemodinâmica pré-intubação, oxigenação apropriada ao cenário, plano para falha e monitorização contínua. A indução pode precipitar colapso hemodinâmico: avalie perfusão e vasoativos antes e durante a intervenção. A SSC 2026 sugere **contra etomidato** em crianças com sepse/choque séptico; esse enunciado não estabelece, por si só, uma “dose padrão obrigatória” de outro sedativo. A escolha e as doses de sedação, analgesia e bloqueio neuromuscular são decisão da equipe treinada com avaliação de contraindicações, função renal/hepática e apresentações disponíveis.
+
+**Diferencial didático com o material do Drive:** o resumo “Sedoanalgesia e SRI” lista agentes de indução e intubação, mas inclui afirmações excessivamente categóricas como “rocurônio não tem efeitos adversos”. Nenhum bloqueador é isento de riscos: paralisia prolongada, ausência de analgesia/sedação e problemas de monitorização tornam a combinação de drogas um procedimento de alto risco. **O resumo não serve como tabela validada para prescrição da LURIA.** O PDF “Insuficiência respiratória, PARDS” reúne critérios e ventilação protetora PALICC-2, que devem ser verificados nas fontes originais e **não substituir** o algoritmo de reanimação hemodinâmica.
+
+**Como registrar resposta à terapia:** melhora de tempo de enchimento capilar e estado mental, pulsos e tendência da pressão arterial, diurese e lactato seriado quando houver indicação são informações complementares. Uma SpO₂ isolada de 94% não prova perfusão, e um lactato isolado elevado não obriga mais fluido se há congestão e disfunção cardíaca.
+
 ## 7. O foco importa tanto quanto o antibiótico
 
 ### 7.1. Pneumonia com complicação pleural
@@ -313,6 +344,31 @@ Em cateter comprovadamente fonte de sepse, a SSC recomenda retirada **após esta
 
 ### 7.5. Meningite e meningococcemia
 Petéquias, púrpura, alteração neurológica, convulsão e choque exigem abordagem rápida; LCR pode ser útil, mas não atrasar antibiótico em criança instável. Medidas de quimioprofilaxia de contatos e saúde pública dependem de diagnóstico e normas de vigilância epidemiológica nacionais.
+
+
+### 7.6. Dengue grave e choque séptico: diferenciar o mecanismo sem atrasar cuidados
+
+No Brasil, “criança febril com choque” pode significar sepse bacteriana, dengue com extravasamento plasmático, ambas as condições em paralelo ou outra síndrome de choque. **Choque na dengue não deve receber automaticamente todo o pacote volêmico da sepse bacteriana**: são populações e mecanismos diferentes, com protocolos específicos de expansão e reavaliação.
+
+**Primeiro eixo — tempo de doença.** Na dengue, o declínio da febre geralmente entre o terceiro e o sétimo dia pode coincidir com **fase crítica**. Uma criança que “melhorou da febre” e agora está letárgica, vomita repetidamente, tem dor abdominal persistente ou redução de perfusão pode estar piorando. Persistência de febre não exclui dengue nem sepse bacteriana.
+
+**Segundo eixo — distribuição de líquido.** Aumento de permeabilidade capilar provoca saída de plasma para terceiro espaço; hemoconcentração em contexto apropriado, derrame pleural, ascite e extremidades frias podem indicar gravidade. O hematócrito precisa ser interpretado em **tendência**, com avaliação de sangramento e hidratação. Um valor isolado não distingue todos os estados hemodinâmicos: hemorragia pode reduzir hematócrito mesmo em paciente com extravasamento. Plaquetas baixas ajudam no quadro epidemiológico, mas o número isolado não define necessidade de volume, hemoderivados ou antibióticos.
+
+**Terceiro eixo — foco e evidência bacteriana.** Petéquias ou hemorragias podem ocorrer em dengue e meningococcemia; deterioração abrupta e púrpura fulminante com sinais de choque exigem tratar infecção invasiva como hipótese tempo-dependente. Não aguardar NS1, hemocultura ou hemograma para antibiótico se o quadro clínico sustenta **suspeita de choque séptico bacteriano**. Inversamente, hemoconcentração e sinais de alarme de dengue sem evidência de infecção bacteriana não tornam antibiótico universal obrigatório.
+
+| Pista observada | O que aumenta sua probabilidade | O que não concluir sozinho |
+|---|---|---|
+| Defervescência + dor abdominal contínua + vômitos persistentes + líquido cavitário | Dengue em fase crítica, especialmente em período de circulação local | “A febre acabou, então melhorou” |
+| Perfusão ruim + púrpura rapidamente progressiva + alteração de consciência | Infecção invasiva/meningococcemia entre hipóteses urgentes | “Sem rigidez de nuca, não é grave” |
+| Hematócrito crescente e instabilidade circulatória | Extravasamento plasmático, conforme contexto | “Não pode coexistir sangramento ou sepse” |
+| Taquicardia com função miocárdica deprimida e congestão | Disfunção cardíaca/miocardite ou cardiomiopatia associada à sepse | “Precisa do volume máximo sem reavaliação” |
+| Saturação diminuída, esforço respiratório e crepitações após bolus | Sobrecarga ou agravamento pulmonar possível | “A solução é automaticamente mais cristalóide” |
+
+**Decisão operacional:** classificar e tratar dengue segundo protocolo do **Ministério da Saúde (6ª edição de 2024, disponível/atualizada no portal em julho de 2026)**, levando em conta grupo de risco, sinais de alarme, choque, hidratação titulada, hematócrito e reavaliações. A SSC 2026 complementa decisões quando há **sepse bacteriana provável/choque séptico**, mas não substitui a classificação e os esquemas nacionais específicos de dengue. A simples data de atualização de uma página em 2026 **não significa nova edição clínica de 2026**.
+
+**Exemplo de raciocínio:** criança de oito anos, febre há quatro dias, agora com dor abdominal e vômitos, sonolência, enchimento capilar lento, pressão ainda normal e hematócrito em elevação. A pressão preservada não exclui choque; em região de dengue, considerar rapidamente fase crítica. Investigar sinais bacterianos e outras causas em paralelo. Transferência/observação intensiva, monitorização seriada e hidratação sob protocolo brasileiro são prioritárias. **Não copiar mecanicamente um teto de 60 mL/kg** como se o mesmo alvo se aplicasse a todos os choques.
+
+**Duas armadilhas de prova:** (1) choque séptico e dengue podem cursar com extremidades frias e pressão normal no início; a história temporal e a avaliação circulatória mudam os caminhos. (2) resultados de testes rápidos têm sensibilidade dependente do período da doença; teste negativo isolado não substitui julgamento clínico.
 
 ## 8. Suporte orgânico nas horas e dias seguintes
 
@@ -358,6 +414,19 @@ A SSC 2026 sugere **reabilitação individualizada precoce**, compatível com es
 **Equidade:** atrasos por turno, idade, território de origem e barreiras sociais; população sem acesso oportuno à UTI pode precisar de fluxos de transferência melhores, não de reproduzir indiscriminadamente volumes usados em grandes centros.
 
 **Nota de inferência:** queda do tempo até antibiótico é um processo desejável, mas não demonstra isoladamente benefício causal se perfil de gravidade mudou e houve aumento de tratamento de crianças que não tinham infecção bacteriana; o monitoramento deve avaliar também segurança e precisão diagnóstica.
+
+
+### 8.5. Checagem do paciente que sai do choque: não encerrar o caso cedo demais
+
+A criança inicialmente estabilizada precisa de **reavaliação sistêmica e longitudinal**. A intensidade da hipoperfusão inicial, o tempo de antibioticoterapia efetiva, a presença de disfunção de órgãos e a capacidade de controlar foco determinam risco de nova deterioração. Uma única pressão normal não basta para documentar recuperação.
+
+**Nas horas seguintes:** acompanhar diurese, equilíbrio hídrico acumulado, tendência da oxigenação, consciência, extremidades, perfusão, necessidade de vasoativo, eletrólitos, glicemia, função renal/hepática e hemograma conforme gravidade. Se houver sobrecarga, a SSC orienta prevenir excesso de fluido e considerar retirada ativa após estabilização quando indicada e sob monitorização; isso **não equivale a iniciar diurético em todo paciente ainda hipoperfundido**.
+
+**Microbiologia e descalonamento:** cultura obtida antes da terapia quando possível, laudo preliminar, espécie/sensibilidade e foco clínico compõem uma revisão diária. Um patógeno confirmado justifica adaptar antibiótico à suscetibilidade e penetração no sítio. Cultura negativa não exige automaticamente manter amplo espectro até completar prazo arbitrário; decisão de suspender ou estreitar depende do quadro, exames, fonte e orientação especializada. A SSC 2026 sugere **não usar procalcitonina rotineiramente para descalonamento quando existe programa efetivo de stewardship**.
+
+**Após alta:** explicar a cuidadores sinais de alerta respiratórios, declínio da tolerância a esforços, alteração da cognição, sono, humor, dificuldades escolares e recuperação funcional. Diretriz 2026 apoia avaliar risco de sequelas e orientar família para morbidade pós-sepse, embora não exista recomendação definitiva de um calendário único de seguimento para todos. A alta deve informar quais profissionais farão avaliação e em que prazo, individualizando conforme gravidade.
+
+**Conhecimento farmacológico que permanece em aberto:** duração antimicrobiana por foco/agente e função renal; dose máxima e diluições; farmacocinética alterada em choque e suporte renal; sedoanalgesia e bloqueio neuromuscular; interação com vasoativos e possibilidade de medicamento de alta vigilância. Nunca converter o exemplo de cálculo fictício da seção 6.12 em prescrição concreta.
 
 ## 9. Diagnósticos diferenciais: nem todo choque febril é séptico
 
@@ -474,6 +543,25 @@ A SSC 2026 sugere **reabilitação individualizada precoce**, compatível com es
 **Exames:** monitorização contínua, avaliação respiratória e hemodinâmica, exames conforme foco e gravidade.  
 **Conduta:** suporte conforme doença e fase clínica em ambiente apropriado, não retirar/recusar oxigênio apenas para "cumprir 88–92%"; reavaliar meta de oxigênio depois da estabilização por equipe pediátrica.  
 **Por que importa:** distingue recomendação condicional da regra mecânica insegura.
+
+
+### Caso 11 — criança com provável sepse em unidade sem UTI e sem hipotensão
+
+Menina de cinco anos com pneumonia provável, taquicardia, extremidades frias leves, porém alerta, PA por idade preservada, diurese mantida, sem insuficiência respiratória grave. Unidade não dispõe de cuidado intensivo nem recurso de resgate imediato.
+
+**Hipótese:** infecção com risco de agravamento; avaliar se há disfunção orgânica ou choque, não rotular automaticamente qualquer taquicardia como choque. **Raciocínio:** a SSC 2026 recomenda não administrar bolus de rotina em sepse **sem hipotensão** tratada em sistema sem disponibilidade de UTI; isso não dispensa líquidos de manutenção, avaliação frequente e antibiótico quando sepse bacteriana se sustenta. **Exames:** oxigenação, glicose, lactato e culturas quando indicados e viáveis, sem atrasar tratamento. **Conduta:** priorizar tratamento do foco, monitorização, manutenção hídrica adequada, reavaliação seriada e transferência se critérios clínicos exigirem. **Por que importa:** recurso disponível faz parte da indicação terapêutica, sem virar regra para negar ressuscitação ao paciente hipotenso.
+
+### Caso 12 — provável dengue grave na fase de defervescência
+
+Menino de nove anos mora em área com transmissão de dengue e apresenta cinco dias de febre, seguida de redução da temperatura e piora da dor abdominal, vômitos persistentes, prostração, hemoconcentração e derrame pleural discreto. Pulso rápido, extremidades frias, pressão ainda em faixa habitual para idade.
+
+**Hipóteses:** dengue com sinais de alarme/extravasamento plasmático e choque em evolução; manter avaliação de infecção bacteriana se surgirem evidências. **Raciocínio:** defervescência pode coincidir com fase crítica; PA normal inicial não prova perfusão suficiente. **Exames:** hematócrito seriado, plaquetas, sinais clínicos e laboratoriais de disfunção, avaliação respiratória e exames dirigidos para diferenciais. **Conduta:** manejo urgente pela classificação do MS para dengue e estratégia volêmica específica com reavaliações frequentes; transferência apropriada. Se meningococcemia ou outra infecção bacteriana grave coexistir na suspeita, não postergar terapia. **Por que importa:** não transportar automaticamente o teto de bolus da SSC para dengue grave.
+
+### Caso 13 — deterioração durante transferência com vasoativo periférico
+
+Criança de três anos, choque séptico por foco abdominal suspeito, recebeu antibiótico, ressuscitação titulada e iniciou vasoativo em acesso periférico sob equipe treinada; a transferência para centro cirúrgico/UTI foi solicitada. Antes da saída, piora tempo de enchimento capilar e surge edema no sítio da infusão.
+
+**Hipótese:** choque persistente com possível extravasamento/infiltração do vasoativo. **Raciocínio:** a segurança da via e do sistema de infusão é tão crítica quanto a escolha de droga; uma transferência não pode prosseguir ignorando erro de administração. **Exames:** avaliação hemodinâmica seriada, sítio de punção, integridade da bomba e concentração preparada, lactato quando indicado, pesquisa do foco e da perfusão de extremidades. **Conduta:** acionar imediatamente equipe experiente para controle do acesso/extravasamento conforme protocolo hospitalar, providenciar via segura e continuidade da terapia, rever plano cirúrgico de controle do foco e comunicar fatos, doses e horários ao time receptor. **Por que importa:** “iniciar vasoativo” e “garantir sua administração segura durante mudanças de ambiente” são objetivos distintos.
 
 ## 12. Dezesseis questões autorais com comentários completos
 
@@ -608,6 +696,62 @@ C. 180 mg.
 D. 540 mg.
 **Gabarito B.** 15×12 = 180 mg **por dia**; dividido por três = 60 mg **por dose**. **A:** ignorou peso. **C:** confundiu dose diária com dose unitária. **D:** multiplicou dose diária por número de administrações. **Minirrevisão:** mg/kg/dia e mg/kg/dose não são equivalentes. *Números inteiramente fictícios, não representam indicação de nenhum fármaco real.*
 
+
+### Questão 17 — fluido no serviço sem terapia intensiva
+
+Criança com sepse bacteriana provável, sem hipotensão e sem choque documentado, atendida em sistema sem terapia intensiva disponível. Segundo SSC 2026, o manejo inicial de volume mais adequado é:
+
+A. Administrar 60 mL/kg de cristaloide obrigatoriamente antes de reavaliar.
+B. Evitar bolus de rotina nesse contexto, iniciar manutenção e reavaliar clinicamente com tratamento e encaminhamento conforme gravidade.
+C. Administrar albumina como primeira escolha para toda criança séptica.
+D. Aguardar hipotensão para obter acesso ou iniciar antimicrobiano mesmo com sepse claramente provável.
+
+**Gabarito: B.** **A:** errada, mistura cenários e transforma teto em obrigação. **B:** correta; é recomendação forte para sistema sem UTI e sem hipotensão. **C:** errada, cristaloides são preferidos na reanimação inicial quando indicada. **D:** errada; o tratamento de sepse bacteriana provável não precisa esperar hipotensão. **Mini-revisão:** disponibilidade de suporte altera estratégia de fluido, não o dever de reavaliar.
+
+### Questão 18 — dengue e sinais de alarme
+
+Criança com febre há cinco dias apresenta defervescência, dor abdominal persistente, vômitos repetidos e hematócrito crescente. Qual raciocínio é mais correto?
+
+A. Redução da febre exclui piora clínica.
+B. Considerar fase crítica da dengue com extravasamento e seguir avaliação/classificação do MS; não copiar automaticamente o protocolo volêmico de choque séptico.
+C. Todo quadro tem que receber 60 mL/kg antes de qualquer reavaliação.
+D. Plaquetas baixas isoladas definem foco bacteriano e obrigam antibiótico amplo universal.
+
+**Gabarito: B.** **A:** errada; defervescência pode preceder choque por dengue. **B:** correta; sinais de alarme e tendência do hematócrito orientam risco. **C:** errada; mecanismo da dengue e monitorização demandam protocolo específico. **D:** errada; plaquetopenia não identifica bacteremia. **Mini-revisão:** não tratar toda hipoperfusão febril como se tivesse a mesma fisiopatologia.
+
+### Questão 19 — vasoativo no transporte
+
+Criança com choque séptico precisa de vasoativo enquanto aguarda leito intensivo. Há via periférica adequada sob monitorização, mas não cateter central. A afirmação alinhada à SSC 2026 é:
+
+A. A terapia deve aguardar acesso central mesmo com choque persistente.
+B. A diretriz determina norepinefrina para todos, sem exceção.
+C. Pode-se iniciar vasoativo pela via periférica apropriada sob monitorização para evitar atraso, checando concentração, acesso e extravasamento.
+D. Iniciar vasoativo é proibido antes de 40 mL/kg em qualquer circunstância.
+
+**Gabarito: C.** **A:** errada; diretriz favorece evitar atraso por acesso central. **B:** errada; evidência não permite preferência universal entre epinefrina e norepinefrina. **C:** correta. **D:** errada; não há regra absoluta de 40 mL/kg. **Mini-revisão:** segurança de via e bomba é parte da ressuscitação.
+
+### Questão 20 — antibiótico, culturas e relógio
+
+Criança com suspeita clínica robusta de choque séptico. Hemocultura poderá levar tempo indeterminado para ser colhida por dificuldade de acesso. Qual ação é mais adequada?
+
+A. Aguardar cultura e Phoenix completo antes de iniciar antibiótico.
+B. Iniciar antibiótico apenas se procalcitonina vier positiva.
+C. Priorizar antibiótico apropriado assim que possível, idealmente em até uma hora, colhendo culturas antes somente quando não houver atraso substancial.
+D. Prescrever, mas não administrar até confirmação microbiológica.
+
+**Gabarito: C.** **A:** errada; Phoenix é critério de classificação, não trava terapêutica. **B:** errada; biomarcador não determina sozinho início em choque. **C:** correta. **D:** errada; prescrição sem administração não trata o paciente. **Mini-revisão:** hora registrada deve ser a da dose administrada.
+
+### Questão 21 — paciente estabilizado e stewardship
+
+Criança recupera perfusão, culturas evoluem e confirma-se agente suscetível a opção de menor espectro. A conduta geral mais adequada é:
+
+A. Manter o esquema máximo até uma data fixa, mesmo com possibilidade segura de descalonamento.
+B. Reavaliar foco, resposta, cultura e opções de menor espectro/menor toxicidade, ajustando duração por síndrome e contexto.
+C. Tratar procalcitonina isolada como único critério para cessar qualquer antibiótico.
+D. Suspender monitorização de função renal e balanço hídrico após uma pressão normal.
+
+**Gabarito: B.** **A:** errada, perpetua exposição desnecessária. **B:** correta, expressa stewardship e avaliação individual. **C:** errada, PCT não deve ser usada rotineiramente como único guia quando programa adequado existe. **D:** errada, lesão orgânica/sobrecarga podem persistir. **Mini-revisão:** saída do choque não encerra cuidado intensivo nem seguimento.
+
 ## 13. Pérolas LURIA e prevenção de erros
 
 1. Criança hipoperfundida com PA “normal” pode estar em choque; **hipotensão não é requisito de entrada na ressuscitação**.
@@ -658,6 +802,19 @@ D. 540 mg.
 - Society of Critical Care Medicine (SCCM). *Recommendations — Pediatric Sepsis Campaign 2026*, com força e certeza por intervenção. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in  
 - Schlapbach LJ et al. *International Consensus Criteria for Pediatric Sepsis and Septic Shock*. *JAMA*. 2024;331(8):665–674. DOI 10.1001/jama.2024.0179. https://pubmed.ncbi.nlm.nih.gov/38245889/
 
+
+
+## 15B. Auditoria cruzada 2026 — referências primárias, benchmark e limites
+
+**Comparação do Google Drive reaberta nesta rodada:** “01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf” (14.974 caracteres extraídos) e “02 - RESUMO - INTENSIVA - INSUFICIENCIA RESPIRATORIA, PARDS .pdf” (10.320 caracteres extraídos). São **correlatos parciais**, não apostilas equivalentes de sepse pediátrica, e sua circulação não comprova autoria Estratégia MED. O material de sedoanalgesia contém afirmações que não devem ser adotadas como prescrição/política institucional sem revisão de fontes primárias e atualização; não reproduzir quadros ou imagens de terceiros.
+
+**Diretriz primária consultada efetivamente:** *Surviving Sepsis Campaign International Guidelines for the Management of Sepsis and Septic Shock in Children 2026*, publicada em 23/03/2026; corpo completo de recomendações no portal oficial SCCM: https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in. A matriz de conteúdo atual incorpora critérios sobre antibiótico (≤1 h no choque/≤3 h em sepse provável sem choque quando indicada), hemocultura sem atraso substancial, fluidos conforme recursos, escolha de cristalóides, via periférica para vasoativo, ausência de preferência universal entre adrenalina/noradrenalina, oxigênio conservador **após** ressuscitação, evitar etomidato, revisar foco/culturas e reabilitação.
+
+**Documento brasileiro consultado:** Ministério da Saúde. *Dengue: diagnóstico e manejo clínico: adulto e criança*, **6ª ed. 2024**, página oficial atualizada em **10/07/2026**. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca/view . Fonte para fase crítica, sinais de alarme, classificações e hidratação própria; **não é documento editado originalmente em 2026**. Usar apresentação/fluxo nacional mais recente que tenha sido integralmente conferido antes de incluir doses de reposição volêmica em dengue.
+
+**Limites de extrapolação:** SSC pediátrica não substitui protocolo de dengue, ressuscitação de desidratação sem sepse, choque hemorrágico, neonatologia/prematuridade ou choque cardiogênico. A existência de recomendações condicionais e itens sem evidência suficiente deve ser ensinada como **incerteza**, não como “não fazer nunca” ou “fazer sempre”. Embora medicamentos sejam citados para explicar a conduta, **nenhuma dose/diluição por apresentação comercial brasileira foi certificada** nesta etapa; a tabela do Bulário deve ser construída/validada separadamente.
+
+**Nova rastreabilidade (interna):** §§6.15–6.16 e Caso 13/Questão 19 = transferência e vasoativo; §7.6 e Caso 12/Questão 18 = choque em dengue; §8.5 e Questão 21 = segurança pós-choque; Caso 11/Questão 17 = volume quando não há terapia intensiva; Questão 20 = antibiótico/culturas. A aprovação final ainda exige revisão médica independente, teste de resolução externo, farmacologia brasileira por peso, imagem licenciada/Admin, renderização/compatibilidade PWA e auditoria de redundância. **Não publicar nem utilizar como protocolo de prescrição automática.**
 
 ## 16. Auditoria editorial e lacunas de certificação
 - [x] Separação do conteúdo adulto já em elaboração no lote 9.
