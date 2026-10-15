@@ -238,3 +238,251 @@ O xABCDE ganha tempo, mas não substitui tratamento definitivo. Hemorragia intra
 Se o serviço não dispõe do recurso necessário, o destino deve ser decidido cedo. Preparar transferência com via aérea/ventilação adequadas, controle externo de sangramento, acesso, hemoterapia em curso quando possível, monitorização, analgesia e documentação. Informar mecanismo, horário, tendência fisiológica, exame primário, resposta a líquidos/hemocomponentes, ultrassom/TC realizados, intervenções e riscos durante transporte. Uma transferência longa com paciente instável requer discussão explícita entre equipes sobre estabilização possível versus tempo até hemostasia definitiva.
 
 **Regra operacional:** um paciente que piora na etapa de avaliação secundária volta imediatamente ao xABCDE. “Já passamos do B” nunca é justificativa para ignorar nova hipoxemia ou assimetria de ventilação.
+
+
+## 13. Interpretação integrada de sinais, valores e evolução
+
+Sinais vitais em trauma precisam de contexto, tendência e resposta a intervenções. Pressão arterial sistólica isolada é um marcador tardio em certos pacientes, pois vasoconstrição compensa a queda de volume. Frequência cardíaca pode ser atenuada por betabloqueadores, marcapasso, condicionamento físico ou idade; também pode aumentar por dor, ansiedade e febre sem corresponder ao volume perdido. Avaliar uma variável sem as demais provoca alarmes falsos e falsa tranquilização.
+
+### 13.1 Pulso, pressão e índice de choque
+
+O índice de choque (frequência cardíaca dividida pela pressão sistólica) pode servir como indício adicional de instabilidade. Valores elevados merecem avaliação, mas o indicador não substitui exame, especialmente em gestação, crianças, idosos, atletas e pessoas em medicações cronotrópicas. Se um adulto apresenta FC 132 bpm e PAS 92 mmHg, o índice se aproxima de 1,43; isso aumenta preocupação com hipoperfusão, mas não identifica sua etiologia.
+
+A diferença entre pressão arterial e perfusão é central. Vasoconstrição pode manter PAS enquanto extremidades esfriam e a consciência piora. Em contrapartida, sedação ou lesão medular podem baixar pressão por mecanismos não hemorrágicos. A equipe deve perguntar repetidamente: há melhor perfusão? O paciente está mais alerta? A pele está mais quente? A frequência respiratória diminuiu? Pulsos estão mais fortes? O lactato tende a cair nas próximas avaliações? Uma leitura isolada não responde à pergunta.
+
+### 13.2 Hemoglobina, lactato e déficit de base
+
+A hemoglobina medida logo após uma perda aguda pode não refletir imediatamente o volume de sangue perdido, pois há perda simultânea de plasma e hemácias. Diluição por fluidos e redistribuição entre compartimentos modificam resultados posteriores. Portanto, Hb normal não exclui hemorragia significativa, e Hb baixa pode refletir anemia prévia, sangramento atual ou combinação. Testes seriados são interpretados com mecanismo, achados e terapêutica.
+
+Lactato elevado pode indicar hipoperfusão e metabolismo anaeróbio, mas também sofre influência de convulsões, catecolaminas, comprometimento hepático e outras variáveis. Déficit de base reflete alteração metabólica ácido-base, sendo útil ao lado do exame clínico. Uma tendência de melhora após controle de sangramento e ressuscitação reforça recuperação, enquanto piora ou incapacidade de normalizar deve suscitar sangramento persistente, hipoperfusão residual, distúrbio ventilatório ou outra causa.
+
+### 13.3 Exemplo de tendências em três momentos
+
+| Momento | Consciência | FC | PAS | Perfusão periférica | Interpretação |
+|---|---|---|---|---|---|
+| Chegada | Alerta, ansioso | 118 | 112 mmHg | Pele fria, enchimento lento | Não descartar choque compensado |
+| Após intervenção inicial | Alerta, FC cai | 102 | 118 mmHg | Perfusão melhora | Resposta favorável, ainda exige busca de fonte |
+| Quinze minutos depois | Confuso | 136 | 86 mmHg | Extremidades muito frias | Deterioração: retornar ao xABCDE e presumir ameaça ativa |
+
+Os valores são **didáticos e fictícios**, não limiares de diagnóstico isolado. O terceiro momento exige ação rápida mesmo que uma imagem anterior tenha sido pouco expressiva. O raciocínio clínico correto pergunta o que mudou no doente, não apenas o que mudou no número.
+
+## 14. Dor, sedação, antibioticoprofilaxia e prevenção de danos
+
+Controle da dor integra o tratamento. Dor intensa prejudica ventilação, aumenta resposta adrenérgica e dificulta exame. Analgesia titulada conforme consciência, hemodinâmica, ventilação, alergias, idade e protocolo local é preferível a negar medicação até “terminar toda a investigação”. Reexaminar nível de consciência e respiração após opioides ou sedativos, sobretudo quando há TCE ou lesão torácica. O efeito de sedação é dado clínico que precisa constar no prontuário para não ser confundido com deterioração espontânea.
+
+Em fraturas e luxações, avaliar e documentar perfusão e função neurológica distal **antes e depois** de imobilização/redução, quando viável. Alinhar e imobilizar conforme protocolo e ameaça neurovascular, sem perder prioridade da ressuscitação. Suspeitar de síndrome compartimental diante de dor intensa desproporcional e dor com alongamento passivo; pulsos presentes não excluem aumento perigoso de pressão no compartimento. A investigação e o tratamento são urgentes quando há suspeita clínica consistente.
+
+**Feridas abertas e fraturas expostas** exigem controle de sangramento, cobertura apropriada, avaliação cirúrgica, profilaxia antitetânica conforme situação vacinal e antibióticos precoces quando indicados pelas diretrizes do tipo de ferida. Não administrar antibiótico “para todo traumatizado”: lesões fechadas sem infecção ou indicação cirúrgica específica geralmente não justificam antimicrobiano. Decisões devem incluir flora provável, grau de contaminação, alergias, função renal e epidemiologia local.
+
+**Profilaxia de tromboembolismo** tem importante papel após estabilização, mas não deve agravar sangramento ativo. Considerar imobilidade, fraturas de pelve e membros inferiores, cirurgia, sangramento intracraniano e risco individual; o momento de iniciar medidas farmacológicas é decisão após reavaliação da hemostasia e das lesões. Enquanto isso, medidas mecânicas podem ter indicações e contraindicações específicas.
+
+## 15. Cinco cenários anatômicos que exigem decisões diferentes
+
+A abordagem por sistemas complementa, mas não substitui, o xABCDE. A localização da lesão influencia o tipo de exame, o procedimento definitivo e a urgência de transferir.
+
+### 15.1 Trauma penetrante de pescoço
+
+Prioridades: via aérea potencialmente difícil, hemorragia de vasos cervicais e risco de lesão esofágica ou traqueal. Hematoma expansivo, sangramento ativo importante, estridor, enfisema progressivo, choque ou déficit vascular focal demandam equipe cirúrgica e via aérea experiente precocemente. Feridas aparentemente pequenas podem ter trajetórias profundas. Não sondar a lesão com instrumento improvisado nem remover corpo estranho penetrante sem estratégia de controle. Em paciente estável, angiografia por TC ou investigação direcionada pode mapear estruturas; em instável, o plano deve priorizar intervenções imediatas.
+
+### 15.2 Trauma torácico fechado com piora progressiva
+
+Fraturas de costela e contusão pulmonar podem gerar dor e insuficiência respiratória após período relativamente silencioso. A ausência de dispneia grave nos primeiros minutos não afasta evolução desfavorável. Avaliar saturação em repouso e evolução, padrão respiratório, ausculta, necessidade de analgesia e sinais de lesão associada. A presença de hipotensão impõe diferenciar hemotórax, pneumotórax hipertensivo, tamponamento e hemorragias em outras regiões. O capítulo 057 aprofunda critérios específicos de drenagem, cirurgia e suporte.
+
+### 15.3 Trauma abdominal fechado
+
+Baque importante sobre abdome pode lesar baço, fígado, mesentério, intestino, rins e vasos. Peritonite, deterioração hemodinâmica ou ultrassom positivo em instabilidade podem exigir cirurgia imediata conforme contexto. Um abdome macio, especialmente em paciente sedado, alcoolizado ou com lesão neurológica, não exclui lesão significativa. Hemorragia retroperitoneal e lesão intestinal podem escapar à avaliação inicial com FAST. Em pacientes estáveis, TC contrastada ajuda a avaliar extensão e identificar lesões que demandam cirurgia, radiologia intervencionista ou vigilância protocolada.
+
+### 15.4 Trauma pélvico
+
+Fraturas do anel pélvico podem resultar de mecanismos de alta energia e provocar sangramento retroperitoneal maciço. Dor, deformidade, instabilidade fisiológica, hematoma perineal ou lesão urogenital aumentam suspeita. Não realizar repetidas compressões da pelve para “provar instabilidade”, pois podem deslocar fragmentos e agravar sangramento. Quando houver suspeita de sangramento de origem pélvica, estabilização circunferencial com faixa/binder bem posicionada sobre trocânteres maiores pode reduzir volume pélvico e movimento dos fragmentos; posicionamento alto na cintura é menos eficaz. A escolha entre cirurgia, tamponamento pélvico e angioembolização depende do sistema de trauma, da estabilidade e de outras fontes de sangramento.
+
+### 15.5 Trauma de membro com risco vascular
+
+Ausência de pulso distal, sinais de isquemia, hemorragia pulsátil, hematoma rapidamente expansivo, sopro/frêmito ou déficit progressivo exigem avaliação vascular urgente. Perfusão periférica deve ser documentada antes e depois da imobilização. Lesões vasculares podem coexistir com fraturas e síndrome compartimental. Controle temporário do sangramento externo precede reconstrução, mas demora excessiva ameaça viabilidade do membro. Em paciente estável, exames vasculares direcionados apoiam planejamento; isquemia ameaçadora e sangramento ativo não devem ser retardados por exames sem impacto imediato.
+
+## 16. Populações especiais e diferenças na leitura dos sinais
+
+### 16.1 Crianças: compensação longa e colapso rápido
+
+Crianças podem manter pressão arterial adequada apesar de depleção volumétrica progressiva graças à vasoconstrição e taquicardia. Hipotensão tende a ser manifestação preocupante e tardia. Avaliar perfusão, pulsos, comportamento, contato visual, estado de alerta e padrão respiratório conforme idade, e não aplicar limiares adultos de pressão, frequência ou Glasgow sem adaptação. Bradicardia em criança com insuficiência respiratória avançada é sinal de gravidade extrema.
+
+A via aérea pediátrica tem diferenças anatômicas, reservas de oxigênio menores e maior risco de dessaturação durante apneia. O tamanho de dispositivos e doses dependem de peso/comprimento; preparação incorreta é causa importante de dano. A investigação por imagem busca minimizar radiação desnecessária sem deixar de diagnosticar lesões relevantes. Em trauma pediátrico grave, uma unidade sem suporte apropriado deve acionar regulação cedo.
+
+O plano de ressuscitação da criança não é cópia em escala do adulto. Hemocomponentes, cristaloides quando indicados, antifibrinolíticos e demais fármacos obedecem dosagens e critérios pediátricos atualizados. Não usar dose adulta fixa de tranexâmico indiscriminadamente na infância. Hipotermia ocorre com facilidade por maior razão superfície/massa; aquecimento e controle de temperatura são essenciais.
+
+### 16.2 Gestantes: dois organismos, uma ressuscitação inicial materna
+
+A gestante apresenta aumento fisiológico de volume plasmático, frequência cardíaca e débito cardíaco, com modificações da resistência vascular. Por isso, sinais de hipovolemia podem ser percebidos tardiamente e pressão aparentemente normal não garante perfusão uteroplacentária. O melhor meio de proteger o feto é corrigir prontamente hipóxia, choque e hemorragia maternos. Em idade gestacional avançada, compressão aortocava pelo útero em decúbito dorsal pode reduzir retorno venoso; realizar deslocamento uterino para a esquerda ou posicionamento compatível com imobilização segura, conforme situação.
+
+Investigar lesões maternas pelo mecanismo e fisiologia, sem negar exames necessários apenas pelo receio de radiação. Considerar avaliação obstétrica e fetal após estabilização, conforme idade gestacional e gravidade. Sangramento vaginal, dor abdominal, hipertonia uterina, contrações ou alteração de movimentação fetal sugerem complicações obstétricas, inclusive descolamento prematuro de placenta, mas **a ausência de sangramento vaginal não exclui descolamento**.
+
+Pesquisar grupo sanguíneo/Rh e necessidade de imunoglobulina anti-D e exames específicos em gestantes Rh-negativas conforme diretriz obstétrica e tipo de exposição; essa decisão não deve competir com ressuscitação materna. O capítulo obstétrico correlato discute vigilância fetal, mas o treinamento do xABCDE deve ser suficiente para estabilizar e reconhecer urgência.
+
+### 16.3 Idosos e pacientes com fragilidade
+
+Um idoso com trauma de baixa energia pode apresentar fratura, hemorragia intracraniana ou descompensação cardiorrespiratória importante. Betabloqueadores podem impedir taquicardia compensatória e anticoagulantes aumentar risco de hemorragia. A reserva fisiológica menor implica deterioração com perdas relativamente menores, e o exame inicial pode ser enganoso. Procurar histórico de quedas, síncope antecedendo trauma, demência, polifarmácia e basal funcional. A decisão de investigar não pode depender apenas de mecanismo descrito como “queda boba”.
+
+Medicamentos anticoagulantes devem ser identificados pelo nome, dose, horário da última administração, função renal e indicação. Hemorragia grave pode exigir reversão específica de anticoagulação paralelamente a controle de fonte e ressuscitação, conforme agentes e protocolos disponíveis. Suspensão ou reversão têm risco trombótico e devem ser justificadas; não presume-se que todos usam o mesmo antídoto.
+
+### 16.4 Pessoas com doença medular, deficiência ou neurodivergência
+
+Informações de função neurológica basal são indispensáveis para distinguir déficit antigo de lesão nova. Pacientes com dificuldades de comunicação ou deficiências sensoriais podem demonstrar dor e sofrimento de modo não usual. A equipe deve adaptar comunicação e buscar acompanhantes/informantes sem comprometer consentimento e autonomia. Restrição de mobilidade inadequada pode ser particularmente nociva em pessoas com deformidades ou dispositivos prévios.
+
+### 16.5 Pacientes intoxicados
+
+A intoxicação alcoólica ou por outras substâncias reduz confiabilidade do exame neurológico, da dor e da história. Não usar intoxicação como explicação automática para alteração de consciência, hipotensão ou hipoxemia. Exigir reavaliação, dados de testemunhas, busca de lesão intracraniana e outras causas reversíveis conforme mecanismo e evolução. Quando avaliação clínica de coluna não é confiável, critérios de liberação devem ser adaptados ao risco e protocolo de imagem.
+
+## 17. Algoritmos autorais de decisão na sala de trauma
+
+### 17.1 Algoritmo A: o paciente chegou sangrando e hipotenso
+
+1. Liderança anuncia provável trauma grave e solicita auxílio, sangue e cirurgia.
+2. Verificar e conter sangramento externo exsanguinante por compressão, torniquete ou técnica apropriada.
+3. Avaliar passagem de ar, ventilação e oxigenação; tratar insuficiências imediatamente com proteção cervical quando indicada.
+4. Examinar perfusão; obter acesso seguro e ativar ressuscitação hemostática diante de suspeita de grande perda.
+5. Procurar fontes em tórax, abdome, pelve/retroperitônio e membros, realizando investigação mínima que realmente altere conduta.
+6. Identificar se há obstrução circulatória por tórax ou tamponamento, em paralelo à busca de hemorragia.
+7. Direcionar precocemente para hemostasia definitiva com cirurgia/radiologia intervencionista conforme cenário.
+8. Reavaliar consciência, oxigenação, circulação, temperatura, resposta e efeitos adversos a cada intervenção.
+9. Planejar transferência apenas com avaliação realista dos recursos necessários e da capacidade de transporte.
+
+**Racional:** estabilização temporária não equivale a tratamento da fonte. Se perfusão não melhora ou melhora apenas transitoriamente, a perda provavelmente continua ou existe causa alternativa relevante. Se a TC não estiver imediatamente segura, não transformá-la em requisito burocrático para operar.
+
+### 17.2 Algoritmo B: insuficiência respiratória súbita após intubação
+
+1. Confirmar que há ventilação e capnografia confiável; chamar ajuda.
+2. Verificar tubo e circuito: deslocamento, obstrução, desconexão e falha do equipamento.
+3. Auscultar ambos os lados e procurar assimetria expansiva; suspeitar de intubação seletiva, pneumotórax ou hemotórax.
+4. Se houver sinais clínicos de pneumotórax hipertensivo com instabilidade ou falência respiratória grave, descomprimir imediatamente por técnica apropriada.
+5. Integrar hipóxia com choque, sangramento, aspiração e contusão pulmonar.
+6. Após correção, registrar intervenção e repetir xABCDE, pois pressão positiva pode ter alterado retorno venoso.
+
+**Racional:** um ventilador pode exibir parâmetros sem garantir troca gasosa. Uma imagem pré-intubação não exclui nova tensão pleural depois de pressão positiva.
+
+### 17.3 Algoritmo C: Glasgow piorou durante observação
+
+1. Garantir passagem de ar, avaliar padrão respiratório, saturação, pressão e perfusão.
+2. Corrigir hipóxia, choque e hipoglicemia quando presentes.
+3. Comparar Glasgow por componentes, tamanho/reação pupilar e sinais focais prévios.
+4. Verificar efeito temporal de opioides, sedativos e anticonvulsivantes, sem atribuir automaticamente a eles a piora.
+5. Após estabilização, decidir imagem urgente e consulta neurocirúrgica segundo mecanismos, exame e capacidade local.
+6. Comunicar tendência e horário da piora à equipe de destino.
+
+**Racional:** déficit neurológico não autoriza “pular” vias aérea e circulação. Mas rebaixamento novo, mesmo com sinais sistêmicos estáveis, pode indicar hemorragia intracraniana em expansão.
+
+### 17.4 Algoritmo D: FAST negativo em paciente instável
+
+1. Confirmar a qualidade técnica do exame e a interpretação.
+2. Não excluir hemorragia abdominal, pélvica ou retroperitoneal por FAST negativo.
+3. Reexaminar tórax, pelve, membros e sangramento externo.
+4. Reavaliar resposta transfusional e possibilidade de choque obstrutivo ou cardiogênico.
+5. Definir se a instabilidade impede deslocamento para TC; envolver cirurgia/centro de trauma.
+6. Repetir ultrassom quando útil, mas nunca utilizá-lo para adiar intervenção necessária.
+
+**Racional:** FAST avalia determinadas janelas e não tem sensibilidade de 100% para todas as lesões. A decisão nasce da clínica e do contexto de lesão, não de um exame binário.
+
+## 18. Tabelas de alta utilidade para provas e prática
+
+### 18.1 Comparação rápida de tipos de choque
+
+| Tipo | Mecanismo dominante | Pistas | Tratamento inicial que diferencia |
+|---|---|---|---|
+| Hemorrágico | Redução de retorno venoso e massa eritrocitária | Sangramento, hipoperfusão, resposta transitória | Controle de fonte + hemocomponentes conforme protocolo |
+| Pneumotórax hipertensivo | Obstrução de retorno venoso e ventilação | Dispneia grave, assimetria, instabilidade | Descompressão quando indicação clínica |
+| Tamponamento cardíaco traumático | Restrição do enchimento por sangue pericárdico | Trauma penetrante, choque, achados ecográficos no contexto | Intervenção emergencial especializada |
+| Neurogênico | Perda de tônus simpático após lesão medular | Hipotensão, possível bradicardia, déficit medular | Excluir sangramento, suportar perfusão, cuidar de lesão medular |
+| Cardiogênico | Falha de contratilidade/bomba | Arritmia, sinais cardíacos, disfunção ao ultrassom | Suporte hemodinâmico individualizado e tratar causa |
+
+**Advertência:** as pistas não são patognomônicas. Tamponamento e pneumotórax podem ocorrer em pacientes simultaneamente hemorrágicos, e choque neurogênico é diagnóstico de cuidado, não de exclusão rápida por frequência cardíaca baixa.
+
+### 18.2 Escolher exame pelo problema e pela estabilidade
+
+| Pergunta | Exame útil | Limitação a ensinar |
+|---|---|---|
+| Existe líquido livre intraperitoneal sugestivo de hemorragia? | FAST/eFAST à beira-leito | Negativo não exclui sangramento significativo, especialmente retroperitoneal |
+| Há suspeita de pneumotórax no paciente estável? | eFAST pulmonar ou imagem conforme protocolo | Operador dependente; não adia descompressão de tensão com instabilidade |
+| Há lesão abdominal ou torácica que necessita estadiamento? | TC contrastada em paciente apto | Deslocamento arriscado em choque não controlado |
+| Hemorragia pélvica após trauma de alta energia? | Avaliação clínica + imagem selecionada | Um “sinal normal” não exclui sangramento retroperitoneal |
+| Existe lesão vascular de membro com sinais ameaçadores? | Exame vascular e imagem conforme estabilidade | Isquemia ameaçadora não espera exame sem utilidade imediata |
+| Houve deterioração neurológica? | Exame seriado + TC quando viável | Primeiro corrigir hipóxia/hipotensão e assegurar transporte seguro |
+
+### 18.3 Quadro de erros frequentes
+
+| Erro | Por que é perigoso | Raciocínio substituto |
+|---|---|---|
+| Fazer TC por rotina no choque não responsivo | Atrasa hemostasia definitiva | Exame mínimo que muda a intervenção |
+| Considerar sangue normal porque Hb inicial normal | Equilíbrio intravascular pode ainda não refletir perda | Interpretar tendências e sinais de perfusão |
+| Dar cristaloide fixo a todos | Diluição, hipotermia, atraso de sangue | Ressuscitação dirigida e precoce controle de fonte |
+| Esperar desvio traqueal no pneumotórax hipertensivo | Achado tardio, nem sempre presente | Integrar assimetria e deterioração clínica |
+| Aceitar FAST negativo como ausência de sangramento | Não detecta todas as lesões | Integrar clínica, repetir/avançar investigação conforme estabilidade |
+| Não aquecer o traumatizado | Agrava disfunção de coagulação | Prevenção ativa de hipotermia |
+| Atribuir baixo Glasgow a álcool sem testar outras causas | Perde hipóxia, choque, hipoglicemia e TCE | ABCDE, glicemia, exame seriado e imagem conforme indicação |
+| Manter prancha rígida por períodos longos | Dor, pressão e complicações | Usar restrição de movimento apropriada e reavaliar |
+| Aguardar cirurgia antes de pedir sangue | Perde janela de ressuscitação | Acionar hemoterapia e cirurgião em paralelo |
+| Presumir que todo choque com lesão medular é neurogênico | Pode ocultar hemorragia fatal | Investigar sangramento e causas obstrutivas |
+
+## 19. Comunicação, documentação e segurança assistencial
+
+Registrar mecanismo provável, horário da lesão, sinais vitais em sequência, resultados do exame xABCDE, horário de torniquete, dispositivos, transfusões e medicamentos, resposta às intervenções e hipóteses ainda abertas. No trauma, uma linha do tempo é clinicamente útil: hipotensão após intubação, por exemplo, pode relacionar-se a sedação, ventilação, sangramento ou tensão pleural. Sem horário, perde-se contexto causal.
+
+Na comunicação com familiares, explicar incerteza proporcionalmente ao que se sabe: é possível informar que existe suspeita de hemorragia interna e necessidade de cirurgia sem afirmar órgão lesado antes da confirmação. Documentar consentimentos viáveis, situações emergenciais, decisões compartilhadas quando possíveis e informações transmitidas ao serviço receptor. Respeitar a privacidade do paciente durante exposição e transporte.
+
+A conferência de segurança no fim da etapa inicial deve perguntar: hemorragia externa controlada? Via aérea e ventilação funcionais? Acesso e sangue disponíveis se indicados? Fonte de choque analisada? Exame neurológico basal documentado? Temperatura protegida? Lesões ocultas procuradas? Equipe de destino informada? Plano alternativo para deterioração definido?
+
+## 20. Caso clínico comentado 1 — Sangramento de membro e choque oculto
+
+**Apresentação.** Homem de 28 anos, colisão de motocicleta, chega consciente e agitado. Na perna direita há ferida profunda com perda externa abundante. A equipe pré-hospitalar informou compressão intermitente. FC 136 bpm, PAS 104 mmHg, FR 28/min, SpO2 96% em ar ambiente, pele fria e enchimento capilar lentificado. Refere dor no quadril. Não há dispneia.
+
+**Problema inicial.** Embora a PAS ainda ultrapasse 100 mmHg e a saturação seja normal, há sinais de provável hipoperfusão e sangramento exsanguinante. O primeiro minuto não deve ser gasto em radiografia da perna.
+
+**Raciocínio.** Controle efetivo do sangramento externo é o x. Avaliar simultaneamente via aérea e ventilação. Em seguida, verificar perfusão, obter acesso e acionar recursos de hemostasia/hemoterapia diante de grande perda. A dor no quadril exige suspeita adicional de lesão pélvica; sangramento externo controlado não prova que se encerrou perda total. Em contexto apropriado, realizar estabilização da pelve e investigação dirigida conforme estabilidade. Documentar tempo de torniquete, se usado.
+
+**Exames.** Hemograma, tipagem, prova de compatibilidade, gasometria e lactato podem ser colhidos sem atrasar conduta. eFAST pode ser utilizado para perguntas selecionadas; TC só quando fisiologia permitir. Avaliação neurovascular distal do membro é essencial depois do controle de sangramento.
+
+**Interpretação.** A combinação de taquicardia, extremidades frias e sangramento abundante favorece choque hemorrágico ainda compensado. A normalidade da SpO2 não garante oferta de oxigênio satisfatória. Se houver queda de pressão após o controle externo, investigar nova fonte ou dano persistente.
+
+**Conduta.** Manter hemostasia, chamar cirurgia/ortopedia/vascular conforme lesões, ressuscitar com hemoderivados conforme necessidade e protocolo, prevenir hipotermia e programar hemostasia definitiva. Analgesia e profilaxia de lesão aberta não podem tomar a frente do controle hemorrágico, mas entram assim que condições vitais permitem.
+
+**Por que importa.** Ensina a distinguir pressão normal de perfusão normal e a executar x antes do A quando hemorragia externa catastrófica é evidente, sem abandonar a busca de perdas internas.
+
+## 21. Caso clínico comentado 2 — Colapso após ventilação com pressão positiva
+
+**Apresentação.** Homem de 45 anos, queda de altura. Chega com esforço respiratório e trauma torácico esquerdo. Necessita intubação por hipoxemia grave e redução do nível de consciência. Pouco após ventilação mecânica, apresenta PAS 68 mmHg, SpO2 81%, taquicardia e expansibilidade esquerda muito reduzida. O equipamento parece conectado, mas ventilação é difícil.
+
+**Hipóteses.** Pneumotórax hipertensivo é hipótese prioritária diante de lesão torácica e piora após pressão positiva. Permanecem em diferencial tubo deslocado/obstruído, intubação seletiva, problema do ventilador, hemorragia torácica e outras causas de choque.
+
+**Raciocínio.** Primeiro confirmar oxigenação e posição do tubo por capnografia, ventilação e ausculta, enquanto procura assimetria. Se exame indicar pneumotórax hipertensivo com instabilidade, não esperar radiografia. A pressão intrapleural elevada reduz retorno venoso e expansão pulmonar: a mesma lesão produz hipoxemia e hipotensão. Descompressão por equipe treinada é medida temporalmente crítica.
+
+**Exames.** A avaliação clínica domina a decisão imediata; eFAST à beira-leito apenas se não atrasar intervenção. Radiografia e TC cabem após tratamento e estabilização, para confirmar evolução e lesões concomitantes.
+
+**Conduta.** Descomprimir conforme técnica e protocolo disponível, providenciar drenagem definitiva quando indicada, manter suporte ventilatório e revisar circulatório após intervenção. Se não houver melhora, continuar investigação de tubo, hemotórax, tamponamento e sangramento de outras regiões.
+
+**Por que importa.** Demonstra que um procedimento necessário pode modificar fisiologia e revelar uma ameaça imediatamente fatal; o xABCDE deve ser reiniciado após a deterioração.
+
+## 22. Caso clínico comentado 3 — FAST negativo e hemorragia pélvica
+
+**Apresentação.** Mulher de 61 anos atropelada, refere dor pélvica intensa. Chega sonolenta, FC 124 bpm e PAS 78 mmHg, com extremidades frias. FAST inicial tecnicamente adequado é negativo para líquido intraperitoneal. Há hematoma em região inguinal e dor importante à mobilização, sem necessidade de compressões repetidas na pelve.
+
+**Erro provável.** Concluir que FAST negativo exclui hemorragia e iniciar grande infusão de cristaloide para normalizar PAS antes de qualquer outra avaliação.
+
+**Raciocínio.** A suspeita de sangramento retroperitoneal associado a lesão pélvica permanece alta. FAST procura líquido em janelas específicas e pode permanecer negativo em sangramento pélvico. Deve-se investigar também tórax, membros e fontes externas, pois traumas múltiplos são comuns. O exame clínico e mecanismo justificam acionamento precoce de cirurgia/trauma e hemoterapia.
+
+**Exames.** Radiografia de pelve ou TC podem ser úteis segundo disponibilidade e resposta à ressuscitação, mas a instabilidade grave não responsiva demanda caminho curto até hemostasia. O plano deve explicitar o papel de cirurgia, estabilização pélvica e angioembolização conforme rede.
+
+**Conduta.** Estabilizador pélvico na posição anatômica adequada quando suspeita de lesão instável, ressuscitação hemostática, prevenção de hipotermia, controle de coagulopatia e encaminhamento ao recurso definitivo. Investigar concomitantes, inclusive dano abdominal não detectado pelo FAST.
+
+**Por que importa.** Ensina limitação real de exame complementar e a relação entre território anatômico e mecanismo de choque.
+
+## 23. Caso clínico comentado 4 — Idoso anticoagulado e declínio tardio de consciência
+
+**Apresentação.** Homem de 79 anos em anticoagulante oral por fibrilação atrial sofre queda da própria altura. Na chegada, Glasgow 15, PA 132/74 mmHg, FC 68 bpm, SpO2 97%, sem sangramento externo relevante. Apresenta pequeno hematoma em região occipital e relata cefaleia. Duas horas depois, torna-se confuso, vomita e tem assimetria pupilar discreta.
+
+**Problema.** Mecanismo aparentemente banal e sinais vitais normais podem levar a subvalorização. O uso de anticoagulante eleva risco de hemorragia e a fisiologia do idoso torna indicadores habituais menos confiáveis.
+
+**Raciocínio.** O primeiro passo diante de deterioração é repetir avaliação de via aérea, ventilação e perfusão, conferir glicemia e comparar exame neurológico anterior. Deterioração com sinais focais e vômitos sugere lesão intracraniana, exigindo imagem e neurocirurgia urgentes assim que seguro. Identificar agente anticoagulante e horário da última dose é necessário para planejamento de reversão quando houver indicação.
+
+**Exames.** TC de crânio e exames de coagulação/hemograma conforme agente; testes de coagulação usuais não medem igualmente atividade de todos os anticoagulantes. Documentar componente verbal, motor e ocular do Glasgow e características pupilares em série.
+
+**Conduta.** Suporte ventilatório e hemodinâmico conforme necessidade; avaliação neurocirúrgica emergencial, investigação e reversão dirigida se hemorragia relevante confirmada/suspeita segundo protocolo e tempo clínico; transferência para serviço capaz de oferecer intervenção.
+
+**Por que importa.** Mostra que reavaliação sistemática é tão importante quanto avaliação de chegada e que medicamentos mudam probabilidade pré-teste e recursos necessários.
