@@ -134,3 +134,26 @@ Foram consultadas fontes institucionais públicas **ISUOG Practice Guidelines 20
 - Testes de sintaxe, HTML responsivo, desktop/PWA e revisão médica independente antes de integração; nenhuma publicação automaticamente autorizada.
 
 **Próximo tema na ordem:** **209 — Aloimunização materno-fetal e doença hemolítica perinatal.** Antes de escrever, verificar sobreposição com pré-natal de baixo risco e com materiais neonatais de icterícia, confirmar normativas atuais de profilaxia anti-D e Doppler ACM para anemia fetal, e pesquisar apostila do Drive correlata (foi localizado `02 - DOENCA HEMOLITICA PERINATAL.pdf` durante a busca da 208, mas AINDA NÃO aberto nesta rodada).
+
+
+## Continuação em 15/10/2026 — consolidação das aulas 208 a 210
+
+**Branch editorial**: `editorial/lote-10-204-225`. O conteúdo foi salvo e conferido nesta branch, sem merge na `main`, sem deploy, sem modificação do catálogo PWA ou das apostilas HTML publicadas. Uma atualização independente da 209 já existia na mesma branch durante esta rodada; seus capítulos/casos foram **preservados**, o novo conteúdo foi conciliado e as duplicações de casos removidas.
+
+| Aula | Arquivo verificado | Caracteres Markdown brutos | Casos comentados | Questões comentadas | Estado |
+| --- | --- | ---: | ---: | ---: | --- |
+| 208 — Gestação gemelar e alto risco | `lote-10-aula-208-gestacao-gemelar-alto-risco.md` | 75.534 | 8 | 14 | Rascunho expandido, ainda não certificado |
+| 209 — Aloimunização e DHFN | `lote-10-aula-209-aloimunizacao-doenca-hemolitica-perinatal.md` | 85.100 | 11 | 14 | Rascunho conciliado e ampliado, ainda não certificado |
+| 210 — Psicopatologia, entrevista e EEM | `lote-10-aula-210-psicopatologia-entrevista-exame-mental.md` | 59.971 | 6 | 10 | Rascunho novo, ainda não certificado |
+
+**Atenção:** contagem bruta inclui Markdown, metadados, bibliografia, casos e exercícios. **Não comprova 60 mil caracteres didáticos úteis ou autossuficiência**, e a qualidade tem prioridade sobre a extensão. A 210 tem quase 60 mil **brutos**, não deve ser promovida como concluída por isso.
+
+### Fontes e distinções clínicas preservadas
+
+- **208:** ISUOG 2025 (gemelares), SMFM Consult #72 de 2024 (TTTS/TAPS) e NICE NG137; adicionados TRAP, gêmeos conjugados, cervicometria, laudo estrutural, parto, oito casos e quatorze questões. Diretrizes nacionais, detalhes fetoscópicos e imagens clínicas exigem revisão antes de publicar.
+- **209:** benchmark Drive `02 - DOENCA HEMOLITICA PERINATAL.pdf` aberto/lido, mais resumo neonatal correlato. Preservada distinção anti-D **passivo versus imune**, **anti-c versus anti-C**, anti-K de maior risco e profilaxia versus TIU. Referências BSH 2025 **com errata DOI 10.1111/tme.70013**, consenso Moise et al. JAMA Network Open 2025, SMFM Guideline #8 e AAP 2022. Doses, hemoterapia/segurança e regulação nacional ainda precisam validação.
+- **210:** inventário de caminhos GitHub não mostrou apostila específica anterior; Drive não retornou benchmark equivalente por termos de psicopatologia/entrevista. Construído texto autoral de EEM, delirium, semiologia de pensamento/percepção, humor/afeto, psicomotricidade, entrevista, decisão/capacidade e segurança, com seis casos e dez questões. Referências OMS ICD-11 CDDR 2024 e mhGAP 2023 usadas como contexto científico, **sem reproduzir texto ou figuras protegidas**.
+
+**Gates pendentes comuns:** revisão médica independente, atualização brasileira, licença comercial/consentimento de imagens, aprovação pelo Admin, autossuficiência, edição final e HTML responsivo testado no PWA. **Nenhum dado autoriza publicar automaticamente os rascunhos.**
+
+**Próxima sequência:** **211 — Transtornos depressivos e avaliação do risco de suicídio**, começando por busca de sobreposição, diretrizes brasileiras e benchmark no Drive, sem duplicar semiologia já desenvolvida na 210.
