@@ -118,12 +118,12 @@
       el.addEventListener('change',handler);
     });
   }
-  function drugText(row){
+  function drugText(row,approvedFormulation){
     const d=row?.data||{}, name=row?.active_ingredient||row?.name||"Medicamento";
     const lines=[name.toUpperCase(),""];
     if(d.indication) lines.push("Indicação: "+d.indication,"");
     if(Array.isArray(d.diseases)&&d.diseases.length) lines.push("Indicações: "+d.diseases.join("; "),"");
-    const f=Array.isArray(d.formulations)?d.formulations[0]:null;
+    const f=approvedFormulation||null;
     if(f){lines.push("APRESENTAÇÃO: "+(f.label||""), "Dose: "+(f.dose_text||"A confirmar"), "Intervalo: "+(f.interval_text||"A confirmar"), "Via: "+(f.route||"A confirmar"), "Duração: "+(f.duration_text||"A confirmar"));}
     return lines.join("\n").trim();
   }
@@ -145,25 +145,46 @@
   function mobileDetailBar(row){
     return `<div class="bulario-mobile-detail-bar"><button class="rx-back-button" type="button" data-bulario-mobile-close="1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg><span>Voltar</span></button><strong>${esc(row?.active_ingredient||row?.name||'Bula')}</strong></div>`;
   }
+  // One validated record is not sufficient to certify every formulation of a drug.
+  // Unverified draft fields must never be transformed into a copyable prescription.
+  function approvedFormulations(data){
+    const d=data||{},all=Array.isArray(d.formulations)?d.formulations:[];
+    const reviewed=['posology_verified','verified','source_reviewed'].includes(d.status);
+    if(!reviewed)return [];
+    const required=['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'];
+    return all.filter(f=>{
+      if(!f||required.some(key=>!String(f[key]||'').trim()))return false;
+      const label=normalized(f.label||'');
+      if(label.includes('apresentacao conforme produto')||label.includes('verificar forma')||label.includes('apresentacao a confirmar'))return false;
+      const dose=normalized(f.dose_text||'');
+      if(dose.includes('confirmar na bula antes de prescrever')||dose.includes('posologia depende da indicacao apresentacao'))return false;
+      // A single formulation can cite the row-level professional leaflet;
+      // multiple formulations each need a source tied to their exact form.
+      const ref=String(f.source_url||(all.length===1?d.leaflet_url:'')||'');
+      if(!/^https:\/\//i.test(ref))return false;
+      return true;
+    });
+  }
   function renderDetail(row){
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
-    const d=row.data||{},formulations=Array.isArray(d.formulations)?d.formulations:[],hasCompletePosology=formulations.length>0&&formulations.every(f=>['dose_text','interval_text','route','duration_text','max_daily_text','administration','cautions','prescription_type'].every(k=>String(f?.[k]||'').trim())),ready=d.status==='posology_verified'||hasCompletePosology,summary=d.status==='verified';
+    const d=row.data||{},allFormulations=Array.isArray(d.formulations)?d.formulations:[],formulations=approvedFormulations(d),pendingCount=allFormulations.length-formulations.length,ready=formulations.length>0,summary=d.status==='verified';
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
     const relatedProtocols=protocols.filter(p=>Array.isArray(p.linked_drug_terms)&&p.linked_drug_terms.some(term=>{const t=String(term||"").toLocaleLowerCase("pt-BR");return keys.some(k=>k&&(k.includes(t)||t.includes(k)));}));
-    detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Ficha de posologia por apresentação':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
+    detail.innerHTML=`${mobileDetailBar(row)}<header class="rx-detail-head"><div class="drug-kicker">${ready?'Apresentações com fonte vinculada':summary?'Resumo da bula':'Ficha em revisão'}</div><h2>${esc(row.active_ingredient||row.name||'Princípio ativo a confirmar')}</h2><p class="drug-sub">${row.name&&row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?`<strong>Nome comercial/referência:</strong> ${esc(row.name)} · `:''}${esc(d.therapeutic_class||row.pharmacological_class||'Classe a confirmar')}</p></header>
       <div class="rx-bridge-actions">
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
-        <button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>
+        ${ready?`<button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>`:'<button type="button" class="secondary" disabled aria-label="Ficha sem fonte conferida">Prescrição indisponível • ficha em revisão</button>'}
       </div>
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Nomes e produtos</h3></div>${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:`<p class="rx-note">${esc(row.name)}${row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?` · princípio ativo: ${esc(row.active_ingredient)}`:''}. Outras marcas e genéricos ainda não vinculados.</p>`}</section>
+      ${pendingCount?`<p class="rx-note" role="status">${pendingCount} apresentação(ões) não liberada(s) para consulta de posologia: conferir fonte específica e revisão clínica.</p>`:''}
       ${ready?`<div class="rx-presentation-layout">${presentationPicker(formulations)}<div id="rx-active-presentation">${formulations.length?formulationCard(formulations[0],0):''}</div></div>`:`<section class="rx-card"><h3>Prescrição</h3><p class="rx-note">Dose, intervalo, via, limite diário e ajustes desta apresentação ainda não foram conferidos. Consulte a bula antes de prescrever.</p>${d.indication?`<div class="rx-field"><span>Indicação resumida</span><b>${esc(d.indication)}</b></div>`:''}${d.presentation?`<div class="rx-field"><span>Apresentação</span><b>${esc(d.presentation)}</b></div>`:''}</section>`}
       <section class="rx-section"><div class="rx-section-head"><h3>Reações adversas</h3></div>${clinicalList(d.adverse_reactions||d.adverse_effects,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Interações medicamentosas</h3></div>${clinicalList(d.drug_interactions||d.interactions||d.medication_interactions,'Ainda não cadastrado nesta ficha. Consulte a bula completa até a revisão deste campo.')}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Antídoto / manejo da intoxicação</h3></div>${clinicalList(d.antidote||d.antidotes||d.overdose_management,'Ainda não cadastrado nesta ficha. A ausência deste texto não significa que não exista antídoto ou manejo específico.')}</section>
-      <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A ficha não substitui avaliação de contraindicações, interações e função renal.</p><a href="${esc(luriaSafeContentUrl(d.leaflet_url)||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
+      <section class="rx-section"><div class="rx-section-head"><h3>Fonte e revisão</h3></div><p class="rx-note">${d.reviewed_at?`Fonte consultada em ${esc(d.reviewed_at)}. `:''}A presença de fonte vinculada não constitui validação clínica independente. Confirme concentração, via, faixa etária, contraindicações, interações e função renal antes de prescrever.</p><a href="${esc(luriaSafeContentUrl(d.leaflet_url)||'https://consultas.anvisa.gov.br/#/bulario/')}" target="_blank" rel="noopener noreferrer">${d.leaflet_url?'Abrir bula completa':'Pesquisar no Bulário da Anvisa'} ↗</a></section>`;
     detail.querySelector('[data-bulario-mobile-close="1"]')?.addEventListener('click',()=>closeMobileDetail(false));
     const activePresentation=detail.querySelector('#rx-active-presentation');
     detail.querySelectorAll('.rx-presentation-tab').forEach(tab=>tab.addEventListener('click',()=>{
@@ -178,7 +199,7 @@
     if(activePresentation)bindPresentationCalculator(activePresentation,formulations);
     detail.querySelectorAll("[data-open-protocol]").forEach(btn=>btn.addEventListener("click",()=>window.LuriaClinicalBridge?.openProtocol(btn.dataset.openProtocol)));
     detail.querySelector("[data-send-note=\"1\"]")?.addEventListener("click",(event)=>{
-      const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row),source:"Bulário LURIA"});
+      const ok=window.LuriaClinicalBridge?.toQuickChart({type:"drug",title:row.active_ingredient||row.name,text:drugText(row,formulations[0]),source:"Bulário LURIA"});
       if(window.LuriaClinicalBridge?.inPrescriptionFlow?.() && ok){
         const btn=event.currentTarget;
         const old=btn.textContent;
