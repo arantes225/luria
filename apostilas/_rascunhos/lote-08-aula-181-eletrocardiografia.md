@@ -2,7 +2,7 @@
 
 **Área do currículo:** Clínica Médica | **Lote oficial:** 08/13 — aula 181/260  
 **Versão:** rascunho editorial científico inicial, 14/10/2026  
-**Estado:** EM DESENVOLVIMENTO, **NÃO PUBLICADO / NÃO CERTIFICADO**; ainda não atende ao piso de 60 mil caracteres didáticos úteis, não contém todos os ECGs reais e não passou por revisão médica/visual independente.
+**Estado:** EM DESENVOLVIMENTO, **NÃO PUBLICADO / NÃO CERTIFICADO**; ainda não teve comprovada a meta de 60 mil caracteres didáticos úteis exclusivos, apesar do aumento de extensão bruta, não contém todos os ECGs reais e não passou por revisão médica/visual independente.
 
 > **Pulo do Gato LURIA:** não procure a doença antes de conferir se o eletrocardiograma foi adquirido corretamente. Primeiro descreva ritmo, frequência, eixo, intervalos e morfologia; depois interprete o traçado à luz dos sintomas. Um ECG aparentemente normal não elimina síndrome coronariana aguda, e uma alteração isolada não determina o diagnóstico sem contexto.
 
@@ -259,7 +259,7 @@ A avaliação final deverá considerar, **sem inclusão automática**, ao menos 
 | ST/T, SCA e diferenciais | §12 | Séries reais e casos de ECG sem supra |
 | Eletrólitos, populações especiais | §§13–14 | Imagens reais, nuances terapêuticas por cenário |
 | Ações emergenciais e emissão de laudo | §§15–16 | Revisão cruzada com protocolos e exemplos de laudos |
-| Casos/questões | §§17–18 | 5 casos e 8 questões, ainda insuficientes para certificar 60K úteis |
+| Casos/questões da **primeira camada** | §§17–18 | 5 casos e 8 questões iniciais; ver ampliação nos §§33–34 (17 casos e 24 questões no total) |
 | Fontes/imagens/layout | §§20–21 | Licenças, Admin, WebP, QA desktop/PWA e revisão independente |
 
 **Proibição editorial:** não anunciar como apostila pronta enquanto faltar ampliação clínica autossuficiente, exame detalhado das figuras, checagem de referências, extensão útil, revisão de respostas por texto interno e inspeção visual. Preservar livros cardiovasculares existentes e não gerar `index.html` para este rascunho antes da aprovação.
@@ -569,7 +569,7 @@ Mulher de 61 anos teve crises de angina noturna, agora sem dor. ECG: inversão p
 
 Homem de 70 anos, pneumonia grave, PA 82/48, lactato alto, taquicardia 132/min e ECG com infra de ST generalizado e elevação em aVR. **Hipótese:** isquemia subendocárdica global por desequilíbrio oferta/demanda; doença coronária crítica permanece diferencial. **Raciocínio:** aVR elevado não prova oclusão de tronco; hipoperfusão sistêmica pode gerar padrão semelhante. **Exames:** ECG seriado, troponinas, avaliação cardíaca e séptica. **Conduta:** ressuscitação/controle do foco, monitorização e avaliação de SCA quando clínica/evolução indicar. **Por que importa:** o mesmo padrão elétrico admite mecanismos distintos, com tratamentos de prioridade diferente.
 
-### Caso 13 — Plaqueta? Não: QT prolongado e torsades após fármaco
+### Caso 13 — QT prolongado e torsades após fármaco
 
 Mulher de 46 anos em uso de múltiplos fármacos que prolongam QT, potássio baixo, apresenta episódios de síncope; monitor mostra TV polimórfica autolimitada, ECG após conversão com QTc prolongado. **Hipótese:** torsades de pointes induzida por fármacos/eletrólitos. **Raciocínio:** diferenciar TV polimórfica por isquemia da associada a QT longo. **Exames:** eletrólitos, ECG seriado, lista de medicamentos, função renal e investigação cardiológica. **Conduta:** retirar gatilhos, corrigir K/Mg, terapia específica e prontidão para desfibrilar se instabilidade. **Por que importa:** “amiodarona para toda TV” pode piorar repolarização nesse contexto.
 
