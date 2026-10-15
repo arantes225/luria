@@ -88,7 +88,8 @@ body[data-page="study-rats"] #study-rats-host { display:block;width:100%;min-wid
 .board-canvas svg{background:#bfdcca}
 .zoom-stack button{transition:transform .16s ease,box-shadow .16s ease}
 .zoom-stack button:hover{transform:translateY(-2px);box-shadow:0 12px 22px #1239762a}
-.tile:focus-visible{outline:0;filter:drop-shadow(0 0 5px #ffe39c)}
+.tile:focus{outline:none}
+.tile:focus-visible{outline:none;filter:brightness(1.12)}
 
 
 /* Richer toy-building facades, subtle landscape details */
@@ -107,7 +108,7 @@ body[data-page="study-rats"] #study-rats-host { display:block;width:100%;min-wid
 /* Eighth iteration: organic path and event squares */
 .board-special-legend{display:flex;align-items:center;gap:9px;background:#f9fcff!important;border:1px solid #e1ebf5;font-size:10px!important}
 .legend-up{color:#13895d;font-weight:900}.legend-down{color:#d1535d;font-weight:900}
-.tile.special-tile{cursor:pointer}.tile.special-tile:focus-visible{filter:drop-shadow(0 0 7px #f6c257)}
+.tile.special-tile{cursor:pointer}.tile.special-tile:focus-visible{outline:none;filter:brightness(1.12)}
 @media(max-width:1180px){.board-special-legend{display:none}}
 @media(max-width:850px){.board-special-legend{display:flex;padding:4px 7px!important;font-size:9px!important}}
 @media(max-width:490px){.board-special-legend{display:none}}
