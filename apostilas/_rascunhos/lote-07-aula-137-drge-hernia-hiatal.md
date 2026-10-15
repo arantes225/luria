@@ -232,7 +232,7 @@ Cada exame requer fonte, licença para uso comercial e validação clínica; nã
 - [ ] Aprofundar epidemiologia brasileira, estudo funcional esofágico, Barrett por risco, técnicas cirúrgicas e complicações de reoperação.
 - [ ] Validar doses completas/ajuste e acesso brasileiro, fontes nacionais e consensos brasileiros.
 - [ ] Selecionar exames/imagens reais com licença e aprovação Admin.
-- [ ] Aferir/autossuficiência e ≥60.000 caracteres didáticos úteis sem repetição.
+- [ ] Recontar e certificar ≥60.000 caracteres didáticos úteis; extensão bruta foi ampliada, mas autossuficiência precisa de avaliação independente.
 - [ ] Revisão clínica formal, geração HTML, testes de sintaxe e responsividade desktop/PWA.
 **Status:** rascunho em produção, não finalizado.
 
@@ -465,7 +465,7 @@ O cirurgião mobiliza junção esofagogástrica, restaura segmento intra-abdomin
 ### 24.4. O que a SAGES realmente recomenda?
 A diretriz SAGES de **2021** para DRGE concluiu que, quando uma pessoa com DRGE comprovada é candidata a cirurgia, **fundoplicatura parcial ou completa** podem ser opções mediante decisão compartilhada. A fundoplicatura total pode interessar mais a quem prioriza controle de refluxo; a parcial pode interessar a quem prioriza minimizar disfagia.
 
-A diretriz SAGES de **2024 para hérnias hiatais II–IV** sugere **fundoplicatura concomitante ao reparo**, porém como recomendação **condicional baseada em baixa certeza**; não é equivalência a “todo caso deve receber Nissen completo”. Sobre **tela**, as evidências foram insuficientes para recomendar uso rotineiro **a favor ou contra**. Equipe pode considerar qualidade das cruras, tamanho do defeito, tensão da sutura, histórico de recidiva e tipo de material, explicando benefícios incertos e complicações potenciais. <Nota editorial: não transcrever porcentagens de desfecho se não houver correspondência de população/desenho no artigo original.>
+A diretriz SAGES de **2024 para hérnias hiatais II–IV** sugere **fundoplicatura concomitante ao reparo**, porém como recomendação **condicional baseada em baixa certeza**; não é equivalência a “todo caso deve receber Nissen completo”. Sobre **tela**, as evidências foram insuficientes para recomendar uso rotineiro **a favor ou contra**. Equipe pode considerar qualidade das cruras, tamanho do defeito, tensão da sutura, histórico de recidiva e tipo de material, explicando benefícios incertos e complicações potenciais. **Nota editorial:** não transcrever porcentagens de desfecho se não houver correspondência de população/desenho no artigo original.
 
 ### 24.5. Reparar o hiato não equivale a simplesmente “fechar um buraco”
 A dissecção das cruras e redução de conteúdo herniado são acompanhadas de mobilização do estômago e, em hérnias grandes, do saco herniário. O cirurgião deve avaliar perfusão de órgãos, extensão intra-abdominal funcional de esôfago, tensão do fechamento crural e possibilidade de lesão pleural/vagal. Fechamento excessivamente apertado pode contribuir para disfagia; demasiado frouxo, para recidiva. Hérnias recorrentes são tecnicamente distintas das primárias por fibrose/aderências, possível lesão de estruturas e alteração de comprimento.
@@ -588,7 +588,7 @@ A. Critério definitivo de esofagite infecciosa. B. Achado que sempre indica mio
 |---|---|---|
 | Fisiologia/barreira antirrefluxo | Seções 2, 17 | Casos 1, 2 e 5; Q1, Q7 |
 | DRGE versus sintoma funcional | Seções 1, 5, 18 e 22 | Casos 2, 5 e 8; Q3, Q12 |
-| Anatomia das hérnias I–IV | Seções 4, 8 e 24 | Casos 3, 4 e 9; Q4, Q8, Q13 |
+| Anatomia das hérnias I–IV | Seções 4, 8 e 24 | Casos 3, 4 e 8; Q4, Q8, Q13 |
 | Diagnóstico pHmetria/impedância | Seções 5, 18 e 22 | Laudos A–C; Q2, Q3, Q10 |
 | EDA, Los Angeles e disfagia | Seções 5, 19 e 20 | Caso 6; Q5, Q9 |
 | Manometria e risco cirúrgico | Seções 5, 19 e 24 | Caso 8; Q5, Q14 |
