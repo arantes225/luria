@@ -832,3 +832,108 @@ Os exercícios são inéditos, para ENAMED e residência, com situações fictí
 
 **Mini-revisão:** A resposta empática é adaptada ao contexto.
 
+### Questão 11 — Dor e função renal
+
+**Enunciado:** Paciente com dor oncológica e doença renal avançada piora sonolência e mioclonias durante morfina. Qual atitude?
+
+**A)** Aumentar morfina para eliminar mioclonias.
+
+**B)** Avaliar neurotoxicidade e acúmulo de metabólitos, considerar rotação/ajuste especializado.
+
+**C)** Adicionar sedativo sem revisão.
+
+**D)** Desconsiderar sintomas porque são esperados.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode agravar toxicidade.
+- **Alternativa B:** Morfina tem metabólitos renais e ajuste pode ser necessário.
+- **Alternativa C:** Mascarar síndrome seria perigoso.
+- **Alternativa D:** Exige avaliação.
+
+**Mini-revisão:** Opioides requerem atenção à função renal e à tolerância cruzada.
+
+### Questão 12 — Dispneia com oximetria normal
+
+**Enunciado:** Mulher com câncer pulmonar refere dispneia 8/10 e SpO₂ 97%. Qual abordagem?
+
+**A)** Não há dispneia sem hipóxia.
+
+**B)** Avaliar causas e oferecer intervenções de alívio conforme sintomas e objetivos.
+
+**C)** Oxigênio sempre cura dispneia.
+
+**D)** Intubar toda pessoa com ESAS 8.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Sintoma subjetivo independe do número.
+- **Alternativa B:** Tratamento é multidimensional e proporcional.
+- **Alternativa C:** Benefício do O₂ sem hipoxemia não é universal.
+- **Alternativa D:** ESAS não define intubação.
+
+**Mini-revisão:** Tratar experiência de desconforto, não apenas saturação.
+
+### Questão 13 — Constipação ou diarreia?
+
+**Enunciado:** Paciente em opioide evacua pequena quantidade líquida após sete dias sem fezes, com distensão. Diagnóstico a considerar:
+
+**A)** Fecaloma com diarreia por transbordamento.
+
+**B)** Trânsito normal sem problema.
+
+**C)** Diarreia infecciosa obrigatória.
+
+**D)** Abandono de laxante por regra.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É diferencial clássico e tratável.
+- **Alternativa B:** Intervalo e distensão são anormais.
+- **Alternativa C:** Possível, mas não única causa.
+- **Alternativa D:** Plano precisa de avaliação.
+
+**Mini-revisão:** Evacuação líquida não exclui impactação fecal.
+
+### Questão 14 — Delirium hipoativo
+
+**Enunciado:** Idoso com infecção e declínio cognitivo agudo permanece quieto, sonolento e desatento. Qual afirmação?
+
+**A)** Ausência de agitação exclui delirium.
+
+**B)** Pode ser delirium hipoativo e merece investigação proporcional.
+
+**C)** Precisa de antipsicótico universal.
+
+**D)** Deve ser imediatamente sedado.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Forma hipoativa é comum.
+- **Alternativa B:** O padrão agudo/flutuante orienta suspeita.
+- **Alternativa C:** A medicação não é obrigatória.
+- **Alternativa D:** Sedação não trata causa.
+
+**Mini-revisão:** Não confundir quietude com ausência de sofrimento.
+
+### Questão 15 — Metoclopramida na obstrução
+
+**Enunciado:** Paciente com carcinomatose, vômitos fecaloides e obstrução mecânica completa. Qual cautela?
+
+**A)** Usar metoclopramida livremente para acelerar trânsito.
+
+**B)** Evitar pró-cinético em obstrução completa e discutir plano de alívio.
+
+**C)** Prescrever fibras em grande volume.
+
+**D)** Cirurgia obrigatória em toda carcinomatose.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode agravar cólicas/distensão.
+- **Alternativa B:** Manejo de obstrução requer mecanismo/risco.
+- **Alternativa C:** Pode piorar bloqueio.
+- **Alternativa D:** Benefício cirúrgico depende de seleção.
+
+**Mini-revisão:** Obstrução parcial e completa têm decisões distintas.
+
