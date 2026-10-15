@@ -138,3 +138,20 @@ test('blocks high-risk ambiguous dose catalogs with many repeated presentation l
     formulations:[fullDose]
   }).length,1);
 });
+
+test('enforces explicit clinical hold for noninterchangeable routes even with a leaflet',()=>{
+  assert.equal(approvedFormulations({
+    status:'source_reviewed',
+    quality_audit:{
+      priority:'P0',
+      review_status:'PENDING_CLINICAL_SOURCE_REVIEW',
+      prescription_copy_blocked:true
+    },
+    formulations:[{...fullDose,label:'Injetável'},{...fullDose,label:'Spray nasal',route:'IN'}]
+  }).length,0);
+  assert.equal(approvedFormulations({
+    status:'source_reviewed',
+    quality_audit:{prescription_copy_blocked:false},
+    formulations:[fullDose]
+  }).length,1);
+});
