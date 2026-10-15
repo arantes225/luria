@@ -8,7 +8,7 @@
 
 - **Aula 204:** `apostilas/_rascunhos/lote-10-204-vasculites-pediatricas-kawasaki.md`, 88.766 caracteres Markdown, 8 casos e 12 questões. Aborda AIJ, Kawasaki, IgAV e febre reumática. **Não publicado:** faltam benchmarking específico pediátrico, imagens, revisão profissional independente e testes.
 - **Aula 205:** `apostilas/_rascunhos/lote-10-205-dor-pelvica-torcao-anexial.md`, 82.642 caracteres Markdown, 8 casos, 12 questões, cinco fluxos e 10 propostas de imagens (sem aprovação). Conteúdo da triagem de dor pélvica, torção, ectópica/GLD, cistos hemorrágicos, DIP/ATO e diferenciais não ginecológicos. **Não publicado:** faltam benchmarking específico de torção, imagens, revisão profissional independente e testes.
-- **206–225:** seguem no planejamento. Não confundir a existência de notas na matriz com manuscritos finalizados.
+- **Aula 206:** `apostilas/_rascunhos/lote-10-206-miomas-polipos-patologia-uterina-benigna.md`, 71.374 caracteres Markdown, 8 casos e 12 questões; miomas FIGO, pólipos, adenomiose, SUA, terapias e fertilidade. **Não publicado:** faltam benchmarking de miomas no Drive, revisão independente, imagens licenciadas e testes.\n- **207–225:** seguem no planejamento. Não confundir a existência de notas na matriz com manuscritos finalizados.
 - Extensão acima de 60 mil **brutos** não equivale automaticamente a 60 mil caracteres didáticos úteis; métricas só serão consideradas aprovadas após auditoria qualitativa e scripts do repositório.
 - Nenhuma imagem clínica nova foi embutida ou publicada. Nenhum deploy foi realizado.
 
@@ -18,7 +18,7 @@
 |---:|---|---|---|
 | 204 | Pediatria | Vasculites pediátricas e doença de Kawasaki | Alta/Diamante — **manuscrito ~88,8 mil caracteres; revisão pendente** |
 | 205 | Ginecologia e Obstetrícia | Dor pélvica aguda e torção anexial | Baixa/essencial — **manuscrito ~82,6 mil caracteres; revisão pendente** |
-| 206 | Ginecologia e Obstetrícia | Miomas, pólipos e patologia uterina benigna | Média — **planejada, não certificada** |
+| 206 | Ginecologia e Obstetrícia | Miomas, pólipos e patologia uterina benigna | Média — **manuscrito ~71,4 mil caracteres; revisão pendente** |
 | 207 | Ginecologia e Obstetrícia | Prolapso genital e incontinência urinária feminina | Diamante/Alta — **planejada, não certificada** |
 | 208 | Ginecologia e Obstetrícia | Gestação gemelar e acompanhamento de alto risco | Alta — **planejada, não certificada** |
 | 209 | Ginecologia e Obstetrícia | Aloimunização materno-fetal e doença hemolítica perinatal | Alta — **planejada, não certificada** |
