@@ -301,3 +301,368 @@ Em tratamentos repetidos, biomarcador L1 é mediador de A0→Y e confundidor de 
 
 Uma terapia que previne AVC por reduzir PA tem benefício causal mesmo que todo efeito seja mediado. Chamar efeito “direto” de único efeito autêntico é erro. **Mediar não é confundir**. Consequência intermediária desejável é parte do mecanismo, não ruído estatístico que sempre precisa ser removido.
 
+## 14. Análises de sensibilidade: mensurar o que o modelo principal não garante
+
+O pesquisador raramente observa todos os determinantes da exposição e do desfecho. Em vez de afirmar “ajustamos as covariáveis, logo provamos causalidade”, uma análise rigorosa pergunta **qual tamanho e estrutura de viés não medido seriam necessários para explicar o achado** e quais resultados mudam com hipóteses razoáveis. **Análise de sensibilidade não certifica causalidade**; ela descreve robustez a modelos alternativos bem especificados.
+
+### 14.1. E-value: significado, cálculo e limites
+
+O **E-value** de VanderWeele e Ding (2017) quantifica, na escala de razão de riscos, a força mínima de associação que um confundidor não medido precisaria ter **tanto com exposição quanto com desfecho**, condicionada às variáveis já medidas, para explicar integralmente uma associação observada, segundo hipóteses da abordagem. É uma forma de comunicar sensibilidade **ao confundimento não medido**, não às demais fontes de viés e não uma probabilidade de resultado causal.
+
+Para RR observado ≥1, a fórmula pontual é **E = RR + raiz quadrada de [RR × (RR−1)]**. Exemplo **fictício**, RR ajustado=2,0 → E=2+√2≈**3,414**. Para RR protetor <1, inverter RR antes: RR=0,5 → 1/RR=2,0 → E≈3,414. **Não afirmar que E-value 3,414 significa “a associação tem 3,414 vezes mais chance de ser causal”.** Ele é parâmetro de sensibilidade sob escala de risco e supostos específicos.
+
+O **limite do intervalo de confiança mais próximo do nulo** também deve ter seu E-value. Se IC do RR vai de 1,1 a 3,0, o valor relativo ao limite 1,1 será pequeno, mesmo que o ponto RR=2 pareça robusto; isso comunica que a inferência compatível com os dados pode ser explicada por confundimento relativamente fraco. **Se o IC inclui RR=1, o E-value correspondente ao limite mais próximo do nulo é 1**, não há um ganho automático de robustez.
+
+**Limites importantes:** E-value não corrige seleção, erro de informação, tempo imortal ou modelo errado. Também não prova existência de confundidor com certa associação, nem que relações em população real satisfaçam pressupostos. Para **OR** de desfecho comum, não aplicar diretamente fórmula RR sem conversão/justificativa apropriadas; para **HR**, a interpretação de E-value requer aproximações/hipóteses sobre risco temporal.
+
+### 14.2. Controle negativo
+
+**Exposição controle negativo** é variável que compartilha certas fontes de confundimento/medição com A mas **não deveria causar Y** pela teoria; **desfecho controle negativo** é algo que compartilha a estrutura de confusão mas não deveria ser afetado por A. Se aparece associação importante onde se esperaria efeito nulo, há sinal de viés residual — não prova, porque o controle negativo também pode estar mal escolhido.
+
+**Exemplo:** estudo de vacina que mede hospitalizações **antes da vacinação** e encontra forte associação “protetora” da futura vacina com hospitalizações do passado. A vacina não pode ter mudado eventos passados; há indício de seleção/confundimento temporal. Atenção: a população que sobrevive para vacinar-se pode diferir de quem não vacina, e o próprio critério de futuras exposições pode gerar tempo imortal; a construção do controle precisa evitar novos erros.
+
+### 14.3. Análise quantitativa de viés
+
+Quando estimativas plausíveis de sensibilidade/especificidade de uma medida estão disponíveis, pode-se fazer **bias analysis probabilística** ou determinística, variando matrizes de classificação errada. Em seleção, pode-se variar probabilidade de inclusão por exposição/desfecho; em confundimento, variar prevalência/força de fator não observado. **Os intervalos produzidos dependem de hipóteses sobre esses parâmetros**; simulações detalhadas não tornam parâmetros arbitrários verdadeiros.
+
+### 14.4. Robustez a especificações
+
+Repetir análise com definições alternativas pré-especificadas de exposição, latência, inclusão, truncamento de pesos, fontes e medida de desfecho pode revelar resultados frágeis. Contudo, testar cinquenta modelos e **publicar só o significativo** produz viés de relato. Documentar resultado principal e secundários, o que mudou e por quê, e não tratar cada sensibilidade como estudo independente.
+
+## 15. Variáveis instrumentais e “experimentos naturais” — soluções condicionais, não atalhos
+
+**Variável instrumental Z** influencia a probabilidade de receber A, mas para ser instrumento válido da relação A→Y precisa, sob modelo, de **relevância** (Z se associa a A), **independência** de causas não medidas relevantes e **restrição de exclusão** (Z não afeta Y por outra via além de A), além de outros pressupostos específicos como monotonicidade em estimativa LATE. Essas condições não são estabelecidas por teste estatístico simples e podem falhar de maneiras sutis.
+
+**Exemplo:** distância ao hospital que oferece cirurgia A pode mudar chance de recebê-la. Mas distância também modifica **tempo até atendimento, acesso a exames, reabilitação e mortalidade**, violando exclusão; não é instrumento válido apenas porque prediz escolha. Avaliar mecanismo com DAG, teoria e análise de sensibilidade.
+
+### 15.1. LATE não é ATE por conveniência
+
+Em modelos instrumentais com hipóteses adequadas, o efeito pode se referir a **compliers** — pessoas cuja opção de tratamento é modificada pelo instrumento —, não necessariamente à população inteira. Essa limitação de população-alvo altera aplicação clínica. Um resultado instrumental aparentemente forte pode ser pouco informativo para quem sempre receberia intervenção por gravidade.
+
+### 15.2. Regression discontinuity
+
+Quando uma regra atribui intervenção por corte (ex.: idade ou escore acima de valor), pessoas muito próximas dos dois lados podem ser comparáveis em fatores contínuos, **desde que não haja manipulação do marcador/corte e outras políticas mudem no mesmo ponto**. A estimativa é frequentemente **local no limiar**, e não efeito médio em todas idades/gravidades.
+
+Exemplo: programa que passa a oferecer cuidado domiciliar a partir de escore de risco 10. Comparar escore 9,9 a 10,1 pode ser mais defensável que escore 3 versus 20, se mecanismo não é manipulado. **Não extrapolar o efeito próximo ao corte para todos** sem justificativa.
+
+### 15.3. Diferenças-em-diferenças e tendência paralela
+
+**Difference-in-differences (DiD)** compara mudança do desfecho ao longo do tempo entre população afetada por intervenção e controle. Sob hipótese de **tendências paralelas sem intervenção** e outros requisitos (ausência de choques concorrentes específicos, interferência, mudanças de composição, antecipação e especificação apropriada), diferença das diferenças pode estimar efeito de política.
+
+**Exemplo fictício:** internações por 1000 antes/depois: município tratado 100→70 (−30), controle 80→65 (−15). DiD=(70−100)−(65−80)=**−15 por 1000**. Interpretar como efeito causal da política **somente** se pressupostos forem plausíveis. Ver tendências prévias, políticas simultâneas, mudanças na codificação e efeito heterogêneo; em adoção escalonada, estimadores tradicionais de two-way fixed effects podem ter vieses com efeitos heterogêneos ao longo do tempo.
+
+### 15.4. Série temporal interrompida
+
+Avalia mudanças de nível/inclinação após intervenção em dados agregados longitudinais, exigindo número de pontos suficiente, atenção a sazonalidade/autocorrelação e eventos simultâneos. Uma queda após política não prova efeito se houve epidemia, mudança de código ou outra intervenção no mesmo dia. **Antes/depois puro sem grupo controle é especialmente vulnerável a história e tendência secular**.
+
+## 16. Fatores de risco, marcadores prognósticos, confundidores e causas
+
+**Fator de risco** em linguagem clínica pode significar marcador associado ou causa, dependendo do uso. **Preditor** melhora previsão, mas não precisa ser causa; **confundidor** é variável cuja estrutura de relação entre A e Y cria associação espúria; **mediador** transmite parte do efeito; **colisor** recebe setas de duas variáveis. O papel de uma variável **muda conforme pergunta**.
+
+**Exemplo com idade:** idade pode ser confundidor entre uso de antihipertensivo A e AVC Y se influencia prescrição e risco. Em outra pergunta, idade pode ser apenas preditor do desfecho se estratégia foi randomizada. Em investigação de política por idade-limite, idade pode fazer parte da regra de atribuição e exigir desenho de descontinuidade. “Sempre ajuste idade” pode ser razoável pragmaticamente em muitos modelos, mas não resolve DAG e temporalidade.
+
+### 16.1. Previsão e causalidade exigem validações diferentes
+
+Modelo preditivo pode usar variáveis que aparecem **depois** de um evento para prever evolução futura, desde que disponíveis no momento de previsão. Já modelo causal precisa garantir que ajuste não destrua o efeito de intervenção ou abra vias. **Um AUC 0,95 para prever mortalidade não significa que coeficiente de terapia dentro desse modelo estima causalidade.**
+
+### 16.2. Odds ratio condicionado e não colapsabilidade
+
+Mesmo quando não há confundimento, **OR ajustado e OR marginal podem diferir** por propriedade matemática de não colapsabilidade, especialmente com desfechos comuns. Logo “OR mudou após incluir prognosticador, então havia confusão” não é inferência sempre válida. Diferenças de medidas e população-alvo precisam ser consideradas; razões de riscos também têm propriedades próprias em algumas modelagens. **Comparar OR e RR como se fossem escala idêntica** amplia erros de comunicação.
+
+### 16.3. Simpson: decomposição importa
+
+No exemplo do capítulo 6, o grupo tratado tem maior mortalidade bruta mas menor mortalidade dentro de gravidade alta e baixa. **A inversão é possível pela composição dos estratos**, mas não garante que ajuste simples produza estimativa causal sem outras causas medidas. A mensagem é: *pergunte como grupos foram formados antes de confiar na taxa bruta*.
+
+## 17. Confundimento residual: como reconhecer risco sem fingir que o provou
+
+**Residual** pode surgir porque confundidor foi medido grosseiramente, selecionado incorretamente, modelado em forma funcional errada, faltou informação, houve erros de classificação ou confundidor nem foi registrado. Ajustar “hipertensão sim/não” não equivale a controlar severidade, duração, lesões de órgão, tratamento e adesão. Em dados do SUS, renda pode ter proxies imperfeitos como CEP ou bairro, e acesso a exame pode não refletir gravidade. **Isso não invalida toda pesquisa brasileira**, mas exige explicitar limites e explorar alternativas.
+
+### 17.1. Estratégias para reduzir
+
+Planejar desenho novo usuário/comparador ativo; selecionar covariáveis por DAG; incorporar medidas longitudinais prévias e proxies bem fundamentados; avaliar registro de gravidade e doença; restringir cenários sem positividade; usar instrumentos plausíveis apenas se satisfazem hipóteses; controles negativos; análises de sensibilidade. **Acumular vinte proxies colineares não garante controle perfeito**.
+
+### 17.2. Superajuste e colinearidade
+
+Incluir variáveis demais para número de eventos pode aumentar variância, instabilidade e extrapolação; colinearidade torna coeficientes individuais difíceis de interpretar. Esses são problemas estatísticos diferentes do viés causal por controlar colisor/mediador. **É possível ter modelo matematicamente estável e causalmente enviesado**, assim como DAG correto e regressão numericamente instável.
+
+### 17.3. Modelo errado de exposição e resultado
+
+Supor relação linear da idade em mortalidade ou dose em dano quando é curva pode deixar confundimento residual, mesmo com variável incluída. Splines ou modelagem flexível podem ajudar se houver dados, mas **flexibilidade não inventa overlap onde não há**. Interações e heterogeneidade de efeitos requerem definição do efeito-alvo; um modelo ótimo em previsão não necessariamente representa intervenções possíveis.
+
+## 18. Erros de seleção e informação nos sistemas de dados brasileiros
+
+### 18.1. SIH/SUS: internação é evento observado e também processo de acesso
+
+O **SIH/SUS** registra internações financiadas no SUS conforme regras administrativas, não todas hospitalizações do país. Mudança em internações pode resultar de incidência real, acesso a leitos, contratualização, codificação, rede privada ou política de autorização. Comparar mortalidade “dos internados” entre municípios sem modelar acesso pode condicionar em **hospitalização como colisor**, distorcendo diferenças.
+
+### 18.2. SINAN: notificação depende de capacidade de vigilância
+
+Doença notificada não é igual a incidência real quando **subnotificação** varia por unidade, período, treinamento e capacidade laboratorial. Após intensificar testagem, números notificados podem subir mesmo que transmissão biológica não aumente. Uma campanha pode parecer associada a mais casos porque melhorou detecção. **Sem denominador e mecanismo de observação, incidência notificada pode ser estimador enviesado da ocorrência real**.
+
+### 18.3. SIM: mortalidade e qualidade da classificação
+
+**Sistema de Informações sobre Mortalidade (SIM)** é essencial, mas completude e codificação de causa básica podem variar. Mudança de causa registrada pode refletir investigação/qualidade de atestado, não efeito de intervenção. Vincular SIM a coortes requer identificação, qualidade de linkage e atenção a perdas diferenciais, respeitando LGPD e governança ética. **Morte encontrada nos dados depende de sucesso de seguimento e identificação correta**.
+
+### 18.4. Atenção Primária, e-SUS APS e prontuários
+
+Registro de PA, HbA1c e exames depende de contato com serviço. Pacientes que comparecem mais têm medições mais frequentes; a disponibilidade de HbA1c pode ser **descendente de acesso e gravidade**. Restringir análise apenas a quem fez exame pode induzir viés de seleção, particularmente quando intervenção altera frequência de consultas. **Imputar HbA1c não medida como normal porque não aparece no banco é erro de informação**.
+
+### 18.5. Indicadores e políticas
+
+Após programa municipal, número de consultas aumentou. Isso pode ser objetivo de **acesso**, mas não prova automaticamente redução de mortalidade/complicações. Um município com maior prevalência de doença pode ter mais consultas e mais internações, gerando associação paradoxal; analisar populações comparáveis, tendência temporal, política concorrente e canais causais.
+
+### 18.6. LGPD e necessidade de minimização
+
+Boa pesquisa não coleta identificadores desnecessários nem compartilha dados pessoais em repositórios públicos só para facilitar auditoria. Usar ambiente autorizado, pseudonimização, controle de acesso e finalidade específica. Os **diagramas/dados fictícios** desta aula não contêm informações identificáveis; exemplos reais em apostilas futuras exigem consentimento e governança. O Codex deve verificar arquivos por vazamento de dados sensíveis antes da publicação.
+
+## 19. Como criticar um artigo em dez passos sem se perder no p
+
+**Passo 1:** qual decisão e comparação causal? **Passo 2:** qual população e tempo zero? **Passo 3:** quem recebeu cada estratégia e por quê? **Passo 4:** desenhe DAG mínimo com causas da escolha e do desfecho. **Passo 5:** houve seleção por hospitalização, testagem, sobrevivência ou completude de seguimento? **Passo 6:** exposição/desfecho medidos simetricamente, com latência adequada? **Passo 7:** ajuste bloqueou confundidores e evitou mediadores/colisores? **Passo 8:** há positividade/overlap e estimando consistente? **Passo 9:** quanto de confusão não medida explicaria o resultado? **Passo 10:** decisão é aplicável ao paciente/SUS e incerteza é comunicada?
+
+**Relato STROBE** com 22 itens ajuda saber o que foi feito e identificar falta de transparência, mas seu próprio portal afirma expressamente **que não é instrumento para avaliar qualidade metodológica**. **ROBINS-I**, por outro lado, avalia risco de viés de um resultado específico de estudo não randomizado de intervenção, usando comparação com experimento-alvo. O ROBINS-I V2 disponibilizado no portal em novembro de 2025 **continua rascunho sujeito a mudanças na data desta aula**; não apresentá-lo como versão final oficial nem reproduzir checklist protegido em apostila comercial.
+
+### 19.1. STROBE é transparência; ROBINS-I é julgamento; GRADE é certeza
+
+| Instrumento | Para que serve | O que NÃO entrega |
+|---|---|---|
+| STROBE 2007 | Relatar coortes, caso-controle e transversais com 22 itens | Certificado de causalidade ou baixo viés |
+| DAG | Explicitar hipóteses e identificar ajustes possíveis | Prova que setas são verdadeiras |
+| ROBINS-I | Julgar risco de viés de resultado de intervenção não randomizada | Substituir IC, aplicabilidade e certeza |
+| E-value | Sensibilidade a confundimento não medido na escala adequada | Eliminar seleção, tempo imortal ou informação errada |
+| Target trial emulation | Evitar falhas de desenho/tempo e definir efeito | Randomizar dados retrospectivos |
+| GRADE (aula 110) | Certeza do corpo de evidências por desfecho | Isolar automaticamente mecanismos causais |
+
+### 19.2. Domínios de risco em estudos não randomizados
+
+O ROBINS-I original abrange confundimento, seleção de participantes, classificação de intervenções, desvios, dados ausentes, mensuração de desfechos e seleção do resultado reportado. Versão V2 **modifica estrutura/algoritmos**, incluindo atenção explícita a tempo imortal, mas o aluno deve consultar versão exata adotada e suas instruções. **Não somar sete notas arbitrárias e chamar “nota 6/7” de baixo risco**; julgamento é por resultado e domínios críticos conforme ferramenta.
+
+### 19.3. Uma conclusão honesta pode ser “não sabemos”
+
+Se nenhum paciente comparável recebeu o tratamento alternativo, se desfecho só foi medido em sobreviventes e se exposição foi definida por evento futuro, **os dados não identificam efeito causal confiável com os métodos apresentados**. Dizer isso é mais científico do que produzir modelo com cinco casas decimais e interpretar como efeito real. A solução pode exigir novo desenho ou dados melhores.
+
+## 20. Exercícios matemáticos originais e conferíveis
+
+### Exercício 1 — confundimento por gravidade (Simpson)
+
+Usar dados fictícios já introduzidos: 100 graves, 80 recebem A (24 mortes), 20 não recebem (8 mortes); 900 leves, 200 recebem A (4 mortes), 700 não recebem (28 mortes).
+
+**Bruto:** tratados 28/280=**10%**, controles 36/720=**5%**, diferença de risco **+5 pp**, RR=**2,0** (aparente dano de A).  
+**Em graves:** A 24/80=**30%** e B 8/20=**40%**; diferença **−10 pp**.  
+**Em leves:** A 4/200=**2%** e B 28/700=**4%**; diferença **−2 pp**.  
+**Padronização para proporção da população (10% grave, 90% leve)**, sob hipóteses de intercambiabilidade dentro dos estratos: risco A padronizado 0,1×0,30+0,9×0,02=**4,8%**; risco B padronizado 0,1×0,40+0,9×0,04=**7,6%**, diferença **−2,8 pp**. O sinal inverte ao considerar composição. **Ainda não é prova causal**: outras diferenças dentro dos estratos podem existir, e dados são fictícios.
+
+### Exercício 2 — peso inverso e overlap
+
+Paciente tratado com probabilidade estimada de A e(L)=0,8 recebe peso ATE **1/0,8=1,25**. Outro tratado e=0,02 recebe peso **50**. Isso não quer dizer que a segunda pessoa representa “50 vezes mais efeito biológico”, e sim que é rara sob sua covariável e influencia muito o estimador. Avaliar positividade e truncamentos razoáveis, e se o perfil raro deveria estar na população-alvo.
+
+### Exercício 3 — E-value
+
+Associação causal hipotética RR=**2** (efeito observado em estudo, ainda sem interpretação causal). E-value pontual é **2+√[2(2−1)] = 2+√2≈3,414**. Para RR=**1,2**, E≈**1,690**; o segundo requer relação de confundimento relativamente mais fraca para explicar associação, sob mesmos pressupostos. **Não comparar E-values de medidas não equivalentes** sem conversão apropriada.
+
+### Exercício 4 — diferenças-em-diferenças
+
+Município A: incidência 100→70 por 1000; município controle B 80→65 por 1000. Mudança A −30, B −15. DiD=−30−(−15)=**−15 por 1000**, interpretável causalmente somente sob tendências paralelas, ausência de choques diferenciais relevantes e demais pressupostos. **Não afirmar que queda total de 30 se deve à política**, pois também ocorreu queda secular de 15 no controle.
+
+### Exercício 5 — erro de atribuição de tempo imortal
+
+Cem pessoas diagnosticadas no dia zero. Vinte recebem fármaco A apenas no dia 60, as demais não. No dia 30 ocorrem dez mortes, todas em pessoas que **não chegaram ao dia 60**. Se o pesquisador define “grupo tratado” com base em uso até dia 60 e contabiliza sobrevivência desde dia zero, os futuros tratados precisaram sobreviver para serem classificados assim. O efeito protetor é potencialmente **artefato** mesmo sem números de RR, pois a exposição foi definida com informação futura. O desenho deve alinhar início, critérios de elegibilidade e estratégia para cada pessoa.
+
+## 21. Oito casos clínico-epidemiológicos com diagnóstico do viés e correção possível
+
+### Caso 1 — Antibiótico amplo associado a maior mortalidade na UTI
+
+**Cenário:** banco observacional fictício de 2.000 internados mostra mortalidade 20% com antibiótico de espectro amplo e 7% com esquema mais estreito. **Questão causal:** amplo causa dano? **Mecanismo provável:** *confundimento por indicação*: médico selecionou amplo para choque, colonização resistente e disfunção orgânica; esses fatores também elevam mortalidade. **DAG:** gravidade basal G→amplo A e G→óbito Y. **Dados a examinar:** choque, lactato, microbiologia, momento de início, APACHE/SOFA com cuidado temporal, antibioticoterapia anterior, acesso e histórico de resistência. **Correção plausível:** comparador ativo em pessoas com as duas opções clinicamente plausíveis, novo usuário/tempo zero, ajuste por gravidade prévia, análise de overlap e sensibilidade a confundimento residual. **Não fazer:** ajustar resposta após antibioticoterapia como se fosse confundidor basal ou concluir causalidade por p baixo. **Mensagem:** uma associação bruta de dano pode ocultar benefício em cada estrato, mas ajuste não prova causalidade sem demais pressupostos.
+
+### Caso 2 — Programa de acompanhamento parece impedir mortes antes de começar
+
+**Cenário:** hospital compara quem “participou de reabilitação nos primeiros 90 dias” e quem nunca participou, contando sobrevivência desde a alta; parte dos pacientes morre antes de conseguir primeira sessão. **Viés:** tempo imortal e usuário prevalente: para integrar grupo de participantes, foi preciso sobreviver até sessão. **DAG/tempo:** critérios de exposição definidos por futuro, enquanto mortes antes da sessão não podem ocorrer em grupo definido como exposto. **Correção:** emular ensaio de oferta imediata versus oferta alternativa a partir da alta, com período de graça explícito, ou exposição variável no tempo de forma coerente com estimando; considerar adesão e censura. **Cuidado:** corrigir tempo imortal não elimina gravidade/apoio como confundidores. **Decisão:** não usar estimativa original para ampliar programa sem reanálise adequada.
+
+### Caso 3 — Pacientes hospitalizados parecem ter proteção paradoxal
+
+**Cenário:** estudo avalia associação de tabagismo A com uma doença Y apenas em pacientes internados em hospital terciário. Tanto tabagismo quanto doença elevam chance de ser internado S. **Viés:** seleção em **colisor S**, via A→S←Y, possivelmente criando associação espúria negativa dentro dos internados. **Diagnóstico:** examinar processo de admissão e população alvo; não achar que maior n no hospital corrige. **Correção:** definir questão e população com inclusão independente desses caminhos quando viável, buscar amostra comunitária ou métodos para seleção sob hipóteses. **Não fazer:** “ajustar hospitalização” se todos já são internados; não há variação e a seleção ocorreu antes da análise. **Mensagem:** a amostra pode gerar o fenômeno antes de qualquer regressão.
+
+### Caso 4 — Risco de câncer parece aumentado em mulheres que fazem mais consultas
+
+**Cenário:** mulheres em programa de rastreio intensivo recebem diagnóstico de neoplasia subclínica mais cedo e mais frequentemente que grupo sem rastreio. Desfecho usado é “qualquer diagnóstico de câncer em 12 meses”. **Viés:** detecção/vigilância diferencial e possivelmente sobrediagnóstico, conforme doença e teste. **DAG:** programa A→intensidade de exame D→diagnóstico registrado Y*, enquanto doença biológica Y pode não ter mudado. **Correção:** distinguir incidência de doença biologicamente relevante, estágio, mortalidade específica, sobrediagnóstico e tempo de seguimento; desfechos centrados em pessoas, com aferição comparável. **Não fazer:** dizer que rastreamento “causou câncer” só porque registrou mais. **Mensagem:** medir mais pode aumentar ocorrência aparente.
+
+### Caso 5 — O ajuste removeu o benefício da pressão
+
+**Cenário:** coorte com terapia anti-hipertensiva A, redução de PA aos seis meses M e AVE em dois anos Y. O modelo sem M mostra menor risco de AVE; ao ajustar M, coeficiente de A se aproxima de nulo. **Viés potencial:** sobreajuste por **mediador**, se interesse era efeito total; condicionar em M pode também abrir vias se há causas não medidas M–Y afetadas por A. **Correção:** definir se pergunta é efeito total ou direto; para total, ajustar causas pré-tratamento relevantes e evitar mediador; para mecanismos, usar métodos específicos de mediação com pressupostos. **Não fazer:** afirmar “a terapia não funciona quando corrigimos por PA”: reduzir PA pode ser o mecanismo de sua eficácia. **Mensagem:** um coeficiente ajustado não revela automaticamente a verdade causal.
+
+### Caso 6 — Confundimento variante no tempo após intensificação da terapia
+
+**Cenário:** pessoas com DM2 recebem A0, HbA1c em 3 meses L1, intensificação A1 condicionada a L1 e desfecho cardiovascular Y. HbA1c foi alterada por A0 e influencia A1/Y. **Problema:** regressão convencional com L1 pode bloquear efeito anterior enquanto omitir L1 confunde intensificação; métodos simples falham para estratégia longitudinal. **Correção:** desenhar DAG temporal e estimando de estratégia, avaliar g-formula ou pesos de modelos estruturais marginais sob intercambiabilidade sequencial, positividade e consistência. **Não fazer:** atribuir falha estatística a “amostra pequena” sem avaliar estrutura temporal. **Mensagem:** variáveis mudam de papel quando o tempo avança.
+
+### Caso 7 — Estudo de vacina mostra “proteção” contra hospitalização antes de vacinar
+
+**Cenário:** análise observa que pessoas futuramente vacinadas já internavam menos nos seis meses anteriores à vacinação. **Problema:** essa associação com desfecho **anterior** não pode ser produzida causalmente pela vacina futura; sugere diferenças prévias, seleção por sobrevivência ou viés de utilização/acesso. **Correção:** controle negativo temporal adequadamente desenhado; coorte de novos usuários com momento zero alinhado, comparação elegível e ajustes, com sensibilidade a acesso e fragilidade. **Não fazer:** apresentar associação pós-vacina como prova causal isolada. **Mensagem:** perguntar quando o suposto efeito começou pode desmontar falsa causalidade.
+
+### Caso 8 — Programa municipal e queda de internações
+
+**Cenário:** município introduziu telemonitoramento e internações caíram de 100 para 70 por 1000; município comparador caiu de 80 para 65. **Hipótese:** diferença-em-diferenças de -15 por 1000. **Problemas potenciais:** municípios podem ter tendências prévias diferentes, mudanças de faturamento SIH, políticas simultâneas, interrupção de serviços ou migração à rede privada. **Correção:** examinar tendências antes da política, estabilidade de codificação, grupos comparáveis, sensibilidade a controles e efeitos heterogêneos, e definir população alcançada. **Não fazer:** afirmar redução causal de 30 por 1000 ou concluir benefício em toda população do Brasil. **Mensagem:** um contrafactual plausível é indispensável mesmo em avaliação de política.
+
+## 22. Dez questões autorais com cinco alternativas e comentários individuais
+
+### Questão 1 — Confundidor versus mediador
+
+Em estudo sobre anti-hipertensivo A e AVC Y, gravidade basal G determina escolha do medicamento e também risco de AVC; PA aos três meses M foi alterada por A e influencia Y. Para estimar efeito **total**, qual alternativa é mais adequada?
+
+A. Ajustar sempre M e ignorar G.  
+B. Ajustar G adequadamente e avaliar M como mediador, não confundidor basal obrigatório do efeito total.  
+C. Ajustar somente variáveis com p<0,05.  
+D. Excluir pacientes cuja PA mudou.  
+E. Considerar toda variável pós-tratamento como causa prévia.
+
+**Gabarito: B.** **A incorreta:** pode bloquear benefício mediado e deixa confusão basal. **B correta:** G é causa comum relevante; M está no caminho causal e seu ajuste depende de outra pergunta. **C incorreta:** seleção por p ignora DAG. **D incorreta:** seleção posterior ao tratamento cria viés. **E incorreta:** temporalidade impede essa interpretação. **Mini-revisão:** efeito total inclui vias mediadas.
+
+### Questão 2 — Colisor
+
+Considere DAG: uso de A aumenta internação S, e doença Y também aumenta internação S. Apenas internados são analisados. Qual mecanismo é mais provável?
+
+A. S é confundidor porque antecede necessariamente A.  
+B. Ajustar S fecha todos os caminhos espúrios.  
+C. Seleção em S, colisor comum de A e Y, pode induzir associação espúria entre eles.  
+D. S mede diretamente eficácia de A em todos indivíduos.  
+E. Amostra grande elimina problema.
+
+**Gabarito: C.** **A incorreta:** S é consequência comum no DAG apresentado. **B incorreta:** condicionar colisor abre caminho. **C correta:** fenômeno de Berkson/collider bias. **D incorreta:** o estimando não foi definido assim. **E incorreta:** viés permanece em n alto. **Mini-revisão:** A→S←Y deve ficar bloqueado salvo pergunta que exige outra estrutura.
+
+### Questão 3 — Tempo imortal
+
+Coorte classifica tratados como “quem recebeu medicação nos 90 dias após diagnóstico” mas conta eventos desde o diagnóstico para todos. Por que resultado pode ser espúrio?
+
+A. Tratados precisaram sobreviver até receber medicamento; a exposição foi definida com informação futura, criando tempo imortal.  
+B. O desfecho sempre será menor porque medicamento é eficaz.  
+C. A definição cria randomização natural.  
+D. A janela de 90 dias confirma ausência de confundimento.  
+E. Regressão com idade corrige todo problema.
+
+**Gabarito: A.** **A correta:** o período pré-início é atribuído incorretamente por sobrevivência necessária. **B incorreta:** efeito biológico é desconhecido. **C incorreta:** não há sorteio. **D incorreta:** seleção e confusão podem coexistir. **E incorreta:** ajuste de idade não realinha tempo zero. **Mini-revisão:** alinhar elegibilidade, estratégias e início.
+
+### Questão 4 — E-value
+
+Um estudo observacional apresenta RR ajustado de 2,0 para desfecho e intervenção, com risco de confundimento residual. O E-value aproximado da estimativa pontual é:
+
+A. 0,5.  
+B. 1,0.  
+C. 2,0.  
+D. 3,41.  
+E. 20.
+
+**Gabarito: D.** **A incorreta:** não é inverso simples do RR. **B incorreta:** indicaria sensibilidade mínima para nulo. **C incorreta:** é RR, não E-value. **D correta:** 2+√[2(2−1)]≈3,414. **E incorreta:** escala exagerada. **Mini-revisão:** E-value mede força mínima de confusão não medida em escala adequada, não certeza causal.
+
+### Questão 5 — STROBE
+
+Um artigo observacional preencheu todo checklist STROBE de 22 itens. Qual afirmação correta?
+
+A. Foi provada ausência de confundimento.  
+B. As variáveis instrumentais são válidas por isso.  
+C. O estudo equivale a ECR randomizado.  
+D. A certeza GRADE é alta por definição.  
+E. O relato foi estruturado, mas o checklist não certifica validade causal ou qualidade metodológica.
+
+**Gabarito: E.** **A incorreta:** STROBE não elimina confundimento. **B incorreta:** validade instrumental exige outras hipóteses. **C incorreta:** relato não randomiza. **D incorreta:** certeza exige avaliação do corpo de evidências. **E correta:** a rede EQUATOR explicita limitação. **Mini-revisão:** guias de relato não substituem avaliação de viés.
+
+### Questão 6 — Controle negativo temporal
+
+Estudo observa que vacinados já tinham menos internações antes da vacinação. O que se deve considerar?
+
+A. Efeito farmacológico da vacina sobre passado.  
+B. Sinal de seleção/confundimento prévio, que precisa investigação antes da conclusão causal.  
+C. Garantia de ausência de qualquer erro.  
+D. Prova de que vacina aumenta risco.  
+E. Proibição definitiva de usar dados de rotina.
+
+**Gabarito: B.** **A incorreta:** intervenção futura não altera passado. **B correta:** diferença prévia sugere fragilidade de comparabilidade. **C incorreta:** é justamente pista de problema. **D incorreta:** não informa direção do efeito pós-vacina. **E incorreta:** dados de rotina podem ser úteis com método adequado. **Mini-revisão:** controles negativos são ferramentas diagnósticas, não certificação.
+
+### Questão 7 — Positividade
+
+Em hospital, pessoas em choque muito grave **nunca** recebem terapia B por contraindicação. Estudo tenta inferir efeito A versus B especificamente nesse grupo com propensity score. Qual interpretação?
+
+A. Positividade pode falhar estruturalmente; não há base empírica adequada para contraste A versus B naquele estrato.  
+B. Bastaria usar regressão com 100 covariáveis.  
+C. Peso inverso de controle será sempre estável.  
+D. A causa da contraindicação não importa.  
+E. Um modelo de previsão com AUC elevado resolve automaticamente.
+
+**Gabarito: A.** **A correta:** ausência de chance de B impede estimar efeito em grupo sem extrapolação forte. **B incorreta:** modelo não cria comparação. **C incorreta:** há risco de pesos extremos/indefinidos. **D incorreta:** risco clínico e elegibilidade são centrais. **E incorreta:** AUC não certifica overlap. **Mini-revisão:** sem suporte comum, restringir população-alvo ou buscar outra pergunta.
+
+### Questão 8 — Confundimento por indicação
+
+Tratamento A é reservado a pacientes mais graves, que morrem mais. Análise bruta encontra mais mortes com A. Qual conclusão?
+
+A. A comprovadamente causa mais mortes.  
+B. A é superior em todos porque prescrito pelos médicos.  
+C. Pode haver confundimento por gravidade/indicação; é necessário comparar pessoas elegíveis e ajustar causas prévias adequadamente.  
+D. O p-valor determina ausência de confusão.  
+E. Aumentar n elimina escolha clínica como mecanismo.
+
+**Gabarito: C.** **A incorreta:** associação bruta pode ser espúria. **B incorreta:** prescrição não prova benefício. **C correta:** gravidade causa tratamento e desfecho. **D incorreta:** p não mede confusão. **E incorreta:** confundimento persiste com n grande. **Mini-revisão:** desenhar DAG de indicação.
+
+### Questão 9 — DiD
+
+Intervenção em município A: taxa 100→70/1000; controle B: 80→65/1000. Sob hipóteses causais necessárias, estimativa simples de diferença-em-diferenças é:
+
+A. −30/1000.  
+B. −15/1000.  
+C. +15/1000.  
+D. −50/1000.  
+E. +80/1000.
+
+**Gabarito: B.** **A incorreta:** ignora mudança do controle. **B correta:** (70−100)−(65−80)=−30+15=−15. **C incorreta:** sinal invertido. **D incorreta:** erro aritmético. **E incorreta:** não é diferença das mudanças. **Mini-revisão:** tendências paralelas e choques concorrentes devem ser investigados.
+
+### Questão 10 — Confundidor dependente do tempo
+
+Tratamento A0 altera biomarcador L1, que por sua vez influencia A1 e desfecho Y. O interesse é efeito de estratégia longitudinal A0/A1. Qual afirmação é adequada?
+
+A. Ajustar L1 em regressão convencional sempre estima efeito causal total sem viés.  
+B. Ignorar L1 sempre resolve porque é variável pós-tratamento.  
+C. Randomização foi automaticamente criada pela coleta seriada.  
+D. É cenário de confundimento temporal afetado por tratamento prévio; pode requerer g-métodos e pressupostos sequenciais explícitos.  
+E. Basta usar média de L1 do hospital.
+
+**Gabarito: D.** **A incorreta:** bloqueio de parte de efeito e viés podem ocorrer. **B incorreta:** L1 confunde decisão A1. **C incorreta:** coorte repetida não randomiza. **D correta:** problema clássico dos g-métodos. **E incorreta:** média não resolve relação longitudinal. **Mini-revisão:** o papel de L1 varia por ponto temporal e estimando.
+
+## 23. Dez propostas de imagens e diagramas autorais
+
+**Nenhuma figura de DAGitty, checklist ROBINS-I/STROBE ou outro material licenciado foi importada.** O gráfico em si de um artigo tem direitos autorais específicos; a LURIA deve produzir **esquemas originais**, respeitando definições científicas e não copiando composição visual. Revisar direitos inclusive em material CC BY-NC-ND que não permite reprodução comercial.
+
+| Nº | Visual original/candidato | Conceito a ensinar | Capítulos | Plano |
+|---|---|---|---|---|
+| 1 | Quadro contrafactual Y(1)/Y(0) com duas trajetórias hipotéticas | Por que efeito individual não é simultaneamente observável | §1–3 | Ilustração conceitual LURIA |
+| 2 | DAG de confundidor A←L→Y | Por que ajustar gravidade basal | §4–6 | Redesenho autoral com notas |
+| 3 | DAG mediador A→M→Y | Quando ajuste tira efeito total | §4/13 | Desenho próprio |
+| 4 | DAG colisor A→S←Y com seleção | Berkson/collider bias | §4–7 | Desenho próprio com cenário de internação |
+| 5 | Linha do tempo de usuário futuro e tempo imortal | Por que não usar informação futura para definir grupo | §9–10 | Cronologia autoral |
+| 6 | Esquema de emulação de ensaio-alvo | Eligibilidade, zero, estratégias, desfecho | §10 | Fluxo autoral |
+| 7 | Distribuição de propensity score com/sem overlap | Positividade e pesos extremos | §12 | Gráfico com dados didáticos fictícios |
+| 8 | DAG longitudinal A0→L1→A1→Y | Confundidor afetado por A anterior | §11/13 | Diagrama novo |
+| 9 | Gráfico pre/post com duas tendências fictícias (DiD) | Diferença de diferenças | §15/20 | Plot original de dados fictícios |
+| 10 | Radar de robustez de conclusão com risco de seleção/informação/confusão | STROBE vs ROBINS-I vs E-value | §14/19 | Infográfico autoral não copiado |
+
+**QA visual:** usar notação de setas explicitada em legenda, cores acessíveis e alt textual; distinguir vias causais e associações de seleção; nunca desenhar uma seta impossível no tempo; revisar por epidemiologista. Exportar WebP leve e testar legibilidade em celular/PWA. Os dez itens estão apenas **planejados**, não criados/incorporados.
+
+## 24. Referências e transparência editorial
+
+1. **Hernán MA, Robins JM.** *Causal Inference: What If*. Livro digital e materiais do autor; edição online disponível em https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/ . Conceitos de resultados potenciais, intercambiabilidade, positividade, consistência e g-métodos.
+2. **Hernán MA, Sauer BC, Hernández-Díaz S, Platt R, Shrier I.** *Specifying a target trial prevents immortal time bias and other self-inflicted injuries in observational analyses*. J Clin Epidemiol. 2016;79:70–75. https://pubmed.ncbi.nlm.nih.gov/27237061/ . Tempo zero, eligibilidade e tratamento.
+3. **Hernán MA et al.** *Target trial emulation: applying principles of randomised trials to observational studies*. BMJ. 2022;378:e071108. https://www.bmj.com/content/378/bmj-2022-071108 . Protocolos e emulação em efetividade.
+4. **Identifying and avoiding design related biases in observational studies using the target trial framework.** BMJ Medicine 2026;5:e001280. https://bmjmedicine.bmj.com/content/5/1/e001280 . Usuário prevalente/tempo imortal e vieses de desenho.
+5. **Elwert F, Winship C.** *Endogenous Selection Bias: The Problem of Conditioning on a Collider Variable*. Annu Rev Sociol. 2014;40:31–53. https://pmc.ncbi.nlm.nih.gov/articles/PMC6089543/. DAG e condicionamento em colisor.
+6. **VanderWeele TJ, Ding P.** *Sensitivity Analysis in Observational Research: Introducing the E-Value*. Ann Intern Med 2017;167:268–274. https://pubmed.ncbi.nlm.nih.gov/28693043/. Sensibilidade por confundimento não medido.
+7. **von Elm E et al.** *The STROBE statement: guidelines for reporting observational studies*. Ann Intern Med. 2007;147:573–577. https://www.equator-network.org/reporting-guidelines/strobe/. Checklist 22 itens de relato, não instrumento de qualidade causal.
+8. **Cochrane ROBINS-I.** https://methods.cochrane.org/bias/risk-bias-non-randomized-studies-interventions. Domínios de risco de viés para estudos não randomizados de intervenções.
+9. **ROBINS-I V2**, revisão preliminar de 20/11/2025. https://www.riskofbias.info/welcome/robins-i-v2 . **Ainda draft sujeito a modificações em 15/10/2026; direitos de imagem/reprodução restritos para produto comercial.**
+10. **Textor J et al.** *Robust causal inference using directed acyclic graphs: the R package dagitty*. Int J Epidemiol 2016/2017. https://doi.org/10.1093/ije/dyw341 . Software e lógica de ajuste por DAG.
+11. **Apostila LURIA 105 — Desenhos epidemiológicos**, rascunho interno preservado; cobre tipos de desenho.
+12. **Apostila LURIA 110 — Ensaios clínicos e revisões sistemáticas**, rascunho interno preservado; cobre ECR, ITT, RoB2, GRADE, metanálise.
+
+## 25. Auditoria preliminar e bloqueios para publicação
+
+**Conteúdo existente:** conceitos de associação/contrafactuais/estimandos, intercambiabilidade/positividade/consistência, DAGs, confundidor/mediador/colisor, ajuste via backdoor, confundimento por indicação, seleção e Berkson, erro de informação/recall/vigilância, tempo imortal, usuário prevalente, protopatia e causalidade reversa, target-trial emulation, g-métodos para confundidores variantes, propensity scores/overlap/pesos, mediação, E-value, controles negativos, variáveis instrumentais, desenhos quase-experimentais/DiD/temporalidade, dados SIH/SIM/SINAN/e-SUS APS, leitura crítica STROBE/ROBINS-I, matemática, oito casos, dez questões de cinco alternativas integralmente comentadas e dez visuais propostos.
+
+**QA pendente:** metodologista/epidemiologista deverá conferir DAGs (direção e ausência de ciclos), fórmulas E-value/DiD/padronização, interpretação de OR condicionado, robustez dos pressupostos em g-métodos, distinção entre versão ROBINS-I 2016 e V2 draft 2025, revisão de referências e direitos de reprodução. Revisar linguagem para não dizer “controlar confounders = causalidade garantida” nem “STROBE aprova estudo”. Garantir que os exemplos de SIM/SINAN/SIH não afirmem cobertura de toda população e respeitem LGPD. Produzir diagramas autorais com licença e WebP; converter para renderer e checar PWA. Deduplicar referências cruzadas com 105 e 110, preservando ambos.
+
+**Auditoria final global pelo Codex:** obrigação registrada no arquivo apostilas/_rascunhos/AUDITORIA-GERAL-CODEX-APOSTILAS.md. O Codex deverá confrontar temas de TODOS os lotes, indicar lacunas/duplicatas/plágio, verificar ciência e referências, imagens/licenças, links e integração, produzir relatório e PRs. **Não fazer merge, deploy nem liberar material sem revisão técnica.**
+
+**STATUS: MANUSCRITO AUTORAL DE PRIMEIRA PASSAGEM — SEM PUBLICAÇÃO, SEM MERGE, SEM DEPLOY.**
