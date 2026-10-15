@@ -260,3 +260,259 @@ Se casos de arbovirose caem após nebulização, isso não prova que a ação te
 ### 12.3 Ética e proteção de dados
 
 A finalidade de vigilância não elimina necessidade de segurança de informação e governança de acesso. Compartilhar o mínimo necessário entre autoridades competentes e proteger identificação em painéis públicos é essencial. Tabelas de pequenas localidades podem reidentificar alguém mesmo sem nome. Estratégias incluem agregação, supressão de células pequenas e controle de permissões. O ganho coletivo de informação deve preservar direitos individuais.
+
+
+## 13. Integração da vigilância com o serviço assistencial: seis cenários de ponta a ponta
+
+### 13.1 O serviço hospitalar é um sensor, não só um consumidor de informação
+
+Uma emergência pode ser o primeiro local onde se reconhece evento sentinela, como meningite suspeita, intoxicação em grupo, surto alimentar, óbito materno com potencial falha de cuidado ou doença desconhecida. O fluxo precisa ser conhecido no plantão: reconhecer o sinal, prestar assistência, adotar precauções, comunicar unidade competente, registrar tempo e informações essenciais e garantir continuidade da investigação. A existência de formulário eletrônico não garante que enfermeiro ou médico saiba para quem ligar quando o sistema está fora do ar.
+
+É útil haver protocolização local de comunicação imediata com Núcleo Hospitalar de Epidemiologia, Comissão de Controle de Infecção Hospitalar, vigilância municipal ou CIEVS conforme natureza do evento. A equipe não precisa aguardar reunião semanal para comunicar emergência; tampouco deve expor nomes de pacientes em rede social. A linha temporal da informação faz diferença: o mesmo dado comunicado em 30 minutos ou 15 dias tem impacto distinto.
+
+### 13.2 Atenção Primária participa antes, durante e depois do surto
+
+Na fase anterior, identifica condições de exposição, cobertura vacinal e vulnerabilidades. Durante o evento, localiza contatos, orienta cuidados e mantém assistência a doentes crônicos para evitar dano indireto. Após intervenção, acompanha consequências e atualiza cadastro, vacinação e fluxos de cuidado. Equipes de campo podem identificar bolsões não visíveis em bases agregadas. A vigilância ganha capilaridade sem substituir autoridade sanitária.
+
+### 13.3 A rede privada também gera informação de interesse público
+
+Clínicas privadas, hospitais filantrópicos, laboratórios e estabelecimentos de diagnóstico podem observar casos e resultados que importam ao coletivo, e as normas de notificação alcançam os destinatários indicados. Se um laboratório privado reconhece padrão inusitado de patógeno, deve observar mecanismos de comunicação e deveres legais. O contrato privado do paciente não elimina obrigação pública de reportar eventos definidos; sigilo e compartilhamento lícito continuam necessários.
+
+### 13.4 Fronteiras municipais não são fronteiras epidemiológicas
+
+Pessoa pode trabalhar numa cidade, morar em outra e procurar hospital numa terceira. Notificações segundo local de atendimento e atribuição ao município de residência/ocorrência possuem finalidades diferentes. A investigação precisa relacionar local provável da exposição, residência, deslocamentos e instituição notificadora. Interpretar todos os casos atendidos na capital como "risco da capital" pode ocultar evento em cidade vizinha.
+
+As redes CIEVS e vigilâncias estadual/regional servem, entre outras funções, para articular eventos que ultrapassam fronteiras administrativas, identificar cadeias de transmissão e coordenar resposta sem duplicação.
+
+## 14. Tipos de vigilância por método: rotina, ativa, sentinela, laboratorial e baseada em eventos
+
+**Vigilância passiva/rotineira:** sistema recebe notificações ou registros dos serviços, com vantagens de abrangência e custo relativamente menor, mas vulnerável a subnotificação e atraso. **Vigilância ativa:** equipes procuram casos em unidades, laboratórios ou território; aumenta detecção e qualidade, porém consome recursos. **Vigilância sentinela:** estabelecimentos selecionados monitoram evento com protocolo detalhado; não equivale a censo de todos os serviços. **Vigilância laboratorial:** testes e caracterização de amostras fornecem precisão etiológica e pistas de mudança. **Vigilância baseada em eventos:** capta sinais e relatos de fontes heterogêneas, depois verifica e avalia risco antes de comunicar conclusões.
+
+Essas modalidades podem coexistir. Durante aumento de síndrome febril, notificações rotineiras mostram tendência, unidades sentinela testam agentes, laboratório confirma circulação e equipe ativa investiga contatos. Uma informação pode surgir primeiro por mídia local e precisar verificação; ignorar o sinal só porque ainda não está no SINAN pode atrasar resposta. Por outro lado, rumor não é dado confirmado e precisa ser verificado.
+
+### 14.1 Vigilância sentinela não representa toda a população automaticamente
+
+Se duas unidades sentinelas detectam 20% de positividade para influenza entre amostras selecionadas, não se pode afirmar que 20% de toda a população municipal tem influenza. O denominador é a população testada segundo critérios e locais, que possui vieses de seleção. O uso adequado é monitorar tendência e circulação dos agentes conforme protocolo de amostragem.
+
+### 14.2 Vigilância baseada em eventos e falsa informação
+
+Mensagem compartilhada de “várias crianças passaram mal após beber água de escola” é sinal a verificar. A equipe busca dados de atendimentos, contato com escola, amostras e identificação de outras exposições. Se não houver casos, comunicar resultado sem amplificar rumor. Se houver, agir conforme risco e informar de forma proporcional. O cuidado ético inclui evitar culpabilização de trabalhadores antes de investigação.
+
+## 15. Conceitos quantitativos que estruturam a análise de situação de saúde
+
+### 15.1 Incidência e prevalência respondem perguntas diferentes
+
+**Incidência** expressa ocorrência de novos casos em uma população sob risco durante intervalo. Pode ser incidência cumulativa (novos casos/população inicialmente em risco, sob condições adequadas) ou densidade de incidência (novos casos/soma de tempo sob risco). **Prevalência** mede pessoas com condição existente em momento ou período, misturando duração e incidência. Em agravo agudo, notificação de novos casos é frequentemente mais útil para detectar surto. Em diabetes e hipertensão, prevalência apoia dimensionamento de necessidades de cuidado.
+
+**Exemplo:** bairro de 10.000 moradores registra 100 novos diagnósticos de doença X num ano, sem considerar migração ou elegibilidade diferencial. Incidência cumulativa aproximada é 1% ou 10 por mil habitantes. Se há 600 pessoas vivendo com a doença em certa data, prevalência pontual aproximada é 6%. Não chamar prevalência 6% de incidência.
+
+### 15.2 Taxa, proporção e denominador
+
+A qualidade do indicador depende tanto de numerador quanto de denominador. Uma taxa bruta de mortalidade pode aumentar porque a população envelheceu, sem aumento de risco em cada idade; padronizar por idade e observar composição demográfica ajuda. Uma proporção de fichas incompletas indica qualidade de dado, não magnitude biológica da doença. Uma taxa de ataque usa denominador de expostos, diferente de população geral do município; selecionar incorretamente denominador produz falsa magnitude.
+
+### 15.3 Sensibilidade do sistema versus especificidade de sinal
+
+Um sistema muito sensível detecta muitos potenciais eventos, incluindo falsos alarmes, e pode demandar verificação intensiva; um sistema muito específico pode perder eventos iniciais. O equilíbrio depende de gravidade, custo do atraso, recurso laboratorial e capacidade de resposta. Para doenças com potencial epidêmico muito alto, aceitar maior número de suspeitas investigadas pode ser apropriado. Nenhum sistema é perfeito; indicadores de atraso, representatividade e valor preditivo positivo ajudam avaliá-lo.
+
+### 15.4 Letalidade versus mortalidade
+
+**Letalidade** é proporção de mortes entre pessoas com doença identificada no período/cenário; **mortalidade** relaciona número de óbitos à população. Um surto com poucos casos graves pode ter letalidade elevada, mas baixa mortalidade populacional por ter atingido poucas pessoas. Subdiagnóstico de casos leves pode superestimar letalidade. Em doença crônica, período de seguimento e critérios de caso importam. Confundir os dois termos compromete priorização.
+
+### 15.5 Sinal temporal versus tendência real
+
+Aumento de casos notificados após mudança de sistema pode refletir registro mais rápido, ampliação de testes, evento epidemiológico real ou combinação. Comparação de 2025 com 2026 requer confirmar que a definição de caso e periodicidade não mudaram, sobretudo após atualizações da lista nacional. Séries de doenças que se tornam compulsórias tendem a começar com base histórica incompleta; uma “explosão” pode representar entrada do sistema.
+
+## 16. Preparação e resposta a desastres: risco sanitário além de epidemias
+
+Enchentes podem interromper água tratada, energia de hospitais, transporte, vacinação, cuidado de pacientes dependentes de oxigênio e cadeias de frio, além de aumentar exposição a leptospirose e acidentes. A vigilância ambiental identifica qualidade de água, resíduos, vetores, substâncias químicas e capacidade de serviços; epidemiológica acompanha agravos e eventos; sanitária verifica condições de alimentos, abrigos, medicamentos e água; trabalhador avalia riscos de equipes de resgate e limpeza. Defesa Civil e assistência social integram resposta intersetorial.
+
+### 16.1 O problema de avaliar apenas doenças confirmadas
+
+Durante enchente, sistemas de notificação podem ficar indisponíveis. A ausência de dados é frequentemente consequência do próprio desastre. Fontes alternativas incluem observação de equipes móveis, registros de abrigos, vigilância sindrômica, amostragem de água e sinalização de hospitais de referência. Comunicar "não houve caso" sem registrar falta de coleta pode gerar falsa segurança.
+
+### 16.2 Grupos com maior risco de interrupção de cuidado
+
+Pessoas em hemodiálise, com insulinoterapia, gestantes de alto risco, crianças pequenas e idosos frágeis podem sofrer dano por interrupção de logística e atendimento, mesmo sem infecção aguda. A vigilância precisa ajudar mapear necessidades e articular transporte e oferta, sem expor nominalmente condições sensíveis. O acesso a medicação crônica é tema de proteção coletiva em desastre, não somente de administração hospitalar.
+
+### 16.3 Comunicação de água segura
+
+Recomendações devem especificar se água foi testada, se há abastecimento alternativo, quais medidas de tratamento domiciliar são adequadas e onde obter insumos. Informação vaga “higienize tudo” sem acesso a saneamento e água limpa pode transferir responsabilidade indevidamente à população. Educação sanitária precisa ser acompanhada de ação intersetorial.
+
+## 17. Segurança sanitária, farmacovigilância e eventos adversos
+
+Um lote de medicamento com suspeita de contaminação pode causar evento adverso em vários hospitais. A assistência identifica casos, comunica serviço de farmacovigilância, acompanha pacientes e suspende uso de produtos quando indicado por autoridade/protocolo. A vigilância sanitária investiga fabricante, distribuição e processos de registro/qualidade; laboratórios avaliam amostras; a epidemiologia acompanha distribuição do dano; centros de informação toxicológica podem apoiar casos. A resposta deve proteger pacientes sem criar alarme injustificado em todos os medicamentos da mesma classe.
+
+### 17.1 Evento adverso não implica causalidade provada
+
+Queixa de reação após medicamento, vacina ou dispositivo desencadeia análise, mas temporalidade não é prova suficiente de mecanismo. Investigação de lote, histórico clínico, frequência esperada e informações de outros casos orienta causalidade. Isso vale especialmente para eventos supostamente atribuíveis à vacinação e/ou imunização (ESAVI), nos quais vigilância deve ser sensível à comunicação e criteriosa na interpretação. A comunicação pública não deve concluir dano ou inocuidade absoluta antes de investigação.
+
+### 17.2 Tecnovigilância e hemovigilância
+
+Dispositivos podem falhar por defeito, uso ou manutenção; registrar evento contribui para correção e prevenção de danos. Hemovigilância acompanha riscos associados à cadeia transfusional e uso de hemocomponentes. Ambas fazem interface entre segurança do paciente, serviços e vigilância sanitária. Não confundir um incidente em cateter com surto infeccioso sem investigar origem, mas considerar evento coletivo se padrão se repete em estabelecimentos.
+
+## 18. Seis casos integrados de prova e serviço
+
+### Caso 1 — Surto alimentar após evento escolar
+**Apresentação:** quinze estudantes apresentam vômitos e diarreia 4–12 horas após evento escolar. Dez frequentaram a mesma cantina, mas também houve consumo de água em bebedouros comuns. Dois apresentam desidratação moderada.
+**Hipótese inicial:** surto de doença transmitida por água/alimentos, etiologia e fonte ainda incertas.
+**Raciocínio:** agrupar por pessoa-tempo-lugar e separar cuidado clínico de investigação. Não atribuir causalidade ao último alimento citado sem comparar expostos/não expostos e horários. Fazer definição inicial de caso e busca ativa. Solicitar colaboração epidemiológica, sanitária, ambiental, e rede de laboratórios conforme necessidade.
+**Conduta:** reidratar casos, reconhecer gravidade, comunicar vigilância, orientar prevenção temporária segura e planejar amostragem/inspeção. Não esperar identificação definitiva de patógeno para reduzir exposição plausível se risco é alto.
+**Por que importa:** treina integração das vigilâncias e decisão em incerteza.
+
+### Caso 2 — Suspeita de sarampo em adolescente não vacinado
+**Apresentação:** adolescente com febre, tosse, coriza, conjuntivite e exantema após contato com viajante de região com circulação de sarampo. A sorologia ainda não foi coletada.
+**Hipótese:** sarampo suspeito; diferencial inclui rubéola e outras doenças exantemáticas.
+**Raciocínio:** necessidade de precauções e comunicação oportuna diante de doença potencialmente muito transmissível. Notificar conforme lista e prazo vigentes, iniciar investigação de contatos e histórico vacinal; confirmação laboratorial complementa resposta.
+**Exames:** amostras e testes no prazo recomendado em protocolo de sarampo, com orientação da vigilância/laboratório.
+**Conduta:** cuidado clínico, medidas de isolamento/precaução, comunicação imediata quando indicada, levantamento de contatos e bloqueio vacinal/profilaxia conforme critérios e idade por equipe pública.
+**Por que importa:** a resposta não deve aguardar diagnóstico definitivo quando há caso suspeito de grande impacto.
+
+### Caso 3 — Exposição química na oficina
+**Apresentação:** cinco trabalhadores de mesma oficina desenvolvem dermatite e sintomas respiratórios após troca de solvente. Um procura UPA por dispneia. A família de um deles relata odor químico no entorno.
+**Hipótese:** exposição ocupacional comum, possível contaminação ambiental fora do ambiente laboral.
+**Raciocínio:** cada trabalhador precisa de cuidado; ao mesmo tempo, padrão coletivo sinaliza risco que pode persistir para colegas e vizinhos. O nexo precisa ser investigado com cronologia, fichas de segurança, ventilação, modo de uso e condições do ambiente; notificação conforme tipo de agravo na norma vigente.
+**Conduta:** atendimento de gravidade, avaliação por saúde do trabalhador, vigilância ambiental/sanitária conforme competência, orientação sobre controle e remoção de exposição insegura, ações intersetoriais com órgãos responsáveis.
+**Por que importa:** vigilância não é apenas contagem de transmissíveis; riscos do trabalho e ambiente são centrais.
+
+### Caso 4 — Anomalia congênita e atualização da lista 2026
+**Apresentação:** recém-nascido tem anomalia congênita identificada após nascimento. O profissional afirma que "não precisa notificar porque só registra no SINASC se for eventual estatística".
+**Hipótese:** ocorrência que pode estar sujeita a notificação compulsória, incluindo inclusão normativa de anomalias congênitas em 2026.
+**Raciocínio:** a Portaria GM/MS 10.175/2026 incluiu anomalias congênitas na lista nacional. As notas técnicas de 2026 especificam fluxos com SINASC para nascidos vivos e SIM para óbitos fetais/infantis, segundo definição e regras de registro; não é correto presumir SINAN como veículo único.
+**Conduta:** conferir evento e códigos obrigatórios conforme anexo, completar Declaração de Nascido Vivo e notificação institucional aplicável, articular acompanhamento clínico e investigação quando indicada.
+**Por que importa:** prova que fontes normativas e ferramentas mudam e uma ficha antiga de cursinho pode se tornar errada.
+
+### Caso 5 — Dois hospitais com casos semelhantes, nenhuma notificação municipal
+**Apresentação:** dois hospitais em municípios vizinhos percebem internações por síndrome febril hemorrágica incomum; o sistema de notificação municipal está intermitente. Equipe considera esperar "normalizar" o sistema para informar.
+**Hipótese:** potencial emergência em saúde pública que exige avaliação de risco e coordenação regional.
+**Raciocínio:** vigilância baseada em eventos e núcleos hospitalares devem comunicar sinais oportunamente por canais alternativos oficiais. Não confundir conclusão epidemiológica com alerta preliminar. A Rede CIEVS e a RENAVEH podem articular vigilâncias e laboratórios, sem substituir a comunicação local.
+**Conduta:** manejo clínico e precauções, coleta apropriada, comunicação urgente conforme protocolos, avaliação conjunta de tempo/lugar/pessoas expostas e capacidade de resposta.
+**Por que importa:** demora de informação pode gerar dano maior do que uma suspeita adequadamente qualificada.
+
+### Caso 6 — Indicadores de dengue caem quando serviço fecha
+**Apresentação:** bairro periférico registrou 80 casos notificados de dengue num trimestre. Uma UBS fecha por reformas e, no trimestre seguinte, há só 22 notificações; a equipe comemora "queda da incidência" embora a UPA da região vizinha registre maior procura por febre.
+**Hipótese:** redução artificial de captação/subnotificação, possivelmente junto a mudanças reais de transmissão.
+**Raciocínio:** avaliar origem de registros, deslocamento de atendimento, positividade e dados entomológicos/ambientais; comparar semanas epidemiológicas e sazonalidade. Contagem isolada sem acesso/denominador não comprova menor transmissão.
+**Conduta:** reabrir fluxo de notificação em serviços alternativos, investigação territorial, integração com APS e controle vetorial, divulgação cautelosa e avaliação de acesso.
+**Por que importa:** vigilância precisa saber se o dado representa evento ou mudança no sistema que mede o evento.
+
+## 19. Dez questões autorais com justificativas
+
+### Questão 1 — Componentes da PNVS
+Segundo a Resolução CNS 588/2018, qual conjunto representa os quatro campos articulados da PNVS?
+A) Epidemiológica, sanitária, ambiental e saúde do trabalhador.
+B) Apenas epidemiológica e laboratorial.
+C) Hospitalar, ambulatorial, privada e fiscal.
+D) Vigilância de preços, contratos, tributos e urbanização.
+**Gabarito A.** B exclui componentes obrigatórios e confunde laboratório transversal com tipo exclusivo. C classifica serviços, não campos. D cita atividades administrativas que não definem quatro eixos. **Revisão:** art. 3º PNVS, integração dos saberes/processos (§4).
+
+### Questão 2 — Natureza pública
+Qual afirmação sobre gestão da PNVS é correta?
+A) A gestão pode ser totalmente delegada a empresa privada como autoridade sanitária.
+B) A gestão é responsabilidade exclusiva do poder público, embora a política abranja também serviços e estabelecimentos privados relacionados à saúde.
+C) A política só existe em hospitais federais.
+D) Somente ocorre quando há epidemia declarada.
+**Gabarito B.** A retira responsabilidade estatal. C restringe abrangência. D ignora ação permanente. **Revisão:** art. 2º e abrangência transversal (§3).
+
+### Questão 3 — Risco versus vulnerabilidade
+Território tem poucos casos notificados, porém abastecimento intermitente e longa distância até unidades. A interpretação mais adequada é:
+A) Ausência de casos registrados prova ausência de risco.
+B) Vulnerabilidade e barreiras podem elevar risco real e reduzir detecção, exigindo análise territorial.
+C) Não há necessidade de vigilância se não houve internação.
+D) A única ação possível é aumentar publicidade.
+**Gabarito B.** A/C ignoram subdetecção. D não enfrenta acesso/ambiente. **Revisão:** risco e vulnerabilidade são conceitos distintos (§2.3).
+
+### Questão 4 — Investigação de surto
+Trinta e seis entre 120 expostos a alimento adoeceram, contra oito entre 80 não expostos. Qual a taxa de ataque aproximada nos expostos?
+A) 3%; B) 10%; C) 30%; D) 60%.
+**Gabarito C.** 36/120 = 0,30 = 30%. B é taxa dos não expostos, A/D erram denominador. **Revisão:** usar população exposta como denominador; associação não prova causalidade (§5.2).
+
+### Questão 5 — Notificação 2026
+A Portaria GM/MS 10.175/2026 alterou lista nacional principalmente para incluir:
+A) Ausência de notificação obrigatória de todas as doenças.
+B) Anomalias congênitas.
+C) Apenas acidentes domésticos sem importância médica.
+D) Extinção do SINASC.
+**Gabarito B.** A/C contrariam finalidade legal. D é falso; SINASC integra a operacionalização do registro dos nascidos vivos. **Revisão:** a notificação segue instrumentos específicos, não necessariamente SINAN para todo evento (§7).
+
+### Questão 6 — Informação e sistema
+Qual sistema é utilizado primariamente para registrar dados de mortalidade?
+A) SIM. B) SINAN. C) SI-PNI. D) SIH exclusivamente.
+**Gabarito A.** B registra agravos notificados, C imunizações, D internações SUS; nenhum substitui SIM. **Revisão:** escolha do sistema depende da pergunta e do evento (§6).
+
+### Questão 7 — Sentinela e representatividade
+Uma unidade sentinela registra 20% de positividade para agente em pacientes selecionados. Qual afirmação é adequada?
+A) 20% de toda população está doente.
+B) O resultado mede positividade na amostra selecionada e deve ser interpretado conforme desenho de vigilância.
+C) Isso prova surto em todas as cidades brasileiras.
+D) Não há qualquer utilidade epidemiológica.
+**Gabarito B.** A/C extrapolam população estudada. D ignora capacidade de monitorar tendência. **Revisão:** amostragem sentinela não é censo (§14.1).
+
+### Questão 8 — Núcleos hospitalares e CIEVS
+Diante de evento febril incomum em dois hospitais, a resposta é:
+A) Esperar confirmação definitiva e regularização do sistema para qualquer contato.
+B) Comunicar oportunamente ao fluxo de vigilância competente, acionar NHE/CIEVS conforme risco e promover cuidado/precauções.
+C) Publicar nome de pacientes em rede social.
+D) Ignorar porque atendimento ocorre em hospital.
+**Gabarito B.** A atrasa resposta; C viola privacidade; D nega vigilância hospitalar. **Revisão:** NHE/Renaveh e CIEVS articulam alerta e resposta (§8).
+
+### Questão 9 — Incidência versus prevalência
+Município tem 600 pessoas com doença em uma data e identifica 100 novos casos no ano em população de 10.000, sem outras correções. A prevalência pontual aproximada é:
+A) 1%; B) 6%; C) 10%; D) 100%.
+**Gabarito B.** 600/10.000 = 6%. A é incidência cumulativa aproximada desse exemplo; C/D correspondem a denominadores equivocados. **Revisão:** incidência conta novos, prevalência inclui existentes (§15.1).
+
+### Questão 10 — Vigilância após intervenção
+Casos notificados diminuem após fechamento temporário de unidade; nenhuma outra fonte foi analisada. Qual decisão metodológica é correta?
+A) Concluir causalidade da redução sem verificar dados.
+B) Validar cobertura de notificação, deslocamento do cuidado, sazonalidade e fontes independentes antes de afirmar queda real.
+C) Declarar erradicação do agravo.
+D) Suspender toda vigilância.
+**Gabarito B.** A/C extrapolam evidência; D agrava perda de informação. **Revisão:** indicadores dependem de acesso, captação e mudanças do sistema (§12).
+
+## 20. Plano visual sem incorporação de imagem não aprovada
+
+**Importante:** estas são propostas de figuras originais/candidatas, NÃO imagens aprovadas. Nenhuma foi incorporada ao site, e nenhum material protegido do Drive será reutilizado.
+
+| Nº | Recurso sugerido | Aprendizagem |
+|---|---|---|
+| 1 | Diagrama autoral dos quatro eixos PNVS | Diferenciar funções integradas sem duplicação |
+| 2 | Fluxograma dado → validação → análise → alerta → resposta → avaliação | Entender ciclo contínuo |
+| 3 | Mapa fictício do território com UBS, escola, rio e fábrica | Relacionar ambiente, ocupação e assistência |
+| 4 | Curva epidêmica hipotética de exposição comum | Ensinar agrupamento temporal |
+| 5 | Tabela visual 2×2 de expostos e não expostos em evento alimentar | Calcular taxa de ataque e razão de riscos |
+| 6 | Organograma original União/estados/municípios/CIEVS/Renaveh/LACEN | Entender rede e competências |
+| 7 | Comparação visual SIM × SINASC × SINAN × SI-PNI | Escolher base pelo objetivo |
+| 8 | Gráfico autoral de efeito da subnotificação após fechamento de serviço | Separar fenômeno real de falha de sistema |
+| 9 | Fluxo de notificação imediata e semanal atualizado por norma 2026 | Não confundir prazos e destinatários |
+| 10 | Exemplo autorizado de amostragem de água Vigiagua | Conectar vigilância ambiental a risco |
+| 11 | Diagrama da cadeia de risco em ambiente de trabalho | Mostrar prevenção primária de exposição |
+| 12 | Fluxo de resposta à emergência com avaliação rápida | Diferenciar risco, alerta e declaração de emergência |
+
+Gráficos próprios devem utilizar dados claramente fictícios ou identificados, sem mapa geográfico que exponha pessoas reais. Imagens externas só com fonte e licença para uso comercial validadas e aprovação na fila Admin, com legenda e otimização WebP.
+
+## 21. Resumo de alto rendimento e diferenciais fundamentais
+
+**Questão "qual lei?":** PNVS = **Resolução CNS 588/2018**; lista nacional de notificação atualizada em 2026 pela **Portaria GM/MS 10.175/2026** (atender a outras atualizações posteriores se existirem). **Questão "quais eixos?":** epidemiológica, sanitária, ambiental e saúde do trabalhador. **Questão "qual processo?":** coleta e consolidação sistemática → análise/identificação de risco → intervenção → comunicação → monitoramento. **Questão "quem executa?":** rede descentralizada e integrada sob responsabilidade de gestão do poder público.
+
+**Questão "qual sistema?":** SIM mortes, SINASC nascidos vivos, SINAN agravos notificáveis conforme fluxo, SI-PNI imunização, SIH internamento financiado pelo SUS, SIA ambulatorial. **Questão "qual aviso?":** suspeita pode ser notificável; imediata até 24 horas quando assim previsto; semanal conforme evento. Não fazer lista de prazos decorada a partir de material antigo sem texto consolidado atualizado.
+
+**Questão "qual trabalho coletivo?":** um surto alimentar necessita epidemiologia, sanitária, ambiental, trabalhadores e assistência, dependendo da fonte. **Questão "equipe de emergência?":** CIEVS conecta alerta e resposta, Renaveh/NHE captam sinais hospitalares, SISLAB apoia confirmação. **Questão "qual armadilha?":** notificação menor após fechamento de UBS não prova risco menor.
+
+## 22. Matriz de cobertura e pendências impeditivas de publicação
+
+| Competência | Núcleo ensinado | Aplicação interna |
+|---|---|---|
+| PNVS e princípios | §§2–3 | Questões 1–3 |
+| Quatro eixos e integração | §§4–5 | Casos 1/3, Q1 |
+| Análise territorial e vulnerabilidade | §§2.3,9,15 | Casos 3/6, Q3 |
+| Sistemas de informação | §6 | Caso 4, Q6 |
+| Notificação e norma 2026 | §7 | Casos 2/4, Q5 |
+| Redes laboratoriais e emergências | §§8,10,14 | Caso 5, Q8 |
+| Vigilância APS e hospital | §§9,13 | Casos 2/5 |
+| Vigilância não transmissíveis e violência | §11 | Q3/10 |
+| Indicadores, análise e vieses | §§12,15 | Caso 6, Q4/9/10 |
+| Desastres, fármaco e eventos | §§16–17 | Casos 3/5 |
+| Testes de aprendizagem | §§18–19 | 6 casos e 10 questões |
+
+**Pendências:** verificar o texto **consolidado** da Portaria de Consolidação 4 após 10.175/2026 e possíveis modificações até outubro de 2026; validar periodicidade exata por evento em tabela dedicada à aula 060. Completar benchmark comparável de curso de vigilância geral no Drive (o material efetivamente encontrado foi ficha curta). Auditar mínimo 60.000 **caracteres úteis e originais** de corpo instrutivo, sem contar tabelas, casos, questões, referências e metadados; não inflar por redundância. Validar 10+ imagens candidatas reais ou diagramas próprios via Admin, revisão científica, prova de autossuficiência, conversão ao renderer da LURIA e testes desktop/PWA. Comparar com edição de 2026 de rede de vigilância ambiental/trabalhador antes de certificar.
+
+**Parecer editorial:** manuscrito original com cobertura dos eixos da PNVS, separação de escopo das futuras aulas 060/065 e aplicações de prova; **não certificado/não publicado** até cumprir requisitos do padrão LURIA.
