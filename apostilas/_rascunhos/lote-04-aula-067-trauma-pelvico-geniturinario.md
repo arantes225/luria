@@ -476,3 +476,343 @@ O seguimento envolve consolidação óssea, dor persistente, marcha e mobilidade
 - Não ignorar lesão retal, vaginal, neurológica e as consequências sexuais.
 - Não considerar retorno tardio como opcional em paciente com lesão de uretra/ureter/renal importante.
 
+
+
+## 17. Casos clínicos comentados: decisões que mudam desfechos
+
+### Caso 1 — Choque após colisão e FAST negativo
+**Apresentação:** homem de 29 anos, colisão de motocicleta, PA 80/50 mmHg, FC 140/min, extremidades frias, dor pélvica, equimose perineal. E-FAST não identifica líquido intraperitoneal ou torácico significativo; radiografia da pelve sugere abertura anterior do anel. Não há hemorragia externa aparente.
+
+**Hipótese:** choque hemorrágico associado à ruptura do anel pélvico, sem excluir outras fontes.  
+**Raciocínio:** hipotensão e má perfusão têm prioridade. O FAST negativo não avalia adequadamente o espaço retroperitoneal. O padrão ósseo pode favorecer sangramento venoso/ósseo e/ou arterial, mas a hemodinâmica determina necessidade de controle urgente.  
+**Exames:** tipo e provas de compatibilidade, hemograma, gasometria, lactato/base deficit, coagulação e cálcio, com avaliações rápidas de tórax/abdome e imagem pélvica se não atrasarem cuidado. Não encaminhar inicialmente à TC se está inviável transportá-lo com segurança.  
+**Conduta:** ABCDE, aquecimento, ressuscitação hemostática e ativação de equipe de trauma, binder ao nível dos grandes trocânteres, procura de outras fontes e **controle de hemorragia** por estratégias disponíveis (packing e estabilização, embolização quando apropriada e factível). Reavaliação contínua e transporte à TC apenas após estabilização suficiente.  
+**Por que importa:** identifica a principal armadilha de uma prova de trauma: **FAST negativo não é alta no paciente chocado**.
+
+### Caso 2 — Fratura aberta com hematoma perineal discreto
+**Apresentação:** mulher de 37 anos, atropelamento, fratura pélvica e laceração vaginal com sangramento, pele perineal com pequena ferida, dor intensa. Inicialmente responsiva à ressuscitação.  
+**Hipótese:** fratura do anel com possível comunicação com vagina/períneo e risco de lesão urinária ou retal associada.  
+**Raciocínio:** tamanho da ferida na pele não define extensão profunda ou contaminação. O quadro exige estabilização e avaliação anatômica por equipes adequadas, inclusive ginecologia e cirurgia de trauma.  
+**Exames:** avaliação hemodinâmica, TC contrastada quando possível, exame dirigido genital/retal em condições apropriadas e investigação vesicouretral se houver sinais.  
+**Conduta:** medidas de hemostasia e estabilização, antimicrobianos e tétano conforme protocolo para fratura aberta, desbridamento/controle de contaminação e decisão sobre necessidade de proteção urinária/fecal conforme lesões demonstradas.  
+**Por que importa:** prevenir infecção pélvica e perda funcional depende de reconhecer ferida potencialmente aberta, não apenas da imagem óssea.
+
+### Caso 3 — Binder colocado alto, sobre as cristas
+**Apresentação:** homem após atropelamento chega com contenção circunferencial no abdome inferior e cristas ilíacas, com suspeita de fratura anteroposterior e hipotensão.  
+**Hipótese:** contenção pélvica aplicada em posição biomecanicamente inadequada.  
+**Raciocínio:** o local de transmissão de compressão útil é ao redor dos **grandes trocânteres**, não da cintura. Apertar indiscriminadamente acima do anel pode não controlar a mobilidade relevante.  
+**Exames:** avaliação clínica e imagem rápida quando indicada sem atraso da hemostasia.  
+**Conduta:** equipe treinada deve corrigir posicionamento com técnica segura, mantendo proteção e controle hemorrágico; não usar a correção como pretexto para adiar ressuscitação. Registrar integridade da pele e tempo de aplicação.  
+**Por que importa:** “grandes trocânteres” é detalhe anatômico frequentemente cobrado e clinicamente útil.
+
+### Caso 4 — Trauma renal de alto grau, porém estável
+**Apresentação:** homem de 25 anos após queda, dor de flanco esquerdo, hematúria macroscópica. PA 118/74, FC 88 e perfusão preservada. TC evidencia laceração renal profunda com componente do sistema coletor e extravasamento urinário pequeno, sem sangramento arterial ativo.  
+**Hipóteses:** lesão renal de maior grau com extravasamento urinário inicialmente contido.  
+**Raciocínio:** a lesão importante precisa de vigilância e imagem apropriada, mas **grau anatômico por si só não significa nefrectomia**. A ausência de instabilidade, hemorragia ativa e sintomas de urinoma permite estratégia conservadora supervisionada em centro capaz.  
+**Exames:** hemoglobina/hematócrito seriados, função renal, diurese, avaliação de lesão associada e reimagem conforme grau/evolução.  
+**Conduta:** observação hospitalar adequada, analgesia e acompanhamento de eventual vazamento; considerar stent/drenagem em infecção, obstrução, dor importante ou vazamento persistente.  
+**Por que importa:** indicações de TNO renal são baseadas em **fisiologia + possibilidade de resgate**, não no medo diante da palavra “grau IV”.
+
+### Caso 5 — Lesão vascular renal sem hematúria
+**Apresentação:** paciente de 31 anos após desaceleração de alta energia e impacto de flanco. Urina inicial sem sangue visível. Apresenta dor intensa e hematoma lombar; após estabilização, TC identifica importante falha de perfusão do rim por lesão vascular.  
+**Hipótese:** trauma vascular renal.  
+**Raciocínio:** a ausência de hematúria não exclui dano de pedículo/vasos e não deve cancelar investigação diante de mecanismo e exame de alto risco.  
+**Exames:** TC contrastada com avaliação vascular e renal, função contralateral e exames seriados; encaminhamento imediato à urologia/vascular/intervencionista conforme estabilidade.  
+**Conduta:** decidir controle vascular e preservação de função conforme anatomia, tempo, gravidade, perfusão, estabilidade e recursos; não impor única técnica universal.  
+**Por que importa:** o mecanismo de desaceleração é critério de suspeita independente da hematúria.
+
+### Caso 6 — Extravasamento urinário após procedimento pélvico
+**Apresentação:** mulher de 46 anos, sexto dia após histerectomia, febre, dor lombar direita, drenagem líquida crescente e elevação discreta da creatinina. Urina sem hematúria.  
+**Hipótese:** lesão ureteral tardia ou obstrução com extravasamento, entre outros diferenciais pós-operatórios.  
+**Raciocínio:** instrumentação/lesão térmica ou ligadura pode causar quadro tardio. Urina clara não exclui ureter.  
+**Exames:** TC com fase excretora, ultrassom quando útil para hidronefrose/coleção e, se persistir dúvida, pielografia retrógrada/anterógrada. Creatinina do fluido de dreno pode apoiar natureza urinária.  
+**Conduta:** avaliar sepse/obstrução, drenar via urinária e coleções quando indicado, programar reparo segundo localização, viabilidade e momento.  
+**Por que importa:** demonstra por que a ureteropatia traumática não deve ser descartada pela ausência de hematúria.
+
+### Caso 7 — Fratura pélvica e hematúria macroscópica
+**Apresentação:** homem de 42 anos após colisão, estabilizado, com fratura de ramos púbicos e urina intensamente hemática. TC abdominal portal mostra hematoma pélvico, mas sem descrição de ruptura vesical.  
+**Hipótese:** lesão vesical ainda não esclarecida.  
+**Raciocínio:** **TC portal sem preenchimento retrógrado ativo da bexiga não exclui ruptura**. A combinação fratura pélvica + hematúria macroscópica justifica estudo específico.  
+**Exames:** cistografia retrógrada/TC cistografia ativa, após verificar possibilidade de acesso uretral seguro.  
+**Conduta:** se exame demonstrar extravasamento extraperitoneal simples, drenagem vesical e vigilância; se intraperitoneal traumático contuso, reparo; se extraperitoneal complexa, discutir cirurgia.  
+**Por que importa:** diferencia **exame tecnicamente correto** de uma tomografia genérica que não respondeu à pergunta.
+
+### Caso 8 — Perfuração intraperitoneal de bexiga por trauma contuso
+**Apresentação:** jovem de 19 anos sofre impacto abdominal enquanto a bexiga estava cheia; dor hipogástrica, dificuldade de urinar e hematuria. Cistografia demonstra contraste livre delineando alças intestinais.  
+**Hipótese:** ruptura intraperitoneal vesical.  
+**Raciocínio:** contraste em cavidade livre após instilação retrógrada localiza ruptura; a urina pode gerar peritonite química e infecção.  
+**Exames:** avaliação das demais vísceras e lesões, função renal, hemograma e exame cirúrgico.  
+**Conduta:** reparo operatório da lesão traumática externa, avaliação de lesões associadas, drenagem e seguimento apropriados.  
+**Por que importa:** “intra = cirurgia” é útil quando especificado **trauma externo contuso**, evitando extrapolação a perfurações endoscópicas pequenas.
+
+### Caso 9 — Ruptura extraperitoneal complexa
+**Apresentação:** homem com fratura pélvica, cistografia evidencia extravasamento perivesical. TC identifica fragmento ósseo projetando-se para interior da bexiga e lesão do colo vesical.  
+**Hipótese:** ruptura extraperitoneal **complicada**.  
+**Raciocínio:** seria incorreto indicar apenas cateter por decorar “extra = conservador”. Dano do colo e corpo estranho ósseo mudam prognóstico de continência e cicatrização.  
+**Exames:** revisão de imagem, avaliação urológica e dos órgãos adjacentes.  
+**Conduta:** reparo operatório conforme plano conjunto com ortopedia/trauma, drenagem e verificação da recuperação.  
+**Por que importa:** ressalva à regra é exatamente o aspecto que provas de residência valorizam.
+
+### Caso 10 — Sangue no meato, retenção e uretra posterior
+**Apresentação:** homem de 36 anos com fratura pélvica após atropelamento, uretrorragia, retenção urinária, hematoma perineal. Equipe considera passagem forçada de Foley para medir diurese.  
+**Hipótese:** lesão uretral associada à fratura pélvica.  
+**Raciocínio:** há alta suspeita, sem necessidade de demonstrar próstata “alta”. Forçar cateter pode criar falsa via e piorar o dano. Primeiro estabilizar riscos vitais.  
+**Exames:** uretrografia retrógrada quando estabilidade permitir ou avaliação endoscópica adequada, segundo urologia; investigar bexiga se quadro também a sugere.  
+**Conduta:** evitar tentativas repetidas às cegas; drenagem por equipe experiente, frequentemente via suprapúbica guiada se cateterização não for segura, e plano de realinhamento selecionado/reconstrução diferida conforme continuidade.  
+**Por que importa:** protege anatomia e função enquanto permite manejo do politrauma.
+
+### Caso 11 — Trauma a cavaleiro e uretra anterior
+**Apresentação:** ciclista de 21 anos bate períneo no quadro da bicicleta, evolui com dor local, uretrorragia e dificuldade de urinar, sem fratura de pelve na radiografia.  
+**Hipótese:** lesão da uretra anterior, provavelmente segmento bulbar, sem excluir hematoma isolado.  
+**Raciocínio:** lesão uretral não exige fratura da bacia. O mecanismo perineal direciona suspeita ao segmento anterior.  
+**Exames:** uretrografia retrógrada ou cistoscopia adequada em condições estáveis.  
+**Conduta:** drenagem segura conforme extensão e grau, sem instrumentação forçada; reavaliação posterior para estenose uretral.  
+**Por que importa:** evita o falso raciocínio “sem fratura de pelve = uretra íntegra”.
+
+### Caso 12 — Fratura peniana, hematúria e risco uretral
+**Apresentação:** homem de 30 anos com estalo, dor súbita e detumescência imediata durante relação sexual, seguido de hematoma peniano e sangue no meato.  
+**Hipótese:** fratura peniana com possível lesão uretral associada.  
+**Raciocínio:** apresentação clínica é típica de ruptura de túnica albugínea; hematúria/uretrorragia exige avaliar uretra.  
+**Exames:** exame urológico imediato; imagem só se necessária para dúvida, sem atrasar cirurgia clara; cistoscopia quando indicada no contexto de exploração.  
+**Conduta:** reparo cirúrgico precoce do corpo cavernoso, avaliação e tratamento uretral conforme achado.  
+**Por que importa:** em trauma genital, atraso pode comprometer função erétil e miccional.
+
+---
+
+## 18. Questões autorais comentadas — primeira bateria
+
+### Questão 1 — A decisão sobre TC
+Homem de 32 anos após colisão, PA 76/44, pele fria, FAST negativo, deformidade pélvica e hematoma perineal. Qual prioridade?
+A) TC de corpo inteiro imediatamente, independentemente de estabilidade.  
+B) Interpretar FAST negativo como ausência de sangramento.  
+C) Estabilização pélvica e ressuscitação hemostática com busca/controle precoce de hemorragia, sem atrasar por TC insegura.  
+D) Solicitar apenas urinálise e aguardar hematúria.  
+E) Testar mobilidade da sínfise repetidamente.
+
+**Gabarito C.** **A** coloca paciente em risco de colapso durante transporte; **B** ignora sangramento retroperitoneal; **C** prioriza fisiologia e hemostasia; **D** pesquisa lesão urinária antes de risco vital; **E** pode desorganizar coágulos. **Mini-revisão:** choque + pelve suspeita exige hemostasia/estabilização, e FAST negativo não descarta hemorragia.
+
+### Questão 2 — Posição correta do binder
+Em paciente com fratura pélvica instável suspeita, a contenção temporária deve ser centrada:
+A) Nas cristas ilíacas.  
+B) Ao redor do abdome acima do umbigo.  
+C) Nos grandes trocânteres.  
+D) Somente sobre o sacro.  
+E) Na junção toracolombar.
+
+**Gabarito C.** **C** é localização recomendada. **A** e **B** são altas e inadequadas; **D** não contém anel circunferencialmente; **E** não estabiliza a pelve. **Mini-revisão:** o binder é ponte para estabilização/hemostasia definitiva, não solução de permanência indefinida.
+
+### Questão 3 — Classificação WSES
+Uma fratura do anel pélvico de aspecto relativamente simples acompanha choque hemorrágico persistente. Segundo o eixo WSES, a classificação de gravidade deve:
+A) Basear-se só no RX, ignorando pressão/perfusão.  
+B) Considerar o quadro grave pela instabilidade hemodinâmica independentemente de estabilidade mecânica.  
+C) Ser “menor” porque a fratura tem poucos fragmentos.  
+D) Exigir TC antes de qualquer medida.  
+E) Depender exclusivamente de hematuria.
+
+**Gabarito B.** **A** e **C** dissociam imagem de fisiologia; **B** corresponde ao grupo WSES IV na presença de instabilidade; **D** atrasa hemostasia; **E** foca órgão não determinante. **Mini-revisão:** classificação que une mecânica e hemodinâmica é mais útil em emergência do que anatomia isolada.
+
+### Questão 4 — Packing e angioembolização
+Sobre hemorragia pélvica grave, qual alternativa é correta?
+A) Embolização trata todos os sangramentos ósseos e venosos.  
+B) Packing pré-peritoneal e angioembolização são sempre mutuamente excludentes.  
+C) Estabilização mecânica, packing e embolização podem ser combinados conforme fonte, resposta e recursos.  
+D) Todo paciente estável com fratura deve receber packing.  
+E) Binder remove necessidade de controle hemorrágico.
+
+**Gabarito C.** **A** exagera alvo da embolização, mais apropriada à hemorragia arterial; **B** ignora mecanismos mistos; **C** descreve uso complementar; **D** torna procedimento invasivo indiscriminado; **E** confunde medida temporária e definitiva. **Mini-revisão:** muitos sangramentos pélvicos são venosos/ósseos; componente arterial pode exigir intervenção adicional.
+
+### Questão 5 — Hematúria e trauma renal
+Homem de 25 anos após desaceleração intensa apresenta dor e equimose lombar. Não há hematúria visível. Qual conduta?
+A) Excluir lesão renal pela urina clara.  
+B) Decidir imagem por mecanismo e sinais; realizar TC contrastada se estável e critérios clínicos justificarem.  
+C) Colocar stent ureteral sem imagem.  
+D) Fazer nefrectomia exploratória imediata em qualquer paciente.  
+E) Indicar US FAST como exame suficiente para graduar toda lesão.
+
+**Gabarito B.** **A** ignora lesões sem hematúria; **B** aplica critérios EAU; **C** é intervenção sem alvo; **D** extrapola cirurgia; **E** superestima FAST. **Mini-revisão:** mecanismo de desaceleração/trauma de flanco pode justificar TC mesmo sem hematúria.
+
+### Questão 6 — Alto grau renal em estável
+Paciente estável tem laceração renal importante, extravasamento urinário pequeno, sem infecção, obstrução ou sangramento ativo. É correto:
+A) Nephrectomia obrigatória por grau anatômico.  
+B) Operar todos com extravasamento urinário.  
+C) Considerar TNO com monitorização e reavaliação; drenar sistema quando vazamento persistente/sintomático ou complicações.  
+D) Não realizar nenhum acompanhamento.  
+E) Tratar toda lesão de sistema coletor como ruptura de bexiga.
+
+**Gabarito C.** **A** e **B** ignoram estabilidade e seletividade; **C** preserva rim com possibilidade de escalonamento; **D** é insegura; **E** confunde órgãos. **Mini-revisão:** hemodinâmica orienta TNO renal; vazamento isolado assintomático nem sempre exige stent.
+
+### Questão 7 — Ureter sem hematúria
+Mulher com febre e coleção retroperitoneal após cirurgia pélvica, urina sem sangue. Qual afirmação?
+A) Ureter íntegro porque não houve hematúria.  
+B) Diagnóstico definitivo apenas por hemograma.  
+C) Investigar lesão ureteral com fase excretora tardia/urotomografia e pielografia quando necessário.  
+D) Observar indefinidamente sem avaliar coleção.  
+E) Realizar cistografia retrógrada como único teste para todo ureter.
+
+**Gabarito C.** **A** ignora baixa sensibilidade de hematúria; **B** não localiza lesão; **C** estuda via excretora; **D** posterga controle de infecção/obstrução; **E** mistura estudo de bexiga com ureter. **Mini-revisão:** ureter pode ser lesado sem sangue urinário e manifestar-se tardiamente.
+
+### Questão 8 — Fratura e hematúria
+Fratura pélvica associada à hematúria macroscópica em paciente estável exige investigar:
+A) Apenas fratura óssea, sem órgãos associados.  
+B) Bexiga por cistografia retrógrada ativa, considerando segurança uretral.  
+C) Apenas cálculo urinário.  
+D) Apenas hematoma muscular.  
+E) Sempre uretra anterior, sem exame.
+
+**Gabarito B.** **A** ignora pista clássica; **B** é indicação forte; **C** e **D** não explicam obrigatoriamente hematuria no trauma; **E** localiza órgão indevidamente. **Mini-revisão:** fratura pélvica + hematúria macroscópica → investigar bexiga.
+
+### Questão 9 — Técnica correta da cistografia
+Paciente com hematúria macroscópica e fratura pélvica passou por TC abdominal contrastada em fase excretora, sem enchimento ativo da bexiga, com resultado não conclusivo. Qual afirmação?
+A) A fase excretora convencional substitui completamente a cistografia.  
+B) A bexiga deve ser estudada com preenchimento retrógrado ativo adequado, tipicamente 300–350 mL de contraste diluído no adulto.  
+C) A cistografia deve ser evitada em toda fratura de pelve.  
+D) Somente ultrassom pode classificar ruptura vesical.  
+E) O volume de contraste jamais influencia sensibilidade.
+
+**Gabarito B.** **A** superestima enchimento passivo; **B** descreve exigência de distensão; **C** nega indicação importante; **D** confunde modalidades; **E** ignora falso-negativo por distensão insuficiente. **Mini-revisão:** perguntar se a bexiga foi realmente distendida durante o exame.
+
+### Questão 10 — Ruptura vesical traumática intraperitoneal
+Após impacto com bexiga cheia, cistografia revela extravasamento intraperitoneal. Conduta usual:
+A) Apenas observação domiciliar.  
+B) Antibiótico isolado por 48 h.  
+C) Reparo cirúrgico, avaliando lesões associadas.  
+D) Pleurodese.  
+E) Derivação suprapúbica obrigatória sem investigação.
+
+**Gabarito C.** **A** e **B** não controlam vazamento intraperitoneal traumático; **C** corresponde à regra para trauma externo contuso; **D** é procedimento de outra cavidade; **E** não resolve universalmente ruptura e ignora contexto. **Mini-revisão:** distinguir intraperitoneal traumática de perfuração endoscópica pequena selecionada.
+
+### Questão 11 — Quando “extra = sonda” falha?
+Qual achado em ruptura extraperitoneal de bexiga torna reparo cirúrgico mais provável?
+A) Lesão simples sem outras complicações.  
+B) Hematúria que desaparece e cicatrização adequada.  
+C) Lesão do colo vesical e fragmento ósseo intravesical.  
+D) Cistografia normal com bexiga bem distendida.  
+E) Ausência de fratura.
+
+**Gabarito C.** **A** favorece drenagem vesical; **B** não sugere complexidade; **C** define situação complicada; **D** não demonstra ruptura; **E** não é critério de operação. **Mini-revisão:** extraperitoneal **não complicada** costuma ser conservadora; colo, osso, reto/vagina e cirurgia concomitante mudam conduta.
+
+### Questão 12 — Uretra antes da sonda
+Homem com trauma pélvico, sangue no meato e retenção urinária. Qual conduta inicial é mais segura?
+A) Forçar cateter até obter urina.  
+B) Repetir sondagem com instrumentos de calibre crescente, sem imagem.  
+C) Investigar uretra por RUG/cistoscopia quando estabilizado e planejar drenagem com urologia, evitando instrumentação cega repetida.  
+D) Aferir próstata “alta”; se não estiver alta, realizar qualquer sondagem.  
+E) Desconsiderar hematuria porque há fratura óssea.
+
+**Gabarito C.** **A** e **B** podem piorar ruptura; **C** incorpora diretrizes; **D** confia em sinal pouco confiável; **E** ignora alerta. **Mini-revisão:** sangue no meato demanda suspeita de lesão uretral; ressuscitação vital vem primeiro.
+
+### Questão 13 — Trauma a cavaleiro
+Ciclista sofre impacto direto no períneo com uretrorragia e sem fratura óssea identificada. Segmento mais provável?
+A) Uretra bulbar/anterior.  
+B) Ureter proximal.  
+C) Colo renal.  
+D) Cúpula vesical intraperitoneal obrigatoriamente.  
+E) Uretra prostática em todos os casos.
+
+**Gabarito A.** **A** associa mecanismo a uretra anterior; **B** e **C** são órgãos superiores não tipicamente comprimidos nesse mecanismo; **D** presume ruptura vesical; **E** associa incorretamente toda lesão uretral à uretra posterior. **Mini-revisão:** queda a cavaleiro → pensar bulbar; disrupção de pelve → pensar posterior.
+
+### Questão 14 — Testículo após trauma
+Paciente com trauma escrotal contuso, dor importante e US com contorno testicular interrompido e heterogeneidade sugestiva de ruptura. A melhor conduta:
+A) Apenas gelo e observação obrigatória por semanas.  
+B) Exploração cirúrgica precoce por equipe urológica.  
+C) Cateter ureteral.  
+D) Ignorar achado se não há hematúria.  
+E) Repetir exame em seis meses sem avaliação.
+
+**Gabarito B.** **A** e **E** atrasam preservação testicular; **B** é conduta recomendada em ruptura; **C** trata outro órgão; **D** exige erroneamente hematúria para reconhecer lesão testicular. **Mini-revisão:** ruptura testicular exige avaliação para reparo precoce.
+
+### Questão 15 — Seguimento da lesão renal
+Após trauma renal importante tratado conservadoramente, paciente recebe alta estável. Qual deve integrar seguimento?
+A) Nenhuma vigilância após desaparecimento da hematúria.  
+B) Apenas RX da pelve.  
+C) Pressão arterial, função renal, urina e imagem individualizada conforme lesão/evolução.  
+D) Antibiótico profilático vitalício.  
+E) Nefrectomia preventiva.
+
+**Gabarito C.** **A** ignora hipertensão e lesões tardias; **B** não avalia rim; **C** acompanha complicações; **D** é antibiótico desnecessário; **E** remove órgão funcional sem indicação. **Mini-revisão:** hipertensão pós-trauma e complicações vasculares/excretoras exigem avaliação longitudinal.
+
+### Questão 16 — Manejo da uretra posterior
+Homem com ruptura completa associada à fratura pélvica, após controle de choque. Qual ideia é mais correta?
+A) Uretroplastia aberta imediata antes de 48h é obrigatória em todo homem.  
+B) Realinhamento endoscópico precoce selecionado ou derivação suprapúbica com reconstrução diferida podem ser estratégias, conforme lesão e recursos.  
+C) Nenhum paciente pode desenvolver estenose após realinhamento.  
+D) O seguimento deve limitar-se ao osso.  
+E) Sempre se deve tentar muitas vezes passar sondas às cegas.
+
+**Gabarito B.** **A** ignora advertência EAU contra uretroplastia masculina hiperaguda em PFUI; **B** individualiza estratégia; **C** atribui proteção absoluta inexistente; **D** ignora função miccional/sexual; **E** aumenta risco de falsa via. **Mini-revisão:** não confundir realinhamento endoscópico em selecionados com reconstrução aberta imediata.
+
+---
+
+## 19. Recursos visuais: inventário editorial e aprovação centralizada
+
+A importância das imagens neste tema é alta: radiografia de pelve, TC contrastada, reconstrução óssea, imagens de extravasamento renal, cistografia e uretrografia permitem ensinar o que apenas texto não consegue. **Nenhuma imagem clínica de terceiros foi importada, incorporada ao HTML ou autorizada automaticamente.** A fila do Admin deve conter URL da fonte, nome do autor, licença explícita compatível com uso comercial, miniatura, aprovação clínica e legenda técnica. Até essa verificação, os itens permanecem **candidatos não aprovados**.
+
+| Chave | Seção | O que a imagem deve ensinar | Tipo e controle |
+| --- | --- | --- | --- |
+| TP-01 | 2/3 | Anatomia do anel, sínfise, sacro e sacroilíacas | Diagrama anatômico autoral a produzir |
+| TP-02 | 3/4 | APC/open book e diástase em RX AP | Radiografia clínica real a selecionar; verificar licença e fidelidade |
+| TP-03 | 3/4 | LC com compressão sacral/ramos | Radiografia/TC clínica real a selecionar |
+| TP-04 | 3/4 | Vertical shear com deslocamento cefálico | RX/TC real a selecionar |
+| TP-05 | 5 | Posicionamento de binder nos trocânteres, comparado a posição alta incorreta | Ilustração didática autoral |
+| TP-06 | 5/6 | Hematoma retroperitoneal com FAST sem líquido intraperitoneal | TC real e diagrama autoral, fontes e licenças pendentes |
+| TP-07 | 6 | Fluxograma de choque: binder, packing, embolização e fontes concorrentes | SVG autoral sem reproduzir gráfico de WSES |
+| TP-08 | 9 | AAST renal 2018, laceração/sistema coletor | Diagrama autoral; tabela oficial deve ser conferida antes de finalizar |
+| TP-09 | 9 | TC com extravasamento vascular versus urinário excretor | Imagens reais pareadas a buscar de repositório educacional autorizado |
+| TP-10 | 10 | Trajeto ureteral e contraste tardio extravasado | Diagrama autoral + TC real licenciada |
+| TP-11 | 11 | Cistografia intra x extraperitoneal | Imagens reais; destacar posição do contraste e necessidade de enchimento |
+| TP-12 | 12 | Uretrografia parcial x completa e anatomia anterior/posterior | Imagens clínicas licenciadas + esquema original |
+| TP-13 | 13 | US testicular: túnica íntegra versus ruptura | US real a selecionar com contexto clínico e licença |
+| TP-14 | 17 | Mapa de decisões para quatro casos de maior impacto | Quadro/algoritmo vetorial autoral |
+
+**Fontes a priorizar na seleção, sem presumir licença:** documentos governamentais e universitários que concedam reprodução; artigos científicos open access com imagens sob CC BY verificável (licença do artigo não autoriza automaticamente figuras creditadas a terceiros); coleções radiológicas institucionais com autorização; páginas abertas da WSES e material da EAU apenas para verificação médica (gráficos autorais, sem copiar diagrama de editoras).
+
+Há pelo menos uma candidata de imagem radiológica publicada em periódico open access *Journal of Clinical Medicine* 2026 sobre lesões pélvicas APC2; conferir legenda, contexto, atribuição e termos da figura antes de usar. A existência de imagem online **não** é autorização de uso. Priorizar 8 a 12 imagens de utilidade didática real, sem preenchimento decorativo. O pipeline exige conversão WebP, peso otimizado e aprovação no painel administrativo antes da publicação.
+
+## 20. Referências científicas primárias e complementares
+
+Estas fontes foram identificadas e seus trechos principais de manejo relevantes ao manuscrito foram conferidos em página pública. Livros/arquivos privados do Drive utilizados como benchmark não são bibliografia clínica final e seus identificadores privados não são publicados neste repositório.
+
+1. **European Association of Urology (EAU).** Urological Trauma Guidelines, edição 2026. Capítulos sobre rim, ureter, bexiga, uretra e genitais; base para indicação de TC renal, cistografia retrógrada, uretrografia e tratamento por órgão. https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines
+2. **European Association of Urology.** Urological Trauma Guidelines: Summary of Changes, 2026. Reconhecer reestruturação da edição, não equivaler mudança editorial a alteração automática da evidência clínica. https://uroweb.org/guidelines/urological-trauma/summary-of-changes
+3. **Coccolini F, Stahel PF, Montori G, et al.** Pelvic trauma: WSES classification and guidelines. *World Journal of Emergency Surgery.* 2017;12:5. DOI: 10.1186/s13017-017-0117-6. https://pmc.ncbi.nlm.nih.gov/articles/PMC5241998/
+4. **Spahn DR et al.** The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. *Critical Care*. 2023. https://link.springer.com/article/10.1186/s13054-023-04327-7
+5. **Morey AF, Broghammer JA, Hollowell CMP, McKibben MJ, Souter L.** Urotrauma Guideline 2020: AUA Guideline. *J Urol.* 2021. DOI: 10.1097/JU.0000000000001408. https://www.auajournals.org/doi/10.1097/JU.0000000000001408
+6. **Morey AF et al.** Urotrauma: AUA Guideline (texto original detalhado em acesso aberto). *Journal of Urology.* 2014. https://pmc.ncbi.nlm.nih.gov/articles/PMC4104146/
+7. **EAU.** EAU Guidelines on Paediatric Urology, edição vigente, para checagem posterior das particularidades pediátricas — **não substitui a leitura necessária da seção específica antes de aprovar doses, volumes ou critérios em crianças**. https://uroweb.org/guidelines/paediatric-urology
+8. **AAST.** Organ Injury Scaling — trauma renal, revisão de 2018; **consultar quadro anatômico oficial ou reprodução autorizada durante auditoria para transcrição precisa da graduação**. https://www.aast.org/resources-detail/injury-scoring-scale
+
+### 20.1 Nota de aplicabilidade no Brasil
+Diretrizes internacionais citadas são fontes científicas robustas, mas acesso a angiografia imediata, salas híbridas, cirurgião de trauma e reconstrução uretral varia entre hospitais brasileiros. Uma apostila para internato deve ensinar princípios e explicitar logística/transferência. Antes da publicação, acrescentar protocolos nacionais e locais verificáveis de transfusão maciça, fluxos de regulação, exames disponíveis e seguimento. Não converter uma técnica dependente de especialista em instrução de automanuseio por estudante.
+
+## 21. Auditoria preliminar e pendências
+
+| Critério do Prompt Magno | Verificação neste rascunho | Status |
+| --- | --- | --- |
+| Conferir acervo antes de criar | Busca em diretórios e rascunhos; falta conferência integral dentro das aulas vizinhas | Parcial |
+| Benchmark real no Drive | Cinco PDFs abertos; relevantes, porém não são tratado único abrangente | Parcial |
+| Fundamentos e fisiopatologia | Anatomia, sangramento pélvico, trato urinário, mecanismos | Presente preliminarmente |
+| Quadro clínico / diagnósticos | Sinais, gravidade, TC, FAST, cistografia e RUG | Presente preliminarmente |
+| Condutas e diferenças por órgão | Binder, hemostasia, rim, ureter, bexiga, uretra e genitais | Presente preliminarmente |
+| Casos clínicos | Doze casos originais com raciocínio, investigação, conduta e relevância | Presente; auditoria independente pendente |
+| Questões comentadas | Dezesseis questões autorais com análise de alternativas | Presente; verificar qualidade e distrações |
+| Tabelas / fluxos | Diversos quadros comparativos e algoritmos textuais | Presente; visual SVG pendente |
+| Imagens clínicas | Quatorze necessidades didáticas identificadas, licenças não integralmente verificadas | **PENDENTE** |
+| Fontes atuais | WSES 2017, EAU 2026, europeu 2023, AUA 2020 + material complementar | Confirmar aplicação no Brasil e minúcias |
+| 60 mil caracteres **didáticos úteis** | Exige contagem editorial excluindo títulos, URLs, tabelas de controle e redundâncias | A VERIFICAR |
+| Autossuficiência | Questões rastreáveis às seções, mas exame independente não realizado | PENDENTE |
+| Revisão científica | Texto fundamentado, sem segunda leitura especializada formal | PENDENTE |
+| Publicação HTML/PWA | Nenhum HTML criado e nenhum deploy | NÃO PUBLICADO |
+
+### 21.1 Roteiro de revisão para não certificar automaticamente
+- Verificar se a classificação AAST renal apresentada pela equipe está de acordo com a escala anatômica revisada em 2018 e que referências históricas usam outra versão.
+- Revisar nuances sobre **tentativa única e delicada de cateter uretral por experiente** em selecionados versus ensino de evitar cateter às cegas diante de sangue no meato; não transformar prudência em proibição absoluta sem exceções.
+- Confirmar indicação e técnica de **cistografia retrograda ativa**, incluindo possibilidade de estudo em pacientes com lesão uretral.
+- Conferir diferenças entre **trauma vesical contuso externo intraperitoneal** e pequenos acidentes iatrogênicos endoscópicos.
+- Revisar escolha e tempo de intervenção para hemorragia pélvica conforme **resposta à ressuscitação e logística**; evitar atribuir qualquer hipotensão à pelve.
+- Confirmar indicações e contraindicações de tranexâmico e correção de coagulopatia no protocolo brasileiro antes de publicar doses.
+- Avaliar de modo específico pediatria, gestantes, idosos e pacientes anticoagulados.
+- Realizar auditoria contra questões reais representativas de residência/ENAMED; ajustar lacunas no capítulo correspondente.
+- Inserir imagens reais somente após verificar fonte, licença comercial, fidelidade e aprovação no Admin.
+- Verificar visualização e navegação no formato LURIA em desktop e PWA, sem alterar arquivos já publicados.
+
+**Situação final desta rodada:** conteúdo em branch editorial isolada, sob revisão; **não houve merge, deploy, edição de apostilas anteriores, aprovação de imagens ou alteração no Supabase**. O crescimento de caracteres não implica conclusão automática.
