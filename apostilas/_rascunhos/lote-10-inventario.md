@@ -157,3 +157,22 @@ Foram consultadas fontes institucionais públicas **ISUOG Practice Guidelines 20
 **Gates pendentes comuns:** revisão médica independente, atualização brasileira, licença comercial/consentimento de imagens, aprovação pelo Admin, autossuficiência, edição final e HTML responsivo testado no PWA. **Nenhum dado autoriza publicar automaticamente os rascunhos.**
 
 **Próxima sequência:** **211 — Transtornos depressivos e avaliação do risco de suicídio**, começando por busca de sobreposição, diretrizes brasileiras e benchmark no Drive, sem duplicar semiologia já desenvolvida na 210.
+
+
+## 15/10/2026 — continuidade: revisão da 208, criação das 209 e 210
+
+**Branch isolada:** `editorial/lote-10-204-225`. Arquivos no GitHub foram reabertos e verificados após escrita; nenhum merge/deploy realizado.
+
+| Aula | Caminho em _rascunhos | Caracteres brutos | Casos | Questões | Status |
+| --- | --- | ---: | ---: | ---: | --- |
+| 208 | `apostilas/_rascunhos/lote-10-aula-208-gestacao-gemelar-alto-risco.md` | 75.534 | 8 | 14 | Rascunho longo, não certificado |
+| 209 | `apostilas/_rascunhos/lote-10-aula-209-aloimunizacao-doenca-hemolitica-perinatal.md` | 85.100 | 11 | 14 | Rascunho longo, não certificado |
+| 210 | `apostilas/_rascunhos/lote-10-aula-210-psicopatologia-entrevista-eem.md` | 68.523 | 8 | 12 | Rascunho longo, não certificado |
+
+**208:** foram adicionadas decisões clínicas integradas, revisão das urgências por placenta compartilhada, quadro de classificação e notas sobre limites dos consensos ISUOG 2025, SMFM 2024 e NICE NG137. Benchmark do Drive continua **parcial**; não foram licenciadas imagens nem auditados 60 mil caracteres didáticos úteis.
+
+**209:** foi efetivamente aberto e lido no Drive o PDF `02 - DOENCA HEMOLITICA PERINATAL.pdf` (aprox. 5.987 caracteres de texto extraído), juntamente com `01 - ICTERICIA E COLESTASE NEONATAL.pdf` (aprox. 14.963). Ambos são resumos **parciais**; não são benchmark integral equivalente. O novo texto 209 desenvolve anti-D, anti-c, anti-K, anticorpo passivo versus imune, PAI, genotipagem fetal, Doppler PSV-ACM, transfusão intrauterina, prevenção de hemorragia fetomaterna, imunoglobulina anti-D, neonatologia, fototerapia/exsanguineotransfusão e anemia tardia. Referências independentes: FEBRASGO, BSH 2025/2026, JAMA Netw Open 2025, SMFM e AAP 2022. **Link antigo do PDF FEBRASGO foi encontrado no índice, mas retornou 404 na abertura**; registrar a limitação, não citá-lo como conteúdo integral acessado. Revisões brasileira, hemoterápica, obstétrica e neonatal ainda obrigatórias.
+
+**210:** busca por nome de apostila no GitHub main não identificou tema equivalente; buscas do Drive por psicopatologia/entrevista psiquiátrica/EEM não encontraram obra equivalente. Criado texto autoral semiológico sobre entrevista, história, exame do estado mental, percepção, pensamento, humor, delirium, diferenciais orgânicos, avaliação de segurança e documentação. Fontes: WHO ICD-11 CDDR 2024, Merck Manual (atualização 2026), NICE NG225/CG103 e MS/RAPS. **Não copiar/derivar manual CDDR para uso comercial**, licença CC BY-NC-ND 3.0 IGO. Aulas 211–216 continuam reservadas a temas específicos.
+
+**Pontos de integridade:** as contagens acima são do texto Markdown bruto, não de conteúdo útil certificado; casos e questões também requerem revisão clínica. Nenhuma imagem real foi incorporada/aprovada em Admin. HTML/PWA, banco, catálogo e a branch main **não foram modificados** por esta rodada. A próxima apostila curricular a iniciar é **211 — Transtornos depressivos e avaliação do risco de suicídio**, precedida de inventário de materiais existentes e checagem de diretrizes brasileiras.
