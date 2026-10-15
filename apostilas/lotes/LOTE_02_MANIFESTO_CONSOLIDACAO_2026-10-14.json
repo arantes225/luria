@@ -1,6 +1,6 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 15,
+  "version": 16,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
   "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
@@ -88,9 +88,9 @@
       "source_path": "apostilas/lotes/LOTE_02_DPOC_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_DPOC_EDICAO_CONTINUA.md",
       "source_sha": "d4ce04f16071571bfbbe28b686e3d8575638ec74",
-      "consolidated_sha": "e48aa108123478dca6f8234c0d56ec86a0d89901",
+      "consolidated_sha": "289e2689af4c2bfa83ce78083a1a9cd31256e222",
       "source_raw_characters": 78323,
-      "consolidated_raw_characters": 120451,
+      "consolidated_raw_characters": 134217,
       "consolidated_approximate_plain_characters": null,
       "chapter_count": 9,
       "chapters": [
@@ -131,15 +131,15 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 18,
-      "question_count": 24,
+      "case_count": 20,
+      "question_count": 26,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [
-        "Conteúdo sobre DAAT exige verificação médica individual da avaliação familiar/hepática, critério de reposição e disponibilidade brasileira."
+        "Intervenções broncoscópicas e cirúrgicas exigem verificação de critérios de elegibilidade, regulação e disponibilidade nacional; não interpretar recomendação GOLD como incorporação SUS."
       ],
       "next_gate": "Revisão clínica independente de DAAT e DPOC, farmacologia/doses, imagens/Admin e testes Node/desktop/PWA antes de publicar.",
       "json_visible_estimate": null,
-      "json_table_count": 11
+      "json_table_count": 12
     },
     {
       "id": "DIABETES_MELLITUS",
@@ -331,11 +331,11 @@
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "65db0bdfeff7c2fc1174406559cbd75e8536698f",
+  "input_json_sha": "616eb216a36ade47378abc1edcafabd4e301c03e",
   "last_update_scope": [
-    "Asma: seções 7.2–7.5, diferenciação entre asma difícil de tratar e asma grave, biomarcadores, opções incluindo anti-TSLP internacional e critérios de acesso SUS",
-    "Casos 21–22 e Questões 26–27 autorais sincronizados no manuscrito e JSON, fontes GINA Severe Asthma 2026 e PCDT nacional",
-    "Cinco livros mantidos em pré-publicação; conteúdo ainda não certificado, imagens não adicionadas, sem merge/deploy"
+    "DPOC: seções 6.6–6.8 com intervenções para enfisema, avaliação especializada, bulectomia/transplante, cuidado paliativo precoce e suporte",
+    "DPOC: casos 19–20 e questões 25–26 originais; benchmark Drive DPOC estável/exacerbada reaberto, fontes GOLD 2026, MS Linha de Cuidado e NICE NG115",
+    "Mantidos cinco livros e nenhum conteúdo publicado/deploy, imagens seguem vazias; registro no manifesto v16"
   ],
   "last_revision": "2026-10-15"
 }
