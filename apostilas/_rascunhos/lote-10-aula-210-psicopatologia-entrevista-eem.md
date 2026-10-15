@@ -335,7 +335,7 @@ Uma passagem de plantão segura responde: **quem é a pessoa e o que mudou?**; *
 4. **Circunstancialidade retorna à pergunta; tangencialidade não necessariamente.**
 5. **Delirium tem mudança aguda e atenção prejudicada/flutuante**, mesmo que coexistam sintomas psicóticos.
 6. **Demência e delirium coexistem**; não aceitar piora aguda como progressão natural sem investigar.
-7. **DAT e Coombs não são temas desta aula** — um lembrete da importância de manter precisão e não misturar módulos.
+7. **Um sintoma isolado não estabelece transtorno:** o diagnóstico depende de curso, funcionamento, contexto e exclusão de causas clínicas.
 8. **Insight não significa obediência** ao plano médico.
 9. **Capacidade não é tudo ou nada**, varia por decisão e momento.
 10. **Escalas de risco não predizem suicídio de modo confiável para alta/tratamento**; avaliação clínica e segurança são indispensáveis.
@@ -354,4 +354,242 @@ Uma passagem de plantão segura responde: **quem é a pessoa e o que mudou?**; *
 | Evitação e hipervigilância | Houve ameaça real? trauma? sintomas autonômicos? | Trauma, ansiedade, intoxicação, condições clínicas |
 | Retraimento/mutismo | Catatonia? afasia? depressão grave? nível de consciência? | Emergência neurológica, catatonia, delirium |
 | Pensamento intrusivo | Reconhecido como indesejado? tenta neutralizar? | Obsessão; não confundir com delírio de convicção fixa |
+
+
+
+## 19. Casos clínicos comentados de semiologia e decisão
+
+### Caso 1 — “Está vendo gente no quarto”: nem toda alucinação é esquizofrenia
+
+**Apresentação:** homem de 78 anos, internado por pneumonia, passa a dizer que “há pessoas entrando pela janela”, dorme durante parte da conversa e à noite fica muito agitado. A família relata que até dois dias antes reconhecia pessoas e conversava com clareza. Na entrevista, erra data, muda assunto ao ruído do corredor e não consegue completar meses ao contrário.
+
+**Hipótese sindrômica:** **delirium** (síndrome confusional aguda) em doença clínica ativa, com alterações perceptivas.
+
+**Raciocínio:** (1) instalação em horas/dias e flutuação; (2) atenção e orientação comprometidas; (3) doença médica aguda conhecida; (4) alucinação visual não equivale a esquizofrenia; (5) sedativos e hipóxia também devem ser verificados. O EEM descreve o fenômeno e orienta busca da causa precipitante.
+
+**Exames:** avaliação clínica com sinais vitais, oxigenação, glicemia, medicações, infecção e exames conforme hipótese; 4AT por profissional capacitado ou CAM-ICU em unidade crítica, quando indicado. Não pedir imagem cerebral em todos indiscriminadamente, mas realizar conforme achados neurológicos e clínica.
+
+**Conduta:** tratar precipitantes médicos, proteção contra quedas/desorientação, reorientação, redução de estímulos inadequados e plano multidisciplinar. A contenção/medicação sedativa não é substituta de identificar causa, e só se avalia quando segurança exige.
+
+**Por que importa?** A presença de percepção incomum é menos decisiva que **atenção, tempo de início e doença clínica**.
+
+### Caso 2 — Tristeza, energia reduzida e segurança
+
+**Apresentação:** mulher de 34 anos procura APS por “cansaço e falta de vontade de trabalhar”, piora de sono e isolamento há semanas. Refere humor triste, chora ao contar dificuldade familiar e mantém afeto restrito congruente. Nega uso recente de substâncias, mas relata pensamentos recorrentes de que “seria melhor não acordar”, sem ter contado antes a familiares.
+
+**Hipóteses:** síndrome depressiva em avaliação; **ideação de morte** exige exploração cuidadosa e plano de segurança.
+
+**Raciocínio:** (1) duração, sintomas e prejuízo devem ser documentados; (2) ideação de morte não permite rotular baixo risco por ausência de tentativa prévia; (3) perguntas diretas sobre segurança são apropriadas; (4) contexto social e proteção importam; (5) escore de depressão pode auxiliar rastreio, mas não determina alta.
+
+**Exames:** avaliação clínica dirigida e condições médicas conforme história; aprofundamento da segurança com profissional treinado e suporte psicossocial.
+
+**Conduta:** avaliação de necessidades imediatas de proteção, rede de apoio e acesso ao cuidado; definir seguimento efetivo e encaminhamento imediato se gravidade/risco atual justificar. A farmacoterapia de depressão será detalhada na aula 211, não deduzida desta vinheta.
+
+**Por que importa?** A habilidade fundamental não é apenas listar sintomas depressivos; é **enxergar risco e criar cuidado seguro**.
+
+### Caso 3 — Fala rápida não estabelece diagnóstico sem cronologia
+
+**Apresentação:** homem de 27 anos fala de modo acelerado, interrompe examinador e relata dormir duas horas por noite com energia elevada há seis dias. Comprou itens caros e faltou ao trabalho para iniciar projetos grandiosos. O irmão confirma mudança marcada de comportamento. Tomou recentemente estimulantes sem prescrição.
+
+**Hipóteses:** síndrome maniforme, potencialmente precipitada por substâncias; investigar transtorno bipolar e etiologia medicamentosa.
+
+**Raciocínio:** (1) observar pressão para falar, fuga de ideias ou associações aceleradas; (2) distinguir pouco sono por insônia fatigante de **necessidade reduzida de sono**; (3) documentar prejuízo e comportamento de risco; (4) uso de estimulante impede atribuição automática a transtorno bipolar primário; (5) avaliar julgamento e segurança.
+
+**Exames:** história de substâncias, sinais vitais, clínica e exames direcionados; confirmar cronologia e tempo de uso, antecedentes e condições orgânicas.
+
+**Conduta:** avaliação psiquiátrica conforme gravidade, proteção financeira/ocupacional quando necessário com consentimento, plano de segurança e revisão de substâncias. Não classificar como “hiperatividade normal” por estar sorridente.
+
+**Por que importa?** O EEM diz **o que está acontecendo agora**; etiologia exige linha do tempo e história.
+
+### Caso 4 — Obsessão versus ideia delirante
+
+**Apresentação:** mulher de 25 anos relata pensamentos intrusivos repetidos de contaminação quando toca maçanetas, reconhecendo-os como excessivos e tentando neutralizar ansiedade com lavagens. As práticas ocupam horas diárias e prejudicam trabalho. Não há crença fixa de que um agente secreto espalha substância tóxica.
+
+**Hipótese sindrômica:** fenômeno obsessivo-compulsivo com preservação ao menos parcial de reconhecimento de excessividade; diagnosticar transtorno exige avaliação formal adicional.
+
+**Raciocínio:** (1) o pensamento é intrusivo/indesejado; (2) há tentativa de neutralização; (3) o comportamento repetitivo reduz ansiedade de modo transitório; (4) a ideia não é automaticamente delirante; (5) em alguns pacientes com TOC o insight pode ser muito baixo, portanto a distinção requer contexto, não frase decorada.
+
+**Exames:** anamnese sobre tempo, sofrimento, compulsões, funcionamento, ideação de autoagressão quando pertinente; exame médico se sintomas específicos sugerirem outra causa.
+
+**Conduta:** plano de avaliação de TOC e acesso a tratamento baseado em evidência; detalhes terapêuticos na aula 213.
+
+**Por que importa?** A prova diferencia **qualidade da experiência interna e relação com o pensamento**, não só o tema “contaminação”.
+
+### Caso 5 — “Não consigo ficar parado” depois de nova medicação
+
+**Apresentação:** mulher de 46 anos iniciou antipsicótico recentemente. Em dias, passou a andar pela sala, mexer pernas sem parar e dizer que sente “um incômodo horrível por dentro, preciso levantar”. A equipe anotou “piora da agitação psiquiátrica” e propôs aumentar dose.
+
+**Hipótese:** **acatisia** relacionada a medicamento, a confirmar com exame e cronologia.
+
+**Raciocínio:** (1) sensação subjetiva de inquietação interna é pista valiosa; (2) tempo de início após medicação; (3) movimentos observáveis são compatíveis; (4) aumentar dose sem reavaliar pode agravar efeito adverso; (5) descartar ansiedade, agitação psicótica e outros fenômenos, sem presumir.
+
+**Exames:** revisão completa do fármaco, dose, outros medicamentos, sinais neurológicos, intensidade e impacto.
+
+**Conduta:** reavaliação da terapêutica pelo prescritor/equipe, proteção em caso de sofrimento intenso e plano individual; não interpretar inquietação como hostilidade voluntária.
+
+**Por que importa?** A semiologia diferencia efeito adverso de “doença que piorou”, evitando iatrogenia.
+
+### Caso 6 — Convicção persecutória e respeito à possibilidade de violência real
+
+**Apresentação:** pessoa de 32 anos afirma que vizinhos a monitoram. Está alerta, orientada e mantém atenção. Relata episódios prévios de ameaças reais documentadas no condomínio, mas também afirma receber mensagens escondidas em cada placa da rua, com convicção rígida e crescente isolamento.
+
+**Hipóteses:** há **elementos verificáveis de conflito real** e possível fenômeno de referência/persecutoriedade que requer investigação mais ampla, incluindo condições médicas, substâncias, trauma e quadro psicótico.
+
+**Raciocínio:** (1) não desqualificar violência documentada; (2) separar fatos corroboráveis de inferências; (3) avaliar grau de convicção e possibilidade de considerar alternativas; (4) investigar humor, sono, substâncias e funcionamento; (5) oferecer cuidado sem afirmar que monitoramento imaginado é verdadeiro.
+
+**Exames:** história ampliada, informações complementares com consentimento e exame clínico dirigido.
+
+**Conduta:** acolhimento, avaliação psiquiátrica e social de risco, proteção se ameaças reais, acompanhamento. Linguagem do prontuário deve indicar **“refere acreditar”**, não registrar perseguição como fato nem insultar paciente.
+
+**Por que importa?** A mesma palavra “perseguição” pode designar violação de direitos, interpretação delirante ou ambos; contexto é obrigatório.
+
+### Caso 7 — Confusão, dificuldade de memória e psicotrópicos
+
+**Apresentação:** mulher de 71 anos apresenta esquecimento crescente há dois anos, mas nas últimas 48 horas tornou-se muito sonolenta, passou a errar a própria localização e cair. Recebeu anticolinérgico novo há quatro dias por sintomas urinários; apresenta constipação e desidratação.
+
+**Hipóteses:** provável **delirium sobreposto a declínio cognitivo crônico**, com possível contribuição medicamentosa e desidratação.
+
+**Raciocínio:** (1) deterioração crônica explica vulnerabilidade, não a piora súbita; (2) desorientação e atenção flutuante sustentam delirium; (3) nova medicação é potencial desencadeante; (4) MMSE baixo agora não diferencia adequadamente déficit basal e estado agudo; (5) corrigir precipitantes vem antes de firmar diagnóstico de novo transtorno neurocognitivo.
+
+**Exames:** revisão de medicamentos, glicemia, sinais vitais, infecção, eletrólitos/função renal conforme situação e 4AT; dados basais da família.
+
+**Conduta:** tratar quadro clínico, reduzir fatores precipitantes quando indicado e repetir avaliação cognitiva após estabilização.
+
+**Por que importa?** Ensina a não chamar delirium de “demência que acelerou”.
+
+### Caso 8 — Mutismo e imobilidade: não etiquetar como “não colabora”
+
+**Apresentação:** paciente de 24 anos permanece imóvel por períodos prolongados, pouco fala e mantém posturas por tempo incomum; familiares relatam início recente com grande piora do autocuidado. Está afebril, mas ingeriu pouco líquido e tem risco de desidratação.
+
+**Hipóteses:** síndrome catatônica a investigar; diferenciais incluem quadro neurológico/metabólico, intoxicação/medicação, depressão grave e outras condições psiquiátricas.
+
+**Raciocínio:** (1) mutismo e posturas são fenômenos observáveis, não “má vontade”; (2) risco de desidratação/complicações clínicas exige avaliação imediata; (3) catatonia não significa automaticamente esquizofrenia; (4) exame de consciência, sinais vitais, rigidez e etiologia são decisivos; (5) documentar sinais específicos e capacidade de alimentar-se/hidratar-se.
+
+**Exames:** exame clínico, neurológico e investigação conforme gravidade, com avaliação urgente de equipe preparada.
+
+**Conduta:** atendimento em ambiente seguro, correção de necessidades clínicas e avaliação especializada de possível catatonia; tratamento específico é conteúdo da aula 215.
+
+**Por que importa?** A falta de fala não deve ser confundida com recusa voluntária de ajuda.
+
+## 20. Questões originais com comentários por alternativa
+
+### Questão 1 — Hum or versus afeto
+Paciente informa “sinto tristeza todo dia”; examinador observa pouca variação expressiva e choro ao narrar perda. Qual formulação melhor?
+
+A. Humor é observado e afeto é exclusivamente verbalizado.  
+B. Humor relatado triste; afeto restrito e congruente, conforme observação.  
+C. Afeto plano obrigatoriamente significa esquizofrenia.  
+D. Ausência de fala sobre mania elimina qualquer transtorno.  
+E. Não se pode avaliar humor em entrevista.
+
+**Gabarito: B.** A inverte os termos; C transforma achado em diagnóstico; D não é inferência pertinente; E ignora descrição subjetiva. **Revisão:** humor relata estado interno, afeto descreve expressão observável.
+
+### Questão 2 — Circunstancialidade
+À pergunta “Você dormiu?”, paciente conta longamente detalhes do trabalho e da viagem, mas conclui “dormi quatro horas”. O fenômeno é mais compatível com:
+
+A. Circunstancialidade. B. Tangencialidade obrigatória. C. Delírio persecutório. D. Mutismo. E. Afasia global.
+
+**Gabarito: A.** B tende a não retornar ao objetivo; C é conteúdo, não forma; D/E não se relacionam ao fenômeno. **Revisão:** observar se a narrativa volta à pergunta.
+
+### Questão 3 — Ilusão versus alucinação
+Paciente em quarto escuro vê casaco e acredita temporariamente ser uma pessoa; acende luz e percebe o engano. Trata-se de:
+
+A. Alucinação auditiva. B. Ilusão visual. C. Neologismo. D. Obsessão. E. Eco de pensamento.
+
+**Gabarito: B.** Há estímulo externo real mal interpretado; A não corresponde à modalidade; C/D/E são outros fenômenos. **Revisão:** ilusão é percepção distorcida de estímulo presente.
+
+### Questão 4 — Delirium
+Homem de 80 anos com pneumonia, confusão em 24 horas, atenção flutuante e alucinações visuais. Qual prioridade?
+
+A. Confirmar esquizofrenia só pela alucinação.  
+B. Avaliar delirium e precipitantes clínicos urgentemente.  
+C. Declarar demência irreversível com base em exame de hoje.  
+D. Fazer apenas psicoterapia eletiva.  
+E. Considerar desorientação esperada para toda idade avançada.
+
+**Gabarito: B.** A ignora atenção/tempo; C não separa agudo de crônico; D/E subestimam doença médica. **Revisão:** mudança aguda + flutuação + atenção são pistas principais de delirium.
+
+### Questão 5 — Mania versus intoxicação
+Homem apresenta fala acelerada, sono reduzido sem cansaço e grandiosidade após início de estimulante. Qual a abordagem semiológica correta?
+
+A. Diagnosticá-lo como bipolar sem anamnese.  
+B. Descrever síndrome maniforme, investigar fármacos/substâncias e curso antes de atribuir etiologia.  
+C. Considerar todos os sinais normais por ser jovem.  
+D. Concluir intoxicação sem avaliar exposição real.  
+E. Diagnosticar demência.
+
+**Gabarito: B.** A/D são conclusões precipitadas; C negligencia prejuízo; E é inadequado. **Revisão:** síndrome observável e diagnóstico etiológico são etapas diferentes.
+
+### Questão 6 — Obsessão
+Pessoa apresenta pensamento indesejado recorrente de contaminação, tenta resistir e lava mãos para aliviar ansiedade. Fenômeno mais provável:
+
+A. Obsessão com comportamento compulsivo.  
+B. Delírio obrigatório de grandeza.  
+C. Alucinação visual.  
+D. Afasia.  
+E. Delirium obrigatoriamente.
+
+**Gabarito: A.** B/C/D/E não correspondem ao padrão descrito. **Revisão:** intrusão, desconforto e neutralização apontam fenômeno obsessivo.
+
+### Questão 7 — Insight
+Paciente entende diagnóstico e riscos, mas prefere outra opção de tratamento por efeitos colaterais. Isso significa necessariamente:
+
+A. Incapacidade decisória.  
+B. Ausência absoluta de insight.  
+C. Discordância terapêutica não basta para inferir ausência de insight ou incapacidade.  
+D. Delirium.  
+E. Indicação automática de internação involuntária.
+
+**Gabarito: C.** A/B/E confundem autonomia com concordância; D exige outras alterações. **Revisão:** capacidade é específica e envolve compreensão, apreciação, raciocínio e comunicação.
+
+### Questão 8 — Acatisia
+Paciente inicia medicamento antagonista dopaminérgico e passa a caminhar continuamente, referindo sensação interna angustiante de necessidade de mover-se. Hipótese:
+
+A. Acatisia. B. Catatonia estuporosa. C. Amnésia. D. Déficit de linguagem. E. Ilusão visual.
+
+**Gabarito: A.** B implica padrão motor muito diferente; C/D/E são outros domínios. **Revisão:** relação temporal com medicamento é decisiva.
+
+### Questão 9 — Segurança e escalas
+Qual afirmação coincide com NICE NG225?
+
+A. Usar escala de risco como única condição para alta.  
+B. Categorias fixas baixo/médio/alto predizem de modo seguro suicídio futuro.  
+C. Avaliar necessidades e segurança, sem usar escala isolada para decidir alta/tratamento.  
+D. Não perguntar sobre pensamentos de morte em pessoa deprimida.  
+E. Encaminhar sem plano de acesso à rede.
+
+**Gabarito: C.** A/B contrariam diretriz; D negligencia avaliação; E falha em continuidade. **Revisão:** risco precisa de formulação clínica e plano de cuidado.
+
+### Questão 10 — Fala e pensamento
+Paciente fala muito e rapidamente, mas mantém associações organizadas e responde adequadamente. Qual inferência é inválida?
+
+A. Fala acelerada observável.  
+B. Necessário perguntar sobre sono/substâncias.  
+C. Diagnóstico de esquizofrenia confirmado somente pela rapidez da fala.  
+D. Pode haver variação por personalidade e circunstância.  
+E. Velocidade é um domínio do EEM.
+
+**Gabarito: C.** Rapidez da fala não confirma esquizofrenia; A/B/D/E são observações e passos compatíveis. **Revisão:** um sinal inespecífico não estabelece transtorno.
+
+### Questão 11 — Capacidade
+Paciente delirante não consegue compreender um procedimento, mas na semana anterior consentia de modo informado. Qual princípio?
+
+A. Toda incapacidade é vitalícia.  
+B. Capacidade é específica à decisão e ao momento e pode flutuar com estado clínico.  
+C. Diagnóstico psiquiátrico é requisito para incapacidade.  
+D. A família sempre substitui voz da pessoa sem avaliar regras legais.  
+E. Um questionário simples resolve toda decisão.
+
+**Gabarito: B.** A/C/D/E contrariam abordagem clínica/ética contextual. **Revisão:** delirium pode comprometer capacidade temporariamente.
+
+### Questão 12 — Evolução/documentação
+Qual anotação é mais útil?
+
+A. “Paciente difícil e manipulador”.  
+B. “Normal em todos os domínios” mesmo com exame incompleto.  
+C. “Alerta, orientado em pessoa/lugar, desorientado em tempo, atenção oscilante; relata insônia; memória não testada por baixa colaboração”.  
+D. “Esquizofrênico” com base em única fala.  
+E. “Sem risco” porque escala numérica é baixa.
+
+**Gabarito: C.** A estigmatiza; B inventa exame; D fecha diagnóstico sem história; E substitui avaliação por rótulo. **Revisão:** prontuário deve comunicar **fenômenos e limites do exame**.
 
