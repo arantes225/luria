@@ -460,3 +460,123 @@ A lista abaixo identifica **necessidades didáticas, não imagens já encontrada
 **Casos:** 6 originais, do diagnóstico de corionicidade ao parto, com hipótese, raciocínio, exames, conduta e relevância.  
 **Questões:** 10 originais com alternativas e justificativa dos distratores.  
 **Limitações:** necessita revisão especialista de thresholds TTTS conforme idade e NICE/ISUOG, aprofundar TAPS e sFGR (estadiamento completo), contextualizar ASA e protocolos brasileiros, acrescentar fontes FEBRASGO aplicáveis, revisar timing/rotas e fatores de viabilidade perinatal, imagens aprovadas e teste de autossuficiência. A extensão bruta não é equivalente a **60 mil caracteres úteis**, e um conjunto de casos/questões não certifica a apostila. **Status permanece RASCUNHO, sem HTML/deploy.**
+
+
+## 17. Rastreamento morfológico e diagnóstico genético: duas anatomias, um laudo coerente
+
+Uma gestação gemelar não deve ter o exame morfológico resumido a “dois fetos vivos, sem malformações aparentes”. O ultrassonografista deve avaliar **individualmente** crânio/encéfalo, face, coluna, parede abdominal, rins, trato urinário, membros, estômago, diafragma e coração, identificando sistematicamente feto A/B e possíveis diferenças. A ISUOG recomenda avaliação estrutural no primeiro trimestre e ultrassonografia morfológica **entre 18 e 22 semanas**. Nas monocoriônicas, recomenda avaliação cardíaca fetal, feita por profissional habilitado, porque cardiopatias e alterações hemodinâmicas têm relevância adicional.
+
+### 17.1 Anomalia discordante não significa diagnóstico simples
+
+A presença de uma malformação em apenas um feto pode ocorrer mesmo em monocoriônicas/monozigóticas. A interpretação requer distinguir alteração estrutural isolada, anormalidade cromossômica, consequência da circulação placentária e síndromes malformativas. Não presumir que gêmeos monozigóticos terão obrigatoriamente achados idênticos. Em DCDA com sexos distintos, uma anomalia estrutural de um feto não pode ser atribuída ao outro sem investigação específica.
+
+Em exames seriados, uma anomalia de **posição e apresentação** pode mudar em relação ao colo; por isso o laudo deve registrar localização e outros marcadores confiáveis. Antes de qualquer intervenção fetal seletiva, confusão de identificação é risco de segurança relevante e precisa ser evitada.
+
+### 17.2 Rastreamento versus diagnóstico de aneuploidia
+
+Testes de rastreio (incluindo translucência nucal e DNA fetal livre no plasma materno, conforme disponibilidade e validação) não equivalem a cariótipo/estudo molecular diagnóstico. Em gravidez gemelar, as frações fetais e o comportamento dos testes podem diferir da gestação única; performance pode variar por aneuploidia e técnica, e complicações como feto evanescente podem reduzir confiabilidade. Explicar **risco residual, falso positivo e possibilidade de resultado inconclusivo** antes da coleta.
+
+Se o resultado for de alto risco ou houver anomalia morfológica, aconselhar sobre exame diagnóstico por procedimento invasivo e atribuição ao feto correto. Na DCDA, procedimentos podem precisar de amostras de sacos/placentas separadas; na MCDA, compartilhar placenta altera a estratégia mas não elimina necessidade de avaliação de cada feto. Procedimentos têm riscos obstétricos, e não se deve afirmar “amniocentese é obrigatória em toda gemelar”.
+
+### 17.3 Intervenções fetais seletivas
+
+Quando uma malformação grave atinge somente um feto e se discute interrupção seletiva em contexto legal e institucional, a **corionicidade** altera a técnica e o risco para o co-gêmeo. Em **DCDA**, as circulações geralmente são separadas. Em **MCDA**, procedimentos que causem morte fetal sem controle do fluxo compartilhado podem gerar perda sanguínea aguda do sobrevivente; centros de medicina fetal podem utilizar **oclusão vascular/cordão** em cenários apropriados. A decisão é altamente especializada e envolve autonomia, ética, legislação brasileira e suporte psicossocial. Não oferecer procedimento como rotina geral nem transplantar técnicas de DCDA para MCDA.
+
+## 18. Sequência TRAP: a fisiopatologia do “gêmeo bomba”
+
+A **sequência de perfusão arterial reversa gemelar (TRAP)** é uma complicação rara da placenta monocoriônica. Há um feto relativamente desenvolvido, chamado **feto bomba** (*pump twin*), e massa/feto acárdico gravemente malformado, perfundido **retrogradamente** por anastomoses arterioarteriais. A fisiopatologia não é “um feto doando sangue voluntariamente para o outro”; é circulação anômala causada por conexões vasculares, impondo **sobrecarga de alto débito** ao coração do feto bomba.
+
+### 18.1 Achados diagnósticos
+
+O ultrassom pode identificar feto com desenvolvimento relativamente habitual e segundo componente malformado, sem coração funcional, com fluxo reverso demonstrável ao Doppler em estruturas vasculares da massa acárdica. A presença de malformação grave isolada não basta para diagnosticar TRAP: é preciso confirmar configuração hemodinâmica e corionicidade.
+
+O risco para o feto bomba depende, entre outros fatores, de tamanho/crescimento da massa perfundida, fluxo através das comunicações, polidrâmnio, sinais de sobrecarga cardíaca, hidropisia e risco de parto prematuro. Uma criança com “acardia” no laudo não significa ausência de risco porque o outro feto parece normal naquele momento.
+
+### 18.2 Acompanhamento e tratamento
+
+A ISUOG 2025 descreve que procedimentos minimamente invasivos, como coagulação de cordão/vasos ou técnicas intrafetais, **podem melhorar a sobrevida do feto bomba** em casos selecionados. Alternativas incluem radiofrequência intrafetal, laser e outros métodos de bloqueio do fluxo, sempre por equipes de terapia fetal habilitadas. O momento ideal de intervenção permanece debatido e depende de evidência limitada; não criar regra universal de “operar exatamente com 14 semanas”.
+
+A estratégia expectante requer ultrassonografia e Doppler muito próximos em centro especializado; ainda assim **monitorar não garante prevenir óbito súbito**. Aconselhar familiares sobre benefício potencial, riscos de perda gestacional/rotura de membranas, procedimentos alternativos, possibilidade de acompanhamento e incertezas dos estudos.
+
+### 18.3 Comparação: TRAP versus TTTS versus TAPS
+
+| Característica | TRAP | TTTS | TAPS |
+| --- | --- | --- | --- |
+| Mecanismo principal | Perfusão retrograda de massa acárdica pelo feto bomba | Desequilíbrio de volume sanguíneo através de anastomoses | Desequilíbrio de hemácias por pequenas anastomoses |
+| Achado definidor | Massa/feto acárdico perfundido reversamente | Sequência oligo/polidrâmnio com estágios de Quintero | PSV-ACM discordante sugerindo anemia/policitemia |
+| Órgão-alvo ameaçado | Coração do feto bomba | Hemodinâmica e órgãos de doador/receptor | Oxigenação/anemia e viscosidade sanguínea |
+| Intervenção especializada | Interromper perfusão da massa acárdica em casos selecionados | Laser de anastomoses em estágios selecionados | Vigilância e terapia individual por gravidade |
+
+**Pulo do Gato:** embora todas dependam de vasos compartilhados, tratá-las como sinônimos gera decisões erradas. A prova pode apresentar dois fetos de pesos muito diferentes, mas sem TTTS; ou dois fetos com peso semelhante e TTTS gravíssima. **O que define a síndrome é a fisiopatologia demonstrada pelos achados pertinentes.**
+
+## 19. Prematuridade em gestação gemelar: riscos, rastreio e limites de prevenção
+
+### 19.1 Por que gemelares nascem antes?
+
+Sobredistensão uterina, menor reserva cervical em algumas pacientes, alterações inflamatórias e placentárias, e maior frequência de **parto indicado por condição materna/fetal** contribuem para prematuridade. Uma parte dos partos é espontânea; outra é indicada por hipertensão, complicações monocoriônicas, crescimento, rotura prematura de membranas ou deterioração fetal. Essas vias exigem decisões diferentes: prevenir parto espontâneo não elimina necessidade de antecipação por sofrimento fetal.
+
+### 19.2 Comprimento cervical
+
+ISUOG 2025 aponta a **medida transvaginal do colo** como método preferencial de rastreio de risco de prematuridade na gestação gemelar; corte **≤25 mm entre 18 e 24 semanas** é pragmático, mas tem sensibilidade limitada. Recomenda medir no exame morfológico e, se houver fatores adicionais, repetir antes de 24 semanas. Não concluir que colo de 26 mm garante nascimento a termo nem que colo de 24 mm impõe cesárea imediata.
+
+**Como medir:** visualizar canal endocervical e óstios adequadamente, evitar compressão excessiva do transdutor, registrar menor medida válida em tempo apropriado. Comparar com gestações prévias, cirurgias cervicais, sintomas e membranas. Um exame isolado mede risco, não é diagnóstico de trabalho de parto.
+
+### 19.3 Progesterona, cerclagem e pessário: evitar transplante automático de recomendações de gestação única
+
+A evidência **não recomenda progesterona profilática para todas as gestações gemelares não selecionadas**. A ISUOG admite considerar **progesterona vaginal em gemelares com colo ≤25 mm**, mas classifica a recomendação como de evidência limitada (grau C), o que exige decisão individual e avaliação das recomendações nacionais mais recentes. Para **colo ≤15 mm antes de 24 semanas**, pode-se considerar cerclagem em cenários selecionados, e em dilatação cervical ao exame antes de 24 semanas, estratégias específicas com cerclagem de resgate e medidas associadas são discutidas por especialistas. Isso não equivale a prescrever cerclagem profilática a toda mulher grávida de gêmeos.
+
+**Pessário cervical:** eficácia para prevenir prematuridade gemelar não é suficientemente consolidada para recomendação universal. Reposo absoluto e internação de rotina só para “segurar o colo”, sem indicação clínica, não demonstraram benefício consistente e podem trazer riscos (trombose, perda muscular, sobrecarga psicossocial).
+
+### 19.4 Quando a paciente procura urgência por contrações
+
+Pesquisar frequência/intensidade de contrações, sangramento, perda de líquido, febre, movimento fetal e idade gestacional; examinar com cautela e avaliar colo/membranas conforme situação. **Gemelaridade isolada não diagnostica trabalho de parto prematuro**; o quadro precisa de critérios clínicos. Se há rotura prematura de membranas, infecção, hemorragia importante ou sofrimento fetal, tocolítico pode ser inadequado. Corticosteroide para maturação pulmonar e sulfato de magnésio para neuroproteção dependem de idade gestacional e perspectiva real de nascimento, não do simples número de fetos.
+
+Planejar neonatologia para dois recém-nascidos, incluindo potencial necessidade simultânea de suporte respiratório e leitos. A reserva neonatal deve integrar a decisão obstétrica, particularmente quando o parto é indicado precocemente após terapia fetal.
+
+## 20. Obstetrícia intraparto: duas circulações, duas apresentações e um útero
+
+### 20.1 Antes do trabalho de parto
+
+Reavaliar corionicidade, amnionicidade, posição dos fetos, apresentações, placenta, crescimento e possível discordância, Dopplers e saúde materna. O risco de atonia/hemorragia precisa constar de preparo: acesso venoso apropriado, equipe preparada para uterotônicos/controle de sangramento, avaliação de hemoglobina e disponibilidade de hemoterapia conforme estratificação.
+
+Explicar opções de parto vaginal e cesárea de modo não coercitivo. A via deve considerar **primeiro gemelar cefálico**, apresentações, diferença de peso, semana gestacional, contraindicações e **experiência real** da equipe em parto do segundo gemelar e resolução de intercorrências. Um serviço sem profissional habilitado a manobras obstétricas complexas não pode prometer a mesma capacidade de um centro de alto volume.
+
+### 20.2 Monitorar os dois batimentos de forma inequívoca
+
+A cardiotocografia intraparto deve distinguir inequivocamente dois sinais fetais e a frequência cardíaca materna, especialmente após ruptura de membranas, mudança de posição ou nascimento do primeiro. O uso de dois transdutores **não garante** que dois traçados pertençam a fetos diferentes se sensores acabam captando o mesmo coração. Registrar verificação ultrassonográfica quando necessária. Alterações do traçado de um feto exigem avaliação desse feto, não extrapolação a ambos.
+
+### 20.3 Depois do nascimento do primeiro
+
+Verificar apresentação e descida do segundo feto, vitalidade, membranas e condições uterinas. Há risco de mudança de apresentação, prolapso de cordão e comprometimento fetal; a equipe deve estar preparada para atuação rápida, inclusive cesárea intraparto quando indicada. Não impor intervalo numérico único entre nascimentos como regra universal; a prioridade é o estado fetal e obstétrico real.
+
+No nascimento de ambos, manter vigilância de atonia, retenção placentária e hemorragia pós-parto. Na MCDA, placenta única requer avaliação integral e o exame anatomopatológico pode ser relevante quando complicações vasculares ocorreram. Não confundir placenta aparentemente única em DCDA fundida com confirmação tardia de MCDA.
+
+## 21. Mais cenários clínicos para corrigir erros frequentes
+
+### Cenário A — “Um feto está pequeno, então deve ser TTTS”
+
+Gestação DCDA, 30 semanas, fetos de pesos discordantes e líquido normal. Sem placenta compartilhada, o mecanismo típico de TTTS **não se aplica**. A prioridade é avaliar restrição de crescimento e perfusão placentária do feto menor, além da saúde materna. Se não foi documentada corionicidade adequadamente, revisá-la antes de descartar síndromes específicas.
+
+### Cenário B — “Duas placentas visíveis no exame tardio”
+
+No terceiro trimestre, uma massa placentária aparentemente única não resolve a corionicidade. O exame precoce e a inserção do septo são prioritários. Dois polos placentários não necessariamente significam duas circulações separadas se são interpretados sem contexto; consultar especialista quando a documentação for inconsistente.
+
+### Cenário C — “A paciente não tem sintomas; pode esperar um mês?”
+
+MCDA de 17 semanas com exame anterior normal. A ausência de sintomas maternos **não autoriza** espaçar vigilância acima do recomendado; TTTS/TAPS podem evoluir sem queixas iniciais. Agendar rastreio por líquido/bexigas/Dopplers conforme diretriz.
+
+### Cenário D — “Cervicometria de 20 mm: progesterona para toda gemelar?”
+
+Não existe conduta idêntica para colo de 20 mm em gestação única e gemelar. Em gemelares selecionadas com colo ≤25 mm, a ISUOG admite considerar progesterona vaginal, reconhecendo evidência limitada; discutir idade, sintomas, dilatação, antecedente obstétrico e diretriz nacional. **Não institucionalizar dose estrangeira sem protocolo.**
+
+### Cenário E — “Uma morte fetal exige parto imediato”
+
+Na MCDA com óbito de um feto, a preocupação é a repercussão vascular no sobrevivente e risco neurológico; o dano pode ter ocorrido **no momento da morte** e não ser revertido por cesárea instantânea. O plano exige medicina fetal, vigilância, investigação e decisão equilibrando prematuridade e estabilidade. Há cenários de deterioração em que o parto será urgente; não confundir a urgência da avaliação com urgência universal de nascimento.
+
+## 22. Fontes adicionais que sustentam os blocos novos
+
+**ISUOG Practice Guidelines 2025**, texto completo: <https://obgyn.onlinelibrary.wiley.com/doi/10.1002/uog.29166>. Seções **Screening for risk of preterm birth in twin pregnancy**, **Management of TRAP sequence**, **Management of MCMA twins** e **Ultrasound screening for structural abnormalities in twin pregnancy**, consultadas em 15/10/2026. Os limiares cervicais, nível de evidência e opções fetais variam por subgrupo.
+
+**NICE NG137**, <https://www.nice.org.uk/guidance/ng137/chapter/Recommendations>. Confirmar sempre a data da recomendação específica, não inferir que toda a orientação tenha sido reescrita na data de consulta.
+
+**Limitação editorial atual:** faltam figuras reais com licença aprovada, revisão de diretrizes nacionais para prematuridade, suplementação materna, procedimentos seletivos e disponibilidade tecnológica. A adição dessas seções não transforma o arquivo em protocolo nacional pronto para uso.
