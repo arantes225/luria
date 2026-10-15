@@ -16,7 +16,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 | 102 | Cirurgia | Obstrução intestinal | Manuscrito original em `_rascunhos/lote-05-102-obstrucao-intestinal.md` (**61.990 caracteres brutos Markdown**), 25 blocos 0–24, 10 casos e 12 questões comentadas; comparação do Drive concluída e diretrizes WSES/ACR/ASCRS aplicadas criticamente. NÃO APROVADO / NÃO PUBLICADO |
 | 103 | Pediatria | Tuberculose na infância | Sem pasta homônima identificada |
 | 104 | GO | Hemorragia pós-parto | Manuscrito avançado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (**102.189 caracteres Markdown** nesta branch); capítulo de hemorragia secundária aprofundado com investigação de lesões vasculares, Doppler e decisões por estabilidade; `assistencia-ao-parto/` preservada; revisão médica, imagens e integração pendentes |
-| 105 | Preventiva | Desenhos de estudos epidemiológicos | Sem pasta homônima identificada |
+| 105 | Preventiva | Desenhos de estudos epidemiológicos | Manuscrito original criado em `_rascunhos/lote-05-105-desenhos-estudos-epidemiologicos.md` (**71.583 caracteres Markdown**), 23 capítulos (0–22), dez casos e doze questões comentadas; inclui crítica de benchmark do Drive, desenhos clássicos, amostragem, SUS, RECORD, caso-controle aninhado, tempo zero e vieses de temporalidade; revisão independente e integração pendentes, não publicado |
 | 106 | Clínica | Lesão renal aguda | Sem pasta homônima identificada |
 | 107 | Cirurgia | Hérnias da parede abdominal | Sem pasta homônima identificada |
 | 108 | Pediatria | Infecção urinária na criança | Sem pasta homônima identificada |
@@ -175,3 +175,16 @@ A classificação inicial da apostila 099 com base apenas em `index.html` estava
 ## Checkpoint 100 — aprofundamento de curva PR e risco de seleção (14/10/2026)
 
 A aula 100 recebeu capítulo didático próprio para doença rara e interpretação da curva precision–recall (incluindo cenário numérico com 100 doentes em 10.000 pessoas, sensibilidade 90%, especificidade 95%, VP=90, FP=495, VPP≈15,4%); discussão do otimismo de selecionar ponto de corte na mesma amostra, validação independente, zonas de indeterminação, diferença entre Youden e distância geométrica, curvas ROC que se cruzam, AUC parcial e cenário de aplicação no SUS. Foram acrescentados dois casos e duas questões de cinco alternativas comentadas, totalizando **seis casos e oito questões**. O manuscrito passou de 33.127 para **45.864 caracteres Markdown**. A matemática dos cortes A/B/C e da área trapezoidal foi conferida, mas não substitui revisão independente por pesquisador/epidemiologista. Mantido como rascunho não publicado.
+
+
+## Checkpoint 105 — desenhos de estudos epidemiológicos (14/10/2026)
+
+**Etapa zero concluída:** localizada no Google Drive a referência “Estudos Epidemiológicos.pdf”, identificada por busca direcionada de *coorte*, *caso-controle* e *estudo transversal*. O arquivo foi aberto e lido como benchmark; autoria institucional e autorização de reprodução não comprovadas. Não houve cópia. A referência apresenta a cobertura elementar de relato/série de casos, estudo ecológico, transversal, coorte e caso-controle, mas contém simplificações (coorte necessariamente prospectiva, caso-controle “longitudinal” por definição, equivalência entre OR e risco) que motivaram correções metodológicas fundamentadas no CDC e STROBE.
+
+**Novo manuscrito original:** \`apostilas/_rascunhos/lote-05-105-desenhos-estudos-epidemiologicos.md\` (71.583 caracteres brutos). Desenvolvidos 23 capítulos 0–22, com população-alvo/quadro amostral, observacional vs experimental, descritivo vs analítico, unidade ecológica, transversais, coortes históricas e prospectivas, pessoa-tempo, caso-controle convencional/aninhado/caso-coorte, séries temporais, análise de surtos, estratificação e conglomerados, ponderação populacional, dados SINAN/SINASC/SIM, pesquisa em registros com RECORD e riscos de classificação temporal. Dez casos aplicados e doze questões de cinco alternativas com justificativas individuais. Quatro casos e quatro questões foram acrescentados durante o aprofundamento.
+
+**Verificação aritmética planejada na revisão:** coorte exposição 120/1000 vs 60/1000 → RR 2,0 e diferença de 6 pp; caso-controle (120×120)/(80×80) → OR 2,25; transversal 100/400 vs 60/400 → RP 1,6667 e diferença de 10 pp; surto 24/40 vs 8/40 → RR 3,0; 30 eventos/1500 pessoas-ano → 20/1000 pessoa-anos; ponderação de duas regiões com 1000 e 9000 pessoas, prevalências 10% e 30% → 28%. Todos os dados são fictícios e expressamente rotulados.
+
+**Escopo curricular preservado:** ensaios e revisões (110) e aprofundamento de confundimento/causalidade (115) permanecem títulos próprios. A aula 105 apresenta os riscos de desenho apenas até o necessário para escolher a arquitetura adequada.
+
+**Status:** RASCUNHO AVANÇADO NÃO PUBLICADO. Faltam revisão por epidemiologista, checagem independente de cálculos e fontes, avaliação de redundâncias, figuras originais licenciadas, adaptação ao renderer, testes acessíveis no desktop/PWA e aprovação editorial. Nenhum merge ou deploy nesta branch.
