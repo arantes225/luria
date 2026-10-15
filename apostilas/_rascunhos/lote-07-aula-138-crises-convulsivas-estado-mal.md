@@ -179,3 +179,148 @@ Imagens reais precisam de fonte e licença comercial; EEG e vídeos sem autoria/
 - [ ] Material didático ≥60.000 caracteres úteis sem repetição, teste de autossuficiência.
 - [ ] Imagens clínicas reais/traçados licenciados e aprovação Admin, revisão médica e testes site/PWA.
 **Status:** rascunho incompleto, não publicar.
+
+
+---
+
+# SEGUNDA CAMADA EDITORIAL — DA CRISE À DECISÃO SEGURA
+**Data:** 14/10/2026. Este aprofundamento preserva a aula original. As doses de hospitais estrangeiros são identificadas como **exemplos de referência**, não substitutos automáticos do protocolo brasileiro, da conferência do medicamento, peso, concentração e apresentação. O PCDT brasileiro alterado em 05/05/2026 aplica-se principalmente à **epilepsia e à escolha de tratamentos**, enquanto o algoritmo agudo de EME exige protocolo assistencial pediátrico hospitalar validado.
+
+## 16. Raciocínio ampliado — reconhecer o evento e evitar falso diagnóstico
+
+### 16.1. A pergunta anterior à crise: o evento foi de fato epiléptico?
+Uma criança chega ao pronto atendimento após “cair e ficar mexendo os braços”. Esse relato não determina etiologia. A primeira reconstrução precisa considerar **o que aconteceu antes, durante e depois**: estava em pé, após exercício ou calor? Houve dor, medo, palpitações ou náuseas? A queda veio antes dos abalos ou depois? Ocorreu palidez seguida de poucos movimentos mioclônicos breves? Os olhos estavam abertos? Houve cianose ou apneia? A recuperação foi imediata ou houve desorientação prolongada? Há doença cardíaca ou história familiar de morte súbita?
+
+**Síncope com movimentos convulsivos** ocorre quando hipoperfusão cerebral provoca abalos anóxicos. A palidez/prodromo postural, curta duração e recuperação rápida podem orientar, embora nenhuma pista isolada seja absoluta. **Crise epiléptica** é favorecida por evento estereotipado, início focal, alteração prolongada de consciência pós-evento, versão cefálica/ocular e certos sinais semiológicos. Mordedura lateral de língua pode aumentar probabilidade de convulsão generalizada, mas ausência não exclui, assim como incontinência não é exclusiva de epilepsia.
+
+**Evento psicogênico funcional** pode ser incapacitante e real, não voluntariamente fabricado. Diagnóstico deve apoiar-se em sinais positivos e, quando necessário, vídeo-EEG em episódio típico, com comunicação acolhedora; a crítica a uso excessivo de benzodiazepínicos não autoriza negligenciar ABCDE de pessoa sem diagnóstico estabelecido.
+
+**Espasmo do soluço, tique, parassonia, distonia, crise de enxaqueca e movimentos benignos do lactente** também podem parecer convulsão. Idade e duração orientam: episódios no sono com movimentos rítmicos e cessação ao despertar podem diferir de crise epiléptica; um padrão de abalos em salvas ao acordar no lactente pode sugerir espasmos epilépticos e exige avaliação urgente.
+
+### 16.2. O exame intercrítico importa
+Ao chegar, a criança pode estar totalmente recuperada. Avaliar febre/meningismo, estado neurológico basal, marcha, força, linguagem, nervos cranianos, pele e sinais de síndromes neurocutâneas, hidratação, glicose e sinais cardiocirculatórios. Déficit focal após crise pode representar **paralisia de Todd**, mas também AVC ou lesão estrutural; não declarar Todd automaticamente sem excluir condições com necessidade de manejo tempo-dependente.
+
+Em lactentes, medida de perímetro cefálico e desenvolvimento antecedente ajudam; em escolares, frequência de eventos, desempenho escolar e sono podem revelar ausências frequentes ou epilepsia com repercussão cognitiva. Em adolescentes, revisão de substâncias, abstinência, gestação quando pertinente e riscos de medicamentos ganha importância.
+
+### 16.3. Quatro padrões que deveriam mudar o caminho
+1. **Padrão breve e totalmente reversível, com gatilho ortostático e rápida recuperação:** investigar síncope e risco cardiovascular antes de rotular epilepsia.
+2. **Crise focal com alteração de consciência ou déficit persistente:** neurologia/imagem e análise etiológica com prioridade maior.
+3. **Crise durante febre em criança pequena:** classificar febril simples/complexa e buscar origem da febre; primeira crise febril não é prova de epilepsia crônica.
+4. **Crise prolongada ou repetida sem recuperação:** abandonar triagem burocrática e usar algoritmo de **estado de mal epiléptico imediatamente**.
+
+## 17. Como classificar semiologia de modo reproduzível
+
+### 17.1. Primeiro classifique o início
+**Focal:** alterações iniciais de atividade em rede restrita a um hemisfério. Pode iniciar com fenômenos sensoriais (parestesias, cheiros incomuns, aura epigástrica), autonômicos (palidez, salivação), cognitivos (déjà-vu), comportamentais, tônicos, clônicos ou automatismos. A aura é **uma crise focal com consciência preservada**, não mero sintoma que vem antes de toda crise.
+
+**Generalizado:** início envolvendo redes bilaterais desde a origem, incluindo ausências, mioclonias e tônico-clônicas. Não inferir generalização apenas porque a testemunha só percebeu fase bilateral após início focal não observado.
+
+**Início desconhecido:** quando não há informação confiável, pode ser mais seguro usar essa classificação temporária do que afirmar início generalizado; vídeo/EEG/anamnese posterior pode reclassificar.
+
+### 17.2. Consciência e responsividade
+Na crise focal, distinguir consciência preservada/comprometida é mais preciso que “parcial simples/complexa” de classificações antigas. **Capacidade de falar** durante movimentos não exclui evento epiléptico, e olhos abertos não definem origem. Algumas crises autonômicas podem provocar vômitos/palidez sem convulsão evidente. Em recém-nascidos a correspondência entre manifestações e EEG é ainda diferente, motivo de protocolo próprio.
+
+### 17.3. Ausências típicas, atípicas e crises focais
+Uma ausência típica pode durar poucos segundos, com parada de atividade e retomada rápida, frequentemente sem período pós-ictal significativo. Episódios podem ocorrer dezenas de vezes ao dia e prejudicar aprendizagem. Já crises focais com comprometimento de consciência tendem a durar mais, podem apresentar automatismos e confusão pós-ictal. A eletroencefalografia, incluindo hiperventilação supervisionada quando indicada, auxilia classificação.
+
+**Erro importante:** tratar episódios de olhar fixo como TDAH sem perguntar sobre interrupção súbita, responsividade e padrão de repetição. Erro oposto: presumir ausência epiléptica para toda distração escolar, sem EEG e contexto.
+
+### 17.4. Espasmos epilépticos infantis são outra emergência
+Flexões/extensões breves em salvas, muitas vezes ao despertar, associadas ou não a regressão/estagnação do desenvolvimento em lactente, podem representar síndrome de espasmos epilépticos infantis. Exigem **neuropediatria e EEG urgente** porque tratamento oportuno influencia desenvolvimento. Não interpretar automaticamente como cólica/refluxo e esperar meses. O esquema especializado pode incluir hormonioterapia/ACTH e vigabatrina conforme etiologia (especialmente esclerose tuberosa) e diretrizes; **não prescrever por este texto** sem protocolo de epilepsia infantil e avaliação de riscos.
+
+## 18. A cronologia do EME: um processo paralelo de decisões
+
+### 18.1. Por que o relógio deve começar no primeiro movimento?
+O tempo de crise frequentemente foi contado desde chegada ao hospital, mas o evento pode ter começado 8–10 minutos antes da ambulância. Registrar **hora estimada de início**, primeira dose pré-hospitalar, via, fármaco, concentração e resposta. A cada transição, comunicar esses dados à equipe de referência; repetir indiscriminadamente o mesmo sedativo porque “aqui ainda não administramos” pode causar depressão respiratória.
+
+Uma equipe deve conduzir ABCDE, enquanto outra prepara fármacos e causa reversível. **Preparação da segunda linha é iniciada cedo**, não só quando todos os recursos falharam. Checar peso estimado com fita pediátrica quando peso real desconhecido, evitando “dose de criança padrão”.
+
+### 18.2. Fase inicial: o que a segurança de via aérea realmente envolve?
+Observar apneia, obstrução por língua/secreções, saturação, movimentos respiratórios e necessidade de ventilação assistida. **Oxigênio não é substituto da ventilação**: paciente apneico necessita suporte ventilatório apropriado mesmo com oximetria temporariamente aceitável. Aspiração de secreções só quando necessária e segura; não introduzir objetos entre dentes.
+
+Administrar glicose quando hipoglicemia comprovada ou fortemente suspeita sem atraso perigoso, com formulação/volume apropriados à idade. Avaliar perfusão e acidose, mas **não atrasar benzodiazepínico aguardando laboratório**.
+
+### 18.3. Primeira linha: benzodiazepínicos não são “microbolus repetidos”
+Benzodiazepínicos atuam na modulação GABA-A e têm maior eficácia quando administrados cedo em **dose adequada**, não em múltiplas frações insuficientes por medo infundado de sedação. Isso não elimina risco de apneia; a resposta correta é preparar equipamento/equipe de ressuscitação e monitorar. Quando o acesso IV inexiste, a via intranasal/bucal/IM apropriada pode ser mais rápida do que perder muitos minutos tentando cateter.
+
+**NICE NG217** recomenda em comunidade midazolam bucal ou diazepam retal; no hospital com acesso IV e condições de ressuscitação, lorazepam IV. Uma **segunda dose** pode ser considerada após 5–10 minutos quando persiste, conforme plano; depois de duas doses adequadas, avançar para segunda linha. A NICE explicita que o uso de levetiracetam pode ser mais rápido e apresentar menos efeitos adversos do que alternativas.
+
+**CHOP (criança >28 dias, versão revisada em agosto/2026):** lorazepam IV 0,1 mg/kg (máximo 4 mg); midazolam IN/bucal 0,3 mg/kg (máximo 10 mg) quando IV não disponível. Esses exemplos são reproduzidos para demonstrar **como ler um protocolo institucional específico**, e não como tabela nacional única. A preparação final precisa confirmar diluição, formulação, volume intranasal tolerável, atomizador, via e limites de segurança com farmacêutico/protocolo do hospital. Em especial, a concentração de midazolam e o volume por narina determinam entrega efetiva; grande volume pode escorrer para orofaringe e falhar mesmo com dose calculada corretamente.
+
+### 18.4. Exemplo didático resolvido de peso versus dose — não é receita
+Considere criança de **18 kg**, estado de mal, sem acesso IV, em local que adotou exatamente o protocolo CHOP e tem atomizador/formulação validados. A carga referencial de midazolam intranasal é **0,3 mg/kg × 18 kg = 5,4 mg**, abaixo do máximo de 10 mg. O cálculo identifica **massa do princípio ativo**; não identifica volume a administrar. Converter mg para mL exige conhecer concentração da apresentação, técnica, limite de volume por narina e política da instituição. Se há duas formulações diferentes, o mesmo 5,4 mg pode exigir volumes muito diferentes; prescrever “5,4 mL” a partir desse cálculo seria erro de unidade. O serviço deve sempre realizar **dupla checagem**. Essa matemática é exemplo de interpretação acadêmica, não instrução de manejo individual.
+
+Uma criança com 40 kg, pela mesma regra e máximo, teria produto 12 mg **limitado a 10 mg por dose** no protocolo citado. Isso ensina o conceito de **dose máxima**, sem autorizar extrapolar a outros protocolos ou fármacos.
+
+### 18.5. Segunda linha: farmacologia comparada e a evidência que realmente existe
+Após benzodiazepínicos adequados, levetiracetam, fosfenitoína/fenitoína e valproato são opções dependendo de disponibilidade, características da pessoa e supervisão. O estudo multicêntrico **ESETT** recrutou crianças ≥2 anos e adultos com EME estabelecido após benzodiazepínicos. Entre crianças, sucesso em aproximadamente **52% com levetiracetam**, **49% com fosfenitoína** e **52% com valproato**, sem diferença estatisticamente detectável entre braços. Isto **não significa equivalência perfeita em qualquer síndrome neonatal, risco de arritmia ou POLG**, porque a população/elegibilidade importam.
+
+**Levetiracetam:** ação sobre proteína vesicular SV2A, relativamente poucas interações farmacocinéticas; pode causar irritabilidade/alterações comportamentais e requer atenção à função renal em manutenção. Em EME, segurança da infusão e dose máxima seguem protocolo. O CHOP de agosto/2026 usa **60 mg/kg IV, máximo 4.500 mg**, como primeira medicação antiepiléptica após benzodiazepínico em muitas crianças >28 dias, com exceções conforme manutenção prévia.
+
+**Fosfenitoína e fenitoína:** bloqueio uso-dependente de canais de sódio, atenção a arritmia, hipotensão, interação medicamentosa e técnica de infusão. A **fosfenitoína** é pró-fármaco, frequentemente prescrita em **equivalentes de fenitoína (mg PE)**; erro de interpretar mg PE como mg de conteúdo de frasco pode ser grave. O CHOP usa fosfenitoína **20 mg PE/kg, máximo 1.500 mg PE** em fases indicadas. Serviços brasileiros podem utilizar **fenitoína IV** com cuidados próprios de diluição/velocidade e veículo; não transferir a logística de fosfenitoína para fenitoína sem revisão farmacológica.
+
+**Valproato IV:** amplia mecanismos GABAérgicos e canais iônicos; exige cautela em doença hepática, suspeita/diagnóstico de **POLG**, alterações do metabolismo de ureia, pancreatite e risco reprodutivo. Protocolos como CHOP usam **40 mg/kg IV, máximo 3.000 mg**, quando elegível; isso não invalida alerta regulatório ou alternativas para pacientes específicos. A NICE atualizou significativamente precauções para valproato em pessoas com potencial reprodutivo; as regras administrativas britânicas não são automaticamente legislação brasileira, mas o risco clínico exige aconselhamento e decisão especializada.
+
+**Fenobarbital:** modulador GABA-A, sedação/hipotensão/depressão respiratória; é central em neonatologia e alternativa em algumas fases refratárias, mas contexto neonatal não é igual ao manejo de escolar. Avaliar efeitos cumulativos após benzodiazepínicos.
+
+**Lacosamida:** aparece em protocolos de centros especializados, mas não substitui empiricamente as opções respaldadas de segunda linha para toda criança e seu uso/dose/restrições dependem de protocolo e evidência. Atenção à condução cardíaca/intervalo PR em suscetíveis.
+
+### 18.6. Se nenhuma segunda linha é superior universalmente, como escolher?
+1. **Conhecer o paciente:** idade, suspeita de síndrome genética, doença hepática/renal, possibilidade de gravidez, cardiopatia, arritmia, exposição a outros fármacos.
+2. **Conhecer as formulações:** o serviço possui levetiracetam IV? Fosfenitoína ou só fenitoína? Valproato IV? As concentrações e estabilidade são conferidas?
+3. **Saber o que já foi administrado:** criança em manutenção de levetiracetam em dose alta pode demandar alternativa, como explicitado por fluxo CHOP, mas isso é individual.
+4. **Monitorização:** ECG/PA quando usar bloqueadores de sódio e agentes com efeito cardiovascular; via aérea conforme sedação.
+5. **Preparar o resgate:** ainda durante infusão de segunda linha, equipe de PICU/neurologia e EEG, porque cerca de metade pode não responder adequadamente em estudos de EME estabelecido.
+
+**Não interpretar ESETT como “medicamentos iguais para todo mundo”**; significa que nenhuma das três opções demonstrou vantagem geral de eficácia no grupo estudado.
+
+### 18.7. O que faz um medicamento “falhar” de verdade?
+Falha pode significar dose inadequada, extravasamento, formulação não administrada, etiologia refratária ou ausência de resposta após dose e tempo apropriados. Durante status, redução parcial da amplitude de abalos não garante encerramento cerebral. A abordagem inclui **confirmar o fármaco realmente chegou à circulação**, procurar hipoglicemia/hiponatremia/intoxicação, ajustar investigação etiológica e considerar status não convulsivo.
+
+### 18.8. Estado refratário: objetivos da UTI
+Quando a crise persiste após benzodiazepínico e antiepiléptico adequado, mobilizar suporte intensivo, ventilação quando necessária, EEG contínuo e equipe neurológica. Anestésicos em infusão podem ser necessários; seus riscos incluem hipotensão, ventilação prolongada, pneumonia associada à ventilação, supressão cardiovascular e íleo. **A titulação depende da meta eletroencefalográfica e do protocolo**, não apenas de “apagar os movimentos”.
+
+Em super-refratários, investigar encefalite autoimune, febre de origem infecciosa/encefalite, etiologias genéticas/metabólicas e situações de síndrome FIRES/NORSE. Dieta cetogênica, imunoterapia, cetamina e outras estratégias podem ser consideradas por centros especializados em determinadas etiologias; isso **não** é recomendação de primeira hora da emergência geral.
+
+## 19. Convulsão febril: decisão por idade, duração e recuperação
+
+### 19.1. O raciocínio tem dois eixos
+**Eixo A — crise:** breve/generalizada/única com retorno basal versus focal/prolongada/recorrente ou recuperação anormal.  
+**Eixo B — doença febril:** otite, virose, ITU, pneumonia, meningite e outras condições. Diagnosticar “convulsão febril” não localiza foco. Uma criança pode ter crise febril associada a ITU, e outra com meningite pode convulsionar; no segundo caso, já não é convulsão febril simples na definição clássica.
+
+### 19.2. O que torna “simples”?
+Idade típica entre 6 meses e cinco anos, evento generalizado com duração inferior a 15 minutos, único no período de 24 h e recuperação ao basal, na ausência de infecção SNC e distúrbio metabólico que explique. A crise pode ocorrer muito cedo na febre, inclusive antes de a família perceber temperatura elevada.
+
+**Complexa:** qualquer de três dimensões: focalidade, duração ≥15 min ou múltiplas crises nas mesmas 24 h. Complexa **não** significa necessariamente meningite, mas aumenta necessidade de avaliação individual pela chance de causas subjacentes, lesão estrutural ou risco de recorrência.
+
+**Status febril** é nomenclatura frequentemente associada a crise ≥30 min, mas o manejo convulsivo inicia aos cinco minutos. Não esperar completar o critério histórico para tratar.
+
+### 19.3. Investigação que costuma não ser necessária — e quando muda
+Em criança bem, imunizada, desenvolvimento normal, exame neurológico normal e crise febril simples típica, **EEG, TC/RM e punção lombar não são exames automáticos**. A LP depende de sinais meníngeos, alteração neurológica persistente, idade, estado de imunização e possibilidade de antibioticoterapia prévia mascarar meningite. O valor do hemograma ou de exames de eletrólitos também depende da suspeita clínica e do estado de hidratação; não pedir bateria “para o cérebro” sem uma hipótese.
+
+Exceção decisiva: lactente que não recupera consciência, apresenta irritabilidade intensa, fontanela abaulada, púrpura, déficit focal ou sinais de choque → **investigar doença grave e oferecer suporte/antibiótico quando indicado**, em paralelo à decisão de punção segura. A ausência de rigidez nucal no lactente não é tranquilizadora.
+
+### 19.4. Recorrência e risco futuro sem determinismo
+Crises febris podem recorrer, especialmente quando começam em idades menores ou há antecedentes familiares. O risco absoluto de epilepsia futura é maior que o de crianças sem crises febris em alguns subgrupos, particularmente casos complexos, mas a maioria dos pacientes com crise febril simples não desenvolve epilepsia. Fornecer números sem faixa etária/método/fatores de risco pode assustar de modo desnecessário; explicar probabilidade e red flags individualmente.
+
+**Antitérmicos não são anticonvulsivantes profiláticos** e não mostraram prevenção consistente de novas crises febris a longo prazo. Não indicar manutenção crônica de fenobarbital/valproato a toda criança após uma crise simples; os efeitos adversos geralmente superam benefício em pacientes de baixo risco.
+
+### 19.5. Exemplo de orientação de alta após crise febril simples
+Explicar como observar respiração, posicionar de lado quando seguro, proteger ambiente, contar tempo, **não** colocar dedo/colher na boca, quando chamar emergência e como usar plano de resgate se prescrito pelo especialista. Orientar febre por causa, hidratação, retorno se letargia persistente, nova convulsão, rigidez, dificuldade respiratória, recusa alimentar importante ou púrpura. Não dar alta apenas com rótulo “convulsão febril” sem determinar hipótese/avaliação da infecção febril.
+
+## 20. Emergências metabólicas e tóxicas que parecem epilepsia
+
+### 20.1. Hipoglicemia
+Neuroglucopenia provoca irritabilidade, alteração comportamental, convulsões e coma. A medida capilar é rápida, mas resultados extremos precisam de confirmação e contexto; **tratar imediatamente** hipoglicemia grave em criança sintomática sem aguardar laboratório central. Depois, investigar jejum, insulina/antidiabéticos, doença metabólica, sepse ou erro de medicação. Um episódio inteiramente explicado por hipoglicemia não comprova epilepsia crônica.
+
+### 20.2. Hiponatremia
+Queda rápida da osmolaridade permite entrada de água em neurônios/glia, edema cerebral e crises. A urgência de tratar sintomas neurológicos com salina hipertônica **não significa corrigir sódio indiscriminadamente até normalidade**. O objetivo inicial é controlar edema e risco imediato, com elevação parcial monitorada; limites diários dependem de duração, estado clínico e fatores de risco para desmielinização osmótica. Em criança com vômitos, ingestão hídrica excessiva ou SIADH por infecção SNC, avaliar mecanismo antes de continuar soros inadequados.
+
+### 20.3. Hipocalcemia e hipomagnesemia
+Hipocalcemia pode causar tetania, parestesias, espasmo carpopedal, laringoespasmo, prolongamento do QT e convulsão; deficiência de magnésio pode perpetuar hipocalcemia e crises. Pedir cálcio **ionizado** quando alteração ácido-base/proteínas torna total enganoso; corrigir causas e monitorar coração conforme formulação. Não usar medicamento antiepiléptico indefinidamente para substituir correção metabólica.
+
+### 20.4. Intoxicações e abstinência
+Isoniazida pode causar convulsões de difícil controle por interferência no metabolismo de vitamina B6; piridoxina é antídoto específico quando indicado. Antidepressivos tricíclicos podem causar crise e alterações cardíacas com QRS alargado, exigindo abordagem toxicológica. Cocaína/anfetaminas e certas substâncias recreativas podem provocar hipertermia, arritmia e convulsões. Intoxicação por anestésicos locais tem contexto temporal após bloqueio e risco de arritmia/colapso, para a qual emulsão lipídica pode integrar resgate específico. **Toxinas diferentes exigem antídotos/suporte diferentes**, além de benzodiazepínico.
+
+### 20.5. Gestação em adolescente
+Convulsão em gestante/puérpera pode representar **eclâmpsia**, mesmo sem antecedente de epilepsia. Sulfato de magnésio é tratamento fundamental dessa emergência obstétrica quando indicada; uma abordagem restrita a anticonvulsivantes de epilepsia sem considerar hipertensão/HELLP e urgência obstétrica pode ser fatal. Avaliar gestação quando pertinente e mobilizar obstetrícia sem atraso.
