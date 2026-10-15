@@ -459,3 +459,119 @@ Um programa em que somente pessoas informadas recebem teste repetido pode consum
 - Eventos adversos, procedimentos de confirmação e sobrediagnóstico estimado por método científico.
 
 **Observação metodológica:** melhoria na proporção de tumores "estágio I" pode resultar parcialmente de deslocamento de estágio/viés de detecção e não provar queda na mortalidade sem seguimento de desfechos.
+
+
+## 22. Casos clínicos avançados — aplicar a epidemiologia à pessoa
+
+### Caso 5 — teste excelente em população de baixíssimo risco
+**Apresentação:** prefeitura pretende testar mil pessoas assintomáticas em faixa etária de baixo risco para enfermidade rara, utilizando tecnologia com sensibilidade de 90% e especificidade de 90%. Esperam-se dez casos na população. Gestores divulgam que "90% de precisão significa que 90% dos positivos estarão doentes".  
+**Hipótese/problema:** confusão entre sensibilidade e valor preditivo positivo.  
+**Exames e interpretação:** em 1.000 testados, prever 9 VP, 1 FN, 99 FP, 891 VN. Apenas 9 de 108 positivos serão verdadeiros; VPP≈8,3%. O exercício é artificial e não descreve desempenho de exame oncológico específico.  
+**Conduta:** reavaliar elegibilidade e evidência de benefício, discutir danos das confirmações, verificar se existe tratamento eficaz e caminho assistencial, melhorar comunicação de valor preditivo.  
+**Por que importa:** permite recusar programa sem benefício não por "economia", mas porque a relação risco/benefício é desfavorável em população inadequada.
+
+### Caso 6 — rastreamento mamário em duas pessoas de 46 anos
+**Apresentação:** duas mulheres de 46 anos procuram UBS. A primeira, assintomática e de risco habitual, pede mamografia "de rotina". A segunda percebe nódulo endurecido unilateral há três semanas, sem mamografia anterior.  
+**Hipóteses:** a primeira busca rastreamento por demanda fora da faixa populacional prioritária SUS 50–74; a segunda exige investigação **diagnóstica** de sinal de alarme.  
+**Exames:** para a primeira, avaliar risco/história, discutir potenciais benefícios/danos e política de acesso; para a segunda, exame clínico, imagem diagnóstica apropriada para idade e biópsia se achados justificarem.  
+**Conduta:** não impor o mesmo roteiro às duas. O programa de rastreio não substitui investigação de sintoma e a decisão individual não equivale a busca ativa de massa.  
+**Por que importa:** distingue recomendação populacional de decisão clínica, evitando atraso de câncer sintomático e testagem indiscriminada.
+
+### Caso 7 — HPV positivo sem diagnóstico de câncer
+**Apresentação:** pessoa de 34 anos, sem sintomas, DNA-HPV oncogênico positivo na primeira rodada do programa organizado de 2026. Pergunta se precisa de histerectomia. Foi vacinada contra HPV aos 12 anos.  
+**Hipóteses:** infecção oncogênica detectada, com necessidade de estratificação de risco por genótipo/triagem conforme diretriz brasileira.  
+**Exames/interpretação:** determinar resultado completo (genotipagem/citologia reflexa e/ou colposcopia segundo norma e disponibilidades); a positividade **não** prova NIC de alto grau ou câncer.  
+**Conduta:** explicar resultado sem alarmismo, garantir seguimento no fluxo de rastreamento, discutir como a vacinação reduz risco sem eliminar todos os tipos e evitar intervenções irreversíveis sem indicação histológica.  
+**Por que importa:** diferencia detecção de vírus de doença e de necessidade de tratamento.
+
+### Caso 8 — FIT positivo e falso alívio por repetição negativa
+**Apresentação:** homem de 61 anos, assintomático, recebeu FIT positivo; repetiu teste duas semanas depois e o resultado foi negativo. Conclui que "o primeiro deu errado".  
+**Hipótese:** sangramento intermitente por lesão neoplásica ou não neoplásica, ou positivo falso inicial; a repetição não esclarece a etiologia.  
+**Exames/interpretação:** colonoscopia diagnóstica com preparo adequado é etapa esperada após positivo, mesmo com segundo teste negativo.  
+**Conduta:** garantir encaminhamento e conclusão diagnóstica; avaliar comorbidades, anticoagulantes, risco de procedimento e acesso, sem usar FIT repetido como desempate.  
+**Por que importa:** o maior desperdício de rastreamento é detectar positivo e perder pessoa da linha de cuidado.
+
+### Caso 9 — PSA e decisão compartilhada numérica
+**Apresentação:** homem de 58 anos sem queixas ou história de alto risco quer PSA anual porque "todo amigo faz". Está preocupado com câncer e com a possibilidade de disfunção sexual após intervenções.  
+**Hipóteses:** risco habitual com decisão individual sobre exame não recomendado como rastreio populacional sistemático pelo MS/INCA.  
+**Exames/interpretação:** não há obrigação de PSA anual por idade; avaliar antecedentes, sintomas e informações de risco.  
+**Conduta:** explicar possibilidades de falsos positivos, biópsia, sobrediagnóstico, tratamento ativo ou vigilância ativa em casos selecionados e incerteza de benefício líquido; documentar preferências e plano clínico sem coação.  
+**Por que importa:** boa decisão compartilhada pode resultar em testar ou não testar; qualidade está na evidência e na escolha informada.
+
+### Caso 10 — interromper rastreio não é abandonar pessoa
+**Apresentação:** mulher de 83 anos com demência avançada, fragilidade, múltiplas hospitalizações e dificuldade grave de mobilidade foi convidada a repetir exames preventivos em bloco. Sem sangramento ou sintoma suspeito.  
+**Hipóteses:** baixa probabilidade de alcançar benefício em prazo relevante de certos rastreios, com risco de cascatas e desconforto.  
+**Exames/interpretação:** revisar histórico, elegibilidade formal e objetivos de cuidado; não há resultado laboratorial que substitua avaliação de proporcionalidade.  
+**Conduta:** discutir suspensão de rastreios sem benefício provável, continuar controle de sintomas, vacinação indicada, suporte ao cuidador e investigação de queixas novas quando houver benefício compatível com objetivos.  
+**Por que importa:** prevenção quaternária não é reduzir cuidado, mas evitar dano desnecessário preservando atendimento integral.
+
+## 23. Oito questões comentadas: raciocínio estatístico, diretriz e continuidade
+
+### Questão 7 — valor preditivo e prevalência
+Duas populações usam o mesmo teste, mesma sensibilidade e especificidade, mas uma tem prevalência da doença muito menor. Qual tendência geral, mantendo características do teste?
+A. VPP maior no grupo com prevalência menor. B. VPP menor no grupo com prevalência menor. C. Sensibilidade obrigatoriamente zera no grupo menor. D. Nenhum resultado muda.
+**Gabarito: B.** Com menos doentes entre testados, falsos positivos compõem maior fração dos positivos. **A:** sentido oposto. **C:** sensibilidade pode variar com espectro em aplicações reais, mas não é consequência matemática automática só de prevalência. **D:** VPP/VPN variam. **Mini-revisão:** Bayes une pré-teste e propriedades do teste.
+
+### Questão 8 — viés de antecipação diagnóstica
+Câncer seria diagnosticado clinicamente em 2030 e morte ocorreria em 2035. Rastreio o detecta em 2028, mas morte segue em 2035. O aparente aumento de sobrevida após diagnóstico se deve a:
+A. Redução demonstrada de mortalidade. B. Regressão tumoral espontânea. C. Viés de antecipação diagnóstica. D. Valor preditivo positivo de 100%.
+**Gabarito: C.** Antecipou o relógio do diagnóstico sem mudar momento do óbito. **A:** mortalidade não mudou no enunciado. **B:** nenhuma evidência de regressão. **D:** não relacionado. **Mini-revisão:** mortalidade específica é desfecho mais informativo que sobrevida isolada em rastreio.
+
+### Questão 9 — política mamográfica nacional
+Segundo o posicionamento do MS/INCA estabelecido em setembro/2025 para rastreamento populacional prioritário no SUS, a estratégia para risco habitual é:
+A. Mamografia anual para toda pessoa após 30 anos. B. Mamografia bienal de 50 a 74 anos. C. Nenhuma mamografia possível antes de 50. D. Exame somente em pessoas com nódulo.
+**Gabarito: B.** Faixa populacional e periodicidade do SUS; **A:** não recomendado. **C:** confunde priorização com acesso por demanda e discussão de risco. **D:** isso seria apenas diagnóstico sintomático, não rastreamento. **Mini-revisão:** política pública ≠ proibição de exame fora de faixa.
+
+### Questão 10 — resultado cervical
+Pessoa elegível, assintomática, recebe DNA-HPV oncogênico negativo no programa de rastreio organizado de risco habitual. Intervalo geral adotado pelo MS/INCA:
+A. Cinco anos. B. Duas semanas. C. Um mês. D. Anual obrigatório para todas.
+**Gabarito: A.** Teste molecular de alta sensibilidade permite maior intervalo no perfil de risco habitual. **B/C/D:** repetição desnecessária sem indicação, e risco especial tem fluxo próprio. **Mini-revisão:** não aplicar intervalo a imunossuprimida ou pós-lesão de alto grau sem avaliar protocolo.
+
+### Questão 11 — FIT positivo
+Pessoa assintomática de 60 anos tem FIT positivo, depois FIT negativo. Próximo passo correto:
+A. Ignorar primeiro. B. Repetir até obter três negativos. C. Dar antibiótico. D. Colonoscopia diagnóstica conforme rede e avaliação clínica.
+**Gabarito: D.** O programa exige investigação de positivo. **A/B:** não descartam lesão com sangramento intermitente. **C:** não trata risco oncológico. **Mini-revisão:** positivo significa etapa diagnóstica pendente.
+
+### Questão 12 — overdiagnosis
+Qual a definição de sobrediagnóstico?
+A. Teste falsamente positivo sem doença. B. Não localizar um câncer agressivo. C. Detectar doença real que não causaria sintomas ou morte durante a vida sem rastreio. D. Sempre encontrar câncer em estágio III.
+**Gabarito: C.** Há doença detectada conforme critérios, mas sem consequência clínica se não rastreada. **A:** falso positivo é outro dano. **B:** falso negativo. **D:** não é definição. **Mini-revisão:** sobretratamento pode seguir sobrediagnóstico.
+
+### Questão 13 — rastrear x diagnosticar
+Pessoa de 39 anos com sangramento retal persistente e anemia ferropriva é informada de que FIT de rastreamento começa aos 50. Melhor decisão:
+A. Investigar sintomas por via diagnóstica independentemente da faixa de rastreio. B. Esperar onze anos. C. Prescrever vitamina sem avaliar origem. D. Solicitar somente FIT anual até completar 50.
+**Gabarito: A.** Sintomas e anemia são indicação diagnóstica. **B/C/D:** atrasam causa potencialmente grave. **Mini-revisão:** elegibilidade de programa não define início de investigação clínica.
+
+### Questão 14 — intervenção de alto valor
+Um gestor da APS quer monitorar qualidade do novo programa FIT. Qual indicador está mais ligado a benefício real?
+A. Volume de folhetos impressos. B. Percentual de FIT positivos com colonoscopia diagnóstica concluída em prazo adequado. C. Número total de tubos FIT distribuídos sem rastrear resultados. D. Frequência de repetir FIT em positivos.
+**Gabarito: B.** Conclusão da investigação permite benefício da detecção. **A/C:** atividades intermediárias insuficientes. **D:** prática inadequada. **Mini-revisão:** rastreamento é processo da população até diagnóstico/tratamento.
+
+## 24. Matriz de autossuficiência (competência → texto → demonstração)
+
+| Competência | Onde o material explica | Aplicação para aprender |
+|---|---|---|
+| Separar diagnóstico de rastreio | Seções 6, 17, 19 | Casos 6 e 8; questão 13 |
+| Fazer 2 × 2 sem decorar | Seções 3 e 18 | Caso 5; questão 7 |
+| Distinguir vieses epidemiológicos | Seções 4 e 18.6 | Questão 8 e exemplo cronológico |
+| Discutir risco absoluto e NNT | Seções 9 e 18.5 | Exemplo 1.000 pessoas |
+| Diferenciar colo/citologia/DNA-HPV | Seções 7.1, 19.2 | Caso 7 e questão 10 |
+| Atualizar mamografia 2025 | Seções 7.2, 19.3 | Caso 6 e questão 9 |
+| Atualizar FIT 2026 | Seções 7.3, 19.4 | Caso 8 e questão 11 |
+| Explicar não rastrear PSA universalmente | Seções 7.4, 19.5 | Caso 9 |
+| Reconhecer sobrediagnóstico e danos | Seções 4, 20 | Questão 12 |
+| Fechar linha de cuidado | Seções 17, 21 | Caso 8 e questão 14 |
+| Saber quando parar | Seções 10 e 20.5 | Caso 10 |
+| Prevenção quaternária sem subtratamento | Seções 8 e 20 | Caso 10 |
+
+## 25. Fontes primárias desta etapa e limites da revisão
+7. INCA/MS. **Ministério da Saúde padroniza informações para acesso ao exame de mamografia no SUS**, 29/09/2025. https://www.gov.br/inca/pt-br/assuntos/noticias/2025/ministerio-da-saude-padroniza-informacoes-para-acesso-ao-exame-de-mamografia-no-sus
+8. INCA. **Versão para profissionais — câncer de mama**, com nota de atualização 2025. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/mama/versao-para-profissionais-de-saude
+9. INCA/MS. **Detecção precoce do câncer do colo do útero**, Portaria Conjunta SAES/SECTICS nº13/2025. https://www.gov.br/inca/pt-br/assuntos/gestor-e-profissional-de-saude/controle-do-cancer-do-colo-do-utero/acoes/deteccao-precoce
+10. Ministério da Saúde. **Diretriz Brasileira DNA-HPV — rastreamento organizado**, 18/08/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/r/rastreamento-cancer-do-colo-do-utero/view
+11. INCA. **SUS inclui teste de alta tecnologia para rastreamento colorretal**, 10/08/2026. https://www.gov.br/inca/pt-br/assuntos/noticias/2026/sus-inclui-teste-de-alta-tecnologia-para-rastreamento-de-cancer-colorretal
+12. Ministério da Saúde. **Câncer de próstata — homens sem sinais ou sintomas**, portal. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/cancer-de-prostata
+13. USPSTF. **Recommendation: Breast Cancer Screening**, 30/04/2024. https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening
+14. OMS Europa. **Screening programmes: a short guide** (fundamentos de benefício/risco, métricas e vieses). https://iris.who.int/bitstream/handle/10665/330829/9789289054782-eng.pdf
+
+**Pendências reais antes de aprovação:** revisão clínica/epidemiológica independente; conferência integral do fluxo DNA-HPV por genotipagem e dos fluxos especiais de colo/mama/colorretal; manuais operacionais FIT no SUS e tempos/garantia de colonoscopia; análise de evidência formal sobre tamanho de benefício e danos; comparação com apostila de epidemiologia clínica equivalente no Drive (não localizada); figuras autorais e mídia com direitos adequados; auditoria de redundância e legibilidade e testes HTML/PWA. **Os exemplos numéricos hipotéticos não foram apresentados como taxas reais dos exames. Não publicar automaticamente por contagem de caracteres.**
