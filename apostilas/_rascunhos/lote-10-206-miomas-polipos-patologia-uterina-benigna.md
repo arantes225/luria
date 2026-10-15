@@ -153,3 +153,200 @@ A estratégia depende de sangramento, menopausa, infertilidade selecionada, tama
 
 Sangramento pós-menopausa pode indicar hiperplasia ou neoplasia endometrial, mesmo que exista uma lesão aparentemente polipoide. A paciente pode ter pólipo com alteração atípica dentro ou fora dele. Avaliação do endométrio deve abranger quadro de risco, e resultados histológicos orientam seguimento.
 
+
+## 7. Adenomiose: patologia uterina benigna que não é mioma
+
+### 7.1. Conceito e fisiopatologia
+
+Adenomiose corresponde à presença de tecido endometrial glandular/estromal no interior do miométrio, acompanhada de hipertrofia ou hiperplasia de músculo liso e alterações inflamatórias. Pode ser difusa ou focal (adenomioma). O útero tende a tornar-se globoso e doloroso, com sangramento menstrual aumentado e dismenorreia, embora casos assintomáticos existam. A doença pode coexistir com leiomiomas e endometriose; a presença de um deles não elimina os outros.
+
+Alterações da interface endométrio-miométrio, inflamação local, sinalização estrogênica e reparo tecidual participam de sua fisiopatologia. A dor é influenciada por resposta inflamatória e disfunção contratilidade uterina; o aumento de fluxo pode decorrer de alteração estrutural e hemostática. Não é correto definir adenomiose apenas como “endométrio grosso”: a lesão é miometrial, não simples espessamento da mucosa.
+
+### 7.2. Apresentação clínica
+
+Queixas comuns incluem cólicas progressivas, sangramento intenso, dor pélvica crônica, desconforto na relação sexual e dificuldades reprodutivas selecionadas. Exame pélvico pode mostrar útero difusamente aumentado e doloroso, mas ausência desses achados não exclui doença. A dor cíclica importante também ocorre na endometriose, que deve ser considerada no diferencial; quadros simultâneos são frequentes.
+
+Na pessoa com útero aumentado, irregular e pouco doloroso, miomas tornam-se mais prováveis; com útero globoso e doloroso, a adenomiose ganha peso. Essas são tendências, não critérios definitivos.
+
+### 7.3. Ultrassom e ressonância
+
+Ultrassom transvaginal realizado por equipe experiente costuma ser primeira linha. Pistas incluem útero globoso, assimetria miometrial, estriações ou sombreamento em leque, cistos miometriais pequenos, ilhas ecogênicas, alterações vasculares e zona juncional irregular. Nenhum sinal isolado resolve todos os casos; descrever padrão e profundidade ajuda na interpretação.
+
+Ressonância pode auxiliar quando o ultrassom é inconclusivo, há muitos miomas dificultando leitura ou é necessário mapa anatômico para cirurgia. Espessamento e irregularidade da zona juncional, focos hemorrágicos e alterações miometriais reforçam hipótese em contexto correto. Limites numéricos da zona juncional variam com técnica, fase hormonal e idade; evitar tratá-los como diagnóstico absoluto.
+
+### 7.4. Tratamento
+
+A escolha depende de intensidade de dor/fluxo, fertilidade, idade, desejo de manter útero e presença concomitante de miomas. SIU com levonorgestrel, quando cavidade adequada e indicado, pode melhorar sangramento e dismenorreia; contracepção hormonal e progestagênios são opções em pessoas elegíveis. AINE pode aliviar dor; antifibrinolítico pode atuar no fluxo. Agentes supressores do eixo gonadotrófico têm papel selecionado, considerando efeitos adversos e retorno de sintomas após interrupção. Histerectomia é tratamento definitivo em pessoas com doença sintomática refratária que não desejam gestar e aceitam cirurgia, depois de decisão compartilhada.
+
+Procedimentos preservadores do útero para adenomiose têm resultados e risco reprodutivo variáveis e demandam equipe especializada. Ablação endometrial pode falhar quando a doença infiltra profundamente o miométrio; deve-se avaliar contraindicações e impacto reprodutivo (não é método contraceptivo e não se indica para quem deseja gestação).
+
+### 7.5. Quadro diferencial: adenomiose versus leiomioma
+
+| Característica | Adenomiose | Leiomioma |
+|---|---|---|
+| Anatomia principal | miométrio com tecido endometrial ectópico | nódulo de músculo liso/matriz |
+| Distribuição | difusa ou focal | nodular bem delimitada, geralmente |
+| Útero ao exame | globoso, doloroso em muitos casos | irregular/lobulado, dor variável |
+| Dismenorreia | muito relevante | pode ocorrer, sobretudo submucoso |
+| SUA intenso | comum | comum conforme localização |
+| US | sinais difusos/heterogêneos, cistos miometriais | nódulos delimitados, FIGO |
+| Cirurgia conservadora | tecnicamente variável; recidiva possível | miomectomia conforme tipo/localização |
+| Tratamento definitivo | histerectomia se indicada | histerectomia se indicada |
+
+## 8. Sangramento uterino anormal: investigação e primeiro manejo
+
+### 8.1. Não começar pela imagem antes da estabilidade
+
+Sangramento uterino intenso e agudo pode causar hipovolemia, síncope, hipotensão e anemia. No pronto atendimento, avaliar ABCDE, volume aparente, sinais vitais, acesso venoso e hemoglobina conforme necessidade, além de **teste de gravidez** em quem pode gestar. A avaliação do risco hemorrágico não depende apenas da quantidade de absorventes relatada; perfusão, sintomas e tendência clínica são fundamentais.
+
+Se houver instabilidade, suporte e eventual hemoterapia/controle do sangramento têm prioridade sobre diferenciar se o nódulo é FIGO 1 ou 2. Após estabilização, a etiologia guia prevenção de novos episódios. Evitar assumir que mulher com mioma não pode ter abortamento, ectópica ou coagulopatia concomitante.
+
+### 8.2. Descrição do sangramento importa
+
+Investigar frequência menstrual, regularidade, duração, estimativa de perda (incluindo “flooding”), coágulos, anemia, início desde menarca, spotting intermenstrual e sangramento pós-coital ou pós-menopausa. O sangramento desde a menarca com equimoses fáceis e epistaxe sugere coagulopatia; intervalos longos com episódios profusos sugerem disfunção ovulatória. Sangramento intermenstrual focal recorrente orienta lesão intracavitária, enquanto dor intensa e útero globoso fazem pensar em adenomiose. Essas pistas direcionam testes, sem substituir investigação completa.
+
+### 8.3. Laboratório e avaliação do ferro
+
+Hemograma confirma magnitude da anemia e plaquetas; ferritina auxilia na caracterização de deficiência de ferro. Tratamento da causa deve ser associado à reposição de ferro oral ou IV conforme gravidade, tolerância e contexto, lembrando que corrigir hemoglobina sem controlar sangramento gera recorrência. Testes de função tireoidiana, coagulação e outros são orientados pelo quadro; em sangramento persistente e fatores de risco, amostragem endometrial tem importância mesmo com ultrassom sugestivo de mioma.
+
+### 8.4. Quando investigar endométrio?
+
+Sangramento pós-menopausa é sinal de alerta, requer avaliação especializada de câncer endometrial e outras causas. Em idade reprodutiva, idade, obesidade, anovulação crônica, síndrome de ovários policísticos, exposição estrogênica sem oposição, tamoxifeno e falha de tratamento elevam importância de investigação histológica. O ponto crucial é **não usar um limiar único de espessura endometrial em pré-menopausa** para descartar ou confirmar hiperplasia: há variação fisiológica substancial ao longo do ciclo.
+
+A NICE recomenda histeroscopia com biópsia dirigida em pessoas selecionadas de alto risco com SUA e suspeita de lesão intracavitária; outros protocolos e sociedades podem recomendar amostragem ambulatorial por aspiração em faixas etárias/risco determinados. Trata-se de divergência metodológica a ser explicitada: seguir norma institucional vigente e decidir pelo tipo de amostragem conforme necessidade de identificar lesão focal versus doença difusa. A ausência de achado no ultrassom não encerra investigação de sangramento persistente em paciente de alto risco.
+
+### 8.5. Controle farmacológico não hormonal
+
+**Ácido tranexâmico:** antifibrinolítico que reduz degradação do coágulo endometrial e pode diminuir fluxo menstrual. É administrado em dias de sangramento conforme esquema prescrito, respeitando função renal, história de tromboembolismo, contraindicações e interações. Não trata massa uterina, nem deve ser prescrito indiscriminadamente em paciente com risco trombótico relevante. **Anti-inflamatórios não esteroidais:** podem reduzir prostaglandinas e aliviar dismenorreia/fluxo em pessoas selecionadas; evitar em insuficiência renal, hemorragia gastrointestinal, alergia, determinadas comorbidades e circunstâncias obstétricas. A eficácia para controlar fluxo muito volumoso por lesões intracavitárias pode ser limitada.
+
+A escolha entre antifibrinolítico e terapia hormonal depende de contraindicações e objetivos. Nem toda paciente quer contracepção; perguntar sobre fertilidade antes da prescrição muda a conversa.
+
+### 8.6. Controle hormonal do sangramento
+
+**Contraceptivos hormonais combinados:** podem regular padrão de sangramento e reduzir volume em mulheres sem contraindicações ao estrogênio. Risco tromboembólico, tabagismo acima de certas idades, enxaqueca com aura, hipertensão não controlada, história de eventos vasculares e outras condições podem limitar uso. **Progestagênios:** regulam/suprimem estímulo endometrial em regimes contínuos ou cíclicos, mas efeito sobre tamanho de mioma varia; benefício para sangramento não implica redução importante do nódulo. **SIU com levonorgestrel:** frequentemente eficaz para sangramento, mas a distorção importante da cavidade por mioma submucoso pode prejudicar inserção, posicionamento ou retenção. A presença de nódulo pequeno intramural sem distorção não constitui a mesma situação.
+
+Bloqueio do eixo gonadotrófico por agonistas ou antagonistas de GnRH pode reduzir temporariamente sangramento e volume, com efeitos hipoestrogênicos e perda de massa óssea, exigindo avaliação da duração, medidas de proteção óssea e terapia de reposição/add-back conforme produto. O uso pode ser útil para otimização pré-operatória de anemia ou em pacientes selecionadas, mas **não constitui cura permanente de mioma** e retorno dos sintomas após suspensão é possível.
+
+**Disponibilidade em países diferentes:** terapias combinadas com antagonistas de GnRH reconhecidas em diretrizes internacionais (como relugolix com componentes hormonais, linzagolix e outras) não devem ser apresentadas como cobertura automática do SUS. Verificar registro na Anvisa, indicação vigente, contraindicações, custo, reembolso e protocolos locais antes de inserir no bulário LURIA.
+
+## 9. Cirurgia e procedimentos em miomas: escolher pela anatomia e objetivo
+
+### 9.1. Observação ativa
+
+Miomas pequenos ou mesmo volumosos, se realmente assintomáticos, sem distorção clinicamente relevante, crescimento preocupante em contexto especial ou dano orgânico, frequentemente podem ser acompanhados em vez de removidos automaticamente. “Observar” inclui documentar sintomas, exame, anemia e plano de seguimento. Cirurgia sem benefício clínico previsível expõe a sangramento, infecção, aderências e possível comprometimento reprodutivo.
+
+### 9.2. Miomectomia: preservação uterina com riscos reais
+
+Miomectomia remove nódulos preservando útero; pode ser histeroscópica para submucosos selecionados, laparoscópica/robótica ou aberta conforme volume, localização e experiência. A decisão considera número de miomas, contato cavitário, espessura miometrial, desejo reprodutivo e chance de recidiva. Não é necessário remover todos os pequenos nódulos incidentais quando a causa do sintoma está em outro lugar.
+
+Principais riscos incluem hemorragia, lesão de estruturas adjacentes, infecção, aderências, necessidade de conversão de técnica, formação de cicatriz uterina e recidiva de miomas. Pessoas que desejam gestação precisam conversar sobre possível impacto de cicatriz profunda, seguimento obstétrico e via de parto conforme características da cirurgia; a necessidade de cesariana futura não pode ser inferida genericamente de toda miomectomia.
+
+### 9.3. Miomectomia histeroscópica e técnicas em etapas
+
+Para mioma submucoso, histeroscopia pode permitir remoção intracavitária com instrumentos apropriados, preservando parede externa do útero. A segurança depende de profundidade intramural, tamanho, base, localização, fluido de distensão, tempo cirúrgico e integridade da parede. Miomas FIGO 0 costumam ser mais simples que FIGO 2 extensos; procedimentos em etapas podem evitar lesão miometrial excessiva.
+
+**Complicações específicas:** perfuração uterina, sangramento, absorção excessiva de meio de distensão e distúrbios hidroeletrolíticos, lesão térmica e sinéquias. A equipe deve medir balanço de fluido, conhecer limites aplicáveis a cada meio e observar sinais de intoxicação volêmica. Em pacientes inférteis, sinéquias pós-procedimento têm importância reprodutiva.
+
+### 9.4. Histerectomia
+
+Histerectomia é tratamento definitivo para miomas uterinos e adenomiose uterina, pois remove o órgão de origem. Não é a mesma coisa que salpingo-ooforectomia: retirar útero não obriga retirar ovários em doença benigna, e preservação ovariana é decisão importante conforme idade/risco. A indicação depende de sintomas, falha ou recusa de opções conservadoras, anemia e compressão graves, desejo de não gestar, outras doenças uterinas e preferências informadas.
+
+Vias vaginal, laparoscópica e abdominal são selecionadas conforme volume, anatomia, cirurgias anteriores e experiência. Complicações incluem lesões urinárias/intestinais, infecção, hemorragia, tromboembolismo e recuperação prolongada. Informação sobre perda definitiva de fertilidade é parte essencial do consentimento.
+
+### 9.5. Embolização de artérias uterinas (EAU)
+
+A embolização provoca redução do fluxo sanguíneo do mioma, resultando em isquemia e redução de volume/sintomas em pessoas adequadas. Pode reduzir sangramento e pressão sem cirurgia uterina aberta, mas apresenta dor pós-procedimento, síndrome pós-embolização, risco de infecção e necessidade de reintervenção. Em pessoas com intenção gestacional, as evidências reprodutivas e potenciais efeitos na função ovariana exigem discussão específica: **não presumir equivalência entre EAU e miomectomia no prognóstico obstétrico**.
+
+Fatores que influenciam escolha: localização, sintomas, vascularização, contraindicações, acesso à radiologia intervencionista e desejo de futura gravidez. Massa com suspeita de malignidade requer avaliação antes de intervenção que possa atrasar diagnóstico.
+
+### 9.6. Técnicas ablativas e novas tecnologias
+
+Ultrassom focalizado guiado por imagem e técnicas por radiofrequência ou outras formas de ablação podem ser opções em centros e indicações selecionados, variando por país, registro e disponibilidade. Não são substitutos universais da miomectomia nem têm evidência reprodutiva igual para todas as técnicas. Ao discutir com a paciente, separar benefício de sintomas, necessidade de novas intervenções, fertilidade futura, tempo de recuperação e custo.
+
+### 9.7. Morcelação e risco de malignidade não reconhecida
+
+Ao retirar miomas por laparoscopia, técnicas de fragmentação tecidual podem facilitar extração, mas podem disseminar inadvertidamente neoplasia maligna não diagnosticada ou tecido benigno na cavidade. Nenhum exame pré-operatório exclui sarcoma com sensibilidade perfeita. Avaliar idade, estado menopausal, fatores de risco e morfologia; alternativas incluem extração contida e vias cirúrgicas adequadas. Consentimento deve explicitar risco residual e impacto potencial. Não rotular todo nódulo volumoso como sarcoma, mas também não prometer risco nulo.
+
+## 10. Miomas e fertilidade: o que a evidência permite dizer
+
+### 10.1. Mecanismos possíveis
+
+Miomas submucosos que deformam cavidade podem alterar receptividade endometrial, vascularização local, arquitetura cavitária e transporte espermático/embrionário; a remoção pode beneficiar alguns contextos reprodutivos. Miomas intramurais grandes ou que tocam endométrio podem ter impacto mais variável, influenciado por tamanho, número e outros fatores. Miomas puramente subserosos são menos consistentemente associados à redução da fertilidade.
+
+É necessário investigar ovulação, reserva ovariana/idade, fator masculino e tubário, e não atribuir todas as perdas gestacionais ou infertilidade a mioma incidental. Técnicas de reprodução assistida e cirurgias pélvicas prévias também modificam estimativa de benefício.
+
+### 10.2. O problema da indicação automática de cirurgia
+
+Remover nódulo pode melhorar anatomia cavitária, mas cirurgia pode gerar aderências, atrasar tentativas de gestação, modificar miométrio e ocasionar complicações. O efeito sobre nascidos vivos depende de localização e população; a decisão não deve usar apenas taxa de gravidez em estudos heterogêneos. Uma avaliação especializada deve discutir probabilidade individual de benefício e riscos de intervenção, idade e tempo reprodutivo disponível.
+
+### 10.3. Gravidez com mioma
+
+Durante a gestação, miomas podem mudar de volume e causar dor por degeneração, além de associar-se em alguns casos a apresentações fetais anômalas, maior sangramento pós-parto e necessidade operatória. A maioria dos miomas não exige intervenção gestacional; manejo costuma ser conservador e obstétrico conforme sintomas. Degeneração vermelha pode provocar dor importante, mas a paciente gestante com dor aguda também pode ter apendicite, torção anexial, ameaça de abortamento e outras urgências; **não assumir que tudo é degeneração de mioma**.
+
+Miomectomia durante a gestação é excepcional, considerando sangramento e riscos obstétricos. A decisão sobre parto após miomectomia prévia depende da técnica, profundidade da incisão, entrada em cavidade e outros dados, não de um número único de nódulos removidos.
+
+## 11. Diferenças cruciais: leiomioma, hiperplasia e malignidade
+
+### 11.1. Mioma não é sinônimo de risco elevado de câncer
+
+Leiomioma é neoplasia benigna distinta de leiomiossarcoma. A maioria dos leiomiossarcomas surge independentemente e não se considera transformação usual de mioma benigno. Crescimento rápido não tem especificidade suficiente para diagnosticar sarcoma, especialmente em anos reprodutivos; avaliação deve integrar idade, menopausa, características de imagem, sintomas e contexto. Ausência de achado suspeito não equivale a garantia absoluta.
+
+### 11.2. Endométrio pode adoecer independentemente do miométrio
+
+Hiperplasia endometrial ocorre por proliferação glandular aumentada, relacionada em muitos contextos a estrogênio sem oposição progestagênica. Atipia/histologia têm impacto maior que mera espessura no ultrassom para o prognóstico e tratamento. A pessoa com obesidade, ciclos anovulatórios ou tamoxifeno e sangramento persistente necessita avaliação apropriada, mesmo que o US mostre um mioma. Pólipo pode apresentar alterações hiperplásicas/atípicas, e histopatologia após retirada orienta conduta.
+
+### 11.3. Sangramento pós-menopausa muda a prioridade
+
+A presença de sangramento após menopausa exige investigação de causas endometriais, cervicais e outras. Mesmo quando uma paciente informa diagnóstico antigo de mioma, não é seguro atribuir sangramento novo a leiomioma sem avaliar endométrio. Espessura endometrial medida ao ultrassom transvaginal e risco clínico podem orientar biópsia/histeroscopia conforme diretrizes e contexto. A imagem é ferramenta de triagem; a confirmação histológica é indispensável nos cenários indicados.
+
+### 11.4. Não extrapolar marcadores oncológicos
+
+CA-125 pode aumentar em endometriose, miomas, adenomiose e processos inflamatórios; não deve ser solicitado como teste diagnóstico genérico de leiomioma. Marcadores não substituem imagem e histologia dirigida. Ressonância com sinais atípicos pode orientar suspeita de sarcoma, mas decisão envolve equipe especializada e limites conhecidos do método.
+
+## 12. Conduta por cenário: matriz de decisão terapêutica
+
+| Cenário | Primeira pergunta | Estratégia inicial | Quando mudar rumo |
+|---|---|---|---|
+| Mioma incidental, sem sintomas | há risco/cavidade comprometida? | observação informada | surgem sangramento, compressão, infertilidade relevante |
+| Sangramento intenso e anemia | está estável? | estabilizar, tratar ferro, controlar sangramento | recorrência, refratariedade, lesão intracavitária |
+| Nódulo FIGO 0–2 sintomático | extensão e complexidade? | considerar histeroscopia operatória | tipo profundo/complexo, necessidade em etapas |
+| Múltiplos miomas e útero volumoso | sintomas e desejo reprodutivo? | discutir drogas, miomectomia, EAU e histerectomia | escolha centrada em objetivo/risco |
+| Sangramento pós-menopausa | há patologia endometrial? | investigação com amostragem/US conforme risco | histologia suspeita ou persistência |
+| Adenomiose sintomática | preservar útero e fertilidade? | terapia hormonal/analgésica conforme elegibilidade | refratariedade ou desejo de cirurgia definitiva |
+| Pólipo endometrial sintomático | risco/histologia? | histeroscopia/polipectomia selecionada | histologia atípica ou recorrência |
+| Dor súbita em massa pediculada | isquemia/torção? | urgência ginecológica, excluir abdome agudo | cirurgia conforme gravidade |
+
+### 12.1. Fluxograma de primeira consulta por SUA
+
+**Passo 1.** Perguntar gravidez, estabilidade, anemia e sinais de alarme. **Passo 2.** Caracterizar sangramento e fatores de risco para doença endometrial. **Passo 3.** Exame físico e hemograma/ferritina conforme necessidade. **Passo 4.** Selecionar ultrassom para massa uterina; histeroscopia/histerossonografia quando suspeita de lesão intracavitária. **Passo 5.** Atribuir PALM-COEIN em vez de assumir causa única. **Passo 6.** Escolher controle sintomático e tratamento etiológico segundo localização, preferências e fertilidade. **Passo 7.** Definir retorno com parâmetros observáveis, como redução de sangramento, melhora da ferritina/hemoglobina e satisfação.
+
+### 12.2. Fluxograma para mulher que deseja gestação
+
+**Passo 1.** Confirmar que há infertilidade/subfertilidade e investigar causas simultâneas. **Passo 2.** Mapear FIGO e cavidade. **Passo 3.** Valorizar mioma submucoso com distorção, sobretudo se associado a sangramento e perdas gestacionais; discutir remoção seletiva. **Passo 4.** Para intramural sem distorção, decidir por tamanho, localização e evidência contextual; não operar automaticamente. **Passo 5.** Evitar procedimentos sem dados reprodutivos adequados. **Passo 6.** Registrar expectativa de benefício e risco de cicatriz/aderências e planejar obstetrícia futura.
+
+### 12.3. Fluxograma para sangramento pós-menopausa
+
+**Passo 1.** Confirmar menopausa, avaliar estabilidade e medicações. **Passo 2.** Exame ginecológico e US/histologia conforme risco e diretriz. **Passo 3.** Se pólipo/lesão focal suspeita, avaliação por histeroscopia dirigida e histopatologia quando indicada. **Passo 4.** Se amostra não diagnóstica ou sangramento persistente, repetir/expandir investigação. **Passo 5.** Nunca rotular como “apenas mioma” sem investigar endométrio.
+
+## 13. Complicações, prevenção e seguimento
+
+### 13.1. Anemia ferropriva e impacto funcional
+
+Sangramento prolongado pode reduzir ferro e hemoglobina, causando fadiga, taquicardia, dispneia, dificuldade cognitiva, queda de capacidade funcional e, em casos graves, instabilidade. Monitorar ferro e hemograma, adequar reposição, revisar perdas menstruais e evitar múltiplas intervenções que tratem ferro sem controlar a causa. Pessoas com fluxo intenso há anos podem naturalizar sintomas e subestimar a perda; fazer perguntas concretas melhora detecção.
+
+### 13.2. Complicações compressivas
+
+Miomas volumosos podem gerar hidronefrose e sintomas urinários/evacuatórios por compressão. Dor associada a retenção urinária, infecções recorrentes ou comprometimento renal exige investigação anatômica e decisão mais rápida. A relação causal precisa ser demonstrada; sintomas urinários também podem ser de bexiga hiperativa, infecção ou outras doenças coexistentes.
+
+### 13.3. Dor aguda por degeneração e torção pediculada
+
+Alterações degenerativas de leiomiomas podem produzir dor intensa com edema e inflamação; torção de mioma subseroso pediculado é rara, porém pode causar isquemia/peritonite. Na gestação, degeneração vermelha pode confundir com outras emergências abdominais; na não gestante, dor súbita com massa deve manter torção anexial, apendicite e causas urinárias na avaliação. Diagnóstico por imagem e avaliação cirúrgica dependem de sinais de gravidade.
+
+### 13.4. Sinéquias intrauterinas após procedimentos
+
+Cirurgia histeroscópica, curetagem ou manipulação endometrial podem favorecer aderências intracavitárias (síndrome de Asherman) em alguns contextos. Hipomenorreia/amenorreia pós-instrumentação, infertilidade ou perdas gestacionais podem levantar suspeita. A prevenção depende de técnica cuidadosa e evitar trauma desnecessário; diagnóstico pode exigir histeroscopia.
+
+### 13.5. Recorrência e plano longitudinal
+
+Miomectomia não elimina possibilidade de novos nódulos; pólipos podem recorrer; adenomiose pode persistir após tratamentos preservadores. O seguimento deve registrar melhora clínica, anemia, objetivos reprodutivos, resultado histológico e necessidade de novo procedimento. Ressonância/ultrassom seriados para toda pessoa assintomática não são necessariamente custo-efetivos; agenda de imagem deve considerar indicação concreta.
+
