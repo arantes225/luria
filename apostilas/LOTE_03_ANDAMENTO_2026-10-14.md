@@ -48,9 +48,9 @@
 
 ## Aula 48 — calendário PNI 2026, texto e prévia HTML (14/10/2026)
 
-Manuscrito `apostilas/_rascunhos/lote-03/48-imunizacoes-infancia.md` expandido de **16.336 para 80.395 caracteres brutos**, **30 capítulos**, **8 casos clínicos completos** e **12 questões de quatro alternativas comentadas**. Inclui calendário brasileiro de 2026, rotavírus, VPC20, VIP, meningo ACWY, BCG, influenza, covid-19, HPV, dengue, CRIE/RIE, pós-exposição, vigilância de EAPV e cadeia de frio. Comparativo Drive `Imunizações .pdf` é PNI 2020, desatualizado e não reproduzido.
+Manuscrito `apostilas/_rascunhos/lote-03/48-imunizacoes-infancia.md` expandido de **16.336 para 91.502 caracteres brutos**, **30 capítulos**, **10 casos clínicos completos** e **16 questões de quatro alternativas comentadas**. Inclui calendário brasileiro de 2026, rotavírus, VPC20, VIP, meningo ACWY, BCG, influenza, covid-19, HPV, dengue, CRIE/RIE, pós-exposição, vigilância de EAPV, cadeia de frio e **VSR 2026 (vacina materna e nirsevimabe)**. Comparativo Drive `Imunizações .pdf` é PNI 2020, desatualizado e não reproduzido.
 
-HTML editorial `apostilas/imunizacoes-infancia/index.html` salvo apenas na branch, com **31 seções indexadas, 8 casos, 12 questões expansíveis e 4 tabelas**, sem imagens não aprovadas. Auditoria estática após leitura do arquivo: 0 âncoras quebradas, 0 IDs duplicados e 0 desequilíbrios nos elementos estruturais verificados. Relatório: `apostilas/_rascunhos/lote-03/48-VALIDACAO-HTML.md`. **Aguardam revisão clínica de normas por produto/idade, imagens Admin, navegador/PWA e homologação. Sem merge, catálogo ou deploy.**
+HTML editorial `apostilas/imunizacoes-infancia/index.html` salvo apenas na branch, com **31 seções indexadas, 10 casos, 16 questões expansíveis e 5 tabelas**, sem imagens não aprovadas. Auditoria estática após leitura do arquivo: 0 âncoras quebradas, 0 IDs duplicados e 0 desequilíbrios nos elementos estruturais verificados. Relatório: `apostilas/_rascunhos/lote-03/48-VALIDACAO-HTML.md`. **Aguardam revisão clínica de normas por produto/idade, imagens Admin, navegador/PWA e homologação. Sem merge, catálogo ou deploy.**
 
 ## Aula 47 — prévia HTML em branch editorial (14/10/2026)
 
