@@ -131,6 +131,29 @@ Amostras de linfonodo, líquido pleural, líquor, tecido ósseo ou outros sítio
 
 Nenhum exame deve ser interpretado fora do cenário. A soma de testes negativos sem independência real pode criar falsa confiança.
 
+### 7.3. Escolha de amostra e rendimento conforme apresentação
+
+O teste útil é aquele aplicado à **amostra correspondente ao compartimento anatômico**. Na criança paucibacilar, a investigação não deve se limitar a esperar escarro espontâneo: o local da doença, a idade e a segurança da coleta definem as opções. A coleta deve ser feita por equipe capacitada e com acesso aos procedimentos laboratoriais validados.
+
+| Situação | Material a avaliar | Interpretação e limites |
+| --- | --- | --- |
+| Adolescente que expectora | Escarro para TRM-TB, cultura e demais testes conforme protocolo | Material salivar inadequado reduz rendimento; identificar resistência quando possível |
+| Criança incapaz de expectorar | Escarro induzido, aspirado/lavado gástrico conforme equipe e estrutura | TRM negativo não exclui doença paucibacilar; cultura pode acrescentar informação |
+| Adenopatia periférica persistente | Punção ou biópsia quando indicada | Cultura, testes moleculares e histologia auxiliam TB versus MNT, infecção bacteriana ou neoplasia |
+| Suspeita de meningite | Líquor quando punção segura, com avaliação celular, bioquímica e microbiológica | Um ensaio molecular negativo no líquor não elimina diagnóstico forte de TB meníngea |
+| Derrame pleural | Líquido pleural e, em casos selecionados, amostragem tecidual | Diferenciar derrame tuberculoso de empiema e outras etiologias; nenhum marcador isolado prova a causa |
+| Suspeita osteoarticular | Imagem dirigida e amostra de sítio comprometido quando viável | Histologia granulomatosa precisa de correlação; avaliar compressão neurológica e instabilidade |
+
+A SBP (documento científico nº 40/2026, p. 9) destaca o **Xpert MTB/RIF Ultra** e sua utilidade potencial em diferentes amostras pediátricas — respiratórias, ganglionares, teciduais, líquor e, em protocolos específicos, fezes. O texto explicita que **sangue não é amostra indicada** para esse uso habitual. É incorreto transformar “tecnologia disponível no país” em “todo hospital oferece o teste em qualquer amostra”: confirmar disponibilidade local e protocolo de coleta.
+
+**Raciocínio de probabilidade:** uma criança sem exposição, com sintomas leves recentes, cresce bem e tem RX normal possui probabilidade inicial distinta de outra com contato domiciliar bacilífero, falha de crescimento e adenopatia hilar. Um TRM negativo na segunda situação não a torna equivalente à primeira. A decisão final considera qualidade da amostra, sensibilidade para o fenótipo e riscos de postergar tratamento.
+
+### 7.4. Histopatologia: achados sugestivos não são assinaturas de espécie
+
+Granulomas e necrose caseosa podem favorecer tuberculose em contexto apropriado, mas também são vistos em outros processos granulomatosos. Diferenciar tuberculose por M. tuberculosis, micobactérias não tuberculosas e outras etiologias depende de microbiologia, histologia, distribuição anatômica, imunidade e epidemiologia. O diagnóstico de TB ganglionar não deve ser afirmado apenas porque um laudo traz a palavra “granuloma”.
+
+**Ponto de decisão:** diante de um linfonodo cervical crônico unilateral, perguntar se há sintomas sistêmicos e contato, se há outros sítios comprometidos e se a amostra pode esclarecer TB, MNT ou neoplasia. A investigação de formas extrapulmonares não é substituída pelo escore de TB pulmonar.
+
 ## 8. Radiografia e outros métodos de imagem: perguntas que ensinam
 
 A radiografia de tórax é elemento importante da investigação. Na criança, pode revelar adenopatia hilar e mediastinal, atelectasia, infiltrados focais, derrame ou padrão miliar. Exames em duas incidências podem melhorar avaliação de certas adenopatias quando disponíveis e apropriados. A imagem não tem especificidade absoluta, nem um laudo “sem sinais de tuberculose” substitui reavaliação em criança de alto risco.
