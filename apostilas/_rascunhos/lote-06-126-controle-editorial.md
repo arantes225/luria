@@ -116,3 +116,7 @@ A matriz verifica se o **corpo da apostila** (sem respostas) contém os conceito
 7. Aprovação editorial explícita antes de publicar, fazer merge ou deploy.
 
 **Parecer: corpo completo em rascunho e artefatos editoriais preparados; NÃO certificada cientificamente e NÃO publicada.**
+
+
+## Atualização de referência — Baveno VIII (2026)
+Foi identificado e revisado o consenso Baveno VIII, publicado no *Journal of Hepatology* em 19/08/2026, DOI 10.1016/j.jhep.2026.07.030. A redação recebeu a subseção 6.3 sobre critérios contemporâneos não invasivos de CSPH (15 kPa e plaquetas ≥150 para exclusão em populações validadas; modelos com probabilidade ≥75% e ≥25 kPa em etiologias adequadas para identificação) e a ressalva sobre TIPS precoce e individualização dos antibióticos na HDA varicosa. Alterações sincronizadas nos rascunhos MD, JSON e HTML, sem mexer na área publicada. **Revisão independente de hepatologia ainda pendente; diretriz nova não equivale a validação automática do resto do capítulo.**
