@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 10,
+  "version": 11,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "PRE-PUBLICAÇÃO — cinco manuscritos em revisão, sem certificação médica",
+  "status": "Pré-publicação: revisões pediátricas e TB zoonótica integradas; NÃO CERTIFICADO",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -22,10 +22,10 @@
       "source_path": "apostilas/lotes/LOTE_02_ASMA_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_ASMA_EDICAO_CONTINUA.md",
       "source_sha": "b6266e7c0d6a8b4bd21a152c9ec61bad6a36c010",
-      "consolidated_sha": "f5fddd6377a85092f69ed9715129b2c14b322499",
+      "consolidated_sha": "4b9fbcc19d80a7879e51db66f0017afaf2849ded",
       "source_raw_characters": 74961,
-      "consolidated_raw_characters": 120655,
-      "consolidated_approximate_plain_characters": 115998,
+      "consolidated_raw_characters": 132350,
+      "consolidated_approximate_plain_characters": 127348,
       "chapter_count": 10,
       "chapters": [
         {
@@ -69,13 +69,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 17,
-      "question_count": 22,
+      "case_count": 19,
+      "question_count": 24,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
-      "json_visible_estimate": 115998,
-      "json_table_count": 14
+      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
+      "json_visible_estimate": 127348,
+      "json_table_count": 15
     },
     {
       "id": "DPOC",
@@ -132,7 +132,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
+      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
       "json_visible_estimate": 106963,
       "json_table_count": 10
     },
@@ -195,7 +195,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
+      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
       "json_visible_estimate": 99415,
       "json_table_count": 13
     },
@@ -258,7 +258,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
+      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
       "json_visible_estimate": 91723,
       "json_table_count": 12
     },
@@ -270,10 +270,10 @@
       "source_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
       "source_sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
-      "consolidated_sha": "ea913a76dc8d3915d8f1525acbfc485baf2c9723",
+      "consolidated_sha": "e6a26e4783fac389d980be372a295802b17f94eb",
       "source_raw_characters": 97368,
-      "consolidated_raw_characters": 160669,
-      "consolidated_approximate_plain_characters": 153828,
+      "consolidated_raw_characters": 173745,
+      "consolidated_approximate_plain_characters": 166429,
       "chapter_count": 9,
       "chapters": [
         {
@@ -313,23 +313,22 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 19,
-      "question_count": 29,
+      "case_count": 21,
+      "question_count": 31,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
-      "json_visible_estimate": 153828,
-      "json_table_count": 19
+      "next_gate": "verificação clínica independente de todas as doses e esquemas, revisão semântica, imagens com licença comercial e Admin, Node dry-run no checkout e testes PWA; não publicar",
+      "json_visible_estimate": 166429,
+      "json_table_count": 21
     }
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "c8849d93bc8f9210ba853a9c34c1b48876efcb7a",
+  "input_json_sha": "13b088217f3b4e0412d3eaca632f9ba2ce2e0524",
   "last_update_scope": [
-    "Etapa 15: Tuberculose na gestação/puerpério (2RHZE/4RH em elegíveis, B6 no manual, transmissibilidade, amamentação, RN exposto e elegibilidade TB-DR)",
-    "Etapa 15: Asma pediátrica — plano escolar, atividade física, dispositivos, idade 6–11 e limites de AIR/MART",
-    "Adicionados Caso 17 e Questão 22 à Asma; Caso 19 e Questão 29 à TB; cabeçalhos duplicados 8.2/7.4 renomeados",
-    "Paridade entre JSON e Markdown, numeração contínua de 1 a N, tags de tabela, referências e arrays de imagens vazios conferidos"
+    "Asma: bronquiolite no lactente versus sibilância recorrente/asma pré-escolar, ensaio de CI 8–12 semanas quando apropriado conforme BTS/NICE/SIGN, casos 18–19 e questões 23–24",
+    "Tuberculose: M. bovis, exposição zoonótica, limitação do TRM para identificar espécie, resistência natural à pirazinamida, Nota MS 8/2024, casos 20–21 e questões 30–31",
+    "As cinco apostilas e o JSON foram conferidos estruturalmente; sem imagens autorizadas, execução Node do gerador, certificação médica, merge ou deploy"
   ],
   "last_revision": "2026-10-15"
 }
