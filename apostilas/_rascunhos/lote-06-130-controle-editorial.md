@@ -29,3 +29,43 @@ História natural: fase pré-patogênica e patogênica, período de suscetibilid
 - [ ] Figuras/diagramas autorais ou licenciados com aprovação Admin antes de inclusão, 10 pautas quando pertinentes.
 - [ ] JSON, HTML, validadores oficiais e inspeção desktop/PWA em ambiente apropriado.
 - [ ] Não publicar/mesclar/implantar.
+
+---
+
+## Etapa 2 — Texto final do rascunho e verificações estruturais (15/10/2026)
+
+- **Markdown:** `apostilas/_rascunhos/lote-06-130-niveis-de-prevencao-historia-natural-doenca.md` com 94.213 caracteres brutos, 31 capítulos, oito casos e doze questões. O corpo didático (capítulos 1–27) possui aproximadamente **68.982 caracteres** após remoção simples de URLs e marcação Markdown, excluindo casos, questões e referências. A contagem não prova unicidade semântica nem revisão médica.
+- **JSON:** `apostilas/_rascunhos/lote-06-130-build-input-preliminar.json`, 30 seções de conteúdo e 7 referências, imagens novas não inseridas.
+- **HTML:** `apostilas/_rascunhos/lote-06-130-preview.html` com 31 seções incluindo bibliografia, 8 casos, 12 questões, 12 listas de alternativas A–D e `noindex,nofollow`.
+- **Navegação interna:** 0 âncoras ausentes e 0 IDs duplicados.
+- **Verificação científica de escopo:** o texto distingue explicitamente história natural/níveis de prevenção, níveis da RAS, promoção da saúde/PNPS/PNAB e convenções específicas de cardiologia. Fontes oficiais brasileiras e da OMS identificadas, mas sem validação independente.
+
+### Matriz lexical de autossuficiência — 12 questões
+Teste automatizado simples da presença dos conceitos em capítulos **do corpo didático**, sem ler gabaritos. Não substitui análise pedagógica da coerência de cada alternativa.
+
+| Questão | Competência | Capítulos | Termos buscados | Resultado |
+| --- | --- | --- | --- | --- |
+| 1 | Suscetibilidade pré-patogênica | 2 | pre-patogenico; suscetibilidade | Cobertura preliminar |
+| 2 | Prevenção primordial | 4 | primordial; fatores de risco | Cobertura preliminar |
+| 3 | Vacina em hospital | 5, 18 | vacin; hospital | Cobertura preliminar |
+| 4 | Diagnóstico de HAS | 6, 12 | hipertensao; secundaria | Cobertura preliminar |
+| 5 | Reabilitação terciária | 7 | reabilitacao; incapacidade | Cobertura preliminar |
+| 6 | Quaternária | 8 | quaternaria; exames | Cobertura preliminar |
+| 7 | PEP | 11, 17 | pos-exposicao; infeccao | Cobertura preliminar |
+| 8 | TB latente | 3, 11 | tuberculose; infec | Cobertura preliminar |
+| 9 | PNAB | 1, 10 | atencao primaria; prevencao | Cobertura preliminar |
+| 10 | Carta de Ottawa | 10 | ottawa; ambientes | Cobertura preliminar |
+| 11 | Cardiovascular | 19 | secundaria cardiovascular; reabilitacao | Cobertura preliminar |
+| 12 | Rastreio versus diagnóstico | 6, 8 | rastreamento; sintoma | Cobertura preliminar |
+
+**Resultado: 12/12 com cobertura lexical preliminar.** A primeira passagem identificou dois trechos que mereciam explicitação didática: **suscetibilidade** na fase pré-patogênica (cap. 2) e a diferença entre **reabilitação** e prevenção de recorrência cardiovascular (cap. 19). As três versões foram sincronizadas após a correção.
+
+### Pendências para certificação
+1. Revisão médica independente por docente de Preventiva/Saúde Coletiva, validando classificações ambíguas e interpretação da política brasileira.
+2. Comparação com material extenso de autoria comprovada (Drive disponível apenas com resumos parciais).
+3. Auditoria de originalidade semântica e eliminação de eventual sobreposição excessiva com apostilas 120 e 125.
+4. Curadoria/produção de diagramas originais e, quando houver imagens externas, verificação individual de licença/autoria, compressão WebP e aprovação via Admin. Nenhuma figura publicada.
+5. Execução **real** do builder e auditores do repositório, que não foi feita neste turno; checagem estrutural não substitui `node scripts/build-apostilas-batch.cjs --dry-run`.
+6. Testes de visualização desktop/PWA, acessibilidade e desempenho; aprovação antes de merge ou deploy.
+
+**Parecer:** rascunho completo com prévia técnica e 12/12 conceitos presentes nos capítulos; **NÃO PUBLICAR/NÃO CERTIFICADO**.
