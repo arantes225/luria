@@ -10,6 +10,7 @@ from __future__ import annotations
 import csv
 import importlib.util
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -17,6 +18,7 @@ import pytest
 
 
 SCRIPTS = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(SCRIPTS))  # sibling renderers during spec-based tests
 
 
 def import_script(name: str):
@@ -172,3 +174,50 @@ def test_selector_rejects_non_metadata_and_bad_paths(selector, tmp_path):
     db.write_text("ecg_id,patient_id,scp_codes\n1,1,\"{'NORM': 100}\"\n")
     with pytest.raises(ValueError, match="Missing required"):
         selector.make_candidates(db, p)
+
+
+
+def test_lead_ii_continuous_preserves_all_5000_samples(tmp_path):
+    render = import_script("render_ptbxl_ecgs")
+    rhythms = import_script("render_ptbxl_rhythm_strips")
+    make_synthetic_wfdb(tmp_path, "00006", amplitude=0.7, resolution=500)
+    values, fs, names, _ = render.read_record(tmp_path, "00006", resolution=500)
+    original = values[:, names.index("II")]
+    actual = rhythms.extract_lead_ii(values, fs, names)
+    assert len(actual) == 5000
+    assert np.array_equal(actual, original)
+    assert np.isclose(actual[5], original[5])
+
+
+def test_rhythm_strip_has_digital_grid_real_units_not_paper(tmp_path):
+    render = import_script("render_ptbxl_ecgs")
+    rhythms = import_script("render_ptbxl_rhythm_strips")
+    make_synthetic_wfdb(tmp_path, "00007", amplitude=0.5, resolution=500)
+    signals, fs, names, _ = render.read_record(tmp_path, "00007", resolution=500)
+    image = tmp_path / "NON_CLINICAL-TEST-DII.webp"
+    result = rhythms.render_strip(signals, fs, names, image, 120000)
+    assert image.is_file()
+    assert image.stat().st_size <= 120000
+    assert result["lead"] == "II"
+    assert result["seconds"] == 10
+    assert result["samples"] == 5000
+    assert result["sampling_hz"] == 500
+    assert result["has_full_10s_contiguous_same_lead"] is True
+    assert result["physical_paper_calibrated"] is False
+    assert result["digital_grid_minor_seconds"] == 0.04
+    assert result["digital_grid_minor_mV"] == 0.1
+    assert len(result["sha256_webp"]) == 64
+
+
+def test_rhythm_strip_rejects_incorrect_sampling_and_nonfinite(tmp_path):
+    rhythms = import_script("render_ptbxl_rhythm_strips")
+    vals = np.zeros((5000, 12))
+    names = ["I", "II", "III", "AVR", "AVL", "AVF",
+             "V1", "V2", "V3", "V4", "V5", "V6"]
+    with pytest.raises(ValueError, match="500Hz"):
+        rhythms.extract_lead_ii(vals[:1000], 100, names)
+    with pytest.raises(ValueError, match="Missing/ambiguous"):
+        rhythms.extract_lead_ii(vals, 500, [s if s != "II" else "III" for s in names])
+    vals[100, 1] = np.nan
+    with pytest.raises(ValueError, match="Nonfinite"):
+        rhythms.extract_lead_ii(vals, 500, names)
