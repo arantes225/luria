@@ -349,6 +349,14 @@ Avaliar gravidade, estado neurológico e sinais de hipertensão intracraniana; u
 
 O esquema brasileiro tradicional da meningite tuberculosa usa duração prolongada, frequentemente **12 meses**, com corticoide adjuvante em cenários recomendados pelo Ministério da Saúde. Doses e janela de corticoide exigem prescrição baseada na idade, peso, gravidade e protocolo consultado integralmente. A OMS descreve alternativas pediátricas específicas em certos cenários, mas **não** substituir o regime nacional por uma opção internacional sem contextualização de elegibilidade e implementação. Em suspeita clínica alta de meningite TB, não atrasar terapia aguardando cultura.
 
+### 15.1. Sinais de evolução neurológica e cuidados após o tratamento
+
+Na meningite tuberculosa pediátrica, a apresentação inicial pode ser inespecífica. Febre prolongada, irritabilidade, vômitos, sonolência ou redução do contato com o ambiente podem anteceder rigidez de nuca, crises convulsivas e déficits focais. A ausência de meningismo no lactente não exclui doença grave. A inflamação basal pode complicar-se com hidrocefalia, vasculite e infartos.
+
+O diagnóstico integra história, risco de exposição, exame neurológico, análise de líquor quando segura e neuroimagem orientada pelo quadro. Nenhum resultado molecular negativo isolado é suficiente para excluir a doença se a probabilidade clínica é alta. Estabilização, encaminhamento e investigação de outras causas graves devem ocorrer em paralelo, sem depender de cultura para reconhecer urgência.
+
+Ao longo do seguimento, registrar eventuais sequelas motoras, cognitivas, comportamentais, visuais ou auditivas, com indicação de reabilitação quando necessária. O sucesso clínico não se resume ao desaparecimento da febre.
+
 ## 16. Tuberculose miliar e outras apresentações especiais
 
 Múltiplos micronódulos disseminados na radiografia, febre, hepatosplenomegalia, repercussão nutricional e piora respiratória podem indicar doença miliar, sobretudo na criança pequena. O padrão miliar pode ser tardio ou pouco evidente; avaliar órgão-alvo e sinais neurológicos, porque coexistência com meningite modifica conduta. Paciente com instabilidade requer internação, suporte e investigação rápida.
