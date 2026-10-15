@@ -531,3 +531,222 @@ Todos os casos são fictícios, concebidos para desenvolver raciocínio clínico
 
 **Por que importa.** Prevenção de intoxicação e conduta frente à exposição são distintas; a decisão clínica é guiada por gravidade e substância, não pela esperança de que “não deu tempo de engolir”.
 
+
+## 20. Doze questões autorais de prova com comentários por alternativa
+
+### Questão 1 — Agenda de puericultura do Ministério da Saúde
+
+Família pergunta quando levar o lactente saudável à UBS para acompanhamento programado. Qual esquema reflete a proposta do Ministério da Saúde para os primeiros anos?
+
+A) Apenas ao nascer e ao completar um ano, desde que vacinado.  
+B) Primeira semana, 1, 2, 4, 6, 9, 12, 18, 24 e 36 meses, com acompanhamento pelo menos anual a partir dos dois anos e individualização por risco.  
+C) Mensal até cinco anos para todas as crianças, sem exceções.  
+D) Somente quando houver doença sintomática.
+
+**Gabarito: B.**
+
+- **A — incorreta:** vacinação e consultas programadas são complementares e não se limitam a dois encontros.
+- **B — correta:** corresponde à agenda apresentada pelo Ministério da Saúde, com visitas adicionais segundo risco.
+- **C — incorreta:** a agenda não prevê consulta mensal universal por cinco anos.
+- **D — incorreta:** a prevenção e detecção precoce são justamente objetivos da puericultura.
+
+**Mini-revisão:** a consulta deve acompanhar crescimento, desenvolvimento, alimentação, imunização, saúde bucal, ambiente e família, independentemente de queixa.
+
+### Questão 2 — A curva não é só o último percentil
+
+Menina de 14 meses tinha peso próximo ao percentil mediano, mas nos últimos meses houve desaceleração e queda em medidas seriadas. Está clinicamente estável. Qual abordagem é mais correta?
+
+A) Usar apenas o percentil de hoje e ignorar medidas anteriores.  
+B) Solicitar todos os exames laboratoriais disponíveis antes de qualquer história alimentar.  
+C) Validar a antropometria, investigar alimentação/doença/contexto e planejar reavaliação da trajetória.  
+D) Concluir que se trata necessariamente de hipotireoidismo.
+
+**Gabarito: C.**
+
+- **A — incorreta:** a mudança de canal pode revelar problema, mesmo se valor absoluto ainda é aparentemente aceitável.
+- **B — incorreta:** exames não substituem técnica de medida, história e exame.
+- **C — correta:** integra confiabilidade de dados, causas e evolução longitudinal.
+- **D — incorreta:** hipotireoidismo é uma possibilidade em padrões específicos, mas não diagnóstico automático.
+
+**Mini-revisão:** erro de comprimento/idade e prematuridade não considerada podem gerar falso diagnóstico antropométrico.
+
+### Questão 3 — Peso aumenta, altura desacelera
+
+Criança de oito anos ganha peso, mas há redução progressiva da velocidade de estatura. Qual interpretação merece destaque?
+
+A) Excesso de peso exclui qualquer doença endócrina.  
+B) A combinação pode sugerir causa endócrina ou outra patologia de crescimento, exigindo investigação dirigida.  
+C) É padrão necessariamente normal em toda criança com sobrepeso.  
+D) Solicitar hormônio do crescimento aleatório confirma déficit hormonal.
+
+**Gabarito: B.**
+
+- **A — incorreta:** o padrão pode ocorrer em endocrinopatias.
+- **B — correta:** altura e peso devem ser interpretados conjuntamente; história/exame orientam laboratórios.
+- **C — incorreta:** redução linear sustentada não deve ser ignorada.
+- **D — incorreta:** GH é secretado de modo pulsátil e uma dosagem aleatória isolada não confirma deficiência.
+
+**Mini-revisão:** diferenciar crescimento familiar/constitucional de velocidade patológica e considerar maturação puberal.
+
+### Questão 4 — Correção da idade do prematuro
+
+Lactente nasceu com 32 semanas e tem quatro meses cronológicos. Para avaliar desenvolvimento motor inicial, qual conduta é correta?
+
+A) Corrigir idade aproximando-a de dois meses e interpretar os marcos com história e exame, sem retardar vacinas de rotina indiscriminadamente.  
+B) Exigir todos os marcos de criança a termo de quatro meses e concluir deficiência se algum faltar.  
+C) Corrigir tanto desenvolvimento quanto toda vacina para dois meses sem consultar diretriz.  
+D) Não avaliar desenvolvimento antes dos dois anos.
+
+**Gabarito: A.**
+
+- **A — correta:** oito semanas faltaram para 40; aos quatro meses cronológicos há cerca de dois corrigidos.
+- **B — incorreta:** ignora maturação e pode gerar diagnóstico falso.
+- **C — incorreta:** vacinação tem recomendações específicas, usualmente ancoradas em idade cronológica.
+- **D — incorreta:** vigilância precoce é essencial e prematuridade pode ampliar necessidade de acompanhamento.
+
+**Mini-revisão:** corrigir interpretação não significa desconsiderar sinais de alerta.
+
+### Questão 5 — Regressão de linguagem
+
+Menino de 22 meses deixou de usar palavras que antes pronunciava e de responder ao nome. Cresce adequadamente. Qual é a melhor conduta?
+
+A) Aguardar até quatro anos porque o peso está normal.  
+B) Afirmar que é autismo exclusivamente pelo sintoma.  
+C) Investigar regressão, audição e desenvolvimento, usar rastreio apropriado e encaminhar sem demora desnecessária.  
+D) Solicitar apenas hemograma anual e encerrar acompanhamento.
+
+**Gabarito: C.**
+
+- **A — incorreta:** regressão merece avaliação, mesmo sem déficit antropométrico.
+- **B — incorreta:** TEA está no diferencial, mas não é diagnóstico baseado em um achado.
+- **C — correta:** inclui função auditiva e investigação multidimensional.
+- **D — incorreta:** hemograma não aborda principal dúvida.
+
+**Mini-revisão:** M-CHAT-R/F identifica risco de TEA entre 16 e 30 meses no SUS; não substitui avaliação diagnóstica.
+
+### Questão 6 — A finalidade do M-CHAT-R/F
+
+Assinale a alternativa correta sobre o uso do M-CHAT-R/F na APS brasileira.
+
+A) Um resultado positivo equivale a diagnóstico definitivo de TEA.  
+B) É instrumento de rastreio para risco de TEA em faixa etária indicada, cujo resultado deve ser integrado à clínica e seguimento.  
+C) Um resultado negativo elimina qualquer possibilidade de desenvolvimento atípico.  
+D) Sua aplicação dispensa investigar audição e outras causas de atraso de linguagem.
+
+**Gabarito: B.**
+
+- **A — incorreta:** rastreio seleciona crianças para avaliação, não estabelece diagnóstico.
+- **B — correta:** reflete o papel do instrumento no Ministério da Saúde.
+- **C — incorreta:** nenhum teste é perfeitamente sensível, sobretudo diante de regressão ou preocupação persistente.
+- **D — incorreta:** déficit auditivo e outras condições podem imitar ou coexistir com alterações de comunicação.
+
+**Mini-revisão:** não confundir rastreio universal/específico com diagnóstico neuropsiquiátrico.
+
+### Questão 7 — Guia Alimentar para menores de dois anos
+
+Criança de sete meses, amamentada, inicia alimentação complementar. Qual orientação segue o Guia Alimentar brasileiro?
+
+A) Suspender leite materno quando começar a oferecer comida.  
+B) Substituir água por suco de frutas concentrado todos os dias.  
+C) Oferecer alimentos in natura ou minimamente processados, em consistência segura, manter leite materno e evitar açúcar até dois anos.  
+D) Introduzir ultraprocessados “para bebês” porque têm embalagem pediátrica.
+
+**Gabarito: C.**
+
+- **A — incorreta:** aleitamento é recomendado até dois anos ou mais.
+- **B — incorreta:** água potável é a bebida recomendada; bebidas açucaradas não devem ser rotina.
+- **C — correta:** a alimentação complementar enriquece a dieta e deve respeitar textura, ferro, variedade e habilidades.
+- **D — incorreta:** marketing dirigido a crianças não comprova qualidade nutricional.
+
+**Mini-revisão:** alimentação responsiva significa reconhecer fome/saciedade e transformar a refeição em interação, não coerção.
+
+### Questão 8 — Sono seguro
+
+Uma mãe pretende colocar o lactente de dois meses para dormir de lado em colchão inclinado, com travesseiro para “evitar refluxo”. A orientação mais segura é:
+
+A) Dormir de barriga para cima, em superfície firme, plana e sem objetos soltos; adaptar apoio noturno aos cuidadores.  
+B) Dormir sempre de bruços sem supervisão para fortalecer pescoço.  
+C) Dormir no sofá com adulto cansado porque o colo protege de aspiração.  
+D) Proteger a cabeça usando almofadas espessas em todos os lados.
+
+**Gabarito: A.**
+
+- **A — correta:** orientação central de prevenção de sufocação e mortes inesperadas associadas ao sono.
+- **B — incorreta:** posição prona pode ser apropriada acordado e supervisionado, não para sono de rotina.
+- **C — incorreta:** sofá/poltrona aumenta risco relevante de sufocação/acidente de sono.
+- **D — incorreta:** objetos macios e protetores podem obstruir vias aéreas.
+
+**Mini-revisão:** sono seguro não depende de refluxo fisiológico habitual; dispositivos posicionadores não são solução universal.
+
+### Questão 9 — Prevenção de afogamento
+
+Pré-escolar de três anos faz natação, mas há piscina sem barreiras acessível pelo quintal. Qual recomendação é mais efetiva?
+
+A) A criança já sabe nadar, então pode permanecer sem adulto.  
+B) Orientar apenas que ela “não se aproxime” da piscina.  
+C) Instalar barreira física com acesso protegido e garantir supervisão ativa por adulto, sem substituir isso por boias ou aulas.  
+D) Deixar irmão de sete anos como único responsável.
+
+**Gabarito: C.**
+
+- **A — incorreta:** habilidades aquáticas não eliminam risco.
+- **B — incorreta:** crianças pequenas não controlam risco de forma confiável.
+- **C — correta:** camadas de prevenção combinam barreiras e supervisão.
+- **D — incorreta:** uma criança não substitui adulto responsável por outra criança em situação de risco aquático.
+
+**Mini-revisão:** mesmo recipientes pequenos (baldes, banheiras) podem representar risco para lactentes e crianças pequenas.
+
+### Questão 10 — Transporte infantil
+
+Sobre a Resolução CONTRAN nº 819/2021 e segurança de crianças no automóvel, qual é a melhor afirmação?
+
+A) Todo lactente pode viajar no colo de adulto em percurso curto.  
+B) Idade é o único critério relevante, dispensando peso/altura e manual do dispositivo.  
+C) Crianças menores de dez anos que não atingiram 1,45 m estão sujeitas a regras específicas de retenção; utilizar sistema adequado e conferir regulamentação aplicável, instalação e fabricante.  
+D) Dispositivo de retenção só precisa ser utilizado em rodovia.
+
+**Gabarito: C.**
+
+- **A — incorreta:** colo não substitui sistema de retenção em colisão.
+- **B — incorreta:** dispositivo deve corresponder ao crescimento e instruções de uso.
+- **C — correta:** descreve alcance geral da regra, respeitando exceções legais e especificações.
+- **D — incorreta:** risco existe também em trajetos urbanos curtos.
+
+**Mini-revisão:** a legislação deve ser lida no texto consolidado; orientações adicionais de segurança podem ser mais conservadoras que o mínimo legal.
+
+### Questão 11 — Intoxicação e reação da família
+
+Menino de dois anos foi encontrado com frasco de medicamento aberto e apresenta sonolência. Família deseja induzir vômito. Qual conduta é apropriada?
+
+A) Induzir vômito em casa até expelir comprimidos.  
+B) Oferecer leite como antídoto universal.  
+C) Acionar emergência e serviço de toxicologia, avaliar ABC/glicemia e identificar medicamento, sem induzir vômito.  
+D) Aguardar doze horas sem procurar auxílio porque a quantidade ingerida não é conhecida.
+
+**Gabarito: C.**
+
+- **A — incorreta:** pode provocar aspiração e não é medida domiciliar segura.
+- **B — incorreta:** leite não neutraliza indiscriminadamente substâncias tóxicas.
+- **C — correta:** suporte e identificação precoce orientam antídotos/exames quando indicados.
+- **D — incorreta:** sonolência é sinal de gravidade, e dose máxima possível importa.
+
+**Mini-revisão:** prevenção exige armazenamento trancado e embalagem original; botões de pilhas e múltiplos ímãs ingeridos também requerem alta atenção.
+
+### Questão 12 — Violência e proteção integral
+
+Menina de cinco anos apresenta hematomas em regiões pouco típicas de quedas, com explicações contraditórias dos cuidadores. Qual atitude representa cuidado apropriado?
+
+A) Exigir prova pericial definitiva antes de oferecer atendimento ou notificar conforme norma.  
+B) Registrar achados objetivos, acolher, avaliar segurança, acionar rede de proteção e cumprir notificação/comunicação legal sem interrogatório sugestivo.  
+C) Acusar e confrontar a família em sala de espera sem privacidade.  
+D) Concluir que toda família de baixa renda necessariamente negligencia crianças.
+
+**Gabarito: B.**
+
+- **A — incorreta:** suspeita qualificada já pode gerar dever de proteção/notificação, conforme normas.
+- **B — correta:** assistência clínica, documentação, segurança e rede intersetorial devem caminhar juntas.
+- **C — incorreta:** pode colocar a criança em risco e inviabilizar investigação adequada.
+- **D — incorreta:** vulnerabilidade econômica não equivale a negligência; exige suporte e avaliação justa.
+
+**Mini-revisão:** a puericultura cuida da criança em seu território e também deve reconhecer riscos de violência, sofrimento familiar e barreiras de acesso.
+
