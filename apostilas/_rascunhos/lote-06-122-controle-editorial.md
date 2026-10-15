@@ -132,3 +132,9 @@ A matriz pesquisa somente **capítulos instrucionais**, excluindo casos, enuncia
 6. Aprovação editorial explícita antes de mesclar branch ou fazer deploy.
 
 **Parecer: apostila 122 redigida, prévia e matriz inicial prontas. Status permanece RASCUNHO EDITORIAL.**
+
+
+### Complemento de curadoria — 10 candidatos de radiologia
+O manifesto visual da 122 foi ampliado de **7 para 10 candidatas** com páginas de fonte, autoria e termos de licença identificados. As novas opções mostram **sinal de Rigler em radiografia**, uma radiografia alternativa do mesmo achado e **pneumoperitônio pós-operatório**. A contagem de 10 é **quantidade pesquisada, não 10 imagens independentes aprovadas**: há cortes repetidos do mesmo caso e sinais semelhantes; o revisor escolherá apenas o que acrescenta informação.
+
+**O fluxo Admin permanece bloqueado:** nenhuma imagem foi importada/inserida, nenhuma foi comprimida ou aceita clinicamente no site, e não existe publicação. Conferir versão exata das licenças no momento da seleção, observando atribuição e ShareAlike nas imagens CC BY-SA; não transformar uma licença de uso em garantia de qualidade diagnóstica.
