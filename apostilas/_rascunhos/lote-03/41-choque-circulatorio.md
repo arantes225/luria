@@ -358,6 +358,39 @@ Homem após trauma torácico, dispneia acentuada, hipotensão, murmúrio vesicul
 ### Caso 4 — Vasoplegia abrupta
 Adulto desenvolve dispneia, sibilância e colapso pressórico minutos após medicação; não apresenta urticária. **Hipótese:** anafilaxia. **Exames:** diagnóstico clínico; exames auxiliares não retardam tratamento. **Conduta:** adrenalina intramuscular imediata na face anterolateral da coxa, suporte de via aérea/oxigênio, posicionamento, fluidos conforme reperfusão e monitorização. **Por que importa:** ausência de urticária não afasta anafilaxia com comprometimento respiratório/circulatório.
 
+
+### Caso 5 — Choque hemorrágico com hemoglobina inicialmente normal
+
+**Apresentação:** homem de 28 anos após colisão de alta energia, consciente, FC 135 bpm, PA 113/77 mmHg, extremidades frias e enchimento capilar de seis segundos. Queixa-se de dor abdominal e pélvica; hemoglobina inicial de 13 g/dL. Minutos depois apresenta confusão e queda de pressão. **Hipótese:** hemorragia interna com choque hipovolêmico progressivo. **Por que os exames enganam?** A concentração inicial de hemoglobina pode permanecer relativamente normal antes de redistribuição de água e hemodiluição. O número não representa o volume total perdido nem substitui sinais de hipoperfusão.
+
+**Interpretação e diferenciais:** procurar sangue intraperitoneal, retroperitoneal, pleural e em fraturas de ossos longos, além de tamponamento ou pneumotórax hipertensivo concomitantes. eFAST positivo fortalece suspeita de sangramento cavitário, mas negativo não exclui todas as fontes ou fase precoce. Solicitar tipagem, exames de coagulação e gasometria/lactato em paralelo à ressuscitação, sem tornar os resultados pré-requisito para controle de fonte.
+
+**Conduta:** equipe de trauma, avaliação xABCDE, hemostasia imediata quando possível, acesso vascular, estratégia transfusional conforme gravidade e disponibilidade, aquecimento e correção dirigida da coagulopatia. Se houver instabilidade com suspeita de hemorragia abdominal, priorizar decisão cirúrgica/endovascular em vez de transportar indiscriminadamente à tomografia. TXA pode ser indicado em trauma com sangramento importante dentro das primeiras três horas, segundo diretriz, sem substituir hemostasia. **Por que importa:** a gravidade é sindrômica e dinâmica, não definida pela primeira hemoglobina.
+
+### Caso 6 — TEP de alto risco após cirurgia, com falência de VD
+
+**Apresentação:** mulher de 58 anos no pós-operatório recente, dispneia súbita, síncope, SpO2 de 86%, PA 82/48 mmHg e lactato elevado. O ecocardiograma focado mostra ventrículo direito dilatado e hipocontrátil, com ventrículo esquerdo pequeno. **Hipóteses:** tromboembolismo pulmonar com comprometimento hemodinâmico, entre outras causas de sobrecarga de VD. Dilatação do VD, isoladamente, não prova TEP e pode coexistir com hipertensão pulmonar prévia.
+
+**Interpretação:** obstrução vascular pulmonar eleva pós-carga de VD, reduz fluxo pulmonar e enchimento esquerdo, piorando o débito sistêmico. A expansão volêmica volumosa e não monitorizada pode aumentar distensão direita e deslocamento septal, agravando falência circulatória. Angio-TC é útil se a estabilidade permitir; quando instável, combinar clínica, eco, exames direcionados, riscos e recursos disponíveis.
+
+**Conduta:** suporte de oxigenação e perfusão, equipe apropriada e definição rápida de anticoagulação e reperfusão conforme categoria de risco e contraindicações. A diretriz AHA/ACC 2026 incorpora estratificação e opções avançadas em pacientes com falência circulatória; cirurgia recente aumenta risco de sangramento e pode modificar escolha entre trombólise sistêmica, intervenção por cateter ou embolectomia. **Por que importa:** diagnosticar o mecanismo obstrutivo e ponderar reperfusão evita tanto atrasar terapia quanto expor a sangramento evitável.
+
+### Caso 7 — Sepse abdominal que se transforma em choque misto
+
+**Apresentação:** homem de 69 anos com dor abdominal, febre, alteração do estado mental, lactato de 5,8 mmol/L e hipotensão. Depois de cristaloide inicial, antibióticos e vasopressor, a PAM se aproxima da meta, mas persistem oligúria e TEC prolongado. A ecocardiografia identifica disfunção sistólica do ventrículo esquerdo; a ultrassonografia pulmonar mostra linhas B difusas e há suspeita de coleção intra-abdominal.
+
+**Hipótese:** choque séptico com possível cardiomiopatia associada e acúmulo de fluido, além de foco não controlado. **Exames:** culturas, reavaliação de lactato, eletrólitos, função renal, imagem abdominal pertinente ao estado clínico, ecocardiografia com estimativa seriada de fluxo e congestão. **Interpretação:** se o débito está baixo e a perfusão continua ruim apesar de pressão e estado volêmico adequados, um inotrópico pode ser considerado; se há foco drenável, nenhum aumento de noradrenalina resolve sozinho a infecção. O lactato pode permanecer elevado por causas adicionais além do fluxo.
+
+**Conduta:** revisar foco e viabilidade de drenagem/cirurgia, adaptar antibiótico à epidemiologia e resposta, manter PAM individualizada e considerar vasopressina com doses ascendentes de noradrenalina conforme SSC 2026. Evitar mais fluidos sem benefício hemodinâmico demonstrável se há congestão. **Por que importa:** choque real frequentemente reúne alterações de resistência, bomba, permeabilidade e fonte infecciosa.
+
+### Caso 8 — Lesão cervical com hipotensão e bradicardia: hipótese não é exclusão
+
+**Apresentação:** homem de 32 anos após mergulho em água rasa, com déficit motor nos quatro membros, dor cervical, PA 79/43 mmHg, FC 48 bpm e pele relativamente quente. Não há sangramento externo visível. **Hipóteses:** choque neurogênico por lesão medular alta e/ou outra causa de choque no trauma. Hemorragia interna não é descartada pela bradicardia.
+
+**Investigação:** xABCDE, avaliação de pulmões, abdome e pelve, restrição apropriada do movimento cervical, glicemia, perfusão e exame neurológico seriado. Imagem da coluna é importante após estabilização. **Interpretação:** choque neurogênico é vasodilatação por perda de tônus simpático, frequentemente acompanhada de bradicardia relativa. Choque medular, por outro lado, designa perda transitória de reflexos abaixo do nível da lesão — são conceitos diferentes, que podem coexistir.
+
+**Conduta:** manter ventilação, oxigenação e perfusão, investigar e tratar hemorragia ou obstrução torácica concomitante, oferecer suporte hemodinâmico segundo avaliação especializada e evitar lesão medular secundária. **Por que importa:** um achado clássico não elimina uma segunda ameaça potencialmente fatal.
+
 ## 18. Questões originais — primeira bateria didática
 
 **Q1.** Qual achado exclui choque em paciente com sinais de hipoperfusão? A) PAS 120 mmHg; B) FC 115 bpm; C) lactato normal; D) nenhum isoladamente. **Gabarito D.** A é incorreta porque a hipotensão não é obrigatória; B é inespecífica; C tampouco afasta hipoperfusão; D corresponde ao raciocínio integrado. **Revisão:** perfusão é fenômeno clínico e dinâmico.
