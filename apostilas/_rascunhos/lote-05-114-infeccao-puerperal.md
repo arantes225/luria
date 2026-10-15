@@ -276,7 +276,7 @@ A função renal pós-parto pode estar alterada por HPP, pré-eclâmpsia, sepse 
 
 A **OMS 2021** atualizou a orientação de profilaxia antibiótica de cesariana, recomendando dose única de primeira geração de cefalosporina ou penicilina conforme protocolo/hipersensibilidade e administração **30–60 minutos antes da incisão de pele**, em vez de esperar clampeamento do cordão. Em pacientes com obesidade importante, procedimento prolongado ou grande sangramento, protocolos podem incluir ajuste de dose/redose conforme farmacocinética e instituição; não traduzir isso como “dar duas doses iguais em toda cesárea”.
 
-**Prevenção completa:** higiene de mãos, técnica estéril, preparo adequado da pele e, quando indicado, antissepsia vaginal antes de cesariana segundo atualização OMS, controle de glicemia e temperatura quando pertinente, técnica cirúrgica e cuidados de ferida após alta. **Aantissepsia é estratégia de prevenção**, não tratamento de infecção estabelecida no leito placentário.
+**Prevenção completa:** higiene de mãos, técnica estéril, preparo adequado da pele e, quando indicado, antissepsia vaginal antes de cesariana segundo atualização OMS, controle de glicemia e temperatura quando pertinente, técnica cirúrgica e cuidados de ferida após alta. **A antissepsia é estratégia de prevenção**, não tratamento de infecção estabelecida no leito placentário.
 
 ### 15.1. Antissepsia e barreiras locais
 
