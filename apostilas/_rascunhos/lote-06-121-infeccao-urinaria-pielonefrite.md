@@ -613,3 +613,169 @@ A regra integradora é: **tratar doença, atingir o foco, controlar a fonte e re
 **Conduta:** **encaminhamento imediato à pediatria hospitalar**, culturas e investigação proporcionais, antibiótico parenteral se indicado por idade e gravidade; decisão de internação e esquema dependem da avaliação especializada. Não aplicar ao lactente os cursos adultos de cistite.
 
 **Por que importa:** pediatria modifica completamente método de coleta, limiar de gravidade, necessidade de internação e segurança farmacológica.
+
+
+## 28. Doze questões autorais comentadas
+
+### Questão 1 — Cistite localizada e exame laboratorial
+
+Mulher de 25 anos apresenta disúria, polaciúria e urgência há dois dias, sem corrimento vaginal, gestação, febre ou dor lombar. Não há recorrência ou fatores complicadores. Qual a melhor interpretação?
+
+A) Cultura urinária positiva é obrigatória antes de qualquer diagnóstico, independentemente da clínica.  
+B) O quadro é compatível com cistite não complicada; o diagnóstico pode ser predominantemente clínico, considerando antimicrobiano vesical adequado e orientações de retorno.  
+C) Deve receber meropenem empírico porque E. coli pode ser resistente.  
+D) Nitrofurantoína nunca pode ser usada na cistite porque não atinge bem o parênquima renal.
+
+**Gabarito: B.** **A:** cultura não é universalmente obrigatória na primeira cistite clássica de mulher sem risco, conforme EAU 2026. **B:** sintomas localizados com ausência de queixas vaginais elevam probabilidade; oferecer fármaco apropriado com orientação de piora. **C:** carbapenêmico é excessivo na maioria dessas apresentações. **D:** justamente o contrário: a alta concentração urinária e baixa concentração tecidual tornam nitrofurantoína útil para a bexiga, **mas não para pielonefrite**. **Mini-revisão:** a clínica precede exames; gravidade e sítio ditam o tratamento.
+
+### Questão 2 — Pielonefrite e penetração no parênquima
+
+Mulher de 38 anos apresenta febre, calafrios, dor em flanco e vômitos. Urocultura foi colhida e há suspeita de pielonefrite. Qual antibiótico NÃO é adequado para tratar a infecção renal parenquimatosa?
+
+A) Ceftriaxona, em contexto apropriado de sensibilidade e tratamento parenteral.  
+B) Ciprofloxacino, em paciente selecionada quando suscetibilidade provável/confirmada e sem contraindicação.  
+C) Nitrofurantoína oral.  
+D) TMP-SMX, se susceptibilidade demonstrada e condições adequadas.
+
+**Gabarito: C.** **A:** ceftriaxona alcança tecido renal e pode ser opção parenteral em contextos apropriados. **B:** quinolona ativa pode alcançar parênquima, mas resistência local e efeitos adversos limitam. **C:** nitrofurantoína concentra-se na urina e não atinge níveis suficientes no rim. **D:** TMP-SMX é opção em isolado suscetível, com monitorização e regime apropriado. **Mini-revisão:** antibiograma urinário sozinho não substitui farmacocinética do agente.
+
+### Questão 3 — A urgência da pielonefrite obstrutiva
+
+Homem de 54 anos tem febre 39,5°C, PA 85/50 mmHg e dor em cólica no flanco; imagem mostra cálculo ureteral de 9 mm com hidronefrose. Qual conduta é decisiva além de suporte e antibiótico sistêmico precoce?
+
+A) Aguardar saída espontânea do cálculo em casa.  
+B) Prescrever apenas tamsulosina e analgésico até cessar febre.  
+C) Descompressão urgente do sistema coletor por cateter ureteral ou nefrostomia, com tratamento definitivo do cálculo após estabilização.  
+D) Realizar obrigatoriamente litotripsia definitiva enquanto o paciente está em choque, sem drenagem prévia.
+
+**Gabarito: C.** **A e B:** retardam controle de fonte infecciosa e favorecem deterioração. **C:** drenagem é essencial em obstrução infectada; escolha da via depende de anatomia e equipe. **D:** manipulação definitiva durante sepse pode aumentar bacteremia e risco, e o primeiro objetivo é descompressão. **Mini-revisão:** **febre + cálculo obstrutivo = urgência urológica**.
+
+### Questão 4 — Bacteriúria assintomática em idoso
+
+Mulher de 82 anos em instituição tem E. coli ≥10⁵ UFC/mL e piúria, porém não possui sintomas urinários nem sinais sistêmicos. Qual conduta?
+
+A) Antibiótico de amplo espectro por 14 dias para esterilizar a urina.  
+B) Tratar com fosfomicina semanal porque é idosa.  
+C) Não tratar bacteriúria assintomática apenas pelo exame; evitar novas culturas desnecessárias e observar evolução.  
+D) Internar para nefrectomia preventiva se piúria persistir.
+
+**Gabarito: C.** **A:** não há benefício comprovado rotineiro; aumenta resistência e eventos adversos. **B:** profilaxia indiscriminada não é indicada. **C:** BAS em idosos sem infecção clínica geralmente não deve ser rastreada/tratada. **D:** ausência de sintomas não implica necessidade de cirurgia. **Mini-revisão:** “bactéria + leucócito na urina” não significa necessariamente ITU sintomática.
+
+### Questão 5 — Exceção clássica da BAS na gravidez
+
+Gestante de 12 semanas assintomática apresenta urocultura de jato médio com E. coli 10⁵ UFC/mL e antibiograma. Qual abordagem é mais adequada?
+
+A) Nunca tratar bacteriúria assintomática porque ausência de disúria exclui complicações obstétricas.  
+B) Tratar bacteriúria assintomática significativa com antibiótico seguro, suscetível e duração apropriada, e acompanhar segundo pré-natal.  
+C) Iniciar quinolona indiscriminadamente por ser sempre a opção mais segura na gravidez.  
+D) Esperar febre e dor em flanco para considerar tratamento.
+
+**Gabarito: B.** **A e D:** a gestação é exceção com benefício de rastreamento e tratamento de BAS significativa. **B:** ACOG 2023 orienta cerca de cinco a sete dias de terapia direcionada para BAS. **C:** a escolha deve observar segurança gestacional, susceptibilidade e alternativas, sem extrapolar. **Mini-revisão:** gestação e procedimentos endourológicos traumáticos são exceções de alto rendimento à regra de não tratar BAS.
+
+### Questão 6 — Nitrofurantoína e fosfomicina na gestante febril
+
+Gestante de 24 semanas é internada com febre de 39°C, vômitos, dor no flanco e urocultura pendente. Qual conduta é mais adequada?
+
+A) Fosfomicina trometamol 3 g oral dose única e alta, pois funciona em cistite.  
+B) Nitrofurantoína oral por cinco dias sem monitorização porque a gravidez reduz gravidade.  
+C) Manejo inicial hospitalar, antibiótico parenteral com penetração renal, coleta de culturas e completar curso obstétrico apropriado após melhora.  
+D) Nenhum antibiótico até urocultura ficar pronta.
+
+**Gabarito: C.** **A e B:** medicações urinárias para infecção localizada não alcançam adequadamente parênquima renal; o risco obstétrico é relevante. **C:** ACOG 2023 recomenda manejo inicial no hospital e 14 dias totais na pielonefrite gravídica, com transição de via conforme evolução. **D:** esperar cultura em infecção sistêmica pode ser danoso. **Mini-revisão:** tratamento da pielonefrite gravídica não segue automaticamente o curso curto de cUTI da IDSA para adultos selecionados.
+
+### Questão 7 — Cistite por ESBL e antibioticoterapia
+
+Mulher não gestante de 31 anos, sem febre, dor no flanco nem anormalidade urológica, tem cistite sintomática por E. coli ESBL, suscetível a nitrofurantoína e TMP-SMX. Qual escolha é mais coerente com IDSA 2024?
+
+A) Usar meropenem sempre que o laudo disser ESBL, independentemente de sítio.  
+B) Preferir opção urinária ativa como nitrofurantoína ou TMP-SMX, respeitando condições clínicas e contraindicações.  
+C) Não tratar qualquer cistite por ESBL, mesmo com sintomas.  
+D) Considerar ciprofloxacino obrigatoriamente superior a qualquer outra opção se houver susceptibilidade.
+
+**Gabarito: B.** **A:** carbapenêmico pode ser poupado em cistite simples com alternativas suscetíveis. **B:** IDSA AMR 2024 prefere nitrofurantoína ou TMP-SMX nessa situação. **C:** há infecção sintomática que demanda tratamento adequado. **D:** quinolonas podem ser alternativas, mas têm maior impacto ecológico/toxicidades quando opções mais estreitas são úteis. **Mini-revisão:** ESBL não equivale a “carbapenêmico para todos”.
+
+### Questão 8 — Terapia curta de ITU complicada com boa resposta
+
+Paciente não gestante com pielonefrite e bacteremia por E. coli suscetível recebe terapia eficaz, melhora rapidamente e não possui obstrução, abscesso ou prostatite. Qual afirmação está alinhada à IDSA 2025?
+
+A) Bacteremia por Gram-negativo impõe 21 dias em todos, mesmo quando foco controlado.  
+B) Em paciente selecionado e com boa resposta, um curso de aproximadamente 7 dias de terapia efetiva pode ser suficiente, com exceções individualizadas.  
+C) A primeira dose de antibiótico comprovadamente ineficaz deve contar obrigatoriamente como um dia válido.  
+D) Deves-se usar nitrofurantoína para completar terapia de infecção renal bacterêmica.
+
+**Gabarito: B.** **A:** duração longa automática não encontra apoio na diretriz para todos os quadros responsivos. **B:** IDSA 2025 apoia cursos mais curtos em cUTI, inclusive bacteremia Gram-negativa, em populações elegíveis. **C:** contagem a partir da terapia efetiva. **D:** nitrofurantoína não tem nível renal/sistêmico adequado. **Mini-revisão:** duração depende de sítio, agente, resposta, controle da fonte e contexto de evidência.
+
+### Questão 9 — Fita urinária com nitrito negativo
+
+Homem de 70 anos apresenta febre, disúria e dor em flanco. A fita de urina aponta nitrito negativo. Qual interpretação é correta?
+
+A) Nitrito negativo exclui todas as ITUs bacterianas.  
+B) A urina não pode ser enviada para cultura se nitrito for negativo.  
+C) Nitrito negativo não exclui ITU, pois alguns patógenos não o produzem e o tempo de permanência urinária pode ser insuficiente.  
+D) Nitrito negativo confirma que a febre é necessariamente viral.
+
+**Gabarito: C.** **A:** sensibilidade da fita é limitada. **B:** cultura segue indicação clínica, independentemente de nitrito. **C:** produção de nitrito depende de patógeno e condições de coleta/armazenamento. **D:** resultado não define etiologia viral. **Mini-revisão:** exame complementar muda probabilidade, não substitui síndrome clínica.
+
+### Questão 10 — Cultura positiva em portador de sonda
+
+Homem com sonda vesical permanente há três meses está afebril, sem novos sinais sistêmicos ou urinários, mas tem piúria, urina turva e cultura com duas espécies. Qual premissa é correta?
+
+A) Piúria e urina turva isoladamente definem CAUTI e exigem antibiótico em todos os casos.  
+B) Biofilme e colonização são frequentes; a decisão de tratar depende de síndrome clínica, e amostra não deve ser colhida da bolsa coletora.  
+C) O sistema deve permanecer indefinidamente com cateter antigo mesmo que não exista indicação.  
+D) Todo crescimento de Candida exige anfotericina intravenosa.
+
+**Gabarito: B.** **A:** bacteriúria/pires sem sintomas não comprova CAUTI. **B:** evitar antibiótico por colonização; revisar necessidade de sonda e técnica de coleta. **C:** remoção precoce de cateter desnecessário previne infecção. **D:** candidúria muitas vezes é colonização. **Mini-revisão:** cateter é fator de risco, mas seu biofilme não equivale automaticamente a infecção.
+
+### Questão 11 — Criança muito pequena e urina de saco coletor
+
+Lactente de seis semanas com febre sem foco tem cultura positiva de saco coletor adesivo. Qual conduta inicial é mais segura?
+
+A) Confirmar ITU definitiva pela cultura de saco e dar alta com esquema adulto.  
+B) Desconsiderar risco de infecção invasiva porque não há disúria.  
+C) Encaminhar imediatamente à avaliação pediátrica, colher urina por técnica diagnóstica apropriada, avaliar gravidade e indicar antibiótico conforme protocolos da idade.  
+D) Aguardar 72 horas sem exame e sem avaliação hospitalar.
+
+**Gabarito: C.** **A:** saco coletor contamina com facilidade e doses adultas são inadequadas. **B:** lactentes podem não apresentar sintomas localizatórios. **C:** NICE NG224 orienta avaliação pediátrica imediata quando <3 meses e suspeita de ITU, com cultura adequada. **D:** pode atrasar tratamento de infecção invasiva. **Mini-revisão:** pediatria muda coleta, investigação e necessidade de suporte.
+
+### Questão 12 — Falha de antibiótico e febre persistente
+
+Paciente com pielonefrite hospitalizada mantém febre e dor em flanco após 72 horas de terapia aparentemente ativa; creatinina aumenta e há história de litíase. Qual próximo passo é prioritário?
+
+A) Aumentar duração do mesmo antimicrobiano para 30 dias sem reavaliar.  
+B) Investigar obstrução, abscesso ou foco não controlado por imagem e reavaliar cultura, resistência e estado clínico.  
+C) Trocar para nitrofurantoína oral por ser mais concentrada na urina.  
+D) Descartar complicação porque a febre pode persistir após primeira dose.
+
+**Gabarito: B.** **A:** prolongar sem investigar não corrige obstrução. **B:** piora renal e litíase sugerem complicação que requer controle de fonte e, se necessário, drenagem. **C:** penetração renal insuficiente. **D:** persistência com piora clínica não é evolução tranquilizadora. **Mini-revisão:** 48–72 horas são referência de reavaliação, mas sinais graves indicam imagem e ação **imediatas**, sem esperar prazo fixo.
+
+## 29. Referências médicas prioritárias e aplicação brasileira
+
+1. **European Association of Urology (EAU).** *Guidelines on Urological Infections*, atualização 2026. Cistite, pielonefrite, infecções sistêmicas, bacteriúria assintomática, CAUTI e infecções fúngicas. https://uroweb.org/guidelines/urological-infections/chapter/the-guideline ; https://uroweb.org/guidelines/urological-infections/summary-of-changes/2026 .
+2. **Infectious Diseases Society of America (IDSA).** *2025 Guideline on Management and Treatment of Complicated Urinary Tract Infections*: seleção antibiótica empírica estratificada por gravidade, risco de resistência, fatores individuais e antibiograma. https://www.idsociety.org/~/link/bc125f1fa47a47b7913b884cd368e8a0.aspx .
+3. **IDSA.** *Clinical Practice Guidelines: 2025 Management and Treatment of Complicated Urinary Tract Infections — Duration of Antibiotics*, *Clinical Infectious Diseases*, publicado em edição recente da revista. https://academic.oup.com/cid/article/82/Supplement_3/i79/8384478 .
+4. **IDSA.** *Guidance on Treatment of Antimicrobial-Resistant Gram-Negative Infections*, 2024. ESBL, AmpC, carbapenemases e Pseudomonas resistente. https://doi.org/10.1093/cid/ciae403 .
+5. **IDSA.** *Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria*, 2019. Exceções e condutas para adultos, idosos, gestantes, cateterizados e procedimentos urológicos. https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/ .
+6. **American College of Obstetricians and Gynecologists (ACOG).** *Urinary Tract Infections in Pregnant Individuals*, Clinical Consensus nº 4, 2023. Bacteriúria assintomática, cistite e pielonefrite gravídica. https://www.acog.org/clinical/clinical-guidance/clinical-consensus/articles/2023/08/urinary-tract-infections-in-pregnant-individuals .
+7. **NICE.** *Urinary tract infection in under 16s: diagnosis and management*, NG224, publicado em 2022, página operacional com atualizações. https://www.nice.org.uk/guidance/ng224/chapter/Recommendations .
+8. **Ministério da Saúde do Brasil.** Materiais de atenção pré-natal e cuidados da gestante; a aplicação local de rastreamento e seguimento deve observar protocolos atuais da APS/SUS e serviço obstétrico. **Não foi confirmada nesta etapa a existência de PCDT nacional único específico para ITU no adulto**, portanto não atribuir as durações da EAU/IDSA a norma brasileira inexistente.
+9. **Ministério da Saúde do Brasil.** Diretrizes de segurança do paciente, vigilância de IRAS e protocolos institucionais de sondagem vesical/controle de infecção, a consultar na instituição e em documentos vigentes da Anvisa. Não presumir que protocolos de cateter locais sejam iguais em todas as redes.
+
+**Adaptação ao Brasil:** verificar disponibilidade do agente, registro e formulação, perfil de resistência microbiológica regional, capacidade de cultura e retorno, acesso a US/TC e urologia, protocolo da CCIH, gravidez/etapa gestacional e risco de efeitos adversos. Antibióticos avançados mencionados neste capítulo não são indicação empírica universal.
+
+## 30. Controle editorial e checklist de validação
+
+- [x] Auditoria inicial de existência e materiais comparativos no Drive, sem cópia de conteúdo.
+- [x] Conteúdo do zero ao avançado: síndromes, microbiologia, clínica, exames, imagens, tratamento, resistência, fonte infecciosa e populações especiais.
+- [x] Principais distinções entre cistite localizada, pielonefrite e bacteriúria assintomática.
+- [x] Cobertura explícita de obstrução urinária infectada e drenagem urgente.
+- [x] Esquemas adultos **exemplificativos** com limitação por gestação, função renal, resistência e penetração.
+- [x] Oito casos completos comentados.
+- [x] Doze questões de múltipla escolha com análise de alternativas.
+- [ ] Revisão médica especializada de farmacologia, função renal, interações, contraindicações e tratamento de gestantes.
+- [ ] Certificar que a contagem instrucional reflete conteúdo útil e não repetição semântica.
+- [ ] Matriz de autossuficiência por questão e verificação de alinhamento de cada alternativa ao corpo didático.
+- [ ] Curadoria de imagens candidatas reais/didáticas com licença e autoria verificadas; fila Admin.
+- [ ] Preparar JSON do gerador e HTML de prévia, executar validadores oficiais e testar desktop/PWA.
+- [ ] Benchmark extenso do tema com autoria institucional confirmada não localizado na etapa inicial.
+- [ ] **RASCUNHO EM BRANCH EDITORIAL, NÃO PUBLICAR, NÃO EXECUTAR MERGE/DEPLOY.**
