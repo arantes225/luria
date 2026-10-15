@@ -350,3 +350,344 @@ Cirurgia histeroscópica, curetagem ou manipulação endometrial podem favorecer
 
 Miomectomia não elimina possibilidade de novos nódulos; pólipos podem recorrer; adenomiose pode persistir após tratamentos preservadores. O seguimento deve registrar melhora clínica, anemia, objetivos reprodutivos, resultado histológico e necessidade de novo procedimento. Ressonância/ultrassom seriados para toda pessoa assintomática não são necessariamente custo-efetivos; agenda de imagem deve considerar indicação concreta.
 
+
+## 14. Casos clínicos comentados — localização e objetivos mudam a resposta
+
+### Caso 1 — Mioma pequeno, sangramento importante
+
+Paciente de 31 anos, G0, com desejo de gravidez nos próximos meses, relata oito meses de menstruações intensas com coágulos, cansaço e ferritina reduzida. Ultrassom mostra nódulo de 2,4 cm projetado completamente na cavidade, pediculado, classificado como FIGO 0, e útero sem outros nódulos significativos. Está estável, β-hCG negativo, sem fatores atuais de risco para hiperplasia.
+
+**Diagnóstico provável:** SUA estrutural por mioma submucoso tipo 0, associado a deficiência de ferro. **Raciocínio:** é a localização, não o diâmetro modesto, que sustenta impacto no sangramento e possível implantação. A paciente deseja gestar, de modo que tratamento definitivo que retire útero ou suprime ovulação por período prolongado não é primeira opção lógica.
+
+**Investigação:** hemograma, ferritina e mapeamento cavitário por imagem/histeroscopia conforme serviço; investigar fatores adicionais se sintomas discrepantes. **Conduta:** reposição de ferro, estratégia de controle de sangramento até abordagem planejada e discussão de miomectomia histeroscópica com documentação de riscos e benefício esperado. A peça deve ser enviada para análise anatomopatológica conforme rotina.
+
+**Por que importa:** questão de prova costuma opor mioma intracavitário pequeno a mioma subseroso grande; localização é decisiva.
+
+### Caso 2 — Mioma volumoso, mas assintomático
+
+Pessoa de 38 anos, sem queixa de fluxo, dor, compressão ou fertilidade atual, descobre nódulo subseroso FIGO 6 de 6 cm em ultrassom solicitado por outra razão. Hemoglobina normal, exame físico sem achados de urgência, sem características radiológicas suspeitas.
+
+**Hipótese:** leiomioma provavelmente benigno incidental. **Raciocínio:** imagem identifica uma alteração anatômica, mas não demonstra dano clínico. A cirurgia pode trazer sangramento, aderências e consequências reprodutivas sem benefício previsível no momento.
+
+**Conduta:** decisão compartilhada sobre observação clínica, aconselhamento de sinais de alarme, documentação de tamanho/posição e reavaliação se houver sintomas ou mudança de planejamento reprodutivo. Um protocolo de ultrassom serial deve ser justificado por contexto, não aplicado automaticamente a todos.
+
+**Por que importa:** medicina baseada em risco não é sinônimo de operar toda massa.
+
+### Caso 3 — Pólipo e sangramento pós-menopausa
+
+Mulher de 59 anos, menopausa há oito anos, apresenta três episódios de sangramento vaginal nos últimos dois meses. US identifica formação focal endometrial de aproximadamente 1,5 cm, interpretada como possível pólipo. Há obesidade e hipertensão. Não há instabilidade.
+
+**Hipóteses:** pólipo endometrial com necessidade de histologia; hiperplasia atípica/câncer de endométrio a excluir. **Diferencial adicional:** causas cervicais, vaginais e iatrogênicas.
+
+**Raciocínio:** o aspecto de pólipo não permite declarar benignidade, sobretudo com sangramento pós-menopausa e fatores metabólicos. Espessura endometrial e visualização de lesão focal ajudam a escolher exame, mas histologia é central nas circunstâncias indicadas.
+
+**Conduta:** investigação endometrial por rota apropriada, frequentemente histeroscopia com biópsia dirigida/polipectomia e anatomopatológico, em articulação com protocolo local. Seguimento depende do resultado histológico e da resolução do sangramento.
+
+**Por que importa:** toda alternativa que ignora avaliação de malignidade por existir “pólipo benigno” aparente é insegura.
+
+### Caso 4 — Útero globoso, dismenorreia e menorragia
+
+Mulher de 43 anos relata cólicas menstruais progressivas, dor pélvica e fluxo aumentado. Exame demonstra útero globoso e sensível. Ultrassom transvaginal descreve miométrio heterogêneo com cistos pequenos, sombra em leque e zona juncional irregular, sem nódulos definidos que deformem cavidade.
+
+**Hipótese:** adenomiose. **Diferenciais:** leiomiomas, endometriose coexistente, alteração endometrial, disfunção ovulatória.
+
+**Raciocínio:** doença difusa miometrial explica quadro melhor que um mioma inexistente; endometriose deve ser lembrada se dispareunia profunda, sintomas intestinais cíclicos ou infertilidade.
+
+**Conduta:** tratar dor e sangramento conforme elegibilidade e preferências, considerando SIU-LNG se cavidade adequada, contracepção/progestágeno ou outras opções; revisar anemia e discutir procedimentos se refratária. Se houver desejo de gestar, evitar definir histerectomia como conduta padrão.
+
+**Por que importa:** adenomiose ≠ hiperplasia endometrial; diagnóstico localiza-se no miométrio.
+
+### Caso 5 — Infertilidade, miomas variados e risco de cirurgia desnecessária
+
+Casal com 18 meses de tentativa de gestação. Mulher de 35 anos com ovulação aparentemente regular. US mostra mioma subseroso FIGO 7 de 4 cm e mioma intramural FIGO 4 de 1,8 cm, nenhum distorcendo endométrio. Sem SUA significativo. Parceiro nunca realizou espermograma.
+
+**Hipótese clínica:** infertilidade ainda não investigada integralmente, não necessariamente causada por miomas. **Raciocínio:** atribuir infertilidade a miomas sem cavidade comprometida desvia o foco de fatores masculino, tubário, ovulatório e idade.
+
+**Conduta:** investigação reprodutiva ampla com exames indicados, discutir papel limitado de miomectomia dos nódulos descritos e riscos de cicatriz/aderências; cirurgia não é escolha automática. Recomendar planejamento de prazo reprodutivo de acordo com idade e recursos.
+
+**Por que importa:** associação anatômica não significa causalidade.
+
+### Caso 6 — Anemia profunda e fluxo intenso
+
+Mulher de 46 anos apresenta sangramento prolongado com episódios de saturação rápida de absorventes, tontura e dispneia aos esforços. PA inicialmente 98/62, FC 118, mucosas pálidas, hemoglobina 6,9 g/dL. US anterior com múltiplos leiomiomas; nenhum exame atual de gestação foi feito.
+
+**Problema prioritário:** sangramento uterino anormal grave com anemia sintomática e possível repercussão circulatória. **Raciocínio:** classificação FIGO detalhada é importante no tratamento de longo prazo, porém não vem antes de estabilização, exclusão de gestação e avaliação de necessidade de hemoterapia.
+
+**Conduta:** atendimento monitorizado, ABCDE, β-hCG, acesso venoso, tipagem/prova cruzada conforme necessidade, controlar sangramento com estratégia indicada após avaliar contraindicações; reposição de ferro e plano etiológico definitivo. A decisão sobre transfusão deve levar em conta sintomas, perfusão, tendência hemorrágica e protocolos, não apenas um número isolado.
+
+**Por que importa:** em hemorragia aguda, a prioridade é recuperar segurança antes de classificar detalhadamente nódulos.
+
+### Caso 7 — Suspeita de mioma pediculado torcido
+
+Paciente de 33 anos com mioma subseroso pediculado conhecido procura emergência por dor abdominal súbita, náusea e defesa localizada. Teste de gravidez negativo. Ultrassom revela massa sólida ligada por pedículo à superfície uterina; não há certeza sobre perfusão, e a dor permanece intensa.
+
+**Hipóteses:** torção de mioma subseroso pediculado; torção anexial, apendicite, degeneração miomatosa ou outra causa de abdome agudo. **Raciocínio:** apesar da raridade, a torção do pedículo causa comprometimento vascular e pode exigir cirurgia. O diagnóstico não é feito apenas por “mioma existente”.
+
+**Conduta:** analgesia, jejum conforme preparo, avaliação cirúrgica/ginecológica, imagem adicional somente se não atrasar intervenção diante de alto risco, documentação de diagnóstico diferencial. Preservação uterina pode ser objetivo se técnica segura.
+
+**Por que importa:** um diagnóstico benigno crônico pode apresentar complicação aguda tempo-dependente.
+
+### Caso 8 — Tamoxifeno, pólipo e irregularidade endometrial
+
+Mulher de 52 anos em uso de tamoxifeno há vários anos relata spotting novo. Ultrassom indica espessamento endometrial irregular com possível formação polipoide. Não há dor ou instabilidade.
+
+**Hipóteses:** pólipo endometrial, hiperplasia ou neoplasia; alterações endometriais associadas a tamoxifeno podem dificultar interpretação ultrassonográfica. **Raciocínio:** histórico medicamentoso e sintoma modificam limiar de investigação; não basta atribuir sangramento a efeito benigno de medicação.
+
+**Conduta:** avaliação ginecológica e amostragem/visão direta conforme protocolo e risco, considerando histeroscopia com histologia; conversar com equipe que acompanha tratamento oncológico sobre qualquer alteração medicamentosa, sem suspensão autônoma.
+
+**Por que importa:** risco endometrial depende de contexto, não de valor isolado de espessura.
+
+## 15. Questões autorais de residência — cinco alternativas comentadas
+
+### Questão 1 — FIGO e cavidade
+
+Qual nódulo uterino tem maior probabilidade de comprometer diretamente o padrão menstrual e ser acessível à ressecção histeroscópica?
+
+A) FIGO 0, pediculado intracavitário.  
+B) FIGO 6, subseroso predominantemente externo.  
+C) FIGO 7, subseroso pediculado.  
+D) FIGO 8, cervical profundo sem relação cavitária.  
+E) Mioma intraligamentar distante do endométrio.
+
+**Gabarito: A.** Mioma intracavitário é causa estrutural plausível de SUA e alvo habitual de histeroscopia. **B errada:** subseroso pode ser compressivo, mas não se projeta na cavidade. **C errada:** pedículo subseroso não é acessado diretamente por histeroscopia cavitária. **D errada:** localização cervical profunda requer planejamento diferente. **E errada:** ausência de contato endometrial torna relação com SUA menos direta.
+
+**Revisão:** classe FIGO descreve anatomia, que afeta sintomas e técnica.
+
+### Questão 2 — Mioma FIGO 3
+
+Um nódulo intramural inteiramente coberto por miométrio no contorno externo, mas em contato com endométrio sem projeção para cavidade, é FIGO:
+
+A) 0.  
+B) 1.  
+C) 2.  
+D) 3.  
+E) 7.
+
+**Gabarito: D.** FIGO 3 caracteriza nódulo intramural que toca endométrio, sem porção intracavitária. **A errada:** pediculado intracavitário. **B errada:** submucoso com menos de metade intramural. **C errada:** submucoso com ao menos metade intramural. **E errada:** subseroso pediculado.
+
+**Revisão:** laudos imprecisos “intramural” perdem informação clínica importante.
+
+### Questão 3 — Mioma incidental
+
+Paciente sem sintomas ou objetivos reprodutivos imediatos tem mioma subseroso de 5 cm com imagem típica, sem compressão ou anemia. A melhor conduta geral é:
+
+A) Histerectomia obrigatória pelo tamanho.  
+B) Quimioterapia preventiva.  
+C) Observação clínica e decisão compartilhada, com retorno por sintomas/risco.  
+D) Curetagem uterina em caráter de urgência.  
+E) Embolização em toda pessoa com nódulo maior que 3 cm.
+
+**Gabarito: C.** Tratamento considera dano clínico, localização e preferências; não apenas dimensão. **A errada:** remove útero sem indicação obrigatória. **B errada:** leiomioma não recebe quimioterapia citotóxica de rotina. **D errada:** procedimento endometrial não trata nódulo subseroso. **E errada:** tamanho isolado não estabelece EAU.
+
+**Revisão:** “assintomático” deve ser confirmado por anamnese de fluxo, anemia e compressão.
+
+### Questão 4 — Pólipo pós-menopausa
+
+Mulher de 60 anos com sangramento pós-menopausa e pólipo endometrial provável no US deve:
+
+A) Ser tranquilizada sem investigação, pois todo pólipo é benigno.  
+B) Receber apenas AINE por seis meses.  
+C) Realizar avaliação endometrial apropriada, com histologia quando indicada.  
+D) Usar anticoncepcional combinado como primeira decisão.  
+E) Fazer investigação somente se pólipo exceder 10 cm.
+
+**Gabarito: C.** Sangramento pós-menopausa exige considerar neoplasia/hiperplasia e lesões focais. **A errada:** aparência não confirma histologia. **B errada:** alivia sintomas em outros contextos, não exclui câncer. **D errada:** não é conduta inicial de segurança. **E errada:** limiar arbitrário e perigoso.
+
+**Revisão:** sintomas e fatores de risco mudam o limiar de amostragem.
+
+### Questão 5 — Adenomiose
+
+Qual combinação favorece adenomiose?
+
+A) Útero globoso doloroso, dismenorreia progressiva e alterações difusas miometriais.  
+B) Cisto ovariano simples isolado sem sintomas.  
+C) Massa sólida retroperitoneal sem relação uterina.  
+D) Anovulação isolada confirmada por teste de ovulação.  
+E) Febre e secreção purulenta com abscesso tubo-ovariano.
+
+**Gabarito: A.** A doença é miometrial, com dor/fluxo e alterações difusas ou focais. **B errada:** patologia anexial. **C errada:** não típica do miométrio. **D errada:** causa não estrutural de SUA, sem diagnóstico de adenomiose. **E errada:** infecção pélvica.
+
+**Revisão:** adenomiose e mioma podem coexistir, e ultrassom especializado ajuda na distinção.
+
+### Questão 6 — Sangramento intenso, paciente hipotensa
+
+Mulher com sangramento uterino muito intenso, taquicardia e hipotensão tem miomatose conhecida. Qual prioridade?
+
+A) Estadiamento histológico do mioma.  
+B) ABCDE, ressuscitação, hemograma/tipagem e teste de gravidez conforme contexto.  
+C) Ressonância eletiva antes de avaliar pressão.  
+D) Histeroscopia diagnóstica ambulatorial naquele momento.  
+E) Alta com ferro sem avaliação da perfusão.
+
+**Gabarito: B.** Primeiro estabilizar e identificar hemorragia aguda; depois discutir anatomia definitiva. **A errada:** leiomioma não é estadiado como câncer. **C errada:** imagem eletiva não deve atrasar suporte. **D errada:** inadequada na instabilidade. **E errada:** não trata risco imediato.
+
+**Revisão:** gravidade hemodinâmica prevalece sobre diagnóstico estrutural sofisticado.
+
+### Questão 7 — Fertilidade
+
+Qual afirmação sobre miomas e infertilidade é mais adequada?
+
+A) Todo mioma subseroso pequeno exige miomectomia antes da concepção.  
+B) Miomas intracavitários podem prejudicar ambiente reprodutivo; decisão cirúrgica considera outras causas e riscos.  
+C) Nenhum mioma pode afetar implantação.  
+D) Miomectomia sempre melhora nascidos vivos independentemente da localização.  
+E) Avaliar fator masculino é desnecessário se há mioma em qualquer lugar.
+
+**Gabarito: B.** Lesões distorcendo cavidade podem ser relevantes, mas avaliação reprodutiva deve ser completa. **A errada:** supertratamento. **C errada:** ignora efeito de miomas submucosos. **D errada:** evidência depende de localização/contexto. **E errada:** infertilidade é questão do casal quando aplicável.
+
+**Revisão:** o diagnóstico anatômico deve ser conectado ao mecanismo que justificaria a intervenção.
+
+### Questão 8 — Investigação de lesão intracavitária
+
+Paciente com sangramento intermenstrual persistente e suspeita de pólipo. Qual método é particularmente útil para visualização direta e possível biópsia/reseção?
+
+A) Histeroscopia.  
+B) Radiografia de tórax.  
+C) EEG.  
+D) Doppler carotídeo.  
+E) Exame parasitológico de fezes.
+
+**Gabarito: A.** Histeroscopia avalia cavidade e permite intervenção dirigida. **B errada:** sem utilidade para pólipo. **C errada:** exame neurológico. **D errada:** avalia vasos cervicais. **E errada:** não identifica lesão endometrial.
+
+**Revisão:** US, histerossonografia e histeroscopia têm perguntas e vantagens diferentes.
+
+### Questão 9 — SIU-LNG e anatomia
+
+Em qual cenário o SIU com levonorgestrel pode ter maior limitação mecânica como controle de SUA?
+
+A) Útero de cavidade normal com dismenorreia e sem contraindicações.  
+B) Mioma submucoso volumoso distorcendo intensamente a cavidade.  
+C) Leiomioma subseroso pequeno afastado do endométrio.  
+D) Sangramento menstrual intenso sem causa estrutural evidente, em pessoa elegível.  
+E) Suspeita de adenomiose sem deformidade cavitária.
+
+**Gabarito: B.** Distorção cavitária dificulta posicionamento, retenção e efeito uniforme. **A errada:** não representa limitação típica. **C errada:** contato com cavidade ausente. **D errada:** pode ser opção eficiente. **E errada:** frequentemente pode aliviar sintomas.
+
+**Revisão:** não confundir “ter mioma” com “cavidade incompatível”.
+
+### Questão 10 — Sarcoma versus mioma
+
+Qual frase está correta?
+
+A) Crescimento rápido isolado confirma leiomiossarcoma.  
+B) CA-125 normal exclui câncer uterino.  
+C) A maioria dos leiomiossarcomas não é entendida como transformação previsível de mioma típico; suspeitas exigem avaliação especializada.  
+D) Toda massa pós-menopausa é leiomioma inofensivo.  
+E) Biópsia endometrial negativa elimina sarcoma miometrial com certeza.
+
+**Gabarito: C.** O risco deve ser estratificado por contexto e imagem, com limitações conhecidas. **A errada:** crescimento não é específico. **B errada:** CA-125 não é teste confirmatório de mioma/sarcoma. **D errada:** menopausa modifica risco. **E errada:** amostragem da cavidade não avalia todo miométrio.
+
+**Revisão:** reconhecer incerteza evita tanto pânico quanto negligência.
+
+### Questão 11 — Embolização versus miomectomia
+
+Qual afirmação é mais apropriada em paciente com miomas sintomáticos que pretende gestar?
+
+A) Embolização e miomectomia são equivalentes em todos os desfechos reprodutivos.  
+B) Nenhum procedimento afeta reserva ovariana, cicatriz ou adesões.  
+C) A opção requer discussão reprodutiva especializada sobre riscos, benefícios e alternativas.  
+D) Histerectomia é primeira opção universal.  
+E) A localização FIGO é irrelevante à escolha.
+
+**Gabarito: C.** A escolha envolve evidência reprodutiva específica e anatomia. **A errada:** equivalência não demonstrada universalmente. **B errada:** procedimentos têm riscos distintos. **D errada:** elimina gestação uterina. **E errada:** localização informa via e benefício.
+
+**Revisão:** preservar útero não é o mesmo que preservar igualmente fertilidade em qualquer intervenção.
+
+### Questão 12 — Pólipo cervical versus endometrial
+
+Pessoa com sangramento pós-coital e lesão polipoide visível no colo. Melhor conduta conceitual:
+
+A) Presumir pólipo benigno e não avaliar o colo.  
+B) Avaliar morfologia e indicação de remoção/histologia, investigando doenças cervicais conforme risco e contexto.  
+C) Diagnosticá-la com leiomiossarcoma apenas pela aparência.  
+D) Tratar com medicação para cálculo ureteral.  
+E) Garantir que HPV/cervicite não coexistam.
+
+**Gabarito: B.** Pólipo endocervical pode sangrar, mas lesões do colo e IST precisam ser avaliadas quando indicadas. **A errada:** banaliza sangramento pós-coital. **C errada:** diagnóstico neoplásico requer evidências e histologia. **D errada:** etiologia não relacionada. **E errada:** condições coexistem.
+
+**Revisão:** localizar a origem da lesão (colo versus cavidade) orienta exame e seguimento.
+
+## 16. Pérolas e armadilhas ENAMED
+
+- **PALM-COEIN:** o “L” identifica leiomioma, não toda alteração miometrial; adenomiose é “A” e pólipo é “P”.
+- **FIGO 0–2:** nódulos submucosos com características diferentes de penetração; histeroscopia pode ser opção, porém complexidade muda com diâmetro e extensão.
+- **FIGO 3:** toca endométrio, sem massa intracavitária; não confundir com 2.
+- **FIGO 7:** mioma subseroso pediculado pode imitar massa anexial e, raramente, torcer.
+- **Histeroscopia:** examina cavidade, não substitui mapa de miomas subserosos/intramurais.
+- **Cisto uterino intramiometrial + útero globoso:** pensar em adenomiose, não apenas miomatose.
+- **Mioma achado incidental:** investigar se há relação causal com sintomas antes de oferecer cirurgia.
+- **Hemorragia aguda:** tratar perfusão e excluir gravidez antes de plano eletivo de nódulos.
+- **Sangramento pós-menopausa:** investigar neoplasia independentemente do rótulo “pólipo”.
+- **Tratamento:** escolha pela combinação sintomas + FIGO + anemia + fertilidade + preferências, e não por tamanho único.
+- **Terapia farmacológica:** muitas modalidades reduzem sangramento, mas não eliminam tecido miomatoso; recidiva após suspensão é possível.
+- **Miomectomia:** preserva útero, mas não impede novos miomas e pode gerar cicatriz/aderências.
+- **Histerectomia:** cura miomas do útero, mas tem consequência reprodutiva definitiva e não implica remoção automática dos ovários.
+- **Agentes de GnRH:** considerar hipoestrogenismo, osso e restrições regulatórias; nomes de fármacos estrangeiros não significam acesso pelo SUS.
+- **Morcelação:** risco residual de dispersar malignidade oculta deve entrar em consentimento e planejamento.
+
+## 17. Quadro final de revisão para prova e vida real
+
+| Questão clínica | Informação indispensável | Princípio de decisão |
+|---|---|---|
+| Sangra muito | estabilidade, gravidez, anemia, risco endometrial | estabilizar, investigar etiologia, corrigir ferro |
+| Dor e dismenorreia | cronologia, útero globoso ou nodular, imagem | distinguir adenomiose, mioma e endometriose |
+| Pólipo no US | sintomas, menopausa, risco histológico | visualizar/retirar quando indicado e confirmar histologia |
+| Mioma FIGO 0 | localização intracavitária | discutir miomectomia histeroscópica |
+| Mioma FIGO 6 assintomático | compressão? anemia? plano gestacional? | evitar cirurgia sem benefício provável |
+| Infertilidade e mioma | contato cavitário e demais fatores reprodutivos | investigar casal e individualizar intervenção |
+| Sangramento pós-menopausa | risco de patologia endometrial | não atribuir a mioma incidental |
+| Massa atípica | menopausa, imagem, risco oncológico | avaliação especializada antes de fragmentar |
+| Sintomas refratários sem desejo gestacional | opções e preferência | discutir terapias, EAU e histerectomia com riscos |
+| Após cirurgia | histologia, anemia, retorno e sintomas | documentar seguimento, recidiva, reabilitação |
+
+## 18. Imagens candidatas para fila Admin (sem publicação automática)
+
+As figuras são propostas de busca; precisam de imagem licenciada, origem verificável e revisão médica, e deverão ser otimizadas em WebP conforme política da LURIA. **Não inserir URL clínica não aprovada neste manuscrito.**
+
+| Chave candidata | Capítulo | Figura desejada e legenda didática |
+|---|---|---|
+| 206-fig-01 | anatomia | esquema original em cortes sagitais do endométrio, miométrio e serosa |
+| 206-fig-02 | FIGO | classificação 0–8 desenhada pela LURIA, sem copiar figura protegida de diretriz |
+| 206-fig-03 | FIGO híbrida | exemplo de mioma 2–5 com contato cavitário e seroso |
+| 206-fig-04 | diagnóstico | US transvaginal de nódulo submucoso com sombra acústica |
+| 206-fig-05 | diagnóstico | histerossonografia delimitando pólipo endometrial |
+| 206-fig-06 | pólipos | foto histeroscópica licenciada de pólipo antes de polipectomia |
+| 206-fig-07 | adenomiose | US com cistos miometriais e sombreamento em leque |
+| 206-fig-08 | anatomia cirúrgica | RM pélvica mostrando múltiplos leiomiomas e plano de parede |
+| 206-fig-09 | tratamento | diagrama original de escolha por sintomas e fertilidade |
+| 206-fig-10 | complicações | esquema da cavidade após miomectomia e risco de sinéquias |
+
+**Nota de licenciamento:** PDFs privados do Drive não constituem banco de imagens autorizado para reutilização comercial. Fontes governamentais e institucionais também precisam de licença apropriada quando conteúdo de terceiros está incorporado.
+
+## 19. Referências públicas reais para esta etapa
+
+1. ACOG. *Management of Symptomatic Uterine Leiomyomas*. Practice Bulletin 228. Obstet Gynecol. 2021;137:e100–e115. DOI: 10.1097/AOG.0000000000004401. Reafirmado 2025. https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas . **Abrangência:** modalidades clínicas e cirúrgicas, preservação uterina, sintomas.
+2. National Institute for Health and Care Excellence. *Heavy menstrual bleeding: assessment and management*. NG88. https://www.nice.org.uk/guidance/ng88/chapter/recommendations . **Abrangência:** histeroscopia e US direcionados, tratamento não hormonal/hormonal e encaminhamento.
+3. FIGO — Leiomyoma Classification Systems. https://www.figofibroids.org/leiomyoma-classification-systems . **Abrangência:** classificação 0–8, miomas híbridos, STEP-W e relação endometrial/serosa.
+4. ACOG PB 228 Summary. PubMed PMID 34011880, DOI 10.1097/AOG.0000000000004403. https://pubmed.ncbi.nlm.nih.gov/34011880/ . **Abrangência:** resumo acessível de decisão sobre leiomiomas.
+5. Febrasgo. Programa de certificação em Endoscopia Ginecológica 2024, incluindo escopo de histeroscopia em miomas, pólipos, SUA e malformações. https://www.febrasgo.org.br/images/arquivos/certificacao_de_atuacao/2024/Edital_Endoscopia_Ginecologica_VF.pdf . **Limite:** documento de escopo/formação, não diretriz terapêutica e não utilizado para inventar doses.
+
+**Observação científica:** as referências citadas não são todas brasileiras e não certificam acesso ou cobertura assistencial nacional para terapias recentes. Reconciliação com recomendações/consensos brasileiros e disponibilidade local é exigência antes da liberação.
+
+## 20. Auditoria editorial, completude e pendências
+
+| Gate | Situação |
+|---|---|
+| Mecanismos anatômicos/fisiopatológicos | redigidos; conferência especializada pendente |
+| Miomas: FIGO, sintomas, exames e conduta | redigidos; revisar evidências de fertilidade |
+| Pólipos endometriais/endocervicais | redigidos; conferir rotas de amostragem na prática brasileira |
+| Adenomiose e diagnósticos diferenciais | redigidos |
+| Tratamento clínico, cirúrgico e alternativas | redigidos; conferir elegibilidade e acesso nacional |
+| Manejo do sangramento grave | redigido; revisão de protocolos de urgência pendente |
+| Fluxogramas e comparações | redigidos |
+| Casos clínicos | oito casos originais presentes |
+| Questões estilo residência | doze questões com comentários por alternativa |
+| Mínimo de 60 mil caracteres didáticos úteis | **não certificado; exige script e auditoria de redundância** |
+| Fonte equivalente no Google Drive | **PENDENTE**, PDF de câncer de endométrio é comparador parcial |
+| Imagens licenciadas e aprovadas | **não**; somente propostas, sem incorporação |
+| Revisão científica independente | **não realizada** |
+| HTML, PWA e testes de sintaxe | **não realizados; conteúdo ainda em Markdown** |
+| Situação do lote | rascunho original, não publicado |
+
+**Nunca considerar o texto como pronto apenas por ter muitos caracteres.** Para liberação, confrontar a matriz de cobertura com questões clínicas inéditas, revisar atualização das diretrizes, cotejar com materiais LURIA existentes para evitar repetição, conferir referências nacionais, registrar fontes visuais e executar auditorias `node scripts/audit-apostilas-60k.mjs --json`, `node scripts/audit-apostilas-batch.cjs --json`, `node scripts/check-syntax.cjs` em ambiente com o repositório disponível.
+
