@@ -417,6 +417,14 @@ O diagnóstico em pré-escolares é probabilístico, já que sibilância episód
 
 O tratamento desta faixa etária deve seguir protocolo pediátrico próprio atualizado; **não transportar posologia AIR/MART de maiores de seis anos para lactentes**. A necessidade de encaminhamento é maior quando há eventos graves, história atípica ou resposta insuficiente.
 
+**Perguntas que diferenciam sibilância viral episódica e asma persistente:** a criança apresenta tosse/despertares e limitações de brincadeira **fora** dos resfriados? Tem alergia cutânea/rinite e história familiar de atopia? Quantas exacerbações necessitaram urgência ou corticoide sistêmico? Há resposta consistente e reproduzível a tratamento anti-inflamatório administrado com dispositivo correto? Uma resposta favorável ao controlador ajuda o raciocínio, mas não confirma etiologia isoladamente; interromper, ajustar ou testar tratamento deve ser decisão supervisionada e registrada.
+
+**Sinais que não combinam com asma comum:** estridor persistente, sibilância unilateral desde engasgo, início neonatal, tosse úmida diariamente, falha ponderal, hipocratismo digital, hipoxemia entre episódios, dificuldade alimentar/aspiração e infecções graves repetidas. Esses achados pedem investigação de malácia/obstrução estrutural, corpo estranho, bronquiectasias, fibrose cística, imunodeficiência, aspiração e cardiopatia conforme o caso. Não aumentar corticoide indefinidamente quando a história é atípica.
+
+**Tratamento prático com responsável:** avaliar controle por brincadeiras, sono, escola/creche, atendimento de urgência e uso real de alívio. Ensinar pMDI com espaçador e máscara com vedação no pré-escolar quando apropriado; administrar um jato por vez, com respirações conforme protocolo/dispositivo. Se o lactente chora intensamente e a máscara não veda, a deposição pulmonar pode ser inadequada. Registrar a técnica observada, revisar gatilhos como fumaça domiciliar e preparar plano simples de reconhecimento de esforço respiratório.
+
+**Segurança:** aumento progressivo do trabalho respiratório, incapacidade de alimentar-se/falar conforme idade, letargia, cianose, exaustão e murmúrio vesicular muito reduzido justificam atenção emergencial. Não considerar ausência de sibilos garantia de resolução. CI pode ser necessário em pré-escolares selecionados, mas dose, duração e necessidade de teste terapêutico devem seguir orientação pediátrica nacional/protocolo; a estratégia de alívio anti-inflamatório para 6–11 anos da GINA 2026 **não** é extrapolável automaticamente para menores de seis anos.
+
 ## 21. Exacerbação aguda — raciocínio do pronto atendimento
 
 ### 21.1 Reconhecer ameaça à vida em segundos
@@ -719,185 +727,10 @@ D) Prescrever broncodilatador de longa ação sozinho.
 
 **Gabarito: B.** **A — incorreta:** faltam etapas fundamentais de otimização. **B — correta:** tratamento não administrado corretamente não testa eficácia do fármaco; risco agudo deve ser manejado enquanto se corrige o processo. **C — incorreta:** retirada pode piorar doença. **D — incorreta:** LABA isolado não é esquema seguro para asma. **Mini-revisão:** técnica inalatória precisa ser demonstrada, não apenas perguntada.
 
+## 27. Registro editorial de reconciliação da atualização 2026
 
-## 19. Tratamento por etapas: adultos, adolescentes e integração com o SUS
+Na revisão interna, consolidaram-se explicações que se repetiam sobre alívio anti-inflamatório, MART, exacerbação e técnica inalatória, preservando os capítulos 19–26 já existentes, os casos e as questões. Em vez de apresentar duas sequências contraditórias de “capítulos 19–23”, a redação complementar específica de pré-escolares foi incorporada à subseção 20.4. Essa deduplicação evita falsa impressão de que existam dois algoritmos terapêuticos oficiais.
 
-### 19.1 Dois regimes, um princípio: não deixar a inflamação sem tratamento
+**Conferência normativa necessária antes de homologar:** a página oficial do Ministério da Saúde apresenta PCDT de Asma atualizado em abril de 2026 (Portaria Conjunta SAES/SCTIE nº 43, de 24/03/2026). A GINA publicou estratégia integral em maio e guia resumido em julho de 2026; a atualização da GINA para crianças de 6–11 anos não implica incorporação imediata de toda apresentação farmacêutica no SUS. Conferir diferenças de cálculo de resposta broncodilatadora, idade, dose medida versus administrada, limite diário de CI-formoterol e elegibilidade de biológicos diretamente nas respectivas fontes. Não copiar figuras ou tabelas da GINA para plataforma comercial sem autorização; diagramas da LURIA devem ser próprios.
 
-Há duas questões distintas no início do tratamento: **qual controlador reduz risco futuro?** e **qual medicação usar quando os sintomas aparecerem?** A GINA 2026 prefere, para adultos e adolescentes a partir de 12 anos, a trilha em que o medicamento de alívio já contém um corticoide inalatório associado a formoterol de início rápido. O princípio é reduzir a chance de depender apenas de um broncodilatador enquanto há inflamação não tratada. O PCDT brasileiro 2026 também organiza regimes preferenciais com CI-formoterol e alternativas contendo CI.
-
-A indicação concreta depende de gravidade inicial, sintomas, função pulmonar, risco de exacerbação, apresentação disponível, registro sanitário e possibilidade de acesso. Não se deve ensinar que um inalador combinado qualquer funciona como “bombinha de emergência”: **CI-salmeterol e CI-vilanterol não substituem CI-formoterol para a estratégia de alívio recomendada**.
-
-### 19.2 As etapas 1 e 2: sintomas pouco frequentes não são risco zero
-
-Quando uma pessoa com asma confirmada tem sintomas infrequentes, o uso de um **aliviador anti-inflamatório** contendo CI-formoterol em dose baixa conforme necessidade é a alternativa preferencial internacional para adultos e adolescentes. O motivo não é apenas aliviar o episódio atual, mas entregar CI junto à medicação que o paciente realmente utiliza. O tratamento apenas com salbutamol pode dar falsa percepção de resolução completa e deixar risco futuro não controlado.
-
-Quando o paciente não utiliza o regime preferencial, a estratégia alternativa precisa garantir exposição a CI: por exemplo, em situações apropriadas, CI sempre que SABA é usado ou CI diário em baixa dose, conforme apresentação e avaliação. **Não são estratégias idênticas** em conveniência, evidência ou risco; escolher regime exige levar em conta adesão. Se o paciente já tem antecedente de internação por asma, não se deve colocá-lo automaticamente na menor etapa com base em dois dias sem sintomas.
-
-### 19.3 Etapas 3 e 4: manutenção e alívio com o mesmo medicamento
-
-Em pessoas com sintomas frequentes, despertares ou risco de exacerbação relevante, pode ser necessário tratamento de manutenção diário com CI-formoterol, usando o mesmo inalador em doses extras como resgate no regime MART. A diferença entre etapa 3 e 4 está, em geral, na intensidade de CI de manutenção, com ajuste segundo controle e risco. Esse esquema exige **apresentação e dose validadas** e conhecimento do número máximo diário de inalações; não basta anotar "usar quando quiser" sem limite e plano escrito.
-
-Em uma pessoa que usa manutenção CI-LABA cujo LABA **não** é formoterol, o resgate precisa seguir o regime alternativo prescrito; misturar CI-formoterol livremente por cima de outro CI-LABA prolongado pode duplicar LABA e violar a estratégia de ensaio/protocolo. Se houver mudança de trilha, explicar claramente qual dispositivo foi substituído e qual continua.
-
-### 19.4 Etapa 5: encaminhamento, fenótipo e terapias adicionais
-
-Persistência de sintomas/exacerbações após etapa de manutenção otimizada exige perguntar **por que**: diagnóstico errado, fármaco não adquirido, técnica incorreta, inalador incompatível com capacidade inspiratória, tabaco, exposição ocupacional, rinossinusite, obesidade, alteração laríngea ou adesão insuficiente. Após corrigir esses pontos, a pessoa com asma difícil de tratar pode necessitar avaliação especializada para CI-LABA em doses mais altas, LAMA, imunobiológicos ou outras opções conforme critérios. Corticoide oral crônico é estratégia de último recurso pelas complicações.
-
-**Caso de raciocínio:** dois pacientes usam dose alta de CI-LABA e apresentam dispneia. Um utiliza dispositivo corretamente, tem evidência de asma, eosinófilos elevados e exacerbações frequentes. O outro usa medicação apenas quando tem crise, continua fumando e nunca fez espirometria válida. O primeiro exige avaliação de asma grave e elegibilidade a terapias-alvo; o segundo exige primeiro corrigir diagnóstico e execução do tratamento. Prescrever biológico para ambos sem checagem não é precisão terapêutica.
-
-### 19.5 Step-up, step-down e intervalo de reavaliação
-
-Após início ou mudança de tratamento, avaliar resposta em período apropriado, mais cedo se instabilidade ou crise recente. Repetir técnica e adesão **em todas as revisões**, não apenas na prescrição inicial. Se houver bom controle sustentado por cerca de dois a três meses e risco baixo, considerar redução gradual da intensidade para o menor esquema eficaz, documentando função pulmonar, exacerbações e plano de ação. A redução exige acompanhamento; na asma confirmada de adultos/adolescentes, **não interromper totalmente CI de rotina** somente porque deixou de chiar.
-
-Antes de subir etapa, sempre verificar exposição ao controlador, acesso, técnica e diagnóstico. Antes de reduzir, avaliar época do ano, sintomas nas últimas semanas, evento grave recente, condições ocupacionais e capacidade de retorno. A avaliação individual supera rigidez de uma árvore de decisão que desconhece o paciente.
-
-### 19.6 Comparação aplicada da estratégia preferencial e alternativa
-
-| Situação clínica | Questão que decide o tratamento | Estratégia coerente | Erro a evitar |
-|---|---|---|---|
-| Asma confirmada, sintomas raros, baixo risco | como não deixar inflamação sem cobertura? | alívio com CI em regime aprovado, frequentemente CI-formoterol quando disponível | SABA exclusivo como cuidado de longo prazo |
-| Sintomas persistentes ou atividades limitadas | o controlador chega ao pulmão regularmente? | manutenção contendo CI, com ajuste da intensidade e alívio apropriado | escalar sem conferir inalação |
-| Exacerbações repetidas apesar de prescrição | a terapia é usada de fato e o diagnóstico está certo? | revisão estruturada, depois ajuste de etapa | chamar imediatamente de asma grave |
-| Terapia otimizada com risco elevado | há doença grave, fenótipo e elegibilidade? | especialista, possível adição de LAMA/biológico | corticoide oral recorrente sem reavaliação |
-| Controle sustentado | há condições para reduzir com segurança? | step-down gradativo, mantendo proteção anti-inflamatória | suspender CI abruptamente |
-
-## 20. Asma pediátrica: lactentes, pré-escolares e escolares não são um único grupo
-
-### 20.1 Crianças de cinco anos ou menos: incerteza diagnóstica faz parte da boa prática
-
-Sibilância em pré-escolar é frequente em infecções virais e nem sempre evolui para asma persistente. A incapacidade de realizar espirometria confiável na rotina, a heterogeneidade dos episódios e a melhora natural de alguns fenótipos tornam o diagnóstico probabilístico. A história deve incluir episódios recorrentes, sintomas fora de resfriados, atividade/brincadeira, despertares, atopia, antecedentes familiares, infecções, prematuridade, aspiração, tabagismo domiciliar, anomalia estrutural e resposta a tratamento observado.
-
-Não usar “sibilou uma vez = asma” nem “só pode ter asma depois dos seis anos”. Uma criança com crises repetidas, internações, sintomas entre infecções e resposta consistente a CI merece investigação e plano anti-inflamatório quando indicado. Em sintomas apenas muito episódicos e sem fator de risco, a estratégia pode ser diferente, sempre reavaliando com idade e trajetória.
-
-### 20.2 Diagnósticos diferenciais nos primeiros anos
-
-Sibilância **desde o período neonatal** ou persistente com dificuldade alimentar pode sugerir malácia de via aérea, compressão vascular, cardiopatia, fibrose cística ou alterações anatômicas. Tosse e sibilância após episódio de engasgo exigem considerar corpo estranho. Tosse produtiva diária persistente, infecções repetidas e falha de crescimento levantam bronquiectasias, imunodeficiência, discinesia ciliar e aspiração crônica. Criança com obstrução laríngea pode produzir ruído descrito pela família como “chiado”, porém localização e fase do ciclo respiratório são diferentes.
-
-A resposta limitada a broncodilatador/CI em quadro atípico não significa automaticamente “asma resistente”. Ausência de resposta adequada, estridor persistente, cianose, assimetria auscultatória ou prejuízo ponderal precisam de investigação além da asma.
-
-### 20.3 Manejo de pré-escolar: quando considerar controlador
-
-O PCDT brasileiro organiza abordagens com CI em crianças pequenas conforme padrão de sibilância e sintomas entre episódios. Em criança com episódios infrequentes exclusivamente virais, pode haver abordagem distinta da criança que apresenta sintomas repetidos em intervalos e limitações persistentes. O benefício e risco de CI devem ser revistos após período definido; técnica com espaçador/máscara adequada é fundamental. **Montelucaste não é escolha universal de primeira linha**, devendo-se considerar menor efetividade antiexacerbação que CI e possíveis eventos neuropsiquiátricos.
-
-Orientações sobre evitar fumaça, reconhecer trabalho respiratório, vacinação e manejo de fatores ambientais são parte do tratamento. Um adulto precisa saber demonstrar o uso do espaçador; receita de aerossol pressurizado para lactente sem interface apropriada tem alta chance de falha.
-
-### 20.4 Escolares de 6 a 11 anos: atualização importante da GINA 2026
-
-A GINA 2026 passou a reconhecer, na etapa inicial de asma com sintomas pouco frequentes (até cerca de dois dias por semana), **alívio anti-inflamatório de baixa dose com CI-formoterol quando o produto/regime é adequado**, ou CI associado ao SABA sob demanda em combinação ou inaladores separados. Essa abordagem difere de figuras antigas em que a etapa 1 pediátrica dependia exclusivamente de SABA seguido de CI separado. Para crianças com sintomas mais frequentes, o CI diário em baixa dose continua opção central; em etapas superiores, podem ser necessários CI-LABA, CI em intensidade maior ou MART em formulação pediátrica apropriada.
-
-**Atenção ao contexto SUS:** o PCDT nacional publicado em março/abril de 2026 usa como base partes da GINA 2025 e descreve para escolares uma sequência que **não é idêntica à atualização internacional lançada em julho**. A mudança de GINA não significa automaticamente nova incorporação, registro ou dispensação nacional. Para prescrição e acesso no SUS, conferir protocolos vigentes, faixa etária, apresentação e disponibilidade. A apostila deve apresentar as duas referências com data, sem afirmar que uma anula juridicamente a outra.
-
-### 20.5 Adolescentes e adesão
-
-O adolescente pode executar técnica de inalação inadequada por constrangimento escolar, falta de privacidade, preferência por dispositivos menores, resistência a terapia diária ou efeitos colaterais. A consulta deve criar ambiente para discutir objetivos, atividade física, exposição a vape/cigarro, questões de saúde mental e manejo independente de medicamentos. A entrevista não deve assumir que o familiar presente conhece exatamente quando o jovem utiliza o controlador.
-
-A adesão melhora quando a pessoa entende diferenças entre controlador/aliviador e tem dispositivo que consegue transportar e usar. Na escola, preparar plano escrito, identificar adulto responsável pelo medicamento em situações aplicáveis e assegurar acesso a atendimento de urgência.
-
-### 20.6 Crescimento e segurança na infância
-
-Acompanhar estatura/velocidade de crescimento, técnica, candidíase/disfonia e carga cumulativa de corticoide sistêmico. Uma pequena redução média de crescimento observada em alguns estudos de CI deve ser contextualizada com o impacto de doença grave não controlada e corticoide sistêmico recorrente. Não suspender controlador necessário para “proteger altura” sem analisar risco global. Em controle sustentado, buscar menor intensidade efetiva com seguimento.
-
-## 21. Técnica inalatória, dispositivos e educação terapêutica
-
-### 21.1 Deposição pulmonar depende do dispositivo e da pessoa
-
-Um inalador pressurizado dosimetrado (pMDI) usa aerossol com necessidade de coordenação — reduzida pela câmara espaçadora — enquanto dispositivos de pó seco dependem de fluxo inspiratório suficientemente vigoroso para dispersar partículas. Paciente com fraqueza, crise intensa, idade pequena ou dificuldade motora pode não utilizar adequadamente determinado dispositivo. Selecionar apresentação apenas pelo nome do fármaco é insuficiente; examinar **habilidade, fluxo e disponibilidade**.
-
-O primeiro ensino deve usar demonstração real e *teach-back*: o paciente demonstra novamente, a equipe observa e corrige. “Orientei uso” escrito no prontuário não comprova que ele aprendeu; é preferível anotar qual erro foi identificado e qual técnica foi corrigida. Revisitar o procedimento após mudanças de dispositivo ou crise.
-
-### 21.2 Pressurizado com espaçador
-
-A sequência didática deve incluir verificar recipiente e validade, agitar conforme apresentação, encaixar na câmara, expirar confortavelmente, acionar **uma dose por vez** e inalar conforme técnica apropriada à idade/cooperação. Em crianças pequenas, a máscara precisa vedar adequadamente nariz e boca; choro intenso pode reduzir deposição pulmonar. Entre doses, respeitar tempo e técnica da apresentação, evitando múltiplos jatos acumulados de uma vez quando não orientado. Limpeza do espaçador depende do tipo e recomendações do fabricante; não esfregar de forma que favoreça eletricidade estática se isso contrariar orientação.
-
-É importante explicar que o espaçador não “enfraquece” a medicação. Ele pode melhorar a fração respirável e reduzir deposição orofaríngea. Em exacerbação leve/moderada, pMDI com espaçador bem aplicado pode ser alternativa eficiente a nebulização, desde que o quadro permita.
-
-### 21.3 Inalador de pó seco
-
-Exige carregar dose conforme modelo, não soprar dentro do aparelho, expirar fora dele e fazer inspiração suficientemente rápida/profunda para o dispositivo. Criança muito pequena ou pessoa com fraqueza importante pode não atingir fluxo adequado. Algumas apresentações têm contadores que merecem revisão; o som de cápsula não garante entrega da dose. Manter bocal limpo/seco e não lavar aparelho que o fabricante recomenda preservar sem água.
-
-### 21.4 Nebulização
-
-Na urgência, a nebulização é útil em paciente incapaz de coordenar manobras ou com necessidade de terapia repetida. Exige fármaco/dose/concentração adequados, máscara ou bocal bem ajustado, higiene do equipamento e supervisão. A via não é universalmente superior ao pressurizado com espaçador em todas as crises e tem riscos de contaminação quando feita em dispositivos mal limpos.
-
-Nebulização doméstica indiscriminada com soluções variadas pode atrasar procura de atendimento. Um paciente com sonolência, silêncio auscultatório e exaustão não deve ser orientado a “fazer outra inalação em casa” como substituto de emergência.
-
-### 21.5 Barreiras de adesão e acesso
-
-A adesão pode falhar por preço, distância à farmácia, esquema complexo, medo de “corticoide”, sintomas ausentes por longos períodos, efeitos locais ou compreensão limitada. Perguntar de modo aberto: “Quantas vezes conseguiu usar na última semana?” e “Mostre como faz” é mais útil do que acusar alguém de não seguir receita. Conferir dispensação e validade pode apoiar relato, mas uma receita retirada não prova uso correto.
-
-A estratégia pode precisar ser simplificada, ajustada à rotina, articulada com farmácia/APS e revisada em linguagem comum. Renda, escolaridade e acesso digital não devem ser interpretados como incapacidade ou irresponsabilidade da família.
-
-## 22. Exacerbação no pronto atendimento: protocolo explicado pela fisiologia
-
-### 22.1 Reconhecer ameaça à vida antes de medir pico de fluxo
-
-Avaliação inicial combina consciência, capacidade de falar, postura, trabalho respiratório, frequência, pulso, pressão, oximetria e ausculta. Paciente capaz de conversar em frases longas e com esforço discreto tem apresentação diferente de alguém que fala palavras soltas, usa musculatura acessória e parece esgotado. Não se deve exigir PFE antes de broncodilatador em uma criança com grande desconforto nem pedir radiografia como condição para tratar crise evidente.
-
-**Alertas imediatos:** sonolência/confusão, tórax silencioso, fadiga extrema, cianose/hipoxemia importante, arritmia, instabilidade hemodinâmica, incapacidade de falar, exaustão e piora apesar de medidas iniciais. História de intubação e internação em UTI aumenta preocupação mesmo se exame inicial parece moderado.
-
-### 22.2 Primeira hora — tratamento e reavaliação estruturados
-
-1. **Ambiente e equipe:** classificar gravidade, monitorizar, obter acesso/apoio conforme necessidade, acionar serviço de maior complexidade nos graves.
-2. **Oxigênio se indicado:** titular pela oximetria e pelo estado do paciente, evitando hipóxia; a GINA 2026 usa alvo típico de **SpO₂ 92–95%** durante suporte, com ajuste para altitude e condições especiais. O controle deve considerar que a oximetria pode superestimar saturação em algumas situações de hipoxemia, inclusive em pele escura, sem usar isso como substituto da clínica.
-3. **Broncodilatação inicial:** SABA inalatório por pMDI/espaçador ou nebulização adequada conforme idade e gravidade, com repetições protocolizadas e resposta observada.
-4. **Ipratrópio:** considerar nas exacerbações moderadas com resposta insuficiente ou nas graves, conforme diretriz e recursos, sem substituir SABA.
-5. **Corticoide sistêmico precoce:** nas exacerbações significativas, quando indicado; preferir via oral se tolerada e situação permitir, reservando IV para impossibilidade de via oral/condições específicas.
-6. **Reavaliar continuamente:** fala, frequência respiratória, esforço, oxigenação, entrada de ar, perfusão e consciência; PFE em pessoa cooperativa, sem retardar estabilização.
-7. **Escalonar:** resposta insuficiente, fadiga ou hipoxemia persistente exige discussão imediata de cuidado hospitalar/UTI e terapias adicionais adequadas.
-
-Uma **hora** é ponto operacional útil de reavaliação formal, mas paciente em deterioração deve ser reavaliado em minutos; não se espera cronômetro para agir. A melhora pode ser incompleta, exigindo observação e reavaliações posteriores antes da alta.
-
-### 22.3 Sulfato de magnésio intravenoso
-
-Em crise grave com resposta inadequada ao tratamento inicial, pode ser considerado magnésio IV em dose e infusão apropriadas, conforme protocolo, com avaliação de pressão, função renal e possíveis efeitos adversos. Não é primeira linha para toda crise leve. Não confundir formulação IV com nebulização de magnésio, que não tem o mesmo respaldo ou indicação universal. O objetivo é favorecer relaxamento muscular em cenário selecionado; não substitui broncodilatação e corticoide.
-
-### 22.4 O que geralmente não fazer
-
-**Antibiótico** sem evidência de infecção bacteriana pertinente; **radiografia de rotina** em crise típica sem suspeita de pneumonia, corpo estranho, pneumotórax ou outra complicação; **gasometria em toda crise**; mucolíticos/antitussígenos como tratamento da obstrução; **aminofilina de rotina**, pela relação desfavorável entre benefício e eventos adversos; sedativos para “acalmar” paciente com falência respiratória iminente sem estratégia segura de ventilação. A investigação adicional precisa responder uma pergunta clínica que muda conduta.
-
-### 22.5 Quando é melhor internar?
-
-Considerar insuficiência de resposta após terapia adequada, necessidade continuada de oxigênio ou broncodilatador muito frequente, alto risco histórico, hipoxemia, função pulmonar muito comprometida, comorbidade ou impossibilidade de executar plano seguro em casa. A decisão não depende de único PFE arbitrário. Mesmo melhora clínica inicial pode justificar observação se há antecedente de crise quase fatal ou grande distância de atendimento.
-
-### 22.6 UTI, ventilação e perigos da hiperinsuflação
-
-Asma ameaçadora à vida pode exigir ventilação invasiva por equipe altamente experiente, mas intubação altera pressão intratorácica e pode precipitar hipotensão ou colapso. O objetivo ventilatório evita excesso de frequência e volume minuto que cause aprisionamento, permitindo **tempo expiratório suficiente**. Hipercapnia permissiva pode ser aceita em casos selecionados com monitorização de pH, hemodinâmica e contraindicações, em vez de perseguir PaCO₂ normal à custa de hiperinsuflação perigosa.
-
-Monitorar curva de fluxo expiratório, pressão de platô, auto-PEEP, sincronismo e perfusão; ajustes dependem de fisiologia e equipe intensiva. Em hipotensão súbita pós-intubação, considerar hiperinsuflação dinâmica, pneumotórax, efeitos de sedativos e hipovolemia, sem pressupor uma única causa.
-
-### 22.7 Preparar uma alta que previna a próxima crise
-
-A saída da urgência depende de melhora clínica sustentada, oxigenação adequada sem suporte quando pertinente, esforço respiratório controlado, resposta funcional quando mensurável, medicação acessível, acompanhante/cuidador capaz de reconhecer piora e possibilidade real de retorno. A GINA 2026 destaca que aliviador deve ser tomado **quando necessário**, não automaticamente de horário em horário após alta sem orientação individual. Prescrever ou intensificar terapia contendo CI, explicar propósito, demonstrar inalador, fornecer plano de ação e organizar retorno precoce.
-
-**Erro frequente:** aplicar salbutamol até melhora, dar alta com a mesma bombinha de SABA exclusiva e nenhuma revisão do controlador. A crise é indicador de risco futuro e oportunidade obrigatória de prevenção.
-
-## 23. Plano escrito de ação e seguimento longitudinal
-
-### 23.1 Um plano que o paciente consiga usar
-
-Plano escrito não precisa ser uma página complicada. Deve conter tratamento habitual (nomes, dispositivos, doses e horários), como reconhecer piora, como utilizar resgate conforme o **regime prescrito**, quais sinais exigem contato rápido com equipe, quando procurar pronto atendimento e quando chamar emergência. Paciente/família deve dizer com suas palavras o que fará diante de sintomas noturnos, necessidade crescente de alívio ou piora do PFE.
-
-O plano deve ser feito para o **dispositivo real** e atual, não para uma classe de medicamentos genérica. Em regimes MART, as doses extras permitidas e o máximo total precisam ser definidos para idade/apresentação; em regime com SABA, orientar associação com CI quando prevista. Não deixar anotação “usar bombinha SOS” sem esclarecer qual das duas bombinhas é SOS.
-
-### 23.2 Zonas de ação: organizar decisão sem números universais falsos
-
-Uma estrutura didática útil distingue:
-- **Estável:** atividade habitual, sono preservado, poucos sintomas, uso correto de controlador e ausência de necessidade crescente de alívio.
-- **Piora:** mais tosse/aperto, despertar, limitação, repetição do alívio, PFE em queda em quem o monitora. Executar parte de ajuste do plano e buscar avaliação conforme velocidade e risco.
-- **Emergência:** fala limitada, cianose, sonolência, esgotamento, tórax silencioso, instabilidade ou deterioração rápida: procurar serviço emergencial, mesmo que o pico de fluxo não esteja disponível.
-
-Os percentuais de PFE usados em planos individuais devem ser ajustados ao melhor pessoal, idade e estratégia, não copiados como limiar fixo para todas as pessoas. Treinamento e compreensão importam mais que cores decorativas.
-
-### 23.3 Seguimento após exacerbação
-
-Após alta por crise, organizar revisão nos próximos dias conforme gravidade e acesso (frequentemente em **2–7 dias**, com retorno ainda mais rápido para crianças ou casos de maior risco). Reavaliar sintomas, função pulmonar quando apropriado, prescrição, abastecimento, técnica, adesão e desencadeante provável. O objetivo é prevenir recaída e corrigir falhas do cuidado, não apenas emitir nova receita.
-
-Após algumas semanas, rever controle e risco, necessidade de manter a etapa e efeitos adversos. Mudança de dose deve estar documentada com motivo e data de reavaliação. Quando a asma está controlada, visitas menos frequentes podem ser adequadas, mas pacientes graves, com comorbidades e acesso precário exigem seguimento proporcional ao risco.
-
-### 23.4 Vacinação, atividade física e controle ambiental
-
-Pessoas com asma podem praticar exercício e esportes, com manejo anti-inflamatório que permita atividade sem limitação desnecessária. Parar exercícios por medo de sintomas é sinal de controle insuficiente e merece revisão. Evitar fumaça de tabaco/vape, reduzir exposição relevante e orientar vacinação de acordo com PNI/condição clínica, especialmente infecções respiratórias preveníveis.
-
-Evitar recomendações ambientais radicais sem relação comprovada com gatilho do paciente: comprar purificadores caros e eliminar todos os animais de estimação indiscriminadamente pode gerar custo e sofrimento sem melhorar controle. Alergia clinicamente relevante e exposição precisam ser demonstradas ou plausíveis antes de medidas de alto impacto familiar.
-
+**Estado:** manuscrito extenso, com questões/casos para revisão e validação. Não publicar nem aprovar uso clínico de uma tabela de doses sem auditoria farmacológica e checagem de registro/disponibilidade.
