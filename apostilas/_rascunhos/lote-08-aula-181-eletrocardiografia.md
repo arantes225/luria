@@ -722,7 +722,7 @@ Além dos três benchmarks já registrados na aula-base, foram **abertos e lidos
 
 A fonte **PTB-XL, versão 1.0.3, do PhysioNet**, foi examinada. Ela contém 21.799 ECGs clínicos de 12 derivações e 10 segundos, com sinais disponíveis a 100 e 500 Hz e metadados com anotações de laudo. A versão consultada declara **Creative Commons Attribution 4.0 (CC BY 4.0)**. O acesso aberto e essa licença permitem avaliar a construção de figuras derivadas, desde que cumpridas atribuição, indicação de adaptações e outras condições da licença.
 
-Foi criado na branch um utilitário editorial: **scripts/editorial/render_ptbxl_ecgs.py**, para renderizar sinais WFDB autênticos de 12 derivações em WebP com manifesto de proveniência. Esse utilitário **não escolhe diagnóstico, não inventa ondas e não certifica o traçado**. A coleta dos arquivos binários originais não foi concluída nesta sessão; portanto **nenhum ECG foi gerado, incorporado ou aprovado**. O script ainda precisa ser executado e testado com os sinais PTB-XL originais por equipe autorizada antes do uso.
+Foi criado na branch um utilitário editorial: **scripts/editorial/render_ptbxl_ecgs.py**, para renderizar sinais WFDB autênticos de 12 derivações em WebP com manifesto de proveniência. Esse utilitário **não escolhe diagnóstico, não inventa ondas e não certifica o traçado**. **Atualização posterior:** o pipeline foi testado e executado com dados clínicos WFDB originais, inicialmente a 100 Hz e finalmente a **500 Hz com escala vertical uniforme**. Foram gerados **14 ECGs reais candidatos para revisão**, mas **nenhum foi homologado por cardiologista, aprovado no Admin ou incorporado ao livro/site**. A curadoria identifica fontes, licenças, arquivos e limites na seção 39.
 
 ### Checklist por figura de ECG real
 
@@ -751,3 +751,20 @@ Foi criado na branch um utilitário editorial: **scripts/editorial/render_ptbxl_
 ### Gatilhos editoriais ainda abertos
 
 O texto já ultrapassa a métrica bruta de 60 mil caracteres, mas ainda faltam: prova da originalidade útil depois de retirar sobreposições dos capítulos 8–12 e 24–30; ECGs reais aprovados; revisão independente de **17 casos clínicos e 24 questões**; conferência de medicamentos e decisões de cardioversão; integração em HTML/JSON e QA responsivo. **Publicação bloqueada; sem merge e sem deploy.**
+
+
+## 39. Resultados visuais executados: 14 ECGs reais em 500 Hz, com cautelas de diagnóstico
+
+A versão inicial das figuras a **100 Hz** variava a escala de amplitude de uma derivação para outra. **Não usar essa versão como referência quantitativa de voltagem**, nem para ensinar comparação de amplitude ou critérios de hipertrofia. A camada visual foi **reprocessada a partir dos arquivos WFDB originais \`records500/\` do PTB-XL 1.0.3**, amostrados a 500 Hz. O renderizador agora aplica a mesma escala de milivolts a todas as derivações de **cada** exame e registra esse parâmetro no manifesto.
+
+**Execução e proveniência:** GitHub Actions [38696857730](https://github.com/arantes225/luria/actions/runs/38696857730), resultado \`success\`, sem permissão de escrita/deploy no site. Arquivos WebP em formato 3×4, com 12 derivações; 14 registros únicos idênticos aos selecionados na primeira etapa. Tamanho: **99.092–120.816 bytes**, abaixo de **120 KiB**; 1.800×1.125 pixels por figura. Arquivo GitHub Actions **11955300806** com retenção de sete dias (até **22/10/2026**). Pacote revisável de 14 arquivos, manifesto com SHA-256 e mosaico foram produzidos para conferência fora do site.
+
+**Atenção ao limite da apresentação:** o formato clássico 3×4 desenha janelas sucessivas de **2,5 segundos**, com uma derivação diferente por coluna; isso **não oferece tira contínua de 10 segundos em DII**. É útil para forma do QRS e topografia, mas os exemplos de BAV II/BAV total, FA e flutter precisam também de tira longa de ritmo para uma conclusão ensinável. Não classificar BAV 2:1 em Mobitz I/II sem outros dados; não chamar código IMI/ASMI de IAM agudo sem clínica; não aceitar LNGQT sem medida de QT/RR e método de correção.
+
+**Situação das 14 amostras — códigos do banco a validar:** \`00057/NORM\`, \`00172/CRBBB\`, \`00218/1AVB\`, \`00271/ASMI\`, \`00449/AFLT\`, \`00598/CLBBB\`, \`00611/SBRAD\`, \`00892/STACH\`, \`00959/3AVB\`, \`01391/IMI\`, \`02221/LNGQT\`, \`07075/SVTAC\`, \`08215/AFIB\`, \`19164/2AVB\`. Esses são **rótulos do conjunto**, não laudos independentes emitidos pela LURIA.
+
+A figura deve ser acompanhada de **fonte/citação e licença CC BY 4.0**, identificação de registro, indicação de adaptação digital e legenda curta do achado realmente confirmado. A escala comum em mV entre derivações não significa que uma imagem redimensionável no navegador constitua papel **fisicamente calibrado a 25 mm/s e 10 mm/mV**.
+
+**Controle da camada visual:** \`apostilas/_rascunhos/lote-08-aula-181-curadoria-ptbxl-imagens.md\`. Script: \`scripts/editorial/render_ptbxl_ecgs.py\`. IDs: \`scripts/editorial/ptbxl-14-ids-review.json\`. Workflow: \`.github/workflows/editorial-ptbxl-500hz.yml\`.
+
+**Gates ainda fechados:** avaliação de cada traçado e legenda por cardiologista; adicionar tiras contínuas de ritmo a partir dos sinais de 500 Hz; verificar necessidade de zoom para ST/QT e traçados com ruído; conferir licenças/atribuição por figura; aprovar Admin, indexar corretamente e testar PWA/desktop. **Nenhuma imagem homologada ou publicada**, sem merge e sem deploy.
