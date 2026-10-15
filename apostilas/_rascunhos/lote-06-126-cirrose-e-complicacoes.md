@@ -489,3 +489,102 @@ Alteração de personalidade e sono pode refletir EH, mas também abstinência a
 A cirrose é manejada pela interação de **etiologia**, **pressão portal**, **reserva funcional do fígado**, **hemodinâmica renal**, **infecção**, **nutrição** e **possibilidade de transplante**. O paciente pode apresentar em sequência ascite → PBE → lesão renal → encefalopatia e HDA, mas nenhum caminho é inevitável. Reconhecer rapidamente qual mecanismo domina cada descompensação orienta prioridades.
 
 Uma boa evolução exige prevenir novos episódios, não apenas resolver o atual: medir pressão e eletrólitos após diuréticos, encaminhar varizes de risco, pesquisar CHC no intervalo correto, tratar hepatite/álcool/metabolismo, nutrir adequadamente e construir continuidade entre pronto-socorro e ambulatório. No raciocínio de prova, **a presença de “cirrose” no enunciado não substitui a investigação de infecção, sangramento, necrose intestinal, insuficiência cardíaca ou lesão renal intrínseca**.
+
+
+## 27. Oito casos clínicos integradores comentados
+
+### Caso 1 — Ascite nova em pessoa com diabetes: o GASA muda a hipótese
+
+**Apresentação:** homem de 58 anos, diabetes tipo 2 e obesidade, procura ambulatório por aumento abdominal e edema há quatro semanas. Não há diagnóstico anterior de cirrose, febre ou dor. PA 118/72 mmHg, pulso 88/min, sem encefalopatia. O US mostra ascite moderada, contorno hepático nodular e esplenomegalia; plaquetas 112 mil, albumina sérica 3,0 g/dL. A paracentese produz líquido com albumina 1,2 g/dL, proteínas totais 1,0 g/dL e 90 PMN/µL.
+
+**Hipóteses e raciocínio:** GASA = 3,0 − 1,2 = **1,8 g/dL**, apoiando **hipertensão portal**. A baixa proteína ascítica, esplenomegalia e plaquetopenia tornam cirrose provável, possivelmente associada à doença metabólica, mas etiologia ainda precisa ser testada. O PMN de 90 não atende critério de PBE, e paciente não tem sintomas sugestivos; isso não elimina necessidade de interpretar cultura e evolução. Não diagnosticar causa apenas pela obesidade: checar álcool, hepatites B/C, história de doença autoimune e outros fatores.
+
+**Exames e interpretação:** solicitar HBsAg, anti-HCV, função renal/sódio, perfil hepático e investigação etiológica direcionada. Doppler e elastografia podem complementar, mas a imagem já sugere hepatopatia avançada. Avaliar função cardíaca se sinais de congestão; em insuficiência cardíaca, GASA alto costuma coexistir com **proteína ascítica relativamente alta**, ao contrário do padrão deste caso.
+
+**Conduta:** orientação de sódio, discutir espironolactona com ou sem furosemida conforme PA/creatinina/potássio, avaliação de hipertensão portal e vigilância de CHC, vacinação, suporte nutricional e encaminhamento à hepatologia. Revisar peso e eletrólitos após ajustes. Avaliar elegibilidade para transplante pela presença de primeira descompensação (ascite), conforme trajetória e reserva.
+
+**Por que importa:** GASA estima o **mecanismo**, PMN avalia **infecção**, e nenhum deles substitui investigação da **etiologia**.
+
+### Caso 2 — PBE afebril que se apresenta como confusão
+
+**Apresentação:** mulher de 64 anos com cirrose por hepatite C previamente tratada, ascite conhecida, chega por sonolência e desorientação em 24h. Afebril, PA 102/66, pulso 106, sem defesa abdominal. Tem creatinina de 1,6 mg/dL, anteriormente 0,8. Paracentese na admissão: 700 leucócitos/µL, sendo 60% neutrófilos; cultura pendente.
+
+**Hipótese:** **PBE com encefalopatia e lesão renal aguda** até prova em contrário. Cálculo: 700 × 0,60 = **420 PMN/µL** (≥250). A ausência de febre, dor ou cultura positiva inicial não exclui. Creatinina duplicou e exige avaliar hipoperfusão/sepse, sem concluir automaticamente HRS-AKI na admissão.
+
+**Exames:** hemoculturas se sem atraso, culture do líquido ascítico, eletrólitos, glicemia, lactato e investigação de outros focos conforme clínica. Rever diuréticos, PA, urina e fatores de hipovolemia. Se houver queda de consciência, avaliar via aérea/risco aspirativo e outras causas neurológicas.
+
+**Conduta:** antibiótico empírico adequado ao perfil comunitário/hospitalar, **albumina conforme esquema de PBE e avaliação de volemia**, suspensão/revisão de nefrotóxicos e diuréticos se hipotensão/LRA, tratamento da encefalopatia sem causar diarreia excessiva, reavaliação de PMN/curso se falha. Após recuperação, discutir profilaxia secundária e transplante.
+
+**Por que importa:** **peritonite infecciosa pode ser clinicamente silenciosa** no abdome e se revelar por cérebro e rim.
+
+### Caso 3 — Creatinina 0,7 para 1,2 após diurético: não rotular HRS antes de avaliar volemia
+
+**Apresentação:** homem de 49 anos com ascite em uso de espironolactona/furosemida, aumentadas na última semana. Houve diarreia intensa por lactulose. PA 90/58, mucosas secas, tontura ortostática, redução da diurese. Creatinina basal 0,7 e atual 1,2 mg/dL; sódio 128, potássio 3,1, sem febre. Não houve sangramento.
+
+**Hipótese:** **LRA com componente de hipovolemia efetiva** por diarreia/diurético. O aumento de creatinina cumpre critério de LRA, mas **HRS-AKI não foi demonstrada** e não há indicação de aplicar albumina por 48h obrigatoriamente como teste. Avaliar perfusão, volume, sedimentação urinária, PBE se ascite/descompensação e causas concorrentes.
+
+**Exames:** repetição de eletrólitos e creatinina, avaliação da diurese, EAS/sedimento e US conforme risco; paracentese se hospitalizado com ascite. Considerar necessidade de cultura e investigação de infecção, mesmo afebril.
+
+**Conduta:** suspender/rever temporariamente diuréticos, ajustar lactulose para evitar perdas exageradas, reposição de volume **individualizada pela hemodinâmica e sinais de congestão**, corrigir eletrólitos e monitorar resposta em período curto. Se função renal não melhora após correção apropriada e não há causa alternativa predominante, aprofundar HRS-AKI e vasoconstritor/albumina titulada em centro especializado.
+
+**Por que importa:** o consenso **ADQI–ICA 2024** evita tanto atrasar tratamento de HRS como causar sobrecarga por albumina desnecessária.
+
+### Caso 4 — Hematêmese em cirrose: três terapias antes de saber a variz
+
+**Apresentação:** homem de 55 anos com cirrose alcoólica e histórico de ascite, chega com hematêmese volumosa e melena. PA 88/54, pulso 122, consciência preservada mas sonolento. Hb inicial 9,1 g/dL, INR 1,9; relato de sangramento iniciado há uma hora. A equipe quer esperar hemoglobina cair abaixo de 7 e normalizar INR para solicitar EDA.
+
+**Hipótese:** **hemorragia digestiva alta possivelmente varicosa com instabilidade**, sem excluir úlcera. Hb inicial não representa necessariamente perda total antes de equilibration; INR de cirrose não orienta transfusão de plasma isoladamente.
+
+**Exames:** avaliação hemodinâmica, tipagem/prova cruzada, hemograma seriado, função renal/sódio, monitorização; EDA após estabilização. Presença de alteração de consciência e vômitos ativos orienta avaliar aspiração e via aérea.
+
+**Conduta:** ressuscitação e hemoderivados conforme perfusão/perda, sem sobretransfusão desnecessária; iniciar **vasoativo esplâncnico + antibiótico profilático** precocemente; EDA terapêutica em janela recomendada, com **ligadura** se varizes esofágicas. Avaliar TIPS precoce em alto risco ou resgate se falha. Planejar NSBB + ligaduras para prevenção secundária quando estável e elegível.
+
+**Por que importa:** abordagem correta é **paralela**, não sequência lenta “hemoglobina → plasma → endoscopia”.
+
+### Caso 5 — Encefalopatia que piorou após laxativo demais
+
+**Apresentação:** mulher de 60 anos com cirrose e episódios prévios de EH estava orientada com lactulose, mas família aumentou até produzir oito evacuações líquidas ao dia “para limpar a amônia”. Agora tem fraqueza, sonolência, mucosas secas, K 2,9, creatinina crescente e constipação ausente. Sem febre ou sangramento aparente.
+
+**Hipóteses:** a EH pode piorar por **hipovolemia, hipocalemia e LRA** precipitadas pelo excesso de lactulose. Não presumir que mais laxante é sempre mais benéfico. Buscar também PBE e outras causas de alteração do estado mental, conforme quadro e presença de ascite.
+
+**Exames:** glicemia, eletrólitos, creatinina, sinais vitais, EAS/exames de infecção quando indicados, paracentese se cirrótica ascítica hospitalizada. Neuroimagem se déficit focal, trauma ou apresentação atípica.
+
+**Conduta:** reavaliar dose de lactulose e titular para **2–3 evacuações amolecidas/dia**, corrigir água/eletrólitos de forma supervisionada, proteger via aérea se rebaixamento, revisar sedativos e considerar rifaximina para prevenção de recorrência quando indicada. Manter suporte proteico, não prescrever dieta sem proteínas.
+
+**Por que importa:** tratamento de EH pode virar **precipitante iatrogênico** se o alvo e a segurança não são monitorados.
+
+### Caso 6 — Ascite refratária e dispneia à direita
+
+**Apresentação:** homem de 66 anos com cirrose por doença metabólica, ascite que retorna em dez dias após paracentese, dispneia progressiva, hiponatremia e hipotensão com doses elevadas de diuréticos. Exame pulmonar revela redução de murmúrio vesicular na base direita, radiografia mostra derrame pleural volumoso, sem sinais claros de pneumonia.
+
+**Hipóteses:** **hidrotórax hepático** em ascite refratária, após excluir causas cardiopulmonares, neoplásicas e infecciosas. A origem é passagem de líquido para pleura por defeitos diafragmáticos; ascite visível pode não ser gigantesca. Reposição indiscriminada de diuréticos sob hipotensão aumenta risco renal.
+
+**Exames:** US abdominal/torácico, análise pleural conforme indicação, função renal/eletrólitos, ecocardiograma se congestão, avaliação nutricional e de reserva hepática. Se houver febre ou dor pleurítica, investigar infecção pleural.
+
+**Conduta:** otimizar sódio sem desnutrir, rever diuréticos e hemodinâmica, toracocentese de alívio quando necessária; evitar dreno pleural convencional prolongado como solução de rotina. Avaliar **TIPS** segundo coração/EH e **transplante** pela refratariedade.
+
+**Por que importa:** dispneia em cirrótico nem sempre é só “ascite empurrando o diafragma”; hidrotórax muda avaliação e acesso a intervenção.
+
+### Caso 7 — Nódulo de 2,5 cm em cirrótico com AFP normal
+
+**Apresentação:** mulher de 57 anos com cirrose por HCV curado, sem ascite e Child A, retorna com US semestral demonstrando nódulo hepático de 2,5 cm. AFP normal, transaminases normais. A equipe cogita parar seguimento porque vírus foi curado e AFP não subiu.
+
+**Hipótese:** **possível CHC** exige caracterização, porque risco neoplásico persiste após cura do HCV se há cirrose. AFP normal não exclui. US é ferramenta de vigilância, não diagnóstico definitivo de nódulo suspeito.
+
+**Exames:** **TC/RM multiphasic com contraste** conforme contraindicações, caracterização pelo padrão de realce/lavagem e LI-RADS em população validada. Avaliar função hepática, hipertensão portal, número de lesões e contexto de transplante. Biópsia somente se indicada por imagem inconclusiva/decisão especializada.
+
+**Conduta:** discutir em equipe hepatologia/oncologia/cirurgia/transplante conforme classificação, reserva e extensão; não repetir US em um ano sem caracterização. Manter vigilância de toda população elegível após conclusão do episódio.
+
+**Por que importa:** **cura virológica não zera risco de CHC**, e AFP isolada pode tranquilizar falsamente.
+
+### Caso 8 — Endoscopia normal, plaquetas baixas e elastografia intermediária
+
+**Apresentação:** homem de 48 anos, hepatopatia metabólica compensada, sem ascite/encefalopatia, elastografia de 14 kPa e plaquetas de 160 mil, sem colaterais em imagem. Pediu EDA anual “porque toda cirrose tem variz” e carvedilol de 25 mg/dia sem avaliar PA.
+
+**Hipótese e interpretação:** risco de **hipertensão portal clinicamente significativa** pode ser baixo sob critérios não invasivos Baveno/AASLD em população validada, mas limiares precisam considerar etiologia, obesidade e qualidade da elastografia. A decisão sobre EDA/NSBB não é universal nem se baseia somente em um número isolado. É necessário conferir se a pessoa de fato apresenta doença hepática avançada compensada e se exames sustentam estratégia.
+
+**Exames:** revisão da etiologia, rigidez/qualidade e plaquetas, US/Doppler, seguimento clínico e eventual endoscopia conforme risco e disponibilidade; risco cardíaco e PA antes de NSBB. Não confundir vigilância de CHC com protocolo de EDA.
+
+**Conduta:** discutir resultado com hepatologia, tratar doença metabólica, acompanhar evolução e vigilância de CHC se cirrose confirmada, sem iniciar carvedilol em dose elevada automaticamente nem realizar EDA anual sem indicação. A avaliação deve ser atualizada se ocorrer descompensação.
+
+**Por que importa:** medicina atual permite **estratificar risco em compensados** e evitar procedimentos/medicações desnecessários, sem negligenciar pessoas de alto risco.
