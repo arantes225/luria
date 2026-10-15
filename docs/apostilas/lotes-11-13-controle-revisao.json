@@ -1221,7 +1221,7 @@
       "area": "Saúde Coletiva",
       "titulo": "Planejamento, avaliação e gestão de serviços de saúde",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SC-01",
       "instrucao": "Planejamento, avaliação e gestão; saúde suplementar e judicialização (Diamante); adicionar competências do SUS.",
       "aulas_medcof": [
@@ -1234,11 +1234,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito original parcial ~32,3 mil caracteres; 5 casos e 7 questões; benchmark SUS/Vigilância Drive lido, cobertura comparativa parcial; PNS 2024-27, PAS 2026, MS/ANS verificados. Sem 60 mil úteis, sem auditoria jurídica final."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-257-planejamento-gestao-servicos-saude.md"
     },
     {
       "id": 258,
@@ -1246,16 +1247,17 @@
       "area": "Saúde Coletiva",
       "titulo": "Avaliação de tecnologias em saúde e custo-efetividade",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SC-10",
       "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
       "aulas_medcof": [],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito original parcial ~31,3 mil caracteres; 5 casos e 8 questões; Drive de epidemiologia/SUS correlato lido (benchmark não equivalente), página oficial do manual Conitec 3ª ed 2026 confirmada, íntegra não auditada. Sem 60 mil úteis, sem revisão matemática especializada."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-258-ats-custo-efetividade.md"
     },
     {
       "id": 259,
@@ -1263,16 +1265,17 @@
       "area": "Saúde Coletiva",
       "titulo": "Sistemas de Informação em Saúde e qualidade dos dados",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SC-11",
       "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
       "aulas_medcof": [],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito original parcial ~30,6 mil caracteres; 5 casos e 7 questões; três PDFs correlatos do Drive lidos, notas Siaps 2025 e notificação compulsória 2026 verificadas. Sem 60 mil úteis, sem auditoria jurídica/estatística final."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-259-sistemas-informacao-saude.md"
     },
     {
       "id": 260,
