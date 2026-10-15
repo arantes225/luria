@@ -250,6 +250,53 @@ Em criança com cultura positiva e empiema volumoso, antibiótico ativo pode nã
 
 **Descalonamento** significa reduzir espectro/duração quando microbiologia, foco, gravidade e evolução permitem, **não deixar de tratar choque verdadeiro**. A escolha definitiva de antimicrobiano depende do antibiograma institucional, perfil do hospedeiro, função renal, foco e dose pediátrica rigorosamente calculada.
 
+
+### 6.12. Segurança da prescrição pediátrica: verificar o denominador antes do medicamento
+
+A diretriz SSC 2026 define **quando** iniciar antibiótico e **como** monitorar terapia, mas a seleção e a dose dependem de idade, foco infeccioso, flora/resistência local, susceptibilidade, função renal e apresentações brasileiras. Não copiar uma dose adulta, nem uma tabela de sedoanalgesia de origem desconhecida, para a criança em choque.
+
+**Dez conferências antes de prescrever antibiótico ou vasoativo:**
+1. **Peso real medido ou estimativa validada para urgência**, documentando fonte, peso usado e unidades; não confundir kg com libras.
+2. **Idade cronológica e pós-concepcional** nos neonatos; maturação renal e distribuição corporal de fármacos diferem em prematuros.
+3. **Nome genérico, sal e concentração real da ampola**: dois frascos com nomes parecidos podem ter apresentações/diluições diferentes.
+4. **Denominador inequívoco:** mg/kg/**dose** não é mg/kg/**dia**; para infusões, distinguir mcg/kg/**min** de mcg/kg/**h**.
+5. **Dose máxima individual** e máximo diário quando aplicáveis; cálculo proporcional ao peso não deve exceder teto terapêutico em criança maior.
+6. **Via e ritmo de administração:** bolus versus infusão intermitente/estendida/contínua, compatibilidade do diluente, acesso periférico/central.
+7. **Função renal e hepática**, IRA em evolução, tratamentos nefrotóxicos e interações, monitorização de níveis séricos quando indicado.
+8. **Adequação ao foco:** meningite exige cobertura/exposição diferente da cistite, e abscesso obstruído requer controle mecânico da fonte.
+9. **Tempo zero do tratamento:** registrar hora do reconhecimento, cultura quando viável sem atraso e hora real da primeira administração, não apenas o horário da prescrição.
+10. **Reavaliação e descalonamento:** cultura/antibiograma, probabilidade etiológica, melhora da perfusão, risco de resistência e plano de suspensão/ajuste.
+
+**Exemplo didático de erro de unidade, sem prescrever medicamento:** um protocolo fictício indica **15 mg/kg/dia dividido em 3 doses** para criança de **12 kg**. Dose diária total = 180 mg/dia; cada uma das três administrações = **60 mg/dose**. Escrever "15 mg/kg/dose" por engano elevaria a exposição diária três vezes. Não aplicar esses números a fármaco real: o exemplo demonstra apenas conferência dimensional.
+
+**Exemplo de velocidade de infusão, sem prescrição real:** numa bomba que opera em mL/h, uma ordem clínica expressa em mcg/kg/min exige conversão adicional pela concentração final da solução. Se dose/concentração/unidade não estão documentadas, a decisão segura é **bloquear o preparo e revisar com a farmácia/UTI**, não presumir equivalências. A dose de adrenalina **intramuscular** para anafilaxia não é concentração nem via intercambiável com vasoativo **intravenoso contínuo** para choque.
+
+### 6.13. A recomendação de oxigênio de 2026 tem população e momento definidos
+
+A SSC pediátrica 2026 formula **sugestão condicional** de titular oxigênio suplementar para meta conservadora de **SpO₂ de 88–92% após a ressuscitação**, em vez de alvo mais liberal **>94%**; a certeza da evidência foi classificada como moderada. O texto da diretriz ressalva que **não está claro** se o mesmo alvo serve para a fase **ativa** de reanimação. Portanto, a frase "toda criança com sepse deve ficar em 88%" é **incorreta e potencialmente perigosa**.
+
+**Situações que impedem aplicação automática do alvo:**
+- choque em curso com marcadores de débito/entrega de oxigênio comprometidos;
+- anemia grave e hemoglobinopatias;
+- cardiopatia congênita cianótica ou outras condições com saturação basal particular;
+- disfunção neurológica e certas complicações respiratórias;
+- limitação de monitorização contínua confiável e contexto de transferência;
+- divergência de outros protocolos por fenótipo, como SDRA pediátrica (PALICC-2) e orientações de oxigenação por doença específica.
+
+**Oximetria não é perfeita:** leitura pode variar com perfusão ruim, movimento, local do sensor e pigmentação da pele; o texto da SSC 2026 menciona possível **superestimação** da saturação em alguns grupos de pele mais escura. Quando valor não corresponde ao quadro, verificar sinal, aparelho, perfusão e considerar gasometria/monitorização apropriada. Usar a recomendação como **tema de interpretação crítica em provas**, não como ordem padronizada de retirar oxigênio de pacientes ainda instáveis.
+
+### 6.14. Complicações e segurança de terapias adjuntas
+
+**Vasoativos periféricos:** no choque que necessita agente circulatório, a SSC 2026 **sugere** início em acesso venoso periférico apropriado se isso evita atraso para obter cateter central; o risco de extravasamento exige avaliação repetida do acesso, compatibilidade, bomba, dose e equipe treinada. Essa possibilidade não significa que qualquer acesso mal localizado é aceitável.
+
+**Hidrocortisona:** não há indicação rotineira se estabilidade foi restaurada com fluidos/vasoativos; adrenal insuficiência confirmada ou fortemente suspeita é exceção relevante. Não aplicar esquema de adulto a recém-nascido ou criança por analogia.
+
+**Sedação/intubação:** em choque, anestesia e ventilação por pressão positiva podem comprometer retorno venoso e reduzir pressão. A SSC sugere contra uso de **etomidato** em crianças com sepse/choque. Escolha do agente de indução, bloqueador e analgésico deve ser aprovada por equipe com experiência pediátrica, com monitorização de via aérea, ECG, perfusão e preparação para reanimação.
+
+**Antimicrobianos:** a diretriz não permite adiar antibiótico por cultura quando a obtenção gera atraso perigoso. Tampouco exige manutenção de espectro máximo após diagnóstico/sensibilidade: descalonamento responsável evita eventos adversos e resistência.
+
+**Limite de publicação e Modo Trabalho:** esta seção consolida verificação científica do processo de prescrição; **não contém doses clínicas pediátricas validadas de antibióticos, vasopressores ou sedativos**. Criar ficha farmacológica para uso assistencial exige validação conjunta de pediatria/UTI/farmácia clínica, bula/RENAME/registro brasileiro, apresentação real e protocolo institucional.
+
 ## 7. O foco importa tanto quanto o antibiótico
 
 ### 7.1. Pneumonia com complicação pleural
@@ -419,7 +466,16 @@ A SSC 2026 sugere **reabilitação individualizada precoce**, compatível com es
 **Conduta:** reabilitação individualizada, orientação ao cuidador, seguimento pediátrico/APS e encaminhamento multiprofissional conforme déficits.  
 **Por que importa:** amplia o conceito de desfecho além da sobrevivência hospitalar.
 
-## 12. Oito questões autorais com comentários completos
+
+### Caso 10 — alvo de oxigênio interpretado fora da janela adequada
+**Apresentação:** menino de 6 anos com sepse provável, ainda em fase inicial de choque, perfusão ruim e saturação de 91% em ar ambiente, com grande esforço respiratório. Um estudante lê "88–92%" em nova diretriz e sugere não oferecer suporte de oxigênio durante a reanimação.  
+**Hipóteses:** sepse/choque em fase ativa com comprometimento respiratório, risco de entrega insuficiente de oxigênio.  
+**Raciocínio:** a sugestão SSC 2026 de SpO₂ 88–92% refere-se a **após ressuscitação**, é condicional e não foi validada universalmente na fase ativa. A leitura de 91% não substitui avaliação de esforço, choque, perfusão e eventual gasometria.  
+**Exames:** monitorização contínua, avaliação respiratória e hemodinâmica, exames conforme foco e gravidade.  
+**Conduta:** suporte conforme doença e fase clínica em ambiente apropriado, não retirar/recusar oxigênio apenas para "cumprir 88–92%"; reavaliar meta de oxigênio depois da estabilização por equipe pediátrica.  
+**Por que importa:** distingue recomendação condicional da regra mecânica insegura.
+
+## 12. Dezesseis questões autorais com comentários completos
 
 ### Questão 1 — Phoenix 2024
 Criança de 5 anos com suspeita de infecção apresenta disfunção respiratória, neurológica e cardiovascular. Qual afirmação sobre novos critérios é correta?
@@ -535,6 +591,23 @@ D. Ignorar função cognitiva e emocional.
 **Gabarito: A.** SSC 2026 valoriza recuperação e morbidade pós-sepse. **B:** ausência de bacteremia não mede função. **C:** sem indicação. **D:** desfechos relevantes. **Minirrevisão:** sobrevivência ≠ recuperação.
 
 
+
+### Questão 15 — oxigênio após ressuscitação
+Sobre a recomendação de oxigênio da SSC pediátrica de 2026, qual é a melhor afirmação?
+A. Toda criança em choque ativo deve ficar exatamente com SpO₂ 88%, mesmo com desconforto e baixo débito.  
+B. Existe sugestão condicional de SpO₂ conservadora 88–92% após ressuscitação, mas aplicação durante choque ativo e em populações especiais é incerta e exige individualização.  
+C. Oxigênio suplementar é proibido em toda sepse.  
+D. Os limites foram validados para qualquer cardiopatia congênita.
+**Gabarito B.** A diretriz limita momento e reconhece exceções. **A:** transforma recomendação contextual em regra perigosa. **C:** confunde titulação com proibição. **D:** ignoram cardiopatias cianóticas e outras condições. **Minirrevisão:** momento, população e grau de recomendação importam tanto quanto número.
+
+### Questão 16 — conferência de unidade e dose
+Uma prescrição pediátrica fictícia descreve um fármaco didático hipotético na dose de 15 mg/kg/**dia** em três administrações, para criança de 12 kg. Qual é a dose por administração?
+A. 15 mg.  
+B. 60 mg.  
+C. 180 mg.  
+D. 540 mg.
+**Gabarito B.** 15×12 = 180 mg **por dia**; dividido por três = 60 mg **por dose**. **A:** ignorou peso. **C:** confundiu dose diária com dose unitária. **D:** multiplicou dose diária por número de administrações. **Minirrevisão:** mg/kg/dia e mg/kg/dose não são equivalentes. *Números inteiramente fictícios, não representam indicação de nenhum fármaco real.*
+
 ## 13. Pérolas LURIA e prevenção de erros
 
 1. Criança hipoperfundida com PA “normal” pode estar em choque; **hipotensão não é requisito de entrada na ressuscitação**.
@@ -576,24 +649,6 @@ D. Ignorar função cognitiva e emocional.
 
 **Referência de comparação, não atual para tratamento:** SSC Pediatric Guidelines 2020, cuja atualização em 2026 modifica vários itens. Não usar esquema de 2020 como se fosse o mais recente.
 
-## 16. Auditoria editorial e lacunas de certificação
-- [x] Separação do conteúdo adulto já em elaboração no lote 9.
-- [x] Comparativos correlatos efetivamente lidos no Drive, com limites declarados.
-- [x] Fundamentos fisiológicos, sinais por idade, Phoenix 2024 e SSC 2026.
-- [x] Fluidos contextualizados por capacidade de UTI, antibióticos e vasoativos atualizados.
-- [x] Fonte, suporte de órgãos, diferenciais e fluxos.
-- [x] 4 casos clínicos completos, 8 questões com comentários de cada alternativa.
-- [ ] Benchmark de livro completo especificamente de sepse pediátrica no Drive.
-- [ ] Exames/monitorização por idade, plano avançado de ventilação mecânica e farmacologia detalhada por peso.
-- [ ] Protocolos brasileiros de antibioticoterapia por foco, apresentações e doses máximas de criança, com conferência de função renal e neonatal.
-- [ ] Aperfeiçoar seções de dengue grave, meningococcemia e situações no pré-hospitalar.
-- [ ] Profundidade final ≥60.000 caracteres úteis, sem duplicar capítulos.
-- [ ] Revisão clínica profissional, revisão de contraindicações dos fármacos e comparação integral das 61 recomendações SSC 2026 para evitar extrapolação.
-- [ ] Imagens reais confiáveis/licenciadas e teste visual desktop/PWA.
-
-**Estado:** rascunho científico original, com diretriz pediátrica de março/2026; NÃO PUBLICADO E NÃO CERTIFICADO.
-
-
 ## 15A. Fontes e verificação de outubro/2026
 
 **Benchmark reaberto nesta rodada, antes de editar:** "Sepse neonatal.pdf" (2.032 caracteres extraídos); "01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf" (14.974); "01 - CHOQUE - ABORDAGEM INICIAL.pdf" (7.986); "02 - CHOQUE - TIPOS DE CHOQUE.pdf" (12.229). Nenhum demonstrou autoria Estratégia MED. Os documentos sobre choque trazem **SOFA, PAM ≥65 e bolus de 30 mL/kg para adultos**: foram **explicitamente excluídos do tratamento pediátrico**, preservando apenas conceitos gerais com verificação externa. Os PDFs sobre sepse neonatal e sedação não representam benchmark completo do tema pediátrico.
@@ -602,6 +657,25 @@ D. Ignorar função cognitiva e emocional.
 - Weiss SL, Peters MJ, Oczkowski SJ et al. *Surviving Sepsis Campaign International Guidelines for the Management of Sepsis and Septic Shock in Children 2026*. *Intensive Care Medicine* 2026;52:937–983. Publicação 23/03/2026. https://link.springer.com/article/10.1007/s00134-026-08360-2  
 - Society of Critical Care Medicine (SCCM). *Recommendations — Pediatric Sepsis Campaign 2026*, com força e certeza por intervenção. https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in  
 - Schlapbach LJ et al. *International Consensus Criteria for Pediatric Sepsis and Septic Shock*. *JAMA*. 2024;331(8):665–674. DOI 10.1001/jama.2024.0179. https://pubmed.ncbi.nlm.nih.gov/38245889/
+
+
+## 16. Auditoria editorial e lacunas de certificação
+- [x] Separação do conteúdo adulto já em elaboração no lote 9.
+- [x] Comparativos correlatos efetivamente lidos no Drive, com limites declarados.
+- [x] Fundamentos fisiológicos, sinais por idade, Phoenix 2024 e SSC 2026.
+- [x] Fluidos contextualizados por capacidade de UTI, antibióticos e vasoativos atualizados.
+- [x] Fonte, suporte de órgãos, diferenciais e fluxos.
+- [x] 10 casos clínicos completos, 16 questões com comentários de cada alternativa (conteúdo didático ainda pendente de revisão externa).
+- [ ] Benchmark de livro completo especificamente de sepse pediátrica no Drive.
+- [ ] Exames/monitorização por idade, plano avançado de ventilação mecânica e farmacologia detalhada por peso.
+- [ ] Protocolos brasileiros de antibioticoterapia por foco, apresentações e doses máximas de criança, com conferência de função renal e neonatal.
+- [ ] Aperfeiçoar seções de dengue grave, meningococcemia e situações no pré-hospitalar.
+- [x] Mais de 60.000 caracteres brutos; **a meta de 60.000 caracteres didáticos úteis e não redundantes não foi certificada**.
+- [ ] Revisão clínica profissional, revisão de contraindicações dos fármacos e comparação integral das 61 recomendações SSC 2026 para evitar extrapolação.
+- [ ] Imagens reais confiáveis/licenciadas e teste visual desktop/PWA.
+
+**Estado:** rascunho científico original, com diretriz pediátrica de março/2026; NÃO PUBLICADO E NÃO CERTIFICADO.
+
 
 ## 16A. Matriz de cobertura — testar conteúdo sem consulta obrigatória a outra aula
 
