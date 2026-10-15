@@ -442,3 +442,37 @@ Definir cuidador e habilidades → garantir medicamentos/vias/resgates, contatos
 33. Cuidado pediátrico exige linguagem e farmacologia específicas.
 34. Domicílio sem retaguarda pode ser inseguro.
 35. A rede familiar precisa de orientação também após morte.
+
+
+## 26. Casos clínicos integradores
+
+Os cenários são fictícios e voltados ao raciocínio clínico; cada decisão deve ser individualizada.
+
+### Caso 1 — Câncer em tratamento com intenção curativa
+
+**Apresentação:** Mulher de 48 anos inicia terapia sistêmica com expectativa de controle curativo. Relata dor 6/10, fadiga, preocupação com trabalho e medo de ficar sem renda. Um residente afirma que paliativos só servem após surgirem metástases.
+
+**Hipótese:** Indicação de abordagem paliativa integrada, sem terminalidade.
+
+**Raciocínio:** A OMS/PNCP permitem cuidados precoces simultâneos ao tratamento modificador. A dor precisa de avaliação mecanística; preocupação econômica exige atenção social. Não suspender tratamento oncológico apenas para receber suporte paliativo.
+
+**Avaliação:** História/ exame da dor, ESAS, função, medicações, efeitos adversos, suporte familiar e barreiras de acesso.
+
+**Conduta:** Tratar sintomas conforme mecanismo, articular psicologia/serviço social, seguir terapia oncológica e registrar metas pessoais.
+
+**Por que importa:** Paliar é cuidar de sofrimento real antes da terminalidade.
+
+### Caso 2 — Comunicação de biópsia maligna
+
+**Apresentação:** Homem de 52 anos comparece para resultado de biópsia, acreditando que a lesão era benigna. O laudo confirma câncer. A equipe pensa em informá-lo no corredor, com familiares não autorizados presentes.
+
+**Hipótese:** Notícia difícil com necessidade de SPIKES.
+
+**Raciocínio:** A notícia altera perspectiva de futuro, exigindo ambiente reservado, percepção e convite para informação. Falar em frases curtas, pausar para acolher e construir um próximo passo. Não inventar prognóstico se estadiamento é desconhecido.
+
+**Avaliação:** Conferir laudo, identidade, grau de certeza, quem o paciente autoriza participar e opções de encaminhamento.
+
+**Conduta:** Preparar sala, explicar resultado claramente, validar emoção, checar entendimento, propor estadiamento e acompanhamento, documentando.
+
+**Por que importa:** O encontro não termina no diagnóstico: sempre comunicar plano e continuidade.
+
