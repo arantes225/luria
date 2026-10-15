@@ -406,7 +406,7 @@ Sulfato de magnésio pode ser indicado para neuroproteção fetal quando parto m
 
 ### 14.1. O primeiro feto é decisivo, mas não único
 
-Em gêmeos DCDA ou MCDA sem outras contraindicações, apresentação cefálica do primeiro feto e condições clínicas favoráveis podem permitir **planejar parto vaginal**, com equipe obstétrica experiente, ultrassom intraparto quando necessário, anestesia, centro cirúrgico disponível e suporte neonatal para cada recém-nascido. Não há cesariana obrigatória só porque há dois fetos. A apresentação do segundo feto pode variar após o nascimento do primeiro e requer avaliação ativa.
+Em gêmeos DCDA ou MCDA **não complicados após 32 semanas**, sem discordância relevante de peso ou outras contraindicações, apresentação cefálica do primeiro feto e condições clínicas favoráveis podem permitir **planejar parto vaginal**, com equipe obstétrica experiente, ultrassom intraparto quando necessário, anestesia, centro cirúrgico disponível e suporte neonatal para cada recém-nascido. Não há cesariana obrigatória só porque há dois fetos. A apresentação do segundo feto pode variar após o nascimento do primeiro e requer avaliação ativa.
 
 **Primeiro feto não cefálico** frequentemente favorece cesariana planejada, pois riscos mecânicos e manobras mudam; sempre considerar protocolo, gestação e expertise. Monoamnióticos em geral são conduzidos por cesariana eletiva em momento antecipado.
 
@@ -547,6 +547,13 @@ Gestante de 29 semanas com MCMA confirmada no primeiro trimestre apresenta sinai
 **Hipótese:** MCMA sem complicação hemodinâmica demonstrada neste exame, mas com risco basal de cordões. **Raciocínio:** exames normais não eliminam risco imprevisível de compressão de cordão em bolsa única. **Conduta:** vigilância altamente especializada e plano de cesariana antecipada com neonatologia; NICE indica janela de 32+0 a 33+6 semanas se não houver outro motivo para parto anterior. Discutir corticoterapia no momento apropriado e sinais de alarme.
 
 **Por que importa:** MCMA não recebe calendário de DCDA só porque crescimento está normal.
+
+
+### Caso 9 — Hemorragia pós-parto após gestação gemelar
+
+Gestante DCDA de 37 semanas sem complicações, primeiro feto cefálico e pesos próximos, realiza parto vaginal planejado com equipe experiente. Após nascimento dos dois e dequitação, apresenta sangramento volumoso e taquicardia. Ao exame, o útero está hipotônico.
+
+**Hipótese principal:** hemorragia pós-parto por atonia uterina associada à sobredistensão. **Raciocínio:** mesmo parto por via adequada não elimina risco de atonia em múltiplos; avaliar simultaneamente **tônus, trauma, tecido e coagulação** e gravidade hemodinâmica. **Conduta:** ativar protocolo institucional de hemorragia, ressuscitar e administrar terapias uterotônicas/hemostáticas conforme equipe e contraindicações, avaliar necessidade de medidas adicionais e sangue, sem atrasar controle de foco. O detalhamento de doses e escalonamento fica na apostila LURIA específica. **Por que importa:** lembra que o alto risco gemelar inclui morbidade materna e planejamento de resposta no terceiro período, não apenas prematuridade neonatal.
 
 ## 18. Questões de residência — alternativas e comentários
 
@@ -694,6 +701,19 @@ E) Prescrever antibiótico universal para evitar lesão neurológica.
 
 **Gabarito: C.** Circulação compartilhada cria risco de lesão aguda, mas antecipação imprudente também acarreta prematuridade. **A incorreta:** parto não reverte lesão já ocorrida em muitos casos. **B incorreta:** BCF isolado não exclui dano cerebral. **D incorreta:** corionicidade não muda. **E incorreta:** antibiótico não trata choque circulatório intergemelar. **Mini revisão:** corionicidade e cronologia do evento guiam avaliação e aconselhamento.
 
+
+### Questão 13 — Elegibilidade ao parto vaginal em gemelares
+
+Segundo NICE NG137, qual gestação pode ser candidata a tentativa planejada de parto vaginal?
+
+A) Qualquer MCMA, independentemente da apresentação.
+B) DCDA ou MCDA não complicada após 32 semanas, primeiro feto cefálico, sem grande discordância de pesos nem contraindicação obstétrica, com equipe apropriada.
+C) Todo caso em que o primeiro feto é pélvico, sem avaliação.
+D) Toda gestação com TTTS estágio IV não tratada, independentemente da idade.
+E) Qualquer situação sem disponibilidade de cesariana de emergência.
+
+**Gabarito B.** **A incorreta:** MCMA geralmente requer cesariana planejada por risco de cordão. **B correta:** os critérios da NICE permitem escolha informada de via com experiência e recursos. **C incorreta:** primeiro não cefálico é indicação para oferecer cesariana na janela apropriada. **D incorreta:** TTTS avançada necessita tratamento/avaliação especializada. **E incorreta:** a via planejada só é segura com capacidade de resposta à emergência. **Mini revisão:** gestação gemelar por si só não impõe cesariana; apresentação do primeiro, corionicidade, complicações e infraestrutura importam.
+
 ## 19. Pérolas de prova e prática
 
 1. **“Duas bolsas” não prova DCDA.** MCDA possui dois âmnios, uma placenta.
@@ -757,7 +777,7 @@ Nenhuma imagem será embutida no manuscrito, e nenhuma fonte privada do Drive se
 | Momento/via de parto e neonatal | redigido; reconciliar protocolo brasileiro |
 | Algoritmos originais | quatro fluxos |
 | Casos comentados | oito casos autorais |
-| Questões comentadas | doze questões autorais |
+| Questões comentadas | treze questões autorais |
 | Proposta de imagens | dez candidatas, **zero aprovadas/inseridas** |
 | Apostila correlata LURIA aberta | pré-natal e crescimento fetal efetivamente consultados |
 | PDF gemelar equivalente no Drive | **PENDENTE**; apenas referências gerais foram abertas |
@@ -767,386 +787,3 @@ Nenhuma imagem será embutida no manuscrito, e nenhuma fonte privada do Drive se
 | Estado de publicação | **RASCUNHO NÃO PUBLICADO** |
 
 **Regra de segurança:** percentis, cutoffs, testes e diretrizes são auxiliares da avaliação; não transformá-los em prescrição individual sem revisão de idade gestacional, situação fetal, conduta de alto risco e disponibilidade hospitalar. Até validação especializada, a apostila permanece peça editorial, não protocolo assistencial.
-
-## 13. Momento do nascimento: risco de prematuridade versus permanência intrauterina
-
-A idade para parto planejado em gemelares depende sobretudo de **corionicidade, amnionicidade e complicações**. O parto antecipado expõe recém-nascidos à morbidade da prematuridade; a postergação pode elevar risco de morte fetal, sobretudo em circulação compartilhada. Uma semana de referência não substitui a avaliação de crescimento, Dopplers, líquido, doença materna, trabalho de parto e estrutura neonatal.
-
-### 13.1. Referência NICE NG137 para gestações NÃO complicadas
-
-| Gestação | Parto planejado segundo NICE | Por que não prolongar indiscriminadamente? |
-|---|---|---|
-| **DCDA** | **37 semanas** | o risco de morte fetal aumenta além de 37+6 |
-| **MCDA** | **36 semanas** | além de 36+6 há aumento de risco de morte fetal |
-| **MCMA** | **32+0 a 33+6 semanas** | risco de cordão e morte fetal; necessidade neonatal frequente |
-| **Trigemelar tricoriônica triamniótica ou dicoriônica triamniótica** | **35 semanas** | prematuridade comum; não prolongar além de 35+6 sem análise individual |
-| **Tripletos com corionicidade/amnionicidade de maior risco ou qualquer múltipla complicada** | **individualizar** | não transpor janelas de gestações não complicadas |
-
-**Origem:** NICE NG137, seção de momento do parto. Os limites são do Reino Unido e devem ser confrontados com protocolos obstétricos brasileiros atualizados. Não aplicar DCDA 37 semanas à paciente com pré-eclâmpsia grave nem MCDA 36 semanas à TTTS com deterioração fetal.
-
-### 13.2. Exceção pós-laser por TTTS
-
-A **SMFM Consult #72 (2024)** recomenda, para **MCDA com os dois fetos vivos e TTTS resolvida após laser**, sem nova indicação de antecipação, parto entre **34 e 36 semanas**. Isso difere de MCDA nunca complicada. Na circunstância muito específica de morte de um feto após laser, com sobrevivente estável, a SMFM menciona parto a termo em **39 semanas**, salvo nova indicação; essa orientação **não pode ser extrapolada** a qualquer morte monocoriônica espontânea. A via de parto **não é determinada pelo laser isoladamente**.
-
-### 13.3. Razões para antecipar
-
-Doença hipertensiva grave, eclâmpsia/HELLP, sangramento materno, infecção intrauterina importante, rotura de membranas em contexto de indicação, sofrimento fetal, Doppler críticamente anormal, TTTS/TAPS progressiva, restrição seletiva com descompensação ou complicações de cordão em MCMA podem exigir antecipação. Para cada cenário, ponderar risco fetal versus prematuridade, recursos de UTI neonatal, corticosteroide antenatal em janela apropriada e disponibilidade de intervenção fetal.
-
-**Conduta se recusar parto planejado no período recomendado pela NICE:** aconselhamento e seguimento semanal obstétrico especializado com ultrassonografia, líquido e Doppler umbilical de cada feto, além de crescimento segundo intervalo indicado; documentar decisão compartilhada.
-
-## 14. Via de parto: apresentação do primeiro feto e capacidade da equipe
-
-### 14.1. DCDA ou MCDA com primeiro cefálico
-
-NICE NG137 considera **parto vaginal planejado e cesariana planejada opções seguras** na gestação gemelar não complicada **após 32 semanas**, desde que primeiro feto esteja **cefálico**, não haja contraindicação obstétrica e **não haja grande discordância de tamanhos**. A escolha requer obstetra experiente em gemelares, possibilidade de cesariana de emergência, anestesia, sangue quando indicado e equipe neonatal preparada para dois bebês. A gestante deve conhecer possibilidades e riscos de ambas as vias.
-
-A NICE registra que mais de um terço das pessoas que planejam parto vaginal de gêmeos acaba em cesariana, e pequena parcela pode ter parto vaginal do primeiro seguido de cesariana do segundo. Isso deve integrar consentimento, sem transformar a estatística em argumento para negar tentativa vaginal às pacientes elegíveis.
-
-### 14.2. Primeiro gemelar não cefálico
-
-Se primeiro gemelar não está cefálico no parto planejado, a NICE recomenda **oferecer cesariana**; também a recomenda no trabalho de parto estabelecido de 26 a 32 semanas com primeiro não cefálico. Antes de 26 semanas, a decisão é individualizada por riscos maternos, viabilidade e contexto. Não usar a apresentação do segundo como substituto do critério do primeiro.
-
-### 14.3. Segundo gemelar pode mudar de apresentação
-
-Depois de nascer o primeiro, o espaço uterino muda e o segundo pode estar em apresentação cefálica ou pélvica. Reavaliar apresentação e frequência cardíaca do segundo feto. Manobras especializadas, inclusive extração pélvica do segundo em determinados cenários, dependem de equipe treinada e critérios obstétricos; não devem ser descritas como rotina executável sem supervisão. Deterioração fetal, apresentação desfavorável ou falha de progressão podem exigir cesariana do segundo.
-
-### 14.4. MCMA e trigêmeos
-
-Para **MCMA**, NICE indica cesariana no parto planejado entre 32+0 e 33+6 ou quando complicações imponham antecipação, com exceções restritas de expulsivo muito avançado sob decisão obstétrica experiente. Para trigêmeos, via e tempo são decididos de acordo com número, apresentações, corionicidade, complicações e centro especializado; cesariana frequentemente integra planejamento.
-
-### 14.5. Segurança intraparto e pós-parto
-
-Confirmar **dois traçados fetais distintos**, evitando registrar batimentos da mãe ou do mesmo gêmeo em ambos os canais. Ultrassom pode ajudar a identificar apresentação e monitorização. Prever acesso venoso, equipe de anestesia, unidades neonatais identificadas e disponibilidade de intervenção rápida. Preparar profilaxia/manejo de **hemorragia pós-parto por atonia** associada a sobredistensão uterina; revisar anemia e reserva de sangue conforme risco. A aula LURIA de hemorragia pós-parto contém escalonamento específico de uterotônicos, evitando duplicações.
-
-O prontuário neonatal deve distinguir rótulos antenatais A/B dos **primeiro/segundo a nascer** para prevenir troca de amostras e interpretações dos Dopplers pré-natais.
-
-## 15. Cuidados maternos, comunicação e seguimento puerperal
-
-### 15.1. Educação sem alarmismo
-
-Explicar à gestante que corionicidade determina calendário porque anastomoses placentárias modificam risco, mas não significa que todos os gêmeos terão complicações. Registrar qual bolsa contém cada feto e como a equipe os identifica. Fornecer sinais que exigem reavaliação: sangramento importante, perda líquida, contrações regulares, redução marcante de movimentos, hipertensão grave com cefaleia/escotomas/epigastralgia, dispneia ou piora súbita.
-
-### 15.2. Intervenções fetais e incerteza
-
-Laser fetoscópico para TTTS avançada, terapias para TRAP e manejo especializado de TAPS ou sFGR dependem de recursos, janela gestacional e risco. Explicar possibilidades de melhora, rotura prematura de membranas, prematuridade, nova intervenção e comprometimento do outro feto. **Não prometer sobrevivência de ambos nem tratar percentual populacional como garantia individual.** Envolver equipe de terapia fetal, obstetrícia, neonatologia e apoio psicológico.
-
-### 15.3. Morbidade materna e puerpério
-
-Risco de hipertensão, anemia e hemorragia exige seguimento materno mesmo quando fetos têm bons exames. No puerpério, planejar amamentação de múltiplos, manejo de prematuridade/UTI neonatal, sono, suporte de cuidadores, triagem de depressão e exaustão, e retorno obstétrico. Após óbito de um gêmeo, reconhecer luto e necessidades de cuidado psicológico sem minimizar pela sobrevivência do outro.
-
-### 15.4. Malformação de um feto e decisões éticas
-
-Em MCDA, intervenção sobre um feto pode repercutir no outro pelas conexões circulatórias. Decisões sobre anomalia grave, cuidado paliativo, interrupção seletiva ou redução fetal requerem aconselhamento multidisciplinar e avaliação de legislação brasileira, não simples importação de recomendações estrangeiras. Informar opções existentes no contexto assistencial, sem instruir procedimentos invasivos fora de ambiente especializado.
-
-## 16. Seis fluxogramas de decisão
-
-### Fluxo A — Primeira ultrassonografia gemelar
-
-Confirmar número/vitalidade → datar gestação → estabelecer **corionicidade/amnionicidade** com sinais lambda/T e membrana → rotular fetos pela posição → encaminhar corionicidade incerta → programar US apropriado → registrar maternidade e sinais de alerta.
-
-### Fluxo B — MCDA com líquido discordante
-
-Medir bolsão vertical máximo em **cada bolsa** → avaliar bexigas, crescimento, AU/ducto venoso e coração → verificar oligo/polidrâmnio → classificar TTTS por **Quintero** → estágio II–IV entre 16–26 semanas: referência rápida para **laser fetoscópico** → estágio I sem sintomas pode requerer monitorização **ao menos semanal** → pós-laser vigiar recorrência/TAPS/sFGR.
-
-### Fluxo C — MCDA com líquidos semelhantes, ACM alterada
-
-Confirmar técnica da **PSV-ACM** e MoM por idade → doador >1,5 e receptor <1,0 MoM, ou diferença >0,5 MoM, sustenta suspeita de **TAPS** segundo SMFM → estratificar gravidade → referenciar centro fetal → individualizar intervenção e parto. Líquidos normais não excluem TAPS.
-
-### Fluxo D — Peso discordante
-
-Obter PFE, percentis, AU e líquido de cada feto → diferença (%) = (maior − menor)/maior × 100 → discordância ≥20% **ou** PFE <p10, aumentar vigilância segundo NICE → na MCDA classificar sFGR tipo I/II/III por AU do menor → integrar Dopplers e idade gestacional antes de decidir parto.
-
-### Fluxo E — Escolha de nascimento
-
-Confirmar **não complicação** versus necessidade de antecipação → usar NICE DCDA 37, MCDA 36, MCMA 32–33+6, tripletos selecionados 35 semanas → avaliar primeiro gemelar, discordância e equipe → discutir parto vaginal se DCDA/MCDA ≥32 semanas sem contraindicação e primeiro cefálico → oferecer cesariana se primeiro não cefálico ou em MCMA conforme NICE → preparar neonatologia e hemorragia.
-
-### Fluxo F — Sinal de alarme
-
-Hemorragia, pré-eclâmpsia grave, perda líquida, trabalho de parto prematuro, hidropisia, suspeita TTTS/TAPS avançada, Doppler crítico, redução de movimentos ou óbito fetal → **avaliação obstétrica urgente**, sem esperar consulta marcada → monitorização dos fetos e suporte materno → decisão por medicina fetal/obstetrícia/neonatologia.
-
-## 17. Diferenciais e pérolas
-
-| Achado | Interpretação a priorizar | Erro a evitar |
-|---|---|---|
-| Lambda no primeiro trimestre | DCDA | chamar placenta fusionada de monocoriônica |
-| Inserção em T | MCDA | assumir que duas bolsas implicam duas placentas |
-| Ausência confirmada de septo | MCMA | tratar como MCDA sem avaliar cordões |
-| Doador oligo + receptor poli | TTTS | confundir toda discordância ponderal com TTTS |
-| PSV-ACM discordante sem sequência de líquidos | TAPS | excluir complicação por líquido normal |
-| Doppler AU de menor com fluxo intermitentemente ausente/reverso | sFGR MC tipo III | usar único Doppler normal como garantia |
-| Feto acárdico perfundido pelo outro | TRAP | confundir com óbito isolado |
-| Primeiro cefálico em DCDA/MCDA não complicada | via vaginal pode ser opção | cesariana obrigatória para toda gemelar |
-| MCMA | parto antecipado com cesariana planejada | aguardar 37–40 semanas |
-| TTTS resolvida após laser | SMFM 34–36 semanas se ambos vivos | usar calendário de MCDA nunca complicada |
-
-## 18. Oito casos clínicos comentados
-
-### Caso 1 — Dois meninos, um lambda: classificação precoce
-
-Gestante G2P1 com 12 semanas e 4 dias realiza US. Há dois fetos vivos do mesmo sexo e membrana intergemelar aparentemente espessa com cunha triangular de tecido placentário na inserção. As massas placentárias parecem fundidas. Não há anomalias evidentes nessa idade.
-
-**Hipótese:** gestação **DCDA**, pela presença do **sinal do lambda**. **Raciocínio:** sexo igual não significa monozigose ou monocorionicidade; placentas anatomicamente fusionadas podem manter dois corions. O número de bolsas deve ser registrado separadamente da corionicidade.
-
-**Exames/seguimento:** documentar lambda com imagens e posição de A/B, datação pelo protocolo, rastreamentos/avaliação anatômica e cronograma de crescimento, em geral a cada quatro semanas após morfológico segundo ISUOG 2025 para DCDA não complicada. Se houver discordância de crescimento ou complicações, intensificar.
-
-**Conduta de prova:** não agendar US quinzenal de TTTS como obrigação de DCDA sem suspeita, nem planejar nascimento nas 32 semanas de MCMA. **Por que importa:** o erro fundamental é inferir corionicidade pelo sexo ou número de massas visíveis, e não pela interface corial precoce.
-
-### Caso 2 — MCDA de 20 semanas com sequência oligo/polidrâmnio
-
-Gestante com MCDA confirmada apresenta dispneia por distensão uterina e crescimento abdominal rápido. US mostra bolsão vertical máximo do feto A = 1,3 cm; do feto B = 10,4 cm. A bexiga de A não aparece durante avaliação adequada; Dopplers de AU e ducto venoso não apresentam sinais críticos documentados; sem hidropisia.
-
-**Hipótese:** **TTTS estágio II de Quintero**, depois de exclusão de ruptura de membrana/anomalia urinária e confirmação técnica. **Interpretação:** critérios de oligo/polidrâmnio com bexiga do doador não visualizada e sem alterações Doppler que indiquem estágio III. O quadro é hemodinâmico por anastomoses, não uma mera discrepância de peso.
-
-**Exames/conduta:** avaliação cardíaca e Dopplers completos de ambos, encaminhamento urgente a **centro de terapia fetal**. Entre 16–26 semanas, estágio II–IV tem **laser fetoscópico de anastomoses como tratamento-padrão** na SMFM 2024. A drenagem de líquido sem tratamento das anastomoses não é equivalente no cenário típico. Informar riscos de RPMO, prematuridade, recorrência e TAPS pós-laser.
-
-**Por que importa:** a prova pode oferecer “observar mensalmente” ou “amnioredução definitiva” como opções que não corrigem o mecanismo.
-
-### Caso 3 — MCDA sem grande discordância de líquido: a TAPS
-
-Gestante de 25 semanas em acompanhamento quinzenal de MCDA tem bolsões de 4,1 e 4,6 cm e bexigas visíveis. PSV-ACM medida corretamente: A = **1,62 MoM** e B = **0,89 MoM**. Há diferença de 0,73 MoM, sem sinais clássicos de TTTS.
-
-**Hipótese:** suspeita de **TAPS**, com A potencialmente anêmico e B policitêmico. **Interpretação:** satisfaz critérios de SMFM pelo par de velocidades (>1,5 e <1,0 MoM) e pela diferença >0,5. Líquido semelhante não exclui transfusão hematológica crônica; avaliar técnica e outras causas de anemia.
-
-**Conduta:** encaminhar medicina fetal, estratificar estágio e gravidade, registrar AU, ducto venoso e coração, discutir vigilância ou intervenção conforme idade e evolução. Não inferir anemia fetal a partir do hemograma da mãe. Em estágio II ou superior antes de 32 semanas, SMFM recomenda consulta a centro especializado.
-
-**Por que importa:** identifica a pegadinha “não há polidrâmnio, portanto não há transfusão”.
-
-### Caso 4 — Restrição seletiva em MCDA e Doppler intermitente
-
-Gestante MCDA de 27 semanas apresenta estimativas A = 1.260 g e B = 820 g, com B abaixo do p10; discordância = **34,9%**. Doppler seriado da AU de B mostra episódios alternados de fluxo diastólico presente e ausente/reverso. Não há sequência oligo/polidrâmnio típica de TTTS.
-
-**Hipótese:** sFGR em MCDA, **tipo III** se padrão intermitente de ausência/reversão diastólica for confirmado. **Raciocínio:** tipo I teria fluxo diastólico positivo; tipo II persistentemente ausente ou reverso. Tipo III relaciona-se a hemodinâmica instável da circulação compartilhada e não é tranquilizado por um exame de Doppler normal entre episódios.
-
-**Conduta:** medicina fetal, vigilância próxima do crescimento e Dopplers, avaliação de vitalidade/ducto venoso, exclusão de TTTS/TAPS e discussão de parto ou intervenção conforme risco e idade gestacional. Não aplicar rotina de DCDA sem complicações. **Por que importa:** interpretação de padrões seriados é mais forte que foto isolada do traçado.
-
-### Caso 5 — Colo curto em gemelar e divergência entre diretrizes
-
-Gestante DCDA com 18 semanas e colo uterino transvaginal padronizado medindo **22 mm**, sem contrações, ruptura de membranas ou dilatação clínica. Exames fetais sem complicações.
-
-**Problema clínico:** maior risco de prematuridade espontânea por colo curto em gestação múltipla. **Interpretação normativa:** NICE NG137, atualização 2024, recomenda uma avaliação entre 16–20 semanas e **progesterona vaginal 200 mg ao deitar até 34 semanas** quando colo ≤25 mm, podendo iniciar até 24 semanas se identificado tardiamente. A própria diretriz assinalou uso off-label de 200 mg em 2024. Isso **não significa prescrição automática brasileira**.
-
-**Conduta:** discutir risco/benefício e disponibilidade com pré-natal de alto risco, verificar protocolo e Anvisa locais, revisar história de perda gestacional/parto prematuro, acompanhar sintomas. Não indicar repouso absoluto ou cerclagem rotineiramente apenas porque são gêmeos. **Por que importa:** questão pode confundir recomendação NICE para colo curto com progesterona intramuscular indiscriminada, que a diretriz não recomenda.
-
-### Caso 6 — MCMA sem intercorrência às 32 semanas
-
-Gestante de 32 semanas e 2 dias com **monocoriônica monoamniótica confirmada**, dois fetos vivos, crescimento aceitável, sem sinais atuais de comprometimento. Equipe possui UTI neonatal.
-
-**Hipótese/risco:** MCMA — compartilhamento de bolsa favorece entrelaçamento de cordões e morte fetal imprevisível. **Interpretação:** não é MCDA “com membrana muito fina”; a ausência de septo foi confirmada no acompanhamento especializado.
-
-**Conduta:** segundo NICE NG137, oferecer **cesariana planejada entre 32+0 e 33+6**, após consideração de corticoterapia conforme protocolo de parto pré-termo e preparação neonatal. Manter monitorização e reavaliação, inclusive se a gestante não aceitar parto na janela. Não esperar 36–37 semanas apenas porque fetos estão bem naquele exame. **Por que importa:** planejamento do nascimento integra prevenção de morte fetal não prevista por ultrassom isolado.
-
-### Caso 7 — Um gemelar morto, o outro vivo
-
-Gestante de 28 semanas MCDA sem laser prévio chega após redução percebida de movimentos. US confirma óbito do feto A; B tem batimentos presentes, sem hidropisia. Família deseja cesariana imediata por medo de lesão cerebral.
-
-**Problema:** risco hemodinâmico e de lesão neurológica do sobrevivente pela circulação placentária compartilhada; prognóstico não é garantido por frequência cardíaca presente. **Diferenciais/avaliação:** confirmar corionicidade, procurar alterações de Doppler e anemia, revisar o contexto de morte, avaliar B e condição materna, discutir neuroimagem fetal em janela apropriada.
-
-**Conduta:** encaminhamento imediato a medicina fetal com neonatologia e apoio psicológico. **Parto imediato não reverte dano que já tenha ocorrido** e pode impor prematuridade grave; o momento de nascimento precisa ser individualizado com base em vitalidade e risco atual. Não aplicar automaticamente a recomendação SMFM de 39 semanas após óbito **pós-laser** a este quadro **sem laser**. **Por que importa:** une risco da placenta compartilhada a decisões clínicas com prognóstico incerto e comunicação cuidadosa.
-
-### Caso 8 — Parto vaginal gemelar e hemorragia uterina
-
-Gestante DCDA de 37 semanas, gêmeos sem crescimento discordante importante, primeiro cefálico, equipe completa e parto vaginal planejado após aconselhamento. Ambos nascem com assistência apropriada. Logo após dequitação, inicia sangramento volumoso; útero está amolecido, com hipotonia, FC materna aumenta.
-
-**Hipótese principal:** **hemorragia pós-parto por atonia uterina** no contexto de sobredistensão prévia. **Diferenciais:** laceração genital, tecido placentário retido, coagulopatia e outras causas, a avaliar simultaneamente.
-
-**Conduta:** chamar equipe e seguir protocolo institucional de hemorragia pós-parto, suporte hemodinâmico e terapia uterotônica/hemostática conforme avaliação; pesquisar causas e registrar perdas. A escolha correta da via de parto **não elimina** risco de hemorragia. Planejamento antenatal de acesso e equipe ajuda na resposta. **Por que importa:** prova pode associar gemelaridade apenas a prematuridade fetal, esquecendo morbidade materna.
-
-## 19. Doze questões de múltipla escolha — comentários em TODAS as alternativas
-
-### Questão 1 — Corionicidade pela imagem
-
-Gestação gemelar de 12 semanas, membrana relativamente espessa e sinal do lambda na inserção placentária. Diagnóstico mais provável?
-
-A) MCMA.  
-B) MCDA.  
-C) DCDA.  
-D) Gravidez única com banda amniótica.  
-E) TTTS.
-
-**Gabarito C.** **A incorreta:** MCMA não tem membrana divisória. **B incorreta:** MCDA tende a sinal do T e membrana fina. **C correta:** lambda reflete cunha de tecido coriônico entre sacos. **D incorreta:** há dois embriões e dois sacos. **E incorreta:** TTTS é complicação circulatória, não classificação de corionicidade. **Mini revisão:** sexo dos fetos e massas placentárias fusionadas não substituem sinal corial precoce.
-
-### Questão 2 — Intervalo de US na MCDA
-
-Em MCDA não complicada, segundo ISUOG/SMFM, a vigilância de TTTS deve iniciar:
-
-A) Às 24 semanas, mensalmente.  
-B) Às 16 semanas, no mínimo a cada duas semanas.  
-C) Só com polidrâmnio.  
-D) Apenas no primeiro trimestre.  
-E) Depois de 32 semanas, semanalmente.
-
-**Gabarito B.** **A incorreta:** perde apresentações precoces. **B correta:** rastreio quinzenal a partir de 16 semanas. **C incorreta:** vigilância é preventiva, não só por sintomas. **D incorreta:** doenças podem surgir após o primeiro trimestre. **E incorreta:** esperar 32 semanas é tardio. **Mini revisão:** placenta compartilhada exige busca ativa de líquidos e bexigas.
-
-### Questão 3 — Quintero II
-
-MCDA de 21 semanas tem doador com bolsão 1 cm, receptor com 11 cm, bexiga do doador persistentemente não vista e sem alterações Doppler graves. Estágio?
-
-A) I.  
-B) II.  
-C) III.  
-D) IV.  
-E) V.
-
-**Gabarito B.** **A incorreta:** estágio I conserva bexiga visível. **B correta:** TTTS com bexiga do doador ausente. **C incorreta:** exige Doppler criticamente anormal. **D incorreta:** hidropisia. **E incorreta:** morte fetal. **Mini revisão:** critérios são hierárquicos; no estágio III, Doppler prevalece sobre bexiga.
-
-### Questão 4 — Terapia para TTTS estágio III
-
-MCDA com 22 semanas e TTTS Quintero III, ambos vivos e sem contraindicação à intervenção. Opção considerada padrão na SMFM 2024?
-
-A) Apenas repouso por um mês.  
-B) Antibioticoterapia empírica.  
-C) Laser fetoscópico das anastomoses em centro especializado.  
-D) Transfusão materna de hemácias.  
-E) Cerclagem sistemática.
-
-**Gabarito C.** **A incorreta:** doença progressiva e risco fetal. **B incorreta:** não é infecção. **C correta:** TTTS II–IV, 16–26 semanas, indicação consolidada. **D incorreta:** o mecanismo é circulação placentária, não anemia da gestante. **E incorreta:** cerclagem não corrige transfusão. **Mini revisão:** amnioredução selecionada não é equivalente à ablação causal.
-
-### Questão 5 — Reconhecer TAPS
-
-MCDA com líquidos semelhantes, PSV-ACM A 1,65 MoM e B 0,85 MoM. Principal hipótese?
-
-A) TAPS.  
-B) DCDA fisiológica.  
-C) Necessariamente TTTS estágio IV.  
-D) Gestação MCMA.  
-E) Diabetes gestacional como causa única.
-
-**Gabarito A.** **A correta:** diferença hematológica por anastomoses pequenas; valores sustentam suspeita conforme SMFM. **B incorreta:** já há diagnóstico MCDA. **C incorreta:** estágio IV requer hidropisia, e TTTS tem critérios próprios de líquido. **D incorreta:** amnionicidade não muda pelo Doppler. **E incorreta:** diabetes não explica esse padrão específico. **Mini revisão:** TAPS pode ter líquido amniótico normal nos dois sacos.
-
-### Questão 6 — sFGR tipo III
-
-MCDA com feto menor <p10 e Doppler umbilical que alterna fluxo diastólico positivo com ausente/reverso. Classificação?
-
-A) Tipo I.  
-B) Tipo II.  
-C) Tipo III.  
-D) TTTS Quintero I obrigatoriamente.  
-E) Não há restrição porque o fluxo às vezes é positivo.
-
-**Gabarito C.** **A incorreta:** tipo I mantém diástole positiva. **B incorreta:** tipo II apresenta ausência/reversão persistente. **C correta:** padrão intermitente caracteriza tipo III. **D incorreta:** não há informação de oligo/polidrâmnio. **E incorreta:** alternância não exclui risco. **Mini revisão:** avaliar traçados seriados e anastomoses em placenta compartilhada.
-
-### Questão 7 — Cálculo de discordância
-
-Gêmeos têm PFE 1.600 g e 1.200 g. Discordância calculada corretamente é:
-
-A) 20%.  
-B) 25%.  
-C) 30%.  
-D) 33,3%.  
-E) 40%.
-
-**Gabarito B.** **B correta:** (1600−1200)/1600×100 = 25%. **A incorreta:** subestima. **C incorreta:** não decorre do denominador correto. **D incorreta:** é resultado de dividir 400 por 1200, o **menor** peso. **E incorreta:** não corresponde aos dados. **Mini revisão:** o denominador padronizado é o PFE do maior feto; depois interpretar percentis e Dopplers.
-
-### Questão 8 — Colo curto e diretriz britânica
-
-NICE NG137 atualizada em 2024: gemelar com colo de 23 mm medido às 18 semanas deve receber oferta de qual intervenção segundo essa norma?
-
-A) Progesterona vaginal 200 mg noturna até 34 semanas, após discussão e elegibilidade.  
-B) Progesterona intramuscular em todas.  
-C) Repouso absoluto obrigatório.  
-D) Cerclagem de rotina independentemente de outros fatores.  
-E) Tocolítico profilático oral até parto.
-
-**Gabarito A.** **A correta:** texto da NICE para colo ≤25 mm, devendo ser reconciliado com protocolo brasileiro. **B incorreta:** NICE não recomenda progestágeno IM rotineiro. **C incorreta:** repouso não reduz risco de forma confiável e tem danos. **D incorreta:** cerclagem não é rotina universal em gêmeos. **E incorreta:** profilaxia indiscriminada não é recomendada. **Mini revisão:** NICE é referência **internacional**, não receita automática no SUS.
-
-### Questão 9 — Parto DCDA sem complicação
-
-Segundo NICE NG137, na DCDA não complicada, o parto planejado costuma ser oferecido em:
-
-A) 32 semanas.  
-B) 34 semanas.  
-C) 35 semanas.  
-D) 37 semanas.  
-E) 40 semanas.
-
-**Gabarito D.** **A incorreta:** janela típica MCMA, com outras condições. **B incorreta:** pode ocorrer em complicações, não DCDA rotina. **C incorreta:** janela de trigêmeos selecionados. **D correta:** DCDA não complicada em 37 semanas. **E incorreta:** continuar até 40 sem indicação eleva risco. **Mini revisão:** memorizar DCDA 37, MCDA 36, MCMA 32–33+6; individualizar quando há complicações.
-
-### Questão 10 — Via de parto
-
-DCDA com 36+5 semanas, sem complicações, primeiro feto cefálico, pesos próximos, ausência de contraindicação e equipe treinada; entrou espontaneamente em trabalho de parto. Qual é a melhor afirmação?
-
-A) Toda gemelar exige cesariana.  
-B) Parto vaginal planejado pode ser opção segura, com equipe e monitorização apropriadas.  
-C) O segundo feto deve obrigatoriamente nascer antes do primeiro.  
-D) Não se monitora o segundo durante parto.  
-E) Gestação gemelar sempre contraindica analgesia obstétrica.
-
-**Gabarito B.** **A incorreta:** não há obrigação universal. **B correta:** critérios NICE para ≥32 semanas e primeiro cefálico. **C incorreta:** sem sentido obstétrico. **D incorreta:** é preciso distinguir dois traçados. **E incorreta:** plano de analgesia/anestesia integra cuidado. **Mini revisão:** apresentação do primeiro, discordância, complicações e experiência definem elegibilidade.
-
-### Questão 11 — MCMA e parto
-
-Gestante MCMA não complicada de 32+4 semanas, em centro especializado. Conduta planejada segundo NICE?
-
-A) Aguardar 40 semanas, pois os fetos estão vivos.  
-B) Cesárea planejada entre 32+0 e 33+6 semanas.  
-C) Cerclagem antes do nascimento.  
-D) Indução de parto vaginal obrigatória.  
-E) Suspender avaliação de cordões.
-
-**Gabarito B.** **A incorreta:** postergar pode aumentar risco de morte fetal. **B correta:** recomendação por risco de cordões. **C incorreta:** não trata risco central. **D incorreta:** MCMA tem recomendação de cesariana. **E incorreta:** avaliação especializada permanece. **Mini revisão:** duas bolsas versus uma bolsa modificam profundamente riscos e via.
-
-### Questão 12 — Morte de um gemelar na MCDA
-
-Em MCDA, morte súbita de um dos fetos coloca o sobrevivente em risco particular por:
-
-A) O fato de todos os gêmeos serem geneticamente diferentes.  
-B) Anastomoses vasculares placentárias, potencial instabilidade circulatória e dano neurológico.  
-C) Presença automática de diabetes gestacional.  
-D) Formação de terceira placenta.  
-E) Ausência de necessidade de seguimento quando há batimento fetal.
-
-**Gabarito B.** **A incorreta:** genética não explica o mecanismo. **B correta:** conexões vasculares podem produzir repercussão aguda. **C incorreta:** não é condição necessária. **D incorreta:** não ocorre. **E incorreta:** coração batendo não exclui injúria. **Mini revisão:** parto imediato nem sempre reverte lesão prévia e pode adicionar prematuridade; discutir individualmente com medicina fetal.
-
-## 20. Planejamento visual: dez imagens candidatas, zero aprovadas
-
-Esta é uma lista de **busca/seleção**, não imagens publicadas. Submeter cada candidata à fila **Admin → Imagens para aprovação**, conferir licença editorial e comercial, autoria, crédito, anonimização, coerência clínica, peso WebP e responsividade. A diretriz **ISUOG 2025 é publicada em acesso aberto sob CC BY**, o que possibilita avaliar uso editorial de figuras com atribuição conforme licença; conferir autoria/creditos individuais e eventuais figuras de terceiros antes de reaproveitar. Não usar automaticamente imagens retiradas de PDFs privados do Drive.
-
-| ID | Tipo de imagem | Onde usar | Legenda proposta e finalidade |
-|---|---|---|---|
-| 208-img-01 | Esquema original das unidades placentárias DCDA/MCDA/MCMA | §2 | “Corionicidade define circulação compartilhada; amnionicidade define bolsas” |
-| 208-img-02 | US real do sinal lambda | §3 | “Cunha de tecido coriônico na inserção da membrana: DCDA” |
-| 208-img-03 | US real do sinal T | §3 | “Inserção fina em T da membrana: MCDA” |
-| 208-img-04 | US com bexiga e bolsão de doador/receptor | §7 | “TTTS: oligodrâmnio em doador e polidrâmnio no receptor” |
-| 208-img-05 | Fluxograma original Quintero I–V | §7 | “Bexiga, Doppler, hidropisia e óbito determinam estágio” |
-| 208-img-06 | Doppler PSV-ACM de dois fetos com medidas MoM | §8 | “TAPS pode ocorrer sem discordância de líquido” |
-| 208-img-07 | Doppler AU com padrões I/II/III de sFGR | §9 | “Fluxo positivo, persistentemente ausente e intermitente” |
-| 208-img-08 | US Doppler de TRAP | §10 | “Perfusão retrógrada do acárdico pelo feto bomba” |
-| 208-img-09 | US de medida cervical por via transvaginal | §12 | “Comprimento cervical ≤25 mm: interpretar por protocolo” |
-| 208-img-10 | Linha do tempo LURIA de seguimento e parto | §§5,13 | “DCDA 4/4 semanas; MCDA quinzenal desde 16; janelas NICE de nascimento” |
-
-**Prioridade editorial:** procurar exames reais de corionicidade, TTTS, Dopplers TAPS/sFGR e TRAP antes de figuras decorativas. Imagens que não puderem ser verificadas juridicamente devem ser substituídas por esquemas originais próprios, com identificação clara de que são desenhos didáticos.
-
-## 21. Referências rastreáveis e o que cada uma sustenta
-
-1. **ISUOG Clinical Standards Committee.** *ISUOG Practice Guidelines (updated): role of ultrasound in twin pregnancy*. Ultrasound Obstet Gynecol. 2025. DOI **10.1002/uog.29166**. Texto oficial: https://www.isuog.org/static/89db40d1-928b-49bc-be5ea200fd41130c/ISUOG-Practice-Guidelines-role-of-ultrasound-in-twin-pregnancy.pdf . **Usada para:** ultrassonografia do primeiro trimestre, signos lambda/T, vigilância, TTTS/TAPS/sFGR/TRAP e morte de gemelar. **Licença:** artigo declara CC BY; verificar créditos de cada figura.
-2. **NICE.** *Twin and triplet pregnancy*. NG137, publicada 2019; seção de prevenção de prematuridade atualizada em 2024. https://www.nice.org.uk/guidance/ng137/chapter/recommendations . **Usada para:** cronograma, colo e progesterona, critérios de vigilância, tempo e via de parto. **Nota:** recomendação britânica, não substitui normas brasileiras.
-3. **Society for Maternal-Fetal Medicine.** *Consult Series #72: Twin-twin transfusion syndrome and twin anemia–polycythemia sequence*. Am J Obstet Gynecol. 2024. DOI **10.1016/j.ajog.2024.07.017**. https://publications.smfm.org/publications/574-society-for-maternal-fetal-medicine-consult-series-72/ . **Usada para:** US quinzenal desde 16 semanas, laser TTTS II–IV 16–26 semanas, vigilância pós-laser, diagnóstico de TAPS e parto pós-laser.
-4. **Ministério da Saúde do Brasil.** Manual/linhas de cuidado de gestação de alto risco — **referência nacional a reconciliar com versão vigente e protocolo local antes da publicação**. As fontes internacionais acima não confirmam, por si sós, indicação/regulação brasileira de terapias fetais ou progesterona vaginal em todos os contextos.
-5. **Conteúdos LURIA existentes consultados:** pré-natal baixo risco e crescimento intrauterino reduzido/aumentado, para manter remissões e evitar repetição. A mera existência dessas apostilas não implica validação do manuscrito 208.
-
-**Benchmark acadêmico via Drive:** os dois PDFs privados efetivamente examinados, assistência pré-natal e síndromes hipertensivas na gestação, são apenas **comparadores parciais**. Não foi localizada apostila específica de gemelaridade; este gate editorial segue pendente. Não publicar links ou documentos privados em repositório aberto.
-
-## 22. Auditoria editorial do manuscrito — estado real
-
-| Requisito | Situação |
-|---|---|
-| Anatomia e embriologia: zigoticidade, corionicidade e amnionicidade | redigido |
-| Interpretação de lambda/T, datação e mapa A/B | redigido |
-| DCDA versus MCDA versus MCMA | redigido |
-| Cronograma de US e risco materno | redigido, fonte NICE/ISUOG identificada |
-| TTTS Quintero, laser e pós-laser | redigido, baseado na SMFM 2024 |
-| TAPS, PSV-ACM e critérios | redigido; checar técnica na revisão especializada |
-| sFGR, Doppler I–III, TRAP, óbito de um gemelar | redigido |
-| Prematuridade, colo e progesterona | redigido; **reconciliar com Brasil** |
-| Janela de parto, apresentação e via | redigido; critérios internacionais distinguidos |
-| Fluxogramas | seis algoritmos |
-| Casos clínicos | oito casos com interpretação e conduta |
-| Questões originais | doze com comentários das cinco alternativas |
-| Imagens candidatas | dez sugestões; **zero imagens novas licenciadas, aprovadas ou integradas** |
-| Benchmark equivalente do Drive | **não encontrado**, dois comparadores parciais lidos |
-| Checagem de 60 mil caracteres úteis | **não certificada**; contagem bruta não garante utilidade |
-| Revisão médica independente | **não realizada** |
-| Testes de HTML, sintaxe e PWA | **não realizados** (arquivo Markdown) |
-| Situação de publicação | **MANUSCRITO, não publicado** |
-
-**Pendências obrigatórias:** leitura comparativa de material gemelar equivalente quando acessível; conferência de todas as recomendações internacionais contra normas brasileiras atuais; revisão por obstetra especializado em medicina fetal; verificação individual de licenças de imagens reais e aprovação no Admin; resolução de questões clínicas externas que testem lacunas sem usar texto redundante; auditorias de linguagem/extensão, scripts e interface mobile antes de qualquer deploy.
