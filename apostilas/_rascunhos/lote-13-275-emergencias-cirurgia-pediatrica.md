@@ -133,6 +133,281 @@ No RN masculino com jato fraco, globo vesical, hidronefrose bilateral, oligúria
 3. Não tentar reduzir manualmente massa com sinais de perfusão comprometida, peritonite ou choque.
 4. Se redução realizada em condição apropriada por equipe habilitada, observação e programação de reparo definitivo.
 
+
+## 12A. A primeira hora do abdome agudo pediátrico: estabilização, exames e prioridades
+
+### O abdome agudo da criança não é o abdome adulto em miniatura
+
+A fisiologia pediátrica modifica a apresentação de doenças cirúrgicas. O lactente tem reserva hídrica proporcionalmente menor diante de vômitos/diarreia, pode desenvolver hipoglicemia com jejum mais rapidamente e demonstra dor por choro, recusa alimentar, irritabilidade, postura e mudança do comportamento. Em neonato, **hipotermia**, letargia e perfusão ruim podem ser mais importantes que febre. Reconhecer essa diferença evita tranquilização pela ausência de sinais peritoneais clássicos.
+
+Primeira avaliação: **via aérea, ventilação, perfusão, consciência e exposição**. Registrar peso real/estimado confiável para qualquer prescrição, saturação, pressão adequada à idade, frequência cardíaca, perfusão capilar, diurese, glicemia e temperatura. Em criança com choque, iniciar cristaloide isotônico em bolus de acordo com contexto clínico e protocolo pediátrico, reavaliando imediatamente; casos de cardiopatia, nefropatia ou disfunção miocárdica exigem cuidado especial com sobrecarga. O objetivo é restaurar circulação sem atrasar controle de foco isquêmico/infeccioso.
+
+**Jejum, acesso venoso e analgesia adequada** devem ocorrer cedo quando há suspeita de obstrução, perfuração, necessidade de anestesia ou cirurgia; descompressão gástrica por sonda pode ser necessária em distensão e vômitos biliosos, sob avaliação da equipe. A falta de acesso periférico não autoriza retardar suporte vital em choque; alternativas de acesso seguem protocolo de emergência. Antiemético pode reduzir sintomas, mas **parar de vomitar após ondansetrona não exclui volvo, obstrução ou hipertensão intracraniana**.
+
+A família frequentemente descreve “vômito amarelo”, “verde” ou “parecido com bile” de forma diferente. Perguntar de modo concreto sobre **verde-escuro** é relevante porque **vômito verde bilioso em neonato exige excluir obstrução intestinal/malrotação-volvo urgentemente**. A criança pode estar sem distensão significativa e sem sangue nas fezes no início; isso não justifica observar em casa para ver se o episódio se repete.
+
+### Mapa sindrômico por sintomas dominantes
+
+| Síndrome inicial | Mecanismo a suspeitar | Prioridade nos primeiros minutos |
+| --- | --- | --- |
+| Neonato vomita verde, com ou sem distensão | Obstrução distal à ampola de Vater; malrotação/volvo | Cirurgia pediátrica imediata, jejum, ressuscitação e imagem apropriada sem atrasar intervenção |
+| Lactente com crises episódicas, palidez/letargia | Invaginação intestinal | USG inicial, hidratação, analgesia e retaguarda cirúrgica |
+| Lactente de semanas com vômitos progressivos não biliosos em jato | Estenose hipertrófica do piloro | Corrigir hipocloremia/alcalose antes de piloromiotomia |
+| Criança com FID dolorosa, febre e anorexia | Apendicite, adenite, ITU, inflamação intestinal, outras | Exame seriado e USG dirigida quando indicado |
+| Menino com dor abdominal e náusea súbita, sem causa digestiva clara | Torção testicular pode referir dor ao abdome | Exame escrotal e avaliação urológica urgente |
+| Massa inguinal dolorosa irredutível e vômito | Hérnia encarcerada/estrangulada | Jejum, analgesia, acesso e cirurgia imediata |
+| Prematuro com distensão e deterioração | Enterocolite necrosante, sepse, perfuração | Neonatologia + cirurgia, imagem e estabilização simultâneas |
+| RN sem mecônio e distensão progressiva | Hirschsprung, atresia, íleo meconial e outros | Localizar obstrução, descomprimir e avaliar cirurgia |
+
+Um **exame abdominal seriado** é frequentemente mais útil que uma única imagem mal indicada: documentar distensão, localização da dor, defesa, sinais de irritação peritoneal, estado da parede abdominal, hérnias, ruídos quando relevantes e evolução temporal. A criança que inicialmente permitia palpação e passa a apresentar defesa ou instabilidade mudou de categoria de risco.
+
+### Laboratório, imagem e radiação: cada exame deve responder a uma pergunta
+
+Glicemia, eletrólitos, creatinina, gasometria, lactato, hemograma, PCR e cultura são escolhidos pela gravidade e hipótese. **Lactato normal não exclui isquemia intestinal precoce**; lactato elevado com má perfusão pode sinalizar gravidade sistêmica sem apontar órgão. A presença de leucocitose também não distingue infecção abdominal de estresse fisiológico nem exclui doença cirúrgica quando ausente.
+
+A **radiografia de abdome** pode mostrar padrão obstrutivo, pneumoperitônio e pneumatoses, mas radiografia sem alterações não descarta malrotação/volvo. **Ultrassonografia** é método importante para apendicite, invaginação, piloro, trato urinário e avaliação de líquido, quando equipe e tempo permitem. **Contraste do trato gastrointestinal superior** é útil para suspeita de malrotação em criança estável; a equipe não deve aguardar exame confirmatório complexo se há choque, peritonite ou forte suspeita de necrose intestinal.
+
+A **tomografia com radiação ionizante** deve ser ponderada pela informação incremental. Em apendicite infantil, USG é geralmente primeira linha e RM pode ser segunda linha quando disponível e viável; TC de baixa dose tem lugar em casos selecionados, após avaliação clínica e imagens iniciais inconclusivas. “Tomografar toda dor abdominal antes de chamar cirurgião” multiplica radiação e pode atrasar procedimento sem benefício.
+
+## 12B. Vômitos e obstrução por faixa etária: malrotação, atresias, íleo meconial e Hirschsprung
+
+### Rotação/fixação embrionária e volvo do intestino médio
+
+Durante embriogênese, intestino médio gira e se fixa ao retroperitônio, alargando a base de sustentação mesentérica. Na **malrotação**, o mesentério pode permanecer de base estreita, permitindo torção em torno da artéria mesentérica superior. A torção compromete inicialmente retorno venoso e, com progressão, perfusão arterial de segmentos extensos do intestino. Isquemia prolongada pode causar necrose extensa, falência intestinal e necessidade de nutrição parenteral crônica.
+
+**Malrotação não é sinônimo de volvo em curso:** a primeira é predisposição anatômica, o segundo é emergência vascular. Em um neonato com vômito bilioso verde, a tarefa é excluir volvo antes que se estabeleça choque; a criança pode parecer bem entre episódios. **Risco não pode ser estratificado apenas pelo número de vômitos.**
+
+Quando estável, estudo contrastado alto avalia trajeto duodenal e posição da junção duodenojejunal; ultrassom especializado pode identificar relação vascular invertida, sinal de “redemoinho” mesentérico e alterações duodenais, mas um sinal isolado não é suficiente para descartar torção. Discussão com radiologia/cirurgia define método sem esperar evolução sintomática.
+
+**Procedimento de Ladd:** destorção quando presente, divisão de bandas obstrutivas, alargamento do pedículo mesentérico e reposicionamento das alças em posição não rotacionada para reduzir risco futuro; apendicectomia pode integrar procedimento conforme técnica e contexto. Se viabilidade intestinal é incerta, equipe pode considerar reavaliação cirúrgica programada; ressecar de imediato todo segmento questionável pode sacrificar intestino recuperável, mas retardar ressecção de tecido francamente inviável também é perigoso.
+
+### Atresias intestinais: nível determina o padrão
+
+Atresia duodenal, jejunoileal e obstrução distal podem se apresentar com **vômito bilioso, distensão variável e eliminação anormal de mecônio**. A imagem radiográfica pode demonstrar “dupla bolha” em obstrução duodenal completa; ausência de gás distal favorece obstrução completa, mas apresentações parciais existem. Em doença distal, múltiplas alças dilatadas e níveis hidroaéreos podem aparecer. Não inferir etiologia definitiva somente por uma bolha característica.
+
+A obstrução duodenal tem associações com **trissomia 21 e cardiopatias**, enquanto atresias jejunoileais podem decorrer de eventos vasculares fetais. A avaliação inclui estabilização, sonda de descompressão quando indicada, eletrólitos, busca de anomalias associadas e cirurgia neonatal planejada conforme estabilidade. Antibioticoterapia e suporte nutricional são individualizados; não há um único tempo “seguro” para todos os recém-nascidos.
+
+### Íleo meconial e a ligação com fibrose cística
+
+No íleo meconial, conteúdo intestinal espesso obstrui segmento distal do delgado, frequentemente relacionado à **fibrose cística**. O neonato pode ter distensão, ausência de evacuação, vômitos biliosos e achados característicos de conteúdo meconial em imagem. Na forma simples e sem evidências de perfuração/volvo, **enema contrastado terapêutico** pode ser considerado pela equipe em condições controladas; na forma complicada, cirurgia pode ser necessária.
+
+**Não é seguro** sugerir em casa enemas, laxantes agressivos ou aumento da alimentação antes de excluir obstrução. A ligação com fibrose cística justifica organização de triagem genética/metabólica e seguimento após resolução, mas a fibrose cística não é o único diagnóstico diferencial de obstrução neonatal.
+
+### Hirschsprung: obstrução funcional e emergência enterocolítica
+
+A **doença de Hirschsprung** resulta de ausência congênita de células ganglionares em extensão variável de intestino distal, causando falha de relaxamento e obstrução funcional. É típica a **eliminação tardia de mecônio** (frequentemente após 48 horas em RN a termo), distensão, vômito bilioso e dificuldade de evacuar desde cedo; contudo crianças com segmentos curtos podem ter sintomas mais tardios.
+
+Exames com contraste podem demonstrar alteração de calibre/transição, mas **biópsia retal adequada é fundamental para confirmação**. A manometria anorretal e técnicas histológicas podem integrar investigação especializada. Não chamar radiografia normal ou evacuação após estímulo retal de exclusão definitiva.
+
+**Enterocolite associada a Hirschsprung** é emergência que pode surgir antes ou após cirurgia: distensão, vômitos, febre/hipotermia, diarreia de odor alterado, letargia, má perfusão e risco de perfuração. A equipe estabelece hidratação, antibiótico de amplo espectro conforme sepse/organismos entéricos, descompressão intestinal e irrigação retal por pessoal capacitado quando indicada. Não realizar manipulação retal agressiva sem equipe cirúrgica; deterioração requer UTI e cirurgia imediata.
+
+### Enterocolite necrosante e diferença para alergia/intolerância alimentar
+
+Em prematuros, a imaturidade de barreira intestinal, microbiota e perfusão pode contribuir para **enterocolite necrosante (ECN)**, com distensão progressiva, intolerância alimentar, resíduo gástrico, sangue em fezes e instabilidade. Diagnóstico combina quadro clínico, gasometria/laboratório e radiografias ou USG para pneumatoses, gás portal, ascite complexa e perfuração. A classificação de Bell modificada auxilia a descrever intensidade, mas cada estágio exige julgamento individual.
+
+Conduta inicial envolve **interromper alimentação enteral, descomprimir estômago, reposição hemodinâmica/nutricional, antimicrobianos quando indicados e acompanhamento seriado** por neonatologia e cirurgia. Pneumoperitônio é forte indicação cirúrgica; deterioração clínica e sinais de necrose podem exigir abordagem mesmo sem ar livre evidente. O prognóstico depende do comprimento de intestino preservado e de complicações como estenoses e síndrome do intestino curto.
+
+## 12C. Invaginação ileocólica: por que a tríade de prova não é a porta de entrada
+
+### Sintomas mudam à medida que há congestão e comprometimento vascular
+
+Invaginação pode começar como crises intermitentes de dor abrupta, choro, pernas fletidas, palidez e vômito, seguidas de períodos de calma aparente. Esse comportamento paroxístico é produzido pelo peristaltismo contra segmento que comprime mesentério, causando obstrução e edema progressivos. **Letargia inexplicada isolada** pode ser apresentação predominante; atribuir letargia a virose banal sem examinar abdome pode atrasar diagnóstico.
+
+As fezes com sangue e muco em “geleia de groselha” representam achado clássico de congestão/isquemia, mas são tardias e aparecem somente em uma fração dos casos. **Não esperar sangramento retal** para solicitar USG em criança com crises sugestivas. Uma massa abdominal palpável pode estar ausente ou ser difícil de detectar.
+
+**USG** apresenta sinal de alvo em corte transversal e pseudorrim/“sanduíche” em corte longitudinal. Diferenciar **invaginação ileocólica** da invaginação transitória de segmentos de delgado pode alterar conduta; nem todo sinal alvo exige enema, e dimensão, localização, sintomas e sinais de obstrução orientam radiologia e cirurgia.
+
+### Redução e riscos: uma intervenção que exige retaguarda cirúrgica
+
+Na criança estável e sem peritonite/perfuração, **enema pneumático ou hidrostático guiado por imagem** é tratamento não operatório importante. Antes do procedimento, avaliar perfusão, desidratação e necessidade de analgesia/sedação; cirurgião e radiologia pediátrica devem coordenar porque perfuração pode ocorrer durante redução. O Royal Children's Hospital relata sucesso superior a 80% em equipes experientes, mas isso não permite prometer êxito individual.
+
+**Contraindicações:** peritonite, perfuração intestinal, choque ou instabilidade importante. Nesses casos, **a equipe avalia cirurgia**, e não “enema mais forte”. Em redução incompleta, pode haver nova tentativa selecionada se o paciente continua estável e a anatomia permite, sob decisão especializada; já falha com deterioração exige reavaliação cirúrgica.
+
+Após redução bem-sucedida, observar recorrência, tolerância de dieta, dor e possíveis sinais de perfuração. Orientar retorno imediato se novas crises, vômitos, sangue, letargia ou piora ocorrerem. A recorrência pode acontecer especialmente nas primeiras 24–48 horas. Em crianças mais velhas, episódios repetidos ou imagem atípica, buscar **ponto-gatilho patológico** como pólipo, Meckel ou linfoma.
+
+### Um exemplo de decisão e três alternativas erradas
+
+Lactente de 10 meses apresenta três crises de choro inconsolável e palidez intercaladas com brincadeira, um episódio de vômito e nenhuma evacuação com sangue; está estável e USG mostra invaginação ileocólica sem sinais de perfuração. Conduta apropriada: jejum, acesso, analgesia/hidratação, cirurgia pediátrica e redução por enema guiado com retaguarda.
+
+**Não** esperar fezes sanguinolentas para agir; **não** descartar porque a criança sorri entre crises; **não** realizar enema terapêutico sem avaliar estabilidade/peritonite nem retaguarda adequada.
+
+## 12D. Piloro, apendicite e diferenciais: a decisão terapêutica muda com o mecanismo
+
+### A alcalose do piloro é fator anestésico, não apenas pista de prova
+
+Na **estenose hipertrófica do piloro**, a muscular espessa dificulta a saída gástrica. O vômito é **não bilioso**, frequentemente em jato, surge após mamadas e se torna progressivo em lactente pequeno; pode ocorrer manutenção de apetite com falha de ganho ponderal. A bile entra no duodeno distal ao piloro, o que ajuda a compreender o caráter não verde do vômito: vômito **verde** obriga procurar outro nível de obstrução, sobretudo malrotação/volvo.
+
+Perdas contínuas de HCl produzem **hipocloremia e alcalose metabólica**, com contração de volume e resposta renal que pode levar a hipocalemia e manutenção paradoxal de urina ácida. Em criança com vômitos frequentes de muitos dias, a anestesia sem correção de desidratação e alcalose pode aumentar risco ventilatório e de apneia no perioperatório.
+
+**USG** é método de escolha, avalia espessura muscular/canal e passagem do conteúdo; pontos de corte dependem da idade e técnica. Em suspeita precoce com exame não confirmatório, reavaliar clinicamente e repetir imagem pode ser adequado. **Correção metabólica precede piloromiotomia**; ao contrário da isquemia por volvo, não se ganha segurança “operando mesmo com eletrólitos muito alterados”. Após cirurgia, alguns vômitos transitórios podem ocorrer; orientar progressão alimentar e retorno por vômitos persistentes, febre ou distensão.
+
+### Apendicite: probabilidade, imagem por etapas e tomada de decisão informada
+
+A apendicite pode começar como dor visceral periumbilical por obstrução luminal e inflamação, depois localizar-se em FID quando peritônio parietal se irrita. A sequência é didática, mas **crianças pequenas frequentemente não relatam padrão clássico**. Dor com tosse, marcha ou salto pode sugerir irritação peritoneal, mas não se deve induzir saltos vigorosos em criança com sofrimento evidente.
+
+**Escores pediátricos** (como Pediatric Appendicitis Score ou pARC) estimam probabilidade e apoiam triagem, mas dependem da população e não substituem avaliação cirúrgica. Hemograma/PCR podem elevar suspeita, porém não distinguem com certeza apendicite complicada de não complicada. Se a probabilidade for baixa e a criança está bem, observação com retorno e reexame é razoável; com maior probabilidade, USG inicial por profissional treinado é útil.
+
+**Apêndice não visualizado em USG** não significa ausência de doença: examinar sinais secundários, clínica e necessidade de observação/segunda imagem. Em criança com USG inconclusivo e suspeita persistente, RM pode ser preferível onde houver disponibilidade e expertise; TC de baixa dose pode ser necessária em alguns serviços. **Não exigir TC para toda criança** antes de consultar cirurgia.
+
+### Tratamento da apendicite não se resume a “operar todo mundo igual”
+
+A **apendicectomia**, frequentemente laparoscópica, é tratamento estabelecido. A diretriz WSES (2020) admite discussão de **antibiótico inicial em casos selecionados de apendicite não complicada sem apendicolito**, desde que a família compreenda risco de falha/recorrência e exista acompanhamento. Isso não equivale a “antibiótico para toda apendicite”: apendicolito, perfuração, peritonite, abscesso e instabilidade exigem outra estratégia.
+
+Na **apendicite não complicada operada**, antibioticoterapia profilática pré-operatória é geralmente suficiente; diretriz WSES sugere **não usar antibiótico pós-operatório rotineiro**. Nos quadros complicados, antibiótico contra Gram-negativos entéricos e anaeróbios, controle de foco e duração conforme resposta são essenciais; em crianças estáveis após cirurgia e com boa evolução, transição relativamente precoce para via oral pode ser possível. Duração e seleção dependem de procedimento, culturas, protocolos e evolução, não de prescrição fixa sem contexto.
+
+**Abscesso periappendicular bem delimitado** pode permitir antibiótico e drenagem percutânea conforme tamanho/acessibilidade, com cirurgia planejada individualmente; peritonite generalizada e deterioração requerem controle cirúrgico mais urgente. Após manejo não operatório com resolução, cirurgia intervalar universal **não** é recomendação para toda criança; pode-se avaliar recorrência e situações especiais.
+
+### Um diagnóstico ginecológico ou urológico pode simular apendicite
+
+Em adolescente, **torção anexial**, cisto ovariano complicado, gestação ectópica e doença inflamatória pélvica podem manifestar dor abdominal semelhante. A abordagem deve respeitar confidencialidade e consentimento, com teste de gestação quando clinicamente pertinente, ultrassom pélvico e ginecologia/urgência conforme suspeita. Em meninos, torção testicular pode manifestar-se como dor abdominal inicial, de modo que o escroto precisa integrar exame de abdome agudo quando pertinente.
+
+## 12E. Parede abdominal, canal inguinal e escroto agudo
+
+### Hérnia inguinal: o saco pode conter mais que intestino
+
+A persistência do **processo vaginal** torna possível hérnia inguinal indireta na criança. Durante choro ou esforço, massa pode aparecer e desaparecer; o exame busca redutibilidade, consistência, dor, alterações cutâneas e extensão escrotal/labial. Em meninas pequenas, **ovário e tuba** podem integrar saco herniário; aprisionamento vascular demanda atenção especial mesmo sem obstrução intestinal clássica.
+
+A hérnia **redutível** geralmente requer correção cirúrgica planejada em oportunidade adequada, porque o defeito anatômico não se fecha por estratégia expectante simples semelhante à hérnia umbilical infantil. Lactentes prematuros e neonatos têm particularidades de risco anestésico e encarceramento; o tempo da operação exige decisão individual entre segurança neonatal e risco de encarceramento.
+
+**Encarceramento:** conteúdo não reduz espontaneamente, com dor/irritabilidade e possível vômito/distensão. **Estrangulamento:** comprometimento de perfusão, com dor progressiva, edema, eritema, sinais sistêmicos e isquemia de alça ou anexo. Não forçar redução manual diante de suspeita de estrangulamento, peritonite ou alteração cutânea importante. Em paciente selecionado sem sinais de sofrimento vascular, tentativa de redução por cirurgião experiente pode ser considerada; após sucesso é necessário observação/planejamento cirúrgico definitivo.
+
+**Hérnia umbilical**, por sua vez, frequentemente fecha espontaneamente; sinais de encarceramento ou suspeita de conteúdo isquêmico são menos comuns, mas exigem avaliação urgente. Não recomendar moedas, faixas apertadas ou compressões caseiras.
+
+### Torção testicular: a janela importa, mas não é “prazo de desistência”
+
+Na torção testicular, cordão gira e primeiro interrompe retorno venoso, depois perfusão arterial, com congestão e isquemia. Um adolescente pode apresentar **dor súbita intensa unilateral**, náuseas, vômitos e posição testicular alta/horizontalizada. Reflexo cremastérico ausente fortalece suspeita, mas pode estar presente em alguns casos; assim, exame normal de um sinal isolado **não exclui**.
+
+A possibilidade de salvar testículo tende a reduzir rapidamente com tempo; estudos enfatizam primeiras **4–6 horas** como período de maior chance. Contudo, apresentação tardia **ainda requer exploração/avaliação urgente**, porque duração relatada pode ser incerta, torção parcial/intermitente pode preservar tecido e a conduta deve ser especializada.
+
+Se suspeita clínica é alta, comunicar imediatamente urologia/cirurgia pediátrica e organizar exploração; **Doppler não deve atrasar procedimento**. Fluxo sanguíneo preservado ao Doppler não exclui totalmente torção parcial/intermitente, especialmente se imagem foi obtida depois de melhora transitória. Em dúvida de diagnóstico, a avaliação cirúrgica define se e como usar imagem.
+
+**Destorção manual** pode ser manobra de ponte por médico habilitado em situação selecionada, nunca substituindo **exploração e orquidopexia**. Após destorção, avaliação de viabilidade, tratamento do lado contralateral e aconselhamento sobre fertilidade/atrofia dependem de achado cirúrgico. A torção de apêndice testicular, epididimite e hérnia irredutível são diferenciais, mas não devem retardar cuidado quando torção do testículo é plausível.
+
+### Dor escrotal na criança antes da puberdade
+
+Em pré-púberes, epididimite pode ocorrer associada a viroses ou alterações urinárias; uma urocultura negativa não comprova torção nem exclui todas as infecções. Investigar sintomas urinários, febre, instrumentação, anomalias de trato urinário, trauma e, quando pertinente e conduzido com sigilo, exposição sexual/IST. O diagnóstico diferencial e a conduta exigem faixa etária, exame e avaliação cirúrgica inicial em situação aguda.
+
+**Edema escrotal/hematoma** após trauma pode mascarar ruptura testicular; no mecanismo de agressão não esclarecido em bebê, também pensar em violência. Documentar achados objetivos, proteger criança e seguir fluxos de notificação quando indicado.
+
+## 12F. Emergências uropediátricas e condições que parecem “apenas constipação”
+
+### Hidronefrose congênita versus obstrução aguda
+
+A **dilatação pielocalicial vista no pré-natal** não equivale automaticamente a doença cirúrgica, mas requer estratificação pós-natal segundo grau de dilatação, parênquima, ureteres, bexiga e função. Em algumas crianças, há melhora espontânea; em outras, obstrução de junção ureteropélvica, refluxo vesicoureteral ou anomalia uretral produzem risco de infecção e dano renal. A decisão é guiada por USG seriada, outros exames selecionados, infecção, função e urologia pediátrica.
+
+**Válvula de uretra posterior** deve ser lembrada em lactente masculino com bexiga distendida, jato fraco, hidronefrose bilateral, disfunção renal ou sepse urinária. A urgência inclui avaliação hemodinâmica, descompressão urinária por equipe capacitada, correção metabólica e urologia para diagnóstico/tratamento. Não atribuir anúria do recém-nascido a “pouco leite” sem examinar trato urinário e estado circulatório.
+
+**Refluxo vesicoureteral** é associação com ITU febril/risco renal, mas o manejo não consiste em operar cada refluxo visualizado. A conduta depende de grau, infecções recorrentes, cicatriz renal, função e contexto familiar. Antibioticoprofilaxia em subgrupos selecionados é diferente de prescrição contínua universal e deve seguir protocolo especializado.
+
+### Obstrução por cálculo, pielonefrite e sepse
+
+Em criança com dor lombar aguda, hematúria e vômitos, investigar litíase; presença de **febre, hidronefrose obstrutiva e infecção urinária** pode representar **sistema urinário obstruído infectado**, urgência urológica para antibiótico e descompressão conforme quadro. Não esperar eliminação espontânea do cálculo em criança séptica.
+
+A analgesia, hidratação proporcional, função renal, cultura e imagem começam em paralelo. Ultrassom é método inicial útil por evitar radiação, mas localização e dimensão de cálculo podem exigir imagem adicional. O plano definitivo também inclui investigação metabólica de litíase pediátrica e prevenção de recorrência.
+
+### Constipação funcional versus alarme cirúrgico
+
+A constipação funcional é comum e pode produzir dor abdominal importante, fissura anal e distensão leve; porém não deve ser usada como diagnóstico de exclusão apressado em criança com **vômito bilioso, falha de crescimento, febre, distensão progressiva, atraso significativo de mecônio, alterações neurológicas ou sangue não explicado por fissura**. Esses achados exigem pensar em obstrução, Hirschsprung, doença celíaca, patologia medular ou outra etiologia.
+
+**Toque retal** não é exame obrigatório de toda criança constipada e precisa de indicação cuidadosa, consentimento, privacidade e técnica adequada. Manipulações repetidas e enemas sem avaliar obstrução podem gerar trauma e atraso de diagnóstico. Criança com **encoprese por transbordamento** pode ser interpretada como “diarreia crônica” quando há impactação fecal; a história de evacuação dolorosa, retenção, escapes e massa fecal ajuda a diferenciar.
+
+## 12G. Segurança da alta, comunicação com centro cirúrgico e retorno
+
+### Quando o pediatra pode observar e quando não pode
+
+**Observar com retorno definido** é apropriado para criança estável com sintomas leves, baixo risco de emergência cirúrgica e possibilidade de reavaliação. Isso pode ocorrer em dor inespecífica ou apendicite ainda incerta sob exame seriado. Mas **vômito verde neonatal, torção testicular suspeita, peritonite, hérnia dolorosa irredutível, choque, perfuração e isquemia intestinal** não pertencem à categoria “acompanhar em casa”.
+
+A transferência para centro com cirurgia pediátrica envolve contato prévio, resumo estruturado de idade/peso, tempo de sintomas, status respiratório/circulatório, glicemia, eletrólitos, uso de antibiótico, jejum, acessos e exames já feitos. **Não atrasar transferência** por obter CT ou ensaios laboratoriais que o serviço receptor não precisa para decidir estabilização ou exploração.
+
+Após tratamento de invaginação por enema, devolver à família sinais de recorrência. Após piloromiotomia, explicar progressão alimentar e limites esperados de vômito transitório. Após apendicectomia, orientar febre persistente, piora de dor, vômitos e sinais de infecção de ferida/abscesso. Após cirurgia escrotal, retorno diante de dor/edema progressivos. Sempre registrar quem acionará equipe assistente em caso de piora.
+
+### O que deve constar na passagem de caso ao cirurgião
+
+1. **Tempo e progressão:** primeiro sinal, mudança de dor/vômito, última alimentação, diurese e evacuação/mecônio.
+2. **Gravidade:** perfusão, pressão, frequência, glicemia, lactato quando obtido, alterações mentais, sinais peritoneais.
+3. **Foco presumido e diferencial:** por que volvo, invaginação, hérnia, torção ou apendicite é provável; quais achados impedem descartá-los.
+4. **Ações realizadas:** jejum, acesso, fluido com volume/horário, analgesia, antimicrobiano com horário, sonda e resultados.
+5. **Questão clínica atual:** precisa de cirurgia imediata, transferência, USG, contraste alto ou observação seriada?
+6. **Segurança e vulnerabilidade:** prematuridade, cardiopatia, comorbidades, alergias, distância do serviço e suporte familiar.
+
+## 12H. Casos integrados adicionais e questões autorais
+
+### Caso A — vômito verde em recém-nascido aparentemente estável
+
+Recém-nascido de seis dias teve um vômito verde durante a madrugada, agora aceita colo, sem febre e sem distensão evidente. **Hipótese prioritária:** obstrução intestinal alta/distal ao piloro, incluindo malrotação com risco de volvo. **Decisão:** jejum, avaliação hemodinâmica, glicemia e eletrólitos conforme contexto, acesso/sonda se necessário e cirurgia pediátrica urgente. Estudo contrastado alto ou USG especializado pode ser indicado se estável, sem retardar intervenção no caso grave. **Importância:** a gravidade precede sinais peritoneais.
+
+### Caso B — letargia inexplicada com dor episódica
+
+Lactente de nove meses apresenta palidez intermitente, choro súbito e sonolência entre crises, sem sangue em fezes. USG mostra invaginação ileocólica; criança está bem perfundida. **Hipótese:** invaginação intestinal. **Decisão:** analgesia, hidratação, jejum e equipe cirúrgica/radiologia para redução por enema com retaguarda. **Importância:** letargia e choro paroxístico podem preceder a tríade clássica.
+
+### Caso C — piloro e risco anestésico
+
+Lactente de cinco semanas tem vômitos em jato não biliosos há dias, peso caindo e alcalose metabólica hipoclorêmica. USG sugere estenose hipertrófica do piloro. **Decisão:** corrigir volume, cloro e estado ácido-básico antes de piloromiotomia. **Importância:** operar sem corrigir distúrbio importante pode causar complicação anestésica evitável.
+
+### Caso D — adolescente com dor abdominal que é escroto agudo
+
+Menino de 13 anos com náusea súbita, dor infraumbilical e exame abdominal discreto; testículo esquerdo alto e doloroso. **Hipótese:** torção testicular. **Decisão:** urologia/cirurgia imediata, sem obrigatoriedade de Doppler antes de exploração quando suspeita elevada. **Importância:** torção pode se manifestar por dor abdominal.
+
+### Caso E — hérnia de menina lactente
+
+Menina de dois meses apresenta massa inguinal persistente, dolorosa, pele discretamente avermelhada e irritabilidade. **Hipótese:** hérnia inguinal encarcerada, possivelmente contendo anexo. **Decisão:** jejum, acesso, analgesia, cirurgia pediátrica; não fazer redução manual forçada em suspeita de estrangulamento. **Importância:** risco vascular inclui ovário, não apenas intestino.
+
+### Caso F — apendicite em criança com USG inconclusivo
+
+Criança de nove anos apresenta dor migratória, anorexia, sensibilidade em FID e leucocitose; ultrassonografia não visualiza apêndice. **Hipótese:** apendicite ainda plausível. **Decisão:** reavaliação cirúrgica e clínica seriada, observação/imagem de segunda linha conforme risco. **Importância:** não visualização não equivale a ausência de apendicite.
+
+### Questões comentadas de alta transferência
+
+**Q-A.** Neonato de quatro dias vomita verde uma vez, mantém bom estado geral. Melhor conduta?  
+A) Tratar refluxo e alta; B) Antiemético sem investigação; C) Excluir urgentemente obstrução/malrotação-volvo com cirurgia pediátrica; D) Aguardar sangue em fezes; E) Dar laxativo.  
+**Gabarito C.** Vômito bilioso verde pode ser primeiro sinal de volvulação; A/B/D/E atrasam identificação de isquemia potencialmente devastadora.
+
+**Q-B.** Lactente com crises paroxísticas, USG positivo para invaginação ileocólica, estável e sem peritonite. Tratamento inicial específico possível?  
+A) Enema guiado com equipe/radiologia e retaguarda cirúrgica; B) Laxante oral; C) Colonoscopia eletiva; D) Aguardar geleia de groselha; E) Colonoscopia sem anestesia.  
+**Gabarito A.** Redução hidrostática/pneumática é opção padrão em criança estável; os demais atrasam ou não tratam. Se houvesse choque ou perfuração, o enema seria contraindicado.
+
+**Q-C.** Lactente com estenose pilórica e alcalose hipoclorêmica importante: qual prioridade?  
+A) Piloromiotomia imediata sem reposição; B) Corrigir volume e eletrólitos antes de cirurgia; C) Antibiótico para colite; D) Hidratar apenas depois; E) Alta sem retorno.  
+**Gabarito B.** Distúrbio ácido-básico aumenta risco anestésico; operação é indicada após estabilização, diferente da emergência isquêmica de volvo.
+
+**Q-D.** Menino de 12 anos com suspeita forte de torção testicular. Doppler está indisponível até o dia seguinte. O correto é:  
+A) Aguardar exame; B) Afastar torção pela ausência de febre; C) Avaliação urológica/cirúrgica imediata sem adiar por imagem; D) Tratar epididimite presumida por sete dias; E) Alta porque transcorreram oito horas.  
+**Gabarito C.** Suspeita clínica elevada requer urgência mesmo com atraso de apresentação; A/B/D/E podem levar à perda testicular.
+
+**Q-E.** Criança operada por apendicite não complicada, sem perfuração, bom estado geral. Sobre antibiótico pós-operatório:  
+A) Sempre 14 dias IV; B) Recomenda-se não utilizar rotineiramente após cirurgia não complicada, após profilaxia pertinente; C) Sempre metronidazol por mês; D) Nunca antibiótico pré-operatório; E) Sempre carbapenêmico.  
+**Gabarito B.** WSES recomenda profilaxia perioperatória e evita uso pós-operatório desnecessário em apendicite não complicada; A/C/E ampliam antimicrobianos sem indicação, D ignora profilaxia.
+
+**Q-F.** Menina lactente, massa inguinal dolorosa irredutível, edema e rubor, vômitos. A melhor interpretação é:  
+A) Hérnia umbilical fisiológica; B) Hérnia inguinal encarcerada, possível estrangulamento de intestino/anexo; C) Fimose; D) Apenas constipação; E) Conduta expectante por anos.  
+**Gabarito B.** Conteúdo herniário feminino pode incluir ovário/tuba, com risco vascular; requer cirurgia urgente. As alternativas restantes ignoram urgência ou são incompatíveis.
+
+### Pautas adicionais de imagem — nunca publicar antes da licença e da revisão
+
+| Pauta | Conteúdo didático | Etapa |
+| --- | --- | --- |
+| 1 | Radiografia neonatal da dupla bolha | Buscar fonte acadêmica e licença |
+| 2 | Série contrastada alta demonstrando malrotação | Buscar fonte acadêmica e licença |
+| 3 | USG do “whirlpool sign” mesentérico | Buscar fonte acadêmica e licença |
+| 4 | USG da invaginação com alvo | Buscar fonte acadêmica e licença |
+| 5 | USG pilórica longitudinal/transversal | Buscar fonte acadêmica e licença |
+| 6 | USG de apêndice dilatado e sinais secundários | Buscar fonte acadêmica e licença |
+| 7 | RX de pneumatoses na ECN | Buscar fonte acadêmica e licença |
+| 8 | Contraste de cólon com zona de transição em Hirschsprung | Buscar fonte acadêmica e licença |
+| 9 | Fotografia clínica ilustrativa de hérnia inguinal pediátrica (sem identificadores) | Exigir consentimento/licença e revisão ética |
+| 10 | Esquema autoral de torção testicular e cordão | Produção própria e conferência anatômica |
+
+### Referências e comparador desta ampliação
+
+- Royal Children's Hospital Melbourne. **Vomiting**: vômito bilioso verde e obstrução até exclusão. https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/
+- Royal Children's Hospital Melbourne. **Intussusception**: USG como método inicial, enema com retaguarda, contraindicações e seguimento. https://www.rch.org.au/clinicalguide/guideline_index/Intussusception_Guideline/
+- Royal Children's Hospital Melbourne. **Acute scrotal pain or swelling**: torção e hérnia irredutível como emergências; Doppler seletivo sem atrasar cirurgia. https://www.rch.org.au/clinicalguide/guideline_index/Acute_Scrotal_Pain_or_Swelling/
+- Di Saverio S et al. **Diagnosis and treatment of acute appendicitis: 2020 update of the WSES Jerusalem guidelines**. *World J Emerg Surg* 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC7386163/
+- EAU. **Paediatric Urology**. https://uroweb.org/guidelines/paediatric-urology
+- *Comparador de estrutura lido no Drive:* **Abdome Agudo Obstrutivo** (ênfase predominante em adultos). Não cobre malrotação neonatal, intussuscepção e torção testicular no mesmo nível; por isso serve apenas de **benchmark parcial**, sem copiar texto/imagens. O manuscrito já registrava outros comparadores de apendicite/hidronefrose na sua etapa anterior, igualmente parciais.
+
+**Auditoria provisória:** casos e questões foram expandidos sem substituir os já existentes. Falta revisão por cirurgião pediátrico, confirmação local das doses, comparação com livro pediátrico integral, licença/curadoria de imagens, validação de 60 mil caracteres *didáticos úteis* e testes responsivos. **Permanecer em _rascunhos; não publicar.**
+
 ## 13. Casos clínicos comentados
 ### Caso 1 — O recém-nascido que vomita verde uma única vez
 RN a termo de quatro dias, mamando bem até apresentar vômito verde escuro uma vez; parece confortável, sem febre. **Hipótese prioritária:** malrotação com volvo ou outra obstrução. **Raciocínio:** bile verde indica que conteúdo duodenal refluíu; volvo pode preceder dor intensa e choque. **Exames:** glicemia, eletrólitos, avaliação cirúrgica e imagem dirigida se estável; ausência de dilatação no RX não exclui torção. **Conduta:** jejum, acesso venoso, suporte e avaliação cirúrgica emergencial. **Por que importa:** não aguardar novo vômito verde nem “provar refluxo”.
