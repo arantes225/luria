@@ -13,7 +13,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 | 05 | Medicina Preventiva | Princípios e diretrizes do SUS | Rascunho original em `apostilas/principios-diretrizes-sus/content.json`, 16 seções, 7 casos, 15 questões, triagem ~69.979 caracteres aparentes — **não publicado/não certificado** |
 | 06 | Clínica Médica | Insuficiência cardíaca | Rascunho em `apostilas/insuficiencia-cardiaca/content.json` — **não publicado, não certificado** |
 | 07 | Cirurgia Geral | Cuidados perioperatórios | Rascunho em `apostilas/cuidados-perioperatorios-prevencao-complicacoes/content.json` — **não publicado, não certificado** |
-| 08 | Pediatria | Reanimação neonatal | Novo rascunho em `apostilas/reanimacao-neonatal/content.json`, 15 capítulos, 7 casos, 10 questões, ~41 mil caracteres aparentes — **parcial, não certificado** |
+| 08 | Pediatria | Reanimação neonatal | Rascunho aprofundado em `apostilas/reanimacao-neonatal/content.json`, 15 seções, 7 casos, 10 questões e ~70.669 caracteres aparentes — **não publicado, não certificado** |
 | 09 | Ginecologia e Obstetrícia | Diagnóstico e datação da gestação | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 10 | Medicina Preventiva | Lei nº 8.080/1990 | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 11 | Clínica Médica | Hipertensão arterial sistêmica | Rascunho em `apostilas/hipertensao-arterial-sistemica/content.json` — **não publicado, não certificado** |
@@ -42,7 +42,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Próximas verificações editoriais
 
-1. Auditar o tema 009 (diagnóstico e datação da gestação) e as sobreposições com a apostila 004 de pré-natal. O rascunho 008 continua pendente de aprofundamento e certificação.
+1. Auditar o tema 009 (diagnóstico e datação da gestação) e as sobreposições com a apostila 004 de pré-natal. O rascunho 008 ultrapassou a meta de extensão aparente, mas continua pendente de revisão científica humana, certificação e testes de simulação.
 2. Rever os seis rascunhos com teste de questões representativas e crítica clínica antes de alterar seu status.
 3. Conciliar diffs entre a `main` (260 temas) e a branch editorial antes de integrar.
 
@@ -70,3 +70,11 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 - **Fontes primárias:** diretrizes da Sociedade Brasileira de Pediatria, junho/2026, separadas para ≥34 e <34 semanas; AHA/AAP 2025 publicada em Pediatrics 2026. Não copiar ilustrações, fluxos ou tabelas protegidos pela SBP.
 - **Rascunho novo:** `apostilas/reanimacao-neonatal/content.json`, 15 seções, 7 casos e 10 questões; ~41.143 caracteres visíveis aproximados, insuficientes para meta 60k úteis. Inclui preparação, ventilação, alvos de SpO2, diferença da FiO2 SBP ≥34 (21%) e <34 (60%), CPAP, manobras avançadas, adrenalina, volume, pós-reanimação e ética, com distinção curricular do tema 003.
 - **Auditoria inicial:** JSON válido, IDs de seções alinhados ao sumário, sem duplicação de IDs, apenas blocos reconhecidos; quatro referências. Ainda faltam expansão didática, revisão por neonatologista/PRN-SBP, conferência independente da posologia, simulação com protocolo institucional, imagens licenciadas e Admin, testes desktop/PWA e aprovação editorial. **Rascunho, não publicar; sem merge/deploy.**
+
+
+## Continuação de 15/10/2026 — aprofundamento do tema 008
+
+- Duas ampliações autorais do arquivo `apostilas/reanimacao-neonatal/content.json`: fisiopatologia da bradicardia hipóxica, falhas de máscara e técnica ventilatória, planejamento de equipe, interpretação de FC/oximetria, diferencias do oxigênio por idade gestacional, via aérea e compressões, prevenção de erros de cálculo/diluição de adrenalina, manejo de perda sanguínea, prematuridade extrema, seguimento pós-reanimação, transporte e decisão ética. Padrão brasileiro SBP 2026 versus AHA/AAP 2025 explicitado; recomendações de 60% de O₂ para <34 semanas verificadas na SBP, sem generalização a outros protocolos.
+- Releitura da diretriz SBP junho/2026 (≥34 e <34 semanas) e comparação com AHA/AAP 2025 em fonte primária; páginas 31–34 da SBP ≥34, e 24/32 da SBP <34 foram conferidas, inclusive imagem da tabela de concentração/doses e cuidado para não reproduzi-la. O material antigo do Drive não foi utilizado como fonte terapêutica.
+- Auditoria de saída: 15 seções, 72 subtítulos, 16 tabelas, 7 casos e 10 questões; cerca de 70.669 caracteres aparentes em 78.430 caracteres serializados; IDs do sumário alinhados; parágrafos idênticos não encontrados. **Não certifica autossuficiência nem segurança clínica.** Risco médico exige validação independente de doses e simulação prática.
+- Nada foi publicado; sem alteração do catálogo, merge ou deploy. Pendente curadoria de imagens com licença válida e aprovação no Admin, revisão semântica, teste PWA e revisão final de neonatologista.
