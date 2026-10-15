@@ -24,11 +24,11 @@
 | 128 | Sepse e choque séptico pediátrico | Rascunho criado: `_rascunhos/lote-07-aula-128-sepse-choque-septico-pediatrico.md` (37.814 caracteres; 4 casos, 8 questões), Phoenix 2024 e SSC pediátrica 2026; preservados dois rascunhos de sepse adulta do lote 9 |
 | 129 | Amenorreia | `apostilas/amenorreia/index.html` existente PRESERVADO; auditoria e 8 questões em `_rascunhos/lote-07-aula-129-amenorreia-auditoria-questoes.md` (13.458 caracteres); complemento não integrado |
 | 130 | Níveis de prevenção e história natural da doença | Rascunho criado: `_rascunhos/lote-07-aula-130-historia-natural-niveis-prevencao.md` (35.521 caracteres; 4 casos, 8 questões); distingue níveis de prevenção sem repetir aula 125 |
-| 131 | Hepatites virais | Diretório específico não identificado; há material comparativo no Drive a verificar |
-| 132 | Hemorragia digestiva baixa | Diretório específico não identificado; evitar replicar HDA e aula 136 |
-| 133 | Meningites e encefalites | Diretório específico não identificado; verificar cobertura por faixas pediátricas |
-| 134 | Síndrome dos ovários policísticos | Apostila existente em apostilas/sindrome-ovariana-metabolica-poliendocrina-somp; preservar e realizar de-para de terminologia |
-| 135 | Imunização e PNI | Diretório específico não identificado; atualizar conforme calendário oficial em vigor |
+| 131 | Hepatites virais | Rascunho `_rascunhos/lote-07-aula-131-hepatites-virais.md` criado e verificado (26.368 caracteres, 4 casos, 6 questões), com benchmark do Drive específico e PCDTs B/C |
+| 132 | Hemorragia digestiva baixa | Rascunho `_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md` criado e verificado (23.046 caracteres, 4 casos, 6 questões), ACG 2023/ESGE 2021; HDA da aula 127 preservada |
+| 133 | Meningites e encefalites | Rascunho `_rascunhos/lote-07-aula-133-meningites-encefalites.md` criado e verificado (24.615 caracteres, 4 casos, 6 questões); OMS 2025/2026 e MS; benchmark correlato de TB/neurosífilis |
+| 134 | Síndrome dos ovários policísticos | `apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html` auditado e preservado; complemento `_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md` (11.862 caracteres, 8 questões), guideline PCOS 2023 |
+| 135 | Imunização e PNI | Rascunho `_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md` criado e verificado (26.287 caracteres, 4 casos, 6 questões), calendário MS 2026 e comparação com resumo Drive 2020 |
 | 136 | Hemorragia digestiva | Articular com HDA e HDB das aulas 127/132, evitando terceira apostila redundante |
 | 137 | Doença do refluxo e hérnia hiatal | Diretório específico não identificado |
 | 138 | Crises convulsivas e estado de mal epiléptico | Diretório específico não identificado |
@@ -70,3 +70,28 @@
 **Estado de integração:** **não houve edição de HTML original, deploy, modificação de publicação, migração de banco ou inserção em catálogo**. Todos os cinco textos estão em `apostilas/_rascunhos/` para desenvolvimento editorial. Os materiais de 128/129 mantêm separados os originais adultos e o HTML ginecológico.
 
 **Próximo sublote sequencial do cronograma-base:** 131 Hepatites virais; 132 Hemorragia digestiva baixa; 133 Meningites e encefalites; 134 Síndrome dos ovários policísticos (reusar SOP/SOMP preexistente); 135 Imunização e PNI. Começar por inventário das apostilas existentes, leitura de fontes comparativas e consulta de fontes oficiais brasileiras 2026.
+
+
+## 14/10/2026 — terceiro sublote: aulas 131–135
+
+**Arquivos novos criados e verificados por leitura posterior via GitHub (main):**
+
+| Aula | Rascunho/complemento | Caracteres BRUTOS | Casos novos no arquivo | Questões comentadas novas |
+|---|---|---:|---:|---:|
+| 131 Hepatites virais | \`lote-07-aula-131-hepatites-virais.md\` | 26.368 | 4 | 6 |
+| 132 Hemorragia digestiva baixa | \`lote-07-aula-132-hemorragia-digestiva-baixa.md\` | 23.046 | 4 | 6 |
+| 133 Meningites e encefalites | \`lote-07-aula-133-meningites-encefalites.md\` | 24.615 | 4 | 6 |
+| 134 SOP | \`lote-07-aula-134-sop-auditoria-questoes.md\` | 11.862 (complemento) | 0 (5 já existentes no HTML) | 8 |
+| 135 Imunizações/PNI | \`lote-07-aula-135-imunizacoes-pni-2026.md\` | 26.287 | 4 | 6 |
+
+**Total: 112.178 caracteres brutos** em cinco arquivos novos. Não equivale a material médico validado ou à contagem de caracteres didáticos úteis. Os rascunhos 131/132/133/135 ainda estão abaixo da meta editorial premium de aproximadamente 60 mil caracteres didáticos úteis por aula.
+
+**Comparativos Drive:** aula 131 leu "08 - HEPATITES VIRAIS.pdf", relacionado diretamente; 132 não encontrou benchmark equivalente HDB e registrou comparação parcial com HDA; 133 leu apenas TB extrapulmonar e neurossífilis (meningites de etiologia específica); 134 leu resumo de SOP, comparou com HTML LURIA já existente e preservou; 135 leu "Imunizações .pdf", explicitamente identificado como calendário **2020**, e corrigiu foco para Ministério da Saúde **2026**. Nenhuma autoria de material “Estratégia MED” foi assumida sem comprovação.
+
+**Pontos normativos verificados externamente:** PCDT de Hepatite C atualizado pelo Ministério da Saúde em 2026; ACG 2023/ESGE 2021 para HDB; OMS 2025 e manual de meningites de maio de 2026; PCOS guideline internacional 2023; Calendário MS da criança atualizado julho de 2026, gestante atualizado outubro de 2026 e esquema em transição VPC10/VPC20, MenACWY e VIP.
+
+**Pendências comuns:** revisão científica profissional; doses/ajustes pediátricos e terapêuticos de acordo com protocolos brasileiros, imagens com licença comercial e aprovação Admin, auditagem de caracteres **úteis**, testes de autossuficiência por prova e revisão de HTML/PWA. Evitar promover a biblioteca antes desses gates.
+
+**Nenhum HTML publicado foi substituído; não houve deploy ou alteração do catálogo.** O complemento da aula 134 está separado da apostila SOMP existente.
+
+**Próximo sublote 136–140:** 136 Hemorragia digestiva (construir revisão integradora, evitando repetir 127/132); 137 DRGE e hérnia hiatal; 138 crises convulsivas e estado de mal epiléptico; 139 endometriose (inventário profundo em GO, preservar o que existir); 140 saúde da criança na APS.
