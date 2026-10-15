@@ -557,3 +557,170 @@ Nas doenças hemolíticas hereditárias, o prognóstico depende de genótipo, gr
 **Conduta:** avaliação hospitalar rápida, suporte de neutropenia/sangramento e condução diagnóstica especializada; evitar tratamentos que alterem o diagnóstico antes da coleta indicada.
 
 **Por que importa:** o diagnóstico diferencial de anemia inclui doenças que não podem esperar novo ciclo de ferro.
+
+
+## 29. Doze questões autorais comentadas
+
+### Questão 1 — Hemoglobina e idade
+
+Um menino de 18 meses, sem sintomas e com curva de crescimento normal, apresenta Hb 10,7 g/dL. Qual interpretação está mais alinhada aos pontos de corte da OMS de 2024?
+
+A) A OMS define anemia abaixo de 11 g/dL para toda criança entre seis e 59 meses.  
+B) O valor não preenche o critério de anemia da OMS 2024 para seis a 23 meses, embora o contexto clínico deva ser avaliado.  
+C) Toda Hb abaixo de 12 g/dL é anemia grave nessa idade.  
+D) O hemograma isolado comprova que as reservas de ferro estão adequadas.
+
+**Gabarito: B.** Para 6–23 meses, OMS 2024 utiliza Hb <10,5 g/dL; o valor informado está acima do corte. **A:** reproduz a regra anterior generalizada. **C:** classificação de grave nesse grupo é Hb <7,0 g/dL. **D:** deficiência de ferro pode existir antes da anemia, exigindo avaliação por risco. **Mini-revisão:** reconhecer a faixa etária e distinguir anemia de deficiência de ferro.
+
+### Questão 2 — Diagnóstico de ferropenia
+
+Lactente de 15 meses apresenta Hb 8,9 g/dL, VCM baixo para idade, RDW aumentado, ferritina de 5 ng/mL e PCR normal. Qual é a hipótese mais sustentada?
+
+A) Anemia ferropriva.  
+B) Traço beta-talassêmico isolado demonstrado pelo RDW.  
+C) Hemólise autoimune demonstrada pela microcitose.  
+D) Crise aplástica por parvovírus demonstrada pela ferritina.
+
+**Gabarito: A.** A combinação de baixa Hb, microcitose, anisocitose e ferritina reduzida sem inflamação relevante favorece ferropriva. **B:** traço pode coexistir, mas RDW não confirma. **C:** AHAI exige sinais de hemólise e estudo imunológico. **D:** parvovírus produz reticulocitopenia em quadro apropriado, não ferritina baixa característica. **Mini-revisão:** ferritina baixa é indício forte de depleção; PCR ajuda a entender interferência inflamatória.
+
+### Questão 3 — Profilaxia versus tratamento
+
+Menina de 10 meses, nascida a termo e com peso adequado, recebe seguimento preventivo. A equipe discute esquema de ferro. Qual alternativa representa melhor a atualização SBP 2026?
+
+A) Todas as crianças devem receber 6 mg/kg/dia indefinidamente, mesmo sem anemia.  
+B) O ferro medicamentoso deve ser evitado em todas as crianças com alimentação complementar.  
+C) Em lactentes saudáveis de termo e peso adequado, a SBP descreve 10–12,5 mg/dia em dois ciclos de três meses, iniciados preferencialmente aos seis e aos 12 meses.  
+D) Prematuros abaixo de 1.000 g devem seguir obrigatoriamente o mesmo esquema fixo dos nascidos a termo.
+
+**Gabarito: C.** Essa é a recomendação descrita pela SBP 2026 para esse grupo; prevenção e tratamento não são equivalentes. **A:** usa dose terapêutica na profilaxia indiscriminada. **B:** ignora grupos elegíveis e prevenção. **D:** prematuros e baixo peso seguem doses por peso e monitorização própria. **Mini-revisão:** conferir programa, idade, grupo de risco, NutriSUS e se a criança já apresenta anemia.
+
+### Questão 4 — Resposta ao ferro oral
+
+Uma criança com ferropriva confirmada inicia ferro elementar oral em dose terapêutica e recebe orientação dietética. Qual avaliação inicial está mais alinhada à SBP 2026?
+
+A) Verificar hemograma em 30–45 dias, esperando aumento de Hb de pelo menos 1,0 g/dL; se insuficiente, reavaliar dose, adesão, perdas e diagnóstico.  
+B) Aguardar um ano sem reavaliar porque o ferro é seguro em qualquer dose.  
+C) Encerrar tratamento no primeiro dia em que a criança volta a brincar, independentemente de ferritina.  
+D) Repetir apenas VCM em 24 horas como único marcador de resposta.
+
+**Gabarito: A.** A resposta hematológica deve ser verificada e reservas precisam ser recuperadas. **B:** ausência de seguimento atrasa reconhecimento de falha. **C:** melhora clínica inicial não documenta reposição dos estoques. **D:** VCM não muda instantaneamente e é apenas parte da avaliação. **Mini-revisão:** terapia ferropriva usualmente dura meses, e não apenas até o fim da palidez.
+
+### Questão 5 — Talassemia ou ferropriva?
+
+Menino de 8 anos apresenta Hb 11,1 g/dL, VCM 59 fL, hemácias 5,9 milhões/µL e ferritina normal com PCR normal. Seu pai também possui microcitose há anos. Qual próximo passo é mais adequado?
+
+A) Prescrever ferro em dose terapêutica para toda a vida.  
+B) Considerar traço talassêmico e solicitar investigação por fracionamento/HPLC de hemoglobinas, com interpretação por idade e história familiar.  
+C) Considerar deficiência grave de B12 com base apenas no VCM.  
+D) Diagnosticar automaticamente anemia hemolítica autoimune.
+
+**Gabarito: B.** Microcitose desproporcional à Hb e número alto de hemácias com história familiar favorecem talassemia. **A:** sem evidência de deficiência de ferro, a terapia crônica não é indicada. **C:** B12 geralmente produz macrocitose, não microcitose isolada. **D:** faltam provas de hemólise e TAD. **Mini-revisão:** talassemia e ferropriva podem coexistir; a confirmação direciona conduta.
+
+### Questão 6 — Febre na doença falciforme
+
+Criança de 4 anos com HbSS apresenta temperatura de 38,8°C e está inicialmente bem perfundida. Qual é a melhor atitude?
+
+A) Orientar apenas observação domiciliar por 48 horas.  
+B) Indicar transfusão automática para toda febre, sem avaliar Hb basal.  
+C) Encaminhar imediatamente para serviço capaz de investigar infecção invasiva e iniciar antibiótico parenteral conforme protocolo de febre em doença falciforme.  
+D) Suspender todas as vacinas para não interferir em culturas.
+
+**Gabarito: C.** A disfunção esplênica eleva o risco de infecção grave, mesmo em aparência inicial preservada. **A:** pode retardar tratamento necessário. **B:** a transfusão não é terapia padrão para febre isolada. **D:** a vacinação é parte essencial da prevenção. **Mini-revisão:** o risco infeccioso difere de uma crise dolorosa não complicada.
+
+### Questão 7 — Crise aplástica versus sequestro
+
+Criança com HbSS, Hb basal 8,2 g/dL, apresenta Hb 4,8 g/dL e reticulócitos absolutos quase ausentes após síndrome viral; o baço não aumentou. Qual hipótese é mais provável?
+
+A) Sequestro esplênico clássico com reticulocitose.  
+B) Crise aplástica transitória, incluindo infecção por parvovírus B19.  
+C) Talassemia minor recém-adquirida.  
+D) Ferropenia nutricional comprovada apenas pelos reticulócitos.
+
+**Gabarito: B.** A queda abrupta da Hb com supressão da produção reticulocitária orienta crise aplástica. **A:** geralmente cursa com aumento abrupto do baço e reticulócitos preservados/aumentados. **C:** talassemia é hereditária e não começa após síndrome viral. **D:** reticulocitopenia isolada não confirma ferropenia. **Mini-revisão:** saber o valor basal e contar reticulócitos muda o diagnóstico.
+
+### Questão 8 — Esferócitos
+
+Lactente apresenta anemia hemolítica, esplenomegalia, CHCM elevada e esferócitos no esfregaço. Pai foi submetido a esplenectomia por anemia semelhante. TAD é negativo. Qual hipótese é mais adequada?
+
+A) Esferocitose hereditária, com confirmação específica conforme disponibilidade.  
+B) AHAI por anticorpos quentes comprovada obrigatoriamente.  
+C) Ferropenia isolada que produz esferócitos como achado específico.  
+D) Doença falciforme diagnosticada por TAD negativo.
+
+**Gabarito: A.** História familiar e hemólise não imune favorecem defeito de membrana. **B:** esferócitos podem ocorrer em AHAI, mas TAD negativo e história familiar apontam outra hipótese. **C:** ferropriva típica produz microcitose/hipocromia, não esferócitos como assinatura. **D:** diagnóstico falciforme requer teste de hemoglobinas. **Mini-revisão:** morfologia não substitui testes de membrana e exclusão de hemólise imune.
+
+### Questão 9 — G6PD durante hemólise
+
+Menino com icterícia, colúria e anemia hemolítica após infecção tem suspeita de deficiência de G6PD, mas a atividade enzimática medida durante a crise veio normal. A melhor interpretação é:
+
+A) O resultado normal durante a crise exclui sempre o diagnóstico.  
+B) A atividade pode estar falsamente normal durante a hemólise, justificando reavaliação após recuperação se a suspeita persistir.  
+C) A deficiência de G6PD causa exclusivamente anemia por falta de ferro.  
+D) O teste da antiglobulina positivo é obrigatório para diagnosticar G6PD.
+
+**Gabarito: B.** Hemácias mais deficientes podem ser destruídas e a reticulocitose mudar atividade média medida. **A:** falso resultado de exclusão pode ocorrer. **C:** mecanismo envolve proteção antioxidante da hemácia. **D:** não é doença hemolítica autoimune. **Mini-revisão:** fase da doença e composição celular influenciam o desempenho do teste.
+
+### Questão 10 — Criança com diarreia sanguinolenta e anemia
+
+Menina de 5 anos apresenta oligúria, anemia, plaquetas de 42.000/µL, creatinina elevada e esquizócitos após diarreia sanguinolenta. Qual interpretação é prioritária?
+
+A) Ferropriva não complicada e alta imediata.  
+B) Anemia por hemodiluição isolada sem dano orgânico.  
+C) Microangiopatia trombótica compatível com SHU, com necessidade de avaliação hospitalar urgente.  
+D) Hemorragia menstrual como principal explicação nessa faixa etária.
+
+**Gabarito: C.** Esquizócitos, trombocitopenia e lesão renal indicam microangiopatia. **A:** não explica plaquetas baixas nem creatinina elevada. **B:** não explica esquizócitos/lesão renal. **D:** incoerente com história e idade. **Mini-revisão:** classificar mecanismo de hemólise e reconhecer risco renal imediato.
+
+### Questão 11 — Macrocitose com regressão neurológica
+
+Bebê de 9 meses apresenta atraso/regressão do desenvolvimento, hipotonia, macrocitose, neutrófilos hipersegmentados e mãe em dieta restritiva sem suplementação. Qual conduta conceitual é mais segura?
+
+A) Dar apenas ácido fólico e adiar avaliação de B12 até normalizar Hb.  
+B) Investigar deficiência de B12 e tratar de modo oportuno, avaliando a criança e a mãe, porque a lesão neurológica pode ocorrer independentemente da gravidade hematológica.  
+C) Diagnosticar talassemia pelo VCM elevado.  
+D) Ignorar sintomas neurológicos por serem efeitos esperados da anemia fisiológica.
+
+**Gabarito: B.** Risco nutricional e manifestações neurológicas orientam deficiência de B12. **A:** folato isolado pode mascarar anemia sem resolver deficiência neurológica. **C:** talassemia tipicamente é microcítica. **D:** regressão é sinal de alarme. **Mini-revisão:** não esperar anemia grave para tratar criança com forte suspeita de deficiência de B12 neurológica.
+
+### Questão 12 — Anemia + outras citopenias
+
+Menina de 11 anos apresenta palidez, febre persistente, equimoses, dor óssea, neutropenia, anemia, plaquetopenia e células imaturas no esfregaço. Qual abordagem é prioritária?
+
+A) Repor ferro oral por seis meses sem revisar hemograma.  
+B) Prescrever corticosteroide antes de qualquer investigação porque toda anemia é imune.  
+C) Encaminhar urgentemente para hematopediatria, considerando doença medular, inclusive leucemia aguda, com estabilização das complicações.  
+D) Aguardar puberdade para repetir exames.
+
+**Gabarito: C.** O conjunto sugere possível doença medular e risco de infecção/sangramento. **A:** ferropenia não explica bem blastos e múltiplas citopenias. **B:** pode modificar avaliação de leucemia e causa dano se indiscriminado. **D:** atraso de diagnóstico potencialmente grave. **Mini-revisão:** VCM é uma pista, mas a análise integrada de leucócitos, plaquetas e esfregaço pode mudar completamente a urgência.
+
+## 30. Referências priorizadas e conciliação entre documentos
+
+1. **Sociedade Brasileira de Pediatria (SBP).** *Recomendações para o tratamento e prevenção da deficiência de ferro e anemia ferropriva em lactentes – Atualização 2026*, Diretriz nº 32, 17 de março de 2026. https://www.sbp.com.br/wp-content/uploads/2026/03/25239c-Diretrizes-Recom-p-tratam-e-prevencao-da-deficiencia-de-Fe-e-anemia-ferropriva.pdf . Prioritária para doses, critérios preventivos, seguimento e grupos de risco em lactentes.
+2. **OMS.** *Guideline on haemoglobin cutoffs to define anaemia in individuals and populations* (2024). https://www.who.int/publications/i/item/9789240088542 . Prioritária para limites etários de Hb, não para limiares transfusionais.
+3. **Ministério da Saúde.** Protocolo Clínico e Diretrizes Terapêuticas da Doença Falciforme, Portaria de novembro de 2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-falciforme/view . Aplicação brasileira da prevenção, hidroxiureia e cuidado especializado.
+4. **Ministério da Saúde.** PCDT da Anemia Hemolítica Autoimune — Portaria Conjunta SAES/SECTICS/MS nº 7, de julho de 2025. https://bvs.saude.gov.br/bvs/saudelegis/Saes/2025/poc0007_14_07_2025.html .
+5. **Ministério da Saúde.** Programa Nacional de Suplementação de Ferro; Nota Técnica nº 15/2022 (esquema de ciclos em crianças de 6–24 meses). https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2022/nota-tecnica-no-15-2022.pdf . Diferenciar do regime terapêutico de anemia instalada.
+6. **Ministério da Saúde.** PCDT Anemia por Deficiência de Ferro, Portaria SAS/MS nº 1.247/2014. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/anemia-deficiencia-de-ferro/view . Conferir vigência de ato e uso em casos específicos, sem substituir a SBP 2026 para lactentes.
+7. **Ministério da Saúde.** Talassemias: características e linhas de cuidado. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/talassemia .
+8. **ASH.** American Society of Hematology 2020 Guidelines: prevention, diagnosis and treatment of cerebrovascular disease in sickle cell disease. https://pmc.ncbi.nlm.nih.gov/articles/PMC7189278/ .
+9. **ABHH/AMB.** Diretrizes brasileiras para prevenção primária do AVC em crianças e adolescentes com doença falciforme. https://pmc.ncbi.nlm.nih.gov/articles/PMC8885378/ .
+10. **AAFP.** *Anemia in Infants and Children: Evaluation and Treatment* (2024). https://www.aafp.org/afp/2024/1200/anemia-infants-children .
+11. **Ministério da Saúde.** NutriSUS — perguntas frequentes e sobreposição com suplementos. https://www.gov.br/saude/pt-br/composicao/saps/nutrisus/faq .
+
+**Conflitos resolvidos no texto:** os cortes OMS 2024 não são os valores históricos generalizados de antes de 2024; recomendações preventivas SBP 2026 não são o regime antigo de 1 mg/kg/dia contínuo aplicado indistintamente a todos os lactentes; os PCDTs brasileiros de doença falciforme e AHAI receberam atualizações específicas que substituem normas anteriores. O conteúdo do Drive é comparativo de currículo e não comprovação de guideline nem autorização de copiar trechos/imagens.
+
+## 31. Controle de produção — pendências para aprovação
+
+- [x] Inventário inicial: sem apostila publicada e sem rascunho nominal de Anemias na Infância no repositório no momento da busca.
+- [x] Leitura comparativa de materiais do Drive sobre anemia ferropriva/talassemia, introdução às anemias, doença falciforme e quadro geral; autoria institucional Estratégia MED não confirmada; alguns materiais trazem informações antigas que precisam ser corrigidas pelas fontes atuais.
+- [x] Comparação do padrão LURIA pela apostila publicada de amenorreia (estrutura e CSS editorial).
+- [x] Corpo clínico com definição, mecanismos, exames, prevenção, tratamento, causas carenciais, hemoglobinopatias, hemólises, falência medular, transfusão, urgências e prognóstico.
+- [x] Oito casos clínicos originais comentados com interpretação, conduta e significado.
+- [x] Doze questões autorais comentadas, cada uma com quatro alternativas e revisão.
+- [ ] Revisão científica especializada de todas as indicações pediátricas (dose, via, segurança, PCDT local), sobretudo doença falciforme, AHAI, transfusão, prematuridade e anemia grave.
+- [ ] Teste formal de autossuficiência com rastreio de conceito por questão e checagem das alternativas no texto do próprio livro.
+- [ ] Auditoria automática real de extensão útil, originalidade, repetições semânticas e precisão; não usar metragem bruta como prova de qualidade.
+- [ ] Benchmark com apostila extensa de mesmo recorte e autoria de cursinho realmente identificada no Drive, se disponibilizada; os documentos abertos são comparativos úteis mas não certificam a equivalência institucional.
+- [ ] Pesquisa de imagens clínicas reais (10 candidatas quando úteis: esfregaços de ferropenia, talassemia, hemólise esferocítica, drepanócitos, esquizócitos, neutrófilos hipersegmentados, diferentes reticulócitos e ilustração autorizada do metabolismo do ferro). Licença/autoria individualizadas, fila Admin, sem inserção direta em HTML.
+- [ ] Gerar insumo JSON, fazer dry-run do gerador LURIA, criar preview e inspecionar desktop/PWA; não substituir nada publicado.
+- [ ] **Status permanece rascunho editorial — não publicar ou fazer merge/deploy antes da validação.**
