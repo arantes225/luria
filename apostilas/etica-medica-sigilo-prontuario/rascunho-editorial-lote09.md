@@ -505,12 +505,621 @@ Um prontuário bom não precisa de páginas de texto padronizado, mas deve permi
 - [x] Telemedicina, pesquisa, ensino e publicidade.
 - [x] Guarda/descarte com atualização CFM de 2026.
 - [x] Tabelas e fluxos didáticos.
-- [ ] Casos clínicos em padrão completo LURIA (mínimo quatro).
-- [ ] Questões autorais com alternativas explicadas (mínimo seis).
-- [ ] Esquemas/quadros visuais autorais e curadoria de material normativo.
+- [x] Casos clínico-éticos em padrão LURIA — 12 situações (seção 27).
+- [x] Questões autorais com alternativas explicadas — 18 questões (seção 28).
+- [x] Planejamento de 14 figuras autorais; produção e revisão jurídica ainda pendentes (seção 29).
 - [ ] Conferir artigos individualmente no CEM e notas recentes para correção de citações.
 - [ ] Revisão jurídico-institucional, de CRM e de encarregado de dados.
 - [ ] Converter ao formato nativo do renderizador, indexar, testar links/PWA.
 - [ ] Publicação somente depois de aprovação clínica/editorial.
 
 **Esta é uma apostila de revisão e ensino, não parecer jurídico aplicado a caso individual.**
+
+
+---
+
+## 27. Casos clínico-éticos LURIA — diagnóstico do dilema, raciocínio e providências
+
+Os casos são fictícios e didáticos. Algumas respostas jurídicas dependem de circunstâncias adicionais, da norma vigente e da atuação de direção técnica/assessoria jurídica; não converter casos em parecer vinculante.
+
+### Caso 1 — O marido exige o teste de HIV
+
+**Situação:** Mulher de 36 anos, capaz e orientada, recebe resultado confirmatório de HIV. O cônjuge telefona ao posto de saúde pedindo o laudo e informa que, como paga o plano, 'tem direito a tudo'. A paciente não autorizou compartilhamento.
+
+**Problema ético-jurídico:** Solicitação de dado sensível de adulto capaz por terceiro sem autorização. A equipe deve proteger sigilo, reconhecer direitos da paciente e considerar aconselhamento sobre prevenção de transmissão.
+
+**Raciocínio e diferenciais normativos:** Casamento, pagamento e preocupação declarada do terceiro não são bases universais para cópia de exame. A equipe deve avaliar consentimento e obrigações legais específicas sem presumir permissão. O diagnóstico pode ser comunicado à paciente em ambiente privado e o aconselhamento sobre prevenção e parcerias deve ser apropriado.
+
+**Conduta e registro:** Confirmar identidade da solicitante/paciente, negar entrega automática ao terceiro, oferecer espaço de apoio e comunicação segura à paciente. Registrar pedido e resposta institucional sem disponibilizar laudo a quem não estiver legitimado.
+
+**Por que este caso importa:** O direito de acesso à informação é do titular ou representante legitimado, não de qualquer parente preocupado.
+
+### Caso 2 — Adolescente pede aconselhamento contraceptivo
+
+**Situação:** Adolescente de 15 anos comparece à UBS sem responsável para conversar sobre método contraceptivo. Não relata coerção, aparenta compreender informações e pede que os pais não sejam informados automaticamente.
+
+**Problema ético-jurídico:** Situação de autonomia progressiva, sigilo do menor com discernimento e cuidado de saúde sexual.
+
+**Raciocínio e diferenciais normativos:** O art. 74 do CEM protege segredo de menor com discernimento, salvo risco de dano pela não revelação. A consulta deve avaliar capacidade, vulnerabilidade, consentimento, gravidez/IST e possibilidade de violência, sem negar cuidado ou divulgar automaticamente o tema. A situação concreta e a legislação específica podem modificar medidas.
+
+**Conduta e registro:** Acolher, explicar limites de sigilo, oferecer informações e cuidados pertinentes, registrar avaliação e plano. Se surgirem sinais de violência, coação ou risco atual, ativar medidas de proteção legalmente apropriadas.
+
+**Por que este caso importa:** Confidencialidade e proteção não são absolutos opostos: a boa prática identifica quando limitar o segredo e com quem compartilhar.
+
+### Caso 3 — Polícia pede prontuário por mensagem
+
+**Situação:** Investigador envia WhatsApp a médico pedindo prontuário integral de paciente internado por ferimento. A mensagem não contém identificação formal do processo, consentimento do paciente nem decisão judicial.
+
+**Problema ético-jurídico:** Pedido externo de dados sigilosos sem processo formal e fundamento suficiente evidenciados.
+
+**Raciocínio e diferenciais normativos:** O profissional deve distinguir deveres de comunicação ou prova legalmente determinados de entrega irrestrita de toda informação assistencial. Solicitação por aplicativo informal não é meio adequado para envio do prontuário integral; o pedido deve ser encaminhado ao fluxo formal e jurídico institucional.
+
+**Conduta e registro:** Preservar documento, registrar solicitação, informar canal formal para identificação/fundamento, envolver direção técnica/jurídico. Não encaminhar por celular pessoal.
+
+**Por que este caso importa:** Interesse público em investigação não elimina automaticamente direitos e limites do sigilo profissional.
+
+### Caso 4 — Enfermeira descobre que uma pessoa famosa foi internada
+
+**Situação:** Profissional de saúde que trabalha em outra ala acessa resultados laboratoriais de personalidade pública em prontuário eletrônico 'apenas para saber'. Não altera o registro nem publica nada.
+
+**Problema ético-jurídico:** Acesso sem necessidade assistencial e sem autorização pertinente, potencial infração ética, disciplinar e de proteção de dados.
+
+**Raciocínio e diferenciais normativos:** O sigilo também se viola por acesso indevido ou por permitir manuseio a pessoas não legitimadas, não apenas por postagem externa. Logs e perfis de acesso ajudam a apurar ocorrência, mas o sistema deve evitar curiosidade por desenho.
+
+**Conduta e registro:** Bloquear/avaliar acesso irregular, preservar logs, acionar privacidade/direção técnica e fluxo de incidente, avaliar dano/risco e medidas proporcionais. Não difundir nomes e resultados durante apuração.
+
+**Por que este caso importa:** No ambiente digital, confidencialidade inclui controle de quem vê, não só de quem fala.
+
+### Caso 5 — Erro de alergia no prontuário já assinado
+
+**Situação:** No pronto atendimento, médico percebe que registrou 'sem alergias', mas paciente relatara urticária imediata após amoxicilina. O registro já foi finalizado e outra equipe iniciou prescrição.
+
+**Problema ético-jurídico:** Erro documental que ameaça segurança e demanda correção rastreável e comunicação imediata.
+
+**Raciocínio e diferenciais normativos:** Apagar silenciosamente ou reabrir nota como se nunca tivesse havido erro compromete integridade. O adendo tem finalidade de documentar correção real, e o prontuário deve sinalizar a alergia operacionalmente.
+
+**Conduta e registro:** Informar imediatamente equipe, revisar medicação prescrita, inserir alergia no campo apropriado e adendo com referência a nota, data/hora e autoria. Registrar providências e monitorar paciente.
+
+**Por que este caso importa:** Registro fiel é parte do tratamento; correção sem comunicação não resolve o risco clínico.
+
+### Caso 6 — Pedido de cópia pela própria paciente
+
+**Situação:** Mulher de 62 anos pede cópia integral de seu prontuário para segunda opinião em outro hospital. Recepcionista informa que os dados 'são propriedade do médico' e cobra que ela justifique por que deseja acesso.
+
+**Problema ético-jurídico:** Direito de acesso da paciente a informações de saúde sob guarda profissional/institucional.
+
+**Raciocínio e diferenciais normativos:** Instituição guarda o prontuário e deve zelar pelo sigilo, mas isso não significa poder negar arbitrariamente acesso do titular. Pedidos exigem identificação e canal seguro, com ressalvas específicas quando cabíveis, não justificativa terapêutica inventada pela recepção.
+
+**Conduta e registro:** Orientar procedimento institucional, validar identidade e entregar cópia autêntica/documentada por meio seguro, com escopo e requisitos aplicáveis. Registrar atendimento ao pedido.
+
+**Por que este caso importa:** Guarda documental e titularidade do direito à informação são conceitos distintos.
+
+### Caso 7 — Estudante fotografa ECG e rosto em grupo de estudos
+
+**Situação:** Acadêmico fotografa tela com ECG, nome completo, data de nascimento e rosto do paciente no celular e a envia a grupo de 120 pessoas para discutir arritmia, sem autorização institucional ou do paciente.
+
+**Problema ético-jurídico:** Uso de dados pessoais sensíveis para finalidade didática por meio não seguro, com risco de reidentificação e divulgação.
+
+**Raciocínio e diferenciais normativos:** Finalidade educacional não autoriza fotografia ou circulação irrestrita de dados identificáveis. Mesmo retirada do nome não basta quando rosto e outros atributos permanecem. Professores e serviços precisam criar fluxo de imagens autorizadas, anonimização efetiva e licenças.
+
+**Conduta e registro:** Interromper compartilhamento, comunicar ocorrência à supervisão/privacidade, preservar evidências necessárias para apuração, adotar contenção e avaliar necessidade de comunicação. Usar ECG autorizado e desidentificado em futuras aulas.
+
+**Por que este caso importa:** A medicina baseada em casos pode e deve preservar privacidade; 'é para estudar' não é base universal.
+
+### Caso 8 — Delirium e consentimento para procedimento de emergência
+
+**Situação:** Paciente de 77 anos com sepse grave e delirium alterna momentos de lucidez e confusão. Há indicação urgente de procedimento de controle de foco. Não há familiar imediatamente disponível; equipe teme agir por falta de assinatura.
+
+**Problema ético-jurídico:** Capacidade decisional temporariamente prejudicada em emergência clínica potencialmente fatal.
+
+**Raciocínio e diferenciais normativos:** Avaliar compreensão no momento, urgência, benefícios/risco, possibilidade de obter representante sem criar atraso danoso e fundamento para intervenção necessária. Assinatura não substitui avaliação de capacidade; pode existir exceção emergencial nos limites éticos e legais.
+
+**Conduta e registro:** Documentar avaliação de capacidade, necessidade e urgência, medidas proporcionais, profissionais envolvidos e esforços de comunicação. Realizar procedimento necessário segundo base legal/ética aplicável, informando paciente/responsáveis legitimados posteriormente.
+
+**Por que este caso importa:** Proteger autonomia significa reconhecer quando ela está presente e quando emergência exige medidas proporcionais.
+
+### Caso 9 — Adolescente revela violência por responsável
+
+**Situação:** Paciente de 13 anos relata espontaneamente agressões familiares, teme voltar para casa e pede ao médico 'não conte a ninguém'. Exame mostra lesões e há suspeita clínica, ainda sem definição de autoria.
+
+**Problema ético-jurídico:** Suspeita de maus-tratos infantil/adolescente, com risco concreto e deveres protetivos.
+
+**Raciocínio e diferenciais normativos:** A regra ética de sigilo em menor com discernimento não impede comunicação obrigatória de suspeita de violência ao Conselho Tutelar, nem notificação sanitária conforme normas. A entrevista clínica não deve se transformar em interrogatório investigativo nem a proteção em divulgação pública.
+
+**Conduta e registro:** Tratar lesões, avaliar segurança, registrar relato e achados objetivamente, comunicar órgãos competentes e articular plano de destino seguro. Explicar à criança, com linguagem apropriada, as medidas necessárias e seus limites de confidencialidade.
+
+**Por que este caso importa:** A obrigação de proteger não depende de certeza pericial e não autoriza espalhar informações indiscriminadamente.
+
+### Caso 10 — Vazamento de laudos por e-mail
+
+**Situação:** Um funcionário encaminha, por erro de autocomplete, arquivos com nomes, exames e diagnósticos de 48 pessoas ao endereço eletrônico de terceiro não envolvido no cuidado. O responsável por privacidade é avisado duas horas depois.
+
+**Problema ético-jurídico:** Incidente de confidencialidade que envolve dados sensíveis de saúde e pode acarretar risco ou dano relevante aos titulares.
+
+**Raciocínio e diferenciais normativos:** O evento precisa ser contido, documentado e analisado pelo controlador; comunicação à ANPD e titulares é requerida quando critério de risco relevante é preenchido, em regra três dias úteis conforme Resolução 15/2024. Não é função de um profissional isolado decidir esconder o ocorrido.
+
+**Conduta e registro:** Ativar plano de resposta, preservar logs, avaliar destinatário/arquivos, tentar contenção, proteger serviço, classificar risco e cumprir comunicações exigidas dentro do prazo legal. Corrigir fluxo e treinar equipe, sem expor novamente dados.
+
+**Por que este caso importa:** Proteção de dados exige governança, não apenas punição individual do operador.
+
+### Caso 11 — Prontuários de clínica fechada há 21 anos
+
+**Situação:** Clínica desativada guarda em caixas prontuários cujo último registro data de mais de vinte anos. Proprietário deseja descartar tudo no lixo comum para liberar espaço, sem inventário nem documentação.
+
+**Problema ético-jurídico:** Gestão arquivística e possibilidade de descarte condicionada, com risco de violação de sigilo e perda de documento necessário.
+
+**Raciocínio e diferenciais normativos:** Parecer CFM 19/2026 esclarece possibilidade de descarte após 20 anos sob requisitos, mas não autoriza eliminação descontrolada. Verificar legislação adicional, processos pendentes, arquivos de menores, histórico científico, política da instituição e método seguro.
+
+**Conduta e registro:** Auditar prazos e impedimentos, aprovar plano institucional com diretor técnico/jurídico/arquivo, registrar lote e método de destruição segura ou transferência legítima. Não colocar caixas em lixo público.
+
+**Por que este caso importa:** Prazo de guarda não é autorização para vazamento material de dados ou descarte improvisado.
+
+### Caso 12 — IA gera prontuário com falsa administração de medicamento
+
+**Situação:** Ferramenta de transcrição de consulta registra que médico aplicou antibiótico IV, embora apenas tenha discutido a possibilidade; o texto foi copiado para evolução e assinado sem revisão. Outro plantonista deixa de administrar o fármaco.
+
+**Problema ético-jurídico:** Erro de veracidade documental e potencial evento adverso assistencial associado a uso acrítico de inteligência artificial.
+
+**Raciocínio e diferenciais normativos:** A IA não substitui conferência de fatos pelo profissional. O registro médico deve diferenciar medicação proposta, prescrita e administrada. O erro não pode ser apagado silenciosamente; exige correção com trilha de auditoria, avaliação clínica e governança de ferramenta.
+
+**Conduta e registro:** Verificar condição do paciente e terapia real, corrigir via adendo, comunicar equipe, revisar processo e controles de validação humana. Avaliar se houve transferência ilícita de dados a fornecedor externo e incidente de segurança.
+
+**Por que este caso importa:** Tecnologia pode acelerar documentação, mas aumenta dano quando simula ações não realizadas.
+
+
+
+## 28. Questões autorais de residência e ENAMED — comentários por alternativa
+
+Estas 18 questões são autorais e explicam cada alternativa, integrando aplicação do CEM, LGPD e regras documentais. A interpretação normativa final depende da redação vigente dos atos na data da prova.
+
+### Questão 1 — Segredo profissional de adulto capaz
+
+**Enunciado:** Homem de 30 anos pede resultado HIV de sua esposa adulta e capaz, sem autorização. Qual é a conduta inicial?
+
+**A)** Entregar exame por haver casamento.
+
+**B)** Verificar autorização/base legal, preservando sigilo e oferecendo canal apropriado de comunicação.
+
+**C)** Publicar apenas o resultado sem nome.
+
+**D)** Negar qualquer orientação de prevenção ao casal para sempre.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Parentesco não gera acesso irrestrito ao exame de adulto capaz.
+- **Alternativa B:** É a resposta alinhada ao dever de sigilo e direitos do titular.
+- **Alternativa C:** A pessoa pode ser identificável pelo contexto; divulgação é indevida.
+- **Alternativa D:** É possível orientar prevenção genericamente e apoiar comunicação consentida sem revelar segredo.
+
+**Mini-revisão:** A autorização para acesso tem que se referir à informação, finalidade e titular; casamento não substitui essa avaliação.
+
+### Questão 2 — Adolescente e confidencialidade
+
+**Enunciado:** Adolescente com discernimento procura orientações sobre saúde sexual e não relata risco imediato. O CEM prevê:
+
+**A)** Revelação automática de todo assunto íntimo aos pais.
+
+**B)** Sigilo inclusive diante dos pais, salvo hipóteses em que a não revelação possa causar dano e deveres legais aplicáveis.
+
+**C)** Proibição total de consulta individual.
+
+**D)** Obrigatoriedade de registrar a consulta apenas no prontuário dos pais.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A divulgação indiscriminada não é a regra.
+- **Alternativa B:** O art. 74 aborda segredo de menor com capacidade de discernimento, com ressalvas.
+- **Alternativa C:** A consulta individual pode ser apropriada e protetiva.
+- **Alternativa D:** O prontuário diz respeito ao adolescente e deve ser gerido com proteção.
+
+**Mini-revisão:** Capacidade, risco, dever de comunicação e privacidade devem ser avaliados caso a caso.
+
+### Questão 3 — Suspeita de maus-tratos
+
+**Enunciado:** Durante consulta, há suspeita fundamentada de violência contra menor. Ainda não há prova de quem praticou. Qual conduta?
+
+**A)** Aguardar sentença criminal.
+
+**B)** Tratar e registrar, comunicar ao Conselho Tutelar conforme ECA e cumprir notificações cabíveis.
+
+**C)** Divulgar fotos da criança em rede social para buscar testemunhas.
+
+**D)** Excluir hipótese porque criança pediu silêncio.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A lei protege mesmo diante de suspeita.
+- **Alternativa B:** A providência é protetiva, sem atribuir autoria automaticamente.
+- **Alternativa C:** Aumentaria dano, reidentificação e revitimização.
+- **Alternativa D:** O dever legal de comunicação pode limitar sigilo absoluto.
+
+**Mini-revisão:** Sigilo, dever legal e proteção não são medidas mutuamente excludentes.
+
+### Questão 4 — Prontuário e titularidade
+
+**Enunciado:** Pessoa adulta solicita cópia do prontuário para consulta com outro especialista. Qual afirmação é correta?
+
+**A)** O prontuário pertence exclusivamente ao médico e nunca pode ser copiado.
+
+**B)** A guarda é de profissional/instituição; o paciente tem direito de acesso e cópia nas condições normativas.
+
+**C)** Somente o empregador tem direito de ver registros.
+
+**D)** O acesso depende de parecer favorável da seguradora.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Confunde guarda com direito de informação.
+- **Alternativa B:** É o conceito central das normas do CFM.
+- **Alternativa C:** Não corresponde à finalidade ou direitos do titular.
+- **Alternativa D:** Cria requisito que não é regra geral.
+
+**Mini-revisão:** Proteger a cópia durante entrega não justifica negar o direito de acesso.
+
+### Questão 5 — Documento no CFM 1.638/2002
+
+**Enunciado:** Qual elemento é obrigatório na evolução segundo regras de prontuário?
+
+**A)** Hora, data e identificação de quem registra, com informações relevantes de avaliação e cuidado.
+
+**B)** Somente carimbo do setor sem evolução.
+
+**C)** Frases automáticas iguais a todos os pacientes.
+
+**D)** Assinatura de quem não participou do atendimento.
+
+**Gabarito: A.**
+
+- **Alternativa A:** A documentação cronológica e autoria são essenciais.
+- **Alternativa B:** A carência de dados impede continuidade e auditoria.
+- **Alternativa C:** Texto padronizado não substitui fatos específicos.
+- **Alternativa D:** Atribuição indevida de autoria compromete integridade.
+
+**Mini-revisão:** Prontuário legível e completo existe para comunicação segura e continuidade assistencial.
+
+### Questão 6 — Erro já registrado
+
+**Enunciado:** Médico percebe que uma alergia foi documentada incorretamente após assinatura digital. O melhor próximo passo é:
+
+**A)** Apagar silenciosamente e alterar hora da nota.
+
+**B)** Fazer adendo identificado e rastreável, atualizar alerta e informar a equipe quando houver risco.
+
+**C)** Ignorar porque a nota já foi assinada.
+
+**D)** Pedir a colega que edite usando a própria senha.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Adulteração rompe integridade do documento.
+- **Alternativa B:** Correção auditável e comunicação são medidas de segurança.
+- **Alternativa C:** Pode deixar paciente exposto a risco grave.
+- **Alternativa D:** Acesso por credencial de terceiro compromete autoria.
+
+**Mini-revisão:** Correção documental não pode apagar histórico nem deixar equipe desinformada.
+
+### Questão 7 — Capacidade e consentimento
+
+**Enunciado:** Paciente lúcido entende riscos e benefícios, mas recusa procedimento eletivo. Qual conduta é mais adequada?
+
+**A)** Declarar incapacidade apenas por discordar do médico.
+
+**B)** Respeitar decisão dentro do marco legal/ético, documentando consentimento/recusa informada e plano seguro.
+
+**C)** Realizar procedimento sempre à força.
+
+**D)** Omitir alternativas e riscos do prontuário.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Discordância não demonstra incapacidade decisional.
+- **Alternativa B:** É a aplicação da autonomia, informação e não abandono.
+- **Alternativa C:** Procedimento forçado requer condições legais específicas, não simples preferência profissional.
+- **Alternativa D:** Impede avaliação da qualidade da decisão.
+
+**Mini-revisão:** Consentimento é diálogo e capacidade específica à decisão, não mera assinatura.
+
+### Questão 8 — Dados sensíveis e LGPD
+
+**Enunciado:** Quais dados recebem proteção como sensíveis pela LGPD?
+
+**A)** Dados de saúde, vida sexual e dados genéticos vinculados a pessoa natural.
+
+**B)** Somente endereço comercial de empresa.
+
+**C)** Apenas registros já publicados por hospital.
+
+**D)** Somente telefone institucional do setor.
+
+**Gabarito: A.**
+
+- **Alternativa A:** A lei define essas categorias como sensíveis.
+- **Alternativa B:** É dado de entidade e não corresponde ao conceito.
+- **Alternativa C:** Dados tornados públicos podem ainda ser sujeitos a princípios e direitos.
+- **Alternativa D:** Não corresponde à categoria de sensibilidade pessoal.
+
+**Mini-revisão:** Dados de saúde exigem base legal e controles especiais, mesmo em sistemas privados.
+
+### Questão 9 — Bases legais além de consentimento
+
+**Enunciado:** Qual afirmação sobre registro do atendimento no SUS e LGPD é adequada?
+
+**A)** Sem termo genérico assinado, o médico não pode registrar sinais vitais.
+
+**B)** A tutela da saúde e obrigações legais podem fundamentar tratamento de dados sensíveis quando requisitos se aplicam.
+
+**C)** Toda coleta de dado depende apenas de interesse comercial.
+
+**D)** LGPD proíbe compartilhamento entre equipes diretamente envolvidas no cuidado.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Confunde consentimento com todas as hipóteses legais.
+- **Alternativa B:** Tutela da saúde é hipótese legal, sujeita à finalidade e necessidade.
+- **Alternativa C:** Interesse comercial não substitui base adequada.
+- **Alternativa D:** Coordenação assistencial pode ocorrer com proteção e limitação de acesso.
+
+**Mini-revisão:** Para dados sensíveis, identificar uma das hipóteses do art. 11 e cumprir princípios da LGPD.
+
+### Questão 10 — Pedido policial informal
+
+**Enunciado:** Autoridade solicita por mensagem de aplicativo uma cópia integral de prontuário de pessoa internada. Não apresentou fundamento formal ou consentimento. A conduta é:
+
+**A)** Enviar o documento imediatamente pelo aplicativo pessoal.
+
+**B)** Preservar sigilo e encaminhar pedido a processo formal de avaliação da base legal e alcance do compartilhamento.
+
+**C)** Publicar a história clínica para acelerar investigação.
+
+**D)** Destruir o documento para protegê-lo.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O canal e a falta de fundamentação não legitimam entrega integral.
+- **Alternativa B:** É resposta proporcional e auditável, sem negar cumprimento de ordem válida quando existir.
+- **Alternativa C:** Viola intimidade.
+- **Alternativa D:** Destruição de documento é conduta incompatível com guarda.
+
+**Mini-revisão:** Interesse investigativo não autoriza divulgação indiscriminada de dados sigilosos.
+
+### Questão 11 — Consulta por telemedicina
+
+**Enunciado:** Uma teleconsulta regular permite ao médico dispensar prontuário por ter sido por vídeo?
+
+**A)** Sim, vídeo não é ato de assistência.
+
+**B)** Não; exige registro, consentimento e confidencialidade conforme Resolução CFM 2.314/2022.
+
+**C)** Apenas se a chamada durou menos de 10 minutos.
+
+**D)** Somente se foi em aplicativo conhecido.
+
+**Gabarito: B.**
+
+- **Alternativa A:** É modalidade de prestação assistencial sujeita a deveres próprios.
+- **Alternativa B:** Documentação e segurança são requisitos fundamentais.
+- **Alternativa C:** Duração não elimina responsabilidade.
+- **Alternativa D:** Popularidade do aplicativo não prova conformidade.
+
+**Mini-revisão:** Telemedicina requer requisitos técnicos, clínicos, legais e registro do atendimento.
+
+### Questão 12 — Prontuário e IA generativa
+
+**Enunciado:** Um resumo de IA afirma que antibiótico foi administrado, mas não foi. Qual ação é correta?
+
+**A)** Assinar sem ler para economizar tempo.
+
+**B)** Corrigir fielmente, verificar fato, documentar adendo se já assinado e avaliar segurança do paciente.
+
+**C)** Confiar que o sistema sempre reflete a verdade.
+
+**D)** Eliminar todos os logs para evitar questionamentos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A assinatura assume conteúdo não revisado.
+- **Alternativa B:** É a resposta de integridade e segurança.
+- **Alternativa C:** Modelos podem produzir informação falsa.
+- **Alternativa D:** Exclusão de evidência impede auditoria e pode agravar responsabilidade.
+
+**Mini-revisão:** IA pode apoiar documentação, não substituir verificação humana de fatos clínicos.
+
+### Questão 13 — Descarte após 20 anos
+
+**Enunciado:** Clínica deseja eliminar prontuários cujo último registro é de 21 anos atrás. Qual interpretação do Parecer CFM 19/2026 é melhor?
+
+**A)** Todos devem ser jogados fora imediatamente.
+
+**B)** É possível avaliar descarte após 20 anos, com requisitos de segurança, sigilo, rastreabilidade e ressalvas aplicáveis.
+
+**C)** Prazo conta sempre da primeira consulta.
+
+**D)** Basta digitalizar por foto no celular para descarte irrestrito.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Possibilidade de descarte não é obrigação de destruição.
+- **Alternativa B:** O parecer de 2026 reforça condições para eliminação segura.
+- **Alternativa C:** Prazo é referido ao último registro.
+- **Alternativa D:** Digitalização não se resume a foto desprotegida.
+
+**Mini-revisão:** Temporalidade documental e descarte seguro exigem processo institucional.
+
+### Questão 14 — Incidente de dados e prazo ANPD
+
+**Enunciado:** Controlador de hospital detecta vazamento de dados sensíveis com risco relevante. Em regra, qual prazo consta da Resolução ANPD 15/2024 para comunicação?
+
+**A)** Três dias úteis, ressalvadas regras específicas.
+
+**B)** Vinte anos.
+
+**C)** Apenas no próximo relatório anual.
+
+**D)** Nunca, pois dado médico é sigiloso.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Esse é o prazo divulgado na orientação da ANPD.
+- **Alternativa B:** É prazo de retenção documental em contexto diverso.
+- **Alternativa C:** Incidente relevante exige resposta mais célere.
+- **Alternativa D:** O sigilo reforça a proteção e deveres de comunicação, não elimina normas.
+
+**Mini-revisão:** Nem todo evento é incidente comunicável, mas aquele com risco ou dano relevante requer avaliação e eventual comunicação.
+
+### Questão 15 — Uso de imagens para aula
+
+**Enunciado:** Estudante quer usar foto clínica com rosto de paciente para apresentação em rede aberta. Que atitude é compatível com ética e LGPD?
+
+**A)** Retirar apenas CPF, mantendo rosto, e divulgar sem avaliação.
+
+**B)** Verificar finalidade, consentimento/licença, anonimização quando possível e regras éticas; preferir imagens autorizadas e adequadas.
+
+**C)** Usar qualquer imagem publicada na internet.
+
+**D)** Publicar e pedir autorização depois.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Rosto pode reidentificar e há finalidade diversa do cuidado.
+- **Alternativa B:** Envolve proteção de identidade e base para finalidade educacional/publicitária.
+- **Alternativa C:** Disponibilidade online não elimina direitos autorais nem privacidade.
+- **Alternativa D:** Consentimento posterior não corrige necessariamente a divulgação.
+
+**Mini-revisão:** Licença de imagem e direito de privacidade são verificações distintas.
+
+### Questão 16 — Notificação compulsória
+
+**Enunciado:** Profissional identifica evento de notificação sanitária obrigatória. Qual postura é adequada?
+
+**A)** Aguardar consentimento do paciente sempre, mesmo quando lei impõe comunicação.
+
+**B)** Notificar pelo fluxo obrigatório e limitar divulgação aos órgãos/necessidade legitimados.
+
+**C)** Postar nome do paciente para alertar moradores.
+
+**D)** Deixar de registrar porque existe sigilo.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A obrigação legal pode fundamentar o compartilhamento sem consentimento.
+- **Alternativa B:** É a aplicação de dever legal e minimização.
+- **Alternativa C:** Divulgação pública é excessiva e desnecessária.
+- **Alternativa D:** Sigilo não significa deixar de cumprir norma.
+
+**Mini-revisão:** Comunicação sanitária ≠ publicidade de dados pessoais.
+
+### Questão 17 — Vazamento e investigação interna
+
+**Enunciado:** Hospital sofre acesso indevido a dados de pacientes. Qual medida inicial é mais adequada?
+
+**A)** Apagar logs para proteger reputação.
+
+**B)** Conter acesso, preservar evidências e acionar segurança/privacidade, avaliando risco e deveres de comunicação.
+
+**C)** Responder publicando o banco inteiro.
+
+**D)** Ignorar se ninguém fez reclamação.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Impede investigação e prova.
+- **Alternativa B:** A resposta coordenada é exigida por governança e proteção assistencial.
+- **Alternativa C:** Agravaria exposição.
+- **Alternativa D:** A ausência de queixa não prova ausência de risco.
+
+**Mini-revisão:** A tríade confidencialidade–integridade–disponibilidade deve orientar resposta.
+
+### Questão 18 — Revisão de prontuário no hospital
+
+**Enunciado:** Na Resolução CFM 1.638/2002, as instituições que prestam assistência médica devem:
+
+**A)** Manter Comissão de Revisão de Prontuários conforme norma.
+
+**B)** Delegar toda evolução clínica à recepção.
+
+**C)** Não registrar intercorrências de plantão.
+
+**D)** Excluir data e hora em registros eletrônicos.
+
+**Gabarito: A.**
+
+- **Alternativa A:** A norma estabelece comissão e competências.
+- **Alternativa B:** Responsabilidade documental é da equipe assistencial e gestão pertinente.
+- **Alternativa C:** Evolução deve preservar atos e eventos relevantes.
+- **Alternativa D:** Data/hora são essenciais à cronologia e auditoria.
+
+**Mini-revisão:** O prontuário é ferramenta de segurança do serviço e do paciente.
+
+
+
+## 29. Curadoria visual — catorze diagramas e quadros candidatos
+
+Neste tema, imagens clínicas reais agregam menos que fluxos normativos, modelos de registro e diagramas de risco. As catorze propostas abaixo devem ser produzidas como **diagramas autorais**, com revisão técnico-jurídica antes da publicação. Não utilizar capturas de prontuários reais ou nomes/CPFs para ilustrar LGPD.
+
+| Nº | Elemento | Objetivo didático | Fonte/condição |
+|---|---|---|---|
+| 1 | Fluxograma de pedido de prontuário | Quem pede? identidade → base/autorização → escopo → canal seguro → registro | Diagrama autoral baseado em CEM e LGPD, revisão jurídica. |
+| 2 | Anatomia documental de uma boa evolução | Identificação, sinais vitais, hipótese, exame, plano, autoria e horário | Exemplo fictício visual, sem dados reais. |
+| 3 | SOAP aplicado ao plantão | Quatro quadrantes S/O/A/P com caso de pneumonia fictício | Infográfico original, revisão clínica. |
+| 4 | Dado sensível versus pessoal comum | Quadro de categorias conforme LGPD, sem expor pessoas | Infográfico autoral embasado art. 5º LGPD. |
+| 5 | Correção rastreável | Linha do tempo nota inicial → erro identificado → adendo → notificação da equipe | Diagrama autoral. |
+| 6 | Caso de sigilo do adolescente | Árvore decisória discernimento, risco, dever legal e comunicação proporcional | Diagrama autoral, validar com ECA e CEM. |
+| 7 | Acesso na equipe de saúde | Perfis assistenciais autorizados vs acesso por curiosidade | Diagrama visual sem captura de sistema real. |
+| 8 | Telemedicina segura | Identidade + consentimento + registro + canal seguro + encaminhamento presencial | Diagrama com referência Resolução CFM 2.314/2022. |
+| 9 | Ciclo de vida do prontuário | Criação → assistência → guarda → pedidos → arquivamento → descarte auditável | Linha do tempo com Parecer 19/2026 e Lei 13.787/2018. |
+| 10 | LGPD: bases legais de dados de saúde | Mapa art. 11 — tutela de saúde, obrigação legal, políticas públicas, etc. | Quadro autoral com texto conferido da LGPD. |
+| 11 | Resposta a incidente de dados | Detectar → conter → investigar → classificar risco → comunicar se exigido → remediar | Fluxograma próprio com Resolução ANPD 15/2024. |
+| 12 | Sigilo versus comunicação sanitária | Quadro de dupla finalidade: cuidado, notificação, proteção, pesquisa, ensino | Matriz original com restrição de destinatários. |
+| 13 | Publicidade e imagens clínicas | Validação de origem, privacidade, autorização, licença e adequação ética | Checklist ilustrado sem fotos reais. |
+| 14 | Consentimento e capacidade decisional | Quatro atributos: compreensão, aplicação, raciocínio e escolha | Diagrama didático não substitutivo de parecer clínico. |
+
+### Regras de produção gráfica
+
+- Conferir texto das normas antes de transformar em fluxo.
+- Usar casos e dados simulados, explicitamente identificados, e não recortes de prontuários reais.
+- Inserir alt text e versão legível em telas pequenas; evitar fonte diminuta em diagramas complexos.
+- Gerar WebP com compressão adequada, retendo versão vetorial original de cada fluxograma quando possível.
+- Registrar data da norma, link e responsável por revisão; diagramas normativos ficam desatualizados quando legislação muda.
+- Não copiar ilustrações de CFM ou ANPD sem checar direitos de reprodução.
+- Cada figura deve demonstrar decisão concreta, não decorar uma página.
+- O exame final de acessibilidade inclui contraste, leitura linear e facilidade de navegação por teclado.
+
+## 30. Integração da aula 170 com a LURIA e segurança digital
+
+O conteúdo alimentará futuros recursos da plataforma (flashcards, questões, caderno de erros e ferramentas de estudo), mas **a apostila não é autorização para a LURIA coletar prontuários de pacientes reais**. Qualquer integração de dados de saúde reais em um produto educacional ou em ferramentas de IA exige análise própria de finalidade, base legal, minimização, segurança e papéis de agentes de tratamento.
+
+### Regras de design para o conteúdo didático
+
+1. Questões devem poder apresentar casos fictícios sem dados reais.
+2. Exemplos de prontuário devem ser claramente marcados como simulação.
+3. Evitar pedir que alunos enviem exame de paciente identificado para a plataforma apenas para testar recurso.
+4. Não mostrar dados reais em log, console, analytics, thumbnail, notificação ou URL pública.
+5. Trechos de prontuário em aulas precisam de revisão ética, clínica e autorização editorial adequadas.
+6. Atualizações regulatórias devem gerar revisão versionada do conteúdo, preservando histórico e data.
+7. Conteúdo sobre LGPD deve ensinar proporcionalidade, não proibir indevidamente fluxo legítimo de assistência.
+8. Prontuários eletrônicos de sistemas reais são artefatos regulados; aplicativo de notas estudantis não deve ser divulgado como prontuário clínico certificado sem adequação.
+
+## 31. Auditoria consolidada e pendências
+
+**Produção textual desta etapa:** 12 casos clínico-éticos, 18 questões com explicação de cada alternativa, 14 diagramas candidatos e cobertura dos fundamentos, sigilo, prontuário, LGPD e saúde digital.
+
+### Conferência antes de publicação
+- [x] Definição e funções do prontuário.
+- [x] CEM e hipóteses de sigilo/compartilhamento.
+- [x] Direito de acesso, equipe, familiares e autoridade judicial.
+- [x] Integridade, SOAP, adendo e trilha de auditoria.
+- [x] Autonomia, consentimento, recusa, capacidade e adolescentes.
+- [x] Código Penal, LGPD e ANPD.
+- [x] Descarte de prontuário e Parecer CFM 19/2026.
+- [x] Telemedicina, ensino, pesquisa, imagens e IA.
+- [x] Casos e questões com correção completa.
+- [x] Propostas de visualizações em quantidade superior ao mínimo.
+- [ ] Conferir a numeração exata e o texto de todos os artigos do CEM citados, comparando alterações até a data de publicação.
+- [ ] Parecer técnico-jurídico de compliance/prontuário, LGPD e eventuais conflitos interpretativos.
+- [ ] Revisão de normas específicas de prontuário pediátrico, de saúde mental, prontuário ocupacional e prontuário público, quando a situação especial for abordada.
+- [ ] Produção gráfica e licença/validação de diagramas.
+- [ ] Testar links, acessibilidade, integração HTML ou content.json, navegação e PWA.
+- [ ] Avaliação científica e educacional por profissional habilitado antes de publicar.
+- [ ] Não declarar o rascunho como certificação de conformidade LGPD de plataforma alguma.
+
+**Status final: rascunho editorial aprofundado; não é prontuário válido, nem parecer jurídico individual, nem apostila cientificamente aprovada.**
