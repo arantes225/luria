@@ -361,6 +361,32 @@ Quatro genes alfa normais; gravidade costuma aumentar com número e configuraç�
 
 O risco genético na alfa-talassemia depende de deleções **em cis** ou **em trans** nos cromossomos, sobretudo ao avaliar casal com traço; o mesmo grau de microcitose materna pode corresponder a riscos fetais diferentes. Essa é a importância do estudo molecular em situações selecionadas.
 
+
+### 6.3 Classificação contemporânea: TDT e NTDT
+A distinção entre **talassemia dependente de transfusão (TDT)** e **não dependente de transfusão (NTDT)** é clínica. TDT representa a necessidade de transfusões regulares para manter crescimento, funcionalidade e reduzir eritropoese ineficaz; NTDT descreve pessoas que, apesar de anemia e complicações, não dependem continuamente desse suporte. A classificação pode mudar no decorrer da vida.
+
+A eritropoese ineficaz resulta da precipitação e toxicidade de cadeias globínicas em desequilíbrio, desencadeando destruição intramedular, expansão da medula e, em casos graves, hematopoese extramedular. Na NTDT, a redução da hepcidina pode aumentar absorção intestinal de ferro mesmo sem múltiplas transfusões. Por isso, sobrecarga de ferro não é sinônimo exclusivo de excesso transfusional.
+
+**O genótipo não determina sozinho a dependência transfusional.** A expressão de HbF, a quantidade residual de β-globina e variantes associadas modificam gravidade. A combinação HbE/β-talassemia pode variar desde quadro leve até dependência transfusional. Categorias históricas como “major/intermediária/minor” são úteis para provas, mas não substituem avaliação clínica atual.
+
+### 6.4 Como reconhecer o fenótipo na prática
+**Traço beta-talassêmico:** costuma produzir VCM e HCM baixos, contagem relativa de eritrócitos preservada e anemia leve ou ausente. HbA₂ elevada sugere o diagnóstico, mas resultados limítrofes exigem conferir deficiência concomitante de ferro e variantes que alterem proporções.
+
+**TDT na criança:** anemia intensa após redução fisiológica de HbF, palidez, irritabilidade, crescimento inadequado, icterícia, esplenomegalia e expansão da medula óssea. O tratamento exige transfusões programadas e prevenção de efeitos cumulativos. Não confundir transfusão crônica em talassemia com a decisão ocasional de transfundir uma anemia de outra causa.
+
+**NTDT:** os níveis de hemoglobina podem ser relativamente mais altos, mas há risco de trombose, hipertensão pulmonar, colelitíase, úlcera de perna, hematopoese extramedular e sobrecarga de ferro. Episódios de infecção, cirurgia ou gravidez podem alterar a necessidade de transfusão.
+
+### 6.5 Alfa-talassemias de gravidade variável
+O número de genes alfa afetados fornece classificação inicial: uma alteração usualmente silenciosa; duas podem produzir traço microcítico; três podem causar doença da HbH com anemia hemolítica; quatro podem produzir síndrome de Hb Bart's e hidropsia fetal. Variantes **não delecionais** também alteram o fenótipo, logo contagem de genes isolada não substitui avaliação molecular.
+
+Uma deleção **em cis** (––/αα) transmite risco diferente da configuração **em trans** (–α/–α) para a prole. Quando ambos os parceiros possuem deleções cis, existe possibilidade mendeliana de feto com ausência de todos os quatro genes alfa. Na gestação de risco, aconselhamento genético e medicina fetal são indispensáveis.
+
+### 6.6 Complicações por eritropoese ineficaz
+A hipertrofia da medula e a hematopoese extramedular podem causar alterações ósseas, esplenomegalia e massas paravertebrais. **Dor dorsal com fraqueza, perda sensitiva, alterações esfincterianas ou sinais medulares** exige investigação urgente de compressão, inclusive ressonância conforme contexto.
+
+Na TDT, ferro acumulado pode comprometer coração, fígado, pâncreas e hipófise, levando a arritmias, insuficiência cardíaca, diabetes, hipotireoidismo, atraso puberal e hipogonadismo. A prevenção combina transfusão bem organizada, quelação e seguimento de órgãos-alvo. Não atribuir fratura ou infertilidade simplesmente à “anemia crônica” sem pesquisar endocrinopatia e sobrecarga férrica.
+
+
 ## 7. Talassemia versus deficiência de ferro: diferenciais práticos
 
 | Dado | Deficiência de ferro | Traço talassêmico |
