@@ -1,0 +1,37 @@
+{
+  "status": "curadoria_parcial_nao_importada_no_admin",
+  "book_slug": "sindromes-glomerulares",
+  "book_title": "Síndromes glomerulares",
+  "editor_note": "Duas figuras rastreadas até artigos que declaram licença CC BY. A aprovação clínica, de crédito de figura, compressão WebP e inserção deve ocorrer exclusivamente no Admin. Esta lista NÃO é o manifesto oficial nem deve ser processada automaticamente. Verificar se há indicação de crédito de terceiros junto à imagem original antes do uso comercial.",
+  "verified_candidates": [
+    {
+      "candidate_key": "sindromes-glomerulares-figura-full-house-lupus",
+      "target_section": "nefrite-lupica",
+      "src": "https://media.springernature.com/lw1200/springer-static/image/art%3A10.1186%2F1471-2369-13-81/MediaObjects/12882_2012_Article_319_Fig2_HTML.jpg",
+      "alt": "Quatro painéis de imunofluorescência com marcação granular para imunoglobulinas e frações de complemento em glomérulo com nefrite lúpica.",
+      "caption": "Nefrite lúpica classe IV: padrão de imunofluorescência full house na biópsia, com depósitos de imunoglobulinas e complemento. Observe distribuição e intensidade; não confundir com padrão linear de anti-MBG.",
+      "didactic_note": "Comparar com a figura linear anti-MBG e com IgA mesangial em seções diagnósticas.",
+      "source_name": "Ross S et al., BMC Nephrology 2012, Figure 2",
+      "source_url": "https://link.springer.com/article/10.1186/1471-2369-13-81",
+      "source_license": "CC BY 2.0, declaração explícita da página do artigo; atribuição dos autores e fonte obrigatória",
+      "license_evidence_url": "https://link.springer.com/article/10.1186/1471-2369-13-81",
+      "source_year": 2012,
+      "review_status": "pendente_aprovacao_clinica_e_admin"
+    },
+    {
+      "candidate_key": "sindromes-glomerulares-figura-membranosa-microscopia-optica",
+      "target_section": "nefropatia-membranosa",
+      "src": "https://www.frontiersin.org/files/Articles/611317/xml-images/fmed-07-611317-g0001.webp",
+      "alt": "Biópsia renal por microscopia óptica mostrando espessamento difuso das paredes capilares na nefropatia membranosa.",
+      "caption": "Nefropatia membranosa, microscopia óptica: espessamento difuso das paredes capilares glomerulares. Esta figura NÃO deve ser legendada como microscopia eletrônica.",
+      "didactic_note": "Relacionar espessamento de paredes capilares na microscopia óptica à descrição de depósitos subepiteliais na microscopia eletrônica em figura separada.",
+      "source_name": "Moroni G, Ponticelli C. Frontiers in Medicine (2020), Figura 1",
+      "source_url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2020.611317/full",
+      "source_license": "CC BY, declaração explícita no artigo, atribuição original e citação obrigatórias",
+      "license_evidence_url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2020.611317/full",
+      "source_year": 2020,
+      "review_status": "pendente_aprovacao_clinica_e_admin"
+    }
+  ],
+  "additional_candidate_search": "Outros resultados de imagem (incluindo IgA, anti-MBG e lesões mínimas) foram localizados em buscas, mas não inseridos porque a licença específica e/ou natureza histológica da figura não foram confirmadas. Meta de ao menos 10 candidatos permanece pendente."
+}
