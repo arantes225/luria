@@ -55,10 +55,10 @@ def make_synthetic_wfdb(root: Path, ecg_id: str, amplitude=0.3, bad_lead=False, 
              "V1", "V2", "V3", "V4", "V5", "V6"]
     if bad_lead:
         leads[-1] = "V5"  # duplicate lead must fail closed
-    header = [f"{ecg_id}_lr 12 {hz} {n}"]
+    header = [f"{path.name} 12 {hz} {n}"]
     for lead in leads:
         header.append(
-            f"{ecg_id}_lr.dat 16 1000.0(0)/mV 16 0 0 0 0 {lead}"
+            f"{path.name}.dat 16 1000.0(0)/mV 16 0 0 0 0 {lead}"
         )
     path.with_suffix(".hea").write_text("\n".join(header)+"\n")
     return path
