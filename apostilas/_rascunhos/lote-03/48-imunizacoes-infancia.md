@@ -159,7 +159,24 @@ Estes casos são fictícios, construídos para treinar decisões pediátricas e 
 **Por que importa:** vacinação envolve clínica, epidemiologia, acesso e informação de qualidade.
 
 
-## 11. Doze questões originais de residência comentadas
+
+### Caso 9 — Prematuro elegível para imunização passiva contra VSR
+
+**Apresentação:** lactente de dois meses cronológicos, nascido com 33 semanas de gestação, recebe alta do seguimento neonatal durante a temporada de VSR. Os pais afirmam que a mãe não foi vacinada contra VSR na gestação e perguntam se é possível aplicar a mesma vacina diretamente ao bebê. A criança se encontra estável, sem doença respiratória ativa.
+
+**Hipótese e raciocínio:** potencial elegibilidade à estratégia pediátrica de **nirsevimabe**, que não é a vacina materna. A idade gestacional (≤36 semanas e 6 dias), a idade pós-natal (<6 meses em estratégia descrita) e a primeira sazonalidade são relevantes, mas critérios e contraindicações precisam de conferência no guia oficial. A ausência de vacinação gestacional não constitui, isoladamente, toda a definição de elegibilidade.
+
+**Avaliação:** conferir idade gestacional documental, idade atual, sazonalidade/localidade, comorbidades, reações graves a componentes, história prévia de nirsevimabe/palivizumabe, situação cardiorrespiratória e normas de oferta. **Conduta:** orientar diferença entre produtos, avaliar elegibilidade formal e articular maternidade, pediatria e RIE/CRIE para oferta quando indicada. Preservar vacinas infantis de rotina e prevenção ambiental de infecções. **Por que importa:** nirsevimabe oferece imunidade passiva e não deve ser administrado como “vacina materna atrasada”.
+
+### Caso 10 — Vacina materna contra VSR aplicada antes da idade prevista
+
+**Apresentação:** gestante, agora com 30 semanas, traz comprovante de vacina recombinante VSR aplicada acidentalmente na 26ª semana. Está assintomática, mas solicita “reforço aos 30 para garantir proteção”.
+
+**Hipótese:** erro de oportunidade temporal para produto destinado à gestante, sem indicação automática de repetir dose. **Raciocínio:** o Ministério recomenda a vacina a partir da 28ª semana e orienta, quando administrada precocemente, **monitoramento de eventos adversos na gestante até o desfecho gestacional e na criança até seis meses**, sem nova dose automática. A decisão sobre necessidades do bebê após o nascimento depende das recomendações específicas de proteção e não da repetição indiscriminada.
+
+**Exames/avaliação:** confirmar data da dose e idade gestacional, registrar produto/lote, verificar intercorrências, orientar vigilância conforme protocolo. **Conduta:** não repetir automaticamente, registrar e acompanhar como evento programático aplicável, mantendo pré-natal e imunizações indicadas. **Por que importa:** decisões vacinais são produto-, idade- e circunstância-específicas; mais dose não significa mais segurança.
+
+## 11. Dezesseis questões originais de residência comentadas
 
 ### Questão 1 — Resgate vacinal após atraso
 
@@ -353,6 +370,75 @@ D) cobertura é sinônimo de eficácia biológica absoluta de cada vacina.
 - **D incorreta:** cobertura e eficácia são medidas distintas.
 **Mini-revisão:** prevenção combina imunização individual e epidemiologia territorial.
 
+
+
+### Questão 13 — Vacina materna contra VSR
+
+Em 2026, gestante de 29 semanas pergunta como a vacina recombinante VSR protege o bebê. Qual explicação está correta?
+
+A) A vacina é aplicada diretamente no feto e estimula sua resposta imune ativa.
+B) A mãe desenvolve anticorpos específicos e parte deles é transferida pela placenta, oferecendo proteção passiva temporária ao bebê.
+C) O imunizante é um vírus vivo usado de rotina nos lactentes antes da BCG.
+D) A proteção só começa quando o bebê recebe o mesmo produto aos dois meses.
+
+**Gabarito: B.**
+- **A — incorreta:** a vacina gestacional é aplicada à mãe.
+- **B — correta:** a estratégia promove imunização ativa materna e transferência placentária de anticorpos.
+- **C — incorreta:** não é uma vacina viva pediátrica de rotina.
+- **D — incorreta:** não se trata de produto de rotina administrado dessa forma ao bebê.
+
+**Mini-revisão:** o Ministério recomenda uma dose por gestação a partir da 28ª semana, salvo regras específicas.
+
+### Questão 14 — Nirsevimabe
+
+Qual propriedade diferencia nirsevimabe das vacinas convencionais contra agentes respiratórios?
+
+A) É vacina viva contra VSR que exige replicação do vírus no bebê.
+B) É anticorpo monoclonal de ação prolongada que fornece proteção passiva a crianças elegíveis segundo o PNI.
+C) Substitui todas as vacinas de rotina em crianças prematuras.
+D) Deve ser administrado em todos os adultos com asma, independentemente de risco.
+
+**Gabarito: B.**
+- **A — incorreta:** não contém vírus vivo vacinal.
+- **B — correta:** o fármaco entrega anticorpo pronto, conforme critérios de elegibilidade/sazonalidade.
+- **C — incorreta:** não substitui imunizações ativas infantis.
+- **D — incorreta:** sua estratégia pediátrica é dirigida a grupos selecionados.
+
+**Mini-revisão:** vacina e anticorpo monoclonal pertencem ao guarda-chuva de imunização, mas têm mecanismos diferentes.
+
+### Questão 15 — HPV no PNI de 2026
+
+Menina saudável de nove anos sem dose anterior de HPV comparece para atualizar a caderneta. Que decisão corresponde à rotina publicada em 2026?
+
+A) Esperar início de atividade sexual.
+B) Ofertar HPV4 em dose única, conforme faixa etária da rotina; verificar exceções por condições especiais.
+C) Administrar sempre duas doses para todas as crianças porque era a regra usada em resumo de 2020.
+D) Contraindicar HPV antes dos 14 anos.
+
+**Gabarito: B.**
+- **A — incorreta:** prevenção é valiosa antes da exposição.
+- **B — correta:** corresponde ao esquema de rotina publicado para a faixa-alvo.
+- **C — incorreta:** confunde esquema histórico com o calendário atualizado.
+- **D — incorreta:** a indicação começa aos nove anos.
+
+**Mini-revisão:** condições especiais de imunodepressão podem exigir esquemas próprios.
+
+### Questão 16 — Rotavírus com antecedente de invaginação
+
+Lactente de dez meses sem dose de rotavírus apresenta invaginação intestinal prévia resolvida. A primeira dose está dentro da janela de idade descrita em 2026. Qual conduta é apropriada?
+
+A) Aplicar imediatamente: a ampliação da janela elimina contraindicações.
+B) Adiar três dias e aplicar sem avaliação porque a invaginação já foi tratada.
+C) Não administrar a vacina contra rotavírus diante do antecedente contraindicado; documentar e revisar demais vacinas.
+D) Substituir rotavírus oral por BCG intradérmica como forma de prevenir gastroenterite.
+
+**Gabarito: C.**
+- **A — incorreta:** a condição clínica continua sendo contraindicação específica.
+- **B — incorreta:** adiamento curto não modifica o antecedente relevante.
+- **C — correta:** idade elegível não basta quando existe contraindicação.
+- **D — incorreta:** BCG não protege contra rotavírus.
+
+**Mini-revisão:** a janela ampliada do PNI não muda automaticamente o perfil de segurança do produto.
 
 ## 12. Calendário Nacional da Criança em 2026 — quadro clínico interpretado por idade
 
@@ -597,6 +683,27 @@ Vacinar conviventes de criança imunodeprimida pode reduzir chance de entrada do
 ### 22.4 Cuidado com doses “extra” sem indicação
 
 O novo produto VPC20 possui regras de rotina e de situações especiais que não se confundem. **Não indicar uma dose adicional de VPC20 a toda criança que recebeu VPC10 no passado**. Para grupos especiais, a Nota Técnica nº 52/2026 e revisões complementares orientam transição conforme número de doses, idade e condição clínica. A existência de várias tabelas no mesmo documento é sinal de que a prescrição deve ser personalizada.
+
+
+### 22.5 VSR em 2026: vacina materna não é nirsevimabe
+
+O **vírus sincicial respiratório (VSR)** causa bronquiolite e infecções respiratórias inferiores que podem resultar em internação, especialmente nos primeiros meses de vida e em crianças prematuras ou com comorbidades. A proteção pediátrica precisa contemplar tanto intervenções na **gestação** quanto imunobiológicos específicos após o nascimento. Duas estratégias do SUS devem ser ensinadas de forma separada.
+
+**Vacina contra VSR da gestante:** o Ministério da Saúde recomenda a vacina recombinante contra VSR A e B **a partir da 28ª semana de gestação, a cada gestação**. O sistema imune materno produz anticorpos específicos, que atravessam a placenta e oferecem proteção **passiva** ao bebê no início da vida. A mãe é vacinada; o bebê **não recebeu diretamente a vacina**. O Ministério também esclarece que uma dose aplicada por engano antes da 28ª semana não deve ser repetida automaticamente: há acompanhamento de eventos adversos da gestante e do bebê conforme orientações. Por que o momento importa? Porque são necessárias resposta imune materna e transferência placentária para alcançar o lactente, cuja vulnerabilidade à doença grave é maior no primeiro semestre.
+
+**Nirsevimabe:** é um **anticorpo monoclonal** contra VSR de ação prolongada. Ao ser aplicado no bebê elegível, fornece anticorpo pronto e proteção passiva transitória, sem induzir memória imunológica ativa equivalente à vacina. O SUS publicou em 2026 protocolo de uso, guia operacional e estratégia de resgate. A comunicação oficial contempla prematuros de até **36 semanas e 6 dias de idade gestacional** e crianças com condições de risco, mas a indicação precisa considerar **idade pós-natal, sazonalidade, diagnóstico e critérios do guia**. Uma nota de resgate de 2026 descreve prematuros elegíveis **com menos de seis meses** na primeira temporada e crianças com comorbidades elegíveis **com menos de 24 meses**. Não oferecer dose a todo lactente prematuro de qualquer idade apenas porque nasceu antes do termo.
+
+**Vacina materna e anticorpo monoclonal são diferentes**, assim como são diferentes de BCG, influenza, pentavalente ou vacina covid-19. Um esquema não substitui automaticamente o outro, e indicação conjunta ou sequencial deve ser individualizada pelo protocolo vigente. Além disso, o nirsevimabe **não equivale** ao palivizumabe: são anticorpos distintos, com protocolos, duração e elegibilidade próprios. Não converter os dois em uma mesma dose ou periodicidade.
+
+| Aspecto | Vacina VSR gestacional | Nirsevimabe |
+|---|---|---|
+| Quem recebe | gestante a partir da 28ª semana | criança que atende a critérios específicos |
+| Mecanismo | imunização **ativa da mãe** e passagem de anticorpos ao feto | imunização **passiva direta** da criança |
+| Resposta imune própria no bebê | o bebê recebe anticorpos maternos, não vacina diretamente | fornece anticorpo monoclonal pronto, sem memória ativa |
+| População | gestantes elegíveis conforme PNI a cada gestação | prematuros e crianças com comorbidades segundo protocolo e sazonalidade |
+| Principal erro | chamar vacina materna de dose pediátrica | confundir nirsevimabe com vacina ou indicar universalmente |
+
+**Fontes primárias (2026):** Ministério da Saúde, orientações de vacinação VSR da gestante (https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/v/vsr/faq/publico-alvo-e-elegibilidade-vsr/quem-pode-receber-a-vacina); protocolo de uso do nirsevimabe (https://www.gov.br/saude/pt-br/assuntos/pcdt/n/protocolo-de-uso-do-nirsevimabe.pdf/view); guia de prematuros e comorbidades (https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-de-estrategia-contra-virus-sincicial-para-criancas-prematuras.pdf/view); Nota Técnica nº 31/2026 (https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-31-2026-cgici-dpni-svsa-ms.pdf).
 
 ## 23. Vacinação pós-exposição e em surtos: tempo e risco importam
 
