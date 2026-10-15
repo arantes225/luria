@@ -39,3 +39,27 @@ Buscas efetuadas por “febre sem sinais localizatórios”, “febre sem foco�
 10. Prévia JSON/HTML, curadoria visual/fluxogramas e aprovação Admin, sem deploy até validação.
 
 **Status final desta etapa zero:** fontes científicas confirmadas, limitação de benchmark registrada, produção de conteúdo autorizada apenas na branch editorial.
+
+
+---
+
+## Etapa zero ampliada — leitura efetiva e acesso a documentos (14/10/2026)
+
+A busca encontrou materiais do Drive tematicamente próximos e foi feita **leitura efetiva** antes da redação do tema 123:
+- **Sepse neonatal.pdf**: 2.032 caracteres extraídos; apresenta risco materno/neonatal, instabilidade térmica, hemocultura e antibiótico neonatal, porém não cobre estratificação de febre em lactente nas primeiras 8–60 semanas nem o manejo atual por marcadores de risco. Algumas regras sobre profilaxia e coleta são antigas; **não transplantar**.
+- **01 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf**: 31.078 caracteres, combina síndrome nefrítica/nefrótica e refluxo vesicoureteral, incluindo ITU febril; não equivale a FSSL geral.
+- **01 - ICTERICIA E COLESTASE NEONATAL.pdf**: 14.963 caracteres, inclui fisiologia e patologias do recém-nascido, mas não cobre algoritmo de lactente febril.
+
+**Nenhum é benchmark pleno, comparável em profundidade, do tema exato ou de instituição Estratégia MED comprovada.** Os URLs/IDs privados não devem entrar no repositório.
+
+**Fonte brasileira adicional realmente examinada:** Sociedade Brasileira de Pediatria, *Manejo da Febre Aguda*, de 05/10/2021, PDF institucional de 14 páginas. https://www.sbp.com.br/fileadmin/user_upload/23229c-DC_Manejo_da_febre_aguda.pdf . Contém termorregulação, abordagem de febre sem foco, comunicação/antitérmicos. A SBP anunciou um documento de **15/05/2025**, *Abordagem da Febre Aguda em Pediatria e Reflexões sobre a Febre nas Arboviroses*, mas a página do PDF integral direciona a login: **não foi possível conferir integralmente suas recomendações**, portanto não atribuiremos regras específicas ao conteúdo não lido.
+- AAP 2021 para **8–60 dias, termo e boa aparência**; não extrapolar aos <8 dias/prematuros.
+- NICE NG143 é de 2019, atualizada em 2021; alerta que **<3 meses e febre ≥38°C** requer avaliação de alto risco. NICE NG254, publicada em 19/11/2025, trata avaliação de sepse pediátrica.
+- O PDF de protocolo municipal encontrado na internet pode conter práticas obsoletas como ceftriaxona empírica em toda criança de 3–36 meses com febre alta; não usar sem confirmação de recomendações atuais e status vacinal.
+
+### Bloqueios específicos
+- [ ] Garantir tabela didática por idade: 0–7 dias (fora do guideline AAP 2021); 8–21; 22–28; 29–60; 61–90 dias; >3 meses.
+- [ ] Conferir manejo de punção lombar, urocultura e critérios de baixo risco com diretriz e patologia/idade exatos, documentando diferenças EUA x Reino Unido x Brasil.
+- [ ] Não usar melhora da febre após antitérmico para excluir doença bacteriana invasiva.
+- [ ] Não confundir triagem de dengue/arbovirose com antibioticoterapia empírica neonatal.
+- [ ] Revisão médica pediátrica antes da publicação. **Não executar deploy.**
