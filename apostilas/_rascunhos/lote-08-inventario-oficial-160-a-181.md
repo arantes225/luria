@@ -21,14 +21,14 @@
 | 168 | Puberdade e adolescência | **Encontrado posteriormente em main**: `apostilas/puberdade-adolescencia/rascunho-editorial-lote09.md` (~89 mil caracteres totais de Markdown, 12 casos, 18 questões) | **Não duplicar**; benchmark do Drive só parcial (puericultura/crescimento), requer revisão científica e integração editorial |
 | 169 | Patologias benignas e câncer de mama | `apostilas/cancer-de-mama/index.html` | **Reaproveitar #167** com objetivos ginecológicos; um conteúdo canônico e indexação curricular dupla, evitando publicação duplicada |
 | 170 | Ética médica, sigilo e prontuário | **Localizado em verificação posterior da main:** `apostilas/etica-medica-sigilo-prontuario/rascunho-editorial-lote09.md` (~90,7 KB) | Não duplicar; revisar com CFM/LGPD e benchmark equivalente do Drive ainda não localizado |
-| 171 | Artrites inflamatórias e doenças autoimunes | Sem livro próprio identificado | Criar com diagnóstico diferencial, red flags, investigação e encaminhamento |
+| 171 | Artrites inflamatórias e doenças autoimunes | **Encontrado em main:** `apostilas/artrites-inflamatorias-doencas-autoimunes/rascunho-editorial-lote09.md` (~111 mil bytes) | Preservar, auditar atualizações em Reumatologia e lacunas; não duplicar |
 | 172 | Princípios de oncologia cirúrgica | Sem livro próprio identificado | Criar com estadiamento, R0/R1/R2, decisão multidisciplinar e seguimento |
 | 173 | Urgências pediátricas e suporte básico/avançado | Sem livro próprio identificado | Criar com prioridades ABCDE, deterioração e reanimação por faixas etárias |
 | 174 | Massas anexiais e câncer de ovário | **Criado nesta branch:** `apostilas/_rascunhos/lote-08-aula-174-massas-anexiais-cancer-ovario.md` | 45.673 caracteres Markdown, 8 casos e 14 questões; IOTA/O-RADS e ASCO 2025; rascunho não certificado |
-| 175 | Declaração de óbito e indicadores de mortalidade | Sem livro próprio identificado | Criar com exemplos originais de cadeia causal e regras de preenchimento |
+| 175 | Declaração de óbito e indicadores de mortalidade | **Criado na branch** `apostilas/_rascunhos/lote-08-aula-175-declaracao-obito-indicadores.md` (~38,8 mil caracteres totais) | Rascunho com DO, SIM/SINASC, indicadores, Portaria 10.273/2026, 7 casos e 10 questões; revisão jurídica pendente |
 | 176 | Acidente vascular cerebral e crises convulsivas | Sem livro próprio identificado | Criar com fluxos de AVC e estado de mal; verificar elegibilidade terapêutica |
 | 177 | Complicações pós-operatórias | Sem livro próprio identificado | Criar, integrando sem duplicar `cuidados-perioperatorios` e infecção de sítio |
-| 178 | Intoxicações exógenas na infância | Sem livro próprio identificado | Criar com toxíndromes, descontaminação, CIATox e antídotos de referência |
+| 178 | Intoxicações exógenas na infância | **Criado na branch** `apostilas/_rascunhos/lote-08-aula-178-intoxicacoes-exogenas-infancia.md` (~42,5 mil caracteres totais) | Rascunho com toxíndromes, 8 casos e 12 questões, CIATox/SINAN; doses/revisão toxicológica pendentes |
 | 179 | Câncer de endométrio | **Criado nesta branch:** `apostilas/_rascunhos/lote-08-aula-179-cancer-endometrio.md` | 43.732 caracteres Markdown, 7 casos e 12 questões; ACOG abril/2026, FIGO 2023, ESGO 2025; rascunho não certificado |
 | 180 | Cuidados paliativos e comunicação de más notícias | Sem livro próprio identificado | Criar com comunicação SPIKES, manejo de sintomas e diretivas antecipadas |
 | 181 | Eletrocardiografia: fundamentos e interpretação sistemática | Sem livro próprio identificado | Criar com metodologia ECG, exemplos reais licenciados, arritmias e padrões de isquemia |
@@ -84,3 +84,12 @@ A branch editorial nasceu de um commit anterior ao surgimento de novos rascunhos
 **Ponto de alta prioridade na revisão do endométrio:** diferenciar o algoritmo ACOG 2018 da atualização de 16/04/2026, que recomenda TVUS + amostragem tecidual inicial na maioria das pacientes com sangramento pós-menopausa. A implementação clínica brasileira depende de protocolos locais e sociedades nacionais; não generalizar sem verificação.
 
 **Pendência de reconciliação:** main recebe produção simultânea em outras branches; atualizar/revisar base de PR antes de eventual integração e não sobrescrever rascunhos recentes.
+
+
+## Continuação — 14/10/2026, aulas 175 e 178 e auditoria antirrepetição
+
+- **Aula 175**: criado arquivo original `_rascunhos/lote-08-aula-175-declaracao-obito-indicadores.md`, aproximadamente 38.799 caracteres totais de Markdown, **7 casos** e **10 questões**, com DO, responsabilidade de emissão, SVO/IML, SIM/SINASC, mortalidade infantil/materna/perinatal, taxas com cálculos e direitos de humanização do luto. Foi registrada explicitamente a tensão entre Portaria GM/MS 10.273/2026 (conceitos de óbito fetal/luto) e critérios operacionais de emissão/registro de documentos anteriores. Dois benchmarks relacionados foram abertos no Drive, mas nenhum totalmente equivalente ao tema.
+- **Aula 178**: criado arquivo original `_rascunhos/lote-08-aula-178-intoxicacoes-exogenas-infancia.md`, aproximadamente 42.530 caracteres totais de Markdown, **8 casos**, **12 questões**, toxíndromes, ABCDE, intoxicações medicamentosas e ambientais, CIATox e SINAN. Buscas Drive não localizaram livro equivalente. Orientações baseadas no MS e diretrizes RCH; antídotos sem doses prescritivas prontas, até revisão especializada.
+- **Aulas 170 e 171**: descobertas na `main` durante nova checagem, como rascunhos grandes de Ética (~90,7 kB) e Artrites (~111 kB), respectivamente. **Não duplicadas.** Requerem auditoria específica e verificação de sincronização antes de qualquer integração.
+- **Aulas 174 e 179**: os arquivos da etapa anterior foram lidos na branch e confirmados, não apenas assumidos como salvos.
+- **Regra rígida:** contagem de caracteres **totais** de Markdown ≠ certificação de 60 mil caracteres úteis. Não marcar como prontas, não gerar HTML público, não aprovar imagens, não fazer merge ou deploy. Todos os textos adicionais dependem de revisão médica e, quando pertinente, jurídica.
