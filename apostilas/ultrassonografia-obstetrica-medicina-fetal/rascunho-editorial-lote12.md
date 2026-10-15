@@ -408,6 +408,69 @@ Os 12 visuais abaixo definem as **perguntas de busca** e sua função didática.
 11. **Ministério da Saúde (Brasil).** Linha de Cuidado: Pré-Natal de Baixo Risco — planejamento terapêutico e ultrassonografia. https://linhasdecuidado.saude.gov.br/portal/pre-natal-baixo-risco/unidade-de-atencao-primaria/planejamento-terapeutico/
 12. **Hospital Universitário Lauro Wanderley / HU Brasil.** Procedimentos operacionais padronizados de ultrassonografia obstétrica, morfológica e Doppler. 2024. https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-nordeste/hulw-ufpb/acesso-a-informacao/gestao-documental/pop-procedimento-operacional-padrao/2024/umul-unidade-de-saude-da-mulher/pnar-pre-natal-de-alto-risco
 
+## 19A. Auditoria científica adicional — datação, limiares e armadilhas
+
+### A. DUM versus ultrassom: quando ajustar a DPP pela PRIMEIRA datação confiável
+
+A DUM pressupõe que a paciente recordou corretamente a data, que o ciclo e a ovulação correspondem ao padrão utilizado e que não houve sangramento confundido com menstruação. FIV demanda cálculo próprio pelo dia de transferência e idade embrionária. Se houver discordância entre DUM e **primeiro ultrassom confiável**, a ACOG/AIUM/SMFM oferece limites de referência para considerar redatar, individualizando qualidade de dados:
+
+| Idade gestacional estimada pelo primeiro exame confiável | Diferença US versus DUM que geralmente justifica redatar |
+|---|---|
+| Até 8 semanas e 6 dias | Mais de 5 dias |
+| 9 semanas a 13 semanas e 6 dias | Mais de 7 dias |
+| 14 semanas a 15 semanas e 6 dias | Mais de 7 dias |
+| 16 semanas a 21 semanas e 6 dias | Mais de 10 dias |
+| 22 semanas a 27 semanas e 6 dias | Mais de 14 dias |
+| A partir de 28 semanas, **se não houve exame anterior confiável** | Mais de 21 dias, com cautela especial |
+
+**Importante:** essa tabela **não recomenda redatar a cada exame**. Ela serve para estabelecer a datação na primeira oportunidade e avaliar discordância com DUM. Na gestação cujo CCN foi corretamente medido no primeiro trimestre, um PFE “duas semanas atrasado” no terceiro trimestre deve acender a hipótese de crescimento alterado, não redefinir arbitrariamente a gestação. A US tardia isolada pode errar em cerca de três a quatro semanas na datação; considerar curva, técnica, estado clínico e vigilância.
+
+### B. Três conceitos que costumam ser confundidos nas provas
+
+**Translucência nucal versus prega nucal:** a TN é medida no primeiro trimestre com plano, CCN e intervalo adequados. A prega nucal é medida do segundo trimestre em plano e contexto distintos; não são a mesma medida nem possuem mesmo ponto de corte. O arquivo de imagem “Nuchal fold measurement ... 19 weeks” da Wikimedia Commons, por exemplo, NÃO deve ser usado como ilustração da técnica de TN 11–14 semanas.
+
+**Artéria cerebral média IP versus PSV:** IP reduzido em insuficiência placentária corresponde a redistribuição hemodinâmica; velocidade sistólica máxima elevada pode sinalizar anemia, especialmente na aloimunização. Um laudo que diz “Doppler da ACM normal” sem especificar a medida é insuficiente para inferir que não há anemia em paciente com anticorpos relevantes.
+
+**Perfil biofísico fetal versus ultrassonografia morfológica:** o perfil biofísico analisa movimentos corporais, movimentos respiratórios fetais, tônus e líquido, com adição de cardiotocografia na versão clássica. Ele busca sinais de possível comprometimento funcional, não realiza inspeção anatômica sistemática para descartar malformações. Seu detalhamento pertence à apostila “Avaliação da vitalidade fetal”.
+
+### C. Marcos clínicos, interpretação responsável e segurança
+
+A ultrassonografia direciona, mas não substitui exame clínico. Em suspeita de perda de líquido, correlacionar história e exame obstétrico; oligodrâmnio isolado não confirma rotura de membranas. Em dor abdominal e sangramento no primeiro trimestre, a ausência de gravidez intrauterina identificada não significa necessariamente gravidez ectópica; precisa de raciocínio sobre gravidez de localização desconhecida e repetição dos exames conforme estabilidade. Na gestação com restrição grave e Doppler preocupante, a idade gestacional, estabilização materna e disponibilidade neonatal podem determinar conduta mais do que um número isolado.
+
+O ideal é mostrar ao aluno imagens com **indicação clínica e consequência prática**. Exemplo: figura de Doppler umbilical normal deve vir com um traçado de diástole ausente na mesma seção; figura de vasa prévia deve vir acompanhada de legenda explicando inserção velamentosa e risco na ruptura de membranas; figura de gastrosquise deve mostrar relação à inserção do cordão, contrastando com onfalocele.
+
+## 19B. Busca real de candidatos visuais e controle preliminar de direitos
+
+**Esta é uma shortlist inicial de 12 arquivos reais, não uma aprovação automática para publicação.** Metadados de licença foram visualizados nas páginas de origem indicadas. Para arquivos Creative Commons, confirmar autor/atribuição, versão e obrigações de *ShareAlike* na data do uso, identificar adaptações e verificar nitidez/dados pessoais. Para imagens com direitos ainda não verificados, não reutilizar os bytes. Alguns candidatos repetem a mesma estrutura porque a fase é de seleção e comparação: o objetivo não é inserir todos.
+
+| Nº | Imagem candidata e finalidade | Página original | Evidência de licença / decisão |
+|---|---|---|---|
+| 1 | Corte de cabeça fetal — reconhecer anatomia e qualidade | https://commons.wikimedia.org/wiki/File:Pregnancy_ultrasound_110325112752_1129380.jpg | Nevit Dilmen; CC BY-SA 3.0 declarada; avaliar adequação |
+| 2 | Segundo corte cefálico — comparação de planos | https://commons.wikimedia.org/wiki/File:Pregnancy_ultrasound_110302150120_1503250.jpg | Nevit Dilmen; CC BY-SA 3.0 declarada |
+| 3 | Pregas cervicais e fossa posterior **aos 19 semanas** | https://commons.wikimedia.org/wiki/File:Nuchal_fold_measurement_on_the_TC_plane_Dr._Moroder.jpg | Wolfgang Moroder; CC BY-SA 3.0 declarada; **não usar para ilustrar TN do 1º trimestre** |
+| 4 | Corte Doppler do sistema venoso portal fetal — reconhecer referências abdominais | https://commons.wikimedia.org/wiki/File:Transverse_plane_of_the_FT_fetal_abdomen_human.jpg | Artigo *Diagnostics* 2022; CC BY 4.0 declarada; imagem avançada, talvez opcional |
+| 5 | Imagem cardíaca fetal básica | https://commons.wikimedia.org/wiki/File:Pregnancy_ultrasound_110303135229_1358380.jpg | Nevit Dilmen; CC BY-SA 3.0 declarada; verificar plano exato |
+| 6 | Gastrosquise em US — parede abdominal | https://commons.wikimedia.org/wiki/File:Gastrochisis_0001.jpg | Mme Mim; CC BY-SA 4.0 declarada |
+| 7 | Sinal lambda em gemelaridade dicoriônica | https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_034.jpg | Nevit Dilmen; CC BY-SA 3.0 declarada |
+| 8 | Fluxo normal da artéria umbilical — traçado comparativo | https://commons.wikimedia.org/wiki/File:Art%C3%A8re_ombilcale_avec_flux_normal.png | CC BY-SA 4.0 declarada; revisar atribuição ao artigo científico original |
+| 9 | Exemplo cardíaco com frequência elevada — leitura crítica | https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_062.jpg | Nevit Dilmen; múltiplas licenças CC BY-SA antigas/GFDL; preferir fonte mais atual |
+| 10 | Pulso umbilical com diástole ausente — comparação patológica | https://www.smfm.org/case-of-the-week | SMFM; **licença de reutilização não confirmada**, não incorporar |
+| 11 | Doppler umbilical com diástole zero e legendas | https://drpixel.fcm.unicamp.br/conteudo/interpretacao-do-doppler-obstetrico-na-avaliacao-da-vitalidade-fetal | UNICAMP/Dr Pixel; **licença não confirmada**, pedir permissão antes de integrar |
+| 12 | Vasa prévia com Doppler transvaginal | https://journals.sagepub.com/doi/10.1177/1742271X17747137 | Artigo científico; **licença e permissão de uso editorial ainda não confirmadas** |
+
+**Avaliação:** candidatos 1–9 dispõem de indícios de permissão aberta conforme página originária, mas ainda devem ser examinados individualmente quanto a detalhes anatômicos e uso comercial. Candidatos 10–12 são úteis como referência de leitura e não devem ser copiados sem licença/permissão explícita. Essa matriz **não equivale a dez imagens aprovadas ou integradas**. A etapa de produção visual permanece pendente, inclusive WebP, otimização e legendas no arquivo final.
+
+### C. Protocolo de conferência visual antes de integração
+
+1. Abrir página canônica; registrar URL, autor, título, licença e obrigações de crédito.
+2. Conferir que o arquivo é um **exame clínico representativo**, e que diagnóstico/traçado realmente correspondem à legenda; descartar material equívoco.
+3. Comparar escala, exposição de dados clínicos e resolução; remover/anonimizar marcas identificáveis quando apropriado e permitido.
+4. Selecionar posições didáticas corretas; alternar figuras com textos para que o leitor aprenda a reconhecer achados, não apenas contemplá-los.
+5. Converter imagens aprovadas para WebP e limitar peso conforme padrões LURIA, protegendo legibilidade de traçados Doppler.
+6. Revisar atribuições e efeitos de licenças *ShareAlike* em distribuição comercial; documentar modificações sem retirar crédito.
+7. Verificar legibilidade no desktop e PWA; em modo escuro, manter contraste da figura e legenda.
+
+
 ## 19. Auditoria editorial inicial: status ainda não concluído
 
 **Já incluído:** fundamentos físicos e Doppler, segurança, datação, anatomia por sistemas, placenta e cordão, biometria, líquido, Doppler, RCF, anomalias, rastreio genético e medicina fetal, múltiplos, colo, fluxos clínicos, seis casos e oito questões.
