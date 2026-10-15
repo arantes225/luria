@@ -9,7 +9,7 @@
 **Apostila dedicada:** não havia manuscrito da aula 108 no caminho editorial do GitHub previamente inspecionado. **Material do Drive:** “03 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf”, 20.932 caracteres extraídos, foi aberto e lido, mas aborda principalmente dilatação urinária, refluxo vesicoureteral, enurese e malformações, não constitui uma aula autossuficiente de ITU. Esse documento tem indicações de redistribuição por terceiros e licença comercial não verificada, portanto não será copiado. Seu conteúdo só serviu para reconhecer a ponte com **RVU, hidronefrose e disfunção vesicointestinal**.
 
 **Fontes normativas identificadas em 15/10/2026:**
-1. **Sociedade Brasileira de Pediatria (SBP)**: “Infecção urinária: diagnóstico, investigação e prevenção”, notícia/documento científico publicado em **13/09/2023**, https://www.sbp.com.br/infeccao-urinaria-diagnostico-investigacao-e-prevencao/. A página pública acessível confirmou o título, data e definição, **mas o documento integral não foi acessado de modo verificável neste fluxo**; portanto recomendações numéricas específicas não serão atribuídas à SBP sem conferir o PDF integral.
+1. **Sociedade Brasileira de Pediatria (SBP)**: “Infecção urinária: diagnóstico, investigação e prevenção”, notícia/documento científico publicado em **13/09/2023**, https://www.sbp.com.br/fileadmin/user_upload/23956c-DC_-_InfeccaoUrinaria_Diagnost-Invest-Prevencao.pdf. O documento oficial confirmou o título, data e definição, **o PDF integral oficial (9 páginas) foi localizado e inspecionado visualmente**, inclusive os capítulos de cultura, antimicrobianos, prevenção e investigação por imagem. Doses e indicações permanecem em revisão farmacêutica independente.
 2. **NICE NG224**, *Urinary tract infection in under 16s: diagnosis and management*, publicada em 2022, https://www.nice.org.uk/guidance/ng224/chapter/Recommendations. Texto completo HTML verificado, incluindo coleta, tiras, ultrassom, DMSA e uretrocistografia por idade.
 3. **European Association of Urology (EAU), Paediatric Urology, capítulo 12, atualização 2026**, https://uroweb.org/guidelines/paediatric-urology/chapter/urinary-tract-infections-in-children. Texto completo HTML verificado, incluindo epidemiologia, cultura, imagem, abordagem de ITU febril e prevenção.
 4. **NICE NG111**, pielonefrite aguda — antimicrobianos: https://www.nice.org.uk/guidance/ng111/chapter/recommendations.
@@ -174,7 +174,7 @@ Unidades formadoras de colônia (UFC/mL) representam crescimento microbiológico
 
 **EAU 2026:** explicita controvérsia nos cortes e aceita considerar monocultura de 10³ a 10⁴ UFC/mL em amostras de coleta limpa/jato médio e cateterismo em cenários adequados; na punção suprapúbica, qualquer crescimento do agente pode ser significativo. Esses números são **interpretações contextuais**, não ordem de diagnosticar ITU em todas as crianças com 10³ UFC.
 
-**Prática em múltiplos protocolos pediátricos tradicionais:** culturas de cateter frequentemente usam **≥50.000 UFC/mL** de um único uropatógeno com piúria em cenários de lactente, enquanto jato médio tradicionalmente emprega limiares mais altos. Essa diferença precisa ser associada ao protocolo da unidade e à idade; o material da SBP integral não foi conferido aqui para atribuir-lhe valores específicos.
+**SBP 2023 — Documento Científico nº 101, p. 4:** o limiar publicado é **mais de 50.000 UFC/mL por cateterismo**, **mais de 100.000 UFC/mL por jato médio** e **qualquer crescimento após punção suprapúbica**. A EAU 2026 admite contagens menores em certas monoculturas obtidas corretamente, desde que haja coerência clínica. Os limiares são **específicos da diretriz e método**, não verdades universais; valores abaixo do corte brasileiro não autorizam descartar ITU em bebê grave sem avaliação pediátrica.
 
 ### 8.2. Três exemplos que evitam erro
 
@@ -232,7 +232,7 @@ Para criança grave, que vomita persistentemente, não tolera oral, tem sepse, d
 
 ### 11.4. Duração: evitar tanto subtratamento quanto inércia
 
-A NICE NG111 frequentemente descreve **7–10 dias** de tratamento total em ITU alta/pielonefrite em crianças selecionadas. A EAU 2026, em seu quadro de recomendações, apresenta **4–7 dias** para ITU febril, ao mesmo tempo em que ressalva cursos diferentes em lactentes jovens/ITU complicada e evidências de regimes abreviados em populações escolhidas. Essas recomendações **não são equivalentes**, e pesquisas recentes com ciclos curtos não autorizam reduzi-los indiscriminadamente em bacteremia, obstrução ou bebê pequeno. Duração depende de **idade, estabilidade, resposta, foco renal, complicações, agente e diretriz institucional**.
+A **SBP 2023 (p. 5)** descreve **10 dias** para ITU febril; a **NICE NG111** frequentemente descreve **7–10 dias** para pielonefrite infantil, enquanto a **EAU 2026** registra **4–7 dias** na tabela-resumo para ITU febril, com ressalvas no corpo do texto para crianças complicadas e mais jovens. Essas são recomendações **não intercambiáveis** e a aparente diferença entre resumo e discussão detalhada da EAU merece leitura crítica. Essas recomendações **não são equivalentes**, e pesquisas recentes com ciclos curtos não autorizam reduzi-los indiscriminadamente em bacteremia, obstrução ou bebê pequeno. Duração depende de **idade, estabilidade, resposta, foco renal, complicações, agente e diretriz institucional**.
 
 **Pulo do Gato:** saber que existem regimes abreviados é importante; mais importante é **não usar curso de cistite afebril para pielonefrite com febre, e não estender por inércia uma cistite simples quando há suporte para curso curto**.
 
@@ -294,7 +294,7 @@ Rever resposta clínica (temperatura, alimentação, vômitos, dor, hidratação
 | ITU febril recorrente | Investigação conforme idade; DMSA em subgrupos | US, investigação para RVU e eventual DMSA | Ambos ampliam investigação |
 | Bexiga com esvaziamento inadequado e constipação | Prevenir recorrência tratando disfunção | Fortemente pesquisar/tratar BBD | Convergência preventiva |
 
-**Fonte brasileira:** a SBP disponibiliza documento de 2023 com diagnóstico/investigação/prevenção, mas, sem acesso integral verificável, não atribuí a ela nenhum algoritmo numérico específico. A adaptação brasileira definitiva precisa conferir esse documento e disponibilidades do SUS antes de aprovar o capítulo.
+**SBP 2023 — fonte integral consultada:** destaca ultrassom inicial, especialmente na pielonefrite antes dos dois anos, e avaliação de UCM quando há acometimento de parênquima ou recorrência no fluxograma da página 7. Esse recorte é mais seletivo que a consideração de UCM após primeira ITU febril de menores de doze meses na EAU 2026. O uso clínico brasileiro ainda exige confirmação de protocolos regionais.
 
 ## 14. RVU: o que importa para a criança com infecção de repetição
 
@@ -517,7 +517,43 @@ E. Dar alta se nitrito for negativo.
 
 **Gabarito C.** **A errada:** inadequado para sepse/obstrução. **B errada:** atraso pode agravar risco. **C correta:** controle de foco e estabilização são prioridade. **D errada:** exame de cicatriz não tem precedência sobre emergência. **E errada:** nitrito não exclui nem estabiliza. **Mini-revisão:** obstrução + infecção = pensar em drenagem.
 
-## 21. Camada visual obrigatória — dez candidatos, sem imagem de terceiros incorporada
+## 21. Revisão de recomendações brasileiras da SBP 2023
+
+A leitura integral do **Documento Científico nº 101 da SBP** acrescenta referências práticas diretamente relevantes ao Brasil. As recomendações devem ser apresentadas com **fonte e ano**, já que não são idênticas às da NICE ou da EAU.
+
+### 21.1. UFC e coleta: três limiares da SBP
+
+O documento brasileiro considera crescimento bacteriano de uropatógeno em **punção suprapúbica com qualquer contagem**, **cateterismo com mais de 50.000 UFC/mL** e **jato médio com mais de 100.000 UFC/mL**. A interpretação clínica ainda exige sintomas, inflamação e técnica de coleta adequados; amostra contaminada não se transforma em infecção apenas por número elevado.
+
+Exemplo: bebê febril com cateterismo e crescimento único de *E. coli* de 30 mil UFC/mL e leucocitúria. O número está abaixo do valor tradicional explicitado no documento SBP, mas a **EAU 2026 admite limiares menores em certas amostras apropriadas**, e um bebê doente não deve receber alta unicamente porque a contagem não chegou a 50 mil. Reavaliar idade, gravidade, cultura, piúria, coleta e protocolo com pediatria.
+
+### 21.2. Antibióticos — dados documentais versus prescrição segura
+
+O quadro farmacológico da SBP 2023 fornece exemplos de posologia por **mg/kg/dia**. Para fins de estudo, entre os exemplos descritos estão: **cefalexina VO 50 mg/kg/dia** fracionados em três ou quatro administrações para cistite; **nitrofurantoína VO 5–7 mg/kg/dia** fracionados em quatro tomadas para cistite; **sulfametoxazol–trimetoprima 6–12 mg de TMP/kg/dia** divididos a cada 12 h para cistite; **cefuroxima VO 30 mg/kg/dia** dividida a cada 12 h para pielonefrite. A SBP também relaciona aminoglicosídeos e cefalosporinas parenterais.
+
+**Esses valores são identificados como referências de um documento de 2023, NÃO como tabela de prescrição pronta para o aplicativo.** Antes de disponibilizar uma dose copiada, conferir indicação, peso, idade mínima, dose máxima diária e por tomada, concentração da suspensão, formulação, função renal, alergias, resistência local e toxicidade, especialmente com aminoglicosídeos. Para sulfametoxazol–trimetoprima, a dose mencionada é do **componente trimetoprima**, não da massa total da associação. Para pielonefrite, a SBP proíbe substituir penetração parenquimatosa por simples concentração urinária elevada: **nitrofurantoína não é opção apropriada**.
+
+A fonte brasileira indica revisão de antimicrobiano em **48–72 horas**, de acordo com cultura e melhora, permitindo descalonamento; falha em 48 h exige pesquisar resistência, obstrução e malformações. Criança melhorada e cultura com sensibilidade comprovada não exige rotineiramente nova cultura de controle apenas para “provar esterilização”.
+
+### 21.3. Duração de tratamento e cuidado com protocolos distintos
+
+**SBP 2023: 10 dias em ITU febril. NICE NG111: em geral 7–10 dias para pielonefrite infantil. EAU 2026: 4–7 dias em resumo de ITU febril, com ressalvas para subgrupos no texto.** Não reduzir duração em recém-nascido, lactente bacterêmico ou criança com obstrução apenas porque estudo em pacientes mais estáveis encontrou benefício de curso curto. O objetivo é adequar extensão terapêutica ao risco e à evidência válida para aquela população.
+
+### 21.4. Ultrassonografia e uretrocistografia
+
+A **SBP 2023** enfatiza a ultrassonografia como exame inicial de investigação anatômica, especialmente em crianças menores de dois anos com pielonefrite, e reconhece a falta de um protocolo de imagem universal. Seu fluxograma parte de **ITU tratada → ultrassom**; se houver **comprometimento parenquimatoso ou infecção recorrente**, considerar **uretrocistografia miccional** para refluxo. Em crianças continentes, investigar e tratar disfunção vesicointestinal e constipação.
+
+A **NICE** é mais seletiva no uso de US para primeiros episódios típicos acima de seis meses e não recomenda UCM rotineira nesse grupo. A **EAU 2026** recomenda US após ITU febril e considera UCM no primeiro episódio febril de bebês menores de 12 meses, com recomendação fraca no resumo e discussão de estratégias alternativas. Essas divergências exigem identificar **idade, risco, episódio e diretriz utilizada**, não produzir uma recomendação média sem sentido.
+
+### 21.5. Quimioprofilaxia e prevenção
+
+A SBP sugere **profilaxia temporária enquanto se completa investigação** em grupos de risco, incluindo alterações urinárias estruturais, RVU de alto grau, uropatias obstrutivas e ITU recorrente; esse enfoque não significa que todo lactente febril tenha indicação. A NICE orienta **não iniciar profilaxia rotineira após a primeira ITU**, e a EAU pondera benefício em grupos selecionados contra resistência bacteriana.
+
+A SBP recomenda educação para evitar retenção, uso do vaso em intervalos regulares, postura com pés apoiados, hidratação proporcional às necessidades e atenção à constipação. **Não transformar volumes padronizados de material educativo em meta de hidratação para neonatos, crianças com insuficiência cardíaca ou doença renal.** Em pacientes com rim único, RVU grave, alterações estruturais ou cicatrizes relevantes, avaliar seguimento de função renal, pressão arterial e albuminúria.
+
+**Parecer desta revisão:** foi possível incorporar a fonte brasileira com limiares microbiológicos, exemplos de posologia, investigação e profilaxia identificados. Continuam pendentes revisão por nefropediatra e farmacêutico e atualização das apresentações/limites de dose no Brasil.
+
+## 22. Camada visual obrigatória — dez candidatos, sem imagem de terceiros incorporada
 
 Esta lista aponta **figuras autorais a produzir** e tipos de achados reais que merecem pesquisa em fontes médicas reconhecidas. Nenhuma imagem está licenciada, inserida ou otimizada ainda.
 
@@ -536,9 +572,9 @@ Esta lista aponta **figuras autorais a produzir** e tipos de achados reais que m
 
 **Plano de curadoria:** preferir SBP, Ministério da Saúde, sociedades urológicas/nefromédicas, artigos científicos com licença explícita e repositórios institucionais. Converter imagens médicas autorizadas para WebP preservando legibilidade e proporção, adicionar legendas e texto alternativo, manter responsividade no PWA. Capturas de páginas da diretriz ou imagens de pacientes **não** são automaticamente reutilizáveis comercialmente.
 
-## 22. Referências bibliográficas e transparência metodológica
+## 23. Referências bibliográficas e transparência metodológica
 
-1. Sociedade Brasileira de Pediatria. *Infecção urinária: diagnóstico, investigação e prevenção*. Página de publicação, 13/09/2023. https://www.sbp.com.br/infeccao-urinaria-diagnostico-investigacao-e-prevencao/. **Documento integral ainda não acessado aqui; não usar esta referência como prova de thresholds específicos sem revisão adicional.**
+1. Sociedade Brasileira de Pediatria. *Infecção urinária: diagnóstico, investigação e prevenção*. Documento Científico nº 101, 13/09/2023, nove páginas. https://www.sbp.com.br/fileadmin/user_upload/23956c-DC_-_InfeccaoUrinaria_Diagnost-Invest-Prevencao.pdf. **PDF oficial consultado**: p. 4 coleta/UFC, p. 5 tratamento, p. 6 profilaxia e p. 7 investigação por imagem.
 2. NICE. *Urinary tract infection in under 16s: diagnosis and management*. NG224. 2022. https://www.nice.org.uk/guidance/ng224/chapter/Recommendations. Diagnóstico, coleta, testes, avaliação de imagem.
 3. European Association of Urology. *EAU Guidelines on Paediatric Urology, Chapter 12: Urinary Tract Infections in Children*. Edição 2026. https://uroweb.org/guidelines/paediatric-urology/chapter/urinary-tract-infections-in-children. Coleta, microbiologia, imagem, duração, profilaxia, disfunção vesicointestinal.
 4. NICE. *Pyelonephritis (acute): antimicrobial prescribing*. NG111. https://www.nice.org.uk/guidance/ng111/chapter/recommendations. Antimicrobianos e cuidado de ITU alta.
@@ -548,10 +584,10 @@ Esta lista aponta **figuras autorais a produzir** e tipos de achados reais que m
 8. Indian Society of Pediatric Nephrology. *Clinical Practice Guidelines for Urinary Tract Infections and Vesicoureteral Reflux in Children*. 2023. https://www.ispn.org.in/pdf/Urinarytratinfection%28UTI%29andVURinchildren23.pdf. Referência complementar a validar integralmente.
 9. Drive do usuário, “03 - ESPECIALIDADES- NEFRO - HIDRONEFROSE E RVU.pdf”. Documento privado com direitos de distribuição incertos, consultado apenas como referência de cobertura sobre refluxo.
 
-## 23. Auditoria preliminar — não declarar apostila pronta
+## 24. Auditoria preliminar — não declarar apostila pronta
 
-**Incluído:** 24 capítulos 0–23; apresentação por idade, microbiologia e fisiopatologia, diagnóstico clínico-laboratorial, coleta apropriada, nitrito/esterase, urocultura com debate de UFC, cistite/pielonefrite/bacteriúria assintomática, risco de sepse, antimicrobianos sem posologia automática, US/UCM/DMSA com comparação NICE–EAU, RVU, profilaxia e BBD, complicações, fluxos, 8 casos e 10 questões (cinco alternativas comentadas por questão), plano visual e referências rastreáveis.
+**Incluído:** 25 capítulos 0–24; apresentação por idade, microbiologia e fisiopatologia, diagnóstico clínico-laboratorial, coleta apropriada, nitrito/esterase, urocultura com debate de UFC, cistite/pielonefrite/bacteriúria assintomática, risco de sepse, antimicrobianos sem posologia automática, US/UCM/DMSA com comparação NICE–EAU, RVU, profilaxia e BBD, complicações, fluxos, 8 casos e 10 questões (cinco alternativas comentadas por questão), plano visual e referências rastreáveis.
 
-**Pendências científicas e técnicas:** acesso integral e confronto linha a linha com documento SBP 2023; conferência brasileira de apresentações e doses pediátricas por farmacêutico/nefropediatra; checagem das diferenças entre tabela e corpo de texto da EAU 2026 para UCM; compatibilidade de curso antibiótico por idade/agente/resistência, sem extrapolação; comparação crítica de dados de cicatriz renal; revisão independente de casos/questões; direitos e integração de imagens; revisão de coerência, ligações, testes de renderização desktop/PWA e publicação após liberação. O número bruto de caracteres **não certifica** robustez, e nenhum arquivo aprovado foi sobrescrito.
+**Pendências científicas e técnicas:** confronto independente de recomendações com SBP 2023, cujo PDF original já foi aberto; conferência brasileira de apresentações e doses pediátricas por farmacêutico/nefropediatra; checagem das diferenças entre tabela e corpo de texto da EAU 2026 para UCM; compatibilidade de curso antibiótico por idade/agente/resistência, sem extrapolação; comparação crítica de dados de cicatriz renal; revisão independente de casos/questões; direitos e integração de imagens; revisão de coerência, ligações, testes de renderização desktop/PWA e publicação após liberação. O número bruto de caracteres **não certifica** robustez, e nenhum arquivo aprovado foi sobrescrito.
 
 **STATUS: RASCUNHO EDITORIAL ORIGINAL, NÃO PUBLICADO, NÃO APROVADO PARA USO COMO PROTOCOLO DE PRESCRIÇÃO.**
