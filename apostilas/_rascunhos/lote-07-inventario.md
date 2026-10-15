@@ -302,3 +302,30 @@ Os dois rascunhos foram efetivamente **ampliados, salvos e relidos** no GitHub n
 **Motivo de não publicar automaticamente:** a norma de produção exige comparação e validação científica, renderização e fluxo gerador; editar HTML publicado sem revisar algoritmo de questões e eventos JS arriscaria regressão no PWA, sobretudo durante trabalho simultâneo em Codex. A auditoria já elimina dúvida sobre **onde** integrar e o que preservar.
 
 **Próximas prioridades:** completar verificação médica/editorial das menores ou menos autossuficientes, obter imagens clínicas com licença e aprovação Admin, aplicar as três integrações mediante QA autorizado, e conferir qualidade global das aulas 121–140 antes de chamar o lote “concluído”. A documentação anterior deste inventário contém fotografias históricas de tamanhos: para 126, vale a versão verificada de **93.840 caracteres** desta seção, não o tamanho antigo.
+
+
+## 15/10/2026 — aprofundamentos das aulas 127 e 128 (gravações verificadas)
+
+**Preparação:** o arquivo local obrigatório `lead.apostilas.txt` foi relido no início da rodada e o inventário 121–140 revisado; nenhum HTML publicado foi alterado. Rascunhos já existentes foram ampliados por **inserção em capítulos próprios**, mantendo seus casos e questões originais. Arquivos de referência do Drive foram efetivamente abertos e lidos antes de alterações médicas; estes materiais demonstram circulação "Medicina livre", **não comprovaram autoria Estratégia MED** e não tiveram texto ou ilustrações reproduzidos.
+
+| Aula | Rascunho em `apostilas/_rascunhos/` | Antes (bruto) | Depois verificado (bruto) | Acrescentado | Casos | Questões |
+|---|---|---:|---:|---:|---:|---:|
+| **127** Hemorragia digestiva alta | `lote-07-aula-127-hemorragia-digestiva-alta.md` | 50.267 | **79.304** | **+29.037** | **10** | **16** |
+| **128** Sepse e choque séptico pediátrico | `lote-07-aula-128-sepse-choque-septico-pediatrico.md` | 37.814 | **71.368** | **+33.554** | **9** | **14** |
+| **Soma das duas aulas** | Conteúdo Markdown editado | **88.081** | **150.672** | **+62.591** | **19** | **30** |
+
+### Aula 127 — mudanças realmente incorporadas
+**Benchmark Drive lido:** "01 - ENDOSCOPIA - ULCERA PEPTICA.pdf" (9.035 caracteres), "06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf" (6.654), "02 - ESTOMAGO 2 ULCERA, H. PYLORI, GASTRITE ATROFICA E DISPEPSIA FUNCIONAL.pdf" (11.130), "03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf" (6.806). Todos **parciais**, sem equivalência com livro completo HDA. Confronto com ESGE **2026** para úlcera sangrante, publicada em maio/agosto de 2026, DOI 10.1055/a-2863-8314, PMID 42127996 (errata de maio de 2026 a verificar). **Adicionado:** hemostasia de vasos e coágulo IIb, dispositivos OTS, resgate endoscópico/embolização TAE; pós-hemostasia com ferro e alimentação precoce seletiva; antitrombóticos e risco pós-stent; Dieulafoy, Mallory–Weiss, GAVE, gastropatia portal, lesão de estômago excluído após bypass; cinco casos 6–10 e oito questões 9–16 com comentário por alternativa. Preservados conceitos do capítulo 7 e do capítulo 8 varicoso, evitando repetir a aula 126 e a 136. **Triagem 60k brutos superada, sem certificação de utilidade líquida.**
+
+### Aula 128 — mudanças realmente incorporadas
+**Benchmark Drive lido:** "Sepse neonatal.pdf" (2.032 caracteres), "01 - RESUMO - PEDIATRIA - INTENSIVA - SEDOANALGESIA E SRI.pdf" (14.974), "01 - CHOQUE - ABORDAGEM INICIAL.pdf" (7.986), "02 - CHOQUE - TIPOS DE CHOQUE.pdf" (12.229). Todos parciais. O último contém SOFA, meta PAM ≥65 e bolus 30 mL/kg **para adultos**, que **não foram importados** para o algoritmo pediátrico. Fontes normativas principais: **Phoenix JAMA 2024** e **SSC Pediatric Guidelines 2026**, publicada 23/03/2026, SCCM e *Intensive Care Medicine*. **Adicionado:** definição Phoenix versus triagem de gravidade, sinais de choque compensado, interpretação de lactato, microbiologia por foco e stewardship, recomendações distintas de bolus em hospitais com/sem UTI, incerteza explícita sobre epinefrina versus norepinefrina e tempo do vasoativo, fluidotolerância/POCUS, suporte pulmonar/renal, sequelas e cuidado após alta; cinco casos 5–9 e seis questões 9–14. **Triagem 60k brutos superada, sem certificação de utilidade líquida.**
+
+### Pendências clínicas/editoriais inegociáveis
+- Verificar uso de antimicrobianos, vasoativos, solução de ressuscitação e infusão de acordo com **faixa etária, peso, apresentações comerciais, diluições, ajustes renais e protocolos brasileiros** para 128.
+- Auditar uso de endoscopia/hemostasia, errata ESGE 2026, antiagregação/anticoagulação, risco cardiológico e terapias após sangramento com gastro/endoscopia para 127.
+- Obter benchmark **realmente equivalente** do Drive ou registrar a limitação como permanente; não alegar atendimento pleno da etapa zero com material parcial.
+- Avaliar qualidade de texto, ausência de duplicações entre 126/127/132/136, validade das questões por revisor externo e teste independente de autossuficiência.
+- Planejar/revisar imagens médicas diagnósticas realmente relevantes (pelo menos dez candidatas quando justificável), confirmar licença comercial, submeter ao fluxo **Admin**, converter WebP no peso exigido e testar visual desktop/PWA.
+- **Sem edição de HTML publicado, sem atualização de Supabase, sem deploy, sem certificação.** O aumento é de caracteres **brutos**, não métrica de conteúdo didático líquido.
+
+**Prioridades próximas:** revisão de integridade/consistência e farmacologia da 121 e 128; integração com QA dos complementos 124/129/134 mapeados em `lote-07-auditoria-integracao-124-129-134.md`; revisão da redundância de 126/127/132/136 sem cortar raciocínio útil; completar validação de imagens/licenças.
