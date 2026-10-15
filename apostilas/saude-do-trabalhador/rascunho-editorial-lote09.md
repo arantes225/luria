@@ -660,11 +660,639 @@ Esta apostila prioriza **documentos brasileiros oficiais** para normas, vigilân
 - [x] GRO/PGR, PCMSO, ASO, CIPA, SESMT, ergonomia e prevenção.
 - [x] Portarias, SINAN versus CAT, RENASTT/Cerest e normas de 2026.
 - [x] Algoritmos e tabelas de diferenciais e manejo.
-- [ ] Casos clínicos completos em módulo de aprofundamento.
-- [ ] Questões de prova com comentários individuais das alternativas.
-- [ ] Curadoria de dez imagens candidatas e aprovação de licenças.
+- [x] Casos clínicos completos no módulo de aprofundamento, seção 29.
+- [x] Questões de prova com comentários individuais das alternativas, seção 30.
+- [x] Planejamento de pelo menos dez imagens candidatas, seção 31; aprovação de licenças ainda pendente.
 - [ ] Revisão científica e editorial por responsável qualificado.
 - [ ] Integração ao formato nativo do renderizador LURIA e teste desktop/PWA.
 - [ ] Auditoria dos prazos e normas imediatamente antes da publicação.
 
 **Status do arquivo:** rascunho editorial fundamentado; não marcar como apostila final/validada sem passar pelas etapas pendentes.
+
+
+## 29. Casos clínicos integradores LURIA — comentários passo a passo
+
+Os cenários são fictícios, autorais e destinados ao treino clínico. Nenhum representa prontuário real. Cada um integra diagnóstico, diferenciais, exames, conduta clínica e consequências para a vigilância coletiva.
+
+### Caso 1 — Analista de dados com parestesias noturnas e atividade repetitiva
+
+**Apresentação:** Mulher de 39 anos, trabalha com digitação e mouse há oito anos, em ritmo elevado e com pausas irregulares. Descreve formigamento noturno em polegar, indicador e dedo médio da mão direita, piorando após turnos longos. Nos últimos meses, deixa cair objetos.
+
+**Hipóteses e raciocínio:** A clínica sugere neuropatia mediana no punho, mas devem ser investigadas radiculopatia cervical, neuropatia periférica por diabetes/hipotireoidismo, compressões proximais e outras causas. Avaliar distribuição sensitiva, força de oposição/abdução do polegar, atrofia tenar e testes provocativos, ciente de seus limites diagnósticos.
+
+**Exames, interpretação e critérios:** A história e o exame podem estabelecer hipótese de síndrome do túnel do carpo. Eletroneuromiografia é útil se diagnóstico permanecer incerto, antes de determinadas decisões cirúrgicas ou se houver déficit motor importante; não exige realização automática em todos os casos. Glicemia ou TSH somente quando indicados pelo contexto clínico.
+
+**Conduta individual:** Orientar modificação temporária de tarefas e redução de carga biomecânica, órtese noturna quando indicada, analgesia apropriada e reabilitação. Déficit motor progressivo ou atrofia requer avaliação especializada sem atraso. Documentar tarefas e temporalidade e avaliar possível nexo, sem tomar repetição como causa exclusiva.
+
+**Prevenção, documentação e vigilância:** Dialogar com avaliação ergonômica do posto e organização de ritmo/pausas, avaliando se outros colegas apresentam queixas. Considerar notificação de LER/DORT conforme critérios e fluxo da vigilância.
+
+**Por que este caso importa:** Mostra que diagnóstico anatômico, relação ocupacional e decisão preventiva são três etapas diferentes; laudo de imagem isolado não encerra nenhuma delas.
+
+### Caso 2 — Acidente perfurocortante na sala de emergência
+
+**Apresentação:** Residente de enfermagem de 26 anos sofre perfuração com agulha usada em coleta de sangue há 45 minutos. Existe sangue visível no dispositivo. A pessoa-fonte ainda não foi testada. O trabalhador está vacinado contra hepatite B, mas não recorda resultado de anti-HBs.
+
+**Hipóteses e raciocínio:** É exposição percutânea potencialmente relevante. Determinar profundidade, tipo de agulha, material, tempo e situação da fonte. A ausência de resultado da fonte não justifica esperar horas para decidir HIV PEP quando risco indica.
+
+**Exames, interpretação e critérios:** Avaliar testes basais de HIV e hepatites, estado vacinal e necessidade de pesquisa de imunidade anti-HBs; testes da fonte quando viável, com consentimentos e protocolo. Confirmar medidas preventivas para HBV e plano de monitoramento para HCV.
+
+**Conduta individual:** Realizar cuidados locais, acolher sem culpabilização, estimar risco com protocolo MS e iniciar PEP HIV, se indicada, imediatamente (até 72 h, 28 dias); avaliar vacina/IGHB conforme situação. Programar reavaliação, tolerância e adesão. Não deixar de oferecer cuidado se a CAT ainda não foi feita.
+
+**Prevenção, documentação e vigilância:** Registrar circunstância, proteção e dispositivo de segurança. Acidente com exposição a material biológico está em categoria de notificação semanal na lista de 2026; CAT possui prazo próprio e aplicação previdenciária.
+
+**Por que este caso importa:** Cobrança clássica: prazo clínico de PEP não é prazo de CAT e nenhum deles é automaticamente o prazo da ficha SINAN.
+
+### Caso 3 — Trabalhador do corte de pedras com dispneia e tosse
+
+**Apresentação:** Homem de 52 anos, trabalhou 23 anos cortando e polindo pedras com exposição intensa à poeira, frequentemente sem extração local adequada. Evoluiu com tosse persistente, dispneia progressiva e radiografia com opacidades nodulares predominantes nos campos superiores.
+
+**Hipóteses e raciocínio:** A exposição a sílica cristalina respirável e padrão radiológico sugerem silicose. Investigar tuberculose ativa, especialmente se febre, emagrecimento, suor noturno ou alterações cavitárias, além de pneumopatias intersticiais e neoplasia. Tabagismo pode agravar função, mas não desmente exposição.
+
+**Exames, interpretação e critérios:** Analisar função respiratória (espirometria, eventualmente difusão), radiologia detalhada e TC de alta resolução se indicada. Investigar TB segundo sintomas, exames e protocolos nacionais, especialmente dada maior suscetibilidade nesse grupo. Revisar histórico de tarefas, meios de supressão de poeira e possíveis colegas afetados.
+
+**Conduta individual:** Retirar ou reduzir exposição a sílica, oferecer avaliação pneumológica, controle de sintomas, vacinação indicada, reabilitação pulmonar se apropriada e acompanhamento de complicações. Não prometer cura da fibrose com broncodilatador isolado.
+
+**Prevenção, documentação e vigilância:** Comunicar e investigar possibilidade de pneumoconiose relacionada ao trabalho, acionar Cerest/VISAT e controles coletivos de poeira. Notificação sanitária semanal quando configurado o agravo.
+
+**Por que este caso importa:** Exposição ocupacional de longa duração + padrão clínico orienta hipótese, mas TB continua diagnóstico relevante e potencialmente tratável.
+
+### Caso 4 — Professora com perda progressiva da voz
+
+**Apresentação:** Professora de ensino básico de 47 anos, fala seis horas por dia em sala com ruído elevado e sem amplificador. Apresenta disfonia progressiva há quatro meses, melhorando parcialmente após descanso. Nega febre, mas refere esforço para falar no fim do dia.
+
+**Hipóteses e raciocínio:** Considerar distúrbio de voz relacionado ao trabalho, lesões benignas de pregas vocais, laringite, refluxo, tabagismo, paresia de pregas e neoplasia conforme sinais. Investigar tabagismo, disfagia, hemoptise, dispneia e massa cervical como alarmes.
+
+**Exames, interpretação e critérios:** Avaliação otorrinolaringológica e laringoscopia quando indicada, associada a fonoaudiologia. Não rotular automaticamente como nódulos vocais apenas pela profissão.
+
+**Conduta individual:** Cuidar de sintomas específicos, orientar técnica vocal e fonoterapia quando cabíveis; ajustar acústica, amplificação e condições de fala, e planejar pausas reais.
+
+**Prevenção, documentação e vigilância:** Identificar risco do conjunto de docentes da unidade e orientar notificação de distúrbio de voz relacionado ao trabalho quando critérios forem preenchidos.
+
+**Por que este caso importa:** Deixa claro que distúrbio de voz é um agravo ocupacional notificado nacionalmente e que prevenir envolve modificar ambiente, não só repouso.
+
+### Caso 5 — Sofrimento mental em equipe de atendimento ao público
+
+**Apresentação:** Mulher de 31 anos trabalha em central de atendimento com metas variáveis, punições por pausa e episódios documentados de humilhação em reuniões. Há oito meses apresenta insônia, ansiedade intensa e piora ao iniciar jornada; faltou três vezes no mês. Relata que colegas estão adoecendo.
+
+**Hipóteses e raciocínio:** Avaliar depressão, transtornos de ansiedade, insônia e outros diferenciais, funcionalidade, uso de substâncias, condições clínicas e risco suicida. A associação temporal com trabalho é pista, não prova exclusiva de nexo. Preservar confidencialidade e autonomia da paciente.
+
+**Exames, interpretação e critérios:** O diagnóstico depende de entrevista clínica, exame mental e investigação dirigida; nenhum questionário isolado prova causa trabalhista. Levantar descrição objetiva da organização do trabalho e recursos de apoio, diferenciando relato de fato observado.
+
+**Conduta individual:** Oferecer atendimento em saúde mental, segurança, orientação sobre afastamento/adaptação quando necessário, seguimento e intervenção organizacional com canais adequados. Em risco suicida agudo, atendimento emergencial.
+
+**Prevenção, documentação e vigilância:** NR-1 vigente desde 26/05/2026 contempla riscos psicossociais no GRO/PGR. Propor medidas sobre organização, assédio, metas e pausas, em vez de apenas 'treino de resiliência'. Notificar agravo relacionado ao trabalho conforme definição de caso e fluxo.
+
+**Por que este caso importa:** Proteção coletiva e tratamento individual são complementares; não se deve patologizar a pessoa para ignorar uma organização nociva.
+
+### Caso 6 — Agricultor com broncorreia, miose e fraqueza após pulverização
+
+**Apresentação:** Homem de 34 anos é encontrado com sudorese, sialorreia, vômitos, fasciculações e desconforto respiratório pouco após pulverizar produto agrícola em área sem ventilação adequada. Trabalhadores da mesma equipe relatam sintomas leves.
+
+**Hipóteses e raciocínio:** Síndrome colinérgica sugere exposição a inibidor de acetilcolinesterase, como certos organofosforados/carbamatos. Checar rótulo, substância e rota. Diferenciais incluem outras intoxicações, hipoglicemia e causas neurológicas, mas broncorreia e contexto justificam ação urgente.
+
+**Exames, interpretação e critérios:** Diagnóstico principalmente clínico, sem aguardar dosagem de colinesterases. Monitorar oxigenação, via aérea, ventilação, ECG e exames conforme gravidade; suporte toxicológico para identificar composto e possível uso de oximas.
+
+**Conduta individual:** Segurança da equipe, retirada da fonte e descontaminação apropriada, ABCDE, suporte ventilatório quando necessário e atropina titulada até controle de secreções e parâmetros clínicos, com manejo por toxicologia. Considerar pralidoxima conforme agente e protocolo. Não fornecer dose indiferenciada sem dados.
+
+**Prevenção, documentação e vigilância:** Investigar colegas, proteção coletiva, armazenamento e treinamento, além de notificação de intoxicação exógena e situação ocupacional. A empresa precisa controlar o risco na fonte, não somente fornecer luvas.
+
+**Por que este caso importa:** A prioridade da atropinização é melhorar broncorreia/broncoespasmo e perfusão, não perseguir uma frequência cardíaca numérica isolada.
+
+### Caso 7 — Fábrica têxtil: hipoacusia e zumbido progressivos
+
+**Apresentação:** Homem de 48 anos trabalhou por 16 anos em linha de tecelagem ruidosa. A esposa percebe aumento do volume de televisão. Audiometria mostra perda neurossensorial bilateral com predomínio em altas frequências, sem queixa de início abrupto.
+
+**Hipóteses e raciocínio:** PAIR é hipótese relevante; investigar presbiacusia, ototoxicidade medicamentosa, doenças de ouvido e ruído recreativo. Padrão audiométrico isolado não identifica obrigatoriamente o ambiente responsável.
+
+**Exames, interpretação e critérios:** Otoscopia, audiometria tonal/vocal, comparação com exames anteriores e avaliação especializada se achados atípicos ou assimétricos. Descrever exposição e eficácia dos controles de ruído.
+
+**Conduta individual:** Oferecer orientação, redução de exposição, reabilitação auditiva e acompanhamento. Não prometer recuperação de perda neurossensorial já instalada apenas por suspender contato com ruído.
+
+**Prevenção, documentação e vigilância:** Vigilância de colegas, medidas de engenharia acústica, avaliação de EPI como complemento e notificação conforme fluxo.
+
+**Por que este caso importa:** Mostra a diferença entre cessar progressão por retirar ruído e reverter perda já instalada.
+
+### Caso 8 — Higienização hospitalar com eczema nas mãos
+
+**Apresentação:** Trabalhadora de 42 anos limpa sanitários e enfermarias usando detergentes, desinfetantes e luvas por longos períodos. Desenvolveu prurido, fissuras e placas eritematodescamativas em dedos e dorso das mãos, com melhora parcial durante férias.
+
+**Hipóteses e raciocínio:** Dermatite de contato ocupacional é provável; irritativa por trabalho úmido ou alérgica a componentes do produto/luvas. Diferenciais: micose, psoríase, dermatite atópica e escabiose. Investigar agentes e distribuição.
+
+**Exames, interpretação e critérios:** Exame dermatológico e revisão das substâncias. Teste de contato quando hipótese de sensibilização o justificar; investigação microbiológica quando houver suspeita de infecção específica.
+
+**Conduta individual:** Reduzir exposição, substituir produtos ou adaptar processo, selecionar luvas adequadas, oferecer emolientes e terapia tópica anti-inflamatória conforme gravidade. Cuidados devem incluir prevenção de recidiva.
+
+**Prevenção, documentação e vigilância:** Investigar colegas e risco coletivo, registro e notificação conforme definição sanitária de dermatose ocupacional.
+
+**Por que este caso importa:** Luvas de material inadequado podem perpetuar dermatite; 'tem EPI' não demonstra proteção efetiva.
+
+### Caso 9 — Câncer de pulmão após exposição histórica a amianto
+
+**Apresentação:** Homem de 70 anos, aposentado há doze anos, diagnosticado com câncer de pulmão. Trabalhou por décadas com isolamento térmico e manutenção de estruturas contendo amianto. Foi tabagista durante parte da vida.
+
+**Hipóteses e raciocínio:** Tabagismo é fator de risco relevante, mas não exclui contribuição ocupacional de amianto, cujo efeito pode ter longa latência. Distinguir neoplasia pulmonar, mesotelioma e doenças pleurais/fibrosantes.
+
+**Exames, interpretação e critérios:** Obter anatomopatológico, estadiamento oncológico e história de atividades/exposição no passado; revisar documentos e evidências quando disponíveis. Placa pleural indica exposição prévia, mas não é diagnóstico isolado de câncer.
+
+**Conduta individual:** Cuidar do câncer conforme diretrizes, controle de sintomas e suporte. Investigar possível relação com trabalho, registrando nível de certeza, sem esperar decisão previdenciária para tratar.
+
+**Prevenção, documentação e vigilância:** Articular vigilância de exposições remanescentes, Cerest quando cabível e notificação de câncer relacionado ao trabalho após avaliação conforme definição vigente.
+
+**Por que este caso importa:** Uma doença diagnosticada após aposentadoria pode guardar relação com exposição passada e deve aparecer na anamnese.
+
+### Caso 10 — Acidente de máquina: trauma, SINAN e CAT
+
+**Apresentação:** Homem de 29 anos sofre amputação traumática de falange durante atividade em prensa de fábrica. É levado ao pronto-socorro, estável após compressão local. O encarregado afirma que a CAT só será emitida depois de perícia interna.
+
+**Hipóteses e raciocínio:** Priorizar hemorragia, dor, viabilidade tecidual, lesões de tendões/nervos/vasos, necessidade de cirurgia e atualização vacinal. A investigação administrativa da empresa não condiciona atendimento nem notificação de agravo.
+
+**Exames, interpretação e critérios:** Imagem de mão conforme lesão, exames orientados pelo quadro e avaliação de cirurgia da mão. Documentar mecanismo, horário e limitações.
+
+**Conduta individual:** ABCDE, controle de sangramento, analgesia, cuidado do segmento amputado e transferência cirúrgica se indicada; seguimento funcional e reabilitação.
+
+**Prevenção, documentação e vigilância:** A lista nacional de 2026 inclui acidente de trabalho como notificação imediata à SMS, enquanto a CAT empresarial deve ser realizada até o primeiro dia útil seguinte (morte imediata). Omissão do empregador permite registro por pessoas legitimadas. A CAT não depende de culpa apurada.
+
+**Por que este caso importa:** Diferencia emergência, investigação de evento sentinela, vigilância sanitária e comunicação previdenciária.
+
+### Caso 11 — Trabalhador da panificação com tosse e chiado nas segundas-feiras
+
+**Apresentação:** Homem de 33 anos atua em produção de pães há oito anos, manipulando farinha e aditivos. Desenvolveu tosse e sibilância que se intensificam no trabalho e frequentemente melhoram nos períodos mais longos de folga. Sem histórico de asma infantil documentado.
+
+**Hipóteses e raciocínio:** Suspeitar de asma ocupacional sensibilizante, sem excluir asma prévia não reconhecida, rinite, doença por irritantes e outras causas de tosse crônica. Exposição pode produzir sintomas tardios fora da jornada.
+
+**Exames, interpretação e critérios:** Espirometria com prova broncodilatadora quando indicada e interpretação adequada, eventual monitoramento seriado de pico de fluxo no trabalho e fora dele, avaliação de alergia e especialista conforme disponibilidade.
+
+**Conduta individual:** Tratar asma segundo diretriz, reduzir ou cessar exposição causal de modo seguro e planejado, acompanhar função respiratória. Não encerrar investigação por espirometria única normal.
+
+**Prevenção, documentação e vigilância:** Exaustão/ventilação e supressão de poeiras orgânicas, revisão de processo, vigilância de colegas e avaliação de nexo.
+
+**Por que este caso importa:** Melhora em férias é pista importante, mas o diagnóstico ainda exige caracterizar asma e agente.
+
+### Caso 12 — Trabalhadora grávida e solventes no laboratório
+
+**Apresentação:** Profissional de 30 anos, gestante no primeiro trimestre, trabalha com solventes em sala de manipulação e relata odor forte apesar de máscara cirúrgica. Tem cefaleias durante turnos e teme lesão fetal.
+
+**Hipóteses e raciocínio:** Avaliar substâncias específicas, vias e níveis de exposição; máscara cirúrgica não é proteção respiratória universal contra vapores orgânicos. Investigar outras causas de cefaleia, sintomas neurológicos e sinais de intoxicação.
+
+**Exames, interpretação e critérios:** Levantamento de produtos/FISPQ e condições de ventilação com equipe de segurança/saúde ocupacional; exames clínicos dirigidos, sem pedir 'painel toxicológico de rotina' indiscriminado.
+
+**Conduta individual:** Prevenir exposição e organizar adaptação/retirada da tarefa quando necessário, com avaliação obstétrica e ocupacional especializada. Garantir orientação individual fundamentada, sem prometer risco zero ou afirmar dano sem evidência.
+
+**Prevenção, documentação e vigilância:** Substituição da substância, sistemas fechados, exaustão e avaliação do PGR com atenção à proteção reprodutiva. Verificar legislação aplicável às gestantes.
+
+**Por que este caso importa:** A intervenção prioritária pode ser controle da fonte antes de qualquer exame laboratorial.
+
+
+
+## 30. Questões autorais LURIA — gabaritos e comentários por alternativa
+
+Estas 18 questões são inéditas e didáticas; não são reproduções de provas de residência. Cada alternativa recebeu comentário separado, seguido de minirrevisão.
+
+### Questão 1 — Diferença entre CAT e SINAN
+
+**Enunciado:** Uma pessoa sofre trauma durante atividade profissional. Qual assertiva diferencia corretamente os registros?
+
+**A)** CAT é a única notificação exigível em saúde pública.
+
+**B)** CAT é comunicação previdenciária; notificação SINAN é instrumento de vigilância sanitária e pode ser exigida separadamente.
+
+**C)** Notificação no SINAN automaticamente concede benefício acidentário.
+
+**D)** Ambos têm sempre o mesmo prazo e o mesmo responsável.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A erra ao ignorar agravos de notificação compulsória no SUS.
+- **Alternativa B:** B distingue finalidade, agentes responsáveis e prazos; as providências não se substituem.
+- **Alternativa C:** C erra: notificação não é decisão previdenciária.
+- **Alternativa D:** D é falsa: prazos e agentes variam conforme o sistema.
+
+**Mini revisão:** A finalidade define o instrumento; atender primeiro, documentar e cumprir ambos quando cabíveis.
+
+### Questão 2 — Prazo da CAT
+
+**Enunciado:** Quanto à CAT de acidente não fatal comunicado pela empresa no regime pertinente, qual prazo geral consta da Lei 8.213/1991?
+
+**A)** Até o primeiro dia útil seguinte à ocorrência.
+
+**B)** Até 72 horas, igual à janela da PEP HIV.
+
+**C)** Somente após a alta do paciente.
+
+**D)** Até 30 dias após a perícia.
+
+**Gabarito: A.**
+
+- **Alternativa A:** A é a regra geral; em caso de morte a comunicação é imediata.
+- **Alternativa B:** B confunde legislação previdenciária com profilaxia clínica.
+- **Alternativa C:** C adia indevidamente comunicação.
+- **Alternativa D:** D cria prazo e condicionamento não previstos.
+
+**Mini revisão:** Empresa ou empregador doméstico comunica conforme lei; diante de omissão, pessoas legitimadas também podem fazê-lo.
+
+### Questão 3 — Notificação sanitária ocupacional 2026
+
+**Enunciado:** Pela lista nacional do Ministério da Saúde publicada em janeiro de 2026, assinale a correta.
+
+**A)** Todo acidente biológico e todo acidente de trabalho são notificados obrigatoriamente apenas a cada mês.
+
+**B)** Acidente de trabalho geral consta como notificação imediata à SMS, enquanto exposição a material biológico consta como semanal.
+
+**C)** CAT deve ser enviada ao SINAN em vez de formulário próprio.
+
+**D)** PAIR não é doença de notificação.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A erra a periodicidade do anexo.
+- **Alternativa B:** B reproduz distinção expressa da lista nacional de 2026; consultar ainda normas locais e definição de caso.
+- **Alternativa C:** C confunde documentos.
+- **Alternativa D:** D é falsa: perda auditiva relacionada ao trabalho figura entre agravos notificáveis.
+
+**Mini revisão:** Consultar sempre a versão atualizada da lista e distinguir categoria de acidente geral de exposição biológica.
+
+### Questão 4 — NR-1 vigente em 2026
+
+**Enunciado:** Qual mudança merece destaque na abordagem preventiva de riscos psicossociais?
+
+**A)** A obrigação passou a tratar somente de meditação e testes psicológicos individuais.
+
+**B)** Os fatores psicossociais relacionados ao trabalho integram o gerenciamento de riscos ocupacionais, com necessidade de ações preventivas organizacionais.
+
+**C)** O PGR foi substituído pela CAT.
+
+**D)** A NR-1 passou a servir apenas para empresas hospitalares.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A reduz prevenção coletiva a estratégia individual.
+- **Alternativa B:** B está correta: texto vigente desde 26/05/2026 inclui esses fatores no GRO/PGR.
+- **Alternativa C:** C compara instrumentos com objetivos distintos.
+- **Alternativa D:** D limita indevidamente o escopo da norma.
+
+**Mini revisão:** Identificar perigos e modificar organização, jornada, assédio e suporte pode ser mais efetivo que responsabilizar individualmente empregados.
+
+### Questão 5 — NR-7 e retorno ao trabalho
+
+**Enunciado:** Segundo a NR-7 aplicável, qual exame ocupacional é previsto para trabalhador afastado por doença/acidente por período igual ou superior a 30 dias, antes de reassumir funções?
+
+**A)** Apenas exame demissional.
+
+**B)** Exame de retorno ao trabalho.
+
+**C)** Somente radiografia de tórax.
+
+**D)** Nenhum, pois o afastamento foi por motivo não ocupacional.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A não se relaciona ao retorno.
+- **Alternativa B:** B corresponde à categoria e ao critério da norma.
+- **Alternativa C:** C é exame complementar sem indicação universal.
+- **Alternativa D:** D erra porque o afastamento pode ser ocupacional ou não.
+
+**Mini revisão:** Não confundir necessidade de exame de retorno com regime de benefícios ou com ausência de assistência clínica.
+
+### Questão 6 — Hierarquia de controle
+
+**Enunciado:** Em ambiente com exposição intensa à poeira respirável, qual medida deve ser prioritariamente avaliada?
+
+**A)** Só distribuir máscaras descartáveis sem verificar adequação.
+
+**B)** Eliminar ou substituir processo perigoso e adotar controles coletivos na fonte, complementando com EPI adequado.
+
+**C)** Fazer tomografia anual universal de todos os trabalhadores.
+
+**D)** Pedir aos trabalhadores que respirem mais devagar.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A confia apenas em EPI, ignorando hierarquia.
+- **Alternativa B:** B segue prevenção na fonte e controles coletivos.
+- **Alternativa C:** C troca prevenção por rastreamento indevido.
+- **Alternativa D:** D não tem plausibilidade preventiva.
+
+**Mini revisão:** Prevenir doença ocupacional exige alterar exposição, não apenas encontrar doença mais cedo.
+
+### Questão 7 — LER/DORT e nexo
+
+**Enunciado:** Paciente com síndrome do túnel do carpo trabalha com tarefas repetitivas, mas também tem diabetes. Qual a melhor interpretação?
+
+**A)** Diabetes exclui qualquer contribuição do trabalho.
+
+**B)** O trabalho pode contribuir ou agravar quadro multifatorial, exigindo avaliação do processo e outros fatores.
+
+**C)** Eletroneuromiografia é sempre desnecessária.
+
+**D)** Toda parestesia é LER/DORT sem exame neurológico.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A ignora concausalidade.
+- **Alternativa B:** B integra diagnóstico e exposição.
+- **Alternativa C:** C é absoluta demais: exame pode ajudar em casos selecionados.
+- **Alternativa D:** D omite diferenciais importantes.
+
+**Mini revisão:** Diagnóstico anatômico e estabelecimento de relação com trabalho são passos diferentes.
+
+### Questão 8 — Perda auditiva relacionada ao trabalho
+
+**Enunciado:** Qual é a apresentação mais típica da perda auditiva induzida por ruído ocupacional crônico?
+
+**A)** Surdez condutiva súbita unilateral após otite.
+
+**B)** Perda neurossensorial progressiva, frequentemente bilateral, predominando em altas frequências.
+
+**C)** Hipoacusia reversível sempre após uma noite de sono.
+
+**D)** Cegueira e nistagmo como manifestação obrigatória.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A sugere outro diagnóstico e outra urgência.
+- **Alternativa B:** B descreve padrão típico, não exclusivo.
+- **Alternativa C:** C é incorreta: perdas estabelecidas podem ser irreversíveis.
+- **Alternativa D:** D contém manifestações não definidoras.
+
+**Mini revisão:** Avaliar audiometria, história de ruído, ototoxicidade e outras etiologias; não usar traçado isolado como prova absoluta de nexo.
+
+### Questão 9 — Silicose e tuberculose
+
+**Enunciado:** Mineiro com longa exposição à sílica apresenta dispneia progressiva e opacidades pulmonares nodulares. Qual associação merece investigação específica?
+
+**A)** Silicose exclui tuberculose concomitante.
+
+**B)** A exposição à sílica/silicose aumenta risco de tuberculose, que deve ser investigada conforme sintomas e contexto.
+
+**C)** O diagnóstico é sempre asma alérgica.
+
+**D)** A radiografia normal de um colega prova ausência de risco coletivo.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A é falsa: doenças podem coexistir.
+- **Alternativa B:** B é associação importante para prática e prova.
+- **Alternativa C:** C ignora exposição e padrão.
+- **Alternativa D:** D usa inferência epidemiológica inadequada.
+
+**Mini revisão:** Doença ocupacional pode aumentar vulnerabilidade a doença infecciosa que exige diagnóstico e tratamento próprios.
+
+### Questão 10 — Dermatite por trabalho úmido
+
+**Enunciado:** Profissional de limpeza tem eczema de mãos associado a água e detergentes, com melhora nas férias. Qual é a conduta mais completa?
+
+**A)** Apenas dar creme e manter exposição inalterada.
+
+**B)** Diagnosticar, tratar inflamação e barreira e modificar agentes, procedimentos e proteção.
+
+**C)** Prescrever antibiótico sistêmico para todos.
+
+**D)** Afirmar alergia a látex sem investigação.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A não previne recidiva.
+- **Alternativa B:** B aborda doença e fonte de risco.
+- **Alternativa C:** C é tratamento sem indicação universal.
+- **Alternativa D:** D antecipa mecanismo alérgico não demonstrado.
+
+**Mini revisão:** Dermatite irritativa e alérgica exigem raciocínio diferente; luva inadequada também pode causar problema.
+
+### Questão 11 — Organofosforado e síndrome colinérgica
+
+**Enunciado:** Após exposição ocupacional a inseticida, paciente tem broncorreia intensa, broncoespasmo e fasciculações. Qual prioridade?
+
+**A)** Esperar colinesterase antes de tratar.
+
+**B)** ABCDE, proteger equipe e descontaminar adequadamente, suporte respiratório e atropina titulada conforme protocolo.
+
+**C)** Induzir vômito imediatamente.
+
+**D)** Administrar sedativo isolado e liberar.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A atrasa cuidado em paciente grave.
+- **Alternativa B:** B trata ameaça respiratória e considera risco de contaminação secundária.
+- **Alternativa C:** C é potencialmente perigosa e não é abordagem padrão.
+- **Alternativa D:** D negligencia quadro colinérgico grave.
+
+**Mini revisão:** Atropinização é guiada principalmente por secreções respiratórias e estado clínico.
+
+### Questão 12 — Acidente biológico e PEP
+
+**Enunciado:** Após perfuração com material contaminado, trabalhador chega uma hora após exposição. Qual afirmação é correta?
+
+**A)** PEP HIV quando indicada deve começar o quanto antes, até 72 horas, e durar 28 dias.
+
+**B)** PEP HIV pode começar em qualquer momento meses depois.
+
+**C)** É obrigatória para todo contato de pele íntegra com fluido não infectante.
+
+**D)** Não se deve considerar hepatite B e C.
+
+**Gabarito: A.**
+
+- **Alternativa A:** A corresponde à orientação do Ministério da Saúde.
+- **Alternativa B:** B ignora janela de efetividade.
+- **Alternativa C:** C desconsidera avaliação de risco e indicação.
+- **Alternativa D:** D esquece outros agentes relevantes.
+
+**Mini revisão:** O cuidado é tempo-dependente e não pode ser postergado pela emissão de CAT.
+
+### Questão 13 — Função do Cerest
+
+**Enunciado:** Após diagnóstico de provável dermatose ocupacional, a UBS identifica outros trabalhadores com queixas parecidas. Qual articulação é adequada?
+
+**A)** Mandar todos ao Cerest para atendimento de emergência e dispensar UBS.
+
+**B)** Acionar rede de vigilância/Cerest para apoiar investigação do processo de trabalho, mantendo cuidado clínico pela rede.
+
+**C)** Aguardar perícia previdenciária antes de qualquer ação preventiva.
+
+**D)** Considerar que só o empregador pode investigar riscos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A confunde atribuições de Cerest e urgência/APS.
+- **Alternativa B:** B corresponde ao papel de apoio especializado e vigilância da rede.
+- **Alternativa C:** C atrasa prevenção coletiva.
+- **Alternativa D:** D ignora SUS/VISAT e responsabilidades públicas.
+
+**Mini revisão:** Cerest apoia a rede; a atenção integral permanece responsabilidade dos diferentes pontos de cuidado.
+
+### Questão 14 — LDRT e causalidade
+
+**Enunciado:** Sobre a Lista de Doenças Relacionadas ao Trabalho atualizada em 2023, assinale a correta.
+
+**A)** Sua presença é concessão automática de auxílio previdenciário.
+
+**B)** É referência clínico-epidemiológica de agentes e doenças para diagnóstico, investigação e vigilância; não substitui análise individual.
+
+**C)** A lista impede investigação de qualquer condição não prevista.
+
+**D)** Serve exclusivamente para multas trabalhistas.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A atribui à lista função previdenciária indevida.
+- **Alternativa B:** B sintetiza finalidades explicitadas na Portaria GM/MS 1.999/2023.
+- **Alternativa C:** C é absoluta e ignora raciocínio clínico/atualização de evidências.
+- **Alternativa D:** D não corresponde à finalidade sanitária.
+
+**Mini revisão:** Diferenciar listagem de agentes/doenças, nexo clínico individual e decisão administrativa.
+
+### Questão 15 — Asma relacionada ao trabalho
+
+**Enunciado:** Padeiro apresenta sibilância em dias de manipulação de farinha, melhorando nas férias. Espirometria única veio normal. Melhor próxima atitude?
+
+**A)** Excluir asma ocupacional com certeza.
+
+**B)** Investigar variabilidade respiratória e relação com exposição, podendo utilizar acompanhamento seriado e avaliação especializada.
+
+**C)** Afirmar que toda rinite no setor é prova de asma.
+
+**D)** Expor novamente a agente suspeito intencionalmente sem monitorização.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A ignora intermitência.
+- **Alternativa B:** B integra avaliação da asma com temporalidade e investigação dirigida.
+- **Alternativa C:** C confunde entidades e provas.
+- **Alternativa D:** D pode ser arriscada e não substitui investigação apropriada.
+
+**Mini revisão:** Asma ocupacional e asma agravada pelo trabalho têm implicações sobre tratamento e controle de exposição.
+
+### Questão 16 — Trabalho informal
+
+**Enunciado:** Trabalhador autônomo exposto a agrotóxicos chega à UBS com quadro de intoxicação. Qual afirmação sobre atenção à saúde está correta?
+
+**A)** Não tem direito ao SUS por não possuir carteira assinada.
+
+**B)** Deve ser atendido e o agravo investigado/notificado segundo normas sanitárias; instrumentos previdenciários possuem enquadramento próprio.
+
+**C)** A ausência de CAT torna proibido tratar intoxicação.
+
+**D)** Só CIPA pode solicitar exames clínicos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A viola universalidade de cuidado do SUS.
+- **Alternativa B:** B distingue assistência sanitária universal de documentação previdenciária.
+- **Alternativa C:** C subordina saúde a documento indevido.
+- **Alternativa D:** D confunde gestão interna de segurança com assistência médica.
+
+**Mini revisão:** Trabalhador é conceito mais amplo que empregado formal.
+
+### Questão 17 — Saúde mental e nexo
+
+**Enunciado:** Trabalhadora apresenta sintomas depressivos e relata humilhação repetida no trabalho. Qual estratégia evita erro clínico?
+
+**A)** Diagnosticar culpa jurídica da empresa imediatamente, sem avaliar a paciente.
+
+**B)** Avaliar sintomas, risco suicida, outros determinantes, organização do trabalho e necessidade de cuidado individual e coletivo.
+
+**C)** Informar ao supervisor todos os detalhes do prontuário sem base legal.
+
+**D)** Recomendar apenas mindfulness, sem abordar assédio.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A confunde diagnóstico e juízo jurídico.
+- **Alternativa B:** B oferece avaliação integral e prevenção de riscos organizacionais.
+- **Alternativa C:** C viola deveres de confidencialidade em regra.
+- **Alternativa D:** D reduz problema coletivo a intervenção individual.
+
+**Mini revisão:** Nexo clínico e prevenção podem ser trabalhados com sigilo e documentação adequada.
+
+### Questão 18 — PCMSO versus PGR
+
+**Enunciado:** Qual par relaciona corretamente os instrumentos?
+
+**A)** PGR = monitoramento clínico individual; PCMSO = inventário de máquinas apenas.
+
+**B)** PGR = gerenciamento de riscos, inventário e plano; PCMSO = vigilância médica conforme riscos ocupacionais.
+
+**C)** CAT = plano do PGR; ASO = ficha SINAN.
+
+**D)** CIPA = prontuário sigiloso individual; Cerest = exame demissional da empresa.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A troca os objetivos dos programas.
+- **Alternativa B:** B descreve a distinção central das NR-1 e NR-7.
+- **Alternativa C:** C mistura documentos de sistemas diferentes.
+- **Alternativa D:** D atribui funções incorretas às instituições.
+
+**Mini revisão:** Instrumentos devem dialogar, não ser confundidos.
+
+
+
+## 31. Curadoria de imagens candidatas — plano premium
+
+As 12 propostas abaixo ainda são **candidatas**, não imagens selecionadas ou incorporadas. A curadoria deve reunir versões de fonte legítima, avaliar licença, exatidão, relevância e acessibilidade; converter para WebP com compressão equilibrada; e evitar imagens de pacientes identificáveis. O mínimo operacional proposto é buscar pelo menos 10 opções úteis; não preencher a apostila com imagens decorativas.
+
+| Nº | Candidata | Função didática | Fonte/critério |
+|---|---|---|---|
+| 1 | Mapa causal ocupacional | Diagrama autoral de agente → dose → órgão-alvo → síndrome → intervenção na fonte. | Arte médica original LURIA; mostrar que fatores individuais e organizacionais interferem na relação. |
+| 2 | História ocupacional ao longo da vida | Linha do tempo visual de exposições presentes e remotas, com latência de neoplasias/pneumoconioses. | Diagrama autoral; sem referência a pessoa real. |
+| 3 | Síndrome do túnel do carpo | Desenho anatômico do túnel carpal, nervo mediano e distribuição sensitiva. | Atlas anatômico institucional licenciado ou ilustração original, validar com especialista. |
+| 4 | Audiograma didático de PAIR | Audiograma schematic demonstrando alta frequência/entalhe típico, com comparador normal. | Gráfico autoral usando valores simulados e legenda dizendo que não é diagnóstico isolado. |
+| 5 | Dermatite ocupacional de mãos | Fotografia clínica autorizada de eczema, com localização e diferencial. | Banco institucional com licença; evitar fotos sem procedência. Alternativa: ilustração original. |
+| 6 | Asma ocupacional | Fluxo espirometria + diário de sintomas/pico de fluxo em dias de trabalho e folga. | Diagrama autoral, não criar curva clínica falsa atribuída a paciente. |
+| 7 | Silicose versus asbestose | Painel comparativo de RX/TC reais licenciados com padrões e regiões de predomínio. | Priorizar base acadêmica/institucional; solicitar laudo, permissão e legenda. |
+| 8 | PEP após acidente biológico | Linha do tempo risco → cuidados locais → avaliação da fonte → PEP até 72h → 28 dias → testes. | Fluxo autoral fundamentado no MS, revisão de protocolo pediátrico quando cabível. |
+| 9 | Hierarquia das medidas de prevenção | Pirâmide de eliminação, substituição, controles coletivos, organização e EPI. | Diagrama original baseado no Manual NR-1 do MTE, citar documento-base. |
+| 10 | NR-1, NR-7, CAT e SINAN | Mapa em quatro colunas distinguindo instrumento, responsável, prazo e finalidade. | Tabela/infográfico autoral, sem reproduzir imagens de sites de terceiros. |
+| 11 | Classificação de agravos SINAN 2026 | Quadro de cartões com acidentes imediatos e categorias semanais da Portaria 10.175/2026. | Diagrama original, destacar que normas são sensíveis à data. |
+| 12 | Exposição química e descontaminação | Fluxo seguro de cena, proteção, retirada, descontaminação, ABC, toxicologia. | Diagrama autoral revisado por toxicologista, sem criar passo a passo de substância desconhecida. |
+
+### Regras técnicas antes da integração
+
+- Verificar indicação explícita de origem e condições de reutilização; páginas oficiais podem conter imagens com direitos de terceiros.
+- Obter aprovação da imagem e legenda antes de referenciá-la no conteúdo renderizado.
+- Converter para WebP, preservar legibilidade de traçados de audiometria, espirometria e imagens radiológicas; respeitar o orçamento de mídia da LURIA.
+- Fornecer descrição alternativa útil a usuários de tecnologias assistivas.
+- Não gerar imagem que se apresente como radiografia, TC ou exame de pessoa real; usar simulações claramente identificadas se necessário.
+- Evitar imagens com marcas d'água, baixa resolução, sem contexto clínico ou de origem duvidosa.
+- Testar responsividade no desktop e PWA e garantir que falha de carregamento não torne o conteúdo ininteligível.
+
+
+## 32. Auditoria de alta qualidade — revisão do Lote 09
+
+### Verificação de cobertura
+
+- **Camada clínica:** exposição, mecanismos, doenças, diferenciais, investigação, intervenções e populações especiais contempladas.
+- **Camada de prevenção:** controle na fonte, GRO/PGR, PCMSO, ergonomia, organização do trabalho, instituições de saúde e vigilância contemplados.
+- **Camada jurídico-sanitária:** LDRT 2023, lista de notificação 2026, CAT, NR-1 2026, NR-7 e RENASTT 2024 contextualizadas.
+- **Aprendizagem:** 12 casos clínicos com hipóteses/exames/condutas/implicações coletivas e 18 questões comentadas por alternativa incluídos.
+- **Imagens:** 12 candidatas planejadas; nenhuma aprovada/incorporada nesta etapa.
+
+### Limitações explicitadas
+
+1. Não houve inspeção visual do site nem validação do PWA durante esta escrita.
+2. Referências, URLs, fluxos administrativos e normas precisam ser rechecados antes do lançamento.
+3. O conteúdo não inclui esquemas farmacológicos completos de toxicologia e HIV PEP — porque dependem do produto, protocolo, função renal, idade e gestação; inserir apenas após conferência da versão atual do PCDT e revisão especializada.
+4. Exemplos de nexo ocupacional orientam raciocínio e não substituem avaliação médico-pericial individual.
+5. As indicações de CAT devem considerar enquadramento legal da pessoa e do evento; atender e notificar em saúde não dependem de CAT.
+6. Não utilizar o diagnóstico psiquiátrico individual de trabalhador como substituto para avaliação de fatores coletivos da organização.
+7. A profundidade quantitativa não equivale automaticamente a revisão científica aprovada: manter status de rascunho até auditoria responsável.
+
+### Checklist final para publicação
+
+- [x] Definição, história e causalidade ocupacional.
+- [x] Epidemiologia qualitativa sem inventar taxas.
+- [x] Exposição física, química, biológica, ergonômica, psicossocial e mecânica.
+- [x] LER/DORT, PAIR, dermatoses, asma, pneumoconioses, intoxicações, neoplasias, voz e saúde mental.
+- [x] Urgências e acidente biológico com fluxo PEP.
+- [x] Tabelas de prevenção, diagnóstico diferencial e responsabilidades da rede.
+- [x] Casos clínicos e questões acima do mínimo do lead_apostilas.
+- [x] Lista preliminar de figuras didáticas com função e prioridade.
+- [ ] Revisão científica por profissionais de Saúde do Trabalhador, Medicina do Trabalho, Infectologia e Toxicologia.
+- [ ] Confirmação final dos protocolos, de doses e de fichas de notificação vigentes.
+- [ ] Curadoria de imagens e autorização de uso editorial.
+- [ ] Adequação ao content.json/renderer da LURIA com índices, blocos e navegação.
+- [ ] Verificação manual de responsividade, acessibilidade e imagens no PWA e desktop.
+- [ ] Revisão de língua, coesão, normalização bibliográfica e atualização da data de consulta.
+
+**Status consolidado:** texto principal enriquecido, porém ainda não certificado nem publicado.
