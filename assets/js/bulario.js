@@ -169,6 +169,7 @@
     if(!row){detail.innerHTML='<div class="empty">Selecione um medicamento.</div>';closeMobileDetail();return}
     const d=row.data||{},allFormulations=Array.isArray(d.formulations)?d.formulations:[],formulations=approvedFormulations(d),pendingCount=allFormulations.length-formulations.length,ready=formulations.length>0;
     let activeFormulationIndex=0;
+    const qualityAudit=d.quality_audit?.review_status==='PENDING_CLINICAL_SOURCE_REVIEW'?d.quality_audit:null;
     const products=Array.isArray(d.products)?d.products:[];
     const diseases=Array.isArray(d.diseases)?d.diseases:[];
     const keys=[row.active_ingredient,row.name].map(v=>String(v||"").toLocaleLowerCase("pt-BR"));
@@ -178,6 +179,7 @@
         ${relatedProtocols.map(p=>`<button type="button" data-open-protocol="${esc(p.slug)}">Abrir protocolo: ${esc(p.title)}</button>`).join("")}
         ${ready?`<button type="button" class="secondary" data-send-note="1">${window.LuriaClinicalBridge?.inPrescriptionFlow?.() ? "Adicionar à prescrição" : "Enviar à Cola Rápida"}</button>`:'<button type="button" class="secondary" disabled aria-label="Ficha sem fonte conferida">Prescrição indisponível • ficha em revisão</button>'}
       </div>
+      ${qualityAudit?`<section class="rx-section" aria-label="Pendências de revisão clínica"><div class="rx-section-head"><h3>Revisão clínica pendente</h3></div><p class="rx-note">Triagem documental LURIA (${esc(qualityAudit.batch||"")}) — esta ficha não foi certificada por revisão científica individual. <strong>Pendência:</strong> ${esc(qualityAudit.action_required||"Conferir a apresentação e a bula profissional antes de prescrever.")}</p></section>`:""}
       <section class="rx-section"><div class="rx-section-head"><h3>Principais indicações</h3></div>${diseases.length?`<div class="rx-tags">${diseases.map(item=>`<span>${esc(item)}</span>`).join('')}</div>`:'<p class="rx-note">Indicações ainda não vinculadas nesta ficha.</p>'}</section>
       <section class="rx-section"><div class="rx-section-head"><h3>Nomes e produtos</h3></div>${products.length?`<div class="rx-products">${products.map(p=>`<span><b>${esc(p.name)}</b> · ${esc(p.type)} · ${esc(p.presentation)}</span>`).join('')}</div>`:`<p class="rx-note">${esc(row.name)}${row.active_ingredient&&row.name.toLocaleLowerCase('pt-BR')!==row.active_ingredient.toLocaleLowerCase('pt-BR')?` · princípio ativo: ${esc(row.active_ingredient)}`:''}. Outras marcas e genéricos ainda não vinculados.</p>`}</section>
       ${pendingCount?`<p class="rx-note" role="status">${pendingCount} apresentação(ões) não liberada(s) para consulta de posologia: conferir fonte específica e revisão clínica.</p>`:''}
