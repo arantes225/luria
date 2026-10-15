@@ -68,7 +68,7 @@ WITH items(id,priority,clinical_area,action_required,prescription_copy_blocked) 
   'review_status','PENDING_CLINICAL_SOURCE_REVIEW',
   'formulation_count',jsonb_array_length(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END),
   'missing_source_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE COALESCE(f->>'source_url','') NOT LIKE 'http%'),
-  'retailer_or_aggregator_hosted_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE lower(coalesce(f->>'source_url','')) ~ '(consultaremedios\\.com\\.br|saudedireta\\.com\\.br|remediobarato\\.com|bula\\.com\\.br|drogasil\\.com\\.br|vteximg\\.com\\.br|onepharma\\.com\\.br|oncoexpress\\.com\\.br)'),
+  'retailer_or_aggregator_hosted_formulations',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE lower(coalesce(f->>'source_url','')) ~ '(consultaremedios[.]com[.]br|saudedireta[.]com[.]br|remediobarato[.]com|bula[.]com[.]br|drogasil[.]com[.]br|vteximg[.]com[.]br|onepharma[.]com[.]br|oncoexpress[.]com[.]br)'),
   'generic_placeholder_forms',(SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f WHERE coalesce(f->>'label','') ILIKE '%conforme produto%' OR coalesce(f->>'label','') ILIKE '%conforme registro%' OR coalesce(f->>'label','') ILIKE '%conforme mercado%'),
   'repeated_formulation_label_groups',(SELECT count(*) FROM(SELECT lower(coalesce(f->>'label','')) label FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f GROUP BY 1 HAVING count(*)>1) g),
   'missing_core_safety_fields',to_jsonb(array_remove(ARRAY[
@@ -83,3 +83,14 @@ WITH items(id,priority,clinical_area,action_required,prescription_copy_blocked) 
  RETURNING d.id
 )
 SELECT COUNT(*) tagged_now,(SELECT COUNT(*) FROM items) expected FROM marked;
+-- Reconciliação idempotente da métrica de proveniência em execuções anteriores.
+-- Não modifica dose, fonte, status nem o restante do audit.
+WITH reconciled AS (
+ UPDATE public.bulario_drugs d
+ SET data=jsonb_set(d.data,'{quality_audit,retailer_or_aggregator_hosted_formulations}',
+ to_jsonb((SELECT count(*) FROM jsonb_array_elements(CASE WHEN jsonb_typeof(d.data->'formulations')='array' THEN d.data->'formulations' ELSE '[]'::jsonb END) f
+ WHERE lower(coalesce(f->>'source_url','')) ~ '(consultaremedios[.]com[.]br|saudedireta[.]com[.]br|remediobarato[.]com|bula[.]com[.]br|drogasil[.]com[.]br|vteximg[.]com[.]br|onepharma[.]com[.]br|oncoexpress[.]com[.]br)')),true)
+ WHERE d.data->'quality_audit'->>'batch'='bul-09-401-450'
+ RETURNING d.id
+)
+SELECT count(*) AS source_provenance_reconciled FROM reconciled;
