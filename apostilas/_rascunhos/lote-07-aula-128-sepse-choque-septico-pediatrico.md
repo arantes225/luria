@@ -374,6 +374,51 @@ A SSC 2026 sugere **reabilitação individualizada precoce**, compatível com es
 **Conduta:** interromper bolus quando sobrecarga ou ausência de benefício, iniciar/ajustar vasoativos conforme equipe e protocolo, suporte ventilatório, controle de infecção e monitorização.
 **Por que importa:** evita iatrogenia por protocolo mecanicista e demonstra valor da reavaliação.
 
+
+### Caso 5 — lactato normal e choque compensado
+**Apresentação:** menina de 3 anos com pneumonia suspeita, febre, desatenção e diminuição de diurese. Extremidades frias, pulsos periféricos fracos, TEC 6 segundos. PA ainda próxima ao esperado para idade. Lactato 1,7 mmol/L.  
+**Hipótese:** infecção provável com hipoperfusão e possível choque compensado.  
+**Raciocínio:** hipoperfusão pode preceder hipotensão; lactato isolado normal não afasta a gravidade.  
+**Exames:** glicemia, lactato seriado se útil, hemoculturas sem atraso do antibiótico, investigação do pulmão e órgãos conforme evolução.  
+**Interpretação:** a avaliação da perfusão é mais informativa do que um número isolado de lactato.  
+**Conduta:** atendimento de emergência com equipe pediátrica, antimicrobiano oportuno quando a infecção é provável, ressuscitação e reavaliação guiadas pela estrutura e tolerância, transferência/UTI se necessário.  
+**Por que importa:** demonstra o limite dos exames iniciais e evita atrasar suporte até aparecer hipotensão.
+
+### Caso 6 — excesso de volume após melhora da perfusão
+**Apresentação:** menino de 5 anos, 18 kg, sepse bacteriana em atendimento com UTI. Recebeu bolus seriados durante a reanimação e recuperou parte da perfusão; após nova etapa apresenta maior esforço respiratório, crepitações e hepatomegalia.  
+**Hipótese:** intolerância a fluido/sobrecarga, possível disfunção miocárdica associada; sepse ainda requer acompanhamento.  
+**Raciocínio:** volume máximo das diretrizes é teto condicional, não meta. A piora respiratória muda risco-benefício da próxima expansão.  
+**Exames:** reexame clínico, ultrassom cardiopulmonar quando disponível e profissional treinado, gasometria/imagem conforme necessidade, balanço hídrico e órgãos.  
+**Interpretação:** piora de oxigenação e congestão exige revisar a hipótese de "precisa de mais fluido" antes de continuar.  
+**Conduta:** interromper bolus automáticos, discutir suporte vasoativo/ventilatório e avaliação cardíaca conforme equipe, monitorar perfusão e desfechos.  
+**Por que importa:** reconhecimento de **fluidotolerância**, não apenas de "responsividade".
+
+### Caso 7 — choque infeccioso em hospital sem UTI
+**Apresentação:** lactente de 11 meses com febre, prostração e sinais de provável infecção bacteriana, atendido em unidade remota sem UTI, laboratório limitado e sem suporte ventilatório invasivo. Há perfusão ruim, mas inicialmente não há hipotensão documentada.  
+**Hipótese:** sepse provável com risco de deterioração; definir se já há choque clinicamente e se há condições para suporte local.  
+**Raciocínio:** a SSC 2026 é explícita sobre evitar bolus de rotina na **sepse sem hipotensão em sistemas sem UTI**, pela relação risco/benefício. Isso não autoriza abandonar suporte nem aguardar piora para transferência.  
+**Exames:** glicemia e dados essenciais disponíveis, lactato se não atrasar decisão, culturas quando viável e sem retardar antibiótico.  
+**Interpretação:** capacidade do sistema e condição clínica precisam ser documentadas para a decisão de volume.  
+**Conduta:** avaliação emergencial, antibiótico oportuno se provável infecção, monitorização, manutenção hídrica apropriada e regulação/transferência; bolus apenas na indicação contextual de choque hipotensivo e sob reavaliação rigorosa.  
+**Por que importa:** evita aplicar diretriz formulada para UTI equipada em serviço sem capacidade de tratar complicações.
+
+### Caso 8 — choque séptico ou miocardite?
+**Apresentação:** adolescente de 13 anos com febre recente, dor torácica, palpitações, síncope e hipotensão. Há hepatomegalia, taquicardia desproporcional e baixa perfusão, mas sem foco infeccioso bacteriano claro.  
+**Hipóteses:** miocardite com choque cardiogênico versus sepse com disfunção cardíaca ou quadro misto.  
+**Raciocínio:** fluidos repetidos podem piorar disfunção ventricular; as duas síndromes requerem assistência urgente e podem coexistir.  
+**Exames:** ECG, troponina quando indicado, ecocardiograma/POCUS por equipe, avaliação de infecção e órgãos, exames gerais conforme estabilidade.  
+**Interpretação:** depressão de função ventricular modifica ressuscitação e estratégia de vasoativo, mas não afasta infecção sem avaliação.  
+**Conduta:** UTI pediátrica/cardiologia conforme recursos, ressuscitação individualizada, evitar bolus indiscriminado e tratar etiologia identificada.  
+**Por que importa:** ensina diagnóstico diferencial urgente e prevenção de dano iatrogênico.
+
+### Caso 9 — recuperação pós-sepse e necessidade de seguimento
+**Apresentação:** menino de 9 anos recebeu alta de internação prolongada por sepse respiratória com ventilação mecânica. Está afebril e respira sem suporte, mas apresenta fraqueza, cansaço, dificuldade de concentração e temor de voltar à escola.  
+**Hipóteses:** morbidade pós-sepse e desacondicionamento, possíveis efeitos emocionais/cognitivos.  
+**Raciocínio:** normalização de PA e conclusão de antibiótico não significam recuperação integral.  
+**Exames/avaliação:** força, mobilidade, nutrição, sono, funcionamento cognitivo/escolar, experiência da família e sequela específica conforme órgãos afetados.  
+**Conduta:** reabilitação individualizada, orientação ao cuidador, seguimento pediátrico/APS e encaminhamento multiprofissional conforme déficits.  
+**Por que importa:** amplia o conceito de desfecho além da sobrevivência hospitalar.
+
 ## 12. Oito questões autorais com comentários completos
 
 ### Questão 1 — Phoenix 2024
