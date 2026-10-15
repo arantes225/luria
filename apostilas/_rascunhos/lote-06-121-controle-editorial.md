@@ -41,3 +41,58 @@
 - [ ] Nenhum deploy/merge até autorização e aprovação editorial.
 
 **Não copiar documentos privados, não fabricar referências brasileiras e não alterar material publicado na produção.**
+
+
+---
+
+## Etapa seguinte — material redigido e pré-validação técnica
+
+**Arquivos criados e preservados em branch editorial:**
+- \`apostilas/_rascunhos/lote-06-121-infeccao-urinaria-pielonefrite.md\`: 30 capítulos numerados, 8 casos, 12 questões originais; **101.762 caracteres brutos**.
+- \`apostilas/_rascunhos/lote-06-121-build-input-preliminar.json\`: entrada para gerador com **29 seções**, 8 referências vinculadas e zero imagens embutidas.
+- \`apostilas/_rascunhos/lote-06-121-preview.html\`: prévia de HTML baseada no template da LURIA com **30 seções**, 8 casos, 12 questões e 12 listas de alternativas de A a D. \`noindex,nofollow\`; nenhuma página pública foi alterada.
+- \`apostilas/_rascunhos/lote-06-121-imagens-candidatas-parciais.json\`: quatro imagens de ultrassom/TC com páginas de fonte e licença CC BY/CC BY-SA **individualmente verificadas**; seis temas visuais ainda pendentes de seleção. **Sem inserção/aprovação no Admin ou publicação.**
+
+### Cobertura e integridade
+- **Corpo instrucional estimado:** 70.369 caracteres nos capítulos 1–26, depois da remoção simples de URLs e marcadores Markdown; exclui 8 casos, 12 questões, bibliografia e controle. **Não é certificação de originalidade semântica, utilidade total ou revisão científica humana.**
+- Títulos de capítulos numerados consecutivamente: 30/30.
+- 8 casos em sequência, 12 questões com justificativas individuais.
+- Links internos de navegação no HTML sem âncoras quebradas no teste textual; nenhum ID duplicado.
+- Não foram encontrados parágrafos longos exatamente duplicados na triagem textual, mas o texto contém recapitulacões didáticas cuja necessidade deve ser revista.
+
+### Matriz de autossuficiência preliminar (sem consultar gabaritos)
+| Questão | Competência | Capítulos de suporte | Termos-chave | Situação |
+| --- | --- | --- | --- | --- |
+| 1 | Cistite típica | 5, 11 | disuria ✓; cistite ✓ | Cobertura lexical |
+| 2 | Antibiótico renal | 6, 12 | pielonefrite ✓; nitrofurantoina ✓ | Cobertura lexical |
+| 3 | Obstrução infectada | 14 | descompressao ✓; obstrucao ✓ | Cobertura lexical |
+| 4 | BAS em idosos | 7, 18 | bacteriuria assintomatica ✓; idos ✓ | Cobertura lexical |
+| 5 | BAS na gestação | 7, 17 | gesta ✓; urocultura ✓ | Cobertura lexical |
+| 6 | Pielonefrite gestacional | 17 | pielonefrite ✓; 14 dias ✓ | Cobertura lexical |
+| 7 | Cistite ESBL | 15 | esbl ✓; tmp-smx ✓ | Cobertura lexical |
+| 8 | cUTI e duração | 13 | 7 dias ✓; bacteremia ✓ | Cobertura lexical |
+| 9 | Falso negativo nitrito | 8 | nitrito ✓; negativo ✓ | Cobertura lexical |
+| 10 | CAUTI x colonização | 19 | biofilme ✓; cateter ✓ | Cobertura lexical |
+| 11 | Lactente febril | 23 | tres meses ✓; coleta ✓ | Cobertura lexical |
+| 12 | Não resposta ao tratamento | 10, 24 | 48 ✓; obstrucao ✓ | Cobertura lexical |
+
+**Resultado: 12/12** com cobertura por busca de termos. **Limite:** demonstra apenas que termos e conceitos centrais aparecem nos capítulos, não a suficiência clínica de todas as justificativas nem a segurança de prescrição. Revisão de especialista segue indispensável.
+
+### Camada visual
+Foram analisadas fontes abertas e identificadas quatro candidatas com licenças rastreáveis:
+1. Cerevisae, *Ultrasound of right kidney moderate hydronephrosis*, CC BY-SA 4.0.
+2. James Heilman, *Phydronephrosisfromstone*, CC BY-SA 3.0.
+3. Cerevisae, *Right kidney hydroureter with stone within*, CC BY-SA 4.0.
+4. Hansen, Nielsen e Ewertsen, *Ultrasonography of renal stone located at the pyeloureteric junction*, CC BY 4.0.
+
+A descrição e links completos estão no JSON de candidatos. As outras seis imagens/diagramas ainda precisam ser localizadas, licenciadas ou desenhadas de modo original, avaliadas clinicamente e aprovadas no fluxo Admin. **Não converter automaticamente imagens da internet em arquivos públicos sem validar licença e atribuição.**
+
+### Pendências que bloqueiam marcação de "concluída"
+1. **Revisão especializada de antimicrobianos, apresentações disponíveis no Brasil, perfil de resistência, ajustes por eGFR, interações, gestação, prostatite e complicações.** As diretrizes EAU 2026 e IDSA 2025 não substituem protocolos da CCIH/APS/SUS locais.
+2. Auditoria rigorosa da utilidade/ausência de duplicações semânticas e comparação com benchmark extenso de origem institucional confirmada (não disponível).
+3. Seleção/validação/legenda de figuras e compressão em WebP, com aprovação do Admin.
+4. Executar realmente os scripts oficiais do repositório (\`node scripts/build-apostilas-batch.cjs ... --dry-run\`, auditores do lote e sintaxe), que **ainda não foram executados**. Pré-teste estrutural em JS **não equivale a execução real de build.**
+5. Testar renderização desktop e PWA, corrigir problemas de responsividade e acessibilidade.
+6. Validação editorial antes de qualquer merge, deploy ou alteração de versão publicada.
+
+**Parecer atual:** apostila redigida, casos e exercícios prontos em prévia, estrutura e cobertura básicas verificadas. **Não aprovada para publicação ou uso clínico sem revisão.**
