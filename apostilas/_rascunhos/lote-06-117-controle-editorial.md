@@ -5,7 +5,7 @@
 - Tema nº 117 da sequência do cronograma-base LURIA, área Cirurgia Geral.
 - Nenhuma apostila publicada com pasta nominal `isquemia-mesenterica` identificada na consulta inicial ao diretório `apostilas/`. É necessário auditar sobreposições clínicas com eventuais livros de abdome agudo.
 - **Fonte editada:** `apostilas/_rascunhos/lote-06-117-isquemia-mesenterica.md`, preservada em branch `editorial/lote-06-auditoria-20261014`.
-- Conteúdo atual: **86.453 caracteres brutos de Markdown**, **63.306 caracteres aproximados de corpo instrucional** nas seções 1 a 27, após remoção simples de marcadores/URLs. **Não representa ainda 60 mil caracteres úteis únicos certificados**.
+- Conteúdo atual: **87.601 caracteres brutos de Markdown**, **64.433 caracteres aproximados de corpo instrucional** nas seções 1 a 27, após remoção simples de marcadores/URLs. **Não representa ainda 60 mil caracteres úteis únicos certificados**.
 - 31 capítulos numerados (incluindo referências e controle), 8 casos clínicos e 12 questões comentadas. Parágrafos longos literalmente duplicados detectados pela triagem: 0.
 - Nenhum HTML público foi alterado e nenhuma imagem foi publicada.
 
@@ -31,14 +31,14 @@ A triagem exige que premissas conceituais centrais apareçam no corpo instrucion
 | 4 | 9 | NOMI ✓, choque ✓ | cobertura preliminar |
 | 5 | 10, 20 | pós-prandial ✓, revascularização ✓ | cobertura preliminar |
 | 6 | 11, 19 | colite ✓, colonoscopia ✓ | cobertura preliminar |
-| 7 | 5, 16 | creatinina ✕, contraste ✓ | revisar |
+| 7 | 5, 16 | creatinina ✓, contraste ✓ | cobertura preliminar |
 | 8 | 7, 18 | endovascular ✓, ESVS ✓ | cobertura preliminar |
 | 9 | 21 | 3–6 meses ✓, indefinida ✓ | cobertura preliminar |
 | 10 | 11, 19 | peritonite ✓, perfuração ✓ | cobertura preliminar |
 | 11 | 9, 17 | vasopressores ✓, perfusão ✓ | cobertura preliminar |
 | 12 | 7, 18 | second-look ✓, viabilidade ✓ | cobertura preliminar |
 
-**Resultado:** 11/12 questões com termos do conteúdo localizados nos capítulos esperados. A triagem não prova que cada alternativa seja totalmente justificável apenas com o texto nem que os dados estejam clinicamente corretos; exige revisão humana.
+**Resultado:** 12/12 questões com termos do conteúdo localizados nos capítulos esperados. A triagem não prova que cada alternativa seja totalmente justificável apenas com o texto nem que os dados estejam clinicamente corretos; exige revisão humana.
 
 ## 5. Lacunas e critérios de aprovação
 - [x] Fundamentos anatômicos/fisiológicos e mecanismos das quatro modalidades agudas.
@@ -54,3 +54,7 @@ A triagem exige que premissas conceituais centrais apareçam no corpo instrucion
 - [ ] Manter branch editorial; **não fazer merge nem deploy sem validação final e autorização**.
 
 **Parecer:** capítulo central e banco inicial de exercícios produzidos, qualidade clínica/promocional ainda pendente de aprovação; o texto não deve ser apresentado como versão final.
+
+
+## Complemento da auditoria de autossuficiência
+O primeiro teste detectou ausência do termo e da explicação explícita sobre *creatinina elevada* na decisão de angioTC dos capítulos de suporte da questão 7. Foi acrescentado um subcapítulo próprio na seção 5.2, distinguindo risco renal de contraste e risco imediato de infarto intestinal. A matriz foi refeita com 12/12 objetivos localizados; isto **continua sendo triagem lexical** e não comprovação de validade clínica.
