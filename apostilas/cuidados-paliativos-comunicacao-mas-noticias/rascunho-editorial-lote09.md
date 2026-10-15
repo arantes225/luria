@@ -153,3 +153,47 @@ O recurso **Wish–Worry–Wonder** expressa esperança honesta, preocupação c
 
 Ao informar óbito, evitar eufemismos ambíguos como “foi viajar” e expressões excessivamente técnicas. Frase clara, pausa, apoio, oportunidade de perguntas e explicação prática de próximos procedimentos são preferíveis. Confirmar identidade, fatos clínicos e quem deve receber informação; não dar notícia por mensagem informal sem circunstâncias que justifiquem e procedimento institucional adequado.
 
+
+## 10. Reunião familiar e decisão compartilhada
+
+As reuniões devem começar com a informação clínica correta, checagem da capacidade do paciente, autorização para participantes e uma pauta. Perguntar “o que entenderam?”, explicar fatos sem jargão, pausar, investigar valores e apresentar opções com benefício, risco e possibilidade de reavaliação. A pessoa capaz continua protagonista. Se incapacitada, DAV, representante e decisões éticas orientam a equipe.
+
+A frase “família quer tudo” frequentemente expressa medo de abandono. Perguntar o significado de “tudo” e explicar que cuidados de conforto serão mantidos. Nunca condicionar alívio de sofrimento à concordância com ordem de não reanimar. Em caso de divergência, documentar, oferecer segunda opinião e recorrer à bioética.
+
+| Decisão | Benefício potencial | Ônus possível |
+|---|---|---|
+| RCP | Recuperação de circulação em condição reversível | Procedimentos traumáticos e baixíssimo benefício em irreversibilidade terminal |
+| Intubação/UTI | Reversão de descompensação em paciente selecionado | Sedação, restrição de comunicação, complicações |
+| Antibiótico | Alívio de infecção ou recuperação clínica | Punções, efeitos adversos, tempo de hospitalização |
+| Transfusão | Melhora de fadiga/dispneia por anemia sintomática | Necessidade de acesso/transporte e riscos transfusionais |
+| Diálise | Controle de uremia/sobrecarga com benefício | Sessões prolongadas e hipotensão |
+| Nutrição artificial | Ponte em incapacidade temporária de alimentação | Risco de aspiração, infecção, sem benefício em caquexia terminal |
+| Hidratação | Melhora de sintomas por hipovolemia selecionada | Edema, secreções e desconforto |
+
+Quando prognóstico é incerto, um **teste terapêutico por tempo definido** pode ser proporcional: estabelecer objetivo, prazo, avaliação e conduta se não funcionar. Não é promessa de cura; limita intervenção inútil sem abandonar cuidado.
+
+## 11. Avaliação de sintomas e escolha farmacológica
+
+Antes de alterar medicamento, descrever intensidade (0–10), mecanismo, duração, fatores de melhora/piora, interferência em sono e atividades, resposta à terapia anterior e efeitos adversos. Buscar causas reversíveis quando a investigação/tratamento são proporcionais: retenção urinária, fecaloma, hipercalcemia, pneumonia, edema pulmonar ou fratura podem manifestar-se como sofrimento intenso.
+
+Reconciliar medicamentos, vias, doses, apresentações, alergias, função renal e hepática e interações. Pessoas frágeis frequentemente precisam de titulação mais cuidadosa. Verificar disponibilidade domiciliar e capacidade do cuidador antes de prescrever fórmulas difíceis.
+
+### 11.1. Dor
+
+Dor **nociceptiva somática** (osso, músculo, pele) pode ser localizada e piorar com movimento; **visceral** pode ter cólica, distensão e irradiação; **neuropática** costuma envolver queimação, choque, parestesia e alodinia. O sofrimento emocional pode amplificar qualquer mecanismo, sem tornar a dor imaginária.
+
+A entrevista examina local, irradiação, escala, padrão contínuo/episódico, funcionalidade, tratamentos, efeitos adversos e objetivo: por exemplo, “dormir quatro horas seguidas”. Paracetamol, dipirona e anti-inflamatórios podem auxiliar em casos apropriados, com atenção a rim, fígado, risco gastrointestinal e sangramento. Para dor neuropática, selecionar adjuvantes conforme sedação e função renal. Corticoide pode aliviar edema tumoral em indicações específicas, não é analgésico universal sem risco.
+
+Em dor moderada/intensa, opioides podem fazer parte de tratamento legítimo e proporcional, associados a avaliação contínua e medidas não farmacológicas. A decisão exige profissional habilitado, tolerância prévia, função orgânica, revisão da via e prevenção de constipação.
+
+### 11.2. Resgates e rotação de opioides
+
+Dor basal persistente pode exigir esquema regular e medicação de resgate para pioras. A fração de dose diária usada para resgate depende do agente, via, tolerância e situação; referências frequentemente usam proporções em torno de 10–20% para pacientes estáveis, **não aplicáveis como fórmula cega a pessoas virgens de opioide**. Reavaliar frequência de uso e resposta antes de subir o basal.
+
+Rotação de opioides requer tabela equianalgésica, avaliação de tolerância cruzada incompleta e redução de dose de segurança, com monitorização. **Metadona tem conversão não linear e meia-vida longa**, exigindo expertise, e fentanil transdérmico não é escolha automática para dor aguda ou paciente sem tolerância. Metabólitos de morfina podem acumular em insuficiência renal grave e provocar sonolência e mioclonias.
+
+Constipação necessita prevenção e manejo. Náuseas, prurido, retenção urinária e sonolência pedem revisão; alterações progressivas de consciência ou ventilação exigem avaliar toxicidade, infecção e outras causas. Em emergência respiratória relacionada a opioide, o manejo é clínico e supervisionado, preservando analgesia quando possível.
+
+### 11.3. Sinais de alerta que não devem ser atribuídos apenas à dor crônica
+
+Fraqueza progressiva, retenção urinária e dor vertebral em paciente com câncer levantam **compressão medular metastática**, emergência em que RM, corticosteroide selecionado e avaliação neurocirúrgica/radioterápica podem preservar função. Dor óssea focal pode representar fratura patológica; intervenção cirúrgica ou radioterapia pode aliviar sofrimento mesmo em doença avançada.
