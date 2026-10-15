@@ -937,3 +937,108 @@ Os exercícios são inéditos, para ENAMED e residência, com situações fictí
 
 **Mini-revisão:** Obstrução parcial e completa têm decisões distintas.
 
+### Questão 16 — Sedação paliativa proporcional
+
+**Enunciado:** Qual indicação descreve corretamente sedação paliativa?
+
+**A)** Conveniente para equipe em paciente inquieto leve.
+
+**B)** Sintoma refratário intolerável em contexto apropriado, após avaliação e consentimento/documentação.
+
+**C)** Qualquer diagnóstico de câncer.
+
+**D)** Para antecipar diretamente a morte.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não é medida de conveniência.
+- **Alternativa B:** Requer refratariedade, proporcionalidade e processo ético.
+- **Alternativa C:** Doença por si não indica sedação.
+- **Alternativa D:** Intenção não é causar morte.
+
+**Mini-revisão:** Sedação não substitui analgesia nem cuidado integral.
+
+### Questão 17 — Opioide para sedar
+
+**Enunciado:** Paciente está com dor controlada, mas a equipe quer aumentar morfina unicamente para fazê-lo dormir. Qual avaliação?
+
+**A)** É sedação paliativa ideal por rotina.
+
+**B)** Não é adequado usar escalada de morfina como sedativo; avaliar necessidade clínica e protocolo específico.
+
+**C)** É obrigatório em toda terminalidade.
+
+**D)** Resolve sofrimento social.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Opioide não é sedativo específico.
+- **Alternativa B:** Morfina trata dor/dispneia, enquanto sedação segue critérios próprios.
+- **Alternativa C:** Não há obrigatoriedade.
+- **Alternativa D:** Sofrimento social exige intervenção própria.
+
+**Mini-revisão:** Não confundir fármaco de alívio da dor com sedação intencional.
+
+### Questão 18 — Hidratação nos últimos dias
+
+**Enunciado:** Pessoa em processo ativo de morte tem edema, secreções e pouca deglutição. A família pede hidratação IV abundante. Melhor princípio:
+
+**A)** Hidratação universal obrigatória.
+
+**B)** Avaliar benefício/ônus, conforto oral e eventual teste individualizado.
+
+**C)** Proibir toda forma de líquido.
+
+**D)** Forçar alimentação por sonda em todos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode piorar edema/dispneia.
+- **Alternativa B:** Decisão individualizada é correta.
+- **Alternativa C:** Pode haver benefício em situação selecionada.
+- **Alternativa D:** Sondas têm riscos sem benefício universal.
+
+**Mini-revisão:** Higiene oral pode aliviar mais que infusão sem indicação.
+
+### Questão 19 — Cuidados pediátricos
+
+**Enunciado:** Criança com doença neuromuscular progressiva recebe reabilitação e sofre com procedimentos. Qual alternativa?
+
+**A)** Paliativos apenas nos últimos três dias.
+
+**B)** Abordagem paliativa pediátrica integrada precoce, ouvindo criança e responsáveis.
+
+**C)** Dose de opioide idêntica à de adulto.
+
+**D)** Não abordar escola ou irmãos.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não depende de terminalidade imediata.
+- **Alternativa B:** Desenvolvimento e rede familiar fazem parte.
+- **Alternativa C:** Farmacologia pediátrica exige protocolo.
+- **Alternativa D:** São dimensões relevantes de qualidade de vida.
+
+**Mini-revisão:** Pediatria exige cuidado centrado no desenvolvimento e assentimento.
+
+### Questão 20 — Alta domiciliar segura
+
+**Enunciado:** Pessoa com ELA deseja alta, mas sem cuidador treinado, medicação de resgate ou contato noturno. Qual conduta?
+
+**A)** Dar alta sem estrutura para respeitar desejo.
+
+**B)** Construir retaguarda, treinamento, acesso e plano para crises antes da transição.
+
+**C)** Recusar para sempre qualquer alta domiciliar.
+
+**D)** Prescrever via oral mesmo em disfagia grave.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode gerar sofrimento evitável.
+- **Alternativa B:** Desejo deve ser viabilizado de modo seguro.
+- **Alternativa C:** Preferências devem ser trabalhadas, não negadas em definitivo.
+- **Alternativa D:** Via precisa ser segura.
+
+**Mini-revisão:** Transição é intervenção clínica e social.
+
