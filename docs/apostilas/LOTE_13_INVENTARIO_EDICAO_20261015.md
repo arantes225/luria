@@ -18,16 +18,16 @@ Comprimentos abaixo são **número de caracteres totais dos arquivos Markdown** 
 | 258 | Avaliação de tecnologias em saúde e custo-efetividade | 31.258 | 20 | Sim | Sim | Rascunho parcial |
 | 259 | Sistemas de Informação em Saúde e qualidade dos dados | 30.563 | 16 | Sim | Sim | Rascunho parcial |
 | 260 | Biossegurança e prevenção de infecções relacionadas à assistência | 59.437 | 26 | Sim | Sim | Rascunho ampliado, parcial |
-| 271 | Endocrinologia pediátrica | 29.109 | 14 | Sim | Sim | Rascunho parcial |
+| 271 | Endocrinologia pediátrica | 72.175 | 20 | Sim | Sim | Rascunho ampliado, parcial |
 | 272 | Fibrose cística | 65.509 | 26 | Sim | Sim | Rascunho ampliado, parcial |
-| 273 | Imunodeficiências na infância | 38.184 | 19 | Sim | Sim | Rascunho parcial |
+| 273 | Imunodeficiências na infância | 69.226 | 25 | Sim | Sim | Rascunho ampliado, parcial |
 | 274 | Ortopedia pediátrica | 29.163 | 15 | Sim | Sim | Rascunho parcial |
 | 275 | Emergências de cirurgia pediátrica | 29.986 | 19 | Sim | Sim | Rascunho parcial |
 | 276 | Diarreia aguda no adulto e colite por Clostridioides difficile | 33.808 | 18 | Sim | Sim | Rascunho parcial |
 | 279 | Crescimento fetal reduzido e aumentado | — (HTML existente) | — | — | — | Auditoria preliminar |
 | 280 | Alterações fisiológicas da gestação | — (HTML existente) | — | — | — | Auditoria preliminar |
 
-**Total bruto dos 17 manuscritos:** 619.364 caracteres. **Média bruta:** 36.433.
+**Total bruto dos 17 manuscritos:** 693.472 caracteres. **Média bruta:** 40.792.
 
 *Os campos Casos? e Questões? refletem busca textual inicial de blocos, não contagem, profundidade ou aprovação científica. Quando constar “Rever”, pode ser diferença de título; conferir manualmente.*
 
@@ -57,3 +57,9 @@ Aprofundado o manuscrito #260 com 25.159 caracteres brutos originais, nos blocos
 ## Continuidade — 15/10/2026, #272
 
 Aprofundado o manuscrito #272 com 23.741 caracteres brutos originais nos blocos 14A–14D, abrangendo raciocínio em triagem neonatal/teste do suor/genótipo, CRMS/CFSPID, microbiologia e função respiratória, ABPA e micobactérias não tuberculosas, hemoptise, pneumotórax, diabetes relacionado à fibrose cística, elegibilidade e regras de acesso a moduladores CFTR em 2026, além de quadro de decisões. Foram efetivamente relidos no Drive dois materiais pediátricos correlatos, mas nenhum comparador integral de fibrose cística foi localizado. Consulta pública Conitec não foi confundida com incorporação ao SUS. Fontes oficiais e de sociedades médicas indicadas no próprio rascunho. **Etapa zero integral, 60.000 caracteres didáticos úteis, validação científica especializada, imagens aprovadas, auditoria técnica e publicação ainda pendentes**. Somente alteração em branch editorial, sem afetar livros publicados.
+
+## Continuidade — 15/10/2026, #273 e #271
+
+- **#273 · Imunodeficiências na infância** — expansão original de **31.042 caracteres brutos**, até **69.226 caracteres totais**. Seções 11A–11F com interpretação clínica e etária de exames, suspeita de SCID/TREC, autoimunidade/erros inatos de regulação, vacinas por mecanismo, hemoterapia, reposição de imunoglobulina, terapias avançadas, seguimento, seis cenários de aplicação e quadro de rastreabilidade. Referências IUIS 2024/2025, CDC 2024, SBP 2025/2026 e PCDT MS histórico 2007; materiais do Drive abertos: *Pneumonia Comunitária na Pediatria* e *Infecção pelo HIV*, apenas correlatos, com inadequações antigas não reproduzidas. **Benchmark específico, revisor especialista, validação de 60K úteis e imagens aprovadas: pendentes**.
+- **#271 · Endocrinologia pediátrica** — expansão original de **43.066 caracteres brutos**, até **72.175 caracteres totais**. Seções 7A–7F com curva/velocidade estatural, diferenciais e investigação, fisiopatologia/urgência da HAC, hipotireoidismo congênito versus central, tratamento precoce, puberdade precoce (com diretriz **Endocrine Society 13/06/2026**), puberdade tardia, seis casos integrados e seis questões originais. Materiais do Drive relidos: *Puericultura — Crescimento e Baixa Estatura* e *Especialidades — Genética*; não são comparadores integrais de HAC/tireoide. Fontes MS/ESPE/Endocrine Society/Pediatric Endocrine Society registradas. **Benchmark completo, revisão por endocrinologista, contagem de 60K úteis, imagens aprovadas e teste PWA: pendentes**.
+- Ambos permaneceram **exclusivamente em** `apostilas/_rascunhos/` na branch `editorial/lote-13-preenchimento-20261015`. Não foi feito merge/deploy nem edição direta de livros prontos. Contagens da tabela são **caracteres brutos do Markdown**, não certificações de profundidade, correção ou disponibilidade.
