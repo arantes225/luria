@@ -55,7 +55,7 @@ test('community layout keeps friend lookup/addition and challenge, customization
   // Persisted room dialogs are exercised with PostgreSQL in social-ui.test.cjs.
   assert.equal(d.getElementById('friends-create-room-toggle').textContent,'Criar sala');
   assert.equal(d.getElementById('social-dialog').open,false);
-  assert.equal(d.querySelector('.community-nav a').pathname,'/amigos/');
+  assert.equal(d.querySelector('.community-portals a').pathname,'/amigos/');
 });
 
 test('emergency library exposes its existing empty state without changing the clinical engine', async t => {

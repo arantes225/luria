@@ -2,20 +2,19 @@
 (() => {
   "use strict";
   function init() {
-    const nav = document.querySelector(".community-nav");
+    const nav = document.querySelector(".community-portals");
     const tabs = [...document.querySelectorAll("[data-community-tab]")];
     const panels = tabs.map(tab => document.getElementById(tab.getAttribute("aria-controls")));
     if (!nav || tabs.length < 2 || panels.some(panel => !panel) || nav.dataset.initialized) return;
     nav.dataset.initialized = "true";
-    nav.setAttribute("role", "tablist");
-    tabs.forEach(tab => tab.setAttribute("role", "tab"));
-    panels.forEach(panel => panel.setAttribute("role", "tabpanel"));
+    panels.forEach(panel => panel.setAttribute("role", "region"));
     const addFriend = document.getElementById("friends-ref-add-toggle");
     function activate(area) {
       tabs.forEach((tab, index) => {
         const active = tab.dataset.communityTab === area;
-        tab.setAttribute("aria-selected", String(active));
-        tab.tabIndex = active ? 0 : -1;
+        if(active) tab.setAttribute("aria-current", "page");
+        else tab.removeAttribute("aria-current");
+        if(tab.dataset.communityTab === "friends") tab.hidden = area === "friends";
         panels[index].hidden = !active;
         panels[index].inert = !active;
       });
@@ -26,29 +25,22 @@
       if(!location.hash.startsWith('#room='))window.dispatchEvent(new CustomEvent('luria:room-exit'));
       activate(location.hash === "#community-rooms" || location.hash.startsWith("#room=") ? "rooms" : location.hash === "#community-groups" ? "groups" : "friends");
     };
-    function navigate(area, leaveRoom = false) {
+    function navigate(area, leaveRoom = false, focusHeading = true) {
       if(leaveRoom)window.dispatchEvent(new CustomEvent('luria:room-exit'));
       activate(area);
+      const destination = document.getElementById("community-" + area + "-panel");
+      const heading = destination?.querySelector("h2");
+      if (heading && focusHeading) { heading.tabIndex = -1; heading.focus({preventScroll:true}); }
       const hash = "#community-" + area;
       // The page has <base href="/">; bare fragments would otherwise open the root.
       if (location.hash !== hash) history.pushState(null, "", location.pathname + location.search + hash);
     }
-    tabs.forEach((tab, index) => {
+    tabs.forEach(tab => {
       tab.addEventListener("click", event => {
         event.preventDefault();
         navigate(tab.dataset.communityTab, true);
       });
-      tab.addEventListener("keydown", event => {
-        let next;
-        if (event.key === "ArrowRight") next = (index + 1) % tabs.length;
-        else if (event.key === "ArrowLeft") next = (index + tabs.length - 1) % tabs.length;
-        else if (event.key === "Home") next = 0;
-        else if (event.key === "End") next = tabs.length - 1;
-        else return;
-        event.preventDefault();
-        tabs[next].click();
-        tabs[next].focus();
-      });
+
     });
     window.addEventListener("hashchange", fromHash);
     window.addEventListener("popstate", fromHash);
@@ -56,8 +48,7 @@
     document.querySelectorAll("[data-open-rooms]").forEach(button => button.addEventListener("click", () => navigate("rooms", true)));
     if (addFriend) addFriend.addEventListener("click", event => {
       event.preventDefault();
-      navigate("friends", true);
-      const panel = document.getElementById("friends-ref-add-panel");
+      navigate("friends", true, false);
       window.dispatchEvent(new CustomEvent("luria:visual-open",{detail:"sf-add-dialog"}));
       document.getElementById("community-friends")?.scrollIntoView({ behavior: "smooth", block: "start" });
       document.getElementById("friend-id-input")?.focus({ preventScroll: true });

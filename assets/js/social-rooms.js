@@ -377,7 +377,7 @@
  async function init(){
   if(owner||!window.docmapUser||!$('social-rooms'))return;owner=window.docmapUser;bind();
   const mark=document.querySelector('.friends-ref-studyrats-mark');if(mark)mark.innerHTML=icon('rat');
-  for(const [id,name] of [['community-tab-friends','people'],['community-tab-rooms','room'],['friends-create-room-toggle','room'],['social-voice-join','mic']]){const el=$(id);if(el)el.insertAdjacentHTML('afterbegin',icon(name)+' ');}
+  for(const [id,name] of [['friends-create-room-toggle','room'],['social-voice-join','mic']]){const el=$(id);if(el)el.insertAdjacentHTML('afterbegin',icon(name)+' ');}
   try{await refreshSocial();await refreshHall();const params=new URLSearchParams(location.search);if(params.get('group_invite')){await command('join_group',{code:params.get('group_invite')});await refreshSocial();}if(params.get('invite'))await enter({code:params.get('invite')});else if(location.hash.startsWith('#room='))await enter({room_id:decodeURIComponent(location.hash.slice(6))});}
   catch(error){if(/PGRST202|function .*social_|Could not find.*function/i.test((error.code||'')+' '+error.message)){status('As salas aguardam a ativação do banco no ambiente de homologação. Seus amigos e desafios continuam disponíveis.',true);$('social-rooms').textContent='Nenhuma sala disponível neste ambiente.';}else failure(error);}
   try{if(await rpc('is_admin')===true){$('social-admin').hidden=false;await adminSnapshot();}}catch(error){failure(error);}

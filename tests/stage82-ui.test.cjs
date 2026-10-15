@@ -64,19 +64,19 @@ async function community(t, hash = '') {
   await settle();await tick();
   return {...f,calls};
 }
-test('community: three accessible areas, deep links and keyboard navigation', async t => {
+test('community: content portals, return link and deep links', async t => {
   const {w,d,errors}=await community(t,'#studyrats-card');
   const friends=d.getElementById('community-tab-friends'),rooms=d.getElementById('community-tab-rooms');
-  assert.equal(d.querySelectorAll('.community-nav [role="tab"]').length,3);
+  assert.equal(d.querySelectorAll('.community-portals a').length,2);
   assert.equal(d.getElementById('community-friends-panel').hidden,false);
   assert.equal(d.getElementById('community-rooms-panel').hidden,true);
   assert.equal(d.getElementById('friends-ref-add-toggle').hidden,false);
   rooms.click();
   assert.equal(d.getElementById('community-rooms-panel').hidden,false);
-  rooms.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Home',bubbles:true,cancelable:true}));
+  friends.click();
   await tick();
-  assert.equal(d.activeElement,friends);
-  assert.equal(friends.getAttribute('aria-selected'),'true');
+  assert.equal(friends.hidden,true);
+  assert.equal(friends.getAttribute('aria-current'),'page');
   assert.equal(d.getElementById('community-rooms-panel').hidden,true);
   w.history.replaceState(null,'','/amigos/#community-rooms');
   w.dispatchEvent(new w.HashChangeEvent('hashchange'));
@@ -129,7 +129,7 @@ test('community: no duplicate component IDs and initialization remains single', 
   d.getElementById('community-tab-rooms').click();await tick();
   d.getElementById('community-tab-friends').click();await tick();
   assert.equal(d.getElementById('friends-list'),list);
-  assert.equal(d.getElementById('community-tab-friends').getAttribute('aria-selected'),'true');
+  assert.equal(d.getElementById('community-tab-friends').getAttribute('aria-current'),'page');
   assert.deepEqual(errors,[]);
 });
 

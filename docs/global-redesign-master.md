@@ -40,3 +40,20 @@ Não há declaração de conclusão global. Sem publicação em produção, sem 
 ## Etapa 2 — Aprender implementada
 
 Nova composição do card Alex com mascote oficial, formulário existente, sugestões que levam à tutoria real e anexos preservados. Apostilas, Anotações e LuriaZap adotam variantes da fundação com cores e ilustrações SVG próprias. O contador estático incorreto de uma apostila foi substituído por ação de biblioteca. Permissão admin do Alex mantida. Cinco testes de fundação/integração passaram. CSS educacional passa a respeitar componentes opt-in, eliminando o reset monocromático dessas variantes em vez de acumular sobrescritas. Validação visual real aguarda homologação.
+
+## Continuação — 15/10: entrada da comunidade
+- Fundação e Aprender publicadas somente na homologação: versão Cloudflare `054c97c2-c5e1-4946-baee-8a9f42f174c2`.
+- Validação real de Aprender bloqueada pela permissão `dashboard` ausente na configuração da conta de homologação: o guard existente redireciona ao Dashboard. Nenhuma permissão foi alterada para contornar isso. Os quatro temas ainda precisam de capturas reais desta composição.
+- Etapa 3 implementada localmente: portais contextuais Grupos/Salas dentro do conteúdo, retorno para Amigos sem barra redundante, amigos compactos, convite original preservado. Navegação usa links nativos e aria-current, mantendo hashes, retorno do navegador e encerramento da participação ao sair da Sala.
+- A interface legada de competição foi retirada do painel inicial e mantida em container hidden/inert de compatibilidade, preservando os IDs e listeners. Não é ainda a integração por Grupo: Etapa 4 permanece pendente, com persistência/permissões/migração aditiva e ranking isolado obrigatórios.
+- Quatro testes de contrato/fundação/Aprender passaram; CSP de 96 páginas verificada. Suíte social de regressão em execução nesta continuação.
+- Segunda publicação (entrada de Amigos) não ocorreu: Wrangler não conseguiu alcançar o servidor de autenticação Cloudflare para atualizar o token. Código e build local preservados. Produção inalterada.
+- Regressão social: 23/25 passaram na primeira execução; dois contratos antigos foram atualizados para a nova estrutura (competição fora do painel e links nativos). Ambos passaram na repetição direcionada, incluindo criação/entrada/mensagens persistidas via RPC e preservação dos nós do chat/timer. A chamada de voz real com múltiplos usuários não foi executada.
+- Commit da Etapa 3 pendente: Git recusou criar `.git/index.lock` por ausência de permissão de escrita nesta sessão. Alterações permanecem no diretório de trabalho da branch `codex/luria-global-redesign`; nenhum reset ou force push realizado.
+
+### Refinamento local da Etapa 3
+- Removida a geração de capas decorativas em amigos.js, sem apenas escondê-las com CSS.
+- Cores sociais passaram a referenciar resource-groups/rooms/streak, eliminando as sobrescritas de paleta locais. Corrigida a referência inexistente a accent-amber.
+- Estilos dos portais limitados ao escopo da página Amigos. Navegação agora transfere o foco para o título da área aberta; o modal de amizade mantém a restauração do foco no botão Adicionar amigo.
+- Suite de 29 testes: 28 passaram; o teste restante detectou uma regressão real de foco ao fechar o modal. Corrigida a causa e a repetição direcionada passou. CSP: 96 páginas verificadas. diff --check sem erros de whitespace.
+- Revalidação de publicação e Git confirmou os mesmos bloqueios de rede Cloudflare e escrita no .git. Nenhuma nova publicação ou commit foi confirmado.
