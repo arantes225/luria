@@ -422,3 +422,294 @@ Na publicação: ilustrações originais ou autorizadas, licença documentada, d
 - [ ] Elevar a profundidade aos parâmetros do lead_apostilas sem repetição artificial.
 
 **Status:** rascunho substancial para integração; **não** declarar “apostila premium pronta”, nem substituir avaliação e protocolos institucionais.
+
+
+---
+
+## 22. Aprofundamento clínico: padrões de lesões por idade e desenvolvimento
+
+O raciocínio sobre trauma deve sempre incluir uma pergunta direta: **a criança tinha capacidade motora para produzir, por si, o mecanismo relatado?** A descrição do cuidador é dado de anamnese, não deve ser aceita ou descartada sem confronto com as capacidades motoras observadas e com os achados.
+
+### 22.1. Lactente sem mobilidade independente
+Uma equimose inexplicada em lactente que não engatinha ou não se desloca requer atenção especial. O número de pequenos acidentes esperados nessa fase é menor que na criança deambuladora. Diferenciais como trauma acidental por terceiros sem intenção, coagulopatia e condições cutâneas devem ser considerados, mas não se recomenda apenas observação domiciliar sem avaliação de segurança quando a lesão é suspeita.
+
+Ao investigar, incluir:
+- história obstétrica, intercorrências neonatais e uso de dispositivos;
+- capacidade de rolar, sentar, engatinhar e sustentar-se;
+- descrição independente do mecanismo por quem presenciou, se disponível, sem confronto acusatório;
+- sintomas neurológicos, de alimentação, vômitos, choro inconsolável ou alterações de comportamento;
+- exame da cavidade oral, da pele em toda sua extensão e de dor à mobilização dos membros;
+- discussão de imagem neurológica, estudo radiográfico e coagulação conforme achados e protocolos.
+
+A constatação de uma lesão inicialmente pequena não deve impedir busca dirigida por trauma oculto quando a história clínica justificar. A ausência de fratura ou sangramento intracraniano, por sua vez, não converte automaticamente uma equimose preocupante em normalidade.
+
+### 22.2. Criança no início da marcha
+Quedas de baixa energia podem explicar equimoses sobre proeminências ósseas, como joelhos, região anterior das pernas e testa. Não se deve classificar essas regiões como invariavelmente acidentais: mecanismo, cronologia e outros achados continuam necessários. Lesões em tronco, região retroauricular, partes moles do rosto, pescoço, nádegas e áreas protegidas são menos usuais em brincadeiras habituais, demandando investigação contextual.
+
+### 22.3. Pré-escolar e escolar
+Em crianças mais móveis, a prevalência de pequenos traumas acidentais aumenta. O exame deve distinguir lesões isoladas plausíveis de padrões repetitivos, múltiplos territórios anatômicos ou manifestações sistêmicas. Fraturas, lesões por impacto e alterações emocionais podem demandar abordagem em equipes diferentes. O exame clínico não deve ser transformado em “teste de credibilidade” da criança.
+
+### 22.4. Adolescente
+Na adolescência, violência entre pares, familiar, sexual, digital e autoprovocada podem coexistir. Questões de autonomia, confidencialidade e acesso a responsável protetor tornam-se centrais. Perguntar sobre ambiente escolar, relacionamentos, ameaças, exposição online, autolesão, substâncias e segurança de forma gradual, respeitosa e objetiva. A presença de um adulto acompanhante não significa automaticamente que é a pessoa mais segura para ouvir o relato.
+
+### 22.5. Por que a coloração da equimose não resolve a cronologia?
+O aspecto visual depende de profundidade, tecido, pigmentação, circulação e tempo, com grande variação. Não existe escala cromática clínica capaz de converter a cor em data exata confiável. Relatórios devem descrever a cor **observada**, sem transformar essa observação em “equimose de três dias” com falsa precisão.
+
+## 23. Avaliação sistemática de fraturas e trauma oculto
+
+### 23.1. Quando a radiografia muda a conduta
+Em menores de dois anos com suspeita importante de lesão infligida, o levantamento esquelético adequado permite identificar fraturas ocultas e caracterizar distribuição de lesões. Deve seguir técnica pediátrica própria, não ser substituído por imagem panorâmica única e ser interpretado por profissional treinado. A repetição após cerca de duas semanas é considerada em casos selecionados, inclusive para esclarecer achados iniciais duvidosos.
+
+**Por que isso importa para a prova?** Em criança muito pequena, fratura sem trauma proporcional pode ser pista importante, mas nenhuma morfologia isolada identifica um agressor. O diagnóstico é construído pela integração de história, desenvolvimento, imagens e condições predisponentes.
+
+### 23.2. Diferenciais de fratura
+**Osteogênese imperfeita:** avaliar fraturas recorrentes, história familiar e aspectos fenotípicos variáveis; nem todo caso exibe escleras azuladas ou alterações dentárias.
+
+**Raquitismo e outras doenças metabólicas ósseas:** ponderar crescimento, antecedentes alimentares, sinais radiológicos, cálcio, fósforo, fosfatase alcalina e exames adicionais quando indicados.
+
+**Fratura obstétrica ou decorrente de manobras assistenciais:** especialmente no período neonatal, cronologia e documentação prévia podem orientar.
+
+**Acidentes reais e mecanismos de alta energia:** crianças podem se ferir gravemente sem que haja agressão; todo o cenário deve ser examinado com imparcialidade.
+
+**Erro de interpretação radiográfica:** imagens incompletas ou artefatos podem simular lesões, e pequenas fraturas podem passar despercebidas; envolver radiologia pediátrica quando possível.
+
+A investigação médica não deve ser abandonada por uma suspeita de maus-tratos, nem a proteção deve ser abandonada por se encontrar uma condição coexistente. As duas linhas de raciocínio podem correr em paralelo.
+
+### 23.3. Lesão abdominal não evidente
+Trauma abdominal pode ser acompanhado de sinais externos discretos. Persistência de dor, defesa, vômitos, choque, hematúria ou alterações laboratoriais relevantes justificam avaliar órgãos sólidos e vísceras ocas. Em paciente instável, ressuscitação e equipe cirúrgica pediátrica têm prioridade; em paciente estável, imagem e observação serão escolhidas conforme exames e suspeita. O uso da tomografia requer proporcionalidade por radiação, mas não deve ser omitido quando clinicamente indispensável.
+
+### 23.4. Suspeita de traumatismo craniano
+A apresentação clínica pode ser inespecífica em lactentes, como irritabilidade, dificuldades de alimentação, alterações respiratórias, sonolência e vômitos. Convulsões, rebaixamento e sinais de hipertensão intracraniana impõem avaliação imediata. Neuroimagem, avaliação oftalmológica e exames neurológicos precisam de indicação contextual. A expressão “trauma craniano abusivo” descreve hipótese clínica; a determinação de sua causa requer análise integral e, quando cabível, investigação pericial. A equipe deve documentar achados em vez de conclusões sobre autoria.
+
+## 24. Cuidado diante de revelação espontânea: exercício de técnica de entrevista
+
+Um atendimento adequado não precisa extrair detalhes que a criança não deseja repetir. Algumas habilidades são especialmente importantes:
+
+1. Permitir que a criança fale em seu próprio ritmo, sem interromper com perguntas sucessivas.
+2. Utilizar perguntas abertas apenas quando clinicamente necessárias, como “Você quer me contar o que está acontecendo?”.
+3. Evitar alternativas sugestivas, tais como identificar antecipadamente um suposto agressor.
+4. Não prometer segredo absoluto.
+5. Demonstrar acolhimento sem emitir julgamento sobre familiares.
+6. Explicar o plano com palavras compreensíveis para a idade.
+7. Registrar a revelação tal como ocorreu e limitar acesso aos dados.
+8. Planejar a proteção antes de comunicar fatos a acompanhantes com potencial de risco.
+
+**Exemplo didático de anotação clínica adequada:**
+
+> Paciente, 12 anos, atendido em sala reservada, relata espontaneamente: “Tenho medo de voltar para casa hoje”. Informa que tem receio de determinado adulto. Não foram realizadas perguntas investigativas detalhadas. Apresenta-se consciente e orientado, choroso, sem instabilidade clínica. Equipe multiprofissional acionada, avaliação de segurança em andamento; caso comunicado à rede protetiva conforme protocolo. Alta não decidida até identificação de destino seguro.
+
+Esse modelo é fictício. Em registros reais, acrescentar horários, exame físico completo, decisões, profissionais contatados, comunicação formal e plano de acompanhamento; não utilizar frases padronizadas que não reflitam fatos observados.
+
+### 24.1. Se o acompanhante interfere na conversa
+Caso interrompa continuamente, tente controlar o relato ou impeça avaliação necessária, registrar o comportamento **objetivamente**, sem equipará-lo isoladamente a prova de violência. Buscar privacidade de maneira não confrontativa e apoiada em protocolo institucional. Priorizar a segurança da criança e da equipe se houver ameaça.
+
+### 24.2. Se a criança não quer falar
+O silêncio não confirma nem exclui violência. Não pressionar, não barganhar e não utilizar técnica sugestiva. Tratar as necessidades clínicas identificadas, registrar a limitação e planejar avaliação adequada por equipe capacitada e rede protetiva quando houver suspeita.
+
+### 24.3. Se há deficiência ou dificuldade de comunicação
+Garantir intérprete ou recursos acessíveis adequados, tempo maior e apoio apropriado, evitando presumir incapacidade para relatar. A Lei 13.431/2017 protege a adaptação de linguagem e condições de escuta. Atenção a dependência do cuidador, que pode dificultar entrevista privada sem suporte.
+
+## 25. Tomada de decisão clínica em violência sexual: perguntas fundamentais
+
+O profissional deve conhecer a sequência do atendimento sem reduzir o cuidado a um formulário. A abordagem completa precisa distinguir **exposição, risco atual, janela de profilaxia, dano psicológico e proteção social**.
+
+### 25.1. Perguntas que mudam a conduta assistencial
+- Quando ocorreu a exposição mais recente? Há exposição continuada?
+- Existe risco de nova violência ou de contato com a pessoa supostamente envolvida?
+- Quais sintomas ou lesões precisam de tratamento agora?
+- A idade, o desenvolvimento puberal e o tipo de exposição indicam avaliação de gravidez?
+- Há indicação de PEP HIV? Há disponibilidade imediata de serviço que a forneça?
+- Qual o estado vacinal, particularmente para hepatite B?
+- Há testes, vacinas e profilaxias para outras IST segundo protocolo?
+- Que pessoa adulta é confiável e qual equipe acompanhará?
+- O paciente está sob risco de autolesão ou suicídio?
+- Como garantir sigilo e continuidade sem exigir repetição traumática da história?
+
+### 25.2. A janela de 72 horas e seu significado
+No protocolo do Ministério da Saúde, PEP ao HIV é iniciada o mais rapidamente possível e, quando indicada, dentro de 72 horas, por 28 dias. Essa janela se refere à **efetividade da profilaxia antiviral**, não ao direito de ser atendido. Pacientes que chegam mais tarde devem ser avaliados quanto a todas as outras necessidades. A equipe não pode transformar “mais de 72 horas” em justificativa de recusa.
+
+### 25.3. Exames e seguimento
+A avaliação inicial pode incluir testagem de HIV, hepatites e sífilis, verificação de imunização e exames adicionais de acordo com a exposição e a idade. Testes iniciais não excluem infecção recente por causa de janelas diagnósticas; planejar retestagem no calendário do protocolo. Em casos pediátricos, a indicação, método de coleta e interpretação requerem cuidado especializado. O prontuário precisa informar **quando** o acompanhamento deve acontecer, em **qual** serviço e quem fará busca ativa se houver perda de seguimento.
+
+### 25.4. Proteção à saúde mental
+Evitar tratar todo sofrimento com medicação sem avaliação específica. Oferecer escuta, segurança, suporte familiar não agressor, acompanhamento psicológico baseado em necessidades e avaliação de risco suicida. Reações agudas podem incluir alterações de sono, irritabilidade, medo, culpa, dor somática e retraimento. O cuidado deve ser longitudinal e respeitar o desenvolvimento da criança.
+
+## 26. Interfaces com atenção primária, escola e assistência social
+
+### 26.1. Papel da APS
+A UBS pode ser a primeira porta de entrada e, com frequência, é o principal vínculo longitudinal. Sua responsabilidade inclui perceber alteração de padrão de consultas, comportamento e crescimento; ofertar acolhimento; ativar rede de atenção especializada; acompanhar condições crônicas e saúde mental; e monitorar se encaminhamentos se concretizaram. Mesmo após atendimento hospitalar, retorno à APS pode ser essencial para continuidade.
+
+### 26.2. Articulação com a assistência social
+Famílias podem precisar de acesso a alimentação, renda, acolhimento, transporte, orientação social e proteção. Recursos como CRAS e CREAS cumprem papéis distintos na rede socioassistencial; fluxos dependem do território. O profissional de saúde deve encaminhar de modo informado, não apenas fornecer um endereço. Quando houver risco, proteção e medidas urgentes devem ser acionadas conforme instâncias competentes.
+
+### 26.3. Relação com escola
+Professores podem identificar alterações comportamentais e dificuldades acadêmicas, mas o compartilhamento de dados deve ser restrito ao necessário e obedecer protocolos de proteção e confidencialidade. A criança não deve ser obrigada a narrar o evento sucessivamente para justificar apoio escolar.
+
+### 26.4. Comunicação entre serviços
+Uma passagem de caso útil deve conter:
+- identificação segura do paciente e do profissional que encaminha;
+- motivo do encaminhamento em linguagem clínica;
+- risco de reexposição e medidas de segurança;
+- exames e tratamentos já realizados;
+- profilaxias iniciadas ou pendentes;
+- comunicações já efetivadas;
+- responsável protetor e contatos seguros, quando legítimos;
+- prazo para avaliação;
+- mecanismo de confirmação do recebimento pelo serviço.
+
+Esse resumo não precisa incluir detalhes íntimos irrelevantes para o cuidado.
+
+## 27. Situações especiais que exigem raciocínio diferente
+
+### 27.1. Crianças com deficiência
+Sinais de dor, sofrimento ou violência podem surgir como agitação, regressão funcional, distúrbios de sono ou recusa de determinados cuidados. A dependência de adultos para mobilidade, higiene ou comunicação pode ampliar vulnerabilidade. Atenção para não considerar comunicação limitada como incapacidade de expressão; utilizar recursos de comunicação acessíveis.
+
+### 27.2. Adolescente em relacionamento afetivo
+O fato de ter um relacionamento não elimina possibilidade de coerção, exploração ou violência. Investigar segurança, autonomia e saúde sexual com abordagem respeitosa, observando o marco legal aplicável. O cuidado deve fugir tanto da normalização de coerção quanto de pressupostos automáticos sobre as circunstâncias individuais.
+
+### 27.3. Criança com doença crônica
+Lesões cutâneas, medicamentos anticoagulantes, alterações hematológicas ou quedas relacionadas a deficiência motora podem criar diagnósticos diferenciais. Conhecer a doença prévia evita atribuição automática de culpa; ainda assim, uma doença coexistente não elimina a possibilidade de violência. Também pode haver negligência relacionada a tratamentos essenciais — avaliar acesso real, recursos e suporte.
+
+### 27.4. Crianças indígenas, migrantes e outras populações com barreiras de acesso
+Língua, deslocamento, receio institucional e experiências de discriminação podem dificultar o atendimento. Respeitar especificidades culturais, sem relativizar direitos fundamentais ou criar suspeita de violência exclusivamente por identidade cultural. Quando indicado, envolver mediadores qualificados, equipes territoriais e rede de proteção.
+
+### 27.5. Gestação na adolescência
+Acolher sem julgamento, ofertar pré-natal e proteção e avaliar circunstâncias de violência ou coerção quando pertinente. Questões de autonomia, segredo e compartilhamento com responsáveis precisam ser analisadas conforme a legislação, o risco e o melhor interesse da adolescente. Não perder oportunidade de avaliar violência sexual e suporte psicossocial.
+
+## 28. Checklist de segurança da alta hospitalar
+
+**Não basta escrever “paciente estável”.** Antes da saída, registrar:
+
+| Pergunta | Evidência esperada no prontuário |
+|---|---|
+| Condição médica permite alta? | Sinais vitais, dor, lesões, exames pendentes, tratamento |
+| Há risco imediato de repetição? | Avaliação de segurança contextual, sem presumir culpados |
+| Existe cuidador seguro? | Pessoa identificada e capacidade concreta de proteção |
+| Proteção foi acionada? | Órgão, profissional, horário, protocolo/registro |
+| Há providência sanitária? | Notificação realizada ou fluxo documentado |
+| Como serão feitos retornos? | Local, prazo, equipe e forma de contato seguro |
+| A criança sabe a quem pedir ajuda? | Orientação compatível com idade e desenvolvimento |
+| O sigilo está protegido? | Orientação à equipe sobre dados e compartilhamento |
+
+Quando segurança não puder ser garantida, envolver rede especializada e autoridade competente antes da saída, em vez de transferir à criança o ônus de resolver a situação.
+
+## 29. Comunicação e prevenção para familiares não agressores
+
+A intervenção pode incluir aconselhamento sobre parentalidade positiva, apoio ao desenvolvimento infantil e alternativas ao castigo físico. Conversas preventivas devem ocorrer também em consultas de rotina, quando apropriadas:
+- orientar sobre desenvolvimento esperado e segurança doméstica;
+- apoiar manejo de choro, estresse e dificuldades com o sono do bebê;
+- ensinar estratégias não violentas de estabelecimento de limites;
+- identificar exaustão e necessidades de apoio dos cuidadores;
+- facilitar acesso a serviços de saúde mental e assistência social;
+- reconhecer sinais de alerta e formas seguras de buscar ajuda.
+
+Prevenção não se limita a mensagens de conscientização: depende de serviços acessíveis e de adultos com capacidade de resposta protetiva.
+
+## 30. Casos adicionais de integração entre diagnóstico e proteção
+
+### Caso 6 — Sintomas neurológicos sem lesões externas
+**Apresentação:** bebê de 7 meses chega com sonolência, episódios de vômitos e convulsão. Não há equimoses visíveis. Um acompanhante relata queda sem descrição clara e atraso na procura de atendimento.
+
+**Raciocínio:** via aérea, respiração e circulação são prioridade. Diagnósticos incluem infecção do SNC, distúrbio metabólico, intoxicação, epilepsia, acidente e trauma craniano possivelmente infligido. Ausência de marca externa não exclui lesão intracraniana.
+
+**Exames e conduta:** glicemia imediata, avaliação clínica e neurológica, neuroimagem quando indicada, exames complementares conforme diferenciais e serviço especializado. Investigar possíveis lesões concomitantes, documentar narrativa e avaliação de segurança, acionando rede protetiva se a suspeita persistir. **Por que importa:** a hipótese de violência não deve impedir investigação de outras causas urgentes, e vice-versa.
+
+### Caso 7 — Abuso revelado fora da janela de profilaxia
+**Apresentação:** criança de 10 anos conta a profissional de saúde episódio de violência sexual ocorrido meses antes. Não há queixa física hoje, mas apresenta pesadelos e medo de voltar a determinado ambiente.
+
+**Raciocínio:** a janela de PEP ao HIV já passou, mas isso não torna o episódio irrelevante para a saúde. O foco inclui segurança atual, abordagem de sofrimento mental, avaliação dirigida de IST segundo indicação pediátrica, relato espontâneo e medidas protetivas.
+
+**Conduta:** acolher sem interrogatório, registrar, comunicar e notificar conforme fluxo, evitar retorno a ambiente inseguro e articular acompanhamento especializado. **Por que importa:** o cuidado persiste independentemente do tempo de revelação.
+
+### Caso 8 — Lesões cutâneas em criança com coagulopatia
+**Apresentação:** menino de 4 anos com equimoses recorrentes e epistaxes apresenta lesões de membros, com história familiar de sangramento fácil.
+
+**Raciocínio:** doença hemorrágica deve ser considerada e investigada. A distribuição e história clínica podem favorecer coagulopatia, mas a presença de doença de base não permite ignorar discrepâncias ou outros achados suspeitos.
+
+**Exames e conduta:** hemograma/plaquetas, coagulação e avaliação hematológica orientada; exame integral, registro e decisão protetiva dependente do conjunto clínico, não de um único diagnóstico. **Por que importa:** evitar tanto acusações precipitadas quanto falsos descartes.
+
+### Caso 9 — Adolescente com ameaça de divulgação de imagens íntimas
+**Apresentação:** adolescente de 16 anos refere que pessoa conhecida ameaça divulgar imagens íntimas; apresenta ansiedade intensa e faltas escolares. Nega inicialmente risco suicida, mas relata acesso a meios de autoagressão.
+
+**Raciocínio:** avaliar risco atual de autolesão, coerção e exposição continuada; não exigir que mostre ou envie imagens à equipe para legitimar relato.
+
+**Conduta:** atendimento emocional, plano de segurança, revisão de risco suicida, orientação sobre suporte e acionamento de proteção conforme a situação, sigilo e legislação. Não armazenar material íntimo em aplicativos pessoais. **Por que importa:** violência pode ocorrer sem contato físico e ainda exigir resposta de urgência.
+
+## 31. Questões avançadas adicionais
+
+### Questão 9 — Estudo radiográfico do esqueleto
+Menino de 11 meses apresenta fratura sem mecanismo plausível e suspeita relevante de violência física. Sobre o estudo esquelético:
+
+A) Uma radiografia panorâmica é suficiente para excluir fraturas ocultas.  
+B) Um estudo esquelético tecnicamente adequado pode detectar fraturas ocultas.  
+C) É contraindicado considerar repetição posterior em todo caso.  
+D) Um exame normal confirma acidente.
+
+**Gabarito: B.** A está errada porque imagem panorâmica única não substitui estudo esquelético apropriado. C é falsa: repetição após aproximadamente duas semanas pode ser indicada em casos selecionados. D confunde ausência de achado com confirmação de etiologia. **Mini-revisão:** investigações radiológicas devem considerar idade, probabilidade pré-teste e qualidade técnica.
+
+### Questão 10 — Lesão genital ausente
+Adolescente relata violência sexual, mas o exame físico não identifica lesões. Qual conclusão é correta?
+
+A) A ausência de lesão exclui o relato.  
+B) O exame deve ser repetido por múltiplos profissionais até aparecer lesão.  
+C) A ausência de lesões não afasta violência, sendo necessário cuidado e proteção apropriados.  
+D) Sem lesão não há necessidade de avaliar IST.
+
+**Gabarito: C.** A é incorreta porque um exame normal não exclui violência. B favorece revitimização. D ignora riscos dependentes da exposição, e não apenas do aspecto físico. **Mini-revisão:** o atendimento depende de história, riscos e segurança, não de “prova” no exame genital.
+
+### Questão 11 — Responsabilidade após atendimento
+Paciente com suspeita de violência é clinicamente estável, mas a equipe suspeita de risco ao retornar para casa. A melhor conduta é:
+
+A) Dar alta imediatamente porque os sinais vitais são normais.  
+B) Articular avaliação de segurança e proteção antes de definir destino.  
+C) Entregar apenas um telefone de contato e encerrar atendimento.  
+D) Exigir confissão do suposto autor para fazer a comunicação.
+
+**Gabarito: B.** A reduz o conceito de segurança ao estado clínico. C é encaminhamento passivo insuficiente diante de risco imediato. D cria exigência sem base clínica ou legal. **Mini-revisão:** estabilidade clínica e segurança social são eixos diferentes de decisão.
+
+### Questão 12 — Trauma versus fragilidade óssea
+Em lactente com múltiplas fraturas e suspeita de abuso, qual abordagem é adequada?
+
+A) Excluir violência caso se identifique deficiência de vitamina D.  
+B) Ignorar doenças metabólicas porque suspeita de violência é suficiente.  
+C) Conduzir investigação integrada de trauma, fragilidade óssea e segurança.  
+D) Encerrar investigação após radiografia inicial normal.
+
+**Gabarito: C.** A e B criam falsas dicotomias; condições podem coexistir. D desconhece limites do exame e necessidade de acompanhamento em casos selecionados. **Mini-revisão:** o trabalho é formular hipóteses concorrentes e tratá-las com prudência.
+
+### Questão 13 — Relação entre notificação e consentimento
+Profissional identifica suspeita fundamentada de violência prevista na norma de notificação. A família não deseja “envolver órgãos externos”. Qual afirmação é correta?
+
+A) O consentimento familiar é sempre requisito para notificação compulsória.  
+B) As obrigações legais de notificação e comunicação protetiva não dependem de autorização familiar quando aplicáveis.  
+C) O profissional deve omitir o achado do prontuário.  
+D) Toda ficha SINAN é automaticamente equivalente a denúncia penal.
+
+**Gabarito: B.** A e C impedem cumprimento de deveres. D confunde vigilância em saúde com persecução penal. **Mini-revisão:** explicar medidas, proteger dados e seguir normas de comunicação.
+
+### Questão 14 — Acolhimento e depoimento especial
+Criança de 8 anos é recebida em UBS após relato de violência na escola. Qual prática evita revitimização?
+
+A) Solicitar que repita sua história integral a cada integrante da equipe.  
+B) Fazer perguntas sugestivas para verificar consistência.  
+C) Obter apenas informações clinicamente necessárias e articular a rede preparada para escuta especializada/depoimento especial.  
+D) Proibir qualquer fala espontânea da criança.
+
+**Gabarito: C.** A multiplica exposição desnecessária; B compromete escuta; D impede acolhimento de revelação espontânea. **Mini-revisão:** o limite da entrevista clínica protege a criança sem impedir o atendimento.
+
+## 32. Auditoria adicional após aprofundamento
+
+Este adendo transforma a apostila em um material mais completo sobre clínica, diagnóstico diferencial, entrevista e seguimento, mas **não substitui a revisão científica e jurídica antes de disponibilizar ao público**.
+
+### Verificações finais indispensáveis
+1. Conferir validade dos protocolos brasileiros de violência sexual e profilaxias pediátricas na data de publicação.
+2. Validar critérios de estudo esquelético e neuroimagem com pediatria/radiologia; não transportar algoritmos estadunidenses sem contexto local.
+3. Revisar exemplos de prontuário com equipe de proteção de dados e assessoria jurídica.
+4. Revisar fluxos de notificação e comunicação territorial, incluindo canais de urgência.
+5. Examinar se casos clínicos preservam confidencialidade e não envolvem detalhes sensíveis desnecessários.
+6. Incluir figuras apenas de fonte autorizada ou geradas como diagramas didáticos originais.
+7. Testar se o aluno consegue resolver os 14 itens utilizando somente o corpo da apostila.
+8. Conferir acessibilidade, responsividade e indexação no formato nativo do site.
+9. Manter registro de revisão das referências e responsáveis pelo parecer médico.
+
+**Nota:** Este arquivo permanece identificado como rascunho editorial da LURIA. Não há certificação de prontidão nem publicação na interface.
