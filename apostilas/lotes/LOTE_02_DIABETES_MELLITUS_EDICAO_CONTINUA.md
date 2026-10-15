@@ -388,6 +388,83 @@ Neuropatia sensitiva provoca perda de percepção de trauma por sapatos, calor e
 
 Infarto, AVC, doença arterial periférica e insuficiência cardíaca são causas importantes de morbimortalidade. O controle envolve lipídios, pressão, tabagismo, alimentação, função renal e medicamentos de proteção de órgãos. Diabetes pode coexistir com angina pouco típica, neuropatia autonômica e doença coronariana silenciosa; indicação de testes depende de sintomas, risco e protocolo, não de rastreamento universal invasivo. Quando há dispneia progressiva, edema e ortopneia, avaliar insuficiência cardíaca mesmo com glicemia controlada.
 
+
+### 7.3 Rastrear doença renal do diabetes: dois exames complementares e três decisões distintas
+
+**Por que medir creatinina e albuminúria juntas?** A estimativa de filtração glomerular (TFGe) reflete a função depuradora dos rins; a **razão albumina/creatinina urinária (RAC)** identifica aumento da excreção de albumina relativamente à concentração de creatinina na amostra. Algumas pessoas apresentam perda de TFGe sem albuminúria acentuada; outras têm albuminúria persistente com TFGe preservada. Solicitar apenas creatinina pode perder doença renal inicial, enquanto solicitar só albuminúria não descreve o estágio funcional.
+
+A Diretriz da Sociedade Brasileira de Diabetes — edição 2026, capítulo de Doença Renal do Diabetes (última revisão identificada no próprio portal em **julho de 2024**) — recomenda rastrear com **RAC em amostra isolada de urina e TFGe calculada pela equação CKD-EPI**: **desde o diagnóstico no DM2 e após aproximadamente cinco anos de DM1**, com repetição **uma a quatro vezes ao ano** conforme risco e evolução. Em crianças, gestantes, pacientes com doença renal muito avançada ou outras particularidades, os calendários e equações podem ser diferentes. O ano da coletânea SBD e o ano da última revisão de um capítulo não devem ser confundidos com uma atualização integral em 2026.
+
+| Categoria de RAC (mg/g) | Nomenclatura atual | Significado clínico |
+| --- | --- | --- |
+| **A1: <30** | Normal ou levemente aumentada | Não exclui redução de TFGe ou outra doença renal |
+| **A2: 30–300** | Moderadamente aumentada | Aumenta risco de progressão renal e cardiovascular; confirmar persistência |
+| **A3: >300** | Acentuadamente aumentada | Alto risco relativo; exige estratificação, tratamento de fatores e avaliação especializada conforme caso |
+
+| Categoria funcional de TFGe (mL/min/1,73 m²) | Descrição | Atenção |
+| --- | --- | --- |
+| **G1 ≥90** | Filtração normal ou elevada | DRD pode existir se RAC persistente alterada |
+| **G2 60–89** | Redução leve | Isoladamente, em alguns adultos, não estabelece DRC sem marcador de dano |
+| **G3a 45–59** | Redução leve a moderada | Revisar doses, risco cardiovascular e potássio |
+| **G3b 30–44** | Redução moderada a grave | Aumenta necessidade de rever metformina, sulfonilureias e outros agentes |
+| **G4 15–29** | Redução grave | Planejar seguimento nefrológico e prevenir toxicidade |
+| **G5 <15** | Falência renal | Avaliação especializada, inclusive de terapia renal substitutiva quando indicada |
+
+Essa matriz é uma **combinação de duas variáveis**, não dois sistemas concorrentes. A pessoa pode ser **G3a-A1**, com função reduzida sem albuminúria, ou **G1-A3**, com filtração aparentemente normal e perda importante de albumina. O risco de progressão geralmente aumenta com TFGe menor e RAC maior. Um único resultado alterado não define automaticamente doença renal crônica: requer persistência por **pelo menos três meses**, ou outra evidência adequada de cronicidade.
+
+**Como confirmar:** a albuminúria varia por exercício intenso, infecção urinária, febre, insuficiência cardíaca aguda, hiperglicemia importante, menstruação e hipertensão descompensada. A SBD recomenda confirmar RAC alterada em **pelo menos duas de três amostras em três a seis meses**, salvo necessidade de conduta antecipada por risco. Evite interpretar uma amostra isolada com RAC 45 mg/g, obtida durante ITU febril, como diagnóstico definitivo de nefropatia irreversível.
+
+**Caso quantitativo:** homem de 56 anos com DM2, TFGe de 52 mL/min/1,73 m² e RAC de 180 mg/g em duas amostras separadas, sem febre ou ITU. Classificação **G3a-A2**, indicando dano renal persistente e risco cardiorrenal; confirmar histórico temporal, PA, medicamentos e causas concorrentes. **Caso oposto:** mulher de 43 anos com DM2, TFGe 95 mL/min/1,73 m² e RAC 680 mg/g persistente é G1-A3; função aparentemente preservada não equivale a rim saudável.
+
+#### 7.3.1 Rastrear não é atribuir automaticamente toda doença renal ao diabetes
+
+A presença de diabetes e creatinina elevada **não prova** doença renal causada pelo diabetes. Suspeite de nefropatia não diabética ou adicional quando há queda abrupta de função, sedimento urinário ativo (hematúria com cilindros), proteinúria nefrótica abrupta, doença sistêmica, DM1 de curta duração com lesão renal intensa, rápido declínio de TFGe ou aumento expressivo da creatinina logo após fármaco. A SBD menciona declínio **>4 mL/min/1,73 m²/ano** como pista de pior prognóstico e alerta para investigação quando é acelerado. Nesses casos, ponderar exame de urina, ultrassonografia, investigação imunológica e encaminhamento nefrológico, não apenas intensificação de hipoglicemiante.
+
+### 7.4 Terapia renal protetora: distinguir controle glicêmico, pressão e desfechos
+
+A proteção renal tem **camadas complementares**: controle glicêmico sem hipoglicemia, tratamento da pressão arterial, abandono do tabaco, dieta adequada ao contexto e fármacos cuja evidência reduz progressão de doença renal e/ou hospitalização cardiovascular. Não utilizar a HbA1c como única medida de sucesso; RAC pode diminuir enquanto função renal ainda precisa de acompanhamento.
+
+**IECA/BRA (bloqueio do sistema renina-angiotensina):** quando há **hipertensão associada a albuminúria**, a ADA 2026 recomenda IECA ou BRA, com recomendação particularmente forte em albuminúria A3 ou TFGe <60. A diretriz da SBD de Doença Renal do Diabetes, última revisão 2024 na coletânea 2026, usa indicação mais abrangente em pessoas com RAC >30 mg/g **independentemente da pressão arterial**. Portanto, **há diferença de formulação entre diretrizes** e não se deve apresentá-las como idênticas. A decisão em pessoa normotensa exige avaliação clínica, risco de hipotensão e referencial do serviço; não prescrever IECA para toda pessoa sem albuminúria apenas como “proteção obrigatória”. Em qualquer início/titulação, verificar **creatinina, TFGe, potássio, PA e possibilidade de gestação**. Não combinar IECA + BRA para intensificar bloqueio: aumenta riscos sem benefício comprovado de rotina.
+
+**Inibidores de SGLT2:** em DM2 com DRC e indicação apropriada, estudos com diferentes agentes mostraram redução de determinados eventos renais e cardíacos **independentemente de alteração expressiva da HbA1c**. Uma queda inicial discreta de TFGe pode refletir mudança hemodinâmica glomerular, mas queda expressiva, hipotensão, oligúria ou intercorrência aguda exigem investigação; não rotular toda deterioração como esperada. Os **limites de TFGe para iniciar** dependem da **molécula, indicação e bula/protocolo vigente**; o capítulo de DRD da SBD menciona limites distintos para empagliflozina, dapagliflozina e canagliflozina, portanto não inventar um limiar universal. O paciente precisa conhecer risco de desidratação e **cetoacidose com glicemia não muito elevada** em doença intercorrente ou jejum prolongado.
+
+**Agonistas do GLP-1 e risco cardiovascular:** em pessoas com obesidade, aterosclerose ou DRC, algumas moléculas têm evidências de benefícios adicionais; a indicação não pode ser inferida apenas pelo nome da classe. Avaliar qual fármaco foi estudado, meta de peso, tolerabilidade gastrointestinal e risco de desidratação. Em paciente com retinopatia grave e rápida redução de HbA1c, a equipe deve acompanhar retina de perto, independentemente da estratégia de intensificação.
+
+**Segurança conforme função renal:** metformina requer redução/avaliação em TFGe 30–44 e é contraindicada abaixo de 30 em geral; sulfonilureias podem causar hipoglicemia prolongada por depuração reduzida — o capítulo renal da SBD alerta particularmente para **glibenclamida com TFGe <60**. Em pacientes com doença renal avançada ou diálise, terapia deve ser refeita por especialista, considerando fármacos, dose, refeição e monitorização. Em gestantes, IECA/BRA e alguns outros agentes são inadequados; não transpor o esquema de adulto não gestante para o pré-natal.
+
+### 7.5 Retina e pés: a periodicidade muda conforme tipo de diabetes e risco
+
+O diabetes pode afetar os olhos **sem causar visão embaçada inicialmente** e os pés **sem causar dor**, quando há perda de sensibilidade protetora. O objetivo do rastreamento é agir **antes** de perda visual, infecção de úlcera, necrose ou amputação. A ADA *Standards of Care 2026*, seção 12, recomenda:
+
+| Avaliação | DM2 | DM1 adulto | Quando antecipar/intensificar |
+| --- | --- | --- | --- |
+| **Retina — exame dilatado por profissional habilitado** | Desde o diagnóstico | Em geral após 5 anos de doença | Retinopatia prévia, progressão, alteração visual, gestação prévia ao controle, piora rápida do perfil |
+| **Neuropatia periférica** | Desde o diagnóstico e pelo menos anualmente | Após 5 anos e pelo menos anualmente | Sintomas, dor neuropática, perda de equilíbrio, úlcera |
+| **Pés — avaliação completa** | Pelo menos anual | Pelo menos anual | Inspecionar em **todas as consultas** se perda de sensibilidade ou úlcera/amputação prévia |
+| **Rim — RAC e TFGe** | Desde o diagnóstico | Após 5 anos | Repetição 1–4 vezes/ano por risco e alteração, conforme SBD |
+
+O exame de retina pode ser feito por oftalmologista/optometrista habilitado conforme local, com retinografia validada e leitura qualificada em programas estruturados. Após exames anuais normais e controle metabólico estável, a ADA permite considerar intervalo de **1–2 anos** em pessoas selecionadas; quem já apresenta retinopatia precisa ao menos de avaliação anual, muitas vezes mais frequente. Uma retinografia ilegível ou suspeita de edema macular não é “rastreio normal”. Dor ocular, perda súbita de visão, moscas volantes com suspeita de hemorragia e descolamento de retina são sinais de avaliação urgente.
+
+#### 7.5.1 Monofilamento de 10 g e o risco de pé diabético
+
+Inspecionar pele, espaços interdigitais, unhas, deformidades, calçados, calosidades, temperatura e rachaduras; palpar pulsos pedioso e tibial posterior. Testar **monofilamento de 10 g** em pontos padronizados e associar pelo menos **outro teste neurológico** (vibração com diapasão de 128 Hz, temperatura ou picada leve). Monofilamento isolado não descreve todos os tipos de fibra e a neuropatia é diagnóstico diferencial de outras causas, como deficiência de vitamina B12, hipotireoidismo e intoxicações.
+
+| Risco de ulceração (IWGDF, resumido na ADA 2026) | Perfil | Reavaliação orientativa |
+| --- | --- | --- |
+| **0 — muito baixo** | Sem perda de sensibilidade protetora e sem doença arterial periférica | Anual |
+| **1 — baixo** | Perda de sensibilidade **ou** doença arterial periférica | A cada 6–12 meses |
+| **2 — moderado** | Perda de sensibilidade + DAP, ou + deformidade; ou DAP + deformidade | A cada 3–6 meses |
+| **3 — alto** | Perda de sensibilidade ou DAP com úlcera/amputação prévia ou insuficiência renal | A cada 1–3 meses |
+
+A frequência é **orientativa** e deve ser individualizada. Dor isquêmica em repouso, necrose, infecção profunda, febre ou rápida expansão de lesão exigem urgência, não seguimento trimestral. O pé vermelho, quente e inchado com pouca dor em pessoa neuropática pode sugerir **Charcot agudo**; proteger contra carga e buscar avaliação especializada, evitando confundir com torção inocente. Em suspeita de **doença arterial periférica**, investigar claudicação, dor isquêmica, pulsos reduzidos e, quando indicado, índice tornozelo-braquial com pressão de hálux, sabendo que calcificação arterial no diabetes pode produzir medida falsamente alta.
+
+#### 7.5.2 Educação útil para o paciente, sem alarmismo
+
+Orientar exame diário da pele e entre os dedos com espelho ou cuidador, secagem cuidadosa, evitar andar descalço, verificar temperatura da água com mão/cotovelos e inspecionar interior do sapato antes de calçar. Pessoas com neuropatia podem não perceber bolhas ou corpo estranho no calçado. Calçado apropriado é medida preventiva, mas não substitui circulação, controle metabólico nem tratamento de úlcera ativa. O paciente deve procurar atendimento diante de ferida, secreção, odor, vermelhidão crescente, edema importante ou alteração súbita de cor/temperatura. Nunca recomendar remoção doméstica profunda de calos com lâminas em pé insensível.
+
+**Referências e diferenças de atualização:** Sociedade Brasileira de Diabetes, *Avaliação e tratamento da doença renal do diabetes*, Diretriz Ed. 2026, capítulo revisado em 04/07/2024: https://diretriz.diabetes.org.br/avaliacao-e-tratamento-da-doenca-renal-do-diabetes-2/ . ADA, *Retinopathy, Neuropathy, and Foot Care—2026*, DOI 10.2337/dc26-S012, https://diabetesjournals.org/care/article/49/Supplement_1/S261/163919/12-Retinopathy-Neuropathy-and-Foot-Care-Standards . ADA, *Cardiovascular Disease and Risk Management—2026*, DOI 10.2337/dc26-S010, https://diabetesjournals.org/care/article/49/Supplement_1/S216/163933/10-Cardiovascular-Disease-and-Risk-Management . Critérios de acesso/dispensação pelo SUS são uma camada adicional e requerem verificação no PCDT vigente.
+
+
 ## 8. Pessoas idosas, gestação, internação e cirurgia
 
 ### 8.1 Saúde da pessoa idosa, internação, gestação e transições de cuidado
@@ -490,6 +567,16 @@ Duas mulheres de 81 anos apresentam HbA1c de 7,8%. A primeira vive de modo indep
 Homem de 58 anos, DM2 em uso de iSGLT2, está no pós-operatório e há dois dias quase não se alimenta. Chega com náuseas, respiração profunda, pH 7,21, bicarbonato 12 mmol/L, beta-hidroxibutirato 5,2 mmol/L e glicose 188 mg/dL. **Hipótese:** CAD euglicêmica relacionada a deficiência relativa de insulina em contexto de estresse/jejum e iSGLT2, com investigação de precipitantes. **Raciocínio:** diabetes conhecido satisfaz o componente D, beta-hidroxibutirato o componente K e pH/bicarbonato o componente A; a glicose inferior a 200 não exclui CAD. **Exames:** potássio, sódio, ureia/creatinina, gasometria seriada, ECG, investigação de infecção e volemia. **Conduta:** urgência hospitalar, reposição de fluidos/eletrólitos guiada por clínica e função renal, insulina em ambiente monitorado quando potássio permite e glicose suplementar quando necessária para completar correção da cetose. **Por que este caso importa:** reconhecer a tríade CAD evita falsa segurança pelo valor de glicemia.
 
 
+
+### Caso 13 — Um paciente com albuminúria e TFGe preservada
+
+Homem de 51 anos, DM2 há sete anos e hipertensão, faz exames: HbA1c 7,1%, creatinina que gera TFGe de 96 mL/min/1,73 m² e RAC 520 mg/g. Repete RAC em semanas sem infecção e mantém 490 mg/g. **Hipóteses:** doença renal do diabetes com albuminúria importante, sem excluir outras causas. **Raciocínio:** filtração G1 não significa rim normal quando albuminúria A3 é persistente; risco cardiorrenal justifica rever PA, terapias protetoras e etiologia. **Exames:** repetir/acompanhar TFGe, RAC, urina tipo 1 e sedimento, PA, lipídios, avaliação oftalmológica; buscar outras nefropatias se hematúria ou evolução atípica. **Conduta:** tratamento renal protetor de acordo com diretrizes e elegibilidade, monitorar K e creatinina ao iniciar IECA/BRA, avaliar iSGLT2 adequado e encaminhar conforme risco. **Por que importa:** preservar a regra “RAC + TFGe” evita falsa alta por creatinina normal.
+
+### Caso 14 — Úlcera pequena, perda de sensibilidade e circulação deficiente
+
+Mulher de 68 anos com DM2, neuropatia e doença arterial periférica tem lesão plantar de 1,2 cm sem dor significativa, bordas calosas, pele fria distalmente e pulsos reduzidos. **Hipóteses:** úlcera neuropática com componente isquêmico, risco de infecção profunda; avaliar osteomielite conforme sinais e duração. **Raciocínio:** ausência de dor não garante gravidade baixa; a perfusão limitada piora cicatrização e pode mascarar sinais inflamatórios. **Exames:** exame vascular/neurológico, pulsos, teste de sensibilidade protetora, avaliação de profundidade e infecção, índices vasculares adequados; cultura somente quando há suspeita de infecção e coleta apropriada. **Conduta:** avaliação especializada prioritária de pé diabético e perfusão, alívio de carga, plano de curativo e investigação de infecção/isquemia; não prescrever antibiótico apenas porque existe úlcera sem sinais de infecção clínica. **Por que importa:** controle de carga e circulação são tão importantes quanto glicemia.
+
+
 ## 10. Questões autorais comentadas
 
 ### Questão 3
@@ -582,6 +669,23 @@ A) Intensificar até HbA1c <5,5%. B) Manter tudo porque a HbA1c é boa. C) Reava
 Paciente com DM1 recupera-se de CAD e reinicia dieta; a insulina IV será encerrada. Qual princípio evita recorrência?
 A) Interromper infusão IV e esperar várias horas antes de dose basal. B) Programar insulina basal subcutânea com sobreposição de ação antes de retirar IV, segundo protocolo. C) Trocar por metformina isolada. D) Suspender toda insulina até ocorrer nova hiperglicemia.
 **Gabarito: B.** A sobreposição evita ausência de insulina basal após suspensão da infusão. **A/D** deixam intervalo que permite cetogênese; **C** não supre deficiência absoluta. **Mini-revisão:** glicose normal não equivale a resolução de CAD ou dispensabilidade de basal.
+
+
+
+### Questão 21 — Dois marcadores renais
+Mulher de 59 anos, DM2, tem TFGe de 82 mL/min/1,73 m² e RAC 440 mg/g confirmada em outra coleta. A interpretação mais adequada é:
+A) Função renal preservada exclui risco nefrológico. B) Há albuminúria categoria A3, associada a risco mesmo com TFGe relativamente preservada. C) A RAC serve apenas para diagnóstico de infecção urinária. D) Toda albuminúria confirma síndrome nefrótica.
+**Gabarito B.** **A** ignora dano renal com filtração ainda preservada; **C** confunde finalidades; **D** exagera significado de RAC isolada. **Mini-revisão:** classificação exige cruzar TFGe e RAC; confirmar cronicidade e investigar outras causas conforme apresentação.
+
+### Questão 22 — Rastreio de retina
+Adulto recebe diagnóstico de DM2, sem sintomas visuais. Qual orientação de rastreio é compatível com a ADA 2026?
+A) Aguardar cinco anos sem avaliação ocular. B) Avaliar retina a partir do diagnóstico, porque a hiperglicemia pode preceder o reconhecimento clínico por anos. C) Solicitar retina só após queda súbita da visão. D) Nenhum DM2 precisa de fundoscopia se HbA1c <7%.
+**Gabarito B.** **A** transporta orientação de DM1 adulto para DM2; **C** perde prevenção; **D** confunde meta glicêmica com ausência de risco. **Mini-revisão:** o primeiro exame no DM2 ocorre no diagnóstico e os intervalos seguintes dependem de achados e risco.
+
+### Questão 23 — Pé de alto risco
+Pessoa com diabetes apresenta perda de sensibilidade protetora e amputação prévia de artelho. Segundo a estratificação IWGDF incorporada à ADA 2026, o risco é:
+A) Muito baixo e revisão a cada cinco anos. B) Alto, demandando seguimento frequente e inspeção dos pés em toda consulta. C) Nulo pela amputação já ter ocorrido. D) Definido apenas pela HbA1c.
+**Gabarito B.** **A** ignora o evento prévio; **C** aumenta risco de nova lesão; **D** reduz avaliação a biomarcador metabólico. **Mini-revisão:** neuropatia e amputação prévia definem risco elevado mesmo sem dor atual.
 
 
 ## Referências essenciais
