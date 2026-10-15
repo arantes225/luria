@@ -120,6 +120,43 @@ O MELD original combina bilirrubina, INR e creatinina; variantes modernas incorp
 **Descompensada:** manifestação de ascite, encefalopatia hepática manifesta ou sangramento varicoso; alguns protocolos incluem outras complicações relevantes, que devem ser descritas separadamente.  
 **Recompensação Baveno VII:** requer controle/remoção da etiologia, resolução sustentada de eventos de descompensação sem terapias específicas pertinentes e melhora funcional estável, conforme critérios definidos. Ascite controlada apenas com diurético ou desaparecimento de sangramento apenas por ligadura isolada **não** comprova recompensação.
 
+
+### 4.6. Interpretar o fenótipo de doença hepática: gravidade não é a altura das transaminases
+
+O diagnóstico de cirrose e sua **gravidade atual** respondem a perguntas distintas. AST/ALT refletem lesão hepatocelular, mas podem ser discretamente elevadas ou normais quando fibrose/cirrose já está avançada. Bilirrubina, albumina e INR são pistas de capacidade funcional, mas há fatores externos: anticoagulantes mudam INR; inflamação e perdas renais/entéricas reduzem albumina; colestase eleva bilirrubina sem produzir, sozinha, a mesma interpretação prognóstica de hepatopatia terminal. A avaliação combina clínica, tendência temporal, imagem, rim, sódio e história.
+
+**Três consultas, três perguntas:**
+- Paciente com AST/ALT muito elevadas, INR normal, albumina preservada e sem sinais de hipertensão portal: investigar agressão hepática aguda; não diagnosticar cirrose descompensada apenas pelo pico enzimático.
+- Paciente com varizes, plaquetas de 78 mil/mm³, ascite e ALT discretamente elevada: a baixa ALT não indica doença leve; a hipertensão portal já produziu descompensação.
+- Paciente com bilirrubina alta, colúria e dilatação de via biliar: descartar obstrução antes de atribuir toda icterícia ao fígado "cirrótico".
+
+**Investigação etiológica individualizada** é indispensável mesmo quando um fator óbvio existe. Exposição alcoólica pode coexistir com hepatite B/C, doença metabólica e hemocromatose; esteatose pode coexistir com autoimunidade. Um paciente com cirrose "criptogênica" pode ter doença metabólica que perdeu esteatose visível em estágio tardio; isso não é prova de etiologia e requer avaliação.
+
+### 4.7. Baveno VII — o que permite concluir com rigidez e plaquetas
+
+O **HVPG ≥10 mmHg** define hipertensão portal clinicamente significativa (CSPH) na cirrose sinusoidal quando medido diretamente. Como HVPG exige cateterismo especializado, a **elastografia transitória (TE)** combinada às plaquetas auxilia estratificar **doença hepática crônica avançada compensada** (cACLD). Não transportar valores de TE diretamente para elastografia por outros aparelhos sem validação.
+
+| Resultado em TE e plaquetas | Interpretação dentro da população validada | Consequência prática |
+|---|---|---|
+| Rigidez <10 kPa, sem outros indícios | cACLD torna-se improvável | Reavaliar etiologia/risco; não excluir todas as doenças hepáticas |
+| Rigidez 10–15 kPa | cACLD possível | Integrar biomarcadores/etiologia e repetir em condições adequadas |
+| Rigidez >15 kPa | Sugere cACLD | Aprofundar gravidade/hipertensão portal |
+| Rigidez ≤15 kPa **e** plaquetas ≥150 mil/mm³ | CSPH improvável com alto valor preditivo negativo | Pode reduzir procedimentos invasivos se perfil aplicável |
+| Rigidez **≥25 kPa**, em hepatopatia viral/alcoólica ou esteato-hepatite não obesa (IMC <30) | Permite afirmar alta probabilidade de CSPH | Avaliar prevenção de descompensação, contraindicações a NSBB |
+| 15–25 kPa com plaquetopenia | Zona cinzenta/riscos intermediários | Individualizar com modelos, imagem, endoscopia ou HVPG |
+
+**Atenção à extrapolação:** nos fenótipos de doença hepática metabólica com obesidade, o ponto de corte de 25 kPa tem desempenho diferente; congestão hepática, colestase, refeição recente e inflamação importante podem aumentar a rigidez independentemente de fibrose. Não transformar "≥25 kPa" em diagnóstico histológico de cirrose.
+
+**Prevenir a primeira descompensação:** quando o paciente está compensado e CSPH foi demonstrada ou é altamente provável, Baveno VII recomenda considerar betabloqueador não seletivo (NSBB), **carvedilol preferido em elegíveis**, para reduzir risco de descompensação. O benefício não autoriza iniciar ou aumentar dose em hipotensão, HRS-AKI, bradicardia significativa ou contraindicações relevantes. Se o paciente **não puder usar NSBB**, a investigação endoscópica de varizes pode ser necessária: a diretriz emprega **rigidez ≥20 kPa OU plaquetas ≤150 mil/mm³** como gatilhos em candidatos apropriados. Se um NSBB adequado já está indicado e tolerado por CSPH, EDA apenas para classificar varizes pode não alterar a prevenção, salvo indicação independente.
+
+### 4.8. Child–Pugh, MELD e decisão transplantadora: risco em linguagem operacional
+
+O **Child–Pugh** integra cinco domínios, mas incorpora duas variáveis clínicas sem mensuração universal (ascite e encefalopatia). Ele ajuda comunicação de gravidade, prognóstico e risco procedimental. **MELD**, e versões que incorporam sódio ou outros parâmetros, foram desenvolvidas para prognóstico e priorização transplantadora; a **versão e regras de alocação aplicáveis ao SUS devem ser verificadas no regulamento brasileiro atual**, não calculadas por fórmula estrangeira e anunciadas como pontuação oficial da fila.
+
+**Erro de residência:** confundir MELD elevado com indicação automática ou imediata de transplante, sem pesquisar reversibilidade, contraindicações, fragilidade, etiologia e suporte social. O oposto também é grave: paciente com primeira ascite, PBE, HRS, encefalopatia recorrente ou hemorragia varicosa pode se beneficiar de avaliação precoce do transplante **antes de acumular falências orgânicas**. O encaminhamento pode ocorrer em paralelo ao tratamento da descompensação, sem prometer elegibilidade ou órgão.
+
+**Recompensação**, conceito do Baveno VII, exige controle sustentado da etiologia e melhora clínica/biológica em conjunto; reduzir ascite temporariamente com paracentese **não** significa automaticamente recompensação. A pessoa com história de CHC/risco residual pode continuar em vigilância específica apesar de melhora virológica.
+
 ## 5. Ascite: como raciocinar do primeiro episódio à refratariedade
 
 ### 5.1. O problema
@@ -156,6 +193,52 @@ Ascite tensa com desconforto, dispneia ou limitação funcional pode exigir para
 ### 5.5. Ascite recorrente e refratária
 Ascite refratária é a que não responde adequadamente a medidas toleradas ou recorre precocemente apesar delas. Distinguir “falha por dose insuficiente, baixa adesão, muito sódio na dieta e uso de AINE” de refratariedade verdadeira. Alternativas incluem paracenteses de grande volume com albumina, avaliação para **TIPS** em candidato elegível e referência para transplante. TIPS reduz pressão portal, mas pode precipitar encefalopatia ou descompensação cardíaca; avaliar função cardíaca, idade, função hepática, bilirrubina, história de encefalopatia e anatomia vascular.
 
+
+### 5.6. Ascite persistente: separar dieta, resistência aos diuréticos e refratariedade
+
+A ascite tende a diminuir quando a **excreção renal de sódio** supera sua ingestão; a água acompanha o gradiente osmótico. Em cirrose descompensada, ativação de aldosterona e outros mecanismos mantém retenção de sódio. Espironolactona antagoniza receptor mineralocorticoide no néfron distal; furosemida atua no cotransportador Na–K–2Cl na alça de Henle. Essa combinação é fisiologicamente complementar, mas a tolerabilidade renal, pressão arterial e eletrólitos impõem limites.
+
+**Acompanhamento clínico:** peso diário em condições semelhantes; edema; distensão; diurese; ingestão aproximada de sódio; creatinina/sódio/potássio; pressão, ortostase e sintomas neurológicos. Perda ponderal diária muito rápida, sobretudo sem edema periférico, pode levar à depleção intravascular apesar de ascite volumosa. Não confundir "perdeu quatro quilos em um dia" com sucesso obrigatório.
+
+**Ascite refratária** não é simplesmente "ainda tem líquido após uma semana". Pode ser **resistente aos diuréticos** apesar de restrição de sódio e exposição otimizada tolerada, ou **intratável por diuréticos** quando efeitos adversos (IRA, hiponatremia, hipo/hipercalemia, encefalopatia etc.) impedem atingir doses eficazes. Antes de classificá-la, conferir adesão, sódio inadvertido (alimentos processados), dose efetiva, uso de AINE e condições associadas como trombose portal ou neoplasia.
+
+O limite clássico de espironolactona 400 mg/dia e furosemida 160 mg/dia aparece em definições históricas de refratariedade; **não significa que todo paciente deva ser titulado até esses máximos**, muito menos na presença de rim vulnerável ou hipotensão. Uma dose menor pode ser máxima **tolerada** daquele indivíduo.
+
+### 5.7. Albumina: quatro cenários distintos e consequências distintas
+
+**Primeiro: paracentese de grande volume.** Após drenagem de **mais de 5 litros**, diretrizes como AASLD 2021 e EASL recomendam reposição de albumina IV na ordem de **6–8 g por litro removido** para reduzir disfunção circulatória pós-paracentese. Se retirada de 7 L, a estimativa didática em regime de 8 g/L é 56 g, **não 8 g totais**. O produto disponível, volume de infusão e função cardiorrenal exigem revisão; algumas pessoas de alto risco podem necessitar consideração mesmo em volume menor, conforme protocolo.
+
+**Segundo: PBE com risco de deterioração renal.** O esquema estudado de **1,5 g/kg na data do diagnóstico** e **1 g/kg no terceiro dia** foi desenvolvido para cenário de PBE, com análise de benefício em grupos de maior risco renal/hepático. Para adulto de 70 kg, o exemplo puramente aritmético seria 105 g no primeiro dia e 70 g no terceiro, mas uma pessoa com hipoxemia, congestão ou cardiopatia precisa de avaliação rigorosa de volume e indicação. Não aplicar essa dose à ascite não infectada só porque há líquido.
+
+**Terceiro: HRS-AKI em tratamento com vasoconstritor.** O consenso ADQI–ICA 2024 recomenda albumina **concentrada a 20–25%**, ajustando volume *diariamente* à perfusão/congestão e suspendendo se sobrecarga. **Não exigir 48 horas sistemáticas de albumina como "teste diagnóstico"** em euvolêmico/hipervolêmico.
+
+**Quarto: albumina crônica programada.** Estudos de infusões regulares em pacientes selecionados geraram interesse, mas a diretriz AASLD 2021 considera os dados **insuficientes para recomendar administração prolongada universal fora de contextos específicos**. Não vender "soro com albumina toda semana" como protocolo obrigatório para toda cirrose.
+
+**Pérola de fisiologia:** albumina não atua somente como pressão oncótica; interage com circulação e processos inflamatórios, mas benefício clínico continua dependente da indicação. A mesma molécula pode **proteger circulação após LVP** e **provocar edema pulmonar** se administrada indiscriminadamente em paciente congestionado.
+
+### 5.8. TIPS: descomprimir porta sem esquecer cérebro e coração
+
+O **TIPS** cria comunicação intra-hepática radiológica entre circulação portal e sistêmica, reduzindo gradiente portal. Isso pode controlar ascite refratária e determinadas hemorragias portal-hipertensivas, mas aumenta o fluxo de sangue não depurado pelo fígado para circulação sistêmica e a carga circulatória sobre coração. O resultado pode ser **melhora da ascite com piora de encefalopatia** ou descompensação cardíaca.
+
+Antes de indicar, a equipe precisa responder:
+1. O paciente realmente tem hipertensão portal como mecanismo principal da ascite/hidrotórax?
+2. A condição requer paracenteses recorrentes com limitação de qualidade de vida?
+3. Há encefalopatia grave ou recorrente já difícil de controlar?
+4. Qual é a reserva funcional hepática (bilirrubina, INR, MELD contextualizado)?
+5. Há cardiomiopatia, insuficiência cardíaca, hipertensão pulmonar ou valvopatia significativa?
+6. Existe trombose portal, anatomia desfavorável, infecção ativa ou carcinoma que modifique técnica e indicação?
+7. O centro dispõe de intervenção, acompanhamento, acesso a transplante e manejo de complicações?
+
+**Não reduzir a decisão a "ascite refratária → TIPS para todos".** Paracentese seriada com albumina e avaliação transplantadora podem ser mais apropriadas em pessoas de alto risco. A seleção é multidisciplinar e requer imagem Doppler/TC/RM quando pertinente.
+
+### 5.9. Hiponatremia em cirrose não é sinônimo de desidratação simples
+
+A cirrose avançada pode produzir **hiponatremia dilucional hipervolêmica**: apesar de muito líquido total (edema/ascite), há baixa perfusão arterial efetiva, liberando vasopressina e retendo água livre desproporcionalmente ao sódio. Por isso, oferecer grandes volumes de solução salina isotônica a pessoa já congestionada não resolve automaticamente o problema.
+
+Contudo, diurético excessivo, vômitos, diarreia por lactulose e perda renal podem causar **hiponatremia hipovolêmica**. O tratamento dessas duas situações é diferente. Avaliar sintomas neurológicos, velocidade de queda do sódio, pressão, estado de volume, função renal, medicamentos e causas associadas; a correção deve respeitar limites seguros, sobretudo em alcoolismo/desnutrição avançada, pelo risco de desmielinização osmótica.
+
+**A restrição hídrica não é rotina para toda ascite**; em hiponatremia importante pode ser considerada individualmente. Solução hipertônica exige indicação emergencial específica (por exemplo convulsão por hiponatremia), monitorização seriada e correção controlada. Não colocar um valor único do sódio como substituto de avaliação clínica.
+
 ## 6. Peritonite bacteriana espontânea (PBE)
 
 ### 6.1. Conceito e mecanismo
@@ -178,6 +261,37 @@ Coletar cultura de líquido ascítico antes do antibiótico se possível, sem at
 
 A profilaxia de longo prazo tem custo ecológico: *C. difficile*, resistência e infecções por agentes diferentes; a indicação deve ser revisada periodicamente.
 
+
+### 6.5. PMN, cultura e bacterascite: a decisão exige mais que "cresceu bactéria"
+
+O ponto de corte **PMN ≥250/mm³** deve ser interpretado na ascite por cirrose e contexto de infecção sem foco cirúrgico. Se uma amostra for hemorrágica por trauma de punção, corrigir neutrófilos por hemácias pode ser útil segundo protocolo, mas **não deve sobrepor evidências de sepse ou peritonite**. No laboratório, idealmente **inocular o líquido ascítico em frascos de hemocultura à beira do leito**, aumentando rendimento em comparação com transporte inadequado. Cultura negativa não invalida infecção quando PMN diagnósticos estão presentes.
+
+**Bacterascite monomicrobiana não neutrocítica:** cultura positiva com PMN <250/mm³. Em paciente assintomático, algumas culturas representam colonização transitória/contaminação, e repetir paracentese e reavaliar é importante; em sintomático ou muito doente, pode ser necessário tratar empiricamente. O manejo exige integrar sintomas, agente e repetição, sem aplicar "cultura positiva = terapia de duas semanas para todos".
+
+**Peritonite secundária:** pode apresentar PMN alto e infecção verdadeira, mas necessita **controle de foco cirúrgico/intervencionista**, não apenas antibiótico para PBE. Desencadeadores de suspeita são dor/defesa importantes, flora polimicrobiana, glicose ascítica baixa, proteína/LDH elevadas, ausência de queda do PMN em terapia efetiva, ar livre ou foco à imagem. Os **critérios de Runyon** sugerem, não fecham diagnóstico: proteína >1 g/dL, glicose <50 mg/dL e LDH acima do limite superior sérico (dois ou mais aumentam suspeita). Se clínica alerta, investigar mesmo quando nem todos aparecem.
+
+**Pergunta de prova:** PBE é uma complicação da cirrose; uma perfuração de víscera oca em cirrótico não passa a ser PBE por ocorrer em alguém com ascite. A origem anatômica define a necessidade de cirurgia.
+
+### 6.6. Antibiótico no paciente com ascite: origem da infecção e resistência
+
+**PBE comunitária sem fatores importantes de resistência:** cefalosporinas de terceira geração são exemplos clássicos de cobertura empírica, ajustando ao antibiograma e protocolo.  
+**PBE hospitalar, exposição recente a antibiótico, colonização multirresistente, choque:** o espectro precisa considerar bacilos resistentes, enterococos e epidemiologia local; nem ceftriaxona isolada nem carbapenêmico universal são escolhas automáticas.  
+**Peritonite secundária:** requer cobertura apropriada a origem intestinal e anaeróbios **mais controle do foco**.
+
+O uso prolongado de quinolonas para profilaxia seleciona resistência, altera microbioma, aumenta risco de eventos adversos e pode reduzir efetividade futura; **profilaxia primária não é indicação para toda proteína ascítica baixa isolada**. Associar proteína <1,5 g/dL a disfunção renal/hepática conforme critérios específicos de protocolos, analisar risco real de PBE e ecologia local, e preferir decisão especializada documentada. **Após PBE comprovada**, profilaxia secundária tende a ser considerada, mas regime/duração/acesso variam e devem ser revisados por protocolo nacional.
+
+**Cuidado com antibióticos no sangramento varicoso:** são profilaxia de infecção durante hemorragia digestiva, não prova de que o paciente já tem PBE. Prescrição de sete dias ou menos conforme regime/protocolo é decisão temporal específica; não perpetuar antibioticoterapia por meses após hemorragia sem indicação separada.
+
+### 6.7. Redução do PMN e falha terapêutica
+
+Se o quadro piora apesar de antibiótico, considerar repetição de paracentese ao redor de **48 horas** em contextos de não resposta, infecção hospitalar/resistência ou suspeita de secundária. Uma queda do PMN ascítico **inferior a 25%** em relação ao basal após terapia pode sugerir resposta inadequada, mas a avaliação inclui sinais vitais, rim, cultura, métodos de coleta e fonte anatômica.
+
+**Exemplo:** PMN inicial 1.200/mm³, novo 1.080 após 48 horas — queda 10%, insuficiente para tranquilizar. Isso não estabelece automaticamente "precisa só de antibiótico mais forte"; é preciso reavaliar resistência, controle de foco e peritonite secundária. Se PMN inicial 1.200 e novo 360 (queda 70%) com melhora clínica, a evolução é mais favorável, mas ainda há PMN ≥250 e necessidade de completar manejo apropriado.
+
+### 6.8. PBE antes e depois da alta
+
+No retorno, documentar se houve cultivo com agente/sensibilidade, IRA, episódio de hemorragia, função hepática, indicação de profilaxia secundária e potencial de transplante. Reavaliar interações, alergias e resistência; orientar que **febre ausente não exclui nova PBE** e que confusão, dor, piora da ascite e oligúria exigem retorno. Hospitalização por PBE é marcador de cirrose descompensada e razão para avaliação prognóstica, não evento isolado encerrado ao terminar ceftriaxona.
+
 ## 7. Encefalopatia hepática (EH)
 
 ### 7.1. Reconhecer e classificar
@@ -193,7 +307,7 @@ Pode se manifestar como alteração sutil de atenção/psicomotricidade, invers�
 **Diferenciais obrigatórios:** hipoglicemia, hipoxemia, intoxicação por sedativos, abstinência alcoólica, AVC/hemorragia intracraniana, sepse, uremia, alterações de sódio, convulsões e encefalite. Trauma, déficit focal, primeira apresentação atípica ou sinais de hipertensão intracraniana exigem investigação própria. **Não rotular toda alteração mental no cirrótico como EH.**
 
 ### 7.2. Tratar o precipitante enquanto protege a pessoa
-Pesquisar infecção/PBE, hemorragia digestiva, constipação, desidratação, diurético excessivo, hipocalemia, alcalose, sedativos e função renal. Corrigir hipoglicemia, proteger vias aéreas se houver alteração importante e ajustar líquidos/eletrólitos. Um lactente? Não — esta é síndrome típica de doença hepática avançada em adultos; em crianças com hepatopatia há particularidades e equipes especializadas.
+Pesquisar infecção/PBE, hemorragia digestiva, constipação, desidratação, diurético excessivo, hipocalemia, alcalose, sedativos e função renal. Corrigir hipoglicemia, proteger vias aéreas se houver alteração importante e ajustar líquidos/eletrólitos. Em crianças e adolescentes com hepatopatia crônica existem particularidades etiológicas, farmacológicas e de avaliação neurológica que exigem protocolo e equipe de hepatologia pediátrica; as decisões deste capítulo destinam-se principalmente a adultos.
 
 **Lactulose:** primeira linha para EH manifesta em cirrose, geralmente titulada para **2–3 evacuações amolecidas ao dia** quando tratamento por via oral é possível. **Não aumentar indefinidamente**: diarreia excessiva causa hipovolemia, distúrbios de sódio e piora renal, perpetuando encefalopatia. Em pessoas incapazes de deglutir e com risco de aspiração, considerar alternativas de administração e proteção da via aérea conforme protocolo hospitalar.
 
