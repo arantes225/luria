@@ -292,7 +292,238 @@ Apostila de metodologia depende principalmente de **esquemas originais nítidos*
 
 **Situação técnica:** nenhuma imagem médica foi selecionada, baixada, licenciada ou aprovada; recomenda-se produzir SVG autoral responsivo e, apenas quando houver raster, WebP comprimido segundo política LURIA. A etapa de imagem permanece pendente.
 
-## 14. Referências reais e verificação
+## 14. Incerteza estatística: por que “sensibilidade de 90%” não é um fato exato
+
+Até agora, as fórmulas foram apresentadas como proporções de observações já classificadas. Isso permite calcular estimativas pontuais, mas ainda não informa quanto os números poderiam variar por acaso se outro conjunto de pacientes, da mesma população, fosse estudado. Quando uma apostila ou questão de residência afirma “o teste tem sensibilidade de 90%”, é necessário perguntar: **90% obtidos de quantos doentes?** Vinte e dois mil pacientes estudados não dão a mesma precisão que vinte doentes, mesmo quando as proporções coincidem.
+
+### 14.1. Numerador, denominador e intervalo de confiança
+
+Considere dois estudos fictícios, nos quais todos os pacientes receberiam o mesmo padrão de referência e nos quais, por hipótese, o desempenho real do teste seria estável:
+
+- **Estudo A:** 18 resultados positivos em 20 doentes → sensibilidade observada de **90%**.
+- **Estudo B:** 900 resultados positivos em 1.000 doentes → sensibilidade observada de **90%**.
+
+Ambos retornam o mesmo valor pontual. Entretanto, um intervalo de confiança de 95% pelo método **de Wilson para proporção binomial** é, aproximadamente, de **69,9% a 97,2% no estudo A** e de **88,0% a 91,7% no estudo B**. O exemplo não significa que o método de Wilson seja obrigatório em todos os artigos; ele serve para ensinar por que a quantidade de eventos define a precisão. O segundo estudo oferece faixa menor de resultados compatíveis com os dados observados porque contempla mais doentes.
+
+Interpretar corretamente o IC exige uma distinção conceitual: no enquadramento frequentista usual, **não se atribui probabilidade de 95% ao parâmetro fixo estar dentro daquele intervalo específico já calculado**. O procedimento de construir intervalos tem cobertura nominal de 95% sob as suposições do modelo, em repetidas amostras hipotéticas. No ensino inicial, pode-se dizer que o intervalo expressa a *incerteza da estimativa*; porém, numa discussão científica rigorosa, é necessário explicitar modelo e método.
+
+**Ponto decisivo:** para a sensibilidade, o tamanho informativo é **VP + FN**, isto é, o número de doentes efetivamente avaliados. Para a especificidade, é **VN + FP**, número de não doentes. Para o VPP, é **VP + FP**, número de positivos, cuja frequência pode ser pequena em doenças raras. Um estudo com cem mil participantes pode produzir sensibilidade muito imprecisa se contiver somente cinco doentes.
+
+### 14.2. Estudo pequeno com “100%” de sensibilidade
+
+Imagine que dez doentes foram examinados e todos apresentaram teste positivo. A estimativa pontual é de 100%, mas não é adequado afirmar que o teste “jamais falha”. Aplicando o intervalo binomial exato de Clopper–Pearson para dez sucessos em dez tentativas, o limite inferior bilateral de 95% é aproximadamente **69,2%**; o limite superior é 100%. Um único número bonito esconde ampla incerteza. Isso é particularmente relevante quando a condição é grave e o teste pretende descartá-la sozinho.
+
+Em uma redação responsável, informar **10/10 (100%)** junto ao IC e às condições de recrutamento é mais útil que declarar, sem qualificadores, “sensibilidade de 100%”. A mesma advertência vale para especificidade em estudos que selecionam poucos controles.
+
+### 14.3. Por que o tamanho da amostra total pode enganar
+
+Um estudo incluiu 2.000 pessoas, mas apenas 20 tinham a condição-alvo. A amostra pode dar razoável precisão à especificidade, calculada em quase dois mil não doentes, enquanto a sensibilidade continua instável. Por isso, muitos projetos de acurácia planejam o número necessário de **doentes e não doentes**, e só depois estimam recrutamento total segundo prevalência esperada e elegibilidade.
+
+A amostra também não corrige viés de seleção: um milhão de pacientes selecionados inadequadamente pode fornecer um intervalo estreito em torno de um resultado **sistematicamente errado**. A distinção é memorável: **precisão não é validade**.
+
+### 14.4. Intervalos para razões de verossimilhança e comparação entre testes
+
+A RV+ e a RV− derivam de duas estimativas (sensibilidade e especificidade) e também têm incerteza. Não é metodologicamente correto calcular RV+ = 4,5 e apresentar esse resultado como constante sem faixa de confiança ou avaliação de transportabilidade. Publicações podem reportar intervalos por métodos apropriados ao desenho (transformações logarítmicas, verossimilhança, bootstrap ou modelos de síntese). Na rotina de leitura crítica, não se exige que o estudante memorize uma fórmula universal para cada modelo; exige-se reconhecer quando uma RV muito próxima de 1, com ampla incerteza, oferece pouca evidência.
+
+Quando **dois testes são feitos nas mesmas pessoas**, suas medidas de desempenho são estatisticamente pareadas. Compará-los como se fossem duas amostras independentes desperdiça informação e pode produzir teste de hipótese e IC incorretos. A pergunta deve especificar se a comparação é pareada, independente ou apenas indireta, e se os mesmos pacientes receberam ambos os testes sob condições equivalentes.
+
+### 14.5. Quando o resultado é um número contínuo
+
+Muitas análises começam com um valor laboratorial, escore ou probabilidade estimada; só depois transformam esse número em positivo/negativo por um **limiar**. A sensibilidade e especificidade mencionadas em um artigo dependem desse ponto de corte. Se outro serviço adota diferente ponto de corte, não é adequado transportar os mesmos índices sem validação.
+
+Esta apostila ensina a interpretar **um limiar definido**. A exploração sistemática da troca entre sensibilidade e especificidade ao variar muitos limiares, a curva ROC, a AUC e a escolha estatística do ponto de corte formará a **aula 100**, sem repetir toda a construção 2×2 aqui.
+
+**Quadro — como ler uma estimativa publicada com discernimento**
+
+| Relato publicado | Pergunta crítica |
+|---|---|
+| “Sensibilidade 95%” | Quantos doentes a compõem? Qual o IC? Como foram selecionados? |
+| “Especificidade 99%” | Quantos não doentes? Quais diagnósticos alternativos estavam presentes? |
+| “O teste tem VPP alto” | Qual a prevalência/probabilidade pré-teste no estudo e no meu serviço? |
+| “Acurácia global 98%” | Qual proporção de doentes? Quanto essa medida mascara falsos negativos importantes? |
+| “Desempenho superior a outro teste” | Mesmas pessoas ou grupos distintos? Intervalos, comparador e limiar são adequados? |
+
+## 15. Além de positivo e negativo: resultados indeterminados, qualidade e erro pré-analítico
+
+A tabela 2×2 é uma representação didática poderosíssima, mas pressupõe que se sabe como classificar cada participante em uma das quatro células. Na assistência real, porém, alguns resultados vêm como **indeterminados, inválidos, insuficientes, tecnicamente inconclusivos ou ausentes**. Ignorar esses pacientes distorce o desempenho de uma estratégia diagnóstica, especialmente se falhas forem mais frequentes em pessoas muito doentes, em crianças, em pacientes obesos ou em subgrupos subatendidos.
+
+### 15.1. “Inconclusivo” não deve desaparecer do denominador
+
+Em um estudo fictício de 1.000 pessoas, 100 tinham a doença e 900 não tinham. O laboratório conseguiu classificar 950 exames, mas 50 falharam por motivos técnicos. Se o artigo calcular sensibilidade/especificidade exclusivamente em 950 testes válidos, isso pode ser apropriado para a pergunta restrita “qual é o desempenho *condicional a resultado interpretável*?”. Não é suficiente para a pergunta operacional “qual a proporção de pacientes que o sistema de saúde consegue investigar corretamente no primeiro encontro?”.
+
+É indispensável conhecer **em quais pacientes ocorreram as 50 falhas** e o que aconteceu a seguir. Se vinte pertencem ao grupo doente e trinta aos não doentes, o desempenho calculado ignorando-as pode parecer satisfatório, mas o serviço pode precisar de recolheita, nova consulta ou exame alternativo em proporção importante. A frequência de resultado inválido deve ser informada, incluindo denominador e razões.
+
+Há três escolhas inadequadas frequentes: transformar todos os inconclusivos em “negativos” sem justificativa; excluí-los silenciosamente; ou imputar como se fossem aleatórios quando estão ligados à gravidade, condição clínica ou qualidade da amostra. A estratégia correta deve ser pré-especificada e coerente com o uso real.
+
+### 15.2. Fluxo de pacientes e referência incompleta
+
+Um paciente pode ter testagem inicial, não retornar à confirmação e nunca receber classificação de referência. Isso é diferente de exame índice tecnicamente inválido. O fluxograma STARD ajuda a distinguir recrutados, elegíveis, testados, verificados, excluídos e analisados. Sem contabilizar cada etapa, um denominador aparentemente claro pode não representar a amostra inicial.
+
+**Exemplo de fluxograma autoral:**
+1. Recrutados e avaliados para elegibilidade: 1.200.
+2. Elegíveis: 1.050; motivos para as 150 exclusões devem ser descritos.
+3. Receberam teste índice: 1.020; trinta sem teste.
+4. Testes tecnicamente interpretáveis: 990; trinta inválidos.
+5. Receberam referência adequada: 940; cinquenta sem verificação.
+6. Entraram na tabela 2×2: 940, com razões das perdas e características comparadas aos demais.
+
+Os números são didáticos e não derivam de estudo. O problema é que uma sensibilidade calculada em 940 pacientes não descreve necessariamente a experiência dos 1.200 inicialmente considerados.
+
+### 15.3. Fase pré-analítica, analítica e pós-analítica
+
+**Pré-analítica:** identificação errada, amostra coletada no momento inadequado, material insuficiente, transporte ou armazenamento impróprio, preparo do paciente não realizado e contaminação. Alguns exames são muito dependentes do tempo desde o início dos sintomas; um negativo precoce pode exigir repetição programada em vez de concluir ausência da doença.
+
+**Analítica:** calibração, lote de reagentes, competência do operador, variação do aparelho, interferentes, algoritmo empregado e parâmetros de processamento. Em testes point-of-care, o desempenho pode ser afetado por temperatura, iluminação, qualidade da conexão e técnica.
+
+**Pós-analítica:** resultado não visualizado, unidade errada, corte aplicado de maneira inadequada, laudo ambíguo, comunicação atrasada e plano de acompanhamento inexistente. A sensibilidade medida em condições ideais não captura necessariamente o dano de um resultado correto entregue tarde demais ao profissional responsável.
+
+Portanto, há uma diferença entre **acurácia intrínseca observada em estudo**, **confiabilidade do processo de aplicação** e **efetividade clínica da estratégia completa**.
+
+### 15.4. Reprodutibilidade não é sinônimo de validade
+
+Um método pode dar o mesmo resultado repetidamente e estar consistentemente errado. A **repetibilidade** descreve proximidade entre medidas nas mesmas condições; **reprodutibilidade**, estabilidade ao variar avaliador, aparelho ou local, conforme definição adotada; **validade/acurácia**, proximidade da classificação à condição-alvo de referência. Concordância entre dois leitores de imagem não prova que concordam com o diagnóstico correto.
+
+É útil diferenciar também **concordância** de **correlação**: duas medições podem ser fortemente correlacionadas, mas apresentar diferença sistemática tão grande que não são intercambiáveis. Para resultados categóricos, medidas de concordância (como kappa) respondem perguntas diferentes da sensibilidade. Para contínuos, avaliação de diferenças e limites de concordância é mais informativa que correlação isolada quando o objetivo é substituir um método por outro.
+
+### 15.5. A regra prática do plantão
+
+Se o laudo chega como inconclusivo, o médico precisa responder: “O risco da doença é alto o suficiente para agir/observar enquanto repito ou substituo o exame?” O problema não se resolve convertendo inconclusivo em negativo no prontuário. Da mesma forma, resultado que não combina com a clínica exige confirmar identificação, coleta, momento, plausibilidade biológica e necessidade de nova amostra antes de encerrar a hipótese.
+
+## 16. Dos índices diagnósticos à utilidade clínica: o que muda uma decisão?
+
+Uma ferramenta diagnóstica só agrega valor se permitir tomar decisões melhores para o paciente ou a população. Uma estratégia pode detectar mais casos e ainda assim produzir danos quando leva a procedimentos desnecessários, rotulação, ansiedade, sobretratamento e uso de recursos escassos sem reduzir eventos clínicos relevantes.
+
+### 16.1. Limiar de teste, limiar de tratamento e zona de incerteza
+
+Imagine uma condição grave com tratamento potencialmente eficaz, mas arriscado. Existem, conceitualmente, três regiões:
+
+- **Risco muito baixo:** nem investigação adicional nem tratamento podem trazer benefício proporcional; orientações de segurança e reavaliação podem ser suficientes.
+- **Risco intermediário:** informação obtida com teste pode mudar a conduta e evitar tanto tratamento desnecessário quanto perda de casos.
+- **Risco muito alto:** certas condições tempo-dependentes exigem medidas terapêuticas imediatas ou avaliação especializada sem atrasar assistência à espera do teste; o exame pode servir para caracterização, não como permissão para iniciar medidas de suporte.
+
+Esses limiares dependem da gravidade da doença, eficácia e toxicidade do tratamento, dano de exames invasivos, custo de perder caso, preferências da pessoa e capacidade do serviço. **Não existe percentual universal que autorize testar ou tratar todas as doenças.** A aula 100 explorará a seleção de pontos de corte e avaliação formal de decisão; aqui importa compreender por que um resultado “bom” não decide fora do contexto.
+
+### 16.2. O mesmo falso negativo pode ter consequências muito diferentes
+
+Suponha que duas condições fictícias tenham igual sensibilidade, mas consequências distintas. Em condição autolimitada facilmente reavaliada, perder temporariamente uma pequena proporção pode ter dano limitado. Em condição que progride em horas e requer intervenção precoce, a mesma proporção pode representar risco inaceitável. Não classifique teste como ideal apenas porque atinge uma meta de sensibilidade sem considerar *qual dano surge quando falha*.
+
+Um teste mais sensível não é automaticamente estratégia melhor se, para aumentar sensibilidade, leva a dezenas de intervenções invasivas desnecessárias. Em política de rastreamento, o balanço deve incluir incidência, desfechos, sobre diagnóstico e inequidades de acesso à confirmação.
+
+### 16.3. VPP e comunicação de risco em frequências naturais
+
+Para muitas pessoas, “VPP de 4,35%” é abstrato. No cenário fictício de 1% de prevalência já apresentado, pode-se dizer: **em cada mil pessoas testadas, 207 teriam positivo; dessas, cerca de nove realmente teriam a condição e 198 não**. Isso expõe simultaneamente benefício e efeito adverso dos falsos positivos.
+
+Essa forma de comunicação deve vir acompanhada de contexto: se o exame é preliminar, a pessoa não precisa sair com rótulo definitivo de doença; precisa saber o que significa o resultado, como será confirmada a hipótese, em quanto tempo e quais sintomas exigem retorno. Falar de probabilidade não é abandonar responsabilidade clínica: é **planejar a próxima decisão de maneira compreensível**.
+
+### 16.4. Sensibilidade e especificidade não medem benefício final
+
+Um exame pode identificar doença mais cedo sem melhorar sobrevida ou qualidade de vida, especialmente quando há **viés de antecipação diagnóstica (lead-time)**: o paciente parece viver mais tempo “após o diagnóstico” simplesmente porque o rótulo foi antecipado, sem mudança na data de óbito. Também pode ocorrer viés de duração (length-time), em que rastreamento detecta proporcionalmente mais doenças de evolução lenta. E pode existir sobrediagnóstico de condições que nunca causariam dano durante a vida do indivíduo.
+
+Esses fenômenos são centrais para compreender programas de rastreamento: mais diagnósticos realizados não são prova de mais pessoas salvas. A relevância clínica da estratégia requer evidência de desfechos, impactos e balanceamento de danos, não apenas curvas ou proporções de classificação.
+
+### 16.5. Testes seriados e dependência biológica
+
+Um erro didático perigoso é multiplicar RVs de diferentes sintomas ou exames como se cada um fosse independente. Imagine que febre, taquicardia e leucocitose sejam efeitos relacionados do mesmo processo inflamatório. Se suas RVs forem aplicadas como três evidências independentes, corre-se risco de superestimar a certeza. O mesmo ocorre com escores compostos e exames que medem características semelhantes.
+
+**Condições de uma multiplicação válida:** as estimativas devem pertencer a populações compatíveis; os achados precisam ser interpretados sequencialmente em relação à informação já conhecida; e é preciso considerar **dependência condicional** entre resultados. Na dúvida, um modelo multivariável validado ou evidência direta de uma estratégia combinada é preferível à multiplicação ad hoc.
+
+### 16.6. Decisão compartilhada e segurança
+
+Em pacientes estáveis, explicar benefício esperado, chance de falso positivo/negativo, consequências de confirmar ou não e possibilidade de observação permite decisão alinhada a valores individuais. Entretanto, comunicação compartilhada **não** deve se tornar desculpa para transferir à pessoa um cálculo que o serviço não explicou. Em situações emergenciais, protocolos de segurança e direitos do paciente prevalecem sobre uma apresentação excessivamente abstrata de probabilidades.
+
+## 17. Como desenhar, relatar e julgar um estudo de acurácia
+
+A STARD 2015 ajuda a relatar estudos com transparência. A **QUADAS-3 (2026)** é instrumento distinto, voltado à avaliação de risco de viés e aplicabilidade em revisões de estudos de acurácia. Elas não competem entre si: uma melhora descrição e rastreabilidade; a outra apoia julgamento estruturado da confiabilidade e relevância dos resultados.
+
+### 17.1. Comece pela pergunta clínica e não pela estatística
+
+Um estudo corretamente formulado precisa definir:
+
+1. **Participantes e cenário:** pacientes consecutivos com suspeita inicial? Pessoas assintomáticas rastreadas? Indivíduos encaminhados após exame alterado?
+2. **Condição-alvo:** doença atual, estágio específico, infecção transmissível ou complicação a ser evitada?
+3. **Teste índice:** dispositivo, operador, coleta, versão, algoritmo, limiar e interpretação.
+4. **Padrão de referência:** por que esse método aproxima a definição da condição? Ele é aplicado a todos?
+5. **Tempo entre exames:** condição pode ter mudado entre teste e referência?
+6. **Uso pretendido:** triagem, substituição de outro exame, confirmação ou complemento?
+7. **Desfecho da pesquisa:** sensibilidade/especificidade por limiar, indeterminados, precisão, subgrupos e eventual impacto clínico.
+
+A inclusão **consecutiva ou aleatória em amostra pertinente ao cenário** tende a ser mais representativa que seleção deliberada de extremos. Estudos caso-controle podem ter usos específicos, mas frequentemente não respondem à pergunta operacional de diagnóstico de paciente com sintomas inespecíficos. O padrão de referência deve ser escolhido com rigor, inclusive quando não é possível oferecer a todos um teste invasivo.
+
+### 17.2. O que a QUADAS-3 acrescenta em 2026
+
+A QUADAS-3 substituiu a QUADAS-2 como versão mais recente da ferramenta, conforme publicação de Whiting e colaboradores na *Annals of Internal Medicine* em 2026. Sua aplicação parte de uma **pergunta de síntese** e de um **ensaio ideal de acurácia** para julgar se os estudos reais se aproximam da pergunta que queremos responder.
+
+Os **quatro domínios de risco de viés** são:
+- **Participantes:** seleção e inclusão representam o cenário clínico relevante?
+- **Teste índice:** conduta e interpretação do teste introduzem distorções?
+- **Condição-alvo:** como a condição é definida e verificada pelo padrão de referência?
+- **Análise:** seleção de resultados, dados ausentes, unidades de análise e cálculo das estimativas são apropriados?
+
+Nos três primeiros domínios há também apreciação de **aplicabilidade** à pergunta da revisão. O instrumento envolve seis fases: definir pergunta; descrever ensaio ideal; desenhar fluxo; identificar estimativas; julgar viés/aplicabilidade; e formular avaliação global. **Não basta colocar “baixo risco” numa tabela** sem explicar o que se esperaria do estudo ideal e quais evidências sustentam a classificação.
+
+**Referência específica:** Whiting PF et al. *QUADAS-3: A Revised Tool for the Quality Assessment of Diagnostic Test Accuracy Studies*. *Ann Intern Med*. 2026;179(4):548–555. https://doi.org/10.7326/ANNALS-25-02104.
+
+### 17.3. Viés de espectro não se limita à prevalência
+
+A prevalência modifica o VPP/VPN sob sensibilidade/especificidade fixas por hipótese. Mas a **composição clínica** da população também modifica o próprio desempenho do teste. Casos avançados podem oferecer sinais mais intensos que casos iniciais; controles saudáveis podem ser muito mais fáceis de classificar que pessoas com diagnósticos concorrentes que imitam a doença. Essas mudanças criam o efeito de espectro, descrito em Usher-Smith, Sharp e Griffin (*BMJ*, 2016).
+
+Não é rigoroso afirmar que sensibilidade/especificidade são “sempre invariáveis à prevalência”. A frase só vale como uma **propriedade algébrica sob desempenho condicional mantido** — simplificação útil em exercícios como o quadro com prevalência de 1%, 10% e 40%, mas não garantia de transportabilidade em populações reais.
+
+### 17.4. Desenhos emparelhados e comparação de estratégia diagnóstica
+
+Um estudo comparando duas modalidades pode aplicar ambos os testes aos mesmos participantes, de preferência com interpretação cega e ordem/intervalo planejados. Isso permite comparar diretamente desempenho e examinar discordâncias dentro de uma população comum. O padrão de referência idealmente não incorpora a informação do teste avaliado; quando isso é impossível, deve-se explicitar limitação.
+
+Compare duas perguntas distintas:
+
+- **Qual dos testes identifica mais corretamente a condição?** — foco na acurácia.
+- **Usar o teste melhora decisões ou resultados dos pacientes?** — foco no impacto da estratégia, que pode exigir outro desenho, acompanhamento ou ensaio de estratégia diagnóstica.
+
+A maior sensibilidade de uma modalidade pode não gerar benefício se positivos não forem confirmados, tratamentos forem inacessíveis ou resultados demorarem demais.
+
+### 17.5. Revisões sistemáticas diagnósticas e heterogeneidade
+
+Reunir sensibilidade e especificidade de vários estudos não equivale a calcular uma média aritmética dos percentuais. Estudos diferem em limiar, prevalência, doença, seleção, referência e contexto de uso. A síntese costuma empregar modelos que consideram a **correlação e heterogeneidade** entre sensibilidade e especificidade (por exemplo, modelos hierárquicos bivariados e HSROC). A escolha do modelo depende da pergunta e da disponibilidade dos dados.
+
+No contexto brasileiro, existe uma diretriz pública do **Ministério da Saúde/Conitec para revisão sistemática e metanálise de estudos de acurácia diagnóstica**. Ela deve ser priorizada no capítulo de metodologia aplicada ao SUS. O texto completo é indicado na página institucional: https://www.gov.br/conitec/pt-br/midias/artigos_publicacoes/diretrizes/revisao_sistematica_metanalise_estudos_acuracia_diagnostica.pdf.
+
+**Diferencie novamente as ferramentas:**
+- STARD 2015: relatar um estudo primário de acurácia.
+- STARD-AI 2025: extensão de relato para pesquisas com testes baseados em IA.
+- QUADAS-3 2026: julgar risco de viés e aplicabilidade em estudos de acurácia.
+- PRISMA-DTA: transparência do relato de revisão sistemática de acurácia.
+- Diretrizes metodológicas MS/Conitec: orientar a produção de sínteses de evidência diagnóstica no Brasil.
+
+## 18. Tecnologias digitais e IA diagnóstica: por que estudar acurácia além do laboratório?
+
+Cada vez mais classificadores digitais são oferecidos para avaliar imagem, sinais vitais, traçados e risco clínico. É tentador ler “99% de acurácia” em divulgação comercial e concluir que a ferramenta está pronta para uma fila de pacientes reais. Isso pode ser falso mesmo que a conta esteja correta na amostra de desenvolvimento.
+
+### 18.1. Conjunto de treino, validação interna e avaliação externa
+
+Um modelo aprende padrões a partir de dados usados em seu desenvolvimento. Se as mesmas pessoas, instituições ou versões das imagens aparecem inadvertidamente tanto no desenvolvimento quanto no teste, os indicadores podem ser inflados por **vazamento de dados**. A separação apropriada depende da unidade de generalização: imagens distintas da **mesma pessoa** não são automaticamente observações independentes.
+
+Avaliação externa em outra população, serviço, equipamento ou período testa uma dimensão de transportabilidade. Ela não substitui estudos de impacto clínico: um classificador pode acertar em dados retrospectivos e falhar ao modificar fluxo de atendimento, gerar alerta excessivo ou sofrer degradação após mudanças operacionais.
+
+### 18.2. Acurácia versus calibração
+
+Um modelo que diferencia relativamente bem quem tem ou não determinada condição pode oferecer **probabilidades mal calibradas**. Por exemplo, se um grupo de pacientes recebe risco previsto de 70%, espera-se, numa calibração apropriada para aquele grupo e horizonte temporal, que a frequência observada esteja próxima desse valor. Discriminação mede ordenação relativa; calibração mede coerência entre risco previsto e frequência observada. **AUC alta não garante calibração**.
+
+No contexto de um teste cuja saída já é binária, sensibilidade/especificidade descrevem classificação. Quando um sistema oferece probabilidades, deve-se avaliar também calibração, estabilidade e consequências clínicas das faixas de decisão. O estudo da curva ROC permanece aprofundado na aula 100.
+
+### 18.3. Subgrupos, justiça e erro diferencial
+
+Um algoritmo pode apresentar sensibilidade global satisfatória e desempenho insuficiente em populações pouco representadas. Em sistemas que usam fotografia clínica ou imagens médicas, diversidade de pigmentação cutânea, idade, qualidade do equipamento, contexto de coleta e prevalência das condições pode influenciar os resultados. Não presumir igualdade de performance com base apenas na média agregada; avaliar estratos clinicamente justificados, intervalos de confiança e viés na definição da referência.
+
+O objetivo não é publicar números por subgrupo arbitrário sem poder estatístico: é identificar sistematicamente **quem corre o risco de receber erro desproporcional** e quais dados adicionais são necessários para garantir segurança.
+
+### 18.4. STARD-AI 2025 — ferramenta atualizada para leitura crítica
+
+A *Nature Medicine* publicou em setembro de 2025 a extensão **STARD-AI**, com itens novos ou modificados sobre conjuntos de dados, características do teste baseado em IA, avaliação, viés e equidade. Uma correção editorial da publicação foi registrada em julho de 2026; ao citar o documento, utilizar a versão do artigo atualizada e informar essa ressalva de rastreabilidade.
+
+**Fonte:** Sounderajah V et al. *The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence*. *Nature Medicine*. 2025;31:3283–3289. https://doi.org/10.1038/s41591-025-03953-8.
+
+**Aplicação à LURIA:** se futuramente houver leitura automatizada de ECG, exames ou achados clínicos, a promessa não deve ser “IA sabe o diagnóstico” a partir de um benchmark interno. Será preciso testar o modelo com avaliação externa, registrar denominadores, negativos falsos, indeterminados, variação por população e percurso de revisão humana. Esta seção é metodológica: **não representa validação de qualquer produto de IA da plataforma**.
+
+## 19. Referências reais e verificação
 
 1. Bossuyt PM et al. **STARD 2015: An Updated List of Essential Items for Reporting Diagnostic Accuracy Studies.** *BMJ*. 2015;351:h5527. DOI: https://doi.org/10.1136/bmj.h5527. Página EQUATOR: https://www.equator-network.org/reporting-guidelines/stard/
 2. Cohen JF et al. **STARD 2015 guidelines for reporting diagnostic accuracy studies: explanation and elaboration.** *BMJ Open*. 2016;6:e012799. https://doi.org/10.1136/bmjopen-2016-012799
@@ -302,7 +533,7 @@ Apostila de metodologia depende principalmente de **esquemas originais nítidos*
 
 O presente texto usa números demonstrativos inventados (descritos como fictícios) e elaboração original. Não se deve atribuir as matrizes numéricas aos estudos citados.
 
-## 15. Auditoria de pendências antes da entrega premium
+## 20. Auditoria de pendências antes da entrega premium
 
 - **Cobertura inicial:** matriz 2×2, sensibilidade, especificidade, VPP, VPN, efeito da prevalência, RV, Bayes, estratégias em série/paralelo, vieses, quatro casos e seis questões de cinco alternativas presentes.
 - **Aprofundar:** intervalos de confiança com exemplos calculados; dados faltantes e resultados indeterminados; padronização de estudos de concordância; critérios de decisão e utilidade clínica sem antecipar de modo redundante a aula 100; referências brasileiras didáticas de epidemiologia clínica.
