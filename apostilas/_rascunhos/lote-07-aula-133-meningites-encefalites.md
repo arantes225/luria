@@ -203,3 +203,222 @@ A. Descartar HSV com certeza. B. Parar todo tratamento mesmo com RM temporal e c
 - [ ] Selecionar pelo menos dez candidatas reais com licença e aprovação Admin.
 - [ ] Revisão médica formal, teste de autossuficiência e integração desktop/PWA.
 **Estado: somente rascunho.**
+
+
+---
+
+# CAMADA DE APROFUNDAMENTO LURIA — RACIOCÍNIO E TESTES DE MENINGITE
+**Revisão científica editorial de 14/10/2026.** Ampliação original de capítulos 18–24, com conteúdo independente dos resumos do Drive, confrontado com OMS 2025/2026, NICE NG240 2024 e Nota Técnica Conjunta MS 154/2024 (a nota 97/2024 está revogada, a 154/2024 não foi identificada como revogada no portal de 12/02/2026). Material de estudo, não prescrição ou substituto de protocolo assistencial. **Alerta bibliográfico:** existem discordâncias entre duração de antibiótico de meningite bacteriana sem agente identificado na OMS 2025 e na NICE 2024. Registrar a divergência, não escolher um número universal sem contexto.
+
+## 18. Da anatomia meníngea à doença invasiva: por que o caso piora tão rápido?
+
+### 18.1. O SNC possui compartimentos com respostas diferentes
+O encéfalo e a medula são protegidos pela dura-máter, aracnoide e pia-máter. Entre aracnoide e pia circula o líquido cefalorraquidiano (LCR), em continuidade com ventrículos por aberturas específicas. Infecção meníngea envolve espaço subaracnoideo e pode se estender à superfície cerebral, vasos, pares cranianos e sistema ventricular. A tensão entre os volumes de tecido cerebral, sangue e LCR explica risco de **hipertensão intracraniana** quando edema, inflamação e hidrocefalia aumentam conteúdo em compartimento rígido.
+
+A infecção pode começar em nasofaringe e avançar à circulação. *Neisseria meningitidis* e *Streptococcus pneumoniae* podem colonizar mucosas sem doença, mas cepas invasivas atravessam barreira, alcançam sangue e provocam bacteremia. A invasão do SNC depende de virulência, resposta do hospedeiro, barreira hematoencefálica e tempo de disseminação. A presença de bactéria no sangue não garante meningite, mas doença meningocócica pode evoluir com **choque séptico mesmo antes de quadro meníngeo florido**.
+
+### 18.2. A cápsula bacteriana é relevante em duas disciplinas
+Cápsulas polissacarídicas conferem resistência à fagocitose/complemento e ajudam explicar invasividade pneumocócica, meningocócica e por Hib. Vacinas conjugadas induzem respostas mais eficazes em lactentes contra antígenos capsulares específicos. Portanto, conhecer o calendário vacinal muda **probabilidade pré-teste** e prevenção, porém **não permite excluir meningite em criança vacinada**: sorotipos/sorogrupos não cobertos, falha de resposta, outras espécies e condições imunes persistem.
+
+**Exemplo:** criança com vacinação de rotina atualizada, febre, letargia, rigidez e LCR bacteriano não deve ser dispensada por “já tomou pneumocócica”. O efeito vacinal é populacional e individual relevante, mas não oferece risco zero.
+
+### 18.3. O edema cerebral não é uma coisa só
+**Vasogênico:** mediadores inflamatórios tornam barreira vascular mais permeável e promovem passagem de proteínas/líquido intersticial.  
+**Citotóxico:** disfunção energética/alteração iônica levam a edema celular, agravado por hipóxia, isquemia e convulsões.  
+**Intersticial:** obstrução de reabsorção ou circulação do LCR pode gerar hidrocefalia e fluxo transependimário.  
+**Hemodinâmico:** vasculites, vasoespasmo, trombose venosa e trombose arterial reduzem perfusão e podem provocar infarto. Hiponatremia pode aumentar edema por alteração osmótica.
+
+A consequência clínica é que rebaixamento de consciência, vômitos intensos, alterações pupilares e déficits focais não são “sintomas inespecíficos que podem esperar até sair a cultura”. Podem sinalizar complicação expansiva, hidrocefalia ou encefalite associada.
+
+### 18.4. Citocinas, inflamação e corticoide
+Na meningite bacteriana, bactérias e seus componentes ativam resposta inflamatória intensa no LCR. A lise bacteriana após antibiótico também pode liberar moléculas inflamatórias e agravar transitoriamente a cascata, razão fisiopatológica para testar corticoide adjuvante antes/junto aos antibióticos em agentes/populações selecionados.
+
+**Não transpor efeito de dexametasona indiscriminadamente:** as recomendações de NICE NG240 distinguem lactentes muito novos, meningites pneumocócica/Hib e doença meningocócica isolada. A decisão inicial pode anteceder etiologia, mas continuidade é reavaliada quando cultura/PCR identificam agente. Corticoide não deve atrasar primeira dose de antibiótico.
+
+## 19. Reconhecimento clínico baseado em faixa etária e fenótipo de invasividade
+
+### 19.1. O valor limitado da tríade
+A tríade “febre, rigidez de nuca e alteração de consciência” é ensinada por ser marcante, mas sua **ausência simultânea não exclui** meningite. Na criança pequena, rigidez pode ser ausente e irritabilidade pode ser manifestação dominante. É clinicamente mais útil avaliar **febre + sinal neurológico novo** (cefaléia intensa, comportamento anormal, convulsão, recusa alimentar/letargia, fontanela abaulada ou disfunção de consciência) do que cobrar três sinais.
+
+Na doença meningocócica invasiva, a combinação de mal-estar rápido, mialgia desproporcional, extremidades frias, taquicardia, perfusão ruim e exantema hemorrágico pode preceder rigidez. Petequias e púrpura são sinais importantes, mas podem surgir **tardiamente**. Uma criança em choque sem rash pode ter meningococcemia.
+
+### 19.2. A definição brasileira de caso suspeito tem finalidade de vigilância
+A Nota Técnica Conjunta **154/2024** revisou definições do sistema de vigilância. Entre os critérios, destaca febre associada a dois ou mais entre cefaleia intensa, vômitos, confusão/alteração mental, fotofobia, torpor ou convulsão; febre com um sinal meníngeo; febre súbita e erupção petequial/sufusão hemorrágica; **em menores de dois anos** também considera febre com irritabilidade/choro persistente, sonolência ou abaulamento de fontanela, conforme a definição integral. Em surtos, emprega definição **mais sensível**.
+
+**Ponto de prática:** essa definição serve para **captar casos e notificar**, não para proibir iniciar antibiótico em paciente grave que não “preenche literalmente” todo item. A suspeita terapêutica integra tempo de evolução, imunidade e gravidade; vigilância e decisão à beira do leito não são ferramentas idênticas.
+
+### 19.3. Neonato e lactente jovem
+A febre pode ser apenas baixa ou até haver hipotermia. O quadro pode manifestar-se por irritabilidade, sucção fraca, apneia, letargia, hipotonia, convulsões, alteração de perfusão e dificuldade de ganhar peso. Fontanela normal/sem abaulamento não exclui meningite neonatal, assim como taquicardia e recusa alimentar podem aparecer em sepse por outra origem.
+
+**Faixas importam:** o manual OMS de 2026 foca sobretudo **crianças acima de um mês**, enquanto neonatos exigem documentos e farmacologia próprios; NICE NG240 remete à diretriz neonatal NG195. O esquema de ceftriaxona do escolar não deve ser copiado mecanicamente ao neonato prematuro, dada a bilirrubina e incompatibilidades com soluções com cálcio. Ao montar tabela de drogas, separar “0–28 dias”, “28 dias–3 meses” e “acima de três meses” em vez de usar somente “criança”.
+
+### 19.4. Criança maior e adolescente
+Cefaleia intensa, fotofobia, rigidez, febre, vômitos, irritabilidade, sonolência e alteração cognitiva são pistas. Um adolescente que recebeu antitérmico e ficou afebril durante 30 minutos pode continuar gravemente doente. Exame de pele completa, perfusão, estado mental, pupilas, fala/marcha, pares cranianos e estado respiratório deve ser repetido seriamente.
+
+A apresentação pode ser **meningite pura**, **meningoencefalite** ou **sepse meningocócica**, e elas podem coexistir. Criar diagnóstico sindrômico provisório (“infecção do SNC com choque”, “encefalite com convulsões”, “meningite bacteriana sem instabilidade”) permite tratar sem depender de patógeno já nomeado.
+
+### 19.5. Pontos do exame físico que efetivamente mudam decisão
+- **Perfusão/choque:** enchimento capilar, extremidades, pulsos, pressão, consciência, diurese.
+- **Respiração:** apneia, irregularidade, necessidade de proteção de via aérea.
+- **Púrpura rapidamente progressiva:** doença meningocócica invasiva, risco de coagulopatia.
+- **Sinal focal/pupilas alteradas:** complicação encefálica, abscesso/massa, necessidade de imagem seletiva.
+- **Fontanela abaulada:** em contexto apropriado sugere pressão/inflamação, mas tem causas alternativas.
+- **Rigidez, Kernig e Brudzinski:** podem corroborar em mais velhos, sensibilidade limitada, sobretudo em pequenos.
+- **Otite, mastoidite ou sinusite complicada:** possíveis focos contíguos; não atrasar antibiótico por buscar origem.
+- **Lesões vesiculares/alteração comportamental:** levantar HSV e encefalite, especialmente em neonatos e quadro focal.
+- **Sinais crônicos:** perda ponderal, contato TB, imunossupressão e pares cranianos apontam para meningites subagudas.
+
+## 20. Punção lombar: um procedimento que responde perguntas, mas não antecede a vida
+
+### 20.1. As decisões devem acontecer em paralelo
+A NICE NG240 e a OMS 2025 recomendam não executar **neuroimagem de rotina** antes de toda punção. Quando segura e sem atraso clinicamente importante, a coleta de LCR antes dos antibióticos aumenta rendimento de cultura. Quando há choque, crise não controlada, via aérea desprotegida, comprometimento respiratório, coagulopatia/risco hemorrágico, púrpura extensa rapidamente progressiva, infecção no sítio, sinais de hipertensão intracraniana/massa ou deterioração neurológica, a punção pode ser prejudicial e deve ser adiada.
+
+**Sequência no instável:** ressuscitar, hemocultura se colhe sem atraso, antibiótico rápido, discutir corticoide indicado e imagem/LP apenas quando seguro. Uma tomografia prévia normal **não autoriza** punção de um paciente que continua em choque ou com coagulopatia.
+
+**Sequência no estável, sem contraindicações:** hemoculturas e LCR oportunos, depois antibiótico rapidamente — sem converter coleta em ritual que consome horas. Se não houver equipe para punção imediata, tratar e punçar posteriormente quando seguro, ciente de que microbiologia pode ter sensibilidade reduzida.
+
+### 20.2. Quando pensar em imagem antes da LP?
+NICE NG240 destaca sinais como **novos déficits focais, postura anormal/convulsões focais, reação pupilar anormal e Glasgow ≤9 ou queda progressiva/sustentada** e fatores de risco para lesão expansiva. OMS 2025 também considera déficits de pares cranianos, papiledema e imunossupressão grave em determinados contextos, com nuances relativas a convulsões novas em adultos. **Não misturar criteriosamente os sistemas como se fossem exatamente iguais.**
+
+A neuroimagem tem pergunta precisa: existe efeito de massa, desvio de linha média, hidrocefalia importante, abscesso ou outra lesão que modifique segurança e conduta? A tomografia é mais rápida em urgências; RM caracteriza encefalite, abscessos, vasculites e doença profunda com maior detalhamento quando paciente estável. **Imagem negativa não garante risco zero de herniação**, e só o médico responsável pode integrar todo o contexto.
+
+### 20.3. Escolher os tubos de LCR com propósito
+Amostra adequada considera esterilidade, volume, identificação, timing e prioridade de exames. Enviar **citometria (contagem total e diferencial), glicose com sangue próximo, proteínas, bacterioscopia/Gram, cultura e PCR/métodos moleculares relevantes**, conforme laboratório. Na hipótese de HSV, solicitar HSV PCR; enterovírus no lactente/idade apropriada; TB ou fungos em subaguda/imunossupressão. Há contextos em que é fundamental medir pressão de abertura, por exemplo suspeita de criptococose, mas fazê-lo exige posição/técnica que permitam interpretação.
+
+**Glicose isolada do LCR é incompleta:** comparar à glicemia simultânea. Um valor “normal” em mg/dL pode representar relação anormal se glicose sérica muito elevada, e um valor baixo deve levar a pensar também em TB/fungo, neoplasia e outras causas, não apenas piogênica.
+
+### 20.4. Por que o LCR muda conforme tempo?
+Na meningite bacteriana típica, neutrófilos predominam, proteínas elevam-se e glicose cai; entretanto infecção inicial, neutropenia, imunossupressão, prematuridade e antibiótico prévio podem produzir padrões atípicos. Na meningite viral clássica há linfomononucleares e glicose usualmente preservada, mas **enterovírus precoce pode ter predomínio neutrofílico**. Em TB/fungos o curso subagudo e baixa glicose podem apontar, mas uma amostra sem “perfil escolar” não exclui.
+
+**Tabela interpretativa com cautela:**
+
+| Achado LCR | Interpretação possível | Por que não é suficiente isoladamente |
+|---|---|---|
+| Turvo e neutrofílico | Bactéria piogênica | Pleocitose inflamatória pode ter outras causas e estágio importa |
+| Mononuclear, glicose normal | Viral | TB precoce e infecções parcialmente tratadas podem divergir |
+| Proteína elevada + glicose baixa | Bacteriana, TB, fungo, outras | Relação LCR:soro, idade e clínica fundamentais |
+| Gram positivo com diplococos lancetados | Sugere pneumococo | Cultura/PCR e susceptibilidade confirmam agente |
+| Diplococos Gram-negativos intracelulares | Sugere meningococo | Identificação laboratorial e notificação ainda necessárias |
+| Muitas hemácias após punção difícil | Punção traumática | Também pode haver hemorragia; correções automáticas não excluem inflamação |
+| LCR quase normal com quadro encefalítico | HSV precoce possível | PCR, RM e EEG, repetir exames conforme suspeita |
+
+### 20.5. Interpretar um laudo numérico sem decorar só corte
+Exemplo hipotético: criança com febre, rigidez, glicemia sanguínea 110 mg/dL, LCR com glicose 24 mg/dL, 2.400 leucócitos/mm³ predominando neutrófilos, proteína 210 mg/dL e diplococos ao Gram. A razão de glicose é 24/110 ≈ **0,22**. **Conclusão:** conjunto sugere fortemente meningite bacteriana e justifica terapia de emergência mesmo antes da cultura. Se Gram apontar diplococos Gram-negativos, suspeitar meningococo; diplococos Gram-positivos lancetados, pneumococo, mas interpretação microbiológica deve ser confirmada.
+
+Outro laudo: bebê febril com LCR de 90 células/mm³ e 70% de neutrófilos nas primeiras horas, glicose semelhante ao sangue, PCR enterovírus positivo, cultura bacteriana negativa até então e bom estado clínico. **Não aplicar regra “neutrófilos = bactéria”** sem contexto: fase precoce de enterovirose pode ser neutrofílica, mas não suspender antibiótico só por PCR viral positivo se houver outros elementos de alto risco ou coinfecção suspeita.
+
+### 20.6. Cultura, PCR e teste negativo
+A cultura é importante para susceptibilidade e vigilância de resistência, mas antibiótico prévio pode reduzir rendimento. A PCR permite detectar material genético de agentes selecionados e auxiliar mesmo quando cultura cai de sensibilidade; resultado negativo de painel não cobre todos os agentes e também sofre limitações técnicas/amostrais. Hemocultura pode identificar patógeno quando LCR foi coletado após terapia ou não pôde ser obtido.
+
+**PCR HSV inicial negativo em encefalite compatível** não resolve suspeita muito precoce: IDSA 2008 orienta considerar repetição **3–7 dias** após teste inicial em síndrome clínica ou imagem temporal compatíveis. EEG e RM somam evidências; não suspender aciclovir de modo reflexo apenas por uma PCR inicial negativa de alto risco.
+
+### 20.7. LCR neonatal — evitar extrapolação
+Recién-nascidos podem ter faixas fisiológicas distintas de celularidade/proteína conforme gestação/idade pós-natal; punção traumática é frequente; antibiótico por sepse neonatal pode anteceder LCR. A interpretação exige **referência apropriada de laboratório e neonatologia**, não usar os mesmos limites de criança escolar ou adulto. A escolha de terapia para estreptococo grupo B e *E. coli* neonatal difere de meningite comunitária do escolar; a validação final das doses deve ocorrer com protocolo brasileiro neonatal.
+
+## 21. Antimicrobianos: matriz de raciocínio, sem falsa “receita pediátrica universal”
+
+### 21.1. Por que a primeira hora importa mais que o nome completo do microrganismo?
+OMS 2025 e NICE 2024 valorizam iniciar terapia intravenosa **o mais precocemente possível**, visando até uma hora desde a chegada quando suspeita de meningite bacteriana no hospital. Hemocultura/LP antes de antibiótico são desejáveis somente se não geram atraso danoso. A escolha inicial utiliza **idade, etiologia mais provável, resistência local, imunossupressão e alergias**. Após microbiologia, descalonar com segurança quando possível.
+
+### 21.2. Escolha empírica por situação
+| Cenário | Cobertura a considerar | Limite/atenção |
+|---|---|---|
+| Criança >1 mês com meningite bacteriana provável | Ceftriaxona IV ou cefotaxima IV em dose **meníngea**, conforme diretrizes OMS/NICE e protocolo local | Dose para pneumonia não substitui dose de meningite |
+| Pneumococo com resistência relevante à cefalosporina em área/centro específico | Considerar adicionar vancomicina IV à cefalosporina conforme protocolo/antibiograma local | Não acrescentar indiscriminadamente a todos sem contexto epidemiológico |
+| Suspeita de Listeria em imunossuprimidos e populações de risco | Ampicilina/amoxicilina IV associada conforme idade e risco | Cefalosporina isolada não trata Listeria adequadamente |
+| Neonato com sepse/meningite | Esquema neonatal para GBS, Gram-negativos e Listeria conforme serviço | Ceftriaxona pode ser inadequada em neonatos com risco de hiperbilirrubinemia e soluções contendo cálcio |
+| Doença meningocócica com sepse/choque | Ceftriaxona IV e suporte de choque imediatamente | LP é posterior se choque/púrpura extensa |
+| Suspeita de encefalite herpética | Aciclovir IV empírico com ajuste por idade/renal, **em adição** a antibiótico se meningite bacteriana também plausível | Aciclovir não cobre meningococo/pneumococo |
+| Meningite subaguda por TB/fungo | Investigação e terapia etioespecífica | Não tratar fungo/TB com ceftriaxona como solução final |
+
+OMS 2025 admite vancomicina em regiões de maior prevalência de resistência de pneumococo, sem declarar um esquema idêntico a toda população. A NICE 2024 especifica ceftriaxona de referência e amoxicilina adicionais para Listeria por fatores de risco, incluindo idades mais altas, gestação/imunossupressão; **a extrapolação de risco >60 anos obviamente não descreve o paciente pediátrico usual**. O objetivo da tabela é decisão fisiopatológica e microbiológica, não substituir dosagem por peso/idade.
+
+### 21.3. Por que o antibiótico precisa penetrar no LCR?
+A barreira hematoencefálica restringe moléculas por tamanho, polaridade, transporte e ligações proteicas. Inflamação meníngea pode aumentar penetração de certos fármacos, mas concentração bactericida no LCR exige **dose e intervalo específicos**. Uma dose habitual de ceftriaxona para otite/pneumonia não pode ser assumida equivalente à necessidade meníngea sem conferir regime. O cálculo em mg/kg/dose e limites máximos deve respeitar peso, idade, função renal/hepática, forma farmacêutica e disponibilidade.
+
+### 21.4. Após identificação do patógeno
+**Meningococo:** ceftriaxona/cefotaxima em diretrizes internacionais e nacionais; duração varia por norma e resposta. NICE NG240 usa **5 dias** se criança recuperada; não transportar automaticamente a duração para infecção pneumocócica.
+
+**Pneumococo:** potencial de complicações neurológicas e perda auditiva importante, sensibilidade a beta-lactâmicos e evolução clínica determinam duração. NICE utiliza **10 dias** em recuperação; outras normas brasileiras e cenários específicos podem variar.
+
+**Hib:** terapia com cefalosporina adequada e controle epidemiológico de contatos elegíveis, com duração definida em documento aplicável; NICE aborda 7 dias quando recuperado e até 10 dias em certos casos.
+
+**GBS e bacilos Gram-negativos neonatais:** geralmente durações maiores que meningococo, com avaliação de foco e complicações. A NICE descreve **14 dias** em GBS e **21 dias** em bacilos Gram-negativos em recuperação, em determinados perfis; não usar essa duração sem ajuste neonatal local.
+
+**Agente não identificado:** **divergência de diretriz verificável** — OMS 2025 considera suspensão de tratamento empírico após **7 dias** em cenário não epidêmico com recuperação clínica sustentada (incluindo parâmetros de normalidade por ≥48 h), enquanto NICE 2024 sugere **10 dias** quando padrão de LCR é bacteriano, culturas/PCR negativas e pessoa se recuperou, com avaliação especializada caso contrário. A LURIA precisa mostrar essa diferença e orientar decisão pelo especialista, microbiologia, situação local e evolução, **não escolher “7 dias sempre” ou “10 dias sempre”**.
+
+### 21.5. Dexametasona: quando considerar e quando reavaliar
+A NICE NG240 recomenda dexametasona IV para **forte suspeita ou confirmação de meningite bacteriana em maiores de 3 meses**, idealmente **antes/com a primeira dose de antibiótico**, sem atrasar o antibiótico caso indisponível. Em lactentes de 28 dias a 3 meses, obter parecer especializado. Após identificação, prosseguir especialmente em **pneumococo ou Hib** e suspender em outros agentes segundo diretriz NICE; discutir quando agente permanece desconhecido. Essa recomendação tem contexto britânico e evidência variável por população; protocolo brasileiro deve orientar aplicação/dose final. Corticoide de rotina **não** é indicado apenas por meningococcemia, salvo situações específicas como choque refratário com indicação intensiva.
+
+### 21.6. Alergia: qual reação e qual risco?
+“Alérgico à penicilina” pode significar náusea inespecífica, rash leve remoto ou anafilaxia verdadeira. Antes de omitir antibiótico de primeira linha, investigar agente, tempo de reação, sintomas cutâneos/respiratórios/hemodinâmicos e possível documentação. Em reação grave verdadeira, esquema alternativo exige decisão infectológica. **Não forçar reexposição perigosa nem substituir automaticamente ceftriaxona por antibiótico sem cobertura adequada de meningite.**
+
+### 21.7. Resposta insuficiente: voltar ao diagnóstico e à fonte
+Se após terapia o paciente permanece febril e alterado, considerar resistência, foco parameníngeo (mastoidite/sinusite/abscesso), hidrocefalia, vasculite/infarto, trombose, subdural, convulsão não convulsiva, hiponatremia, dano auditivo e doença não bacteriana (TB, fungo, encefalite). Revisar hora e dose do antimicrobiano, cultura e suscetibilidade, volume LCR, imagem e indicação de novo LCR em contexto selecionado. Não interpretar febre isolada nas primeiras horas como falha terapêutica sem avaliar conjunto.
+
+## 22. Encefalites — reconhecer quando a pergunta clínica mudou
+
+### 22.1. A diferença sindrômica
+**Meningite** enfatiza meninge e LCR; **encefalite** enfatiza alteração sustentada de função cerebral (consciência, comportamento, cognição, memória, convulsões focais, sinais neurológicos). O paciente pode apresentar ambos. Encefalite viral não se reconhece simplesmente por ALT elevada, febre ou rigidez; é essencial documentar **encefalopatia** e excluir causas metabólicas/tóxicas/sépticas.
+
+**Critérios operacionais de encefalite** frequentemente usam estado mental alterado por ≥24 h sem causa alternativa evidente, associado a critérios menores como febre, convulsão nova, déficit focal, pleocitose LCR, EEG/RM sugestivos; diretrizes diferentes podem usar critérios distintos. **Não esperar completar 24 h para tratar HSV fortemente suspeito**.
+
+### 22.2. HSV: por que tratar antes da PCR
+HSV-1 frequentemente causa encefalite esporádica e pode ter predileção por regiões temporais, levando a alterações de linguagem/comportamento, memória, convulsões e lesões temporais em RM. Entretanto apresentações atípicas ocorrem, sobretudo em crianças pequenas e imunossuprimidos.
+
+**Aciclovir IV empírico precoce** é relevante na suspeita de encefalite HSV. A droga é ativada por enzima viral e inibe DNA-polimerase viral, mas não atua contra bactérias de meningite. Exige hidratação apropriada e atenção à função renal pelo risco de cristalúria/nefrotoxicidade e outros efeitos; ajustar em insuficiência renal. Neonatos têm protocolos próprios para avaliação de doença disseminada/SNC e seguimento, que não se reduzem a “criança maior com aciclovir”.
+
+### 22.3. RM e EEG de encefalite
+**RM** pode mostrar alterações temporais mesiais/insulares no HSV, mas ausência de lesão típica precoce não afasta diagnóstico. **EEG** pode evidenciar lentificação ou descargas epileptiformes regionais, inclusive status não convulsivo; não identifica etiologia isoladamente. **LCR PCR HSV** é teste central; se negativo no início e suspeita continua forte, avaliar repetição e manutenção terapêutica com especialistas, conforme IDSA clássica.
+
+**Ponto de segurança:** bloquear movimentos com agente paralisante na UTI **não trata status cerebral**; EEG contínuo pode ser necessário quando encefalopatia persiste após sedação/crises.
+
+### 22.4. Enterovírus: quando a evolução costuma ser benigna
+Enterovírus é causa frequente de meningite viral, especialmente em lactentes/crianças, com clínica febril, irritabilidade/cefaleia e LCR pleocítico variável. Em imunocompetentes estáveis e sem encefalite/sepse bacteriana concomitante, tratamento geralmente é suporte, pois não há antiviral rotineiro equivalente a aciclovir para enterovírus. Um PCR enterovírus positivo pode apoiar descalonamento quando a probabilidade de bactéria é baixa e culturas/outros dados são concordantes; em RN doente ou paciente grave, a decisão deve ser mais cautelosa.
+
+### 22.5. Arboviroses no Brasil
+Dengue, chikungunya, zika e outros arbovírus podem associar-se a manifestações neurológicas diretas/indiretas; o diagnóstico exige contexto epidemiológico, janela de testes e avaliação de gravidade. Febre amarela/encefalopatias metabólicas e leptospirose podem simular neuroinfecção em cenários específicos. **Não atribuir toda encefalite febril a dengue por prevalência local** sem excluir HSV e meningite bacteriana quando tratáveis e potencialmente graves.
+
+### 22.6. ADEM e encefalite autoimune
+**Encefalomielite aguda disseminada (ADEM):** quadro imunomediado frequentemente após infecção, com encefalopatia, déficits multifocais e lesões desmielinizantes em RM; é diferencial importante, especialmente pediátrico.
+
+**Encefalite autoimune por anti-NMDA e outras:** alterações comportamentais/psiquiátricas, crises, movimentos anormais, instabilidade autonômica e alteração de consciência podem ocorrer. O diagnóstico exige considerar idade, quadro, RM/EEG/LCR, anticorpos e exclusão de causas infecciosas pertinentes. **Não iniciar imunossupressão de alto risco sem avaliar infecções tratáveis como HSV**, nem aguardar anticorpo semanas se especialista julgar síndrome altamente provável e houver indicação de manejo.
+
+### 22.7. Meningite tuberculosa e criptococose — por que não cabem no pacote bacteriano comum
+**Meningite tuberculosa:** evolução subaguda, febre, cefaleia, perda ponderal, sinais de pares cranianos, vasculite basal e hidrocefalia; história de contato ajuda, mas ausência não exclui. LCR com proteínas altas/glicose baixa/linfomononucleares é típico, porém testes microbiológicos podem ser falsamente negativos por baixa carga bacilar. Tratamento deve usar esquema/duração próprios e corticoide adjuvante em indicação apropriada; protocolo de TB meníngea precisa ser consultado. **Não deduzir “ADA LCR >10 confirma TB”** como se fosse teste universalmente definitivo — limiares variam, sensibilidade/especificidade são imperfeitas.
+
+**Meningite criptocócica:** imunossupressão avançada, cefaleia persistente e pressão de abertura elevada; teste de antígeno criptocócico LCR/soro e cultivo conforme protocolo, terapia antifúngica por fases e controle da hipertensão intracraniana fazem parte do tratamento. Paciente com HIV avançado e cefaleia subaguda merece investigação específica mesmo sem rigidez clássica. Esteroide de rotina para criptococose não deve ser simplesmente copiado da meningite pneumocócica.
+
+## 23. Complicações: agir para prevenir sequela e não apenas reduzir febre
+
+### 23.1. Complicações neurológicas imediatas
+- **Convulsão e estado de mal:** emergência de ABCDE/anticonvulsivante/EEG, com tratamento de infecção subjacente.
+- **Edema e hipertensão intracraniana:** rebaixamento de consciência, alterações pupilares e sinais focais; UTI/neuroimagem e manejo conforme equipe.
+- **Hidrocefalia:** obstrução/absorção do LCR e aumento ventricular; avaliação neurocirúrgica.
+- **Vasculite e infarto:** déficits focais, alteração de consciência e imagem de lesão isquêmica.
+- **Trombose venosa cerebral:** cefaleia grave, convulsões, papiledema, déficits e imagem vascular.
+- **Empiema subdural/abscesso:** febre persistente, deterioração e focalidade; imagem e possível drenagem.
+- **Distúrbio de sódio:** SIADH, perda cerebral de sal ou outras causas com impacto diferente de fluidoterapia; investigar volume/sódio seriados, não aplicar restrição hídrica automática sem etiologia.
+- **Choque e coagulopatia:** meningococcemia com purpura fulminante, necrose cutânea e disfunção multissistêmica.
+
+### 23.2. Perda auditiva: a sequela invisível
+Meningite pode comprometer cóclea, nervo auditivo e vias centrais. A perda auditiva pode não ser percebida antes da alta, mas compromete linguagem, cognição e aprendizagem. **NICE NG195 2024 para bebês com meningite** recomenda avaliação audiológica dentro de **quatro semanas após estar clinicamente apto para testar**, preferencialmente antes da alta quando viável; NG240 orienta acompanhamento especializado e reconhecimento de sequelas em outras faixas. Esses prazos são referências de qualidade, mas o seguimento no SUS precisa ser pactuado com rede local.
+
+Em surdez grave/profunda pós-meningite, avaliação oportuna para implante coclear pode ser particularmente importante pelo risco de ossificação coclear. Não aguardar idade escolar para pesquisar audição.
+
+### 23.3. Seguimento do neurodesenvolvimento
+Avaliar marcos motores/linguagem, memória, funções executivas, dificuldades escolares, comportamento, cefaleias e epilepsia após infecção. Bebês e pré-escolares podem manifestar sequelas **quando a demanda cognitiva aumenta**, meses ou anos depois; exame neurológico normal na alta não encerra acompanhamento.
+
+**Plano mínimo documentado:** etiologia/antibióticos recebidos, culturas/PCR, complicações, avaliação audiológica, exames de imagem relevantes, retorno pediátrico, necessidade de neurologia/fono/terapia ocupacional/reabilitação e sinais de alarme familiar. Se houve necrose por púrpura fulminante, incluir cicatrizes, mobilidade, perfusão distal e saúde mental; a criança não é apenas um LCR curado.
+
+### 23.4. Cuidadores e escola
+Orientar fadiga, dificuldade de concentração e comportamento após UTI; fornecer relatório claro para APS/escola quando necessário, evitando estigmatização. Psicossocial e acolhimento fazem parte das sequelas de doenças meningocócicas em famílias. Atualizar vacinação e contatos elegíveis conforme vigilância, sem confundir cura com erradicação de toda colonização em todos os conviventes.
+
+## 24. Contrastes clínicos: quatro cenários para treinar decisão
+**Cenário A:** 8 meses, febre, recusa, abaulamento de fontanela, sem rigidez. → **Meningite possível**, hemocultura/antibiótico oportunos e LP quando seguro; idade torna sinais clássicos pouco sensíveis.
+
+**Cenário B:** 15 anos, dor muscular intensa, taquicardia, extremidades frias e petequias evolutivas, sem cefaleia. → **Doença meningocócica invasiva e choque**; ressuscitar e tratar antes de LP, notificar e avaliar contatos.
+
+**Cenário C:** 12 anos, comportamento alterado, febre, convulsão focal, RM temporal/EEG alterado. → **Encefalite HSV possível**, aciclovir empiricamente indicado junto à investigação; PCR inicial negativo não dispensa reavaliação.
+
+**Cenário D:** 9 anos, três semanas de cefaleia, paresia de VI nervo, exposição a TB, LCR linfocitário/proteína alta/glicose baixa. → **Meningite tuberculosa**, mapeamento de hidrocefalia/vasculite, investigação específica e terapia especializada; não esperar baciloscopia positiva para agir se forte suspeita.
