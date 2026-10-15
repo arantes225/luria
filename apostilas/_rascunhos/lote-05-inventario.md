@@ -4,10 +4,10 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 
 | Nº | Área | Tema | Situação inicial no repositório |
 |---|---|---|---|
-| 093 | Pediatria | Asma na infância | Rascunho avançado em `_rascunhos/lote-05-093-asma-infancia.md` (~73,9 mil caracteres brutos Markdown, ~65,8 mil estimados sem marcação/tabelas); ainda necessita revisão médica e validação formal |
+| 093 | Pediatria | Asma na infância | Rascunho ampliado em `_rascunhos/lote-05-093-asma-infancia.md` (79.426 caracteres Markdown); critérios GINA 2026 do pré-escolar e gravidade de crises corrigidos; revisão médica/doses ainda pendentes |
 | 094 | GO | Rotura prematura de membranas | Pasta existente `amniorrexe-prematura/`; preservar e auditar |
 | 095 | Preventiva | Sensibilidade, especificidade e valores preditivos | Não identificada pasta temática homônima; buscar conteúdo integrado |
-| 096 | Clínica | Distúrbios hidroeletrolíticos | Não identificada pasta homônima; auditar antes de criar |
+| 096 | Clínica | Distúrbios hidroeletrolíticos | Rascunho original iniciado em `_rascunhos/lote-05-096-disturbios-hidroeletroliticos.md` (31.799 caracteres Markdown), com benchmarking PARCIAL de três PDFs do Drive; pendem capítulos e revisão |
 | 097 | Cirurgia | Pancreatite aguda cirúrgica | Não identificada pasta homônima; auditar antes de criar |
 | 098 | Pediatria | Crupe e epiglotite | Não identificada pasta homônima; auditar antes de criar |
 | 099 | GO | Trabalho de parto prematuro | `trabalho-parto-prematuro/index.html` é apenas o contêiner (~3,1 mil caracteres); conteúdo médico já existe em `content.json` (~71,1 mil caracteres brutos). Preservar e auditar utilidade real |
@@ -15,7 +15,7 @@ Fonte da grade: `assets/js/cronograma-base-data.js`, aulas 93–115. Não inferi
 | 101 | Clínica | Distúrbios ácido-base | Sem pasta homônima identificada |
 | 102 | Cirurgia | Obstrução intestinal | Sem pasta homônima identificada |
 | 103 | Pediatria | Tuberculose na infância | Sem pasta homônima identificada |
-| 104 | GO | Hemorragia pós-parto | Manuscrito avançado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (~85,7 mil caracteres brutos; ~74,7 mil de texto estimado após remoção simples de cabeçalhos/tabelas); `assistencia-ao-parto/` possui cobertura parcial e foi preservada; pendem revisão médica, validação de doses e imagens |
+| 104 | GO | Hemorragia pós-parto | Manuscrito avançado em `_rascunhos/lote-05-104-hemorragia-pos-parto.md` (88.061 caracteres Markdown); correções OMS 2025 sobre ocitocina, uterotônicos preventivos e PFC realizadas; `assistencia-ao-parto/` preservada; pendem revisão clínica e integração |
 | 105 | Preventiva | Desenhos de estudos epidemiológicos | Sem pasta homônima identificada |
 | 106 | Clínica | Lesão renal aguda | Sem pasta homônima identificada |
 | 107 | Cirurgia | Hérnias da parede abdominal | Sem pasta homônima identificada |
@@ -77,3 +77,14 @@ A classificação inicial da apostila 099 com base apenas em `index.html` estava
 - FEBRASGO, Femina 2025, protocolos sobre HPP e manejo hemostático (textos oficiais indexados, links editoriais com alterações de hospedagem).
 
 **Revisão de questões no mesmo checkpoint:** substituídas as seis questões originais abreviadas por seis questões completas, com explicação de A–E, referência didática ao conteúdo e mini-revisão; agora são **14 questões** (seis fundamentais e oito avançadas). Contagem de arquivo bruto atual: **85.742 caracteres**, estimativa textual simples sem cabeçalhos e tabelas ~**74.668**. Meta métrica superada em estimativa, **mas não atesta texto didático útil sem repetição**, atualização de todas as doses, autossuficiência nem aprovação humana. Nenhum HTML de produção alterado.
+
+
+## Checkpoint adicional — revisão científica e abertura da apostila 096 (14/10/2026)
+
+**093 — Asma infantil:** rascunho atualizado para 79.426 caracteres brutos de Markdown. Verificação direta de GINA 2026: episódios de sibilância no pré-escolar requerem pelo menos um episódio confirmado por profissional/cuidado descritivo convincente e duração compatível; hipótese pode continuar como *suspeita de asma*. Incluídos critérios clínicos de gravidade por idade; apresentados de forma autoral sem copiar quadros da GINA. Fontes: https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf ; https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . Necessita validação de apresentações disponíveis no Brasil, dose por dispositivo, depuração de redundâncias e revisão externa.
+
+**104 — Hemorragia pós-parto:** rascunho de 88.061 caracteres brutos de Markdown. Verificadas recomendações OMS/FIGO/ICM 2025: para prevenção não são recomendadas ergometrina/metilergometrina e associação fixa com ocitocina, enquanto fármacos dessa classe podem aparecer no tratamento se apropriados; dose terapêutica comum de ocitocina 10 UI IV lenta e manutenção conforme resposta; qualificação da recomendação de PFC diante de hemorragia grave. Fonte: https://www.ncbi.nlm.nih.gov/books/NBK619233/?report=printable . Precisa de consolidação de capítulos com conceitos redundantes e checagem das divergências com FEBRASGO e protocolos brasileiros.
+
+**096 — Distúrbios hidroeletrolíticos:** iniciado manuscrito original de 31.799 caracteres brutos. Benchmark do Drive EFETIVAMENTE LIDO: “04 - ECG DISTURBIOS HIDROELETROLITICOS.pdf”, “08 - GASOMETRIA ARTERIAL - PARTE 2.pdf” e “02 - ESPECIALIDADES- NEFRO - DRC, LRA.pdf”. Nenhum é equivalente completo; **etapa zero apenas parcialmente satisfeita para abrangência total**. Dados de emergência ancorados na diretriz europeia de hiponatremia 2014 (https://academic.oup.com/ejendo/article/170/3/G1/6668028) e na UK Kidney Association 2023 (https://www.ukkidney.org/sites/default/files/FINAL%20VERSION%20-%20UKKA%20CLINICAL%20PRACTICE%20GUIDELINE%20-%20MANAGEMENT%20OF%20HYPERKALAEMIA%20IN%20ADULTS%20-%20191223.pdf). Diferenças relevantes versus PDF resumido: ECG não estratifica sozinho risco da hipercalemia; unidades de QT precisam ser corrigidas e conferidas.
+
+**Gate:** nenhuma dessas apostilas foi integrada ao HTML/JSON da produção, nenhuma foi aprovada por revisor clínico independente; números brutos de caracteres não comprovam 60 mil caracteres úteis, cobertura autossuficiente nem legalidade de imagens. Próxima rodada deve aprofundar 096 e completar reconciliação de 093/104 sem recriar obras existentes.
