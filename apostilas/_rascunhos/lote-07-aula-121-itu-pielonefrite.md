@@ -33,16 +33,16 @@ A diretriz IDSA 2025 apoia, em pacientes selecionados com ITU complicada/pielone
 5. Cultura positiva em paciente sondado pode refletir colonização: interpretar junto ao quadro clínico.
 
 ## 7. Matriz de expansão obrigatória (não concluída)
-- [ ] Epidemiologia brasileira, populações especiais e critérios de bacteriúria assintomática com referências nacionais.
+- [ ] Populações especiais e bacteriúria assintomática desenvolvidas; epidemiologia brasileira quantitativa e revisão nacional de dados ainda pendentes.
 - [ ] Diagnóstico aprofundado: coleta, limiares microbiológicos, hematúria, resistência e exames de imagem.
 - [ ] Tratamentos completos por síndrome e população: escolhas, doses, intervalos, ajuste renal, contraindicações, gestação e resultados de culturas.
-- [ ] Gestantes, crianças, homens, idosos, sondagem vesical, transplante e recorrência.
-- [ ] Tabelas diagnósticas, prevenção e retorno; algoritmos de UBS, pronto atendimento e hospital.
-- [ ] Pelo menos 4 casos clínicos comentados completos.
-- [ ] Pelo menos 6 questões autorais com justificativa de todas as alternativas.
-- [ ] Registro comparativo de apostila de referência acessível no Drive e LURIA padronizada.
-- [ ] Fonte brasileira atual, revisão médica formal e imagens candidatas com licenças revisadas.
-- [ ] Auditorias técnica/editorial e >=60 mil caracteres didáticos úteis.
+- [x] Populações especiais (gestantes, crianças, homens, idosos, sondagem vesical, transplante e recorrência) abordadas; revisar tratamento individualmente.
+- [x] Tabelas diagnósticas, prevenção, acompanhamento e algoritmos de UBS, pronto atendimento e hospital incluídos; testar aplicação clínica.
+- [x] Seis casos clínicos comentados completos incluídos; revisão clínica editorial ainda pendente.
+- [x] Oito questões autorais comentadas com justificativa de todas as alternativas.
+- [ ] Comparativo PARCIAL de dois PDFs do Drive concluído, sem material integralmente equivalente; falta registro de comparação com a LURIA padronizada.
+- [ ] Fontes brasileiras prioritárias identificadas (FEBRASGO, SBP e MS); revisão médica formal e licença/imagens permanecem pendentes.
+- [ ] Arquivo já excede 60 mil caracteres totais, mas ainda falta aferir 60 mil caracteres *didáticos úteis*, auditar redundância e revisão técnica/editorial.
 
 ## 8. Referências verificadas
 1. Infectious Diseases Society of America. *2025 Guideline Update on Complicated Urinary Tract Infections*. https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/
