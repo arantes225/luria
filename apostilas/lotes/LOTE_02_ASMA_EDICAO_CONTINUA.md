@@ -372,7 +372,7 @@ Em idosos, diferenciar asma de insuficiência cardíaca, DPOC, doenças intersti
 
 Asma relacionada ao trabalho pode surgir ou piorar em contato com farinha, isocianatos, produtos de limpeza, poeira orgânica, látex e outros agentes. A pergunta “melhora nos finais de semana ou férias?” é útil, mas não definitiva. Registros de sintomas e pico de fluxo em dias de exposição e afastamento, avaliação ocupacional e medidas de redução de exposição são relevantes. Diagnosticar sem discutir o ambiente de trabalho pode perpetuar a causa e produzir perda funcional.
 
-### 8.2 Populações especiais e comorbidades — decisões que caem em prova
+### 8.1.1 Populações especiais e comorbidades — decisões que caem em prova
 
 #### Gestação: risco materno e fetal versus exposições
 
@@ -520,6 +520,45 @@ Se persistem despertares, limitação ou exacerbadores apesar de boa técnica e 
 **Referência conferida:** GINA 2026 *Summary Guide for Asthma Management and Prevention*, seção de tratamento em crianças (páginas impressas 28–30) e tabela 7 de AIR/MART (página impressa 45): https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . A síntese e a vinheta acima são originais. Os quadros da GINA possuem direitos autorais e **não devem ser copiados como imagem para a LURIA**.
 
 
+### 8.8 Escola, família e retorno após a crise: transformar prescrição em proteção real
+
+A criança passa parte importante do dia fora da supervisão direta dos responsáveis. Por isso, um tratamento farmacológico correto **no receituário** pode falhar se a escola não sabe reconhecer piora, o inalador de alívio não está acessível, a apresentação do dispositivo é inadequada ou o adulto responsável desconhece o plano. O cuidado de asma na infância combina diagnóstico, tratamento contendo CI, orientação familiar, participação da criança e comunicação segura com a equipe escolar.
+
+#### 8.8.1 Plano escrito que serve para um professor ou cuidador
+
+O plano deve ser simples, atualizado, legível e **específico à idade e ao inalador real**. Recomenda-se registrar: nome e contato do aluno e responsáveis; diagnóstico e gatilhos mais relevantes; medicamento de manutenção e horário; produto de alívio correto, instrução de administração e supervisão; critérios de piora e de emergência; telefone da família, unidade de referência e fluxo da escola para chamar socorro. Não substituir essa informação por “usar bombinha se piorar” — há diferença entre SABA, CI-SABA e CI-formoterol conforme idade, etapa e disponibilidade.
+
+| Sinal observado na escola | Interpretação prudente | Resposta esperada |
+| --- | --- | --- |
+| Tosse/chiado leve, aluno alerta e falando normalmente | Pode ser início de sintomas; precisa de avaliação e plano | Seguir dispositivo de alívio prescrito e verificar resposta, informando responsáveis |
+| Limitação do esforço, sintomas recorrentes ou necessidade repetida de alívio | Controle pode estar insuficiente | Registrar frequência, acionar responsáveis e antecipar avaliação de técnica/controle |
+| Dificuldade de terminar frases, retrações intensas ou piora apesar do alívio orientado | Possível crise moderada/grave | Acionar atendimento de urgência sem atraso, seguindo plano e suporte disponíveis |
+| Exaustão, sonolência, cianose, tórax silencioso, incapacidade de falar ou beber | **Alerta de risco de vida** | Acionar emergência imediatamente; não aguardar retorno do responsável ou próxima dose programada |
+
+**A criança precisa ter participação compatível com sua capacidade**, mas não se deve transferir a ela toda a responsabilidade por uma crise grave. Documentar quem mantém o dispositivo, onde fica o espaçador, quem ajuda a administrar e quando ele será substituído ao acabar. O plano escolar deve ser combinado com consentimento e sigilo, evitando exposição pública desnecessária da condição.
+
+#### 8.8.2 Atividade física, exercícios e diagnóstico diferencial
+
+O objetivo da asma bem controlada é permitir brincar, participar de educação física e ter vida ativa, não dispensar permanentemente a criança das aulas por medo de chiado. Perguntar quando os sintomas surgem: falta de ar **no auge** do exercício com ruído inspiratório no pescoço pode sugerir **obstrução laríngea induzível**; tosse, aperto torácico e chiado com padrão compatível podem ocorrer na broncoconstrição por exercício. Ambas podem coexistir com asma, e uma resposta ruim ao broncodilatador não comprova automaticamente que a criança “não tem asma”.
+
+Avaliar também descondicionamento, anemia, cardiopatia ou outra doença quando sintomas não acompanham exposição ou variabilidade esperada. Em crianças com asma confirmada, ajustar terapia anti-inflamatória e alinhar plano para exercícios; **não oferecer betabloqueador, AINE ou outro medicamento indiscriminadamente** sem história de sensibilidades e riscos. Para exercício ou alérgeno, a GINA admite uso do reliever anti-inflamatório apropriado quando prescrito na combinação e idade validadas; a equipe não deve substituir produto por outro contendo LABA que não é formoterol.
+
+#### 8.8.3 A transição entre faixas etárias não é apenas o aniversário
+
+O Guia Resumido GINA 2026 cobre especificamente **crianças de 6–11 anos**, adolescentes e adultos; ele **não é um manual de prescrição para menores de seis anos**. A criança que acaba de completar seis anos pode ainda ter dificuldade de realizar espirometria reprodutível, e uma criança de onze anos próxima da adolescência continua utilizando o regime cuja evidência e dispositivo correspondam à sua faixa. Rever **capacidade de usar o inalador**, indicação local, concentração, manutenção e resgate antes de trocar qualquer produto.
+
+| Idade e cenário | Conduta de raciocínio | Erro clássico |
+| --- | --- | --- |
+| Pré-escolar de quatro anos com sibilância apenas durante infecções | Revisar padrão de episódios e diferenciais, usando orientação própria de ≤5 anos | Copiar prescrição AIR/MART do escolar sem evidência/aprovação |
+| Escolar de oito anos com asma confirmada e sintomas pouco frequentes | Garantir estratégia **com CI**, segundo GINA 2026 e formulações disponíveis | Deixar apenas SABA por hábito do protocolo antigo |
+| Escolar em MART etapa 3 usando combinação correta | Somar as doses programadas e de alívio no **mesmo período de 24 horas** | Contar apenas os jatos de resgate, ignorando manutenção |
+| Criança de 11 anos em esquema estável prestes a completar 12 | Programar reavaliação de faixa, evidência e produto | Trocar concentração do inalador automaticamente no aniversário |
+
+No esquema AIR/MART de 6–11 anos descrito pela GINA 2026, a **necessidade de mais de oito inalações totais em 24 horas** da combinação indicada é um **gatilho de busca de atendimento médico**. Isso **não é recomendação para esperar até completar oito doses** quando há dispneia intensa ou ausência de resposta. Também não é uma regra aplicável a qualquer produto, qualquer dose ou criança com menos de seis anos. Para adolescentes, os esquemas e limites do quadro são diferentes. Conferir sempre a concentração **entregue versus medida**, a apresentação autorizada no país e o plano individual.
+
+**Fonte de referência primária:** GINA, *Summary Guide for Asthma Management and Prevention 2026*, seções de crianças 6–11 anos, plano escrito, crise e tabela 7 de AIR/MART (páginas impressas 28–30 e 45). https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . Esta explicação e as tabelas de decisão são autorais. O material GINA é protegido por direitos autorais e seus gráficos não podem ser distribuídos na LURIA sem autorização.
+
+
 ## 9. Casos clínicos comentados
 
 ### Caso 1 — Espirometria normal entre episódios
@@ -587,6 +626,13 @@ Menina de dez anos usa uma apresentação de budesonida-formoterol que foi presc
 ### Caso 16 — Prescrição com concentração adulta em escolar
 
 Menino de sete anos recebe diagnóstico de asma com sintomas pouco frequentes, sem comprometimento respiratório no atendimento. Um familiar possui inalador de budesonida-formoterol **160/4,5 mcg entregues** utilizado por um adulto e pergunta se pode oferecer “uma inalação igual” sempre que houver chiado. **Hipóteses:** asma em idade escolar, proposta de automedicação com formulação não equivalente à opção pediátrica do guia. **Raciocínio:** na GINA 2026, o quadro de AIR para 6–11 anos apresenta budesonida-formoterol **80/4,5 mcg entregues (100/6 mcg nominais)** como exemplo; concentrações e elegibilidade não podem ser transferidas do adulto à criança por simples nome comercial. **Exames:** documentação diagnóstica de variabilidade do fluxo quando possível, risco de crises e aptidão para uso do dispositivo. **Conduta:** selecionar estratégia contendo CI própria da faixa etária e autorizada/regulamentada localmente, demonstrar técnica e fornecer plano escrito; não compartilhar o inalador do adulto. **Por que importa:** concentração, dose nominal e dose entregue são questões reais de segurança pediátrica.
+
+
+### Caso 17 — Asma escolar bem controlada em casa, mas crises na educação física
+
+Menino de oito anos com asma previamente confirmada tem boa evolução em casa, porém relata tosse e dispneia durante aulas de educação física. A escola não dispõe do plano escrito; o inalador fica na mochila, mas nenhum adulto sabe verificar dispositivo, dose ou técnica. O professor começa a dispensá-lo de toda atividade.
+
+**Hipóteses:** broncoconstrição relacionada a exercício, controle parcial, técnica inadequada, obstrução laríngea induzível e descondicionamento como causas coexistentes ou alternativas. **Raciocínio:** retirar a criança de exercícios sem avaliação pode perpetuar limitação e estigma; a frequência de sintomas na escola demonstra lacuna de manejo e comunicação. **Exames:** história de tempo/ruído/recuperação, espirometria e testes dirigidos quando indicado, demonstração de dispositivo e revisão da prescrição por faixa etária. **Conduta:** construir plano escolar com responsáveis, equipe e aluno, assegurar acesso supervisionado ao alívio adequado e reforçar terapia contendo CI; tratar rinite/exposição quando relevante e reavaliar sintomas. **Por que este caso importa:** o sucesso depende do ambiente onde a criança vive, não só da receita.
 
 
 ## 10. Questões autorais comentadas
@@ -781,6 +827,21 @@ C) CI-salmeterol pode sempre substituir CI-formoterol como medicação de resgat
 D) A quantidade de doses máximas é igual para todos os grupos etários.
 
 **Gabarito: B.** É preciso distinguir dose entregue de nominal e conferir a apresentação. **A:** ignora diferenças de concentração e evidência. **C:** não se deve equiparar salmeterol ao formoterol de início rápido. **D:** a GINA 2026 apresenta alertas diferentes por idade e formulação. **Mini-revisão:** idade, dose entregue/nominal e registro regulatório são inseparáveis.
+
+
+### Questão 22 — Dose de alívio e risco no escolar
+
+Menina de nove anos com asma confirmada usa esquema de manutenção e alívio com **formulação pediátrica adequada de CI-formoterol**, segundo plano de MART. A escola pergunta qual número de inalações deve acompanhar durante um dia e quando chamar ajuda. Qual orientação é mais segura?
+
+A) Contar somente doses de resgate e ignorar inalações de manutenção.
+
+B) Considerar **todas** as inalações em 24 horas e reconhecer que necessidade de mais de oito inalações do esquema pediátrico indicado exige avaliação médica, sem esperar esse número se houver sinais de gravidade.
+
+C) Utilizar automaticamente limite de doze inalações próprio de outras faixas etárias.
+
+D) Substituir CI-formoterol por CI-salmeterol como medicação de alívio, mantendo a mesma contagem.
+
+**Gabarito: B.** A tabela 7 da GINA 2026 distingue formulações e faixas etárias, considerando o total diário e a procura precoce de atendimento se houver deterioração. **A:** subconta a exposição diária. **C:** transfere referência de adolescentes/adultos para escolar. **D:** salmeterol não é o componente utilizado em AIR/MART como alívio. **Mini-revisão:** nome do fármaco, concentração entregue, idade, dispositivo e plano escrito devem ser conferidos juntos.
 
 
 ## Referências essenciais
