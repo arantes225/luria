@@ -8,7 +8,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 |---:|---|---|---|
 | 01 | Clínica Médica | Síndromes coronarianas agudas | Rascunho em `apostilas/sindromes-coronarianas-agudas/content.json` — **não publicado, não certificado** |
 | 02 | Cirurgia Geral | Avaliação pré-operatória e risco cirúrgico | Rascunho em `apostilas/avaliacao-pre-operatoria-risco-cirurgico/content.json` — **não publicado, não certificado** |
-| 03 | Pediatria | Assistência ao recém-nascido em sala de parto | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
+| 03 | Pediatria | Assistência ao recém-nascido em sala de parto | Rascunho revisado em `apostilas/assistencia-recem-nascido-sala-parto/content.json`; 13 seções, 10 casos, 18 questões e triagem de ~78 mil caracteres aparentes — **não certificado, não publicado** |
 | 04 | Ginecologia e Obstetrícia | Pré-natal de baixo risco | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 05 | Medicina Preventiva | Princípios e diretrizes do SUS | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 06 | Clínica Médica | Insuficiência cardíaca | Rascunho em `apostilas/insuficiencia-cardiaca/content.json` — **não publicado, não certificado** |
@@ -33,8 +33,8 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Orientação de produção
 
-- Há **6 rascunhos autorais identificados** e vinculados às aulas 1, 2, 6, 7, 11 e 16. Nenhum deles tem aprovação final. O vínculo é editorial; não equivale a publicação.
-- Os outros **17 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
+- Há **7 rascunhos autorais identificados** e vinculados às aulas 1, 2, 3, 6, 7, 11 e 16. Nenhum deles tem aprovação final. O vínculo é editorial; não equivale a publicação.
+- Os outros **16 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
 - O trabalho anterior em quatro apostilas de GO não deve ser contado automaticamente como cobertura de pré-natal, datação gestacional ou rastreamentos da primeira etapa.
 - Não duplicar 'Assistência ao RN em sala de parto' e 'Reanimação neonatal': planejar fronteira pedagógica com reaproveitamento interno, mas preservar objetivos curriculares distintos.
 - Cuidados perioperatórios pode cobrir parcialmente infecção de sítio cirúrgico e complicações pós-operatórias de lotes posteriores; evitar recriação redundante.
@@ -42,7 +42,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Próximas verificações editoriais
 
-1. Auditar temas 3–5 por correspondência com repositório e referências do Drive: assistência ao recém-nascido em sala de parto, pré-natal de baixo risco, princípios e diretrizes do SUS.
+1. Auditar temas 4–5 por correspondência com repositório e referências do Drive: pré-natal de baixo risco e princípios e diretrizes do SUS. O tema 003 já tem rascunho revisado, sem certificação.
 2. Rever os seis rascunhos com teste de questões representativas e crítica clínica antes de alterar seu status.
 3. Conciliar diffs entre a `main` (260 temas) e a branch editorial antes de integrar.
 
