@@ -122,6 +122,29 @@ Esse quadro não reproduz o desenho de algoritmo de nenhuma instituição: demon
 
 A mMRC avalia especificamente limitação por dispneia: grau 0 para falta de ar apenas em esforço extenuante; grau 1 para dispneia ao apressar o passo ou subir pequena ladeira; grau 2 quando se caminha mais devagar que pessoas da mesma idade por causa da respiração ou precisa parar no próprio ritmo; grau 3 quando há parada após curta distância ou poucos minutos no plano; grau 4 quando o paciente fica muito dispneico para sair de casa ou ao vestir-se. As fronteiras podem variar na redação traduzida dos instrumentos validados; usar a versão oficial na aplicação clínica. A pontuação CAT/CAAT, em contraste, acrescenta outros impactos respiratórios e funcionais, não apenas falta de ar. Na classificação sintomática de referência, mMRC ≥2 ou CAT/CAAT ≥10 indicam maior carga sintomática. A entrevista também precisa explorar capacidade de fazer compras, tomar banho e caminhar, porque muitos pacientes adaptam sua vida para evitar dispneia e se descrevem equivocadamente como “sem sintomas”.
 
+### 3.2 ABE inicial não é algoritmo de seguimento: como evitar escalonamento automático
+
+A GOLD 2026 reconhece que **uma única exacerbação moderada** nos 12 meses anteriores já tem valor prognóstico: na classificação A/B/E utilizada **na avaliação para iniciar tratamento farmacológico de manutenção**, esse histórico leva o paciente ao grupo **E**, independentemente da intensidade dos sintomas. Essa alteração é válida para a **classificação internacional**, não muda automaticamente as regras de acesso do SUS e não transforma toda pessoa com um episódio antigo em candidata imediata a corticoide inalatório.
+
+**Duas perguntas clínicas diferentes:**
+
+1. **Paciente ainda não utiliza tratamento inalatório de manutenção.** É o momento de classificar A, B ou E conforme histórico de exacerbações e sintomas, após confirmar DPOC. Para o grupo E, a GOLD 2026 favorece **LABA/LAMA como tratamento inicial**, com avaliação de eosinófilos e circunstâncias específicas em que terapia tripla pode ser considerada; não supor que grupo E signifique automaticamente CI.
+2. **Paciente já utiliza LAMA/LABA ou outro esquema.** A revisão deve seguir o **algoritmo de tratamento de acompanhamento** (*follow-up*), com atenção ao problema atual: dispneia persistente, exacerbações documentadas, eosinófilos, história de asma, técnica e adesão ao inalador, risco de pneumonia e outras doenças. Mudar retroativamente a letra A/B/E não substitui essa avaliação. Em particular, **dispneia isolada não é razão suficiente para acrescentar CI**.
+
+| Situação ilustrativa | Qual pergunta resolver primeiro? | Erro a evitar |
+| --- | --- | --- |
+| Recém-diagnosticado, sem manutenção e **uma** exacerbação moderada no ano | Categoria inicial **E pela GOLD 2026**, confrontar PCDT brasileiro; definir prevenção e broncodilatação | Manter no grupo A por usar corte antigo sem informar diretriz |
+| Em LABA/LAMA, sem exacerbações recentes, mas muito dispneico | Técnica, capacidade de usar dispositivo, reabilitação e diagnósticos diferenciais | Acrescentar CI unicamente por falta de ar |
+| Em LABA/LAMA, continua com exacerbações e tem eosinófilos altos | Risco-benefício de terapia tripla na trajetória de **seguimento** e acesso local | Ignorar biomarcador ou histórico de pneumonia |
+| Em combinação com CI e tem pneumonias recorrentes, sem asma associada | Reavaliar indicação de CI, risco/benefício e necessidade de retirada supervisionada | Suspender qualquer CI automaticamente sem revisar exacerbadores e eosinófilos |
+
+**Interpretação de eosinófilos sanguíneos:** o valor não é um teste de diagnóstico de DPOC; ajuda a **estimar a probabilidade de benefício do CI na prevenção de exacerbações**, com gradiente de resposta em vez de uma chave “sim/não”. É necessário interpretar medidas repetidas, uso recente de corticosteroide sistêmico, exacerbação em curso e condições que alterem a contagem. O limiar próximo de **300 células/µL** indica maior chance de benefício em determinados cenários, mas não invalida segurança, preferência do paciente, disponibilidade nem critérios do PCDT. Doença asmática concomitante é motivo para garantir componente anti-inflamatório apropriado.
+
+**Exemplo resolvido:** uma pessoa com DPOC confirmada, mMRC 1 e uma exacerbação moderada há quatro meses, mas que nunca utilizou tratamento de manutenção, pertence ao **grupo E inicial da GOLD 2026**. Isso não significa que o aluno deva prescrever diretamente terapia tripla: primeiro considerar LABA/LAMA, verificar eosinófilos, confirmar a natureza do episódio e comparar elegibilidade nacional. Se essa mesma pessoa já estiver em LABA/LAMA, a nova decisão é de **acompanhamento e prevenção**, não uma nova classificação inicial que, sozinha, dite a troca.
+
+**Referência:** GOLD, *Global Strategy for the Diagnosis, Management, and Prevention of COPD — 2026*, avaliação inicial ABE e algoritmo farmacológico de seguimento: https://goldcopd.org/2026-gold-report-and-pocket-guide/ . O algoritmo internacional não equivale a autorização de dispensação pelo SUS; conferir o PCDT brasileiro.
+
+
 ## 4. Tratamento estável e dispositivos inalatórios
 
 ### 4.1 Tratamento estável: intervenções com objetivos diferentes
@@ -534,7 +557,7 @@ Em pacientes com internações repetidas, discutir avaliação especializada de 
 
 ### Caso 3 — A mesma história, dois grupos: divergência entre diretrizes
 
-Homem de 63 anos, confirmado DPOC por espirometria pós-broncodilatador (VEF1/CVF 0,58; VEF1 62% do previsto), mMRC 1 e **uma exacerbação moderada** tratada no ambulatório com prednisona nos últimos 12 meses. Sem internações. No PCDT brasileiro de janeiro de 2026, critérios de A/B permitem uma moderada, e ele é grupo A pela baixa carga de sintomas. Na GOLD 2026, **uma moderada já configura grupo E**. **Investigação adicional:** verificar se o episódio realmente exigiu tratamento e não foi infecção respiratória sem piora de DPOC; revisar técnicas, adesão, fatores precipitantes. **Conduta:** registrar explicitamente o referencial; tratar a exacerbação como evento prognóstico importante, reavaliando necessidade de manutenção e prevenção conforme elegibilidade brasileira. **Por que importa:** evita confusão entre diretriz clínica internacional e regras do SUS.
+Homem de 63 anos, confirmado DPOC por espirometria pós-broncodilatador (VEF1/CVF 0,58; VEF1 62% do previsto), mMRC 1 e **uma exacerbação moderada** tratada no ambulatório com prednisona nos últimos 12 meses. Sem internações. No PCDT brasileiro de janeiro de 2026, critérios de A/B permitem uma moderada, e ele é grupo A pela baixa carga de sintomas. Na GOLD 2026, **uma moderada já configura grupo E na avaliação inicial para tratamento de manutenção**; se já houver terapia instalada, a decisão terapêutica deve utilizar o algoritmo de seguimento. **Investigação adicional:** verificar se o episódio realmente exigiu tratamento e não foi infecção respiratória sem piora de DPOC; revisar técnicas, adesão, fatores precipitantes. **Conduta:** registrar explicitamente o referencial; tratar a exacerbação como evento prognóstico importante, reavaliando necessidade de manutenção e prevenção conforme elegibilidade brasileira. **Por que importa:** evita confusão entre diretriz clínica internacional e regras do SUS.
 
 ### Caso 4 — Dispneia com VEF1 moderadamente reduzido e pouca reserva funcional
 
@@ -590,6 +613,11 @@ Homem de 77 anos, DPOC confirmada, apresenta piora progressiva de dispneia e rel
 ### Caso 16 — Nova dispneia após alta e etiologia cardíaca concorrente
 
 Mulher de 70 anos com DPOC, alta há dez dias por exacerbação, mantém dispneia apesar de uso correto de broncodilatadores. Agora relata necessidade de três travesseiros à noite, edema bilateral e ganho de peso rápido. Não há escarro purulento, e o VEF1 prévio não mudou. **Hipóteses:** descompensação cardíaca associada, além de causas pulmonares. **Raciocínio:** ortopneia, edema e ganho rápido de peso não são bem explicados por piora obstrutiva isolada. **Exames:** sinais vitais, perfusão, exame de congestão, ECG, avaliação de função renal, imagem/biomarcadores e ecocardiograma conforme indicação. **Conduta:** avaliação clínica pronta, suporte conforme gravidade, investigação e tratamento dirigido ao componente cardíaco; não repetir prednisona e antibiótico reflexamente. **Por que importa:** tratar o diagnóstico errado gera nova hospitalização.
+
+
+### Caso 17 — Uma exacerbação moderada: classificar sem tratar a letra
+
+Mulher de 66 anos, diagnóstico funcional de DPOC (VEF1/CVF pós-BD 0,58), mMRC 1, apresentou exacerbação moderada tratada ambulatorialmente há seis meses. Nunca usou terapia de manutenção; eosinófilos 110 células/µL e sem asma associada. **Hipótese:** DPOC com risco futuro de exacerbações já sinalizado pelo evento. **Raciocínio:** no algoritmo **inicial da GOLD 2026**, uma exacerbação moderada coloca a pessoa no grupo E mesmo com poucos sintomas; porém grupo E **não significa CI obrigatório**. **Exames:** confirmar qualidade da espirometria, natureza da exacerbação, técnica, biomarcadores e comorbidades. **Conduta:** planejar prevenção, cessação de tabagismo, vacinação e broncodilatação de longa ação conforme recomendação internacional e PCDT SUS; avaliar indicação de LABA/LAMA e seguimento, sem acrescentar CI automaticamente. **Por que este caso importa:** uma nova classificação muda percepção de risco, não elimina raciocínio clínico nem critérios locais.
 
 
 ## 9. Questões autorais comentadas
@@ -756,6 +784,21 @@ A) Acrescentar CI automaticamente. B) Verificar e corrigir técnica/dispositivo,
 Homem após alta por exacerbação retorna com edema, ortopneia e ganho ponderal, sem aumento de secreção. Qual conduta é prioritária?
 A) Tratar obrigatoriamente com mais antibiótico. B) Investigar insuficiência cardíaca e outras causas de dispneia, sem presumir nova exacerbação obstrutiva. C) Manter indefinidamente corticosteroide oral. D) Ignorar edema como achado habitual.
 **Gabarito B.** **A/C** podem produzir danos sem enfrentar a causa; **D** perde sinal clínico importante. **Mini-revisão:** exacerbação de DPOC é diagnóstico clínico, mas concorrentes cardíacos precisam ser buscados.
+
+
+### Questão 23 — Classificação inicial e acompanhamento
+
+Uma pessoa com DPOC confirmada, mMRC 1 e uma exacerbação moderada há oito meses, **ainda sem terapia inalatória de manutenção**, é avaliada pela GOLD 2026. Qual afirmação é a mais adequada?
+
+A) Permanece obrigatoriamente no grupo A porque teve menos de duas exacerbações moderadas.
+
+B) Classifica-se como grupo E na avaliação inicial, mas isso não significa que CI seja automaticamente necessário.
+
+C) Precisa receber CI isolado como tratamento inicial do grupo E.
+
+D) A espirometria isolada determina a letra A/B/E, independentemente de sintomas e eventos.
+
+**Gabarito: B.** A GOLD 2026 passou a incluir uma exacerbação moderada na categoria E; a estratégia farmacológica inicial considera LABA/LAMA e indicação individualizada do CI. **A:** aplica o limiar anterior sem identificar a versão. **C:** CI isolado não é esquema de manutenção recomendado para DPOC. **D:** confunde grau espirométrico GOLD 1–4 com classificação clínica A/B/E. **Mini-revisão:** ABE é instrumento inicial; em quem já está tratado, usar algoritmo de seguimento e checar técnica, sintomas, exacerbações e eosinófilos.
 
 
 ## Referências essenciais
