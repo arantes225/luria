@@ -665,12 +665,747 @@ Verificar mesma definição, período e unidade de residência → calcular taxa
 - [x] SIM, SINASC e investigação de evitabilidade.
 - [x] Indicadores, fórmulas, exemplos calculados e padronização etária.
 - [x] Comunicação de óbito e cuidados aos familiares.
-- [ ] Casos clínicos completos e casos numéricos integrados.
-- [ ] Questões comentadas por alternativa e exercícios de cálculo.
-- [ ] Curadoria de diagramas/formulários oficiais, verificando licenças.
+- [x] Casos clínicos completos e casos numéricos integrados — seção 27.
+- [x] Questões comentadas por alternativa e exercícios de cálculo — seção 28.
+- [x] Curadoria planejada de 15 diagramas (seção 29), com produção e licença ainda pendentes.
 - [ ] Revisão por médico com experiência em emissão de DO e codificador SIM.
 - [ ] Revisão legislativa/federativa e de humanização do luto.
 - [ ] Integração HTML/content.json no renderizador LURIA e PWA.
 - [ ] Validação de conteúdo, links e testes de acessibilidade antes de publicar.
 
 **O material ainda não corresponde a DO oficial preenchida e não deve ser usado para emitir documento médico sem conferência da legislação e procedimentos locais.**
+
+
+## 27. Casos clínicos e epidemiológicos integradores — 12 situações comentadas
+
+Os casos abaixo são fictícios. Eles demonstram raciocínio de preenchimento e análise de dados; qualquer DO real depende de verificação pessoal do óbito, prontuário e competência de emissão prevista em lei.
+
+### Caso 1 — Pneumonia com sepse e diabetes contribuinte
+
+**Apresentação:** Mulher de 71 anos com diabetes tipo 2 de longa data interna por pneumonia bacteriana. Após cinco dias, apresenta sepse e falece após 48 horas de deterioração. Não há trauma nem suspeita médico-legal. Prontuário confirma pneumonia e diabetes preexistente.
+
+**Hipótese e classificação:** Óbito natural com assistência, por cadeia pneumonia → sepse → morte; diabetes contribuinte.
+
+**Raciocínio passo a passo:** Não preencher PCR ou 'falência sistêmica' como causa básica. A sepse foi desencadeada pela pneumonia e esta iniciou cadeia. Diabetes contribuiu para vulnerabilidade, mas não integra diretamente a cadeia estabelecida na hipótese clínica.
+
+**Informações e exames necessários:** Prontuário, evoluções, microbiologia, exames de imagem e descrição de circunstâncias. Caso o agente não seja comprovado, não inventar espécie bacteriana.
+
+**Conduta e destino do dado:** Médico assistente ou substituto competente emite DO. Parte I: a) sepse (2 dias); b) pneumonia bacteriana (7 dias); Parte II: diabetes mellitus tipo 2 (15 anos). A causa básica do exemplo é pneumonia.
+
+**Por que este caso importa:** Causa básica é última linha da cadeia, não obrigatoriamente a condição terminal mais grave.
+
+### Caso 2 — Fratura por queda e pneumonia meses depois
+
+**Apresentação:** Idoso de 82 anos cai de escada, sofre fratura de fêmur, é operado, torna-se imobilizado e meses depois falece em hospital com pneumonia associada a internação prolongada. Há suspeita documentada de continuidade causal a partir do acidente.
+
+**Hipótese e classificação:** Óbito potencialmente relacionado à causa externa, mesmo com intervalo longo até morte.
+
+**Raciocínio passo a passo:** Evento externo inicial não perde relevância porque surgiu infecção no percurso. É necessário esclarecer a relação causal e encaminhar a caso de interesse médico-legal, não converter em morte natural por automatismo.
+
+**Informações e exames necessários:** Registro da queda, atendimento inicial, tipo de fratura, internações, evolução da imobilidade/complicações, documentação de causas e comunicação institucional.
+
+**Conduta e destino do dado:** Acionar IML/fluxo médico-legal competente para avaliação, sem emitir DO natural de forma improvisada. Preservar prontuário e registrar fatos sem inferir intenção criminal.
+
+**Por que este caso importa:** Causa externa não é definida pela última unidade hospitalar onde o óbito aconteceu.
+
+### Caso 3 — Morte natural domiciliar sem acompanhamento
+
+**Apresentação:** Homem de 64 anos é encontrado morto em casa por familiar. Não era acompanhado regularmente, não há sinais externos de violência conhecidos, e a causa natural específica não está documentada.
+
+**Hipótese e classificação:** Morte de causa não elucidada, possivelmente natural, sem assistência; avaliar necessidade de investigação por SVO e indícios de causa externa.
+
+**Raciocínio passo a passo:** Não se pode escrever infarto agudo do miocárdio porque 'parece provável' sem dados. Em localidade com SVO, serviço verifica causa natural. Se houver violência/suspeita, muda o fluxo.
+
+**Informações e exames necessários:** Anamnese de familiares, contexto, sinais físicos e documentação externa, avaliação pelos serviços competentes.
+
+**Conduta e destino do dado:** Encaminhar ao SVO segundo organização local quando morte natural sem assistência. Sem SVO, seguir regras do CFM/Portaria 116/2009 e fluxo local para médico habilitado, sem inventar causa.
+
+**Por que este caso importa:** Causa indeterminada em situação permitida é mais íntegra que diagnóstico fabricado.
+
+### Caso 4 — Feto de 19 semanas com 520 gramas sem sinais de vida
+
+**Apresentação:** Após perda gestacional com idade estimada de 19 semanas, concepto de 520 gramas é expulso sem respiração, pulsação de cordão ou outros sinais de vida. Família solicita esclarecimento sobre documentação e direito de nome.
+
+**Hipótese e classificação:** Óbito fetal pela ausência de sinais de vida; peso satisfaz critério clássico de emissão obrigatória de DO fetal.
+
+**Raciocínio passo a passo:** Na Resolução CFM 1.779/2005, critérios são 20 semanas **OU** 500 g **OU** 25 cm. Peso ≥500 g satisfaz mesmo que idade gestacional seja <20 semanas. Política de luto 2025/2026 acrescenta direitos e cuidados, não depende de valorizar sofrimento pelo peso.
+
+**Informações e exames necessários:** Confirmar ausência de sinais de vida, idade gestacional, peso, comprimento, circunstâncias e dados maternos do formulário.
+
+**Conduta e destino do dado:** Emitir DO fetal pelo fluxo competente, respeitando direitos familiares, acolhimento e registro. Não emitir DNV porque não houve sinal de vida.
+
+**Por que este caso importa:** Conectivo OU resolve pegadinha; cuidado humanizado vale além do limiar.
+
+### Caso 5 — Nascido vivo muito prematuro que faleceu em dez minutos
+
+**Apresentação:** Parto com 19 semanas estimadas, 430 gramas. Após extração completa, equipe verifica pulsação do cordão e batimentos cardíacos por alguns minutos; óbito ocorre dez minutos após nascer.
+
+**Hipótese e classificação:** Nascido vivo, seguido de óbito neonatal precoce, ainda que extremo pré-termo.
+
+**Raciocínio passo a passo:** Sinal de vida após nascimento determina nascido vivo independentemente de peso/tempo gestacional. O óbito antes de sete dias é neonatal precoce. Não classificar como fetal apenas porque massa ou idade são pequenas.
+
+**Informações e exames necessários:** Registro de batimentos/sinais de vida, horário do parto e morte, condições maternas/fetais e da reanimação segundo prontuário.
+
+**Conduta e destino do dado:** Emitir DNV e DO. Descrever diagnóstico neonatal/materno causador quando estabelecido; apoiar família. O óbito compõe mortalidade neonatal precoce e infantil segundo regras.
+
+**Por que este caso importa:** O registro correto muda SIM/SINASC e denominadores da saúde pública.
+
+### Caso 6 — Morte no 20º dia do puerpério após eclâmpsia
+
+**Apresentação:** Mulher de 29 anos apresentou eclâmpsia, evoluiu com hemorragia intracraniana e faleceu vinte dias após o parto. Não houve causa externa.
+
+**Hipótese e classificação:** Morte materna direta no prazo de até 42 dias, associada a transtorno hipertensivo obstétrico.
+
+**Raciocínio passo a passo:** A causa básica do encadeamento deve informar doença obstétrica que gerou evento fatal; não registrar apenas PCR. O intervalo <42 dias e relação causal tornam o evento elegível à RMM.
+
+**Informações e exames necessários:** Dados obstétricos, datas de parto/óbito, exames neurológicos e prontuário, campos da DO que informam gravidez/puerpério.
+
+**Conduta e destino do dado:** DO com encadeamento etiológico coerente e indicação de puerpério no campo apropriado. Notificação/investigação obrigatória conforme vigilância materna. Contar no numerador RMM do recorte.
+
+**Por que este caso importa:** Morte por eclâmpsia com complicação cerebral não se torna causa neurológica isolada sem história gestacional.
+
+### Caso 7 — Morte por cardiopatia agravada pela gestação após 90 dias
+
+**Apresentação:** Mulher de 38 anos com cardiomiopatia associada à gestação desenvolveu insuficiência cardíaca grave e faleceu 90 dias após o parto; investigação confirma relação com condição gravídica e exclui causas incidentais.
+
+**Hipótese e classificação:** Morte materna tardia relacionada à gestação; não integra numerador convencional da RMM até 42 dias.
+
+**Raciocínio passo a passo:** O conceito de vigilância alcança mortalidade materna tardia após 42 dias até um ano, mas a fórmula RMM convencional considera óbitos até 42 dias. A morte não deve ser apagada apenas por estar fora da razão principal.
+
+**Informações e exames necessários:** Datas, história cardíaca pré/pós-gestacional, evolução, avaliação de causa básica, investigação de fatores evitáveis.
+
+**Conduta e destino do dado:** Emitir DO etiologicamente correta e investigar na vigilância; tabular separadamente morte materna tardia conforme indicador e classificação.
+
+**Por que este caso importa:** Investigação pode abranger intervalo maior que numerador RMM.
+
+### Caso 8 — Gestante morta em acidente de trânsito
+
+**Apresentação:** Mulher grávida de 24 semanas falece em colisão automobilística com trauma fatal. Não há evidência de que gestação agravou o mecanismo traumático.
+
+**Hipótese e classificação:** Morte por causa externa ocorrida durante gravidez, mas não 'morte materna' epidemiológica padrão por causa incidental.
+
+**Raciocínio passo a passo:** Ser gestante e morrer não significa automaticamente que a gestação iniciou ou agravou doença que levou à morte. Evento não natural deve seguir IML, e a vigilância pode investigar para classificar corretamente.
+
+**Informações e exames necessários:** Informações periciais, nexo com trauma, idade gestacional, prontuário e circunstâncias.
+
+**Conduta e destino do dado:** Fluxo de IML e campos gestacionais da DO de causa externa; não somar como morte materna direta/indireta na RMM sem nexo gestacional.
+
+**Por que este caso importa:** Mortalidade materna exclui causas acidentais e incidentais não relacionadas.
+
+### Caso 9 — O que uma taxa infantil de 9 por mil realmente significa?
+
+**Apresentação:** Município registra 12.000 nascidos vivos em um ano. Foram 60 mortes de 0–6 dias, 18 de 7–27 dias e 30 de 28–364 dias, todas residentes, com dados consolidados.
+
+**Hipótese e classificação:** Cálculo de coeficientes de mortalidade neonatal e infantil.
+
+**Raciocínio passo a passo:** Numerador CMI = 60+18+30 =108; denominador 12.000 NV. CMI = 9 por mil. Neonatal precoce =5; tardio=1,5; total neonatal=6,5; pós-neonatal=2,5 por mil.
+
+**Informações e exames necessários:** Validar período, município de residência, critérios de idade e cobertura SIM/SINASC.
+
+**Conduta e destino do dado:** Apresentar taxa infantil 9/1.000 NV e componentes 5+1,5+2,5. Analisar especialmente desfechos perinatais sem inferir qualidade da rede por único número.
+
+**Por que este caso importa:** O denominador das mortes infantis é NV, não população menor de um ano.
+
+### Caso 10 — RMM 50: um óbito no pequeno município
+
+**Apresentação:** Município possui 2.000 nascidos vivos e registra uma morte por hemorragia obstétrica no período elegível. No ano seguinte registra dois, mantendo cobertura semelhante.
+
+**Hipótese e classificação:** RMM observada = 50 por 100 mil no primeiro ano e 100 por 100 mil no seguinte, com grande instabilidade por poucos eventos.
+
+**Raciocínio passo a passo:** Cálculo: 1/2.000×100.000=50; 2/2.000×100.000=100. Duplicação numérica do indicador por um único óbito adicional não prova piora assistencial sistêmica.
+
+**Informações e exames necessários:** Conferir registro, residência, data, investigação de evitabilidade e estabilidade dos NV. Comparar períodos plurianuais.
+
+**Conduta e destino do dado:** Usar taxa com cautela, registrar intervalo/incerteza e organizar ações preventivas baseadas em revisão de cada caso, não em inferência causal precipitada.
+
+**Por que este caso importa:** Indicadores com pequenos numeradores têm enorme flutuação aleatória.
+
+### Caso 11 — Mortalidade hospitalar por ocorrência distorce município
+
+**Apresentação:** Hospital de alta complexidade em capital atende gestantes de 40 municípios e registra 12 óbitos maternos de mulheres residentes em outras cidades; gestor divide todos por NV apenas do bairro da instituição e afirma que mortalidade local é extrema.
+
+**Hipótese e classificação:** Erro de compatibilidade territorial entre numerador e denominador.
+
+**Raciocínio passo a passo:** Óbitos ocorridos na unidade não pertencem obrigatoriamente à população residente do bairro. O hospital de referência concentra casos graves e sua taxa hospitalar não é RMM populacional municipal por residência.
+
+**Informações e exames necessários:** Distinguir município de ocorrência/residência de cada óbito e NV da população correspondente; avaliar transferências e case mix.
+
+**Conduta e destino do dado:** Calcular indicador de residentes usando SIM/SINASC do mesmo território, definir indicador hospitalar separadamente com denominador hospitalar apropriado.
+
+**Por que este caso importa:** É mais fácil errar indicador por definição do que por conta.
+
+### Caso 12 — Morte por neoplasia registrada como parada cardíaca
+
+**Apresentação:** Mulher de 65 anos tratava câncer de cólon metastático com insuficiência hepática por extensa infiltração. DO foi preenchida com única causa 'parada cardiorrespiratória'.
+
+**Hipótese e classificação:** DO com causa inespecífica e perda de informação epidemiológica, apesar de prontuário conter etiologia conhecida.
+
+**Raciocínio passo a passo:** Todos os óbitos cursam com cessação da circulação/respiração; isso não identifica doença que iniciou cadeia. Há neoplasia primária e metástase com relação causal documentada.
+
+**Informações e exames necessários:** Rever laudo histológico, local primário, imagens, condição terminal e evolução hepática; conferir intervalos plausíveis.
+
+**Conduta e destino do dado:** Registrar cadeia: insuficiência hepática por infiltração tumoral → metástases hepáticas → adenocarcinoma de cólon sigmoide, se esses diagnósticos corresponderem aos fatos. Corrigir registro pelo fluxo institucional oficial, sem adulteração silenciosa.
+
+**Por que este caso importa:** O preenchimento de causas específicas melhora estatísticas e permite análise real de mortalidade por câncer.
+
+
+
+## 28. Questões autorais — 22 exercícios comentados por alternativa
+
+Enunciados inéditos para ENAMED/residência e internato, com fórmulas escritas e interpretação. O objetivo é ensinar e não reproduzir banco comercial de questões. Todos os dados numéricos são hipotéticos.
+
+### Questão 1 — Causa básica em Parte I
+
+**Enunciado:** A DO traz Parte I: a) sepse; b) pneumonia bacteriana, com diabetes tipo 2 na Parte II. Qual é a causa básica indicada?
+
+**A)** Sepse.
+
+**B)** Pneumonia bacteriana.
+
+**C)** Diabetes tipo 2.
+
+**D)** Parada cardiorrespiratória não registrada.
+
+**Gabarito: B.**
+
+- **Alternativa A:** É causa imediata na sequência proposta.
+- **Alternativa B:** É a última linha preenchida da Parte I e iniciou a cadeia.
+- **Alternativa C:** É contribuinte na Parte II.
+- **Alternativa D:** Não é diagnóstico etiológico suficiente.
+
+**Mini-revisão:** Causa básica está na última linha usada da Parte I, não necessariamente na linha d.
+
+### Questão 2 — Mecanismo final não é causa básica
+
+**Enunciado:** Qual termo isolado deve ser evitado como única causa de morte quando existe etiologia conhecida?
+
+**A)** Adenocarcinoma colorretal.
+
+**B)** Pneumonia bacteriana.
+
+**C)** Parada cardiorrespiratória.
+
+**D)** Hemorragia intracraniana espontânea documentada.
+
+**Gabarito: C.**
+
+- **Alternativa A:** Pode ser causa básica em cadeia apropriada.
+- **Alternativa B:** Pode iniciar cadeia infecciosa.
+- **Alternativa C:** É mecanismo terminal comum e não esclarece etiologia.
+- **Alternativa D:** É doença/lesão específica que pode compor cadeia clínica.
+
+**Mini-revisão:** Registrar condição patológica etiológica, não apenas que o coração parou.
+
+### Questão 3 — Morte natural com assistência médica
+
+**Enunciado:** Paciente internado falece de doença natural. Médico assistente está ausente. Segundo CFM 1.779/2005, a DO pode ser emitida por:
+
+**A)** Qualquer recepcionista.
+
+**B)** Médico substituto pertencente à instituição, nas condições da norma.
+
+**C)** Familiar mais próximo sem avaliação.
+
+**D)** Exclusivamente médico-legista, mesmo sem causa externa.
+
+**Gabarito: B.**
+
+- **Alternativa A:** DO é ato médico na situação habitual.
+- **Alternativa B:** A resolução prevê substituição na ausência do assistente.
+- **Alternativa C:** Parentes não substituem médico.
+- **Alternativa D:** IML refere-se principalmente a causas externas.
+
+**Mini-revisão:** O médico responsável deve verificar o óbito e se apoiar em dados confiáveis.
+
+### Questão 4 — Morte natural sem assistência em município com SVO
+
+**Enunciado:** Homem sem acompanhamento falece em casa por causa aparentemente natural não definida. Não há indícios de violência, e há SVO na região. Qual encaminhamento típico?
+
+**A)** SVO.
+
+**B)** IML obrigatório em toda morte domiciliar.
+
+**C)** Cirurgião deve declarar infarto presumido.
+
+**D)** Cartório registra sozinho como causa clínica conhecida.
+
+**Gabarito: A.**
+
+- **Alternativa A:** O SVO esclarece morte natural sem diagnóstico conforme fluxo.
+- **Alternativa B:** IML é serviço médico-legal para causa externa/suspeita.
+- **Alternativa C:** Não inventar diagnóstico.
+- **Alternativa D:** Cartório não faz diagnóstico médico.
+
+**Mini-revisão:** SVO e IML possuem competências distintas.
+
+### Questão 5 — Óbito violento depois de semanas de internação
+
+**Enunciado:** Vítima de acidente de trânsito morre por complicações diretamente relacionadas ao trauma após dois meses. Classificação inicial adequada:
+
+**A)** Causa sempre natural pelo intervalo.
+
+**B)** Morte potencialmente por causa externa, com fluxo médico-legal.
+
+**C)** Morte neonatal tardia.
+
+**D)** Causa básica obrigatória diabetes.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Tempo decorrido não altera por si a origem externa.
+- **Alternativa B:** O evento inicial pode permanecer causa básica.
+- **Alternativa C:** Não corresponde à idade.
+- **Alternativa D:** Não há dado que sustente diabetes.
+
+**Mini-revisão:** O nexo com evento externo importa mesmo quando óbito é tardio.
+
+### Questão 6 — DO fetal: qual conectivo?
+
+**Enunciado:** Segundo critérios clássicos brasileiros, a DO fetal é obrigatória quando:
+
+**A)** Todos os três critérios ≥20 semanas, ≥500 g e ≥25 cm estão presentes simultaneamente.
+
+**B)** Ao menos um dos critérios ≥20 semanas OU ≥500 g OU ≥25 cm está presente.
+
+**C)** Apenas se houver gestação de 30 semanas.
+
+**D)** Nunca em óbito fetal.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A norma utiliza OU.
+- **Alternativa B:** Corresponde à redação dos critérios de emissão obrigatória.
+- **Alternativa C:** Limite de 30 semanas é inventado.
+- **Alternativa D:** Há obrigações previstas e direitos da família.
+
+**Mini-revisão:** Não confundir definição de morte fetal, política de luto e limiar de emissão compulsória.
+
+### Questão 7 — Nascido vivo de extremo baixo peso falece em 10 minutos
+
+**Enunciado:** Um recém-nascido de 430 gramas apresenta batimentos cardíacos após extração e morre dez minutos depois. Quais documentos?
+
+**A)** Apenas DO fetal.
+
+**B)** DNV e DO, pela existência de sinal de vida após nascimento.
+
+**C)** Nenhum por peso <500 g.
+
+**D)** Somente certidão de natimorto.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Houve nascimento vivo.
+- **Alternativa B:** Sinal de vida define nascido vivo independente de peso/idade.
+- **Alternativa C:** Peso não elimina direito de registro.
+- **Alternativa D:** Natimorto é diferente de nascido vivo seguido de morte.
+
+**Mini-revisão:** A DNV é emitida para todo nascido vivo, e DO se falecer.
+
+### Questão 8 — Classificação de morte aos 28 dias
+
+**Enunciado:** Lactente morreu com 28 dias completos. Que subgrupo de mortalidade infantil?
+
+**A)** Neonatal precoce.
+
+**B)** Neonatal tardia.
+
+**C)** Pós-neonatal.
+
+**D)** Fetal.
+
+**Gabarito: C.**
+
+- **Alternativa A:** 0–6 dias.
+- **Alternativa B:** 7–27 dias.
+- **Alternativa C:** 28–364 dias.
+- **Alternativa D:** Morte antes de nascimento vivo.
+
+**Mini-revisão:** Neonatal termina no 27º dia completo, não no 28º.
+
+### Questão 9 — Mortalidade infantil — conta
+
+**Enunciado:** Cidade possui 20.000 nascidos vivos e 200 óbitos em menores de um ano. O coeficiente é:
+
+**A)** 1 por mil NV.
+
+**B)** 10 por mil NV.
+
+**C)** 100 por 100 mil habitantes necessariamente.
+
+**D)** 10%.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Seria 20 óbitos, não 200.
+- **Alternativa B:** 200/20.000×1.000=10.
+- **Alternativa C:** Denominador e unidade estão incorretos para CMI.
+- **Alternativa D:** A porcentagem de 1% não é 10%.
+
+**Mini-revisão:** CMI = mortes <1 ano / nascidos vivos ×1.000.
+
+### Questão 10 — Decomposição da mortalidade infantil
+
+**Enunciado:** Com 10.000 NV ocorreram 30 óbitos neonatais precoces, 20 neonatais tardios e 40 pós-neonatais. CMI:
+
+**A)** 3 por mil.
+
+**B)** 5 por mil.
+
+**C)** 9 por mil.
+
+**D)** 90 por mil.
+
+**Gabarito: C.**
+
+- **Alternativa A:** Conta apenas precoce.
+- **Alternativa B:** Conta apenas neonatais.
+- **Alternativa C:** (30+20+40)/10.000×1.000=9.
+- **Alternativa D:** Multiplicador aplicado dez vezes.
+
+**Mini-revisão:** Somar grupos disjuntos com mesmo denominador produz CMI total.
+
+### Questão 11 — Fetal: denominador
+
+**Enunciado:** Em ano com 10.000 NV e 100 óbitos fetais do recorte, como expressar coeficiente fetal clássico?
+
+**A)** 100/(10.000+100)×1.000.
+
+**B)** 100/10.000×100.000.
+
+**C)** 100/100×1.000.
+
+**D)** 100/população total×1.000 sem considerar nascimentos.
+
+**Gabarito: A.**
+
+- **Alternativa A:** O denominador são nascimentos totais, incluindo fetais elegíveis.
+- **Alternativa B:** Muda unidade e denominador.
+- **Alternativa C:** Produz valor impossível de interpretar como taxa fetal.
+- **Alternativa D:** Nascimentos, não habitantes totais, definem indicador.
+
+**Mini-revisão:** Óbitos fetais / (NV + fetais) ×1.000.
+
+### Questão 12 — Mortalidade perinatal
+
+**Enunciado:** Com 50 óbitos fetais ≥22 semanas, 25 neonatais precoces e 4.950 NV, qual coeficiente perinatal?
+
+**A)** 5 por mil.
+
+**B)** 10 por mil.
+
+**C)** 15 por mil.
+
+**D)** 75%.
+
+**Gabarito: C.**
+
+- **Alternativa A:** Usa apenas mortes neonatais precoces.
+- **Alternativa B:** Não soma mortes fetais/precoces corretamente.
+- **Alternativa C:** (50+25)/(4.950+50)×1.000=15.
+- **Alternativa D:** Percentual incorreto.
+
+**Mini-revisão:** Usar o mesmo recorte fetal no numerador e denominador.
+
+### Questão 13 — Razão de mortalidade materna
+
+**Enunciado:** Houve 16 mortes maternas elegíveis e 40.000 nascidos vivos no ano. RMM:
+
+**A)** 0,4 por 100 mil NV.
+
+**B)** 4 por mil NV.
+
+**C)** 40 por 100 mil NV.
+
+**D)** 400 por 100 mil NV.
+
+**Gabarito: C.**
+
+- **Alternativa A:** Desloca duas casas.
+- **Alternativa B:** Não é unidade típica nem resultado.
+- **Alternativa C:** 16/40.000×100.000=40.
+- **Alternativa D:** Fator de dez indevido.
+
+**Mini-revisão:** RMM multiplica por 100.000 e usa NV no denominador.
+
+### Questão 14 — Morte materna tardia
+
+**Enunciado:** Mulher morre no 80º dia após parto devido a cardiomiopatia relacionada à gestação. Qual afirmação correta?
+
+**A)** Pode ser morte materna tardia e merece investigação, mas não entra RMM convencional até 42 dias.
+
+**B)** É sempre morte não materna por superar 42 dias.
+
+**C)** Conta como fetal.
+
+**D)** É causa externa obrigatória.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Distingue definição ampliada de vigilância e RMM clássica.
+- **Alternativa B:** Relação com gestação permanece importante.
+- **Alternativa C:** Refere-se à mãe, não feto.
+- **Alternativa D:** Não há causa externa.
+
+**Mini-revisão:** Vigilância até um ano pode ser mais ampla que numerador RMM.
+
+### Questão 15 — Gestante vítima de colisão
+
+**Enunciado:** Gestante morre por traumatismo em colisão, sem relação causal com a gravidez. Para RMM convencional:
+
+**A)** É morte materna direta.
+
+**B)** É morte durante gestação, mas causa incidental não entra em morte materna epidemiológica.
+
+**C)** É morte materna indireta automaticamente.
+
+**D)** É morte fetal.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Trauma incidental não é complicação obstétrica.
+- **Alternativa B:** A definição exclui causas acidentais/incidentais não relacionadas.
+- **Alternativa C:** Não há doença agravada pela gestação.
+- **Alternativa D:** É óbito da gestante.
+
+**Mini-revisão:** Gestação presente no momento da morte não prova relação materna.
+
+### Questão 16 — Mortalidade proporcional
+
+**Enunciado:** Entre 1.000 mortes totais, 300 foram por doença cardiovascular. A mortalidade proporcional cardiovascular é:
+
+**A)** 30%.
+
+**B)** 300 por 100 mil habitantes.
+
+**C)** 3%.
+
+**D)** 300/1.000 nascidos vivos.
+
+**Gabarito: A.**
+
+- **Alternativa A:** 300/1.000×100=30%.
+- **Alternativa B:** Falta população como denominador.
+- **Alternativa C:** Erro de dez vezes.
+- **Alternativa D:** NV não é o denominador.
+
+**Mini-revisão:** Mortalidade proporcional descreve composição das mortes, não risco da população.
+
+### Questão 17 — Letalidade
+
+**Enunciado:** De 400 pessoas reconhecidamente acometidas por doença X, 12 morreram por ela no período definido. Letalidade:
+
+**A)** 3%.
+
+**B)** 30%.
+
+**C)** 12 por mil nascidos vivos.
+
+**D)** 12/ população geral×100 mil.
+
+**Gabarito: A.**
+
+- **Alternativa A:** 12/400×100=3%.
+- **Alternativa B:** Erro de fator dez.
+- **Alternativa C:** NV não participa.
+- **Alternativa D:** Seria mortalidade por causa, não letalidade.
+
+**Mini-revisão:** Letalidade divide mortes pela mesma doença por casos da doença.
+
+### Questão 18 — Comparação de municípios com estruturas etárias distintas
+
+**Enunciado:** Município A é muito mais idoso que B e apresenta taxa bruta de mortalidade maior. Qual conclusão é adequada?
+
+**A)** A atenção de saúde de A é necessariamente pior.
+
+**B)** É necessário comparar taxas por idade ou padronizadas antes de atribuir diferença a risco assistencial.
+
+**C)** O número bruto basta.
+
+**D)** Idade não influencia risco de morte.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Diferença etária pode explicar o coeficiente.
+- **Alternativa B:** Padronização melhora comparabilidade.
+- **Alternativa C:** Carga e risco são conceitos diferentes.
+- **Alternativa D:** Mortalidade varia fortemente por idade.
+
+**Mini-revisão:** CBM alta pode refletir envelhecimento.
+
+### Questão 19 — Local de ocorrência versus residência
+
+**Enunciado:** Paciente residente em município X morre em hospital de referência Y. Para mortalidade populacional de residentes, considerar:
+
+**A)** Óbito atribuído a residentes de X e NV/população de X quando indicador pertinente.
+
+**B)** Óbito sempre de Y por ser local de hospital.
+
+**C)** Contar morte duas vezes.
+
+**D)** Ignorar local de residência.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Mantém denominador territorial consistente.
+- **Alternativa B:** Levaria a distorção de capital receptora.
+- **Alternativa C:** Causaria superestimação.
+- **Alternativa D:** Residência é variável epidemiológica fundamental.
+
+**Mini-revisão:** Taxas de população residente exigem numerador/denominador do mesmo território.
+
+### Questão 20 — Sobrevida e viés de antecipação
+
+**Enunciado:** Um rastreamento passa a diagnosticar câncer dois anos antes, mas pessoas morrem na mesma idade. A sobrevida medida desde diagnóstico sobe. Isso pode indicar:
+
+**A)** Redução comprovada de mortalidade.
+
+**B)** Viés de antecipação diagnóstica, sem necessariamente benefício em mortalidade.
+
+**C)** Cura definitiva de todos.
+
+**D)** Erro na fórmula de RMM.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A data do óbito não mudou.
+- **Alternativa B:** Lead-time bias aumenta tempo desde diagnóstico artificialmente.
+- **Alternativa C:** Não se demonstrou redução de mortes.
+- **Alternativa D:** É tema distinto.
+
+**Mini-revisão:** Para rastreamento, mortalidade específica e danos são desfechos cruciais.
+
+### Questão 21 — Investigação obrigatória de óbito materno
+
+**Enunciado:** Mulher de 32 anos falece com causa inicial declarada como indeterminada. Sabe-se que teve parto 30 dias antes. Qual orientação?
+
+**A)** Não investigar porque causa não foi obstétrica na DO.
+
+**B)** Acionar investigação de óbito materno/mulher em idade fértil para determinar relação com gestação.
+
+**C)** Alterar causa para eclâmpsia sem provas.
+
+**D)** Excluir do SIM.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Causa indeterminada pode ocultar relação obstétrica.
+- **Alternativa B:** É evento importante para vigilância e prevenção.
+- **Alternativa C:** Não fabricar diagnóstico.
+- **Alternativa D:** Óbito deve ser registrado.
+
+**Mini-revisão:** A investigação pode reclassificar a causa com evidência, não com suposição.
+
+### Questão 22 — Qualidade da causa básica
+
+**Enunciado:** Em estudo populacional, 25% das DO têm causa 'mal súbito'. Qual problema principal?
+
+**A)** Nenhum: mal súbito é diagnóstico etiológico completo.
+
+**B)** Perda de informação para análise de mortalidade por causas e necessidade de qualificar investigação/registro.
+
+**C)** A mortalidade infantil é sempre zero.
+
+**D)** CID dispensa prontuário.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Termo é inespecífico.
+- **Alternativa B:** Causas pouco informativas prejudicam políticas.
+- **Alternativa C:** Não há informação sobre óbitos infantis.
+- **Alternativa D:** A qualidade depende de diagnóstico e contexto clínico.
+
+**Mini-revisão:** Registro inespecífico não revela a doença que iniciou cadeia.
+
+
+
+## 29. Curadoria visual e tabelas de revisão — 15 candidatos
+
+O tema exige mais **diagramas, linhas do tempo e fluxos de causalidade** que imagens clínicas. A DO oficial pode ser mostrada apenas como referência institucional e com direitos de reprodução/treinamento adequadamente conferidos; não inserir documento real com dados de pessoa identificável. Os candidatos abaixo são propostas, não arquivos aprovados.
+
+| Nº | Imagem/diagrama | Legenda e ganho didático | Fonte/condição |
+|---|---|---|---|
+| 1 | Anatomia da DO — Parte I e Parte II | Representação de formulário fictício com a, b, c, d e cadeia causal; sem número real de DO | Recriar diagrama autoral baseado no manual MS; não reproduzir formulário oficial com dados reais |
+| 2 | Fluxo de emissão médico assistente, SVO e IML | Árvore: natural versus externa; com ou sem assistência e disponibilidade de serviço | Diagrama autoral conferido com CFM 1779/2005 e Portaria 116/2009 |
+| 3 | Causa imediata versus causa básica | Setas pneumonia → sepse → morte, com diabetes contribuinte fora da cadeia | Infográfico didático original |
+| 4 | Neoplasia e declaração corretamente preenchida | Câncer colorretal → metástases → insuficiência hepática, intervalos | Modelo de dados inteiramente fictícios |
+| 5 | Nascido vivo versus óbito fetal | Sinal de vida após separação → DNV e eventual DO; sem sinais → critérios DO fetal | Diagrama com legislação de 2026 e aviso de limites diferentes por finalidade |
+| 6 | Janela neonatal | Linha do tempo 0–6, 7–27, 28–364 dias e morte infantil | Gráfico autoral sem imagens de recém-nascidos |
+| 7 | Morte materna de 0 a 42 dias e tardia 43–365 | Linha do tempo gravidez → parto → 42º dia → um ano | Diagrama baseado em conceitos da CID e política de vigilância |
+| 8 | Matriz de indicadores | Quadro com numeradores, denominadores, multiplicadores de CMI, RMM, fetal, perinatal, letalidade | Tabela original revisada por epidemiologista |
+| 9 | Diagrama do SIM e SINASC | Fluxo DO → SIM / DNV → SINASC / vínculo para mortalidade infantil | Infográfico original com fontes institucionais |
+| 10 | Comparação de municípios com idade diferente | Gráfico de barras comparando bruto e padronizado | Dados simulados e identificados |
+| 11 | Erro de residência versus ocorrência | Mapa esquemático sem geografia real de transferência para hospital de referência | Arte autoral com dois municípios fictícios |
+| 12 | Impacto do sub-registro | Exemplo de mortes observadas versus corrigidas, sem afirmar incidências reais | Visualização original de dados hipotéticos |
+| 13 | Efeito de pequenas contagens na RMM | RMM saltando de 50 para 100 com um óbito adicional em 2.000 NV | Gráfico de dados fictícios, sem inferência causal |
+| 14 | Lead-time bias em rastreamento | Linhas do tempo com diagnóstico antecipado e data de morte igual | Diagrama original com riscos de interpretação |
+| 15 | Humanização do luto parental | Roteiro visual de acolhimento, privacidade, nome ao natimorto e seguimento | Arte original sem foto de família em luto não consentida |
+
+### Requisitos de aprovação visual
+
+- Usar **dados fictícios** em qualquer DO ilustrativa; nunca mostrar números de formulário e dados reais de familiares.
+- Revisar causa básica/imediata e os intervalos nos desenhos com codificador do SIM.
+- Fazer diagramas acessíveis em cores LURIA e alternativa textual longa, especialmente fórmulas.
+- Checar direitos autorais de captura do formulário oficial e preferir **recriação de esquema educativo**, citando o manual.
+- Converter diagramas para WebP quando forem imagens, manter vetor-fonte quando possível e evitar compressão que destrua texto pequeno.
+- Em fluxos legais, identificar **norma, data de revisão e diferença entre obrigação de DO, definição biológica de óbito e direitos da família**.
+- Separar no app fluxogramas clínicos, tabelas numéricas e questões; validar responsividade e leitura no PWA.
+- Não alegar que as imagens já foram integradas; as 15 propostas aguardam seleção/autoria/licença.
+
+## 30. Integração curricular e prática LURIA
+
+A aula 175 apoia diretamente a **aula 170 (Ética médica, sigilo e prontuário)** porque a documentação de morte deve ser verdadeira, protegida e rastreável; a **aula 163 (Violência contra crianças)** quando há suspeita de causa externa; a **aula 168 (Adolescência)** na atenção a gestante adolescente; a **aula 173 (Urgências pediátricas)** no cuidado neonatal fora da sala de parto; e a **aula 180 (Cuidados paliativos)** no diálogo com familiares e decisões proporcionais.
+
+### Flashcards que podem derivar do texto
+1. Diferença DO e Certidão de Óbito.
+2. Última linha usada da Parte I e causa básica.
+3. Quem emite morte natural sem assistência com SVO.
+4. Óbito violento tardio e competência IML.
+5. Critérios clássicos DO fetal — OU.
+6. Nascido vivo extremo pré-termo e emissão DNV + DO.
+7. Mortalidade neonatal precoce/tardia e pós-neonatal.
+8. Fórmula CMI e denominador.
+9. RMM e limite de 42 dias.
+10. Causa materna direta versus indireta.
+11. Morte materna tardia e investigação.
+12. Mortalidade fetal e nascimentos totais.
+13. Mortalidade perinatal e recorte fetal.
+14. Letalidade versus mortalidade.
+15. Proporção de mortalidade.
+16. Padronização por idade e falácia de comparações brutas.
+17. SIM, SINASC e fonte de dados.
+18. Lead-time bias e sobrevida.
+19. Diferença entre ocorrência e residência.
+20. Política de luto parental 2025/2026.
+
+### Critério de qualidade para questões numéricas
+Todo item de cálculo deve informar período, mesmo território, faixa etária/caso e multiplicador. Distratores devem representar **erros comuns reais** (dividir por habitantes em vez de NV, usar 1.000 em vez de 100.000, usar mortes fetais no denominador errado), sem respostas artificialmente absurdas como único método.
+
+## 31. Auditoria consolidada da Aula 175
+
+**A produção inclui:** definição/legalidade da DO, causas, SIM/SINASC, óbitos fetais, neonatais e maternos, estudo de indicadores, padronização e interpretação de vigilância; **12 casos integradores**, **22 questões comentadas alternativa por alternativa** e **15 candidatas visuais**.
+
+### Verificações internas
+- [x] DO e Certidão de Óbito não confundidas.
+- [x] Competências de médico assistente, SVO e IML explicadas conforme contexto.
+- [x] Causa básica/linha a e cadeia da Parte I consistentes.
+- [x] RMM até 42 dias versus morte materna tardia separados.
+- [x] Óbito fetal biológico versus limite de DO obrigatório separados.
+- [x] DNV + DO para nascido vivo que falece após nascimento, independentemente do peso.
+- [x] Mortalidade infantil, neonatal, fetal, perinatal, letalidade, proporcional e RMM com fórmulas.
+- [x] Pequenas contagens, idade e local de residência considerados.
+- [x] Lei do Luto 15.139/2025 e Portaria 10.273/2026 incluídas sem reduzir acolhimento ao limiar epidemiológico.
+- [x] Questões numéricas acompanhadas de gabarito e comentário de cada alternativa.
+- [x] Visualizações planejadas sem dados pessoais.
+
+### Pendências obrigatórias
+- [ ] Revisão independente por médico atestador/SVO e profissional da vigilância/codificador SIM.
+- [ ] Conferir eventual atualização de Portaria 116/2009/CFM e regulamentações de DO eletrônica na data exata de publicação.
+- [ ] Verificar implantação local da Lei 15.139/2025 e da Portaria 10.273/2026, sem extrapolar direitos/documentação.
+- [ ] Validar integralmente recortes estatísticos e fórmulas sob a versão do MS/RIPSA adotada, incluindo perdas fetais antes do limiar.
+- [ ] Revisão editorial da clareza dos casos e da precisão das causas naturais/externalidades.
+- [ ] Produção, licenciamento e aprovação das 15 imagens/diagramas.
+- [ ] Converter para HTML/content.json no padrão LURIA, indexar no cronograma e testar PWA/desktop.
+- [ ] Conferir todos os links das referências e registrar auditoria científica com data/responsável.
+- [ ] Não declarar o rascunho como formulário oficial preenchido ou protocolo médico obrigatório.
+
+**Status:** rascunho autoral aprofundado apto para revisão médico-epidemiológica e integração futura. Não validado para uso de preenchimento de DO real sem consulta a normas e fluxo local.
