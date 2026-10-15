@@ -502,3 +502,251 @@ Suspensão prolongada de AAS para **prevenção secundária** pode gerar IAM/AVC
 
 A grande diferença do aluno que apenas decora é reconhecer **qual sequência salva a vida daquele paciente**. O tratamento correto é modular: risco → suporte → método de hemostasia → prevenção de recidiva, sempre com revisão da fonte.
 
+
+
+## 26. Oito casos clínicos comentados de hemorragia digestiva alta
+
+### Caso 1 — Melena, estabilidade e estratificação de baixo risco
+
+**Apresentação:** mulher de 29 anos, sem doenças conhecidas, relata uma evacuação escura após dor epigástrica leve. Nega síncope, dispneia, hematêmese volumosa, uso de anticoagulantes ou cardiopatia. Está lúcida, PA 122/78 mmHg, FC 76/min, perfusão normal. Hb 13,1 g/dL, ureia não elevada, sem melena no toque retal indicado, sem doença hepática. Ela toma suplemento de ferro há três semanas.
+
+**Problema:** fezes negras não provam sangramento. Ferro pode escurecer fezes, e o exame requer história detalhada de aspecto e oportunidade de avaliação. Se ainda há suspeita de HDA, usar **Glasgow–Blatchford Score calculado com variáveis e unidades corretas**, exame e acesso a seguimento, não apenas um “rótulo de melena”. Hb e ureia normais reduzem risco, mas não excluem toda fonte.
+
+**Exames:** revisar dieta/ferro, histórico de hematêmese, fezes, exame físico; hemograma e ureia/creatinina já disponíveis; não há indicação de TC e hemocultura rotineira. Se GBS for 0–1 e avaliação clínica confirmar risco muito baixo, os consensos ACG/ESGE permitem considerar alta com EDA ambulatorial se houver seguimento seguro.
+
+**Conduta:** orientar sinais de retorno e organizar avaliação ambulatorial apropriada; se surgirem perda recorrente, tontura, síncope, palidez ou dor intensa, reavaliar imediatamente. Não prescrever transfusão nem octreotida por fezes escuras isoladas.
+
+**Por que importa:** o objetivo do escore é poupar internação de pessoas realmente de muito baixo risco, sem transformar um resultado isolado em liberação irresponsável.
+
+### Caso 2 — Úlcera Forrest Ia com instabilidade e hemoglobina inicialmente preservada
+
+**Apresentação:** homem de 62 anos, consumidor frequente de ibuprofeno por osteoartrose, chega com hematêmese rubra abundante, melena, PA 82/54, FC 124, sudorese fria. Hb inicial 11,6 g/dL, mas não se conhece valor basal. Recebe reanimação e transfusão conforme perfusão/hemorragia. EDA após suporte demonstra úlcera na parede posterior de bulbo duodenal com **sangramento em jato (Forrest Ia)**.
+
+**Hipótese:** HDA não varicosa de alto risco por úlcera com vaso ativo; choque pode existir apesar de Hb inicial relativamente conservada. A proximidade da artéria gastroduodenal torna importante o risco de sangramento expressivo. Foco é a lesão endoscópica, não apenas “gastrite por AINE”.
+
+**Exames:** hemograma seriado, ureia/creatinina, tipagem, coagulograma/plaquetas conforme gravidade; EDA terapêutica. Lactato e perfusão ajudam avaliação de choque, sem atrasar procedimento.
+
+**Conduta:** hemostasia endoscópica durável por clipe/termocoagulação ou **OTS** em cenário indicado; adrenalina pode ser usada como complemento para reduzir fluxo, mas **não isoladamente** como terapia definitiva. Após controle, **IBP de alta dose por 72h** com regime protocolizado, vigilância de ressangramento, revisão de AINEs e H. pylori. Em lesão grande, posterior e muito grave, discutir possibilidade de **TAE profilática selecionada** após hemostasia conforme ESGE 2026, não automática.
+
+**Por que importa:** combina fisiologia da perda aguda, Forrest e atualização endoscópica.
+
+### Caso 3 — Forrest IIb e a mudança de recomendação
+
+**Apresentação:** mulher de 71 anos, com DRC moderada e antecedente de úlcera péptica, apresenta melena e queda da Hb de 11 para 8,4 g/dL em dois dias. Após estabilização, EDA mostra úlcera gástrica com **coágulo aderido sem sangramento visível (Forrest IIb)**. O médico residente aprendeu em aula antiga que “coágulo não se toca nunca”.
+
+**Interpretação:** coágulo pode encobrir vaso de alto risco. A **ESGE 2026** sugere abordagem endoscópica com **remoção segura do coágulo e hemostasia subjacente se indicada**, desde que endoscopista tenha capacidade e recursos para controlar hemorragia desencadeada; trata-se de recomendação de força/certeza que exige contextualização, não obrigação de remover a qualquer custo.
+
+**Exames:** documentação endoscópica e avaliação de tamanho/localização, risco, estabilidade, hemograma seriado, necessidade de biópsia da úlcera gástrica após hemostasia conforme aparência e segurança.
+
+**Conduta:** equipe experiente decide tratar o IIb, com clipe/termocoagulação/OTS conforme lesão e recursos. Se coágulo não for abordado por limitação de segurança, IBP de alta dose e vigilância apropriada são importantes conforme diretriz e risco. Planejar pesquisa de H. pylori e controle de fatores causais, possível seguimento de cicatrização/histologia gástrica.
+
+**Por que importa:** mostra atualização ESGE 2026 e impede decorar regra dogmática descontextualizada.
+
+### Caso 4 — Hematêmese e cirrose: tratamento antes da EDA
+
+**Apresentação:** homem de 54 anos com cirrose descompensada, ascite, plaquetas 74.000 e varizes conhecidas relata hematêmese maciça e síncope. PA 90/60, pulso 116, extremidades frias. Está consciente, mas vomita sangue repetidamente. Não há história recente de AINEs. Sua irmã pergunta por que vai receber antibiótico se não há febre.
+
+**Hipótese:** **HDA varicosa até prova em contrário**, sem excluir úlcera. A ruptura de varizes tem mecanismo portal e alto risco infeccioso. Coagulopatia laboratorial não autoriza indiscriminadamente plasma para “normalizar INR”; volume excessivo pode piorar hipertensão portal.
+
+**Exames:** monitorização, hemograma, tipo sanguíneo, função renal, eletrólitos, INR para avaliação global, culturas apenas conforme suspeita de infecção, e EDA após suporte. Vigiar aspiração e indicar proteção de via aérea se capacidade de manter secreções estiver comprometida.
+
+**Conduta:** reanimação, transfusão prudente, **octreotida/terlipressina/somatostatina** conforme serviço **desde a suspeita**, **antibiótico profilático** para cirrótico de risco e EDA precoce (frequentemente até 12h após ressuscitação); ligadura se varizes esofágicas sangrantes. O Baveno VIII 2026 orienta individualização do regime antibiótico e avaliação de **TIPS preemptivo** em critérios de alto risco. Após controle, planejar NSBB e ligadura seriada conforme estabilidade.
+
+**Por que importa:** início de tratamento etiológico não pode depender de confirmação endoscópica tardia.
+
+### Caso 5 — Ressangramento após hemostasia de úlcera: segunda EDA, embolização ou cirurgia
+
+**Apresentação:** homem de 68 anos, portador de coronariopatia e úlcera gástrica de alto risco, recebeu hemostasia endoscópica com clipe e IBP. Após 36 horas voltou a vomitar sangue e apresentou hipotensão/queda de Hb, exigindo suporte. Endoscopista encontra novo sangramento no mesmo ponto, com base fibrosa.
+
+**Hipótese:** **ressangramento ulceroso clinicamente significativo**, distinto de evacuar sangue antigo. Risco maior por lesão difícil e comorbidades. Repetir indefinidamente adrenalina não garante hemostasia.
+
+**Exames:** reavaliar perfusão, coagulopatia e medicações; nova EDA terapêutica se equipe e estabilidade permitem; discussão precoce com radiologia intervencionista e cirurgia, inclusive TC/angiografia conforme cenário.
+
+**Conduta:** considerar **OTS** ou técnica endoscópica avançada na segunda EDA conforme ESGE 2026. Se segunda abordagem falhar, **TAE** quando disponível; **cirurgia** se TAE ausente, falhar ou deterioração exigir controle imediato. Manter prevenção/IBP e reavaliar AAS em prevenção secundária com cardiologia.
+
+**Por que importa:** conhecer linha de resgate e quando abandonar tentativa endoscópica ineficaz.
+
+### Caso 6 — Anticoagulante oral e úlcera de alto risco
+
+**Apresentação:** mulher de 76 anos com fibrilação atrial e AVC prévio usa apixabana. Inicia melena e tontura; na admissão está PA 98/62, Hb 7,5 g/dL e creatinina elevada. Após reanimação, EDA identifica úlcera duodenal Forrest IIa (vaso visível), tratada com clipe. Familiares pedem para retirar anticoagulação para sempre.
+
+**Interpretação:** vaso visível sem sangrar (IIa) continua com alto risco e requer hemostasia. O uso de anticoagulante amplia risco hemorrágico, mas FA com AVC prévio implica **risco tromboembólico importante** na suspensão indefinida. Reversão aguda depende da ameaça à vida e da droga, e não de vitamina K usada indiscriminadamente para DOAC.
+
+**Exames:** hemograma/renal em tendência, revisão de dose e última administração do DOAC, interações, risco cardiológico e seguimento de úlcera/H. pylori.
+
+**Conduta:** hemostasia, IBP alta dose conforme risco, suspender temporariamente/reverter se justificativa aguda e protocolo, com plano compartilhado de **retomada tão cedo quanto clinicamente indicado** depois de hemostasia segundo risco de AVC e ressangramento (ESGE 2026). O prazo não é igual para todos. Repor ferro e orientar sinais de retorno.
+
+**Por que importa:** "não sangrar" e "não ter AVC" são metas concorrentes que exigem avaliação balanceada.
+
+### Caso 7 — Vômitos seguidos de sangue: Mallory–Weiss ou ruptura esofágica?
+
+**Apresentação:** homem de 38 anos após festa com álcool apresenta repetidos vômitos e depois pequena hematêmese. Sem dor torácica intensa, dispneia ou crepitação cervical. PA e FC estáveis, Hb normal. EDA em momento apropriado mostra laceração linear mucosa próxima à junção esofagogástrica, já sem sangramento.
+
+**Hipótese:** **Mallory–Weiss**, geralmente autolimitada quando não há sangramento ativo. Diferencial essencial é **Boerhaave** se vômitos associados a dor torácica intensa, enfisema, febre, derrame pleural ou mediastinite. Ausência desses sinais no caso reduz suspeita, mas o quadro clínico sempre prevalece.
+
+**Exames:** estimar risco e necessidade de EDA; se dor torácica abrupta grave ou sinais de perfuração, priorizar avaliação por imagem torácica/esofágica apropriada e cirurgia, não apenas EDA rotineira.
+
+**Conduta:** suporte, tratar vômitos e fator desencadeante, acompanhamento; hemostasia endoscópica apenas se sangramento ativo ou estigma relevante. Reduzir risco de nova irritação. **Por que importa:** diferenciar laceração mucosa hemorrágica de ruptura transmural com necessidade de controle de fonte.
+
+### Caso 8 — Prótese aórtica, pequena melena e risco de fístula
+
+**Apresentação:** homem de 72 anos operado de aneurisma de aorta abdominal há quatro anos apresenta episódios intermitentes de melena e queda de Hb. Primeira EDA de outro hospital descreveu gastrite discreta, sem foco suficiente para explicar sangramento. Agora apresenta sudorese, PA 94/58, dor abdominal vaga e leucocitose.
+
+**Hipótese:** suspeita de **fístula aortoentérica** associada a enxerto aórtico, mesmo que inicialmente haja apenas "sangramento sentinela". Gastrite leve não encerra investigação de perda importante em portador de prótese. O risco de hemorragia maciça torna a situação emergência vascular.
+
+**Exames:** reanimação e tipagem, avaliação por cirurgia vascular, **angio-TC** conforme estabilidade e disponibilidade; reconhecer que EDA pode não alcançar fonte ou perder lesão.
+
+**Conduta:** encaminhamento imediato para controle vascular/anatômico em centro capaz, sem dar alta apenas pela EDA negativa. Antibiótico e estratégias cirúrgicas podem ser necessários em infecção de enxerto, conforme serviço.
+
+**Por que importa:** história de cirurgia aórtica torna perigoso aceitar "gastrite" como diagnóstico de exclusão diante de sangramento relevante.
+
+## 27. Doze questões autorais comentadas — HDA e endoscopia
+
+### Questão 1 — Hematoquezia com choque
+Homem de 66 anos apresenta eliminação de sangue vermelho pelo reto, síncope, PA 78/46 e FC 126. Qual afirmação é correta?
+
+A) Hematoquezia exclui sangramento acima de Treitz.  
+B) HDA volumosa com trânsito rápido pode produzir hematoquezia; reanimação precede investigação anatômica.  
+C) Resultado de hemoglobina normal no primeiro exame exclui sangramento grave.  
+D) O melhor primeiro passo é colonoscopia eletiva na semana seguinte.
+
+**Gabarito: B.** **A:** localização pela cor é imperfeita. **B:** HDA maciça pode causar hematoquezia, e choque exige estabilização imediata. **C:** Hb inicial pode estar relativamente preservada na perda aguda. **D:** esperar exame ambulatorial em choque é perigoso. **Mini-revisão:** sangue vivo retal não exclui origem alta se instabilidade acentuada.
+
+### Questão 2 — Momento da EDA em HDA não varicosa
+Mulher de 57 anos com melena por provável úlcera foi ressuscitada, encontra-se estável, sem novo sangramento e aguarda endoscopia. Segundo ESGE 2026/ACG 2021:
+
+A) Toda HDA não varicosa exige EDA em menos de uma hora, mesmo sem ressuscitação.  
+B) A EDA deve ser protelada por sete dias em todas as pessoas.  
+C) EDA precoce dentro de aproximadamente 24h após suporte é recomendada na maioria; endoscopia ≤6–12h de rotina não melhora resultados em estáveis.  
+D) IBP IV substitui endoscopia em qualquer úlcera.
+
+**Gabarito: C.** **A:** procedimento sem suporte pode causar dano. **B:** atraso injustificado perde janela de diagnóstico/hemostasia. **C:** orientação aplicável ao cenário estável, com exceção de instabilidade persistente. **D:** IBP não substitui controle de sangramento. **Mini-revisão:** tempo da EDA depende de síndrome e estabilidade, não só relógio.
+
+### Questão 3 — Forrest IIa
+Uma EDA encontra úlcera com **vaso visível sem sangramento ativo**. A classificação e conduta esperada são:
+
+A) Forrest III, alta sem avaliação.  
+B) Forrest IIa, **hemostasia endoscópica** devido ao alto risco.  
+C) Forrest IIc, nunca necessita análise de risco.  
+D) Forrest Ib, sangramento em jato.
+
+**Gabarito: B.** **A:** Forrest III é base limpa. **B:** IIa corresponde ao vaso não sangrante visível que exige hemostasia. **C:** IIc é mancha plana pigmentada. **D:** Ib corresponde a sangramento ativo em babação, e Ia a jato. **Mini-revisão:** ausência de sangue correndo não significa baixo risco quando há vaso exposto.
+
+### Questão 4 — Forrest IIb na ESGE 2026
+Em úlcera hemorrágica com **coágulo aderido** e paciente estável, a recomendação ESGE 2026 é melhor descrita por:
+
+A) Jamais intervir em qualquer IIb, independentemente do centro.  
+B) Sugerir avaliação para remoção segura do coágulo e hemostasia do estigma subjacente quando indicado, **se há experiência e capacidade de controle**.  
+C) Prescrever apenas octreotida e antibiótico por três meses.  
+D) Toda Forrest IIb é câncer confirmado.
+
+**Gabarito: B.** **A:** reflete abordagem dogmática que não acompanha atualização. **B:** coágulo pode esconder vaso de alto risco, e a competência/segurança condicionam decisão. **C:** não é tratamento específico de úlcera IIb. **D:** não há diagnóstico histológico por coágulo. **Mini-revisão:** IIb evoluiu nas recomendações, mas não autoriza remover sem capacidade de hemostasia.
+
+### Questão 5 — Adrenalina como monoterapia
+Paciente com úlcera duodenal Forrest Ia recebe apenas injeção de adrenalina e sangramento cessa. Qual é a melhor conduta endoscópica?
+
+A) Encerrar obrigatoriamente sem tratamento adicional.  
+B) Acrescentar método durável como clipe ou terapia térmica, ou técnica validada apropriada, pois adrenalina isolada tem maior risco de recidiva.  
+C) Considerar profilaxia de PBE como único passo restante.  
+D) Prescrever vitamina K para todo paciente independentemente da causa.
+
+**Gabarito: B.** **A:** controle imediato não prova hemostasia durável. **B:** adrenalina é complemento clássico; ESGE 2026 também admite OTS em contextos adequados. **C:** profilaxia de PBE pertence a contextos cirróticos específicos, não a todo sangramento ulceroso. **D:** vitamina K só em indicações próprias. **Mini-revisão:** hemostasia combinada ou compressão durável reduz risco de ressangramento.
+
+### Questão 6 — IBP pós-hemostasia
+Homem tratado endoscopicamente por úlcera Forrest Ia está estável. Qual estratégia farmacológica é mais adequada?
+
+A) Suspender toda supressão ácida após clipe.  
+B) IBP em alta dose por cerca de 72h após hemostasia de alto risco, contínuo ou intermitente validado, depois esquema oral conforme cicatrização.  
+C) Usar octreotida indefinidamente no lugar do IBP.  
+D) Anti-inflamatório não esteroidal em alta dose para acelerar reparo.
+
+**Gabarito: B.** **A:** não segue recomendações de úlcera de alto risco. **B:** ESGE/ACG recomendam IBP de alta dose no pós-procedimento. **C:** octreotida é vasoativo portal, não supressão ácida ulcerosa. **D:** AINE favorece dano mucoso. **Mini-revisão:** IBP atua na estabilização do coágulo e cicatrização; não substitui técnica hemostática.
+
+### Questão 7 — HDA varicosa antes de endoscopia
+Homem com cirrose descompensada, ascite e hematêmese maciça está em reanimação. Qual manejo específico deve começar na suspeita de varizes?
+
+A) Vasoativo esplâncnico e antibiótico profilático apropriado, além de ressuscitação/planejamento de EDA.  
+B) Apenas IBP oral por sete dias e alta.  
+C) Aguardar EDA para qualquer medicação específica, mesmo sem acesso em várias horas.  
+D) Plasma até INR normal em todos, sem considerar hemodinâmica.
+
+**Gabarito: A.** **A:** terapia precoce reduz risco e segue diretrizes de varices. **B:** IBP não trata hipertensão portal. **C:** atraso perde oportunidade de tratamento antes da endoscopia. **D:** INR cirrótico não justifica correção universal e plasma pode aumentar volume/pressão portal. **Mini-revisão:** HDA varicosa é via própria, diferente de úlcera não varicosa.
+
+### Questão 8 — Ressangramento após hemostasia
+Mulher de 69 anos apresenta recidiva de hematêmese com queda de Hb após clipe de úlcera; segunda EDA com método avançado falhou em controlar hemorragia. Segundo ESGE 2026:
+
+A) Repetir indefinidamente injeção de adrenalina.  
+B) Considerar embolização angiográfica transcateter (TAE), ou cirurgia se TAE indisponível/ineficaz.  
+C) Esperar espontaneamente cinco dias sem monitorização.  
+D) Fazer ligadura de varizes esofágicas sem evidência de varizes.
+
+**Gabarito: B.** **A:** falha repetida exige mudar estratégia. **B:** é a linha de resgate recomendada em úlcera hemorrágica refratária. **C:** deterioração exige hemostasia. **D:** técnica não corresponde à causa. **Mini-revisão:** segunda EDA/OTS pode preceder TAE; cirurgia quando sem TAE eficaz.
+
+### Questão 9 — Retorno de anticoagulação
+Mulher com FA e AVC prévio usa apixabana e teve úlcera hemorrágica tratada. Após controle, familiares querem suspender anticoagulação indefinidamente. Qual orientação é melhor?
+
+A) Reiniciar em todas as pessoas exatamente em 24 horas sem avaliar risco.  
+B) Nunca reiniciar anticoagulante após qualquer HDA.  
+C) Planejar retomada tão cedo quanto clinicamente indicado conforme risco de tromboembolismo e de ressangramento, após hemostasia e discussão multidisciplinar.  
+D) Administrar vitamina K por longo prazo como forma de apixabana mais segura.
+
+**Gabarito: C.** **A:** risco hemorrágico varia e exige hemostasia. **B:** suspensão indefinida pode causar AVC em alto risco. **C:** corresponde ao foco da ESGE 2026. **D:** vitamina K não reverte DOAC como apixabana. **Mini-revisão:** anticoagulação é decisão de dois riscos, não de um prazo universal.
+
+### Questão 10 — Mallory–Weiss versus Boerhaave
+Homem apresenta hematêmese após vômitos repetidos, sem dor torácica grave; outro apresenta dor retroesternal intensa, enfisema cervical e febre após esforço de vômito. Qual afirmação é correta?
+
+A) Ambos têm laceração mucosa que sempre resolve sem avaliação.  
+B) O segundo sugere **ruptura transmural esofágica (Boerhaave)** e precisa de investigação/controle de fonte urgente; o primeiro pode ter Mallory–Weiss.  
+C) Mallory–Weiss se caracteriza por pneumoperitônio maciço obrigatório.  
+D) Dor torácica e enfisema são achados típicos de sangramento varicoso sem diferenciais.
+
+**Gabarito: B.** **A:** perfuração não é laceração superficial. **B:** diferencia mecanismo e gravidade. **C:** pneumoperitônio não define Mallory–Weiss. **D:** sinais podem indicar mediastinite/perfuração. **Mini-revisão:** Mallory–Weiss sangra; Boerhaave vaza através de toda a parede.
+
+### Questão 11 — GBS e alta
+Paciente com suspeita de HDA tem Glasgow–Blatchford 0, sem novos episódios, sinais vitais normais, sem comorbidades, com endoscopia ambulatorial e retorno garantidos. Qual opção é mais adequada?
+
+A) Todo suspeito de HDA precisa de UTI por sete dias.  
+B) GBS 0–1 pode permitir alta com seguimento quando há baixo risco clínico e logística segura.  
+C) GBS 0 exclui qualquer doença gastrointestinal por toda a vida.  
+D) A alta não depende de estabilidade, apenas do escore.
+
+**Gabarito: B.** **A:** internação universal não é necessária. **B:** ACG/ESGE aceitam manejo ambulatorial de risco muito baixo. **C:** escore prevê desfechos de curto prazo, não ausência de lesão. **D:** julgamento e seguimento são essenciais. **Mini-revisão:** pontuação orienta a via, mas não substitui exame e acompanhamento.
+
+### Questão 12 — Cirurgia aórtica e sangramento sentinela
+Homem com enxerto aórtico apresenta melena intermitente e anemia progressiva, mas EDA mostra apenas gastrite leve. Agora há hipotensão. Qual diagnóstico perigoso deve ser lembrado?
+
+A) Fístula aortoentérica associada ao enxerto, exigindo avaliação vascular urgente.  
+B) Deficiência fisiológica de vitamina K sem outra investigação.  
+C) Melena funcional causada pelo estresse.  
+D) Colonização gástrica benigna que exclui hemorragia.
+
+**Gabarito: A.** **A:** cirurgia prévia de aorta é pista de risco para fístula e possível sangramento maciço. **B:** causa não estabelecida e não explica o conjunto. **C:** melena e choque precisam de diagnóstico orgânico. **D:** EDA sem foco convincente não afasta complicação vascular. **Mini-revisão:** fístula aortoentérica pode ter sangramento sentinela antes de catástrofe.
+
+## 28. Referências científicas verificáveis (até outubro de 2026)
+
+1. **ESGE — Gralnek et al.** *Endoscopic diagnosis and management of peptic ulcer bleeding: ESGE Guideline — Update 2026*. *Endoscopy*, 2026;58(8):899–924. DOI **10.1055/a-2863-8314**. https://pubmed.ncbi.nlm.nih.gov/42127996/ . Atualização de Forrest IIb, OTS, hemostáticos tópicos, embolização e medidas pós-EDA.
+2. **ESGE — Gralnek et al.** *Endoscopic diagnosis and management of nonvariceal upper gastrointestinal hemorrhage: Update 2021*. *Endoscopy*, 2021;53:300–332, DOI **10.1055/a-1369-5274**. https://www.esge.com/endoscopic-diagnosis-and-management-of-nonvariceal-upper-gastrointestinal-hemorrhage-esge-update-2021 . Componentes de risco, EDA e PPI não integralmente revistos em 2026.
+3. **American College of Gastroenterology (ACG)** — Laine et al., *ACG Clinical Guideline: Upper Gastrointestinal and Ulcer Bleeding*, *Am J Gastroenterol*, 2021. https://pubmed.ncbi.nlm.nih.gov/33929377/ . GBS, transfusão, EDA, hemostasia, PPI.
+4. **ESGE 2022** — *Endoscopic diagnosis and management of esophagogastric variceal hemorrhage.* https://www.esge.com/endoscopic-diagnosis-and-management-of-esophagogastric-variceal-hemorrhage . Vasoativos, antibióticos, hemostasia endoscópica varicosa.
+5. **Baveno VIII Faculty.** *Baveno VIII — Advancing consensus in portal hypertension*, *Journal of Hepatology*, online agosto 2026, DOI **10.1016/j.jhep.2026.07.030**. https://doi.org/10.1016/j.jhep.2026.07.030 . Manejo contemporâneo de hipertensão portal e complicações.
+6. **AASLD 2024** — *Practice guidance on risk stratification and management of portal hypertension and varices in cirrhosis*. https://doi.org/10.1097/HEP.0000000000000647 . Regras de prevenção e controle da HDA varicosa; ler à luz de Baveno VIII.
+7. **NICE CG141** — *Acute upper gastrointestinal bleeding in over 16s: management*. https://www.nice.org.uk/guidance/cg141/chapter/Recommendations . Manejo de instabilidade, EDA após ressuscitação e anticoagulantes.
+8. **ESGE — diretrizes de endoscopia por tema**, com atualizações disponíveis. https://www.esge.com/publications/guidelines .
+9. **Sociedade Brasileira de Hepatologia** — diretrizes, consensos e recomendações. https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/ . Diferenciar documentos brasileiros históricos de consensos internacionais 2026.
+10. **NICE TA697** — *Andexanet alfa for reversing anticoagulation from apixaban or rivaroxaban*, orientação no contexto britânico; disponibilidade e elegibilidade no Brasil devem ser conferidas. https://www.nice.org.uk/guidance/ta697 .
+11. **EASL/Baveno e ESGE** — atualização de varizes, TIPS e planejamento de hemostasia conforme risco, mais detalhes na apostila LURIA 126 — Cirrose e Complicações. Este item é uma indicação de leitura transversal do currículo, não referência independente.
+12. **Brasil/SUS:** checar atualizações de sociedades, CCIH e protocolos institucionais. Não há nesta etapa um PCDT federal único de HDA adulta verificado que substitua os guidelines por etiologia; não inventar norma nacional.
+
+## 29. Controle editorial e próximos requisitos de liberação
+
+- [x] Inventário de apostilas relacionadas e benchmark com três documentos de Drive, sem cópia de conteúdo privado.
+- [x] Corpo didático inicial e avançado, de causas a alta, incluindo ESGE 2026 para úlcera hemorrágica e Baveno VIII 2026.
+- [x] Ramo varicoso diferenciado de lesão ulcerosa e de perfuração de víscera oca.
+- [x] Oito casos clínicos comentados com hipóteses, raciocínio e conduta.
+- [x] Doze questões autorais A–D com gabarito e comentário de todas alternativas.
+- [ ] Certificação de ≥60 mil caracteres de conteúdo **útil e semanticamente não duplicado**, além de sintaxe.
+- [ ] Revisão por equipe de emergência/endoscopia e farmacologia da segurança de intubação, vasoconstritores, doses, anticoagulantes, IBP, hemostasia, TAE/TIPS e contraindicações.
+- [ ] Curadoria de 10 imagens candidatas endoscópicas/angiográficas originais ou licenciadas, aprovadas no Admin, comprimidas em WebP antes de eventual publicação.
+- [ ] Conversão para JSON do gerador LURIA e HTML de prévia, seguida de validadores oficiais e inspeção desktop/PWA.
+- [ ] Revisão de atualizações pós-corrigenda da ESGE 2026 e disponibilidade brasileira de dispositivos endoscópicos/antídotos.
+- [ ] **RASCUNHO NÃO PUBLICAR/FAZER MERGE/DEPLOY.**
