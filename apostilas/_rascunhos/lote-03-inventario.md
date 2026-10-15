@@ -7,7 +7,7 @@
 | Nº | Área | Tema | Achado e encaminhamento |
 |---|---|---|---|
 | 047 | Cirurgia Geral | Trauma: atendimento inicial e ABCDE | Manuscrito original aberto em apostilas/_rascunhos/lote-03-047-trauma-atendimento-inicial-xabcde.md. Atualizar para ATLS 11 xABCDE, sem publicar antes da auditoria. |
-| 048 | Pediatria | Imunizações na infância | **Sobreposição substancial** com rascunho da aula 135 (lote 7): apostilas/_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md, 84.010 caracteres brutos. Auditar a cobertura infantil antes de criar outro texto; preferir capítulo remissivo/reorganização curricular sem duplicar. |
+| 048 | Pediatria | Imunizações na infância | **Etapa zero auditada em 15/10/2026**, registro em apostilas/_rascunhos/lote-03-048-imunizacoes-auditoria.md. Comparado PDF PNI 2020 do Drive (antigo), calendário oficial do MS 2026 e manuscrito PNI 135 (84.010 caracteres brutos). Não duplicar; módulo pediátrico autossuficiente ainda pendente de decisão editorial. |
 | 049 | Ginecologia e Obstetrícia | Gestação ectópica | **Já ensinada** em apostilas/hemorragias-primeiro-terceiro-trimestre/index.html, capítulo próprio “Gestação ectópica e gestação de localização desconhecida”. Aprofundar capítulo existente e avaliar necessidade de página autônoma apenas após auditoria. |
 | 050 | Medicina Preventiva | Financiamento e gestão do SUS | Não localizada pasta própria na listagem inicial. Verificar cobertura em conteúdos de SUS antes da criação. |
 | 051 | Clínica Médica | DPOC | Não localizada pasta própria. Exige benchmark específico, GOLD atualizado, conduta clínica e exacerbações. |
