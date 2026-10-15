@@ -19,6 +19,8 @@ A Portaria GM/MS nº 2.436/2017 define a Atenção Básica como conjunto de aç�
 
 ## 2. História natural da doença: o modelo Leavell & Clark como mapa temporal
 
+**Suscetibilidade** é a condição de poder adoecer em determinada exposição, sem que isso prove doença já instalada. O período pré-patogênico pode incluir múltiplos fatores de suscetibilidade — genética, idade, ambiente e comportamentos — que alteram a probabilidade futura. Esse conceito não autoriza prever que toda pessoa exposta ficará doente.
+
 A **história natural da doença** descreve a trajetória da condição **sem intervenção deliberada modificadora**, desde a interação de fatores que tornam a pessoa suscetível, passando por alterações subclínicas e manifestações, até cura, cronicidade, incapacidade ou morte. É modelo didático histórico associado a Leavell e Clark, especialmente útil para definir janela de ação preventiva. Não é previsão individual exata: o curso real pode variar por genética, ambiente, acesso, comorbidades, evolução espontânea e múltiplos mecanismos.
 
 O modelo clássico diferencia **período pré-patogênico** (a doença-alvo ainda não começou naquele hospedeiro) e **período patogênico** (processo patológico instalado, inicialmente sem sinais e depois clínico). Na fase pré-patogênica, riscos se acumulam e fatores protetores podem agir. Na fase patogênica subclínica podem existir biomarcadores, alterações histológicas ou infecção sem sintomas. Quando a doença torna-se sintomática, o quadro evolui até recuperação, sequela, cronicidade ou óbito.
@@ -347,6 +349,8 @@ Descobrir retinopatia diabética em consulta de APS só vira benefício se o pac
 Ações ambientais e comunitárias não se avaliam apenas por consultas médicas. Saneamento, acesso alimentar, segurança viária, cobertura de áreas verdes, participação social e desigualdades refletem condições de risco. Uma palestra sobre atividade física pode ter valor, mas não é substituto de ambiente que permita praticá-la. A PNPS enfatiza intersetorialidade, e a avaliação deve incluir distribuição de benefícios no território.
 
 ## 19. Prevenção de eventos cardiovasculares: duas convenções de “primária/secundária”
+
+A **reabilitação** após infarto ou AVC procura restaurar função e participação quando houve limitação instalada, sendo tipicamente terciária em relação à incapacidade. Já a expressão **prevenção secundária cardiovascular** designa medidas para evitar recorrência de evento aterosclerótico. Assim, reabilitação e prevenção de recorrência podem ocorrer juntas, mas não respondem ao mesmo desfecho.
 
 Na **história natural clássica** de Leavell/Clark, secundária refere-se a detectar doença instalada, muitas vezes silenciosa. Na **cardiologia clínica**, prevenção secundária significa evitar **recorrência de eventos** em pessoa com doença cardiovascular aterosclerótica estabelecida, como infarto ou AVC isquêmico. Isso parece contraditório apenas se confundirmos o desfecho de referência.
 
