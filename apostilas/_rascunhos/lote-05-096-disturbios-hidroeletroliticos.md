@@ -265,22 +265,6 @@ E. O QT sempre estará prolongado em qualquer hipoalbuminemia.
 
 **Resposta: B.** O ionizado é a fração ativa. **A** transfere indevidamente o total para necessidade de intervenção; **C** ignora ligação proteica; **D** não explica o fenômeno; **E** transforma associação em regra.
 
-## 12. Pendências para versão premium aprovada
-
-Este manuscrito **ainda não** satisfaz o conjunto de requisitos de uma apostila LURIA finalizada. Falta, de forma prioritária:
-
-1. Referência educacional integral ou conjunto suficiente de apostilas no Drive para comparação de escopo completo; comparar também com fontes nacionais específicas.
-2. Fisiologia renal e endócrina aprofundada, quadro diagnóstico de Na baseado em osmolalidade urinária/volemia, e avaliação de hiperaldosteronismo e perdas de K.
-3. Desenvolvimento extenso de hipernatremia, cálcio, magnésio e fósforo com indicações, alternativas, contraindicações e acompanhamento.
-4. Tabelas de doses, infusões, apresentações e máximos **validadas nas bulas e protocolos brasileiros**, com segurança em insuficiência renal e populações vulneráveis.
-5. Casos de hipercalemia com toxicidade elétrica, sobrecorreção do sódio, síndrome de realimentação e doenças endócrinas, com resoluções completas.
-6. Questões mais difíceis e integrais, incluindo múltiplas alterações e ECG autorizado.
-7. Candidatas de imagens clínicas devidamente licenciadas e aprovadas pelo Admin; esquemas autorais revisados por especialista.
-8. Revisão clínica independente, auditoria de ≥60 mil caracteres úteis, testes de autossuficiência, consistência com o tema 101, renderização no site e inspeção PWA.
-
-**Não publicar ou usar como ordem médica.** As doses não verificadas em protocolos locais foram deliberadamente omitidas, e os esquemas citados estão associados às fontes originais e requerem revisão clínica antes da publicação comercial.
-
-
 ## 13. Algoritmo aprofundado do sódio: três perguntas antes da terapia
 
 A partir deste capítulo, a apostila passa da visão panorâmica para o raciocínio completo. Os capítulos 2–4 introduziram osmolaridade, concentração e emergências; aqui a finalidade é **ensinar a interpretar um painel de laboratório e selecionar uma hipótese fisiopatológica que explique o resultado**. A abordagem não deve depender de decorar números isolados, pois pacientes podem ter alterações simultâneas de água, sódio, glicose e função renal.
@@ -594,3 +578,205 @@ A recomendação **NICE CG32** orienta avaliação de risco em pacientes com bai
 8. **Qual efeito adverso é previsível?** Hipoglicemia pós-insulina, sobrecorreção de Na, extravasamento de cálcio ou K, sobrecarga volêmica.
 9. **Qual exame será repetido e quando?** A indicação exige um plano de monitorização e reavaliação.
 10. **Como prevenir recorrência?** Corrigir medicação causal, baixa ingesta, perdas, falha de acesso à água, doença renal ou necessidade de seguimento.
+
+
+## 21. Casos integrados avançados: exames, mecanismo, conduta e acompanhamento
+
+Os casos iniciais das seções anteriores ilustram um distúrbio principal por vez. A situação real de enfermaria geralmente envolve mais de uma alteração simultânea. A meta dos casos seguintes é reconhecer **a interação entre eletrólitos e tratamento**, demonstrar a diferença entre resultado laboratorial e risco imediato e justificar o próximo passo a partir dos dados do enunciado.
+
+### Caso E — Hiponatremia e tiazídico: quando a restauração volêmica acelera a correção
+
+**Apresentação:** mulher de 76 anos, em uso de hidroclorotiazida, apresenta tontura, náuseas e ingesta reduzida havia alguns dias. Na 116 mmol/L, osmolalidade plasmática baixa, K 3,0 mmol/L, pressão arterial baixa para o padrão habitual e sinais de depleção de volume. Não apresenta convulsão nem coma. A urina está concentrada.
+
+**Problema clínico:** o uso de tiazídico pode alterar capacidade de diluir urina; depleção volêmica sustenta antidiurese. O Na urinário colhido em vigência do diurético não deve ser interpretado isoladamente como prova de SIAD. Além disso, **hipopotassemia constitui fator de risco de desmielinização osmótica** quando a hiponatremia é corrigida em excesso.
+
+**Investigação e interpretação:** repetir eletrólitos e glicose, conferir osmolalidade, revisar medicamentos e determinar causa de perda volêmica. A duração da alteração é incerta e a paciente está neurologicamente sem sinais ameaçadores; isso muda a escolha em relação à encefalopatia hiponatrêmica convulsiva.
+
+**Conduta orientadora:** interromper o agente causal quando apropriado, tratar volume conforme avaliação, corrigir K sob monitorização e vigiar natremia/diurese de perto. Se a restauração de volemia gerar aquarese importante, o sódio pode subir rapidamente mesmo sem administrar NaCl 3%. Em elevação acima do limite de segurança, avaliar medidas especializadas de controle da aquarese. **Por que importa:** não se presume SIAD pela urina e não se confunde “solução isotônica” com risco nulo de sobrecorreção.
+
+### Caso F — Hipercalemia, bradicardia e diferença entre gluconato e cloreto
+
+**Apresentação:** homem de 68 anos com DRC avançada, uso recente de anti-inflamatório e K de 7,2 mmol/L em amostra não hemolisada. FC 38 bpm, PA 90/54 mmHg, ECG com QRS progressivamente alargado. O laboratório não repetiu ainda a amostra. A enfermagem pergunta qual ampola de cálcio deve preparar.
+
+**Problema clínico:** cardiotoxicidade grave atribuível a hiperpotassemia exige estabilização imediata do miocárdio; esperar confirmação de pseudohiperpotassemia não é proporcional ao risco. Deve-se escolher o sal conforme o protocolo de ressuscitação e **confirmar a concentração e o teor de cálcio da apresentação**.
+
+**Raciocínio:** gluconato 10% e cloreto 10% não são equivalentes mL a mL. Na recomendação UKKA, 30 mL de gluconato 10% e 10 mL de cloreto 10% fornecem aproximadamente quantidades equivalentes de cálcio. A escolha em situação de peri-parada pode favorecer cloreto sob equipe treinada e acesso apropriado. É obrigatório checar a apresentação local.
+
+**Conduta:** equipe de reanimação, monitorização contínua, cálcio IV pelo protocolo e medidas simultâneas de deslocamento e remoção de K, incluindo diálise conforme possibilidade. Reavaliar ECG e potássio e prevenir hipoglicemia pelo tratamento com insulina. **Por que importa:** a membrana pode ser estabilizada temporariamente enquanto o corpo mantém K excessivo; o tratamento não acaba no primeiro ECG melhorado.
+
+### Caso G — Glicemia cai duas horas após insulina para hipercalemia
+
+**Apresentação:** mulher sem diabetes, 54 anos, LRA oligúrica e K 6,7 mmol/L. Recebe insulina-glicose em esquema assistencial apropriado, e o K diminui para 5,6 mmol/L após uma hora. Duas horas depois, a paciente está sudorética, confusa e com glicemia capilar baixa. A equipe pensava suspender controles porque K havia melhorado.
+
+**Problema clínico:** a intervenção redistribui potássio temporariamente; a insulina continua podendo causar hipoglicemia após a melhora inicial. A resposta laboratorial favorável não significa que a intervenção seja isenta de risco nem que tenha promovido excreção de K.
+
+**Conduta:** tratar hipoglicemia imediatamente de acordo com protocolo, prosseguir monitorização de glicose e potássio, revisar necessidade de glicose adicional e planejar método definitivo de remoção em LRA oligúrica. **Por que importa:** a previsão de um efeito adverso é parte do plano terapêutico, não complicação “imprevisível”.
+
+### Caso H — Hipercalcemia grave e função renal reduzida
+
+**Apresentação:** mulher de 64 anos com perda ponderal, constipação, poliúria, confusão leve e cálcio total de 14,8 mg/dL. Cálcio ionizado elevado confirma hipercalcemia verdadeira. Creatinina aumentada, PTH suprimido. Exames e história sugerem neoplasia em investigação.
+
+**Raciocínio:** hipercalcemia com PTH suprimido direciona causas independentes de PTH; valor e sintomas exigem intervenção, enquanto se investiga neoplasia. Desidratação reduz excreção renal de cálcio, mas **hidratação isolada não trata permanentemente reabsorção óssea aumentada**.
+
+**Conduta:** estabilização e hidratação monitorizada segundo tolerância cardíaca/renal, investigação etiológica em paralelo, escolha de antiresortivo conforme função renal e orientação especializada. Na hipercalcemia maligna acima de 14 mg/dL, Endocrine Society recomenda considerar calcitonina associada a bisfosfonato IV ou denosumabe por curto período, sem prolongar calcitonina além de 48–72 horas por taquifilaxia. **Por que importa:** interpreta PTH como marcador de mecanismo e separa resposta imediata de tratamento da causa.
+
+### Caso I — Realimentação após semanas de ingestão mínima
+
+**Apresentação:** homem de 45 anos com desnutrição grave apresenta queda de fosfato, K e Mg após início rápido de suporte nutricional. Desenvolve fraqueza, taquicardia e esforço ventilatório crescente no segundo dia. Antes da nutrição, o fosfato estava no limite inferior de normalidade.
+
+**Raciocínio:** a hipofosfatemia pode surgir **após** reintrodução de calorias devido à demanda intracelular e à resposta insulínica. A associação com queda de K e Mg e deterioração orgânica em janela temporal de até cinco dias é compatível com síndrome de realimentação.
+
+**Conduta:** rever velocidade de aporte e risco nutricional, fornecer tiamina e reposições de eletrólitos sob monitorização e equipe de nutrição, sem corrigir potássio/fósforo por infusão IV indiscriminada. O manejo considera a classificação e as recomendações ASPEN/NICE e a função renal. **Por que importa:** deficiência eletrolítica não se avalia apenas antes da dieta; monitorização pós-início é essencial.
+
+### Caso J — Cálcio total baixo e ionizado normal
+
+**Apresentação:** pessoa com albumina muito reduzida apresenta cálcio total de 7,4 mg/dL, porém cálcio ionizado dentro da faixa de referência e sem tetania ou sintomas neurológicos; o ECG não sugere alteração grave. Há insuficiência renal e desnutrição em investigação.
+
+**Raciocínio:** o cálcio total é afetado pela albumina, enquanto a fração ionizada representa melhor a atividade biológica. Uma fórmula corrigida pode ser pouco confiável em pessoas críticas. **Conduta:** não aplicar automaticamente cálcio IV de emergência com base apenas no valor total; tratar causa e repetir exames quando necessário, em contexto clínico. **Por que importa:** reduz iatrogenia por confusão entre cálcio total e ionizado.
+
+## 22. Questões de múltipla escolha com justificativa por alternativa
+
+### Questão 6 — Sódio e osmolalidade
+
+Paciente tem Na 124 mmol/L, glicose 650 mg/dL e osmolalidade sérica aumentada. Qual interpretação é melhor?
+
+A. Hiponatremia hipotônica está confirmada somente pelo Na.
+B. A glicose pode elevar a tonicidade e reduzir o Na medido por deslocamento de água.
+C. O diagnóstico é SIAD sem necessidade de urina.
+D. O caso exige salina hipertônica 3% antes de qualquer avaliação da glicemia.
+E. A ureia e a glicose não influenciam osmolalidade.
+
+**Gabarito: B.** **A** ignora a relação com tonicidade; **B** considera o mecanismo osmótico; **C** atribui etiologia sem dados suficientes; **D** aplica automaticamente regime de hiponatremia hipotônica grave a contexto hiperglicêmico distinto; **E** é falso porque ambas contribuem para osmolalidade, embora ureia e glicose tenham efeitos distintos sobre tonicidade. **Mini-revisão:** interpretar Na sempre junto da glicose e osmolalidade.
+
+### Questão 7 — Cálculo de déficit hídrico
+
+Idosa de 60 kg, estimando-se água corporal total como 45% do peso, apresenta Na 160 mmol/L. Qual afirmação sobre o cálculo do déficit de água livre é mais adequada?
+
+A. O déficit é aproximadamente 3,9 L e deve ser infundido de uma só vez, sem monitorização.
+B. O déficit é aproximadamente 3,9 L, uma estimativa inicial que deve ser integrada a perdas contínuas e à velocidade de correção.
+C. O déficit é 27 L, pois toda água corporal foi perdida.
+D. A hipernatremia significa obrigatoriamente excesso absoluto de sódio.
+E. Os dados impedem qualquer estimativa inicial.
+
+**Gabarito: B.** Pela fórmula, água corporal estimada = 60×0,45 = 27 L; déficit ≈27×(160/140−1) = 3,86 L. **A** transforma estimativa em ordem de infusão instantânea; **B** reconhece a necessidade de plano e reavaliação; **C** confunde água corporal total com déficit; **D** ignora perda de água; **E** nega uma ferramenta útil, embora aproximada. **Mini-revisão:** estimativa de déficit não é prescrição.
+
+### Questão 8 — Hiponatremia após reposição isotônica
+
+Mulher em uso de tiazídico chega com Na 115 mmol/L e sinais de hipovolemia. Depois de reposição sob supervisão, aumenta muito a diurese e o Na começa a subir rapidamente. Qual explicação é a melhor?
+
+A. A restauração da volemia pode reduzir a vasopressina e provocar aquarese.
+B. Solução isotônica nunca altera risco de sobrecorreção.
+C. A paciente necessariamente possui SIAD confirmado.
+D. A diurese não interfere na natremia.
+E. A dose de tiazídico determina isoladamente a correção máxima segura.
+
+**Gabarito: A.** **A** descreve perda de água livre por queda do estímulo antidiurético; **B** é falso por ignorar esse mecanismo; **C** é atribuição diagnóstica não sustentada; **D** ignora balanço de água; **E** confunde exposição medicamentosa com risco osmótico individual. **Mini-revisão:** vigiar aquarese é obrigatório quando a causa da antidiurese reverte.
+
+### Questão 9 — Cálcio IV em hiperpotassemia
+
+Homem apresenta hipercalemia com QRS alargado. Qual é a propriedade mais importante do cálcio IV neste contexto?
+
+A. Remove potássio por diurese intensa.
+B. Reduz diretamente o estoque total de K do organismo.
+C. Estabiliza temporariamente a excitabilidade cardíaca, sem reduzir K sérico.
+D. Corrige automaticamente insuficiência renal.
+E. Substitui insulina-glicose e eventual diálise em todos os casos.
+
+**Gabarito: C.** **A e B** confundem cálcio com eliminação; **C** descreve efeito elétrico; **D** atribui efeito renal inexistente; **E** ignora o caráter transitório da estabilização. **Mini-revisão:** três objetivos distintos da hipercalemia: proteção, deslocamento e eliminação.
+
+### Questão 10 — Formulação de cálcio e risco de erro
+
+A equipe prepara gluconato de cálcio 10% para hipercalemia com alteração no ECG. Qual enunciado é correto?
+
+A. Gluconato e cloreto de cálcio 10% são equivalentes mL a mL.
+B. A formulação é irrelevante desde que seja administrado “algum cálcio”.
+C. O teor de cálcio elementar, a dose, a velocidade e o acesso precisam ser conferidos; a UKKA usa 30 mL de gluconato 10% como equivalente aproximado a 10 mL de cloreto 10% em formulações descritas.
+D. A dose de cálcio usada para hipocalcemia sintomática é sempre idêntica à de cardioproteção na hipercalemia.
+E. O cálcio IV permite interromper toda monitorização.
+
+**Gabarito: C.** **A** é falso, pois os sais têm quantidades diferentes de cálcio por volume; **B** ignora segurança farmacotécnica; **C** exige equivalência correta e verificação brasileira; **D** confunde indicações; **E** ignora monitorização cardíaca e possível recorrência. **Mini-revisão:** cálcio “10%” não basta para definir dose; importa o sal e a quantidade efetiva.
+
+### Questão 11 — Insulina-glicose e monitorização
+
+Uma paciente sem diabetes recebeu insulina-glicose por hipercalemia grave e o K diminuiu. Após duas horas, torna-se sudorética e confusa. Qual diagnóstico iatrogênico deve ser descartado imediatamente?
+
+A. Hipoglicemia pós-insulina.
+B. Apendicite.
+C. Hipernatremia por contraste.
+D. Hipocalcemia por PTH alto como única hipótese.
+E. Trombose portal.
+
+**Gabarito: A.** **A** é efeito adverso conhecido que pode ser tardio e exige glicemia imediata; **B, C, D e E** não são a primeira hipótese ligada temporalmente à intervenção e não explicam de forma prioritária o episódio. **Mini-revisão:** proteção contra hipoglicemia é parte inseparável do tratamento da hipercalemia.
+
+### Questão 12 — PTH e hipercalcemia
+
+Paciente com cálcio ionizado elevado e PTH suprimido apresenta perda de peso e desidratação. Qual afirmação é a mais defensável?
+
+A. O PTH suprimido confirma hiperparatireoidismo primário típico.
+B. O PTH suprimido torna provável que a hipercalcemia tenha mecanismo independente do PTH, devendo investigar neoplasia e outras causas.
+C. O PTH é irrelevante na investigação de cálcio.
+D. Cálcio ionizado não contribui para diagnóstico.
+E. Todos os casos exigem paratireoidectomia imediata.
+
+**Gabarito: B.** **A** inverte fisiologia; **B** aplica bifurcação diagnóstica; **C** despreza dado discriminativo; **D** ignora fração biologicamente ativa; **E** prescreve cirurgia sem etiologia nem indicação. **Mini-revisão:** PTH deveria cair em hipercalcemia não dependente de paratireoide.
+
+### Questão 13 — Realimentação e eletrolíticos
+
+Pessoa muito desnutrida inicia suporte nutricional e, dois dias depois, apresenta queda de fósforo, potássio e magnésio, fraqueza e alteração respiratória. Qual hipótese melhor integra os dados?
+
+A. Não há associação entre insulina, nutrientes e eletrólitos.
+B. Síndrome de realimentação, exigindo reavaliação nutricional e reposição monitorizada.
+C. Hiperparatireoidismo primário comprovado.
+D. Anemia ferropriva isolada.
+E. Resultado fisiológico que não demanda acompanhamento.
+
+**Gabarito: B.** **A** nega fisiologia; **B** considera janela de até cinco dias e deslocamento intracelular; **C** não explica conjunto temporal; **D** é insuficiente; **E** ignora risco de disfunção multiorgânica. **Mini-revisão:** risco nutricional, tiamina, K, Mg e fosfato devem ser considerados juntos.
+
+### Questão 14 — Hiperfosfatemia na DRC
+
+Paciente estável com DRC avançada apresenta aumento discreto e isolado de fosfato sérico. Qual afirmação se alinha melhor ao KDIGO CKD-MBD?
+
+A. A única informação necessária é o valor de fósforo de hoje.
+B. É obrigatório usar doses máximas de quelantes à base de cálcio imediatamente.
+C. Decisões consideram séries de fósforo, cálcio e PTH, indicando tratamento redutor do fosfato quando a alteração é persistente ou progressiva.
+D. O PTH não participa da doença ósseo-mineral renal.
+E. Todo paciente com DRC tem indicação automática de calcitriol em dose alta.
+
+**Gabarito: C.** **A** perde a tendência e o contexto; **B** ignora riscos da carga de cálcio; **C** corresponde ao enfoque multidimensional; **D** é falso; **E** contraria individualização das recomendações e a restrição de uso rotineiro em DRC não dialítica. **Mini-revisão:** CKD-MBD exige interpretação longitudinal e conjunta.
+
+## 23. Planejamento didático de figuras e imagens para a fila do Admin
+
+**Os itens seguintes são ideias de candidatas, ainda sem arquivos associados nem licença validada.** Não foram importadas figuras de terceiros para o manuscrito ou HTML, e não se deve registrar URL de um arquivo como se houvesse autorização para uso comercial. O critério é relevância: a figura deve resolver uma dúvida que o texto sozinho explica com menor eficiência.
+
+1. **Esquema original da diferença entre osmolalidade e tonicidade:** duas membranas celulares com ureia e glicose, destacando o movimento de água — capítulo 2.
+2. **Fluxograma original de hiponatremia:** sódio baixo → glicose/osmolalidade → urina diluída ou concentrada → causas prováveis — capítulo 13.
+3. **Gráfico ilustrativo original de sobrecorreção do sódio:** horas versus natremia com limite acumulado e aquarese súbita, sem sugerir taxa segura universal — capítulo 14.
+4. **Cálculo visual original de déficit hídrico:** peso, fator de água corporal e Na, acompanhado de alerta sobre perdas contínuas — capítulo 15.
+5. **ECG real licenciado de hipercalemia:** curvas com alterações de onda T, PR e QRS, com legenda de que ECG normal não exclui risco — capítulos 5/16.
+6. **ECG real licenciado de hipocalemia:** onda U e alterações de ST-T, com derivação e calibração verificadas — capítulo 17.
+7. **Infográfico autoral “proteger / deslocar / remover K”:** relacionar cada intervenção à função e à monitorização — capítulo 16.
+8. **Quadro original de equivalência entre sais de cálcio:** destacar quantidade de cálcio efetiva, não copiar tabelas da UKKA — capítulos 16/18.
+9. **ECG real licenciado de alteração de QT em distúrbios de cálcio:** identificação de intervalo QT e cálculo QTc, com anotação de limitações — capítulo 18.
+10. **Relação PTH–cálcio–fósforo autoral:** diagrama de paratireoide, osso, rim e intestino, mostrando retroalimentação — capítulos 18/19.
+11. **Gráfico original de eletrólitos após realimentação:** tendência temporal de K, Mg e fosfato nos primeiros dias, sem dados reais identificáveis — capítulo 19.
+12. **Fluxograma autoral de segurança da infusão:** checar íon, sal, concentração, diluente, via, tempo, função renal e reavaliação — capítulo 20.
+
+**Gate das imagens:** para ECGs e exames reais, obter licença específica para uso comercial e verificar procedência e fidelidade. As figuras próprias precisam ser desenhadas e revisadas por especialista. Registrar eventuais candidatas no JSON de imagens do projeto e aprovar no Admin, sem inserção direta no HTML.
+
+
+## 24. Auditoria final pendente — critérios de publicação
+
+Este manuscrito **ainda não** satisfaz o conjunto de requisitos de uma apostila LURIA finalizada. Falta, de forma prioritária:
+
+1. Referência educacional integral ou conjunto suficiente de apostilas no Drive para comparação de escopo completo; comparar também com fontes nacionais específicas.
+2. Fisiologia renal e endócrina aprofundada, quadro diagnóstico de Na baseado em osmolalidade urinária/volemia, e avaliação de hiperaldosteronismo e perdas de K.
+3. Desenvolvimento extenso de hipernatremia, cálcio, magnésio e fósforo com indicações, alternativas, contraindicações e acompanhamento.
+4. Tabelas de doses, infusões, apresentações e máximos **validadas nas bulas e protocolos brasileiros**, com segurança em insuficiência renal e populações vulneráveis.
+5. Casos de hipercalemia com toxicidade elétrica, sobrecorreção do sódio, síndrome de realimentação e doenças endócrinas, com resoluções completas.
+6. Questões mais difíceis e integrais, incluindo múltiplas alterações e ECG autorizado.
+7. Candidatas de imagens clínicas devidamente licenciadas e aprovadas pelo Admin; esquemas autorais revisados por especialista.
+8. Revisão clínica independente, auditoria de ≥60 mil caracteres úteis, testes de autossuficiência, consistência com o tema 101, renderização no site e inspeção PWA.
+
+**Não publicar ou usar como ordem médica.** Os regimes de fontes estrangeiras foram explicitamente identificados como exemplos documentais, sem validação das apresentações brasileiras; permanecem pendentes revisão farmacêutica, de bula e de protocolo local antes de qualquer publicação comercial.
+
+
