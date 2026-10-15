@@ -41,3 +41,27 @@ Buscas no Google Drive por “sangramento uterino anormal”, “sangramento ute
 - [ ] Curadoria de imagens com autoria/licença rastreada, aprovação Admin.
 - [ ] Executar validadores oficiais, inspeção desktop/PWA.
 - [ ] **Sem merge/deploy/publicação**.
+
+---
+
+## Etapa 2 — cópia ampliada e controle estrutural (14/10/2026)
+
+**Produção real:** `apostilas/_rascunhos/lote-06-124-preview.html` foi derivada da apostila pública `apostilas/sangramento-uterino-anormal/index.html`, **sem alterar seu original**. O HTML publicado tinha 69.515 caracteres, a prévia contém 92.317 (22.802 adicionais), e todos os **24 IDs de seções originais foram preservados**. Três seções novas de atualização, casos e questões foram incluídas, somando 27 no artigo. A navegação foi reconstruída com IDs estáveis e bibliografia realocada ao final.
+
+**Aprimoramentos autorais:** FIGO Systems 1 e 2 (atualização FIGO 2023), avaliação de instabilidade/gravidez, risco endometrial, SIU-LNG/miomas e escolha por fertilidade, coagulopatia, anticoagulação, anemia e riscos de instrumentação de malformação vascular. Os **seis casos originais foram expandidos** com investigação e conduta, e **dois casos novos** foram incluídos. Foram produzidas **12 questões** autorais com quatro alternativas e comentários individuais, reunidas no bloco `lote06-124-questoes`.
+
+### Pré-teste quantitativo
+- **8 casos, 12 questões, 12 listas A–D**.
+- **52.873 caracteres aproximados** do corpo instrucional visível, excluindo casos, questões, bibliografia, mapa e revisão por filtragem simples de HTML. Isto não é certificação de 60 mil caracteres únicos úteis.
+- **0** links âncora ausentes, **0** IDs duplicados.
+- Sem merge, deploy ou imagem não aprovada adicionada.
+
+### Pendências de qualidade
+- [ ] Revisar cientificamente as 12 questões, inclusive eventuais situações de exceção terapêutica e formulações brasileiras.
+- [ ] Avaliar redundância semântica do HTML original, que inclui blocos adicionais após a bibliografia inicial, apesar do reordenamento.
+- [ ] Reconciliar a numeração dos capítulos antigos e novos mantendo todos os identificadores estáveis.
+- [ ] Curadoria e aprovação de imagens/diagramas no Admin com autoria/licenças rastreadas.
+- [ ] Executar validadores oficiais do repositório e inspecionar desktop/PWA. **Só houve pré-teste de estrutura HTML e links.**
+- [ ] Avaliação ginecológica e editorial independente antes de publicação.
+
+**Parecer:** apostila 124 revisada em cópia editorial, preservando base publicada. **Não está cientificamente certificada nem publicada.**
