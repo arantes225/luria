@@ -278,3 +278,308 @@ Indicador de acompanhamento baixo pode resultar de pouca oferta, barreira de ace
 ### 12.2 Uma boa prestação de contas responde perguntas de saúde
 
 Apenas dizer “gastamos 99% do orçamento” não prova efetividade; a secretaria deve explicar quais serviços foram ofertados, quem teve acesso, quais resultados melhoraram, desigualdades persistentes e o que será ajustado. A PAS cria compromissos; os relatórios não deveriam virar peças de propaganda, mas instrumentos de aprendizado, transparência e decisão.
+
+
+## 13. A linguagem do orçamento público — PPA, LDO, LOA e execução
+
+Para compreender por que uma unidade prevista demora a abrir, é necessário distinguir prioridades sanitárias, autorização orçamentária e capacidade real de contratar e executar. O orçamento público utiliza instrumentos gerais do Estado que precisam conversar com o planejamento setorial do SUS.
+
+**Plano Plurianual (PPA)** organiza diretrizes, objetivos e metas da administração pública em horizonte plurianual, usualmente quatro anos, com regras constitucionais próprias. **Lei de Diretrizes Orçamentárias (LDO)** faz a ponte entre prioridades de governo e a proposta orçamentária anual, incluindo orientações fiscais. **Lei Orçamentária Anual (LOA)** estima receitas e fixa/descreve autorizações de despesas para o exercício. O **Plano de Saúde** é instrumento setorial sanitário que deve dialogar com o PPA; a **PAS** dialoga com a execução anual, sem ser sinônimo de LOA. A integração dos instrumentos busca evitar prometer uma linha assistencial que não possui recursos, cronograma ou compromisso administrativo.
+
+### 13.1 Da intenção à despesa: dotação não é medicamento na prateleira
+
+Uma prefeitura pode incluir uma UBS em objetivo do Plano de Saúde, prever construção na PAS e abrir dotação específica na LOA. Isso não representa automaticamente obra executada. O processo envolve projeto, autorização, licitação ou procedimento correspondente, contrato, fiscalização, etapas de execução e pagamentos. A despesa pública possui fases contábeis. O **empenho** reserva crédito para compromisso de despesa nos termos legais; a **liquidação** verifica direito do credor com base em entrega/serviço; o **pagamento** quita obrigação. Para avaliação do mínimo constitucional e dos demonstrativos de ASPS, regras sobre exercícios, restos a pagar e disponibilidade precisam seguir a LC 141 e normas contábeis — não presumir que simples empenho seja garantia de serviço efetivamente prestado.
+
+**Erro clássico:** confundir dotação com execução, execução financeira com entrega assistencial, pagamento com qualidade. Uma obra pode ter recurso empenhado e permanecer inacabada. Da mesma forma, compra de medicamentos pode ter valor pago, mas os insumos não serem distribuídos tempestivamente ao território.
+
+### 13.2 Restos a pagar: por que duas contas podem parecer contraditórias
+
+Ao final do exercício, determinadas despesas empenhadas que não foram pagas podem ser inscritas em restos a pagar, conforme regras orçamentárias. Um relatório de despesa empenhada difere de um de pagamento realizado. O tratamento contábil de restos a pagar para demonstrar aplicação mínima em saúde é específico e pode exigir disponibilidade de caixa, cancelamentos e compensação de valores. Portanto, não utilizar a expressão “gastou tudo” sem definir se está falando de empenho, liquidação, pagamento e aplicação admitida pelo mecanismo legal.
+
+**Exemplo didático:** dois municípios têm mesma dotação em atenção primária. Município A liquida despesas legítimas de equipes e insumos conforme cronograma, enquanto B mantém grande parcela apenas empenhada, com serviços contratados ainda não entregues. A fotografia da LOA pode ser igual, mas continuidade do cuidado e situação de execução são diferentes. Auditoria precisa distinguir as fases e regras jurídicas.
+
+### 13.3 Equipe financeira e equipe clínica precisam conversar
+
+A equipe assistencial identifica que unidades estão sem testes rápidos; a gestão apura se há falha de compra, distribuição, armazenamento, registro ou previsão orçamentária. Se o problema é estoque localizado em almoxarifado, contratar nova compra pode gerar desperdício. Se o problema é licitação deserta, pode ser necessária estratégia jurídica e logística diferente. Se o fornecedor atrasou, execução contratual e continuidade do atendimento precisam ser tratadas. A melhor decisão surge da combinação de dado clínico, logística, jurídico e orçamento.
+
+## 14. Transferências e vinculações — como raciocinar por território
+
+O mecanismo **fundo a fundo** busca transferência descentralizada regular de recursos, facilitando execução dentro de regras. Não confundir com transferência voluntária que depende de instrumentos específicos. A existência de repasse automático não autoriza livre movimentação entre todos os objetos; finalidade definida, bloco, programa e exercício influenciam a aplicação. Também é necessário distinguir recursos próprios destinados a ASPS de transferências entre entes para evitar dupla contagem de responsabilidade de mínimos.
+
+### 14.1 Um município que precisa de hemodiálise
+
+Uma cidade de 18 mil habitantes possui pacientes com doença renal crônica dependentes de hemodiálise, mas não capacidade local adequada para serviço de alta complexidade. A rede regional pactua fluxo de transporte e referências, regulação e acesso à atenção especializada. O custeio do serviço de referência, organização de contratualização e transporte precisam se articular. A pergunta correta não é “município pequeno deve comprar uma máquina para cada paciente?”, e sim qual arranjo regional oferta cuidado contínuo de qualidade com segurança, eficiência e prestação de contas.
+
+O financiamento envolve competências e mecanismos específicos; o caso ilustra organização, não determina qual ente pagará cada procedimento. A forma concreta de repasse deve ser verificada na pactuação e nas regras de atenção especializada.
+
+### 14.2 Estrutura sem manutenção é uma falsa expansão de acesso
+
+É possível inaugurar unidade com equipamentos modernos e não ter profissionais ou insumos permanentes. Antes de investir, estimar custo total de ciclo de vida: aquisição, instalação, contratação, manutenção, energia, materiais, treinamento e substituição de equipamentos. A avaliação deve incluir demanda esperada, localização e rede de transporte. O ganho de acesso depende de serviço em operação, não apenas da quantidade de prédios construídos.
+
+### 14.3 Repasse territorial e saúde de populações vulneráveis
+
+Distribuição que ignora distância, comunidades isoladas, migração, insegurança alimentar ou fragilidade socioeconômica pode reproduzir desigualdade. Critérios sanitários precisam usar informações válidas; indicadores podem subestimar populações com menor acesso a serviços e, portanto, menos dados registrados. Uma boa alocação combina indicadores, vigilância territorial, escuta comunitária e critérios explícitos. Um município mais pobre nem sempre possui capacidade de contrapartida ou equipe técnica para executar investimentos; apoio estadual/federal e regionalização integram solução.
+
+## 15. Atenção Primária com dados de qualidade — casos de indicador e pagamento
+
+O objetivo do cofinanciamento da APS não deve se resumir a aumentar faturamento, e sim induzir organização do cuidado dentro de critérios legais. Indicadores só fazem sentido quando representam melhoria assistencial. Antes de comparar equipes, é necessário entender quem integra o denominador, qual período de análise, quais cadastros são válidos, quais profissionais/equipes foram homologados e se houve alteração metodológica.
+
+### 15.1 Quatro pacientes com o mesmo diagnóstico, registros diferentes
+
+Pessoas com hipertensão podem apresentar situações diversas: uma acompanhada regularmente, outra atendida apenas em urgência, uma gestante hipertensa com seguimento especializado e alguém com dificuldade de comparecer por falta de transporte. Se o indicador considera consulta em janela determinada, a “ausência” pode refletir barreira territorial ou registro incompleto. A equipe deve analisar a lista, convocar e tratar riscos, corrigir cadastro e articular a rede — não inserir consultas fictícias.
+
+### 15.2 Denominador e população adscrita
+
+Uma taxa pode subir porque o número de pessoas acompanhadas aumentou, mas também porque o denominador foi reduzido artificialmente por inativação indevida de cadastros. O revisor deve examinar a base de pessoas elegíveis, regras de cadastro, intervalo de observação e consistência entre sistemas. **Um resultado alto não comprova por si só equidade** se o serviço deixou de registrar pessoas difíceis de alcançar. A transparência do cálculo ajuda distinguir melhora real de seleção indevida.
+
+### 15.3 Indicador de processo versus de desfecho
+
+Uma taxa de consultas pré-natais mede acesso/processo, mas não garante ausência de complicações maternas. Taxa de controle pressórico depende de medida de PA, adesão, risco e registro, aproximando-se de resultado intermediário. Mortalidade evitável depende de múltiplos determinantes e tem tempo de resposta mais longo. Uma boa gestão combina indicadores de estrutura, processo, resultado, satisfação e equidade, não apenas um painel financeiro.
+
+### 15.4 A Portaria 10.994/2026 e o efeito de “faixa protegida”
+
+Em 2026, parte das categorias de desempenho foi protegida por pagamentos no nível “bom” durante etapas de transição. Isso altera como interpretar incentivos financeiros e riscos de comparação. Uma equipe classificada “regular” pode não sofrer redução imediata ao valor de “regular” no componente durante o período temporário; mas isso não elimina necessidade de melhorar assistência ou o fato de que classificação futura poderá gerar pagamento conforme faixa própria a partir do primeiro quadrimestre de 2027, nos termos das normas em vigor.
+
+A interpretação correta exige duas datas: **o quadrimestre de avaliação** e **a parcela de pagamento**. Além delas, a portaria de transição diferencia componentes: qualidade entra em implantação parcial no segundo quadrimestre de 2026; vínculo no terceiro. Não tratar ambos como se tivessem entrado no mesmo dia.
+
+## 16. Como avaliar contratos e financiamento sem comprometer autonomia clínica
+
+É legítimo incentivar acesso e qualidade; é arriscado remunerar de modo que favoreça sobretratamento, escolha de pacientes menos complexos ou registros irreais. Contratos assistenciais devem monitorar requisitos de segurança, protocolos clínicos, desfechos e continuidade. Um hospital que aumenta número de procedimentos sem avaliar indicação pode elevar custo e eventos adversos. Por outro lado, impor redução de despesa sem comparar gravidade dos pacientes pode produzir subtratamento e atrasos.
+
+**Case-mix** descreve perfil de complexidade e necessidades dos pacientes atendidos. Comparar custo por alta de hospital terciário de referência com hospital de baixa complexidade sem ajuste é enganoso. Da mesma forma, comparar equipes de APS com populações idênticas em número, mas distintas em vulnerabilidade social, pode punir quem cuida dos casos mais difíceis. Avaliação precisa considerar risco, cobertura e qualidade dos dados.
+
+### 16.1 Risco de fraudes e distorções
+
+Possíveis problemas incluem registro de atendimento não realizado, duplicação de procedimentos, compra incompatível com a rede, direcionamento indevido de contratação ou transferência de despesas inelegíveis para ASPS. Mecanismos de controle incluem auditoria de prontuário e base administrativa, conferência de contratos e entregas, trilha de despesa, fiscalização participativa e cruzamento entre sistemas. Suspeita exige procedimento institucional adequado; uma aparente inconsistência estatística não é por si só prova de fraude.
+
+### 16.2 Financiamento de tecnologias novas
+
+Introduzir medicamento ou equipamento exige avaliação de evidência clínica, eficácia, segurança, custo, impacto orçamentário, infraestrutura e garantia de acesso equitativo. A Comissão Nacional de Incorporação de Tecnologias no SUS (Conitec) participa dos processos de avaliação de tecnologias nas competências previstas; sua recomendação integra rito que culmina em decisão conforme legislação. Existência de registro sanitário não significa incorporação automática ao SUS, e incorporação não garante oferta imediata sem planejamento e organização de rede. A agenda orçamentária precisa acompanhar a decisão técnica e os fluxos de cuidado.
+
+## 17. Casos comentados — financiamento e gestão em situações de prova
+
+### Caso 1 — Município com piso de saúde aparentemente cumprido
+
+**Cenário.** Município fictício apresenta base legal anual de R$ 80 milhões para cálculo de ASPS e informa gasto de R$ 12,6 milhões em “saúde”. A contabilidade detalha R$ 11,8 milhões em UBS, vigilância e insumos públicos; R$ 800 mil em aposentadorias de antigos servidores da saúde. O gestor afirma que atingiu a meta de 15%.
+
+**Questão clínica-administrativa:** o gasto classificado em saúde corresponde integralmente à despesa elegível pela LC 141?
+
+**Raciocínio:** 15% de R$ 80 milhões representa piso de R$ 12 milhões. Aposentadorias e pensões não integram ASPS para esse cálculo. Se os demais R$ 11,8 milhões estão corretamente documentados e não há outras despesas elegíveis, há insuficiência de R$ 200 mil. A classificação contábil genérica não altera a materialidade do gasto.
+
+**Investigação documental:** confrontar base de receitas, SIOPS, demonstrativos de execução, folha de pagamentos, atos e notas fiscais, Plano de Saúde/PAS e regras de restos a pagar quando pertinentes.
+
+**Conduta de gestão:** regularizar execução conforme mecanismos legais, prestar contas transparentemente, impedir classificação indevida e planejar despesa elegível que realmente entregue serviço de saúde.
+
+**Por que importa:** cálculo percentual correto com despesa errada continua produzindo resposta errada em prova e irregularidade administrativa.
+
+### Caso 2 — UBS recebe verba para estruturação, mas falta medicação
+
+**Cenário.** Município recebe repasse específico do Bloco de Estruturação destinado a equipamentos da rede. A UBS está sem anti-hipertensivos. Um gestor propõe gastar a verba de equipamento diretamente na compra emergencial de medicamento porque “ambos são saúde”.
+
+**Raciocínio:** finalidade original e bloco de transferência importam. A compra de medicamentos pode ser prioridade assistencial, mas não autoriza, por si só, desvio da vinculação normativa daquele recurso de estruturação. O serviço precisa verificar saldos de custeio/manutenção, processo de aquisição e possibilidades de remanejamento estritamente autorizadas, com apoio jurídico/contábil.
+
+**Investigação:** portaria de habilitação e finalidade do repasse, regras do FNS, programação financeira, estoque de medicamentos, contratos de fornecimento e relatório de necessidade clínica.
+
+**Conduta:** garantir continuidade do tratamento por mecanismos de abastecimento e financiamento legalmente cabíveis, sem desviar verba vinculada; registrar planos de contingência.
+
+**Por que importa:** necessidade clínica urgente não apaga critérios de finalidade nem impede solução regular e célere.
+
+### Caso 3 — APS com melhora de cadastro e queda de acompanhamento
+
+**Cenário.** Equipe de Saúde da Família aumenta número de cadastros completos e atualizados de 70% para 92%, mas relatório assistencial indica poucas visitas, rastreamentos perdidos e aumento de faltas em hipertensos e diabéticos. Gestor deseja anunciar que a equipe “subiu de qualidade”.
+
+**Raciocínio:** o cadastro é condição operacional necessária, mas não substitui cuidado. O componente de vínculo e acompanhamento distingue registro de ações efetivas, enquanto qualidade utiliza indicadores próprios. Uma melhora de cadastro pode coexistir com piora da assistência. A decisão deve utilizar indicadores de acompanhamento, acesso e desfechos, considerando vulnerabilidades.
+
+**Investigação:** amostra de prontuários, listagens de pessoas elegíveis, agenda, visita domiciliar, barreiras de deslocamento, qualidade de lançamento de dados e metodologias oficiais de 2026.
+
+**Conduta:** requalificar busca ativa, acesso, cuidado compartilhado, acompanhamento de crônicos e registro, sem “inventar atividade” para melhorar indicadores.
+
+**Por que importa:** evidência de melhoria administrativa não prova melhoria do resultado sanitário.
+
+### Caso 4 — Dois municípios, um único serviço oncológico especializado
+
+**Cenário.** Município A tem 16 mil habitantes e B 32 mil. Ambos não dispõem de oncologia e dependem de hospital regional em município C. O gestor de A pretende construir centro próprio, enquanto B propõe pactuação regional e melhora de transporte sanitário/regulação.
+
+**Raciocínio:** regionalização objetiva assegurar acesso sem replicar estruturas de alta complexidade onde escala e equipes podem ser insuficientes. A viabilidade do centro depende de evidências de demanda, rede de profissionais, necessidade regional, financiamento total e qualidade. O município B apresenta raciocínio de rede, embora a resposta final não possa ignorar distância, espera, vulnerabilidade e capacidade real do hospital em C.
+
+**Exames de gestão:** mapa da saúde, produção e filas, tempo de transporte, capacidade instalada regional, pactuações na CIR/CIB, contrato e previsão orçamentária.
+
+**Conduta:** negociar solução integrada, fortalecer acesso e critérios de prioridade com transparência, monitorar tempos e desfechos; expansão estrutural, se necessária, deve corresponder a diagnóstico regional.
+
+**Por que importa:** universalidade não exige serviço de toda complexidade dentro de cada município; exige fluxo equitativo e resolutivo em rede.
+
+### Caso 5 — Período de transição do cofinanciamento em 2026
+
+**Cenário.** No terceiro quadrimestre de 2026, gestor compara equipe eSF classificada como “ótimo” e outra como “regular” no componente de vínculo e acompanhamento. Afirma que a equipe “regular” necessariamente receberá valor da faixa regular naquele período, porque classificação e pagamento são sempre idênticos.
+
+**Raciocínio:** a Portaria GM/MS 10.994/2026 prevê implantação parcial do componente de vínculo no terceiro quadrimestre, com classificação “ótimo” recebendo faixa ótima e classificações bom/suficiente/regular recebendo incentivo em faixa “bom”. O pagamento não corresponde necessariamente à classificação nominal do desempenho nessa etapa. Também é necessário não confundir o período de avaliação com o de pagamento.
+
+**Conduta:** conferir Portaria 10.994/2026, Portaria 3.493 e Nota Técnica nº 8/2026 e explicar às equipes quando transição termina e o que melhora cuidado.
+
+**Por que importa:** questão baseada apenas na redação de 2024 pode produzir resposta incorreta em 2026.
+
+### Caso 6 — Gasto integral executado, demanda sem atendimento
+
+**Cenário.** Secretaria informa 100% do orçamento de saúde pago, enquanto usuários relatam falta de exame de imagem, consultas especializadas e insumos. O gestor interpreta o percentual como prova de sucesso.
+
+**Raciocínio:** executar orçamento em conformidade é requisito administrativo, mas não mede integralmente acesso, integralidade, segurança e equidade. Além disso, pode haver problemas de logística, prioridade incorreta, pagamentos por produção que não corresponde a necessidades e falta de integração regional.
+
+**Investigação:** PAS, RAG, metas, filas, tempo de espera, distribuição territorial de gastos, contratos, utilização de serviços, satisfação e resultados clínicos.
+
+**Conduta:** revisar prioridades e gargalos, pactuar rede, melhorar monitoramento e prestação de contas; não usar percentual de execução isolado como desfecho.
+
+**Por que importa:** o SUS deve entregar cuidado, não apenas movimentar recursos.
+
+## 18. Dez questões autorais com comentário de todas as alternativas
+
+### Questão 1 — Piso federal
+
+Em 2026, qual é o piso de aplicação da União em ações e serviços públicos de saúde conforme o art. 198 constitucional?
+
+A) 10% do orçamento total.
+B) 12% das receitas de ICMS.
+C) Pelo menos 15% da Receita Corrente Líquida do exercício.
+D) Exclusivamente a variação do PIB sobre gasto do ano anterior.
+
+**Gabarito: C.** A: base arbitrária e percentual errado. B: receita estadual, não base federal. D: confunde redação histórica da LC 141/2012 com atualidade constitucional; a regra da RCL voltou a reger aplicação mínima desde 2024. Minirrevisão: os três entes possuem percentuais/bases diferentes (§2).
+
+### Questão 2 — Despesa elegível
+
+Município pretende usar pagamento de aposentadorias de ex-servidores da saúde para completar piso de ASPS. É correto?
+
+A) Sim, basta classificar em função saúde.
+B) Não, aposentadorias e pensões não são computadas para mínimo da LC 141.
+C) Sim, desde que servidor tenha trabalhado por cinco anos.
+D) Sim, sempre que o conselho aprovar por maioria.
+
+**Gabarito: B.** A: rubrica formal não elimina restrição material. C: não há exceção genérica por tempo de serviço. D: Conselho não pode afastar vedação da lei. Minirrevisão: analisar artigos 2–4 da LC 141 e regras atuais (§3).
+
+### Questão 3 — Blocos de repasse
+
+No repasse federal fundo a fundo, qual par de blocos corresponde à nomenclatura geral vigente após atualização de 2020?
+
+A) Atenção básica e vigilância apenas.
+B) Promoção e prevenção.
+C) Manutenção de ASPS e Estruturação da Rede de Serviços Públicos de Saúde.
+D) União e municípios.
+
+**Gabarito: C.** A confunde áreas/programas com blocos; B usa categorias assistenciais; D mistura entes, não blocos. Minirrevisão: Portaria 828/2020, com grupos e finalidade (§4).
+
+### Questão 4 — Gestão e pactuação
+
+A negociação entre gestores do Ministério, secretários estaduais e municipais em nível nacional ocorre principalmente na:
+
+A) Comissão Intergestores Tripartite (CIT).
+B) Conferência Nacional de Saúde, substituindo CIT.
+C) Comissão Intergestores Regional (CIR).
+D) Conselho municipal, como instância federativa nacional.
+
+**Gabarito: A.** B: conferência envolve participação e diretrizes, não substitui pactuação de gestores. C: escopo regional. D: conselho municipal tem outra natureza. Minirrevisão: CIT nacional, CIB estadual, CIR regional (§5).
+
+### Questão 5 — Planejamento
+
+Qual instrumento operacionaliza objetivos do Plano de Saúde por ações e recursos de um exercício?
+
+A) Relatório Anual de Gestão.
+B) Programação Anual de Saúde.
+C) RREO, isoladamente.
+D) Relatório de Auditoria de Contratos.
+
+**Gabarito: B.** A avalia resultados após execução. C é demonstrativo orçamentário, não substituto da PAS. D tem finalidade fiscalizatória específica. Minirrevisão: Plano → PAS → acompanhamento → RAG (§6).
+
+### Questão 6 — SIOPS
+
+Qual descrição corresponde corretamente ao SIOPS?
+
+A) Sistema obrigatório de informação bimestral sobre receitas e despesas públicas de saúde, útil para verificar mínimos.
+B) Prontuário eletrônico com evolução clínica de todos os pacientes.
+C) Sistema exclusivamente de vacinação infantil.
+D) Repositório facultativo apenas de hospitais privados.
+
+**Gabarito: A.** B confunde registro clínico com orçamento. C confunde SIOPS com sistemas de imunização. D ignora obrigação e entes federados. Minirrevisão: SIOPS registra orçamento e demonstra cumprimento (§8).
+
+### Questão 7 — Cofinanciamento APS
+
+Segundo metodologia inaugurada pela Portaria 3.493/2024 para eSF/eAP, qual conjunto de componentes é essencial?
+
+A) Apenas número de internações de UTI.
+B) Exclusivamente produção de consultas de urgência.
+C) Componente fixo, vínculo e acompanhamento territorial, componente de qualidade.
+D) Valor determinado só pelo resultado de uma consulta.
+
+**Gabarito: C.** A, B e D reduzem o mecanismo a variáveis incorretas. Minirrevisão: dimensão do cadastro não resume acompanhamento nem qualidade (§9).
+
+### Questão 8 — Transição 2026
+
+No terceiro quadrimestre de 2026, equipe eSF classificada como “regular” em vínculo recebe automaticamente o incentivo da faixa “regular”?
+
+A) Sim, desde 1/1/2024 sem transição.
+B) Não necessariamente; a Portaria 10.994/2026 protege faixas bom/suficiente/regular no valor “bom” durante implantação parcial.
+C) Recebe obrigatoriamente o mesmo que a faixa “ótimo”.
+D) A portaria extinguira totalmente vínculo e qualidade no terceiro quadrimestre.
+
+**Gabarito: B.** A ignora alteração temporal. C troca faixas. D é falso. Minirrevisão: componentes e quadrimestres distintos, com mudança prevista para 2027 (§9.4).
+
+### Questão 9 — Regionalização
+
+Município sem serviço de alta complexidade decide pactuar atendimento em polo regional. Isso:
+
+A) Contraria integralidade, porque todo município deve executar todas as tecnologias.
+B) É compatível com rede regionalizada, regulação e responsabilidade compartilhada.
+C) Retira a obrigação de acompanhar usuários na APS local.
+D) Dispensa planejamento, fluxo e transporte.
+
+**Gabarito: B.** A confunde integralidade com autossuficiência municipal. C contraria coordenação de cuidado. D ignora logística e gestão. Minirrevisão: rede resolve necessidades por níveis articulados (§5).
+
+### Questão 10 — Efetividade financeira e clínica
+
+Hospital cumpriu 100% do gasto planejado mas mantém filas crescentes, eventos adversos e baixa satisfação. Qual é o melhor raciocínio?
+
+A) Percentual gasto prova automaticamente qualidade de atendimento.
+B) Avaliação de desempenho deve combinar execução com acesso, segurança, eficiência, equidade e resultados.
+C) Contratos e participação social são irrelevantes quando orçamento foi pago.
+D) Basta alterar títulos das rubricas contábeis para resolver o problema assistencial.
+
+**Gabarito: B.** A é correlação falsa; C ignora accountability; D não melhora o cuidado. Minirrevisão: orçamento é condição, mas não fim do SUS (§12).
+
+## 19. Resumo integrado para revisão de residência
+
+**Constituição:** saúde é direito social e dever estatal; SUS regionalizado/hierarquizado com descentralização, integralidade e participação. Financiamento tripartite possui piso federal de pelo menos 15% da RCL, estadual de 12% da base legal e municipal de 15% da base legal, ressalvadas bases e regras específicas do Distrito Federal.
+
+**LC 141:** define o que pode ser ASPS para mínimos, critérios de repartição, fundos, planejamento e controle. Pessoal ativo em ação elegível pode entrar; aposentadoria não. Merenda escolar, obras gerais de infraestrutura e limpeza urbana não se tornam ASPS por trazerem benefícios indiretos. Alterações de 2024 e 2026 exigem conferir texto atualizado em casos de exceção.
+
+**Transferências:** mecanismo fundo a fundo não é sinônimo de gasto livre. Bloco de Manutenção e Bloco de Estruturação têm finalidades e vinculações. Programa, origem e ato normativo importam.
+
+**Gestão:** CIT nacional, CIB estadual, CIR regional. Conselhos exercem participação e controle social; conferências avaliam e propõem diretrizes em periodicidade legal. PPA/LDO/LOA são instrumentos orçamentários gerais; Plano de Saúde/PAS/RQPC/RAG organizam planejamento, execução e avaliação setorial.
+
+**SIOPS:** envio bimestral de informações orçamentárias dos entes; controle de aplicação mínima e transparência. Sistema de registro não equivale a prontuário clínico ou demonstrativo de cobertura vacinal.
+
+**APS:** fixo + vínculo/acompanhamento + qualidade; metodologia e filtros são temporais. A Portaria 10.994/2026 determina implantação parcial e tratamento transitório de faixas em quadrimestres diferentes, enquanto Nota Técnica 8/2026 orienta análise detalhada. Não responder questão de outubro/2026 apenas com regra de 2024.
+
+**Pulo do gato da LURIA:** pergunte sempre 1) quem arrecada? 2) qual base do mínimo? 3) gasto entra em ASPS? 4) repasse tem vinculação? 5) quem pactua? 6) qual instrumento planeja e qual presta contas? 7) a norma da APS já estava vigente naquela parcela? Sete perguntas resolvem grande parte das armadilhas.
+
+## 20. Matriz preliminar de autossuficiência e auditoria de saída
+
+| Objetivo | Onde foi ensinado | Teste | Estado |
+|---|---|---|---|
+| Origem/função dos recursos | §§1–2 | Q1 | Conteúdo autoral, confrontar fontes |
+| Pisos de ASPS | §2 | Caso 1, Q1 | Base legal verificada; prática com DF pendente |
+| Elegibilidade das despesas | §3 | Caso 1, Q2 | LC 141 verificada; exceções atualizadas a conferir |
+| Fundo a fundo e blocos | §4 | Caso 2, Q3 | Portaria 828/2020 identificada; casos especiais pendentes |
+| CIT/CIB/CIR | §5 | Caso 4, Q4/Q9 | Decreto 7508 confrontado |
+| PPA, PAS, RAG e execução | §§6 e 13 | Q5 | Complementar cronogramas legais |
+| Controle social | §7 | Caso 6 | Confirmar Resolução CNS 453/2012 na revisão final |
+| SIOPS | §8 | Q6 | Fonte MS atual consultada |
+| Cofinanciamento APS em 2026 | §§9,15 | Caso 5, Q7/Q8 | Requer leitura integral da Nota 8/2026 antes de números |
+| Integração clínica e orçamentária | §§10–12 e 14–16 | Casos 2–6, Q10 | Discussão original, validar aplicação regional |
+| Casos comentados/questões | §§17–18 | 6 casos, 10 questões | Provisório, revisão de estilo e acurácia |
+
+**Pendências impeditivas de publicação:**
+- Benchmark Drive específico de financiamento/gestão **não encontrado**; apenas fonte correlata de SUS aberta. Não declarar etapa zero específica plenamente cumprida.
+- Auditoria de caracteres **didáticos úteis** (excluir índice, tabelas, referências, exercícios e redundâncias) ainda não realizada.
+- Revisão jurídica minuciosa de LC 141, mudanças 2026 e eventuais normas posteriores à consulta; verificação completa de Nota Técnica 8/2026 antes de tabelas de indicadores numéricos.
+- Casos numéricos e percentuais passam por validação aritmética e jurídica das bases de impostos.
+- Imagens: apenas sugestões originais (fluxo orçamentário fundo a fundo, organograma CIT/CIB/CIR, ciclo Plano–PAS–RAG, decisão ASPS), sem utilizar imagens protegidas de terceiros; qualquer imagem externa deve entrar pela aprovação Admin.
+- Revisão independente da didática, testes de compreensão, adequação ao template, PWA, desempenho e publicação.
+
+**Conclusão:** manuscrito novo e rastreável em construção. A redação não implica revisão legal conclusiva, aprovação clínica nem publicação na LURIA.
