@@ -11,14 +11,14 @@
 | Aula | Tema oficial | Base encontrada em main | Conduta editorial |
 |---|---|---|---|
 | 160 | Abordagem do tabagismo, álcool e outras drogas | Sem livro temático próprio na pasta apostilas/ | Criar livro original; benchmark Tabagismo.pdf do Drive lido em 14/10, cobertura parcial; ampliar abordagem do álcool, outras substâncias e RAPS |
-| 161 | Sepse e choque séptico | `apostilas/sepse-choque-septico/rascunho-editorial-lote09.md` + complemento 02 | Consolidar e aprofundar; verificar SSC 2026/ILAS, antimicrobianos, perfusão e foco; não sobrescrever os dois arquivos |
-| 162 | Nódulos e câncer de tireoide | `apostilas/nodulos-cancer-tireoide/rascunho-editorial-lote09.md` | Aprofundar USG/TI-RADS, PAAF/Bethesda, avaliação de TSH, cirurgia e seguimento |
+| 161 | Sepse e choque séptico | `apostilas/sepse-choque-septico/rascunho-editorial-lote09.md` + complementos 02 e **03** | **Complemento 03 produzido nesta branch** (SOFA, SSC 2026, ILAS 2025, 5 casos, 8 questões); falta integrar sem redundâncias |
+| 162 | Nódulos e câncer de tireoide | `apostilas/nodulos-cancer-tireoide/rascunho-editorial-lote09.md` | **Ampliado nesta branch**, preservado original; conferir novos capítulos 3–7, casos/questões e revisão clínica pendente |
 | 163 | Violência e maus-tratos contra crianças e adolescentes | `apostilas/violencia-maus-tratos-criancas-adolescentes/rascunho-editorial-lote09.md` | Revisar com linha de cuidado, ECA, notificação, proteção, diferenciais e segurança |
 | 164 | Câncer do colo do útero | `apostilas/cancer-colo-utero-hpv/content.json` e `index.html` | **Preservar livro existente**; separar lesões precursoras/rastreamento (#159) de manejo oncológico |
 | 165 | Saúde do trabalhador | `apostilas/saude-do-trabalhador/rascunho-editorial-lote09.md` | Reaproveitar rascunho extenso; validar normas, SINAN, nexo e rotinas vigentes |
 | 166 | HIV e infecções oportunistas | `apostilas/hiv-infeccoes-oportunistas/rascunho-editorial-lote09.md` | Reaproveitar rascunho extenso; conferir PCDT atual e esquemas, situações especiais |
 | 167 | Doenças benignas e câncer de mama | `apostilas/cancer-de-mama/index.html` | **Compartilhar e aproveitar o livro central de mama**, incluir interface cirúrgica; não clonar #169 |
-| 168 | Puberdade e adolescência | Sem livro próprio identificado | Criar livro pediátrico; separar de alterações puberais patológicas específicas |
+| 168 | Puberdade e adolescência | **Encontrado posteriormente em main**: `apostilas/puberdade-adolescencia/rascunho-editorial-lote09.md` (~89 mil caracteres totais de Markdown, 12 casos, 18 questões) | **Não duplicar**; benchmark do Drive só parcial (puericultura/crescimento), requer revisão científica e integração editorial |
 | 169 | Patologias benignas e câncer de mama | `apostilas/cancer-de-mama/index.html` | **Reaproveitar #167** com objetivos ginecológicos; um conteúdo canônico e indexação curricular dupla, evitando publicação duplicada |
 | 170 | Ética médica, sigilo e prontuário | Sem livro próprio identificado | Criar, base CFM/LGPD/legislação vigente; casos e documentação |
 | 171 | Artrites inflamatórias e doenças autoimunes | Sem livro próprio identificado | Criar com diagnóstico diferencial, red flags, investigação e encaminhamento |
@@ -55,3 +55,15 @@
 - Nunca reivindicar “concluído” com base em contagem aparente, marcadores HTML ou existência de pasta.
 - Banco de imagens separado para aprovação pelo Admin. Não embutir novas imagens médicas sem licença aprovada.
 - `main` intocada; este ramo é somente trabalho editorial, sem merge/deploy.
+
+## Continuação — 14/10/2026: mudanças efetivamente realizadas neste ciclo
+
+1. **Aula 162 — Nódulos e câncer de tireoide:** o arquivo `apostilas/nodulos-cancer-tireoide/rascunho-editorial-lote09.md` foi **ampliado somente na branch editorial**, preservando a íntegra da base. Cerca de **57,6 mil caracteres de Markdown total** após incorporação de novos subcapítulos, agora 10 casos e 16 questões. Incluiu cálculo do TI-RADS, interpretação 2023 Bethesda, vigilância ativa e cirurgia pela ATA 2025, carcinoma medular/MEN2, anaplásico, complicações e seguimento. **Não são 57,6 mil caracteres didáticos únicos certificados.** Comparativo Drive diretamente específico indisponível; foi aberto material relacionado de tireotoxicose — benchmark parcial, limitação registrada.
+2. **Aula 161 — Sepse e choque séptico:** criado `apostilas/sepse-choque-septico/complemento-editorial-03-lote08.md` (~21,3 mil caracteres totais de Markdown) com matriz SOFA pontuada, contexto SSC 2026/ILAS 2025, choque misto, reavaliação de perfusão, controle do foco, seguimento, 5 casos e 8 questões. Os dois arquivos preexistentes foram preservados; antes de publicar, será necessária **consolidação antirredundância**. Benchmark no Drive: dois materiais de choque efetivamente lidos, ambos apenas parcialmente equivalentes.
+3. **Aula 168 — Puberdade e adolescência:** o inventário inicial ficou desatualizado por desenvolvimento simultâneo do Codex na `main`. Nova verificação encontrou `apostilas/puberdade-adolescencia/rascunho-editorial-lote09.md`, com ~89,3 mil caracteres totais, 12 casos e 18 questões. Não criar cópia. Foi lido `01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf` no Drive, útil apenas em crescimento e idade óssea; não substitui uma apostila específica de puberdade e saúde adolescente. **Pendente:** revisão e comparação direta e aprovação antes de incorporar.
+4. **Etapas ainda não executadas:** seleção e aprovação de imagens clínicas no Admin, renderização com testes reais, revisão clínica independente de doses, consolidação dos rascunhos com `content.json` e indexação curricular. **Sem merge, sem publicação, sem deploy**.
+
+### Advertência de integração
+
+A branch editorial nasceu de um commit anterior ao surgimento de novos rascunhos na `main`. Antes de integrar, conferir HEAD atual, reconciliação de arquivos e eventuais alterações simultâneas do Codex. **Não forçar merge da PR e não trocar conteúdo antigo por nova versão menor.**
+
