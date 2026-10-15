@@ -79,7 +79,87 @@ A tendência de “fazer uma medida e esperar ver se funciona” pode consumir a
 
 ## 6. Hemorragia secundária: quando o cenário deixa de ser sala de parto
 
-Sangramento anormal após a primeira jornada puerperal exige discriminar fluxo esperado de lóquios e hemorragia patológica, especialmente quando há febre, dor uterina, odor fétido, eliminação de coágulos volumosos, taquicardia ou sinais de anemia. Restos ovulares, endometrite e subinvolução são hipóteses relevantes. Ultrassonografia pode auxiliar, mas o achado de conteúdo intrauterino precisa de correlação clínica; coágulos, decidualização e alterações puerperais podem imitar restos. A paciente instável necessita avaliação e ressuscitação imediatas, não fila eletiva de imagem.
+A hemorragia pós-parto secundária ou tardia exige uma linha de raciocínio própria. Em geral, denomina-se **primária** a perda anormal nas primeiras 24 horas após o nascimento e **secundária** a que se inicia ou recidiva depois de 24 horas, durante semanas do puerpério. O limite superior varia entre documentos — frequentemente seis semanas em definições tradicionais, podendo alcançar **12 semanas** em referências de imagem e revisão pós-gestacional. Esse intervalo não deve ser confundido com um prazo de segurança para observar perda importante: qualquer sangramento abundante ou acompanhado de repercussão sistêmica merece avaliação imediata.
+
+### 6.1. Primeiro separar lóquios esperados de sinais de alerta
+
+Os lóquios mudam de aspecto e quantidade ao longo dos dias e tendem a diminuir. A trajetória é mais informativa que uma fotografia isolada do absorvente. Depois de uma fase de melhora, **retorno de sangramento intenso**, perda que encharca repetidamente absorventes, coágulos grandes, tontura, pré-síncope, palpitações, febre, calafrios, dor abdominal/pélvica importante ou odor desagradável não devem ser banalizados como “menstruação voltando”. Nem todas as mulheres com hemorragia tardia terão febre; nem toda paciente febril terá infecção uterina como causa única da perda.
+
+Na anamnese, reconstrua a cronologia do parto, a dequitação (placenta completa? dificuldade de extração?), o tipo de parto, procedimentos intrauterinos, eventual instrumentação, hemorragia primária, transfusões, uso de anticoagulantes e evolução dos lóquios. Explore lactação, retorno da atividade sexual e possibilidade de nova gestação quando pertinentes. O objetivo não é preencher perguntas automaticamente, mas entender a probabilidade de **tecido retido, infecção, involução inadequada do leito placentário ou lesão vascular**.
+
+### 6.2. Duas rotas de atendimento: instabilidade versus estabilidade
+
+**Rota de emergência:** choque, sangramento volumoso persistente, síncope, alteração de consciência, sinais de hipoperfusão ou deterioração rápida exigem ativar ajuda obstétrica/anestésica e hemoterapia, monitorização, acesso vascular, avaliação do trato genital e ressuscitação hemostática conforme protocolo. A origem precisa ser investigada enquanto se reanima; **não se aguarda ultrassonografia para iniciar atendimento nem se transporta paciente instável para exame eletivo**. Considerar cirurgia/intervenção vascular de controle definitivo conforme a causa e recursos locais.
+
+**Rota da paciente inicialmente estável:** documentar pressão, frequência cardíaca, perfusão, temperatura, intensidade/tendência do sangramento e exame abdominal e genital com privacidade, iluminação e analgesia apropriadas. Avaliar hemograma e demais testes de acordo com a repercussão (coagulação, fibrinogênio, tipagem/prova cruzada quando houver possibilidade de intervenção ou perda importante). Hemoglobina aparentemente preservada logo após perda aguda não exclui risco, e **febre não pode ser o único gatilho para investigar endometrite**. A ultrassonografia pélvica, frequentemente transvaginal conforme condição e aceitação, com Doppler colorido quando indicado, é exame complementar de alto valor — não laudo isolado que decide automaticamente uma curetagem.
+
+### 6.3. Diagnóstico diferencial por mecanismo, pista e risco de intervenção
+
+| Hipótese | Por que sangra / pistas | Exame ou decisão que ajuda | Armadilha principal |
+|---|---|---|---|
+| **Produtos retidos da concepção (restos placentários)** | Tecido intrauterino persiste, interferindo na involução e podendo manter vascularização; sangramento contínuo ou recorrente, às vezes com infecção associada | História da dequitação, exame, ultrassom para massa intracavitária e vascularidade; avaliação obstétrica de conduta expectante, medicamentosa ou evacuação quando indicada | Interpretar todo endométrio espesso/ecogênico do puerpério como restos e instrumentar sem avaliar vascularização |
+| **Endometrite/endomiometrite** | Inflamação/infecção uterina, por vezes associada a restos; dor ou sensibilidade uterina, febre, secreção fétida, mal-estar, sem obrigatoriedade de todos esses achados | Exame clínico, avaliação de sepse e testes dirigidos; antibiótico segundo gravidade/protocolo quando há suspeita clínica | Esperar cultura positiva para tratar infecção relevante, ou atribuir todo sangramento a infecção sem buscar foco associado |
+| **Subinvolução do sítio placentário** | Persistência da circulação e involução incompleta de vasos do leito de implantação, com perda recorrente | Diagnóstico após considerar causas mais frequentes; imagem e avaliação especializada, eventualmente confirmação anatomopatológica | Assumir atonia típica da sala de parto semanas depois |
+| **Pseudoaneurisma da artéria uterina / fístula ou outra lesão vascular** | Lesão arterial, às vezes após cesariana ou instrumentação, causando episódios abruptos e potencialmente intensos; pode haver intervalos sem sangramento | Ultrassom com Doppler orientado e, se necessário, imagem vascular; discutir embolização com radiologia intervencionista quando a paciente estável e recurso acessível | **Curetagem às cegas** de uma lesão vascular, com risco de hemorragia catastrófica |
+| **Vascularização miometrial aumentada pós-gestação (EMV)** | Persistência ou regressão da vascularidade do antigo leito placentário, por vezes associada a restos; pode simular malformação arteriovenosa | Correlacionar localização, aspecto, fluxo, sintomas e tendência evolutiva com radiologista experiente | Rotular toda hipervascularização como “MAV uterina” ou indicar embolização/histerectomia por achado isolado |
+| **Causas menos comuns** | Doença trofoblástica gestacional, coagulopatias, medicamentos anticoagulantes, laceração/ferida operatória, entre outras | β-hCG em contexto apropriado; exames hematológicos e avaliação de lesão local quando indicados | Encerrar investigação após ultrassom inespecífico apesar de perda persistente |
+
+**Duas distinções decisivas:** material ecogênico intrauterino pode representar coágulo, alterações puerperais ou tecido retido; e **hiperfluxo ao Doppler não é sinônimo de malformação arteriovenosa verdadeira**. Revisões radiológicas recentes distinguem vascularização miometrial aumentada transitória ligada ao sítio placentário (EMV), fístulas, pseudoaneurismas e malformações congênitas. Os nomes importam porque o risco de instrumentação e a necessidade de embolização diferem entre elas.
+
+### 6.4. Ultrassom: que pergunta cada achado realmente responde?
+
+**Massa ecogênica no interior da cavidade:** pode elevar suspeita de tecido retido, sobretudo se o quadro clínico é compatível. Contudo, espessura endometrial isolada tem desempenho limitado no puerpério e não deve virar limiar absoluto de cirurgia; a qualidade do exame e a evolução clínica interferem na interpretação. **Ausência de fluxo dentro da massa não exclui completamente restos**, assim como a presença de fluxo não os confirma independentemente.
+
+**Vasos exuberantes no miométrio e região do leito placentário:** caracterizar distribuição e relação com a cavidade, se há saco vascular focal, padrão de fluxo e história de instrumentação. A EMV pode ser transitória após gestação e regredir, inclusive quando ligada a restos; uma lesão vascular verdadeira pode demandar abordagem diferente. Quando existe suspeita de pseudoaneurisma ou malformação/fístula de alto fluxo, **não indicar esvaziamento uterino empírico sem discussão com obstetrícia e radiologia experientes**.
+
+**Sinais de endometrite:** a hipótese permanece predominantemente clínica. Achados de imagem podem ser inespecíficos e não devem atrasar tratamento de infecção sistêmica suspeita. Ultrassom agrega valor na procura por restos e coleções em casos selecionados, especialmente quando não há melhora.
+
+**Quando a imagem e a clínica divergem:** repetir exame com profissional experiente, reavaliar sinais vitais e tendência de perda, e discutir alternativas diagnósticas costuma ser mais seguro que tratar a descrição do laudo isoladamente. Os documentos de imagem relatam grande variação da acurácia ultrassonográfica para restos no período puerperal.
+
+### 6.5. Tratamento orientado à causa — sem automatismos
+
+A paciente instável recebe ressuscitação e **controle do sangramento** independentemente do diagnóstico definitivo. Na estável, as possibilidades de observação monitorizada, uterotônicos, antibioticoterapia, intervenção uterina, embolização e cirurgia não são uma sequência fixa: são respostas a hipóteses e gravidades distintas.
+
+- **Suspeita de endometrite:** antibióticos de acordo com suspeita, intensidade, condições locais e protocolo; avaliar necessidade de internação e investigar restos/coleções se a evolução ou o exame sugerirem. A possibilidade de sepse muda a urgência.
+- **Produtos retidos:** a escolha entre conduta conservadora e evacuação depende de sintomas, estabilidade, carga hemorrágica, probabilidade diagnóstica, vascularização e possibilidade de seguimento. Quando há indicação cirúrgica, a avaliação e o procedimento devem ser conduzidos/supervisionados por profissional experiente; técnica e preparo antecipam risco de sangramento.
+- **Pseudoaneurisma ou outra lesão vascular significativa:** evitar instrumentação uterina precipitada. Em paciente estável, discutir avaliação de radiologia intervencionista e embolização quando pertinente e disponível; instabilidade pode exigir controle cirúrgico urgente. **EMV fisiológica ou associada a restos não equivale automaticamente a malformação que precise ser embolizada**.
+- **Sangramento sem foco esclarecido:** não repetir curetagens ou cursos de antibiótico em sequência como teste cego. Reavaliar hipóteses (inclusive doença trofoblástica e coagulopatias) e considerar encaminhamento conforme evolução.
+
+**Janela temporal e medicamentos:** os critérios OMS/FIGO/ICM 2025 de **≥300 mL com sinal hemodinâmico ou ≥500 mL, em até 24 horas**, e o benefício comprovado do **ácido tranexâmico até três horas do nascimento** pertencem ao manejo precoce da HPP. Não extrapolar automaticamente esses limites e esquemas como se estivessem validados para a paciente que volta sangrando no 15º ou 30º dia. Isso **não** reduz a urgência de reanimar uma paciente instável com hemorragia tardia.
+
+### 6.6. Fluxograma de raciocínio original para o plantão
+
+**Sangramento anormal após 24 horas do parto** → quantificar intensidade, avaliar sinais vitais/perfusão e buscar ajuda conforme gravidade.
+
+**Instável ou perda maciça em curso?** → *sim:* protocolo de emergência, monitorização, ressuscitação/hemoterapia e controle obstétrico do foco em paralelo; imagem apenas se não atrasar intervenção. → *não:* história do parto + exame abdominal e genital + hemograma/testes dirigidos + ultrassom com Doppler conforme suspeita.
+
+**Sinais infecciosos ou sépticos?** → avaliar endometrite e focos associados; iniciar terapia apropriada e investigar necessidade de abordagem uterina.
+
+**Massa intracavitária com contexto de restos?** → discutir conduta e risco do procedimento; conferir vascularização e estabilidade. **Fluxo miometrial focal exuberante, massa vascular ou sangramento em episódios abruptos?** → rever hipótese vascular antes de qualquer instrumentação.
+
+**Sem explicação coerente e sangramento persistente/recorrente?** → reavaliar imagem, β-hCG/testes de coagulação se indicados e investigação especializada. Sempre concluir com plano de observação, tratamento de anemia, retorno urgente e seguimento.
+
+### 6.7. Miniestação clínica — dois cenários que exigem decisões diferentes
+
+**Cenário 1 — sangramento, febre e massa cavitária:** puérpera no 11º dia após parto vaginal com piora de lóquios, dor pélvica e febre. A ultrassonografia descreve material intrauterino heterogêneo. *Hipóteses:* endometrite, com ou sem produtos retidos. *Próxima decisão:* avaliar repercussão, iniciar abordagem de infecção conforme protocolo se clinicamente suspeita, revisar dequitação, examinar a paciente e discutir necessidade de evacuação sob supervisão experiente caso o conjunto de dados indique restos. *Erro a evitar:* concluir que a imagem por si só comprova restos ou ignorar sepse porque o Doppler é pouco expressivo.
+
+**Cenário 2 — sangramentos em jato após cesariana:** puérpera no 17º dia teve dois episódios abruptos de hemorragia, separados por períodos de quase ausência de perda. Está estável neste momento, mas ficou lipotímica. Doppler identifica imagem vascular focal com fluxo turbulento junto à parede uterina. *Hipótese perigosa:* pseudoaneurisma, entre lesões vasculares possíveis. *Próxima decisão:* avaliação obstétrica urgente, confirmação por radiologia e planejamento de controle com equipe capaz de embolização/intervenção conforme achado e estabilidade. *Erro a evitar:* curetagem automática por suspeita não comprovada de restos; ausência de sangramento na consulta não garante ausência de risco de ressangramento.
+
+### 6.8. Pérolas de prova, segurança e referências desta seção
+
+1. **Hemorragia tardia não é HPP imediata “mais lenta”**: o tempo pós-parto muda hipóteses e evidências terapêuticas.
+2. **Endométrio espesso não é indicação cirúrgica isolada**, sobretudo no puerpério precoce.
+3. **Padrão vascular importa**: EMV, pseudoaneurisma, fístula e MAV verdadeira são entidades relacionadas, mas não equivalentes.
+4. **O maior erro evitável diante de lesão vascular suspeita é instrumentar sem esclarecer o diagnóstico e planejar controle de sangramento.**
+5. **Estabilidade momentânea não anula risco** se a história descreve episódios volumosos e recorrentes.
+
+**Fontes revisadas para este capítulo (sem reprodução de tabelas ou imagens):**
+- NICE, *Postnatal care*, NG194, recomendações 1.2.4, 1.2.13–1.2.14: https://www.nice.org.uk/guidance/ng194/chapter/Recommendations
+- ISUOG, *Practice Guidelines: point-of-care ultrasound in obstetrics and gynecology*, 2026: https://obgyn.onlinelibrary.wiley.com/doi/full/10.1002/uog.70122
+- Royal College of Obstetricians and Gynaecologists, *Prevention and Management of Postpartum Haemorrhage*, Green-top 52, capítulo sobre hemorragia secundária (contextualizar ano/versão ao citar): https://ranzcog.edu.au/wp-content/uploads/RCOG-Prevention-Management-Postpartum-Haemorrhage.pdf
+- RadioGraphics, *Secondary Postpregnancy Hemorrhage: Guide for Diagnosis and Management*, 2025: https://doi.org/10.1148/rg.240098
+- RadioGraphics, *Enhanced Myometrial Vascularity: Is It an Arteriovenous Malformation?*, 2026: https://doi.org/10.1148/rg.250152
+- OMS/FIGO/ICM, *Consolidated guidelines for the prevention, diagnosis and treatment of postpartum haemorrhage*, 2025, escopo da HPP nas primeiras 24 horas: https://www.who.int/publications/i/item/9789240115637
 
 ## 7. Casos clínicos integrados
 
