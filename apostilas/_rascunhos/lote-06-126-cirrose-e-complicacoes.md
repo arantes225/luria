@@ -1,0 +1,196 @@
+# LURIA — Apostila 126: Cirrose e Complicações
+**Lote 06 · Clínica Médica · Hepatologia, Nefrologia e Emergência**
+
+> **RASCUNHO EDITORIAL — NÃO PUBLICAR.** Conteúdo acadêmico autoral, não prescrição para paciente específico. Uso de diuréticos, albumina, vasopressores, antibióticos e procedimentos depende de contexto clínico, recomendações atualizadas, supervisão e disponibilidade institucional. As faixas de doses são referências de protocolos, não ordens automáticas. A sequência editorial privilegia primeiro reconhecer descompensação e tratar a ameaça imediata, depois estabelecer etiologia, prognóstico e plano de cuidado.
+
+## 1. O que é cirrose — doença arquitetural, não apenas enzima alterada
+
+**Cirrose hepática** é estágio de remodelamento crônico e difuso do fígado, com fibrose avançada, nódulos regenerativos e desorganização vascular que elevam a resistência ao fluxo sanguíneo portal e comprometem funções hepáticas. Nem toda pessoa com cirrose apresenta icterícia, ascite ou aminotransferases elevadas; o diagnóstico pode surgir em avaliação de plaquetopenia, esplenomegalia, imagem nodular ou rastreamento de carcinoma hepatocelular (CHC).
+
+A cirrose produz dois grandes grupos de problemas, frequentemente simultâneos. O primeiro deriva de **hipertensão portal**: circulação colateral, varizes, ascite, hiperesplenismo, gastropatia hipertensiva e parte da síndrome hepatorrenal. O segundo advém de **insuficiência hepatocelular e disfunção imune-metabólica**: icterícia, menor síntese de albumina e fatores de coagulação, encefalopatia, alterações na metabolização de medicamentos, sarcopenia e maior susceptibilidade a infecções.
+
+Há diferença prognóstica decisiva entre **cirrose compensada** (sem grandes eventos de descompensação) e **descompensada** (ascite, encefalopatia hepática manifesta ou sangramento varicoso; icterícia pode indicar piora e integrar definições em diferentes documentos). A transição não é mero detalhe classificatório: marca aumento de risco, necessidade de intensificar vigilância e, em muitos casos, discussão de transplante. A existência de CHC pode exigir avaliação para transplante mesmo em paciente sem ascite.
+
+**Três erros que provas exploram:** (1) transaminases normais não excluem cirrose; (2) plaquetopenia pode refletir hipertensão portal antes de alterações importantes de INR; (3) presença de ascite nova não é automaticamente “devido à cirrose” sem avaliação.
+
+## 2. Fisiopatologia integrada: do dano crônico à circulação hiperdinâmica
+
+### 2.1 Como o hepatócito lesionado ativa a fibrose
+
+Agressões persistentes — etanol, hepatites B/C/D, esteato-hepatite metabólica, doenças autoimunes/colestáticas, depósito de ferro/cobre e outras — produzem inflamação, morte celular e sinais que ativam **células estreladas hepáticas**. Elas adquirem fenótipo produtor de matriz extracelular, sobretudo colágeno, alterando septos e sinusoides. Surgem nódulos regenerativos e remodelamento vascular; a microcirculação perde complacência e aumenta resistência ao fluxo portal.
+
+A resistência é estrutural (septo fibrótico e nódulos) e dinâmica (contração de células estreladas, endotélio disfuncional e desequilíbrio de mediadores como óxido nítrico). Parte do aumento de pressão pode cair com melhora etiológica e redução da componente dinâmica, mas fibrose estabelecida e riscos de CHC exigem seguimento mesmo após supressão viral/abstinência.
+
+### 2.2 Hipertensão portal e vasodilatação esplâncnica
+
+A pressão portal reflete fluxo e resistência. Resistência sinusoidal elevada favorece desenvolvimento de colaterais portossistêmicas e alterações esplâncnicas; paralelamente, mediadores vasodilatadores ampliam leito arterial esplâncnico. Isso diminui **volume arterial efetivo** apesar do volume corporal total poder estar aumentado por ascite e edema. A ativação de sistema renina-angiotensina-aldosterona, sistema simpático e vasopressina retém sódio e água, alimentando ascite/hiponatremia.
+
+O rim de um cirrótico com ascite importante não está necessariamente “hiper-hidratado intravascularmente”: pode existir expansão do líquido peritoneal ao lado de má perfusão renal. Isso explica a vulnerabilidade a perdas gastrointestinais, diuréticos excessivos, sangramento, AINEs e infecção, que precipitam injúria renal. A **síndrome hepatorrenal** é manifestação extrema desse distúrbio circulatório, mas não deve ser diagnosticada sem analisar outras causas de lesão renal.
+
+### 2.3 Intestino, microbiota, inflamação e cérebro
+
+Alterações de barreira intestinal, disbiose e translocação bacteriana facilitam infecção ascítica e inflamação sistêmica. Desvio portossistêmico reduz metabolização de substâncias neuroativas; a **amônia** participa da encefalopatia ao alterar metabolismo astroglial, mas citocinas, inflamação, eletrólitos, infecção, sedativos e sarcopenia modificam suscetibilidade. A concentração plasmática de amônia pode não corresponder ao grau de encefalopatia e não é teste confirmatório isolado.
+
+### 2.4 Efeito sobre coagulação
+
+O fígado produz fatores pró-coagulantes e anticoagulantes naturais. Na cirrose, ambas as vias podem estar reduzidas e sofrem compensações; esse **reequilíbrio hemostático frágil** não é adequadamente captado por INR isolado. Pessoas podem ter risco simultâneo de sangramento e de trombose portal/venosa. Transfundir plasma apenas para normalizar INR antes de paracentese de rotina não é conduta sustentada automaticamente por evidências; risco procedural, plaquetas, fibrinogênio, sangramento ativo e circunstâncias clínicas devem ser avaliados.
+
+## 3. Etiologias e raciocínio causal: tratar o fígado e a causa
+
+### 3.1 Principais grupos etiológicos
+
+| Grupo | Pistas e exames dirigidos | Consequência clínica |
+| --- | --- | --- |
+| Doença hepática associada ao álcool | História quantitativa não moralizante, padrão laboratorial variável e sinais nutricionais | Abstinência com suporte e manejo de transtorno do uso de álcool reduzem agressão |
+| MASLD/MASH (doença esteatótica metabólica) | Diabetes, obesidade, dislipidemia, hipertensão, resistência insulínica; avaliar álcool e causas concorrentes | Manejo metabólico, atividade física e perda ponderal individualizada |
+| Hepatite B/D | HBsAg, anti-HBc, DNA-HBV, risco de HDV em HBsAg positivo; testes conforme protocolo | Antivirais quando indicados, supressão viral e manejo de contatos |
+| Hepatite C | Anti-HCV e HCV-RNA para infecção ativa | Terapia antiviral de ação direta pode curar virologicamente, mas não elimina seguimento da cirrose |
+| Hepatite autoimune | IgG, autoanticorpos, histologia conforme caso | Imunossupressão especializada quando apropriada |
+| Colangite biliar primária/colangite esclerosante | Prurido, FA/GGT, AMA, colangio-RM e contexto de DII | Terapia colestática e vigilância específica |
+| Hemocromatose, Wilson, deficiência A1AT | Saturação transferrina/ferritina, ceruloplasmina/cobre e perfil clínico/idade | Tratamento etiológico e avaliação familiar conforme condição |
+| Congestiva/vascular | Insuficiência cardíaca direita, síndrome de Budd–Chiari, trombose | Correção cardiológica/vascular, investigação anatômica |
+
+Coexistência é comum: pessoa com consumo significativo de álcool pode também ter hepatite B ou doença metabólica. A simples presença de esteatose na imagem não explica automaticamente todo quadro de hipertensão portal. Investigar etiologia é essencial mesmo após estabelecer cirrose, pois há terapias específicas e implicações familiares/preventivas.
+
+### 3.2 O que perguntar com qualidade
+
+Detalhar padrão de consumo alcoólico e abstinência sem linguagem moralizante; medicamentos, fitoterápicos e suplementos; história transfusional, procedimentos, relações sexuais e exposição a hepatites; doenças autoimunes, familiares com cirrose precoce, diabetes, obesidade e manifestações de colestase. Perguntar sobre ascite, edemas, vômitos com sangue, melena, sono, orientação, constipação, infecções e queda de diurese.
+
+Uma consulta que apenas solicita TGO/TGP e prescreve hepatoprotetor genérico não aborda etiologia, risco de variz, CHC, vacinação ou possibilidade de transplante. O aluno deve sair com plano de identificação causal e prevenção de descompensação.
+
+## 4. Como o paciente se apresenta: sinais compensados e descompensados
+
+Em compensados, pode não haver sintomas; cansaço inespecífico, esplenomegalia e plaquetopenia são pistas. Na descompensação, surgem **distensão abdominal progressiva**, edema, icterícia, sangramento gastrointestinal, inversão sono-vigília, confusão, queda de funcionalidade ou infecção. O exame pode revelar circulação colateral abdominal, eritema palmar, telangiectasias, ginecomastia, atrofia muscular e edema. Esses sinais não são diagnósticos isolados: por exemplo, eritema palmar também aparece na gestação e em outras condições.
+
+**Asterixe** é interrupção breve e repetida do tônus postural, visualizada com braços estendidos e punhos dorsifletidos. Apoia encefalopatia metabólica, mas pode ocorrer em uremia, retenção de CO₂ e outras condições. **Icterícia** é aumento de bilirrubina com diferentes mecanismos, incluindo hemólise e colestase extra-hepática; não equivale a cirrose sem investigar.
+
+### 4.1 Alarmes de pronto-socorro
+
+- Hematêmese, melena com síncope, hipotensão: suspeitar hemorragia digestiva alta varicosa ou não varicosa.
+- Febre, dor abdominal, piora da ascite ou encefalopatia: considerar **PBE**, mesmo sem dor/peritonite.
+- Confusão, sonolência importante, aspiração ou coma: proteger via aérea conforme gravidade e procurar precipitantes.
+- Oligúria, creatinina crescente, hiponatremia grave: investigar LRA e possível HRS-AKI.
+- Dispneia/hipoxemia com derrame pleural: considerar hidrotórax, infecção pleural e outras causas.
+- Dor abdominal desproporcional, lactato crescente ou peritonite: não atribuir tudo à PBE; excluir isquemia/perfuração.
+
+A fragilidade clínica pode ser grande mesmo com enzimas hepáticas pouco elevadas. **A descompensação é síndrome clínica, não um corte isolado de AST/ALT.**
+
+## 5. Diagnóstico da cirrose e avaliação inicial em ambulatório e hospital
+
+### 5.1 Laboratórios úteis
+
+Solicitar hemograma, plaquetas, bilirrubinas, AST/ALT, fosfatase alcalina, GGT quando indicada, albumina, INR, creatinina e sódio. A interpretação combina função sintética, colestase, injúria, reserva renal e risco portal. Plaquetopenia é pista de hipertensão portal por hiperesplenismo e menor trombopoietina, mas pode ter outras causas. Albumina baixa pode refletir desnutrição, inflamação e perdas, não apenas hepatócitos. INR foi desenvolvido para anticoagulação por antagonistas da vitamina K e não mede integralmente risco hemorrágico na cirrose.
+
+Bilirrubina alta ou INR alterado indicam possível gravidade, mas não devem ser tratados com suplementos sem procurar origem. A creatinina pode subestimar disfunção renal em sarcopenia, pela baixa produção muscular de creatinina; mudanças pequenas a partir de basal baixo merecem atenção.
+
+### 5.2 Ultrassonografia com Doppler
+
+Avalia contorno nodular, heterogeneidade, tamanho hepático, esplenomegalia, ascite, colaterais, fluxo portal/hepático e lesões focais. Em doença avançada, o diagnóstico pode ser muito sugestivo, mas US normal não exclui fibrose avançada. Doppler ajuda a investigar trombose de veia porta e síndromes vasculares, mas interpretação depende de técnica e contexto. Lesão focal suspeita requer protocolo específico de CHC, não biópsia indiscriminada antes de imagem multiphasic quando há critérios.
+
+### 5.3 Elastografia e biomarcadores não invasivos
+
+Rigidez hepática mede propriedade mecânica relacionada à fibrose, mas aumenta também com inflamação, congestão e colestase. Deve ser interpretada junto a plaquetas, etiologia, jejum e contexto. **Baveno VII** propõe regras para doença hepática crônica avançada compensada e hipertensão portal clinicamente significativa (CSPH). Valores de rigidez **≤15 kPa com plaquetas ≥150 mil/µL** podem excluir CSPH em grupos validados; **≥25 kPa** podem sugerir/predizer CSPH em etiologias e faixas populacionais apropriadas, com ressalvas em obesidade e MASLD.
+
+Esses pontos de corte **não são universais** para todos os pacientes, inclusive obesidade grave, congestão cardíaca, etiologias não validadas e cirrose já descompensada. Escores de fibrose como FIB-4 podem ser úteis na triagem metabólica, porém resultados intermediários exigem avaliação adicional; não equivalem a diagnóstico de cirrose por si.
+
+### 5.4 Biópsia hepática e diferenciais
+
+Biópsia pode ser considerada se etiologia permanece incerta, há suspeita de doença infiltrativa/autoimune ou exames discordantes e resultado modificará manejo. Sua necessidade diminuiu quando evidência clínica/imagem é convincente, especialmente sob risco hemorrágico. Diferenciais incluem **hipertensão portal não cirrótica**, esquistossomose hepatoesplênica, trombose portal, fibrose hepática congênita, doença vascular porto-sinusoidal e hepatopatia congestiva. Paciente com grande esplenomegalia e colaterais, mas função sintética preservada, pode ter hipertensão portal sem cirrose.
+
+## 6. Hipertensão portal: do gradiente à prevenção de descompensação
+
+**Gradiente de pressão venosa hepática (HVPG)** é medida invasiva hemodinâmica útil em determinados contextos. Na cirrose sinusoidal, **≥10 mmHg** é frequentemente considerado **hipertensão portal clinicamente significativa (CSPH)**; sangramento varicoso tende a requerer limiares de pressão superiores, mas variabilidade individual e dinâmica exigem cautela. Hipertensão portal pré-sinusoidal, como esquistossomose, pode não ser refletida fielmente pelo HVPG apesar de pressão portal elevada.
+
+A CSPH contribui para formação de varizes, ascite e descompensação; em pessoa compensada, sua identificação pode indicar **betabloqueador não seletivo** para reduzir risco de primeira descompensação, conforme Baveno VII/AASLD. **Carvedilol** bloqueia receptores beta e tem atividade alfa-1, reduzindo fluxo portal e resistência intra-hepática; contudo, pode piorar hipotensão ou hipoperfusão em paciente vulnerável.
+
+### 6.1 Profilaxia em paciente compensado
+
+Avaliar sinais de CSPH por elastografia/plaquetas e achados de colaterais/varizes em imagem ou endoscopia. Se CSPH presente e não há contraindicação, betabloqueador não seletivo pode ser considerado mesmo antes do primeiro sangramento para prevenir descompensação. A decisão depende de pressão arterial, frequência, asma grave, bloqueios de condução, adesão e acompanhamento.
+
+**Carvedilol** frequentemente começa em dose baixa e é titulado até dose apropriada (por exemplo, 6,25 mg/dia e até 12,5 mg/dia em pacientes selecionados conforme diretriz/protocolo), monitorando pressão e efeitos. **Não usar dose de hipertensão arterial automaticamente** para portal: o efeito anti-hipertensivo pode ser limitante e benefícios além de um limiar não aumentam proporcionalmente. Se paciente não pode receber NSBB, endoscopia para estratificação e ligadura de varizes de risco, quando indicada, entram no plano.
+
+### 6.2 Quando reconsiderar betabloqueador
+
+Na cirrose descompensada com **hipotensão importante (ex.: PAS <90 mmHg), pressão arterial média baixa, HRS-AKI, choque e hipoperfusão**, segurar/reavaliar NSBB conforme protocolo é prudente. Não há motivo para suspender definitivamente todos os NSBB no simples diagnóstico de ascite ou PBE, se hemodinamicamente tolerado; a decisão é individual. Em paciente com ascite refratária, pressão é fator crucial.
+
+## 7. Classificações prognósticas: Child–Pugh, MELD e suas limitações
+
+### 7.1 Child–Pugh: cinco componentes
+
+Pontua **encefalopatia**, **ascite**, **bilirrubina**, **albumina** e **INR** (ou tempo de protrombina conforme versão). Cada domínio recebe 1–3 pontos; total 5–6 = **classe A**, 7–9 = **B**, 10–15 = **C**. A classe ajuda a descrever reserva hepática, risco cirúrgico e prognóstico geral, mas ascite e encefalopatia têm componente subjetivo e resposta a tratamento. Não inferir que duas pessoas com mesma classe têm risco idêntico ou que Child seja a única ferramenta para transplante.
+
+| Variável | 1 ponto | 2 pontos | 3 pontos |
+| --- | --- | --- | --- |
+| Bilirrubina (mg/dL) | <2 | 2–3 | >3 |
+| Albumina (g/dL) | >3,5 | 2,8–3,5 | <2,8 |
+| INR | <1,7 | 1,7–2,3 | >2,3 |
+| Ascite | Ausente | Controlável/leve | Tensa ou difícil de controlar |
+| Encefalopatia | Ausente | Graus I–II | Graus III–IV |
+
+Os pontos exatos de limites precisam ser compatibilizados com a versão usada pelo serviço e situação de colestase especial; a interpretação clínica de ascite e encefalopatia tem variabilidade.
+
+### 7.2 MELD, MELD-Na e MELD 3.0
+
+O **MELD** combina marcadores laboratoriais de função hepática/renal para estimar mortalidade em doença avançada, historicamente com bilirrubina, INR e creatinina. **MELD-Na** incorpora sódio sérico pela informação prognóstica de hiponatremia. **MELD 3.0** acrescenta variáveis/correções que dependem de fórmula padronizada, incluindo albumina e sexo biológico em certas versões de alocação. **Não improvisar fórmula manual**: usar calculadora institucional reconhecida e registrar versão/limites dos valores, que podem diferir por país e política de transplante.
+
+A alocação de fígados no **Brasil** segue regras nacionais próprias da central de transplantes/Sistema Nacional de Transplantes; não presumir adoção automática de alterações de score de Estados Unidos. Infecção, sarcopenia e qualidade de vida podem causar gravidade não totalmente capturada pelo MELD; transplante deve ser considerado por trajetória clínica, descompensações e elegibilidade.
+
+### 7.3 ACLF: quando uma agressão aguda muda o horizonte
+
+**Acute-on-chronic liver failure (ACLF)** descreve falência orgânica aguda em pessoa com hepatopatia crônica/cirrose, com alta mortalidade de curto prazo, em definições que variam entre EASL-CLIF, APASL e outras. Gatilhos incluem infecção bacteriana, sangramento, hepatite alcoólica, eventos virais e insultos medicamentosos, mas a etiologia pode não ser identificável. Avaliar falência renal, circulatória, respiratória, neurológica, hepática e coagulação, e não usar unicamente AST/ALT como parâmetro.
+
+Paciente com cirrose e febre, hipotensão, encefalopatia e creatinina crescente necessita de abordagem de sepse, prevenção de aspiração, suporte renal e avaliação do centro transplantador; dar alta porque “já possui encefalopatia crônica” pode ser fatal.
+
+## 8. Ascite: diagnóstico começa com paracentese, não com diurético automático
+
+### 8.1 Por que surge
+
+A hipertensão portal, a vasodilatação esplâncnica, a retenção renal de sódio e água e alterações na produção/distribuição de proteínas favorecem acúmulo de líquido peritoneal. Ascite pode ser sinal inicial de descompensação e requer avaliação de causa e infecção. **Nem toda ascite de uma pessoa que bebe álcool é cirrótica**; neoplasia, tuberculose peritoneal, IC direita/congestiva, síndrome nefrótica, trombose vascular e pancreatopatia podem produzir líquido livre.
+
+### 8.2 Quando realizar paracentese diagnóstica
+
+Indicar paracentese **na ascite nova** e em **pessoa com cirrose e ascite admitida no hospital**, especialmente por descompensação, febre, dor, encefalopatia, choque, hemorragia digestiva, piora renal ou falha de resposta. PBE pode ser silenciosa. Uma equipe que só realiza paracentese quando há defesa abdominal deixa passar apresentações graves. Idealmente colher líquido antes de antibióticos se viável, sem atrasar terapia de sepse.
+
+Solicitar **contagem de células com diferencial (PMN)**, **albumina/proteína total** e cultura inoculada à beira-leito em frascos de hemocultura quando indicado. Exames adicionais dependem do cenário: citologia, ADA/TB, triglicerídeos, amilase, bilirrubina, LDH e glicose. Coletar albumina sérica no mesmo período para calcular gradiente.
+
+### 8.3 Interpretar o GASA corretamente
+
+**GASA = albumina sérica − albumina do líquido ascítico.** Exemplo: albumina do soro 2,8 g/dL e da ascite 1,1 → **GASA 1,7 g/dL**, favorecendo hipertensão portal. Limiar clássico **≥1,1 g/dL** aponta para componente de hipertensão portal; **<1,1** sugere processos peritoneais ou outros mecanismos, com exceções e estados mistos. GASA **não é simplesmente sinônimo de transudato/exsudato**, pois ascite por insuficiência cardíaca pode ter GASA alto e proteínas totais altas.
+
+| GASA | Proteína total ascítica | Possibilidades clínicas |
+| --- | --- | --- |
+| ≥1,1 | <2,5 g/dL | Cirrose sinusoidal comum; requer correlação |
+| ≥1,1 | ≥2,5 g/dL | Congestão cardíaca, Budd–Chiari em fases e outras causas |
+| <1,1 | Variável | Carcinomatose, TB peritoneal, ascite pancreática e outros mecanismos |
+| Qualquer | PMN ≥250/µL | Considerar PBE se não houver fonte cirúrgica, independentemente do GASA |
+
+Não afirmar que proteína >2,5 comprova ascite cardíaca ou que GASA baixo exclui completamente portal em amostra colhida com problemas. O resultado é uma **probabilidade fisiopatológica** que orienta investigação.
+
+### 8.4 Segurança da paracentese
+
+US pode identificar bolsa segura e reduzir punções traumáticas, sobretudo em ascite discreta/obesidade/cicatrizes. Selecionar local evitando vasos, infecção cutânea e vísceras; respeitar técnica estéril, posição e avaliação clínica. **INR isolado elevado em cirrose não é contraindicação absoluta nem indicação automática de plasma profilático** para paracentese de risco usual. Coagulação intravascular disseminada, sangramento ativo, anatomia desfavorável e trombocitopenia extrema exigem avaliação individual. Não copiar “ponto de punção ideal” fixo sem considerar imagem, anatomia e cirurgias anteriores.
+
+## 9. Tratamento da ascite: sódio, diuréticos, paracentese e refratariedade
+
+### 9.1 Medidas iniciais e vigilância
+
+Em ascite por cirrose, orientar **sódio alimentar por volta de 2 g/dia**, sem impor restrição nutricional tão intensa que agrave sarcopenia. Educar sobre sódio oculto em ultraprocessados; peso e circunferência abdominal ajudam seguimento. **Restrição hídrica não é necessária para todo cirrótico com ascite**: costuma ficar reservada a hiponatremia dilucional importante/selecionada, de acordo com gravidade e protocolo. Corrigir álcool e medicamento hepatotóxico/nefrótoxico quando possível; evitar AINEs e discutir riscos de IECA/BRA na ascite descompensada.
+
+### 9.2 Espironolactona e furosemida
+
+O hiperaldosteronismo secundário torna a **espironolactona** opção central. Em paciente com ascite recorrente/moderada, uma razão comumente usada é **100 mg de espironolactona + 40 mg de furosemida ao dia**, ajustando lentamente por peso, sintomas, PA, potássio, sódio e creatinina. Em primeiro episódio menos expressivo, espironolactona isolada pode bastar. Doses elevadas como 400 mg/160 mg existem em definições clássicas de refratariedade, mas **não são alvo obrigatório**; intolerância, hipotensão, lesão renal e eletrólitos podem limitar antes.
+
+Meta de perda ponderal em muitas rotinas: aproximadamente **até 0,5 kg/dia sem edema periférico importante** e até cerca de **1 kg/dia com edema significativo**, individualizando. Perda rápida demais pode precipitar disfunção renal, encefalopatia e hiponatremia. Verificar hipercalemia por espironolactona e hipocalemia pela furosemida; ambas podem precipitar complicações. Não continuar diuréticos em choque, LRA ativa ou hiponatremia grave sem reavaliar.
+
+### 9.3 Paracentese de grande volume e albumina
+
+Na **ascite tensa/sintomática**, paracentese terapêutica é eficaz para aliviar dispneia, plenitude e dor. Quando volume retirado **>5 L**, costuma-se usar **albumina intravenosa 6–8 g por litro removido** (muitas diretrizes adotam **8 g/L**) para reduzir disfunção circulatória pós-paracentese, conforme risco e protocolo. Exemplo: 6 litros drenados × 8 g/L = **48 g de albumina**. Para volume menor, albumina não é universal, mas pode ser considerada em pacientes de alto risco (ACLF/risco renal), conforme diretriz.
+
+Não confundir essa indicação **por volume drenado** com doses de albumina da PBE (por peso em dias específicos), nem com reposição por suposta HRS. Em cirrótico com edema pulmonar, qualquer expansão coloide precisa ser monitorizada e pode demandar ajuste.
+
+### 9.4 Ascite refratária
+
+Ascite **refratária** persiste/recorre precocemente apesar de restrição de sódio e diuréticos em doses máximas toleradas, ou não permite titulação pela ocorrência de efeitos adversos. Conferir adesão, ingesta de sódio, uso de AINE, função renal e diagnóstico correto. O manejo inclui paracenteses de alívio repetidas com albumina indicada, avaliação de **TIPS** em candidatos selecionados, suporte nutricional, cuidados paliativos quando pertinentes e **referenciamento para transplante**. TIPS pode melhorar ascite ao reduzir pressão portal, mas pode piorar encefalopatia e falhar em disfunção cardíaca ou doença hepática muito avançada.
+
+**Pulo do Gato:** ascite recorrente por si é motivo para avaliar trajetória e elegibilidade transplantadora — não esperar Child C/CHC em todos.
+
