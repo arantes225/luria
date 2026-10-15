@@ -559,6 +559,44 @@ No esquema AIR/MART de 6–11 anos descrito pela GINA 2026, a **necessidade de m
 **Fonte de referência primária:** GINA, *Summary Guide for Asthma Management and Prevention 2026*, seções de crianças 6–11 anos, plano escrito, crise e tabela 7 de AIR/MART (páginas impressas 28–30 e 45). https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . Esta explicação e as tabelas de decisão são autorais. O material GINA é protegido por direitos autorais e seus gráficos não podem ser distribuídos na LURIA sem autorização.
 
 
+
+### 8.9 Sibilância no pré-escolar: bronquiolite, sibilância episódica e suspeita de asma
+
+**Por que este capítulo existe?** A GINA 2026, no guia resumido aqui consultado, apresenta as recomendações detalhadas para crianças **de 6 a 11 anos**, não para lactentes e pré-escolares. Um bebê com primeiro episódio de sibilância durante infecção viral não deve receber automaticamente diagnóstico de asma nem o regime AIR/MART de um escolar. Para o grupo menor de cinco anos, a referência complementar utilizada aqui é a diretriz **BTS/NICE/SIGN 2024 (NG245)** e, para bronquiolite típica, a diretriz da **American Academy of Pediatrics (AAP)**. Trata-se de referências distintas, com contextos próprios: o serviço brasileiro deve conferir orientações da Sociedade Brasileira de Pediatria e protocolos assistenciais locais.
+
+#### 8.9.1 Três histórias que parecem iguais na triagem, mas exigem raciocínios diferentes
+
+**Primeiro episódio em lactente:** bebê de sete meses apresenta coriza, dificuldade de alimentação e sibilos após três dias de resfriado, com estertores esparsos. O diagnóstico sindrômico de **bronquiolite viral aguda** pode ser mais plausível que asma. O mecanismo envolve inflamação/edema e secreções em bronquíolos de pequeno calibre; a fisiologia e a resposta a fármacos **não** são as da broncoconstrição asmática clássica. Avaliar saturação, esforço, pausas respiratórias, hidratação e risco por prematuridade/cardiopatia; suporte respiratório e nutricional importam mais que prescrever “bombinha crônica”.
+
+**Episódios repetidos após resfriados:** criança de dois anos e meio teve quatro episódios de chiado, com boa atividade entre infecções. Isso pode representar sibilância viral episódica, asma em desenvolvimento ou outra doença; o número de episódios, isoladamente, não confirma mecanismo alérgico. Pesquisar eczema/rinite, história familiar, frequência de hospitalizações, sintomas fora das infecções, exposição a fumaça e achados de alerta. O objetivo é estimar risco e evitar tanto subtratamento de crianças com crise grave quanto uso prolongado de CI sem reavaliação.
+
+**Sintomas também entre viroses:** pré-escolar de quatro anos tem tosse noturna recorrente, limitação ao brincar, despertares fora de resfriados e história pessoal de dermatite atópica. Aqui a probabilidade clínica de asma é maior; mesmo sem espirometria confiável, pode ser adequado **ensaio terapêutico supervisionado** com controlador, com metas e revisão programada. Resposta favorável aumenta a plausibilidade, mas não é prova absolutamente específica; melhora espontânea, maturação e redução de exposições também ocorrem.
+
+| Dimensão | Bronquiolite viral típica do lactente | Sibilância recorrente do pré-escolar | Asma provável em pré-escolar |
+| --- | --- | --- | --- |
+| História temporal | Primeiro episódio ou doença aguda vinculada a vírus | Vários episódios, muitas vezes com intervalos sem sintomas | Recorrência com sintomas intercrises, noturnos ou por exercício |
+| Exame | Taquipneia, secreção, estertores/sibilos difusos; avaliar hidratação | Pode ser normal entre episódios | Pode ser normal fora de exacerbações; sinais atópicos auxiliam |
+| Tratamento inicial | Suporte e avaliação de gravidade; broncodilatador e corticoide sistêmico **não são rotina** na bronquiolite típica segundo AAP | Depende da gravidade, padrão e risco; não copiar “passos” de escolar | Considerar tratamento contendo CI em apresentação e dose pediátricas apropriadas, com revisão |
+| O que confirma? | Síndrome clínica, quando típica; exames apenas se indicação | Histórico longitudinal e exclusão de outras causas | Evolução clínica, resposta e avaliação especializada/testes quando factíveis |
+| Erro clássico | Dar prednisolona/salbutamol rotineiramente porque há chiado | Chamar todo chiado de asma definitiva | Manter tratamento indefinido sem reavaliar diagnóstico/necessidade |
+
+#### 8.9.2 Ensaio de controlador: como ensinar sem diagnosticar por decreto
+
+A diretriz **BTS/NICE/SIGN 2024** considera um teste de **oito a doze semanas** com **CI pediátrico em dose baixa, duas vezes ao dia**, e **SABA de alívio**, em menores de cinco anos com suspeita de asma quando há sintomas entre episódios que indiquem controlador ou crises agudas graves (por exemplo, necessidade de internação ou cursos repetidos de corticoide oral). **A dose exata, a molécula, a formulação e o dispositivo precisam ser escolhidos e conferidos para a idade**: esse protocolo não é autorização para usar budesonida-formoterol escolar em um bebê.
+
+Antes do teste, registrar linha de base: dias com tosse ou chiado, despertares, limitações, crises tratadas na emergência, exposições, forma de administração e crescimento. Explicar ao cuidador o que será medido e marcar retorno. Se não houver melhora, checar técnica, adesão, mofo/tabaco/biomassa e hipóteses alternativas **antes** de aumentar doses. A recomendação britânica prevê considerar suspensão supervisionada do controlador quando os sintomas desaparecerem após o ensaio, com reavaliação futura e plano para recorrência; ela **não** autoriza suspender abruptamente medicamento no meio de quadro instável nem ignora crises de alto risco.
+
+Em quem permanece sintomático apesar de terapia pediátrica adequada, é preciso revisar infecção persistente, aspiração/disfagia, corpo estranho, cardiopatia, displasia broncopulmonar, fibrose cística, discinesia ciliar, malformação de via aérea e imunodeficiência segundo apresentação. **Internação por sibilância ou dois ou mais atendimentos em urgência no ano** são motivos de avaliação especializada no referencial BTS/NICE/SIGN, sobretudo quando o diagnóstico está incerto.
+
+#### 8.9.3 Sinais que não combinam com “mais um episódio de asma”
+
+Sibilo **unilateral e persistente** após engasgo obriga pensar em corpo estranho; **estridor** persistente aponta para via aérea alta, não broncoespasmo; dificuldade de ganhar peso com fezes volumosas e pneumonias de repetição pode motivar investigação de fibrose cística; tosse/engasgos às refeições podem sugerir aspiração; infecções em vários órgãos e falha de crescimento exigem pensar em imunodeficiência. Prematuridade e necessidade prolongada de oxigênio neonatal podem indicar doença pulmonar crônica. Hipoxemia, apneia, exaustão, alteração de consciência ou dificuldade de alimentar-se são sinais de avaliação urgente, qualquer que seja o diagnóstico final.
+
+**Atenção às diferenças de fonte:** AAP recomenda **não usar salbutamol ou corticosteroides sistêmicos rotineiramente para bronquiolite típica**; BTS/NICE/SIGN admite controlador com CI em **suspeita de asma recorrente** selecionada. Esses enunciados **não se contradizem**: tratam de populações e doenças diferentes. Confundi-los gera prescrição inadequada e distorce questões de residência.
+
+**Fontes primárias da seção:** BTS/NICE/SIGN. *Asthma: diagnosis, monitoring and chronic asthma management* (NG245, 2024), recomendações 1.3 e 1.9: https://www.nice.org.uk/guidance/ng245/chapter/recommendations ; AAP. *Clinical Practice Guideline: Diagnosis, Management, and Prevention of Bronchiolitis*, https://publications.aap.org/pediatrics/article/134/5/e1474/75848/ ; GINA. *Summary Guide 2026*, escopo de 6–11 anos, https://ginasthma.org/2026-gina-summary-guide/ . A diretriz AAP citada é anterior a 2026 e não foi apresentada como revisão nova.
+
+
 ## 9. Casos clínicos comentados
 
 ### Caso 1 — Espirometria normal entre episódios
@@ -633,6 +671,16 @@ Menino de sete anos recebe diagnóstico de asma com sintomas pouco frequentes, s
 Menino de oito anos com asma previamente confirmada tem boa evolução em casa, porém relata tosse e dispneia durante aulas de educação física. A escola não dispõe do plano escrito; o inalador fica na mochila, mas nenhum adulto sabe verificar dispositivo, dose ou técnica. O professor começa a dispensá-lo de toda atividade.
 
 **Hipóteses:** broncoconstrição relacionada a exercício, controle parcial, técnica inadequada, obstrução laríngea induzível e descondicionamento como causas coexistentes ou alternativas. **Raciocínio:** retirar a criança de exercícios sem avaliação pode perpetuar limitação e estigma; a frequência de sintomas na escola demonstra lacuna de manejo e comunicação. **Exames:** história de tempo/ruído/recuperação, espirometria e testes dirigidos quando indicado, demonstração de dispositivo e revisão da prescrição por faixa etária. **Conduta:** construir plano escolar com responsáveis, equipe e aluno, assegurar acesso supervisionado ao alívio adequado e reforçar terapia contendo CI; tratar rinite/exposição quando relevante e reavaliar sintomas. **Por que este caso importa:** o sucesso depende do ambiente onde a criança vive, não só da receita.
+
+
+
+### Caso 18 — Primeiro chiado aos sete meses não é sinônimo de asma
+
+Bebê de sete meses, previamente saudável, tem três dias de rinorreia, tosse e dificuldade para mamar; evolui com sibilância difusa, estertores finos e retrações discretas. Nunca apresentou chiado antes. Saturação 94% em ar ambiente, perfusão mantida e sem apneia. **Hipótese prioritária:** bronquiolite viral aguda. **Raciocínio:** primeiro episódio com pródromo viral e idade típica favorecem acometimento bronquiolar. **Exames:** julgamento clínico, oximetria e hidratação; radiografia e exames laboratoriais não são obrigatórios na bronquiolite não complicada. **Conduta:** avaliar gravidade, suporte hídrico/alimentar, orientações para respiração e sinais de retorno; broncodilatador e corticosteroide sistêmico **não são rotina** para bronquiolite típica segundo AAP. **Por que este caso importa:** impedir que a palavra “sibilância” desencadeie automaticamente a prescrição de esquema asmático escolar.
+
+### Caso 19 — Pré-escolar com chiado recorrente e sintomas entre infecções
+
+Menina de quatro anos, com dermatite atópica e mãe asmática, apresentou três crises com necessidade de atendimento em seis meses e continua tossindo à noite e limitando brincadeiras mesmo sem febre/coriza. Não há engasgos, alteração de crescimento ou infecção focal recorrente. **Hipótese:** asma provável na pré-escola, a diferenciar de outras causas de chiado recorrente. **Raciocínio:** sintomas intercrises, atopia e eventos importantes aumentam probabilidade clínica; ausência de espirometria válida não obriga omissão de cuidado. **Exames:** linha de base clínica, técnica de dispositivo, padrão de exposição, reavaliação longitudinal; solicitar exames adicionais por sinais atípicos. **Conduta:** considerar ensaio estruturado de CI pediátrico por 8–12 semanas, em dose/formulação apropriadas e com SABA de alívio conforme referencial e decisão clínica; medir resposta, efeitos e capacidade de adesão, depois reavaliar necessidade e diagnóstico. **Por que este caso importa:** trata risco real sem confundir asma provável com diagnóstico irreversível ou copiar AIR/MART de 6–11 anos.
 
 
 ## 10. Questões autorais comentadas
@@ -842,6 +890,36 @@ C) Utilizar automaticamente limite de doze inalações próprio de outras faixas
 D) Substituir CI-formoterol por CI-salmeterol como medicação de alívio, mantendo a mesma contagem.
 
 **Gabarito: B.** A tabela 7 da GINA 2026 distingue formulações e faixas etárias, considerando o total diário e a procura precoce de atendimento se houver deterioração. **A:** subconta a exposição diária. **C:** transfere referência de adolescentes/adultos para escolar. **D:** salmeterol não é o componente utilizado em AIR/MART como alívio. **Mini-revisão:** nome do fármaco, concentração entregue, idade, dispositivo e plano escrito devem ser conferidos juntos.
+
+
+
+### Questão 23 — Primeiro episódio de sibilância em lactente
+
+Lactente de oito meses, previamente hígido, apresenta coriza, chiado difuso e dificuldade discreta de alimentação após virose. Qual orientação é mais coerente com a diretriz AAP para bronquiolite típica?
+
+A) Todo primeiro chiado confirma asma e exige MART com formoterol.
+
+B) Priorizar avaliação de gravidade e suporte; salbutamol e corticosteroides sistêmicos não são tratamentos rotineiros de bronquiolite típica.
+
+C) Solicitar tomografia obrigatória para confirmar todos os casos.
+
+D) Prescrever antibiótico para todo lactente com sibilância.
+
+**Gabarito: B.** Bronquiolite é síndrome clínica do lactente e o cuidado se concentra em respiração, hidratação e sinais de gravidade. **A:** transfere diagnóstico e esquema de idade diferente. **C:** exames de imagem não são rotina sem indicação. **D:** antibióticos dependem de infecção bacteriana associada demonstrada ou plausível, não de sibilância isolada. **Mini-revisão:** a mesma ausculta pode ocorrer por mecanismos diferentes em lactentes e escolares.
+
+### Questão 24 — Ensaio terapêutico na suspeita de asma antes dos cinco anos
+
+Pré-escolar de quatro anos tem sintomas entre viroses, eczema e episódios graves recorrentes de sibilância. Segundo BTS/NICE/SIGN 2024, qual estratégia pode ser considerada?
+
+A) Dar apenas inalador de CI-formoterol em dose adulta quando houver sintomas.
+
+B) Considerar ensaio supervisionado por 8–12 semanas de CI pediátrico de baixa dose como manutenção e SABA de alívio, com registro de resposta e revisão.
+
+C) Não reavaliar diagnóstico se o tratamento for iniciado.
+
+D) Interpretar melhora após tratamento como confirmação absoluta e irreversível de asma.
+
+**Gabarito: B.** O ensaio é opção na suspeita selecionada de asma, com escolha de medicamento adequada à idade, educação e seguimento. **A:** copia dispositivo/dose de idade diferente. **C:** elimina a avaliação da técnica, exposições e alternativas. **D:** resposta é informação clínica, não teste etiológico perfeito. **Mini-revisão:** suspeita, teste programado, revisão e decisão compartilhada formam processo; a GINA resumida 2026 de 6–11 anos não se aplica diretamente aos menores de cinco.
 
 
 ## Referências essenciais
