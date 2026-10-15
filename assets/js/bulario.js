@@ -149,6 +149,8 @@
   // Unverified draft fields must never be transformed into a copyable prescription.
   function approvedFormulations(data){
     const d=data||{},all=Array.isArray(d.formulations)?d.formulations:[];
+    // Explicit clinical hold for non-interchangeable dosage forms (e.g. IV vs nasal).
+    if(d.quality_audit?.prescription_copy_blocked===true)return [];
     // Do not offer an ambiguous selector with dozens of clinically distinct
     // dose plans sharing the same label; such rows need editorial review first.
     const labels=new Set(all.map(f=>normalized(f?.label||'')));
