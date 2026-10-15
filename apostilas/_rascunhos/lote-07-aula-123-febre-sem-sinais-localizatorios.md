@@ -508,3 +508,135 @@ FSSL **aguda** não equivale a febre de origem indeterminada prolongada. A segun
 | Reavaliação/culturas? | Hospitalar | Obrigação organizada conforme plano | Safety-net e retorno conforme quadro |
 
 **O quadro é didático e limitado ao cenário declarado.** Em criança de qualquer idade com choque, sinais neurológicos ou suspeita de sepse, o manejo emergencial substitui caminhos de baixo risco.
+
+
+## 25. Casos clínicos de aprofundamento — o que muda entre dois pacientes febris?
+
+### Caso 5 — bronquiolite não significa que nunca há ITU
+**Apresentação:** lactente de 38 dias, a termo, sem comorbidades, febre medida 38,4 °C em casa, coriza e sibilos com retração leve, quadro clínico compatível com bronquiolite. Está ativo, mas mama menos. Teste nasal detectou VSR.  
+**Hipóteses:** bronquiolite viral com febre; ITU concomitante no diferencial; risco clínico segundo hidratação/respiração e idade.  
+**Raciocínio:** o algoritmo AAP de FSSL bem-aparentados **não inclui bronquiolite clínica**, portanto aplicar suas tabelas literalmente extrapolaria população. Entretanto **VSR positivo não exclui ITU**, e a combinação de baixa idade/febre pode justificar exame de urina conforme serviço.  
+**Exames:** avaliar saturação, frequência/ esforço respiratório, hidratação e urinálise/urocultura quando indicada. Hemocultura/LCR dependem de avaliação de risco fora do algoritmo AAP e decisão pediátrica.  
+**Conduta:** suporte respiratório/hidratação conforme gravidade, sem antibiótico por teste viral positivo ou só por sibilância; investigar e tratar infecção bacteriana se evidência apontar; retorno claro.  
+**Por que este caso importa:** melhora capacidade de usar algoritmo **sem extrapolar elegibilidade** e evita falso dilema "VSR exclui tudo".
+
+### Caso 6 — urocultura de saco não confirma pielonefrite
+**Apresentação:** menina de 10 meses, febre 39,0 °C há 36 horas sem foco ao exame. Foi coletada urina em saco; cultura mostra crescimento misto de vários agentes, urinálise com algumas células epiteliais e leucócitos. Está hidratada, mas irritada entre febres.  
+**Hipóteses:** ITU febril versus contaminação de amostra; outras causas febris sem foco.  
+**Raciocínio:** cultura de saco com flora mista é forte indício de contaminação; uma criança com ITU pode não relatar sintomas urinários. Não concluir "pielonefrite comprovada" apenas por cultura de saco, e também não descartar ITU porque exame abdominal é normal.  
+**Exames:** obter nova amostra adequada conforme idade/protocolo, com urinálise e cultura; avaliar outros sinais conforme gravidade.  
+**Conduta:** se criança permanece estável, priorizar amostra apropriada antes da primeira dose quando viável; se risco de sepse/instabilidade, não atrasar antibiótico por dificuldade de coleta. Avaliar esquema/seguimento conforme resultado.  
+**Por que este caso importa:** ensina que qualidade pré-analítica define confiabilidade do teste.
+
+### Caso 7 — dengue quando a febre desaparece
+**Apresentação:** criança de oito anos na região com transmissão de dengue, febre alta há quatro dias, agora afebril há algumas horas. Apresenta dor abdominal contínua, vômitos repetidos, letargia e extremidades frias. Família considera que a febre baixa foi "sinal de cura".  
+**Hipóteses:** dengue em fase crítica com sinais de alarme e possível choque; outras causas de abdome agudo/sepse.  
+**Raciocínio:** diminuição da febre durante a fase de defervescência pode coincidir com extravasamento capilar e piora hemodinâmica. A avaliação deve considerar perfusão, estado mental, pressão/pressão de pulso, diurese e hematócrito/plaquetas, não somente temperatura atual.  
+**Exames:** clínicos e laboratoriais indicados pelo manual MS de dengue em vigor, incluindo hemograma seriado/hematócrito, conforme classificação de risco; avaliar outros focos se sinais sugerirem.  
+**Conduta:** atendimento urgente, hidratação e monitorização apropriadas à gravidade e comorbidades, evitar AAS/AINEs, encaminhamento à unidade capaz de reavaliar choque; não aguardar NS1 para tratar gravidade.  
+**Por que este caso importa:** corrige o erro "defervesceu, então melhorou".
+
+### Caso 8 — Kawasaki incompleta no lactente
+**Apresentação:** bebê de cinco meses, febre há seis dias, irritabilidade persistente, hiperemia conjuntival não purulenta e edema discreto de pés; sem exantema florido ou adenopatia cervical. Recebeu diagnóstico repetido de "virose", sem exames adicionais.  
+**Hipóteses:** doença de Kawasaki incompleta, outras infecções/inflamações e doença sistêmica.  
+**Raciocínio:** apresentações incompletas, inclusive em menores de seis meses, podem ter inflamação coronariana sem todos os critérios clássicos. Persistência de febre e sinais associados requer mudança do plano.  
+**Exames:** marcadores inflamatórios, hemograma/plaquetas, urinálise/enzimas conforme avaliação; ecocardiograma e cardiologia/pediatria para investigação.  
+**Conduta:** encaminhamento para avaliação urgente conforme estabilidade; tratamento especializado após confirmação/alta suspeita, sem exigir "cinco critérios de Kawasaki" para considerar doença.  
+**Por que este caso importa:** torna a reavaliação de febre prolongada uma habilidade, não repetição de rótulo.
+
+### Caso 9 — retorno inseguro altera decisão
+**Apresentação:** lactente de 55 dias, a termo, sem sintomas locais, temperatura 38,2 °C; está ativo, urinálise normal, marcadores baixos e hemocultura colhida conforme AAP. Família mora longe, sem celular ativo, transporte irregular e sem possibilidade de retornar em 24 horas.  
+**Hipóteses:** FSSL com risco laboratorial aparentemente baixo, mas **seguimento ambulatorial inseguro**.  
+**Raciocínio:** a decisão de alta em caminhos de baixo risco exige família capaz de observar, serviço de referência acessível e revisão de culturas. Não existe alta segura baseada apenas em PCT/PCR normais quando a rede não consegue garantir reavaliação.  
+**Exames:** avaliação etária já iniciada; necessidade de LCR/medicação depende de dados e protocolo institucional.  
+**Conduta:** discutir observação hospitalar/internação conforme equipe e condições sociais; registrar contato alternativo e plano de busca de resultados.  
+**Por que este caso importa:** risco assistencial é combinação de biologia e sistema de cuidado.
+
+### Caso 10 — febre alta e rigores não são sinônimo de antibiótico
+**Apresentação:** criança de 36 meses imunizada, febre 40 °C iniciada há seis horas, calafrios intensos durante subida da temperatura. No exame, após conforto e hidratação, brinca, responde, está bem perfundida, ausculta/otorrino/pele/abdome sem foco e diurese habitual. Sem sinais de alarme.  
+**Hipóteses:** infecção viral inicial, bacteriana oculta a depender evolução/risco, mas sem evidência atual de doença invasiva.  
+**Raciocínio:** altura da febre e rigores isolados não provam bacteremia. A avaliação é dinâmica, com sinais vitais por idade, reexame e risco epidemiológico.  
+**Exames:** individualizar urina conforme risco/história e exames adicionais se surgirem sinais; hemocultura e antibiótico empírico não são universais.  
+**Conduta:** orientar hidratação, antitérmico para desconforto por dose adequada à idade/peso e sem AINE se suspeita de dengue, registrar reavaliação/sinais de retorno; sem antibiótico "preventivo" automático.  
+**Por que este caso importa:** prevenção quaternária sem negligenciar gravidade.
+
+## 26. Oito questões inéditas — todas as alternativas comentadas
+
+### Questão 7 — marcador normal e idade neonatal
+RN a termo de 12 dias, febre documentada 38,1 °C em casa, bem-aparentado, PCR sérica de 6 mg/L. Qual conduta é a mais coerente com AAP 2021 para elegíveis?
+A. Alta definitiva porque PCR normal. B. Apenas paracetamol e retorno em cinco dias. C. Avaliação com urina, hemocultura, LCR, antimicrobiano parenteral e monitorização hospitalar. D. Apenas painel viral nasal.
+**Gabarito C.** A idade 8–21 dias define avaliação ampla mesmo com marcador tranquilizador. **A/B:** biomarcador isolado não exclui invasão. **D:** teste viral não substitui investigação. **Mini-revisão:** lactente jovem é risco etário, não fotografia da aparência.
+
+### Questão 8 — a quem AAP não se aplica literalmente?
+Qual cenário **não** pertence à população-alvo usual da diretriz AAP 8–60 dias de FSSL?
+A. Lactente a termo de 20 dias, bem-aparentado, febre 38,1 °C, previamente saudável. B. Lactente de 42 dias, febril, com **bronquiolite clínica**. C. Lactente a termo de 35 dias sem foco e aparência boa. D. Lactente a termo de 50 dias sem foco e sem doença de base.
+**Gabarito B.** Bronquiolite clínica figura entre exclusões do caminho específico. **A/C/D:** compatíveis com elegibilidade geral, sujeitas a checar todos os critérios. **Mini-revisão:** fora do algoritmo não significa ausência de doença.
+
+### Questão 9 — cultura de urina inadequada
+Bebê febril de oito meses tem "urocultura positiva" de **saco coletor** com flora mista. Melhor interpretação:
+A. Confirma pielonefrite de maneira definitiva. B. Exclui doença do trato urinário. C. Impõe antibioticoterapia IV por 21 dias em todas. D. Contaminação é possível e resultado precisa de amostra adequada para confirmação conforme quadro.
+**Gabarito D.** Cultura de saco tem alto risco de contaminação. **A:** força um diagnóstico falso. **B:** não descarta ITU. **C:** tratamento irracional por método inadequado. **Mini-revisão:** coleta faz parte da qualidade diagnóstica.
+
+### Questão 10 — teste de influenza positivo
+Criança de 25 dias, febre documentada, teste nasal de influenza positivo, sem sinais de gravidade e previamente saudável. Qual afirmação?
+A. Infecção viral identificada não elimina por si só a necessidade de avaliação etária de doença bacteriana invasiva. B. Qualquer PCR positivo afasta ITU. C. Não colher cultura nunca. D. A idade não interfere mais.
+**Gabarito A.** Coinfecção e risco residual persistem. **B/C/D:** ignoram diretriz etária e doenças concorrentes. **Mini-revisão:** virologia modifica probabilidade, não zera risco.
+
+### Questão 11 — defervescência perigosa
+Criança de nove anos com suspeita de dengue deixa de ter febre, mas passa a apresentar dor abdominal contínua e extremidades frias. Próxima etapa:
+A. Alta obrigatória porque não há febre. B. Ibuprofeno para prevenir sangramento. C. Avaliar sinais de alarme/choque e manejar gravidade conforme protocolo de dengue. D. Somente marcar retorno em um mês.
+**Gabarito C.** Defervescência pode coincidir com fase crítica; **A/D** são atrasos perigosos; **B** usa AINE inadequado. **Mini-revisão:** melhora da temperatura ≠ melhora hemodinâmica.
+
+### Questão 12 — Kawasaki incompleta
+Lactente de quatro meses, febre há seis dias, conjuntivite bilateral não exsudativa e alterações de extremidades, sem cinco critérios clássicos. Qual alternativa?
+A. Kawasaki impossível. B. Considerar Kawasaki incompleta e investigar com avaliação cardiológica/eco conforme risco. C. Toda febre prolongada é meningite bacteriana. D. Antibiótico oral único trata arterite coronária.
+**Gabarito B.** Critérios clássicos ausentes não afastam forma incompleta. **A:** risco de atraso. **C:** etiologias distintas. **D:** tratamento inapropriado. **Mini-revisão:** persistência febril exige mudar o diferencial.
+
+### Questão 13 — NICE e AAP
+Criança de quatro meses, febre 39,3 °C, sem foco, aparentemente estável. Qual princípio correto?
+A. Aplicar AAP 8–60 dias literalmente. B. Considerar automaticamente ausência de risco porque tem mais de dois meses. C. Fazer LCR em todas independentemente de exame. D. Utilizar avaliação clínica e faixa etária apropriadas (como NICE NG143); ≥39 °C de 3–6 meses é marcador pelo menos intermediário.
+**Gabarito D.** AAP não cobre esta idade. **A/B/C:** ignoram critérios e individualização. **Mini-revisão:** diretrizes têm denominadores e idades.
+
+### Questão 14 — decisão de alta no pequeno lactente
+Bebê de 52 dias, bem-aparentado, exames tranquilizadores, mas família não tem acesso seguro a retorno nem telefone. Melhor abordagem:
+A. Considerar observação/internação pela impossibilidade de seguimento confiável, além de avaliar critérios clínico-laboratoriais. B. Alta obrigatória se PCT <0,5. C. Alta por promessa de retorno sem discutir logística. D. Descartar risco porque mamou no consultório.
+**Gabarito A.** Segurança ambulatorial pressupõe rede e revisão de culturas. **B/C/D:** ignoram risco de perda de seguimento. **Mini-revisão:** critério de baixo risco é clínico + laboratorial + assistencial.
+
+## 27. Matriz de cobertura: texto que sustenta conduta e questão
+
+| Competência para a residência | Onde foi explicada | Casos | Questões |
+|---|---|---|---|
+| Separar febre, hipertermia e FSSL | 1, 18.1–18.2 | 10 | 6, 13 |
+| Identificar gravidade em qualquer idade | 3, 19 | 4, 7 | 4, 11 |
+| Respeitar elegibilidade AAP 8–60 dias | 4, 20 | 1, 5, 9 | 1, 7, 8 |
+| Manejar febre no RN ≤7 dias | 4, 20.2 | diferencial neonatal | discussão |
+| Urinálise/urocultura de qualidade | 7.1, 21.1–21.2 | 2, 6 | 2, 9 |
+| Combinar marcadores sem misturar cortes | 7.2, 21.3 | 9 | 3, 14 |
+| Entender indicação/risco de PL | 7.3, 21.5–21.6 | 1 e 5 | 1, 7 |
+| Saber o que teste viral positivo faz | 7.5, 21.7 | 5 | 8, 10 |
+| Lembrar dengue durante defervescência | 9, 23.1 | 7 | 6, 11 |
+| Suspeitar Kawasaki incompleta | 10, 23.2 | 8 | 12 |
+| Selecionar antibiótico somente quando indicado | 8, 22.1 | 1, 2, 10 | 5 |
+| Alta/seguimento seguro | 11, 22.4–22.5 | 3, 9, 10 | 14 |
+
+**Teste de autossuficiência parcial:** as questões novas podem ser justificadas pelo texto clínico e pelas matrizes, mas situações de choque real, doses e infusão de antibióticos/antitérmicos e protocolos brasileiros de febre neonatal exigem referências terapêuticas nacionais específicas, validação por pediatra e aprovação do serviço; não declarar aptidão ao uso como guia de prescrição à beira do leito.
+
+## 28. Fontes primárias usadas para esta ampliação
+7. Pantell RH et al. AAP. **Clinical Practice Guideline: Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old.** *Pediatrics*. 2021;148(2):e2021052228. https://publications.aap.org/pediatrics/article/148/2/e2021052228/179783/Clinical-Practice-Guideline-Evaluation-and
+8. NICE NG143. **Fever in under 5s: assessment and initial management.** 2019, última atualização 26/11/2021. https://www.nice.org.uk/guidance/NG143/chapter/recommendations
+9. Ministério da Saúde. **Dengue: diagnóstico e manejo clínico: adulto e criança**, publicação revisada disponibilizada em 10/07/2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca/view
+10. Ministério da Saúde. **Dengue — publicações e fluxos oficiais** (revisão 10/07/2026). https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/dengue/dengue
+11. Sociedade Brasileira de Pediatria. **Manejo da febre aguda** (2021) — fonte brasileira previamente registrada na seção 16; recomendações específicas exigem confronto integral da versão oficial antes de dosagens.
+12. Ministério da Saúde. **Atenção Integrada às Doenças Prevalentes na Infância (AIDPI)** — complemento brasileiro da triagem pediátrica; não substituir diretrizes específicas de lactentes febris.
+
+## 29. Auditoria editorial desta rodada — ainda não é certificação
+- [x] Fontes do Drive efetivamente abertas e lidas, com **não equivalência** documentada.
+- [x] AAP e NICE diferenciadas por idade e população, com critérios e biomarcadores de apoio.
+- [x] Julgamento clínico, urina, hemocultura, LCR, testes virais, dengue brasileira e febre prolongada.
+- [x] Seis novos casos completos e oito novas questões com comentário por alternativa.
+- [x] Matriz de ligação entre conteúdo e avaliação.
+- [ ] **Validar tabela terapêutica nacional pediátrica** de antibióticos/antitérmicos conforme idade, peso, função renal, via, apresentação, máximos e contraindicações.
+- [ ] Obter benchmark específico e aprofundado de FSSL ou assumir explicitamente referência comparativa parcial no parecer final.
+- [ ] Selecionar pelo menos dez candidatos de imagens relevantes (algoritmos/urina/perfusão/caso clínico) com licença documentada, enviar ao **Admin**, obter aprovação e otimização WebP.
+- [ ] Revisão científica por pediatria/neonatologia, análise de redundância, teste de suficiência com questões inéditas externas e renderização responsiva desktop/PWA antes da publicação.
+**ESTADO: RASCUNHO AMPLIADO; NÃO PUBLICADO, NÃO CERTIFICADO.**
