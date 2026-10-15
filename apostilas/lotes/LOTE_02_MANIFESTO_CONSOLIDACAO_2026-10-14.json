@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 9,
+  "version": 10,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "RASCUNHO — complementação pediátrica GINA 2026 e TB 2024; nenhum livro certificado ou publicado",
+  "status": "PRE-PUBLICAÇÃO — cinco manuscritos em revisão, sem certificação médica",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -22,10 +22,10 @@
       "source_path": "apostilas/lotes/LOTE_02_ASMA_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_ASMA_EDICAO_CONTINUA.md",
       "source_sha": "b6266e7c0d6a8b4bd21a152c9ec61bad6a36c010",
-      "consolidated_sha": "82630b01fb4642ed1d5b78e6db1368c7933411b1",
+      "consolidated_sha": "f5fddd6377a85092f69ed9715129b2c14b322499",
       "source_raw_characters": 74961,
-      "consolidated_raw_characters": 111835,
-      "consolidated_approximate_plain_characters": 107459,
+      "consolidated_raw_characters": 120655,
+      "consolidated_approximate_plain_characters": 115998,
       "chapter_count": 10,
       "chapters": [
         {
@@ -69,13 +69,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 16,
-      "question_count": 21,
+      "case_count": 17,
+      "question_count": 22,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão científica completa e avaliação de posologias por bula/protocolo local, curadoria imagens e Admin, preflight Node real, leitura desktop e PWA, publicação só após aprovação",
-      "json_visible_estimate": 107459,
-      "json_table_count": 12
+      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
+      "json_visible_estimate": 115998,
+      "json_table_count": 14
     },
     {
       "id": "DPOC",
@@ -132,7 +132,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "revisão científica completa e avaliação de posologias por bula/protocolo local, curadoria imagens e Admin, preflight Node real, leitura desktop e PWA, publicação só após aprovação",
+      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
       "json_visible_estimate": 106963,
       "json_table_count": 10
     },
@@ -195,7 +195,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão científica completa e avaliação de posologias por bula/protocolo local, curadoria imagens e Admin, preflight Node real, leitura desktop e PWA, publicação só após aprovação",
+      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
       "json_visible_estimate": 99415,
       "json_table_count": 13
     },
@@ -258,7 +258,7 @@
       "question_count": 23,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão científica completa e avaliação de posologias por bula/protocolo local, curadoria imagens e Admin, preflight Node real, leitura desktop e PWA, publicação só após aprovação",
+      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
       "json_visible_estimate": 91723,
       "json_table_count": 12
     },
@@ -270,10 +270,10 @@
       "source_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
       "source_sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
-      "consolidated_sha": "ff379b1022b271bbe3666fb9abef7e81ebcf5c1c",
+      "consolidated_sha": "ea913a76dc8d3915d8f1525acbfc485baf2c9723",
       "source_raw_characters": 97368,
-      "consolidated_raw_characters": 147888,
-      "consolidated_approximate_plain_characters": 141410,
+      "consolidated_raw_characters": 160669,
+      "consolidated_approximate_plain_characters": 153828,
       "chapter_count": 9,
       "chapters": [
         {
@@ -313,23 +313,23 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 18,
-      "question_count": 28,
+      "case_count": 19,
+      "question_count": 29,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "revisão científica completa e avaliação de posologias por bula/protocolo local, curadoria imagens e Admin, preflight Node real, leitura desktop e PWA, publicação só após aprovação",
-      "json_visible_estimate": 141410,
-      "json_table_count": 18
+      "next_gate": "Validação clínica independente de doses e grupos especiais, imagem/licença, dry-run real Node, renderizador e PWA; sem publicação",
+      "json_visible_estimate": 153828,
+      "json_table_count": 19
     }
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "9bfe30eb26efe767033a4d12fe1262e26559128b",
+  "input_json_sha": "c8849d93bc8f9210ba853a9c34c1b48876efcb7a",
   "last_update_scope": [
-    "GINA 2026: interpretação de doses de AIR/MART 6–11 anos (budesonida-formoterol 80/4,5 mcg entregue ou 100/6 nominal), limites totais diários, segurança/regulação; casos 15–16 e questões 20–21",
-    "TB pediátrica MS: comprimidos dispersíveis RHZ/RH 75/50/150 e 75/50 por peso 4–24 kg, limites e reavaliação peso, separação ILTB 3RH e doença ativa; casos 17–18 e questões 26–28",
-    "Fonte de TB: Nota Informativa 5/2024 e material de dose dispersível MS; arquivo privado Drive usado apenas como benchmark",
-    "Preservados rascunhos históricos e páginas públicas; input JSON editorial sincronizado"
+    "Etapa 15: Tuberculose na gestação/puerpério (2RHZE/4RH em elegíveis, B6 no manual, transmissibilidade, amamentação, RN exposto e elegibilidade TB-DR)",
+    "Etapa 15: Asma pediátrica — plano escolar, atividade física, dispositivos, idade 6–11 e limites de AIR/MART",
+    "Adicionados Caso 17 e Questão 22 à Asma; Caso 19 e Questão 29 à TB; cabeçalhos duplicados 8.2/7.4 renomeados",
+    "Paridade entre JSON e Markdown, numeração contínua de 1 a N, tags de tabela, referências e arrays de imagens vazios conferidos"
   ],
   "last_revision": "2026-10-15"
 }
