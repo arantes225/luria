@@ -1,0 +1,107 @@
+{
+  "status": "PAUTA_VISUAL_10_CANDIDATAS_NAO_PESQUISADAS_OU_APROVADAS",
+  "source_policy": "Priorizar sociedades, artigos abertos, Wikimedia Commons e imagem institucional. Verificar URL original, autor, licença, atribuição, qualidade, anatomia e contexto; não considerar nenhuma selecionada ou liberada nesta etapa.",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Ultrassonografia de cirrose com superfície hepática nodular",
+      "chapter": "Capítulo 5",
+      "caption_proposed": "Reconhecer contorno nodular e alterações de ecotextura sem tomar US isoladamente como prova",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 2,
+      "title": "Doppler mostrando colaterais porto-sistêmicas e fluxo portal",
+      "chapter": "Capítulo 6",
+      "caption_proposed": "Relacionar hemodinâmica ao conceito de hipertensão portal",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 3,
+      "title": "Elastografia hepática e interpretação de rigidez em kPa",
+      "chapter": "Capítulos 5–6",
+      "caption_proposed": "Mostrar corte de risco e limitações por congestão/obesidade",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 4,
+      "title": "Ultrassonografia demonstrando ascite livre e ponto seguro para paracentese",
+      "chapter": "Capítulos 8–9",
+      "caption_proposed": "Ensinar seleção de bolsa e proteção contra lesão vascular",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 5,
+      "title": "Esquema autoral GASA alto/baixo e proteínas totais altas/baixas",
+      "chapter": "Capítulos 8 e 20",
+      "caption_proposed": "Comparar cirrose, congestão e carcinomatose sem rótulo transudato universal",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 6,
+      "title": "Microfotografia ou ilustração de líquido ascítico com PMN",
+      "chapter": "Capítulo 10",
+      "caption_proposed": "Explicar contagem absoluta de neutrófilos e limiar 250 por microlitro",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 7,
+      "title": "EDA real com varizes esofágicas e ligadura elástica",
+      "chapter": "Capítulo 13",
+      "caption_proposed": "Identificar aspecto endoscópico e finalidade da ligadura",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 8,
+      "title": "Esquema autoral de HRS-AKI 2024 sem desafio sistemático de 48h",
+      "chapter": "Capítulo 11",
+      "caption_proposed": "Diferenciar LRA, ressuscitação dirigida, albumina/terlipressina e segurança",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 9,
+      "title": "Esquema anatômico TIPS entre veias porta e hepática",
+      "chapter": "Capítulos 13 e 18",
+      "caption_proposed": "Explicar descompressão portal e risco de encefalopatia",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    },
+    {
+      "id": 10,
+      "title": "Imagem de TC/RM hepática multifásica com CHC e realce arterial/washout",
+      "chapter": "Capítulo 16",
+      "caption_proposed": "Conectar vigilância por US com caracterização diagnóstica sem inventar LI-RADS",
+      "source": null,
+      "license": null,
+      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+    }
+  ],
+  "embeddedImages": 0
+}
