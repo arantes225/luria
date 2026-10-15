@@ -329,7 +329,147 @@ Esquemas de vacinas contra dengue de fabricantes diferentes não são intercambi
 A família que manteve consultas apenas na primeira infância pode esquecer HPV e dengue por imaginar que o “calendário infantil acaba aos quatro anos”. Na APS, revisar Caderneta da Criança, escola, condição de risco e transição para atenção ao adolescente. Oferecer oportunidade e explicar benefício sem estigmatizar ou associar vacinação contra HPV à suposta vida sexual da criança.
 
 
-## 12. Planejamento visual e referências
+
+## 22. Imunobiológicos especiais: como pensar a criança com alto risco
+
+### 22.1 Por que o mesmo calendário não basta para todos?
+
+Pacientes com imunodeficiências primárias, neoplasias, quimioterapia, transplantes, asplenia anatômica ou funcional, doença falciforme, uso de inibidores do complemento, infecção por HIV e outras condições podem ter **risco de doença invasiva e resposta vacinal diferentes**. Algumas vacinas são particularmente úteis e podem exigir reforços adicionais; outras, principalmente vivas, podem ser contraindicadas durante determinada fase de imunodepressão. O papel da **Rede de Imunobiológicos para Pessoas com Situações Especiais (RIE)** e dos **CRIEs** é orientar indicações, dispensação e esquemas complementares de acordo com protocolos específicos.
+
+O erro mais grave seria aplicar a mesma frase a todos: “imunodeprimido não toma nenhuma vacina” ou “todas as vacinas são permitidas se o paciente está bem”. As vacinas inativadas, em geral, **não apresentam risco de replicação do microrganismo vacinal**, mas podem produzir resposta reduzida; vacinas vivas necessitam análise do tipo/grau de imunossupressão, do medicamento e do momento. Contraindicação pode ser temporária e exigir revisão após recuperação imunológica.
+
+### 22.2 Diferenciar situações clínicas
+
+| Contexto | Perguntas importantes | Estratégia geral |
+|---|---|---|
+| Asplenia/doença falciforme | quais pneumocócicas e meningocócicas prévias? há indicação especial por sorogrupo? | esquema individual pela RIE/CRIE, sem aplicar automaticamente rotina simplificada |
+| Quimioterapia | qual agente, intensidade, fase de tratamento e expectativa de recuperação? | coordenação oncologia/imunização; avaliar vacinas vivas e resposta às inativadas |
+| Transplante de órgão sólido | pré ou pós-transplante? imunossupressão atual? | revisar carteira antes, depois seguir plano do centro e norma específica |
+| Transplante de células-tronco hematopoéticas | histórico pré-transplante pode não refletir imunidade residual | protocolos específicos de revacinação e tempo após transplante |
+| Imunodeficiência combinada grave | capacidade de controlar microrganismos vivos vacinais pode estar comprometida | contraindicações críticas, avaliação especializada prioritária |
+| HIV | imunidade/terapia e recomendações específicas | não generalizar todos os estados de imunidade; seguir norma por vacina |
+| Prematuridade | idade cronológica, peso ao nascer e condição neonatal | vacinar oportunamente com exceções específicas, não “corrigir” todo calendário |
+| Terapia imunobiológica | qual alvo, dose, tempo de uso e vacina considerada? | revisar efeito na segurança e resposta, com especialista |
+
+### 22.3 Proteção indireta dos contatos
+
+Vacinar conviventes de criança imunodeprimida pode reduzir chance de entrada domiciliar de agentes preveníveis. O contato imunocompetente **não deve ser automaticamente impedido de receber vacinas vivas** por morar com uma pessoa de risco, mas certas vacinas e ocorrências (por exemplo, exantema após varicela vacinal) exigem orientação específica. A equipe deve pensar na **rede de proteção**, não somente em carteiras individuais.
+
+### 22.4 Cuidado com doses “extra” sem indicação
+
+O novo produto VPC20 possui regras de rotina e de situações especiais que não se confundem. **Não indicar uma dose adicional de VPC20 a toda criança que recebeu VPC10 no passado**. Para grupos especiais, a Nota Técnica nº 52/2026 e revisões complementares orientam transição conforme número de doses, idade e condição clínica. A existência de várias tabelas no mesmo documento é sinal de que a prescrição deve ser personalizada.
+
+## 23. Vacinação pós-exposição e em surtos: tempo e risco importam
+
+### 23.1 Imunização ativa e passiva têm funções diferentes
+
+A imunização **ativa** estimula a produção de anticorpos e memória, com tempo para resposta. A **passiva** fornece anticorpos prontos (imunoglobulina humana específica, imunoglobulina humana padrão em algumas situações ou outros produtos aprovados), oferecendo proteção imediata e temporária. Em determinadas exposições, as duas medidas são complementares; em outras, apenas uma é indicada. A seleção depende de gravidade, agente, histórico de vacinação, idade, risco individual e tempo decorrido.
+
+Não utilizar “imunoglobulina para todo contato” como regra geral: ela tem indicação específica, custo, disponibilidade e eventos adversos próprios.
+
+### 23.2 Hepatite B perinatal e acidente com material biológico
+
+No recém-nascido exposto ao HBV materno, a vacinação imediata pode ser complementada por **imunoglobulina anti-hepatite B**, observando o protocolo do Ministério/serviço e os testes maternos. Em acidente com sangue/material biológico, trabalhador ou adolescente pode exigir avaliação de fonte, imunidade prévia e profilaxia pós-exposição específica, inclusive HIV/HBV, em serviço adequado. Essas situações não são resolvidas apenas conferindo a rotina vacinal da criança.
+
+### 23.3 Raiva e ferimentos por animais
+
+Acidente por cão, gato ou animal silvestre exige **higienização imediata da ferida**, avaliação do tipo de contato, profundidade, local, espécie, estado do animal, possibilidade de observação e epidemiologia da região. A vacinação antirrábica pós-exposição e a imunoglobulina/soro antirrábico podem estar indicados em certas circunstâncias e têm esquemas próprios. A aparência “saudável” de um animal silvestre não comprova ausência de risco, enquanto nem todo arranhão superficial por animal conhecido exige exatamente o mesmo esquema de agressão grave.
+
+A decisão segue protocolo nacional atualizado de profilaxia da raiva humana, que precisa ser consultado na data do evento; não copiar número de doses de calendários antigos. Se o animal pode ser observado, os prazos e a conduta estão definidos em norma técnica, não em opinião informal da família.
+
+### 23.4 Tétano após ferimento
+
+O raciocínio sobre tétano considera **classificação da ferida, histórico vacinal, tempo desde última dose e fatores de imunidade**. Feridas profundas, contaminadas, perfurantes ou com tecido desvitalizado têm risco diferente de pequenos ferimentos limpos. Vacina e imunoglobulina antitetânica podem ser necessárias conforme combinação dos fatores. Não usar regra simplista “todo prego enferrujado precisa de soro” nem deixar uma ferida grave sem profilaxia por presumir que três doses antigas garantem proteção em qualquer intervalo.
+
+Cuidados locais, limpeza, avaliação de corpo estranho e atualização da imunização são complementares, não concorrentes.
+
+### 23.5 Contato com sarampo, varicela e meningococo
+
+Em exposição ao sarampo, o **tempo desde contato** e a elegibilidade para vacina ou imunoglobulina pós-exposição podem modificar risco. Em surto, autoridades podem instituir D0 para faixa e localidade específicas. Contato com varicela em pessoa de alto risco (gestante suscetível, recém-nascido em determinadas condições, imunodeprimido) pode requerer imunoglobulina específica ou outra estratégia conforme norma.
+
+Contato próximo de doença meningocócica invasiva frequentemente exige **quimioprofilaxia antibiótica definida por vigilância**, independentemente de vacinação prévia, e eventualmente vacinação de bloqueio conforme sorogrupo e contexto. Não confundir “vacina contra meningite” com profilaxia universal imediata de todo contato.
+
+### 23.6 Modelo de decisão pós-exposição
+
+Identificar agente provável e mecanismo → estimar gravidade/risco e data/hora → conferir documento vacinal e condição do paciente → considerar se vacina, imunoglobulina, medicamento ou medidas locais são indicados → consultar a norma de pós-exposição específica → aplicar no prazo adequado, registrar, notificar quando pertinente e programar seguimento. A **janela temporal** pode ser decisiva, mas os limites diferem entre agentes, produtos e paciente.
+
+## 24. Segurança e vigilância: o que é EAPV e o que realmente contraindica?
+
+### 24.1 Evento temporal não é necessariamente causado pela vacina
+
+Um **evento adverso pós-vacinação (EAPV)** é ocorrência clínica após vacinação que merece análise; a relação temporal não comprova causalidade. Crianças recebem imunizantes em fase de muitas infecções febris, e doenças podem coincidir com aplicação por acaso. A vigilância avalia tempo de início, plausibilidade biológica, características do evento, outras causas, lotes, técnica de administração e padrões epidemiológicos.
+
+O profissional deve reconhecer sinais graves, prestar assistência e notificar pelos canais pertinentes, sem atrasar a investigação clínica por exigência administrativa. Informar à família que o evento será investigado e explicar quais informações são necessárias costuma preservar confiança.
+
+### 24.2 Anafilaxia pós-vacinal
+
+Anafilaxia pode evoluir rapidamente após exposição, com comprometimento respiratório/circulatório, eventualmente sem urticária. É emergência e requer **adrenalina intramuscular imediata em dose adequada à idade/peso** por equipe capacitada, além de suporte e vigilância. Anti-histamínico e corticoide não substituem adrenalina. O atendimento deve seguir protocolo de emergência e registro completo do evento.
+
+A criança que teve reação alérgica sistêmica grave após dose anterior precisa de avaliação especializada antes de nova exposição ao possível produto causador. É erro classificar febre isolada ou dor local como anafilaxia e proibir para sempre todas as vacinas.
+
+### 24.3 Falsas contraindicações frequentes
+
+- Coriza leve, tosse leve e infecção de vias aéreas superiores sem comprometimento clínico importante.
+- Uso de antibiótico para doença leve, por si só.
+- Prematuridade sem contraindicação específica e fora de exceções técnicas por peso/condição.
+- Amamentação ou contato domiciliar com gestante, sem outra condição que altere a vacina escolhida.
+- História familiar de evento local esperado.
+- Alergia inespecífica não relacionada ao componente vacinal.
+
+**Precaução** não é sinônimo de contraindicação definitiva: doença febril moderada/grave, por exemplo, pode justificar adiamento temporário para avaliação e evitar confusão de sintomas. A tomada de decisão deve seguir o produto e a norma, não frases absolutas.
+
+### 24.4 Vacinas vivas em contextos específicos
+
+Imunodepressão grave e gestação podem contraindicar determinados produtos vivos atenuados, mas cada situação exige avaliação técnica. Alergia a componentes, imunoglobulina recebida recentemente e terapia imunossupressora podem alterar **intervalos** ou elegibilidade. A equipe não deve presumir que toda vacina “contra sarampo” é proibida em todas as crianças com qualquer doença crônica; doença crônica estável é muitas vezes motivo adicional para proteção, não para negar vacinação.
+
+### 24.5 Registro do evento e conduta sobre próxima dose
+
+Registrar produto, fabricante, lote, via/local, horário, sintomas, tratamento, evolução, condição prévia e exames pertinentes. Encaminhar à vigilância/CRIE ou especialista quando indicado. A próxima dose será decidida pela **classificação do evento** e riscos da doença prevenível, não por suposta obrigação de concluir a série ou de suspender tudo automaticamente.
+
+## 25. Cadeia de frio, administração e erros programáticos
+
+### 25.1 O imunobiológico é um produto biológico sensível
+
+A potência de uma vacina pode ser afetada por temperatura inadequada, congelamento de produtos sensíveis, luz e erros de diluição. A cadeia de frio exige armazenamento monitorado, equipamento adequado, rastreabilidade e manejo correto desde distribuição até sala de vacina. **Não estabelecer uma temperatura fixa universal para todos os produtos sem consultar fabricante e Rede de Frio**, embora a refrigeração entre +2 °C e +8 °C seja condição frequente para vários imunobiológicos. Alguns têm requisitos especiais de transporte/congelamento/descongelamento.
+
+Não se pode concluir que um produto permanece eficaz apenas porque o frasco “parece normal”. Diante de excursão de temperatura, segregar/identificar produtos, preservar documentação e solicitar avaliação técnica do PNI/rede de frio antes de liberar para uso.
+
+### 25.2 Conferências antes de administrar
+
+A checagem deve incluir pessoa certa, produto certo, indicação/idade, histórico, dose, via, local anatômico, fabricante, validade, lote, diluente, intervalo e possibilidade de coadministração. Diluentes de produtos liofilizados não são intercambiáveis porque podem diferir de composição e volume. Produtos multidose têm validade após abertura específica; não assumir que todas as vacinas devem ser descartadas no mesmo período.
+
+Em lactentes, a via intramuscular utiliza local apropriado para idade e massa muscular; em crianças maiores, outros locais podem ser possíveis conforme técnica e produto. **Vacinas orais, intradérmicas, subcutâneas e IM não podem ser tratadas como vias equivalentes**.
+
+### 25.3 Registro fidedigno e caderneta
+
+Documentar vacina, número de dose, data, lote/fabricante, via/local, serviço e próximo retorno conforme sistema e Caderneta. O registro digital no Meu SUS Digital pode apoiar continuidade, mas inconsistência de sincronização deve ser reconciliada com documentação clínica. Em crianças com carteira perdida, investigar doses registradas em sistemas antes de presumir que todas devem ser refeitas; o PNI pode ter orientações específicas quando não há comprovação.
+
+Uma dose administrada cedo demais pode ser considerada inválida conforme intervalo mínimo. Não corrigir isso apenas agendando automaticamente a próxima dose pelo calendário padrão: verificar norma de reposição de dose inválida e informar a família.
+
+### 25.4 Oportunidades perdidas e qualidade do serviço
+
+Em um atendimento, a falta de estoque, horários incompatíveis, demora excessiva e orientações contraditórias podem impedir acesso. Para cobertura real, não basta que a vacina exista em catálogo; ela precisa estar disponível e ser oferecida oportunamente. Buscar crianças faltosas por território, comunicar mudanças com clareza e articular UBS, escolas, maternidades e CRIE são partes da prevenção.
+
+Ao discutir vacinação com cuidadores hesitantes, perguntar qual preocupação concreta têm, oferecer informação sobre benefício e risco, e evitar humilhação. A confiança aumenta quando a equipe reconhece limitações de estoque, mudanças do calendário e encaminha dúvidas reais, em vez de afirmar que "vacina nunca causa nenhum evento".
+
+## 26. Princípios quantitativos para interpretar cobertura e proteção
+
+### 26.1 Imunidade individual, proteção de rebanho e suscetibilidade
+
+A probabilidade de transmissão em uma comunidade depende da proporção suscetível, transmissibilidade do agente, oportunidades de contato, eficácia e homogeneidade da vacinação. Mesmo que um município informe cobertura de 95%, pode haver bairros com 60% e outros com 99%, mantendo transmissão nos bolsões de suscetíveis. Cobertura global esconde disparidade, por isso vigilância e busca ativa devem observar município, unidade, escola e grupos vulneráveis.
+
+**Exemplo didático:** município com 10 mil crianças-alvo recebeu 9.200 doses válidas do imunizante em determinado indicador, fornecendo cobertura administrativa simples de 92%. Esse valor não descreve, isoladamente, oportunidade de aplicação, recebimento de série completa, heterogeneidade por bairro ou duplicidade de registros. A metodologia oficial do PNI define quais doses entram no numerador e o denominador aplicável; no caso da VPC10→VPC20, **a Nota Técnica nº 69/2026 trata especificamente do monitoramento de cobertura durante a transição**.
+
+### 26.2 Eficácia, efetividade e proteção indireta
+
+**Eficácia** é estimada em condições experimentais; **efetividade** mede impacto em condições de uso real. Nenhuma das duas equivale ao percentual de cobertura. Proteção indireta ocorre quando menor circulação do agente reduz exposição de pessoas não imunizadas ou que não respondem adequadamente, mas varia entre vacinas e agentes. Não se deve afirmar que toda vacina bloqueia transmissão completamente ou que todo imunizante oferece a mesma imunidade coletiva.
+
+### 26.3 Registro e denominadores
+
+A qualidade dos dados depende de identificação correta da criança, dose, vacina, lote e sistema, além de população-alvo. Migração, duplicidade cadastral, doses da rede privada não integradas e erros de transcrição podem distorcer indicadores. Em prova ou prática de gestão, perguntar qual população e qual dose estão sendo contadas evita conclusões equivocadas.
+
+
+## 30. Planejamento visual e referências
 
 Priorizar reprodução autoral dos esquemas conceituais (calendário dinâmico, tipos de vacina e fluxo de atraso) com **link institucional**, não cópia de infográficos; fotografias de técnica apenas se fonte/licença comercial verificadas e aprovação em fila Admin. Dez candidatas devem ser avaliadas quando relevantes, sem obrigatoriedade de inserção de figuras redundantes.
 
