@@ -1,4 +1,4 @@
-# LURIA — LOTE 7 · AULA 136
+# LURIA — TEMA 136 · LOTE 6 NA GRADE DE 260 TEMAS (ARQUIVO LEGADO DO LOTE 7)
 # Hemorragia digestiva: integração clínica, localização e decisões da emergência
 
 **Área:** Clínica Médica / Gastroenterologia / Urgência  
@@ -117,9 +117,35 @@ A pessoa pode sangrar por lesão anatômica e estar usando varfarina, DOAC ou an
 
 **Rockall:** estratificação clínica/endoscópica da HDA, mais associado a prognóstico do que a triagem simples antes de EDA.
 
-**Oakland:** ferramenta para HDB com potencial uso em identificação de baixo risco, porém depende de validação/população/local e avaliação clínica. Não inventar pontuação em aula sem tabela e cálculo conferidos.
+**Oakland:** ferramenta específica para estratificar adultos com HDB e possível alta segura (sete variáveis, limiar de referência ≤8 pontos na ESGE 2021). A validação externa e a aula 132 documentam a pontuação; na abordagem integrada o princípio central é não substituir a avaliação hemodinâmica e a investigação da causa por um número isolado.
 
 **Child–Pugh/MELD:** em HDA de cirrótico, avaliam reserva hepática/prognóstico e participam de seleção de TIPS; não substituem ABCDE.
+
+### 7.1. Glasgow–Blatchford: calcular sem misturar unidades e sem transformar triagem em prognóstico absoluto
+
+O **GBS** é calculado **antes da endoscopia**, em suspeita de **hemorragia digestiva alta**. O desfecho que procura antecipar é a necessidade de intervenção hospitalar (transfusão, hemostasia etc.) ou morte, não o risco de câncer nem a chance exata de úlcera Forrest IIa. A pontuação usa ureia, hemoglobina, pressão sistólica, pulso, melena, síncope e comorbidades selecionadas. A ACG 2021 admite **GBS 0–1 como um dos critérios de muito baixo risco**, em pessoa estável e com seguimento possível. Isso é **recomendação condicional**, não ordem de alta.
+
+| Variável do GBS | Pontuação |
+|---|---|
+| **Ureia em mmol/L** | <6,5 → **0**; 6,5–7,9 → **2**; 8,0–9,9 → **3**; 10,0–24,9 → **4**; ≥25 → **6** |
+| **Hemoglobina masculina em g/dL** | ≥13 → **0**; 12–12,9 → **1**; 10–11,9 → **3**; <10 → **6** |
+| **Hemoglobina feminina em g/dL** | ≥12 → **0**; 10–11,9 → **1**; <10 → **6** |
+| **PAS em mmHg** | ≥110 → **0**; 100–109 → **1**; 90–99 → **2**; <90 → **3** |
+| **FC** | <100 bpm → **0**; ≥100 bpm → **1** |
+| **Melena** | não → **0**; sim → **1** |
+| **Síncope** | não → **0**; sim → **2** |
+| **Doença hepática** | não → **0**; sim → **2** |
+| **Insuficiência cardíaca** | não → **0**; sim → **2** |
+
+**Atenção às unidades.** A tabela usa **ureia em mmol/L** (padrão de vários estudos), mas no Brasil muitos laudos fornecem **ureia em mg/dL**; outros locais relatam **nitrogênio ureico — BUN**, outra grandeza. Nunca inserir o número de um laudo de ureia em mg/dL diretamente na faixa numérica de mmol/L nem tratar ureia e BUN como equivalentes sem conversão laboratorial apropriada.
+
+**Exemplo de risco baixo, em contexto apropriado:** mulher de 32 anos, pequena hematêmese autolimitada, Hb **12,8 g/dL**, ureia **5,4 mmol/L**, PAS **124 mmHg**, FC **82/min**, sem melena, síncope, hepatopatia nem insuficiência cardíaca. Cada variável pontua **zero**, portanto **GBS = 0**. Antes de considerar seguimento ambulatorial, conferir a confiabilidade do relato, ausência de sangramento persistente, sinais de alarme, acesso a avaliação e outras razões para internação.
+
+**Exemplo de alto risco que dispensa calculadora para iniciar atendimento:** homem com melena, síncope, FC **112/min**, PAS **105 mmHg**, Hb **11,3 g/dL**, ureia **9,1 mmol/L** e sem comorbidades do escore: GBS = **1 (melena) + 2 (síncope) + 1 (FC) + 1 (PAS) + 3 (Hb) + 3 (ureia) = 11**. Reanimação, monitorização, acesso venoso e planejamento de endoscopia ocorrem imediatamente; o escore comunica gravidade, não substitui terapia.
+
+**Não trocar GBS por Oakland:** para hematêmese/melena com suspeita alta, GBS tem função de triagem; para provável HDB em adulto, Oakland pode apoiar a decisão de alta, mas não é calculadora validada para escolher EDA versus CTA num choque de fonte indeterminada. Se o paciente está instável, a prioridade é estabilização e controle do foco, mesmo antes da definição de topografia. Conferir com a equipe local como pontua idade, unidades, exame retal e risco no modelo Oakland; **valores ausentes não são zero**.
+
+**Fontes verificáveis:** NHS Greater Glasgow and Clyde, tabela institucional de GBS: https://handbook.ggcmedicines.org.uk/guidelines/gastrointestinal-system/glasgow-blatchford-score/ ; ACG 2021, DOI 10.14309/ajg.0000000000001245; ACG 2023 para HDB; validação externa Oakland, *JAMA Network Open* 2020: https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/. Essas tabelas apresentam parâmetros de escore padronizado, não transcrevem conteúdo pedagógico de terceiros.
 
 ## 8. Algoritmo integrador
 1. Pergunte **“instável?”** antes de “alta ou baixa?”; ressuscitação e sangue conforme gravidade.
@@ -308,6 +334,25 @@ Em úlcera refratária à hemostasia endoscópica, ESGE 2026 coloca **TAE** ante
 Cápsula endoscópica registra imagens ao percorrer intestino e tem valor importante quando EDA/colonoscopia adequadas não localizam fonte e pessoa está estável. **Não realiza hemostasia**, não é teleoperada e pode reter-se se houver estenose/obstrução. Enteroscopia assistida por balão pode alcançar mais delgado e tratar lesões; qual método vem primeiro depende de atividade, risco e possibilidade de lesão suspeita.
 
 Em sangramento ativo muito rápido, cápsula pode ser inadequada como primeiro exame; CTA/angiografia podem ser mais úteis. A cronologia e sinais hemodinâmicos definem teste, não uma fila burocrática EDA→colono→cápsula invariável.
+
+### 18.7. Sangue retido no estômago: quando o pró-cinético muda a qualidade da EDA
+
+A mesma pessoa pode ter indicação correta de EDA e ainda assim receber exame incompleto porque **coágulos e sangue intragástricos impedem visualizar a lesão**. Em hemorragia alta intensa ou em curso, a equipe pode selecionar uma estratégia pré-endoscópica para melhorar a limpeza gástrica, sempre **sem substituir reanimação, proteção de vias aéreas quando indicada ou endoscopia terapêutica**.
+
+A diretriz **ESGE 2026 para úlcera hemorrágica** introduziu nuance prática: em **pacientes selecionados com HDA clinicamente grave ou sangramento ativo contínuo**, se **eritromicina intravenosa** estiver indisponível, **metoclopramida intravenosa** pode ser considerada antes da EDA. Trata-se de **sugestão condicional**, e não orientação de aplicar metoclopramida a todos os pacientes com hematêmese, nem de prescrever a dose oral usada rotineiramente para náusea.
+
+| Situação antes da EDA | O que raciocinar |
+|---|---|
+| Sangramento volumoso, provável retenção de sangue/coágulos, exame terapêutico iminente | Discutir pró-cinético **IV** selecionado conforme protocolo e perfil de segurança; o objetivo é melhorar visualização, não interromper sangramento |
+| Sangramento pequeno já cessado, estabilidade e pouca suspeita de estômago cheio de coágulos | Sem indicação de pró-cinético **universal** |
+| Hematêmese com rebaixamento de consciência ou aspiração iminente | Priorizar **proteção da via aérea e estabilização** quando necessárias; pró-cinético não previne toda aspiração |
+| QT prolongado, interação medicamentosa, obstrução mecânica suspeita ou condição neurológica predisponente a efeitos extrapiramidais | Individualizar ou evitar a droga conforme farmacologia e riscos; consultar protocolo/bula antes de qualquer administração |
+
+**O que muda na prova:** a alternativa “metoclopramida IV nunca serve na HDA” passou a ser imprecisa diante da sugestão ESGE 2026; a alternativa “metoclopramida para todos antes da EDA” continua inadequada. O ponto mais forte é a **indicação restrita + objetivo técnico de visualização + ausência de atraso na hemostasia**.
+
+**Separar recomendações:** a ESGE 2026 também admite considerar **IBP IV em dose alta antes da EDA** em suspeita de HDA por úlcera, mas isso não deve atrasar endoscopia; no contexto **varicoso**, vasoativo e antibioticoprofilaxia têm outra lógica. Não trocar tratamento causal de varizes por IBP/metoclopramida.
+
+**Segurança editorial:** doses, velocidade de infusão, correção de QT, ajuste renal e contraindicações de eritromicina/metoclopramida exigem validação medicamentosa brasileira e protocolo institucional. Esta seção **não** fornece prescrição. Fonte: ESGE, *Endoscopic diagnosis and management of peptic ulcer bleeding — Update 2026*, recomendações pré-EDA 2 e 3, DOI 10.1055/a-2863-8314, https://pubmed.ncbi.nlm.nih.gov/42127996/. Existe errata publicada, DOI 10.1055/a-2881-7411, cujo teor integral ainda deve ser conferido antes de certificação clínica.
 
 ## 19. Manejo de úlcera hemorrágica: da imagem Forrest à alta
 
@@ -560,6 +605,7 @@ Falta detalhar protocolos brasileiros de dose, volume/velocidade transfusional i
 - [x] Seleção de exames, estratégia de resgate e retorno, incluindo fonte rara de altíssimo impacto.
 - [x] Discussão de evidência ESGE 2026 e Baveno VII/ACG/ESGE.
 - [ ] Revisão integral da correção ESGE de maio/2026 e de diretrizes brasileiras específicas.
+- [ ] Validação por clínico/endoscopista e farmacêutico das novas seções 7.1 (GBS) e 18.7 (pró-cinético IV selecionado), com verificação de unidades, contraindicações e implementação brasileira.
 - [ ] Posologia medicamentosa validada para o SUS, reversores, anticoagulação, transfusão em populações especiais.
 - [ ] Imagens clínicas reais com proveniência, licença comercial, WebP e aprovação Admin.
 - [ ] Revisão médica externa, auditoria didática de repetições entre capítulos 127/132/136, teste de prova e integração HTML/PWA.
