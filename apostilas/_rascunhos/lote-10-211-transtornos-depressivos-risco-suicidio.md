@@ -128,3 +128,195 @@ Escalas padronizadas podem ajudar a estabelecer **linha de base**, escolher plan
 
 A NICE NG225 afirma que **não se devem usar escalas/estratos globalizantes para prever suicídio futuro ou repetição de autoagressão**, nem determinar quem será tratado ou receberá alta. A avaliação focaliza necessidades, ameaças presentes, fatores protetivos, segurança imediata e continuidade de cuidado. Isso não impede instrumentos de apoiar coleta organizada em treinamento adequado, mas proíbe transformá-los em garantia ou atalho de decisão.
 
+
+## 7. Diagnóstico diferencial: o que muda o tratamento
+
+### 7.1. Episódio depressivo no transtorno bipolar
+
+É o diferencial com maior impacto terapêutico. Uma pessoa com tristeza persistente e anedonia pode ter história de semanas de ativação intensa, redução de necessidade de sono, grandiosidade ou episódios hipomaníacos não reconhecidos como doença. Episódios de hipomania podem ser lembrados como fases de produtividade excepcional, e a pergunta “já ficou eufórico?” pode falhar. Perguntar sobre **mudança objetiva de energia, sono, fala, impulsividade e comportamento**, duração e percepção de terceiros.
+
+Antidepressivo isolado não é estratégia universal segura em transtorno bipolar, especialmente em apresentações com mania prévia, características mistas ou ciclagem. Se suspeita, encaminhar/avaliar abordagem de bipolaridade antes de iniciar tratamento como depressão unipolar. A aula 212 aprofunda critérios, mania, hipomania e estabilizadores do humor.
+
+### 7.2. Tristeza do luto e transtorno de luto prolongado
+
+Luto inclui ondas de dor, saudade, lembranças, mudança de rotina e momentos de afeto positivo. Episódio depressivo tende a envolver sofrimento mais global e persistente, perda abrangente de interesse e autodesvalorização, embora padrões se sobreponham e não permitam classificação mecânica. Luto prolongado é categoria específica em classificações, com critérios de duração, sofrimento e prejuízo conforme cultura; não confundir com qualquer luto após poucas semanas.
+
+Tratamento pode incluir acolhimento, suporte comunitário e psicoterapia; presença concomitante de depressão clínica requer avaliação própria. Ideação de morte deve ser examinada diretamente em qualquer condição, sem presumir que seja inofensiva porque ocorreu após perda.
+
+### 7.3. Hipotireoidismo, anemia e doenças sistêmicas
+
+Fadiga, lentificação, ganho ponderal e humor deprimido podem ocorrer em hipotireoidismo; anemia, deficiência de B12, doença inflamatória, apneia do sono, doença renal, insuficiência cardíaca e efeitos de medicamentos também podem afetar energia e cognição. Exame físico e exames **dirigidos por sintomas e fatores de risco** podem incluir hemograma, TSH, B12, eletrólitos, função renal/hepática ou avaliação de sono. Não existe “painel laboratorial universal” que diagnostique depressão; testes em massa com baixa probabilidade pré-teste também podem gerar achados incidentais sem relevância.
+
+Uma condição clínica identificada não exclui depressão simultânea. Tratar anemia grave e oferecer psicoterapia/medicação quando realmente indicado são decisões compatíveis, não concorrentes.
+
+### 7.4. Medicações e substâncias
+
+Corticosteroides, alguns agentes neurológicos, sedativos, medicamentos interferindo no sono, substâncias psicoativas e síndrome de abstinência podem causar sintomas semelhantes ou agravar depressão. Analisar relação temporal, dose, retirada recente e risco de síndrome de abstinência. Não interromper abruptamente medicamentos essenciais sem coordenação com prescritor, principalmente corticosteroides e substâncias com abstinência potencialmente grave.
+
+Uso de álcool pode ser tentativa de lidar com insônia, mas piorar humor e aumentar impulsividade; abordar com respeito, avaliando padrão, abstinência e serviços de apoio. Testes toxicológicos só quando clinicamente pertinentes.
+
+### 7.5. Transtorno depressivo com sintomas psicóticos
+
+A presença de delírios de culpa, ruína, negação da existência ou outras crenças fixas, ou alucinações em contexto depressivo, pode indicar gravidade elevada. Investigar se fenômenos ocorrem apenas durante episódio de humor e considerar transtornos psicóticos primários, bipolaridade, delirium, substâncias e condições neurológicas. A NICE NG222 prevê tratamento especializado e pode incluir antidepressivo associado a antipsicótico em depressão psicótica, conforme riscos e concordância; em casos graves pode-se avaliar ECT. Evitar antipsicótico isolado ou sedação como resposta automática a qualquer crença incomum.
+
+### 7.6. Transtorno neurocognitivo, delirium e depressão no idoso
+
+Queixas de memória e lentificação podem vir de depressão, transtorno neurocognitivo, delirium ou combinações. A instalação **aguda e flutuante com desatenção** exige pensar em delirium e precipitantes médicos antes de atribuir “depressão senil”. Se evolução é lenta e funcional, avaliar causas neurocognitivas e alterações reversíveis. Alterações cognitivas podem persistir após melhora do humor, por isso seguimento e reavaliação são necessários.
+
+### 7.7. Transtornos de ansiedade, trauma e TOC
+
+Ansiedade e depressão podem coexistir e compartilhar insônia, dificuldade de concentração e irritabilidade. Ruminação depressiva sobre fracasso difere de obsessões egodistônicas intrusivas, enquanto revivência de trauma inclui gatilhos e sintomas específicos de TEPT. A escolha de tratamento deve considerar quais síndromes estão ativas e qual delas gera maior prejuízo; remeter às aulas 213–214 para critérios completos.
+
+## 8. Estratificação clínica e avaliação do risco de suicídio
+
+### 8.1. Avaliar sofrimento, intenção e capacidade de permanecer seguro
+
+A avaliação não deve se limitar a “pensou em suicídio?”. Perguntar diretamente, de forma empática, sobre **desejo de morte, ideação suicida, intenção, plano, comportamento preparatório, tentativas anteriores, acesso a meios potencialmente letais, impulsividade, intoxicação e suporte disponível**, sem detalhar métodos em material educacional. Investigar tempo de início, mudança recente, intensidade e o que ajudou a pessoa a adiar/evitar agir. Reconhecer que a ideação pode oscilar mesmo durante uma única noite.
+
+Distinguir **pensar que seria melhor não acordar**, **imaginar o próprio fim**, **desejar se matar**, **planejar agir** e **ter comportamento preparatório** ajuda a escolher intervenção proporcional, mas não se deve criar escada infalível em que toda pessoa percorre etapas. Algumas crises são impulsivas ou súbitas; intoxicação e acesso a meios modificam risco.
+
+### 8.2. Fatores que exigem atenção especial
+
+Tentativa anterior, alta recente de internação, perdas importantes, desesperança persistente, isolamento, psicose com comandos, agitação, insônia extrema, intoxicação/abstinência e disponibilidade de meios aumentam preocupação em certos contextos. Outros fatores incluem dor grave, doenças crônicas, violência e barreiras ao cuidado. Nenhum fator sozinho determina destino, e ausência de fatores convencionais não garante segurança.
+
+A presença de vínculos familiares, crenças, projetos, motivação de viver e acesso a atendimento pode compor proteção, mas não “anula” risco agudo documentado. O plano precisa ter contingências concretas, contato de equipe e critérios de retorno.
+
+### 8.3. Foco em segurança e necessidades, não predição ilusória
+
+A NICE NG225 recomenda **não usar escalas de risco ou categorias baixo/médio/alto** para prever suicídio futuro ou autorizar alta. O objetivo é desenvolver **formulação clínica de risco**, considerando fatores modificáveis, desejos e capacidades da pessoa, contexto familiar/social, necessidades assistenciais e segurança imediata. A decisão de internação ou cuidado em crise depende de avaliação clínica, segurança e disponibilidade da rede, não de número único.
+
+A escala de sintomas depressivos (p. ex., PHQ-9) pode auxiliar acompanhar resposta do humor; ela não foi criada para substituir avaliação de suicídio. Um paciente aparentemente calmo, com poucos sintomas relatados, pode ter intenção atual e exigir proteção. Por outro lado, sintomas intensos não dispensam individualização e respeito à autonomia.
+
+### 8.4. Risco iminente: conduta em rede
+
+Quando há intenção atual com plano/acesso e dificuldade de permanecer seguro, tentativa recente, grave intoxicação, psicose perigosa ou incapacidade de autocuidado, priorizar **avaliação presencial urgente em serviço de emergência/saúde mental** e proteção proporcional. Não deixar paciente desacompanhado antes de avaliação se risco imediato, e não confiar apenas em promessa verbal ou contrato de não suicídio. Engajar apoio escolhido pela pessoa quando viável, observando sigilo e exceções legais de proteção. Restrição de acesso a meios potencialmente letais deve ser colaborativa e feita com responsáveis/equipe conforme protocolos.
+
+A necessidade de internação é avaliação especializada e contextual; não presumir que toda pessoa com ideação deve ficar internada, nem que negar ideação no momento garante alta. Se pessoa tenta ir embora antes do fim da avaliação, equipe deve seguir normas legais/éticas e protocolo de proteção, documentando justificativa e alternativas menos restritivas.
+
+### 8.5. Plano de segurança colaborativo
+
+**Componentes úteis:** sinais individuais de piora, estratégias breves de regulação e enfrentamento que pessoa consegue aplicar, contatos de confiança, lugares/serviços de apoio, telefone da equipe e portas de emergência, medidas de tornar ambiente seguro, revisão de medicamentos e compromisso da rede com retorno. O plano precisa ser **compreensível e acessível** para a pessoa; deve ser revisado após mudança de risco e idealmente compartilhado com apoios escolhidos com consentimento.
+
+Não confundir plano de segurança com termo jurídico vazio ou contrato de não suicídio. A NICE recomenda plano colaborativo e foco em necessidades e segurança; o conteúdo detalhado deve ser individualizado, com apoio clínico.
+
+### 8.6. Autoagressão e risco de suicídio não são sinônimos perfeitos
+
+Autoagressão pode ocorrer com diferentes intenções, inclusive sem intenção de morrer, mas está associada a sofrimento e risco futuro, merecendo avaliação cuidadosa. Não desqualificar a pessoa por repetir episódios nem adotar rótulos estigmatizantes. Episódios repetidos podem exigir revisão multidisciplinar e coordenação de cuidado, em vez de apenas repetir alta automática após cuidados físicos.
+
+### 8.7. Crianças, adolescentes e populações vulneráveis
+
+A entrevista precisa considerar linguagem, desenvolvimento, participação adequada de responsáveis e sigilo proporcional a leis de proteção. Conteúdo de ideação suicida deve ser investigado sem julgamento e risco atual não pode ser minimizado por idade. Em adultos com deficiência, assegurar comunicação acessível; em idosos, investigar isolamento, dor, luto e múltiplas doenças, sem pressupor que falar de morte seja sempre processo natural do envelhecimento.
+
+## 9. Tratamento da depressão: escolher por gravidade, preferências e acesso
+
+### 9.1. Princípios gerais
+
+Tratamento é processo compartilhado, composto por psicoeducação, acompanhamento, intervenções psicossociais, psicoterapia e farmacoterapia quando indicada, manejo de comorbidades e prevenção de recaída. Os objetivos vão além de diminuir escore: recuperar sono, autocuidado, vínculo, aprendizagem, trabalho e segurança. Perguntar ao paciente o que mais deseja retomar orienta metas clínicas e adesão.
+
+Escolher modalidade segundo **gravidade, risco, preferências, resposta anterior, contraindicações, acesso e recursos assistenciais**. Não oferecer apenas uma opção por conveniência do serviço sem discutir alternativas viáveis. A pessoa tem direito a entender efeitos, tempo de resposta e consequências da interrupção.
+
+### 9.2. Depressão menos grave — abordagem gradual
+
+Na **NICE NG222**, para **novo episódio menos grave**, discutir opções e considerar primeiro intervenções menos intrusivas e de menor intensidade, como autoajuda guiada por técnicas validadas, intervenções psicológicas estruturadas, ativação comportamental, exercícios em grupo e outras abordagens com evidência conforme necessidades. **Antidepressivo não deve ser rotineiramente a primeira linha** em depressão menos grave, **mas pode ser oferecido se for preferência informada** após discutir riscos/benefícios.
+
+Para pessoas com sintomas leves que estão melhorando ou não desejam iniciar tratamento imediato, **monitorização ativa** inclui explicar condição, sinais de piora e reavaliar usualmente em **2–4 semanas**, mantendo possibilidade de tratamento a qualquer momento. Monitorização ativa **não é abandono**; exige retorno e contato se faltas.
+
+### 9.3. Depressão moderada ou grave — tratamento mais intensivo
+
+Na **NICE NG222**, “mais grave” corresponde operacionalmente a depressão moderada e grave, com várias opções de primeira linha. Uma opção de boa relação benefício/efeito pode ser **terapia cognitivo-comportamental individual combinada a antidepressivo**, mas terapia psicológica isolada, antidepressivo isolado e outras modalidades estruturadas podem ser adequadas conforme preferência, acesso e avaliação. Não impor psicoterapia como requisito para receber fármaco, nem fármaco como condição para acessar terapia.
+
+Sintomas psicóticos, alto risco suicida, recusa alimentar severa, catatonia, incapacidade de autocuidado ou urgência de resposta podem demandar tratamento especializado intensivo/internação e eventualmente ECT conforme indicação. Um escore de gravidade isolado não substitui decisão clínica.
+
+### 9.4. Psicoeducação e ativação comportamental
+
+Explicar curso variável, possibilidade de melhora, tempo de tratamento e riscos de recaída. Ativação comportamental organiza retomada gradual de atividades significativas com metas alcançáveis, começando às vezes por higiene, alimentação e contato social. Não prescrever rotina extensa impossível em alguém com exaustão intensa e depois interpretar não adesão como desinteresse. Monitorar conquistas pequenas e adaptar planejamento.
+
+### 9.5. Terapias psicológicas com evidência
+
+**Terapia cognitivo-comportamental (TCC/CBT):** trabalha padrões de interpretação e comportamento, atividades evitadas e estratégias de enfrentamento. **Ativação comportamental:** foco em ação gradual vinculada a recompensas/valores. **Terapia interpessoal (IPT):** explora transições de papel, luto, disputas e déficits interpessoais pertinentes. Outras terapias estruturadas podem ser indicadas segundo cenário e acesso.
+
+A escolha não depende apenas da “preferência do médico”; considerar experiência prévia, conforto com modalidade, complexidade clínica e disponibilidade. Terapias breves podem precisar ser ampliadas quando há trauma, comorbidades ou prejuízo persistente.
+
+### 9.6. Sono, substâncias e atividade física
+
+Reorganizar horários, reduzir uso de álcool e consumo excessivo de estimulantes, tratar apneia do sono e apoiar atividade física compatível com condição clínica podem melhorar sintomas/funcionamento. **Não substituir tratamento de depressão grave por “faça exercício e pense positivo”**. Também evitar associar metas de peso ao julgamento moral da doença.
+
+### 9.7. Papel da família e rede de cuidado
+
+Com consentimento e respeito à privacidade, familiares e apoios podem ajudar com transporte, alimentação, tarefas, monitorização de piora e acesso a consultas. Em adolescentes e pessoas vulneráveis, envolver responsáveis conforme direitos e proteção. O profissional deve perguntar se o ambiente é seguro antes de envolver familiar, pois violência e relações conflitivas podem ser fatores de risco.
+
+## 10. Antidepressivos: escolha racional, monitorização e suspensão
+
+### 10.1. Por que a primeira escolha costuma ser um ISRS?
+
+Inibidores seletivos de recaptação de serotonina (ISRS) como **sertralina, escitalopram e fluoxetina** são frequentemente usados quando farmacoterapia está indicada, pelo perfil geral de eficácia/tolerabilidade e menor toxicidade em superdose do que antidepressivos tricíclicos. A escolha específica depende de comorbidades, interações, idade, gestação, eventos adversos prévios, função hepática/renal e acesso. **Não existe ISRS comprovadamente superior para toda pessoa**.
+
+Antidepressivos não têm efeito de antidepressivo pleno em horas; alterações de sono e efeitos adversos podem surgir antes de melhora sustentada do humor. Explicar tempo de resposta evita suspensão precipitada e orienta vigilância.
+
+### 10.2. Mecanismo e implicações práticas dos ISRS
+
+ISRS inibem transportador de serotonina (SERT), elevando sinalização sináptica em curto prazo; benefícios clínicos dependem de adaptações complexas e variam entre indivíduos. Efeitos possíveis: náusea, diarreia, cefaleia, alteração do sono, inquietação inicial, sudorese, disfunção sexual e, em subgrupos, hiponatremia ou aumento de sangramento com medicações concomitantes. Alguns medicamentos têm maior potencial de interações por CYP e prolongamento de QT em doses/pessoas suscetíveis. Avaliar risco e monitorização conforme fármaco, não generalizar todas as moléculas como equivalentes em interações.
+
+### 10.3. IRSN, mirtazapina, bupropiona e outras opções
+
+**IRSN** como venlafaxina e duloxetina modulam recaptação de serotonina e noradrenalina, exigindo atenção a pressão arterial, efeitos de retirada e interações conforme agente. **Mirtazapina** pode ser útil em alguns perfis com insônia/redução de apetite, mas sedação e ganho ponderal podem ser relevantes. **Bupropiona** tem perfil diferente, podendo causar insônia/ansiedade inicial, e exige cautela/contraindicações em transtornos convulsivos e certas condições alimentares, conforme bula e história. **Tricíclicos** têm efeitos anticolinérgicos, cardiovasculares e toxicidade maior em superdose; precisam ser ponderados em pessoas com risco suicida e doenças cardíacas.
+
+Vortioxetina e outras opções podem ser avaliadas conforme história terapêutica, custos e regulamentação local, sem pressupor acesso público. Múltiplas classes não devem ser combinadas sem avaliar **síndrome serotoninérgica, interações e riscos de retirada**.
+
+### 10.4. Contextos em que a escolha muda
+
+- **Idosos:** considerar polifarmácia, hiponatremia, quedas, função renal, cognição e necessidade de escalonamento prudente.
+- **Cardiopatia:** atenção a condução elétrica, arritmia, QT, interação com antiplaquetários/anticoagulantes e pressão arterial, conforme fármaco.
+- **Insônia/hipersonia:** o perfil sedativo ou ativador pode ajudar ou piorar sintomas; nenhum agente é “remédio para dormir” universal.
+- **Dor crônica:** escolher modalidade que também trate comorbidade pode ser útil, mas não encobre investigação de doença orgânica.
+- **Transtorno bipolar suspeito:** não tratar automaticamente como depressão unipolar com monoterapia antidepressiva.
+- **Risco de overdose:** evitar dispensar grandes quantidades de fármacos mais tóxicos sem plano de segurança; alinhar prescrição e acompanhamento ao risco real.
+
+### 10.5. Monitorização no início
+
+NICE NG222 orienta rever resposta e segurança geralmente entre **2 e 4 semanas** após iniciar tratamento, ajustando para acompanhamento mais próximo quando risco suicida, idade jovem, comorbidade ou efeitos adversos relevantes tornam necessário. Perguntar sobre adesão, ativação/agitação nova, sono, ideação suicida, efeitos sexuais, sintomas gastrointestinais e metas funcionais. O que mudou em escala pode não traduzir melhora em autocuidado; registrar ambos.
+
+Uma piora inicial ou ativação intensa pode sinalizar efeito adverso, transtorno bipolar, uso de substâncias ou progressão clínica; isso merece avaliação, não instrução automática de “aumentar dose”.
+
+### 10.6. Resposta, remissão e recaída
+
+**Resposta:** melhora clinicamente significativa em relação à linha de base; **remissão:** sintomas diminuídos a ponto de não preencher critérios e com recuperação funcional progressiva; **recaída:** retorno de sintomas no mesmo episódio antes de recuperação sustentada; **recorrência:** novo episódio após período de recuperação. Definições operacionais podem variar por estudo, mas úteis para planejar fases de tratamento.
+
+Depois de melhora, **não suspender automaticamente** antidepressivo no primeiro mês “porque já está bem”. Continuação e eventual manutenção dependem de recorrência, gravidade prévia, resposta, risco de recaída, tolerabilidade e preferência; NICE recomenda discutir prevenção de recaída e revisar tratamento de manutenção pelo menos semestralmente em quem continua antidepressivo.
+
+### 10.7. Síndrome de descontinuação: não confundir com recaída
+
+Suspensão abrupta ou redução rápida pode produzir sintomas de retirada, como tontura, náusea, insônia, sensações semelhantes a choque, ansiedade e desequilíbrio, com perfil e frequência variáveis por molécula e duração de uso. **Nem toda piora após interrupção é recaída**, e sintomas de retirada podem começar rapidamente após redução, enquanto recaída costuma ter cronologia diferente. Planejar redução gradual e individual, discutir sinais, monitorar e ajustar quando necessário; retirada pode demandar semanas a meses ou mais em casos selecionados.
+
+Medicamentos com meia-vida curta podem ter maior risco de sintomas de retirada, mas nenhum agente é absolutamente imune. Evitar orientações genéricas de “pare de uma vez” e explicar que ajustes devem ser coordenados com profissional.
+
+### 10.8. Não resposta e revisão diagnóstica
+
+Antes de concluir “depressão resistente”, verificar diagnóstico (inclusive bipolaridade e psicose), **adesão efetiva**, dose, duração, efeitos colaterais, barreiras de acesso, uso de álcool/drogas, comorbidades, sono e fatores psicossociais. NICE NG222 recomenda revisar resposta em tempo apropriado e discutir ampliação/troca de psicoterapia ou fármaco, combinação ou encaminhamento especializado; estratégias com lítio/antipsicótico/ECT exigem avaliação de risco, monitorização e expertise.
+
+Não aumentar indiscriminadamente antidepressivos de dose alta: a evidência não garante maior benefício, enquanto eventos adversos podem aumentar. Se combinar agentes serotoninérgicos, revisar risco de síndrome serotoninérgica, interações e cuidados específicos.
+
+## 11. Terapias especializadas e situações de gravidade
+
+### 11.1. Eletroconvulsoterapia (ECT)
+
+ECT pode ser opção importante em **depressão grave com necessidade de resposta rápida**, particularmente em quadro com risco de vida por recusa alimentar grave, catatonia, psicose grave ou história de resposta relevante, conforme avaliação especializada, consentimento e protocolo. É realizada com anestesia e monitorização, e não é punição nem prática sem evidência. Riscos incluem cefaleia, efeitos anestésicos e alteração de memória, geralmente transitória em parte dos casos, exigindo informação adequada e acompanhamento.
+
+Não indicar ECT por uma pontuação isolada de questionário; a decisão envolve síndrome, gravidade, urgência, riscos/benefícios e preferências do paciente quando capaz.
+
+### 11.2. Estimulação magnética transcraniana (EMT/rTMS)
+
+EMT repetitiva é terapia de neuromodulação não invasiva com evidência em subgrupos de depressão, disponível de forma desigual. Pode ser considerada em contextos especializados quando tratamentos usuais não obtiveram resposta suficiente. Não substitui cuidado de emergência de paciente com risco suicida iminente; logística de sessões e resposta variam. Normas/regulação brasileiras e cobertura precisam ser confirmadas antes de publicar indicações locais.
+
+### 11.3. Outras terapias e restrições regulatórias
+
+Abordagens com cetamina/esketamina, combinações farmacológicas complexas e outros procedimentos exigem revisão de indicações autorizadas no Brasil, contraindicações, necessidade de ambiente monitorizado, custos e potencial de abuso. Não prometer que “funciona em minutos para todos”, nem apresentá-las como primeiras escolhas para qualquer depressão. Em pessoa com alto risco, avaliação de proteção e seguimento continuam indispensáveis, mesmo se tratamento especializado produzir melhora rápida de sintomas.
+
+### 11.4. Quando internar
+
+Considerar internação em cenário de risco atual que não possa ser manejado com segurança ambulatorial/rede de crise, recusa grave de alimentação/hidratação, psicose/catatonia graves, incapacidade importante de autocuidado e necessidade de intervenção monitorizada. O médico avalia proporcionalidade, alternativas menos restritivas, capacidade, preferências e legislação brasileira. A internação não se decide apenas pelo número de sintomas de depressão nem pelo escore de risco.
+
+### 11.5. Linha de cuidado e continuidade
+
+Uma alta segura exige **plano de seguimento efetivo**, contatos de crise, orientação à família/rede quando apropriado, reavaliação de acesso a meios e condutas de proteção, e encaminhamento à APS/RAPS/psiquiatria/psicoterapia conforme necessidades. Transição pós-internação pode ser período vulnerável; datas e responsáveis precisam estar definidos, evitando recomendações vagas de “procure atendimento se piorar”.
+
