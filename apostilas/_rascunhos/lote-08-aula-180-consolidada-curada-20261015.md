@@ -602,7 +602,30 @@ Mulher de 78 anos com câncer e DRC avançada apresenta mioclonias, alucinaçõe
 - Limitação de procedimento não suspende cuidado ativo.
 - Rede SUS PNCP inclui APS e domicílio, não somente hospital terciário.
 
-## 33. Referências e hierarquia de evidência
+## 33. Visualização e ensino: matriz de 14 recursos, não aprovados
+
+Não buscar imagens decorativas nem copiar figuras de documentos com licença não comercial para site comercial. **Candidatas para elaboração original e curadoria em Admin**:
+
+| Recurso | Função | Local |
+|---|---|---|
+| Fluxograma autoral PAC → DAV → plano de crise | Distinguir documento de processo | §24 |
+| Linha de trajetórias: câncer × IC/DPOC × demência | Identificar oportunidade de integração | §23 |
+| Diagrama Palliative Performance Scale conceitual | Diferenciar funcionalidade de prognóstico preciso | §23 |
+| Tabela visual ESAS-r com exemplos hipotéticos | Mensurar resposta de sintomas | §23 |
+| Esquema de avaliação da dor nociceptiva/neuropática | Selecionar tratamento de mecanismo | §26 |
+| Ilustração autoral de rotação opioide e conferências | Evidenciar perigos de equivalência simples | §26 |
+| Quadro dispneia × hipoxemia | Evitar oxigênio indiscriminado | §27 |
+| Checklist de delirium e causas tratáveis | Evitar sedação precipitada | §29 |
+| Árvore de obstrução intestinal parcial/completa | Evitar pró-cinético impróprio | §28 |
+| Esquema de dispositivos de hipodermóclise original | Ensinar cuidados e limitações de via | §31 |
+| Mapa da RAS/PNCP com APS e equipes apoio | Ensinar continuidade e Portaria 2026 | §31 |
+| Pictograma de CDI e função de choque | Apoiar decisão individualizada | Caso 7 |
+| Fluxograma de sedação proporcional EAPC | Ensinar refratariedade, consentimento e monitorização | §30 |
+| Checklist de desospitalização e sobrecarga cuidador | Organizar alta segura | §31 |
+
+Para qualquer recurso clínico externo que venha a ser proposto, registrar URL original, licença de reutilização comercial, responsável editorial, legenda e validação. Submeter ao Admin; não gerar WebP de material alheio sem direitos. Nenhuma imagem foi adicionada.
+
+## 34. Referências e hierarquia de evidência
 
 As fontes normativas brasileiras orientam estrutura de cuidado, enquanto consensos e revisões internacionais fornecem suporte clínico à avaliação de sintomas; disponibilidade farmacológica, serviço e prescrições devem respeitar normas e protocolos locais.
 
@@ -616,7 +639,7 @@ As fontes normativas brasileiras orientam estrutura de cuidado, enquanto consens
 8. Baile WF et al. SPIKES—A six-step protocol for delivering bad news: application to the patient with cancer. *The Oncologist*. 2000;5(4):302–311. DOI:10.1634/theoncologist.5-4-302. Verificar pertinência antes da versão final.
 
 
-## 34. Auditoria desta versão consolidada — STATUS NÃO CONCLUÍDO
+## 35. Auditoria desta versão consolidada — STATUS NÃO CONCLUÍDO
 
 | Gate editorial | Resultado |
 |---|---|
