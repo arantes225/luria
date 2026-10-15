@@ -240,6 +240,119 @@ Os conselhos não devem ser capturados por grupos sem representação efetiva. E
 
 **Conduta:** redesenhar comunicação e participação conforme regimento/recursos, buscar apoio institucional para acessibilidade e ouvir comunidades. Em 2026, o MS divulgou ações de fortalecimento de conselhos locais. **Por que importa:** princípio constitucional tem dimensão prática, além da composição numérica.
 
+## 13. Dez questões de residência médica comentadas
+
+### Questão 1 — Natureza jurídica dos conselhos
+
+Segundo a Lei nº 8.142/1990, o Conselho de Saúde é:
+
+A) reunião consultiva convocada a cada quatro anos, exclusivamente para propor diretrizes.  
+B) órgão permanente e deliberativo, com participação na formulação de estratégias e controle da execução da política de saúde, inclusive nos aspectos econômico-financeiros.  
+C) departamento encarregado exclusivamente de licitações e contratações.  
+D) comissão formada apenas pelos secretários de saúde dos três níveis de gestão.
+
+**Gabarito: B.** **A — incorreta:** descreve parcialmente a função/periodicidade das conferências. **B — correta:** condensa a regra legal do art. 1º, §2º. **C — incorreta:** execução administrativa não é a atribuição central do colegiado. **D — incorreta:** confunde conselho com espaço de pactuação de gestores. **Revisão:** conselho é permanente, deliberativo e com controle social da política.
+
+### Questão 2 — Periodicidade da conferência
+
+A Lei 8.142 estabelece que a Conferência de Saúde, em regra:
+
+A) reúna-se a cada quatro anos, com possibilidade de convocação extraordinária nos termos legais.  
+B) seja órgão permanente de reunião obrigatoriamente diária.  
+C) só possa ocorrer mediante convocação de prestadores privados.  
+D) se reúna a cada dez anos sem função de propor políticas.
+
+**Gabarito: A.** **A — correta:** os segmentos sociais avaliam situação e propõem diretrizes em periodicidade quadrienal, ressalvada convocação extraordinária. **B — incorreta:** confunde natureza do conselho. **C — incorreta:** a lei prevê convocação pelo Executivo ou extraordinária inclusive pelo conselho. **D — incorreta:** erra periodicidade e função. **Revisão:** conferência propõe diretrizes; conselho monitora continuamente a política.
+
+### Questão 3 — Paridade e porcentagens
+
+Um conselho terá vinte assentos e seguirá a repartição da Resolução CNS 453/2012. Como distribuir corretamente?
+
+A) 5 usuários, 10 gestores e 5 profissionais.  
+B) 10 usuários, 5 profissionais de saúde e 5 representantes do conjunto gestores/prestadores.  
+C) 20 gestores, sem representantes de usuários.  
+D) 8 usuários, 8 profissionais e 4 gestores.
+
+**Gabarito: B.** **A — incorreta:** usuários seriam apenas 25%. **B — correta:** 50% / 25% / 25%. **C — incorreta:** exclui participação dos usuários. **D — incorreta:** 40% de usuários não atende proporção normativa. **Revisão:** a Lei 8.142 estabelece paridade dos usuários; a decomposição detalhada está na Resolução CNS 453.
+
+### Questão 4 — Origens normativas do 50/25/25
+
+Qual afirmação é juridicamente mais precisa?
+
+A) A Constituição Federal lista textualmente as porcentagens 50/25/25 no art. 198.  
+B) O art. 1º da Lei 8.142 enuncia paridade de usuários em relação aos demais segmentos; a Resolução 453/2012 detalha 50% usuários, 25% trabalhadores e 25% governo/prestadores.  
+C) O Conselho Nacional de Secretários Municipais define composição dos conselhos sem normas.  
+D) A paridade é apenas sugestão sem fundamento legal.
+
+**Gabarito: B.** **A — incorreta:** a Constituição estabelece diretriz de participação, não porcentagens textuais. **B — correta:** distingue normas. **C — incorreta:** entidades de gestores não substituem lei e resoluções do CNS. **D — incorreta:** paridade está expressamente na legislação. **Revisão:** em prova normativa, citar a fonte certa é tão importante quanto o número.
+
+### Questão 5 — Conselho versus CIB
+
+Qual associação está correta?
+
+A) CIB — colegiado de usuários que representa permanentemente a sociedade; Conselho Municipal — pactuação apenas entre gestores estaduais e municipais.  
+B) CIT/CIB — pactuação interfederativa entre gestores; Conselho de Saúde — representação de segmentos sociais e controle da política.  
+C) Conselho — apenas denúncias individuais; CIB — julgamento criminal de usuários.  
+D) CIB e Conselho são sinônimos e podem substituir deliberação um do outro indistintamente.
+
+**Gabarito: B.** **A — incorreta:** inverte composição/função. **B — correta:** a função de pactuação não equivale à representação comunitária. **C — incorreta:** ambos os papéis estão errados. **D — incorreta:** esferas de competência são distintas. **Revisão:** entenda quem participa da instância antes de memorizar a sigla.
+
+### Questão 6 — Plano de Saúde, PAS e RAG
+
+A sequência que traduz instrumentos de planejamento/controle é:
+
+A) PAS é plurianual; Plano de Saúde é diário; RAG é relatório de atendimento individual.  
+B) Plano de Saúde estabelece diretrizes em horizonte plurianual, PAS anualiza metas/recursos, RAG relata resultados da execução.  
+C) RAG substitui as metas do Plano de Saúde antes de qualquer execução.  
+D) Conselho não deve ter acesso aos relatórios de gestão.
+
+**Gabarito: B.** **A — incorreta:** inverte temporalidade e objeto. **B — correta:** corresponde às descrições oficiais de instrumentos do SUS. **C — incorreta:** RAG é ex post e orienta redirecionamento, não a origem do planejamento. **D — incorreta:** controle econômico-financeiro exige documentação. **Revisão:** plano (onde chegar), PAS (o que fazer neste ano), RAG (o que foi obtido).
+
+### Questão 7 — Prestação de contas quadrimestral
+
+Sobre a LC nº 141/2012 e prestação de contas, é correto afirmar:
+
+A) O relatório quadrimestral não inclui dados de assistência, apenas gasto total.  
+B) Os relatórios de execução devem apresentar fontes/valores, auditorias e oferta/produção comparadas a indicadores de saúde, permitindo controle efetivo.  
+C) O conselho deve aprovar qualquer gasto com base no valor bruto empenhado.  
+D) Prestação de contas é função exclusiva do setor privado conveniado.
+
+**Gabarito: B.** **A — incorreta:** a lei exige análise de oferta e produção assistencial, com indicadores. **B — correta:** art. 36 especifica elementos mínimos. **C — incorreta:** ausência de contexto não permite julgamento informado. **D — incorreta:** obrigação dos gestores do SUS nas diferentes esferas. **Revisão:** gasto maior não comprova, sozinho, aumento de acesso ou eficiência.
+
+### Questão 8 — Ouvidoria do SUS
+
+Pessoa deseja relatar falta recorrente de medicamentos e receber resposta administrativa. O canal mais diretamente voltado a acolher e encaminhar a manifestação individual é:
+
+A) ouvidoria do SUS, articulada com instâncias competentes e análise de padrões.  
+B) exclusivamente a Comissão Intergestores Tripartite, que recebe casos clínicos individuais.  
+C) somente a Conferência de Saúde realizada a cada quatro anos.  
+D) Conselho Local como substituto de qualquer atendimento assistencial urgente.
+
+**Gabarito: A.** **A — correta:** a ouvidoria recebe manifestações e promove encaminhamento e retorno. **B — incorreta:** CIT é pactuação interfederativa. **C — incorreta:** conferência não é canal individual contínuo. **D — incorreta:** espaços sociais não substituem urgência clínica. **Revisão:** ouvidoria escuta e encaminha; conselho delibera e fiscaliza políticas.
+
+### Questão 9 — Homologação de decisões
+
+O art. 1º, §2º, da Lei 8.142 dispõe que decisões do Conselho de Saúde:
+
+A) sempre dispensam qualquer etapa de homologação.  
+B) serão homologadas pelo chefe do poder legalmente constituído em cada esfera, segundo os termos da lei.  
+C) não têm relevância porque o conselho é exclusivamente recreativo.  
+D) só podem ser homologadas por prestadores privados de serviços.
+
+**Gabarito: B.** **A — incorreta:** contradiz o texto legal. **B — correta:** respeita a etapa prevista. **C — incorreta:** desconsidera caráter deliberativo e de controle. **D — incorreta:** prestador privado não é a autoridade descrita. **Revisão:** deliberação e execução são funções complementares dentro da ordem jurídica.
+
+### Questão 10 — Controle social real e desigualdades
+
+Conselho municipal formalmente paritário realiza todas as reuniões em horário inacessível aos representantes de comunidades rurais, sem divulgação adequada de pautas. Qual é a avaliação mais pertinente?
+
+A) Paridade numérica garante por si só participação efetiva.  
+B) O problema é irrelevante porque usuários não precisam compreender orçamentos.  
+C) A organização pode violar finalidade de participação e precisa fortalecer acessibilidade, informação e condições de representação.  
+D) A melhor solução é retirar usuários das cadeiras para acelerar votações.
+
+**Gabarito: C.** **A — incorreta:** presença formal não resolve barreiras práticas. **B — incorreta:** transparência e informação qualificam controle. **C — correta:** participação deve ser possível e informada. **D — incorreta:** exclui justamente o segmento legitimador do controle. **Revisão:** participação tem dimensão institucional e material, não apenas matemática.
+
+
 ## Referências jurídicas para checagem/homologação
 - Brasil, Lei nº 8.142, de 28 de dezembro de 1990: https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
 - Brasil, Constituição Federal de 1988, arts. 196 e 198: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
