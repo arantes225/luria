@@ -280,5 +280,281 @@ D. Aumentar SABA domiciliar é suficiente.
 
 **Não declarar concluído:** esta expansão ainda é rascunho. Verificar 60 mil caracteres didáticos úteis sem redundância, capítulo de antibioticoterapia, matriz de decisões especiais (gestação, multimorbidade, pacientes imunodeprimidos), exames complementares aprofundados, supervisão médica, integridade do renderer e testes desktop/PWA.
 
+
+
+---
+
+# Ampliação editorial 03 — fisiologia funcional, acompanhamento, emergência e armadilhas de prova
+
+> Registro em 14/10/2026. Foram reabertos os comparativos \`DPOC estável.pdf\` e \`DPOC exacerbada.pdf\` no Drive, examinadas informações sobre classificação antiga ABCD, espirometria, oxigenoterapia, VNI e causas de exacerbação. Este conteúdo novo toma como diretrizes preferenciais **PCDT brasileiro DPOC vigente (anexo atualizado em 29/01/2026)**, **GOLD 2026** e **Linha de Cuidado de DPOC do Ministério da Saúde**. A Linha de Cuidado contém algumas referências de 2021; em divergência, prevalece o PCDT de 2026 e o documento GOLD 2026, sempre identificando a norma. Nenhuma figura, tabela ou texto dos referenciais foi copiado.
+
+## 16. Da ventilação normal à ventilação obstrutiva: fisiologia necessária para ler o paciente
+
+### 16.1 A equação clínica do VEF1
+
+Um indivíduo saudável não expira instantaneamente toda a capacidade vital. Há resistência e pressão dentro do sistema de vias aéreas. Na expiração forçada, uma região da árvore brônquica pode sofrer compressão dinâmica se a pressão ao redor excede a pressão luminal; a tendência é compensada pela retração elástica e estrutura de suporte. O enfisema reduz a pressão elástica que impulsiona o esvaziamento e destrói parte do suporte alveolar sobre bronquíolos terminais. A doença de pequenas vias aéreas adiciona inflamação, estreitamento, tampões mucosos e remodelamento. A combinação resulta em **VEF1 reduzido de modo persistente** e maior fração de ar retida após expiração.
+
+Na espirometria, **VEF1/CVF** é a proporção do volume expirado no primeiro segundo sobre o volume total da manobra; **VEF1 em percentual do previsto** é usado para dimensionar a intensidade fisiológica da obstrução, não a presença de exacerbações. A GOLD emprega, operacionalmente, VEF1/CVF pós-broncodilatador <0,70 como critério de obstrução. Essa razão fixa pode superdiagnosticar obstrução em parte dos idosos e subdiagnosticar em alguns jovens; quando há valor limítrofe, discrepância importante com clínica ou manobra de qualidade duvidosa, considerar limite inferior de normalidade, nova espirometria e avaliação especializada.
+
+**Exemplo 1:** VEF1 1,4 L e CVF 3,0 L após broncodilatador: razão aproximadamente 0,47, logo obstrução marcante. Se VEF1 corresponde a 42% do previsto, o grau espirométrico é GOLD 3. **Exemplo 2:** VEF1 de 2,7 L, CVF de 3,4 L, razão 0,79: não atende o corte operacional de obstrução; sintomas crônicos continuam merecendo investigação, incluindo bronquite crônica, doença intersticial, insuficiência cardíaca e outras causas. **Exemplo 3:** VEF1 55% previsto e nenhuma exacerbação, mMRC 3: o componente espirométrico é GOLD 2, enquanto a intensidade dos sintomas pode classificar o paciente como grupo B (sem eventos); não há contradição.
+
+### 16.2 O significado clínico de volume residual e capacidade inspiratória
+
+Na DPOC, o **volume residual** aumenta porque expirar até o ponto de equilíbrio demanda mais tempo e parte das vias aéreas fecha precocemente. A **capacidade pulmonar total** pode crescer por hiperinsuflação. Como o pulmão já está muito cheio, a **capacidade inspiratória disponível para exercício cai**: o paciente precisa aumentar ventilação ao caminhar, mas não consegue inspirar muito mais volume corrente. A sensação é de “não haver espaço para puxar ar” mesmo quando o oxigênio não está dramaticamente baixo.
+
+A hiperinsuflação dinâmica é intensificada por taquipneia e expiração curta. O paciente encontra alívio parcial ao reduzir ritmo e expirar mais lentamente, inclusive com lábios semicerrados. Isso explica o valor da reabilitação e do treino de estratégias respiratórias, mas **não** transforma exercícios em cura do enfisema ou substituto dos medicamentos indicados.
+
+### 16.3 Difusão alveolocapilar e DLCO
+
+A difusão de monóxido de carbono (DLCO) é teste fisiológico indireto da transferência gasosa pela membrana alveolocapilar; reduz-se em parte dos pacientes com enfisema, que perderam superfície de troca. O valor também é influenciado por hemoglobina, perfusão pulmonar, tabagismo recente e patologias vasculares/intersticiais. Uma DLCO muito baixa em pessoa pouco obstruída requer investigar doença vascular pulmonar, anemia e formas particulares de enfisema. Não interpretar DLCO isolada como “oxigenação habitual”: a saturação e os gases de sangue em repouso, esforço e sono informam dimensões diferentes.
+
+## 17. Diagnóstico além da primeira espirometria: perguntas que evitam erros
+
+### 17.1 A busca de exposições é longitudinal
+
+Quantifique tabagismo em **maços-ano**: maços por dia multiplicados pelos anos de consumo (um maço convencional de 20 cigarros). Um paciente que fumou meio maço por 30 anos tem 15 maços-ano; uma pessoa que fumou dois maços por 10 anos tem 20. A conta ajuda a estimar exposição, mas **não** determina certeza de DPOC nem cobre biomassa, vapores, poeiras e fumo passivo. Pergunte sobre fogão a lenha em ambiente fechado, solventes, mineração, silagem, fertilizantes, tabaco aquecido e vape. Biomassa pode produzir fenótipo com menor enfisema extenso e mais alterações de pequenas vias aéreas, mas há sobreposição clínica.
+
+Considere história de prematuridade, infecções respiratórias intensas na infância, asma mal controlada e exposição contínua, pois função pulmonar máxima reduzida no início da vida adulta pode contribuir para a obstrução identificada décadas depois. DPOC não é sinônimo de tabagismo atual: ex-fumantes também podem apresentar doença e devem receber medidas eficazes.
+
+### 17.2 Exames complementares: indique pela dúvida clínica
+
+**Radiografia:** auxilia a ver hiperinsuflação, cardiomegalia, pneumonia e massas, mas pode ser normal em doença inicial. **Tomografia:** caracteriza áreas enfisematosas, bronquiectasias, nódulos e alterações intersticiais, e orienta discussão de procedimentos específicos; não é necessária para confirmar cada diagnóstico simples de DPOC. **Gasometria arterial:** interpreta oxigenação, ventilação e equilíbrio ácido-base quando há hipoxemia relevante, risco de hipercapnia ou doença grave. **ECG e ecocardiograma:** investigam arritmia, insuficiência cardíaca e hipertensão pulmonar quando sintomas/sinais justificam. **Hemograma:** anemia e policitemia podem interferir na dispneia; eosinófilos podem ajudar na previsão de resposta a CI em exacerbações recorrentes.
+
+**Diagnósticos associados importantes:** câncer de pulmão, insuficiência cardíaca, depressão/ansiedade, apneia obstrutiva do sono, bronquiectasias, doença cardiovascular aterosclerótica, osteoporose e desnutrição. Não assumir que todo novo sintoma de um paciente conhecido é “mais DPOC”: dor torácica nova merece avaliação específica; perda ponderal e hemoptise não devem ser atribuídas automaticamente ao enfisema.
+
+## 18. Interpretação integrada da gasometria na exacerbação
+
+### 18.1 Três leituras sucessivas
+
+**Primeiro: há acidemia ou alcalemia?** Um pH abaixo do intervalo normal indica acidemia. **Segundo: qual componente acompanha a mudança?** PaCO2 aumentada com pH reduzido aponta componente de acidose respiratória; bicarbonato pode se elevar por compensação renal. **Terceiro: há hipoxemia e qual é o contexto?** Saturação, PaO2, FiO2, clínica e perfusão determinam gravidade e suporte.
+
+**Caso de interpretação 1:** pH 7,36; PaCO2 59 mmHg; bicarbonato 32 mEq/L. A pessoa pode apresentar retenção crônica de CO2 com compensação renal, dependendo de história e estabilidade. **Caso 2:** pH 7,24; PaCO2 78 mmHg; bicarbonato 33 mEq/L. Há acidemia respiratória apesar de bicarbonato elevado: provável descompensação aguda sobre retenção crônica; deve ser avaliada imediatamente para suporte ventilatório. **Caso 3:** pH 7,46, PaCO2 28 mmHg e hipoxemia em paciente com dor pleurítica súbita. Taquipneia/hipocapnia não comprovam exacerbação de DPOC: embolia pulmonar ou pneumonia podem ser alternativas graves.
+
+Não usar bicarbonato aumentado como garantia de segurança: a compensação depende do tempo e pode coexistir com distúrbios metabólicos complexos. Em doente com sepse, insuficiência renal ou diuréticos, a análise precisa contemplar processos mistos.
+
+### 18.2 Por que a saturação pode enganar
+
+A oximetria informa porcentagem da hemoglobina que parece ligada a oxigênio, não **PaCO2**, não ventilação minuto efetiva, não reserva respiratória nem adequação da perfusão. Em intoxicação por monóxido de carbono, leitura de oxímetro convencional pode ser falsamente tranquilizadora; em choque/vasoconstrição, a medição periférica pode perder confiabilidade. Em paciente sonolento, acidêmico e com SpO2 de 90% enquanto recebe oxigênio, não conclua estabilidade sem verificar ventilação.
+
+### 18.3 Oxigênio controlado não significa privar o paciente de oxigênio
+
+Na exacerbação hipoxêmica em risco de retenção de CO2, recomendação usual é meta **SpO2 88–92%**, ajustada após gasometria e avaliação clínica. Esse alvo preserva oxigenação enquanto reduz chance de piora de hipercapnia por alterações de ventilação-perfusão e mecanismos adicionais. Em choque, parada, hipoxemia refratária e outras urgências, prioridades de ressuscitação não devem ser sacrificadas a um número sem contexto; o profissional reavalia ventilação e circulatório de forma simultânea. O oxigênio deve ser titulado e registrado em prontuário com **dispositivo, fluxo ou FiO2**, saturação, resposta e gasometria quando indicada.
+
+## 19. Tratamento medicamentoso estável — detalhe farmacológico
+
+### 19.1 Broncodilatadores: qual é a diferença funcional entre SABA, LABA, SAMA e LAMA?
+
+**SABA** estimula receptores beta-2 do músculo liso e oferece alívio rápido de sintomas; tremor, taquicardia e hipocalemia podem ocorrer com uso excessivo. **LABA** possui duração prolongada, reduz broncoconstrição por estimulação beta-2 e é usado na manutenção. **SAMA** inibe receptores muscarínicos por menor duração; o ipratrópio é exemplo em contextos de resgate. **LAMA** bloqueia tônus colinérgico por período prolongado e é componente central da manutenção, especialmente na estratégia combinada.
+
+Combinar LABA e LAMA atua por mecanismos diferentes e pode ampliar broncodilatação com menor necessidade de aumentar muito um único agente. Efeitos anticolinérgicos locais incluem boca seca, risco de retenção urinária em pessoas predispostas e cautela em contato do aerossol com os olhos em glaucoma de ângulo estreito. Beta-agonistas exigem atenção a taquiarritmias e uso excessivo; em geral, fármacos inalatórios têm menos efeitos sistêmicos que alternativas orais, mas dose, técnica e interações continuam relevantes.
+
+### 19.2 Corticoide inalatório: escolher por eventos, não por “obstrução forte”
+
+**Não indicar CI isolado como monoterapia de DPOC.** Seu benefício na prevenção de exacerbações tende a aumentar com eosinófilos sanguíneos mais altos e histórico de eventos. Contagem <100 células/µL aponta benefício esperado pequeno em muitos contextos; ≥300 células/µL aumenta possibilidade de resposta, especialmente em quem exacerba; entre 100 e 300, considerar exacerbações, história e risco. História de pneumonias frequentes, micobacteriose ativa ou outra condição infecciosa pode desfavorecer CI. Em paciente com asma concomitante, o esquema precisa contemplar tratamento anti-inflamatório da asma, de modo que não se deve retirar CI sem avaliação da doença asmática.
+
+**Exemplo de armadilha:** homem de 58 anos tem VEF1 28% do previsto, sem exacerbações no último ano, eosinófilos 70 células/µL e pneumonia recente. A gravidade obstrutiva é alta, mas isso não torna terapia tripla automática; investigar sintomas, uso de broncodilatadores, reabilitação e outras causas de dispneia. Já paciente com VEF1 55%, duas exacerbações e eosinófilos 430 pode ter forte indicação de avaliar benefício de CI em terapia combinada. A decisão não é definida por VEF1 isolado.
+
+### 19.3 Regimes em diferentes sistemas de saúde
+
+O PCDT brasileiro de 2026 informa quais formulações são oferecidas e os critérios de acesso; a GOLD 2026 estrutura decisões internacionais, com ferramentas adicionais nem sempre disponíveis no SUS. **Níveis de evidência clínicos e regras de financiamento são dimensões diferentes**. Em provas brasileiras, é útil mencionar explicitamente “conforme GOLD 2026” quando se discute grupo E após uma exacerbação moderada, e “segundo o PCDT brasileiro” ao tratar de dispensação de determinados inaladores.
+
+Quando há falta de medicamento, evitar simplesmente substituir associação tripla por três dispositivos sem conferir doses, compatibilidade, capacidade de usar cada um e risco de erro. A complexidade reduz adesão. Se há disponibilidade de um dispositivo único adequado, este pode facilitar rotina; a prioridade é entrega pulmonar correta da terapia indicada.
+
+### 19.4 Corticoide oral não é tratamento de manutenção habitual
+
+Prednisona/prednisolona sistêmica acelera recuperação em exacerbações moderadas/graves, mas **uso crônico** para estabilizar DPOC geralmente produz toxicidade sem benefício sustentado proporcional: osteoporose, fraqueza muscular, ganho ponderal, hipertensão, infecção, diabetes, fragilidade e supressão adrenal. A Linha de Cuidado nacional descreve curso **prednisona/prednisolona 40 mg/dia por cinco dias** nos cenários indicados de exacerbação, e o PCDT vigente deve ser consultado antes da publicação da prescrição final. Não existe indicação de “tomar corticoide por conta própria a cada chiado” sem plano individual.
+
+## 20. Antibioticoterapia na exacerbação — justificar antes de escolher
+
+A maioria das exacerbações pode ter contribuição de vírus, bactérias ou fatores não infecciosos. Escarro amarelo isolado não comprova etiologia bacteriana, assim como febre isolada não confirma pneumonia. Em exacerbação, a tríade clínica clássica envolve **aumento de dispneia, aumento de volume de escarro e mudança para escarro purulento**. Antibiótico é mais considerado quando há purulência acompanhada de piora respiratória/expectoração, exacerbação grave ou necessidade de suporte ventilatório, com ajuste aos protocolos atuais. A radiografia é útil quando pneumonia pode mudar antibiótico ou local de atendimento.
+
+**Analisar individualmente:** risco de bactéria resistente, tratamento antibiótico nos últimos três meses, internações recentes, bronquiectasias, colonização documentada, alergias verdadeiras, QT prolongado, interações farmacológicas, função renal, exposição a fluoroquinolonas e epidemiologia local. Agentes usuais de exacerbação bacteriana incluem Haemophilus influenzae, Streptococcus pneumoniae e Moraxella catarrhalis. Pseudomonas é possibilidade selecionada quando há fatores de risco, não explicação automática para todo paciente GOLD 4.
+
+| Situação | Decisão racional |
+| --- | --- |
+| Piora leve de dispneia após exposição a fumaça, sem purulência ou instabilidade | Intensificar broncodilatação, remover gatilho e observar resposta; antibiótico não automático |
+| Purulência nova e dispneia/volume de escarro aumentado | Avaliar indicação antibiótica, alergias, comorbidades e risco local |
+| Infiltrado focal novo com febre e hipoxemia | Pensar em pneumonia associada, usar linha de cuidado de PAC e avaliar necessidade hospitalar |
+| Ventilação invasiva ou não invasiva por exacerbação infecciosa grave | Avaliação hospitalar e antimicrobiano conforme quadro e epidemiologia |
+| Ausência de melhora após dias de tratamento apropriado | Rever diagnóstico, resistência, adesão, forma de administração e complicações |
+
+**Duração e escolha específica** dependem do agente provável, gravidade e diretriz institucional. Não acrescentar macrolídeo profilático para toda pessoa com expectoração recorrente: essa estratégia é reservada a fenótipos seletos de exacerbadores, com consideração de resistência, alteração auditiva, QT e avaliação especializada. Para paciente com risco de tuberculose, evitar cursos repetidos de fluoroquinolona que possam mascarar parcialmente o quadro e retardar diagnóstico.
+
+## 21. Terapia ventilatória: quando a VNI ajuda e quando atrapalha
+
+### 21.1 Razão fisiológica da VNI na acidose hipercápnica
+
+Em exacerbação com resistência aumentada das vias aéreas e hiperinsuflação dinâmica, músculos respiratórios trabalham contra carga elevada. A ventilação não invasiva, quando aplicada por máscara com pressão positiva inspiratória/expiratória e acompanhamento competente, auxilia volume corrente e reduz trabalho ventilatório. Pode melhorar pH e PaCO2 em acidose hipercápnica aguda e reduzir necessidade de intubação em pacientes adequadamente selecionados. O benefício depende da **indicação correta, máscara, cooperação, ajuste e observação nas primeiras horas**.
+
+### 21.2 Parâmetros de entrada não são receita para todos
+
+Um padrão frequentemente empregado para considerar VNI é **pH ≤7,35, PaCO2 >45 mmHg e desconforto respiratório**, após medidas iniciais, sobretudo quando há taquipneia relevante. pH muito reduzido ou hipercapnia importante aumenta risco de falha e exige equipe e estrutura adequadas; não é contraindicação absoluta isolada se há possibilidade de avaliação intensiva, mas o tempo de tentativa deve ser cuidadosamente monitorado. O profissional observa melhora de consciência, FR, esforço, volume ventilatório, oxigenação e gasometria. A ausência de resposta inicial, deterioração ou impossibilidade de proteger a via aérea apontam necessidade de escalonamento. Esses números são limiares para **consideração**, não automação de decisão.
+
+### 21.3 Contraindicações e falha que não podem ser ignoradas
+
+Parada cardiorrespiratória, incapacidade de proteger via aérea, vômitos persistentes, aspiração ativa, instabilidade hemodinâmica não controlada, trauma facial ou falta de possibilidade de ajuste/supervisão podem tornar a VNI insegura. Rebaixamento de consciência exige distinguir sonolência leve potencialmente reversível por hipercapnia de coma com perda de proteção de via aérea; a decisão compete à equipe capacitada em ambiente monitorado. Não “insistir por protocolo” em máscara apesar de piora da acidose e rebaixamento. Quando indicada, ventilação invasiva em DPOC requer atenção a **tempo expiratório prolongado** para evitar auto-PEEP e hiperinsuflação, com estratégia individual e controle de pressões.
+
+### 21.4 Intubação e auto-PEEP: por que ventilação rápida pode prejudicar
+
+Uma frequência respiratória excessiva ou volume minuto demasiadamente alto pode não permitir esvaziamento do pulmão obstruído. O volume residual aumenta ciclo a ciclo, elevando pressão intratorácica, diminuindo retorno venoso e piorando hipotensão; barotrauma e pneumotórax também são riscos. Em ventilação invasiva, a equipe deve priorizar tempo expiratório, observar curvas de fluxo e pressões e aceitar abordagem que evite aprisionamento, sob supervisão intensiva. A “normalização rápida do CO2” não é objetivo isolado se exige ventilação mecânica que agrave hemodinâmica.
+
+## 22. Oxigenoterapia de longa duração, sono e exercício
+
+### 22.1 Oxigenoterapia crônica não é tratamento da sensação de falta de ar
+
+O benefício de sobrevida da oxigenoterapia domiciliar prolongada foi demonstrado em DPOC com hipoxemia crônica grave selecionada. Critérios clássicos envolvem PaO2 muito reduzida em repouso ou valores menos baixos associados a complicações como hipertensão pulmonar/cor pulmonale ou policitemia, com avaliação em estabilidade e conforme PCDT. A decisão não se baseia em SpO2 tomada no auge de uma exacerbação; oxigenação pode melhorar semanas depois da alta. É preciso considerar segurança domiciliar, especialmente **risco de incêndio em pessoas que fumam**, e capacidade de usar corretamente o equipamento.
+
+A oferta de oxigênio prolongado sem hipoxemia elegível não melhora necessariamente desfechos de sobrevida, e pode criar dependência funcional desnecessária do equipamento. Antes de prescrever, documentar medidas, correção de situações reversíveis, indicação, horas propostas, modo de fornecimento e data de reavaliação.
+
+### 22.2 Distúrbios do sono e apneia
+
+A DPOC não exclui síndrome de apneia obstrutiva do sono. Suspeite diante de ronco intenso, pausas respiratórias, sonolência diurna ou hipertensão resistente. A coexistência pode aumentar dessaturação noturna e risco cardiovascular; demanda investigação específica e estratégia positiva de pressão quando indicada. Não prescrever ventilação domiciliar apenas com base na sensação de cansaço matinal. Pacientes selecionados com hipercapnia crônica persistente podem receber suporte ventilatório domiciliar após avaliação especializada, mas isso não é regra para toda DPOC grave espirométrica.
+
+### 22.3 Atividade física e reabilitação como terapia estruturada
+
+Reabilitação pulmonar integra exercícios aeróbios graduais, fortalecimento, educação, conservação de energia e suporte para adesão. O treinamento procura reduzir descondicionamento e percepção de dispneia ao esforço, mesmo quando não ocorre grande aumento do VEF1. O paciente deve aprender a reconhecer dispneia esperada do exercício supervisionado versus dor torácica, tontura, síncope ou dessaturação importante que exige interrupção e avaliação. A prescrição precisa considerar cardiopatia, osteoporose, fragilidade e risco de quedas. Orientar “faça caminhada” sem avaliar limitações, meta e suporte pode ser insuficiente.
+
+## 23. Manejo longitudinal na APS: uma consulta estruturada que cabe no mundo real
+
+### 23.1 Antes da consulta: dados mínimos que mudam decisão
+
+Anotar carga tabágica e estado atual de cessação; medicação por **princípio ativo e dispositivo**, não apenas pela cor da embalagem; exacerbações nos últimos doze meses e quais precisaram de prednisona, antibiótico, urgência ou internação; oxigênio domiciliar; SpO2 basal; espirometria confirmatória e histórico de VEF1; comorbidades e vacinação. A contagem de exacerbações depende de evento real, e não de quantas vezes o paciente teve tosse.
+
+### 23.2 Durante a consulta: cinco perguntas
+
+1. **Qual tarefa de vida cotidiana ficou mais difícil?** Pergunte por banhar-se, caminhar, trabalhar, preparar comida, subir escadas e sair de casa. Explore adaptação silenciosa de atividades.
+2. **Qual foi a pior piora desde a última consulta?** Registre as intervenções necessárias e se houve internação ou VNI.
+3. **Como você usa seu inalador?** Solicite demonstração real e observe erro por coordenação ou incapacidade de inspirar adequadamente.
+4. **Qual exposição continua presente?** Tabaco, biomassa, ocupação, poluição e fumaça doméstica. Ofereça suporte concreto para cessação.
+5. **Há outra doença concorrente?** ICC, arritmia, câncer, anemia, apneia do sono e ansiedade podem aumentar dispneia mesmo se broncodilatação está adequada.
+
+### 23.3 Depois da consulta: plano que a pessoa consegue cumprir
+
+Um bom plano de seguimento especifica medicamentos de uso contínuo, inalador de resgate, técnica, atividade/reabilitação, vacinação, metas de cessação tabágica, sinais de alarme e data de retorno. Em paciente exacerbador, informar como contatar serviço quando houver escarro purulento, aumento rápido da dispneia ou redução de tolerância ao esforço, sem incentivar automedicação antibiótica indiscriminada. Revisão precoce após alta é fundamental para corrigir fatores que levaram ao evento; deixar o paciente meses sem reavaliação pode desperdiçar oportunidade de prevenir reinternação.
+
+## 24. Prevenção, comorbidades e escolhas centradas no paciente
+
+### 24.1 Cessação de tabagismo e prevenção de exposição
+
+A interrupção do tabaco é uma das intervenções de maior impacto sobre progressão de sintomas e risco; avaliar dependência, tentativas anteriores, motivação, gatilhos e apoio familiar. Terapias comportamentais e farmacológicas para cessação podem ser oferecidas conforme acesso e contraindicações. Não considerar o paciente “sem chance de melhora” por obstrução avançada: cessar exposição continua benéfico, e o abandono precisa ser apoiado sem julgamento moral.
+
+### 24.2 Cardiovascular e os múltiplos componentes da dispneia
+
+DPOC e cardiopatia partilham tabagismo, idade, inflamação e fatores de risco. A insuficiência cardíaca pode ser subdiagnosticada porque se atribui edema e dispneia ao “pulmão”. Novas palpitações exigem ECG, e dor torácica atípica deve levar à avaliação de síndrome coronariana. Quando há perda de condicionamento, broncodilatação isolada pode produzir ganho incompleto; o cuidado multidisciplinar melhora capacidade funcional.
+
+### 24.3 Saúde óssea, estado nutricional e qualidade de vida
+
+Baixo peso, sarcopenia e osteoporose aumentam fragilidade e risco de quedas; cursos repetidos de corticosteroide sistêmico pioram o problema. Paciente com IMC baixo e perda muscular pode necessitar avaliação nutricional associada a exercício supervisionado. Em pessoas com obesidade, excesso de peso agrava mecânica ventilatória e apneia; recomendações devem evitar estigma e avaliar comorbidades. Sintomas de ansiedade e depressão podem ser tratados sem atribuir toda a dispneia a causa emocional; hipoxemia e cardiopatia precisam de investigação própria.
+
+### 24.4 Câncer e novos sintomas de alarme
+
+Hemoptise, emagrecimento inexplicado, infecção repetida no mesmo segmento e dor persistente demandam avaliação etiológica. O paciente com DPOC frequentemente possui fatores de risco para câncer de pulmão, mas a seleção para rastreamento com TC de baixa dose depende de idade, carga tabágica e protocolos vigentes, não de diagnóstico de DPOC isolado. Não interpretar achado radiográfico antigo como prova de que uma nova opacidade é benigna.
+
+## 25. Populações especiais
+
+### 25.1 Idosos frágeis
+
+Em idosos, avaliações devem abranger funcionalidade, delirium, capacidade de deglutir, polifarmácia, lesão renal e habilidade para manipular inaladores. A dispneia pode limitar autocuidado; o uso de múltiplos dispositivos de preparação complexa eleva risco de falha de dose. Escolher tratamento eficaz exige levar em conta cuidador, acuidade visual e destreza manual. Exacerbações podem se manifestar como queda, confusão ou redução de alimentação, sem produção volumosa de escarro.
+
+### 25.2 Gestantes com obstrução crônica
+
+DPOC é menos frequente em gestantes do que asma, mas pode ocorrer em pessoas com deficiência de alfa-1-antitripsina, tabagismo intenso ou outra doença pulmonar crônica. Dispneia gestacional não é diagnóstico suficiente para excluir pneumonia, embolia ou piora de obstrução. A avaliação da oxigenação materna e risco fetal exige equipe integrada; doses, segurança de antimuscarínicos e broncodilatadores na gestação dependem de evidência e contexto clínico específico. Não transportar automaticamente regime de adulto não gestante para esse cenário.
+
+### 25.3 Pessoas imunodeprimidas e bronquiectasias
+
+Tosse, febre e piora respiratória podem refletir pneumonia bacteriana, tuberculose, fungos ou outros agentes. O uso de corticosteroide inalatório deve ser reavaliado se houver infecções recorrentes; a decisão depende de benefício real na prevenção de exacerbações e risco individual. Pacientes com bronquiectasias têm perfil de infecção e necessidade de culturas diferentes de DPOC sem bronquiectasias. Não aumentar apenas a broncodilatação diante de expectoração muito volumosa e febre recorrente sem investigar.
+
+## 26. Casos clínicos adicionais com dados e interpretação
+
+### Caso 7 — Espirometria correta, grupo diferente da gravidade
+
+Homem de 61 anos, ex-tabagista, VEF1/CVF pós-broncodilatador 0,53, VEF1 69% previsto, mMRC 3 e nenhuma exacerbação nos últimos doze meses. **Diagnóstico:** obstrução persistente compatível com DPOC no contexto clínico. **Gravidade espirométrica:** GOLD 2; **grupo sintomático:** B se não há eventos que o elevem a E, conforme critérios aplicáveis. **Conduta:** avaliar disponibilidade de LABA/LAMA, técnica e reabilitação; pesquisar anemia e cardiopatia para dispneia desproporcional. **Por que importa:** nem toda pessoa com grande dispneia tem GOLD 4.
+
+### Caso 8 — Acidose aguda sobre componente crônico
+
+Mulher de 73 anos com DPOC, febre e piora do escarro apresenta pH 7,23, PaCO2 75 mmHg, HCO3 31 mEq/L e SpO2 90% com oxigênio controlado. **Hipótese:** insuficiência respiratória hipercápnica aguda possivelmente sobre retenção crônica. **Interpretação:** HCO3 elevado aponta compensação prévia, mas pH acidêmico denuncia descompensação. **Conduta:** estabilização, gasometria/monitorização seriada, broncodilatação, tratamento de precipitante e avaliação de VNI ou via aérea invasiva conforme proteção e evolução. **Por que importa:** o oxímetro não mostra pH nem CO2.
+
+### Caso 9 — Escarro purulento e RX com consolidação
+
+Homem de 69 anos com DPOC conhecida apresenta dispneia e escarro purulento, mas radiografia também mostra nova consolidação basal e temperatura elevada. **Problema:** PAC associada à exacerbação, não simplesmente “bronquite do DPOC”. **Raciocínio:** doença infecciosa parenquimatosa muda estratificação de gravidade e antibioticoterapia. **Conduta:** tratar e acompanhar como pneumonia associada, com broncodilatação e oxigenação apropriadas, considerando comorbidades. **Por que importa:** distinguir infecção de via aérea de infiltrado alveolar.
+
+### Caso 10 — Quando não indicar oxigênio domiciliar de forma automática
+
+Mulher de 66 anos com DPOC estável relata muita dispneia ao subir escadas; SpO2 em repouso 95%, sem gasometria de hipoxemia significativa prévia. Solicita “oxigênio contínuo”. **Raciocínio:** dispneia pode decorrer de hiperinsuflação, perda muscular, ansiedade, cardiopatia ou outras causas; a oferta de oxigênio de longa duração requer critérios de hipoxemia crônica em estabilidade. **Conduta:** reavaliar broncodilatação, capacidade funcional, reabilitação e diagnósticos concorrentes; pesquisar dessaturação em exercício se indicada. **Por que importa:** oxigênio não é analgésico universal da falta de ar.
+
+### Caso 11 — Eosinófilos altos, exacerbações e história de pneumonia
+
+Homem de 71 anos com DPOC confirmada usa LABA/LAMA corretamente, apresenta duas exacerbações tratadas com corticoide sistêmico no ano e eosinófilos 350 células/µL, mas teve pneumonia bacteriana uma vez. **Decisão:** considerar potencial benefício de tripla terapia versus risco de pneumonia associada a CI; revisar documentação dos episódios, vacina, bronquiectasias e acesso. **Conduta:** decisão individual com PCDT vigente e seguimento; não classificar a pneumonia prévia isolada como proibição absoluta sem avaliar benefício. **Por que importa:** medicina baseada em risco não equivale a regra mecânica por único marcador.
+
+### Caso 12 — Apneia coexistente em paciente cansado
+
+Paciente de 57 anos com DPOC GOLD 2 está sempre cansado, ronca alto e tem pausas respiratórias testemunhadas. Oximetria basal diurna é relativamente preservada. **Hipótese:** apneia obstrutiva do sono coexistente. **Raciocínio:** a DPOC explica parte da dispneia, mas não encerra avaliação do sono; hipoxemia noturna e eventos cardiovasculares podem decorrer da coexistência. **Conduta:** investigação do sono e cuidado de fatores associados. **Por que importa:** não aumentar broncodilatadores para tratar problema fisiológico diferente.
+
+## 27. Questões adicionais com cálculos e condutas
+
+### Questão 9 — Maços-ano
+Paciente fumou 15 cigarros/dia durante 28 anos. Considerando 20 cigarros por maço, carga aproximada:
+A) 7 maços-ano. B) 21 maços-ano. C) 28 maços-ano. D) 42 maços-ano.
+**Gabarito B.** 15/20 × 28 = **21**. **A** subestima pela metade; **C** ignora cigarros/dia; **D** dobra incorretamente exposição. **Mini-revisão:** quantificar exposição não substitui investigação de biomassa.
+
+### Questão 10 — Interpretação da relação
+Paciente apresenta VEF1 1,7 L, CVF 3,4 L, após broncodilatador. Qual razão aproximada?
+A) 0,25. B) 0,50. C) 0,80. D) 1,50.
+**Gabarito B.** 1,7/3,4 = **0,50**, com obstrução pelo corte operacional GOLD em contexto apropriado. **A** erra cálculo; **C** confunde valor; **D** impossível como proporção nesse caso. **Mini-revisão:** a relação confirma limitação; VEF1 previsto classifica intensidade.
+
+### Questão 11 — Gasometria e oxímetro
+Pessoa em crise de DPOC tem pH 7,25, PaCO2 74 mmHg e SpO2 90% em oxigênio controlado. Interpretação:
+A) SpO2 prova ventilação normal. B) Hipercapnia com acidemia exige reavaliação e suporte ventilatório conforme clínica. C) Bicarbonato pode ser ignorado em qualquer contexto. D) Insuficiência respiratória está excluída.
+**Gabarito B.** **A/D** confundem oxigenação e ventilação; **C** impede reconhecer compensação e distúrbios mistos. **Mini-revisão:** oxímetro não mede CO2 nem pH.
+
+### Questão 12 — Antibiótico
+Em qual situação o uso de antibiótico requer maior consideração no manejo da exacerbação?
+A) Dispneia mínima após caminhar rápido, sem mudança de escarro. B) Nova purulência com piora de dispneia e volume de secreção. C) Tosse estável há anos, sem sinais de mudança. D) Espirometria GOLD 4 em pessoa assintomática.
+**Gabarito B.** **A/C** carecem de sinais de infecção bacteriana atual; **D** mede função pulmonar, não etiologia da crise. **Mini-revisão:** fenótipo clínico e gravidade importam mais que rótulo espirométrico.
+
+### Questão 13 — Corticoide inalatório
+Homem com DPOC, sem exacerbações, eosinófilos 55 células/µL e pneumonia recente. Qual princípio?
+A) CI é obrigatório porque VEF1 é baixo. B) Preferir análise de benefício/risco, evitando uso indiscriminado de CI. C) CI isolado deve substituir todos os broncodilatadores. D) O número de pneumonias é irrelevante.
+**Gabarito B.** **A** confunde função e risco; **C** é monoterapia inadequada; **D** descarta importante evento adverso. **Mini-revisão:** risco de exacerbação e eosinófilos orientam benefício estimado.
+
+### Questão 14 — VNI
+Qual situação demanda maior preocupação ao considerar VNI?
+A) Paciente acordado e colaborativo com acidose hipercápnica moderada. B) Rebaixamento progressivo, vômitos e incapacidade de proteger via aérea. C) Taquipneia sem acidemia e estabilidade. D) Ausência de radiografia prévia.
+**Gabarito B.** **A** pode ser bom candidato com monitorização; **C** não implica contraindicação; **D** não determina segurança ventilatória. **Mini-revisão:** falha/contraindicação de VNI não deve retardar suporte avançado.
+
+### Questão 15 — Oxigenoterapia crônica
+Qual afirmação é verdadeira?
+A) Toda dispneia exige oxigênio contínuo. B) Critérios são baseados em hipoxemia crônica grave confirmada em estabilidade e condições associadas. C) A SpO2 da crise define obrigatoriamente oxigênio para toda a vida. D) O hábito de fumar não altera segurança do equipamento.
+**Gabarito B.** **A/C** tratam desconforto como critério e confundem períodos agudo/crônico; **D** ignora risco de incêndio. **Mini-revisão:** confirmar elegibilidade e reavaliar após recuperação de exacerbação.
+
+### Questão 16 — Grupos e gravidade
+Pessoa com DPOC confirmada apresenta VEF1 35% previsto, mMRC 1, nenhuma exacerbação no ano. Qual conclusão?
+A) Obrigatoriamente grupo E porque o VEF1 é GOLD 3. B) GOLD 3 espirométrico não define sozinho grupo A/B/E. C) Sem doença porque não há exacerbação. D) Deve receber corticosteroide oral contínuo.
+**Gabarito B.** **A** confunde escalas; **C** ignora obstrução documentada; **D** indica tratamento tóxico sem justificativa. **Mini-revisão:** grupo ABE considera sintomas e histórico de exacerbações, separadamente do VEF1 previsto.
+
+## 28. Matriz avançada de autossuficiência e escopo futuro
+
+| Objetivo de aprendizagem | Âncora desta apostila | Estado técnico |
+| --- | --- | --- |
+| Calcular maços-ano, VEF1/CVF e grau GOLD | Seções 5, 16 e questão 9–10 | Desenvolvido |
+| Explicar hiperinsuflação dinâmica | Seções 1, 6 e 16 | Desenvolvido |
+| Ler acidose respiratória com compensação | Seções 6 e 18 | Desenvolvido |
+| Diferenciar GOLD 2026 de PCDT brasileiro | Seção 5 e caso 3 | Desenvolvido; atualizar se norma mudar |
+| Escolher SABA/SAMA, LABA/LAMA e CI por risco | Seções 8, 19 e 20 | Desenvolvido conceitualmente |
+| Indicar VNI ou reconhecer sua falha | Seções 10 e 21 | Desenvolvido conceitualmente |
+| Saber quem recebe oxigênio domiciliar | Seções 11 e 22 | Desenvolvido; limiares e reavaliação ainda exigem quadro operativo nacional |
+| Integrar reabilitação, nutrição, comorbidades | Seções 22–25 | Desenvolvido |
+| Reconhecer situações de alta morbidade | Casos 1–12 | Desenvolvido |
+| Prescrever doses exatas de antibióticos para todos os cenários | Seção 20 | **Pendente, requer antibiograma e validação clínica** |
+| Cuidar de DPOC em gestante e criança | Seção 25 | **Exige referência própria de população especial** |
+
+**Fontes conferidas nesta ampliação:**
+- Ministério da Saúde. *PCDT da Doença Pulmonar Obstrutiva Crônica*, anexo atualizado em 29/01/2026, https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view.
+- Global Initiative for Chronic Obstructive Lung Disease. *GOLD 2026 Report and Pocket Guide*, https://goldcopd.org/2026-gold-report-and-pocket-guide/.
+- Ministério da Saúde. *Linha de Cuidado DPOC — Avaliação inicial e conduta*, https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-hospitalar/avaliacao-conduta/. A página usa fontes de 2021 em determinadas partes; confirmar pontos discordantes contra PCDT/GOLD atuais.
+- Documentos do Drive: \`DPOC estável.pdf\`, \`DPOC exacerbada.pdf\`. Material de comparação, não referência primária de conduta.
+
+**Estado editorial:** ampliação concluída como etapa de redação, não como revisão final. Ainda faltam revisão médica da tabela farmacológica completa, figuras licenciadas/aprovadas, verificação de comprimento **didático útil**, matriz de todos os desfechos, identidade visual/renderer, audit de sintaxe e testes PWA. **Não publicar.**
+
 ## Próximas ampliações mandatórias
 Expandir para fisiologia normal, epidemiologia, fisiopatologia completa, critérios diagnósticos quantitativos verificados, algoritmos diferenciados por gravidade e populações, tabelas de doses com fontes primárias atuais, contraindicacões, acompanhamento, prevenção, complicações, casos clássicos/atípicos/emergenciais e questões com justificativa de cada alternativa. Conferir licença das imagens; utilizar somente fila Admin, sem embutir arquivos clínicos não aprovados. Revisar ≥60.000 caracteres didáticos úteis e renderização desktop/PWA antes de qualquer index.html ou catálogo.
