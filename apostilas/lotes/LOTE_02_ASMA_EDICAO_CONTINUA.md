@@ -60,6 +60,44 @@ Não banalize red flags: hemoptise, febre persistente, perda de peso, hipoxemia 
 
 **Pulo do Gato:** a presença de sibilos reforça uma hipótese de estreitamento do fluxo, não revela por si só a causa. Na crise muito grave, a ausência de sibilos pode indicar fluxo de ar tão baixo que não há ruído audível: “tórax silencioso” com exaustão é sinal de perigo, não de melhora.
 
+
+### 2.2 Asma relacionada ao trabalho: identificar, demonstrar e proteger o paciente
+
+A relação entre asma e ocupação não se resume à pergunta “trabalha com poeira?”. Existem pelo menos dois cenários: **asma ocupacional**, na qual o próprio ambiente de trabalho desencadeia doença nova, por sensibilização ou irritante intenso, e **asma agravada pelo trabalho**, em que uma doença preexistente piora com exposições ocupacionais. Essa diferença tem implicações epidemiológicas, previdenciárias e terapêuticas. O paciente pode perceber sintomas durante a jornada, ao final do expediente ou até horas depois; por isso, o padrão nem sempre é “chiou dentro da fábrica, melhorou na porta”.
+
+O adulto com asma nova, retorno frequente de crises ou rinite persistente deve ser perguntado sobre **ocupação atual e anterior**, mudanças de tarefa, produtos usados, presença de colegas sintomáticos, ventilação do ambiente, uso de proteção, turnos e padrão em férias/folgas. Exemplos de exposições: farinhas em panificadoras, látex ou desinfetantes em serviços de saúde, sensibilizantes usados em pintura automotiva, poeira de madeira, produtos de limpeza, vapores de químicos e contato com animais em laboratórios. O agente suspeito não deve ser deduzido apenas pelo cargo: um trabalhador da limpeza pode usar diferentes químicos a cada turno, e um profissional de saúde pode estar exposto a aerossóis, alérgenos ou agentes de limpeza.
+
+| Pergunta durante a consulta | Qual dado ela acrescenta? | Cuidado interpretativo |
+| --- | --- | --- |
+| Quando os sintomas começaram em relação ao emprego? | Temporalidade e possível latência após exposição | Início tardio não exclui sensibilização ocupacional |
+| Melhora nos fins de semana ou nas férias? | Indício de relação exposição-sintomas | Melhora fora do trabalho é sugestiva, **não prova** causalidade |
+| Há piora noturna nos dias de expediente? | Reconhece reação tardia após sair da exposição | Pode ser confundida com asma comum noturna |
+| Produtos ou tarefas mudaram antes da piora? | Delimita possível agente e condições de trabalho | Não afirmar etiologia específica sem investigação |
+| Outras pessoas no local adoeceram? | Pode revelar exposição compartilhada | Ausência de colegas doentes não exclui asma ocupacional |
+
+**Documentação objetiva:** confirmar asma por método apropriado e, quando possível, acompanhar **PFE seriado em dias de trabalho e de afastamento**. Protocolos especializados podem solicitar pelo menos quatro medições ao dia por semanas, incluindo períodos representativos em ambos os ambientes, com registro de horários, sintomas, medicamentos e atividades. Uma única medida na saída do expediente não é suficiente para demonstrar padrão. A interpretação dos registros e a escolha de provas complementares (broncoprovocação, sensibilização específica, testes especializados) dependem do serviço de Pneumologia/Medicina do Trabalho. **IgE específica positiva** pode evidenciar sensibilização, mas não confirma isoladamente que a exposição esteja causando doença clínica.
+
+**Conduta:** otimizar tratamento contendo CI, evitar exposição capaz de provocar crise grave, orientar proteção e discutir redução/cessação da exposição nociva com avaliação especializada. Não instruir o paciente a se expor deliberadamente para “provar a asma”. Uma mudança de emprego tem impacto social: documentar resultados, respeitar autonomia, discutir direitos de sigilo e encaminhar ao CEREST ou equipe de Medicina do Trabalho conforme rede local. O empregador não deve receber diagnóstico confidencial sem base legal ou autorização adequada.
+
+**Fontes:** GINA Strategy Report 2026, seção de asma relacionada ao trabalho; CDC/NIOSH, *Diagnosing Work-related Asthma* (2025), https://www.cdc.gov/niosh/asthma/hcp/diagnosing/index.html ; CDC/NIOSH, *Work-related Asthma: Early Recognition and Prevention* (2026), https://www.cdc.gov/niosh/bulletin/2026/asthma.html .
+
+### 2.3 Dispneia sem sibilos: obstrução laríngea induzível, respiração disfuncional e causas cardíacas
+
+A **obstrução laríngea induzível** envolve estreitamento transitório de estruturas laríngeas em situações desencadeantes, como exercício, irritantes ou estresse, e pode simular asma. Frequentemente predomina dificuldade para **inspirar**, sensação de fechamento da garganta e ruído inspiratório (estridor) mais evidente no pescoço do que no tórax. Na asma típica, a limitação é principalmente de fluxo **expiratório**; contudo, em crises graves há sinais mistos e não se pode confiar em uma única descrição do paciente. A coexistência de ambos é possível.
+
+Na obstrução laríngea durante exercício, a falta de ar pode atingir seu auge **durante esforço intenso** e melhorar rapidamente após cessá-lo; na broncoconstrição induzida por exercício, os sintomas podem surgir ou piorar **após** terminar a atividade. Esse padrão temporal é pista, não confirmação. A laringoscopia realizada **durante sintomas** ou provocação apropriada em serviço experiente pode evidenciar obstrução. Espirometria normal fora do episódio não afasta nem asma intermitente nem obstrução laríngea. Uma alça inspiratória achatada pode sugerir obstrução variável extratorácica, mas ausência do sinal em repouso não exclui o diagnóstico.
+
+| Pista clínica | Asma | Obstrução laríngea induzível | Outra possibilidade |
+| --- | --- | --- | --- |
+| Fase respiratória mais desconfortável | Frequentemente expiração | Frequentemente inspiração | Pode variar |
+| Ruído mais evidente | Sibilos torácicos | Estridor/ruído no pescoço | Roncos e sibilos por outras obstruções |
+| Resposta a broncodilatador | Pode melhorar com terapia correta | Em geral não é resposta específica | Placebo ou coexistência complicam interpretação |
+| Espirometria fora do episódio | Pode ser normal | Pode ser normal | Não fecha diagnóstico |
+| Confirmação quando a dúvida persiste | Obstrução variável, broncoprovocação selecionada | Laringoscopia com sintomas/provocação | Investigar cardiopatia, anemia, hiperventilação, TEP etc. |
+
+**Respiração disfuncional** pode gerar parestesias, tontura, dor torácica e sensação de ar insuficiente com ou sem doença respiratória concomitante. Não etiquetar como “ansiedade” alguém com saturação baixa, hipotensão, dor torácica nova ou sinais de fadiga respiratória. Da mesma forma, **disfunção de pregas vocais** não é indicação de suspender CI previamente necessário em asma confirmada; organizar tratamento adequado de ambas condições e reavaliar resposta.
+
+
 ## 3. Diagnóstico e interpretação funcional
 
 ### 3.1 Como confirmar a suspeita
@@ -352,6 +390,20 @@ Em pessoa idosa com artrite nas mãos, tremor, déficit visual ou demência, o d
 
 Broncoconstrição induzida por exercício precisa ser distinguida de descondicionamento, obstrução laríngea e causas cardíacas. Em quem tem asma, controlar inflamação costuma melhorar tolerância ao esforço; no regime validado de CI-formoterol, uso antes da atividade pode ter papel de prevenção, seguindo orientação da idade. Em parte dos pacientes, anti-inflamatórios não esteroidais como ácido acetilsalicílico precipitam broncoespasmo associado a pólipos nasais/rinossinusite; investigar história antes de medicar, pois **não é verdade que todo asmático reage a todo AINE**.
 
+
+### 8.2 Gestação e puerpério: metas de controle e continuidade da terapia
+
+Asma não controlada durante a gestação pode resultar em hipóxia materna/fetal e complicações obstétricas, ao passo que **interromper corticoide inalatório sem indicação** aumenta risco de exacerbação. A GINA 2026 orienta manter tratamento com CI necessário para controle, acompanhar a doença ao longo da gestação e corrigir técnica/adesão como em outros adultos. A dose e o dispositivo podem precisar de adaptação, mas a gestação não é razão para deixar a paciente sem anti-inflamatório. A prioridade é reduzir crises e garantir oxigenação materna.
+
+Nas consultas pré-natais, investigar sintomas diurnos e noturnos, despertares, limitação de atividades, doses de alívio, visitas à urgência, rinite e fatores ambientais. Reavaliar periodicamente — frequentemente em intervalos aproximados de **4–6 semanas**, conforme risco e acesso — e após qualquer exacerbação. A interrupção de toda medicação por receio teratogênico é um erro importante; decisões específicas sobre biológicos, antileucotrienos e corticoide sistêmico exigem revisar dados da paciente e fontes gestacionais. A escolha não se resume a uma lista de drogas “permitidas/proibidas” sem contexto.
+
+**Exacerbação na gestante:** avaliar gestante e feto conforme gravidade, corrigir hipoxemia, usar broncodilatadores e anti-inflamatórios indicados sem atraso e considerar diagnósticos alternativos, especialmente embolia pulmonar, infecção respiratória, edema por pré-eclâmpsia ou cardiopatia. A estabilidade materna é central para perfusão fetal. Não reduzir a avaliação a oximetria isolada, e não atribuir dispneia súbita importante simplesmente à gravidez.
+
+Após o parto, revisar adesão, privação do sono, dificuldades com dispositivos, tabaco passivo e acesso a medicações. A maioria dos tratamentos inalatórios usuais pode ser avaliada para continuidade durante amamentação segundo fármaco e recomendações atuais; não recomendar interrupção automática da lactação ou suspensão de controlador sem considerar risco/benefício. Uma nova piora com dor pleurítica, febre ou hemoptise no puerpério deve motivar avaliação específica para outras doenças.
+
+**Fonte:** GINA 2026 Strategy Report, seções de gestação e controle de asma, https://ginasthma.org/2026-gina-strategy-report/ .
+
+
 ## 9. Casos clínicos comentados
 
 ### Caso 1 — Espirometria normal entre episódios
@@ -383,6 +435,16 @@ Paciente de 52 anos, em receita de CI-LABA de alta dose, teve quatro atendimento
 ### Caso 8 — Eosinófilos após corticoide oral e possível indicação de imunobiológico
 
 Homem de 48 anos com asma grave provável usa manutenção regularmente, tem crises recorrentes e eosinófilos baixos medidos três dias após curso de prednisona. Na avaliação anterior, antes dos corticosteroides, eosinófilos eram mais elevados. **Raciocínio:** marcadores de inflamação T2 são afetados pela terapia recente; única amostra baixa não exclui fenótipo eosinofílico. **Conduta:** documentar histórico de medidas e exposições, confirmar adesão, avaliar elegibilidade ao tratamento adicional no PCDT e em referência especializada. **Por que importa:** interpretação temporal dos biomarcadores evita exclusão indevida de pacientes.
+
+
+### Caso 9 — A falta de ar da padaria não era apenas “asma ruim”
+
+Mulher de 33 anos trabalha há quatro anos em panificadora e começou a apresentar tosse e chiado ao final de jornadas de produção. No fim de semana, melhora parcialmente; nas férias prolongadas, quase não utiliza medicação de alívio. Em dias com alto uso de farinha, acorda à noite com tosse. **Hipóteses:** asma ocupacional por sensibilização, asma preexistente agravada pelo trabalho e outros diagnósticos respiratórios. **Raciocínio:** temporalidade é sugestiva mas não confirma causa; o histórico laboral deve ser detalhado e a asma confirmada objetivamente. **Exames:** espirometria com broncodilatador, avaliação de PFE seriado em dias de trabalho e afastamento conforme supervisão e testes de sensibilização quando indicados. **Conduta:** manter tratamento com CI, reduzir exposição nociva em segurança, encaminhar à Medicina do Trabalho/Pneumologia e documentar os resultados. **Por que este caso importa:** tratar apenas com escalonamento de broncodilatadores sem investigar exposição pode perpetuar doença e incapacidade.
+
+### Caso 10 — Estridor durante corrida interpretado como asma resistente
+
+Atleta de 22 anos apresenta sensação súbita de fechamento de garganta durante sprints, ruído inspiratório e melhora em minutos após interromper esforço. Usa doses repetidas de salbutamol sem benefício consistente e mantém espirometria normal em repouso. **Hipóteses:** obstrução laríngea induzível por exercício, broncoconstrição relacionada a exercício, asma coexistente e outras causas de dispneia. **Raciocínio:** ruído inspiratório cervical e pico durante esforço sugerem componente laríngeo; uma espirometria normal entre crises não elimina asma. **Exames:** avaliação de função pulmonar, testes de provocação quando indicados e laringoscopia durante sintomas/exercício em centro especializado. **Conduta:** evitar aumento automático de corticosteroide inalatório sem comprovar falha de tratamento; preservar terapias indicadas por asma comprovada e tratar o componente laríngeo de forma específica. **Por que este caso importa:** distinguir duas causas tratáveis reduz eventos adversos e consultas repetidas.
+
 
 ## 10. Questões autorais comentadas
 
@@ -479,6 +541,23 @@ A) Interpretar silêncio auscultatório como resolução. B) Liberar porque o ox
 Qual decisão sobre corticoide sistêmico na asma está correta?
 A) Usar diariamente para todos os casos leves. B) Tratamento indicado em exacerbações graves, por exemplo curso curto de prednisolona em dose definida pelo PCDT, ponderando toxicidade. C) Suspender abruptamente prednisona crônica sem considerar eixo adrenal. D) Substituir toda terapêutica inalatória por prednisona.
 **Gabarito B.** **A/D** expõem a riscos sem necessidade; **C** pode precipitar insuficiência adrenal. **Mini-revisão:** reduzir ao mínimo necessário a exposição sistêmica, sem omitir terapia de crise quando indicada.
+
+
+### Questão 13 — Investigação do trabalho
+Adulto desenvolve asma após começar emprego com exposição a farinha. Relata melhora nas férias. A decisão diagnóstica mais adequada é:
+A) Confirmar asma ocupacional apenas pela melhora no fim de semana. B) Registrar exposição e temporalidade, confirmar asma e considerar PFE seriado no trabalho e fora dele. C) Dizer que farinha nunca desencadeia asma. D) Pedir que o paciente se exponha sem proteção para provocar uma crise em casa.
+**Gabarito: B.** A relação temporal é indício, não prova. **A** dispensa testes objetivos; **C** desconhece sensibilizantes; **D** propõe exposição potencialmente perigosa sem supervisão. **Mini-revisão:** documentar padrão de exposição e função pulmonar é mais forte do que presumir agente pelo cargo.
+
+### Questão 14 — Dispneia induzida por exercício
+Atleta relata estridor inspiratório cervical no auge do esforço e melhora rápida após parar. Qual hipótese diferencial deve ser lembrada?
+A) Obstrução laríngea induzível. B) Pneumonia lobar obrigatória. C) Hipoglicemia como único mecanismo. D) A ausência de sibilo expiratório exclui qualquer doença.
+**Gabarito: A.** O padrão sugere obstrução laríngea, a ser confirmada conforme avaliação. **B** não acompanha o padrão episódico; **C** é possível em outro contexto, mas não explica o estridor típico; **D** ignora condições laríngeas e crises de asma sem sibilos. **Mini-revisão:** localização e fase do ruído ajudam a direcionar o exame.
+
+### Questão 15 — Asma durante a gestação
+Gestante com asma previamente bem controlada deseja suspender o CI por medo de prejudicar o feto. Qual resposta é mais adequada?
+A) Suspender todo controlador e usar apenas SABA. B) Manter terapia anti-inflamatória indicada e acompanhar controle, técnica e riscos durante a gestação. C) Não avaliar piora de dispneia porque é fisiológica. D) Indicar corticoide oral contínuo para toda gestante.
+**Gabarito: B.** A manutenção do controle reduz risco de exacerbação e hipoxemia. **A** aumenta risco ao retirar CI; **C** pode perder sinais de embolia, pneumonia ou crise; **D** amplia exposição sistêmica sem indicação. **Mini-revisão:** continuidade de CI apropriado, vigilância e abordagem rápida de crises são fundamentais.
+
 
 ## Referências essenciais
 
