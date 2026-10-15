@@ -286,3 +286,176 @@ Elementos novos devem ser produzidos sem cópia de imagens de cursinhos; exames 
 - [ ] Figuras originais e imagens aprovadas com licença comercial.
 
 **Status desta versão: RASCUNHO PARCIAL, ainda não disponível como apostila da biblioteca.**
+
+
+---
+
+# NÚCLEO AVANÇADO — INTERPRETAR E OPERACIONALIZAR O RASTREAMENTO
+**Revisão de 15/10/2026; complementa as seções 1–16.** Etapa zero repetida nesta rodada: os arquivos de Drive "MASTOLOGIA.pdf" (~2.720 caracteres) e "03 - COLO DE UTERO .pdf" (~9.477) foram abertos e lidos. Ambos contêm abordagem comparável de rastreamento de câncer, mas não uma apostila integral de epidemiologia clínica/prevenção quaternária. O primeiro descreve o intervalo antigo INCA 50–69 e um posicionamento de sociedade desde 40 anos; o segundo detalha citologia anterior à transição DNA-HPV e manejo de lesões cervicais. A autoria do Estratégia MED não foi demonstrada. Esses resumos foram usados apenas para mapear lacunas, **não como base normativa atual nem como fonte textual reproduzida**. Foram consultados INCA/MS 2025–2026, USPSTF 2024, diretrizes brasileiras de DNA-HPV 2025, comunicação INCA FIT agosto/2026 e materiais metodológicos da OMS/IARC.
+
+## 17. Rastreamento como intervenção longitudinal, não como pedido de exame
+
+### 17.1. A tríade população–teste–rede
+Um **programa organizado** começa identificando pessoas elegíveis, oferecendo teste com intervalo apropriado, garantindo qualidade da amostra e **seguimento de todos os resultados**, inclusive anormais, inconclusivos e faltosos. Exames positivos não são o desfecho desejado por si; o benefício só acontece quando há diagnóstico oportuno, tratamento que modifica prognóstico e acompanhamento.
+
+**População:** definir idade, risco basal, antecedente de exames e condições especiais.  
+**Teste:** sensibilidade/especificidade, taxa de teste inadequado, segurança, aceitabilidade, frequência, logística.  
+**Rede:** convite ativo, registro nominal, fila resolutiva de confirmação, anatomopatológico, início de terapia, controle de qualidade e vigilância de danos.
+
+Um município pode relatar 70% de cobertura de mamografia e ainda falhar em oferecer biópsia após BI-RADS suspeito; a cadeia de benefício foi interrompida. O oposto também importa: ampliar colonoscopia diagnóstica sem rastreio baseado em risco pode consumir capacidade assistencial de pessoas sintomáticas e reduzir equidade.
+
+### 17.2. O que diferencia rastreamento de busca ativa de casos?
+Rastreamento oferece um teste a **pessoas sem sintomas** antes de doença clinicamente manifesta, com objetivo de reduzir mortalidade/morbidade específica. A **busca ativa** no território é estratégia operacional para alcançar pessoas elegíveis e completar etapas; pode servir a rastreamento, vacinação e acompanhamento de doenças crônicas. **Diagnóstico precoce sintomático** responde a queixa/sinal; por isso uma massa mamária palpável não deve esperar dois anos, mesmo que a pessoa ainda esteja abaixo da idade do programa.
+
+**Exercício contrastivo:** mulher de 46 anos, sem queixa, pergunta sobre mamografia. Trata-se de decisão individual de rastreamento e discussão de risco-benefício. Outra mulher de 46 anos com descarga papilar sanguinolenta espontânea unilateral exige investigação diagnóstica dirigida, independentemente de recomendação populacional.
+
+### 17.3. O paradoxo do resultado positivo
+Para um teste de rastreio ser justificável, um resultado positivo precisa levar a uma ação definida que **melhore desfechos**, não apenas a mais exames. Em HIV, um teste positivo permite confirmação, tratamento e redução de transmissão. Em câncer do colo do útero, HPV oncogênico positivo aciona triagem/colposcopia conforme tipo/genótipo e protocolo, buscando lesões precursoras tratáveis. Em FIT positivo, colonoscopia permite diagnosticar neoplasias e, por vezes, remover pólipos. Em rastreio sem benefício comprovado, o resultado positivo pode produzir apenas rótulo, biópsia, ansiedade e sobretratamento.
+
+Uma avaliação de programa deve medir **proporção de resultados positivos com avaliação concluída**, tempo entre teste e investigação, tratamento oportuno, complicações, incidência de doença avançada e mortalidade específica. Contar só "quantos testes foram feitos" não mede cuidado completo.
+
+## 18. Matemática clínica do rastreamento: dos indicadores ao paciente
+
+### 18.1. Sensibilidade e especificidade não bastam
+**Sensibilidade = VP/(VP+FN):** proporção de pessoas verdadeiramente doentes classificadas como positivas.  
+**Especificidade = VN/(VN+FP):** proporção de não doentes corretamente negativas.  
+**Valor preditivo positivo = VP/(VP+FP):** entre positivos, quantos de fato têm a condição.  
+**Valor preditivo negativo = VN/(VN+FN):** entre negativos, quantos não têm a condição.
+
+Sensibilidade e especificidade costumam ser propriedades condicionais estimadas do teste **em uma população e limiar**, mas sua aplicação também varia com espectro de doença, técnica e critérios de confirmação. **VPP e VPN dependem fortemente da prevalência**. Nenhum dos quatro é "probabilidade de se beneficiar" do rastreamento; benefício exige avaliar intervenções e desfechos.
+
+### 18.2. Tabela 2 × 2 inteiramente resolvida — hipótese didática
+Considere **1.000 pessoas assintomáticas**, prevalência de doença de **1%**, teste com sensibilidade de **90%** e especificidade de **90%**. Estes números são **inventados para ensino de Bayes, não desempenho de mamografia, FIT ou DNA-HPV**.
+
+| Resultado | Doença presente | Doença ausente | Total |
+|---|---:|---:|---:|
+| Positivo | 9 VP | 99 FP | 108 |
+| Negativo | 1 FN | 891 VN | 892 |
+| Total | 10 | 990 | 1.000 |
+
+**Raciocínio:** dos 10 doentes, 9 são detectados; dos 990 não doentes, 10% (99) recebem positivo falso. Há **108 positivos, mas apenas 9 têm doença**. Logo, VPP=9/108≈**8,3%**; VPN=891/892≈**99,9%**. Explicação útil em consulta: "um teste sensível pode produzir grande quantidade de alarmes falsos quando aplicado indiscriminadamente a pessoas de risco muito baixo."
+
+Se a mesma tecnologia fosse oferecida a população com prevalência maior, sem alterar suas características intrínsecas no exercício, a fração de positivos verdadeiros seria maior. Este é um dos fundamentos do direcionamento por faixa etária e risco. Na vida real, a performance também pode variar por idade e características da população.
+
+### 18.3. Como um exame normal pode não encerrar investigação?
+O valor preditivo negativo de um **rastreamento de população de risco habitual** não substitui o raciocínio de alguém com **sintomas persistentes**. Exemplo: uma pessoa com sangue nas fezes e anemia ferropriva tem probabilidade pré-teste muito diferente de pessoa assintomática. Não pedir FIT e concluir "FIT negativo = não há câncer" quando a indicação correta é investigação diagnóstica. Um exame negativo reduz probabilidade, mas a magnitude depende de sensibilidade, contexto clínico, natureza da lesão e tempo desde amostra.
+
+### 18.4. Razões de verossimilhança (likelihood ratios)
+**LR+ = sensibilidade/(1−especificidade)**; **LR− = (1−sensibilidade)/especificidade**. No exemplo de sensibilidade/especificidade 90%, LR+=9 e LR−≈0,111. Eles ajudam a mover *odds* pré-teste para pós-teste por multiplicação, mas não são risco absoluto nem benefício do programa. Essa matemática explica por que resultado com LR+ elevado pode ter VPP baixo em doença muito rara e por que pré-teste deve ser considerado antes de pedir painel de tumor.
+
+### 18.5. Risco absoluto, risco relativo, NNT e dano
+A **redução relativa de risco (RRR)** pode parecer grande mesmo quando risco basal é pequeno. Imagine mortalidade específica de 4/1.000 sem rastreio e 3/1.000 com rastreio em prazo semelhante, num **exemplo hipotético**. Risco relativo=0,75 e RRR=25%, mas redução absoluta=1/1.000 (0,1 ponto percentual). Número necessário para rastrear/tratar para evitar um desfecho, sob desenho e seguimento adequados, seria 1/0,001=**1.000**. Esse número não é evidência sobre nenhum câncer real, e seu sentido depende do horizonte e do desfecho.
+
+**NND (número necessário para causar dano)** pode considerar biópsias, exames invasivos, sobrediagnóstico e complicações, mas cada dano tem gravidade diferente. Três procedimentos adicionais não são automaticamente "equivalentes" a uma morte evitada. É essencial comunicar **benefício e dano em mesma escala de pessoas e tempo**, sem selecionar só a porcentagem impressionante.
+
+### 18.6. Por que não usar sobrevida em cinco anos como principal prova?
+Paciente teria câncer detectado clinicamente em 2028 e morreria em 2033. A sobrevida após diagnóstico seria 5 anos. Se rastreamento detecta o mesmo câncer em 2026 e ele **morre em 2033** sem mudança real do curso, a sobrevida contabilizada será 7 anos. Não houve prolongamento de vida. Esse é o **viés de antecipação diagnóstica**, que pode inflar estatísticas de sobrevida.
+
+**Viés de duração:** tumores lentos permanecem detectáveis por mais tempo na fase pré-clínica e aparecem desproporcionalmente em rodadas de rastreamento.  
+**Sobrediagnóstico:** detectar doença histológica que nunca traria sintomas ou morte durante a vida da pessoa, mesmo sem rastrear. Não confundir com **falso positivo**: no sobrediagnóstico a alteração pode ser real ao microscópio, mas clinicamente irrelevante.  
+**Viés de seleção:** pessoas que comparecem voluntariamente podem ter perfis de saúde e acesso diferentes das que não comparecem.
+
+Desfechos mais robustos incluem **mortalidade específica, mortalidade geral quando estimável, câncer avançado, qualidade de vida e danos**, preferencialmente em comparações com boa metodologia e seguimento adequado. Avaliar efeitos de programas completos, não só de teste isolado.
+
+## 19. Recomendações brasileiras atualizadas: usar o ano correto
+
+### 19.1. Quadro rápido com data e natureza da regra
+| Local/tema | Situação para risco habitual em outubro/2026 | Observação crucial |
+|---|---|---|
+| SUS/INCA — colo do útero | **DNA-HPV oncogênico** no rastreamento organizado, pessoas com colo do útero 25–64 anos que tiveram atividade sexual; negativo tende a repetir em **5 anos** | Transição progressiva; citologia é alternativa em localidades sem oferta DNA-HPV |
+| SUS — mama | **50–74 anos**, mamografia **bienal**, população prioritária de rastreio organizado | A atualização nacional ocorreu em setembro/2025; faixa 40–49 e >74 pode acessar por demanda com discussão informada |
+| USPSTF — mama (Estados Unidos) | **40–74 anos**, mamografia **bienal** (2024) | Não é automaticamente política do SUS |
+| SUS/INCA — colorretal | **FIT bienal**, homens e mulheres assintomáticos **50–75 anos**, incorporação/registro em 2026 | Conferir oferta territorial e acesso a colonoscopia depois de positivo |
+| MS/INCA — próstata | **Não recomenda busca ativa populacional sistemática de PSA** em assintomáticos | Investigação sintomática e conversa individual de riscos são temas distintos |
+
+**Fontes com datas:** INCA profissional de mama (atualização setembro/2025); INCA notícia de 29/09/2025; INCA notícia FIT de 10/08/2026; INCA prevenção do colo e Portaria Conjunta SAES/SECTICS nº13/2025; USPSTF 30/04/2024. **A regra muda em anos diferentes por órgãos distintos; não copiar tabelas de 2020**.
+
+### 19.2. Rastreio de colo: o que significa teste DNA-HPV primário?
+A infecção persistente por **HPV de alto risco** é condição importante para carcinogênese cervical. O teste molecular oferece maior sensibilidade para identificar risco de lesões precursoras do que citologia isolada, mas um resultado positivo **não significa câncer**. Muitas infecções são transitórias. O algoritmo pós-teste utiliza resultado de HPV oncogênico, eventual genotipagem e avaliação complementar de citologia/colposcopia conforme diretriz vigente. A escolha de intervalo **5 anos após negativo** aplica-se a perfil médio e método adequado, não a qualquer paciente com lesão prévia ou imunossupressão.
+
+**Exemplo:** pessoa de 32 anos, DNA-HPV negativo, risco habitual e sem sintomas recebe orientação de retornar em 5 anos. Fazer exame anualmente "para garantir" não segue benefício demonstrado de intervalo do método novo, pode aumentar procedimentos sem ganho comprovado. Outra de 32 anos com sangramento após relação sexual deve ser examinada **agora** e investigar sintoma mesmo com DNA-HPV de rastreamento negativo anterior.
+
+**Alteração na histologia não é rastreamento:** uma lesão visível no colo exige biópsia/avaliação, e não repetir apenas screening em 5 anos. Portadoras de HIV, tratamento prévio de NIC de alto grau ou imunossupressão relevante podem ter seguimento diferente, que deve vir de protocolo específico, sem extrapolar risco habitual.
+
+### 19.3. Rastreio mamário: heterogeneidade biológica e risco
+A **mamografia** pode detectar microcalcificações e pequenas massas antes de serem palpáveis. Entretanto, densidade mamária, idade, composição populacional e cinética tumoral influenciam sensibilidade e danos. A decisão do SUS de priorizar 50–74 bienal em risco habitual representa **política populacional de benefício/dano**, não afirma que tumor nunca exista aos 45 anos.
+
+**BI-RADS é linguagem padronizada para laudo**, não substituto automático de avaliação clínica:
+- **0:** exame necessita complementação.
+- **1/2:** negativo/benigno conforme descrição; retornar à rotina apropriada se não há sintoma suspeito.
+- **3:** achado provavelmente benigno; seguimento de imagem em curto intervalo segundo protocolo, em vez de biópsia automática.
+- **4/5:** suspeita/probabilidade elevada, requer confirmação diagnóstica por amostragem apropriada.
+- **6:** malignidade já comprovada histologicamente em contexto de avaliação/tratamento.
+
+**Exemplo:** mulher de 55 anos assintomática em rastreamento tem BI-RADS 0. O programa **não concluiu diagnóstico**: precisa de incidências complementares/ultrassom conforme avaliação. Outra com nódulo palpável e imagem BI-RADS 1 precisa de investigação clínica diagnóstica; não pode ser dispensada pelo laudo negativo se a suspeita persiste.
+
+### 19.4. Câncer colorretal: não repetir FIT positivo como “desempate”
+O FIT identifica hemoglobina humana fecal, geralmente mais relacionada a sangramento do trato intestinal inferior, mas é **teste de risco**, não biópsia e não localiza lesão. Polipos, hemorroidas e causas benignas podem produzir positivo; neoplasias também podem sangrar de modo intermitente e gerar negativo.
+
+O resultado **positivo de rastreamento exige colonoscopia diagnóstica** conforme rede, com preparo intestinal adequado, avaliação de todo cólon quando tecnicamente possível, biópsia/polipectomia segundo achados. **Não substituir colonoscopia por repetir FIT até obter negativo.** Um resultado negativo subsequente não apaga risco da amostra positiva anterior.
+
+**Casos de alto risco** (parentes próximos com câncer colorretal precoce, síndromes hereditárias, pólipos avançados, DII colônica extensa) podem exigir colonoscopia e intervalos específicos, **fora do protocolo de risco habitual 50–75**. Uma pessoa de 38 anos com anemia ferropriva e sangramento persistente precisa de investigação independentemente de não ter a idade do programa.
+
+### 19.5. PSA: por que a discussão não termina em "sim" ou "não"?
+PSA pode elevar por hiperplasia prostática, inflamação, retenção ou manipulação, e pode ser normal em alguns tumores. Resultado positivo pode levar a repetição, RM, biópsia e tratamento. Alguns tumores são indolentes, e efeitos do tratamento podem incluir incontinência urinária/disfunção sexual. A **recomendação oficial MS/INCA** não é programa de PSA para assintomáticos; indivíduos de risco e demandas pessoais exigem discussão individual de evidências e alternativas.
+
+**Manejo de sintoma é outra categoria:** hematúria, retenção, perda ponderal, dor óssea suspeita ou alterações ao exame demandam investigação clínica; não usar "não se rastreia" para negar avaliação. Evitar tanto a campanha de PSA universal quanto a omissão de suspeitas oncológicas relevantes.
+
+## 20. Prevenção quaternária concretizada em consulta, internação e programa
+
+### 20.1. Um algoritmo de cinco perguntas antes de pedir exame
+1. **Qual é a pergunta clínica?** Identificar doença assintomática tratável, estratificar risco cardiovascular, ou investigar sintoma?
+2. **O teste altera a conduta?** Qual ação será tomada se positivo, negativo ou indeterminado?
+3. **Qual é o risco basal?** Perfil, idade, histórico, expectativa de vida, acesso e preferências.
+4. **Quais são os danos?** Falso positivo, falso negativo, incidentaloma, cascata, biópsia, radiação, ansiedade, tempo/custo e iniquidades.
+5. **A rede consegue completar o processo?** Há diagnóstico confirmatório, seguimento e tratamento? O usuário compreende o plano?
+
+Se a resposta à segunda e à quinta for "não", pode ser melhor reavaliar o teste **sem negligenciar doença grave**. Exemplo: pedir marcadores tumorais inespecíficos a pessoa assintomática sem hipótese e sem protocolo de conduta costuma criar ansiedade e cascatas. Já aferir PA com técnica e periodicidade apropriadas permite intervenções comprovadas e deve ser mantido.
+
+### 20.2. Cascata de incidentaloma
+Uma tomografia feita para dor autolimitada sem indicação revela nódulo adrenal pequeno. Inicia-se série de exames, consultas, repetição de tomografias e possível cirurgia por suspeita mal caracterizada. A intenção era "não deixar passar nada", mas o benefício real deve ser contraposto à radiação, risco cirúrgico e consequências econômicas. **Prevenção quaternária não consiste em ignorar incidentaloma**, mas usar diretrizes específicas de tamanho, imagem e função hormonal para evitar intervenção excessiva ou subdiagnóstico importante.
+
+### 20.3. Desprescrição: o rastreamento de dano também é prevenção
+Revisar lista de medicamentos, duplicidades, funções renal/hepática, história de quedas, hipotensão e metas clínicas pode reduzir eventos adversos, especialmente em idosos com polifarmácia. Suspender sem plano uma medicação com benefício forte também causa dano; usar decisão compartilhada, retirada gradual quando indicada e monitorização. A "quarta prevenção" inclui **evitar iatrogenia diagnóstica e terapêutica**, não simplesmente contabilizar menos prescrições.
+
+### 20.4. Comunicação de incerteza em número absoluto
+Comparar frases:
+- **Pouco útil:** "Seu risco cai 25%" sem intervalo nem risco basal.
+- **Mais útil:** "Neste exemplo, em 1.000 pessoas acompanhadas por dez anos, a diferença é de uma morte específica evitada, mas algumas outras farão exames complementares que não mudariam sua saúde."
+
+O exemplo numérico precisa ser representativo da evidência real na conversa; caso contrário, declarar que é **hipotético**. Perguntar à pessoa quais danos ela considera mais importantes, sem usar linguagem acusatória quando sua decisão diverge da preferência do profissional.
+
+### 20.5. Quando parar?
+A idade cronológica importa, mas benefício do rastreamento frequentemente aparece ao longo de anos; pessoas com expectativa de vida muito limitada podem ter chance maior de sofrer dano imediato do que usufruir benefício tardio. Parar pode ser conduta positiva se o programa atingiu idade-limite, houve testes de boa qualidade prévios ou condições de saúde mudaram. Exceções: história de alto risco, lesões anteriores ou sintomas continuam exigindo avaliação **diagnóstica**, independentemente de idade.
+
+**Exemplo:** pessoa com múltiplas comorbidades, fragilidade grave e câncer avançado sob cuidado paliativo pergunta por colonoscopia de rastreamento. A decisão deve considerar objetivos de cuidado; rastreio para doença assintomática que não alteraria tratamento pode causar dano. Se existe sangramento sintomático significativo, isso demanda manejo de sintomas/risco — outra pergunta clínica.
+
+### 20.6. Rastreamento desorganizado pode aumentar desigualdade
+Um programa em que somente pessoas informadas recebem teste repetido pode consumir recursos nas menos vulneráveis e deixar regiões de maior risco com pouca cobertura. Monitorar convites, comparecimento por território, idade, deficiência, raça/cor autorreferida quando pertinente à equidade de acesso, condições socioeconômicas e desfechos do encaminhamento, respeitando privacidade. **Equidade não é realizar exames mais frequentes em todos, mas entregar benefício completo a quem precisa.**
+
+## 21. Matrizes de revisão úteis para prova e para gestão da APS
+
+### 21.1. O que o achado significa e qual a próxima etapa?
+| Achado | Significado | Próxima etapa |
+|---|---|---|
+| DNA-HPV oncogênico negativo, risco habitual e elegível | Baixa probabilidade de lesão significativa no horizonte do método | Repetir em 5 anos conforme política e situação individual |
+| DNA-HPV oncogênico positivo | Infecção/risco, **não câncer confirmado** | Fluxo de genotipagem/triagem/colposcopia por norma |
+| BI-RADS 0 em rastreio | Exame não concluído | Completar investigação de imagem |
+| BI-RADS 4/5 | Lesão suspeita | Biópsia/avaliação especializada |
+| FIT positivo no rastreio | Sangramento oculto detectado; várias causas possíveis | Colonoscopia diagnóstica segundo rede |
+| PSA elevado em assintomático que optou por testar | Risco que requer contextualização | Confirmar circunstâncias, discussão e investigação urológica seletiva |
+| Nódulo mamário palpável com mamografia de rastreio normal | Discordância clínico-radiológica possível | Avaliação diagnóstica; não descartar sintoma |
+| Pessoa com histórico de NIC de alto grau | Fora da rotina geral de risco habitual | Seguimento especializado conforme tratamento/histologia |
+| Pessoa com familiar de primeiro grau com CRC precoce | Risco familiar elevado | Avaliação de colonoscopia/genética e idade de início específicas |
+
+### 21.2. O que medir na unidade além da cobertura?
+- Percentual de **pessoas elegíveis convidadas** e com teste válido.
+- Taxa de amostras inadequadas e tempo entre convite e coleta.
+- Proporção de positivos com **confirmação diagnóstica concluída**.
+- Intervalo entre resultado anormal e biópsia/colonoscopia.
+- Taxa de perda de seguimento e acesso por território/grupo.
+- Taxa de encaminhamentos sem indicação e repetição precoce desnecessária.
+- Proporção de cânceres detectados em estágio avançado e tendências de mortalidade específica em análise adequada.
+- Eventos adversos, procedimentos de confirmação e sobrediagnóstico estimado por método científico.
+
+**Observação metodológica:** melhoria na proporção de tumores "estágio I" pode resultar parcialmente de deslocamento de estágio/viés de detecção e não provar queda na mortalidade sem seguimento de desfechos.
