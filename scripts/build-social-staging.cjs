@@ -16,7 +16,7 @@ if(!/^sb_publishable_[A-Za-z0-9_-]+$/.test(config.supabasePublishableKey))throw 
 const voiceOrigin=config.voiceOrigin?new URL(config.voiceOrigin):null;
 if(voiceOrigin&&(voiceOrigin.protocol!=='https:'||voiceOrigin.origin!==config.voiceOrigin))throw Error('Voice origin must be an exact HTTPS origin');
 const blocked=/^(?:\.|node_modules\/|browser-results\/|build\/|db\/|docs\/|tests\/|scripts\/|tools\/|tmp\/|supabase\/|cloudflare\/|config\/)/;
-const extensions=new Set(['.html','.js','.css','.svg','.png','.webp','.avif','.jpg','.jpeg','.gif','.ico','.woff','.woff2','.ttf','.eot','.json','.webmanifest','.xml','.txt','.pdf','.mp3','.wav','.ogg','.m4a']);
+const extensions=new Set(['.html','.js','.mjs','.css','.svg','.png','.webp','.avif','.jpg','.jpeg','.gif','.ico','.woff','.woff2','.ttf','.eot','.json','.webmanifest','.xml','.txt','.pdf','.mp3','.wav','.ogg','.m4a']);
 const excluded=new Set(['package.json','package-lock.json','README.md','CNAME','AGENTS.md','_worker.js','_headers','_redirects']);
 const textExtensions=new Set(['.html','.js','.css','.svg','.json','.webmanifest','.xml','.txt']);
 const files=execFileSync('git',['ls-files','--cached','--others','--exclude-standard','-z'],{cwd:root,maxBuffer:32*1024*1024}).toString().split('\0').filter(Boolean).filter(file=>!blocked.test(file)&&!excluded.has(file)&&extensions.has(path.extname(file).toLowerCase()));

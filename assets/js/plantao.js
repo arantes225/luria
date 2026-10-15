@@ -322,6 +322,7 @@
       return;
     }
     state.cases=Array.isArray(casesRes.data)?casesRes.data:[];
+    if(window.LuriaRoomEmbed?.kind==="simulator"&&window.LuriaRoomEmbed.caseId)state.cases=state.cases.filter(item=>String(item.id)===window.LuriaRoomEmbed.caseId);
 
     const sessionsRes = await sb.from("clinical_case_sessions")
       .select("id,case_id,status,started_at,completed_at,score,result,attempt_count")
@@ -339,9 +340,10 @@
       .limit(1)
       .maybeSingle();
     state.activeSession = activeSessionRes.error ? null : (activeSessionRes.data || null);
+    if(window.LuriaRoomEmbed?.kind==="simulator" && state.activeSession && (state.activeSession.case_id!==window.LuriaRoomEmbed.caseId || new Date(state.activeSession.started_at)<new Date(window.LuriaRoomEmbed.activityCreatedAt)))state.activeSession=null;
 
     const resumeCard=$("plantao-resume-card");
-    if(resumeCard && state.activeSession?.case_id){
+    if(resumeCard && state.activeSession?.case_id && (!window.LuriaRoomEmbed?.caseId || state.activeSession.case_id===window.LuriaRoomEmbed.caseId)){
       const resumeCase=state.cases.find(item=>String(item.id)===String(state.activeSession.case_id));
       const resumeTitle=$("plantao-resume-title");
       const resumeMeta=$("plantao-resume-meta");
@@ -4207,6 +4209,7 @@
     };
     const {error}=await sb.from("clinical_case_sessions").update(payload).eq("id",state.session.id);
     if (error) { console.warn("Plantão: não foi possível persistir a sessão",error); return false; }
+    if(extra.status)window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:state.session.id,case_id:state.session.case_id,status:extra.status}}));
     return true;
   }
 
@@ -4267,6 +4270,7 @@
       started_at:sessionRow.started_at,
       completed_at:sessionRow.completed_at||null
     };
+    window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:state.session.id,case_id:state.session.case_id,status:state.session.status}}));
     state.elapsed=Number(saved.elapsed_seconds||0)/60 || Number(sessionRow.elapsed_minutes||0) || 0;
     state.score=Number(sessionRow.score||0);
     state.vitals={...(saved.vitals||item.initial_vitals||{})};
@@ -4635,6 +4639,7 @@
     }
     state.busy=false;
     state.session=data;
+    window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:data.id,case_id:data.case_id,status:data.status}}));
     window.LuriaStudyTimer?.start("plantao", { sourceId: data.id, materia: item.presentation?.chief_complaint || item.title || "Plantão" });
     savePlantaoView({
       mode:"emergency",
@@ -5132,6 +5137,7 @@
     if(!sessionId || state.session?.status==="completed") return true;
     const {error}=await sb.rpc("discard_clinical_case_session",{p_session_id:sessionId});
     if(error){console.warn("Plantão: não foi possível descartar a sessão incompleta",error);return false;}
+    window.dispatchEvent(new CustomEvent("luria:clinical-session",{detail:{id:sessionId,case_id:state.session.case_id,status:"discarded"}}));
     state.session=null;
     return true;
   }

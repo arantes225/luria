@@ -1,0 +1,23 @@
+const test=require('node:test'),assert=require('node:assert/strict');
+const {page,read}=require('./fixtures/frontend.cjs');
+const wait=()=>new Promise(r=>setTimeout(r,25));
+test('group workspace has real content tabs, escaped messages and drafts that survive navigation and failed sends',async t=>{
+ const {w,d,errors}=page(t,'amigos/index.html'),calls=[];let fail=false,denied=false;
+ const g='aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',uid='11111111-1111-4111-8111-111111111111';
+ const snapshot={group:{id:g,name:'Minha comunidade',area:'Clínica',description:'Troca de conhecimento',role:'admin'},members:[{user_id:uid,name:'Ana',role:'admin'}],entries:[{id:'bbbbbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb',kind:'chat',user_id:uid,display_name:'Ana',body:'<script>invadir()</script>',created_at:'2026-10-14T12:00:00Z'}]};
+ w.docmapUser={id:uid};w.LuriaDialog={confirm:async()=>false,prompt:async()=>null};w.LuriaSocial={command:async()=>{},refreshSocial:async()=>{}};
+ w.supabaseClient={rpc:async(name,args)=>{calls.push(args);if(denied)return {error:{message:'Acesso restrito aos membros do grupo'}};if(args.p_action==='create'){if(fail)return {error:{message:'Conexão interrompida'}};snapshot.entries.push({...args.p_payload,user_id:uid,display_name:'Ana',created_at:'2026-10-14T13:00:00Z'});return {data:{id:args.p_payload.id}};}return {data:structuredClone(snapshot)};},channel:()=>({on(){return this;},subscribe(){return this;}}),removeChannel:async()=>{}};
+ d.getElementById('social-groups').innerHTML=`<details><summary data-group-open="${g}">Abrir comunidade</summary></details>`;
+ w.eval(read('assets/js/social-group-community.js'));
+ d.querySelector('[data-group-open]').click();await wait();
+ assert.equal(d.getElementById('community-groups').hidden,true);assert.equal(d.getElementById('gc-name').textContent,'Minha comunidade');assert.equal(d.querySelectorAll('.gc-tabs [role="tab"]').length,4);
+ assert.equal(d.querySelector('#gc-feed-chat script'),null);assert.match(d.getElementById('gc-feed-chat').textContent,/<script>/);
+ const form=d.querySelector('[data-gc-compose="chat"]');form.elements.body.value='Meu rascunho';form.elements.body.dispatchEvent(new w.Event('input',{bubbles:true}));
+ d.querySelector('[data-gc-view="post"]').click();assert.equal(form.elements.body.value,'Meu rascunho');d.querySelector('[data-gc-view="chat"]').click();
+ fail=true;form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await wait();assert.equal(form.elements.body.value,'Meu rascunho');assert.match(d.getElementById('gc-status').textContent,/preservado/);
+ fail=false;form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await wait();assert.equal(form.elements.body.value,'');const sends=calls.filter(x=>x.p_action==='create');assert.equal(sends[0].p_payload.id,sends[1].p_payload.id);
+ form.elements.body.value='Continuar depois';form.elements.body.dispatchEvent(new w.Event('input',{bubbles:true}));w.dispatchEvent(new w.CustomEvent('luria:community-tab',{detail:{area:'friends'}}));assert.equal(d.getElementById('group-community').hidden,true);
+ d.querySelector('[data-group-open]').click();await wait();assert.equal(d.querySelector('[data-gc-compose="chat"]').elements.body.value,'Continuar depois');
+ denied=true;w.dispatchEvent(new w.Event('focus'));await wait();assert.match(d.getElementById('group-community').textContent,/Acesso ao grupo indisponível/);assert.equal(d.querySelectorAll('#group-community form').length,0);assert.equal(d.querySelectorAll('#group-community .gc-entry').length,0);
+ assert.deepEqual(errors,[]);
+});

@@ -25,6 +25,10 @@ let friendLookupTimer=null;
 let friendsRowsCache=[];
 
 function fEsc(v){return String(v??"").replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;").replaceAll("'","&#039;");}
+function friendsEmptyState(title,copy,kind='people'){
+  const paths={people:'<circle cx="9" cy="8" r="3"/><path d="M3 20v-3a5 5 0 0 1 10 0v3M16 5a3 3 0 0 1 0 6M17 14a4 4 0 0 1 4 4v2"/>',search:'<circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/>',material:'<path d="M5 3h9l5 5v13H5V3Zm9 0v5h5M8 12h8M8 16h6"/>'};
+  return '<div class="friends-empty sc-social-empty"><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">'+(paths[kind]||paths.people)+'</svg><strong>'+fEsc(title)+'</strong><p>'+fEsc(copy)+'</p></div>';
+}
 function friendAvatar(friend){
   let url='';try{const parsed=new URL(friend.avatar_url);if(parsed.protocol==='https:')url=parsed.href;}catch{}
   return `<span class="friend-avatar">${url?`<img src="${fEsc(url)}" alt="" loading="lazy">`:fEsc((friend.display_name||"U").charAt(0).toUpperCase())}</span>`;
@@ -83,6 +87,7 @@ function renderFriendsList(){
   const count=document.getElementById('social-friend-count');if(count)count.textContent=String(friendsRowsCache.length);
   host.innerHTML=rows.length?rows.map(friend=>`
     <div class="friend-row sf-person-card" data-friend-user="${fEsc(friend.user_id)}">
+      <div class="sc-person-cover" aria-hidden="true"><svg viewBox="0 0 160 64" fill="none"><path d="M12 47c29-39 67 30 119-21"/><circle cx="132" cy="25" r="15"/><path d="m65 19 14 5 14-5v22l-14 5-14-5V19Zm14 5v22"/></svg></div>
       <div class="friend-main">
         ${friendAvatar(friend)}
         <span class="friend-copy">
@@ -97,7 +102,7 @@ function renderFriendsList(){
         <button class="button secondary" type="button" data-remove-friend="${fEsc(friend.user_id)}">Remover</button>
         <button class="button secondary" type="button" data-block-friend="${fEsc(friend.user_id)}">Bloquear</button></div></details>
       </div>
-    </div>`).join(""):`<div class="friends-empty">${query?'Nenhum amigo encontrado.':'Adicione sua turma pelo ID LURIA.'}</div>`;
+    </div>`).join(""):friendsEmptyState(query?'Nenhum amigo encontrado.':'Sua turma começa com um convite',query?'Tente outro nome ou ID LURIA.':'Adicione sua turma pelo ID LURIA.',query?'search':'people');
 
   host.querySelectorAll("[data-remove-friend]").forEach(btn=>btn.addEventListener("click",async()=>{
     if(!await window.LuriaDialog.confirm("Remover esta pessoa da sua lista de amigos?"))return;
@@ -128,7 +133,7 @@ async function loadInbox(){
       <div class="friends-actions">
         <button class="button primary" type="button" data-open-share="${fEsc(item.id)}" data-type="${fEsc(item.resource_type)}" data-token="${fEsc(item.share_token)}">Adicionar</button>
       </div>
-    </div>`).join(""):'<div class="friends-empty">Nenhum material recebido.</div>';
+    </div>`).join(""):friendsEmptyState('Nenhum material recebido.','Os materiais compartilhados com você aparecerão aqui.','material');
 
   refreshFriendsCommunityMetrics();
   host.querySelectorAll("[data-open-share]").forEach(btn=>btn.addEventListener("click",async()=>{

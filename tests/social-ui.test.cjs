@@ -140,3 +140,10 @@ test('compact viewport updates preserve the chat draft and composer through keyb
  viewport.height=280;viewport.offsetTop=12;viewport.dispatchEvent(new w.Event('resize'));await tick();assert.equal(d.body.style.getPropertyValue('--sl-visible-height'),'280px');assert.equal(d.body.style.getPropertyValue('--sl-visible-top'),'12px');assert.equal(d.body.classList.contains('sl-short-viewport'),true);assert.equal(d.getElementById('social-message-form'),composer);assert.equal(input.value,'Rascunho preservado');
  viewport.height=800;viewport.offsetTop=0;viewport.dispatchEvent(new w.Event('resize'));await tick();assert.equal(d.body.classList.contains('sl-short-viewport'),false);assert.equal(input.value,'Rascunho preservado');assert.deepEqual(errors,[]);
 });
+
+ test('workspace navigation keeps live session and chat nodes mounted while exposing accessible panels',async t=>{
+ const {w,d,errors}=page(t,'amigos/index.html');w.eval(read('assets/js/social-view.js'));const timer=d.getElementById('social-timer'),composer=d.getElementById('social-message-form'),input=d.getElementById('social-message-text');timer.textContent='23:42';input.value='Rascunho da conversa';
+ d.getElementById('sc-tab-plan').click();assert.equal(d.getElementById('sc-panel-live').hidden,true);assert.equal(d.getElementById('sc-panel-plan').hidden,false);assert.equal(d.getElementById('sc-tab-plan').getAttribute('aria-selected'),'true');
+ d.getElementById('sc-tab-plan').dispatchEvent(new w.KeyboardEvent('keydown',{key:'End',bubbles:true,cancelable:true}));assert.equal(d.activeElement.id,'sc-tab-progress');assert.equal(d.getElementById('sc-panel-progress').hidden,false);
+ d.getElementById('sc-tab-live').click();assert.equal(d.getElementById('sc-panel-live').hidden,false);assert.equal(d.getElementById('social-timer'),timer);assert.equal(timer.textContent,'23:42');assert.equal(d.getElementById('social-message-form'),composer);assert.equal(input.value,'Rascunho da conversa');assert.deepEqual(errors,[]);
+ });
