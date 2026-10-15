@@ -329,3 +329,116 @@ Disfagia, infecções, dependência total, comunicação limitada e alterações
 
 No fígado avançado, encefalopatia, ascite, hemorragia, dor e metabolismo de medicações exigem plano próprio; não usar sedativos/opioides sem avaliar risco de encefalopatia. No HIV, cuidados paliativos podem coexistir com terapia antirretroviral e tratamento de infecções oportunistas quando há benefício; não suspender ARV automaticamente por prognóstico desfavorável.
 
+
+## 21. Cuidados paliativos pediátricos, perinatais e proteção da criança
+
+Crianças com cardiopatias complexas, doenças genéticas, neuromusculares, câncer, condições congênitas graves e doenças progressivas podem se beneficiar de cuidados paliativos desde diagnóstico, mesmo por anos. O foco inclui **brincar, frequentar escola quando possível, manter vínculos, explorar capacidades e aliviar sofrimento**, não apenas preparar morte.
+
+A avaliação de sintomas deve respeitar desenvolvimento, linguagem, capacidade cognitiva e comunicação alternativa. Dor pode se manifestar por expressão facial, alterações de sono e comportamento em lactentes, e por relato verbal ou escalas visuais em crianças maiores. **Nunca transpor doses de adultos para pediatria sem cálculo e protocolo específicos.**
+
+### 21.1. Autonomia progressiva e assentimento
+
+Ouvir criança/adolescente conforme maturidade e condições; os responsáveis têm papel importante, mas a criança não é mero objeto das decisões. Utilizar linguagem compreensível, desenhos e jogos quando adequados. Evitar transferir decisão altamente complexa de interromper suporte diretamente para a criança, sem proteção ética. Em discordâncias graves, envolver paliativismo pediátrico, equipe assistente, bioética e proteção de direitos.
+
+### 21.2. Cuidados paliativos perinatais
+
+Anomalias fetais graves, prematuridade extrema e doenças com prognóstico muito incerto exigem aconselhamento obstétrico/neonatal centrado em fatos, limites e valores, sem promessas de sobrevida nem pressão por uma única decisão. A família pode desejar contato pele a pele quando seguro, tempo de despedida, fotografias/lembranças e rituais. Oferecer apoio ao luto independentemente de peso/idade gestacional e encaminhar documentação conforme aula 175 e normas vigentes.
+
+### 21.3. Irmãos e familiares
+
+Irmãos precisam de informação sincera, adequada à idade. Dizer que quem morreu “foi dormir” pode desencadear medo de dormir; perguntar o que a criança entendeu e permitir sentimentos ambivalentes. Apoio psicológico não deve presumir que todas as crianças desenvolverão transtorno.
+
+## 22. Atenção domiciliar e continuidade do cuidado
+
+O plano domiciliar precisa responder **quem acompanha, quem prescreve, quem administra e onde buscar ajuda**. Na PNCP atualizada em 2026, APS atua junto à rede, SAMU e serviços de urgência também apoiam controle de sintomas. Contudo a disponibilidade local de EMCP/EAACP, SAD, medicamentos e transporte deve ser verificada.
+
+### 22.1. Checklist pré-alta
+
+- Diagnóstico/prognóstico e objetivos explicados com linguagem simples.
+- Preferências registradas, inclusive DAV quando houver e representante autorizado.
+- Medicamentos reconciliados por nome, dose, via, horários e esquema de resgate.
+- Orientações escritas sobre quando e como acionar UBS, SAD/plantão, SAMU e hospital.
+- Controle de acesso a opioides e fármacos sedativos, evitando acidentes com crianças.
+- Treinamento do cuidador para curativos, alimentação, higiene, oxigênio ou dispositivos.
+- Avaliação da possibilidade física/financeira da família: água, energia, moradia, transporte.
+- Via alternativa de medicamentos quando há piora da deglutição.
+- Comunicação de informações essenciais entre hospital, APS e equipes territoriais.
+- Previsão de consulta/reavaliação e plano para crises noturnas, fins de semana e óbito.
+
+**Não basta dar alta com “seguir paliativo na UBS”** se a pessoa necessita infusão contínua, equipe de resposta em crises ou cuidador não capacitado. Pode ser mais seguro manter internação ou organizar apoio até existir retaguarda efetiva.
+
+### 22.2. Transporte para urgência não é fracasso
+
+Uma pessoa com plano de conforto pode requerer hospital para controlar dor, manejar secreção difícil, drenar derrame ou obter suporte ao cuidador. A ida à emergência deve respeitar preferências e benefício; inversamente, não transportar automaticamente para procedimentos sem utilidade quando o plano domiciliar seguro já existe.
+
+## 23. Luto antecipatório, morte e cuidado após morte
+
+O luto pode iniciar **antes do óbito**, pela perda progressiva de funções/relacionamentos. Emoções podem incluir tristeza, alívio, raiva, culpa, esperança, medo e momentos de alegria. Não impor estágios rígidos nem calendário universal. Identificar fatores de risco para sofrimento persistente grave, isolamento, perda traumática e risco suicida quando presentes, e oferecer acompanhamento.
+
+Após confirmação de morte por profissional habilitado, comunicar com clareza, respeitar privacidade e rituais, orientar documentos e fluxos locais. A **Declaração de Óbito** não deve receber “parada cardiorrespiratória” como causa básica quando etiologia é conhecida; detalhes estão na aula 175, incluindo fluxo de SVO/IML se houver causa não esclarecida/externa.
+
+O processo não termina no óbito. Oferecer contato de apoio, orientação para serviços, eventualmente reunião de retorno à família se necessário, respeitando desejos de não receber contato. A equipe também pode precisar de debriefing, supervisão e apoio institucional após eventos moralmente difíceis.
+
+## 24. Resumo de alto rendimento — fluxogramas de conduta
+
+### Fluxo A: identificar necessidade de cuidados paliativos
+Doença ameaçadora da vida ou sofrimento significativo → avaliar dimensões física, psicológica, social e espiritual → sintomas ESAS, funcionalidade PPS conforme contexto → tratar causas proporcionais e iniciar plano de apoio → integrar APS/especialidade → revisar objetivos/PAC ao longo do tempo.
+
+### Fluxo B: comunicar diagnóstico/prognóstico difícil
+Confirmar informação e preparar local → perguntar entendimento (**P**) e desejo de informação (**I**) → aviso e notícia em bloco curto (**K**) → pausa e acolhimento (**E**) → resumo, próximos passos e checagem (**S**) → documentar compreensão e preferências.
+
+### Fluxo C: dor persistente
+Caracterizar mecanismo/intensidade/impacto → excluir compressão medular/fratura/outras emergências → escolher analgesia e adjuvantes → avaliar necessidade de opioide titulado e resgate → prevenir constipação → acompanhar resposta funcional e eventos adversos → revisar função renal e medicamentos.
+
+### Fluxo D: dispneia
+Avaliar ventilação, SpO₂, sofrimento, objetivos e causas → ar no rosto/postura, oxigênio quando benefício/hipoxemia → tratar congestão/derrame/broncoespasmo quando proporcional → terapia farmacológica de alívio em casos selecionados → reavaliar conforto e necessidade de urgência.
+
+### Fluxo E: delirium
+Confirmar início/flutuação/atenção → revisar medicamentos, retenção, constipação, dor, hipoxemia, metabolismo e infecção → medidas ambientais e intervenção causal proporcional → fármaco em sofrimento/agitação grave quando indicado → refratariedade terminal? equipe avalia sedação proporcional excepcional.
+
+### Fluxo F: discussão de RCP/UTI
+Confirmar diagnóstico, capacidade, DAV e objetivos → apresentar chance de benefício versus ônus de **cada** tratamento → decisão compartilhada ou instância ética se dissenso → escrever ordens claras e o que será mantido → reavaliar após mudanças.
+
+### Fluxo G: morte provável em horas/dias
+Reconhecer sinais e incerteza → conversar sobre gravidade, desejos e família → ajustar medicamentos/vias, higiene, presença, apoio e plano de crises → evitar intervenções sem benefício → confirmar óbito e documentação → acolher luto.
+
+### Fluxo H: alta domiciliar
+Definir cuidador e habilidades → garantir medicamentos/vias/resgates, contatos e transporte → comunicar UBS/SAD → agendar reavaliação → prever o que fazer em deterioração, sem substituir atendimento emergencial por instruções vagas.
+
+## 25. Pegadinhas de prova e erros de segurança
+
+1. Paliativo não significa terminalidade.
+2. Pode começar com tratamento curativo ainda em curso.
+3. A PNCP foi instituída em 2024 e modificada em 2026.
+4. A APS e a urgência também prestam cuidados paliativos.
+5. Pergunta surpresa não exclui quem necessita cuidado.
+6. ESAS avalia intensidade, não etiologia.
+7. PPS reduzido não define dia da morte.
+8. PAC é processo; DAV expressa preferências para incapacidade.
+9. Paciente competente mantém autonomia e pode rever decisões.
+10. CFM 1.805/2006 e 1.995/2012 tratam de temas distintos.
+11. Ordem de não reanimar não significa “não tratar”.
+12. Ortotanásia não é eutanásia.
+13. Sedação paliativa exige sintoma refratário e proporcionalidade.
+14. Morfina não deve ser escalada apenas para “sedar”.
+15. Dor neuropática pode precisar tratamento adjuvante.
+16. Em insuficiência renal, morfina pode acumular metabólitos.
+17. Metadona não tem conversão 1:1 universal.
+18. Dispneia pode existir com SpO₂ normal.
+19. Oxigênio sem hipoxemia não ajuda universalmente.
+20. Delirium hipoativo não é sinal de conforto.
+21. Antipsicóticos não são profilaxia universal do delirium.
+22. Metoclopramida não deve ser usada em obstrução completa.
+23. Constipação por opioide exige atenção antecipada.
+24. Na caquexia, mais calorias não necessariamente revertem síndrome.
+25. Não forçar alimentação em pessoa com deglutição insegura.
+26. Hidratação artificial deve ter benefício mensurável e reavaliação.
+27. SPIKES é guia para escuta, não recital de siglas.
+28. Silêncio após notícia tem valor clínico.
+29. Não dizer “não há nada a fazer” quando sintomas podem ser aliviados.
+30. “Família quer tudo” pode significar medo de abandono.
+31. Prognóstico necessita honestidade sobre incerteza.
+32. Não confundir incapacidade de falar com incapacidade de decidir.
+33. Cuidado pediátrico exige linguagem e farmacologia específicas.
+34. Domicílio sem retaguarda pode ser inseguro.
+35. A rede familiar precisa de orientação também após morte.
