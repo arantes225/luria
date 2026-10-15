@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-native-activities-20261015-finish1";
+const CACHE_VERSION = "luria-pwa-social-premium-20261015-v1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";
@@ -47,6 +47,7 @@ const APP_SHELL = [
   "/assets/js/social-group-community.js?v=3",
   "/assets/js/social-native-activities.js?v=1",
   "/assets/css/social-native-activities.css?v=1",
+  "/assets/css/social-premium-v1.css?v=1",
   "/assets/js/room-native-embed.js?v=1",
   "/assets/css/room-native-embed.css?v=1",
   "/assets/css/social-rats.css?v=8",
