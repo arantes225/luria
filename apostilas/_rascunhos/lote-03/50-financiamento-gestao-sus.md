@@ -331,14 +331,111 @@ Listas de espera devem ter critérios de risco, transparência e atualização, 
 Ao contratar exames ou medicamentos, avaliar preços, qualidade, fornecimento, manutenção, assistência técnica, condições de armazenagem e capacidade de equipe. O menor preço unitário não garante menor custo total se gera falta, devolução ou infecção por equipamento inadequado. Em toda contratação pública aplicar marcos licitatórios e sanitários vigentes, com assessoria jurídica/controle interno; a aula ensina raciocínio gerencial, não substitui manual de compras governamentais.
 
 
-## 5. Exemplos clínico-gerenciais e casos comentados
-**Caso 1 — Cadastro sem cuidado:** uma equipe atualiza cadastros, mas não acompanha diabéticos de alto risco. **Hipótese gerencial:** registro não convertido em continuidade. **Dados:** agenda, indicadores, visitas, risco clínico e experiência do usuário. **Conduta:** reorganizar acompanhamento e conferir resultados, não apenas percentual cadastral. **Importância:** qualidade não é preenchimento do sistema.
+## 5. Oito casos de decisão gerencial com raciocínio completo
 
-**Caso 2 — Equipamento sem manutenção:** município usa verba para aparelho, mas não planeja pessoal ou manutenção. **Hipótese:** investimento isolado incapaz de produzir serviço. **Dados:** orçamento, contratos, PAS, regulação e produção. **Conduta:** assegurar custeio e fluxo assistencial segundo regras da fonte. **Importância:** capital e operação precisam estar alinhados.
+Todos os cenários são **fictícios**. Os números foram escolhidos para permitir raciocínio contábil/assistencial, não representam repasses reais nem substituem apuração do SIOPS e dos órgãos de controle.
 
-**Caso 3 — Rede desarticulada:** município pequeno planeja centro de alta complexidade paralelo, apesar de referência regional com capacidade. **Hipótese:** fragmentação e baixa eficiência. **Dados:** demanda, fila, capacidade regional, pactuação e resultados. **Conduta:** discutir acesso/regulação com demais gestores, considerar integração regional. **Importância:** regionalização pode ampliar acesso e segurança.
+### Caso 1 — Município abaixo do piso, apesar de receber dinheiro federal
 
-**Caso 4 — Saldo vinculado:** gestor deseja usar saldo de recurso de investimento para despesa corrente sem verificar a finalidade. **Hipótese:** risco de aplicação incompatível. **Dados:** ato de transferência, bloco, finalidade e normas vigentes. **Conduta:** avaliar legalidade e programação antes de contratar. **Importância:** transferência não significa livre destinação.
+**Situação:** o município de Vista Clara teve R$ 120 milhões de receitas consideradas na base legal municipal de ASPS. Sua gestão informa R$ 17 milhões de despesas efetivamente computáveis a partir de recursos próprios abrangidos por essa base, além de R$ 8 milhões recebidos por transferência fundo a fundo da União para APS. O secretário afirma que gastou R$ 25 milhões em saúde e por isso o piso está cumprido.
+
+**Problema principal:** confusão entre **total gasto na saúde** e **gasto próprio computável no percentual do ente**.
+
+**Cálculo:** 15% de R$ 120 milhões = **R$ 18 milhões**. Foram apurados R$ 17 milhões de despesas elegíveis de origem própria: R$ 17/120 = **14,17%** aproximadamente, déficit de **R$ 1 milhão** em relação ao mínimo. Os R$ 8 milhões federais podem financiar ASPS e devem ser prestados contas de acordo com sua vinculação, mas não são licença para dispensar a contrapartida local.
+
+**Dados adicionais:** confirmar as bases brutas, transferências legais, ajustes fiscais/IBS aplicáveis, restos a pagar com lastro, despesas excluídas e demais receitas elegíveis. O balanço apresentado é didático e pressupõe que os R$ 17 milhões já passaram pelos critérios legais.
+
+**Conduta gerencial:** reconciliar declarações ao SIOPS e balanços, planejar complementação/reposição na forma legal, assegurar manutenção dos serviços e prestar contas; acionar assessoria contábil/jurídica e órgãos de controle quando necessário.
+
+**Por que importa:** *dinheiro federal recebido* e *piso municipal de recursos próprios* são eixos complementares, não valores que se substituem.
+
+### Caso 2 — Pensões de trabalhadores da saúde na apuração do mínimo
+
+**Situação:** estado informa base de R$ 500 milhões de receitas elegíveis depois das deduções, dos quais 12% correspondem a R$ 60 milhões. A gestão quer contar R$ 8 milhões de aposentadorias e pensões de ex-servidores da saúde no numerador, além de R$ 55 milhões de despesas que atendem aos critérios de ASPS.
+
+**Hipótese normativa:** lançamento indevido de despesas excluídas pelo art. 4º da LC141.
+
+**Cálculo:** o mínimo hipotético é R$ 60 milhões; apenas R$ 55 milhões foram validados no exemplo, isto é, 11% da base. **Déficit de R$ 5 milhões.** Somar pensões e aposentadorias faria R$ 63 milhões e mascararia o descumprimento, mas a lei exclui tais despesas, mesmo quando vinculadas à carreira de saúde.
+
+**Investigação:** verificar classificação e exercício, provas de prestação de serviço em despesas com pessoal ativo, despesas de outros setores, fundos e regime de apuração. A LC141 também recebeu alterações em 2024/2026 para hipóteses delimitadas de hospitais universitários e APH dos Bombeiros, que não transformam toda despesa dessas instituições em ASPS.
+
+**Conduta:** excluir despesas legalmente vedadas, revisar a execução e adotar medidas de recomposição conforme norma; informar conselho e controle interno/externo.
+
+**Por que importa:** *gasto socialmente relevante não é sinônimo de ASPS computável*.
+
+### Caso 3 — Equipamento novo sem orçamento de operação
+
+**Situação:** município utiliza R$ 2 milhões de recurso de investimento regularmente destinado à aquisição de tomógrafo. O aparelho é entregue e instalado, mas inexiste previsão de manutenção, contratos de laudo, profissional técnico, insumos e transporte dos pacientes até a unidade. Seis meses depois, o tomógrafo realizou poucos exames.
+
+**Problema gerencial:** capital isolado sem capacidade operacional de transformar investimento em serviço.
+
+**Diagnóstico:** avaliar Plano/PAS/LOA, projeto de aquisição, fluxo de regulação, contratação, habilitação, manutenção, custo de energia e operação, contrato de garantia, tempo de espera e demanda epidemiológica.
+
+**Interpretação:** a compra de equipamento pode estar formalmente adequada ao bloco e, ainda assim, ser inefetiva na assistência. **Investimento** e **custeio** são necessidades complementares, porém **não fungíveis** sem regra de destinação; recurso do bloco de investimento não pode pagar automaticamente qualquer despesa corrente.
+
+**Conduta:** elaborar plano de operação sustentável com fonte de custeio compatível, equipe e agenda; avaliar custo por exame e acesso; se não houver capacidade viável, discutir articulação regional sob regras públicas, evitando deixar aparelho ocioso.
+
+**Por que importa:** eficiência não é apenas pagar preço menor por bem permanente.
+
+### Caso 4 — Duas equipes eSF: cadastro cresceu, mas diabéticos não são acompanhados
+
+**Situação:** em um município de 30 mil habitantes, duas equipes de Saúde da Família passam a ter cadastro completo de 95% da população adscrita. Contudo, apenas 40% das pessoas com diabetes de alto risco tiveram seguimento planejado, muitos pacientes relatam falta de insulina e a proporção de internações evitáveis cresce.
+
+**Hipótese:** desempenho administrativo do cadastro foi confundido com vínculo clínico e resultados de saúde.
+
+**Dados necessários:** fichas técnicas dos componentes de 2026, população cadastrada por risco, atendimentos/visitas, disponibilidade de insumos, indicadores de seguimento, faltas, barreiras territoriais, satisfação e indicadores assistenciais. A Portaria 3.493/2024 articula **componente fixo, vínculo territorial e qualidade**, além de outras fontes/programas; em outubro de 2026 existe nota técnica específica para desempenho quadrimestral. A mesma fórmula não deve ser inventada para todas as eSF/eMulti.
+
+**Conduta:** não retirar cadastro de pessoas difíceis de acompanhar para "melhorar percentual"; usar estratificação de risco, busca ativa, protocolos de seguimento, logística de insulina, articulação com eMulti/farmácia e reavaliação da qualidade assistencial. Conferir no instrumento oficial qual indicador efetivamente compõe o repasse, sem reduzir o cuidado a pontuação.
+
+**Por que importa:** equidade e continuidade clínica são diferentes de uma base eletrônica cheia.
+
+### Caso 5 — Município que não envia SIOPS apesar de cumprir o piso
+
+**Situação:** município aplicou 17% de sua base tributária legal em ASPS, segundo contabilidade local, mas não homologou os dados do último bimestre no SIOPS e passa a receber notificações. A prefeita afirma que "não existe irregularidade porque gastamos acima de 15%".
+
+**Hipótese gerencial:** descumprimento da **obrigação de declaração/homologação**, distinto do descumprimento material do piso.
+
+**Investigação:** verificar os seis bimestres, prazos, assinatura digital, envio/homologação, mensagens automáticas e possíveis inconsistências no sistema. O Ministério diferencia condicionamento após declaração de percentual inferior do tratamento de **falta de dados homologados**, que pode gerar sanções sobre transferências constitucionais/voluntárias segundo LC141/Decreto 7.827.
+
+**Conduta:** alimentar/homologar informações corretas, documentar medidas, confirmar regularização, orientar controle interno e evitar novas falhas de processo. **Não fabricar dados** para desbloquear transferência.
+
+**Por que importa:** dever financeiro e dever de transparência são duas obrigações distintas e cumulativas.
+
+### Caso 6 — Rede regional de oncologia: três municípios querem três aparelhos
+
+**Situação:** três municípios vizinhos possuem 18 mil, 24 mil e 26 mil habitantes, respectivamente. Cada prefeito pretende adquirir aparelho caro de tratamento oncológico, mas não há equipes completas nem rede de radioterapia dimensionada. Existe centro regional com capacidade de expansão, porém pacientes rurais enfrentam seis horas de transporte e filas pouco transparentes.
+
+**Hipóteses:** fragmentação de alto custo e barreira geográfica de acesso, coexistindo. **Diferencial gerencial:** centralização regional pode ser eficiente para qualidade e escala, mas é injustificável se a logística impede tratamento oportuno.
+
+**Exames gerenciais:** incidência e prevalência oncológica, população por estágio, estimativa de sessões, disponibilidade de especialistas, habilitação e segurança do serviço regional, transporte, tempo de espera e regulação; analisar custo total de instalação/manutenção.
+
+**Conduta:** pactuar fluxos na CIB/CIR e contratos com metas de acesso, ampliar capacidade regional quando apropriado, financiar transporte e hospedagem segundo normas e indicadores de qualidade. Se o serviço existente não consegue absorver demanda, reavaliar alternativas sem ideologia de concentração.
+
+**Por que importa:** regionalização é ferramenta para acesso efetivo e segurança, não desculpa para deixar pequenas cidades sem tratamento.
+
+### Caso 7 — Repasses para reforma, mas recurso é usado como folha de pagamento
+
+**Situação:** Fundo Municipal recebe R$ 600 mil destinados a investimento em reforma de uma unidade. Diante de atraso no repasse de outra fonte, gestor cogita direcionar integralmente os R$ 600 mil para vencimentos mensais de profissionais, alegando que os salários também são despesa de saúde.
+
+**Problema normativo:** confusão entre uma despesa que **poderia ser ASPS em outra fonte** e a **autorização para usar uma transferência específica**.
+
+**Avaliação:** verificar natureza do programa de trabalho, bloco de transferência, objeto do repasse, legislação orçamentária local, Plano/PAS, regras de remanejamento e possíveis autorizações formais. A Portaria 3.992/2017 simplifica operação de blocos, mas **não torna recursos livres para qualquer finalidade**.
+
+**Conduta:** não executar pagamento incompatível sem base legal; buscar fonte regular autorizada para folha e assessoria especializada. Ao acompanhar a reforma, definir se o projeto gera melhoria assistencial mensurável.
+
+**Por que importa:** ASPS é **critério de elegibilidade do gasto**, enquanto fonte/programa é **critério de financiamento e destinação**; os dois precisam ser observados.
+
+### Caso 8 — Plano de saúde ambicioso sem PAS executável
+
+**Situação:** o Plano Municipal de Saúde 2026–2029 promete reduzir mortalidade evitável e ampliar saúde mental, mas a PAS 2026 não prevê equipes adicionais, transporte ou contratos necessários. O RAG do ano anterior mostra crescimento de despesas, porém sem melhora de filas ou indicadores. Secretário pretende declarar o plano “concluído” porque ocorreu reunião de lançamento.
+
+**Hipótese:** desconexão entre estratégia, orçamento, execução e resultados.
+
+**Exames gerenciais:** PMS/PPA, PAS, LDO/LOA, RQPC quadrimestrais, RAG, relatórios SIOPS, dados assistenciais por território e atas pertinentes; identificar quais ações foram planejadas, executadas, entregues e quais desfechos alcançaram.
+
+**Conduta:** traduzir objetivos em metas de acesso e saúde, orçamento e responsáveis; monitorar ao longo do exercício; explicar desvios e atualizar prioridades nos ritos apropriados. Articular controle social da aula 45, sem confundir conselho com executor.
+
+**Por que importa:** planejar, orçar, prestar serviço e atingir resultado são etapas **relacionadas, porém separadas**.
 
 ## 6. Questões originais com comentários
 **Q1.** O financiamento do SUS é: A) apenas federal; B) responsabilidade compartilhada entre entes; C) apenas municipal; D) estritamente privado. **Gabarito B.** A/C omitem responsabilidades; B representa organização interfederativa; D contradiz o financiamento público. **Revisão:** financiamento tripartite.
