@@ -405,6 +405,74 @@ Adulto desenvolve dispneia, sibilância e colapso pressórico minutos após medi
 
 **Q6.** Infarto com choque cardiogênico: A) evitar avaliação coronariana por hipotensão; B) reposição volêmica universal é tratamento definitivo; C) avaliação de reperfusão urgente é central; D) dispensar ECG. **Gabarito C.** A e D atrasam diagnóstico; B ignora o mecanismo; C corresponde ao tratamento causal. **Revisão:** a estabilização ocorre em paralelo à reperfusão.
 
+
+### Questão 7 — Choque compensado e diagnóstico de gravidade
+
+Homem politraumatizado, FC 134 bpm, PA 116/74 mmHg, TEC de seis segundos, extremidades frias e Hb 13 g/dL na admissão. Qual alternativa está correta?
+
+A) A PA acima de 90 mmHg e hemoglobina de 13 g/dL afastam hemorragia aguda significativa.  
+B) O paciente não pode apresentar choque porque está consciente.  
+C) Hipoperfusão e hemorragia oculta precisam ser consideradas, e a estabilidade aparente pode ser transitória.  
+D) O primeiro exame obrigatório é tomografia de corpo inteiro, independentemente da resposta hemodinâmica.
+
+**Gabarito: C.** A está errada: hemoglobina inicial pode não refletir a perda aguda e a PA pode ser preservada por compensação. B está errada: nível de consciência e perfusão podem se deteriorar em velocidades distintas. C está correta: taquicardia importante com perfusão periférica anormal exige investigação e ressuscitação em paralelo. D está errada: TC não deve atrasar controle hemorrágico do instável. **Mini-revisão:** procurar sangramento invisível em tórax, abdome, pelve e ossos longos.
+
+### Questão 8 — Oxigênio e hemoglobina
+
+Paciente tem Hb 8 g/dL, SaO2 de 98% e débito cardíaco de 2,8 L/min. Qual afirmação traduz melhor a fisiologia?
+
+A) A saturação normal garante oferta de oxigênio normal.  
+B) A oferta depende de conteúdo arterial e fluxo; anemia e baixo débito podem reduzi-la apesar de saturação alta.  
+C) A fração dissolvida de O2 domina o conteúdo arterial em condições habituais.  
+D) O débito não participa da oferta de oxigênio.
+
+**Gabarito: B.** A está errada porque confunde saturação e entrega. B está correta pela relação DO2 = DC × CaO2 × 10. C está errada porque a hemoglobina transporta a maior parte do O2. D está errada porque fluxo é variável essencial. **Mini-revisão:** uma pessoa pode ter oxímetro satisfatório e hipoperfusão grave.
+
+### Questão 9 — Algoritmo de antibioticoterapia na sepse segundo 2026
+
+Qual afirmação está de acordo com a Surviving Sepsis Campaign 2026 para adultos?
+
+A) Toda febre sem choque exige antimicrobiano antes de avaliação da probabilidade infecciosa.  
+B) Em choque séptico provável, antimicrobianos devem ser iniciados imediatamente, idealmente em uma hora, com culturas prévias se não causarem atraso.  
+C) Procalcitonina isolada confirma sepse e determina a primeira dose.  
+D) Se há hipótese de foco cirúrgico, basta noradrenalina sem controle de fonte.
+
+**Gabarito: B.** A ignora diferenciação entre sepse provável e possível sem choque. B reflete a diretriz atual. C confunde apoio laboratorial com diagnóstico clínico. D deixa o foco ativo; a SSC 2026 favorece controle de fonte precoce quando indicado. **Mini-revisão:** antibiótico, perfusão e controle de foco são intervenções paralelas e complementares.
+
+### Questão 10 — Fluidorresponsividade e congestão
+
+Após ressuscitação inicial, paciente tem perfusão inadequada e linhas B difusas. Qual decisão é a mais adequada?
+
+A) Prosseguir com infusão de litros de cristaloide apenas porque há lactato elevado.  
+B) Considerar somente a pressão venosa central, sem teste dinâmico.  
+C) Investigar função cardíaca e congestão, avaliar necessidade de fluxo e, quando seguro, medidas dinâmicas de fluidorresponsividade antes de novos fluidos.  
+D) Concluir que a PAM de 65 mmHg garante microperfusão normal.
+
+**Gabarito: C.** A pode agravar edema sem aumentar débito. B usa indicador estático insuficiente. C discrimina necessidade, provável benefício e tolerância. D confunde pressão com entrega/utilização de oxigênio. **Mini-revisão:** o teste de elevação passiva das pernas é reversível, mas precisa de medida de fluxo para interpretar resposta.
+
+### Questão 11 — Choque cardiogênico por síndrome coronariana aguda
+
+Paciente com IAM, hipoperfusão, disfunção ventricular e congestão importante apresenta PA 96/60 mmHg. Que conduta atua na causa com impacto prognóstico?
+
+A) Revascularização emergencial da artéria culpada quando indicada, com suporte hemodinâmico concomitante.  
+B) Bolus de volume sem limite até normalizar pressão.  
+C) Dobutamina como substituto definitivo da reperfusão.  
+D) Esperar normalização do lactato antes de avaliar coronariografia.
+
+**Gabarito: A.** A é a estratégia causal recomendada no choque por SCA. B pode agravar pulmão congesto. C apenas apoia fluxo em cenários selecionados, não remove a obstrução coronariana. D produz atraso potencialmente fatal. **Mini-revisão:** reconhecer a diferença entre terapia de suporte e terapia definitiva.
+
+### Questão 12 — Anafilaxia e erro de dose
+
+Adulto de 70 kg desenvolve hipotensão, estridor e sibilância abruptos minutos após um medicamento, sem urticária. Qual é a melhor decisão inicial?
+
+A) Anti-histamínico oral e observação.  
+B) Esperar resultado de triptase e descartar anafilaxia pela ausência de lesões cutâneas.  
+C) Adrenalina IM em vasto lateral da coxa, em dose adequada ao adulto e protocolo, com reavaliação e suporte de via aérea/circulação.  
+D) Aplicar adrenalina IV em bolus de forma rotineira, sem monitorização, porque a pressão está baixa.
+
+**Gabarito: C.** A não trata choque anafilático. B posterga intervenção e usa critério falso. C corresponde à primeira linha segundo ASBAI/SBP 2025, que descreve solução 1 mg/mL, dose ajustada à idade/peso e limite de 0,5 mg para adultos. D expõe a arritmias e erro de dose; via IV requer condições específicas e equipe experiente. **Mini-revisão:** adrenalina IM precoce é medida específica e não substituível por corticoide.
+
+
 ## 19. Pulo do Gato e segurança editorial
 
 - Choque é inadequação de perfusão/oxigenação tecidual; não é um valor único de PA.
