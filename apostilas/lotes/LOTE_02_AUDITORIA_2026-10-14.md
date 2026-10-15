@@ -94,3 +94,22 @@ Comparadas afirmações-chave com **GINA 2026 (fonte primária de asma)**, **GOL
 7. Após auditoria científica: curadoria de imagens com licença comercial comprovada; só então manifesto para Admin, conversão `books[].sections[].body_html` via `scripts/build-apostilas-batch.cjs --dry-run` e testes de sintaxe, conteúdo e layout. **Não sobrescrever outras apostilas do repositório nem fazer merge/deploy sem aprovação.**
 
 **Parecer:** ainda não publicável. Esta rodada produziu **duas correções clínicas concretas** (Asma/Tuberculose) e **matriz factual de cinco livros**. Medidas automáticas não certificam segurança de prescrição ou qualidade integral de conteúdo.
+
+
+## 7. Etapa 07 — preenchimento de lacunas prescritivas com fontes primárias
+
+**Execução em 14/10/2026:** após reabrir fontes comparativas do Drive e conferir documentos primários, foram feitos dois commits de **conteúdo clínico novo nos capítulos pertinentes**, sem alterar as apostilas de referência nem publicar o lote.
+
+**Tuberculose — doses por peso:** inseridos no capítulo 9 o quadro RHZE 150/75/400/275 mg e RH 150/75 ou 300/150 mg, com quatro faixas (20–35, 36–50, 51–70, acima de 70 kg), fases de dois e quatro meses, equivalências de apresentações, três cálculos explicados e separação 2RHZE/10RH em TB de SNC e osteoarticular. No capítulo 11, incluídas referências de 3HP, 4R, 6H e 9H, contraindicações e a apresentação fixa de 3HP, com exemplo de dose semanal. No capítulo 19, foram detalhados os intervalos para início de TARV em TB/HIV e a interação rifampicina–dolutegravir. **Fontes:** PCDT HIV Módulo 2 (2024), páginas impressas 25, 27–29 e 31–33; Manual de Recomendações de TB do Ministério da Saúde e atualização do comprimido fixo 3HP em 2025. **Conflito registrado:** a página antiga da Linha de Cuidado HIV simplifica a faixa acima de 50 kg para quatro comprimidos, enquanto PCDT 2024 e Manual usam cinco comprimidos acima de 70 kg. A tabela adotada é a mais completa, mas não houve teste de dispensação com paciente nem auditoria farmacêutica independente. **Pendências residuais:** pediatria, gestação, ajustes em hepatopatia/nefropatia, regimes especiais e tabelas BPaL/BPaLM completas.
+
+**Pneumonia adulta — terapia empírica:** acrescentada a seção 11.0A, com tratamentos empíricos documentados em adultos ambulatoriais saudáveis, comorbidades, PAC hospitalar e PAC grave, incluindo amoxicilina, doxiciclina, beta-lactâmicos associados a macrolídeo, opções de internação e alertas sobre quinolonas. **Divergência explícita:** amoxicilina/clavulanato 875/125 mg é descrita a cada **8 h** em tabela da SBPT 2018, mas a cada **12 h** para perfil ambulatorial com comorbidades na ATS/IDSA 2019; o texto **não declara equivalência** nem escolhe uma dose indiscriminada. **Fontes:** SBPT 2018 DOI 10.1590/S1806-37562018000000130 e ATS/IDSA 2019 DOI 10.1164/rccm.201908-1581ST. A diretriz ATS 2025 sobre duração foi incorporada como comparação e não usada para generalizar três dias de terapia. **Bloqueio não resolvido:** falta benchmark de PAC adulta no Drive; material pediátrico correlato não substitui essa leitura.
+
+### Testes de consistência reproduzíveis realizados sobre as fontes
+
+- **34 kg:** faixa 20–35; 2 × (R150/H75/Z400/E275) = R300/H150/Z800/E550 mg, fase intensiva.
+- **49 kg:** faixa 36–50; 3 comprimidos RHZE; manutenção 3 × RH150/75 equivale a RH300/150 mais RH150/75.
+- **70 kg exatos:** faixa 51–70 → quatro comprimidos; **75 kg:** acima de 70 → cinco comprimidos (na apresentação DFC definida).
+- **3HP adulto elegível:** rifapentina e isoniazida **900 mg de cada, uma vez por semana**, não por dia; as apresentações precisam ser conferidas.
+- **PAC com comorbidades:** a estratégia da ATS/IDSA 2019 exige distinguir **beta-lactâmico + macrolídeo/doxiciclina** de beta-lactâmico isolado e de quinolona respiratória seletiva; o quadro novo documenta essa decisão.
+
+**Resultado:** duas lacunas de conteúdo reduzidas, mas **nenhuma das cinco apostilas foi certificada**. O teste de autossuficiência continua parcial. Não há \`content.json\`, incorporação ao catálogo, lote de imagens aprovado, auditoria visual ou deploy.
