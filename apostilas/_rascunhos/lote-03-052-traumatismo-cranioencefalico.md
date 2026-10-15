@@ -221,3 +221,204 @@ Forças rotacionais e cisalhamento produzem lesões axonais distribuídas em sub
 ### 6.7 O que é “efeito de massa”?
 
 Uma coleção aumenta volume intracraniano e desloca tecido, comprime ventrículos ou cisternas e pode desviar linha média. O desvio é alerta, mas deve ser interpretado junto a espessura de hematoma, edema, consciência, pupilas e reserva cerebral. Não transformar “5 mm de desvio” em indicação universal e isolada de cirurgia sem diferenciar subdural, epidural, contusão e demais circunstâncias. Protocolos neurocirúrgicos usam critérios anatômicos por entidade associados ao quadro clínico.
+
+
+## 7. Qual hematoma precisa de neurocirurgia? Entender critérios em vez de decorar formas
+
+Avaliar hematoma traumático exige integrar **tipo de coleção, volume/espessura, desvio de linha média, compressão de cisternas, sintomas, Glasgow, pupilas e tendência**. Neurocirurgia precisa ser chamada cedo quando há efeito de massa, déficit progressivo, rebaixamento, suspeita de herniação, lesão penetrante, fratura aberta/deprimida importante e outras complicações. A decisão sobre cirurgia pode ocorrer antes de completar todos os exames de rotina, desde que avaliação da via aérea, circulação e transporte seguro estejam coordenadas.
+
+A Brain Trauma Foundation mantém recomendações específicas para manejo cirúrgico de lesões intracranianas: https://braintrauma.org/coma/guidelines/surgical . Esses limiares são referências de decisão **para tipos de lesão definidos**, não substituem avaliação individual nem autorização para observar em ambiente sem neurocirurgia quando existe indicação de intervenção.
+
+### 7.1 Epidural agudo
+
+Segundo recomendação cirúrgica da BTF, hematoma epidural **com volume >30 cm³** deve ser evacuado independentemente do Glasgow. A possibilidade de observação em centro neurocirúrgico requer **todos** os elementos favoráveis: volume <30 cm³, espessura <15 mm, desvio da linha média <5 mm, Glasgow >8 e ausência de déficit neurológico focal, com TC seriada e exame neurológico próximo. Não transformar os critérios em autorização para mandar para casa; observação selecionada é hospitalar e especializada.
+
+Paciente em coma (GCS <9) com anisocoria e epidural agudo deve receber evacuação cirúrgica o mais rapidamente possível. Uma lesão de volume inferior a 30 cm³ pode exigir cirurgia se o quadro clínico se deteriora ou existe compressão crítica. O tempo até a sala importa, porque desvio e edema podem progredir sem muito aviso.
+
+**Exemplo:** paciente com GCS 14, sem déficit, epidural de 22 cm³, 8 mm de espessura e desvio de 2 mm pode ser candidato a observação neurocirúrgica próxima se demais critérios e recursos forem atendidos. Se apresenta anisocoria progressiva ou rebaixamento, a elegibilidade muda. O erro é dar alta por “volume pequeno” ignorando evolução.
+
+### 7.2 Subdural agudo
+
+Segundo BTF, hematoma subdural agudo **com espessura >10 mm ou desvio da linha média >5 mm** tem indicação de evacuação cirúrgica, independentemente do Glasgow. Mesmo abaixo desses limiares, paciente com GCS <9 pode precisar cirurgia se houver queda de ≥2 pontos entre lesão e admissão, pupilas fixas ou assimétricas ou PIC elevada (o texto cirúrgico menciona >20 mmHg nessa população; a diretriz de cuidados críticos da BTF usa limiar terapêutico de PIC >22 mmHg). É importante reconhecer contextos e edições diferentes em vez de fundir limiares sem explicação.
+
+**Exemplo:** pessoa de 76 anos em anticoagulação, com hematoma subdural de 13 mm e Glasgow 15, ainda pode ter indicação cirúrgica pelo critério de espessura; não basta dizer que está conversando. A reversão dirigida de anticoagulante e a avaliação neurocirúrgica ocorrem em paralelo conforme gravidade e recursos.
+
+### 7.3 Contusões e massas intraparenquimatosas
+
+Lesões intraparenquimatosas com deterioração neurológica progressiva, PIC refratária ou efeito de massa significativo exigem avaliação cirúrgica. Diretriz cirúrgica BTF cita contusões frontal/temporal >20 cm³ associadas a Glasgow 6–8 e desvio ≥5 mm e/ou compressão de cisternas, ou lesões >50 cm³, como cenários de intervenção. A decisão depende de localização, edema, lesões múltiplas, estado sistêmico e objetivo de descompressão. Contusão pequena sem efeito de massa em paciente estável pode demandar observação e imagens conforme evolução, não cirurgia automática.
+
+O conceito de expansão de contusão é útil: TC inicial representa momento do processo, e não filme completo. Em pessoa anticoagulada ou com alterações de coagulação, risco de progressão deve ser levado em conta; reavaliação clínica e discussão de repetição de TC são fundamentais.
+
+### 7.4 Fraturas abertas e deprimidas
+
+Fratura deprimida pode estar associada a laceração dural, contaminação e compressão; a necessidade de exploração depende de depressão, comunicação com meio externo, déficit e imagem. Feridas penetrantes, suspeita de lesão vascular, saída de LCR e lesões de seio venoso exigem equipe experiente. Não sondar ferida craniana profundamente, não remover corpo estranho penetrante sem planejamento cirúrgico e não esperar febre para considerar risco de infecção.
+
+### 7.5 Craniectomia descompressiva e perspectiva de resultado
+
+A craniectomia descompressiva amplia volume disponível para cérebro edemaciado e pode reduzir hipertensão intracraniana refratária. No entanto, redução de mortalidade não implica necessariamente maior proporção de pacientes sem dependência funcional; o balanço entre sobrevida e sequelas deve ser discutido com família e equipe, respeitando prognóstico incerto e tempo de evolução. Técnica, momento e indicação dependem de diretriz e experiência neurocirúrgica. **Não fazer craniectomia por qualquer edema discreto**, nem tratá-la como solução única de toda lesão axonal.
+
+## 8. Hipertensão intracraniana (HIC): fisiologia à beira-leito
+
+A HIC pode resultar de hematoma expansivo, edema difuso, hidrocefalia, congestão venosa ou combinação. A relação entre volume intracraniano e pressão não é linear: em fase de baixa complacência, alterações pequenas podem elevar muito a PIC. Sinais clínicos incluem piora de consciência, vômitos e cefaleia em pacientes acordados, anormalidades pupilares, déficits, alterações respiratórias e eventualmente tríade de Cushing. Em paciente sedado/intubado, sinais podem ser sutis ou mascarados; imagem e monitorização ganham importância.
+
+### 8.1 Metas de PIC e PPC: números com contexto
+
+A BTF 4ª edição recomenda tratar **PIC acima de 22 mmHg** em TCE grave adulto por associação com maior mortalidade, combinando valor monitorado com sinais clínicos e tomográficos. Propõe **PPC entre 60 e 70 mmHg** como alvo relacionado a resultados, reconhecendo incerteza sobre ponto ótimo individual e risco de manter PPC >70 agressivamente com grandes volumes/vasopressores. A BTF ainda sugere faixas de pressão sistólica por idade, descritas na seção 4.3.
+
+**Exemplo de cálculo:** PAM 85 mmHg e PIC 25 mmHg geram PPC aproximada de 60 mmHg. A PIC está acima do limiar de tratamento e não deve ser ignorada só porque a PPC não está abaixo de 60. Se PAM cair a 65 mantendo PIC 25, PPC cai para 40 e há ameaça de hipoperfusão. É preciso abordar causa, hemodinâmica e pressão intracraniana, sem simplesmente somar volume indiscriminado.
+
+### 8.2 Quando medir a PIC?
+
+Monitorização invasiva é considerada em TCE grave com lesões identificadas e risco de HIC ou situações em que exame clínico está limitado; a decisão envolve protocolo neurocirúrgico, TC, idade, comorbidades e tempo após trauma. Ventriculostomia/drenagem ventricular externa pode medir pressão e permitir drenagem de LCR quando apropriada; sensores intraparenquimatosos medem pressão, sem permitir drenagem direta. Ambos exigem equipe, técnica estéril, calibração, vigilância de infecção, sangramento, obstrução e falha de medida.
+
+Ultrassonografia de bainha do nervo óptico e ferramentas não invasivas podem auxiliar como pistas de alterações fisiológicas em contextos específicos, mas não substituem de forma validada monitorização invasiva quando a indicação e o recurso existem, nem permitem aplicar valores absolutos de PIC com igual precisão. Não rotular “PIC 30” apenas a partir de um exame indireto de triagem.
+
+### 8.3 Por que elevar a cabeceira pode ajudar?
+
+Elevação moderada, frequentemente perto de 30°, com cabeça alinhada pode favorecer drenagem venosa intracraniana, desde que não reduza perfusão sistêmica e que a coluna esteja protegida conforme risco. Colar cervical excessivamente apertado, pressão jugular, tosse e agitação podem dificultar retorno venoso e elevar PIC. A posição deve ser reavaliada em hipotensão e restrições de coluna, não imposta mecanicamente. Evitar manobras dolorosas desnecessárias e organizar analgesia são componentes de controle fisiológico.
+
+### 8.4 Tratamento escalonado — conceito e objetivos
+
+Primeira camada: tratar lesão cirúrgica, otimizar oxigenação/perfusão, controlar temperatura, glicemia e convulsões, analgesia/sedação apropriadas, cabeceira/neutro, ventilação adequada e corrigir obstrução venosa. Se HIC persiste, equipe neurocrítica pode empregar drenagem liquórica, terapia hiperosmolar e ajustes ventilatórios sob monitorização. Refratariedade exige discussão de terapias avançadas, como sedação profunda, bloqueio neuromuscular sob critérios, barbitúricos ou craniectomia em casos selecionados. Cada escalão tem riscos e não deve ser reduzido a uma receita genérica por peso.
+
+### 8.5 Solução salina hipertônica e manitol
+
+A terapia hiperosmolar cria gradiente osmótico que desloca água de tecidos em determinadas condições, reduzindo volume intracraniano e PIC. **Manitol** promove osmoterapia e diurese; pode agravar hipovolemia/hipotensão, especialmente em choque. **Salina hipertônica** pode reduzir PIC e alterar sódio/osmolaridade; riscos incluem distúrbios eletrolíticos e sobrecarga de volume conforme preparação. A BTF reconhece efeito de agentes hiperosmolares na PIC, mas declara evidência insuficiente para indicar agente específico com benefício comprovado de desfecho funcional superior. Logo, dose e concentração não devem ser transcritas de resumo antigo sem protocolo neurocrítico e monitorização.
+
+Em **suspeita de herniação iminente**, medidas temporizadoras (incluindo osmoterapia sob orientação especializada) podem ser necessárias enquanto equipe prepara evacuação de massa e suporte definitivo. Um hematoma cirúrgico não deve permanecer horas sem avaliação porque a PIC melhorou provisoriamente após solução hipertônica. Ao mesmo tempo, não oferecer osmoterapia “preventiva” a qualquer paciente com cefaleia e TC normal.
+
+### 8.6 Hiperventilação: recurso de ponte, não rotina
+
+Hiperventilar reduz PaCO₂, provoca vasoconstrição cerebral e pode reduzir PIC rapidamente. O custo é menor fluxo cerebral e risco de isquemia, sobretudo no início pós-trauma. **Não manter hiperventilação profilática prolongada** em paciente estável. Diante de herniação aguda iminente, equipe treinada pode utilizá-la brevemente enquanto executa medidas definitivas, com gasometria, capnografia e, quando disponível, monitorização cerebral. A condição de resgate precisa ser explicitada no prontuário para que não se torne “novo alvo de ventilação” por dias.
+
+### 8.7 Sedação, analgesia e bloqueio neuromuscular
+
+Agitação, dor, tosse e assincronia ventilatória podem aumentar consumo metabólico, pressão arterial e PIC. Analgesia e sedação reduzem insultos, mas podem provocar hipotensão e impedir exame neurológico. Escolha de drogas deve considerar perfusão, risco de convulsão, necessidade de examinar pupilas/comandos e duração do tratamento. Propofol pode controlar PIC e facilitar despertar em algumas circunstâncias, mas doses altas prolongadas associam riscos metabólicos e hemodinâmicos. Midazolam e opioides têm farmacocinética variável em disfunção orgânica; bloqueadores neuromusculares tornam exame motor impossível e exigem monitorização apropriada.
+
+Descrever “GCS não testável sob bloqueio” em vez de atribuir pontuação artificial. Suspensões de sedação para neuroexame são decisões de risco: em HIC instável podem causar elevação aguda de PIC e não devem ser feitas sem planejamento com neurointensivista.
+
+### 8.8 Corticosteroide e hipotermia
+
+Corticosteroides sistêmicos **não são recomendados no TCE grave** para reduzir PIC ou melhorar resultado; estudos com altas doses de metilprednisolona encontraram aumento de mortalidade. Não confundir edema tumoral, que pode ter indicação específica de corticoide, com edema traumático. **Hipotermia profilática precoce de curto prazo** não deve ser adotada rotineiramente para melhorar desfecho em lesão difusa, conforme BTF. Controle de febre/normotermia é diferente de induzir hipotermia profunda para todo traumatizado. Hipotermia terapêutica em HIC refratária é questão especializada com riscos de coagulopatia, infecção e arritmias.
+
+## 9. Convulsões após TCE: tratamento agudo, prevenção precoce e epilepsia
+
+Convulsões podem ocorrer imediatamente, nos primeiros sete dias ou tardiamente. Crise precoce aumenta consumo de oxigênio e pode elevar PIC, além de indicar lesão cortical. Tratamento de crise ativa é emergencial; profilaxia significa prescrever medicamento para reduzir risco de evento, não tratar evento já comprovado. A distinção importa para duração, justificativa e seguimento.
+
+A BTF descreve que fenitoína pode reduzir convulsões pós-traumáticas **precoces (até sete dias)** em pacientes nos quais benefício supere risco; **não previne epilepsia tardia**. Não há recomendação de manter fenitoína ou valproato indefinidamente apenas para prevenir convulsões tardias sem eventos. Levetiracetam é frequentemente empregado na prática moderna por perfil de interações, mas a BTF 4ª edição não considerou evidência suficiente para preferi-lo a fenitoína em eficácia/toxicidade. Protocolos locais e atualizações de ACS podem orientar seleção. O uso de anticonvulsivante em TCE leve sem lesão significativa não é automático.
+
+### 9.1 Quem merece considerar profilaxia?
+
+O risco aumenta com TCE grave, contusões hemorrágicas corticais, hematomas, fraturas deprimidas e lesões penetrantes. A escolha deve considerar características da lesão, interação com anticoagulantes ou outras medicações, função renal/hepática, monitorização e efeitos adversos. Pessoas que já tiveram crises ou possuem epilepsia prévia exigem plano terapêutico distinto; “sete dias de profilaxia” não substitui tratamento adequado de epilepsia confirmada.
+
+### 9.2 Crise convulsiva não convulsiva
+
+Paciente com rebaixamento persistente sem explicação anatômica suficiente pode estar em estado de mal não convulsivo. Em contexto neurocrítico, EEG contínuo ou seriado pode ser indicado, sobretudo se há movimentos sutis, flutuação de consciência ou crises prévias. Não presumir que ausência de convulsão motora significa ausência de atividade epiléptica. Tratamento exige equipe de emergência/neurointensivismo e protocolos validados.
+
+### 9.3 Armadilhas de prova
+
+“Fenitoína evita epilepsia seis meses depois do TCE”: falso segundo recomendações BTF. “Toda hemorragia subaracnóidea traumática recebe nimodipino”: falso. “Se a TC é normal, nunca haverá sintomas após trauma”: falso, pois concussão pode cursar com alterações cognitivas e funcionais sem lesão tomográfica. “Corticosteroide reduz edema cerebral traumático e melhora mortalidade”: falso, e pode fazer mal.
+
+## 10. Hemostasia, anticoagulação e transfusão em neurotrauma
+
+Sangramento intracraniano em paciente anticoagulado pode se expandir, sobretudo se houver hematoma subdural, contusão ou fratura. Identificar o **agente específico** (varfarina, dabigatrana, inibidores de Xa, heparinas), hora da última dose, função renal, comorbidades e gravidade do sangramento. A reversão não deve ser feita por “antídoto genérico”: antagonistas da vitamina K, inibidores de trombina, anti-Xa e heparinas exigem estratégias distintas. A decisão associa urgência neurocirúrgica, hemorragia, tempo e risco tromboembólico, sob protocolo da instituição.
+
+### 10.1 O que a TC muda na anticoagulação?
+
+Uma pessoa com anticoagulante e TC sem sangramento não tem automaticamente indicação de reversão agressiva: riscos trombóticos e clínicos podem superar benefício. Já hemorragia intracraniana relevante com expansão ou cirurgia iminente exige discussão imediata de reversão indicada para o agente e monitorização. Avaliar qual exame laboratorial ajuda em cada anticoagulante; INR mede efeito da varfarina, mas **INR normal não exclui ação de todos os DOACs**.
+
+### 10.2 Plaquetas e anticoagulantes antiagregantes
+
+Antiagregantes incluem AAS, clopidogrel e outros. O risco de expansão hemorrágica depende da lesão, associação de drogas e necessidade de cirurgia. Não transfundir plaquetas automaticamente para toda pessoa que usa AAS e bateu a cabeça: evidência e riscos variam com o cenário. Em cirurgia urgente com distúrbio hemostático e antiagregação, equipes especializadas podem adotar medidas dirigidas. Decisão depende de neurocirurgia, hemoterapia e recomendações vigentes, não de fórmula única.
+
+### 10.3 Quanto de hemoglobina é suficiente?
+
+Hemoglobina reduzida limita conteúdo arterial de oxigênio, mas transfusões possuem riscos de sobrecarga, lesão pulmonar e reações. O ensaio clínico HEMOTION (NEJM 2024) comparou estratégia liberal com transfusão em Hb ≤10 g/dL versus restritiva em Hb ≤7 g/dL em TCE moderado/grave, sem demonstrar redução estatisticamente conclusiva do desfecho neurológico desfavorável em seis meses pela estratégia liberal. Alguns desfechos secundários favoreceram a liberal, e houve mais SDRA nessa estratégia. Por isso **não impor “Hb >10 para todo TCE” como regra universal**. Decidir por perfusão, choque, sangramento, oxigenação, lesões associadas e protocolo neurocrítico.
+
+## 11. Cuidados intensivos sistêmicos: cérebro não existe isoladamente
+
+O paciente com TCE grave pode desenvolver insuficiência respiratória, infecção, choque, disfunção renal, distúrbios de sódio, delirium, trombose e perda nutricional. O cérebro é sensível a disfunções sistêmicas. Neuroproteção depende de cuidado de toda a pessoa, incluindo temperatura, posicionamento, prevenção de lesão de pressão, controle de dor, adequação ventilatória e nutrição oportuna.
+
+### 11.1 Líquidos e eletrólitos
+
+Evitar soluções e estratégias que reduzam sódio ou osmolaridade de maneira inadequada no TCE grave. A escolha de fluidos deve considerar hemorragia, pressão, eletrólitos, osmolalidade e risco de edema. Hiponatremia pode piorar edema cerebral, ocorrer por síndrome de secreção inapropriada de ADH, perda renal de sódio ou outras causas, e exige diagnóstico etiológico e correção cuidadosamente monitorada. Hipernatremia pode resultar de diabetes insipidus central, desidratação ou terapia hiperosmolar. Não tratar todos os distúrbios de sódio com a mesma infusão.
+
+### 11.2 Temperatura e infecção
+
+Febre eleva metabolismo cerebral e pode agravar balanço entre consumo/oferta de oxigênio. Investigar causas, que incluem pneumonia aspirativa, infecção de cateter, infecção urinária e alterações centrais de termorregulação. Antitérmicos e métodos físicos são selecionados conforme equipe e contexto, evitando resfriamento excessivo e tremores que aumentem consumo. Não usar antibioticoterapia por reflexo diante de qualquer febre central presumida sem examinar sinais de infecção.
+
+### 11.3 Nutrição e prevenção de fraqueza
+
+O estado hipercatabólico do trauma e ventilação prolongada favorecem perda muscular. Planejamento de nutrição enteral quando seguro, avaliação de risco de aspiração, trato gastrointestinal e necessidades energéticas são importantes. Deixar paciente em jejum prolongado apenas “porque está intubado” pode prejudicar recuperação, mas alimentação exige estabilidade e estratégia. A BTF sugere atenção a aporte calórico nos primeiros dias após TCE grave, com planos por equipe multidisciplinar.
+
+### 11.4 Tromboembolismo venoso
+
+Imobilidade, cirurgia e lesões de extremidades aumentam risco de TVP/TEP, enquanto hemorragia intracraniana torna anticoagulação profilática potencialmente perigosa se iniciada antes de estabilidade. Métodos mecânicos são usados quando apropriados; profilaxia farmacológica é considerada quando risco de expansão hemorrágica estiver aceitavelmente controlado, com auxílio de TC seriada e julgamento multidisciplinar. Não extrapolar uma janela fixa a todo hematoma sem comparar evolução e risco individual.
+
+### 11.5 Avaliação funcional precoce
+
+Além de GCS, acompanhar capacidade de mobilidade, deglutição, linguagem, cognição, sono e comportamento. Déficit de atenção e fadiga podem limitar alta funcional apesar de “exame motor bom”. A reabilitação deve começar quando clinicamente seguro e ser adaptada, incluindo fisioterapia, terapia ocupacional, fonoaudiologia e neuropsicologia quando indicada.
+
+## 12. Crianças: o que muda de fato
+
+Em crianças, anatomia craniana, proporção entre cabeça e corpo, mecanismos e reservas fisiológicas variam com idade. Lactentes não descrevem cefaleia e podem manifestar irritabilidade, recusa alimentar, sonolência ou mudança de comportamento. Fontanela, hematomas cranianos e fraturas possuem significado que difere do adulto. Trauma não acidental deve ser considerado quando história é inconsistente, mecanismo não explica lesão, há atraso na procura de cuidado ou achados em diferentes fases de cicatrização. A avaliação envolve proteção da criança e equipe experiente, evitando acusações sem investigação apropriada.
+
+### 12.1 PECARN: raciocínio por idade, não lista decorada
+
+O algoritmo PECARN foi desenvolvido para TCE contuso pediátrico leve, com dois grupos etários, **menores de 2 anos** e **a partir de 2 anos**. O objetivo é identificar risco muito baixo de lesão cerebral clinicamente importante, reduzindo TC desnecessária quando exame e seguimento são adequados. Fatores de alto risco incluem alteração do estado mental e sinais de fratura craniana relevantes (por exemplo fratura palpável no grupo <2 anos ou sinais de fratura de base no grupo ≥2 anos). Outros critérios incluem hematoma de couro cabeludo não frontal, perda de consciência significativa, mecanismo grave, comportamento atípico relatado pelo responsável, vômitos e cefaleia intensa, **em combinações e pesos diferentes conforme faixa etária**.
+
+Não aplicar todos os critérios a todas as idades indiscriminadamente. Uma criança de 18 meses com hematoma occipital e comportamento normal não recebe exatamente a mesma regra de uma de 11 anos com vômitos e cefaleia. A definição de mecanismos graves também difere por altura da queda. Para uso clínico, conferir algoritmo visual completo e critérios de exclusão antes de transformar o conteúdo em calculadora, especialmente trauma não acidental, coagulopatia e TCE penetrante.
+
+### 12.2 NICE pediátrica versus PECARN
+
+A NICE NG232 usa critérios para TC imediata e observação por quatro horas em certas situações de fator intermediário único, enquanto PECARN estratifica risco de lesão clinicamente importante e orienta TC, observação ou não imagem. As regras diferem em desfecho, amostra e cortes. Uma divergência não significa necessariamente que alguma “está errada”; significa que é preciso conhecer diretriz institucional e aplicar sua população-alvo.
+
+### 12.3 HIC em criança não usa as mesmas metas do adulto
+
+A BTF pediátrica 2019 sugere considerar tratamento de PIC para mantê-la **abaixo de 20 mmHg** e PPC mínima de **40 mmHg**, com alvo de 40–50 mmHg conforme idade (lactentes próximos à faixa inferior e adolescentes à superior). Não transferir automaticamente limiar adulto de PIC >22/PPC 60–70 para lactente. A perfusão sistêmica e pressão arterial devem ser avaliadas por parâmetros de idade, incluindo sinais de choque antes de hipotensão franca.
+
+### 12.4 Retorno à escola e proteção contra novo TCE
+
+A concussão pediátrica pode interferir em atenção, memória, sono, humor e tolerância à luz. O CDC descreve que muitas crianças podem retornar à escola em **1–2 dias** com adaptações e acompanhamento, mesmo que sintomas leves persistam. Isso não significa retorno imediato a esporte de contato nem obrigação de permanência em sala sem pausas. O retorno físico esportivo exige recuperação apropriada e progressão supervisionada; piora sintomática demanda ajuste. Escola, responsáveis e profissionais devem alinhar expectativas.
+
+## 13. TCE leve e concussão: diagnóstico clínico, observação e recuperação
+
+Concussão é alteração transitória de função cerebral associada a força biomecânica, com sintomas imediatos ou que surgem horas depois. Pode haver cefaleia, náusea, tontura, visão turva, hipersensibilidade à luz/ruído, dificuldade de concentração, lentificação, irritabilidade, alterações de sono e fadiga. **Perda de consciência não é requisito**. A TC costuma ser normal e serve para excluir lesões estruturais relevantes quando há risco, não para “confirmar” concussão.
+
+### 13.1 Avaliar além de uma pergunta sobre desmaio
+
+Perguntar mecanismo, amnésia retrógrada e anterógrada, confusão, número de vômitos, cefaleia progressiva, convulsão, uso de anticoagulante, história prévia de concussões, sintomas cervicais e condições de supervisão em casa. Exame inclui Glasgow, pupilas, força e sensibilidade, coordenação, marcha e equilíbrio quando seguro, rastreio de sintomas cognitivos e avaliação cervical. Uma pessoa que não desmaiou pode ter lesão intracraniana, sobretudo diante de fatores de risco; não confundir ausência de síncope com exclusão de TCE.
+
+### 13.2 Por que o repouso absoluto prolongado não é o padrão atual?
+
+Após período inicial de descanso relativo, retomada gradual de atividades cotidianas toleradas costuma favorecer recuperação, evitando sintomas intensos e novo trauma. Repouso absoluto em quarto escuro por muitos dias pode prolongar isolamento e dificultar retorno funcional. Orientar sono, hidratação, alimentação, manejo de dor e progressão de tarefas. Esforço físico leve pode ser reintroduzido conforme sintomas, enquanto esporte de contato e risco de nova colisão exigem liberação e etapas específicas.
+
+### 13.3 Retorno ao esporte em etapas
+
+O CDC descreve progressão de seis estágios com avaliação médica e retorno gradual: atividades diárias habituais, exercício aeróbico leve, atividade moderada, exercício intenso sem contato, treino com contato após liberação e competição. Cada etapa costuma durar pelo menos 24 horas; se sintomas pioram, recuar e reavaliar. Crianças e adolescentes devem ter retorno escolar funcional antes de completar retorno esportivo total. Não “testar se melhorou” com pancada ou jogo de contato.
+
+### 13.4 Sintomas persistentes pós-concussão
+
+Parte das pessoas mantém cefaleia, disfunção vestibular, alterações de sono, humor ou dificuldades cognitivas por semanas. Pode haver enxaqueca desencadeada, distúrbio cervical, ansiedade, alteração vestibulo-ocular e outras condições tratáveis. O CDC recomenda considerar especialista quando sintomas pioram, não melhoram após cerca de 2–4 semanas ou coexistem fatores de risco para recuperação prolongada. A avaliação não deve atribuir tudo a lesão estrutural irreversível; sintomas reais merecem abordagem integrada.
+
+### 13.5 Alta responsável
+
+Informar sinais de retorno imediato: piora progressiva da cefaleia, vômitos repetidos, sonolência excessiva, confusão crescente, convulsão, fraqueza/alteração de fala ou visão, assimetria pupilar, alteração de marcha e qualquer deterioração. Orientar responsável a supervisionar conforme circunstância e fornecer instruções por escrito. Não exigir que o paciente seja acordado de hora em hora de maneira universal quando avaliação foi adequada, mas assegurar capacidade de reconhecer piora e acesso a emergência, seguindo protocolo institucional.
+
+## 14. Idoso, anticoagulação e trauma aparentemente banal
+
+Atrofia cerebral relacionada à idade aumenta espaço de deslocamento e tensão de veias de ponte; quedas simples podem produzir subdural, especialmente em anticoagulação. O Glasgow inicial pode ser normal enquanto coleção progride. Betabloqueadores e comorbidades limitam interpretação de FC e pressão; doença cognitiva prévia dificulta detectar nova confusão. Identificar o **basal funcional e mental** por familiar ou cuidador é parte do exame.
+
+### 14.1 Duas perguntas sobre anticoagulação
+
+**Qual medicamento está em uso?** Varfarina tem manejo e marcadores distintos de apixabana, rivaroxabana e dabigatrana. **Há sangramento intracraniano ou indicação de neurocirurgia?** TC normal e paciente estável diferem de hemorragia com efeito de massa. Reversão dirigida considera ambos, além de trombose, função renal, última dose e disponibilidade. O médico deve evitar simplificar a “dar vitamina K para qualquer anticoagulante”, porque isso não reverte ação imediata de todos os agentes.
+
+### 14.2 Polifarmácia, síncope e causa da queda
+
+O atendimento de idoso não termina ao excluir hematoma. A queda pode decorrer de arritmia, hipotensão ortostática, hipoglicemia, efeitos medicamentosos, infecção, alteração visual ou fragilidade. Investigar esses fatores quando condição aguda permite reduz recorrência. No caso de possível violência ou negligência, aplicar fluxos de proteção e comunicação. A prevenção secundária inclui segurança domiciliar, revisão de medicamentos e reabilitação.
+
+## 15. Gestação, lesão craniana e particularidades sistêmicas
+
+Em gestante, prioridade inicial é preservar oxigenação e perfusão maternas para proteger mãe e feto. A gestação altera volume circulante, via aérea, risco de aspiração e resposta hemodinâmica; manejo de TCE deve considerar posicionamento que reduza compressão aortocava na idade gestacional pertinente. Não negar TC de crânio clinicamente indicada por medo genérico de radiação fetal: a escolha de imagem deve ponderar campo irradiado, benefício diagnóstico e medidas de proteção apropriadas. Após estabilização materna, articular vigilância obstétrica/fetal conforme idade gestacional e mecanismo.
+
+A gestante pode apresentar causas não traumáticas de alteração de consciência, como eclâmpsia, hipoglicemia e doença neurológica aguda, além de TCE. A presença de crise convulsiva após queda não prova que a convulsão seja resultado da queda — ela pode ter precipitado o acidente. História de pródromos, hipertensão, proteinúria, cefaleia antecedente e obstetrícia auxilia o diferencial, mas a emergência requer manejo simultâneo conforme risco.
