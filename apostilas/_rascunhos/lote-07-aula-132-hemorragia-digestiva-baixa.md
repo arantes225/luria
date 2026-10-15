@@ -1,6 +1,6 @@
-# LURIA — Lote 7 · Aula 132
+# LURIA — Tema 132 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)
 # Hemorragia Digestiva Baixa: da hematoquezia à hemostasia
-**Área:** Cirurgia Geral / Gastroenterologia / Emergência. **Estado:** RASCUNHO ORIGINAL, NÃO PUBLICADO. **Data:** 14/10/2026.  
+**Área:** Cirurgia Geral / Gastroenterologia / Emergência. **Estado:** RASCUNHO ORIGINAL EM REVISÃO, NÃO PUBLICADO. **Data:** 14/10/2026.  
 **Fontes centrais:** ACG 2023 *Management of Patients With Acute Lower Gastrointestinal Bleeding* e ESGE 2021 *Diagnosis and management of acute lower gastrointestinal bleeding*. O acervo LURIA possui aula 127 sobre HDA; a presente diferencia sangramento do intestino grosso/delgado e manejo de hematoquezia, sem reproduzir úlcera/varizes. A aula 136, “Hemorragia digestiva”, deverá servir como integração e não terceiro livro igual.
 
 ## 0. Etapa zero
@@ -256,6 +256,26 @@ Ausência de novo sangramento significativo, perfusão normal e estável, comorb
 ### 19.3. Exemplo para não usar score cegamente
 Mulher de 68 anos teve pequena perda autolimitada e agora está estável, porém perdeu peso, tem anemia ferropriva e relata mudança progressiva do hábito intestinal. Mesmo que risco imediato de intervenção seja baixo, **há preocupação diagnóstica com neoplasia**: plano de colonoscopia oportuna e acompanhamento é indispensável. A calculadora prediz um tipo de risco, não substitui raciocínio etiológico.
 
+### 19.4. Como calcular o Oakland: sete variáveis, unidades e interpretação
+
+O escore reúne **sete variáveis observadas na apresentação inicial**. A pontuação é uma **soma**, não uma probabilidade de câncer, nem um teste para determinar a topografia da hemorragia. Para evitar uso inadequado no Brasil, conferir principalmente a unidade da hemoglobina: a tabela abaixo emprega **g/dL**, e não g/L. Este é um instrumento para **adultos**, em sangramento digestivo baixo presumido e avaliação inicial completa; não extrapolar automaticamente a pediatria, gravidez ou choque não controlado.
+
+| Variável | Faixa ou resposta → pontos |
+|---|---|
+| Idade | até 39 anos → **0**; 40–69 → **1**; 70 ou mais → **2** |
+| Sexo registrado no modelo original | feminino → **0**; masculino → **1** |
+| Hospitalização prévia por HDB | não → **0**; sim → **1** |
+| Sangue no toque retal | ausente → **0**; presente → **1** |
+| Frequência cardíaca inicial | até 69 bpm → **0**; 70–89 → **1**; 90–109 → **2**; 110 ou mais → **3** |
+| Pressão arterial sistólica inicial | 160 mmHg ou mais → **0**; 130–159 → **2**; 120–129 → **3**; 90–119 → **4**; 50–89 → **5** |
+| Hemoglobina inicial | 16,0 g/dL ou mais → **0**; 13,0–15,9 → **4**; 11,0–12,9 → **8**; 9,0–10,9 → **13**; 7,0–8,9 → **17**; 3,6–6,9 → **22** |
+
+**Exemplo resolvido, baixo risco imediato:** mulher de 45 anos, sem internação anterior por HDB, sem sangue observado ao exame retal, FC 68 bpm, PAS 140 mmHg e Hb 13,7 g/dL. Pontos = idade **1** + sexo **0** + antecedente **0** + exame **0** + FC **0** + PAS **2** + Hb **4** = **7**. Se a hemorragia cessou, não existem sinais adversos e o acesso à investigação está assegurado, **≤8** é um elemento que favorece considerar seguimento ambulatorial, conforme ESGE; não autoriza alta automática.
+
+**Exemplo resolvido, perda relevante:** homem de 72 anos, internação anterior por HDB, sangue ao toque retal, FC 114 bpm, PAS 100 mmHg e Hb 9,4 g/dL. Soma = **2 + 1 + 1 + 1 + 3 + 4 + 13 = 25**. A instabilidade ou a possibilidade de sangramento importante já exige abordagem hospitalar, independentemente de qualquer escore. Não aguardar a calculadora para reanimar.
+
+**Limites do instrumento:** o escore foi derivado para estratificar necessidade de intervenção/desfechos hospitalares, não para excluir malignidade, medir volume perdido ou escolher entre colonoscopia e angio-TC. Um componente ausente **não recebe zero por conveniência**. Sinais incompatíveis com aplicação segura (por exemplo, PAS abaixo das faixas da derivação) exigem julgamento de gravidade, e não extrapolação matemática. Valores e componentes conferidos na validação externa de Kollef/Laursen e colaboradores, *JAMA Network Open* 2020: https://pmc.ncbi.nlm.nih.gov/articles/PMC7341175/; recomendação de uso contextualizado: ESGE 2021, DOI 10.1055/a-1496-8969.
+
 ## 20. Exames: diferenciar localizar sangue de caracterizar doença
 
 ### 20.1. Colonoscopia durante internação
@@ -279,6 +299,22 @@ Angiografia pode não encontrar extravasamento se hemorragia já parou. **Não e
 
 ### 20.4. Estudos do intestino delgado
 Quando exames alto/baixo adequados foram negativos, **cápsula endoscópica** é método valioso para mucosa do delgado e angiodisplasias/tumores, desde que não haja suspeita relevante de estenose que retenha cápsula. **Enteroscopia assistida** permite biópsia/hemostasia após localização. **Enterografia por TC/RM** ajuda em massas, inflamação e alterações estruturais. Em sangramento ativo importante, CTA/angiografia podem ser mais acionáveis que cápsula, conforme estabilidade.
+
+### 20.5. Ler a angio-TC como exame de sangramento, não apenas como laudo “positivo/negativo”
+
+Na hemorragia ativa, o contraste injetado pode atravessar um vaso lesionado e **aparecer dentro da luz intestinal**, onde antes não havia material de atenuação equivalente. O reconhecimento requer distinguir esse fenômeno de conteúdo hiperdenso que já estava presente na alça. O protocolo pode combinar fase sem contraste, fase arterial e fase portal/tardia, conforme serviço, equipamentos, necessidade clínica e decisão da radiologia; não exigir uma sequência única em todos os hospitais.
+
+| Achado ou situação | Significado e próxima decisão |
+|---|---|
+| Material denso já presente sem contraste | Pode corresponder a comprimido, sangue antigo concentrado, material ingerido ou resíduo; **não comprova** extravasamento vascular ativo |
+| Novo foco intraluminal após contraste que aumenta ou migra entre fases | Fortalece a hipótese de **sangramento ativo** e permite localizar território para discussão com radiologia intervencionista |
+| CTA positiva em doente que continua sangrando | Reavaliação imediata de perfusão e contato precoce com equipe capaz de angiografia/embolização; o tempo e a estabilidade condicionam rendimento |
+| CTA negativa e sangramento cessou | Não significa “nunca sangrou”; o exame é instantâneo e hemorragias intermitentes podem desaparecer entre episódios. Planejar colonoscopia/investigação etiológica conforme risco |
+| CTA negativa, mas o doente permanece em choque | Reconsiderar origem digestiva alta, sangramento não visualizado e diagnósticos extraintestinais; não atribuir estabilidade inexistente ao laudo |
+
+**Papel da cirurgia:** quando há sangramento persistente ou recorrente com repercussão vital e endoscopia/embolização falharam, não estão disponíveis ou não são apropriadas, a equipe cirúrgica precisa avaliar controle definitivo. A localização do ponto hemorrágico aumenta a chance de ressecção direcionada e evita retirada extensa de intestino por hipótese frágil. Não interpretar este parágrafo como indicação de colectomia imediata em toda hematoquezia volumosa; a prioridade permanece reanimação, localização e tratamento mais adequado aos recursos disponíveis.
+
+**Erro de prova frequente:** “angio-TC negativa exclui HDB” é falso quando o paciente sangra de modo intermitente. Já “angio-TC positiva significa operar” também é falso: a imagem frequentemente abre caminho para intervenção endovascular. As recomendações ACG 2023 e ESGE 2021 sustentam a centralidade da CTA quando há hemorragia importante/instabilidade e a ausência de obrigação de colonoscopia emergencial em todos os internados.
 
 ## 21. Tratamento das etiologias: exame e técnica precisam responder ao vaso certo
 
