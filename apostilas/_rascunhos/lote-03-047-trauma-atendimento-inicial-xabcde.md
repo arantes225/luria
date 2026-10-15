@@ -90,7 +90,7 @@ No ATLS 11, a letra “x” antecede o ABCDE para destacar hemorragia externa qu
 | D | O cérebro está perfundido e funcional? | Glasgow em queda, anisocoria, déficit focal, convulsão | Corrigir causas reversíveis, prevenir hipóxia/hipotensão, investigação dirigida |
 | E | Que lesões ou agressões ambientais faltaram? | Sangramento posterior, hipotermia, ferida não vista | Exposição sistemática, aquecimento e preservação de privacidade |
 
-**ArmadiIha de prova e prática:** o antigo raciocínio “ABCDE = obrigatoriamente A antes de qualquer coisa” não descreve corretamente o algoritmo anunciado no ATLS 11. Em um paciente com sangue jorrando do membro, controle da hemorragia catastrófica é imediato; ao mesmo tempo, alguém deve observar nível de consciência, via aérea e ventilação.
+**Armadilha de prova e prática:** o antigo raciocínio “ABCDE = obrigatoriamente A antes de qualquer coisa” não descreve corretamente o algoritmo anunciado no ATLS 11. Em um paciente com sangue jorrando do membro, controle da hemorragia catastrófica é imediato; ao mesmo tempo, alguém deve observar nível de consciência, via aérea e ventilação.
 
 ## 4. x — Hemorragia externa catastrófica
 
@@ -708,7 +708,7 @@ O Admin de imagens da LURIA recebe somente candidatas com autoria, fonte e licen
 - [x] Benchmark comparativo efetivamente aberto e descrito; procedência institucional não inventada.
 - [x] Apostila LURIA existente de referência visual inspecionada, sem alteração.
 - [x] Texto autoral com fisiologia normal antes da patologia, xABCDE, condutas, populações especiais e seis casos.
-- [x] Doze questões autorais de cinco alternativas? **Não:** todas têm quatro alternativas A–D, plenamente comentadas. Corrigir indicação se a padronização editorial exigir cinco.
+- [x] Doze questões autorais com quatro alternativas A–D, cada uma com justificativas e minirrevisão; revisar adequação ao padrão final da plataforma.
 - [x] Diagnósticos diferenciais e algoritmos de decisão ao longo dos capítulos.
 - [ ] Contagem de caracteres **didáticos úteis**, eliminando cabeçalhos, referências, tabelas e repetições, com validador apropriado.
 - [ ] Revisão técnica independente e avaliação explícita de doses, contraindicações e divergências entre protocolos.
