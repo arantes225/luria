@@ -476,3 +476,59 @@ Os cenários são fictícios e voltados ao raciocínio clínico; cada decisão d
 
 **Por que importa:** O encontro não termina no diagnóstico: sempre comunicar plano e continuidade.
 
+### Caso 3 — Paciente reserva prognóstico para si
+
+**Apresentação:** Mulher de 69 anos com DPOC avançada mantém capacidade e quer conhecer exames, porém pede que filhos não recebam detalhes. Eles exigem informações.
+
+**Hipótese:** Autonomia e sigilo do paciente capaz.
+
+**Raciocínio:** Verificar compreensão, apreciação das consequências, raciocínio e expressão de vontade. Não há autorização automática a todo familiar; pedido de informação dos filhos não anula preferência.
+
+**Avaliação:** Capacidade, preferências registradas, pessoas autorizadas e eventual risco concreto.
+
+**Conduta:** Explicar à família limites de privacidade, combinar informações gerais autorizadas e manter cuidado.
+
+**Por que importa:** Família ajuda no cuidado, mas não substitui autonomia de quem pode decidir.
+
+### Caso 4 — Diretiva antecipada versus pedido familiar de RCP
+
+**Apresentação:** Homem com doença neurológica irreversível perdeu capacidade e tinha DAV documentada recusando RCP no contexto terminal. Filhos discordam e pedem 'tudo'.
+
+**Hipótese:** Planejamento antecipado e limitação proporcional.
+
+**Raciocínio:** Conferir contexto/registro da DAV e condição terminal. CFM 1.995/2012 orienta consideração das diretivas; 1.805/2006 permite limitar intervenção desproporcional garantindo assistência integral.
+
+**Avaliação:** Prontuário, expressão anterior, representante, chance real de recuperação e avaliação ética.
+
+**Conduta:** Reunião, recomendação fundamentada, eventual segunda opinião, registrar decisão sobre RCP e manter analgesia/apoio.
+
+**Por que importa:** Não reanimar não equivale a não tratar.
+
+### Caso 5 — Dispneia intensa com saturação normal
+
+**Apresentação:** Mulher com câncer torácico progressivo relata falta de ar 8/10, SpO₂ 97%, FR 26, ansiedade e derrame pleural moderado.
+
+**Hipótese:** Dispneia multifatorial sem hipoxemia obrigatória.
+
+**Raciocínio:** Sintoma deve ser valorizado apesar de oximetria normal. A presença de derrame possivelmente drenável muda a estratégia; oxigênio indiscriminado não é resposta universal.
+
+**Avaliação:** Exame de esforço, derrame e risco de procedimento, ESAS, preferências.
+
+**Conduta:** Ventilação de ar, posicionamento, avaliar drenagem proporcional, fármaco de alívio selecionado com monitorização.
+
+**Por que importa:** A intensidade subjetiva e o mecanismo orientam manejo.
+
+### Caso 6 — Dor óssea com perda de força
+
+**Apresentação:** Homem com câncer de próstata avançado relata dor dorsal progressiva, fraqueza em pernas e retenção urinária.
+
+**Hipótese:** Suspeita de compressão medular metastática.
+
+**Raciocínio:** Ter acompanhamento paliativo não permite ignorar emergência potencialmente tratável que ameaça mobilidade.
+
+**Avaliação:** Avaliação neurológica, RM urgente da coluna, perfusão e objetivos do paciente.
+
+**Conduta:** Acionar urgência especializada, avaliar corticoide e intervenção radioterápica/neurocirúrgica conforme caso.
+
+**Por que importa:** Procedimentos podem ser paliativos e preservar função.
+
