@@ -16,7 +16,7 @@ Fonte interna: `assets/js/apostilas-lotes-225.js`. O calendário de 260 temas di
 | **226** | Clínica Médica | Demências e comprometimento cognitivo | **MANUSCRITO PRODUZIDO/AMPLIADO** `_rascunhos/lote-11-aula-226-demencias.md`; 81.207 caracteres totais (contagem bruta), 4+4 casos, 8+6 questões; ainda **NÃO CERTIFICADO**, sem imagens aprovadas e auditoria visual |
 | **227** | Clínica Médica | Doença de Parkinson e distúrbios do movimento | Pendente etapa zero e elaboração |
 | **228** | Clínica Médica | Neuropatias periféricas e doenças neuromusculares | Etapa zero parcial: Drive `06 - MIOPATIAS.pdf` efetivamente consultado, mas **não equivale ao escopo de neuropatias**, necessidade de complemento antes de edição |
-| **229** | Clínica Médica | Obesidade e síndrome metabólica no adulto | Pendente etapa zero completa; Drive possui resumos relacionados |
+| **229** | Clínica Médica | Obesidade e síndrome metabólica no adulto | **MANUSCRITO INICIAL PRODUZIDO** `_rascunhos/lote-11-aula-229-obesidade-sindrome-metabolica.md` (30.921 caracteres brutos), 4 casos, 6 questões; benchmark Drive lido; **NÃO CERTIFICADO** |
 | **230** | Clínica Médica | Osteoporose, sarcopenia e fragilidade | Pendente etapa zero completa; conferir sobreposição com geriatria |
 | **231** | Clínica Médica | Hemoglobinopatias e anemias hereditárias | Pendente; conferir sobreposição com anemia do cronograma e diretriz oficial de doença falciforme 2024 |
 | **232** | Clínica Médica | Coagulopatias, trombofilias e hemoterapia | Pendente; organizar sem duplicar hematologia e trombofilias gestacionais |
@@ -47,6 +47,13 @@ O código antigo de 260 temas não contém toda a ampliação planejada para a c
 - **Entregue em branch:** sumário clínico e texto aprofundado, algoritmos, critérios sindrômicos, farmacologia de Alzheimer, interpretação de RM, casos originais (8), questões originais (14) com alternativas comentadas, propostas de figuras (sem arquivo ou licença).
 - **Checagens faltantes:** auditoria manual de 60.000 caracteres **úteis** (a contagem bruta de 81.207 não aprova automaticamente); verificar por seção todas as afirmações/doses contra fontes; benchmarking adicional de apostila realmente equivalente e mais profunda; imagens com licença real/Admin; testes automatizados do HTML futuro e responsividade desktop/PWA; teste independente das questões; revisão médica final.
 - **Decisão:** manter **EM REVISÃO / NÃO PUBLICAR**; avançar conteúdo dos próximos números sem mexer no ambiente produtivo.
+
+## Auditoria da apostila 229
+- **Drive benchmark efetivamente aberto e lido:** `08 - OBESIDADE CONCEITOS GERAIS + TTO NAO FARMACOLOGICO.pdf` e `02 - OBESIDADE - PROCEDIMENTOS CIRURGICOS.pdf` (15/10/2026). Material com indicação de não comercialização por terceiros; usado só para identificar tópicos a ensinar, sem copiar. Origem Estratégia MED não confirmada.
+- **Fontes oficiais de atualização verificadas:** ABESO 2026 para farmacoterapia; OMS 2025 GLP-1; Resolução CFM 2.429/2025 para critérios de cirurgia. A tabela obsoleta de tipos de operação no comparativo não é adotada sem checagem.
+- **Conteúdo original criado:** diagnóstico, adiposidade central, circuitos neuroendócrinos, síndrome metabólica, terapia nutricional e comportamental, farmacoterapia orientadora, cirurgia, 4 casos e 6 questões. Imagens ainda não selecionadas/aprovadas.
+- **Pendências:** completar ≥60k úteis com detalhamento integral, farmacoterapia conforme bula/ABESO, cenários especiais, critérios operacionais da síndrome metabólica, avaliação de qualidade em PWA, auditoria de questões e casos.
+- **Decisão:** EM DESENVOLVIMENTO, NÃO PUBLICAR.
 
 ## Procedimento de continuidade por chats paralelos e Codex
 Sempre leia este inventário + arquivos de rascunho, depois confira `main` e eventuais branches de outros lotes. Produzir alterações **somente** em branch editorial própria, sem alterar `main`, CSS global ou itens em publicação. Evitar dois agentes editando o mesmo arquivo simultaneamente. Após cada manuscrito, registrar o nome da referência Drive **sem URL privada em GitHub público**, os capítulos realmente lidos, o código e os critérios pendentes. Após fechar o lote e sua revisão científica, Codex deverá reconciliar os complementos dos 401 temas, integrar HTML/JSON por caminhos apropriados, rodar os auditores e solicitar liberação editorial antes de merge/deploy.
