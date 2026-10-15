@@ -20,7 +20,7 @@ Fonte interna: `assets/js/apostilas-lotes-225.js`. O calendário de 260 temas di
 | **230** | Clínica Médica | Osteoporose, sarcopenia e fragilidade | **MANUSCRITO AUTORAL AMPLIADO v0.2** `_rascunhos/lote-11-aula-230-osteoporose-sarcopenia-fragilidade.md`, **91.392 caracteres brutos**, **10 casos clínicos e 14 questões comentadas**; PCDT osteoporose Portaria 22/2025 com anexo 29/01/2026, EWGSOP2, ISCD, NOGG e IVCF-20; Drive: 3 materiais complementares lidos, não localizado benchmark equivalente. **NÃO CERTIFICADO** (densidade útil, doses/bulas, imagens/Admin, revisão médica, HTML/PWA) |
 | **231** | Clínica Médica | Hemoglobinopatias e anemias hereditárias | **MANUSCRITO AMPLIADO v0.2** `_rascunhos/lote-11-aula-231-hemoglobinopatias.md`: **94.799 caracteres brutos**, **10 casos clínicos, 14 questões comentadas**; etapa zero relida, MS/PCDT 2024, ASH 2020 e TIF 2025 conferidos. **NÃO CERTIFICADO**: doses, calendário PNI/CRIE, imagens/Admin e HTML/PWA pendentes |
 | **232** | Clínica Médica | Coagulopatias, trombofilias e hemoterapia | **MANUSCRITO AUTORAL AMPLIADO v0.2**, `_rascunhos/lote-11-aula-232-coagulopatias-trombofilias-hemoterapia.md`: **93.364 caracteres brutos**, **12 casos clínicos e 16 questões comentadas**, 26 capítulos numerados; 4 comparadores temáticos do Drive lidos sem reprodução; diretrizes AABB 2023/2025, ASH 2023, WFH e VWD 2021, ISTH PTT 2025, MS TACO 2026. **NÃO CERTIFICADO**: 60K úteis auditados, revisão independente, doses/bulas e protocolos, imagens/Admin, HTML/PWA |
-| **233** | Clínica Médica | Oncologia clínica e emergências oncológicas | Pendente; preservar vínculo com oncologia cirúrgica sem copiar |
+| **233** | Clínica Médica | Oncologia clínica e emergências oncológicas | **RASCUNHO AUTORAL v0.1**, `_rascunhos/lote-11-aula-233-oncologia-clinica-emergencias-oncologicas.md`: **40.450 caracteres brutos**, 8 casos, 10 questões; não certificado, aprofundamento, verificação de fontes, imagens/Admin e revisão independente pendentes; **NÃO PUBLICAR** |
 | **234** | Clínica Médica | Doença de Chagas | Pendente; **separar de febre maculosa** que possui epidemiologia e manejo diferentes |
 | **235** | Clínica Médica | Hanseníase: diagnóstico, tratamento e prevenção de incapacidades | Pendente; priorizar PCDT MS atual |
 | **236** | Cirurgia Geral | Tumores renais e vesicais | Pendente; cruzar com tumores prostáticos e abordagem urológica |
@@ -118,3 +118,10 @@ O código antigo de 260 temas não contém toda a ampliação planejada para a c
 
 ## Procedimento de continuidade por chats paralelos e Codex
 Sempre leia este inventário + arquivos de rascunho, depois confira `main` e eventuais branches de outros lotes. Produzir alterações **somente** em branch editorial própria, sem alterar `main`, CSS global ou itens em publicação. Evitar dois agentes editando o mesmo arquivo simultaneamente. Após cada manuscrito, registrar o nome da referência Drive **sem URL privada em GitHub público**, os capítulos realmente lidos, o código e os critérios pendentes. Após fechar o lote e sua revisão científica, Codex deverá reconciliar os complementos dos 401 temas, integrar HTML/JSON por caminhos apropriados, rodar os auditores e solicitar liberação editorial antes de merge/deploy.
+
+## Continuidade da aula 233 — 15/10/2026
+
+- Rascunho original criado em branch isolada; o inventário indicava tema pendente. Busca inicial por `oncologia` e `emergencias oncologicas` no Drive sem resultados, não há benchmark específico confirmado.
+- 40.450 caracteres brutos, 8 casos e 10 questões; emergências centrais, diagnóstico, terapias, algoritmos, referências para verificação e 16 imagens candidatas ainda não licenciadas.
+- Bloqueios: completar profundidade premium (meta 60 mil caracteres úteis), revisão médica/científica independente, auditoria de doses e critérios, fontes brasileiras atuais, imagens e integração HTML/PWA.
+- Não publicar nem fazer merge/deploy; próximo tema 234 Doença de Chagas após concluir 233.
