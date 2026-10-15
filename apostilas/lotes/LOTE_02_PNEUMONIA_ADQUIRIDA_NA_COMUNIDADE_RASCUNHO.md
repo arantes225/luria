@@ -244,5 +244,257 @@ A) Ausência de febre exclui pneumonia. B) Alteração mental em idoso pode repr
 
 **Gates ainda abertos:** revisão médica independente, benchmark adulto equivalente do Drive, aprofundamento de doses/contraindicações, cobertura de imunossupressão e gravidez, ≥60 mil caracteres didáticos úteis sem redundância, imagens reais autorizadas, conversão ao renderer, auditoria de questões por âncoras, validação sintática e visual desktop/PWA. **Apostila não certificada nem publicada.**
 
+
+
+---
+
+# Ampliação editorial 03 — raciocínio aprofundado, decisões de local de cuidado e situações especiais
+
+> **Etapa zero atualizada em 14/10/2026:** foi reaberto o comparativo \`Pneumonia Comunitária na Pediatria.pdf\` do Drive. O arquivo ensina parcialmente exame clínico, gravidade, imagem e derrame em crianças, mas **não** oferece cobertura suficiente de PAC adulta. A busca por “pneumonia” no Drive não localizou material de curso inequivocamente adulto; por isso, a referência comparativa é **parcial**, sem certificação editorial final. A apostila LURIA anterior foi preservada integralmente. Para condutas, usar **SBPT 2018**, **ATS/IDSA 2019** e a atualização **ATS 2025** (publicada on-line em julho/2025 e no volume de 2026), com indicação explícita quando suas orientações não equivalem a protocolos locais brasileiros. Tabelas e questões abaixo são produções originais; nenhuma imagem ou fluxo de terceiros foi reproduzido.
+
+## 17. Mecanismos respiratórios aplicados ao exame clínico
+
+### 17.1 Consolidação e broncograma: por que o pulmão muda o som?
+
+Em condições normais, o ar atravessa brônquios e alcança unidades alveolares onde as paredes delgadas permitem difusão gasosa. A passagem de vibrações da voz é modificada por alvéolos arejados. Quando exsudato inflamatório ocupa espaços alveolares, o parênquima transmite sons de maneira diferente, podendo produzir **sopro tubário**, aumento de frêmito toracovocal, egofonia ou macicez à percussão. Esses achados clássicos apoiam consolidação, mas não são obrigatórios: pneumonia pequena, profunda, em pessoa obesa ou com enfisema pode ter exame pouco expressivo. Ausculta isolada não identifica pneumococo, influenza, Legionella ou outra etiologia.
+
+A **taquipneia** resulta de estímulos químicos e mecânicos: febre eleva produção de CO2, mediadores inflamatórios estimulam ventilação, hipoxemia ativa quimiorreceptores e menor complacência torna o esforço respiratório maior. É um sinal de gravidade que precisa ser contado, não estimado pela impressão de que a pessoa “respira um pouco rápido”. Em indivíduos idosos, FR de 30/min associada a confusão nova pode revelar doença importante mesmo sem febre elevada.
+
+### 17.2 Da consolidação ao shunt e à insuficiência respiratória
+
+Se determinado território alveolar recebe perfusão, mas quase nenhuma ventilação, ocorre efeito de **shunt**: parte do sangue retorna menos oxigenado à circulação arterial. Em áreas parcialmente ventiladas há desigualdade de ventilação-perfusão. Quanto maior o comprometimento pulmonar, maior a chance de hipoxemia e necessidade de oxigênio/suporte ventilatório. Isso não autoriza afirmar que toda opacidade extensa produz necessariamente choque: lesão pulmonar e perfusão sistêmica são domínios relacionados, porém distintos.
+
+**Caso fisiológico:** paciente com pneumonia lobar, SpO2 88% em ar ambiente e FR 32/min tem insuficiência de oxigenação relevante, mesmo que esteja normotenso. O CURB-65 pode subestimar risco porque não incorpora diretamente saturação. Já um paciente com SpO2 96% e pressão arterial 78/45 apresenta choque possível independentemente de oxigenação aparentemente adequada. Em ambos, o local de tratamento depende de disfunção atual, não apenas da extensão da imagem.
+
+### 17.3 Pleurite e derrame: anatomia orienta urgência
+
+A pleura visceral recobre o pulmão e a parietal reveste parede torácica e diafragma. Dor pleurítica localizada piora com inspiração, tosse ou movimento, mas também pode ocorrer em embolia pulmonar ou pneumotórax. O derrame parapneumônico é resposta inflamatória com líquido pleural; quando há infecção do espaço ou septações, o antimicrobiano sozinho pode não resolver o foco. A ultrassonografia permite avaliar quantidade, septações, ponto seguro para punção e necessidade de drenagem conforme equipe. Não puncionar indiscriminadamente todo pequeno derrame ou ignorar um derrame volumoso e loculado por já haver antibioticoterapia.
+
+## 18. Etiologia e raciocínio probabilístico sem determinismo radiológico
+
+### 18.1 Três perguntas melhores que “qual bactéria é?”
+
+1. **Há uma síndrome infecciosa do parênquima?** Verificar sintomas, evolução, exame, imagem e concorrentes.
+2. **O agente provável é viral, bacteriano ou coexistente?** Considerar epidemiologia local, estação, testes quando úteis e gravidade; ausência de produção purulenta não exclui bactéria.
+3. **Qual consequência de errar a cobertura?** Estimar risco de patógeno resistente, alergias e atrasos de antibioticoterapia em paciente grave.
+
+Pneumococo é causa bacteriana de referência, mas não é “sinônimo de pneumonia lobar”. Vírus respiratórios podem causar opacidades multifocais e pneumonia bacteriana pode produzir achados difusos. **Mycoplasma** e **Legionella** são agentes que não se encaixam no tratamento exclusivo por beta-lactâmico habitual; o contexto define a necessidade de cobertura chamada atípica, não o fato de ter tosse seca. A coinfecção deve ser considerada em pacientes graves com teste viral positivo e sinais convincentes de doença bacteriana.
+
+### 18.2 Quando ampliar o diferencial para MRSA ou Pseudomonas?
+
+O conceito antigo de pneumonia “associada a cuidados de saúde” não deve autorizar vancomicina ou antipseudomonas para qualquer morador de instituição. Avaliar **isolamento respiratório prévio do patógeno, hospitalização e uso de antibióticos parenterais recentes, doença estrutural pulmonar e prevalência local**. Em PAC grave com fatores de risco validados, coleta microbiológica antes da administração — sem atrasar terapia — ajuda descalonar quando resultados e evolução permitem.
+
+**Exemplo:** homem com bronquiectasias e cultura respiratória recente repetidamente positiva para Pseudomonas tem probabilidade diferente de mulher de 35 anos previamente saudável sem antibiótico recente. Dar mesma terapia ampliada a ambos aumenta danos e resistência sem benefício universal.
+
+### 18.3 Aspiração não é sinônimo de cobertura anaeróbia universal
+
+A aspiração de conteúdo orofaríngeo ocorre mesmo em pessoas saudáveis, mas mecanismos de defesa geralmente evitam pneumonia. Em disfagia grave, alteração de consciência, sedação ou doença neurológica, maior quantidade de material e maior vulnerabilidade tornam aspiração clinicamente relevante. Diferencie **pneumonite química** por conteúdo gástrico, em que inflamação inicial pode não ser bacteriana, de **pneumonia aspirativa** infecciosa. Não administrar antibiótico de amplo espectro e cobertura anaeróbia a todo evento aspirativo imediatamente sem avaliar evolução e dados de infecção. **Abscesso pulmonar e empiema**, em contrapartida, modificam significativamente o raciocínio de cobertura e controle de foco.
+
+## 19. Avaliação de gravidade — números com significado e limites
+
+### 19.1 O CURB-65 pode ser calculado e ainda assim levar à decisão errada
+
+CURB-65 soma confusão nova, ureia >7 mmol/L, FR ≥30/min, PA sistólica <90 ou diastólica ≤60 mmHg e idade ≥65 anos. Em exame brasileiro, distinguir **ureia** de **BUN** é essencial: muitos laboratórios fornecem ureia em mg/dL, enquanto estudos internacionais frequentemente apresentam BUN. Um valor de ureia de 22 mg/dL não equivale a BUN 22 mg/dL. A conversão aproximada entre ureia (mg/dL) e BUN (mg/dL) envolve fator perto de 2,14; não comparar números literalmente sem identificar unidade.
+
+**Exemplo:** homem de 70 anos, confuso, FR 34, PA 92/58 e ureia elevada pelo critério correspondente. Pontos: idade 1, confusão 1, FR 1, diastólica ≤60 mmHg 1, ureia 1 → CURB-65 **5**. Doença de alto risco exige internação/monitorização, mas o escore não substitui avaliação de choque e suporte de órgãos. **Contraexemplo:** adulto jovem sem nenhum item, CURB-65 zero, mas SpO2 82% e exaustão: não é candidato apropriado a manejo domiciliar.
+
+### 19.2 Critérios de PAC grave da ATS/IDSA e sua fisiologia
+
+O padrão de PAC grave reconhece um dos **critérios maiores** (necessidade de ventilação mecânica invasiva; choque séptico que exige vasopressores) ou pelo menos **três critérios menores** específicos de disfunção/gravidade. Entre os menores estão FR ≥30, PaO2/FiO2 ≤250, infiltrados multilobares, confusão, BUN ≥20, leucopenia, plaquetopenia, hipotermia e hipotensão exigindo ressuscitação volêmica agressiva. O uso de PaO2/FiO2 demanda compreender que FiO2 é uma fração e não um número inteiro de porcentagem: PaO2 75 mmHg com FiO2 0,50 produz razão **150**, sugerindo hipoxemia importante. O mesmo paciente com PaO2 75 em ar ambiente teria razão aproximadamente 357, uma situação fisiológica distinta.
+
+Não tratar contagem de critérios como algoritmo rígido de admissão à UTI sem considerar tendência, suporte disponível e comorbidades. Um paciente pode piorar muito em poucas horas antes de cumprir conjunto formal. Em choque, o tempo de intervenção é mais importante que completar formalidades de pontuação.
+
+### 19.3 PSI/PORT e apoio à decisão do local de cuidado
+
+O Pneumonia Severity Index utiliza idade, comorbidades, exame e resultados laboratoriais/radiológicos para prever mortalidade em grupos. Seu ponto forte é refinar probabilidade de desfecho em populações; sua limitação é o número elevado de variáveis e potencial influência da idade. Não se deve usar PSI para forçar alta em pessoa com hipoxemia acentuada, necessidade de oxigênio, incapacidade de ingerir medicação, confusão ou suporte domiciliar inviável. O melhor raciocínio combina escore, fisiologia e segurança social.
+
+## 20. Antibioticoterapia empírica — dar cobertura adequada, depois reduzir espectro
+
+### 20.1 O conceito de espectro importa mais que decorar marcas
+
+Beta-lactâmicos como amoxicilina inibem síntese de parede bacteriana e são úteis contra patógenos comunitários suscetíveis. Macrolídeos e doxiciclina cobrem determinados agentes sem parede celular típica e podem complementar regimes hospitalares/ambulatoriais selecionados. Fluoroquinolonas respiratórias possuem amplo espectro, mas apresentam riscos de efeitos adversos, seleção de resistência, interação com QT e capacidade de obscurecer suspeita de TB. A escolha requer conhecer patógenos esperados, alergias, gestação, função renal/hepática, uso recente e resistência local. “Mais amplo” não equivale automaticamente a “melhor”.
+
+**Princípio essencial:** coletar culturas quando indicadas e oportunas não pode retardar antibiótico em pneumonia grave com sepse; por outro lado, solicitar cultura indiscriminada para cada jovem com PAC leve também não é medicina de melhor qualidade. A equipe deve reavaliar a necessidade de cobertura ampliada com microbiologia, resposta e estado clínico, evitando manter tratamentos tóxicos desnecessariamente.
+
+### 20.2 Proposta terapêutica explicativa por cenário
+
+| Perfil | Regime típico em referência de adultos | Ponto a conferir |
+| --- | --- | --- |
+| PAC bacteriana ambulatorial sem grandes comorbidades | Amoxicilina, quando apropriada e patógeno provável suscetível | Alergia, gestação, prevalência local, tolerância VO |
+| Ambulatorial com doenças associadas | Beta-lactâmico com inibidor de beta-lactamase + agente de cobertura atípica em contexto apropriado | Interações, risco de QT, doença renal e antibióticos prévios |
+| Hospitalizado, não grave | Beta-lactâmico parenteral + macrolídeo ou alternativa apoiada em diretriz | Via e transição para VO após estabilidade |
+| Grave internado | Cobertura bacteriana precoce que contemple típicos e atípicos por combinação adequada | Identificar MRSA/Pseudomonas só quando houver critérios |
+| Suspeita comprovada de patógeno resistente | Cobertura guiada por cultura, fatores de risco e protocolo institucional | Coletar microbiologia e descalonar |
+
+**Exemplos farmacológicos em adulto sem disfunção orgânica, cuja prescrição definitiva requer revisão de bula e protocolo local:** amoxicilina 1 g VO a cada oito horas é alternativa descrita na ATS/IDSA 2019 para PAC ambulatorial em perfil apropriado; doxiciclina 100 mg VO duas vezes ao dia pode ser alternativa em cenários específicos; ceftriaxona 1–2 g IV ao dia integra certos esquemas hospitalares associada a cobertura atípica quando indicada. Não usar essas doses como receita para paciente com insuficiência renal, hepatopatia, alergia grave, gestação ou condição crítica sem avaliar parâmetros. Não confundir **amoxicilina simples** com **amoxicilina/clavulanato** nem presumir dose intercambiável sem checar cada apresentação.
+
+### 20.3 Quando um resultado microbiológico realmente modifica conduta?
+
+**Hemocultura positiva relevante:** pode exigir rever espécie, fonte e duração; interpretar contaminação em contexto. **Cultura de escarro:** qualidade da amostra e risco de colonização determinam valor; microrganismo isolado em bronquiectasias crônicas pode não ser causa exclusiva da pneumonia atual. **Painel viral positivo:** pode orientar antiviral/isolation e antibiotic stewardship, mas pneumonia grave com coinfecção suspeita não fica automaticamente sem cobertura. **Antígeno urinário para Legionella:** útil em situações selecionadas, porém não cobre todos os sorogrupos/agentes e não dispensa outras hipóteses.
+
+### 20.4 Risco de eventos adversos também é resultado clínico
+
+O antibiótico escolhido pode causar diarreia, colite por Clostridioides difficile, arritmia por prolongamento de QT, reação alérgica, nefrotoxicidade ou dano tendíneo, dependendo da classe. Em idosos com múltiplos medicamentos, investigar associação com antiarrítmicos, anticoagulantes e fármacos de risco. Para gestantes, confirmar segurança do agente e a fase gestacional; quinolona ou tetraciclina não deve ser escolha reflexa sem avaliação. O benefício de tratar bactéria provável precisa superar os danos esperados.
+
+## 21. A evolução nas primeiras 72 horas: uma lógica temporal
+
+### 21.1 Melhora clínica não se mede por temperatura isolada
+
+É comum que tosse, cansaço e opacidade radiológica persistam após início do tratamento mesmo quando perfusão e oxigenação melhoram. Reavaliar frequência respiratória, necessidade de oxigênio, pressão arterial, temperatura, consciência, ingestão, tendência laboratorial quando indicada e ausência de novos focos. Persistência de febre nas primeiras 24–48 horas sem deterioração não obriga troca imediata de antibiótico; já hipotensão, hipoxemia crescente, confusão ou derrame novo precisam de ação rápida.
+
+### 21.2 Falha precoce, falha tardia e diagnóstico alternativo
+
+**Falha precoce:** deterioração nas primeiras horas/dias, frequentemente relacionada a gravidade inicial, cobertura inadequada, complicação ou diagnóstico equivocado. **Falha tardia:** melhora inicial seguida de febre ou dispneia nova, levantando resistência, superinfecção, tromboembolismo, complicação pleural, edema cardiogênico ou doença não infecciosa. Não aceitar “pneumonia que não cura” sem considerar câncer obstrutivo, TB, doenças inflamatórias e medicações causadoras de pneumonite.
+
+**Checklist de falha:** 1) confirmar adesão e absorção; 2) rever escolha, dose, via e microbiologia; 3) perguntar por diagnóstico concorrente; 4) procurar derrame/empiema/abscesso ou endocardite em cenário sugestivo; 5) reavaliar suporte de órgãos; 6) considerar TC, ultrassom e investigação especializada conforme necessidade.
+
+## 22. Diretriz ATS 2025: novidade que precisa ser ensinada sem generalização
+
+### 22.1 Duração abreviada sob condições específicas
+
+A ATS 2025 **sugere** considerar menos de cinco dias, com piso de **três dias**, para PAC **não grave** em adultos ambulatoriais ou internados que já alcançaram estabilidade clínica e não apresentam fatores de risco relevantes que enfraqueçam essa estratégia. Isso é recomendação **condicional**, apoiada em evidência de certeza limitada, e **não se aplica automaticamente** a empiema, abscesso, processo necrosante, suspeita de patógenos que demandam maior duração, infecção extrapulmonar, gravidez e determinadas doenças respiratórias crônicas. Para PAC **grave internada**, o documento sugere **cinco dias ou mais**.
+
+**Comparação temporal:** a ATS/IDSA 2019 recomendava em geral pelo menos cinco dias de tratamento e estabilidade clínica. Uma questão que não informa o ano da referência pode exigir identificar qual orientação é citada. A LURIA deve explicar o referencial em vez de apresentar dois números contraditórios como igualmente universais.
+
+### 22.2 Corticosteroide sistêmico: distinguir indicação de PAC e comorbidade
+
+A ATS 2025 recomenda **não usar corticosteroide sistêmico rotineiramente na PAC não grave hospitalizada** e **sugere considerar** em adultos internados com PAC grave selecionada, excetuando pneumonia grave por influenza e avaliando contraindicações (hiperglicemia descontrolada, infecção fúngica invasiva suspeita, risco de sangramento e outras). A recomendação **não** equivale a prescrição de uma dose fixa a todo paciente com infiltração multilobar. Corticoide pode estar indicado por motivo concomitante independente — exacerbação de asma/DPOC ou choque séptico refratário, conforme protocolos — sem que a pneumonia não grave, por si só, o exija.
+
+### 22.3 Diagnóstico viral e coinfecção
+
+Em adulto ambulatorial com quadro clínico/laboratorial e imagem compatíveis com PAC viral e sem indício de bactéria, a decisão de não prescrever antibiótico pode ser apropriada em casos selecionados de baixo risco. Em paciente internado com PAC grave e vírus detectado, a ATS recomenda ponderar empiricamente antibiótico pela possibilidade de coinfecção, revisando microbiologia e evolução. Não transportar o mesmo raciocínio a todo indivíduo com gripe leve, nem negar tratamento de bactéria provável porque um teste viral foi positivo.
+
+## 23. Suporte clínico na pneumonia grave e sepse
+
+### 23.1 O primeiro minuto deve responder ao que mata agora
+
+Os mecanismos imediatos de deterioração incluem insuficiência respiratória hipoxêmica, choque distributivo e falência de órgãos. O atendimento prioriza via aérea, oxigenação, ventilação, perfusão, consciência e obtenção de acesso/monitorização. Em caso de sepse, estabelecer diagnóstico e administrar antimicrobiano adequado oportunamente, além de investigação do foco. O tratamento da pneumonia não se reduz ao antibiótico; um esquema microbiologicamente adequado não salva paciente que está hipoventilando e hipotenso sem suporte.
+
+### 23.2 Interpretação de oxigenação
+
+Em pneumonia extensa, saturação pode permanecer baixa por shunt, exigindo escalonamento de suporte de oxigênio. Avaliar trabalho respiratório, necessidade crescente de FiO2 e razão PaO2/FiO2; não manter oxigênio por baixo fluxo sem reavaliar paciente com esforço exaustivo. Cânula de alto fluxo, VNI ou ventilação invasiva são opções que dependem de seleção e infraestrutura. A VNI pode não ser apropriada em alguns pacientes com falência respiratória predominantemente hipoxêmica e secreções abundantes; falha de suporte não invasivo não deve atrasar intubação quando indicada.
+
+### 23.3 Fluidoterapia e choque
+
+Em paciente com sepse, fluidos podem melhorar pré-carga e perfusão, mas volumes indiscriminados podem agravar edema pulmonar, especialmente na presença de IC e doença renal. Reavaliação hemodinâmica dinâmica e sinais de perfusão orientam reposição e necessidade de vasopressores em serviço preparado. Lactato elevado pode indicar hipoperfusão ou outros processos e precisa ser interpretado no quadro global; valor normal não exclui doença relevante, assim como elevação isolada não estabelece um agente.
+
+### 23.4 Mobilização, nutrição e delirium
+
+Idosos com PAC hospitalizada podem perder funcionalidade rapidamente por imobilidade, inflamação e privação do sono. Prevenção de delirium, mobilização precoce quando segura, hidratação adequada, prevenção de tromboembolismo conforme risco e revisão de medicamentos sedativos são componentes do desfecho. O objetivo de alta não é apenas ausência de febre: inclui capacidade de ingerir medicamentos, retomar atividades básicas e suporte em casa.
+
+## 24. Populações especiais com conduta diferente
+
+### 24.1 Idoso sem febre e com delirium
+
+A imunossenescência e presença de comorbidades podem produzir resposta febril menos expressiva. Nova confusão, quedas, inapetência e piora funcional exigem investigar infecção respiratória mesmo quando tosse e febre são discretas. A pessoa pode apresentar risco elevado de desidratação, aspiração e efeitos adversos medicamentosos. A prioridade é reconhecer disfunção e segurança do cuidado, não exigir “tríade clássica” antes de agir.
+
+### 24.2 Imunossuprimidos
+
+Transplantados, pessoas sob quimioterapia, usuários de imunossupressores importantes e pessoas com HIV avançado podem apresentar etiologias fora do espectro típico: Pneumocystis jirovecii, tuberculose, fungos, CMV e agentes nosocomiais conforme contexto. O algoritmo de PAC do adulto imunocompetente **não deve ser reutilizado sem adaptação**. Investigar tipo de imunossupressão, CD4 quando aplicável, profilaxias, exposições, TC e microbiologia dirigida. Hipoxemia com pouca febre pode ser grave. O tratamento empírico pode precisar de especialista e protocolo próprio.
+
+### 24.3 Gestação e puerpério
+
+Gestantes podem ter dispneia fisiológica, mas febre, dor pleurítica, taquipneia, dessaturação e instabilidade não devem ser normalizadas. O diferencial inclui embolia pulmonar, edema pulmonar relacionado a hipertensão, cardiomiopatia periparto e infecções virais importantes. Antibioticoterapia deve usar agentes seguros para a idade gestacional e avaliar alergia/órgãos-alvo. O recém-nascido e a mãe têm interesse direto no controle da oxigenação materna; não atrasar tratamento de pneumonia grave por desejo de evitar todo medicamento.
+
+### 24.4 Doença renal e insuficiência cardíaca
+
+Ajuste de antibiótico deve levar em conta TFGe e risco nefrotóxico. Em insuficiência cardíaca, edema cardiogênico pode coexistir com pneumonia, e excesso de fluidos piora oxigenação. Uma imagem bilateral com crepitações não distingue os dois processos automaticamente; usar história, sinais de congestão, ultrassom/eco, biomarcadores e resposta terapêutica em conjunto.
+
+### 24.5 DPOC, bronquiectasias e pneumonia pós-obstrutiva
+
+Doença pulmonar estrutural favorece colonização e patógenos específicos, além de pior reserva respiratória. Paciente com PAC e DPOC pode ter simultaneamente exacerbação obstrutiva, alterando necessidade de broncodilatadores/corticoide por comorbidade. Pneumonia recorrente no **mesmo lobo** levanta suspeita de obstrução anatômica (tumor, corpo estranho, estenose), justificando imagem e eventual broncoscopia orientada. Não repetir o mesmo antibiótico várias vezes sem procurar causa.
+
+## 25. Casos clínicos avançados
+
+### Caso 7 — CURB-65 baixo, mas insuficiência respiratória
+
+Adulto de 29 anos, febre e consolidação segmentar, consciência e pressão normais, FR 24, ureia sem elevação; CURB-65 = zero. Contudo, apresenta SpO2 84% em ar ambiente e exaustão muscular. **Diagnóstico:** PAC com insuficiência de oxigenação significativa. **Raciocínio:** o escore não incorpora SpO2. **Conduta:** estabilização, oxigênio, avaliação hospitalar e investigação de gravidade/necessidade de suporte. **Por que importa:** decorar escore sem examinar fisiologia causa erro perigoso.
+
+### Caso 8 — Pneumonia com dor pleurítica e risco de TEP
+
+Mulher de 46 anos, dor torácica súbita, taquicardia e hipoxemia, sem febre expressiva; radiografia sugere pequena opacidade periférica. **Diferenciais:** embolia pulmonar com infarto, pneumonia, pneumotórax e outras condições. **Investigação:** aplicar probabilidade pré-teste de tromboembolismo, exames adequados e avaliação de pneumonia quando houver sinais infecciosos. **Conduta:** não iniciar apenas antibiótico por opacidade inespecífica sem avaliar doença tromboembólica potencialmente fatal. **Por que importa:** imagem pode ter mimetizadores.
+
+### Caso 9 — Coinfecção viral-bacteriana em PAC grave
+
+Homem de 68 anos com influenza confirmada, hipotensão, FR 36 e infiltrados multilobares. **Problema:** pneumonia viral grave com possível coinfecção bacteriana. **Raciocínio:** vírus positivo não exclui bactéria e há instabilidade. **Conduta:** suporte intensivo, antiviral conforme indicação e tempo, antibioticoterapia empírica em contexto de PAC grave com avaliação microbiológica e descalonamento. Corticoide adjuvante da PAC grave não deve ser extrapolado automaticamente quando há influenza. **Por que importa:** a etiologia pode ser dupla e o risco de intervenções varia.
+
+### Caso 10 — Confusão após alta e indicação de retorno
+
+Mulher de 79 anos tratou PAC ambulatorial; após 48 horas apresenta redução de ingesta, queda e sonolência. **Hipótese:** deterioração sistêmica, desidratação, sepse ou outra causa aguda; não assumir efeito benigno da idade. **Conduta:** avaliação imediata de sinais vitais, oxigenação, perfusão, eletrólitos e necessidade de internação, além de revisão de antibioticoterapia e diagnósticos. **Por que importa:** seguimento não é apenas recomendar “volte se tiver febre”.
+
+### Caso 11 — Radiografia que não clareou
+
+Homem de 64 anos, fumante importante, melhora da febre após antibiótico, mas mantém hemoptise e opacidade focal persistente seis semanas depois. **Diferencial:** neoplasia obstrutiva, TB, abscesso, sequela ou infecção não resolvida. **Conduta:** reimagem e investigação etiológica apropriada, incluindo TC e avaliação especializada quando indicado. **Por que importa:** melhora clínica parcial não exclui doença estrutural subjacente.
+
+### Caso 12 — Qual duração antibiótica escolher?
+
+Homem de 35 anos com PAC não grave, estável após poucos dias, sem comorbidade nem complicações, recebe tratamento de agente suscetível. **Raciocínio:** ATS 2025 admite curso de duração inferior a cinco dias, mínimo três, em pessoas selecionadas que atingem estabilidade; a decisão depende de protocolo local, agente e segurança de seguimento. Em contraposição, mulher de 72 anos internada por PAC grave com derrame pleural complicado não é candidata automática ao mesmo encurtamento. **Por que importa:** diretrizes recentes condicionam duração a estabilidade e perfil da doença.
+
+## 26. Questões adicionais de integração
+
+### Questão 11 — Gasometria
+Pessoa com pneumonia tem PaO2 72 mmHg recebendo FiO2 0,48. Razão PaO2/FiO2 aproximada:
+A) 34. B) 150. C) 250. D) 480.
+**Gabarito: B.** 72/0,48 = **150**. **A/C/D** resultam de conversão/divisão incorretas. **Mini-revisão:** usar FiO2 como fração, não 48.
+
+### Questão 12 — CURB-65 e ureia
+Por que converter/identificar a unidade de ureia ao aplicar CURB-65?
+A) Porque ureia e BUN são sempre números iguais. B) Porque algumas referências usam BUN em mg/dL e outras ureia em mmol/L. C) Porque BUN é marcador de etiologia bacteriana. D) Porque ureia dispensa interpretação de pressão.
+**Gabarito: B.** **A** ignora unidades e identidade de medida; **C** extrapola etiologia; **D** ignora outros componentes. **Mini-revisão:** identificar nome e unidade do exame antes de pontuar.
+
+### Questão 13 — Aspiração
+Após broncoaspiração, qual afirmativa é melhor?
+A) Todo episódio exige cobertura anaeróbia ampla. B) Diferenciar pneumonite química de infecção aspirativa, e considerar cobertura dirigida se houver abscesso/empiema ou indicação específica. C) Aspiração é impossível em idosos. D) Pneumonia aspirativa não causa febre.
+**Gabarito: B.** **A** é excesso terapêutico; **C** ignora disfagia; **D** é falso. **Mini-revisão:** mecanismo, evolução e complicações orientam antibiótico.
+
+### Questão 14 — PCR ou procalcitonina
+Paciente com PAC confirmada, hipoxemia e sinais sugestivos de infecção bacteriana, procalcitonina inicial baixa. Conduta mais adequada:
+A) Dispensar antibiótico obrigatoriamente só por PCT baixa. B) Integrar marcador à clínica e gravidade, sem fazer dele veto isolado. C) Concluir tuberculose automaticamente. D) Liberar sem medir sinais vitais.
+**Gabarito: B.** **A** atribui ao teste capacidade que não tem; **C** confunde diagnósticos; **D** ignora risco. **Mini-revisão:** biomarcador auxilia, não substitui julgamento clínico.
+
+### Questão 15 — Antibioticoterapia curta
+Segundo a ATS 2025, qual cenário pode justificar considerar menos de cinco dias de antibiótico?
+A) PAC grave com choque e empiema. B) PAC não grave, clinicamente estável e sem fatores que exijam prolongamento, com avaliação individual. C) Legionella complicada sem resposta. D) Pneumonia necrosante.
+**Gabarito: B.** **A/C/D** apresentam gravidade ou etiologias/complicações que enfraquecem encurtamento. **Mini-revisão:** duração não é número universal.
+
+### Questão 16 — Corticoide
+Qual condição é mais compatível com considerar corticosteroide adjuvante por indicação de PAC, segundo ATS 2025?
+A) Toda PAC não grave ambulatorial. B) PAC grave hospitalizada selecionada, excetuando influenza e com avaliação de contraindicações. C) Tosse viral sem pneumonia. D) Todo derrame simples.
+**Gabarito: B.** **A/C/D** generalizam sem evidência. **Mini-revisão:** pneumonia grave e não grave têm recomendações distintas.
+
+### Questão 17 — Culturas
+Qual paciente mais provavelmente se beneficia de coleta microbiológica dirigida antes de antibiótico, sem atrasar seu início?
+A) Jovem estável com PAC leve simples. B) Adulto com PAC grave e fator documentado para patógeno resistente. C) Pessoa com rinite isolada. D) Pessoa sem sintomas e imagem normal.
+**Gabarito: B.** **A** pode não necessitar testes extensos, **C/D** não têm quadro que justifique cultura de pneumonia. **Mini-revisão:** teste microbiológico deve poder mudar conduta.
+
+### Questão 18 — Falha terapêutica
+Paciente com PAC apresenta necessidade crescente de oxigênio e derrame pleural loculado. Próximo passo:
+A) Manter antibiótico sem rever foco. B) Avaliar complicação pleural, necessidade de drenagem e suporte. C) Repetir somente antitérmico. D) Ignorar imagem porque há antibiótico.
+**Gabarito: B.** **A/C/D** retardam controle de foco. **Mini-revisão:** empiema demanda abordagem além do antimicrobiano.
+
+## 27. Auditoria de autossuficiência após esta expansão
+
+| Competência | Parte interna | Estado |
+| --- | --- | --- |
+| Explicar shunt e semiologia da consolidação | 17 | Desenvolvido |
+| Selecionar etiologia provável e risco resistente | 7, 18 | Desenvolvido |
+| Calcular CURB-65 e PaO2/FiO2 | 8, 19, questões 11–12 | Desenvolvido |
+| Usar imagens e microbiologia com raciocínio | 9–10, 17–20 | Desenvolvido; imagens reais pendentes |
+| Diferenciar regimes por local de cuidado | 11, 20 | Parcial: disponibilidade e dose por condições especiais exigem revisão |
+| Explicar ATS 2019 versus 2025 | 11, 22 | Desenvolvido |
+| Identificar necessidade de UTI/sepse | 8, 12, 23 | Desenvolvido conceitualmente |
+| Manejar derrame complicado e falha terapêutica | 13, 21 | Desenvolvido |
+| Avaliar idoso, imunossuprimido e gestante | 24 | Introduzido, sem quadro prescritivo completo |
+| Garantir benchmark adulto do Drive | Registro comparativo | **Não cumprido** |
+| Selecionar figuras e validar licenças | Plano anterior de imagens | **Não cumprido** |
+| Conferir dose/ajuste por função renal e gestação | 20, 24 | **Não concluído** |
+
+**Referências adicionais efetivamente confrontadas:**
+- American Thoracic Society. *Diagnosis and Management of Community-acquired Pneumonia: Official ATS Clinical Practice Guideline*, publicado em 2025. DOI 10.1164/rccm.202507-1692ST. https://doi.org/10.1164/rccm.202507-1692ST.
+- SBPT. *Recomendações para o manejo da pneumonia adquirida na comunidade 2018* (Corrêa et al.). DOI 10.1590/S1806-37562018000000130.
+- ATS/IDSA. *Diagnosis and Treatment of Adults with Community-acquired Pneumonia*, 2019. DOI 10.1164/rccm.201908-1581ST.
+
+**Situação editorial:** manuscrito ampliado com doze casos e dezoito questões no conjunto, mas a expansão depende de validação de imagens, doses, prescrição em grupos especiais, autossuficiência e demonstração de referência comparativa adulta. A contagem bruta a ser verificada não dispensa qualidade clínica. **Não publicar ou certificar.**
+
 ## Próximas ampliações mandatórias
 Expandir para fisiologia normal, epidemiologia, fisiopatologia completa, critérios diagnósticos quantitativos verificados, algoritmos diferenciados por gravidade e populações, tabelas de doses com fontes primárias atuais, contraindicacões, acompanhamento, prevenção, complicações, casos clássicos/atípicos/emergenciais e questões com justificativa de cada alternativa. Conferir licença das imagens; utilizar somente fila Admin, sem embutir arquivos clínicos não aprovados. Revisar ≥60.000 caracteres didáticos úteis e renderização desktop/PWA antes de qualquer index.html ou catálogo.
