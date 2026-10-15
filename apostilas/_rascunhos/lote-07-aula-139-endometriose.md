@@ -421,3 +421,138 @@ Uma cirurgia pode atingir um objetivo e prejudicar outro. Os resultados de ferti
 
 ### 24.6. Gestação não cura endometriose
 A fisiologia da gravidez suprime ciclos ovulatórios temporariamente e pode modificar sintomas, mas a doença pode persistir, lesões podem sofrer decidualização e aparecerem achados de imagem complexos. **Nunca aconselhar gravidez como terapia** de dor. Estudos observacionais associam endometriose a alguns desfechos obstétricos adversos, como parto prematuro e placenta prévia, mas risco absoluto e confundimento importam; pré-natal individualizado, sem fatalismo.
+
+
+## 25. Casos adicionais de raciocínio integrado
+
+### Caso 6 — exame negativo, adolescente incapacitada
+**Apresentação:** adolescente de 16 anos, menarca aos 12, dismenorreia progressiva com vômitos e faltas escolares frequentes. Usa analgésicos de forma irregular por medo de efeitos, nunca recebeu tratamento hormonal adequado. US transabdominal de rotina relata útero e ovários normais. Relata dor à evacuação somente durante menstruação, sem sangue nas fezes.  
+**Hipóteses:** endometriose peritoneal superficial, doença profunda não avaliada no exame inicial, dismenorreia primária grave, componente intestinal funcional coexistente.  
+**Raciocínio:** a progressão, incapacidade e disquesia tornam necessário aprofundar investigação. **US abdominal normal não exclui endometriose**, nem indica laparoscopia imediata obrigatória. A adolescência e as preferências da paciente alteram modalidade de exame e necessidade de consentimento; não forçar US transvaginal.  
+**Exames complementares:** história de atividade sexual e possibilidade gestacional quando pertinente com privacidade e abordagem acolhedora, avaliação clínica/ultrassonográfica direcionada em serviço competente com via aceita; investigação de outras causas de dor conforme achados.  
+**Interpretação:** ausência de endometrioma não exclui implante superficial, mas não comprova que toda dor seja endometriose.  
+**Conduta:** estabelecer plano de analgesia correto e avaliar supressão hormonal apropriada se elegível, agenda de reavaliação, registro funcional e encaminhamento a ginecologia da adolescência/endometriose conforme persistência/gravidade; considerar laparosocopia seletiva se tratamento falhar ou outra indicação aparecer.  
+**Por que importa:** o objetivo é evitar normalizar dor incapacitante, sem criar cascata invasiva para todas as adolescentes.
+
+### Caso 7 — dor intestinal e colonoscopia normal
+**Apresentação:** mulher de 34 anos tem disquesia e constipação com piora intensa perimenstrual, dispareunia profunda e infertilidade de 18 meses. Colonoscopia feita por sangue nas fezes mostrou apenas hemorroida e mucosa colônica sem infiltração visível. Ultrassonografia especializada detecta nódulo retossigmoide e ausência de sliding sign.  
+**Hipóteses:** endometriose profunda intestinal + fator anal responsável pelo sangramento; investigar outras causas GI conforme risco.  
+**Raciocínio:** endometriose intestinal pode acometer serosa/muscular, poupando mucosa, de modo que **colonoscopia normal não afasta lesão extrínseca**. A hemorroida pode explicar sangue vermelho, mas não necessariamente dor cíclica profunda. O ultrassom fornece anatomia e demanda descrição de extensão e possível estenose.  
+**Exames:** US de mapeamento detalhado; RM especializada se útil; avaliação de hábito intestinal e outras causas de sangramento, investigação de infertilidade também do parceiro; imagem renal se suspeita de doença associada.  
+**Conduta:** discutir tratamento hormonal versus cirurgia de equipe experiente e reprodução assistida conforme prioridades e risco de estenose, idade e reserva; encaminhar a centro especializado. Não prometer cura reprodutiva apenas com ressecção intestinal.  
+**Por que importa:** mostra limite do exame de mucosa diante de doença extrínseca e evita cirurgia mal planejada.
+
+### Caso 8 — ovário, fertilidade e risco de iatrogenia
+**Apresentação:** mulher de 38 anos com desejo de gestar, infertilidade de dois anos, endometriomas bilaterais de 3,5 e 4 cm caracterizados por US especializada, AMH reduzido, sem dor importante e espermograma de parceiro ainda não solicitado. Foi orientada a retirar os dois ovários parcialmente antes de iniciar FIV “para limpar a pelve”.  
+**Hipóteses:** infertilidade multifatorial com endometriose ovariana e declínio de reserva, potencial fator masculino não avaliado.  
+**Raciocínio:** ESHRE e FEBRASGO 2026 não respaldam cistectomia **de rotina** antes de FIV para aumentar nascidos vivos, particularmente quando cirurgia pode remover córtex ovariano e reduzir oócitos disponíveis. A cirurgia pode ser indicada por suspeita de malignidade, dor ou acessibilidade folicular, que não estão documentados no caso.  
+**Exames:** completar avaliação reprodutiva de ambos, ultrassom especializado e avaliação de reserva, revisão de imagem para características suspeitas e da possibilidade de captação de oócitos.  
+**Conduta:** aconselhar sobre idade/tempo, fertilidade assistida e riscos cirúrgicos; não operar automaticamente endometriomas bilaterais. Se cirurgia for necessária por outra razão, discutir estratégia e preservação reprodutiva antes.  
+**Por que importa:** cirurgia bem executada anatomicamente pode reduzir a chance de gestação se o objetivo não foi definido.
+
+### Caso 9 — pouca dor, ureter ameaçado
+**Apresentação:** paciente de 32 anos com endometriose profunda posterior acompanhada com progestagênio; relata boa melhora da dor nos últimos oito meses. US de mapeamento recente mostra lesão periureteral e hidronefrose moderada unilateral, com queda de função relativa do rim em investigação.  
+**Hipóteses:** comprometimento ureteral por endometriose extrínseca/intrínseca, risco de obstrução renal crônica; diferenciais urológicos a excluir.  
+**Raciocínio:** a redução de dor com hormônio **não garante desobstrução do ureter**. O tamanho da lesão pode ser modesto e a lesão renal progressiva, até sem dor intensa. O objetivo é preservar órgão e esclarecer nível/mecanismo da obstrução.  
+**Exames:** função renal, imagem complementar dos rins/ureteres conforme urologia e avaliação de obstrução, mapeamento pélvico especializado; comparar exames prévios.  
+**Conduta:** referência prioritária a equipe de endometriose + urologia, monitorização e decisão de descompressão/cirurgia conforme risco anatômico e funcional. Manter tratamento da dor como complemento, não solução única de obstrução.  
+**Por que importa:** resposta sintomática não significa segurança de órgão.
+
+### Caso 10 — dor depois da cirurgia e mecanismo neuromuscular
+**Apresentação:** pessoa de 29 anos realizou excisão laparoscópica de lesões superficiais e endometrioma unilateral há 18 meses. Menstruação está controlada com hormônio, mas persiste dor diária na relação, pior com estresse e sentar, hiperalgesia vulvar e espasmo doloroso de assoalho pélvico. RM recente sem nódulo profundo ou massa.  
+**Hipóteses:** disfunção miofascial do assoalho pélvico, sensibilização central, vulvodínia, dor neuropática e doença endometriótica residual mínima entre possíveis coexistências.  
+**Raciocínio:** endometriose não é sinônimo de todas as dores subsequentes. Repetir ressecção sem alvo anatômico e ignorar músculos/nervos pode ampliar aderências e sofrimento. A dor relatada é real e exige cuidado, não descrédito.  
+**Exames:** avaliação clínica/funcional de assoalho pélvico consentida, história de dor neuropática, GI/urinário, saúde sexual/mental, revisão da cirurgia original e imagem se surgirem sinais de risco.  
+**Conduta:** fisioterapia pélvica especializada, educação, manejo de comorbidades, eventual abordagem multimodal de dor; repetir cirurgia apenas se aparecer objetivo claro e benefício provável.  
+**Por que importa:** a chance de melhora aumenta quando o tratamento contempla mecanismos reais além da presença de implantes.
+
+## 26. Questões avançadas — oito diagnósticos e decisões
+
+### Questão 9 — imagem negativa
+Paciente com dismenorreia grave e dispareunia de profundidade, exame físico e US transvaginal de rotina normais. Segundo NICE NG73:
+A. Excluir definitivamente endometriose. B. Não considerar cirurgia em nenhuma circunstância. C. Reconhecer que imagem normal não exclui endometriose e avaliar necessidade de investigação, encaminhamento e tratamento segundo sintomas. D. Medir CA-125 para confirmar.  
+**Gabarito C.** **C** acompanha NICE 2024: imagem normal não elimina suspeita, e tratamento/investigação podem caminhar em paralelo. **A** falso, especialmente para lesões superficiais. **B** NICE permite laparoscopia seletiva. **D** CA-125 não é diagnóstico. **Mini-revisão:** normalidade de US/RM não certifica ausência de implantes superficiais.
+
+### Questão 10 — colonoscopia normal
+Mulher com disquesia cíclica, nódulo retossigmoide na imagem especializada e colonoscopia com mucosa íntegra. Qual explicação?
+A. Doença intestinal profunda pode atingir serosa/muscular sem invadir mucosa, e colonoscopia normal não a exclui. B. Colonoscopia sempre é sensível a todo implante. C. Todo sangramento retal deve ser atribuído a endometriose. D. O próximo passo obrigatório é colectomia extensa.  
+**Gabarito A.** **A** reflete anatomia. **B** confunde lúmen e serosa. **C** descarta câncer/hemorroidas/colite sem investigação. **D** ignora risco/benefício. **Mini-revisão:** escolher o exame pela camada anatômica investigada.
+
+### Questão 11 — infertilidade com endometrioma
+Mulher de 38 anos, endometriomas bilaterais, baixa reserva e FIV planejada. A abordagem recomendada genericamente é:
+A. Cistectomia bilateral obrigatória para aumentar nascidos vivos. B. Avaliar características de lesão, dor, acesso folicular, idade e reserva; evitar cirurgia de rotina antes da FIV só para melhorar o resultado reprodutivo. C. Ignorar idade. D. Contraindicar FIV por endometriose.  
+**Gabarito B.** **B** segue ESHRE/FEBRASGO. **A** pode reduzir reserva e não demonstrou benefício universal. **C** ignora determinante reprodutivo importante. **D** incorreto. **Mini-revisão:** benefício clínico da cirurgia não é o mesmo que benefício reprodutivo.
+
+### Questão 12 — lesão ureteral
+Pessoa com endometriose profunda melhora de dor após progestagênio, mas desenvolve hidroureteronefrose. Melhor conduta:
+A. Aguardar porque sintoma desapareceu. B. Dosar estradiol em série e não investigar rim. C. Suspender todos os exames, usar AINE. D. Avaliar função renal e obstrução prioritariamente com equipe especializada e intervenção conforme necessidade.  
+**Gabarito D.** **D** prioriza órgão. **A/B/C** ignoram risco renal silencioso. **Mini-revisão:** resposta de dor não prova melhora anatômica.
+
+### Questão 13 — biomarcador
+Mulher com dor pélvica e CA-125 discretamente aumentado. Qual afirmação?
+A. CA-125 não deve ser usado isoladamente para diagnosticar endometriose, pois condições benignas e malignas podem alterá-lo. B. CA-125 elevado comprova grau IV. C. Normal exclui implante superficial. D. Deve substituir US especializada.  
+**Gabarito A.** **A** é coerente com ESHRE/NICE. **B/C** falsos, marcador não estagia/exclui. **D** prejudica mapeamento anatômico. **Mini-revisão:** não confundir marcador oncológico inespecífico com teste diagnóstico de endometriose.
+
+### Questão 14 — supressão e gestação
+Paciente deseja engravidar agora e recebe proposta de contraceptivo hormonal contínuo como estratégia exclusiva para aumentar a chance mensal de concepção. Qual análise?
+A. É a estratégia universal de fertilidade na endometriose. B. Gestação curará endometriose definitivamente. C. Supressão hormonal pode tratar dor, mas impede concepção enquanto usada; infertilidade precisa de avaliação de casal e plano reprodutivo. D. Fator masculino jamais contribui.  
+**Gabarito C.** **C** separa objetivos. **A** confunde tratamento de sintoma com reprodução. **B** falso. **D** negligencia investigação. **Mini-revisão:** controle de dor não é igual a obtenção de gravidez.
+
+### Questão 15 — cenário pós-cirurgia
+Paciente mantém dor sexual diária com assoalho pélvico hipertônico após remoção de lesões, sem achado novo em RM. Qual conduta é mais justificável?
+A. Reoperar para remover toda aderência imaginada. B. Avaliar dor miofascial/sensibilização e oferecer tratamento interdisciplinar, sem presumir recidiva macroscópica como única causa. C. Declarar que dor é falsa. D. Prescrever antibiótico para endometriose estéril.  
+**Gabarito B.** **B** aborda mecanismos múltiplos. **A** aumenta risco iatrogênico. **C** invalida sofrimento. **D** não trata endometriose não infecciosa. **Mini-revisão:** dor pélvica pós-operatória exige novo diagnóstico, não apenas nova operação.
+
+### Questão 16 — diagnóstico e laparoscopia
+O que caracteriza a mudança de ESHRE 2022?
+A. Laparoscopia proibida. B. US transvaginal capaz de excluir todas as formas. C. Todo paciente precisa de laparoscopia antes de qualquer hormônio. D. Diagnóstico pode combinar clínica/imagem e tratamento empírico; laparoscopia fica para situações selecionadas, com decisão compartilhada.  
+**Gabarito D.** **D** é a interpretação correta. **A** exagera. **B** ignora doença superficial. **C** repete concepção antiga rígida. **Mini-revisão:** cirurgia continua valiosa quando responde a pergunta clinicamente relevante.
+
+## 27. Mapa de ligação para revisão e construção de flashcards
+
+| Conteúdo | Seção | Caso | Questão |
+|---|---|---|---|
+| Dismenorreia primária versus secundária | 19.1, 19.4 | 6 | 9 |
+| Exame pélvico consentido em adolescente | 19.3, 20.1 | 6 | 9 |
+| US especializada/sliding sign | 20.1–20.2 | 7 | 10 |
+| Endometrioma versus massa suspeita | 20.3 | 8 | 11 |
+| Doença intestinal extramucosa | 20.4 | 7 | 10 |
+| Obstrução ureteral | 20.5 | 9 | 12 |
+| RM normal e doença superficial | 20.6, 21 | 6 | 9 |
+| CA-125 e diagnósticos diferenciais | 20.7 | 8 | 13 |
+| Tratamento hormonal e planejamento reprodutivo | 22, 24 | 8 | 14 |
+| Escolha de técnica cirúrgica intestinal | 23.2 | 7 | 10 |
+| Cistectomia e risco sobre reserva | 23.3–23.4 | 8 | 11 |
+| Sensibilização/assoalho pélvico | 19.3, 22.6 | 10 | 15 |
+| Laparoscopia seletiva ESHRE/NICE | 21 | 6 | 16 |
+
+### Pulo do Gato — decisões de alto rendimento
+1. **A clínica inicia diagnóstico:** não exigir lesão visível para reconhecer sofrimento.
+2. **Exame normal não encerra investigação:** US de rotina pode não ter avaliado doença profunda e pode não visualizar doença superficial.
+3. **Colonoscopia examina sobretudo mucosa:** endometriose intestinal pode ser extramucosa.
+4. **CA-125 não confirma endometriose:** não substituir imagem/anamnese.
+5. **Tratar dor e tratar infertilidade são decisões diferentes**, às vezes em tempos diferentes.
+6. **Endometrioma bilateral antes da FIV:** cirurgia não é rotina para elevar taxa de nascidos vivos.
+7. **Hidronefrose é risco renal**, mesmo em pessoa com melhora da dor.
+8. **Nódulo profundo não é sinônimo de cirurgia urgente:** sintomas, obstrução e riscos definem prioridade.
+9. **Dor pode continuar sem doença macroscópica nova**, por sensibilização e condições coexistentes.
+10. **Adenomiose e endometriose podem coexistir**, com alvos distintos de tratamento.
+11. **Gestação não cura doença**; evitar aconselhamento reprodutivo inadequado.
+12. **NICE e ESHRE são compatíveis:** imagem e terapia empírica sem negar papel da laparoscopia seletiva.
+
+## 28. Fontes conferidas para a ampliação
+1. **NICE NG73 — Recommendations**, diagnóstico atualizado novembro/2024 e recomendações de cirurgia/fertilidade. https://www.nice.org.uk/guidance/ng73/chapter/Recommendations
+2. **ESHRE Guideline: Endometriosis**, *Hum Reprod Open* 2022;hoac009. https://academic.oup.com/hropen/article/2022/2/hoac009/6537540
+3. **FEBRASGO**, Silva Filho AL et al. *Diagnóstico e manejo da infertilidade associada à endometriose*, *Femina* 2026;54(3):199–214, publicação 05/05/2026, DOI 10.61622/0100-7254543202606. https://femina.org.br/article/diagnostico-e-manejo-da-infertilidade-associada-a-endometriose-numero-4-2026/
+4. **FEBRASGO** versão em inglês no *Rev Bras Ginecol Obstet* 2026, documento de posicionamento e fonte secundária de verificação cruzada. https://www.scielo.br/j/rbgo/a/JKgf5FkDmZm3LNv9mcYW9Th/
+
+## 29. Auditoria editorial da continuação
+- [x] Relidos três resumos correlatos do Drive; nenhum equivale a livro-texto de endometriose, portanto benchmark completo segue **pendente**.
+- [x] Comparação com HTML LURIA de infertilidade existente, preservado sem alteração.
+- [x] Incluídos capítulos originais de diferencial clínico, técnicas de imagem/mapeamento, decisão terapêutica por objetivo, cirurgia e fertilidade.
+- [x] Cinco casos inéditos e oito questões inéditas com comentários de todas as alternativas, além das existentes.
+- [ ] Faltam farmacologia brasileira com apresentação/posologia, segurança em gestação, adolescência e comorbidades.
+- [ ] Necessário auditar detalhes de neoplasia de ovário/endometrioma com fontes ginecológicas oncológicas, sem falsas associações causais.
+- [ ] Imagens reais de US/RM e laparoscopia precisam ter licença comercial verificada; a lista de imagens do original não é um acervo aprovado.
+- [ ] Revisão médica independente, teste de autossuficiência, repetição textual e plano de publicação HTML/PWA.
+**Estado:** RASCUNHO DE ALTA COBERTURA, NÃO CERTIFICADO, NÃO PUBLICADO.
