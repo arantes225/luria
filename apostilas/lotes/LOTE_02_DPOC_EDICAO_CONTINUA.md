@@ -476,6 +476,53 @@ A prova de caminhada de seis minutos é ferramenta de avaliação funcional, com
 Não confundir **limiar de encaminhamento** com **limiar de tratamento**. No relatório de referência, incluir espirometria com VEF1/CVF pós-BD e VEF1 % previsto, sintomas mMRC/CAT, exacerbações nos últimos doze meses, saturação em repouso/ar ambiente, gasometrias estáveis, comorbidades e medicação/device atual. Esse relatório permite ao pneumologista decidir melhor que uma frase isolada como “DPOC grave, pedir concentrador”.
 
 
+
+### 6.6 Enfisema avançado: quando broncodilatação não corrige a hiperinsuflação
+
+Na DPOC com enfisema avançado, a redução da retração elástica e o fechamento precoce das pequenas vias aéreas levam a aprisionamento aéreo e hiperinsuflação. Em pacientes selecionados, mesmo a broncodilatação otimizada não devolve espaço suficiente ao diafragma para executar movimentos eficientes. O resultado é limitação ao esforço desproporcional à impressão de “apenas VEF1 baixo”. A avaliação de intervenções avançadas depende da anatomia, função, comorbidades, risco procedimental e objetivos do paciente, **não da classificação GOLD 4 isoladamente**.
+
+Antes de discutir procedimentos, confirmar: cessação do tabagismo e outras exposições; tratamento farmacológico revisado e realmente utilizado; reabilitação pulmonar oferecida e participação avaliada; espirometria após broncodilatador; volumes pulmonares com medida de volume residual e capacidade pulmonar total, quando possível; DLCO e oxigenação; tomografia com caracterização da distribuição do enfisema; capacidade funcional e comorbidades cardíacas. Esses dados não devem transformar o atendimento inicial em uma bateria indiscriminada de exames: são parte de investigação **especializada de pessoa potencialmente candidata a intervenção**.
+
+#### 6.6.1 Quatro procedimentos que não podem ser confundidos
+
+**Cirurgia redutora de volume pulmonar (CRVP):** remove regiões muito destruídas e hiperinsufladas para permitir melhor funcionamento do parênquima remanescente. O benefício depende muito da distribuição do enfisema e capacidade funcional. A literatura mostra benefício relevante em grupos selecionados, particularmente certos pacientes com enfisema predominante nos lobos superiores e baixa capacidade de exercício após reabilitação; o mesmo procedimento pode apresentar risco proibitivo em outros perfis. Não indicar com base na TC isolada ou para toda pessoa com VEF1 muito reduzido.
+
+**Redução broncoscópica de volume com válvulas endobrônquicas:** busca reduzir o volume do lobo-alvo por oclusão seletiva, sem a mesma operação de ressecção. A eficácia exige seleção anatômica e avaliação de **ventilação colateral** entre lobos: fissuras incompletas ou comunicação colateral podem impedir o colapso planejado. O procedimento não é equivalente a “colocar uma válvula em qualquer enfisema”. Pneumotórax e outras complicações pós-procedimento justificam avaliação e acompanhamento por centro experiente. A existência de evidência internacional **não garante oferta pela rede local ou cobertura automática pelo SUS**.
+
+**Bulectomia:** é outra situação. Uma bolha enfisematosa gigante pode comprimir pulmão funcional adjacente; removê-la pode melhorar mecânica em indivíduo corretamente selecionado. A hipótese se baseia em imagem com bolha volumosa, compressão, dispneia relevante e análise do risco cirúrgico; não deve ser confundida com remover regiões difusamente enfisematosas sem bolha dominante.
+
+**Transplante pulmonar:** pode melhorar capacidade funcional e qualidade de vida em DPOC muito avançada selecionada. Exige avaliação de trajetória, exacerbações graves, hipercapnia, hipertensão pulmonar, índice BODE, adequação de suporte familiar, reabilitação, contraindicações e expectativa de benefício; avaliação para encaminhamento não significa que a pessoa esteja imediatamente listada. O transplante acarreta imunossupressão prolongada e riscos infecciosos e oncológicos. A decisão pertence a equipe especializada e às normas do Sistema Nacional de Transplantes.
+
+| Alternativa | Situação que levanta a hipótese | O que precisa ser esclarecido antes da decisão |
+| --- | --- | --- |
+| Redução cirúrgica de volume | Enfisema avançado, hiperinsuflação e limitação apesar de tratamento/reabilitação | Distribuição tomográfica, reserva funcional, risco operatório e impacto de comorbidades |
+| Válvulas endobrônquicas | Lobo-alvo potencialmente tratável e hiperinsuflação sintomática | Integridade de fissuras, ventilação colateral, anatomia, risco de pneumotórax e disponibilidade |
+| Bulectomia | Grande bolha com compressão de tecido pulmonar relativamente preservado | Extensão/posição da bolha, parênquima adjacente, indicação cirúrgica real |
+| Transplante | DPOC muito avançada, progressiva e com comprometimento funcional relevante apesar de otimização | Prognóstico, eventos hipercápnicos, BODE, comorbidades, contraindicações e regras da equipe de transplante |
+| Reabilitação e tratamento de suporte | Qualquer limitação funcional importante, com adaptação ao risco | Metas funcionais, segurança de exercício, adesão e plano de continuidade |
+
+**Armadilha:** VEF1 baixo pode estar presente em todos os cenários, mas não escolhe o procedimento. A TC pode mostrar enfisema difuso, uma bolha gigante ou padrão heterogêneo; essas condições não têm a mesma indicação. Além disso, a pneumologia e a cirurgia torácica precisam reconhecer doença cardiovascular ou infecciosa concorrente antes de atribuir tudo ao enfisema.
+
+### 6.7 Quando encaminhar e como preparar uma referência clínica útil
+
+A decisão deve ser **escalonada**, e não empilhar exames sem objetivo. A pessoa que mantém dispneia incapacitante depois de técnica adequada, broncodilatadores indicados, interrupção de exposições e reabilitação merece reavaliação especializada. Piora rápida, hemoptise ou nova opacidade demandam primeiro investigação de doenças concorrentes, não cirurgia eletiva de enfisema.
+
+O pedido de referência deve descrever: diagnóstico espirométrico e VEF1 (% previsto), intensidade de dispneia (mMRC ou CAT), número e gravidade de exacerbações em doze meses, internações com VNI/intubação, participação na reabilitação, medicações e técnica, situação tabágica, oxigenação, resultados prévios de TC/volumes/DLCO se já disponíveis, massa corporal, capacidade de caminhar, comorbidades e expectativas. **Não é necessário exigir previamente todos os exames sofisticados da APS**: a equipe especializada selecionará o que efetivamente muda elegibilidade.
+
+A Linha de Cuidado do Ministério da Saúde prevê encaminhamento de pacientes muito sintomáticos e com obstrução grave/muito grave, após terapia otimizada e participação em reabilitação, para avaliar possibilidade de cirurgia redutora de volume, bulectomia ou transplante conforme circunstâncias. A linha brasileira descreve critérios de serviço e deve ser reconciliada com o PCDT vigente e a avaliação regional; recomendação estrangeira não substitui a regulação nacional.
+
+**Situação de urgência é outra via:** choque, nova acidose hipercápnica, falha de VNI, hipoxemia importante ou suspeita de pneumotórax precisam de estabilização e encaminhamento emergencial antes da discussão de tratamento eletivo de enfisema.
+
+### 6.8 Cuidados paliativos e metas de vida: iniciar cedo, sem abandonar a terapêutica
+
+Cuidados paliativos na DPOC avançada não são sinônimo de suspender broncodilatadores, oxigênio indicado, reabilitação ou tratamento de infecções. São uma camada adicional que procura reduzir sofrimento, planejar crises e alinhar intervenções a valores do paciente. Podem coexistir com avaliação para transplante, terapias avançadas e cuidados curativos de doenças intercorrentes.
+
+A dispneia crônica refratária exige **reavaliar causas potencialmente tratáveis** antes de atribuí-la ao fim de vida: broncoespasmo, falha de inalador, hiperinsuflação, doença cardíaca, anemia, depressão, ansiedade, descondicionamento, retenção de CO2 e hipoxemia. No cuidado de suporte, estratégias úteis incluem reabilitação adaptada, posicionamento, pausas programadas, técnicas de conservação de energia, ventilação/oxigênio quando formalmente indicados e apoio psicossocial. Intervenções farmacológicas para sintoma refratário podem ser consideradas por equipe experiente, ponderando risco de sedação e hipoventilação; **não generalizar prescrição de opioide ou benzodiazepínico a todo paciente dispneico**.
+
+Conversas sobre preferências de tratamento devem ocorrer **antes** de uma próxima insuficiência respiratória, quando a pessoa consegue ponderar consequências de VNI, intubação, reanimação e internação. Uma diretiva antecipada ou discussão de objetivos não substitui decisão clínica atual, e escolhas podem ser revistas. Também é relevante apoiar familiares e cuidadores sobre manejo de exacerbação e acesso aos serviços, inclusive quando o paciente reside longe da referência.
+
+**Pulo do Gato de prova e prática:** oxigênio é indicado por critérios fisiológicos, redução de volume depende sobretudo de anatomia e hiperinsuflação, transplante depende de prognóstico e elegibilidade multidimensional, e cuidados paliativos dependem de necessidades e objetivos — não da intenção de “desistir” de tratar.
+
 ## 7. Seguimento, comorbidades e populações especiais
 
 ### 7.1 Manejo longitudinal na APS: uma consulta estruturada que cabe no mundo real
@@ -661,6 +708,15 @@ Mulher de 66 anos, diagnóstico funcional de DPOC (VEF1/CVF pós-BD 0,58), mMRC 
 Homem de 42 anos, dispneia progressiva, história tabágica de oito maços-ano e pai com enfisema antes dos 55 anos, chega com espirometria pós-broncodilatador compatível com obstrução persistente. Uma TC previamente realizada por indicação clínica mostrou enfisema relevante, com predomínio basal. No dia da consulta tem infecção respiratória recente e AAT sérica situada perto do limite inferior do laboratório.
 
 **Hipótese:** DPOC com suspeita significativa de DAAT. **Raciocínio:** idade e carga tabágica tornam uma causa hereditária plausível, e a história familiar acrescenta peso; porém a investigação não deveria ser restrita a esse fenótipo. AAT pode se elevar como reagente de fase aguda, e a concentração isolada não define a variante. **Exames complementares:** revisar espirometria e exposição, confirmar concentração sérica fora da fase inflamatória quando pertinente, associar genotipagem/fenotipagem conforme disponibilidade e investigar hepatopatia se houver indicação. **Conduta:** cessação completa de tabaco, plano de DPOC e controle de exposições, encaminhamento à pneumologia ou centro de DAAT, aconselhamento familiar após confirmação e seguimento funcional. Não indicar reposição sem definição genética e critérios especializados. **Por que importa:** diagnosticar DPOC por VEF1/CVF não encerra a busca de etiologias que mudam prevenção e cuidado familiar.
+
+
+### Caso 19 — Dispneia incapacitante e enfisema heterogêneo após reabilitação
+
+Homem de 62 anos, ex-tabagista há dois anos, DPOC confirmada e dispneia importante apesar de broncodilatação revisada e participação em reabilitação. Tomografia realizada por avaliação especializada mostra enfisema predominante nos lobos superiores; provas funcionais evidenciam hiperinsuflação. **Hipótese:** enfisema avançado com possibilidade de avaliação para redução de volume. **Raciocínio:** broncodilatação já foi otimizada; a combinação de hiperinsuflação, distribuição anatômica e limitação funcional sustenta referenciamento, mas não escolhe automaticamente cirurgia ou válvula. **Exames:** equipe especializada avalia capacidade funcional, DLCO, volumes, fissuras/ventilação colateral quando pertinente, comorbidades e risco operatório. **Conduta:** continuar terapia clínica/reabilitação e discutir opções em centro de pneumologia intervencionista/cirurgia torácica, conforme elegibilidade e oferta local. **Por que importa:** o VEF1 não seleciona sozinho o procedimento e a disponibilidade de técnica internacional não é autorização de fornecimento na rede.
+
+### Caso 20 — DPOC com internações frequentes: suporte paliativo e avaliação avançada podem coexistir
+
+Mulher de 70 anos, DPOC avançada, duas internações recentes, uma por insuficiência respiratória hipercápnica, em oxigênio domiciliar previamente indicado após confirmação em estabilidade. Apresenta ansiedade relacionada à falta de ar, perda muscular e receio de ser intubada. **Hipótese:** doença avançada com necessidade de plano integrado de prevenção de crises, suporte funcional e discussão de objetivos. **Raciocínio:** crises, hipercapnia e limitação justificam reavaliar tratamento e prognóstico; cuidado paliativo não impede medidas eficazes nem significa determinar, sem discussão, limitação de suporte. **Avaliação:** técnica, comorbidades, nutrição, funcionalidade, sintomas afetivos, gasometria/necessidade de ventilação domiciliar em casos selecionados, reabilitação e desejos da paciente. **Conduta:** seguimento multidisciplinar, prevenção de novas exacerbações, plano de ação e conversa documentada sobre decisões futuras de UTI/VNI/intubação, respeitando escolhas informadas. **Por que importa:** o cuidado longitudinal não pode ser reduzido a “mais um inalador” ou à etiqueta de terminalidade.
 
 ## 9. Questões autorais comentadas
 
@@ -858,6 +914,29 @@ D) Identificar heterozigose implica começar reposição intravenosa em todos os
 
 **Gabarito: C.** **A:** exagera o valor preditivo de um resultado sérico num contexto capaz de elevá-lo. **B:** tabagismo não exclui doença hereditária; a investigação de DAAT não é reservada apenas a não fumantes. **C:** integra a fisiologia da AAT à estratégia diagnóstica. **D:** reposição depende de critérios clínicos e genéticos específicos, e não de qualquer variante. **Mini-revisão:** DPOC é confirmado pela fisiologia obstrutiva, enquanto a investigação de DAAT pesquisa uma etiologia potencialmente relevante para prevenção, seguimento e familiares.
 
+
+### Questão 25 — DPOC e redução de volume pulmonar
+
+Paciente com enfisema avançado, grande hiperinsuflação e dispneia persistente após broncodilatação otimizada e reabilitação é encaminhado a centro especializado. Qual afirmação está correta?
+
+A) Um VEF1 <30% obriga a implantar válvula em qualquer paciente.
+B) A decisão entre cirurgia e válvula requer estudo de distribuição anatômica, reserva funcional e, para válvula, ventilação colateral.
+C) Uma bolha gigante compressiva é idêntica ao enfisema difuso sem alvo anatômico.
+D) A presença de técnica descrita na GOLD significa incorporação automática ao SUS.
+
+**Gabarito: B.** **A:** grau de obstrução não determina sozinho indicação. **B:** integra hiperinsuflação, anatomia e risco, incluindo fissuras/ventilação colateral para terapia valvar. **C:** bulectomia tem contexto diferente de redução por enfisema difuso. **D:** diretriz clínica não substitui cobertura ou regulação nacional. **Mini-revisão:** fenótipo anatômico, objetivo de reduzir hiperinsuflação e seleção especializada são decisivos.
+
+### Questão 26 — Cuidados paliativos na DPOC avançada
+
+Mulher com DPOC avançada e exacerbações recorrentes recebe proposta de apoio paliativo concomitante ao seguimento pneumológico. A interpretação mais adequada é:
+
+A) Cuidados paliativos exigem interromper todas as terapias clínicas.
+B) Discutir objetivos de cuidado impede tratar a próxima pneumonia.
+C) Cuidados paliativos podem se iniciar antes da terminalidade e coexistir com prevenção de exacerbações, reabilitação e terapias indicadas.
+D) A dispneia refratária autoriza benzodiazepínico para todas as pessoas, independentemente de retenção de CO2.
+
+**Gabarito: C.** **A:** cuidado de suporte é complementar, não abandono. **B:** as decisões variam conforme preferências, prognóstico e situação clínica. **C:** alinha alívio de sintomas, autonomia e tratamentos proporcionais. **D:** sedação pode ser perigosa e exige avaliação individual. **Mini-revisão:** paliar é cuidar da carga da doença e antecipar escolhas, não simplesmente suspender tratamento.
+
 ## Referências essenciais
 
 1. GOLD 2026 Report and Pocket Guide. https://goldcopd.org/2026-gold-report-and-pocket-guide/
@@ -867,3 +946,7 @@ D) Identificar heterozigose implica começar reposição intravenosa em todos os
 
 5. Feitosa PHR et al. Recomendações para o diagnóstico e tratamento da deficiência de alfa-1 antitripsina. *J Bras Pneumol.* 2024;50(5):e20240235. https://doi.org/10.36416/1806-3756/e20240235
 6. Sandhaus RA et al. The diagnosis and management of alpha-1 antitrypsin deficiency in the adult. *Chronic Obstr Pulm Dis.* 2016;3(3):668–682. https://doi.org/10.15326/jcopdf.3.3.2015.0182
+
+7. GOLD — Global Strategy for Prevention, Diagnosis and Management of COPD: 2026 Report (intervenções e cuidados de suporte). https://goldcopd.org/2026-gold-report-and-pocket-guide/
+8. Ministério da Saúde — Linha de Cuidado DPOC, Atenção Especializada, Planejamento Terapêutico. https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/atencao-especializada/planejamento-terapeutico/
+9. NICE — Chronic obstructive pulmonary disease in over 16s: diagnosis and management, NG115 (encaminhamento para redução de volume e transplante). https://www.nice.org.uk/guidance/ng115/chapter/Recommendations
