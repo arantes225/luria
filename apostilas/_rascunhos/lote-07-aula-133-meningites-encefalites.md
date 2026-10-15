@@ -422,3 +422,237 @@ Orientar fadiga, dificuldade de concentração e comportamento após UTI; fornec
 **Cenário C:** 12 anos, comportamento alterado, febre, convulsão focal, RM temporal/EEG alterado. → **Encefalite HSV possível**, aciclovir empiricamente indicado junto à investigação; PCR inicial negativo não dispensa reavaliação.
 
 **Cenário D:** 9 anos, três semanas de cefaleia, paresia de VI nervo, exposição a TB, LCR linfocitário/proteína alta/glicose baixa. → **Meningite tuberculosa**, mapeamento de hidrocefalia/vasculite, investigação específica e terapia especializada; não esperar baciloscopia positiva para agir se forte suspeita.
+
+
+## 25. Vigilância brasileira: como não errar quimioprofilaxia meningocócica e Hib
+
+### 25.1. O texto normativo que precisa ser citado com data
+A **Nota Técnica Conjunta nº 154/2024-DPNI/SVSA/MS** revisou definições de caso, contatos próximos, surto e esquemas de profilaxia. **A Nota Técnica nº 97/2024 está explicitamente marcada como revogada** no portal de meningites do Ministério da Saúde, atualizado em 12/02/2026. Por isso, usar a 97/2024 como referência isolada sem ler a 154/2024 é erro de atualização. A norma do MS tem precedência para ações brasileiras, mas decisões de surto e prioridades podem envolver orientação superveniente local/estadual, devendo ser conferidas no momento da execução.
+
+**Diferença didática:** tratamento do paciente com meningite elimina bactéria e trata invasão do SNC; **quimioprofilaxia de contatos** tem objetivo de prevenir doença secundária/interromper colonização nasofaríngea em pessoas expostas. Não é oferecida indiscriminadamente a todos que trabalham no mesmo hospital ou moram no mesmo bairro.
+
+### 25.2. Como identificar um contato próximo segundo MS 154/2024?
+A nota inclui contato direto e prolongado com exposição a gotículas de secreções respiratórias entre o caso e o contato, considerando janela retrospectiva e prospectiva:
+- **mesmo domicílio/dormitório**;
+- **beijos e troca direta de secreção salivar**;
+- **proximidade contínua ≥4 horas a até 1 metro em ambiente fechado**;
+- **contato próximo em ≥5 dias**, contínuos ou não, como turma de educação infantil ou ambiente ocupacional;
+- **profissional com exposição desprotegida a gotículas** durante intubação, aspiração, ventilação boca a boca ou procedimento equivalente, no período pertinente.
+
+A nota descreve uma janela retrospectiva desde 10 dias antes do início dos sintomas e até **24 horas após antibioticoterapia adequada** para certos agentes no paciente, para facilitar avaliação do contato. **Proximidade breve, casual e sem exposição direta não equivale automaticamente a contato próximo**. A vigilância epidemiológica define elegibilidade, especialmente em escola e surto.
+
+**Exemplo:** colega de escola que sentou a quatro carteiras de distância por 20 minutos, sem troca de secreção ou contato prolongado, não deve ser automaticamente incluído só por frequentar a mesma instituição. Porém cuidador de creche que compartilhou ambiente próximo diariamente pode ter exposição definida na norma; levantar tempo/distância e contexto antes de excluir.
+
+### 25.3. Profilaxia meningocócica — esquema da NOTA TÉCNICA 154/2024
+A tabela seguinte é **transcrição de dados farmacológicos pontuais com redação original**, conferidos no item 4.6.2 da norma pública brasileira, não de PDF de cursinho. Seu uso é **educacional**: antes de administrar, checar nota nacional vigente, resistências e contraindicações, peso, gravidez, idade, apresentações, interações e responsabilidade de vigilância.
+
+| Medicamento | Faixa etária da nota | Esquema da nota 154/2024 | Observações |
+|---|---|---|---|
+| Rifampicina | <1 mês | **5 mg/kg/dose VO a cada 12 h por 2 dias** | Conferir peso, formulação e contexto neonatal |
+| Rifampicina | ≥1 mês | **10 mg/kg/dose VO a cada 12 h por 2 dias**, máximo **600 mg por dose** | Interações (indutor enzimático); avaliar contraindicações |
+| Ceftriaxona | <12 anos | **125 mg IM, dose única** | Alternativa; primeira escolha da nota para gestantes, com dose apropriada à idade |
+| Ceftriaxona | ≥12 anos | **250 mg IM, dose única** | Avaliar alergia grave e contexto |
+| Ciprofloxacino | ≥18 anos | **500 mg VO, dose única** | Nota não recomenda para gestantes; considerar resistência e avaliação individual |
+| Azitromicina | ≥12 anos | **500 mg VO, dose única**, opção excepcional | A nota relaciona a resistência ao ciprofloxacino ou impossibilidade das demais opções |
+
+**Alerta:** rifampicina pode reduzir concentrações de anticoncepcionais hormonais e diversos outros medicamentos por indução enzimática, exigindo aconselhamento; pode colorir urina/secreções. A nota estabelece **ceftriaxona como primeira escolha para gestantes** em seu contexto. Essas informações não autorizam usar rifampicina automaticamente sem triagem e sem equipe de vigilância.
+
+**Quem recebe?** Contatos próximos elegíveis de caso suspeito/confirmado de doença meningocócica; o próprio paciente recebe estratégia de erradicação de colonização **somente quando o tratamento de base não foi feito com ceftriaxona ou cefotaxima**, segundo norma. O paciente que recebeu essas cefalosporinas não precisa ser “profilaxado como contato” por rotina.
+
+**Quando?** O mais cedo possível, idealmente próximo às primeiras 24 horas após reconhecimento; a nota destaca benefício limitado/nulo se mais de **10 dias após exposição** para meningococo. Em casos secundários do mesmo grupo nos 30 dias seguintes, considerar antibiótico alternativo para nova profilaxia após avaliação da vigilância.
+
+### 25.4. Hib não segue os mesmos critérios de meningococo
+A nota **154/2024** delimita profilaxia de **doença invasiva por *Haemophilus influenzae* tipo b (Hib)** com critérios especiais baseados em presença de lactentes/crianças não adequadamente imunizadas e imunocomprometidos no domicílio/contatos. Exemplos: todos os contatos domiciliares quando há **pessoa imunocomprometida ou criança <2 anos** (independentemente de situação vacinal) ou **criança <4 anos não vacinada/esquema incompleto**. Em outros grupos, verificar a exposição e contatos no mesmo domicílio e regras de creche/surto na redação integral do documento.
+
+**Regimes da nota para profilaxia de Hib**, distintos dos meningocócicos:
+
+| Medicamento | Faixa | Esquema conforme MS 154/2024 |
+|---|---|---|
+| Rifampicina | <1 mês | **10 mg/kg/dose VO uma vez ao dia, por 4 dias** |
+| Rifampicina | ≥1 mês e <18 anos | **20 mg/kg/dose VO uma vez ao dia, por 4 dias**, máximo 600 mg/dose |
+| Rifampicina | ≥18 anos | **600 mg VO uma vez ao dia, por 4 dias** |
+| Ceftriaxona, se rifampicina contraindicada/intolerada | <12 anos | **50 mg/kg IM ou IV uma vez ao dia por 2 dias** |
+| Ceftriaxona, se rifampicina contraindicada/intolerada | ≥12 anos | **1 g IM ou IV uma vez ao dia por 2 dias** |
+
+**Importante:** essa tabela **não** é recomendação de rotina para todo contato de *H. influenzae* de qualquer tipo; o documento especifica critérios de Hib e decisão epidemiológica. A profilaxia de meningococo com rifampicina é por **2 dias**, e a de Hib por **4 dias**: uma confusão clássica que leva a esquemas incorretos.
+
+A nota informa que, em situações selecionadas de Hib, profilaxia pode ser considerada **até 30 dias após exposição** em razão de relatos de casos secundários tardios. Em lactentes de 6 meses até <2 anos com doença invasiva por Hib e vacinação incompleta ou não, ainda há orientações específicas de atualização e doses complementares; **a infecção natural não garante imunidade protetora robusta nesse grupo**.
+
+### 25.5. Vigilância de surto e escola
+Na norma MS 154/2024:
+- **surto institucional de doença meningocócica**: dois ou mais casos primários do mesmo sorogrupo confirmados laboratorialmente, sem vínculo direto entre si, dentro de até três meses entre frequentadores da mesma instituição, com critérios e avaliação epidemiológica;
+- **surto comunitário**: três ou mais casos primários de mesmo sorogrupo em até três meses na mesma localidade, acompanhados de análise de incidência acima do esperado e outros critérios da nota.
+
+**Não confundir** casos secundários epidemiologicamente vinculados no mesmo domicílio com “três casos primários sem vínculo” para classificação. Na ocorrência de surto, a vigilância poderá ampliar seleção de contatos e estratégias vacinais conforme cenário; não cabe à equipe clínica isolada inventar uma vacinação em massa sem planejamento.
+
+### 25.6. Prevenção primária não substitui profilaxia de exposição
+A vacina contra **Hib** na pentavalente, pneumocócica conjugada e meningocócicas reduzem risco invasivo, com calendários variáveis por ano. A Nota 77/2025 MS substituiu reforço de meningocócica C por **ACWY** no segundo ano de vida, conforme PNI vigente. A exposição de contato elegível a caso invasivo continua merecendo avaliação de quimioprofilaxia, mesmo se cartão estiver atualizado; vacina é política preventiva de longo prazo, enquanto a profilaxia atua no risco imediato de colonização.
+
+## 26. Tabelas de decisão em exames, sem depender de um único número
+
+### 26.1. A matriz que conecta clínica → LCR → etiologia provável → risco
+| Hipótese | Tempo habitual de sintomas | LCR sugestivo | Situação que muda conduta |
+|---|---|---|---|
+| Meningite bacteriana piogênica | Horas/dias | Neutrófilos, proteína alta, glicose baixa/razão reduzida | Choque, púrpura, encefalopatia: tratar imediato |
+| Enterovírus | Dias, às vezes início abrupto | Mono ou neutrófilos no começo, glicose usualmente normal, PCR viável | Lactente pequeno ou gravidade pode exigir cobertura bacteriana inicial |
+| HSV encefalite | Horas/dias, alterações comportamentais e convulsões | Pleocitose variável; PCR HSV | Aciclovir precoce, EEG/RM, repetir PCR em suspeita persistente |
+| TB meníngea | Subaguda, dias/semanas | Proteína elevada, glicose baixa, células variáveis/linfomononucleares | Hidrocefalia/pares cranianos e tratamento específico com especialista |
+| Criptococo | Subaguda, imunossupressão | Pressão de abertura elevada, CrAg positivo quando aplicável | Monitorização da pressão LCR e tratamento antifúngico específico |
+| Encefalite autoimune | Dias/semanas, mudança comportamental ou convulsão | Inflamação variável, autoanticorpos em LCR/soro | Excluir infecções tratáveis antes de imunoterapia específica |
+
+### 26.2. Quando o Gram e a cultura não concordam
+**Gram positivo, cultura negativa:** antibiótico anterior, baixa viabilidade, amostra inadequada ou interpretação laboratorial. Reavaliar identificação e PCR; não abandonar bacteriana se LCR/curso fortemente concordantes.  
+**Gram negativo, cultura positiva:** sensibilidade imperfeita do Gram não exclui bactéria. Reanalisar organismo/cultura e quadro clínico; verificar contaminação quando organismo inesperado.  
+**PCR positivo, cultura negativa:** detecção molecular pode sobreviver à queda de viabilidade pós-antibiótico; correlação com organismo/painel e clínica permanece importante.  
+**Todo teste negativo em paciente grave:** não suspender prontamente todas as terapias apenas porque um painel comercial foi negativo; rever diagnóstico e exames conforme tempo, método e agentes fora do painel.
+
+### 26.3. Recuperação clínica versus normalização laboratorial
+Normalizar leucócitos periféricos/PCR não garante reversão de perda auditiva, trombose ou hidrocefalia. Da mesma forma, febre baixa transitória sem alteração neurológica em paciente já tratado não implica fracasso definitivo. O descalonamento exige **agente, susceptibilidade, duração recebida, estado neurológico e complicações**, não um número isolado de proteína no LCR.
+
+## 27. Casos clínicos adicionais — decisões que mais geram erro
+
+### Caso 5 — meningococcemia sem meningismo
+**Apresentação:** menino de 5 anos, febre há oito horas, mialgias intensas, mãos frias, taquicardia, enchimento capilar prolongado e pequenas petéquias que aumentam rapidamente. Não apresenta rigidez nucal.  
+**Hipótese:** doença meningocócica invasiva com risco de choque, outros agentes de sepse no diferencial.  
+**Raciocínio:** a doença pode começar como sepse com rash hemorrágico e disfunção periférica antes de sinais de irritação meníngea. Exigir Kernig positivo seria atraso inadequado.  
+**Exames:** hemocultura/avaliação orgânica e coagulopatia se não atrasar antibiótico; LCR apenas após estabilização e quando seguro.  
+**Conduta:** ABCDE, cefalosporina parenteral no contexto de meningococcemia suspeita, protocolo de sepse pediátrica, isolamento e notificação da vigilância para identificação de contatos.  
+**Por que importa:** gravidade sistêmica precede localização cerebral.
+
+### Caso 6 — alteração do LCR após antibiótico
+**Apresentação:** menina de 2 anos com meningite bacteriana provável recebeu antibiótico IV em unidade remota antes de transferência. Na chegada está estável, mas LCR coletado posteriormente apresenta proteína elevada, glicose baixa, neutrófilos e cultura negativa; PCR pneumocócica reagente.  
+**Hipótese:** meningite pneumocócica parcialmente tratada.  
+**Raciocínio:** antibiótico pode esterilizar culturas rapidamente, mas alterações inflamatórias persistem; PCR pode aumentar identificação. Cultura negativa não é evidência de “infecção descartada”.  
+**Exames:** revisar hemocultura prévia, susceptibilidade onde disponível, LCR/achados, evolução e complicações.  
+**Conduta:** manter/ajustar antibiótico meníngeo segundo agente e protocolo, considerar corticoide conforme timing e risco, avaliar audição no seguimento.  
+**Por que importa:** exames são dependentes de timing e terapia.
+
+### Caso 7 — contato meningocócico gestante
+**Apresentação:** gestante de 26 anos compartilhou domicílio com adolescente internado por doença meningocócica confirmada e permanece sem sintomas.  
+**Hipótese:** contato próximo elegível para quimioprofilaxia; não apresenta meningite clínica neste momento.  
+**Raciocínio:** contato domiciliar configura exposição importante. MS 154/2024 orienta ceftriaxona como primeira escolha para profilaxia de gestantes, com dose por faixa; decisão envolve profissional/vigilância, histórico alérgico e avaliação individual.  
+**Exames:** não solicitar cultura de garganta para decidir todos os casos, nem esperar sintomas; investigar sinais clínicos se houver.  
+**Conduta:** acionar vigilância e ofertar profilaxia adequada oportunamente conforme norma, orientar sinais de alarme e seguimento.  
+**Por que importa:** prevenir doença secundária requer critérios de exposição, não repetir antibiótico de tratamento por dias.
+
+### Caso 8 — encefalite com PCR HSV inicial negativo
+**Apresentação:** menina de 10 anos, febre, desorientação persistente, convulsão focal, RM temporal suspeita, LCR colhido precocemente com PCR HSV negativo.  
+**Hipótese:** encefalite HSV ainda plausível; autoimune/arboviral/metabólica em diferencial.  
+**Raciocínio:** negativa precoce não exclui HSV em síndrome compatível e imagem característica. A sequência dos exames muda sensibilidade.  
+**Exames:** EEG, revisão da data de início, repetição de PCR em janela apropriada (IDSA clássica 3–7 dias), microbiologia adicional e investigação diferencial.  
+**Conduta:** manter aciclovir IV empírico enquanto suspeita importante sob infectologia/neurologia, avaliar renal e demais causas.  
+**Por que importa:** parar antiviral precocemente pode ter consequência neurológica grave.
+
+### Caso 9 — meningite pneumocócica e perda auditiva
+**Apresentação:** menino de 20 meses sobrevive a meningite pneumocócica confirmada, recebe alta sem déficit motor, porém cuidador nota menor resposta a sons e atraso de linguagem nas semanas seguintes.  
+**Hipóteses:** perda auditiva neurossensorial pós-meningite e atraso secundário de linguagem.  
+**Raciocínio:** dano coclear pode surgir mesmo com resolução da febre e sem paralisia. Audição deve ser avaliada oportunamente e acompanhada, idealmente em semanas após estar apto.  
+**Exames:** avaliação audiológica apropriada, desenvolvimento, reavaliação pediátrica/otorrinolaringológica e, se perda grave, investigação de implante coclear.  
+**Conduta:** encaminhar rapidamente para audiologia/fono e reabilitação, informar APS e escola/creche; não esperar uma nova infecção.  
+**Por que importa:** alta microbiológica não equivale a alta funcional.
+
+## 28. Oito questões adicionais com justificativa de cada alternativa
+
+### Questão 7 — interpretação da nota MS
+Qual documento deve nortear definições de contatos e quimioprofilaxia em 2026 quando o portal de meningites do MS informa Nota 97/2024 revogada?
+A. Nota 97/2024 como se vigente sem modificações.  
+B. Nota Técnica Conjunta 154/2024 e eventuais orientações posteriores/localmente aplicáveis, verificadas no portal.  
+C. Esquema de qualquer manual de 1990.  
+D. Não notificar doença meningocócica.
+**Gabarito B.** O portal lista a 154/2024 como revisão normativa e sinaliza revogação da 97/2024. **A** omite atualização. **C** não é padrão vigente. **D** nega vigilância obrigatória. **Pulo:** conferir data e status da norma.
+
+### Questão 8 — quimioprofilaxia meningocócica
+Pessoa com 19 anos, não gestante, contato domiciliar de caso meningocócico, elegível e sem contraindicações, recebe opção de rifampicina. Segundo a Nota 154/2024, qual é o regime usual?
+A. Rifampicina uma vez ao dia por 4 dias (esquema de Hib).  
+B. Rifampicina 10 mg/kg/dose (máximo 600 mg) a cada 12 h por 2 dias.  
+C. Ceftriaxona IV por 14 dias em pessoa saudável.  
+D. Nenhuma medicação porque não está doente.
+**Gabarito B.** Esquema de contatos meningocócicos ≥1 mês conforme a nota. **A** confunde Hib com meningococo. **C** trata infecção invasiva, não profilaxia de contato assintomático. **D** ignora risco secundário. **Pulo:** dois dias meningococo, quatro dias Hib para rifampicina.
+
+### Questão 9 — gestação em contato de meningococo
+Gestante convive no domicílio com caso meningocócico. Qual princípio está correto segundo MS 154/2024?
+A. Avaliar contato e usar ceftriaxona como primeira opção profilática da nota, se elegível.  
+B. Rifampicina obrigatória para toda gestante sem avaliação.  
+C. Quimioprofilaxia só após adoecer.  
+D. Vacina terapêutica substitui profilaxia imediata.
+**Gabarito A.** A nota orienta ceftriaxona na gestante. **B** desconsidera segurança. **C** perde prevenção. **D** confunde estratégias. **Pulo:** gestação muda escolha do antimicrobiano.
+
+### Questão 10 — meningite sem agente
+Criança com LCR sugerindo bacteriana, culturas/PCR negativas e boa recuperação. Qual comparação entre diretrizes está correta?
+A. OMS/NICE sempre obrigam exatamente três dias.  
+B. Ambas proíbem suspensão antes de 30 dias.  
+C. Há nuances: OMS 2025 admite em cenário selecionado 7 dias de terapia empírica após recuperação clínica; NICE 2024 aponta 10 dias em quadro bacteriano sem agente, com avaliação especializada.  
+D. Antibioticoterapia é inútil porque cultura não cresceu.
+**Gabarito C.** É necessário declarar contexto e diferença. **A/B** inventam universalidade. **D** confunde resultado com doença. **Pulo:** diretrizes podem discordar em duração; registrar fonte/ano.
+
+### Questão 11 — LP no paciente instável
+Criança com forte suspeita de meningite e choque, via aérea desprotegida e convulsão não controlada. Qual decisão?
+A. Puncionar imediatamente antes de todo suporte.  
+B. Coletar hemocultura se viável sem atraso, estabilizar e iniciar antibiótico oportuno, postergando LP até segurança.  
+C. Aguardar RM por 24h sem antibiótico.  
+D. Alta com antitérmico.
+**Gabarito B.** Choque/crise/via aérea comprometida tornam LP insegura. **A/C/D** atrasam salvamento. **Pulo:** antibiótico não espera punção contraindicada.
+
+### Questão 12 — LCR atípico
+Lactente com febre, líquor neutrofílico nas primeiras horas, glicose preservada e PCR enterovírus positivo. Qual princípio?
+A. Neutrófilo significa bactéria em 100%.  
+B. PCR enterovírus torna sepse impossível em qualquer neonato.  
+C. Antibióticos precisam ser mantidos por dez anos.  
+D. Perfil celular depende de fase e idade; integrar microbiologia, estado clínico e risco para decidir terapia.
+**Gabarito D.** Enterovirose precoce pode ser neutrofílica, mas coinfecção/gravidade exigem contexto. **A/B** generalizam. **C** é inadequado. **Pulo:** LCR é filme temporal.
+
+### Questão 13 — encefalite HSV
+Menina com alteração mental, crise focal, RM temporal, PCR HSV negativo na amostra precoce. Qual atitude?
+A. Descartar HSV para sempre.  
+B. Suspender aciclovir imediatamente sem reavaliar.  
+C. Reavaliar momento da coleta, considerar repetição PCR 3–7 dias e manter terapia empírica quando suspeita continua forte com especialista.  
+D. Diagnosticar meningite meningocócica exclusivamente pelo PCR negativo.
+**Gabarito C.** Possível falso negativo precoce. **A/B** podem causar dano. **D** não tem relação. **Pulo:** resultado depende de tempo e probabilidade pré-teste.
+
+### Questão 14 — seguimento
+Bebê recuperado de meningite pneumocócica recebe alta sem déficit motor aparente. Qual conduta?
+A. Planejar audiologia oportuna e seguimento de desenvolvimento, mesmo sem queixas iniciais.  
+B. Nunca avaliar audição.  
+C. Aguardar obrigatoriamente seis anos para exame auditivo.  
+D. Encerrar puericultura porque foi internado.
+**Gabarito A.** Sequelas auditivas/neurocognitivas podem passar despercebidas. **B/C/D** atrasam reabilitação. **Pulo:** alta funcional difere de alta bacteriológica.
+
+## 29. Matriz de cobertura do conteúdo ampliado
+
+| Decisão que a prova ou o internato exige | Local no texto | Caso | Questão |
+|---|---|---|---|
+| Reconhecer meningococcemia sem meningismo | 19.1–19.5 | 2 e 5 | 11, 7 |
+| Distinguir definição de vigilância e hipótese clínica | 19.2, 25.1 | 5 | 7 |
+| Priorizar antibiótico antes de LP insegura | 20.1–20.2, 21.1 | 1, 2, 5 | 1 e 11 |
+| Interpretar LCR bacteriano/viral atípico | 20.3–20.7 | 6 | 2, 12 |
+| Diferenciar teste negativo de ausência de doença | 20.6, 22.2 | 6 e 8 | 6, 13 |
+| Escolher empiria e atenção à resistência | 21.2–21.7 | 1 e 6 | 1, 10 |
+| Reconhecer encefalite herpética | 22.1–22.3 | 3 e 8 | 4, 6 e 13 |
+| Distinguir TB/HIV/criptococo | 22.7 | 4 | Discussão clínica; criar questão específica em expansão |
+| Profilaxia de meningococo versus Hib | 25.2–25.6 | 7 | 5, 8 e 9 |
+| Planejar prevenção de perda auditiva | 23.2–23.4 | 9 | 14 |
+
+## 30. Fontes adicionadas e divergências declaradas
+1. OMS. *Guidelines on meningitis diagnosis, treatment and care*. 10/04/2025, capítulo de recomendações de LP, imagem, antibiótico, dexametasona e duração na ausência de agente. https://www.ncbi.nlm.nih.gov/books/NBK614844/
+2. OMS. *Practical manual on meningitis diagnosis, treatment and care*. 26/05/2026. Escopo principal >1 mês de idade; manual com algoritmos de apoio. https://www.who.int/publications/i/item/9789240121027  
+3. NICE NG240. *Meningitis (bacterial) and meningococcal disease: recognition, diagnosis and management*, 2024. https://www.nice.org.uk/guidance/ng240/chapter/Recommendations
+4. Ministério da Saúde. **Nota Técnica Conjunta nº 154/2024-DPNI/SVSA/MS**, normatiza contatos, surto, profilaxia meningococo/Hib; portal atualizado 12/02/2026. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas/nota-tecnica-conjunta-no-154-2024-dpni-svsa-ms
+5. Ministério da Saúde. Página de notas técnicas com **Nota 97/2024 revogada**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/notas-tecnicas
+6. Ministério da Saúde. Situação Epidemiológica das Meningites no Brasil, dados do portal acessados outubro/2026. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/meningite/situacao-epidemiologica/situacao-epidemiologica
+7. NICE NG195. *Neonatal infection*, seguimento de bebês com meningite e audiologia dentro de quatro semanas após aptidão para testar. https://www.nice.org.uk/guidance/ng195/chapter/Meningitis-babies-with-early-onset-or-late-onset-infection-in-neonatal-units
+8. IDSA. *Management of Encephalitis*. 2008 — diretriz clássica para HSV PCR repetida e aciclovir; não a apresentar como atualização de 2026. https://academic.oup.com/cid/article/47/3/303/313455
+
+**Cuidado com direitos autorais:** a OMS publica diretrizes em licenças com restrições para reutilização comercial; toda tabela acima é original, e **nenhuma figura ou trecho extenso do manual OMS foi reproduzido**. A Nota 154/2024 foi usada como fonte de **fatos normativos farmacológicos** reproduzidos de modo sucinto com a fonte claramente indicada. Os PDFs privados do Drive são benchmarks parciais; nenhum conteúdo gráfico/textual do Drive foi incorporado.
+
+## 31. Checklist pós-ampliação
+- [x] Reconhecimento por faixa etária, fisiopatologia, LCR, contraindicações à punção e exames apropriados.
+- [x] Descritas diferenças OMS/NICE sobre duração e critérios de imagem, sem falsa equivalência.
+- [x] Encefalite HSV, enterovírus, TB, criptococo e autoimune, com manejo sindrômico.
+- [x] Doses **pontuais de quimioprofilaxia brasileira** conferidas na Nota 154/2024, com limites de segurança/indicação separados.
+- [x] Cinco casos novos e oito questões completas, além dos casos/questões da versão inicial.
+- [ ] Conferir com hospital brasileiro **doses terapêuticas** meníngeas por mg/kg/dose, idades, diluições, velocidade, máximos e ajuste renal/gestação/imunossupressão; não inferir do esquema de profilaxia.
+- [ ] Obter benchmark de Drive especificamente equivalente à meningite pediátrica, ainda ausente.
+- [ ] Curadoria real de exames/imagens sob licença comercial e aprovação centralizada no Admin; listas atuais são propostas, não imagens aprovadas.
+- [ ] Revisão científica profissional e validação de autossuficiência real, não apenas contagem total bruta.
+- [ ] Integração e testes HTML/PWA após revisão, não agora.
+**Estado: RASCUNHO AVANÇADO, NÃO CERTIFICADO E NÃO PUBLICADO.**
