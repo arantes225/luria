@@ -37,6 +37,7 @@ const APP_SHELL = [
   "/assets/css/dashboard-layouts.css?v=20261006-dashboard3-fit",
   "/assets/js/ui-routes.js?v=1",
   "/assets/css/ui-app.css?v=8",
+  "/assets/css/learn-reference.css?v=1",
   "/assets/css/dashboard-ui-v2.css?v=1",
   "/assets/css/education-ui-v2.css?v=2",
   "/assets/css/social-v3.css?v=2",

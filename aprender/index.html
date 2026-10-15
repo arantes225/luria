@@ -20,6 +20,7 @@
 
   <link rel="stylesheet" href="/assets/css/education-ui-v2.css?v=2">
   <link rel="stylesheet" href="/assets/css/education-pages-v2.css?v=1">
+<link rel="stylesheet" href="/assets/css/learn-reference.css?v=1">
 </head>
 <body data-ui-nav="v2" data-ui-context="study" data-ui="v2" data-page="aprender">
 <script src="/assets/js/ui-theme-v2.js?v=20261013-frame2"></script>
@@ -42,7 +43,7 @@
         </div>
       </section>
 
-          <section class="alex-hero" data-admin-only hidden>
+          <section class="alex-hero" data-resource="alex" data-admin-only hidden>
             <div class="alex-visual" aria-hidden="true">
               <professor-alex-mascot class="alex-character-img" size="180" theme="auto" expression="happy" interactive="false"></professor-alex-mascot>
             </div>
@@ -57,7 +58,7 @@
                 <input name="q" type="text" placeholder="Pergunte alguma coisa..." aria-label="Pergunte ao Professor Alex">
                 <button class="alex-send" type="submit" aria-label="Enviar pergunta">➤</button>
               </form>
-              <div class="alex-entry-actions">
+              <div class="alex-suggestions" aria-label="Sugestões de estudo"><a href="/professor-alex/?q=Explique%20um%20conceito%20com%20exemplos">Entender um conceito <span aria-hidden="true">↗</span></a><a href="/professor-alex/?q=Ajude-me%20a%20organizar%20uma%20revis%C3%A3o">Organizar uma revisão <span aria-hidden="true">↗</span></a></div><div class="alex-entry-actions">
                 <a class="alex-open-tutoring" href="/professor-alex/">Abrir tutoria com o Professor Alex →</a>
                 <span class="alex-file-name" id="alex-home-file-name">Você também pode anexar seu material.</span>
               </div>
@@ -65,26 +66,26 @@
           </section>
 
           <div class="learn-tools">
-            <a class="tool-card" href="/apostilas/">
-              <span class="tool-icon"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span>
+            <a class="tool-card ui-feature-card" data-resource="apostilas" href="/apostilas/">
+              <span class="tool-icon ui-feature-icon"><svg viewBox="0 0 24 24"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H11v18H6.5A2.5 2.5 0 0 0 4 22.5v-18Z"/><path d="M20 4.5A2.5 2.5 0 0 0 17.5 2H13v18h4.5a2.5 2.5 0 0 1 2.5 2.5v-18Z"/></svg></span>
               <h3>Apostilas</h3>
               <p>Todo o conteúdo LURIA organizado por área.</p>
-              <span class="tool-cta">1 apostila disponível · Explorar →</span>
-            </a>
+              <span class="tool-cta ui-context-action">Explorar biblioteca →</span>
+            <svg class="learn-art" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><circle cx="62" cy="54" r="46" fill="var(--resource-accent)" opacity=".1"/><g fill="none" stroke="var(--resource-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-7 60 55)"><path d="M22 22h37v68H22zM61 22h37v68H61z" fill="var(--color-surface)"/><path d="M27 18h31v65H27zM62 18h31v65H62z"/><path d="m34 33 17 0m-17 12h17m18-12h17m-17 12h17M60 17v73"/></g></svg></a>
 
-            <a class="tool-card" href="/caderno/">
-              <span class="tool-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 8h7M9 12h7M9 16h5M3 7h4M3 12h4M3 17h4"/></svg></span>
+            <a class="tool-card ui-feature-card" data-resource="notes" href="/caderno/">
+              <span class="tool-icon ui-feature-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="15" height="18" rx="2"/><path d="M9 8h7M9 12h7M9 16h5M3 7h4M3 12h4M3 17h4"/></svg></span>
               <h3>Minhas anotações</h3>
               <p>Seus resumos e materiais pessoais.</p>
-              <span class="tool-cta">Abrir →</span>
-            </a>
+              <span class="tool-cta ui-context-action">Abrir →</span>
+            <svg class="learn-art" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><circle cx="62" cy="54" r="46" fill="var(--resource-accent)" opacity=".1"/><g fill="none" stroke="var(--resource-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-7 60 55)"><rect x="30" y="15" width="62" height="77" rx="8" fill="var(--color-surface)"/><path d="M40 32h35M40 45h26M40 58h20M24 30h12M24 44h12M24 58h12M24 72h12m48-8 10 5-14 25-13 5 1-13 16-22Z"/></g></svg></a>
 
-            <a class="tool-card" href="/plantao/luriazap/">
-              <span class="tool-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h6"/></svg></span>
+            <a class="tool-card ui-feature-card" data-resource="luriazap" href="/plantao/luriazap/">
+              <span class="tool-icon ui-feature-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 12h6"/></svg></span>
               <h3>LuriaZap</h3>
               <p>Estudo guiado, passo a passo.</p>
-              <span class="tool-cta">Começar →</span>
-</a>
+              <span class="tool-cta ui-context-action">Começar →</span>
+<svg class="learn-art" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><circle cx="62" cy="54" r="46" fill="var(--resource-accent)" opacity=".1"/><g fill="none" stroke="var(--resource-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-7 60 55)"><path d="M24 23h74v50H59L40 89V73H24V23Z" fill="var(--color-surface)"/><path d="M37 39h48M37 52h33"/><circle cx="88" cy="84" r="13" fill="var(--resource-accent)" stroke="none"/><path d="m83 84 4 4 7-8" stroke="var(--color-surface)"/></g></svg></a>
           </div></section>
       </div>
     </main>

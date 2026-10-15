@@ -1,0 +1,30 @@
+/* Reference composition adopts the shared resource tokens; no shell geometry. */
+@layer luria-ui-education {
+ body[data-ui="v2"][data-page="aprender"] {
+  .alex-hero {grid-template-columns:minmax(0,1fr) 220px;gap:24px;padding:28px;border-radius:var(--ui-radius-feature);border-color:color-mix(in srgb,var(--resource-alex) 22%,var(--color-border));background:color-mix(in srgb,var(--resource-alex) 6%,var(--color-surface));position:relative;overflow:hidden;}
+  .alex-hero[hidden] {display:none;}
+  .alex-visual {order:2;position:relative;align-self:stretch;align-items:center;isolation:isolate;}
+  .alex-visual::before {content:"";position:absolute;width:190px;height:190px;border-radius:50%;background:color-mix(in srgb,var(--resource-alex) 8%,transparent);z-index:-1;}
+  .alex-content {order:1;gap:14px;}
+  .alex-character-img {max-width:210px;}
+  .alex-content h2 {color:var(--color-primary-text);}
+  .alex-ask {padding:7px;background:var(--color-surface);border:1px solid var(--color-border-interactive);border-radius:16px;box-shadow:var(--color-card-shadow);}
+  .alex-ask input[name="q"] {border:0;background:transparent;min-width:0;padding:10px 4px;font-size:16px;color:var(--color-text-primary);}
+  .alex-ask button {border-radius:11px;}
+  .alex-suggestions {display:flex;gap:8px;flex-wrap:wrap;}
+  .alex-suggestions a {display:inline-flex;align-items:center;gap:12px;border:1px solid var(--resource-border);border-radius:9px;background:var(--color-surface);color:var(--color-primary-text);padding:8px 12px;font-size:var(--ui-caption);text-decoration:none;}
+  .alex-entry-actions {gap:10px;}.alex-file-name {font-size:var(--ui-caption);}
+  .learn-tools {gap:12px;}
+  .tool-card.ui-feature-card {padding:22px;min-height:242px;gap:12px;overflow:hidden;isolation:isolate;}
+  .tool-card .ui-feature-icon {width:54px;height:54px;border:0;box-shadow:var(--color-card-shadow);}
+  .tool-card :is(h3,p) {position:relative;z-index:1;max-width:76%;}
+  .tool-card p {line-height:1.6;font-size:var(--ui-secondary);}
+  .tool-card .ui-context-action {position:relative;z-index:1;min-height:42px;padding:8px 15px;font-size:var(--ui-secondary);border-radius:10px;}
+  .learn-art {position:absolute;right:-3px;top:42px;width:112px;height:110px;opacity:.72;z-index:0;pointer-events:none;}
+  .tool-card[data-resource="notes"] .learn-art {top:25px;transform:rotate(4deg);}
+  .tool-card[data-resource="luriazap"] .learn-art {top:35px;}
+  @media(max-width:1100px){.alex-hero {grid-template-columns:minmax(0,1fr) 170px;padding:22px;}.alex-character-img {max-width:170px;}.alex-visual::before {width:150px;height:150px;}.tool-card :is(h3,p) {max-width:100%;}.learn-art {top:12px;width:86px;height:86px;opacity:.45;}.tool-card .ui-feature-icon {position:relative;z-index:1;}}
+  @media(max-width:760px){.alex-hero {grid-template-columns:minmax(0,1fr);padding:20px;}.alex-visual {position:absolute;right:14px;top:12px;width:90px;height:90px;opacity:.9;}.alex-character-img {max-width:90px;}.alex-visual::before {width:88px;height:88px;}.alex-content h2,.alex-quote {max-width:calc(100% - 92px);}.learn-tools {grid-template-columns:1fr;}.tool-card.ui-feature-card {min-height:195px;padding:20px;padding-right:116px;}.learn-art {width:118px;height:118px;right:0;top:32px;opacity:.65;}.tool-card :is(h3,p) {max-width:none;}.alex-entry-actions {align-items:start;flex-direction:column;}}
+  @media(max-width:380px){.tool-card.ui-feature-card {padding-right:90px;}.learn-art {width:92px;}.alex-suggestions a {flex:1;justify-content:space-between;}}
+ }
+}

@@ -22,7 +22,7 @@ Testes: contraste AA de textos, textos secundários, ações e complementares no
 
 | Área | Fundação | Revisão de composição | Validação visual/funcional |
 |---|---|---|---|
-| Aprender | Implementada | Próxima etapa | Pendente |
+| Aprender | Implementada | Implementada: Alex e três cards contextuais | Testes de integração passaram; visual pendente |
 | Amigos | Implementada | Pendente nova entrada sem Study Rats | Pendente |
 | Grupos/Study Rats | Implementada | Pendente competição por grupo | Pendente migração e isolamento |
 | Salas | Implementada | Pendente modais e nova composição | Voz preservada; regressão pendente |
@@ -36,3 +36,7 @@ Testes: contraste AA de textos, textos secundários, ações e complementares no
 | Perfil/Admin/Configurações/Editais/Planos/secundárias | Implementada | Pendente revisão individual | Pendente |
 
 Não há declaração de conclusão global. Sem publicação em produção, sem migração aplicada e sem reativar Netlify.
+
+## Etapa 2 — Aprender implementada
+
+Nova composição do card Alex com mascote oficial, formulário existente, sugestões que levam à tutoria real e anexos preservados. Apostilas, Anotações e LuriaZap adotam variantes da fundação com cores e ilustrações SVG próprias. O contador estático incorreto de uma apostila foi substituído por ação de biblioteca. Permissão admin do Alex mantida. Cinco testes de fundação/integração passaram. CSS educacional passa a respeitar componentes opt-in, eliminando o reset monocromático dessas variantes em vez de acumular sobrescritas. Validação visual real aguarda homologação.
