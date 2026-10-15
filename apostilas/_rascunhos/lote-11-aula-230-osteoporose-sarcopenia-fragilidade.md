@@ -602,7 +602,7 @@ A tríade forma uma cadeia clínica: perda muscular aumenta chance de cair; osso
 
 ---
 
-## 28. Questões inéditas de residência — todas as alternativas comentadas
+## 25. Questões inéditas de residência — todas as alternativas comentadas
 
 ### Questão 1 — Osteoporose clínica e densitometria
 
@@ -772,7 +772,7 @@ E. Solicitar somente SARC-F.
 
 **Gabarito: C.** **A:** risco renal e contraindicações de bula importam. **B:** ignora perfil mineral específico. **C:** correta. **D:** a fratura exige prevenção secundária. **E:** rastreio de força pode ser complementar, mas não resolve alteração mineral. **Mini-revisão:** PTH/cálcio/fósforo, função renal e turnover condicionam tratamento.
 
-## 29. Questões para ensino clínico e ligação com a plataforma
+## 26. Questões para ensino clínico e ligação com a plataforma
 
 Os objetivos de ensino não se esgotam no gabarito. Cada questão pode ser convertida futuramente em flashcards autorais LURIA com foco em *diferenciar*, *interpretar* e *tomar decisão*. Exemplo de cartões de memória a construir a partir deste material:
 
@@ -788,7 +788,7 @@ Os objetivos de ensino não se esgotam no gabarito. Cada questão pode ser conve
 Este bloco é uma sugestão de reutilização editorial futura, **não** autorização para criar cópias automáticas de cartões em banco de dados nem para contabilizar os exemplos como apostilas adicionais.
 
 
-## 25. Plano visual, ainda SEM imagem aprovada
+## 27. Plano visual, ainda SEM imagem aprovada
 
 Candidatas a buscar e avaliar com licença comercial e aprovação pelo Admin:
 1. Radiografia lateral de coluna com fraturas em cunha e avaliação de perda de altura.
@@ -806,7 +806,7 @@ Candidatas a buscar e avaliar com licença comercial e aprovação pelo Admin:
 
 **Regra:** não importar, converter ou inserir até documentar autoria/URL pública/termos de licença, curadoria clínica, pertinência e aprovação. Radiografias/exames e fotografias de pessoas exigem atenção a privacidade e direitos.
 
-## 26. Referências bibliográficas — verificáveis
+## 28. Referências bibliográficas — verificáveis
 
 1. BRASIL. Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas da Osteoporose. Portaria Conjunta SAES/SECTICS nº 22, de 22/10/2025; anexo atualizado em 29/01/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/view e PDF do anexo: https://www.gov.br/saude/pt-br/assuntos/pcdt/o/osteoporose/@@download/file.
 2. NATIONAL OSTEOPOROSIS GUIDELINE GROUP. NOGG 2024 Clinical guideline for the prevention and treatment of osteoporosis. https://www.nogg.org.uk/full-guideline.
@@ -817,13 +817,13 @@ Candidatas a buscar e avaliar com licença comercial e aprovação pelo Admin:
 7. DEUTZ, N. E. P. et al. Protein intake and exercise for optimal muscle function with aging: recommendations from the ESPEN Expert Group. Clin Nutr. 2014;33:929–936. https://pubmed.ncbi.nlm.nih.gov/24814383/.
 8. KUZUYA, M. et al. Nutritional Management Guidelines for Sarcopenia and Frailty 2025. Geriatrics & Gerontology International, publicado 12/01/2026. https://doi.org/10.1111/ggi.70275.
 
-## 27. Auditoria técnica inicial e bloqueadores
+## 29. Auditoria técnica inicial e bloqueadores
 
 - [x] Tema n.º 230 localizado; escopo comparado com lotes 226, 228, 229 e aulas afins.
 - [x] Etapa zero parcial: pesquisas no Drive, leitura de 3 materiais complementares; não achada apostila comparável integral.
 - [x] Confirmação de PCDT atualizado e cuidado com alteração de romosozumabe/teriparatida.
 - [x] Desenvolvimento de fisiopatologia, diagnóstico, diferencial, risco, farmacoterapia, sarcopenia, fragilidade e algoritmos.
-- [ ] Aprofundar capítulos até ≥60.000 **caracteres didáticos úteis**, revisando redundância e lacunas.
+- [ ] Texto bruto superior a 90 mil caracteres; ainda é necessário aferir **≥60.000 caracteres didáticos úteis** mediante auditoria de densidade, repetição, coerência e lacunas.
 - [x] Incluídos 10 casos clínicos e 14 questões com alternativas comentadas. **Ainda falta conferência independente de cada gabarito.**
 - [ ] Revisão farmacológica linha a linha com bula, incluindo doses, intervalos, função renal, gestação, interações e alertas.
 - [ ] Comparador externo diretamente equivalente e análise de profundidade/autossuficiência.
