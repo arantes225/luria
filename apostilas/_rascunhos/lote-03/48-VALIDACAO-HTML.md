@@ -7,8 +7,8 @@ Data: 14/10/2026. Branch: `editorial/lote-03-auditoria-20261014`.
 
 ## O que foi efetivamente testado
 
-- Manuscrito: **80.395 caracteres brutos**, **30 capítulos numerados** em sequência, 8 casos clínicos e 12 questões de múltipla escolha com alternativas A–D e gabaritos explicados.
-- HTML: **117.544 caracteres**, **31 seções indexadas** (inclui comparativo inicial), 8 blocos de casos, 12 de questões com gabaritos expansíveis e 4 tabelas.
+- Manuscrito: **91.502 caracteres brutos**, **30 capítulos numerados** em sequência, 10 casos clínicos e 16 questões de múltipla escolha com alternativas A–D e gabaritos explicados.
+- HTML: **131.946 caracteres**, **31 seções indexadas** (inclui comparativo inicial), 10 blocos de casos, 16 de questões com gabaritos expansíveis e 5 tabelas.
 - Após recuperar o HTML gravado no GitHub: **0 âncoras internas sem destino**, **0 IDs duplicados** e **0 desequilíbrios** de section, article, div, details, table, thead, tbody, tr, td, th, nav, aside, main, header, h2 e h3.
 - Aviso editorial e `robots=noindex,nofollow` presentes.
 - Referência ao script padrão `apostila-tools.js` presente, mas **nenhum teste funcional de grifos/post-its foi realizado em navegador**.
@@ -25,9 +25,15 @@ Comparação foi realizada com o arquivo do Drive `Imunizações .pdf`, identifi
 
 1. Revisão médico-pediátrica e farmacêutica linha a linha dos produtos, intervalos, janelas etárias, doses, contraindicações e normas de 2026.
 2. Revisão de pós-exposição (raiva, tétano, hepatite B, sarampo, varicela) e elegibilidade de imunobiológicos especiais pelos protocolos correspondentes.
-3. Auditoria humana de autossuficiência: responder aos 8 casos e às 12 questões apenas pela apostila, preencher lacunas e corrigir erros.
+3. Auditoria humana de autossuficiência: responder aos 10 casos e às 16 questões apenas pela apostila, preencher lacunas e corrigir erros.
 4. Produção/seleção de diagramas originais, checagem de uso comercial de imagens, submissão ao Admin, WebP e legendagem após aprovação.
 5. Inspeção real em desktop, mobile/PWA e temas claro/escuro/rosa, navegabilidade, tabelas, leitura, gabaritos e ferramentas de grifo.
 6. Checagem de referências, links, atos normativos substituídos e coerência com a aula 43.
 
 **Status: HTML_EDITORIAL_REVISAO_PENDENTE.** A QA estática não equivale à homologação científica ou teste visual/funcional real.
+
+## Complementação clínica e verificação de sincronização (14/10/2026)
+
+Após a primeira prévia, foi integrado o estudo de **VSR 2026** (vacinação materna a partir da 28ª semana versus imunização passiva por **nirsevimabe**, conforme elegibilidade, idade e sazonalidade), acrescidos **casos 9 e 10** e **questões 13–16**, com revisão da matriz de cobertura. Fontes oficiais: protocolo/guia de nirsevimabe de 2026 e FAQ da vacinação gestacional do Ministério da Saúde. Verificação estática da versão sincronizada: **30 capítulos 1–30**, **10 casos**, **16 questões com gabaritos expansíveis**, **31 seções no índice** (inclui comparativo), **5 tabelas**, **0 âncoras quebradas/IDs duplicados/elementos estruturais desequilibrados**. Não foram incorporadas imagens.
+
+Esta é **QA automática de estrutura**, não validação de prescrição, estabilidade normativa, renderização ou funcionamento real das ferramentas.
