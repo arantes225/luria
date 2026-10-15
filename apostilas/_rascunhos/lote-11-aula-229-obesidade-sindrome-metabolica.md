@@ -240,6 +240,59 @@ As apresentações de liraglutida, semaglutida e tirzepatida possuem posologias 
 ### 6.2 Recuperação de peso após interrupção
 A perda de peso não "cura" de forma definitiva a tendência biológica de recuperação. Após suspensão, parte dos pacientes recupera peso; portanto discutir previamente duração, custo, adesão, continuidade, alternativas e estratégias de manutenção. A decisão é compartilhada, não punição moral por eventual reganho. Avaliar também resposta insuficiente, tolerabilidade e indicação de encaminhamento cirúrgico.
 
+
+### 6.3 Farmacoterapia no Brasil em 2026: molécula, apresentação e alvo de tratamento
+O médico deve distinguir **evidência de eficácia**, **registro sanitário**, **indicação de bula**, **disponibilidade comercial** e **incorporação em sistemas de saúde**. Uma molécula aprovada para diabetes não autoriza automaticamente usar qualquer marca/concentração sob a mesma indicação formal de obesidade. A Anvisa aprovou o uso de **tirzepatida (Mounjaro)** para controle crônico do peso em **09/06/2025**, em adultos com IMC ≥30 kg/m², ou ≥27 com comorbidade relacionada ao peso. A semaglutida para obesidade tem apresentações específicas (Wegovy e outras registradas). Em maio de 2026 foi divulgada a aprovação de apresentação de semaglutida **7,2 mg** de Wegovy no Brasil; **isso não torna 7,2 mg a dose de rotina nem permite extrapolar cronograma de titulação sem a bula atual daquela apresentação**.
+
+A diretriz **ABESO 2026** recomenda medicação associada às mudanças de estilo de vida em IMC ≥30 ou IMC ≥27 com complicações por adiposidade (R4, classe I/A), e admite consideração individual de tratamento em pessoas com cintura/relação cintura-altura elevadas e complicações apesar de IMC menor (R5, classe IIb/C). A segunda hipótese é recomendação clínica de menor força de evidência, **não afirmação de que qualquer medicamento está registrado para qualquer IMC**. Seleção deve ponderar doença cardiovascular, diabetes, AOS, doença renal, tolerabilidade, custo e acesso.
+
+**Exemplos didáticos de posologia adulta; conferir bula nacional atualizada, apresentação e elegibilidade antes de prescrever:**
+
+| Fármaco/apresentação para controle do peso | Início/titulação habitual de referência | Pontos de segurança e diferenciação |
+|---|---|---|
+| **Liraglutida** SC diária, na apresentação para obesidade | 0,6 mg/dia na semana inicial, com incrementos usuais de 0,6 mg a intervalos de pelo menos 1 semana até **3,0 mg/dia**, segundo produto e tolerabilidade | A administração é diária, não semanal. Confirmar efeitos gastrointestinais, alergias e risco de desidratação; seguir regra de resposta da bula |
+| **Semaglutida** SC semanal (Wegovy, posologia escalonada usual) | 0,25 mg/semana por 4 semanas → 0,5 mg → 1,0 mg → 1,7 mg → **2,4 mg/semana**, em etapas tipicamente de 4 semanas; retardar escalonamento se intolerância segundo bula | **2,4 mg/semana não é dose de início**. Apresentação 7,2 mg aprovada em 2026 exige instruções próprias e seleção individual; nunca transferir cliques/volumes entre canetas |
+| **Tirzepatida** SC semanal (Mounjaro) | 2,5 mg/semana por 4 semanas → 5 mg/semana; aumentos adicionais, quando indicados, de **2,5 mg** após no mínimo **4 semanas** na dose vigente; manutenção individual entre **5, 10 e 15 mg/semana** segundo bula; máximo 15 mg | 2,5 mg é dose de início, não alvo de manutenção habitual. Rever hipoglicemia se associada a insulina/sulfonilureia, vômitos, desidratação e contracepção oral |
+| **Orlistate** oral | **120 mg com cada refeição principal contendo gordura, até três vezes/dia**, conforme produto e indicação | Pode causar esteatorreia, urgência fecal e reduzir absorção de vitaminas lipossolúveis; revisar interações (p. ex., anticoagulantes e outras medicações) e contraindicações |
+| **Naltrexona + bupropiona** liberação prolongada, formulação aprovada | Escalonamento progressivo ao longo das semanas até dose de manutenção definida na bula da marca; **não intercambiar com comprimidos convencionais isolados** | Contraindicações/precauções ligadas a epilepsia, uso de opioides, pressão não controlada e transtornos alimentares específicos; observar humor e interações |
+| **Sibutramina**, quando aprovada e elegível no país | Dose individual conforme bula e regulação brasileira; não prescrever automaticamente pela facilidade de acesso | Avaliar PA/frequência, história cardiovascular/cerebrovascular, diabetes com fatores de risco e potenciais interações; não equipará-la a fármacos modernos com evidência CV específica |
+
+**Nota sobre doses:** a tabela ensina ordens de grandeza e cronogramas gerais **por molécula e formulação indicada**, não substitui verificação de bula e avaliação clínica individual. Eventos adversos e contraindicações podem variar com histórico familiar, risco tireoidiano, alterações gastrointestinais, interações e gestação. Não prescrever medicamentos manipulados ou produtos sem registro por analogia automática com terapias comprovadas.
+
+### 6.4 Como escolher considerando o perfil do paciente
+**Doença aterosclerótica estabelecida:** priorizar medicamentos com evidência específica de desfechos cardiovasculares para a população e apresentação em questão. No estudo SELECT, semaglutida 2,4 mg semanal reduziu eventos cardiovasculares maiores em pessoas com sobrepeso/obesidade e doença cardiovascular prévia **sem diabetes**; o estudo não prova resultado idêntico para qualquer molécula, dose, população ou indicação. A bula brasileira para Wegovy recebeu atualização de indicação cardiovascular em 2026. Continuar estatinas, anti-hipertensivos e terapêutica de prevenção secundária quando indicadas — **o efeito de antiobesidade não as substitui**.
+
+**Diabetes tipo 2 com obesidade:** valorar repercussão glicêmica e de peso, compatibilidade com outros antidiabéticos e hipoglicemia. Quando há insulina ou sulfonilureia, redução de ingestão e melhor resposta glicêmica podem exigir ajuste supervisionado para evitar hipoglicemia. Não interromper todos os fármacos de DM2 apenas porque o paciente relata rápida perda de peso.
+
+**AOS importante:** além de emagrecimento, manter avaliação e tratamento específico do sono; o resultado de estudos sobre redução de índice de apneia-hipopneia não significa que terapia ventilatória possa ser automaticamente suspensa. **Insuficiência cardíaca com fração de ejeção preservada e obesidade** é cenário de seleção mais específico, com evidências para certas terapias incretínicas em populações estudadas, não uma recomendação de classe para todas.
+
+**Doença hepática metabólica:** perda de peso e controle cardiometabólico podem melhorar esteatose/inflamação; decisões sobre MASH com fibrose devem usar diretrizes, exames e **eventual indicação hepática aprovada no país**, sem transpor resultados de histologia de um estudo diretamente para qualquer paciente com ultrassom mostrando gordura.
+
+**Transtornos alimentares, hipertensão não controlada, epilepsia, uso de opioides, gestação, idosos frágeis, doença renal e múltiplas medicações:** as contraindicações e limitações não são iguais entre moléculas. A escolha deve orientar-se pelo risco predominante, não por ranking simples de potência.
+
+### 6.5 Efeitos adversos gastrointestinal e conduta escalonada
+Náuseas, constipação, vômitos e diarreia são reações frequentes aos agentes incretínicos, geralmente relacionadas a dose e início/escalonamento. Quando leves, orientar refeições menores, comer devagar, hidratar-se, evitar refeições excessivamente gordurosas e discutir permanência por mais tempo na dose atual ou retardar incremento conforme bula. Não é obrigatório atingir a dose máxima se a pessoa tem resposta clínica relevante com dose tolerada e o produto/protocolo permitem.
+
+**Vômitos persistentes, incapacidade de hidratação, oligúria, síncope, dor abdominal importante ou hipotensão** exigem avaliação; pode haver lesão renal por desidratação ou doença aguda não relacionada. Dor epigástrica importante e persistente, sobretudo com irradiação dorsal, necessita considerar **pancreatite aguda**; dor em hipocôndrio direito com febre/icterícia sugere complicação biliar. Não rotular toda dor abdominal como “efeito normal da caneta” sem exame clínico.
+
+A avaliação de efeitos gastrointestinais prévios é particularmente relevante em pessoas com **gastroparesia grave conhecida ou sintomas de esvaziamento gástrico muito comprometido**. Analisar risco de retenção de conteúdo gástrico durante anestesia/sedação junto à equipe perioperatória e recomendações mais atuais; não prescrever interrupção uniforme e arbitrária em todos os procedimentos sem considerar risco, fase de titulação e protocolo anestésico.
+
+### 6.6 Segurança regulatória e cadeia de custódia
+Desde 2025, a Anvisa determinou **dispensação de medicamentos agonistas de GLP-1 com retenção de receita**, com regras de validade e escrituração conforme normativa vigente. A prescrição exige identificação do produto, concentração, posologia, técnica de administração e monitorização. Instruções para **caneta preenchida original** não devem ser convertidas em número de “cliques” ou unidades de seringa de formulações alheias.
+
+Falsificações e produtos irregulares de semaglutida/tirzepatida motivaram fiscalizações públicas em 2026. Isso torna importante **conferir procedência, integridade da embalagem, apresentação nacional registrada, condições de conservação e rastreabilidade**. Não ensinar técnicas para fracionar canetas ou administrar produtos de origem desconhecida.
+
+### 6.7 Gravidez, amamentação e planejamento familiar
+**Não usar farmacoterapia para emagrecimento na gravidez**. Planejamento reprodutivo exige revisão antecipada e suspensão conforme meia-vida/produto. A bula de semaglutida utilizada no Brasil orienta suspensão **pelo menos dois meses antes da gestação planejada**; esta regra **não deve ser extrapolada automaticamente** a tirzepatida ou outros fármacos. Com tirzepatida, informar que o atraso do esvaziamento gástrico pode interferir com contraceptivo oral em situações específicas, sobretudo após início/escalonamento; seguir orientação atual da bula e discutir método alternativo.
+
+A lactação também exige evitar fármacos antiobesidade não indicados e considerar segurança materno-infantil. Mulheres que engravidam durante tratamento precisam de avaliação clínica para suspensão/ajuste e seguimento obstétrico; não presumir toxicidade comprovada em indivíduo a partir de ausência de dados robustos.
+
+### 6.8 Evitar “potência” como único fator
+Perdas médias ponderais em estudos variam com duração, dose, população, manejo nutricional e medicações concomitantes. Não comparar diretamente porcentagens de estudos distintos como se fossem ensaio cabeça a cabeça. A ABESO 2026 considera hierarquia de potência para organizar opções, mas destaca **segurança, comorbidades e custo**. A escolha errada pode ocorrer quando se prefere o fármaco de maior efeito médio em indivíduo com alimentação insuficiente, fragilidade, alto risco de intolerância ou contraindicação.
+
+Em quem apresenta perda ponderal rápida, acompanhar **qualidade da dieta, força muscular, ingestão proteica e capacidade funcional**, pois a composição da perda importa. Eficácia real envolve melhora de indicadores cardiometabólicos e manutenção de saúde ao longo do tempo.
+
+
 ## 7. Cirurgia metabólica/bariátrica — critérios brasileiros 2025
 
 A **Resolução CFM nº 2.429, de 25/04/2025**, publicada em maio de 2025, atualizou as regras para cirurgia bariátrica/metabólica no Brasil, substituindo normas anteriores. Para **adultos**, o texto prevê elegibilidade em situações como:
