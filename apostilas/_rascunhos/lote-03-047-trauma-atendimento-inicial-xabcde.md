@@ -130,6 +130,43 @@ Suspeitar de lesão vertebromedular em mecanismo de alta energia, dor ou deformi
 
 **Diferencial importante:** bradicardia e hipotensão com extremidades relativamente aquecidas após lesão medular alta podem sugerir choque neurogênico, mas **hemorragia deve ser ativamente investigada e excluída**. Reconhecer um mecanismo vertebral não autoriza presumir choque exclusivamente neurogênico.
 
+
+### 5.4 Plano A, plano de falha e prevenção de hipóxia peri-intubação
+
+A abordagem avançada de via aérea é um procedimento fisiológico, não apenas técnico. Antes de administrar sedativo ou bloqueador neuromuscular, definir quem conduz, quem auxilia, como será confirmada a posição do tubo, qual dispositivo resgata oxigenação se a visualização falhar e em que ponto a equipe interromperá tentativas para ventilar. Equipamentos indisponíveis, sangramento na orofaringe e baixa reserva circulatória são tão importantes quanto o grau anatômico de dificuldade. Não realizar indução sem a possibilidade de oxigenar, especialmente em unidade sem suporte capacitado.
+
+**Pré-oxigenação** aumenta reserva de oxigênio e tempo até dessaturação, mas sua eficácia depende de ventilação espontânea, adaptação do dispositivo e doença pulmonar existente. Um paciente apneico por rebaixamento e obstrução pode necessitar ventilação assistida com bolsa-válvula-máscara imediatamente. Ventilar excessivamente vigorosamente pode insuflar estômago e aumentar risco de aspiração; ventilação efetiva deve produzir expansão torácica suficiente, evitando pressões desnecessárias.
+
+A suspeita de lesão cervical pede restrição manual de movimento durante a laringoscopia, mas estabilização não deve tornar impossível uma via aérea que salva a vida. Se colar limita abertura bucal, membros treinados podem manter estabilização em linha enquanto o segmento anterior é manejado conforme procedimento e protocolo. O cenário de impossibilidade de intubação e de oxigenação exige acionamento imediato do algoritmo de resgate, incluindo acesso cirúrgico de emergência por operador habilitado quando aplicável. Técnicas invasivas diferem em crianças pequenas, nas quais anatomia e riscos impedem transposição acrítica de procedimento adulto.
+
+**A intubação não termina quando o tubo atravessa as cordas vocais.** Verificar capnografia, fixação, profundidade, expansão e ventilação, depois reavaliar perfusão. Hipotensão após intubação pode resultar de sedação em paciente hipovolêmico, redução do retorno venoso pela pressão positiva, pneumotórax hipertensivo precipitado ou agravamento de sangramento. A sequência temporal ajuda, mas não substitui exame. Em atividade elétrica sem pulso após intubação, a equipe deve incluir rapidamente obstrução ventilatória e hipovolemia entre causas tratáveis.
+
+### 5.5 Aspiração, cânulas e contraindicações anatômicas
+
+Sangue e vômito exigem aspiração disponível e eficaz; cânulas simples só funcionam se a anatomia e o nível de consciência permitirem. Cânula orofaríngea em paciente com reflexo nauseoso preservado pode provocar vômito e aspiração. Introdução nasal às cegas de cânulas e sondas deve ser evitada diante de suspeita de fratura de base de crânio ou lesão grave da face com risco de comunicação anatômica; avaliar alternativas e expertise. Uma pessoa com trauma facial pode ter obstrução progressiva por edema, fraturas instáveis e sangramento, mesmo que consiga falar na primeira avaliação.
+
+Ferimento penetrante de pescoço, queimadura inalatória importante e hematoma cervical em crescimento representam risco de “janela de segurança” curta: esperar obstrução completa pode tornar intubação muito mais difícil. Decisão por manejo precoce exige discussão experiente sobre benefícios, riscos hemodinâmicos e alternativa cirúrgica; não existe regra única de intubar toda queimadura superficial da face. Critérios de gravidade respiratória e de exposição devem guiar a decisão.
+
+### 5.6 Imobilização seletiva e regra canadense da coluna cervical
+
+A Canadian C-spine Rule é instrumento de estratificação para pacientes adequados à avaliação clínica, não licença para movimentos inseguros em qualquer traumatizado. Entre fatores de alto risco estão idade a partir de 65 anos, parestesias em extremidades e mecanismos perigosos definidos pela regra (por exemplo, queda maior que 1 metro ou cinco degraus, carga axial cervical, colisão de alta energia, capotamento ou ejeção). Na presença de fator de alto risco, a imagem costuma ser indicada conforme protocolo.
+
+Na ausência de alto risco, identificar fator de baixo risco que permita avaliação segura da mobilidade: colisão traseira simples nos limites da regra, paciente sentado confortavelmente, capacidade de deambular após lesão, ausência de dor na linha média ou início tardio de dor cervical. Apenas quando critérios forem adequados, o exame for confiável e o paciente puder rotacionar ativamente o pescoço 45 graus para ambos os lados sem dor/limitação relevante é possível considerar a liberação clínica segundo a regra. **Não solicitar rotação a paciente com alto risco, déficit focal, alteração de consciência ou sinais de instabilidade.**
+
+Critérios de utilização e desempenho variam com idade e população. A pessoa intoxicada, sedada, com importante lesão distratora ou sem comunicação confiável não está automaticamente liberada por ausência de dor declarada. Em crianças, a diretriz NICE NG41 ressalva a dificuldade de aplicação e a necessidade de avaliação apropriada ao desenvolvimento. No adulto com suspeita que indique imagem cervical, a TC geralmente oferece maior detalhamento para lesão óssea; déficit neurológico sugestivo de lesão medular pode exigir RM mesmo após TC, conforme diretriz e avaliação especializada.
+
+**Risco da imobilização desnecessária:** dispositivos mal ajustados dificultam via aérea, produzem dor, lesões por pressão e ansiedade. Após esclarecer risco, retirar medidas que deixaram de ser indicadas por exame e imagem, sob protocolo institucional. Proteger coluna é evitar lesão adicional, não manter qualquer pessoa em prancha rígida durante horas. A necessidade de extricação rápida em risco de vida permite estratégias que minimizam movimento sem atrasar resgate.
+
+### 5.7 Checklist de uma via aérea após três mudanças de cenário
+
+- **Ao chegar:** fala, sons anormais, secreções, esforço, saturação, risco cervical e possibilidade de deterioração.
+- **Ao preparar intervenção:** identificar problema corrigível simples, planejar oxigenação, riscos de aspiração, anatomia difícil, perfusão, operador e resgate.
+- **Após dispositivo avançado:** confirmar CO2 expirado, expansão, ausculta, profundidade, fixação, adequação ventilatória e repercussão hemodinâmica.
+- **Antes do transporte:** verificar reserva de oxigênio, fonte do equipamento, autonomia de ventilador e cilindros, aspiração disponível, material de falha e profissional capaz de intervir.
+
+A diferença entre chegada, pós-intubação e transporte importa: a via aérea considerada segura em sala estruturada pode deixar de ser segura durante transferência sem monitorização ou material de resgate.
+
+
 ## 6. B — Respiração, oxigenação e ventilação
 
 Oxigenação significa entrada de oxigênio no sangue; ventilação significa troca de gases e eliminação de CO2. Uma oximetria normal não garante ventilação adequada, sobretudo com oxigênio suplementar. Um paciente pode acumular CO2 por hipoventilação, fadiga muscular ou lesão neurológica. Na avaliação rápida, observar frequência e padrão respiratório, expansibilidade de ambos os hemitórax, uso de musculatura acessória, tiragens, cianose, ausculta e sinais de lesão torácica. Integrar achados com monitorização e, quando necessário, gasometria/capnografia.
@@ -202,6 +239,39 @@ Hipoperfusão, hipóxia, hipoglicemia, intoxicação, sedação e crise epilépt
 
 Trauma cranioencefálico grave pode deteriorar por sangramento intracraniano, edema, lesão axonal e distúrbios sistêmicos. Sem oxigenação e pressão de perfusão, a lesão cerebral piora. Logo, um traumatizado com rebaixamento não “vai primeiro para a TC” se a via aérea está obstruída, a ventilação falha ou a circulação colapsa. Após estabilização e diante de indicação, TC e avaliação neurocirúrgica entram rapidamente no plano. Mudanças seriadas são frequentemente mais informativas que um exame único.
 
+
+### 8.3 Escala de Coma de Glasgow: entender cada componente
+
+O escore de Glasgow descreve resposta ocular, verbal e motora; não é diagnóstico etiológico nem substitui exame pupilar, lateralização ou avaliação da via aérea. A soma em paciente testável varia de 3 a 15, mas deve ser registrada **por componentes**, inclusive estímulo utilizado, sedação e limitações para teste. Uma pontuação de 10 por E4V1M5 não descreve mesmo estado clínico que 10 por E2V4M4; a evolução dos componentes pode revelar mudança específica.
+
+| Abertura ocular (E) | Pontos | Resposta verbal (V) | Pontos | Resposta motora (M) | Pontos |
+|---|---:|---|---:|---|---:|
+| Espontânea | 4 | Orientado | 5 | Obedece a comandos | 6 |
+| Ao som/voz | 3 | Confuso | 4 | Localiza estímulo doloroso | 5 |
+| À pressão/dor | 2 | Palavras inapropriadas | 3 | Retirada à dor, não localiza | 4 |
+| Ausente | 1 | Sons incompreensíveis | 2 | Flexão anormal | 3 |
+| — | — | Ausente | 1 | Extensão anormal | 2 |
+| — | — | — | — | Ausente | 1 |
+
+A “melhor resposta motora” é especialmente relevante. **Localizar dor** significa movimento intencional em direção ao local do estímulo, diferente de mera retirada reflexa. Flexão anormal e extensão anormal sugerem disfunção neurológica grave, mas o contexto de sedação, hipóxia e lesão periférica precisa ser ponderado. Lesão medular ou fratura de membro pode impedir resposta motora apesar de nível de consciência maior.
+
+Quando paciente está intubado, registrar V como **não testável**, e não atribuir valor fictício por conveniência; a documentação deve deixar isso explícito. Quando edema palpebral bilateral impede abertura ocular, documentar limitação do teste em vez de inferir E1 como ausência fisiológica de resposta. Em crianças pequenas, a resposta verbal deve ser avaliada por escala pediátrica adaptada, jamais pela expectativa linguística de adulto.
+
+### 8.4 Pupilas, lateralização e sinais de hipertensão intracraniana
+
+Pupilas precisam ser descritas em tamanho, simetria e resposta à luz, idealmente com comparação temporal. Anisocoria nova após trauma e rebaixamento é sinal de alarme; pode indicar compressão de estruturas neurológicas, embora também existam causas farmacológicas, traumáticas oculares ou prévias. Deficit motor unilateral, resposta assimétrica à dor e convulsões focalizadas ampliam suspeita de lesão intracraniana. Não assumir que todos os achados pupilares possuem o mesmo mecanismo.
+
+A tríade clássica de hipertensão intracraniana avançada (hipertensão arterial, bradicardia e alterações respiratórias) é tardia e pouco sensível para triagem: sua ausência não afasta deterioração neurológica. Além disso, sangramento sistêmico pode produzir hipotensão mesmo na presença de lesão cerebral grave. Por isso, seguir variação do exame e evitar episódios de hipóxia/hipotensão têm mais valor preventivo do que esperar sinais “completos”.
+
+O manejo da suspeita de herniação cerebral envolve acionar suporte especializado, garantir oxigenação/ventilação e perfusão, evitar agravos e acelerar imagem/intervenção quando factível. Medidas temporizadoras específicas como terapia hiperosmolar dependem de indicação e protocolo de TCE grave; não devem ser introduzidas de maneira reflexa em todo rebaixamento de consciência. Uma pupila dilatada isolada em pessoa com trauma ocular também merece avaliação diferenciada.
+
+### 8.5 TCE leve não significa ausência de risco
+
+Um paciente com Glasgow 15 pode ter lesão intracraniana detectável ou deteriorar posteriormente, especialmente em anticoagulação e idosos. Amnésia, perda de consciência, vômitos repetidos, cefaleia progressiva, sinais de fratura craniana, déficit focal e mecanismo relevante integram regras de decisão. As regras de imagem dependem de idade, tempo desde o trauma e população em que foram validadas; não podem ser aplicadas apenas pela soma Glasgow.
+
+A avaliação neurológica clínica deve registrar o que mudou entre exames. “Sonolento” é impreciso se não descreve resposta a voz, comandos, pupilas, uso de sedativos e sinais vitais. No paciente sob observação, registrar hora e agente analgésico/sedativo permite interpretar alteração de resposta sem dispensar investigação de lesão progressiva.
+
+
 ## 9. E — Exposição com preservação térmica e dignidade
 
 Expor para examinar não significa deixar o paciente frio. Remover ou afastar roupas necessárias à identificação de lesões, inspecionar regiões anteriores e posteriores com proteção cervical e mobilização adequada, e cobrir novamente com aquecimento. Procurar feridas pequenas penetrantes, hematomas expansivos, deformidades, queimaduras, sangramento perineal e lesões de dorso. Em trauma de alta energia, ferida posterior discreta pode explicar um sangramento ou trajetória não suspeitada.
@@ -223,6 +293,34 @@ A função do exame complementar é responder uma pergunta clínica com consequ�
 | Estabilidade sustentada e mecanismo relevante | TC dirigida ou de corpo inteiro conforme critérios e protocolo, sem atrasar medidas urgentes | Definir extensão de lesões e destino |
 | Hipoxemia grave ou sinais de tensão torácica | Diagnóstico clínico e tratamento imediato quando indicado | Não esperar exame de imagem antes de descompressão |
 
+
+### 10.1 Anatomia das janelas do FAST e do eFAST
+
+O exame FAST (Focused Assessment with Sonography for Trauma) é exame ultrassonográfico dirigido à identificação de líquido livre em compartimentos acessíveis, sobretudo em trauma e instabilidade. A presença de líquido livre no contexto de lesão pode representar sangue, mas o método não identifica de maneira específica a composição do líquido. O eFAST expande avaliação para estruturas pleurais. O operador deve conhecer anatomia, limitações, posição do paciente, janela acústica e falsos negativos.
+
+**Janela hepatorrenal:** procura líquido em espaço entre fígado e rim direito, inclusive recessos adjacentes e região subfrênica. A faixa anecoica (escura) em local dependente pode sugerir líquido livre. **Janela esplenorrenal:** procura líquido junto a baço/rim esquerdo e espaço subdiafragmático; dificuldade técnica é comum pela anatomia e pela presença de ar. **Janela pélvica:** examina fundo de saco dependente, especialmente atrás da bexiga distendida; a interpretação muda conforme sexo, gestação, conteúdo vesical e outras causas de líquido. **Janela pericárdica:** pesquisa líquido no saco pericárdico com correlação hemodinâmica; a ausência de líquido não exclui todas as lesões cardíacas, e presença isolada não determina tamponamento sem integração clínica.
+
+**No eFAST pulmonar**, o examinador avalia sinais de contato pleural, movimento respiratório e presença de líquido em cavidades pleurais. Ausência de deslizamento pleural pode sugerir pneumotórax, mas também ocorre em outras condições, como intubação seletiva, adesões e apneia. A identificação de ponto pulmonar, quando obtida em contexto apropriado, pode apoiar diagnóstico, sem substituir raciocínio. Em trauma com hipotensão/hipoxemia grave e suspeita clínica de tensão, não esperar uma janela tecnicamente perfeita.
+
+### 10.2 Por que um exame negativo não encerra a investigação
+
+A quantidade de líquido necessária para positivar uma janela varia e há limitação para lesões retroperitoneais ou de víscera oca. Em hemorragia muito precoce, pequeno volume pode estar abaixo da detecção. Lesão do parênquima sem líquido livre evidente também pode não produzir sinal. O operador pode enfrentar obesidade, enfisema subcutâneo, ar intestinal, dor e dificuldade de posicionamento, reduzindo qualidade. A conclusão correta é “não identificado líquido nesta avaliação” e não “sem lesão abdominal”.
+
+Há dois erros opostos: usar FAST negativo para liberar doente instável, ou utilizar FAST como filtro obrigatório antes de qualquer TC em paciente estável com suspeita de múltiplas lesões. A orientação NICE NG39 destaca a necessidade de interpretação imediata e uso de imagem de acordo com estabilidade. No adulto estável e com múltiplas lesões suspeitas, TC pode ser a estratégia para delinear extensão, sem obrigatoriedade de FAST prévio. Na criança, a decisão por TC deve selecionar regiões e respeitar avaliação específica.
+
+### 10.3 TC de corpo inteiro versus TC dirigida
+
+Em trauma contuso grave do adulto com suspeita de múltiplas lesões, alguns sistemas utilizam TC de corpo inteiro conforme protocolo e sinais clínicos. Isso não significa que qualquer escoriação exija TC total, nem que paciente exsanguinante deva sair da sala de trauma para cumprir protocolo de imagem. Uma lesão penetrante localizada e paciente estável podem demandar exame dirigido à trajetória e às estruturas suspeitas.
+
+O resultado da TC precisa ser correlacionado com fisiologia. Extravasamento ativo de contraste, hematoma expansivo e dano de órgão sólido podem orientar cirurgia, embolização ou vigilância conforme estabilidade e recursos. Um achado de pequena lesão anatômica não é necessariamente o motivo de choque profundo; continuar buscando fontes se a clínica não encaixar. Um laudo sem alterações relevantes também não substitui reavaliação se o paciente continua piorando.
+
+### 10.4 O que pedir no laboratório sem transformar coleta em ritual
+
+**Hemograma:** linha de base para Hb, plaquetas e evolução, não teste exclusivo para choque precoce. **Tipagem/prova cruzada:** preparar compatibilidade de sangue, sem atrasar transfusão emergencial necessária. **Gasometria/lactato:** suporte à avaliação de perfusão, acidose e ventilação; acompanhar séries e contexto. **Cálcio ionizado:** útil em transfusão importante e instabilidade, por risco de hipocalcemia relacionada ao citrato. **Fibrinogênio e coagulação:** monitorar e guiar reposição conforme estratégia institucional. **Eletrólitos, função renal e glicemia:** ajudam a prever complicações de ressuscitação e encontrar causas de alteração neurológica.
+
+Não solicitar todo teste indistintamente para trauma menor sem risco. Por outro lado, aguardar resultado de exames em paciente com hemorragia maciça é erro quando a intervenção imediata já está indicada. Tempo de resposta do laboratório importa; o pedido deve ser compatível com urgência e acesso à análise.
+
+
 ## 11. Avaliação secundária: depois das ameaças imediatas
 
 A avaliação secundária é exame sistemático da cabeça aos pés quando condições vitais foram tratadas e monitoradas. Recuperar história orientada por AMPLE: alergias, medicações (incluindo anticoagulantes e antiagregantes), antecedentes/gestação, última ingestão, eventos e ambiente da lesão. Dados da equipe do resgate e testemunhas podem ser indispensáveis.
@@ -238,6 +336,26 @@ O xABCDE ganha tempo, mas não substitui tratamento definitivo. Hemorragia intra
 Se o serviço não dispõe do recurso necessário, o destino deve ser decidido cedo. Preparar transferência com via aérea/ventilação adequadas, controle externo de sangramento, acesso, hemoterapia em curso quando possível, monitorização, analgesia e documentação. Informar mecanismo, horário, tendência fisiológica, exame primário, resposta a líquidos/hemocomponentes, ultrassom/TC realizados, intervenções e riscos durante transporte. Uma transferência longa com paciente instável requer discussão explícita entre equipes sobre estabilização possível versus tempo até hemostasia definitiva.
 
 **Regra operacional:** um paciente que piora na etapa de avaliação secundária volta imediatamente ao xABCDE. “Já passamos do B” nunca é justificativa para ignorar nova hipoxemia ou assimetria de ventilação.
+
+
+
+### 12.1 Cirurgia de controle de danos versus tratamento definitivo imediato
+
+A cirurgia de controle de danos prioriza interromper sangramento e contaminação em paciente fisiologicamente exaurido, adiando reconstruções longas até melhorar perfusão, temperatura e coagulação. Não é sinônimo de “cirurgia incompleta por erro”: é escolha estratégica quando insistir em procedimento extenso aumentaria hipotermia, acidose, coagulopatia e mortalidade. Indicações dependem de lesão, instabilidade persistente, necessidade de transfusão, qualidade de perfusão e julgamento da equipe.
+
+Em um paciente com sangramento abdominal incontrolado e choque grave, tamponamento, controle vascular temporário e fechamento temporário podem ser parte da estratégia, com retorno posterior planejado conforme resposta. Em paciente estável com lesão controlada e fisiologia preservada, correção definitiva pode ser mais adequada. O quadro não é definido por escore único; decisões são dinâmicas. Recomendações NICE NG39 diferenciam controle de danos em instabilidade não responsiva, possibilidade de cirurgia definitiva em respondedor e cirurgia definitiva quando fisiologia é normal.
+
+### 12.2 Angioembolização e sangramento que não é acessível por compressão
+
+Em regiões como pelve e alguns órgãos sólidos, o sangramento arterial pode demandar radiologia intervencionista quando paciente e recursos permitem. O tempo até sala de angiografia, equipe disponível e estado fisiológico definem se a estratégia é viável. Um doente instável não responsivo pode exigir cirurgia/medidas de tamponamento e ressuscitação paralela, sem aguardar angioembolização indisponível. Na pelve, contribuição venosa e óssea também limita a ideia de que toda hemorragia será resolvida apenas com cateter arterial.
+
+A decisão entre observação, cirurgia e embolização deve ser reavaliada se o paciente necessita transfusões crescentes, apresenta piora hemodinâmica ou novos sinais peritoneais. Uma TC obtida enquanto estável pode mostrar lesão cujo manejo muda após deterioração; resultados prévios não congelam a conduta.
+
+### 12.3 Planejamento do destino e segurança da transferência
+
+**Centro cirúrgico:** indicar cedo se hemorragia/contaminação exigem controle imediato e houver equipe capaz de operar. **Radiologia intervencionista:** considerada para lesão adequada, equipe disponível e fisiologia compatível. **UTI:** se suporte ventilatório, hemodinâmico e vigilância intensiva permanecem necessários após controle inicial. **Observação/enfermaria:** apenas quando risco de deterioração e necessidade de reavaliação justificam, com plano explícito. **Transferência regional:** quando recurso de hemostasia, neurocirurgia, trauma pediátrico ou obstetrícia não existe no local.
+
+O contato com receptor deve responder: qual é a ameaça em curso? O que foi feito? Qual a resposta? O que pode deteriorar durante deslocamento? Quais intervenções serão necessárias na chegada? Documentar grupo sanguíneo e produtos transfundidos, alergias, anticonvulsivantes, antibióticos, volume de fluidos, método de controle de hemorragia e sinais vitais mais recentes. Um handoff que entrega apenas diagnóstico de “politrauma” não é suficientemente seguro.
 
 
 ## 13. Interpretação integrada de sinais, valores e evolução
