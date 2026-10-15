@@ -192,6 +192,140 @@ Avaliar hidratação e sinais de gravidade → história de triagem e familiares
 ### Exacerbação respiratória em FC conhecida
 Verificar saturação/ventilação e sinais de necessidade de internação → investigar pneumotórax/hemoptise e coletar microbiologia sem retardar suporte → consultar patógenos e resistência anteriores → decidir antibiótico e via conforme gravidade/centro → reforçar suporte nutricional, depuração de secreções e hidratação → reavaliar sintomas e função → revisar prevenção, adesão e complicações.
 
+
+## 14A. Integração diagnóstica no recém-nascido e na criança com quadro incompleto
+
+### Ler um resultado como probabilidade clínica, não como sentença
+
+A fibrose cística costuma ser ensinada por uma tríade de tosse crônica, esteatorreia e cloreto alto no suor. Essa tríade é útil para lembrar o mecanismo, mas perigosa como única regra de entrada: no período neonatal o lactente pode estar assintomático, pode conservar função pancreática e pode não ter isolamento bacteriano característico. Uma triagem positiva deve acionar investigação e acolhimento familiar sem esperar instalação de sintomas. Ao contrário, sintomas altamente sugestivos exigem avaliação mesmo quando o rastreamento neonatal não chamou a atenção.
+
+A interpretação combina **probabilidade pré-teste** (irmão com FC, íleo meconial, pneumopatias recidivantes, insuficiência pancreática), **qualidade analítica do exame** e **probabilidade pós-teste** (cloreto quantificado, variantes identificadas, eventual teste funcional especializado). O teste quantitativo do cloreto do suor, obtido por iontoforese com pilocarpina, é distinto da condutividade; só a primeira técnica, executada por serviço habilitado com amostra suficiente e controles de qualidade, sustenta os limiares diagnósticos internacionais.
+
+Os valores de referência amplamente empregados pela Cystic Fibrosis Foundation são cloreto **até 29 mmol/L** como FC menos provável; **30–59 mmol/L** como faixa intermediária; **60 mmol/L ou mais** como compatível com FC no contexto adequado. O valor é **concentração** e não a quantidade total de sal eliminado. A sudorese inadequada, a coleta insuficiente e as condições pré-analíticas podem tornar o exame inválido, motivo pelo qual um número obtido de amostra insuficiente não deve ser “aceito com ressalva”. Em lactentes rastreados, a orientação CFF recomenda realizar exame assim que tecnicamente viável, idealmente até o final do período neonatal para elegíveis, observadas idade, peso e maturidade corrigida; para obter amostra adequada, o laboratório deve seguir seus critérios padronizados.
+
+**Cenário 1 — RN sem sintomas, triagem positiva e suor 75 mmol/L:** confirmar adequação do método, integrar história e genótipo e encaminhar ao centro especializado. A ausência de sintomas não transforma o exame em falso positivo. A família precisa receber explicação clara sobre confirmação, seguimento e avaliação inicial, sem concluir “doença grave e irreversível em todos os órgãos” a partir da medida isolada.
+
+**Cenário 2 — RN rastreado, suor 42 mmol/L, painel genético com variante de significado incerto:** não afirmar FC clássica apenas por alteração da triagem ou por duas alterações genéticas de patogenicidade desconhecida. Repetir ensaio conforme referência, solicitar classificação adequada da variante/estudo mais amplo quando indicado, avaliar função pancreática e acompanhamento clínico. A categoria CRMS/CFSPID pode ser aplicável em crianças que preencherem seus critérios, mas não equivale a diagnóstico confirmado; representa necessidade de vigilância estruturada e reclassificação conforme evolução.
+
+**Cenário 3 — adolescente com bronquiectasias, pancreatites recorrentes e suor 26 mmol/L:** o resultado torna FC clássica menos provável, mas não encerra investigação de transtornos relacionados ao CFTR, discinesia ciliar primária, imunodeficiência, aspiração, sequela de infecções ou outras causas. Caso a suspeita permaneça elevada, considerar avaliação especializada com estudo genético ampliado e testes funcionais, onde disponíveis.
+
+### Genótipo que não explica o fenótipo
+
+O gene **CFTR** possui variantes de múltiplos efeitos. A classificação molecular diferencia variantes que causam FC, variantes de consequência variável, variantes não causadoras e alterações ainda sem evidência para interpretação. A identificação de variantes em cromossomos diferentes (**em trans**) tem implicação distinta de duas alterações localizadas no mesmo alelo (**em cis**). Um laudo que informa duas variantes sem fase alélica, significância ou correlação clínica pode não resolver o diagnóstico.
+
+A variante **F508del** afeta processamento e tráfego da proteína; mas “ter F508del” não informa sozinho a gravidade respiratória que a pessoa terá, sua função pancreática ou resposta individual a tratamentos. Genótipo orienta classificação e elegibilidade de algumas terapias, porém crescimento, microbiologia, função pulmonar, adesão, inflamação e exposições modulam desfechos. Duas pessoas com a mesma variante podem apresentar trajetórias diferentes.
+
+O aconselhamento genético deve explicar **herança autossômica recessiva** sem culpar os pais e sem fazer previsão individual simplista. Para pais portadores de uma variante causadora em cada alelo relevante, cada gestação possui probabilidades mendelianas de **25%** de filho com duas variantes causadoras, **50%** de portador e **25%** sem essas variantes, considerando o modelo recessivo simples. O risco não “diminui” após nascer uma criança acometida: cada gestação é evento novo. Família e irmãos podem se beneficiar de avaliação dirigida segundo idade e protocolo, respeitando autonomia e confidencialidade.
+
+### Diferencial orientado por pistas que discriminam
+
+| Pista clínica | FC | Diagnóstico a considerar | Exame/esclarecimento útil |
+| --- | --- | --- | --- |
+| Tosse úmida crônica + esteatorreia + baixo peso | Sugere FC com disfunção pancreática | Doença celíaca, giardíase, insuficiência pancreática por outra causa | Suor quantitativo, elastase fecal, avaliação respiratória e investigação de má absorção |
+| Otite/sinusite desde cedo + infertilidade + defeitos de lateralidade | Pode ocorrer rinossinusite na FC | Discinesia ciliar primária | História de situs, NO nasal conforme idade, avaliação ciliar/genética; suor para excluir FC |
+| Pneumonias por patógenos incomuns + diarreia crônica | FC possível | Erro inato da imunidade | Imunoglobulinas, subpopulações celulares e estudo dirigido conforme padrão infeccioso |
+| Colestase neonatal | Possível associação hepatobiliar | Atresia biliar, infecção, distúrbio metabólico | Bilirrubina direta, exame clínico, imagem e investigação urgente; não esperar o teste do suor |
+| Hiponatremia e alcalose hipoclorêmica no calor | Pode ser manifestação de perda salina pelo suor | Vômitos prolongados, uso de diuréticos, síndrome de Bartter | Eletrólitos, avaliação volume/história, suor e pesquisa de perdas |
+| Constipação grave e massa ileocecal em criança com FC | Pode ser síndrome de obstrução intestinal distal | Apendicite, obstrução mecânica, intussuscepção | Exame abdominal, imagem conforme urgência; não presumir DIOS antes de excluir abdome cirúrgico |
+
+## 14B. Decisões respiratórias que exigem diferenciar colonização, nova aquisição e exacerbação
+
+### A trajetória importa mais que um isolado isolado
+
+As vias respiratórias na FC podem conter secreção desidratada, DNA proveniente de neutrófilos, muco aderente e ambientes propícios a biofilmes. Essa ecologia explica por que antibiótico para um episódio isolado de “pneumonia comum” não necessariamente resolve doença respiratória crônica. Também esclarece por que é inadequado escolher tratamento apenas pelo nome de uma bactéria: o **histórico individual de culturas**, a função pulmonar e as manifestações no dia determinam contexto.
+
+Para **Pseudomonas aeruginosa**, distinguir:
+- **Primeiro isolamento/nova aquisição:** em geral demanda protocolo de erradicação precoce orientado por equipe de FC, com confirmação microbiológica e estratégia local de antibiótico inalatório e seguimento; não esperar meses de deterioração para reavaliar.
+- **Colonização ou infecção respiratória crônica estabelecida:** não é sinônimo de sepse ou indicação de antibiótico intravenoso contínuo. O objetivo costuma ser controle de carga infecciosa, prevenção de exacerbações e preservação da função pulmonar, com terapias inalatórias cíclicas e outras intervenções definidas por gravidade e protocolo.
+- **Exacerbação:** o tratamento depende da mudança clínica sobre a linha de base — piora da tosse, aumento/alteração do escarro, fadiga, perda ponderal, queda de função pulmonar, hipoxemia ou outros achados — e da microbiologia histórica, alergias, tratamento prévio e resistência.
+
+O *antibiograma* de uma cultura respiratória da FC não explica tudo: condições de crescimento no laboratório diferem das comunidades bacterianas do muco e do biofilme. Mesmo assim, culturas seriadas, identificação de espécie e sensibilidade orientam decisões. A ausência de expectoração em crianças pequenas impõe limites à amostra; a equipe avalia alternativas válidas sem tratar aspirado de vias altas como prova automática de infecção distal.
+
+**MRSA** ou *Burkholderia cepacia complex* exigem atenção a gravidade, persistência e prevenção de transmissão entre pacientes com FC; não são uma “lista de germes” para cobertura universal em toda exacerbação. A transmissão cruzada entre pessoas com FC justifica políticas de segregação e higiene de equipamentos, inclusive fora do hospital, sem isolar desnecessariamente a pessoa de escola, família e vida social.
+
+### Três diagnósticos adicionais em quem “não melhora com antibiótico”
+
+**Aspergilose broncopulmonar alérgica (ABPA):** paciente com FC, piora respiratória, exacerbações recorrentes, sibilos e alterações radiológicas não explicadas pode ter resposta imunológica exacerbada a *Aspergillus*, diferente de pneumonia fúngica invasiva. Investigar contexto de sensibilização, IgE total, IgE/IgG específicas, eosinófilos e imagem com critérios pertinentes. Encontrar fungo isolado na cultura não é suficiente para chamar de ABPA; tampouco justifica antifúngico para todo paciente assintomático colonizado. O tratamento exige avaliação especializada e ponderação de corticoide sistêmico e outros recursos conforme gravidade/interações.
+
+**Micobactérias não tuberculosas (MNT):** *Mycobacterium avium complex* e *M. abscessus* podem causar doença pulmonar em pacientes com FC; uma cultura positiva isolada não é sinônimo de doença ativa. Confirmar espécie, persistência microbiológica, imagem e sintomas, considerando causas concorrentes de declínio. A escolha de antimicrobianos envolve múltiplos fármacos e toxicidade, exigindo centro experiente; utilizar macrolídeo prolongado sem avaliar MNT pode favorecer resistência de agentes específicos.
+
+**Bronquiectasias por outras causas/aspiração e doença sinusal:** piora de secreção e função pulmonar não precisa decorrer da mesma bactéria que cresceu na última cultura. Revisar adesão e técnica de fisioterapia, obstrução sinusal, refluxo/aspiração quando clinicamente pertinente, alergias e efeitos do ambiente. O diferencial serve para não multiplicar antibióticos quando o problema real é falha de depuração, complicação localizada ou diagnóstico alternativo.
+
+### Como medir função pulmonar sem reduzir o paciente a FEV1
+
+A **espirometria** estima volumes e fluxos durante expiração forçada. O VEF1/FEV1 é o volume expirado no primeiro segundo; seu **percentual do previsto** compara o valor à referência apropriada à pessoa, e não à última medida individual. Um FEV1 de 68% do previsto tem interpretação distinta de uma queda de 68% para 60% do previsto ao longo de semanas: no segundo caso, a trajetória pode sinalizar piora relevante mesmo que o número permaneça aparentemente “moderado”.
+
+O exame exige cooperação e pode ser inviável em lactentes; saturação, sinais de esforço, peso, frequência de exacerbações, imagem e microbiologia ganham maior peso. O valor de VEF1 pode melhorar após broncodilatador em alguns pacientes, mas não se deve presumir padrão de asma nem prescrever broncodilatador crônico automaticamente. Uma queda de FEV1 durante exacerbação exige correlacionar com qualidade da manobra, broncoespasmo, muco, dor, esforço e condição infecciosa. A capacidade funcional, o sono, o absenteísmo escolar e a carga terapêutica fazem parte dos resultados centrados no paciente.
+
+## 14C. Complicações que alteram a urgência e a estratégia terapêutica
+
+### Hemoptise: reconhecer quando a prioridade passa a ser estabilização
+
+Estrias de sangue em escarro podem decorrer de inflamação de vias aéreas e exigir investigação, mas sangramento volumoso ou persistente com repercussão respiratória/hemodinâmica é emergência. A gravidade clínica depende mais da **capacidade de manter oxigenação e permeabilidade da via aérea**, da velocidade do sangramento e da reserva pulmonar do que de um limiar volumétrico isolado que frequentemente é estimado de forma imprecisa.
+
+Diante de sangramento importante: avaliar via aérea, respiração e circulação, monitorar oximetria e hemodinâmica, obter acesso venoso e exames pertinentes, acionar equipe especializada e discutir imagem e controle da origem — incluindo possibilidade de embolização de artérias brônquicas em centros habilitados. A posição corporal pode ser adaptada para proteger o pulmão não sangrante quando a lateralidade do sangramento é conhecida e a pessoa tolera. Fisioterapia vigorosa e determinados recursos inalatórios podem exigir suspensão temporária e reavaliação conforme protocolo. Não orientar manejo domiciliar de hemoptise franca em pessoa com doença pulmonar avançada.
+
+### Pneumotórax e dor torácica aguda
+
+FC avançada com bronquiectasias e alterações estruturais pode complicar-se com pneumotórax espontâneo. Dor torácica súbita, assimetria ventilatória, hipoxemia ou piora abrupta da dispneia demandam avaliação urgente. Diagnóstico inicial e necessidade de drenagem dependem de estabilidade clínica, tamanho e contexto. **Pneumotórax hipertensivo é diagnóstico clínico de emergência**: a descompressão não deve ser retardada para obtenção de radiografia em paciente instável com forte suspeita. Após estabilização, a estratégia de recidiva, analgesia, fisioterapia e eventual cirurgia deve ser individualizada.
+
+### Fígado, ossos, glicemia e suporte avançado
+
+**Doença hepática relacionada à FC** pode envolver alterações de ductos biliares e fibrose com hipertensão portal, sem necessariamente acompanhar gravidade pulmonar. Transaminases levemente elevadas são inespecíficas; a avaliação longitudinal envolve exame clínico, parâmetros laboratoriais e imagem conforme protocolo. Hepatoesplenomegalia, plaquetopenia, varizes e ascite levam a perguntar sobre hipertensão portal, não a chamar tudo de hepatite medicamentosa.
+
+**Diabetes relacionado à fibrose cística (CFRD)** pode começar com perda ponderal, piora pulmonar e hiperglicemia pós-prandial, mesmo sem poliúria importante. O consenso da CFF recomenda rastreamento anual com teste oral de tolerância à glicose **a partir dos 10 anos** em pacientes sem diagnóstico, com interpretação e quantidade de glicose conforme faixa etária/protocolo. HbA1c isolada **não é teste de rastreio adequado** nessa condição, pois pode subestimar alterações relevantes. O tratamento do CFRD estabelecido geralmente inclui insulina; reduzir calorias indiscriminadamente como se fosse diabetes tipo 2 com obesidade pode agravar desnutrição. Condutas nutricionais combinam glicemia, ingestão energética e estado pancreático.
+
+**Comprometimento ósseo** envolve déficit nutricional de vitaminas lipossolúveis, inflamação e redução de atividade; avaliar risco de fratura, vitamina D, exposição a corticosteroides e densidade mineral óssea quando pertinente. Adolescentes com FC também podem desenvolver transtornos alimentares, desmotivação e conflitos com o regime terapêutico. Nem todo emagrecimento é puramente má absorção — pode haver depressão, diabetes, exacerbação pulmonar ou insegurança alimentar.
+
+**Doença pulmonar avançada** exige avaliação integrada de oxigenação, hipercapnia, exacerbações, hipertensão pulmonar, funcionalidade e preferências. O encaminhamento para discutir transplante pulmonar não deve ser adiado até estado terminal, mas também não é escolha baseada apenas em “FEV1 abaixo de X” sem considerar trajetória e comorbidades. Cuidados paliativos e suporte psicossocial podem ser integrados precocemente **junto com** terapias modificadoras da doença, sem significar abandono de tratamento.
+
+## 14D. CFTR em 2026: diferenciar eficácia biológica, indicação regulatória e acesso efetivo
+
+### Da variante ao medicamento: uma sequência de verificações
+
+Um modulador que funciona para determinados genótipos não é automaticamente útil para toda alteração identificada no CFTR. Primeiro confirmar **qual variante** foi demonstrada e como sua resposta ao medicamento foi estabelecida. Depois verificar **idade autorizada** na bula aplicável ao Brasil e **indicação no protocolo vigente**. A elegibilidade clínica, a incorporação e o fornecimento são três níveis distintos: evidência de benefício não é, por si só, decisão de disponibilização pelo SUS.
+
+Em 2026, a Conitec examinou propostas para ampliar elexacaftor/tezacaftor/ivacaftor para crianças de **2–5 anos com pelo menos F508del** e para pessoas de **6 anos ou mais com variantes não-F508del responsivas**. Houve consultas públicas, inclusive as de números 43 e 48 de junho/julho de 2026. **Não se deve converter o simples registro de consulta pública em afirmação de incorporação aprovada, disponibilidade em todas as unidades ou direito automático ao medicamento.** A apostila deve registrar a data da avaliação, identificar a decisão final publicada, confrontá-la com o PCDT e somente então descrever a população elegível no SUS; mudanças futuras exigirão revisão editorial.
+
+**Exemplo clínico:** duas crianças com FC têm idade de quatro anos; uma apresenta F508del e outra apresenta variante cujo efeito sobre resposta ao ETI é incerto. O fato de ambas terem a mesma doença não permite prescrever ETI automaticamente. Para a primeira, é necessário verificar bula, decisão de incorporação e acesso vigentes para essa idade; para a segunda, além disso, verificar resposta documentada da variante. Enquanto a discussão regulatória ocorre, ambas precisam de nutrição adequada, fisioterapia, vigilância microbiológica e atendimento de exacerbações.
+
+### Benefício não elimina vigilância
+
+O uso de moduladores pode alterar sintomas, marcadores de CFTR, estado nutricional e necessidade de determinadas terapias, mas não autoriza retirar todas as práticas de seguimento sem avaliação. Bronquiectasias estruturais prévias podem persistir mesmo com melhora funcional; a pessoa pode continuar portadora de microrganismos crônicos e ter exacerbações. O plano individual deve explicar quais medidas têm indicação própria, quais podem ser ajustadas e quais necessitam de monitoramento por efeitos adversos.
+
+Antes e durante a utilização, atenção a função hepática, interações farmacológicas e critérios oftalmológicos pediátricos conforme bula e PCDT; a avaliação de adesão deve discutir regime de tomada, ingestão apropriada com alimento quando indicado e dificuldades financeiras/logísticas. Não substituir consulta farmacêutica por recomendação genérica de “tomar certinho”: o risco de interação com indutores/inibidores de CYP é particularmente importante quando o paciente usa tratamentos de outros especialistas.
+
+### Transição para cuidado de adultos e vida reprodutiva
+
+Com melhor sobrevida, demandas antes vistas como raras tornam-se relevantes: trabalho, graduação, sexualidade, gravidez, reprodução assistida, saúde óssea, ansiedade e escolha de serviço de referência. O homem com ausência bilateral congênita dos ductos deferentes costuma ter infertilidade obstrutiva, não ausência de desejo sexual ou incapacidade universal de paternidade biológica. A mulher com FC pode engravidar, mas aconselhamento pré-concepcional deve discutir função pulmonar, diabetes, infecções, nutrição, modulação de CFTR e risco genético para filhos.
+
+A transição de serviço pediátrico para equipe de adultos é um **processo**, não um encaminhamento com uma data isolada. Ensinar gradualmente o adolescente a reconhecer medicamentos, explicar seu genótipo, identificar sinais de exacerbação, gerir exames e agir diante de urgências reduz descontinuidade. O cuidador continua parceiro; a pessoa em transição se torna protagonista, com respeito à privacidade e à capacidade de decisão.
+
+### Matriz final de decisão para leitura de casos de prova
+
+| Situação | O que é urgente | Dado que muda a conduta | Erro evitável |
+| --- | --- | --- | --- |
+| Triagem neonatal positiva, RN bem | Encaminhar prontamente para confirmação | Cloreto quantitativo válido, genética e clínica | Esperar esteatorreia para investigar |
+| Suor intermediário | Planejar reavaliação e seguimento | Qualidade do exame, variantes em trans e evolução | Rotular FC confirmada ou alta definitiva |
+| Primeiro isolamento de Pseudomonas | Discutir erradicação precoce no centro | Cultura confirmada, microbiologia anterior e protocolo | Tratar como colonização crônica sem avaliação |
+| Exacerbação com perda ponderal | Avaliar gravidade, microbiologia e nutrição simultaneamente | Hipoxemia, FEV1/linha de base, ingestão e cultura | Antibiótico isolado sem suporte nutricional |
+| Hemoptise com insuficiência respiratória | Estabilizar e encaminhar emergência | Via aérea, oxigenação, volume/velocidade e lateralidade | Manter fisioterapia intensa sem reavaliar |
+| Suspeita de diabetes relacionado à FC | Investigar sem esperar sintomas clássicos | TOTG e glicemia apropriados | Excluir diabetes porque HbA1c “normal” |
+| Elegibilidade para ETI em faixa ampliada | Verificar regras vigentes e continuidade de cuidado | Variante, idade, bula, decisão Conitec e PCDT | Confundir consulta pública com incorporação |
+| Adolescente em transição | Coordenar equipe e plano antecipado | Autonomia, tratamento, escola/trabalho e acesso | Descontinuar acompanhamento entre serviços |
+
+### Fontes primárias usadas neste aprofundamento (15/10/2026)
+
+1. Ministério da Saúde. *Protocolo Clínico e Diretrizes Terapêuticas da Fibrose Cística*, atualização de 2024: https://www.gov.br/saude/pt-br/assuntos/pcdt/f/fibrose-cistica/view
+2. Cystic Fibrosis Foundation. *Sweat Test Clinical Care Guidelines*: https://www.cff.org/medical-professionals/sweat-test-clinical-care-guidelines
+3. Cystic Fibrosis Foundation. *CF Diagnosis Clinical Care Guidelines*: https://www.cff.org/medical-professionals/cf-diagnosis-clinical-care-guidelines
+4. Cystic Fibrosis Foundation. *Cystic Fibrosis-Related Diabetes Clinical Care Guidelines*: https://www.cff.org/medical-professionals/cystic-fibrosis-related-diabetes-clinical-care-guidelines
+5. European Cystic Fibrosis Society. *Standards for the care of people with CF; recognising and addressing CF health issues*, *Journal of Cystic Fibrosis* (2024). DOI: https://doi.org/10.1016/j.jcf.2024.01.005
+6. Conitec. *Consultas públicas encerradas em 2026*, incluindo ampliações do ETI: https://www.gov.br/conitec/pt-br/assuntos/participacao-social/consultas-publicas/encerradas/2026
+7. Conitec. *155ª Reunião Ordinária — registro de itens e retirada de pauta*, setembro de 2026: https://www.gov.br/conitec/pt-br/assuntos/reunioes-da-conitec/conitec-em-tempo-real-1/155a_conitec-em-tempo-real
+
+**Registro de benchmark da rodada:** Foram relidos no Drive os documentos correlatos *Pneumonia Comunitária na Pediatria* e *Icterícia e Colestase Neonatal*. O primeiro cobre reconhecimento de doença respiratória aguda; o segundo, identificação e investigação inicial de colestase neonatal. Não há estudo equivalente em CFTR/genética, diagnóstico de FC ou moduladores nestes dois documentos. Seu uso restringiu-se à identificação de lacunas e ao desenho de diferenciais; nenhuma afirmação de dose, tratamento ou critério foi transcrita deles. A comparação temática integral permanece pendente, assim como validação médica especializada, obtenção/aprovação de figuras, teste técnico e contagem de 60.000 caracteres didáticos úteis.
+
 ## 15. Casos clínicos comentados
 ### Caso 1 — Teste do pezinho alterado em recém-nascido assintomático
 RN de 20 dias com IRT elevada em rastreio, bom peso e sem sintomas; os pais perguntam se já há diagnóstico.  
