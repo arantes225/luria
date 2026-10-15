@@ -588,3 +588,157 @@ Uma boa evolução exige prevenir novos episódios, não apenas resolver o atual
 **Conduta:** discutir resultado com hepatologia, tratar doença metabólica, acompanhar evolução e vigilância de CHC se cirrose confirmada, sem iniciar carvedilol em dose elevada automaticamente nem realizar EDA anual sem indicação. A avaliação deve ser atualizada se ocorrer descompensação.
 
 **Por que importa:** medicina atual permite **estratificar risco em compensados** e evitar procedimentos/medicações desnecessários, sem negligenciar pessoas de alto risco.
+
+
+## 28. Doze questões autorais comentadas — cirrose e complicações
+
+### Questão 1 — Cirrose não é AST elevada
+Homem de 57 anos tem plaquetas 112 mil, superfície hepática nodular no US e esplenomegalia; AST e ALT atuais são normais. Qual interpretação é mais adequada?
+
+A) Transaminases normais excluem cirrose, sem necessidade de avaliação adicional.  
+B) Plaquetopenia e nodularidade podem apoiar cirrose/hipertensão portal mesmo com aminotransferases normais, exigindo avaliação etiológica e de gravidade.  
+C) A única causa possível de plaquetopenia é doença hematológica primária.  
+D) É obrigatório iniciar furosemida antes de confirmar ascite.
+
+**Gabarito: B.** **A:** AST/ALT medem injúria atual, não arquitetura ou hipertensão portal. **B:** diagnóstico integra US, sinais portais, elastografia e história. **C:** hiperesplenismo é causa possível, mas outras etiologias precisam ser investigadas. **D:** sem ascite, diurético não é tratamento da doença hepática subjacente. **Mini-revisão:** cirrose compensada pode ser assintomática; buscar CSPH e vigilância de CHC.
+
+### Questão 2 — GASA e proteínas totais
+Mulher com ascite nova tem albumina sérica 3,1 g/dL e ascítica 1,2 g/dL; proteína total da ascite 3,2 g/dL, turgência jugular e insuficiência tricúspide. Qual hipótese é mais forte?
+
+A) Ascite associada à hipertensão portal de mecanismo cardíaco/congestivo, a confirmar por avaliação clínica e cardíaca.  
+B) PBE está confirmada porque GASA é alto.  
+C) Carcinomatose está confirmada porque proteína do líquido é maior que 2,5.  
+D) Qualquer ascite com GASA alto é, por definição, exsudato bacteriano.
+
+**Gabarito: A.** GASA = 3,1−1,2=**1,9**. **A:** alto gradiente apoia hipertensão portal; proteína total relativamente elevada e congestão apontam causa cardíaca. **B:** PBE exige avaliação de PMN/cultura e clínica, não GASA. **C:** proteína alta isolada não confirma câncer. **D:** confunde classificação; GASA não equivale a transudato/exsudato simples. **Mini-revisão:** gradiente define mecanismo da ascite; proteína e exame aproximam etiologia.
+
+### Questão 3 — PMN absoluto na paracentese
+Cirrótico com ascite internado por piora renal tem líquido com 900 leucócitos/µL, 35% de neutrófilos, cultura pendente. Qual conclusão inicial?
+
+A) PMN = 35/µL; não há necessidade de investigar infecção.  
+B) PMN = 315/µL, compatível com critério operacional de PBE e indicação de tratamento se não houver peritonite secundária.  
+C) A cultura precisa ser positiva para que PBE seja diagnosticada.  
+D) O diagnóstico depende exclusivamente da presença de febre.
+
+**Gabarito: B.** 900 × 0,35 = **315 PMN/µL**. **A:** erro de cálculo. **B:** ultrapassa limiar ≥250. **C:** cultura frequentemente pode ser negativa; tratar neutrocitose ascítica compatível. **D:** PBE pode ocorrer sem febre. **Mini-revisão:** calcular **número absoluto de neutrófilos**, não porcentagem isolada, e investigar fonte secundária quando sinais suspeitos.
+
+### Questão 4 — Albumina na paracentese
+Paciente com ascite tensa realiza paracentese terapêutica com retirada de 7 litros. Utilizando protocolo de 8 g de albumina por litro quando >5 L, qual dose é aproximadamente indicada?
+
+A) 8 g no total.  
+B) 28 g no total.  
+C) 56 g no total.  
+D) 105 g no primeiro dia, obrigatoriamente, qualquer que seja a quantidade drenada.
+
+**Gabarito: C.** **C:** 7 × 8 = **56 g**. **A:** corresponde a um litro. **B:** usaria 4 g/L, inferior ao esquema informado. **D:** confunde esquema de albumina para PBE de pessoa de 70 kg com reposição por volume na paracentese. **Mini-revisão:** após >5 L, diretrizes utilizam cerca de 6–8 g/L, com adaptação clínica.
+
+### Questão 5 — HRS-AKI em 2024
+Cirrótico com ascite tem creatinina de 0,8 para 1,3 mg/dL em 48h; está euvolêmico, sem congestão corrigível, e não há evidência forte de causa alternativa dominante após avaliação. Qual frase está mais alinhada ao ADQI–ICA 2024?
+
+A) É obrigatório administrar albumina 1 g/kg por 48h antes de considerar HRS-AKI em todo paciente, mesmo congestionado.  
+B) O aumento de creatinina não é LRA porque 1,3 está próximo da normalidade do laboratório.  
+C) O diagnóstico de HRS-AKI pode ser considerado conforme critérios após avaliação hemodinâmica, sem desafio sistemático de albumina por 48h como requisito.  
+D) FeNa menor que 1% confirma HRS-AKI sem outros exames.
+
+**Gabarito: C.** **A:** consenso desaconselha 48h obrigatórias de albumina por risco de sobrecarga e atraso terapêutico. **B:** houve aumento ≥0,3 em 48h. **C:** exige cirrose com ascite, LRA, avaliação de volume e causas alternativas. **D:** FeNa é pouco discriminativa na cirrose. **Mini-revisão:** HRS-AKI deve ser reconhecida rapidamente; terlipressina + albumina titulada em elegíveis e atenção à insuficiência respiratória.
+
+### Questão 6 — Encefalopatia e risco iatrogênico
+Cirrótica com EH está usando lactulose e apresenta oito evacuações aquosas/dia, hipotensão, creatinina crescente e hipocalemia. Qual conduta é mais adequada?
+
+A) Aumentar lactulose até dez evacuações por dia, porque amônia sempre cai sem riscos.  
+B) Suspender definitivamente qualquer proteína da alimentação.  
+C) Reavaliar volemia e eletrólitos, ajustar lactulose ao alvo de evacuações amolecidas e investigar outros precipitantes.  
+D) Diagnosticar AVC apenas porque há sonolência.
+
+**Gabarito: C.** **A:** diarreia causa desidratação, LRA e piora de EH. **B:** restrição proteica crônica agrava sarcopenia e pode piorar prognóstico. **C:** busca de precipitação, correção de perdas e titulação para 2–3 evacuações amolecidas/dia. **D:** AVC é diferencial conforme sinais, mas não conclusão automática. **Mini-revisão:** tratamento da EH inclui identificar gatilhos e preservar músculo.
+
+### Questão 7 — Hemorragia varicosa: medicações antes da EDA
+Homem com cirrose e hematêmese importante chega instável. Enquanto recebe ressuscitação proporcional e prepara EDA, qual abordagem específica deve ser iniciada desde a suspeita de sangramento varicoso?
+
+A) Vasoativo esplâncnico e antibiótico profilático apropriado, com endoscopia precoce após estabilização.  
+B) Propranolol em dose elevada como única medicação enquanto está em choque.  
+C) Plasma para atingir INR 1,0 em todos, mesmo sem outra indicação.  
+D) Lactulose em dose alta para substituir terapia hemostática.
+
+**Gabarito: A.** **A:** vasoativo e antibiótico reduzem riscos e são iniciados antes de confirmar endoscopicamente. **B:** NSBB em choque pode piorar perfusão. **C:** INR isolado de cirrose não justifica plasma rotineiro. **D:** lactulose não controla sangramento. **Mini-revisão:** EDA geralmente em até 12h, ligadura esofágica e avaliação de TIPS conforme alto risco.
+
+### Questão 8 — PBE ou perfuração?
+Paciente cirrótico com ascite apresenta peritonite intensa, choque e líquido com crescimento de múltiplas espécies incluindo anaeróbios, glicose baixa e LDH alta. Qual hipótese deve ser ativamente investigada?
+
+A) PBE simples com fonte intestinal espontânea é a única explicação e não precisa imagem.  
+B) Peritonite bacteriana secundária a perfuração/abscesso, com avaliação de imagem e controle de fonte.  
+C) Ascite exclusivamente cardíaca sem necessidade de tratamento.  
+D) Hepatite C curada causando sozinho peritonismo.
+
+**Gabarito: B.** **A:** polimicrobiana, anaeróbios, bioquímica e peritonismo sugerem causa secundária. **B:** investigar cirurgicamente sem atrasar antibiótico/ressuscitação. **C e D:** não explicam choque/peritonite. **Mini-revisão:** o rótulo “cirrótico” não pode ocultar abdome agudo cirúrgico.
+
+### Questão 9 — Profilaxia de peritonite
+Homem com ascite, proteína ascítica 1,2 g/dL, função renal e hepática relativamente preservadas, sem PBE prévia ou HDA, pergunta se precisa tomar quinolona para sempre. Qual resposta é melhor?
+
+A) Sim; proteína <1,5, isoladamente, obriga quinolona em todo paciente.  
+B) Não existe indicação de profilaxia secundária depois de PBE.  
+C) A decisão de profilaxia primária exige avaliação de gravidade renal/hepática e riscos; não é automática apenas por proteína baixa.  
+D) A profilaxia é indicada somente se a urocultura for positiva.
+
+**Gabarito: C.** **A:** não é indicação universal sem contexto. **B:** após PBE há indicação frequente de prevenção secundária. **C:** ponderar risco, resistência, efeitos adversos e regras aplicáveis. **D:** urocultura não determina profilaxia de PBE. **Mini-revisão:** distinguir profilaxia primária seletiva, secundária após PBE e profilaxia curta durante HDA.
+
+### Questão 10 — Cirrose, INR e trombose
+Cirrótico com INR 1,9 e dor abdominal nova tem Doppler sugestivo de trombose portal recente com extensão mesentérica. Qual frase é correta?
+
+A) INR alto garante proteção absoluta contra trombose.  
+B) Trombose portal é sempre benigna e nunca exige investigação.  
+C) É necessário avaliar extensão, risco de isquemia, natureza do trombo e possibilidade de anticoagulação sob equipe especializada; INR isolado não define proteção.  
+D) A única conduta é dar vitamina K sem imagem complementar.
+
+**Gabarito: C.** **A:** hemostasia da cirrose é reequilibrada e pode haver trombose. **B:** extensão mesentérica pode causar isquemia intestinal. **C:** abordagem individualizada com imagem e risco de sangramento. **D:** não resolve trombo nem define etiologia. **Mini-revisão:** risco hemorrágico e trombótico coexistem.
+
+### Questão 11 — CHC após cura viral
+Mulher com cirrose previamente causada por HCV recebeu antivirais, alcançou resposta virológica sustentada e hoje apresenta AFP normal. Qual plano é mais adequado se continua elegível a tratamento?
+
+A) Interromper toda vigilância porque a erradicação elimina o risco futuro de CHC.  
+B) Vigiar CHC periodicamente, em geral com US + AFP a cada seis meses conforme diretriz aplicável.  
+C) Solicitar AFP sozinha uma vez a cada cinco anos.  
+D) Prescrever antibioticoterapia para prevenir carcinoma.
+
+**Gabarito: B.** **A:** risco persiste em cirrose estabelecida. **B:** vigilância semestral em elegíveis. **C:** AFP isolada não exclui CHC nem substitui imagem. **D:** antibióticos não previnem CHC. **Mini-revisão:** tratar causa reduz progressão, mas nem sempre apaga sequelas/probabilidade neoplásica.
+
+### Questão 12 — Ascite refratária e TIPS
+Homem com cirrose, ascite refratária, PA baixa e episódios frequentes de EH busca “TIPS obrigatório”. Qual postura é mais correta?
+
+A) TIPS é obrigatória em toda ascite refratária, independente de coração, EH e reserva hepática.  
+B) Dobrar continuamente diuréticos mesmo com LRA e hiponatremia grave.  
+C) Avaliar paracenteses seriadas com albumina quando indicada, elegibilidade para TIPS considerando cardiopatia/EH e encaminhamento para transplante.  
+D) Colocar dreno abdominal permanente sem avaliar infecção e perdas.
+
+**Gabarito: C.** **A:** TIPS pode agravar encefalopatia/insuficiência cardíaca e demanda seleção. **B:** diurético excessivo piora perfusão renal. **C:** estratégia multimodal e prognóstica. **D:** cateter permanente tem riscos e não substitui plano. **Mini-revisão:** a presença de ascite refratária marca alto risco e deve mobilizar avaliação transplantadora.
+
+## 29. Referências clínicas e distinção entre normas
+
+1. **Baveno VII — Renewing consensus in portal hypertension.** *Journal of Hepatology*, 2022;76(4):959–974. https://pubmed.ncbi.nlm.nih.gov/35120736/ . Parâmetros de hipertensão portal clinicamente significativa e prevenção.
+2. **AASLD Practice Guidance on Risk Stratification and Management of Portal Hypertension and Varices in Cirrhosis**, publicada em 2024. https://doi.org/10.1097/HEP.0000000000000647 . Varizes, NSBB, hemorragia aguda, EDA e TIPS.
+3. **ADQI–ICA Joint Consensus, 2024 — Acute kidney injury in patients with cirrhosis.** *Journal of Hepatology*. https://pmc.ncbi.nlm.nih.gov/articles/pmid/38527522/ . Revisão importante que elimina necessidade de albumina 48h sistemática para diagnóstico de HRS-AKI.
+4. **EASL Clinical Practice Guidelines on Hepatic Encephalopathy, 2022.** *Journal of Hepatology*, 77:807–824. https://www.journal-of-hepatology.eu/article/S0168-8278%2822%2900346-4/fulltext . Diagnóstico, precipitantes e tratamento.
+5. **AASLD, Back to Basics: Outpatient Management of Cirrhosis**, 2024. https://www.aasld.org/liver-fellow-network/core-series/back-basics/back-basics-outpatient-management-cirrhosis . Ascite, alimentação e vigilância CHC.
+6. **AASLD: Why Do We Use Albumin in Patients With Cirrhosis?** https://www.aasld.org/liver-fellow-network/core-series/why-series/why-do-we-use-albumin-patients-cirrhosis . PBE/paracentese/HRS conforme contextos.
+7. **Sociedade Brasileira de Hepatologia — diretrizes, consensos e recomendações.** https://sbhepatologia.org.br/diretrizes-consensos-e-recomendacoes/ . Material brasileiro de diferentes datas; os consensos antigos não substituem automaticamente atualizações internacionais.
+8. **IMIP, Protocolo Institucional de Manejo das Complicações da Cirrose Hepática, 2025.** https://imip-sistemas.org.br/sistemas/_scriptcase_producao_v9/file/doc/redoma/1200/IMIP_PC_INS_015_PROTOCOLO%20DE%20MANEJO%20DAS%20COMPLICA%C3%87%C3%95ES%20DA%20CIRROSE%20HEP%C3%81TICA.pdf . Exemplo de protocolo de hospital brasileiro, não PCDT federal nacional.
+9. **AASLD Practice Guidance on prevention, diagnosis and treatment of hepatocellular carcinoma**, 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10663390/ . Vigilância e imagem de CHC.
+10. **American Association for the Study of Liver Diseases — Portal Hypertension Bleeding in Cirrhosis.** https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis .
+11. **AASLD 2026, apresentação de diretrizes de ascite, PBE e HRS para fellows.** https://www.aasld.org/liver-fellow-network/core-series/guidelines/lfn-guidelines-diagnosis-evaluation-and-management . Recurso de atualização; conferir a diretriz primária citada.
+12. **Ministério da Saúde / Sistema Nacional de Transplantes.** A implementação brasileira de inscrição, elegibilidade e alocação segue normas próprias vigentes; **não atribuir regras norte-americanas de MELD 3.0 como política automática do Brasil** sem verificação no SNT.
+
+**Nota científica:** valores de laboratório e medicamentos apresentados como exemplos têm função didática e podem exigir confirmação de dose e indicação conforme gravidade, resistência, função renal, acesso local e bula vigente. Citações internacionais não equivalem a protocolos obrigatórios para todas as redes brasileiras.
+
+## 30. Controle editorial de produção e próximos gates
+
+- [x] Conteúdo-base com fisiopatologia, diagnóstico, doença compensada/descompensada, CSPH, ascite, PBE, HRS-AKI conforme ADQI–ICA 2024, EH, HDA varicosa, CHC e transplante.
+- [x] Caso HRS corrigido em relação ao resumo de Drive que exigia albumina por 48h em todos.
+- [x] Oito casos originais discutindo mecanismos, exames e conduta, incluindo risco de efeitos iatrogênicos.
+- [x] Doze questões com quatro alternativas, análise de todas e mini-revisão.
+- [x] Referências de fontes originais/institucionais e distinção de documentos brasileiros antigos/2025.
+- [ ] Revisão clínica especializada de doses, elegibilidade HRS/TIPS, profilaxia PBE, HDA, segurança de terlipressina e polifarmácia.
+- [ ] Matriz de autossuficiência por questão, com capítulos-base e respostas sem recorrer aos gabaritos.
+- [ ] Deduplicação semântica e certificação de ≥60 mil caracteres instrucionais **realmente úteis**.
+- [ ] Curadoria até 10 imagens didáticas (US com ascite/CHC, Doppler portal, EDA de varizes, esquema TIPS, paracentese), com autoria/licença verificada e aprovação Admin; não incluir diretamente novas imagens no HTML.
+- [ ] Entrada do gerador JSON, HTML preliminar, execução de validadores oficiais e testes desktop/PWA.
+- [ ] **RASCUNHO EDITORIAL — NÃO FAZER MERGE/DEPLOY SEM REVISÃO.**
