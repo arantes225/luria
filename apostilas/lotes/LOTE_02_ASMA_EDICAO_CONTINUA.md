@@ -444,6 +444,51 @@ Investigar gravidade e sinais de perigo sempre que houver **tiragem intensa, cia
 **Fontes verificadas:** Global Initiative for Asthma, *Summary Guide for Asthma Management and Prevention — 2026*, p. 28–29 e quadros de doses específicos nas p. 44–45, https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf ; GINA 2026 *Strategy Report*, https://ginasthma.org/2026-gina-strategy-report/ . Os documentos GINA são **protegidos por direitos autorais**; os quadros acima são autorais e não autorizam reutilizar as figuras originais. Avaliar compatibilidade com o PCDT brasileiro e normas regulatórias antes da disponibilização.
 
 
+### 8.5 Espirometria em escolares: a porcentagem do valor previsto não é a do basal
+
+A criança de 6–11 anos com tosse, dispneia, sibilos ou aperto torácico de padrão variável deve ter **o diagnóstico confirmado e documentado** quando possível, não apenas receber o rótulo de “bronquite asmática”. A demonstração de variabilidade excessiva do fluxo expiratório pode vir da espirometria antes e depois do broncodilatador, da variabilidade seriada do pico de fluxo expiratório (PFE) ou de testes adicionais apropriados. O exame pode ser normal **entre as crises**; neste caso, repetir em período sintomático ou encaminhar para teste adequado é melhor do que declarar que a asma foi excluída.
+
+**Critério GINA 2026 para crianças 6–17 anos no teste broncodilatador:** aumento do **VEF1 de pelo menos 12% do VEF1 previsto**. O denominador é o valor **previsto por equação de referência** para idade, altura e demais características apropriadas, e não o VEF1 medido antes do broncodilatador. Para adultos, a mesma tabela GINA utiliza aumento de VEF1 ou CVF **≥12% E ≥200 mL em relação ao basal**. Misturar os denominadores faz uma criança ser classificada erroneamente.
+
+| Medida no exemplo | VEF1 medido | Cálculo correto | Interpretação |
+| --- | ---: | --- | --- |
+| Valor previsto para a criança | **2,00 L** | Denominador da resposta pediátrica | Não é a CVF e não é o valor basal |
+| Antes do broncodilatador | **1,35 L** | — | Ponto de comparação |
+| Após o broncodilatador | **1,60 L** | Ganho absoluto = **0,25 L** | O ganho existe, mas sozinho não resolve a análise |
+| Resposta calculada sobre o **previsto** | — | 0,25/2,00 × 100 = **12,5%** | Atinge critério GINA 2026 em criança com quadro clínico compatível |
+| Resposta calculada sobre o **basal** | — | 0,25/1,35 × 100 = **18,5%** | Não usar esse percentual como se fosse o critério pediátrico da GINA |
+
+Na prática, a equação de referência, a qualidade da manobra e o contexto clínico influenciam a interpretação. Curvas com hesitação, fechamento de glote, inspiração incompleta, vazamento ou tosse durante a manobra podem distorcer resultados e requerem repetição orientada. No relatório da criança, registrar **valor previsto, VEF1 pré e pós-BD, ganho em litros e porcentagem calculada**, não apenas a frase “prova positiva”.
+
+#### 8.5.1 O PFE pode ajudar, mas não equivale à espirometria
+
+A GINA 2026 admite critérios de variabilidade do PFE na criança, com **aumento ≥15% após broncodilatador** ou **variabilidade diurna média >13% ao longo de aproximadamente duas semanas**. A interpretação é menos confiável que a espirometria e exige técnica consistente: mesmo aparelho, melhores medidas dentre três manobras em cada horário, registro de manhã e noite, cálculo da amplitude diária em relação à média e posterior média das amplitudes do período.
+
+**Exemplo:** PFE matinal 200 L/min e noturno 260 L/min no mesmo dia. A variabilidade diária é (260−200)/[(260+200)/2] × 100 = 60/230 × 100 ≈ **26,1%**. **Isso é a variabilidade daquele dia**, não a média de quatorze dias: não chamar o resultado único de “critério diagnóstico já fechado”. Registrar sintomas, horário de alívio e exposições para dar contexto ao diário.
+
+Um biomarcador de inflamação tipo 2, como FeNO elevado, **apoia** o diagnóstico diante de sintomas típicos quando a função pulmonar é inconclusiva, mas não substitui demonstração apropriada de variabilidade nem exclui asma quando é baixo. Na faixa pediátrica, a GINA cita **FeNO >35 ppb** como possível sinal de suporte, não como teste definitivo; rinite alérgica e condições coexistentes podem elevar FeNO.
+
+### 8.6 Exacerbação e plano de ação do escolar: o que muda a segurança
+
+A avaliação de criança em crise começa pelos **sinais de gravidade e esforço**, e não pelo número de jatos que a família relata ter usado. Incapacidade de falar ou beber, retrações intensas, cianose, exaustão, sonolência, redução importante do murmúrio vesicular e hipoxemia requerem atendimento emergencial. **Tórax silencioso é sinal de perigo**, não “ausência de asma porque não está chiando”. Sempre perguntar por anafilaxia, engasgo/corpo estranho, pneumonia, cardiopatia e causa não respiratória quando a apresentação indicar.
+
+**Criança em crise que chega à atenção primária:** posicionar, avaliar via aérea, frequência respiratória, SpO2 e estado mental, iniciar broncodilatador de resgate adequado por dispositivo seguro e oxigênio quando indicado, observando resposta clínica frequente. Em crise moderada ou grave, corticosteroide sistêmico pode ser necessário. A GINA 2026 usa, como referência pediátrica, **prednisolona 1–2 mg/kg/dia (máximo 40 mg/dia) por três a cinco dias** em contextos apropriados; isso não autoriza prescrição remota nem substitui protocolos de emergência, avaliação de necessidade de internação ou checagem de contraindicações. Cursos repetidos de corticoide sistêmico sinalizam necessidade de rever prevenção.
+
+**Plano escrito individual:** identificar tratamento diário, dispositivo de alívio permitido para aquela idade e formulação, sinais que exigem atendimento no mesmo dia, sinais que exigem emergência e contatos da família/escola. A família deve saber que **CI-formoterol usado em AIR/MART não pode ser substituído por CI-salmeterol como resgate**. O número máximo de inalações diárias depende do **produto e da faixa etária**: jamais copiar o limite adulto para uma criança de oito anos. Entregar o plano e solicitar que criança/cuidador demonstrem a técnica antes da alta e nas consultas de seguimento.
+
+| Cenário | Pergunta prioritária | Consequência |
+| --- | --- | --- |
+| Criança de oito anos com sibilância variável e espirometria normal em dia assintomático | O teste foi realizado no momento adequado e com técnica correta? | Repetir/documentar variabilidade e revisar diferenciais; não excluir asma automaticamente |
+| Criança com resposta de VEF1 de 240 mL e previsto de 2,1 L | Qual o percentual do **previsto**? | 240/2100 = **11,4%**, abaixo do limiar de 12% — não é teste positivo por esse critério isolado |
+| Criança recebe apenas SABA eventual apesar de diagnóstico de asma confirmado | O plano tem proteção anti-inflamatória conforme GINA 2026? | Rever etapa inicial e opções locais de CI com alívio, considerando idade e registro do produto |
+| Criança recebe múltiplos cursos de prednisolona no mesmo ano | Há técnica incorreta, baixa adesão, exposição, comorbidade ou asma grave? | Reavaliar controle, risco, terapia e necessidade de referência especializada |
+| Pré-escolar de três anos com sibilância episódica viral | As recomendações de 6–11 anos podem ser copiadas? | **Não**: diagnóstico e terapias requerem normas específicas de menores de seis anos |
+
+**Pérola de prova:** um aumento de 240 mL seria suficiente em um adulto com VEF1 basal 1,5 L se o ganho também fosse ≥12% do basal, mas pode **não ser suficiente para uma criança** cujo VEF1 previsto seja 2,1 L. A cifra em mililitros não pode substituir a regra pediátrica.
+
+**Fontes verificadas:** GINA. *Summary Guide for Asthma Management and Prevention — 2026*, tabela 1 (critérios funcionais), figura 8 (6–11 anos) e seção de planos de ação e exacerbações; https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . Material GINA é protegido por direitos autorais; os exemplos e as tabelas pedagógicas acima são inteiramente autorais. Para uso assistencial no Brasil, confrontar as formulações com o PCDT e a disponibilidade/regulação nacional.
+
+
 ## 9. Casos clínicos comentados
 
 ### Caso 1 — Espirometria normal entre episódios
@@ -493,6 +538,15 @@ Menino de 8 anos com asma previamente documentada por sintomas variáveis e resp
 ### Caso 12 — Pré-escolar com episódios virais não recebe automaticamente MART escolar
 
 Menina de 3 anos apresentou três episódios de sibilância associados a infecções virais, está sem sintomas entre resfriados e tem crescimento adequado. O familiar ouviu falar que crianças podem usar CI-formoterol como resgate e deseja a mesma medicação. **Hipóteses:** sibilância recorrente associada a vírus, possível asma pré-escolar e outros diagnósticos dependendo da evolução. **Raciocínio:** o algoritmo **6–11 anos da GINA 2026 não se aplica automaticamente aos 3 anos**. É necessário investigar frequência e intensidade das crises, internações, sintomas entre infecções, atopia, fatores ambientais e diferenciais. **Exames:** avaliação clínica dirigida; exames adicionais apenas conforme sinais de alerta e suspeitas. **Conduta:** elaborar plano apropriado à idade e ao dispositivo disponível, orientar sinais de gravidade e acompanhamento pediátrico; não extrapolar doses nem associações de escolares. **Por que importa:** evitar uso de medicamento/formulação sem respaldo etário e distinguir sibilância viral de asma persistente.
+
+
+### Caso 13 — Resposta broncodilatadora pediátrica com denominador errado
+
+Menina de nove anos apresenta tosse noturna e sibilância ao exercício em dias alternados. Espirometria de boa qualidade informa **VEF1 previsto 2,00 L**, VEF1 pré-broncodilatador **1,35 L** e pós **1,60 L**. **Hipótese:** asma escolar com variabilidade do fluxo expiratório. **Raciocínio:** ganho 250 mL, equivalente a **12,5% do previsto**, satisfaz a resposta funcional GINA 2026; calcular 18,5% do basal é possível aritmeticamente, porém não é o critério pediátrico utilizado. **Exames:** conferir curvas, reprodutibilidade, sintomas e riscos; avaliar doenças alternativas diante de sinais atípicos. **Conduta:** registrar a confirmação em conjunto com sintomas típicos, discutir tratamento contendo CI adequado à idade, técnica e plano escrito com cuidadores. **Por que este caso importa:** uma mesma resposta pode receber interpretações diferentes se o aluno usar o denominador errado.
+
+### Caso 14 — Escolar com crise grave que para de sibilar
+
+Menino de oito anos, asma conhecida e diversos resgates sem controle, chega com retrações intensas, fala entrecortada e cansaço progressivo. Inicialmente há sibilos difusos; depois o murmúrio vesicular diminui drasticamente. **Hipótese:** exacerbação grave com fluxo aéreo perigosamente reduzido e risco de insuficiência respiratória. **Raciocínio:** a redução dos ruídos não é necessariamente melhora: pode revelar entrada de ar insuficiente. **Exames:** avaliação contínua de esforço, consciência, oxigenação e resposta inicial; evitar retardar tratamento para obter espirometria durante instabilidade. **Conduta:** atendimento emergencial monitorado com suporte respiratório e broncodilatação/corticosteroide conforme protocolo, com possibilidade de escalonamento rápido e revisão posterior do controlador. **Por que este caso importa:** **tórax silencioso e exaustão são sinais de gravidade**, mesmo sem sibilância audível.
 
 
 ## 10. Questões autorais comentadas
@@ -635,6 +689,35 @@ C) Investigar padrão de sibilância, sinais de gravidade e diferenciais, e usar
 D) Não avaliar sinais respiratórios porque chiado viral nunca causa crise importante.
 
 **Gabarito: C.** O guia resumido GINA 2026 citado cobre 6–11 anos, e não serve para transferir doses/formulações a uma criança de 4 anos. **A/B** extrapolam tratamentos sem segurança etária; **D** minimiza risco de exacerbações graves. **Mini-revisão:** a idade muda diagnóstico, modo de administração e evidência para estratégias de alívio.
+
+
+### Questão 18 — Qual percentual define resposta broncodilatadora em criança?
+
+Escolar de dez anos com suspeita clínica de asma tem VEF1 previsto 2,00 L, VEF1 pré 1,35 L e pós 1,60 L. Para aplicar o critério GINA 2026 nessa idade, a resposta deve ser:
+
+A) 18,5%, calculada sobre o basal, porque o critério infantil é o mesmo dos adultos.
+
+B) 12,5%, calculada sobre o VEF1 previsto, satisfazendo o critério pediátrico.
+
+C) 0%, porque 250 mL nunca são relevantes na infância.
+
+D) Obrigatoriamente negativa, pois qualquer teste positivo requer ganho absoluto de 400 mL.
+
+**Gabarito: B.** A GINA 2026 utiliza **≥12% do VEF1 previsto** em crianças, e 0,25/2,00 = 12,5%. **A:** escolhe denominador adulto; **C:** despreza a mudança objetiva; **D:** inventa requisito absoluto não previsto para esse grupo. **Mini-revisão:** verificar idade e denominador antes da conta, e interpretar resultado com a história respiratória.
+
+### Questão 19 — Sinais de perigo na crise asmática infantil
+
+Criança com asma conhecida chega à emergência em exaustão, taquipneia, fala entrecortada e entrada de ar muito diminuída, com poucos sibilos após horas de piora. Qual interpretação é mais apropriada?
+
+A) A redução dos sibilos prova recuperação e permite alta imediata.
+
+B) O tórax pouco audível pode indicar obstrução crítica com fluxo muito baixo e necessidade de intervenção emergencial.
+
+C) Ausência de sibilância exclui asma durante qualquer exacerbação.
+
+D) O exame funcional de rotina deve preceder toda medida de suporte.
+
+**Gabarito: B.** Sem fluxo adequado, o chiado pode desaparecer enquanto a situação piora. **A:** confunde silêncio com melhora; **C:** ignora a fisiopatologia; **D:** retarda suporte de um paciente instável. **Mini-revisão:** consciência, fala, esforço respiratório, oxigenação e entrada de ar prevalecem sobre a presença isolada de sibilos.
 
 
 ## Referências essenciais
