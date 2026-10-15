@@ -1,6 +1,6 @@
 {
-  "status": "PAUTA_VISUAL_10_CANDIDATAS_NAO_PESQUISADAS_OU_APROVADAS",
-  "source_policy": "Priorizar sociedades, artigos abertos, Wikimedia Commons e imagem institucional. Verificar URL original, autor, licença, atribuição, qualidade, anatomia e contexto; não considerar nenhuma selecionada ou liberada nesta etapa.",
+  "status": "CURADORIA_PARCIAL_4_CANDIDATAS_PRINCIPAIS_3_ALTERNATIVAS_COM_FONTES_E_LICENCAS",
+  "source_policy": "Priorizar sociedades, artigos abertos, Wikimedia Commons e imagem institucional. Verificar URL original, autor, licença, atribuição, qualidade, anatomia e contexto; não considerar nenhuma selecionada ou liberada nesta etapa. As páginas identificadas não autorizam inserção automática no site: validar atribuição integral, eventual marca d'água, contexto clínico e versões derivadas.",
   "tasks": [
     {
       "id": 1,
@@ -8,9 +8,12 @@
       "chapter": "Capítulo 5",
       "caption_proposed": "Reconhecer contorno nodular e alterações de ecotextura sem tomar US isoladamente como prova",
       "source": null,
-      "license": null,
-      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
-      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+      "license": "CC BY-SA 2.5 (opção de licença indicada na página)",
+      "approval": "FONTE_E_LICENCA_IDENTIFICADAS_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ultrasound_Scan_ND_001.jpg",
+      "creator": "Nevit Dilmen",
+      "clinical_note": "Ultrassonografia de fígado macronodular e ascite; imagem pequena 440×386"
     },
     {
       "id": 2,
@@ -38,9 +41,12 @@
       "chapter": "Capítulos 8–9",
       "caption_proposed": "Ensinar seleção de bolsa e proteção contra lesão vascular",
       "source": null,
-      "license": null,
-      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
-      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+      "license": "CC BY 3.0",
+      "approval": "FONTE_E_LICENCA_IDENTIFICADAS_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ascites_ultrasound_2.JPG",
+      "creator": "Samir",
+      "clinical_note": "Ultrassonografia de cirrose e ascite; consentimento de divulgação informado no arquivo"
     },
     {
       "id": 5,
@@ -68,9 +74,12 @@
       "chapter": "Capítulo 13",
       "caption_proposed": "Identificar aspecto endoscópico e finalidade da ligadura",
       "source": null,
-      "license": null,
-      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
-      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+      "license": "CC BY-SA 4.0",
+      "approval": "FONTE_E_LICENCA_IDENTIFICADAS_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Endoscopic_Banding_for_Esophageal_Varices.png",
+      "creator": "Kel898",
+      "clinical_note": "EDA com ligadura; possui marca d'água/créditos na própria imagem e exige avaliação editorial"
     },
     {
       "id": 8,
@@ -88,9 +97,12 @@
       "chapter": "Capítulos 13 e 18",
       "caption_proposed": "Explicar descompressão portal e risco de encefalopatia",
       "source": null,
-      "license": null,
-      "approval": "PENDENTE_PESQUISA_LICENCA_REVISAO_MEDICA_ADMIN",
-      "target_format": "WebP responsivo, 100–120 kB conforme tipo"
+      "license": "CC BY 1.0",
+      "approval": "FONTE_E_LICENCA_IDENTIFICADAS_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP",
+      "target_format": "WebP responsivo, 100–120 kB conforme tipo",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tips_schematic.JPG",
+      "creator": "R. Torrance Andrews, MD",
+      "clinical_note": "Diagrama em 4 passos de TIPS, mostrando porta, veia hepática e stent"
     },
     {
       "id": 10,
@@ -103,5 +115,33 @@
       "target_format": "WebP responsivo, 100–120 kB conforme tipo"
     }
   ],
-  "embeddedImages": 0
+  "embeddedImages": 0,
+  "alternates": [
+    {
+      "title": "TC de cirrose e ascite",
+      "source_page": "https://commons.wikimedia.org/wiki/File:CirrhosisWithAscites.png",
+      "creator": "James Heilman, MD",
+      "license": "CC BY-SA 4.0",
+      "chapter": "5–8",
+      "approval": "FONTE_E_LICENCA_IDENTIFICADAS_PENDENTE_ADMIN"
+    },
+    {
+      "title": "EDA com sangramento varicoso ativo",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bleeding_esophageal_varices.png",
+      "creator": "Jeremias",
+      "license": "CC BY-SA 4.0",
+      "chapter": "13",
+      "approval": "FONTE_E_LICENCA_IDENTIFICADAS_PENDENTE_ADMIN"
+    },
+    {
+      "title": "Ilustração de varizes esofágicas",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Esophageal-varices-hariadhi.svg",
+      "creator": "Hariadhi",
+      "license": "CC BY-SA 4.0",
+      "chapter": "6,13",
+      "approval": "FONTE_E_LICENCA_IDENTIFICADAS_PENDENTE_ADMIN"
+    }
+  ],
+  "verifiedSourceLicenseCount": 7,
+  "updatedAt": "2026-10-15"
 }
