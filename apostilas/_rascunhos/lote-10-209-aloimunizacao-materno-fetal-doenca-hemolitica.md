@@ -111,3 +111,179 @@ Se não há antígeno correspondente no feto, aquele anticorpo não encontra alv
 
 Testes invasivos para genotipagem fetal podem provocar hemorragia feto-materna e devem ser reservados a cenários em que resultado muda conduta, com avaliação especializada. A idade gestacional e validação técnica importam para DNA livre: resultado inconclusivo não equivale a feto antígeno-negativo.
 
+
+## 5. Coombs indireto e direto: interpretação de verdade
+
+### 5.1. Pesquisa de anticorpos irregulares (PAI) / teste indireto da antiglobulina
+
+Na PAI, o plasma ou soro materno é colocado em contato com hemácias de referência com expressão antigênica conhecida; após etapas laboratoriais de incubação e lavagem, o reagente antiglobulina detecta imunoglobulinas ligadas às hemácias de teste. A PAI pode identificar **anticorpos eritrocitários circulantes clinicamente significativos**, mas o resultado inicial “positivo” ainda não descreve sua especificidade nem a capacidade de causar doença fetal. O laboratório deve realizar **painel de identificação** e, conforme anticorpo, **titulação** ou **quantificação**.
+
+O termo “Coombs indireto” é usado amplamente nas provas brasileiras, mas “PAI” enfatiza o rastreamento. É importante distinguir anticorpos frios ou de significado transfusional limitado daqueles ativos a 37 °C e capazes de atravessar placenta. Interpretação é atividade de imuno-hematologia, não apenas leitura de um símbolo +/−.
+
+### 5.2. Teste direto da antiglobulina (DAT/Coombs direto)
+
+O DAT pesquisa anticorpos e/ou complemento **já aderidos às hemácias da amostra**, por exemplo do recém-nascido. Um DAT positivo **aumenta suspeita de hemólise imune**, mas não define intensidade de anemia ou risco de encefalopatia sem hemoglobina, reticulócitos, bilirrubina e evolução. Pode haver DAT negativo em casos de incompatibilidade ABO com hemólise, e DAT positivo em recém-nascido cuja mãe recebeu anti-D profilático, sem hemólise clinicamente relevante.
+
+A **AAP 2022** recomenda, quando pesquisa materna de anticorpos é **positiva ou desconhecida**, determinar grupo do recém-nascido e DAT o quanto antes. Se o DAT for positivo apenas por anti-D passivo devido à profilaxia em mãe previamente não sensibilizada, sem outros anticorpos, pode ser interpretado de forma diferente de anti-D imune patogênico; história e laboratório orientam.
+
+### 5.3. Coombs direto positivo não é sinônimo de fototerapia
+
+Fototerapia é indicada pela **bilirrubina total sérica conforme idade em horas, idade gestacional e fatores de neurotoxicidade**, não por DAT isolado. RN com DAT positivo e bilirrubina em níveis baixos pode precisar de monitorização próxima, mas não obrigatoriamente fototerapia imediata. Recém-nascido com DAT negativo ainda pode precisar de fototerapia por hiperbilirrubinemia não imune.
+
+### 5.4. Painel de anticorpos e titulação
+
+“1:16” descreve uma diluição de soro em que anticorpo permanece detectável por método padronizado; não é concentração em mg/dL. Valores de título dependem do método, laboratório e reagentes. A série temporal deve preferir mesmo laboratório/técnica; **mudança de uma única diluição** pode ter interpretação diferente de tendência sustentada. **Anti-K** é exceção importante à prática de depender de títulos elevados para iniciar avaliação fetal.
+
+Para anti-D e anti-c, BSH 2025 utiliza **concentrações em UI/mL** em laboratórios britânicos de referência, e não apenas títulos de diluição. Converter diretamente um título de Coombs de serviço brasileiro para UI/mL sem técnica validada é incorreto. A presença de histórico de filho afetado modifica conduta mesmo em concentrações modestas.
+
+### 5.5. Antígeno fetal e especificidade materna precisam combinar
+
+Uma paciente com anti-K não necessariamente gera doença em todo feto, pois um feto K-negativo não oferece alvo desse anticorpo. Porém a mera informação de “pai K-negativo” depende de certeza biológica e análise genética correta; genotipagem fetal pode ser indicada quando muda acompanhamento. Da mesma forma, mãe D-negativa não precisa de vigilância por anemia hemolítica anti-D caso feto seja D-negativo comprovado e não haja outro anticorpo relevante.
+
+### 5.6. Testes da passagem sanguínea e quantidade de hemorragia feto-materna
+
+Kleihauer–Betke (eluição ácida) e citometria de fluxo podem estimar quantidade de hemácias fetais na circulação materna em situações indicadas. A interpretação permite calcular se dose habitual de imunoglobulina anti-D foi suficiente após evento/parto. **Não é exame universal necessário antes de toda dose anti-D rotineira** e a disponibilidade pode variar. No trauma/hemorragia volumosa, a equipe deve considerar a possibilidade de dose adicional a partir de estimativa válida de hemorragia feto-materna.
+
+## 6. Profilaxia anti-D: prevenção não é tratamento
+
+### 6.1. Qual é o mecanismo da imunoglobulina?
+
+Imunoglobulina anti-D profilática fornece anticorpos passivos que se ligam a hemácias fetais D-positivas que entraram na circulação materna e facilitam sua remoção antes que se estabeleça resposta imune persistente materna. A prevenção age **na mãe D-negativa não sensibilizada**, não na circulação fetal para reverter anemia estabelecida. É uma das intervenções preventivas mais importantes em obstetrícia e reduziu dramaticamente doença anti-D em populações com acesso consistente.
+
+### 6.2. A elegibilidade
+
+**Requisitos gerais:** gestante/paciente no pós-parto **RhD-negativa**, **sem anti-D imune**, com possibilidade de exposição a hemácias D-positivas (feto comprovadamente D-positivo ou de tipo desconhecido). Um teste de PAI positivo por outro anticorpo não exclui a necessidade de proteger contra D, se não há anti-D imune. Em caso de dúvida se anti-D é passivo ou imune, envolver imuno-hematologia; não negar profilaxia por interpretação precipitada.
+
+### 6.3. Dose de rotina antenatal — identificar jurisdição e esquema
+
+Em protocolos brasileiros e internacionais, a profilaxia de rotina é ofertada **por volta de 28 semanas**, após avaliação apropriada. Há serviços que usam **300 μg (aprox. 1.500 UI) IM** em dose única, enquanto esquemas e produtos de outros países podem utilizar doses repartidas ou diferentes concentrações. **Não converter automaticamente entre apresentações de 100, 250 e 300 μg**, nem afirmar que toda unidade brasileira oferece exatamente o mesmo esquema: verificar apresentação disponível, bula Anvisa, protocolo local e histórico de profilaxia.
+
+O protocolo EBSERH/MEAC consultado descreve a indicação de rotina entre **28 e 34 semanas**, mas registra **indisponibilidade da dose antenatal naquele serviço na data de emissão (2020)**. A LURIA deve ensinar o princípio e sinalizar possível lacuna assistencial local, **sem normalizar a ausência** de um recurso preventivo nem retratar protocolo antigo como situação atual. A amostra para PAI das 28 semanas idealmente deve ser colhida **antes** da aplicação, reduzindo ambiguidade por anticorpo passivo.
+
+### 6.4. Após o nascimento
+
+Se mãe D-negativa **não sensibilizada** dá à luz RN **D-positivo**, há indicação de imunoglobulina anti-D materna, idealmente **até 72 horas** após parto, segundo protocolos tradicionais. Confirmar tipagem neonatal e dose correta; a dose pós-parto não é dispensada simplesmente porque a gestante recebeu uma dose rotineira às 28 semanas. Quando o bebê é D-negativo comprovado e não há outros eventos de risco, profilaxia por anti-D fetal não é necessária.
+
+Se a janela ideal foi perdida, avaliar aplicação tardia de acordo com protocolo e equipe; **não concluir que profilaxia é inútil após 72 horas**. A documentação brasileira consultada descreve benefício até dias posteriores e menção a até 28 dias em determinados protocolos, embora o efeito seja maior quando administrado prontamente.
+
+### 6.5. Eventos sensibilizantes na gestação
+
+Situações com potencial passagem de hemácias fetais incluem:
+- Sangramento vaginal, especialmente volumoso/recorrente.
+- Trauma abdominal, com ou sem sangramento exteriorizado.
+- Amniocentese, biópsia de vilo corial, cordocentese e outros procedimentos invasivos.
+- Versão cefálica externa e algumas manipulações obstétricas.
+- Abortamento espontâneo/induzido, gravidez ectópica, doença trofoblástica, perdas gestacionais e óbito fetal, conforme idade gestacional e protocolo.
+- Descolamento placentário e hemorragia feto-materna suspeita ou confirmada.
+
+**Primeiro trimestre:** recomendações diferem entre sociedades/países e evoluíram para determinadas perdas precoces. Não ensinar indiscriminadamente “qualquer sangramento de qualquer semana exige 300 μg”. Deve-se conferir idade gestacional, tipo de evento, assistência realizada, protocolo brasileiro atualizado e disponível. A aula lista os eventos de risco e aponta que **dose e indicação variam**; não é prescrição automática.
+
+### 6.6. Administração não substitui documentação
+
+Registrar indicação, idade gestacional/data, apresentação/concentração em μg e UI, lote, via, local de aplicação e testes pertinentes. No pós-parto, registrar grupo ABO/RhD do RN e pesquisa de hemorragia feto-materna quando indicada. Em caso de discrepância de tipagem, variantes D fraco/partial D ou teste inconclusivo, envolver hemoterapia/genotipagem; conduta de profilaxia depende de variante e interpretação, não apenas do resultado Rh “fraco” sem contexto.
+
+### 6.7. Segurança e particularidades
+
+A anti-D é derivada de plasma humano, com processos de segurança e risco residual, alergias e eventos adversos conhecidos na bula. A via autorizada depende do produto e da finalidade; não administrar formulação IM pela via IV sem autorização. Em casos de trombocitopenia grave ou distúrbios hemorrágicos, técnica/via merecem avaliação profissional. Registrar outros produtos derivados do sangue e vacinas conforme protocolo, evitando contraindicações inventadas.
+
+**Dica de prova:** RhD-negativa + PAI negativa + 28 semanas = considerar **profilaxia**. RhD-negativa + **anti-D imune** = acompanhar **anemia fetal**, não administrar anti-D “terapêutica”. RhD-positiva + anti-K = ainda existe risco de aloimunização materno-fetal.
+
+## 7. Gravidez sensibilizada: títulos, história e risco real
+
+### 7.1. O histórico de feto afetado supera uma leitura simplista de título
+
+Gestante com antecedente de filho que precisou de transfusão intrauterina, nasceu com anemia grave, hidropisia ou exsanguíneotransfusão é de **alto risco em gestações subsequentes** quando feto expressa antígeno correspondente. A BSH 2025 orienta referência **precoce, antes de 20 semanas**, independentemente da concentração de anticorpo, pela possibilidade de recidiva mais precoce e grave. Não esperar título atingir 1:16 “para começar a pensar” se já houve doença grave.
+
+O motivo é imunológico: células de memória e resposta secundária podem produzir IgG eficaz precocemente. Além disso, títulos em laboratório não medem diretamente a vulnerabilidade fetal nem substituem genótipo e fluxo hemodinâmico.
+
+### 7.2. Anti-D imune e anti-c
+
+Na BSH 2025, casos com anti-D imune e anti-c são acompanhados sorologicamente em geral **a cada quatro semanas até 28 semanas e a cada duas semanas depois**, salvo orientação específica quando o Doppler seriado já determina acompanhamento. Encaminhamento a medicina fetal depende de concentração que alcança nível de risco, aumento importante e/ou histórico fetal. Na prática brasileira, protocolos com titulação crítica como **1:16** podem ser usados para anti-D conforme método local; deixar claro qual critério pertence a qual serviço.
+
+### 7.3. Anti-K desde a detecção
+
+Para anti-K ou outros anticorpos significativos do sistema Kell, a BSH 2025 recomenda **referência à medicina fetal assim que identificados**, pois títulos têm relação menos previsível com gravidade. O documento recomenda considerar início de Doppler de ACM seriado quando título **≥1:4** em feto em risco, após avaliação especializada; esse ponto é norma BSH e não substitui adaptação local. Com feto K-negativo confirmado, necessidade de vigilância específica pelo anti-K muda substancialmente.
+
+### 7.4. Outros anticorpos
+
+Anti-E, anti-C, anti-Fya, anti-Jka e outros podem variar em potencial hemolítico e história de doença fetal. O risco não pode ser classificado apenas pelo nome do sistema. Conferir se anticorpo reage a antígeno fetal, se há titulação crescente, passado obstétrico, resultados Doppler e preparo de hemocomponentes para parto. Alguns anticorpos de relevância transfusional materna têm pequeno efeito fetal, mas dificultam obter sangue compatível em hemorragia obstétrica; o banco de sangue deve saber antes de emergência.
+
+### 7.5. Hemoterapia e identificação da gestante
+
+Tubo de amostra trocado ou erro de tipagem pode gerar profilaxia incorreta e transfusão incompatível. Confirmar identificadores durante coleta e encaminhar resultados de anticorpos ao cartão/documentação e à maternidade de referência. A BSH enfatiza registro de anticorpos prévios mesmo que depois não detectados, por risco de resposta anamnésica em transfusão/gestação futura.
+
+## 8. Doppler de artéria cerebral média: estimando anemia fetal sem punção
+
+### 8.1. Base fisiológica
+
+Na anemia fetal, menor viscosidade sanguínea e resposta de alto débito podem aumentar velocidade do fluxo em artérias cerebrais, incluindo o **pico de velocidade sistólica da ACM**. A medida é feita em cm/s por ultrassom Doppler com técnica padronizada e convertida em **múltiplos da mediana (MoM)** para idade gestacional. O valor absoluto de cm/s não pode ser comparado diretamente entre 20 e 32 semanas.
+
+A anemia por aloimunização pode existir antes de ascite/hidropisia e antes de CTG claramente anormal. Isso torna o Doppler ferramenta essencial de vigilância não invasiva. A eficácia depende de técnica correta, operador, momento e contexto; resultado não é teste mágico sem falsos positivos/negativos.
+
+### 8.2. Técnica e qualidade
+
+Identificar corte axial do encéfalo com círculo de Willis, localizar segmento proximal da ACM perto da origem na carótida interna, registrar fluxo em condições de repouso fetal, minimizar ângulo de insonação e evitar compressão craniana excessiva. Medir pico sistólico em onda de boa qualidade, conforme protocolo validado, e usar curva apropriada à idade gestacional. Condições de movimentação fetal, respiração, posição ou inconsistência de ângulo podem produzir velocidade artificialmente alterada; revisar técnica antes de mudança irreversível de conduta.
+
+### 8.3. Por que o ponto de corte é 1,5 MoM?
+
+Velocidades **acima de 1,5 MoM** têm associação relevante com anemia fetal moderada ou grave na população de risco e costumam desencadear **reavaliação urgente em centro de medicina fetal** para confirmação e planejamento de amostragem/transfusão fetal ou parto dependendo da idade. A BSH 2025 usa esse marco e ressalta que transfusão intrauterina é decisão de centro terciário. Não significa “aplicar anti-D”, “fazer cesariana em todas” ou “transfundir sem planejamento”.
+
+### 8.4. Limites do Doppler
+
+- **Idade gestacional tardia:** maior chance de falsos positivos em determinadas faixas; interpretar com cautela conforme técnica e idade.
+- **Após transfusão intrauterina:** hemácias transfundidas alteram viscosidade e padrões Doppler; velocidade não se comporta necessariamente como em feto não transfundido, e intervalos/protocolo precisam ser especializados.
+- **Gravidez gemelar:** Dopplers e crescimento de cada feto devem ser identificados corretamente, com contexto próprio de TAPS e outras causas de anemia.
+- **Outras etiologias:** hemorragia feto-materna maciça, infecções fetais (p. ex. parvovírus B19) e alterações hematológicas podem causar anemia sem aloimunização. PSV-ACM alta exige investigar o mecanismo, não assumir anti-D.
+
+### 8.5. Significado de hidropisia
+
+Hidropisia fetal é acúmulo anormal de fluido em **pelo menos dois compartimentos/tecidos fetais**, como ascite, derrame pleural/pericárdico e edema cutâneo, com possíveis alterações placentárias/polidrâmnio associados. Pode decorrer de anemia hemolítica grave, mas também de cardiopatias, infecções, anomalias cromossômicas, síndromes metabólicas e arritmias. A identificação exige avaliação fetal e urgência apropriadas, sem fixar diagnóstico de isoimunização pela imagem.
+
+## 9. Transfusão intrauterina e cordocentese
+
+### 9.1. Quando considerar?
+
+Gestação com anticorpo de risco, feto antígeno-positivo ou de estado desconhecido, **PSV-ACM persistentemente >1,5 MoM** e/ou sinais de anemia/hidropisia pode necessitar avaliação invasiva e **transfusão intrauterina (TIU/IUT)** em centro especializado. O limiar de intervenção envolve idade gestacional, gravidade esperada, disponibilidade de equipe e risco de parto neonatal. O procedimento tem riscos e não é exame de triagem.
+
+### 9.2. Cordocentese diagnóstica
+
+Punção vascular umbilical guiada por ultrassom permite obter pequena amostra de sangue fetal para confirmar **Hb/hematócrito**, grupo/antígenos ou outros exames quando relevantes. Em casos nos quais anemia grave é provável, a equipe pode preparar o procedimento para passar de avaliação a transfusão no mesmo ato, evitando exposição duplicada. Técnica, acesso, analgesia/anestesia fetal e prevenção de complicações são competências especializadas, não instruções de execução de graduando.
+
+### 9.3. Componente sanguíneo adequado
+
+A unidade de hemácias para TIU deve ser preparada com hemoterapia e atender a requisitos de compatibilidade **com anticorpos maternos**, grupo/antígeno, hematócrito e processamento (p. ex. leucorredução e irradiação conforme normas de hemoterapia neonatal/fetal). O sangue não pode ser escolhido apenas pelo RhD se a mãe possui anti-K ou outro anticorpo. O serviço de hemoterapia deve participar desde o planejamento, inclusive para possibilidade de transfusão neonatal e hemorragia materna.
+
+### 9.4. Por que podem ser necessárias várias transfusões?
+
+Anticorpos continuam presentes na circulação materna e podem persistir na fetal. Além disso, crescimento fetal amplia volume circulante e células transfundidas envelhecem. A TIU melhora transporte de oxigênio e permite prolongar gravidez, mas **não remove anticorpo materno**. Intervalos de novas transfusões dependem da tendência, hematócrito alcançado e estimado, idade gestacional, Doppler e protocolo terciário. O objetivo não é prolongar toda gestação até 40 semanas.
+
+### 9.5. Complicações possíveis
+
+Bradicardia fetal, espasmo/lesão vascular, hematoma de cordão, hemorragia, ruptura prematura de membranas, infecção, parto prematuro, morte fetal e necessidade de procedimento de emergência. Risco depende de gravidade fetal, idade e equipe. Em caso de anemia muito grave com hidropisia, a mortalidade procedural e de doença pode ser maior; discutir prognóstico realisticamente.
+
+### 9.6. Depois da transfusão
+
+A equipe continua monitorando movimento, vitalidade, crescimento, efeitos cardiocirculatórios e necessidade de novas TIUs; pode programar nascimento em hospital com neonatologia e banco de sangue experientes. O RN pode ter anemia tardia, pois anticorpos maternos circulam e a eritropoiese pode permanecer deprimida. **Ter recebido TIU não é alta automática após bilirrubina inicial normal.**
+
+## 10. Planejamento do nascimento e interface obstetrícia-neonatologia
+
+### 10.1. Nem toda gestação sensibilizada deve terminar na mesma semana
+
+Gestação com anti-D em nível baixo e feto sem antígeno não tem o mesmo risco de uma gestação com história de hidropisia e múltiplas TIUs. A idade de parto depende de gravidade atual, gestação, resposta a tratamento, Doppler, acesso a transfusão fetal, possibilidade de ressuscitação neonatal e riscos maternos. A BSH 2025 orienta que fetos com risco persistente de doença por anticorpos sejam avaliados para nascimento **não além de aproximadamente 37–38 semanas** em muitos cenários, mas reconhecimento de gravidade ou TIUs modifica essa janela. Isso não significa que toda gestante RhD-negativa precisa induzir parto em 37 semanas.
+
+### 10.2. Últimas semanas e Doppler
+
+Depois de determinada idade gestacional, procedimentos fetais se tornam comparativamente menos vantajosos que nascer em centro com recursos de transfusão/UTI, enquanto parto muito precoce aumenta morbidade respiratória e neurológica. A decisão entre TIU e nascimento deve ser do centro especializado, levando em conta que PSV-ACM pode ter menor especificidade ao final da gestação. **Não aplicar algoritmo automático “PSV >1,5 MoM = parto agora”, sem idade e contexto.**
+
+### 10.3. Via de parto
+
+Aloimunização isolada não impõe cesariana. A via é determinada por condição fetal, obstétrica e acesso à neonatologia/hemoterapia, assim como apresentações e contra indicações habituais. Em anemia grave ou deterioração fetal, intervenções e monitorização intraparto são ajustadas; a decisão não decorre de Coombs positivo isoladamente.
+
+### 10.4. Preparo antes do nascimento
+
+Avisar previamente serviço de neonatologia e banco de sangue, identificar anticorpo materno, garantir unidades compatíveis disponíveis quando há possibilidade de exsanguíneotransfusão/transfusão, organizar coleta de **grupo sanguíneo, DAT, hemograma/reticulócitos e bilirrubina** conforme protocolo e planejar vigilância das primeiras horas. Não aguardar que a criança fique intensamente ictérica para descobrir que o hemocomponente compatível demora a ser localizado.
+
+### 10.5. Documentação e orientação à família
+
+Explicar diferença entre anticorpo materno e doença efetiva no feto/RN; algum DAT positivo pode ocorrer sem anemia grave, e feto com história crítica pode nascer com necessidade de terapia apesar de aspecto inicial relativamente bom. A família deve saber por que são feitas coletas frequentes, fototerapia e observação de anemia tardia. Registrar anticorpos para futuras gestações e necessidade de atenção a transfusões maternas posteriores.
+
