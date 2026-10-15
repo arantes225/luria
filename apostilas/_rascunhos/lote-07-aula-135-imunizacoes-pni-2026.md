@@ -1,4 +1,4 @@
-# LURIA — Lote 7 · Aula 135
+# LURIA — Tema 135 · Lote 6 no planejamento de 260 temas (arquivo legado do Lote 7)
 # Imunizações e Programa Nacional de Imunizações (PNI) — Brasil, outubro de 2026
 **Área:** Medicina Preventiva / Pediatria / APS. **Status:** RASCUNHO ORIGINAL EM REVISÃO, NÃO PUBLICADO.  
 **Corte de atualização:** 14/10/2026. **Fonte normativa prioritária:** Ministério da Saúde, *Calendário Nacional de Vacinação 2026*, *Instrução Normativa 2026* e calendários técnicos por faixa etária, páginas oficiais atualizadas em julho–outubro de 2026. **Importante:** informações de calendário, incorporação e transição de estoques mudam; qualquer tabela impressa deve exibir data de conferência e exigir cotejo com o sistema PNI do território antes da prescrição.
@@ -48,6 +48,7 @@ O Programa Nacional de Imunizações atua na definição e atualização dos cal
 - **4 meses:** segundas doses de penta, VIP, rotavírus e pneumocócica conjugada — o portal atualmente exibe VPC10 na dose de 4 meses em regime de transição.
 - **5 meses:** segunda meningocócica C.
 - **6 meses:** terceira penta e VIP, além de outras vacinas sazonais/por indicação segundo calendário vigente (influenza/covid etc.).
+- **9 meses:** **primeira dose de febre amarela** no calendário de rotina; doses antecipadas em áreas/situações especiais não devem ser confundidas automaticamente com o esquema regular (ver seção 18.8).
 - **12 meses:** reforço pneumocócico conjugado, **meningocócica ACWY** e primeira tríplice viral.
 - **15 meses:** primeiro reforço DTP, reforço de **VIP** (não VOP de rotina), segunda tríplice viral, varicela e hepatite A, conforme calendário oficial.
 - **4 anos:** segundo reforço DTP e vacinas de rotina/atualização conforme página oficial, incluindo febre amarela/varicela quando indicadas.
