@@ -24,12 +24,12 @@
 | 52 | Traumatismo cranioencefálico | RASCUNHO_INICIADO | _rascunhos/lote-03/52-traumatismo-cranioencefalico.md |
 | 53 | Desidratação e terapia de reidratação | RASCUNHO_INICIADO | _rascunhos/lote-03/53-desidratacao-terapia-reidratacao.md |
 | 54 | Doença trofoblástica gestacional | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
-| 55 | Vigilância em Saúde | NAO_INICIADA | — |
-| 56 | Pneumonias adquiridas na comunidade | NAO_INICIADA | — |
-| 57 | Trauma torácico | NAO_INICIADA | — |
-| 58 | Diarreia aguda | NAO_INICIADA | — |
+| 55 | Vigilância em Saúde | RASCUNHO_INICIADO | _rascunhos/lote-03/55-vigilancia-em-saude.md |
+| 56 | Pneumonias adquiridas na comunidade | RASCUNHO_INICIADO | _rascunhos/lote-03/56-pneumonia-adquirida-comunidade.md |
+| 57 | Trauma torácico | RASCUNHO_INICIADO | _rascunhos/lote-03/57-trauma-toracico.md |
+| 58 | Diarreia aguda | RASCUNHO_INICIADO | _rascunhos/lote-03/58-diarreia-aguda.md |
 | 59 | Sangramento na segunda metade da gestação | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
-| 60 | Vigilância epidemiológica | NAO_INICIADA | — |
+| 60 | Vigilância epidemiológica | RASCUNHO_INICIADO | _rascunhos/lote-03/60-vigilancia-epidemiologica.md |
 
 ## Produção desta etapa (arquivos verificados em branch)
 - \`46-asma.md\`: 21.631 caracteres brutos. Benchmarking Drive: *Asma.pdf*, *Crise Asmática.pdf*; PCDT MS 2026 e GINA 2026.
@@ -45,9 +45,28 @@
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
 
-## Próximas ações
-1. Aulas 55–58 e 60, com documentação de fontes e priorização de lacunas, preservando distinções entre Vigilância em Saúde e Vigilância Epidemiológica.
-2. Completar estudo técnico e inserção de pelo menos quatro casos e seis questões aprofundadas por apostila, cuidando da originalidade.
-3. Nos temas 44/49/54/59, mapear âncoras e intersecções em \`hemorragias-primeiro-terceiro-trimestre/index.html\` antes de qualquer alteração.
-4. Produzir manifesto de imagens candidatas **com licença verificada**, sem inserir recursos clínicos não aprovados em HTML.
-5. Somente após superar os gates do \`lead.apostilas.txt\` e \`apostilas/PRODUCAO_EM_LOTE.md\`: integrar ao site, rodar validadores e verificar desktop/PWA. Sem deploy/merge automático.
+## Etapa registrada — cinco temas finais iniciados em 14/10/2026
+
+| Aula | Manuscrito conferido na branch | Caracteres brutos | Casos originais | Questões comentadas |
+|---:|---|---:|---:|---:|
+| 55 | `55-vigilancia-em-saude.md` | 21.036 | 4 | 6 |
+| 56 | `56-pneumonia-adquirida-comunidade.md` | 22.860 | 4 | 6 |
+| 57 | `57-trauma-toracico.md` | 20.668 | 4 | 6 |
+| 58 | `58-diarreia-aguda.md` | 22.879 | 4 | 6 |
+| 60 | `60-vigilancia-epidemiologica.md` | 24.666 | 4 | 6 |
+
+**Total acrescentado nesta etapa: 112.109 caracteres brutos**, não equivalentes a texto didático útil homologado. Os cinco arquivos foram relidos pelo GitHub e contagem de 4 casos / 6 questões foi confirmada em cada. Benchmarking Drive realizado: `Vigilância epidemiológica.pdf` (55 e 60), `Pneumonia Comunitária na Pediatria.pdf` (apenas comparativo adjacente para 56, NÃO referência médica de PAC adulta), `04 - TRAUMA - TRAUMA DE TORAX.pdf` e `05 - TRAUMA - TRAUMA DE TORAX II.pdf` (57), `01 - GASTRO - DIARREIA AGUDA + CLOSTRIDIUM.pdf` (58). Fontes oficiais/verificadas adicionais estão individualizadas no fim de cada manuscrito.
+
+**Status agregado do Lote 03:** 20/20 temas com alguma etapa editorial inicial; 0/20 apostilas homologadas. Quatro temas de GO (44, 49, 54, 59) são expansões interligadas ao HTML existente, ainda sem auditoria de corpo integral ou integração. Não confundir “tema iniciado” com “apostila concluída”.
+
+**Pontos que exigem homologação antes de publicar:** lista nacional de notificação compulsória com todas as portarias vigentes; datas/doses/antibióticos no SUS; diferenças de escopo e critérios entre SBPT 2018, ATS/IDSA 2019 e ATS 2025; critérios WSES-AAST 2025 para observação de lesões torácicas pequenas; protocolos brasileiros de diarreia; 10+ candidatos de imagens por tema útil com licença confirmada, arquivo WebP otimizado, revisão editorial detalhada, testes desktop/PWA e validação de caráter didático e extensão-alvo.
+
+## Próximas ações — revisão de profundidade, não criação superficial
+1. **Aula 41, Choque:** retomar capítulos etiológicos detalhados, hemodinâmica, doses e fontes brasileiras e dar prioridade à profundidade.
+2. **Aula 56, PAC:** validar posologia, alergias e resistência no Brasil; diferenciais radiográficos ilustrados e protocolo conforme gravidade.
+3. **Aula 57, Trauma Torácico:** conferir procedimentos por equipe especialista e curadoria de imagens clínicas.
+4. **Aulas 55/60:** conferir lista de notificação compulsória consolidada em outubro de 2026 e evitar duplicação; aprofundar investigação de campo.
+5. **GO 44/49/54/59:** mapear âncoras do livro já existente e integrar apenas após leitura integral e revisão de sobreposição.
+6. **TODAS:** atingir cobertura premium do `lead.apostilas.txt`, verificar 4+ casos e 6+ questões aprofundadas (contagem isolada não comprova qualidade), no mínimo aproximadamente 60 mil caracteres úteis se justificados, curadoria de 10+ candidatas de imagens quando necessárias, referências verificadas, teste de autossuficiência, testes HTML/PWA, revisão médica, sem publicar até aprovação.
+
+**Atenção:** nenhuma alteração em HTML publicado, sem merge e sem deploy nesta etapa.
