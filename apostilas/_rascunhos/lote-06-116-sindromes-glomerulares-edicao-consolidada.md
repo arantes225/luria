@@ -590,14 +590,14 @@ D) Toda hemoptise com hematúria é causada por infecção urinária.
 **Gabarito: C.** A doença pode causar dano irreversível renal e ameaçar a vida. **A:** atrasa intervenção. **B:** troca plasmática é componente clássico de tratamento em situações indicadas. **D:** não explica síndrome pulmão-rim. **Revisão:** distinguir anti-MBG isolado de sobreposição ANCA para planejar manutenção.
 
 ### Questão 11
-Uma paciente tem lúpus sistêmico, proteinúria progressiva e biópsia com classe IV ativa. Qual proposição é adequada?
+Um homem de 64 anos com diabetes apresenta febre persistente, novo sopro cardíaco, creatinina em elevação, hematúria glomerular e C3 reduzido. Antes de atribuir o quadro a vasculite autoimune, qual é a atitude mais adequada?
 
-A) Classes III/IV ativas geralmente exigem plano imunossupressor de indução, considerando efeitos adversos e fertilidade.  
-B) A classe histológica dispensa avaliar atividade e cronicidade.  
-C) Anti-dsDNA isolado define o medicamento e a dose.  
-D) Classe IV é sinônimo de esclerose irreversível e exclui tratamento.
+A) Administrar corticosteroide em altas doses imediatamente, sem investigar infecção.  
+B) Investigar endocardite infecciosa e glomerulonefrite associada à infecção, incluindo hemoculturas e ecocardiografia conforme avaliação clínica.  
+C) Considerar que complemento baixo exclui infecção bacteriana e confirma lúpus.  
+D) Encerrar a investigação renal porque a presença de diabetes explica qualquer proteinúria ou hematúria.
 
-**Gabarito: A.** A atividade proliferativa pode demandar glicocorticoide e agente imunossupressor. **B:** atividade/cronicidade alteram benefício. **C:** sorologia é complementar. **D:** doença ativa e cicatriz avançada são dimensões distintas. **Revisão:** integrar classe, atividade, TFG, proteinúria, sistema e reprodução.
+**Gabarito: B.** Endocardite pode produzir glomerulonefrite mediada por imunocomplexos, com hipocomplementemia e sedimento ativo. É essencial investigar e tratar infecção antes de imunossuprimir indiscriminadamente. **A:** corticoide sem avaliar infecção pode agravar o quadro. **C:** complemento reduzido ocorre também em GN relacionada a infecção; não é diagnóstico específico de lúpus. **D:** diabetes não exclui glomerulopatia concomitante. **Revisão:** síndrome nefrítica + febre + sopro impõe investigação infecciosa dirigida e avaliação renal urgente.
 
 ### Questão 12
 Criança que apresentou púrpura palpável e artralgia teve exame de urina inicial normal. Em revisão duas semanas depois, apresenta hematúria e proteinúria. A melhor interpretação é:
