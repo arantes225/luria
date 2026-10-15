@@ -194,7 +194,7 @@ A hipertensão gestacional ou pré-eclâmpsia pode persistir após parto; pode o
 
 **PA sistólica ≥160 mmHg e/ou diastólica ≥110 mmHg confirmada/persistente conforme protocolo** configura faixa grave que requer **manejo urgente** em contexto obstétrico. A velocidade de confirmação e início de terapia é definida pela equipe/protocolo, não aguardando consulta de rotina. Avaliar função renal, plaquetas, transaminases, proteinúria conforme indicação, sintomas neurológicos e status cardiopulmonar. **Eclâmpsia é urgência com anticonvulsivante apropriado, estabilização e investigação, não “pressão alta isolada”.** Doses e esquemas pertencem a protocolo obstétrico revisado.
 
-**Seguimento:** ACOG 736 recomenda PA em até 7–10 dias para hipertensas da gravidez e contato até 72 horas para hipertensão grave; rotina local pode antecipar conforme fatores de risco. A paciente deve saber usar e registrar medidas domiciliares quando possível, e ter canal claro para piora de sintomas. A avaliação pós-parto deve também reconhecer risco cardiovascular futuro e transição para seguimento clínico de longo prazo.
+**Seguimento:** ACOG 736 recomenda PA em até 7–10 dias para hipertensas da gravidez e contato até 72 horas para hipertensão grave; rotina local pode antecipar conforme fatores de risco. A paciente deve saber aferir e registrar medidas domiciliares quando possível, e ter canal claro para piora de sintomas. A avaliação pós-parto deve também reconhecer risco cardiovascular futuro e transição para seguimento clínico de longo prazo.
 
 ### 11.1. Cefaleia após raquianestesia/peridural
 
@@ -334,7 +334,7 @@ Maior atenção para anemia, ferida, risco trombótico, dor, funcionalidade e tr
 
 Puérpera após perda também passa por involução, alterações mamárias e riscos vasculares/infecciosos. O cuidado deve acolher luto, respeitar decisões sobre supressão ou manejo da lactação, oferecer suporte psicológico e evitar expressões minimizadoras. Contracepção e planejamento futuro devem ser conversados sem pressa e sem imposição.
 
-### 19.5. Recém-nascido prematuro/UTI neonatal
+### 19.5. Recém-nascido prematuro/UUTI neonatal
 
 Separação dificulta amamentação e potencializa ansiedade; planejar extração e armazenamento seguros, visita e apoio multiprofissional, sem prometer curso emocional uniforme. Revisar risco de depressão/trauma, renda, transporte e rotina de seguimento. A mãe continua sendo paciente independente mesmo quando bebê ocupa centro das atenções.
 
@@ -386,7 +386,7 @@ Ideação suicida com risco, mania/psicose ou incapacidade grave de proteção �
 11. **O rastreamento de depressão precisa de resposta assistencial real.** EPDS e PHQ-9 não são diagnóstico definitivo.
 12. **Psicose puerperal é emergência, não baby blues.**
 13. **Amamentar não bloqueia fertilidade universalmente:** MAL exige os três critérios simultâneos.
-14. **Estrogênio combinado é contraindicando antes de 21 dias pós-parto segundo CDC US MEC**, independentemente de amamentação.
+14. **Estrogênio combinado é contraindicado antes de 21 dias pós-parto segundo CDC US MEC**, independentemente de amamentação.
 15. **Após DMG, garantir TOTG 75 g entre 4–12 semanas** conforme diretrizes de diabetes adotadas.
 16. **A consulta puerperal de qualidade pergunta sobre alimentação, sono, dor, humor, violência e autonomia**, não apenas sangramento e ponto cirúrgico.
 
@@ -418,7 +418,7 @@ Ideação suicida com risco, mania/psicose ou incapacidade grave de proteção �
 
 ### Caso 7 — Dispneia em paciente após cesariana
 
-**Apresentação:** puérpera no oitavo dia, pós-cesárea, início súbito de falta de ar, dor torácica pleurítica, FC 122, SpO₂ 91% em ar ambiente, assimetria de panturrilhas. **Hipótese:** tromboembolismo pulmonar potencialmente grave, com outros diferenciais cardiopulmonares. **Raciocínio:** puerpério e cesariana aumentam risco trombótico; hipóxia e taquicardia tornam ansiedade isolada explicação inadequada. **Exames:** estabilização e investigação de TEP com imagem e exames pertinentes por protocolo, além de avaliação de função cardiovascular/renal. **Conduta:** urgência, monitorização, oxigênio/suporte quando indicado e anticoagulação/terapêutica conforme especialista e contra-indicações. **Por que importa:** dispneia pós-parto nunca é simples “cansaço normal” sem avaliação.
+**Apresentação:** puérpera no oitavo dia, pós-cesárea, início súbito de falta de ar, dor torácica pleurítica, FC 122, SpO₂ 91% em ar ambiente, assimetria de panturrilhas. **Hipótese:** tromboembolismo pulmonar potencialmente grave, com outros diferenciais cardiopulmonares. **Raciocínio:** puerpério e cesariana aumentam risco trombótico; hipóxia e taquicardia tornam ansiedade isolada explicação inadequada. **Exames:** estabilização e investigação de TEP com imagem e exames pertinentes por protocolo, além de avaliação de função cardiovascular/renal. **Conduta:** urgência, monitorização, oxigênio/suporte quando indicado e anticoagulação/terapêutica conforme especialista e contraindicações. **Por que importa:** dispneia pós-parto nunca é simples “cansaço normal” sem avaliação.
 
 ### Caso 8 — Alta tardia após diabetes gestacional
 
