@@ -1,9 +1,9 @@
 // LURIA — matriz editorial ENAMED / MedCof 2026.
-// Não remover notas durante revisão; confirmar cobertura de cada capítulo antes de marcar como concluído.
+// Sinalizar cada item e conferir conteúdo antes de completar. Não duplicar Diamantes.
 window.LURIA_APOSTILA_EDITORIAL_2026 = {
-  "version": "2026-10-15",
+  "version": "2026-10-15-401-traceability",
   "base": "Cronograma MedCof 2026: Alta, Média, Baixa e Diamante; matriz Inep ENAMED 7 áreas",
-  "instrucoes": "Planejamento editorial, não equivale a apostilas concluídas. Cada nota é item de auditoria: verificar conteúdo antes de acrescentar, manter conteúdo existente e não duplicar módulos Diamante complementares.",
+  "instrucoes": "Planejamento editorial, não equivale a apostilas concluídas. Cada nota é item de auditoria: verificar conteúdo antes de acrescentar, manter conteúdo existente e não duplicar módulos Diamante complementares. Cada módulo das 401 aulas do MedCof deve aparecer na lista de módulos do card ao qual foi vinculado. Vinculação no plano NÃO comprova capítulo já completo. Os 4 itens catalogados (#277–280) apontam para apostilas já publicadas, não são novas para produzir.",
   "areas": [
     "Clínica Médica",
     "Cirurgia Geral",
@@ -72,7 +72,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "31": {
       "priority": "ENAMED",
-      "instruction": "Diferenciar pericardite, derrame pericárdico e tamponamento com condutas na emergência.",
+      "instruction": "Diferenciar pericardite, derrame pericárdico e tamponamento com condutas na emergência.\nDor torácica não coronariana (Alta): ampliar raciocínio diferencial para pericardite, TEP, causas pleurais, dissecção, pneumotórax e causas musculoesqueléticas; integrar #36 e #1.",
       "status": "CONFERIR / COMPLETAR"
     },
     "33": {
@@ -157,7 +157,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "58": {
       "priority": "Diamante",
-      "instruction": "Diarreia aguda pediátrica: planos de reidratação, disenteria e sinais de desidratação.",
+      "instruction": "Diarreia aguda pediátrica: planos de reidratação, disenteria e sinais de desidratação.\nParasitoses intestinais pediátricas (Alta): agregar investigação etiológica e condutas específicas; não confundir com diarreia aguda inespecífica.",
       "status": "CONFERIR / COMPLETAR"
     },
     "59": {
@@ -169,6 +169,11 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "priority": "Diamante",
       "instruction": "Trauma abdominal: FAST, indicação de laparotomia, trauma penetrante e fechado (Diamante).",
       "status": "CONFERIR / COMPLETAR"
+    },
+    "63": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Alergia alimentar, refluxo e constipação (Diamante): confirmar seção específica de alergia alimentar com vínculo ao #203, sem esconder alergia sob DRGE."
     },
     "64": {
       "priority": "Alta/Diamante",
@@ -189,6 +194,11 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "priority": "Diamante",
       "instruction": "Parto: integrar assistência ao parto, partograma, vigilância intraparto e distocias; aproveitar apostila existente.",
       "status": "CONFERIR / COMPLETAR"
+    },
+    "71": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Bronquiectasias e hemoptise (Baixa): agregar abordagem diagnóstica, gravidade e conduta inicial; avaliar se capítulo pulmonar independente fica mais apropriado."
     },
     "72": {
       "priority": "Alta/Baixa",
@@ -212,7 +222,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "77": {
       "priority": "Alta/Diamante",
-      "instruction": "Abdome agudo: ampliar obstrutivo, perfurativo, vascular e hemorrágico, seguindo abordagem cirúrgica.",
+      "instruction": "Abdome agudo: ampliar obstrutivo, perfurativo, vascular e hemorrágico, seguindo abordagem cirúrgica.\nDoenças cirúrgicas do baço (Baixa) e síndrome compartimental intra-abdominal (Alta): garantir capítulos próprios dentro de abdome agudo, com condutas.",
       "status": "CONFERIR / COMPLETAR"
     },
     "79": {
@@ -267,7 +277,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "91": {
       "priority": "Baixa/Média",
-      "instruction": "Ampliar doenças adrenais: hiperaldosteronismo primário (Baixa), feocromocitoma (Média), Cushing (Média), insuficiência adrenal.",
+      "instruction": "Ampliar doenças adrenais: hiperaldosteronismo primário (Baixa), feocromocitoma (Média), Cushing (Média), insuficiência adrenal.\nConferir hiperaldosteronismo primário, feocromocitoma, síndrome de Cushing e demais doenças adrenais; manter diagnóstico laboratorial, interpretação e tratamento.",
       "status": "CONFERIR / COMPLETAR"
     },
     "94": {
@@ -387,7 +397,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "126": {
       "priority": "Diamante/Alta",
-      "instruction": "UNIFICAR Cirrose Hepática I (Diamante) + Cirrose Hepática II (Alta): etiologia, hipertensão portal, ascite, HDA varicosa, encefalopatia e PBE.",
+      "instruction": "UNIFICAR Cirrose Hepática I (Diamante) + Cirrose Hepática II (Alta): etiologia, hipertensão portal, ascite, HDA varicosa, encefalopatia e PBE.\nDoença hepática esteatótica metabólica, alterações de enzimas hepáticas e hepatite alcoólica (Diamante/Baixa): adicionar capítulos próprios, além de Cirrose I e II.",
       "status": "CONFERIR / COMPLETAR"
     },
     "127": {
@@ -427,12 +437,12 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "137": {
       "priority": "Alta/Média/Baixa",
-      "instruction": "Ampliar doenças do esôfago: DRGE, H. pylori se pertinente, disfagia, acalasia (Alta/Média/Baixa), câncer de esôfago (Alta).",
+      "instruction": "Ampliar doenças do esôfago: DRGE, H. pylori se pertinente, disfagia, acalasia (Alta/Média/Baixa), câncer de esôfago (Alta).\nDispepsia e DRGE (Alta), disfagia e acalasia (Alta), úlcera péptica, H. pylori e gastrite atrófica (Média), câncer de esôfago (Alta), esofagite eosinofílica (Baixa): organizar com #142, sem sobreposição.",
       "status": "CONFERIR / COMPLETAR"
     },
     "138": {
       "priority": "Alta/Média/Diamante",
-      "instruction": "Neurologia pediátrica: epilepsias (Alta), convulsão febril (Diamante), TCE pediátrico (Média), doenças neuromusculares da infância (Alta); organizar capítulos.",
+      "instruction": "Neurologia pediátrica: epilepsias (Alta), convulsão febril (Diamante), TCE pediátrico (Média), doenças neuromusculares da infância (Alta); organizar capítulos.\nMeningites pediátricas e encefalites (Diamante) devem remeter ao núcleo #133, que também receberá os capítulos de adulto. Separar de epilepsias, que ficam nesta apostila.",
       "status": "CONFERIR / COMPLETAR"
     },
     "139": {
@@ -472,7 +482,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "149": {
       "priority": "Alta/Diamante",
-      "instruction": "Úlceras genitais (Alta), corrimentos (Diamante), sífilis e IST: organizar por síndromes.",
+      "instruction": "Úlceras genitais (Alta), corrimentos (Diamante), sífilis e IST: organizar por síndromes.\nDoenças da vulva e vagina (Alta), corrimentos (Diamante), úlceras genitais (Alta) e DIP (Média): reutilizar apostila existente de Vulvovaginites e IST, acrescentando apenas capítulos faltantes.",
       "status": "CONFERIR / COMPLETAR"
     },
     "151": {
@@ -507,7 +517,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "158": {
       "priority": "Diamante",
-      "instruction": "Exantemáticas (Diamante), diferenciais e complicações.",
+      "instruction": "Exantemáticas (Diamante), diferenciais e complicações.\nExantemáticas (Diamante), incluindo diferenciais de sarampo, rubéola, varicela e dengue; cruzar com imunizações.",
       "status": "CONFERIR / COMPLETAR"
     },
     "159": {
@@ -597,7 +607,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "177": {
       "priority": "Diamante",
-      "instruction": "Complicações pós-operatórias, infecção, REMIT e pós-operatório (Diamante); preservar cuidados de segurança.",
+      "instruction": "Complicações pós-operatórias, infecção, REMIT e pós-operatório (Diamante); preservar cuidados de segurança.\nSíndrome compartimental intra-abdominal (Alta): incluir diagnóstico e escalonamento cirúrgico, articulado ao #77, sem confundir com compartimental de membros (#237).",
       "status": "CONFERIR / COMPLETAR"
     },
     "178": {
@@ -627,7 +637,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "185": {
       "priority": "Alta/Baixa",
-      "instruction": "Grandes síndromes geriátricas (Alta), iatrogenia e polifarmácia (Alta), quedas/imobilidade (Alta), delirium (Alta), avaliação ampla (Baixa): cobrir integralmente.",
+      "instruction": "Grandes síndromes geriátricas (Alta), iatrogenia e polifarmácia (Alta), quedas/imobilidade (Alta), delirium (Alta), avaliação ampla (Baixa): cobrir integralmente.\nDistúrbios do sono (Baixa): cobertura própria em clínica/geriatria, com apneia obstrutiva do sono, insônia, diagnóstico diferencial e critérios de encaminhamento.",
       "status": "CONFERIR / COMPLETAR"
     },
     "186": {
@@ -647,7 +657,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "189": {
       "priority": "Alta",
-      "instruction": "Dermatologia (Alta), dermatoses comuns, dermatite atópica, lesões neonatais, manejo na APS e situações de gravidade.",
+      "instruction": "Dermatologia (Alta), dermatoses comuns, dermatite atópica, lesões neonatais, manejo na APS e situações de gravidade.\nDermatologia clínica (Alta) e dermatologia na APS (Alta), dermatite atópica e lesões neonatais (Alta), infecções de partes moles (Diamante): cobertura transversal adulto/pediatria.",
       "status": "CONFERIR / COMPLETAR"
     },
     "190": {
@@ -672,7 +682,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "196": {
       "priority": "Alta/Média/Baixa",
-      "instruction": "Insuficiência venosa crônica (Alta), TVP (Média), compressões vasculares (Média), estenose carotídea (Baixa) e doença arterial periférica.",
+      "instruction": "Insuficiência venosa crônica (Alta), TVP (Média), compressões vasculares (Média), estenose carotídea (Baixa) e doença arterial periférica.\nTrombose venosa profunda (Média), insuficiência venosa crônica (Alta), síndromes compressivas (Média), trauma vascular (Média), estenose carotídea (Baixa): conferir todos os capítulos.",
       "status": "CONFERIR / COMPLETAR"
     },
     "197": {
@@ -700,6 +710,11 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "instruction": "TEA e TDAH (Alta), neurodesenvolvimento, diferenciais e manejo.",
       "status": "CONFERIR / COMPLETAR"
     },
+    "203": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Alergia alimentar e anafilaxia pediátrica (Diamante); manter investigação e conduta por grupos etários, articulando #63."
+    },
     "204": {
       "priority": "Alta/Diamante",
       "instruction": "Artrite idiopática juvenil (Alta), Kawasaki (Diamante), vasculite por IgA e febre reumática (Diamante).",
@@ -712,7 +727,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "206": {
       "priority": "Média",
-      "instruction": "Malformações müllerianas (Média), miomas, pólipos e alterações uterinas; malformações devem ter núcleo principal em #129, sem apostila nova.",
+      "instruction": "Malformações müllerianas (Média), miomas, pólipos e alterações uterinas; malformações devem ter núcleo principal em #129, sem apostila nova.\nConferir anatomia pélvica feminina (Diamante), cirurgia ginecológica e suas complicações (Média). Malformações müllerianas têm núcleo principal na #129; evitar repetição integral.",
       "status": "CONFERIR / COMPLETAR"
     },
     "207": {
@@ -787,7 +802,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "223": {
       "priority": "Alta/Diamante",
-      "instruction": "Consentimento, ética em pesquisa (Alta), ética médica (Diamante) e situações de crianças/adolescentes.",
+      "instruction": "Consentimento, ética em pesquisa (Alta), ética médica (Diamante) e situações de crianças/adolescentes.\nÉtica em pediatria (Diamante I/II), consentimento por faixas etárias, sigilo, decisão compartilhada e pesquisa clínica (Alta).",
       "status": "CONFERIR / COMPLETAR"
     },
     "224": {
@@ -830,6 +845,11 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "instruction": "Emergências oncológicas e cuidados paliativos (Alta); não substituir os temas próprios de neoplasias cirúrgicas.",
       "status": "CONFERIR / COMPLETAR"
     },
+    "234": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Doenças negligenciadas (Alta), icterícias febris/febre maculosa (Alta) e Doença de Chagas; articular com hanseníase #235 e arboviroses #186."
+    },
     "235": {
       "priority": "Diamante",
       "instruction": "Hanseníase e tuberculose na APS (Diamante): prevenção, diagnóstico, tratamento, vigilância.",
@@ -852,7 +872,7 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
     },
     "241": {
       "priority": "Alta",
-      "instruction": "Malformações do SNC (Alta), outras malformações e genética (Alta), sinais de alarme.",
+      "instruction": "Malformações do SNC (Alta), outras malformações e genética (Alta), sinais de alarme.\nMalformações do SNC, genética pediátrica e diferenças do desenvolvimento sexual (Baixa): garantir classificação, avaliação e encaminhamento responsável.",
       "status": "CONFERIR / COMPLETAR"
     },
     "244": {
@@ -894,6 +914,31 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "priority": "Média",
       "instruction": "Biossegurança, infecções nosocomiais (Média) e medidas de prevenção no cuidado.",
       "status": "CONFERIR / COMPLETAR"
+    },
+    "264": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Além das neoplasias hepatobiliares, incluir NÓDULOS HEPÁTICOS BENIGNOS (Alta), 'fígado para perdidos' (Diamante) e abscesso hepático (Baixa). Não restringir todo conteúdo à oncologia."
+    },
+    "265": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Oncologia torácica: câncer de pulmão (Alta), nódulo pulmonar (Média), mediastino (Média); hemoptise/brônquios quando pertinente, com capítulo clínico #71."
+    },
+    "270": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Cardiopatias na gravidez (Alta), outras intercorrências (Média), trombofilias na gestação e puerpério (Baixa): organizar por agravo; preservar manejo materno-fetal."
+    },
+    "274": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Ortopedia (Alta), ortopedia pediátrica (Diamante), osteomielite e artrite séptica (Alta), trauma ortopédico; manter avaliação neurovascular."
+    },
+    "276": {
+      "priority": "Alta/Média/Baixa/Diamante",
+      "status": "CONFERIR / COMPLETAR",
+      "instruction": "Diarreias agudas e colite pseudomembranosa (Baixa no MedCof): manter como tema essencial com C. difficile, exames, gravidade, tratamento, recorrência e diferencial com diarreia crônica #146."
     }
   },
   "novas": [
@@ -1024,6 +1069,44 @@ window.LURIA_APOSTILA_EDITORIAL_2026 = {
       "priority": "Baixa/essencial",
       "instruction": "Gastroenterites, desidratação, disenteria, sinais de alarme, testes, tratamento e recorrência de C. difficile",
       "lot": 13
+    }
+  ],
+  "catalogados": [
+    {
+      "number": 277,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Infertilidade conjugal e reprodução assistida",
+      "lot": 11,
+      "content_url": "/apostilas/infertilidade-conjugal/",
+      "priority": "Alta",
+      "instruction": "Apostila JÁ PUBLICADA. Conferir aulas Infertilidade (Alta) e Técnicas de Reprodução Assistida (Alta), com investigação do casal, FIV, ICSI e complicações. Não criar outra página."
+    },
+    {
+      "number": 278,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Ciclo menstrual e eixo hipotálamo–hipófise–ovário",
+      "lot": 12,
+      "content_url": "/apostilas/ciclo-menstrual-eixo-hho/",
+      "priority": "Alta",
+      "instruction": "Apostila JÁ PUBLICADA. Conferir Fisiologia Menstrual (Alta) e Esteroidogênese (Alta), capítulos hormonal/foliculogênese; não duplicar em amenorreia."
+    },
+    {
+      "number": 279,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Crescimento fetal reduzido e aumentado",
+      "lot": 13,
+      "content_url": "/apostilas/crescimento-intrauterino-reduzido-aumentado/",
+      "priority": "Alta",
+      "instruction": "Apostila JÁ PUBLICADA. Conferir Restrição do Crescimento Intrauterino (Alta), critérios Doppler e manejo. Articular avaliação de vitalidade fetal, sem duplicação."
+    },
+    {
+      "number": 280,
+      "area": "Ginecologia e Obstetrícia",
+      "title": "Alterações fisiológicas da gestação",
+      "lot": 13,
+      "content_url": "/apostilas/alteracoes-fisiologicas-da-gestacao/",
+      "priority": "Alta",
+      "instruction": "Apostila JÁ PUBLICADA. Conferir Modificações do Organismo Materno (Alta), por sistema e trimestre, e correlação com sinais de risco. Não criar conteúdo repetido."
     }
   ]
 };
