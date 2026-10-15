@@ -101,3 +101,12 @@ test('only source-tied formulations are released; no unrelated dosage is copied'
     formulations:[one]
   }).length,1);
 });
+
+test('does not confuse clinically distinct active substances by substring',()=>{
+  const esketamine={name:'cloridrato de escetamina',active_ingredient:'cloridrato de escetamina',data:{commercial_names:['Spravato']}};
+  assert.equal(searchScore(esketamine,'cetamina'),Infinity);
+  assert.equal(searchScore(esketamine,'escetamina'),2);
+  assert.ok(Number.isFinite(searchScore(esketamine,'spravato')));
+  const hydromorphone={name:'hidromorfona',active_ingredient:'hidromorfona',data:{}};
+  assert.equal(searchScore(hydromorphone,'morfina'),Infinity);
+});
