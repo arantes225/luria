@@ -563,6 +563,29 @@ Adolescente de 14 anos com quadro subagudo de meningite, imagem sugestiva de aco
 **Por que importa:** ensina simultaneamente a atualização recente do SUS e seus limites de segurança.
 
 
+### Caso 9 — Linfonodo cervical de evolução lenta
+
+Menina de cinco anos tem aumento progressivo de linfonodo cervical unilateral, indolor, há cinco semanas. Está afebril, com boa curva ponderal e sem exposição conhecida à TB. A família recebeu orientação informal de iniciar tratamento para tuberculose porque o linfonodo persiste.
+
+**Hipóteses:** tuberculose ganglionar, micobactéria não tuberculosa, adenite bacteriana subaguda, doença da arranhadura do gato e, diante de sinais específicos, neoplasias hematológicas.
+
+**Investigação:** pesquisar sinais sistêmicos, outras cadeias linfonodais, exposição e antecedentes imunológicos. O ultrassom pode ajudar a caracterizar arquitetura, necrose ou coleção, sem identificar micobactéria. Amostragem do linfonodo com histologia e microbiologia deve ser discutida quando apropriada. Um granuloma não identifica sozinho a espécie etiológica; radiografia torácica normal não afasta necessariamente TB ganglionar.
+
+**Conduta:** evitar tratamento prolongado presumido sem integração das evidências quando é seguro investigar. Encaminhar precocemente se houver progressão, sintomas sistêmicos, características suspeitas ou falha diagnóstica. **Por que importa:** evita a armadilha de considerar toda adenopatia persistente como TB pulmonar ou ganglionar.
+
+### Caso 10 — Adolescente e derrame pleural complicado
+
+Rapaz de 13 anos procura atendimento por febre, dor pleurítica, dispneia e derrame unilateral. Ultrassonografia sugere derrame septado, e há piora do estado geral. A família relata contato prévio com pessoa tratada para TB.
+
+**Hipóteses:** empiema/parapneumônico complicado, pleurite tuberculosa e outras causas menos frequentes. O contato com TB aumenta a suspeita, mas não transforma automaticamente o líquido pleural em derrame tuberculoso.
+
+**Exames:** imagem dirigida, avaliação de oxigenação e coleta pleural se indicada, para investigação bioquímica, celular e microbiológica. A gravidade clínica prevalece sobre espera por confirmação etiológica.
+
+**Conduta:** estabilizar, avaliar necessidade de drenagem e encaminhamento hospitalar. O derrame **não complicado** pode fazer parte dos critérios de TB não grave; um derrame septado com repercussão não deve ser automaticamente incluído no mesmo grupo para abreviar tratamento.
+
+**Por que importa:** ensina a classificar gravidade pleural, não apenas identificar a localização anatômica.
+
+
 ## 23. Questões autorais com comentário de cada alternativa
 
 ### Questão 1 — Resultado molecular negativo
