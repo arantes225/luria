@@ -439,6 +439,16 @@ Reavaliar dose conforme ganho de peso; perguntar como comprimidos dispersíveis 
 Em TB meníngea/osteoarticular, acompanhar sequelas neurológicas, audiovisuais, crescimento, função locomotora e necessidades de reabilitação; em TB pulmonar avaliar recuperação funcional e crescimento. Registro de término, desfecho e vigilância de contatos seguem definições do programa nacional, não critérios inventados a partir de resolução radiológica completa.
 
 
+### 19.1. Acompanhamento apoiado: tratamento diretamente observado (TDO)
+
+O Ministério da Saúde descreve o **tratamento diretamente observado** como estratégia central de apoio, supervisão e vínculo, e não como mecanismo de punição. Deve-se combinar local, modalidade, frequência e horários com a pessoa e a família, valorizando a realidade da criança, seus cuidadores e os serviços da Atenção Primária.
+
+A página oficial de tratamento, atualizada em março de 2026, contempla também modalidades digitais de observação ou confirmação do uso dos medicamentos conforme a Nota Informativa nº 20/2023: vídeo, imagem, chamada de voz e mensagem de texto nas condições do programa. O uso da tecnologia deve respeitar privacidade, capacidade familiar, acesso à internet e equipe habilitada.
+
+Em cada visita, perguntar **quantas doses foram efetivamente tomadas**, se houve dificuldades de administração, mudanças de peso, sintomas de eventos adversos, obtenção regular dos medicamentos e circunstâncias de interrupção. A melhora precoce dos sintomas **não** autoriza abandono. Quando a criança passa a ganhar peso, a dose por faixa ponderal precisa ser reavaliada.
+
+**Fonte:** Ministério da Saúde, *Tratamento*, atualização de 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento .
+
 ## 20. Tuberculose resistente em crianças e adolescentes: atualização brasileira de outubro de 2026
 
 Resistência pode ser **transmitida diretamente** a partir de fonte com cepa resistente ou selecionada durante exposição inadequada aos fármacos. A história do **caso fonte**, sua cultura e testes de sensibilidade são parte essencial da avaliação da criança, principalmente quando a amostra pediátrica é paucibacilar e difícil de confirmar. Suspeitar de resistência diante de TRM-TB que aponte resistência à rifampicina, contato com TB DR documentada, falha após confirmar adesão/absorção e episódios prévios de tratamento irregular.
@@ -847,4 +857,4 @@ As obras de benchmarking foram lidas apenas como comparação de temas; não con
 - Curadoria de pelo menos dez imagens candidatas com **fonte e licença verificadas**, aprovação no Admin, integração e inspeção visual.
 - Revisão independente pediátrica/infectológica, testes do build, acessibilidade e responsividade. **Não fazer merge/deploy** antes da aprovação.
 
-**Checkpoint:** tema 103 iniciado em rascunho original. Próxima iteração: aprofundar dados diagnósticos oficiais, cálculo posológico, comparativo de ILTB, complicações e autonomia; jamais substituir automaticamente textos preexistentes.
+**Checkpoint 15/10/2026 — continuação:** revisão de amostras diagnósticas, apresentação ganglionar/pleural, meningite e seguimento; retirada da tabela de doses individualizadas ≥25 kg ainda não validada; inclusão de casos 9–10, questões 13–15 e modalidade de TDO. **Persistem pendências impeditivas de publicação:** reconciliação farmacológica para ≥25 kg, parecer pediátrico/infectológico independente, revisão integral OMS 2026, imagens com licença e aprovação pelo Admin, integração e QA em desktop/PWA. Nenhum deploy autorizado.
