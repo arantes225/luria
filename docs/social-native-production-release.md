@@ -31,3 +31,13 @@ Capturas reais: browser-results/native-activities e browser-results/group-commun
 - Configuração Plus e concessão de 7 dias à conta luriamed ocorreram somente na homologação, com aprovação explícita. Nenhum plano de produção foi alterado.
 
 Git push local falhou no gerenciador de credenciais do Windows. Publicação realizada pela integração GitHub, com comparação integral de tree e atualização sem force mediante SHA esperado. O primeiro pacote excedeu o orçamento da revisão automática e não executou; divisão por arquivos resolveu o limite, sem desativar a revisão.
+
+## Conferência final
+
+- Acabamento publicado: bc7dcccc9affe693b15a5a838730f6568757fc82.
+- CI final: https://github.com/arantes225/luria/actions/runs/38685365118 — concluído com sucesso.
+- Homologação final: d46013bc-49f2-4f46-9eb6-74018c7b9ff4.
+- Versão pública do service worker conferida por HTTP 200: luria-pwa-native-activities-20261015-finish1.
+- No domínio original foram conferidos Amigos, comunidade do grupo e, após autorização específica de entrada, painéis da sala, formulário de questões completas, editor original de flashcards e catálogo clínico. Nenhum conteúdo foi salvo nem atividade/voz iniciada em produção. Saída da sala realizada após a conferência.
+- Editor incorporado em produção: contexto correto, nenhum mascote duplicado e nenhum overflow; console sem erros na verificação. Capturas reais production-*.png em browser-results/native-activities. Desktop 1280 e mobile 390 medidos.
+- A entrada na sala de produção foi inicialmente bloqueada pela revisão automática por registrar participação/presença; só foi realizada após autorização específica do usuário.
