@@ -38,8 +38,8 @@ A diretriz IDSA 2025 apoia, em pacientes selecionados com ITU complicada/pielone
 - [ ] Tratamentos completos por síndrome e população: escolhas, doses, intervalos, ajuste renal, contraindicações, gestação e resultados de culturas.
 - [x] Populações especiais (gestantes, crianças, homens, idosos, sondagem vesical, transplante e recorrência) abordadas; revisar tratamento individualmente.
 - [x] Tabelas diagnósticas, prevenção, acompanhamento e algoritmos de UBS, pronto atendimento e hospital incluídos; testar aplicação clínica.
-- [x] Seis casos clínicos comentados completos incluídos; revisão clínica editorial ainda pendente.
-- [x] Oito questões autorais comentadas com justificativa de todas as alternativas.
+- [x] Dez casos clínicos comentados presentes (seis originais + quatro incorporados em 15/10/2026); revisão clínica editorial ainda pendente.
+- [x] Quatorze questões autorais comentadas (oito originais + seis incorporadas em 15/10/2026), com justificativas; ainda pendem revisão médica e teste externo.
 - [ ] Comparativo PARCIAL de dois PDFs do Drive concluído, sem material integralmente equivalente; falta registro de comparação com a LURIA padronizada.
 - [ ] Fontes brasileiras prioritárias identificadas (FEBRASGO, SBP e MS); revisão médica formal e licença/imagens permanecem pendentes.
 - [ ] Arquivo já excede 60 mil caracteres totais, mas ainda falta aferir 60 mil caracteres *didáticos úteis*, auditar redundância e revisão técnica/editorial.
@@ -533,7 +533,7 @@ Episódios de pielonefrite podem estar associados a cicatrizes renais em crianç
 4. Monitorar perfusão, diurese, função renal e resposta.
 5. Após recuperação infecciosa, programar tratamento definitivo do cálculo e avaliação de prevenção metabólica quando indicado.
 
-## 23. Casos clínicos comentados — seis cenários que o texto deve permitir resolver
+## 23. Casos clínicos comentados — dez cenários para raciocínio e tomada de decisão
 
 ### Caso 1 — cistite aguda esporádica versus vulvovaginite
 **Apresentação:** mulher de 27 anos, não gestante, há 24 horas com disúria e urgência urinária, sem febre, dor lombar, corrimento vaginal ou prurido. Sinais vitais normais e exame sem dor costovertebral. Não tem doença renal conhecida e nunca apresentou ITU.
@@ -608,7 +608,7 @@ Mulher de 36 anos, não gestante, com pielonefrite confirmada, recebeu antimicro
 
 **Hipótese:** pielonefrite respondendo a tratamento, sem comprovação de segurança da transição para VO. **Raciocínio:** IDSA 2025 pede melhora, opção com exposição apropriada, capacidade de ingerir/absorver e fonte controlada, quando aplicável. O antibiograma favorável não resolve vômitos nem questões de biodisponibilidade. **Conduta:** manter via parenteral/observação até reavaliar capacidade oral e quadro clínico; procurar obstrução ou complicação se deteriorar. **Por que importa:** “existe antibiótico oral sensível” não é sinônimo de “alta obrigatória”.
 
-## 24. Questões autorais estilo residência — oito itens com comentário de cada alternativa
+## 24. Questões autorais estilo residência — quatorze itens comentados
 
 ### Questão 1 — localização anatômica e escolha do medicamento
 Mulher de 31 anos tem febre, calafrios, dor lombar e vômitos. EAS revela piúria e nitrito positivo. Qual tratamento isolado seria **inadequado** por não atingir exposição renal suficiente?
