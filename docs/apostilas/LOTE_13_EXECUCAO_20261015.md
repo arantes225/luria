@@ -8,11 +8,11 @@ O lote contém **19 entradas**: 11 temas originais #250–#260, seis propostas n
 
 ## Evidências desta execução
 
-- Criados **três manuscritos iniciais**: #260, #274 e #276. Cada um possui 4 casos clínicos comentados, 6 questões originais comentadas, quadros, fluxos e referências para a próxima revisão.
-- Foram lidos e comparados materiais reais do Drive: *Infecção de corrente sanguínea* (benchmark PARCIAL para #260), *Ortopedia Pediátrica* (#274) e *Diarreia Aguda + Clostridium* (#276). A autoria institucional desses PDFs não foi confirmada; seus textos e imagens não foram reutilizados. Leitura interna de #279 e #280 para padrão visual.
+- Criados **quatro manuscritos iniciais**: #260, #271, #274 e #276. Cada um possui 4 casos clínicos comentados, 6 questões originais comentadas, quadros, fluxos e referências para a próxima revisão.
+- Foram lidos e comparados materiais reais do Drive: *Infecção de corrente sanguínea* (benchmark PARCIAL para #260), *Ortopedia Pediátrica* (#274) e *Diarreia Aguda + Clostridium* (#276), além de *Crescimento e Baixa Estatura* e *Genética* como benchmarks parciais da #271. A autoria institucional desses PDFs não foi confirmada; seus textos e imagens não foram reutilizados. Leitura interna de #279 e #280 para padrão visual.
 - Doses e medidas para CDI foram alinhadas com IDSA/SHEA 2021; a prevenção de IRAS inclui diretrizes ANVISA 2026. Risco de revisão sempre permanece antes da liberação médica final.
-- Todos os textos criados são **rascunhos de profundidade inicial, não aprovados**: contagens **brutas**, com Markdown, exemplos e referências, de ~34,3 mil caracteres (#260), ~29,2 mil (#274) e ~33,8 mil (#276). Nenhuma destas quantidades comprova ≥60 mil caracteres úteis.
-- O JSON `lotes-11-13-controle-revisao.json` foi atualizado somente para os itens #260/#274/#276 como **EM_REDACAO_PARCIAL**; os outros 16 permaneceram com estado original.
+- Todos os textos criados são **rascunhos de profundidade inicial, não aprovados**: contagens **brutas**, com Markdown, exemplos e referências, de ~34,3 mil caracteres (#260), ~29,2 mil (#274) e ~33,8 mil (#276) e ~29,1 mil (#271). Nenhuma destas quantidades comprova ≥60 mil caracteres úteis.
+- O JSON `lotes-11-13-controle-revisao.json` foi atualizado somente para os itens #260/#274/#276 como **EM_REDACAO_PARCIAL**; os outros 15 permaneceram com estado original.
 
 ## Checklist por entrada — não confundir mapa curricular com conclusão
 
@@ -83,10 +83,10 @@ O lote contém **19 entradas**: 11 temas originais #250–#260, seis propostas n
 - **Ação:** Concluir e revisar `apostilas/_rascunhos/lote-13-260-biosseguranca-iras.md`; não certificar extensão/qualidade ainda.
 
 ### #271 — Endocrinologia pediátrica
-- **Área:** Pediatria. **Natureza:** nova_apostila_proposta. **Estado:** **PRODUÇÃO/REVISÃO NÃO VALIDADA**.
+- **Área:** Pediatria. **Natureza:** nova_apostila_proposta. **Estado:** **RASCUNHO PARCIAL**.
 - **Conteúdo obrigatório / lacunas a testar:** HAC/perda salina e crises adrenal; hipotireoidismo congênito e adquirido; baixa estatura, velocidade de crescimento, TSH/T4, testes de triagem, puberdade precoce/atrasada e decisão de encaminhar.
 - **Associações MedCof:** Hiperplasia Adrenal Congênita (HAC) [Alta; principal; PDF p.19]; Hipotireoidismo [Média; principal; PDF p.20]
-- **Ação:** Pesquisar/ler comparação da matéria no Drive, inspecionar conteúdo real em Supabase/HTML e só então revisar ou criar no padrão 60K.
+- **Ação:** Concluir e revisar `apostilas/_rascunhos/lote-13-271-endocrinologia-pediatrica.md`; benchmark específico HAC/tireoide não localizado, NÃO certificar extensão/qualidade.
 
 ### #272 — Fibrose cística
 - **Área:** Pediatria. **Natureza:** nova_apostila_proposta. **Estado:** **PRODUÇÃO/REVISÃO NÃO VALIDADA**.
@@ -148,4 +148,4 @@ O lote contém **19 entradas**: 11 temas originais #250–#260, seis propostas n
 
 ## Próxima ação priorizada
 
-Aprofundar os rascunhos #260/#274/#276 até o padrão e, em paralelo, obter benchmarking comparável e iniciar os demais temas novos **#271, #272, #273, #275**, sem deixar Saúde Mental, MFC e Saúde Coletiva #250–#259 para trás. Auditar **#279/#280 em lugar de recriá-las**. O status de todos está registrado no JSON de controle, que é a fonte de acompanhamento.
+Aprofundar os rascunhos #260/#271/#274/#276 até o padrão e, em paralelo, obter benchmarking comparável e iniciar os demais temas novos **#272, #273, #275**, sem deixar Saúde Mental, MFC e Saúde Coletiva #250–#259 para trás. Auditar **#279/#280 em lugar de recriá-las**. O status de todos está registrado no JSON de controle, que é a fonte de acompanhamento.
