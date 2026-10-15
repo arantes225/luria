@@ -1,6 +1,6 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 14,
+  "version": 15,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
   "status": "RASCUNHO EM AUDITORIA CIENTÍFICA; sem aprovação para publicação",
@@ -22,10 +22,10 @@
       "source_path": "apostilas/lotes/LOTE_02_ASMA_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_ASMA_EDICAO_CONTINUA.md",
       "source_sha": "b6266e7c0d6a8b4bd21a152c9ec61bad6a36c010",
-      "consolidated_sha": "2bfdd798bf2da3369ce8e9aca51d602870fd0c9e",
+      "consolidated_sha": "80f514f3967219cd2ba97944ee489c6a3ccc1f0f",
       "source_raw_characters": 74961,
-      "consolidated_raw_characters": 139599,
-      "consolidated_approximate_plain_characters": 134362,
+      "consolidated_raw_characters": 157275,
+      "consolidated_approximate_plain_characters": null,
       "chapter_count": 10,
       "chapters": [
         {
@@ -69,13 +69,16 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 20,
-      "question_count": 25,
+      "case_count": 22,
+      "question_count": 27,
       "source_numbered_chapter_count": 27,
-      "preflight_warnings": [],
+      "preflight_warnings": [
+        "Diferenças entre recomendação internacional GINA 2026, registro Anvisa e elegibilidade/inclusão no PCDT brasileiro exigem revisão antes da publicação.",
+        "Revisar prescrição exata de biológicos e segurança de corticoide sistêmico com especialista."
+      ],
       "next_gate": "revisão científica/farmacêutica humana; checar formulação pediátrica e SUS; imagens licenciadas; dry-run Node real; teste leitor/PWA antes de merge",
-      "json_visible_estimate": 134362,
-      "json_table_count": 16
+      "json_visible_estimate": null,
+      "json_table_count": 18
     },
     {
       "id": "DPOC",
@@ -328,11 +331,11 @@
   ],
   "last_expansion": "2026-10-15",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "d39ca844a20d56f306634e91ce0db2857c12f9c9",
+  "input_json_sha": "65db0bdfeff7c2fc1174406559cbd75e8536698f",
   "last_update_scope": [
-    "Diabetes: novas seções 3.2–3.5 com LADA/DM1 em adulto, autoanticorpos e peptídeo C, principais MODY e diabetes secundários",
-    "Dois casos e duas questões autorais de classificação; comparativo do Drive aberto e confrontado com SBD Classificação 2026 e ADA 2026; cinco livros preservados",
-    "Sem imagens, indexação, certificação, merge ou deploy"
+    "Asma: seções 7.2–7.5, diferenciação entre asma difícil de tratar e asma grave, biomarcadores, opções incluindo anti-TSLP internacional e critérios de acesso SUS",
+    "Casos 21–22 e Questões 26–27 autorais sincronizados no manuscrito e JSON, fontes GINA Severe Asthma 2026 e PCDT nacional",
+    "Cinco livros mantidos em pré-publicação; conteúdo ainda não certificado, imagens não adicionadas, sem merge/deploy"
   ],
   "last_revision": "2026-10-15"
 }
