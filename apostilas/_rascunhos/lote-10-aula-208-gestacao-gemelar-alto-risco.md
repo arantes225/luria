@@ -240,3 +240,223 @@ Antes do parto, confirmar identificação do feto 1/feto 2, monitorização dos 
 | Planejar parto e assistência neonatal | 9–10 | Critérios individualizados, via e emergências. |
 
 **Advertência editorial:** esta é a primeira etapa da aula 208. Não afirmar que alcançou 60 mil caracteres úteis, nem que possui as quatro histórias clínicas/seis questões mínimas, nem que foram aprovadas imagens. Aulas 204–207 seguem separadas nesta branch e nenhuma apostila publicada foi substituída.
+
+
+## 13. Casos clínicos originais com decisões justificadas
+
+### Caso 1 — Uma placenta aparente e membrana em T
+
+**Apresentação:** gestante de 29 anos, 12 semanas e dois dias, ultrassom documenta dois fetos com atividade cardíaca, uma massa placentária posterior e membrana intergemelar delgada que forma sinal **T** na inserção. Os fetos parecem do mesmo sexo. Não há outras alterações.
+
+**Hipótese:** gestação gemelar monocoriônica-diamniótica (MCDA), a confirmar/documentar pelo exame do primeiro trimestre.
+
+**Raciocínio:** (1) duas bolsas com membrana e inserção em T apoiam um córion compartilhado; (2) uma massa placentária isolada não bastaria para o diagnóstico; (3) mesmo sexo não define corionicidade; (4) o risco principal é a circulação placentária comunicante, não apenas maior chance de prematuridade; (5) o calendário deve contemplar rastreio de TTTS/TAPS e crescimento a partir de 16 semanas.
+
+**Exames/conduta:** guardar imagem da inserção, registrar corionicidade, amnionicidade, datação, local dos fetos e exame morfológico. Planejar ultrassom **no mínimo a cada duas semanas a partir de 16 semanas**, incluindo líquido de cada bolsa e bexiga de cada feto, com Dopplers conforme protocolo. Aconselhar sinais de alarme maternos.
+
+**Por que importa:** a prova frequentemente esconde a decisão mais importante atrás de uma imagem de membrana; reconhecer corionicidade cedo evita vigilância inadequada.
+
+### Caso 2 — O feto que ficou sem bexiga visível
+
+**Apresentação:** MCDA de 21 semanas em seguimento. US identifica DVP de 1,4 cm em um saco e de 11 cm no outro. Após observação adequada, a bexiga do feto na bolsa com oligodrâmnio não é visualizada; não se identificam Dopplers criticamente alterados nem hidropisia. Mãe refere distensão abdominal progressiva.
+
+**Hipótese:** síndrome de transfusão feto-fetal **Quintero II**, com doador em oligodrâmnio e receptor em polidrâmnio.
+
+**Raciocínio:** (1) a placenta compartilhada permite anastomoses; (2) sequência oligo/poli satisfaz padrão de TTTS, e não simples discordância de peso; (3) ausência de visualização da bexiga do doador eleva estágio para **II**; (4) falta de Doppler crítico afasta no momento critérios de estágio III; (5) entre 16–26 semanas, laser fetoscópico é tratamento padrão para estágio II–IV segundo SMFM.
+
+**Exames:** avaliação completa de anatomia, biometria, Dopplers de artéria umbilical, ducto venoso e ACM, função cardíaca e comprimento cervical conforme centro; revisar grau de distensão e sintomas maternos.
+
+**Conduta:** **encaminhamento rápido a centro de terapia fetal** para avaliação e discussão de coagulação fetoscópica a laser, sem esperar progressão a hidropisia. Não limitar tratamento a acompanhamento mensal ou amniorredução repetida como solução vascular definitiva.
+
+**Por que importa:** a presença ou ausência de bexiga do doador muda estágio e momento de avaliação intervencionista.
+
+### Caso 3 — Anemia/policitemia com líquidos normais
+
+**Apresentação:** MCDA com 25 semanas, sem polidrâmnio ou oligodrâmnio importantes, mas Doppler ACM mostra PSV de **1,65 MoM** em um feto e **0,78 MoM** no outro, em medidas técnicas adequadas. Há diferença intergemelar importante.
+
+**Hipótese:** sequência anemia–policitemia (TAPS), doador provavelmente anêmico e receptor com policitemia.
+
+**Raciocínio:** (1) normalidade dos líquidos torna TTTS clássica menos provável; (2) o feto com alta PSV da ACM é compatível com anemia e o de baixa PSV, policitemia; (3) o par >1,5 e <1,0 MoM atende ao critério mínimo de triagem de SMFM; (4) é necessário determinar estágio/severidade e coexistência de outras complicações; (5) eventual intervenção depende de idade gestacional e centro.
+
+**Exames:** repetir Doppler da ACM por especialista, confirmar identificação fetal, avaliar sinais de sobrecarga e anatomia, crescimento e outros Dopplers.
+
+**Conduta:** discussão com medicina fetal e definição de vigilância intensiva versus terapia específica. Não assumir que líquido normal afasta toda síndrome vascular da placenta monocoriônica.
+
+**Por que importa:** diferencia TAPS de TTTS usando mecanismo e Doppler, não apenas memorização de siglas.
+
+### Caso 4 — Discordância de peso não é diagnóstico automático
+
+**Apresentação:** DCDA de 29 semanas, fetos com PFE de 1550 g e 1160 g. O feto menor está no percentil 7 em curva apropriada; artéria umbilical preserva fluxo diastólico, pressão materna normal, líquido sem alterações importantes.
+
+**Hipótese:** provável restrição de crescimento de um dos fetos, com discordância de peso significativa, a investigar e seguir conforme corionicidade.
+
+**Raciocínio:** (1) discordância = (1550−1160)/1550×100 = **25,2%**; (2) percentil <10 e discordância pedem avaliação intensificada; (3) ausência de artéria umbilical crítica não permite alta sem seguimento; (4) DCDA tem duas circulações placentárias, não o mesmo mecanismo vascular de TTTS; (5) não antecipar parto apenas pela porcentagem sem avaliar dinâmica e condições maternas/fetais.
+
+**Exames:** repetir biometria em intervalo apropriado, avaliar Doppler umbilical e outros vasos conforme indicação, líquido e sinais maternos de doença placentária.
+
+**Conduta:** acompanhamento de medicina fetal com Doppler intensificado, por exemplo **ao menos semanal** no contexto de critérios NICE para discordância ≥20% e/ou PFE <p10; planejar parto conforme deterioração ou evolução estável.
+
+**Por que importa:** ensina cálculo correto e proíbe equivaler um único número a decisão de nascimento.
+
+### Caso 5 — Circulação do co-gêmeo após óbito fetal
+
+**Apresentação:** MCDA com 28 semanas, ultrassom de rotina constata óbito de um dos fetos e sobrevivente com batimentos presentes. Não há trabalho de parto nem instabilidade materna.
+
+**Hipótese:** óbito único em gestação monocoriônica com risco de repercussão hemodinâmica aguda e lesão neurológica do sobrevivente.
+
+**Raciocínio:** (1) o compartilhamento vascular permite queda súbita de pressão do sobrevivente em direção à circulação do feto falecido; (2) nascimento imediato **não garante** prevenir dano que possa ter ocorrido no momento do óbito; (3) é necessária avaliação detalhada do sobrevivente e aconselhamento materno; (4) timing da interrupção depende de idade, condições do sobrevivente e riscos da prematuridade; (5) não aplicar automaticamente protocolo DCDA.
+
+**Exames:** avaliação imediata por medicina fetal, crescimento e Dopplers, incluindo busca de anemia/comprometimento por ACM e avaliação neurológica fetal por imagem conforme protocolo e tempo desde o óbito.
+
+**Conduta:** encaminhamento/monitorização especializada, planejamento individualizado com neonatologia; acompanhamento da gestante com atenção psicossocial.
+
+**Por que importa:** a pergunta não é apenas “o outro está vivo?”, mas **qual é a corionicidade e o risco vascular do sobrevivente?**
+
+### Caso 6 — O parto gemelar que não exige cesárea universal
+
+**Apresentação:** gestante com DCDA sem complicações, 36+5 semanas, primeiro feto cefálico, segundo também cefálico, pesos estimados semelhantes, trabalho de parto espontâneo em maternidade com equipe experiente em parto de segundo gemelar, anestesia e neonatologia disponíveis.
+
+**Hipótese/decisão:** parto vaginal pode ser opção em gestação diamniótica cuidadosamente selecionada; cesárea não é obrigatória apenas por haver dois fetos.
+
+**Raciocínio:** (1) a corionicidade determina riscos e momento de nascimento, mas não obriga via abdominal para todos os casos; (2) primeiro feto cefálico, avaliação fetal favorável e equipe experiente favorecem considerar vaginal; (3) é preciso monitorar **dois** batimentos e preparar resposta rápida ao segundo feto; (4) contraindicações obstétricas usuais e falhas de progressão podem alterar a via; (5) a decisão respeita preferência informada e experiência local.
+
+**Exames:** revisar apresentações fetais, estimativas de peso, Dopplers e vitalidade conforme cenário, antecedentes obstétricos e condições clínicas.
+
+**Conduta:** plano de parto documentado, monitorização intraparto adequada, disponibilidade de equipe para conversão cirúrgica, prevenção de atonia/hemorragia pós-parto, neonatologia para ambos.
+
+**Por que importa:** evita o automatismo “gestação gemelar = cesárea”, respeitando segurança e condições de serviço.
+
+## 14. Questões originais comentadas
+
+### Questão 1 — Corionicidade
+
+Às 12 semanas, US mostra septo fino que se une à placenta formando sinal T. Há dois sacos amnióticos. Qual hipótese é mais provável?
+
+A. DCDA pelo mesmo sexo.  
+B. MCDA.  
+C. MCMA por ausência de divisão.  
+D. Gravidez única com massa placentária.  
+E. Não se pode usar inserção da membrana.
+
+**Gabarito: B.** O T sugere monocorionicidade com dois âmnions; A confunde sexo e placentas; C ignora septo presente; D ignora dois fetos; E nega sinal importante. **Revisão:** definir corionicidade no primeiro trimestre muda calendário.
+
+### Questão 2 — Frequência de rastreio da TTTS
+
+Em MCDA não complicada, qual cronograma mínimo de ultrassom para rastrear TTTS é recomendado pela SMFM?
+
+A. Somente 20 e 32 semanas.  
+B. A cada quatro semanas a partir de 28 semanas.  
+C. A cada duas semanas desde 16 semanas até o parto.  
+D. Apenas se a gestante perceber contrações.  
+E. Apenas na internação para o parto.
+
+**Gabarito: C.** A/B/D/E perderiam alterações por anastomoses que podem surgir antes de sintomas. **Revisão:** vigilância quinzenal é característica central de MCDA.
+
+### Questão 3 — Quintero II
+
+MCDA de 21 semanas tem DVP 1,4 e 11 cm, sem visualização da bexiga do doador, sem Doppler crítico ou hidropisia. Qual estágio?
+
+A. I. B. II. C. III. D. IV. E. V.
+
+**Gabarito: B.** I mantém bexiga; II perde visualização da bexiga; III exige Doppler crítico; IV hidropisia e V óbito. **Revisão:** estágio determina encaminhamento e opções de intervenção.
+
+### Questão 4 — Tratamento TTTS
+
+Qual tratamento é padrão para TTTS estágio III com 22 semanas, conforme SMFM Consult 72?
+
+A. Apenas repetir US em dois meses.  
+B. Cesárea imediata como única opção.  
+C. Cirurgia fetoscópica a laser em centro habilitado.  
+D. Aspirina para equalizar fluxo entre os fetos.  
+E. Antiarrítmico materno para corrigir volume fetal.
+
+**Gabarito: C.** A permite piora, B exporia prematuridade extrema sem necessidade como primeira escolha, D/E não corrigem anastomoses responsáveis. **Revisão:** laser é padrão em Quintero II–IV entre 16–26 semanas.
+
+### Questão 5 — TAPS
+
+MCDA com DVP normal nos dois sacos, mas PSV-ACM 1,7 MoM e 0,8 MoM. O diagnóstico a investigar é:
+
+A. TAPS.  
+B. TTTS obrigatória mesmo sem oligo/poli.  
+C. Placenta prévia.  
+D. Diabetes gestacional como causa direta desses Dopplers.  
+E. Síndrome HELLP.
+
+**Gabarito: A.** A diferença PSV sugere anemia/policitemia; B desconsidera critérios clássicos de TTTS; C/D/E não explicam o padrão intergemelar. **Revisão:** TAPS pode ocorrer sem discrepância importante do líquido.
+
+### Questão 6 — Discordância de peso
+
+Feto maior 1600 g, menor 1200 g. Qual a discordância aproximada usando denominador correto?
+
+A. 15%. B. 20%. C. 25%. D. 33%. E. 40%.
+
+**Gabarito: C.** (1600−1200)/1600 = 25%. D usa o peso do menor como denominador; as demais não correspondem à fórmula. **Revisão:** é porcentagem relativa ao feto **maior**.
+
+### Questão 7 — Fluxo umbilical na sFGR monocoriônica
+
+Na MCDA com restrição seletiva de crescimento, fluxo diastólico da artéria umbilical **intermitentemente ausente/reverso** no feto menor corresponde ao padrão:
+
+A. Tipo I. B. Tipo II. C. Tipo III. D. Quintero I. E. TAPS sem classificação.
+
+**Gabarito: C.** Tipo I preservado, II persistentemente ausente/reverso, III intermitente. D é estágio de TTTS; E é síndrome diferente. **Revisão:** tipo III pode evoluir de modo imprevisível.
+
+### Questão 8 — Nascimento programado sem complicações
+
+De acordo com NICE NG137, qual associação de gestação e parto planejado está correta?
+
+A. DCDA — 32 semanas de rotina.  
+B. MCDA — 40 semanas.  
+C. MCMA — entre 32+0 e 33+6 semanas.  
+D. DCDA — 42 semanas.  
+E. MCMA — 39 semanas por padrão.
+
+**Gabarito: C.** A/D não representam janela padrão NICE para DCDA (37 semanas); B não corresponde à MCDA (36 semanas); E posterga além do intervalo indicado em MCMA. **Revisão:** idade planejada depende de corionicidade e amnionicidade.
+
+### Questão 9 — Gêmeos não determinam via única
+
+Para qual cenário o parto vaginal pode ser discutido conforme equipe e elegibilidade?
+
+A. Todo caso MCMA sem avaliar cordões.  
+B. DCDA diamniótica, primeiro feto cefálico, condições obstétricas favoráveis e equipe experiente.  
+C. TTTS estágio IV não tratada com instabilidade, sem centro.  
+D. Primeiro feto transverso com emergência.  
+E. Qualquer gestação sem monitorização de dois batimentos.
+
+**Gabarito: B.** A tem risco próprio de cordões; C/D são cenários complexos de urgência; E omite segurança fetal. **Revisão:** primeiro feto cefálico, equipe e monitorização adequada são importantes, não apenas a presença de dois fetos.
+
+### Questão 10 — Óbito único em monocoriônica
+
+Após morte de um dos fetos de MCDA, qual preocupação é específica da placenta compartilhada?
+
+A. Não existe risco para sobrevivente se seus batimentos estão presentes.  
+B. O co-gêmeo pode sofrer hipotensão/anemia aguda por anastomoses, com risco neurológico.  
+C. Sempre se deve interromper a gravidez imediatamente para reverter uma lesão já ocorrida.  
+D. A situação é idêntica a DCDA em todos os aspectos.  
+E. Corionicidade perde importância após 24 semanas.
+
+**Gabarito: B.** A/D/E ignoram anastomoses; C presume que parto reverte imediatamente dano hemodinâmico já instalado, sem considerar prematuridade. **Revisão:** avaliar sobrevivente em medicina fetal e decidir timing individual.
+
+## 15. Figuras necessárias antes da versão definitiva
+
+A lista abaixo identifica **necessidades didáticas, não imagens já encontradas/formatadas/licenciadas**. Priorizar imagens reais de US/Doppler com proveniência e licença comercial verificada, além de fluxogramas LURIA originais:
+
+1. Sinal lambda em DCDA e sinal T em MCDA, com indicação da inserção.
+2. US de gestação MCMA mostrando avaliação de membrana ausente e cordões.
+3. Diagrama autoral de corionicidade versus amnionicidade e zigoticidade.
+4. US de líquidos discordantes na TTTS, com DVP e bexigas identificados.
+5. Fluxograma autoral de Quintero com exemplos de Dopplers.
+6. Doppler da ACM em TAPS, com curvas e MoM corretamente rotulados.
+7. US/Doppler umbilical de sFGR tipo I, II e III em registros reais.
+8. Esquema autoral das anastomoses placentárias e laser fetoscópico.
+9. Mapa ilustrativo de identificação do feto A/B por localização materna.
+10. Diagrama original de calendário DCDA/MCDA.
+11. Cenário ilustrativo de entrelaçamento de cordões em MCMA, de origem clínica validada.
+12. Tabela visual comparativa de planejamento do nascimento por corionicidade.
+
+**Licença:** artigo ISUOG 2025 dispõe de texto open access sob licença CC BY na página do editor, mas cada figura/reprodução requer checar créditos internos e eventuais componentes de terceiros antes de uso comercial. Não reproduzir imagens apenas por estarem em PDF aberto. **Fluxo**: manifesto de candidatas → licença e legenda → aprovação Admin → otimização WebP → integração em capítulo; nenhuma aprovação presumida.
+
+## 16. Auditoria deste incremento
+
+**Casos:** 6 originais, do diagnóstico de corionicidade ao parto, com hipótese, raciocínio, exames, conduta e relevância.  
+**Questões:** 10 originais com alternativas e justificativa dos distratores.  
+**Limitações:** necessita revisão especialista de thresholds TTTS conforme idade e NICE/ISUOG, aprofundar TAPS e sFGR (estadiamento completo), contextualizar ASA e protocolos brasileiros, acrescentar fontes FEBRASGO aplicáveis, revisar timing/rotas e fatores de viabilidade perinatal, imagens aprovadas e teste de autossuficiência. A extensão bruta não é equivalente a **60 mil caracteres úteis**, e um conjunto de casos/questões não certifica a apostila. **Status permanece RASCUNHO, sem HTML/deploy.**
