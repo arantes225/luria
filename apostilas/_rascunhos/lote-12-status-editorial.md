@@ -12,15 +12,15 @@
 |---|---|---|---|---|
 | 238 | Trauma raquimedular e avaliação neurológica inicial | Original | Alta; TC/RM, AIS, choque, cirurgia | **MANUSCRITO 32.211 caracteres — ampliação pendente** |
 | 239 | Catarata, glaucoma crônico e retinopatias | Original | Alta; oftalmopediatria, retina, catarata e glaucoma; não duplicar #195 | **MANUSCRITO 33.101 caracteres — ampliação pendente** |
-| 240 | Aneurisma da aorta e emergências vasculares | Original | Alta; AAA, dissecção e tratamento | **PENDENTE** |
+| 240 | Aneurisma da aorta e emergências vasculares | Original | Alta; AAA, dissecção e tratamento | **MANUSCRITO 27.298 caracteres — ampliação pendente** |
 | 241 | Malformações congênitas e síndromes genéticas | Original | Alta; SNC, diferenças do desenvolvimento sexual, genética | **PENDENTE** |
 | 242 | Doença celíaca e síndromes de má absorção | Original | Alta; diarreia crônica, má absorção; diferenciais | **PENDENTE** |
 | 243 | Oncologia pediátrica: leucemias, linfomas e tumores sólidos | Original | Diamante; emergências oncológicas pediátricas | **PENDENTE** |
 | 244 | Púrpuras, coagulopatias e hemoglobinopatias pediátricas | Original | Média/Diamante; hemostasia, anemia falciforme | **PENDENTE** |
 | 245 | Puberdade precoce e atrasada | Original | Alta/Média; HAC, tireoide e endocrinologia | **PENDENTE** |
 | 246 | Afogamento e emergências ambientais na infância | Original | Baixa/essencial; APH e prevenção | **PENDENTE** |
-| 247 | Hiperêmese gravídica | Original | GO; estabilização, diagnósticos diferenciais | **PENDENTE** |
-| 248 | Colestase intra-hepática da gestação | Original | GO; ácidos biliares, monitoramento e parto | **PENDENTE** |
+| 247 | Hiperêmese gravídica | Original | GO; estabilização, diagnósticos diferenciais | **MANUSCRITO 19.816 caracteres — ampliação pendente** |
+| 248 | Colestase intra-hepática da gestação | Original | GO; ácidos biliares, monitoramento e parto | **MANUSCRITO 18.662 caracteres — ampliação pendente** |
 | 249 | Violência sexual e direitos reprodutivos na assistência | Original | Alta/Média; acolhimento, profilaxias, legalidade | **PENDENTE** |
 | 266 | Oncologia de cabeça e pescoço | Nova | CEC, massas cervicais e estadiamento | **PENDENTE** |
 | 267 | Endoscopia digestiva e urgências endoscópicas | Nova | Hemorragia digestiva, corpos estranhos | **PENDENTE** |
@@ -56,4 +56,4 @@ Foi lido `apostilas/ciclo-menstrual-eixo-hho/index.html` na branch-base: arquivo
 
 ## Controle de aprovação
 
-Não existe nesta data autorização de publicação: **0/18 itens estão certificados como finalizados.** Dos 18, **2 manuscritos estão iniciados**, 15 entradas novas/originais aguardam produção e 1 apostila já está publicada e aguarda auditoria pontual. O status deve mudar somente após comprovação por inspeção real do arquivo e checklist de qualidade.
+Não existe nesta data autorização de publicação: **0/18 itens estão certificados como finalizados.** Dos 18, **5 manuscritos estão iniciados**, 12 entradas novas/originais aguardam produção e 1 apostila já está publicada e aguarda auditoria pontual. O status deve mudar somente após comprovação por inspeção real do arquivo e checklist de qualidade.
