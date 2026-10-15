@@ -396,3 +396,95 @@ Famílias precisam entender quais sinais justificam retorno urgente, resultados 
 
 Ao concluir, o aluno deve reconhecer sepse versus infecção localizada, diferenciar choque compensado/descompensado, identificar Phoenix e suas limitações, escolher estratégia de fluidos conforme cenário, interpretar lactato, entender tempo da primeira dose, discutir vasoativo sem regra rígida, identificar necessidade de controle de foco e reconhecer riscos de intubação e sobrecarga. Deve saber **o que depende de equipe especializada** e nunca improvisar doses de vasopressores ou antimicrobianos em crianças fora de protocolo.
 
+
+
+## 28. Cinco síndromes infecciosas de apresentação distinta: decidir pelo foco
+
+### 28.1 Meningococcemia: sepse fulminante sem obrigatoriedade de meningismo
+
+Meningococcemia pode evoluir de febre e mal-estar inespecíficos para choque, púrpura fulminante e coagulopatia em poucas horas. Rash petequial ou purpúrico não branqueável é sinal importante, mas pode aparecer tarde e **não é obrigatório para reconhecer doença meningocócica**. A criança pode apresentar hipotensão, alteração mental e má perfusão antes da erupção, assim como meningite pode coexistir sem todos os sinais clássicos.
+
+Em suspeita de meningococcemia com choque, a prioridade é suporte e **antibiótico parenteral eficaz sem atraso**, como cefalosporina adequada segundo protocolo institucional, além de culturas quando não retardam tratamento. Em apresentações neurológicas, avaliar punção lombar **após** estabilização e segurança; não exigir líquor para iniciar terapia. O controle da transmissão inclui notificação e **quimioprofilaxia de contatos elegíveis**, com saúde pública, não de toda pessoa que passou pelo mesmo prédio.
+
+Outros diagnósticos com púrpura e febre incluem dengue, púrpura trombocitopênica, vasculites, leucemia, sepse por pneumococo e riquétsioses em regiões específicas. A diferença crítica é não atrasar cuidado de uma criança tóxica porque ainda não se sabe o patógeno.
+
+### 28.2 Pneumonia complicada e empiema
+
+Pneumonia bacteriana pode levar a sepse por infecção do parênquima e à disfunção respiratória por hipoxemia e maior trabalho ventilatório. Febre persistente, dor pleurítica, redução de murmúrio, derrame pleural ou piora após antibiótico sugerem empiema/coleção. US torácico pode caracterizar líquido e septações; radiografia identifica consolidação e algumas coleções, mas decisão de drenagem depende de tamanho, purulência, ventilação e contexto.
+
+Um **empiema** pode permanecer como foco infeccioso apesar de antibiótico sistêmico ativo; **drenagem adequada**, às vezes fibrinolítico intrapleural ou intervenção cirúrgica selecionada, pode ser necessária. Não tratar febre persistente de pneumonia apenas com sequência de antibióticos sem reavaliar fonte. O uso de macrolídeo para atípicos, cobertura de estafilococo e tratamento de pneumonia necrosante dependem de idade/achados e microbiologia.
+
+### 28.3 Infecção abdominal e apendicite complicada
+
+Dor abdominal, vômitos, distensão, irritação peritoneal, íleo e sepse sugerem perfuração, apendicite complicada ou abscesso. Crianças pequenas podem apresentar sinais pouco localizados. US costuma ser exame inicial em muitos serviços quando estável; TC/RM podem ser usadas conforme necessidade, evitando adiar intervenção em deterioração hemodinâmica.
+
+A cobertura antimicrobiana em peritonite precisa incluir patógenos entéricos e **anaeróbios** conforme fonte; o foco pode exigir cirurgia/drenagem. Na criança com abdome agudo e choque, não dar 60 mL/kg automaticamente sem avaliar função respiratória, mas iniciar ressuscitação e suporte adequados enquanto organiza controle de fonte. Após cirurgia, tempo de antibioticoterapia depende de adequação da intervenção, resposta e patógeno; não existe "14 dias porque tinha sepse" sem olhar evolução.
+
+### 28.4 Pielonefrite complicada e obstrução urinária
+
+ITU pode produzir choque bacterêmico, especialmente em lactentes com malformações, crianças com refluxo grave, instrumentação ou litíase. Piúria e urocultura ajudam, mas amostra por bolsa adesiva contaminável não é confirmação confiável em lactente. A cobertura precisa atingir parênquima renal/sangue: nitrofurantoína e fosfomicina oral, úteis para cistite em outros contextos, **não são terapia para pielonefrite bacterêmica**.
+
+Se imagem identifica hidronefrose com infecção e hipotensão, a descompressão por equipe urológica é tão importante quanto antibiótico. A ausência de nitrito não afasta ITU; alguns patógenos não o formam e tempo de permanência da urina pode ser pequeno. Reavaliar função renal, diurese, culturas e capacidade de seguir por via oral antes de alta.
+
+### 28.5 Infecção de pele e síndrome do choque tóxico
+
+Celulite pode iniciar com eritema e dor, mas fasciíte necrosante pode apresentar **dor desproporcional**, rápida progressão, bolhas, crepitação ou alteração da sensibilidade antes de necrose evidente. A avaliação cirúrgica e desbridamento urgente são cruciais. No choque tóxico estreptocócico/estafilocócico, febre, hipotensão, rash e disfunção multiorgânica podem ocorrer, e terapias direcionadas a toxinas podem ser consideradas conforme agente e protocolo, em consulta com infectologia. Não confundir todo exantema febril com escarlatina ou alergia simples quando a criança está em choque.
+
+## 29. Diagnóstico diferencial na criança sem hipotensão, mas muito doente
+
+**Fase pré-hipotensiva** não é uma zona segura. Criança de quatro anos com febre, taquicardia, extremidades frias, TEC de cinco segundos e pouca urina pode estar em choque compensado mesmo com pressão sistólica aparentemente normal. O clínico avalia tendência, perfusão, consciência e sinais de congestão. Uma melhora transitória da febre após antitérmico não demonstra recuperação circulatória; FC pode cair por redução da temperatura, mas TEC e estado mental ainda exigem atenção.
+
+A **desidratação por gastroenterite** é diferencial frequente, mas pode coexistir com sepse. História de vômitos/diarreia intensos, perda ponderal e ausência de foco infeccioso invasivo favorece componente hipovolêmico. Tratamento da desidratação tem algoritmo próprio por gravidade e tolerância oral; na criança crítica com infecção, a decisão de antibiótico depende de probabilidade bacteriana e disfunção. Não oferecer antimicrobiano a todas as diarreias leves, nem deixar de considerar bacteremia em lactente hipotérmico.
+
+**Cardiopatia congênita e miocardite:** hipoxemia persistente, sopro, hepatomegalia, galope e baixa contratilidade podem indicar causa cardíaca, às vezes com infecção coincidente. O POCUS pode evitar repetir bolos em paciente congesto. **Anemia aguda ou hemorragia:** palidez, choque após trauma e sinais de sangramento exigem avaliação hemorrágica, e Hb inicial pode não refletir perda aguda. **Intoxicações:** sedativos, betabloqueadores e bloqueadores de canal de cálcio podem alterar consciência e circulação.
+
+### 29.1 Quando chamar cirurgia, nefrologia ou cardiologia
+
+Chamar cirurgião cedo em abdome agudo, infecção necrosante, abscesso profundo e empiema que requer drenagem. Avaliação de nefrologia diante de LRA grave, hipercalemia refratária ou sobrecarga volumétrica que impede oxigenação. Cardiologia/UTIP quando disfunção ventricular e necessidade de inotrópico são suspeitas. Infectologia/CCIH em bacteremia difícil, imunossupressão, resistência ou dúvida de fonte; **o chamado não deve atrasar primeiro antibiótico em choque**.
+
+### 29.2 Repetir avaliação após transferência
+
+Transferência entre UBS, UPA e hospital terciário é período de risco de omissão de informações. Relatar estado inicial, volumes administrados (mL e mL/kg), tendência de TEC/pressão/diurese, medicações, culturas, alergias, resultados pendentes e suspeita de foco. A equipe receptora deve reavaliar do zero em vez de assumir que criança "já recebeu o pacote" e está estabilizada. A fotografia hemodinâmica muda; novos estertores ou hepatomegalia após transporte mudam estratégia volêmica.
+
+## 30. Cálculos de segurança que o aluno deve dominar
+
+### 30.1 Volume prescrito e volume efetivamente administrado
+
+**Volume (mL) = peso (kg) × indicação (mL/kg)**. A conta é simples, mas exige atenção ao peso estimado, prescrito versus administrado e perdas da linha. Para criança de 12 kg, um bolo de 10 mL/kg corresponde a **120 mL**; 20 mL/kg são **240 mL**. Para criança de 25 kg, 10 mL/kg = **250 mL** e 20 mL/kg = **500 mL**. A dose volumétrica precisa ser documentada e reavaliada; se a criança de 12 kg já recebeu 240 mL e desenvolveu congestão, não continuar até "60 mL/kg".
+
+**Cumulatividade:** 10 mL/kg + 20 mL/kg + 10 mL/kg = **40 mL/kg**, não 30 nem 60. A primeira hora de ressuscitação não é uma série automática de bolos, mas uma estratégia de avaliação intermitente. A capacidade da unidade de ventilar e iniciar vasoativos altera o que é seguro, conforme SSC 2026.
+
+### 30.2 Unidade de vasoativo
+
+A taxa de uma infusão depende de dose desejada (por exemplo, microgramas/kg/min), peso e concentração final da solução (microgramas/mL). A conversão dimensional deve ser validada por protocolo, dupla checagem e bomba. Uma confusão entre **mg** e **mcg** gera erro de mil vezes. **Não disponibilizar tabela de preparo universal** sem saber concentração/ampola aprovada no serviço, pois apresentações e diluições variam. O ensino fundamental é reconhecer componentes e exigir identificação completa da dose.
+
+### 30.3 Interpretação contextual de lactato e PaCO₂
+
+Lactato em mmol/L e mg/dL não tem valores numericamente equivalentes; confundir unidades compromete decisão. PaCO₂ elevada pode representar hipoventilação/insuficiência respiratória, enquanto PaCO₂ baixa pode ocorrer por hiperventilação compensatória na acidose. Na sepse com insuficiência circulatória, gasometria revela tendências, mas um paciente pode estar em choque antes de surgir acidose metabólica marcada.
+
+### 30.4 Escore Phoenix e valores ausentes
+
+Um escore de disfunção requer dados disponíveis e interpretação correta. Se a criança tem hipotensão e precisa de vasoativo, a disfunção cardiovascular pode ser evidente mesmo com coagulação não medida; não atribuir zero a variável ausente como prova de normalidade. Phoenix ajuda definição prognóstica, mas reanimação não fica suspensa aguardando preenchimento de todos os campos. Sempre citar referência e método ao reportar pontuação calculada.
+
+## 31. Protocolo de retorno clínico e falhas da primeira abordagem
+
+### 31.1 Quando a criança não melhora após terapia inicial
+
+Rever cinco áreas **antes de simplesmente trocar todo o tratamento**:
+
+**(1) A hipótese está correta?** Pode ser miocardite, anafilaxia, hemorragia, CAD, dengue, crise adrenal ou combinação de causas. **(2) Há perfusão adequada?** Um vasoativo elevou PA, mas extremidades continuam frias e oligúria persiste? **(3) A infecção está sendo tratada?** Antibiótico cobriu microrganismo plausível, foi realmente administrado e atingiu foco? **(4) Há fonte não controlada?** Empiema, abscesso, abdome perfurado ou cateter infectado não drenado. **(5) Qual complicação iatrogênica apareceu?** Edema pulmonar após fluidos, sedação excessiva, extravasamento da linha ou arritmia por catecolamina.
+
+Essa revisão é especialmente útil quando lactato sobe, oxigenação piora ou necessidade de vasoativo aumenta, porque focar apenas em "mais antibiótico" pode ignorar falência da bomba cardíaca ou persistência de pus. Consultar intensivista e especialistas, considerar eco e exames dirigidos e documentar trajetória. Na criança em choque, a busca etiológica e a reanimação continuam em paralelo.
+
+### 31.2 Alta e desescalonamento: não curar apenas números
+
+A recuperação envolve alimentação, sono, força, comportamento, deambulação, função renal e qualidade de vida. Culturas podem orientar ajuste final, mas PCR ainda elevada após melhora nem sempre exige prolongamento de antibiótico. A duração depende de foco, organismo, complicações e controle anatômico; o seguimento deve informar sinais de recaída e consulta definida. Não liberar criança porque lactato normalizou enquanto necessita de oxigênio crescente, permanece apática ou tem foco ainda não controlado.
+
+### 31.3 Checklist de cinco decisões de maior impacto
+
+1. Identificar choque **antes da hipotensão**.
+2. Administrar **antimicrobiano a tempo** conforme choque versus sepse sem choque.
+3. Usar **estratégia volêmica que depende da existência de UTI**, com reavaliação e suspensão na congestão.
+4. Começar **vasoativo e controle de fonte** quando indicados, sem protocolos adultos mecânicos.
+5. Planejar **monitorização, transferência e seguimento**, prevenindo falhas de comunicação.
+
