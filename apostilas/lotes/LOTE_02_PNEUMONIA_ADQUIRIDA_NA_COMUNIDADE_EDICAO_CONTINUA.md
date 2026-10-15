@@ -335,6 +335,80 @@ Idosos com PAC hospitalizada podem perder funcionalidade rapidamente por imobili
 
 **Checklist de falha:** 1) confirmar adesão e absorção; 2) rever escolha, dose, via e microbiologia; 3) perguntar por diagnóstico concorrente; 4) procurar derrame/empiema/abscesso ou endocardite em cenário sugestivo; 5) reavaliar suporte de órgãos; 6) considerar TC, ultrassom e investigação especializada conforme necessidade.
 
+
+### 7.3 Estabilidade clínica: o que observar todos os dias e por que
+
+Uma pessoa com pneumonia pode deixar de ter febre antes de recuperar oxigenação e autonomia; outra pode manter tosse e cansaço por várias semanas apesar de resposta microbiológica adequada. Por isso, o desfecho imediato mais útil não é a imagem “limpa” nem a contagem de dias de antibiótico isoladamente: é a **estabilidade clínica**, avaliada em conjunto com risco de complicações e possibilidade de tratamento fora do hospital.
+
+A via clínica de PAC da Infectious Diseases Society of America (IDSA) propõe verificar, na reavaliação diária, parâmetros próximos aos seguintes, admitindo retorno aos valores basais em quem já convive com alteração crônica:
+
+| Domínio | Referência operacional em adulto | Por que importa |
+| --- | --- | --- |
+| Temperatura | Máxima ≤38 °C | Febre persistente pode indicar inflamação ativa, complicação ou causa alternativa |
+| Frequência cardíaca | ≤100/min | Taquicardia pode refletir febre, hipoxemia, desidratação, sepse ou outra causa |
+| Frequência respiratória | ≤24/min | A recuperação ventilatória nem sempre acompanha o alívio da febre |
+| Oxigenação | SpO2 ≥90% ou PaO2 >60 mmHg, **ou retorno ao basal conhecido** | Hipoxemia e necessidade crescente de O2 impedem interpretar melhora como estabilidade |
+| Estado mental | Habitual ou recuperado | Delirium novo em idoso pode ser sinal de doença sistêmica |
+| Pressão sistólica | ≥90 mmHg, sem sinais de hipoperfusão | A pressão isolada não elimina avaliação de choque; analisar perfusão |
+| Via oral e autocuidado | Consegue ingerir líquidos/medicações, ou há suporte seguro | Determina viabilidade da mudança para tratamento oral e da alta |
+
+Esses valores são **instrumentos**, não substitutos de julgamento. Exemplo: paciente idoso cuja SpO2 habitual é 88–90% por doença pulmonar avançada deve ser avaliado relativamente ao basal e à necessidade de suporte, não por um número absoluto isolado. Inversamente, paciente com SpO2 95% enquanto recebe alta concentração de oxigênio não é equivalente a outro com 95% em ar ambiente.
+
+A avaliação da resposta inicial e da estabilidade também orienta uso de recursos: se a pessoa tem pressão e ventilação normais, alimenta-se e dispõe de seguimento confiável, a permanência hospitalar apenas para completar antibiótico intravenoso pode não oferecer benefício. Se persiste necessidade de oxigênio que o domicílio não consegue fornecer, delirium, hipotensão ou vômitos, uma radiografia aparentemente melhor não justifica alta.
+
+### 7.4 Da terapia intravenosa à oral: uma decisão farmacológica, não burocrática
+
+Mudar a via de administração após estabilidade pode reduzir complicações de cateter, desconforto e permanência hospitalar. Entretanto, **transição IV→VO não equivale a suspender cobertura necessária**. Confirmar que o paciente consegue engolir, absorver, seguir horários e que existe agente oral com espectro e disponibilidade adequados ao quadro e aos resultados microbiológicos. Ao escolher o novo regime, considerar a espécie identificada, suscetibilidade, dose, interação medicamentosa, doença renal/hepática e possível sobreposição desnecessária.
+
+**Exemplo:** homem de 56 anos internado por PAC sem choque recebe beta-lactâmico intravenoso associado a agente de cobertura atípica. Três dias depois está afebril, FR 18, SpO2 96% em ar ambiente, pressão estável, alimentando-se e sem hemocultura que indique tratamento especial. A equipe pode avaliar mudança para regime oral eficaz e duração adequada segundo diretriz, em vez de manter acesso venoso pelo simples fato de a pneumonia ter sido inicialmente hospitalizada. Não há exigência universal de “mais dois dias de IV” após recuperação.
+
+**Contraexemplo:** mulher com derrame pleural loculado, drenagem incompleta e febre recorrente requer investigação de **controle de foco**. Trocar ceftriaxona IV por um comprimido sem avaliar a pleura não resolve empiema. Também não usar a estabilidade parcial para encurtar indiscriminadamente duração em pneumonia necrosante, infecção extrapulmonar, patógeno particular ou imunossupressão relevante.
+
+### 7.5 O que significa descalonar de verdade?
+
+**Descalonamento** é estreitar ou interromper componentes desnecessários da antibioticoterapia quando microbiologia, epidemiologia e resposta tornam essa decisão segura. Não é “diminuir miligramas porque o paciente parece melhor”. Há três informações diferentes:
+
+1. **Evidência de patógeno:** cultura de sangue com germe compatível e antibiograma pode permitir direcionar tratamento. Uma cultura de escarro potencialmente contaminada exige julgar qualidade e colonização, sobretudo em bronquiectasias.
+2. **Evidência contra cobertura especial:** cultura apropriada negativa, ausência de fatores validados e melhora clínica podem permitir retirar cobertura empírica anti-MRSA ou antipseudomonas iniciada em situação de incerteza, respeitando contexto e coleta.
+3. **Persistência de doença:** febre, hipotensão ou hipoxemia crescente exigem procurar derrame, abscesso, resistência ou diagnóstico alternativo; apenas “ampliar espectro” pode ser resposta inadequada quando o problema é drenagem, tromboembolismo ou insuficiência cardíaca.
+
+A procalcitonina inicial **não deve ser usada isoladamente para negar o início de antibiótico** em pneumonia clínica e radiologicamente estabelecida, segundo a ATS/IDSA 2019. Durante a evolução, tendências de biomarcadores podem ser acessórios de avaliação em ambientes que os utilizam, mas **não são o único critério de parada**. Evitar solicitar PCR/PCT diariamente sem decisão clínica que possa mudar: a pessoa pode recuperar sinais vitais antes de normalizar marcadores inflamatórios.
+
+### 7.6 Duração e estabilidade em 2019 versus 2025: aplicação rigorosa
+
+A ATS/IDSA 2019 recomendava antibiótico durante pelo menos **cinco dias** e até atingir estabilidade. A ATS 2025, baseada em novos ensaios clínicos, passou a **sugerir condicionalmente menos de cinco dias (mínimo de três)** para **pacientes ambulatoriais ou internados com PAC não grave**, após estabilidade, quando a etiologia, as comorbidades e as complicações permitem. PAC **grave hospitalizada** requer **cinco dias ou mais**. Essa mudança foi introduzida com **baixa certeza de evidência**, não como licença para que toda pneumonia receba exatamente três dias.
+
+| Situação | O encurtamento de 3–4 dias é uma opção rotineira? | Raciocínio |
+| --- | --- | --- |
+| Adulto imunocompetente, PAC não grave, clinicamente estável e sem complicação | **Pode ser considerado** segundo ATS 2025, decisão individual | Novos estudos apoiam a possibilidade em selecionados |
+| PAC grave em UTI | **Não** como regra da ATS 2025 | Recomenda-se cinco dias ou mais, com adaptação ao foco |
+| Empiema, abscesso ou pneumonia necrosante | **Não** como extrapolação automática | Complicação requer controle de foco e duração própria |
+| Suspeita de Legionella ou agente que requer curso mais longo | **Não** sem revisão específica | Etiologia e resposta interferem na escolha |
+| Gestante, paciente com hipoxemia crônica ou bronquiectasias importantes | **Evidência menos diretamente aplicável** | Esses grupos podem não ter sido adequadamente representados |
+| Paciente com febre persistente, FR 30 e oxigênio crescente | **Não** | Não atingiu estabilidade; investigar falha ou complicação |
+
+O aspecto mais importante para residência é **citar o referencial e suas condições**. Dizer apenas “ATS agora são três dias” é incorreto; dizer “sempre sete a dez dias” também ignora a evidência de cursos mais curtos quando há recuperação documentada.
+
+### 7.7 Imagem após a cura: por que radiografia persistente não é automaticamente falha?
+
+A resolução das opacidades radiológicas pode ser mais lenta que a melhora de febre, oxigenação e apetite, especialmente em idosos, fumantes, pessoas com doença pulmonar de base ou pneumonia extensa. A ATS/IDSA 2019 **sugere não pedir radiografia de controle rotineira** para todo adulto com melhora rápida e completa (por exemplo, resolução sintomática dentro de cinco a sete dias). Isso **não** significa que a radiografia nunca deva ser repetida.
+
+Reimagem é razoável quando há **piora ou resposta insuficiente**, infiltrado recorrente no mesmo local, **hemoptise**, perda ponderal não explicada, risco de câncer de pulmão ou achado inicial suspeito de obstrução. A decisão depende do risco e do diagnóstico diferencial: um paciente de 34 anos não fumante, sem sintomas após tratamento, é diferente de ex-tabagista de 70 anos com opacidade persistente e hemoptise. Em quem atende a critérios de rastreamento de câncer de pulmão, a avaliação segue recomendações próprias, não uma rotina universal de pneumonia.
+
+**Ponto clínico:** não confundir infiltrado que persiste algumas semanas com “falha bacteriológica”; tampouco atribuir toda imagem persistente a inflamação residual. Tuberculose, neoplasia, pneumonia organizada, bronquiectasia, aspiração crônica e infecção fúngica podem exigir investigação direcionada. Após pneumonia por aspiração recorrente, avaliar deglutição, condições neurológicas e cuidado oral, em vez de repetir indefinidamente antibióticos.
+
+### 7.8 Alta segura e retorno: seis itens que devem constar do plano
+
+1. **Diagnóstico e gravidade:** registrar se havia consolidação definida, hipoxemia, sepse, necessidade de oxigênio, derrame ou agente específico.
+2. **Antimicrobiano:** princípio ativo, dose, via, duração total prevista e quando interromper; evitar receitas que resultem em duplicação IV/VO.
+3. **Sinais de alarme:** piora respiratória, queda de saturação conhecida, febre recorrente importante, confusão, prostração incapacitante, síncope, dor torácica nova ou hemoptise.
+4. **Retorno:** data ou período de reavaliação conforme gravidade, comorbidades e suporte domiciliar; paciente idoso ou que teve internação pode precisar de contato precoce.
+5. **Prevenção:** verificar vacinação recomendada para idade/risco (influenza, pneumocócica, COVID-19 quando aplicável), cessação tabágica e fatores de aspiração; usar calendário brasileiro vigente, não esquema fixo de vacinação genérico.
+6. **Sequelas e diferencial:** anotar indicação de reimagem, fisioterapia/reabilitação, investigação de neoplasia e avaliação de comorbidade quando necessária.
+
+**Fontes clínicas deste aprofundamento:** IDSA, *Community-Acquired Pneumonia Clinical Pathway* (2023), https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf ; ATS/IDSA, *Diagnosis and Treatment of Adults with Community-acquired Pneumonia* (2019), https://pmc.ncbi.nlm.nih.gov/articles/PMC6812437/ ; ATS, *Diagnosis and Management of CAP* (2025), https://doi.org/10.1164/rccm.202507-1692ST .
+
+
 ## 8. Populações especiais e segurança
 
 ### 8.1 Populações e segurança
@@ -412,6 +486,16 @@ Homem de 64 anos, fumante importante, melhora da febre após antibiótico, mas m
 ### Caso 12 — Qual duração antibiótica escolher?
 
 Homem de 35 anos com PAC não grave, estável após poucos dias, sem comorbidade nem complicações, recebe tratamento de agente suscetível. **Raciocínio:** ATS 2025 admite curso de duração inferior a cinco dias, mínimo três, em pessoas selecionadas que atingem estabilidade; a decisão depende de protocolo local, agente e segurança de seguimento. Em contraposição, mulher de 72 anos internada por PAC grave com derrame pleural complicado não é candidata automática ao mesmo encurtamento. **Por que importa:** diretrizes recentes condicionam duração a estabilidade e perfil da doença.
+
+
+### Caso 13 — Estabilidade verdadeira e mudança da via IV para oral
+
+Homem de 61 anos, DM2 sem lesão de órgão, foi internado por PAC com saturação 89% em ar ambiente e recebeu tratamento empírico IV. No terceiro dia está lúcido, T 37,2 °C, FC 84/min, FR 19/min, PA 124/76 mmHg, SpO2 95% em ar ambiente e alimenta-se normalmente. A imagem ainda mostra consolidação residual. **Hipótese:** PAC em boa resposta, sem indício de complicação. **Raciocínio:** estabilidade clínica em parâmetros vitais e ingestão sustenta avaliar alta e transição oral, se agente adequado estiver disponível; radiografia que não normalizou em 72 horas não exige internação. **Exames:** verificar resultados pendentes e função renal para selecionar fármaco/dose, sem culturas repetitivas desnecessárias. **Conduta:** discutir transição IV→VO e duração conforme referencial/protocolo, documentar sinais de retorno e seguimento. **Por que importa:** evitar permanência hospitalar apenas por radiografia incompletamente resolvida.
+
+### Caso 14 — “Falhou ao antibiótico”: na verdade havia empiema
+
+Mulher de 54 anos, pneumonia direita com febre inicial e melhora parcial após 48 horas de antibiótico adequado, volta a apresentar febre, taquipneia e dor pleurítica. Radiografia mostra derrame aumentado e ultrassom evidencia septações. **Hipóteses:** derrame parapneumônico complicado/empiema, resistência, outros diagnósticos concorrentes. **Raciocínio:** a infecção no espaço pleural pode requerer drenagem; ampliar antibiótico isoladamente não garante controle do foco. **Exames:** ultrassonografia, avaliação de punção/drenagem em serviço capacitado, amostra pleural quando indicada, microbiologia e reavaliação de gravidade. **Conduta:** suporte respiratório, antibiótico ajustado ao contexto e avaliação de drenagem/controle do foco com especialista. **Por que importa:** “falha” pode ser complicação anatômica e não apenas escolha errada de antimicrobiano.
+
 
 ## 10. Questões autorais comentadas
 
@@ -494,6 +578,23 @@ A) Jovem estável com PAC leve simples. B) Adulto com PAC grave e fator document
 Paciente com PAC apresenta necessidade crescente de oxigênio e derrame pleural loculado. Próximo passo:
 A) Manter antibiótico sem rever foco. B) Avaliar complicação pleural, necessidade de drenagem e suporte. C) Repetir somente antitérmico. D) Ignorar imagem porque há antibiótico.
 **Gabarito: B.** **A/C/D** retardam controle de foco. **Mini-revisão:** empiema demanda abordagem além do antimicrobiano.
+
+
+### Questão 19 — Parâmetros de estabilidade
+Paciente em tratamento de PAC não grave está afebril, mas apresenta FR 31/min e SpO2 86% em ar ambiente. Qual afirmação é correta?
+A) Está estável porque a febre resolveu. B) Há sinais de instabilidade respiratória que impedem considerar recuperação plena e encurtamento automático do tratamento. C) Deve receber alta porque a radiografia melhorou. D) A estabilidade depende exclusivamente da PCR.
+**Gabarito B.** Frequência respiratória e oxigenação são domínios fundamentais de estabilidade; **A** considera só febre, **C** confunde imagem e fisiologia, **D** usa marcador isolado. **Mini-revisão:** estabilidade envolve sinais vitais, oxigenação, consciência e capacidade de ingerir fármacos.
+
+### Questão 20 — Transição IV→VO
+Adulto tratado por PAC melhora clinicamente, tolera via oral e não há patógeno exigindo terapia parenteral especial. Qual princípio deve orientar conduta?
+A) Toda pessoa internada deve completar antibiótico IV mesmo estando estável. B) A troca IV→VO pode ser considerada com agente oral apropriado, farmacocinética, resultados microbiológicos e plano de seguimento. C) A troca exige radiografia totalmente normal. D) Mudar via significa interromper cobertura microbiológica adequada.
+**Gabarito B.** **A** transforma internação inicial em indicação permanente de IV; **C** atribui a imagem papel incorreto; **D** troca transição por interrupção. **Mini-revisão:** decisão depende da estabilidade e da opção oral eficaz.
+
+### Questão 21 — Reimagem após melhora
+Após PAC simples, homem jovem não fumante está assintomático em poucos dias. Qual conduta é mais coerente com ATS/IDSA 2019?
+A) Repetir radiografia semanalmente até normalizar em qualquer paciente. B) Não solicitar imagem de controle rotineira se houve resolução clínica apropriada, salvo indicação específica. C) Solicitar TC sempre após completar antibiótico. D) Presumir neoplasia obrigatória.
+**Gabarito B.** **A/C** expõem a uso desnecessário de exames; **D** exagera probabilidade em caso de baixo risco. **Mini-revisão:** acompanhar o paciente, não apenas a opacidade; risco de câncer, hemoptise e sintomas persistentes alteram decisão.
+
 
 ## Referências essenciais
 
