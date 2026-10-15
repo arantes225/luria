@@ -486,3 +486,234 @@ A conferência de segurança no fim da etapa inicial deve perguntar: hemorragia 
 **Conduta.** Suporte ventilatório e hemodinâmico conforme necessidade; avaliação neurocirúrgica emergencial, investigação e reversão dirigida se hemorragia relevante confirmada/suspeita segundo protocolo e tempo clínico; transferência para serviço capaz de oferecer intervenção.
 
 **Por que importa.** Mostra que reavaliação sistemática é tão importante quanto avaliação de chegada e que medicamentos mudam probabilidade pré-teste e recursos necessários.
+
+
+## 24. Caso clínico comentado 5 — Gestante politraumatizada sem sangramento vaginal
+
+**Apresentação.** Gestante de 29 semanas sofre colisão de automóvel com desaceleração importante. Está consciente e queixa-se de dor abdominal difusa. FC 116 bpm, PAS 110 mmHg, FR 24/min, SpO2 97%. Não há sangramento vaginal evidente. Útero sensível à palpação, mas a paciente responde a comandos e ventila adequadamente.
+
+**Hipóteses.** Lesões maternas de tórax/abdome e possível complicação placentária. A ausência de sangramento vaginal não afasta descolamento de placenta, porque parte da hemorragia pode permanecer oculta. Taquicardia pode resultar de gestação, dor, ansiedade e hipovolemia; observar o conjunto.
+
+**Raciocínio.** O estado materno determina prioritariamente a sobrevida fetal. Aplicar xABCDE, investigar e corrigir hipovolemia/hipoxemia, verificar se há risco de compressão aortocava e efetuar deslocamento uterino à esquerda conforme situação, preservando alinhamento quando necessário. Após estabilização, avaliação obstétrica e monitorização fetal indicada pelo contexto não devem ser negligenciadas.
+
+**Exames.** Investigação materna dirigida pela fisiologia e mecanismo, com imagem necessária mesmo durante a gestação quando benefício diagnóstico supera riscos. Avaliação obstétrica e fetal por equipe treinada, além de exames hematológicos e de tipagem/Rh. Uma ultrassonografia sem descolamento visível não o exclui.
+
+**Conduta.** Estabilização materna, comunicação precoce com obstetrícia, cirurgia/trauma, anestesia e neonatologia conforme gravidade. A monitorização, o tempo de observação e a indicação de profilaxia anti-D em gestante Rh-negativa dependem de idade gestacional, lesão e protocolo. Deterioração materna impõe reavaliação xABCDE imediata.
+
+**Por que importa.** Proteção fetal começa com fisiologia materna; nem sinais vitais aparentemente discretos nem falta de sangramento visível garantem ausência de emergência obstétrica.
+
+## 25. Caso clínico comentado 6 — Criança com choque compensado após atropelamento
+
+**Apresentação.** Criança de 7 anos, atropelada em baixa visibilidade, com dor abdominal e palidez. Está ansiosa, reconhece a mãe, mas responde lentamente. Apresenta FC 148 bpm, extremidades frias, tempo de enchimento capilar prolongado e pressão arterial que, isoladamente, não parece dramaticamente baixa para a faixa etária. Sem hemorragia externa expressiva.
+
+**Hipóteses.** Choque hemorrágico ainda compensado por vasoconstrição, dor e estresse como contribuintes, lesão abdominal e fratura de osso longo ainda não identificada. O comportamento diferente do habitual merece atenção.
+
+**Raciocínio.** Não esperar hipotensão franca. A criança pode manter pressão até perda relevante de reserva. Repetir avaliação de perfusão, consciência e temperatura, procurar fonte, garantir oxigenação e acessos apropriados. A avaliação do abdome pode ser dificultada por ansiedade; achados negativos não substituem reavaliação e decisão por imagem apropriada.
+
+**Exames.** Ultrassonografia focal ou TC conforme estabilidade, mecanismo e risco pediátrico; hemograma e testes de perfusão como apoio, não como justificativa para esperar. Exames e estratégias de prevenção de radiação devem coexistir com a necessidade de diagnóstico oportuno.
+
+**Conduta.** Acionar equipe de trauma pediátrico, manter controle térmico, ressuscitação adequada a peso e fisiologia, hemocomponentes quando indicados e antecipação de hemostasia/transferência. Documentar parâmetros conforme idade; evitar doses adultas padronizadas.
+
+**Por que importa.** Em pediatria, o fenótipo do choque pode anteceder a hipotensão; a atenção a perfusão e comportamento previne reconhecimento tardio.
+
+---
+
+## 26. Questões originais de residência — análise de todas as alternativas
+
+### Questão 1 — Primeira prioridade no trauma de extremidade
+
+Um homem de 34 anos chega após acidente com serra industrial. Está consciente, fala em frases inteiras e apresenta sangramento arterial volumoso na coxa. Qual é a conduta imediatamente prioritária?
+
+A. Solicitar radiografia de fêmur antes de qualquer intervenção.
+B. Controlar imediatamente hemorragia externa com compressão efetiva e técnica apropriada.
+C. Realizar avaliação secundária completa antes de interferir na ferida.
+D. Inserir sonda vesical e obter diurese horária para confirmar choque.
+
+**Gabarito: B.** Hemorragia externa exsanguinante tem prioridade inicial no xABCDE; controle efetivo pode exigir pressão, torniquete ou abordagem hemostática específica. Ação de outros membros da equipe em A e B pode ocorrer paralelamente. **A incorreta:** define anatomia óssea, mas perde tempo diante de ameaça letal. **C incorreta:** avaliação secundária começa após tratamento de ameaças imediatas. **D incorreta:** diurese é marcador de perfusão e sonda pode ter contraindicações; não controla a fonte da perda. **Minirrevisão:** sequência não é ritual; lesão que mata primeiro recebe intervenção primeiro. Ver §§3–4.
+
+### Questão 2 — Pressão preservada, perfusão ruim
+
+Após queda de motocicleta, paciente de 20 anos apresenta PA 118/76 mmHg, FC 130 bpm, extremidades frias, enchimento capilar lentificado e agitação. Não há perda externa visível. Qual interpretação é mais adequada?
+
+A. O paciente não pode estar em choque porque a pressão sistólica é normal.
+B. A oximetria normal exclui hipoperfusão.
+C. O conjunto sugere hipoperfusão possivelmente hemorrágica ainda compensada.
+D. A única explicação possível é ansiedade pelo acidente.
+
+**Gabarito: C.** A resposta simpática pode preservar pressão temporariamente em jovem com perda circulante; mecanismos alternativos devem ser considerados, mas busca de sangramento interno é obrigatória. **A incorreta:** hipotensão pode ser tardia. **B incorreta:** saturação reflete oxigenação da Hb, não volume e fluxo sanguíneo. **D incorreta:** ansiedade pode aumentar FC, mas não explica automaticamente pele fria e perfusão prejudicada. **Minirrevisão:** interpretar tendências e perfusão, não um número isolado; ver §§1 e 13.
+
+### Questão 3 — Pneumotórax hipertensivo com instabilidade
+
+Paciente intubado após trauma torácico apresenta deterioração súbita, assimetria ventilatória, hipoxemia grave e hipotensão. A equipe suspeita de pneumotórax hipertensivo. Melhor decisão?
+
+A. Aguardar TC contrastada para localizar a lesão.
+B. Aguardar desvio de traqueia, indispensável para confirmação.
+C. Descomprimir imediatamente o tórax por técnica apropriada pela equipe habilitada e reavaliar.
+D. Administrar apenas analgesia e repetir saturação em trinta minutos.
+
+**Gabarito: C.** A combinação de deterioração respiratória grave/instabilidade com suspeita clínica indica tratamento antes de imagem. **A incorreta:** deslocamento para TC atrasa intervenção salvadora. **B incorreta:** desvio traqueal pode estar ausente ou surgir tardiamente. **D incorreta:** analgesia não corrige obstrução ventilatória/circulatória. **Minirrevisão:** posição do tubo e circuito também precisam ser rapidamente verificados; ver §§6 e 17.2.
+
+### Questão 4 — FAST negativo
+
+Uma mulher de 60 anos com suspeita de fratura pélvica e PAS 80 mmHg tem FAST negativo. Qual afirmação é correta?
+
+A. FAST negativo exclui sangramento abdominal e retroperitoneal.
+B. O exame não exclui sangramento pélvico/retroperitoneal nem outras fontes de hipoperfusão.
+C. A paciente deve necessariamente receber 2 L de cristaloide antes de ser avaliada por cirurgia.
+D. Uma TC é obrigatória antes de qualquer decisão terapêutica mesmo se permanecer instável.
+
+**Gabarito: B.** O FAST investiga janelas limitadas e sua negatividade não exclui lesões relevantes. **A incorreta:** sensibilidade não é perfeita. **C incorreta:** volume cristalóide fixo ignora ressuscitação hemostática e riscos de diluição. **D incorreta:** pacientes instáveis não responsivos podem necessitar hemostasia sem TC. **Minirrevisão:** interpretar exames condicionados pela fisiologia; ver §§10 e 17.4.
+
+### Questão 5 — Ácido tranexâmico
+
+Adulto vítima de trauma há 90 minutos apresenta hemorragia significativa ativa. Qual alternativa descreve corretamente a recomendação da diretriz europeia de 2023?
+
+A. Usar TXA somente após completar resultado de tromboelastografia.
+B. Usar TXA para qualquer pessoa com escoriação, independentemente da magnitude do sangramento.
+C. Não usar TXA em hemorragia traumática porque não há benefício descrito.
+D. Considerar 1 g IV em 10 minutos seguido de 1 g ao longo de 8 horas, o mais cedo possível, dentro de 3 horas, sem atrasar hemostasia.
+
+**Gabarito: D.** Corresponde à recomendação para adulto com sangramento ou risco de sangramento importante. **A incorreta:** diretriz não condiciona dose inicial ao resultado viscoelástico. **B incorreta:** não se indica antifibrinolítico indiscriminadamente para lesões leves. **C incorreta:** há evidência e recomendação em hemorragia relevante. **Minirrevisão:** janela desde a lesão importa; aplicação tardia sem contexto específico não é equivalente. Ver §7.5.
+
+### Questão 6 — Deterioração de consciência no idoso
+
+Idoso anticoagulado, após queda, apresentava Glasgow 15 e passa a apresentar vômitos, confusão e anisocoria. Qual é a melhor conduta?
+
+A. Atribuir mudança de consciência à idade e liberar com familiar.
+B. Repetir xABCDE, checar causas reversíveis e solicitar avaliação de TCE urgente com recursos de neurocirurgia.
+C. Administrar sedativo e adiar investigação até o dia seguinte.
+D. Evitar TC porque queda da própria altura nunca produz hemorragia intracraniana.
+
+**Gabarito: B.** Rebaixamento evolutivo com sinais focais exige reconhecimento e investigação urgente, preservando oxigenação/perfusão. **A incorreta:** subestima alteração aguda do basal. **C incorreta:** sedação sem indicação obscurece exame e atrasa diagnóstico. **D incorreta:** mecanismo de baixa energia pode produzir lesão importante, sobretudo com anticoagulação. **Minirrevisão:** Glasgow seriado deve discriminar componentes e horário; ver §§8 e 16.3.
+
+### Questão 7 — Choque e lesão medular
+
+Após queda de altura, adulto com fraqueza em quatro membros apresenta hipotensão e frequência cardíaca relativamente baixa. Qual afirmação é correta?
+
+A. Bradicardia exclui choque hemorrágico.
+B. Diagnóstico de choque neurogênico dispensa investigação de sangue no tórax, abdome e pelve.
+C. Lesão medular aumenta suspeita de choque neurogênico, mas hemorragia e causas obstrutivas devem ser investigadas e tratadas.
+D. A ausência de taquicardia indica que o paciente não precisa de monitorização.
+
+**Gabarito: C.** Trauma é cenário de causas coexistentes. **A incorreta:** medicamentos, lesão autonômica e idade alteram resposta cardíaca. **B incorreta:** sangramento pode coexistir com lesão medular. **D incorreta:** hipotensão e alteração neurológica representam risco elevado. **Minirrevisão:** choque é síndrome de hipoperfusão com mecanismos distintos; ver §§5.3 e 7.2.
+
+### Questão 8 — Trauma na gestação
+
+Gestante de 30 semanas sofre colisão de carro e apresenta dor abdominal, taquicardia e pressão aparentemente normal. Não há sangramento vaginal. Qual é a melhor interpretação?
+
+A. A ausência de sangramento vaginal exclui descolamento placentário.
+B. O único atendimento inicial necessário é ultrassom fetal, antes da avaliação materna.
+C. O xABCDE materno é prioridade, com avaliação obstétrica/fetal após estabilização; ausência de sangue vaginal não afasta complicação placentária.
+D. Exames de imagem materna são proibidos em qualquer trimestre, mesmo em risco de vida.
+
+**Gabarito: C.** Perfusão e oxigenação maternas são determinantes de bem-estar fetal. **A incorreta:** pode haver hemorragia retroplacentária oculta. **B incorreta:** não antecipa correção de choque/hipóxia materna. **D incorreta:** imagem necessária deve ser escolhida com avaliação de riscos e benefícios. **Minirrevisão:** anatomia aortocava e fisiologia gestacional modificam exame e posição; ver §16.2.
+
+### Questão 9 — Criança após trauma
+
+Criança atropelada está pálida, com taquicardia e enchimento capilar prolongado, mas sem hipotensão franca. Qual é a conduta intelectualmente mais correta?
+
+A. Descartar choque porque pressão infantil pode permanecer normal durante compensação.
+B. Reconhecer risco de choque compensado, avaliar fonte de perda e conduzir ressuscitação adequada à idade e peso.
+C. Usar automaticamente todas as doses fixas adultas em metade do volume.
+D. Não repetir sinais vitais até aparecer hipotensão.
+
+**Gabarito: B.** Crianças podem compensar perda por vasoconstrição e descompensar rapidamente. **A incorreta:** formula uma falsa exclusão. **C incorreta:** dosagens e dispositivos pediátricos não se reduzem a regra universal de fração da dose adulta. **D incorreta:** evolução seriada muda reconhecimento e tratamento. **Minirrevisão:** comportamento e perfusão são fundamentais; ver §16.1.
+
+### Questão 10 — Medidas associadas à hemorragia maciça
+
+Qual afirmação descreve princípio moderno de ressuscitação em hemorragia traumática importante?
+
+A. Controle de fonte pode ser adiado enquanto se tenta normalizar pressão com cristaloides.
+B. Coagulopatia só deve ser investigada depois de 24 horas de sangramento.
+C. A temperatura corporal não influencia hemostasia.
+D. Hemocomponentes equilibrados e monitorização de coagulação, cálcio e temperatura acompanham controle definitivo da fonte.
+
+**Gabarito: D.** Hemoterapia equilibrada inicial em hemorragia maciça, seguida de tratamento guiado por achados e hemostasia, integra ressuscitação moderna. **A incorreta:** a perda continua apesar do volume administrado. **B incorreta:** coagulopatia ocorre precocemente. **C incorreta:** hipotermia agrava disfunção da coagulação. **Minirrevisão:** o objetivo é restaurar entrega de oxigênio e coagulação útil, não alcançar pressão isolada; ver §7.4.
+
+### Questão 11 — Via aérea e confirmação
+
+Após intubação orotraqueal em trauma grave, qual método possui maior valor para confirmar ventilação traqueal quando disponível e interpretar evolução?
+
+A. Observação de condensação no tubo, isoladamente.
+B. Capnografia com CO2 expirado sustentado, integrada a exame e mecânica ventilatória.
+C. Apenas cor da pele no instante da intubação.
+D. Ouvir ar no estômago e considerar o tubo seguro se não houver som.
+
+**Gabarito: B.** Capnografia contínua é parte importante da confirmação e vigilância pós-intubação, contextualizada com perfusão e ventilação. **A incorreta:** condensação pode ocorrer sem posicionamento correto. **C incorreta:** cor da pele é inespecífica e tardia. **D incorreta:** ausculta isolada não garante posição nem profundidade adequada. **Minirrevisão:** após intubação, piora hemodinâmica ou respiratória exige investigar tubo, circuito, pneumotórax e choque; ver §5.2.
+
+### Questão 12 — O momento da avaliação secundária
+
+Paciente politraumatizado teve hemorragia externa controlada, via aérea segura, ventilação eficaz e perfusão em melhora. Iniciada a avaliação secundária, a pressão cai e surge dispneia intensa. Qual decisão é correta?
+
+A. Prosseguir com exame detalhado do hálux porque cada etapa não deve ser interrompida.
+B. Priorizar história familiar completa antes de qualquer reavaliação.
+C. Retornar imediatamente ao xABCDE e tratar nova ameaça conforme o achado.
+D. Esperar uma hora por repetição do hemograma, sem intervenções.
+
+**Gabarito: C.** O protocolo é dinâmico e reiniciado diante de deterioração. **A incorreta:** avalia lesão de menor prioridade enquanto o paciente piora. **B incorreta:** informações secundárias não atrasam tratamento. **D incorreta:** valores laboratoriais não substituem clínica nem ação imediata. **Minirrevisão:** o atendimento é uma sequência de ciclos de priorização e resposta, não formulário linear; ver §§2.2, 11 e 12.
+
+---
+
+## 27. Matriz de cobertura e teste de autossuficiência — revisão editorial ainda aberta
+
+Esta matriz não é prova automática de qualidade. Ela permite localizar o que está realmente explicado, em vez de apenas enumerado.
+
+| Competência avaliada | Fundamentação interna | Exercício de verificação | Estado |
+|---|---|---|---|
+| Fisiologia de choque, DO2, Hb e perfusão | §§1, 7, 13 | Questões 2 e 10 | Texto desenvolvido; revisão clínica pendente |
+| Reconhecimento e controle de sangramento catastrófico | §§3–4 e 17.1 | Caso 1 e questão 1 | Texto desenvolvido; técnica prática depende de treinamento |
+| Indicação e confirmação de via aérea | §§5 e 17.2 | Caso 2 e questão 11 | Texto desenvolvido; algoritmos de falha/doses a ampliar |
+| Diferencial de insuficiência respiratória | §§6 e 17.2 | Caso 2 e questão 3 | Texto desenvolvido; sinais específicos a ampliar |
+| Ressuscitação hemostática, TXA, fonte | §§7 e 15 | Casos 1/3 e questões 4/5/10 | Diretrizes ancoradas; checar contexto nacional |
+| Glasgow e deterioração neurológica | §§8 e 17.3 | Caso 4 e questão 6 | Necessita tabela completa de componentes |
+| E, exame sistemático, prevenção de hipotermia | §§9 e 11 | Questão 12 | Texto desenvolvido; visual futuro |
+| Ultrassom, radiografia, TC e limites | §10 e 17.4 | Caso 3 e questão 4 | Texto desenvolvido; revisar algoritmos por recurso |
+| Escolha de destino e transferência | §§12 e 19 | Caso 3 | Texto desenvolvido; simular transferência regional |
+| Crianças, gestantes, idosos, medicação | §16 | Casos 4/5/6 e questões 6/8/9 | Texto desenvolvido; detalhar variação por faixa etária |
+| Segurança e comunicação | §§2 e 19 | Questão 12 | Texto desenvolvido; revisão de usabilidade pendente |
+
+**Teste editorial provisório:** As 12 questões acima podem ser respondidas pelos capítulos indicados. Isso **não certifica** a apostila: ainda faltam leitura independente integral, auditoria de repetição, confronto de contraindicações e recomendações com fontes brasileiras atualizadas, verificação visual desktop/PWA e aprovação de candidatos de imagem.
+
+## 28. Referências principais verificáveis e hierarquia de uso
+
+1. **American College of Surgeons.** Advanced Trauma Life Support (ATLS), 11th edition, informação institucional sobre curso e estrutura xABCDE, 2025. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/
+2. **American College of Surgeons.** Trauma Care Gets Major Upgrade with Launch of ATLS 11, 16 September 2025. https://www.facs.org/for-medical-professionals/news-publications/news-and-articles/acs-brief/september-16-2025-issue/trauma-care-gets-major-upgrade-with-launch-of-atls-11/
+3. **National Institute for Health and Care Excellence (NICE).** NG39: Major trauma — assessment and initial management. https://www.nice.org.uk/guidance/ng39/chapter/Recommendations
+4. **Rossaint R, Afshari A, Bouillon B, et al.** The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care. 2023;27:80. DOI 10.1186/s13054-023-04327-7. https://link.springer.com/article/10.1186/s13054-023-04327-7
+5. **World Health Organization; International Committee of the Red Cross.** Basic Emergency Care: Approach to the Acutely Ill and Injured. WHO; 2018. https://www.who.int/publications/i/item/9789241513081
+6. **NICE.** Spinal injury: assessment and initial management, NG41. Consulta de regras de restrição de movimento e investigação por cenário deve ser realizada na revisão científica específica. https://www.nice.org.uk/guidance/ng41
+
+**Nota de rastreabilidade:** a divulgação pública da ACS confirma a mudança para xABCDE, mas não dá acesso ao manual ATLS 11 integral sob licença. Este texto **não afirma** ter auditado cada linha do manual pago. Recomendação medicamentosa e escolhas técnicas descritas devem ser validadas pelo texto integral das diretrizes abertas e normas institucionais brasileiras antes de publicação.
+
+## 29. Plano da camada visual — candidatas, não imagens incorporadas
+
+O Admin de imagens da LURIA recebe somente candidatas com autoria, fonte e licença verificadas. Nenhuma das sugestões abaixo constitui autorização automática para baixar ou publicar imagens:
+
+1. Foto clínica real de torniquete corretamente aplicado em extremidade com demonstração de nível anatômico e referência visual; objetivo: distinguir torniquete de compressão direta.
+2. Esquema autoral vetorial de xABCDE com ramificação de ressuscitação e reavaliação; objetivo: mostrar a natureza circular do protocolo (não é imagem clínica).
+3. Radiografia de tórax real mostrando pneumotórax significativo, com legenda de sinais; objetivo: interpretar pleura e expansão.
+4. Sequência de ultrassom pulmonar real com deslizamento pleural e ausência de deslizamento em contexto apropriado; objetivo: ensinar limitação/achados do eFAST.
+5. Ultrassom FAST com líquido livre em bolsa hepatorrenal, com setas e fonte clínica; objetivo: interpretar janela positiva.
+6. Ultrassom FAST em janela pélvica, preferencialmente com comparação normal/alterada; objetivo: anatomia e sensibilidade.
+7. TC abdominal com lesão de baço e hemoperitônio em paciente estável; objetivo: diferenciar indicação de TC e de cirurgia.
+8. Radiografia de pelve com fratura de anel e exemplo de posicionamento de binder demonstrativo; objetivo: reconhecer risco de sangramento e evitar binder sobre cintura.
+9. Exemplo didático real de hematoma epidural/subdural com autorização institucional para inclusão; objetivo: justificar deterioração neurológica, mantendo detalhamento no capítulo 052.
+10. Algoritmo vetorial original de escolha entre avaliação à beira-leito, TC e hemostasia; objetivo: ensinar a decisão condicionada à estabilidade.
+
+**Pendências para cada candidata:** identificar proprietário, origem primária, licença válida para uso comercial e eventuais exigências de atribuição; verificar correspondência clínica; preparar legenda, objetivo e seção de destino; converter para WebP otimizado; submeter e aguardar aprovação no Admin. Não copiar figuras protegidas do ATLS nem dos PDFs privados.
+
+## 30. Auditoria final — status ainda não certificado
+
+- [x] Recorte curricular identificado como nº 047 do lote 3.
+- [x] Benchmark comparativo efetivamente aberto e descrito; procedência institucional não inventada.
+- [x] Apostila LURIA existente de referência visual inspecionada, sem alteração.
+- [x] Texto autoral com fisiologia normal antes da patologia, xABCDE, condutas, populações especiais e seis casos.
+- [x] Doze questões autorais de cinco alternativas? **Não:** todas têm quatro alternativas A–D, plenamente comentadas. Corrigir indicação se a padronização editorial exigir cinco.
+- [x] Diagnósticos diferenciais e algoritmos de decisão ao longo dos capítulos.
+- [ ] Contagem de caracteres **didáticos úteis**, eliminando cabeçalhos, referências, tabelas e repetições, com validador apropriado.
+- [ ] Revisão técnica independente e avaliação explícita de doses, contraindicações e divergências entre protocolos.
+- [ ] Aprofundamento adicional onde teste com questões externas relevantes revelar lacunas.
+- [ ] Seleção e aprovação efetiva de imagens no fluxo centralizado do Admin.
+- [ ] Transformação para template HTML/content.json, testes de sintaxe, auditoria desktop/PWA, liberação editorial e deploy.
+
+**Conclusão:** manuscrito substancial, em revisão, não publicado. O comprimento bruto do Markdown não certifica qualidade, segurança de uso clínico nem autossuficiência.
