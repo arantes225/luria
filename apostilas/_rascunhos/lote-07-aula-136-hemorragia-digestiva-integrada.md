@@ -361,3 +361,164 @@ Etiologias mudam por idade: fissura, alergias/colites, divertículo de Meckel, p
 
 ### 23.4. Pacientes críticos/UTI
 Ventilação mecânica, coagulopatia, choque e exposição a múltiplos fármacos alteram risco de lesão mucosa por estresse. Profilaxia farmacológica de sangramento de estresse é decisão por risco, não prescrição universal a todo internado. Ao surgir sangramento ativo, investigar lesão e controlar foco; continuar apenas profilaxia de baixa dose é insuficiente.
+
+
+## 24. Simulações de decisão clínica: cinco pacientes, cinco caminhos
+
+### Caso 5 — pressão arterial recuperada, úlcera ainda sangrando
+**Apresentação:** homem de 62 anos apresenta melena e hematêmese após uso de AINE. Na admissão, PA 86/52, FC 126, Hb 9,3 g/dL. Após reposição inicial e duas unidades de hemácias por gravidade, PA sobe para 112/68 e a equipe discute alta após “normalização”. Em EDA observa-se úlcera de 2,5 cm na parede posterior do duodeno com sangramento ativo Forrest Ib.
+
+**Hipóteses:** úlcera gastroduodenal arterial de alto risco e choque hemorrágico inicialmente compensado após ressuscitação.
+
+**Raciocínio por etapas:** 1) a melhora hemodinâmica após sangue não garante hemostasia; 2) lesão posterior grande é associada a vaso significativo; 3) Forrest Ib é lesão que demanda terapia endoscópica; 4) ESGE 2026 permite estratégias como clipes OTS apropriados e tratamento combinado; 5) a persistência ou recidiva pode exigir TAE e cirurgia se falha/indisponibilidade.
+
+**Exames/interpretação:** Hb seriada, renal, tipagem, EDA com descrição de vaso/coágulo/anatomia, pesquisa de H. pylori posteriormente e revisão de AINE. A estabilidade transitória não reclassifica Forrest Ib em lesão de baixo risco.
+
+**Conduta:** hemostasia endoscópica durável por equipe capaz, IBP de alta dose após tratamento conforme protocolo, monitorização, antecipação de resgate intervencionista se alto risco, correção de anemia/ferro e erradicação de H. pylori quando confirmada.
+
+**Por que importa:** ressuscitação salva a perfusão; **controle do foco salva contra ressangramento**.
+
+### Caso 6 — sangue vivo e anticoagulação, mas a cor não localiza
+**Apresentação:** mulher de 74 anos com fibrilação atrial em apixabana chega com três evacuações de sangue vinho e coágulos em uma hora, síncope e PA 82/48 mmHg. A família informa história de úlcera duodenal, mas também diverticulose em colonoscopia prévia.
+
+**Hipóteses:** HDB arterial de cólon, HDA maciça, sangramento de delgado; exacerbação por anticoagulação.
+
+**Raciocínio:** 1) choque determina prioridade; 2) sangue vivo não afasta lesão alta de grande fluxo; 3) há duas fontes históricas plausíveis mas nenhuma comprovada; 4) DOAC muda risco e eventual reversão, sem determinar topografia; 5) a escolha entre EDA e CTA depende de sinais de HDA e atividade do sangramento, após suporte e disponibilidade.
+
+**Exames:** hemograma e tendência, renal, tipagem, estado da anticoagulação/última dose, EDA/CTA conforme probabilidade e instabilidade. Não presumir que INR normal exclui efeito de apixabana.
+
+**Conduta:** ABCDE, hemoterapia conforme choque, pausa temporária e possível reversão apenas se gravidade indicar e protocolo permitir, localização/resgate endoscópico/intervencionista, discussão de retomada da anticoagulação por FA após hemostasia.
+
+**Por que importa:** “HDB em uso de apixabana” é uma descrição incompleta até localizar lesão e proteger risco trombótico.
+
+### Caso 7 — cirrose com sangramento de úlcera, não de variz
+**Apresentação:** homem de 53 anos com cirrose e varizes prévias chega com hematêmese e melena, PA limítrofe e ascite. Recebe suporte, vasoativo e antibioticoprofilaxia pela forte suspeita inicial de HDA varicosa. EDA mostra varizes esofágicas sem estigmas de sangramento e úlcera gástrica Forrest IIa, com vaso visível.
+
+**Hipóteses:** HDA não varicosa em paciente com hipertensão portal; varizes coexistentes sem prova de que sangraram.
+
+**Raciocínio:** tratamento probabilístico inicial de variz é justificável pela gravidade, mas confirmação endoscópica deve redirecionar terapia; Forrest IIa demanda hemostasia ulcerosa. Não continuar vasoativo indefinidamente sem reavaliar indicação após EDA, nem abandonar seguimento de hipertensão portal. INR alterado isoladamente não determina plasma em rotina.
+
+**Exames:** EDA hemostática, Hb seriada, renal, função hepática, pesquisa de H. pylori, avaliação de ascite/infecção e hepatologia.
+
+**Conduta:** hemostasia de úlcera, IBP de dose apropriada, avaliação de interrupção da droga vasoativa conforme causa comprovada/protocolo, vigilância de cirrose/varizes e estratégias anti-infecciosas conforme risco. Reavaliar AINE, anticoagulação e prevenção de recidiva.
+
+**Por que importa:** a hipótese inicial pode estar errada; o bom clínico atualiza o plano ao receber evidência.
+
+### Caso 8 — sangramento sentinela após cirurgia da aorta
+**Apresentação:** homem de 68 anos com reparo prévio de aneurisma de aorta abdominal há três anos teve melena e discreta hematoquezia há dois dias, melhorou espontaneamente. Retorna hoje com hematêmese, dor abdominal vaga, febre baixa e hipotensão.
+
+**Hipóteses:** fístula aortoentérica secundária até prova em contrário; HDA ulcerosa e outras causas em paralelo.
+
+**Raciocínio:** sangramento digestivo após prótese aórtica exige considerar comunicação entre aorta/prótese e intestino. O **“sangramento sentinela”** pode preceder hemorragia fatal; EDA normal/inconclusiva não afasta completamente fístula, sobretudo distal ao alcance visual.
+
+**Exames:** angio-TC de aorta/abdome em condição transportável com equipe, tipagem/protocolo de choque, avaliação vascular/infecção da prótese, EDA se indicada e coordenada sem atrasar cirurgia.
+
+**Conduta:** ressuscitação, acionar cirurgia vascular imediatamente e equipe multidisciplinar; controle de foco vascular, antibióticos quando infecção suspeita conforme protocolo e intervenção definitiva.
+
+**Por que importa:** reconhecer um diagnóstico raro de altíssimo impacto antes de chamar todo sangramento de “úlcera comum”.
+
+### Caso 9 — sangramento oculto e exame negativo de má qualidade
+**Apresentação:** mulher de 66 anos com Hb 8,8 g/dL, ferritina baixa e pesquisa de sangue nas fezes positiva; colonoscopia feita seis meses atrás relata “preparo muito ruim, progressão até cólon transverso”, sem pólipos; EDA mostrou gastrite leve.
+
+**Hipóteses:** perda gastrointestinal crônica com investigação ainda incompleta, incluindo neoplasia colorretal/lesões vasculares; outras causas de ferro baixo possíveis.
+
+**Raciocínio:** “colonoscopia negativa” é frase incorreta quando exame não alcança ceco e visualização foi deficiente. Gastrite leve incidental não explica automaticamente anemia importante. A primeira tarefa é verificar **qualidade da investigação anterior** e escolher repetição adequada/estudo de todo o cólon, em vez de solicitar cápsula de delgado como se colonoscopia completa já tivesse sido feita.
+
+**Exames:** hemograma/ferritina/tendência, colonoscopia com preparo apropriado e acesso completo, EDA reavaliada conforme qualidade e contexto, outros estudos conforme achados e sintomas.
+
+**Conduta:** corrigir ferro, pesquisar fonte estruturadamente, orientar sinais de urgência e fazer seguimento até conclusão da investigação etiológica.
+
+**Por que importa:** um teste “negativo” sem qualidade não exclui doença.
+
+## 25. Questões inéditas de integração — oito erros frequentes
+
+### Questão 7 — hemoglobina e choque
+Paciente chega com hematêmese volumosa, PA 76/40 e Hb 11,8 g/dL. Qual princípio?
+A. Hb normal exclui choque hemorrágico. B. Esperar cair a 7 antes de obter acesso venoso. C. Tratar choque conforme perfusão e sangramento, preparando hemoterapia e controle de foco independentemente da Hb inicial. D. Dar alta com IBP oral.
+
+**Gabarito C.** Hemoglobina inicial pode subestimar perda aguda. **A/B** confundem concentração com volemia; **D** ignora instabilidade. **Mini-revisão:** ressuscitação guiada por choque não espera laboratório.
+
+### Questão 8 — relógios endoscópicos
+Qual combinação é mais correta após suporte?
+A. Toda úlcera estável deve fazer EDA em 30 minutos, e varizes apenas em uma semana. B. Varizes suspeitas exigem EDA idealmente ≤12 h após estabilização; úlcera estabilizada costuma ter EDA ≤24 h, sem urgência ≤6 h de rotina. C. Colonoscopia ≤1 h é obrigatória a todos com HDB. D. Endoscopia só se o paciente mantiver Hb 7.
+
+**Gabarito B.** Relógios diferem conforme mecanismo e gravidade. **A** inverte prioridade; **C** ignora preparo/evidência; **D** confunde transfusão com diagnóstico. **Mini-revisão:** o tempo tem de responder à etiologia, e não a uma regra universal.
+
+### Questão 9 — Forrest IIb e 2026
+Úlcera apresenta coágulo aderido Forrest IIb, em hospital com endoscopista treinado em hemostasia complexa. Qual afirmação condiz com ESGE 2026?
+A. Considerar remoção segura do coágulo e tratamento da lesão subjacente quando indicado e tecnicamente possível. B. Retirar sempre sem qualquer método de resgate. C. Nunca realizar qualquer hemostasia. D. Realizar apenas colonoscopia.
+
+**Gabarito A.** A recomendação é condicional à competência técnica. **B** gera risco; **C** é absoluto inadequado; **D** não é exame para úlcera alta. **Mini-revisão:** atualização de 2026 valoriza tratamento dirigido ao estigma revelado.
+
+### Questão 10 — CTA
+Idoso com hematoquezia volumosa persistente e instabilidade, com suporte inicial em andamento. Qual exame pode localizar extravasamento e dirigir embolização?
+A. Radiografia simples de abdome. B. ECG. C. Teste respiratório de H. pylori. D. Angio-TC, quando transporte/monitorização são viáveis.
+
+**Gabarito D.** CTA pode detectar foco hemorrágico ativo. **A/B/C** não localizam vaso intestinal em sangramento. **Mini-revisão:** CTA negativa não elimina fonte intermitente.
+
+### Questão 11 — cirrose e úlcera
+Cirrótico recebe pacote varicoso precoce, mas EDA mostra varizes sem sangramento e úlcera gástrica com vaso visível. O melhor princípio é:
+A. Ignorar EDA e manter apenas profilaxia de varizes. B. Tratar úlcera por hemostasia endoscópica/IBP, revisar terapia presuntiva e manter cuidado hepatológico. C. Rejeitar toda possibilidade de úlcera no cirrótico. D. Fazer colectomia.
+
+**Gabarito B.** Diagnóstico confirmado altera conduta. **A/C** são viés de ancoragem. **D** não se aplica. **Mini-revisão:** cirrose não define toda fonte hemorrágica.
+
+### Questão 12 — antitrombóticos
+Paciente com HDA controlada usa dupla antiagregação por stent implantado recentemente. Qual atitude é mais segura?
+A. Suspender ambos definitivamente sem discussão. B. Dar trombolítico para impedir trombose. C. Planejar suspensão/retomada conforme hemostasia, tipo de stent/tempo e cardiologia, evitando interrupção injustificada. D. Não perguntar medicações.
+
+**Gabarito C.** Risco trombótico permanece. **A** pode precipitar trombose; **B** agrava sangramento; **D** impede cuidado. **Mini-revisão:** resolver hemostasia e trombose em paralelo.
+
+### Questão 13 — fístula aortoentérica
+Paciente com prótese de aorta abdominal tem pequeno sangramento digestivo autolimitado e depois hemorragia grave. Qual diagnóstico não pode ser perdido?
+A. Fístula aortoentérica secundária e necessidade de cirurgia vascular urgente. B. Fissura anal simples apenas. C. Dispepsia funcional sem perigo. D. IBS isolada.
+
+**Gabarito A.** Sangramento sentinela após cirurgia aórtica é alerta importante. **B/C/D** não explicam risco vascular. **Mini-revisão:** cirurgia vascular prévia muda diferencial.
+
+### Questão 14 — exame “negativo” incompleto
+Mulher com anemia ferropriva e exame de cólon que alcançou apenas transverso, com preparo inadequado, é rotulada “sem câncer”. Qual afirmação?
+A. Exame incompleto exclui cólon direito. B. Anemia por gastrite leve está comprovada. C. Não há necessidade de seguir. D. Exame de baixa qualidade não exclui foco; verificar/completar investigação com colonoscopia adequada conforme risco.
+
+**Gabarito D.** Incompletude limita sensibilidade e segurança. **A/B/C** extrapolam dados. **Mini-revisão:** qualidade do teste é parte do resultado.
+
+## 26. Teste de autossuficiência: integração não precisa virar repetição
+
+### 26.1. O que este livro agora ensina sem exigir outra leitura
+O estudante encontra fundamentos de manifestações, fisiopatologia de perda sanguínea, risco de via aérea, transfusão, sinais de choque, escolha de EDA/colonoscopia/CTA/cápsula, princípios de úlcera e varizes, HDB, antitrombóticos, causas raras e seguimento. Assim, consegue raciocinar diante de hematêmese, melena e hematoquezia sem consultar obrigatoriamente 127/132 para o **primeiro atendimento e diferencial**.
+
+As aulas especializadas continuam valiosas para técnica de clipes/varizes/TIPS, escolha detalhada de medicamento, anatomia profunda e sequências de manejo específicas, mas o aluno não deve precisar delas para entender por que EDA é indicada após estabilização ou por que hematoquezia com choque não exclui HDA.
+
+### 26.2. Matriz conteúdo → caso → questão
+| Conteúdo nuclear | Base interna | Caso | Questão |
+|---|---|---|---|
+| Choque e Hb inicial | 15 | 5, 6 | 7 |
+| Tempo varicoso vs úlcera | 18, 20 | 1, 7 | 8 |
+| Forrest e hemostasia | 19 | 3, 5, 7 | 9, 11 |
+| CTA/embolização e HDB | 18, 21 | 2, 6 | 10 |
+| Antitrombóticos | 22 | 3, 6 | 12 |
+| Vasoativo/antibiótico portal | 20 | 1, 7 | 2 e 11 |
+| Fístula aortoentérica | 17.3 | 8 | 13 |
+| Qualidade de colonoscopia | 18.3 | 9 | 14 |
+| Intestino delgado | 18.6 | 4 | 6 |
+| Anemia/ferro e alta | 19.5, 21.3 | 4, 9 | 14 |
+
+### 26.3. O que permanece ausente
+Falta detalhar protocolos brasileiros de dose, volume/velocidade transfusional institucional, anticoagulação e contraindicações; falta adaptar endoscopia a gestação/criança e anatomia alterada por bariátrica com casos próprios; falta imagem real licenciada e prova de revisão clínica independente. A aula é ainda **rascunho editorial**, não manual de prescrição ou procedimento.
+
+## 27. Referências adicionais e registro de versões
+6. ESGE, Gralnek IM et al. **Endoscopic diagnosis and management of peptic ulcer bleeding — Update 2026.** *Endoscopy*. 2026;58(8):899–924. Epub 13/05/2026. DOI 10.1055/a-2863-8314. https://pubmed.ncbi.nlm.nih.gov/42127996/
+7. ESGE. **Correction** to 2026 peptic ulcer bleeding update. Epub 22/05/2026. DOI 10.1055/a-2881-7411. https://pubmed.ncbi.nlm.nih.gov/42173116/
+8. Baveno VII. **Acute variceal bleeding**, consenso de hipertensão portal. https://pmc.ncbi.nlm.nih.gov/articles/PMC11090185/
+9. ACG. **Small Bowel Bleeding**, orientação educacional institucional; não substitui guideline integral. https://gi.org/topics/small-bowel-bleeding/
+
+**Nota de revisão científica:** a ESGE de maio/2026 tem correção editorial publicada posteriormente. A fonte da correção foi identificada, mas as consequências textuais detalhadas não foram verificadas integralmente nesta rodada; validar antes da certificação. Nenhuma fonte do Google Drive é considerada substituta de diretriz atual.
+
+## 28. Checklist após aprofundamento
+- [x] Ampliação original de fisiologia, hemoterapia, diferencial, exames, úlcera, varizes, HDB e antitrombóticos.
+- [x] Cinco casos integradores novos completos e oito questões autorais com comentário dos distratores.
+- [x] Seleção de exames, estratégia de resgate e retorno, incluindo fonte rara de altíssimo impacto.
+- [x] Discussão de evidência ESGE 2026 e Baveno VII/ACG/ESGE.
+- [ ] Revisão integral da correção ESGE de maio/2026 e de diretrizes brasileiras específicas.
+- [ ] Posologia medicamentosa validada para o SUS, reversores, anticoagulação, transfusão em populações especiais.
+- [ ] Imagens clínicas reais com proveniência, licença comercial, WebP e aprovação Admin.
+- [ ] Revisão médica externa, auditoria didática de repetições entre capítulos 127/132/136, teste de prova e integração HTML/PWA.
+**Status: RASCUNHO AVANÇADO, não certificado nem publicado.**
