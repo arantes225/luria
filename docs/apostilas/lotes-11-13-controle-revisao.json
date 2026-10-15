@@ -1104,16 +1104,17 @@
       "area": "Saúde Mental",
       "titulo": "Transtornos de personalidade e autolesão",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SM-12",
       "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
       "aulas_medcof": [],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Rascunho original conferido no GitHub, 28680 caracteres de Markdown. NICE CG78/NG225; 5 casos, 7 questões; benchmark específico não encontrado. Não certificada meta de 60 mil caracteres didáticos únicos, nem teste de autossuficiência, imagens licenciadas, revisão clínica ou PWA."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-251-transtornos-personalidade-autolesao.md"
     },
     {
       "id": 252,
@@ -1121,7 +1122,7 @@
       "area": "Saúde Mental",
       "titulo": "Saúde mental no ciclo gravídico-puerperal",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SM-13",
       "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
       "aulas_medcof": [
@@ -1134,11 +1135,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Rascunho original conferido no GitHub, 29822 caracteres de Markdown. ACOG 2023; 5 casos, 7 questões; benchmark psiquiátrico específico não encontrado. Não certificada meta de 60 mil caracteres didáticos únicos, nem teste de autossuficiência, imagens licenciadas, revisão clínica ou PWA."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-252-saude-mental-gestacao-puerperio.md"
     },
     {
       "id": 253,
@@ -1146,16 +1148,17 @@
       "area": "Saúde Mental",
       "titulo": "Luto, crises e transtornos de adaptação",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "SM-15",
       "instrucao": "Verificar a cobertura real do tema e das competências ENAMED; preencher capítulos necessários, sem reproduzir conteúdo já pronto.",
       "aulas_medcof": [],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Rascunho original conferido no GitHub, 25841 caracteres de Markdown. CID-11/DSM-5-TR/WHO PFA; 5 casos, 7 questões; comparação especializada não encontrada. Não certificada meta de 60 mil caracteres didáticos únicos, nem teste de autossuficiência, imagens licenciadas, revisão clínica ou PWA."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-253-luto-crises-adaptacao.md"
     },
     {
       "id": 254,
@@ -1163,7 +1166,7 @@
       "area": "Saúde Mental",
       "titulo": "Saúde mental do adolescente: avaliação e manejo inicial",
       "natureza": "tema_original_preservado",
-      "status_producao": "não verificado",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "fonte": "PED-15",
       "instrucao": "Psiquiatria da infância e adolescência (Média): avaliação, risco e manejo.",
       "aulas_medcof": [
@@ -1176,11 +1179,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Rascunho original conferido no GitHub, 48299 caracteres de Markdown. OMS 2025, MS, NICE NG134/NG225/NG87; 6 casos, 8 questões; benchmark específico não encontrado. Não certificada meta de 60 mil caracteres didáticos únicos, nem teste de autossuficiência, imagens licenciadas, revisão clínica ou PWA."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-254-saude-mental-adolescente.md"
     },
     {
       "id": 255,
