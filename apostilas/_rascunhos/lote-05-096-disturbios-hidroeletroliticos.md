@@ -265,6 +265,37 @@ E. O QT sempre estará prolongado em qualquer hipoalbuminemia.
 
 **Resposta: B.** O ionizado é a fração ativa. **A** transfere indevidamente o total para necessidade de intervenção; **C** ignora ligação proteica; **D** não explica o fenômeno; **E** transforma associação em regra.
 
+
+## 12. Unidade, fórmula e interpretação: oficina de cálculo para residência
+
+Em provas e na prescrição hospitalar, muitos erros surgem antes do raciocínio clínico: leitura incorreta de unidades, confusão entre total e ionizado, troca de BUN por ureia e aplicação de fórmulas fora do domínio para o qual foram criadas. O objetivo desta oficina é desenvolver a verificação antes de cada operação.
+
+### 12.1. Equivalências que não permitem atalho
+
+Para os íons monovalentes Na e K, as expressões **mmol/L** e **mEq/L** têm o mesmo valor numérico. Para íons divalentes, como Ca e Mg, essa equivalência não vale: a quantidade em mEq/L depende da valência e a conversão deve considerar o sal e a unidade real de dosagem. **mL é volume da solução e não indica quantidade de cátion sem concentração e fórmula química verificadas.** Um frasco de gluconato de cálcio 10% não é equivalente, em conteúdo de cálcio elementar por mL, a um frasco de cloreto de cálcio 10%.
+
+Em soluções de KCl, a concentração pode ser declarada em mEq por ampola, mEq/mL, porcentagem ou g de sal. Não se deve inferir uma taxa de infusão pela leitura isolada “KCl 19,1%” ou “10 mL”. A etapa segura exige transformar tudo para quantidade de K, diluente e velocidade sob protocolo da instituição. O mesmo vale para fosfatos que contêm potássio ou sódio: repor um íon pode simultaneamente administrar outro.
+
+### 12.2. Cálculo de osmolalidade como ferramenta de hipóteses
+
+Paciente com sódio medido 130 mmol/L, glicose 360 mg/dL e ureia 48 mg/dL. Pela fórmula didática, osmolalidade calculada ≈ (2 × 130) + (360/18) + (48/6) = **288 mOsm/kg**. Se alguém usar “48” como BUN, a estimativa ficará incorreta. Se houver etanol, manitol ou outro osmól não medido, a fórmula pode não explicar a osmolalidade medida. A discrepância é informação clínica, não simples “erro da máquina”.
+
+Na osmolalidade efetiva, a contribuição da ureia é retirada do cálculo aproximado. No exemplo, a tonicidade calculada seria ≈280 mOsm/kg. O caso ilustra por que a mesma osmolalidade pode esconder diferenças de forças osmóticas efetivas. A interpretação final depende de limite de referência do laboratório, glicemia, apresentação e confirmação analítica.
+
+### 12.3. Cálculo de água livre: estimativa estática versus paciente dinâmico
+
+Uma pessoa com 70 kg e fator de água corporal 0,5 tem estimativa de 35 litros de água corporal total. Com Na 154, o déficit aproximado em relação a Na 140 seria 35×(154/140−1) = **3,5 L**. O resultado pressupõe um modelo fisiológico simplificado, não inclui perdas atuais ou ganho por soluções já administradas e não define ritmo. Se a paciente estiver em choque, isso exige ressuscitação de circulação antes de organizar a reposição restante. Um cálculo correto usado no momento errado pode produzir conduta errada.
+
+### 12.4. Índices urinários: por que o denominador e o diurético importam
+
+Osmolalidade urinária e sódio urinário auxiliam a determinar se há antidiurese e como os rins respondem ao volume circulante. Contudo, **a concentração na urina não equivale automaticamente à quantidade total eliminada**: excretar certo número de mmol/L em 0,3 L/dia é diferente de fazê-lo em 5 L/dia. Diuréticos, insulina e função renal alteram valor e interpretação. Quando o problema depende de balanço, registrar débito urinário e período de coleta é indispensável.
+
+### 12.5. Interpretação de cálcio por fração ativa
+
+Cálcio total baixo com albumina baixa pode refletir menor fração ligada à proteína, sem redução equivalente do cálcio ionizado. O ionizado se torna especialmente útil em doença crítica, distúrbios de pH e outras situações de discrepância clínico-laboratorial. Não se deve decidir infusão intravenosa apenas por “cálcio corrigido” calculado, especialmente quando há cálcio ionizado normal e ausência de sintomas.
+
+**Checklist de prova:** identificar unidade e referência; conferir causa de coleta falsa; classificar ameaça imediata; escolher equação com domínio apropriado; calcular sem confundir denominador; verificar se o número obtido responde à pergunta clínica; nunca transformar automaticamente o cálculo em prescrição.
+
 ## 13. Algoritmo aprofundado do sódio: três perguntas antes da terapia
 
 A partir deste capítulo, a apostila passa da visão panorâmica para o raciocínio completo. Os capítulos 2–4 introduziram osmolaridade, concentração e emergências; aqui a finalidade é **ensinar a interpretar um painel de laboratório e selecionar uma hipótese fisiopatológica que explique o resultado**. A abordagem não deve depender de decorar números isolados, pois pacientes podem ter alterações simultâneas de água, sódio, glicose e função renal.
