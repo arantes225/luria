@@ -156,7 +156,7 @@ def render_record(
     if not success:
         out.unlink(missing_ok=True)
         raise ValueError(f"Cannot produce legible image under {limit_kb} KB; review manually")
-    return {"width":width,"height":height,"bytes":out.stat().st_size}
+    return {"width":width,"height":height,"bytes":out.stat().st_size, "uniform_ylim_mv": common_ylim, "sampling_hz": sample_rate}
 
 
 def main() -> None:
