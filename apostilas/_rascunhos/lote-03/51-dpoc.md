@@ -175,7 +175,172 @@ D) Aumentar oxigênio indiscriminadamente sempre corrige a insuficiência ventil
 **Gabarito: C.** **A incorreta:** SpO2 não mede CO2. **B incorreta:** alteração mental é sinal de gravidade. **C correta:** gasometria e avaliação clínica orientam VNI ou suporte invasivo, conforme estabilidade e proteção de via aérea. **D incorreta:** oxigênio corrige hipoxemia, não necessariamente hipoventilação, e hiperóxia pode piorar hipercapnia. **Revisão:** distinguir falência de oxigenação de falência ventilatória.
 
 
-## 15. Curadoria de imagens e referências
+## 15. Reabilitação pulmonar, exercício, nutrição e prevenção de incapacidade
+
+### 15.1 Por que broncodilatar não basta
+
+A DPOC não se restringe ao calibre dos brônquios. A hiperinsuflação dinâmica, a inatividade física, a disfunção muscular periférica, a ansiedade relacionada à dispneia e as comorbidades produzem um ciclo de descondicionamento. O paciente reduz caminhadas porque sente falta de ar; com menos atividade, perde força e passa a sentir dispneia com esforços progressivamente menores. Broncodilatadores ajudam a reduzir limitações ventilatórias, mas não reconstroem automaticamente força, confiança e autonomia.
+
+**Reabilitação pulmonar** é intervenção estruturada que combina avaliação individual, exercício supervisionado, educação, autogerenciamento e, conforme necessidade, suporte nutricional e psicossocial. Não equivale a orientar genericamente “faça caminhada”. Deve contemplar metas funcionais mensuráveis, segurança, progressão e plano para manutenção do condicionamento.
+
+### 15.2 Quem deve ser avaliado para reabilitação
+
+Pacientes com limitação funcional, dispneia persistente, intolerância ao esforço e aqueles que se recuperam de exacerbações importantes podem se beneficiar. A indicação não deve depender apenas do VEF1. Pessoas com obstrução moderada podem ter incapacidade acentuada; outras com obstrução grave conseguem manter atividade relevante. A avaliação inicial considera saturação em repouso e esforço, capacidade funcional, doença cardiovascular, fragilidade, sintomas osteomusculares, riscos de queda e barreiras de transporte.
+
+**Exemplo:** paciente com mMRC 3 e duas internações no último ano usa broncodilatadores corretamente, mas evita sair de casa. Encaminhar para programa de reabilitação e abordar medo de dispneia pode trazer ganho que não seria obtido apenas trocando o inalador. Quando o programa presencial não está disponível, planejar alternativa supervisionada e segura na rede, sem prometer equivalência automática a um programa completo.
+
+### 15.3 Componentes de uma sessão de reabilitação
+
+O treinamento aeróbico pode usar caminhada, bicicleta ou outro exercício ajustado à capacidade. O treinamento resistido busca recuperar força de membros inferiores e superiores. Educação inclui conservação de energia, técnica inalatória, cessação do tabagismo, sinais de exacerbação e estratégias para lidar com ansiedade. A intensidade deve ser individualizada e revista segundo sintomas, saturação, frequência cardíaca e condições associadas; não há uma “velocidade de esteira universal” para DPOC.
+
+**Monitorização de segurança:** dor torácica, síncope, tontura importante, arritmia sintomática, dispneia desproporcional e dessaturação relevante exigem interromper e reavaliar o exercício. Pessoas com necessidade de oxigênio ao esforço requerem avaliação específica; isso não implica automaticamente indicação de oxigenoterapia domiciliar prolongada em repouso.
+
+### 15.4 Nutrição e composição corporal
+
+Baixo peso, perda de massa muscular e sarcopenia pioram reserva funcional. Por outro lado, obesidade pode agravar dispneia e coexistir com apneia obstrutiva do sono. Avaliar tendência ponderal, ingestão, força, dificuldade de mastigação, depressão e situação socioeconômica. O objetivo é manter composição corporal funcional, não impor restrição calórica indiscriminada.
+
+**Caso ilustrativo:** homem de 71 anos, IMC 19 kg/m², perdeu 5 kg em quatro meses, apresenta dispneia para refeições e usa broncodilatador de longa ação. Além de investigar neoplasia, infecção e outras causas de perda ponderal, planejar refeições fracionadas, avaliação nutricional e reabilitação. Não atribuir emagrecimento automaticamente à DPOC.
+
+### 15.5 Tabagismo: abordagem longitudinal
+
+Cessar tabagismo é uma das intervenções de maior impacto no curso da doença. A abordagem deve identificar dependência, tentativas prévias, gatilhos, contexto domiciliar e disponibilidade de tratamento comportamental e farmacológico conforme protocolos locais. Recaída é informação clínica para reajustar plano, não justificativa para encerrar seguimento. Também é relevante reduzir exposição a fumaça de biomassa e poluentes ocupacionais; pacientes que nunca fumaram podem desenvolver DPOC.
+
+**Pulo do Gato:** o melhor tratamento de manutenção é multidimensional: broncodilatação adequada + cessação do tabagismo + vacinação + reabilitação + acompanhamento de comorbidades e exacerbações.
+
+## 16. Oxigenoterapia domiciliar prolongada: indicação, limites e acompanhamento
+
+### 16.1 Separar hipoxemia crônica de dessaturação transitória
+
+A indicação de oxigenoterapia domiciliar prolongada deve basear-se em avaliação **estável**, com hipoxemia crônica importante documentada e critérios clínicos/gasométricos conforme o protocolo adotado. A necessidade de oxigênio durante pneumonia ou exacerbação não equivale a indicação vitalícia. Depois de recuperação, a oxigenação pode melhorar, exigindo reavaliação programada.
+
+Historicamente, critérios de estudos clássicos incluem PaO2 ≤55 mmHg ou SaO2 ≤88% em repouso, ou PaO2 56–59 mmHg com repercussões específicas, como cor pulmonale, hipertensão pulmonar ou policitemia; a aplicação exata deve seguir **PCDT e regras locais vigentes**, com avaliação técnica e documentação. Esses limiares são referências didáticas, não autorização automática para fornecimento sem protocolo e avaliação clínica.
+
+### 16.2 Benefício não é igual para todos
+
+O benefício de sobrevida foi demonstrado sobretudo em hipoxemia crônica grave. Em dessaturação moderada isolada, não se deve prometer o mesmo efeito. A necessidade ao exercício e durante sono exige investigação e decisão individualizada; é inadequado transformar um valor isolado de oxímetro em prescrição permanente. Reavaliar técnica de medida, altitude, perfusão, tabagismo ativo e condições associadas.
+
+### 16.3 Segurança doméstica
+
+Oxigênio favorece combustão; **não fumar perto de fontes de oxigênio**, evitar chamas, fogões e materiais inflamáveis nas proximidades, organizar cilindros/concentradores conforme normas e orientar familiares. Verificar energia elétrica, manutenção, disponibilidade de equipamentos e capacidade do paciente de manejar fluxos prescritos. A adesão não deve ser avaliada apenas pelo número de horas declarado: investigar desconforto, ressecamento, mobilidade, estigma e acesso a suporte técnico.
+
+## 17. Comorbidades e diagnósticos concorrentes
+
+### 17.1 Cardiovasculares
+
+DPOC e doença cardiovascular compartilham fatores de risco. Dispneia que piora subitamente pode decorrer de insuficiência cardíaca, arritmia, isquemia ou embolia pulmonar. Edema periférico, ortopneia, ganho de peso e sinais de congestão exigem investigação apropriada, sem presumir que todo edema é cor pulmonale. Em pacientes selecionados, ECG, radiografia, peptídeos natriuréticos, ecocardiografia e exames direcionados ajudam no diferencial.
+
+### 17.2 Câncer de pulmão e nódulos
+
+Tabagismo e enfisema elevam risco de câncer de pulmão. Hemoptise, perda ponderal inexplicada, dor persistente ou mudança sustentada do padrão de sintomas merecem investigação. **Rastreamento com TC de baixa dose** não é exame universal para todo paciente com DPOC: critérios de idade, exposição, expectativa de benefício, disponibilidade e política de saúde devem ser verificados na diretriz e no contexto assistencial. A presença de DPOC isoladamente não substitui critérios de rastreamento.
+
+### 17.3 Osteoporose, fraqueza e quedas
+
+Idade, tabagismo, inatividade, baixo peso e exposição a corticosteroides podem contribuir para perda óssea. Paciente com fratura por fragilidade merece avaliação específica. Corticosteroides sistêmicos repetidos ou prolongados aumentam riscos; é importante registrar a frequência dos cursos e buscar prevenção de exacerbações. Exercício resistido e prevenção de quedas são partes do cuidado.
+
+### 17.4 Ansiedade, depressão e sono
+
+A dispneia pode produzir medo de atividade e crises de ansiedade, mas não se deve concluir que sintomas respiratórios são “psicológicos” sem excluir causas orgânicas. Investigar humor, isolamento, qualidade do sono, ronco, sonolência diurna e possível apneia obstrutiva do sono. O uso de sedativos deve considerar risco de depressão respiratória e quedas; decisões terapêuticas precisam ser individualizadas.
+
+### 17.5 Bronquiectasias e infecções recorrentes
+
+Expectoração purulenta persistente, infecções repetidas e achados sugestivos em imagem podem apontar bronquiectasias coexistentes. Isso modifica investigação microbiológica e estratégias de higiene brônquica e prevenção. Antibiótico de uso prolongado não deve ser introduzido indiscriminadamente: avaliar risco de resistência, efeitos adversos e critérios especializados.
+
+### 17.6 Deficiência de alfa-1 antitripsina
+
+Considerar a investigação conforme recomendações aplicáveis, sobretudo em enfisema precoce, história familiar, apresentação desproporcional à exposição tabágica ou outros sinais clínicos. Identificar causa genética pode ter implicações familiares e preventivas; não pressupor que a ausência de tabagismo exclui DPOC.
+
+## 18. Avaliação longitudinal, prognóstico e cuidado centrado na pessoa
+
+### 18.1 O que registrar em cada consulta
+
+Um acompanhamento útil inclui sintomas (mMRC e/ou CAT), exacerbações desde a última avaliação, atendimentos de urgência/internações, exposição tabágica/ambiental, técnica inalatória observada, adesão, capacidade funcional, efeitos adversos e comorbidades. Espirometria seriada pode ser útil para acompanhar trajetória e reavaliar hipóteses, mas a frequência deve seguir necessidade clínica e recomendações, não substituir avaliação de sintomas e eventos.
+
+**Exemplo de prontuário funcional:** “DPOC confirmada por espirometria pós-broncodilatador; mMRC 2; uma exacerbação ambulatorial no ano; nenhuma internação; técnica de inalador revisada; segue fumando cinco cigarros/dia; orientada cessação; encaminhado à reabilitação; retorno programado”. Essa descrição é mais acionável do que “DPOC estável, manter”.
+
+### 18.2 Risco não se resume ao VEF1
+
+História de exacerbações, limitação funcional, comorbidades, fragilidade, hipoxemia e hospitalizações oferecem informações prognósticas. Índices compostos, como o BODE (IMC, obstrução, dispneia e exercício), podem apoiar avaliação em contextos apropriados, mas não substituem julgamento clínico. Não utilizar um único número para decidir isolamento social, elegibilidade de cuidado ou intensidade de tratamento.
+
+### 18.3 Cuidados paliativos e planejamento antecipado
+
+Cuidados paliativos não significam abandono de broncodilatadores, reabilitação ou tratamento de exacerbações. Em DPOC avançada, podem coexistir com intervenções modificadoras da doença para controlar dispneia, ansiedade, fadiga e sofrimento familiar. Discutir preferências sobre hospitalização, VNI, intubação e reanimação em momento adequado, com comunicação clara e documentação, respeitando autonomia e legislação.
+
+Uma conversa útil parte de perguntas abertas: “O que mais limita sua vida hoje?”; “O que você espera conseguir fazer?”; “O que você entende sobre episódios de piora?”. O profissional explica possibilidades e incertezas sem impor decisões. O objetivo é cuidado proporcional aos valores e prognóstico do paciente.
+
+## 19. Casos clínicos integradores — raciocínio ampliado
+
+### Caso 7 — Exacerbação ou edema pulmonar?
+
+Homem de 76 anos, DPOC documentada, chega com dispneia intensa de início em 24 horas, ortopneia, edema de membros inferiores e estertores bibasais. Tem hipertensão e cardiopatia isquêmica; nega aumento de escarro. Saturação 86% em ar ambiente, frequência respiratória 30/min.
+
+**Problema:** a presença de DPOC autoriza chamar o quadro de exacerbação infecciosa? **Não.** Insuficiência cardíaca descompensada é possibilidade importante; ambas as condições podem coexistir. Avaliar perfusão, congestão, ECG, radiografia e testes laboratoriais pertinentes, incluindo marcadores cardíacos conforme contexto. Corrigir hipoxemia e oferecer suporte ventilatório segundo gravidade, sem atrasar manejo de congestão se confirmada.
+
+**Desfecho didático:** ecocardiograma e conjunto clínico confirmam descompensação cardíaca. Após manejo apropriado, melhora dispneia sem antibiótico empírico para suposta exacerbação bacteriana. **Pulo do Gato:** diagnóstico prévio de DPOC não elimina diagnósticos concorrentes.
+
+### Caso 8 — Oxigênio domiciliar após pneumonia
+
+Mulher de 68 anos, DPOC moderada, internada por pneumonia. Durante a fase aguda, precisou de oxigênio suplementar; recebe alta clinicamente melhor, mas ainda com dessaturação ao esforço. Família solicita prescrição permanente de concentrador “porque precisou no hospital”.
+
+**Problema:** hipoxemia na fase aguda comprova indicação definitiva? **Não.** Deve-se avaliar oxigenação em repouso e esforço conforme necessidade, segurança da alta e critérios locais, com reavaliação após estabilização. A decisão não deve depender de uma única oximetria obtida durante infecção.
+
+**Desfecho didático:** é estabelecido plano de acompanhamento, com avaliação posterior de hipoxemia crônica. **Pulo do Gato:** oxigênio na exacerbação e oxigenoterapia domiciliar prolongada têm objetivos e critérios diferentes.
+
+## 20. Questões adicionais comentadas
+
+### Questão 9 — Reabilitação pulmonar
+
+Paciente com DPOC e dispneia persistente, apesar de broncodilatação adequada, relata isolamento e perda de força. Qual medida aborda o ciclo de descondicionamento?
+
+A) Orientar repouso absoluto permanente.
+B) Indicar programa individualizado de reabilitação pulmonar, após avaliação de segurança.
+C) Prescrever corticosteroide sistêmico contínuo apenas para aumentar força.
+D) Suspender acompanhamento porque VEF1 não mudou.
+
+**Gabarito: B.** **A incorreta:** repouso favorece descondicionamento. **B correta:** exercício supervisionado, educação e manejo de limitações podem melhorar capacidade funcional. **C incorreta:** corticoide sistêmico crônico pode agravar fraqueza e causa efeitos adversos. **D incorreta:** desfechos funcionais não dependem exclusivamente de variação do VEF1. **Revisão:** tratar incapacidade funcional, não só obstrução.
+
+### Questão 10 — Hipoxemia na fase aguda
+
+Paciente com DPOC recebeu oxigênio durante pneumonia e melhora após tratamento. Qual afirmação é mais adequada?
+
+A) Qualquer uso de oxigênio durante internação exige oxigenoterapia domiciliar vitalícia.
+B) Saturação normal em repouso após melhora elimina necessidade de toda avaliação adicional.
+C) A indicação de oxigenoterapia domiciliar prolongada depende de hipoxemia crônica documentada e critérios apropriados, com reavaliação após recuperação.
+D) O uso de oxigênio deve ser evitado mesmo em hipoxemia grave por risco de retenção de CO2.
+
+**Gabarito: C.** **A incorreta:** hipoxemia aguda pode ser transitória. **B incorreta:** sintomas e dessaturação em esforço podem exigir investigação individualizada. **C correta:** distinguir necessidade transitória de hipoxemia crônica é fundamental. **D incorreta:** hipoxemia grave precisa ser tratada com oxigênio titulado e monitorado. **Revisão:** evitar tanto prescrição permanente precipitada quanto omissão de oxigênio necessário.
+
+### Questão 11 — Diagnóstico concorrente
+
+Homem com DPOC conhecida apresenta dispneia, ortopneia e edema de membros inferiores sem alteração do escarro. Qual raciocínio é mais apropriado?
+
+A) DPOC prévia exclui insuficiência cardíaca.
+B) Todo quadro de dispneia nesse paciente é exacerbação bacteriana.
+C) É necessário investigar causas cardiovasculares, incluindo descompensação cardíaca, além de avaliar a DPOC.
+D) A radiografia e o ECG são sempre inúteis.
+
+**Gabarito: C.** **A incorreta:** doenças coexistem frequentemente. **B incorreta:** sintomas e sinais não sustentam etiologia bacteriana obrigatória. **C correta:** o diferencial inclui insuficiência cardíaca e outras causas agudas. **D incorreta:** exames podem ser úteis conforme hipótese e gravidade. **Revisão:** evitar ancoragem diagnóstica.
+
+### Questão 12 — Corticosteroide inalatório
+
+Paciente com DPOC confirmada, dispneia persistente e ausência de exacerbações frequentes solicita corticoide inalatório porque “é o remédio mais forte”. Qual resposta é correta?
+
+A) Corticoide inalatório isolado é primeira linha universal para DPOC.
+B) O principal papel do corticoide inalatório na DPOC, quando indicado, é reduzir exacerbações em perfis selecionados; a decisão considera histórico, eosinófilos, asma associada e riscos.
+C) Eosinófilos são irrelevantes em qualquer decisão.
+D) Corticoide inalatório não possui efeitos adversos.
+
+**Gabarito: B.** **A incorreta:** não é monoterapia universal. **B correta:** indicação é contextual e orientada pelo perfil de risco e benefícios esperados. **C incorreta:** eosinófilos podem auxiliar na estimativa de benefício. **D incorreta:** pneumonia e candidíase oral são exemplos de eventos relevantes. **Revisão:** não tratar apenas o rótulo DPOC.
+
+## 21. Revisão editorial de segurança e pontos de atualização
+
+**Decisões que exigem conferência normativa antes da homologação:** esquema e disponibilidade de LAMA/LABA/ICS no PCDT SUS 2026; critérios locais de dispensação e oxigenoterapia; indicação e duração de antimicrobianos em exacerbação; recomendações atualizadas para vacinas; critérios de rastreamento de câncer de pulmão; doses de corticoides sistêmicos e broncodilatadores. Evitar transformar recomendações internacionais do GOLD em acesso automaticamente garantido pelo SUS.
+
+**Itens visuais prioritários para desenho autoral:** árvore diagnóstica de suspeita → espirometria pós-broncodilatador → avaliação de sintomas/exacerbações; quadro da técnica inalatória por tipo de dispositivo; ciclo da hiperinsuflação e descondicionamento; algoritmo de exacerbação e diagnósticos diferenciais; fluxograma de reavaliação da necessidade de oxigênio após internação. Cada diagrama deve ser original, sem copiar figuras protegidas.
+
+**Checklist de revisão independente:** verificar coerência dos limiares e do ponto de corte fixo com a idade; não confundir exacerbação com pneumonia ou insuficiência cardíaca; garantir que nenhuma alternativa incorreta seja parcialmente defensável; conferir que oxigênio não é negado na hipoxemia grave; distinguir indicação de VNI e critérios de intubação; conferir que o conteúdo não promove antibiótico universal nem corticosteroide sistêmico crônico; manter referências e data de atualização explícitas.
+
+
+## 22. Curadoria de imagens e referências
 Candidatas: espirometria normal × obstrutiva, curvas fluxo-volume, diagrama autoral de hiperinsuflação, TC de enfisema com fonte verificável, radiografia comparativa de congestão, fotografia de técnica inalatória com licença comercial, demonstração licenciada de VNI, fluxos originais de classificação e escalonamento. **Nenhuma figura inédita deve entrar no HTML antes da aprovação Admin.**
 
 - Ministério da Saúde, PCDT DPOC atualizado 29/01/2026: https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view
