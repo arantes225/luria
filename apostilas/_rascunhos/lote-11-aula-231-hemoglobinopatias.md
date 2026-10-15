@@ -48,7 +48,7 @@ O comportamento clínico das variantes depende de expressão de HbF, co-herança
 
 **Padrões de herança em casais:** para HbAS × HbAS, cada gestação tem possibilidades mendelianas HbAA 25%, HbAS 50% e HbSS 25%; para HbAS × HbAC, possibilidades HbAA, HbAC, HbAS e HbSC em proporções teóricas de 25% cada. É indispensável avaliar variantes reais dos parceiros antes de aconselhar. O risco **não se acumula** entre gestações consecutivas: cada concepção é evento independente.
 
-### 1.4 Alfatalassemia em cis e em trans: por que duas deleções não são sempre iguais
+### 1.4 Alfa-talassemia em cis e em trans: por que duas deleções não são sempre iguais
 A configuração **–α/–α** (*trans*) representa uma deleção em cada cromossomo, enquanto **––/αα** (*cis*) reúne as duas deleções no mesmo cromossomo. Ambas podem resultar em traço alfa-talassêmico, mas suas consequências reprodutivas são diferentes. Dois parceiros com deleção cis podem conceber feto com **––/––**, relacionado a deficiência extrema de alfa-globina e hidropsia fetal por Hb Bart's. A identificação apenas de “VCM baixo com eletroforese normal” não esclarece essa distribuição; estudo genético pode ser determinante em aconselhamento.
 
 O problema oposto também importa: a forma **HbH** resulta habitualmente de três genes alfa comprometidos, com produção de tetrâmeros β₄ após o período fetal. A gravidade varia segundo deleção ou variantes não delecionais. Assim, saber contar cópias auxilia compreensão inicial, mas não substitui diagnóstico molecular quando prognóstico e risco gestacional estão em jogo.
