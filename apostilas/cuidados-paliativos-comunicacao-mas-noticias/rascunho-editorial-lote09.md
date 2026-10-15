@@ -221,3 +221,37 @@ Náuseas em doença avançada podem decorrer de opioides, constipação, gastrop
 | Vestibular | Vertigem e sintomas com movimento | Antiemético específico com atenção à sedação |
 
 **Metoclopramida pode ser prejudicial na obstrução mecânica completa**; seu papel na obstrução parcial é diferente e exige avaliação. Em obstrução maligna, opções incluem medidas farmacológicas, descompressão, eventual stent ou cirurgia em pacientes cuidadosamente escolhidos. Não indicar procedimento de grande porte em carcinomatose extensa sem considerar risco, benefício e desejo do paciente.
+
+## 14. Constipação, fecaloma e diarreia
+
+Constipação está associada a opioides, anticolinérgicos, imobilidade, redução de ingestão, desidratação, hipercalcemia e doença neurológica. Perguntar sobre frequência, consistência de fezes, flatos, esforço, dor e distensão; **diarreia líquida pode ser transbordamento por fecaloma**. Avaliar obstrução mecânica antes de estimulantes intestinais e realizar exame dirigido quando necessário.
+
+Prevenir constipação em quem inicia opioide é preferível a tratar grande fecaloma posterior. Laxativos osmóticos e estimulantes são opções conforme função intestinal e tolerância; fibras em grande quantidade podem causar piora se não há ingestão de água suficiente ou existe obstrução. Em casos selecionados de constipação induzida por opioides refratária, medicamentos periféricos específicos podem ser avaliados por especialistas. A escolha depende de condições e disponibilidade.
+
+Diarreia pode decorrer de antibiótico, quimioterapia, infecção, laxativo, desnutrição ou transbordamento. Não prescrever antidiarreico automaticamente em suspeita de infecção grave, fecaloma ou obstrução.
+
+## 15. Delirium: forma hiperativa e hipoativa
+
+**Delirium** é alteração aguda e flutuante de atenção, consciência e cognição. Pode ser **hiperativo** (agitação, alucinações) ou **hipoativo** (apatia, pouca comunicação), frequentemente não reconhecido. Causas incluem infecção, hipoxemia, fármacos, dor, retenção urinária, fecaloma, hipercalcemia, insuficiência renal/hepática, abstinência e desidratação. Demência prévia aumenta vulnerabilidade, não é diagnóstico suficiente para piora súbita.
+
+Medidas úteis: orientar pessoa no tempo e espaço, usar óculos/aparelho auditivo, sono, ambiente familiar, mobilização segura, tratar dor e causas reversíveis proporcionais, rever anticolinérgicos e sedativos. Uma pessoa aparentemente quieta pode estar com delirium hipoativo e sofrendo, portanto **ausência de agitação não comprova conforto**.
+
+Antipsicóticos não são tratamento universal nem prevenção de todo delirium; estudos mostram eficácia variável e potenciais efeitos adversos em contextos paliativos. Podem ter papel na agitação grave com risco ou sofrimento, sob avaliação de QT, efeito extrapiramidal, Parkinson e monitorização. Benzodiazepínicos podem piorar delirium comum, embora tenham indicações em abstinência, convulsões, agitação terminal refratária e sedação paliativa indicada.
+
+**Exemplo:** idoso com tumor avançado torna-se agitado após dois dias sem urinar. Antes de aumentar sedativo, avaliar globo vesical e retenção. Alívio de uma causa reversível pode recuperar atenção e evitar medicação de risco.
+
+## 16. Fadiga, anorexia e caquexia
+
+Fadiga é exaustão desproporcional que pode envolver anemia, dor, depressão, insônia, hipotireoidismo, efeitos de fármacos, infecção e progressão da doença. Tratar causas reversíveis de modo proporcional, usar reabilitação suave, conservação de energia, organização de atividades significativas e adaptação domiciliar.
+
+**Caquexia** é síndrome inflamatória/metabólica de perda de músculo e peso, não necessariamente revertida apenas com maior quantidade de calorias. **Albumina sérica baixa não identifica desnutrição isoladamente**, pois também reflete inflamação. Na fase final, redução de apetite pode acompanhar processo de morte e não significa negligência do cuidador. Alimentação pode ser oferecida de maneira segura para prazer; forçar em pessoa sem deglutição protegida aumenta aspiração e desconforto.
+
+Hidratação IV/subcutânea precisa ser julgada por possibilidade de alívio e ônus: pode melhorar desidratação selecionada, mas em outros casos piora edema, ascite, secreções ou falta de ar. Em últimos dias, **cuidado oral frequente** geralmente é mais confortável que insistir em grandes volumes de líquidos.
+
+## 17. Feridas, secreções, boca seca e prurido
+
+Em **ferida tumoral**, avaliar dor, exsudato, odor, infecção, sangramento e pele perilesional. Curativos atraumáticos, controle de odor e analgesia antes de manipulação ajudam; mau odor não prova infecção sistêmica que exige antibiótico. Feridas com sangramento importante requerem plano de emergência e suporte especializado.
+
+**Boca seca** pode decorrer de desidratação, respiração bucal, anticolinérgicos e radiação; oferecer umedecimento, higiene oral, reavaliação de fármacos e cuidado de mucosite/candidíase quando presentes. **Secreções respiratórias** em pessoa que não deglute bem podem produzir ruído, nem sempre equivalente a sufocamento; posicionamento, medidas orais e antissecretores selecionados podem ajudar. Aspiração profunda repetida pode causar desconforto.
+
+**Prurido** pode resultar de colestase, uremia, pele seca ou medicamento. Emoliente e tratamento dirigido à causa são frequentemente preferíveis a anti-histamínico sedativo indiscriminado em pessoa idosa com delirium.
