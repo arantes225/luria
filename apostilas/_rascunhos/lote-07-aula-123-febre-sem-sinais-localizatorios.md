@@ -602,6 +602,184 @@ Bebê de 52 dias, bem-aparentado, exames tranquilizadores, mas família não tem
 A. Considerar observação/internação pela impossibilidade de seguimento confiável, além de avaliar critérios clínico-laboratoriais. B. Alta obrigatória se PCT <0,5. C. Alta por promessa de retorno sem discutir logística. D. Descartar risco porque mamou no consultório.
 **Gabarito A.** Segurança ambulatorial pressupõe rede e revisão de culturas. **B/C/D:** ignoram risco de perda de seguimento. **Mini-revisão:** critério de baixo risco é clínico + laboratorial + assistencial.
 
+## 26A. Nota comparativa de 2026 — lactentes febris até 90 dias, limites dos algoritmos e decisões que mais geram erro
+
+**Natureza desta atualização:** complemento analítico ao conteúdo das seções 4, 8, 20–23. Mantêm-se todos os dez casos e as 14 questões precedentes. A referência adicional é a posição da **Canadian Paediatric Society (CPS), publicada em 2023 e atualizada em 27/05/2026**, confrontada diretamente com a diretriz **AAP 2021**. A CPS não é protocolo brasileiro, não substitui pediatria/neonatologia local e não autoriza transposição automática de doses ou de fluxos de internação ao SUS.
+
+**Etapa zero desta rodada (benchmark realmente consultado):** relidos no Drive o resumo “Pneumonia Comunitária na Pediatria.pdf”, com 1.196 caracteres extraídos e autoria nominal Maysa Mismetti, e “Sepse neonatal.pdf”, com 2.032 caracteres extraídos e o mesmo nome no conteúdo. São resumos **parciais, não equivalentes** ao presente caderno e não tiveram texto, imagem, quadro ou fluxograma reproduzidos; a identificação nominal não demonstra autoria do Estratégia MED. Foi relido o rascunho LURIA da aula 123. A evidência que sustenta as diferenças clínicas abaixo procede das diretrizes primárias indicadas em 26A.10.
+
+### 26A.1. Antes de escolher o fluxograma, responda a sete perguntas
+
+1. **A idade é pós-natal ou corrigida?** O algoritmo AAP foi estudado para lactentes a termo (idade gestacional ao nascer entre 37 e menos de 42 semanas), de **8 a 60 dias**, clinicamente bem. Um lactente pré-termo não se torna elegível apenas porque atingiu determinada idade corrigida. História de UTI/antimicrobiano, condições complexas e complicações perinatais merecem fluxo individualizado.
+2. **A febre foi aferida?** Temperatura retal **≥38,0 °C** medida em casa ou no serviço, mesmo que a criança esteja afebril na consulta, é relevante. Termometria axilar é comum no Brasil, mas seus resultados não são numericamente intercambiáveis com os critérios retais dos estudos. Não transformar 37,8 °C axilar em “38,0 °C retal” por soma fixa improvisada; repetir medida apropriadamente e interpretar o contexto. Hipotermia em recém-nascido também exige investigação.
+3. **O lactente realmente parece bem?** Má perfusão, hipotonia, alteração de consciência, apneia, irritabilidade inconsolável, sinais respiratórios graves ou instabilidade hemodinâmica tiram o paciente do caminho de *baixo risco*. Ressuscitação, culturas oportunas sem atrasar terapia e avaliação hospitalar passam à frente de qualquer escore.
+4. **Existe condição excluída?** Prematuridade, imunodeficiência, hospitalização neonatal prolongada, antibioticoterapia prévia, doença crônica relevante, infecção focal bacteriana ou história de HSV exigem interpretação própria.
+5. **Qual pergunta clínica o exame responderá?** Urina busca foco bacteriano oculto; hemocultura procura bacteremia; marcadores ajustam probabilidade; LCR investiga meningite e decisões antimicrobianas. Resultado de um compartimento não substitui o outro.
+6. **Existe estrutura para o plano?** Disponibilidade de coleta confiável, processamento de culturas, acesso à procalcitonina, observação, transporte e reavaliação em 24–48 horas modifica a segurança da alta. Ausência de condições de seguimento pode justificar observação mesmo em cenário laboratorial favorável.
+7. **Qual diretriz e qual população sustentam a decisão?** AAP 2021: bem-aparentado, a termo, 8–60 dias, faixas 8–21/22–28/29–60. CPS revisada em maio de 2026: bem-aparentado com febre documentada, abrangendo até 90 dias. Não misturar trechos para produzir um “terceiro algoritmo” sem validação.
+
+### 26A.2. Diferença genuína entre diretrizes: AAP 2021 e CPS 2026
+
+| Questão decisória | AAP 2021 | CPS atualizada em 2026 | Conduta editorial segura na LURIA |
+|---|---|---|---|
+| População | Lactente a termo, bem-aparentado, febre retal ≥38 °C, **8–60 d** | Bem-aparentado, febre retal documentada, **≤90 d**, com exclusões/individualização | Especificar a fonte em cada faixa; não apresentar uma “regra mundial” |
+| Primeira semana | **Fora** do algoritmo AAP | Incluída no escopo CPS sob risco neonatal e estratificação especializada | Avaliação neonatal presencial urgente; nunca alta automática baseada no AAP |
+| 8–21 dias | Recomenda avaliação de urina, hemocultura, **LCR**, antimicrobiano parenteral e vigilância hospitalar | Algoritmo canadense para 0–28 dias pode individualizar LCR e antibiótico no baixo risco, em estrutura apta, segundo ferramenta validada e decisão clínica | Explicitar a discordância em prova e serviço; **não usar flexibilização canadense para dispensar LCR no fluxo AAP 8–21** |
+| 22–28 dias | Estratificação conservadora específica da idade | Integra estratificação 0–28, incluindo marcadores e fatores clínicos | Reconhecer risco neonatal mais alto; nenhuma conclusão com PCR isolada |
+| 29–60 dias, urina inflamatória e marcadores baixos | Seguir recomendações AAP para UTI e risco de infecção invasiva | Urina positiva **isoladamente não equivale a risco elevado de meningite** no bem-aparentado com marcadores normais; considerar tratamento de ITU e segurança do retorno | Separar necessidade de tratar a ITU da indicação de LCR; nunca concluir “sem infecção” |
+| 61–90 dias | **Sem recomendação por estar fora da população** | Pelo menos exame de urina e urocultura; pode-se aplicar abordagem similar aos 29–60 conforme cenário | Não extrapolar o AAP; descrever a alternativa canadense e seguir decisão pediátrica institucional |
+| Vírus detectado | Não elimina avaliação bacteriana correspondente à idade | Mesmo com virose confirmada permanece risco residual; rinovírus merece cautela adicional | Não dispensar urocultura ou avaliação inicial por um PCR respiratório positivo |
+| Alta | Condicionada a faixa, risco, culturas, estabilidade e retorno seguro | Seguimento geralmente em 24–48 h para alta direta; em internação, negatividade de culturas por período apropriado e hidratação/estado clínico | Documentar responsável, transporte, canal de retorno, exame e resultados pendentes |
+
+**Por que a discordância importa?** Uma questão de prova pode declarar explicitamente “segundo a AAP” ou “segundo a CPS”. Um aluno que reduz ambas a “todo lactente abaixo de um mês interna e recebe antibiótico” perde a diferença entre populações, estratégias e contextos; outro que invoca risco baixo sem caracterizar o lactente pode aumentar risco de atraso terapêutico. A conduta clínica real depende de diretriz adotada localmente, avaliação experiente e recursos, não apenas do nome da sociedade.
+
+### 26A.3. Urina positiva não é atalho nem para a punção nem para a alta
+
+No lactente de **29–60 dias bem-aparentado**, piúria/esterase leucocitária sugere ITU, mas a necessidade de punção lombar depende de idade, inflamação sistêmica, aparência, risco de meningite e algoritmo adotado. A posição CPS destaca que a frequência de meningite bacteriana nesse subgrupo com urina inflamatória não se mostrou maior apenas por causa do teste urinário positivo, em estudos observacionais e síntese de evidências. Isso não equivale a “ITU não causa bacteremia” ou “LCR nunca indicado”.
+
+Separe as decisões em quatro eixos:
+
+- **É verdadeira ITU?** A cultura de coleta adequada ajuda a confirmar. Saco coletor positivo não confirma diagnóstico; se ele foi usado como triagem, uma amostra apropriada para cultura precisa ser obtida segundo idade e protocolo.
+- **É provável infecção invasiva concomitante?** Avaliar marcadores, hemocultura, aparência, outras alterações e contexto. Criança toxemiada não pertence ao fluxo de baixo risco.
+- **É seguro escolher antibiótico por via oral e tratar fora do hospital?** Apenas se idade/estratificação permitirem, houver ingestão, reavaliação e acesso; escolha e dose devem ser verificadas com o protocolo brasileiro e antibiograma. Antibiótico oral não é sinônimo de doença trivial.
+- **Se há bacteremia documentada ou deterioração, o plano muda?** Sim: reavaliar sítios infecciosos e necessidade de LCR, parenteralidade e internação. Não manter alta “porque a primeira urina explicou a febre”.
+
+### 26A.4. Febre após vacinação: dois relógios e nenhuma certeza absoluta
+
+A CPS observa em estudos que febre **nas primeiras 24 horas** após imunizações de rotina se associa a baixo risco relativo de infecção bacteriana grave; febre que **persiste além de 24 horas** exige atenção renovada, especialmente para ITU. Há aumento transitório de marcadores inflamatórios pós-vacina, portanto usar PCR/PCT isoladamente nessa janela pode ser enganoso. Os percentuais publicados provêm das populações estudadas, não de uma garantia individual nem de calendário vacinal brasileiro validado em 2026.
+
+No prontuário, registrar exatamente: vacina(s), data/hora, temperatura máxima e método de aferição, início e duração da febre, aceitação oral, diurese, interação, exame físico e plano de reavaliação. Um bebê mal perfundido 6 horas após vacina **não** passa a ser “baixo risco” por coincidência temporal. Um bebê bem com febre que reaparece após 30 horas precisa de nova avaliação, com urina como foco bacteriano possível. Revisar sempre calendário PNI corrente na aula 135.
+
+### 26A.5. Vírus respiratório: como não interpretar o resultado errado
+
+Os dados apresentados pela CPS confirmam que doença viral detectada **reduz em média** a probabilidade de infecção bacteriana, mas a torna **não nula**. O rinovírus é especialmente traiçoeiro: a PCR pode permanecer positiva por eliminação prolongada e sua presença não implica que ele explique toda a febre. Por isso:
+
+1. A estratégia de investigação inicial ainda é guiada por **idade e exame clínico**.
+2. Uma PCR positiva não transforma urina inflamatória em “contaminação viral”.
+3. Após avaliação apropriada e com culturas evoluindo negativamente, um vírus confirmado **não rinovírus** pode apoiar suspensão mais precoce de antibióticos/observação em lactentes adequadamente estratificados, conforme protocolo.
+4. Tosse, coriza e bronquiolite têm diagnósticos diferenciais próprios. AAP admite sintomas respiratórios leves não diagnosticados como bronquiolite em sua população; bronquiolite clínica pertence às exclusões da via original da diretriz. Não misturar “tosse” e “bronquiolite estabelecida”.
+
+### 26A.6. Herpes neonatal: a armadilha da pele sem vesículas
+
+No primeiro mês, febre ou hipotermia acompanhada de crises convulsivas, letargia, transaminases elevadas, plaquetopenia, coagulopatia, irritabilidade, alteração de LCR ou história materna sugestiva deve levantar hipótese de infecção por HSV, mesmo **sem vesículas**. A CPS disponibiliza uma ferramenta de estratificação para HSV invasivo, mas ressalta que sinais não representados nela — como elevação de aminotransferases ou história materna — podem alterar a suspeita.
+
+No paciente de risco, priorizar avaliação pediátrica/neonatal urgente, amostras apropriadas incluindo LCR para PCR de HSV quando seguro, investigação de disseminação e **aciclovir intravenoso empírico conforme protocolo**, sem atrasá-lo até exame confirmatório quando suspeita clínica significativa. Antiviral não substitui antibiótico para sepse bacteriana potencialmente coexistente. Duração/dose/diluição requerem peso, função renal, idade e ficha institucional validada; o presente caderno **não certifica prescrição**.
+
+### 26A.7. Termometria e punção traumática: interpretações com margem de erro
+
+A temperatura retal ≥38 °C é a definição dos principais estudos norte-americanos e canadenses. **Afebril no PS com relato confiável de febre retal aferida em casa não é uma população “sem febre”**. Para temperatura apenas axilar, documente literalmente o que foi medido, confira método e contextualize, em vez de inventar equivalência matemática.
+
+LCR com sangue traumático pode alterar leucócitos e interpretação. Métodos de ajuste pela contagem de hemácias são estudados, mas **não podem anular risco clínico ou patológico**, sobretudo em recém-nascidos, suspeita de HSV, alteração neurológica ou amostra muito sanguinolenta. A CPS descreve modelos e limitações, incluindo inadequação de fatores de correção em amostras extremamente hemáticas; não estabelecer cálculo universal para toda faixa etária. Preferir discussão com equipe experiente a “corrigir automaticamente” uma pleocitose que acompanha sinais meníngeos.
+
+### 26A.8. Quatro casos adicionais integrando idade, risco e tomada de decisão
+
+#### Caso 11 — 75 dias e febre retal documentada
+
+Lactente a termo, 75 dias, 38,3 °C retal em casa há 4 horas, exame inicial normal, boa mamada e diurese. A mãe pergunta se o algoritmo americano de 8–60 dias indica alta.
+
+**Hipótese e raciocínio:** FSSL em lactente de 61–90 dias. O caminho AAP 2021 não contempla a faixa. A CPS 2026 recomenda ao menos urina tipo I e **urocultura**, com avaliação de risco individual; em alguns cenários pode-se usar investigação adicional comparável à faixa 29–60 dias. Perguntar se o serviço processa culturas, se há responsável capaz de observar e se o retorno em 24–48 horas é viável.
+
+**Exames, interpretação e conduta:** obter urina por coleta apropriada; considerar exames sanguíneos/observação conforme evolução, marcadores disponíveis e política institucional. Não indicar LCR universal nem dispensar exames de urina. Reavaliar sinais de deterioração. **Por que importa:** “fora da AAP” não significa “fora da avaliação médica”; remete a outra base de evidências.
+
+#### Caso 12 — 43 dias, piúria, procalcitonina não elevada
+
+Lactente de 43 dias, a termo, bem-aparentado, urina por cateter com piúria, hemocultura colhida e marcadores inflamatórios favoráveis no protocolo local. Sem irritabilidade, convulsão ou dificuldade de alimentação.
+
+**Hipótese:** ITU presumida com avaliação concomitante de risco de doença invasiva. **Raciocínio:** piúria precisa de cultura; risco de meningite não pode ser inferido exclusivamente da urina. Na CPS, o baixo risco de IBI com marcadores favoráveis permite discutir não realizar LCR e estratégias de tratamento/observação ambulatorial em pacientes selecionados; na AAP, aplicar as ações específicas de 29–60 dias. **Conduta:** decidir antibioticoterapia para ITU presumida e necessidade de internação conforme protocolo, contexto, cultura e retorno; comunicar que exame inflamatório normal não é “cultura negativa”. **Por que importa:** separa tratamento de ITU, risco de bacteremia e indicação de PL.
+
+#### Caso 13 — febre persistente 30 horas depois da vacina
+
+Lactente de 69 dias, duas vacinas de rotina há 30 horas, febre persistente, alerta, hidratado e sem foco; há relato de fraldas molhadas habituais, sem sinais de choque.
+
+**Hipóteses:** reação pós-vacina versus infecção coincidente, em especial ITU. **Raciocínio:** a associação temporal não estabelece causalidade; a CPS diferencia febre apenas nas primeiras 24 horas da que persiste além dessa janela. **Conduta:** exame físico completo e investigação urinária apropriada; decidir necessidade de outros exames com pediatria conforme idade, biomarcadores e evolução. Orientar retorno explícito se reduzir ingestão, ficar hipoativo, desenvolver dificuldade respiratória ou piorar. **Por que importa:** evita tanto antibiótico indiscriminado quanto o erro “é só da vacina”.
+
+#### Caso 14 — 18 dias, convulsão e ausência de vesículas
+
+Recém-nascido a termo, 18 dias, 38,1 °C retal, episódio paroxístico sugestivo de convulsão, letargia e plaquetopenia. Pele sem vesículas visíveis.
+
+**Hipóteses:** sepse/meningite bacteriana e encefalite ou doença disseminada por HSV. **Raciocínio:** aparência alterada exclui o lactente do algoritmo de bem-aparentados. HSV não depende de lesão vesicular. **Conduta:** estabilização, investigação urgente de sepse e envolvimento do SNC, incluindo avaliação para LCR quando clinicamente seguro, antimicrobianos parenterais e aciclovir empírico segundo serviço, sem atrasar terapia pela coleta. **Por que importa:** evita falsa tranquilização dermatológica e a transposição incorreta de regra para criança estável.
+
+### 26A.9. Seis questões novas de prova (15–20), com comentário de cada alternativa
+
+#### Questão 15 — diretriz e limite etário
+
+Um lactente bem-aparentado, a termo, tem 80 dias e febre retal confirmada. Qual afirmação é correta?
+
+A. Está explicitamente abrangido pela AAP 2021 de 8–60 dias.  
+B. Não precisa de avaliação porque ultrapassou 60 dias.  
+C. A posição CPS, atualizada em 2026, inclui lactentes até 90 dias e recomenda ao menos avaliação urinária com urocultura.  
+D. Necessita punção lombar universal independentemente da clínica.
+
+**Gabarito: C.** **A:** errada; a população da AAP termina em 60 dias. **B:** errada; ainda há risco de ITU e IBI. **C:** correta; a CPS contempla a faixa e recomenda ao menos estudo urinário, com avaliação adicional contextual. **D:** errada; LCR não é universal em todo lactente de 61–90 dias bem-aparentado. **Mini-revisão:** sempre ler faixa etária de inclusão antes da conduta.
+
+#### Questão 16 — diferença entre diretrizes no primeiro mês
+
+Sobre um lactente febril de 15 dias, bem-aparentado e a termo, assinale a alternativa mais precisa:
+
+A. Toda diretriz atual recomenda apenas observação em casa se PCR estiver normal.  
+B. A AAP 2021 indica avaliação completa com LCR, tratamento parenteral e monitoramento hospitalar na faixa 8–21 dias.  
+C. A CPS 2026 equivale exatamente à AAP 2021 em todos os critérios de LP de 0–28 dias.  
+D. Se a criança estiver mamando, não é preciso avaliação urinária.
+
+**Gabarito: B.** **A:** errada; marcador isolado não exclui infecção invasiva. **B:** correta dentro do algoritmo AAP e da faixa definida. **C:** errada; a CPS utiliza estratégias de estratificação específicas e pode individualizar LP e manejo em baixo risco sob condições próprias. **D:** errada; boa mamada não exclui ITU. **Mini-revisão:** não combinar políticas de LP de diretrizes diferentes sem explicitar a fonte.
+
+#### Questão 17 — piúria sem biomarcadores elevados
+
+Lactente de 45 dias, bem-aparentado, urina coletada adequadamente com piúria e marcadores sistêmicos não elevados. É correto afirmar:
+
+A. Urina positiva prova meningite concomitante.  
+B. Não precisa de antibiótico porque marcador sistêmico não elevou.  
+C. A decisão sobre LCR deve integrar idade, aparência, biomarcadores e algoritmo; ITU suspeita precisa de avaliação e tratamento apropriados.  
+D. Urocultura não muda manejo após triagem positiva.
+
+**Gabarito: C.** **A:** errada; piúria não prova infecção meníngea. **B:** errada; ITU bacteriana presumida não desaparece porque PCR/PCT são baixas. **C:** correta; trata-se de decisões relacionadas, mas não idênticas. **D:** errada; cultura identifica e direciona o tratamento. **Mini-revisão:** cuidado com resultados que mudam probabilidades, não determinam todos os diagnósticos.
+
+#### Questão 18 — febre após imunização
+
+Um lactente previamente hígido apresenta febre que persiste após 30 horas da vacinação. Qual conduta é mais adequada?
+
+A. Atribuir a febre automaticamente à vacina e encerrar investigação.  
+B. Avaliar clinicamente e considerar urina tipo I/urocultura, conforme idade e risco, porque infecção concomitante continua possível.  
+C. Realizar antibiótico empírico obrigatório para qualquer febre pós-vacina.  
+D. Desconsiderar a data da vacinação por não ajudar na interpretação.
+
+**Gabarito: B.** **A:** errada; atribuição causal sem exame é insegura. **B:** correta; CPS destaca atenção à febre persistente >24 h e à ITU. **C:** errada; decisão antimicrobiana depende de risco e achados. **D:** errada; cronologia é informação útil, mas não substitui exame. **Mini-revisão:** risco baixo na primeira janela não equivale a risco nulo nem a conduta permanente.
+
+#### Questão 19 — teste viral positivo
+
+Lactente de 39 dias com febre e teste positivo para rinovírus. O melhor princípio é:
+
+A. A presença do vírus exclui ITU e meningite.  
+B. O teste de rinovírus justifica alta sem exame clínico e sem considerar idade.  
+C. Ainda se aplica avaliação bacteriana inicial apropriada à idade; um vírus positivo modifica probabilidades, mas não zera risco.  
+D. Todo PCR viral positivo obriga coleta de LCR em qualquer faixa etária.
+
+**Gabarito: C.** **A:** errada; virose e infecção bacteriana podem coexistir. **B:** errada; rinovírus pode ter eliminação prolongada e não explica necessariamente toda febre. **C:** correta; o resultado influencia risco, não substitui triagem. **D:** errada; LCR depende de quadro clínico e estratificação. **Mini-revisão:** um achado de etiologia possível não elimina diagnósticos concorrentes.
+
+#### Questão 20 — HSV neonatal
+
+Recém-nascido com febre, convulsão, plaquetopenia e sem vesículas. Assinale:
+
+A. A falta de vesículas exclui HSV.  
+B. Basta aguardar PCR de HSV para iniciar terapia se a suspeita clínica for significativa.  
+C. A avaliação deve abranger sepse/meningite bacteriana e HSV, com estabilização e tratamento empírico apropriado sem atrasos injustificados.  
+D. O caso é elegível a estratificação ambulatorial de bem-aparentados.
+
+**Gabarito: C.** **A:** errada; HSV neonatal pode não ter lesões visíveis. **B:** errada; terapia empírica oportuna é crítica nos pacientes de alto risco. **C:** correta; investigação e terapia inicial precisam cobrir hipóteses tempo-dependentes. **D:** errada; convulsão e alteração sistêmica excluem algoritmo de baixo risco. **Mini-revisão:** sinais neurológicos ou de disfunção orgânica têm prioridade sobre escore.
+
+### 26A.10. Referências verificáveis e limites da transferência ao Brasil
+
+1. Canadian Paediatric Society. **Management of well-appearing febrile young infants aged ≤90 days.** Publicada em 27/10/2023; **atualizada em 27/05/2026**. https://cps.ca/en/documents/position/management-of-well-appearing-febrile-young-infants-aged-90-days
+2. Pantell RH et al. **Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old.** *Pediatrics*. 2021;148(2):e2021052228. DOI 10.1542/peds.2021-052228. https://doi.org/10.1542/peds.2021-052228
+3. NICE. **Fever in under 5s: assessment and initial management**, NG143. https://www.nice.org.uk/guidance/ng143
+4. Sociedade Brasileira de Pediatria e Ministério da Saúde: consultar versões vigentes para triagem pediátrica e fluxo neonatal, sobretudo apresentações/doses, coleta e encaminhamento. **Não atribuir à SBP nem ao MS a adoção automática da regra canadense.**
+
+**Matriz de rastreabilidade do complemento:** faixas e diferenças entre diretrizes → 26A.1–26A.2, casos 11–12, questões 15–17; ITU e PL → 26A.3/caso 12/questão 17; imunização → 26A.4/caso 13/questão 18; vírus → 26A.5/questão 19; HSV → 26A.6/caso 14/questão 20; retorno e segurança → 26A.1, 26A.7 e casos 11–14.
+
+**Portões ainda não cumpridos:** revisão clínica independente dos protocolos neonatais brasileiros; confirmação de apresentação, diluição, dose e ajuste renal de todas as medicações por idade/peso; validação de algoritmo local e possibilidade de seguimento; imagens clínicas/algoritmos com direitos comerciais autorizados via Admin; teste independente de autossuficiência, checagem de redundância, transformação final em HTML e inspeção desktop/PWA. **Material de ensino em rascunho, não certificado para prescrição nem publicado.**
+
+---
+
 ## 27. Matriz de cobertura: texto que sustenta conduta e questão
 
 | Competência para a residência | Onde foi explicada | Casos | Questões |
