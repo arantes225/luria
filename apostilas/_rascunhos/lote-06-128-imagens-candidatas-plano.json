@@ -1,0 +1,100 @@
+{
+  "status": "ROTEIRO_VISUAL_PARA_CURADORIA_SEM_ARQUIVOS_APROVADOS",
+  "apostila": "apostilas/_rascunhos/lote-06-128-sepse-choque-septico-pediatrico.md",
+  "notes": "Pautas não equivalem a dez imagens licenciadas. Não baixar/inserir no HTML antes de validação individual de autoria, licença inclusive comercial, consentimento quando necessário, precisão diagnóstica e aprovação via fila Admin. Diagramas são conceitos para desenvolvimento autoral original, sem replicar esquema de guideline.",
+  "approved": 0,
+  "embedded": 0,
+  "candidates": [
+    {
+      "candidate_key": "128-fluxo-fluidos-recursos",
+      "target_section": "cap-08-ressuscitacao-volemica-a-recomendacao-depende-do-sistema-de-saude",
+      "title": "Algoritmo original: fluidos com versus sem UTI",
+      "kind": "diagrama_autoral",
+      "description": "Três ramos: com UTI e choque; sem UTI sem hipotensão; sem UTI com hipotensão; parada por sobrecarga/normalização",
+      "status": "ROTEIRO_PARA_DESENHO_E_REVISAO_SEM_ARQUIVO",
+      "license": null,
+      "source_url": "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-the-management-of-sepsis-and-septic-shock-in"
+    },
+    {
+      "candidate_key": "128-choque-compensado-infografia",
+      "target_section": "cap-02-fisiopatologia-do-endotelio-ao-choque-compensado",
+      "title": "Comparação ilustrativa choque compensado e descompensado",
+      "kind": "diagrama_autoral",
+      "description": "Perfusão, consciência, TEC e pressão por idade; pressão normal não descarta choque",
+      "status": "ROTEIRO_PARA_DESENHO_E_REVISAO_SEM_ARQUIVO",
+      "source_url": "https://doi.org/10.1007/s00134-026-08360-2"
+    },
+    {
+      "candidate_key": "128-phoenix-quatro-dominios",
+      "target_section": "cap-03-criterios-phoenix-2024-definicao-atual-sem-atraso-terapeutico",
+      "title": "Phoenix 2024: quatro domínios e limite de aplicação",
+      "kind": "diagrama_autoral",
+      "description": "Respiratório, cardiovascular, coagulação e neurológico; escore não atrasa terapia",
+      "status": "ROTEIRO_PARA_DESENHO_E_REVISAO_SEM_ARQUIVO",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10900966/"
+    },
+    {
+      "candidate_key": "128-tec-clinico",
+      "target_section": "cap-02-fisiopatologia-do-endotelio-ao-choque-compensado",
+      "title": "Demonstração clínica do tempo de enchimento capilar",
+      "kind": "fotografia_ou_diagrama",
+      "description": "Com técnicas e limitações de medição por ambiente/idade",
+      "status": "PENDENTE_FONTE_LICENCA_FOTOGRAFIA",
+      "source_url": null
+    },
+    {
+      "candidate_key": "128-purpura-fulminante",
+      "target_section": "cap-28-cinco-sindromes-infecciosas-de-apresentacao-distinta-decidir-pelo-foco",
+      "title": "Púrpura fulminante em meningococcemia — imagem clínica",
+      "kind": "fotografia_clinica",
+      "description": "Verificar imagem de artigo de caso, consentimento editorial, autoria da figura, licença específica e correspondência diagnóstica",
+      "status": "FONTE_CANDIDATA_NAO_VERIFICADA_NA_FIGURA_ADMIN_PENDENTE",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13354754/"
+    },
+    {
+      "candidate_key": "128-pocus-congestao",
+      "target_section": "cap-21-acompanhar-a-resposta-metas-clinicas-e-tendencias",
+      "title": "US pulmonar de congestão — linhas B",
+      "kind": "imagem_exame",
+      "description": "Comparação entre presença e ausência de artefatos B em imagens com licença explícita",
+      "status": "PENDENTE_FONTE_LICENCA",
+      "source_url": null
+    },
+    {
+      "candidate_key": "128-eco-miocardite",
+      "target_section": "cap-20-miocardite-e-choque-cardiogenico-misto-quando-o-volume-agrava",
+      "title": "Ecocardiograma/POCUS de disfunção sistólica",
+      "kind": "imagem_exame",
+      "description": "Apenas imagem com parâmetros e contexto clínico confirmados, idealmente open access",
+      "status": "PENDENTE_FONTE_LICENCA",
+      "source_url": null
+    },
+    {
+      "candidate_key": "128-empiema-ultrassom",
+      "target_section": "cap-28-cinco-sindromes-infecciosas-de-apresentacao-distinta-decidir-pelo-foco",
+      "title": "US torácico de empiema septado",
+      "kind": "imagem_exame",
+      "description": "Coleção pleural complexa com septações e legenda sobre controle da fonte",
+      "status": "PENDENTE_FONTE_LICENCA",
+      "source_url": null
+    },
+    {
+      "candidate_key": "128-acessos-infusao-segura",
+      "target_section": "cap-23-erros-de-prescricao-e-seguranca-medicamentosa-pediatrica",
+      "title": "Diagrama de unidade mcg/kg/min versus mg",
+      "kind": "diagrama_autoral",
+      "description": "Sem valores universais de preparo; destacar erro de mil vezes e dupla checagem",
+      "status": "ROTEIRO_PARA_DESENHO_E_REVISAO_SEM_ARQUIVO",
+      "source_url": null
+    },
+    {
+      "candidate_key": "128-linha-do-tempo-sepse",
+      "target_section": "cap-07-abordagem-da-primeira-hora-sequencia-paralela",
+      "title": "Fluxo de 0–1h e 0–3h com reavaliação paralela",
+      "kind": "diagrama_autoral",
+      "description": "Choque ideal até uma hora; sepse provável sem choque avaliação rápida e até três horas; não representar como permissão para esperar",
+      "status": "ROTEIRO_PARA_DESENHO_E_REVISAO_SEM_ARQUIVO",
+      "source_url": "https://doi.org/10.1007/s00134-026-08360-2"
+    }
+  ]
+}
