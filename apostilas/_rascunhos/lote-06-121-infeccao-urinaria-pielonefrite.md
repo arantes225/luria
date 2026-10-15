@@ -514,3 +514,102 @@ Se febre persiste isoladamente, mas há tendência clara de melhora e sem red fl
 **Tríade clínica clássica da cistite:** disúria, polaciúria, urgência, com ausência de corrimento; mas nem todos precisam coexistir. **Pielonefrite:** febre e dor em flanco apoiam, cistite pode faltar. **BAS:** não tratar na maioria dos grupos; exceções mais cobradas são **gestação** e **procedimento endourológico que lesa mucosa**. **Tira de nitrito negativa:** não exclui. **Antibiótico urinário não equivale a antibiótico parenquimatoso.** **Febre + cálculo obstrutivo:** drenagem. **ESBL na cistite:** não significa carbapenêmico obrigatório se há opção urinária suscetível. **Urocultura após tratamento:** não é rotina em não gestante assintomática. **Criança menor de três meses com suspeita de ITU:** encaminhamento urgente pediátrico.
 
 A regra integradora é: **tratar doença, atingir o foco, controlar a fonte e reduzir antibioticoterapia desnecessária**.
+
+
+## 27. Oito casos clínicos comentados
+
+### Caso 1 — Disúria típica sem febre: escolher terapia curta e estreita
+
+**Apresentação:** mulher de 27 anos relata dois dias de disúria, polaciúria, urgência e desconforto suprapúbico. Sem corrimento, prurido, febre, dor em flanco, gestação ou comorbidades. PA 112/72 mmHg, pulso 82/min, exame sem toxicidade e Giordano negativo. Nunca teve ITU conhecida e não usou antibiótico recentemente.
+
+**Hipótese:** **cistite bacteriana aguda não complicada**. A ausência de corrimento e a combinação de sintomas urinários localizados elevam probabilidade. Não há sinais de acometimento renal, obstrução ou infecção sistêmica. Diagnósticos alternativos como uretrite sexualmente transmissível dependem de contexto sexual, sintomas e exame; perguntar sem julgamento.
+
+**Exames:** urina tipo I pode apoiar, mas não é obrigatória para diagnóstico típico; a EAU 2026 não exige cultura em toda mulher com primeiro episódio simples, desde que não existam riscos modificadores. Teste de gravidez pode ser indicado conforme possibilidade real de gestação. Não pedir hemograma, tomografia, US ou hemocultura de rotina.
+
+**Conduta:** oferecer antibioticoterapia de primeira linha compatível com **cistite vesical**, como fosfomicina trometamol 3 g VO dose única ou nitrofurantoína por cinco dias conforme apresentação e condições clínicas, verificando função renal, gestação e disponibilidade; escolha segundo protocolo local. Explicar analgesia, possíveis efeitos adversos, água conforme sede e sinais para retorno. Não escolher ciprofloxacino apenas porque “cobre mais germes”.
+
+**Por que importa:** a grande oportunidade de qualidade é **não transformar uma cistite simples em investigação hospitalar nem em uso desnecessário de quinolona**.
+
+### Caso 2 — Febre e dor em flanco: a urina é só parte do diagnóstico
+
+**Apresentação:** mulher de 35 anos apresenta febre de 39°C, calafrios, dor à esquerda em flanco, náusea e disúria discreta. Sem gravidez, sinais vitais: PA 116/74, pulso 108, temperatura 39,1, saturação normal. Exame com Giordano esquerdo. Sem história de cálculo. EAS mostra piúria e nitrito positivo; creatinina normal.
+
+**Hipótese:** **pielonefrite aguda**, até avaliação de gravidade. Disúria discreta não reduz diagnóstico de doença renal; febre e dor no flanco são fundamentais. Nitrito positivo é apoio, não diagnóstico isolado. Avaliar capacidade de hidratação e ingestão oral; a frequência cardíaca pode refletir febre, mas também precisa de reavaliação.
+
+**Exames:** colher **urocultura e antibiograma** antes da terapia, sem atrasar conduta; hemograma/função renal conforme contexto e sinais. US ou TC não são universalmente obrigatórios em toda pielonefrite que melhora, mas podem ser indicados quando há sinais de litíase, obstrução, função renal alterada ou piora.
+
+**Conduta:** se clinicamente estável, tolerando via oral, sem risco de resistência e com acompanhamento seguro, pode ser tratada ambulatorialmente com antibiótico **ativo no parênquima renal**, conforme resistência local e contraindicações; em alguns protocolos quinolona oral por curso curto, mas não usar empiricamente se resistência elevada. Caso tenha vômitos persistentes, instabilidade ou risco de complicação, internar e iniciar terapia parenteral adequada. **Nitrofurantoína e fosfomicina oral não servem** mesmo que EAS positivo.
+
+**Por que importa:** o local da infecção determina penetração do antibiótico e decisão sobre investigação.
+
+### Caso 3 — Febre, cálculo e hidronefrose: o antibiótico sozinho não basta
+
+**Apresentação:** homem de 58 anos, com litíase conhecida, chega com dor em cólica no flanco direito irradiada à virilha, calafrios e febre de 39,2°C. PA 88/55, pulso 125, extremidades frias e diurese reduzida. US sugere hidronefrose direita; TC sem contraste identifica cálculo ureteral obstrutivo proximal. Leucocitose e creatinina crescente.
+
+**Hipótese:** **pielonefrite obstrutiva com sepse/choque de foco urinário**. A obstrução impede drenagem e aumenta risco de falha de antibioticoterapia isolada. O quadro não se resolve com analgesia ou terapia expulsiva.
+
+**Exames:** hemograma, creatinina, eletrólitos, lactato conforme protocolo de sepse, culturas sanguíneas e urinária se não atrasarem antibiótico, imagem para localizar obstrução. A ausência de crescimento em urina da bexiga não afastaria infecção acima de obstrução completa.
+
+**Conduta:** atendimento emergencial com reanimação individualizada, antibioticoterapia **parenteral ativa precocemente**, equipe de terapia intensiva/urologia e **descompressão urgente** por duplo J ou nefrostomia segundo condições. Não manipular para litotripsia definitiva durante sepse; planejar tratamento do cálculo após controle da infecção.
+
+**Por que importa:** em infecção com obstrução, a intervenção que muda prognóstico é **controle de fonte com drenagem**, paralela ao antibiótico.
+
+### Caso 4 — Urocultura positiva em idosa com delirium: evitar diagnóstico reflexo
+
+**Apresentação:** mulher de 84 anos institucionalizada, com demência leve e episódio de confusão após início de benzodiazepínico, apresenta urocultura solicitada “de rotina” com E. coli 10⁵ UFC/mL e piúria. Afebril, PA estável, sem dor suprapúbica, disúria relatável, sensibilidade em flanco ou sinal sistêmico novo. Há constipação importante e ingestão oral reduzida.
+
+**Hipótese:** **bacteriúria assintomática** incidental em paciente com delirium multifatorial, não infecção urinária confirmada. O crescimento é comum na idade avançada/institucionalização e não prova foco infeccioso. A piúria também pode acompanhar colonização.
+
+**Exames:** avaliar glicemia, eletrólitos, hidratação, retenção urinária, constipação, oxigenação, revisão de medicamentos e outros focos conforme clínica. Não solicitar uroculturas seriadas para decidir quando “esterilizou a urina”.
+
+**Conduta:** **não iniciar antibiótico por cultura isolada**, acompanhar sinais, corrigir fatores precipitantes e reavaliar se surgirem febre, disfunção orgânica ou sintomas urinários. Documentar raciocínio e explicar à família que não tratar colonização é decisão segura quando não há infecção clínica.
+
+**Por que importa:** excesso de antibiótico causa resistência, eventos adversos e pode obscurecer o verdadeiro motivo da alteração mental.
+
+### Caso 5 — Bacteriúria em gestante sem sintomas
+
+**Apresentação:** gestante de 13 semanas, sem disúria, febre ou dor, traz primeira urocultura do pré-natal com E. coli 10⁵ UFC/mL em amostra adequadamente colhida e antibiograma disponível. Exame geral normal. Sua irmã afirma que “bactéria na urina sem sintoma não precisa tratar”.
+
+**Hipótese:** **bacteriúria assintomática significativa na gestação**. A regra de não tratar a maioria das BAS de adultas **tem exceção na gravidez**, dada a prevenção de pielonefrite e complicações obstétricas.
+
+**Exames:** revisar qualidade da cultura, antibiograma, histórico de alergias e antibioticoterapia, idade gestacional e função renal quando necessário. Não exigir EAS positivo para considerar cultura significativa e confirmação conforme diretriz. Discutir com equipe obstétrica seguimento e possibilidade de controle microbiológico conforme protocolo local.
+
+**Conduta:** antibiótico seguro para gestação e suscetível, geralmente **cinco a sete dias** conforme ACOG e agente apropriado, ajustando prescrição à bactéria e fase gestacional. Orientar sinais de pielonefrite e importância de comparecer ao pré-natal; documentar germes como GBS com implicações intraparto quando pertinente.
+
+**Por que importa:** o **mesmo resultado de cultura** que não deve ser tratado em uma adulta não gestante pode demandar terapia na gestante.
+
+### Caso 6 — Pielonefrite por ESBL: espectro, foco e desescalonamento
+
+**Apresentação:** mulher de 63 anos com diabetes e antibiótico recente desenvolve febre, dor lombar, vômitos e hipotensão transitória. Foi internada, recebeu cobertura empírica proporcional à gravidade, e urocultura revelou **E. coli ESBL**, suscetível a TMP-SMX e ertapenem, resistente a ceftriaxona; exame mostra ausência de obstrução ou abscesso. Após hidratação e terapia efetiva, recuperou estabilidade e tolerância oral.
+
+**Hipótese:** pielonefrite por Enterobacterales produtora de ESBL, inicialmente sistêmica. O antibiograma confirma que ceftriaxona não seria atividade adequada; sulfa-trimetoprima pode ser opção de transição em suscetibilidade demonstrada, na ausência de contraindicações, conforme IDSA 2024.
+
+**Exames:** creatinina, potássio, hemograma, culturas e avaliação de controle de foco. Investigar alergia a sulfas, interações (IECA/BRA, antagonistas de aldosterona, varfarina), toxicidade renal e possibilidade de absorção. Não inferir que nitrofurantoína suscetível permitiria tratar foco renal.
+
+**Conduta:** terapia parenteral ativa enquanto instável, desescalonar para agente oral de penetração renal como TMP-SMX **se** sensível, segura e paciente melhorando; contar duração do primeiro dia efetivo, conforme gravidade e diretriz aplicável. Não manter carbapenêmico automaticamente até último dia se há alternativa válida, nem escolher fosfomicina oral para pielonefrite.
+
+**Por que importa:** o fenótipo ESBL orienta probabilidade de atividade, mas **não dispensa individualização do sítio, susceptibilidade e farmacocinética**.
+
+### Caso 7 — Cistite recorrente após menopausa
+
+**Apresentação:** mulher de 61 anos relata quatro episódios em um ano, com disúria e polaciúria documentadas em culturas anteriores por E. coli suscetível, resposta clínica a cursos curtos e novo episódio meses depois. Relata ressecamento vaginal e desconforto à relação, não usa espermicidas, sem febre nem hematúria persistente. Ultrassom anterior normal e sem cálculo.
+
+**Hipótese:** **cistite recorrente**, possivelmente reinfecções, com síndrome geniturinária da menopausa como fator associado. É importante diferenciar de dor vesical crônica, vaginite e episódios não bacterianos.
+
+**Exames:** cultura no episódio sintomático atual, revisão de exames anteriores e antibióticos, exame pélvico conforme necessidade e avaliação de esvaziamento/constipação. Não solicitar cistoscopia ou TC sistemática sem sinais de alarme.
+
+**Conduta:** tratar episódio atual conforme agente, sintomas e antibiograma; discutir medidas preventivas com baixo dano, **estrogênio vaginal** quando elegível e consentido, hidratação se baixa ingestão, alternativa como metenamina em pacientes selecionadas e profilaxia antibiótica individualizada apenas quando outros métodos falharem. Investigar sangramento vaginal anormal separadamente.
+
+**Por que importa:** a prevenção mais útil pode ser corrigir fisiologia geniturinária e comportamento de risco, não oferecer quinolona todo mês.
+
+### Caso 8 — Lactente com febre sem foco e cultura inadequada
+
+**Apresentação:** lactente de sete semanas tem temperatura de 38,7°C, irritabilidade e redução da mamada. Exame não revela foco claro. Na triagem, urina foi colocada em saco coletor adesivo e a cultura mostrou crescimento misto. Responsável pergunta se pode receber antibiótico por via oral e voltar para casa porque “confirmou infecção”.
+
+**Hipótese:** febre em lactente menor de três meses com suspeita possível de ITU, mas **cultura por saco contaminável e crescimento misto não confirma foco**. A idade e sinais clínicos exigem avaliação pediátrica urgente, inclusive risco de infecção bacteriana invasiva.
+
+**Exames:** coleta adequada para urina e cultura por técnica apropriada (frequentemente cateterismo em serviço especializado), avaliação completa da criança febril segundo idade/gravidade e protocolos de sepse neonatal/lactente. Não retardar antibioticoterapia em criança com alto risco apenas por dificuldade de coleta.
+
+**Conduta:** **encaminhamento imediato à pediatria hospitalar**, culturas e investigação proporcionais, antibiótico parenteral se indicado por idade e gravidade; decisão de internação e esquema dependem da avaliação especializada. Não aplicar ao lactente os cursos adultos de cistite.
+
+**Por que importa:** pediatria modifica completamente método de coleta, limiar de gravidade, necessidade de internação e segurança farmacológica.
