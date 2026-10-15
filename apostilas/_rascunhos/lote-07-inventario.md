@@ -25,8 +25,8 @@
 | 129 | Amenorreia | `apostilas/amenorreia/index.html` existente PRESERVADO; auditoria e 8 questões em `_rascunhos/lote-07-aula-129-amenorreia-auditoria-questoes.md` (13.458 caracteres); complemento não integrado |
 | 130 | Níveis de prevenção e história natural da doença | Rascunho criado: `_rascunhos/lote-07-aula-130-historia-natural-niveis-prevencao.md` (35.521 caracteres; 4 casos, 8 questões); distingue níveis de prevenção sem repetir aula 125 |
 | 131 | Hepatites virais | Rascunho `_rascunhos/lote-07-aula-131-hepatites-virais.md` criado e verificado (26.368 caracteres, 4 casos, 6 questões), com benchmark do Drive específico e PCDTs B/C |
-| 132 | Hemorragia digestiva baixa | Rascunho `_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md` criado e verificado (23.046 caracteres, 4 casos, 6 questões), ACG 2023/ESGE 2021; HDA da aula 127 preservada |
-| 133 | Meningites e encefalites | Rascunho `_rascunhos/lote-07-aula-133-meningites-encefalites.md` criado e verificado (24.615 caracteres, 4 casos, 6 questões); OMS 2025/2026 e MS; benchmark correlato de TB/neurosífilis |
+| 132 | Hemorragia digestiva baixa | **APROFUNDADA:** `_rascunhos/lote-07-aula-132-hemorragia-digestiva-baixa.md` (64.495 caracteres BRUTOS, 10 casos, 14 questões), ACG 2023/ESGE 2021; benchmark Drive apenas HDA; revisão médica/imagens pendentes |
+| 133 | Meningites e encefalites | **APROFUNDADA:** `_rascunhos/lote-07-aula-133-meningites-encefalites.md` (81.524 caracteres BRUTOS, 9 casos, 14 questões); OMS 2025/2026, NICE e Nota MS 154/2024; benchmark Drive apenas TB/neurosífilis; revisão médica/terapia nacional pendentes |
 | 134 | Síndrome dos ovários policísticos | `apostilas/sindrome-ovariana-metabolica-poliendocrina-somp/index.html` auditado e preservado; complemento `_rascunhos/lote-07-aula-134-sop-auditoria-questoes.md` (11.862 caracteres, 8 questões), guideline PCOS 2023 |
 | 135 | Imunização e PNI | Rascunho `_rascunhos/lote-07-aula-135-imunizacoes-pni-2026.md` criado e verificado (26.287 caracteres, 4 casos, 6 questões), calendário MS 2026 e comparação com resumo Drive 2020 |
 | 136 | Hemorragia digestiva | Rascunho **integrador** `_rascunhos/lote-07-aula-136-hemorragia-digestiva-integrada.md` (61.186 caracteres brutos; 9 casos, 14 questões); não reproduz 127/132, autossuficiência ampliada, ainda sem certificação médica/visual |
@@ -160,3 +160,27 @@
 **Gates NÃO concluídos:** revisão clínica externa de urgências e farmacologia/doses nacionais, reconhecimento de alterações brasileiras de disponibilidade de medicamentos, licenciamento/seleção e aprovação de imagens clínicas reais, auditoria de repetição/autossuficiência, HTML/PWA e testes de integração. **Nenhum deploy, HTML preexistente ou catálogo foi modificado.**
 
 **Próxima prioridade clínica do Lote 7:** expandir/auditar **aula 133 Meningites e encefalites** e **aula 135 PNI 2026** com protocolos brasileiros específicos e checagem das referências temporais; em seguida aprofundar 132 HDB (23k brutos) e 139 Endometriose (34k brutos), mantendo SOP/Amenorreia como complementos aos HTMLs existentes.
+
+
+## 14/10/2026 — aprofundamento prioritário das aulas 133 e 132
+
+**Escrita e verificação por leitura posterior no GitHub:**
+
+| Aula | Antes | Depois | Acréscimo | Casos atuais | Questões atuais | Situação |
+|---|---:|---:|---:|---:|---:|---|
+| 133 Meningites e encefalites | 24.615 caracteres | **81.524 caracteres brutos** | +56.909 | **9** | **14** | Rascunho avançado, não certificado |
+| 132 Hemorragia digestiva baixa | 23.046 caracteres | **64.495 caracteres brutos** | +41.449 | **10** | **14** | Rascunho avançado, não certificado |
+
+**Ampliação total desta rodada:** **98.358 caracteres brutos adicionais** em duas apostilas existentes, preservando textos, casos e questões prévios. As contagens incluem Markdown, cabeçalhos, casos, questões, bibliografia e avisos editoriais; **não são confirmação automática da meta de 60.000 caracteres didáticos úteis**.
+
+**133 — cobertura desenvolvida:** anátomo-fisiopatologia meníngea, apresentação por idade, definição epidemiológica de caso do MS, choque/antibiótico/LP, contraindicações à punção e CT seletiva, interpretação de LCR com exemplos, empiria por agente e idade com limites, discordância OMS 2025 versus NICE NG240 2024 na duração de antibiótico sem agente, encefalite HSV (PCR precoce negativa e repetição), TB/criptococose/autoimune, audiologia e neurodesenvolvimento, **Nota Conjunta MS 154/2024** com **profilaxia de meningococo e Hib distinguida** e registro de revogação da Nota 97/2024. Quimioprofilaxia nacional foi extraída de documento público oficial conferido, mas **doses de tratamento de meningite por peso/faixa etária/diluição ainda não foram validadas**; não usar rascunho para prescrever.
+
+**132 — cobertura desenvolvida:** choque e hemoglobina inicial, Oakland, colonoscopia não rotineiramente <24 horas (ACG 2023), CTA e embolização, diverticular/angiodisplasia/Heyde, colites isquêmica/infecciosa/DII, neoplasia, pós-polipectomia e lesões anorretais, varfarina/DOAC/AAS/DAPT, populações pediátricas/gestação/idosos, reabilitação da anemia, seis novos casos e oito novas questões. ESGE 2021 e ACG 2023 conferidas, evitando repetir HDA das aulas 127/136.
+
+**Etapa zero:** foram reabertos efetivamente dois documentos Drive correlatos à 133 (“TB extrapulmonar” e “Neurosífilis”) e um documento sobre úlcera péptica (para 132, somente contraponto HDA). **Nenhum benchmark equivalente de meningite bacteriana pediátrica ou HDB foi encontrado**; não certificar a etapa como equivalente, nem supor autoria Estratégia MED ou reproduzir seu conteúdo.
+
+**Referências-chave rastreáveis:** OMS 2025 e manual maio/2026, NICE NG240 2024, MS Nota 154/2024 ainda listada no portal de notas técnicas em fevereiro/2026; ACG HDB 2023, ESGE HDB 2021. A OMS 2025 e a NICE 2024 podem divergir em duração no cenário sem patógeno definido; o texto registra a divergência. **A referência OMS está disponível sob licença não comercial para adaptações**; nenhuma figura/tabela da OMS foi reproduzida diretamente.
+
+**Gates ainda NÃO satisfeitos:** revisão médica profissional independente, farmacologia e doses terapêuticas brasileiras pediátricas de meningite, avaliação de antitrombóticos/reversores no SUS, comparação com benchmark Drive equivalente, autorização/licença comercial das imagens, curadoria visual no Admin, testes de autossuficiência clínica e entrega HTML/PWA.
+
+**Nenhuma alteração em HTML de apostilas publicadas, catálogo, banco de dados ou deploy foi feita.** Próxima prioridade: revisar/aprofundar **135 Imunização e PNI 2026** (especialmente calendário completo e grupos especiais) e **139 Endometriose**, sem recriar SOP, Amenorreia ou outros HTMLs de GO já publicados.
