@@ -529,6 +529,224 @@ Os casos seguintes são originais e fictícios, criados para demonstrar decisõe
 
 
 
-## 23. Questões de residência comentadas — em construção
+## 23. Doze questões originais de residência, com todas as alternativas comentadas
+
+### Questão 1 — A pausa cirúrgica não é mera formalidade
+
+Durante procedimento eletivo, a equipe confirmou identidade e consentimento antes da indução. Pouco antes da incisão, percebe divergência entre o lado marcado e o relatório de imagem. A atitude correta é:
+
+A) Incisar no lado indicado pela marcação porque a primeira conferência já foi realizada.  
+B) Interromper o início e executar o Time Out completo, esclarecendo a divergência com documentação e equipe.  
+C) Prosseguir e esclarecer a divergência apenas no Sign Out.  
+D) Perguntar ao instrumentador isoladamente e seguir sem confirmação coletiva.
+
+**Gabarito: B.**
+
+- **A — incorreta:** a marcação pode estar errada; conferência inicial não elimina falha detectada depois.
+- **B — correta:** o Time Out é etapa coletiva imediatamente antes da incisão para reconciliar paciente, procedimento, sítio, riscos e materiais.
+- **C — incorreta:** Sign Out ocorre ao término da cirurgia e não pode corrigir uma incisão no sítio equivocado.
+- **D — incorreta:** a responsabilidade é compartilhada e a divergência exige esclarecimento documentado.
+
+**Mini-revisão:** Sign In antes da anestesia; Time Out antes da incisão; Sign Out antes de sair da sala. Nenhum passo é autorizado a ignorar inconsistência relevante.
+
+### Questão 2 — Tricotomia na prevenção de ISC
+
+Homem programado para cirurgia abdominal eletiva pergunta se deve raspar o abdome com lâmina em casa na noite anterior. Qual é a melhor orientação?
+
+A) Raspar com lâmina sempre reduz infecção.  
+B) A retirada dos pelos é obrigatória para permitir aderência do antisséptico.  
+C) Não remover pelos rotineiramente; se necessário, aparar com equipamento elétrico adequado próximo do ato cirúrgico.  
+D) Trocar banho pré-operatório por remoção integral dos pelos.
+
+**Gabarito: C.**
+
+- **A — incorreta:** lâmina produz microlesões e pode aumentar risco.
+- **B — incorreta:** antissepsia da pele não requer tricotomia universal.
+- **C — correta:** alinha-se às recomendações OMS e Anvisa sobre minimizar dano cutâneo.
+- **D — incorreta:** são intervenções distintas; banho não é substituído por raspagem.
+
+**Mini-revisão:** assepsia é prevenção de contaminação; antissepsia reduz microrganismos em tecido vivo. “Mais agressivo” não significa “mais estéril”.
+
+### Questão 3 — Profilaxia antimicrobiana, redose e dreno
+
+Paciente com prótese em cirurgia limpa recebe antibioticoprofilaxia corretamente. O procedimento se prolonga e o paciente perde volume sanguíneo importante. Há dreno ao final. Qual conduta é mais defensável?
+
+A) Nenhuma redose é possível durante cirurgia, independentemente do fármaco.  
+B) Considerar redose conforme meia-vida, tempo e perda sanguínea; não estender profilaxia apenas pelo dreno.  
+C) Manter antimicrobiano por duas semanas em todo paciente com dreno.  
+D) Suspender conferência de esterilidade porque antibiótico já foi administrado.
+
+**Gabarito: B.**
+
+- **A — incorreta:** concentração tecidual pode cair durante procedimento longo/perda expressiva, justificando redose conforme protocolo.
+- **B — correta:** diferencia farmacocinética intraoperatória de prolongamento profilático desnecessário.
+- **C — incorreta:** dreno por si só não determina curso prolongado.
+- **D — incorreta:** antibiótico não substitui técnica asséptica.
+
+**Mini-revisão:** profilaxia, redose e terapia para infecção instalada são intervenções diferentes.
+
+### Questão 4 — Classificação de ferida operatória
+
+Um paciente é operado por perfuração intestinal com peritonite fecal estabelecida. Como classificar a ferida e a conduta antimicrobiana em princípio?
+
+A) Limpa; sem necessidade de avaliar infecção.  
+B) Limpa-contaminada; todo antibiótico é só profilático.  
+C) Suja/infectada; requer controle de foco e tratamento de infecção conforme avaliação.  
+D) Contaminada, mas a perfuração não modifica conduta.
+
+**Gabarito: C.**
+
+- **A — incorreta:** a cavidade já está contaminada por conteúdo intestinal e infectada.
+- **B — incorreta:** entrada controlada em órgão sem contaminação grosseira define outro cenário.
+- **C — correta:** há infecção estabelecida; antibiótico terapêutico é complementar ao controle de fonte.
+- **D — incorreta:** perfuração com peritonite modifica classe e tratamento.
+
+**Mini-revisão:** antibiótico nunca substitui remoção de tecido desvitalizado, drenagem ou reparo do foco quando necessário.
+
+### Questão 5 — Hemostasia perto de nervo
+
+Durante dissecção próxima a nervo e vaso, ocorre sangramento pulsátil e o campo perde visibilidade. A opção mais segura é:
+
+A) Ativar energia monopolar repetidamente sem enxergar a ponta.  
+B) Clampear todo tecido da região para ganhar tempo.  
+C) Comprimir temporariamente, recuperar exposição e identificar a fonte antes de hemostasia definitiva.  
+D) Concluir que, por não haver hematoma evidente, o sangramento não é importante.
+
+**Gabarito: C.**
+
+- **A — incorreta:** aumenta risco de lesão térmica e secção inadvertida.
+- **B — incorreta:** pode incluir nervo ou estrutura nobre no instrumento.
+- **C — correta:** separa estabilização temporária de tratamento anatômico preciso.
+- **D — incorreta:** sangramento visível já justifica avaliação e pode ter repercussão rápida.
+
+**Mini-revisão:** hemostasia eficiente depende de visão, identificação e controle fisiológico, não de clampeamento às cegas.
+
+### Questão 6 — Fio ideal para cada tecido
+
+Cirurgião precisa suturar plano profundo com necessidade de sustentação temporária relativamente prolongada e tecido de baixo grau de contaminação. Qual afirmação geral é correta?
+
+A) Qualquer fio absorvível desaparece e perde força no mesmo tempo.  
+B) A escolha depende de resistência, tempo de absorção, calibre, tecido, tensão e risco infeccioso.  
+C) Multifilamentar é sempre menos propenso à colonização que monofilamentar.  
+D) A agulha deve ser a maior disponível, sem considerar tecido.
+
+**Gabarito: B.**
+
+- **A — incorreta:** materiais possuem cinética de perda de resistência diferente.
+- **B — correta:** seleção deve corresponder à biologia e demanda mecânica do tecido.
+- **C — incorreta:** maior capilaridade de alguns multifilamentares pode desfavorecer em contaminação.
+- **D — incorreta:** agulha incompatível aumenta trauma e risco de corte do tecido.
+
+**Mini-revisão:** o fio é uma “ponte temporal” enquanto o tecido recupera resistência; não se trata de escolher o mais grosso indiscriminadamente.
+
+### Questão 7 — Bordas pálidas após sutura
+
+Após síntese de pele sob tensão, as bordas tornam-se esbranquiçadas e dolorosas, com sulcos acentuados de fio. Qual abordagem é mais adequada?
+
+A) Reforçar com mais pontos superficiais apertados.  
+B) Considerar perfusão prejudicada, reavaliar distribuição de tensão e técnica de fechamento.  
+C) Manter o fechamento sem observar porque pele sempre fica pálida após sutura.  
+D) Cobrir com curativo que esconda a cor e dispensar reavaliação.
+
+**Gabarito: B.**
+
+- **A — incorreta:** pode intensificar estrangulamento.
+- **B — correta:** isquemia por tensão pode causar necrose/deiscência e exige correção.
+- **C — incorreta:** palidez persistente não é achado obrigatório ou benigno.
+- **D — incorreta:** curativo não corrige compressão vascular.
+
+**Mini-revisão:** coaptação adequada aproxima tecidos sem comprometer sua microcirculação.
+
+### Questão 8 — Fechamento aponeurótico mediano eletivo
+
+Segundo recomendação atualizada das sociedades Europeia e Americana de Hérnia de 2022, em laparotomia mediana eletiva, quando aplicável, uma estratégia sugerida é:
+
+A) Fechamento apenas da pele, pois a fáscia não participa da resistência.  
+B) Suturas contínuas com pequenas tomadas aponeuróticas, usando fio de absorção lenta, com distribuição adequada da tensão.  
+C) Uso de fio rapidamente absorvível com grandes tomadas de músculo em todos os casos como regra mais forte.  
+D) Omitir o fechamento de incisões grandes para evitar hérnia.
+
+**Gabarito: B.**
+
+- **A — incorreta:** a integridade fascial é central.
+- **B — correta:** reflete a recomendação fraca, com evidência de baixa certeza, específica de laparotomia mediana eletiva.
+- **C — incorreta:** não é a orientação preferida e traumatizar músculo não melhora automaticamente resultado.
+- **D — incorreta:** ausência de fechamento adequado aumenta risco de complicações.
+
+**Mini-revisão:** não transportar essa recomendação específica automaticamente a toda incisão, abdome infectado ou emergência.
+
+### Questão 9 — Quando converter uma laparoscopia?
+
+Durante laparoscopia em abdome com aderências importantes, o cirurgião não reconhece limites anatômicos de estrutura tubular e ocorre sangramento que compromete visão. Qual atitude melhor reflete segurança?
+
+A) Persistir na via laparoscópica apenas para evitar cicatriz maior.  
+B) Prosseguir com clips em estrutura presumida, sem identificação.  
+C) Melhorar exposição, buscar assistência e considerar conversão quando não houver segurança anatômica.  
+D) Encerrar operação sem relatar suspeita de lesão.
+
+**Gabarito: C.**
+
+- **A — incorreta:** prioridade estética não justifica risco de lesão nobre.
+- **B — incorreta:** estrutura tubular não deve ser tratada por suposição.
+- **C — correta:** conversão pode ser decisão cirúrgica prudente e tecnicamente apropriada.
+- **D — incorreta:** suspeitas devem ser investigadas e documentadas.
+
+**Mini-revisão:** acesso minimamente invasivo não é objetivo absoluto; o objetivo é tratar a doença com menor risco total.
+
+### Questão 10 — Febre no pós-operatório com dreno
+
+No quinto dia após cirurgia abdominal, paciente apresenta febre, dor crescente, taquicardia e distensão. O dreno está sem saída. Qual interpretação é correta?
+
+A) Dreno sem débito exclui coleção profunda.  
+B) Pode haver obstrução ou coleção não drenada; é preciso avaliar paciente, foco e repercussão sistêmica.  
+C) Febre indica sempre reação normal ao fio e dispensa exame.  
+D) Antibiótico tópico no curativo resolve eventual abscesso intraperitoneal.
+
+**Gabarito: B.**
+
+- **A — incorreta:** dreno pode estar fora da cavidade, obstruído ou incapaz de drenar compartimento.
+- **B — correta:** clínica e eventual imagem orientam investigação de ISC profunda/órgão-espaço.
+- **C — incorreta:** evolução desfavorável demanda busca ativa de complicação.
+- **D — incorreta:** abscesso requer avaliação de controle de foco, e medicamento tópico não o resolve.
+
+**Mini-revisão:** um dispositivo de drenagem é instrumento de manejo, não teste diagnóstico com sensibilidade perfeita.
+
+### Questão 11 — Divergência de compressa no Sign Out
+
+No fim de uma laparotomia, a contagem de compressas não confere. A equipe deseja fechar rapidamente. Qual é a melhor resposta?
+
+A) Prosseguir porque a cirurgia estava limpa.  
+B) Relatar apenas verbalmente após alta e não documentar.  
+C) Aplicar imediatamente o protocolo de reconciliação e busca antes do fechamento definitivo, com documentação.  
+D) Presumir que o item sempre foi descartado e ignorar contagem.
+
+**Gabarito: C.**
+
+- **A — incorreta:** limpeza do campo não exclui corpo estranho retido.
+- **B — incorreta:** documentação e ação oportuna são mandatórias para segurança.
+- **C — correta:** reconciliação de materiais é parte do checklist e permite evitar retenção.
+- **D — incorreta:** suposição não substitui contagem e busca protocolada.
+
+**Mini-revisão:** procedimentos seguros não podem sacrificar verificação por pressão de tempo ou produção.
+
+### Questão 12 — Deiscência de parede com exteriorização visceral
+
+No oitavo dia após laparotomia, paciente apresenta abertura súbita da ferida e exteriorização de alças. Qual conduta inicial é adequada?
+
+A) Reintroduzir as vísceras à força e aplicar fita adesiva no leito.  
+B) Tratar como abertura superficial e agendar retirada de pontos.  
+C) Proteger estruturas expostas, avaliar estabilidade e acionar cirurgia de emergência para reparo indicado.  
+D) Prescrever pomada e conceder alta se a pele não sangra.
+
+**Gabarito: C.**
+
+- **A — incorreta:** manipulação improvisada pode lesar ou contaminar vísceras.
+- **B — incorreta:** há falha grave de parede e risco sistêmico.
+- **C — correta:** evisceração é emergência; proteção, estabilização e controle cirúrgico são prioritários.
+- **D — incorreta:** ausência de sangramento externo não exclui lesão grave.
+
+**Mini-revisão:** o fechamento músculo-aponeurótico é fundamental; não confundir deiscência cutânea isolada com evisceração.
+
+
 
 ## 24. Matriz editorial, curadoria visual e referências — em revisão
