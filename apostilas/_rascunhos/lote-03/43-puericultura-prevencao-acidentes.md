@@ -426,3 +426,108 @@ Prestar cuidado clínico e avaliar risco imediato → acolher sem perguntas suge
 | Supervisão × barreira ambiental | ambos são complementares; barreiras protegem em distração breve |
 | Exame de rotina × investigação dirigida | não solicitar todo painel laboratorial em todas as crianças |
 | Calendário de consultas × calendário de vacinas | são duas agendas distintas, ambas devem ser verificadas |
+
+## 19. Oito casos clínicos integrados de puericultura
+
+Todos os casos são fictícios, concebidos para desenvolver raciocínio clínico, diagnóstico diferencial, segurança e comunicação. Valores numéricos devem ser interpretados nas curvas corretas e jamais como substitutos do exame.
+
+### Caso 1 — “O peso despencou”: curva duvidosa e risco nutricional verdadeiro
+
+**Apresentação.** Menino de 11 meses vem à UBS com peso anotado de 9,1 kg no sexto mês e 8,9 kg agora. A família afirma que passou a oferecer suco no lugar de água e que o lactente reduziu a ingesta de refeições após doença respiratória. Apresenta-se alerta, com hidratação preservada, mas houve perda de tecido subcutâneo percebida pelos cuidadores. O comprimento parece ter sido medido anteriormente com fita sobre a cama.
+
+**Hipóteses.** Falha de ganho ponderal por aporte insuficiente, intercorrência infecciosa e erro antropométrico podem coexistir. Diferenciais incluem dificuldade de deglutição, má absorção, doença crônica e insegurança alimentar. **Não presumir desnutrição por duas anotações** cuja metodologia é desconhecida, nem normalizar perda real de peso porque “está brincando”.
+
+**Investigação.** Repetir peso/comprimento com instrumentos apropriados; buscar datas e medidas intermediárias confiáveis e registrar em gráficos OMS para sexo/idade. Anamnese alimentar detalhada com recordatório, refeições observadas se factível, volume de leite/sucos, diurese e evacuações. Procurar sinais de doença sistêmica e insegurança alimentar. Laboratórios são orientados por suspeitas após avaliação, sem “painel completo” obrigatório.
+
+**Interpretação.** O padrão pode revelar peso/idade e peso/comprimento em declínio, apesar de parecer saudável no momento. A troca frequente de alimentos por líquidos adocicados reduz densidade nutricional e atrapalha alimentação. A família pode estar tentando ajudar e necessitar instrução concreta em vez de repreensão.
+
+**Conduta.** Avaliar se há necessidade de tratamento urgente (não há sinais circulatórios graves neste cenário), orientar oferta adequada de alimentos familiares seguros, fontes de ferro, água e aleitamento; revisar preparo de fórmula quando usada; conectar a suporte nutricional/social se indicado e marcar reavaliação próxima com medidas confiáveis. Investigar etiologia orgânica se queda persistir ou houver sinais adicionais.
+
+**Por que importa.** Questões testam a diferença entre erro de aferição e desaceleração real; a resposta correta combina **validação da medida + avaliação clínica + plano de seguimento**.
+
+### Caso 2 — Perda de palavras em criança de 21 meses
+
+**Apresentação.** Menina de 21 meses falava algumas palavras e apontava objetos aos 16 meses. Nos últimos três meses passou a falar menos, raramente responde ao nome e deixou de apontar para compartilhar interesse; os pais descrevem audição “boa porque reage ao aspirador”. Crescimento físico está adequado.
+
+**Hipóteses.** Regressão de comunicação e interação social com possível condição do neurodesenvolvimento, incluindo TEA, mas também perda auditiva adquirida, transtornos neurológicos e outras causas. Reagir a ruído forte não comprova audição funcional para linguagem.
+
+**Investigação.** Documentar habilidades previamente presentes e momento de perda; observar contato, gestos, brincadeira, linguagem receptiva, comportamento e exame neurológico. Solicitar avaliação audiológica adequada. Considerar **M-CHAT-R/F entre 16 e 30 meses** no contexto do SUS, interpretando como rastreio e não diagnóstico; encaminhar avaliação multiprofissional e investigar outras causas conforme achados.
+
+**Interpretação.** A regressão é mais preocupante que aquisição tardia de uma única habilidade sem perdas, pois demonstra mudança da trajetória. Uma triagem “baixa probabilidade de TEA” não descarta outros problemas se clínica é significativa.
+
+**Conduta.** Encaminhar sem demora desnecessária para audição, desenvolvimento e apoio/intervenção funcional; orientar a família em estratégias de comunicação responsiva, brincadeiras, rotina e seguimento com data. Não esperar até os três anos para “ver se fala sozinho” quando houve perda de habilidades.
+
+**Por que importa.** Crescimento antropométrico normal **não** exclui alteração neurológica ou sensorial.
+
+### Caso 3 — Prematuro: confusão entre idade cronológica e corrigida
+
+**Apresentação.** Menino nascido com 30 semanas de gestação, que completou quatro meses de vida cronológica, não apresenta controle cervical idêntico ao de alguns bebês nascidos a termo com quatro meses. Está em seguimento de neonatologia e tem ganho ponderal progressivo, com sono e alimentação adequados.
+
+**Hipóteses.** Desenvolvimento compatível com idade corrigida ou atraso que requer investigação. A diferença até 40 semanas é de dez semanas; logo aos quatro meses cronológicos a idade corrigida é próxima de um mês e meio. Compará-lo indiscriminadamente a um bebê a termo da mesma idade cronológica pode gerar rótulo falso; por outro lado, prematuridade não explica automaticamente toda assimetria ou regressão.
+
+**Investigação.** Confirmar idade gestacional e data prevista de parto; revisar exame neurológico, simetria, tônus, observação de interações, curvas e seguimento pós-UTI neonatal. Verificar triagens auditiva e visual e fatores de risco para prematuridade. Não atrasar de modo automático a vacinação pelo PNI ao “corrigir” idade.
+
+**Conduta.** Interpretar marcos no contexto de idade corrigida e risco, estimular interação e seguimento interdisciplinar; encaminhar se houver tônus muito alterado, assimetria, ausência de progresso ou sinais de lesão neurológica. Atualizar vacinas conforme idade cronológica/recomendações específicas.
+
+**Por que importa.** A correção de idade muda a leitura do desenvolvimento, mas **não é uma autorização para abandonar rastreio ou vacinas**.
+
+### Caso 4 — Lactente pequeno dormindo no sofá com a mãe exausta
+
+**Apresentação.** Lactente de dois meses é levado para consulta. A mãe relata que adormece frequentemente com ele no sofá durante mamadas noturnas. No berço há travesseiro alto, protetores laterais fofos e brinquedos. O bebê não tem queixas clínicas e a família interpreta a posição inclinada como “mais segura contra refluxo”.
+
+**Hipóteses de risco.** Ambiente de sono com risco de sufocação e morte inesperada relacionada ao sono. O lactente está bem no exame, mas isso não elimina exposição ambiental. A sobrecarga e privação de sono da cuidadora devem ser acolhidas para gerar plano viável.
+
+**Avaliação.** Perguntar rotina noturna, local de sono, uso de álcool/sedativos, tabagismo, prematuridade e rede de apoio. Verificar se há indícios de refluxo com sinais de doença real, em vez de aceitar travesseiro/inclinação como terapia.
+
+**Conduta.** Orientar **sempre iniciar sono em decúbito dorsal**, em berço/superfície própria, plana, firme e desobstruída; retirar travesseiro, almofadas, protetores e brinquedos; evitar adormecer com bebê em sofá/poltrona ou superfície compartilhada. Organizar revezamento de cuidados e apoio familiar, se disponível; orientar aleitamento em condições que reduzam risco de sono involuntário. Não usar posicionadores anti-refluxo sem indicação específica.
+
+**Por que importa.** A orientação antecipatória precisa considerar **condições reais do cuidador**, e não apenas um cartaz de “não faça”.
+
+### Caso 5 — Criança de três anos com acesso livre à piscina
+
+**Apresentação.** Família de criança de três anos relata piscina em casa, sem cerca separando-a do quintal. A criança sabe “bater pernas” na aula de natação e os responsáveis assumem que ela consegue se manter segura. Há um portão externo que costuma ficar aberto. Um irmão de nove anos frequentemente fica olhando a criança enquanto adultos cozinham.
+
+**Hipótese de risco.** Alto risco de afogamento por ausência de barreira e supervisão adulta consistente. Aula de natação e irmão mais velho não substituem proteção estrutural.
+
+**Investigação.** Perguntar cercamento em todos os lados, trava/fechamento automático, portas que dão acesso à água, outras fontes como banheira e baldes, supervisão ativa, acesso a atendimento e conhecimento de medidas de emergência.
+
+**Conduta.** Priorizar instalação/manutenção de barreira física efetiva com portão adequado, supervisão ativa de adulto responsável pelo turno, remoção de brinquedos que atraiam criança para a água e organização da rotina para que não haja intervalos sem responsável. Recomendar aprendizado de habilidades aquáticas apropriadas e suporte em emergência, sem tratá-los como garantia.
+
+**Por que importa.** Na prevenção de acidentes, **barreiras físicas e supervisão não competem: somam proteção**.
+
+### Caso 6 — Baixa estatura em menino com ganho de peso aumentado
+
+**Apresentação.** Menino de oito anos apresenta velocidade de crescimento linear reduzida em aferições confiáveis ao longo de dois anos, com ganho relativo de peso e IMC crescente. A mãe tem estatura média e o pai é alto. Não há diarreia crônica, mas a criança refere fadiga, frio e constipação.
+
+**Hipóteses.** A combinação de **desaceleração linear com ganho ponderal relativo** levanta suspeita de endocrinopatia, como hipotireoidismo, entre outros diferenciais (síndrome de Cushing, uso de corticoide, outras causas). Distúrbios sistêmicos e de crescimento também devem ser considerados. Obesidade exógena isolada frequentemente não causa velocidade linear marcadamente baixa; mas um achado não basta para diagnóstico.
+
+**Investigação.** Confirmar medidas/intervalos, examinar proporções corporais e puberdade, calcular alvo familiar aproximado e avaliar estado nutricional, TSH/T4 livre conforme suspeita, além de exames dirigidos. Idade óssea e encaminhamento à endocrinopediatria podem ser úteis diante do padrão.
+
+**Conduta.** Investigar causa antes de prescrever dieta de emagrecimento agressiva ou hormônio de crescimento. Orientar hábitos saudáveis e marcar reavaliação; tratar a causa identificada e acompanhar recuperação da velocidade.
+
+**Por que importa.** Provas exploram a falsa conclusão “crescimento ruim é sempre falta de comida”. A distribuição entre altura e peso orienta diferencial.
+
+### Caso 7 — Suspeita de violência não pode ser reduzida à curiosidade diagnóstica
+
+**Apresentação.** Menina de cinco anos chega à UBS com hematomas em tronco e face interna de braços, em diferentes estágios de coloração aparente. O cuidador apresenta explicações contraditórias, e a criança fica tensa ao discutir o ocorrido. Não há instabilidade hemodinâmica. A equipe tem preocupação de agressão física, mas não dispõe de confirmação.
+
+**Hipóteses.** Lesões possivelmente não acidentais; diferenciais incluem distúrbios de coagulação, acidente compatível com desenvolvimento e condições cutâneas. Distribuição, mecanismo e comportamento elevam necessidade de avaliação de proteção, sem autorizar acusação definitiva pelo exame.
+
+**Investigação.** Documentar achados de modo objetivo, ouvir relato espontâneo sem conduzir respostas, avaliar outros sinais físicos e risco imediato de retorno ao domicílio. Exames hematológicos/imagem quando clinicamente indicados; a hipótese de violência não deve impedir tratamento de lesões ou investigação médica apropriada.
+
+**Conduta.** Acionar fluxos de proteção e notificação conforme protocolo do SUS e legislação, envolver equipe multiprofissional/Conselho Tutelar conforme pertinência, garantir segurança de alta e não entrevistar a criança repetidamente de forma sugestiva. Preservar confidencialidade e evitar confronto que aumente risco.
+
+**Por que importa.** A ausência de “prova” definitiva não elimina dever de assistência e proteção, e pobreza isolada não equivale a violência.
+
+### Caso 8 — Sonolência súbita com frasco de medicamento aberto
+
+**Apresentação.** Menino de dois anos é encontrado com cartela e frasco de medicamento de adulto abertos em sua mão. Familiares não sabem se ingeriu comprimidos. Ele está sonolento e menos responsivo; a avó sugere induzir vômito e oferecer leite para “diluir”.
+
+**Hipóteses.** Intoxicação medicamentosa potencialmente grave; tipo e dose ainda desconhecidos. Sonolência é sinal de comprometimento do nível de consciência, exigindo abordagem emergencial. Leite e indução de vômito não são medidas apropriadas de neutralização.
+
+**Exames.** Priorizar ABC, glicemia imediata, sinais vitais/ECG e avaliação toxicológica dirigida. Identificar nome, apresentação, quantidade máxima possível, horário e comorbidades, levando embalagem; os exames adicionais dependem do medicamento e quadro (p. ex., eletrólitos, gasometria, função hepática e níveis específicos quando indicados).
+
+**Conduta.** Acionar serviço de emergência/centro de informação toxicológica; monitorização e suporte respiratório/circulatório conforme necessidade. Não provocar vômito nem administrar soluções caseiras. Descontaminação ou antídoto só em contexto de indicação e equipe apropriada. Na alta, orientar armazenamento trancado e revisar riscos de outros produtos.
+
+**Por que importa.** Prevenção de intoxicação e conduta frente à exposição são distintas; a decisão clínica é guiada por gravidade e substância, não pela esperança de que “não deu tempo de engolir”.
+
