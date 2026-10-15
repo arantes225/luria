@@ -179,3 +179,218 @@ Imagens clínicas reais somente após autoria/licença comercial, pertinência, 
 - [ ] Aprofundar para padrão premium e ≥60.000 caracteres didáticos úteis sem repetição.
 - [ ] Imagens licenciadas, validação médica, teste editorial desktop/PWA e revisão de bibliografia.
 **Status:** rascunho, NÃO PUBLICADO.
+
+
+---
+
+# LURIA — APROFUNDAMENTO CLÍNICO E ENDOSCÓPICO
+**Rodada editorial:** 14/10/2026. Base científica principal: ACG 2023 e ESGE 2021; o material correlato “Úlcera péptica” do Drive compara somente **hemorragia digestiva alta**. O capítulo a seguir é produção original de HDB e deixa explícito onde essa falta de benchmark específico permanece. Nenhum texto ou imagem do Drive foi reproduzido.
+
+## 16. Hemorragia baixa em três cenários: a gravidade decide a sequência
+
+### 16.1. Cenário 1: a perda discreta que não deve ser banalizada
+Pessoa de 62 anos nota pequenas quantidades de sangue vermelho misturadas às fezes há semanas, sem instabilidade. Os três erros são chamar de hemorroida sem exame, fazer transfusão apesar de hemoglobina normal e usar teste de sangue oculto para “verificar se há sangue” quando o sangramento é **visível**. A investigação se concentra em história, exame anorretal conforme contexto e colonoscopia ou outra avaliação indicada pelo risco neoplásico e sintomas.
+
+**Sangue no papel após evacuação dolorosa** sugere fissura, mas **hemorroidas ou fissuras coexistentes não excluem câncer**. Sangue misturado ao bolo fecal, alteração recente do hábito intestinal, emagrecimento, anemia ferropriva e história familiar reforçam investigação colorretal. Uma boa abordagem permite que a doença anorretal seja tratada sem encerrar prematuramente o estudo.
+
+### 16.2. Cenário 2: HDB maior, mas a pessoa foi estabilizada
+A pessoa chegou com hematoquezia e queda de hemoglobina, recebeu observação/reposição proporcional e agora mantém perfusão boa, sem sangue novo volumoso. Aqui o endoscopista tende a ganhar mais realizando **colonoscopia bem preparada e durante internação** do que tentando exame sem visibilidade dentro de uma hora. A ACG 2023 atualizou a recomendação anterior de 2016 e não recomenda colonoscopia urgente <24 h como regra geral para a maioria dos internados, por falta de benefício consistente em desfechos relevantes.
+
+A decisão concreta envolve disponibilidade de equipe, risco de ressangramento, capacidade de beber solução de preparo, comorbidades e se outro exame, como EDA, é indicado pela suspeita alta. Em alguns doentes, a fonte já parou de sangrar antes da colonoscopia; encontrar divertículos **não comprova** qual deles sangrou. Descrever no laudo estigmas endoscópicos (vaso visível, coágulo aderido, extravasamento ativo) é mais útil que apenas “diverticulose difusa”.
+
+### 16.3. Cenário 3: o sangramento volumoso continua e a perfusão cai
+Paciente com hematoquezia ativa, hipotensão ou necessidade transfusional rápida deve ser ressuscitado e avaliado para **CTA** quando houver possibilidade segura de transporte e imagem, visando localizar **extravasamento ativo**. Em muitos casos, CTA positiva orienta angiografia terapêutica com embolização superseletiva; em alternativa, endoscopia/cirurgia podem ser prioritárias conforme disponibilidade e etiologia. A hematoquezia com choque mantém a **HDA maciça** como possível fonte, especialmente se dados de cirrose, úlcera ou hematêmese coexistem.
+
+Uma CTA negativa significa apenas que **não houve extravasamento detectável naquele intervalo e dentro dos limites de sensibilidade**, não que a pessoa não sangrou. Se o sangramento é intermitente, a lesão pode parar de sangrar antes da imagem. Em instabilidade persistente com CTA negativa, ESGE destaca considerar EDA para afastar origem alta; decisão depende de contexto.
+
+## 17. Anatomia arterial e topografia: de onde vem o sangue?
+
+### 17.1. O cólon não tem irrigação uniforme
+Ceco e cólon direito recebem ramos do território mesentérico superior, enquanto cólon esquerdo e parte do reto são irrigados pelo território mesentérico inferior; reto também recebe ramos pélvicos. Anastomoses, incluindo a artéria marginal, ajudam manter fluxo, mas áreas de fronteira são vulneráveis quando há hipotensão ou aterosclerose.
+
+Essa anatomia une duas causas aparentemente diferentes:
+- **divertículos** podem sangrar por lesão de vasa recta na parede, com sangramento arterial abrupto frequentemente indolor;
+- **colite isquêmica** reflete sofrimento da mucosa por baixo fluxo/vasoconstrição/alterações vasculares, causando dor, urgência evacuatória e sangue em intensidade variável.
+
+Por isso um idoso com PA baixa, dor cólica em flanco esquerdo e diarreia sanguinolenta não deveria ser classificado automaticamente como “diverticular” apenas porque a colonoscopia de anos atrás relatou divertículos.
+
+### 17.2. O segmento importa na interpretação das fezes
+Sangue originado no reto distal pode aparecer no papel ou recobrir as fezes; origens proximais podem gerar sangue misturado, vinho ou até melena se trânsito demorado. **Não usar essa heurística como prova topográfica**. Medicamentos, velocidade do trânsito, quantidade de sangue e presença de coágulos modificam aspecto.
+
+Sangramento do intestino delgado pode mimetizar alto ou baixo. Quando EDA e colonoscopia de boa qualidade não localizam foco, e o sangramento persiste, investigar delgado passa a ser parte da lógica diagnóstica. Se a primeira colonoscopia tinha preparo ruim, ela **não** é equivalente a exame negativo tecnicamente adequado.
+
+### 17.3. Microvasos e angiodisplasia
+Angiodisplasias são malformações/ectasias vasculares mucosas/submucosas que podem sangrar intermitentemente, com anemia crônica ou hemorragia aguda. São mais frequentes em idosos e em grupos com comorbidades (p. ex., doença renal/valvopatia), mas sua presença não significa que todo paciente com estenose aórtica e anemia tenha automaticamente a mesma síndrome.
+
+A associação entre estenose aórtica significativa, anomalias de von Willebrand adquiridas e angiodisplasia é conhecida como **síndrome de Heyde** em quadro clínico apropriado; o mecanismo envolve cisalhamento e perda de multímeros de alto peso molecular, com alteração de hemostasia. É uma associação mecanística útil em residência, não critério universal para substituir avaliação endoscópica e cardiológica.
+
+## 18. Avaliação hemodinâmica: a fisiologia que não cabe no valor inicial de Hb
+
+### 18.1. Por que pressão normal pode coexistir com perda importante?
+A compensação adrenérgica pode manter pressão arterial até determinado ponto, por taquicardia e vasoconstrição. Em idosos com bloqueadores beta ou marcapasso, resposta de frequência pode estar atenuada. A leitura precisa reunir perfusão distal, sudorese, extremidades frias, confusão, tontura/síncope, pulsos, pressão e sua tendência, lactato quando indicado e débito urinário em pacientes graves.
+
+**Índice de choque**, razão frequência cardíaca/pressão sistólica, pode ajudar triagem. Um valor acima de ~1 em certos adultos pode sugerir instabilidade, mas não é limiar universal, e é alterado por idade/medicações/ritmo; não usar para negar choque em paciente bradicárdico ou com cardiopatia.
+
+### 18.2. Hemoglobina é concentração, não medidor instantâneo de hemorragia
+Se paciente perde hemácias e plasma proporcionalmente, a concentração inicial pode não cair de imediato. Após fluidos e redistribuição intersticial, Hb diminui. Por isso “Hb 12, sem risco” em paciente com hematoquezia abundante e hipotensão é erro; em contraponto, Hb 7,5 estável há meses com deficiência de ferro não equivale automaticamente a choque hemorrágico ativo.
+
+**Comparação de casos:**
+- A: hematoquezia há 20 minutos, PA 79/42, confuso, Hb 11,2 → emergência e ressuscitação sem esperar 7 g/dL.
+- B: Hb 6,8, sem sangramento volumoso atual, PA normal e doença renal → avaliar necessidade transfusional, causa crônica, comorbidades e terapias de ferro, sem acionar protocolo de hemorragia maciça por valor isolado.
+
+### 18.3. Transfusão restritiva tem condições
+Em **adulto estável e sem cardiopatia significativa**, ESGE 2021 sugere transfusão quando Hb ≤7 g/dL, alvo pós-transfusão 7–9 g/dL. Em doença cardiovascular conhecida, ESGE recomenda limiar de até 8 g/dL e alvo mais alto (≥10 g/dL) no contexto da diretriz, ao passo que outras estratégias transfusionais e guias podem usar metas distintas segundo síndrome coronariana, idade e evidência atual. **Nunca apresentar alvo ≥10 como consenso universal contemporâneo**; citar que é recomendação específica ESGE 2021 e exigir individualização, sobretudo em isquemia ativa.
+
+Em **choque com sangramento em curso**, perfusão e necessidade de ressuscitação prevalecem, e a concentração laboratorial pode subestimar perda. Hemoterapia deve respeitar tipagem, acesso, velocidade, reações transfusionais e protocolos de hemorragia maciça quando ativados. Transfusão excessiva também gera riscos (sobrecarga, reações, distúrbios eletrolíticos), logo a avaliação deve ser contínua.
+
+## 19. O Oakland score: baixo risco não é ausência de diagnóstico
+
+### 19.1. O propósito do escore
+O escore de Oakland foi desenvolvido para auxiliar decisão sobre **alta segura** em hemorragia digestiva baixa, usando idade, sexo, histórico de HDB, achados do exame retal, pulso, pressão sistólica e hemoglobina. A ESGE 2021 cita **≤8 pontos** como possível apoio à alta em sangramento autolimitado, **sem características clínicas adversas**, com investigação ambulatorial adequada.
+
+**O escore não substitui o médico:** pessoa com sinais de choque, doença coronariana aguda, anticoagulação importante, novo sangramento abundante, barreira de acesso ou suspeita de neoplasia necessita avaliação própria mesmo se uma calculadora mostrar resultado baixo. A pontuação também depende de exame e unidade de Hb adequados; não produzir escore com dados faltantes como se fossem zero.
+
+### 19.2. O que torna alta plausível?
+Ausência de novo sangramento significativo, perfusão normal e estável, comorbidades e fármacos revisados, acesso a retorno/endoscopia/hemograma, ausência de sintomas de alarme graves e instruções claras para novo sangramento/hipotensão. A alta é decisão sobre **segurança de investigação ambulatorial**, não declaração de que fonte está curada nem exclusão de câncer.
+
+### 19.3. Exemplo para não usar score cegamente
+Mulher de 68 anos teve pequena perda autolimitada e agora está estável, porém perdeu peso, tem anemia ferropriva e relata mudança progressiva do hábito intestinal. Mesmo que risco imediato de intervenção seja baixo, **há preocupação diagnóstica com neoplasia**: plano de colonoscopia oportuna e acompanhamento é indispensável. A calculadora prediz um tipo de risco, não substitui raciocínio etiológico.
+
+## 20. Exames: diferenciar localizar sangue de caracterizar doença
+
+### 20.1. Colonoscopia durante internação
+Permite avaliar mucosa e intervir em divertículos com estigmas, angiodisplasias, úlceras, sangramento pós-polipectomia e lesões neoplásicas. O preparo por solução apropriada costuma ser necessário para retirar sangue/coágulos e obter visibilidade; as condições de ingestão e aspiração dependem do doente.
+
+**Colonoscopia urgente de baixo rendimento:** paciente em choque, sem preparo, com sangramento ativo abundante, sedação arriscada e pouca visualização pode ter procedimento inconclusivo. Essa situação justifica considerar CTA/radiologia ou estabilizar primeiro. Em paciente estável, colonoscopia precoce durante hospitalização faz sentido, mas em geral **não exige relógio <24 h** para benefício em desfechos clínicos.
+
+### 20.2. Angiotomografia (CTA)
+O exame usa contraste e imagens vasculares seriadas para identificar extravasamento luminal, que aparece em fases apropriadas e pode indicar localização anatômica do foco. Deve ser interpretado por radiologista com experiência, especialmente quando há artefatos de material hiperdenso, fezes, contraste oral residual ou sangramento intermitente.
+
+**CTA positiva:** chamar radiologia intervencionista, correlacionar território vascular e pensar em embolização transcateter quando paciente/recursos permitem.  
+**CTA negativa e paciente estabilizou:** observação, colonoscopia e investigação conforme risco.  
+**CTA negativa mas choque persiste:** revisar origem alta, frequência do sangramento, repetir avaliação e organizar hemostasia por outras vias quando indicado.
+
+**Função renal e contraste:** risco de lesão renal por contraste é consideração, mas em hemorragia ameaçadora à vida deve ser equilibrado com necessidade de hemostasia. A avaliação de risco renal não pode transformar proteção contra possível lesão renal em atraso fatal de diagnóstico vascular.
+
+### 20.3. Angiografia e embolização
+Angiografia permite visualizar território e, em sangramento detectável, embolizar vaso responsável com microcateteres/coils ou outros agentes. O princípio é interromper fluxo do ramo patológico **preservando perfusão de segmentos saudáveis**. Quanto mais proximal e indiscriminada a embolização, maior potencial de isquemia. Técnicas superseletivas têm vantagens, mas não eliminam risco de necrose, isquemia ou ressangramento.
+
+Angiografia pode não encontrar extravasamento se hemorragia já parou. **Não embolizar grande território “às cegas”** sem ponderar risco; procedimentos empíricos em territórios específicos exigem evidência e equipe intervencionista. Em ressangramento, decidir entre repetição de CTA/embolização, colonoscopia e cirurgia.
+
+### 20.4. Estudos do intestino delgado
+Quando exames alto/baixo adequados foram negativos, **cápsula endoscópica** é método valioso para mucosa do delgado e angiodisplasias/tumores, desde que não haja suspeita relevante de estenose que retenha cápsula. **Enteroscopia assistida** permite biópsia/hemostasia após localização. **Enterografia por TC/RM** ajuda em massas, inflamação e alterações estruturais. Em sangramento ativo importante, CTA/angiografia podem ser mais acionáveis que cápsula, conforme estabilidade.
+
+## 21. Tratamento das etiologias: exame e técnica precisam responder ao vaso certo
+
+### 21.1. Hemorragia diverticular
+Divertículos adquiridos são protrusões de mucosa/submucosa em pontos de penetração de vasa recta. Um ramo vascular pode ficar exposto e erodir; o resultado é hematoquezia às vezes volumosa e **habitualmente indolor**. A presença de dor intensa/ febre desloca diferencial para diverticulite/colite/isquemia, não torna diverticular impossível, mas reduz confiança em hipótese única.
+
+Se colonoscopia encontra estigma de sangramento ativo, vaso visível ou coágulo aderido convincente, tratamento endoscópico pode usar clipes, banda ou métodos adequados, dependendo de localização/experiência. Nem todo divertículo precisa de clipe, e colocar clipe em local incidental não reduz necessariamente ressangramento.
+
+**No retorno:** esclarecer medicações, controlar fatores de risco, planejar sinais de alarme e eventual reintervenção. Ao contrário de doença diverticular inflamatória, hemorragia diverticular isolada não exige antibiótico empírico de rotina.
+
+### 21.2. Angiodisplasia
+Lesão vascular pode ser coagulada por técnicas endoscópicas, como **plasma de argônio**, com cautela para potência, distensão e localização (p. ex., ceco com parede fina). Recorrência pode ser comum quando há múltiplas lesões, doença renal ou distúrbio hemorrágico associado.
+
+**Síndrome de Heyde:** em sangramento angiodisplásico recorrente e estenose aórtica grave, considerar avaliação cardiológica de valva e distúrbios de von Willebrand adquiridos; substituir valva pode ter repercussão no sangramento em casos selecionados, mas não é conduta universal feita apenas para uma anemia inespecífica.
+
+### 21.3. Colite isquêmica
+Redução de fluxo promove injúria mucosa que começa com dor e pode evoluir para eliminação de sangue; risco aumenta em idosos, baixo fluxo e doença vascular. Quadro leve pode responder a tratamento de suporte, ajuste hemodinâmico e monitorização; **peritonite, necrose, instabilidade sustentada e disfunção orgânica** impõem avaliação cirúrgica urgente. Antibiótico é considerado conforme gravidade/protocolo e suspeita de necrose/translocação, não como receita automática em toda colite leve.
+
+A **isquemia mesentérica aguda** de delgado, com dor desproporcional e risco de necrose extensa, é diagnóstico diferencial de alto risco; não reduzir toda dor abdominal vascular a “colite isquêmica autolimitada”.
+
+### 21.4. Colite infecciosa
+Diarreia sanguinolenta com febre, contato alimentar ou surto sugere microrganismos bacterianos/parasitas, mas etiologia depende de epidemiologia e testes. Em suspeita de **STEC/EHEC**, o uso de antibióticos e antiperistálticos em certos contextos pode ser prejudicial por risco de síndrome hemolítico-urêmica; não prescrever empiricamente fluoroquinolona em toda diarreia sanguinolenta sem ponderar agente. Instabilidade/desidratação exigem suporte prioritário.
+
+### 21.5. Doença inflamatória intestinal
+Retocolite ulcerativa e Crohn podem produzir sangue e anemia, mas o tratamento é anti-inflamatório/imunomodulador orientado por extensão e gravidade, não apenas clipe endoscópico em mucosa difusamente inflamada. Colite grave com febre, taquicardia, anemia, elevação inflamatória e risco de megacólon tóxico exige internação especializada, investigação de infecção como *C. difficile* e abordagem farmacológica/cirúrgica conforme gravidade.
+
+### 21.6. Neoplasia colorretal e lesões pré-neoplásicas
+A neoplasia pode sangrar ocultamente por meses, causar anemia ferropriva, alteração do hábito, emagrecimento e ocasionalmente hematoquezia. Lesão suspeita exige biópsia/histologia e planejamento de estadiamento, não apenas hemostasia pontual. Em sangramento ameaçador à vida, controle emergencial pode preceder estadiamento completo; depois retornar à avaliação oncológica, evitando perda de seguimento.
+
+### 21.7. Pós-polipectomia
+O sangramento pode ser imediato ou tardio (dias após procedimento), mais provável em ressecções extensas, pólipos grandes, local de cólon direito ou antitrombóticos. Avaliar risco hemodinâmico, tipo de polipectomia, antitrombótico, última dose e possibilidade endoscópica de reintervenção. **Clipes, térmicos e outras técnicas** são alternativas, cada uma com risco próprio de lesão térmica/perfuração. O hemostático deve conhecer o procedimento anterior para escolher local e ferramenta.
+
+### 21.8. Lesões anorretais
+Hemorroidas internas podem causar sangue vermelho vivo frequentemente sem dor; fissuras geralmente causam dor intensa durante/apos evacuação e sangue no papel, associadas a trauma por fezes endurecidas. Proctites inflamatórias/infecciosas podem ter muco, tenesmo e sangue, demandando exame dirigido e, em grupos de risco, investigação de ISTs. **Não subestimar câncer anal/retal** em sangramento persistente, massa, perda de peso ou anemia, especialmente quando tratamento empírico de hemorroida falha.
+
+## 22. Anticoagulantes e antiagregantes: além de “suspender ou continuar”
+
+### 22.1. Varfarina
+Identificar INR, indicação, última dose e risco tromboembólico. Em hemorragia grave com instabilidade, reversão com **vitamina K IV e concentrado de complexo protrombínico de quatro fatores** pode ser indicada conforme ESGE 2021 e protocolo local; plasma quando PCC indisponível. Em sangramento leve/autolimitado, reversão plena e prolongada pode causar risco de trombose desnecessário. Não aplicar reversão de varfarina a DOAC sem reconhecer fármaco.
+
+### 22.2. Anticoagulantes de ação direta (DOAC)
+Apixabana/rivaroxabana/dabigatrana e outros diferem em eliminação renal, interações e antídotos. Perguntar hora da última dose e função renal. Em hemorragia digestiva **maior**, ESGE recomenda suspensão temporária e avaliação de reversores em ameaça vital, não administração universal a todo paciente que vê sangue nas fezes. O plano de retomada após hemostasia requer avaliar risco de AVC por FA, trombose venosa, sangramento recorrente e controle da causa.
+
+### 22.3. AAS e dupla antiagregação
+Em **prevenção primária**, a decisão sobre continuar AAS após hemorragia maior é diferente de prevenção secundária. Em **infarto/stent/AVC prévio**, a ESGE 2021 recomenda não suspender rotineiramente AAS secundário; se suspenso, reiniciar preferencialmente em até cinco dias ou mais cedo após hemostasia. Dupla antiagregação exige discussão com cardiologia, especialmente após stent recente: interrupção do P2Y12 deve ser individualizada e retorno preferencial precoce quando indicado. **Não declarar que “todo antiplaquetário deve ser reiniciado exatamente em cinco dias”**; a situação e o risco isquêmico podem exigir outro plano.
+
+### 22.4. A verdadeira pergunta da alta
+Se a pessoa usa DOAC por FA ou prótese/stent, ela deve sair com:
+- motivo claro da suspensão e quem decidiu;
+- se houve reversão, qual agente e quando;
+- plano de reinício, com prazo definido ou critério clínico;
+- sinais para retorno imediato;
+- follow-up de endoscopia, cardiologia e hemograma conforme risco.
+
+Sem isso, a emergência controlou a perda inicial mas criou vulnerabilidade a evento trombótico ou ressangramento. **A hemostasia definitiva inclui planejamento medicamentoso.**
+
+## 23. Populações especiais e comorbidades
+
+### 23.1. Idoso frágil
+Queda de hemoglobina pode causar delirium, piorar angina e precipitar lesão renal. Pressão aparentemente razoável não dispensa revisão de perfusão, hidratação e medicamentos. Preparos intestinais precisam considerar risco de aspiração, mobilidade, insuficiência cardíaca e função renal; a decisão de internar deve integrar suporte domiciliar. Também avaliar objetivos de cuidado sem negar hemostasia por idade isolada.
+
+### 23.2. Cirrose e hipertensão portal
+Hematoquezia em cirrótico pode ser hemorragia colorretal, mas **HDA varicosa volumosa** precisa permanecer no diagnóstico diferencial. Varizes retais e gastropatia/colopatia portal são diagnósticos de contexto, não a causa automática de todo sangue. Anemia em hepatopata pode ter fatores múltiplos (hiperesplenismo, ferro, sangramento). INR em cirrose não representa sozinho “risco hemorrágico” nem justifica transfusão de plasma para normalizar exame antes de todo procedimento.
+
+### 23.3. Gestação
+Hemorragia retal pequena pode decorrer de hemorroida/fissura com constipação, mas anemia, perda importante e doenças inflamatórias/neoplásicas não desaparecem na gestação. Exame e terapia precisam considerar trimestre, estado materno-fetal, risco de sedação/contraste e equipe obstétrica; **não negar investigação de hemorragia grave só por estar gestante**, assim como não realizar colonoscopia de rastreamento eletivo sem indicação durante gestação.
+
+### 23.4. Pediatria
+Sangue retal em lactente tem diferencial próprio: fissura, proctocolite alérgica associada a proteína alimentar, infecção intestinal e, conforme gravidade, **invaginação intestinal**, divertículo de Meckel e doença vascular. Criança com dor em crises, vômitos, prostração e fezes com muco/sangue precisa de avaliação urgente, imagem adequada e equipe pediátrica/cirúrgica. Não aplicar Oakland nem limiar transfusional de adulto automaticamente em bebê.
+
+### 23.5. Imunossuprimidos
+Colite por CMV, infecções oportunistas, neoplasias e toxicidade medicamentosa podem causar sangue e dor, especialmente transplante/HIV avançado. O LCR/antígeno viral não têm lugar na avaliação de HDB; testes dependem de colonoscopia/biópsias, PCR e contexto. Antibióticos/antivirais devem ser escolhidos por etiologia, não presumidos para qualquer imunossuprimido com sangue nas fezes.
+
+## 24. Alta e prevenção de recorrência: completar a linha de cuidado
+
+### 24.1. Hemorragia resolvida não significa doença explicada
+Se colonoscopia mostrou diverticulose extensa sem sangramento ativo, é aceitável registrar “possível hemorragia diverticular”, mas acompanhar necessidade de excluir outras fontes, sobretudo anemia, massa e recorrência. Um diagnóstico provável deve ser explicado como provável. Quando a internação termina sem etiologia, registrar isso e a **próxima etapa** da investigação.
+
+### 24.2. Ferro e reabilitação de anemia
+Após sangramento, anemia ferropriva pode persistir mesmo sem sangue visível. Avaliar hemograma, ferritina e saturação de transferrina conforme contexto, considerar ferro oral/IV e tolerabilidade, identificar comorbidades. **Transfusão não substitui reposição de ferro** em todos os cenários; o objetivo é restaurar reserva e tratar foco. Em comorbidades inflamatórias, ferritina pode ser elevada apesar de restrição de ferro, exigindo interpretação integrada.
+
+### 24.3. Fatores modificáveis
+Revisar AINE e antiagregantes sem indicação, especialmente quando hemorragia diverticular recorrente; não suprimir AAS secundário arbitrariamente. Tratar constipação, doenças anorretais, hipertensão e comorbidades, otimizar seguimento oncológico quando indicado. Dieta e exercício são medidas gerais úteis, mas não prometer “prevenção garantida” de sangramento diverticular com um alimento específico.
+
+### 24.4. Sinais de retorno
+Sangue em grande volume/repetido, tontura ou síncope, confusão, palpitações/dispneia, dor abdominal forte, febre com piora, vômitos persistentes e incapacidade de hidratar exigem reavaliação rápida. Orientar registro de novo episódio, quantidade aproximada, uso de fármacos e contato do serviço, sem pedir fotos invasivas quando não necessárias.
+
+## 25. Fluxograma de decisão em quatro perguntas
+**1. Há choque/instabilidade?**  
+Se sim: ABCDE, acesso, tipagem e reanimação, monitorização, procurar HDA maciça e HDB; CTA no sangramento ativo quando viável, radiologia/endoscopia/cirurgia conforme foco e recursos.
+
+**2. O sangramento persiste e pode ser localizado?**  
+Persistência com CTA positiva favorece hemostasia dirigida; CTA negativa em paciente que estabilizou permite colonoscopia apropriada, não significa “sem doença”.
+
+**3. Há hipótese etiológica além de divertículo?**  
+Dor e diarreia → colites/isquemia; anemia crônica e emagrecimento → neoplasia; anticoagulação/procedimento recente → iatrogenia; exame reto sugere lesão anorretal mas não exclui demais.
+
+**4. O risco de alta é realmente baixo e existe plano?**  
+Verificar hemoglobina em tendência, comorbidades, anticoagulação, suporte domiciliar e seguimento colonoscópico. Oakland pode auxiliar, sem substituir julgamento, especialmente em síndrome de baixo risco autolimitada.
+
+## 26. Resumo técnico de confronto ACG 2023 × ESGE 2021
+
+| Questão clínica | ACG 2023 | ESGE 2021 | Aplicação no SUS |
+|---|---|---|---|
+| Estratégia colonoscópica | Maioria dos internados pode fazer colonoscopia **não urgente** | Colonoscopia durante hospitalização quando HDB maior | Aferir estabilidade, preparo, equipe e acesso |
+| CTA em hemorragia grave | Papel ampliado da CTA, especialmente sangramento grave e CTA positiva | CTA em instabilidade/sangramento ativo para localizar antes de intervenção | Encaminhar quando necessária radiologia intervencionista, sem atrasar reanimação |
+| Transfusão | Estratificação com limiar restritivo geral e individualização | Sem cardiopatia estável Hb ≤7, cardiopatia Hb ≤8 com metas específicas | Não usar limiar como veto em choque |
+| Escore de risco | Ferramentas ajudam selecionar baixo risco | Oakland ≤8 em sangramento autolimitado sem sinais adversos como apoio à alta | Não classificar como seguro sem história/exame/retorno |
+| Antitrombóticos | Diretriz aborda reversores e retomada | Detalha varfarina/DOAC, AAS secundário, DAPT | Individualizar e envolver especialistas |
+| Origem alta com hematoquezia | Considerar na avaliação de gravidade | Considerar EDA em instabilidade e CTA negativa | Não inferir sítio apenas pela cor |
+
+**Fontes específicas:** Sengupta N et al. *Am J Gastroenterol* 2023;118:208–231. DOI 10.14309/ajg.0000000000002130. https://pubmed.ncbi.nlm.nih.gov/36735555/  
+Triantafyllou K et al. *Endoscopy* 2021;53:850–868. DOI 10.1055/a-1496-8969. https://www.esge.com/diagnosis-and-management-of-acute-lower-gastrointestinal-bleeding-esge-guideline
+
+**Registro de lacuna:** nenhum benchmark do Drive consultado descreve HDB com essa profundidade. O PDF "01 - ENDOSCOPIA - ULCERA PEPTICA" é apenas contraponto de HDA, e o guia clínico deriva das referências científicas citadas. Não citar autoria do Estratégia MED sem documento original verificado.
