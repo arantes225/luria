@@ -1,0 +1,76 @@
+{
+  "status": "CANDIDATAS_PARCIAIS_NAO_APROVADAS",
+  "policy": "Não inserir nas apostilas, no Admin nem publicar sem revisão de autoria, atribuição, adequação clínica, compressão WebP e aprovação editorial. Licenças CC BY-SA requerem atribuição e share alike para adaptações.",
+  "license_pages_checked_individually": 4,
+  "candidates_verified_at_source": [
+    {
+      "topic": "Ultrassom de hidronefrose moderada",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ultrasound_of_right_kidney_moderate_hydronephrosis.jpg",
+      "creator": "Cerevisae",
+      "license": "CC BY-SA 4.0",
+      "section": "10.1",
+      "caption": "Ultrassom renal demonstrando dilatação anecoica da pelve e dos cálices. Correlacionar com sinais de infecção e obstrução; hidronefrose isolada não comprova pielonefrite.",
+      "status": "LICENCA_VERIFICADA_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP"
+    },
+    {
+      "topic": "TC de hidronefrose por cálculo de junção ureterovesical",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phydronephrosisfromstone.png",
+      "creator": "James Heilman, MD",
+      "license": "CC BY-SA 3.0",
+      "section": "14",
+      "caption": "Imagem tomográfica de dilatação do sistema coletor associada a cálculo. Em paciente febril ou instável, avaliar emergência urológica com drenagem.",
+      "status": "LICENCA_VERIFICADA_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP"
+    },
+    {
+      "topic": "US: hidroureter e cálculo",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Right_kidney_hydroureter_with_stone_within.jpg",
+      "creator": "Cerevisae",
+      "license": "CC BY-SA 4.0",
+      "section": "14",
+      "caption": "Ultrassonografia evidenciando ureter dilatado e imagem compatível com cálculo, ilustrando a investigação de obstrução em paciente com cólica/ITU sistêmica.",
+      "status": "LICENCA_VERIFICADA_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP"
+    },
+    {
+      "topic": "US de cálculo de junção pieloureteral associado a hidronefrose",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_renal_stone_located_at_the_pyeloureteric_junction.jpg",
+      "creator": "Kristoffer Lindskov Hansen; Michael Bachmann Nielsen; Caroline Ewertsen",
+      "license": "CC BY 4.0",
+      "section": "10",
+      "caption": "Imagem ultrassonográfica de cálculo na junção pieloureteral e dilatação da pelve renal. Útil para ensinar ponto de bloqueio e controle de foco.",
+      "status": "LICENCA_VERIFICADA_PENDENTE_REVISAO_CLINICA_ADMIN_WEBP"
+    }
+  ],
+  "remaining_desired_visuals": [
+    {
+      "topic": "Angiotomografia ou TC contrastada de pielonefrite com nefrograma estriado",
+      "status": "NAO_LOCALIZADA_OU_LICENCA_NAO_VERIFICADA",
+      "source_page": null
+    },
+    {
+      "topic": "TC de pielonefrite enfisematosa com gás intrarrenal e explicação do diagnóstico diferencial",
+      "status": "NAO_LOCALIZADA_OU_LICENCA_NAO_VERIFICADA",
+      "source_page": null
+    },
+    {
+      "topic": "US de coleção renal/perirrenal com marcação do limite de abscesso",
+      "status": "NAO_LOCALIZADA_OU_LICENCA_NAO_VERIFICADA",
+      "source_page": null
+    },
+    {
+      "topic": "Microscopia de urina com leucócitos e hemácias, fonte de microfotografia rastreada",
+      "status": "NAO_LOCALIZADA_OU_LICENCA_NAO_VERIFICADA",
+      "source_page": null
+    },
+    {
+      "topic": "Urocultura de E. coli com antibiograma ilustrativo e todos os identificadores protegidos",
+      "status": "NAO_LOCALIZADA_OU_LICENCA_NAO_VERIFICADA",
+      "source_page": null
+    },
+    {
+      "topic": "Fluxograma autoral de cistite versus pielonefrite versus bacteriúria assintomática",
+      "status": "NAO_LOCALIZADA_OU_LICENCA_NAO_VERIFICADA",
+      "source_page": null
+    }
+  ],
+  "all_embedded": false
+}
