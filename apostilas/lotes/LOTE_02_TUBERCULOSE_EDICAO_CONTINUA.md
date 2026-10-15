@@ -735,6 +735,25 @@ A principal via de transmissão é a **aérea**, em especial quando há TB pulmo
 
 
 
+#### 7.8.5 Recém-nascido de mãe com TB pulmonar: doença ativa, exposição e prevenção são três situações diferentes
+
+O **recém-nascido (RN) convivente de caso-fonte bacilífero** merece investigação programática prioritária, mesmo quando está aparentemente saudável. A exposição a aerossóis de mãe, pai ou outro cuidador com TB pulmonar ou laríngea não significa, por si só, que o RN já tenha **tuberculose ativa**; entretanto, a doença pode evoluir rapidamente em lactentes, e a ausência de sintomas iniciais não autoriza simplesmente aplicar BCG e encerrar o seguimento. Em mãe que adoeceu durante a gestação ou parto, também é necessário considerar a possibilidade incomum e grave de **tuberculose congênita** quando a criança apresenta manifestações sistêmicas.
+
+| Situação neonatal | Pergunta clínica que muda a conduta | Próxima etapa |
+| --- | --- | --- |
+| RN com febre, dificuldade respiratória, letargia, hepatomegalia ou sinais de sepse; mãe teve TB ativa gestacional | Pode haver **TB neonatal ativa/congênita** ou outra infecção grave? | Avaliação **hospitalar urgente** e investigação de doença antes de oferecer apenas prevenção |
+| RN assintomático que convive com fonte de TB bacilífera | Houve exposição de alto risco, mas doença ativa já foi afastada? | Avaliar **tratamento preventivo primário** de acordo com o programa de TB, mesmo sem PT/IGRA inicial em situações elegíveis |
+| RN de contato bacilífero ainda sem plano vacinal | A estratégia específica de exposição modifica o momento da BCG? | Conferir **fluxo nacional de profilaxia neonatal e BCG** após avaliação pediátrica, não administrar vacina como substituto de investigação |
+| Mãe quer amamentar e mantém baciloscopia positiva | Quais precauções respiratórias são necessárias, e há mastite tuberculosa? | A TB pulmonar materna **não é proibição universal da amamentação**; usar precauções apropriadas e individualizar condições da mama |
+| Outro familiar é a fonte infecciosa | A mãe é mesmo a única pessoa a investigar? | Incluir cuidadores e domicílio na investigação de contatos e na prevenção da transmissão |
+
+O Manual do Ministério da Saúde descreve, para **RN convivente com fonte bacilífera**, um fluxo específico que começa com exclusão de TB doença e pode envolver **quimioprofilaxia primária com isoniazida ou rifampicina**, reavaliação e decisão temporal sobre BCG. A publicação ministerial de registro e seguimento da ILTB, de **2025**, também identifica expressamente recém-nascidos coabitantes de fonte de TB pulmonar ou laríngea confirmada como população que pode entrar no fluxo preventivo **sem PT ou IGRA inicial**. A sequência e as doses são próprias desse protocolo e da disponibilidade local; não utilizar a contagem de comprimidos pediátricos de RHZ/RH, destinada a TB **ativa**, como prescrição de prevenção neonatal.
+
+**Contraste para prova:** RN assintomático de mãe bacilífera requer avaliação e plano de prevenção; RN com febre, perda ponderal, hepatosplenomegalia e dificuldade respiratória exige investigar **doença ativa e outras infecções graves**, não apenas prevenção. Em ambos, comunicar maternidade, Pediatria, APS e vigilância de TB; registrar contato, situação microbiológica materna, medidas de redução de transmissão e data da reavaliação.
+
+**Fontes:** Ministério da Saúde, *Manual de Recomendações para o Controle da Tuberculose no Brasil*, 2ª ed., capítulo de quimioprofilaxia primária no RN, https://www.gov.br/aids/pt-br/central-de-conteudo/publicacoes/2020/manual-de-recomendacoes-para-o-controle-da-tuberculose-no-brasil ; Ministério da Saúde, *Registro de investigação e acompanhamento de pessoas em tratamento da ILTB ou TPT* (2025), https://bvsms.saude.gov.br/bvs/publicacoes/registro_investigacao_acompanhamento_tratamento_tuberculose.pdf ; Ministério da Saúde, *Prevenção*, atualizado em março de 2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/prevencao . Fluxos de BCG, fármacos e doses devem ser conferidos na norma atual do serviço antes de uso clínico.
+
+
 ### 7.9 Tuberculose zoonótica: quando suspeitar de *Mycobacterium bovis* e por que o esquema muda
 
 **Uma lacuna clínica que muda o tratamento:** nem toda tuberculose humana é causada por *Mycobacterium tuberculosis* sensu stricto. *M. bovis* faz parte do **complexo M. tuberculosis** e pode produzir doença humana associada ao contato com bovinos infectados ou à ingestão de leite e derivados **não pasteurizados**. A história epidemiológica é decisiva, sobretudo em pessoas de área rural, médicos-veterinários, trabalhadores de rebanho, ordenha e abatedouros. Crianças e adolescentes podem apresentar doença ganglionar ou outras formas extrapulmonares por via alimentar. Isso não significa que todo paciente rural ou toda adenomegalia seja tuberculose zoonótica.
@@ -897,6 +916,11 @@ Adolescente de 14 anos vive em fazenda leiteira e apresenta adenomegalia cervica
 ### Caso 21 — *M. bovis* identificado durante tratamento inicialmente convencional
 
 Homem de 46 anos, trabalhador de abatedouro, iniciou RHZE por doença pulmonar com TRM do complexo MTB positivo e rifampicina sem resistência detectada. Após cultura e tipagem em laboratório de referência, identifica-se ***M. bovis***. Encontra-se clinicamente estável, sem sinais de falência respiratória. **Hipótese:** tuberculose zoonótica identificada após início de esquema habitual. **Raciocínio:** o resultado inicial não determinava espécie nem atividade de Z; a identificação de *M. bovis* informa **resistência natural à pirazinamida**, que deve ser considerada na revisão. **Exames:** revisar cultura, tipagem, testes de sensibilidade, peso, função hepática e outras condições, com comunicação à vigilância. **Conduta:** encaminhar à referência secundária para individualizar tratamento, documentar eventual mudança no SINAN/Site-TB e seguir Nota 8/2024 quanto à manutenção prolongada quando aplicável. **Por que este caso importa:** **não basta dizer “rifampicina sensível” para concluir que os quatro componentes de RHZE estão ativos**.
+
+
+### Caso 22 — Recém-nascido exposto, mas sem sinais de doença ativa
+
+Menino de 12 dias, a termo, alimenta-se bem, tem peso adequado e não apresenta febre ou desconforto respiratório. A mãe recebeu diagnóstico bacteriológico de TB pulmonar bacilífera na maternidade. A família quer receber alta após BCG sem outras medidas. **Hipóteses:** RN de contato domiciliar de alto risco, aparentemente sem TB ativa no momento, mas ainda sem avaliação específica. **Raciocínio:** a vacina protege sobretudo contra formas graves infantis, porém não evita toda infecção e não substitui a linha de cuidado neonatal. **Exames:** avaliação pediátrica clínica para afastar doença, documentação da condição materna, investigação de exposição e exames indicados. **Conduta:** articular maternidade, Pediatria e programa de TB para decidir prevenção primária, reavaliação e momento adequado da BCG, mantendo precauções respiratórias conforme transmissibilidade e orientações para amamentação. **Por que este caso importa:** exposição recente, doença ativa e prevenção são decisões diferentes, mesmo em RN assintomático.
 
 
 ## 9. Questões autorais comentadas
@@ -1187,6 +1211,21 @@ C) Prescrever BPaLM automaticamente a toda criança com *M. bovis*.
 D) Considerar leite não pasteurizado uma via impossível de exposição.
 
 **Gabarito: B.** *M. bovis* tem resistência intrínseca a Z e a prescrição pediátrica não é corrigida apenas quebrando comprimido RHZ. **A:** confunde resposta a R e Z. **C:** extrapola regime de TB resistente com elegibilidade específica e inadequada a crianças pequenas. **D:** ignora exposição zoonótica bem reconhecida. **Mini-revisão:** confirmar a espécie pode mudar apresentação, duração e sistema de notificação.
+
+
+### Questão 32 — RN coabitante de caso-fonte bacilífero
+
+RN de 15 dias está assintomático, mas convive com mãe com TB pulmonar bacilífera recém-diagnosticada. Qual a melhor abordagem inicial na rede?
+
+A) Aplicar BCG e encerrar acompanhamento, pois a vacina exclui toda infecção.
+
+B) Presumir TB congênita confirmada e tratar apenas com uma droga preventiva, sem avaliação clínica.
+
+C) Avaliar o RN para afastar doença ativa e estabelecer o fluxo específico de prevenção primária, seguimento e BCG.
+
+D) Proibir definitivamente amamentação em qualquer caso de TB pulmonar materna.
+
+**Gabarito: C.** RN exposto requer investigação de doença e prevenção adaptada à idade e à exposição. **A:** BCG não exclui nem previne toda infecção. **B:** confunde TB ativa, que exige tratamento específico, com profilaxia. **D:** transmissão é principalmente aérea; amamentação pode ser mantida em situações apropriadas com precauções, avaliando mastite tuberculosa. **Mini-revisão:** antes de prevenir, excluir doença; antes de vacinar, conferir fluxo do RN exposto.
 
 
 ## Referências essenciais
