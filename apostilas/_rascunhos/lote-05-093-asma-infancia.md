@@ -105,3 +105,35 @@ A reavaliação deve documentar número e gravidade de crises, atendimentos em u
 - Ministério da Saúde do Brasil — protocolos e documentos nacionais pertinentes, a conferir na revisão de doses e apresentações.
 
 **Rastreabilidade:** os PDFs do Drive foram efetivamente lidos, mas são resumos antigos e não têm autoria institucional verificável; nenhuma passagem, figura ou tabela foi importada desses arquivos.
+
+## 10. Tratamento por degraus para escolares de 6 a 11 anos — aprofundamento baseado na GINA 2026
+
+**Este capítulo complementa a seção 4 e não constitui prescrição pronta.** Ao contrário de guias antigos, que frequentemente tratavam o salbutamol isolado como opção suficiente para casos leves, a GINA 2026 estabelece uma estratégia anti-inflamatória desde o primeiro degrau. A justificativa é dupla: o broncodilatador alivia a contração da musculatura lisa, mas não corrige a inflamação; além disso, episódios pouco frequentes de sintomas não garantem risco nulo de exacerbação grave. Ao planejar a prescrição, o profissional precisa distinguir a recomendação internacional da disponibilidade, autorização por idade e apresentação aprovada no Brasil.
+
+### Degrau 1: sintoma intermitente não é ausência de inflamação
+Para crianças de 6 a 11 anos com asma confirmada em situação compatível com o degrau 1, a GINA 2026 descreve alívio anti-inflamatório com **corticosteroide inalatório (CI) em baixa dose associado ao formoterol sob demanda**, ou **CI em baixa dose associado a SABA sob demanda**, no mesmo dispositivo ou em dispositivos separados conforme produto e elegibilidade. A escolha não é intercambiável sem considerar formulação, idade, dispositivo, acesso e capacidade de uso. Escrever apenas “usar bombinha se necessário” omite essa decisão essencial.
+
+A orientação de CI juntamente com SABA, quando em inaladores separados, depende de administração coordenada de ambos e de plano familiar claro. É fácil perder o componente anti-inflamatório se a criança usa alívio fora de casa e não dispõe do CI. A consulta deve identificar onde ficam os dispositivos, quem administra na escola, se há espaçador e como os responsáveis distinguem medicação de resgate de tratamento regular.
+
+### Degrau 2: controle regular
+Nos degraus 2 a 5, a GINA 2026 recomenda **terapia contendo CI em manutenção diária**. No degrau 2, um CI em baixa dose é o componente controlador; a terapia de alívio depende do esquema e do produto prescritos. A decisão deve considerar atividade física, sintomas noturnos, exacerbações anteriores, exposição a gatilhos e o padrão real de adesão. Se a criança se sente bem, isso não autoriza suspensão súbita e unilateral do controlador. A redução de intensidade, quando apropriada, exige estabilidade e monitorização.
+
+### Degraus 3 e 4: quando a intensificação realmente se justifica
+Persistência de sintomas, exacerbações ou limitação de atividade apesar de tratamento adequado requerem revisão estruturada. Se a técnica, adesão, exposição e comorbidades foram abordadas, opções segundo a GINA 2026 incluem manutenção com CI em dose média, manutenção com combinação CI-LABA em baixa dose, ou **CI-formoterol como manutenção e alívio (MART)** quando o produto e a indicação permitem. MART não é simplesmente usar qualquer combinação de CI e LABA para resgate: depende de LABA com ação rápida apropriada, especificamente **formoterol**, e de posologia definida para a faixa etária e apresentação.
+
+A escalada não deve ocorrer apenas porque a família relata “bombinha fraca”. Observar uma administração completa durante consulta pode revelar erro de técnica, uso de dispositivo incompatível com idade, falta de vedação da máscara ou tempo de inalação insuficiente. Comorbidades como rinite e fatores ambientais também podem aumentar sintomas. Para crianças que precisam de cuidado em degrau 4, a GINA recomenda considerar avaliação por especialista em asma pediátrica.
+
+### Degrau 5: asma grave é diagnóstico de exclusão operacional
+Antes de qualificar a asma como grave, é necessário afastar causas tratáveis de aparente refratariedade: diagnóstico alternativo, medicação não obtida, falha de técnica, exposição contínua a fumaça, rinossinusite e outros problemas relevantes. Em asma grave confirmada, especialistas podem avaliar fenótipos, biomarcadores, função pulmonar e elegibilidade para complementos como tiotrópio e imunobiológicos. A GINA 2026 descreve opções como terapias anti-IgE, anti-IL-5 e anti-IL-4Rα para grupos pediátricos específicos. Esses agentes não devem ser selecionados apenas pelo número de crises: a indicação depende de faixa etária aprovada, fenótipo, critérios regulatórios, custo e acesso.
+
+### Reavaliação longitudinal e redução de degrau
+O seguimento não consiste apenas em repetir a receita. A cada encontro, registrar sintomas diurnos e noturnos, despertares, interferência no exercício, uso de alívio, atendimentos de urgência, exacerbações que requereram corticosteroide sistêmico, crescimento, eventos adversos e técnica demonstrada. A GINA 2026 orienta considerar redução de degrau após **pelo menos três meses de bom controle**, com cautela individualizada. Criança que acaba de ter exacerbação importante não é a mesma situação de outra assintomática e sem fatores de risco, ainda que ambas relatem estar bem hoje.
+
+### Microcasos de aplicação
+**Escolar ativo e sintomas esporádicos:** a criança joga futebol sem restrições na maior parte dos dias, mas apresentou uma exacerbação documentada no semestre. A decisão não pode se apoiar somente na frequência semanal dos sintomas; deve considerar histórico de exacerbação e uma estratégia de alívio que inclua ação anti-inflamatória, dentro das opções apropriadas para idade e medicamento.
+
+**Sintomas apesar de CI prescrito:** antes de elevar a dose, pede-se que a família demonstre como a criança utiliza o dispositivo. Descobre-se que a medicação é usada apenas quando há chiado e que o espaçador não fica disponível na escola. O problema imediato é de implementação do plano, e não prova de falha farmacológica.
+
+**CI-LABA com LABA não formoterol:** a família pergunta se pode usar a combinação de manutenção como medicação de alívio. A resposta é não presumir intercambialidade; esquemas MART dependem de combinação específica com formoterol e doses/limites confirmados para o produto.
+
+**Fonte primária de atualização:** GINA, *Summary Guide 2026*, capítulo “Treatment steps for children 6–11 years” (https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf). Este capítulo usa formulação e exemplos autorais, sem transcrever diagramas, escalas ou tabelas da GINA.
