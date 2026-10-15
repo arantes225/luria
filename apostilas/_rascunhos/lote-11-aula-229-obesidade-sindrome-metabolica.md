@@ -1,7 +1,7 @@
 # LURIA — Apostila 229: Obesidade e síndrome metabólica no adulto
-**Lote 11 · Clínica Médica · CM-12 · Manuscrito autoral inicial, 15/10/2026 · NÃO PUBLICAR**
+**Lote 11 · Clínica Médica · CM-12 · Manuscrito expandido v0.2, 15/10/2026 · NÃO PUBLICAR**
 
-> **EDITORIAL:** desenvolvimento inicial; não certificado como completo pelo Prompt Magno e não incluído no catálogo. Escrever em etapas até atingir pelo menos 60.000 caracteres DIDÁTICOS ÚTEIS e aprovação científica/visual. Não adicionar imagens inéditas sem licença confirmada e aprovação no Admin.
+> **EDITORIAL:** manuscrito expandido; mais de 80.000 caracteres brutos não equivalem automaticamente a 60.000 caracteres DIDÁTICOS ÚTEIS. Este material **não está certificado** como completo pelo Prompt Magno, não consta do catálogo e ainda necessita auditoria médica/editorial/visual. Não adicionar imagens inéditas sem licença confirmada e aprovação no Admin.
 
 ## Etapa zero comparativa e escopo
 Foram **abertos e lidos** em 15/10/2026, no Google Drive conectado, os materiais `08 - OBESIDADE CONCEITOS GERAIS + TTO NAO FARMACOLOGICO.pdf` e `02 - OBESIDADE - PROCEDIMENTOS CIRURGICOS.pdf`. A procedência institucional Estrategia MED **não foi confirmada**. Ambos apresentam marcas explícitas de circulação e restrição de venda de terceiros. Seu uso é **benchmark de temas**, sem transferência de texto, tabelas, imagens ou identidade visual para a LURIA. Referências privadas e identificadores não são publicados no GitHub.
@@ -525,14 +525,14 @@ D) Prescrever jejum prolongado como estratégia obrigatória.
 |---|---|---|
 | Classificação, composição e risco | §1, §3 | Base escrita; aprimorar critérios de adiposidade e risco étnico |
 | Fisiologia | §2 | Base escrita; precisa diagrama autoral |
-| Síndrome metabólica | §4 | **INCOMPLETO:** adicionar tabela integral dos critérios harmonizados com limiares, particularidades brasileiras |
+| Síndrome metabólica | §4, inclusive §4.3–4.9 | Tabela harmonizada e exemplos incluídos; revisar aplicabilidade dos cortes de cintura por população e checagem médica |
 | Nutrição, comportamento, atividade e sono | §5 | Base escrita; ampliar plano por comorbidade |
-| Farmacoterapia | §6 | **INCOMPLETO:** construir tabelas completas por medicamento, doses vigentes, contraindicações, interações e particularidades gestação/idosos |
-| Cirurgia | §7 | Critérios adultos CFM 2025 resumidos; verificar norma integral e cenários adolescentes/idosos |
+| Farmacoterapia | §6, inclusive §6.3–6.8 | Posologias indicativas e regulação Anvisa/ABESO 2026 incluídas; validar cada formulação na bula vigente e interações individualmente |
+| Cirurgia | §7, inclusive §7.4–7.7 | CFM 2.429/2025 consolidada com alteração 2.470/2026; revisar normas em vigor, individualização e protocolo local |
 | Seguimento, complicações e cronograma | §8 | Base escrita; aprofundar carências pós-bariátrica |
-| Casos e questões | §§9–10 | Quatro casos e seis questões originais; expandir depois |
+| Casos e questões | §§9–10 | Dez casos e doze questões originais comentadas; falta teste independente questão→capítulo e revisão de plausibilidade das alternativas |
 | Imagens | Não integradas | Fila de candidatos pendente, nenhuma licença avaliada |
-| 60K didáticos e autonomia de estudo | Manuscrito parcial | **NÃO CERTIFICADO** |
+| 60K didáticos e autonomia de estudo | Manuscrito expandido, mais de 80 mil caracteres brutos | **NÃO CERTIFICADO**: auditar utilidade real, redundância, consistência e resolução sem referência externa |
 
 Candidatas didáticas para pesquisa e aprovação (sem URLs ou arquivos presumidamente livres): (1) circunferência de cintura medida corretamente; (2) imagem histológica de adipócito; (3) esquema autoral hipotálamo-sinais de saciedade; (4) MRI/TC demonstrando adiposidade visceral em fonte acadêmica; (5) gráfico de adiposidade corporal versus IMC; (6) esteatose hepática por ultrassonografia em banco licenciado; (7) polissonografia exemplificativa em fonte com licença; (8) ilustração **original** LURIA de sleeve; (9) ilustração **original** LURIA de bypass em Y de Roux; (10) fluxograma autoral de elegibilidade à cirurgia 2025.
 
@@ -543,4 +543,19 @@ Candidatas didáticas para pesquisa e aprovação (sem URLs ou arquivos presumid
 4. Obesity Canada et al. **Pharmacotherapy for obesity management in adults: 2025 clinical practice guideline update**: https://pmc.ncbi.nlm.nih.gov/articles/PMC12350384/
 5. Brasil, Ministério da Saúde: documentos de manejo de doenças crônicas e da atenção primária, a selecionar por tópico exato em auditoria; não usar citação genérica como substituto de suporte factual.
 
-**Auditoria editorial:** rascunho clínico de produção parcial. Faltam cobertura de todos os medicamentos e doses com revisão regulatória, síndrome metabólica com cortes explicitados, recorte por gestação e pessoa idosa, diversos diferenciais e complicações, imagens revisadas, ≥60K caracteres didáticos úteis, teste de questões e inspeção visual PWA. **Não marcar como completo, não publicar e não integrar automaticamente.**
+**Auditoria editorial (15/10/2026):** rascunho ampliado, com critérios harmonizados, cenários gestação/idosos, revisão de fármacos e regulação brasileira, pós-bariátrica e 10 casos/12 questões. Ainda faltam checagem farmacológica individual por bula atual, conferência de fonte para cada alegação relevante, imagens licenciadas via Admin, validação manual de ≥60K caracteres didáticos úteis, teste das questões e inspeção visual desktop/PWA. **Não marcar como completo, não publicar e não integrar automaticamente.**
+
+
+### 12.1 Atualizações oficiais consultadas nesta ampliação (15/10/2026)
+6. ABESO. **Diretriz Brasileira de Tratamento Farmacológico da Obesidade, 5ª edição, 2026** (documento integral, recomendações R1–R32): https://abeso.org.br/wp-content/uploads/2026/03/Diretrizes-ABESO_completo_20260320.pdf
+7. CFM. **Resolução 2.429/2025 — versão consolidada com alteração pela Resolução 2.470/2026**: https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2025/2429_2025.pdf
+8. ANVISA. **Mounjaro (tirzepatida): inclusão de indicação para controle crônico do peso em adultos, 09/06/2025** (inclui esquema de escalonamento): https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/novos-medicamentos-e-indicacoes/mounjaro-r-tirzepatida-nova-indicacao
+9. ANVISA. **Agonistas GLP-1: prescrição e dispensação com retenção de receita, 2025**: https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2025/canetas-emagrecedoras-so-poderao-ser-vendidas-com-retencao-de-receita
+10. Novo Nordisk Brasil. **Bula brasileira de Wegovy, semaglutida**, com apresentações e titulação; conferir revisão vigente da bula profissional: https://www.novonordisk.com.br/content/dam/nncorp/br/pt/pdfs/bulas/patient/Wegovy_Bula_Paciente.pdf
+11. Novo Nordisk Brasil. **Comunicado 04/05/2026 sobre aprovação de Wegovy 7,2 mg no Brasil**: https://www.novonordisk.com.br/noticias-e-imprensa/busca-noticias/com-media-de-21-de-perda-de-peso-nova-dosagem-de-wegovy-e-aprovada-pela-anvisa-no-brasil.html
+12. World Health Organization. **Guideline on the use and indications of GLP-1 therapies for the treatment of obesity in adults, 2025**, recomendações condicionais: https://doi.org/10.1001/jama.2025.24288
+13. Endotext / NCBI. **Metabolic Syndrome**, critérios da definição harmonizada e limitações de cortes de cintura: https://www.ncbi.nlm.nih.gov/books/NBK278936/
+14. British Obesity and Metabolic Surgery Society. **2020 update on biochemical monitoring and micronutrient replacement after bariatric surgery**: https://pmc.ncbi.nlm.nih.gov/articles/PMC7583474/
+15. ANVISA. **Apreensão de produtos irregulares e lotes de Mounjaro Kwikpen, 2026**: https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-apreende-produtos-irregulares-e-lotes-de-mounjaro-kwikpen
+
+**Nota metodológica:** resumos de cursinho do Drive foram usados exclusivamente para comparar tópicos, sem reprodução de redação, diagramas ou imagens protegidas. As referências oficiais acima sustentam itens específicos, mas o manuscrito ainda exige conferência integral por parágrafo e revisão médica final antes de integrar à LURIA.
