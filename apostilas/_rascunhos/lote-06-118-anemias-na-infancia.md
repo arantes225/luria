@@ -444,3 +444,116 @@ Nas doenças hemolíticas hereditárias, o prognóstico depende de genótipo, gr
 14. **Transfusão não é mero reflexo do valor de Hb**; estabilidade, trajetória e causa são decisivos.
 15. AHAI com TAD positivo precisa de **evidência de hemólise**; positividade isolada não fecha doença.
 16. Criança com pancitopenia e dor óssea não deve ser rotulada automaticamente como ferropriva.
+
+
+## 28. Oito casos clínicos comentados
+
+### Caso 1 — O lactente que só tomava leite
+
+**Apresentação:** menina de 17 meses, nascida a termo e sem internação neonatal, perdeu apetite por alimentos sólidos e passou a consumir grande volume diário de leite de vaca. A mãe percebe palidez, irritabilidade e menor disposição. Hemograma: Hb 8,8 g/dL, VCM 64 fL, HCM baixa, RDW 18,5%; ferritina de 6 ng/mL e PCR normal. Não há sangramento ativo, sinais de instabilidade ou alteração de outras linhagens.
+
+**Hipótese principal:** anemia ferropriva relacionada à oferta alimentar inadequada e deslocamento de fontes de ferro.
+
+**Raciocínio passo a passo:** Hb abaixo de 10,5 g/dL entre 6–23 meses é anemia pela OMS 2024; VCM abaixo do intervalo pediátrico, RDW elevado e ferritina baixa em ausência de inflamação sustentam depleção de ferro. O leite de vaca contribui por baixo conteúdo de ferro e por substituir alimentos. Talassemia é diferencial, mas ferritina comprovadamente baixa torna ferropenia real. Ainda é necessário avaliar perdas e doenças associadas se evolução não for típica.
+
+**Exames:** documentar alimentação/ganho ponderal, hemograma, ferritina com PCR, verificar curva de crescimento, eventual perda gastrointestinal em contexto apropriado. Não indicar mielograma em apresentação típica isolada.
+
+**Conduta:** iniciar ferro elementar oral em **dose terapêutica** individualizada dentro da faixa SBP 2026 de 3–6 mg/kg/dia, corrigir a alimentação, limitar excesso de leite de vaca e instruir sobre absorção e efeitos adversos. Solicitar controle de Hb em 30–45 dias e manter reposição até Hb e reservas recuperadas. Se não houver aumento esperado de ≥1 g/dL, verificar concentração do produto, adesão, sangramento e diagnósticos alternativos.
+
+**Por que importa:** a conduta correta inclui identificar e corrigir causa nutricional, e não apenas decorar uma dose de sulfato ferroso.
+
+### Caso 2 — Microcitose importante e ferritina preservada
+
+**Apresentação:** menino de 7 anos investigado por microcitose persistente. Está ativo, sem queixas, Hb 11,2 g/dL, VCM 59 fL, hemácias 5,8 milhões/µL, RDW discretamente alterado, ferritina normal com PCR normal. Mãe conta que ela e um tio sempre tiveram “sangue fraco”, mas os familiares nunca melhoraram com ferro.
+
+**Hipótese:** traço talassêmico, especialmente beta-talassemia menor, ou alfa-talassemia conforme história e exames.
+
+**Raciocínio:** microcitose desproporcional à anemia e número relativamente alto de hemácias favorecem hemoglobinopatia. Índice de Mentzer aproximado: 59 ÷ 5,8 ≈ 10,2, sugestivo, porém não diagnóstico. Ferritina normal reduz evidência de ferropenia atual. É essencial confirmar com fracionamento de hemoglobinas/HPLC e eventual estudo molecular/avaliação familiar. A HbA2 pode estar elevada na beta-talassemia menor, mas interpretação depende de idade e deficiência de ferro concomitante.
+
+**Conduta:** evitar ferro por tempo indeterminado sem deficiência comprovada; orientar família, investigar hemoglobinopatia e encaminhar conforme caso. O reconhecimento protege contra diagnóstico errado na infância e tem repercussão para aconselhamento reprodutivo futuro.
+
+**Por que importa:** não é o VCM isolado que determina o tratamento; é a fisiopatologia responsável por sua alteração.
+
+### Caso 3 — Febre em criança com doença falciforme
+
+**Apresentação:** menino de 3 anos com HbSS na triagem neonatal, temperatura de 39°C, dor em membros e pouca alteração no exame respiratório. Saturação habitual, hidratado e sem sinais evidentes de choque. A família pretende dar antitérmico e aguardar em casa.
+
+**Hipótese de risco imediato:** infecção invasiva em criança com doença falciforme e disfunção esplênica, podendo coexistir com dor vaso-oclusiva.
+
+**Raciocínio:** função esplênica pode estar comprometida precocemente; apresentação aparentemente bem não exclui bacteremia/septicemia. Investigar foco, incluindo pulmão, não torna a situação automaticamente ambulatorial. Dor pode sinalizar crise, mas febre exige protocolo específico.
+
+**Exames:** hemograma e reticulócitos, culturas e demais exames guiados por foco, incluindo imagem de tórax se sintomas ou sinais respiratórios, conforme rede/protocolo. Documentar vacinação, penicilina profilática, hidroxiureia e Hb basal.
+
+**Conduta:** avaliação médica imediata em serviço capaz de administrar **antibiótico parenteral precoce** conforme protocolo para febre em doença falciforme, com estratificação de gravidade e decisão documentada sobre internação/observação; analgesia apropriada e euvolemia. Não deixar culturas atrasarem antibiótico em criança grave.
+
+**Por que importa:** a gravidade é determinada pelo risco infeccioso, não pela intensidade da dor ou pela impressão inicial de “bom estado geral”.
+
+### Caso 4 — Falciforme com Hb caindo e reticulócitos quase ausentes
+
+**Apresentação:** menina de 5 anos com doença falciforme, Hb basal 8,0 g/dL, apresenta palidez súbita e fraqueza após contato com irmãos febris. Hb agora 4,5 g/dL, reticulócitos absolutos muito baixos. Baço não está aumentado de modo agudo; há taquicardia.
+
+**Hipótese:** crise aplástica transitória, com parvovírus B19 entre as causas.
+
+**Raciocínio:** em hemólise crônica espera-se reticulocitose basal. A queda abrupta da Hb associada a reticulocitopenia aponta interrupção da produção; contrasta com sequestro esplênico, que geralmente provoca aumento súbito do baço e resposta reticulocitária preservada/aumentada. É preciso avaliar hipoperfusão e gravidade clínica sem esperar confirmação virológica.
+
+**Exames:** hemograma seriado, reticulócitos, provas de hemólise e exames de parvovírus conforme contexto, avaliação de outras causas e compatibilização sanguínea.
+
+**Conduta:** avaliação hospitalar, monitorização e suporte transfusional conforme instabilidade e magnitude da anemia; coordenação hematológica. Evitar definir necessidade apenas por corte fixo sem sinais vitais e Hb basal.
+
+**Por que importa:** a contagem de reticulócitos muda a hipótese e a condução de uma criança com doença hemolítica conhecida.
+
+### Caso 5 — Icterícia neonatal, esferócitos e Coombs negativo
+
+**Apresentação:** recém-nascido a termo desenvolve icterícia significativa precocemente e anemia. Pai relata que foi submetido a esplenectomia na adolescência por “anemia e pedras na vesícula”. Esfregaço mostra esferócitos, CHCM elevada; TAD é negativo. Reticulócitos aumentados.
+
+**Hipótese:** esferocitose hereditária.
+
+**Raciocínio:** história familiar, icterícia precoce, esferócitos, hiperbilirrubinemia e Coombs negativo favorecem alteração de membrana. AHAI e hemólise por incompatibilidade permanecem diferenciais conforme mãe/filho, mas TAD e padrão familiar ajudam. A confirmação pode requerer teste EMA e avaliação hematológica.
+
+**Exames:** bilirrubina com evolução horária, Hb/reticulócitos, grupo sanguíneo e avaliação materno-neonatal, TAD e teste específico de membrana quando disponível.
+
+**Conduta:** manejo da hiperbilirrubinemia conforme protocolo neonatal (fototerapia/exsanguineotransfusão quando indicada), suporte à anemia e seguimento de hemólise/crescimento e litíase. Não indicar esplenectomia no período neonatal.
+
+**Por que importa:** a anemia não se resolve identificando apenas “icterícia neonatal”; a etiologia modifica risco de recorrência e aconselhamento familiar.
+
+### Caso 6 — Diarreia sanguinolenta, esquizócitos e oligúria
+
+**Apresentação:** menino de 4 anos teve diarreia sanguinolenta e, dias depois, palidez, irritabilidade, oligúria e petéquias. Hb 7,9 g/dL, plaquetas 48 mil/µL, creatinina elevada, LDH alto e esquizócitos no esfregaço.
+
+**Hipótese:** síndrome hemolítico-urêmica associada a quadro entérico, entre outras microangiopatias trombóticas.
+
+**Raciocínio:** anemia hemolítica microangiopática, plaquetopenia e lesão renal formam conjunto de urgência. Não é ferropriva nem anemia inflamatória isolada. História de diarreia recente favorece SHU por toxina Shiga, mas a confirmação e busca de diferenciais são necessárias. Hipercalemia e sobrecarga hídrica podem agravar rapidamente.
+
+**Exames:** hemograma, reticulócitos, eletrólitos/ECG quando indicado, função renal, coagulograma e exames para patógenos entéricos orientados, além de avaliação especializada.
+
+**Conduta:** internação/nefropediatria com monitorização estrita, manejo de volume/eletrólitos, transfusão e terapia renal substitutiva conforme necessidades; evitar medicamentos inadequados para STEC e discutir diferenciais com hematologia.
+
+**Por que importa:** esquizócitos e trombocitopenia fazem a anemia deixar de ser um problema ambulatorial.
+
+### Caso 7 — Lactente com regressão neurológica e anemia macrocítica
+
+**Apresentação:** bebê de 8 meses em aleitamento materno, com ganho ponderal inadequado e regressão de habilidades, hipotonia, recusa alimentar e palidez. A mãe relata dieta vegana sem acompanhamento ou suplemento de B12. Hb 8,5 g/dL, VCM aumentado para a idade, reticulócitos baixos; neutrófilos hipersegmentados.
+
+**Hipótese:** deficiência de vitamina B12 com repercussão hematológica e neurológica.
+
+**Raciocínio:** risco materno, sinais neurológicos e megaloblastose apoiam deficiência de cobalamina. É necessário dosar B12 materna e infantil e investigar outros fatores, mas tratar **apenas folato** poderia melhorar Hb sem resolver lesão neurológica. A gravidade neurológica exige ação rápida.
+
+**Exames:** hemograma/esfregaço, reticulócitos, B12, folato, marcadores metabólicos quando úteis, avaliação nutricional e neurológica.
+
+**Conduta:** encaminhamento e reposição de B12 por via, dose e duração apropriadas ao quadro grave e à causa, com seguimento do desenvolvimento e abordagem materna. Avaliar causas de má absorção se história nutricional não explica tudo.
+
+**Por que importa:** na criança pequena, a perda de oportunidade neurológica pode ser mais relevante que o número da Hb.
+
+### Caso 8 — “Anemia ferropriva” que era doença medular
+
+**Apresentação:** menina de 10 anos vinha com palidez e cansaço há seis semanas, febre intermitente e dor óssea nas pernas. Recebeu ferro empiricamente, mas piorou. Exame apresenta petéquias, linfonodomegalia e discreta hepatoesplenomegalia. Hb 7,8 g/dL, neutropenia e plaquetas 32 mil/µL; revisão de lâmina mostra células imaturas.
+
+**Hipótese:** doença hematológica medular, incluindo leucemia aguda.
+
+**Raciocínio:** múltiplas citopenias, sintomas sistêmicos e células imaturas não são explicados por carência simples de ferro. A ausência de leucocitose total não exclui leucemia. O tratamento precoce sem diagnóstico, sobretudo corticoide empírico, pode interferir na caracterização hematológica.
+
+**Exames:** revisão urgente de hemograma/esfregaço, painel metabólico e avaliação de hematopediatria para imunofenotipagem e estudo medular quando indicado.
+
+**Conduta:** avaliação hospitalar rápida, suporte de neutropenia/sangramento e condução diagnóstica especializada; evitar tratamentos que alterem o diagnóstico antes da coleta indicada.
+
+**Por que importa:** o diagnóstico diferencial de anemia inclui doenças que não podem esperar novo ciclo de ferro.
