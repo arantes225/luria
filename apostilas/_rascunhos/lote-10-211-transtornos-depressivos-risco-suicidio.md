@@ -568,3 +568,100 @@ E) Encerrar investigação se o exame cognitivo for normal em um único momento.
 
 **Gabarito B.** **A incorreta:** cronologia/consciência não favorecem episódio depressivo típico. **B correta:** curso agudo e flutuante com desatenção sugere delirium. **C incorreta:** demência tende a curso longitudinal e pode coexistir com delirium. **D incorreta:** não há mania/hipomania. **E incorreta:** flutuação pode mascarar caso em exame isolado. **Mini revisão:** o 4AT no ambiente apropriado auxilia triagem, mas a causa orgânica deve ser investigada.
 
+
+## 15. Revisão prática, fluxogramas e quadro de decisão
+
+### Fluxo A — paciente com suspeita de depressão na APS
+
+Primeiro avaliar sinais de perigo clínico, psicose, suicídio, incapacidade de autocuidado ou outra urgência → perguntar sobre **anedonia, humor, duração e impacto** → investigar sono, energia, cognição, substâncias, condições médicas e episódios prévios de **mania/hipomania** → formular síndrome, gravidade e diferencial → escolher psicoterapia/monitorização/fármacos conforme gravidade, preferência e acesso → registrar linha de base e reavaliar em 2–4 semanas, ou antes se risco → revisar efeitos, segurança e funcionamento.
+
+### Fluxo B — risco suicida
+
+Perguntar diretamente por desejo de morte, ideação, intenção, plano e acesso, comportamento recente e tentativas prévias → examinar intoxicação, agitação, psicose, rede de suporte e capacidade de manter segurança → se risco agudo significativo, **proteger e realizar avaliação presencial urgente**, não permitir alta baseada só em escala → desenvolver plano de segurança colaborativo e cuidado de crise com rede apropriada → registrar acompanhamento efetivo e contingência de piora. **Não usar “baixo/médio/alto” como predição matemática do futuro** (NICE NG225).
+
+### Fluxo C — escolha de tratamento
+
+Depressão menos grave sem emergência → discutir intervenções psicológicas/psicossociais estruturadas e autoajuda guiada, com medicamento se preferência informada e indicação individual → depressão moderada/grave → discutir psicoterapia, farmacoterapia e combinações, com encaminhamento quando necessário → sintomas psicóticos, catatonia, recusa alimentar, risco grave ou necessidade rápida de resposta → equipe especializada/possível internação, considerar ECT em cenários adequados → em todos, registrar sono, função, metas e segurança.
+
+### Fluxo D — “não melhorou com antidepressivo”
+
+Checar **tempo de uso, dose, adesão, efeitos adversos, interações, obtenção do medicamento** → rever bipolaridade, psicose, substâncias, causas clínicas e diagnóstico diferencial → conversar com a pessoa sobre preferências e opções → ajustar estratégia ou oferecer psicoterapia/combinação/troca dentro de protocolos e com monitorização → avaliação especializada para terapias complexas → documentar metas e evitar rotular resistência por tentativa inadequada.
+
+### Fluxo E — remissão e seguimento
+
+Sintomas melhoram → confirmar recuperação funcional e segurança → explicar diferença entre **resposta, remissão, recaída e recorrência** → discutir duração de continuação/manutenção segundo história e riscos → se desejar parar fármaco, combinar redução gradual individual e vigilância de retirada versus recaída → planejar acesso a atendimento se sintomas reaparecerem, evitando alta sem contato.
+
+### Quadro de alta utilidade para decisão
+
+| Situação | Questão clínica essencial | Próximo passo frequente |
+|---|---|---|
+| Tristeza situacional | duração, contexto, sofrimento e função | acolhimento e reavaliação; evitar medicalização automática |
+| Anedonia persistente | episódio com prejuízo? bipolaridade? | entrevista e diferenciais; estratificar |
+| Depressão menos grave | riscos ausentes? preferências? | intervenções psicológicas/psicossociais, seguimento |
+| Depressão moderada/grave | intensidade, risco e acesso | terapia estruturada e/ou medicamento, possivelmente combinação |
+| História de hipomania | existe polaridade elevada? | avaliar bipolaridade antes de tratar como unipolar |
+| Psicose/catatonia | desnutrição, suicídio, gravidade clínica | avaliação especializada urgente |
+| Ideação com intenção e acesso | segurança atual? | proteção e avaliação presencial urgente |
+| Questionário com escore baixo e plano suicida | a escala não representa a segurança | nunca dispensar avaliação pelo escore |
+| Primeiro mês de ISRS | adesão, efeitos e risco | contato e reavaliação, geralmente em 2–4 semanas ou antes |
+| Melhorou após semanas | remissão funcional? episódios anteriores? | discutir continuação e prevenção de recaída |
+| Parou abruptamente e piorou | retirada versus recaída | reavaliar cronologia e plano de redução |
+| Puerpério com delírio e comportamento perigoso | psicose puerperal? | emergência psiquiátrica e proteção mãe/bebê |
+
+## 16. Dez imagens candidatas — somente planejamento para Admin
+
+O tema é predominantemente clínico e psicopatológico, portanto **esquemas, timelines e matrizes autorais** têm maior valor que fotos genéricas/estigmatizantes de pessoas tristes. **Nenhuma figura foi licenciada, gerada, otimizada ou integrada neste manuscrito.** As propostas precisam ser transformadas em arquivos próprios/licenciados, checadas por revisor, aprovadas no Admin, convertidas a WebP e integradas de modo acessível e responsivo.
+
+| ID | Desenho clínico proposto | Seção e legenda didática |
+|---|---|---|
+| 211-img-01 | linha contínua **sintomas → episódio → remissão → recaída/recorrência** | §§2,10: “Recuperação funcional faz parte do desfecho” |
+| 211-img-02 | matriz de entrevista de **sintomas nucleares e associados** | §5: “Humor, prazer, energia, cognição e segurança” |
+| 211-img-03 | fluxograma original **depressão atual → investigar mania/hipomania** | §7: “Antes de tratar como unipolar, pesquisar polo elevado” |
+| 211-img-04 | quadro de distinção **luto × episódio depressivo × delirium** | §§2,7: “Contexto, duração, atenção e prejuízo” |
+| 211-img-05 | diagrama não proprietário de **depressão menos grave versus mais grave** | §9: “Modalidade por gravidade, preferências e necessidades” |
+| 211-img-06 | painel comparativo de **classes de antidepressivos** com perfis gerais de efeitos | §10: “Escolha individual evita que classe se transforme em prescrição universal” |
+| 211-img-07 | timeline original de **início do tratamento, revisão 2–4 semanas e prevenção de recaída** | §§10,15: “Seguimento e segurança antes de desistir ou suspender” |
+| 211-img-08 | fluxograma autoral de **avaliação de segurança sem categorias preditivas** | §8: “Plano, intenção, suporte e medidas de proteção” |
+| 211-img-09 | quadro de diferenciação **pensamento intrusivo egodistônico versus convicção delirante** | §12: “Fenomenologia protege de rotulação indevida no puerpério” |
+| 211-img-10 | mapa de cuidado **APS → psicoterapia/RAPS → crise/hospitalização → retorno** | §§9,11,15: “Continuidade reduz lacunas assistenciais” |
+
+Não reproduzir fotografias de autoagressão, métodos suicidas ou cenas explícitas para ilustrar o tema. Uma imagem didática nunca deve funcionar como instrução de dano. Instrumentos/figuras da NICE, OMS ou questionários traduzidos devem ter seus direitos verificados; produzir diagramas com texto original.
+
+## 17. Referências científicas e aplicação contextual
+
+1. **National Institute for Health and Care Excellence (NICE).** *Depression in adults: treatment and management.* NG222. Publicada em 29/06/2022. https://www.nice.org.uk/guidance/ng222/chapter/recommendations . Referência central de avaliação, tratamentos menos graves/mais graves, psicoterapia e medicamentos, acompanhamento, recaída, psicose, ECT e cuidado de crise. **Diretriz britânica**, não comprova disponibilidade de terapias no SUS.
+2. **National Institute for Health and Care Excellence (NICE).** *Self-harm: assessment, management and preventing recurrence.* NG225. 2022. https://www.nice.org.uk/guidance/ng225/chapter/recommendations . Referência para segurança, avaliação psicossocial, plano colaborativo e **não utilização de escalas/estratos como predição de suicídio/decisão de alta**.
+3. **World Health Organization (WHO).** *Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders.* Genebra: WHO, 2024. ISBN 9789240077263. https://www.who.int/publications/i/item/9789240077263 . Usada conceitualmente para diagnóstico, não reproduzida por restrições comerciais.
+4. **World Health Organization.** *mhGAP Intervention Guide for mental, neurological and substance use disorders in non-specialized health settings*, version 2.0 (2016). https://www.who.int/publications/i/item/9789241549790 . Para raciocínio integrado e encaminhamento não especializado, sujeito a adaptação às redes brasileiras.
+5. **Ministério da Saúde do Brasil/Rede de Atenção Psicossocial.** Recomendações brasileiras de acesso e fluxos assistenciais **a confrontar com documentação oficial vigente**. Não atribuir nesta versão condutas detalhadas a um PCDT de depressão que não foi efetivamente consultado.
+6. **LURIA, aula 210 — Psicopatologia, entrevista e EEM.** Base semiológica interna preservada e não reproduzida em massa; aulas seguintes 212–215 destinadas a bipolaridade, ansiedade/trauma/TOC, psicose e emergências. Não confundir apostilas internas com validação científica independente.
+
+**Atenção à propriedade intelectual:** artigos e diretrizes públicas não significam autorização automática para republicar suas páginas, tabelas ou questionários validados. O texto desta apostila é autoral e as imagens/escala não foram copiadas.
+
+## 18. Auditoria editorial — situação real do manuscrito 211
+
+| Gate | Situação |
+|---|---|
+| Escopo, não duplicação com 210/212–215 | planejado e redigido |
+| Conceitos de sintomas, episódios, luto, bipolaridade | redigidos |
+| Fisiopatologia sem simplificação por serotonina única | redigida |
+| Fatores de risco e apresentação por idade | redigidos; estatísticas específicas não inventadas |
+| Anamnese, diagnóstico e diferenciais clínicos | redigidos |
+| PHQ e limites de escalas de suicídio | redigidos; direitos de instrumentos a conferir |
+| Manejo do risco suicida e plano de segurança | redigidos com base em NICE NG225 |
+| Terapia psicológica, ISRS e classes principais | redigidos; doses e contraindicações por molécula exigem validação farmacológica |
+| Monitorização, retirada, recaída, tratamento resistente | redigidos |
+| ECT, neuromodulação, tratamento intensivo | redigidos; regulação brasileira a conferir |
+| Gestação/puerpério, adolescentes, idosos e comorbidades | redigidos; protocolos específicos pendentes |
+| Algoritmos e quadros | cinco fluxos e tabela de situações |
+| Casos clínicos autorais | **8 casos completos** |
+| Questões de cinco alternativas comentadas | **12 questões completas** |
+| Imagens candidatas | **10 planejadas, nenhuma incorporada/licenciada** |
+| Benchmark de apostila específica no Drive | **não localizado; pendente** |
+| Conferência de fontes brasileiras atuais | **pendente** |
+| Auditoria científica por psiquiatra/APS e farmacologista | **pendente** |
+| 60 mil caracteres **úteis** comprovados | **não certificado**; extensão bruta não equivale a profundidade validada |
+| Conversão HTML, testes de script/PWA e deploy | **não executados** |
+| Situação para alunos | **RASCUNHO NÃO PUBLICADO** |
+
+**Parecer:** o material oferece uma base extensa e autoral para transtornos depressivos e risco suicida, com decisões de alto impacto explicitadas e ressalvas de jurisdição. Antes de publicação, é obrigatório confirmar disponibilidade/doses de terapias no Brasil, normas de segurança e assistência em crise, adequação perinatal e pediátrica, revisar cientificamente cada capítulo, aprovar imagens e executar auditorias automáticas e de PWA. **Não liberar como protocolo assistencial apenas porque o texto tem muitos caracteres.**
