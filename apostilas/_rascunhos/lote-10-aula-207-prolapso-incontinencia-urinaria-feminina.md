@@ -185,3 +185,169 @@ Não são exames de rotina em toda IU; considerar em hematúria persistente, sus
 
 Incontinência “que surgiu” após cirurgia pélvica e é **contínua**, sem relação com tossir/urgência, deve fazer pensar em **fístula vesicovaginal/ureterovaginal**, especialmente após histerectomia ou parto complicado. Sangue na urina não se explica pela menopausa sem investigação. Urgência com dor vesical que piora à medida que bexiga enche e alivia após esvaziar merece avaliação de síndrome da bexiga dolorosa/intersticial, não medicação antimuscarínica automática.
 
+
+
+## 7. Tratamento conservador: o núcleo da primeira linha
+
+### 7.1 Começar pelo incômodo e pelo objetivo
+
+Não é obrigatório “normalizar anatomia” de prolapso assintomático. A conduta pode ser observação informada, fisioterapia, pessário, tratamento urinário, cirurgia ou combinação, dependendo do **tipo de queixa e preferência**. Perguntar o que a paciente deseja recuperar: atividade física sem perdas, independência, conforto ao ficar em pé, evacuação sem redução manual, relação sexual sem desconforto, evitar cirurgia ou reduzir uso de fraldas.
+
+Do mesmo modo, não há justificativa para prescrever antimuscarínico em uma paciente cuja queixa predominante é perda ao tossir sem urgência. E não se deve oferecer sling a uma paciente com perdas contínuas por provável fístula. **Fenotipar primeiro evita tratamentos frustrantes e efeitos adversos.**
+
+### 7.2 Treinamento da musculatura do assoalho pélvico (TMAP/PFMT)
+
+A fisioterapia supervisionada melhora IUE e pode ajudar incontinência mista. NICE NG123 orienta tentativa por **pelo menos três meses** para IUE/mista, com **pelo menos oito contrações três vezes por dia** dentro de um plano individual, com verificação de execução correta. **Não é treino genérico de “contrair o períneo enquanto urina”**: usar interrupção habitual do jato urinário como exercício de rotina é inadequado e pode atrapalhar esvaziamento. Verificar contração, relaxamento, resistência e coordenação sem recrutar músculos acessórios.
+
+A reabilitação pode incluir contrações rápidas para resposta ao esforço, contrações sustentadas para resistência e treino de anteceder uma tosse com contração eficaz (*the knack*), quando adequado. O programa depende da avaliação do fisioterapeuta, de dor, hipertonia, déficit e adesão. **Mais contração não é sempre melhor:** na paciente com dor miofascial, hipertonia ou dificuldade de relaxar, foco pode ser reeducação de relaxamento e coordenação antes de fortalecimento.
+
+Para **prolapso sintomático POP-Q I–II**, NICE recomenda considerar treinamento supervisionado de pelo menos **16 semanas** como primeira opção, seguido de manutenção se houver benefício. Em prolapso avançado, o TMAP ainda pode melhorar sintomas e função, mas não prometer correção anatômica completa sem cirurgia ou suporte mecânico.
+
+Biofeedback e eletroestimulação não devem ser usados rotineiramente em todas; podem ajudar selecionadas que **não conseguem contrair voluntariamente** ou precisam de maior orientação. Para urgência, combinar estratégias vesicais e comportamentais.
+
+### 7.3 Treinamento vesical e mudança de hábitos
+
+Bexiga hiperativa/urgência: planejar intervalos progressivos entre micções com técnicas de controle da urgência, respiração/atenção e contrações rápidas quando apropriadas. NICE recomenda **pelo menos seis semanas** de treinamento vesical para incontinência de urgência ou mista. Não recomendar “segurar urina por muitas horas” em pessoa com esvaziamento alterado ou ITU; o plano depende de diário e tolerância.
+
+**Cafeína:** redução pode diminuir urgência/frequência. **Ingestão hídrica:** nem excesso nem restrição intensa são bons; ajustar a consumo real, doenças, calor e trabalho. **Obesidade:** perda ponderal pode reduzir pressão abdominal e melhorar IU em pacientes com sobrepeso/obesidade; manter abordagem respeitosa, sem condicionar atendimento a emagrecimento prévio. **Constipação e tosse crônica:** tratar para reduzir esforço repetido, importante no POP.
+
+Noctúria exige investigação de poliúria noturna, apneia do sono, diuréticos tardios, edema periférico e distúrbios do sono. Não assumir que qualquer noctúria é OAB.
+
+### 7.4 Pessário vaginal para prolapso
+
+É dispositivo de suporte mecânico introduzido na vagina para reduzir abaulamento e aliviar sintomas, com possibilidade de uso temporário, crônico ou como ponte pré-operatória. Pode ser adequado em pacientes que preferem evitar cirurgia, têm comorbidades, desejam aguardar gestação ou estão avaliando tratamento definitivo.
+
+**Modelos** incluem anel com/sem suporte, Gellhorn, cubo e outros. A seleção depende de tamanho, forma da vagina, grau de prolapso, capacidade de manejo, atividade sexual e destreza. Não existe um tamanho universal; são comuns tentativas de ajuste até obter retenção confortável sem obstruir micção. Após inserção, avaliar caminhada, tosse, evacuação e capacidade de urinar; a paciente precisa saber remover ou ter acompanhamento programado.
+
+**Aconselhamento indispensável:** pode haver aumento de corrimento, irritação, sangramento, erosão vaginal, expulsão, desconforto e, em casos graves de negligência prolongada, ulceração/fístula. Em mulheres com atrofia/síndrome geniturinária da menopausa, **estrogênio vaginal** pode melhorar sintomas mucosos e tolerância; não é tratamento de prolapso em si. NICE NG123 enfatiza retirada/avaliação do pessário em periodicidade segura, pelo menos **a cada seis meses** nos regimes pertinentes, com consultas semestrais para pacientes de risco de complicações ou incapazes de autocuidado. Serviços podem usar intervalos menores conforme tipo e contexto.
+
+**Prolapso e perda oculta:** ao reduzir prolapso, pode emergir IUE. Testar/explicar essa possibilidade antes de recomendar tratamento e antes de cirurgia, especialmente se a paciente não se queixava de perda na situação anatômica anterior.
+
+### 7.5 Estrogênio vaginal na síndrome geniturinária da menopausa
+
+Hipoestrogenismo pode contribuir para secura, ardor, dispareunia, desconforto ao pessário e sintomas urinários. Estrogênio **local**, quando indicado e elegível, trata os tecidos da síndrome geniturinária da menopausa; **não corrige sozinho uma deficiência de suporte uretral avançada nem reverte prolapso estrutural**. Contraindicações, antecedentes de câncer hormônio-sensível e preferência requerem avaliação individual. Não apresentar estrogênio vaginal como substituto à fisioterapia de IUE ou cirurgia apropriada.
+
+### 7.6 Eletroterapia, radiofrequência e laser vaginal
+
+Tecnologias energéticas foram divulgadas para IUE e “rejuvenescimento vaginal”, mas **não devem ser apresentadas como terapia padrão com eficácia/segurança de longo prazo equivalentes a opções estabelecidas**. Evidência e regulação variam; sua utilização requer rigor técnico e consentimento. A apostila LURIA não recomenda laser vaginal de rotina para corrigir IUE, POP ou “estimular colágeno” como tratamento comprovado. Há risco de queimaduras, cicatrizes, dor e piora de sintomas; preferir intervenções respaldadas por guias e revisão independente.
+
+## 8. Tratamento farmacológico por fenótipo urinário
+
+### 8.1 Não existe “remédio para todo tipo de incontinência”
+
+**IUE pura:** fármacos não substituem reabilitação como primeira linha. **Urgência/OAB:** medicamentos que reduzem sinalização muscarínica do detrusor ou estimulam receptores β3 podem melhorar urgência, frequência e perdas de urgência. **Incontinência mista:** o medicamento pode reduzir o componente de urgência, não necessariamente a perda por tosse.
+
+Os fármacos devem ser escolhidos considerando idade, comorbidades, remédios em uso, constipação, risco de retenção, função renal/hepática, pressão arterial e possibilidade de acesso. Não usar simultaneamente múltiplas substâncias com efeitos anticolinérgicos sem avaliar carga cumulativa.
+
+### 8.2 Antimuscarínicos
+
+Exemplos da classe incluem oxibutinina, tolterodina, solifenacina e outras, com doses específicas conforme formulação e licença. Podem reduzir urgência e episódios de perda, mas têm efeitos adversos: **boca seca, constipação, visão turva, comprometimento de esvaziamento** e possíveis efeitos cognitivos associados à exposição anticolinérgica, sobretudo em pessoas vulneráveis/idosas.
+
+AUA/SUFU 2024 recomenda discutir potenciais **riscos cognitivos** dos antimuscarínicos, com seleção cuidadosa em pacientes com idade avançada, comprometimento cognitivo ou polifarmácia. Cautela relevante em **glaucoma de ângulo fechado não controlado, retenção urinária e distúrbios importantes de esvaziamento gástrico**. Medir resíduo quando risco de retenção. Não prescrever apenas porque paciente diz “vou muito ao banheiro”, sem excluir poliúria ou infecção.
+
+### 8.3 Agonistas β3-adrenérgicos
+
+Mirabegrona e outros agonistas β3 disponíveis conforme jurisdição podem promover relaxamento do detrusor durante enchimento e reduzir episódios de urgência/incontinência. São opção quando risco ou efeitos adversos anticolinérgicos pesam mais. **Monitorar pressão arterial e contraindicações conforme bula**, especialmente em hipertensão não controlada. O risco de retenção em paciente com obstrução significativa deve ser considerado. A escolha depende de disponibilidade/aprovação nacional, custo e perfil de interação medicamentosa.
+
+**Acompanhamento:** registrar meta clínica (perdas semanais, urgência, noctúria, qualidade de vida), tolerância, efeitos colaterais e persistência após intervalo terapêutico adequado. Não insistir indefinidamente em dose ineficaz sem revisar diagnóstico/adesão.
+
+### 8.4 Duloxetina: posição restrita e classificação correta
+
+Duloxetina é inibidor de recaptação de **serotonina e noradrenalina (SNRI)**. Pode aumentar resistência uretral e reduzir episódios de IUE em algumas pacientes, mas apresenta efeitos adversos (náusea, tontura, alterações do sono, entre outros), interrupções frequentes em estudos e **não substitui tratamentos conservadores estabelecidos**. EAU admite uso em pacientes selecionadas com IUE predominante que desejam evitar terapia invasiva **onde há aprovação específica**. Não considerar disponível ou indicada no SUS para essa finalidade sem checar regulamentos/bula, e não descrevê-la como “ISRS de rotina”.
+
+### 8.5 Terapias para OAB refratária
+
+Se comportamento, fisioterapia e medicação não fornecem benefício suficiente, discutir **injeção intradetrusora de toxina botulínica**, estimulação percutânea do nervo tibial ou neuromodulação sacral em pacientes adequadas, após avaliação especializada. A decisão inclui disponibilidade, repetição do procedimento e riscos.
+
+**Toxina botulínica:** reduz contrações detrusoras, mas pode causar **aumento do resíduo/retensão urinária e infecção urinária**, e a paciente precisa estar disposta/capaz de seguir monitorização e, quando necessário, cateterismo intermitente. Doses e intervalos variam por indicação e produto; não nacionalizar automaticamente protocolos estrangeiros. Neuromodulação exige centros experientes e acompanhamento a longo prazo. Não incluir cirurgia de aumento vesical como opção precoce em OAB comum, pois é última alternativa com morbidade importante em casos selecionados.
+
+## 9. POP: manejo por compartimento e gravidade
+
+### 9.1 Prolapso anterior
+
+O abaulamento da parede anterior pode envolver suporte da bexiga/uretra. Deve-se procurar sintomas de pressão, micção incompleta e perda ao esforço com **prolapso reduzido**, identificando eventual IUE mascarada. Para sintomas leves/moderados: TMAP e pessário. Se falha e há desejo de cirurgia, **reparo anterior com tecido nativo** é opção comum, considerando suporte apical associado. NICE orienta anterior repair sem malha para prolapso de parede anterior; isso não se confunde com sling retropúbico de IUE.
+
+Uma “cistocele grande” em paciente com alto resíduo exige avaliar obstrução mecânica; a correção do prolapso pode melhorar esvaziamento, mas também revelar sintomas de esforço que estavam mascarados.
+
+### 9.2 Prolapso apical
+
+Descentro do colo/útero ou cúpula vaginal após histerectomia pode exigir restauração de **suporte apical**. A decisão envolve preservação uterina versus histerectomia, técnicas de suspensão por ligamentos uterossacros, sacroespinhosos e sacrocolpopexia em casos selecionados, entre outras possibilidades. O objetivo é recuperar o eixo vaginal com suporte durável, sem comprometer trato urinário, intestino, nervos ou função sexual.
+
+**Sacrocolpopexia abdominal/laparoscópica:** pode envolver enxerto sintético no abdome; riscos e evidências são diferentes da malha **transvaginal** para prolapso. Nunca agrupar “todas as telas” como uma única técnica e risco, nem afirmar que todo implante é proibido no Brasil sem verificar regulamentação específica.
+
+### 9.3 Prolapso posterior e disfunção evacuativa
+
+Retocele pode associar-se a sensação de evacuação incompleta e necessidade de apoio digital na parede vaginal/períneo. Porém **constipação e defecação obstruída são multifatoriais**: dissinergia do assoalho, doença intestinal, redução de mobilidade e medicamentos podem coexistir. Tratar hábito intestinal e fisioterapia antes de atribuir tudo ao tamanho da retocele. Cirurgia posterior com tecido nativo pode ser considerada quando sintomas de abaulamento/obstrução são concordantes e persistentes, com avaliação de risco para dispareunia, dor e recorrência.
+
+### 9.4 Colpocleise
+
+Procedimento que obliterra o canal vaginal para tratar prolapso avançado em pacientes que **não desejam sexo vaginal penetrativo** e para quem cirurgia reconstrutiva extensa não é desejável/segura. A decisão deve ser expressamente informada, pois impossibilita penetração vaginal futura por essa via; não presumir que idade avançada signifique ausência de vida sexual. NICE NG123 considera colpocleise em selecionadas com prolapso apical e maior risco cirúrgico.
+
+## 10. Incontinência de esforço — cirurgia baseada em sintomas, exame e escolha
+
+### 10.1 Quando indicar?
+
+Após terapia conservadora de qualidade e persistência de IUE incômoda, ou conforme preferência esclarecida depois de avaliar alternativas. Antes da cirurgia, definir tipo de IU, observar perda com esforço quando possível, revisar POP, capacidade de esvaziar, antecedentes de cirurgia, comorbidades, desejo gestacional e expectativas. Em IU mista, explicar que corrigir IUE pode não tratar urgência. **Não operar paciente cujo diagnóstico dominante é urgência sem evidência de componente de esforço relevante.**
+
+### 10.2 Sling de uretra média
+
+Uma faixa de suporte é colocada sob a uretra média para oferecer apoio na elevação de pressão abdominal, sem tensão excessiva. Existem abordagens **retropúbica** e **transobturatória**, com perfis de resultado e complicações distintos. O posicionamento é preciso e o objetivo é continência sem obstrução urinária iatrogênica.
+
+**FEBRASGO Position Statement 2/2025** reconhece slings sintéticos de uretra média como opção importante de tratamento cirúrgico da IUE e enfatiza **que suas evidências/complicações não devem ser confundidas com as de malhas transvaginais para reparo de prolapso**. NICE NG123 recomenda discutir opções com ou sem malha e, entre slings sintéticos, especifica retropúbico em situações de indicação, com maior cautela para via transobturatória. Essas são **diferenças de guias e contextos**, não prova de que uma via esteja proibida universalmente em todos os países.
+
+**Riscos:** perfuração vesical, sangramento, hematoma, dor inguinal/pélvica, dificuldade de esvaziamento/retensão, exposição vaginal de malha, infecção, urgência persistente/de novo, recorrência da perda e raramente lesão de estruturas vizinhas. A complicação típica e o perfil variam entre retropúbico e transobturatório. Consentimento deve explicar que implante pode ser permanente e **remoção completa nem sempre é possível**.
+
+### 10.3 Alternativas sem malha sintética
+
+**Colpossuspensão de Burch:** reforça suporte da uretra/colo vesical por suspensão retropúbica com suturas; pode ser adequada em contextos selecionados, com riscos de sangramento, retenção, prolapso posterior e recuperação de cirurgia abdominal. **Sling autólogo fascial:** utiliza tecido da própria paciente (por exemplo, fáscia do reto), podendo ter maior morbidade da área doadora e necessidade de atenção a esvaziamento, mas evita malha sintética.
+
+**Agentes de preenchimento periuretral:** opção menos invasiva para algumas pacientes com IUE, com eficácia geralmente menor e possibilidade de reaplicação; não prometer equivalência a cirurgia padrão. A escolha depende de comorbidades, objetivos, anatomia e preferência.
+
+### 10.4 O que não fazer: operar “IUE” por uma parede anterior abaulada
+
+Colporrafia anterior isolada corrige defeito anterior e **não é procedimento de continência de esforço padronizado**. Pode haver melhora ou piora de sintomas urinários, mas sua indicação é o prolapso, não substituir sling/Burch quando IUE é a queixa principal. Numa paciente com IUE e cistocele, é necessário decidir se tratar ambos juntos ou em momentos separados; reparar somente um compartimento não garante sucesso do outro.
+
+### 10.5 Complicações de tela/implante e encaminhamento
+
+Mulher com dor pélvica nova, dispareunia, sangramento vaginal, corrimento, ITU recorrente, retenção ou perda urinária após cirurgia com implante precisa ser examinada para **exposição vaginal, perfuração, contração de malha, lesão nervosa ou obstrução**. Perguntar data, marca/técnica e procedimento. Exame direcionado e, em casos selecionados, cistoscopia/imagem/urodinâmica ajudam a entender complicação.
+
+NICE recomenda **centro especializado** para complicações complexas. **Retirar malha nem sempre alivia dor**, pode recidivar IUE/POP e traz risco de lesão de órgãos; decisão deve ser compartilhada e tecnicamente planejada. Pequenas exposições localizadas podem permitir tentativa de tratamento local selecionado, mas persistência, infecção, perfuração e sintomas importantes requerem especialista.
+
+## 11. POP + IU: o diagnóstico oculto e a decisão cirúrgica
+
+A redução de POP pode desfazer angulação uretral e revelar perda aos esforços antes não percebida. Em pacientes com prolapso anterior/apical sem IUE relatada, realizar avaliação dirigida ao esforço **com o prolapso reduzido** quando apropriado, explicar incontinência **de novo** após correção e discutir decisão sobre procedimento concomitante. NICE não recomenda cirurgia para prevenir IUE indiscriminadamente em quem não tem incontinência; ao mesmo tempo, destaca avaliação e discussão para casos com IUE manifesta ou prolapso com risco de desmascarar sintomas.
+
+**Cirurgia combinada versus etapas:** operar POP e IUE no mesmo ato pode reduzir necessidade de novo procedimento em algumas pacientes, mas aumenta exposição a complicações e não garante controle de urgência ou resultados duradouros. Tratar por etapas permite identificar o componente residual e evitar implante desnecessário, mas pode requerer segunda anestesia. A escolha depende de teste de tosse com redução, exame, sintomas, idade, cirurgias prévias e preferência.
+
+**Exemplo:** paciente com cistocele avançada e jato fraco que não perde urina com esforço. Com pessário, jato melhora e começa a perder ao tossir. Isso sugere que o prolapso ocultava IUE e orienta aconselhamento pré-cirúrgico, mas não autoriza sling automaticamente sem avaliação do conjunto.
+
+## 12. Populações especiais e estratégias seguras
+
+### 12.1 Pós-parto e lactação
+
+IUE no pós-parto pode melhorar ao longo do tempo com recuperação tecidual e reabilitação, mas sintomas impactantes merecem avaliação e fisioterapia. Não antecipar cirurgia definitiva sem considerar tempo de recuperação, planejamento reprodutivo e causas concomitantes. Estrogenização vaginal e técnicas invasivas devem ser individualizadas, especialmente durante lactação e em presença de trauma perineal.
+
+### 12.2 Idosas frágeis e polifarmácia
+
+O tratamento precisa ponderar capacidade de realizar TMAP, memória para medicamentos, constipação, risco de quedas para correr ao banheiro, retenção e dermatites. Antimuscarínicos podem aumentar carga anticolinérgica/cognitiva; um agonista β3 pode ser preferível em algumas situações, desde que pressão e interações sejam avaliadas. Pessários dependem de autocuidado ou suporte consistente; em fragilidade importante, colpocleise pode ser discutida **sem pressupor ausência de sexualidade**.
+
+### 12.3 Doença neurológica
+
+Sintomas novos de retenção, perda urinária, fraqueza, anestesia em sela ou alteração intestinal podem indicar condição neurológica urgente. Essas pacientes saem do algoritmo padrão de OAB idiopática e requerem avaliação especializada; risco de bexiga de alta pressão e dano renal pode ser central. Não iniciar antimuscarínico sem avaliar esvaziamento em retenção significativa.
+
+### 12.4 POP avançado com obstrução
+
+Prolapso grave pode causar jato fraco, necessidade de redução manual para urinar, alto PVR, infecção recorrente e, raramente, hidronefrose. Se houver retenção aguda ou disfunção renal, priorizar desobstrução e avaliação urológica/ginecológica; um pessário pode ser medida de suporte em casos selecionados, mas exige teste de micção e seguimento. Nesses cenários, aguardar meses de fisioterapia sem investigar rins seria inadequado.
+
+### 12.5 Dor pélvica crônica e hipertonia
+
+Dor, dispareunia, urgência e sensação de pressão podem coexistir com músculos pélvicos hipertônicos. A fisioterapia deve avaliar relaxamento; exercícios indiscriminados de contração podem piorar quadro miofascial. Não atribuir toda dor à leve cistocele incidental. Pacientes com trauma psicológico ou sexual devem receber cuidado consentido e sensível, sem impor exame.
+
+## 13. Seguimento e medidas de sucesso
+
+**TMAP:** avaliar padrão de perdas, habilidade de contrair, adesão e qualidade de vida após período mínimo adequado; continuar se benefício. **Treino vesical e medicamentos:** registrar diário antes/depois, pressão, constipação, resíduo se risco e eventos adversos. **Pessário:** acompanhar conforto, integridade da mucosa, esvaziamento, corrimento, sangramento e possibilidade de autocuidado, com avaliação regular.
+
+**Pós-sling/IUE:** avaliar retenção precoce, dor, urgência, infecção, exposição de tela e continência com atividades; NICE recomenda consulta em até **seis meses** após cirurgia de IUE e inspeção vaginal de exposição em sling retropúbico. **Pós-correção de POP:** perguntar abaulamento, micção, evacuação, dor, vida sexual e recorrência; um POP-Q “perfeito” não significa satisfação se surgiu retenção ou dispareunia.
+
+**Critérios de retorno imediato:** retenção urinária aguda, febre com dor importante, hematúria significativa, sangramento relevante, piora intensa de dor pélvica, sinais neurológicos novos ou suspeita de lesão/perfuração de órgão. Cada alta deve conter plano claro e acesso a reavaliação.
+
