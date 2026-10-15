@@ -708,16 +708,68 @@ A probabilidade de transmissão em uma comunidade depende da proporção suscet�
 A qualidade dos dados depende de identificação correta da criança, dose, vacina, lote e sistema, além de população-alvo. Migração, duplicidade cadastral, doses da rede privada não integradas e erros de transcrição podem distorcer indicadores. Em prova ou prática de gestão, perguntar qual população e qual dose estão sendo contadas evita conclusões equivocadas.
 
 
-## 30. Planejamento visual e referências
+## 27. Matriz de autossuficiência e consistência normativa
 
-Priorizar reprodução autoral dos esquemas conceituais (calendário dinâmico, tipos de vacina e fluxo de atraso) com **link institucional**, não cópia de infográficos; fotografias de técnica apenas se fonte/licença comercial verificadas e aprovação em fila Admin. Dez candidatas devem ser avaliadas quando relevantes, sem obrigatoriedade de inserção de figuras redundantes.
+| Competência | Capítulos | Exercício | Pendência |
+|---|---|---|---|
+| Diferenciar imunização ativa/passiva, vacinas vivas e inativadas | 1–2, 22–23 | casos 3/7, Q8/Q11 | conferir esquemas especiais |
+| Interpretar doses válidas e recuperação de atrasos | 3–4, 9, 12, 25 | caso 6, Q1 | intervalos por produto |
+| Aplicar calendário infantil PNI 2026 | 12, 17–21 | Q3–Q7, Q10 | conferência final linha a linha |
+| Interpretar janela 2026 do rotavírus | 6, 13 | caso 2, Q2 | contraindicações individuais |
+| Explicar transição VPC10/VPC20 | 5, 14 | caso 1, Q3 | notas de estoque e CRIE |
+| Reconhecer reforços VIP e meningocócica ACWY | 15–16 | Q4/Q5 | histórico anterior |
+| Distinguir dose zero de SCR e rotina | 19 | caso 5, Q6 | notas locais de surto |
+| Orientar influenza/covid por idade e produto | 20 | Q7 | atualização sazonal |
+| Planejar HPV/dengue com faixa etária | 21 | Q10 | produtos e elegibilidade |
+| Manejar criança em quimioterapia/imunossupressão | 7, 22 | caso 3, Q8 | revisão de CRIE/RIE |
+| Distinguir evento comum de anafilaxia | 7, 24 | caso 4, Q9 | revisão de EAPV |
+| Indicar avaliação urgente pós-exposição | 23 | caso 7, Q11 | protocolo específico de cada agente |
+| Proteger cadeia de frio e evitar erro programático | 25 | checklist clínico | norma por fabricante |
+| Interpretar heterogeneidade de cobertura | 26 | caso 8, Q12 | metodologia PNI |
 
-1. Ministério da Saúde. *Calendário Nacional de Vacinação da Criança* (atualizado em 2026). https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view
-2. Ministério da Saúde. *Calendário Técnico Nacional de Vacinação*. https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico/calendario-tecnico
-3. Ministério da Saúde. *Instrução Normativa que instrui o Calendário Nacional de Vacinação — 2026*. https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view
-4. Ministério da Saúde. *Transição Pneumo 10 → Pneumo 20*. https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/setembro/sus-alcanca-mais-de-1-milhao-de-criancas-vacinadas-com-nova-vacina-contra-doencas-pneumococicas/
-5. Ministério da Saúde. *Notas Técnicas do PNI de 2026*. https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2026
+A aula 43 de Puericultura ensina a **verificar** vacinas e encaminhar, enquanto esta aula 48 concentra calendário técnico, imunologia, contraindicações, imunizações especiais e pós-exposição. A **homologação exige revisor humano** que responda às 12 questões apenas com este texto, localizando o fundamento de cada alternativa.
 
-## Pendências
+## 28. Visuais propostos sem aprovação
 
-Tabela integral de calendário 2026, janela/intervalo de cada vacina e resgate por idade, atualização de notas de emergência, RIE/CRIE e imunobiológicos especiais, revisão pediátrica do conteúdo, aprofundamento a ~60 mil caracteres úteis, figuras licenciadas, matriz de cobertura, auditoria de casos/questões e inspeção PWA. **Não homologar nem publicar.**
+A lista é de **alvos didáticos**, não imagens já licenciadas/baixadas. Não copiar tabelas, identidade visual ou ilustrações de PDF de cursinho ou do Ministério sem autorização.
+
+| Nº | Figura/diagrama | Objetivo | Estado |
+|---:|---|---|---|
+| 1 | linha do tempo autoral do PNI 2026 | doses por idade | criar |
+| 2 | diagrama de imunidade ativa versus passiva | explicar memória | criar |
+| 3 | conjugação polissacarídeo-proteína | explicar VPC | criar |
+| 4 | comparação autoral rotavírus 2020 e 2026 | diferenciar janelas | criar |
+| 5 | fluxograma de transição VPC10/VPC20 | distinguir produtos e datas | criar |
+| 6 | cronologia VIP/VOP | mostrar mudança nos reforços | criar |
+| 7 | esquema meningo C versus ACWY | lembrar sorogrupos | criar |
+| 8 | figura original de BCG e cicatriz | diferenciar marca e proteção | criar |
+| 9 | quadro de vacinas vivas/inativadas em imunodeprimidos | contraindicações | criar |
+| 10 | algoritmo original de pós-exposição | vacina e imunoglobulina | criar |
+| 11 | exemplo autorizado de equipamento da rede de frio | segurança e temperatura | licença a verificar |
+| 12 | gráfico fictício de cobertura em bairros | mostrar heterogeneidade | criar |
+
+O pipeline de seleção exige fonte/licença comercial, legenda, revisão médica, aprovação no Admin e **só depois** otimização WebP. Nenhuma imagem externa foi importada, convertida ou publicada nesta etapa.
+
+## 29. Parecer editorial preliminar e gates
+
+O manuscrito agora ensina de forma extensa imunologia, calendário infantil de 2026, ampliação da janela de rotavírus, transição VPC10→VPC20, VIP, meningocócicas, BCG/hepatite B, penta/DTP, febre amarela, SCR/dose zero, varicela, influenza/covid, HPV/dengue, CRIE/RIE, pós-exposição, EAPV, cadeia de frio, cobertura, oito casos e doze questões originais.
+
+O PDF comparativo lido no Drive é explicitamente **PNI 2020** e não serve de norma clínica de 2026; nenhuma ilustração ou trecho foi copiado. O recorte nacional de 2026 é datado e **não substitui** conferência do produto, estoque, intervalo, nota técnica ou situação clínica individual.
+
+**Ainda é obrigatório:** (1) auditoria pediátrica/farmacêutica de doses e intervalos; (2) validação especializada de imunodeficiência, pós-exposição e vacinas vivas; (3) teste humano de autossuficiência para todos os casos/questões; (4) visuais autorais/licenciados e aprovação Admin; (5) versão HTML e testes reais de PWA e acessibilidade; (6) revisão de atos novos, revogados ou substituídos.
+
+**Status: TEXTO_APROFUNDADO_REVISAO_PENDENTE.** A extensão bruta não certifica qualidade e não autoriza merge ou deploy.
+
+## 30. Referências oficiais e temporalidade
+
+1. Ministério da Saúde. *Calendário de Vacinação — Criança*, página por idade consultada em outubro de 2026. https://www.gov.br/saude/pt-br/vacinacao/calendario
+2. Ministério da Saúde. *Calendário Nacional de Vacinação — Criança*, atualização 29/07/2026. https://www.gov.br/saude/pt-br/vacinacao/arquivos/calendario-nacional-de-vacinacao-crianca/view
+3. Ministério da Saúde. *Instrução Normativa do Calendário Nacional de Vacinação — 2026*. https://www.gov.br/saude/pt-br/vacinacao/publicacoes/instrucao-normativa-que-instrui-o-calendario-nacional-de-vacinacao-2026.pdf/view
+4. Ministério da Saúde. *Calendário Técnico Nacional de Vacinação*. https://www.gov.br/saude/pt-br/composicao/svsa/pni/calendario-tecnico
+5. Ministério da Saúde. *Vacina Pneumo 20 disponível no SUS para crianças até 5 anos e grupos especiais*, 03/07/2026. https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/julho/vacina-pneumo-20-esta-disponivel-no-sus-para-criancas-de-ate-5-anos-e-grupos-especiais
+6. Ministério da Saúde. *Guia técnico para introdução da VPC20 no PNI*, 2026. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2026/guia-tecnico-para-introducao-da-vacina-pneumococica-20-valente-conjugada-no-programa-nacional-de-imunizacoes.pdf
+7. Ministério da Saúde. *Notas Técnicas do PNI — 2026*, conferir vigência/revogação. https://www.gov.br/saude/pt-br/composicao/svsa/pni/notas-tecnicas/2026
+8. Ministério da Saúde. *Nota Técnica nº 52/2026*, VPC20 em estratégias especiais RIE. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-52-2026-cgici-dpni-svsa-ms.pdf/view
+9. Ministério da Saúde. *Caderneta da Criança*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta
+
+**Nota:** este é um retrato da situação normativa em outubro de 2026. O PNI pode publicar novas notas e atualizar esquemas. Antes de aplicar uma dose, verificar a norma atual e o produto disponível, particularmente no contexto de resgate, transição, imunossupressão e pós-exposição.
