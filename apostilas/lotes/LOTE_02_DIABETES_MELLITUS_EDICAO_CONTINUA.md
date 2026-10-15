@@ -102,6 +102,53 @@ Peptídeo C é liberado junto à insulina endógena e ajuda a compreender reserv
 
 Quando o diabetes surge em várias gerações, em idade jovem, sem resistência insulínica expressiva, considerar formas monogênicas como MODY, ponderando história e genética especializada. É erro assumir que toda pessoa magra tem DM1 ou que todo paciente com obesidade tem DM2.
 
+
+### 3.2 Diabetes autoimune de início no adulto (LADA): o tempo de evolução não anula a autoimunidade
+
+O diabetes tipo 1 pode começar em qualquer idade. Em parte dos adultos, a perda da função das células beta é lenta o suficiente para que, durante meses ou anos, a pessoa não dependa de múltiplas aplicações de insulina. Historicamente, o termo **LADA** (*latent autoimmune diabetes in adults*) descreve esse fenótipo: início na vida adulta, evidência de autoimunidade contra ilhotas e reserva secretora inicialmente suficiente para dispensar insulina em fase precoce. Entretanto, o intervalo de seis meses sem insulina é **convenção histórica**, não uma exigência para reconhecer a fisiopatologia autoimune. A classificação de 2026 da ADA inclui LADA no espectro do DM1.
+
+Suspeite dessa apresentação quando uma pessoa rotulada como DM2 exibe perda ponderal sem explicação, hiperglicemia que progride rapidamente apesar de tratamento apropriado, história pessoal ou familiar de autoimunidade, diagnóstico em idade mais jovem ou necessidade relativamente precoce de insulina. **Nenhuma dessas características é obrigatória nem exclusiva:** obesidade pode coexistir com DM1 autoimune, e uma pessoa magra pode ter DM2. A segurança depende de reconhecer sinais de insulinopenia, cetose, desidratação e acidose, mesmo em paciente adulto.
+
+Na avaliação de subtipo, **anti-GAD65** é autoanticorpo frequentemente prioritário, seguido de **anti-IA-2 e/ou anti-ZnT8** conforme dúvida, recursos e diretriz. Um anticorpo negativo não elimina todo DM1, especialmente quando o quadro é catabólico ou há outros indícios fortes; o resultado isolado de baixo título, por outro lado, precisa de interpretação clínica, evitando rótulos definitivos sem contexto. O **peptídeo C** pode ajudar na estimativa da secreção endógena, desde que interpretado junto à glicemia, função renal, tempo desde o diagnóstico, tratamento e eventual descompensação metabólica.
+
+**Decisão de segurança:** em pessoa com hiperglicemia acentuada, vômitos, cetonas significativas, acidose ou sinais clínicos de deficiência importante de insulina, avaliar e tratar a urgência sem aguardar resultado de anticorpos. Na evolução ambulatorial, evitar manter terapêutica exclusivamente não insulínica por inércia diante de progressão de insulinopenia. Encaminhar para classificação e plano terapêutico individualizado quando a dúvida for relevante. Não oferecer suspensão automática de insulina porque a pessoa passou algum tempo sem utilizá-la.
+
+### 3.3 Diabetes monogênico: reconhecer quando um diagnóstico molecular muda o tratamento
+
+**Diabetes monogênico** não é sinônimo de qualquer caso de diabetes com parentes acometidos. Trata-se de alterações em genes específicos que afetam secreção ou ação insulínica e cuja identificação pode modificar indicação de medicamentos, vigilância de outros órgãos e aconselhamento familiar. O MODY (*maturity-onset diabetes of the young*) geralmente aparece mais cedo e em algumas variantes há transmissão autossômica dominante, gerando hiperglicemia em várias gerações. A história familiar pode estar ausente, inclusive por mutação *de novo*, adoção, penetrância variável ou parentes não diagnosticados.
+
+Os principais cenários de prova e de encaminhamento são:
+
+| Fenótipo/alteração | Pista de suspeição | Implicação clínica |
+| --- | --- | --- |
+| **GCK-MODY (MODY 2)** | Glicemia de jejum discretamente elevada desde jovem, pouco progressiva, muitas vezes detectada casualmente, sem manifestações típicas de resistência insulínica | Em geral não exige fármacos fora de situações especiais; gestação exige avaliação obstétrica/genética porque o genótipo fetal muda interpretação e conduta. |
+| **HNF1A-MODY (MODY 3)** | Hiperglicemia progressiva em jovem, história familiar multigeracional, anticorpos negativos e secreção endógena preservada por período significativo | Pode apresentar alta sensibilidade a sulfonilureias, exigindo escolha e dose supervisionadas, com atenção à hipoglicemia. |
+| **HNF4A-MODY (MODY 1)** | Padrão semelhante de herança e diabetes progressivo; história obstétrica/neonatal familiar pode trazer pistas | Alguns pacientes também respondem bem a sulfonilureias, após confirmação genética e avaliação especializada. |
+| **HNF1B-MODY / doença relacionada ao HNF1B** | Diabetes com cistos ou alterações estruturais renais, hipomagnesemia, malformações urogenitais, alterações pancreáticas; a história familiar pode faltar | A investigação não termina na glicemia: requer avaliação renal, pancreática e genética; manejo antidiabético individualizado. |
+| **Diabetes neonatal monogênico** | Hiperglicemia persistente diagnosticada **antes de 6 meses** | Investigar etiologia genética precocemente; formas envolvendo KCNJ11/ABCC8 podem permitir tratamento diferente da insulina em casos confirmados e sob serviço especializado. |
+
+O diagnóstico monogênico é **suspeitado** a partir de idade, fenótipo, padrão familiar, autoanticorpos, reserva secretora e características extrapancreáticas; a confirmação exige teste genético apropriado. Não solicitar um painel a toda pessoa jovem com diabetes sem estratificar a probabilidade, tampouco fechar MODY apenas porque o pai também tem DM2. A Sociedade Brasileira de Diabetes considera suspeita particularmente relevante diante de início precoce, parentes em duas ou três gerações e ausência de autoanticorpos, com peptídeo C persistente conforme tempo de doença.
+
+**Por que GCK é uma pegadinha importante?** A alteração na glicoquinase modifica o ponto de regulação da secreção insulínica: isso gera hiperglicemia leve, estável, sem significar necessariamente falência progressiva das células beta. Tratar intensivamente como DM1 pode causar hipoglicemia sem benefício proporcional. **Não extrapolar a regra do adulto não gestante para gestação**, cuja conduta depende do contexto obstétrico e, em circunstâncias específicas, da avaliação do genótipo fetal. O diabetes associado a HNF1A/HNF4A segue mecanismo diferente e pode progredir; não são tratamentos intercambiáveis por conterem a sigla MODY.
+
+### 3.4 Outras causas: pensar além de “tipo 1 versus tipo 2”
+
+As doenças do **pâncreas exócrino**, como pancreatite crônica, pancreatectomia, fibrose cística e neoplasias, podem ocasionar diabetes pancreatogênico. A história de dor recorrente, esteatorreia, perda ponderal, insuficiência exócrina ou ressecção pancreática orienta investigação. A perda concomitante de hormônios contrarreguladores pode tornar as oscilações glicêmicas e a hipoglicemia particularmente problemáticas; o tratamento exige avaliar nutrição, enzimas pancreáticas quando indicadas e reserva insulínica. Não classificar automaticamente como DM1 porque a pessoa usa insulina.
+
+No **diabetes induzido por medicamentos**, relacionar temporalidade e mecanismo: glicocorticoides provocam frequentemente hiperglicemia mais expressiva após refeições e ao longo do período de ação da medicação; imunossupressores utilizados após transplante e alguns antipsicóticos também podem contribuir. A intervenção deve considerar risco/benefício da medicação causadora e o contexto de doença de base. Não suspender imunossupressor essencial sem equipe de transplante. Endocrinopatias como hipercortisolismo, acromegalia e hipertireoidismo podem agravar hiperglicemia, mas investigar indiscriminadamente todas elas em cada pessoa com DM2 não é abordagem racional.
+
+Em pessoas submetidas a **transplante**, diferenciar hiperglicemia do estresse perioperatório de diabetes pós-transplante persistente; considerar anemia, transfusões e condições que podem tornar HbA1c enganosa. Utilizar testes laboratoriais apropriados conforme tempo de transplante e orientação da equipe, sem aplicar rotinas de rastreio de outro cenário de modo automático.
+
+### 3.5 Algoritmo de raciocínio diagnóstico por subtipo
+
+1. **Confirmar que há diabetes ou hiperglicemia clinicamente significativa** pelo critério laboratorial apropriado, reconhecendo apresentações agudas inequívocas.
+2. **Reconhecer emergência antes de classificar:** sinais de CAD, estado hiperosmolar, desidratação, distúrbios eletrolíticos ou catabolismo exigem manejo imediato. A classificação etiológica não deve atrasar insulina e suporte quando necessários.
+3. **Integrar evolução e história:** idade de início, velocidade de perda de peso, obesidade/resistência insulínica, autoimunidade, padrão multigeracional, exposição medicamentosa, doença pancreática e sinais sindrômicos.
+4. **Solicitar testes que respondam à dúvida real:** autoanticorpos em suspeita de autoimunidade; peptídeo C com glicemia e contexto para reserva secretora; genética em fenótipo sugestivo de monogênico com aconselhamento; exames pancreáticos/endócrinos dirigidos quando indicados.
+5. **Reavaliar o diagnóstico ao longo do tempo:** o rótulo inicial pode ser provisório. Persistência de insulina endógena não exclui DM1 recente, e ausência de anticorpos não equivale a comprovação de MODY. O tratamento deve proteger contra deficiência insulínica e complicações enquanto a investigação prossegue.
+
+**Síntese de prova:** LADA é parte do espectro autoimune; MODY é hipótese genética que exige confirmação e pode mudar o tratamento; diabetes pancreatogênico depende do contexto exócrino; diabetes por drogas exige reconstruir exposição e evolução. Idade e IMC são pistas, não critérios isolados.
+
 ## 4. Metas, estilo de vida e farmacoterapia do DM2
 
 ### 4.1 Objetivos terapêuticos: além da HbA1c
@@ -603,6 +650,15 @@ Homem de 51 anos, DM2 há sete anos e hipertensão, faz exames: HbA1c 7,1%, crea
 Mulher de 68 anos com DM2, neuropatia e doença arterial periférica tem lesão plantar de 1,2 cm sem dor significativa, bordas calosas, pele fria distalmente e pulsos reduzidos. **Hipóteses:** úlcera neuropática com componente isquêmico, risco de infecção profunda; avaliar osteomielite conforme sinais e duração. **Raciocínio:** ausência de dor não garante gravidade baixa; a perfusão limitada piora cicatrização e pode mascarar sinais inflamatórios. **Exames:** exame vascular/neurológico, pulsos, teste de sensibilidade protetora, avaliação de profundidade e infecção, índices vasculares adequados; cultura somente quando há suspeita de infecção e coleta apropriada. **Conduta:** avaliação especializada prioritária de pé diabético e perfusão, alívio de carga, plano de curativo e investigação de infecção/isquemia; não prescrever antibiótico apenas porque existe úlcera sem sinais de infecção clínica. **Por que importa:** controle de carga e circulação são tão importantes quanto glicemia.
 
 
+
+### Caso 15 — Adulto tratado como DM2 com perda rápida da reserva insulínica
+
+Mulher de 39 anos, diagnosticada com diabetes há onze meses, emagrecimento não intencional, glicemias progressivamente mais elevadas apesar de tratamento inicial e antecedente de tireoidite autoimune. Exame de hoje sem sinais de choque, vômitos ou alteração de consciência, mas com hiperglicemia significativa. **Hipóteses:** DM1 autoimune de progressão mais lenta (fenótipo LADA) e outras causas de falência secretora. **Raciocínio:** idade adulta não exclui autoimunidade; história autoimune e progressão rápida aumentam suspeita, mas não confirmam por si só. **Exames:** glicemia, avaliação de cetonas e equilíbrio ácido-base se houver suspeita de descompensação; anti-GAD65 e, conforme resultado/disponibilidade, IA-2/ZnT8; peptídeo C interpretado com glicemia simultânea e função renal. **Conduta:** avaliar necessidade de insulina sem atraso se houver insulinopenia/risco agudo, programar seguimento próximo e educação de sinais de CAD, encaminhando para classificação endocrinológica. **Por que importa:** não manter a etiqueta de DM2 e adiar insulina por causa da idade; também não presumir LADA apenas pela presença de tireoidite.
+
+### Caso 16 — Hiperglicemia leve e estável desde a adolescência
+
+Homem de 24 anos, assintomático, glicemia de jejum entre 112 e 138 mg/dL desde os 15 anos, valores semelhantes em sua mãe e avó, sem obesidade ou sinais de resistência insulínica. HbA1c pouco elevada, sem tendência rápida de progressão, autoanticorpos de ilhotas não detectados. **Hipótese:** diabetes monogênico, especialmente GCK-MODY, entre os diferenciais. **Raciocínio:** estabilidade por anos e três gerações são pistas, mas não confirmam uma variante. **Exames:** confirmar histórico/glicemias, revisar causas de resultados discordantes e encaminhar para avaliação de teste genético apropriado. **Conduta:** não intensificar de maneira reflexa para insulina antes de esclarecer etiologia em pessoa estável; individualizar prevenção, orientação familiar e seguimento após diagnóstico. **Por que importa:** GCK-MODY confirmado costuma ter implicações terapêuticas diferentes de HNF1A/HNF4A-MODY e DM1; gestação é exceção importante e precisa de avaliação própria.
+
 ## 10. Questões autorais comentadas
 
 ### Questão 1 — Confirmação da hiperglicemia em pessoa assintomática
@@ -744,9 +800,35 @@ A) Muito baixo e revisão a cada cinco anos. B) Alto, demandando seguimento freq
 **Gabarito B.** **A** ignora o evento prévio; **C** aumenta risco de nova lesão; **D** reduz avaliação a biomarcador metabólico. **Mini-revisão:** neuropatia e amputação prévia definem risco elevado mesmo sem dor atual.
 
 
+
+### Questão 24 — Adulto com diabetes e suspeita de autoimunidade
+
+Mulher de 43 anos com diagnóstico recente de diabetes, perda ponderal, controle progressivamente pior e tireoidite autoimune conhecida. Qual a melhor abordagem?
+
+A) Confirmar DM2 somente porque a paciente tem mais de 40 anos.
+B) Considerar autoimunidade de ilhotas, avaliar risco atual de insulinopenia e cetose e solicitar autoanticorpos/peptídeo C conforme contexto, sem postergar tratamento necessário.
+C) Aguardar seis meses obrigatórios sem insulina para poder investigar LADA.
+D) Suspender qualquer insulina assim que um único anti-GAD vier negativo.
+
+**Gabarito: B.** **A:** idade não prova etiologia. **B:** alia segurança clínica ao teste direcionado. **C:** intervalo histórico de não dependência não é requisito de tratamento seguro. **D:** anticorpo isolado negativo não afasta necessariamente deficiência insulínica. **Mini-revisão:** a ADA 2026 inclui LADA no espectro de DM1 autoimune; paciente sintomático deve ser tratado conforme risco, independentemente de rótulo inicial.
+
+### Questão 25 — MODY: por que subtipar?
+
+Pessoa de 21 anos, glicemia de jejum discretamente elevada e praticamente estável há seis anos, mãe e avó com padrão semelhante, sem obesidade e sem autoanticorpos conhecidos. Qual afirmação é correta?
+
+A) História familiar prova DM2 e exclui diabetes monogênico.
+B) GCK-MODY e HNF1A-MODY exigem sempre o mesmo tratamento.
+C) O fenótipo é compatível com hipótese de GCK-MODY, mas a confirmação genética e a avaliação clínica são necessárias antes de definir orientação de longo prazo.
+D) O diagnóstico por gene é desnecessário, porque nenhuma forma de MODY muda a conduta.
+
+**Gabarito: C.** **A:** não distingue herança monogênica de predisposição familiar poligênica. **B:** GCK tende a produzir hiperglicemia leve e estável, enquanto HNF1A pode apresentar defeito progressivo com resposta a sulfonilureias em casos selecionados. **C:** estabelece probabilidade e confirmação adequadas. **D:** algumas variantes têm implicações farmacológicas e extrapancreáticas relevantes. **Mini-revisão:** MODY não é um tratamento; é grupo heterogêneo de etiologias genéticas.
+
 ## Referências essenciais
 
 1. SBD 2026 — Manejo do DM2. https://diretriz.diabetes.org.br/manejo-do-diabetes-mellitus-tipo-2/
 2. SBD — Insulinoterapia no DM1. https://diretriz.diabetes.org.br/insulinoterapia-no-diabetes-mellitus-tipo-1-dm1/
 3. Ministério da Saúde — PCDT DM2. https://www.gov.br/saude/pt-br/assuntos/pcdt/d/diabete-melito-tipo-2.pdf/view
 4. ADA/EASD — Hyperglycemic Crises (2024). https://doi.org/10.2337/dci24-0032
+
+5. Sociedade Brasileira de Diabetes — Classificação do diabetes (Diretriz, edição 2026). https://diretriz.diabetes.org.br/classificacao-do-diabetes/
+6. American Diabetes Association — Diagnosis and Classification of Diabetes: Standards of Care in Diabetes 2026. https://doi.org/10.2337/dc26-s002
