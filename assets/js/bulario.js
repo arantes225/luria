@@ -66,7 +66,7 @@
     const values=rowSearchTerms(row).map(normalized).filter(Boolean);
     if(values.some(value=>value===q))return 0;
     if(values.some(value=>value.startsWith(q)))return 1;
-    if(values.some(value=>value.includes(q)))return 2;
+    if(values.some(value=>value.includes(' '+q)))return 2; // only a word start: cetamina is not escetamina
     if(q.length>=7&&values.some(value=>value.split(' ').some(word=>word.length>=7&&closeSpelling(word,q))))return 3;
     return Infinity;
   }
