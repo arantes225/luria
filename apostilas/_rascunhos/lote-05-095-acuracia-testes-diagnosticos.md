@@ -523,7 +523,157 @@ A *Nature Medicine* publicou em setembro de 2025 a extensão **STARD-AI**, com i
 
 **Aplicação à LURIA:** se futuramente houver leitura automatizada de ECG, exames ou achados clínicos, a promessa não deve ser “IA sabe o diagnóstico” a partir de um benchmark interno. Será preciso testar o modelo com avaliação externa, registrar denominadores, negativos falsos, indeterminados, variação por população e percurso de revisão humana. Esta seção é metodológica: **não representa validação de qualquer produto de IA da plataforma**.
 
-## 19. Referências reais e verificação
+## 19. Casos integradores avançados — quando a interpretação muda a conduta
+
+Os casos desta seção ampliam, sem substituir, os quatro casos iniciais. São cenários e números **inteiramente fictícios**, propostos para praticar decisão. Nenhum percentual apresentado aqui deve ser usado para diagnosticar ou excluir uma doença específica no atendimento real.
+
+### Caso 5 — “100% sensível” em apenas dez doentes
+
+**Apresentação.** Um hospital pequeno recebe proposta de compra de dispositivo novo de rastreamento. O fornecedor informa sensibilidade de 100%, obtida porque dez pessoas com a doença testaram positivo. A direção pergunta se o equipamento pode substituir o exame confirmatório existente.
+
+**Dados relevantes.** O conjunto de dez pacientes foi formado por casos avançados de doença, todos já conhecidos como positivos. O material não informa número total de elegíveis, testes inconclusivos, recrutamento consecutivo nem distribuição por fases precoces da condição. Não apresenta resultado em pacientes com sinais que imitam a doença.
+
+**Hipóteses metodológicas.** A estimativa 10/10 = 100% pode ser consequência de tamanho pequeno e efeito de espectro. Um intervalo exato bilateral de 95% para dez sucessos em dez tentativas tem limite inferior em torno de 69,2%, não permitindo afirmar sensibilidade perfeita. A ausência de controles adequados impede também avaliar a especificidade na população de interesse.
+
+**Exames/avaliações complementares.** Não se trata de “pedir hemograma”, mas de solicitar estudo de acurácia com população pertinente ao uso pretendido, padrão de referência adequado, fluxo de inclusões e perdas, intervalos de confiança e resultados estratificados por gravidade quando justificado.
+
+**Interpretação e conduta.** A direção não deve abolir o método de referência com base nessa evidência isolada. Pode planejar avaliação técnica e clínica adicional, custo-efetividade e testagem supervisionada após aprovação institucional e ética quando pertinente.
+
+**Por que importa.** Em provas, a alternativa que se deixa seduzir por “100%” ignora a incerteza, o viés e o denominador. Na vida real, essa confusão pode ampliar falsos negativos em pessoas cujo estágio da doença difere dos casos usados para apresentar a tecnologia.
+
+### Caso 6 — As falhas de coleta desaparecem do relatório
+
+**Apresentação.** Uma equipe avalia teste rápido fictício para condição transmissível. Em cem pacientes com doença confirmada, oitenta têm resultado positivo, dez negativo e dez inválido. O artigo informa sensibilidade “88,9%” e conclui que o exame seria suficiente como triagem única.
+
+**Dados e conta.** Entre os noventa pacientes doentes com resultado interpretável, a sensibilidade condicional é 80/(80+10) = **88,9%**. Entretanto, na população de cem doentes submetidos à estratégia, **20 não receberam resultado positivo válido na primeira tentativa**: dez negativos e dez inválidos. Não se pode alterar silenciosamente o denominador para afirmar que somente 11,1% de doentes tiveram situação problemática no atendimento inicial.
+
+**Raciocínio diferencial.** Um resultado negativo definido pelo teste pode ter implicação distinta de uma amostra inválida, a qual exige repetição, outro método ou observação. Para avaliação técnica estrita, reportar a sensibilidade entre interpretáveis pode ser informativo. Para avaliar desempenho da estratégia, é obrigatório acrescentar a proporção de inválidos e o caminho clínico deles.
+
+**Exames/medidas.** Identificar causas das falhas, repetição do teste e padrão de referência; examinar se inválidos se concentram em pessoas com determinadas características, em turnos de plantão, operadores ou lotes.
+
+**Conduta de organização do serviço.** Estabelecer protocolo explícito para resultados inválidos, particularmente quando existe risco de infecção transmissível ou de deterioração clínica. Não comunicar “negativo” na ausência de resultado interpretável.
+
+**Por que importa.** Excluir inconclusivos pode deixar um teste aparentemente melhor no artigo e pior no atendimento efetivo.
+
+### Caso 7 — Duas evidências correlacionadas contadas duas vezes
+
+**Apresentação.** Paciente com suspeita de determinada síndrome tem dois achados laboratoriais positivamente associados ao mesmo processo biológico. Um estudante conhece RV+ de 3 para o primeiro marcador e de 4 para o segundo em estudos separados e multiplica 3 × 4 = 12, supondo aumento de odds de doze vezes.
+
+**Dados relevantes.** Os artigos estimaram cada marcador isoladamente. Nenhum analisou a RV do segundo **condicionada ao primeiro já conhecido**. Ambos podem medir manifestações sobrepostas de inflamação.
+
+**Hipótese do erro.** Multiplicar RVs marginais como se fossem condicionalmente independentes pode exagerar a evidência. Em um modelo probabilístico sequencial correto, a atualização a partir do segundo marcador deve considerar a informação já trazida pelo primeiro.
+
+**Como resolver.** Buscar estudo da estratégia combinada, modelo multivariável validado ou estimativas condicionais. Verificar se o desempenho é transportável para a população atual e quais diagnósticos concorrentes causam os mesmos marcadores.
+
+**Conduta clínica de raciocínio.** A probabilidade pós-teste precisa ser interpretada sem falsa precisão. Se a decisão envolve procedimento arriscado, revisar documentação e buscar confirmação adequada pode ser melhor que aplicar cálculo espúrio.
+
+**Por que importa.** Saber a fórmula de Bayes é necessário; conhecer suas suposições é o que evita conclusões perigosas.
+
+### Caso 8 — Algoritmo com média alta, falha em subgrupo
+
+**Apresentação.** Um serviço apresenta sistema fictício para leitura automatizada de imagens com sensibilidade agregada de 94% em validação interna. Durante teste externo, porém, as imagens de uma população pouco representada no treinamento apresentam maior frequência de falso negativo.
+
+**Dados necessários.** Quantos pacientes e quantos doentes compõem cada estrato? O limiar foi fixado antes da análise? Houve sobreposição de pacientes ou exames entre treinamento e validação? Há mudança na distribuição de doenças e equipamentos? Os ICs são amplos? Os subgrupos foram definidos por justificativa clínica?
+
+**Hipóteses.** Pode haver alteração do espectro clínico, diferenças na captura de imagem, viés de seleção ou limitações do modelo. A média agregada não garante segurança uniforme. Não basta observar diferença bruta pequena se há incerteza estatística elevada; tampouco ignorar um padrão de risco repetido porque o global “passou”.
+
+**Investigação.** Reanalisar fluxo, erros, distribuição e calibração quando a saída inclui probabilidades; conduzir avaliação externa reproduzível com comparação ao padrão de referência adequado e supervisão humana.
+
+**Conduta.** Restringir ou revisar o uso da tecnologia conforme governança e risco; definir critérios de encaminhamento e revisão por profissional, sem liberar diagnóstico totalmente automático com base em marketing ou validação retrospectiva limitada.
+
+**Por que importa.** Acurácia é uma propriedade **da interação entre teste, condição e população**, não um selo vitalício atribuído ao software.
+
+## 20. Questões integradoras adicionais — leitura crítica, precisão e decisão
+
+As seis questões seguintes ampliam as seis iniciais e treinam armadilhas menos óbvias. Todos os valores clínicos são inventados para ensino. Cada questão tem **uma alternativa mais adequada** à situação descrita.
+
+### Questão 7 — Precisão versus valor pontual
+
+Dois estudos relatam sensibilidade de 90% para a mesma tecnologia. No primeiro, 18 de 20 doentes têm teste positivo; no segundo, 900 de 1.000. Assuma seleção e referências adequadas em ambos. A interpretação mais correta é:
+
+A. O primeiro oferece maior precisão porque seu percentual é idêntico ao do segundo.
+B. Ambos têm necessariamente o mesmo intervalo de confiança.
+C. O segundo tende a oferecer intervalo mais estreito para a sensibilidade, dada a maior quantidade de doentes.
+D. O primeiro prova que o teste jamais alcança sensibilidade abaixo de 90%.
+E. A amostra total, incluindo somente não doentes, determina a precisão da sensibilidade.
+
+**Gabarito: C.** A mesma proporção estimada a partir de denominador maior tende a apresentar menor incerteza amostral. Com IC de Wilson 95%, aproximadamente 69,9–97,2% para 18/20 e 88,0–91,7% para 900/1.000. **A incorreta:** mesmo percentual não significa melhor precisão. **B incorreta:** tamanho da amostra importa. **D incorreta:** uma estimativa não é limite inferior verdadeiro da população. **E incorreta:** o denominador informativo da sensibilidade é VP+FN, os doentes. **Mini-revisão:** reportar x/n + IC e considerar viés/transportabilidade.
+
+### Questão 8 — Resultado inválido na vida real
+
+Um teste rápido foi feito em cem doentes: oitenta positivos, dez negativos e dez inválidos. Qual apresentação é mais transparente?
+
+A. Sensibilidade = 100%, pois inválidos não são negativos.
+B. Sensibilidade entre interpretáveis = 88,9% e frequência de inválidos entre doentes = 10%, com plano explícito para resultados inválidos.
+C. Sensibilidade = 80% obrigatoriamente, como se todo inválido fosse falso negativo, sem explicações.
+D. Todos os resultados inválidos devem ser considerados falso positivo.
+E. Os dez inválidos devem ser omitidos do estudo e do fluxo clínico.
+
+**Gabarito: B.** A questão permite relatar o desempenho **condicional** a resultado interpretável com o denominador correspondente e, separadamente, a falha operacional; o destino clínico dos inválidos precisa ser definido. **A incorreta:** cem por cento contradiz os dez negativos reais. **C incorreta:** transformar todos os inválidos em negativos sem justificar não é regra universal; análise operacional pode apresentar outras métricas, mas deve explicitar escolha. **D incorreta:** inválido não significa positividade. **E incorreta:** omissão mascara desempenho. **Mini-revisão:** diferenciar teste índice negativo de teste tecnicamente não interpretável.
+
+### Questão 9 — Validade, precisão e referência
+
+Um equipamento fornece valor quase idêntico em dez repetições, mas existe erro de calibração conhecido que o desloca constantemente para cima. Qual é a conclusão?
+
+A. É válido porque é repetível.
+B. É específico porque não muda entre medições.
+C. A repetibilidade pode ser alta enquanto a validade é prejudicada por viés sistemático.
+D. A medida de concordância resolve a diferença de calibração sem ajuste.
+E. A sensibilidade é igual ao coeficiente de correlação entre repetições.
+
+**Gabarito: C.** Repetibilidade mede estabilidade sob condições repetidas; validade exige proximidade da condição ou referência relevante. **A incorreta:** consistência não prova correção. **B incorreta:** especificidade é outra medida de classificação. **D incorreta:** um erro sistemático pode coexistir com alta concordância interna de repetição. **E incorreta:** correlação e sensibilidade têm denominadores diferentes. **Mini-revisão:** erros aleatórios, sistemáticos e classificação não são sinônimos.
+
+### Questão 10 — Ferramentas metodológicas de 2026
+
+Um pesquisador precisa (i) relatar estudo de acurácia clássico com transparência; (ii) julgar risco de viés e aplicabilidade de estudos numa revisão sistemática; e (iii) relatar avaliação diagnóstica de sistema de IA. Qual associação é a mais adequada?
+
+A. (i) STARD 2015; (ii) QUADAS-3; (iii) STARD-AI.
+B. (i) QUADAS-3; (ii) STARD-AI; (iii) PRISMA para ensaios randomizados.
+C. (i) STARD-AI apenas; (ii) STARD 2015 apenas; (iii) kappa.
+D. (i) Curva ROC; (ii) VPP; (iii) VPN.
+E. (i) STARD 2015; (ii) somente cálculo de AUC; (iii) QUADAS-2 exclusivamente.
+
+**Gabarito: A.** As funções das ferramentas diferem: STARD descreve transparência do estudo primário; QUADAS-3 (2026) orienta avaliação estruturada de viés/aplicabilidade; STARD-AI estende critérios de relato de estudos com IA. **B incorreta:** troca funções; além disso, PRISMA não é ferramenta de risco de viés para esse uso. **C incorreta:** não cobre adequadamente o conjunto de tarefas. **D incorreta:** métricas não substituem diretrizes e instrumentos. **E incorreta:** AUC não julga sozinho viés; QUADAS-2 foi sucedida pela versão 3. **Mini-revisão:** ferramenta de relato ≠ avaliação de viés ≠ índice de classificação.
+
+### Questão 11 — Dados dependentes e multiplicação de RV
+
+Um aluno multiplica RV+ de dois exames porque ambos são positivos na mesma pessoa. As RVs foram estimadas isoladamente e os exames medem processos biologicamente relacionados. Qual crítica é mais apropriada?
+
+A. Toda RV pode ser multiplicada sem restrição.
+B. A multiplicação sempre subestima a probabilidade real.
+C. A fórmula de Bayes proíbe incorporar mais de um exame.
+D. A multiplicação de RVs isoladas pode superestimar evidência se os testes não forem condicionalmente independentes; procurar estimativas condicionais ou validação combinada.
+E. O segundo exame é necessariamente inútil.
+
+**Gabarito: D.** A atualização sequencial exige representar a informação condicional ao que já se conhece. **A incorreta:** ignora dependência. **B incorreta:** o sentido do erro não é universal. **C incorreta:** múltiplas evidências podem ser incorporadas com modelo adequado. **E incorreta:** correlação não equivale a redundância completa. **Mini-revisão:** evidência sobreposta pode ser contada duas vezes.
+
+### Questão 12 — O resultado positivo precisa de contexto
+
+Teste hipotético com sensibilidade 90%, especificidade 80% e prevalência 1% é aplicado a mil pessoas. Nove positivos são verdadeiros e 198 são falsos positivos. Qual mensagem é clinicamente mais defensável?
+
+A. “O exame positivo confirma a doença em 90% dos casos.”
+B. “O teste é inútil em todos os cenários, independentemente de confirmação.”
+C. “A grande maioria dos positivos nesse cenário seria falso positivo; o resultado preliminar exige estratégia de confirmação e comunicação clara antes de rotular definitivamente o paciente.”
+D. “A especificidade passa a ser 1% porque a condição é rara.”
+E. “Como o VPN é elevado, todos os resultados positivos devem ser ignorados.”
+
+**Gabarito: C.** O VPP é 9/(9+198) ≈ 4,35%, de modo que um positivo tem significado limitado sem confirmação adequada na população fictícia. **A incorreta:** troca sensibilidade por VPP. **B incorreta:** utilidade depende do papel do teste em estratégia. **D incorreta:** especificidade foi mantida em 80% por hipótese. **E incorreta:** VPN alto não elimina necessidade de avaliar positivos. **Mini-revisão:** comunicar frequências naturais ajuda a explicar limites do teste sem gerar certeza falsa.
+
+### Conferência de ancoragem — questões 1–12
+
+| Conjunto | O que avalia | Texto que fundamenta |
+|---|---|---|
+| 1–2 | Sensibilidade e VPP/VPN por prevalência | §§2–6 |
+| 3–4 | RV+ e conversão odds → probabilidade | §7 |
+| 5–6 | Verificação parcial e efeito de espectro | §9 |
+| 7 | Denominador e intervalo de confiança | §14 |
+| 8 | Inconclusivos e desempenho operacional | §15 |
+| 9 | Repetibilidade, referência e validade | §15.4 |
+| 10 | STARD, QUADAS-3 e STARD-AI | §§17–18 |
+| 11 | Dependência condicional | §§7.2 e 16.5 |
+| 12 | Prevalência, VPP e comunicação | §§5–6 e 16.3 |
+
+## 21. Referências reais e verificação
 
 1. Bossuyt PM et al. **STARD 2015: An Updated List of Essential Items for Reporting Diagnostic Accuracy Studies.** *BMJ*. 2015;351:h5527. DOI: https://doi.org/10.1136/bmj.h5527. Página EQUATOR: https://www.equator-network.org/reporting-guidelines/stard/
 2. Cohen JF et al. **STARD 2015 guidelines for reporting diagnostic accuracy studies: explanation and elaboration.** *BMJ Open*. 2016;6:e012799. https://doi.org/10.1136/bmjopen-2016-012799
@@ -533,10 +683,10 @@ A *Nature Medicine* publicou em setembro de 2025 a extensão **STARD-AI**, com i
 
 O presente texto usa números demonstrativos inventados (descritos como fictícios) e elaboração original. Não se deve atribuir as matrizes numéricas aos estudos citados.
 
-## 20. Auditoria de pendências antes da entrega premium
+## 22. Auditoria de pendências antes da entrega premium
 
-- **Cobertura inicial:** matriz 2×2, sensibilidade, especificidade, VPP, VPN, efeito da prevalência, RV, Bayes, estratégias em série/paralelo, vieses, quatro casos e seis questões de cinco alternativas presentes.
-- **Aprofundar:** intervalos de confiança com exemplos calculados; dados faltantes e resultados indeterminados; padronização de estudos de concordância; critérios de decisão e utilidade clínica sem antecipar de modo redundante a aula 100; referências brasileiras didáticas de epidemiologia clínica.
+- **Cobertura atual:** matriz 2×2, sensibilidade, especificidade, VPP, VPN, prevalência, RV, Bayes, estratégias em série/paralelo, vieses, intervalos de confiança, resultados inconclusivos, seleção de pacientes, QUADAS-3, STARD-AI, utilidade clínica; oito casos clínicos e doze questões com cinco alternativas e comentários.
+- **Aprofundar após revisão externa:** comprovação de cálculos de IC em software independente; escolha de estudos nacionais exemplares e impacto no SUS; interoperabilidade com o renderer; revisão pedagógica do percurso da aula 095 para a 100, sem repetir a metodologia ROC.
 - **Revisar:** cada fórmula e exemplo por segundo leitor; clareza na diferença entre população estudada e paciente individual; fontes, ligações, qualidade dos enunciados, acessibilidade das tabelas e coerência com o renderer da LURIA.
 - **Produzir:** dez esquemas visuais candidatos, aprovar arte e direitos, converter/otimizar quando aplicável.
 - **Não concluído:** meta qualitativa de capítulo premium autossuficiente; revisão independente, auditoria de 60 mil caracteres úteis, integração ao site, teste PWA e publicação.
