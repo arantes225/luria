@@ -204,3 +204,403 @@ A. Alta porque a ALT caiu. B. Hepatite benigna por regra. C. Apenas repetir tran
 - [ ] Curadoria de imagens reais com licença e otimização PWA, auditoria médica/visual e testes.
 
 **Estado de publicação: RASCUNHO, não certificado nem publicado.**
+
+
+---
+
+# APROFUNDAMENTO LURIA — HEPATITES VIRAIS A–E
+**Revisão editorial:** 15/10/2026. **Escopo:** continuar o rascunho original das seções 0–16 sem apagar informações válidas; integrar o raciocínio dos vírus A, B, C, D e E com etiologias de lesão hepática aguda, doenças crônicas, gravidez, imunossupressão e saúde coletiva. Benchmark Drive “08 - HEPATITES VIRAIS.pdf” **relido** (14.845 caracteres de texto extraído); trata sorologias B, quadros agudos e esquemas históricos, mas alguns atalhos necessitam correção pela fisiopatologia e PCDTs. Não foi demonstrada autoria do Estratégia MED. Fontes de verificação independentes: PCDT **hepatite B e coinfecções** do MS (anexo alterado em 04/07/2024), PCDT **hepatite C e coinfecções** formalizado pela Portaria SCTIE/MS nº39 de **20/07/2026**, OMS hepatite B 2024 e guias brasileiros de diagnóstico/vigilância. Não indicar terapêutica individual sem verificar o texto integral de cada PCDT e os dados clínicos necessários.
+
+## 17. O hepatócito não adoece da mesma forma nos cinco vírus
+
+### 17.1. A expressão “hepatite viral” designa inflamação de múltiplas etiologias
+HAV, HBV, HCV, HDV e HEV produzem hepatite, mas têm **estrutura viral, vias de transmissão, probabilidade de persistência, imunopatogênese e terapias muito diferentes**. Agrupá-los apenas porque “aumentam AST/ALT e causam icterícia” esconde decisões mais importantes para prova e prática.
+
+- **HAV:** vírus RNA sem envelope (Picornaviridae), geralmente adquirido por via fecal–oral; doença aguda, **sem persistência crônica típica**; vacina eficaz e medidas sanitárias.
+- **HBV:** vírus DNA parcialmente dupla fita com transcriptase reversa (Hepadnaviridae), transmissão por sangue, relações sexuais e perinatal; pode tornar-se crônico e integrar risco de cirrose/HCC; vacinação e antivirais de supressão.
+- **HCV:** vírus RNA envelopado (Flaviviridae), transmissão predominantemente sanguínea, com elevada possibilidade de cronificação sem tratamento; antivirais de ação direta geralmente curam infecção virológica ativa.
+- **HDV:** agente RNA **dependente do HBsAg** para montagem/propagação; ocorre somente com infecção HBV concomitante; pode agravar rapidamente prognóstico.
+- **HEV:** vírus RNA associado principalmente à transmissão fecal–oral em áreas específicas e zoonótica/alimentar em outras; geralmente agudo, com risco especial na gestação para alguns genótipos e de persistência em imunossuprimidos em contextos selecionados.
+
+**Não usar “todas as hepatites têm vacina no PNI” como mnemônico.** Há vacinas amplamente usadas para A e B, porém não existe vacinação rotineira contra C e D. **Prevenir HBV também previne HDV**, porque ele depende do antígeno de superfície de HBV.
+
+### 17.2. Por que o sistema imune causa tanto dano?
+Em HAV, HBV e outros, parte da lesão hepatocelular decorre da resposta imune do hospedeiro a hepatócitos infectados. Linfócitos T citotóxicos, citocinas e sinais inflamatórios podem levar a necroinflamação; virulência, duração e capacidade de escape imunológico modulam severidade. Portanto, **um vírus persistente com ALT normal não prova ausência de replicação ou ausência de risco de longo prazo**, especialmente se fibrose avançada coexistir.
+
+A infecção HBV estabelece **cccDNA** no núcleo de hepatócitos, reservatório episomal que persiste mesmo quando HBV-DNA sanguíneo fica indetectável sob tenofovir/entecavir. A integração de sequências virais ao genoma do hospedeiro também pode contribuir para carcinogênese. Por isso, supressão do HBV não equivale automaticamente a “cura esterilizante”, e acompanhamento de risco de HCC pode continuar.
+
+**HCV** produz replicação no citoplasma, sem fase de integração de DNA comparável ao HBV; os antivirais de ação direta podem erradicar RNA detectável de forma sustentada e alcançar **resposta virológica sustentada (RVS)**, conceito de cura virológica. Todavia cirrose preexistente pode manter risco residual de HCC/descompensação após cura; alta da terapia antiviral não significa abandonar vigilância hepatológica em toda pessoa.
+
+### 17.3. Por que a idade da infecção importa tanto em HBV?
+A infecção HBV adquirida perinatalmente tem probabilidade elevada de persistência, enquanto adultos imunocompetentes frequentemente eliminam o vírus após quadro agudo. A resposta imune imatura, as interações com tolerância relativa a antígenos e fatores do hospedeiro ajudam explicar diferença. Isso justifica **vacina na maternidade**, HBIG em recém-nascidos expostos e rastreio da gestante, que muitas vezes está assintomática.
+
+Uma gestante HBsAg positiva com ALT normal pode ter carga viral alta e risco de transmissão. Logo, “não sente nada, portanto RN está protegido” é erro de raciocínio. Vacina materna durante gestação não substitui esquema profilático do recém-nascido exposto.
+
+## 18. Hepatite aguda: como distinguir inflamação intensa de falência de função
+
+### 18.1. AST/ALT são marcadores de lesão, não medidores isolados de função
+ALT e AST são enzimas intracelulares liberadas quando há injúria hepatocelular. **Elevação de ALT 3.000 U/L indica necroinflamação importante, mas não mede automaticamente a capacidade de síntese de fatores de coagulação**. Em falência hepática avançada, transaminases podem até diminuir enquanto INR, bilirrubina, encefalopatia e lactato pioram por perda de massa hepatocitária funcionante.
+
+**Bilirrubina:** conjugada e não conjugada refletem processamento e excreção, mas alteração pode derivar de hemólise, doenças biliares e processos genéticos não virais.  
+**INR/tempo de protrombina:** mede componentes dependentes de síntese hepática, mas também é influenciado por vitamina K, anticoagulantes e consumo sistêmico.  
+**Albumina:** reflete síntese de prazo maior, nutrição/perdas e inflamação; pode ser normal em hepatite aguda grave e baixa por causas não hepáticas.  
+**Glicose, lactato, amônia e função renal:** dão pistas adicionais de gravidade em falência, mas amônia isolada não substitui exame neurológico.
+
+### 18.2. Icterícia não aparece em toda hepatite
+Pródromo com fadiga, náuseas, anorexia, mialgias e desconforto abdominal pode preceder urina escura/hipocolia. Algumas pessoas apresentam apenas ALT elevada ou triagem positiva assintomática. A icterícia aparece quando produção/processamento/excreção de bilirrubina se desequilibram o bastante para torná-la clinicamente visível. Crianças com HAV podem ter infecção subclínica e ainda transmitir por via fecal–oral.
+
+A **ausência de febre** não diferencia hepatite viral de todas as outras causas; febre pode ocorrer, e arboviroses podem elevar AST/ALT. Uma história direcionada de exposição, drogas, viagens, transmissão sexual e transfusões/agulhas é indispensável.
+
+### 18.3. Falência hepática aguda: mais importante que dizer “transaminases altíssimas”
+Em pessoa sem doença hepática crônica conhecida, desenvolvimento de **coagulopatia importante (por exemplo, INR ≥1,5) e encefalopatia** em contexto de lesão hepática aguda pode indicar insuficiência hepática aguda, segundo definições usuais de adulto e temporalidade correspondente. **Na pediatria, critérios específicos podem admitir falência hepática com alteração importante do INR mesmo sem encefalopatia**, devido à dificuldade de reconhecer alterações neuropsíquicas. Não transpor critério adulto rigidamente ao lactente.
+
+A conduta inclui monitorização intensiva, exclusão de intoxicação por paracetamol e hepatites virais específicas, avaliação de outras etiologias tratáveis, glicemia seriada, renal/eletrólitos, complicações infecciosas, edema cerebral e **avaliação precoce de centro transplantador**, conforme gravidade. Não esperar um “pico máximo” de ALT para ligar à equipe de transplante.
+
+### 18.4. Hepatite viral versus necrose isquêmica versus lesão medicamentosa
+| Pista | Viral aguda | Isquêmica/hipóxica | Medicamentosa (DILI) | Obstrução biliar |
+|---|---|---|---|---|
+| Contexto | Exposição e evolução de dias/semanas | Choque, hipoperfusão, IC grave | Nova droga, fitoterápico ou superdose | Dor biliar, febre/colangite, US dilatação |
+| AST/ALT | Variável, às vezes >1000 | Frequentemente muito altas e ascensão abrupta | Hepatocelular, mista ou colestática | Pode haver pico alto transitório |
+| LDH | Sem padrão diagnóstico único | Pode ser muito elevada | Variável | Variável |
+| INR/consciência | Marcadores fundamentais de gravidade | Podem piorar com choque | Podem indicar falência | Gravidade conforme sepse/colestase |
+| Testes | Sorologias e NAT adequadas | História hemodinâmica | Cronologia/causalidade, paracetamol | Imagem e enzimas canaliculares |
+
+**Atenção:** ALT >1000 não comprova vírus. Paracetamol, isquemia e lesão hepatocelular por obstrução transitória também podem atingir tais valores. Em suspeita de intoxicação por paracetamol, tratamento com N-acetilcisteína é tempo-dependente sob protocolos toxicológicos, enquanto investigar hepatites em paralelo.
+
+## 19. Sorologias do HBV: aprender a montar a história imunológica
+
+### 19.1. O significado de cada marcador
+**HBsAg:** antígeno de superfície; sua presença sugere infecção atual HBV, exigindo avaliação de contexto/confirmatórios.  
+**Anti-HBs:** anticorpo contra antígeno de superfície; indica resposta protetora em diferentes contextos, pós-vacina ou pós-infecção resolvida, conforme anti-HBc.  
+**Anti-HBc total:** marcador de contato natural (IgM + IgG), **não produzido pela vacina recombinante HBV isolada**.  
+**Anti-HBc IgM:** tende a aparecer na infecção aguda e na fase de janela; **pode reaparecer/elevar em reativação ou agudização importante de HBV crônico**, portanto sozinho não estabelece primoinfecção em todos os casos.  
+**HBeAg:** frequentemente associado à replicação viral importante, porém negativo não exclui replicação.  
+**Anti-HBe:** pode indicar mudança de perfil replicativo, mas também ocorre com infecção por variantes pré-core/core promoter e HBV-DNA ainda elevado.  
+**HBV-DNA:** mede vírus circulante e é central na indicação/monitoramento de terapia, investigação de infecção oculta e risco de transmissão.
+
+### 19.2. Tabela de perfis com raciocínio
+| HBsAg | Anti-HBc total | Anti-HBs | Hipótese principal | Próximo raciocínio |
+|---|---|---|---|---|
+| Negativo | Negativo | Negativo | Suscetível (ou muito precoce) | Conferir vacina/exposição recente |
+| Negativo | Negativo | Positivo | Resposta à vacinação | Anti-HBc não aparece por vacina HBV isolada |
+| Negativo | Positivo | Positivo | Infecção passada resolvida | Atenção a reativação sob imunossupressão |
+| Positivo | Positivo | Negativo | Infecção atual | IgM, HBV-DNA e duração para aguda versus crônica |
+| Negativo | Positivo | Negativo | Anti-HBc isolado | Falso positivo, infecção antiga com anti-HBs reduzido, janela ou HBV oculto |
+| Positivo | Positivo | Positivo | Perfil atípico que requer avaliação | Não classificar automaticamente cura ou vacina |
+
+**HBsAg negativo isolado após exposição recente** não exclui janela muito precoce antes de soroconversão; repetição/NAT pode ser necessária em cenários selecionados. A leitura sempre precisa da data de exposição e imunidade prévia.
+
+### 19.3. Anti-HBc isolado merece investigação orientada por risco, não mnemônico fixo
+O resumo do Drive sugere alternativas como “revacinar e PCR se não responder” de maneira genérica. Na prática, a decisão depende de antecedentes, imunossupressão planejada, região de prevalência, função hepática e suspeita de infecção recente. Pode refletir anticorpo remoto após queda de anti-HBs, falso positivo, janela de infecção aguda ou **HBV oculto** com DNA eventualmente detectável apesar de HBsAg negativo.
+
+**Cenário:** paciente anti-HBc total isolado iniciará rituximabe. Não basta dizer “não tem HBsAg, então não há risco”. A **reativação do HBV** pode ocorrer por persistência de cccDNA/reservatórios mesmo após resolução sorológica; o protocolo brasileiro de HBV estratifica risco e necessidade de monitoramento ou profilaxia antiviral com base no medicamento e no perfil viral.
+
+### 19.4. A janela imunológica do HBV
+Após infecção recente, HBsAg pode desaparecer antes que anti-HBs se torne detectável. Nesse intervalo, o **anti-HBc IgM** pode sustentar diagnóstico de infecção aguda. Contudo, não usar anti-HBc IgM como “exame absolutamente exclusivo da janela”, pois também pode aparecer em fase aguda já HBsAg positiva e em certas agudizações de hepatite B crônica.
+
+**Questão aplicada:** pessoa com icterícia, HBsAg negativo, anti-HBs negativo, anti-HBc IgM positivo, história recente de exposição. Qual hipótese? Janela de infecção aguda HBV é plausível; repetir marcadores, verificar HBV-DNA e excluir falsos positivos/diferenciais. A resposta clínica não é “vacinação completa”.
+
+### 19.5. HBeAg negativo não é “vírus inativo”
+Mutantes pré-core/core promoter podem reduzir produção de HBeAg sem impedir replicação do HBV. Um paciente HBeAg negativo e anti-HBe positivo pode ter HBV-DNA alto e ALT elevada ou fibrose progressiva. Por isso, classificação e decisão terapêutica exigem **HBV-DNA, ALT seriada, fibrose, comorbidades e história familiar**, não só HBeAg.
+
+A expressão “portador inativo” merece cautela porque atividade biológica pode mudar. Melhor descrever fase clínica e dados disponíveis no acompanhamento.
+
+## 20. HBV crônico: quem precisa de tratamento e o que significa resposta
+
+### 20.1. A meta clínica vai além de normalizar ALT
+As metas são reduzir replicação, necroinflamação, progressão de fibrose, descompensação, transmissão e risco de hepatocarcinoma. A supressão sustentada de HBV-DNA por análogos nucleos(t)ídicos **não garante eliminação de cccDNA**, e tratamentos podem durar anos ou ser prolongados/indefinidos em situações específicas. A adesão é central: suspensão inadequada pode desencadear agudização, inclusive grave.
+
+### 20.2. Avaliação inicial de infecção crônica
+Após confirmar infecção, organizar:
+1. Tempo conhecido de HBsAg positivo e fatores de aquisição.
+2. ALT/AST, bilirrubinas, albumina, INR, plaquetas e função renal.
+3. HBV-DNA quantitativo, HBeAg/anti-HBe e, quando indicado, investigação anti-HDV.
+4. Fibrose por elastografia e/ou escores não invasivos, reconhecendo limitações em inflamação ativa.
+5. Risco de cirrose/HCC por idade, origem, comorbidades, antecedentes familiares e doença avançada.
+6. Testagem HIV/HCV/IST quando aplicável e discussão de vacinação de contatos.
+7. Exposições: álcool, doença metabólica, medicamentos, imunossupressores e possibilidade de gravidez.
+
+### 20.3. Os critérios de tratamento são multifatoriais
+O PCDT brasileiro de HBV e coinfecções foi alterado em julho/2024, enquanto a OMS publicou ampliação de elegibilidade em 2024, incluindo adolescentes, cirrose/fibrose e grupos específicos. O enunciado “tratar se ALT duas vezes normal e DNA acima de X” é insuficiente para todos, pois **cirrose pode indicar tratamento com HBV-DNA detectável mesmo se ALT normal**, e há critérios para risco especial e história familiar.
+
+**Fatores relevantes:** cirrose compensada/descompensada, atividade ALT e HBV-DNA, fibrose significativa, idade, comorbidades, imunossupressão, coinfecções, gravidez e risco de HCC. Os limiares precisos por fase/faixa etária devem ser copiados **do texto normativo vigente** após revisão integral, não deduzidos de esquema do Drive.
+
+### 20.4. Tenofovir e entecavir: farmacologia e vigilância
+**Tenofovir disoproxil fumarato (TDF):** análogo nucleotídico que inibe a polimerase/reverse transcriptase viral; alta barreira genética à resistência e uso importante em HBV, inclusive em gestação indicada e HIV/HBV em regimes específicos. Pode haver toxicidade renal tubular e alterações ósseas em pacientes suscetíveis, exigindo avaliação da função renal, fatores de risco e outros fármacos.
+
+**Tenofovir alafenamida (TAF):** pró-fármaco de tenofovir com exposição plasmática distinta e efeitos renais/ósseos potencialmente favoráveis em determinados cenários, mas disponibilidade/regulamentação e critérios de SUS são específicos; não assumir que é padrão universal para todas as pessoas com HBV.
+
+**Entecavir:** análogo nucleosídico com atividade potente contra HBV, com ajuste renal e nuances de resistência em pessoas previamente expostas à lamivudina. Em **coinfecção HIV não tratada com esquema antirretroviral completo**, monoterapia com entecavir pode selecionar resistência no HIV, motivo para avaliação por infectologia e ART adequado.
+
+**Interferon peguilado:** imunomodulação em subgrupo selecionado, duração finita em protocolos específicos, contraindicações/limitações por doença psiquiátrica, descompensação hepática e condições autoimunes, além de efeitos adversos significativos. Não usar em cirrose descompensada como se fosse opção de rotina.
+
+### 20.5. Acompanhamento não é repetir PCR indefinidamente sem objetivo
+Monitorar adesão, ALT, HBV-DNA, função renal, sinais de cirrose/descompensação e efeitos adversos conforme esquema. Em pacientes com fibrose avançada/cirrose, **vigilância para HCC** geralmente utiliza ultrassom hepático periódico (com ou sem AFP conforme diretriz), muitas vezes a cada seis meses, e atenção a varizes/complicações conforme critérios de hepatologia. A necessidade de HCC surveillance pode persistir mesmo após supressão viral ou eventual perda de HBsAg, dependendo do risco.
+
+**Não usar ALT normal como “alta da hepatologia”** em cirrótico. Mudança de HBV-DNA, nódulo hepático novo, plaquetopenia progressiva e descompensação são situações distintas que exigem resposta dirigida.
+
+## 21. Transmissão vertical do HBV: combinar estratégias, não escolher apenas uma
+
+### 21.1. O pré-natal identifica risco invisível
+O MS recomenda triagem com HBsAg na gestação; teste reagente demanda confirmação/estadiamento e planejamento neonatal. Gestantes HBsAg positivas podem ser totalmente assintomáticas e transmitir ao bebê, sobretudo com HBV-DNA elevado. O fato de já haver plano de vacina neonatal **não elimina** a necessidade de classificar risco materno.
+
+### 21.2. Quais intervenções fazem diferença?
+- **Vacina HBV ao recém-nascido logo após nascimento**, idealmente nas primeiras 24 horas e de preferência o mais cedo possível conforme PNI.
+- **Imunoglobulina humana anti-HB (IGHAHB)** nos expostos conforme norma brasileira, preferencialmente nas primeiras 24 horas pós-parto, muitas instituições visam primeiras 12 horas. Vacina e IGHAHB atuam por mecanismos complementares.
+- **Tenofovir materno** em gestantes elegíveis com viremia elevada, em geral a partir do final do segundo/início do terceiro trimestre conforme orientação nacional. OMS 2024 recomenda TDF para HBsAg positivas com HBV-DNA ≥200.000 UI/mL ou HBeAg positivo como substituto do teste viral em cenários apropriados, preferencialmente desde o segundo trimestre; no Brasil o MS faz referência a início a partir do **terceiro trimestre** quando critérios PCDT atendidos. **Não apagar a divergência entre documentos internacionais e operação brasileira.**
+- **Conclusão do esquema infantil** e avaliação pós-vacinal em filhos expostos com testes e época apropriados, para documentar proteção ou infecção.
+
+**Erro grave de ensino:** “vacina ao nascer resolve qualquer exposição” ou “tenofovir elimina necessidade de HBIG neonatal”. O objetivo é utilizar barreiras complementares.
+
+### 21.3. O que não inferir da sorologia da gestante?
+HBsAg reagente comprova necessidade de avaliação, mas não diz sozinho se HBV-DNA ≥200.000 UI/mL. HBeAg tem valor de risco, mas existe infecção replicativa HBeAg negativa. ALT normal não significa baixo risco vertical. E uma gestante anti-HBs positiva por vacinação, anti-HBc negativa, é situação muito distinta de HBsAg positiva.
+
+### 21.4. Exemplo de caso calculado
+Gestante com 29 semanas, HBsAg reagente, HBV-DNA de 780.000 UI/mL, sem descompensação. **Problema:** viremia alta com risco de transmissão vertical. **Raciocínio:** acima do limiar de 200.000 UI/mL usado pela OMS e frequentemente pelos protocolos, avaliar TDF com equipe do pré-natal especializado, contraindicações e função renal; agendar vacina e IGHAHB para bebê, registrar na maternidade e plano de seguimento. **Não tratar este exemplo como prescrição automática de dose ou momento sem conferência nacional e avaliação individual.**
+
+## 22. HBV e imunossupressão: a reativação é complicação que provas adoram
+
+### 22.1. Reativação não é necessariamente reinfecção
+Mesmo após resolução sorológica com HBsAg negativo/anti-HBc positivo, material genético HBV pode persistir. Inibição imune por fármacos e algumas doenças permite retomada da replicação. Quando imunidade se recupera ou a inflamação emerge, ALT pode subir de modo importante e provocar falência hepática. Por isso, uma pessoa “curada” sorologicamente pode ter risco de reativação em situação específica.
+
+### 22.2. Triar ANTES de rituximabe, quimioterapia e transplante
+O PCDT brasileiro de HBV indica rastreio de **HBsAg, anti-HBc total e anti-HBs** em candidatos a terapia imunossupressora/quimioterapia/transplante de órgão sólido. Anti-HBs positivo não autoriza ignorar anti-HBc positivo em todos os cenários, e HBsAg isolado perde infecções pregressas de risco. O risco é modulado por agente (especialmente anti-CD20), intensidade/duração, perfil virológico e transplante.
+
+**Exemplo:** pessoa com anti-HBc total positivo e HBsAg negativo fará anti-CD20. Necessita avaliação de HBV-DNA e planejamento de profilaxia/monitorização apropriado ao risco; não assumir “HBsAg negativo = nenhum problema”. Antiviral profilático, momento de início e duração após imunossupressão variam e exigem protocolo.
+
+### 22.3. Como usar uma matriz sem decorar centenas de imunossupressores
+| Fator | Aumenta preocupação? | Implicação |
+|---|---|---|
+| HBsAg positivo | Sim | Infecção atual, quantificar HBV-DNA/avaliar tratamento ou profilaxia |
+| Anti-HBc positivo com HBsAg negativo | Risco residual | Considerar profilaxia ou monitoramento conforme fármaco |
+| Anti-CD20/rituximabe | Alto risco em perfis relevantes | Planejamento especializado e vigilância prolongada |
+| TCTH/transplante | Perfil complexo | Protocolo transplantador/centro especializado |
+| Antimetabólito isolado em menor intensidade | Frequentemente risco menor | Não dispensa triagem e avaliação individual |
+| ALT sobe durante/imediatamente após imunossupressão | Pode ser reativação | HBV-DNA, outros vírus, DILI e causas concorrentes |
+
+**Pegadinha:** o risco pode persistir após término da quimioterapia e o plano de monitorização não termina automaticamente no último dia de infusão.
+
+## 23. Hepatite C: anticorpo não é viremia e RVS não é imunidade
+
+### 23.1. Rastreamento e confirmação
+Anti-HCV reagente indica exposição/anticorpos, mas não prova vírus replicando hoje. **HCV-RNA detectável** confirma infecção ativa, salvo nuances técnicas e tempo de exposição. Anti-HCV pode permanecer reagente por anos ou toda a vida após cura espontânea ou virológica; repetir anticorpos como “teste de cura” não responde à pergunta correta.
+
+**Exemplo:** pessoa terminou antivirais e anti-HCV permanece positivo: não significa necessariamente falha. Avaliar HCV-RNA em momento apropriado após tratamento, usualmente 12 semanas, para estabelecer **RVS12**.
+
+### 23.2. Infecção aguda antes da soroconversão
+Após exposição recente, HCV-RNA pode ser detectável antes de surgirem anticorpos. Pessoa imunossuprimida também pode ter resposta sorológica alterada. Em acidente com material biológico, avaliar fonte e exposto conforme protocolo, com janelas de teste; um anti-HCV negativo muito precoce não descarta exposição. **Não existe imunoglobulina ou vacina eficaz de rotina pós-exposição para HCV**, diferentemente da profilaxia HBV.
+
+### 23.3. Estratificação de fibrose é decisão terapêutica e de seguimento
+Investigar cirrose antes de tratar: história de descompensação, exame, plaquetas, ultrassom/elastografia quando disponíveis e escores não invasivos como FIB-4/APRI conforme validação. A presença de cirrose compensada versus **descompensada** altera escolha/segurança de antivirais, acompanhamento de hipertensão portal e risco de HCC.
+
+**FIB-4** usa idade, AST, ALT e plaquetas, com limiares dependentes de população; inflamação aguda e plaquetopenia de outra causa podem distorcer. Não tratar um escore como exame histológico definitivo em adolescente, gestante ou crise aguda sem dados de validação.
+
+### 23.4. Por que antivirais de ação direta funcionam?
+Antivirais de ação direta (DAA) inibem proteínas essenciais do HCV, como **NS3/4A (protease)**, **NS5A (complexo de replicação)** e **NS5B (polimerase)**. Combinações com barreira a resistência e diferentes alvos conseguem taxas muito altas de cura virológica em pacientes elegíveis. Contudo, regime e duração dependem de cirrose, tratamento prévio, função renal/hepática, interações, gestação/idade e versão **PCDT SUS 2026**.
+
+**Sofosbuvir** inibe NS5B; **velpatasvir**, NS5A; **glecaprevir**, NS3/4A; **pibrentasvir**, NS5A. Este mapa é farmacológico, não receita; o SUS define quais combinações estão disponíveis/indicadas em cada perfil. **Inibidores de protease NS3/4A são geralmente contraindicados em cirrose descompensada**, pois exposição e hepatotoxicidade podem aumentar; não escolher glecaprevir/pibrentasvir apenas por “esquema curto” em Child-Pugh B/C.
+
+### 23.5. O que checar antes de fornecer DAA?
+1. Confirmar HCV-RNA atual, história de tratamento e presença de cirrose/descompensação.
+2. Avaliar função hepática, renal e hemograma conforme protocolo, incluindo interações relevantes.
+3. Investigar HBsAg/anti-HBc/anti-HBs porque **reativação HBV pode ocorrer durante ou após terapia de HCV**, especialmente em coinfecção.
+4. Revisar HIV, outras coinfecções e medicações: antiácidos/IBPs podem afetar alguns regimes, rifampicina/antiepilépticos indutores e certos antiarrítmicos têm interações graves.
+5. Verificar possibilidade de gestação, planejamento reprodutivo e acesso às orientações específicas de cada regime.
+6. Planejar acompanhamento e teste pós-terapia para RVS, além de seguimento de doença avançada.
+
+**Amiodarona e sofosbuvir** podem se associar a bradicardia sintomática grave em certas combinações; investigar e consultar bases de interações confiáveis em vez de supor que DAA não interagem por serem “modernos”.
+
+### 23.6. Curar HCV não significa proteger contra reinfecção
+A RVS representa eliminação sustentada detectável em exames apropriados, mas **não confere imunidade esterilizante contra nova exposição**. Usuários de drogas injetáveis, populações com exposições recorrentes e pessoas em risco devem receber redução de danos, orientação e eventual testagem por **RNA** em exposições subsequentes; anti-HCV pode continuar reagente.
+
+### 23.7. Após RVS, o fígado ainda pode precisar de vigilância
+Em pessoa sem fibrose avançada e sem outras condições hepáticas, cura costuma reduzir necessidade de seguimento hepatológico especializado contínuo. Mas cirrose preexistente demanda rastreio de HCC, avaliação de varizes/hipertensão portal e risco metabólico/álcool. A decisão não se baseia somente em ALT normal ou HCV-RNA negativo.
+
+## 24. Hepatite D: o HBV que a torna possível e o que se perde no diagnóstico
+
+### 24.1. Coinfecção versus superinfecção
+**Coinfecção HBV + HDV:** aquisição simultânea, quadro agudo frequentemente mais intenso, mas chance de eliminação de ambos pode ser distinta da superinfecção.  
+**Superinfecção HDV em paciente já portador de HBV:** pode causar deterioração/agudização e curso crônico agressivo, com maior risco de cirrose/descompensação em algumas populações.
+
+O quadro de hepatite severa ou progressiva em portador de HBV não deve ser automaticamente interpretado como “reativação B”; testar HDV e outras causas conforme risco, região e recomendações de OMS 2024/PCDT.
+
+### 24.2. Anticorpo e RNA respondem perguntas diferentes
+Anti-HDV sugere contato/infecção e pode apoiar triagem, enquanto **HDV-RNA** identifica replicação quando disponível/indicado. A interpretação depende de HBsAg, história de infecção e acesso ao exame. No Brasil, a Região Amazônica tem relevância histórica e epidemiológica, mas não restringir testagem apenas a moradores atuais da Amazônia se houver migração, riscos ou diretriz ampliada.
+
+### 24.3. Por que análogo de HBV não é cura do Delta?
+A supressão da polimerase do HBV por tenofovir/entecavir reduz HBV-DNA, mas **não elimina necessariamente HDV**, que utiliza mecanismos próprios de replicação e HBsAg para empacotamento. Paciente pode ter HBV-DNA baixo e hepatite Delta ativa com HDV-RNA detectável. Há terapias especializadas e investigações para HDV que dependem de disponibilidade/regulação; não inventar acesso SUS a fármaco estrangeiro sem comprovação.
+
+**Pulo:** vacina HBV previne entrada de HDV em pessoas suscetíveis; isso é prevenção indireta poderosa.
+
+## 25. Hepatites A e E: fecal–oral não significa risco idêntico
+
+### 25.1. HAV
+A infecção por HAV é tipicamente aguda e autolimitada, sem cronificação persistente. Em adulto pode cursar com icterícia/alteração funcional mais exuberantes, e pessoas com doença hepática crônica prévia podem sofrer doença grave. O diagnóstico agudo geralmente é apoiado por **anti-HAV IgM** em contexto apropriado; anti-HAV IgG isolado pode representar vacinação ou infecção passada.
+
+**Saúde coletiva:** higiene, água/saneamento, vacinação e investigação de surtos. Após exposição, medidas de profilaxia pós-exposição com vacina/imunoglobulina em grupos específicos e janela apropriada dependem de protocolo nacional, não de “esperar icterícia”.
+
+### 25.2. HEV
+HEV apresenta genótipos com diferenças epidemiológicas: transmissão hídrica fecal–oral importante em surtos de genótipos 1/2; formas zoonóticas (como 3/4) associadas a produtos animais contaminados e risco de persistência em imunossuprimidos em contextos específicos. O diagnóstico envolve sorologia e, quando indicado/disponível, HEV-RNA, com desempenho variável de testes.
+
+**Gestação:** certos genótipos de HEV podem causar hepatite grave e insuficiência hepática, especialmente em gestantes expostas em contextos epidêmicos. Não usar “HAV e HEV são idênticos porque água contaminada” como estratégia de prova.
+
+**Imunossupressão/transplante:** HEV pode persistir em algumas pessoas e exigir avaliação especializada, redução de imunossupressão quando possível e terapia em casos selecionados. Não escolher esquema antiviral sem protocolização.
+
+## 26. Diagnósticos diferenciais por padrão de enzimas
+
+### 26.1. Hepatocelular, colestático e misto
+**Hepatocelular:** ALT/AST predominam sobre elevação de fosfatase alcalina (FA); causas incluem vírus, DILI, isquemia, hepatite autoimune e doença metabólica.  
+**Colestático:** FA/GGT e bilirrubina conjugada podem predominar; diferenciar obstrução extra-hepática, colangites, DILI colestática e doenças crônicas das vias biliares.  
+**Misto:** ambos; não é automaticamente “duas doenças”, mas pode exigir investigação simultânea.
+
+Um índice conhecido como **R** divide ALT em múltiplos do limite superior pelo correspondente múltiplo da FA. Usado em DILI, R ≥5 sugere padrão hepatocelular, R ≤2 colestático e entre 2–5 misto, com limites da ferramenta; não aplicá-lo como diagnóstico etiológico de hepatite viral.
+
+### 26.2. O que muda quando AST é maior que ALT?
+AST está em fígado e outros tecidos, inclusive músculo. Exercício intenso/rabdomiólise podem elevar AST, com CK elevada; álcool frequentemente altera relação AST/ALT, mas nenhuma razão isolada comprova etiologia alcoólica. Isquemia e cirrose também modificam padrões. Avaliar CK e contexto quando predomina AST e não há outros sinais hepáticos.
+
+### 26.3. Ferritina e autoimunidade não são testes de “exclusão do vírus”
+Ferritina pode subir como reagente de fase aguda, não confirmando hemocromatose por si só. Autoanticorpos de baixa titulação podem aparecer sem doença autoimune definida. Em lesão hepática crônica, investigar causas concomitantes (esteatose metabólica, álcool, autoimune, medicações), sem atribuir toda alteração ao HBV/HCV detectado.
+
+## 27. Fluxos de decisão integrados para APS, pronto-socorro e hepatologia
+
+### 27.1. Adulto com AST/ALT elevadas e exame estável
+**Passo 1:** padrão hepatocelular/colestático/misto, gravidade e sintomatologia, medicações/suplementos, álcool, exposições e história.  
+**Passo 2:** sorologias direcionadas HAV IgM, HBsAg, anti-HBc IgM/total, anti-HCV ± RNA, HEV/HDV conforme contexto, e outras causas.  
+**Passo 3:** avaliar função sintética, bilirrubina, INR, albumina, plaquetas e exame clínico; não equiparar nível ALT a risco.  
+**Passo 4:** se doença crônica, estadiar fibrose e risco de HCC; se aguda, planejar monitorização e sinais de deterioração.  
+**Passo 5:** prevenção e rastreio de contatos, vacinação de suscetíveis, notificação conforme normas vigentes.
+
+### 27.2. HBsAg positivo na triagem de UBS
+Confirmar/classificar, HBV-DNA, ALT/fibrose e comorbidades; avaliar gravidez, HIV/HCV e HDV, imunossupressão, histórico familiar de HCC. Planejar vacina a contatos suscetíveis, avaliar tratamento segundo PCDT e retorno longitudinal. **Não chamar de “portador sadio, retorno em cinco anos” só porque ALT inicial é normal.**
+
+### 27.3. Anti-HCV positivo em usuário de drogas injetáveis
+Solicitar RNA para confirmar infecção ativa, orientar redução de danos e pesquisa de coinfecções; não presumir viremia e não negar tratamento por uso atual de drogas. Se HCV-RNA positivo, avaliar DAA conforme PCDT/risco de cirrose e apoiar adesão/reinfecção. **Anticorpo reagente não identifica falha terapêutica após cura prévia.**
+
+### 27.4. Gestante com HBV
+Exame positivo → HBV-DNA/care stage e consulta pré-natal especializada → avaliar elegibilidade TDF e condições maternas → avisar maternidade sobre vacina + IGHAHB do RN e seguimento → não perder doses de rotina. A prevenção da transmissão vertical é **linha de cuidado**, não intervenção única.
+
+### 27.5. Paciente com cirrose HCV curada
+Checar se houve RVS12 e status de fibrose, manter vigilância HCC/hipertensão portal conforme risco, orientar álcool/comorbidades, avaliar necessidade de vacinas HAV/HBV conforme sorologias. Não “zerar histórico” porque HCV-RNA agora é negativo.
+
+## 28. Cinco casos clínicos avançados — diagnóstico, investigação, conduta
+
+### Caso 5 — HBV com anti-HBc isolado antes de anti-CD20
+**Apresentação:** homem de 52 anos com linfoma iniciará rituximabe; HBsAg negativo, anti-HBs negativo, anti-HBc total positivo, ALT normal.  
+**Hipóteses:** infecção HBV passada com desaparecimento de anti-HBs, HBV oculto ou resultado falso positivo.  
+**Raciocínio:** reativação pode ocorrer em HBsAg negativo anti-HBc positivo durante anti-CD20, e ALT normal não protege.  
+**Exames:** HBV-DNA, confirmação de sorologia, função hepática e estratificação de risco por PCDT.  
+**Conduta:** hepatologia/infectologia + oncologia para profilaxia antiviral/monitoramento adequado antes de tratamento, sem atrasar terapia oncológica por burocracia evitável.  
+**Por que importa:** reconhecer risco onde teste HBsAg isolado pode enganar.
+
+### Caso 6 — gestante HBsAg positiva sem sintomas
+**Apresentação:** gestante 30 semanas, HBsAg reagente, HBeAg positivo, HBV-DNA 600.000 UI/mL, ALT normal, função renal preservada.  
+**Hipóteses:** HBV em fase de replicação com risco de transmissão vertical.  
+**Raciocínio:** carga viral acima de 200.000 UI/mL eleva preocupação mesmo sem elevação de ALT.  
+**Exames:** avaliação de função hepática/renal e risco clínico, sorologias pertinentes.  
+**Conduta:** considerar TDF com equipe pré-natal conforme PCDT e garantir HBIG + vacina do RN ao nascer, série vacinal e testes pós-vacinais.  
+**Por que importa:** prevenção é combinação de estratégias e não depende da presença de icterícia materna.
+
+### Caso 7 — HCV curado, anticorpo continua positivo
+**Apresentação:** mulher de 49 anos tratou HCV com DAA há dois anos e apresenta anti-HCV reagente, HCV-RNA indetectável em exame atual; histórico de cirrose compensada.  
+**Hipóteses:** cicatriz sorológica pós-infecção com resposta sustentada, não recaída demonstrada.  
+**Raciocínio:** anticorpos persistem; PCR é teste de viremia. Cirrose preexistente mantém risco residual HCC.  
+**Exames:** avaliação hepatológica, ultrassom conforme vigilância HCC, plaquetas/função hepática, RNA conforme novas exposições/indicação.  
+**Conduta:** tranquilizar sobre anti-HCV isolado, manter seguimento de cirrose/risco e orientar prevenção de reinfecção.  
+**Por que importa:** não retratar pessoa curada só por anticorpo positivo.
+
+### Caso 8 — HBV com HBeAg negativo e DNA alto
+**Apresentação:** homem de 38 anos HBsAg positivo há 5 anos, HBeAg negativo, anti-HBe positivo, HBV-DNA 240.000 UI/mL e ALT persistente elevada; elastografia sugere fibrose moderada.  
+**Hipóteses:** hepatite B crônica HBeAg negativa **replicativa**, inclusive variante pré-core, com fibrose.  
+**Raciocínio:** anti-HBe não garante baixa replicação; DNA e fibrose indicam risco.  
+**Exames:** estadiamento completo, comorbidades, HIV/HCV/HDV, critérios PCDT.  
+**Conduta:** avaliação de tratamento antiviral conforme PCDT e acompanhamento regular, rastreio de HCC quando risco.  
+**Por que importa:** não confundir soroconversão de “e” com cura.
+
+### Caso 9 — AST/ALT elevadas e INR piorando
+**Apresentação:** mulher de 27 anos com náuseas, ALT 2.900 U/L, AST 2.400 U/L, INR 2,3 e sonolência progressiva após quadro febril; tomou paracetamol em doses incertas.  
+**Hipóteses:** falência hepática aguda por toxicidade medicamentosa, hepatite viral grave ou outra etiologia.  
+**Raciocínio:** gravidade decorre de coagulopatia e encefalopatia, não só ALT; intoxicação por paracetamol é tratável se reconhecida.  
+**Exames:** avaliação intensiva da função sintética, glicose, lactato, renal, paracetamol sérico conforme tempo, sorologias e diagnóstico diferencial de falência.  
+**Conduta:** emergência, N-acetilcisteína conforme protocolo quando indicada, centro transplantador oportunamente, suporte e investigação paralela.  
+**Por que importa:** doença grave pode evoluir mesmo se transaminases começarem a cair.
+
+## 29. Oito questões autorais adicionais — alternativas analisadas
+
+### Questão 7 — anti-HBc isolado
+Paciente HBsAg negativo, anti-HBc total positivo, anti-HBs negativo vai iniciar rituximabe. Melhor conduta?
+A. Ignorar porque HBsAg é negativo. B. Avaliar HBV-DNA e risco de reativação, planejando profilaxia/monitorização conforme PCDT. C. Declarar vacinação completa. D. Usar interferon imediatamente em todos.  
+**Gabarito B.** Infecção passada pode reativar sob anti-CD20. **A** subestima risco. **C** vacina HBV isolada não produz anti-HBc. **D** não é esquema universal. **Pulo:** triagem tripla antes de imunossupressão.
+
+### Questão 8 — HBeAg
+Qual enunciado é correto?
+A. HBeAg negativo exclui replicação viral. B. Anti-HBe positivo significa ausência definitiva de HBV. C. HBV-DNA e atividade/fibrose continuam essenciais em HBV HBeAg-negativo. D. Não há hepatite B crônica se ALT normal.  
+**Gabarito C.** Variantes pré-core podem replicar. **A/B/D** generalizam incorretamente. **Pulo:** anti-HBe não substitui DNA.
+
+### Questão 9 — hepatite C após cura
+Pessoa com RVS documentada mantém anti-HCV reagente. O que significa?
+A. Anticorpos podem persistir apesar de cura virológica; HCV-RNA é exame para viremia. B. Falha obrigatória e nova terapia sem PCR. C. Imunidade total contra reinfecção. D. Necessidade de vacina HCV.  
+**Gabarito A.** Anti-HCV indica contato, não atividade. **B** não comprova recaída; **C** reinfecção é possível; **D** vacina HCV não disponível rotineiramente. **Pulo:** RNA mede vírus, não memória imune.
+
+### Questão 10 — cirrose descompensada e DAA
+Em HCV ativo com cirrose descompensada, qual cuidado fundamental?
+A. Escolher inibidor de protease NS3/4A indiscriminadamente. B. Ignorar Child-Pugh. C. Tratar sem avaliar interações e função hepática. D. Regime específico precisa respeitar contraindicações de inibidores de protease em cirrose descompensada, com especialista/PCDT.  
+**Gabarito D.** Fármacos de protease podem ser inadequados nessa condição. **A/B/C** oferecem risco. **Pulo:** DAA não é uma classe única intercambiável.
+
+### Questão 11 — transmissão vertical de HBV
+Gestante HBsAg reagente e HBV-DNA elevado. Melhor prevenção da transmissão vertical inclui:
+A. Só vacina materna após parto. B. Avaliar tenofovir materno quando elegível e garantir vacina + IGHAHB do RN, completando esquema e seguimento. C. Nenhuma medida se ALT normal. D. Vacina HCV no RN.  
+**Gabarito B.** Prevenção combinada. **A** insuficiente; **C** ignora DNA; **D** não existe. **Pulo:** carga viral e vacinação/HBIG no bebê.
+
+### Questão 12 — anticorpos HBV
+Pessoa com HBsAg negativo, anti-HBc total negativo, anti-HBs positivo após série documentada de vacinação apresenta perfil típico de:
+A. Infecção aguda HBV. B. Infecção oculta obrigatória. C. Resposta à vacina sem marcador de infecção natural. D. Superinfecção Delta.  
+**Gabarito C.** Vacina contra HBsAg induz anti-HBs, não anti-HBc. **A/B/D** não se deduzem. **Pulo:** anti-HBc é memória de contato natural.
+
+### Questão 13 — HDV
+Por que a imunização HBV previne também hepatite D?
+A. HDV depende de HBsAg para seu ciclo infeccioso; sem infecção HBV, HDV não se estabelece usualmente. B. Todas as vacinas HBV contêm antígeno Delta. C. HDV e HAV são o mesmo vírus. D. Tenofovir cura HDV em todos.  
+**Gabarito A.** Dependência biológica de HBsAg. **B/C/D** errados. **Pulo:** Delta só existe com B.
+
+### Questão 14 — lesão versus falência hepática
+Mulher com ALT 3.000 U/L e INR 2,5, sonolência, em avaliação de hepatite aguda. Qual atitude?
+A. Tranquilizar porque transaminases altas significam fígado “funcionando”. B. Esperar 30 dias sem reavaliar. C. Diagnosticar hepatite A pelo número ALT. D. Suspeitar falência hepática aguda e avaliar urgentemente suporte/transplante e causas tratáveis.  
+**Gabarito D.** Função sintética/neurológica define emergência. **A/B** perigosos; **C** não define etiologia. **Pulo:** INR + consciência importam.
+
+## 30. Matriz capítulo → competência → caso → questão
+| Competência | Seção da apostila | Caso(s) | Questão(s) |
+|---|---|---|---|
+| Distinguir hepatites A–E | 17, 24–25 | clínicos da primeira versão | 13 |
+| Separar lesão de falência funcional | 18 | 9 | 14 |
+| Interpretar HBsAg/anti-HBs/anti-HBc | 19 | 5, 6 | 7, 12 |
+| Reconhecer janela e anti-HBc isolado | 19.3–19.4 | 5 | 7 |
+| Avaliar replicação HBeAg-negativa | 19.5–20 | 8 | 8 |
+| Decidir risco de reativação | 22 | 5 | 7 |
+| Prevenir transmissão vertical | 21 | 6 | 11 |
+| Diferenciar anti-HCV de HCV-RNA | 23.1–23.2 | 7 | 9 |
+| Selecionar DAA considerando cirrose | 23.3–23.5 | 7 | 10 |
+| Entender RVS e vigilância HCC | 23.6–23.7 | 7 | 9 |
+| Reconhecer HDV | 24 | 8 e outro conforme diferencial | 13 |
+| Abordar hepatite aguda grave | 18, 26–27 | 9 | 14 |
+
+**Teste de consistência:** a matriz permite responder aos casos novos sem fontes externas na maior parte das decisões sindrômicas. Entretanto a escolha de **regime e dose por paciente** depende do PCDT integral vigente e de avaliação clínica. Por isso não emitir parecer de autossuficiência final.
+
+## 31. Fontes atualizadas após leitura comparativa
+7. Ministério da Saúde. **PCDT de Hepatite B e Coinfecções**, anexo alterado em 04/07/2024. https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-b-e-coinfeccoes/view
+8. Ministério da Saúde. **PCDT de Hepatite C e Coinfecções**, Portaria SCTIE/MS nº39, 20/07/2026 (publicada 21/07/2026). https://www.gov.br/saude/pt-br/assuntos/pcdt/h/hepatite-c-e-coinfeccoes/view
+9. Ministério da Saúde. **Hepatite B — diagnóstico, gestação, profilaxia neonatal e notificação**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-b
+10. Ministério da Saúde. **Hepatite D — diagnóstico e HDV-RNA**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/h/hepatites-virais/hepatite-d/hepatite-d
+11. OMS. **Guidelines for the prevention, diagnosis, care and treatment for people with chronic hepatitis B infection**. 2024. https://www.who.int/publications/i/item/9789240090903
+12. OMS. **Preventing mother-to-child transmission of HBV using antiviral prophylaxis**. Guia 2024, capítulo 7. https://www.ncbi.nlm.nih.gov/books/NBK615006/
+13. Ministério da Saúde. **Publicações Hepatites Virais** — PCDTs, Manual Técnico de Diagnóstico, plano de eliminação. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/hepatites/hepatites-virais
+
+## 32. Parecer editorial após ampliação
+- [x] Drive específico de hepatites **relido** e tratado como benchmark editorial, sem presumir autoria ou validade normativa.
+- [x] Hepatites A–E explicadas pela fisiologia, transmissão, imunidade e sequelas.
+- [x] Sorologias HBV detalhadas, inclusive reativação com anti-HBc isolado.
+- [x] HBeAg-negatividade e cccDNA, HCV-RNA e RVS, HDV e HEV.
+- [x] Transmissão vertical, imunossupressão, hepatite fulminante, diagnósticos diferenciais e segurança DAA.
+- [x] Cinco novos casos clínicos e oito novas questões de quatro alternativas comentadas.
+- [ ] Não foram incorporadas todas as doses terapêuticas/limiares de início por faixa/renal/gestação dos PCDTs integrais; revisão farmacológica nacional necessária.
+- [ ] Imagens clínicas reais de icterícia, histologia, elastografia/US hepático e fluxos sorológicos carecem de licença comercial e processo de aprovação Admin.
+- [ ] Revisão médica formal de hepatologia/infectologia, teste de autossuficiência, comparação de redundâncias e validação de HTML/PWA antes da publicação.
+**Situação:** RASCUNHO AVANÇADO, NÃO PUBLICADO/NÃO CERTIFICADO.
