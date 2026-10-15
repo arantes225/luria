@@ -274,13 +274,9 @@ Exacerbação é piora aguda de dispneia e/ou tosse e expectoração, além da v
 
 A abordagem inclui broncodilatadores de curta ação, corticosteroide sistêmico em situações indicadas, oxigênio titulado e antibiótico quando há critérios clínicos compatíveis com exacerbação bacteriana ou suporte ventilatório indicado. Não administrar oxigênio indiscriminadamente com meta de saturação de pessoa sem risco de hipercapnia: em pacientes com exacerbação de DPOC em risco de insuficiência respiratória hipercápnica costuma-se titular para 88–92%, com gasometria e ajustes individuais. Ventilação não invasiva é ferramenta decisiva na acidose respiratória hipercápnica se não houver contraindicações. Rebaixamento profundo, incapacidade de proteger vias aéreas, choque não controlado ou falha de VNI requerem avaliação para suporte invasivo.
 
-**Caso 1.** Homem de 67 anos, ex-tabagista, dispneia progressiva e tosse diária, radiografia com hiperinsuflação. Conduta diagnóstica: não fechar DPOC pela radiografia; realizar espirometria pós-broncodilatador e revisar sintomas, exposições e diferenciais. **Por que importa:** evita tratar imagem em vez de doença.
 
-**Caso 2.** Mulher de 72 anos com DPOC conhecida apresenta expectoração purulenta, dispneia intensa e sonolência, com gasometria exibindo acidose respiratória. Prioridades: monitorização, broncodilatação, oxigênio cuidadosamente titulado, identificação do precipitante e avaliação imediata de VNI versus via aérea invasiva. **Por que importa:** a alteração de consciência e acidose mudam a urgência.
 
-**Questão 1.** Qual exame confirma a obstrução persistente no diagnóstico operacional de DPOC? A) Radiografia; B) Espirometria pós-broncodilatador; C) Oximetria isolada; D) Dosagem isolada de eosinófilos. **Gabarito B.** A pode sugerir hiperinsuflação, C mede oxigenação e D pode auxiliar escolhas terapêuticas; nenhum dos três confirma limitação fixa do fluxo. **Revisão:** doença de sintomas e exposições exige evidência funcional.
 
-**Questão 2.** Em exacerbação com acidose hipercápnica e trabalho respiratório aumentado, qual abordagem merece avaliação imediata? A) Alta apenas com mucolítico; B) Oxigênio sem titulação; C) VNI se apta e sem contraindicações; D) Suspender broncodilatadores. **Gabarito C.** A subestima gravidade, B pode agravar retenção de CO2 e D elimina tratamento sintomático importante. **Revisão:** acidose hipercápnica torna decisiva a avaliação do suporte ventilatório.
 
 ### 5.2 Manejo da exacerbação em urgência: mecanismo, suporte e falha
 
@@ -506,6 +502,36 @@ Em pacientes com internações repetidas, discutir avaliação especializada de 
 
 ## 8. Casos clínicos comentados
 
+### Caso 1 — Hiperinsuflação radiológica não é confirmação de DPOC
+
+**Apresentação:** homem de 67 anos, ex-tabagista com carga aproximada de 35 maços-ano, relata dispneia progressiva ao caminhar e tosse diária por quatro anos. Radiografia mostra aumento dos espaços aéreos e retificação diafragmática. Está afebril, saturando 95% em ar ambiente, sem dor torácica ou perda ponderal acelerada.
+
+**Hipóteses:** DPOC é provável pelo histórico de exposição e sintomas, mas ainda não está confirmada. Considerar asma, insuficiência cardíaca, bronquiectasias, doença intersticial, anemia e descondicionamento conforme achados.
+
+**Raciocínio:** hiperinsuflação sugere aprisionamento aéreo; não demonstra, por si só, obstrução persistente. O exame que confirma operacionalmente DPOC é a espirometria com relação VEF1/CVF **pós-broncodilatador <0,70**, no contexto adequado. Registrar também VEF1 percentual do previsto, mMRC/CAT e exacerbações do último ano, sem confundir grau espirométrico com grupo terapêutico.
+
+**Exames e interpretação:** solicitar espirometria de qualidade antes e depois do broncodilatador, revisar técnica e curvas; investigar anemia ou cardiopatia se houver sinais discordantes. No exercício ilustrativo, VEF1/CVF passa de 0,61 antes para **0,64 após broncodilatador**, mantendo obstrução pelo critério fixo; VEF1 pós-BD de 62% do previsto caracteriza **GOLD 2 espirométrico**, não automaticamente o grupo B ou E.
+
+**Conduta:** cessação e prevenção de exposição, vacinação conforme calendário, aconselhamento de atividade/reabilitação, escolha individual de broncodilatador e treinamento do inalador após confirmar diagnóstico e avaliar sintomas/risco. Encaminhar se suspeita de outro processo ou sintomas desproporcionais.
+
+**Por que este caso importa:** demonstra que **radiografia não fecha DPOC** e que VEF1, sintomas e exacerbações respondem a perguntas distintas.
+
+### Caso 2 — Exacerbação com acidose hipercápnica e sonolência
+
+**Apresentação:** mulher de 72 anos com DPOC conhecida apresenta aumento de dispneia, escarro purulento, FR 32/min e uso de musculatura acessória. Está sonolenta, mas desperta ao chamado e consegue responder. Gasometria em contexto monitorado: pH **7,27**, PaCO2 **67 mmHg** e bicarbonato 30 mmol/L. Não há choque no momento.
+
+**Hipótese principal:** insuficiência respiratória aguda **hipercápnica** durante exacerbação da DPOC, com possível compensação metabólica prévia parcial. Investigar pneumonia, insuficiência cardíaca, tromboembolismo e uso de sedativos.
+
+**Raciocínio:** a elevação do PaCO2 isolada não prova descompensação aguda em quem retém CO2 cronicamente; o **pH acidêmico**, o trabalho respiratório e a alteração do estado mental demonstram gravidade. VNI pode melhorar ventilação alveolar e evitar intubação em pacientes selecionados, mas a sonolência requer verificar proteção de via aérea, cooperação, secreções e possibilidade de resgate rápido.
+
+**Exames e interpretação:** reavaliar consciência, sinais vitais, oximetria, gasometria após intervenção, ECG, radiografia e exames dirigidos ao precipitante. Saturação periférica não mede PaCO2. Oxigênio deve ser titulado cuidadosamente, com meta inicial frequentemente **88–92%** durante exacerbação com risco de hipercapnia, sem privar a paciente de tratamento de hipoxemia ameaçadora.
+
+**Conduta:** suporte e monitorização em ambiente apto, broncodilatadores de curta ação conforme protocolo, corticosteroide sistêmico quando indicado, investigação de necessidade de antibiótico e **avaliação imediata de VNI**. Se incapacidade de proteger a via aérea, deterioração, instabilidade ou falha da VNI, providenciar estratégia invasiva com equipe habilitada.
+
+**Por que este caso importa:** o problema prioritário não é somente purulência: é **ventilação insuficiente com acidemia**, exigindo decisões rápidas e reavaliação objetiva.
+
+
+
 ### Caso 3 — A mesma história, dois grupos: divergência entre diretrizes
 
 Homem de 63 anos, confirmado DPOC por espirometria pós-broncodilatador (VEF1/CVF 0,58; VEF1 62% do previsto), mMRC 1 e **uma exacerbação moderada** tratada no ambulatório com prednisona nos últimos 12 meses. Sem internações. No PCDT brasileiro de janeiro de 2026, critérios de A/B permitem uma moderada, e ele é grupo A pela baixa carga de sintomas. Na GOLD 2026, **uma moderada já configura grupo E**. **Investigação adicional:** verificar se o episódio realmente exigiu tratamento e não foi infecção respiratória sem piora de DPOC; revisar técnicas, adesão, fatores precipitantes. **Conduta:** registrar explicitamente o referencial; tratar a exacerbação como evento prognóstico importante, reavaliando necessidade de manutenção e prevenção conforme elegibilidade brasileira. **Por que importa:** evita confusão entre diretriz clínica internacional e regras do SUS.
@@ -567,6 +593,36 @@ Mulher de 70 anos com DPOC, alta há dez dias por exacerbação, mantém dispnei
 
 
 ## 9. Questões autorais comentadas
+
+### Questão 1 — Confirmação diagnóstica da DPOC
+
+Homem de 64 anos, histórico de tabagismo e dispneia crônica, apresenta radiografia com hiperinsuflação. Qual achado é fundamental para confirmar operacionalmente DPOC, no contexto clínico adequado?
+
+A) Radiografia mostrando diafragma retificado.
+
+B) Relação VEF1/CVF pós-broncodilatador <0,70 em espirometria tecnicamente adequada.
+
+C) Saturação de 92% em ar ambiente, independentemente da espirometria.
+
+D) Eosinofilia sanguínea isolada.
+
+**Gabarito: B.** A espirometria demonstra limitação persistente do fluxo expiratório, necessária à confirmação operacional segundo GOLD. **Alternativa A:** hiperinsuflação sugere doença, mas não mede o fluxo e pode coexistir com outras situações. **Alternativa C:** oximetria estima oxigenação, não estabelece obstrução. **Alternativa D:** eosinófilos podem auxiliar determinadas decisões de corticosteroide inalatório, não definem DPOC. **Mini-revisão:** primeiro confirmar obstrução; depois classificar VEF1, sintomas e risco de exacerbação separadamente.
+
+### Questão 2 — Acidose hipercápnica na exacerbação
+
+Mulher com DPOC apresenta FR 33/min, pH 7,28, PaCO2 65 mmHg, aumento importante do trabalho respiratório e mantém proteção de via aérea. Em serviço com monitorização e capacidade de resgate, qual medida deve ser avaliada prontamente?
+
+A) Alta domiciliar somente com mucolítico.
+
+B) Oxigênio em fluxo máximo sem reavaliar gasometria ou estado mental.
+
+C) Ventilação não invasiva em paciente elegível, associada ao manejo da exacerbação e reavaliação precoce.
+
+D) Suspender todos os broncodilatadores enquanto houver hipercapnia.
+
+**Gabarito: C.** A acidose respiratória e o esforço indicam necessidade de suporte ventilatório; VNI é opção de primeira linha em selecionados sem contraindicação. **Alternativa A:** subestima insuficiência respiratória. **Alternativa B:** não corrige hipoventilação de forma previsível e ignora titulação de oxigênio. **Alternativa D:** retira tratamento de obstrução concomitante. **Mini-revisão:** observar pH, trabalho respiratório, nível de consciência e possibilidade de falha; não atrasar via aérea invasiva quando indicada.
+
+
 
 ### Questão 3
 Paciente de 60 anos com VEF1/CVF pós-broncodilatador 0,60 e VEF1 47% do previsto. A classificação espirométrica é:
