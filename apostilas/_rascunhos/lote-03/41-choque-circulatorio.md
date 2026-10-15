@@ -1,7 +1,7 @@
-# Choque circulatório — LURIA | RASCUNHO CLÍNICO, NÃO PUBLICAR
+# Choque circulatório — LURIA | manuscrito editorial em revisão
 
 **Aula 41 · Clínica Médica · Lote 03 · versão de elaboração 14/10/2026**  
-**Estado:** conteúdo parcial em ampliação. Não atingiu a meta de 60.000 caracteres úteis; exige revisão médico-científica, acréscimo de casos, aprofundamento e provas de autossuficiência antes de transformar em HTML.
+**Estado:** manuscrito aprofundado, com extensão didática preliminar superior a 60.000 caracteres estimados, ainda sem homologação médico-científica. A versão HTML editorial permanece sem publicação na biblioteca, sem imagens clínicas não aprovadas, aguardando validação das doses, curadoria visual e testes de autossuficiência.
 
 ## 1. Da circulação normal ao choque
 
