@@ -91,6 +91,41 @@ Considere história de prematuridade, infecções respiratórias intensas na inf
 
 **Diagnósticos associados importantes:** câncer de pulmão, insuficiência cardíaca, depressão/ansiedade, apneia obstrutiva do sono, bronquiectasias, doença cardiovascular aterosclerótica, osteoporose e desnutrição. Não assumir que todo novo sintoma de um paciente conhecido é “mais DPOC”: dor torácica nova merece avaliação específica; perda ponderal e hemoptise não devem ser atribuídas automaticamente ao enfisema.
 
+
+### 2.4 Deficiência de alfa-1-antitripsina: investigar a etiologia modificável do enfisema
+
+#### 2.4.1 Por que o diagnóstico etiológico muda o atendimento?
+
+A alfa-1-antitripsina (AAT) é uma proteína sintetizada principalmente no fígado que neutraliza proteases, sobretudo a elastase neutrofílica. Na deficiência de AAT (DAAT), variantes do gene **SERPINA1** reduzem a disponibilidade ou a atividade da proteína protetora. O desequilíbrio protease–antiprotease facilita a destruição das paredes alveolares, especialmente quando há exposição a fumaça e outros irritantes. O mesmo gene pode produzir proteína mal dobrada retida nos hepatócitos: por isso, alguns genótipos associam **enfisema e doença hepática**, embora a intensidade dos dois componentes varie bastante de pessoa para pessoa. Paniculite necrotizante é manifestação extrapulmonar rara.
+
+Não se deve procurar DAAT somente no jovem que nunca fumou. Diretrizes internacionais e as recomendações brasileiras de 2024 apoiam **investigação da deficiência em pessoas com DPOC**, sem utilizar idade, sexo ou etnia como filtro exclusivo. A suspeita clínica se torna ainda maior diante de enfisema desproporcional à carga tabágica, diagnóstico precoce, predomínio basal, familiares com DPOC/enfisema ou hepatopatia sem causa definida. A ausência dessas pistas não exclui o defeito genético. Identificá-lo tem consequências para cessação de tabagismo, exposição ocupacional, avaliação hepática, aconselhamento familiar e eventual avaliação em centro especializado.
+
+#### 2.4.2 Exames: por que a dosagem sérica isolada pode induzir ao erro?
+
+A avaliação combina **quantificação sérica de AAT** e **identificação de variantes** por genotipagem (ao menos alelos S e Z, conforme a estratégia empregada), fenotipagem proteica e, em casos discordantes, investigação genética ampliada. A AAT é reagente de fase aguda: concentrações podem aumentar durante infecção, inflamação e outras situações, de modo que um resultado aparentemente pouco reduzido não encerra a investigação quando a suspeita clínica é alta. Considerar também o método e intervalo de referência do laboratório, o momento de coleta e a interpretação junto da história familiar.
+
+| Etapa | Pergunta clínica | Leitura segura |
+| --- | --- | --- |
+| Confirmação de DPOC | Há obstrução persistente após broncodilatador? | A DAAT não substitui o critério espirométrico; alguém pode ter a variante genética sem obstrução naquele momento. |
+| Triagem de DAAT | Qual a concentração sérica de AAT? | Resultado baixo aumenta a suspeita; resultado aparentemente normal durante inflamação não elimina todas as variantes. |
+| Caracterização | Qual é o genótipo/fenótipo? | Diferenciar variantes graves, portadores heterozigotos e alterações raras; não equiparar todos os resultados a doença grave. |
+| Avaliação de órgãos | Há enfisema, perda funcional ou doença hepática? | Integrar espirometria, função hepática e exames direcionados ao quadro; TC não deve ser solicitada indiscriminadamente só para contar exames. |
+| Investigação familiar | Existem parentes em risco? | Ofertar aconselhamento e testagem dirigida conforme idade e contexto, com consentimento e interpretação genética apropriados. |
+
+Uma dosagem sérica de AAT isoladamente **não estabelece genótipo, não exclui todas as variantes e não prediz sozinha velocidade de progressão**. Quando a concentração e o resultado genético não concordam — por exemplo, AAT muito baixa sem variantes comuns demonstradas — é necessário confirmar o método e discutir genotipagem ampliada ou investigação em referência.
+
+#### 2.4.3 Como conduzir após a confirmação
+
+1. **Tratar a DPOC conforme a necessidade clínica:** cessar tabaco e exposições, avaliar sintomas e exacerbações, orientar inaladores, vacinação, reabilitação e seguimento espirométrico; a DAAT não dispensa nenhuma dessas intervenções.
+2. **Avaliar órgãos e consequências:** investigar sinais de hepatopatia, história familiar e manifestações extrapulmonares. Não presumir cirrose a partir do genótipo ou de um único exame anormal.
+3. **Explicar herança e prevenção:** o padrão de transmissão é autossômico codominante. Ofertar aconselhamento e testagem dirigida a familiares, preferencialmente com suporte de serviço habituado a interpretar fenótipos e variantes.
+4. **Encaminhar deficiência grave ou dúvida diagnóstica a centro especializado:** discutir acompanhamento longitudinal e, em pessoas criteriosamente selecionadas, terapia intravenosa de reposição. A recomendação brasileira de 2024 considera deficiência grave documentada, condição tabágica, envolvimento pulmonar e progressão funcional, entre outros critérios. **Reposição não é indicada automaticamente a todo portador de variante S/Z nem é decisão baseada apenas em um corte laboratorial**; contraindicações, custos e acesso precisam de avaliação individual.
+5. **Reavaliar prognóstico no tempo:** acompanhar sintomas, exacerbadores, espirometria e função hepática conforme indicação. O objetivo é prevenir lesão adicional, não prometer recuperação do parênquima já destruído.
+
+**Armadilha de prova:** enfisema em adulto com pouca exposição ao cigarro sugere DAAT, mas *não é obrigatório haver enfisema basal nem ausência de tabagismo para solicitar investigação*. Outra armadilha é interpretar uma AAT sérica colhida em fase inflamatória como exclusão genética definitiva. Na APS, o passo seguro é reconhecer possibilidade, completar avaliação e referenciar adequadamente, sem prescrever reposição isoladamente.
+
+**Fontes verificáveis para esta subseção:** Feitosa et al., *Jornal Brasileiro de Pneumologia* 2024;50(5):e20240235, doi:10.36416/1806-3756/e20240235; Sandhaus et al., *Chronic Obstructive Pulmonary Diseases* 2016;3(3):668–682, doi:10.15326/jcopdf.3.3.2015.0182; GOLD 2026.
+
 ## 3. Classificação GOLD 2026 e PCDT brasileiro
 
 ### 3.1 Atualização de 2026: GOLD internacional × PCDT brasileiro
@@ -620,6 +655,13 @@ Mulher de 70 anos com DPOC, alta há dez dias por exacerbação, mantém dispnei
 Mulher de 66 anos, diagnóstico funcional de DPOC (VEF1/CVF pós-BD 0,58), mMRC 1, apresentou exacerbação moderada tratada ambulatorialmente há seis meses. Nunca usou terapia de manutenção; eosinófilos 110 células/µL e sem asma associada. **Hipótese:** DPOC com risco futuro de exacerbações já sinalizado pelo evento. **Raciocínio:** no algoritmo **inicial da GOLD 2026**, uma exacerbação moderada coloca a pessoa no grupo E mesmo com poucos sintomas; porém grupo E **não significa CI obrigatório**. **Exames:** confirmar qualidade da espirometria, natureza da exacerbação, técnica, biomarcadores e comorbidades. **Conduta:** planejar prevenção, cessação de tabagismo, vacinação e broncodilatação de longa ação conforme recomendação internacional e PCDT SUS; avaliar indicação de LABA/LAMA e seguimento, sem acrescentar CI automaticamente. **Por que este caso importa:** uma nova classificação muda percepção de risco, não elimina raciocínio clínico nem critérios locais.
 
 
+
+### Caso 18 — Enfisema precoce: procurar a causa, não apenas trocar o inalador
+
+Homem de 42 anos, dispneia progressiva, história tabágica de oito maços-ano e pai com enfisema antes dos 55 anos, chega com espirometria pós-broncodilatador compatível com obstrução persistente. Uma TC previamente realizada por indicação clínica mostrou enfisema relevante, com predomínio basal. No dia da consulta tem infecção respiratória recente e AAT sérica situada perto do limite inferior do laboratório.
+
+**Hipótese:** DPOC com suspeita significativa de DAAT. **Raciocínio:** idade e carga tabágica tornam uma causa hereditária plausível, e a história familiar acrescenta peso; porém a investigação não deveria ser restrita a esse fenótipo. AAT pode se elevar como reagente de fase aguda, e a concentração isolada não define a variante. **Exames complementares:** revisar espirometria e exposição, confirmar concentração sérica fora da fase inflamatória quando pertinente, associar genotipagem/fenotipagem conforme disponibilidade e investigar hepatopatia se houver indicação. **Conduta:** cessação completa de tabaco, plano de DPOC e controle de exposições, encaminhamento à pneumologia ou centro de DAAT, aconselhamento familiar após confirmação e seguimento funcional. Não indicar reposição sem definição genética e critérios especializados. **Por que importa:** diagnosticar DPOC por VEF1/CVF não encerra a busca de etiologias que mudam prevenção e cuidado familiar.
+
 ## 9. Questões autorais comentadas
 
 ### Questão 1 — Confirmação diagnóstica da DPOC
@@ -801,9 +843,27 @@ D) A espirometria isolada determina a letra A/B/E, independentemente de sintomas
 **Gabarito: B.** A GOLD 2026 passou a incluir uma exacerbação moderada na categoria E; a estratégia farmacológica inicial considera LABA/LAMA e indicação individualizada do CI. **A:** aplica o limiar anterior sem identificar a versão. **C:** CI isolado não é esquema de manutenção recomendado para DPOC. **D:** confunde grau espirométrico GOLD 1–4 com classificação clínica A/B/E. **Mini-revisão:** ABE é instrumento inicial; em quem já está tratado, usar algoritmo de seguimento e checar técnica, sintomas, exacerbações e eosinófilos.
 
 
+
+### Questão 24 — Alfa-1-antitripsina e exame na fase inflamatória
+
+Pessoa de 46 anos com DPOC confirmada, exposição pequena ao cigarro e história familiar de enfisema apresenta AAT sérica não reduzida durante infecção aguda. Qual interpretação é mais adequada?
+
+A) AAT normal durante infecção exclui qualquer variante do SERPINA1 e dispensa exames futuros.
+
+B) A DAAT só pode ser pesquisada se a pessoa nunca fumou.
+
+C) AAT é reagente de fase aguda; a suspeita clínica pode exigir avaliação genética/fenotípica e interpretação do nível sérico fora do contexto inflamatório.
+
+D) Identificar heterozigose implica começar reposição intravenosa em todos os casos.
+
+**Gabarito: C.** **A:** exagera o valor preditivo de um resultado sérico num contexto capaz de elevá-lo. **B:** tabagismo não exclui doença hereditária; a investigação de DAAT não é reservada apenas a não fumantes. **C:** integra a fisiologia da AAT à estratégia diagnóstica. **D:** reposição depende de critérios clínicos e genéticos específicos, e não de qualquer variante. **Mini-revisão:** DPOC é confirmado pela fisiologia obstrutiva, enquanto a investigação de DAAT pesquisa uma etiologia potencialmente relevante para prevenção, seguimento e familiares.
+
 ## Referências essenciais
 
 1. GOLD 2026 Report and Pocket Guide. https://goldcopd.org/2026-gold-report-and-pocket-guide/
 2. Ministério da Saúde — PCDT DPOC (2025/2026). https://www.gov.br/saude/pt-br/assuntos/pcdt/d/doenca-pulmonar-obstrutiva-cronica/view
 3. SBPT — Atualização do PCDT de DPOC. https://sbpt.org.br/portal/tratamento-da-dpoc-avanca-no-brasil-com-publicacao-de-novo-pcdt/
 4. Ministério da Saúde — Linha de Cuidado DPOC. https://linhasdecuidado.saude.gov.br/portal/doenca-pulmonar-obstrutiva-cronica/unidade-hospitalar/avaliacao-conduta/
+
+5. Feitosa PHR et al. Recomendações para o diagnóstico e tratamento da deficiência de alfa-1 antitripsina. *J Bras Pneumol.* 2024;50(5):e20240235. https://doi.org/10.36416/1806-3756/e20240235
+6. Sandhaus RA et al. The diagnosis and management of alpha-1 antitrypsin deficiency in the adult. *Chronic Obstr Pulm Dis.* 2016;3(3):668–682. https://doi.org/10.15326/jcopdf.3.3.2015.0182
