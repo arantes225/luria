@@ -734,6 +734,53 @@ A principal via de transmissão é a **aérea**, em especial quando há TB pulmo
 **Fontes normativas:** Ministério da Saúde, *Manual de Gestação de Alto Risco* (2022), capítulo 30.4–30.5, https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf ; Ministério da Saúde, *Manual de Recomendações para o Controle da Tuberculose no Brasil*, 2ª edição, capítulo de prevenção em recém-nascidos e anexo de segurança na gestação, https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf/view ; Ministério da Saúde, *Tratamento da Tuberculose*, atualização 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; Nota Informativa nº 2/2026 para TB resistente, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2026/nota-informativa-no-2_2026_cgtm_dathi_svsa_ms.pdf/@@display-file/file . O tratamento preventivo da infecção latente na gestação e do recém-nascido exige confirmação dos protocolos atuais de elegibilidade e de apresentações locais antes da prescrição.
 
 
+
+### 7.9 Tuberculose zoonótica: quando suspeitar de *Mycobacterium bovis* e por que o esquema muda
+
+**Uma lacuna clínica que muda o tratamento:** nem toda tuberculose humana é causada por *Mycobacterium tuberculosis* sensu stricto. *M. bovis* faz parte do **complexo M. tuberculosis** e pode produzir doença humana associada ao contato com bovinos infectados ou à ingestão de leite e derivados **não pasteurizados**. A história epidemiológica é decisiva, sobretudo em pessoas de área rural, médicos-veterinários, trabalhadores de rebanho, ordenha e abatedouros. Crianças e adolescentes podem apresentar doença ganglionar ou outras formas extrapulmonares por via alimentar. Isso não significa que todo paciente rural ou toda adenomegalia seja tuberculose zoonótica.
+
+A suspeita de *M. bovis* não exige que a pessoa tenha pneumopatia: linfadenite cervical ou abdominal, envolvimento de ossos, órgãos intra-abdominais e doença disseminada podem ser apresentações. O **contato com leite não pasteurizado** é pista epidemiológica, mas não substitui investigação microbiológica. Em caso sugestivo, além de avaliar o paciente, o serviço deve articular ações de vigilância humana, animal e sanitária no princípio de **Saúde Única**, evitando uma abordagem limitada ao indivíduo.
+
+#### 7.9.1 Teste molecular de TB detecta o complexo; não confirma sozinho a espécie
+
+O TRM-TB usado no SUS detecta alvos do **complexo M. tuberculosis** e pode investigar marcador de resistência à rifampicina. Entretanto, o teste inicial habitual **não distingue automaticamente *M. bovis* de *M. tuberculosis***. Uma amostra com “MTB detectado, resistência à rifampicina não detectada” não comprova espécie nem descarta resistência natural a outro fármaco.
+
+| Resultado ou achado | O que ele permite concluir | O que NÃO permite concluir |
+| --- | --- | --- |
+| TRM-TB detecta complexo MTB | Há material molecular do complexo em amostra adequada | Qual espécie do complexo foi isolada |
+| Marcador de resistência à rifampicina ausente no TRM | O método não identificou resistência a R em seu alvo | Sensibilidade a todos os fármacos do esquema, sobretudo pirazinamida em suspeita de *M. bovis* |
+| Consumo de leite bovino não pasteurizado e adenite persistente | Eleva suspeita epidemiológica de TB zoonótica | Confirmação da espécie sem exame apropriado |
+| Cultura e identificação de espécie por laboratório de referência | Podem diferenciar *M. bovis* e orientar terapia específica | Substituição da avaliação clínica de gravidade ou de outros testes de sensibilidade |
+| Pesquisa microbiológica inicial negativa em lesão extrapulmonar paucibacilar | Pode ocorrer pela baixa carga e/ou dificuldade de amostra | Ausência definitiva de TB, se a probabilidade clínica continua alta |
+
+O **Manual com orientações clínicas e de vigilância para a tuberculose zoonótica do Ministério da Saúde (2023)** recomenda, diante da suspeita específica, articular coleta de escarro, aspirado ou biópsia do sítio afetado para **cultura e identificação de espécie**, com testes bioquímicos ou moleculares do isolado. O meio de cultura **Stonebrink** favorece isolamento de *M. bovis*; o crescimento em meios convencionais pode ser prejudicado pela presença de glicerol. A rede deve ser avisada desde o pedido da coleta, pois acondicionamento, transporte, meio e fluxo do laboratório são diferentes de simplesmente solicitar “baciloscopia de escarro” para qualquer amostra. Não solicitar exame especial sem coordenação com referência/laboratório responsável.
+
+#### 7.9.2 Resistência natural à pirazinamida não é a mesma coisa que TB-RR/MDR
+
+Uma propriedade microbiológica relevante de *M. bovis* é a **resistência intrínseca à pirazinamida (Z)**. Assim, **TB por *M. bovis* comprovada não deve ser ensinada como TB sensível rotineira a RHZE/RHZ com Z eficaz**. Essa resistência natural não significa, por si só, resistência à rifampicina ou à isoniazida e tampouco autoriza usar BPaL/BPaLM. A terapêutica deve ser organizada pelo serviço de referência, considerando espécie, outros testes de sensibilidade, idade, sítio de doença e disponibilidade das apresentações.
+
+A **Nota Informativa nº 8/2024-CGTM/DATHI/SVSA/MS** do Ministério da Saúde orienta que, após identificação de *M. bovis*, devido à resistência natural a Z, **pode-se prescindir da pirazinamida**, recorrer a **medicamentos individualizados** e **estender a fase de manutenção para sete meses** nos casos em que ocorre essa mudança de esquema. O aluno precisa separar duas informações: (1) a pessoa **pode iniciar investigação/tratamento como TB convencional enquanto a espécie ainda não foi determinada**, conforme decisão clínica; (2) **espécie confirmada muda o plano**, que passa a requerer avaliação e dispensação próprias. A nota não autoriza montar uma receita individual apenas com essa frase, nem aplicar automaticamente esse prazo às formas meníngea, resistente ou a outros esquemas especiais.
+
+**Cuidado com idade e apresentação:** o Guia de Vigilância em Saúde distingue a criança **menor de 10 anos**, cuja fase intensiva padrão da TB sensível usa **RHZ sem etambutol**, do adolescente/adulto que recebe **RHZE**. Quando se comprova *M. bovis* em menor de dez anos, o guia orienta **substituição de Z por etambutol**, sob revisão especializada. É incorreto pegar o comprimido dispersível RHZ da criança e simplesmente “desconsiderar a Z”, porque os componentes vêm juntos; a prescrição requer **apresentações individualizadas**, cálculo por peso e avaliação do programa de TB. A equipe ainda deve verificar contraindicações e monitorização visual apropriada à idade.
+
+| Questão prática | TB sensível usual do complexo MTB | Tuberculose por *M. bovis* confirmada |
+| --- | --- | --- |
+| Espécie demonstrada? | Nem sempre há diferenciação na rotina | Exige investigação direcionada de espécie em serviço de referência |
+| Pirazinamida | Faz parte de regimes básicos RHZE/RHZ elegíveis | **Resistência intrínseca**: não presumir benefício de Z |
+| Resultado do TRM inicial | Pode mostrar complexo detectado e rifampicina sem resistência identificada | **Esse resultado não identifica a espécie** nem Z |
+| Apresentações por idade | DFC infantil ou adulta conforme protocolo | Pode exigir **fármacos individualizados** e substituições |
+| Duração | Geralmente 6 meses na TB sensível não complicada; alternativas pediátricas selecionadas têm regras próprias | **Não** transportar encurtamento de 4 meses sem comprovação de elegibilidade; avaliar a nota e esquema especial |
+| Vigilância | SINAN e fluxo TB padrão | Notificar SINAN; quando houver mudança para esquema especial, registrar e solicitar no Site-TB conforme Nota 8/2024 |
+
+#### 7.9.3 Vigilância e prevenção: não tratar a exposição animal como detalhe irrelevante
+
+A investigação envolve possíveis fontes no rebanho, leite/derivados sem tratamento térmico, ocorrência de doença em animais e trabalhadores, condições de ordenha e abate, além de contatos humanos conforme forma clínica e potencial de transmissão. **Notificar o caso de TB no SINAN** e articular vigilância sanitária/zoonoses e saúde do trabalhador são etapas integrantes da conduta. A nota ministerial de 2024 prevê campo específico de mudança de esquema por identificação de *M. bovis* no **Site-TB**, com encaminhamento à referência secundária para regimes especiais. O objetivo não é culpabilizar produtor ou família, e sim identificar a cadeia de transmissão e controlar a exposição.
+
+A prevenção inclui consumir leite **pasteurizado ou adequadamente fervido**, controle sanitário dos rebanhos, proteção ocupacional e tratamento adequado de casos humanos. Não afirmar que a principal transmissão por *M. bovis* ocorre pela amamentação nem substituir a investigação de TB pulmonar por rastreamento animal em qualquer caso: as fontes e vias devem ser avaliadas conforme evidências.
+
+**Fontes oficiais verificadas:** Ministério da Saúde, *Manual com orientações clínicas e de vigilância para a tuberculose zoonótica* (2023), https://bvsms.saude.gov.br/bvs/publicacoes/manual_orientacoes_vigilancia_tuberculose_zoonotica.pdf ; Ministério da Saúde, *Nota Informativa nº 8/2024-CGTM/DATHI/SVSA/MS*, https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/t/tuberculose/notas-tecnicas-e-informativas/nota-informativa-no-8-2024-cgtm-dathi-svsa-ms ; Ministério da Saúde, *Guia de Vigilância em Saúde*, 6ª edição, seção de TB: https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/vigilancia/guia-de-vigilancia-em-saude-volume-2-6a-edicao . Síntese pedagógica original, sem reprodução das figuras/tabelas dos documentos oficiais.
+
+
 ## 8. Casos clínicos comentados
 
 ### Caso 1 — Tosse prolongada e contato domiciliar: confirmação e prevenção
@@ -840,6 +887,16 @@ Menina de oito anos vivendo com HIV usa terapia antirretroviral e foi exposta ao
 Gestante de 27 anos, com 24 semanas de gravidez, procura pré-natal por tosse há cinco semanas, sudorese noturna e emagrecimento. Mora com pessoa que teve TB pulmonar bacilífera. Radiografia indicada por suspeita clínica mostra infiltrado apical; TRM-TB em escarro detecta Mycobacterium tuberculosis, **sem resistência à rifampicina identificada**. Está hemodinamicamente estável e sem sinais de doença disseminada.
 
 **Hipótese:** TB pulmonar ativa provável, com necessidade de verificar fluxo de cultura/TS, coinfecção HIV e condições obstétricas. **Raciocínio:** a gestação não justifica adiar tratamento de doença ativa; o resultado molecular não garante sensibilidade a todos os fármacos. Avaliar apresentação por peso, risco hepático, sintomas de toxicidade e adesão. **Exames:** cultura e teste de sensibilidade quando previstos, HIV, função hepática e outros exames segundo risco, evolução clínica e avaliação fetal pela obstetrícia. **Conduta:** organizar esquema básico de TB sensível quando confirmado como apropriado, **associando piridoxina 50 mg/dia conforme manual brasileiro**; oferecer TDO pactuado, ventilação e orientações de redução de transmissão, além de planejar avaliação do recém-nascido e cuidados no parto. **Por que importa:** o tratamento da mãe, a proteção do bebê e o controle do ambiente são partes de uma mesma linha de cuidado.
+
+
+
+### Caso 20 — Adenite em adolescente com exposição a derivados não pasteurizados
+
+Adolescente de 14 anos vive em fazenda leiteira e apresenta adenomegalia cervical unilateral há oito semanas, perda de peso e febre vespertina discreta. A família consome leite cru, e houve investigação de tuberculose em bovinos locais. A punção sugere inflamação granulomatosa, mas o primeiro exame molecular detectou apenas o **complexo MTB**, sem especificar espécie. **Hipóteses:** TB ganglionar por *M. tuberculosis* ou *M. bovis*, além de micobactérias não tuberculosas, linfoma e outras causas de adenite. **Raciocínio:** a história de leite cru e exposição bovina justifica perguntar por TB zoonótica; **TRM do complexo não confirma *M. bovis***. **Exames:** avaliação por especialista, amostra apropriada para cultura e identificação de espécie, pesquisa de outras resistências e investigação de fontes/contatos. **Conduta:** encaminhar para programa de TB, orientar vigilância e medidas preventivas, selecionar tratamento por gravidade/espécie e sensibilidade quando estabelecidos os dados; se confirmar *M. bovis*, ajustar por resistência intrínseca à pirazinamida segundo referência. **Por que este caso importa:** uma exposição epidemiológica específica pode alterar **o antibiótico efetivo e a vigilância territorial**.
+
+### Caso 21 — *M. bovis* identificado durante tratamento inicialmente convencional
+
+Homem de 46 anos, trabalhador de abatedouro, iniciou RHZE por doença pulmonar com TRM do complexo MTB positivo e rifampicina sem resistência detectada. Após cultura e tipagem em laboratório de referência, identifica-se ***M. bovis***. Encontra-se clinicamente estável, sem sinais de falência respiratória. **Hipótese:** tuberculose zoonótica identificada após início de esquema habitual. **Raciocínio:** o resultado inicial não determinava espécie nem atividade de Z; a identificação de *M. bovis* informa **resistência natural à pirazinamida**, que deve ser considerada na revisão. **Exames:** revisar cultura, tipagem, testes de sensibilidade, peso, função hepática e outras condições, com comunicação à vigilância. **Conduta:** encaminhar à referência secundária para individualizar tratamento, documentar eventual mudança no SINAN/Site-TB e seguir Nota 8/2024 quanto à manutenção prolongada quando aplicável. **Por que este caso importa:** **não basta dizer “rifampicina sensível” para concluir que os quatro componentes de RHZE estão ativos**.
 
 
 ## 9. Questões autorais comentadas
@@ -1100,6 +1157,36 @@ C) A gestação exige trocar todo esquema sensível pelo BPaLM.
 D) A suspeita de TB no pré-natal torna todos os exames radiológicos proibidos.
 
 **Gabarito: B.** A doença ativa precisa de tratamento oportuno; o manual brasileiro descreve o esquema básico e recomenda piridoxina durante a gestação. **A:** expõe mãe e feto à evolução de doença não tratada. **C:** BPaLM não é alternativa automática e há exclusões expressas para gestantes na nota ministerial de TB-DR de 2026. **D:** exames indicados podem ser realizados com medidas radiológicas adequadas; evitar diagnóstico pode ser mais danoso. **Mini-revisão:** gestação muda a vigilância, mas não elimina tratamento da TB ativa.
+
+
+
+### Questão 30 — Complexo MTB e espécie
+
+Adulto com adenite granulomatosa, contato com bovinos infectados e consumo de leite não pasteurizado apresenta TRM-TB “complexo MTB detectado; resistência à rifampicina não detectada”. Qual afirmação é correta?
+
+A) O teste confirma *M. tuberculosis* sensu stricto e exclui *M. bovis*.
+
+B) Há detecção do complexo, mas é necessário método de diferenciação de espécie se a epidemiologia sugere *M. bovis*.
+
+C) Ausência de resistência à rifampicina comprova sensibilidade à pirazinamida.
+
+D) Adenite extrapulmonar exclui tuberculose zoonótica.
+
+**Gabarito: B.** O TRM habitual não separa automaticamente espécies do complexo. **A:** superestima especificidade do método. **C:** ignora resistência intrínseca de *M. bovis* à pirazinamida. **D:** formas ganglionares/extrapulmonares são compatíveis com exposição alimentar zoonótica. **Mini-revisão:** distinguir complexo, espécie e padrão de resistência antes de aplicar esquema específico.
+
+### Questão 31 — Resistência natural de *M. bovis*
+
+Após cultura e identificação de *M. bovis* em criança menor de dez anos, qual princípio está alinhado às orientações brasileiras?
+
+A) Manter a pirazinamida como fármaco necessariamente ativo porque a rifampicina não é resistente.
+
+B) Considerar a resistência natural à pirazinamida e encaminhar para ajuste do esquema com medicamentos individualizados; o Guia de Vigilância orienta substituição de Z por etambutol nessa faixa etária.
+
+C) Prescrever BPaLM automaticamente a toda criança com *M. bovis*.
+
+D) Considerar leite não pasteurizado uma via impossível de exposição.
+
+**Gabarito: B.** *M. bovis* tem resistência intrínseca a Z e a prescrição pediátrica não é corrigida apenas quebrando comprimido RHZ. **A:** confunde resposta a R e Z. **C:** extrapola regime de TB resistente com elegibilidade específica e inadequada a crianças pequenas. **D:** ignora exposição zoonótica bem reconhecida. **Mini-revisão:** confirmar a espécie pode mudar apresentação, duração e sistema de notificação.
 
 
 ## Referências essenciais
