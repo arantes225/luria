@@ -258,6 +258,8 @@ Sob um modelo estatístico e uma hipótese nula especificados, o **valor de p** 
 
 Definir antes da análise um limiar alfa de 5% é uma convenção operacional, não uma fronteira ontológica. Resultados p=0,049 e p=0,051 raramente justificam decisões diametralmente opostas quando estimativas e dados são semelhantes. O leitor deve considerar tamanho de efeito, intervalo de confiança, desenho, viés, pré-especificação, relevância do desfecho e coerência com outras evidências.
 
+**Equivalência e não inferioridade não são demonstradas por p>0,05 em teste de superioridade.** Uma conclusão de equivalência exige margens clínicas de aceitabilidade pré-especificadas, planejamento próprio, estimativa de efeito e IC inteiramente compatível com essas margens; a ausência de significância pode simplesmente refletir imprecisão. Não inferioridade utiliza limite unilateral/margem correspondente e também não surge automaticamente de um resultado nulo.
+
 ### 14.2 Interpretação correta do intervalo de confiança
 
 O **intervalo de confiança de 95%** é construído por procedimento que, sob as premissas estatísticas, cobriria o parâmetro verdadeiro em 95% das repetições hipotéticas da amostragem. Não se deve atribuir, em interpretação frequentista estrita, probabilidade de 95% de o parâmetro fixo específico estar dentro do intervalo já calculado. Na prática assistencial, o IC fornece conjunto de valores compatíveis com dados e premissas, sendo muito mais informativo que “significativo/não significativo” isolado.
