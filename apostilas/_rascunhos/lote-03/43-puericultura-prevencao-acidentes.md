@@ -303,3 +303,126 @@ O transporte voltado para trás em bebês oferece proteção superior em colisã
 
 **Pulo do Gato:** prevenção por **engenharia/barreira ambiental** costuma ser mais robusta que pedir à criança pequena “que tome cuidado”, porque o cérebro nessa idade ainda não consegue prever consequências como um adulto. Supervisão é essencial, mas não substitui cerca em piscina ou armário trancado.
 
+
+
+## 15. Roteiro de condutas para achados anormais em puericultura
+
+### 15.1 Criança que perde percentis: a primeira decisão é validar a medida
+
+Quando a curva de crescimento muda abruptamente, reavaliar o dado antes de rotular a criança. Conferir identificação, idade, sexo, unidade, balança, equipamento de estatura, roupa e técnica. Recuperar medidas anteriores registradas de forma confiável e calcular tendência ao longo de intervalo adequado. **Exemplo:** criança de 18 meses pesa 10,3 kg na consulta atual; a anterior informa 11,7 kg dois meses antes, porém havia sido realizada com roupas pesadas e sem mesma balança. A discrepância é importante, mas não permite afirmar queda ponderal verdadeira sem verificar a qualidade das aferições. Se houver perda real, investigar ingestão, vômitos, diarreia, poliúria, doença crônica e risco familiar.
+
+Avaliar também sinais de gravidade: prostração, desidratação, edema, dificuldade respiratória, alteração de consciência ou recusa persistente de líquidos exigem avaliação imediata, independentemente de um percentil específico. Em criança estável com preocupação nutricional, planejar observação de alimentação, ajuste dietético seguro, suporte familiar e retorno com data definida. A curva é um **instrumento de seguimento**, não o tratamento da criança.
+
+### 15.2 Falta de ganho de estatura: diferenciação por tempo e fenótipo
+
+Uma criança que passa de Z −1,0 para −2,3 ao longo de avaliações repetidas merece revisão. Se o peso também cai, buscar doenças crônicas e nutrição; se peso/IMC é relativamente elevado enquanto crescimento linear diminui, causas endócrinas entram com maior peso. Em estatura baixa com velocidade preservada e pais de baixa estatura, variação familiar é plausível, mas investigar sinais associados (dismorfias, assimetria, proporções corporais, desenvolvimento e puberdade). O cálculo do alvo familiar orienta, não substitui a curva.
+
+A **idade óssea** auxilia quando a dúvida diagnóstica permanece e resultado influencia decisão; atraso não significa automaticamente deficiência de hormônio de crescimento. Triagem para doença celíaca exige interpretação da IgA total e anticorpos adequados, especialmente em sintomáticos/risco; exames endócrinos dependem da história e avaliação. Encaminhar a endocrinopediatria se houver velocidade progressivamente comprometida, estatura muito baixa, desproporção, suspeita de síndrome, puberdade anormal ou falha de avaliação inicial.
+
+### 15.3 Atraso de desenvolvimento e regressão
+
+Em atraso isolado de fala, analisar qualidade da comunicação (gestos, apontar, interesse compartilhado), audição, compreensão e exposição a linguagem. Encaminhar a avaliação fonoaudiológica/audiológica conforme quadro. **Regressão** — perda de palavras, contato social ou marcha antes adquiridos — exige investigação mais urgente: considerar condições neurológicas, auditivas, metabólicas, epilépticas e do neurodesenvolvimento, sem reduzir tudo a TEA ou “falta de estímulo”.
+
+Se criança tem suspeita de TEA, oferecer avaliação especializada e acesso à intervenção funcional/apoio familiar o quanto antes, considerando o rastreio M-CHAT-R/F entre 16 e 30 meses quando apropriado. Não esperar diagnóstico formal para orientar estratégias de comunicação e inclusão; porém não prometer eficácia de terapias sem respaldo. Registrar preocupação e plano de reavaliação, evitando apenas “voltar se não melhorar” sem prazo.
+
+### 15.4 Suspeita de dificuldade auditiva/visual
+
+Diante de estrabismo de início recente, reflexo vermelho alterado, leucocoria ou perda funcional visual, encaminhar com urgência apropriada. Alteração da triagem neonatal auditiva exige confirmação em serviço habilitado; perda de habilidade de responder a sons ou fala com infecções auriculares recorrentes também motiva avaliação. Não utilizar teste informal de bater palmas ao lado do rosto como prova de audição normal ou reduzir exame à resposta parental. O impacto da intervenção precoce vai além de “aprender a falar”: relaciona-se a aprendizagem, interação e segurança.
+
+### 15.5 Recusa alimentar e seletividade: qual é o risco?
+
+Seletividade temporária é frequente, mas recusa persistente com perda ponderal, engasgos, vômitos, anemia, déficits múltiplos, dor ao engolir ou repertório extremamente restrito justifica investigação. Observar texturas, postura e dinâmica familiar, evitando alimentação forçada ou punição. Em criança com TEA ou alteração sensorial, plano nutricional e terapias podem exigir equipe multiprofissional. A orientação genérica “deixe com fome que ele come” não é segura em todas as condições.
+
+### 15.6 Intercorrência febril não exclui necessidades preventivas
+
+Consulta não programada por resfriado leve pode ser oportunidade de atualização de vacinas, avaliação breve da curva ou reforço de prevenção. A situação aguda deve ser tratada primeiro, com classificação de gravidade; depois aproveitar o contato sem transformar toda urgência em consulta longa. **Oportunidade de cuidado** inclui perguntar sobre ausência prolongada de seguimento e encaminhar à agenda longitudinal, principalmente quando a família tem dificuldades de acesso.
+
+## 16. A consulta de puericultura por sistemas — checklist clínico aprofundado
+
+### 16.1 História gestacional e neonatal
+
+Registrar idade gestacional, peso ao nascer, adequação ao crescimento, intercorrências na gravidez, resultados relevantes de ultrassom, via e contexto do parto, Apgar quando disponível, necessidade de reanimação, ventilação, internação neonatal, icterícia significativa, hipoglicemia, infecções e transfusões. Não usar índice de Apgar isoladamente como previsão do desenvolvimento futuro. Em prematuros, obter dados de displasia broncopulmonar, hemorragia intraventricular, retinopatia, ganho ponderal e seguimentos especializados.
+
+História materna de infecção congênita, exposição medicamentosa e condições genéticas é importante quando altera vigilância ou interpretação; abordar com privacidade e sem julgamento.
+
+### 16.2 Antecedentes familiares
+
+Investigar baixa estatura familiar, maturação puberal tardia, cardiopatias, surdez, doenças hematológicas, doenças metabólicas, alergias graves, doença renal, diabetes, transtornos de desenvolvimento e mortes súbitas infantis. O objetivo é identificar risco com plano específico, não atribuir culpa à família. Histórico de transtorno mental ou violência pede abordagem respeitosa e indicação de suporte, sem estigma.
+
+### 16.3 Ambiente e determinantes sociais
+
+Perguntar quem cuida da criança durante dia/noite, acesso à água potável, local de dormir, disponibilidade de alimentação, presença de fumaça de cigarro, transporte, escola/creche, rede de apoio, exposição a agrotóxicos e condição de segurança do domicílio. Em situação de insegurança alimentar, a resposta deve incluir orientação nutricional e conexão com programas sociais/APS, não apenas uma lista de alimentos caros.
+
+A exposição à fumaça de tabaco prejudica a saúde respiratória e pode aumentar risco relacionado ao sono em lactentes. Orientar ambiente sem fumaça e oferecer tratamento para cessação a familiares quando desejado e disponível. A proteção ambiental pode modificar o risco de infecções, sintomas asmáticos e lesões.
+
+### 16.4 Saúde da família como parte do cuidado pediátrico
+
+Puericultura é centrada na criança, mas precisa olhar os cuidadores. Dor, depressão pós-parto, violência doméstica, consumo nocivo de álcool, dependência de substâncias e sobrecarga podem limitar cuidado e aumentar risco, especialmente quando a pessoa está isolada. Perguntas abertas e apoio têm mais utilidade que repreensão. Um plano de saúde infantil não será executável se a família não pode comparecer à unidade ou não tem acesso a água segura.
+
+### 16.5 Saúde do adolescente em transição
+
+Embora a Caderneta da Criança contemple principalmente até nove anos, parte das práticas de puericultura prepara transição ao acompanhamento adolescente. Em pré-adolescência, observar puberdade, saúde mental, transtornos alimentares, bullying e segurança digital, além de atividade física e sono. A privacidade progressiva do adolescente deve ser protegida nos limites éticos/jurídicos, sem abandonar envolvimento familiar apropriado. O livro de puericultura não substitui manual de saúde do adolescente, mas ajuda a criar continuidade.
+
+## 17. Orientação antecipatória estruturada por encontro: exemplos de comunicação
+
+### 17.1 Na primeira semana
+
+Perguntar sobre mamadas, dor durante amamentação, quantidade de diurese, icterícia, sono e suporte doméstico. Observar sinais de doença grave e resultados de triagens neonatais. Orientar retorno urgente em febre ou hipotermia com alteração clínica, letargia, recusa persistente de alimento, dificuldade respiratória ou sinais de desidratação. Demonstrar superfície segura de sono com posicionamento supino; pedir que cuidadores mostrem como preparam o banho e transportam o recém-nascido.
+
+Explicar que perda ponderal inicial pode ocorrer, mas valores absolutos/percentuais e recuperação precisam de avaliação por idade pós-natal, gestação e condições clínicas. Não normalizar perda contínua associada a baixa diurese ou icterícia significativa.
+
+### 17.2 Dos dois aos quatro meses
+
+Reavaliar crescimento e desenvolvimento sensorial, orientar interação verbal e períodos supervisionados de barriga para baixo enquanto acordado. Perguntar se bebê consegue rolar ou alcançar borda do berço, pois transição pode acontecer subitamente. Proibir supervisão solta em cama/trocador: apoio físico constante ou troca no chão em superfície segura. Verificar vacinação conforme PNI e planejar próxima consulta.
+
+### 17.3 Aos seis meses
+
+Acolher dúvidas sobre introdução alimentar, organizar refeições com consistência segura, ferro e água, mantendo aleitamento. Demonstre forma de cortar alimentos e perguntar quem supervisiona refeições. Revisar risco de engasgo e queda; orientar barreiras nas escadas e remoção de produtos tóxicos porque bebê começará a explorar o ambiente.
+
+### 17.4 Aos nove e doze meses
+
+Explorar linguagem e gestos: responder ao nome, balbucio, interesse pelo outro e progressão das habilidades. Introduzir segurança de janelas e mobiliário; perguntar se a criança alcança fogão ou piscina. Orientar cuidado oral e acompanhamento de vacinação. Em possível regressão ou dificuldades de interação relevantes, planejar avaliação e não adiar até idade escolar.
+
+### 17.5 Aos dezoito e vinte e quatro meses
+
+Revisar alimentação compartilhada, sono, brincadeira simbólica, comunicação e limites respeitosos; usar instrumento de rastreio de TEA conforme disponibilidade/norma (M-CHAT-R/F entre 16–30 meses no SUS). Perguntar sobre tempo de tela, acessibilidade da piscina, cadeirinha/assento, medicamentos guardados e rotinas de segurança. Preparar plano para desfralde conforme maturidade e sinais da criança, sem punições ou rigidez por idade exata.
+
+### 17.6 Pré-escolar e escolar
+
+Investigar adaptação escolar, visão, audição, comunicação, amizades, comportamento, atividade física, sono e alimentação. Perguntar sobre bullying e segurança no trajeto, além de orientar educação para atravessar ruas e usar capacete. Valorizar brincadeira, leitura e rotina familiar, não apenas avaliações de desempenho acadêmico. Em criança com deficiência, adaptar orientações de mobilidade e segurança à função e suporte específico.
+
+## 18. Algoritmos textuais de prática e prova
+
+### Fluxo A — consulta sem queixa principal
+
+Identificação e contexto familiar → rever intercorrências → aferir crescimento com técnica apropriada e comparar longitudinalmente → observar marcos e ouvir preocupações → examinar sistemas relevantes → verificar vacinas/triagens e saúde bucal → identificar risco por ambiente e mobilidade → orientar duas a três ações concretas → registrar e marcar próxima consulta → antecipar retorno se sinais de alarme.
+
+### Fluxo B — suspeita de alteração de crescimento
+
+Conferir idade, sexo, prematuridade e antropometria → repetir medida duvidosa → comparar diferentes índices e curva no tempo → avaliar alimentação, doença orgânica, medicamentos e contexto → estabelecer se há falha ponderal, linear ou ambos → exames dirigidos e suporte conforme hipótese → definir reavaliação mais próxima ou encaminhamento especializado se grave/progressiva.
+
+### Fluxo C — atraso ou regressão do neurodesenvolvimento
+
+Escutar a preocupação dos cuidadores → confirmar se há regressão, assimetria, alteração auditiva/visual, linguagem receptiva e motricidade → exame neurológico e observação da interação → rastrear TEA quando faixa etária e protocolo indicarem → solicitar avaliação audiológica e outros exames dirigidos → encaminhar e iniciar intervenção funcional sem demora desnecessária → planejar seguimento e apoio familiar.
+
+### Fluxo D — prevenção de lesões não intencionais
+
+Mapear idade/habilidade em aquisição → perguntar ambiente real (berço, trocador, cozinha, janelas, piscina, trânsito, produtos químicos) → priorizar perigos com maior gravidade e chance de exposição → implementar **barreira física + supervisão ativa + preparo para emergências** → conferir entendimento com demonstração e revisar em consulta seguinte. Não entregar cartilha genérica sem relação com a residência.
+
+### Fluxo E — suspeita de violência
+
+Prestar cuidado clínico e avaliar risco imediato → acolher sem perguntas sugestivas → registrar dados objetivos e relato espontâneo → acionar equipe multiprofissional e rede de proteção segundo protocolo e legislação → notificar/comunicar onde exigido → definir plano de segurança/seguimento → não encaminhar criança a ambiente perigoso sem articulação necessária.
+
+### Mini mapa comparativo — o que a puericultura não deve confundir
+
+| Dois conceitos | Distinção prática |
+|---|---|
+| Curva normal × desenvolvimento normal | peso/estatura não medem linguagem, interação ou audição |
+| Percentil baixo × crescimento patológico | tendência, velocidade e família importam |
+| Prematuro por idade cronológica × corrigida | marcos precoces podem usar idade corrigida; vacina não deve ser atrasada indiscriminadamente |
+| Rastreio de TEA × diagnóstico | M-CHAT identifica risco; avaliação clínica multiprofissional define necessidade e hipótese |
+| Sono seguro × sono confortável para adulto | travesseiros/almofadas e sofá podem confortar cuidador, mas elevam riscos |
+| Falta de acesso × negligência | vulnerabilidade socioeconômica requer suporte, não culpabilização |
+| Supervisão × barreira ambiental | ambos são complementares; barreiras protegem em distração breve |
+| Exame de rotina × investigação dirigida | não solicitar todo painel laboratorial em todas as crianças |
+| Calendário de consultas × calendário de vacinas | são duas agendas distintas, ambas devem ser verificadas |
