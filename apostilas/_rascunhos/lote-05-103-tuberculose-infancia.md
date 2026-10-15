@@ -735,6 +735,43 @@ E. A classificação de resistência deixa de importar porque se trata de mening
 **Gabarito: C.** A e B ignoram contraindicação por sítio; C integra idade, resistência e apresentação; D é farmacologicamente inadequada e ainda propõe droga com resistência; E ignora o padrão de sensibilidade. **Mini-revisão:** idade mínima não suplanta contraindicação clínica/anatômica.
 
 
+### Questão 13 — Investigação de linfadenopatia
+
+Criança de cinco anos com linfonodo cervical unilateral há seis semanas, sem sintomas pulmonares e radiografia de tórax sem alterações. Qual afirmação é a mais correta?
+
+A. Radiografia normal exclui tuberculose ganglionar.
+B. Ultrassonografia isolada distingue, com certeza, M. tuberculosis das micobactérias não tuberculosas.
+C. O escore de TB pulmonar confirma automaticamente TB ganglionar.
+D. Amostragem com microbiologia e histopatologia pode ser útil para investigar TB ganglionar e seus diferenciais quando indicada.
+E. Toda adenopatia persistente deve receber tratamento empírico imediato para tuberculose, sem avaliar outras causas.
+
+**Gabarito: D.** A erra ao excluir doença extrapulmonar por imagem torácica normal. B atribui especificidade etiológica ao ultrassom. C aplica escore fora do contexto. D reconhece papel da amostragem e da investigação de MNT, infecções e neoplasias. E expõe a tratamento desnecessário e atraso diagnóstico. **Mini-revisão:** um granuloma ou adenopatia de longa duração não identifica sozinho o agente.
+
+### Questão 14 — Teste molecular negativo e suspeita clínica
+
+Uma criança de três anos, contato domiciliar de caso bacilífero, apresenta falha de crescimento e adenopatia hilar. O TRM-TB da amostra pediátrica é negativo. Qual é a conduta intelectual correta?
+
+A. Considerar a criança definitivamente sem TB.
+B. Interpretar o teste no contexto de amostra, carga bacilar e probabilidade clínica; prosseguir investigação e decisão fundamentada.
+C. Usar IGRA como teste de cura da doença ativa.
+D. Prescrever automaticamente tratamento preventivo sem afastar doença ativa.
+E. Interpretar o resultado como prova de resistência à rifampicina.
+
+**Gabarito: B.** A superestima o valor de exclusão da detecção em doença paucibacilar. B mantém raciocínio integrado. C confunde avaliação imunológica com cura. D incorre em subtratamento se a criança já tiver doença ativa. E inventa resultado que o teste negativo não forneceu. **Mini-revisão:** um teste não detectado pode não eliminar a suspeita em criança pequena fortemente exposta.
+
+### Questão 15 — Forma pleural e gravidade
+
+Adolescente com derrame pleural importante, febre, sinais sistêmicos e coleção septada é investigado por tuberculose. Qual alternativa é adequada?
+
+A. Todo derrame pleural associado à TB é não grave por definição.
+B. Em contexto de suspeita de empiema, a classificação de não gravidade não deve ser presumida; é necessário avaliar complicações e outras etiologias.
+C. A idade abaixo de 16 anos torna obrigatório um regime encurtado.
+D. Contato prévio com tuberculose torna desnecessária a avaliação do líquido pleural.
+E. Padrão miliar no tórax indica TB não grave.
+
+**Gabarito: B.** A ignora que o critério de esquema encurtado corresponde a derrame não complicado. B incorpora estabilidade e características do derrame. C usa a idade isoladamente. D negligencia a investigação do empiema. E transforma sinal de disseminação em critério de baixa gravidade. **Mini-revisão:** localização não define sozinha gravidade.
+
+
 ## 24. Pérolas de prova e erros de conduta
 
 1. Tuberculose-doença pediátrica é frequentemente **paucibacilar**: TRM ou baciloscopia negativos não excluem o quadro.
