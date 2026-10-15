@@ -527,6 +527,61 @@ Uma pessoa pode permanecer com bronquiectasias, obstrução crônica, fibrose ou
 | TB/HIV tem sempre mesmo intervalo até TARV | Meningite e interações alteram risco/conduta | Individualizar conforme PCDT HIV e forma clínica |
 | Efeito adverso grave se resolve dobrando outra droga | Regime exige número/combinação eficaz de ativos | Serviço especializado e protocolo |
 
+### 7.4 TB pediátrica no SUS: diagnosticar sem exigir baciloscopia positiva
+
+Na criança, a TB pode ser **paucibacilar**: existe doença clínica apesar de carga bacteriana respiratória baixa, escarro difícil de obter e teste molecular negativo. Por isso, não importar automaticamente o raciocínio bacteriológico do adulto. A combinação de **contato epidemiológico, sintomas, radiografia, exame imunológico e evolução** tem papel maior, sempre procurando confirmação microbiológica quando viável. O Ministério da Saúde prevê um **sistema de pontuação clínica para suspeita pulmonar em crianças com baciloscopia negativa ou TRM-TB não detectado**; ele não substitui a avaliação especializada em apresentações graves, disseminadas ou extrapulmonares.
+
+Sinais comuns incluem tosse persistente, febre prolongada, perda ponderal ou dificuldade de ganho de peso, adinamia e contato com caso pulmonar bacilífero. **Adenomegalias hilares ou paratraqueais, infiltrado de evolução lenta, atelectasia por compressão brônquica e padrão miliar** podem aparecer na imagem. Em adolescentes, a apresentação pode se aproximar do adulto, inclusive cavitações. Uma criança com sinais de meningite, déficit neurológico, rebaixamento de consciência, desconforto respiratório relevante ou instabilidade requer investigação urgente independentemente da pontuação.
+
+#### 7.4.1 Escore nacional: aplicação sem trocar probabilidades por certezas
+
+O sistema brasileiro combina sintomas e sua duração, sinais radiológicos, contato recente de TB, prova tuberculínica e estado nutricional. **Não é válido somar valores sem examinar a versão oficial do quadro**, pois as faixas e critérios têm particularidades. O Manual de Recomendações do Ministério da Saúde interpreta **40 pontos ou mais** como diagnóstico muito provável, com recomendação de tratamento; **30–35 pontos** como diagnóstico possível, com tratamento a critério médico; pontuação baixa demanda investigação de outras causas e, se necessário, testes adicionais e serviço de referência.
+
+| Evidência | Por que contribui ao escore | Quando pode induzir erro |
+| --- | --- | --- |
+| Tosse/febre/queda ponderal persistentes | Probabilidade clínica de processo subagudo | Pneumonia bacteriana prolongada, rinossinusite e outras causas também existem |
+| Radiografia de curso lento e adenopatia intratorácica | Sugere TB primária da infância | Pneumonia, neoplasias e condições inflamatórias podem mimetizar |
+| Contato com adulto com TB | Aumenta probabilidade pré-teste | Contato isolado não prova que a criança tem doença ativa |
+| PT reativa/IGRA | Identifica resposta imunológica à infecção | **Não distingue ILTB de TB ativa** |
+| Déficit nutricional | Sinal de doença prolongada/risco | Desnutrição tem causas concorrentes e também aumenta vulnerabilidade |
+
+A **prova tuberculínica (PT)** e o **IGRA** não são culturas; um resultado negativo não elimina TB em imunodeprimido ou em fases precoces após exposição. Em caso suspeito, coletar amostras respiratórias com técnica apropriada, inclusive aspirado gástrico ou escarro induzido quando indicados e disponíveis, e seguir o fluxo de cultura/TS. Não esperar uma confirmação impossível para agir em criança gravemente doente; tampouco iniciar esquema inadequado quando existe forte suspeita de resistência no caso fonte.
+
+### 7.5 Quatro ou seis meses? Critérios brasileiros para tuberculose sensível não grave em crianças e adolescentes
+
+A **Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS**, incorporada à orientação oficial do Ministério da Saúde consultada em 2026, permite curso **encurtado de quatro meses** em **crianças e adolescentes selecionados com TB sensível, não grave e sem suspeita de resistência**. O documento organiza seus esquemas pediátricos pela idade, gravidade e apresentação dos medicamentos; os quatro meses **não substituem automaticamente o tratamento padrão de seis meses**. O escopo descrito abrange idade a partir de **três meses**, e o quadro operacional detalha crianças **abaixo de 10 anos** e adolescentes de **10 a menos de 16 anos**. Na fronteira etária e de peso, seguir a redação e os protocolos atualizados da unidade de referência, sem interpolar doses entre apresentações.
+
+**O que é doença não grave elegível?** O documento inclui situações como comprometimento intratorácico sem obstrução de vias aéreas, doença paucibacilar **sem cavitação** confinada a um lobo, derrame pleural não complicado ou algumas apresentações ganglionares isoladas. Avaliação de **imagem, bacteriologia, sintomas e exposição/resistência** permite selecionar com segurança, inclusive quando determinado exame não está disponível. Testes com carga bacilar alta, cavitações extensas, padrão miliar, necessidade de internação por gravidade ou suspeita de TB resistente devem motivar outra conduta.
+
+| Faixa/situação descrita na Nota MS 5/2024 | Fase intensiva quando sensível | Fase de manutenção quando **não grave e elegível** | Cuidado especial |
+| --- | --- | --- | --- |
+| **≤3 meses ou peso <4 kg** | RHZ, doses individualizadas | RH por **quatro meses** após fase intensiva de dois | **Não** indicado esquema de quatro meses; total usual **seis meses**, com avaliação especializada |
+| **>3 meses e <10 anos**, peso adequado, TB pulmonar não grave | **Dois meses de RHZ** | **Dois meses de RH** | Total de quatro meses; formas graves mantêm manutenção maior |
+| **≥10 e <16 anos**, TB pulmonar não grave | **Dois meses de RHZE** | **Dois meses de RH** | Total de quatro meses; conferir formulação e critérios individuais |
+| TB pulmonar grave ou não elegível ao encurtamento | Esquema da idade e gravidade | Em geral manutenção de **quatro meses**, totalizando seis | TB meníngea/osteoarticular grave pode exigir **12 meses**, conforme protocolo |
+| TB resistente ou suspeita importante de resistência | **Não** aplicar tabela de TB sensível de forma automática | Necessita esquema definido após investigação especializada | Distinta das regras BPaL/BPaLM de TB-DR; elegibilidade e faixa etária próprias |
+
+**RHZ** é rifampicina/isoniazida/pirazinamida; **RHZE** inclui etambutol; **RH** é rifampicina/isoniazida. Esses nomes especificam componentes e meses, **não quantidades de comprimidos**. A Nota determina comprimidos dispersíveis de combinação fixa RHZ/RH em várias faixas pediátricas, ou doses individualizadas em outras. **Não usar a tabela adulta de RHZE 150/75/400/275 mg por comprimido para calcular a dose de lactentes e crianças pequenas.** A dose pediátrica precisa ser validada em formulário oficial, por peso atualizado e apresentação disponível no SUS; esquemas de TB/meningite, hepatopatia ou nefropatia exigem regras adicionais.
+
+#### 7.5.1 Exemplo comparativo: a mesma bactéria, durações diferentes
+
+**Criança A:** oito anos, 23 kg, provável TB pulmonar sensível não grave, pequeno infiltrado não cavitário em um lobo, sintomas leves, sem suspeita de resistência. Após avaliação clínica, radiológica e bacteriológica adequada, **pode** ser elegível a 2RHZ/2RH: quatro meses no total. O peso serve para selecionar apresentação/dispersíveis **na prescrição individual**; não é autorização para usar a dose adulta.
+
+**Criança B:** também oito anos, com padrão miliar, hipoxemia e internação. Apesar da idade, **não** satisfaz perfil de TB não grave. Deve receber tratamento da forma clínica e gravidade apropriados, sem importar automaticamente o encurtamento. O mesmo vale para suspeita de meningite, na qual o tratamento e as avaliações são específicos e urgentes.
+
+**Adolescente C:** 12 anos, doença não grave sensível, elegível após avaliação. O documento nacional usa **RHZE** na fase inicial da faixa etária adolescente, não apenas RHZ. Repetir o mesmo esquema farmacológico dos menores de dez anos seria erro de transposição entre faixas.
+
+**Criança com HIV:** imunossupressão, TARV, outras infecções oportunistas e resposta clínica modificam a segurança de encurtar. A Nota exige acompanhamento especial e avaliação ao quarto mês para definir extensão quando necessário; **não** pressupor quatro meses apenas porque a imagem parece limitada.
+
+#### 7.5.2 Por que o quarto mês não é “alta automática”
+
+O seguimento programático deve avaliar **evolução dos sintomas, peso, adesão, interrupções e dados bacteriológicos/radiológicos disponíveis**. O Ministério da Saúde recomenda consultas **mensais**; se não houver resposta adequada ao esquema curto, a fase de manutenção pode ser estendida para completar **seis meses**, após reavaliação de causa de falha, tolerância e possível resistência. Atraso de melhora exige procurar uso incorreto, dose não ajustada ao peso, coinfecção, resistência ou outro diagnóstico; simplesmente “mais medicamento” sem investigação é insuficiente.
+
+**O que não confundir:** a redução pediátrica de TB sensível **2RHZ(E)/2RH** é outra estratégia que não se relaciona diretamente à combinação **BPaLM** para TB resistente. Não aplicar limites, drogas nem exclusões de um regime a outro sem conferir a norma específica. A vacina BCG não substitui investigação e tratamento quando necessários.
+
+**Fontes brasileiras:** Ministério da Saúde, *Nota Informativa nº 5/2024-CGTM/DATHI/SVSA/MS*, especialmente quadro da idade/gravidade e critérios de elegibilidade, https://www.gov.br/aids/pt-br/central-de-conteudo/notas-informativas/2024/nota-informativa-no-5-2024-cgtm.pdf/@@download/file ; Ministério da Saúde, página *Tratamento*, atualizada em 16/03/2026, https://www.gov.br/aids/pt-br/assuntos/tuberculose/tratamento ; Ministério da Saúde, *Manual de Recomendações para o Controle da Tuberculose no Brasil*, capítulo de diagnóstico infantil, https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/svsa/tuberculose/manual-de-recomendacoes-e-controle-da-tuberculose-no-brasil-2a-ed.pdf . O quadro foi reescrito para uso pedagógico; **não reproduz a diagramação nem imagem do documento ministerial**.
+
+
 ## 8. Casos clínicos comentados
 
 ### Caso 1 — Tosse prolongada e contato domiciliar: confirmação e prevenção
@@ -599,6 +654,15 @@ Homem de 45 anos inicia RHZE para TB pulmonar sensível e retorna no 18º dia co
 ### Caso 12 — Contato imunodeprimido com teste inicial negativo
 
 Mulher de 38 anos em imunossupressão por doença autoimune convive em domicílio pequeno com homem em tratamento de TB pulmonar bacilífera. Ela está sem tosse e teve IGRA negativo poucas semanas após o último contato intenso. **Hipóteses:** exposição com infecção ainda não demonstrada; risco de resposta imune limitada e janela após exposição. **Raciocínio:** o teste negativo não exclui infecção em imunossuprimido nem substitui avaliação clínica e protocolo para contatos de alto risco. **Exames:** avaliação para descartar doença ativa, RX conforme indicação, registro do perfil do caso fonte e estratégia de PT/IGRA e seguimento orientada ao programa. **Conduta:** encaminhar à equipe de TB/serviço que acompanha imunossupressão para definir indicação e momento de tratamento preventivo e orientar sinais de retorno. **Por que este caso importa:** a combinação de alto risco e teste imune negativo exige raciocínio temporal e não dispensa acompanhamento.
+
+
+### Caso 13 — TB pulmonar sensível não grave em escolar: seis meses são sempre necessários?
+
+Menino de oito anos, 23 kg, filho de adulto com TB sensível confirmada, apresenta tosse subaguda, cansaço e perda de peso. Radiografia revela opacidade limitada a um lobo, sem cavitação e sem obstrução de via aérea. Não há sinais de gravidade, e a investigação do caso fonte não sugere resistência. **Hipóteses:** TB pulmonar provável na criança, ainda necessitando integração de dados clínicos e microbiológicos conforme disponibilidade. **Raciocínio:** TB infantil é frequentemente paucibacilar e o escore nacional pode apoiar diagnóstico mesmo sem teste respiratório positivo. A Nota MS 5/2024 permite considerar **tratamento sensível não grave por quatro meses** em criança selecionada dessa idade, com fase inicial RHZ e manutenção RH. **Exames:** avaliação clínica, radiografia e investigação microbiológica possível; PT/IGRA como evidência de infecção, sem confundir com confirmação de doença ativa. **Conduta:** após definição diagnóstica pelo serviço, selecionar apresentação/dispersível e dose pediátrica por peso conforme SUS, programar consultas mensais e ampliar investigação se não houver melhora. **Por que importa:** distinguir elegibilidade a encurtamento de aplicar seis ou quatro meses indiscriminadamente.
+
+### Caso 14 — Suspeita de TB grave em escolar não é candidata a encurtamento automático
+
+Menina de sete anos, com contato domiciliar de TB, inicia febre, tosse, prostração, hipoxemia e radiografia com múltiplos micronódulos difusos sugestivos de padrão miliar. Encontra-se internada com necessidade de suporte de oxigênio. **Hipóteses:** TB disseminada/miliar, além de diagnósticos diferenciais infecciosos. **Raciocínio:** a gravidade clínica e o padrão disseminado **excluem aplicar automaticamente a categoria de TB pulmonar não grave** da Nota 5/2024; é preciso investigação e tratamento dirigidos à forma grave, incluindo pesquisa de comprometimento do SNC se houver sintomas neurológicos. **Exames:** microbiologia conforme amostras possíveis, avaliação de disseminação, testes de sensibilidade, avaliação de órgãos e HIV conforme indicação. **Conduta:** manejo hospitalar com equipe de referência, suporte clínico e regime/duração apropriados à gravidade; não encurtar a quatro meses pela idade. **Por que importa:** a elegibilidade depende de forma clínica, não de ser criança.
 
 
 ## 9. Questões autorais comentadas
@@ -752,6 +816,35 @@ A) É uma estratégia de punição do paciente. B) Pode envolver observação pa
 Uma criança com cicatriz de BCG reside com adulto que tem TB pulmonar bacilífera. Qual conclusão é adequada?
 A) A cicatriz exclui infecção pelo complexo MTB. B) A BCG protege particularmente de formas graves infantis, mas não dispensa investigação de contato. C) A vacina substitui tratamento preventivo quando este é indicado. D) Contato domiciliar só importa se compartilhou talheres.
 **Gabarito B.** **A/C** superestimam efeito esterilizante da vacina; **D** confunde transmissão aérea com contato por objetos. **Mini-revisão:** prevenção inclui BCG, ventilação, avaliação de contatos e ILTB quando elegível.
+
+
+### Questão 22 — Tratamento encurtado da TB pediátrica
+
+Qual paciente pode ser considerado para **2RHZ(E)/2RH, totalizando quatro meses**, conforme a Nota Informativa nº 5/2024 do Ministério da Saúde, após avaliação completa?
+
+A) Lactente de dois meses com doença pulmonar.
+
+B) Criança de oito anos com TB pulmonar sensível paucibacilar não cavitária, doença limitada e sem sinais de gravidade nem suspeita de resistência.
+
+C) Criança de seis anos com TB meníngea e déficit neurológico.
+
+D) Adolescente com TB resistente à rifampicina e padrão disseminado.
+
+**Gabarito: B.** A nota contempla crianças selecionadas com TB sensível não grave e critérios de elegibilidade. **A:** idade ≤3 meses não entra no encurtamento. **C:** TB meníngea grave exige esquema e duração próprios. **D:** resistência e disseminação não pertencem ao regime abreviado de TB sensível. **Mini-revisão:** idade, peso, gravidade, padrão de resistência e evolução devem ser verificados antes de decidir quatro meses.
+
+### Questão 23 — Composição da fase intensiva por idade
+
+Duas crianças elegíveis ao tratamento sensível não grave têm seis e doze anos. Sobre a Nota Informativa nº 5/2024, qual alternativa é correta?
+
+A) A idade não interfere na composição da fase intensiva.
+
+B) Em geral, a fase intensiva do menor de dez anos usa RHZ; a do adolescente a partir de dez anos usa RHZE, observadas apresentações/criterios da norma.
+
+C) Todas as crianças devem receber automaticamente BPaLM.
+
+D) A resposta clínica não precisa ser verificada até o último dia da terapia.
+
+**Gabarito: B.** A nota diferencia RHZ em menores de dez e RHZE a partir de dez na fase inicial do esquema sensível. **A:** ignora grupo etário e formulações. **C:** BPaLM é terapia de TB resistente em população elegível, não substitui tratamento pediátrico sensível. **D:** o seguimento mensal identifica eventos adversos, resposta inadequada e necessidade de extensão para seis meses. **Mini-revisão:** a mesma duração total pode conter **fármacos diferentes na fase intensiva** conforme idade.
 
 
 ## Referências essenciais
