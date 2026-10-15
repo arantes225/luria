@@ -18,7 +18,7 @@ Fonte interna: `assets/js/apostilas-lotes-225.js`. O calendário de 260 temas di
 | **228** | Clínica Médica | Neuropatias periféricas e doenças neuromusculares | Etapa zero parcial: Drive `06 - MIOPATIAS.pdf` efetivamente consultado, mas **não equivale ao escopo de neuropatias**, necessidade de complemento antes de edição |
 | **229** | Clínica Médica | Obesidade e síndrome metabólica no adulto | **MANUSCRITO INICIAL PRODUZIDO** `_rascunhos/lote-11-aula-229-obesidade-sindrome-metabolica.md` (30.921 caracteres brutos), 4 casos, 6 questões; benchmark Drive lido; **NÃO CERTIFICADO** |
 | **230** | Clínica Médica | Osteoporose, sarcopenia e fragilidade | Pendente etapa zero completa; conferir sobreposição com geriatria |
-| **231** | Clínica Médica | Hemoglobinopatias e anemias hereditárias | Pendente; conferir sobreposição com anemia do cronograma e diretriz oficial de doença falciforme 2024 |
+| **231** | Clínica Médica | Hemoglobinopatias e anemias hereditárias | **MANUSCRITO INICIAL PRODUZIDO** `_rascunhos/lote-11-aula-231-hemoglobinopatias.md` (31.616 caracteres brutos), 5 casos e 8 questões; benchmark Drive lido, PCDT 2024 e ASH/TIF consultados; **NÃO CERTIFICADO** |
 | **232** | Clínica Médica | Coagulopatias, trombofilias e hemoterapia | Pendente; organizar sem duplicar hematologia e trombofilias gestacionais |
 | **233** | Clínica Médica | Oncologia clínica e emergências oncológicas | Pendente; preservar vínculo com oncologia cirúrgica sem copiar |
 | **234** | Clínica Médica | Doença de Chagas | Pendente; **separar de febre maculosa** que possui epidemiologia e manejo diferentes |
@@ -53,6 +53,13 @@ O código antigo de 260 temas não contém toda a ampliação planejada para a c
 - **Fontes oficiais de atualização verificadas:** ABESO 2026 para farmacoterapia; OMS 2025 GLP-1; Resolução CFM 2.429/2025 para critérios de cirurgia. A tabela obsoleta de tipos de operação no comparativo não é adotada sem checagem.
 - **Conteúdo original criado:** diagnóstico, adiposidade central, circuitos neuroendócrinos, síndrome metabólica, terapia nutricional e comportamental, farmacoterapia orientadora, cirurgia, 4 casos e 6 questões. Imagens ainda não selecionadas/aprovadas.
 - **Pendências:** completar ≥60k úteis com detalhamento integral, farmacoterapia conforme bula/ABESO, cenários especiais, critérios operacionais da síndrome metabólica, avaliação de qualidade em PWA, auditoria de questões e casos.
+- **Decisão:** EM DESENVOLVIMENTO, NÃO PUBLICAR.
+
+## Auditoria da apostila 231
+- **Drive benchmark aberto/lido:** `02 - HEMATO - ANEMIA FALCIFORME.pdf` e `03 - HEMATO - ANEMIA FERROPRIVA, SUPLEMENTACAO DE FERRO E TALASSEMIA.pdf` em 15/10/2026; avisos de circulação não autorizam cópia. Origem Estratégia MED não comprovada.
+- **Fontes primárias consultadas:** MS PCDT doença falciforme de 2024, ASH 2020 para AVC/hemotransfusão, Thalassaemia International Federation 5ª edição 2025.
+- **Entregue:** bases das hemoglobinas, genótipos HbS e talassemias, crise vaso-oclusiva, STA, sequestro, aplasia, AVC, terapia longitudinal, 5 casos e 8 questões originais.
+- **Pendências:** revisão integral e ampliação para 60K úteis, fluxos por faixa etária, doses/monitorização, imagens autorizadas/Admin, validação científica e PWA.
 - **Decisão:** EM DESENVOLVIMENTO, NÃO PUBLICAR.
 
 ## Procedimento de continuidade por chats paralelos e Codex
