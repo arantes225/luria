@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-15",
+  "version": "2026-10-15-lote11-audit2",
   "nota": "Correspondência editorial obrigatória 401/401; associar no card não significa que o capítulo existe ou está cientificamente correto. Prioridade MedCof não autoriza excluir conteúdo.",
   "source_count": 401,
   "coverage": {
@@ -3345,7 +3345,8 @@
       "bloco_medcof": 33,
       "luria_principal": 194,
       "luria_complementares": [
-        274
+        274,
+        237
       ],
       "tipo_insercao": "TEMA_DO_PLANO",
       "conferencia_conteudo": "PENDENTE_DE_VALIDACAO_DO_CAPITULO"
@@ -3670,7 +3671,9 @@
       "pagina_pdf": 24,
       "bloco_medcof": 36,
       "luria_principal": 196,
-      "luria_complementares": [],
+      "luria_complementares": [
+        237
+      ],
       "tipo_insercao": "TEMA_DO_PLANO",
       "conferencia_conteudo": "PENDENTE_DE_VALIDACAO_DO_CAPITULO"
     },
@@ -3946,7 +3949,9 @@
       "pagina_pdf": 25,
       "bloco_medcof": 38,
       "luria_principal": 196,
-      "luria_complementares": [],
+      "luria_complementares": [
+        237
+      ],
       "tipo_insercao": "TEMA_DO_PLANO",
       "conferencia_conteudo": "PENDENTE_DE_VALIDACAO_DO_CAPITULO"
     },
@@ -4185,8 +4190,10 @@
       "incidencia_medcof": "Alta",
       "pagina_pdf": 27,
       "bloco_medcof": 41,
-      "luria_principal": 234,
-      "luria_complementares": [],
+      "luria_principal": 186,
+      "luria_complementares": [
+        234
+      ],
       "tipo_insercao": "TEMA_DO_PLANO",
       "conferencia_conteudo": "PENDENTE_DE_VALIDACAO_DO_CAPITULO"
     },
@@ -4838,5 +4845,9 @@
       "tipo_insercao": "NOVA_PROPOSTA_LOTES_FINAIS",
       "conferencia_conteudo": "PENDENTE_DE_VALIDACAO_DO_CAPITULO"
     }
+  ],
+  "change_log": [
+    "Corrigido #347: febre maculosa e icterícias febris são um capítulo de zoonoses/diferencial de síndrome febril no #186, NÃO de Doença de Chagas #234.",
+    "Adicionadas referências cruzadas de Ortopedia e Trauma Vascular para #237 (síndrome compartimental de membros), distinta de síndrome compartimental intra-abdominal."
   ]
 }
