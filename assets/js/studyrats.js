@@ -1,3 +1,34 @@
+let sharedStudyratsGroupId=null,sharedStudyratsRequest=0;
+function sharedStudyratsStatus(message,kind){
+ const status=document.getElementById('sr-group-status');
+ if(sharedStudyratsGroupId&&status){status.textContent=message;status.dataset.error=String(kind==='error');}
+ else setFriendsStatus(message,kind);
+}
+window.LuriaGroupRats={
+ mount(groupId,slot,admin){
+  const card=document.getElementById('studyrats-card');
+  const legacy=document.getElementById('community-competition-legacy');
+  if(!card||!legacy)return;
+  const target=groupId||null,changed=sharedStudyratsGroupId!==target;
+  sharedStudyratsGroupId=target;
+  if(changed){
+   sharedStudyratsRequest++;sharedStudyratsRows=[];
+   for(const id of ['studyrats-list','studyrats-recent-ranking','sr-group-lobby','sr-group-status'])document.getElementById(id)?.replaceChildren();
+   document.getElementById('studyrats-create').hidden=true;
+   document.getElementById('studyrats-challenge-title').value='';
+  }
+  if(!target||!slot){legacy.append(card);return;}
+  slot.append(card);
+  if(!document.getElementById('sr-group-status')){
+   const status=document.createElement('p');status.id='sr-group-status';status.setAttribute('role','status');card.prepend(status);
+  }
+  document.getElementById('studyrats-toggle-create').hidden=!admin;
+  document.getElementById('studyrats-friends')?.closest('.studyrats-people-block')?.setAttribute('hidden','');
+  for(const option of document.getElementById('studyrats-type').options){option.hidden=option.value==='retention';option.disabled=option.hidden;}
+  if(document.getElementById('studyrats-type').value==='retention')document.getElementById('studyrats-type').value='flashcards';
+  if(changed)sharedStudyratsLoad();
+ }
+};
 let sharedStudyratsRows=[];
 let sharedStudyratsChannel=null;
 let sharedStudyratsTimer=null;
@@ -477,13 +508,17 @@ function sharedStudyratsDeadlineText(date){
 async function sharedStudyratsLoad(){
   const host=document.getElementById('studyrats-list');
   if(!host||!window.supabaseClient)return;
-  const result=await window.supabaseClient.rpc('my_studyrats_challenges_v3');
+  const request=++sharedStudyratsRequest,group=sharedStudyratsGroupId;
+  const result=await window.supabaseClient.rpc(group?'group_studyrats':'my_studyrats_challenges_v3',group?{p_action:'snapshot',p_payload:{group_id:group}}:undefined);
+  if(request!==sharedStudyratsRequest||group!==sharedStudyratsGroupId)return;
   if(result.error){
     console.error(result.error);
     host.innerHTML='<div class="studyrats-empty"><div><strong>Não foi possível carregar os desafios</strong><span>Tente atualizar a página.</span></div></div>';
     return;
   }
-  sharedStudyratsRows=result.data||[];
+  sharedStudyratsRows=group?(result.data?.rows||[]):(result.data||[]);
+  let lobby=document.getElementById('sr-group-lobby');
+  if(group){if(!lobby){lobby=document.createElement('div');lobby.id='sr-group-lobby';host.before(lobby);}lobby.innerHTML=(result.data?.challenges||[]).filter(c=>!c.joined&&c.status==='active').map(c=>'<div class="sr-group-invite"><span><strong>'+fEsc(c.title)+'</strong><small>Participe compartilhando seu progresso com esta turma.</small></span><button type="button" class="button secondary" data-race-join="'+fEsc(c.id)+'">Participar</button></div>').join('');for(const button of lobby.querySelectorAll('[data-race-join]'))button.onclick=async()=>{button.disabled=true;try{const response=await window.supabaseClient.rpc('group_studyrats',{p_action:'join',p_payload:{group_id:group,challenge_id:button.dataset.raceJoin}});if(response.error)throw response.error;if(group===sharedStudyratsGroupId)await sharedStudyratsLoad();}catch(error){if(group===sharedStudyratsGroupId)sharedStudyratsStatus(error.message,'error');}finally{button.disabled=false;}};}else lobby?.remove();
   sharedStudyratsRenderRecentRanking();
   sharedStudyratsRender();
 }
@@ -528,7 +563,7 @@ function sharedStudyratsRender(){
       '</div>';
     }).join('');
 
-    const canDelete=ch.creator_user_id===window.docmapUser.id;
+    const canDelete=!sharedStudyratsGroupId&&ch.creator_user_id===window.docmapUser.id;
     const finished=ch.status==='finished';
 
     return '<article class="studyrats-challenge">'+
@@ -567,7 +602,7 @@ function sharedStudyratsRender(){
       const result=await window.supabaseClient.rpc('delete_studyrats_challenge',{p_challenge_id:btn.dataset.deleteStudyrat});
       if(result.error){
         console.error(result.error);
-        setFriendsStatus(result.error.message||'Não foi possível apagar o desafio.','error');
+        sharedStudyratsStatus(result.error.message||'Não foi possível apagar o desafio.','error');
         return;
       }
       await sharedStudyratsLoad();
@@ -583,39 +618,41 @@ async function sharedStudyratsStart(){
   const button=document.getElementById('studyrats-start');
 
   if(!title){
-    setFriendsStatus('Digite um título para o desafio.','error');
+    sharedStudyratsStatus('Digite um título para o desafio.','error');
     document.getElementById('studyrats-challenge-title')?.focus();
     return;
   }
   if(title.length>80){
-    setFriendsStatus('O título pode ter no máximo 80 caracteres.','error');
+    sharedStudyratsStatus('O título pode ter no máximo 80 caracteres.','error');
     document.getElementById('studyrats-challenge-title')?.focus();
     return;
   }
-  if(!selected.length){
-    setFriendsStatus('Selecione pelo menos um amigo para a corrida.','error');
+  if(!sharedStudyratsGroupId&&!selected.length){
+    sharedStudyratsStatus('Selecione pelo menos um amigo para a corrida.','error');
     return;
   }
 
   if(button)button.disabled=true;
   try{
-    const result=await window.supabaseClient.rpc('create_studyrats_challenge_v2',{
+    const group=sharedStudyratsGroupId;
+    const result=group?await window.supabaseClient.rpc('group_studyrats',{p_action:'create',p_payload:{group_id:group,title,type,deadline}}):await window.supabaseClient.rpc('create_studyrats_challenge_v2',{
       p_title:title,
       p_challenge_type:type,
       p_goal:1,
       p_deadline:deadline,
       p_friend_user_ids:selected
     });
+    if(group!==sharedStudyratsGroupId)return;
     if(result.error)throw result.error;
     document.getElementById('studyrats-create').hidden=true;
     const titleInput=document.getElementById('studyrats-challenge-title');
     if(titleInput)titleInput.value='';
     document.querySelectorAll('#studyrats-friends input:checked').forEach(function(el){el.checked=false;});
     await sharedStudyratsLoad();
-    setFriendsStatus('Desafio Studyrats criado.','success');
+    sharedStudyratsStatus('Desafio Studyrats criado.','success');
   }catch(error){
     console.error(error);
-    setFriendsStatus(error.message||'Não foi possível criar o desafio.','error');
+    sharedStudyratsStatus(error.message||'Não foi possível criar o desafio.','error');
   }finally{
     if(button)button.disabled=false;
   }
@@ -664,7 +701,7 @@ window.initSharedStudyrats=function(){
     .subscribe();
 
   clearInterval(sharedStudyratsTimer);
-  function refreshVisibleRace(){if(!document.hidden&&!document.getElementById('community-friends-panel')?.hidden)sharedStudyratsLoad();}
+  function refreshVisibleRace(){if(!document.hidden&&sharedStudyratsGroupId&&!document.getElementById('gc-panel-rats')?.hidden)sharedStudyratsLoad();}
   sharedStudyratsTimer=setInterval(refreshVisibleRace,30000);
   document.addEventListener('visibilitychange',refreshVisibleRace);
   window.addEventListener('luria:community-tab',function(event){if(event.detail.area==='friends')refreshVisibleRace();});

@@ -96,3 +96,17 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
 
 }
 }
+
+@layer luria-ui-education {body[data-ui="v2"][data-page="amigos"] {
+ .sg-type-options {border:0;padding:0;margin:0 0 20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+ .sg-type-options[hidden] {display:none;}
+ .sg-type-options legend {font-weight:600;margin-bottom:10px;}
+ .sg-type-options label {display:flex;align-items:flex-start;gap:10px;padding:16px;border:1px solid var(--color-border);border-radius:var(--ui-radius-feature);background:var(--color-surface);cursor:pointer;}
+ .sg-type-options label:has(input:checked) {border-color:var(--resource-groups);background:color-mix(in srgb,var(--resource-groups) 8%,var(--color-surface));}
+ .sg-type-options label:has(input:focus-visible) {outline:2px solid var(--color-primary);outline-offset:3px;}
+ .sg-type-options input {width:18px;height:18px;flex:0 0 18px;accent-color:var(--resource-groups);margin:3px 0;}
+ .sg-type-options span {display:grid;gap:6px;min-width:0;}
+ .sg-type-options strong {font-size:14px;}
+ .sg-type-options small {font-size:13px;line-height:1.5;color:var(--color-text-secondary);}
+ @media(max-width:520px){.sg-type-options {grid-template-columns:1fr;}}
+}}

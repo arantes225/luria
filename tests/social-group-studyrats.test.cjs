@@ -1,0 +1,34 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs');const {database,A,B,C,Q}=require('./fixtures/social-db.cjs');
+test('group races isolate groups, retain legacy history and enforce membership, consent and privacy',async t=>{
+ const f=await database();t.after(()=>f.db.close());await f.db.exec(`
+ create table public.studyrats_challenges(id uuid primary key default gen_random_uuid(),creator_user_id uuid,challenge_type text,goal numeric,deadline date,created_at timestamptz default now(),status text default 'active',title text);
+ create table public.studyrats_participants(challenge_id uuid references public.studyrats_challenges(id),user_id uuid,joined_at timestamptz default now(),primary key(challenge_id,user_id));
+ create function private.delete_studyrats_challenge(p_challenge_id uuid) returns void language plpgsql security definer set search_path='' as $$begin delete from public.studyrats_challenges where id=p_challenge_id and creator_user_id=auth.uid();if not found then raise exception 'Sem permissão';end if;end;$$;
+ insert into public.studyrats_challenges(id,creator_user_id,title,challenge_type,goal,deadline) values('dddddddd-dddd-4ddd-8ddd-dddddddddddd','${A}','Histórico antigo','flashcards',1,current_date+7);
+ insert into public.studyrats_participants(challenge_id,user_id) values('dddddddd-dddd-4ddd-8ddd-dddddddddddd','${A}');
+ create table public.flashcard_reviews(user_id uuid,reviewed_at timestamptz,was_correct boolean);
+ create table public.study_topics(user_id uuid,status text,completed_at timestamptz);
+ alter table public.study_sessions add column started_at timestamptz default now();
+ update public.profiles set share_study_status=true;
+ alter table public.studyrats_challenges enable row level security;
+ grant select on public.studyrats_challenges to authenticated;
+ `);await f.db.exec(fs.readFileSync('tests/fixtures/studyrats-legacy-v3.sql','utf8'));
+ await f.db.exec(fs.readFileSync('supabase/migrations/20261015153556_social_group_competition.sql','utf8'));await f.db.exec(fs.readFileSync('supabase/migrations/20261015153559_social_group_studyrats.sql','utf8'));await f.db.exec(fs.readFileSync('supabase/migrations/20261015153559_social_group_studyrats.sql','utf8'));
+ await f.db.exec('create policy fixture_rat_read on public.studyrats_challenges for select to authenticated using(private.is_studyrats_participant(id));grant execute on function private.my_studyrats_challenges_v3() to authenticated;');
+ const rats=async(action,payload)=>(await f.db.query('select public.group_studyrats($1,$2::jsonb) result',[action,JSON.stringify(payload)])).rows[0].result;
+ await f.as(A);assert.equal((await f.snapshot()).group_studyrats_available,true);
+ const g1=await f.command('create_group',{name:'Cardio',competitive:true}),g2=await f.command('create_group',{name:'Neuro',competitive:true});const snapshot=await f.snapshot();const code=snapshot.groups.find(g=>g.id===g1.id).invite;
+ const c1=await rats('create',{group_id:g1.id,title:'Questões da semana',type:'ccqs',deadline:'2099-01-01'}).catch(async e=>{assert.match(e.message,/Período inválido/);return rats('create',{group_id:g1.id,title:'Questões da semana',type:'ccqs',deadline:new Date(Date.now()+6*86400000).toISOString().slice(0,10)});});
+ const date=new Date(Date.now()+6*86400000).toISOString().slice(0,10);const c2=await rats('create',{group_id:g2.id,title:'Outra turma',type:'flashcards',deadline:date});
+ await f.as(A);await assert.rejects(f.db.query('select private.delete_studyrats_challenge($1)',[c1.id]),/Sem permissão/);assert.equal((await f.db.query('select * from private.my_studyrats_challenges_v3()')).rows.length,1);
+ await f.as(B);await f.command('join_group',{code});await assert.rejects(rats('join',{group_id:g1.id,challenge_id:c2.id}),/neste grupo/);await rats('join',{group_id:g1.id,challenge_id:c1.id});
+ await f.db.exec('reset role');await f.db.query('insert into public.question_attempts(user_id,question_item_id,result,answered_at) values($1,$2,$3,now())',[B,Q,'correct']);await f.as(B);
+ let result=await rats('snapshot',{group_id:g1.id});assert.equal(result.challenges.length,1);assert.equal(result.rows.length,2);assert.equal(result.rows.find(r=>r.participant_user_id===B).progress,1);assert.ok(result.rows.every(r=>r.challenge_id===c1.id));
+ await f.as(C);await assert.rejects(rats('snapshot',{group_id:g1.id}),/Acesso restrito/);
+ await f.as(A);await f.command('group_update',{group_id:g1.id,competitive:false});await assert.rejects(rats('snapshot',{group_id:g1.id}),/indisponível/);assert.equal((await f.db.query('select * from public.studyrats_challenges where id=$1',[c1.id])).rows.length,0);
+ await f.command('group_update',{group_id:g1.id,competitive:true});assert.equal((await rats('snapshot',{group_id:g1.id})).rows.length,2);
+ await f.db.exec('reset role');await f.db.query('update public.profiles set share_study_status=false where user_id=$1',[B]);await f.as(A);assert.equal((await rats('snapshot',{group_id:g1.id})).rows.length,1);
+ await f.command('group_remove',{group_id:g1.id,user_id:B});await f.as(B);await assert.rejects(rats('snapshot',{group_id:g1.id}),/Acesso restrito/);assert.equal((await f.db.query('select * from public.studyrats_challenges where id=$1',[c1.id])).rows.length,0);
+ assert.equal((await f.db.query('select * from private.my_studyrats_challenges_v3()')).rows.length,0);
+ await f.as(null);await assert.rejects(rats('snapshot',{group_id:g1.id}),/Acesso restrito/);await f.db.exec('reset role');assert.equal((await f.db.query('select count(*)::int n from public.studyrats_participants where challenge_id=$1',[c1.id])).rows[0].n,2);
+});

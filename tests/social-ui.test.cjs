@@ -2,8 +2,8 @@ const test=require('node:test'),assert=require('node:assert/strict');
 const {page,read}=require('./fixtures/frontend.cjs');
 const {database,A,B,C,SET}=require('./fixtures/social-db.cjs');
 const tick=()=>new Promise(r=>setTimeout(r,30));
-async function fixture(t){
- const f=await database();t.after(()=>f.db.close());const {w,d,errors}=page(t,'amigos/index.html');let queue=Promise.resolve(),fails=false;
+async function fixture(t,competition=false){
+ const f=await database();t.after(()=>f.db.close());if(competition)await f.db.exec(read('supabase/migrations/20261015153556_social_group_competition.sql'));const {w,d,errors}=page(t,'amigos/index.html');let queue=Promise.resolve(),fails=false;
  const calls=[];const dispatch=(name,args)=>{
   const work=queue.then(async()=>{await f.as(A);calls.push({name,args});
    if(name==='social_snapshot')return f.snapshot(args.p_room_id);
@@ -147,3 +147,6 @@ test('compact viewport updates preserve the chat draft and composer through keyb
  d.getElementById('sc-tab-plan').dispatchEvent(new w.KeyboardEvent('keydown',{key:'End',bubbles:true,cancelable:true}));assert.equal(d.activeElement.id,'sc-tab-progress');assert.equal(d.getElementById('sc-panel-progress').hidden,false);
  d.getElementById('sc-tab-live').click();assert.equal(d.getElementById('sc-panel-live').hidden,false);assert.equal(d.getElementById('social-timer'),timer);assert.equal(timer.textContent,'23:42');assert.equal(d.getElementById('social-message-form'),composer);assert.equal(input.value,'Rascunho da conversa');assert.deepEqual(errors,[]);
  });
+
+test('group type selector stays unavailable against an older schema',async t=>{const x=await fixture(t),{d}=x;d.getElementById('social-group-create').click();await x.settle();assert.equal(d.getElementById('social-group-type').hidden,true);assert.equal(d.getElementById('social-group-type').disabled,true);});
+test('group type UI sends booleans and administrator switching preserves the group',async t=>{const x=await fixture(t,true),{d,w}=x;await w.LuriaSocial.refreshSocial();d.getElementById('social-group-create').click();await x.settle();const type=d.getElementById('social-group-type');assert.equal(type.hidden,false);assert.equal(type.disabled,false);const form=d.getElementById('social-dialog-form');form.elements.name.value='Turma competitiva';form.querySelector('[name="competitive"][value="true"]').checked=true;form.dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await x.settle();const call=x.calls.find(c=>c.args?.p_action==='create_group');assert.equal(call.args.p_payload.competitive,true);const button=d.querySelector('[data-group-competition]');assert.match(button.textContent,/Desativar/);button.click();await x.settle();const update=x.calls.find(c=>c.args?.p_action==='group_update');assert.equal(update.args.p_payload.competitive,false);assert.match(d.querySelector('[data-group-competition]').textContent,/Ativar/);assert.deepEqual(x.errors,[]);});
