@@ -12,7 +12,7 @@
 | 050 | Medicina Preventiva | Financiamento e gestão do SUS | **Manuscrito original iniciado** em apostilas/_rascunhos/lote-03-050-financiamento-gestao-sus.md (69.468 caracteres brutos; 6 casos e 10 questões). Benchmark Drive foi apenas SUS.pdf correlato, sem apostila específica; LC 141, Constituição, Portaria 10.994/2026 e MS usados como fontes primárias. Em revisão; não publicado. |
 | 051 | Clínica Médica | DPOC | **Etapa zero e produção iniciadas em 15/10/2026:** PDFs DPOC estável e exacerbada lidos no Drive, manuscrito autoral apostilas/_rascunhos/lote-03-051-dpoc.md (69.764 caracteres brutos, 6 casos, 10 questões); confronto GOLD 2026 e PCDT brasileiro aprovado em 2025, sem substituir conteúdos publicados. NÃO certificado. |
 | 052 | Cirurgia Geral | Traumatismo cranioencefálico | **Manuscrito autoral verificado** em apostilas/_rascunhos/lote-03-052-traumatismo-cranioencefalico.md (~91,8 mil caracteres brutos; 6 casos, 12 questões). Benchmark TCE grave/morte encefálica realmente lido no Drive; BTF/NICE/ACS/CDC usados com distinção de evidências e pendências. NÃO certificado/publicado. |
-| 053 | Pediatria | Desidratação e terapia de reidratação | Não localizada pasta própria; cruzar com nº 058 (diarreia aguda) para evitar repetição do mesmo algoritmo terapêutico. |
+| 053 | Pediatria | Desidratação e terapia de reidratação | **Manuscrito original em andamento** apostilas/_rascunhos/lote-03-053-desidratacao-terapia-reidratacao-pediatria.md (~57,2 mil caracteres brutos, 6 casos, 10 questões), incluindo MS Planos A/B/C, SRO, manutenção e exceções; benchmark de Drive específico NÃO localizado, apenas PDF correlato de gastroenterologia. Pendente de revisão técnica do cartaz MS julho/2026, não publicado. |
 | 054 | Ginecologia e Obstetrícia | Doença trofoblástica gestacional | **Já ensinada** em apostilas/hemorragias-primeiro-terceiro-trimestre/index.html, capítulo “Doença trofoblástica gestacional”. Auditar antes de criar. |
 | 055 | Medicina Preventiva | Vigilância em Saúde | Não localizada pasta própria; planejar fundamentos integradores sem repetir subáreas 060/065. |
 | 056 | Clínica Médica | Pneumonias adquiridas na comunidade | Não localizada pasta própria; também aparece como área de produção programada do lote 2, portanto verificar qualquer trabalho em outra branch antes de criar. |
@@ -95,3 +95,10 @@
 - Extensão Markdown ~91.795 caracteres brutos; núcleo expositivo antes dos casos estimado em ~48857 caracteres sem títulos/tabelas, portanto **não afirmar automaticamente 60K úteis**.
 - Fontes comparativas do Drive foram abertas e suas limitações registradas; a diretriz ACS 2024 integral, PECARN completo, fontes brasileiras e auditoria farmacológica ainda estão pendentes. Uma imagem Wikimedia com licença CC BY-SA 3.0 foi identificada como candidata (não publicada).
 - Próxima: auditoria da aula 053 Desidratação e terapia de reidratação, cruzada com aula 058 Diarreia aguda.
+
+## 9. Continuação — aula 053
+
+- Abriu-se e leu-se no Drive o PDF 01 - GASTRO - DIARREIA AGUDA + CLOSTRIDIUM.pdf, material correlato principalmente adulto. Buscas adicionais não encontraram documento infantil de terapia de reidratação; etapa zero equivalente permanece incompleta.
+- Referências nacionais: página Ministério da Saúde DDA e cartaz de manejo atualizado em 10/07/2026; AIDPI clássico usado com cautela para exemplos de Plano C, observando idade e excluindo contextos de choque e comorbidades.
+- Manuscrito 053 verificado com 57244 caracteres Markdown brutos, seis casos e dez questões; aulas 053 e 058 são complementares, evitando conteúdo etiológico redundante.
+- Sem publicação, merge, deploy ou incorporação de imagens; revisar volumes e doses com pediatria.
