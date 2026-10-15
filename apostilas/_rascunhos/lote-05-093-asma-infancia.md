@@ -179,13 +179,28 @@ O pré-escolar apresenta vias aéreas de pequeno calibre, alta frequência de in
 
 A GINA 2026 permite um diagnóstico clínico estruturado de asma em crianças com até 5 anos quando **três requisitos** se encontram presentes. Em linguagem de decisão:
 
-**Requisito 1 — padrão recorrente confirmado.** Pelo menos dois episódios agudos de sibilância no último ano, ou um episódio acompanhado de sintomas respiratórios sugestivos entre os episódios. Convém confirmar se o som descrito é realmente sibilo expiratório; famílias frequentemente chamam de “chiado” ruídos nasais, secreção ou estridor. Vídeos domésticos de qualidade, exame durante sintomas e descrição orientada ajudam.
+**Requisito 1 — padrão recorrente confirmado.** São necessários pelo menos **dois episódios agudos nos últimos 12 meses** ou **um episódio agudo e sintomas semelhantes aos de asma entre episódios**. Cada episódio relatado deve representar mais de 24 horas de sintomas compatíveis ou ter sido documentado como sibilância por profissional, segundo os critérios GINA 2026. **Pelo menos um episódio deve ter sibilância expiratória confirmada** preferencialmente por profissional treinado, ou convincentemente descrita/imitada pelo cuidador. Familias podem chamar de “chiado” congestão nasal, secreção ou estridor; a confirmação do som modifica a probabilidade do diagnóstico. Vídeos domésticos de qualidade e exame durante sintomas ajudam, respeitando privacidade e segurança.
 
 **Requisito 2 — não haver explicação alternativa mais provável.** Uma criança com tosse úmida diária há meses, falha de crescimento, estridor recorrente ou achados focais persistentes não deve receber diagnóstico de asma por exclusão preguiçosa. A história e o exame direcionam a necessidade de investigação; não se impõe uma bateria de exames de rotina para todos.
 
 **Requisito 3 — resposta clínica compatível e documentada à terapêutica.** A resposta pode ser observada numa exacerbação após broncodilatador inalatório ou durante um ensaio organizado de terapia controladora diária com CI, associado ao alívio indicado, acompanhado por cerca de dois a três meses. Melhorar durante tratamento é evidência que precisa ser interpretada criticamente: viroses melhoram naturalmente, observações parentais são sujeitas a lembrança seletiva, e a melhora só é significativa quando há sintomas ou episódios suficientes para comparação.
 
 Se apenas um ou dois requisitos são atendidos, faz mais sentido registrar **“suspeita de asma”**, explicar a incerteza à família e acompanhar. Isso é diagnóstico responsável, e não omissão terapêutica. Criança com desconforto respiratório deve ser tratada conforme gravidade independentemente da certeza sobre a doença crônica.
+
+
+### 12.1.1. Como documentar a confirmação sem inventar certeza
+
+**Passo clínico 1: caracterizar o episódio.** Registrar data aproximada, duração, sintomas, repercussão sobre alimentação/brincadeira e necessidade de atendimento. Perguntar qual som o familiar ouviu e se o ruído ocorria na expiração, na inspiração ou tanto na entrada quanto na saída do ar. Um episódio autolimitado com menos de 24 horas, não examinado, não pode ser automaticamente contado como episódio confirmado por simples relato inespecífico.
+
+**Passo clínico 2: avaliar causas alternativas.** A história deve procurar sintomas desde o nascimento, engasgos, dispneia ou tosse na alimentação, tosse produtiva persistente, alterações de crescimento, hipoxemia intercrises e achados focais. A inexistência de explicação alternativa mais provável não exige tomografia ou painel laboratorial universal; exames dirigidos dependem de sinais de alerta.
+
+**Passo clínico 3: verificar resposta em tempo e desfecho verificáveis.** A GINA 2026 considera resposta clínica rápida à administração de SABA, em geral **dentro de 20 a 60 minutos**, documentada por equipe assistencial ou relatada convincentemente pelo cuidador. A resposta pode também ser observada ao longo de **2–3 meses de ensaio com corticosteroide inalatório diário**, quando há sintomas suficientes para comparar frequências e gravidade. O registro deve separar melhora objetiva da mera impressão retrospectiva; uma virose pode melhorar espontaneamente.
+
+**Passo clínico 4: nomear corretamente a incerteza.** Quando um ou mais critérios estiverem ausentes, o prontuário deve indicar **suspeita de asma** e planejar reavaliação. Essa expressão não impede tratar uma exacerbação grave, nem obriga a manter controle crônico inadequado. O seguimento procura confirmar evolução, resposta e ausência de diagnósticos alternativos.
+
+**Exemplo:** uma criança de 2 anos teve uma única sibilância observada em pronto atendimento durante infecção viral. Sem outros sintomas entre episódios e sem resposta clínica documentada, apresenta evidências insuficientes para um diagnóstico definitivo. Criança de 4 anos com três episódios recorrentes, um confirmado por profissional, sintomas ao correr entre infecções e melhora documentada com terapia pode reunir os três requisitos, depois de avaliação de outras causas.
+
+**Referência da correção:** GINA, *Strategy Report 2026*, capítulo 10, “Diagnosis of asthma in children 5 years and younger” (https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf). Explicação e exemplos autorais.
 
 ### 12.2. Por que a história clínica precisa ser detalhada
 
@@ -220,6 +235,21 @@ Este é um capítulo de decisão clínica e **não substitui protocolo assistenc
 Avaliar imediatamente consciência, esforço respiratório, capacidade de falar ou beber, padrão de ventilação, ausculta, saturação, frequência cardíaca, perfusão e possível anafilaxia. Exposição a alimento, medicamento ou picada com urticária, edema de vias aéreas, vômitos ou instabilidade circulatória exige pensar em anafilaxia; **a adrenalina é prioridade nesse cenário**, e broncodilatador não a substitui. Em obstrução brônquica grave, sibilos podem reduzir porque quase não há fluxo: o **tórax silencioso** é sinal de alarme.
 
 Após a primeira avaliação, classificar gravidade, iniciar medidas apropriadas e reavaliar objetivamente. Em crianças escolares, escalas clínicas pediátricas validadas, como o PRAM, podem complementar o julgamento clínico, mas não devem atrasar o início do tratamento. Não atribuir gravidade a um número isolado de frequência respiratória sem observar idade, exaustão e tendência.
+
+
+### 13.1.1. Gravidade não se decide por um único sinal
+
+A GINA 2026 diferencia crise leve, moderada, grave e potencialmente fatal usando o quadro clínico **antes** de oxigênio ou terapia broncodilatadora e, quando pertinente, um escore pediátrico validado. Em criança maior, a gravidade aumenta quando a fala passa de frases completas a palavras isoladas, a criança não tolera deitar, há retrações marcadas e o murmúrio diminui. Em criança pequena, o desenvolvimento habitual define como interpretar fala, irritabilidade, alimentação e interação.
+
+**Saturação de ar ambiente em escolares (6–11 anos):** saturação ≥94% pode ser compatível com apresentação leve; 92–93% aumenta a preocupação; **<92%** é sinal que exige considerar quadro grave e transferência para nível de cuidado apropriado. A saturação **não** autoriza dispensar paciente sonolento, cianótico ou com tórax silencioso, mesmo que o oxímetro mostre valor aparentemente razoável. Em altitude, baixa perfusão e determinados tons de pele, a medida pode sofrer viés. Oxigênio suplementar deve ser titulado conforme protocolo e avaliação.
+
+**Função expiratória em escolares:** quando for possível obter medida confiável sem retardar tratamento, PFE superior a 70% do previsto ou melhor pessoal pode acompanhar apresentação leve, 50–70% sugere obstrução de intensidade intermediária e <50% sugere maior gravidade. Esses números não substituem exame clínico, especialmente em criança exausta que não consegue executar a manobra.
+
+**Até 5 anos:** a GINA 2026 usa gravidade de sinais compatível com idade: taquipneia, retrações, redução importante da entrada de ar, sibilância que pode desaparecer por fluxo mínimo, alterações da capacidade de falar/chorar/beber e estado mental. **SpO₂ <92% em ar ambiente** é alerta para crise grave, mas cianose, sonolência e confusão sinalizam ameaça à vida independentemente do número.
+
+**Raciocínio com PRAM:** o *Pediatric Respiratory Assessment Measure* pode ajudar a documentar tendência, porém exige observação estruturada e técnica adequada. Não basta escrever “PRAM 8” sem registrar os componentes; uma melhora de escore deve vir acompanhada de melhor entrada de ar, menor esforço, manutenção de consciência e oxigenação. O uso de escala não pode atrasar transferência.
+
+**Erro em prova:** criança que estava muito taquipneica passa a respirar lentamente e fica sonolenta, com menor ruído ventilatório. Esse não é o retrato de melhora: pode representar fadiga e ventilação inadequada. Na crise grave, o objetivo é estabilização e escalonamento ágil, não completar todos os exames do protocolo antes de tratar.
 
 ### 13.2. Emergência em crianças de 6–11 anos
 
