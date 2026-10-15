@@ -1429,7 +1429,7 @@
       "area": "Pediatria",
       "titulo": "Emergências de cirurgia pediátrica",
       "natureza": "nova_apostila_proposta",
-      "status_producao": "não iniciada (proposta)",
+      "status_producao": "rascunho parcial no GitHub — não publicado",
       "prioridade": "Alta/Diamante",
       "instrucao": "Uropediatria, hérnias, escroto agudo, urgências abdominais e cirurgia pediátrica no PS",
       "aulas_medcof": [
@@ -1449,11 +1449,12 @@
         }
       ],
       "auditoria_capitulos": {
-        "status": "PENDENTE",
-        "data": null,
+        "status": "EM_REDACAO_PARCIAL",
+        "data": "2026-10-15",
         "referencias_verificadas": false,
-        "observacao": "Vínculo editorial não significa capítulo concluído"
-      }
+        "observacao": "Manuscrito inicial 29.986 caracteres totais; quatro casos, seis questões, comparativo 3 PDFs Drive parcial (adulto/nefrourina), sem certificado ≥60k."
+      },
+      "rascunho_editorial": "apostilas/_rascunhos/lote-13-275-emergencias-cirurgia-pediatrica.md"
     },
     {
       "id": 276,
