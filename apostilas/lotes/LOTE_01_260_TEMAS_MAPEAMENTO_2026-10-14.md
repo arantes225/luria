@@ -9,7 +9,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 | 01 | Clínica Médica | Síndromes coronarianas agudas | Rascunho em `apostilas/sindromes-coronarianas-agudas/content.json` — **não publicado, não certificado** |
 | 02 | Cirurgia Geral | Avaliação pré-operatória e risco cirúrgico | Rascunho em `apostilas/avaliacao-pre-operatoria-risco-cirurgico/content.json` — **não publicado, não certificado** |
 | 03 | Pediatria | Assistência ao recém-nascido em sala de parto | Rascunho revisado em `apostilas/assistencia-recem-nascido-sala-parto/content.json`; 13 seções, 10 casos, 18 questões e triagem de ~78 mil caracteres aparentes — **não certificado, não publicado** |
-| 04 | Ginecologia e Obstetrícia | Pré-natal de baixo risco | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
+| 04 | Ginecologia e Obstetrícia | Pré-natal de baixo risco | HTML preexistente preservado em `apostilas/pre-natal-baixo-risco/index.html`; revisão parcial e novo módulo original sobre prevenção da pré-eclâmpsia, caso e questões; **não certificado** |
 | 05 | Medicina Preventiva | Princípios e diretrizes do SUS | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 06 | Clínica Médica | Insuficiência cardíaca | Rascunho em `apostilas/insuficiencia-cardiaca/content.json` — **não publicado, não certificado** |
 | 07 | Cirurgia Geral | Cuidados perioperatórios | Rascunho em `apostilas/cuidados-perioperatorios-prevencao-complicacoes/content.json` — **não publicado, não certificado** |
@@ -33,8 +33,8 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Orientação de produção
 
-- Há **7 rascunhos autorais identificados** e vinculados às aulas 1, 2, 3, 6, 7, 11 e 16. Nenhum deles tem aprovação final. O vínculo é editorial; não equivale a publicação.
-- Os outros **16 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
+- Há **7 rascunhos `content.json` identificados** (aulas 1, 2, 3, 6, 7, 11 e 16) e **uma apostila HTML preexistente com revisão parcial** (aula 4). Nenhum desses oito temas recebeu certificação final. O vínculo é editorial; não equivale a uma nova publicação.
+- Os outros **15 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
 - O trabalho anterior em quatro apostilas de GO não deve ser contado automaticamente como cobertura de pré-natal, datação gestacional ou rastreamentos da primeira etapa.
 - Não duplicar 'Assistência ao RN em sala de parto' e 'Reanimação neonatal': planejar fronteira pedagógica com reaproveitamento interno, mas preservar objetivos curriculares distintos.
 - Cuidados perioperatórios pode cobrir parcialmente infecção de sítio cirúrgico e complicações pós-operatórias de lotes posteriores; evitar recriação redundante.
@@ -42,8 +42,14 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Próximas verificações editoriais
 
-1. Auditar temas 4–5 por correspondência com repositório e referências do Drive: pré-natal de baixo risco e princípios e diretrizes do SUS. O tema 003 já tem rascunho revisado, sem certificação.
+1. Auditar o tema 005 (princípios e diretrizes do SUS), confrontar títulos e arquivos existentes. O tema 004 tem HTML preexistente revisado parcialmente; os temas 003 e 004 seguem sem certificação.
 2. Rever os seis rascunhos com teste de questões representativas e crítica clínica antes de alterar seu status.
 3. Conciliar diffs entre a `main` (260 temas) e a branch editorial antes de integrar.
 
 **Fontes do mapeamento:** `assets/js/cronograma-base-data.js` (`main`); `assets/js/apostilas-lotes-225.js` (`main`). **Data:** 14/10/2026.
+
+## Continuação de 14/10/2026 — temas 003 e 004
+
+- **003 / Assistência ao recém-nascido em sala de parto**: preservado `apostilas/assistencia-recem-nascido-sala-parto/content.json`; expansão com base na SBP 2026 (≥34 e <34 semanas), AHA/AAP 2025, MS 2026 e calendário PNI. Documento `Reanimação Neonatal.pdf` do Drive aberto (autoria institucional não confirmada): benchmarking somente, texto original. Auditoria estrutural: 13 capítulos, 10 títulos de casos, 18 questões, 13 referências e cerca de 78.416 caracteres aparentes em blocos do JSON, sem erros de IDs no sumário. Métrica automática **não** comprova autossuficiência. Nenhum `index.html` criado, sem nova publicação. A reanimação avançada pertence à aula 008, não duplicar.
+- **004 / Pré-natal de baixo risco**: HTML preexistente de 116.636 caracteres preservado e ampliado com módulo original de prevenção da pré-eclâmpsia, tabela de risco, fluxo, caso e três questões, passando a 125.180 caracteres serializados. Documentos do Drive `02 - ASSISTENCIA AO PRE-NATAL.pdf` (25.315 caracteres lidos) e `Pré-Natal.pdf` (1.603 caracteres lidos) foram abertos; conteúdo antigo sobre número mínimo de consultas não substitui orientação vigente da Linha de Cuidado MS (≥8 contatos). Cotejo primário: MS Linha de Cuidado Pré-natal, calendário vacinal 2026 e FEBRASGO 2023/2024. A LURIA já contemplava VSR desde 28 semanas; preservado. Inserido link de navegação no livro sem duplicar IDs. Não revisado visualmente em desktop/PWA.
+- **Pendências comuns:** auditoria de duplicação semântica, revisão científica independente, testes de autossuficiência por questões, legibilidade móvel, reconciliação com alterações da `main`, curadoria de imagens e aprovação no Admin. **Sem merge/deploy realizado nesta continuação.**
