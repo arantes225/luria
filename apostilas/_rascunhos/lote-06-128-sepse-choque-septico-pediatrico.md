@@ -173,3 +173,95 @@ A SSC 2026 recomenda que intervenções emergentes de **controle de fonte** seja
 
 Se há pele muito dolorosa com progressão rápida, bolhas, necrose ou crepitação, considerar infecção necrosante; cirurgia precoce pode ser decisiva. Em derrame pleural purulento, drenagem não é substituída por antibiótico por prazo indefinido. Em infecção de cateter, extrair o único acesso antes de estabelecer outro pode interromper suporte vital, por isso coordenar procedimento com acesso alternativo e equipe.
 
+
+
+## 12. Disfunção respiratória, PARDS e intubação segura no choque
+
+O comprometimento respiratório da sepse pode decorrer de pneumonia, bronquiolite grave concomitante, edema inflamatório por aumento de permeabilidade, sobrecarga de volume, miocardiopatia ou **síndrome do desconforto respiratório agudo pediátrico (PARDS)**. A deterioração é avaliada pelo esforço ventilatório, hipoxemia, necessidade crescente de suporte e exames adequados. Mesmo com SpO₂ aparentemente normal, criança taquipneica com fadiga, alteração mental e retrações importantes pode estar prestes a perder capacidade ventilatória.
+
+O suporte de oxigênio não é separado da hemodinâmica. A ventilação com pressão positiva pode reduzir retorno venoso e precipitar hipotensão numa criança com choque não ressuscitado. Antes de intubar, organizar equipe treinada, dispositivos por tamanho, estratégia para via aérea difícil, monitorização, correção de hipoglicemia/hipoxemia e prontidão para vasoativo. **Intubação não é automaticamente indicada apenas porque o paciente usa catecolamina**; a SSC 2026 reconhece evidência insuficiente para intubar de rotina o choque refratário sem falência respiratória.
+
+A SSC 2026 sugere **evitar etomidato** quando é necessária intubação de criança com sepse/choque. A escolha alternativa de indutor, bloqueador neuromuscular e analgesia depende de condições hemodinâmicas, contraindicações e treinamento; não é apropriado listar dose fixa de sedativo sem idade, peso e estado circulatório. **Nenhum bloqueador neuromuscular oferece analgesia ou sedação por si.**
+
+Após reanimação, a atualização SSC 2026 sugere alvo de saturação de oxigênio mais conservador em determinados contextos, mas a recomendação não deve ser interpretada como permissão de deixar um lactente agudamente hipóxico sem tratamento. A indicação, a população, o risco neurológico e o modo de ventilação precisam ser avaliados pela equipe intensiva. Evitar hiperóxia desnecessária quando se consegue monitorizar de forma segura, preservando oxigenação suficiente para tecidos vulneráveis.
+
+### 12.1 PARDS e avaliação diferencial da oxigenação
+
+PARDS é uma síndrome de hipoxemia aguda com opacidades/alterações pulmonares e lesão inflamatória, com critérios pediátricos específicos de suporte, oxigenação e exclusão de edema exclusivamente cardiogênico. A definição internacional **PALICC-2 (2023)** pode orientar critérios na UTI. Não usar automaticamente PaO₂/FiO₂ do adulto sem considerar critérios pediátricos, ventilação não invasiva e SpO₂/FiO₂ aplicável. A presença de pneumonia grave pode produzir PARDS, mas nem toda criança com pneumonia hipoxêmica se enquadra.
+
+A ventilação protetora busca evitar volutrauma e barotrauma, usando volumes correntes e pressões individualizados e evitando atelectrauma. Alterações de complacência e secreção podem requerer manobras adequadas, mas recrutamento agressivo pode comprometer retorno venoso em choque. Posição prona e terapias de resgate são decisões especializadas de UTI, com equipe treinada e monitorização.
+
+## 13. Disfunção renal e balanço hídrico após a reanimação
+
+A **lesão renal aguda (LRA)** na sepse pode resultar de hipoperfusão, inflamação, lesão tubular, trombose microvascular, pressão intra-abdominal elevada, antibióticos/nefrotóxicos e outros mecanismos. A creatinina pode demorar a subir e seus valores normais variam com idade/massa muscular. **Oligúria** precisa ser interpretada ao longo do tempo, com peso, ingesta, perdas, volemia, perfusão e sinais de congestão. Uma criança que não urina após volume amplo não precisa necessariamente de mais cristaloide; pode estar com vasoplegia, disfunção miocárdica, necrose tubular ou obstrução.
+
+Monitorar balanço hídrico acumulado e peso diário quando possível. Na fase inicial, restaurar perfusão pode exigir volume, mas após estabilização excesso de fluidos pode piorar ventilação e função renal. Ajustar diuréticos ou iniciar terapia renal substitutiva em UTI depende de sobrecarga refratária, hipercalemia grave, acidose, uremia e outras indicações clínicas, não de um número isolado de creatinina.
+
+### 13.1 Eletrólitos e hipoglicemia
+
+Hipoglicemia é emergência e pode se manifestar por letargia/convulsão, confundindo-se com encefalopatia séptica. Na criança crítica, alterações de potássio, cálcio e sódio podem contribuir para arritmias, convulsões e disfunção miocárdica. A correção deve respeitar peso, ritmo de infusão, necessidade de monitorização e protocolo pediátrico. A SSC 2026 não propõe correção indiscriminada de todo cálcio discretamente baixo como intervenção capaz de reverter choque; repor quando houver indicação específica.
+
+### 13.2 Medicações nefrotóxicas
+
+Aminoglicosídeos e vancomicina podem ser úteis para patógenos determinados, mas demandam dose apropriada, função renal e, quando indicada, monitorização de níveis; a presença de LRA não significa automaticamente que cobertura necessária deva ser omitida, e sim que dose, intervalo e alternativa sejam cuidadosamente ajustados. A prevenção de dano renal inclui evitar AINEs em hipoperfusão e revisar contrastes/procedimentos diante de risco e urgência real.
+
+## 14. Coagulopatia, plaquetas e púrpura fulminante
+
+Sepse pode ativar inflamação e coagulação de forma sistêmica, causando **coagulação intravascular disseminada (CIVD)**, consumo plaquetário, fibrinogênio baixo e aumento de produtos de degradação de fibrina. A apresentação varia de microtrombose com falência de órgãos a sangramento cutâneo, mucoso ou de sítios de punção. Em meningococcemia, púrpura fulminante pode evoluir em horas, com necrose cutânea e choque; a ausência de púrpura no início não exclui infecção invasiva.
+
+Coagulograma, plaquetas, fibrinogênio, hemoglobina e contexto orientam transfusão e procedimentos. **Não transfundir plasma apenas para “normalizar um INR” sem indicação clínica**, nem supor que todo paciente com plaquetas baixas deve receber plaquetas se não há sangramento e a causa específica é outra. O tratamento definitivo é corrigir infecção/foco e suporte do organismo, enquanto transfusões dirigidas são usadas quando necessárias.
+
+### 14.1 Exantemas perigosos versus comuns
+
+Manchas que não desaparecem à pressão, sobretudo com febre e toxemia, elevam alerta para meningococcemia, mas púrpura também ocorre em dengue, vasculites, trombocitopenia imune e doenças hematológicas. Lesões violáceas rapidamente extensas, extremidades frias, alteração mental ou hipotensão exigem atendimento imediato. O “teste do copo” pode ajudar leigos a reconhecer rash não branqueável, mas não constitui algoritmo diagnóstico que permita esperar em criança crítica.
+
+## 15. Disfunção neurológica: encefalopatia, meningite e convulsão
+
+Alteração do estado mental pode resultar de hipoperfusão, neuroinflamação, hipóxia, hipoglicemia, hiponatremia, convulsões, medicações e infecção primária do SNC. A primeira decisão é garantir oxigenação e circulação, medir glicose e pesquisar sinais de meningite/encefalite. Criança com rebaixamento progressivo, alterações pupilares, convulsão ou sinais focais necessita avaliação urgente. A ausência de rigidez de nuca em lactente não exclui meningite bacteriana.
+
+**Punção lombar** pode esclarecer foco, mas risco aumenta em instabilidade hemodinâmica, comprometimento ventilatório, hipertensão intracraniana suspeita ou coagulopatia importante. Antibiótico para meningite não deve ser atrasado pela tentativa de coleta de líquor. A decisão de imagem cerebral é orientada por sinais focais, trauma, suspeita de hipertensão intracraniana e causas alternativas, não por tomografia obrigatória antes de toda LP.
+
+Convulsões prolongadas e recorrentes necessitam manejo conforme protocolo de estado de mal epiléptico pediátrico, enquanto o suporte metabólico e a antibioticoterapia prosseguem. Medicamentos sedativos usados durante intubação podem dificultar a avaliação neurológica subsequente: registrar exame anterior à sedação sempre que possível sem atrasar intervenção urgente.
+
+## 16. Corticoide: quando a hidrocortisona é indicada — e quando não é
+
+A SSC pediátrica **2026 sugere contra hidrocortisona intravenosa de rotina** em crianças cujo choque estabilizou após fluidos e vasoativos. Para choque **persistente apesar de ressuscitação e terapia vasoativa**, há **evidência insuficiente para recomendar universalmente a favor ou contra** hidrocortisona; decisões são individualizadas pela equipe intensiva. Isso difere de um algoritmo simplista de adulto em que se inclui hidrocortisona automaticamente em qualquer paciente recebendo norepinefrina.
+
+Há exceção importante: **suspeita ou confirmação de insuficiência adrenal** (por exemplo, hiperplasia adrenal congênita, uso prolongado de corticosteroide com supressão, doença pituitária/adrenal, crise adrenal) justifica tratamento de dose de estresse conforme protocolo, além de corrigir glicose/eletrólitos. Infecção pode precipitar crise adrenal, que também causa choque. Se o paciente apresenta hipoglicemia, hiponatremia/hipercalemia e contexto sugestivo, não descartar deficiência adrenal apenas porque há febre.
+
+### 16.1 Por que não tratar todo lactato alto com esteroide
+
+O lactato alto descreve fisiologia alterada, não insuficiência adrenal confirmada. Um paciente pode ter elevada produção de lactato por catecolaminas ou redução de depuração. Monitorar tendência, avaliar foco, perfusão, oxigenação e medicamentos. Corticoide indiscriminado pode causar hiperglicemia, infecções secundárias e outros eventos adversos; não é substituto de reanimação e controle de foco.
+
+## 17. Imunossupressão, oncologia e infecção relacionada a dispositivos
+
+Crianças com câncer em quimioterapia, neutropenia, transplantadas ou com imunodeficiência podem não apresentar febre exuberante nem leucocitose, apesar de infecção grave. O limiar para antibioticoterapia empírica e cobertura antipseudomonas pode ser diferente do de criança previamente saudável. Culturas de cateter e periferia conforme protocolo, exame de pele/mucosas e revisão de colonizações anteriores ajudam a selecionar cobertura; não esperar cultura final em choque.
+
+Infecção fúngica invasiva é possível em neutropenia prolongada, cateteres, nutrição parenteral, procedimentos e colonização relevante, mas antifúngico para todo choque pediátrico não é uma regra universal. A decisão sobre antifúngico e retirada de dispositivos é individualizada com infectologia/UTIP e microbiologia. O uso de multiterapia antibiótica empírica por alto risco de organismos resistentes precisa de **reavaliação e desescalonamento**, não de manutenção eterna sem identificação.
+
+Infecção de cateter pode causar choque, mas a remoção de único acesso central em paciente dependente de vasopressor deve ser coordenada para garantir via alternativa. Se patógeno e fonte demonstram necessidade de remoção, controlar a fonte precocemente é decisivo.
+
+## 18. Lactentes jovens e sepse neonatal: quais regras mudam
+
+O recém-nascido pré-termo ou a termo no período neonatal apresenta transição cardiopulmonar, reservas imunológicas e farmacocinética diferentes de criança escolar. **Hipotermia, letargia, recusa alimentar, apneia, cianose, irritabilidade e perfusão ruim** podem ser sinais de infecção invasiva sem febre clássica. Por isso, faixas de idade em dias e semanas são importantes para investigação, escolha de antimicrobiano, necessidade de internação e avaliação de líquor.
+
+Em neonato, considerar infecção precoce relacionada ao parto (GBS, E. coli, outros conforme epidemiologia) e tardia por agentes comunitários/hospitalares, além de cardiopatia congênita crítica, erro inato do metabolismo, hipoglicemia e doença pulmonar. Criança com choque e cianose persistente apesar de oxigênio pode ter cardiopatia ducto-dependente; avaliação especializada e possível prostaglandina E1 dependem de diagnóstico/suspeita e equipe, não de antibiótico como solução isolada.
+
+**Não aplicar automaticamente esquemas antibióticos de escolar ao neonato**, incluindo dose por kg, intervalo, cobertura contra Listeria/GBS e riscos de ceftriaxona em determinadas idades/situações. O protocolo neonatal é obrigatório para prescrição. A SSC pediátrica 2026 trata infantes e crianças, mas manejo neonatal com suporte intensivo neonatal mantém especificidades não capturadas por uma regra única.
+
+## 19. Criança com dengue e choque: diferencial indispensável no Brasil
+
+Dengue grave pode causar hipotensão/hipoperfusão por **extravasamento plasmático**, aumento da permeabilidade, perdas intravasculares e às vezes sangramento, especialmente ao redor da fase crítica após queda da febre. Plaquetopenia, hemoconcentração e sinais de alarme (dor abdominal intensa/persistente, vômitos repetidos, sangramento de mucosa, letargia, aumento do fígado, acúmulo de líquido) orientam avaliação conforme protocolos do Ministério da Saúde. O tratamento hídrico de dengue utiliza **algoritmo próprio, monitorização rigorosa e controle de hematócrito/perfusão**, não transplante mecânico de bolos da SSC bacteriana.
+
+A criança com dengue pode ter coinfecção bacteriana; o diagnóstico diferencial inclui meningococcemia, leptospirose, malária em região endêmica e outras arboviroses. Rash e plaquetopenia não autorizam concluir dengue sem considerar estado clínico e epidemiologia. **Não oferecer AINEs ou antiagregantes indiscriminadamente em suspeita de dengue** devido ao risco hemorrágico.
+
+Em prova, a dica é avaliar dia de doença, defervescência, hematócrito, plaquetas, derrames, choque e necessidade de exames segundo protocolo. **Antibiótico não trata o vírus da dengue**, mas paciente com choque e possibilidade real de bacteremia exige decisão de emergência; nunca retardar medidas vitais enquanto se decide entre testes.
+
+## 20. Miocardite e choque cardiogênico misto: quando o volume agrava
+
+Miocardite aguda pode se manifestar com febre, taquicardia desproporcional, dispneia, dor abdominal, vômitos, prostração e hipotensão, mimetizando sepse. **Hepatomegalia, galope, crepitações, edema, cardiomegalia e disfunção contrátil ao POCUS/eco** sugerem componente cardíaco. Infecção verdadeira pode coexistir com miocardiopatia séptica; não há obrigação de escolher apenas uma causa.
+
+Volume em bolos pode piorar edema pulmonar quando ventrículo não consegue lidar com retorno venoso. A reavaliação de **tolerância a fluidos** após cada dose e a monitorização especializada permitem transição para vasoativo/inotrópico e suporte respiratório. Troponina, BNP, ECG, ecocardiografia e consulta à cardiologia pediátrica ajudam a diferenciar causas. Os agentes vasoativos precisam ser individualizados à função ventricular e resistência periférica, não escolhidos exclusivamente pela cor das extremidades.
+
+Se miocardite fulminante evolui com choque refratário, suporte circulatório mecânico/ECMO pode ser considerado em centros especializados, ponderando prognóstico, contraindicações e recursos. A existência da tecnologia não significa indicação para toda criança com taquicardia febril.
+
