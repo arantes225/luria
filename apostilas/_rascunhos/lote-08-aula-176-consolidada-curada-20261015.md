@@ -1,4 +1,3 @@
-
 # LURIA — Aula 176 | AVC e crises convulsivas: diagnóstico tempo-dependente e prevenção etiológica
 
 **Lote 08/13 · Aula 176/260 · Atualizado em 15/10/2026.**
@@ -342,90 +341,6 @@ Quando movimentos terminam mas a consciência não retorna de modo proporcional 
 
 ---
 
-# CASOS CLÍNICOS JÁ PRESENTES NOS RASCUNHOS — CURADORIA SEM COPIAR LIVRO DE TERCEIROS
-
-## Casos 1–11: repertório clínico da aula original e do complemento 02
-
-
-
-### Caso 1 — Afasia de início súbito com NIHSS baixo
-Mulher de 59 anos, há 80 minutos não consegue nomear objetos nem formular frases, preservando força. TC sem hemorragia evidente. **Hipótese:** AVC isquêmico em hemisfério dominante. **Raciocínio:** afasia pode ser incapacitante com NIHSS menor do que um AVC motor extenso. **Exames:** glicemia, TC, angio-TC conforme protocolo, avaliação de contraindicações. **Conduta:** Código AVC e avaliação urgente de trombólise/estratégia endovascular se elegível. **Importa:** tratar impacto funcional, não só número de escala.
-
-### Caso 2 — AVC ao acordar
-Homem de 70 anos acorda às 7h com hemiparesia; foi visto normal às 23h. **Hipótese:** AVC de início desconhecido. **Raciocínio:** último momento assintomático foi às 23h, e não às 7h; imagem avançada pode selecionar tratamento em janela estendida. **Exames:** TC + vascular e perfusão ou RM segundo disponibilidade, glicemia e contraindicações. **Conduta:** encaminhamento a centro de AVC/tele-AVC, sem prometer reperfusão sem critérios. **Importa:** documentar last known well e possibilidade de tecido recuperável.
-
-### Caso 3 — Hemorragia e anticoagulação
-Paciente de 78 anos em anticoagulante por fibrilação atrial chega com cefaleia, vômitos e hemiparesia. TC mostra hematoma profundo. **Hipótese:** hemorragia intracerebral. **Raciocínio:** trombólise é contraindicada em hemorragia e o anticoagulante pode aumentar expansão. **Exames:** imagem e investigação da anticoagulação/última dose, função renal, coagulograma conforme agente. **Conduta:** estabilizar, reversão específica quando indicada, controle de PA e neurocirurgia conforme extensão. **Importa:** anticoagulantes não são todos revertidos da mesma forma.
-
-### Caso 4 — Convulsão com paresia subsequente
-Homem de 54 anos apresenta crise focal que generaliza por 2 minutos; após cessar, hemiparesia direita persiste por 40 minutos. **Hipóteses:** paresia de Todd, AVC que provocou crise, hipoglicemia e lesão estrutural. **Raciocínio:** crise não exclui AVC; déficit persistente precisa avaliação. **Exames:** glicemia, TC e investigação vascular conforme suspeita/tempo. **Conduta:** Código AVC se critérios e monitorização neurológica. **Importa:** não dar alta como Todd sem descartar eventos perigosos.
-
-### Caso 5 — Estado de mal após dez minutos
-Mulher de 27 anos com epilepsia prévia convulsiona há 10 minutos, sem recuperação entre episódios. **Hipótese:** estado de mal convulsivo. **Raciocínio:** t1 ~5 minutos exige tratamento emergencial; não esperar 30. **Exames:** glicemia, eletrólitos, drogas/adesão, infecção e outras causas conforme quadro. **Conduta:** ABC, benzodiazepínico adequado e escalada rápida se necessário, monitorização respiratória e EEG/UTI se refratária. **Importa:** o tempo de crise é determinante de dano.
-
-### Caso 6 — Consciência não retorna após cessar movimentos
-Idoso de 72 anos recebe benzodiazepínico por crise sustentada; abalos cessam, mas permanece sem obedecer comandos após período significativo e oxigenação é adequada. **Hipóteses:** estado de mal não convulsivo, efeito sedativo, lesão estrutural ou distúrbio metabólico. **Raciocínio:** não é seguro rotular tudo como pós-ictal prolongado. **Exames:** glicemia, exames metabólicos, avaliação neurológica e EEG urgente. **Conduta:** suporte e decisão guiada por equipe de neurologia/UTI. **Importa:** o fim da convulsão motora não garante fim da atividade epiléptica.
-
-### Caso 7 — Duas fontes potenciais de êmbolo
-Mulher de 68 anos, AVC ACM esquerda confirmado, FA paroxística em monitor e estenose carotídea ipsilateral de 35%. **Hipóteses:** cardioembolia por FA mais provável que aterosclerose carotídea hemodinamicamente significativa. **Raciocínio:** estenose leve não justifica intervenção automática, enquanto FA pode produzir embolia; confirmar investigação e riscos. **Conduta:** discutir anticoagulação e momento seguro após avaliar tamanho do infarto e imagem; controlar fatores. **Por que importa:** não tratar um achado incidental como causa principal.
-
-### Caso 8 — Candidato à reabilitação com NIHSS baixo
-Homem de 54 anos, déficit isolado de linguagem com incapacidade de trabalhar/usar telefone, NIHSS relativamente baixo. **Hipótese:** AVC cortical com déficit incapacitante. **Raciocínio:** função social e comunicação importam além da soma de pontos. **Conduta:** avaliação imediata de reperfusão se no tempo, fonoaudiologia e plano de reabilitação após fase aguda. **Por que importa:** “mild stroke” pode ser severamente incapacitante.
-
-### Caso 9 — Encefalopatia após aparente controle da crise
-Homem de 74 anos internado por hematoma lobar e crises, após anticonvulsivante não mais apresenta movimentos, mas mantém mutismo e pouca resposta. **Hipóteses:** pós-ictal prolongado, efeito sedativo, EME não convulsivo e piora do hematoma. **Exames:** TC conforme deterioração, glicemia/metabólicos e EEG urgente. **Conduta:** suporte e avaliação neurológica contínua; se EEG confirma EME, escalar terapia sob monitorização. **Por que importa:** clínica isolada pode perder crise sem movimentos.
-
-### Caso 10 — AVC isquêmico grande que piora depois de 48h
-Mulher de 45 anos com ACM extensa, inicialmente acordada e hemiplégica, torna-se sonolenta no 3º dia, anisocoria incipiente. **Hipótese:** edema maligno/hipertensão intracraniana, com diferenciais de transformação hemorrágica e novas lesões. **Exames:** TC urgente, monitorização intensiva. **Conduta:** acionar neurocirurgia e terapia intensiva, discutir descompressão e metas de cuidado. **Por que importa:** deterioração tardia é tempo-dependente.
-
-### Caso 11 — AIT de alto risco ou evento funcional?
-Mulher de 62 anos, fala desorganizada por 20 minutos com recuperação, FA não conhecida, hipertensão e placa carotídea. **Hipóteses:** AIT, crise focal e outros imitadores. **Raciocínio:** desaparecimento de sintoma não prova benignidade; risco de AVC precoce após AIT pode ser alto. **Exames:** TC/RM, imagem vascular e avaliação cardíaca conforme fluxo. **Conduta:** encaminhamento urgente, investigação etiológica e prevenção conforme confirmação; antiagregação dupla apenas em cenários adequados. **Por que importa:** “já passou” não significa “não tem risco”.
-
-
-
-## Questões 1–16: avaliação e comentários das versões anteriores
-
-
-
-**Q1.** Em suspeita de AVC ao despertar, o horário decisivo para janela clínica padrão é: A) hora do primeiro exame; B) último momento em que paciente foi visto assintomático; C) hora da glicemia; D) horário de chegada ao hospital. **B.** A/C/D não definem início. **Mini-revisão:** last known well orienta elegibilidade, embora imagem avançada possa selecionar casos tardios.
-
-**Q2.** Paciente com afasia incapacitante e NIHSS 3 dentro de 2 h, TC sem hemorragia. Melhor conduta: A) descartar reperfusão por NIHSS baixo; B) avaliar trombólise conforme déficit funcional e contraindicações; C) observar 48h sem neurologia; D) dar anticoagulante sem imagem. **B.** A ignora AHA 2026, C atrasa tratamento, D é inseguro. **Mini-revisão:** incapacitante ≠ NIHSS alto obrigatório.
-
-**Q3.** AHA/ASA 2026 recomenda como alternativas de IVT padrão em adultos elegíveis na janela até 4h30: A) estreptoquinase e heparina; B) alteplase ou tenecteplase nas doses e protocolos indicados; C) apenas AAS; D) warfarina IV. **B.** A/D não são reperfusão padrão, C não substitui IVT. **Mini-revisão:** no SUS, verificar incorporação e protocolo local.
-
-**Q4.** Qual exame inicial tem papel fundamental para descartar hemorragia antes de trombólise? A) TC de crânio sem contraste; B) EEG; C) apenas hemograma; D) RX de tórax. **A.** B/C/D não excluem sangramento intracraniano. **Mini-revisão:** TC precoce pode ser normal no AVC isquêmico.
-
-**Q5.** Déficit focal que resolve totalmente após 15 minutos e suspeita isquêmica: A) sempre benigno; B) possível AIT, exige investigação urgente de risco e mecanismo; C) exclui fibrilação atrial; D) dispensa neuroimagem. **B.** A/C/D subestimam risco. **Mini-revisão:** AIT é aviso vascular importante.
-
-**Q6.** Crise tônico-clônica em curso há 8 minutos deve receber: A) espera até 30 min; B) benzodiazepínico apropriado com ABC e glicemia; C) objeto entre dentes; D) contenção física intensa. **B.** A aumenta risco, C/D causam dano. **Mini-revisão:** t1≈5 minutos.
-
-**Q7.** Sobre ESETT após benzodiazepínico adequado em estado de mal: A) levetiracetam foi sempre superior em todas faixas; B) levetiracetam, fosfenitoína e valproato tiveram eficácia semelhante global; C) valproato é universalmente contraindicado em todos; D) nenhum fármaco de segunda linha é indicado. **B.** A não condiz com resultados, C exagera contraindicações, D ignora manejo. **Mini-revisão:** individualizar por segurança e disponibilidade.
-
-**Q8.** Fraqueza focal depois de crise convulsiva: A) prova paresia de Todd e dispensa exame; B) pode ser Todd ou AVC coexistente, exigindo avaliação pelo contexto; C) exclui hipoglicemia; D) indica trombólise sem imagem. **B.** A/C negligenciam diferenciais, D é inseguro. **Mini-revisão:** déficit pós-ictal não é excludente vascular.
-
-**Q9.** A classificação TOAST ajuda a orientar: A) apenas localização do edema; B) etiologia do AVC e prevenção secundária; C) intensidade da febre; D) necessidade de cefalexina. **Gabarito B.** A não define mecanismo; C/D não têm pertinência vascular. **Revisão:** FA, aterosclerose e pequenos vasos pedem estratégias diferentes.
-
-**Q10.** Sobre DAPT AAS + clopidogrel após AVC: A) é obrigatória por anos para todos; B) pode ser útil por janela curta em AVC minor não cardioembólico/AIT de alto risco selecionado; C) é sempre preferida à anticoagulação em FA; D) deve começar durante alteplase. **Gabarito B.** A aumenta sangramento; C ignora cardioembolia; D aumenta risco hemorrágico. **Revisão:** duração e mecanismo importam.
-
-**Q11.** Em AVC de circulação posterior, NIHSS baixo: A) exclui lesão grave; B) pode subestimar déficit de tronco/cerebelo; C) elimina necessidade de angioimagem; D) prova ansiedade. **Gabarito B.** A/C/D negligenciam vertigem central, ataxia e oclusão basilar. **Revisão:** topografia é crucial.
-
-**Q12.** Uma TC simples normal nas primeiras 90 min: A) descarta isquemia cerebral; B) exige diagnóstico de síncope; C) não descarta AVC hiperagudo; D) confirma tumor. **Gabarito C.** A é falso por sensibilidade precoce; B/D não seguem. **Revisão:** excluir hemorragia e analisar clínica.
-
-**Q13.** Após AVC isquêmico em pessoa com FA, início de anticoagulante: A) sempre na sala de emergência antes da imagem; B) depende de tamanho do infarto, sangramento e risco, em avaliação especializada; C) nunca é indicado; D) precisa sempre de duas semanas fixas. **Gabarito B.** A/C/D são regras absolutas falsas. **Revisão:** ponderar embolia versus hemorragia.
-
-**Q14.** Paciente com hematoma lobar em TC e sem crise não deve receber automaticamente: A) monitorização neurológica; B) tratamento de coagulopatia; C) anticonvulsivante profilático universal sem indicação; D) avaliação de PA. **Gabarito C.** A/B/D são relevantes conforme caso; C não melhora desfechos na ausência de crise demonstrada. **Revisão:** profilaxia de status não é universal.
-
-**Q15.** Em oclusão de artéria basilar até 24 horas: A) trombectomia é sempre impossível; B) pode ser recomendada em paciente com características clínicas/imagens apropriadas; C) trombolítico é obrigatório sem TC; D) anticoagulação empírica substitui todo tratamento. **Gabarito B.** A contraria diretriz 2026; C e D são inseguros. **Revisão:** janela e imagem determinam elegibilidade.
-
-**Q16.** Crise focal seguida de hemiparesia: A) elimina hipótese de AVC; B) permite nomear Todd sem avaliação; C) demanda investigar AVC e pós-ictal conforme cenário; D) contraindica sempre qualquer reperfusão. **Gabarito C.** A/B/D são absolutismos incorretos. **Revisão:** duas patologias podem coexistir.
-
-
-
----
-
-
-
-
 # PARTE III — Integração de alta utilidade: cinco desafios à decisão clínica
 
 ## 21. Não perder o AVC posterior: vertigem, disfagia, diplopia e ataxia
@@ -574,6 +489,51 @@ A documentação de casos médicos deve selecionar imagem por **pergunta** e nã
 
 **Regra LURIA:** fazer seleção de candidatas em lote, registrar autoria, licença comercial, qualidade, anonimização, legenda, modificações e atribuição, enviando ao **Admin → Imagens para aprovação**. Nenhuma imagem clínica inédita foi embutida neste Markdown ou no HTML.
 
+
+
+# PARTE IV — Casos clínicos comentados
+
+## Casos 1–11: repertório clínico da aula original e do complemento 02
+
+
+
+### Caso 1 — Afasia de início súbito com NIHSS baixo
+Mulher de 59 anos, há 80 minutos não consegue nomear objetos nem formular frases, preservando força. TC sem hemorragia evidente. **Hipótese:** AVC isquêmico em hemisfério dominante. **Raciocínio:** afasia pode ser incapacitante com NIHSS menor do que um AVC motor extenso. **Exames:** glicemia, TC, angio-TC conforme protocolo, avaliação de contraindicações. **Conduta:** Código AVC e avaliação urgente de trombólise/estratégia endovascular se elegível. **Importa:** tratar impacto funcional, não só número de escala.
+
+### Caso 2 — AVC ao acordar
+Homem de 70 anos acorda às 7h com hemiparesia; foi visto normal às 23h. **Hipótese:** AVC de início desconhecido. **Raciocínio:** último momento assintomático foi às 23h, e não às 7h; imagem avançada pode selecionar tratamento em janela estendida. **Exames:** TC + vascular e perfusão ou RM segundo disponibilidade, glicemia e contraindicações. **Conduta:** encaminhamento a centro de AVC/tele-AVC, sem prometer reperfusão sem critérios. **Importa:** documentar last known well e possibilidade de tecido recuperável.
+
+### Caso 3 — Hemorragia e anticoagulação
+Paciente de 78 anos em anticoagulante por fibrilação atrial chega com cefaleia, vômitos e hemiparesia. TC mostra hematoma profundo. **Hipótese:** hemorragia intracerebral. **Raciocínio:** trombólise é contraindicada em hemorragia e o anticoagulante pode aumentar expansão. **Exames:** imagem e investigação da anticoagulação/última dose, função renal, coagulograma conforme agente. **Conduta:** estabilizar, reversão específica quando indicada, controle de PA e neurocirurgia conforme extensão. **Importa:** anticoagulantes não são todos revertidos da mesma forma.
+
+### Caso 4 — Convulsão com paresia subsequente
+Homem de 54 anos apresenta crise focal que generaliza por 2 minutos; após cessar, hemiparesia direita persiste por 40 minutos. **Hipóteses:** paresia de Todd, AVC que provocou crise, hipoglicemia e lesão estrutural. **Raciocínio:** crise não exclui AVC; déficit persistente precisa avaliação. **Exames:** glicemia, TC e investigação vascular conforme suspeita/tempo. **Conduta:** Código AVC se critérios e monitorização neurológica. **Importa:** não dar alta como Todd sem descartar eventos perigosos.
+
+### Caso 5 — Estado de mal após dez minutos
+Mulher de 27 anos com epilepsia prévia convulsiona há 10 minutos, sem recuperação entre episódios. **Hipótese:** estado de mal convulsivo. **Raciocínio:** t1 ~5 minutos exige tratamento emergencial; não esperar 30. **Exames:** glicemia, eletrólitos, drogas/adesão, infecção e outras causas conforme quadro. **Conduta:** ABC, benzodiazepínico adequado e escalada rápida se necessário, monitorização respiratória e EEG/UTI se refratária. **Importa:** o tempo de crise é determinante de dano.
+
+### Caso 6 — Consciência não retorna após cessar movimentos
+Idoso de 72 anos recebe benzodiazepínico por crise sustentada; abalos cessam, mas permanece sem obedecer comandos após período significativo e oxigenação é adequada. **Hipóteses:** estado de mal não convulsivo, efeito sedativo, lesão estrutural ou distúrbio metabólico. **Raciocínio:** não é seguro rotular tudo como pós-ictal prolongado. **Exames:** glicemia, exames metabólicos, avaliação neurológica e EEG urgente. **Conduta:** suporte e decisão guiada por equipe de neurologia/UTI. **Importa:** o fim da convulsão motora não garante fim da atividade epiléptica.
+
+### Caso 7 — Duas fontes potenciais de êmbolo
+Mulher de 68 anos, AVC ACM esquerda confirmado, FA paroxística em monitor e estenose carotídea ipsilateral de 35%. **Hipóteses:** cardioembolia por FA mais provável que aterosclerose carotídea hemodinamicamente significativa. **Raciocínio:** estenose leve não justifica intervenção automática, enquanto FA pode produzir embolia; confirmar investigação e riscos. **Conduta:** discutir anticoagulação e momento seguro após avaliar tamanho do infarto e imagem; controlar fatores. **Por que importa:** não tratar um achado incidental como causa principal.
+
+### Caso 8 — Candidato à reabilitação com NIHSS baixo
+Homem de 54 anos, déficit isolado de linguagem com incapacidade de trabalhar/usar telefone, NIHSS relativamente baixo. **Hipótese:** AVC cortical com déficit incapacitante. **Raciocínio:** função social e comunicação importam além da soma de pontos. **Conduta:** avaliação imediata de reperfusão se no tempo, fonoaudiologia e plano de reabilitação após fase aguda. **Por que importa:** “mild stroke” pode ser severamente incapacitante.
+
+### Caso 9 — Encefalopatia após aparente controle da crise
+Homem de 74 anos internado por hematoma lobar e crises, após anticonvulsivante não mais apresenta movimentos, mas mantém mutismo e pouca resposta. **Hipóteses:** pós-ictal prolongado, efeito sedativo, EME não convulsivo e piora do hematoma. **Exames:** TC conforme deterioração, glicemia/metabólicos e EEG urgente. **Conduta:** suporte e avaliação neurológica contínua; se EEG confirma EME, escalar terapia sob monitorização. **Por que importa:** clínica isolada pode perder crise sem movimentos.
+
+### Caso 10 — AVC isquêmico grande que piora depois de 48h
+Mulher de 45 anos com ACM extensa, inicialmente acordada e hemiplégica, torna-se sonolenta no 3º dia, anisocoria incipiente. **Hipótese:** edema maligno/hipertensão intracraniana, com diferenciais de transformação hemorrágica e novas lesões. **Exames:** TC urgente, monitorização intensiva. **Conduta:** acionar neurocirurgia e terapia intensiva, discutir descompressão e metas de cuidado. **Por que importa:** deterioração tardia é tempo-dependente.
+
+### Caso 11 — AIT de alto risco ou evento funcional?
+Mulher de 62 anos, fala desorganizada por 20 minutos com recuperação, FA não conhecida, hipertensão e placa carotídea. **Hipóteses:** AIT, crise focal e outros imitadores. **Raciocínio:** desaparecimento de sintoma não prova benignidade; risco de AVC precoce após AIT pode ser alto. **Exames:** TC/RM, imagem vascular e avaliação cardíaca conforme fluxo. **Conduta:** encaminhamento urgente, investigação etiológica e prevenção conforme confirmação; antiagregação dupla apenas em cenários adequados. **Por que importa:** “já passou” não significa “não tem risco”.
+
+
+
+
+
 ## 28. Casos de integração para aprendizado profundo
 
 ### Caso 12 — Vertigem aguda, incapacidade de marcha e TC “tranquila”
@@ -587,6 +547,55 @@ Homem de 72 anos, déficit súbito de linguagem e força, RM mostra lesões agud
 ### Caso 14 — Afasia, crise focal e déficit persistente
 
 Homem de 59 anos apresenta desvio de olhos e abalos do membro superior direito durante um minuto, seguidos de afasia persistente e hemiparesia direita. Família relata que a fala tinha parado minutos antes do abalo. **Pergunta:** todos os sinais podem ser atribuídos a Todd? **Hipóteses:** AVC cortical esquerdo com crise aguda sintomática; Todd é diferencial, não diagnóstico garantido. **Raciocínio:** déficit antes de convulsão e persistência funcional exigem protocolo neurovascular. **Exames:** glicemia, TC sem contraste, angioimagem conforme elegibilidade, monitorização e EEG se consciência não regressar. **Conduta:** Código AVC sem atraso, avaliar reperfusão por neurologia e tratar recorrência de crise se indicada. **Por que importa:** convulsão no início não elimina isquemia tratável.
+
+
+
+# PARTE V — Questões autorais comentadas
+
+## Questões 1–16: avaliação e comentários das versões anteriores
+
+
+
+**Q1.** Em suspeita de AVC ao despertar, o horário decisivo para janela clínica padrão é: A) hora do primeiro exame; B) último momento em que paciente foi visto assintomático; C) hora da glicemia; D) horário de chegada ao hospital. **B.** A/C/D não definem início. **Mini-revisão:** last known well orienta elegibilidade, embora imagem avançada possa selecionar casos tardios.
+
+**Q2.** Paciente com afasia incapacitante e NIHSS 3 dentro de 2 h, TC sem hemorragia. Melhor conduta: A) descartar reperfusão por NIHSS baixo; B) avaliar trombólise conforme déficit funcional e contraindicações; C) observar 48h sem neurologia; D) dar anticoagulante sem imagem. **B.** A ignora AHA 2026, C atrasa tratamento, D é inseguro. **Mini-revisão:** incapacitante ≠ NIHSS alto obrigatório.
+
+**Q3.** AHA/ASA 2026 recomenda como alternativas de IVT padrão em adultos elegíveis na janela até 4h30: A) estreptoquinase e heparina; B) alteplase ou tenecteplase nas doses e protocolos indicados; C) apenas AAS; D) warfarina IV. **B.** A/D não são reperfusão padrão, C não substitui IVT. **Mini-revisão:** no SUS, verificar incorporação e protocolo local.
+
+**Q4.** Qual exame inicial tem papel fundamental para descartar hemorragia antes de trombólise? A) TC de crânio sem contraste; B) EEG; C) apenas hemograma; D) RX de tórax. **A.** B/C/D não excluem sangramento intracraniano. **Mini-revisão:** TC precoce pode ser normal no AVC isquêmico.
+
+**Q5.** Déficit focal que resolve totalmente após 15 minutos e suspeita isquêmica: A) sempre benigno; B) possível AIT, exige investigação urgente de risco e mecanismo; C) exclui fibrilação atrial; D) dispensa neuroimagem. **B.** A/C/D subestimam risco. **Mini-revisão:** AIT é aviso vascular importante.
+
+**Q6.** Crise tônico-clônica em curso há 8 minutos deve receber: A) espera até 30 min; B) benzodiazepínico apropriado com ABC e glicemia; C) objeto entre dentes; D) contenção física intensa. **B.** A aumenta risco, C/D causam dano. **Mini-revisão:** t1≈5 minutos.
+
+**Q7.** Sobre ESETT após benzodiazepínico adequado em estado de mal: A) levetiracetam foi sempre superior em todas faixas; B) levetiracetam, fosfenitoína e valproato tiveram eficácia semelhante global; C) valproato é universalmente contraindicado em todos; D) nenhum fármaco de segunda linha é indicado. **B.** A não condiz com resultados, C exagera contraindicações, D ignora manejo. **Mini-revisão:** individualizar por segurança e disponibilidade.
+
+**Q8.** Fraqueza focal depois de crise convulsiva: A) prova paresia de Todd e dispensa exame; B) pode ser Todd ou AVC coexistente, exigindo avaliação pelo contexto; C) exclui hipoglicemia; D) indica trombólise sem imagem. **B.** A/C negligenciam diferenciais, D é inseguro. **Mini-revisão:** déficit pós-ictal não é excludente vascular.
+
+**Q9.** A classificação TOAST ajuda a orientar: A) apenas localização do edema; B) etiologia do AVC e prevenção secundária; C) intensidade da febre; D) necessidade de cefalexina. **Gabarito B.** A não define mecanismo; C/D não têm pertinência vascular. **Revisão:** FA, aterosclerose e pequenos vasos pedem estratégias diferentes.
+
+**Q10.** Sobre DAPT AAS + clopidogrel após AVC: A) é obrigatória por anos para todos; B) pode ser útil por janela curta em AVC minor não cardioembólico/AIT de alto risco selecionado; C) é sempre preferida à anticoagulação em FA; D) deve começar durante alteplase. **Gabarito B.** A aumenta sangramento; C ignora cardioembolia; D aumenta risco hemorrágico. **Revisão:** duração e mecanismo importam.
+
+**Q11.** Em AVC de circulação posterior, NIHSS baixo: A) exclui lesão grave; B) pode subestimar déficit de tronco/cerebelo; C) elimina necessidade de angioimagem; D) prova ansiedade. **Gabarito B.** A/C/D negligenciam vertigem central, ataxia e oclusão basilar. **Revisão:** topografia é crucial.
+
+**Q12.** Uma TC simples normal nas primeiras 90 min: A) descarta isquemia cerebral; B) exige diagnóstico de síncope; C) não descarta AVC hiperagudo; D) confirma tumor. **Gabarito C.** A é falso por sensibilidade precoce; B/D não seguem. **Revisão:** excluir hemorragia e analisar clínica.
+
+**Q13.** Após AVC isquêmico em pessoa com FA, início de anticoagulante: A) sempre na sala de emergência antes da imagem; B) depende de tamanho do infarto, sangramento e risco, em avaliação especializada; C) nunca é indicado; D) precisa sempre de duas semanas fixas. **Gabarito B.** A/C/D são regras absolutas falsas. **Revisão:** ponderar embolia versus hemorragia.
+
+**Q14.** Paciente com hematoma lobar em TC e sem crise não deve receber automaticamente: A) monitorização neurológica; B) tratamento de coagulopatia; C) anticonvulsivante profilático universal sem indicação; D) avaliação de PA. **Gabarito C.** A/B/D são relevantes conforme caso; C não melhora desfechos na ausência de crise demonstrada. **Revisão:** profilaxia de status não é universal.
+
+**Q15.** Em oclusão de artéria basilar até 24 horas: A) trombectomia é sempre impossível; B) pode ser recomendada em paciente com características clínicas/imagens apropriadas; C) trombolítico é obrigatório sem TC; D) anticoagulação empírica substitui todo tratamento. **Gabarito B.** A contraria diretriz 2026; C e D são inseguros. **Revisão:** janela e imagem determinam elegibilidade.
+
+**Q16.** Crise focal seguida de hemiparesia: A) elimina hipótese de AVC; B) permite nomear Todd sem avaliação; C) demanda investigar AVC e pós-ictal conforme cenário; D) contraindica sempre qualquer reperfusão. **Gabarito C.** A/B/D são absolutismos incorretos. **Revisão:** duas patologias podem coexistir.
+
+
+
+---
+
+
+
+
+
 
 ## 29. Questões inéditas de integração com comentários por alternativa
 
@@ -618,6 +627,8 @@ C) Considerar AVC posterior, examinar déficits e obter avaliação especializad
 D) NIHSS baixo equivale a ausência de doença vascular.  
 **Gabarito C.** A ignora sensibilidade limitada da TC precoce; B usa exame fora do cenário/competência; D subestima tronco e cerebelo. **Minirrevisão:** exame funcional, topografia e imagem complementar prevalecem sobre suposições.
 
+
+
 ## 30. Referências revisadas e atualizações que mudam conduta
 
 1. **Ministério da Saúde (Brasil).** Portaria Conjunta SAES/SECTICS nº 29, de 12/12/2023: PCDT Acidente Vascular Cerebral Isquêmico Agudo. Portal atualizado em 21/01/2025. https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view
@@ -627,7 +638,8 @@ D) NIHSS baixo equivale a ausência de doença vascular.
 5. **Ministério da Saúde (Brasil).** PCDT Epilepsia; publicado em 23/07/2025, anexo alterado em 05/05/2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/e/epilepsia/view
 6. **NICE NG217.** Epilepsies in children, young people and adults: Treating status epilepticus. Publicação 2022, última atualização em 30/01/2025. https://www.nice.org.uk/guidance/ng217/chapter/7-Treating-status-epilepticus-repeated-or-cluster-seizures-and-prolonged-seizures
 7. Kapur J et al. Randomized Trial of Three Anticonvulsant Medications for Status Epilepticus (ESETT). *NEJM*. 2019. https://pubmed.ncbi.nlm.nih.gov/31774955/
-8. **LURIA, consulta cruzada interna.** Aula 138/07 — crises convulsivas e estado de mal na Pediatria, apenas para aprofundamento etário: \`apostilas/_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md\`. Não duplicar, não substituir.
+8. **AHA/ASA.** Hoh BL et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage. DOI 10.1161/STR.0000000000000436. https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-aneurysmal-subarachnoid-hemorrhage/top-things-to-know
+9. **LURIA, consulta cruzada interna.** Aula 138/07 — crises convulsivas e estado de mal na Pediatria, apenas para aprofundamento etário: \`apostilas/_rascunhos/lote-07-aula-138-crises-convulsivas-estado-mal.md\`. Não duplicar, não substituir.
 
 ## 31. Auditoria científica/editorial: aprovação bloqueada
 
