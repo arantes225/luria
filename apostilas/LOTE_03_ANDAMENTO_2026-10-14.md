@@ -15,7 +15,7 @@
 | 42 | Princípios de técnica cirúrgica | HTML_EDITORIAL_REVISAO_PENDENTE | \`_rascunhos/lote-03/42-tecnica-cirurgica.md\` |
 | 43 | Puericultura e prevenção de acidentes | TEXTO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/43-puericultura-prevencao-acidentes.md\` |
 | 44 | Abortamento | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
-| 45 | Participação e controle social no SUS | RASCUNHO_INICIADO | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
+| 45 | Participação e controle social no SUS | RASCUNHO_APROFUNDADO_REVISAO_PENDENTE | \`_rascunhos/lote-03/45-controle-social-sus.md\` |
 | 46 | Asma | RASCUNHO_INICIADO | \`_rascunhos/lote-03/46-asma.md\` |
 | 47 | Trauma: atendimento inicial e ABCDE | RASCUNHO_INICIADO | \`_rascunhos/lote-03/47-trauma-atendimento-inicial.md\` |
 | 48 | Imunizações na infância | RASCUNHO_INICIADO | \`_rascunhos/lote-03/48-imunizacoes-infancia.md\` |
@@ -45,6 +45,14 @@
 - Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
 - Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
 - Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
+## Aula 45 — aprofundamento de participação e controle social (14/10/2026)
+
+`apostilas/_rascunhos/lote-03/45-controle-social-sus.md` ampliado de **5.092 para 57.952 caracteres brutos** (cerca de **50.100 caracteres de corpo didático estimado**, antes da revisão humana). Foram elaborados **23 capítulos**, **6 casos institucionais comentados**, **10 questões de múltipla escolha com alternativas A-D justificadas**, tabelas de competências, planejamento e prestação de contas, além de exemplos de análise de PAS/RAG e cinco fluxogramas. Conferidos diretamente no GitHub todos os dez gabaritos e alternativas.
+
+Benchmark reaberto no Drive: `SUS.pdf`, esquema de nível introdutório e autoria institucional não verificada. Não corresponde a tratado completo do assunto; nenhum conteúdo protegido ou imagem foi copiado. Normas cotejadas com fontes públicas: Constituição Federal, Lei 8.142/1990, Resolução CNS 453/2012 (portal marca como **em vigor** em 2026), LC141/2012, instrumentos de planejamento/MS, DigiSUS e Ouvidorias. As normas locais e texto integral de regimentos/possíveis alterações requerem revisão jurídico-editorial antes de homologar.
+
+**Status:** RASCUNHO_APROFUNDADO_REVISAO_PENDENTE, ainda **abaixo** da meta geral de 60 mil caracteres úteis estimados. Necessário aprofundamento final, revisão jurídica, esquemas originais, HTML, testes PWA e matriz de autossuficiência humana. Sem publicação ou merge.
 
 ## Aula 43 — aprofundamento clínico de puericultura (14/10/2026)
 
