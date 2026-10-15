@@ -20,9 +20,9 @@
 | 48 | Imunizações na infância | RASCUNHO_INICIADO | \`_rascunhos/lote-03/48-imunizacoes-infancia.md\` |
 | 49 | Gestação ectópica | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 50 | Financiamento e gestão do SUS | RASCUNHO_INICIADO | \`_rascunhos/lote-03/50-financiamento-gestao-sus.md\` |
-| 51 | DPOC | NAO_INICIADA | — |
-| 52 | Traumatismo cranioencefálico | NAO_INICIADA | — |
-| 53 | Desidratação e terapia de reidratação | NAO_INICIADA | — |
+| 51 | DPOC | RASCUNHO_INICIADO | _rascunhos/lote-03/51-dpoc.md |
+| 52 | Traumatismo cranioencefálico | RASCUNHO_INICIADO | _rascunhos/lote-03/52-traumatismo-cranioencefalico.md |
+| 53 | Desidratação e terapia de reidratação | RASCUNHO_INICIADO | _rascunhos/lote-03/53-desidratacao-terapia-reidratacao.md |
 | 54 | Doença trofoblástica gestacional | REVISAO_EXISTENTE | \`_rascunhos/lote-03/44-49-54-59-expansao-obstetrica.md\` |
 | 55 | Vigilância em Saúde | NAO_INICIADA | — |
 | 56 | Pneumonias adquiridas na comunidade | NAO_INICIADA | — |
@@ -39,8 +39,14 @@
 
 **Importante:** caracteres brutos não equivalem a caracteres **didáticos úteis** e não servem como atestado editorial. As quatro apostilas novas têm quatro casos e seis questões originais cada, em estágios preliminares; demanda revisão de profundidade, consistência de alternativas e bibliografia.
 
+## Ampliação concluída nesta etapa — 14/10/2026
+- Aula 51: 16.545 caracteres brutos, 4 casos e 6 questões; materiais de DPOC estável/exacerbada do Drive examinados. PCDT MS 2026 e GOLD 2026. Classificação ABCD histórica não reutilizada.
+- Aula 52: 17.481 caracteres brutos, 4 casos e 6 questões; material de TCE grave do Drive examinado; BTF 4ª edição e NICE NG232. Nenhuma figura de terceiros importada.
+- Aula 53: 20.675 caracteres brutos, 4 casos e 6 questões; comparativo do Drive é apenas adjacente (diarreia adulta), sem apostila pediátrica equivalente; referencia prioritariamente o Ministério da Saúde 2023, SBP e AAP. Etapa zero de benchmarking de cursinho permanece parcial.
+- Os 3 rascunhos foram relidos e verificados na branch. **Contagem de 15 dos 20 temas com trabalho inicial. Zero homologados.**
+
 ## Próximas ações
-1. Aulas 51–53, consultando Drive para DPOC, TCE e desidratação e checando diretrizes recentes brasileiras.
+1. Aulas 55–58 e 60, com documentação de fontes e priorização de lacunas, preservando distinções entre Vigilância em Saúde e Vigilância Epidemiológica.
 2. Completar estudo técnico e inserção de pelo menos quatro casos e seis questões aprofundadas por apostila, cuidando da originalidade.
 3. Nos temas 44/49/54/59, mapear âncoras e intersecções em \`hemorragias-primeiro-terceiro-trimestre/index.html\` antes de qualquer alteração.
 4. Produzir manifesto de imagens candidatas **com licença verificada**, sem inserir recursos clínicos não aprovados em HTML.
