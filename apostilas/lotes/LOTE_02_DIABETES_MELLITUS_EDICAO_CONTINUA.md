@@ -264,13 +264,9 @@ Hipoglicemia deve ser reconhecida por sintomas autonômicos (sudorese, tremor, p
 
 O seguimento inclui avaliação de retinopatia, doença renal (TFGe e albuminúria), neuropatia e pés, além de risco cardiovascular. Não usar HbA1c como substituto da avaliação de órgão-alvo. Em pacientes com perda de sensibilidade protetora, deformidades ou doença arterial periférica, o risco de feridas aumenta e justifica prevenção intensificada.
 
-**Caso 1.** Jovem de 21 anos, poliúria, perda ponderal e vômitos, glicemia elevada, respiração profunda. Investigar imediatamente cetonas e acidose, hidratação e eletrólitos; não assumir DM2 com base apenas na idade. **Por que importa:** reconhecer cetoacidose antes de etiquetar o subtipo.
 
-**Caso 2.** Adulto com DM2, albuminúria persistente, doença cardiovascular e HbA1c próxima da meta. A avaliação continua incluindo proteção renal e cardiovascular, não apenas redução de glicose. **Por que importa:** tratar desfechos e não somente marcadores.
 
-**Questão 1.** Pessoa assintomática tem HbA1c 6,6% sem segunda medida; qual conduta? A) Confirmar conforme critério; B) Descartar diabetes; C) Iniciar insulina obrigatoriamente; D) Diagnosticar DM1. **Gabarito A.** B ignora achado sugestivo, C e D inferem subtipo/terapia sem base. **Revisão:** confirmação é importante fora de hiperglicemia inequívoca.
 
-**Questão 2.** Em DM2 com doença renal, qual afirmação é correta? A) HbA1c é o único alvo; B) Albuminúria é irrelevante; C) Risco cardiorrenal modifica escolha terapêutica; D) Toda pessoa deve usar mesma combinação. **Gabarito C.** A e B ignoram órgãos-alvo, D ignora individualização. **Revisão:** a SBD 2026 integra prevenção cardiovascular e renal.
 
 ### 6.2 Emergências hiperglicêmicas: critérios revisados e raciocínio com eletrólitos
 
@@ -525,6 +521,36 @@ Esses valores são **objetivos usuais condicionados**, não autorização para t
 
 ## 9. Casos clínicos comentados
 
+### Caso 1 — Poliúria, vômitos e respiração profunda em adulto jovem
+
+**Apresentação:** estudante de 21 anos apresenta sede e poliúria por três semanas, perda de 7 kg, depois vômitos, dor abdominal e respiração profunda. Glicemia capilar de 384 mg/dL, frequência respiratória 30/min e mucosas secas. Laboratório: pH venoso **7,18**, bicarbonato **10 mmol/L**, beta-hidroxibutirato **5,6 mmol/L** e potássio **3,2 mmol/L**.
+
+**Hipóteses:** cetoacidose diabética (CAD) em diabetes ainda não classificado, com possibilidade de DM1 por deficiência insulínica importante. Idade jovem e peso não definem sozinhos subtipo; DM2, formas monogênicas e outras etiologias dependem de avaliação posterior.
+
+**Raciocínio:** os três componentes de CAD do consenso internacional de 2024 estão presentes: diabetes/hiperglicemia, cetose significativa e acidose. O potássio sérico já está baixo apesar do déficit corporal usualmente maior; iniciar insulina IV imediatamente sem corrigir esse risco poderia precipitar arritmia ou fraqueza respiratória.
+
+**Exames e interpretação:** dosar eletrólitos seriados, função renal, gasometria, beta-hidroxibutirato e investigar precipitantes; ECG e monitorização conforme gravidade. HbA1c pode informar cronicidade, mas não deve atrasar estabilização. A classificação do diabetes após recuperação pode integrar autoanticorpos, peptídeo C no momento adequado e histórico familiar.
+
+**Conduta:** atendimento hospitalar monitorado, avaliação de perfusão e hidratação, **correção de hipocalemia antes da insulina IV conforme protocolo**, insulina e glicose intravenosa ajustadas à evolução da cetose e prevenção de deterioração. Após resolução bioquímica e clínica, transição programada para insulina subcutânea com componente basal sem interrupção abrupta.
+
+**Por que este caso importa:** a prioridade é reconhecer **CAD e potássio de risco**, não rotular precipitadamente DM1 ou DM2 apenas pela idade.
+
+### Caso 2 — HbA1c perto da meta, mas risco cardiorrenal elevado
+
+**Apresentação:** homem de 63 anos com DM2 há 12 anos, hipertensão, infarto prévio e RAC urinária **220 mg/g confirmada**; TFGe 49 mL/min/1,73 m², HbA1c 6,9%. Refere uso regular de metformina e anti-hipertensivo, sem hipoglicemia. Pergunta por que alterar o tratamento se a “glicada está ótima”.
+
+**Hipóteses e estratificação:** DM2 com doença cardiovascular aterosclerótica e DRC provável **G3a-A2**, desde que a queda de filtração e albuminúria tenham cronicidade estabelecida. Outras causas de doença renal devem ser consideradas quando a história ou o sedimento forem atípicos.
+
+**Raciocínio:** HbA1c descreve parte do controle de glicose; **não mede proteção renal ou cardiovascular**. Em perfis elegíveis, iSGLT2 com indicação cardiorrenal e outros fármacos com benefício em desfechos podem ser considerados mesmo com HbA1c próxima da meta, respeitando função renal, disponibilidade, interações e contraindicações. A pressão arterial, tabagismo e estatina também importam.
+
+**Exames e interpretação:** confirmar RAC/TFGe ao longo do tempo, pressão arterial, potássio, perfil lipídico, função renal e medicações. A RAC A2 demonstra risco apesar de valores glicêmicos relativamente controlados. Não combinar indiscriminadamente IECA e BRA; monitorar creatinina e potássio com bloqueio do sistema renina-angiotensina.
+
+**Conduta:** discutir estratégia **multifatorial de proteção cardiorrenal** com paciente e equipe, revisar indicação de fármacos por desfechos, ajustar metformina e outros agentes conforme TFGe e documentar metas de seguimento. Não intensificar sulfonilureia apenas para diminuir HbA1c alguns décimos sem vantagem clínica estabelecida.
+
+**Por que este caso importa:** tratar diabetes é prevenir **infarto, insuficiência cardíaca e progressão renal**, não apenas produzir um número de HbA1c.
+
+
+
 ### Caso 3 — CAD euglicêmica associada a SGLT2
 
 Homem de 56 anos com DM2 em uso de inibidor SGLT2, após procedimento cirúrgico e baixa ingesta, apresenta vômitos, dor abdominal e taquipneia. Glicemia 184 mg/dL, pH 7,20, bicarbonato 12 mmol/L e beta-hidroxibutirato elevado. **Hipótese:** CAD euglicêmica. **Raciocínio:** contexto clínico, cetose e acidose prevalecem sobre a falsa segurança de glicose abaixo de 250. **Exames:** eletrólitos, potássio, função renal, gasometria e avaliação de precipitantes. **Conduta:** estabilização e protocolo hospitalar de CAD, suspensão temporária do fármaco implicado e revisão da indicação após resolução. **Por que importa:** reconhecer descompensação metabolicamente grave com glicemia não muito alta.
@@ -578,6 +604,36 @@ Mulher de 68 anos com DM2, neuropatia e doença arterial periférica tem lesão 
 
 
 ## 10. Questões autorais comentadas
+
+### Questão 1 — Confirmação da hiperglicemia em pessoa assintomática
+
+Mulher de 49 anos, assintomática, encontra HbA1c de **6,6%** em exame laboratorial isolado. Não há hiperglicemia inequívoca nem crise metabólica. Qual conduta diagnóstica é melhor?
+
+A) Confirmar com segundo resultado anormal, repetindo HbA1c ou usando outro teste diagnóstico adequado em tempo oportuno.
+
+B) Descartar diabetes porque 6,6% está abaixo de 7%.
+
+C) Prescrever insulina obrigatoriamente sem confirmação nem avaliação clínica.
+
+D) Classificar DM1 pela HbA1c, mesmo sem avaliação de subtipo.
+
+**Gabarito: A.** A ADA 2026 requer **confirmação diagnóstica** na ausência de hiperglicemia inequívoca; dois resultados anormais podem ser do mesmo teste ou de testes diferentes adequados. **Alternativa B:** confunde meta de tratamento e limiar diagnóstico ≥6,5%. **Alternativa C:** a decisão farmacológica não decorre automaticamente do exame isolado. **Alternativa D:** a HbA1c não identifica o subtipo. **Mini-revisão:** em pessoa com sintomas clássicos e glicemia casual ≥200 mg/dL ou crise, a lógica de confirmação é diferente.
+
+### Questão 2 — Proteção cardiorrenal além da HbA1c
+
+Homem com DM2, infarto prévio, RAC persistente de 180 mg/g e TFGe 52 mL/min/1,73 m² tem HbA1c 6,8%. Qual interpretação orienta melhor o plano?
+
+A) Como a HbA1c está perto da meta, risco cardiovascular e renal não precisam mais de atenção.
+
+B) RAC é irrelevante enquanto a creatinina não ultrapassar o intervalo de referência.
+
+C) A doença cardiovascular e a albuminúria podem justificar intervenções com benefício cardiorrenal, independentemente da necessidade de reduzir muito mais a HbA1c.
+
+D) Toda pessoa com DM2 deve receber a mesma combinação medicamentosa, sem considerar TFGe, doenças e acesso.
+
+**Gabarito: C.** O benefício de estratégias cardiorrenais em pacientes elegíveis não depende exclusivamente da HbA1c. **Alternativa A:** ignora risco residual. **Alternativa B:** albuminúria e TFGe são medidas complementares e alteram estratificação. **Alternativa D:** a decisão deve considerar função renal, doenças associadas, riscos e disponibilidade. **Mini-revisão:** avaliar glicose, rim, vasos, coração e risco de hipoglicemia conjuntamente.
+
+
 
 ### Questão 3
 Um adulto com DM2 em uso de iSGLT2 chega com vômitos, pH 7,22, beta-hidroxibutirato elevado e glicemia 180 mg/dL. A hipótese que precisa ser investigada imediatamente é:
