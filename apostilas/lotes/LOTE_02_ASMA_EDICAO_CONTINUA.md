@@ -489,6 +489,37 @@ A avaliação de criança em crise começa pelos **sinais de gravidade e esforç
 **Fontes verificadas:** GINA. *Summary Guide for Asthma Management and Prevention — 2026*, tabela 1 (critérios funcionais), figura 8 (6–11 anos) e seção de planos de ação e exacerbações; https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . Material GINA é protegido por direitos autorais; os exemplos e as tabelas pedagógicas acima são inteiramente autorais. Para uso assistencial no Brasil, confrontar as formulações com o PCDT e a disponibilidade/regulação nacional.
 
 
+### 8.7 AIR/MART entre 6 e 11 anos: como ler a dose sem transpor o esquema do adulto
+
+A GINA 2026 mudou as opções de alívio anti-inflamatório em escolares, mas um medicamento indicado em determinado **país e dispositivo** não está automaticamente autorizado em todas as apresentações disponíveis no Brasil. O quadro abaixo ensina a leitura clínica da formulação especificamente descrita no guia internacional, **sem constituir prescrição individual**. É obrigatório verificar bula brasileira, registro na faixa etária, disponibilidade no SUS e orientação do especialista antes de propor AIR/MART.
+
+**Duas expressões que parecem sinônimas e não são:** *dose liberada/entregue* (quantidade que chega a sair do bocal na metodologia do produto) e *dose medida/nominal* (concentração indicada em algumas embalagens). A associação **budesonida-formoterol 80/4,5 microgramas por inalação na apresentação de dose entregue** pode constar como **100/6 microgramas na dose nominal**. Isso não significa que se devam somar as duas quantidades ou fazer duas inalações para “compensar” a diferença. Sempre identificar a convenção de rótulo e a formulação real.
+
+| Estratégia na GINA 2026, crianças 6–11 anos | Exemplo de uso com budesonida-formoterol **80/4,5 mcg entregues** (100/6 mcg nominais) | Interpretação |
+| --- | --- | --- |
+| AIR-only na etapa inicial (etapas 1–2 de alívio) | **Uma inalação quando houver sintomas**, na apresentação elegível | É alívio **com CI**, não formoterol sozinho nem salbutamol isolado como plano completo |
+| MART etapa 3 | **Uma inalação de manutenção uma vez ao dia**; uma inalação adicional conforme sintomas | O mesmo inalador fornece manutenção e alívio, desde que o produto seja aprovado para esse uso |
+| MART etapa 4 | **Uma inalação de manutenção duas vezes ao dia**, com uma adicional conforme sintomas | A necessidade frequente de alívio pede reavaliação de controle, técnica e gravidade |
+| Etapa 5 | **MART não recomendado como estratégia de etapa 5 nesta tabela**; referir para fenotipagem e terapia adicional | Asma grave exige investigação especializada e não apenas aumentar número de jatos |
+| Alerta de segurança | **Procurar avaliação médica se forem necessárias mais de oito inalações totais em 24 horas** | Contar manutenção **mais** doses extras; não interpretar oito como uma meta de uso ou quantidade desejável |
+
+**Oito não são “oito doses de resgate além da manutenção”.** Exemplo de uma criança no regime de MART etapa 4: duas inalações de manutenção somadas a cinco inalações de alívio no mesmo dia resultam em **sete inalações totais**. Se foram necessárias sete, a criança pode ainda estar piorando clinicamente e exigir assistência **antes** de atingir o valor de alerta: fala entrecortada, letargia, esforço acentuado, hipóxia, resposta insuficiente e piora rápida têm prioridade sobre qualquer contagem numérica.
+
+A tabela da GINA também inclui **beclometasona-formoterol 100/6 mcg nominais** em contextos de AIR/MART, mas a própria diretriz ressalva que a formulação **não foi estudada especificamente como alívio isolado (AIR-only)** e que extrapolações podem ser necessárias em ambientes determinados. Não presumir equivalência de evidência entre moléculas ou autorização regulatória idêntica. **Budesonida-formoterol 160/4,5 mcg entregues**, comum em adolescentes/adultos, **não é a apresentação-padrão da tabela de AIR para 6–11 anos**; duas concentrações não são intercambiáveis apenas porque ambas contêm formoterol.
+
+#### 8.7.1 Como decidir quando o tratamento de baixa etapa não está funcionando
+
+A criança de oito anos não controla bem a asma com tratamento contendo CI em dose apropriada? Antes de mudar a etapa, reavaliar o diagnóstico, frequência de crise, função pulmonar quando possível, exposição ao tabaco/vape, rinite, adesão e dispositivo. A família pode relatar que “tomou o remédio” quando a cápsula do pó seco não foi perfurada, houve disparo fora da inspiração ou a escola não administra a dose como planejado. Em asma mal controlada, **não tomar CI de modo regular** pode ser problema mais importante que a escolha de uma nova molécula.
+
+Se persistem despertares, limitação ou exacerbadores apesar de boa técnica e adesão, a GINA considera opções de manutenção em dose diferente ou MART e encaminhamento. O aluno deve saber **qual pergunta está respondendo**: “qual esquema inicial para sintomas pouco frequentes?” é diferente de “qual tratamento após falha documentada da etapa 3?”. Criança com suspeita de asma grave, múltiplas idas à emergência ou necessidade de etapa 4/5 merece avaliação especializada, inclusive de possíveis imunobiológicos conforme fenótipo e elegibilidade nacional.
+
+#### 8.7.2 Contagem de inalações em uma vinheta
+
+**Vinheta:** menino de nove anos, em MART etapa 3 com uma inalação diária de manutenção, utiliza seis doses extras por chiado e tosse no mesmo dia. **Cálculo:** 1 programada + 6 de alívio = **7 inalações totais**. Não se deve instruir a família a esperar até chegar à nona para procurar ajuda: se a criança está ofegante em repouso, reduz fala/ingesta ou não responde de modo sustentado às doses previstas no plano, precisa de assistência imediata. Já para uma menina de 13 anos, o quadro de 12–17 anos da GINA apresenta **outra formulação e outro limite de alerta**; não transformar números pediátricos em regra universal.
+
+**Referência conferida:** GINA 2026 *Summary Guide for Asthma Management and Prevention*, seção de tratamento em crianças (páginas impressas 28–30) e tabela 7 de AIR/MART (página impressa 45): https://ginasthma.org/wp-content/uploads/2026/07/GINA-Summary-Guide-2026-WEB-WMS.pdf . A síntese e a vinheta acima são originais. Os quadros da GINA possuem direitos autorais e **não devem ser copiados como imagem para a LURIA**.
+
+
 ## 9. Casos clínicos comentados
 
 ### Caso 1 — Espirometria normal entre episódios
@@ -547,6 +578,15 @@ Menina de nove anos apresenta tosse noturna e sibilância ao exercício em dias 
 ### Caso 14 — Escolar com crise grave que para de sibilar
 
 Menino de oito anos, asma conhecida e diversos resgates sem controle, chega com retrações intensas, fala entrecortada e cansaço progressivo. Inicialmente há sibilos difusos; depois o murmúrio vesicular diminui drasticamente. **Hipótese:** exacerbação grave com fluxo aéreo perigosamente reduzido e risco de insuficiência respiratória. **Raciocínio:** a redução dos ruídos não é necessariamente melhora: pode revelar entrada de ar insuficiente. **Exames:** avaliação contínua de esforço, consciência, oxigenação e resposta inicial; evitar retardar tratamento para obter espirometria durante instabilidade. **Conduta:** atendimento emergencial monitorado com suporte respiratório e broncodilatação/corticosteroide conforme protocolo, com possibilidade de escalonamento rápido e revisão posterior do controlador. **Por que este caso importa:** **tórax silencioso e exaustão são sinais de gravidade**, mesmo sem sibilância audível.
+
+
+### Caso 15 — “Oito jatos” não significa oito jatos adicionais de resgate
+
+Menina de dez anos usa uma apresentação de budesonida-formoterol que foi prescrita com orientação especializada em regime MART, com **uma dose de manutenção duas vezes ao dia**. Durante uma virose, fez seis inalações adicionais para alívio, totalizando **oito inalações em 24 horas**; agora mantém tiragem e dificuldade de falar frases completas. **Hipóteses:** exacerbação de asma com sinais clínicos de gravidade, falha de controle, possibilidade de técnica inadequada e infecção como gatilho. **Raciocínio:** a contagem de AIR/MART soma manutenção e resgate; o limite de alerta da GINA não deve ser utilizado para postergar atendimento quando há esforço respiratório. **Exames:** saturação, consciência, fala, trabalho respiratório, ventilação, ausculta e avaliação de resposta ao tratamento emergencial. **Conduta:** assistência urgente, suporte e broncodilatação conforme protocolo pediátrico, avaliação de corticosteroide sistêmico e revisão posterior do plano de controle/registro do produto. **Por que importa:** um limite numérico não substitui reconhecimento de gravidade; **oito inalações totais não são oito extras**.
+
+### Caso 16 — Prescrição com concentração adulta em escolar
+
+Menino de sete anos recebe diagnóstico de asma com sintomas pouco frequentes, sem comprometimento respiratório no atendimento. Um familiar possui inalador de budesonida-formoterol **160/4,5 mcg entregues** utilizado por um adulto e pergunta se pode oferecer “uma inalação igual” sempre que houver chiado. **Hipóteses:** asma em idade escolar, proposta de automedicação com formulação não equivalente à opção pediátrica do guia. **Raciocínio:** na GINA 2026, o quadro de AIR para 6–11 anos apresenta budesonida-formoterol **80/4,5 mcg entregues (100/6 mcg nominais)** como exemplo; concentrações e elegibilidade não podem ser transferidas do adulto à criança por simples nome comercial. **Exames:** documentação diagnóstica de variabilidade do fluxo quando possível, risco de crises e aptidão para uso do dispositivo. **Conduta:** selecionar estratégia contendo CI própria da faixa etária e autorizada/regulamentada localmente, demonstrar técnica e fornecer plano escrito; não compartilhar o inalador do adulto. **Por que importa:** concentração, dose nominal e dose entregue são questões reais de segurança pediátrica.
 
 
 ## 10. Questões autorais comentadas
@@ -718,6 +758,29 @@ C) Ausência de sibilância exclui asma durante qualquer exacerbação.
 D) O exame funcional de rotina deve preceder toda medida de suporte.
 
 **Gabarito: B.** Sem fluxo adequado, o chiado pode desaparecer enquanto a situação piora. **A:** confunde silêncio com melhora; **C:** ignora a fisiopatologia; **D:** retarda suporte de um paciente instável. **Mini-revisão:** consciência, fala, esforço respiratório, oxigenação e entrada de ar prevalecem sobre a presença isolada de sibilos.
+
+
+### Questão 20 — Soma de manutenção e resgate na GINA 2026
+
+Escolar de nove anos utiliza budesonida-formoterol pediátrico elegível em MART com uma inalação de manutenção pela manhã e outra à noite. No mesmo dia, usou cinco inalações extras. Quantas inalações **totais** recebeu?
+
+A) Cinco, porque manutenção não conta.
+B) Sete, pois são duas de manutenção e cinco adicionais.
+C) Dez, porque cada inalação de manutenção conta em dobro.
+D) O número é impossível de calcular sem espirometria.
+
+**Gabarito: B.** Somar 2 + 5 = 7. **A:** desconsidera o uso programado. **C:** inventa multiplicação por dose nominal. **D:** o cálculo depende do registro das inalações, e a espirometria responde a outra pergunta. **Mini-revisão:** contagem total não substitui avaliação de urgência; procurar cuidado antes do limite se houver gravidade.
+
+### Questão 21 — Concentração pediátrica e adulta
+
+Qual afirmação evita erro de dose no regime AIR/MART de criança de oito anos segundo a GINA 2026?
+
+A) Qualquer budesonida-formoterol de adulto tem posologia pediátrica idêntica.
+B) Budesonida-formoterol 80/4,5 mcg entregues e 100/6 mcg nominais podem representar duas convenções de rotulagem da mesma apresentação, mas não dispensam conferir produto, idade e autorização.
+C) CI-salmeterol pode sempre substituir CI-formoterol como medicação de resgate.
+D) A quantidade de doses máximas é igual para todos os grupos etários.
+
+**Gabarito: B.** É preciso distinguir dose entregue de nominal e conferir a apresentação. **A:** ignora diferenças de concentração e evidência. **C:** não se deve equiparar salmeterol ao formoterol de início rápido. **D:** a GINA 2026 apresenta alertas diferentes por idade e formulação. **Mini-revisão:** idade, dose entregue/nominal e registro regulatório são inseparáveis.
 
 
 ## Referências essenciais
