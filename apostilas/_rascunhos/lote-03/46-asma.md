@@ -1,7 +1,7 @@
 # LURIA | AULA 46 — ASMA
 **Lote 03 · Clínica Médica · manuscrito autoral para revisão · 14/10/2026**
 
-> **STATUS: RASCUNHO NÃO HOMOLOGADO.** Este manuscrito não substitui a apostila premium definitiva: faltam aprofundamento até a extensão editorial pretendida, curadoria de imagens, conferência linha a linha do PCDT e GINA 2026, validação por questões de autossuficiência e testes da interface.
+> **STATUS: TEXTO APROFUNDADO EM REVISÃO, NÃO HOMOLOGADO.** O corpo clínico foi ampliado e já supera a meta preliminar de extensão, mas requer revisão clínica especializada, curadoria e aprovação de imagens, validação de posologia específica, teste de autossuficiência e conversão/interface antes de qualquer publicação.
 
 ## Registro comparativo obrigatório (Drive × LURIA × evidência)
 
@@ -88,31 +88,73 @@ Paciente de 55 anos chega taquipneico, não consegue completar frases e apresent
 ### Caso 4 — Asma ou outra causa de dispneia?
 Mulher de 68 anos, tabagista prévia, dispneia progressiva e edema periférico, com “asma” diagnosticada há anos sem espirometria. **Hipótese diferencial:** insuficiência cardíaca, DPOC e asma podem coexistir. **Raciocínio:** ausência de variabilidade, congestão e história de exposição exigem reconsiderar rótulo. **Exames:** ECG, avaliação cardíaca, espirometria estável e complementos dirigidos. **Conduta:** tratar problema agudo identificado; confirmação diagnóstica e regime de manutenção depois. **Importância:** sibilância não é exclusiva de asma.
 
-## 11. Questões originais de residência — com alternativa a alternativa
+## 11. Primeira bateria: seis questões originais comentadas integralmente
 
-**Q1.** Adulto com tosse noturna episódica, sibilância após resfriados e espirometria normal hoje. Qual é a interpretação mais adequada?  
-A) Asma está excluída; B) Asma está comprovada pela tosse; C) A variabilidade de sintomas justifica investigação objetiva complementar; D) O diagnóstico é necessariamente DPOC.  
-**Gabarito C.** A ignora intermitência; B atribui especificidade indevida; C combina história e função pulmonar; D não é obrigatório nem sustentado. **Mini-revisão:** documentação de variabilidade respiratória continua central.
+### Questão 1 — Espirometria normal e suspeita clínica
 
-**Q2.** Paciente com VEF1 antes do broncodilatador de 1,90 L e depois de 2,18 L, com sintomas típicos. O achado:  
-A) é irrelevante; B) corresponde a aumento absoluto de 280 mL e relativo de ~14,7%; C) prova asma grave; D) indica DPOC obrigatoriamente.  
-**Gabarito B.** A despreza resposta; B descreve corretamente o teste; C mistura confirmação com gravidade; D não decorre do resultado. **Mini-revisão:** interpretar resposta absoluta e proporcional no contexto clínico.
+Paciente de 25 anos apresenta tosse e sibilos variáveis, piores em semanas de resfriado e após correr, com despertar noturno esporádico. A espirometria de hoje é normal e o exame pulmonar não mostra sibilos. O que fazer?
 
-**Q3.** Qual tratamento de manutenção é uma estratégia inadequada para asma confirmada em adulto?  
-A) tratamento contendo CI ajustado ao risco; B) esquema CI-formoterol validado quando indicado; C) LABA isolado sem CI; D) educação e técnica inalatória.  
-**Gabarito C.** A, B e D são componentes pertinentes de manejo; C expõe a risco e não trata adequadamente inflamação. **Mini-revisão:** controle inflamatório é parte essencial do tratamento.
+A) Excluir asma, já que a espirometria de repouso foi normal.  
+B) Confirmar asma exclusivamente pelo padrão clínico, sem avaliar fluxo expiratório.  
+C) Buscar documentação de variabilidade do fluxo, repetindo teste no período sintomático, utilizando PFE seriado ou broncoprovocação quando apropriado, sem atrasar tratamento clinicamente necessário.  
+D) Prescrever LABA isolado para teste de resposta terapêutica.
 
-**Q4.** Paciente com piora de sibilância, seguida de sonolência e murmúrio vesicular quase ausente. A decisão correta é:  
-A) alta porque há menos ruído; B) reconhecer sinal de ameaça à vida e ampliar suporte; C) aguardar radiografia antes de broncodilatador; D) indicar antibiótico isoladamente.  
-**Gabarito B.** A confunde silêncio auscultatório com resolução; B responde à gravidade; C atrasa tratamento; D não aborda obstrução. **Mini-revisão:** tórax silencioso e deterioração neurológica exigem emergência.
+**Gabarito: C.** **A incorreta:** asma varia e o teste fora de crise pode ser normal. **B incorreta:** história aumenta probabilidade, mas confirmação objetiva é desejável. **C correta:** integra característica clínica e evidência funcional. **D incorreta:** LABA isolado na asma aumenta risco e não deve ser utilizado. **Mini-revisão:** confirmação exige sintomas variáveis e evidência de variabilidade expiratória; uma única espirometria normal não descarta asma.
 
-**Q5.** Paciente com três exacerbações, controlador prescrito e técnica inalatória claramente incorreta:  
-A) classificar imediatamente asma grave refratária; B) suspender todos os tratamentos; C) verificar técnica/adesão e corrigir barreiras antes de escalar; D) trocar CI por SABA isolado.  
-**Gabarito C.** A é classificação prematura; B e D prejudicam controle; C atua sobre fatores modificáveis. **Mini-revisão:** asma difícil de tratar não é sempre asma grave.
+### Questão 2 — Resposta broncodilatadora no adulto
 
-**Q6.** Sobre a crise asmática, assinale a afirmação correta:  
-A) radiografia é obrigatória antes da primeira broncodilatação; B) antibiótico é de rotina; C) alta deve incluir plano de controle e prevenção; D) aminofilina deve ser primeira medida.  
-**Gabarito C.** A e B não são rotinas universais; C reduz risco pós-crise; D não é terapia inicial recomendada de rotina. **Mini-revisão:** tratar a crise e prevenir a próxima.
+VEF₁ inicial de 1,90 L e pós-salbutamol de 2,18 L em mulher de 30 anos com sintomas respiratórios variáveis. Qual descrição é correta?
+
+A) Ganho de 280 mL e 14,7% do basal, satisfazendo os limiares adultos de reversibilidade descritos no PCDT brasileiro 2026.  
+B) Ganho de 28 mL e 1,47%, sem importância.  
+C) Ganho que comprova asma grave independentemente da evolução.  
+D) Ganho que confirma DPOC como diagnóstico único, pois a broncodilatação é positiva.
+
+**Gabarito: A.** **A correta:** 0,28/1,90 = 14,7%, mais de 12% e 200 mL, devendo-se conferir manobra e contexto. **B incorreta:** cálculo decimal e unidade incorretos. **C incorreta:** responsividade auxilia diagnóstico, não define gravidade terapêutica. **D incorreta:** DPOC pode ter responsividade, mas teste positivo não define exclusividade etiológica. **Mini-revisão:** quantificar resposta em volume e proporção; não atribuir gravidade pela magnitude isolada do teste.
+
+### Questão 3 — Segurança no tratamento da asma confirmada
+
+Paciente com asma confirmada recebe opções de tratamento. Qual é **inadequada** para manutenção da asma?
+
+A) CI em esquema adequado à história e ao risco.  
+B) CI-formoterol em estratégia de alívio ou manutenção-alívio quando apresentação e faixa etária permitem.  
+C) LABA isolado sem corticoide inalatório.  
+D) Educação, técnica demonstrada e plano escrito.
+
+**Gabarito: C.** **A correta como prática:** CI trata o componente inflamatório. **B correta como prática:** GINA/PCDT 2026 contemplam AIR/MART para apresentações e idades aplicáveis. **C é a alternativa pedida:** LABA isolado não controla inflamação e associa-se a risco de evento grave. **D correta como prática:** adesão, técnica e plano estruturado melhoram segurança. **Mini-revisão:** alívio sintomático não é sinônimo de prevenção de exacerbações.
+
+### Questão 4 — Exacerbação com deterioração neurológica
+
+Homem de 51 anos em crise de asma chega com fala entrecortada; após piora progressiva torna-se sonolento e a entrada de ar é mínima. Qual afirmação é mais adequada?
+
+A) Menos sibilos significa recuperação.  
+B) Tórax silencioso e sonolência são sinais de ameaça à vida e exigem suporte imediato em ambiente apropriado.  
+C) O primeiro passo obrigatório é radiografia antes de broncodilatador.  
+D) Antibiótico isolado é o tratamento definitivo.
+
+**Gabarito: B.** **A incorreta:** pode haver tão pouco fluxo que não se formam sibilos audíveis. **B correta:** exaustão/falência respiratória iminente é emergência. **C incorreta:** não se deve atrasar tratamento por imagem de rotina. **D incorreta:** não há etiologia bacteriana demonstrada, e antibiótico não reverte broncoconstrição. **Mini-revisão:** avaliar consciência, fala, trabalho respiratório e oxigenação junto à ausculta.
+
+### Questão 5 — Asma difícil de tratar ou grave?
+
+Mulher de 44 anos recebeu CI-LABA de alta intensidade em receita, porém usa apenas duas vezes por semana e executa técnica incorreta. Teve três crises no último ano. Qual é a primeira interpretação?
+
+A) Asma grave refratária está definitivamente comprovada pela prescrição de dose alta.  
+B) O diagnóstico deve ser cancelado automaticamente.  
+C) Existem fatores modificáveis importantes; confirmar diagnóstico, corrigir técnica/adesão/acesso e reavaliar antes de classificar asma grave intrínseca, sem minimizar riscos agudos.  
+D) Trocar controlador por SABA isolado.
+
+**Gabarito: C.** **A incorreta:** a prescrição não demonstra que a dose chegou ao pulmão. **B incorreta:** dificuldade de uso não exclui doença. **C correta:** a avaliação sistemática identifica causas corrigíveis de descontrole. **D incorreta:** a estratégia excluiria proteção anti-inflamatória. **Mini-revisão:** asma grave verdadeira é subgrupo após tratamento otimizado, não sinônimo de “muita receita”.
+
+### Questão 6 — Alta após crise asmática
+
+Adulto com exacerbação moderada melhora após tratamento em pronto atendimento, sem sinais de ameaça à vida. Qual conduta de alta reduz risco futuro?
+
+A) Dispensar sem plano ou controlador; salbutamol é suficiente para todos.  
+B) Manter antibiótico por sete dias independentemente de infecção.  
+C) Verificar recuperação sustentada, iniciar/ajustar regime com CI, demonstrar técnica, fornecer plano de ação escrito e programar reavaliação.  
+D) Manter corticoide sistêmico indefinidamente após qualquer crise.
+
+**Gabarito: C.** **A incorreta:** ausência de CI pode elevar risco de nova crise. **B incorreta:** antibiótico não é indicado rotineiramente. **C correta:** conecta recuperação aguda e prevenção de recorrência, considerando PFE e oximetria quando disponíveis. **D incorreta:** OCS crônico tem muitos efeitos adversos e não é indicação de toda crise. **Mini-revisão:** a alta segura envolve critérios clínicos, acesso e prevenção, não só melhora temporária do chiado.
 
 ## 12. Itens para figuras médicas (somente plano editorial)
 
