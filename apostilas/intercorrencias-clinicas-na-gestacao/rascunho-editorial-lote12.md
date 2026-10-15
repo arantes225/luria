@@ -387,6 +387,73 @@ Contracepção e planejamento de futuras gestações fazem parte da prevenção 
 
 **10.** Paciente com LES controlado por hidroxicloroquina deseja suspender todas as medicações ao engravidar. A melhor orientação é: A) suspender e tratar apenas se flare grave; B) discutir manutenção do controle com fármacos compatíveis, frequentemente preservando hidroxicloroquina indicada; C) iniciar micofenolato de rotina; D) abandonar seguimento reumatológico. **Gabarito: B.** A incorreta: flare agrava risco. B correta: estratégia de doença controlada. C incorreta: teratogenicidade relevante. D incorreta: cuidado integrado essencial. *Revisão:* risco de doença ativa pode superar risco de terapias compatíveis.
 
+## 15A. Aprofundamento das decisões que mais geram erro em provas e assistência
+
+### 15A.1 Critérios SAF: por que classificação para pesquisa não é igual a diagnóstico individual
+
+O conjunto **ACR/EULAR 2023** foi desenvolvido para classificação em pesquisa, visando especificidade muito elevada. O sistema exige critério de entrada (ao menos uma manifestação clínica associada e anticorpo antifosfolípide detectado dentro de intervalo definido) e pontuação ponderada em domínios clínicos e laboratoriais. Os critérios de Sapporo/Sydney revisados, frequentemente ainda usados como referência didática, exigem evidência clínica correspondente e persistência laboratorial após ≥12 semanas. Eles diferem em recortes obstétricos e pontuações. **A decisão clínica não pode ser substituída por pontuação de pesquisa**, sobretudo em gestantes com complicação obstétrica atípica ou perfis laboratoriais limítrofes.
+
+Além da persistência, o perfil **triplo positivo** (lúpico, anticardiolipina e anti-β2GPI) e título elevado tendem a sugerir maior risco que IgM isolado de baixo título, sem autorizar diagnóstico sem contexto. Anticoagulantes podem interferir na detecção do anticoagulante lúpico; resultados obtidos sob medicamentos devem ser interpretados por laboratório/hematologista com experiência. Em perdas gestacionais repetidas, não restringir a investigação à SAF: analisar causas anatômicas uterinas, cromossômicas, endócrinas, idade, condições metabólicas e fatores não identificados.
+
+| Situação | Diagnóstico provável ou pergunta | Conduta editorial segura |
+|---|---|---|
+| aCL IgM baixo título em coleta única, uma perda precoce isolada | Achado laboratorial inespecífico | Não fechar SAF nem prescrever HBPM automática |
+| aPL persistente e história obstétrica compatível | Suspeita de SAF obstétrica | Avaliar critérios, risco e possibilidade de AAS/HBPM sob especialista |
+| SAF com TVP/TEP anterior | SAF trombótica | Esquema terapêutico diferenciado e plano de parto/seguimento |
+| Fator V Leiden heterozigoto sem TEV pessoal | Trombofilia hereditária de menor risco relativo | Estratificar história familiar e fatores clínicos; sem prescrição universal |
+| Deficiência de antitrombina com TEV prévio ou forte história familiar | Perfil potencialmente alto risco | Hematologia e obstetrícia especializada, profilaxia individual |
+| Painel positivo para MTHFR isolado | Variante comum de utilidade clínica limitada | Não indicar heparina somente por esse resultado |
+
+**Fonte adicional:** ACR/EULAR 2023, *Annals of the Rheumatic Diseases*, https://ard.bmj.com/content/82/10/1258.
+
+### 15A.2 Diferenciais por exame: o laboratório muda durante a gravidez
+
+| Medida | Tendência/armadilha gestacional | Como interpretar com segurança |
+|---|---|---|
+| Hemoglobina | Hemodiluição fisiológica | OMS 2024: anemia <11 / <10,5 / <11 g/dL por trimestre |
+| Creatinina | Normalmente diminui | Pequena elevação pode representar redução real da filtração |
+| D-dímero | Aumenta progressivamente | Não fechar/afastar TEV por resultado isolado |
+| TSH | Pode baixar inicialmente por hCG | Usar intervalos específicos e ATA 2026 |
+| T4 livre por imunoensaio | Alterações de ligação e método | Interpretar pelo método e referência gestacional |
+| Proteinúria | Deve ser analisada com PA e contexto | Não confundir DRC preexistente com pré-eclâmpsia sem avaliar temporalidade |
+| BNP/NT-proBNP | Pode variar, mas elevação relevante requer contexto | Ajuda investigação de insuficiência cardíaca, não diagnóstico isolado de PPCM |
+| Troponina | Não deve ser considerada fisiologicamente positiva por estar grávida | Investigar lesão miocárdica e diferenciar causas |
+| Fosfatase alcalina | Fração placentária aumenta | Elevação isolada não significa colestase ou lesão hepática |
+| Leucócitos | Leucocitose fisiológica é possível | Correlacionar infecção com clínica, PCR, culturas e disfunção orgânica |
+
+### 15A.3 Síndrome coronariana, dissecção e AVC em gestantes
+
+Dor torácica da gravidez pode decorrer de causas benignas, mas **síndrome coronariana aguda não é impossível** em gestantes jovens. Dissecção espontânea de artéria coronária (SCAD) é uma causa relevante de infarto relacionado à gravidez/puerpério. A avaliação usa ECG, troponina seriada e imagem coronária quando indicada. A angiocoronariografia pode ser realizada em situação que exige revascularização; escolha entre manejo conservador e intervenção depende de anatomia, fluxo e instabilidade. Não aplicar trombólise ou cateterismo “de rotina” em toda SCAD estável sem considerar especificidades, mas não atrasar reperfusão necessária em instabilidade.
+
+Suspeita de síndrome aórtica aguda requer avaliação imediata e imagem apropriada, preferencialmente com equipe cardiotorácica e obstétrica. Em déficit neurológico súbito, o atendimento de AVC (incluindo imagem e decisões de reperfusão em centros especializados) **não deve ser negado por gravidez**; tempo é determinante. Gestação/puerpério também aumentam probabilidade de **trombose venosa cerebral**, que pode manifestar cefaleia persistente, convulsão, sinais focais ou papiledema. A RM com venografia ou exames alternativos apropriados ajudam no diagnóstico. A conduta depende de lesão, risco hemorrágico e equipe neurológica.
+
+### 15A.4 Tabela de medicação, restrição e decisão
+
+| Agente ou classe | Regra de raciocínio, não prescrição automática |
+|---|---|
+| HBPM | Usual primeira linha em TVP/TEP gestacional; distinguir dose terapêutica e profilática; revisar rim/peso/parto |
+| HNF | Considerar quando desejada meia-vida curta ou disfunção renal importante |
+| Varfarina | Potencial fetotoxicidade; exceção complexa em prótese mecânica sob centro especializado; compatibilidade com lactação pode permitir uso pós-parto |
+| DOAC | Evitar de rotina na gravidez/lactação; inadequado em prótese mecânica |
+| Betabloqueadores | Podem ser necessários em arritmia/cardiopatia; selecionar agente, monitorar crescimento e repercussões |
+| IECA/BRA/ARNI | Contraindicados em fase gestacional por risco fetal; substituição depende da doença e momento |
+| Levotiroxina | Reposição para hipotireoidismo; ajuste dinâmico e monitorização |
+| Metimazol/PTU | Avaliação por trimestre e risco hepatotóxico/embriopático; não usar por TSH baixo isolado |
+| Lamotrigina/levetiracetam | Opções frequentes quando indicadas; níveis podem cair e exigem revisão do controle |
+| Valproato | Maior risco fetal relativo; evitar quando clinicamente viável, sem suspensão brusca na gestação estabelecida |
+| Hidroxicloroquina | Frequentemente mantida em LES; individualizar segundo doença e equipe |
+| Corticosteroide inalatório | Manter controle da asma; terapia que evita hipóxia pode ser essencial |
+| Metotrexato/micofenolato | Teratogenicidade significativa; planejar substituição antes de concepção sempre que possível |
+
+### 15A.5 Modelo de encaminhamento de alto risco a ser reutilizado no prontuário
+
+**Condição e gravidade:** doença suspeita/confirmada, classificação e principal complicação que se pretende evitar. **Idade gestacional:** DPP e método da datação, achados fetais relevantes. **Sintomas:** início, evolução, classe funcional, sinais de alarme. **Exames:** resultados com data e tendências; anexar ECG, eco, US venoso ou laboratório quando pertinente. **Medicações:** nome, dose, motivo, última tomada — especialmente anticoagulação e anticonvulsivantes. **Risco:** história de TEV, cirurgia, prótese, sangramento, comorbidades e internações. **Pedido objetivo:** qual avaliação se espera e em qual urgência, incluindo plano de parto/monitorização. **Orientação de retorno:** sintomas que exigem serviço de emergência, telefone e referência responsável.
+
+### 15A.6 Mini-perguntas de raciocínio (checagem informal)
+
+**Dispneia e crepitações com FEVE preservada** não descartam insuficiência cardíaca: valvopatia e disfunção diastólica importam. **Edema unilateral pós-cesariana** não deve ser desconsiderado como fisiológico. **Safra de anticorpos positivos** não equivale a SAF se critério clínico e persistência não estão estabelecidos. **TSH baixo isolado no primeiro trimestre** pode ser fisiológico, enquanto tireotoxicose franca tem manejo específico. **Mãe com epilepsia descontrolada** não ganha segurança fetal simplesmente interrompendo medicação. **Puerpério de paciente com cardiopatia** não recebe alta de seguimento só porque bebê nasceu bem.
+
+
 ## 16. Checklist de alta utilidade para prova e plantão
 
 1. **Dispneia não é sinônimo de fisiologia**: saturação baixa, ortopneia e dor torácica exigem investigação.
