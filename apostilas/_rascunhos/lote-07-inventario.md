@@ -16,14 +16,14 @@
 **Verificação:** todos os cinco arquivos de rascunho (121–125) foram relidos no GitHub após escrita e confirmados existentes.  
 **Nenhum deploy, migração, edição do HTML aprovado ou integração no site foi realizada nesta rodada.**
 
-## 126–140 — inventário inicial por títulos, sujeito a auditoria de conteúdo
+## 126–140 — situação verificada e próximos temas
 | Aula | Tema | Situação preliminar |
 |---|---|---|
-| 126 | Cirrose e suas complicações | Diretório específico não identificado na listagem principal; pesquisar cobertura em outros capítulos |
-| 127 | Hemorragia digestiva alta | Diretório específico não identificado; pesquisar sobreposição com aula 136 |
-| 128 | Sepse e choque séptico pediátrico | Diretório "sepse-choque-septico" existe, sem comprovação de foco pediátrico; inspecionar antes de criar |
-| 129 | Amenorreia | Apostila preexistente em apostilas/amenorreia; preservar/revisar |
-| 130 | Níveis de prevenção e história natural da doença | Diretório específico não identificado; checar intersecção com aula 125 |
+| 126 | Cirrose e suas complicações | Rascunho criado: `_rascunhos/lote-07-aula-126-cirrose-complicacoes.md` (53.172 caracteres; 4 casos, 6 questões), comparativos Drive de ascite/PBE, EH/HRS e HDA lidos, ADQI-ICA 2024 incluído; não publicado |
+| 127 | Hemorragia digestiva alta | Rascunho criado: `_rascunhos/lote-07-aula-127-hemorragia-digestiva-alta.md` (50.267 caracteres; 5 casos, 8 questões); comparativos HDA varicosa e úlcera lidos; atualização ESGE 2026; evitar repetir aula 136 |
+| 128 | Sepse e choque séptico pediátrico | Rascunho criado: `_rascunhos/lote-07-aula-128-sepse-choque-septico-pediatrico.md` (37.814 caracteres; 4 casos, 8 questões), Phoenix 2024 e SSC pediátrica 2026; preservados dois rascunhos de sepse adulta do lote 9 |
+| 129 | Amenorreia | `apostilas/amenorreia/index.html` existente PRESERVADO; auditoria e 8 questões em `_rascunhos/lote-07-aula-129-amenorreia-auditoria-questoes.md` (13.458 caracteres); complemento não integrado |
+| 130 | Níveis de prevenção e história natural da doença | Rascunho criado: `_rascunhos/lote-07-aula-130-historia-natural-niveis-prevencao.md` (35.521 caracteres; 4 casos, 8 questões); distingue níveis de prevenção sem repetir aula 125 |
 | 131 | Hepatites virais | Diretório específico não identificado; há material comparativo no Drive a verificar |
 | 132 | Hemorragia digestiva baixa | Diretório específico não identificado; evitar replicar HDA e aula 136 |
 | 133 | Meningites e encefalites | Diretório específico não identificado; verificar cobertura por faixas pediátricas |
@@ -52,3 +52,21 @@
 - Fontes médicas de referência apontadas e confrontadas: EAU Urological Infections 2026, IDSA cUTI 2025, IDSA ASB 2019, FEBRASGO ITU na gestação 2024, SBP ITU pediátrica 2023.
 - Tópicos adicionados: fisiologia renal/urológica, microbiologia, coleta e interpretação de urina/cultura, síndrome localizada versus sistêmica, antibiograma, terapia empírica e direcionada, cistite, pielonefrite, sepse, obstrução, gestantes, pediatria, idosos, homens, transplantados, sondagem, recorrência, prevenção, seguimento, imagens candidatas propostas (sem licença/arquivo aprovado), casos e questões.
 - **Situação:** rascunho em revisão; não houve integração ao HTML publicado, nem deploy nem aprovação final.
+
+## 14/10/2026 — conclusão documental do segundo sublote 126–130
+
+**Cinco arquivos novos de rascunhos conferidos individualmente no repositório GitHub:**
+
+- **126 Cirrose:** 53.172 caracteres totais, 4 casos, 6 questões comentadas; fontes comparativas Drive efetivamente lidas (ascite+PBE; EH+HRS; HDA varicosa); diretrizes Baveno VII, ADQI–ICA 2024 e AASLD. 
+- **127 HDA:** 50.267 caracteres totais, 5 casos, 8 questões; benchmarks HDA varicosa e úlcera péptica efetivamente lidos; diretriz ESGE 2026 para úlcera; Baveno VII/ESGE para varizes.
+- **128 Sepse pediátrica:** 37.814 caracteres totais, 4 casos, 8 questões; lidos sumários do Drive sobre sepse neonatal e sedoanalgesia pediátrica (parciais), bem como os dois rascunhos de sepse adulta já existentes no lote 9; SSC Pediatric 2026 e Phoenix 2024.
+- **129 Amenorreia:** 13.458 caracteres no **complemento**, 8 questões; a apostila HTML preexistente foi auditada e preservada; comparativos do Drive sobre hiperprolactinemia e SOP relidos.
+- **130 História natural e níveis de prevenção:** 35.521 caracteres totais, 4 casos, 8 questões; Drive "SUS.pdf" e "Estudos Epidemiológicos.pdf" efetivamente lidos como benchmarks parciais; sem repetir a aula 125.
+
+**Soma dos cinco arquivos novos desta rodada:** **190.232 caracteres brutos**. São somas de arquivos Markdown com cabeçalhos, questões, referências e controles de edição, NÃO caracteres didáticos líquidos e NÃO prova de conformidade com a meta individual de ≥60.000 caracteres úteis por apostila. Cada livro precisa de validação individual e expansão autêntica conforme lacunas pedagógicas. Para a aula 129, esta soma conta só o complemento, e não o livro original.
+
+**Etapa zero:** benchmarks parciais lidos, mas a maioria não corresponde a livro equivalente completo, e nenhuma autoria institucional Estratégia MED foi comprovada. Não certificar a comparação como equivalente. Nenhuma imagem comercial foi licenciada/aprovada; as listas de imagens são planos de aquisição.
+
+**Estado de integração:** **não houve edição de HTML original, deploy, modificação de publicação, migração de banco ou inserção em catálogo**. Todos os cinco textos estão em `apostilas/_rascunhos/` para desenvolvimento editorial. Os materiais de 128/129 mantêm separados os originais adultos e o HTML ginecológico.
+
+**Próximo sublote sequencial do cronograma-base:** 131 Hepatites virais; 132 Hemorragia digestiva baixa; 133 Meningites e encefalites; 134 Síndrome dos ovários policísticos (reusar SOP/SOMP preexistente); 135 Imunização e PNI. Começar por inventário das apostilas existentes, leitura de fontes comparativas e consulta de fontes oficiais brasileiras 2026.
