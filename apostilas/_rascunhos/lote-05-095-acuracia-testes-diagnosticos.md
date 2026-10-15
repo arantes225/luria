@@ -683,7 +683,6 @@ E. “Como o VPN é elevado, todos os resultados positivos devem ser ignorados.�
 6. Whiting PF et al. **QUADAS-3: A Revised Tool for the Quality Assessment of Diagnostic Test Accuracy Studies.** *Ann Intern Med*. 2026;179(4):548–555. https://doi.org/10.7326/ANNALS-25-02104.
 7. Sounderajah V et al. **The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence.** *Nat Med*. 2025;31:3283–3289. Correção de autor registrada em 2026. https://doi.org/10.1038/s41591-025-03953-8.
 8. Ministério da Saúde/Conitec. **Diretrizes metodológicas: elaboração de revisão sistemática e metanálise de estudos de acurácia diagnóstica.** https://www.gov.br/conitec/pt-br/midias/artigos_publicacoes/diretrizes/revisao_sistematica_metanalise_estudos_acuracia_diagnostica.pdf.
-9. Usher-Smith JA, Sharp SJ, Griffin SJ. **The spectrum effect in tests for risk prediction, screening, and diagnosis.** *BMJ*. 2016;353:i3139. https://doi.org/10.1136/bmj.i3139.
 
 O presente texto usa números demonstrativos inventados (descritos como fictícios) e elaboração original. Não se deve atribuir as matrizes numéricas aos estudos citados.
 
