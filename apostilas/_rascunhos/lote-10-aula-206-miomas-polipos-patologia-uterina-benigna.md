@@ -627,3 +627,54 @@ D. Antibiótico empírico prolongado em toda paciente.
 E. Histeroscopia obrigatória, independentemente de localização.
 
 **Gabarito: B.** A/C ignoram lesão de órgão; D não trata obstrução mecânica; E não se aplica indiscriminadamente a lesão cervical profunda. **Revisão:** indicação de intervenção não depende apenas de menorragia.
+
+
+## 19. Recursos visuais: necessidades de imagens para aprovação
+
+Nenhuma imagem clínica de terceiro está licenciada ou aprovada neste rascunho. Cada candidata precisa de fonte original, autorização/licença compatível com uso comercial, legenda, local de inserção e conferência clínica antes de entrar no Admin.
+
+| Item | Seção | Função didática |
+| --- | --- | --- |
+| Esquema original FIGO 0–8 e 2–5 | 4 | Mostrar relação com cavidade e serosa, sem copiar figura FIGO. |
+| US de mioma FIGO 1 | 4/7 | Verificar componente intracavitário versus intramural. |
+| US de mioma FIGO 2 | 4/7 | Demonstrar dificuldade de ressecção profunda. |
+| US de mioma FIGO 3 | 4/7 | Diferenciar contato com endométrio de deformação da cavidade. |
+| Histeroscopia de pólipo endometrial | 7/10 | Lesão focal e implantação; correlação com histologia. |
+| Sonohisterografia com pólipo | 7 | Contraste que desenha a lesão. |
+| US especializado de adenomiose | 6 | Cistos miometriais e sombra em leque. |
+| RM de útero com múltiplos miomas | 7 | Planejamento anatômico por topografia. |
+| Imagem de mioma cervical/intraligamentar | 12 | Risco ureteral, órgão vizinho. |
+| Esquema de histeroscopia cirúrgica original | 11 | Riscos de distensão e escolha do tipo de ressecção. |
+| Diagrama comparativo de intervenções | 13 | Fertilidade, órgão preservado e efeitos. |
+| Fluxograma original de sangramento + massa | 16 | Estabilidade → imagem → risco → tratamento. |
+
+**Não copiar ilustrações do artigo FIGO “Diagnosis and classification of uterine fibroids”:** esse artigo está publicado com **CC BY-NC 4.0**, licença que não permite uso comercial direto sem autorização. Desenho original baseado em fatos anatômicos é o caminho editorial seguro.
+
+## 20. Referências científicas verificáveis
+
+1. Lakabi R, Harth S, Meinhold-Heerlein I, et al. **Diagnosis and classification of uterine fibroids**. *Int J Gynaecol Obstet*. 2025;171(2):566–573. DOI 10.1002/ijgo.70538. <https://pmc.ncbi.nlm.nih.gov/articles/PMC12553092/>. Texto integral consultado; licença da figura **não comercial**.
+2. Meinhold-Heerlein I, Purandare N, Murji A, et al. **FIGO best practice guidance for diagnosis and treatment of fibroids**. *Int J Gynaecol Obstet*. 2025. DOI 10.1002/ijgo.70496. <https://pmc.ncbi.nlm.nih.gov/articles/PMC12553093/>.
+3. ACOG. **Management of Symptomatic Uterine Leiomyomas**, Practice Bulletin 228. 2021, reafirmado 2025. <https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas>. Página institucional conferida; conteúdo integral restrito, **não declarar leitura completa do boletim**.
+4. NICE. **Heavy menstrual bleeding: assessment and management**, NG88. <https://www.nice.org.uk/guidance/ng88/chapter/Recommendations>. Diretriz britânica, dependente de adaptação ao Brasil.
+5. ASRM Practice Committee. **Removal of myomas in asymptomatic patients to improve fertility and/or reduce miscarriage rate**. *Fertility and Sterility*. 2017;108:416–425. DOI 10.1016/j.fertnstert.2017.06.034. <https://www.asrm.org/practice-guidance/practice-committee-documents/removal-of-myomas-in-asymptomatic-patients-to-improve-fertility-andor-reduce-miscarriage-rate-a-guideline-2017/>.
+6. ACOG. **Uterine Morcellation for Presumed Leiomyomas**, Committee Opinion 822. 2021. <https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/uterine-morcellation-for-presumed-leiomyomas>.
+7. ACOG. **Uterine Fibroids** (informações sobre terapias e escolhas clínicas). <https://www.acog.org/womens-health/faqs/uterine-fibroids>.
+8. Ministério da Saúde/CONITEC. **Leiomioma de útero**, protocolo em coletânea histórica <https://www.gov.br/conitec/pt-br/midias/protocolos/livros/livropcdt_volumeii.pdf>. **ATENÇÃO: antigo; a vigência e atualização em 2026 devem ser verificadas, não tomar como normativo atual automaticamente.**
+
+## 21. Auditoria pedagógica e transferência
+
+| Competência | Capítulos | Casos | Questões |
+| --- | --- | --- | --- |
+| Mapeamento FIGO | 2–4 | 1, 5 | 1–2 |
+| Sintomas e atribuição causal | 5–6 | 2, 8 | 3, 11 |
+| Avaliação endometrial | 6–7/10 | 3 | 4, 6 |
+| Manejo clínico/anemia | 9 | 1 | 7–8 |
+| Procedimentos e riscos | 11–13 | 5–7 | 9–10, 12 |
+| Fertilidade e idade | 14 | 1, 3–4, 7 | 5, 9 |
+| Complicação renal compressiva | 5/12/16 | 6 | 12 |
+
+**Estado do material:** rascunho original com oito casos e doze questões comentadas. Não há imagens aprovadas nem integração HTML/PWA. O conteúdo precisa de revisão especializada de diretrizes de tratamento, doses e contraindicações, registro de disponibilidade nacional dos tratamentos, avaliação de risco endometrial, revisão das referências de tecnologias e licenças.
+
+**Controle de extensão:** contagem bruta do Markdown não comprova ≥60 mil caracteres didáticos úteis; exigir remoção de bibliografia/checklists/duplicatas na auditoria. **Comparativo Drive:** somente documentos parciais, não um livro integral equivalente; etapa zero NÃO certificada. **Autossuficiência:** ainda sujeita a teste cego de questões e revisão por profissional habilitado.
+
+**Próxima sequência oficial:** aula **207 — Prolapso genital e incontinência urinária feminina**. Priorizar POP-Q, suporte dos compartimentos, fisioterapia, pessários, diferenciação de IUE versus urgência, diário miccional, seleção de urodinâmica, cirurgia, complicações de telas e seguimento. Preservar este livro e a apostila SUA preexistente.
