@@ -466,3 +466,160 @@ Dor, dispareunia, urgência e sensação de pressão podem coexistir com múscul
 **Conduta:** encaminhar equipe especializada para opções de cuidado local versus revisão/remoção parcial ou completa e discutir benefícios/risco de recorrência.
 
 **Por que importa:** malha é tratamento potencialmente eficaz, mas exige consentimento, acompanhamento e manejo qualificado de complicações.
+
+
+## 15. Questões originais — aplicação e comentários de distratores
+
+### Questão 1 — IUE clínica típica
+Mulher de 37 anos relata fuga urinária ao tossir e correr, demonstrada ao exame. Sem urgência, POP relevante ou dificuldade de esvaziamento. Qual opção é o melhor início?
+
+A. Sling imediato sem conversa.  
+B. Cistoscopia e RM obrigatórias.  
+C. Treinamento supervisionado dos músculos do assoalho pélvico por pelo menos três meses.  
+D. Antibiótico contínuo.  
+E. Agonista β3 como única terapia de IUE.
+
+**Gabarito C.** A ignora primeira linha/consentimento; B exames sem indicação; D não há infecção; E atua em urgência/OAB, não suporte de esforço. **Revisão:** fenótipo e impacto guiam a escolha.
+
+### Questão 2 — Tipo de incontinência
+Paciente relata “quando sinto vontade súbita, perco antes de conseguir chegar ao banheiro”; não perde ao rir. Qual o fenótipo mais provável?
+
+A. IUE pura. B. Incontinência de urgência. C. Fístula obrigatória. D. Retenção pura. E. Prolapso estágio IV.
+
+**Gabarito B.** A exige relação com esforço; C sugere perda contínua; D exige padrão de esvaziamento; E não se deduz da queixa de urgência. **Revisão:** a temporalidade da perda em relação a vontade e esforço é fundamental.
+
+### Questão 3 — Urodinâmica
+Mulher com IUE demonstrada, sem prolapso/obstrução/cirurgia prévia, considera primeira cirurgia. Segundo NICE NG123, qual afirmação é correta?
+
+A. Urodinâmica multicanal é sempre obrigatória.  
+B. Em IUE índice demonstrada, pode ser dispensada antes da primeira cirurgia, com avaliação clínica adequada.  
+C. VLPP isolado sempre determina via de sling.  
+D. Só pacientes com IUE sem perdas ao exame devem dispensá-la.  
+E. Cistoscopia é substituto de urodinâmica.
+
+**Gabarito B.** A generaliza recomendação antiga; C é critério isolado insuficiente; D inverte lógica; E confunde testes com finalidades distintas. **Revisão:** indicar exames quando acrescentam decisão, especialmente casos complexos.
+
+### Questão 4 — Diário miccional
+Paciente com suspeita de OAB relata urgência, noctúria e frequência. Qual ferramenta simples auxilia na quantificação inicial?
+
+A. Diário de pelo menos três dias com volumes, horários e episódios de urgência/perda.  
+B. RM cerebral em todas as pacientes.  
+C. CA-125 sérico.  
+D. Pad test obrigatório em todos os casos.  
+E. Biópsia vesical de rotina.
+
+**Gabarito A.** B/C/E não são exames de triagem de OAB idiopática; D não é recomendado rotineiramente pela NICE. **Revisão:** diário separa frequência, poliúria e padrão de escapes.
+
+### Questão 5 — POP-Q
+Durante esforço, TVL=9 cm e ponto mais distal Ba=+2 cm. Qual estágio global?
+
+A. 0. B. I. C. II. D. III. E. IV.
+
+**Gabarito D.** +2 ultrapassa +1, mas ainda está abaixo de TVL-2 (=7 cm), logo estágio III. **Revisão:** valores positivos indicam protrusão além do hímen, e o maior ponto determina estágio.
+
+### Questão 6 — Prolapso assintomático
+Mulher de 70 anos com POP-Q estádio II detectado durante exame, sem desconforto, problemas urinários/intestinais ou desejo de intervenção. Melhor postura?
+
+A. Cirurgia obrigatória pelo estágio.  
+B. Informar diagnóstico, opções e observação com retorno se sintomas.  
+C. Antibioticoterapia crônica.  
+D. Sling retropúbico profilático.  
+E. Proibir qualquer atividade e limitar líquidos.
+
+**Gabarito B.** A ignora impacto e preferência; C não tem indicação; D trata potencial IU inexistente; E traz danos sem benefício. **Revisão:** não operar um número isolado.
+
+### Questão 7 — Pessário
+Mulher escolhe pessário para prolapso. Qual orientação é correta?
+
+A. Nunca precisa ser retirado/revisado.  
+B. É dispositivo de suporte que requer adaptação, inspeção e acompanhamento periódico para evitar erosões.  
+C. Sempre torna o prolapso definitivamente curado.  
+D. Elimina necessidade de avaliar retenção urinária.  
+E. Não pode revelar IUE oculta.
+
+**Gabarito B.** A favorece erosões/fístulas; C confunde suporte e reconstrução; D ignora obstrução; E ignora desmascaramento de perda. **Revisão:** o dispositivo funciona enquanto em posição e exige cuidado.
+
+### Questão 8 — IUE mascarada
+Mulher com grande prolapso anterior não perde urina ao tossir antes da redução, mas passa a perder ao colocar pessário. Interpretação mais provável?
+
+A. O pessário necessariamente causou lesão esfincteriana permanente.  
+B. O prolapso pode ter ocultado incontinência por angulação/obstrução, desmascarada após redução.  
+C. O quadro confirma infecção urinária.  
+D. A perda significa que o POP-Q estava errado.  
+E. Toda paciente com POP deve receber sling concomitante sem avaliação.
+
+**Gabarito B.** A atribui dano estrutural sem prova; C/D não se deduzem; E contradiz decisão seletiva e consentimento. **Revisão:** função uretral muda ao corrigir suporte.
+
+### Questão 9 — Antimuscarínico em idosa
+Paciente de 82 anos com OAB, constipação grave, declínio cognitivo e polifarmácia pede oxibutinina. Qual o princípio mais seguro?
+
+A. Ignorar interações e prescrever dose máxima.  
+B. Avaliar carga anticolinérgica, cognição, retenção e alternativas antes de prescrever.  
+C. Toda urgência é fístula.  
+D. A medicação corrige cistocele.  
+E. Tratamento deve sempre começar por cirurgia.
+
+**Gabarito B.** A negligencia eventos adversos; C confunde perda contínua; D não trata suporte; E ignora terapias conservadoras. **Revisão:** AUA/SUFU 2024 enfatiza discussão de risco cognitivo de antimuscarínicos.
+
+### Questão 10 — POP anterior com retenção
+Mulher com prolapso avançado, jato fraco, grande resíduo e hidronefrose apresenta piora. Qual atitude prioritária?
+
+A. Só aguardar 16 semanas sem outra avaliação.  
+B. Avaliar obstrução, função renal e necessidade de descompressão e tratamento oportuno.  
+C. Prescrever antimuscarínico sem medir resíduo.  
+D. Repetir exercícios sem investigar rins.  
+E. Diagnosticar IUE por transbordamento sem exame.
+
+**Gabarito B.** A/D ignoram lesão de órgão; C pode agravar retenção; E confunde mecanismo. **Revisão:** POP pode ameaçar esvaziamento e trato urinário alto.
+
+### Questão 11 — Cirurgia de IUE e malha
+Paciente discute sling sintético para IUE após falha de fisioterapia. Qual afirmação correta?
+
+A. Sling uretral e malha transvaginal para prolapso são a mesma intervenção.  
+B. Implante pode oferecer benefício, mas requer informação sobre retenção, dor, exposição e eventual dificuldade de remoção.  
+C. Cirurgia nunca precisa de acompanhamento.  
+D. Não é necessário explicar opções sem tela.  
+E. Toda IUE desaparece sem recorrência.
+
+**Gabarito B.** A confunde indicações e técnicas; C ignora complicações; D viola consentimento; E promete eficácia absoluta. **Revisão:** FEBRASGO 2025 distingue slings de uretra média do debate de telas de prolapso.
+
+### Questão 12 — Perda contínua após cirurgia
+Mulher apresenta perda urinária vaginal contínua inclusive ao dormir após histerectomia, sem urgência nem esforço. Melhor hipótese a excluir?
+
+A. Fístula urinária.  
+B. IUE pura por hipermobilidade.  
+C. Dor menstrual.  
+D. Prolapso grau I assintomático.  
+E. Bexiga hiperativa como única hipótese obrigatória.
+
+**Gabarito A.** B exigiria gatilho por esforço; C/D não explicam perda; E não costuma produzir vazamento contínuo sem episódios de urgência. **Revisão:** temporalidade pós-operatória e perda contínua apontam outra via de investigação.
+
+### Questão 13 — Duloxetina
+Qual é a classificação farmacológica correta da duloxetina e o cuidado necessário ao considerar seu uso para IUE?
+
+A. ISRS de primeira linha universal, sem eventos adversos.  
+B. SNRI, com uso selecionado onde aprovado e perfil relevante de efeitos adversos.  
+C. Agonista β3 sem efeito central.  
+D. Antibiótico urinário.  
+E. Estrogênio vaginal de ação local.
+
+**Gabarito B.** A erra classe e segurança; C/D/E são medicamentos de outros mecanismos. **Revisão:** não reproduzir classificação incorreta de resumo antigo, nem afirmar licenciamento brasileiro sem checagem.
+
+### Questão 14 — Prolapso posterior e constipação
+Mulher tem retocele leve e evacuação com grande esforço, constipação crônica e dor anal. Qual abordagem inicial é mais apropriada?
+
+A. Atribuir todos os sintomas à retocele e operar imediatamente.  
+B. Avaliar hábitos intestinais, dinâmica de evacuação e considerar manejo conservador/fisioterapia antes de correção cirúrgica se necessário.  
+C. Prescrever antimuscarínico.  
+D. Excluir doenças intestinais sem anamnese.  
+E. Reduzir água a quase zero.
+
+**Gabarito B.** A é viés de atribuição; C pode piorar constipação; D ignora diagnósticos; E pode agravar sintomas. **Revisão:** defeito anatômico e síndrome funcional intestinal podem coexistir.
+
+## 16. Resumo estruturado e pérolas finais
+
+**IUE:** perda no momento da tosse/salto → exame e urinálise → TMAP supervisionado por três meses → cirurgia se incômodo persistente e opção informada; urodinâmica é seletiva em paciente índice. **Urgência/OAB:** desejo súbito + frequência ± perdas → excluir causas e usar diário → treino vesical seis semanas + medidas comportamentais → fármacos por perfil e risco → procedimentos para refratárias selecionadas.
+
+**POP:** sintoma de abaulamento → medir compartimentos e POP-Q → tratar incômodo e função, não apenas estádio → fisioterapia por 16 semanas nos estádios I/II selecionados, pessário com revisões ou cirurgia se desejada/indicada → avaliar IUE mascarada e função intestinal/urinária antes de corrigir.
+
+**Red flags:** perda contínua pós-cirurgia = investigar fístula; urina com sangue inexplicado = investigação dirigida; retenção com disfunção renal = urgência; dor/erosão após sling = avaliar complicação; OAB com déficit neurológico novo = não tratar como idiopática sem examinar.
