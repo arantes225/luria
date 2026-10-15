@@ -281,21 +281,11 @@ Os quadros abaixo são uma **síntese didática original** do *Folder de mesa: t
 
 **Exemplo de transição de peso:** criança que inicia a medicação com 11,7 kg (faixa 12–15 = 3 comprimidos) e evolui para 16,2 kg deve ter a dose reavaliada para a faixa 16–24 (4 comprimidos) conforme protocolo, mesmo que ainda esteja em manutenção. Não manter dose inadequada apenas porque a prescrição original foi impressa no início do tratamento.
 
-### 14.2. Crianças <10 anos e com peso ≥25 kg
+### 14.2. Crianças menores de dez anos e peso ≥25 kg: doses individualizadas
 
-Nessa faixa, a Nota 5/2024 orienta **doses individualizadas**, e não quatro comprimidos dispersíveis pediátricos por extrapolação. O folder ministerial de 2023 apresenta a seguinte tabela para TB pulmonar sensível, com manutenção de RH cuja **duração deve ser adaptada** à nota de 2024 quando houver elegibilidade ao tratamento encurtado.
+A atualização da SBP de 2026 (p. 11) distingue as crianças menores de dez anos com 4–24 kg, que podem usar dispersíveis RHZ/RH pela tabela ponderal, daquelas com 25 kg ou mais. A partir desse limite a SBP orienta doses individualizadas de R, H e Z, com atenção à formulação disponível, ao peso atual, aos limites de segurança e ao protocolo brasileiro. **Não prolongar automaticamente a linha de quatro comprimidos dos dispersíveis para uma criança de 25 kg ou mais.**
 
-| Faixa do folder (kg) | R (mg/dia) | H (mg/dia) | Z na fase intensiva (mg/dia) |
-| --- | ---: | ---: | ---: |
-| **25–30** | 450 | 300 | 900–1.000* |
-| **31–35** | 500 | 300 | 1.500** |
-| **36–40** | 600 | 300 | 1.500** |
-| **>40 até 45** | 600 | 300 | 1.500** |
-| **≥45** | 600 | 300 | 2.000** |
-
-O folder usa marcadores para a pirazinamida: *comprimidos dispersíveis de 150 mg* para a faixa indicada e comprimidos de 500 mg a partir dos pesos especificados, a depender da apresentação. **A tabela acima é referência educacional e deve ser revisada em conjunto com o formato integral do quadro antes de qualquer uso assistencial**, inclusive porque as fronteiras 40/45 kg e os rótulos ≥/ > do material original exigem interpretação criteriosa. Conferir diretamente o folder oficial e a disponibilidade atual do SUS; não usar cálculo de amostragem populacional como dose individual.
-
-Para menores de dez anos e ≥25 kg com TB meníngea/osteoarticular, a manutenção é prolongada **até dez meses** na orientação brasileira tradicional. Os valores individuais dos fármacos precisam ser ajustados conforme diagnóstico, função orgânica, interações e fonte oficial.
+A versão anterior deste manuscrito listava doses individuais numéricas de R/H/Z nessa faixa, extraídas de um quadro antigo ainda sem conferência farmacológica integral quanto à apresentação e às fronteiras de peso. Para evitar uma orientação possivelmente ambígua, esses valores foram retirados preventivamente. A tabela de ≥25 kg somente deverá voltar após comparação direta com o quadro oficial vigente e revisão por farmacêutico/pediatra. O regime de quatro meses continua condicionado à elegibilidade de TB não grave; a mudança de **duração** não dispensa a conferência de **dose**.
 
 ### 14.3. Recém-nascidos, idade ≤3 meses ou peso <4 kg
 
