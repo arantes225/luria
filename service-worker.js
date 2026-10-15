@@ -1,4 +1,4 @@
-const CACHE_VERSION = "luria-pwa-native-activities-20261015-frontal-patients1";
+const CACHE_VERSION = "luria-pwa-native-activities-20261015-all-patients1";
 const STATIC_CACHE = CACHE_VERSION + "-static";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const WEEKLY_CONTENT_CACHE = CACHE_VERSION + "-weekly";

@@ -11,7 +11,7 @@ const style=document.createElement("style");style.textContent=[
 ].join("");document.head.append(style);
 const base=document.getElementById("plantao-patient-image"),scene=base&&base.closest(".plantao-scene");if(!base||!scene)return;
 let rig=null,overlay=null,timer=0,raf=0,animation=null,activeSrc="";
-const rx=/patient-frontal-(elderly-man|elderly-woman|pregnant|girl)-(awake|closed)(-pwa)?\.webp(?:[?#]|$)/;
+const rx=/patient-frontal-(adult-man|adult-woman|baby|boy|elderly-man|elderly-woman|pregnant|girl)-(awake|closed)(-pwa)?\.webp(?:[?#]|$)/;
 function stop(){clearTimeout(timer);cancelAnimationFrame(raf);animation&&animation.cancel();animation=null}
 function closedPath(src){return src.replace(/-(awake|closed)(-pwa)?\.webp([?#].*)?$/,(m,state,pwa,tail)=>"-closed"+(pwa||"")+".webp"+(tail||""))}
 function scheduleBlink(){stop();if(!rig||base.dataset.luriaEyes==="closed"||base.dataset.luriaEyes==="stopped"||matchMedia("(prefers-reduced-motion: reduce)").matches)return;timer=setTimeout(()=>{if(!overlay||!overlay.isConnected)return;animation=overlay.animate([{clipPath:"inset(25% 0 75% 0)"},{clipPath:"inset(22% 0 72% 0)",offset:.38},{clipPath:"inset(21% 0 71% 0)",offset:.52},{clipPath:"inset(21% 0 71% 0)",offset:.68},{clipPath:"inset(25% 0 75% 0)"}],{duration:230,easing:"cubic-bezier(.35,0,.25,1)"});animation.onfinish=()=>{animation=null;scheduleBlink()};},2600+Math.random()*3600)}
