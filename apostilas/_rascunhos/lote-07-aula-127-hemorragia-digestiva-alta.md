@@ -525,6 +525,71 @@ D. Suspender toda medida preventiva após primeira endoscopia.
 
 **Gabarito B.** Combinação NSBB + ligadura é padrão de profilaxia secundária em varizes esofágicas quando tolerada. **A** trata ácido, não pressão portal. **C** não resolve mecanismo varicoso e seleciona resistência. **D** aumenta risco de ressangramento. **Minirrevisão:** não confundir tratamento do episódio com prevenção secundária.
 
+
+### Questão 9 — Forrest IIb e capacidade técnica
+Pessoa com HDA por úlcera tem coágulo aderido Forrest IIb. Qual princípio da ESGE 2026?
+A. Nunca remover coágulo em nenhum hospital.  
+B. Remover obrigatoriamente mesmo sem instrumentos de hemostasia.  
+C. Considerar terapia endoscópica com remoção controlada e hemostasia conforme lesão, desde que exista competência de tratar hemorragia de alto risco.  
+D. Forrest IIb corresponde a base limpa sem risco.
+**Gabarito C.** A recomendação condiciona intervenção à segurança técnica. **A:** ignora benefício potencial. **B:** expõe a hemorragia não controlável. **D:** Forrest III é base limpa. **Minirrevisão:** conhecer limites de equipamento é parte do raciocínio clínico.
+
+### Questão 10 — úlcera de alto risco e recidiva
+Paciente após hemostasia de úlcera duodenal posterior grande volta a sangrar. Qual sequência conceitual é recomendada em recursos adequados?
+A. Reavaliar e realizar hemostasia endoscópica de resgate, considerar OTS; se falha, angiografia/embolização; cirurgia se embolização indisponível/ineficaz.  
+B. Duplicar IBP por um mês sem reavaliar.  
+C. Dar alta se Hb permanece acima de 7 no momento.  
+D. Transfundir e nunca buscar foco.
+**Gabarito A.** ESGE 2026 estabelece resgate escalonado por hemostasia e disponibilidade. **B/C/D:** não controlam fonte. **Minirrevisão:** segunda hemostasia pode funcionar; não prolongar demora quando falha.
+
+### Questão 11 — metoclopramida antes de EDA
+Qual atualização ESGE 2026 é verdadeira?
+A. Metoclopramida IV é obrigatória para toda melena sem vômitos.  
+B. Se eritromicina IV não está disponível, pode ser considerada metoclopramida IV em paciente selecionado com HDA intensa/ativa para favorecer visualização.  
+C. Pró-cinético substitui EDA.  
+D. Doses são iguais em todo idoso independentemente de comorbidades.
+**Gabarito B.** Recomendação seletiva após avaliação de risco/contraindicações. **A:** exagera indicação. **C:** não é hemostático. **D:** medicação precisa de avaliação. **Minirrevisão:** método pré-endoscópico para visibilidade, não controle de fonte.
+
+### Questão 12 — terapia antiplaquetária após stent
+Paciente com stent coronário implantado recentemente apresenta HDA controlada após EDA e usa dupla antiagregação. Melhor postura:
+A. Suspender ambos para sempre.  
+B. Não tratar úlcera porque está em antiagregação.  
+C. Substituir ambos por ferro oral.  
+D. Discutir prontamente com cardiologia risco de trombose do stent e plano de continuidade/reinício sem suspensões arbitrárias.
+**Gabarito D.** Risco trombótico muito alto pode coexistir com risco hemorrágico. **A:** potencialmente perigoso. **B:** retarda hemostasia. **C:** ferro não substitui antitrombótico. **Minirrevisão:** indicação e temporalidade definem risco.
+
+### Questão 13 — anemia pós-hemostasia
+Após hemostasia ulcerosa durável, paciente estável apresenta anemia ferropriva. Segundo ESGE 2026:
+A. Considerar iniciar terapia de ferro antes da alta e permitir nutrição oral precoce em elegíveis, dentro de 24 horas da hemostasia durável.  
+B. Manter jejum absoluto por duas semanas em todos.  
+C. Ferro é contraindicado após sangramento digestivo.  
+D. Nutrição não deve ser planejada antes da alta.
+**Gabarito A.** O guideline inclui recuperação hematológica e alimentação. **B:** não é regra após hemostasia segura. **C:** reposição é frequentemente necessária. **D:** omite função essencial. **Minirrevisão:** desfecho é hemostasia + recuperação, não apenas procedimento.
+
+### Questão 14 — HDA depois de bypass
+Mulher após bypass em Y de Roux apresenta melena persistente; EDA padrão da bolsa e gastrojejunoanastomose não revela foco. Qual afirmação correta?
+A. EDA negativa exclui fonte em todo tubo digestivo.  
+B. Duodeno e estômago excluído sempre são visualizados normalmente pela EDA padrão.  
+C. O estômago excluído e duodeno geralmente não são alcançados pela EDA convencional, podendo demandar investigação especializada conforme gravidade.  
+D. Toda melena nesse cenário é simulada por ferro.
+**Gabarito C.** Anatomia pós-bypass cria segmento não alcançado por EDA habitual. **A/B:** desconhecem reconstrução cirúrgica. **D:** etiologia não pode ser presumida. **Minirrevisão:** fonte e método dependem da anatomia.
+
+### Questão 15 — Dieulafoy versus úlcera convencional
+Paciente com hematêmese volumosa apresenta pequeno defeito mucoso e vaso proeminente sangrando em mucosa gástrica quase normal. Principal hipótese?
+A. GAVE em forma de melancia, obrigatoriamente.  
+B. Lesão de Dieulafoy.  
+C. Variz esofágica.  
+D. Úlcera duodenal Forrest III de base limpa.
+**Gabarito B.** Vaso submucoso calibroso exposto por pequena erosão é típico. **A:** lesão vascular antral costuma padrão diferente. **C:** topografia e morfologia não correspondem. **D:** Forrest III não apresenta vaso sangrante. **Minirrevisão:** reconhecer lesão vascular focal evita erro de etiologia.
+
+### Questão 16 — GAVE e hipertensão portal
+Paciente com cirrose e anemia crônica tem endoscopia com estrias vasculares no antro em aspecto de melancia. Melhor interpretação:
+A. Toda GAVE é gastropatia hipertensiva portal, e TIPS é primeira linha.  
+B. Ectasias antrais não podem ocorrer em cirrose.  
+C. Tratar apenas com octreotida sistêmica por toda a vida.  
+D. Considerar GAVE, entidade distinta de gastropatia portal, com avaliação de hemostasia endoscópica local e manejo de anemia.
+**Gabarito D.** GAVE tem mecanismo e terapêutica distintos. **A:** confusão conceitual. **B:** coexistência possível. **C:** não é terapia universal. **Minirrevisão:** localização e padrão vascular dirigem tratamento.
+
 ## 15. Pontos de alto rendimento e armadilhas de residência
 
 1. **HDA é proximal ao Treitz**, mas HDA maciça pode causar hematoquezia.
@@ -600,3 +665,30 @@ D. Suspender toda medida preventiva após primeira endoscopia.
 - [ ] Integrar e validar HTML, sumário, acessibilidade, mobile/PWA; não lançar sem revisão editorial.
 
 **Parecer:** rascunho clinicamente amplo com atualizações recentes, **NÃO CERTIFICADO/NÃO PUBLICADO**.
+
+
+
+## 17A. Atualização temática e etapa zero repetida (15/10/2026)
+
+**Comparativos Drive efetivamente abertos:** "01 - ENDOSCOPIA - ULCERA PEPTICA.pdf" (9.035 caracteres extraídos), "06 - GASTRO - HDA E SINDROME HEPATOPULMONAR.pdf" (6.654), "02 - ESTOMAGO 2 ULCERA, H. PYLORI, GASTRITE ATROFICA E DISPEPSIA FUNCIONAL.pdf" (11.130) e "03 - OBESIDADE - COMPLICACOES POS BARIATRICA.pdf" (6.806). São temas correlatos e **não** uma apostila profunda equivalente de HDA; autoria Estratégia MED não confirmada, e os materiais exibem marca "Medicina livre". Nenhuma figura/texto foi copiado. Algumas simplificações dos comparativos foram recusadas: úlcera duodenal sangrante não pode ser reduzida a "terapia dupla em toda Forrest"; terapia antitrombótica depende da indicação e do risco; endoscopia padrão **não alcança** todos segmentos após bypass; a diretriz ESGE 2026 altera Forrest IIb e resgate endoscópico.
+
+**Principal referência nova verificada:** Gralnek IM et al. *Endoscopic diagnosis and management of peptic ulcer bleeding: European Society of Gastrointestinal Endoscopy Guideline — Update 2026.* *Endoscopy*. 2026;58:899–924. Epub 13/05/2026, DOI 10.1055/a-2863-8314, PMID 42127996. **Há errata publicada em 22/05/2026**, que deve ser lida antes da certificação editorial de quaisquer números/texto corrigidos: https://pubmed.ncbi.nlm.nih.gov/42127996/
+
+**Novidades efetivamente incorporadas à aula:** ênfase em controle de vaso; OTS clip e terapia de resgate; coagulação suave e cuidados no IIb; TAE após falha e TAE profilática em casos selecionados; metoclopramida IV em alguns casos se eritromicina indisponível; não usar cápsulas como teste rotineiro; manejo de anticoagulação com retomada conforme indicação; início de ferro na alta e nutrição precoce em candidatos; antitrombóticos pós-stent; Dieulafoy, GAVE e anatomia pós-bypass. **Regimes completos de prescrição não foram validados com bula/protocolo brasileiro.**
+
+## 18A. Matriz de autossuficiência parcial
+
+| Competência | Texto didático | Caso | Questão |
+|---|---|---|---|
+| Reconhecer HDA com choque e Hb inicialmente preservada | §4 | 1, 5 | 1 |
+| Separar relógio varicoso e não varicoso | §6, §8 | 2 | 1–2 |
+| Aplicar Forrest, incluindo IIb 2026 | §7.2, 7.9 | 3, 9 | 3–4, 9 |
+| Usar clipe OTS/resgate por risco | §7.3, 7.8–7.10 | 4, 6 | 5–6, 10 |
+| Diferenciar agentes hemostáticos e procinético | §§4.4, 7.12 | 6 | 11 |
+| Reiniciar antitrombótico com risco trombótico | §9, 9.1 | 7 | 12 |
+| Planejar ferro/alimentação após hemostasia | §§7.11, 9.2–9.3 | 6, 7 | 13 |
+| Identificar anatomia pós-bypass | §10.3 | 8 | 14 |
+| Reconhecer Dieulafoy e ectasias | §§10.1–10.2 | 10 | 15–16 |
+| Diferenciar gastropatia portal e GAVE | §§8.4, 10.1 | revisão clínica | 16 |
+
+**Status de qualidade:** questão comentada no próprio texto e seis competências novas foram testadas **internamente**; não houve bateria externa de questões, segunda avaliação médica independente, comparação de desempenho em prova, seleção de imagens licenciadas ou renderização de HTML/PWA. Contagem bruta inclui tabelas, gabaritos e metadados; **não é certificação de 60 mil caracteres úteis**. Ainda é RASCUNHO NÃO PUBLICADO.
