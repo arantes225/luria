@@ -22,7 +22,7 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 | 14 | Ginecologia e Obstetrícia | Exames e rastreamentos no pré-natal | Novo rascunho `apostilas/exames-rastreamentos-pre-natal/content.json`: 17 seções, 12 casos, 20 questões, 16 tabelas, ~87.311 caracteres aparentes — **não publicado/não certificado** |
 | 15 | Medicina Preventiva | Lei nº 8.142/1990 | Rascunho novo em `apostilas/lei-8142-1990/content.json`: 15 seções, 12 casos, 24 questões, 14 tabelas, ~91.591 caracteres aparentes; **não certificado** |
 | 16 | Clínica Médica | Arritmias e fibrilação atrial | Rascunho em `apostilas/arritmias-fibrilacao-atrial/content.json` — **não publicado, não certificado** |
-| 17 | Cirurgia Geral | Reposição volêmica e distúrbios hidroeletrolíticos no paciente cirúrgico | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
+| 17 | Cirurgia Geral | Reposição volêmica e distúrbios hidroeletrolíticos no paciente cirúrgico | Novo rascunho `apostilas/reposicao-volemica-disturbios-hidroeletroliticos/content.json`: 15 seções, 12 casos, 24 questões, 13 tabelas, ~89.604 caracteres aparentes; **não certificado** |
 | 18 | Pediatria | Icterícia neonatal | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 19 | Ginecologia e Obstetrícia | Vacinação e suplementação na gestação | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
 | 20 | Medicina Preventiva | Atenção Primária à Saúde e seus atributos | Correspondência com apostila existente **a verificar**; ainda sem rascunho vinculado nesta matriz |
@@ -33,8 +33,8 @@ O inventário histórico `LOTE_01_2026-10-14.md` tem 20 temas em recorte diferen
 
 ## Orientação de produção
 
-- Há **15 rascunhos `content.json` identificados** (aulas 01, 02, 03, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15 e 16) e **uma apostila HTML preexistente com revisão parcial** (aula 04). Nenhum dos 16 temas recebeu certificação editorial e científica final. A existência do arquivo não equivale a publicação.
-- Os outros **7 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
+- Há **16 rascunhos `content.json` identificados** (aulas 01, 02, 03, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16 e 17) e **uma apostila HTML preexistente com revisão parcial** (aula 04). Nenhum dos 17 temas recebeu certificação editorial e científica final. A existência do arquivo não equivale a publicação.
+- Os outros **6 temas precisam de inventário** dos arquivos existentes, correspondência com títulos/capítulos, benchmarking no Drive e leitura de fonte primária antes de editar/criar; não afirmar ausência sem varredura.
 - O trabalho anterior em quatro apostilas de GO não deve ser contado automaticamente como cobertura de pré-natal, datação gestacional ou rastreamentos da primeira etapa.
 - Não duplicar 'Assistência ao RN em sala de parto' e 'Reanimação neonatal': planejar fronteira pedagógica com reaproveitamento interno, mas preservar objetivos curriculares distintos.
 - Cuidados perioperatórios pode cobrir parcialmente infecção de sítio cirúrgico e complicações pós-operatórias de lotes posteriores; evitar recriação redundante.
