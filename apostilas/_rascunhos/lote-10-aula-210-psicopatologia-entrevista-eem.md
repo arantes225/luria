@@ -473,7 +473,7 @@ Uma passagem de plantão segura responde: **quem é a pessoa e o que mudou?**; *
 
 ## 20. Questões originais com comentários por alternativa
 
-### Questão 1 — Hum or versus afeto
+### Questão 1 — Humor versus afeto
 Paciente informa “sinto tristeza todo dia”; examinador observa pouca variação expressiva e choro ao narrar perda. Qual formulação melhor?
 
 A. Humor é observado e afeto é exclusivamente verbalizado.  
@@ -593,3 +593,55 @@ E. “Sem risco” porque escala numérica é baixa.
 
 **Gabarito: C.** A estigmatiza; B inventa exame; D fecha diagnóstico sem história; E substitui avaliação por rótulo. **Revisão:** prontuário deve comunicar **fenômenos e limites do exame**.
 
+
+
+## 21. Plano visual e instrumentos autorais de aprendizagem
+
+A psicopatologia é uma disciplina **menos dependente de fotos clínicas** que a radiologia, mas ganha muito com material visual de **estrutura e comparação**. Não criar “foto da pessoa com esquizofrenia” como recurso de diagnóstico: uma imagem de expressão facial não permite inferir transtorno e aumenta estigma. A prioridade da aula é **fluxograma, ficha de exame e vinheta contextual**.
+
+| Recurso | Capítulo | Utilidade |
+| --- | --- | --- |
+| Fluxograma original entrevista → hipótese → exclusões médicas | 3, 13 | Demonstrar raciocínio e não fechar diagnóstico por um sintoma |
+| Diagrama original EEM em 12 domínios | 4 | Navegação e revisão rápida |
+| Esquema de humor referido versus afeto observado | 8 | Desfazer confusão terminológica |
+| Cartões comparativos de forma/curso do pensamento | 9 | Circunstancialidade, tangencialidade, fuga de ideias, bloqueio |
+| Diagrama ilusão versus alucinação | 10 | Estímulo real interpretado erroneamente vs experiência sem estímulo |
+| Mapa da atenção e delirium | 5/13 | Instalação aguda, flutuação, atenção, investigação clínica |
+| Exemplo fictício de diário temporal de sintomas | 3/13 | Diferenciar síndrome e diagnóstico longitudinal |
+| Tabela da entrevista de segurança | 14 | Perguntas abertas, plano e continuidade de cuidado |
+| Modelo original de EEM preenchido | 16 | Registro objetivo e limites da avaliação |
+| Linha do tempo de alteração por substância/medicação | 13 | Acatisia, intoxicação, retirada de fármacos |
+| Fluxo SUS APS–CAPS–UPA–hospital geral | 14 | Destino e coordenação de cuidado |
+| Checklist visual original para passagem de plantão | 15 | Documentação de atenção, orientação e risco |
+
+**Direitos e segurança:** preferir design vetorial autoral e vinhetas inteiramente fictícias, sem fotos identificáveis de pessoas em crise. Não reproduzir conteúdo do manual CID-11 CDDR da OMS em forma de tradução comercial: a licença citada é não comercial e sem derivações, salvo permissão. Para imagens externas eventuais, validar direitos, contexto e consentimento, e enviar candidatas autorizadas ao Admin; até agora **zero imagens integradas/aprovadas**.
+
+## 22. Bibliografia confiável, com alcance e limitações
+
+1. **World Health Organization.** *Clinical descriptions and diagnostic requirements for ICD-11 mental, behavioural and neurodevelopmental disorders (CDDR)*. Genebra: WHO, 2024. <https://www.who.int/publications/i/item/9789240077263>. Manual de linguagem clínica e requisitos diagnósticos. **Permissão comercial não presumida** (licença CC BY-NC-ND 3.0 IGO); conteúdo desta apostila é redação nova, não tradução do CDDR.
+2. **Merck Manual Professional.** *Initial Psychiatric Assessment*. Revisão completa 2024, página atualizada em janeiro de 2026. <https://www.merckmanuals.com/professional/psychiatric-disorders/approach-to-the-patient-with-psychiatric-symptoms/initial-psychiatric-assessment>. Base para entrevista, EEM, contexto médico e domínios observacionais.
+3. **Merck Manual Professional.** *How To Assess Mental Status*, revisão e atualização agosto de 2025. <https://www.merckmanuals.com/professional/neurologic-disorders/neurologic-examination/how-to-assess-mental-status>. Base para consciência, atenção, orientação e cognição.
+4. **NICE.** *Self-harm: assessment, management and preventing recurrence*, **NG225**. 2022. <https://www.nice.org.uk/guidance/ng225/chapter/recommendations>. Contribuição específica: escalas/estratos não devem servir como previsão de suicídio ou critério de alta/acolhimento.
+5. **NICE.** *Delirium: prevention, diagnosis and management in hospital and long-term care*, **CG103**, atualizada 18/01/2023. <https://www.nice.org.uk/guidance/cg103/chapter/Recommendations>. Identificação de mudança aguda/flutuante, 4AT, CAM-ICU e prioridade às causas clínicas.
+6. **Ministério da Saúde, Brasil.** *Rede de Atenção Psicossocial (RAPS)*. <https://www.gov.br/saude/pt-br/composicao/saes/desmad/raps>. Estrutura de serviços e continuidade APS/CAPS/urgência/hospital.
+7. **Ministério da Saúde, Brasil.** *Manejo inicial/conduta — Depressão no adulto: avaliação do risco de suicídio*. <https://linhasdecuidado.saude.gov.br/portal/depressao/unidade-de-atencao-primaria/manejo-inicial-conduta/>. Enfatiza identificação, acolhimento, manejo, encaminhamento efetivo e contrarreferência.
+
+**Notas de aplicação:** o CDDR é documento diagnóstico internacional, não ato regulatório brasileiro. A legislação nacional sobre sigilo, capacidade, internação e prontuário precisa ser confrontada com normas éticas brasileiras antes da publicação. O escopo desta apostila é **semiologia inicial**, não diretriz completa de tratamento de depressão/mania/psicose.
+
+## 23. Matriz de rastreabilidade e auditoria
+
+| Competência | Capítulos | Caso | Questão |
+| --- | --- | --- | --- |
+| Abrir entrevista e levantar história | 3 | 2, 3, 6 | 5, 12 |
+| Descrever EEM sem inventar dado | 4–9/16 | 1, 3, 6 | 1, 2, 10, 12 |
+| Distinguir ilusão/alucinação | 10 | 1, 6 | 3 |
+| Obsessão versus delírio | 9–10 | 4, 6 | 6 |
+| Delirium versus quadros crônicos | 5/13 | 1, 7 | 4 |
+| Reconhecer efeito adverso | 6/13 | 5 | 8 |
+| Avaliar segurança e autonomia | 11/14 | 2, 8 | 7, 9, 11 |
+| Diferenciar catatonia e mutismo | 6/13 | 8 | 12 (documentação) |
+| Encaminhar na RAPS e transmitir cuidado | 14–15 | 2, 8 | 9 |
+
+**Autoauditoria (provisória):** oito casos clínicos e doze questões autorais com comentário de alternativas, capítulo clínico de entrevista, EEM, fenômenos e diferenciais. Revisão médica/psiquiátrica independente **não realizada**; fonte comparativa integral equivalente no Drive **não identificada**; ilustrações planejadas mas ainda **não produzidas nem aprovadas**. O total bruto de caracteres do Markdown não é igual ao número de caracteres **didáticos úteis**. Não houve alteração de HTML, catálogo, Supabase ou produção publicada.
+
+**Próximo tema:** 211 — Transtornos depressivos e avaliação do risco de suicídio. A 211 deverá apresentar epidemiologia, fisiopatologia, diagnóstico diferencial com bipolaridade, critérios CID-11/DSM-5-TR em fontes próprias, psicoterapias/antidepressivos, avaliação clínica de segurança e seguimento, sem simplesmente reproduzir a semiologia já desenvolvida na 210.
