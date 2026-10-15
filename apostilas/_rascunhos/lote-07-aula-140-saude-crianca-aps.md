@@ -260,3 +260,335 @@ Proibida reprodução de figuras de cursinhos; imagens comerciais precisam de au
 - [ ] Robustez ≥60K caracteres didáticos úteis sem repetição, avaliação independente de autossuficiência.
 - [ ] Imagens reais licenciadas e figuras próprias, revisão médico-editorial, integração ao HTML LURIA e PWA.
 **Situação:** rascunho parcial; não publicar como apostila certificada.
+
+---
+
+# CAMADA DE APROFUNDAMENTO — SAÚDE DA CRIANÇA NA APS
+**Registro de ampliação: 15/10/2026.** Esta camada é complementar às seções 1–19 e não sobrescreve o material anterior. A matriz de cobertura agora deve ser lida com as duas partes. Foram relidos antes da edição os documentos do Drive “01 - PUERICULTURA - CRESCIMENTO E BAIXA ESTATURA.pdf” (8.323 caracteres extraídos) e “02 - PUERICULTURA - OBESIDADE E SD. METABOLICA.pdf” (7.919 caracteres extraídos). Ambos são resumos úteis como inventário, mas não comprovadamente produzidos pelo Estratégia MED, não contêm todas as decisões assistenciais e apresentam simplificações que precisam de cuidado. Verificaram-se como **fontes oficiais independentes** o calendário de consultas da primeira infância do MS, as curvas OMS para 0–5 e 5–19 anos, o Guia Alimentar MS 2019, a Estratégia Amamenta e Alimenta Brasil e a Caderneta Digital atualizada em outubro/2026. Sem cópia de texto, gráficos ou imagem de terceiros.
+
+## 20. Primeira semana de vida — consulta estruturada em problemas
+
+### 20.1. A alta da maternidade não encerra a transição neonatal
+Os primeiros dias reúnem adaptações cardiorrespiratórias, metabólicas, térmicas e alimentares. Um neonato com exame normal no momento da alta pode manifestar icterícia importante, desidratação por ingesta insuficiente ou obstrução intestinal depois de ir para casa. O primeiro atendimento na UBS deve integrar **história do parto, triagem neonatal e funcionamento cotidiano**, não apenas pesar, medir e dizer “normal”.
+
+**Antes de avaliar a mamada, investigar:**
+- Idade gestacional e peso de nascimento, peso de alta e peso atual, tempo decorrido entre medidas.
+- Tipo de parto, reanimação, internação neonatal, uso de antibiótico, necessidade de fototerapia, incompatibilidade sanguínea conhecida.
+- Sorologias maternas, imunizações e profilaxias neonatais documentadas, sem presumir “testes do pré-natal todos normais”.
+- Idade da primeira mamada, frequência nas últimas 24 horas, despertares, tempo de sucção e presença de deglutição.
+- Quantas fraldas molhadas e quantas evacuações, cor de fezes e urina e alterações do comportamento.
+- Humor, sono, dor, rede de apoio e condições concretas de quem cuida do bebê.
+
+**O exame inicial** verifica temperatura, frequência respiratória e sinais de esforço, cor, perfusão, tônus, hidratação, fontanelas, boca/freio quando há queixa, coração/pulsos, abdome, coto umbilical, genitália, quadris de modo apropriado e alterações de pele. Em quadro clínico sugestivo, a simples ausência de febre não exclui infecção neonatal: hipotermia, sucção fraca e alteração de responsividade também são sinais preocupantes.
+
+### 20.2. Perda de peso: compreender tendência e contexto
+A perda ponderal inicial envolve eliminação de líquido extracelular e adaptação do aporte. É frequente que bebês a termo percam parte do peso nos primeiros dias e o recuperem por volta da segunda semana, mas valores médios não podem ser aplicados cegamente a um recém-nascido que está desidratando. **Pistas de risco:** perdas progressivas relevantes, redução de diurese, uratos persistentes com ingesta insatisfatória, sonolência excessiva, boca seca, sucção pouco eficaz, hiperbilirrubinemia e dificuldade de despertar para alimentar.
+
+**Exemplo didático:** recém-nascido tinha 3.200 g ao nascer e 2.920 g no quinto dia. A diferença é 280 g, isto é, 8,75% do nascimento. Esse percentual isolado não estabelece desidratação hipernatrêmica nem define suplementação universal; exige avaliação de trajetória diária, técnica da pesagem, exame da mamada, hidratação, icterícia e plano de retorno precoce. Uma mãe com fissuras dolorosas e bebê com poucas diureses precisa de intervenção concreta de suporte, não apenas “continuar amamentando” sem observar transferência de leite.
+
+**Erro comum:** considerar todo lactente que dorme muito um “bebê bonzinho”. Letargia pode ser sinal de ingestão insuficiente, icterícia importante, infecção e doença metabólica.
+
+### 20.3. Icterícia fisiológica versus doença que não pode esperar
+A bilirrubina indireta pode subir no período neonatal por maior produção decorrente da renovação de hemácias e conjugação hepática imatura. Entretanto **início nas primeiras 24 horas**, progressão rápida, criança doente, anemia/hemólise, icterícia muito intensa ou persistência além do esperado requerem avaliação laboratorial e indicação de tratamento conforme **idade em horas, idade gestacional e fatores de risco**. Não usar um valor único de bilirrubina para todos os recém-nascidos.
+
+A fisiopatologia da encefalopatia bilirrubínica envolve bilirrubina não conjugada, ligação à albumina e vulnerabilidade cerebral; por isso o risco de kernicterus depende também de prematuridade, sepse, hemólise e outras condições. Fototerapia utiliza espectro luminoso eficaz para converter bilirrubina em formas excretáveis; não é “luz de qualquer cor” ou exposição domiciliar ao sol.
+
+**Icterícia conjugada/colestase:** fezes hipocólicas ou acólicas e urina muito escura em bebê com icterícia persistente podem indicar atresia biliar e outras causas. Encaminhamento rápido é essencial, pois o prognóstico de certas intervenções hepatobiliares se relaciona ao diagnóstico precoce. Não atribuir fezes brancas a “leite forte” e esperar meses.
+
+### 20.4. Respiração e coração: quando um teste de triagem não basta
+Respiração persistente com gemência, tiragens, apneias, cianose central ou dificuldade alimentar significativa exige avaliação imediata. Pulsos femorais diminuídos, diferença importante de perfusão entre membros e sopro patológico sugerem cardiopatia; a oximetria neonatal pode identificar várias cardiopatias críticas, mas **não exclui toda malformação** quando normal. Coarctação de aorta, por exemplo, pode não ser detectada somente por medida isolada de saturação.
+
+**Exemplo:** neonato com triagem de oximetria normal na maternidade retorna com taquipneia, má alimentação e pulsos femorais fracos. Não descartar cardiopatia por “teste do coraçãozinho normal”; examinar circulação e encaminhar urgentemente.
+
+## 21. Crescimento — interpretar curvas sem aplicar atalhos numéricos inadequados
+
+### 21.1. Qual curva para qual idade?
+A **OMS 2006** fornece padrões de crescimento de **0 a 60 meses**, construídos em condições ambientais favoráveis e aplicáveis mundialmente, sem necessitar curva por etnia. Para **5 a 19 anos**, a referência da **OMS 2007** complementa avaliação de IMC por idade e estatura por idade. A escolha depende de sexo, idade exata e indicador. Uma criança de seis anos não deve ser plotada arbitrariamente no gráfico de peso/estatura de lactente.
+
+**Indicadores e perguntas correspondentes:**
+
+| Indicador | Pergunta que ajuda responder | Quando isoladamente engana |
+|---|---|---|
+| Peso/idade | A massa corporal geral acompanha padrões e trajetória esperados? | Não distingue excesso de adiposidade de baixa estatura |
+| Estatura ou comprimento/idade | Crescimento linear está adequado? Há deficiência crônica de crescimento? | Estatura isolada não mostra velocidade recente |
+| Peso/comprimento ou peso/altura | Relação ponderal em criança pequena; magreza e excesso ponderal | Não substitui análise de edema, composição corporal e doença |
+| IMC/idade | Relação entre massa e estatura em gráfico por sexo/idade | IMC alto pode ter contexto puberal/muscular, mas não pode ser ignorado |
+| Perímetro cefálico/idade | Trajetória de crescimento craniano nos primeiros anos | Um único percentil sem série/medida e exame neurológico é pouco específico |
+| Velocidade de crescimento | Quantos centímetros cresceu em período conhecido? | Medições com erro/intervalo curto podem sugerir doença inexistente |
+
+### 21.2. Posição e técnica são tão importantes quanto a fórmula
+Até dois anos, medir deitado com infantômetro, com cabeça alinhada ao plano, pernas estendidas de modo gentil e pés na prancha. Crianças maiores usam estadiômetro fixo, corpo alinhado e calcanhares adequadamente posicionados. Como medidas deitado e em pé diferem sistematicamente, transição mal anotada pode simular queda de crescimento. Repetir se medida parece incoerente com trajetória prévia.
+
+**Erro de cálculo:** criança teve 115,2 cm em março e 116,0 cm em maio; multiplicar 0,8 cm por seis para afirmar “crescerá 4,8 cm/ano” pode amplificar erro de 0,5 cm de cada medida. Uma velocidade anualizada requer intervalo apropriado, preferencialmente vários meses, e medidas padronizadas. Em períodos de crescimento lento, repetir com intervalo suficiente antes de diagnosticar deficiência hormonal — salvo sinais clínicos de alarme.
+
+### 21.3. Genética familiar e puberdade
+Estatura-alvo familiar é estimativa probabilística, não sentença definitiva. Fórmulas clínicas podem apoiar interpretação, mas peso ao nascer, doenças crônicas, nutrição, puberdade e ambiente influenciam resultado. Atraso constitucional pode ter velocidade preservada em idade apropriada e **idade óssea** atrasada; baixa estatura familiar tende a acompanhar alvo menor. A doença de base pode coexistir com família baixa, por isso antecedentes não dispensam avaliação seriada.
+
+**Por que a puberdade muda a curva?** Esteroides sexuais e GH/IGF-1 promovem aceleração do crescimento antes da fusão epifisária. A velocidade de estirão varia por sexo e maturação puberal. Um menino que inicia puberdade mais tarde pode parecer abaixo de pares da mesma idade cronológica sem ter baixa estatura final; o inverso ocorre na puberdade precoce com estatura inicialmente alta e maturação óssea acelerada. Encaminhamento depende do conjunto, e não do percentil isolado.
+
+### 21.4. Investigação de baixa estatura: testes dirigidos a uma hipótese
+**Primeira etapa:** confirmar medidas, estatura-alvo, trajetória ponderal, velocidade, idade gestacional, história alimentar, fezes/diarreia, doença sistêmica, medicações e exame de proporções corporais.  
+**Quando investigar doenças comuns:** hemograma/estado inflamatório, tireoide, função renal e rastreio de doença celíaca com sorologia e IgA total quando indicado. Não usar painel universal sem história de doença — mas também não atribuir quadro claramente patológico apenas à genética.  
+**Endocrinologia/genética:** alterações de IGF-1, maturação óssea, desproporções, dismorfismos, retardo puberal e história familiar podem orientar encaminhamento. Uso de GH exige diagnóstico e indicação específica, com acompanhamento e monitorização; não é tratamento de “criança que quer ficar alta”.
+
+### 21.5. Perímetro cefálico: o crescimento do cérebro deixa pistas
+O perímetro cefálico nos primeiros anos acompanha crescimento craniano e pode alertar para hidrocefalia, microcefalia, craniossinostose e distúrbios genéticos/metabólicos. **Microcefalia e macrocefalia são descrições antropométricas**, não etiologias; interpretação demanda curva adequada, tamanho dos pais, exame neurológico, marcos e tendência.
+
+Queda marcada de percentis junto de regressão do desenvolvimento, alteração de tônus ou crises merece investigação. Aumento rápido do perímetro acompanhado de vômitos, fontanela tensa ou olhar em “sol poente” pode sinalizar pressão intracraniana aumentada. Não substituir exame clínico por fotografia isolada da cabeça.
+
+## 22. Desenvolvimento neuropsicomotor: vigilância por domínios e respostas proporcionais
+
+### 22.1. O que é marco e por que é faixa?
+Um marco é comportamento que aparece em parte significativa das crianças dentro de intervalo de idade, condicionado a oportunidades de prática, maturação neurológica, capacidade sensorial e contexto. A idade mediana não é corte diagnóstico e a ausência isolada de um marco não equivale a atraso patológico. **Regressão** e atrasos em vários domínios são mais preocupantes que pequena variação sem outros sinais.
+
+Para ensino, organizar em **janelas aproximadas**:
+- **Primeiros meses:** progressão do contato visual, sorriso responsivo, controle cefálico, vocalizações e interação com cuidador.
+- **Ao redor do meio do primeiro ano:** manipulação de objetos, transferência, posturas com apoio, balbucio e interesse social.
+- **Fim do primeiro ano:** sentar com estabilidade, apoiar-se para ficar em pé em muitas crianças, gestos comunicativos, exploração, resposta social e evolução de sons/palavras.
+- **Segundo ano:** marcha independente na maioria, vocabulário crescente, gestos de intenção, brincadeira funcional e progresso de autonomia.
+- **Pré-escolar:** linguagem combinatória, brincadeira simbólica, maior coordenação e interação social, habilidades de autocuidado progressivas.
+- **Escolar:** atenção, aprendizagem, linguagem complexa, funções executivas e participação social passam a ser avaliadas com maior ênfase.
+
+Essas janelas são **orientações didáticas**, não substituem tabela específica validada da Caderneta vigente. Evitar enunciados absolutos como “toda criança precisa andar exatamente aos 12 meses”; a ausência de progressão e outros sinais podem exigir avaliação em idade apropriada.
+
+### 22.2. Linguagem: ouvir vem antes de falar
+A criança precisa de audição funcional e oportunidades de interação para adquirir linguagem oral, mas déficits de linguagem também podem decorrer de condições do neurodesenvolvimento, apraxia de fala e outras causas. Perguntar sobre resposta ao nome, localização de sons, balbucio, uso de gestos, atenção conjunta, intenção comunicativa e evolução de compreensão, não só número de palavras isoladas.
+
+**Cenário de prova:** criança de 24 meses não combina palavras, parece não responder ao nome e evita interação. Conduta não é declarar “meninos falam mais tarde” ou recomendar apenas reduzir telas. Avaliar audição, desenvolvimento global, possibilidades de TEA e outras causas, com encaminhamento/estimulação conforme necessidade.
+
+### 22.3. Triagem de TEA e rastreios de desenvolvimento
+Acompanhamento da APS inclui vigilância clínica e uso de ferramentas padronizadas conforme idade, como as disponíveis na Caderneta e instrumentos validados para risco de TEA. **Triagem positiva não confirma diagnóstico**; a sensibilidade e especificidade dependem da população, treinamento e ponto de corte. Uma triagem negativa não elimina preocupação relevante de pais/cuidadores ou regressão.
+
+Os profissionais devem explicar o próximo passo: avaliação especializada, triagem auditiva/visual, observação funcional e acesso à estimulação precoce. Não esperar parecer formal de todas as especialidades para iniciar ações de apoio seguras e apropriadas.
+
+### 22.4. Transtornos motores e paralisia cerebral
+Prematuridade, encefalopatia neonatal, malformações e lesões neurológicas podem produzir alterações de tônus, assimetria e atraso motor. Sinais relevantes incluem preferência unilateral muito precoce, postura assimétrica persistente, hipertonia/hipotonia importante e atraso global. A avaliação por fisioterapia/neuropediatria pode usar instrumentos específicos em prematuros e crianças de alto risco; uma tomografia normal não exclui condição neuromotora.
+
+Famílias devem ser orientadas sobre posicionamento, oportunidades de brincar, intervenção precoce e prognóstico com linguagem clara, evitando tanto falso otimismo como prognóstico determinista a partir de um único achado.
+
+### 22.5. Desenvolvimento e vulnerabilidade social
+Insegurança alimentar, privação de sono, violência e falta de acesso a creche/estímulos podem reduzir oportunidades de aquisição de habilidades. Contudo, **não atribuir atraso importante apenas à pobreza sem avaliar audição, genética e neurologia**. O cuidado é simultaneamente clínico e social: fortalecer vínculo, orientar brincadeiras acessíveis, acionar assistência social e garantir referência terapêutica quando indicada.
+
+## 23. Alimentação infantil — mecanismos, dificuldades e prioridades brasileiras
+
+### 23.1. Os doze passos do Guia Alimentar não são apenas proibições
+O Guia Alimentar para Crianças Brasileiras Menores de Dois Anos (Ministério da Saúde, edição revisada 2019, com divulgação oficial atualizada) define: aleitamento exclusivo até seis meses; continuidade até dois anos ou mais; alimentos in natura/minimamente processados após seis meses; água em vez de bebidas açucaradas; comida amassada no início; sem açúcar adicionado até dois anos; evitar ultraprocessados; refeições familiares; ambiente positivo; atenção a fome/saciedade; higiene e proteção contra publicidade de alimentos.
+
+**A fisiologia por trás da recomendação:** a criança desenvolve preferência gustativa, capacidade de mastigar, percepção de saciedade e repertório alimentar por exposições repetidas e interação familiar. Oferta de bebida açucarada pode deslocar leite/água e comida nutritiva, aumentar cárie e padronizar alta preferência por doces. Produtos ultraprocessados tendem a concentrar sal/açúcar/energia e reduzir diversidade alimentar; orientar substituições viáveis é mais eficaz do que listar proibições sem considerar preço/acesso.
+
+### 23.2. Progressão de textura
+Aos seis meses a criança precisa de consistência compatível com habilidade oral, como alimentos amassados e bem cozidos. Manter dieta exclusivamente peneirada/liquidificada por longos períodos pode limitar progressão de mastigação. A transição para pedaços seguros exige desenvolvimento, supervisão e prevenção de engasgo. A abordagem não deve criar disputa ideológica entre “introdução tradicional” e “BLW”: ambas precisam atender segurança, aporte nutricional e responsividade.
+
+**Risco de engasgo:** alimentos duros e redondos, pedaços de carne inadequados, uvas inteiras, oleaginosas inteiras e objetos pequenos requerem adaptações conforme idade. A consistência adequada da comida do dia a dia difere de uma dieta de purês homogêneos sem textura por meses.
+
+### 23.3. A alimentação responsiva protege vínculo e autorregulação
+Adulto oferece alimentos saudáveis, em contexto apropriado, com consistência segura; a criança tem sinais de fome e saciedade que devem ser observados. Alimentar à força, perseguir criança pela casa com colher, insistir até choro ou utilizar tela como distração permanente pode prejudicar a percepção de fome e associação positiva com refeições. Recusa pontual é esperada; persistência com perda ponderal, engasgos, vômitos ou dificuldade sensorial importante demanda avaliação.
+
+**Exemplo:** criança de 15 meses reduz apetite comparativamente à fase de crescimento mais rápido, mas mantém curva adequada e desenvolvimento. Pode ser normal. Criança da mesma idade com engasgos a sólidos, refeições superiores a uma hora, perda ponderal e pneumonias aspirativas exige avaliação da deglutição, não apenas “estimulante de apetite”.
+
+### 23.4. Ferro: da fisiologia à prevenção individualizada
+O ferro participa de síntese de hemoglobina, enzimas energéticas e desenvolvimento neurológico. As reservas neonatais dependem de gestação/placenta/peso, enquanto a expansão de massa eritrocitária no lactente aumenta demanda. Prematuridade, muito baixo peso, restrição de crescimento, dietas pobres em fontes de ferro e certas doenças intestinais aumentam risco.
+
+**Ferro heme** de carnes é melhor absorvido que ferro não heme vegetal, mas leguminosas e outros alimentos continuam fontes importantes; vitamina C em refeições pode ajudar absorção de ferro não heme. Criança não precisa consumir carne em todas as refeições para receber ferro, porém composição global e reservas importam.
+
+Para **suplementação**, diferenciar prevenção de tratamento de anemia. A dose de **ferro elementar** e duração dependem de idade gestacional, peso ao nascer, dieta, exames e protocolos PNSF/SBP; nenhuma recomendação segura pode ser reduzida a “dar 1 mL de sulfato ferroso a toda criança” sem concentração. Em anemia importante ou refratária investigar adesão, diagnóstico alternativo, perdas crônicas, doença celíaca, talassemia e condições inflamatórias. Ferritina é reagente de fase aguda e pode estar “normal” apesar de deficiência em inflamação.
+
+### 23.5. Vitamina D, cálcio e raquitismo
+Vitamina D regula homeostase de cálcio/fósforo e mineralização óssea. Deficiência importante pode levar a raquitismo, alterações de membros, atraso motor, hipocalcemia e convulsões. O risco aumenta conforme exposição solar, dieta, absorção, doença renal/hepática e prematuridade. Suplementação exige produto e concentração confiáveis; doses excessivas podem causar hipercalcemia e lesão renal. A decisão no SUS deve observar norma e contexto; **não extrapolar protocolos de outros países ou prescrever megadoses a toda criança**.
+
+### 23.6. Alergia alimentar versus intolerância e seletividade
+Reações imunológicas imediatas com urticária, angioedema, vômitos rápidos, broncoespasmo ou anafilaxia após alimento indicam avaliação de alergia. Reações não IgE podem ter curso diferente, com sintomas GI/pele e cronologia menos imediata. Lactose é açúcar, e **intolerância à lactose não equivale a alergia à proteína do leite de vaca**. A exclusão indiscriminada de leite, ovo, trigo e outros alimentos pode piorar estado nutricional e gerar custo/fardo à família. Solicitar testes apenas quando história justifica, e realizar investigação/reintrodução supervisionadas segundo risco.
+
+**Cenário:** lactente com regurgitação fisiológica e ganho de peso adequado não deve ser automaticamente diagnosticado com alergia à proteína do leite e submetido a dieta restritiva materna sem critérios. Já sintomas compatíveis com reação alérgica grave exigem abordagem emergencial.
+
+## 24. Saúde bucal, olhos e audição são parte da puericultura
+
+### 24.1. Cárie precoce e alimentação
+Dentes decíduos precisam de higiene desde a erupção e acompanhamento odontológico. Alimentação frequente açucarada e bebidas adoçadas aumentam risco de cárie; hábitos de escovação e orientação de dentifrício fluoretado na quantidade apropriada dependem de idade, risco e diretrizes odontopediátricas vigentes. Não recomendar a retirada de todo flúor por medo genérico, nem permitir deglutição de grande quantidade de pasta por falta de supervisão.
+
+**Cárie na infância não é apenas estética:** pode causar dor, infecção, dificuldade alimentar e impacto no sono/aprendizagem. APS deve integrar saúde bucal ao plano da família, especialmente em crianças com necessidades especiais, lesões frequentes e dificuldade de acesso.
+
+### 24.2. Visão: por que perguntar mesmo depois do teste do olhinho?
+O reflexo vermelho neonatal identifica opacidade/leucocoria ou assimetria sugestiva de anormalidades importantes, mas não detecta todas as deficiências refrativas, estrabismo e perda visual progressiva. Sinais para investigação incluem estrabismo persistente, nistagmo, não acompanhar objetos como esperado, cefaleia escolar, aproximar-se muito da tela/livro ou desempenho escolar inexplicado.
+
+**Leucocoria é urgência oftalmológica** em qualquer idade, diante de catarata congênita, retinoblastoma e outras causas. Não aguardar próxima avaliação anual.
+
+### 24.3. Audição: triagem neonatal normal não é garantia vitalícia
+Perda auditiva pode ser tardia, progressiva ou adquirida. Perguntar sobre resposta ao nome, compreensão, linguagem e sinais de otite/efusão recorrentes. Uma criança com suspeita de TEA e atraso de fala pode ter deficiência auditiva concomitante; o diagnóstico diferencial exige investigação dos dois eixos em paralelo. Após meningite bacteriana, a necessidade de audiologia é particularmente importante.
+
+### 24.4. Escola como fonte de sinais clínicos
+Aprendizagem, atenção, coordenação, agressividade/retraimento e faltas recorrentes precisam de interpretação sistêmica. Mudanças podem refletir perda visual/auditiva, sofrimento psíquico, sono ruim, violência, transtornos específicos do aprendizado, doença crônica ou dificuldades escolares. A equipe deve acolher informações da escola com consentimento/privacidade e construir plano sem rotular criança apenas por nota baixa.
+
+## 25. Sono seguro, acidentes e prevenção de agravos por estágio do desenvolvimento
+
+### 25.1. O ambiente importa mais que o acessório comprado
+Para lactente saudável, a orientação de segurança central é posição **supina** para dormir, superfície firme/plana e berço sem objetos soltos, travesseiros grandes, brinquedos macios ou posicionadores que aumentem risco de sufocação. O cuidado deve considerar ambiente real de cada família, incluindo acesso a superfície segura, número de pessoas na moradia e condições térmicas.
+
+**Erro de aconselhamento:** “coloque almofadas em volta para o bebê não virar” contradiz redução de objetos soltos. Outro erro: recomendar decúbito lateral como rotina para evitar refluxo sem indicação clínica apropriada; posição lateral é instável e não substitui supino para sono seguro.
+
+### 25.2. Engasgo, afogamento e queimaduras
+À medida que lactente começa a engatinhar, colocar objetos na boca e explorar altura, o risco de acidente muda rapidamente. Produtos de limpeza, baterias tipo botão, medicamentos e moedas devem ficar fora de alcance e preferencialmente trancados; baterias podem lesar esôfago rapidamente e exigem avaliação emergencial. Piscinas, banheiras e baldes exigem supervisão contínua; a criança pode se afogar em pouco volume, e “só um minuto” é intervalo suficiente para acidente.
+
+Queimaduras com líquidos quentes são comuns na infância; orientar preparo de alimentos longe das bordas, cuidado com panelas e água de banho. Queimadura extensa, elétrica, por produto químico ou suspeita de maus-tratos exige avaliação especializada.
+
+### 25.3. Trânsito e quedas
+Dispositivos de retenção precisam respeitar legislação brasileira, peso/estatura e instruções do fabricante. Não usar “completou um ano, pode ir sem cadeirinha” como regra universal. Na escola, educação de trânsito, capacete apropriado e ambientes seguros reduzem risco, sem restringir brincadeiras de modo indiscriminado.
+
+A família frequentemente pergunta por grade de janela, escada, cama alta e berço; a orientação é baseada na **habilidade atual e na que a criança desenvolverá logo**, não só no que consegue fazer hoje.
+
+## 26. Obesidade e pressão arterial: integrar comorbidades sem estigma
+
+### 26.1. Obesidade não é explicação exclusiva para cansaço
+Criança com IMC/idade elevado pode apresentar apneia obstrutiva do sono, hipertensão, dislipidemia, resistência à insulina, DM2, doença hepática associada à disfunção metabólica e efeitos psicossociais, mas também pode ter asma, anemia, cardiopatia ou depressão. A abordagem deve registrar sintomas e exames apropriados, não atribuir automaticamente tudo ao peso.
+
+### 26.2. Classificação por idade
+Menores de cinco anos usam padrões OMS e categorias específicas para **risco de sobrepeso, sobrepeso e obesidade**; maiores usam IMC/idade em referência escolar/adolescente. Os pontos de corte diferem, motivo pelo qual copiar “z > +2 significa obesidade em qualquer criança” é incorreto. O resumo de obesidade do Drive já sinaliza distinção, mas sua frase sobre rastreios/liraglutida não é protocolo brasileiro universal atualizado. Um gráfico sem título/idade pode gerar diagnóstico errado.
+
+### 26.3. A velocidade de crescimento é uma pista etiológica
+Na obesidade comum multifatorial, crescimento estatural pode ser normal ou acelerado. **Obesidade associada a desaceleração marcada de crescimento linear** levanta endocrinopatia, como hipotireoidismo, hipercortisolismo e outras causas, conforme sintomas. Início muito precoce com hiperfagia intensa, dismorfismo, atraso do desenvolvimento ou alterações endócrinas pode motivar avaliação genética. Contudo, a maioria dos casos requer abordagem familiar/ambiental, sem painel hormonal caro automático.
+
+### 26.4. Pressão arterial infantil
+A pressão deve ser aferida com **manguito adequado**, técnica de repouso e braço na altura do coração. A interpretação até 13 anos, em diversas diretrizes, utiliza percentis para idade/sexo/estatura; adolescentes mais velhos podem usar cortes distintos. Uma PA alta única durante choro/dor não diagnostica hipertensão, exigindo repetição e confirmação conforme risco, mas níveis muito elevados com sintomas exigem avaliação urgente.
+
+**Exemplo:** escolar de oito anos com IMC alto, ronco e PA inicialmente elevada. A equipe mede com manguito pequeno demais, que pode superestimar pressão. Corrigir técnica, repetir, avaliar com percentis e investigar comorbidades; não rotular “hipertenso” sem confirmar.
+
+### 26.5. Tratamento realista e longitudinal
+Promover alimentação familiar, sono adequado, oportunidade de brincadeira ativa, redução de bebidas adoçadas e apoio escolar/psicossocial. Encaminhamento nutricional/pediátrico deve respeitar gravidade e comorbidades. **Medicamentos antiobesidade em adolescentes** dependem de aprovação regulatória, indicação, acesso e equipe experiente; não usar regra “seis meses de MEV, dar liraglutida a qualquer criança”.
+
+## 27. Adolescentes, confidencialidade e transição de cuidado
+
+### 27.1. A saúde da criança não desaparece ao completar nove anos
+A PNAISC usa até nove anos como faixa política central, mas a APS acompanha pessoas ao longo da vida. No início da adolescência, surgem questões de puberdade, menstrução, saúde sexual e reprodutiva, vacinas, sono, saúde mental, uso de substâncias, violência, autoestima e atividade física. A transição de consultas com pais para escuta progressiva do adolescente deve preservar vínculo familiar com respeito à privacidade e às normas legais, particularmente diante de risco.
+
+### 27.2. Puberdade e sinais de alerta
+O desenvolvimento puberal deve ser interpretado com idade, estágio de Tanner e velocidade de crescimento. Puberdade muito precoce, progressão rápida, atraso importante e alterações neurológicas podem exigir avaliação endocrinológica. A ausência de menarca isolada em idade pequena não é amenorreia patológica; história de telarca, pubarca, crescimento e doenças crônicas contextualiza.
+
+### 27.3. Saúde mental e violência
+Aumentos de isolamento, mudanças de sono, autoagressão, absentismo, perda de peso e quedas acentuadas de rendimento merecem escuta protegida. Não converter todo sofrimento em “fase normal da adolescência”; avaliar risco imediato, rede de apoio e encaminhamento conforme gravidade. Suspeita de violência sexual exige atenção clínica e fluxos de proteção/notificação, sempre evitando revitimização e exposição desnecessária.
+
+## 28. Casos avançados — cinco decisões longitudinais novas
+
+### Caso 5 — icterícia com fezes acólicas
+**Apresentação:** lactente de 32 dias com icterícia persistente, urina escura e fezes esbranquiçadas; peso ainda em curva aceitável.  
+**Hipóteses:** colestase neonatal, possível atresia biliar, hepatite neonatal/metabólica e outras etiologias.  
+**Raciocínio:** icterícia conjugada/colestase não é “icterícia do leite materno” a ser observada por meses, e a idade torna tempo de diagnóstico relevante para tratamento.  
+**Exames:** bilirrubina total e direta, função hepática/coagulação, US hepatobiliar e investigação dirigida pela referência.  
+**Conduta:** avaliação especializada prioritária, suporte nutricional conforme equipe, não atrasar por agenda de puericultura habitual.  
+**Por que importa:** detectar doença cirúrgica potencialmente tratável mesmo com bebê relativamente bem.
+
+### Caso 6 — baixa velocidade com ganho de peso
+**Apresentação:** menina de sete anos mantinha estatura próxima de escore Z −0,5, mas cai para −1,8 em dois anos enquanto IMC sobe. Família afirma “é genética”.  
+**Hipóteses:** alteração de crescimento linear por causa endócrina/sistêmica ou erro de medição seriada.  
+**Raciocínio:** desaceleração real pesa mais que percentil isolado; baixa estatura familiar não explica necessariamente queda progressiva.  
+**Exames:** repetir aferições, avaliar intervalo/velocidade, estatura-alvo, puberdade e sinais sistêmicos; investigação tireoidiana/renal/celíaca e idade óssea conforme avaliação.  
+**Conduta:** seguimento pediátrico com eventual endocrinologia, sem prescrição empírica de GH.  
+**Por que importa:** usar série de medidas e não uma fotografia.
+
+### Caso 7 — alimentação seletiva e anemia
+**Apresentação:** criança de 20 meses come quase exclusivamente mingaus açucarados e leite, rejeita alimentos sólidos e apresenta palidez, irritabilidade, hemoglobina baixa e ferritina reduzida.  
+**Hipóteses:** anemia ferropriva por dieta restrita; investigar também dificuldade oral-sensorial e outros fatores.  
+**Raciocínio:** leite em excesso pode deslocar fontes de ferro; há risco de deficiência nutricional e atraso de habilidades de mastigação.  
+**Exames:** hemograma/índices, ferritina considerando inflamação, avaliação alimentar e do desenvolvimento.  
+**Conduta:** tratar anemia com dose de ferro elementar e seguimento **conforme protocolo pediátrico nacional**, orientar alimentação/ambiente sem coação e encaminhar fono/nutrição conforme avaliação.  
+**Por que importa:** tratar laboratório e hábito alimentar ao mesmo tempo.
+
+### Caso 8 — regressão de desenvolvimento com triagem neonatal normal
+**Apresentação:** menina de 23 meses perdeu palavras adquiridas e deixou de apontar; cuidadores acreditam que audição é normal porque passou no teste neonatal.  
+**Hipóteses:** regressão do neurodesenvolvimento, transtorno do espectro autista e/ou comprometimento auditivo, entre outras etiologias.  
+**Raciocínio:** triagem auditiva ao nascer não exclui perda posterior; regressão exige encaminhamento oportuno.  
+**Exames:** avaliação auditiva, desenvolvimento e interação, instrumentos validados conforme idade, neuropediatria quando apropriado.  
+**Conduta:** coordenar estimulação precoce e investigação sem esperar anos por diagnóstico final.  
+**Por que importa:** não tratar rastreio antigo como garantia vitalícia.
+
+### Caso 9 — escola, violência e saúde mental
+**Apresentação:** menino de 11 anos com faltas escolares, dores abdominais, perda ponderal e hematomas de explicação inconsistente, que evita falar na presença de cuidador.  
+**Hipóteses:** doença orgânica gastrointestinal, sofrimento psíquico e possível violência/negligência, potencialmente coexistentes.  
+**Raciocínio:** sintomas somáticos e sinais de proteção exigem escuta e exame cuidadosos; não concluir simulação nem acusar pessoa sem avaliação.  
+**Exames:** avaliação clínica da perda ponderal/abdome, documentação objetiva de lesões e avaliação psicossocial protegida.  
+**Conduta:** assegurar segurança imediata, acionar rede de proteção/notificação conforme SUS/ECA e protocolo local, tratamento de necessidades médicas e plano longitudinal.  
+**Por que importa:** integrar riscos sociais sem substituir investigação biomédica.
+
+## 29. Oito questões adicionais de raciocínio clínico e APS
+
+### Questão 9 — icterícia persistente
+Lactente de 30 dias apresenta fezes acólicas, colúria e icterícia. Qual conduta?
+A. Tratar como icterícia fisiológica até seis meses. B. Investigar rapidamente colestase com bilirrubina direta e encaminhar conforme suspeita. C. Apenas banho de sol. D. Suspender toda alimentação até consulta de rotina.  
+**Gabarito B.** Sinais sugerem colestase, possível atresia biliar. **A/C** atrasam diagnóstico; **D** é inadequado e perigoso. **Pulo:** fezes sem pigmento são alerta para obstrução biliar.
+
+### Questão 10 — crescimento
+Menino de oito anos mantém altura dentro do gráfico, mas cai progressivamente entre percentis por dois anos. Qual princípio?
+A. Avaliar velocidade e contexto, porque queda seriada pode ser patológica antes de estatura extremamente baixa. B. Sempre normal se ainda entre percentis. C. Prescrever GH sem avaliação. D. Considerar apenas peso.  
+**Gabarito A.** Tendência pode ser mais informativa que posição isolada. **B/D** desconsideram trajetória; **C** pressupõe diagnóstico. **Pulo:** velocidade é dado clínico, não detalhe.
+
+### Questão 11 — marcos
+Uma criança de 21 meses deixa de usar palavras e gestos previamente adquiridos. O que fazer?
+A. Esperar até alfabetização. B. Encerrar por teste do pezinho normal. C. Avaliar regressão, audição e desenvolvimento com encaminhamento/estimulação oportunos. D. Indicar antibiótico empírico.  
+**Gabarito C.** Regressão é sinal de alarme. **A/B** atrasam; **D** não trata causa. **Pulo:** perda de habilidade não é variação comum do marco.
+
+### Questão 12 — alimentação complementar
+Segundo Guia Alimentar MS para menores de dois anos, é adequado:
+A. Dar suco açucarado como principal líquido desde três meses. B. Manter só líquidos até dois anos. C. Usar ultraprocessados para ensinar paladar. D. Oferecer alimentos in natura/minimamente processados desde seis meses, com textura segura e alimentação responsiva.  
+**Gabarito D.** Corresponde à estratégia alimentar. **A/B/C** contrariam diretrizes. **Pulo:** comida de verdade, textura e interação importam.
+
+### Questão 13 — anemia e ferro
+Criança com anemia ferropriva e dificuldade de mastigar usa suplemento em gotas, mas alguém orienta “dar 2 mL” sem informar concentração. O problema é:
+A. Não há problema, todos frascos são idênticos. B. A prescrição deve indicar dose de **ferro elementar** conforme idade/peso/protocolo e concentração, além de abordar causa alimentar. C. Só dieta basta em toda anemia importante. D. Todo suplemento exige dose de adulto.  
+**Gabarito B.** Volume sem concentração não define mg. **A/D** erros de medicação; **C** generalização perigosa. **Pulo:** mg de ferro elementar, não “mL aleatórios”.
+
+### Questão 14 — triagem auditiva
+Bebê teve exame auditivo neonatal normal; aos dois anos não responde ao nome e tem atraso de fala. Qual afirmação?
+A. A audição precisa ser reavaliada e o neurodesenvolvimento investigado. B. A triagem neonatal exclui surdez para sempre. C. Qualquer atraso é culpa das telas. D. Adiar até seis anos.  
+**Gabarito A.** Perda auditiva pode ser adquirida/tardia e coexistir com outras causas. **B/C/D** inadequadas. **Pulo:** rastreio neonatal não é garantia longitudinal.
+
+### Questão 15 — sono seguro
+Qual orientação é correta a cuidadores de lactente saudável?
+A. Usar posicionadores de espuma para prevenir morte súbita. B. Colocar travesseiro alto e cobertas soltas. C. Posição supina e superfície firme, evitando objetos soltos no berço. D. Decúbito ventral obrigatório após cada mamada.  
+**Gabarito C.** Reduz risco de sufocação. **A/B/D** não são recomendados como rotina. **Pulo:** posição e ambiente.
+
+### Questão 16 — APS integral
+Criança com insegurança alimentar, atraso escolar e violência doméstica possível procura UBS. Melhor plano?
+A. Apenas curativo e retorno anual. B. Apenas pedir neuroimagem. C. Desconsiderar contexto por ser “social”. D. Avaliar saúde e desenvolvimento, proteger risco imediato, envolver assistência social/rede e coordenar seguimento.  
+**Gabarito D.** Integralidade e longitudinalidade. **A/B/C** fragmentam o cuidado. **Pulo:** território e família fazem parte da clínica.
+
+## 30. Matriz para teste de autossuficiência — aula 140
+
+| Pergunta essencial do aluno | Explicação suficiente nesta aula | Caso | Questão |
+|---|---|---|---|
+| Quando voltar com RN que mama mal? | 20.1–20.3 e capítulo 6 | 1 | revisão do caso e 9 |
+| Como diferenciar icterícia fisiológica de colestase? | 20.3 | 5 | 9 |
+| Qual curva usar em cada idade? | 4 e 21.1–21.2 | 6 | 10 |
+| Quando baixa estatura merece investigação? | 21.3–21.4 | 2 e 6 | 10 |
+| Quando suspeitar de alteração do neurodesenvolvimento? | 5 e 22 | 3 e 8 | 11 e 14 |
+| Quando usar idade corrigida? | 4.4 e 22 | casos clínicos prévios | 5 |
+| Como apoiar alimentação dos 6–24 meses? | 6, 7 e 23 | 7 | 12 e 13 |
+| Como diferenciar anemia por dieta de outras causas? | 23.4–23.5 | 7 | 13 |
+| Como interpretar obesidade infantil? | 8 e 26 | 4 | discussão final do caso 4 |
+| Como orientar sono e acidentes? | 9, 10 e 25 | orientação de puericultura | 15 |
+| Como avaliar suspeita de perda auditiva? | 5, 24.3 | 8 | 14 |
+| Como abordar violência na APS? | 10, 12 e 27 | 9 | 16 |
+
+**Resultado provisório:** o livro cobre a maioria dessas competências, mas precisa incorporar tabelas **oficiais** dos marcos por idade com licença/autorização e validação; doses nacionais completas de suplementação; fluxos de triagem/encaminhamento com redes locais; revisão clínica independente. O total de caracteres brutos não mede adequação de cada decisão.
+
+## 31. Fontes adicionais realmente consultadas em 15/10/2026
+8. Ministério da Saúde. **Acompanhamento da Saúde — Primeira Infância** (calendário de consultas). https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/acompanhamento-da-saude
+9. Ministério da Saúde. **Alimentação saudável na primeira infância — 12 passos do Guia Alimentar**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/primeira-infancia/alimentacao-saudavel
+10. Ministério da Saúde. **Estratégia Amamenta e Alimenta Brasil (EAAB)**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/aleitamento-materno/eaab
+11. OMS. **Child Growth Standards** (0–5 anos e referência OMS 2007, 5–19 anos). https://www.who.int/news-room/questions-and-answers/item/child-growth-standards
+12. OMS. **Length/height-for-age — Charts and tables**. https://www.who.int/tools/child-growth-standards/standards/length-height-for-age
+13. Ministério da Saúde. **Caderneta Digital da Criança — Meu SUS Digital**. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-crianca/caderneta-digital-da-crianca
+14. Ministério da Saúde. **Quer acompanhar a saúde da criança pelo celular? Saiba como acessar a Caderneta Digital no Meu SUS Digital**, notícia de **14/10/2026**. https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/outubro/quer-acompanhar-a-saude-da-crianca-pelo-celular-saiba-como-acessar-a-caderneta-digital-no-meu-sus-digital
+
+## 32. Estado editorial após a ampliação
+- [x] Comparativos do Drive **efetivamente relidos** para crescimento/obesidade, com divergências explicitadas.
+- [x] Etapas concretas da primeira semana e urgências neonatais.
+- [x] Técnica antropométrica, interpretação de Z-score, velocidade, estatura-alvo e idade corrigida.
+- [x] Desenvolvimento por domínio, regressão, audição/visão e risco social.
+- [x] Alimentação responsiva, ferro, deficiência de vitamina D e dificuldades alimentares.
+- [x] Saúde bucal, sono, acidentes, obesidade, PA infantil e adolescência.
+- [x] Cinco casos novos com diagnóstico, exames, conduta e justificativas.
+- [x] Oito questões novas comentadas por alternativa.
+- [ ] Dose e formulação brasileira de ferro/vitamina D, PNI e nutrição especial necessitam revisão farmacêutica/normativa.
+- [ ] Marcos do desenvolvimento precisam confronto individual com edição oficial atual da Caderneta em tabela definitiva.
+- [ ] Curadoria de pelo menos dez **imagens reais/figuras licenciadas** em fluxo Admin; propostas da seção 17 não equivalem a arquivos aprovados.
+- [ ] Revisão médico-editorial, teste de autossuficiência completo, checagem de repetições e implantação HTML responsivo no PWA.
+**Situação:** RASCUNHO APROFUNDADO, não publicado nem certificado apenas por extensão.
