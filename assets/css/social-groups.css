@@ -82,10 +82,15 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  .sg-card-body {padding:18px;}
  .sg-title {display:block;}.sg-title .social-badge {margin-top:8px;}
  .sg-details>summary {min-height:24px;border:0;border-radius:10px;}
- .sg-card:has(.sg-details[open]) {display:grid;grid-template-columns:220px minmax(0,1fr);}
+ .sg-card:has(.sg-details[open]) {display:grid;grid-template-columns:160px minmax(0,1fr);}
  .sg-card:has(.sg-details[open]) .sg-cover {border-radius:17px 0 0 17px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;border-bottom:0;border-right:1px solid var(--color-border);}
  .sg-card:has(.sg-details[open]) .sg-type {align-self:auto;max-width:none;}
  .sg-interior {padding-top:4px;}.sg-objective {background:color-mix(in srgb,var(--sf-teal) 8%,var(--color-surface));border:0;border-radius:14px;}
+ .sg-tools {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+ #community-groups .sg-tools .button {justify-content:flex-start;min-height:60px!important;padding:12px!important;background:var(--color-surface-elevated)!important;border-color:transparent!important;white-space:normal;text-align:left;}
+ .sg-tools .social-icon {width:22px;height:22px;flex-shrink:0;color:var(--sf-violet);}
+ .sg-content {background:var(--color-surface-elevated);border:1px solid var(--color-border);border-radius:14px;padding:16px;}
+ @media(max-width:650px) {.sg-tools {grid-template-columns:1fr;}#community-groups .sg-tools .button {min-height:46px!important;}}
  @media(max-width:1150px) {#social-groups {grid-template-columns:repeat(2,minmax(0,1fr));}}
  @media(max-width:650px) {#social-groups {grid-template-columns:1fr;}.sg-card:has(.sg-details[open]) {display:block;}.sg-card:has(.sg-details[open]) .sg-cover {border-radius:17px 17px 0 0;flex-direction:row;justify-content:flex-start;align-items:center;min-height:90px;border-right:0;}.sg-type {max-width:none;}#community-groups>.social-card-head h2 {font-size:22px!important;}}
 

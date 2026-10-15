@@ -60,11 +60,11 @@ body[data-ui="v2"][data-ui-context="study"][data-page="amigos"].social-v3.friend
  #social-room #social-message-text {font-size:14px!important;line-height:20px!important;border-radius:10px;}
  #social-room .social-answer {border-radius:11px;padding:13px;font-size:14px;line-height:1.55;}
  #social-room .social-answer[aria-pressed="true"] {border-color:var(--color-primary);background:var(--color-primary-subtle);}
- #social-dialog {width:min(680px,calc(100% - 24px));padding:22px;}
- #social-dialog .sl-fields {min-width:0;padding:14px;margin:0;border:1px solid var(--color-border);border-radius:12px;}
+ #social-dialog {width:min(680px,calc(100% - 24px));padding:22px;max-height:calc(100dvh - 32px);overflow:auto;border-radius:20px;}
+ #social-dialog .sl-fields {min-width:0;padding:16px;margin:0;border:1px solid var(--color-border);border-radius:14px;background:var(--color-surface-elevated);}
  #social-dialog .sl-fields legend {padding:0 6px;font-size:13px;color:var(--color-primary-text);font-weight:500;}
  #social-dialog .sl-fields label {font-size:12px;gap:6px;}
- #social-dialog .sl-fields :is(input:not([type="checkbox"]),select,textarea) {font-size:14px;border-radius:9px;}
+ #social-dialog .sl-fields :is(input:not([type="checkbox"]),select,textarea) {min-height:44px;font-size:16px;border-radius:9px;background:var(--color-surface);}
  #social-dialog .sl-fields:has(.social-form-grid):not(:has(label:not([hidden]))) {display:none;}
  #social-dialog #friends-room-create {justify-self:end;min-height:40px;}
  #social-dialog #friends-room-status {font-size:12px;line-height:1.5;}
