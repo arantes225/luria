@@ -454,6 +454,8 @@ Transferência entre UBS, UPA e hospital terciário é período de risco de omis
 
 **Cumulatividade:** 10 mL/kg + 20 mL/kg + 10 mL/kg = **40 mL/kg**, não 30 nem 60. A primeira hora de ressuscitação não é uma série automática de bolos, mas uma estratégia de avaliação intermitente. A capacidade da unidade de ventilar e iniciar vasoativos altera o que é seguro, conforme SSC 2026.
 
+**Exemplo adicional diretamente aplicável ao exercício:** para uma criança de **15 kg**, um bolo de **10 mL/kg** corresponde a **150 mL**, e um de **20 mL/kg** corresponde a **300 mL**. Administrar volume maior sem reavaliação não é exigência da SSC 2026; o exemplo apenas demonstra a aritmética segura.
+
 ### 30.2 Unidade de vasoativo
 
 A taxa de uma infusão depende de dose desejada (por exemplo, microgramas/kg/min), peso e concentração final da solução (microgramas/mL). A conversão dimensional deve ser validada por protocolo, dupla checagem e bomba. Uma confusão entre **mg** e **mcg** gera erro de mil vezes. **Não disponibilizar tabela de preparo universal** sem saber concentração/ampola aprovada no serviço, pois apresentações e diluições variam. O ensino fundamental é reconhecer componentes e exigir identificação completa da dose.
