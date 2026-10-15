@@ -767,3 +767,114 @@ Nenhuma imagem será embutida no manuscrito, e nenhuma fonte privada do Drive se
 | Estado de publicação | **RASCUNHO NÃO PUBLICADO** |
 
 **Regra de segurança:** percentis, cutoffs, testes e diretrizes são auxiliares da avaliação; não transformá-los em prescrição individual sem revisão de idade gestacional, situação fetal, conduta de alto risco e disponibilidade hospitalar. Até validação especializada, a apostila permanece peça editorial, não protocolo assistencial.
+
+## 13. Momento do nascimento: risco de prematuridade versus permanência intrauterina
+
+A idade para parto planejado em gemelares depende sobretudo de **corionicidade, amnionicidade e complicações**. O parto antecipado expõe recém-nascidos à morbidade da prematuridade; a postergação pode elevar risco de morte fetal, sobretudo em circulação compartilhada. Uma semana de referência não substitui a avaliação de crescimento, Dopplers, líquido, doença materna, trabalho de parto e estrutura neonatal.
+
+### 13.1. Referência NICE NG137 para gestações NÃO complicadas
+
+| Gestação | Parto planejado segundo NICE | Por que não prolongar indiscriminadamente? |
+|---|---|---|
+| **DCDA** | **37 semanas** | o risco de morte fetal aumenta além de 37+6 |
+| **MCDA** | **36 semanas** | além de 36+6 há aumento de risco de morte fetal |
+| **MCMA** | **32+0 a 33+6 semanas** | risco de cordão e morte fetal; necessidade neonatal frequente |
+| **Trigemelar tricoriônica triamniótica ou dicoriônica triamniótica** | **35 semanas** | prematuridade comum; não prolongar além de 35+6 sem análise individual |
+| **Tripletos com corionicidade/amnionicidade de maior risco ou qualquer múltipla complicada** | **individualizar** | não transpor janelas de gestações não complicadas |
+
+**Origem:** NICE NG137, seção de momento do parto. Os limites são do Reino Unido e devem ser confrontados com protocolos obstétricos brasileiros atualizados. Não aplicar DCDA 37 semanas à paciente com pré-eclâmpsia grave nem MCDA 36 semanas à TTTS com deterioração fetal.
+
+### 13.2. Exceção pós-laser por TTTS
+
+A **SMFM Consult #72 (2024)** recomenda, para **MCDA com os dois fetos vivos e TTTS resolvida após laser**, sem nova indicação de antecipação, parto entre **34 e 36 semanas**. Isso difere de MCDA nunca complicada. Na circunstância muito específica de morte de um feto após laser, com sobrevivente estável, a SMFM menciona parto a termo em **39 semanas**, salvo nova indicação; essa orientação **não pode ser extrapolada** a qualquer morte monocoriônica espontânea. A via de parto **não é determinada pelo laser isoladamente**.
+
+### 13.3. Razões para antecipar
+
+Doença hipertensiva grave, eclâmpsia/HELLP, sangramento materno, infecção intrauterina importante, rotura de membranas em contexto de indicação, sofrimento fetal, Doppler críticamente anormal, TTTS/TAPS progressiva, restrição seletiva com descompensação ou complicações de cordão em MCMA podem exigir antecipação. Para cada cenário, ponderar risco fetal versus prematuridade, recursos de UTI neonatal, corticosteroide antenatal em janela apropriada e disponibilidade de intervenção fetal.
+
+**Conduta se recusar parto planejado no período recomendado pela NICE:** aconselhamento e seguimento semanal obstétrico especializado com ultrassonografia, líquido e Doppler umbilical de cada feto, além de crescimento segundo intervalo indicado; documentar decisão compartilhada.
+
+## 14. Via de parto: apresentação do primeiro feto e capacidade da equipe
+
+### 14.1. DCDA ou MCDA com primeiro cefálico
+
+NICE NG137 considera **parto vaginal planejado e cesariana planejada opções seguras** na gestação gemelar não complicada **após 32 semanas**, desde que primeiro feto esteja **cefálico**, não haja contraindicação obstétrica e **não haja grande discordância de tamanhos**. A escolha requer obstetra experiente em gemelares, possibilidade de cesariana de emergência, anestesia, sangue quando indicado e equipe neonatal preparada para dois bebês. A gestante deve conhecer possibilidades e riscos de ambas as vias.
+
+A NICE registra que mais de um terço das pessoas que planejam parto vaginal de gêmeos acaba em cesariana, e pequena parcela pode ter parto vaginal do primeiro seguido de cesariana do segundo. Isso deve integrar consentimento, sem transformar a estatística em argumento para negar tentativa vaginal às pacientes elegíveis.
+
+### 14.2. Primeiro gemelar não cefálico
+
+Se primeiro gemelar não está cefálico no parto planejado, a NICE recomenda **oferecer cesariana**; também a recomenda no trabalho de parto estabelecido de 26 a 32 semanas com primeiro não cefálico. Antes de 26 semanas, a decisão é individualizada por riscos maternos, viabilidade e contexto. Não usar a apresentação do segundo como substituto do critério do primeiro.
+
+### 14.3. Segundo gemelar pode mudar de apresentação
+
+Depois de nascer o primeiro, o espaço uterino muda e o segundo pode estar em apresentação cefálica ou pélvica. Reavaliar apresentação e frequência cardíaca do segundo feto. Manobras especializadas, inclusive extração pélvica do segundo em determinados cenários, dependem de equipe treinada e critérios obstétricos; não devem ser descritas como rotina executável sem supervisão. Deterioração fetal, apresentação desfavorável ou falha de progressão podem exigir cesariana do segundo.
+
+### 14.4. MCMA e trigêmeos
+
+Para **MCMA**, NICE indica cesariana no parto planejado entre 32+0 e 33+6 ou quando complicações imponham antecipação, com exceções restritas de expulsivo muito avançado sob decisão obstétrica experiente. Para trigêmeos, via e tempo são decididos de acordo com número, apresentações, corionicidade, complicações e centro especializado; cesariana frequentemente integra planejamento.
+
+### 14.5. Segurança intraparto e pós-parto
+
+Confirmar **dois traçados fetais distintos**, evitando registrar batimentos da mãe ou do mesmo gêmeo em ambos os canais. Ultrassom pode ajudar a identificar apresentação e monitorização. Prever acesso venoso, equipe de anestesia, unidades neonatais identificadas e disponibilidade de intervenção rápida. Preparar profilaxia/manejo de **hemorragia pós-parto por atonia** associada a sobredistensão uterina; revisar anemia e reserva de sangue conforme risco. A aula LURIA de hemorragia pós-parto contém escalonamento específico de uterotônicos, evitando duplicações.
+
+O prontuário neonatal deve distinguir rótulos antenatais A/B dos **primeiro/segundo a nascer** para prevenir troca de amostras e interpretações dos Dopplers pré-natais.
+
+## 15. Cuidados maternos, comunicação e seguimento puerperal
+
+### 15.1. Educação sem alarmismo
+
+Explicar à gestante que corionicidade determina calendário porque anastomoses placentárias modificam risco, mas não significa que todos os gêmeos terão complicações. Registrar qual bolsa contém cada feto e como a equipe os identifica. Fornecer sinais que exigem reavaliação: sangramento importante, perda líquida, contrações regulares, redução marcante de movimentos, hipertensão grave com cefaleia/escotomas/epigastralgia, dispneia ou piora súbita.
+
+### 15.2. Intervenções fetais e incerteza
+
+Laser fetoscópico para TTTS avançada, terapias para TRAP e manejo especializado de TAPS ou sFGR dependem de recursos, janela gestacional e risco. Explicar possibilidades de melhora, rotura prematura de membranas, prematuridade, nova intervenção e comprometimento do outro feto. **Não prometer sobrevivência de ambos nem tratar percentual populacional como garantia individual.** Envolver equipe de terapia fetal, obstetrícia, neonatologia e apoio psicológico.
+
+### 15.3. Morbidade materna e puerpério
+
+Risco de hipertensão, anemia e hemorragia exige seguimento materno mesmo quando fetos têm bons exames. No puerpério, planejar amamentação de múltiplos, manejo de prematuridade/UTI neonatal, sono, suporte de cuidadores, triagem de depressão e exaustão, e retorno obstétrico. Após óbito de um gêmeo, reconhecer luto e necessidades de cuidado psicológico sem minimizar pela sobrevivência do outro.
+
+### 15.4. Malformação de um feto e decisões éticas
+
+Em MCDA, intervenção sobre um feto pode repercutir no outro pelas conexões circulatórias. Decisões sobre anomalia grave, cuidado paliativo, interrupção seletiva ou redução fetal requerem aconselhamento multidisciplinar e avaliação de legislação brasileira, não simples importação de recomendações estrangeiras. Informar opções existentes no contexto assistencial, sem instruir procedimentos invasivos fora de ambiente especializado.
+
+## 16. Seis fluxogramas de decisão
+
+### Fluxo A — Primeira ultrassonografia gemelar
+
+Confirmar número/vitalidade → datar gestação → estabelecer **corionicidade/amnionicidade** com sinais lambda/T e membrana → rotular fetos pela posição → encaminhar corionicidade incerta → programar US apropriado → registrar maternidade e sinais de alerta.
+
+### Fluxo B — MCDA com líquido discordante
+
+Medir bolsão vertical máximo em **cada bolsa** → avaliar bexigas, crescimento, AU/ducto venoso e coração → verificar oligo/polidrâmnio → classificar TTTS por **Quintero** → estágio II–IV entre 16–26 semanas: referência rápida para **laser fetoscópico** → estágio I sem sintomas pode requerer monitorização **ao menos semanal** → pós-laser vigiar recorrência/TAPS/sFGR.
+
+### Fluxo C — MCDA com líquidos semelhantes, ACM alterada
+
+Confirmar técnica da **PSV-ACM** e MoM por idade → doador >1,5 e receptor <1,0 MoM, ou diferença >0,5 MoM, sustenta suspeita de **TAPS** segundo SMFM → estratificar gravidade → referenciar centro fetal → individualizar intervenção e parto. Líquidos normais não excluem TAPS.
+
+### Fluxo D — Peso discordante
+
+Obter PFE, percentis, AU e líquido de cada feto → diferença (%) = (maior − menor)/maior × 100 → discordância ≥20% **ou** PFE <p10, aumentar vigilância segundo NICE → na MCDA classificar sFGR tipo I/II/III por AU do menor → integrar Dopplers e idade gestacional antes de decidir parto.
+
+### Fluxo E — Escolha de nascimento
+
+Confirmar **não complicação** versus necessidade de antecipação → usar NICE DCDA 37, MCDA 36, MCMA 32–33+6, tripletos selecionados 35 semanas → avaliar primeiro gemelar, discordância e equipe → discutir parto vaginal se DCDA/MCDA ≥32 semanas sem contraindicação e primeiro cefálico → oferecer cesariana se primeiro não cefálico ou em MCMA conforme NICE → preparar neonatologia e hemorragia.
+
+### Fluxo F — Sinal de alarme
+
+Hemorragia, pré-eclâmpsia grave, perda líquida, trabalho de parto prematuro, hidropisia, suspeita TTTS/TAPS avançada, Doppler crítico, redução de movimentos ou óbito fetal → **avaliação obstétrica urgente**, sem esperar consulta marcada → monitorização dos fetos e suporte materno → decisão por medicina fetal/obstetrícia/neonatologia.
+
+## 17. Diferenciais e pérolas
+
+| Achado | Interpretação a priorizar | Erro a evitar |
+|---|---|---|
+| Lambda no primeiro trimestre | DCDA | chamar placenta fusionada de monocoriônica |
+| Inserção em T | MCDA | assumir que duas bolsas implicam duas placentas |
+| Ausência confirmada de septo | MCMA | tratar como MCDA sem avaliar cordões |
+| Doador oligo + receptor poli | TTTS | confundir toda discordância ponderal com TTTS |
+| PSV-ACM discordante sem sequência de líquidos | TAPS | excluir complicação por líquido normal |
+| Doppler AU de menor com fluxo intermitentemente ausente/reverso | sFGR MC tipo III | usar único Doppler normal como garantia |
+| Feto acárdico perfundido pelo outro | TRAP | confundir com óbito isolado |
+| Primeiro cefálico em DCDA/MCDA não complicada | via vaginal pode ser opção | cesariana obrigatória para toda gemelar |
+| MCMA | parto antecipado com cesariana planejada | aguardar 37–40 semanas |
+| TTTS resolvida após laser | SMFM 34–36 semanas se ambos vivos | usar calendário de MCDA nunca complicada |
