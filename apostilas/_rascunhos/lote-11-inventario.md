@@ -1,5 +1,5 @@
 # LURIA — Lote 11: inventário clínico e trilha de produção
-**Atualizado em 15/10/2026 · branch editorial isolada \`editorial/lote-11-demensias-20261015\` · NÃO FUSIONAR/DEPLOYAR**
+**Atualizado em 15/10/2026 · branch editorial isolada `editorial/lote-11-demensias-20261015` · NÃO FUSIONAR/DEPLOYAR**
 
 ## Regras de integridade
 1. Cada apostila requer **etapa zero do Google Drive**, leitura real, matriz comparativa e avaliação do acervo LURIA, antes de elaboração. Preferência por Estratégia MED se a autoria for documentalmente demonstrada; não atribuir origem por suposição.
@@ -9,13 +9,13 @@
 5. Se novo tópico já estiver dentro de uma apostila existente, acrescentar a lacuna explicitamente no documento mestre em vez de duplicar por número.
 
 ## Grade original verificada no código da LURIA
-Fonte interna: \`assets/js/apostilas-lotes-225.js\`. O calendário de 260 temas distribuía o lote 11 nas posições **226–237**. O código não equivale a estado de publicação.
+Fonte interna: `assets/js/apostilas-lotes-225.js`. O calendário de 260 temas distribuía o lote 11 nas posições **226–237**. O código não equivale a estado de publicação.
 
 | Nº | Área | Tema próprio LURIA | Estado deste lote |
 |---|---|---|---|
-| **226** | Clínica Médica | Demências e comprometimento cognitivo | **MANUSCRITO PRODUZIDO/AMPLIADO** \`_rascunhos/lote-11-aula-226-demencias.md\`; 81.207 caracteres totais (contagem bruta), 4+4 casos, 8+6 questões; ainda **NÃO CERTIFICADO**, sem imagens aprovadas e auditoria visual |
+| **226** | Clínica Médica | Demências e comprometimento cognitivo | **MANUSCRITO PRODUZIDO/AMPLIADO** `_rascunhos/lote-11-aula-226-demencias.md`; 81.207 caracteres totais (contagem bruta), 4+4 casos, 8+6 questões; ainda **NÃO CERTIFICADO**, sem imagens aprovadas e auditoria visual |
 | **227** | Clínica Médica | Doença de Parkinson e distúrbios do movimento | Pendente etapa zero e elaboração |
-| **228** | Clínica Médica | Neuropatias periféricas e doenças neuromusculares | Etapa zero parcial: Drive \`06 - MIOPATIAS.pdf\` efetivamente consultado, mas **não equivale ao escopo de neuropatias**, necessidade de complemento antes de edição |
+| **228** | Clínica Médica | Neuropatias periféricas e doenças neuromusculares | Etapa zero parcial: Drive `06 - MIOPATIAS.pdf` efetivamente consultado, mas **não equivale ao escopo de neuropatias**, necessidade de complemento antes de edição |
 | **229** | Clínica Médica | Obesidade e síndrome metabólica no adulto | Pendente etapa zero completa; Drive possui resumos relacionados |
 | **230** | Clínica Médica | Osteoporose, sarcopenia e fragilidade | Pendente etapa zero completa; conferir sobreposição com geriatria |
 | **231** | Clínica Médica | Hemoglobinopatias e anemias hereditárias | Pendente; conferir sobreposição com anemia do cronograma e diretriz oficial de doença falciforme 2024 |
@@ -41,12 +41,12 @@ O código antigo de 260 temas não contém toda a ampliação planejada para a c
 **Importante:** os complementos acima são hipóteses de classificação documental vindas do planejamento anterior; não representam arquivos publicados nem permitem afirmar que o lote inteiro tem 18 apostilas independentes. Recuperar o índice 401 temas antes de fechar a distribuição final.
 
 ## Auditoria da apostila 226
-- **Drive benchmark:** \`Síndromes cognitivas.pdf\` (lido em 15/10/2026). Assinatura pessoal Maysa Mismetti visível; não foi possível provar publicação do Estratégia MED. O material resume delirium, Alzheimer, Lewy, demência frontotemporal, Wernicke e HPN. Comparação usada apenas para **escopo**, nunca para transcrever conteúdo protegido.
-- **LURIA baseline:** \`apostilas/cancer-de-mama/index.html\` aberto para estilo editorial e composição; nenhum material LURIA específico de demência encontrado no acervo consultado.
+- **Drive benchmark:** `Síndromes cognitivas.pdf` (lido em 15/10/2026). Assinatura pessoal Maysa Mismetti visível; não foi possível provar publicação do Estratégia MED. O material resume delirium, Alzheimer, Lewy, demência frontotemporal, Wernicke e HPN. Comparação usada apenas para **escopo**, nunca para transcrever conteúdo protegido.
+- **LURIA baseline:** `apostilas/cancer-de-mama/index.html` aberto para estilo editorial e composição; nenhum material LURIA específico de demência encontrado no acervo consultado.
 - **Fontes oficiais verificadas:** catálogo PCDT Brasil (inclui Portaria Conjunta SAES/SCTIE/MS n. 27 de 27/11/2025), https://www.gov.br/conitec/pt-br/midias/protocolos/pcdt-da-doenca-de-alzheimer ; NICE NG97; Alzheimer's Association DETeCD-ADRD, diretrizes de DCL.
 - **Entregue em branch:** sumário clínico e texto aprofundado, algoritmos, critérios sindrômicos, farmacologia de Alzheimer, interpretação de RM, casos originais (8), questões originais (14) com alternativas comentadas, propostas de figuras (sem arquivo ou licença).
 - **Checagens faltantes:** auditoria manual de 60.000 caracteres **úteis** (a contagem bruta de 81.207 não aprova automaticamente); verificar por seção todas as afirmações/doses contra fontes; benchmarking adicional de apostila realmente equivalente e mais profunda; imagens com licença real/Admin; testes automatizados do HTML futuro e responsividade desktop/PWA; teste independente das questões; revisão médica final.
 - **Decisão:** manter **EM REVISÃO / NÃO PUBLICAR**; avançar conteúdo dos próximos números sem mexer no ambiente produtivo.
 
 ## Procedimento de continuidade por chats paralelos e Codex
-Sempre leia este inventário + arquivos de rascunho, depois confira \`main\` e eventuais branches de outros lotes. Produzir alterações **somente** em branch editorial própria, sem alterar \`main\`, CSS global ou itens em publicação. Evitar dois agentes editando o mesmo arquivo simultaneamente. Após cada manuscrito, registrar o nome da referência Drive **sem URL privada em GitHub público**, os capítulos realmente lidos, o código e os critérios pendentes. Após fechar o lote e sua revisão científica, Codex deverá reconciliar os complementos dos 401 temas, integrar HTML/JSON por caminhos apropriados, rodar os auditores e solicitar liberação editorial antes de merge/deploy.
+Sempre leia este inventário + arquivos de rascunho, depois confira `main` e eventuais branches de outros lotes. Produzir alterações **somente** em branch editorial própria, sem alterar `main`, CSS global ou itens em publicação. Evitar dois agentes editando o mesmo arquivo simultaneamente. Após cada manuscrito, registrar o nome da referência Drive **sem URL privada em GitHub público**, os capítulos realmente lidos, o código e os critérios pendentes. Após fechar o lote e sua revisão científica, Codex deverá reconciliar os complementos dos 401 temas, integrar HTML/JSON por caminhos apropriados, rodar os auditores e solicitar liberação editorial antes de merge/deploy.
