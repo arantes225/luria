@@ -1,9 +1,9 @@
 {
   "title": "LURIA Lote 02 — manifesto editorial de consolidação (pré-publicação)",
-  "version": 2,
+  "version": 3,
   "created": "2026-10-14",
   "source_branch": "editorial/apostilas-lote-02-asma-20261014",
-  "status": "PRE-PUBLICAÇÃO; textos e JSON sincronizados; NÃO CERTIFICADO",
+  "status": "PRE-PUBLICAÇÃO: material ampliado, não certificado",
   "reading_model": "chapters numbered; cases and questions at end; bibliographic references at end; editorial QA separate",
   "cautions": [
     "A metragem bruta ou plain aproximada não certifica 60k caracteres didáticos úteis.",
@@ -73,7 +73,7 @@
       "question_count": 15,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
       "json_visible_estimate": 75595,
       "json_table_count": 8
     },
@@ -132,7 +132,7 @@
       "question_count": 19,
       "source_numbered_chapter_count": 28,
       "preflight_warnings": [],
-      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
       "json_visible_estimate": 79369,
       "json_table_count": 6
     },
@@ -195,7 +195,7 @@
       "question_count": 20,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
+      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
       "json_visible_estimate": 78573,
       "json_table_count": 9
     },
@@ -207,10 +207,10 @@
       "source_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_PNEUMONIA_ADQUIRIDA_NA_COMUNIDADE_EDICAO_CONTINUA.md",
       "source_sha": "e5c4c61c4aa51049191c1a05f32cb724b82f3713",
-      "consolidated_sha": "9e35733eb135c3ae7d859735a5b8d1a028a82209",
+      "consolidated_sha": "a6983b4b82253037c398b383bc4b1d71eeb75a4d",
       "source_raw_characters": 76752,
-      "consolidated_raw_characters": 68748,
-      "consolidated_approximate_plain_characters": 65321,
+      "consolidated_raw_characters": 83616,
+      "consolidated_approximate_plain_characters": 79676,
       "chapter_count": 10,
       "chapters": [
         {
@@ -254,13 +254,13 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 12,
-      "question_count": 18,
+      "case_count": 14,
+      "question_count": 21,
       "source_numbered_chapter_count": 27,
       "preflight_warnings": [],
-      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
-      "json_visible_estimate": 65321,
-      "json_table_count": 8
+      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
+      "json_visible_estimate": 79676,
+      "json_table_count": 10
     },
     {
       "id": "TUBERCULOSE",
@@ -270,10 +270,10 @@
       "source_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_RASCUNHO.md",
       "consolidated_path": "apostilas/lotes/LOTE_02_TUBERCULOSE_EDICAO_CONTINUA.md",
       "source_sha": "4e9c996271b2194b98712fbd7b26d48e0aede1b1",
-      "consolidated_sha": "25d11f77c2ac6479852db96837cbc2024b4fe166",
+      "consolidated_sha": "eab6d581bb9aa2fc794ec23813213718956d798a",
       "source_raw_characters": 97368,
-      "consolidated_raw_characters": 84634,
-      "consolidated_approximate_plain_characters": 80401,
+      "consolidated_raw_characters": 101570,
+      "consolidated_approximate_plain_characters": 96822,
       "chapter_count": 9,
       "chapters": [
         {
@@ -313,21 +313,20 @@
           "title": "Questões autorais comentadas"
         }
       ],
-      "case_count": 10,
-      "question_count": 18,
+      "case_count": 12,
+      "question_count": 21,
       "source_numbered_chapter_count": 26,
       "preflight_warnings": [],
-      "next_gate": "revisão médica e farmacêutica, deduplicação semântica, aprovação imagens e preflight Node em checkout real; sem publicação",
-      "json_visible_estimate": 80401,
-      "json_table_count": 11
+      "next_gate": "revisão clínica integral, revisão de redação e fontes, imagens autorizadas, execução de dry-run Node, validação desktop/PWA, aprovação; não publicar",
+      "json_visible_estimate": 96822,
+      "json_table_count": 13
     }
   ],
   "last_expansion": "2026-10-14",
   "input_json": "apostilas/lotes/LOTE_02_INPUT_PREPUBLICACAO.json",
-  "input_json_sha": "f9d82618904197c0cc83281dfc3205c8b2b4b46a",
+  "input_json_sha": "427747607ea2fb323349333122416d24edea388e",
   "last_update_scope": [
-    "Asma ocupacional/diagnóstico diferencial laríngeo/gestação",
-    "DPOC indicação de ODP/funcionalidade",
-    "Diabetes metas geriátricas/critério CAD/EHH/transição insulinoterapia"
+    "PAC: critérios de estabilidade, mudança IV→VO, stewardship, duração, seguimento, imagem de controle, casos 13–14 e questões 19–21",
+    "TB: hepatotoxicidade e monitorização RHZE, função renal/visão, TDO, prevenção, contatos, casos 11–12 e questões 19–21"
   ]
 }
