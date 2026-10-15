@@ -148,7 +148,7 @@ def test_selector_prefers_human_reviewed_fold_and_omits_personal_id(selector, tm
     assert "patient_id" not in json.dumps(data)
     assert "AFIB" not in data["target_codes_without_candidates"]
     assert "STACH" in data["target_codes_without_candidates"]
-    assert "LBBB" in data["unavailable_target_codes"]
+    assert "CLBBB" in data["unavailable_target_codes"]
 
 
 def test_selector_rejects_non_metadata_and_bad_paths(selector, tmp_path):
