@@ -467,3 +467,226 @@ PACIENTE COM FEBRE / EXANTEMA / ARTRALGIA EM ÁREA DE TRANSMISSÃO
 \`\`\`
 
 **Ponto fundamental:** é inadequado desenhar fluxo em que “teste positivo de dengue” aparece antes de “iniciar hidratação em pessoa com alarme”, pois isso faria o leitor perder tempo de assistência. Da mesma forma, o curso típico de chikungunya pode sugerir diagnóstico, mas não exclui emergência cardíaca/neurológica quando sinais aparecem.
+
+
+## 24. Casos clínicos originais LURIA — com raciocínio e conduta
+
+### Caso 1 — A febre cedeu, mas o choque está começando
+
+**Apresentação:** homem de 28 anos com febre alta, mialgia intensa e dor retro-orbitária por quatro dias. No quinto dia já não tem febre, porém apresenta dor abdominal contínua, dois episódios de lipotímia e vômitos persistentes. PA de 106/92 mmHg, FC 118/min, extremidades frias, enchimento capilar lento e diurese reduzida. O hemograma registra hematócrito progressivamente maior que em avaliações prévias e plaquetas em queda.
+
+**Hipótese:** dengue na fase crítica, com sinais de alarme e suspeita de hipoperfusão; a pressão de pulso de 14 mmHg sugere **choque compensado**, elevando preocupação para **grupo D** se sinais de choque forem confirmados. **Diagnósticos diferenciais:** sepse, sangramento e outras infecções sistêmicas.
+
+**Raciocínio passo a passo:** (1) defervescência é momento de risco; (2) dor abdominal, vômitos, lipotímia e hemoconcentração são sinais de alarme; (3) extremidades frias, taquicardia e pressão de pulso extremamente estreita apontam comprometimento circulatório, mesmo sem PAS <90; (4) não basta rotular como grupo C se já existem sinais de choque; (5) reposição e monitorização devem começar imediatamente, em paralelo à investigação.
+
+**Exames:** hemograma seriado, hematócrito, eletrólitos, função renal, albumina e transaminases, exames adicionais dirigidos; avaliação hemodinâmica contínua, diurese e pesquisa de sangramento. Exames específicos para dengue podem ser coletados conforme janela, mas não atrasam tratamento.
+
+**Conduta:** atendimento emergencial, **reclassificação como dengue grave/grupo D por choque**, ressuscitação IV com protocolo atual do MS e reavaliações rápidas, encaminhamento para unidade com suporte intensivo conforme recursos. Em caso de não resposta, reavaliar sangramento, miocardite, carga de fluido e diagnósticos alternativos; ajustar terapias conforme resultado. **Por que importa:** ensina a não esperar hipotensão franca e a distinguir sinais de alarme de choque já instalado.
+
+### Caso 2 — Dengue em idosa cardiopata
+
+**Apresentação:** mulher de 79 anos com insuficiência cardíaca e DRC leve a moderada, febre, exantema, dor no corpo e redução de apetite por três dias. Está hemodinamicamente estável, sem dor abdominal, sem vômitos repetidos, sem sangramento mucoso e sem evidências de choque. Usa diurético, anti-hipertensivo e anticoagulante por fibrilação atrial. A cuidadora diz que a paciente tem dificuldade para ingerir líquidos.
+
+**Hipótese:** suspeita de dengue **grupo B**, pela condição especial e comorbidades, mesmo na ausência de sinais de alarme. **Raciocínio:** (1) idade >65, IC e DRC aumentam vulnerabilidade; (2) hidratação suficiente é importante, mas aporte excessivo pode causar congestão; (3) anticoagulação exige avaliação individual de sangramento versus tromboembolismo; (4) baixa tolerância oral pode mudar necessidade de observação e plano; (5) sem alarme não significa que o seguimento seja idêntico ao de adulto jovem do grupo A.
+
+**Exames:** hemograma obrigatório, função renal/eletrólitos e outros conforme quadro, avaliação de congestão pulmonar, peso, diurese, PA e exame do estado volêmico. **Conduta:** observação inicial e hidratação cuidadosamente individualizada, revisão de fármacos por equipe habilitada, cartão de acompanhamento e reavaliação clínica/laboratorial muito próxima ou internação quando tolerância/risco social/comorbidades inviabilizarem segurança ambulatorial. **Por que importa:** demonstra que os grupos não dependem apenas de alarme, e que tratamento “60 mL/kg” não deve ser aplicado automaticamente em IC.
+
+### Caso 3 — Dor articular persistente após arbovirose
+
+**Apresentação:** mulher de 46 anos teve febre abrupta e poliartralgia incapacitante após surto local, com confirmação de chikungunya na fase inicial. Após seis semanas mantém edema em punhos e pequenas articulações de mãos, rigidez matinal e dificuldade para trabalhar. Está afebril, sem sinais cardíacos ou neurológicos, e não tem doença renal conhecida.
+
+**Hipótese:** **fase pós-aguda de chikungunya (15–90 dias), com artrite/tenossinovite**. **Raciocínio:** (1) seis semanas não caracteriza fase crônica no guia revisado; (2) edema e rigidez apontam componente inflamatório, não mera artralgia inespecífica; (3) avaliação deve descartar diferenciais quando apresentação foge do padrão; (4) AINEs e corticoides têm indicações diferentes conforme componente e risco; (5) reabilitação evita rigidez e incapacidade persistente.
+
+**Exames:** exame articular detalhado, função renal, hemograma, glicemia e transaminases quando tratamento exigir, testes adicionais conforme diagnóstico diferencial. **Conduta:** abordagem anti-inflamatória dirigida segundo MS 2026, podendo considerar **prednisona em esquema específico para artrite/tenossinovite pós-aguda** por médico após avaliar contraindicações, com desmame e reavaliação conforme diretriz; apoio fisioterapêutico e seguimento de função. Não iniciar hidroxicloroquina em qualquer pessoa simplesmente pela persistência de seis semanas. **Por que importa:** mostra como a data e a presença real de artrite alteram o manejo.
+
+### Caso 4 — Rash leve na gestante, desfecho potencialmente importante
+
+**Apresentação:** gestante de 14 semanas apresenta exantema pruriginoso, conjuntivite bilateral não purulenta, artralgia e febre baixa após viagem para área de circulação de Zika e dengue. Sente-se bem, pressão normal, sem sangramento. A última ultrassonografia fetal foi normal.
+
+**Hipótese:** síndrome exantemática com **Zika provável**, sem excluir dengue, chikungunya, parvovírus ou outras infecções. **Raciocínio:** (1) quadro sugestivo não confirma etiologia; (2) ausência de febre alta e US normal não excluem Zika/risco fetal; (3) exposição gestacional merece avaliação laboratorial conforme janela e seguimento obstétrico; (4) o resultado pode ser interpretado com cuidado por reatividade cruzada; (5) o manejo deve proteger gestante e feto, sem prometer anomalia nem tranquilização definitiva após teste negativo tardio.
+
+**Exames:** investigação de arbovírus em janela pertinente conforme protocolo, avaliação obstétrica, ultrassonografias seriadas quando indicadas e exames para diferenciais congênitos se pertinentes. **Conduta:** orientação de prevenção vetorial/sexual, manejo sintomático seguro, acompanhamento pré-natal de risco conforme avaliação, aconselhamento sobre incerteza e vigilância do desenvolvimento fetal/infantil. **Por que importa:** reforça a diferença entre quadro materno leve e potencial de infecção congênita.
+
+### Caso 5 — Uma febre que não é apenas dengue
+
+**Apresentação:** trabalhador rural de 40 anos procura posto por febre alta, mialgia intensa nas panturrilhas, conjuntivas hiperemiadas, oligúria e icterícia após contato com enchente. Uma campanha local de arboviroses estava em andamento e um familiar supõe dengue.
+
+**Hipóteses:** **leptospirose grave** como diferencial prioritário, além de outras infecções e dengue conforme exposição. **Raciocínio:** (1) contato com água de enchente e urina de roedores muda probabilidade; (2) icterícia + lesão renal + mialgia importante são sinais de gravidade; (3) tratamento de leptospirose bacteriana pode ser tempo-dependente; (4) não se deve aguardar resultado de NS1 para reconhecer doença grave de outra etiologia. **Exames:** função renal/hepática, eletrólitos, hemograma, urina, investigação de leptospirose e outros agentes conforme epidemiologia, monitorização de perfusão. **Conduta:** avaliação hospitalar emergencial e início de tratamento etiológico oportuno segundo protocolo. **Por que importa:** evita ancoragem em diagnóstico sazonal.
+
+## 25. Questões autorais estilo ENAMED/residência — justificadas
+
+### Questão 1 — Fase crítica
+
+Adulto com suspeita de dengue no 5º dia fica afebril, mas apresenta dor abdominal contínua, vômitos persistentes e aumento progressivo do hematócrito, com perfusão preservada. A melhor conduta é:
+
+A. Alta imediata, pois a ausência de febre prova recuperação.
+B. Grupo A, hidratação oral domiciliar exclusiva.
+C. Grupo C por sinais de alarme, com reposição IV imediata e internação/monitorização.
+D. Esperar NS1 reagente antes de iniciar qualquer tratamento.
+E. Prescrever AINE para dor abdominal.
+
+**Gabarito C.** Há sinais de alarme na fase de risco, mesmo sem choque. **A** confunde defervescência com cura; **B** ignora alarme; **D** atrasa manejo; **E** aumenta risco hemorrágico/renal. **Minirrevisão:** a dengue pode piorar quando a febre cede.
+
+### Questão 2 — Sinais de choque
+
+Adulto com dengue apresenta PA 110/95 mmHg, FC 124/min, extremidades frias, pulso fino e tempo de enchimento capilar de 4 s. Qual afirmação está correta?
+
+A. Choque é impossível porque PAS >90 mmHg.
+B. A pressão de pulso de 15 mmHg e má perfusão sugerem choque, justificando grupo D.
+C. Deve-se aguardar sangramento espontâneo grave antes de tratar.
+D. Plaquetas normais confirmam boa circulação.
+E. O choque da dengue sempre é vasodilatado com extremidades quentes.
+
+**Gabarito B.** Choque compensado pode ter pressão sistólica conservada. **A/C** atrasam cuidados; **D** confunde hematologia com hemodinâmica; **E** descreve fenótipo não representativo. **Minirrevisão:** pressão de pulso e perfusão são centrais.
+
+### Questão 3 — Grupo B
+
+Gestante com suspeita de dengue, boa perfusão, sem sinais de alarme, deve ser considerada inicialmente:
+
+A. Grupo A obrigatoriamente porque não sangra.
+B. Grupo B por condição especial, com hemograma e reavaliação diferenciada, salvo surgimento de alarme ou choque.
+C. Grupo D por gestação isolada, mesmo estável.
+D. Não deve ser avaliada até confirmação molecular.
+E. Liberada sem retorno quando a febre diminuir.
+
+**Gabarito B.** Gestação exige acompanhamento diferenciado, mas não prova choque. **A** esquece condições especiais; **C** superestima gravidade automática; **D** ignora avaliação clínica; **E** perde fase crítica. **Minirrevisão:** risco especial sem alarme é distinto de dengue grave.
+
+### Questão 4 — Testes diagnósticos
+
+Paciente no quarto dia de sintomas sugestivos de dengue apresenta NS1 negativo. Qual interpretação é mais adequada?
+
+A. Dengue excluída com certeza.
+B. Existe janela entre terceiro e sexto dia em que nenhum teste jamais é positivo.
+C. O resultado negativo não exclui dengue; correlacionar com tempo, método e contexto, mantendo classificação/conduta clínica.
+D. Qualquer IgG positiva confirma infecção aguda por DENV específico.
+E. Testes laboratoriais são obrigatórios antes de hidratar paciente em choque.
+
+**Gabarito C.** Sensibilidade varia por janela e contexto, e tratamento clínico não espera teste. **A/B** fazem afirmações absolutas incorretas; **D** ignora reatividade cruzada/exposição prévia; **E** é perigosa em emergência. **Minirrevisão:** teste negativo não cancela red flags.
+
+### Questão 5 — Fases da chikungunya
+
+Paciente com artralgia persistente há 45 dias após confirmação de CHIKV encontra-se em qual fase segundo MS 2026?
+
+A. Aguda.
+B. Pós-aguda.
+C. Crônica, definida após 21 dias.
+D. Crônica, definida a partir de 30 dias.
+E. Reinfecção obrigatória.
+
+**Gabarito B.** Pós-aguda corresponde a 15–90 dias. **A** se encerra até dia 14; **C/D** usam definições ultrapassadas; **E** não decorre de persistência. **Minirrevisão:** crônica >90 dias.
+
+### Questão 6 — Tratamento agudo da chikungunya
+
+Pessoa com febre recente, artralgia intensa, suspeita de chikungunya e dengue ainda não excluída. Qual orientação é mais segura?
+
+A. AINEs e corticoide sistêmico em todos os casos no primeiro dia.
+B. Analgesia apropriada e avaliação de gravidade, evitando AINEs/corticoide de rotina na fase aguda.
+C. Hidroxicloroquina imediata e obrigatória.
+D. Antibiótico universal.
+E. Ignorar sinais cardíacos porque CHIKV só afeta articulações.
+
+**Gabarito B.** Analgesia e segurança são centrais; dengue pode coexistir. **A/C** generalizam drogas inadequadas para fase; **D** não tem indicação em infecção viral sem complicação específica; **E** ignora manifestação extra-articular. **Minirrevisão:** padrão clínico e fase importam.
+
+### Questão 7 — Zika e gestação
+
+Gestante com exantema leve e conjuntivite não purulenta em área de Zika tem ultrassonografia fetal normal na primeira avaliação. Qual conduta conceitual é correta?
+
+A. Descartar definitivamente repercussão fetal.
+B. Informar que todo feto obrigatoriamente desenvolverá microcefalia.
+C. Investigar exposição conforme janela e seguir protocolo obstétrico, comunicando incerteza sobre desfecho e necessidade de vigilância.
+D. Considerar que transmissão do Zika ocorre apenas por mosquito e nunca por via sexual.
+E. Suspender aleitamento de forma automática no futuro.
+
+**Gabarito C.** Resultado de imagem inicial não prediz com certeza ausência de alterações. **A** transmite falsa segurança; **B** produz prognóstico infundado; **D** ignora transmissão sexual; **E** extrapola sem indicação. **Minirrevisão:** SCZ é espectro, não apenas microcefalia.
+
+### Questão 8 — Interpretação do hematócrito
+
+Durante atendimento de dengue grave, paciente em choque apresenta queda súbita do hematócrito e sinais de hipoperfusão mantidos. Qual próxima hipótese deve ser considerada?
+
+A. Hemorragia significativa entre diferenciais da piora.
+B. Recuperação garantida porque hematócrito sempre deve cair.
+C. Uma infusão ilimitada de cristaloide sem reavaliação.
+D. Alta porque plaquetas subiram discretamente.
+E. Ausência de qualquer complicação possível.
+
+**Gabarito A.** Queda de hematócrito com choque persistente exige reavaliar sangramento, hemodiluição e outras causas. **B/E** ignoram fisiologia; **C** pode causar sobrecarga sem tratar hemorragia; **D** ignora instabilidade. **Minirrevisão:** interpretar Ht junto a perfusão, diurese e histórico de infusões.
+
+## 26. Quadro de alta utilidade — não confundir números e indicações
+
+| Conceito | Regra correta | Armadilha |
+|---|---|---|
+| Dengue fase crítica | Pode ocorrer na defervescência | “Sem febre = alta” |
+| Grupo A | Sem alarme e sem fatores especiais/comorbidades/risco social | “Todo caso com sintomas leves é A” |
+| Grupo B | Sem alarme, mas risco/condição especial ou sangramento cutâneo | “Só internar se plaquetas <20 mil” |
+| Grupo C | Pelo menos um **sinal de alarme** | “Esperar PCR antes de hidratar” |
+| Grupo D | **Choque, sangramento grave ou órgão grave** | “Só há choque se PAS <90” |
+| Ht crescente + perfusão pior | Sugere fuga capilar/hemoconcentração | “Hematócrito é sempre estático” |
+| Ht caindo + choque persistente | Investigar hemorragia/alternativas | “É sempre melhora” |
+| NS1 negativo | Não exclui dengue | “Dias 3 a 6 nenhum teste funciona” |
+| Chikungunya aguda | Até 14 dias | “Usar AINE e corticoide como rotina” |
+| Chikungunya pós-aguda | Dias 15–90 | “Toda dor persistente é crônica” |
+| Chikungunya crônica | Após 90 dias | “Prednisona obrigatória a todo paciente” |
+| Zika gestacional | SCZ pode ocorrer apesar de sintomas leves | “Só investigar quando há microcefalia” |
+| Vacina dengue | Estratégias por produto e PNI | “Licença e disponibilidade SUS são idênticas” |
+
+## 27. Revisão final em fluxos práticos
+
+**Na triagem:** síndrome febril aguda no Brasil → avaliar perfusão e riscos imediatamente → estabelecer suspeita e diferenciais → iniciar intervenção indicada sem aguardar confirmação virológica.
+
+**Na dengue:** perguntar dia da doença/defervescência → procurar sinais de alarme → identificar choque/sangramento grave/órgão grave → classificar A/B/C/D e escolher ambiente/hidratação → reavaliar sempre → reduzir fluidos quando inicia reabsorção → garantir critérios de alta.
+
+**Na chikungunya:** caracterizar febre/artralgia/edema e risco sistêmico → excluir dengue e outras causas → definir fase (≤14; 15–90; >90) → classificar dor inflamatória/não inflamatória/neuropática → escolher intervenção segura por fase e reabilitação → procurar manifestações graves.
+
+**Na Zika:** identificar síndrome e exposição → testar quando indicado conforme janela → avaliar gestação, transmissão sexual e risco de SCZ → monitorizar mãe e concepto/recém-nascido → reabilitação e seguimento da criança quando necessário.
+
+## 28. Fontes primárias e registro de uso
+
+1. **BRASIL. Ministério da Saúde.** *Dengue: diagnóstico e manejo clínico — adulto e criança*. **6. ed.** Brasília: MS, 2024. Publicação oficial, disponibilizada/atualizada no portal em 2026. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/d/dengue/publicacoes/dengue-diagnostico-e-manejo-clinico-adulto-e-crianca . Usada para fases, sinais de alarme, grupos A/B/C/D, exemplos de hidratação, cardiopatas, antitrombóticos e critérios de alta.
+2. **BRASIL. Ministério da Saúde.** *Chikungunya: manejo clínico*. **2. ed. revisada, julho de 2026**. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2025/chikungunya-manejo-clinico-2o-edicao-revisada.pdf . Usada para classificação temporal, manifestações extra-articulares, fisiopatologia/implicações e tratamento por fase.
+3. **BRASIL. Ministério da Saúde.** *Zika vírus — informações clínicas e prevenção*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/m/z/zika-virus . Usada para apresentação, proteção individual, prevenção sexual e cuidado gestacional.
+4. **BRASIL. Ministério da Saúde.** *Síndrome congênita associada à infecção pelo vírus Zika*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/scz . Usada para espectro congênito, diagnósticos diferenciais e seguimento.
+5. **BRASIL. Ministério da Saúde.** *Vacina contra dengue do Butantan — faixa etária e recomendação SUS*, FAQ publicada em abril/2026. https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/para-qual-faixa-etaria-esta .
+6. **BRASIL. Ministério da Saúde.** *Quem pode receber a vacina contra a dengue do Instituto Butantan?*, FAQ abril/2026. https://www.gov.br/saude/pt-br/vacinacao/esavi/faq/faq/vacina-contra-dengue-butantan/quem-pode-receber-a-vacina .
+7. **BRASIL. Ministério da Saúde.** *Nota Técnica nº 11/2026 — estratégia de vacinação de trabalhadores da APS com a vacina Butantan-DV*. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/notas-tecnicas/2026/nota-tecnica-no-11-2026-cgici-dpni-svsa-ms.pdf/view .
+8. **BRASIL. Ministério da Saúde.** *Chikungunya — informações para profissionais e população*. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/c/chikungunya/chikungunya .
+
+## 29. Plano visual por relevância clínica (ainda sem licença verificada)
+
+> A busca e aprovação comercial das imagens **não foram concluídas**. Itens abaixo são necessidades editoriais e respectivas fontes institucionais a pesquisar — **não links inventados para imagens específicas**. Não publicar imagens dos PDFs oficiais sem avaliar licença; o próprio manual dengue descreve licença CC BY-NC-SA, que exige cuidado particular em produto comercial.
+
+| Imagem a procurar/criar | Finalidade didática | Fonte prioritária para pesquisa | Situação |
+|---|---|---|---|
+| 1. Exantema real da dengue | Reconhecer variabilidade de rash | MS / publicação acadêmica de licença comercial | PENDENTE |
+| 2. Exantema real de chikungunya | Comparar padrões cutâneos | MS/serviço dermatológico com autorização | PENDENTE |
+| 3. Exantema e conjuntivite de Zika | Correlacionar fenótipo típico | MS/OPAS e instituição clínica | PENDENTE |
+| 4. Teste do laço com petéquias | Entender semiologia | Foto médica autorizada | PENDENTE |
+| 5. Hematócrito e plaquetas ao longo das fases | Interpretar fase crítica | **Gráfico vetorial original LURIA** baseado em dados oficiais | PENDENTE |
+| 6. Choque compensado: pressão de pulso | Ensinar perfusão | **Infográfico original LURIA** | PENDENTE |
+| 7. Ultrassom com derrame pleural | Reconhecer extravasamento | Acervo acadêmico licenciado | PENDENTE |
+| 8. ECG/eco em miocardite arboviral | Identificar complicações | Artigo clínico com licença compatível | PENDENTE |
+| 9. Artrite/tenossinovite em chikungunya | Diferenciar dor inflamatória | Banco hospitalar licenciado | PENDENTE |
+| 10. Neuroimagem compatível com SCZ | Relacionar alterações cerebrais e clínica | Instituição acadêmica com autorização | PENDENTE |
+| 11. Esquema vetor, fases e classificação | Organizar decisões | **Desenho original LURIA**, sem copiar diagrama de manual | PENDENTE |
+| 12. Fotografia de lesão ocular de SCZ | Ensino oftalmológico | Fonte especializada licenciada | PENDENTE |
+
+Para toda imagem realmente selecionada: registrar URL direta verificada, autoria, licença incluindo permissão de uso comercial, legenda com identificação da condição e limitação, resolução, peso WebP, seção e decisão de aprovação no Admin. Imagens de exames devem ser reais e diagnostically verificadas; não rotular arte gerada como TC, ECG ou exame autêntico.
+
+## 30. Matriz de autossuficiência e revisão científica
+
+| Competência | Seções de ensino | Avaliação de verificação | Status |
+|---|---|---|---|
+| Virologia e mecanismo de dano | 1–2, 10, 16 | Casos 1, 3, 4 e diferenciais | Desenvolvido; revisão externa pendente |
+| Dengue e defervescência | 2–3 | Caso 1, questão 1 | Desenvolvido |
+| Testes por janela e limitação | 4, 12, 16, 20 | Questão 4 | Desenvolvido |
+| A/B/C/D e gravidade | 5–6 | Casos 1 e 2, questões 1–3 | Desenvolvido; checar valores finais e protocolos locais |
+| Hidratação IV e reavaliação | 5–6, 8–9 | Caso 1 e questão 8 | Necessita validação médico-assistencial final |
+| Plaquetas, sangramento e anticoagulantes | 7 | Caso 2 e quadro 26 | Revisão farmacológica específica pendente |
+| Chikungunya por fase e componente doloroso | 10–15 | Caso 3, questões 5–6 | Desenvolvido; revisar drogas especiais e comorbidades |
+| Zika e síndrome congênita | 16–17 | Caso 4, questão 7 | Desenvolvido; detalhar protocolos laboratoriais por amostra |
+| Diferenciais e vigilância | 18–22 | Caso 5 e quadro 19 | Desenvolvido; revisão regional pendente |
+| Vacinação 2026 | 21 | Perguntas orais futuras | Política atual verificada no portal; revisar antes de publicar |
+| Imagens | 29 | Licença e inspeção | **NÃO CONCLUÍDO** |
+| Teste cego com questões independentes | 25, 30 | Aplicação editorial | **NÃO CONCLUÍDO** |
+| HTML responsivo e PWA | Rascunho Markdown | Verificação em device | **NÃO CONCLUÍDO** |
+
+**Parecer editorial preliminar:** cobertura original e extensa, casos comentados e questões com alternativas justificadas. No entanto, atingir 60K caracteres **não é certificação**. Antes de publicação, conferir integralmente protocolos de dengue e chikungunya nas regiões de tabelas/algoritmos, adequar manejo em população pediátrica, validar intervenções de choque e medicações com revisão por médico, concluir curadoria de imagens e passar por teste de autossuficiência e visualização desktop/PWA. **Sem merge e sem deploy.**
