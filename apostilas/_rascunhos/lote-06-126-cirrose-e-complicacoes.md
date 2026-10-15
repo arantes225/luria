@@ -124,6 +124,40 @@ A ênfase Baveno VIII está em **prevenir a primeira descompensação**, não ap
 
 **Distinção de prova:** critérios não invasivos para excluir CSPH não são iguais a critérios de triagem de **varizes de alto risco**. O antigo corte Baveno VI de rigidez <20 kPa com plaquetas ≥150 × 10⁹/L para evitar EDA em grupos adequados não equivale ao novo par 15 kPa/150 usado na estratificação de CSPH. As regras respondem a perguntas clínicas diferentes e precisam de validação para população e tecnologia utilizadas.
 
+### 6.4 Baveno VIII: o que conta como primeira e nova descompensação?
+
+A classificação **compensada** exige ausência de evento clínico prévio de descompensação. Baveno VIII (2026) reconhece como **primeira descompensação** a ocorrência de **ascite clinicamente evidente ou hidrotórax hepático**, **sangramento relacionado à hipertensão portal** e/ou **encefalopatia hepática manifesta** (West Haven ≥II). **Ascite mínima identificada apenas por imagem**, encefalopatia mínima/covert e sangramento oculto por enteropatia hipertensiva portal não recebem automaticamente o mesmo rótulo de evento clínico de primeira descompensação, embora possam sinalizar pior prognóstico. A presença de icterícia isolada, especialmente fora de colestase, exige investigação de lesão aguda sobreposta e não deve ser equiparada mecanicamente à tríade clássica.
+
+Depois do primeiro evento, o risco muda. Baveno VIII distingue **nova descompensação (further decompensation)**: por exemplo, no paciente cuja primeira manifestação foi ascite, o surgimento de PBE, HRS-AKI, necessidade de três ou mais paracenteses volumosas em um ano ou outro evento clínico (hemorragia, encefalopatia manifesta ou icterícia em contexto definido) indica agravamento. Para quem começou com hemorragia varicosa, ressangramento ou nova ascite/encefalopatia marca outro degrau de risco. Essa linguagem é útil porque um paciente com "Child B estável" e PBE de início recente não tem o mesmo prognóstico de outro Child B com apenas ascite controlada.
+
+**Terapia etiológica** deve continuar mesmo após a primeira descompensação quando disponível: abstinência sustentada de álcool, supressão de HBV e cura de HCV podem diminuir evolução para novos eventos. Na avaliação longitudinal, não basta tratar cada ascite e esquecer a causa. A presença de CHC, hepatite alcoólica sobreposta e outras lesões hepáticas agudas modifica a trajetória e exige revisão de manejo.
+
+### 6.5 Recompensação: novo conceito formal em Baveno VIII (2026)
+
+**Recompensação** não é "cirrose curada" nem mero desaparecimento temporário do edema. Baveno VIII exige, em conjunto: **(1)** controle, supressão ou remoção da etiologia principal; **(2)** desaparecimento da ascite **sem diuréticos**, sem encefalopatia clínica **sem tratamento específico** (lactulose, rifaximina ou LOLA, salvo outra indicação) e ausência de ressangramento varicoso; **(3)** melhoria de função hepática até parâmetros compatíveis com **Child–Pugh A5/A6**; e **(4)** manutenção desses critérios por **mais de seis meses consecutivos**. A definição de 2026 encurta o período formal em relação ao critério histórico de 12 meses de Baveno VII. Em pessoa que nunca descompensou, usa-se "compensada", não "recompensada".
+
+| Evolução observada | Pode chamar de recompensação? | Explicação |
+| --- | --- | --- |
+| Ascite desapareceu com espironolactona e restrição de sal | **Não**, apenas controle de ascite | Uso continuado de diurético não cumpre critério |
+| Encefalopatia não recorre enquanto usa rifaximina/lactulose | **Não**, isoladamente | Ausência sob tratamento não prova resolução sem ele |
+| HCV curado; sem ascite/diuréticos, sem EH/medicação, sem ressangramento, Child A5/A6 por >6 meses | **Possivelmente**, após revisão de todos critérios | Atende ao núcleo conceitual, confirmar duração e demais eventos |
+| Paracentese cessou após TIPS, mas MELD e albumina ainda ruins | **Não**, só pela resposta ao TIPS | Controle mecânico da ascite não equivale à recuperação global |
+| Varizes ainda visíveis depois de melhora clínica | **Não impedem por si só** | Colaterais podem persistir mesmo com melhora da hipertensão portal |
+
+**Consequência prática:** a eventual retirada de diuréticos ou medicação para EH exige **supervisão da equipe de hepatologia, recuperação etiológica e funcional e monitorização**; não suspender medicamentos automaticamente apenas para "testar" se a pessoa já está recompensada. Mesmo recompensada, a pessoa mantém risco residual de **carcinoma hepatocelular** e eventos hepáticos; Baveno VIII recomenda **acompanhamento hepatológico semestral e vigilância de CHC continuada**. A cura de hepatite C não autoriza encerrar US de vigilância em quem tinha cirrose.
+
+### 6.6 Carvedilol na doença descompensada: indicação, janela hemodinâmica e reavaliação
+
+Uma simplificação histórica dizia que "todo paciente com ascite deve suspender betabloqueador"; outra dizia que "toda variz exige carvedilol, qualquer que seja a pressão". Ambas podem causar dano. O consenso **Baveno VIII (2026)** recomenda **carvedilol ou betabloqueador não seletivo convencional** em pacientes com **ascite e varizes** que tolerem o tratamento, priorizando carvedilol em muitos candidatos para prevenir primeiro sangramento e reduzir complicações relacionadas à ascite. Se houver contraindicação ou intolerância, prevenção endoscópica do primeiro sangramento deve ser considerada em pacientes apropriados; a indicação não significa "ligar todas as varizes" indiscriminadamente.
+
+**PAS persistentemente <90 mmHg, PAM <65 mmHg ou HRS-AKI** são gatilhos objetivos para **reduzir ou suspender temporariamente** carvedilol/NSBB, com avaliação da causa de hipoperfusão. Após recuperação pressórica e resolução de HRS-AKI, a equipe deve **reintroduzir e titular novamente** quando benefício esperado permanecer. A pressão arterial mede apenas parte da perfusão; oligúria, tontura, fadiga intensa, infecção, sangramento e uso de diuréticos são informações adicionais.
+
+Na **prevenção secundária** após primeiro sangramento por **varizes esofágicas**, a combinação de NSBB e ligadura endoscópica seriada continua essencial quando possível; Baveno VIII dá preferência ao carvedilol entre NSBB em muitos grupos, com especificações por fenótipo e contraindicações. **Não iniciar betabloqueador em choque hemorrágico antes de estabilização**. Após recuperação, o plano de prevenção é diferente do manejo agudo com droga vasoativa (octreotida/terlipressina) e antibioticoterapia.
+
+**Não usar antibiótico preventivo crônico para toda pessoa apenas porque ocorreu a primeira descompensação.** Baveno VIII recomenda contra antibioticoprofilaxia primária de longo prazo **para evitar novas descompensações de forma inespecífica**. Isso **não elimina indicações específicas** como profilaxia após PBE documentada ou antibiótico no sangramento varicoso; cada uma possui objetivo, população e riscos próprios. O uso prolongado sem critério seleciona resistência e pode produzir infecção por *C. difficile*.
+
+**Nota de fonte:** Baveno VIII Faculty, *Journal of Hepatology*, publicado online em 19/08/2026, DOI 10.1016/j.jhep.2026.07.030. Regras de 2026 substituem as antigas quando expressamente revisadas; Baveno VII e consensos locais mais antigos continuam como referências históricas para o que não foi atualizado.
+
 ## 7. Classificações prognósticas: Child–Pugh, MELD e suas limitações
 
 ### 7.1 Child–Pugh: cinco componentes
@@ -330,6 +364,19 @@ Cirrose por álcool, MASH, hepatites virais e outras etiologias aumenta risco de
 Nódulo suspeito exige **TC/RM multifásica** apropriada com critérios como LI-RADS em população validada; **AFP normal não exclui CHC**, AFP alta isolada não prova. Não biopsiar indiscriminadamente toda lesão sem avaliação de imagens; algumas têm critérios radiológicos suficientes no contexto correto. Tratamentos variam entre ressecção, ablação, terapias locorregionais, terapia sistêmica e transplante, segundo reserva hepática e extensão.
 
 **Critérios de Milão clássicos** incluem nódulo único ≤5 cm ou até três nódulos ≤3 cm, sem invasão vascular macroscópica/metástases; políticas nacionais de transplante têm regras próprias. Uma diretriz AASLD não equivale automaticamente a regra de alocação brasileira. Registrar resultados de US, data de reavaliação e investigação dos positivos é tão importante quanto pedir o exame.
+
+
+### 16.1 EASL 2025: vigilância é exame repetido, não diagnóstico por AFP
+
+A diretriz **EASL publicada em fevereiro de 2025** recomenda **ultrassonografia hepática semestral** para vigilância de CHC em pessoas elegíveis com cirrose. A associação com **alfa-fetoproteína (AFP)** melhora a sensibilidade, mas diminui a especificidade, sendo alternativa razoável segundo contexto; isso é diferente de afirmar que AFP isoladamente diagnostica câncer. Em pessoas com exame US tecnicamente inadequado repetidamente, considerar método alternativo de imagem, como RM, em serviço especializado e dentro de protocolo apropriado.
+
+A inclusão depende de possibilidade concreta de avaliação e tratamento. Em cirrose **Child C não candidata a transplante**, com mortalidade concorrente alta e nenhuma perspectiva de terapia para CHC, vigilância rotineira pode não produzir benefício líquido; decisão requer metas de cuidado, avaliação de elegibilidade e julgamento clínico. Em paciente listado para transplante, o mesmo Child C pode beneficiar-se de vigilância. **Nunca usar o estágio isolado para dispensar exame sem avaliar possibilidade de transplante.**
+
+Se US encontra nódulo novo **≥1 cm** em pessoa com cirrose, solicitar avaliação por **TC ou RM com protocolo hepático multifásico**, conforme protocolo; pequenas lesões abaixo do limiar frequentemente exigem acompanhamento por imagem em intervalo mais curto e confirmação de sua evolução. A interpretação por padrão de hiperrealce arterial, washout, cápsula e crescimento, com sistemas como LI-RADS em populações elegíveis, pode sustentar diagnóstico de CHC sem biópsia em certos casos; **não aplicar LI-RADS indiscriminadamente a toda lesão hepática em pessoa sem cirrose ou sem fator de risco validado**. AFP normal não exclui CHC e AFP elevada pode ocorrer em outras situações.
+
+**Conexão com recompensação (Baveno VIII):** o risco de CHC diminui em alguns pacientes após controle etiológico e melhora hepática, mas **não desaparece**; a vigilância deve continuar mesmo na cirrose recompensada. Isso evita um erro frequente após cura de hepatite C: comunicar "o fígado voltou ao normal" e interromper toda avaliação oncológica.
+
+Fonte: *EASL Clinical Practice Guidelines on the Management of Hepatocellular Carcinoma*. *J Hepatol*. 2025;82:315–374, DOI 10.1016/j.jhep.2024.08.028.
 
 ## 17. Nutrição, prevenção e vacinação no cuidado longitudinal
 
@@ -742,6 +789,8 @@ D) Colocar dreno abdominal permanente sem avaliar infecção e perdas.
 10. **American Association for the Study of Liver Diseases — Portal Hypertension Bleeding in Cirrhosis.** https://www.aasld.org/practice-guidelines/portal-hypertension-bleeding-cirrhosis .
 11. **AASLD 2026, apresentação de diretrizes de ascite, PBE e HRS para fellows.** https://www.aasld.org/liver-fellow-network/core-series/guidelines/lfn-guidelines-diagnosis-evaluation-and-management . Recurso de atualização; conferir a diretriz primária citada.
 12. **Ministério da Saúde / Sistema Nacional de Transplantes.** A implementação brasileira de inscrição, elegibilidade e alocação segue normas próprias vigentes; **não atribuir regras norte-americanas de MELD 3.0 como política automática do Brasil** sem verificação no SNT.
+
+13. **EASL Clinical Practice Guidelines — Management of Hepatocellular Carcinoma**, *Journal of Hepatology*. 2025;82:315–374. https://www.journal-of-hepatology.eu/article/S0168-8278%2824%2902508-X/fulltext . US semestral, trade-off da AFP e seleção de pacientes para vigilância.
 
 **Nota científica:** valores de laboratório e medicamentos apresentados como exemplos têm função didática e podem exigir confirmação de dose e indicação conforme gravidade, resistência, função renal, acesso local e bula vigente. Citações internacionais não equivalem a protocolos obrigatórios para todas as redes brasileiras.
 
