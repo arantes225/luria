@@ -192,3 +192,180 @@ Velocidade sistólica e índice de pulsatilidade cerebral **não são parâmetro
 
 NICE NG137 orienta ampliar para pelo menos semanal o monitoramento quando discordância de PFE atinge **20% ou mais** e/ou algum feto tem peso estimado abaixo do percentil 10, com Doppler umbilical de cada feto. Esses gatilhos indicam **mais investigação**, não parto imediato obrigatório. Conduta depende de idade gestacional, Dopplers, líquido, cordões, crescimento seriado, corionicidade e condição materna.
 
+
+## 7. Síndrome de transfusão feto-fetal (TTTS / STFF)
+
+### 7.1. Mecanismo: duas circulações em uma placenta
+
+A síndrome de transfusão feto-fetal ocorre em gestações monocoriônicas nas quais a arquitetura de anastomoses placentárias resulta em transfusão líquida cronicamente desequilibrada entre fetos. O “doador” tende a apresentar redução do volume circulante, diurese e líquido amniótico; o “receptor” tende a hiper volemia, poliúria, polidrâmnio e, em doença avançada, sobrecarga cardíaca. O rótulo descreve um fenômeno circulatório funcional, não diz necessariamente qual feto pesa menos em todos os momentos.
+
+Uma placenta compartilhada pode ter anastomoses fisiológicas sem doença. O mecanismo patológico envolve a direção e o equilíbrio do fluxo, além da compensação hemodinâmica. Como se trata de circulação conectada, intercorrências agudas de um feto podem repercutir rapidamente no outro. A doença clássica não é esperada na DCDA por não haver rede vascular placentária intergemelar comparável.
+
+### 7.2. O diagnóstico ultrassonográfico: discrepância de líquido é central
+
+A apresentação clássica envolve sequência **oligodrâmnio no doador e polidrâmnio no receptor** (oligo/polyhydramnios sequence, TOPS). Medir **bolsão vertical máximo** em cada compartimento separado pela membrana, não o índice de líquido amniótico global somando ambos os fetos. Um bolsão do doador de **2 cm ou menos** com polidrâmnio no receptor é pista importante, com limiar de receptor dependente de idade gestacional/diretriz: referências ISUOG/Quintero tradicionalmente usam DVP do receptor acima de **8 cm antes de 20 semanas** e acima de **10 cm após 20 semanas**, enquanto regras NICE de alerta empregam limites operacionais que podem diferir. A classificação e indicação de intervenção devem adotar critérios consistentes do centro de terapia fetal.
+
+**Conceito de prova:** ter uma bolsa maior e outra menor não basta se ambas ainda estão dentro de faixas habituais. Também pode existir diferença de líquidos por crescimento restrito, anomalia urinária, ruptura de membrana ou infecção; o contexto de placenta monocoriônica e avaliação anatômica definem a hipótese.
+
+### 7.3. Bexiga fetal e perfusão
+
+No doador, redução de urina pode tornar a bexiga não visível na janela apropriada do exame; o feto pode estar “colado” à parede uterina devido ao oligodrâmnio (stuck twin). O receptor pode ter bexiga distendida, polidrâmnio e cardiomegalia/disfunção de válvulas e miocárdio. A bexiga não vista em um único instante requer avaliação ultrassonográfica adequada antes de classificá-la como persistentemente ausente.
+
+Dopplers umbilical e venoso ajudam a revelar comprometimento hemodinâmico; alterações de enchimento e função cardíaca podem mudar estágio e urgência. O diagnóstico de STFF é uma síndrome de distribuição de líquido e perfusão, não pode ser feito apenas por diferença de pesos.
+
+### 7.4. Quintero: estágios da TTTS
+
+| Estágio | Achado principal |
+|---|---|
+| **I** | Sequência oligo/polidrâmnio, mas **bexiga do doador visível** |
+| **II** | Bexiga do doador **não visível**, sem critérios de estágio III–V |
+| **III** | **Doppler criticamente anormal** em um ou ambos os fetos (por exemplo, fluxo diastólico ausente/reverso em AU, onda a reversa no ducto venoso ou pulsação venosa umbilical conforme critérios) |
+| **IV** | **Hidropisia fetal** em pelo menos um dos fetos |
+| **V** | Óbito de um ou ambos os fetos |
+
+A classificação é hierárquica: um feto com alteração Doppler típica do estágio III não volta a ser “estágio I” porque a bexiga do doador apareceu. O Quintero facilita comunicação, mas não descreve todos os aspectos da função cardíaca e prognóstico. Cada ultrassonografia deve registrar líquido, bexiga, Dopplers e sinais de insuficiência cardíaca para permitir comparação.
+
+### 7.5. Encaminhamento e tratamento
+
+A **SMFM Consult Series #72 (2024)** recomenda cirurgia fetoscópica com **fotocoagulação a laser das anastomoses vasculares placentárias** como tratamento-padrão para TTTS estágio II a IV diagnosticada **entre 16 e 26 semanas**; deve-se encaminhar a centro de intervenção fetal sem atraso. A técnica busca separar funcionalmente as circulações e corrigir mecanismo, não apenas retirar líquido. A sobrevida e riscos dependem de idade gestacional, função cardíaca, extensão placentária, anatomia e experiência do centro.
+
+Para **estágio I assintomático**, a SMFM recomenda conduta expectante com vigilância **ao menos semanal** em situações selecionadas; laser pode ser considerado em estágio I sintomático ou com elementos adicionais de risco. Em apresentações muito precoces ou tardias, a decisão é individual, considerando viabilidade, sintomas maternos, risco de prematuridade e possibilidades técnicas. Não tratar todos os estágios I com amniodrenagem seriada ou todos os estágios II com simples espera.
+
+**Amniodrenagem (amnioredução):** pode aliviar distensão/polidrâmnio e sintomas, mas não corrige as anastomoses causais. Pode ser estratégia selecionada quando laser indisponível ou fora de faixa elegível, porém não é intercambiável com terapia causal em TTTS típica estágio II–IV de idade elegível. Outros procedimentos, como septostomia, não são padrão de rotina e têm riscos importantes.
+
+### 7.6. Após laser: vigilância não acabou
+
+Pode ocorrer recorrência de TTTS por anastomoses residuais, TAPS pós-laser, crescimento restrito, rotura prematura de membranas e parto prematuro. A SMFM sugere acompanhamento **semanal por seis semanas** depois do laser e depois quinzenal quando estável, com modificações se há complicações; ISUOG descreve seguimento intensivo inicial com avaliação frequente de líquido, biometria, Dopplers de AU/ACM/ducto venoso e coração. Registrar sinais de possível anemia e hipertrofia cardíaca; não parar vigilância ao normalizar líquido.
+
+O parto após TTTS tratada é individualizado. A SMFM sugere para MCDA com dois fetos vivos e doença resolvida, sem outra razão para antecipar, nascimento de aproximadamente **34–36 semanas**, enquanto a gestação MCDA sem intercorrências é frequentemente planejada em torno de 36 semanas na NICE. **Não aplicar o timing de TTTS pós-laser a toda MCDA** nem assumir cesariana obrigatória apenas porque foi feito laser.
+
+### 7.7. Diagnóstico diferencial da sequência de líquido
+
+- **sFGR:** menor feto pode ter líquido reduzido por insuficiência placentária; avaliar PFE, Dopplers e se há polidrâmnio verdadeiro no maior.
+- **Anomalia urinária fetal:** agenesia/obstrução pode causar oligodrâmnio e alterações de bexiga sem TTTS clássica.
+- **Rotura de membranas:** perda de líquido de uma bolsa pode simular oligodrâmnio do doador; considerar história de perda vaginal e exame obstétrico.
+- **TAPS:** pode produzir anemia/policitemia importantes **sem** discordância marcada de líquido.
+- **Polidrâmnio por diabetes/anomalia isolada:** relacionar à placentação e aos achados individuais.
+
+Uma mesma gestação MCDA pode desenvolver combinações de TTTS, TAPS e sFGR; o rótulo clínico deve refletir mecanismos demonstrados, não forçar exclusividade artificial.
+
+## 8. Sequência anemia–policitemia gemelar (TAPS)
+
+### 8.1. Por que é diferente de TTTS?
+
+Na TAPS há transfusão crônica de sangue através de **pequenas anastomoses placentárias**, levando a anemia significativa do doador e policitemia do receptor, frequentemente **sem sequência clássica oligo/polidrâmnio**. Pode surgir espontaneamente ou após laser incompleto para TTTS. Quando o aluno memoriza que “toda síndrome de transfusão precisa de líquido diferente”, deixa de investigar TAPS.
+
+A fisiopatologia relaciona-se a movimento de hemácias e diferenças hematológicas com repercussão hemodinâmica, mas sem necessariamente gerar grande desequilíbrio de produção urinária. O doador pode ter alto débito cardíaco por anemia e o receptor risco de hiperviscosidade e complicações circulatórias.
+
+### 8.2. Rastreamento pela velocidade sistólica máxima da ACM
+
+O Doppler de **pico de velocidade sistólica da artéria cerebral média (PSV-ACM)** é instrumento de rastreamento não invasivo. Anemia reduz viscosidade e aumenta fluxo sanguíneo, podendo elevar PSV-ACM; policitemia pode diminuir velocidade. O resultado precisa ser expresso em **múltiplos da mediana (MoM)** para idade gestacional, com técnica correta de ângulo e trecho proximal da ACM.
+
+Segundo **SMFM #72 (2024)**, suspeita antenatal de TAPS pode ser sustentada por:
+- **PSV-ACM do doador acima de 1,5 MoM** e **do receptor abaixo de 1,0 MoM**, **ou**
+- **diferença intergemelar de PSV-ACM acima de 0,5 MoM**.
+
+Há outros esquemas de classificação e cutoffs em guias/estudos, inclusive critérios alternativos para receptor abaixo de 0,8 MoM; **documentar qual critério foi adotado**. Se valores forem limítrofes, revisar técnica, idade gestacional e contexto clínico antes de atribuir diagnóstico definitivo.
+
+### 8.3. TAPS não é diagnosticada por hemoglobina materna
+
+Hemograma da gestante não demonstra anemia fetal diferencial. A avaliação demanda Doppler fetal e eventualmente testes especializados/avaliação neonatal. Interpretação de hemoglobina de recém-nascidos e contagem de reticulócitos pode integrar diagnóstico pós-natal em centros especializados, mas não substitui rastreamento pré-natal.
+
+### 8.4. Condutas especializadas
+
+Manejo depende de estágio, idade gestacional, gravidade, condição neurológica/hematológica fetal e presença de outras complicações. Opções em centros incluem vigilância intensiva, tratamento das anastomoses por laser quando apropriado, transfusão fetal intrauterina em situações selecionadas e interrupção planejada da gestação quando o balanço risco fetal/prematuridade o justificar. **Não há intervenção única que sirva a todos os estágios.**
+
+SMFM recomenda discussão com centro fetal especializado quando TAPS alcança **estágio II ou superior antes de 32 semanas** ou existe associação com TTTS/outros riscos. Após laser de TTTS, manter Doppler de ACM em ambos; ausência de polidrâmnio não é tranquilizadora contra TAPS.
+
+## 9. Restrição de crescimento fetal seletiva (sFGR / RCF seletiva)
+
+### 9.1. Definição e raciocínio
+
+Restrição seletiva ocorre quando **um dos fetos** apresenta crescimento insuficiente em relação ao esperado, considerando percentil, discordância e cenário clínico. Em MCDA, partilha desigual do território placentário pode comprometer um gemelar, enquanto anastomoses influenciam perfusão e risco de morte súbita. Em DCDA, disfunção placentária pode afetar um feto individualmente, de maneira semelhante à insuficiência placentária em gravidez única, embora a gestação ainda seja múltipla.
+
+É necessário distinguir **discordância de peso** (dado descritivo) de **sFGR diagnosticada** (síndrome clínica). Dois fetos dentro de percentis adequados podem ter peso discordante; um feto pequeno isolado não define automaticamente TTTS. Usar critérios adotados por diretriz/centro, documentando percentil, discordância, Doppler e corionicidade.
+
+### 9.2. Critérios e desacordos entre classificações
+
+Em diferentes consensos, sFGR pode ser definida por PFE de um gemelar abaixo do percentil 3 ou por combinação de PFE/CA abaixo de percentil 10, discordância ponderal ≥25% e alterações Doppler, especialmente em MCDA. O critério exato varia por diretriz; não usar uma única expressão “PFE abaixo de p10 = sFGR” sem considerar demais elementos. A NICE recomenda intensificar vigilância já com **discordância ≥20%** ou PFE abaixo de p10, que é **limiar de investigação** e não necessariamente critério definitivo de síndrome.
+
+### 9.3. Tipos de sFGR na monocorionicidade segundo fluxo diastólico da artéria umbilical do feto menor
+
+| Tipo | Doppler de artéria umbilical do menor | Consequência clínica geral |
+|---|---|---|
+| **I** | fluxo diastólico **positivo** | tendência a evolução mais estável, monitorização serial |
+| **II** | fluxo diastólico **persistentemente ausente ou reverso** | maior risco de hipoxemia e deterioração fetal |
+| **III** | padrão **intermitentemente** ausente/reverso (iAREDF) | risco de descompensação imprevisível associado à circulação compartilhada |
+
+Essa classificação é especialmente útil na **MCDA**, não deve ser aplicada mecanicamente a fetos DCDA como se houvesse a mesma hemodinâmica intergemelar. Em tipo III, Doppler normal em um momento isolado pode não capturar alternância de fluxo; registro de séries/trajetórias e avaliação especializada são importantes.
+
+### 9.4. Monitoramento por gravidade
+
+Revisar crescimento seriado, líquido, doppler umbilical, ACM/ducto venoso quando necessário e sinais de TTTS/TAPS. Pioras de Doppler, desaceleração acentuada da curva, hidropisia, alterações de vitalidade ou complicações maternas modificam conduta. sFGR tipo II/III e alterações graves exigem encaminhamento a medicina fetal e discussão de risco de morte de um feto e repercussão no outro; terapias fetais e decisões sobre parto são individualizadas.
+
+Há uma tensão permanente: antecipar parto pode proteger feto comprometido, mas expõe ambos à prematuridade; aguardar pode permitir maturação, porém aumentar risco de hipóxia, morte ou lesão neurológica. A decisão não decorre de um único percentil ou exame.
+
+### 9.5. Um exemplo numérico e sua interpretação
+
+Em 28 semanas de MCDA, feto A estimado em 1.300 g, feto B em 900 g. Discordância = (1300 − 900)/1300 × 100 = **30,8%**. Se feto B está abaixo do percentil 10 e apresenta fluxo diastólico persistentemente ausente na AU, pensar em quadro grave de crescimento seletivo, compatível com tipo II após confirmação técnica, não simplesmente “diferença normal entre gêmeos”.
+
+A equipe precisa identificar B longitudinalmente, excluir TTTS, avaliar ducto venoso/vitalidade, discutir riscos e revisar intervalo de vigilância. Não esperar quatro semanas porque a gestação ainda está antes de 32 semanas.
+
+## 10. Sequência de perfusão arterial reversa (TRAP)
+
+### 10.1. O mecanismo incomum
+
+TRAP (twin reversed arterial perfusion) ocorre em gestações monocoriônicas em que um feto com desenvolvimento cardíaco ausente ou gravemente anômalo — **feto acárdico** — recebe perfusão retrógrada por anastomoses placentárias de outro feto estruturalmente mais desenvolvido, o **feto bomba**. O fenômeno desvia parte do débito circulatório do feto bomba, podendo levar a sobrecarga cardíaca, polidrâmnio e risco de insuficiência cardíaca/morte.
+
+Não confundir TRAP com gêmeos unidos ou TTTS: a assinatura é a **perfusão reversa de uma massa fetal acárdica** dependente do feto bomba.
+
+### 10.2. Ultrassonografia
+
+A avaliação identifica formação fetal malformada, muitas vezes sem coração funcional, e Doppler com fluxo arterial reverso de direção anômala em vasos umbilicais relacionados ao acárdico. A anatomia pode ser muito alterada; a presença de dois fetos aparentemente não viáveis não determina TRAP sem demonstrar relação vascular. Fazer diferencial de gestação anembrionária, feto morto e malformações graves individuais, com orientação de medicina fetal.
+
+### 10.3. Monitoramento e tratamento
+
+A prioridade é avaliar feto bomba: função cardíaca, volume amniótico, crescimento e risco hemodinâmico. Procedimentos fetais para interromper circulação do feto acárdico — técnicas de ablação do fluxo com radiofrequência ou oclusão apropriada em centros especializados — podem ser indicados conforme idade gestacional e relação de tamanhos/risco. O objetivo é proteger feto bomba, mas também há riscos de prematuridade e intervenção. Conduta expectante pode ser considerada em situações selecionadas de baixo risco, com monitorização cuidadosa.
+
+## 11. Morte intrauterina de um gemelar
+
+### 11.1. Por que a corionicidade muda o risco?
+
+Na DCDA, cada feto possui sistema vascular placentário independente; a morte de um deles pode criar risco obstétrico de prematuridade, infecção, coagulopatia materna em cenários selecionados e sofrimento emocional, mas não produz necessariamente exsanguinação aguda do sobrevivente através de anastomoses. Na **MCDA**, a circulação placentária compartilhada pode permitir mudança hemodinâmica súbita, hipotensão/exsanguinação do sobrevivente para o compartimento do falecido e dano neurológico ou morte concomitante.
+
+O prognóstico do sobrevivente não pode ser inferido apenas de frequência cardíaca normal logo após o evento; avaliar perfusão, anemia, dano cerebral tardio e evolução.
+
+### 11.2. Abordagem após identificar óbito
+
+Confirmar diagnóstico com ultrassom e documentar corionicidade/amnionicidade, idade gestacional, estado do sobrevivente, líquido, Doppler e crescimento. Avaliar pressão e saúde materna; investigar causa possível de óbito conforme contexto. Em MCDA, encaminhar urgentemente à medicina fetal, considerar avaliação seriada de anemia por PSV-ACM, neuroimagem fetal em prazo apropriado e acompanhamento neurológico/neonatal. A ISUOG orienta considerar imagem cerebral do sobrevivente aproximadamente **4–6 semanas** depois de determinados eventos relacionados a TTTS/tratamento e acompanhamento neurológico de longo prazo.
+
+**Cautela:** parto imediato após morte de um feto **não reverte** lesão neurológica que já tenha ocorrido no sobrevivente e pode produzir prematuridade grave. A decisão exige avaliar sinais de comprometimento atual, idade gestacional, corionicidade e riscos maternos, preferencialmente em centro especializado.
+
+### 11.3. Comunicação clínica e acompanhamento humano
+
+A notícia é altamente traumática e deve ser transmitida de forma clara e compassiva, evitando pressupor que “há um bebê bem, então tudo está resolvido”. Explicar incertezas sobre prognóstico, plano de vigilância e apoio psicológico/social. Documentar nomenclatura dos fetos, conclusões e decisões compartilhadas. Planejar avaliação neonatal e seguimento do sobrevivente conforme risco de neurodesenvolvimento.
+
+## 12. Prematuridade e colo uterino na gestação gemelar
+
+### 12.1. Rastreamento do comprimento cervical
+
+Comprimento cervical avaliado preferencialmente por **ultrassonografia transvaginal padronizada** pode ajudar a estratificar risco de parto prematuro. O exame deve medir colo sem compressão excessiva e com técnica adequada, e não é sinônimo de diagnóstico de trabalho de parto prematuro. A gestação gemelar tem probabilidade de parto antecipado mesmo com colo aparentemente normal; interpretar comprimento como risco probabilístico, não destino certo.
+
+A **NICE NG137 atualizada em 2024** recomenda uma avaliação de comprimento cervical **entre 16 e 20 semanas** em gestações gemelares/trigemelares. Em colo com **25 mm ou menos**, recomenda **progesterona vaginal 200 mg à noite até 34 semanas** ou parto se antes; também orienta quando o encurtamento é detectado incidentalmente entre 20 e 24 semanas. Trata-se de recomendação de **diretriz britânica** e uso off-label naquela referência em 2024; sua aplicação no Brasil requer conferência de protocolo e registro, porque outras sociedades podem avaliar evidência de forma diferente.
+
+### 12.2. O que não prescrever a todas as pacientes
+
+Repouso absoluto de rotina, pessário cervical do tipo Arabin, cerclagem indiscriminada e tocolítico oral profilático não são recomendados universalmente para prevenir parto prematuro na gestação múltipla pela NICE. Ausência de benefício consistente e riscos do repouso prolongado, como trombose e perda de condicionamento, impedem usar intervenções apenas porque há dois fetos.
+
+**Cerclagem** pode ser considerada em situações individualizadas de insuficiência cervical com critérios específicos, especialmente se há dilatação clínica ou histórico e contexto pertinentes, sob equipe de alto risco. Não reduzir raciocínio a “colo curto em gemelar = cerclagem”. A escolha de progesterona e intervenções pode divergir entre diretrizes.
+
+### 12.3. Trabalho de parto prematuro estabelecido
+
+Contrações regulares com modificação cervical antes do termo exigem avaliação obstétrica. O manejo inclui descartar RPMO, infecção e complicações placentárias, monitorar ambos os fetos e avaliar corticoterapia antenatal, tocolíticos para janela terapêutica quando indicados e sulfato de magnésio para neuroproteção segundo idade gestacional e protocolo. A seleção de drogas, doses e contraindicações é desenvolvida em apostila LURIA de trabalho de parto prematuro; aqui importa que o risco gemelar aumenta necessidade de hospital com equipe neonatal compatível.
+
+**Não usar tocolítico diante de indicação urgente de parto por comprometimento materno/fetal ou infecção intrauterina relevante.** Não presumir que toda ameaça de parto pré-termo pode ser adiada com segurança só para completar corticoterapia.
+
+### 12.4. RPMO e complicações de líquido
+
+Rotura prematura de membranas em um dos sacos modifica risco de infecção, prematuridade e comprometimento fetal. Em MCDA, distinguir perda de líquido por ruptura da sequência de oligodrâmnio por TTTS; os dois diagnósticos podem coexistir. Perguntar perda vaginal, confirmar exame especular/protocolo e avaliar líquido por compartimento. Manejo por idade gestacional, sinais de corioamnionite, trabalho de parto e vitalidade fetal será articulado à apostila de RPMO, preservando conteúdo próprio.
+
