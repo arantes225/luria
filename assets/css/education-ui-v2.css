@@ -277,3 +277,20 @@
   @media(prefers-reduced-motion:reduce) { body[data-ui="v2"][data-ui-context="study"]:is([data-page="questoes"],[data-page="professor_alex"]) .main :is(.qs-home-user-card,.qs-home-user-card-progress span,.qs-resolution-option,.error-metric-progress-bar span,.alex-start-card) {transition:none!important;transform:none!important;} }
 
 }
+
+
+/* LURIA LOTE 07 MCQ — restrito aos 24 itens autorais recém-integrados */
+.book-section .luria-mcq{display:block;margin-top:14px;padding:15px 16px;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+.book-section .luria-mcq>h3{margin:0 0 8px;line-height:1.45}
+.book-section .luria-mcq>p{margin:8px 0 10px!important;font-size:13px!important;line-height:1.6!important}
+.book-section .luria-mcq>ol{margin:10px 0 12px!important;padding-left:24px!important;list-style-type:upper-alpha}
+.book-section .luria-mcq>ol>li{display:list-item;list-style-type:upper-alpha;margin:5px 0;font-size:12.8px!important;line-height:1.6!important}
+.book-section .luria-mcq p strong{display:inline;margin:0;font-size:inherit;line-height:inherit;font-weight:700;color:inherit}
+.book-section .luria-mcq details.luria-checkpoint{display:block;margin-top:7px}
+.book-section .luria-mcq details.luria-checkpoint>summary{display:list-item;list-style-position:inside;cursor:pointer;font-size:12.8px;line-height:1.5}
+.book-section .luria-mcq details.luria-checkpoint>div{margin:0 0 12px!important;padding:10px 12px;border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+.book-section .luria-mcq details.luria-checkpoint>div p{font-size:12.8px!important;line-height:1.6!important}
+.book-section#casos>details.luria-lote07-case{display:block;margin:7px 0 14px;padding:10px 13px;border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:9px;background:var(--surface)}
+.book-section#casos>details.luria-lote07-case summary{display:list-item;list-style-position:inside;cursor:pointer;font-size:12.8px;line-height:1.5;font-weight:600}
+.book-section#casos>details.luria-lote07-case p{margin:8px 0 0!important;line-height:1.6!important}
+@media(max-width:560px){.book-section .luria-mcq{padding:12px}.book-section .luria-mcq>ol{padding-left:20px!important}}
