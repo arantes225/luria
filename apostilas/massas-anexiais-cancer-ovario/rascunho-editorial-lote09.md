@@ -476,7 +476,7 @@ Afastar gravidez/ectópica, avaliar torção → US com descrição detalhada �
 2. **INCA. Câncer de ovário, versão para população — incidência 2026–2028 (8.020 casos/ano)**. https://www.gov.br/inca/pt-br/assuntos/cancer/tipos/ovario/versao-para-populacao/
 3. **Ministério da Saúde/Conitec. DDT Neoplasia Maligna Epitelial de Ovário.** Portaria Conjunta SAS/SCTIE/MS nº 01 de 07/01/2019; página oficial atualizada em 21/01/2025, ainda catalogada no índice da Conitec atualizado em setembro de 2026. https://www.gov.br/saude/pt-br/assuntos/pcdt/n/neoplasia-maligna-epitelial-de-ovario-ddt/view ; https://www.gov.br/conitec/pt-br/assuntos/avaliacao-de-tecnologias-em-saude/protocolos-clinicos-e-diretrizes-terapeuticas/ddt
 4. **ACR O-RADS Ultrasound v2022** — sistema e tabelas oficiais. https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/O-RADS/Ultrasound
-5. **Rochon PJ et al. O-RADS US v2022 update**, *Radiology*, 2023. https://doi.org/10.1148/radiol.230685
+5. **Strachowski LM et al. O-RADS US v2022 update**, *Radiology*, 2023. https://doi.org/10.1148/radiol.230685
 6. **ESGO–ESMO–ESP Consensus Conference Recommendations on Ovarian Cancer**, *Annals of Oncology*, 2024. https://www.annalsofoncology.org/article/S0923-7534(23)05103-7/fulltext
 7. **ESGO–ESHRE–ESGE. Fertility-sparing strategies in gynecological malignancies**, 2024, listado no portal ESGO. https://www.esgo.org/guidelines/search-guidelines/ovarian/
 8. **IOTA group: Simple Rules e ADNEX**, plataformas clínicas e publicações metodológicas; consultar metodologia antes de calcular risco. https://www.iotagroup.org/
@@ -498,10 +498,824 @@ Afastar gravidez/ectópica, avaliar torção → US com descrição detalhada �
 - [x] FIGO, citorredução, NACT, terapia sistêmica e manutenção.
 - [x] Fertilidade, genética e rastreamento.
 - [x] Algoritmos, tabelas e referência nacional/internacional.
-- [ ] Casos clínicos autorais completos (≥4).
-- [ ] Questões comentadas alternativa por alternativa (≥6).
-- [ ] Curadoria visual e obtenção de imagens/diagramas com licenças.
+- [x] 16 casos clínicos completos (seção 27).
+- [x] 24 questões comentadas alternativa por alternativa (seção 28).
+- [x] 20 imagens/diagramas candidatos (seção 29); obtenção/licenças e integração pendentes.
 - [ ] Verificar individualmente tratamentos e acesso brasileiro à oncologia.
 - [ ] Revisão por ginecologista oncológico, ultrassonografista e especialista em fertilidade.
 - [ ] Conversão para HTML/content.json e teste no PWA.
 - [ ] Validação final científica/editorial e publicação.
+
+
+---
+
+## 27. Casos clínicos integradores — diagnóstico, risco e decisão terapêutica
+
+Todos os casos são fictícios e inéditos, desenhados para o ENAMED e residência, com história, hipótese, diferencial, exame, conduta e comentário. Não constituem prescrição para pacientes individuais.
+
+### Caso 1 — Cisto simples na pré-menopausa
+
+**Apresentação:** Mulher de 27 anos, assintomática, US transvaginal de rotina mostra cisto anecoico unilocular de 3,4 cm, sem papilas nem sólido ou vascularização interna. Sem história oncológica pessoal/familiar e exame sem massa dolorosa.
+
+**Hipótese e diferenciais:** Cisto ovariano simples/funcional, achado provavelmente benigno.
+
+**Raciocínio clínico:** A idade reprodutiva, conteúdo anecoico, parede fina e ausência de sinais suspeitos sustentam baixo risco. A dimensão e a qualidade do exame orientam se haverá observação sem nova imagem ou controle. CA-125 pode produzir falso positivo; a decisão de seguimento deve usar classificação apropriada e sintomas.
+
+**Exames e interpretação:** Conferir laudo descritivo, categoria O-RADS válida, gestação se contexto, revisar exames prévios. Não pedir TC e painel de marcadores apenas por encontrar cisto típico.
+
+**Conduta e seguimento:** Orientação, sinais de alarme e seguimento conforme sistema de risco e protocolo. Não indicar laparoscopia automática ou anticoncepcional prometendo dissolver o cisto.
+
+**Por que este caso importa:** Evita sobrediagnóstico, cirurgia iatrogênica e baixa reserva ovariana.
+
+### Caso 2 — Cisto hemorrágico com dor, mas sem choque
+
+**Apresentação:** Mulher de 31 anos, dor pélvica à direita iniciada após atividade física; PA e FC estáveis, hemoglobina mantida. US mostra cisto com ecos reticulares e discreto líquido livre, coágulo avascular. β-hCG negativo.
+
+**Hipótese e diferenciais:** Cisto hemorrágico, com possível ruptura limitada.
+
+**Raciocínio clínico:** O padrão reticular e estabilidade favorecem sangramento intrací­stico/ruptura benigna. Diferenciais agudos continuam incluindo torção (dor intensa/vômitos), apendicite e, se β-hCG positivo, gestação ectópica. A dor pode mudar rapidamente, exigindo reavaliação.
+
+**Exames e interpretação:** Hemograma conforme perda suspeita, teste de gestação, ultrassom e exame abdominal seriados. TC só se alternativa extraginecológica/instabilidade de diagnóstico e quando muda conduta.
+
+**Conduta e seguimento:** Analgesia adequada, observação e retorno programado se estabilidade; reanimação/avaliação cirúrgica se queda de Hb, hemoperitônio importante ou piora.
+
+**Por que este caso importa:** Uma imagem compatível com cisto hemorrágico não dispensa avaliação hemodinâmica.
+
+### Caso 3 — Dor aguda e Doppler com fluxo preservado
+
+**Apresentação:** Adolescente de 15 anos com dor unilateral intensa iniciada há quatro horas, vômitos e massa de 7 cm com ovário edemaciado. Doppler mostra fluxo arterial detectável, e a equipe sugere alta porque 'não é torção'.
+
+**Hipótese e diferenciais:** Torção anexial mesmo com fluxo Doppler preservado.
+
+**Raciocínio clínico:** A rotação compromete inicialmente retorno venoso e pode ser intermitente; dupla vascularização permite fluxo arterial aparente. Massa e vômitos com dor abrupta são alertas mais importantes que exame negativo isolado.
+
+**Exames e interpretação:** US descrito em detalhes, avaliar sinal do redemoinho e o ovário contralateral; β-hCG conforme potencial de gestação; não esperar RM se alta suspeita.
+
+**Conduta e seguimento:** Acionar ginecologia cirúrgica imediatamente para laparoscopia/destorção e avaliar preservação ovariana, com informação e assentimento adequados.
+
+**Por que este caso importa:** A presença de fluxo não salva automaticamente o diagnóstico nem exclui isquemia.
+
+### Caso 4 — Gestação de localização desconhecida e instabilidade
+
+**Apresentação:** Mulher de 29 anos com atraso menstrual, dor pélvica severa, síncope e PA 80/50 mmHg. β-hCG reagente; US mostra líquido livre abundante e massa anexial irregular; não visualiza saco intrauterino.
+
+**Hipótese e diferenciais:** Gestação ectópica rota/hemoperitônio até prova contrária, choque hemorrágico.
+
+**Raciocínio clínico:** A instabilidade torna prioridade controle de hemorragia e ressuscitação. Não esperar β-hCG ultrapassar zona discriminatória nem repetir exame em 48 horas quando há sinais de sangramento importante. O diagnóstico diferencial inclui ruptura de cisto hemorrágico em gestante e outras causas.
+
+**Exames e interpretação:** ABCDE, dois acessos venosos, exames hemoderivados/coagulação conforme necessidade, US à beira leito e avaliação obstétrica cirúrgica imediata.
+
+**Conduta e seguimento:** Acionar equipe cirúrgica, reanimar e operar conforme anatomia/estado; avaliar necessidade de transfusão e monitorar recuperação. Metotrexato não se aplica à instabilidade hemorrágica.
+
+**Por que este caso importa:** Gestação ectópica pode matar enquanto se espera um número de β-hCG.
+
+### Caso 5 — Abscesso tubo-ovariano e falha clínica
+
+**Apresentação:** Mulher de 34 anos, febre de 39 °C, dor pélvica há cinco dias, corrimento purulento e massa anexial complexo-cística de 8 cm. Após 48–72 horas de antibioticoterapia adequada há piora de dor e PCR, apesar de estabilidade relativa.
+
+**Hipótese e diferenciais:** Abscesso tubo-ovariano com falha de resposta terapêutica e risco de ruptura/sepse.
+
+**Raciocínio clínico:** A síndrome infecciosa, exame cervical e US de coleção apoiam ATO. Diagnósticos diferenciais incluem endometrioma infectado, apendicite e câncer com necrose. A falha de melhora exige avaliar tamanho/compartimentos e necessidade de controle de foco, não apenas prolongar antibióticos.
+
+**Exames e interpretação:** Hemograma, hemoculturas se sepse, exames de IST conforme contexto, função renal e imagem adequada; teste de gestação. Avaliar coleção para drenagem guiada ou intervenção cirúrgica.
+
+**Conduta e seguimento:** Hospitalização, antibioticoterapia adequada e avaliação de drenagem/cirurgia, preservando função reprodutiva quando possível e tratando parceiros/IST conforme protocolo.
+
+**Por que este caso importa:** O abscesso tem dimensão mecânica: antibiótico não substitui sempre drenagem.
+
+### Caso 6 — Endometrioma bilateral e plano reprodutivo
+
+**Apresentação:** Mulher de 33 anos com dor menstrual importante e infertilidade há um ano. US descreve endometriomas bilaterais de 3 e 4 cm, aparência clássica, sem papilas vasculares. AMH reduzido para idade; paciente deseja gestação.
+
+**Hipótese e diferenciais:** Endometriomas e endometriose com comprometimento potencial de reserva ovariana.
+
+**Raciocínio clínico:** A cistectomia bilateral pode reduzir ainda mais reserva por perda de córtex/vascularização. A decisão não deve ser operar só porque existe endometrioma, especialmente antes de avaliar plano reprodutivo, dor, outras lesões e possibilidade de reprodução assistida.
+
+**Exames e interpretação:** Revisão especializada da US, avaliação de infertilidade do casal, reserva ovariana e tubas conforme protocolo; classificação de risco se imagem mudar.
+
+**Conduta e seguimento:** Discutir tratamento clínico de dor, estratégia reprodutiva e eventual cirurgia apenas por indicação que supere risco de dano gonadal. Explicar incertezas e alternativas.
+
+**Por que este caso importa:** Preservar fertilidade pode significar evitar cirurgia desnecessária.
+
+### Caso 7 — Dermoide grande em adolescente
+
+**Apresentação:** Adolescente de 16 anos tem massa ovariana unilateral de 8 cm em US, com componente gorduroso, linhas ecogênicas e sombra acústica, sem ascite ou implantes. Queixa de peso pélvico, sem dor aguda.
+
+**Hipótese e diferenciais:** Teratoma cístico maduro provável, com risco de torção por tamanho.
+
+**Raciocínio clínico:** Morfologia clássica indica baixo risco de malignidade; porém crescimento/volume/sintomas podem justificar cirurgia. Tumor germinativo maligno é diferencial se sólido atípico, marcadores e idade sugerirem.
+
+**Exames e interpretação:** US padronizada e eventual RM para confirmação de gordura quando necessário; β-hCG, AFP/LDH só conforme suspeita e plano, avaliação pré-operatória apropriada.
+
+**Conduta e seguimento:** Discutir cistectomia com preservação de tecido ovariano, retirada íntegra quando possível e técnica segura; orientar retorno imediato por dor súbita/vômitos.
+
+**Por que este caso importa:** Não confundir origem germinativa com malignidade obrigatória.
+
+### Caso 8 — Massa sólida e ascite na pós-menopausa, CA-125 normal
+
+**Apresentação:** Mulher de 68 anos com aumento do abdome e saciedade precoce apresenta massa anexial de 9 cm, papilas vascularizadas e ascite; CA-125 está dentro da faixa de referência do laboratório.
+
+**Hipótese e diferenciais:** Neoplasia ovariana/tubária ou metastática de alto risco, apesar do CA-125 normal.
+
+**Raciocínio clínico:** A morfologia suspeita e ascite pesam mais que marcador isolado. Parte dos tumores iniciais/subtipos não eleva CA-125; a probabilidade pré-teste é maior nessa idade e com sinais abdominais persistentes.
+
+**Exames e interpretação:** US O-RADS/IOTA, TC de extensão, avaliação geral, história genética e encaminhamento a oncoginecologia; confirmar histologia de forma planejada.
+
+**Conduta e seguimento:** Não fazer cistectomia isolada em unidade sem estadiamento oncológico. Tumor board para definir cirurgia apropriada versus estratégia diagnóstica/terapêutica.
+
+**Por que este caso importa:** CA-125 normal não protege contra câncer com imagem O-RADS 5.
+
+### Caso 9 — Rastreamento pedido em mulher assintomática
+
+**Apresentação:** Mulher de 45 anos, sem sintomas e sem história familiar relevante, solicita ultrassom transvaginal semestral e CA-125 anual 'para evitar câncer de ovário'.
+
+**Hipótese e diferenciais:** Solicitação de rastreamento de risco habitual sem benefício líquido demonstrado.
+
+**Raciocínio clínico:** CA-125/US geram falsos positivos e podem levar a cirurgias sem reduzir comprovadamente mortalidade populacional. Rastreamento de ovário difere de investigação de sintomas ou avaliação de alto risco hereditário.
+
+**Exames e interpretação:** História familiar de três gerações, fatores de risco, orientação sobre sinais persistentes, rastreamento comprovado para outros cânceres conforme critérios e saúde global.
+
+**Conduta e seguimento:** Explicar ausência de indicação de rastreamento rotineiro de ovário para risco habitual e orientar retorno se sinais persistentes.
+
+**Por que este caso importa:** Nem todo exame tecnicamente disponível é cuidado preventivo benéfico.
+
+### Caso 10 — BRCA1 patogênico e prevenção cirúrgica
+
+**Apresentação:** Mulher de 37 anos teve câncer de mama tratado, possui variante germinativa BRCA1 patogênica confirmada e não planeja gestação futura; mãe faleceu por câncer de ovário. Ela pergunta se CA-125 normal permite adiar indefinidamente prevenção.
+
+**Hipótese e diferenciais:** Alto risco hereditário de câncer tubo-ovariano que justifica aconselhamento de cirurgia redutora de risco conforme gene/idade.
+
+**Raciocínio clínico:** CA-125 normal não garante ausência de lesão incipiente; para portadoras BRCA1/2, planejamento de salpingo-ooforectomia redutora é individualizado após desejo reprodutivo. As implicações de menopausa cirúrgica exigem aconselhamento amplo.
+
+**Exames e interpretação:** Conferir laudo genético e aconselhamento, discutir riscos/benefícios/idade, função ovariana, fertilidade, necessidade de cuidado mamário e outros membros da família.
+
+**Conduta e seguimento:** Encaminhar oncogenética/ginecologia oncológica para decisão compartilhada e técnica de cirurgia redutora adequada, com avaliação de patologia das tubas.
+
+**Por que este caso importa:** Rastreamento negativo não substitui prevenção eficaz em genética de alto risco.
+
+### Caso 11 — Ascite e carcinomatose: PCS versus neoadjuvância
+
+**Apresentação:** Mulher de 64 anos com carcinoma seroso de alto grau confirmado em biópsia apropriada apresenta carcinomatose difusa, ascite e ECOG 2; imagem sugere envolvimento extenso de regiões dificilmente ressecáveis com segurança.
+
+**Hipótese e diferenciais:** Câncer epitelial tubo-ovariano avançado; possível baixa probabilidade de citorredução primária completa.
+
+**Raciocínio clínico:** A sobrevida depende também de doença residual macroscópica. Operar para deixar doença volumosa com alta morbidade pode ser inferior a neoadjuvância/cirurgia de intervalo em candidata adequada. Tumor board e imagem/avaliação clínica definem sequência.
+
+**Exames e interpretação:** TC de extensão, histologia, função orgânica/nutrição, biomarcadores conforme contexto e avaliação por ginecologia oncológica experiente.
+
+**Conduta e seguimento:** Considerar platina/taxano neoadjuvante, reavaliando ressecabilidade para cirurgia de intervalo e manutenção conforme resposta/BRCA/HRD/acesso; se R0 inicial parecer factível, PCS continua opção preferencial.
+
+**Por que este caso importa:** A pergunta cirúrgica é 'consigo R0 com segurança?', não 'consigo abrir e retirar alguma coisa?'.
+
+### Caso 12 — Borderline unilateral e desejo de gravidez
+
+**Apresentação:** Mulher de 25 anos apresenta massa unilateral multilocular de 10 cm; congelação intraoperatória sugere tumor borderline mucinoso. Sem implantes evidentes, deseja preservar fertilidade. Equipe considera remover útero e ovário contralateral por rotina.
+
+**Hipótese e diferenciais:** Tumor borderline possível, com limitação da congelação e necessidade de anatomopatologia permanente.
+
+**Raciocínio clínico:** Borderline não é sinônimo de carcinoma invasivo; em doença restrita selecionada a preservação de útero e ovário contralateral pode ser possível. Em massa mucinosa grande, amostragem extensa é necessária para descartar foco invasivo.
+
+**Exames e interpretação:** Revisão histológica definitiva com amostragem adequada, inspeção/citologia e estadiamento indicados pelo subtipo; aconselhamento oncológico.
+
+**Conduta e seguimento:** Decidir extensão de cirurgia com oncoginecologia e planejamento reprodutivo, preservar tecido quando seguro e programar seguimento prolongado.
+
+**Por que este caso importa:** Não fazer tratamento mutilante sem considerar histologia, estágio e preservação de fertilidade.
+
+### Caso 13 — Granulosa ovariana e sangramento pós-menopausa
+
+**Apresentação:** Mulher de 59 anos, três anos após menopausa, apresenta sangramento uterino intermitente e massa ovariana sólida de 6 cm; espessamento endometrial ao US. CA-125 não elevado.
+
+**Hipótese e diferenciais:** Tumor de células da granulosa com produção estrogênica no diferencial, além de outras neoplasias e mioma pediculado.
+
+**Raciocínio clínico:** Exposição a estrogênio não contrabalançado pode provocar hiperplasia/câncer endometrial, independentemente da natureza maligna/benigna da massa. Ignorar endométrio produziria diagnóstico incompleto.
+
+**Exames e interpretação:** US especializada, inibina B/AMH conforme indicação, estudo do endométrio por biópsia/histeroscopia de acordo com risco, histologia definitiva de massa.
+
+**Conduta e seguimento:** Encaminhar à oncoginecologia para investigação e cirurgia adequadas, com seguimento de longo prazo conforme subtipo.
+
+**Por que este caso importa:** Sangramento pós-menopausa deve ser investigado mesmo quando a massa aparenta origem ovariana.
+
+### Caso 14 — Massa bilateral mucinosa e sintomas digestivos
+
+**Apresentação:** Mulher de 57 anos com perda ponderal, anemia e mudança do hábito intestinal tem massas ovarianas bilaterais predominantemente sólidas/mucinosas. CEA elevado, sem CA-125 expressivo.
+
+**Hipótese e diferenciais:** Metástase ovariana de tumor gastrointestinal, inclusive cólon ou estômago; neoplasia mucinosa ovariana primária no diferencial.
+
+**Raciocínio clínico:** A bilateralidade e sintomas digestivos elevam suspeita de origem extraovariana. Marcadores são apoio, mas histologia e imuno-histoquímica com endoscopia/imagem dirigida determinam origem.
+
+**Exames e interpretação:** TC toracoabdominopélvica, colonoscopia/endoscopia conforme sintomas e exames, histologia e painéis de imunohistoquímica planejados.
+
+**Conduta e seguimento:** Discussão multidisciplinar oncoginecologia/gastro/oncologia para definir primário, estadiamento e tratamento; evitar classificar como câncer primário de ovário só por topografia.
+
+**Por que este caso importa:** Nem todo tumor no ovário se originou nele.
+
+### Caso 15 — Ascite e derrame pleural com fibroma benigno
+
+**Apresentação:** Mulher de 62 anos com massa ovariana sólida, ascite e derrame pleural direitos. TC não identifica implantes e US descreve massa lisa com sombra acústica; paciente está estável.
+
+**Hipótese e diferenciais:** Síndrome de Meigs por fibroma ovariano é diferencial, mas carcinoma epitelial avançado deve ser investigado.
+
+**Raciocínio clínico:** Ascite e derrame não são absolutamente específicos de câncer. Meigs é associação clássica de tumor fibroso ovariano, ascite e derrame pleural que regrediriam após excisão. Não é diagnóstico fechado pré-operatório.
+
+**Exames e interpretação:** US/RM adequada, avaliação do derrame, CA-125 como apoio com ressalvas, avaliação cirúrgica e histologia definitiva.
+
+**Conduta e seguimento:** Planejar cirurgia apropriada à avaliação de risco, evitando tanto negar cirurgia por considerar doença fatal quanto banalizar sinais de malignidade.
+
+**Por que este caso importa:** Marcadores e sinais clínicos combinados não dispensam histologia.
+
+### Caso 16 — Elevação de CA-125 isolada após remissão
+
+**Apresentação:** Mulher de 61 anos tratada de carcinoma seroso avançado está assintomática, exame clínico normal; CA-125 subiu gradualmente em três avaliações, mas TC ainda não mostra doença claramente tratável.
+
+**Hipótese e diferenciais:** Possível recorrência bioquímica, sem comprovação de progressão clínica/radiológica relevante.
+
+**Raciocínio clínico:** Tratar imediatamente só pelo marcador pode expor a toxicidade sem demonstrar benefício de sobrevida em cenários específicos. A decisão depende de história, tendência, sintomatologia, possibilidade de ensaio/terapia e preferências.
+
+**Exames e interpretação:** Rever laboratório/tendência, exame, imagem e intervalo pós-tratamento, discutir em oncologia e seguimento conforme protocolo.
+
+**Conduta e seguimento:** Não prescrever quimioterapia automática baseada apenas em CA-125; conversar sobre vigilância, esclarecimento diagnóstico e objetivos individuais.
+
+**Por que este caso importa:** Marcador tumoral mede informação, não substitui decisão compartilhada.
+
+
+## 28. Questões autorais comentadas — todas as alternativas explicadas
+
+As 24 questões são autorais, estilo residência/ENAMED, cobrindo identificação de urgência, US, O-RADS, IOTA, risco oncológico, tumor borderline, fertilidade e seguimento. Comentários individuais esclarecem tanto o gabarito como os distratores.
+
+### Questão 1 — Primeiro exame de massa anexial
+
+**Enunciado:** Mulher de 35 anos assintomática tem massa anexial palpada, sem sinais de urgência. Qual exame inicial é geralmente o mais útil?
+
+**A)** Ultrassonografia transvaginal com caracterização morfológica e Doppler.
+
+**B)** PET-CT obrigatório.
+
+**C)** CA-125 isolado, sem imagem.
+
+**D)** Cirurgia imediata sem imagem.
+
+**Gabarito: A.**
+
+- **Alternativa A:** É primeira linha para morfologia e origem.
+- **Alternativa B:** Não é rotina em toda massa inicial.
+- **Alternativa C:** Não confirma nem exclui doença sozinho.
+- **Alternativa D:** A cirurgia depende de risco e urgência.
+
+**Mini-revisão:** US padronizada fornece mais informação do que marcador isolado.
+
+### Questão 2 — β-hCG em dor pélvica
+
+**Enunciado:** Paciente em idade reprodutiva com dor pélvica súbita, sangramento e tontura. Conduta inicial indispensável?
+
+**A)** Testar gestação e avaliar hemodinâmica imediatamente.
+
+**B)** Atribuir a endometriose sem avaliação.
+
+**C)** Dar anticoncepcional por três meses.
+
+**D)** Aguardar resultado de CA-125.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Ectópica pode causar choque e exige diagnóstico rápido.
+- **Alternativa B:** Ignora ameaça de hemorragia.
+- **Alternativa C:** Não trata urgência.
+- **Alternativa D:** O marcador é irrelevante para excluir ectópica.
+
+**Mini-revisão:** Toda massa anexial sintomática em potencial gestação começa com β-hCG e avaliação de estabilidade.
+
+### Questão 3 — Torção com Doppler normal
+
+**Enunciado:** Adolescente com dor unilateral aguda e vômitos apresenta massa de 7 cm; Doppler demonstra fluxo arterial. A interpretação correta é:
+
+**A)** Torção excluída.
+
+**B)** Torção ainda é possível, exigindo avaliação cirúrgica urgente se forte suspeita.
+
+**C)** É obrigatoriamente câncer de ovário.
+
+**D)** Doppler elimina necessidade de exame clínico.
+
+**Gabarito: B.**
+
+- **Alternativa A:** A irrigação dupla e torção intermitente preservam fluxo em alguns casos.
+- **Alternativa B:** Clínica e imagem morfológica determinam prioridade.
+- **Alternativa C:** Não há evidência de malignidade pelo fluxo.
+- **Alternativa D:** Nenhum exame isolado substitui síndrome clínica.
+
+**Mini-revisão:** Doppler arterial preservado não exclui torção.
+
+### Questão 4 — Ovario escurecido após destorção
+
+**Enunciado:** Após laparoscopia para torção em adolescente, ovário está azulado e edemaciado. Qual princípio é adequado?
+
+**A)** Retirada obrigatória sempre.
+
+**B)** Considerar destorção e preservação ovariana quando possível, pois aspecto escuro não prova necrose definitiva.
+
+**C)** Apenas fechar abdome sem destorcer.
+
+**D)** Não há risco de recorrência ou complicações.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Cor macroscópica isolada não significa inviabilidade.
+- **Alternativa B:** É estratégia conservadora para proteger função reprodutiva.
+- **Alternativa C:** Não resolve torção.
+- **Alternativa D:** Exige seguimento/decisão conforme anatomia e causa.
+
+**Mini-revisão:** Conservar ovário é frequentemente prioridade em adolescentes após destorção.
+
+### Questão 5 — Abscesso tubo-ovariano
+
+**Enunciado:** Mulher com febre, dor pélvica, corrimento e massa complexa de 8 cm piora após terapia inicial. Melhor plano?
+
+**A)** Avaliar sepse/ruptura, antibiótico hospitalar e necessidade de drenagem/controle de foco.
+
+**B)** Dar alta com analgésico apenas.
+
+**C)** Realizar CA-125 como único exame.
+
+**D)** Esperar que a massa desapareça por definição.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Controle de foco é necessário em falha/resposta ruim.
+- **Alternativa B:** Pode deixar infecção grave.
+- **Alternativa C:** Marcador não trata abscesso.
+- **Alternativa D:** É conduta insegura sem reavaliação.
+
+**Mini-revisão:** ATO pode exigir drenagem mesmo sob antibióticos.
+
+### Questão 6 — Cisto simples em jovem
+
+**Enunciado:** Mulher de 24 anos tem cisto simples de 3 cm sem sintomas. Qual abordagem usual?
+
+**A)** Oncoginecologia urgente em todas.
+
+**B)** Avaliação de risco e observação quando critérios benignos são atendidos.
+
+**C)** Remover ambos os ovários.
+
+**D)** Tratar como FIGO III.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Não há suspeita sem contexto.
+- **Alternativa B:** Cistos funcionais pequenos muitas vezes regridem.
+- **Alternativa C:** Causaria infertilidade/menopausa injustificadas.
+- **Alternativa D:** Estádio não se atribui a cisto simples.
+
+**Mini-revisão:** Baixo risco não é ausência de acompanhamento quando há indicação; evitar cirurgia desnecessária.
+
+### Questão 7 — Cisto hemorrágico
+
+**Enunciado:** US mostra cisto com rede de fibrina e coágulo avascular em mulher estável. Qual hipótese?
+
+**A)** Cisto hemorrágico típico.
+
+**B)** Tumor seroso de alto grau comprovado.
+
+**C)** Gestação ectópica confirmada sem β-hCG.
+
+**D)** Abscesso obrigatório.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Morfologia é característica, considerando quadro clínico.
+- **Alternativa B:** Histologia/morfologia e risco insuficientes.
+- **Alternativa C:** Exige teste gestacional e contexto.
+- **Alternativa D:** Ausência de febre não exclui, mas quadro não é específico de ATO.
+
+**Mini-revisão:** Coágulo avascular pode simular sólido, devendo ser distinguido de papila vascular.
+
+### Questão 8 — Endometrioma e fertilidade
+
+**Enunciado:** Mulher com endometriomas bilaterais e baixa reserva ovariana busca engravidar. Qual afirmação é adequada?
+
+**A)** Cistectomia bilateral sempre aumenta reserva.
+
+**B)** A cirurgia pode reduzir reserva ovariana; individualizar indicação e planejamento reprodutivo.
+
+**C)** Toda lesão em vidro fosco é maligna.
+
+**D)** Anticoncepcional resolve cisto imediatamente.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Perda de tecido/vascularização pode reduzir reserva.
+- **Alternativa B:** O balanço risco-benefício depende de dor, infertilidade e suspeita.
+- **Alternativa C:** Padrão clássico geralmente sugere endometrioma.
+- **Alternativa D:** Não é dissolução imediata do cisto.
+
+**Mini-revisão:** Preservação ovariana exige pensar no futuro reprodutivo antes de operar.
+
+### Questão 9 — Dermóide e torção
+
+**Enunciado:** Teratoma maduro de 8 cm em adolescente tem maior risco clínico de:
+
+**A)** Torção anexial.
+
+**B)** Metástase cerebral obrigatória.
+
+**C)** Síndrome de Cushing obrigatória.
+
+**D)** Ruptura hepática.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Massa pode facilitar rotação do anexo.
+- **Alternativa B:** Teratoma maduro em geral é benigno.
+- **Alternativa C:** Não é consequência clássica.
+- **Alternativa D:** Sem relação direta.
+
+**Mini-revisão:** Dermoide benigno pode precisar cirurgia por sintomas/torção, não por ser câncer.
+
+### Questão 10 — O-RADS 3
+
+**Enunciado:** Uma lesão O-RADS US 3 é classificada em qual faixa de risco aproximada?
+
+**A)** Risco 100% e cirurgia imediata.
+
+**B)** 1% a menos de 10%, com seguimento ou avaliação complementar conforme morfologia.
+
+**C)** Incompleta por definição.
+
+**D)** Normal, sem lesão por definição.
+
+**Gabarito: B.**
+
+- **Alternativa A:** O-RADS 3 é baixo risco.
+- **Alternativa B:** É categoria de baixo risco, e US de seguimento pode ser opção.
+- **Alternativa C:** Isso descreve O-RADS 0.
+- **Alternativa D:** Isso se aproxima de O-RADS 1.
+
+**Mini-revisão:** O-RADS padroniza risco e conduta; categoria isolada não fornece diagnóstico histológico.
+
+### Questão 11 — IOTA Simple Rules
+
+**Enunciado:** US tem sinais benignos B1 e malignos M3 simultaneamente. Como classificar por IOTA Simple Rules?
+
+**A)** Benigna porque B1 apareceu primeiro.
+
+**B)** Maligna porque M3 vale mais pontos.
+
+**C)** Inconclusiva pelas regras simples; solicitar expertise ou modelo complementar.
+
+**D)** Não é possível haver sinais B e M juntos.
+
+**Gabarito: C.**
+
+- **Alternativa A:** A presença M exige reavaliar.
+- **Alternativa B:** O modelo não é soma arbitrária de pontos.
+- **Alternativa C:** B+M juntas levam a classificação indeterminada.
+- **Alternativa D:** Podem coexistir em lesões complexas.
+
+**Mini-revisão:** IOTA usa combinações de sinais B/M e reconhece categoria inconclusiva.
+
+### Questão 12 — CA-125 em endometriose
+
+**Enunciado:** Mulher com endometrioma e CA-125 moderadamente elevado. Qual interpretação?
+
+**A)** Câncer ovariano confirmado.
+
+**B)** Elevação pode decorrer de endometriose/inflamação e precisa ser integrada à imagem.
+
+**C)** Câncer excluído se CA-125 cair.
+
+**D)** O marcador substitui histologia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** É exame inespecífico.
+- **Alternativa B:** Correto: valor isolado não define histologia.
+- **Alternativa C:** Queda não exclui malignidade.
+- **Alternativa D:** Nenhum marcador substitui avaliação clínica e patológica.
+
+**Mini-revisão:** CA-125 é ferramenta contextual e de seguimento, não teste diagnóstico isolado.
+
+### Questão 13 — Rastreamento de câncer de ovário
+
+**Enunciado:** Pessoa assintomática de risco habitual solicita CA-125 anual e US semestral. O INCA recomenda:
+
+**A)** Rastreamento obrigatório a cada seis meses.
+
+**B)** Não recomendar rastreamento populacional rotineiro por ausência de benefício líquido comprovado.
+
+**C)** Laparoscopia anual preventiva.
+
+**D)** Profilaxia com quimioterapia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Falsos positivos trazem danos e não houve benefício demonstrado.
+- **Alternativa B:** É a posição do INCA.
+- **Alternativa C:** Exporia a riscos sem benefício.
+- **Alternativa D:** Não se indica prevenção com quimioterapia.
+
+**Mini-revisão:** Investigação sintomática é diferente de rastreamento populacional.
+
+### Questão 14 — Massa pós-menopausa suspeita e marcador normal
+
+**Enunciado:** Mulher de 68 anos tem massa com papilas vascularizadas e ascite, CA-125 normal. Conduta?
+
+**A)** Alta porque marcador normal.
+
+**B)** Encaminhar à oncoginecologia e estadiar devido à morfologia suspeita.
+
+**C)** Esperar doze meses sem reavaliar.
+
+**D)** Dar contraceptivo combinado para reduzir massa.
+
+**Gabarito: B.**
+
+- **Alternativa A:** CA-125 pode ser normal em câncer.
+- **Alternativa B:** Morfologia e sinais clínicos sustentam alto risco.
+- **Alternativa C:** Atraso pode prejudicar diagnóstico.
+- **Alternativa D:** Não é tratamento da suspeita maligna.
+
+**Mini-revisão:** CA-125 normal não derruba risco alto ao ultrassom.
+
+### Questão 15 — FIGO III versus IV
+
+**Enunciado:** Implantes tumorais na superfície do fígado, sem lesão parenquimatosa ou derrame pleural maligno. Qual princípio?
+
+**A)** Superfície hepática pode ser doença peritoneal FIGO III.
+
+**B)** Toda lesão na cápsula do fígado é IVB.
+
+**C)** O tumor é sempre benigno.
+
+**D)** FIGO depende de CA-125.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Peritônio sobre o fígado é extra-pélvico e pode corresponder a III.
+- **Alternativa B:** IVB envolve metástase parenquimatosa/outros sítios distantes.
+- **Alternativa C:** Não há tal conclusão.
+- **Alternativa D:** Estádio reflete extensão anatômica.
+
+**Mini-revisão:** Superfície hepática ≠ parênquima hepático.
+
+### Questão 16 — Derrame pleural FIGO IVA
+
+**Enunciado:** Qual achado caracteriza FIGO IVA em câncer tubo-ovariano?
+
+**A)** Derrame pleural com citologia positiva.
+
+**B)** Qualquer líquido na pelve.
+
+**C)** Cisto ovariano simples.
+
+**D)** Ascite isolada.
+
+**Gabarito: A.**
+
+- **Alternativa A:** A citologia pleural positiva define IVA na classificação.
+- **Alternativa B:** Líquido pélvico isolado não.
+- **Alternativa C:** Não é câncer.
+- **Alternativa D:** Pode ocorrer em doença III ou outras condições.
+
+**Mini-revisão:** Pleura positiva e parênquima hepático são situações de estádio IV por mecanismos distintos.
+
+### Questão 17 — Citorredução inicial versus neoadjuvante
+
+**Enunciado:** Carcinomatose extensa, baixa chance de remoção completa inicial e ECOG ruim. Conduta baseada em consenso?
+
+**A)** Operar sempre sem avaliação.
+
+**B)** Tumor board em centro especialista; considerar NACT/intervalo se ressecção completa inicial improvável.
+
+**C)** Fazer apenas CA-125 sem histologia/estadiamento.
+
+**D)** BEP como esquema universal de todo tumor epitelial.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Pode aumentar morbidade com doença residual.
+- **Alternativa B:** Decisão considera biologia e operabilidade.
+- **Alternativa C:** Planejamento exige diagnóstico e extensão.
+- **Alternativa D:** BEP é regime de certos tumores germinativos.
+
+**Mini-revisão:** PCS é preferida se R0 factível; NACT é alternativa importante quando não.
+
+### Questão 18 — Linfonodos em doença avançada
+
+**Enunciado:** Em câncer epitelial avançado com ressecção macroscópica completa e linfonodos clinicamente normais:
+
+**A)** Esvaziamento sistemático sempre melhora sobrevida.
+
+**B)** Linfadenectomia sistemática pode aumentar morbidade sem benefício demonstrado em condições específicas; seguir critérios oncológicos.
+
+**C)** Nunca retirar linfonodo suspeito.
+
+**D)** Estadiamento nodal não existe.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Estudos questionam benefício de dissecção sistemática nesse cenário.
+- **Alternativa B:** A extensão deve ser individualizada.
+- **Alternativa C:** Nódulos suspeitos são questão diferente.
+- **Alternativa D:** Nódulos são componentes relevantes do estadiamento.
+
+**Mini-revisão:** Não transplantar a regra de estadiamento de doença inicial para todas as pacientes avançadas.
+
+### Questão 19 — BRCA e VUS
+
+**Enunciado:** Uma mulher tem variante BRCA de significado incerto (VUS) sem outros dados. O resultado:
+
+**A)** É variante patogênica comprovada.
+
+**B)** Não deve ser usado isoladamente para indicar salpingo-ooforectomia redutora de risco.
+
+**C)** Garante ausência de risco hereditário.
+
+**D)** Sempre exige quimioterapia.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Interpretação molecular difere.
+- **Alternativa B:** VUS requer aconselhamento/reclassificação, não conduta de variante patogênica.
+- **Alternativa C:** Não exclui outros riscos.
+- **Alternativa D:** Não determina tratamento por si.
+
+**Mini-revisão:** VUS ≠ BRCA patogênico.
+
+### Questão 20 — Manutenção com PARP
+
+**Enunciado:** Qual afirmação sobre inibidores PARP no câncer tubo-ovariano é adequada?
+
+**A)** Indicados a todas sem considerar resposta/histologia/biomarcador.
+
+**B)** Podem ser selecionados conforme resposta à platina, BRCA/HRD e aprovação/acesso, com monitorização.
+
+**C)** São antibióticos para abscesso.
+
+**D)** Não exigem hemograma.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Há diferenças de elegibilidade e risco.
+- **Alternativa B:** É uso orientado por contexto e biomarcadores.
+- **Alternativa C:** São terapias antineoplásicas.
+- **Alternativa D:** Mielotoxicidade e citopenias são relevantes.
+
+**Mini-revisão:** Diretriz internacional não equivale a disponibilização universal no SUS.
+
+### Questão 21 — Tumor germinativo em adolescente
+
+**Enunciado:** Adolescente tem massa ovariana sólida rápida e AFP muito elevada. Principal grupo a considerar?
+
+**A)** Tumor de células germinativas, incluindo saco vitelino.
+
+**B)** Cisto folicular simples obrigatório.
+
+**C)** Mioma submucoso.
+
+**D)** Síndrome do ovário policístico.
+
+**Gabarito: A.**
+
+- **Alternativa A:** AFP é pista de tumor germinativo específico no contexto.
+- **Alternativa B:** Cisto simples não costuma elevar AFP.
+- **Alternativa C:** Origem uterina.
+- **Alternativa D:** SOP não é massa sólida aguda.
+
+**Mini-revisão:** AFP/β-hCG/LDH ajudam no diferencial de tumores germinativos.
+
+### Questão 22 — Tumor de granulosa e endométrio
+
+**Enunciado:** Mulher pós-menopausa com massa ovariana e sangramento uterino pode ter tumor estromal produtor de:
+
+**A)** Estrogênio, como tumor de células da granulosa, exigindo avaliar endométrio.
+
+**B)** Insulina em todos os casos.
+
+**C)** Calcitonina por definição.
+
+**D)** Adrenalina crônica.
+
+**Gabarito: A.**
+
+- **Alternativa A:** Excesso de estrogênio pode estimular endométrio.
+- **Alternativa B:** Não é mecanismo habitual.
+- **Alternativa C:** Marcador tireoidiano, sem pertinência.
+- **Alternativa D:** Não é marcador desse tumor.
+
+**Mini-revisão:** A doença ovariana pode gerar hiperplasia endometrial concomitante.
+
+### Questão 23 — Borderline e fertilidade
+
+**Enunciado:** Mulher de 25 anos com tumor borderline unilateral aparentemente confinado, desejo gestacional. Qual princípio?
+
+**A)** Quimioterapia agressiva para todos.
+
+**B)** Avaliar preservação de fertilidade e estadiamento apropriado com oncoginecologia.
+
+**C)** Extirpar obrigatoriamente útero e ovário contralateral em qualquer caso.
+
+**D)** Ignorar seguimento após cirurgia conservadora.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Borderline não é carcinoma invasivo por definição.
+- **Alternativa B:** A seleção depende de subtipo, estádio e risco.
+- **Alternativa C:** Radicalidade automática pode ser desnecessária.
+- **Alternativa D:** Recorrência é possível e exige seguimento.
+
+**Mini-revisão:** Preservação pode ser oncológica em casos selecionados.
+
+### Questão 24 — CA-125 isolado no seguimento
+
+**Enunciado:** Paciente assintomática após tratamento de câncer tubo-ovariano apresenta elevação isolada de CA-125. Melhor conduta inicial?
+
+**A)** Quimioterapia imediata obrigatória.
+
+**B)** Reavaliação por oncologia, tendência/exames/sintomas e decisão compartilhada, sem tratar apenas o número.
+
+**C)** Cirurgia de urgência universal.
+
+**D)** Alta definitiva.
+
+**Gabarito: B.**
+
+- **Alternativa A:** Benefício de iniciar tratamento só por marcador não é universal.
+- **Alternativa B:** A decisão considera doença clínica e qualidade de vida.
+- **Alternativa C:** Não é necessariamente emergência cirúrgica.
+- **Alternativa D:** Pode indicar necessidade de vigilância.
+
+**Mini-revisão:** Tratamento da recaída exige benefício esperado, não marcador isolado.
+
+
+## 29. Curadoria de 20 imagens/diagramas com alto valor didático
+
+As imagens são **candidatas a aprovação**, não arquivos já obtidos ou incorporados. Priorizar US/TC/RM/histologia reais apenas quando licença e proveniência permitirem; diagramas autorais complementam achados difíceis de ilustrar com exames. Conforme `lead_apostilas`, não copiar figuras proprietárias de sociedades nem usar capturas de prontuário.
+
+| Nº | Candidata | Função para o estudante | Fonte/licença/legenda |
+|---|---|---|---|
+| 1 | US de cisto simples | Imagem transvaginal real com conteúdo anecoico, parede fina e sem sólido | Atlas acadêmico/licença revisada; legenda diferencia cisto funcional e risco por tamanho |
+| 2 | US de cisto hemorrágico | Retículo de fibrina e coágulo sem fluxo intralesional | Caso radiológico real autorizado e laudo correspondente |
+| 3 | US Doppler de torção | Ovário edemaciado/folículos periféricos, pedículo em redemoinho | Radiologia ginecológica acadêmica; legenda deve lembrar que fluxo preservado não exclui |
+| 4 | Imagem de gestação ectópica | Massa tubária e líquido livre em situação de ensino | Banco institucional com licença; não reutilizar imagem identificável |
+| 5 | US de endometrioma | Aspecto em vidro fosco e comparação com nódulo mural suspeito | Fonte médica real/licenciada; destacar diferencial |
+| 6 | US/RM de teratoma | Componentes gordurosos e sombra acústica de dermoide | Imagens reais de exame com licença e legenda |
+| 7 | US de hidrossalpinge | Morfologia tubular e pregas incompletas | Fonte acadêmica confiável |
+| 8 | US de abscesso tubo-ovariano | Coleção complexa e hiperemia periférica | Exame acadêmico licenciado, confirmar diferenciais |
+| 9 | Diagrama IOTA Simple Rules | Cinco sinais benignos e cinco malignos com resultado indeterminado | Desenho original sem cópia de figura proprietária |
+| 10 | Matriz O-RADS US v2022 | Categorias de risco, morfologia/fluxo e encaminhamento | Diagrama autoral com referência ACR e data |
+| 11 | RMI versus O-RADS | Distinção de escore laboratorial/menopausa e estratificação por imagem | Tabela autoral, sem propor equivalência numérica |
+| 12 | FIGO ovário/tuba/peritônio | Mapas de pelve, peritônio, retroperitônio e sítios distantes | Diagrama anatômico autoral revisado |
+| 13 | Superfície vs parênquima do fígado | Esquema de implante peritoneal na cápsula e metástase parenquimatosa | Arte original explicando III versus IVB |
+| 14 | Patologia HGSC e STIC | Histologia real de carcinoma seroso e lesão tubária precursora | Artigo com figura licenciada; revisão de patologia |
+| 15 | Algoritmo PCS vs NACT | Decisão de ressecção completa factível vs neoadjuvância/intervalo | Fluxograma original ESGO/INCA, sem copiar ilustração |
+| 16 | Mapa BRCA/HRD/PARP | Gene, teste germinativo/somático, tratamento e aconselhamento | Diagrama autoral com cautela de acesso SUS |
+| 17 | Citorredução macroscópica | Esquema simplificado de implantes e meta sem doença visível | Arte original oncológica não procedural |
+| 18 | Tumor granulosa e endométrio | Fluxo estrogênio → endométrio → sangramento | Diagrama original com diferencial |
+| 19 | Tumor germinativo e marcadores | Matriz AFP/β-hCG/LDH por subtipos | Quadro autoral com ressalva de sensibilidade |
+| 20 | Decisão de preservar fertilidade | Fluxo benigno/borderline/germinativo/epitelial e reserva | Diagrama original de decisão compartilhada |
+
+### Critérios de seleção e preparação técnica
+
+1. Antes de utilizar imagem de periódico, conferir licença específica da figura; acesso aberto ao artigo não implica sempre direito irrestrito de reprodução.
+2. Conferir com especialista se a imagem mostra o sinal prometido: fluxo Doppler, endometrioma, vascularização de papila, ascite, STIC, histologia. Seta/legenda errada é dano didático.
+3. Converter exames para **WebP** sem apagar estrutura importante; garantir opções de ampliação em tela pequena. Imagens de ECG/exame seguem teto técnico de mídia estabelecido no produto, priorizando legibilidade quando houver conflito.
+4. Registrar alt text (ex.: “US transvaginal de ovário esquerdo com cisto unilocular anecoico sem septos”), fonte, autor, licença, revisor, data e eventual número de edição O-RADS.
+5. Imagens reais de pacientes só entram com desidentificação adequada, direitos de publicação e documentação editorial; fotos íntimas não são necessárias para esta aula.
+6. Fila de aprovação da LURIA antes do commit do arquivo WebP; uma proposta de figura não é sinônimo de imagem aprovada.
+7. O papel de cada figura deve ser preciso: explicar diagnóstico diferencial, mostrar exame ou alterar decisão. Não inserir foto decorativa genérica.
+8. Nos fluxos FIGO/O-RADS, indicar versão/ano e atualizar quando houver revisão normativa.
+
+## 30. Conexões com outras aulas do Lote 09
+
+- **Aula 164 — Câncer do colo uterino:** compartilha princípios de estadiamento e oncologia ginecológica, mas rastreamento do colo **não** equivale ao rastreamento de ovário; não transferir HPV para etiologia do câncer ovariano epitelial.
+- **Aula 169 — Mastologia clínica em GO:** história familiar de mama/ovário e BRCA com aconselhamento, evitando duplicar capítulos de mama.
+- **Aula 172 — Princípios de oncologia cirúrgica:** R0, citorredução, estadiamento, neoadjuvância e decisão multimodal; neste capítulo o foco é a interpretação FIGO/ovário.
+- **Aula 173 — Urgências pediátricas:** estratégias de ABCDE e choque são conceitos gerais; torção em adolescente exige abordagem ginecológica preservadora, não atraso por imagem.
+- **Aula 179 — Câncer de endométrio:** diferenciar sangramento uterino de tumor de granulosa e doença endometrial primária, e considerar Lynch quando histórico indica.
+
+## 31. Auditoria consolidada — precisão, extensão e pendências
+
+**Produção desta fase:** capítulo geral sobre massas anexiais e câncer, dezesseis casos clínicos com história, raciocínio, exames e conduta, vinte e quatro questões autorais com comentários de todas as alternativas, mais vinte imagens candidatas e conexões de cronograma.
+
+**Verificações científicas feitas:**
+- [x] DDT de neoplasia epitelial ovariana permanece catalogada pela Conitec em 2026 como Portaria nº 1/2019; não afirmar que esta é atualização de 2026.
+- [x] Incidência INCA 2026–2028 é de 8.020 novos casos por ano; distinguir de mortalidade e risco individual.
+- [x] O-RADS US v2022 do ACR e artigo explicativo de 2023 identificados, sem atribuir versão inexistente.
+- [x] Regras IOTA B/M estão explicitadas; situações indeterminadas reconhecidas.
+- [x] Sem recomendação de rastreio populacional com CA-125/US em risco habitual.
+- [x] Torção mantém indicação urgente de avaliação mesmo com Doppler arterial detectável.
+- [x] Ectópica sintomática/instável e abscesso tubo-ovariano tratados como diferenciais urgentes.
+- [x] Câncer de ovário/tuba/peritônio com atenção à cirurgia R0, PCS versus NACT e disponibilidade SUS.
+- [x] Conservação de ovário e fertilidade discutida em benignas, borderline e germinativas.
+- [x] Sem quimioterapia prescrita apenas por elevação isolada de CA-125.
+
+**Pontos que ainda exigem validação especializada:**
+- [ ] Revisão independente por oncoginecologia, ultrassonografista IOTA/O-RADS, obstetrícia e farmacêutico clínico.
+- [ ] Conferir números de FIGO e atualização de biomarcadores/manutenção por subtipo e linha de tratamento.
+- [ ] Revisar dose, elegibilidade e disponibilidade de platina/taxano, bevacizumabe e PARP no SUS/serviço.
+- [ ] Obter licenças de exames reais e produzir diagramas, comprimir WebP, inserir legenda e alt text.
+- [ ] Converter Markdown para HTML/content.json nativo LURIA e indexar módulo no cronograma/site.
+- [ ] Realizar auditoria visual, responsividade PWA, links, navegação e acessibilidade.
+- [ ] Aprovação final médica/editorial e registro de versão; material atual não deve ser tratado como diretriz assistencial publicada.
+
+**Status:** rascunho aprofundado apto para revisão científica e integração futura, mas não publicado.
